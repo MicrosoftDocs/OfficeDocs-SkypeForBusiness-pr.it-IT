@@ -1,5 +1,5 @@
 ---
-title: Requisiti relativi a porte e protocolli per i server
+title: Requisiti di porta e protocollo per i server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -17,34 +17,34 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c94063f1-e802-4a61-be90-022fc185335e
 description: "Riepilogo: esaminare le considerazioni sull'utilizzo delle porte prima di implementare Skype for Business Server."
-ms.openlocfilehash: 227fcbccf815886c5afa55c843ba59688f471a29
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 70caf72231797c4e245ac3117ec7fcc9241185f0
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834306"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51094950"
 ---
-# <a name="port-and-protocol-requirements-for-servers"></a>Requisiti relativi a porte e protocolli per i server
+# <a name="port-and-protocol-requirements-for-servers"></a>Requisiti di porta e protocollo per i server
  
 **Riepilogo:** Esaminare le considerazioni sull'utilizzo delle porte prima di implementare Skype for Business Server.
   
-Skype for Business Server richiede che porte specifiche sui firewall esterni ed interni siano aperte. Inoltre, se nell'organizzazione viene distribuito Internet Protocol Security (IPsec), IPsec deve essere disabilitato nell'intervallo di porte utilizzate per la distribuzione di audio, video e video panoramici. 
+Skype for Business Server richiede che porte specifiche sui firewall esterni e interni siano aperte. Inoltre, se nell'organizzazione è distribuito Internet Protocol Security (IPsec), IPsec deve essere disabilitato nell'intervallo di porte utilizzate per la distribuzione di audio, video e video panoramici. 
   
-Anche se all'inizio può sembrare un po' scoraggiante, l'attività di pianificazione può essere eseguita con lo strumento di pianificazione di [Skype for Business Server 2015.](https://go.microsoft.com/fwlink/p/?LinkID=282725) Dopo aver definito le domande della procedura guidata sulle funzionalità che si intende utilizzare, per ogni sito definito è possibile visualizzare il rapporto firewall nel report di amministrazione edge e utilizzare le informazioni elencate per creare le regole di protezione del server perimetrale. È inoltre possibile apportare modifiche a molti dei nomi e degli indirizzi IP utilizzati, per informazioni dettagliate, vedere [Review the Firewall Report.](../../management-tools/planning-tool/review-the-administrator-reports.md#Firewall_report) Tenere presente che è possibile esportare il report di amministrazione di Edge in un foglio di calcolo di Excel e il rapporto firewall sarà uno dei fogli di lavoro nel file. 
+Anche se all'inizio questo può sembrare un po' scoraggiante, il lavoro pesante per la pianificazione può essere eseguito utilizzando lo strumento di pianificazione di [Skype for Business Server 2015.](https://go.microsoft.com/fwlink/p/?LinkID=282725) Dopo aver seguito le domande della procedura guidata sulle funzionalità che si prevede di utilizzare, per ogni sito definito è possibile visualizzare il Report firewall all'interno del report di amministrazione edge e utilizzare le informazioni elencate per creare le regole di protezione. È inoltre possibile apportare modifiche a molti dei nomi e degli indirizzi IP utilizzati, per informazioni dettagliate, vedere [Review the Firewall Report](../../management-tools/planning-tool/review-the-administrator-reports.md#Firewall_report). Tenere presente che è possibile esportare il report di amministrazione di Edge in un foglio di calcolo di Excel e il report firewall sarà uno dei fogli di lavoro nel file. 
   
-È anche possibile trovare le informazioni in queste tabelle sotto forma di diagramma esaminando il poster Protocol Workloads collegato dall'articolo [Technical diagrams for Skype for Business Server 2015.](../../technical-diagrams.md)
+È inoltre possibile trovare le informazioni in queste tabelle sotto forma di diagramma esaminando il poster Carichi di lavoro protocollo collegato all'articolo Diagrammi tecnici [per Skype for Business Server 2015.](../../technical-diagrams.md)
 > [!NOTE]
-> - Se si sta implementando Skype for Business online (Microsoft 365 o Office 365), fare riferimento agli URL e agli intervalli di indirizzi IP di [Microsoft 365 e Office 365.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US) Gli ambienti ibridi dovranno fare riferimento a questo argomento e pianificare [la connettività ibrida.](../../skype-for-business-hybrid-solutions/plan-hybrid-connectivity.md?toc=/SkypeForBusiness/sfbhybridtoc/toc.json)
-> - È possibile disporre di firewall hardware o software, non sono necessari modelli o versioni specifici. Ciò che conta è ciò che le porte sono presenti nell'elenco elementi vuoti, in modo che il firewall non comprometti il funzionamento di Skype for Business Server.
+> - Se si implementa Skype for Business online (Microsoft 365 o Office 365), fare riferimento agli URL e agli intervalli di indirizzi IP di [Microsoft 365 e Office 365.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US) Gli ambienti ibridi dovranno fare riferimento a questo argomento e pianificare [anche la connettività ibrida.](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
+> - Puoi avere firewall hardware o software, non sono necessari modelli o versioni specifici. Ciò che conta è ciò che le porte sono nella whitelist in modo che il firewall non comprometti il funzionamento di Skype for Business Server.
   
 ## <a name="port-and-protocol-details"></a>Informazioni dettagliate sulle porte e sui protocolli
 
-Questa sezione riepiloga le porte e i protocolli utilizzati dai server, dai servizi di bilanciamento del carico e dai client in una distribuzione di Skype for Business Server.
+Questa sezione riepiloga le porte e i protocolli utilizzati da server, servizi di bilanciamento del carico e client in una distribuzione di Skype for Business Server.
   
 > [!NOTE]
 > All'avvio di Skype for Business Server, vengono aperte le porte necessarie in Windows Firewall. Windows Firewall dovrebbe essere già in esecuzione nella maggior parte delle applicazioni normali, ma se non viene utilizzato Skype for Business Server funzionerà senza di esso. 
   
-Per informazioni dettagliate sulla configurazione del firewall per i componenti perimetrali, vedere [Scenari di server perimetrali in Skype for Business Server 2015.](../../plan-your-deployment/edge-server-deployments/scenarios.md) 
+Per informazioni dettagliate sulla configurazione del firewall per i componenti perimetrali, vedere [Edge Server scenarios in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/scenarios.md). 
   
 Nella tabella seguente sono elencate le porte che è necessario aprire per ogni ruolo server interno. 
   
@@ -55,53 +55,53 @@ Nella tabella seguente sono elencate le porte che è necessario aprire per ogni 
 |Tutti i server  |SQL Browser  |1434  |UDP  |SQL browser per la copia replicata locale del database dell'archivio di gestione centrale.  |
 |Front End Server  |Servizio Front-End Skype for Business Server  |5060  |TCP  |Utilizzata facoltativamente dai server Standard Edition e dai Front End Server per le route statiche ai servizi trusted, ad esempio i server di controllo delle chiamate remote.  |
 |Front End Server  |Servizio Front-End Skype for Business Server  |5061  | TCP (TLS) |Utilizzato dai server Standard Edition e dai pool Front End per tutte le comunicazioni SIP interne tra server (MTLS), per le comunicazioni SIP tra server e client (TLS) e per le comunicazioni SIP tra Front End Server e Mediation Server (MTLS). Utilizzato anche per le comunicazioni con un Monitoring Server.  |
-| Front End Server |Servizio Front-End Skype for Business Server  |444  | HTTPS <br/> TCP  |Usato per la comunicazione HTTPS tra Focus (il componente di Skype for Business Server che gestisce lo stato della conferenza) e i singoli server.  <br/> Questa porta viene utilizzata anche per le comunicazioni TCP tra Survivable Branch Appliance e Front End Server.  |
+| Front End Server |Servizio Front-End Skype for Business Server  |444  | HTTPS <br/> TCP  |Usato per la comunicazione HTTPS tra lo stato attivo (il componente Skype for Business Server che gestisce lo stato della conferenza) e i singoli server.  <br/> Questa porta viene utilizzata anche per le comunicazioni TCP tra Survivable Branch Appliance e Front End Server.  |
 |Front End Server  |Servizio Front-End Skype for Business Server  |135  |DCOM e RPC (Remote Procedure Call)  |Utilizzata per le operazioni basate su DCOM quali spostamento utenti, sincronizzazione User Replicator e sincronizzazione rubrica.  |
 |Front End Server  |Servizio di conferenza di messaggistica istantanea di Skype for Business Server  |5062  |TCP  |Utilizzata per le richieste SIP in arrivo per le conferenze di messaggistica istantanea (IM).  |
 |Front End Server  |Servizio Web Conferencing di Skype for Business Server  |8057  |TCP (TLS)  |Utilizzata per attendere le connessioni PSOM (Persistent Shared Object Model) dal client.  |
-|Front End Server  |Servizio di compatibilità delle conferenze Web di Skype for Business Server  |8058  |TCP (TLS)  |Usato per ascoltare le connessioni PSOM (Persistent Shared Object Model) dal client Live Meeting e dalle versioni precedenti di Skype for Business Server.  |
-|Front End Server  |Servizio Audio/Video Conferencing di Skype for Business Server  |5063  |TCP  |Utilizzata per le richieste SIP in arrivo per Audio/Video (A/V) Conferencing.  |
-|Front End Server  |Servizio Audio/Video Conferencing di Skype for Business Server  |57501-65535  |TCP/UDP  |Intervallo di porte di attesa multimediali utilizzato per le conferenze video.  |
+|Front End Server  |Servizio Compatibilità web Conferencing di Skype for Business Server  |8058  |TCP (TLS)  |Usato per ascoltare le connessioni PSOM (Persistent Shared Object Model) dal client Live Meeting e dalle versioni precedenti di Skype for Business Server.  |
+|Front End Server  |Servizio audio/videoconferenza di Skype for Business Server  |5063  |TCP  |Utilizzata per le richieste SIP in arrivo per Audio/Video (A/V) Conferencing.  |
+|Front End Server  |Servizio audio/videoconferenza di Skype for Business Server  |57501-65535  |TCP/UDP  |Intervallo di porte di attesa multimediali utilizzato per le conferenze video.  |
 |Front End Server  |Servizio Compatibilità Web di Skype for Business Server  |80  |HTTP  |Utilizzata per le comunicazioni dai Front End Server ai nomi di dominio completi della Web farm (gli URL utilizzati dai componenti Web IIS) quando non si utilizzano protocolli HTTPS.  |
 |Front End Server  |Servizio Compatibilità Web di Skype for Business Server  |443  |HTTPS  |Utilizzata per le comunicazioni dai Front End Server ai nomi di dominio completi della Web farm (gli URL utilizzati dai componenti Web IIS).  |
 |Front End Server  |Servizio Compatibilità Web di Skype for Business Server  |8080  |TCP e HTTP  |Utilizzato dai componenti Web per l'accesso esterno.  |
-|Front End Server  |Componente server Web  |4443  |HTTPS  |Https (da proxy inverso) e comunicazioni tra pool front-end HTTPS per l'accesso di individuazione automatica.  |
+|Front End Server  |Componente server Web  |4443  |HTTPS  |Https (da proxy inverso) e comunicazioni tra pool Front End HTTPS per l'accesso di individuazione automatica.  |
 |Front End Server  |Componente server Web  |8060  |TCP (MTLS)  ||
 |Front End Server  |Componente server Web  |8061  |TCP (MTLS)  ||
-|Front End Server  |Componente Servizi per dispositivi mobili  |5086  |TCP (MTLS)  |Porta SIP utilizzata dai processi interni dei servizi per dispositivi mobili  |
-|Front End Server  |Componente Servizi per dispositivi mobili  |5087  |TCP (MTLS)  |Porta SIP utilizzata dai processi interni dei servizi per dispositivi mobili  |
+|Front End Server  |Componente Servizi per dispositivi mobili  |5086  |TCP (MTLS)  |Porta SIP utilizzata dai processi interni di Servizi per dispositivi mobili  |
+|Front End Server  |Componente Servizi per dispositivi mobili  |5087  |TCP (MTLS)  |Porta SIP utilizzata dai processi interni di Servizi per dispositivi mobili  |
 |Front End Server  |Componente Servizi per dispositivi mobili  |443  |HTTPS  ||
-|Front End Server  |Servizio Operatore Conferenza di Skype for Business Server (conferenza telefonica con accesso esterno)  |5064  |TCP  |Utilizzata per le richieste SIP in arrivo per le conferenze telefoniche con accesso esterno.  |
-|Front End Server  |Servizio Operatore Conferenza di Skype for Business Server (conferenza telefonica con accesso esterno)  |5072  |TCP  |Utilizzato per le richieste SIP in arrivo per Operatore (conferenza telefonica con accesso esterno).  |
-|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server di Skype for Business Server  |5070  |TCP  |Utilizzata dal Mediation Server per le richieste in arrivo dal Front End Server al Mediation Server.  |
-|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server di Skype for Business Server  |5067  |TCP (TLS)  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.  |
-|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server di Skype for Business Server  |5068  |TCP  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.  |
-|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server di Skype for Business Server  |5081  |TCP  |Utilizzata per le richieste SIP in uscita dal Mediation Server al gateway PSTN.  |
-|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server di Skype for Business Server  |5082  |TCP (TLS)  |Utilizzata per le richieste SIP in uscita dal Mediation Server al gateway PSTN.  |
+|Front End Server  |Servizio Operatore conferenza di Skype for Business Server (conferenze telefoniche con accesso esterno)  |5064  |TCP  |Utilizzata per le richieste SIP in arrivo per le conferenze telefoniche con accesso esterno.  |
+|Front End Server  |Servizio Operatore conferenza di Skype for Business Server (conferenze telefoniche con accesso esterno)  |5072  |TCP  |Utilizzato per le richieste SIP in arrivo per l'operatore (conferenza telefonica con accesso esterno).  |
+|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server Di Skype for Business  |5070  |TCP  |Utilizzata dal Mediation Server per le richieste in arrivo dal Front End Server al Mediation Server.  |
+|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server Di Skype for Business  |5067  |TCP (TLS)  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.  |
+|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server Di Skype for Business  |5068  |TCP  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN al Mediation Server.  |
+|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server Di Skype for Business  |5081  |TCP  |Utilizzata per le richieste SIP in uscita dal Mediation Server al gateway PSTN.  |
+|Front End Server che eseguono anche un Mediation Server collocato  |Servizio Mediation Server Di Skype for Business  |5082  |TCP (TLS)  |Utilizzata per le richieste SIP in uscita dal Mediation Server al gateway PSTN.  |
 |Front End Server  |Servizio di condivisione applicazioni di Skype for Business Server  |5065  |TCP  |Utilizzata per le richieste di attesa SIP in arrivo per la condivisione delle applicazioni.  |
 |Front End Server  |Servizio di condivisione applicazioni di Skype for Business Server  |49152-65535  |TCP  |Intervallo di porte di attesa multimediali per la condivisione delle applicazioni.  |
-|Front End Server  |Servizio Annuncio conferenza di Skype for Business Server  |5073  |TCP  |Utilizzato per le richieste SIP in arrivo per il servizio Annuncio conferenza di Skype for Business Server ,ovvero per le conferenze telefoniche con accesso esterno.  |
+|Front End Server  |Servizio annuncio conferenza Skype for Business Server  |5073  |TCP  |Usato per le richieste SIP in arrivo per il servizio Annuncio conferenza di Skype for Business Server (ovvero per le conferenze telefoniche con accesso esterno).  |
 |Front End Server  |Servizio Parcheggio di chiamata di Skype for Business Server  |5075  |TCP  |Utilizzata per le richieste SIP in arrivo per l'applicazione Parcheggio di chiamata.  |
 |Front End Server  |Servizio di test audio di Skype for Business Server  |5076  |TCP  |Utilizzata per le richieste SIP in arrivo per il servizio Test audio.  |
 |Front End Server  |Non applicabile  |5066  |TCP  |Utilizzata per il gateway Enhanced 9-1-1 (E9-1-1) in uscita.  |
 |Front End Server  |Servizio Response Group di Skype for Business Server  |5071  |TCP  |Utilizzata per le richieste SIP in arrivo per l'applicazione Response Group.  |
 |Front End Server  |Servizio Response Group di Skype for Business Server  |8404  |TCP (MTLS)  |Utilizzata per le richieste SIP in arrivo per l'applicazione Response Group.  |
 |Front End Server  |Servizio criteri larghezza di banda di Skype for Business Server  |5080  |TCP  |Utilizzata per il controllo di ammissione di chiamata eseguito dal servizio criteri larghezza di banda per il traffico A/V Edge TURN.  |
-|Front End Server  |Accesso al server di condivisione file di Skype for Business Server  |445   |SMB/TCP  | Utilizzato per recuperare la rubrica, il contenuto delle riunioni e altri elementi archiviati nel server condivisione file.  |
+|Front End Server  |Accesso al server di condivisione file di Skype for Business Server  |445   |SMB/TCP  | Utilizzato per recuperare la Rubrica, il contenuto delle riunioni e altri elementi archiviati nel server condivisione file.  |
 |Front End Server  |Servizio criteri larghezza di banda di Skype for Business Server  |448  |TCP  |Utilizzato per il controllo di ammissione di chiamata dal servizio Criteri di larghezza di banda di Skype for Business Server.  |
-|Front End Server in cui risiede l'archivio di gestione centrale  | Servizio Agente replica master di Skype for Business Server |445  |TCP  |Usato per eseguire il push dei dati di configurazione dall'archivio di gestione centrale ai server che eseguono Skype for Business Server.  |
-|Tutti i server  |SQL Browser  |1434  |UDP  |SQL browser per la copia replicata locale dei dati dell'archivio di gestione centrale nell'istanza SQL Server locale  |
-|Tutti i server interni  |Vari  |49152-57500  |TCP/UDP  |Intervallo di porte multimediali utilizzato per le conferenze audio su tutti i server interni. Utilizzato da tutti i server che terminano l'audio: Front End Server (per il servizio Operatore Conferenza Di Skype for Business Server, il servizio Annuncio conferenza di Skype for Business Server e il servizio Audio/Video Conferencing di Skype for Business Server) e Mediation Server.  |
+|Front End Server in cui risiede l'archivio di gestione centrale  | Servizio Agente Replicatore master di Skype for Business Server |445  |TCP  |Usato per eseguire il push dei dati di configurazione dall'archivio di gestione centrale ai server che eseguono Skype for Business Server.  |
+|Tutti i server  |SQL Browser  |1434  |UDP  |SQL Browser per la copia replicata locale dei dati dell'archivio di gestione centrale nell'istanza SQL Server locale  |
+|Tutti i server interni  |Vari  |49152-57500  |TCP/UDP  |Intervallo di porte multimediali utilizzato per le conferenze audio su tutti i server interni. Utilizzato da tutti i server che terminano l'audio: Front End Server (per il servizio Operatore conferenza Di Skype for Business Server, servizio Annuncio conferenza di Skype for Business Server e Servizio audio/videoconferenza di Skype for Business Server) e Mediation Server.  |
 |Server Office Web Apps  ||443  ||Usato da Skype for Business Server per connettersi al server Office Web Apps.  |
 |Director  |Servizio Front-End Skype for Business Server  |5060  |TCP  |Utilizzata facoltativamente per le route statiche ai servizi trusted, come i server di controllo delle chiamate remote.  |
-|Director  |Servizio Front-End Skype for Business Server  |444  |HTTPS  <br/> TCP  |Comunicazioni interne ai server tra Front End e Director. Inoltre, i certificati client pubblicano (nei Front End Server) o verificano se il certificato client è già stato pubblicato.  |
+|Director  |Servizio Front-End Skype for Business Server  |444  |HTTPS  <br/> TCP  |Comunicazioni interne ai server tra Front End e Director. Inoltre, il certificato client pubblica (nei Front End Server) o verifica se il certificato client è già stato pubblicato.  |
 |Director  |Servizio Compatibilità Web di Skype for Business Server  |80  |TCP  |Utilizzata per le comunicazioni iniziali dai Director ai nomi di dominio completo (FQDN) della Web farm (gli URL utilizzati dai componenti Web IIS). Durante il normale funzionamento, viene effettuato il passaggio al traffico HTTPS mediante la porta 443 e il tipo di protocollo TCP.  |
 |Director  |Servizio Compatibilità Web di Skype for Business Server  |443  |HTTPS  |Utilizzata per le comunicazioni dai Director ai nomi di dominio completi (FQDN) della Web farm (gli URL utilizzati dai componenti Web IIS).  |
 |Director  |Servizio Front-End Skype for Business Server  |5061  |TCP  |Utilizzata per le comunicazioni interne tra i server e per le connessioni client.  |
-|Mediation Server  |Servizio Mediation Server di Skype for Business Server  |5070  |TCP  |Utilizzata dal Mediation Server per le richieste in arrivo dal Front End Server.  |
-|Mediation Server  |Servizio Mediation Server di Skype for Business Server  |5067  |TCP (TLS)  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN.  |
-|Mediation Server  |Servizio Mediation Server di Skype for Business Server  |5068  |TCP  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN.  |
-|Mediation Server  |Servizio Mediation Server di Skype for Business Server  |5070  |TCP (MTLS)  |Utilizzata per le richieste SIP dai Front End Server.  |
+|Mediation Server  |Servizio Mediation Server Di Skype for Business  |5070  |TCP  |Utilizzata dal Mediation Server per le richieste in arrivo dal Front End Server.  |
+|Mediation Server  |Servizio Mediation Server Di Skype for Business  |5067  |TCP (TLS)  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN.  |
+|Mediation Server  |Servizio Mediation Server Di Skype for Business  |5068  |TCP  |Utilizzata per le richieste SIP in arrivo dal gateway PSTN.  |
+|Mediation Server  |Servizio Mediation Server Di Skype for Business  |5070  |TCP (MTLS)  |Utilizzata per le richieste SIP dai Front End Server.  |
 |Front End Server della chat persistente  |Persistent Chat SIP  |5041  |TCP (MTLS)  ||
 |Front End Server della chat persistente  |Persistent Chat Windows Communication Foundation (WCF)  |881  |TCP (TLS) e TCP (MTLS)  ||
 |Front End Server della chat persistente  |Servizio di trasferimento file di Chat persistente  |443  |TCP (TLS)  ||
@@ -129,7 +129,7 @@ Per i pool che utilizzano solo il servizio di bilanciamento del carico hardware 
 |Servizio di bilanciamento del carico Front End Server  |5071  |TCP  |
 |Servizio di bilanciamento del carico Front End Server  |5080  |TCP  |
 |Servizio di bilanciamento del carico Front End Server  |448  |TCP  |
-|Servizio di bilanciamento del carico di Mediation Server  |5070  |TCP  |
+|Servizio di bilanciamento del carico mediation server  |5070  |TCP  |
 |Servizio di bilanciamento del carico di Front End Server (se il pool esegue anche Mediation Server)  |5070  |TCP  |
 |Servizio di bilanciamento del carico Director  |443  |HTTPS  |
 |Servizio di bilanciamento del carico Director  |444  |HTTPS  |
@@ -153,7 +153,7 @@ Per i pool che utilizzano solo il servizio di bilanciamento del carico hardware 
 
 |Componente|Porta|Protocollo|Note|
 |:-----|:-----|:-----|:-----|
-|Client  |67/68  |DHCP  |Usato da Skype for Business Server per trovare il nome di dominio completo della funzione di registrazione (ovvero, se dns SRV ha esito negativo e le impostazioni manuali non sono configurate).  |
+|Client  |67/68  |DHCP  |Usato da Skype for Business Server per trovare il nome di dominio completo della funzione di registrazione (ovvero, se DNS SRV ha esito negativo e le impostazioni manuali non sono configurate).  |
 |Client  |443  |TCP (TLS)  |Utilizzata per il traffico SIP da client a server per l'accesso utente esterno.  |
 |Client  |443  |TCP (PSOM/TLS)  |Utilizzata per l'accesso utente esterno alle sessioni di Web Conferencing.  |
 |Client  |443  |TCP (STUN/MSTURN)  |Utilizzata per l'accesso utente esterno alle sessioni A/V e ai supporti multimediali (TCP)  |
@@ -172,7 +172,7 @@ Per i pool che utilizzano solo il servizio di bilanciamento del carico hardware 
 > I programmi di installazione per i client Skype for Business creano automaticamente le eccezioni del firewall del sistema operativo necessarie nel computer client. 
 
 > [!NOTE]
-> Le porte utilizzate per l'accesso degli utenti esterni sono necessarie per qualsiasi scenario in cui il client deve attraversare il firewall dell'organizzazione (ad esempio, qualsiasi comunicazione esterna o riunione ospitata da altre organizzazioni). 
+> Le porte utilizzate per l'accesso degli utenti esterni sono necessarie per qualsiasi scenario in cui il client deve attraversare il firewall dell'organizzazione (ad esempio, eventuali comunicazioni esterne o riunioni ospitate da altre organizzazioni). 
   
 ## <a name="ipsec-exceptions"></a>Eccezioni IPsec
 

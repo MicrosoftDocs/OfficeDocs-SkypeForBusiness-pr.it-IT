@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 50c39731-ba2f-49c2-a571-6dc373f6aaeb
 description: 'Riepilogo: informazioni su come creare un nuovo criterio di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 3e1f538aba26025f5868a09babd3b67df36f9a3f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: fe3a80708d3810a085f1814e6d16ff3cd4c6057c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817646"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51095420"
 ---
 # <a name="create-a-new-archiving-policy-in-skype-for-business-server"></a>Creare un nuovo criterio di archiviazione in Skype for Business Server
 
@@ -31,13 +31,13 @@ Per creare un nuovo criterio di archiviazione utilizzando il Pannello di control
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Criteri di archiviazione**.
     
 4. Fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti: 
     
-   - Per creare un criterio di archiviazione a livello di sito, fare clic su Criteri sito e quindi in Selezionare un sito fare clic sul sito **a** cui deve essere applicato il criterio.
+   - Per creare un criterio di archiviazione **a** livello di sito, fare clic su Criteri sito e quindi in Selezionare un sito fare clic sul sito a cui applicare il criterio.
     
    - Per creare criteri di archiviazione a livello di utente, fare clic su **Criteri utente**.
     
@@ -54,11 +54,11 @@ Per creare un nuovo criterio di archiviazione utilizzando il Pannello di control
 6. Fare clic su **Commit**.
     
     > [!IMPORTANT]
-    > Le impostazioni dei criteri utente sono valide solo per gli utenti e i gruppi di utenti specifici a cui vengono applicati i criteri. Per informazioni dettagliate, vedere [Applicare un criterio di archiviazione agli utenti in Skype for Business Server.](apply-a-policy-to-users.md) 
+    > Le impostazioni dei criteri utente sono valide solo per gli utenti e i gruppi di utenti specifici a cui vengono applicati i criteri. Per informazioni dettagliate, vedere [Apply an archiving policy to users in Skype for Business Server.](apply-a-policy-to-users.md) 
   
 ## <a name="create-a-new-archiving-policy-by-using-windows-powershell"></a>Creare un nuovo criterio di archiviazione utilizzando Windows PowerShell
 
-È inoltre possibile creare nuovi criteri di archiviazione utilizzando Windows PowerShell **cmdlet New-CsArchivingPolicy.** Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsArchivingPolicy.](https://docs.microsoft.com/powershell/module/skype/new-csarchivingpolicy?view=skype-ps)
+È inoltre possibile creare nuovi criteri di archiviazione utilizzando Windows PowerShell **cmdlet New-CsArchivingPolicy.** Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsArchivingPolicy.](/powershell/module/skype/new-csarchivingpolicy?view=skype-ps)
   
 ### <a name="to-create-a-new-archiving-policy-at-the-site-level"></a>Per creare un nuovo criterio di archiviazione a livello di sito
 
@@ -86,7 +86,7 @@ New-CsArchivingPolicy -Identity "site:Redmond" -ArchiveInternal $True
 
 ### <a name="to-create-a-new-archiving-policy-that-enables-archiving-of-both-internal-and-external-communication-sessions"></a>Per creare un nuovo criterio di archiviazione che consenta l'archiviazione di sessioni di comunicazione sia interne che esterne
 
-È possibile modificare più valori di proprietà includendo più parametri. Ad esempio, questo comando configura il nuovo criterio per archiviare le sessioni di messaggistica istantanea sia interne che esterne:
+È possibile modificare più valori di proprietà includendo più parametri. Ad esempio, questo comando configura il nuovo criterio per archiviare le sessioni di messaggistica istantanea interne ed esterne:
   
 ```PowerShell
 New-CsArchivingPolicy -Identity "site:Redmond" -ArchiveInternal $True -ArchiveExternal $True

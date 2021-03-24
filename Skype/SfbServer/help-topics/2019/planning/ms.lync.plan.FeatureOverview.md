@@ -16,18 +16,18 @@ localization_priority: Normal
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 ROBOTS: NOINDEX, NOFOLLOW
 description: Strumento di pianificazione di Skype for Business Server
-ms.openlocfilehash: f317b2963e6db83e733a3f0b259a6d0bfe466c9d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 4084d263a693a064e06a814d2fab4542ca3142c0
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49819826"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51093324"
 ---
 # <a name="feature-overview-planning-tool"></a>Panoramica delle funzionalità (Strumento di pianificazione)
  
 Strumento di pianificazione di Skype for Business Server
   
-È possibile utilizzare la **pagina Siti** centrali dello Strumento di pianificazione per progettare la distribuzione di Skype for Business Server. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata ha un solo sito centrale, che contiene tutti gli utenti di Skype for Business nell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuisce Skype for Business Server in più siti centrali, si immetterà il numero di utenti in ogni sito centrale nello strumento di pianificazione.
+È possibile utilizzare la **pagina Siti** centrali dello Strumento di pianificazione per progettare la distribuzione di Skype for Business Server. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata ha un solo sito centrale, che include tutti gli utenti Skype for Business dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuisce Skype for Business Server in più siti centrali, si immetterà il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
   
 Per completare la definizione del sito centrale, è innanzitutto necessario fornire le informazioni seguenti:
   
@@ -47,7 +47,7 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
   
 - **Messaggistica istantanea e presenza**
     
-    La messaggistica istantanea consente agli utenti di comunicare tra loro in tempo reale sui propri computer utilizzando messaggi di testo. Sono supportate le sessioni di messaggistica istantanea sia tra due che tra più parti. La presenza fornisce agli utenti informazioni sullo stato di altri utenti della rete. Lo stato di presenza di un utente fornisce informazioni che consentono ad altri di determinare se l'utente è online e come contattare al meglio l'utente. Ad esempio, un utente che si trova in una riunione viene contattato tramite posta elettronica.
+    La messaggistica istantanea consente agli utenti di comunicare tra loro in tempo reale sui propri computer utilizzando messaggi di testo. Sono supportate le sessioni di messaggistica istantanea sia tra due che tra più parti. La presenza fornisce agli utenti informazioni sullo stato di altri utenti nella rete. Lo stato di presenza di un utente fornisce informazioni per aiutare gli altri a determinare se l'utente è online e come contattare al meglio l'utente. Ad esempio, un utente che si trova in una riunione viene contattato tramite posta elettronica.
     
 - **Conferenze audio e video**
     
@@ -55,7 +55,7 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
 - **Chiamate in conferenza**
     
-    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono della rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore Conferenza e Servizio annuncio conferenza.
+    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Servizio annuncio conferenza.
     
 - **Conferenze Web**
     
@@ -66,7 +66,7 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     Persistent Chat consente a più utenti di partecipare a conversazioni in cui pubblicano e accedono a contenuto su argomenti specifici, tra cui testo, collegamenti e file. Nonostante gli utenti possano comunicare in tempo reale durante una sessione, il contenuto di ogni sessione può essere salvato in modo permanente e quindi restare disponibile anche al termine di una sessione.
 
     > [!NOTE] 
-    > La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. Le stesse funzionalità sono disponibili in Teams. Per altre informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here) Se è necessario usare Chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
+    > La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](/MicrosoftTeams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
     
 ### <a name="users"></a>Utenti
 
@@ -78,22 +78,22 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
 - **Federazione con versioni precedenti**
     
-- **Federazione con provider di servizi di messaggistica istantanea pubblici** Consente agli utenti dell'organizzazione di stabilire comunicazioni con provider di servizi di messaggistica istantanea pubblici come MSN, Yahoo! e AOL. È necessaria una licenza separata per stabilire la federazione con reti di messaggistica istantanea pubbliche.
+- **Federazione con provider di servizi di messaggistica istantanea pubblici** Consente agli utenti dell'organizzazione di stabilire comunicazioni con provider di servizi di messaggistica istantanea pubblici come MSN, Yahoo!e AOL. Per stabilire la federazione con reti di messaggistica istantanea pubbliche, è necessaria una licenza separata.
     
-- **Federazione con provider di servizi basato su XMPP**
+- **Federazione con provider di servizi basati su XMPP**
     
-    Skype for Business Server 2015 ha introdotto un proxy XMPP completamente integrato (distribuito nei server perimetrali) e un gateway XMPP distribuito nei Front End Server. È possibile distribuire l'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentirà agli utenti di Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
+    Skype for Business Server 2015 ha introdotto un proxy XMPP completamente integrato (distribuito nei server perimetrali) e un gateway XMPP distribuito nei Front End Server. È possibile distribuire L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
     
 - **Mobilità**
     
-    Quando si distribuisce il servizio per dispositivi mobili Skype for Business Server, gli utenti possono utilizzare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale di Exchange W15**
     
-    Skype for Business Server consente di archiviare i messaggi della segreteria telefonica nella messaggistica unificata di Exchange. Tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
+    Skype for Business Server consente di archiviare i messaggi della segreteria telefonica nella messaggistica unificata di Exchange. tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
 
     > [!NOTE]
-    > La messaggistica unificata di Exchange come precedentemente noto non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi vocali e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > La messaggistica unificata di Exchange nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi vocali e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="voice"></a>Voce
 
@@ -101,14 +101,14 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
   
 - **VoIP aziendale**
     
-    VoIP aziendale è la soluzione VoIP basata su software di Microsft. VoIP aziendale consente agli utenti di usare Skype for Business per eseguire una chiamata telefonica dal proprio computer.
+    VoIP aziendale è la soluzione VoIP basata su software di Microsft. VoIP aziendale consente agli utenti di usare Skype for Business per eseguire una chiamata telefonica dal computer.
     
 - **Messaggistica unificata di Exchange**
     
     La messaggistica unificata di Exchange combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata di Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare la messaggistica unificata di Exchange e Skype for Business Server in una topologia di Active Directory condivisa.
 
     > [!NOTE]
-    > La messaggistica unificata di Exchange come precedentemente noto non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi vocali e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > La messaggistica unificata di Exchange nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi vocali e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -124,23 +124,23 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
 - **Monitoraggio**
     
-    Il monitoraggio acquisisce i record dettagli chiamata correlati alle sessioni di comunicazione. Raccoglie inoltre le metriche dalle sessioni audio e video agli endpoint dei partecipanti. Monitoring Server fornisce statistiche di utilizzo, tendenze e statistiche sulla qualità multimediale.
+    Il monitoraggio acquisisce i record dettagli chiamata correlati alle sessioni di comunicazione. Raccoglie anche le metriche dalle sessioni audio e video agli endpoint dei partecipanti. Monitoring Server fornisce statistiche di utilizzo, tendenze e statistiche sulla qualità multimediale.
     
 - **Archiviazione**
     
     L'archiviazione archivia conversazioni e conferenze di messaggistica istantanea.
     
-- **Integrazione di Archiviazione Exchange**
+- **Integrazione dell'archiviazione di Exchange**
     
-    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place hold, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server con l'archiviazione di Exchange.
+    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place blocco, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server con l'archiviazione di Exchange.
     
 - **IPv4**
     
-    Gli indirizzi IPv4 sono indirizzi a 32 bit che consentono a un computer di comunicare tramite Internet. A causa del numero crescente di dispositivi in tutto il mondo, gli indirizzi IPv4 disponibili si sono eseguiti. Per questo, molti nuovi dispositivi stanno passando all'utilizzo di indirizzi IPv6.
+    Gli indirizzi IPv4 sono indirizzi a 32 bit che consentono a un computer di comunicare tramite Internet. A causa del numero crescente di dispositivi in tutto il mondo, gli indirizzi IPv4 disponibili si sono eseguiti. Per questo, molti nuovi dispositivi stanno passando all'uso di indirizzi IPv6.
     
 - **IPv6**
     
-    Gli indirizzi IPv6 eseguono la stessa funzione degli indirizzi IPv4 (con alcune funzionalità aggiuntive), ma invece di utilizzare solo i 32 bit, gli indirizzi IPv6 utilizzano i 128 bit. In questo modo non solo viene fornito un nuovo set di indirizzi, ma anche un numero molto maggiore di indirizzi.
+    Gli indirizzi IPv6 eseguono la stessa funzione degli indirizzi IPv4 (con alcune funzionalità aggiuntive), ma invece di utilizzare solo 32 bit, gli indirizzi IPv6 utilizzano 128 bit. In questo modo non solo viene fornito un nuovo set di indirizzi, ma anche un numero molto maggiore di indirizzi.
     
 - **Servizio Web di aggiornamento del dispositivo**
     
@@ -152,31 +152,29 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
   
 - **Response Group**
     
-    L'applicazione Response Group risponde e distribuisce automaticamente le chiamate a un agente dell'helpdesk disponibile.
+    L'applicazione Response Group risponde automaticamente e distribuisce le chiamate a un agente dell'helpdesk disponibile.
     
 - **Annuncio**
     
-    Se si prevede di distribuire VoIP aziendale, è possibile configurare la modalità di gestione delle chiamate telefoniche se il numero composto è valido ma non assegnato a un'area comune dell'utente. Gli amministratori possono configurare il servizio Annunci in modo che queste chiamate possano essere trasferite a una destinazione predeterminata (numero di telefono o URI SIP) oppure riprodurre un annuncio audio o entrambi. L'utilizzo del servizio Annuncio evita la situazione in cui un chiamante fa un'errata esecuzione delle chiamate e sente un segnale di occupato o il client SIP riceve un messaggio di errore. La funzionalità Servizio annunci è una tipica funzionalità PBX. 
+    Se si prevede di distribuire VoIP aziendale, è possibile configurare la modalità di gestione delle chiamate telefoniche se il numero composto è valido ma non assegnato a un'area comune dell'utente. Gli amministratori possono configurare il servizio annunci in modo che queste chiamate si trasferiscono a una destinazione predeterminata (numero di telefono o URI SIP) o riproducino un annuncio audio o entrambi. L'utilizzo del servizio Annuncio evita la situazione in cui un chiamante fa un'errata diagnosi e sente un segnale di occupato o il client SIP riceve un messaggio di errore. La funzionalità del servizio Annuncio è una tipica funzionalità PBX. 
     
 - **Parcheggio di chiamata**
     
-    L'applicazione Parcheggio di chiamata consente a un utente VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza che le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
+    L'applicazione Parcheggio di chiamata consente a un utente VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
     
 - **Operatore conferenza**
     
-    L'applicazione Operatore Conferenza offre funzionalità di audioconferenza agli utenti di telefonia senza il servizio di un provider di servizi di audioconferenza di terze parti.
+    L'applicazione Operatore conferenza offre funzionalità di audioconferenza agli utenti di telefonia senza il servizio di un provider di servizi di audioconferenza di terze parti.
     
 - **Annuncio conferenza**
     
-    L'applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o riattivati.
+    L'applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     
-    Il servizio Controllo di ammissione di chiamata, noto anche come gestione della larghezza di banda WAN, consente di evitare la scarsa qualità dell'esperienza per gli utenti su reti congestionate determinando, in base alla larghezza di banda disponibile, se consentire e stabilire nuove sessioni di comunicazione in tempo reale. 
+    Il servizio Controllo di ammissione di chiamata ( CAC), noto anche come gestione della larghezza di banda WAN, consente di evitare una scarsa qualità dell'esperienza per gli utenti su reti congestionate determinando, in base alla larghezza di banda disponibile, se consentire o meno la creazione di nuove sessioni di comunicazione in tempo reale. 
     
     > [!NOTE]
-    > Il servizio Controllo di ammissione di chiamata controlla solo il traffico in tempo reale e non influisce sul traffico dati. 
+    > Il controllo di ammissione di chiamata controlla solo il traffico in tempo reale e non influisce sul traffico dati. 
   
     Se una nuova sessione vocale o video supera i limiti di larghezza di banda allocati su una rete WAN, la sessione viene bloccata o (solo per le chiamate telefoniche) reindirizzata alla rete PSTN.
-    
-

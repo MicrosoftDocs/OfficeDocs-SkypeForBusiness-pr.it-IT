@@ -18,14 +18,14 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1061ce633dcd1db8f956a37143850deed9855e56
-ms.sourcegitcommit: ab094058e3ffa974527fce8a331dad609ac19609
+ms.openlocfilehash: 90250b3d3f3593990d356843bebea324060d6f8b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46551962"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51094608"
 ---
 <a name="configure-an-exchange-hybrid-organization-for-use-with-microsoft-teams"></a>Configurare un'organizzazione ibrida di Exchange per l'uso con Microsoft Teams
 ======================================================================
 
-In generale, non dovrebbe essere necessario configurare alcuna funzionalità di Exchange Online per l'uso con Microsoft Teams. Per gli scenari ibridi di Exchange, tuttavia, sono necessari alcuni passaggi per garantire la sincronizzazione delle appartenenze ai gruppi tra Exchange Server (locale) ed Exchange Online. Questa operazione implica l'abilitazione della funzionalità writeback di gruppo in Azure AD Connect e vari script di inizializzazione: Configurare Gruppi di [Microsoft 365](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups)con una distribuzione ibrida di Exchange locale.
+In genere, non è necessario configurare alcuna funzionalità di Exchange Online per l'uso con Microsoft Teams. Tuttavia, per gli scenari ibridi di Exchange, sono necessari passaggi per garantire che le appartenenze ai gruppi siano sincronizzate tra Exchange Server (locale) ed Exchange Online. Questo implica l'abilitazione della funzionalità writeback di gruppo in Azure AD Connect e vari script di inizializzazione: Configurare i gruppi di [Microsoft 365](/exchange/hybrid-deployment/set-up-microsoft-365-groups)con exchange ibrido locale.

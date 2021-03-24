@@ -22,19 +22,19 @@ ms.custom:
 - Calling Plans
 - Strat_SB_PSTN
 - seo-marvel-mar2020
-description: Informazioni sulla composizione di numeri gratuiti in un paese/area geografica, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: 450f9cf2084cc93588f4dbf40d56cf5177eaaa15
-ms.sourcegitcommit: c49698e03fa3bdd7c82496189b200ac6bb4e05a1
+description: Informazioni sulla composizione di numeri verde in un paese/area geografica, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
+ms.openlocfilehash: 2d4fe611683217d058e9fb2a9a8330c4d6e2798c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "48322305"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51093896"
 ---
 # <a name="toll-free-dialing-limitations-and-restrictions"></a>Restrizioni e limitazioni per le chiamate verso numeri verdi
 
-Questo ti aiuterà a scoprire come chiamare numeri verde in ogni paese o area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina contenente la posizione in cui è disponibile il servizio verde, con dettagli specifici, restrizioni e limiti. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
+Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese o area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina che contiene la posizione in cui è disponibile il servizio gratuito, inclusi dettagli specifici, restrizioni e limiti. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
   
-Se si è pronti, selezionare un paese o un'area geografica:
+Se sei pronto, seleziona un paese o un'area geografica:
   
 ## <a name="select-your-country-or-region-to-see-the-dialing-codes-limitations-and-restrictions"></a>Seleziona il tuo paese o area geografica per visualizzare i codici di composizione, le limitazioni e le restrizioni.
 
@@ -109,22 +109,21 @@ Se si è pronti, selezionare un paese o un'area geografica:
 
 - **I numeri verde funzionano solo all'interno di ogni paese/area geografica.** Ad esempio, gli utenti non potranno chiamare un numero verde australiano al di fuori dell'Australia.
     
-- **L'acquisizione o la portabilità di numeri Universal International Freephone Numbers (UIFN) non è supportata.**
+- **L'acquisizione o il porting dei numeri freephone internazionali universali (UIFN) non è supportato.**
     
-- **In molti paesi/aree geografiche, l'ente normativo/telecomunicazioni del Paese/area geografica richiede che ogni numero verde mantenga almeno 100 minuti di utilizzo al mese per mantenere il numero.**
+- **In molti paesi/aree geografiche, l'agenzia di regolamentazione/telecomunicazioni nel paese/area geografica richiede che ogni numero verde mantenga almeno 100 minuti di utilizzo al mese per conservare il numero.**
     
     > [!NOTE]
-    > Nel caso in cui si otterrà un numero verde e l'uso del numero non soddisfi i requisiti minimi, Microsoft potrebbe essere obbligata dall'ente normativo/telecomunicazioni a richiedere il numero all'utente. 
+    > Nel caso in cui si otterrà un numero verde e l'uso del numero non soddisfi questi requisiti minimi, Microsoft potrebbe essere obbligata dal regolatore/agenzia di telecomunicazioni a recuperare il numero dall'utente. 
   
-- **L'accesso a reti cablate, a linee fisse e a reti mobili ai numeri verde può essere completamente o parzialmente limitato.** Il formato di composizione descrive i codici di accesso richiesti in ciascun paese per chiamare un numero verde.
+- **L'accesso a reti cablate, a linee fisse e alla rete mobile ai numeri a numero verde può essere completamente o parzialmente limitato.** Il formato di composizione descrive i codici di accesso richiesti in ciascun paese per chiamare un numero verde.
     
-- **Numeri gratuiti per il piano di numerazione nordamericano:** Le tariffe al minuto per i numeri verde del piano di numerazione nordamericano sono determinate dal paese di origine. La tariffa al minuto per le chiamate provenienti dagli Stati Uniti è mappata alla tariffa definita "America del Nord". Tuttavia, le chiamate provenienti da altri paesi nordamericani, come il Canada, Portorico e così via, hanno specifiche tariffe a tariffa.
+- Numeri verde del piano **di numerazione nordamericana:** Le tariffe al minuto per i numeri verde del piano di numerazione nordamericana sono determinate dal paese di origine. La tariffa gratuita al minuto per le chiamate provenienti dagli Stati Uniti è mappata alla tariffa definita "America del Nord". Tuttavia, le chiamate provenienti da altri paesi nordamericani, come Canada, PortoRico e così via, hanno tariffe gratuite specifiche.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
     
 ## <a name="related-topics"></a>Argomenti correlati
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](./getting-service-phone-numbers.md)
 
   
- 

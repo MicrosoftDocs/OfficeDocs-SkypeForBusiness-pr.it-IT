@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Microsoft Teams e visite virtuali con l’app Bookings
-ms.openlocfilehash: 582c59b4c389d687c529a7db9d9f1825d488f9f3
-ms.sourcegitcommit: 1b11a2b74b8db6ed9e5da9b04cf3ed9c02a1d892
-ms.translationtype: HT
+ms.openlocfilehash: 5b10c7f320d4162b57dae18c736e26e1935a4107
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50125749"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51092784"
 ---
 # <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft Teams e l’app Bookings
 
@@ -53,7 +53,7 @@ L'app Microsoft Bookings per Teams è disponibile sul desktop e sul Web. L'app s
 
 ### <a name="control-access-to-bookings-within-your-organization"></a>Controllare l'accesso a Bookings all'interno dell'organizzazione
 
-Esistono diversi modi per controllare chi ha accesso all'app Bookings e a specifiche funzionalità dell'app. Per informazioni su come attivare o disattivare Microsoft Bookings nell'interfaccia di amministrazione di Microsoft 365 e su come creare criteri per l'app Bookings per consentire agli utenti selezionati di creare calendari di Bookings, vedere [Accedere a Microsoft Bookings](https://support.microsoft.com/it-IT/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce). Vedere anche come [Creare criteri per l'app Teams per aggiungere l'app Bookings per utenti selezionati](teams-app-setup-policies.md).
+Esistono diversi modi per controllare chi ha accesso all'app Bookings e a specifiche funzionalità dell'app. Per informazioni su come attivare o disattivare Microsoft Bookings nell'interfaccia di amministrazione di Microsoft 365 e su come creare criteri per l'app Bookings per consentire agli utenti selezionati di creare calendari di Bookings, vedere [Accedere a Microsoft Bookings](https://support.microsoft.com/en-us/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce). Vedere anche come [Creare criteri per l'app Teams per aggiungere l'app Bookings per utenti selezionati](teams-app-setup-policies.md).
 
 ## <a name="recommended-meeting-policy-settings"></a>Impostazioni consigliate per i criteri di riunione
 
@@ -73,7 +73,7 @@ Questa funzionalità verrà distribuita gradualmente in tutto il mondo per i cli
 
 Quando si configura una cassetta postale di Bookings, viene usato il dominio di posta elettronica predefinito dell'organizzazione di Microsoft 365 o Office 365. Tuttavia, questo può causare problemi quando si inviano inviti alle riunioni a destinatari esterni; l'invito potrebbe essere contrassegnato come posta indesiderata e spostato nella cartella Posta indesiderata del destinatario, quindi il destinatario potrebbe non vederlo mai.
 
-È consigliabile modificare il dominio predefinito prima di creare la cassetta postale di Bookings. Per informazioni su come eseguire questa operazione, vedere [Domande frequenti sui domini](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-do-i-set-or-change-the-default-domain-in-office-365).
+È consigliabile modificare il dominio predefinito prima di creare la cassetta postale di Bookings. Per informazioni su come eseguire questa operazione, vedere [Domande frequenti sui domini](/microsoft-365/admin/setup/domains-faq#how-do-i-set-or-change-the-default-domain-in-office-365).
 
 Se è necessario modificare il dominio predefinito dopo aver già creato la cassetta postale di Bookings, è possibile farlo con PowerShell:
 
@@ -81,7 +81,7 @@ Se è necessario modificare il dominio predefinito dopo aver già creato la cass
 Set-Mailbox -identity business@domain.onmicrosoft.com -WindowsEmailAddress business@domain.com -EmailAddresses business@domain.com
 ```
 
-Per altre informazioni, vedere la documentazione di PowerShell per il cmdlet [Set-Mailbox](https://docs.microsoft.com/powershell/module/exchange/mailboxes/set-mailbox).
+Per altre informazioni, vedere la documentazione di PowerShell per il cmdlet [Set-Mailbox](/powershell/module/exchange/mailboxes/set-mailbox).
 
 > [!NOTE]
 > Se si usa una configurazione ibrida di Exchange, è consigliabile testare accuratamente il flusso di posta tra Exchange locale ed Exchange Online quando si modifica il dominio predefinito.

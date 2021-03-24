@@ -26,12 +26,12 @@ description: Scopri le funzionalità di assistenza sanitaria come la telemedicin
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 3a33b3321d6809fd816f8c6f9a7534000ed18b94
-ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
+ms.openlocfilehash: 00dbf546166dbc1fd40d633516ac77ffaff3774c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50867035"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51092684"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -43,14 +43,14 @@ Microsoft Teams offre una serie di funzionalità di telemedicina utili per osped
 - Modelli di Teams
 - Coordinamento sanitario e collaborazione
 
-Questa funzionalità fa parte di Microsoft Cloud per il Settore Sanitario. Ulteriori informazioni sull'utilizzo di questa soluzione, che riunisce le funzionalità di Azure, Dynamics 365 e Microsoft 365 su[Microsoft Cloud per il Settore Sanitario](https://docs.microsoft.com/industry/healthcare).
+Questa funzionalità fa parte di Microsoft Cloud per il Settore Sanitario. Ulteriori informazioni sull'utilizzo di questa soluzione, che riunisce le funzionalità di Azure, Dynamics 365 e Microsoft 365 su[Microsoft Cloud per il Settore Sanitario](/industry/healthcare).
 
 Guarda il video per ulteriori informazioni sull'utilizzo dell’insieme di dati sanitari per migliorare la collaborazione del team sanitario in Microsoft Teams.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Hqan]
 
 > [!NOTE]
-> Il contenuto di questa sezione presuppone che tu abbia già implementato Teams nella tua organizzazione. Qualora non lo avessi ancora fatto, inizia a leggere [Come implementare Microsoft Teams](../../How-to-roll-out-teams.md).
+> Il contenuto di questa sezione presuppone che tu abbia già implementato Teams nella tua organizzazione. Qualora non lo avessi ancora fatto, inizia a leggere [Come implementare Microsoft Teams](../../deploy-overview.md).
 
 I seguenti scenari sono disponibili per le organizzazioni sanitarie:
 
@@ -99,7 +99,7 @@ In relazione alla messaggistica sicura esiste la possibilità di avere altri ten
 
 ## <a name="teams-templates-for-healthcare-organizations"></a>Modelli di Teams per le organizzazioni del settore sanitario
 
-Sono stati sviluppati nuovi modelli per Teams da applicare a un ambiente ospedaliero e ne sono previsti altri. Ciò semplifica la creazione di team che gli operatori sanitari utilizzano per coordinare l'assistenza ai pazienti in vari reparti o corsie. Per ulteriori informazioni,[Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](healthcare-templates.md). È possibile avviare Teams per reparti interni come cardiologia o reparti di assistenza, e altri modelli sono in fase di sviluppo.
+Sono stati sviluppati nuovi modelli per Teams da applicare a un ambiente ospedaliero e ne sono previsti altri. Ciò semplifica la creazione di team che gli operatori sanitari utilizzano per coordinare l'assistenza ai pazienti in vari reparti o corsie. Per ulteriori informazioni,[Guida introduttiva ai modelli di Teams per le organizzazioni del settore sanitario](./healthcare-templates-admin-console.md). È possibile avviare Teams per reparti interni come cardiologia o reparti di assistenza, e altri modelli sono in fase di sviluppo.
 
 ## <a name="care-coordination-and-collaboration"></a>Coordinamento sanitario e collaborazione
 

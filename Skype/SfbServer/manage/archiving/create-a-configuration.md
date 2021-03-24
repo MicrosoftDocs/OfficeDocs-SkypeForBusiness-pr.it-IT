@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: dc574afa-0b7d-404f-99b3-c812430b7c70
 description: 'Riepilogo: informazioni su come creare una configurazione di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: c5c8dde9a12d0599d962d8c7bcf402796022af7b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: f00e5b2b9254b53760351c162ea86cd195473788
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817656"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51095430"
 ---
 # <a name="create-an-archiving-configuration-in-skype-for-business-server"></a>Creare una configurazione di archiviazione in Skype for Business Server
 
@@ -29,15 +29,15 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
 4. Nella pagina **Configurazione archiviazione** fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti: 
     
-   - Per creare una configurazione di archiviazione del sito, fare clic su Configurazione sito e **quindi** in Selezionare un sito selezionare il sito da configurare per l'archiviazione.
+   - Per creare una configurazione di archiviazione siti, fare clic su **Configurazione** sito e quindi in **Selezionare** un sito selezionare il sito da configurare per l'archiviazione.
     
-   - Per creare una configurazione di archiviazione del pool, fare clic su Configurazione pool e quindi in Selezionare un **pool** selezionare il pool da configurare per l'archiviazione.
+   - Per creare una configurazione di archiviazione del pool, fare clic su **Configurazione** pool e quindi in Selezionare un **pool** selezionare il pool da configurare per l'archiviazione.
     
 5. Nell'elenco a discesa **Impostazione di archiviazione** in **Nuova impostazione di archiviazione** eseguire una delle operazioni seguenti:
     
@@ -51,7 +51,7 @@ Per configurare le opzioni di archiviazione per un sito o un pool specifico:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare il Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la casella di controllo **integrazione di Microsoft Exchange.**
+   - Per utilizzare il Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la casella di controllo **Integrazione di Microsoft Exchange.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     
@@ -73,7 +73,7 @@ New-CsArchivingConfiguration -Identity "site:Redmond"
 
 Poiché nel comando precedente non sono stati specificati parametri, eccetto il parametro obbligatorio Identity, la nuova raccolta di impostazioni di configurazione utilizzerà i valori predefiniti per le relative proprietà. 
   
-Per creare impostazioni basate su valori di proprietà diversi, è sufficiente includere il parametro appropriato e il valore corrispondente. Nell'esempio seguente viene creata una raccolta di impostazioni di configurazione dell'archiviazione che, per impostazione predefinita, consentono solo l'archiviazione delle sessioni di messaggistica istantanea:
+Per creare impostazioni basate su valori di proprietà diversi, è sufficiente includere il parametro appropriato e il valore corrispondente. Nell'esempio seguente viene creata una raccolta di impostazioni di configurazione di archiviazione che, per impostazione predefinita, consentono solo l'archiviazione delle sessioni di messaggistica istantanea:
   
 ```PowerShell
 New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly"
@@ -85,4 +85,4 @@ New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly"
 New-CsArchivingConfiguration -Identity "site:Redmond" -EnableArchiving "ImOnly" -BlockOnArchiveFailure $True
 ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsArchivingConfiguration.](https://docs.microsoft.com/powershell/module/skype/new-csarchivingconfiguration?view=skype-ps)
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsArchivingConfiguration.](/powershell/module/skype/new-csarchivingconfiguration?view=skype-ps)

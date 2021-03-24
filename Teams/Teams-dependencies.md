@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 description: Gestire le funzionalità dell'accesso guest di Microsoft Teams tramite quattro diversi livelli di autorizzazione.
-ms.openlocfilehash: 40bc8c68ac3f1ad3117fa47aa0aad5f14ff3be69
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
-ms.translationtype: HT
+ms.openlocfilehash: d52fdeb1f9867ac1faa0f8cf77023109155a8967
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030992"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51094468"
 ---
 # <a name="authorize-guest-access-in-microsoft-teams"></a>Autorizzare l'accesso guest in Microsoft Teams
 
@@ -35,12 +35,12 @@ Per soddisfare i requisiti dell'organizzazione, è possibile gestire le funziona
 - **Gruppi di Microsoft 365**: controlla l'esperienza degli utenti guest in Gruppi di Microsoft 365 e Teams.
 - **SharePoint Online e OneDrive**: controlla l'esperienza degli utenti guest in SharePoint, OneDrive, Gruppi di Microsoft 365 e Teams.
 
-Questi diversi livelli di autorizzazione forniscono la massima flessibilità per la configurazione dell'accesso guest per l'organizzazione. Ad esempio, se non si vuole fornire agli utenti guest l'accesso in Teams ma si vuole consentire l'accesso globale nell'organizzazione, basta disattivare l'accesso guest in Teams. Un altro esempio: è possibile abilitare l'accesso guest a livello di Azure AD, Teams e Gruppi, ma bisogna [disabilitare l'aggiunta degli utenti guest a determinati team che soddisfano uno o più criteri come una classificazione dati di tipo riservato](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). SharePoint e OneDrive hanno le proprie impostazioni per l'accesso guest che non si basano su Gruppi di Microsoft 365.
+Questi diversi livelli di autorizzazione forniscono la massima flessibilità per la configurazione dell'accesso guest per l'organizzazione. Ad esempio, se non si vuole fornire agli utenti guest l'accesso in Teams ma si vuole consentire l'accesso globale nell'organizzazione, basta disattivare l'accesso guest in Teams. Un altro esempio: è possibile abilitare l'accesso guest a livello di Azure AD, Teams e Gruppi, ma bisogna [disabilitare l'aggiunta degli utenti guest a determinati team che soddisfano uno o più criteri come una classificazione dati di tipo riservato](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites). SharePoint e OneDrive hanno le proprie impostazioni per l'accesso guest che non si basano su Gruppi di Microsoft 365.
 
-Per le istruzioni di configurazione sull'accesso guest end-to-end, vedere [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
+Per le istruzioni di configurazione sull'accesso guest end-to-end, vedere [Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team).
 
 > [!NOTE]
-> Gli utenti guest sono soggetti ai limiti dei servizi descritti in [Descrizione dei servizi di Office 365 e Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=282347) e [Limitazioni di Collaborazione B2B di Azure AD](https://docs.microsoft.com/azure/active-directory/external-identities/current-limitations). 
+> Gli utenti guest sono soggetti ai limiti dei servizi descritti in [Descrizione dei servizi di Office 365 e Microsoft 365](/office365/servicedescriptions/office-365-service-descriptions-technet-library) e [Limitazioni di Collaborazione B2B di Azure AD](/azure/active-directory/external-identities/current-limitations). 
 
 Il diagramma seguente mostra in che modo la dipendenza di autorizzazione per l'accesso guest viene concessa e integrata tra Azure Active Directory, Teams e Microsoft 365.
 
@@ -58,28 +58,28 @@ I due diagrammi precedenti sono disponibili anche in [Visio](https://github.com/
 
 ## <a name="control-guest-access-in-azure-active-directory"></a>Controllare l'accesso guest in Azure Active Directory
 
-Usare Azure AD per determinare se i collaboratori esterni possono essere invitati al tenant come utenti guest e in quali modi. Per altre informazioni sull'accesso guest di Azure B2B, consultare [Che cos'è l'accesso utente guest in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/b2b/what-is-b2b). Per informazioni sui ruoli di Azure AD, consultare [Concedere autorizzazioni agli utenti di organizzazioni partner nel tenant di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/b2b/add-guest-to-role).
+Usare Azure AD per determinare se i collaboratori esterni possono essere invitati al tenant come utenti guest e in quali modi. Per altre informazioni sull'accesso guest di Azure B2B, consultare [Che cos'è l'accesso utente guest in Azure Active Directory B2B?](/azure/active-directory/b2b/what-is-b2b). Per informazioni sui ruoli di Azure AD, consultare [Concedere autorizzazioni agli utenti di organizzazioni partner nel tenant di Azure Active Directory](/azure/active-directory/b2b/add-guest-to-role).
 
 Le impostazioni per gli inviti si applicano a livello di organizzazione e controllano l'esperienza degli utenti guest a livello di directory e applicazione. È possibile configurare queste impostazioni in [Impostazioni per la collaborazione esterna](https://aad.portal.azure.com/#blade/Microsoft_AAD_IAM/CompanyRelationshipsMenuBlade/Settings).
 
 Azure AD include le seguenti impostazioni per la configurazione degli utenti esterni:
 
-- [Restrizioni di accesso degli utenti guest](https://docs.microsoft.com/azure/active-directory/users-groups-roles/users-restrict-guest-permissions)
+- [Restrizioni di accesso degli utenti guest](/azure/active-directory/users-groups-roles/users-restrict-guest-permissions)
 
 - **Amministratori e utenti nel ruolo mittente dell'invito guest possono invitare**: **Sì** significa che gli amministratori e gli utenti nel ruolo mittente invito possono invitare guest nel tenant. **No** significa che gli amministratori e gli utenti non possono invitare guest nel tenant.
 - **I membri possono invitare**: per consentire ai membri non amministratori della directory di invitare utenti guest, impostare questo criterio su **Yes** (scelta consigliata). Se si preferisce che solo gli amministratori siano autorizzati ad aggiungere utenti guest, è possibile impostare questo criterio su **No**. Tenere presente che l'opzione **No** limiterà l'esperienza guest per i proprietari di team non amministratori, che potranno aggiungere in Teams solo utenti guest già aggiunti in Azure AD dall'amministratore.
 - **I guest possono invitare**: **Sì** significa che gli utenti guest della directory possono invitare altri guest a collaborare sulle risorse protette di Azure AD, come i siti SharePoint o le risorse di Azure. **No** significa che gli utenti guest non possono invitare altri guest a collaborare con l'organizzazione. Anche se impostata su **Sì**, gli utenti guest non possono invitare altri utenti guest in Teams.
  
-Per altre informazioni su come controllare chi può invitare utenti guest, vedere [Abilitare la collaborazione esterna B2B e gestire gli utenti che possono invitare guest](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations).
+Per altre informazioni su come controllare chi può invitare utenti guest, vedere [Abilitare la collaborazione esterna B2B e gestire gli utenti che possono invitare guest](/azure/active-directory/b2b/delegate-invitations).
 
 > [!NOTE]
-> È possibile gestire anche i domini che possono essere invitati nel tenant come utenti guest. Vedere [Consentire o bloccare gli inviti agli utenti B2B di specifiche organizzazioni](https://docs.microsoft.com/azure/active-directory/external-identities/allow-deny-list).
+> È possibile gestire anche i domini che possono essere invitati nel tenant come utenti guest. Vedere [Consentire o bloccare gli inviti agli utenti B2B di specifiche organizzazioni](/azure/active-directory/external-identities/allow-deny-list).
 
 Non è necessario aggiungere l'account utente guest manualmente in Azure AD B2B in quanto l'account verrà aggiunto automaticamente alla directory quando il guest viene aggiunto a Teams.
 
 ### <a name="licensing-for-guest-access"></a>Licenze per l'accesso guest
 
-Le licenze di accesso guest usano i prezzi di Azure AD per identità esterne e si basano sui guest attivi mensilmente. Per dettagli vedere [Modello di fatturazione per Azure Active Directory per identità esterne](https://docs.microsoft.com/azure/active-directory/external-identities/external-identities-pricing).
+Le licenze di accesso guest usano i prezzi di Azure AD per identità esterne e si basano sui guest attivi mensilmente. Per dettagli vedere [Modello di fatturazione per Azure Active Directory per identità esterne](/azure/active-directory/external-identities/external-identities-pricing).
 
 > [!NOTE]
 > Gli utenti dell'organizzazione che hanno solo piani di abbonamento a Office 365 autonomi, ad esempio Exchange Online piano 2, non possono essere invitati come utenti guest nell'organizzazione, perché Teams li considera come appartenenti alla stessa organizzazione. Affinché questi utenti possano usare Teams, è necessario assegnare loro un abbonamento a Microsoft 365 Business Standard, Office 365 Enterprise o Office 365 Education. 
@@ -90,6 +90,6 @@ Le licenze di accesso guest usano i prezzi di Azure AD per identità esterne e s
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Riferimento alle impostazioni di condivisione guest di Microsoft 365](https://docs.microsoft.com/Office365/Enterprise/microsoft-365-guest-settings)
+- [Riferimento alle impostazioni di condivisione guest di Microsoft 365](/Office365/Enterprise/microsoft-365-guest-settings)
 
-[Configurare la collaborazione sicura con Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/setup-secure-collaboration-with-teams)
+[Configurare la collaborazione sicura con Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams)

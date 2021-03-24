@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 description: Questo articolo descrive la funzionalità Microsoft Teams disponibile per gli utenti guest.
-ms.openlocfilehash: 25ea63de9bcdc85e0f7b81e382c2c9bcd057c629
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
-ms.translationtype: HT
+ms.openlocfilehash: 8eda5d3cabf497d105c0fd4a4610ba59db128bfc
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49661891"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51092084"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza guest in Teams
 
@@ -105,8 +105,8 @@ La tabella seguente mostra le funzionalità per chiamate e riunioni disponibili 
 >  - Gli **utenti guest hanno accesso limitato alle proprietà e all'appartenenza agli oggetti directory** impostazioni significa che gli utenti guest non hanno le autorizzazioni per determinate attività della directory, ad esempio per l'enumerazione di utenti, gruppi o altre risorse della directory con Microsoft Graph.
 >  - L' **accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti della directory (più restrittivo),** impostazioni significa che gli utenti guest possono accedere solo agli oggetti della directory.
 >
->Per altre informazioni, vedere [Cosa sono le autorizzazioni utente predefinite in Azure Active Directory?](https://go.microsoft.com/fwlink/?linkid=2135493)
+>Per altre informazioni, vedere [Cosa sono le autorizzazioni utente predefinite in Azure Active Directory?](/azure/active-directory/fundamentals/users-default-permissions)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Abbandonare un organizzazione come utente guest](https://docs.microsoft.com/azure/active-directory/b2b/leave-the-organization)
+[Abbandonare un organizzazione come utente guest](/azure/active-directory/b2b/leave-the-organization)

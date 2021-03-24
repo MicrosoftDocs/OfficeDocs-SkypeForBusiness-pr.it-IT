@@ -16,37 +16,37 @@ ms.collection:
 ms.custom: ''
 ms.assetid: f1878194-c756-4794-8fa1-15dd2118b4b3
 description: Leggere questo argomento per informazioni su come configurare i criteri percorso del servizio di emergenza avanzato (E9-1-1) in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 4230d6ac1a820cb9612d58b21a2e5b6ae36d8f77
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cee02204a9c5b3708a83e9433f6a88c70230fd64
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822546"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51093144"
 ---
 # <a name="create-location-policies-in-skype-for-business-server"></a>Creare criteri percorso in Skype for Business Server
 
 Leggere questo argomento per informazioni su come configurare i criteri percorso del servizio di emergenza avanzato (E9-1-1) in Skype for Business Server VoIP aziendale. 
 
-Skype for Business Server usa un criterio percorso per abilitare i client Skype for Business per il servizio E9-1-1 durante la registrazione del client. I criteri percorso contengono le impostazioni che definiscono la modalità di implementazione di E9-1-1. Per ulteriori informazioni, vedere [Pianificare i criteri percorso per Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/location-policies.md)
+Skype for Business Server usa un criterio percorso per abilitare i client Skype for Business per E9-1-1 durante la registrazione del client. I criteri percorso contengono le impostazioni che definiscono la modalità di implementazione di E9-1-1. Per ulteriori informazioni, vedere [Plan location policies for Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/location-policies.md)
 
-È possibile definire i criteri percorso utilizzando il Pannello di controllo di Skype for Business o il cmdlet [New-CsLocationPolicy.](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps)
+È possibile definire i criteri percorso utilizzando il Pannello di controllo di Skype for Business o il cmdlet [New-CsLocationPolicy.](/powershell/module/skype/new-cslocationpolicy?view=skype-ps)
 
 > [!NOTE]
-> Skype for Business Server ora supporta la configurazione di più numeri di emergenza per un client. Se si desidera configurare più numeri di emergenza, è necessario seguire le informazioni in Pianificare più numeri di emergenza [in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md) e configurare più numeri di emergenza in Skype for [Business.](configure-multiple-emergency-numbers.md) 
+> Skype for Business Server ora supporta la configurazione di più numeri di emergenza per un client. Se si desidera configurare più numeri di emergenza, è necessario seguire le informazioni in Pianificare più numeri di emergenza [in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md) e Configurare più numeri di emergenza in Skype for [Business.](configure-multiple-emergency-numbers.md) 
 
 È possibile modificare i criteri percorso globali e creare nuovi criteri percorso contrassegnati. Un client ottiene criteri globali quando non si trova in una subnet con criteri percorso associati oppure quando non è stato assegnato direttamente a criteri percorso. I criteri contrassegnati vengono assegnati a subnet o a utenti. 
 
 Per creare criteri percorso, è necessario utilizzare un account membro del gruppo RTCUniversalServerAdmins o del ruolo amministrativo CsVoiceAdministrator oppure che disponga di equivalenti diritti e autorizzazioni di amministratore.
 
-Per ulteriori informazioni, vedere [Pianificare i criteri percorso per Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/location-policies.md) I cmdlet di questa procedura utilizzano un criterio percorso definito utilizzando i valori seguenti. Per una descrizione completa dei parametri e dei valori dei cmdlet, [vedere New-CsLocationPolicy.](https://docs.microsoft.com/powershell/module/skype/new-cslocationpolicy?view=skype-ps)
+Per ulteriori informazioni, vedere [Plan location policies for Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/location-policies.md) I cmdlet di questa procedura utilizzano un criterio percorso definito utilizzando i valori seguenti. Per una descrizione completa dei parametri e dei valori dei cmdlet, [vedere New-CsLocationPolicy](/powershell/module/skype/new-cslocationpolicy?view=skype-ps).
 
 
 | **Elemento**                               | **Valore**                                                                                                                                                                          |
 |:------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| EnhancedEmergencyServicesEnabled  <br/>   | **Vero** <br/>                                                                                                                                                                     |
+| EnhancedEmergencyServicesEnabled  <br/>   | **True** <br/>                                                                                                                                                                     |
 | LocationRequired  <br/>                   | **Dichiarazione di non responsabilità** <br/>                                                                                                                                                               |
 | EnhancedEmergencyServiceDisclaimer  <br/> | È necessario impostare un percorso per il criterio aziendale. Se non si imposta un percorso, in caso di emergenza non sarà possibile essere individuati dai servizi di emergenza. Impostare un percorso.  <br/> |
-| UseLocationForE911Only  <br/>             | **Falso** <br/>                                                                                                                                                                    |
+| UseLocationForE911Only  <br/>             | **False** <br/>                                                                                                                                                                    |
 | PstnUsage  <br/>                          | **EmergencyUsage** <br/>                                                                                                                                                           |
 | EmergencyDialString  <br/>                | **911** <br/>                                                                                                                                                                      |
 | EmergencyDialMask  <br/>                  | **112** <br/>                                                                                                                                                                      |

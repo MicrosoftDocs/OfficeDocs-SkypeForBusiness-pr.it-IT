@@ -15,20 +15,20 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7a4b91ff-ca11-4dde-852d-ec51d143968a
 description: 'Modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:'
-ms.openlocfilehash: 11e70f61c2eee33ab19ec0fa0b2f9fb3310a4542
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: e9f4a188c5cb58be685db4ea44157f2897ebe5ba
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810306"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51095540"
 ---
 # <a name="edit-office-web-apps-server-settings"></a>Modificare le impostazioni di Office Web Apps Server
 
 Modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:
 
- FQDN del **server Office Web Apps:** questa proprietà definisce il nome di dominio completo del server Office Web Apps e deve corrispondere a un record A o AAAA host DNS (Domain Name System) (se viene utilizzato IPv6).
+ FQDN **del server Office Web Apps:** questa proprietà definisce il nome di dominio completo del server Office Web Apps e deve corrispondere a un record A o AAAA (se viene utilizzato IPv6) host DNS (Domain Name System).
 
- **URL** di individuazione del server Office Web Apps : URL (Uniform Resource Locator) per l'accesso client al server Office Web Apps, potrebbe essere necessario modificare questo indirizzo dal valore predefinito se il server si trova in un'altra area di rete diversa dalla rete interna per la distribuzione.
+ **URL** di individuazione del server Office Web Apps : URL (Uniform Resource Locator) per l'accesso client al server Office Web Apps, potrebbe essere necessario modificare questo indirizzo dal valore predefinito se il server viene posizionato in un'altra area di rete diversa dalla rete interna per la distribuzione.
 
 Selezionare la casella di controllo **Il server Office Web Apps è distribuito in una rete esterna** se il server è distribuito nella rete perimetrale o in un'altra area della rete esterna al firewall interno che separa la rete perimetrale, le reti meno attendibili e Internet dalla distribuzione interna.
 
@@ -36,4 +36,4 @@ Selezionare la casella di controllo **Il server Office Web Apps è distribuito i
 
 ## <a name="see-also"></a>Vedere anche
 
-[Componenti e topologie per le conferenze](https://technet.microsoft.com/library/eb83052a-3360-4ba1-a6a0-6ee419942809.aspx)
+[Componenti e topologie per le conferenze](/previous-versions/office/lync-server-2013/lync-server-2013-components-and-topologies-for-conferencing)

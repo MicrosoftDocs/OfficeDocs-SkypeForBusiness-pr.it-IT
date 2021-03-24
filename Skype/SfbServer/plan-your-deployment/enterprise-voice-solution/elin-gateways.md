@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ced79c13-4e7e-4034-95cd-6fc913f4f222
 description: Decisioni necessarie per la pianificazione di un database delle informazioni sulla posizione o di un database esterno simile per una distribuzione E9-1-1 tramite gateway ELIN, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 387b94ca59ef7750a80d06c88b371a0afef9313d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: dd16270aa5a41e3ca50e92859bd1a789426e647b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834396"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51092914"
 ---
 # <a name="manage-locations-for-elin-gateways-in-skype-for-business-server"></a>Gestire le posizioni per i gateway ELIN in Skype for Business Server
 
@@ -35,24 +35,24 @@ Per consentire a Skype for Business Server di fornire automaticamente posizioni 
 
 - Caricare i numeri ELIN nel database ALI (Automatic Location Identification) del gestore della rete PSTN (Public Switched Telephone Network).
 
-Per informazioni dettagliate su come eseguire queste attività, vedere [Configure the Location Database](https://technet.microsoft.com/library/8544be31-6958-47ef-b926-fdc80d56191c.aspx) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate su come eseguire queste attività, vedere [Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) nella documentazione relativa alla distribuzione.
 
 > [!NOTE]
-> Le posizioni aggiunte al database delle posizioni centrale non sono disponibili per il client fino a quando non sono state pubblicate utilizzando un comando di Skype for Business Server Management Shell e vengono replicate agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](https://technet.microsoft.com/library/dd032b5b-df0e-4017-ac46-e17570c1ab1e.aspx) nella documentazione relativa alla distribuzione.
+> Le posizioni aggiunte al database delle posizioni centrali non sono disponibili per il client fino a quando non sono state pubblicate utilizzando un comando di Skype for Business Server Management Shell e vengono replicate agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) nella documentazione relativa alla distribuzione.
 
 In questa sezione vengono descritti gli aspetti da prendere in considerazione quando si pianificano l'aggiornamento e la gestione del database delle posizioni.
 
 ## <a name="planning-emergency-locations"></a>Pianificazione delle posizioni di emergenza
 
-Quando si utilizzano gateway ELIN, il database del servizio informazioni percorso viene popolato con l'indirizzo civico, una posizione specifica all'interno di un edificio e almeno un numero ELIN per ogni posizione. Durante la fase di pianificazione, è opportuno decidere come denominare le posizioni e come assegnare i numeri ELIN.
+Quando si utilizzano gateway ELIN, si popola il database del servizio informazioni percorso con l'indirizzo civico, una posizione specifica all'interno di un edificio e almeno un ELIN per ogni posizione. Durante la fase di pianificazione, è opportuno decidere come denominare le posizioni e come assegnare i numeri ELIN.
 
 ### <a name="planning-location-names"></a>Pianificazione dei nomi delle posizioni
 
-Il campo Posizione **del** servizio informazioni percorso, che contiene la posizione specifica all'interno di un edificio, ha una lunghezza massima di 20 caratteri (spazi inclusi). Tentare di includere gli elementi seguenti rispettando questi limiti di lunghezza:
+Il campo Posizione del servizio **informazioni** percorso, che contiene la posizione specifica all'interno di un edificio, ha una lunghezza massima di 20 caratteri (spazi inclusi). Tentare di includere gli elementi seguenti rispettando questi limiti di lunghezza:
 
 - Un nome di facile comprensione che identifichi la posizione del chiamante del servizio di emergenza (911), per consentire agli addetti del servizio di emergenza di trovare immediatamente la posizione specifica quando si recano all'indirizzo civico. Questo nome di posizione può includere il numero di edificio, l'indicazione della scala, il numero del piano, il numero di porta e così via. Evitare nomi alternativi noti solo ai dipendenti, altrimenti si rischia che gli addetti del servizio di emergenza si rechino nel luogo sbagliato.
 
-- Identificatore di posizione che consente agli utenti di vedere facilmente che il client ha selezionato la posizione corretta. Il client Skype for Business concatena e visualizza automaticamente i campi **Posizione** e **Città** individuati nell'intestazione. È buona norma aggiungere l'indirizzo dell'edificio a ogni identificatore di posizione (ad esempio, "1° <street number> piano"). Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
+- Identificatore di posizione che consente agli utenti di vedere facilmente che il client ha selezionato la posizione corretta. Il client Skype for Business concatena automaticamente e visualizza i campi **Location** e **City** individuati nell'intestazione. È consigliabile aggiungere l'indirizzo dell'edificio a ogni identificatore di posizione , ad esempio "1° piano <street number> ". Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
 
 - Se la posizione è approssimativa perché è determinata da un punto di accesso wireless, è possibile aggiungere la parola **[Near]** (ad esempio, "Near 1st Floor 1234").
 
@@ -64,7 +64,7 @@ Dopo aver stabilito come suddividere lo spazio dell'edificio in posizioni, è ne
 
 |**Area dell'edificio**|**Posizione**|**ELIN**|
 |:-----|:-----|:-----|
-|Primo piano  <br/> |1   <br/> |425-555-0100  <br/> |
+|Primo piano  <br/> |1  <br/> |425-555-0100  <br/> |
 |Secondo piano  <br/> |2   <br/> |425-555-0111  <br/> |
 |Terzo piano  <br/> |3   <br/> |425-555-0123  <br/> |
 
@@ -84,11 +84,11 @@ Esaminare dove si trovano i dati e quali operazioni è necessario eseguire per c
 
  **Valutare se si dispone di un database di terze parti contenente già un mapping di posizioni.**
 
-Utilizzando l'opzione Secondary Location Information Service per connettersi a un database di terze parti, è possibile raggruppare e gestire le posizioni utilizzando una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Ciò significa che il servizio informazioni sulla posizione può restituire più indirizzi, originati dal servizio secondario di informazioni sulla posizione, a un client Skype for Business. L'utente può quindi scegliere la posizione più appropriata.
+Utilizzando l'opzione Secondary Location Information service per connettersi a un database di terze parti, è possibile raggruppare e gestire le posizioni utilizzando una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Ciò significa che il servizio informazioni sulla posizione può restituire più indirizzi, provenienti dal servizio informazioni sulla posizione secondaria, a un client Skype for Business. L'utente può quindi scegliere la posizione più appropriata.
 
-Per l'integrazione con il servizio Informazioni percorso, il database di terze parti deve seguire lo schema di richiesta/risposta della posizione di Skype for Business Server. Per informazioni dettagliate, vedere [Web Service for E911 Support Protocol.](https://go.microsoft.com/fwlink/p/?linkid=213819) Per informazioni dettagliate sulla distribuzione di un servizio secondario di informazioni sulla posizione, vedere [Configure a secondary Location Information service in Skype for Business Server](../../deploy/deploy-enterprise-voice/secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
+Per l'integrazione con il servizio informazioni percorso, il database di terze parti deve seguire lo schema di richiesta/risposta percorso di Skype for Business Server. Per informazioni dettagliate, vedere [Web Service for E911 Support Protocol](/openspecs/office_protocols/ms-e911ws/ab5d7449-2c15-434b-bf65-fdf38b8ffabd). Per informazioni dettagliate sulla distribuzione di un servizio di informazioni sulla posizione secondario, vedere [Configure a secondary Location Information service in Skype for Business Server](../../deploy/deploy-enterprise-voice/secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
 
-Per informazioni dettagliate su come popolare il database delle posizioni, vedere [Configure the Location Database](https://technet.microsoft.com/library/8544be31-6958-47ef-b926-fdc80d56191c.aspx) nella documentazione relativa alla distribuzione.
+Per informazioni dettagliate su come popolare il database delle posizioni, vedere [Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) nella documentazione relativa alla distribuzione.
 
 ## <a name="maintaining-the-location-database"></a>Gestione del database delle posizioni
 
@@ -98,8 +98,6 @@ Dopo aver popolato il database delle posizioni, è necessario sviluppare una str
 
 Esistono diversi scenari che richiedono un aggiornamento del database delle posizioni, tra cui l'aggiunta di punti di accesso wireless, il ricablaggio degli uffici (con assegnazioni diverse dei commutatori) e l'espansione delle subnet. Considerare se si prevede di aggiornare direttamente ogni singola posizione o di eseguire un aggiornamento in blocco delle posizioni mediante un file CSV.
 
- **Userai un'applicazione SNMP per associare gli indirizzi MAC del client Skype for Business agli identificatori di porta e commutatore?**
+ **Userai un'applicazione SNMP per associare gli indirizzi MAC del client Skype for Business agli identificatori di porta e commutazione?**
 
-Se si utilizza un'applicazione SNMP, è necessario sviluppare un processo manuale per mantenere la coerenza a livello di informazioni su porte e chassis dei commutatori tra l'applicazione SNMP e il database delle posizioni. Se l'applicazione SNMP restituisce un indirizzo IP dello chassis o un ID porta non incluso nel database, il servizio informazioni percorso non sarà in grado di restituire una posizione al client.
-
-
+Se si utilizza un'applicazione SNMP, è necessario sviluppare un processo manuale per mantenere la coerenza a livello di informazioni su porte e chassis dei commutatori tra l'applicazione SNMP e il database delle posizioni. Se l'applicazione SNMP restituisce un indirizzo IP dello chassis o un ID di porta non incluso nel database, il servizio informazioni percorso non sarà in grado di restituire una posizione al client.

@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, presentazioni di PowerPoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2b764e7843defac163e4d111a49b1cf9a321f27
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 2922f22ec0ea7db095c63ce05f9d37752ba134a4
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50874876"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51094568"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Guida introduttiva alla formazione per gli amministratori per Microsoft Teams
 
@@ -32,8 +32,8 @@ Usare le risorse di formazione per istruirsi su Teams, insegnare ad altri utenti
 
 |               |               |               |               |
 | :------------ | :------------ | :------------ | :------------ |
-| ![Icona che rappresenta una mano e una freccia verso l'alto](https://docs.microsoft.com/office/media/icons/get-started-teams.png) | [Inizia subito con un paio di team e canali](/MicrosoftTeams/get-started-with-teams-quick-start) | ![Icona che raffigura due utenti](https://docs.microsoft.com/office/media/icons/users-people.png) | [Ottenere formazione per gli utenti](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) |
-| ![Icona che rappresenta un segno di spunta](https://docs.microsoft.com/office/media/icons/success-teams.png) | [Visualizzare le procedure consigliate e i video di procedure nel canale Coffee in the Cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos) | ![Simbolo degli Appunti attività](https://docs.microsoft.com/office/media/icons/task-checklist-planning-teams.png) | [Teams Chalk Talks: scopri le procedure consigliate e le indicazioni pratiche per gli scenari più comuni di Teams](https://aka.ms/TeamsChalkTalks) |
+| ![Icona che rappresenta una mano e una freccia verso l'alto](/office/media/icons/get-started-teams.png) | [Inizia subito con un paio di team e canali](./get-started-with-teams-quick-start.md) | ![Icona che raffigura due utenti](/office/media/icons/users-people.png) | [Ottenere formazione per gli utenti](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) |
+| ![Icona che rappresenta un segno di spunta](/office/media/icons/success-teams.png) | [Visualizzare le procedure consigliate e i video di procedure nel canale Coffee in the Cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos) | ![Simbolo degli Appunti attività](/office/media/icons/task-checklist-planning-teams.png) | [Teams Chalk Talks: scopri le procedure consigliate e le indicazioni pratiche per gli scenari più comuni di Teams](./chalk-talks-landing-page.yml) |
 
 <h2>Formazione tecnica</h2>
 
@@ -100,5 +100,5 @@ Usare le risorse di formazione per istruirsi su Teams, insegnare ad altri utenti
 
 <h2>Corsi</h2>
 
-- [Abilitazione del lavoro in team con Microsoft Teams](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration)
-- [Microsoft Service Adoption Specialist](https://aka.ms/AdoptionCert)
+- [Abilitazione del lavoro in team con Microsoft Teams](/learn/paths/m365-manage-team-collaboration)
+- [Microsoft Service Adoption Specialist](/learn/paths/m365-service-adoption/)

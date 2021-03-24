@@ -1,5 +1,5 @@
 ---
-title: Distribuzioni locali a più foreste di Skype Room System
+title: Skype Room System distribuzioni locali a più foreste
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -12,21 +12,21 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6793fca0-3970-44e4-8703-1925428c1967
 description: Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente locale a più foreste.
-ms.openlocfilehash: 168244033a681b9aa9dc6e4c9697b7e3c7e89127
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d215ce13059c414d6c6142d7cd1e93ea9011c97b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49805746"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51093530"
 ---
-# <a name="skype-room-system-multiple-forest-on-premises-deployments"></a>Distribuzioni locali a più foreste di Skype Room System
+# <a name="skype-room-system-multiple-forest-on-premises-deployments"></a>Skype Room System distribuzioni locali a più foreste
  
 Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente locale a più foreste.
   
 > [!NOTE]
-> Per la distribuzione in più foreste, Skype Room System richiede Exchange Server 2013 CU6 rilasciato il 26 agosto 2014. Evitare di utilizzare di nuovo una cassetta postale esistente per Skype Room System. Usare una nuova cassetta postale (eliminare la vecchia cassetta postale e creare di nuovo) la cassetta postale delle risorse per Skype Room System. Per ripristinare le riunioni perse eliminando la cassetta postale, vedere [Connettere o ripristinare una cassetta postale eliminata.](https://technet.microsoft.com/library/jj863438%28v=exchg.150%29.aspx) 
+> Per la distribuzione in più foreste, Skype Room System richiede Exchange Server 2013 CU6 rilasciato il 26 agosto 2014. Evitare di utilizzare di nuovo una cassetta postale esistente per Skype Room System. Usa una nuova cassetta postale (elimina la vecchia cassetta postale e ri-crea) per Skype Room System. Per ripristinare le riunioni perse eliminando la cassetta postale, vedere [Connect or restore a deleted mailbox](/exchange/connect-or-restore-a-deleted-mailbox-exchange-2013-help). 
   
-Dopo aver creato la cassetta postale, è possibile utilizzare Set-CalendarProcessing per configurare la cassetta postale. Per ulteriori dettagli, vedere i passaggi da 3 a 6 nelle distribuzioni locali a foresta singola. After creating an Exchange Resource mailbox for Skype Room System, enable the account for Skype for Business by following the steps in Enabling Skype Room System Accounts for Skype for Business under Single forest on-premises deployments.
+Dopo aver creato la cassetta postale, è possibile utilizzare Set-CalendarProcessing per configurare la cassetta postale. Per ulteriori dettagli, vedere i passaggi da 3 a 6 in Distribuzioni locali a foresta singola. Dopo aver creato una cassetta postale delle risorse di Exchange per Skype Room System, abilitare l'account per Skype for Business seguendo la procedura descritta in Enabling Skype Room System Accounts for Skype for Business in Single forest on-premises deployments.
   
 ## <a name="option-1-create-a-new-resource-mailbox"></a>Opzione 1: creare una nuova cassetta postale per le risorse
 
@@ -41,11 +41,9 @@ Per distribuire Skype Room System in un ambiente a più foreste:
    new-mailbox -Alias LinkedRoomTest -LinkedMasterAccount AuthForest\LinkedRoomTest -LinkedDomainController AuthForest-4939.AuthForest.extest.contoso.com -UserPrincipalName LinkedRoomTest@ExchangeForest.contoso.comm -Name LinkedRoomTest -LinkedCredential $cred -LinkedRoom
    ```
 
-## <a name="option-2-change-an-existing-room-mailbox-to-skype-room-system-linked-resource-mailbox"></a>Opzione 2: modificare una cassetta postale sala esistente in una cassetta postale delle risorse skype room (collegata)
+## <a name="option-2-change-an-existing-room-mailbox-to-skype-room-system-linked-resource-mailbox"></a>Opzione 2: modificare una cassetta postale sala esistente in Cassetta postale delle risorse di Sistema sala Skype (collegato)
 
 ```powershell
 $cred=Get-Credential AuthForest\LinkedRoomTest1
 Set-mailbox -Alias LinkedRoomTest1 -LinkedMasterAccount AuthForest\LinkedRoomTest1 -LinkedDomainController AuthForest-4939.AuthForest.extest.contoso.com -Name LinkedRoomTest1 -LinkedCredential $cred -Identity LinkedRoomTest1
 ```
-
-

@@ -21,12 +21,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e7846a5f31b07681dc39651b133f0922c1ec9629
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 92a103262c0d6f997ace41fa0f1d6240452bb8d1
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031242"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51094372"
 ---
 # <a name="learn-how-to-deploy-audio-conferencing-in-microsoft-teams"></a>Scopri come distribuire i servizi di audioconferenza in Microsoft Teams
 
@@ -46,7 +46,7 @@ Prima di implementare l'audioconferenza per Teams, considerare quanto segue:
 |Chiedersi|Azione |
 |------------|-------|
 |Il servizio di audioconferenza è disponibile per il paese/area geografica?|Per sapere se l'audioconferenza è disponibile nel paese/area geografica di interesse, vedere [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).|
-|Gli utenti hanno la licenza appropriata per l'audioconferenza di Teams?|Le licenze per Audioconferenza sono disponibili come parte di un abbonamento a Microsoft 365 o Office 365 E5 o come componente aggiuntivo per un abbonamento a Microsoft 365 Business Standard, E1 o E3. <ul><li>Per ottenere e assegnare licenze, vedere [Provare o acquistare le audioconferenze in Microsoft 365 o Office 365](https://docs.microsoft.com/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365) e [Assegnare o rimuovere licenze per Microsoft 365 Apps for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).</li><li> Per altre informazioni, vedere [Gestione delle licenze per i componenti aggiuntivi di Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing). </li><li>Per informazioni sulle funzionalità cloud incluse in ogni piano, vedere gli articoli sulle [Opzioni di licenza basate sul piano](teams-add-on-licensing/office-365-business-premium.md).</li></ul>|
+|Gli utenti hanno la licenza appropriata per l'audioconferenza di Teams?|Le licenze per Audioconferenza sono disponibili come parte di un abbonamento a Microsoft 365 o Office 365 E5 o come componente aggiuntivo per un abbonamento a Microsoft 365 Business Standard, E1 o E3. <ul><li>Per ottenere e assegnare licenze, vedere [Provare o acquistare le audioconferenze in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365) e [Assegnare o rimuovere licenze per Microsoft 365 Apps for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc).</li><li> Per altre informazioni, vedere [Gestione delle licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md). </li><li>Per informazioni sulle funzionalità cloud incluse in ogni piano, vedere gli articoli sulle [Opzioni di licenza basate sul piano](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).</li></ul>|
 |È necessario acquistare credito per la comunicazione per gli utenti a cui sono state assegnate licenze per Audioconferenza?|Per altre informazioni, vedere [Che cos'è Credito per la comunicazione?](what-are-communications-credits.md) e quindi leggere la sezione [Credito per la comunicazione](#communications-credits) più avanti.|
 |||
 
@@ -63,7 +63,7 @@ Teams include un set di ruoli di amministratore personalizzati che è possibile 
 | Chiedersi | Azione |
 |--------------|--------|
 |A chi sarà assegnato il ruolo di amministratore delle comunicazioni di Teams?|Per altre informazioni sui ruoli di amministratore di Teams, vedere [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md).|
-|A chi sarà assegnato il ruolo di tecnico del supporto delle comunicazioni di Teams?|Per assegnare i ruoli amministrativi, vedere [Assegnazione di ruoli di amministratore e senza privilegi di amministratore agli utenti con Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).|
+|A chi sarà assegnato il ruolo di tecnico del supporto delle comunicazioni di Teams?|Per assegnare i ruoli amministrativi, vedere [Assegnazione di ruoli di amministratore e senza privilegi di amministratore agli utenti con Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).|
 |A chi sarà assegnato il ruolo di specialista del supporto delle comunicazioni di Teams?||
 |||
 
@@ -75,7 +75,7 @@ Per altre informazioni, vedere [Audioconferenza](audio-conferencing-in-office-36
 
 |Chiedersi|Azione |
 |------------|-------|
-|È necessario aggiungere nuovi numeri per il bridge di conferenza?| Per aggiungere nuovi numeri, vedere [Recuperare numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).|
+|È necessario aggiungere nuovi numeri per il bridge di conferenza?| Per aggiungere nuovi numeri, vedere [Recuperare numeri di telefono del servizio](./getting-service-phone-numbers.md).|
 |È necessario modificare le impostazioni del bridge?|Per modificare le impostazioni del bridge, vedere [Modificare le impostazioni per un bridge per audioconferenza](change-the-settings-for-an-audio-conferencing-bridge.md).|
 |È necessario trasferire i numeri di telefono per usarli con il servizio di audioconferenza?|Per informazioni sulla portabilità dei numeri di telefono, vedere [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).|
 |||
@@ -87,7 +87,7 @@ Il servizio di audioconferenza di Teams consente di configurare le lingue predef
 
 |Chiedersi|Azione |
 |------------|-------|
-| Quali lingue scegliere per i messaggi di saluto dell'operatore automatico? | Per scegliere le lingue, vedere [Impostare le lingue degli operatori automatici per le audioconferenze](https://docs.microsoft.com/SkypeForBusiness/audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json).|
+| Quali lingue scegliere per i messaggi di saluto dell'operatore automatico? | Per scegliere le lingue, vedere [Impostare le lingue degli operatori automatici per le audioconferenze](/SkypeForBusiness/audio-conferencing-in-office-365/set-auto-attendant-languages-for-audio-conferencing?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json).|
 |||
 
 ### <a name="conferencing-bridge-settings"></a>Impostazioni del bridge di conferenza 

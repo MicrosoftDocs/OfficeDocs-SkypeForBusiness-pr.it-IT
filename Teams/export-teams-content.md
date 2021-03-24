@@ -18,16 +18,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 948b30e9494bbac78dc7cf2e3e276242feea306e
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 013cd992619264f875841b1b6bb13aca3943d14e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50874686"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51092450"
 ---
 # <a name="export-content-with-the-microsoft-teams-export-apis"></a>Esportare contenuto con le API di esportazione di Microsoft Teams
 
-Le API di esportazione di Teams consentono di esportare 1:1, chat di gruppo, chat delle riunioni e messaggi di canale da Microsoft Teams. Se l'organizzazione deve esportare i messaggi di Microsoft Teams, è possibile estrarli usando le API di esportazione di Teams. *Messaggio chat* rappresenta un singolo messaggio di chat all'interno di [un canale o](https://docs.microsoft.com/graph/api/resources/channel?view=graph-rest-beta) di una [chat.](https://docs.microsoft.com/graph/api/resources/chat?view=graph-rest-beta) Il messaggio di chat può essere un messaggio di chat radice o parte di un thread di risposta definito dalla proprietà **replyToId** nel messaggio di chat.
+Le API di esportazione di Teams consentono di esportare 1:1, chat di gruppo, chat delle riunioni e messaggi di canale da Microsoft Teams. Se l'organizzazione deve esportare i messaggi di Microsoft Teams, è possibile estrarli usando le API di esportazione di Teams. *Messaggio chat* rappresenta un singolo messaggio di chat all'interno di [un canale o](/graph/api/resources/channel?view=graph-rest-beta) di una [chat.](/graph/api/resources/chat?view=graph-rest-beta) Il messaggio di chat può essere un messaggio di chat radice o parte di un thread di risposta definito dalla proprietà **replyToId** nel messaggio di chat.
 
 Ecco alcuni esempi su come usare queste API di esportazione:
 
@@ -39,11 +39,11 @@ Ecco alcuni esempi su come usare queste API di esportazione:
 - **Esportazione in blocco del messaggio di Teams:** Le API di esportazione di Teams supportano fino a 200 RPS per ogni app Per tenant e 600 RPS per un'applicazione, con questi limiti dovrebbe essere possibile esportare in blocco i messaggi di Teams.
 - **Contesto applicazione:** per chiamare Microsoft Graph, l'app deve acquisire un token di accesso dalla piattaforma di identità Microsoft. Il token di accesso contiene informazioni sull'app e sulle autorizzazioni di cui dispone per le risorse e le API disponibili tramite Microsoft Graph. Per ottenere un token di accesso, l'app deve essere registrata con la piattaforma di identità Microsoft ed essere autorizzata da un utente o un amministratore per l'accesso alle risorse di Microsoft Graph necessarie.
 
-    Se si ha già familiarità con l'integrazione di un'app con la piattaforma di identità Microsoft per ottenere token, vedere la [sezione Passaggi](https://docs.microsoft.com/graph/auth/auth-concepts?view=graph-rest-1.0#next-steps) successivi per informazioni ed esempi specifici di Microsoft Graph.
+    Se si ha già familiarità con l'integrazione di un'app con la piattaforma di identità Microsoft per ottenere token, vedere la [sezione Passaggi](/graph/auth/auth-concepts?view=graph-rest-1.0#next-steps) successivi per informazioni ed esempi specifici di Microsoft Graph.
 - **Ambiente ibrido:** Le API di esportazione supportano i messaggi inviati da utenti di cui è stato eseguito il provisioning nell'ambiente ibrido (Exchange locale e Teams). Tutti i messaggi inviati da utenti configurati per l'ambiente ibrido saranno accessibili tramite le API di esportazione.
 - **Messaggi eliminati dall'utente:** È possibile accedere ai messaggi eliminati dagli utenti dal client Teams usando le API di esportazione fino a 21 giorni dal momento dell'eliminazione.
 - **Allegati del messaggio:** Le API di esportazione includono i collegamenti agli allegati inviati come parte dei messaggi. Usando le API di esportazione è possibile recuperare i file allegati nei messaggi.
-- **Proprietà messaggio chat:** Fare riferimento all'elenco completo delle proprietà supportate da Teams Export APIs [qui](https://docs.microsoft.com/graph/api/resources/chatmessage?view=graph-rest-beta#properties).
+- **Proprietà messaggio chat:** Fare riferimento all'elenco completo delle proprietà supportate da Teams Export APIs [qui](/graph/api/resources/chatmessage?view=graph-rest-beta#properties).
 
 ## <a name="how-to-access-teams-export-apis"></a>Come accedere alle API di esportazione di Teams
 
@@ -69,7 +69,7 @@ Ecco alcuni esempi su come usare queste API di esportazione:
 
 ## <a name="prerequisites-to-access-teams-export-apis"></a>Prerequisiti per l'accesso alle API di esportazione di Teams 
 
-- Le API di esportazione di Teams sono attualmente in anteprima. Sarà disponibile solo per gli utenti e i tenant che dispongono delle [licenze necessarie](https://aka.ms/teams-changenotification-licenses) per le API. In futuro, Microsoft potrebbe richiedere a te o ai tuoi clienti di pagare costi aggiuntivi in base alla quantità di dati a cui si accede tramite l'API.
+- Le API di esportazione di Teams sono attualmente in anteprima. Sarà disponibile solo per gli utenti e i tenant che dispongono delle [licenze necessarie](/graph/teams-licenses) per le API. In futuro, Microsoft potrebbe richiedere a te o ai tuoi clienti di pagare costi aggiuntivi in base alla quantità di dati a cui si accede tramite l'API.
 - Le API di Microsoft Teams in Microsoft Graph che accedono ai dati riservati sono considerate API protette. Le API di esportazione richiedono la convalida aggiuntiva, oltre alle autorizzazioni e al consenso, prima di poterle usare. Per richiedere l'accesso a queste API protette, compilare il [modulo di richiesta.](https://aka.ms/teamsgraph/requestaccess)
 - Le autorizzazioni per le applicazioni vengono usate dalle app eseguite senza che sia presente un utente connesso. le autorizzazioni dell'applicazione possono essere concesse solo da un amministratore. Sono necessarie le autorizzazioni seguenti:
 
@@ -117,4 +117,4 @@ Spazio dei nomi: microsoft.graph
 ```
 
 >[!NOTE]
->Per altre informazioni sulla risorsa chatMessage, vedere l'articolo sul tipo [di risorsa chatMessage.](https://docs.microsoft.com/graph/api/resources/chatmessage)
+>Per altre informazioni sulla risorsa chatMessage, vedere l'articolo sul tipo [di risorsa chatMessage.](/graph/api/resources/chatmessage)

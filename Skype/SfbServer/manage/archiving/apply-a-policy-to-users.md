@@ -12,29 +12,29 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: bebd45d1-93c3-4e80-8933-755b699b2209
 description: 'Riepilogo: informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.'
-ms.openlocfilehash: 8dc74fcc8befe39b424b89c77aebca683fe17586
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 1fce0dbd0cc7b0595dcf3cd91baeba9ed364e28a
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817766"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51095490"
 ---
 # <a name="apply-an-archiving-policy-to-users-in-skype-for-business-server"></a>Applicare un criterio di archiviazione agli utenti in Skype for Business Server
 
 **Riepilogo:** Informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.
   
-Se sono stati creati uno o più criteri utente per l'archiviazione per gli utenti ospitati in Skype for Business Server, è possibile implementare il supporto dell'archiviazione per utenti specifici applicando i criteri appropriati a tali utenti o gruppi di utenti. Ad esempio, se si crea un criterio per supportare l'archiviazione delle comunicazioni interne, è possibile applicarlo ad almeno un utente o gruppo di utenti per supportare l'archiviazione delle comunicazioni di Skype for Business Server dell'utente.
+Se sono stati creati uno o più criteri utente per l'archiviazione per gli utenti ospitati in Skype for Business Server, è possibile implementare il supporto di archiviazione per utenti specifici applicando i criteri appropriati a tali utenti o gruppi di utenti. Ad esempio, se si crea un criterio per supportare l'archiviazione delle comunicazioni interne, è possibile applicarlo ad almeno un utente o gruppo di utenti per supportare l'archiviazione delle comunicazioni Skype for Business Server dell'utente.
   
 > [!NOTE]
-> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco di Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e le cassette postali vengono In-Place archiviazione. Per informazioni dettagliate, vedere [Pianificare l'archiviazione in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e Configurare l'integrazione con l'archiviazione di Exchange per Skype for Business [Server.](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md) 
+> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco di Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e Configure integration with Exchange storage for Skype for Business [Server.](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md) 
   
-## <a name="apply-a-user-policy-by-using-the-control-panel"></a>Applicare un criterio utente tramite il Pannello di controllo
+## <a name="apply-a-user-policy-by-using-the-control-panel"></a>Applicare criteri utente tramite il Pannello di controllo
 
 Per applicare un criterio utente tramite il Pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti** e quindi cercare l'account utente che si desidera configurare. 
     
@@ -47,9 +47,9 @@ Per applicare un criterio utente tramite il Pannello di controllo:
   
 6. Fare clic su **Commit**.
     
-## <a name="apply-a-user-policy-by-using-windows-powershell"></a>Applicare un criterio utente utilizzando Windows PowerShell
+## <a name="apply-a-user-policy-by-using-windows-powershell"></a>Applicare un criterio utente tramite Windows PowerShell
 
-È inoltre possibile applicare un criterio utente utilizzando Windows PowerShell **cmdlet Grant-CsArchivingPolicy.**
+È inoltre possibile applicare un criterio utente utilizzando il cmdlet **Grant-CsArchivingPolicy Windows PowerShell.CsArchivingPolicy.**
   
 Il comando seguente assegna il criterio di archiviazione per utente RedmondArchivingPolicy all'utente Ken Myer:
   
@@ -57,18 +57,16 @@ Il comando seguente assegna il criterio di archiviazione per utente RedmondArchi
 Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName "RedmondArchivingPolicy"
 ```
 
-Questo comando assegna il criterio di archiviazione per utente RedmondArchivingPolicy a tutti gli utenti con account ospitati nel pool di registrazione atl-cs-001.contoso.com. Per informazioni dettagliate sul parametro Filter utilizzato in questo comando, vedere la documentazione del cmdlet [Get-CsUser.](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps)
+Questo comando assegna il criterio di archiviazione per utente RedmondArchivingPolicy a tutti gli utenti che dispongono di account ospitati nel pool di registrazione atl-cs-001.contoso.com. Per informazioni dettagliate sul parametro Filter utilizzato in questo comando, vedere la documentazione relativa al cmdlet [Get-CsUser.](/powershell/module/skype/get-csuser?view=skype-ps)
   
 ```PowerShell
 Get-CsUser -Filter {RegistrarPool -eq "atl-cs-001.contoso.com"} | Grant-CsArchivingPolicy -PolicyName "RedmondArchivingPolicy"
 ```
 
-Il comando seguente rimuove tutti i criteri di archiviazione per utente precedentemente assegnati a Ken Myer. Una volta rimosso il criterio per utente, Ken Myer verrà gestito automaticamente utilizzando il criterio globale o, se ne esiste uno, il criterio del sito locale. I criteri del sito hanno la precedenza sui criteri globali.
+Il comando seguente consente di rimuovere tutti i criteri di archiviazione per utente precedentemente assegnati a Ken Myer. Dopo la rimozione dei criteri per utente, Ken Myer verrà gestito automaticamente utilizzando il criterio globale o, se esistente, il criterio del sito locale. I criteri del sito hanno la precedenza sui criteri globali.
   
 ```PowerShell
 Grant-CsArchivingPolicy -Identity "Ken Myer" -PolicyName $Null
 ```
 
-Per informazioni dettagliate, vedere la documentazione del cmdlet [Grant-CsArchivingPolicy.](https://docs.microsoft.com/powershell/module/skype/grant-csarchivingpolicy?view=skype-ps)
-  
-
+Per informazioni dettagliate, vedere la documentazione relativa al cmdlet [Grant-CsArchivingPolicy.](/powershell/module/skype/grant-csarchivingpolicy?view=skype-ps)

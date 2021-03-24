@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fe8b9192c9d1b85e23f2d17daa067630cebd15f2
-ms.sourcegitcommit: 31a585cc0fe6350efacf3a7771d1e590d5e4233c
+ms.openlocfilehash: ddbdc84228011c4db3c0eab01bb1bab4f5d773c6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50614932"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51092604"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -121,7 +121,7 @@ Come amministratore, è possibile configurare un'impostazione criterio per le ri
 
 Il componente aggiuntivo Riunione di Teams è ancora in fase di sviluppo, pertanto è importante tenere presente quanto segue:
 
-- Il componente aggiuntivo Riunione di Teams richiede una cassetta postale di Exchange per gli utenti primari che programmano le riunioni. Assicurarsi di avere almeno una cassetta postale di Exchange configurata nel profilo Outlook e usala per programmare le riunioni di Teams tramite il componente aggiuntivo. Per i requisiti di Exchange, vedere [Come interagiscono Exchange e Teams](https://docs.microsoft.com/microsoftteams/exchange-teams-interact).
+- Il componente aggiuntivo Riunione di Teams richiede una cassetta postale di Exchange per gli utenti primari che programmano le riunioni. Assicurarsi di avere almeno una cassetta postale di Exchange configurata nel profilo Outlook e usala per programmare le riunioni di Teams tramite il componente aggiuntivo. Per i requisiti di Exchange, vedere [Come interagiscono Exchange e Teams](./exchange-teams-interact.md).
 - Il componente aggiuntivo è adatto a riunioni programmate con partecipanti specifici, non alle riunioni in un canale. Le riunioni nei canali devono essere programmate direttamente in Teams.
 - Il componente aggiuntivo non funzionerà se un Proxy di autenticazione si trova nel percorso di rete relativo ai servizi di Teams e del PC dell'utente.
 - Gli utenti non possono programmare gli eventi live all’interno di Outlook. Andare su Teams per pianificare gli eventi live. Per altre informazioni, vedere [Che cosa sono gli eventi live di Microsoft Teams?](teams-live-events/what-are-teams-live-events.md).
@@ -142,7 +142,7 @@ In alternativa, eseguire manualmente i seguenti passaggi:
 
 - Gli utenti di Windows 7 sono tenuti a installare l'[aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) affinché funzioni il componente aggiuntivo Riunione di Teams.
 - Controllare che l'utente disponga di un criterio di aggiornamento di Teams che abiliti la programmazione delle riunioni in Teams. Vedere [Aggiornare da Skype for Business a Teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) per ulteriori informazioni.
-- Controllare che l'utente disponga di un criterio di Riunione di Teams che consenta il componente aggiuntivo per Outlook. Vedere [Gestire i criteri di riunione in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams#allow-the-outlook-add-in) per ulteriori dettagli.
+- Controllare che l'utente disponga di un criterio di Riunione di Teams che consenta il componente aggiuntivo per Outlook. Vedere [Gestire i criteri di riunione in Teams](./meeting-policies-in-teams.md#allow-the-outlook-add-in) per ulteriori dettagli.
 - Assicurarsi che l'utente abbia installato il client desktop di Teams. Il componente aggiuntivo per le riunioni non verrà installato se si utilizza solo il client Web di Teams.
 - Assicurarsi che l'utente abbia installato Outlook 2013 o versioni successive.
 - Assicurarsi che l'utente disponga delle autorizzazione per eseguire regsvr32.exe.
@@ -175,11 +175,11 @@ Qualora il componente aggiuntivo non venisse ancora visualizzato, seguire i segu
 
 ### <a name="delegate-scheduling-does-not-work"></a>La programmazione delegata non funziona
 
-Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](https://docs.microsoft.com/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un eventuale delegato non potrà pianificare una riunione di Teams per conto del suo superiore. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. Come soluzione temporanea, l'amministratore può aggiungere la stringa seguente all'elenco EWS consentiti: "*SchedulingService*". 
+Se l'amministratore ha configurato Microsoft Exchange per [controllare l'accesso a Exchange Web Server (EWS)](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange), un eventuale delegato non potrà pianificare una riunione di Teams per conto del suo superiore. La soluzione per questa configurazione è in fase di sviluppo e verrà rilasciata in futuro. Come soluzione temporanea, l'amministratore può aggiungere la stringa seguente all'elenco EWS consentiti: "*SchedulingService*". 
 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
+- [Risoluzione dei problemi di Teams](/MicrosoftTeams/troubleshoot/teams)
 
 - [Schedule a Teams meeting from Outlook](https://support.microsoft.com/office/schedule-a-teams-meeting-from-outlook-883cc15c-580f-441a-92ea-0992c00a9b0f)

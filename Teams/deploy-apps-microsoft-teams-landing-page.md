@@ -18,12 +18,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d1a6462d0cb1581142eb2f5076e6b2ebad2b9003
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: 3022b1d1fbeff9713741955a0b40fd553028de0e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196520"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51094392"
 ---
 # <a name="apps-bots--connectors-in-microsoft-teams"></a>App, bot e connettori in Microsoft Teams
 
@@ -37,15 +37,15 @@ Teams include un set di app predefinite, tra cui Elenchi, Tasks, Complimento, Ap
 
 ## <a name="use-third-party-apps"></a>Usare app di terze parti
 
-Oltre alle app fornite da Microsoft, è possibile usare app di terze parti certificate Microsoft. Microsoft collabora con i partner sviluppatori di Microsoft 365 per fornire le informazioni necessarie al fine di accelerare le decisioni sull'uso di app e componenti aggiuntivi di Teams. Per altre informazioni, vedere [Sicurezza e conformità delle app di Microsoft Teams](https://docs.microsoft.com/microsoft-365-app-certification/teams/teams-apps).
+Oltre alle app fornite da Microsoft, è possibile usare app di terze parti certificate Microsoft. Microsoft collabora con i partner sviluppatori di Microsoft 365 per fornire le informazioni necessarie al fine di accelerare le decisioni sull'uso di app e componenti aggiuntivi di Teams. Per altre informazioni, vedere [Sicurezza e conformità delle app di Microsoft Teams](/microsoft-365-app-certification/teams/teams-apps).
 
 ## <a name="use-teams-templates"></a>Usare i modelli di Teams
 
-È anche possibile usare i [modelli di Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json), app pronte per la produzione per Microsoft Teams che sono guidate dalla community, open source e disponibili su GitHub.
+È anche possibile usare i [modelli di Teams](/microsoftteams/platform/samples/app-templates?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json), app pronte per la produzione per Microsoft Teams che sono guidate dalla community, open source e disponibili su GitHub.
 
 ## <a name="create-custom-apps"></a>Creare app personalizzate
 
-È possibile creare rapidamente soluzioni personalizzat con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](teams-power-platfom-integration.md). È anche possibile creare un'app personalizzata in base alle esigenze dell'organizzazione. Per altre informazioni, vedere [Creare app per Microsoft Teams](https://docs.microsoft.com/microsoftteams/platform/overview).  
+È possibile creare rapidamente soluzioni personalizzat con basso impiego di codice usando l'integrazione di Teams con [Microsoft Power Platform](teams-power-platfom-integration.md). È anche possibile creare un'app personalizzata in base alle esigenze dell'organizzazione. Per altre informazioni, vedere [Creare app per Microsoft Teams](/microsoftteams/platform/overview).  
 
 
 ## <a name="apps-deployment-decisions"></a>Decisioni per la distribuzione delle app
@@ -58,7 +58,7 @@ Di seguito sono illustrate le impostazioni delle app che la maggior parte delle 
 
 ### <a name="app-availability-settings"></a>Impostazioni di disponibilità app 
 
-Teams offre diverse app pubblicate da Microsoft e di terze parti per coinvolgere gli utenti, supportare la produttività e integrare i servizi commerciali di uso comune in Teams. Si possono scaricare le app dallo Store di Teams. Per impostazione predefinita tutte le app, incluse le app personalizzate inviate tramite il [processo di approvazione dello store di Teams](https://docs.microsoft.com/microsoftteams/platform/publishing/apps-publish#microsoft-teams-app-approval-process), sono attivate per tutti gli utenti. Ad esempio, gli utenti possono usare l'app Planner per creare e gestire le attività del team in Teams.
+Teams offre diverse app pubblicate da Microsoft e di terze parti per coinvolgere gli utenti, supportare la produttività e integrare i servizi commerciali di uso comune in Teams. Si possono scaricare le app dallo Store di Teams. Per impostazione predefinita tutte le app, incluse le app personalizzate inviate tramite il [processo di approvazione dello store di Teams](/microsoftteams/platform/publishing/apps-publish#microsoft-teams-app-approval-process), sono attivate per tutti gli utenti. Ad esempio, gli utenti possono usare l'app Planner per creare e gestire le attività del team in Teams.
 
 Per impostazione predefinita, tutte le app fornite da Microsoft, da terze parti e personalizzate sono disponibili ed è possibile attivare o disattivare le singole app. Sono disponibili impostazioni a livello di organizzazione che consente di attivare o disattivare tutte le app di terze parti e/o personalizzate per l'intera organizzazione.
 
@@ -82,7 +82,7 @@ I bot sono programmi automatizzati che rispondono alle domande o forniscono aggi
 
 | Chiedersi | Azione |
 |--------------|--------|
-|Si vuole consentire l'uso di bot personalizzati nell’organizzazione?|Per altre informazioni sull'aggiunta di bot, vedere [Aggiungere bot per chat e canali privati in Microsoft Teams](add-bots.md). Per informazioni su come attivare o disattivare i bot personalizzati, vedere [Impostazioni di amministrazione per le app in Microsoft Teams](admin-settings.md).|
+|Si vuole consentire l'uso di bot personalizzati nell’organizzazione?|Per altre informazioni sull'aggiunta di bot, vedere [Aggiungere bot per chat e canali privati in Microsoft Teams](/microsoftteams/platform/bots/what-are-bots). Per informazioni su come attivare o disattivare i bot personalizzati, vedere [Impostazioni di amministrazione per le app in Microsoft Teams](admin-settings.md).|
 |||
 
 ### <a name="built-in-and-custom-tabs"></a>Schede predefinite e personalizzate
@@ -113,7 +113,7 @@ Può essere utile modificare queste impostazioni in base alle esigenze e alla co
 
 | Chiedersi | Azione |
 |--------------|--------|
-| <br>Chi ha bisogno di vedere i report attività? L'utente dispone dell'autorizzazione necessaria per farlo? |<ul><li>Se non si vuole assegnare un ruolo di amministratore a un utente, è possibile [assegnare il ruolo Lettore di report](teams-activity-reports.md#reports-reader-role).</li><li>Per informazioni su come assegnare ruoli di amministratore in Azure Active Directory, vedere [Ruoli e autorizzazioni](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) e [Visualizzare e assegnare i ruoli](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-manage-roles-portal).</li></ul> |
+| <br>Chi ha bisogno di vedere i report attività? L'utente dispone dell'autorizzazione necessaria per farlo? |<ul><li>Se non si vuole assegnare un ruolo di amministratore a un utente, è possibile [assegnare il ruolo Lettore di report](teams-activity-reports.md#reports-reader-role).</li><li>Per informazioni su come assegnare ruoli di amministratore in Azure Active Directory, vedere [Ruoli e autorizzazioni](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) e [Visualizzare e assegnare i ruoli](/azure/active-directory/users-groups-roles/directory-manage-roles-portal).</li></ul> |
 |||
 
 ### <a name="app-templates"></a>Modelli di app
@@ -122,10 +122,5 @@ I modelli di app sono app pronte per la produzione per Microsoft Teams, gestite 
 
 | Chiedersi | Azione |
 |--------------|--------|
-| Si vogliono installare modelli di app di Teams, ad esempio Icebreaker? |Per altre informazioni, vedere [Modelli di app per Teams](https://docs.microsoft.com/microsoftteams/platform/samples/app-templates?toc=MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json).|
+| Si vogliono installare modelli di app di Teams, ad esempio Icebreaker? |Per altre informazioni, vedere [Modelli di app per Teams](/microsoftteams/platform/samples/app-templates?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=MicrosoftTeams%2ftoc.json).|
 |||
-
-
-
-
-
