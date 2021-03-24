@@ -14,13 +14,13 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 24e8f749-d54c-4315-a8fe-bb9303b356ef
 ROBOTS: NOINDEX, NOFOLLOW
-description: Le impostazioni di configurazione delle riunioni definiscono il tipo di conferenze (denominate anche riunioni) che gli utenti possono creare e controllano in che modo (o se) gli utenti anonimi e gli utenti di conferenze telefoniche con accesso esterno possono partecipare a queste conferenze. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano alle riunioni ad hoc create facendo clic sull'opzione Riunione ora nel client.
-ms.openlocfilehash: 260abc13f321111b26c70b4ca8a318c8c9a2d59b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Le impostazioni di configurazione delle riunioni definiscono il tipo di conferenze (denominate anche riunioni) che gli utenti possono creare e controllano in che modo (o se) gli utenti anonimi e gli utenti delle conferenze telefoniche con accesso esterno possono partecipare a queste conferenze. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano alle riunioni ad hoc create facendo clic sull'opzione Riunione ora nel client.
+ms.openlocfilehash: 053378ef694a66413f11760be5f449cd21e6b764
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824796"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51095970"
 ---
 # <a name="meeting-configuration"></a>Configurazione riunione
 
@@ -28,11 +28,11 @@ Le impostazioni di configurazione delle riunioni consentono di definire il tipo 
 
 Le configurazioni delle riunioni si applicano a livello globale, di sito o di pool:
 
-- **Configurazione riunione globale:** La configurazione riunione globale viene creata per impostazione predefinita. È possibile modificare la configurazione di riunione globale, ma non eliminarla. Se si tenta di rimuovere la configurazione di riunione globale, vengono ripristinati i valori predefiniti per tutte le impostazioni.
+- **Configurazione riunione globale:** La configurazione della riunione globale viene creata per impostazione predefinita. È possibile modificare la configurazione della riunione globale, ma non eliminarla. Se si tenta di rimuovere la configurazione della riunione globale, tutte le impostazioni vengono reimpostate ai valori predefiniti.
 
-- **Configurazione riunione sito (facoltativo):** È possibile creare una o più configurazioni riunione sito, ognuna delle quali si applica a un sito specifico. Le configurazioni sito prevalgono sulla configurazione globale.
+- **Configurazione riunione sito (facoltativo):** È possibile creare una o più configurazioni di riunioni del sito, ognuna delle quali si applica a un sito specifico. Le configurazioni sito prevalgono sulla configurazione globale.
 
-- **Configurazione riunione pool (facoltativo):** È possibile creare una o più configurazioni riunione pool, ognuna delle quali si applica a un pool specifico. Le configurazioni pool prevalgono sulla configurazione globale e sulle configurazioni sito.
+- **Configurazione riunione pool (facoltativo):** È possibile creare una o più configurazioni di riunione del pool, ognuna delle quali si applica a un pool specifico. Le configurazioni pool prevalgono sulla configurazione globale e sulle configurazioni sito.
 
 Nella pagina **Configurazione riunione** è presente un elenco di tutte le configurazioni riunione definite per l'organizzazione.
 
@@ -52,7 +52,7 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 - **Nuovo** Avvia una nuova configurazione di riunione del sito o di riunione del pool.
 
-- **Modifica** Apre la configurazione riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco oppure elimina la configurazione del sito o del pool selezionata.
+- **Modifica** Apre la configurazione di riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco o elimina la configurazione del sito o del pool selezionata.
 
     > [!NOTE]
     > Per la configurazione riunione globale, l'opzione **Elimina** consente di riportare le impostazioni ai valori predefiniti.
@@ -61,10 +61,8 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Name** Identifica la configurazione della riunione.
+- **Nome** Identifica la configurazione della riunione.
 
 - **Ambito** Identifica l'ambito della configurazione della riunione: globale, sito o pool.
 
-Per informazioni dettagliate sull'utilizzo di configurazioni riunioni, vedere [Create a or modify a Collection of Meeting Configuration Settings](https://technet.microsoft.com/library/ce6773c1-a0d5-4405-8e32-33a6f3a46a1a.aspx) nella documentazione relativa alle operazioni.
-
-
+Per informazioni dettagliate sull'utilizzo di configurazioni riunioni, vedere [Create a or modify a Collection of Meeting Configuration Settings](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-collection-of-meeting-configuration-settings) nella documentazione relativa alle operazioni.

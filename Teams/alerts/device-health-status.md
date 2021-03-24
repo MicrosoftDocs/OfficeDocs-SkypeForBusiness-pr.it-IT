@@ -16,18 +16,18 @@ description: Informazioni su come usare le funzionalità di monitoraggio e avvis
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 03a57da7af783fa95e0bccbcb6a96f183b2fbb90
-ms.sourcegitcommit: c6b630f9193d7f82f0416bd567a1de390d4b260f
+ms.openlocfilehash: 8c6a4ac89ddc90bcb00cf2741874e49a26ac775f
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819462"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096476"
 ---
 # <a name="microsoft-teams-device-health-monitoring"></a>Monitoraggio dell'integrità dei dispositivi di Microsoft Teams
 
 Il monitoraggio dell'integrità dei dispositivi nell'interfaccia di amministrazione di Microsoft Teams offre la possibilità di monitorare in modo proattivo l'integrità dei vari dispositivi di Teams. Monitorare lo stato offline di un dispositivo e ricevere avvisi in tempo reale se il dispositivo monitorato nell'organizzazione diventa offline.  
 
-Prima di iniziare, sono necessarie le autorizzazioni per la creazione di team/canali nel tenant. [Altre informazioni](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups?view=o365-worldwide).
+Prima di iniziare, sono necessarie le autorizzazioni per la creazione di team/canali nel tenant. [Altre informazioni](/microsoft-365/solutions/manage-creation-of-groups?view=o365-worldwide).
 
 ## <a name="configure-device-state-rule"></a>Configurare la regola dello stato del dispositivo
 
@@ -47,7 +47,7 @@ Prima di iniziare, sono necessarie le autorizzazioni per la creazione di team/ca
 |Campo |Descrizione  |
 |--------|-------------|
 |**Tipo di regola**   |La regola dello stato del dispositivo consente di gestire in modo efficace. Dispositivi di Teams ed è classificato come tipo di gestione dei dispositivi. In futuro saranno disponibili altre regole per il tipo di gestione dei dispositivi per monitorare altre funzionalità correlate (ad esempio: dispositivo non integro e stato di accesso del dispositivo).|
-|**Condizione**   |È possibile monitorare l'integrità dei dispositivi se passano offline. [Altre informazioni sulla](https://docs.microsoft.com/microsoftteams/devices/device-management) gestione dei dispositivi nell'interfaccia di amministrazione di Teams. |
+|**Condizione**   |È possibile monitorare l'integrità dei dispositivi se passano offline. [Altre informazioni sulla](../devices/device-management.md) gestione dei dispositivi nell'interfaccia di amministrazione di Teams. |
 |**Ambito**   |È possibile specificare la frequenza con cui si vuole monitorare lo stato di integrità del dispositivo menzionando la frequenza di valutazione della regola. Per impostazione predefinita, i dispositivi di Teams verranno monitorati in tempo quasi reale se passano offline. |
 |**Utenti del dispositivo**   |È possibile specificare i dispositivi da monitorare offline proattivi selezionandoli in base agli utenti connessi. Per altre [informazioni, vedere Selezionare i dispositivi](#select-devices-for-configuration) per la configurazione. |
 |**Azioni**  >  **Avviso del canale**   |Nella sezione Azioni è possibile specificare i canali dei team per cui si vogliono ricevere avvisi. Attualmente, verrà creato un team predefinito denominato **Avvisi** e notifiche di amministrazione e un canale **denominato MonitoringAlerts** in cui verranno recapitate le notifiche. <BR/> <BR/> Gli amministratori globali e gli amministratori di Teams nel tenant verranno aggiunti automaticamente a questo team predefinito.|

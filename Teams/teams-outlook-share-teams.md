@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 80882bddae434b66f6a3e5988c08474859b37861
-ms.sourcegitcommit: c6b630f9193d7f82f0416bd567a1de390d4b260f
+ms.openlocfilehash: af5c2f6029b0c5314c507de7734abf8c479af709
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819449"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098222"
 ---
 # <a name="share-to-teams-from-outlook"></a>Condividere in Teams da Outlook
 
@@ -30,7 +30,7 @@ Condividi in Teams da Outlook (Condividi in Teams) consente agli utenti di condi
 La caratteristica Condividi in Teams richiede un componente aggiuntivo per Outlook. Questo componente aggiuntivo viene installato automaticamente ogni volta che un utente accede all'app Web teams o al client desktop di Teams.
 
 > [!NOTE]
-> Assicurarsi di esaminare i componenti aggiuntivi per [Outlook in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) e le regole di accesso client in Exchange [Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) per assicurarsi che i componenti aggiuntivi per Outlook funzionino correttamente. Inoltre, la disabilitazione delle esperienze connesse può impedire il corretto funzionamento dei componenti aggiuntivi per Outlook. Per [altre informazioni, vedere](https://support.microsoft.com/topic/connected-experiences-in-office-8d2c04f7-6428-4e6e-ac58-5828d4da5b7c) Esperienze connesse in Office.  
+> Assicurarsi di esaminare i componenti aggiuntivi per [Outlook in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/add-ins-for-outlook/add-ins-for-outlook) e le regole di accesso client in Exchange [Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) per assicurarsi che i componenti aggiuntivi per Outlook funzionino correttamente. Inoltre, la disabilitazione delle esperienze connesse può impedire il corretto funzionamento dei componenti aggiuntivi per Outlook. Per [altre informazioni, vedere](https://support.microsoft.com/topic/connected-experiences-in-office-8d2c04f7-6428-4e6e-ac58-5828d4da5b7c) Esperienze connesse in Office.  
 
 Condividi con Teams usa lo stesso meccanismo di trasporto utilizzato quando un utente invia un canale tramite posta elettronica. Per la condivisione nelle chat, i messaggi di posta elettronica (inclusi gli allegati di posta elettronica) vengono copiati nel OneDrive del mittente. Per la condivisione su canali, i messaggi di posta elettronica e gli allegati vengono copiati nella **cartella Messaggi di** posta elettronica in SharePoint.
 
@@ -43,13 +43,13 @@ Il componente aggiuntivo Outlook per la condivisione in Teams può essere disabi
 > [!NOTE]
 > La disabilitazione del componente aggiuntivo è possibile solo dopo l'installazione del componente aggiuntivo. Se si vuole applicare la disabilitazione per tutti gli utenti del tenant, eseguire periodicamente uno script.
 
-Per disabilitare il componente aggiuntivo per Outlook usato da Condividi in Teams, eseguire il [cmdlet disponibile qui.](https://docs.microsoft.com/powershell/module/exchange/disable-app?view=exchange-ps) 
+Per disabilitare il componente aggiuntivo per Outlook usato da Condividi in Teams, eseguire il [cmdlet disponibile qui.](/powershell/module/exchange/disable-app?view=exchange-ps) 
 
-Per abilitare il componente aggiuntivo per Outlook usato da Condividi in Teams, eseguire il [cmdlet disponibile qui.](https://docs.microsoft.com/powershell/module/exchange/enable-app?view=exchange-ps)
+Per abilitare il componente aggiuntivo per Outlook usato da Condividi in Teams, eseguire il [cmdlet disponibile qui.](/powershell/module/exchange/enable-app?view=exchange-ps)
 
 ## <a name="browsers-and-single-sign-on"></a>Browser e Single Sign-On
 
-La condivisione con Teams, sia nei client desktop di Outlook sul Web che nei client desktop di Outlook, si basa su un browser WebView. Per [informazioni dettagliate](https://docs.microsoft.com/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins) sui client che usano browser specifici, vedere Browser usati dai componenti aggiuntivi di Office. 
+La condivisione con Teams, sia nei client desktop di Outlook sul Web che nei client desktop di Outlook, si basa su un browser WebView. Per [informazioni dettagliate](/office/dev/add-ins/concepts/browsers-used-by-office-web-add-ins) sui client che usano browser specifici, vedere Browser usati dai componenti aggiuntivi di Office. 
 
 > [!IMPORTANT]
 > La condivisione con Teams richiede che i cookie di terze parti e l'accesso all'archiviazione locale siano abilitati per i browser degli utenti.

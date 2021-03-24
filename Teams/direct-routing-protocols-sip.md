@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 26d6555b82db1939b879ecafc113ced186528f80
-ms.sourcegitcommit: 360c78c66386fe00afe535681f51254eda886edf
+ms.openlocfilehash: 00cdb644efe9fb2c3e49973d7a539718252a7df9
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50837003"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098472"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto - Protocollo SIP
 
@@ -121,7 +121,7 @@ INVITE sip:+18338006777@sip.pstnhub.microsoft.com SIP /2.0
 
 Il proxy SIP deve calcolare l'FQDN dell'hop successivo per le nuove transazioni client nella finestra di dialogo , ad esempio Bye o Re-Invite, e per rispondere alle opzioni SIP. Vengono usati contatti o Record-Route contatti. 
 
-In base a [RFC 3261, sezione 8.1.1.8,](https://tools.ietf.org/html/rfc3261#section-8.1.1.8)l'intestazione contatto è obbligatoria in qualsiasi richiesta che può comportare una nuova finestra di dialogo. La Record-Route è necessaria solo se un proxy vuole mantenere il percorso delle richieste future in una finestra di dialogo. Se un SBC proxy è in uso con Ottimizzazione multimediale locale per il routing [diretto,](https://docs.microsoft.com/MicrosoftTeams/direct-routing-media-optimization)sarà necessario configurare una route di record perché il proxy SBC deve rimanere nella route. 
+In base a [RFC 3261, sezione 8.1.1.8,](https://tools.ietf.org/html/rfc3261#section-8.1.1.8)l'intestazione contatto è obbligatoria in qualsiasi richiesta che può comportare una nuova finestra di dialogo. La Record-Route è necessaria solo se un proxy vuole mantenere il percorso delle richieste future in una finestra di dialogo. Se un SBC proxy è in uso con Ottimizzazione multimediale locale per il routing [diretto,](./direct-routing-media-optimization.md)sarà necessario configurare una route di record perché il proxy SBC deve rimanere nella route. 
 
 Microsoft consiglia di usare solo l'intestazione Contatto se non viene usato un SBC proxy:
 
@@ -362,6 +362,4 @@ Il riavvio in Direct Routing viene implementato in base ai paragrafi seguenti de
 
 *Un agente imposta il resto dei campi nel file SDP per questo flusso multimediale come in un'offerta iniziale di questo flusso multimediale (vedere la Sezione 4.3).  Di conseguenza, l'insieme di candidati PUÒ includere alcuni, nessuno o tutti i candidati precedenti per tale flusso e PUÒ includere un set completamente nuovo di candidati raccolti come descritto nella sezione 4.1.1.*
 
-Se la chiamata è stata inizialmente stabilita con bypass multimediale e la chiamata viene trasferita a un client Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio. 
-
-
+Se la chiamata è stata inizialmente stabilita con bypass multimediale e la chiamata viene trasferita a un client Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio.

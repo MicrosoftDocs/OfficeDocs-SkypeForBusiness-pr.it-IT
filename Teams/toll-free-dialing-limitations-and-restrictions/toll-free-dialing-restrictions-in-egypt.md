@@ -1,5 +1,5 @@
 ---
-title: Restrizioni per la composizione dei numeri verde in Egitto
+title: Restrizioni di composizione a numero verde in Egitto
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -24,26 +24,26 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in Egitto, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: f2bd76c221b23fa1df5956115a8c6035378c8380
-ms.sourcegitcommit: 7966991c398cd80f6bd0bb21e57a6b2a97c09ea9
+ms.openlocfilehash: a324691f3dbda9c594afceea726dd25a08613bb6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "49130667"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098142"
 ---
-# <a name="toll-free-dialing-restrictions-in-egypt"></a>Restrizioni per la composizione dei numeri verde in Egitto
+# <a name="toll-free-dialing-restrictions-in-egypt"></a>Restrizioni di composizione a numero verde in Egitto
 
-[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o altre informazioni sulle limitazioni e le restrizioni di composizione a numero verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|Sono disponibili le chiamate a numero verde?  <br/> |No  <br/> |
+|Sono disponibili chiamate a numero verde?  <br/> |No  <br/> |
 |Formati di composizione  <br/> |0800-XXX-XXXX  <br/> |
 |Codice ISO del paese/area geografica  <br/> |EG  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
-|Disponibilità di linee cablate/fisse  <br/> |Solo da Telecom Egypt.  <br/> |
+|Disponibilità linea cablata/fissa  <br/> |Solo da Telecom Egypt.  <br/> |
 |Disponibilità rete mobile  <br/> |No  <br/> |
 |Commenti, restrizioni e problemi di accesso  <br/> |Nessuno  <br/> |
    
@@ -51,7 +51,6 @@ ms.locfileid: "49130667"
 
 [Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md)
 
   
- 

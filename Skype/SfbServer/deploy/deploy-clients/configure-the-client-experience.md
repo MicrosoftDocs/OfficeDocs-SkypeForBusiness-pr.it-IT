@@ -12,26 +12,26 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 66867a96-ff00-497d-889c-2e908cc384ce
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare l'esperienza client per gli utenti di Skype for Business."
-ms.openlocfilehash: 2125f911927bfe1aa8898c89c6ad70439186a8c0
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 1816ff9af6c8c6e28ca72420f843d224587b2c70
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49805956"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096010"
 ---
 # <a name="configure-the-client-experience-with-skype-for-business-2015"></a>Configurare l'esperienza client con Skype for Business 2015
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare l'esperienza client per gli utenti di Skype for Business 2015.
   
-Skype for Business 2015 offre una nuova esperienza utente basata sull'esperienza del prodotto Skype per gli utenti consumer. Oltre a tutte le funzionalità di Lync, Skype for Business offre nuove funzionalità con controlli semplificati e icone familiari. Per informazioni dettagliate sulla nuova esperienza client, vedere [Esplorare Skype for Business.](https://go.microsoft.com/fwlink/?LinkId=529022)
+Skype for Business 2015 offre una nuova esperienza utente basata sull'esperienza del prodotto skype consumer. Oltre a tutte le funzionalità di Lync, Skype for Business offre nuove funzionalità con controlli semplificati e icone familiari. Per informazioni dettagliate sulla nuova esperienza client, vedi [Esplorare Skype for Business.](https://go.microsoft.com/fwlink/?LinkId=529022)
   
-Skype for Business Server supporta la nuova esperienza client Skype for Business e l'esperienza client Lync. Gli amministratori possono scegliere l'esperienza client preferita per gli utenti. Ad esempio, è possibile distribuire l'esperienza client Lync fino a quando gli utenti dell'organizzazione non sono completamente formati nella nuova esperienza Skype for Business. In caso contrario, se non è stato ancora eseguito l'aggiornamento di tutti gli utenti a Skype for Business Server, è consigliabile che tutti gli utenti abbiano la stessa esperienza client finché non vengono tutti aggiornati al nuovo server.
+Skype for Business Server supporta la nuova esperienza client Skype for Business e l'esperienza client Lync. Gli amministratori possono scegliere l'esperienza client preferita per gli utenti. Ad esempio, è possibile distribuire l'esperienza client Lync fino a quando gli utenti dell'organizzazione non sono completamente addestrati nella nuova esperienza skype for business. In caso contrario, se non sono stati ancora aggiornati tutti gli utenti a Skype for Business Server, è consigliabile che tutti gli utenti abbiano la stessa esperienza client fino a quando tutti non vengono aggiornati al nuovo server.
   
 > [!IMPORTANT]
-> Se nell'organizzazione sono distribuiti sia Skype for Business Server che Lync Server, l'esperienza client predefinita varia a seconda delle versioni del server e delle impostazioni dell'interfaccia utente. Quando gli utenti avviano Skype for Business per la prima volta, visualizzano sempre l'interfaccia utente di Skype for Business, anche se è stata selezionata l'esperienza client Lync. Dopo alcuni minuti, agli utenti viene richiesto di passare alla modalità Lync. Per ulteriori informazioni, vedere **Comportamento del client first launch** più avanti in questo argomento.
+> Se nell'organizzazione sono distribuiti sia Skype for Business Server che Lync Server, l'esperienza client predefinita varia a seconda delle versioni del server e delle impostazioni dell'interfaccia utente. Quando gli utenti avviano Skype for Business per la prima volta, visualizzano sempre l'interfaccia utente di Skype for Business, anche se è stata selezionata l'esperienza client Lync. Dopo alcuni minuti, agli utenti viene richiesto di passare alla modalità Lync. Per ulteriori informazioni, vedere **First launch client behavior** più avanti in questo argomento.
   
 > [!NOTE]
-> L'esperienza client Lync 2013 non è un'opzione per le versioni client di Skype for Business 2016 o versioni successive. Prima di tentare di configurare l'ambiente client per l'utilizzo del client Lync 2013, controllare la versione client per assicurarsi che non inizi con il numero 16. ad esempio: 16.x.x.x. 
+> L'esperienza client di Lync 2013 non è un'opzione per le versioni client di Skype for Business 2016 o versioni successive. Prima di tentare di configurare l'ambiente client per l'utilizzo del client Lync 2013, verificare la versione del client per assicurarsi che non inizi con il numero 16. ad esempio: 16.x.x.x. 
   
 ## <a name="configure-the-client-experience"></a>Configurare l'esperienza client
 
@@ -49,7 +49,7 @@ Il comando seguente seleziona l'esperienza client Skype for Business per tutti g
 Set-CsClientPolicy -Identity Global -EnableSkypeUI $true
 ```
 
-Il comando successivo seleziona l'esperienza client Lync per tutti gli utenti dell'organizzazione interessati dal criterio globale:
+Il comando successivo consente di selezionare l'esperienza client Lync per tutti gli utenti dell'organizzazione interessati dal criterio globale:
   
 ```powershell
 Set-CsClientPolicy -Identity Global -EnableSkypeUI $false
@@ -75,19 +75,19 @@ Il comando successivo assegna il criterio SalesClientUI a tutti i membri del rep
 Get-CsUser -LDAPFilter "Department=Sales" | Grant-CsClientPolicy -PolicyName SalesClientUI
 ```
 
-## <a name="first-launch-client-behaviors"></a>Comportamenti del client per il primo avvio
+## <a name="first-launch-client-behaviors"></a>Comportamenti client per il primo avvio
 
-Per impostazione predefinita, quando gli utenti avviano Skype for Business 2015 per la prima volta, visualizzano sempre l'interfaccia utente di Skype for Business, anche se è stata selezionata l'esperienza client Lync impostando il valore del parametro EnableSkypeUI su $False come descritto in precedenza. Dopo alcuni minuti, agli utenti verrà richiesto di passare alla modalità Lync.
+Per impostazione predefinita, quando gli utenti avviano Skype for Business 2015 per la prima volta, visualizzano sempre l'interfaccia utente di Skype for Business, anche se è stata selezionata l'esperienza client Lync impostando il valore del parametro EnableSkypeUI su $False come descritto in precedenza. Dopo alcuni minuti, agli utenti verrà chiesto di passare alla modalità Lync.
   
-Se si desidera visualizzare l'interfaccia utente di Lync quando gli utenti avviano il client Skype for Business per la prima volta, seguire questa procedura prima che il client venga avviato per la prima volta dopo l'aggiornamento:
+Se si desidera visualizzare l'interfaccia utente di Lync quando gli utenti avviano il client Skype for Business per la prima volta, eseguire la procedura seguente prima che il client venga avviato per la prima volta dopo l'aggiornamento:
   
-1. Verificare che il valore di sia impostato su $False nel criterio in  `EnableSkypeUI` uso come descritto in precedenza.
+1. Verificare che il valore di sia impostato su $False nel criterio  `EnableSkypeUI` in uso come descritto in precedenza.
     
-2. Aggiornare il Registro di sistema nel computer dell'utente. È consigliabile eseguire questa operazione prima che gli utenti avviino il client Skype for Business per la prima volta e una sola volta. Per informazioni su come creare un oggetto Criteri di gruppo per aggiornare il Registro di sistema in un computer aggiunto a un dominio, vedere la sezione più avanti nell'argomento.
+2. Aggiornare il Registro di sistema nel computer dell'utente. È consigliabile eseguire questa operazione prima che gli utenti avviino il client Skype for Business per la prima volta e che sia necessario eseguire questa operazione una sola volta. Per informazioni su come creare un oggetto Criteri di gruppo per aggiornare il Registro di sistema in un computer aggiunto a un dominio, vedere la sezione più avanti nell'argomento.
     
-    Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\Lync],** creare un nuovo **valore Binario.**
+    Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\Lync]** crea un nuovo **valore Binary.**
     
-    Il **nome del valore** deve essere **EnableSkypeUI** e i dati **valore** devono essere impostati su **00 00 00 00.**
+    Il **nome valore** deve essere **EnableSkypeUI** e i dati **valore** devono essere impostati su **00 00 00 00 00.**
     
     La chiave dovrebbe essere simile alla seguente:
     
@@ -101,11 +101,11 @@ Se si desidera visualizzare l'interfaccia utente di Lync quando gli utenti avvia
 
 L'interfaccia utente di Lync verrà ora visualizzata quando gli utenti avviano il client Skype for Business per la prima volta.
   
-### <a name="control-the-display-of-the-welcome-screen-tutorial"></a>Controllare la visualizzazione dell'esercitazione della schermata iniziale
+### <a name="control-the-display-of-the-welcome-screen-tutorial"></a>Controllare la visualizzazione dell'esercitazione sulla schermata iniziale
 
-Quando gli utenti aprono il client Skype for Business, il comportamento predefinito prevede la visualizzazione di una schermata iniziale che include 7 suggerimenti rapidi che la maggior parte *delle persone richiede.* È possibile disattivare la visualizzazione della schermata iniziale, ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del Registro di sistema nel computer client:
+Quando gli utenti aprono il client Skype for Business, il comportamento predefinito prevede la visualizzazione di una schermata iniziale che include  *7 suggerimenti* rapidi che la maggior parte delle persone richiede . È possibile disattivare la visualizzazione della schermata iniziale ma consentire comunque agli utenti di accedere all'esercitazione aggiungendo il seguente valore del Registro di sistema nel computer client:
   
-Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync],** crea un nuovo **valore DWORD (32 bit).** Il **nome del** valore deve essere **IsBasicTutorialSeenByUser** e i dati **valore** devono essere impostati su **1.**
+Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync]** crea un nuovo **valore DWORD (32 bit).** Il **nome del** valore deve essere **IsBasicTutorialSeenByUser** e i dati **value** devono essere impostati su **1.**
   
 La chiave dovrebbe essere simile alla seguente:
   
@@ -113,9 +113,9 @@ La chiave dovrebbe essere simile alla seguente:
 
 ### <a name="turn-off-the-client-tutorial"></a>Disattivare l'esercitazione sul client
 
-Se non si desidera che gli utenti siano in grado di accedere all'esercitazione, è possibile disattivare l'esercitazione client con il valore del Registro di sistema seguente:
+Se non si desidera che gli utenti possano accedere all'esercitazione, è possibile disattivare l'esercitazione client con il valore del Registro di sistema seguente:
   
-Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync],** crea un nuovo **valore DWORD (32 bit).** Il **nome del valore** deve essere **TutorialFeatureEnabled** e i dati **valore** devono essere impostati su **0.**
+Nella chiave **[HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync]** crea un nuovo **valore DWORD (32 bit).** Il **nome valore** deve essere **TutorialFeatureEnabled** e i dati **value** devono essere impostati su **0.**
   
 Lync
   
@@ -123,7 +123,7 @@ Lync
 "TutorialFeatureEnabled"=dword:00000000
 ```
 
-Puoi riattivare l'esercitazione impostando i dati **valore** su **1.**
+Puoi riattivare l'esercitazione impostando i **dati valore** su **1.**
   
 ## <a name="default-client-behaviors"></a>Comportamenti client predefiniti
 
@@ -134,10 +134,10 @@ Se nell'organizzazione sono distribuiti sia Skype for Business Server che Lync S
 |:-----|:-----|:-----|
 |Skype for Business Server |Predefiniti  <br/> |Skype for Business  <br/> |
 |Skype for Business Server  |Vero  <br/> |Skype for Business  <br/> |
-|Skype for Business Server  |Falso  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for Business in un secondo momento se si modifica l'impostazione dell'interfaccia utente $true)  <br/> |
+|Skype for Business Server  |False  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for Business in un secondo momento se si modifica l'impostazione dell'interfaccia utente $true)  <br/> |
 |Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Predefiniti  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for Business in un secondo momento se si modifica l'impostazione dell'interfaccia utente $true)  <br/> |
 |Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Vero  <br/> |Skype for Business  <br/> |
-|Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Falso  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for Business in un secondo momento se si modifica l'impostazione dell'interfaccia utente $true)  <br/> |
+|Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |False  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente può passare a Skype for Business in un secondo momento se si modifica l'impostazione dell'interfaccia utente $true)  <br/> |
 |Lync Server 2010 o Lync Server 2013 (senza patch)  <br/> |Predefiniti  <br/> |L'utente ha chiesto di passare alla modalità Lync (l'utente non può passare a Skype for Business in un secondo momento)  <br/> |
    
 La tabella seguente mostra l'esperienza client quando l'amministratore modifica l'impostazione iniziale per l'esperienza dell'interfaccia utente di Skype:
@@ -146,40 +146,40 @@ La tabella seguente mostra l'esperienza client quando l'amministratore modifica 
 |**Versione server**|**Impostazione EnableSkypeUI**|**Interfaccia utente client = Lync**|**Interfaccia utente client = Skype for Business**|
 |:-----|:-----|:-----|:-----|
 |Skype for Business Server |Vero  <br/> |L'utente ha chiesto di passare a Skype for Business  <br/> |Skype for Business  <br/> |
-|Skype for Business Server |Falso  <br/> |Modalità Lync  <br/> |L'utente ha chiesto di passare alla modalità Lync  <br/> |
+|Skype for Business Server |False  <br/> |Modalità Lync  <br/> |L'utente ha chiesto di passare alla modalità Lync  <br/> |
 |Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Vero  <br/> |L'utente ha chiesto di passare a Skype for Business  <br/> |Skype for Business  <br/> |
-|Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |Falso  <br/> |Modalità Lync  <br/> |L'utente ha chiesto di passare alla modalità Lync  <br/> |
+|Lync Server 2010 o Lync Server 2013 (con patch corrette)  <br/> |False  <br/> |Modalità Lync  <br/> |L'utente ha chiesto di passare alla modalità Lync  <br/> |
 |Lync Server 2010 o Lync Server 2013 (senza patch)  <br/> |Predefiniti  <br/> |Modalità Lync (non è possibile passare a Skype for Business)  <br/> |Modalità Lync (non è possibile passare a Skype for Business)  <br/> |
    
-Le versioni delle patch necessarie per gestire la configurazione del client Skype for Business sono:
+Le versioni della patch necessarie per gestire la configurazione del client Skype for Business sono:
   
-- Lync Server 2010 - Aggiornamento cumulativo di febbraio 2015 (4.0.7577.710) per Lync Server 2010. Per informazioni, vedere [Aggiornamenti per Lync Server 2010](https://go.microsoft.com/fwlink/p/?LinkId=532771)
+- Lync Server 2010 - Aggiornamento cumulativo di febbraio 2015 (4.0.7577.710) per Lync Server 2010. Per informazioni, vedere [Updates for Lync Server 2010](https://go.microsoft.com/fwlink/p/?LinkId=532771)
     
-- Lync Server 2013 - Aggiornamento cumulativo di dicembre 2014 (5.0.8308.857) per Lync Server 2013. Per informazioni, vedere [Aggiornamenti per Lync Server 2013.](https://go.microsoft.com/fwlink/p/?LinkId=532772)
+- Lync Server 2013 - Aggiornamento cumulativo di dicembre 2014 (5.0.8308.857) per Lync Server 2013. Per informazioni, vedere [Updates for Lync Server 2013](https://go.microsoft.com/fwlink/p/?LinkId=532772).
     
 ## <a name="create-a-group-policy-object-to-modify-the-registry-on-a-domain-joined-computer"></a>Creare un oggetto Criteri di gruppo per modificare il Registro di sistema in un computer aggiunto a un dominio
 
-L'aggiornamento del Registro di sistema per visualizzare l'esperienza client Lync la prima volta che un utente avvia il client Skype for Business 2015 deve essere eseguito una sola volta. Se si utilizza un oggetto Criteri di gruppo per aggiornare il Registro di sistema, è necessario definire l'oggetto per creare un nuovo valore anziché aggiornare i dati valore. Quando viene applicato l'oggetto Criteri di gruppo, se il nuovo valore non esiste, l'oggetto Criteri di gruppo lo creerà e imposta i dati valore su 0. 
+L'aggiornamento del Registro di sistema per visualizzare l'esperienza del client Lync la prima volta che un utente avvia il client Skype for Business 2015 deve essere eseguito una sola volta. Se si utilizza un oggetto Criteri di gruppo per aggiornare il Registro di sistema, è necessario definire l'oggetto per creare un nuovo valore anziché aggiornare i dati value. Quando viene applicato l'oggetto Criteri di gruppo, se il nuovo valore non esiste, l'oggetto Criteri di gruppo lo creerà e imposta i dati valore su 0. 
   
-La procedura seguente descrive come modificare il Registro di sistema in modo che l'esperienza client Lync sia visualizzata la prima volta che un utente avvia il client Skype for Business 2015. È inoltre possibile utilizzare questa procedura per aggiornare il Registro di sistema per disabilitare l'esercitazione della schermata iniziale come descritto in precedenza.
+La procedura seguente descrive come modificare il Registro di sistema in modo che l'esperienza client Lync sia visualizzata la prima volta che un utente avvia il client Skype for Business 2015. È inoltre possibile utilizzare questa procedura per aggiornare il Registro di sistema per disabilitare l'esercitazione sulla schermata iniziale come descritto in precedenza.
   
 ### <a name="to-create-the-gpo"></a>Per creare l'oggetto Criteri di gruppo
 
 1. Avviare la **console Gestione Criteri di gruppo.**
     
-    Per informazioni su come utilizzare La Console Gestione Criteri di gruppo, vedere [Console Gestione Criteri di gruppo.](https://go.microsoft.com/fwlink/?LinkId=532759)
+    Per informazioni su come utilizzare Console Gestione Criteri di gruppo, vedere [Console Gestione Criteri di gruppo.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/dn265969(v=ws.11))
     
-2. Fai clic con il pulsante **destro del** mouse sul nodo Oggetti Criteri di gruppo e scegli **Nuovo** dal menu.
+2. Fare clic con il pulsante destro **del mouse** sul nodo Oggetti Criteri di gruppo e **scegliere Nuovo** dal menu.
     
-3. Nella finestra **di dialogo** Nuovo oggetto Criteri di gruppo immetti un nome per l'oggetto Criteri di gruppo, ad esempio MakeLyncDefaultUI, e quindi fai clic su **OK.**
+3. Nella finestra **di dialogo Nuovo oggetto** Criteri di gruppo immettere un nome per l'oggetto Criteri di gruppo, ad esempio MakeLyncDefaultUI, e quindi fare clic su **OK.**
     
 4. Fai clic con il pulsante destro del mouse sul nuovo oggetto Criteri di gruppo appena creato e scegli **Modifica** dal menu.
     
-5. **Nell'Editor Gestione Criteri di gruppo** espandere Configurazione **utente,** **Preferenze,** Impostazioni di **Windows** e quindi selezionare il nodo **Registro di** sistema.
+5. **Nell'Editor Gestione Criteri di gruppo** espandere Configurazione **utente,** **Preferenze,** Impostazioni **di Windows** e quindi selezionare il nodo Registro **di** sistema.
     
-6. Fai clic con il pulsante destro del mouse sul nodo **Del** Registro di sistema e quindi scegli **Nuovo elemento** del Registro  >  **di sistema.**
+6. Fare clic con il pulsante **destro** del mouse sul nodo Registro di sistema e quindi scegliere **Nuovo elemento** del Registro  >  **di sistema**.
     
-7. Nella finestra **di dialogo Nuove proprietà del Registro di** sistema aggiornare quanto segue:
+7. Nella finestra **di dialogo Nuove proprietà del Registro** di sistema aggiornare quanto segue:
     
    |**Campo**|**Valore da selezionare o immettere**|
    |:-----|:-----|
@@ -190,17 +190,17 @@ La procedura seguente descrive come modificare il Registro di sistema in modo ch
    |**Tipo valore** <br/> |REG_BINARY  <br/> |
    |**Value data** <br/> |00000000  <br/> |
    
-8. Fai **clic su OK** per salvare le modifiche e quindi chiudi l'oggetto Criteri di gruppo.
+8. Fare **clic su OK** per salvare le modifiche e quindi chiudere l'oggetto Criteri di gruppo.
     
-Successivamente, dovrai collegare l'oggetto Criteri di gruppo creato al gruppo di utenti a cui vuoi assegnare il criterio, ad esempio un'unità organizzativa.
+Sarà quindi necessario collegare l'oggetto Criteri di gruppo creato al gruppo di utenti a cui si desidera assegnare il criterio, ad esempio un'unità organizzativa.
   
-### <a name="to-use-the-gpo-to-assign-the-policy"></a>Per usare l'oggetto Criteri di gruppo per assegnare il criterio
+### <a name="to-use-the-gpo-to-assign-the-policy"></a>Per utilizzare l'oggetto Criteri di gruppo per assegnare il criterio
 
-1. Nella Console Gestione Criteri di gruppo fai clic con il pulsante destro del mouse sull'unità organizzativa a cui vuoi assegnare il criterio e quindi scegli Collega a un oggetto Criteri **di gruppo esistente.**
+1. Nella Console Gestione Criteri di gruppo fare clic con il pulsante destro del mouse sull'unità organizzativa a cui si desidera assegnare il criterio e quindi scegliere Collega a un oggetto Criteri **di gruppo esistente.**
     
-2. Nella finestra **di dialogo Seleziona oggetto** Criteri di gruppo seleziona l'oggetto Criteri di gruppo creato e quindi seleziona **OK.**
+2. Nella finestra **di dialogo Seleziona oggetto** Criteri di gruppo selezionare l'oggetto Criteri di gruppo creato e quindi scegliere **OK.**
     
-3. Nel computer dell'utente di destinazione aprire un prompt dei comandi e digitare il comando seguente:
+3. Nel computer dell'utente di destinazione, aprire un prompt dei comandi e digitare il comando seguente:
        
 ```console
 gpupdate /target:user
@@ -213,8 +213,6 @@ gpupdate /target:user
     
     **gpresult /r**
     
-    Verrà visualizzato "Oggetti Criteri di gruppo assegnati" con il nome dell'oggetto Criteri di gruppo creato di seguito.
+    Di seguito viene visualizzato "Oggetti Criteri di gruppo assegnati" con il nome dell'oggetto Criteri di gruppo creato.
     
-Puoi anche verificare che l'oggetto Criteri di gruppo abbia aggiornato correttamente il Registro di sistema nel computer di un utente esaminando il Registro di sistema. Aprire l'Editor del Registro di sistema e passare alla **chiave [HKEY_CURRENT_USER\Software\Microsoft\Office\Lync]..** Se l'oggetto Criteri di gruppo ha aggiornato correttamente il Registro di sistema, verrà visualizzato un valore denominato EnableSkypeUI con un valore pari a 0.
-  
-
+È inoltre possibile verificare che l'oggetto Criteri di gruppo abbia aggiornato correttamente il Registro di sistema nel computer di un utente esaminando il Registro di sistema. Aprire l'editor del Registro di sistema e passare alla **chiave [HKEY_CURRENT_USER\Software\Microsoft\Office\Lync].** Se l'oggetto Criteri di gruppo ha aggiornato correttamente il Registro di sistema, verrà visualizzato un valore denominato EnableSkypeUI con un valore pari a 0.

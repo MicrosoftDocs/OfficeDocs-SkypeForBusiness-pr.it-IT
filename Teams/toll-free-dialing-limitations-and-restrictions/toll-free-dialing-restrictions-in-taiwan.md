@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di composizione numeri a numero verde in Taiwan
+title: Restrizioni di composizione a numero verde a Taiwan
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,27 +23,27 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla composizione di numeri gratuiti in Taiwan, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: c1033f405931435e16d0e8a54ddedf95e201cce8
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+description: Informazioni sulla composizione di numeri verde in Taiwan, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
+ms.openlocfilehash: 81a5afeb80316454b816f2803c2beb440d80a301
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43139785"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51097662"
 ---
-# <a name="toll-free-dialing-restrictions-in-taiwan"></a>Restrizioni di composizione numeri a numero verde in Taiwan
+# <a name="toll-free-dialing-restrictions-in-taiwan"></a>Restrizioni di composizione a numero verde a Taiwan
 
-[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o altre informazioni sulle limitazioni e le restrizioni di composizione a numero verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Sono disponibili chiamate a numero verde?  <br/> |Sì  <br/> |
 |Formati di composizione  <br/> |00 801 XXX XXX  <br/> |
 |Codice ISO del paese/area geografica  <br/> |TW  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
-|Disponibilità di linee cablate/fisse  <br/> | ITFS:KG Telecom = NO <br/> |
+|Disponibilità linea cablata/fissa  <br/> | ITFS:KG Telecom = NO <br/> |
 |Disponibilità rete mobile  <br/> |Parziale. Vedere i commenti.  <br/> |
 |Commenti, restrizioni e problemi di accesso  <br/> |Nessun accesso cablato da KG Telecom. Accesso da mobile: nessuna tariffa a tempo. Per l'accesso da mobile: accesso da tutte le reti mobili tranne KG Telecom.  <br/> |
    
@@ -51,7 +51,6 @@ ms.locfileid: "43139785"
 
 [Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md)
 
   
- 

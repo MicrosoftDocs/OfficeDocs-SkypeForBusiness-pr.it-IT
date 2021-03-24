@@ -12,18 +12,18 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 459e80bf-5791-49f8-878d-4a5178b3a210
 description: 'Riepilogo: informazioni su come gestire i criteri PIN per le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 6544586071f1107537232a117de196dfbffeb4aa
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 34b006b54242c25fb9afcd3fc9fd6e6692e9cbd2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49827956"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096748"
 ---
 # <a name="manage-pin-policies-for-dial-in-conferencing-in-skype-for-business-server"></a>Gestire i criteri PIN per le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire i criteri PIN per le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Gli utenti di Skype for Business Server che dispongono di credenziali di Servizi di dominio Active Directory nell'organizzazione possono partecipare alle conferenze telefoniche con accesso esterno come utenti autenticati utilizzando un PIN ( Personal Identification Number). Il criterio PIN definisce le regole per il funzionamento dei PIN per le conferenze telefoniche con accesso esterno.
+Gli utenti di Skype for Business Server che dispongono di credenziali di Servizi di dominio Active Directory (AD DS) nell'organizzazione possono partecipare a conferenze telefoniche con accesso esterno come utenti autenticati utilizzando un PIN (Personal Identification Number). Il criterio PIN definisce le regole per il funzionamento dei PIN per le conferenze telefoniche con accesso esterno.
   
  Se si desidera utilizzare lo stesso criterio PIN per l'intera organizzazione, è possibile utilizzare il criterio PIN globale e modificarlo in base alle esigenze. Il criterio PIN globale definisce le regole per i PIN delle conferenze telefoniche con accesso esterno a livello della foresta. È possibile modificare il criterio PIN globale, ma non eliminarlo.
   
@@ -47,19 +47,19 @@ I criteri PIN si applicano agli utenti partendo dall'ambito più limitato fino a
     
 ### <a name="view-information-about-pin-policies-by-using-skype-for-business-server-management-shell"></a>Visualizzare informazioni sui criteri PIN tramite Skype for Business Server Management Shell
 
-Per visualizzare informazioni sui criteri PIN, utilizzare il cmdlet **Get-CsPinPolicy.** Ad esempio, il comando seguente restituisce informazioni su un singolo criterio PIN con identità site:Redmond:
+Per visualizzare informazioni sui criteri PIN, utilizzare il cmdlet **Get-CsPinPolicy.** Ad esempio, il comando seguente restituisce informazioni su un singolo criterio PIN con identity site:Redmond:
   
 ```PowerShell
 Get-CsPinPolicy -Identity "site:Redmond"
 ```
 
-Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, vedere [Get-CsPinPolicy.](https://docs.microsoft.com/powershell/module/skype/get-cspinpolicy?view=skype-ps)
+Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, [vedere Get-CsPinPolicy](/powershell/module/skype/get-cspinpolicy?view=skype-ps).
   
 ## <a name="modify-the-global-pin-policy"></a>Modificare il criterio PIN globale
 
 È possibile modificare il criterio PIN globale utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-### <a name="modify-the-global-dial-in-conferencing-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare il criterio PIN globale per le conferenze telefoniche con accesso esterno utilizzando il Pannello di controllo di Skype for Business Server
+### <a name="modify-the-global-dial-in-conferencing-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare il criterio PIN per le conferenze telefoniche con accesso esterno globale utilizzando il Pannello di controllo di Skype for Business Server
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
@@ -88,9 +88,9 @@ Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un
   
 12. Fare clic su **Commit**.
     
-### <a name="modify-the-global-dial-in-conferencing-pin-policy-by-using-skype-for-business-server-management-shell"></a>Modificare il criterio PIN globale per le conferenze telefoniche con accesso esterno tramite Skype for Business Server Management Shell
+### <a name="modify-the-global-dial-in-conferencing-pin-policy-by-using-skype-for-business-server-management-shell"></a>Modificare il criterio PIN di conferenza telefonica con accesso esterno globale tramite Skype for Business Server Management Shell
 
-Per modificare il criterio PIN globale per le conferenze telefoniche con accesso esterno, utilizzare il cmdlet **Set-CsPinPolicy.**
+Per modificare il criterio PIN per le conferenze telefoniche con accesso esterno globale, utilizzare il cmdlet **Set-CsPinPolicy.**
   
 Il comando seguente modifica il valore di MinPasswordLength per tutti i criteri PIN configurati per l'utilizzo nell'organizzazione. A tale scopo, nel comando viene innanzitutto chiamato il cmdlet **Get-CsPinPolicy** senza alcun parametro per recuperare una raccolta di tutti i criteri per il PIN esistenti. La raccolta viene quindi reindirizzata al cmdlet **Set-CsPinPolicy,** che modifica il valore della proprietà MinPasswordLength per ogni criterio della raccolta:
   
@@ -98,7 +98,7 @@ Il comando seguente modifica il valore di MinPasswordLength per tutti i criteri 
 Get-CsPinPolicy | Set-CsPinPolicy -MinPasswordLength 10
 ```
 
-Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, [vedere Set-CsPinPolicy.](https://docs.microsoft.com/powershell/module/skype/set-cspinpolicy?view=skype-ps)
+Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, [vedere Set-CsPinPolicy.](/powershell/module/skype/set-cspinpolicy?view=skype-ps)
   
 ## <a name="create-a-user-or-site-pin-policy"></a>Creare un criterio PIN utente o sito
 
@@ -143,19 +143,19 @@ Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un
 
 Per creare un criterio PIN utente o sito, utilizzare il cmdlet **New-CsPinPolicy.**
   
-Il comando seguente crea un nuovo criterio PIN con identità site:Redmond. Questo comando include un solo parametro facoltativo, MinPasswordLength, utilizzato per impostare la proprietà MinPasswordLength su 7. Tutte le altre proprietà dei criteri verranno configurate utilizzando i valori predefiniti.
+Il comando seguente crea un nuovo criterio PIN con Identity site:Redmond. Questo comando include un solo parametro facoltativo, MinPasswordLength, utilizzato per impostare la proprietà MinPasswordLength su 7. Tutte le altre proprietà dei criteri verranno configurate utilizzando i valori predefiniti.
   
 ```PowerShell
 New-CsPinPolicy -Identity "site:Redmond" -MinPasswordLength 7
 ```
 
- Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, [vedere New-CsPinPolicy.](https://docs.microsoft.com/powershell/module/skype/new-cspinpolicy?view=skype-ps)
+ Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, [vedere New-CsPinPolicy](/powershell/module/skype/new-cspinpolicy?view=skype-ps).
   
 ## <a name="modify-a-user-or-site-pin-policy"></a>Modificare un criterio PIN utente o sito
 
-È possibile modificare un criterio PIN utente o sito utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+È possibile modificare i criteri PIN di un utente o di un sito utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-### <a name="modify-a-user-or-site-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare un criterio PIN utente o sito utilizzando il Pannello di controllo di Skype for Business Server
+### <a name="modify-a-user-or-site-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare i criteri PIN di un utente o di un sito tramite il Pannello di controllo di Skype for Business Server
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
@@ -169,23 +169,23 @@ New-CsPinPolicy -Identity "site:Redmond" -MinPasswordLength 7
     
 6. Fare clic su **Commit**.
     
-### <a name="modify-a-user-or-site-pin-policy-by-using-skype-for-business-server-management-shell"></a>Modificare un criterio PIN utente o sito tramite Skype for Business Server Management Shell
+### <a name="modify-a-user-or-site-pin-policy-by-using-skype-for-business-server-management-shell"></a>Modificare i criteri PIN di un utente o di un sito tramite Skype for Business Server Management Shell
 
 Per modificare il criterio PIN per le conferenze telefoniche con accesso esterno, utilizzare il cmdlet **Set-CsPinPolicy.**
   
-Il comando seguente modifica il criterio PIN assegnato al sito Redmond. In questo caso, il comando modifica il valore della proprietà MinPasswordLength su 10. Ciò significa che i nuovi PIN doranno contenere almeno 10 cifre:
+Il comando seguente modifica il criterio PIN assegnato al sito Redmond. In questo caso, il comando modifica il valore della proprietà MinPasswordLength su 10. ciò significa che i nuovi PIN doranno contenere almeno 10 cifre:
   
 ```PowerShell
 Set-CsPinPolicy -Identity site:Redmond -MinPasswordLength 10
 ```
 
-Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, [vedere Set-CsPinPolicy.](https://docs.microsoft.com/powershell/module/skype/set-cspinpolicy?view=skype-ps)
+Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, [vedere Set-CsPinPolicy.](/powershell/module/skype/set-cspinpolicy?view=skype-ps)
   
 ## <a name="delete-a-user-or-site-pin-policy"></a>Eliminare un criterio PIN utente o sito
 
 È possibile eliminare un criterio PIN utente o sito utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-### <a name="delete-a-user-or-site-pin-policy-by-using-skype-for-business-server-control-panel"></a>Eliminare un criterio PIN utente o sito tramite il Pannello di controllo di Skype for Business Server
+### <a name="delete-a-user-or-site-pin-policy-by-using-skype-for-business-server-control-panel"></a>Eliminare un criterio PIN di un utente o di un sito tramite il Pannello di controllo di Skype for Business Server
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
@@ -199,12 +199,10 @@ Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un
 
 Per eliminare un criterio PIN utente o sito, utilizzare il cmdlet **Remove-CsPinPolicy.**
   
-Il comando seguente rimuove tutti i criteri PIN configurati nell'ambito del sito. A tale scopo, utilizzare il cmdlet **Get-CsPinPolicy,** insieme al parametro Filter, per restituire una raccolta di tutti i criteri la cui identità inizia con i caratteri "site:". La raccolta viene quindi reindirizzata al cmdlet **Remove-CsPinPolicy,** che elimina ogni criterio nella raccolta:
+Il comando seguente rimuove tutti i criteri PIN configurati nell'ambito del sito. A tale scopo, utilizzare il cmdlet **Get-CsPinPolicy,** insieme al parametro Filter, per restituire una raccolta di tutti i criteri la cui identità inizia con i caratteri "site:". Questa raccolta viene quindi reindirizzata al cmdlet **Remove-CsPinPolicy,** che elimina ogni criterio nella raccolta:
   
 ```PowerShell
 Get-CsPinPolicy -Filter "site:*" | Remove-CsPinPolicy
 ```
 
-Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, [vedere Remove-CsPinPolicy.](https://docs.microsoft.com/powershell/module/skype/remove-cspinpolicy?view=skype-ps)
-  
-
+Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, [vedere Remove-CsPinPolicy](/powershell/module/skype/remove-cspinpolicy?view=skype-ps).

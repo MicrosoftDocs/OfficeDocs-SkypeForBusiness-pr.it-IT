@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: bfcb37ca-34eb-4d0d-9694-6edd2e7fe0f3
 ROBOTS: NOINDEX, NOFOLLOW
-description: "Per preparare un dominio per ospitare server che eseguono utenti di Skype for Business Server o Skype for Business Server, è necessario completare il passaggio 5: Preparare il dominio corrente, come descritto nell'argomento Utilizzo del programma di installazione per eseguire la preparazione del dominio. Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:"
-ms.openlocfilehash: d6e2efb774d7cad653c0a95e0e2863b97efe55ff
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Per preparare un dominio per ospitare server che eseguono utenti di Skype for Business Server o Skype for Business Server, è necessario completare Passaggio 5: Preparare il dominio corrente, come descritto nell'argomento Using Setup to Run Domain Preparation. Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:"
+ms.openlocfilehash: a71e50b0f3d55709c3c22709177b41e541f7075f
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824936"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51097341"
 ---
 # <a name="prepare-current-domain"></a>Preparare il dominio corrente
 
-Per preparare un dominio per ospitare server che eseguono utenti di Skype for Business Server o Skype for Business Server, è necessario completare il passaggio **5: Preparare** il dominio corrente, come descritto nell'argomento Utilizzo del programma di installazione per eseguire la preparazione del [dominio.](https://technet.microsoft.com/library/95dab800-1f2c-4506-b36c-99986643b149.aspx) Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:
+Per preparare un dominio per ospitare server che eseguono Utenti di Skype for Business Server o Skype for Business Server, è necessario completare **passaggio 5: Preparare** il dominio corrente, come descritto nell'argomento Utilizzo del programma di installazione per eseguire la preparazione [del dominio.](/previous-versions/office/lync-server-2013/lync-server-2013-running-domain-preparation) Per poter completare tale passaggio, è necessario essere connessi come membri del gruppo Domain Admins nel dominio che si sta preparando oppure come membri del gruppo Enterprise Admins della foresta a cui appartiene il dominio. Per preparare il dominio, eseguire le operazioni seguenti:
 
 1. Dalla cartella o dal supporto di installazione di Skype for Business Server, eseguire Setup.exe per avviare la Distribuzione guidata di Skype for Business Server.
 
@@ -34,9 +34,7 @@ Per preparare un dominio per ospitare server che eseguono utenti di Skype for Bu
 
 4. Nella pagina **Esecuzione comandi in corso** ricercare **Stato attività: Operazione completata** e quindi fare clic su **Visualizza registro**.
 
-5. Nella colonna **Azione** espandere **Preparazione** dominio, cercare un risultato di esecuzione alla fine di ogni attività per verificare che la preparazione del dominio sia stata completata correttamente, chiudere il registro e quindi fare clic **\<Success\>** su **Fine.**
+5. Nella colonna **Azione** espandere **Domain Prep**, cercare un risultato di esecuzione alla fine di ogni attività per verificare che la preparazione del dominio sia stata completata correttamente, chiudere il registro e quindi fare clic **\<Success\>** su **Fine**.
 
 > [!TIP]
 > Se è necessario esaminare i file di registro creati dalla Distribuzione guidata di Skype for Business Server, è possibile trovarli nel computer in cui è stata eseguita la Distribuzione guidata nella directory Utenti dell'utente di Servizi di dominio Active Directory che ha eseguito il passaggio. Ad esempio, se l'utente ha eseguito l'accesso come amministratore di dominio nel Contoso.net di dominio, i file di registro si trovano in: C:\Users\Administrator.Contoso\AppData\Local\Temp.
-
-

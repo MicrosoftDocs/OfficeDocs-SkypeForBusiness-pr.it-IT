@@ -1,5 +1,5 @@
 ---
-title: Restrizioni di composizione numeri gratuiti in India
+title: Restrizioni di composizione a numero verde in India
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,34 +23,33 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla composizione di numeri gratuiti in India, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: e95d00a0bc601780eca63369e0af76d6a4786016
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+description: Informazioni sulla composizione di numeri verde in India, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
+ms.openlocfilehash: 3e8dc705b5a8f762899433e0fbd2cc4bfe3aba94
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140385"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098081"
 ---
-# <a name="toll-free-dialing-restrictions-in-india"></a>Restrizioni di composizione numeri gratuiti in India
+# <a name="toll-free-dialing-restrictions-in-india"></a>Restrizioni di composizione a numero verde in India
 
-[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o altre informazioni sulle limitazioni e le restrizioni di composizione a numero verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Sono disponibili chiamate a numero verde?  <br/> |Sì  <br/> |
 |Formati di composizione  <br/> |000 800 XXX XXXX  <br/> |
 |Codice ISO del paese/area geografica  <br/> |IND  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
-|Disponibilità di linee cablate/fisse  <br/> |Parziale. Vedere i commenti.  <br/> |
+|Disponibilità linea cablata/fissa  <br/> |Parziale. Vedere i commenti.  <br/> |
 |Disponibilità rete mobile  <br/> |Parziale. Vedere i commenti.  <br/> |
-|Commenti, restrizioni e problemi di accesso  <br/> |Accesso disponibile dalle reti seguenti: Loop Mobile, BSNL - risolto (in tutte le aree geografiche tranne Danopal), Vodafone, IDEA/SPICE (tutte le aree geografiche tranne Punjab Spice), MTS India/Shyam (risolto), MTNL - dispositivo mobile fisso, Reliance (tutte le aree geografiche tranne &amp; Ahmedabad, Paloopal,Cruuneswer, Jaipur, Lucknow, Meerut), TTML &amp; TTSL &amp; (postpaid fisso), Tata DoCoMo, HFCL Infotel/Ping Mobile, S-Tel Mobile, Uninor, Videocon Mobile, BSNL-mobile, rete Bharti/Airtel.  <br/> L'accesso non è disponibile dalle reti seguenti: TTSL (Prepagato), Etisalat DB Telecom e Jio.  <br/> |
+|Commenti, restrizioni e problemi di accesso  <br/> |Accesso disponibile dalle reti seguenti: Loop Mobile, BSNL - fixed (tutte le aree geografiche tranne Bhopal), Vodafone, IDEA/SPICE (tutte le aree geografiche tranne Punjab Spice), MTS India/Shyam (risolto), MTNL - mobile fisso, Affidamento (tutte le aree geografiche tranne &amp; Ahmedabad, Bhopal, Bhuneswer, Jaipur, Lucknow, Meerut), TTML &amp; TTSL &amp; (postpagato fisso), Tata DoCoMo, HFCL Infotel/Ping Mobile, S-Tel Mobile, Uninor, Videocon Mobile, BSNL-mobile, Bharti/Airtel network.  <br/> Accesso non disponibile dalle reti seguenti: TTSL (Prepagato), Etisalat DB Telecom e Jio.  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md)
 
   
- 

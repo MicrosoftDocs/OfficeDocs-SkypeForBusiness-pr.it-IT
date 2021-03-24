@@ -19,19 +19,19 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: ec03bd5ca416bd0780225529dad2a6254580396d
-ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
+ms.openlocfilehash: e8e9a7776058803f49364887cabd6b54a9040cb6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50726247"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51097562"
 ---
 # <a name="microsoft-teams-training"></a>Formazione su Microsoft Teams
 
 |               |               |
 | ------------- | ------------- |
-| <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-teams.svg" width="40 px" height="40 px" alt="admin training"> | **[Formazione per gli amministratori](/microsoftteams/itadmin-readiness)** </br> Usare queste esercitazioni, i video e le altre risorse di formazione per saperne di più su Teams e incentivarne l'utilizzo nell'organizzazione. 
-| <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg" width="40 px" height="40 px" alt="live training"> | **[Formazione dal vivo di Teams](/microsoftteams/instructor-led-training-teams-landing-page)** </br> I corsi di formazione online gratuiti e in tempo reale ospitati da Microsoft sono pensati per consentire agli utenti di iniziare subito a usare Teams. Partecipa per vedere Teams in azione, ottenere risposte alle tue domande e interagire con gli istruttori live. 
+| <img src="https://docs.microsoft.com/office/media/icons/walkthrough-map-teams.svg" width="40 px" height="40 px" alt="admin training"> | **[Formazione per gli amministratori](./itadmin-readiness.md)** </br> Usare queste esercitazioni, i video e le altre risorse di formazione per saperne di più su Teams e incentivarne l'utilizzo nell'organizzazione. 
+| <img src="https://docs.microsoft.com/office/media/icons/education-tutorial-teams.svg" width="40 px" height="40 px" alt="live training"> | **[Formazione dal vivo di Teams](./instructor-led-training-teams-landing-page.yml)** </br> I corsi di formazione online gratuiti e in tempo reale ospitati da Microsoft sono pensati per consentire agli utenti di iniziare subito a usare Teams. Partecipa per vedere Teams in azione, ottenere risposte alle tue domande e interagire con gli istruttori live. 
 | <img src="https://docs.microsoft.com/office/media/icons/user.svg" width="40 px" height="40 px" alt="online training" > | **[Formazione online di Teams](https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7)** </br> Usare queste risorse di formazione autogestita per consentire agli utenti di sfruttare al meglio Teams. |
 
 ## <a name="dont-miss-these-key-training-offerings"></a>Non perdere queste offerte di formazione chiave
@@ -40,7 +40,7 @@ Questo elenco verrà continuamente aggiornato. Si consiglia quindi di consultarl
 
 :::row:::
    :::column:::
-   **[Supporto lavoratori remoti](https://aka.ms/TeamsForRemoteWork)** </br>
+   **[Supporto lavoratori remoti](./support-remote-work-with-teams.md)** </br>
    Ottenei le indicazioni necessarie, inclusi i collegamenti alle risorse di formazione per supportare gli utenti che lavorano da casa.
 
    :::column-end:::
@@ -52,7 +52,7 @@ Questo elenco verrà continuamente aggiornato. Si consiglia quindi di consultarl
    :::column-end:::
 
    :::column:::
-   **[Lavoro di squadra](https://docs.microsoft.com/learn/paths/m365-manage-team-collaboration)** </br>
+   **[Lavoro di squadra](/learn/paths/m365-manage-team-collaboration)** </br>
    Corso: facilitare il lavoro di squadra con Teams
 
    :::column-end:::
@@ -61,13 +61,13 @@ Questo elenco verrà continuamente aggiornato. Si consiglia quindi di consultarl
 
 :::row:::
    :::column:::
-   **[Certificazione Adoption Specialist](https://aka.ms/AdoptionCert)** </br>
+   **[Certificazione Adoption Specialist](/learn/paths/m365-service-adoption/)** </br>
    Il corso di Microsoft Service, Certificazione Adoption Specialist, include Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.
 
    :::column-end:::
 
    :::column:::
-   **[Introduzione al lavoro di squadra in Microsoft 365](https://docs.microsoft.com/learn/modules/intro-to-teamwork-in-m365/index)** </br>
+   **[Introduzione al lavoro di squadra in Microsoft 365](/learn/modules/intro-to-teamwork-in-m365/index)** </br>
    Informazioni sugli strumenti di Microsoft 365 che facilitano il lavoro in team per tutti i dipendenti, indipendentemente da dove si trovino e da come si connettano all'organizzazione. 
 
    :::column-end:::

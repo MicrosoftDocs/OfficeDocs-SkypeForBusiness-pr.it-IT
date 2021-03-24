@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come risolvere i problemi di installazione e aggiornamento per il client desktop Teams in Windows.
-ms.openlocfilehash: 4183a04458147e63f8168f703bf16682b3bea9e0
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 283b1818789624428aa772a4d71360a07eed6f00
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804556"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51097552"
 ---
 # <a name="troubleshoot-microsoft-teams-installation-and-update-issues-on-windows"></a>Risoluzione dei problemi di installazione e aggiornamento di Microsoft Teams in Windows
 
@@ -67,7 +67,7 @@ Se SquirrelTemp.log o Logs.txt non contengono informazioni sufficienti per deter
 
 ## <a name="collect-and-analyze-application-and-system-logs"></a>Raccogliere e analizzare i log di sistema e dell'applicazione
 
-Questa sezione descrive come raccogliere e analizzare i log di sistema e dell'applicazione per ottenere informazioni più complete per la risoluzione del problema. Sarà necessario utilizzare gli strumenti di Sysinternals per completare questi passaggi. Per altre informazioni, vedere [Windows Sysinternals](https://docs.microsoft.com/sysinternals/).
+Questa sezione descrive come raccogliere e analizzare i log di sistema e dell'applicazione per ottenere informazioni più complete per la risoluzione del problema. Sarà necessario utilizzare gli strumenti di Sysinternals per completare questi passaggi. Per altre informazioni, vedere [Windows Sysinternals](/sysinternals/).
 
 ### <a name="collect-logs"></a>Raccolta dei log
 
@@ -123,7 +123,7 @@ Suggerimenti per la risoluzione del problema:
 - Per confermare che si tratti del problema riscontrato, chiudere Teams (fare clic con il pulsante destro del mouse su Teams nella barra delle applicazioni e quindi selezionare **Esci**). Aprire Gestione attività in Windows per controllare se sono presenti istanze di Teams ancora in esecuzione.  
 - Se non si sta utilizzando il computer in cui si è riscontrato il problema, esaminare il file SquirrelTemp.log raccolto dal computer in cui si è verificato e cercare la voce "Programma: non è possibile terminare il processo nel log".
 - Per determinare la causa che impedisce la chiusura di Teams.exe, consultare i log Dlls.txt e Handles.txt. Questi indicheranno i processi che impediscono la chiusura di Teams.
-- Un'altra causa che potrebbe impedire la chiusura di Teams potrebbe essere il driver del filtro del file system in modalità kernel. Usare [ProcDump](https://docs.microsoft.com/sysinternals/downloads/procdump), uno strumento di SysInternals, per raccogliere i dettagli del processo in modalità kernel eseguendo ```procdump -mk <pid>```, dove <pid> è l'ID processo ottenuto tramite Gestione attività. Inoltre, è possibile esaminare il file del log Driverquery.txt per visualizzare i driver attivi del filtro che potrebbero interferire con Teams.
+- Un'altra causa che potrebbe impedire la chiusura di Teams potrebbe essere il driver del filtro del file system in modalità kernel. Usare [ProcDump](/sysinternals/downloads/procdump), uno strumento di SysInternals, per raccogliere i dettagli del processo in modalità kernel eseguendo ```procdump -mk <pid>```, dove <pid> è l'ID processo ottenuto tramite Gestione attività. Inoltre, è possibile esaminare il file del log Driverquery.txt per visualizzare i driver attivi del filtro che potrebbero interferire con Teams.
 - Per risolvere il problema, riavviare il computer.
 
 #### <a name="file-permissions"></a>Autorizzazioni per i file
@@ -141,17 +141,17 @@ Se a Teams viene negato l'accesso perché non autorizzato a scrivere in un file,
 Suggerimenti per la risoluzione del problema:
 
 - Cercare la voce "accesso negato" in SquirrelTemp.log o Logs.txt. Controllare questi file per verificare la presenza di un tentativo di scrittura non riuscito in un file.
-- Aprire Icacls.txt e cercare la voce di controllo di accesso (ACE) in funzione che blocca le operazioni di scrittura di un utente non amministratore. In genere, si tratta di una delle voci del DACL. Per altre informazioni, vedere la [documentazione di icacls](https://docs.microsoft.com/windows-server/administration/windows-commands/icacls).
+- Aprire Icacls.txt e cercare la voce di controllo di accesso (ACE) in funzione che blocca le operazioni di scrittura di un utente non amministratore. In genere, si tratta di una delle voci del DACL. Per altre informazioni, vedere la [documentazione di icacls](/windows-server/administration/windows-commands/icacls).
 
 #### <a name="file-corrupted"></a>File danneggiato
 
 In alcuni casi, il software di crittografia può cambiare i file della cartella %LocalAppData%\Microsoft\Teams, impedendo l'avvio di Teams. Ciò può verificarsi in qualsiasi momento, anche quando l'app non è in corso di aggiornamento. Quando un file viene danneggiato, l'unico modo per risolvere il problema è disinstallare e reinstallare Teams.
 
 > [!NOTE]
-> Se non è possibile determinare la causa del problema tramite uno di questi passaggi, potrebbe essere necessaria una sessione di [Process Monitor](https://docs.microsoft.com/sysinternals/downloads/procmon). Process Monitor è uno strumento di Sysinternals che registra l'accesso al file system e al Registro di sistema.
+> Se non è possibile determinare la causa del problema tramite uno di questi passaggi, potrebbe essere necessaria una sessione di [Process Monitor](/sysinternals/downloads/procmon). Process Monitor è uno strumento di Sysinternals che registra l'accesso al file system e al Registro di sistema.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Ottenere client per Teams](get-clients.md)
 - [Aggiornamenti del client di Teams](teams-client-update.md)
-- [Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
+- [Risoluzione dei problemi di Teams](/MicrosoftTeams/troubleshoot/teams)

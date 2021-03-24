@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 5f557345-5a04-45d6-b274-c02dbfe41b33
 description: Panoramica delle funzionalità di gestione delle chiamate supportate in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 506ffa9dca87544be8798f2bf98dc6a24cb2d7c9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 926ffe294c2819b9f68af76e61410a0ce4a9f63b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49825946"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096436"
 ---
 # <a name="plan-for-call-management-features-in-skype-for-business"></a>Pianificare le funzionalità di gestione delle chiamate in Skype for Business
 
@@ -31,9 +31,9 @@ Le funzionalità di gestione delle chiamate di VoIP aziendale controllano la mod
 
 - **Parcheggio di chiamata:** consente agli utenti vocali di parcheggiare temporaneamente una chiamata e quindi di riprenderla dallo stesso telefono o da un altro telefono.
 
-- **Prelievo gruppo**: consente agli utenti vocali di riprendere le chiamate che squillano per altri utenti vocali assegnati ai gruppi di prelievo delle chiamate.
+- **Prelievo gruppo**: consente agli utenti vocali di prelevare le chiamate che squillano per altri utenti vocali assegnati ai gruppi di prelievo delle chiamate.
 
-- **Response Group:** instrada le chiamate in arrivo a gruppi di agenti utilizzando gruppi di risposta o domande e risposte IVR (Interactive Voice Response).
+- **Response Group**: instrada le chiamate in arrivo a gruppi di agenti utilizzando gruppi di risposta o domande e risposte IVR (Interactive Voice Response).
 
 - **Annuncio**: riproduce un messaggio per le chiamate effettuate a un numero non assegnato o instrada diversamente le chiamate oppure esegue entrambe le operazioni.
 
@@ -41,12 +41,10 @@ Se si prevede di distribuire VoIP aziendale, è possibile scegliere di implement
 
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Pianificazione del parcheggio di chiamata](https://technet.microsoft.com/library/e463c4ba-b7e4-42e5-98f0-0c8b842206dd.aspx)
+- [Pianificazione del parcheggio di chiamata](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-call-park)
 
-- [Pianificazione della prelievo di gruppo](https://technet.microsoft.com/library/6d306466-778f-4c6a-9b6a-35dcd0d1811e.aspx)
+- [Pianificazione del prelievo di gruppo](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-group-call-pickup)
 
-- [Pianificazione dei Response Group](https://technet.microsoft.com/library/7c10ce08-0068-4b22-8ecc-33e94811c900.aspx)
+- [Pianificazione dei Response Group](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-response-groups)
 
-- [Pianificazione degli annunci](https://technet.microsoft.com/library/eb9f5420-0222-4fe0-81a7-9d249e56cd84.aspx)
-
-
+- [Pianificazione degli annunci](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-announcements)

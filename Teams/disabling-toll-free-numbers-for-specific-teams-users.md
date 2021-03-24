@@ -20,13 +20,13 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Scopri come controllare in che modo gli organizzatori possono utilizzare numeri verde per le riunioni bridge di audioconferenza.
-ms.openlocfilehash: 517ffea6a15cd625320f33e3eb4911f4a250d51d
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+description: Informazioni su come controllare in che modo gli organizzatori possono usare i numeri verde per le riunioni del Bridge di audioconferenza.
+ms.openlocfilehash: f9ab09396778b221ad7f5c016dbf7db76fcba030
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904571"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096346"
 ---
 # <a name="disabling-toll-free-numbers-for-specific-teams-users"></a>Disabilitazione dei numeri verde per utenti di Teams specifici
 
@@ -47,13 +47,13 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
 
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
-**Dall'interfaccia di amministrazione di Microsoft Teams:**
+**Nell'interfaccia di amministrazione di Microsoft Teams:**
 
-1. Nel riquadro di spostamento sinistro fare **clic su** Utenti e quindi selezionare l'utente nell'elenco di utenti disponibili.
+1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
-2. Accanto a **Audioconferenza,** fai clic **su Modifica.**
+2. Accanto a **Audioconferenza** fare clic su **Modifica.**
 
-3. Impostare **Includi numeri verde nelle convocazioni riunione di questo utente su** **Disattivato.** 
+3. Impostare **Includi numeri verde nelle convocazioni di riunione di questo utente su** **Disattivato.** 
 
 4. Fare clic **su Salva.** 
 
@@ -63,4 +63,4 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
  
 **Utilizzo di PowerShell**  
 
-Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
+Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)

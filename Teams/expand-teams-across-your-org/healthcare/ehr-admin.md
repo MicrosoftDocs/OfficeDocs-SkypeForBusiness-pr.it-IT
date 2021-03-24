@@ -23,12 +23,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ''
 description: Usare Microsoft Teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 6daa61ea44db02d48873a6fc494974c99573d0e8
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 37b93533aeff6b519b1f5a65cf49211464b41388
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875176"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096280"
 ---
 # <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con Teams - Integrazione in CCE
 
@@ -57,7 +57,7 @@ Prima di integrare il connettore CCE, è necessario verificare di avere i prereq
 
 - Le organizzazioni devono avere la versione Epic di novembre 2018 o successiva.
 
-- I sistemi devono soddisfare tutti i [prerequisiti per software e browser](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app).
+- I sistemi devono soddisfare tutti i [prerequisiti per software e browser](../../hardware-requirements-for-the-teams-app.md).
 
 All'interno dell'organizzazione saranno necessarie anche le informazioni seguenti:
 
@@ -130,7 +130,7 @@ Dopo aver completato la procedura per il connettore CCE e la configurazione di E
 
 ### <a name="virtual-visit-prerequisites"></a>Prerequisiti per la visita virtuale
 
-- I sistemi devono soddisfare tutti i [prerequisiti per software e browser](https://docs.microsoft.com/microsoftteams/hardware-requirements-for-the-teams-app).
+- I sistemi devono soddisfare tutti i [prerequisiti per software e browser](../../hardware-requirements-for-the-teams-app.md).
 
 - L'organizzazione del settore sanitario deve aver completato la configurazione tra l'organizzazione Epic e l'organizzazione Microsoft 365.
 
@@ -175,4 +175,4 @@ Caratteristiche principali dell'esperienza del paziente:
 
 L'integrazione di Teams nei sistemi CCE ottimizza la quantità di dati usati e archiviati durante l'integrazione e i flussi di visita virtuale. La soluzione segue i principi generali della privacy e della gestione dei dati di Teams e le linee guida descritte nell’informativa sulla privacy di Teams.
 
-Il connettore CCE di Microsoft Teams non archivia né trasferisce dati personali identificabili né cartelle sanitarie di pazienti o provider di servizi sanitari dal sistema CCE. Gli unici dati archiviati dal connettore CCE sono l'ID univoco dell'utente CCE, che viene usato durante la configurazione della riunione di Teams. L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche descritte in [Dove sono archiviati i dati dei clienti di Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide#data-center-geographies). Tutti i dati di chat, registrazioni e altre fonti immessi in Teams dai partecipanti alla riunione vengono archiviati in base ai criteri di archiviazione esistenti. Per altre informazioni sulla posizione dei dati in Microsoft Teams, visitare [Posizione dei dati in Teams](https://docs.microsoft.com/microsoftteams/location-of-data-in-teams).
+Il connettore CCE di Microsoft Teams non archivia né trasferisce dati personali identificabili né cartelle sanitarie di pazienti o provider di servizi sanitari dal sistema CCE. Gli unici dati archiviati dal connettore CCE sono l'ID univoco dell'utente CCE, che viene usato durante la configurazione della riunione di Teams. L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche descritte in [Dove sono archiviati i dati dei clienti di Microsoft 365](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide#data-center-geographies). Tutti i dati di chat, registrazioni e altre fonti immessi in Teams dai partecipanti alla riunione vengono archiviati in base ai criteri di archiviazione esistenti. Per altre informazioni sulla posizione dei dati in Microsoft Teams, visitare [Posizione dei dati in Teams](../../location-of-data-in-teams.md).

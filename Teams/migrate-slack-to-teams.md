@@ -18,12 +18,12 @@ localization_priority: Priority
 f1.keywords:
 - NOCSH
 description: Indicazioni complete per effettuare la migrazione da Slack a Microsoft Teams.
-ms.openlocfilehash: 8b4fc90cde4bb438eee421459cf2c26672555b09
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: b1e04a0dc8c829ed938b925e498e2716529356f9
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030642"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098362"
 ---
 # <a name="migrate-from-slack-to-microsoft-teams"></a>Effettuare la migrazione da Slack a Microsoft Teams
 
@@ -89,7 +89,7 @@ Gli schemi di identità utilizzati in Slack potrebbero non essere direttamente c
 
 Se si dispone di un piano di servizio di Slack a pagamento, è possibile passare a *<your Slack workspace>.slack.com/admin/stats#members* per ottenere informazioni dettagliate sui membri, come l'indirizzo e-mail e il tipo di account per ogni utente, ad esempio guest singolo o multicanale.
 
-Di seguito viene riportato uno script che è possibile utilizzare per confrontare gli indirizzi e-mail di un'esportazione di Slack con Azure AD per risolvere l'ambiguità del nome. Lo script indica anche se l'utente è abilitato per Teams. Se è necessaria assistenza con PowerShell, consultare [Introduzione ad Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).
+Di seguito viene riportato uno script che è possibile utilizzare per confrontare gli indirizzi e-mail di un'esportazione di Slack con Azure AD per risolvere l'ambiguità del nome. Lo script indica anche se l'utente è abilitato per Teams. Se è necessaria assistenza con PowerShell, consultare [Introduzione ad Azure PowerShell](/powershell/azure/get-started-azureps).
 
 ```azurepowershell
 Connect-AzureAD
@@ -212,7 +212,7 @@ La maggior parte delle soluzioni esportano i file. Tuttavia, sono in genere forn
 
 Per quanto riguarda i file archiviati in Slack, dopo aver configurato i team e i canali in Teams, è possibile copiare tali file da Slack nel canale Teams di destinazione in modo programmatico.
 
-Nello script che segue vengono recuperati file da Slack. Viene cercata nel computer l'esportazione di Slack specificata, viene creata una cartella in ogni canale di destinazione e vengono scaricati tutti i file nella posizione desiderata. Esistono soluzioni di terze parti in grado di estrarre i dati. Se è necessaria assistenza con PowerShell, consultare [Introduzione ad Azure PowerShell](https://docs.microsoft.com/powershell/azure/get-started-azureps).
+Nello script che segue vengono recuperati file da Slack. Viene cercata nel computer l'esportazione di Slack specificata, viene creata una cartella in ogni canale di destinazione e vengono scaricati tutti i file nella posizione desiderata. Esistono soluzioni di terze parti in grado di estrarre i dati. Se è necessaria assistenza con PowerShell, consultare [Introduzione ad Azure PowerShell](/powershell/azure/get-started-azureps).
 
 
 
@@ -361,7 +361,7 @@ Una volta definito il piano di transizione, è possibile iniziare a creare team 
 
 Dopo aver creato team e canali, iniziare a copiare i file dai canali di Slack in Teams e a configurare le app. Se si utilizza una soluzione per conservare la cronologia, è possibile configurarla ora. Quindi, si è pronti a concedere licenze agli utenti (se non hanno già una licenza) e ad aggiungerli ai team appropriati. Per ridurre la necessità di ulteriori esportazioni e copie di file, è consigliabile rimuovere l'accesso di Slack in una data concordata che coincide con l'aggiunta di ciascun utente al team. In questo modo si evita di dover riesportare e importare le modifiche delta in file e cronologia.
 
-Seguire i passaggi descritti nel diagramma seguente per distribuire Teams nell'organizzazione. Per altre informazioni, consultare [Come distribuire Teams](How-to-roll-out-teams.md).
+Seguire i passaggi descritti nel diagramma seguente per distribuire Teams nell'organizzazione. Per altre informazioni, consultare [Come distribuire Teams](./deploy-overview.md).
 
 
 :::image type="content" source="media/migrate-slack-to-teams-image4.png" alt-text="Diagramma che elenca le fasi del passaggio da Slack a Teams.":::

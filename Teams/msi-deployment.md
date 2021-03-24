@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6cde5b2f04936afdd16eb7d0ff13a03840e6fa49
-ms.sourcegitcommit: 31a585cc0fe6350efacf3a7771d1e590d5e4233c
+ms.openlocfilehash: b31ffca29891a903c68614239bacedabc6729d39
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50614952"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098112"
 ---
 # <a name="install-microsoft-teams-using-microsoft-endpoint-configuration-manager"></a>Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager
 
@@ -37,9 +37,9 @@ Ecco i collegamenti ai file MSI:
 |Entità  |32 bit      |64 bit      | ARM64 |
 |---------|---------|---------|-----------|
 |Commerciale     | [32 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)        | [64 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)       | [ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true)|
-|Stati Uniti - Governo - GCC     | [32 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&ring=general_gcc&download=true)       | [64 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&ring=general_gcc&download=true)        |[ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true) |
-|Stati Uniti - GCC High    | [32 bit](https://gov.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)         | [64 bit](https://gov.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)        |[ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true) |
-|U.S. Government - DoD     | [32 bit](https://dod.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)        | [64 bit](https://dod.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)        | [ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true)|
+|Governo degli Stati Uniti - GCC     | [32 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&ring=general_gcc&download=true)       | [64 bit](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&ring=general_gcc&download=true)        |[ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true) |
+|Governo degli Stati Uniti - GCC High    | [32 bit](https://gov.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)         | [64 bit](https://gov.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)        |[ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true) |
+|Governo degli Stati Uniti - DoD     | [32 bit](https://dod.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&managedInstaller=true&download=true)        | [64 bit](https://dod.teams.microsoft.us/downloads/desktopurl?env=production&plat=windows&arch=x64&managedInstaller=true&download=true)        | [ARM64](https://teams.microsoft.com/downloads/desktopurl?env=production&plat=windows&arch=arm64&managedInstaller=true&download=true)|
 
 **Per garantire una distribuzione efficace, tenere presente quanto segue:**
 
@@ -47,9 +47,9 @@ Ecco i collegamenti ai file MSI:
 
 - Se il tenant del cliente si trova nei cloud GCCH o DoD, il cliente deve impostare l'endpoint iniziale nel Registro di sistema aggiungendo il valore **CloudType** alla chiave nel Registro **HKEY_CURRENT_USER\SOFTWARE\Policies\Microsoft\Office\16.0\Teams**. Il tipo di **CloudType** è **DWORD** e i valori sono (0 = Unset, 1 = commercial, 2 = GCC, 3 = GCCH, 4 = DOD). Impostare l'endpoint con la chiave di Registro di sistema limita Teams dal connettersi all'endpoint cloud corretto per la connettività di pre-accesso con Teams.
 
-- Teams può anche essere incluso in una distribuzione di Microsoft 365 Apps for enterprise. Per altre informazioni, vedere [Distribuire Microsoft Teams con Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/teams-install).
+- Teams può anche essere incluso in una distribuzione di Microsoft 365 Apps for enterprise. Per altre informazioni, vedere [Distribuire Microsoft Teams con Microsoft 365 Apps for enterprise](/deployoffice/teams-install).
 
-- Per scoprire di più su Microsoft Endpoint Configuration Manager, vedere [Che cos'è Configuration Manager?](https://docs.microsoft.com/configmgr/core/understand/introduction).
+- Per scoprire di più su Microsoft Endpoint Configuration Manager, vedere [Che cos'è Configuration Manager?](/configmgr/core/understand/introduction).
 
 ## <a name="deployment-procedure-recommended"></a>Procedura di distribuzione (consigliata)
 
@@ -105,7 +105,7 @@ Abilitare l'impostazione dei Criteri di gruppo **Impedire l'avvio automatico di 
 
 Se si abilita questa impostazione di criteri prima dell'installazione di Teams, si impedisce l'avvio automatico di Teams quando gli utenti eseguono l'accesso a Windows. Dopo il primo accesso, Teams viene configurato per avviarsi automaticamente al seguente accesso di tale utente al dispositivo.
 
-Per saperne di più, vedere [Uso dei Criteri di gruppo per impedire l'avvio automatico di Teams dopo l'installazione](https://docs.microsoft.com/deployoffice/teams-install#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation).
+Per saperne di più, vedere [Uso dei Criteri di gruppo per impedire l'avvio automatico di Teams dopo l'installazione](/deployoffice/teams-install#use-group-policy-to-prevent-microsoft-teams-from-starting-automatically-after-installation).
 
 > [!CAUTION]
 > Se Teams è già stato distribuito e si vuole impostare questo criterio per disabilitarne l'avvio automatico, prima di tutto regolare l'impostazione dei Criteri di gruppo sul valore desiderato, quindi eseguire lo [script per il reset dell'avvio automatico di Teams](scripts/powershell-script-teams-reset-autostart.md) per ogni singolo utente.

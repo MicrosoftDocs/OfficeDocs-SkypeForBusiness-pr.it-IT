@@ -1,5 +1,5 @@
 ---
-title: Assegnare un criterio PIN per utente in Skype for Business Server
+title: Assegnare criteri PIN per utente in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,21 +12,21 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d8211c64-0b63-4193-a074-673da7d14287
-description: 'Riepilogo: passaggio dei certificati AV e OAuth per Skype for Business Server.'
-ms.openlocfilehash: 6a0d0a1824e809a70dfee419fb5da1f663d8d779
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: stage AV e certificati OAuth per Skype for Business Server.'
+ms.openlocfilehash: a5cd533dccffb878fad7d7562ded3da301fc0ce3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828526"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096832"
 ---
-# <a name="assign-a-per-user-pin-policy-in-skype-for-business-server"></a>Assegnare un criterio PIN per utente in Skype for Business Server
+# <a name="assign-a-per-user-pin-policy-in-skype-for-business-server"></a>Assegnare criteri PIN per utente in Skype for Business Server
 
-**Riepilogo:** Passaggio dei certificati AV e OAuth per Skype for Business Server.
+**Riepilogo:** Stage AV and OAuth certificates for Skype for Business Server.
   
 Il criterio PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno è una delle singole impostazioni di un account utente che può essere configurato nel Pannello di controllo di Skype for Business Server.
   
-La distribuzione di uno o più criteri PIN per utente è facoltativa. Puoi anche distribuire solo criteri PIN a livello globale o a livello di sito. Se si distribuiscono i criteri per utente, è necessario assegnarli in modo esplicito agli utenti, ai gruppi o agli oggetti contatto. Le autorizzazioni e i diritti utente relativi all'uso dei PIN per le conferenze telefoniche con accesso esterno vengono automaticamente definiti nei criteri PIN a livello globale quando non vengono assegnati criteri specifici a livello di sito o per utente.
+La distribuzione di uno o più criteri PIN per utente è facoltativa. Puoi anche distribuire solo un criterio PIN a livello globale o un criterio PIN a livello di sito. Se si distribuiscono i criteri per utente, è necessario assegnarli in modo esplicito agli utenti, ai gruppi o agli oggetti contatto. Le autorizzazioni e i diritti utente relativi all'utilizzo dei PIN per le conferenze telefoniche con accesso esterno vengono automaticamente predefiniti rispetto a quelli definiti nel criterio PIN a livello globale quando non vengono assegnati criteri specifici a livello di sito o per utente.
   
 Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure descritte in questo argomento per assegnare il criterio che specifica i vincoli che il server deve imporre ai PIN creati e utilizzati da un utente specifico.
   
@@ -34,7 +34,7 @@ Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure desc
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -62,12 +62,12 @@ Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure desc
 6. Fare clic su un utente all'interno dei risultati della ricerca, fare clic su **Azione** e quindi fare clic su **Assegna criteri**.
     
     > [!TIP]
-    > Se si desidera applicare lo stesso criterio PIN per utente a più utenti, selezionare più utenti nei risultati della ricerca, fare clic su Azioni **e** quindi su **Assegna criteri.** 
+    > Se si desidera applicare lo stesso criterio PIN per utente a più utenti, selezionare più utenti nei risultati della ricerca, fare clic su **Azioni** e quindi su **Assegna criteri.** 
   
-7. In **Assegna criteri,** in **Criteri PIN,** eseguire una delle operazioni seguenti:
+7. In **Assegna criteri,** in **Criteri PIN** eseguire una delle operazioni seguenti:
     
     > [!NOTE]
-    > Poiché sono disponibili più criteri che  è possibile configurare utilizzando la finestra di dialogo Assegna criteri, è selezionata per impostazione predefinita per ogni **\<Keep as is\>** criterio nella finestra di dialogo. Per continuare a utilizzare i criteri assegnati in precedenza all'utente, non modificare l'impostazione.
+    > Poiché è possibile configurare più criteri  utilizzando la finestra di dialogo Assegna criteri, è selezionata per impostazione predefinita per ogni **\<Keep as is\>** criterio della finestra di dialogo. Per continuare a utilizzare i criteri assegnati in precedenza all'utente, non modificare l'impostazione.
   
    - Consenti a Skype for Business Server di scegliere automaticamente il criterio a livello globale o, se definito, il criterio a livello di sito.
     
@@ -78,9 +78,9 @@ Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure desc
   
 8. Al termine, fare clic su **OK**.
     
-## <a name="assigning-a-per-user-pin-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un Per-User del PIN tramite Windows PowerShell cmdlet
+## <a name="assigning-a-per-user-pin-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio PIN Per-User tramite Windows PowerShell cmdlet
 
-È possibile assegnare criteri PIN per utente utilizzando Windows PowerShell e il cmdlet **Grant-CsPinPolicy.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile assegnare criteri PIN per utente utilizzando Windows PowerShell e il cmdlet **Grant-CsPinPolicy.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo di blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-assign-a-per-user-pin-policy-to-a-single-user"></a>Per assegnare un criterio PIN per utente a un singolo utente
 
@@ -92,7 +92,7 @@ Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure desc
 
 ### <a name="to-assign-a-per-user-pin-policy-to-multiple-users"></a>Per assegnare un criterio PIN per utente a più utenti
 
-- Il comando seguente assegna il criterio PIN per utente RedmondUsersPinPolicy a tutti gli utenti che lavorano nella città di Redmond. Per informazioni dettagliate sul parametro LdapFilter utilizzato in questo comando, vedere [Get-CsUser.](https://docs.microsoft.com/powershell/module/skype/get-csuser?view=skype-ps)
+- Il comando seguente assegna il criterio PIN per utente RedmondUsersPinPolicy a tutti gli utenti che lavorano nella città di Redmond. Per informazioni dettagliate sul parametro LdapFilter utilizzato in questo comando, vedere [Get-CsUser](/powershell/module/skype/get-csuser?view=skype-ps).
     
   ```PowerShell
   Get-CsUser -LdapFilter "l=Redmond" | Grant-CsPinPolicy -PolicyName "RedmondUsersPinPolicy"
@@ -106,7 +106,7 @@ Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure desc
   Grant-CsPinPolicy -Identity "Ken Myer" -PolicyName $Null
   ```
 
-Per informazioni dettagliate, [vedere Grant-CsPinPolicy.](https://docs.microsoft.com/powershell/module/skype/grant-cspinpolicy?view=skype-ps)
+Per informazioni dettagliate, [vedere Grant-CsPinPolicy](/powershell/module/skype/grant-cspinpolicy?view=skype-ps).
   
 ## <a name="see-also"></a>Vedere anche
 

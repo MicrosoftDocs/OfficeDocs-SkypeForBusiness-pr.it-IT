@@ -19,26 +19,26 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f13cdd1d62a31178f7aed922b3bc55b87cd59db
-ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
+ms.openlocfilehash: 320accf1e0588024e72d69dcbb4af45c0a6765eb
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701234"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098182"
 ---
 # <a name="azure-sentinel-and-microsoft-teams"></a>Azure Sentinel e Microsoft Teams
 
 Teams riveste un ruolo centrale sia nella comunicazione che nella condivisione di dati nel cloud di Microsoft 365. Poiché il servizio Teams è in contatto con così tante tecnologie sottostanti nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda la *ricerca nei log*, ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
 
 > [!NOTE]
-> Per un ripasso su Azure Sentinel, vedere [questo articolo](https://docs.microsoft.com/azure/sentinel/overview).
+> Per un ripasso su Azure Sentinel, vedere [questo articolo](/azure/sentinel/overview).
 
 ## <a name="sentinel-and-microsoft-teams-activity-logs"></a>Sentinel e i log attività di Microsoft Teams
 
 Questo articolo è incentrato sulla raccolta dei log attività di Teams in Azure Sentinel. Oltre a consentire agli amministratori di gestire la sicurezza in un'unica interfaccia, inclusi dispositivi di terze parti selezionati, Microsoft Threat Protection e altri carichi di lavoro di Microsoft 365, le cartelle di lavoro e i runbook di Sentinel consentono di rendere il monitoraggio della sicurezza sistematico. Un buon primo passo in questo processo è la raccolta dei log necessari per l'analisi.
 
 > [!NOTE]
-> È possibile visualizzare più abbonamenti a Microsoft 365 nella stessa istanza di Azure Sentinel. Questo consentirà il [monitoraggio in tempo reale](https://docs.microsoft.com/azure/sentinel/livestream) e la ricerca di minacce nei file di log cronologici. Gli amministratori potranno svolgere le ricerche usando [query tra risorse](https://docs.microsoft.com/azure/azure-monitor/log-query/cross-workspace-query), ovvero all'interno di un unico gruppo di risorse, tra gruppi di risorse o in un altro abbonamento.
+> È possibile visualizzare più abbonamenti a Microsoft 365 nella stessa istanza di Azure Sentinel. Questo consentirà il [monitoraggio in tempo reale](/azure/sentinel/livestream) e la ricerca di minacce nei file di log cronologici. Gli amministratori potranno svolgere le ricerche usando [query tra risorse](/azure/azure-monitor/log-query/cross-workspace-query), ovvero all'interno di un unico gruppo di risorse, tra gruppi di risorse o in un altro abbonamento.
 
 ## <a name="step-1-collect-teams-logs"></a>Passaggio 1: Raccogliere i log di Teams
 
@@ -50,7 +50,7 @@ Questa sezione include tre parti:
 
 ### <a name="enable-audit-logs-in-m365"></a>Abilitare i log di controllo in Microsoft 365
 
-Poiché Teams registra le attività tramite Microsoft 365, i log di controllo non vengono raccolti per impostazione predefinita. Attivare questa funzionalità seguendo [questi passaggi](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&viewFallbackFrom=o365-worldwide%C2%A0). I dati di Teams vengono raccolti nel log di controllo di Microsoft 365 in *Audit.General*.
+Poiché Teams registra le attività tramite Microsoft 365, i log di controllo non vengono raccolti per impostazione predefinita. Attivare questa funzionalità seguendo [questi passaggi](/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&viewFallbackFrom=o365-worldwide%c2%a0). I dati di Teams vengono raccolti nel log di controllo di Microsoft 365 in *Audit.General*.
 
 ### <a name="register-an-app-in-microsoft-azure-for-log-collection"></a>Registrare un'app in Microsoft Azure per la raccolta di log
 
@@ -201,7 +201,7 @@ TeamsData
 ```
 
 > [!TIP]
-> Per altre informazioni sui tipi di accesso esterno e guest in Teams, vedere [questo articolo](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations)o la sezione *Tipi di partecipante* nella [Guida alla sicurezza di Teams](https://docs.microsoft.com/microsoftteams/teams-security-guide).
+> Per altre informazioni sui tipi di accesso esterno e guest in Teams, vedere [questo articolo](./communicate-with-users-from-other-organizations.md)o la sezione *Tipi di partecipante* nella [Guida alla sicurezza di Teams](./teams-security-guide.md).
 
 #### <a name="who-recently-joined--whose-role-changed"></a>Chi si è unito di recente/chi ha cambiato ruolo
 
@@ -437,8 +437,8 @@ SigninLogs
 
 **Grazie per la collaborazione sui contenuti a Pete Bryan, Nicholas DiCola e Matthew Lowe.** Pete Bryan e i suoi collaboratori continueranno a sviluppare query di rilevamento e ricerca per Teams, consultare questo repository [GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/TeamsLogs) per gli aggiornamenti.  Controllare la disponibilità di aggiornamenti per il [parser](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Teams_parser.txt) e l'[app per la logica](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/Get-O365Data) usati in questo articolo. Si può anche entrare a far parte della [community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/wiki) e collaborare. Grazie! Buona caccia alle minacce.
 
-[Registrazione dell'applicazione in Azure AD](https://docs.microsoft.com/skype-sdk/ucwa/registeringyourapplicationinazuread%C2%A0%20%20%C2%A0)
+[Registrazione dell'applicazione in Azure AD](/skype-sdk/ucwa/registeringyourapplicationinazuread%C2%A0%20%20%C2%A0)
 
-[Abilitare o disabilitare la ricerca nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&viewFallbackFrom=o365-worldwide%C2%A0)
+[Abilitare o disabilitare la ricerca nel log di controllo](/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&viewFallbackFrom=o365-worldwide%c2%a0)
 
-[Che cos'è Azure Sentinel?](https://docs.microsoft.com/azure/sentinel/overview)
+[Che cos'è Azure Sentinel?](/azure/sentinel/overview)

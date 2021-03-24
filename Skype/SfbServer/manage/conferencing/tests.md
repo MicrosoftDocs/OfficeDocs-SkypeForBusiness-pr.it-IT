@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: f4ccbfd4-6075-466f-b459-20561318803d
 description: 'Riepilogo: informazioni su come testare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 214ec05c49072825e6a8744cb92db66d864e3d34
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: be1cf5bba5a5bec2076f78880343582be19eda70
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49827936"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51096732"
 ---
 # <a name="test-dial-in-conferencing-in-skype-for-business-server"></a>Testare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
@@ -39,9 +39,9 @@ Come verifica finale della configurazione delle conferenze telefoniche con acces
 
     Questo cmdlet restituisce tutti i dial plan con un'area di conferenza telefonica con accesso esterno non utilizzata da alcun numero di accesso.
     
-Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber.](https://docs.microsoft.com/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps)
+Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps).
   
-## <a name="find-access-numbers-without-assigned-regions"></a>Trovare i numeri di accesso senza aree assegnate
+## <a name="find-access-numbers-without-assigned-regions"></a>Trovare numeri di accesso senza aree assegnate
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
@@ -55,7 +55,7 @@ Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber.](https
 
     Questo cmdlet restituisce tutti i numeri di accesso per conferenze telefoniche con accesso esterno non associati ad alcuna area.
     
-Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber.](https://docs.microsoft.com/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps)
+Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber](/powershell/module/skype/get-csdialinconferencingaccessnumber?view=skype-ps).
   
 ## <a name="test-webpage-and-access-numbers"></a>Testare la pagina Web e i numeri di accesso
 
@@ -82,6 +82,4 @@ Per verificare che la pagina Web Impostazioni conferenza telefonica con accesso 
 
     Nel rapporto risultante viene mostrato l'esito positivo o negativo, insieme a specifiche informazioni di diagnostica. Il flag -Verbose fornisce informazioni più dettagliate sul numero di numeri di accesso trovati e sui relativi dettagli.
     
-Per ulteriori informazioni, vedere [Test-CsDialInConferencing](https://docs.microsoft.com/powershell/module/skype/test-csdialinconferencing?view=skype-ps).
-  
-
+Per ulteriori informazioni, vedere [Test-CsDialInConferencing](/powershell/module/skype/test-csdialinconferencing?view=skype-ps).

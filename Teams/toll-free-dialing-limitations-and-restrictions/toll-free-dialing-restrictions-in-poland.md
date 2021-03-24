@@ -1,5 +1,5 @@
 ---
-title: Limitazioni per la composizione dei numeri verde in Polonia
+title: Restrizioni di composizione a numero verde in Polonia
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -23,27 +23,27 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla composizione di numeri gratuiti in Polonia, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: 7e467fc5b62b94c31a3e3859c94520c1a23982cd
-ms.sourcegitcommit: cddaacf1e8dbcdfd3f94deee7057c89cee0e5699
+description: Informazioni sulla composizione di numeri verde in Polonia, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
+ms.openlocfilehash: b9a9e64044fdf012de5ec96e157863a5d7540518
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/03/2020
-ms.locfileid: "43140305"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51097822"
 ---
-# <a name="toll-free-dialing-restrictions-in-poland"></a>Limitazioni per la composizione dei numeri verde in Polonia
+# <a name="toll-free-dialing-restrictions-in-poland"></a>Restrizioni di composizione a numero verde in Polonia
 
-[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o scopri di più sulle limitazioni e restrizioni di composizione dei numeri verde.
+[Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o altre informazioni sulle limitazioni e le restrizioni di composizione a numero verde.
 
 
 |**Dettagli**|**Descrizione**|
 |:-----|:-----|
-|Sono disponibili le chiamate a numero verde?  <br/> |Sì  <br/> |
+|Sono disponibili chiamate a numero verde?  <br/> |Sì  <br/> |
 |Formati di composizione  <br/> |00 800 XXX XX XX  <br/> |
 |Codice ISO del paese/area geografica  <br/> |PL  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
-|Disponibilità di linee cablate/fisse  <br/> |Sì  <br/> |
+|Disponibilità linea cablata/fissa  <br/> |Sì  <br/> |
 |Disponibilità rete mobile  <br/> |Sì  <br/> |
 |Commenti, restrizioni e problemi di accesso  <br/> |Accesso da mobile: tariffa a tempo.  <br/> |
    
@@ -51,7 +51,6 @@ ms.locfileid: "43140305"
 
 [Restrizioni e limitazioni per le chiamate verso numeri verdi](../toll-free-dialing-limitations-and-restrictions.md)
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md)
 
   
- 
