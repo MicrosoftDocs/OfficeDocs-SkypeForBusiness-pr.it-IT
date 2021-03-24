@@ -15,18 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7c1d072e-a891-48a9-81c0-3696e372f222
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 7fd54daec0efc073e52a55782b10357f76484f14
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: a8047318619c15aaed3c82eaf23761f75b02cc0b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804946"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51095750"
 ---
-# <a name="bandwidth-policy-profile-create-new-or-edit-existing"></a><span data-ttu-id="cdee0-104">Profilo criteri larghezza di banda: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="cdee0-104">Bandwidth Policy Profile: Create New or Edit Existing</span></span>
+# <a name="bandwidth-policy-profile-create-new-or-edit-existing"></a><span data-ttu-id="5ef65-104">Profilo criteri larghezza di banda: crearne uno nuovo o modificarne uno esistente</span><span class="sxs-lookup"><span data-stu-id="5ef65-104">Bandwidth Policy Profile: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="cdee0-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="cdee0-105">What do you want to do?</span></span> <span data-ttu-id="cdee0-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="cdee0-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="5ef65-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="5ef65-105">What do you want to do?</span></span> <span data-ttu-id="5ef65-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="5ef65-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="cdee0-107">Configurazione del profilo dei criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="cdee0-107">Configuring Bandwidth Policy Profile</span></span>](https://technet.microsoft.com/library/08a2e18f-9b0d-4a2f-aa14-13bbf79ec745.aspx)
+- [<span data-ttu-id="5ef65-107">Configurazione del profilo dei criteri di larghezza di banda</span><span class="sxs-lookup"><span data-stu-id="5ef65-107">Configuring Bandwidth Policy Profile</span></span>](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-bandwidth-policy-profiles)
 
-<span data-ttu-id="cdee0-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="cdee0-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
-
+<span data-ttu-id="5ef65-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="5ef65-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
