@@ -18,42 +18,42 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: Skype for Business online consente di creare criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, in cui è possibile avere più combinazioni, esistono tre criteri di accesso esterno predefiniti che possono coprire la maggior parte degli scenari.
-ms.openlocfilehash: 22477a54e0c709aa1c01bcfbd6c3bd6aacbb02e0
-ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
+description: Skype for Business online consente di creare criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, in cui è possibile avere più combinazioni, sono disponibili tre criteri di accesso esterno predefiniti che possono coprire la maggior parte degli scenari.
+ms.openlocfilehash: 3e5e8cf1c464b1011a49b06b2d1958246d332c91
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50569132"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100612"
 ---
 # <a name="create-custom-external-access-policies"></a>Creare criteri di accesso esterno personalizzato
 
-Skype for Business online consente di creare criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, in cui è possibile avere più combinazioni, esistono tre criteri di accesso esterno predefiniti che possono coprire la maggior parte degli scenari. Ecco come:
+Skype for Business online consente di creare criteri di accesso esterno aggiuntivi. A differenza dei criteri client o di conferenza, in cui è possibile avere più combinazioni, sono disponibili tre criteri di accesso esterno predefiniti che possono coprire la maggior parte degli scenari. Di seguito sono seguenti:
   
-- Nessun accesso federato o consumer Skype (_Tag:NoFederationAndPIC_ )
+- Nessun accesso federato o skype consumer (_Tag:NoFederationAndPIC_ )
     
 - Solo accesso federato (_Tag:FederationOnly_ )
     
 - Accesso federato e consumer (_FederationAndPICDefault_)
     
-I criteri esterni personalizzati consentono di creare altri criteri non coperti dalle impostazioni precedenti. Quando sono stati creati i criteri, era necessario impostare tutti i parametri obbligatori e non era possibile modificarli in un secondo momento. La creazione di nuovi criteri personalizzati ti consente di controllare funzionalità come l'accesso consumer di Skype o un criterio per disabilitare l'audio/video nel cloud pubblico, che non era coperto da impostazioni predefinite. I criteri di accesso esterno personalizzati seguono la stessa sintassi dei criteri client, mobilità e conferenza. Altre informazioni su queste impostazioni sono [disponibili qui.](https://technet.microsoft.com/library/mt228132.aspx)
+I criteri esterni personalizzati consentono di creare altri criteri non coperti dalle impostazioni precedenti. Quando il criterio è stato creato, è necessario impostare tutti i parametri obbligatori e non è possibile modificarli in un secondo momento. La creazione di nuovi criteri personalizzati consente di controllare funzionalità come l'accesso degli utenti Skype o un criterio per disabilitare l'audio/video nel cloud pubblico, che non è stato coperto da impostazioni predefinite. I criteri di accesso esterno personalizzati seguono la stessa sintassi dei criteri client, dispositivi mobili e conferenza. Per altre informazioni su queste impostazioni, [fare clic qui.](/previous-versions//mt228132(v=technet.10))
   
-A tale scopo, l'utente deve utilizzare una versione supportata dell'app Skype for Business 2016 A scelta che la supporta. È richiesta la seguente versione minima del client Skype for Business 2016 A scelta:
+Per farlo funzionare, l'utente deve usare una versione supportata dell'app Skype for Business 2016 a scelta che la supporta. È necessaria la versione minima seguente del client Skype for Business 2016 A scelta:
   
 |**Tipo**|**Data di rilascio**|**Versione**|**Build**|
 |:-----|:-----|:-----|:-----|
-|First Release per Current Channel  <br/> |11/17/2016  <br/> |16.0.7571.2006  <br/> |Versione 1611 (build 7571.2006)  <br/> |
-|Current Channel  <br/> |12/6/2016  <br/> |16.0.7571.2072  <br/> |Versione 1611 (build 7571.2072)  <br/> |
-|Deferred Channel  <br/> |2/22/2017  <br/> |16.0.7369.2118  <br/> |Versione 1609 (build 7369.2118)  <br/> |
+|First Release per Current Channel  <br/> |11/17/2016  <br/> |16.0.7571.2006  <br/> |Versione 1611 (Build 7571.2006)  <br/> |
+|Canale corrente  <br/> |12/6/2016  <br/> |16.0.7571.2072  <br/> |Versione 1611 (Build 7571.2072)  <br/> |
+|Deferred Channel  <br/> |2/22/2017  <br/> |16.0.7369.2118  <br/> |Versione 1609 (Build 7369.2118)  <br/> |
    
 > [!CAUTION]
-> Gli utenti che utilizzano versioni precedenti delle app Windows o dei client Mac di Skype for Business potranno comunque trasferire i file. 
+> Gli utenti che usano versioni precedenti delle app Skype for Business per Windows o i client Mac saranno comunque in grado di trasferire i file. 
   
-## <a name="start-windows-powershell"></a>Iniziare Windows PowerShell
+## <a name="start-windows-powershell"></a>Avviare Windows PowerShell
 
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte del più recente modulo PowerShell di Teams. Se si usa la versione pubblica più recente di Teams PowerShell, non è necessario installare Skype for Business Online Connector.
-1. Installare il [modulo Teams di PowerShell.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
+> Skype for Business Online Connector fa attualmente parte dell'ultimo modulo di PowerShell di Teams. Se si usa l'ultima versione pubblica di Teams PowerShell, non è necessario installare Skype for Business Online Connector.
+1. Installare il [modulo di PowerShell di Teams.](/microsoftteams/teams-powershell-install)
     
 2. Aprire un Windows PowerShell comando ed eseguire i comandi seguenti: 
  ```powershell
@@ -64,7 +64,7 @@ A tale scopo, l'utente deve utilizzare una versione supportata dell'app Skype fo
    Connect-MicrosoftTeams -Credential $credential
    ```
    
-   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connettersi a tutti i servizi di [Microsoft 365 o Office 365 in](https://technet.microsoft.com/library/dn568015.aspx) un'unica finestra di Windows PowerShell oppure configurare il computer per [Windows PowerShell.](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
+   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connettersi a tutti i servizi [di Microsoft 365 o Office 365 in](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) un'unica finestra di Windows PowerShell o Configurare il [computer](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)per Windows PowerShell .
    
 ## <a name="create-a-custom-external-access-policy-for-a-user"></a>Creare criteri di accesso esterno personalizzati per un utente
 
@@ -80,21 +80,21 @@ New-CsExternalAccessPolicy -Identity BlockSkypeVideo -EnablePublicCloudAccess $T
 Grant-CsExternalAccessPolicy -PolicyName BlockSkypeVideo -Identity amosm@contoso.com
 ```
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
-  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows PowerShell e Skype for Business Online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
-  - [Perché occorre Windows PowerShell per gestire Office 365 o Microsoft 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché occorre Windows PowerShell per gestire Office 365 o Microsoft 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
-- Windows PowerShell offre molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
-  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-  - [Uso di Windows PowerShell per gestire Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [Uso di Windows PowerShell per gestire Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Bloccare i trasferimenti di file punto a punto](block-point-to-point-file-transfers.md)
@@ -104,4 +104,3 @@ Grant-CsExternalAccessPolicy -PolicyName BlockSkypeVideo -Identity amosm@contoso
 [Configurare i criteri di conferenza nell'organizzazione](set-up-conferencing-policies-for-your-organization.md)
 
   
- 

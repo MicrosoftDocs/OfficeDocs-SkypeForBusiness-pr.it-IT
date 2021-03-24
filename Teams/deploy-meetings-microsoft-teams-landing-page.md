@@ -20,12 +20,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 48ec728921f545f4e8c383b16a9bc4e82c22b363
-ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
+ms.openlocfilehash: bae221b50ef3a033271b5532f780f95f56a44a24
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49918682"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101272"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 
@@ -69,7 +69,7 @@ Per estendere le riunioni all'intera organizzazione, occorre verificare che tutt
 
 | Chiedersi | Azione |
 |--------------|--------|
-|La rete è pronta per la distribuzione delle riunioni di Teams? | Per verificare che la rete sia pronta, vedere:<ul><li>[Preparare la rete dell'organizzazione per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/prepare-network)</li><li>[URL e intervalli di indirizzi IP](https://docs.microsoft.com/MicrosoftTeams/office-365-urls-ip-address-ranges)</li></ul> |
+|La rete è pronta per la distribuzione delle riunioni di Teams? | Per verificare che la rete sia pronta, vedere:<ul><li>[Preparare la rete dell'organizzazione per Microsoft Teams](./prepare-network.md)</li><li>[URL e intervalli di indirizzi IP](./office-365-urls-ip-address-ranges.md)</li></ul> |
 |||
 
 ## <a name="core-deployment-decisions"></a>Decisioni chiave per la distribuzione
@@ -83,7 +83,7 @@ Teams include un set di ruoli di amministratore personalizzati che è possibile 
 | Chiedersi | Azione |
 |--------------|--------|
 |A chi sarà assegnato il ruolo di amministratore delle comunicazioni di Teams?|Per altre informazioni sui ruoli di amministratore di Teams, vedere [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md).|
-|A chi sarà assegnato il ruolo di tecnico del supporto delle comunicazioni di Teams?|Per assegnare i ruoli amministrativi, vedere [Assegnazione di ruoli di amministratore e senza privilegi di amministratore agli utenti con Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).|
+|A chi sarà assegnato il ruolo di tecnico del supporto delle comunicazioni di Teams?|Per assegnare i ruoli amministrativi, vedere [Assegnazione di ruoli di amministratore e senza privilegi di amministratore agli utenti con Active Directory](/azure/active-directory/fundamentals/active-directory-users-assign-role-azure-portal).|
 |A chi sarà assegnato il ruolo di specialista del supporto delle comunicazioni di Teams?||
 |||
 
@@ -119,7 +119,7 @@ Per un'esperienza di riunione ottimale in Teams è consigliabile usare dispositi
 | Chiedersi | Azione |
 |--------------|--------|
 |Si acquisteranno dispositivi personali per gli utenti? |Leggere [Gestire i dispositivi in Teams](devices/device-management.md). |
-|Si acquisteranno e distribuiranno sistemi per videoconferenza per le sale riunioni?|Vedere [Soluzioni e dispositivi per sala riunioni](https://docs.microsoft.com/skypeforbusiness/certification/devices-meeting-rooms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json).|
+|Si acquisteranno e distribuiranno sistemi per videoconferenza per le sale riunioni?|Vedere [Soluzioni e dispositivi per sala riunioni](/skypeforbusiness/certification/devices-meeting-rooms?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json).|
 |||
 
 ### <a name="reporting"></a>Reporting
@@ -181,7 +181,7 @@ Per le organizzazioni con molte sale riunioni può essere utile adottare un appr
 
 | Chiedersi | Azione |
 |--------------|--------|
-| Cosa occorre fare per implementare sistemi per videoconferenza?|Vedere gli articoli sulla [pianificazione di Microsoft Teams Rooms](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/clients-and-devices/skype-room-systems-v2-0?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json).|
+| Cosa occorre fare per implementare sistemi per videoconferenza?|Vedere gli articoli sulla [pianificazione di Microsoft Teams Rooms](/skypeforbusiness/plan-your-deployment/clients-and-devices/skype-room-systems-v2-0?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fMicrosoftTeams%2ftoc.json).|
 |||
 
 ### <a name="cloud-video-interop"></a>Interoperabilità video sul cloud

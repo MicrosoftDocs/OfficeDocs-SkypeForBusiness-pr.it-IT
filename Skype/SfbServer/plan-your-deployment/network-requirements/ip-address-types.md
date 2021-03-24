@@ -16,20 +16,20 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 17e756c0-6652-4cd5-b185-4b25929e3a42
 description: 'Riepilogo: esaminare le considerazioni sul tipo di indirizzo IP riportate di seguito prima di implementare Skype for Business Server.'
-ms.openlocfilehash: d5e50b8d3a964bb4e4dcbc502527e5249af3a1e9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ba10dd223e7e099d27e31bddce478603f50e49a7
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49825257"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101252"
 ---
 # <a name="configure-ip-address-types-in-skype-for-business"></a>Configurare i tipi di indirizzi IP in Skype for Business
 
-**Riepilogo:** Leggere le considerazioni sul tipo di indirizzo IP riportate di seguito prima di implementare Skype for Business Server.
+**Riepilogo:** Prima di implementare Skype for Business Server, leggere le considerazioni sul tipo di indirizzo IP riportate di seguito.
 
 I tipi di indirizzi IP vengono distribuiti utilizzando le impostazioni della topologia configurate in Generatore di topologie. In questa sezione viene descritto come distribuire tipi di indirizzi IP in Front End Server, Mediation Server e server perimetrali.
 
-## <a name="deploy-ip-address-types-on-a-front-end-server"></a>Distribuire i tipi di indirizzi IP in un Front End Server
+## <a name="deploy-ip-address-types-on-a-front-end-server"></a>Distribuire tipi di indirizzi IP in un Front End Server
 
 Utilizzando Generatore di topologie, eseguire i passaggi della procedura seguente per distribuire i tipi di indirizzi IP in un Front End Server.
 
@@ -53,15 +53,15 @@ Utilizzando Generatore di topologie, eseguire i passaggi della procedura seguent
    - **Indirizzo IP PSTN**. Definire un indirizzo IP PSTN quando un Mediation Server è collocato nel Front End Server. Questo indirizzo deve corrispondere al formato del tipo di indirizzo selezionato.
 
 > [!NOTE]
-> L'installazione di schede di interfaccia di rete aggiuntive per supportare la configurazione degli indirizzi IP PSTN (o per qualsiasi altro motivo) nei Front End Server non è supportata. Per ulteriori informazioni sulle configurazioni NIC supportate per Skype for Business Server, vedere [Piattaforme hardware server per Lync Server 2013.](https://technet.microsoft.com/library/c964c1c0-0153-472b-88ad-a38866e0df0c.aspx)
+> L'installazione di schede di interfaccia di rete aggiuntive (NIC) per supportare la configurazione degli indirizzi IP PSTN (o per qualsiasi altro motivo) nei Front End Server non è supportata. Per ulteriori informazioni sulle configurazioni NIC supportate per Skype for Business Server, vedere [Server hardware platforms for Lync Server 2013.](/previous-versions/office/lync-server-2013/lync-server-2013-server-hardware-platforms)
 
-## <a name="deploy-ip-address-types-on-a-mediation-server"></a>Distribuire i tipi di indirizzi IP in un Mediation Server
+## <a name="deploy-ip-address-types-on-a-mediation-server"></a>Distribuire tipi di indirizzi IP in un Mediation Server
 
 Utilizzando Generatore di topologie, eseguire i passaggi della procedura seguente per distribuire i tipi di indirizzi IP in un Mediation Server.
 
 ### <a name="to-deploy-ip-address-types-on-a-mediation-server"></a>Per distribuire i tipi di indirizzi IP in un Mediation Server
 
-- In Generatore di topologie, in **Pool Mediation** Server, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **Modifica proprietà.** In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.
+- In Generatore di topologie, in **Pool Mediation Server,** fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi **scegliere Modifica proprietà**. In alternativa, selezionare il server e quindi scegliere **Modifica proprietà** dal menu **Azione**.
 
 - Nella finestra di dialogo **Modifica proprietà** selezionare il tipo di indirizzo IP che si desidera configurare. Per una configurazione con dual stack, selezionare **Abilita IPv4** e **Abilita IPv6**, come illustrato nella figura seguente.
 
@@ -78,21 +78,21 @@ Utilizzando Generatore di topologie, eseguire i passaggi della procedura seguent
 
   - **Indirizzo IP PSTN**. Definire un indirizzo IP PSTN quando un Mediation Server è collocato nel Front End Server. Questo indirizzo deve corrispondere al formato del tipo di indirizzo selezionato.
 > [!IMPORTANT]
-> Sono supportate solo due schede di rete *in* Mediation Server dedicati. Se il ruolo Mediation Sserver è collocato nel Front End, le schede di rete doppie non sono supportate. 
+> Sono supportate solo due schede di rete *su* Mediation Server dedicati. Se il ruolo Mediation Sserver è collocato nel Front End, le schede di rete doppie non sono supportate. 
 
 > [!NOTE]
-> - Per ulteriori informazioni sulle configurazioni NIC supportate per Skype for Business Server 2015, vedere [Hardware per Skype for Business Server 2015](../requirements-for-your-environment/server-requirements.md#hardware-for-skype-for-business-server-2015)
-> - Per ulteriori informazioni sulle configurazioni NIC supportate per Skype for Business Server 2019, vedere [Hardware per Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md#hardware-for-skype-for-business-server-2019)
+> - Per ulteriori informazioni sulle configurazioni NIC supportate per Skype for Business Server 2015, vedere [Hardware for Skype for Business Server 2015](../requirements-for-your-environment/server-requirements.md#hardware-for-skype-for-business-server-2015)
+> - Per ulteriori informazioni sulle configurazioni NIC supportate per Skype for Business Server 2019, vedere [Hardware for Skype for Business Server 2019](../../../SfBServer2019/plan/system-requirements.md#hardware-for-skype-for-business-server-2019)
 
 
 
-## <a name="deploy-ip-address-types-on-an-edge-server"></a>Distribuire i tipi di indirizzi IP in un server perimetrale
+## <a name="deploy-ip-address-types-on-an-edge-server"></a>Distribuire tipi di indirizzi IP in un server perimetrale
 
 Utilizzando Generatore di topologie, eseguire la procedura seguente:
 
 ### <a name="to-deploy-ip-address-types-on-an-edge-server"></a>Per distribuire tipi di indirizzo IP su un server perimetrale
 
-1. In Generatore di topologie, in **Pool di** server perimetrali, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi scegliere **Modifica proprietà.** (Alternativamente, selezionare il server e fare clic su **Modifica proprietà** dal menu **Azione**.)
+1. In Generatore di topologie, in Pool di server perimetrali, fare clic con il pulsante destro del mouse sul server all'interno di un pool e quindi **scegliere Modifica proprietà**.  (Alternativamente, selezionare il server e fare clic su **Modifica proprietà** dal menu **Azione**.)
 
 2. Nella finestra **Modifica proprietà**, selezionare la configurazione dell'indirizzo IP che si desidera supportare.
 

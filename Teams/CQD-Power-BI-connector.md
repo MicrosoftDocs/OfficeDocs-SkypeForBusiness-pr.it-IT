@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare Power BI Connector per usare i modelli di query CQD (Call Quality Dashboard)
-ms.openlocfilehash: 188e030d4f1ef6eaff21bef83a09c22d29bb51c5
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 7af8da203eb6a69bf5db443444c0ca35eff9bb70
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875036"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101522"
 ---
 # <a name="install-power-bi-connector-to-use-cqd-query-templates"></a>Installare Power BI Connector per usare i modelli di query CQD
 
@@ -28,20 +28,20 @@ Prima di poter usare i modelli di query di Power BI (file PBIX) per Microsoft Te
 
 Leggere [Usare Power BI per analizzare i dati CQD per Teams](CQD-Power-BI-query-templates.md) per informazioni su questi modelli.
 
-Assicurarsi di avere il ruolo [di accesso CQD giusto](https://docs.microsoft.com/microsoftteams/turning-on-and-using-call-quality-dashboard#assign-roles-for-accessing-cqd) per accedere ai report di Power BI.
+Assicurarsi di avere il ruolo [di accesso CQD giusto](./turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd) per accedere ai report di Power BI.
 
 > [!NOTE]
 > Il connettore Power BI CQD supporta solo DirectQuery in Power BI. La modalità di importazione non è supportata. 
 
 ## <a name="installation"></a>Installazione
 
-Il processo per l'installazione di un connettore personalizzato e la modifica della sicurezza per abilitare l'uso del connettore è descritto in dettaglio nella documentazione [di Power BI.](https://docs.microsoft.com/power-bi/desktop-connector-extensibility) Per semplicità, ecco una rapida spiegazione:
+Il processo per l'installazione di un connettore personalizzato e la modifica della sicurezza per abilitare l'uso del connettore è descritto in dettaglio nella documentazione [di Power BI.](/power-bi/desktop-connector-extensibility) Per semplicità, ecco una rapida spiegazione:
 
 1. Verificare se nel computer è già presente una *\[ cartella Documenti Power BI Desktop \] \\ \\ Custom Connectors.* In caso contrario, creare questa cartella. <sup>1</sup>
 
 2. Scaricare il file del connettore *\* (un* file con estensione mez o *\* pqx)* e posizionarlo nella directory *Custom Connectors.*
 
-3. **Se il file del connettore è un file con estensione *\* mez,*** sarà necessario modificare le impostazioni di sicurezza come descritto nella documentazione relativa alla configurazione [personalizzata del connettore.](https://docs.microsoft.com/power-bi/desktop-connector-extensibility#data-extension-security)
+3. **Se il file del connettore è un file con estensione *\* mez,*** sarà necessario modificare le impostazioni di sicurezza come descritto nella documentazione relativa alla configurazione [personalizzata del connettore.](/power-bi/desktop-connector-extensibility#data-extension-security)
 
 Se viene rilasciata una nuova versione di power bi connector per Microsoft Teams, è sufficiente sostituire il vecchio file del connettore nella directory *Custom Connectors* con il nuovo file.
 
@@ -65,7 +65,7 @@ Per creare un report ed eseguire query, è prima necessario connettersi all'orig
 
 6. A questo punto, Power BI carica il modello di dati sul lato destro della finestra. La pagina rimarrà altrimenti vuota e non verrà caricata alcuna query per impostazione predefinita. Procedere alla **creazione di query** di seguito per creare una query e restituire dati.
 
-Se uno dei passaggi durante il processo di configurazione non è stato completamente chiaro, una spiegazione più dettagliata del processo è disponibile in Guida introduttiva: Connettersi ai dati [in Power BI Desktop.](https://docs.microsoft.com/power-bi/desktop-quickstart-connect-to-data)
+Se uno dei passaggi durante il processo di configurazione non è stato completamente chiaro, una spiegazione più dettagliata del processo è disponibile in Guida introduttiva: Connettersi ai dati [in Power BI Desktop.](/power-bi/desktop-quickstart-connect-to-data)
 
 ## <a name="building-queries"></a>Creazione di query
 
@@ -93,7 +93,7 @@ Al termine dell'installazione, nel riquadro Campi dovrebbero essere visualizzati
 
 ## <a name="creating-a-drillthrough-report"></a>Creazione di un report drill-through
 
-[Il drill-through in Power BI](https://docs.microsoft.com/power-bi/desktop-drillthrough) consente di creare report mirati che è possibile filtrare rapidamente usando i valori di altri report come contesto. Quando si sa come creare la prima query con il connettore CQD, la creazione di un drill-through è ancora più semplice.
+[Il drill-through in Power BI](/power-bi/desktop-drillthrough) consente di creare report mirati che è possibile filtrare rapidamente usando i valori di altri report come contesto. Quando si sa come creare la prima query con il connettore CQD, la creazione di un drill-through è ancora più semplice.
 
 1. Creare un'altra pagina per il report con lo stato attivo e quindi aggiungere le query a tale pagina.
 
@@ -171,8 +171,8 @@ Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel 
 
 Per altre informazioni, vedere gli articoli seguenti:
 
-- [Guida all'ottimizzazione per Power BI](https://docs.microsoft.com/power-bi/guidance/power-bi-optimization)
-- [Indicazioni sul modello DirectQuery](https://docs.microsoft.com/power-bi/guidance/directquery-model-guidance)
+- [Guida all'ottimizzazione per Power BI](/power-bi/guidance/power-bi-optimization)
+- [Indicazioni sul modello DirectQuery](/power-bi/guidance/directquery-model-guidance)
 
 ### <a name="i-find-that-i-routinely-run-into-the-10000-row-limit-when-running-queries-how-can-i-get-the-connector-to-return-more-than-10000-rows"></a>Quando si eseguono query, si verifica regolarmente il limite di 10.000 righe. Come si può fare in modo che il connettore restituisa più di 10.000 righe
 

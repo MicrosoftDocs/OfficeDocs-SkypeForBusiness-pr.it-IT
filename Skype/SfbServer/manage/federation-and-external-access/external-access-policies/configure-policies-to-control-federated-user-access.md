@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. '
-ms.openlocfilehash: 2b7976492fe4f789c2f3130fb51deaaef44af701
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6107615767d0360180baf9f22d5fddc6a5f8e565
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817306"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51099042"
 ---
 # <a name="configure-policies-to-control-federated-user-access-in-skype-for-business-server"></a>Configurare i criteri per controllare l'accesso degli utenti federati in Skype for Business Server
 
@@ -28,14 +28,14 @@ Quando si configurano criteri per supportare le comunicazioni con partner federa
 
 
 > [!NOTE]  
-> È possibile configurare criteri per il controllo dell'accesso degli utenti federati anche se non è stata abilitata la federazione per l'organizzazione. I criteri configurati, tuttavia, verranno applicati solo dopo aver abilitato la federazione per l'organizzazione. Per informazioni dettagliate sull'abilitazione della federazione, vedere [Abilitare o disabilitare l'accesso degli utenti remoti.](../access-edge/enable-or-disable-remote-user-access.md)  Inoltre, se si specifica un criterio utente per controllare l'accesso degli utenti federati, il criterio si applica solo agli utenti abilitati per Skype for Business Server e configurati per l'utilizzo del criterio.
+> È possibile configurare criteri per il controllo dell'accesso degli utenti federati anche se non è stata abilitata la federazione per l'organizzazione. I criteri configurati, tuttavia, verranno applicati solo dopo aver abilitato la federazione per l'organizzazione. Per informazioni dettagliate sull'abilitazione della federazione, vedere [Enable or disable remote user access](../access-edge/enable-or-disable-remote-user-access.md).  Inoltre, se si specifica un criterio utente per controllare l'accesso degli utenti federati, il criterio si applica solo agli utenti abilitati per Skype for Business Server e configurati per l'utilizzo del criterio.
 
 
 ## <a name="to-configure-a-policy-to-support-access-by-users-of-federated-domains"></a>Per configurare criteri per supportare l'accesso da parte di utenti di domini federati
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3.  Sulla barra di spostamento sinistra fare clic su **Accesso utente esterno** e quindi su **Criteri di accesso esterno**.
 
@@ -59,11 +59,11 @@ Quando si configurano criteri per supportare le comunicazioni con partner federa
 
 7.  Fare clic su **Commit**.
 
-Per consentire l'accesso degli utenti federati, è inoltre necessario abilitare il supporto per la federazione nell'organizzazione. Per informazioni dettagliate, vedere [Abilitare o disabilitare la federazione e la connettività per la messaggistica istantanea pubblica.](../access-edge/enable-or-disable-federation-and-public-im-connectivity.md)
+Per consentire l'accesso degli utenti federati, è inoltre necessario abilitare il supporto per la federazione nell'organizzazione. Per informazioni dettagliate, vedere [Abilitare o disabilitare la federazione e la connettività di messaggistica istantanea pubblica.](../access-edge/enable-or-disable-federation-and-public-im-connectivity.md)
 
-Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai quali si desidera consentire di collaborare con utenti federati. Per informazioni dettagliate, vedere [Assegnare un criterio di accesso utente esterno.](assign-an-external-user-access-policy.md)
+Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai quali si desidera consentire di collaborare con utenti federati. Per informazioni dettagliate, vedere [Assign an external user access policy](assign-an-external-user-access-policy.md).
 
-## <a name="to-configure-an-existing-policy-using-windows-powershell-to-support-access-by-users-of-federated-domains"></a>Per configurare un criterio esistente utilizzando Windows PowerShell supportare l'accesso da parte degli utenti di domini federati
+## <a name="to-configure-an-existing-policy-using-windows-powershell-to-support-access-by-users-of-federated-domains"></a>Per configurare un criterio esistente utilizzando Windows PowerShell per supportare l'accesso da parte degli utenti di domini federati
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
@@ -77,10 +77,10 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
        
 
     > [!TIP]  
-    > Il parametro "EnablePublicCloudAudioVideoAccess" non ha una selezione corrispondente nel Pannello di controllo di Skype for Business Server
+    > Il parametro "EnablePublicCloudAudioVideoAccess" non dispone di una selezione corrispondente nel Pannello di controllo di Skype for Business Server
 
 
-## <a name="to-create-a-new-policy-using-windows-powershell-to-support-access-by-users-of-federated-domains"></a>Per creare un nuovo criterio utilizzando Windows PowerShell supportare l'accesso da parte degli utenti di domini federati
+## <a name="to-create-a-new-policy-using-windows-powershell-to-support-access-by-users-of-federated-domains"></a>Per creare un nuovo criterio utilizzando Windows PowerShell per supportare l'accesso da parte degli utenti di domini federati
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
@@ -99,7 +99,7 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
     ```
 
 
-## <a name="to-delete-or-reset-a-policy-using-windows-powershell-to-support-access-by-users-of-federated-domains"></a>Per eliminare o reimpostare un criterio utilizzando Windows PowerShell supportare l'accesso da parte degli utenti di domini federati
+## <a name="to-delete-or-reset-a-policy-using-windows-powershell-to-support-access-by-users-of-federated-domains"></a>Per eliminare o reimpostare un criterio utilizzando Windows PowerShell per supportare l'accesso da parte degli utenti di domini federati
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
@@ -131,10 +131,8 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
  
 [Gestire i provider federati SIP per l'organizzazione](../sip-providers/manage-sip-federated-providers-for-your-organization.md)
 
-[Set-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Set-CsExternalAccessPolicy)  
-[New-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/New-CsExternalAccessPolicy)  
-[Get-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Get-CsExternalAccessPolicy)  
-[Remove-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Remove-CsExternalAccessPolicy)  
-[Grant-CsExternalAccessPolicy](https://docs.microsoft.com/powershell/module/skype/Grant-CsExternalAccessPolicy)  
-  
-
+[Set-CsExternalAccessPolicy](/powershell/module/skype/Set-CsExternalAccessPolicy)  
+[New-CsExternalAccessPolicy](/powershell/module/skype/New-CsExternalAccessPolicy)  
+[Get-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy)  
+[Remove-CsExternalAccessPolicy](/powershell/module/skype/Remove-CsExternalAccessPolicy)  
+[Grant-CsExternalAccessPolicy](/powershell/module/skype/Grant-CsExternalAccessPolicy)  

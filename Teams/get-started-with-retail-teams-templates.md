@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5f226b60bfc3a054166eb48596c505ccd7fa5ac9
-ms.sourcegitcommit: df1eca90090c29eaaf7fd79bd8cc84c556f12b1e
-ms.translationtype: HT
+ms.openlocfilehash: e0fecf419f6fc3ac0ef15097fe54571d85018587
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "48424636"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101202"
 ---
 # <a name="get-started-with-teams-templates-in-retail"></a>Introduzione ai modelli di Teams
 
@@ -34,7 +34,7 @@ I modelli di Teams includono definizioni predefinite delle strutture dei team pr
 
 In questo articolo verranno presentati i modelli di Teams e verrà consigliato come usarli.
 
-Questo articolo è destinato agli utenti responsabili della pianificazione, dell'implementazione e della gestione di più team nell'organizzazione di vendita al dettaglio. Il servizio Teams è già stato implementato nell'organizzazione. Se Teams non è ancora stato implementato, per iniziare, leggere [Come implementare Microsoft Teams](How-to-roll-out-teams.md).
+Questo articolo è destinato agli utenti responsabili della pianificazione, dell'implementazione e della gestione di più team nell'organizzazione di vendita al dettaglio. Il servizio Teams è già stato implementato nell'organizzazione. Se Teams non è ancora stato implementato, per iniziare, leggere [Come implementare Microsoft Teams](./deploy-overview.md).
 
 Per altre informazioni sui modelli di Teams in generale, vedere [Introduzione ai modelli di Teams](get-started-with-teams-templates.md).
 
@@ -68,7 +68,7 @@ Modi consigliati per personalizzare il modello Manager Collaboration per l'organ
 
 ## <a name="how-to-use-first-party-templates"></a>Come usare i modelli del produttore
 
-Per usare questi modelli, modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti.  Per altre informazioni su come implementare i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
+Per usare questi modelli, modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti.  Per altre informazioni su come implementare i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team](/graph/api/team-post?view=graph-rest-beta).
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella scheda Generale.

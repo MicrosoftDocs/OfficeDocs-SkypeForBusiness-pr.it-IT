@@ -14,15 +14,15 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b9771b53-e19a-4a12-bf01-24bae6f7e482
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile configurare gli archivi SQL Server di conformità che forniranno i database per la funzionalità di conformità del server Chat persistente o del server Chat persistente.
-ms.openlocfilehash: 146604ddbdcc35e6df511e40c5cae32482af4a70
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Configurare i criteri di SQL Server che forniranno i database per la funzionalità di conformità del server Chat persistente o del server Chat persistente.
+ms.openlocfilehash: 84d45fedcf7ed96ab0717432e6e6feef9e3959f6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807676"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100072"
 ---
 # <a name="add-persistent-chat-compliance-sql-server-store"></a>Aggiungere l'archivio SQL Server di conformità per Chat persistente
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. Le stesse funzionalità sono disponibili in Teams. Per altre informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here) Se è necessario usare Chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](/MicrosoftTeams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.

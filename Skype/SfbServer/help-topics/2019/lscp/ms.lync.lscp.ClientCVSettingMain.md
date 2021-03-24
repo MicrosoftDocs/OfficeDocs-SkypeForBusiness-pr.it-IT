@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: cb17314e-b89e-4821-8855-12f8fd2edc9b
 ROBOTS: NOINDEX, NOFOLLOW
 description: Oltre a specificare la versione dei client che si desidera supportare nell'ambiente, è possibile specificare un'azione predefinita per i client per i quali non sono già stati definiti criteri delle versioni. In questo modo, è possibile limitare le versioni client usate nell'ambiente e ciò può contribuire a tenere sotto controllo i costi associati al supporto di più versioni client.
-ms.openlocfilehash: d2d2a18928a31d136b52a90852836db93c01ffc4
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 69d8c15688e6afce2f1e92cebc20ad8fb6bc7464
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49812316"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100652"
 ---
 # <a name="client-version-configuration"></a>Configurazione versione client
 
@@ -30,7 +30,7 @@ Oltre a specificare la versione dei client che si desidera supportare nell'ambie
 
 Nella pagina **Configurazione versione client** è possibile eseguire le attività seguenti:
 
-- Modificare la configurazione predefinita **(globale)** della versione client.
+- Modificare la configurazione predefinita ( **Globale**) della versione client.
 
 - Creare una configurazione della versione client per un sito specifico.
 
@@ -45,15 +45,14 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Nuovo** È possibile creare una configurazione della versione client per un sito specifico.
 
-- **Modifica** È possibile modificare le opzioni di uno qualsiasi dei criteri versione client. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
+- **Modifica** È possibile modificare le opzioni di uno qualsiasi dei criteri delle versioni client. Usando questa voce, è possibile scegliere tra le opzioni seguenti:
 
-  - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per una configurazione della versione client.
+  - **Mostra dettagli** Questa opzione consente di aprire una finestra di dialogo in cui è possibile modificare le opzioni per la configurazione di una versione client.
 
   - **Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni delle versioni client nell'elenco.
 
-  - **Elimina** Questa opzione consente di eliminare tutte le configurazioni delle versioni client selezionate.
+  - **Elimina** Questa opzione consente di eliminare tutte le configurazioni di versione client selezionate.
 
-- **Aggiorna** È possibile aggiornare l'elenco delle configurazioni delle versioni client per verificare lo stato delle opzioni di tutte le configurazioni delle versioni client.
+- **Aggiorna** È possibile aggiornare l'elenco di configurazione delle versioni client per verificare lo stato delle opzioni di tutte le configurazioni delle versioni client.
 
-Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [Client Interoperability](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](https://technet.microsoft.com/library/548dd0f5-62fe-4c3f-8952-2b9fd4c5fff3.aspx) nella documentazione relativa alle operazioni.
-
+Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [Client Interoperability](/previous-versions/office/lync-server-2013/lync-server-2013-client-interoperability-in-lync-2013) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](/previous-versions/office/lync-server-2013/lync-server-2013-modify-the-default-action-for-clients-not-explicitly-supported-or-restricted) nella documentazione relativa alle operazioni.

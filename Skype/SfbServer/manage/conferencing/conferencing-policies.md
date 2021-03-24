@@ -12,20 +12,20 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 34ec5e41-6fe6-450b-81b0-0d17b9989839
 description: 'Riepilogo: informazioni su come gestire i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 3ad59f186ccc4bebdefae1a6bfefdf04e9bf6851
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 39855aac09b88852d0931c9b8fbdb8e2e9187c71
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835276"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51099102"
 ---
 # <a name="manage-conferencing-policies-in-skype-for-business-server"></a>Gestire i criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire i criteri di conferenza in Skype for Business Server.
   
-In questo argomento viene descritto come gestire i criteri di conferenza. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere Pianificare le conferenze [in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) e Distribuire le conferenze in Skype for Business [Server.](../../deploy/deploy-conferencing/deploy-conferencing.md)
+In questo argomento viene descritto come gestire i criteri di conferenza. Per ulteriori informazioni su come pianificare e distribuire le conferenze, vedere [Plan for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/conferencing.md) e Deploy conferencing in Skype for Business [Server.](../../deploy/deploy-conferencing/deploy-conferencing.md)
   
-I criteri di conferenza consentono di definire un'ampia gamma di opzioni di pianificazione e partecipazione, dalla possibilità o meno a una riunione di includere audio e video IP al numero massimo di persone che possono partecipare. È possibile utilizzare i criteri di conferenza per gestire la sicurezza, la larghezza di banda e gli aspetti legali delle riunioni.
+I criteri di conferenza consentono di definire un'ampia gamma di opzioni di pianificazione e partecipazione, che vanno dal fatto che una riunione possa includere audio e video IP al numero massimo di persone che possono partecipare. È possibile utilizzare i criteri di conferenza per gestire la sicurezza, la larghezza di banda e gli aspetti legali delle riunioni.
   
 È possibile definire un criterio di conferenza su tre livelli: ambito globale, ambito sito e ambito utente. Le impostazioni si applicano a un utente specifico partendo dall'ambito più ristretto fino all'ambito più ampio. Se si assegna un criterio a un utente, tali impostazioni hanno la precedenza. Se non si assegna un criterio utente, si applicano le impostazioni sito. Se non si applica alcun criterio utente o sito, le impostazioni predefinite vengono fornite dal criterio globale.
   
@@ -39,7 +39,7 @@ Per gestire i criteri di conferenza tramite il Pannello di controllo di Skype fo
     
 2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Criteri conferenza.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     
 ## <a name="manage-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Gestire i criteri di conferenza tramite Skype for Business Server Management Shell
 
@@ -49,10 +49,8 @@ Per gestire le riunioni tramite Skype for Business Server Management Shell, util
 
 |**Cmdlet**|**Descrizione**|
 |:-----|:-----|
-|[Get-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps) <br/> |Restituisce informazioni sui criteri conferenza configurati per l'utilizzo nell'organizzazione.  <br/> |
-|[Grant-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csconferencingpolicy?view=skype-ps) <br/> |Assegna un criterio di conferenza nell'ambito per utente.  <br/> |
-|[New-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csconferencingpolicy?view=skype-ps) <br/> |Crea un nuovo criterio relativo alle conferenze da utilizzare all'interno dell'organizzazione.  <br/> |
-|[Remove-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/remove-csconferencingpolicy?view=skype-ps) <br/> |Rimuove il criterio conferenza specificato.  <br/> |
-|[Set-CsConferencingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps) <br/> |Consente di modificare un criterio di conferenza.  <br/> |
-   
-
+|[Get-CsConferencingPolicy](/powershell/module/skype/get-csconferencingpolicy?view=skype-ps) <br/> |Restituisce informazioni sui criteri conferenza configurati per l'utilizzo nell'organizzazione.  <br/> |
+|[Grant-CsConferencingPolicy](/powershell/module/skype/grant-csconferencingpolicy?view=skype-ps) <br/> |Assegna un criterio di conferenza nell'ambito per utente.  <br/> |
+|[New-CsConferencingPolicy](/powershell/module/skype/new-csconferencingpolicy?view=skype-ps) <br/> |Crea un nuovo criterio relativo alle conferenze da utilizzare all'interno dell'organizzazione.  <br/> |
+|[Remove-CsConferencingPolicy](/powershell/module/skype/remove-csconferencingpolicy?view=skype-ps) <br/> |Rimuove il criterio conferenza specificato.  <br/> |
+|[Set-CsConferencingPolicy](/powershell/module/skype/set-csconferencingpolicy?view=skype-ps) <br/> |Consente di modificare un criterio di conferenza.  <br/> |

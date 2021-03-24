@@ -14,24 +14,24 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 515754ad-1344-42dc-8219-ee973de2e4c4
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base al SQL Server in cui vengono posizionati i database.
-ms.openlocfilehash: 4d7a6e4f67dd6b97c8f5f837589af7b096da50b5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e verrà distribuito e configurato automaticamente i file di database in base al SQL Server in cui vengono posizionati i database.
+ms.openlocfilehash: 160b42e510fc54b3f03375a0c86bc9f6bdf83f5f
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835716"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100052"
 ---
 # <a name="install-and-create-databases"></a>Installare e creare un database
 
-È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e distribuirà e configurerà automaticamente i file di database in base al SQL Server in cui vengono posizionati i database.
+È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e verrà distribuito e configurato automaticamente i file di database in base al SQL Server in cui vengono posizionati i database.
 
  **Selezionare i database da creare**: selezionare la casella di controllo di ogni database che si intende distribuire e configurare. Selezionare la casella di controllo relativa a tutti i database da distribuire.
 
 > [!CAUTION]
-> Il SQL Server deve essere già stato configurato per l'istanza (se presente) e le porte del firewall devono essere aperte per supportare l'istanza in cui si stanno distribuendo i database. Per informazioni dettagliate, vedere [Configure SQL Server](https://technet.microsoft.com/library/375e5cc4-e436-46dc-9b02-5063f35cdcc1.aspx)
+> Il SQL Server deve essere già stato configurato per l'istanza (se presente) e le porte del firewall devono essere aperte per supportare l'istanza in cui si distribuiscono i database. Per informazioni dettagliate, vedere [Configure SQL Server](/previous-versions/office/lync-server-2013/lync-server-2013-configure-sql-server-for-lync-server)
 
- **Avanzate:** fare clic sul SQL Server  e fare clic sul pulsante Avanzate per scegliere le opzioni per i percorsi dei file di database nella SQL Server. Per informazioni dettagliate sul posizionamento avanzato dei file di database, vedere [Database Installation Using Lync Server Management Shell](https://technet.microsoft.com/library/c90a6449-4dd5-4b18-b21c-ea2c2a64dc3c.aspx)
+ **Avanzate**: fare clic sul SQL Server  e fare clic sul pulsante Avanzate per scegliere le opzioni per i percorsi dei file di database nel SQL Server. Per informazioni dettagliate sul posizionamento avanzato dei file di database, vedere [Database Installation Using Lync Server Management Shell](/previous-versions/office/lync-server-2013/lync-server-2013-database-installation-using-lync-server-management-shell)
 
  **Indietro**: fare clic su questo pulsante per tornare alla schermata precedente. Il pulsante potrebbe non essere sempre disponibile, a seconda di come si è arrivati a questa finestra di dialogo.
 
@@ -40,5 +40,3 @@ ms.locfileid: "49835716"
  **Annulla**: fare clic su questo pulsante per uscire dalla configurazione e rimuovere le modifiche. Alcune, ma non tutte, le schermate di configurazione chiedono se di desidera uscire e annullare le modifiche. Se **si seleziona Sì,** la configurazione corrente verrà chiusa e verrà restituito a Generatore di topologie. Scegliere **No** per tornare alla finestra di dialogo di configurazione corrente e continuare la configurazione.
 
  **?**: fare clic sul pulsante **?** per visualizzare le informazioni della Guida associate alla finestra di dialogo di configurazione corrente.
-
-

@@ -21,54 +21,54 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.voice.dialplans.overview
 - Calling Plans
-description: "Informazioni sul tipo di piani per chiamate telefoniche (piani di chiamata PSTN) disponibili con Teams e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: adb5f46296423b6339c62029d27111345c2fd646
-ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+description: "Informazioni sul tipo di piani di chiamata (piani di chiamata PSTN) disponibili con Teams e su come sceglierne uno per l'organizzazione.  "
+ms.openlocfilehash: 86ec311a7abec9b9268555884db3ff8de7ee256b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50460816"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100982"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
 [] Un piano di chiamata è un insieme denominato di regole di normalizzazione che traducono i numeri di telefono composti da un singolo utente in un formato alternativo (in genere E.164) per l'autorizzazione delle chiamate e l'instradamento delle chiamate.
 
-Un piano di chiamata è costituito da una o più regole di normalizzazione che definiscono come i numeri di telefono espressi in vari formati vengono convertiti in un formato alternativo. La stessa stringa di composizione può essere interpretata e tradotta in modo diverso in piani di chiamata diversi, quindi a seconda del piano di chiamata assegnato a un determinato utente, lo stesso numero composto può essere tradotto e instradato in modo diverso. Possono essere disponibili al massimo 1.000 piani di chiamata tenant.
+Un piano di chiamata è costituito da una o più regole di normalizzazione che definiscono il modo in cui i numeri di telefono espressi in vari formati vengono convertiti in un formato alternativo. La stessa stringa di chiamata può essere interpretata e tradotta in modo diverso in piani di chiamata diversi, quindi, a seconda del piano di chiamata assegnato a un determinato utente, lo stesso numero composto può essere tradotto e instradato in modo diverso. Può essere presente un massimo di 1.000 piani di chiamata tenant.
 
-Vedere [Creare e gestire piani di chiamata per](create-and-manage-dial-plans.md) creare e gestire piani di chiamata tenant.
+Vedere [Creare e gestire i dial plan per](create-and-manage-dial-plans.md) creare e gestire i dial plan del tenant.
 
 ## <a name="tenant-dial-plan-scope"></a>Ambito tenant del piano di chiamata
 
-L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. I clienti ottengono il piano di chiamata appropriato tramite le impostazioni di provisioning che vengono fornite automaticamente quando gli utenti aprono Teams. Gli amministratori possono gestire e assegnare i livelli di ambito del piano di chiamata utilizzando l'interfaccia di amministrazione di Microsoft Teams o una sessione remota di PowerShell.
+L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. I client ottengono il piano di chiamata appropriato tramite le impostazioni di provisioning che vengono fornite automaticamente quando gli utenti a questo tipo di accesso a Teams.Clients get the appropriate dial plan through provisioning settings that are automatically provided when users sign in to Teams. Gli amministratori possono gestire e assegnare livelli di ambito del piano di chiamata usando l'interfaccia di amministrazione di Microsoft Teams o Remote PowerShell.
 
-In Teams ci sono due tipi di piani di chiamata: con ambito di servizio e ambito tenant (che è per l'organizzazione). Un piano di chiamata di ambito di servizio è definito per ogni paese o area geografica in cui il Sistema telefonico è disponibile. A ogni utente viene assegnato automaticamente il piano di chiamata di servizio del Paese corrispondente alla località di utilizzo assegnata all'utente. Non puoi modificare il piano di chiamata di servizio del Paese, ma puoi creare piani di chiamata di ambito tenant, che ampino il piano di chiamata di servizio del Paese. Durante il provisioning, i clienti ottengono un "piano di chiamata effettivo", che è una combinazione del piano di chiamata di servizio del Paese e del piano di chiamata di ambito tenant appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
+In Teams sono disponibili due tipi di piani di chiamata: con ambito di servizio e con ambito tenant (per l'organizzazione). Un piano di chiamata con ambito di servizio è definito per ogni paese o area geografica in cui è disponibile Sistema telefonico. A ogni utente viene assegnato automaticamente il piano di chiamata del paese di servizio corrispondente alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il piano di chiamata del paese di servizio, ma è possibile creare piani di chiamata con ambito tenant, che aumentano il piano di chiamata del paese di servizio. Quando viene eseguito il provisioning dei client, ottengono un "piano di chiamata efficace", ovvero una combinazione del piano di chiamata del paese di servizio e del piano di chiamata tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
 
-I piani di chiamata tenant possono essere ulteriormente suddivisi in due ambiti: ambito tenant o ambito utente. Se un tenant definisce e assegna un piano di chiamata di ambito utente, all'utente viene assegnato un piano di chiamata effettivo del piano di chiamata di servizio del Paese e del piano di chiamata utente assegnato. Se un tenant definisce un piano di chiamata di ambito tenant ma non assegna un piano di chiamata di ambito utente, all'utente verrà assegnato un piano di chiamata effettivo del piano di chiamata di servizio del Paese e del piano di chiamata tenant.
+I piani di chiamata del tenant possono essere suddivisi ulteriormente in due ambiti: ambito tenant o ambito utente. Se un tenant definisce e assegna un piano di chiamata con ambito di utente, all'utente verrà eseguito il provisioning con un piano di chiamata effettivo del piano di chiamata del paese di servizio dell'utente e del piano di chiamata utente assegnato. Se un tenant definisce un piano di chiamata con ambito tenant ma non assegna un piano di chiamata con ambito utente, verrà eseguito il provisioning dell'utente con un piano di chiamata efficace del piano di chiamata del paese di servizio dell'utente e del piano di chiamata del tenant.
 
 Di seguito è riportato il modello di ereditarietà dei piani di chiamata in Teams.
 
-![Ereditarietà dei piani di chiamata in Teams](media/b2744f33-ebbd-4c23-bfba-1747312ab178.png)
+![Modalità di ereditarietà dei piani di chiamata in Teams](media/b2744f33-ebbd-4c23-bfba-1747312ab178.png)
 
 Di seguito sono riportati i possibili piani di chiamata effettivi.
 
- **Servizio Paese** Se non è definito alcun piano di chiamata di ambito tenant e non viene assegnato alcun piano di chiamata di ambito tenant utente di ambito tenant all'utente di cui è stato eseguito il provisioning, l'utente riceverà un piano di chiamata effettivo mappato al Paese di servizio associato alla sua posizione di utilizzo.
+ **Paese di servizio** Se non è definito alcun piano di chiamata con ambito tenant e all'utente con ambito tenant non è assegnato alcun piano di chiamata con ambito utente tenant, l'utente riceverà un piano di chiamata effettivo mappato al paese del servizio associato alla posizione di utilizzo.
 
- **Tenant globale - Servizio Paese** Se è definito un piano di chiamata utente tenant, ma non è assegnato a un utente, l'utente di cui è stato eseguito il provisioning riceverà un piano di chiamata effettivo costituito da un piano di chiamata di tenant unito al piano di chiamata di servizio del Paese associato alla sua posizione di utilizzo.
+ **Tenant Global - Service Country** Se un piano di chiamata utente tenant è definito ma non assegnato a un utente, l'utente di cui è stato eseguito il provisioning riceverà un piano di chiamata effettivo costituito da un piano di chiamata tenant unito e dal piano di chiamata del paese di servizio associato alla posizione di utilizzo.
 
- **Tenant utente - Servizio Paese** Se è definito e assegnato un piano di chiamata utente tenant a un utente, l'utente di cui è stato eseguito il provisioning riceverà un piano di chiamata effettivo costituito dal piano di chiamata utente di tenant unito al piano di chiamata di servizio del Paese associato alla sua posizione di utilizzo.
+ **Utente tenant - Paese servizio** Se un piano di chiamata utente tenant è definito e assegnato a un utente, l'utente di cui è stato eseguito il provisioning riceverà un piano di chiamata effettivo costituito dal piano di chiamata utente del tenant unito e dal piano di chiamata del paese di servizio associato alla posizione di utilizzo.
 
-Per [creare piani di chiamata di tenant,](create-and-manage-dial-plans.md) vedere Creare e gestire piani di chiamata.
+Vedere [Creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare i dial plan del tenant.
 
 > [!NOTE]
-> Nello scenario in cui nessuna regola di normalizzazione del piano di chiamata si applica a un numero composto, la stringa chiamata è ancora normalizzata anteponendo "+CC" dove CC è il codice paese della posizione di utilizzo dell'utente che compone il numero. Ciò vale per i Piani per chiamate, l'instradamento diretto e gli scenari di chiamata in uscita di conferenze PSTN.
+> Nello scenario in cui nessuna regola di normalizzazione del piano di chiamata si applica a un numero composto, la stringa chiamata viene ancora normalizzata anteponendo "+CC", dove CC è il codice paese della località di utilizzo dell'utente che chiama. Questo vale per i piani di chiamata, il routing diretto e gli scenari di chiamata in uscita per conferenze PSTN.
 
 ## <a name="planning-for-tenant-dial-plans"></a>Pianificazione dei piani di chiamata tenant
 
 Per pianificare piani di chiamata personalizzati, attenersi alla seguente procedura.
 
-- **Passaggio 1** Decidere se è necessario un piano di chiamata personalizzato per migliorare l'esperienza di composizione dell'utente. In genere, è necessario supportare la composizione non E.164, ad esempio numeri interni o composizione nazionale abbreviata.
+- **Passaggio 1** Decidere se è necessario un piano di chiamata personalizzato per migliorare l'esperienza di composizione degli utenti. In genere, è necessario supportare la composizione non E.164, ad esempio le estensioni o la composizione nazionale abbreviata.
 
-- **Passaggio 2** Determinare se è necessario un piano di chiamata di ambito tenant globale o tenant di ambito utente o entrambi. Sono necessari piani di chiamata di ambito utente se gli utenti hanno diversi requisiti di composizione locali.
+- **Passaggio 2** Determinare se sono necessari piani di chiamata con ambito tenant globale o tenant o entrambi. Sono necessari piani di chiamata di ambito utente se gli utenti hanno diversi requisiti di composizione locali.
 
 - **Passo 3** Identificare i modelli di numerazione validi per ciascun piano di chiamata richiesto. Sono richiesti solo i modelli di numerazione che non sono definiti nel piano di chiamata di ambito di servizio del Paese.
 
@@ -81,7 +81,7 @@ Quando si crea un nuovo piano di chiamata, è necessario mettere le informazioni
 
 ### <a name="name-and-simple-name"></a>Nome e nome semplice
 
-Per i piani di chiamata utente, è necessario specificare un nome descrittivo che identifichi gli utenti a cui verrà assegnato il piano di chiamata. Il nome semplice del piano di chiamata viene precompilato con una stringa derivata dal nome del piano di chiamata. Il campo Nome semplice è modificabile, per creare una convenzione di denominazione più descrittiva per i piani di chiamata. Il valore Nome semplice non può essere vuoto e deve essere unico. L'approccio ideale è sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzare questa convenzione in modo coerente in tutte le sedi e per tutti gli utenti.
+Per i piani di chiamata utente, è necessario specificare un nome descrittivo che identifichi gli utenti a cui verrà assegnato il piano di chiamata. Il nome semplice del piano di chiamata è precompilato con una stringa derivata dal nome del piano di chiamata. Il campo Nome semplice è modificabile, per creare una convenzione di denominazione più descrittiva per i piani di chiamata. Il valore Nome semplice non può essere vuoto e deve essere unico. L'approccio ideale è sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzare questa convenzione in modo coerente in tutte le sedi e per tutti gli utenti.
 
 ### <a name="description"></a>Descrizione
 
@@ -95,30 +95,30 @@ Consigliamo di digitare il nome comune riconoscibile della posizione geografica 
 > [!NOTE]
 > Se si specifica un prefisso di accesso esterno, non è necessario creare un'ulteriore regola di normalizzazione che comprenda il prefisso.
 
-Per [creare piani di chiamata di tenant,](create-and-manage-dial-plans.md) vedere Creare e gestire piani di chiamata.
+Vedere [Creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare i dial plan del tenant.
 
 ## <a name="normalization-rules"></a>Regole di normalizzazione
 <a name="bknormalizationrule"> </a>
 
 Le regole di normalizzazione definiscono come i numeri di telefono espressi in vari formati devono essere convertiti. La stessa stringa numerica può essere interpretata e tradotta in modo diverso, a seconda della posizione da cui viene composta. Le regole di normalizzazione possono essere necessarie se gli utenti devono essere in grado di comporre numeri interni o esterni abbreviati.
 
-Devono essere assegnate una o più regole di normalizzazione al piano di chiamata. Le regole di normalizzazione vengono abbinate dall'alto verso il basso, quindi l'ordine in cui vengono visualizzate in un piano di chiamata tenant è importante. Ad esempio, se un piano di chiamata tenant ha 10 regole di normalizzazione, la logica di abbinamento del numero composto verrà applicata per prima cosa alla prima regola di normalizzazione; se non corrisponde, passerà alla seconda, e così via. Se si ottiene un abbinamento, viene utilizzata quella regola e non vengono controllate le corrispondenze con altre regole definite. Un dato piano di chiamata tenant può contenere al massimo 50 regole di normalizzazione.
+Devono essere assegnate una o più regole di normalizzazione al piano di chiamata. Le regole di normalizzazione vengono abbinate dall'alto verso il basso, quindi l'ordine in cui vengono visualizzate in un piano di chiamata tenant è importante. Ad esempio, se un piano di chiamata tenant ha 10 regole di normalizzazione, la logica di abbinamento del numero composto verrà applicata per prima cosa alla prima regola di normalizzazione; se non corrisponde, passerà alla seconda, e così via. Se si ottiene un abbinamento, viene utilizzata quella regola e non vengono controllate le corrispondenze con altre regole definite. In un determinato piano di chiamata tenant possono essere presenti al massimo 50 regole di normalizzazione.
 
 ### <a name="determining-the-required-normalization-rules"></a>Determinare le regole di normalizzazione richieste
 
-Poiché qualsiasi piano di chiamata tenant è di fatto unito al piano di chiamata di servizio del Paese di un determinato utente, è probabile che le regole di normalizzazione del piano di chiamata di servizio del Paese siano necessarie per determinare quali regole di normalizzazione sono necessarie. Il cmdlet **Get-CsEffectiveTenantDialPlan** può essere utilizzato per questo scopo. Il cmdlet prende l'identità dell'utente come parametro di input e restituisce tutte le regole di normalizzazione applicabili per l'utente.
+Poiché qualsiasi piano di chiamata tenant viene unito in modo efficace al piano di chiamata del paese di servizio di un determinato utente, è probabile che le regole di normalizzazione del piano di chiamata del paese di servizio devono essere valutate per determinare quali regole di normalizzazione del piano di chiamata tenant sono necessarie. Il cmdlet **Get-CsEffectiveTenantDialPlan** può essere utilizzato per questo scopo. Il cmdlet prende l'identità dell'utente come parametro di input e restituisce tutte le regole di normalizzazione applicabili per l'utente.
 
 ### <a name="creating-normalization-rules"></a>Creazione di regole di normalizzazione
 <a name="createrule"> </a>
 
-Le regole di normalizzazione .NET Framework espressioni regolari per specificare schemi numerici corrispondenti che il server usa per tradurre le stringhe di composizione in formato E.164. Possono essere create regole di normalizzazione specificando l'espressione regolare per cercare l'abbinamento e la conversione da eseguire quando si trova l'abbinamento. Terminata l'operazione, è possibile immettere un numero di prova per verificare che la regola di normalizzazione funzioni come previsto.
+Le regole di normalizzazione .NET Framework espressioni regolari per specificare i criteri di corrispondenza numerica utilizzati dal server per tradurre le stringhe di chiamata nel formato E.164. Possono essere create regole di normalizzazione specificando l'espressione regolare per cercare l'abbinamento e la conversione da eseguire quando si trova l'abbinamento. Terminata l'operazione, è possibile immettere un numero di prova per verificare che la regola di normalizzazione funzioni come previsto.
 
-Per informazioni dettagliate sull'.NET Framework espressioni regolari, vedere .NET Framework [espressioni regolari.](https://go.microsoft.com/fwlink/p/?linkId=140927)
+Per informazioni dettagliate sull'.NET Framework espressioni regolari, vedere .NET Framework [espressioni regolari](/dotnet/standard/base-types/regular-expressions).
 
-Vedi [Creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per creare e gestire regole di normalizzazione per i piani di chiamata tenant.
+Vedere [Creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per creare e gestire regole di normalizzazione per i piani di chiamata del tenant.
 
 > [!NOTE]
-> Le regole di normalizzazione con il primo token come facoltativo non sono attualmente supportate nei dispositivi a 3pip (ad esempio, modello Polycom VVX 601). Se si vogliono applicare regole di normalizzazione facoltative su dispositivi con 3pip, è consigliabile creare due regole di normalizzazione anziché una. Ad esempio, la regola ^0? (999)$ dovrà essere sostituito dalle due regole seguenti: (999)$ (Traduzione:$1) e ^0(999)$ (Traduzione:$1).
+> Le regole di normalizzazione con il primo token come facoltativo non sono attualmente supportate nei dispositivi a 3pip , ad esempio il modello Polycom VVX 601. Se si vogliono applicare regole di normalizzazione con facoltatività su dispositivi a 3pip, è consigliabile creare due regole di normalizzazione invece di una. Ad esempio, la regola ^0? (999)$ deve essere sostituito dalle due regole seguenti: (999)$ (Traduzione:$1) e ^0(999)$ (Traduzione:$1).
 
 
 ### <a name="sample-normalization-rules"></a>Esempio di regole di normalizzazione
@@ -126,7 +126,7 @@ Vedi [Creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per c
 La tabella seguente mostra esempi di regole di normalizzazione scritte sotto forma di espressioni regolari .NET Framework. Si tratta solo di esempi, non di regole fisse di riferimento per la creazione di regole di normalizzazione.
 
 <a name="regularexpression"> </a> 
- **Regole di normalizzazione con .NET Framework espressioni regolari**
+ **Regole di normalizzazione con .NET Framework regolari**
 
 | Nome regola<br/> | Descrizione<br/> | Schema numerico<br/> | Conversione<br/> | Esempio<br/> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -151,7 +151,7 @@ La tabella seguente mostra esempi di regole di normalizzazione scritte sotto for
 | RedmondOperator <br/> |
 
 > [!NOTE]
-> I nomi delle regole di normalizzazione mostrati nella tabella precedente non includono spazi, ma questa è solo una scelta. Il primo nome nella tabella, ad esempio, avrebbe potuto essere "5 digit extension" o "5-digit Extension" e sarebbe stato comunque valido.
+> I nomi delle regole di normalizzazione mostrati nella tabella precedente non includono spazi, ma è una questione di scelta. Il primo nome nella tabella, ad esempio, avrebbe potuto essere "5 digit extension" o "5-digit Extension" e sarebbe stato comunque valido.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -163,4 +163,4 @@ La tabella seguente mostra esempi di regole di normalizzazione scritte sotto for
 
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
-[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)

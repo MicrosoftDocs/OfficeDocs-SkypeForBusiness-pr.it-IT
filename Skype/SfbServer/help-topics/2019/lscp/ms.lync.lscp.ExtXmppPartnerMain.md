@@ -15,19 +15,16 @@ localization_priority: Normal
 ms.assetid: 3e270f9f-c5b7-4aa8-8425-83acadfbfb9a
 ROBOTS: NOINDEX, NOFOLLOW
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: ac5d53f8a40c422e297a1e7cae9c6b5e03ea7e8d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cda8df198f515599f7270c17fd4fd369c5b0e681
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49833706"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100482"
 ---
 # <a name="xmpp-federated-partners"></a>Partner federati XMPP
 
 > [!NOTE]
 > I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../../SfBServer2019/migration/migrating-xmpp-federation.md)
 
-Vedere [Gestire i partner federati XMPP per l'organizzazione](https://technet.microsoft.com/library/48681433-725d-457f-926b-f91d95bcf082.aspx)
-
-
-
+Vedere [Manage XMPP Federated Partners for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-manage-xmpp-federated-partners-for-your-organization)

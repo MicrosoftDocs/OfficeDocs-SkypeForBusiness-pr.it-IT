@@ -1,5 +1,5 @@
 ---
-title: Creare o modificare un intervallo di numeri di risposta alle chiamate di gruppo in Skype for Business
+title: Creare o modificare un intervallo di numeri di prelievo chiamata di gruppo in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,26 +15,26 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4b442b98-df6b-4e50-8254-b3be9cde21dd
-description: Creare o modificare un intervallo di numeri di risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: f487c277b8eaa03a5b31ce0dc9696b0efe712340
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Creare o modificare un intervallo di numeri di prelievo chiamata di gruppo in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: e71915519014b1fa4cfffa3172327e9949ed73a2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822406"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100422"
 ---
-# <a name="create-or-modify-a-group-call-pickup-number-range-in-skype-for-business"></a>Creare o modificare un intervallo di numeri di risposta alle chiamate di gruppo in Skype for Business
+# <a name="create-or-modify-a-group-call-pickup-number-range-in-skype-for-business"></a>Creare o modificare un intervallo di numeri di prelievo chiamata di gruppo in Skype for Business
 
-Creare o modificare un intervallo di numeri di risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale.
+Creare o modificare un intervallo di numeri di prelievo chiamata di gruppo in Skype for Business Server VoIP aziendale.
 
-La risposta alle chiamate di gruppo si basa sull'applicazione Parcheggio di chiamata. Quando si distribuisce la risposta alle chiamate di gruppo, è necessario configurare la tabella orbit del parcheggio di chiamata con intervalli di numeri di telefono designati come numeri di gruppo di prelievo chiamata. Questi numeri di gruppo sono i numeri che gli utenti comporre per riprendere le chiamate che squillano per un altro utente.
+La risposta alle chiamate di gruppo si basa sull'applicazione Parcheggio di chiamata. Quando si distribuisce la risposta alle chiamate di gruppo, è necessario configurare la tabella orbit del parcheggio di chiamata con intervalli di numeri di telefono designati come numeri di gruppo di prelievo chiamata. Questi numeri di gruppo sono i numeri che gli utenti comporre per prelevare le chiamate che squillano per un altro utente.
 
-Come i numeri orbit del parcheggio di chiamata, i numeri del gruppo di prelievo delle chiamate devono essere interni virtuali a cui non è assegnato alcun utente o telefono. Ogni pool Front End in cui si distribuisce la risposta alle chiamate di gruppo può avere uno o più intervalli di numeri di gruppo di risposta alle chiamate. Gli intervalli di numeri di gruppo devono essere univoci a livello globale nella distribuzione e devono essere assegnati come **tipo GroupPickup.**
+Come i numeri orbit del parcheggio di chiamata, i numeri dei gruppi di prelievo delle chiamate devono essere interni virtuali a cui non è assegnato alcun utente o telefono. Ogni pool Front End in cui si distribuisce la risposta alle chiamate di gruppo può avere uno o più intervalli di numeri di gruppo di prelievo chiamata. Gli intervalli di numeri di gruppo devono essere univoci a livello globale nella distribuzione e devono essere assegnati come **tipo GroupPickup.**
 
 Utilizzare la procedura seguente per creare o modificare un intervallo di numeri di gruppo di prelievo chiamata nella tabella orbit del parcheggio di chiamata.
 
 > [!NOTE]
-> È necessario utilizzare Skype for Business Server Management Shell per creare, modificare, rimuovere e visualizzare gli intervalli di numeri di risposta alle chiamate di gruppo nella tabella orbit del parcheggio di chiamata. Gli intervalli di numeri di risposta alle chiamate di gruppo non sono disponibili nel Pannello di controllo di Skype for Business Server.
+> È necessario utilizzare Skype for Business Server Management Shell per creare, modificare, rimuovere e visualizzare gli intervalli di numeri di prelievo chiamata di gruppo nella tabella orbit del parcheggio di chiamata. Gli intervalli di numeri di prelievo delle chiamate di gruppo non sono disponibili nel Pannello di controllo di Skype for Business Server.
 
 Gli intervalli di numeri del gruppo di prelievo chiamata devono essere conformi alle regole seguenti:
 
@@ -46,15 +46,15 @@ Gli intervalli di numeri del gruppo di prelievo chiamata devono essere conformi 
 
 - Se l'intervallo di numeri inizia con il carattere \* o #, l'intervallo deve essere maggiore di 100.
 
-- Valori validi: devono corrispondere alla stringa dell'espressione regolare ([ \\ *|#]?[ 1-9]\d {0,7} )| ([1-9]\d {0,8} ). Questo significa che il valore deve essere una stringa che inizia con il carattere o # oppure un numero compreso tra 1 e 9 (il primo carattere \* non può essere uno zero). Se il primo carattere è o #, il carattere seguente deve essere un \* numero da 1 a 9 (non può essere uno zero). I caratteri successivi possono essere da qualsiasi numero da 0 a 9 fino a sette caratteri aggiuntivi (ad esempio, "#6000", " \* 92000", " \* 95551212" e "915551212"). Se il primo carattere non è o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali un numero da \* 0 a 9 (ad esempio, "915551212", "41212", "300").
+- Valori validi: deve corrispondere alla stringa dell'espressione regolare ([ \\ *|#]?[ 1-9]\d {0,7} )| ([1-9]\d {0,8} ). Questo significa che il valore deve essere una stringa che inizia con il carattere o # o un numero da 1 a 9 (il primo carattere \* non può essere uno zero). Se il primo carattere è o #, il carattere seguente deve essere un numero \* da 1 a 9 (non può essere uno zero). I caratteri successivi possono essere da qualsiasi numero da 0 a 9 fino a sette caratteri aggiuntivi (ad esempio, "#6000", " \* 92000", " \* 95551212" e "915551212"). Se il primo carattere non è o #, il primo carattere deve essere un numero da 1 a 9 (non può essere zero), seguito da un massimo di otto caratteri, ognuno dei quali da \* 0 a 9 (ad esempio, "915551212", "41212", "300").
 
-### <a name="to-create-or-modify-a-call-pickup-group-range"></a>Per creare o modificare un intervallo di gruppi di prelievo delle chiamate
+### <a name="to-create-or-modify-a-call-pickup-group-range"></a>Per creare o modificare un intervallo di gruppi di prelievo chiamata
 
-1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in Delegare le autorizzazioni di **installazione.**
+1. Accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions.**
 
 2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
 
-3. Utilizzare **New-CsCallParkOrbit per** creare un nuovo intervallo di numeri di gruppo di risposta alle chiamate. Utilizzare **Set-CsCallParkOrbit per** modificare un intervallo esistente di numeri di risposta alle chiamate.
+3. Utilizzare **New-CsCallParkOrbit per** creare un nuovo intervallo di numeri di gruppo di prelievo delle chiamate. Utilizzare **Set-CsCallParkOrbit per** modificare un intervallo esistente di numeri di prelievo delle chiamate.
 
     Nella riga di comando digitare il comando seguente:
 
@@ -75,12 +75,12 @@ Gli intervalli di numeri del gruppo di prelievo chiamata devono essere conformi 
    ```
 
     > [!IMPORTANT]
-    > Utilizzare questo cmdlet per modificare il tipo assegnato agli intervalli di numeri solo se inizialmente è stato specificato il tipo non corretto e l'intervallo di gruppi non è ancora in uso. Se si modifica l'intervallo di numeri da CallPark a GroupPickup o viceversa e l'intervallo di numeri è già in uso, il parcheggio di chiamata o la risposta alle chiamate di gruppo smetteranno di funzionare per tale intervallo di numeri. Ad esempio, se si modifica un intervallo di numeri da CallPark a GroupPick, l'applicazione Parcheggio di chiamata non potrà più utilizzare tale intervallo di orbit per parcheggiare le chiamate.
+    > Utilizzare questo cmdlet per modificare il tipo assegnato agli intervalli di numeri solo se inizialmente è stato specificato il tipo non corretto e l'intervallo di gruppi non è ancora in uso. Se si modifica l'intervallo di numeri da CallPark a GroupPickup o viceversa e l'intervallo di numeri è già in uso, parcheggio di chiamata o prelievo chiamata di gruppo smetterà di funzionare per tale intervallo di numeri. Se ad esempio si modifica un intervallo di numeri da CallPark a GroupPick, l'applicazione Parcheggio di chiamata non potrà più utilizzare tale intervallo di orbit per parcheggiare le chiamate.
 
 ## <a name="see-also"></a>Vedere anche
 
-[New-CsCallParkOrbit](https://docs.microsoft.com/powershell/module/skype/new-cscallparkorbit?view=skype-ps)
+[New-CsCallParkOrbit](/powershell/module/skype/new-cscallparkorbit?view=skype-ps)
 
-[Set-CsCallParkOrbit](https://docs.microsoft.com/powershell/module/skype/set-cscallparkorbit?view=skype-ps)
+[Set-CsCallParkOrbit](/powershell/module/skype/set-cscallparkorbit?view=skype-ps)
 
-[Eliminare un intervallo di codici orbit del parcheggio di chiamata](https://technet.microsoft.com/library/85e9f916-062d-450d-ac0a-aeaefc0f7cdc.aspx)
+[Eliminare un intervallo di codici orbit del parcheggio di chiamata](/previous-versions/office/lync-server-2013/lync-server-2013-delete-a-call-park-orbit-range)

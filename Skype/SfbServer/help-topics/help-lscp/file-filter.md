@@ -15,20 +15,19 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6178d9e5-a919-4a7d-9633-d5f155556306
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: f5a95874a7a9e098b3e0b69292c3c6fad1f1ee6d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 696ab84221855f0970ff2388e7a0a1c42a609fa2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51099762"
 ---
 # <a name="file-filter"></a>Filtro file
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Modificare il filtro trasferimento file predefinito](https://technet.microsoft.com/library/791774a2-0bb6-4b5b-aeb0-ff69abb170f4.aspx)
+- [Modificare il filtro trasferimento file predefinito](/previous-versions/office/lync-server-2013/lync-server-2013-modify-the-default-file-transfer-filter)
 
-- [Creare un nuovo filtro trasferimento file per un sito specifico](https://technet.microsoft.com/library/d0006487-5217-491c-b730-e6c551cd9825.aspx)
+- [Creare un nuovo filtro trasferimento file per un sito specifico](/previous-versions/office/lync-server-2013/lync-server-2013-create-a-new-file-transfer-filter-for-a-specific-site)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
-
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)

@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Questi sono i servizi di Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Italia.
-ms.openlocfilehash: 43cc354db2206eabe5b57f16758ab025f5537c2f
-ms.sourcegitcommit: b6aeaa3d98c29bdc120db8ccfcb7ff2c11d246af
-ms.translationtype: HT
+ms.openlocfilehash: b34be7f560082c8f8a9415835804e4bcd8e7d16e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "49570905"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101428"
 ---
 # <a name="availability-in-italy"></a>Disponibilità in Italia
 
@@ -43,7 +43,7 @@ Questi sono i servizi di Microsoft 365 e Office 365 per Skype for Business e Mic
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Milano</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Milano</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio](../getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
 
 ## <a name="phone-system"></a>Sistema telefonico
@@ -72,7 +72,7 @@ Questi sono i servizi di Microsoft 365 e Office 365 per Skype for Business e Mic
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
 
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere telefonici di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
+ Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere telefonici di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
@@ -84,6 +84,6 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ottenere numeri telefonici di servizio](/microsoftteams/getting-service-phone-numbers).
+[Ottenere numeri telefonici di servizio](../getting-service-phone-numbers.md).
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

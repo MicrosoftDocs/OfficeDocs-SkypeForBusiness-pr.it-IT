@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: I seguenti requisiti sono molto importanti per garantire il corretto funzionamento e il successo a lungo termine di tutte le funzioni di Skype for Business online che stai configurando per l'organizzazione. Se sei tra le persone che hanno molta dimestichezza con gli aspetti tecnici, questo documento è per te. Ma ci sono altri che non sono altrettanto a proprio agio. Se hai bisogno di aiuto per l'impostazione di Skype for Business online, leggi questo documento per prendere coscienza degli aspetti che dovrai considerare. Vi insegnerà anche che linguaggio usare quando interagite con Microsoft FastTrack Center, i vostri team di account e di servizi Microsoft o con i partner Microsoft per capire come è possibile soddisfare questi requisiti.
-ms.openlocfilehash: eb8cf69ee7e8ea82d71ea088f5866b03e048a0ac
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: ece99899400d8fca063f9b28c868ba94d4f72b99
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164755"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100682"
 ---
 # <a name="optimizing-your-network-for-skype-for-business-online"></a>Ottimizzare la rete per Skype for Business online
 
@@ -52,7 +52,7 @@ Con Skype for Business puoi:
 
 La qualità della connettività di rete end-to-end influisce notevolmente sulla qualità dei supporti multimediali in tempo reale (condivisione di audio, video e applicazioni) su IP. Per una qualità ottimale dei supporti multimediali di Skype for Business Online, è importante assicurarsi che vi sia una connessione di alta qualità tra la rete aziendale e Skype for Business Online. Il modo migliore per offrire tale qualità è configurare la propria rete interna e la connettività cloud in base alla capacità della rete di contenere picchi di traffico per Skype for Business Online su tutte le connessioni.
 
-Collaborando con un [partner Microsoft,](https://partnercenter.microsoft.com/pcv/search)puoi connettere alla tua rete un'ampia varietà di applicazioni Microsoft 365 o Office 365, tra cui Skype for Business Online nel cloud, e le funzionalità di comunicazione vocale e video in tempo reale per Skype for Business richiedono che i servizi di rete siano configurati specificamente per supportare questi carichi di lavoro in tempo reale di Microsoft 365 e Office 365. Ciò comprende una rete che abbia una larghezza di banda sufficiente per supportare il volume di traffico richiesto e che sia in grado di supportare la qualità del servizio (QoS, Quality of Service) per offrire agli utenti un'esperienza di livello aziendale.
+Lavorando con un [partner Microsoft,](https://partnercenter.microsoft.com/pcv/search)è possibile connettere una varietà di applicazioni Microsoft 365 o Office 365, tra cui Skype for Business Online nel cloud, alla rete e le funzionalità di comunicazione vocale e video in tempo reale per Skype for Business richiedono che i servizi di rete siano configurati specificamente per supportare questi carichi di lavoro in tempo reale di Microsoft 365 e Office 365. Ciò comprende una rete che abbia una larghezza di banda sufficiente per supportare il volume di traffico richiesto e che sia in grado di supportare la qualità del servizio (QoS, Quality of Service) per offrire agli utenti un'esperienza di livello aziendale.
 
 Oltre alle informazioni fornite qui, ci sono altre risorse che possono aiutare a pianificare e implementare i servizi e le funzionalità di Skype for Business online e garantire che i servizi di rete soddisfino tali requisiti:
 
@@ -64,11 +64,11 @@ Oltre alle informazioni fornite qui, ci sono altre risorse che possono aiutare a
 
 ## <a name="implement-quality-of-service-qos-for-skype-for-business"></a>Implementazione di Quality of Service (QoS) per Skype for Business
 
-Prima di passare a Skype for Business online, verifica la capacità della rete di gestire il traffico della sessione per audio, video e condivisione. Come per altri servizi di Microsoft 365 e Office 365, Microsoft ha disponibile per il download lo Strumento di calcolo della larghezza di banda di [Skype for Business](https://www.microsoft.com/download/details.aspx?id=19011) usato per determinare il traffico di rete necessario per ognuno dei siti aziendali. Consigliamo di eseguire una modellizzazione dell'utilizzo, compresa la modellizzazione dei flussi multimediali di traffico delle comunicazioni in tempo reale e della quantità di traffico Skype for Business per sede dell'azienda, calcolando il volume di traffico e analizzandone l'impatto sul traffico della rete complessiva. Fatto questo, l'analisi di questi dati dovrebbe fornire raccomandazioni su dove migliorare la rete e raccomandare le dimensioni delle code per poter fornire un'esperienza ottimale all'utente finale.
+Prima di passare a Skype for Business online, verifica la capacità della rete di gestire il traffico della sessione per audio, video e condivisione. Come per altri servizi di Microsoft 365 e Office 365, Microsoft ha disponibile per il download il calcolatore della larghezza di banda di [Skype for Business](https://www.microsoft.com/download/details.aspx?id=19011) usato per determinare il traffico di rete necessario per ogni sito aziendale. Consigliamo di eseguire una modellizzazione dell'utilizzo, compresa la modellizzazione dei flussi multimediali di traffico delle comunicazioni in tempo reale e della quantità di traffico Skype for Business per sede dell'azienda, calcolando il volume di traffico e analizzandone l'impatto sul traffico della rete complessiva. Fatto questo, l'analisi di questi dati dovrebbe fornire raccomandazioni su dove migliorare la rete e raccomandare le dimensioni delle code per poter fornire un'esperienza ottimale all'utente finale.
 
 Il traffico in tempo reale di Skype for Business è sensibile a perdita di pacchetti, ritardo e jitter, che si verificano spesso nelle reti congestionate. La Qualità del servizio (QoS) - a volte chiamata Class of Service - deve essere distribuita su reti WAN esterne gestite, LAN interne gestite e reti WiFi aziendali. Ciò contribuirà a prioritizzare correttamente il traffico in tempo reale di Skype for Business, come audio e video, rispetto ad altro traffico non in tempo reale su reti locali e su WAN, per dare così una migliore esperienza agli utenti finali.
 
-L'audio di Skype for Business deve essere distribuito in coda EF (Expedited Forwarding - DSCP 46) e il video di Skype for Business deve essere distribuito nella coda AF41 (Assured Forwarding - DSCP 34). Ciò vale anche per il traffico peer-to-peer e di conferenza, indipendentemente dal fatto che sia stato distribuito Sistema telefonico in Microsoft 365 o Office 365 o altre funzionalità di telefonia.
+L'audio di Skype for Business deve essere distribuito in coda EF (Expedited Forwarding - DSCP 46) e il video di Skype for Business deve essere distribuito nella coda AF41 (Assured Forwarding - DSCP 34). Questo vale anche per il traffico peer-to-peer e per le conferenze, indipendentemente dal fatto che sia in corso la distribuzione di Sistema telefonico in Microsoft 365 o Office 365 o altre funzionalità di telefonia.
 
 Se da una parte possono essere già implementate politiche di QoS sulla LAN e WAN per altri prodotti di telefonia IP, Skype for Business consente agli utenti di essere mobili e spostarsi da un luogo all'altro durante l'utilizzo del servizio. Per questo motivo, le politiche di QoS devono essere contrassegnate sulle reti LAN, WAN e wireless in modo da essere sicuri che tutto il traffico di Skype for Business sia prioritario sulle reti gestite.
 
@@ -76,29 +76,29 @@ Per aiutarti nel dimensionamento della rete, scarica il [Calcolatore di larghezz
 
 Per maggiori informazioni su qualità multimediale e QoS, consulta [Qualità multimediale e prestazioni della connettività di rete in Skype for Business online](media-quality-and-network-connectivity-performance.md)
 
-Per maggiori informazioni su come impostare e gestire la QoS, vedi [Gestione della qualità del servizio](https://technet.microsoft.com/library/gg425841.aspx).
+Per maggiori informazioni su come impostare e gestire la QoS, vedi [Gestione della qualità del servizio](../../SfbServer/plan-your-deployment/network-requirements/network-requirements.md).
 
 ## <a name="bypass-proxies-and-wan-optimization-devices"></a>Bypassare proxy e dispositivi di ottimizzazione WAN
 
-Tutti i prodotti Microsoft 365 o Office 365, incluso Skype for Business online, sono crittografati e in genere non possono essere controllati dai dispositivi proxy. Per questi motivi è consigliabile ignorare i dispositivi proxy per tutto il traffico di rete di Microsoft 365 e Office 365, come definito come connessioni degli utenti agli URL e agli intervalli di indirizzi IP per [Office 365.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) Dato che i dispositivi proxy introducono probabilmente un ritardo nei flussi multimediali in tempo reale di Skype for Business online, si consiglia vivamente di bypassare i dispositivi proxy quanto più possibile per tale traffico.
+Tutti i prodotti Microsoft 365 o Office 365, incluso Skype for Business Online, sono crittografati e in genere non possono essere controllati da dispositivi proxy. Per questi motivi è consigliabile ignorare i dispositivi proxy per tutto il traffico di rete di Microsoft 365 e Office 365, come definito come connessioni che gli utenti effettuano a URL e intervalli di indirizzi IP di [Office 365.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) Dato che i dispositivi proxy introducono probabilmente un ritardo nei flussi multimediali in tempo reale di Skype for Business online, si consiglia vivamente di bypassare i dispositivi proxy quanto più possibile per tale traffico.
 
-Microsoft consiglia di escludere gli URL di Microsoft 365 e Office 365 usando file PAC per inviare il traffico di Microsoft 365 e Office 365 a un firewall.
+Microsoft consiglia di escludere gli URL di Microsoft 365 e Office 365 con file PAC per inviare il traffico di Microsoft 365 e Office 365 a un firewall.
 
 Ecco alcune altre risorse disponibili che possono essere d'aiuto:
 
-- [Ottimizzazione delle prestazioni di Microsoft 365 o Office 365 mediante la cronologia delle previsioni e delle prestazioni](https://support.office.com/article/1492cb94-bd62-43e6-b8d0-2a61ed88ebae)
+- [Ottimizzazione delle prestazioni di Microsoft 365 o Office 365 usando le previsioni e la cronologia delle prestazioni](https://support.office.com/article/1492cb94-bd62-43e6-b8d0-2a61ed88ebae)
 
 - [Pianificazione della rete e della migrazione per Microsoft 365 o Office 365](https://support.office.com/article/f5ee6c33-bcd7-4b0b-b0f8-dc1d9fb8d132)
 
 - [Generatore di PAC per proxy di Office 365](https://gallery.technet.microsoft.com/Office-365-Proxy-Pac-60fb28f7)
 
-- [Uso dei dispositivi di controllo dell'ottimizzazione WAN o traffico/ispezione con Microsoft 365 o Office 365](https://aka.ms/kb2690045)
+- [Uso del controller di ottimizzazione WAN o dei dispositivi traffic/inspection con Microsoft 365 o Office 365](/office365/troubleshoot/miscellaneous/office-365-third-party-network-devices)
 
 - [Routing con ExpressRoute per Microsoft 365 o Office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408)
 
 ## <a name="bypass-double-encryption"></a>Bypassare la doppia crittografia
 
-Per fornire agli utenti la migliore esperienza audio e video possibile, è necessario implementare una soluzione che impedisce ai contenuti multimediali di Skype for Business (audio e video) di attraversare un tunnel VPN. Tutto il traffico di Skype for Business è crittografato con Transport Layer Security (TLS) e i carichi di lavoro multimediali sono crittografati con Secure Real Time Protocol (SRTP). La segnalazione viene crittografata con TLS e i carichi di lavoro multimediali sono crittografati con SRTP. L'invio di questo traffico attraverso un tunnel VPN aggiunge un ulteriore livello di crittografia e altri hop di rete tra il client e Microsoft 365 o Office 365, entrambi elementi che possono causare una sessione degradata perché aumenta instabilità, perdita di pacchetti e latenza.
+Per fornire agli utenti la migliore esperienza audio e video possibile, è necessario implementare una soluzione che impedisce ai contenuti multimediali di Skype for Business (audio e video) di attraversare un tunnel VPN. Tutto il traffico di Skype for Business è crittografato con Transport Layer Security (TLS) e i carichi di lavoro multimediali sono crittografati con Secure Real Time Protocol (SRTP). La segnalazione viene crittografata con TLS e i carichi di lavoro multimediali sono crittografati con SRTP. L'invio di questo traffico attraverso il tunnel VPN aggiunge un ulteriore livello di crittografia e altri hop di rete tra il client e Microsoft 365 o Office 365, entrambi i quali possono causare una sessione degradata perché aumenta il jitter, la perdita di pacchetti e la latenza.
 
 Una possibilità per evitare che il traffico di Skype for Business attraversi i tunnel VPN è lo Split Tunneling. Per implementare lo split tunneling, i clienti devono consultare il proprio fornitore di VPN per istruzioni specifiche su come procedere nel loro software.
 
@@ -109,9 +109,9 @@ Risorse aggiuntive:
 
 - [Consentire ai contenuti multimediali di Lync di ignorare un tunnel VPN](https://blogs.technet.microsoft.com/nexthop/2011/11/14/enabling-lync-media-to-bypass-a-vpn-tunnel/)
 
-- [Altre informazioni su accesso diretto, split tunneling e force tunneling](https://blogs.technet.com/b/tomshinder/archive/2010/03/30/more-on-directaccess-split-tunneling-and-force-tunneling.aspx)
+- [Altre informazioni su accesso diretto, split tunneling e force tunneling](/archive/blogs/tomshinder/more-on-directaccess-split-tunneling-and-force-tunneling)
 
-- [Abilitare l'accesso diretto](https://technet.microsoft.com/library/jj574163.aspx)
+- [Abilitare l'accesso diretto](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj574163(v=ws.11))
 
 ## <a name="ensure-the-right-ports-and-protocols-are-open"></a>Assicurarsi che le porte e i protocolli corretti siano aperti
 
@@ -124,7 +124,7 @@ Potrebbe essere necessaria una configurazione di rete aggiuntiva per supportare 
 
 ## <a name="use-phones-and-devices-optimized-for-skype-for-business"></a>Utilizzare i telefoni e dispositivi ottimizzati per Skype for Business
 
-In una sessione multimediale in tempo reale, i dispositivi multimediali usati da tutti i partecipanti, come ad esempio cuffie auricolari e web cam, hanno un impatto notevole sulla qualità complessiva di audio e video. I dispositivi di bassa qualità o con driver non corretti produrranno suoni audio o immagini video di qualità inferiore. Al contrario, i dispositivi certificati o di buona qualità aiutano a eliminare l'eco, filtrare il rumore, migliorare la risoluzione video e ridurre la latenza.
+In una sessione multimediale in tempo reale, i dispositivi multimediali usati da tutti i partecipanti, come ad esempio cuffie auricolari e web cam, hanno un impatto notevole sulla qualità complessiva di audio e video. I dispositivi di qualità inferiore o i dispositivi con driver di dispositivo non corretti produrranno una qualità audio complessiva inferiore per l'audio e una qualità dell'immagine inferiore per il video. Al contrario, i dispositivi certificati o di buona qualità aiutano a eliminare l'eco, filtrare il rumore, migliorare la risoluzione video e ridurre la latenza.
 
 Telefoni e dispositivi fanno un'enorme differenza nella qualità di audio e video per gli utenti finali. Il programma di certificazione Skype for Business è un'evoluzione del programma "Lync Compatibile" e convalida che il dispositivo sia conforme agli standard di Microsoft per audio e video. Diversi telefoni IP, dispositivi audio e video USB, PC e dispositivi per sala riunioni sono stati testati e qualificati da Microsoft. Consulta l'elenco dei dispositivi ottimizzati per Skype for Business e fai in modo di fornire dispositivi diversi che soddisfino le diverse esigenze e preferenze personali degli utenti finali nell'organizzazione.
 
@@ -132,15 +132,15 @@ Consulta quanto segue per ulteriori informazioni sui dispositivi supportati e ce
 
 - [Ottenere telefoni per Skype for Business online](../what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online.md)
 
-- [Cellulari e dispositivi per Skype for Business](https://technet.microsoft.com/office/dn947482.aspx)
+- [Cellulari e dispositivi per Skype for Business](../../SfbPartnerCertification/certification/devices-ip-phones.md)
 
 - [Catalogo di soluzioni per le periferiche personali](http://partnersolutions.skypeforbusiness.com/solutionscatalog/personal-peripherals-pcs)
 
-- [Telefoni e dispositivi qualificati per Microsoft Lync](https://technet.microsoft.com/office/dn788944.aspx)
+- [Telefoni e dispositivi qualificati per Microsoft Lync](../../SfbPartnerCertification/lync-cert/ip-phones.md)
 
 L'ambiente e l'area circostante il punto in cui gli utenti si incontrano e usano dispositivi audio e video rappresentano un altro fattore importante che influisce sulla qualità. Gli utenti che chiamano da ambienti rumorosi dovranno fare i conti con l'eco e suoni soffocati e poco chiari. Gli utenti in ambienti bui o di scarsa illuminazione non potranno produrre immagini chiare e luminose. In una sala riunioni, la posizione del microfono e del dispositivo video hanno un impatto diretto sulla qualità del suono e dell'immagine che riceveranno i partecipanti.
 
-Per ottenere un'immagine più chiara dell'esperienza audio e video di un utente, usa il dispositivo audio o video Strumenti  >    >   dell'app  Skype for Business per apportare modifiche al dispositivo in uso e personalizzarne le impostazioni. È anche possibile controllare la qualità audio di una chiamata facendo clic **su Controlla qualità chiamata.** Se gli utenti fanno clic su **Controllo qualità chiamata**, possono segnalare li livello di qualità e i problemi riscontrati con una chiamata di prova.
+Per ottenere un'immagine più chiara dell'esperienza audio e video di un utente, usare  >    >  l'app  Skype for Business Strumenti Opzioni **Dispositivo audio** o Dispositivo video per apportare modifiche al dispositivo in uso e personalizzarne le impostazioni. È anche possibile verificare la qualità audio di una chiamata facendo clic **su Controlla qualità chiamata.** Se gli utenti fanno clic su **Controllo qualità chiamata**, possono segnalare li livello di qualità e i problemi riscontrati con una chiamata di prova.
 
 ![Testing audio in the Skype for Business client.](../images/1730a71e-a09d-4702-8eb6-ef1346a091fa.png)
 

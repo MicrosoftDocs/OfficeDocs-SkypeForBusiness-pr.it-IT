@@ -1,5 +1,5 @@
 ---
-title: Configurare i provider per il servizio di registrazione centralizzato in Skype for Business Server 2015
+title: Configurare i provider per il servizio di registrazione centralizzata in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,20 +14,20 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 6a197ecf-b56b-45e0-8e7c-f532ec5164ff
 description: 'Riepilogo: informazioni su come configurare i provider di scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: c96a87ea76930dbd99341667852a9731e56b88b5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cd0364d6497aa53d258b5346090d6cdd7c338cc3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835166"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51098852"
 ---
-# <a name="configure-providers-for-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare i provider per il servizio di registrazione centralizzato in Skype for Business Server 2015
+# <a name="configure-providers-for-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare i provider per il servizio di registrazione centralizzata in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come configurare i provider di scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.
   
-I concetti e la configurazione dei provider nel servizio di registrazione centralizzata sono uno dei più importanti da comprendere. Theproviders map directly to Skype for Business Server server role components in the Skype for Business Server tracing model. Il provider definisce i componenti di skype for Business Server 2015 che verranno tracciati, il tipo di messaggi (ad esempio, errore irreversibile, errore o avviso) da raccogliere e i flag (ad esempio, TF_Connection o TF_Diag). I provider sono i componenti tracciabili in ogni ruolo del server Skype for Business Server. Tramite i provider vengono definiti il livello e il tipo di traccia per i componenti (ad esempio, S4, SIPStack, messaggistica istantanea e presenza). Il provider definito viene utilizzato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica riferita a una condizione problematica specifica.
+I concetti e la configurazione dei provider nel servizio di registrazione centralizzata sono tra i più importanti da comprendere. I provider vengono mappati direttamente ai componenti del ruolo del server Skype for Business Server nel modello di traccia di Skype for Business Server. Il provider definisce i componenti di Skype for Business Server 2015 che verranno tracciati, il tipo di messaggi (ad esempio, irreversibile, errore o avviso) da raccogliere e i flag (ad esempio, TF_Connection o TF_Diag). I provider sono i componenti tracciabili in ogni ruolo del server Skype for Business Server. Tramite i provider vengono definiti il livello e il tipo di traccia per i componenti (ad esempio, S4, SIPStack, messaggistica istantanea e presenza). Il provider definito viene utilizzato in uno scenario per raggruppare tutti i provider per una determinata raccolta logica riferita a una condizione problematica specifica.
   
-Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza RBAC (Controllo dell'accesso basato sui ruoli) CsAdministrator o CsServerAdministrator oppure un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per ottenere un elenco di tutti i ruoli RBAC (controllo dell'accesso basato sui ruoli) a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il seguente comando da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basati sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC (Role-Based Access Control) a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
@@ -39,46 +39,46 @@ Ad esempio:
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
-Nella parte restante di questo argomento viene illustrato come definire provider, modificare un provider e il contenuto di una definizione di provider per ottimizzare la risoluzione dei problemi. Esistono due modi per eseguire comandi del servizio di registrazione centralizzata. È possibile utilizzare il CLSController.exe che si trova, per impostazione predefinita, nella directory C:\Programmi\File comuni\Skype for Business Server 2015\CLSAgent. In or, you can use the Skype for Business Server Management Shell to issue Windows PowerShell commands. Utilizzando Windows PowerShell, è possibile definire nuovi provider da utilizzare nelle sessioni di registrazione e avere il controllo completo sulla loro creazione, su cosa raccolgono e a quale livello raccolgono i dati.
+Nella parte restante di questo argomento viene illustrato come definire provider, modificare un provider e cosa contiene una definizione di provider per ottimizzare la risoluzione dei problemi. Esistono due modi per emettere comandi del servizio di registrazione centralizzata. Puoi usare il CLSController.exe che si trova, per impostazione predefinita, nella directory C:\Programmi\File comuni\Skype for Business Server 2015\CLSAgent. In caso contrario, è possibile utilizzare Skype for Business Server Management Shell per emettere Windows PowerShell comandi. Utilizzando Windows PowerShell, è possibile definire nuovi provider da utilizzare nelle sessioni di registrazione e avere il controllo completo sulla creazione, su cosa raccolgono e a quale livello raccolgono i dati.
   
 > [!IMPORTANT]
 > Come già accennato, i provider sono uno strumento dalle grandi potenzialità. Gli scenari, tuttavia, sono ancora più efficaci perché incorporano tutte le informazioni necessarie per impostare ed eseguire la traccia sui componenti rappresentati dai provider. Dato che gli scenari sono in effetti una raccolta di provider, possono essere paragonati all'esecuzione di un file batch contenente centinaia di comandi per raccogliere grandi quantità di informazioni anziché eseguire centinaia di comandi, uno alla volta, dalla riga di comando. 
   
-Invece di richiedere informazioni approfondite sui provider, il servizio di registrazione centralizzata offre una serie di scenari già definiti. Gli scenari forniti riguardano la maggior parte dei possibili problemi che si verificano. In rari casi potrebbe essere necessario creare e definire provider e assegnarli agli scenari. È consigliabile acquisire familiarità con ognuno degli scenari forniti prima di analizzare la necessità di creare nuovi provider e scenari. Anche se le informazioni sulla creazione dei provider sono disponibili qui per acquisire familiarità con il modo in cui gli scenari usano gli elementi provider per raccogliere informazioni di traccia, al momento non vengono forniti dettagli sui provider stessi. 
+Invece di richiedere un'approfondita ricerca nei dettagli dei provider, il servizio di registrazione centralizzata offre una serie di scenari già definiti. Gli scenari forniti riguardano la maggior parte dei possibili problemi che si verificano. In rari casi, potrebbe essere necessario creare e definire provider e assegnarli agli scenari. È consigliabile acquisire familiarità con ognuno degli scenari forniti prima di analizzare la necessità di creare nuovi provider e scenari. Sebbene le informazioni sulla creazione di provider siano disponibili qui per acquisire familiarità con il modo in cui gli scenari usano gli elementi del provider per raccogliere informazioni di traccia, al momento non vengono forniti dettagli sui provider stessi. 
   
-Introdotto nel servizio di registrazione centralizzato [in Skype for Business 2015,](centralized-logging-service.md)gli elementi chiave della definizione di un provider da utilizzare in uno scenario sono:
+Introdotto in [Centralized Logging Service in Skype for Business 2015,](centralized-logging-service.md)gli elementi chiave della definizione di un provider da utilizzare in uno scenario sono:
   
-- **Provider** Se si ha familiarità con OCSLogger, i provider sono i componenti che si sceglie di indicare a OCSLogger da quale motore di traccia raccogliere i registri. I provider sono gli stessi componenti, e in molti casi ne condividono anche il nome, dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server da cui il servizio di registrazione centralizzato può raccogliere i registri. Nel caso del servizio di registrazione centralizzato, CLSAgent è la parte architetturale del servizio di registrazione centralizzata che esegue la traccia dei componenti definiti nella configurazione dei provider.
+- **Provider** Se si ha familiarità con OCSLogger, i provider sono i componenti che si sceglie di indicare a OCSLogger da quale motore di traccia raccogliere i log. I provider sono gli stessi componenti, e in molti casi ne condividono anche il nome, dei componenti in OCSLogger. Se non si ha familiarità con OCSLogger, i provider sono componenti specifici del ruolo del server da cui il servizio di registrazione centralizzata può raccogliere i registri. Nel caso del servizio di registrazione centralizzata, CLSAgent è la parte architetturale del servizio di registrazione centralizzata che esegue la traccia dei componenti definiti nella configurazione dei provider.
     
 - **Livelli di registrazione** OCSLogger ha fornito la possibilità di scegliere un numero di livelli di dettaglio per i dati raccolti. Questa funzionalità è parte integrante del servizio di registrazione centralizzata e degli scenari ed è definita dal **parametro Type.** È possibile scegliere una delle seguenti opzioni:
     
   - **All** Raccoglie nel registro per il provider definito i messaggi di traccia di tipo irreversibile, errore, avviso, dettagliato e debug.
     
-  - **Fatal** Raccoglie solo i messaggi di traccia definiti come "Fatal".
+  - **Fatale** Raccoglie solo i messaggi di traccia definiti come "Fatale".
     
-  - **Errore** Raccoglie solo i messaggi di traccia definiti come "Error" o "Fatal".
+  - **Errore** Raccoglie solo i messaggi di traccia definiti come "Errore" o "Fatale".
     
-  - **Avviso** Raccoglie solo i messaggi di traccia di tipo "Warning", "Error" e "Fatal".
+  - **Avviso** Raccoglie solo i messaggi di traccia di tipo "Avviso", "Errore" e "Irreversibile".
     
   - **Info** Raccoglie solo i messaggi di traccia che indicano un messaggio informativo per il provider definito, oltre ai messaggi di errore irreversibile, di errore e di avviso.
     
-  - **Dettagliato** Raccoglie tutti i messaggi di traccia di tipo irreversibile, errore, avviso e livello dettagliato per il provider definito.
+  - **Verbose** Raccoglie tutti i messaggi di traccia di tipo irreversibile, errore, avviso e dettagliato per il provider definito.
     
-  - **Il** debug è essenzialmente un equivalente di "All": raccoglie le tracce di tipo Fatal, Error, Warning, Info, Verbose e Debug per il provider definito.
+  - **Il** debug è essenzialmente un equivalente di 'All': raccoglie tracce di tipo Fatal, Error, Warning, Info, Verbose e Debug per il provider definito.
     
-- **Flag** OCSLogger ha fornito l'opzione per scegliere i flag per ogni provider che ha definito il tipo di informazioni che è possibile recuperare dai file di traccia. È possibile scegliere tra i flag seguenti, in base al provider:
+- **Flag** OCSLogger ha fornito la possibilità di scegliere i flag per ogni provider che ha definito il tipo di informazioni che è possibile recuperare dai file di traccia. È possibile scegliere tra i flag seguenti, in base al provider:
     
   - **TF_Connection** Fornisce voci di registro correlate alla connessione. Questi log includono informazioni sulle connessioni stabilite con e da un particolare componente. Potrebbero essere anche incluse informazioni significative a livello di rete, ovvero per componenti non correlati al concetto di connessione.
     
-  - **TF_Security** Fornisce tutti gli eventi/voci di registro correlati alla protezione. Per SipStack, ad esempio, si tratta degli eventi di sicurezza come errori di convalida del dominio ed errori di autenticazione/autorizzazione dei client.
+  - **TF_Security** Fornisce tutti gli eventi/voci di registro relativi alla sicurezza. Per SipStack, ad esempio, si tratta degli eventi di sicurezza come errori di convalida del dominio ed errori di autenticazione/autorizzazione dei client.
     
   - **TF_Diag** Fornisce eventi di diagnostica che è possibile utilizzare per diagnosticare o risolvere i problemi del componente. Per SipStack, ad esempio, si tratta di errori dei certificati oppure di avvisi/errori DNS.
     
-  - **TF_Protocol** Fornisce messaggi di protocollo come i messaggi SIP e Combined Community Codec Pack.
+  - **TF_Protocol** Fornisce messaggi di protocollo quali i messaggi SIP e Combined Community Codec Pack.
     
   - **TF_Component** Abilita la registrazione dei componenti specificati come parte dei provider.
     
-  - **All** Imposta tutti i flag disponibili per il provider.
+  - **All** Imposta tutti i flag disponibili disponibili per il provider.
     
 ### <a name="to-review-information-about-existing-centralized-logging-service-scenario-providers"></a>Per esaminare le informazioni sui provider di scenari esistenti del servizio di registrazione centralizzata
 
@@ -96,7 +96,7 @@ Introdotto nel servizio di registrazione centralizzato [in Skype for Business 20
    Get-CsClsScenario -Identity "global/CAA"
    ```
 
-    Il comando visualizza un elenco dei provider con i flag, le impostazioni e i componenti associati. Se le informazioni visualizzate non sono sufficienti o se l'elenco è troppo lungo per il formato di elenco Windows PowerShell predefinito, è possibile visualizzare informazioni aggiuntive definendo un metodo di output diverso. A tale scopo, digitare:
+    Il comando visualizza un elenco dei provider con i flag, le impostazioni e i componenti associati. Se le informazioni visualizzate non sono sufficienti o se l'elenco è troppo lungo per il formato di elenco Windows PowerShell predefinito, è possibile visualizzare ulteriori informazioni definendo un metodo di output diverso. A tale scopo, digitare:
     
    ```PowerShell
    Get-CsClsScenario -Identity "global/CAA" | Select-Object -ExpandProperty Provider
@@ -104,7 +104,7 @@ Introdotto nel servizio di registrazione centralizzato [in Skype for Business 20
 
     Nell'output di questo comando, le informazioni su ogni provider sono visualizzate su cinque righe separate che includono nome del provider, tipo di registrazione, livello di registrazione, flag, GUID e ruolo. 
     
-### <a name="to-define-a-new-centralized-logging-service-scenario-provider"></a>Per definire un nuovo provider di scenari del servizio di registrazione centralizzato
+### <a name="to-define-a-new-centralized-logging-service-scenario-provider"></a>Per definire un nuovo provider di scenari del servizio di registrazione centralizzata
 
 1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
     
@@ -120,7 +120,7 @@ Introdotto nel servizio di registrazione centralizzato [in Skype for Business 20
    $LyssProvider = New-CsClsProvider -Name "Lyss" -Type "WPP" -Level "Info" -Flags "All"
    ```
 
--Level raccoglie messaggi di errore irreversibili, di errore, di avviso e di informazioni. I flag utilizzati sono tutti quelli definiti per il provider Lyss e includono TF_Connection, TF_Diag e TF_Protocol.Dopo aver definito la variabile $LyssProvider, è possibile utilizzarla con il cmdlet **New-CsClsScenario** per raccogliere le tracce dal provider Lyss. Per completare la creazione e l'assegnazione del provider a un nuovo scenario, digitare:
+-Level raccoglie messaggi irreversibili, di errore, di avviso e di informazioni. I flag utilizzati sono tutti quelli definiti per il provider Lyss e includono TF_Connection, TF_Diag e TF_Protocol.Dopo aver definito la variabile $LyssProvider, è possibile utilizzarla con il cmdlet **New-CsClsScenario** per raccogliere le tracce dal provider Lyss. Per completare la creazione e l'assegnazione del provider a un nuovo scenario, digitare:
 
 ```PowerShell
 New-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvider
@@ -143,7 +143,7 @@ Dove $LyssProvider è la variabile che contiene lo scenario definito creato con 
    Set-CsClsScenario -Identity "site:Redmond/RedmondLyssInfo" -Provider $LyssProvider
    ```
 
-Il risultato finale del comando è l'aggiornamento dei flag per lo scenario site:Redmond/RedmondLyssInfo e l'assegnazione del livello per il provider. Per visualizzare il nuovo scenario, utilizzare Get-CsClsScenario. Per informazioni dettagliate, vedere [Get-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/get-csclsscenario?view=skype-ps).
+Il risultato finale del comando è l'aggiornamento dei flag per lo scenario site:Redmond/RedmondLyssInfo e l'assegnazione del livello per il provider. Per visualizzare il nuovo scenario, utilizzare Get-CsClsScenario. Per informazioni dettagliate, vedere [Get-CsClsScenario](/powershell/module/skype/get-csclsscenario?view=skype-ps).
 > [!CAUTION]
 > **New-ClsCsProvider** non esegue un controllo per stabilire se i flag sono validi. Assicurarsi di digitare correttamente i flag, ad esempio TF_DIAG o TF_CONNECTION. Se il nome dei flag non è corretto, il provider non potrà restituire le informazioni di log previste.
   
@@ -186,12 +186,12 @@ In cui ogni provider definito con la direttiva Add è già stato definito tramit
 Quando si rimuove uno scenario tramite il cmdlet **Remove-CsClsScenario**, si rimuove completamente lo scenario dall'ambito. Per utilizzare gli scenari creati e i provider che facevano parte dello scenario, creare nuovi provider e assegnarli a un nuovo scenario.
 ## <a name="see-also"></a>Vedere anche
 
-[Get-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/get-csclsscenario?view=skype-ps)
+[Get-CsClsScenario](/powershell/module/skype/get-csclsscenario?view=skype-ps)
   
-[New-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/new-csclsscenario?view=skype-ps)
+[New-CsClsScenario](/powershell/module/skype/new-csclsscenario?view=skype-ps)
   
-[Remove-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/remove-csclsscenario?view=skype-ps)
+[Remove-CsClsScenario](/powershell/module/skype/remove-csclsscenario?view=skype-ps)
   
-[Set-CsClsScenario](https://docs.microsoft.com/powershell/module/skype/set-csclsscenario?view=skype-ps)
+[Set-CsClsScenario](/powershell/module/skype/set-csclsscenario?view=skype-ps)
   
-[New-CsClsProvider](https://docs.microsoft.com/powershell/module/skype/new-csclsprovider?view=skype-ps)
+[New-CsClsProvider](/powershell/module/skype/new-csclsprovider?view=skype-ps)

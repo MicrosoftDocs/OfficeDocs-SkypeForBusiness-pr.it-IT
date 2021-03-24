@@ -15,16 +15,16 @@ localization_priority: Normal
 ms.assetid: e32c6712-6dc9-4de9-8d74-9fdccf3de1ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile specificare la versione dei client supportati nell'ambiente. Quando due client che eseguono versioni diverse interagiscono, le caratteristiche disponibili per uno dei due client possono essere limitate dalle funzionalità dell'altro client.
-ms.openlocfilehash: c2d6dc4f68a7c40668db9042d420f2f341e35ca0
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 57c273198a9c88ae26540518c9f892b218b96118
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824896"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100692"
 ---
 # <a name="client-version-policy-create-new-or-edit-existing"></a>Criteri versione client: crearne di nuovi o modificare quelli esistenti
 
-È possibile specificare la versione dei client supportati nell'ambiente. Quando due client che eseguono versioni diverse interagiscono, le caratteristiche disponibili per uno dei due client possono essere limitate dalle funzionalità dell'altro client. Per utilizzare al massimo le funzionalità incluse in Skype for Business Server e migliorare l'esperienza utente complessiva, è possibile utilizzare il filtro versione client per limitare le versioni client utilizzate nel proprio ambiente. Grazie a tale filtro è anche possibile ridurre i costi associati al supporto di più versioni client.
+È possibile specificare la versione dei client supportati nell'ambiente. Quando due client che eseguono versioni diverse interagiscono, le caratteristiche disponibili per uno dei due client possono essere limitate dalle funzionalità dell'altro client. Per utilizzare al massimo le funzionalità incluse in Skype for Business Server e migliorare l'esperienza utente complessiva, è possibile utilizzare il filtro versione client per limitare le versioni client utilizzate nell'ambiente. Grazie a tale filtro è anche possibile ridurre i costi associati al supporto di più versioni client.
 
 > [!IMPORTANT]
 > I filtri sono elencati in ordine di precedenza. Se, ad esempio, è presente un filtro che consente ai client che eseguono la versione 1.5 di connettersi, seguito da un filtro che blocca i client che eseguono una versione precedente alla 2.0, il primo filtro ha la precedenza e i client che eseguono la versione 1.5 possono connettersi.
@@ -41,9 +41,9 @@ Nella pagina **Crea nuovi criteri versione client** o **Modifica Criteri version
 
 Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà della pagina.
 
-- **Ambito** Identifica l'ambito (sito, pool o utente) dei criteri versione client.
+- **Ambito** Identifica l'ambito (Sito, Pool o Utente) del criterio versione client.
 
-- **Name** È possibile aggiungere o modificare il nome dei criteri versione client.
+- **Nome** È possibile aggiungere o modificare il nome del criterio versione client.
 
 - **Descrizione** È possibile aggiungere una descrizione per identificare il criterio nell'elenco nella pagina Criteri versione client.
 
@@ -53,7 +53,6 @@ Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà
 
 - **Rimuovi** Questa opzione consente di rimuovere la regola della versione client selezionata dal criterio.
 
-- **Frecce su e giù** Questa opzione sposta la regola della versione client selezionata verso l'alto o verso il basso in ordine di priorità. Le regole vengono elaborate nell'ordine in cui sono elencate.
+- **Frecce su e giù** Questa opzione sposta la regola della versione client selezionata verso l'alto o verso il basso in base alla priorità. Le regole vengono elaborate nell'ordine in cui sono elencate.
 
-Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [Client Interoperability.](https://technet.microsoft.com/library/0f126571-91a2-45d5-855c-1e4ddb45fc04.aspx) Per informazioni dettagliate sull'uso dei criteri versione client, vedere [Specify the Client Versions Supported in Your Organization](https://technet.microsoft.com/library/d256a581-9a48-4d1a-82cc-2e1f520d7d2e.aspx) nella documentazione relativa alle operazioni.
-
+Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [Interoperabilità client](/previous-versions/office/lync-server-2013/lync-server-2013-client-interoperability-in-lync-2013). Per informazioni dettagliate sull'uso dei criteri versione client, vedere [Specify the Client Versions Supported in Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-specifying-the-client-applications-that-can-be-used-to-log-on-to-lync-server-2013) nella documentazione relativa alle operazioni.

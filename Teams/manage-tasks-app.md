@@ -19,12 +19,12 @@ MS.collection:
 - microsoftcloud-healthcare
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2cc477b9589aeebb8dcd486e7f85ca04daf6ff4d
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
-ms.translationtype: HT
+ms.openlocfilehash: 1688d4791c3d20ef28e9ff2a44349c87293acea3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909400"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101152"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
@@ -81,7 +81,7 @@ Per aggiungere l'app Tasks agli utenti, è possibile modificare i criteri global
 
 ### <a name="a-users-my-tasks-is-visible-if-the-user-is-licensed-for-exchange-online"></a>Le Mie attività di un utente sono visibili se l’utente ha una licenza Exchange Online
 
-Se non si vuole consentire a un utente di visualizzare le **Mie attività**, è possibile nasconderl0. A questo scopo, bisogna [rimuovere la licenza Exchange Online dell'utente](https://docs.microsoft.com/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che, dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati della cassetta postale vengono mantenuti per 30 giorni, dopo i quali i dati verranno rimossi e non potranno essere recuperati a meno che la cassetta postale non venga impostata su [Blocco sul posto o Blocco per controversia legale](https://docs.microsoft.com/exchange/security-and-compliance/in-place-and-litigation-holds).
+Se non si vuole consentire a un utente di visualizzare le **Mie attività**, è possibile nasconderl0. A questo scopo, bisogna [rimuovere la licenza Exchange Online dell'utente](/microsoft-365/admin/manage/remove-licenses-from-users). È importante sapere che, dopo aver rimosso una licenza di Exchange Online, l'utente non ha più accesso alla propria cassetta postale.  I dati della cassetta postale vengono mantenuti per 30 giorni, dopo i quali i dati verranno rimossi e non potranno essere recuperati a meno che la cassetta postale non venga impostata su [Blocco sul posto o Blocco per controversia legale](/exchange/security-and-compliance/in-place-and-litigation-holds).
 
 Questa operazione non è consigliata per gli operatori dell’informazione, ma potrebbero essere applicata in alcuni scenari, ad esempio per i dipendenti che non dipendono dalla posta elettronica.
 
@@ -123,5 +123,5 @@ Per le istruzioni su come configurare la gerarchia di destinazione del team, ved
 
 Tasks supporta Power Automate per To Do e le API Graph per Planner. Per altre informazioni, vedere:
 
-- [Panoramica delle attività e dei piani dell’API Planner](https://docs.microsoft.com/graph/planner-concept-overview)
+- [Panoramica delle attività e dei piani dell’API Planner](/graph/planner-concept-overview)
 - [Uso di Microsoft To-Do con Power Automate](https://support.office.com/article/using-microsoft-to-do-with-power-automate-526e8f75-217b-46e0-9e06-44780b72c295)

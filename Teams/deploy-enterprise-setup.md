@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d8144b830bec7f51bd97c59211d629aae7ffb3c9
-ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
+ms.openlocfilehash: e4614bc88ba65803ea5a8696af9e55a104912855
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50726387"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101302"
 ---
 # <a name="set-up-microsoft-teams-in-your-enterprise"></a>Configurare Microsoft Teams nell'azienda
 
@@ -45,7 +45,7 @@ Prima di iniziare la distribuzione di Teams, assicurarsi di aver completato il p
 Si consiglia vivamente di usare l'[Assistente per Teams](https://admin.teams.microsoft.com/teams-deployment) come ausilio per la distribuzione. Per informazioni dettagliate sul funzionamento dell'Assistente per Teams, vedere [Usare Assistente per Teams per distribuire Microsoft Teams](use-advisor-teams-roll-out.md).
 
 > [!TIP]
-> Per informazioni su come usare l'Assistente per Teams per pianificare la distribuzione, completare il modulo di Microsoft Learn [Implementare Teams con l'Assistente per Teams](https://docs.microsoft.com/learn/modules/m365-teams-rollout-using-advisor/).
+> Per informazioni su come usare l'Assistente per Teams per pianificare la distribuzione, completare il modulo di Microsoft Learn [Implementare Teams con l'Assistente per Teams](/learn/modules/m365-teams-rollout-using-advisor/).
 
 Per informazioni sulla pianificazione per Teams, vedere [Panoramica della distribuzione aziendale di Teams](deploy-enterprise-overview.md).
 
@@ -58,7 +58,7 @@ Per informazioni sulla pianificazione per Teams, vedere [Panoramica della distri
 Chat, team e canali sono gli elementi essenziali di Teams. La **chat** consente agli utenti di parlare tra di loro, condividere file e di collegarsi in modo privato con altri. **Teams**, che può essere visibile a tutti gli utenti dell'organizzazione o solo a quelli del team, consente di collaborare con le persone giuste su qualsiasi attività o in qualsiasi occasione, che si tratti di un progetto a lungo termine o di una festa di compleanno. I **canali** nei team consentono di suddividere argomenti, progetti, reparti e altro per il team. Per informazioni dettagliate su chat, team e canali, vedere la [Panoramica su team e canali](teams-channels-overview.md).
 
 > [!TIP]
-> Per informazioni su come gestire i ruoli del team, l'accesso e i criteri di messaggistica, completare il modulo [Gestire Microsoft Teams](https://docs.microsoft.com/learn/modules/m365-teams-collab-manage-teams/) in Microsoft Learn.
+> Per informazioni su come gestire i ruoli del team, l'accesso e i criteri di messaggistica, completare il modulo [Gestire Microsoft Teams](/learn/modules/m365-teams-collab-manage-teams/) in Microsoft Learn.
 
 ### <a name="administration-and-team-ownership"></a>Amministrazione e proprietà dei team
 
@@ -88,7 +88,7 @@ Le riunioni e le conferenze consentono alle persone dell'organizzazione di colle
 L'**audioconferenza** offre agli utenti la possibilità di partecipare alle riunioni usando un normale telefono, componendo il numero di telefono della conferenza e immettendo l'ID della riunione. Le audioconferenze sono utili quando un partecipante non dispone di una buona connessione Internet, se la riunione è solo vocale o in altre circostanze che impediscono di partecipare tramite il client Teams.
 
 > [!TIP]
-> Per acquisire maggiore familiarità con riunioni ed eventi, completare il modulo [Gestire riunioni, conferenze ed eventi con Microsoft Teams](https://docs.microsoft.com/learn/modules/m365-teams-collab-manage-meetings) in Microsoft Learn.
+> Per acquisire maggiore familiarità con riunioni ed eventi, completare il modulo [Gestire riunioni, conferenze ed eventi con Microsoft Teams](/learn/modules/m365-teams-collab-manage-meetings) in Microsoft Learn.
 
 ### <a name="meetings"></a>Riunioni
 
@@ -145,12 +145,12 @@ Teams e Microsoft 365 offrono molti strumenti che semplificano la conformità ai
 | [Conformità delle comunicazioni](communication-compliance.md)| Contribuisce a ridurre i rischi associati alle comunicazioni identificando e prendendo misure contro il linguaggio offensivo, volgare e molesto, le immagini per adulti, audaci e cruente, oltre che contro la condivisione di informazioni riservate. |
 | [Registrazione di chiamate e riunioni basata sui criteri](teams-recording-policy.md)| Consente di controllare quando e se le chiamate e le riunioni devono essere registrate e archiviate automaticamente per la successiva elaborazione, conservazione o analisi.|
 | [Etichette di riservatezza](sensitivity-labels.md)| Consente di proteggere e regolare l'accesso alle informazioni sensibili creando etichette che applicano opzioni di privacy selezionate.|
-| [Prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?toc=%2Fmicrosoftteams%2Ftoc.json&bc=%2Fmicrosoftteams%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide)| Consente di creare regole che determinano la modalità di gestione di determinate informazioni, ad esempio codici fiscali, numeri di carta di credito e così via. È possibile impedire l'invio di determinate informazioni, impedirne l'uscita dall'organizzazione e così via.|
+| [Prevenzione della perdita dei dati](/microsoft-365/compliance/dlp-microsoft-teams?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json&view=o365-worldwide)| Consente di creare regole che determinano la modalità di gestione di determinate informazioni, ad esempio codici fiscali, numeri di carta di credito e così via. È possibile impedire l'invio di determinate informazioni, impedirne l'uscita dall'organizzazione e così via.|
 | [eDiscovery](eDiscovery-investigation.md)| Consente di cercare e recuperare contenuto all'interno dell'organizzazione quando l'organizzazione riceve richieste di individuazione nell'ambito di procedimenti legali. |
 | [Blocco a fini giudiziari](legal-hold.md)| Consente di conservare informazioni nell'organizzazione, anche se vengono eliminate da un utente, quando necessario durante procedimenti legali, in modo che possano essere individuate durante le indagini di eDiscovery. |
 | [Ricerca contenuto](content-search.md)| Consente di eseguire query sulle informazioni di Teams su Exchange, SharePoint Online e OneDrive for Business.|
 | [Auditing](audit-log-events.md)| Consente di visualizzare informazioni su un'azione specificata, tra cui l'utente che ha eseguito l'azione, la data e l'ora in cui è stata eseguita, l'indirizzo IP usato e così via. Le azioni includono la creazione o l'eliminazione di team, la creazione di canali, la modifica di impostazioni in Teams e così via.|
-| [Customer Key](https://docs.microsoft.com/microsoft-365/compliance/customer-key-tenant-level?toc=%2Fmicrosoftteams%2Ftoc.json&bc=%2Fmicrosoftteams%2Fbreadcrumb%2Ftoc.json&view=o365-worldwide)| Consente di creare criteri di crittografia dei dati con le chiavi di crittografia fornite.|
+| [Customer Key](/microsoft-365/compliance/customer-key-tenant-level?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json&view=o365-worldwide)| Consente di creare criteri di crittografia dei dati con le chiavi di crittografia fornite.|
 
 ## <a name="clients"></a>Client
 
@@ -159,7 +159,7 @@ Quando gli utenti iniziano a usare Teams possono installare il client Teams sul 
 Assicurarsi che tutti gli utenti che usano Teams abbiano una licenza di Teams. Per altre informazioni sull'assegnazione di una licenza di Teams, vedere [Gestire l'accesso degli utenti a Teams](user-access.md#using-the-microsoft-365-admin-center).
 
 > [!TIP]
-> È possibile ottenere suggerimenti su come pianificare la distribuzione client di Teams completando il modulo [Distribuire i client di Microsoft Teams](https://docs.microsoft.com/learn/modules/m365-teams-collab-deploy-clients/) in Microsoft Learn.
+> È possibile ottenere suggerimenti su come pianificare la distribuzione client di Teams completando il modulo [Distribuire i client di Microsoft Teams](/learn/modules/m365-teams-collab-deploy-clients/) in Microsoft Learn.
 
 Se l'organizzazione usa Microsoft Endpoint Configuration Manager, i criteri di gruppo o un meccanismo di distribuzione di terze parti per distribuire i software nei computer degli utenti, vedere [Installare Microsoft Teams usando Microsoft Endpoint Configuration Manager](msi-deployment.md).
 

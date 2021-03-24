@@ -1,5 +1,5 @@
 ---
-title: Criteri di accesso esterno crearne di nuovi o modificarne uno esistente
+title: Criteri di accesso esterno Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,23 +15,21 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6f8fa258-9a9d-44fe-b7e3-0b02604907e2
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 9fc5fa1b0b89fd5b7f1f44b23e5b396b844f7403
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c40d1e8eb81b832acc6b8e59aafd416fe0bfbb78
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810926"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51099872"
 ---
 # <a name="external-access-policy-create-new-or-edit-existing"></a>Criteri di accesso esterno: crearne di nuovi o modificare quelli esistenti
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Reimpostare o eliminare criteri di accesso utente esterno](https://technet.microsoft.com/library/5f9b4528-f4f1-4d52-816d-156c3c7298ad.aspx)
+- [Reimpostare o eliminare criteri di accesso utente esterno](/previous-versions/office/lync-server-2013/lync-server-2013-resetting-or-deleting-external-user-access-policies)
 
-- [Configurare i criteri per controllare l'accesso degli utenti federati](https://technet.microsoft.com/library/5485e208-81e4-4e59-9aeb-1232c11dd8a2.aspx)
+- [Configurare i criteri per controllare l'accesso degli utenti federati](/previous-versions/office/lync-server-2013/lync-server-2013-configure-policies-to-control-federated-user-access)
 
-- [Gestire l'accesso degli utenti remoti](https://technet.microsoft.com/library/8f556849-692b-44a0-9514-4468fc9a39d0.aspx)
+- [Gestire l'accesso utente remoto](/previous-versions/office/lync-server-2013/lync-server-2013-configure-policies-to-control-remote-user-access)
 
-- [Configurare i criteri per controllare l'accesso da parte degli utenti dei provider di servizi di messaggistica istantanea](https://technet.microsoft.com/library/5321598c-1ab1-40e3-b739-4b2e6d0a3a3b.aspx)
-
-
+- [Configurare i criteri per controllare l'accesso da parte degli utenti dei provider di servizi di messaggistica istantanea](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-edit-public-sip-federated-providers)
