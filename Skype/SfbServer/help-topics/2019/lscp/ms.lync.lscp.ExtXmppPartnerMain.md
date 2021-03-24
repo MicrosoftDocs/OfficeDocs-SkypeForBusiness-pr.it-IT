@@ -15,19 +15,16 @@ localization_priority: Normal
 ms.assetid: 3e270f9f-c5b7-4aa8-8425-83acadfbfb9a
 ROBOTS: NOINDEX, NOFOLLOW
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: ac5d53f8a40c422e297a1e7cae9c6b5e03ea7e8d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cda8df198f515599f7270c17fd4fd369c5b0e681
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49833706"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51100482"
 ---
-# <a name="xmpp-federated-partners"></a><span data-ttu-id="e9442-104">Partner federati XMPP</span><span class="sxs-lookup"><span data-stu-id="e9442-104">XMPP Federated Partners</span></span>
+# <a name="xmpp-federated-partners"></a><span data-ttu-id="e9010-104">Partner federati XMPP</span><span class="sxs-lookup"><span data-stu-id="e9010-104">XMPP Federated Partners</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="e9442-105">I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="e9442-105">XMPP Gateways and proxies are available in Skype for Business Server 2015 but are no longer supported in Skype for Business Server 2019.</span></span> <span data-ttu-id="e9442-106">Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../../SfBServer2019/migration/migrating-xmpp-federation.md)</span><span class="sxs-lookup"><span data-stu-id="e9442-106">See [Migrating XMPP federation](../../../../SfBServer2019/migration/migrating-xmpp-federation.md) for more information.</span></span>
+> <span data-ttu-id="e9010-105">I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019.</span><span class="sxs-lookup"><span data-stu-id="e9010-105">XMPP Gateways and proxies are available in Skype for Business Server 2015 but are no longer supported in Skype for Business Server 2019.</span></span> <span data-ttu-id="e9010-106">Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../../SfBServer2019/migration/migrating-xmpp-federation.md)</span><span class="sxs-lookup"><span data-stu-id="e9010-106">See [Migrating XMPP federation](../../../../SfBServer2019/migration/migrating-xmpp-federation.md) for more information.</span></span>
 
-<span data-ttu-id="e9442-107">Vedere [Gestire i partner federati XMPP per l'organizzazione](https://technet.microsoft.com/library/48681433-725d-457f-926b-f91d95bcf082.aspx)</span><span class="sxs-lookup"><span data-stu-id="e9442-107">See [Manage XMPP Federated Partners for Your Organization](https://technet.microsoft.com/library/48681433-725d-457f-926b-f91d95bcf082.aspx)</span></span>
-
-
-
+<span data-ttu-id="e9010-107">Vedere [Manage XMPP Federated Partners for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-manage-xmpp-federated-partners-for-your-organization)</span><span class="sxs-lookup"><span data-stu-id="e9010-107">See [Manage XMPP Federated Partners for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-manage-xmpp-federated-partners-for-your-organization)</span></span>
