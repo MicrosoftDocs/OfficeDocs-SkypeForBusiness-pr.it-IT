@@ -18,26 +18,26 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - SMB
-description: Purtroppo alcune licenze utente vengono bloccate quando un utente visita Skype Meeting Broadcast e https://broadcast.skype.com desidera utilizzare Skype Meeting Broadcast. Se un utente vede questo messaggio, ha una delle licenze bloccate assegnate. Se si vuole comunque che lo usino, assegnare un'altra licenza di Office 365.
-ms.openlocfilehash: 0b2791f0f3d04de7e1383516b0c44cf392233761
-ms.sourcegitcommit: ab566ddab9d26440bac1716a975f30e075d0c7b5
+description: Purtroppo, alcune licenze utente vengono bloccate quando l'utente passa a e https://broadcast.skype.com vuole usare Skype Meeting Broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se si vuole comunque che lo usino, assegnare loro un'altra licenza di Office 365.
+ms.openlocfilehash: 91c1005ee211bd51fc0f713237362b43a79d5e69
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865150"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103762"
 ---
 # <a name="blocked-user-licenses-for-hosting-skype-meeting-broadcast"></a>Licenze utente bloccate per l'hosting di Skype Meeting Broadcast
 
 > [!IMPORTANT]
-> Skype for Business online verrà ritirato il 31 luglio 2021, data in cui l'accesso al servizio terminerà. Consigliamo ai clienti di iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
+> Skype for Business online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
 
-Purtroppo alcune licenze utente vengono bloccate quando gli utenti a destinazione e https://broadcast.skype.com vogliono ospitare Skype Meeting Broadcast. Se un utente vede questo messaggio, ha una delle licenze bloccate assegnate. Se si vuole comunque che lo usino, assegnare un'altra licenza di Office 365.
+Purtroppo, alcune licenze utente vengono bloccate quando gli utenti visitano e https://broadcast.skype.com vogliono ospitare skype meeting broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se si vuole comunque che lo usino, assegnare loro un'altra licenza di Office 365.
   
- *"La tua politica aziendale non ti consente di utilizzare Skype Meeting Broadcast. Rivolgersi all'amministratore di sistema per assicurarsi che il servizio sia abilitato e che si abbia la licenza corretta".* 
+ *"La tua politica aziendale non ti consente di usare Skype Meeting Broadcast. Rivolgersi all'amministratore di sistema per verificare che il servizio sia abilitato e che si abbia la licenza corretta".* 
   
 ## <a name="blocked-user-licenses"></a>Licenze utente bloccate 
 
-L'hosting di eventi Skype Meeting Broadcast viene bloccata se a un utente viene assegnata una delle seguenti licenze utente. I partecipanti che stanno trasmettendo eventi non richiedono licenze utente.
+L'hosting di eventi Skype Meeting Broadcast verrà bloccato se a un utente viene assegnata una delle licenze utente seguenti. I partecipanti che stanno trasmettendo eventi di trasmissione non richiedono licenze utente.
   
 - Office 365 Education Fac/Staff
     
@@ -57,16 +57,15 @@ L'hosting di eventi Skype Meeting Broadcast viene bloccata se a un utente viene 
     
 - Office 365 Education E3 Student
     
-- Vantaggio per l'uso da parte degli studenti di Office 365 A1
+- Vantaggi per l'uso degli studenti in Office 365 A1
     
-- Vantaggi per l'uso da parte degli studenti di Microsoft 365 A1
+- Vantaggi per l'uso degli studenti in Microsoft 365 A1
 
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Introduzione a Windows Powershell e Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525039)
+[Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
   
 [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
 
   
- 

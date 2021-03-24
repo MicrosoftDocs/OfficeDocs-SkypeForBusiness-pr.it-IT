@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Questo argomento contiene i passaggi di distribuzione client consigliati da eseguire prima di eseguire la migrazione a Skype for Business Server 2019. Queste modifiche alla configurazione devono essere apportate in Lync Server 2013 o Skype for Business Server 2015.
-ms.openlocfilehash: fd630898d064c8ba079f87ce571e73de8cf0aaf9
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 46a193e3896b6e7ad2dddd405eda413a2544fe3f
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754066"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51105112"
 ---
 # <a name="configure-clients-for-migration"></a>Configurare i client per la migrazione
 
@@ -26,13 +26,13 @@ Questo argomento contiene i passaggi di distribuzione client consigliati da eseg
 
 1. Distribuire gli aggiornamenti più recenti di server, client e dispositivi (hotfix) per l'installazione esistente.
     
-2. Nella versione precedente di Skype for Business Server, usare il filtro versione client per consentire solo i client con gli aggiornamenti più recenti installati.
+2. Nella versione precedente di Skype for Business Server usa il filtro versione client per consentire solo i client con gli aggiornamenti più recenti installati.
     
 ## <a name="see-also"></a>Vedere anche
 
-[Impostazioni nuove e modificate per Lync 2013](https://technet.microsoft.com/library/jj205204(v=ocs.15).aspx) 
+[Impostazioni nuove e modificate per Lync 2013](/previous-versions/office/lync-server-2013/lync-server-2013-new-and-changed-settings-for-lync-2013) 
  
-[Interoperabilità client in Lync 2013](https://technet.microsoft.com/library/jj204672(v=ocs.15).aspx)
+[Interoperabilità dei client in Lync 2013](/previous-versions/office/lync-server-2013/lync-server-2013-client-interoperability-in-lync-2013)
  <!-- The above links point to un-rebranded 2013 content we will need to discuss rebrand or bring forward -->
 
  [Pianificare client e dispositivi](../../SfbServer/plan-your-deployment/clients-and-devices/clients-and-devices.md)

@@ -1,5 +1,5 @@
 ---
-title: Esempio Raccolta dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server
+title: Esempio Raccolta di requisiti per il controllo di ammissione di chiamata in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3363ac53-b7c4-4a59-aea1-b2f3ee016ae1
 description: Fornisce un esempio dettagliato di pianificazione del controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale, inclusa la raccolta di informazioni sui siti, le aree geografiche e la larghezza di banda della rete.
-ms.openlocfilehash: a51ffe9248a8d5daf1e21a9c20bb753ddb26898f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 65bf3c07b2186ae8251c570880d54242944ff6e8
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49825686"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101512"
 ---
 # <a name="example-gathering-requirements-for-call-admission-control-in-skype-for-business-server"></a>Esempio: Raccolta dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server
 
@@ -31,11 +31,11 @@ In questo esempio viene illustrato come pianificare e implementare il servizio C
 
 1. Identificare tutti gli hub e le backbone di rete (note come aree di rete).
 
-2. Identificare il sito centrale di Skype for Business Server che gestirà il servizio Controllo di ammissione di chiamata per ogni area di rete.
+2. Identificare il sito centrale di Skype for Business Server che gestirà il controllo di ammissione di chiamata per ogni area di rete.
 
 3. Identificare e definire i siti di rete connessi a ogni area di rete.
 
-4. Per ogni sito di rete la cui connessione alla WAN è vincolata dalla larghezza di banda, descrivere la capacità della larghezza di banda della connessione WAN e i limiti di larghezza di banda impostati dall'amministratore di rete per il traffico multimediale di Skype for Business Server, se applicabile. Non è necessario includere siti con connessione alla WAN non soggetta a vincoli di larghezza di banda.
+4. Per ogni sito di rete la cui connessione alla rete WAN è vincolata dalla larghezza di banda, descrivere la capacità della larghezza di banda della connessione WAN e i limiti di larghezza di banda impostati dall'amministratore di rete per il traffico multimediale di Skype for Business Server, se applicabile. Non è necessario includere siti con connessione alla WAN non soggetta a vincoli di larghezza di banda.
 
 5. Associare ogni subnet della rete a un sito di rete.
 
@@ -60,13 +60,13 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
      ![Esempio di topologia di rete con 3 aree di rete](../../media/Plan_CS_VoiceCAC_example3networkregions.jpg)
 
     > [!NOTE]
-    > Una rete Multiprotocol Label Switching (MPLS) dovrebbe essere rappresentata come area di rete in cui a ogni posizione geografica corrisponde un sito di rete. Per informazioni dettagliate, vedere Componenti e topologie per il controllo di ammissione [di chiamata in Skype for Business.](components-and-topologies.md) 
+    > Una rete Multiprotocol Label Switching (MPLS) dovrebbe essere rappresentata come area di rete in cui a ogni posizione geografica corrisponde un sito di rete. Per informazioni dettagliate, [vedere Componenti e topologie per il controllo di ammissione di chiamata in Skype for Business.](components-and-topologies.md) 
 
-    Nella topologia di rete di esempio precedente sono presenti tre aree di rete, ognuna con un sito centrale di Skype for Business Server che gestisce il servizio Controllo di ammissione di chiamata. Il sito centrale appropriato per un'area di rete viene scelto in base alla vicinanza geografica. Poiché il traffico multimediale sarà più intenso all'interno delle aree di rete, la proprietà per vicinanza geografica rende il traffico autonomo e ne garantisce il funzionamento anche in caso di non disponibilità degli altri siti centrali. 
+    Nella topologia di rete di esempio precedente sono presenti tre aree di rete, ognuna con un sito centrale di Skype for Business Server che gestisce il controllo di ammissione di chiamata. Il sito centrale appropriato per un'area di rete viene scelto in base alla vicinanza geografica. Poiché il traffico multimediale sarà più intenso all'interno delle aree di rete, la proprietà per vicinanza geografica rende il traffico autonomo e ne garantisce il funzionamento anche in caso di non disponibilità degli altri siti centrali. 
 
-    In questo esempio, una distribuzione di Skype for Business denominata Chicago è il sito centrale dell'area Nord America.
+    In questo esempio, una distribuzione di Skype for Business denominata Chicago è il sito centrale per l'area nordamericana.
 
-    Tutti gli utenti di Skype for Business in Nord America sono ospitati su server nella distribuzione di Chicago. Nella tabella seguente sono elencati i siti centrali per tutte e tre le aree di rete.
+    Tutti gli utenti di Skype for Business in Nord America sono ospitati in server nella distribuzione di Chicago. Nella tabella seguente sono elencati i siti centrali per tutte e tre le aree di rete.
 
     **Aree di rete e siti centrali associati**
 
@@ -113,11 +113,11 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
 5. Per ogni collegamento WAN con vincoli di larghezza di banda, determinare quanto segue:
 
-   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causa il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
+   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causerà il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
 
    - Limite di larghezza di banda che si desidera impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 175 kbps, ma può essere modificato dall'amministratore.
 
-   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video causa il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
+   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video causerà il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
 
    - Limite di larghezza di banda che si desidera impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 700 kbps, ma può essere modificato dall'amministratore.
 
@@ -127,7 +127,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
      | **Sito di rete**   | **Area di rete**   | **Limite di larghezza di banda**      | **Limite audio**   | **Limite sessione audio** | **Limite video**   | **Limite sessione video** |
      |:-------------------|:---------------------|:------------------|:------------------|:------------------------|:------------------|:------------------------|
      | Albuquerque  <br/> | Nord America  <br/> | 5,000  <br/>      | 2.000  <br/>      | 175  <br/>              | 1,400  <br/>      | 700  <br/>              |
-     | Reno  <br/>        | Nord America  <br/> | 10.000  <br/>     | 4,000  <br/>      | 175  <br/>              | 2,800  <br/>      | 700  <br/>              |
+     | Reno  <br/>        | Nord America  <br/> | 10,000  <br/>     | 4,000  <br/>      | 175  <br/>              | 2,800  <br/>      | 700  <br/>              |
      | Portland  <br/>    | Nord America  <br/> | 5,000  <br/>      | 4,000  <br/>      | 175  <br/>              | 2,800  <br/>      | 700  <br/>              |
      | New York  <br/>    | Nord America  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/>       | (nessun limite)  <br/> | (nessun limite)  <br/>       |
      | Chicago  <br/>     | Nord America  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/>       | (nessun limite)  <br/> | (nessun limite)  <br/>       |
@@ -140,7 +140,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
     > Ogni subnet della rete deve essere associata a un sito di rete, anche se non vincolato dalla larghezza di banda, poiché il servizio Controllo di ammissione di chiamata utilizza le informazioni delle subnet per determinate il sito di rete in cui è posizionato un endpoint. Dopo che sono state determinate le posizioni in entrambe le parti della sessione, il servizio Controllo di ammissione di chiamata può determinare se la larghezza di banda è sufficiente per stabilire una chiamata. Quando viene stabilita una sessione su un collegamento senza limiti di larghezza di banda, viene generato un avviso. 
 
     > [!IMPORTANT]
-    > Se si distribuiscono Audio/Video Edge Server, gli indirizzi IP pubblici di ognuno di questi server deve essere associato al sito di rete in cui è distribuito il server. Ogni indirizzo IP pubblico dell'A/V Edge Server deve essere aggiunto alle impostazioni di configurazione di rete come subnet con subnet mask 32. Se ad esempio si distribuiscono A/V Edge Server nel sito di Chicago, creare per ogni indirizzo IP esterno di tali server una subnet con subnet mask 32 e associare il sito di rete Chicago a tali subnet. Per informazioni dettagliate sugli indirizzi IP pubblici, vedere [Pianificare i requisiti di rete per Skype for Business.](../../plan-your-deployment/network-requirements/network-requirements.md) 
+    > Se si distribuiscono Audio/Video Edge Server, gli indirizzi IP pubblici di ognuno di questi server deve essere associato al sito di rete in cui è distribuito il server. Ogni indirizzo IP pubblico dell'A/V Edge Server deve essere aggiunto alle impostazioni di configurazione di rete come subnet con subnet mask 32. Se ad esempio si distribuiscono A/V Edge Server nel sito di Chicago, creare per ogni indirizzo IP esterno di tali server una subnet con subnet mask 32 e associare il sito di rete Chicago a tali subnet. Per informazioni dettagliate sugli indirizzi IP pubblici, vedi [Pianificare i requisiti di rete per Skype for Business.](../../plan-your-deployment/network-requirements/network-requirements.md) 
 
     Viene generato un avviso Key Health Indicator (KHI) in cui viene specificato un elenco di indirizzi IP presenti nella rete che non sono associati a una subnet oppure la cui subnet non è associata a un sito di rete. Questo avviso viene generato una sola volta ogni 8 ore. Di seguito vengono riportati un esempio e le informazioni rilevanti dell'avviso:
 
@@ -168,20 +168,20 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
    | **Sito di rete**   | **Area di rete**   | **Limite di larghezza di banda**      | **Limite audio**   | **Limite sessione audio** | **Limite video**   | **Limite sessione video** | **Subnet**                                                            |
    |:-------------------|:---------------------|:------------------|:------------------|:------------------------|:------------------|:------------------------|:-----------------------------------------------------------------------|
    | Albuquerque  <br/> | Nord America  <br/> | 5,000  <br/>      | 2.000  <br/>      | 175  <br/>              | 1,400  <br/>      | 700  <br/>              | 172.29.79.0/23, 157.57.215.0/25, 172.29.90.0/23, 172.29.80.0/24  <br/> |
-   | Reno  <br/>        | Nord America  <br/> | 10.000  <br/>     | 4,000  <br/>      | 175  <br/>              | 2,800  <br/>      | 700  <br/>              | 157.57.210.0/23, 172.28.151.128/25  <br/>                              |
+   | Reno  <br/>        | Nord America  <br/> | 10,000  <br/>     | 4,000  <br/>      | 175  <br/>              | 2,800  <br/>      | 700  <br/>              | 157.57.210.0/23, 172.28.151.128/25  <br/>                              |
    | Portland  <br/>    | Nord America  <br/> | 5,000  <br/>      | 4,000  <br/>      | 175  <br/>              | 2,800  <br/>      | 700  <br/>              | 172.29.77.0/24 10.71.108.0/24, 157.57.208.0/23  <br/>                  |
    | New York  <br/>    | Nord America  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/>       | (nessun limite)  <br/> | (nessun limite)  <br/>       | 172.29.80.0/23, 157.57.216.0/25, 172.29.91.0/23, 172.29.81.0/24  <br/> |
    | Chicago  <br/>     | Nord America  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/>       | (nessun limite)  <br/> | (nessun limite)  <br/>       | 157.57.211.0/23, 172.28.152.128/25  <br/>                              |
    | Detroit  <br/>     | Nord America  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/> | (nessun limite)  <br/>       | (nessun limite)  <br/> | (nessun limite)  <br/>       | 172.29.78.0/24 10.71.109.0/24, 157.57.209.0/23  <br/>                  |
 
 
-7. In Skype for Business Server il controllo di ammissione di chiamata, le connessioni tra le aree di rete sono denominate collegamenti area. Come per i siti di rete, determinare per ogni collegamento area gli aspetti seguenti:
+7. In Controllo di ammissione di chiamata di Skype for Business Server, le connessioni tra le aree di rete sono denominate collegamenti di area geografica. Come per i siti di rete, determinare per ogni collegamento area gli aspetti seguenti:
 
-   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causa il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
+   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causerà il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
 
    - Limite di larghezza di banda che si desidera impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 175 kbps, ma può essere modificato dall'amministratore.
 
-   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video causa il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
+   - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video causerà il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
 
    - Limite di larghezza di banda che si desidera impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 700 kbps, ma può essere modificato dall'amministratore.
 
@@ -195,7 +195,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
    | **Nome collegamento area**  | **Prima area**     | **Seconda area** | **Limite di larghezza di banda**  | **Limite audio** | **Limite sessione audio** | **Limite video** | **Limite sessione video** |
    |:----------------------|:---------------------|:------------------|:--------------|:----------------|:------------------------|:----------------|:------------------------|
    | NA-EMEA-LINK  <br/>   | Nord America  <br/> | EMEA  <br/>       | 50.000  <br/> | 20,000  <br/>   | 175  <br/>              | 14,000  <br/>   | 700  <br/>              |
-   | EMEA-APAC-LINK  <br/> | EMEA  <br/>          | APAC  <br/>       | 25.000  <br/> | 10.000  <br/>   | 175  <br/>              | 7,000  <br/>    | 700  <br/>              |
+   | EMEA-APAC-LINK  <br/> | EMEA  <br/>          | APAC  <br/>       | 25.000  <br/> | 10,000  <br/>   | 175  <br/>              | 7,000  <br/>    | 700  <br/>              |
 
 
 8. Definire una route tra ogni coppia di aree di rete.
@@ -215,11 +215,11 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
 9. Per ogni coppia di siti di rete direttamente connessi tramite un collegamento singolo, denominato collegamento tra siti, determinare quanto segue:
 
-     - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causa il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
+     - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni audio simultanee. Se una nuova sessione audio causerà il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
 
      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione audio. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 175 kbps, ma può essere modificato dall'amministratore.
 
-     - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video causa il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
+     - Limite di larghezza di banda globale che si desidera impostare per tutte le sessioni video simultanee. Se una nuova sessione video causerà il superamento di questo limite, Skype for Business Server non consente l'avvio della sessione.
 
      - Limite di larghezza di banda che si desidera impostare per ogni singola sessione video. Il limite di larghezza di banda predefinito per il servizio Controllo di ammissione di chiamata è 700 kbps, ma può essere modificato dall'amministratore.
 
@@ -238,6 +238,4 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 Dopo aver raccolto le informazioni necessarie, è possibile eseguire la distribuzione del controllo di ammissione di chiamata tramite Skype for Business Server Management Shell o il Pannello di controllo di Skype for Business Server.
 
 > [!NOTE]
-> Anche se è possibile eseguire la maggior parte delle attività di configurazione di rete utilizzando il Pannello di controllo di Skype for Business Server, per creare subnet e collegamenti tra siti, è necessario utilizzare Skype for Business Server Management Shell. Per informazioni dettagliate, [vedere New-CsNetworkSubnet](https://docs.microsoft.com/powershell/module/skype/new-csnetworksubnet?view=skype-ps) e [New-CsNetworkInterSitePolicy.](https://docs.microsoft.com/powershell/module/skype/new-csnetworkintersitepolicy?view=skype-ps) 
-
-
+> Sebbene sia possibile eseguire la maggior parte delle attività di configurazione di rete utilizzando il Pannello di controllo di Skype for Business Server, per creare subnet e collegamenti tra siti, è necessario utilizzare Skype for Business Server Management Shell. Per informazioni dettagliate, [vedere New-CsNetworkSubnet](/powershell/module/skype/new-csnetworksubnet?view=skype-ps) e [New-CsNetworkInterSitePolicy.](/powershell/module/skype/new-csnetworkintersitepolicy?view=skype-ps)

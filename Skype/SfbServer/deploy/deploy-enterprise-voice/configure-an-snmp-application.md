@@ -15,21 +15,21 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: c4b4a736-3b2e-45b9-a965-19d22161ad57
-description: Configurare un'applicazione SNMP per l'utilizzo con il servizio E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: eb1947f24968dccc6f45b6d8ea3a7df42282a58f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Configurare un'applicazione SNMP per l'utilizzo con E9-1-1 in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: f8b4c7503524dacdc20e85fc68f0a79286e38c2e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804156"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103632"
 ---
 # <a name="configure-an-snmp-application-in-skype-for-business-server"></a>Configurare un'applicazione SNMP in Skype for Business Server
  
-Configurare un'applicazione SNMP per l'utilizzo con il servizio E9-1-1 in Skype for Business Server VoIP aziendale. 
+Configurare un'applicazione SNMP per l'utilizzo con E9-1-1 in Skype for Business Server VoIP aziendale. 
   
 Skype for Business Server include un'interfaccia di servizio Web standard che è possibile utilizzare per connettere il servizio Informazioni percorso alle applicazioni SNMP (Simple Network Management Protocol) che corrispondono agli indirizzi MAC con le informazioni sulla porta e sullo switch. 
   
-Se è installata un'applicazione SNMP e il servizio informazioni percorso non riesce a trovare una corrispondenza nel database delle località, il servizio informazioni percorso esegue automaticamente una query sull'applicazione utilizzando l'indirizzo MAC fornito dal client. Il servizio informazioni percorso utilizza quindi le informazioni sulle porte e sui commutatore restituite dall'applicazione SNMP per interrogare nuovamente il database delle località.
+Se è installata un'applicazione SNMP e il servizio informazioni percorso non riesce a trovare una corrispondenza nel database delle località, il servizio Informazioni percorso esegue automaticamente una query sull'applicazione utilizzando l'indirizzo MAC fornito dal client. Il servizio Informazioni percorso utilizza quindi le informazioni sulla porta e sullo switch restituite dall'applicazione SNMP per eseguire nuovamente una query sul database delle località.
   
 > [!NOTE]
 > Gli indirizzi MAC non sono disponibili nei computer che eseguono Windows 8. 
@@ -46,5 +46,4 @@ Se è installata un'applicazione SNMP e il servizio informazioni percorso non ri
 
 ## <a name="see-also"></a>Vedere anche
 
-[Set-CsWebServiceConfiguration](https://docs.microsoft.com/powershell/module/skype/set-cswebserviceconfiguration?view=skype-ps)
-
+[Set-CsWebServiceConfiguration](/powershell/module/skype/set-cswebserviceconfiguration?view=skype-ps)

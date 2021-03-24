@@ -22,38 +22,38 @@ f1.keywords:
 ms.custom:
 - Phone System
 - seo-marvel-mar2020
-description: Scopri come configurare Skype for Business in modo che usi un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica della tua organizzazione.
-ms.openlocfilehash: 988f09141913c72b9334b28d2c218b15bdbf3376
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+description: Scopri come configurare Skype for Businesses per usare un'altra lingua per il messaggio di saluto della segreteria telefonica predefinito dell'organizzazione.
+ms.openlocfilehash: f6fb890d52e052afffccbfe753ab5b3b8a1bb338
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691392"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51102672"
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 
-Se sei un amministratore [globale,](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)puoi configurare Skype for Business in modo da riprodurre il messaggio di saluto predefinito della segreteria telefonica in un'altra lingua. Il saluto di sistema predefinito è qualcosa come: "Per favore lascia un messaggio a Mario Rossi. Registra il messaggio dopo il segnale acustico. Al termine della registrazione, interrompi la chiamata o premi il tasto cancelletto per altre opzioni". 
+Gli amministratori [globali](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)possono configurare Skype for Business per riprodurre il messaggio di saluto predefinito della segreteria telefonica in un'altra lingua. Il saluto di sistema predefinito è qualcosa come: "Per favore lascia un messaggio a Mario Rossi. Registra il messaggio dopo il segnale acustico. Al termine della registrazione, interrompi la chiamata o premi il tasto cancelletto per altre opzioni". 
   
  **Prima di tutto, leggi questa importante informazione:**
   
 - **Le lingue disponibili sono determinate dalla località dell'organizzazione**. Ad esempio, se la tua organizzazione si trova negli Stati Uniti, puoi impostare inglese o spagnolo come lingua predefinita. Se la tua organizzazione si trova in Canada, puoi scegliere fra inglese e francese. Per l'elenco delle lingue disponibili, vedi la sezione [Lingue per saluti e messaggi della segreteria telefonica da Skype for Business](languages-for-voicemail-greetings-and-messages.md).
     
-- **Modifica delle lingue per il messaggio di saluto della segreteria telefonica e i messaggi della segreteria telefonica dell'utente.** È possibile cambiare il lanaguage preferito per gli utenti, che cambierà la lingua del messaggio di saluto della segreteria telefonica e dei messaggi della segreteria telefonica inviati alla propria cassetta postale di Outlook. Per istruzioni, vedere [Come impostare le impostazioni di lingua e area geografica per Microsoft 365 o Office 365] ( https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region) . 
+- **Modifica delle lingue per i messaggi di saluto e i messaggi della segreteria telefonica dei singoli utenti.** È possibile modificare la lingua preferita per gli utenti, che cambierà la lingua dei messaggi di saluto della segreteria telefonica e della segreteria telefonica inviati alla cassetta postale di Outlook. Per istruzioni, vedere [Come impostare le impostazioni di lingua e area geografica per Microsoft 365 o Office 365] ( https://docs.microsoft.com/office365/troubleshoot/access-management/set-language-and-region) . 
     
     > [!NOTE]
-    > Gli utenti possono cambiare la lingua del messaggio di saluto tramite le impostazioni dopo l'accesso seguendo le istruzioni in Cambiare la lingua visualizzata e il fuso orario [in Microsoft 365 per le aziende](https://support.office.com/en-us/article/change-your-display-language-and-time-zone-in-microsoft-365-for-business-6f238bff-5252-441e-b32b-655d5d85d15b?ui=en-US&rs=en-US&ad=US)
+    > Gli utenti possono cambiare la propria lingua di apertura tramite le impostazioni dopo l'accesso seguendo le istruzioni disponibili in Cambiare la lingua di visualizzazione e il fuso orario [in Microsoft 365 per le aziende](https://support.office.com/en-us/article/change-your-display-language-and-time-zone-in-microsoft-365-for-business-6f238bff-5252-441e-b32b-655d5d85d15b?ui=en-US&rs=en-US&ad=US)
   
 - **Vuoi registrare il messaggio in uscita della segreteria telefonica?** Vedi [Controllare le opzioni e la segreteria telefonica di Skype for Business](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8). Per Microsoft Teams - Gli utenti possono modificare le impostazioni della segreteria telefonica dalle impostazioni [del client desktop di Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f)
 
-- **Vuoi cambiare la lingua del prompt della segreteria telefonica?** Per Skype for Business - [https://mysettings.lync.com/voicemail](https://mysettings.lync.com/voicemail) e scegli una nuova lingua in Lingua **richiesta.** Per Microsoft Teams - Gli utenti possono modificare il messaggio di saluto della segreteria telefonica dalle impostazioni [del client desktop di Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f)
+- **Si vuole cambiare la lingua del prompt della segreteria telefonica?** Per Skype for Business e [https://mysettings.lync.com/voicemail](https://mysettings.lync.com/voicemail) scegli una nuova lingua in Lingua **richiesta.** Per Microsoft Teams - Gli utenti possono modificare il messaggio di saluto della segreteria telefonica dalle impostazioni [del client desktop di Teams](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f)
     
 ## <a name="change-the-system-language-for-everyone-in-your-organization"></a>Cambiare la lingua di sistema per tutti i membri dell'organizzazione.
 
 1. Accedere con l'account [di amministratore globale](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) all'indirizzo [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) . 
     
-2. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Impostazioni**  >  **profilo**  >  **organizzazione.** 
+2. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Impostazioni**  >  **Impostazioni Profilo**  >  **organizzazione.** 
     
-     ![Screenshot che mostra la scelta di Impostazioni e quindi Profilo organizzazione.](media/9d9de520-bb84-409f-9417-96bd8ec86c48.png)
+     ![Screenshot che mostra la scelta di Impostazioni e quindi profilo organizzazione.](media/9d9de520-bb84-409f-9417-96bd8ec86c48.png)
   
 3. Scegliere **Modifica**.
     
@@ -69,15 +69,14 @@ Se sei un amministratore [globale,](https://support.office.com/article/da585eea-
     
 - [Configurare i piani per chiamate](set-up-calling-plans.md)
     
-- [Pianificare il sistema telefonico in Microsoft 365 o Office 365 con connettività PSTN locale in Skype for Business Server](https://go.microsoft.com/fwlink/?LinkId=717947)
+- [Pianificare il sistema telefonico in Microsoft 365 o Office 365 con connettività PSTN locale in Skype for Business Server](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-phone-system-with-on-premises-pstn-connectivity)
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Cambiare la lingua visualizzata e il fuso orario in Microsoft 365 o Office 365 per le aziende](https://support.office.com/article/Change-your-display-language-and-time-zone-in-Office-365-for-Business-6f238bff-5252-441e-b32b-655d5d85d15b)
+- [Cambiare la lingua di visualizzazione e il fuso orario in Microsoft 365 o Office 365 per le aziende](https://support.office.com/article/Change-your-display-language-and-time-zone-in-Office-365-for-Business-6f238bff-5252-441e-b32b-655d5d85d15b)
     
 - [Aggiungere una lingua o impostare le preferenze di lingua di Office 2010 e versioni successive](https://support.office.com/article/Add-a-language-or-set-language-preferences-in-Office-663d9d94-ca99-4a0d-973e-7c4a6b8a827d)
     
 - [Abilitare o cambiare la lingua del layout di tastiera](https://support.office.com/article/Enable-or-change-a-keyboard-layout-language-1c2242c0-fe15-4bc3-99bc-535de6f4f258)
     
   
- 

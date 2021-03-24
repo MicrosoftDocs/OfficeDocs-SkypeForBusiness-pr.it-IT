@@ -1,5 +1,5 @@
 ---
-title: Modificare i numeri di telefono nel bridge per audioconferenza
+title: Modificare i numeri di telefono nel bridge di audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,70 +22,70 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Informazioni sui passaggi necessari per assegnare un nuovo numero di telefono di servizio al bridge di conferenza per espandere la copertura per gli utenti.
-ms.openlocfilehash: e2e1aa3d5626f6592f22e0850a8c7419d7549b38
-ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
+description: Informazioni sui passaggi necessari per assegnare un nuovo numero di telefono del servizio al bridge di conferenza per espandere la copertura per gli utenti.
+ms.openlocfilehash: f477c583db36e6dee514a84f32de202361d01c11
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50569188"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51102662"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
-Quando acquisti licenze **per i servizi di audioconferenza,** Microsoft ospita il bridge di audioconferenza per l'organizzazione. Il bridge per i servizi di audioconferenza fornisce numeri di telefono per l'accesso esterno da diverse località, in modo che organizzatori e partecipanti possano usarli per partecipare alle riunioni Skype for Business o Microsoft Teams con un telefono.
+Quando si acquistano licenze **di audioconferenza,** Microsoft ospita il bridge di audioconferenza per l'organizzazione. Il bridge di audioconferenza fornisce numeri di telefono con accesso esterno da posizioni diverse, in modo che gli organizzatori e i partecipanti possano usarli per partecipare alle riunioni Skype for Business o Microsoft Teams con un telefono.
   
-Oltre ai numeri di telefono già assegnati al bridge di conferenza, puoi ottenere numeri di servizio aggiuntivi [(numeri](/microsoftteams/getting-service-phone-numbers) a pedaggio e numeri verde utilizzati per le audioconferenze) da altre località e quindi assegnarli al bridge di conferenza per poter espandere la copertura per gli utenti.
+Oltre ai numeri di telefono già assegnati al bridge di conferenza, è possibile ottenere altri numeri di servizio [(numeri](./getting-service-phone-numbers.md) a numero verde e a numero verde usati per le audioconferenze) da altre posizioni e quindi assegnarli al bridge di conferenza in modo da espandere la copertura per gli utenti.
   
 > [!NOTE]
-> Per poter assegnare/annullare l'assegnazione di un numero di telefono per un bridge di conferenza, il numero di telefono deve essere un *numero* di ' servizio'. Per vedere il tipo di numero, passare a Numeri di telefono vocali nell'interfaccia di amministrazione di Microsoft Teams e cercare nella  >   colonna **Tipo di** numero. I Crediti comunicazioni Microsoft 365 o Office 365 devono essere prima impostati per consentire agli utenti di accedere al bridge con un numero verde.
+> Per poter assegnare/annullare l'assegnazione di un numero di telefono per un bridge di conferenza, il numero di telefono deve essere un *numero* di servizio. Per visualizzare il tipo di numero, passare a Numeri di telefono vocale nell'interfaccia di amministrazione di Microsoft Teams e cercare  >   nella colonna **Tipo di** numero. I crediti per le comunicazioni di Microsoft 365 o Office 365 devono essere impostati per primi per consentire agli utenti di accedere al bridge su un numero verde.
 
 ## <a name="steps-when-you-are-assigning-a-new-service-phone-number-to-your-conference-bridge"></a>Istruzioni per assegnare un numero telefonico di servizio al tuo bridge di conferenza
 
-### <a name="step-1---assign-the-new-phone-number-to-your-audio-conferencing-bridge"></a>Passaggio 1 - Assegnare il nuovo numero di telefono al bridge per audioconferenza
+### <a name="step-1---assign-the-new-phone-number-to-your-audio-conferencing-bridge"></a>Passaggio 1 - Assegnare il nuovo numero di telefono al bridge di audioconferenza
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nel riquadro di spostamento sinistro passa a **Numeri**  >  **di telefono vocali.**
+1. Nel riquadro di spostamento sinistro passare a **Numeri di telefono**  >  **vocale.**
 
-2. Selezionare il numero di telefono nell'elenco e fare clic su **Modifica.**
+2. Selezionare il numero di telefono nell'elenco e fare clic su **Modifica**.
 
-3. Nella pagina **Modifica,** in **Assegnata a,** espandere l'elenco a discesa e selezionare **Applica bridge**  >  **conferenza.**
+3. Nella pagina **Modifica,** in **Assegnato a,** espandere l'elenco a discesa e quindi selezionare **Bridge di**  >  **conferenza Applica.**
 
 ### <a name="step-2---change-the-default-phone-number-of-your-conference-bridge-optional"></a>Passaggio 2 - Modificare il numero di telefono predefinito del bridge di conferenza (facoltativo)
 
-Il numero di telefono predefinito del bridge di conferenza definisce l'ID chiamante che verrà utilizzato quando una chiamata in uscita viene effettuato da un partecipante o dall'organizzatore all'interno di una riunione.
+Il numero di telefono predefinito del bridge di conferenza definisce l'ID chiamante che verrà usato quando un partecipante o l'organizzatore esegue una chiamata in uscita all'interno di una riunione.
 
-Solo un numero di servizio a numero verde può essere impostato come numero predefinito per il bridge di conferenza; i numeri di servizio gratuiti non possono essere impostati come numero **predefinito del bridge di conferenza.** Se assegni un numero di servizio a numero verde e desideri impostarlo come nuovo numero predefinito per il bridge di audioconferenza, effettua queste operazioni:
+È possibile impostare come numero predefinito per il bridge di conferenza solo un numero a pedaggio del servizio. I numeri verde del servizio non possono essere impostati **come numero predefinito del bridge di conferenza.** Se si sta assegnando un numero a pedaggio del servizio e si vuole impostarlo come nuovo numero predefinito per il bridge di audioconferenza, eseguire questa procedura:
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nel riquadro di spostamento sinistro, passare **a Bridge**  >  **conferenza riunioni.**
+1. Nel riquadro di spostamento sinistro passare a **Ponti**  >  **conferenza riunioni**.
 
-2. Evidenziare il numero di servizio a numero verde da configurare come predefinito.
+2. Evidenziare il numero a pedaggio del servizio che si vuole configurare come predefinito.
 
 3. Selezionare **Imposta come predefinito.**
  
-### <a name="step-3---change-the-default-phone-numbers-that-are-included-in-the-meeting-invites-of-users-optional"></a>Passaggio 3 - Modificare i numeri di telefono predefiniti inclusi negli inviti alle riunioni degli utenti (facoltativo)
+### <a name="step-3---change-the-default-phone-numbers-that-are-included-in-the-meeting-invites-of-users-optional"></a>Passaggio 3 - Modificare i numeri di telefono predefiniti inclusi negli inviti alla riunione degli utenti (facoltativo)
 
-I numeri di telefono predefiniti di un utente sono quelli inclusi nella convocazione di riunione quando pianificano una riunione. Per ulteriori informazioni, tra cui l'assegnazione dei numeri di telefono predefiniti per i nuovi utenti, consulta Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in Skype for Business [online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
+I numeri di telefono predefiniti di un utente sono quelli inclusi nelle convocazioni di riunione quando pianificano una riunione. Per altre informazioni, inclusa la modalità di assegnazione dei numeri di telefono predefiniti per i nuovi utenti, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in Skype for Business [online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nel riquadro di spostamento sinistro passare a **Utenti e** fare clic sul nome visualizzato dell'utente desiderato nell'elenco.
+1. Nel riquadro di spostamento sinistro passare a **Utenti** e fare clic sul nome visualizzato dell'utente desiderato nell'elenco.
 
-2. Accanto a **Audioconferenza,** fai clic su **Modifica.**
+2. Accanto a **Audioconferenza** fare clic su **Modifica.**
 
-3. In **Numero a verde o** **Numero** verde seleziona il numero nell'elenco a discesa e fai clic su **Applica.**
+3. In **Numero verde o** **Numero** verde selezionare il numero nell'elenco a discesa e fare clic su **Applica.**
 
-Dopo l'applicazione delle modifiche, i nuovi numeri di telefono predefiniti verranno inclusi nelle convocazioni di riunione degli organizzatori la volta successiva che pianificano una nuova riunione.
+Dopo l'applicazione delle modifiche, i nuovi numeri di telefono predefiniti verranno inclusi nelle convocazioni di riunione degli organizzatori alla successiva pianificazione di una nuova riunione.
 
-### <a name="step-4---update-existing-meeting-invites-of-users-using-the-meeting-migration-service-optional"></a>Passaggio 4 - Aggiornare gli inviti alle riunioni esistenti degli utenti che usano il servizio Meeting Migration Service (facoltativo)
+### <a name="step-4---update-existing-meeting-invites-of-users-using-the-meeting-migration-service-optional"></a>Passaggio 4 - Aggiornare gli inviti a riunioni esistenti degli utenti usando il servizio di migrazione delle riunioni (facoltativo)
 
 Per i due passaggi successivi, è necessario iniziare a Windows PowerShell.
   
-Se sono stati aggiornati i numeri di telefono predefiniti inclusi negli inviti alle riunioni per alcuni o tutti gli utenti, è possibile aggiornare gli inviti alle riunioni già inviati agli utenti dell'organizzazione prima che i loro numeri di telefono predefiniti siano stati modificati mediante il servizio Meeting Migration Service. Per ulteriori informazioni, consulta [Configurazione del servizio MMS (Meeting Migration Service)](/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
+Se sono stati aggiornati i numeri di telefono predefiniti inclusi negli inviti alla riunione per alcuni o tutti gli utenti, è possibile aggiornare facoltativamente gli inviti alle riunioni già inviati agli utenti dell'organizzazione prima che i numeri di telefono predefiniti siano stati modificati con il servizio di migrazione delle riunioni. Per ulteriori informazioni, consulta [Configurazione del servizio MMS (Meeting Migration Service)](/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
   
-- Eseguire il servizio MMS (Meeting Migration Service) per gli utenti che hanno modificato i numeri di telefono predefiniti nel Passaggio 2. Per farlo, eseguire il comando seguente:
+- Eseguire il servizio di migrazione delle riunioni (MMS) per gli utenti che hanno modificato i numeri di telefono predefiniti nel passaggio 2. Per farlo, eseguire il comando seguente:
 
 ```PowerShell
     Start-CsExMeetingMigration user@contoso.com
@@ -100,30 +100,30 @@ Se sono stati aggiornati i numeri di telefono predefiniti inclusi negli inviti a
 ## <a name="steps-when-you-are-unassigning-a-service-phone-number-for-a-conferencing-bridge"></a>Istruzioni per annullare l'assegnazione di un numero telefonico di servizio da un bridge di conferenza
 
 
-Quando si annulla l'assegnazione di un numero di telefono da un ponte di conferenza, gli utenti non saranno più in grado di partecipare alle riunioni con quel numero di telefono. Dato che il numero di telefono cambia, è importante aggiornare tutti gli utenti che potrebbero avere un numero di telefono come numero predefinito (se presente) e aggiornare gli inviti alle riunioni esistenti prima che l'assegnazione del numero di telefono al bridge di audioconferenza abbia un'assegnazione.
+Quando si annulla l'assegnazione di un numero di telefono da un ponte di conferenza, gli utenti non saranno più in grado di partecipare alle riunioni con quel numero di telefono. Poiché il numero di telefono cambia, è importante aggiornare tutti gli utenti che potrebbero avere un numero di telefono come numero predefinito (se presente) e aggiornare gli inviti alle riunioni esistenti prima che il numero di telefono non sia assegnato dal bridge di audioconferenza.
 
-Se il numero di telefono viene rimosso senza aggiornare gli utenti e le loro riunioni, gli inviti alle riunioni esistenti potrebbero contenere un numero di telefono che non funziona per partecipare alle riunioni.
+Se il numero di telefono viene rimosso senza aggiornare gli utenti e le riunioni, gli inviti alle riunioni esistenti potrebbero contenere un numero di telefono che non funziona per partecipare alle riunioni.
 
 Per i tre passi successivi, è necessario avviare Windows PowerShell. Per informazioni su come eseguire questa operazione, fai clic su [Vuoi sapere come gestire con Windows PowerShell?](change-the-phone-numbers-on-your-audio-conferencing-bridge.md#about-windows-powershell)
 
-### <a name="step-1---update-users-who-have-the-phone-number-to-be-unassigned-as-one-of-their-default-numbers"></a>Passo 1 - Aggiornare gli utenti che hanno il numero di telefono da annullare l'assegnazione come uno dei loro numeri predefiniti
+### <a name="step-1---update-users-who-have-the-phone-number-to-be-unassigned-as-one-of-their-default-numbers"></a>Passaggio 1 - Aggiornare gli utenti che hanno il numero di telefono da annullare l'assegnazione come uno dei numeri predefiniti
 
-Sostituire il numero a numero verde o a numero verde predefinito per tutti gli utenti che hanno come numero predefinito il numero da annullare e avviare il processo di ripianificazione delle loro riunioni. Per farlo, eseguire il comando seguente:
+Sostituire il numero verde o a pedaggio predefinito per tutti gli utenti che hanno il numero da annullare l'assegnazione come numero predefinito e avviare il processo di riprogrammazione delle riunioni. Per farlo, eseguire il comando seguente:
 
 ```PowerShell
 Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber <Number to be removed> -ToNumber <Number to be set as new default> -NumberType <"Toll" or "Toll-Free"> -RescheduleMeetings
 ```
  > [!IMPORTANT] 
- >Puoi anche modificare il numero a numero verde o a numero verde predefinito di utenti nell'interfaccia di amministrazione di Microsoft Teams. Tuttavia, questa azione non riprogrammerà automaticamente le riunioni. 
+ >È anche possibile modificare il numero verde o a numero verde predefinito di utenti nell'interfaccia di amministrazione di Microsoft Teams. Tuttavia, questa azione non riprogrammerà automaticamente le riunioni. 
  
- Per ulteriori informazioni, consulta Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in Skype for Business [online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
+ Per altre informazioni, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in Skype for Business [online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
 
   > [!NOTE]
   > A seconda delle dimensioni della tua organizzazione, questa operazione potrebbe richiedere un certo tempo.
 
 ### <a name="step-2---view-meeting-migration-status-using-windows-powershell"></a>Passo 2 - Visualizzare lo stato della migrazione delle riunioni con Windows PowerShell
 
-Tutte le riunioni verranno ripianificate una volta che non ci saranno operazioni in *sospeso* o *in* corso.
+Tutte le riunioni verranno riprogrammate quando non sono presenti operazioni *in* stato In sospeso *o In* corso.
 
 ```PowerShell
 Get-CsMeetingMigrationStatus -SummaryOnly
@@ -131,24 +131,24 @@ Get-CsMeetingMigrationStatus -SummaryOnly
 
 Per ulteriori informazioni sul servizio MMS (Meeting Migration Service), consulta [Configurazione del servizio MMS (Meeting Migration Service)](/SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms).
   
-### <a name="step-3---unassign-the-old-phone-number-from-the-audio-conferencing-bridge"></a>Passo 3 - Annullare l'assegnazione del vecchio numero di telefono dal bridge di audioconferenza
+### <a name="step-3---unassign-the-old-phone-number-from-the-audio-conferencing-bridge"></a>Passaggio 3 - Annullare l'assegnazione del vecchio numero di telefono dal bridge di audioconferenza
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono**.
 
-2. Se il numero di telefono è un numero verde, seleziona il numero di telefono nell'elenco e fai clic su **Rilascia.** Se il numero di telefono è a numero verde, contatta il [supporto Microsoft](https://go.microsoft.com/fwlink/?linkid=2091806) per ottenere l'annullamento dell'assegnazione.
+2. Se il numero di telefono è un numero verde, selezionare il numero nell'elenco e fare clic su **Rilascia**. Se il numero di telefono è a numero verde, contattare il [supporto tecnico Microsoft](/microsoft-365/admin/contact-support-for-business-products) per avere il numero di telefono non assegnato.
 
-3. Se il numero di telefono è un numero verde, fai clic su **Sì** nella finestra di conferma.
+3. Se il numero di telefono è un numero verde, fare clic su **Sì** nella finestra di conferma.
 
    > [!IMPORTANT]
-   > Dopo l'annullamento dell'assegnazione di un numero di telefono da un bridge per audioconferenza, il numero di telefono non sarà più disponibile per gli utenti per partecipare a riunioni nuove o esistenti.
+   > Dopo che un numero di telefono non è stato assegnato da un bridge di audioconferenza, il numero di telefono non sarà più disponibile per gli utenti per partecipare a riunioni nuove o esistenti.
 
 ### <a name="save-time-and-automate"></a>Risparmiare tempo e automatizzare
 
-Per risparmiare tempo automatizzando questo processo, puoi utilizzare i cmdlet [Set-CsOnlineDialInConferencingUser](https://go.microsoft.com/fwlink/?LinkId=617688) o **Set-CsOnlineDialInConferencingUserDefaultNumber.**
+Per risparmiare tempo automatizzando questo processo, è possibile usare i cmdlet [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/Set-CsOnlineDialInConferencingUser) o **Set-CsOnlineDialInConferencingUserDefaultNumber.**
 
-- Usa il cmdlet [Set-CsOnlineDialInConferencingUser](https://go.microsoft.com/fwlink/?LinkId=617688) per modificare il numero a pagamento o verde predefinito di utenti specifici.
+- Usa il cmdlet [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/Set-CsOnlineDialInConferencingUser) per modificare il numero a pagamento o verde predefinito di utenti specifici.
 
   - Per modificare il numero verde predefinito di un utente, esegui:
 
@@ -159,7 +159,7 @@ Per risparmiare tempo automatizzando questo processo, puoi utilizzare i cmdlet [
 - Usa il cmdlet **Set-CsOnlineDialInConferencingUserDefaultNumber** per cambiare il numero a pagamento o verde predefinito di utenti in base al loro numero predefinito originale o alla loro località.
 
     > [!NOTE]
-    > Per trovare il BridgeID, usa **Il Get-CsOnlineDialInConferencingBridge.**
+    > Per trovare bridgeID, usare **Get-CsOnlineDialInConferencingBridge**.
 
   - Per modificare il numero verde predefinito di tutti gli utenti a cui ne manca uno in 8005551234, esegui:
 
@@ -186,7 +186,7 @@ Per risparmiare tempo automatizzando questo processo, puoi utilizzare i cmdlet [
 
 **Il pulsante Annulla assegnazione non è disponibile**
 
-Si vuole annullare l'assegnazione di un numero, ma il pulsante non è disponibile e, se si passa il mouse su di esso, si viene reindirizzati a contattare il supporto con il messaggio seguente "Non è possibile annullare l'assegnazione di numeri predefiniti o condivisi dal _bridge. Per annullare l'assegnazione dei numeri a verde dedicati, contatta il supporto._".
+Si vuole annullare l'assegnazione di un numero ma il pulsante non è disponibile e, se si passa il puntatore del mouse su di esso, si viene reindirizzati a contattare il supporto con il messaggio seguente: "I numeri predefiniti o condivisi non possono essere non assegnati dal _bridge. Per annullare l'assegnazione di numeri a pedaggio dedicati, contattare il supporto._".
 
 Per ottenere altre informazioni sui bridge, eseguire powershell seguente:
 ```PowerShell
@@ -195,26 +195,26 @@ Get-CsOnlineDialInConferencingBridge -Name "Conference Bridge"
 
 Il risultato, oltre ad altre informazioni come Identity, Name e Region, deve contenere anche DefaultServiceNumber.
 
-**Ad** esempio, per annullare l'assegnazione, defaultServiceNumber "8005551234"
+**Esempio,** per annullare l'assegnazione, defaultServiceNumber "8005551234"
 ```PowerShell
 Unregister-CsOnlineDialInConferencingServiceNumber -BridgeName "Conference Bridge" -RemoveDefaultServiceNumber 8005551234 
 ```
 
 ## <a name="about-windows-powershell"></a>Informazioni su Windows PowerShell
 
-Con Windows PowerShell puoi gestire gli utenti e cosa gli è consentito fare oppure no. Windows PowerShell consente di gestire Microsoft 365 o Office 365 e Skype for Business online tramite un unico punto di amministrazione, che consente di semplificare il lavoro quotidiano, soprattutto quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+Con Windows PowerShell puoi gestire gli utenti e cosa gli è consentito fare oppure no. Windows PowerShell può aiutarti a gestire Microsoft 365 o Office 365 e Skype for Business online usando un unico punto di amministrazione che può semplificare il lavoro quotidiano, soprattutto quando hai più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
 
-  - [Introduzione a Windows PowerShell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
 
-Windows PowerShell offre molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
-  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
 
-  - [Uso di Windows PowerShell per gestire Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [Uso di Windows PowerShell per gestire Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Modificare le impostazioni per un bridge per audioconferenza](change-the-settings-for-an-audio-conferencing-bridge.md)

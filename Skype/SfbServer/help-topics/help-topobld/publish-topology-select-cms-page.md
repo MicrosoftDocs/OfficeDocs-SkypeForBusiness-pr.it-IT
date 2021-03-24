@@ -14,20 +14,20 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: df447066-2840-431b-bc4e-acf8aa692d71
-description: Pubblicare la topologia configurata utilizzando Generatore di topologie. Viene richiesto di selezionare da un elenco il Front End Server o il pool Front End che assumerà il ruolo di detenere l'archivio di gestione centrale. Questo ruolo può essere assegnato a un solo Front End Server o pool Front End alla volta.
-ms.openlocfilehash: ba166af4daee293b450e60909fb30a8757e2d70b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Pubblicare la topologia configurata utilizzando Generatore di topologie. Viene richiesto di selezionare da un elenco quale Front End Server o pool Front End assumerà il ruolo di conservare l'archivio di gestione centrale. Solo un Front End Server o un pool Front End può mantenere questo ruolo in un determinato momento.
+ms.openlocfilehash: c55cd337e7c49f943705671983a436397bf4e4e8
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823666"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51104402"
 ---
 # <a name="publish-topology-select-cms-page"></a>Pubblicare topologia, pagina Seleziona l'archivio di gestione centrale
 
-Pubblicare la topologia configurata utilizzando Generatore di topologie. Viene richiesto di selezionare da un elenco il Front End Server o il pool Front End che assumerà il ruolo di detenere l'archivio di gestione centrale. Questo ruolo può essere assegnato a un solo Front End Server o pool Front End alla volta.
+Pubblicare la topologia configurata utilizzando Generatore di topologie. Viene richiesto di selezionare da un elenco quale Front End Server o pool Front End assumerà il ruolo di conservare l'archivio di gestione centrale. Solo un Front End Server o un pool Front End può mantenere questo ruolo in un determinato momento.
 
-Per ulteriori informazioni sull'archivio di gestione centrale, vedere Spostare il server di gestione centrale [di Lync Server 2010 in Lync Server 2013.](https://technet.microsoft.com/library/30cc98f2-1916-4dbe-99d0-8df5368ed3ec.aspx)
+Per ulteriori informazioni sull'archivio di gestione centrale, vedere [Move the Lync Server 2010 Central Management Server to Lync Server 2013.](/previous-versions/office/lync-server-2013/move-the-lync-server-2010-central-management-server-to-lync-server-2013)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Move-CsManagementServer](https://docs.microsoft.com/powershell/module/skype/move-csmanagementserver?view=skype-ps)
+[Move-CsManagementServer](/powershell/module/skype/move-csmanagementserver?view=skype-ps)

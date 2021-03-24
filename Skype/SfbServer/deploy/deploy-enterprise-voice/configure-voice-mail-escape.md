@@ -1,5 +1,5 @@
 ---
-title: Configurare l'escape del sistema di caselle vocali in Skype for Business
+title: Configurare l'escape della segreteria telefonica in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,20 +16,20 @@ ms.collection:
 ms.custom: ''
 ms.assetid: a1d19e6c-82ff-4768-8ae5-da981368ce40
 description: "Riepilogo: informazioni su come configurare l'escape della segreteria telefonica in Skype for Business Server utilizzando Skype for Business Server Management Shell."
-ms.openlocfilehash: c6326360a0e49715feb7e9f9c3c123ec42b9c330
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c74142cf3b0f6c9d5a871e116d8e163a095ad3cd
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824926"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51106372"
 ---
-# <a name="configure-voice-mail-escape-in-skype-for-business"></a>Configurare l'escape del sistema di caselle vocali in Skype for Business
+# <a name="configure-voice-mail-escape-in-skype-for-business"></a>Configurare l'escape della segreteria telefonica in Skype for Business
 
-**Riepilogo:** Informazioni su come configurare l'escape della segreteria telefonica in Skype for Business Server utilizzando Skype for Business Server Management Shell.
+**Riepilogo:** Informazioni su come configurare l'escape della segreteria telefonica in Skype for Business Server tramite Skype for Business Server Management Shell.
 
-Quando un utente configura lo squillo simultaneo su un telefono cellulare, un chiamante in genere viene instradato alla segreteria telefonica personale dell'utente se il telefono cellulare è spento, alimentato a batteria o fuori portata. Con Skype for Business Server, gli utenti possono scegliere di instradare le chiamate aziendali al sistema di caselle vocali aziendali. In particolare, è possibile configurare un timer e, se la segreteria telefonica dell'operatore risponde alla chiamata entro l'intervallo di tempo definito, Skype for Business Server si disconnette dal sistema di caselle vocali dell'operatore (e dalla segreteria telefonica personale dell'utente), mentre gli endpoint rimanenti dell'utente nel sistema aziendale continuano a squillare. In questo modo, il chiamante viene automaticamente instradato alla segreteria telefonica aziendale dell'utente.
+Quando un utente configura lo squillo simultaneo a un telefono cellulare, un chiamante in genere viene instradato alla segreteria telefonica personale dell'utente se il telefono cellulare è spento, fuori batteria o fuori portata. Con Skype for Business Server, gli utenti possono scegliere di instradare le chiamate aziendali al sistema di caselle vocali aziendali. In particolare, è possibile configurare un timer e, se la segreteria telefonica dell'operatore risponde entro l'intervallo di tempo definito, Skype for Business Server si disconnette dal sistema di caselle vocali dell'operatore (e dalla segreteria telefonica personale dell'utente), mentre gli endpoint rimanenti dell'utente nel sistema aziendale continuano a squillare. In questo modo, il chiamante viene automaticamente instradato alla segreteria telefonica aziendale dell'utente.
 
-Questa configurazione viene eseguita utilizzando il cmdlet Di Skype for Business Server Management Shell, **Set-CsVoicePolicy,** a livello di criteri vocali, con i parametri seguenti.
+Questa configurazione viene eseguita utilizzando il cmdlet Di Skype for Business Server Management Shell, **Set-CsVoicePolicy**, a livello di criteri vocali, con i parametri seguenti.
 
 ### <a name="to-configure-voice-mail-escape"></a>Per configurare l'escape del sistema di caselle vocali
 
@@ -50,5 +50,4 @@ Set-CsVoicePolicy -Identity site:SitePolicy -EnableVoiceMailEscapeTimer $true -P
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurazione di criteri vocali e i record utilizzo PSTN per autorizzare privilegi e caratteristiche di chiamata](https://technet.microsoft.com/library/63f22010-a3d7-4cbd-86e8-6fc0e13c2b84.aspx)
-
+[Configurazione di criteri vocali e i record utilizzo PSTN per autorizzare privilegi e caratteristiche di chiamata](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-voice-policies-and-pstn-usage-records-to-authorize-calling-features-and-privileges)

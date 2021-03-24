@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e6ff27e0-e2d1-4445-840f-08f738200c20
 description: 'Riepilogo: creare o modificare i criteri vocali e configurare i record di utilizzo PSTN utilizzando il Pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 3e0fe5cebfc9d46f5c21554f1e18b54799d2d1e8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ca97c4c75004849f2ea404c083878da6c726c2e6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830406"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51105762"
 ---
 # <a name="create-or-modify-a-voice-policy-and-configure-pstn-usage-records-in-skype-for-business"></a>Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business
 
@@ -38,46 +38,46 @@ ms.locfileid: "49830406"
 
 3. Nella pagina **Criteri vocali** fare clic su **Nuovo** e quindi selezionare un ambito per il nuovo criterio:
 
-   - **I criteri sito** si applicano a un intero sito, ad eccezione di eventuali utenti o gruppi assegnati a un criterio utente. Se si seleziona Sito per un ambito di criteri, scegliere il sito nella finestra di dialogo **Seleziona** un sito. Se per un sito è già stato creato un criterio vocale, il sito non verrà visualizzato nella finestra **di** dialogo Seleziona sito.
+   - **I criteri sito** si applicano a un intero sito, ad eccezione degli eventuali utenti o gruppi assegnati a un criterio utente. Se si seleziona Sito per un ambito di criteri, scegliere il sito nella **finestra di dialogo Seleziona** sito. Se è già stato creato un criterio vocale per un sito, il sito non verrà visualizzato nella **finestra di** dialogo Seleziona un sito.
 
    - **I criteri utente** possono essere applicati a utenti o gruppi specifici.
 
 4. Se l'ambito dei criteri vocali è Utente, immettere un nome descrittivo per il criterio nel **campo** Nome.
 
     > [!NOTE]
-    > Se l'ambito dei criteri vocali è Sito, il campo **Nome** **in** Nuovi criteri vocali viene prepopolato con il nome del sito e non può essere modificato.
+    > Se l'ambito dei criteri vocali è Site, il campo **Name** in **New Voice Policy** viene prepopolato con il nome del sito e non può essere modificato.
 
 5. (Facoltativo) Immettere ulteriori informazioni descrittive per il criterio vocale.
 
-6. Selezionare o deselezionare le caselle di controllo seguenti per abilitare o disabilitare ognuna delle **funzionalità di chiamata** per questo criterio vocale:
+6. Selezionare o deselezionare le caselle di controllo seguenti per abilitare o disabilitare ognuna delle funzionalità **di chiamata** per questo criterio vocale:
 
-   - **L'escape** del sistema di caselle vocali impedisce che le chiamate vengano instradati immediatamente al sistema di caselle vocali del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, spento dalla batteria o fuori intervallo.
+   - **L'escape** della casella vocale impedisce che le chiamate vengano instradati immediatamente al sistema di caselle vocali del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, fuori batteria o fuori intervallo.
 
      > [!NOTE]
      > Questa funzionalità è configurabile solo tramite Skype for Business Server Management Shell
 
    - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Skype for Business Server offre una gamma significativamente più ampia di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
 
-   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al suo manager di squillare tutti i target di squillo simultanei del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
+   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio responsabile di squillare tutte le destinazioni di squillo simultanee del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
 
    - Il **trasferimento di chiamata** consente agli utenti di trasferire chiamate ad altri utenti. Funzionalità abilitata per impostazione predefinita.
 
-   - **Il parcheggio di** chiamata consente agli utenti di parcheggiare le chiamate in attesa e quindi di riprendere la chiamata da un altro telefono o client. Questa opzione è disabilitata per impostazione predefinita.
+   - **Il parcheggio di** chiamata consente agli utenti di parcheggiare le chiamate in attesa e quindi di prelevare la chiamata da un altro telefono o client. Questa opzione è disabilitata per impostazione predefinita.
 
    - **Squillo simultaneo** consente lo squillo in telefoni aggiuntivi, ad esempio un telefono cellulare, o in altri dispositivi endpoint per le chiamate in arrivo. Skype for Business Server offre una gamma significativamente più ampia di opzioni di configurazione per lo squillo simultaneo. Funzionalità abilitata per impostazione predefinita.
 
    - L'**intercettazione team** consente agli utenti in uno team specificato di rispondere alle chiamate per gli altri membri del team. Funzionalità abilitata per impostazione predefinita.
 
-   - **Il reindirizzamento PSTN** consente di reinstradare le chiamate effettuate da utenti a cui è assegnato questo criterio ad altri utenti aziendali se la rete WAN è congestionata o non disponibile. Funzionalità abilitata per impostazione predefinita.
+   - **Il reindirizzamento PSTN** consente di reinstradare le chiamate effettuate da utenti assegnati a questo criterio ad altri utenti aziendali sulla rete PSTN se la rete WAN è congestionata o non disponibile. Funzionalità abilitata per impostazione predefinita.
 
    - L'**override dei criteri di larghezza di banda** consente agli amministratori di ignorare le decisioni per i criteri di controllo di ammissione di chiamata per un particolare utente. Funzionalità disabilitata per impostazione predefinita.
 
      > [!NOTE]
-     > Verrà eseguito l'override dei criteri solo per le chiamate in arrivo all'utente e non per le chiamate in uscita effettuate dall'utente. Dopo che la sessione viene stabilita, l'utilizzo della larghezza di banda viene registrato accuratamente. Questa impostazione deve essere utilizzata con moderamento e deve essere riservata per le decisioni appropriate relative al controllo di ammissione di chiamata.
+     > Verrà eseguito l'override dei criteri solo per le chiamate in arrivo all'utente e non per le chiamate in uscita effettuate dall'utente. Dopo che la sessione viene stabilita, l'utilizzo della larghezza di banda viene registrato accuratamente. Questa impostazione deve essere utilizzata con parsimonio e deve essere riservata per le decisioni appropriate relative al controllo di ammissione di chiamata.
 
-   - **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose (ad esempio minacce) tramite l'interfaccia utente del client, che a sua volta contrassegna le chiamate nelle registrazioni dettagli chiamata (CDR). Questa funzionalità è disabilitata per impostazione predefinita.
+   - **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose (ad esempio minacce) tramite l'interfaccia utente del client, che a sua volta contrassegna le chiamate nei record dettagli chiamata (CDR). Questa funzionalità è disabilitata per impostazione predefinita.
 
-   - **Le opzioni di** disponibilità abilitano o disabilitano le opzioni di occupato per il criterio vocale specificato. Opzioni occupato consente di instradare le chiamate in arrivo alla segreteria telefonica o rifiutate con un segnale di occupato quando l'utente di destinazione della chiamata è sul telefono. Opzioni occupato è un nuovo criterio vocale introdotto nell'aggiornamento cumulativo di luglio 2016. Se si controlla questo parametro, vengono abilitate le opzioni non disponibili e, se si deseleziona, le opzioni non disponibili vengono disabilitate. Per ulteriori informazioni, vedere Pianificare le opzioni occupato [per Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/busy-options.md) e installare e configurare le opzioni occupato per Skype for Business [Server.](install-and-configure-busy-options.md)
+   - **Opzioni occupato** consente di abilitare o disabilitare le opzioni occupato per il criterio vocale specificato. Opzioni occupato consente di instradare le chiamate in arrivo alla segreteria telefonica o rifiutate con un segnale di occupato quando l'utente di destinazione della chiamata è sul telefono. Opzioni occupato è un nuovo criterio vocale introdotto nell'aggiornamento cumulativo di luglio 2016. Se si controlla questo parametro, vengono abilitate le opzioni occupato e se si deseleziona questa opzione vengono disabilitate le opzioni occupato. Per ulteriori informazioni, vedere [Plan for Busy Options for Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/busy-options.md) e Install and configure Busy Options for Skype for Business [Server.](install-and-configure-busy-options.md)
 
 7. Per associare e configurare record di utilizzo PSTN per i criteri vocali, eseguire una delle operazioni seguenti:
 
@@ -89,7 +89,7 @@ ms.locfileid: "49830406"
 
      a. Fare clic su **Nuova regola**.
 
-     b. Nel campo **Nome** immettere un nome descrittivo univoco per il record. Ad esempio, è possibile creare un record di utilizzo PSTN denominatoRedmond per i dipendenti a tempo pieno che si trovano a Redmond e un altro denominatoRedmondTemps per i dipendenti temporanei.
+     b. Nel campo **Nome** immettere un nome descrittivo univoco per il record. È ad esempio possibile creare un record di utilizzo PSTN denominatoRedmond per i dipendenti a tempo pieno che si trovano a Redmond e un altro denominatoRedmondTemps per i dipendenti temporanei.
 
      > [!NOTE]
      > Il nome del record di utilizzo PSTN deve essere univoco all'interno della distribuzione di VoIP aziendale. Dopo il salvataggio del record, il campo **Nome** non può essere modificato.
@@ -98,7 +98,7 @@ ms.locfileid: "49830406"
 
    - Per scegliere una o più route nell'elenco di tutte le route disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**, evidenziare le route che si desidera associare al record di utilizzo PSTN e quindi fare clic su **OK**.
 
-   - Per rimuovere una route dal record di utilizzo PSTN, evidenziare la route e quindi fare clic su **Rimuovi.**
+   - Per rimuovere una route dal record di utilizzo PSTN, evidenzia la route e quindi fai clic su **Rimuovi.**
 
    - Per definire una nuova route e associarla al record di utilizzo PSTN, fare clic su **Nuovo**. Per informazioni dettagliate, [vedere Creare o modificare una route vocale in Skype for Business.](create-or-modify-a-voice-route.md)
 
@@ -114,11 +114,11 @@ ms.locfileid: "49830406"
 
    - Per scegliere una o più route nell'elenco di tutte le route disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**, evidenziare le route che si desidera associare al record di utilizzo PSTN e quindi fare clic su **OK**.
 
-   - Per rimuovere una route dal record di utilizzo PSTN, evidenziare la route e quindi fare clic su **Rimuovi.**
+   - Per rimuovere una route da questo record di utilizzo PSTN, evidenzia la route e quindi fai clic su **Rimuovi.**
 
    - Per definire una nuova route e associarla al record di utilizzo PSTN, fare clic su **Nuovo**. Per informazioni dettagliate, [vedere Creare o modificare una route vocale in Skype for Business.](create-or-modify-a-voice-route.md)
 
-   - Per modificare una route già associata a questo record di utilizzo PSTN, evidenziare la route e **leccare Mostra dettagli.**
+   - Per modificare una route già associata a questo record di utilizzo PSTN, evidenziare la route e **leccare Mostra dettagli**.
 
      c. Fare clic su **OK**.
 
@@ -131,9 +131,9 @@ ms.locfileid: "49830406"
 
    - Per utilizzare gli stessi record di utilizzo PSTN per l'inoltro di chiamata e lo squillo simultaneo di questo criterio vocale, selezionare l'opzione **Route tramite gli usi PSTN di chiamata** dal  menu a discesa.
 
-   - Per consentire l'inoltro di chiamata e lo squillo simultaneo solo agli utenti interni di Skype for Business, selezionare l'opzione Instradamento solo agli utenti interni di **Skype for Business** dal menu a discesa. Le chiamate non verranno inoltrare ai numeri PSTN esterni.
+   - Per consentire l'inoltro di chiamata e lo squillo simultaneo solo agli utenti interni di Skype for Business, seleziona l'opzione Instrada solo agli utenti interni di **Skype for Business** dal menu a discesa. Le chiamate non verranno inoltrare ai numeri PSTN esterni.
 
-   - Per specificare record di utilizzo PSTN diversi per l'inoltro di chiamata e lo squillo simultaneo rispetto a quelli utilizzati per questo criterio vocale, selezionare l'opzione Route utilizzando utilizzi **PSTN** personalizzati dal menu a discesa. Questa opzione consente di visualizzare un controllo per selezionare i record di utilizzo PSTN esistenti o per creare nuovi record di utilizzo PSTN specifici per l'inoltro di chiamata e lo squillo simultaneo.
+   - Per specificare record di utilizzo PSTN diversi per l'inoltro di chiamata e lo squillo simultaneo rispetto a quelli utilizzati per questo criterio vocale, selezionare l'opzione **Route using custom PSTN usages** from the drop-down menu. Questa opzione consente di visualizzare un controllo per selezionare i record di utilizzo PSTN esistenti o per creare nuovi record di utilizzo PSTN specifici per l'inoltro di chiamata e lo squillo simultaneo.
 
    - Per scegliere uno o più record in un elenco dei record di utilizzo PSTN per l'inoltro di chiamata e lo squillo simultaneo, fare clic su **Seleziona**. Evidenziare i record che si desidera associare ai criteri vocali dell'inoltro di chiamata e squillo simultaneo e quindi fare clic su **OK**.
 
@@ -183,9 +183,9 @@ ms.locfileid: "49830406"
 12. Nella pagina **Criteri vocali** fare clic su **Commit** e quindi su **Salva tutto**.
 
     > [!NOTE]
-    > Ogni volta che si crea o si modifica un criterio vocale, è necessario eseguire il **comando Salva** tutto per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
+    > Ogni volta che si crea o si modifica un criterio vocale, è necessario eseguire il **comando Commit all** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
-13. (Facoltativo) L'escape della segreteria telefonica rileva che la segreteria telefonica del telefono cellulare dell'utente ha risposto immediatamente a una chiamata e la disconnette dalla segreteria telefonica del telefono cellulare. Ciò consente alla chiamata di continuare a squillare sugli altri endpoint dell'utente, offrendo all'utente la possibilità di rispondere alla chiamata. Per informazioni dettagliate su come configurare un criterio di segreteria telefonica, vedere [Configurare l'escape della segreteria telefonica in Skype for Business.](configure-voice-mail-escape.md)
+13. (Facoltativo) L'escape della segreteria telefonica rileva che la segreteria telefonica dell'utente ha risposto immediatamente a una chiamata e disconnette la chiamata al sistema di caselle vocali del telefono cellulare. In questo modo la chiamata continuerà a squillare sugli altri endpoint dell'utente, offrendo all'utente la possibilità di rispondere alla chiamata. Per informazioni dettagliate su come configurare un criterio di segreteria telefonica, vedere [Configure voice mail escape in Skype for Business.](configure-voice-mail-escape.md)
 
 ### <a name="to-modify-a-voice-policy"></a>Per modificare criteri vocali
 
@@ -202,14 +202,14 @@ ms.locfileid: "49830406"
 
 5. Selezionare o deselezionare le caselle di controllo seguenti per abilitare o disabilitare ogni opzione presente in **Funzionalità di chiamata**:
 
-   - **L'escape** del sistema di caselle vocali impedisce che le chiamate vengano instradati immediatamente al sistema di caselle vocali del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, spento dalla batteria o fuori intervallo.
+   - **L'escape** della casella vocale impedisce che le chiamate vengano instradati immediatamente al sistema di caselle vocali del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, fuori batteria o fuori intervallo.
 
      > [!NOTE]
      > Questa funzionalità è configurabile solo tramite Skype for Business Server Management Shell
 
    - L'**inoltro di chiamata** consente agli utenti di inoltrare chiamate ad altri telefoni e dispositivi client. Skype for Business Server offre una gamma significativamente più ampia di opzioni di configurazione per l'inoltro di chiamata. Ad esempio, se l'organizzazione desidera evitare che le chiamate in entrata vengano inoltrate esternamente a PSTN, l'amministratore può applicare un criterio vocale specifico per la distribuzione di questa limitazione. La funzionalità è abilitata per impostazione predefinita.
 
-   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al suo manager di squillare tutti i target di squillo simultanei del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
+   - La **delega** consente agli utenti di specificare altri utenti per l'invio e la ricezione delle chiamate per loro conto. In Skype for Business Server, un delegato può configurare lo squillo simultaneo che consente alle chiamate in arrivo al proprio responsabile di squillare tutte le destinazioni di squillo simultanee del delegato. In questo modo, al delegato viene offerta una maggiore flessibilità quando si trova a dover rispondere a chiamate destinate al proprio manager. La funzionalità è abilitata per impostazione predefinita.
 
    - **Trasferimento chiamata**: consente agli utenti di trasferire chiamate ad altri utenti. Questa opzione è abilitata per impostazione predefinita.
 
@@ -219,14 +219,14 @@ ms.locfileid: "49830406"
 
    - L'**intercettazione team** consente agli utenti in uno team specificato di rispondere alle chiamate per gli altri membri del team. Funzionalità abilitata per impostazione predefinita.
 
-   - **Il reindirizzamento PSTN** consente di reinstradare le chiamate effettuate da utenti a cui è assegnato questo criterio ad altri utenti aziendali se la rete WAN è congestionata o non disponibile. Funzionalità abilitata per impostazione predefinita.
+   - **Il reindirizzamento PSTN** consente di reinstradare le chiamate effettuate da utenti assegnati a questo criterio ad altri utenti aziendali sulla rete PSTN se la rete WAN è congestionata o non disponibile. Funzionalità abilitata per impostazione predefinita.
 
    - **L'override dei criteri di** larghezza di banda consente agli amministratori di ignorare le decisioni relative ai criteri di controllo di ammissione di chiamata per un determinato utente. Questa opzione è disabilitata per impostazione predefinita.
 
      > [!NOTE]
      > Verrà eseguito l'override dei criteri solo per le chiamate in arrivo all'utente e non per le chiamate in uscita effettuate dall'utente. Dopo che la sessione viene stabilita, l'utilizzo della larghezza di banda viene registrato accuratamente. Questa impostazione deve essere utilizzata con cautela.
 
-   - **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose (ad esempio minacce) tramite l'interfaccia utente del client, che a sua volta contrassegna le chiamate nelle cdR. Questa opzione è disabilitata per impostazione predefinita.
+   - **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose (ad esempio minacce) tramite l'interfaccia utente del client, che a sua volta contrassegna le chiamate nelle richieste cdR. Questa opzione è disabilitata per impostazione predefinita.
 
 6. Per associare e configurare record di utilizzo PSTN per i criteri vocali, eseguire una delle operazioni seguenti:
 
@@ -238,7 +238,7 @@ ms.locfileid: "49830406"
 
      a. Fare clic su **Nuova regola**.
 
-     b. Nel campo **Nome** immettere un nome descrittivo univoco per il record. Ad esempio, è possibile creare un record di utilizzo PSTN denominatoRedmond per i dipendenti a tempo pieno che si trovano a Redmond e un altro record denominatoRedmondTemps per i dipendenti temporanei.
+     b. Nel campo **Nome** immettere un nome descrittivo univoco per il record. È ad esempio possibile creare un record di utilizzo PSTN denominatoRedmond per i dipendenti a tempo pieno che si trovano a Redmond e un altro record denominatoRedmondTemps per i dipendenti temporanei.
 
      > [!NOTE]
      > Il nome del record di utilizzo PSTN deve essere univoco all'interno della distribuzione di VoIP aziendale. Dopo il salvataggio del record, il campo **Nome** non può essere modificato.
@@ -280,7 +280,7 @@ ms.locfileid: "49830406"
 
    - Per utilizzare gli stessi record di utilizzo PSTN per l'inoltro di chiamata e lo squillo simultaneo di questo criterio vocale, selezionare l'opzione **Route tramite gli usi PSTN di chiamata** dal  menu a discesa.
 
-   - Per consentire l'inoltro di chiamata e lo squillo simultaneo solo agli utenti interni di Skype for Business, seleziona Route agli utenti interni di **Skype for Business** solo dal menu a discesa. Le chiamate non verranno inoltrare ai numeri PSTN esterni.
+   - Per consentire l'inoltro di chiamata e lo squillo simultaneo solo agli utenti interni di Skype for Business, seleziona Route **to internal Skype for Business users only** from the drop-down menu. Le chiamate non verranno inoltrare ai numeri PSTN esterni.
 
    - Per specificare record di utilizzo PSTN differenti per l'inoltro di chiamata e lo squillo simultaneo rispetto a quelli usati per questo criterio vocale, selezionare l'opzione **Route tramite gli usi PSTN di chiamata** dal  menu a discesa. Questa opzione visualizza un controllo che consente di selezionare i record di utilizzo PSTN esistenti, o di crearne di nuovi, specifici per l'inoltro di chiamata e lo squillo simultaneo.
 
@@ -305,7 +305,7 @@ ms.locfileid: "49830406"
 
    - Per definire una nuova route e associarla al record di utilizzo PSTN, fare clic su **Nuovo**. Per informazioni dettagliate, [vedere Creare o modificare una route vocale in Skype for Business.](create-or-modify-a-voice-route.md)
 
-   - Per modificare una route già associata al record di utilizzo PSTN, evidenziarla e fare clic su **Mostra dettagli**. Per informazioni dettagliate, vedere [Modify a Voice Route](https://technet.microsoft.com/library/afc562cc-8807-489b-8850-dbbe1c1ab9f5.aspx).
+   - Per modificare una route già associata al record di utilizzo PSTN, evidenziarla e fare clic su **Mostra dettagli**. Per informazioni dettagliate, vedere [Modify a Voice Route](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-voice-route).
 
      d. Fare clic su **OK**.
 
@@ -321,7 +321,7 @@ ms.locfileid: "49830406"
 
      - Per definire una nuova route e associarla al record di utilizzo PSTN, fare clic su **Nuovo**. Per informazioni dettagliate, [vedere Creare o modificare una route vocale in Skype for Business.](create-or-modify-a-voice-route.md)
 
-     - Per modificare una route già associata al record di utilizzo PSTN, evidenziare la route e fare clic su **Mostra dettagli**. Per informazioni dettagliate, vedere [Modify a Voice Route](https://technet.microsoft.com/library/afc562cc-8807-489b-8850-dbbe1c1ab9f5.aspx).
+     - Per modificare una route già associata al record di utilizzo PSTN, evidenziare la route e fare clic su **Mostra dettagli**. Per informazioni dettagliate, vedere [Modify a Voice Route](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-voice-route).
 
      c. Fare clic su **OK**.
 
@@ -334,7 +334,7 @@ ms.locfileid: "49830406"
     > [!NOTE]
     > Quando si creano o modificano criteri vocali, è necessario eseguire il comando **Salva tutto** per pubblicare la modifica di configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md) nella documentazione relativa alle operazioni.
 
-12. (Facoltativo) L'escape della segreteria telefonica rileva che la segreteria telefonica del telefono cellulare dell'utente ha risposto immediatamente a una chiamata e la disconnette dalla segreteria telefonica del telefono cellulare. Ciò consente alla chiamata di continuare a squillare sugli altri endpoint dell'utente, offrendo all'utente la possibilità di rispondere alla chiamata. Per informazioni dettagliate su come configurare un criterio di segreteria telefonica, vedere [Configurare l'escape della segreteria telefonica in Skype for Business.](configure-voice-mail-escape.md)
+12. (Facoltativo) L'escape della segreteria telefonica rileva che la segreteria telefonica dell'utente ha risposto immediatamente a una chiamata e disconnette la chiamata al sistema di caselle vocali del telefono cellulare. In questo modo la chiamata continuerà a squillare sugli altri endpoint dell'utente, offrendo all'utente la possibilità di rispondere alla chiamata. Per informazioni dettagliate su come configurare un criterio di segreteria telefonica, vedere [Configure voice mail escape in Skype for Business.](configure-voice-mail-escape.md)
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -344,5 +344,4 @@ ms.locfileid: "49830406"
 
 [Pubblicare modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)
 
-[Configurare l'escape del sistema di caselle vocali in Skype for Business](configure-voice-mail-escape.md)
-
+[Configurare l'escape della segreteria telefonica in Skype for Business](configure-voice-mail-escape.md)

@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dcb9effb-5d12-4dee-80fc-ab9654222d5a
 description: Progettare e creare flussi di lavoro di Response Group in Skype for Business Server VoIP aziendale. Vengono trattati sia i flussi di lavoro dei gruppi di risposta che i flussi di lavoro interattivi.
-ms.openlocfilehash: 3ebd5f2705547aa96a9ebfcc6857781ef25854b5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 678dcb25f5f802f101016a2a289015a60e48ba88
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831036"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51105782"
 ---
 # <a name="designing-and-creating-response-group-workflows-in-skype-for-business"></a>Progettazione e creazione di flussi di lavoro di Response Group in Skype for Business
 
 Progettare e creare flussi di lavoro di Response Group in Skype for Business Server VoIP aziendale. Vengono trattati sia i flussi di lavoro dei gruppi di risposta che i flussi di lavoro interattivi.
 
-Un flusso di lavoro definisce il comportamento di una chiamata dal momento in cui il telefono squilla al momento in cui un qualcuno risponde. Il flusso di lavoro specifica la coda da utilizzare per la chiamata e il metodo di routing da utilizzare per i flussi di lavoro dei gruppi di risposta o le domande e le risposte da utilizzare per i flussi di lavoro interattivi dei Response Group.
+Un flusso di lavoro definisce il comportamento di una chiamata dal momento in cui il telefono squilla al momento in cui un qualcuno risponde. Il flusso di lavoro specifica la coda da utilizzare per la chiamata e specifica il metodo di routing da utilizzare per i flussi di lavoro dei gruppi di risposta o le domande e le risposte da utilizzare per i flussi di lavoro di Response Group interattivi.
 
 Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenuto, la musica di attesa, l'orario di ufficio e le festività.
 
@@ -40,7 +40,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Flusso di lavoro**.
 
@@ -49,7 +49,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
 5. Nel campo di ricerca **Seleziona un servizio** digitare tutto o parte del nome del servizio **ApplicationServer** che ospita il flusso di lavoro che si desidera creare o modificare. Nell'elenco di servizi risultante fare clic sul servizio desiderato e quindi su **OK**.
 
     > [!NOTE]
-    > Verrà aperto lo Strumento di configurazione di Response Group. È inoltre possibile aprire lo Strumento di configurazione di Response Group direttamente da un Web browser digitando l'URL seguente: https:// \<webPoolFqdn\> /RgsConfig.
+    > Verrà aperto lo Strumento di configurazione di Response Group. È inoltre possibile aprire lo strumento di configurazione di Response Group direttamente da un Web browser digitando l'URL seguente: https:// \<webPoolFqdn\> /RgsConfig.
 
 6. Eseguire una delle operazioni seguenti:
 
@@ -60,12 +60,12 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
 7. Se gli utenti possono iniziare a chiamare il flusso di lavoro immediatamente, selezionare **Attiva il flusso di lavoro**.
 
     > [!NOTE]
-    >  Se si crea un flusso di lavoro gestito, è necessario selezionare **Attiva il flusso di lavoro.** Dopo aver salvato il flusso di lavoro gestito attivo, è possibile modificarlo e disattivarlo.
+    >  Se si sta creando un flusso di lavoro gestito, è necessario selezionare **Attiva il flusso di lavoro**. Dopo aver salvato il flusso di lavoro gestito attivo, è possibile modificarlo e disattivarlo.
 
 8. Per consentire agli utenti federati di chiamare il gruppo, selezionare la casella di controllo **Abilita per federazione**. È inoltre necessario disporre di un criterio di accesso esterno che si applica all'applicazione Response Group configurata per la federazione.
 
     > [!NOTE]
-    > Il criterio di accesso esterno globale si applica all'applicazione Response Group. È possibile configurare il criterio globale per la federazione di Response Group utilizzando il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsExternalAccessPolicy** per impostare il parametro EnableOutsideAccess su True. Considerare che le impostazioni di criteri globali vengono applicate a tutti gli utenti, a meno che non dispongano di un criterio sito o utente assegnato. Prima di modificare questa impostazione per i Response Group, verificare quindi che le impostazioni della federazione soddisfino i requisiti dell'organizzazione. Per informazioni dettagliate sull'applicazione dei criteri agli utenti, vedere [Manage External Access Policy for Your Organization](https://technet.microsoft.com/library/5571811e-34c8-443a-b94c-1ab5d4275581.aspx). Per informazioni dettagliate sull'impostazione di federazione, [vedere Set-CsExternalAccessPolicy.](https://docs.microsoft.com/powershell/module/skype/set-csexternalaccesspolicy?view=skype-ps)
+    > Il criterio di accesso esterno globale si applica all'applicazione Response Group. È possibile configurare i criteri globali per la federazione di Response Group utilizzando il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsExternalAccessPolicy** per impostare il parametro EnableOutsideAccess su True. Considerare che le impostazioni di criteri globali vengono applicate a tutti gli utenti, a meno che non dispongano di un criterio sito o utente assegnato. Prima di modificare questa impostazione per i Response Group, verificare quindi che le impostazioni della federazione soddisfino i requisiti dell'organizzazione. Per informazioni dettagliate sull'applicazione dei criteri agli utenti, vedere [Manage External Access Policy for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-manage-external-access-policy-for-your-organization). Per informazioni dettagliate sull'impostazione di federazione, [vedere Set-CsExternalAccessPolicy.](/powershell/module/skype/set-csexternalaccesspolicy?view=skype-ps)
 
     > [!NOTE]
     > Gli utenti ospitati in Skype for Business online non possono effettuare chiamate a Response Group ospitati in una distribuzione locale. Ciò vale sia nelle distribuzioni ibride che nei casi in cui una distribuzione locale è federata con una distribuzione di Skype for Business online.
@@ -80,7 +80,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     > [!NOTE]
     > L'URI primario di un flusso di lavoro viene utilizzato come identificazione e riferimento per un flusso di lavoro. L'URI SIP immesso viene creato come oggetto contatto in Servizi di dominio Active Directory. Per creare l'URI, l'oggetto deve essere univoco in Active Directory.
 
-11. In **Nome visualizzato** digitare il nome che si desidera visualizzare per il flusso di lavoro, ad esempio Response Group vendite.
+11. In **Nome visualizzato** digitare il nome che si desidera visualizzare per il flusso di lavoro, ad esempio Sales Response Group.
 
     > [!NOTE]
     > Non includere i caratteri "<" o ">" nel nome visualizzato. Non utilizzare i nomi visualizzati seguenti, perché sono riservati: **RGS Presence Watcher** o **Servizio Annuncio**.
@@ -112,7 +112,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     - Per utilizzare la registrazione di un file WAVE (WAV) o Windows Media Audio (WMA) per il messaggio di benvenuto, fare clic su **Selezionare una registrazione**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **una registrazione**. Nella nuova finestra del browser fare clic su **Sfoglia**, selezionare il file audio che si desidera utilizzare, quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
     > [!NOTE]
-    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 18. In **Passaggio 4 Specificare l'orario di ufficio** fare clic sul fuso orario del flusso di lavoro in **Fuso orario**.
 
@@ -124,7 +124,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     - Per utilizzare una pianificazione dell'orario di ufficio predefinita, fare clic su **Usa pianificazione preimpostata**, quindi selezionare la pianificazione che si desidera utilizzare nell'elenco a discesa.
 
       > [!NOTE]
-      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. Per definire le pianificazioni preimpostate, utilizzare il cmdlet **New-CSRgsHoursOfBusiness**. Per informazioni dettagliate, vedere [(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business.](optional-define-response-group-business-hours.md)
+      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. Per definire le pianificazioni preimpostate, utilizzare il cmdlet **New-CSRgsHoursOfBusiness**. Per informazioni dettagliate, [vedere (Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business.](optional-define-response-group-business-hours.md)
 
       > [!NOTE]
       > Quando si seleziona una pianificazione preimpostata, nei campi **Giorno**, **Apri** e **Chiudi** vengono inseriti automaticamente i giorni e le ore in cui il Response Group è disponibile.
@@ -133,7 +133,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
 
 20. Se si crea una pianificazione personalizzata per questo flusso di lavoro, fare clic sulle caselle di controllo per i giorni della settimana in cui il Response Group è disponibile.
 
-21. Se si crea una pianificazione  personalizzata,  digitare le ore di apertura e chiusura per ogni giorno della settimana in cui il Response Group è disponibile.
+21. Se si sta creando una  pianificazione  personalizzata, digitare le ore di apertura e chiusura per ogni giorno della settimana in cui il Response Group è disponibile.
 
     > [!NOTE]
     > Le ore in **Apri** e **Chiudi** devono essere nel formato a 24 ore. Se l'ufficio, ad esempio, è operativo dalle 9.00 alle 17.00 con una pausa per il pranzo a mezzogiorno, è possibile specificare l'orario di ufficio impostando **Apri** su 9.00, **Chiudi** su 12.00, quindi di nuovo **Apri** su 13.00 e **Chiudi** su 17.00.
@@ -148,22 +148,22 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     - Per utilizzare la registrazione di un file audio per il messaggio, fare clic su **Selezionare una registrazione**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **una registrazione**. Nella nuova finestra del browser, fare clic su **Sfoglia**, selezionare il file che si desidera utilizzare, quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
       > [!NOTE]
-      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 23. Specificare come gestire le chiamate dopo la riproduzione del messaggio (se è stato configurato un messaggio):
 
     - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
 
-    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainName\>* è (ad esempio, bob@contoso.com).
+    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainName\>* è ( ad esempio, bob@contoso.com).
 
     - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è _\<username\>_ @ _\<domainName\>_ .
 
-    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è *\<number\>* @ *\<domainName\>* (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
+    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono *\<number\>* @ *\<domainName\>* è (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
 
 24. In **Passaggio 5 Specificare le festività** fare clic sulle caselle di controllo per uno o più insiemi di festività che definiscono i giorni in cui il Response Group è chiuso.
 
     > [!NOTE]
-    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, vedere [(Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business.
+    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, [vedere (Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business.
 
 25. Se si desidera riprodurre un messaggio delle festività, selezionare la casella di controllo **Riproduci un messaggio durante le festività**, quindi specificare il messaggio da riprodurre effettuando una delle operazioni seguenti:
 
@@ -175,17 +175,17 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     - Per utilizzare la registrazione di un file audio per il messaggio, fare clic su **Selezionare una registrazione**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **una registrazione**. Nella nuova finestra del browser, fare clic su **Sfoglia**, selezionare il file che si desidera utilizzare, quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
       > [!NOTE]
-      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 26. Specificare come gestire le chiamate dopo la riproduzione del messaggio (se è stato configurato un messaggio):
 
     - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
 
-    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainName\>* è (ad esempio, bob@contoso.com).
+    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainName\>* è ( ad esempio, bob@contoso.com).
 
     - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è _\<username\>_ @ _\<domainName\>_ .
 
-    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è *\<number\>* @ *\<domainName\>* (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
+    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono *\<number\>* @ *\<domainName\>* è (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
 
 27. In **Passaggio 6 Configurare una coda** selezionare la coda in cui si desidera mettere in attesa i chiamanti fino a quando non diventa disponibile un agente in **Selezionare la coda che riceverà le chiamate**.
 
@@ -196,7 +196,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     - Per utilizzare la registrazione di un file audio per la musica di attesa, fare clic su **Selezionare un file musicale**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **un file musicale**. Nella nuova finestra del browser, fare clic su **Sfoglia**, selezionare il file che si desidera utilizzare e quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
       > [!NOTE]
-      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 29. Fare clic su **Distribuisci**.
 
@@ -219,7 +219,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
    ```
 
      > [!NOTE]
-     > Per utilizzare un file audio per il messaggio, eseguire il cmdlet **Import-CsRgsAudioFile**. Per informazioni dettagliate, [vedere Import-CsRgsAudioFile.](https://docs.microsoft.com/powershell/module/skype/import-csrgsaudiofile?view=skype-ps)
+     > Per utilizzare un file audio per il messaggio, eseguire il cmdlet **Import-CsRgsAudioFile**. Per informazioni dettagliate, [vedere Import-CsRgsAudioFile](/powershell/module/skype/import-csrgsaudiofile?view=skype-ps).
 
 4. Ottenere l'identità della coda o informazioni sull'indirizzamento delle chiamate. Nella riga di comando digitare il comando seguente:
 
@@ -227,7 +227,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
    $qid = (Get-CsRgsQueue -Name "Help Desk").Identity
    ```
 
-    Per informazioni dettagliate sulla creazione della coda, [vedere New-CsRgsQueue.](https://docs.microsoft.com/powershell/module/skype/new-csrgsqueue?view=skype-ps)
+    Per informazioni dettagliate sulla creazione della coda, [vedere New-CsRgsQueue](/powershell/module/skype/new-csrgsqueue?view=skype-ps).
 
 5. Definire l'azione predefinita da eseguire quando viene aperto un flusso di lavoro durante l'orario di ufficio e salvarla in una variabile. Nella riga di comando digitare il comando seguente:
 
@@ -244,11 +244,11 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
    $actionWM = New-CsRgsCallAction -Prompt $promptWM -Action TransferToQueue -QueueID $qid.Identity
    ```
 
-6. Se si desidera definire l'orario di ufficio e le festività, è necessario crearli prima della creazione o della modifica del flusso di lavoro. Per informazioni dettagliate, vedere [(Facoltativo)](optional-define-response-group-business-hours.md) Definire l'orario di ufficio di Response Group in Skype for Business e [(facoltativo)](optional-define-response-group-holiday-sets.md)Definire i set di festività di Response Group in Skype for Business.
+6. Se si desidera definire l'orario di ufficio e le festività, è necessario crearli prima della creazione o della modifica del flusso di lavoro. Per informazioni dettagliate, [vedere (Facoltativo) Definire](optional-define-response-group-business-hours.md) l'orario di ufficio di Response Group in Skype for Business e [(facoltativo) Definire i](optional-define-response-group-holiday-sets.md)set di festività di Response Group in Skype for Business.
 
-7. Se si desidera definire messaggi per le chiamate ricevute al di fuori dell'orario di ufficio o durante le festività, utilizzare il cmdlet **New-CsRgsPrompt** per definire il messaggio e il cmdlet **New-CsRgsCallAction** per definire l'azione da eseguire dopo il messaggio. Per informazioni dettagliate, [vedere New-CsRgsPrompt](https://docs.microsoft.com/powershell/module/skype/new-csrgsprompt?view=skype-ps) e [New-CsRgsCallAction.](https://docs.microsoft.com/powershell/module/skype/new-csrgscallaction?view=skype-ps)
+7. Se si desidera definire messaggi per le chiamate ricevute al di fuori dell'orario di ufficio o durante le festività, utilizzare il cmdlet **New-CsRgsPrompt** per definire il messaggio e il cmdlet **New-CsRgsCallAction** per definire l'azione da eseguire dopo il messaggio. Per informazioni dettagliate, [vedere New-CsRgsPrompt](/powershell/module/skype/new-csrgsprompt?view=skype-ps) e [New-CsRgsCallAction.](/powershell/module/skype/new-csrgscallaction?view=skype-ps)
 
-8. Recuperare il nome del servizio Response Group di Lync Server e assegnarlo a una variabile. Nella riga di comando digitare il comando seguente:
+8. Recuperare il nome del servizio per il servizio Response Group di Lync Server e assegnarlo a una variabile. Nella riga di comando digitare il comando seguente:
 
    ```powershell
    $serviceId = "service:" + (Get-CsService | ?{$_.Applications -like "*RGS*"}).ServiceId;
@@ -270,22 +270,22 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
      > A tutti gli utenti designati come responsabili dei flussi di lavoro deve essere assegnato il ruolo CsResponseGroupManager.
 
      > [!NOTE]
-     > Per informazioni dettagliate sui parametri facoltativi aggiuntivi, vedere [New-CsRgsWorkflow](https://docs.microsoft.com/powershell/module/skype/new-csrgsworkflow?view=skype-ps) o [Set-CsRgsWorkflow](https://docs.microsoft.com/powershell/module/skype/set-csrgsworkflow?view=skype-ps)
+     > Per informazioni dettagliate sui parametri facoltativi aggiuntivi, vedere [New-CsRgsWorkflow](/powershell/module/skype/new-csrgsworkflow?view=skype-ps) o [Set-CsRgsWorkflow](/powershell/module/skype/set-csrgsworkflow?view=skype-ps)
 
 ## <a name="designing-an-interactive-workflow"></a>Progettazione di un flusso di lavoro interattivo
 
-È possibile utilizzare Interactive Voice Response (IVR) per ottenere informazioni dai chiamanti e indirizzare la chiamata verso la coda appropriata. Coppie di domande e risposte stabiliscono la coda da utilizzare. A seconda della risposta del chiamante, il chiamante sente una domanda di follow-up o viene instradato alla coda appropriata. Le domande del sistema IVR e le risposte del chiamante vengono fornite all'agente che accetta la chiamata, fornendo informazioni preziose all'agente.
+È possibile utilizzare Interactive Voice Response (IVR) per ottenere informazioni dai chiamanti e indirizzare la chiamata verso la coda appropriata. Coppie di domande e risposte stabiliscono la coda da utilizzare. A seconda della risposta del chiamante, il chiamante sente una domanda di follow-up o viene instradato alla coda appropriata. Le domande dell'IVR e le risposte del chiamante vengono fornite all'agente che accetta la chiamata, fornendo informazioni preziose all'agente.
 
 ### <a name="overview-of-ivr-features"></a>Panoramica delle funzionalità del sistema IVR
 
 L'applicazione Response Group offre funzionalità di riconoscimento vocale e sintesi vocale in 26 lingue. È possibile immettere domande IVR utilizzando la sintesi vocale oppure un file WAVE (WAV) o Windows Media Audio (WMA). I chiamanti possono rispondere tramite input vocale o multifrequenza (DTMF, Dual-Tone Multi-Frequency).
 
-I flussi di lavoro interattivi supportano fino a due livelli di domande, con ogni domanda che prevede fino a quattro possibili risposte. Il sistema IVR pone una domanda al chiamante e, a seconda della risposta del chiamante, instrada il chiamante a una coda o pone una seconda domanda. Anche la seconda domanda prevede quattro possibili risposte. A seconda della risposta alla domanda di secondo livello, il chiamante verrà instradato alla coda appropriata.
+I flussi di lavoro interattivi supportano fino a due livelli di domande, con ogni domanda che prevede fino a quattro possibili risposte. L'IVR pone al chiamante una domanda e, a seconda della risposta del chiamante, instrada il chiamante a una coda o pone una seconda domanda. Anche la seconda domanda prevede quattro possibili risposte. A seconda della risposta alla domanda di secondo livello, il chiamante verrà instradato alla coda appropriata.
 
 > [!NOTE]
-> Quando si progettano i flussi delle chiamate utilizzando Skype for Business Server Management Shell, è possibile definire qualsiasi numero di livelli di domande IVR e qualsiasi numero di risposte. Tuttavia, per la facilità di utilizzo del chiamante, è consigliabile non utilizzare più di tre livelli di domande, con non più di cinque risposte per ognuno. Inoltre, se si progetta un flusso di chiamate con più di due livelli di domande con più di quattro risposte, non è possibile modificare il flusso di chiamata utilizzando il Pannello di controllo di Skype for Business Server.
+> Quando si progettano flussi di chiamate utilizzando Skype for Business Server Management Shell, è possibile definire qualsiasi numero di livelli di domande IVR e qualsiasi numero di risposte. Tuttavia, per la facilità di utilizzo del chiamante, è consigliabile non utilizzare più di tre livelli di domande, con non più di cinque risposte per ognuno. Inoltre, se si progetta un flusso di chiamate con più di due livelli di domande con più di quattro risposte ciascuna, non è possibile modificare il flusso di chiamata utilizzando il Pannello di controllo di Skype for Business Server.
 
-Le domande del sistema IVR e le risposte del chiamante vengono fornite all'agente che risponde che accetta la chiamata.
+Le domande dell'IVR e le risposte del chiamante vengono fornite all'agente che risponde che accetta la chiamata.
 
 ### <a name="working-with-speech-technologies"></a>Utilizzo di tecnologie vocali
 
@@ -317,7 +317,7 @@ Nella figura seguente viene illustrato il flusso delle chiamate.
 
  **Flusso di chiamate interattivo a un livello**
 
-![Progettare i flussi delle chiamate utilizzando il respo vocale interattivo](../../media/Ops_OCS_RGS_IVRLevel1.jpg)
+![Progettare i flussi di chiamate utilizzando Interactive Voice Respo](../../media/Ops_OCS_RGS_IVRLevel1.jpg)
 
 #### <a name="ivr-with-two-levels-of-questions"></a>Sistema IVR con due livelli di domande
 
@@ -349,7 +349,7 @@ Nella figura seguente viene illustrato il flusso delle chiamate.
 
  **Flusso di chiamate interattivo a due livelli**
 
-![Progettare i flussi delle chiamate utilizzando il respo vocale interattivo](../../media/Ops_OCS_RGS_IVRLevel2.jpg)
+![Progettare i flussi di chiamate utilizzando Interactive Voice Respo](../../media/Ops_OCS_RGS_IVRLevel2.jpg)
 
 ### <a name="best-practices"></a>Procedure consigliate
 
@@ -359,9 +359,9 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 
 - Se si desidera includere un messaggio lungo, è consigliabile aggiungerlo alla fine della prima domanda anziché dopo il messaggio iniziale. I chiamanti possono ignorare il messaggio se fa parte della prima domanda rispondendo alla domanda, ma non possono ignorare il messaggio iniziale.
 
-- Parla nella lingua del chiamante. Evita la lingua a base di stilted. Parla in modo naturale.
+- Parla nella lingua del chiamante. Evita la lingua a palafitte. Parla in modo naturale.
 
-- Scrivere domande efficienti ed efficaci. Rimuovere le opzioni non necessarie. Strutturare le informazioni in modo che la risposta prevista del chiamante si trova alla fine della frase. Ad esempio, "Per parlare con il team vendite, premere 1".
+- Scrivere domande efficienti ed efficaci. Rimuovere le opzioni non necessarie. Strutturare le informazioni in modo che la risposta prevista del chiamante si trova alla fine della frase. Ad esempio, "Per parlare con il team di vendita, premere 1".
 
 - Scegliere risposte vocali semplici. Ad esempio, se si specificano sia risposte DTMF che risposte vocali, utilizzare "Per parlare con il team vendite, prema 1 o dica vendite".
 
@@ -369,20 +369,20 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 
 ## <a name="creating-or-modifying-an-interactive-workflow"></a>Creazione o modifica di un flusso di lavoro interattivo
 
-### <a name="to-use-response-group-configuration-tool-to-create-or-modify-an-interactive-workflow"></a>Per utilizzare lo Strumento di configurazione di Response Group per creare o modificare un flusso di lavoro interattivo
+### <a name="to-use-response-group-configuration-tool-to-create-or-modify-an-interactive-workflow"></a>Per utilizzare lo strumento di configurazione di Response Group per creare o modificare un flusso di lavoro interattivo
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Flusso di lavoro**.
 
 4. Nella pagina **Flusso di lavoro** fare clic su **Crea o modifica un flusso di lavoro**.
 
-5. Nel campo di ricerca **Selezionare** un servizio digitare tutto o parte del nome del servizio **ApplicationServer** che ospita il flusso di lavoro che si desidera creare o modificare. Nell'elenco di servizi risultante fare clic sul servizio desiderato e quindi su **OK**.
+5. Nel campo di ricerca **Seleziona** un servizio digitare tutto o parte del nome del servizio **ApplicationServer** che ospita il flusso di lavoro che si desidera creare o modificare. Nell'elenco di servizi risultante fare clic sul servizio desiderato e quindi su **OK**.
 
     > [!NOTE]
-    > Verrà aperto lo Strumento di configurazione di Response Group. È inoltre possibile aprire lo Strumento di configurazione di Response Group direttamente da un Web browser digitando l'URL seguente: https:// \<webPoolFqdn\> /RgsConfig.
+    > Verrà aperto lo Strumento di configurazione di Response Group. È inoltre possibile aprire lo strumento di configurazione di Response Group direttamente da un Web browser digitando l'URL seguente: https:// \<webPoolFqdn\> /RgsConfig.
 
 6. Eseguire una delle operazioni seguenti:
 
@@ -393,12 +393,12 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 7. Se non si desidera che gli utenti chiamino il flusso di lavoro immediatamente, deselezionare la casella di controllo **Attiva il flusso di lavoro**.
 
     > [!NOTE]
-    >  Se si crea un flusso di lavoro gestito, è necessario selezionare **Attiva il flusso di lavoro.** Dopo aver salvato il flusso di lavoro gestito attivo, è possibile modificarlo e disattivarlo.
+    >  Se si sta creando un flusso di lavoro gestito, è necessario selezionare **Attiva il flusso di lavoro**. Dopo aver salvato il flusso di lavoro gestito attivo, è possibile modificarlo e disattivarlo.
 
 8. Per consentire agli utenti federati di chiamare il gruppo, selezionare la casella di controllo **Abilita per federazione**. È inoltre necessario disporre di un criterio di accesso esterno che si applica all'applicazione Response Group configurata per la federazione.
 
     > [!NOTE]
-    > Il criterio di accesso esterno globale si applica all'applicazione Response Group. È possibile configurare il criterio globale per la federazione di Response Group utilizzando il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsExternalAccessPolicy** per impostare il parametro EnableOutsideAccess su True. Considerare che le impostazioni di criteri globali vengono applicate a tutti gli utenti, a meno che non dispongano di un criterio sito o utente assegnato. Prima di modificare questa impostazione per i Response Group, verificare quindi che le impostazioni della federazione soddisfino i requisiti dell'organizzazione. Per informazioni dettagliate sull'applicazione dei criteri agli utenti, vedere [Manage External Access Policy for Your Organization](https://technet.microsoft.com/library/5571811e-34c8-443a-b94c-1ab5d4275581.aspx). Per informazioni dettagliate sull'impostazione di federazione, **vedere Set-CsExternalAccessPolicy** nella documentazione.
+    > Il criterio di accesso esterno globale si applica all'applicazione Response Group. È possibile configurare i criteri globali per la federazione di Response Group utilizzando il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsExternalAccessPolicy** per impostare il parametro EnableOutsideAccess su True. Considerare che le impostazioni di criteri globali vengono applicate a tutti gli utenti, a meno che non dispongano di un criterio sito o utente assegnato. Prima di modificare questa impostazione per i Response Group, verificare quindi che le impostazioni della federazione soddisfino i requisiti dell'organizzazione. Per informazioni dettagliate sull'applicazione dei criteri agli utenti, vedere [Manage External Access Policy for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-manage-external-access-policy-for-your-organization). Per informazioni dettagliate sull'impostazione di federazione, **vedere Set-CsExternalAccessPolicy** nella documentazione.
 
     > [!NOTE]
     > Gli utenti ospitati in Skype for Business online non possono effettuare chiamate a Response Group ospitati in una distribuzione locale. Ciò vale sia nelle distribuzioni ibride che nei casi in cui una distribuzione locale è federata con una distribuzione di Skype for Business online.
@@ -413,7 +413,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 11. In **Nome visualizzato** digitare il nome che si desidera visualizzare per il flusso di lavoro, ad esempio Sales IVR Response Group.
 
     > [!NOTE]
-    > Non includere i caratteri \<" or "\> " " nel nome visualizzato. Non utilizzare i nomi visualizzati seguenti, perché sono riservati: **RGS Presence Watcher** o **Servizio Annuncio**.
+    > Non includere i \<" or "\> caratteri " " nel nome visualizzato. Non utilizzare i nomi visualizzati seguenti, perché sono riservati: **RGS Presence Watcher** o **Servizio Annuncio**.
 
 12. In **Numero di telefono** digitare l'URI di linea per il Response Group, ad esempio +14255550165.
 
@@ -442,25 +442,25 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     - Per utilizzare la registrazione di un file Wave o Windows Media Audio per il messaggio di benvenuto, fare clic su **Selezionare una registrazione**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **una registrazione**. Nella nuova finestra del browser fare clic su **Sfoglia**, selezionare il file audio che si desidera utilizzare, quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
     > [!NOTE]
-    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 18. In **Passaggio 4 Specificare l'orario di ufficio** fare clic sul fuso orario del flusso di lavoro nella casella **Fuso orario**.
 
     > [!NOTE]
-    > È necessario specificare il fuso orario in cui risiedono i chiamanti e gli agenti del flusso di lavoro. Il fuso orario viene utilizzato per calcolare le ore di apertura e di chiusura. Ad esempio, se il flusso di lavoro è configurato per l'utilizzo del fuso orario nordamericano orientale e il flusso di lavoro è pianificato per l'apertura alle 7.00. e chiudi alle 23:00, si presuppone che gli orari di apertura e chiusura siano rispettivamente le 7:00 dell'ora orientale e le 11:00 dell'ora orientale. È necessario immettere le ore nel formato a 24 ore.
+    > È necessario specificare il fuso orario in cui risiedono i chiamanti e gli agenti del flusso di lavoro. Il fuso orario viene utilizzato per calcolare le ore di apertura e di chiusura. Ad esempio, se il flusso di lavoro è configurato per l'utilizzo del fuso orario nordamericano orientale e il flusso di lavoro è pianificato per l'apertura alle 7.00. e chiudere alle 23.00, si presuppone che gli orari di apertura e chiusura siano rispettivamente alle 7.00 ora orientale e alle 11.00 ora orientale. È necessario immettere le ore nel formato a 24 ore.
 
 19. Selezionare il tipo di pianificazione dell'orario di ufficio che si desidera utilizzare eseguendo una delle operazioni seguenti:
 
     - Per utilizzare una pianificazione dell'orario di ufficio predefinita, fare clic su **Usa pianificazione preimpostata**, quindi selezionare la pianificazione che si desidera utilizzare nell'elenco a discesa.
 
       > [!NOTE]
-      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. È possibile definire pianificazioni preimpostate utilizzando il cmdlet **New-CsRgsHoursOfBusiness.** Per informazioni dettagliate, vedere [(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business.](optional-define-response-group-business-hours.md) Quando si seleziona una pianificazione preimpostata, nei campi **Giorno**, **Apri** e **Chiudi** vengono inseriti automaticamente i giorni e le ore in cui il Response Group è disponibile.
+      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. È possibile definire pianificazioni predefinite utilizzando il cmdlet **New-CsRgsHoursOfBusiness.** Per informazioni dettagliate, [vedere (Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business.](optional-define-response-group-business-hours.md) Quando si seleziona una pianificazione preimpostata, nei campi **Giorno**, **Apri** e **Chiudi** vengono inseriti automaticamente i giorni e le ore in cui il Response Group è disponibile.
 
     - Per utilizzare una pianificazione personalizzata da applicare solo a questo flusso di lavoro, fare clic su **Usa pianificazione personalizzata**.
 
 20. Se si crea una pianificazione personalizzata per questo flusso di lavoro, fare clic sulle caselle di controllo per i giorni della settimana in cui il Response Group è disponibile.
 
-21. Se si sta creando una pianificazione  personalizzata, digitare **le** ore di apertura e chiusura in cui il Response Group sarà disponibile.
+21. Se si sta creando una pianificazione personalizzata, digitare **l'orario** di apertura e **chiusura** quando il Response Group sarà disponibile.
 
      > [!NOTE]
      > Le ore in **Apri** e **Chiudi** devono essere nel formato a 24 ore. Se l'ufficio, ad esempio, è operativo dalle 9.00 alle 17.00 con una pausa per il pranzo a mezzogiorno, è possibile specificare l'orario di ufficio impostando **Apri** su 9.00, **Chiudi** su 12.00, quindi di nuovo **Apri** su 13.00 e **Chiudi** su 17.00.
@@ -475,22 +475,22 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     - Per utilizzare la registrazione di un file audio per il messaggio, fare clic su **Selezionare una registrazione**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **una registrazione**. Nella nuova finestra del browser, fare clic su **Sfoglia**, selezionare il file che si desidera utilizzare, quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
     > [!NOTE]
-    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 23. Specificare come gestire le chiamate dopo la riproduzione del messaggio (se è stato configurato un messaggio):
 
     - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
 
-    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainname\>* è (ad esempio, bob@contoso.com).
+    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainname\>* è ( ad esempio, bob@contoso.com).
 
     - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è _\<username\>_ @ _\<domainname\>_ .
 
-    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è *\<number\>* @ *\<domainname\>* (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
+    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono *\<number\>* @ *\<domainname\>* è (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per instradare il chiamante alla destinazione corretta.
 
 24. In **Passaggio 5 Specificare le festività** fare clic sulle caselle di controllo per uno o più insiemi di festività che definiscono i giorni in cui il Response Group è chiuso.
 
     > [!NOTE]
-    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, vedere [(Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business.
+    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, [vedere (Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business.
 
 25. Se si desidera riprodurre un messaggio delle festività, selezionare la casella di controllo **Riproduci un messaggio durante le festività**, quindi specificare il messaggio da riprodurre effettuando una delle operazioni seguenti:
 
@@ -502,17 +502,17 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     - Per utilizzare la registrazione di un file audio per il messaggio, fare clic su **Selezionare una registrazione**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **una registrazione**. Nella nuova finestra del browser, fare clic su **Sfoglia**, selezionare il file che si desidera utilizzare, quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
       > [!NOTE]
-      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file audio supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 26. Specificare come gestire le chiamate dopo la riproduzione del messaggio (se è stato configurato un messaggio):
 
     - Per interrompere la chiamata, fare clic su **Interrompi chiamata**.
 
-    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainname\>* è (ad esempio, bob@contoso.com).
+    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su **Inoltra a segreteria telefonica** e quindi digitare l'indirizzo della segreteria telefonica. Il formato dell'indirizzo del sistema di caselle vocali *\<username\>* @ *\<domainname\>* è ( ad esempio, bob@contoso.com).
 
     - Per inoltrare la chiamata a un altro utente, fare clic su **Inoltra a URI SIP** e quindi digitare l'indirizzo dell'utente. Il formato dell'indirizzo utente è _\<username\>_ @ _\<domainname\>_ .
 
-    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono è *\<number\>* @ *\<domainname\>* (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per il routing del chiamante alla destinazione corretta.
+    - Per inoltrare la chiamata a un altro numero di telefono, fare clic su **Inoltra a numero di telefono** e quindi digitare il numero di telefono. Il formato del numero di telefono *\<number\>* @ *\<domainname\>* è (ad esempio, +14255550121@contoso.com). Il nome di dominio viene utilizzato per il routing del chiamante alla destinazione corretta.
 
 27. In **Passaggio 6 Configurare la musica di attesa** scegliere la musica che si desidera riprodurre per i chiamanti in attesa della risposta di un agente effettuando una delle operazioni seguenti:
 
@@ -521,7 +521,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     - Per utilizzare la registrazione di un file audio per la musica di attesa, fare clic su **Selezionare un file musicale**. Se si desidera caricare un nuovo file audio, fare clic sul collegamento **un file musicale**. Nella nuova finestra del browser, fare clic su **Sfoglia**, selezionare il file che si desidera utilizzare e quindi fare clic su **Apri**. Fare clic su **Carica** per caricare il file audio.
 
     > [!NOTE]
-    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+    > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 28. In **Passaggio 7 Configurare Interactive Voice Response** specificare la domanda da rivolgere al chiamante nell'intestazione **L'utente ascolterà il seguente testo o messaggio registrato** come indicato di seguito:
 
@@ -533,10 +533,10 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     > [!NOTE]
     > Il simbolo "#" viene convertito nella parola "numero" dal motore di sintesi vocale. Se è necessario fare riferimento al tasto #, utilizzare il nome del tasto anziché il simbolo nella richiesta. Ad esempio, "Per parlare con il reparto vendite, premere cancelletto".
 
-    - Per utilizzare un file audio preregistrato contenente la domanda, fare clic su Seleziona una registrazione **e** quindi fare clic sul collegamento **a** una registrazione per caricare il file. Nella nuova finestra del browser fare clic **su Sfoglia,** selezionare il file audio e quindi fare clic su **Apri.** Fare **clic** su Carica per caricare il file e, facoltativamente, è possibile digitare la domanda nella casella di testo( in questo modo la domanda e la risposta del chiamante possono essere inoltrate all'agente di risposta).
+    - Per utilizzare un file audio preregistrato contenente la domanda, fare clic su Seleziona una registrazione **e** quindi sul collegamento **a** una registrazione per caricare il file. Nella nuova finestra del browser fare clic **su Sfoglia,** selezionare il file audio e quindi fare clic su **Apri.** Fare **clic** su Carica per caricare il file e facoltativamente è possibile digitare la domanda nella casella di testo, in modo da consentire l'inoltro della domanda e della risposta del chiamante all'agente che risponde.
 
       > [!NOTE]
-      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx).
+      > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
 
 29. In **Risposta 1** specificare la prima risposta possibile alla domanda effettuando le operazioni seguenti:
 
@@ -556,7 +556,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 
     - Per rivolgere un'altra domanda, fare clic su **Formula un'altra domanda**, quindi fare clic su **Usa sintesi vocale** e digitare la domanda oppure fare clic su **Selezionare una registrazione**. Utilizzare i raggruppamenti di risposte di questa sezione per specificare un massimo di quattro possibili risposte alla domanda aggiuntiva e la coda da utilizzare per ogni risposta. Per specificare una terza o una quarta possibile risposta, fare clic sulla casella di controllo **Risposta 3** o **Risposta 4**.
 
-31. Specificare un massimo di altre tre possibili risposte alla domanda originale ripetendo i passaggi 28 e 29 per definire le possibili risposte e l'azione da intraprendere per ciascuna risposta. Per specificare una terza o una quarta risposta possibile, selezionare la casella di controllo Risposta **3** o **Risposta 4.**
+31. Specificare un massimo di altre tre possibili risposte alla domanda originale ripetendo i passaggi 28 e 29 per definire le possibili risposte e l'azione da intraprendere per ciascuna risposta. Per specificare una terza o una quarta risposta possibile, selezionare la casella **di controllo Risposta 3** o **Risposta 4.**
 
 32. Fare clic su **Distribuisci**.
 
@@ -572,69 +572,69 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
    $serviceId = "service:" + (Get-CsService | ?{$_.Applications -like "*RGS*"}).ServiceId;
    ```
 
-4. Un flusso di lavoro interattivo richiede due o più code e due o più gruppi di agenti. Prima di tutto, creare i gruppi di agenti. Correre:
+4. Un flusso di lavoro interattivo richiede due o più code e due o più gruppi di agenti. Creare innanzitutto i gruppi di agenti. Eseguire: 
 
    ```powershell
    $AGSupport = New-CsRgsAgentGroup -Parent $serviceId -Name "Technical Support" [-AgentAlertTime "20"] [-ParticipationPolicy "Informal"] [-RoutingMethod LongestIdle] [-AgentsByUri("sip:agent1@contoso.com", "sip:agent2@contoso.com")]
    $AGSales = New-CsRgsAgentGroup -Parent $serviceId -Name "Sales Team" [-AgentAlertTime "20"] [-ParticipationPolicy "Informal"] [-RoutingMethod LongestIdle] [-AgentsByUri("sip:bob@contoso.com", "sip:alice@contoso.com")]
    ```
 
-5. Creare le code. Correre:
+5. Creare le code. Eseguire: 
 
    ```powershell
    $QSupport = New-CsRgsQueue -Parent $ServiceId -Name "Contoso Support" -AgentGroupIDList($AG-Support.Identity)
    $QSales = New-CsRgsQueue -Parent $ServiceId -Name "Contoso Sales" -AgentGroupIDList($AG-Sales.Identity)
    ```
 
-6. Creare il primo prompt di Response Group. Correre:
+6. Creare il primo prompt di Response Group. Eseguire: 
 
    ```powershell
    $SupportPrompt = New-CsRgsPrompt -TextToSpeechPrompt "Please be patient while we connect you with Contoso Technical Support."
    ```
 
-7. Crea quindi l'azione da eseguire dopo il prompt. Correre:
+7. Crea quindi l'azione da eseguire dopo il prompt. Eseguire: 
 
    ```powershell
    $SupportAction = New-CsRgsCallAction -Prompt $SupportPrompt -Action TransferToQueue -QueueID $QSupport.Identity
    ```
 
-8. Creare la prima risposta di Response Group. Correre:
+8. Creare la prima risposta di Response Group. Eseguire: 
 
    ```powershell
    $SupportAnswer = New-CsRgsAnswer -Action $SupportAction [-DtmfResponse 1]
    ```
 
-9. Creare ora il secondo prompt, l'azione di chiamata e la risposta. Crea prima di tutto il prompt. Correre:
+9. Ora crea il secondo prompt, l'azione di chiamata e la risposta. Crea innanzitutto il prompt. Eseguire: 
 
    ```powershell
    $SalesPrompt = New-CsRgsPrompt -TextToSpeechPrompt "Please hold while we connect you with Contoso Sales."
    ```
 
-10. Creare la seconda azione di chiamata. Correre:
+10. Creare la seconda azione di chiamata. Eseguire: 
 
     ```powershell
     $SalesAction = New-CsRgsCallAction -Prompt $SalesPrompt -Action TransferToQueue -QueueID $QSales.Identity
     ```
 
-11. Creare la seconda risposta di Response Group. Correre:
+11. Creare la seconda risposta di Response Group. Eseguire: 
 
     ```powershell
     $SalesAnswer = New-CsRgsAnswer -Action $SalesAction [-DtmfResponse 2]
     ```
 
-12. Creare il prompt di primo livello. Correre:
+12. Creare il prompt di primo livello. Eseguire: 
 
     ```powershell
     $TopLevelPrompt = New-CsRgsPrompt -TextToSpeechPrompt "Thank you for calling Contoso. For Technical Support, press 1. For a Sales Representative, press 2."
     ```
 
-13. Creare la domanda di primo livello. Correre:
+13. Creare la domanda di primo livello. Eseguire: 
 
     ```powershell
     $TopLevelQuestion = New-CsRgsQuestion -Prompt $TopLevelPrompt [-AnswerList ($SupportAnswer, $SalesAnswer)]
     ```
 
-14. A questo punto, creare il flusso di lavoro. Correre:
+14. Creare ora il flusso di lavoro. Eseguire: 
 
     ```powershell
     $IVRAction = New-CsRgsCallAction -Action TransferToQuestion [-Question $Question]
@@ -650,11 +650,10 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 
 [(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business](optional-define-response-group-business-hours.md)
 
-[New-CsRgsWorkflow](https://docs.microsoft.com/powershell/module/skype/new-csrgsworkflow?view=skype-ps)
+[New-CsRgsWorkflow](/powershell/module/skype/new-csrgsworkflow?view=skype-ps)
 
-[Set-CsRgsWorkflow](https://docs.microsoft.com/powershell/module/skype/set-csrgsworkflow?view=skype-ps)
+[Set-CsRgsWorkflow](/powershell/module/skype/set-csrgsworkflow?view=skype-ps)
 
-[New-CsRgsPrompt](https://docs.microsoft.com/powershell/module/skype/new-csrgsprompt?view=skype-ps)
+[New-CsRgsPrompt](/powershell/module/skype/new-csrgsprompt?view=skype-ps)
 
-[New-CsRgsCallAction](https://docs.microsoft.com/powershell/module/skype/new-csrgscallaction?view=skype-ps)
-
+[New-CsRgsCallAction](/powershell/module/skype/new-csrgscallaction?view=skype-ps)

@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fde45195-6eb4-403c-9094-57df7fc0bd2a
 description: Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
-ms.openlocfilehash: f29feabe8ad13a38af3e3818936be7cfbcdf5f06
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 70681e995068a0999324694a78806421e0f2d129
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101282"
 ---
 # <a name="plan-for-outbound-voice-routing-in-skype-for-business-server"></a>Pianificare il routing vocale in uscita in Skype for Business Server
  
 Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
   
-Il routing delle chiamate in uscita si applica VoIP aziendale chiamate destinate a un gateway PSTN (Public Switched Telephone Network), a un trunk o a un centralino (PBX). Quando un utente di Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
+Il routing delle chiamate in uscita si applica VoIP aziendale chiamate destinate a un gateway PSTN (Public Switched Telephone Network), un trunk o un PBX (Private Branch Exchange). Quando un utente di Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
   
 **Impostazioni di routing delle chiamate in uscita di Skype for Business Server**
 
@@ -47,22 +47,22 @@ Le regole di normalizzazione definiscono il modo in cui i numeri di telefono esp
   
 ### <a name="dial-plan-scope"></a>Ambito del dial plan
 
-L'ambito di un dial plan determina il livello gerarchico a cui può essere applicato il dial plan. In Skype for Business Server, a un utente può essere assegnato un dial plan specifico per utente. Se non viene assegnato un dial plan utente, viene applicato il dial plan del pool Front End. Se non è presente alcun dial plan del pool Front End, viene applicato il dial plan del sito. Infine, se non è presente alcun altro dial plan applicabile all'utente, viene applicato il dial plan globale.
+L'ambito di un dial plan determina il livello gerarchico a cui è possibile applicare il dial plan. In Skype for Business Server, a un utente può essere assegnato un dial plan specifico per utente. Se non viene assegnato un dial plan utente, viene applicato il dial plan del pool Front End. Se non è presente alcun dial plan del pool Front End, viene applicato il dial plan del sito. Infine, se non è presente alcun altro dial plan applicabile all'utente, viene applicato il dial plan globale.
   
-I client ottengono i livelli di ambito del dial plan tramite le impostazioni di provisioning di tipo in-band fornite quando gli utenti a utilizzano Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando il Pannello di controllo di Skype for Business Server.
+I client ottengono livelli di ambito del dial plan tramite le impostazioni di provisioning in banda che vengono fornite quando gli utenti a questo tipo di accesso a Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando il Pannello di controllo di Skype for Business Server.
   
 > [!NOTE]
 > Il dial plan del gateway PSTN (Public Switched Telephone Network) a livello di servizio viene applicato alle chiamate in arrivo da un determinato gateway. 
   
 I livelli di ambito del dial plan sono definiti come segue:
   
-- **Dial plan utente:** può essere assegnato a singoli utenti, gruppi o oggetti contatto. Le applicazioni vocali possono cercare un dial plan per utente quando si riceve una chiamata con il contesto telefonico impostato su predefinito dell'utente. Ai fini dell'assegnazione di un dial plan, un oggetto contatto viene considerato un singolo utente.
+- **Dial plan utente**: può essere assegnato a singoli utenti, gruppi o oggetti contatto. Le applicazioni vocali possono cercare un dial plan per utente quando si riceve una chiamata con il contesto telefonico impostato su user-default. Ai fini dell'assegnazione di un dial plan, un oggetto contatto viene considerato un singolo utente.
     
 - **Dial plan pool**: può essere creato a livello di servizio per qualsiasi gateway PSTN o pool di registrazione nella topologia. Per definire un dial plan pool, è necessario specificare un particolare servizio (gateway PSTN o pool di registrazione) a cui applicare il dial plan. 
     
-- **Dial plan del sito:** può essere creato per un intero sito, ad eccezione di qualsiasi utente, gruppo o oggetto contatto a cui è assegnato un dial plan del pool o un dial plan utente. Per definire un dial plan sito, è necessario specificare il sito a cui applicare il dial plan.
+- **Dial plan del sito**: può essere creato per un intero sito, ad eccezione di tutti gli utenti, i gruppi o gli oggetti contatto a cui è assegnato un dial plan del pool o un dial plan utente. Per definire un dial plan sito, è necessario specificare il sito a cui applicare il dial plan.
     
-- **Dial plan globale**: dial plan predefinito installato con il prodotto. È possibile modificare il dial plan globale, ma non eliminarlo. Questo dial plan si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto della distribuzione, a meno che non venga configurato e assegnato un dial plan con un ambito più specifico.
+- **Dial plan globale**: Dial plan predefinito installato con il prodotto. È possibile modificare il dial plan globale, ma non eliminarlo. Questo dial plan si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto nella distribuzione, a meno che non si configura e si assegna un dial plan con un ambito più specifico.
     
 ### <a name="planning-for-dial-plans"></a>Pianificazione di dial plan
 
@@ -70,9 +70,9 @@ Per pianificare un dial plan, attenersi alla seguente procedura:
   
 - Elencare tutte le impostazioni locali in cui l'organizzazione ha un ufficio.
     
-    L'elenco deve essere aggiornato e completato. Dovrà essere rivisto con l'evolversi della società. In una grande società multinazionale con numerose succursali di piccole dimensioni, questa operazione può richiedere molto tempo.
+    L'elenco deve essere aggiornato e completo. Dovrà essere rivisto con l'evolversi della società. In una società multinazionale di grandi dimensioni con numerose succursali di piccole dimensioni, questa operazione può richiedere molto tempo.
     
-- Identificare modelli di numeri validi per ogni sito.
+- Identificare i modelli di numero validi per ogni sito.
     
     La parte della pianificazione dei dial plan che richiede più tempo è l'identificazione dei formati di numeri validi per ogni sito. In alcuni casi, può essere possibile copiare negli altri dial plan le regole di normalizzazione scritte per un dial plan, in particolare se i siti corrispondenti si trovano nello stesso paese, nella stessa area geografica o anche nello stesso continente. In altri casi, possono essere sufficienti piccole modifiche dei numeri in un dial plan per utilizzarli in altri dial plan.
     
@@ -82,19 +82,19 @@ Per pianificare un dial plan, attenersi alla seguente procedura:
     
 - Decidere se sono necessari più dial plan per una singola località. 
     
-    Se l'organizzazione gestisce un singolo dial plan in più località, potrebbe essere comunque necessario creare un dial plan separato per gli utenti di VoIP aziendale che esereranno la migrazione da un CENTRALINO (Private Branch Exchange) e che dovranno conservare gli interni esistenti.
+    Se l'organizzazione gestisce un singolo dial plan in più posizioni, potrebbe essere comunque necessario creare un dial plan separato per gli utenti di VoIP aziendale che esereranno la migrazione da un PBX (Private Branch Exchange) e che dovranno conservare gli interni esistenti.
     
-- Decidere se sono necessari dial plan per utente. Ad esempio, se in un sito di succursale sono presenti utenti registrati nel sito centrale o utenti registrati in un Survivable Branch Appliance, è possibile prendere in considerazione scenari di composizione speciali per tali utenti utilizzando dial plan e regole di normalizzazione per utente. Per informazioni [dettagliate, vedere Pianificare VoIP aziendale resilienza in Skype for Business Server.](enterprise-voice-resiliency.md)
+- Decidere se sono necessari dial plan per utente. Ad esempio, se in un sito di succursale sono presenti utenti registrati nel sito centrale o utenti registrati in un Survivable Branch Appliance, è possibile prendere in considerazione scenari di composizione speciali per tali utenti che utilizzano dial plan e regole di normalizzazione per utente. Per informazioni dettagliate, [vedere Plan for VoIP aziendale resiliency in Skype for Business Server.](enterprise-voice-resiliency.md)
     
 - Determinare l'ambito del dial plan (come descritto in precedenza in questo argomento).
     
-Per creare un dial plan, specificare i valori nei seguenti campi, se necessario, utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+Per creare un dial plan, specificare i valori nei campi seguenti, se necessario, utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
 #### <a name="name-and-simple-name"></a>Nome e nome semplice
 
-Per i dial plan utente, è necessario specificare un nome descrittivo che identifichi gli utenti, i gruppi o gli oggetti contatto a cui verrà assegnato il dial plan. Per i dial plan del sito, il campo Nome è precompilato con il nome del sito e non può essere modificato. Per i dial plan del pool, il campo Nome viene precompilato con il gateway PSTN o il nome di dominio completo (FQDN) del pool Front End e non può essere modificato.
+Per i dial plan utente, è necessario specificare un nome descrittivo che identifichi gli utenti, i gruppi o gli oggetti contatto a cui verrà assegnato il dial plan. Per i dial plan del sito, il campo Nome è precompilato con il nome del sito e non può essere modificato. Per i dial plan del pool, il campo Nome è precompilato con il gateway PSTN o il nome di dominio completo (FQDN) del pool Front End e non può essere modificato.
   
-Il nome semplice del dial plan è precompilato con una stringa derivata dal nome del dial plan. Il campo Nome semplice è modificabile, che consente di creare una convenzione di denominazione più descrittiva per i dial plan. Il valore di Nomesimple non può essere vuoto e deve essere univoco. È consigliabile sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzarla in modo coerente in tutti i siti e gli utenti.
+Il nome semplice del dial plan è precompilato con una stringa derivata dal nome del dial plan. Il campo Nome semplice è modificabile, che consente di creare una convenzione di denominazione più descrittiva per i dial plan. Il valore Nomesimple non può essere vuoto e deve essere univoco. È consigliabile sviluppare una convenzione di denominazione per l'intera organizzazione e quindi utilizzarla in modo coerente in tutti i siti e gli utenti.
   
 #### <a name="description"></a>Descrizione
 
@@ -106,7 +106,7 @@ Se si distribuisce la funzionalità di conferenza telefonica con accesso esterno
   
 #### <a name="external-access-prefix"></a>Prefisso accesso esterno
 
-È possibile specificare un prefisso di accesso esterno di un massimo di quattro caratteri (#, e 0-9) se gli utenti devono comporre una o più cifre iniziali aggiuntive (ad esempio 9) per ottenere una linea \* esterna.
+È possibile specificare un prefisso di accesso esterno di un massimo di quattro caratteri (#, e 0-9) se gli utenti devono comporre una o più cifre iniziali \* aggiuntive (ad esempio, 9) per ottenere una linea esterna.
   
 > [!NOTE]
 > Se si specifica un prefisso di accesso esterno, non è necessario creare una regola di normalizzazione aggiuntiva per regolare il prefisso. 
@@ -137,7 +137,7 @@ Di seguito sono riportati alcuni campi numerici che può essere necessario inclu
 
 Le regole di normalizzazione utilizzano le espressioni regolari di .NET Framework per specificare formati di corrispondenza numerica che il server utilizza per convertire le stringhe di composizione nel formato E.164 allo scopo di eseguire la ricerca inversa dei numeri. È possibile creare regole di normalizzazione nel Pannello di controllo di Skype for Business Server immettendo le espressioni manualmente oppure immettendo le cifre iniziale e la lunghezza delle stringhe di composizione da associare e consentendo al Pannello di controllo di Skype for Business Server di generare automaticamente l'espressione regolare corrispondente. In ogni caso, al termine è possibile immettere un numero di test per verificare che la regola di normalizzazione funzioni come previsto.
   
-Per informazioni dettagliate sull'utilizzo delle espressioni regolari di .NET Framework, vedere ["Espressioni regolari di .NET Framework".](https://go.microsoft.com/fwlink/p/?linkId=140927)
+Per informazioni dettagliate sull'.NET Framework espressioni regolari, vedere [".NET Framework regular expressions"](/dotnet/standard/base-types/regular-expressions).
   
 #### <a name="sample-normalization-rules"></a>Regole di normalizzazione di esempio
 <a name="BKMK_SampleNormalizationRules"> </a>
@@ -186,7 +186,7 @@ I criteri vocali di Skype for Business Server definiscono quanto segue per ogni 
     
 - Un set di record di utilizzo PSTN (Public Switched Telephone Network) che definiscono i tipi di chiamate autorizzati. 
     
-La procedura seguente consente di pianificare i criteri vocali necessari per la VoIP aziendale distribuzione:
+I passaggi seguenti consentono di pianificare i criteri vocali necessari per la VoIP aziendale distribuzione:
   
 - Stabilire come verrà configurato il criterio vocale globale, ovvero il criterio vocale predefinito installato con il prodotto). Questo criterio verrà applicato a tutti VoIP aziendale utenti a cui non è stato esplicitamente assegnato un criterio a livello di sito o per utente.
     
@@ -200,16 +200,16 @@ La procedura seguente consente di pianificare i criteri vocali necessari per la 
     
 ### <a name="voice-policy-scope"></a>Ambito dei criteri vocali
 
-L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dal più specifico al più generale).
+L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dai più specifici al più generale).
   
 - Il **criterio vocale utente** può essere assegnato a singoli utenti, gruppi o oggetti contatto. Questo è il criterio di livello più basso. È possibile distribuire criteri vocali utente per abilitare le funzionalità per determinati utenti o gruppi in un sito, ma non per altri nello stesso sito. Si potrebbe decidere ad esempio di disabilitare le chiamate interurbane per alcuni dipendenti. Ai fini dell'assegnazione di un criterio vocale, un oggetto contatto viene considerato un singolo utente.
     
     > [!NOTE]
-    > È consigliabile distribuire un criterio vocale utente per i siti di succursale VoIP aziendale utenti registrati nella distribuzione del sito centrale o per gli utenti registrati in un Survivable Branch Appliance. 
+    > È consigliabile distribuire criteri vocali utente per gli utenti VoIP aziendale del sito di succursale registrati nella distribuzione del sito centrale o per gli utenti registrati in un Survivable Branch Appliance. 
   
 - Il **criterio vocale di sito** si applica a un intero sito, con l'eccezione degli utenti, gruppi o oggetti contatto a cui è stato assegnato un criterio vocale utente. Per definire un criterio vocale di sito, è necessario specificare il sito a cui si applica il criterio. Se non viene assegnato un criterio vocale utente, viene utilizzato il criterio vocale di sito.
     
-- **I criteri vocali globali** sono i criteri vocali predefiniti installati con il prodotto. È possibile modificare il criterio vocale globale per soddisfare le esigenze specifiche dell'organizzazione, ma non è possibile rinominarlo o eliminarlo. Questo criterio vocale si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto nella distribuzione, a meno che non si configura e assegni un criterio vocale con ambito più specifico. Se si desidera disabilitare completamente questo criterio, assicurarsi che a tutti i siti e a tutti gli utenti siano assegnati criteri personalizzati.
+- **I criteri vocali globali** sono i criteri vocali predefiniti installati con il prodotto. È possibile modificare il criterio vocale globale per soddisfare le esigenze specifiche dell'organizzazione, ma non è possibile rinominarlo o eliminarlo. Questo criterio vocale si applica a tutti VoIP aziendale utenti, gruppi e oggetti contatto nella distribuzione, a meno che non si configura e si assegna un criterio vocale con ambito più specifico. Se si desidera disabilitare completamente questo criterio, assicurarsi che a tutti i siti e a tutti gli utenti siano assegnati criteri personalizzati.
     
 ### <a name="call-features"></a>Funzionalità di chiamata
 
@@ -233,9 +233,9 @@ L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile a
     
 - **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose utilizzando il client Skype for Business e quindi contrassegna tali chiamate nei record dettagli chiamata. Questa funzionalità è disabilitata per impostazione predefinita.
     
--  L'escape della segreteria telefonica impedisce che le chiamate vengano instradati immediatamente al sistema di segreteria telefonica del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, fuori batteria o fuori intervallo e si basa su un valore timer. Questa impostazione abilita e disabilita il timer e imposta il valore del timer. Può essere configurato solo utilizzando Skype for Business Server Management Shell. Questa funzionalità è disabilitata per impostazione predefinita.
+- **L'escape** della segreteria telefonica impedisce che le chiamate vengano instradati immediatamente al sistema di segreteria telefonica del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, fuori batteria o fuori portata ed è basato su un valore timer. Questa impostazione abilita e disabilita il timer e imposta il valore del timer. Può essere configurato solo tramite Skype for Business Server Management Shell. Questa funzionalità è disabilitata per impostazione predefinita.
     
-- L'inoltro di chiamata e lo squillo simultaneo degli utilizzi **PSTN** consentono agli amministratori di specificare lo stesso utilizzo PSTN del criterio vocale per l'inoltro di chiamata e lo squillo simultaneo, limitare l'inoltro di chiamata e lo squillo simultaneo solo agli utenti interni di Skype for Business oppure specificare un utilizzo PSTN personalizzato diverso dall'utilizzo PSTN del criterio vocale. Il comportamento predefinito prevede l'applicazione di un utilizzo PSTN uguale al criterio vocale per l'inoltro di chiamata e lo squillo simultaneo.
+- L'inoltro di chiamata e gli utilizzi **PSTN** di squillo simultaneo consentono agli amministratori di specificare lo stesso utilizzo PSTN del criterio vocale per l'inoltro di chiamata e lo squillo simultaneo, limitare l'inoltro di chiamata e lo squillo simultaneo solo agli utenti interni di Skype for Business oppure specificare un utilizzo PSTN personalizzato diverso dall'utilizzo PSTN del criterio vocale. Il comportamento predefinito prevede l'applicazione di un utilizzo PSTN uguale al criterio vocale per l'inoltro di chiamata e lo squillo simultaneo.
     
 ### <a name="pstn-usage-records"></a>Record di utilizzo PSTN
 
@@ -270,7 +270,7 @@ I record di utilizzo PSTN non svolgono di per sé alcuna funzione. Per utilizzar
     
 ## <a name="voice-routes"></a>Route vocali
 
-Le route di chiamata specificano il modo in cui Skype for Business Server gestisce le chiamate in uscita effettuate VoIP aziendale utenti. Quando un utente compone un numero, il Front End Server normalizza la stringa di composizione nel formato E.164, se necessario, e tenta di associarla a un URI SIP. Se il server non riesce a effettuare l'associazione, applica la logica di routing delle chiamate in uscita in base al numero. Il passaggio finale della definizione della logica consiste nel creare una route di chiamata denominata separata per ogni insieme di numeri di telefono di destinazione elencati in ogni dial plan.
+Le route di chiamata specificano in che modo Skype for Business Server gestisce le chiamate in uscita effettuate VoIP aziendale utenti. Quando un utente compone un numero, il Front End Server normalizza la stringa di composizione nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a effettuare l'associazione, applica la logica di routing delle chiamate in uscita in base al numero. Il passaggio finale della definizione della logica consiste nel creare una route di chiamata denominata separata per ogni insieme di numeri di telefono di destinazione elencati in ogni dial plan.
   
 Prima di definire le route delle chiamate in uscita, è necessario completare le operazioni seguenti:
   
@@ -298,25 +298,25 @@ Per ogni route, è necessario specificare:
   
 ### <a name="mn-trunk-support"></a>Supporto dei trunk M:N
 
-Skype for Business Server offre flessibilità nel modo in cui le chiamate vengono instradati alla rete PSTN. Una route vocale specifica un insieme di trunk alla rete PSTN che possono essere utilizzati per una determinata chiamata vocale. Un trunk associa un Mediation Server e un numero di porta a un gateway PSTN e a un numero di porta di attesa. Questa associazione logica consente a un Mediation Server di essere associato a più gateway e di avere più connessioni allo stesso gateway. Quando si definisce una route di chiamata, si specificano i trunk associati a tale route, ma non si specifica quali Mediation Server sono associati alla route. Per creare trunk definendo le relazioni tra Mediation Server e gateway PSTN, IP-PBC e Session Border Controller (SBC), utilizzare il Generatore di topologie.
+Skype for Business Server offre flessibilità nel modo in cui le chiamate vengono instradati alla rete PSTN. Una route vocale specifica un insieme di trunk alla rete PSTN che possono essere utilizzati per una determinata chiamata vocale. Un trunk associa un Mediation Server e un numero di porta a un gateway PSTN e a un numero di porta di attesa. Questa associazione logica consente a un Mediation Server di essere associato a più gateway e di avere più connessioni allo stesso gateway. Quando si definisce una route di chiamata, si specificano i trunk associati a tale route, ma non si specificano quali Mediation Server sono associati alla route. Per creare trunk definendo le relazioni tra Mediation Server e gateway PSTN, IP-PBX e session border controller (SBC), utilizzare il Generatore di topologie.
   
 ### <a name="least-cost-routing"></a>Least Cost Routing
 
 La possibilità di specificare i trunk verso cui vengono instradati diversi numeri consente di determinare quali route comportano i costi minori e di implementarle di conseguenza. In generale, per ridurre i costi delle chiamate interurbane, è consigliabile scegliere il trunk con il gateway più vicino alla località del numero di destinazione. Se ad esempio ci si trova a New York e si sta chiamando un numero a Roma, è possibile trasmettere la chiamata tramite la rete IP al trunk con il gateway nell'ufficio di Roma, sostenendo in questo modo solo i costi di una chiamata locale.
   
-Per un esempio di utilizzo del routing più basso, tenere presente quanto segue: Fabrikam decide di consentire agli utenti tedeschi di comporre numeri statunitensi utilizzando il trunk statunitense. Fabrikam desidera inoltre configurare il sistema in modo che tutte le chiamate dagli utenti di Skype for Business Server degli Stati Uniti verso la Germania e i paesi/aree geografiche adiacenti terminino sul trunk con il gateway in Germania. Questo instradamento consente di risparmiare, perché una chiamata dalla Germania all'Austria, ad esempio, è meno costosa di una chiamata dagli Stati Uniti all'Austria.
+Per un esempio dell'utilizzo del routing meno costose, tenere presente quanto segue: Fabrikam decide di consentire agli utenti tedeschi di comporre numeri statunitensi utilizzando il trunk statunitense. Fabrikam desidera inoltre configurare il sistema in modo che tutte le chiamate degli utenti di Skype for Business Server statunitensi verso la Germania e i paesi/aree geografiche adiacenti terminino nel trunk con il gateway in Germania. Questo instradamento consente di risparmiare, perché una chiamata dalla Germania all'Austria, ad esempio, è meno costosa di una chiamata dagli Stati Uniti all'Austria.
   
 ### <a name="translating-outbound-dial-strings"></a>Conversione delle stringhe di composizione in uscita
 
-Skype for Business Server richiede che tutte le stringhe di composizione siano normalizzate nel formato E.164 allo scopo di eseguire la ricerca inversa dei numeri (RNL). Per i trunk con gateway o gli scambi di succursale privata (PBX) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio l'URI della richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
+Skype for Business Server richiede che tutte le stringhe di composizione siano normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Per i trunk con gateway o ipoconse (PBX) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio URI richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
   
-Con Skype for Business Server, è possibile creare una o più regole che assistono nella modifica del numero chiamante prima di instradarlo al trunk.
+Con Skype for Business Server, è possibile creare una o più regole che assistono nella modifica del numero di chiamata prima di instradarlo al trunk.
   
 Nella pianificazione dei trunk che associano coppie gateway:porta a coppie Mediation Server:porta, può essere utile raggruppare i trunk con requisiti di composizione locali simili e quindi ridurre il numero di regole di conversione necessarie e il tempo necessario per scriverli.
   
 ### <a name="configuring-caller-id"></a>Configurazione dell'ID chiamante
 
-Skype for Business Server consente di modificare l'ID chiamante per le chiamate in uscita. Ad esempio, se un'organizzazione vuole mascherare gli interni di chiamata diretta dei dipendenti e sostituirli con il numero generico aziendale o di reparto, un amministratore può farlo utilizzando il Pannello di controllo di Skype for Business Server per eliminare l'ID chiamante e sostituirlo con un ID chiamante alternativo specificato. Nella pianificazione della logica di routing, considerare per quali utenti, gruppi e siti si desidera utilizzare questa opzione, ad esempio per tutti i dipendenti.
+Skype for Business Server consente di modificare l'ID chiamante per le chiamate in uscita. Ad esempio, se un'organizzazione desidera mascherare gli interni di chiamata diretta dei dipendenti e sostituirli con il numero aziendale o di reparto generico, un amministratore può farlo utilizzando il Pannello di controllo di Skype for Business Server per eliminare l'ID chiamante e sostituirlo con un ID chiamante alternativo specificato. Nella pianificazione della logica di instradamento, prendere in considerazione i singoli utenti, i gruppi e i siti per i quali si desidera utilizzare questa opzione, ad esempio anche per tutti i dipendenti.
   
 > [!NOTE]
 > Per le chiamate reinoltrate tramite PSTN, verrà visualizzato l'ID chiamante generico anziché quello originario. La chiamata potrebbe quindi ignorare eventuali impostazioni Non disturbare o di privacy configurate dal destinatario. 
@@ -332,5 +332,3 @@ Durante la creazione delle route delle chiamate in uscita, tenere presente i fat
 - Se un utente non è abilitato per VoIP aziendale, il server applica un'altra logica di routing, in base alle esigenze.
     
 - Se una chiamata viene instradata a un gateway completamente occupato (tutte le linee di trunk sono occupate), il gateway rifiuta la chiamata e la logica di routing in uscita la reindirizza alla successiva route Least Cost Routing. È necessario valutare con attenzione questo aspetto perché un gateway adatto nelle dimensioni a una piccola sede all'estero, ad esempio Zurigo, potrebbe in realtà trasportare una quantità significativa di traffico non locale per le chiamate internazionali dirette in Svizzera. Se il gateway non presenta dimensioni adeguate a questo traffico aggiuntivo, le chiamate dirette in Svizzera potrebbero essere instradate mediante un gateway in Germania, con conseguenti tariffe più alte.
-    
-

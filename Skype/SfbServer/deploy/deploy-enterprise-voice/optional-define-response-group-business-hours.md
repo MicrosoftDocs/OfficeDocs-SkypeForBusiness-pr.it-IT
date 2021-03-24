@@ -12,17 +12,17 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d62551b2-1847-4e1b-abe8-683b72aa94d5
-description: Creare o modificare l'orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: dcd2f7174a75eb68ef8d35759a1e454ede976bde
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Creare o modificare l'orario di ufficio di Response Group in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: d4a8101749e7fde06fc4c3d88ab343eb6e4d0f1d
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830996"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103672"
 ---
 # <a name="optional-define-response-group-business-hours-in-skype-for-business"></a>(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business 
  
-Creare o modificare l'orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.
+Creare o modificare l'orario di ufficio di Response Group in Skype for Business Server VoIP aziendale.
   
 ## <a name="defining-business-hours"></a>Definizione dell'orario di ufficio
 
@@ -35,9 +35,9 @@ Le impostazioni dell'orario di ufficio definiscono quando il flusso di lavoro è
 > Se un flusso di lavoro è definito come flusso di lavoro gestito, qualsiasi utente a cui è assegnato il ruolo CsResponseGroupManager può impostare e modificare l'orario di ufficio personalizzato per i flussi di lavoro gestiti. 
   
 > [!IMPORTANT]
-> Utilizzare la notazione 24 ore per i parametri nei cmdlet seguenti (ad esempio, 20:00=20:00 P.M.). 
+> Utilizzare la notazione 24 ore per i parametri nei cmdlet seguenti(ad esempio, 20:00=8:00 P.M.). 
   
-### <a name="to-create-a-predefined-business-hours-collection"></a>Per creare una raccolta di orari d'ufficio predefinita
+### <a name="to-create-a-predefined-business-hours-collection"></a>Per creare una raccolta orari di ufficio predefinita
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
@@ -66,6 +66,6 @@ Le impostazioni dell'orario di ufficio definiscono quando il flusso di lavoro è
 
 ## <a name="see-also"></a>Vedere anche
 
-[New-CsRgsTimeRange](https://docs.microsoft.com/powershell/module/skype/new-csrgstimerange?view=skype-ps)
+[New-CsRgsTimeRange](/powershell/module/skype/new-csrgstimerange?view=skype-ps)
   
-[New-CsRgsHoursOfBusiness](https://docs.microsoft.com/powershell/module/skype/new-csrgshoursofbusiness?view=skype-ps)
+[New-CsRgsHoursOfBusiness](/powershell/module/skype/new-csrgshoursofbusiness?view=skype-ps)

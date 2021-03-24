@@ -1,5 +1,5 @@
 ---
-title: Esclusioni dell'analisi antivirus per Skype for Business Server
+title: Esclusioni di analisi antivirus per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,22 +12,22 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 5d742259-ef3b-417a-920b-e1fa0e48f043
-description: Panoramica dell'interoperabilità dello scanner antivirus con Skype for Business Server.
-ms.openlocfilehash: b59a5c474a96d312ebe3a648536ebe827e684931
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Panoramica dell'interoperabilità degli scanner antivirus con Skype for Business Server.
+ms.openlocfilehash: 64646304b98de075fd9af0a82096da8c0bff2f12
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832266"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51104242"
 ---
-# <a name="antivirus-scanning-exclusions-for-skype-for-business-server"></a>Esclusioni dell'analisi antivirus per Skype for Business Server
+# <a name="antivirus-scanning-exclusions-for-skype-for-business-server"></a>Esclusioni di analisi antivirus per Skype for Business Server
 
-Panoramica dell'interoperabilità dello scanner antivirus con Skype for Business Server.
+Panoramica dell'interoperabilità degli scanner antivirus con Skype for Business Server.
 
-Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento di Skype for Business Server, è necessario escludere processi e directory specifici per ogni server o ruolo del server di Skype for Business Server in cui si esegue uno scanner antivirus. È necessario escludere le directory e i processi seguenti:
+Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento di Skype for Business Server, è necessario escludere processi e directory specifici per ogni server o ruolo del server Skype for Business Server in cui si esegue uno scanner antivirus. È necessario escludere le directory e i processi seguenti:
 
 > [!NOTE]
-> Le cartelle e i percorsi dei file elencati di seguito sono i percorsi predefiniti per Skype for Business Server. Per tutti i percorsi per i quali non è stata utilizzata l'impostazione predefinita, escludere i percorsi specificati per l'organizzazione anziché i percorsi predefiniti specificati in questo argomento.
+> I percorsi delle cartelle e dei file elencati di seguito sono i percorsi predefiniti per Skype for Business Server. Per tutti i percorsi per i quali non è stata utilizzata l'impostazione predefinita, escludere i percorsi specificati per l'organizzazione anziché i percorsi predefiniti specificati in questo argomento.
 
 > [!IMPORTANT]
 > Tenere presente che alcuni programmi antivirus potrebbero avere bisogno di percorsi assoluti, non relativi, per l'elenco di esclusione.
@@ -82,7 +82,7 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 
   - XmppTGW.exe
 
-- Processi del servizio host Windows Fabric:
+- Processi del servizio Host Windows Fabric:
 
   - Fabric.exe
 
@@ -96,10 +96,10 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 
   - %systemroot%\SysWOW64\inetsrv\w3wp.exe
 
-- SQL Server Back-End processi seguenti:
+- SQL Server Back-End processi:
 
     > [!NOTE]
-    > Si noti che questi percorsi sono specifici della SQL Server versione.
+    > Tieni presente che questi percorsi sono specifici della SQL Server versione.
 
   - %ProgramFiles%\Microsoft SQL Server\MSSQL11.MSSQLSERVER\MSSQL\Binn\SQLServr.exe
 
@@ -107,7 +107,7 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 
   - %ProgramFiles%\Microsoft SQL Server\MSAS11.MSSQLSERVER\OLAP\Bin\MSMDSrv.exe
 
-- SQL Server Front-End processi seguenti:
+- SQL Server Front-End processi:
 
   - %ProgramFiles%\Microsoft SQL Server\MSSQL12.LYNCLOCAL\MSSQL\Binn\SQLServr.exe
 
@@ -126,7 +126,7 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
   - %systemroot%\Microsoft.NET\assembly\GAC_MSIL
 
     > [!NOTE]
-    > Si noti che questi percorsi sono specifici della versione di Skype for Business Server.
+    > Tieni presente che questi percorsi sono specifici della versione di Skype for Business Server.
 
   - %programfiles%\Skype for Business Server 2015
 
@@ -134,14 +134,12 @@ Per assicurarsi che lo scanner antivirus non interferisca con il funzionamento d
 
   - %programfiles%\Common Files\Skype for Business Server 2015
 
-  - %programfiles%\Common Files\Skype for Business Online
+  - %programfiles%\Common Files\Skype for Business online
 
   - %SystemDrive%\RtcReplicaRoot
 
   - Archivio condivisione file (specificato in Generatore di topologie). Gli archivi file sono specificati in Generatore di topologie.
 
-  - File di registro e dati di SQL Server, inclusi quelli per il database back-end, l'archivio utente, l'archivio di archiviazione, l'archivio di monitoraggio e l'archivio applicazioni. I file di registro e di database possono essere specificati in Generatore di topologie. Per informazioni dettagliate sui dati e i file di registro per ogni database, inclusi i nomi predefiniti, vedere [SQL Server Data and Log File Placement](https://technet.microsoft.com/library/67aa525b-8aa3-474f-827e-8e1d4697f30f.aspx) nella documentazione relativa alla distribuzione.
+  - File di registro e dati di SQL Server, inclusi quelli per il database back-end, l'archivio utente, l'archivio di archiviazione, l'archivio di monitoraggio e l'archivio applicazioni. I file di registro e di database possono essere specificati in Generatore di topologie. Per informazioni dettagliate sui dati e i file di registro per ogni database, inclusi i nomi predefiniti, vedere [SQL Server Data and Log File Placement](/previous-versions/office/lync-server-2013/lync-server-2013-sql-server-data-and-log-file-placement) nella documentazione relativa alla distribuzione.
 
   - SQL Server file di dati e di registro, inclusi quelli per il database front-end, l'archivio Skype for Business e l'archivio RtcDatabase. In genere sono in %localdrive%\CSData.
-
-

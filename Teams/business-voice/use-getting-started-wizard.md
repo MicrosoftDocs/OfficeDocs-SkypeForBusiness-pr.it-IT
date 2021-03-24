@@ -18,12 +18,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3a3a5162f46631e00e6ffc22c19654908b4cb78b
-ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
+ms.openlocfilehash: 9b084afa7730d849f221de1d297f07359d200c79
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50726237"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51102832"
 ---
 # <a name="use-the-getting-started-wizard-to-set-up-business-voice"></a>Usare la procedura guidata Attività iniziali per configurare Business Voice
 
@@ -110,7 +110,7 @@ Per altre informazioni, vedere [Che cosa sono il routing delle chiamate, gli ind
 </table>
 
 > [!IMPORTANT]
-> Le attività iniziali guidate consentono di configurare un semplice menu di chiamata per diventare subito operativi. Se si hanno più numeri di telefono con i menu di chiamata da configurare o se si vogliono configurare menu di chiamata più complessi (detti anche operatori automatici), vedere [Configurare un operatore automatico cloud](set-up-auto-attendants.md) al termine della procedura guidata.
+> Le attività iniziali guidate consentono di configurare un semplice menu di chiamata per diventare subito operativi. Se si hanno più numeri di telefono con i menu di chiamata da configurare o se si vogliono configurare menu di chiamata più complessi (detti anche operatori automatici), vedere [Configurare un operatore automatico cloud](./create-a-phone-system-auto-attendant-smb.md) al termine della procedura guidata.
 
 <table>
     <tr>

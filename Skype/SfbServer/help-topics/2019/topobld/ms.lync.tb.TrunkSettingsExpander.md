@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 3d00e8f4-e599-4094-a4a1-34fd6e8a5580
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 43cce7d0e61cf2e2c4f5fa6e4bcb845fd63fbc03
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 907348defb35ef872ce36f84e6e6cc7695921529
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807536"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101782"
 ---
 # <a name="trunk-settings-expander"></a>Espansione delle impostazioni del trunk
 
@@ -39,12 +39,12 @@ Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:
 > [!NOTE]
 > Solo il trunk radice può essere associato a un Mediation Server.
 
- **Porta Mediation Server associata:** un valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.
+ **Porta Mediation Server associata:** valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.
 
 ![Espansione delle impostazioni del trunk](../../../media/Trunk_Settings_Expander.jpg)
 
 ## <a name="see-also"></a>Vedere anche
 
-[Elenco di controllo per la distribuzione del trunking SIP](https://technet.microsoft.com/library/94f4f03e-19d5-4198-92be-e4076dbb959a.aspx)
+[Elenco di controllo per la distribuzione del trunking SIP](/previous-versions/office/lync-server-2013/lync-server-2013-sip-trunk-deployment-checklist)
 
-[Componenti e topologie per il trunking SIP](https://technet.microsoft.com/library/8ed9a9d0-517e-4f36-a131-22cdafa257fa.aspx)
+[Componenti e topologie per il trunking SIP](/previous-versions/office/lync-server-2013/lync-server-2013-components-and-topologies-for-sip-trunking)

@@ -15,29 +15,29 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: ba112df8-3bb4-48e4-a353-4bf9110ccd71
-description: 'Riepilogo: informazioni su come definire una regola di conversione utilizzando lo strumento Crea regola di conversione in Skype for Business Server.'
-ms.openlocfilehash: b93d271abd0ade1b178e859f2a0599464a6759e5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni su come definire una regola di conversione tramite lo strumento Crea regola di conversione in Skype for Business Server.'
+ms.openlocfilehash: 3f4754184e69e7b574709d0272afc9989553cfe5
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804196"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103642"
 ---
 # <a name="create-or-modify-a-translation-rule-for-called-id-presentation-in-skype-for-business-server"></a>Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server
 
-**Riepilogo:** Informazioni su come definire una regola di conversione usando lo strumento Crea regola di conversione in Skype for Business Server.
+**Riepilogo:** Scopri come definire una regola di conversione usando lo strumento Crea una regola di conversione in Skype for Business Server.
 
-Segui questi passaggi se vuoi definire una regola di conversione immettendo un set di valori nello strumento Crea regola di conversione e abilitando il Pannello di controllo di Skype for Business Server per generare automaticamente il modello e la regola di conversione corrispondenti.  In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per informazioni dettagliate, vedere [Create or Modify a Translation Rule Manually](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx).
+Seguire questa procedura se si desidera definire una regola di  conversione immettendo un set di valori nello strumento Crea una regola di conversione e abilitando il Pannello di controllo di Skype for Business Server per generare automaticamente il modello di corrispondenza e la regola di conversione corrispondenti. In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per informazioni dettagliate, vedere [Create or Modify a Translation Rule Manually](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually).
 
 ### <a name="to-define-a-rule-by-using-the-build-a-translation-rule-tool"></a>Per definire una regola tramite lo strumento Crea regola di conversione
 
 1. Aprire il Pannello di controllo di Skype for Business Server.
 
-2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configurare un trunk con bypass multimediale [in Skype for Business Server](configure-trunk-with-media-bypass.md) fino al passaggio 10 o configurare un trunk senza bypass multimediale in Skype for Business [Server](configure-trunk-without-media-bypass.md) fino al passaggio 9.
+2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configurare un trunk con [bypass multimediale in Skype for Business Server](configure-trunk-with-media-bypass.md) fino al passaggio 10 o Configurare un trunk senza bypass multimediale in Skype for Business [Server](configure-trunk-without-media-bypass.md) fino al passaggio 9.
 
 3. In **Nome** nella pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome descrittivo del formato del numero da convertire.
 
-4. (Facoltativo) In **Descrizione** digitare una descrizione della regola di conversione, ad esempio Composizione interurbana internazionale degli Stati Uniti.
+4. (Facoltativo) In **Descrizione** digitare una descrizione della regola di conversione, ad esempio Composizione interurbana internazionale negli Stati Uniti.
 
 5. Nella sezione **Crea regola di conversione** della finestra di dialogo immettere i valore nei campi seguenti:
 
@@ -76,11 +76,11 @@ Segui questi passaggi se vuoi definire una regola di conversione immettendo un s
 
 1. Aprire il Pannello di controllo di Skype for Business Server
 
-2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configurare un trunk con bypass multimediale [in Skype for Business Server](configure-trunk-with-media-bypass.md) fino al passaggio 10 o configurare un trunk senza bypass multimediale in Skype for Business [Server](configure-trunk-without-media-bypass.md) fino al passaggio 9.
+2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configurare un trunk con [bypass multimediale in Skype for Business Server](configure-trunk-with-media-bypass.md) fino al passaggio 10 o Configurare un trunk senza bypass multimediale in Skype for Business [Server](configure-trunk-without-media-bypass.md) fino al passaggio 9.
 
 3. Nel campo **Nome** della pagina **Nuova regola di conversione** o **Modifica regola di conversione** digitare un nome che descriva il formato del numero da convertire.
 
-4. (Facoltativo) In **Descrizione** digitare una descrizione della regola di conversione, ad esempio Composizione interurbana internazionale degli Stati Uniti.
+4. (Facoltativo) In **Descrizione** digitare una descrizione della regola di conversione, ad esempio Composizione interurbana internazionale negli Stati Uniti.
 
 5. Fare clic su **Modifica** nella parte inferiore della sezione **Crea regola di conversione**.
 
@@ -90,7 +90,7 @@ Segui questi passaggi se vuoi definire una regola di conversione immettendo un s
 
    - In **Regola di conversione** specificare un modello per il formato dei numeri convertiti.
 
-     Ad esempio, se si immette ^ (\d \d+)$ in Corrispondenza a questo modello e 011$1 nella regola di conversione, la regola convertirà \+ {9} +441235551010 in 011441235551010.  
+     Se ad esempio si immette ^ (\d \d+)$ in Corrispondenza questo modello e 011$1 in Regola di conversione, la regola convertirà \+ {9} +441235551010 in 011441235551010.  
 
 7. Fare clic su **OK** per salvare la regola di conversione.
 
@@ -110,4 +110,3 @@ Segui questi passaggi se vuoi definire una regola di conversione immettendo un s
 [Pubblicare modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)
 
 [Distribuire il bypass multimediale in Skype for Business Server](deploy-media-bypass.md)
-

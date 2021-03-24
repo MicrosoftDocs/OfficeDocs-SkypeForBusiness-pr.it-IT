@@ -11,21 +11,21 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 2fe7e3a7-bc75-4d4b-94af-a8818722b0d3
-description: Le sezioni di questo articolo descrivono come abilitare, disabilitare temporaneamente o rimuovere gli utenti di Active Directory da Skype for Business Server.
-ms.openlocfilehash: aa1b1b21ba089815af20b61da3360179fb10935e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Nelle sezioni di questo articolo viene descritto come abilitare, disabilitare temporaneamente o rimuovere gli utenti di Active Directory da Skype for Business Server.
+ms.openlocfilehash: 0cf78b4ebe7023bc5a0f1b4af75c5d9e5a45db1b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832776"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103122"
 ---
 # <a name="manage-user-accounts-for-skype-for-business-server"></a>Gestire gli account utente per Skype for Business Server
 
-Le sezioni di questo articolo descrivono come abilitare, disabilitare temporaneamente o rimuovere gli utenti di Active Directory da Skype for Business Server.
+Nelle sezioni di questo articolo viene descritto come abilitare, disabilitare temporaneamente o rimuovere gli utenti di Active Directory da Skype for Business Server.
 
-Per informazioni su come abilitare un utente di Active Directory, vedere [Creare un nuovo account utente.](https://technet.microsoft.com/library/cc732336%28v=ws.11%29.aspx) Per informazioni su come eliminare un utente di Active Directory, vedere [Eliminare un account utente.](https://technet.microsoft.com/library/cc753730%28v=ws.11%29.aspx)
+Per informazioni su come abilitare un utente di Active Directory, vedere [Create a New User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc732336(v=ws.11)). Per informazioni su come eliminare un utente di Active Directory, vedere [Delete a User Account](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11)).
 
-Queste procedure devono essere eseguite durante una finestra di manutenzione, quando l'utilizzo di Skype for Business è minimo. L'esecuzione di questa operazione in base a una pianificazione giornaliera o settimanale dipenderà dalle esigenze dell'organizzazione.
+Queste procedure devono essere eseguite durante una finestra di manutenzione, quando l'utilizzo di Skype for Business è minimo. L'eventuale esecuzione di questa operazione in base a una pianificazione giornaliera o settimanale dipende dalle esigenze dell'organizzazione.
 
 In questo articolo sono contenute le procedure seguenti:
 
@@ -44,14 +44,14 @@ In questo articolo sono contenute le procedure seguenti:
 
 È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti di Active Directory per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell'account SAM (Security Accounts Manager), all'indirizzo SIP o all'URI (Uniform Resource Identifier) della linea.
 
-È possibile cercare utenti utilizzando il Pannello di controllo di Skype for Business Server o lo snap-in Utenti e computer di Active Directory. La procedura seguente descrive come usare il Pannello di controllo di Skype for Business Server per cercare utenti.
+È possibile cercare utenti utilizzando il Pannello di controllo di Skype for Business Server o lo snap-in Utenti e computer di Active Directory. La procedura seguente descrive come usare il Pannello di controllo di Skype for Business Server per cercare gli utenti.
 
 > [!NOTE]
 > In un ambiente con una topologia a foresta centrale, i risultati della ricerca potrebbero non essere accurati quando si cerca un utente in base all'indirizzo di posta elettronica dell'utente. È invece possibile cercare utenti specificando un prefisso di indirizzo SIP, ad esempio sip:name, aggiungere un filtro di ricerca e selezionare un indirizzo SIP contenente un indirizzo di posta elettronica parziale oppure utilizzare il cmdlet **Get-CSUser.**
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Nella barra di spostamento sinistra fare clic su **Utenti**.
 
@@ -74,11 +74,11 @@ In questo articolo sono contenute le procedure seguenti:
 
 Dopo aver abilitato un account utente in Utenti e computer di Active Directory, è possibile utilizzare il Pannello di controllo di Skype for Business Server per creare e abilitare nuovi account utente di Skype for Business Server aggiungendo un utente di Active Directory a Skype for Business Server.
 
-È inoltre possibile utilizzare un cmdlet, in [particolare Enable-CsUser.](https://docs.microsoft.com/powershell/module/skype/enable-csuser?view=skype-ps)
+È inoltre possibile utilizzare un cmdlet, in particolare [Enable-CsUser.](/powershell/module/skype/enable-csuser?view=skype-ps)
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Nella barra di spostamento sinistra fare clic su **Utenti**.
 
@@ -88,18 +88,18 @@ Dopo aver abilitato un account utente in Utenti e computer di Active Directory, 
 
 6. Nella casella **Ricerca utenti** digitare il nome intero o parziale, il nome visualizzato, il nome, il cognome, il nome account del sistema degli account di sicurezza (SAM), l'indirizzo di posta elettronica, il nome dell'entità utente o il numero di telefono dell'account utente di Active Directory desiderato e quindi fare clic su **Trova**.
 
-7. Nella tabella, selezionare l'account che si desidera aggiungere a Skype for Business Server, quindi fare clic su **OK.**
+7. Nella tabella selezionare l'account che si desidera aggiungere a Skype for Business Server e quindi fare clic su **OK.**
 
 8. Assegnare l'utente a un pool, specificare eventuali dettagli aggiuntivi, assegnare i criteri all'utente desiderato e quindi fare clic su **Abilita**.
 
 ## <a name="disable-or-re-enable-a-user-account-previously-enabled-for-skype-for-business-server"></a>Disabilitare o riattivare un account utente precedentemente abilitato per Skype for Business Server
 <a name="Disable"> </a>
 
-È possibile utilizzare la procedura seguente per disabilitare un account utente abilitato in precedenza in Skype for Business Server senza perdere le impostazioni di Skype for Business Server configurate per l'account utente. Poiché non si perdono le impostazioni dell'account utente di Skype for Business Server, è possibile ri abilitare nuovamente un account utente abilitato in precedenza senza dover riconfigurare l'account utente.
+È possibile utilizzare la procedura seguente per disabilitare un account utente abilitato in precedenza in Skype for Business Server senza perdere le impostazioni di Skype for Business Server configurate per l'account utente. Poiché non si perdono le impostazioni dell'account utente di Skype for Business Server, è possibile riconfigurare un account utente abilitato in precedenza senza dover riconfigurare l'account utente.
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
@@ -113,9 +113,9 @@ Dopo aver abilitato un account utente in Utenti e computer di Active Directory, 
 
    - Per abilitare l'account utente per Skype for Business Server, fare clic **su Ri-abilita per Lync Server.**
 
-### <a name="use-windows-powershell-to-disable-or-re-enable-user-accounts"></a>Utilizzare Windows PowerShell per disabilitare o riattivare gli account utente
+### <a name="use-windows-powershell-to-disable-or-re-enable-user-accounts"></a>Disabilitazione o riattivazione degli account utente tramite Windows PowerShell
 
-Gli account utente possono essere temporaneamente disabilitati e quindi ri-abilitati successivamente utilizzando il cmdlet **Set-CsUser.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+Gli account utente possono essere temporaneamente disabilitati e quindi ri abilitati in un secondo momento utilizzando il cmdlet **Set-CsUser.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo di blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
 
 ### <a name="to-disable-a-user-account"></a>Per disabilitare un account utente
 
@@ -133,7 +133,7 @@ Gli account utente possono essere temporaneamente disabilitati e quindi ri-abili
   Set-CsUser -Identity "Ken Myer" -Enabled $True
   ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsUser.](https://docs.microsoft.com/powershell/module/skype/set-csuser?view=skype-ps)
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsUser.](/powershell/module/skype/set-csuser?view=skype-ps)
 
 ## <a name="disable-a-user-for-enterprise-voice"></a>Disabilitare un utente per VoIP aziendale
 <a name="Disable_EV"> </a>
@@ -144,7 +144,7 @@ Utilizzare la procedura seguente per disabilitare VoIP aziendale per un account 
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
@@ -161,18 +161,18 @@ Utilizzare la procedura seguente per disabilitare VoIP aziendale per un account 
 
 8. Fare clic su **Commit**.
 
-L'utente non è più in grado di usare la VoIP aziendale utente. Informazioni correlate: <br/>[VoIP aziendale e dispositivi mobili](https://technet.microsoft.com/library/72cbe2f5-1a01-4a6f-84a5-01f3212a8992.aspx)<br/> [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)<br/> [Skype for Business Server Management Shell](../management-shell.md)
+L'utente non è ora in grado di usare la VoIP aziendale funzionalità. Informazioni correlate: <br/>[VoIP aziendale mobilità](/previous-versions/office/lync-server-2013/lync-server-2013-managing-enterprise-voice-for-users)<br/> [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)<br/> [Skype for Business Server Management Shell](../management-shell.md)
 ## <a name="remove-a-user-account-with-the-skype-for-business-server-management-shell"></a>Rimuovere un account utente con Skype for Business Server Management Shell
 <a name="Remove"> </a>
 
 È possibile utilizzare la procedura seguente per rimuovere un account utente aggiunto in precedenza in Skype for Business Server.
 
 > [!NOTE]
-> La rimozione di un utente comporterà la perdita delle impostazioni configurate per l'account utente. Se invece si desidera disabilitare temporaneamente un account utente, vedere Disabilitare o riattivare un account utente precedentemente abilitato [per Skype for Business Server.](user-accounts.md#Disable)
+> La rimozione di un utente comporterà la perdita delle impostazioni configurate per l'account utente. Se invece si desidera disabilitare temporaneamente un account utente, vedere Disabilitare o riattivare un account utente abilitato in precedenza [per Skype for Business Server.](user-accounts.md#Disable)
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
 
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
 
@@ -184,9 +184,9 @@ L'utente non è più in grado di usare la VoIP aziendale utente. Informazioni co
 
 7. Dalla finestra di dialogo selezionare **OK** per rimuovere l'utente.
 
-### <a name="remove-user-accounts-with-windows-powershell-cmdlets"></a>Rimuovere gli account utente con i cmdlet di Windows PowerShell
+### <a name="remove-user-accounts-with-windows-powershell-cmdlets"></a>Rimuovere gli account utente con i cmdlet di Windows Powershell
 
-È possibile rimuovere gli account utente utilizzando il cmdlet Disable-CsUser seguente. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile rimuovere gli account utente utilizzando il cmdlet Disable-CsUser. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo di blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
 
 ### <a name="to-remove-a-user-account"></a>Per rimuovere un account utente
 Per rimuovere un account utente, usare il cmdlet Disable-CsUser. Ad esempio:
@@ -197,11 +197,11 @@ Per rimuovere un account utente, usare il cmdlet Disable-CsUser. Ad esempio:
 
     After this command has run there is no way to re-enable the account and its previous settings. Instead, you will need to use the Enable-CsUser cmdlet to create a brand-new account for Ken Myer.
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Disable-CsUser.](https://docs.microsoft.com/powershell/module/skype/disable-csuser?view=skype-ps)
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Disable-CsUser.](/powershell/module/skype/disable-csuser?view=skype-ps)
 
 ## <a name="see-also"></a>Vedere anche
 <a name="Remove"> </a>
 
-[Enable-CsUser](https://docs.microsoft.com/powershell/module/skype/enable-csuser?view=skype-ps)
+[Enable-CsUser](/powershell/module/skype/enable-csuser?view=skype-ps)
 
-[Disable-CsUser](https://docs.microsoft.com/powershell/module/skype/disable-csuser?view=skype-ps)
+[Disable-CsUser](/powershell/module/skype/disable-csuser?view=skype-ps)

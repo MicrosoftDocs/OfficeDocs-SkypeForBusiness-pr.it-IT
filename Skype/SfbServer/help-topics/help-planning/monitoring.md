@@ -1,5 +1,5 @@
 ---
-title: Monitoraggio (strumento di pianificazione)
+title: Monitoraggio (Strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,18 +15,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9bbe86d0-b51a-4787-9029-d59e73c7906a
-description: In Skype for Business Server 2015, il monitoraggio viene usato per raccogliere informazioni sull'utilizzo e dati QoE (Quality of Experience) sulle sessioni di comunicazione in cui sono coinvolti gli utenti.
-ms.openlocfilehash: 85398b80d982fdd443e920af9c50b212afe4cb90
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: In Skype for Business Server 2015, il monitoraggio viene utilizzato per raccogliere informazioni sull'utilizzo e dati QoE (Quality of Experience) sulle sessioni di comunicazione in cui sono coinvolti gli utenti.
+ms.openlocfilehash: 20f53374903d59957113a8dd86f4614dd2e3e5b0
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828936"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51101772"
 ---
-# <a name="monitoring-planning-tool"></a>Monitoraggio (strumento di pianificazione)
+# <a name="monitoring-planning-tool"></a>Monitoraggio (Strumento di pianificazione)
 
-In Skype for Business Server 2015, il monitoraggio viene usato per raccogliere informazioni sull'utilizzo e dati QoE (Quality of Experience) sulle sessioni di comunicazione in cui sono coinvolti gli utenti.
+In Skype for Business Server 2015, il monitoraggio viene utilizzato per raccogliere informazioni sull'utilizzo e dati QoE (Quality of Experience) sulle sessioni di comunicazione in cui sono coinvolti gli utenti.
 
-Per ulteriori informazioni sulla pianificazione di Monitoring Server, vedere [Planning for Monitoring.](https://technet.microsoft.com/library/26cead5a-183c-42f1-a4b0-0e8d61c6159d.aspx)
-
-
+Per ulteriori informazioni sulla pianificazione di Monitoring Server, vedere [Planning for Monitoring.](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-monitoring)

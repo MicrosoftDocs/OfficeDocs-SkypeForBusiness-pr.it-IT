@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f916b4e794c862a05a42f075ca2f210a079ff42a
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
-ms.translationtype: HT
+ms.openlocfilehash: 4235232a9d74b4583ecaed19b68ff87de982085c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909520"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103012"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -50,13 +50,13 @@ Per usare l'app Approvazioni, è necessaria l'autorizzazione per gli elementi se
 
 - Ruolo di amministratore nell'ambiente di destinazione.
 
-- Licenza per [Power Automate](https://docs.microsoft.com/power-automate/get-started-approvals), Office 365 o Dynamics 365.
+- Licenza per [Power Automate](/power-automate/get-started-approvals), Office 365 o Dynamics 365.
 
 ## <a name="storage-with-cds"></a>Archiviazione su CDS
 
-Common Data Model (CDM) è il linguaggio dei dati condiviso usato dalle applicazioni aziendali e di analisi in CDS. È costituito da un set di schemi di dati standardizzati ed estendibili pubblicati da Microsoft e dai propri partner, che consentono la coerenza dei dati e il loro significato nelle applicazioni e nei processi aziendali. Per altre informazioni, vedere [Common Data Model di Microsoft Power Platform](https://docs.microsoft.com/power-automate/get-started-approvals).
+Common Data Model (CDM) è il linguaggio dei dati condiviso usato dalle applicazioni aziendali e di analisi in CDS. È costituito da un set di schemi di dati standardizzati ed estendibili pubblicati da Microsoft e dai propri partner, che consentono la coerenza dei dati e il loro significato nelle applicazioni e nei processi aziendali. Per altre informazioni, vedere [Common Data Model di Microsoft Power Platform](/power-automate/get-started-approvals).
 
-Altre informazioni sui [flussi di lavoro di Approvazioni](https://docs.microsoft.com/power-automate/modern-approvals).
+Altre informazioni sui [flussi di lavoro di Approvazioni](/power-automate/modern-approvals).
 
 ## <a name="approvals-teams-app-permissions"></a>Autorizzazioni dell'app Approvazioni di Teams
 
@@ -101,7 +101,7 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 
 ## <a name="retention-policy"></a>Criteri di conservazione
 
-Le approvazioni create dall'app Approvazioni sono archiviate nell'ambiente CDS predefinito, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](https://docs.microsoft.com/power-platform/admin/backup-restore-environments).
+Le approvazioni create dall'app Approvazioni sono archiviate nell'ambiente CDS predefinito, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](/power-platform/admin/backup-restore-environments).
 
 ## <a name="auditing"></a>Controllo
 
@@ -133,7 +133,7 @@ L'app Approvazioni registra gli eventi di controllo all'interno del Centro sicur
 
 - Firma elettronica aggiunta alle richieste di approvazione
 
-Per accedere ad altre approvazioni di controllo all'interno del flusso, abilitare e configurare il controllo nell'ambiente predefinito per le entità di approvazione principali Approvazione, Richiesta di approvazione e Risposta di approvazione. Le operazioni di creazione, aggiornamento ed eliminazione sono eventi controllabili per i record di approvazione. Per altre informazioni, vedere [Dati di controllo e attività degli utenti per la sicurezza e la conformità - Power Platform \| Microsoft Docs](https://docs.microsoft.com/power-platform/admin/audit-data-user-activity).
+Per accedere ad altre approvazioni di controllo all'interno del flusso, abilitare e configurare il controllo nell'ambiente predefinito per le entità di approvazione principali Approvazione, Richiesta di approvazione e Risposta di approvazione. Le operazioni di creazione, aggiornamento ed eliminazione sono eventi controllabili per i record di approvazione. Per altre informazioni, vedere [Dati di controllo e attività degli utenti per la sicurezza e la conformità - Power Platform \| Microsoft Docs](/power-platform/admin/audit-data-user-activity).
 
 Il controllo può essere personalizzato ulteriormente nel [Centro sicurezza e conformità di Microsoft 365](https://support.office.com/article/go-to-the-office-365-security-compliance-center-7e696a40-b86b-4a20-afcc-559218b7b1b8?ui=en-US&rs=en-US&ad=US).
 
@@ -143,7 +143,7 @@ Il controllo può essere personalizzato ulteriormente nel [Centro sicurezza e co
 
 3. Cercare nel log di audit e selezionare la scheda **Attività di Dynamics 365**.
 
-Altre informazioni su [Microsoft Dataverse e registrazione delle attività delle app basata su modello - Power Platform](https://docs.microsoft.com/power-platform/admin/enable-use-comprehensive-auditing).
+Altre informazioni su [Microsoft Dataverse e registrazione delle attività delle app basata su modello - Power Platform](/power-platform/admin/enable-use-comprehensive-auditing).
 
 ## <a name="security"></a>Sicurezza
 

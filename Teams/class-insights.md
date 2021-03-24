@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0d3975ac177af7717dbfbcbd3bc8e027b5d8ea11
-ms.sourcegitcommit: 27bfa015413bc7742bca4ea227e0324da0c740d7
+ms.openlocfilehash: 8d8acd2e8f8c7360f9f83a478cfcf928f2939d54
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145903"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51102622"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -137,7 +137,7 @@ Al momento, i dati vengono raccolti dalle aree seguenti nei team di classe:
 > La maggior parte dei dati raccolti viene visualizzata in Insights entro pochi minuti. La partecipazione alle riunioni di classe (riunioni associate a uno dei canali di classe) compare alcune ore dopo la fine della riunione, in genere fino a 24 ore dopo.
 
 ### <a name="privacy-and-security"></a>Privacy e sicurezza
-Le informazioni raccolte e visualizzate tramite Insights soddisfano [oltre 90 standard normativi e di settore](https://docs.microsoft.com/compliance/regulatory/offering-home), tra cui [GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr) e [FERPA (Family Education Rights and Privacy Act)](https://docs.microsoft.com/compliance/regulatory/offering-ferpa) per la sicurezza degli studenti e dei bambini e altre normative simili orientate alla privacy.
+Le informazioni raccolte e visualizzate tramite Insights soddisfano [oltre 90 standard normativi e di settore](/compliance/regulatory/offering-home), tra cui [GDPR](/compliance/regulatory/gdpr) e [FERPA (Family Education Rights and Privacy Act)](/compliance/regulatory/offering-ferpa) per la sicurezza degli studenti e dei bambini e altre normative simili orientate alla privacy.
 
 I dati appartengono all'istituto e Microsoft si limita solo a raccoglierli e ad archiviarli. Il personale Microsoft non può accedere ai dati o visualizzarli, se non per quanto consentito dalla conformità in modo controllato per gestire il servizio, ad esempio per il recupero dei dati.
 
@@ -173,7 +173,7 @@ Per accedere a Insights, gli utenti devono avere una licenza A1, A3 o A5 per Mic
 ## <a name="student-information-system-sis-integration"></a>Integrazione del sistema informativo degli studenti (SIS)
 Fornendo un maggiore numero di dati a Insights, il supporto dei docenti nei confronti degli studenti migliorerà e allo stesso tempo anche il supporto dei responsabili per l’istruzione verso i docenti.
 
-Per fornire informazioni approfondite a livello di organizzazione, è necessario usare [School Data Sync (SDS)](https://docs.microsoft.com/SchoolDataSync) in modo da connettersi al sistema informativo degli studenti (SIS) per far sì che Insights abbia la struttura gerarchica del sistema didattico mappata correttamente. 
+Per fornire informazioni approfondite a livello di organizzazione, è necessario usare [School Data Sync (SDS)](/SchoolDataSync) in modo da connettersi al sistema informativo degli studenti (SIS) per far sì che Insights abbia la struttura gerarchica del sistema didattico mappata correttamente. 
 
 La visualizzazione di Insights a livello di classe come docente *non* richiede ciò, in quanto vengono usate la struttura e le autorizzazioni della classe di Teams.
 
@@ -192,7 +192,7 @@ Se i docenti vogliono accedere direttamente a ogni classe, possono installare ma
 In entrambe le visualizzazioni, i docenti possono accedere ai dati della classe. Usando l'app personale, i docenti devono eseguire il drill-down fino a livello di classe, mentre la scheda fornisce l'accesso diretto ai dati della classe.
 
 > [!TIP]
-> Per altre informazioni, vedere [Criteri e pacchetti di criteri di Teams per l'istruzione](https://docs.microsoft.com/microsoftteams/policy-packages-edu).
+> Per altre informazioni, vedere [Criteri e pacchetti di criteri di Teams per l'istruzione](./policy-packages-edu.md).
 
 ## <a name="encourage-the-adoption-of-insights"></a>Incoraggiare l'adozione di Insights
 Fare in modo che l’istituto di istruzione sia entusiasta di usare Insights.
@@ -255,6 +255,3 @@ Verificare anche che gli studenti *non* [abbiano partecipato alla riunione della
 
 > [!NOTE]
 > Se non si è trovata una risposta alla propria domanda, [aprire un ticket di supporto](https://aka.ms/edusupport). Includere gli screenshot pertinenti che rappresentano il problema e la data in cui si è verificato. Aggiungere gli eventuali altri dati che si pensa potrebbero essere utili per risolvere il problema.
-
-
-
