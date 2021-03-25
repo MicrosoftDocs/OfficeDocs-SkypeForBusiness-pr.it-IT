@@ -12,25 +12,25 @@ metadata:
   ms.author: samanro
   ms.date: 07/03/2019
   localization_priority: Priority
-  ms.openlocfilehash: bfae335402888736c47ebe38c98cc2d30654d8af
-  ms.sourcegitcommit: 1a08ec9069332e19135312d35fc6a6c3247ce2d2
+  ms.openlocfilehash: 4fddbad88364a26bee8c8217175080b80380ed60
+  ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/11/2020
-  ms.locfileid: "44805547"
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51119035"
 additionalContent:
   sections:
   - title: Per professionisti IT
     items:
     - title: Skype for Business Online
       summary: Risorse per la gestione di Skype for Business Online nel proprio ambiente Office 365.
-      url: /SkypeForBusiness/skype-for-business-online
+      url: ../SfbOnline/skype-for-business-online.yml
     - title: Soluzioni ibride
       summary: Informazioni sulla pianificazione di una distribuzione ibrida di Skype for Business.
-      url: /SkypeForBusiness/hybrid/plan-hybrid-connectivity?toc=/SkypeForBusiness/sfbhybridtoc/toc.json
+      url: ../SfbHybrid/hybrid/plan-hybrid-connectivity.md?toc=%2fSkypeForBusiness%2fsfbhybridtoc%2ftoc.json
     - title: Skype for Business Server
       summary: Distribuire e gestire Skype for Business Server per l'organizzazione.
-      url: /SkypeForBusiness/skype-for-business-server-2019
+      url: ../SfBServer2019/skype-for-business-server-2019.yml
     - title: Informazioni di riferimento su PowerShell per Skype for Business
       summary: Informazioni sui cmdlet di PowerShell necessari per gestire Skype for Business e Skype for Business Online.
       url: /powershell/skype/intro
@@ -45,7 +45,7 @@ additionalContent:
       url: /SkypeForBusiness/room-systems/
     - title: Programma di certificazione di Skype for Business
       summary: Informazioni sulle soluzioni e i dispositivi certificati.
-      url: /SkypeForBusiness/certification/overview
+      url: ../SfbPartnerCertification/certification/overview.md
     - title: Risoluzione dei problemi
       summary: Risorse di supporto e risoluzione dei problemi per professionisti IT e amministratori.
       url: /office/troubleshoot
