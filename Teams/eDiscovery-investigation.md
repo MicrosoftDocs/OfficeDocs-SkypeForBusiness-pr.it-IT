@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3990b96981a65bb4d706cc3141abee10102c0839
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ca1a679fbdce7ca2840c41266053cf13f1452fe0
+ms.sourcegitcommit: 84d99b266dea2a972774d781b92eccc67d6c197a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094056"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197531"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine di eDiscovery sul contenuto in Microsoft Teams
 
@@ -54,6 +54,7 @@ Non tutti i contenuti di Teams sono eDiscoverable. La tabella seguente mostra i 
 |Reazioni (ad esempio mi piace, cuori e altre reazioni) | No | |
 |Oggetto | Sì | |
 |Tabelle | Sì | |
+|Notifiche del feed | No | |
 |||
 
 <sup>1 I</sup> metadati della riunione (e della chiamata) includono quanto segue:

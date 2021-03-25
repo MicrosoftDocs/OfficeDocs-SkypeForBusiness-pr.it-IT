@@ -13,27 +13,27 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 4346e70b-ac48-4ab9-853e-3cdd6dcfe678
 description: 'Riepilogo: informazioni su come gestire la disponibilità elevata e il ripristino di emergenza del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 7ec7182d8fe2866499f731b43df712a69c44bc42
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 4fb3a38fadf2a8a063715e389718859dcc7ddbdd
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815046"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51122410"
 ---
 # <a name="manage-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come gestire la disponibilità elevata e il ripristino di emergenza del server Chat persistente in Skype for Business Server 2015.
   
-In questo argomento viene descritto come eseguire il failover e il fail back del server Chat persistente. Prima di leggere questo argomento, leggere Pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente [in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) e Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server [2015.](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md)
+In questo argomento viene descritto come eseguire il failover e il fail back del server Chat persistente. Prima di leggere questo argomento, leggere Pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente [in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) e Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat [persistente in Skype for Business Server 2015.](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md)
 
 > [!NOTE]
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. Le stesse funzionalità sono disponibili in Teams. Per altre informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare Chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="fail-over-persistent-chat-server"></a>Failover del server Chat persistente
 
 Il failover per il server Chat persistente è progettato principalmente come processo manuale.
   
-La procedura di failover si basa sul presupposto che il data center secondario sia operativo, ma i servizi del server Chat persistente in cui si trova il database principale di Persistent Chat non sono completamente disponibili, tra cui:
+La procedura di failover si basa sul presupposto che il data center secondario sia in esecuzione, ma i servizi del server Chat persistente in cui si trova il database di Chat persistente principale non sono completamente disponibili, inclusi i seguenti:
   
 - Il database primario del server Chat persistente e il database mirror del server Chat persistente non sono disponibili.
     
@@ -45,7 +45,7 @@ La procedura prevede due passaggi di base:
     
 - Configurazione del mirroring per il nuovo database primario.
     
-Il database di conformità di Persistent Chat (mgccomp) non viene superato. Il contenuto di questo database è temporaneo e viene eliminato durante l'elaborazione dei dati nell'adattatore di conformità. L'amministratore di Persistent Chat deve gestire correttamente l'output dell'adattatore per evitare perdite di dati.
+Il database di conformità di Persistent Chat (mgccomp) non viene superato. Il contenuto di questo database è temporaneo e viene eliminato durante l'elaborazione dei dati nell'adattatore di conformità. È responsabilità dell'amministratore di Persistent Chat gestire correttamente l'output della scheda per evitare la perdita di dati.
   
 Per eseguire il failover del server Chat persistente:
   
@@ -63,7 +63,7 @@ Per eseguire il failover del server Chat persistente:
 
 2. Copiare i file di backup non copiati dalla condivisione di backup nella cartella di destinazione della copia del server di backup.
     
-3. Applicare i backup dei log delle transazioni non applicati in sequenza al database secondario. Per informazioni dettagliate, vedere Procedura: Applicare un backup del log delle transazioni [(Transact-SQL).](https://go.microsoft.com/fwlink/p/?linkid=247428)
+3. Applicare i backup dei log delle transazioni non applicati in sequenza al database secondario. Per informazioni dettagliate, vedere Procedura: Applicazione di un backup del log delle transazioni [(Transact-SQL)](/previous-versions/sql/sql-server-2008-r2/ms187607(v=sql.105)).
     
 4. Connettere il database mgc di backup. Usando la finestra di query aperta al passaggio 1b, eseguire le operazioni seguenti:
     
@@ -75,9 +75,9 @@ Per eseguire il failover del server Chat persistente:
     
    - Connettere il database:
     
-   - **restore database mgc with recovery**.
+   - **ripristinare il database mgc con ripristino**.
     
-5. In Skype for Business Server Management Shell, utilizzare il comando **Set-CsPersistentChatState -Identity "service:atl-cs-001.litwareinc.com" -PoolState FailedOver** per eseguire il failover al database di backup mgc. Assicurarsi di sostituire il nome di dominio completo del pool di Persistent Chat per atl-cs-001.litwareinc.com.
+5. In Skype for Business Server Management Shell, utilizzare il comando **Set-CsPersistentChatState -Identity "service:atl-cs-001.litwareinc.com" -PoolState FailedOver** per eseguire il failover al database di backup mgc. Assicurarsi di sostituire il nome di dominio completo del pool di Persistent Chat con atl-cs-001.litwareinc.com.
     
     Il database mgc di backup funge ora da database primario.
     
@@ -94,18 +94,18 @@ Per eseguire il failover del server Chat persistente:
 
 In questa procedura vengono descritti i passaggi necessari per il ripristino da un errore del server Chat persistente e per ristabilire le operazioni dal data center principale.
   
-Durante un errore del server Chat persistente, si verifica un'interruzione completa del data center principale e i database primario e mirror non sono più disponibili. Il centro dati principale esegue il failover al server di backup.
+Durante un errore del server Chat persistente, il data center principale subisce un'interruzione completa e i database primario e mirror non sono più disponibili. Il centro dati principale esegue il failover al server di backup.
   
-La procedura seguente consente di ripristinare l'operatività normale dopo il backup del centro dati principale e la ricostruzione dei server. Nella procedura si presuppone che il data center principale sia stato ripristinato dall'interruzione totale e che il database mgc e il database mgccomp siano stati ricostruiti e reinstallati utilizzando Generatore di topologie.
+La procedura seguente consente di ripristinare l'operatività normale dopo il backup del centro dati principale e la ricostruzione dei server. La procedura presuppone che il data center principale sia stato ripristinato dall'interruzione totale e che il database mgc e il database mgccomp siano stati ricostruiti e reinstallati utilizzando Generatore di topologie.
   
-Nella procedura si presuppone inoltre che non siano stati distribuiti nuovi server mirror e di backup durante il periodo di failover e che l'unico server distribuito sia il server di backup e il relativo server mirror, come definito in precedenza in Failover del server Chat persistente.
+La procedura presuppone inoltre che non siano stati distribuiti nuovi server mirror e di backup durante il periodo di failover e che l'unico server distribuito sia il server di backup e il relativo server mirror, come definito in precedenza in Failover del server Chat persistente.
   
 Questi passaggi sono pensati per consentite il ripristino della configurazione esistente prima della situazione di emergenza che ha causato il failover dal server primario a quello di backup.
   
-1. Cancellare tutti i server dall'elenco Active Server di Chat persistente utilizzando il cmdlet **Set-CsPersistentChatActiveServer** da Skype for Business Server Management Shell. Questo impedisce a tutti i server Chat persistente di connettersi al database mgc e al database mgccomp durante il failback.
+1. Cancellare tutti i server dall'elenco Server Chat persistente Active Server utilizzando il cmdlet **Set-CsPersistentChatActiveServer** da Skype for Business Server Management Shell. In questo modo tutti i server Chat persistente non si connettono al database mgc e al database mgccomp durante il failback.
     
     > [!IMPORTANT]
-    > L'SQL Server sul server back-end del server Chat persistente secondario deve essere in esecuzione con un account privilegiato. In particolare, l'account deve disporre di: 
+    > L'SQL Server sul server back-end secondario del server Chat persistente deve essere in esecuzione con un account con privilegi. In particolare, l'account deve disporre di: 
   
    - Accesso in lettura alla condivisione di rete in cui vengono posizionati i backup.
     
@@ -113,7 +113,7 @@ Questi passaggi sono pensati per consentite il ripristino della configurazione e
     
 2. Disabilitare il mirroring nel database mgc di backup:
     
-   - Utilizzando SQL Server Management Studio, connettersi all'istanza mgc di backup.
+   - Usando SQL Server Management Studio, connettersi all'istanza mgc di backup.
     
    - Fare clic con il pulsante destro del mouse sul database mgc, scegliere **Attività** e quindi fare clic su **Server mirror**.
     
@@ -125,7 +125,7 @@ Questi passaggi sono pensati per consentite il ripristino della configurazione e
     
 3. Eseguire il backup del database mgc in modo che possa essere ripristinato nel nuovo database primario:
     
-   - Utilizzando SQL Server Management Studio, connettersi all'istanza mgc di backup.
+   - Usando SQL Server Management Studio, connettersi all'istanza mgc di backup.
     
    - Fare clic con il pulsante destro del mouse sul database mgc, scegliere **Attività** e quindi fare clic su **Backup**. Verrà visualizzata la finestra di dialogo **Backup database**.
     
@@ -163,7 +163,7 @@ Questi passaggi sono pensati per consentite il ripristino della configurazione e
     
    - Fare clic su **OK** per avviare il processo di ripristino.
     
-5. Configurare SQL Server log shipping per il database primario. Seguire le procedure descritte in Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente [in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md) per stabilire il log shipping per il database mgc primario.
+5. Configurare SQL Server log shipping per il database primario. Seguire le procedure descritte in [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md) per stabilire il log shipping per il database mgc primario.
     
 6. Impostare i server attivi del server Chat persistente. Da Skype for Business Server Management Shell, utilizzare il cmdlet **Set-CsPersistentChatActiveServer** per impostare l'elenco dei server attivi.
     
@@ -176,6 +176,4 @@ Per ripristinare lo stato normale del pool, eseguire il comando Windows PowerShe
 Set-CsPersistentChatState -Identity "service: lyncpc.dci.discovery.com" -PoolState Normal
 ```
 
-Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsPersistentChatState.](https://docs.microsoft.com/powershell/module/skype/set-cspersistentchatstate?view=skype-ps)
-  
-
+Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsPersistentChatState.](/powershell/module/skype/set-cspersistentchatstate?view=skype-ps)

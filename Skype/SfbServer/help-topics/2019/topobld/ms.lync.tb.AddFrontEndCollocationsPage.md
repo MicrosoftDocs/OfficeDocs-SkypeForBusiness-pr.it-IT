@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 23e3bda7-a8bf-4da4-88e5-098ae2aa268f
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per una distribuzione di Server Enterprise, il servizio A/V Conferencing viene collocato nel pool Front End. È anche possibile collocare Mediation Server sul pool Front End oppure distribuirlo come server autonomo. Se il servizio di conferenza è abilitato, il servizio A/V Conferencing sarà sempre collocato.
-ms.openlocfilehash: 8dd984f52740d38689ec123cc51e5cdb2901f440
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: f4513d8545b9dcbf55b702d3002547fefead8a78
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49811726"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51122647"
 ---
 # <a name="add-front-end-server-collocations"></a>Aggiungere collocazioni di Front End Server
 
@@ -37,6 +37,4 @@ Per una distribuzione di Server Enterprise, il servizio A/V Conferencing viene c
 
 È possibile utilizzare lo strumento di pianificazione per valutare se il pool Front End in cui si desidera collocare il Mediation Server è in grado di gestire il carico. Se l'ambiente non soddisfa questi requisiti, è necessario distribuire un pool di Mediation Server autonomo.
 
-In generale, la collocazione di Mediation Server non è consigliabile se l'organizzazione ha disponibilità elevata e prevede requisiti di scalabilità. Per informazioni dettagliate sulla collocazione di questi ruoli server in un pool Front End in una distribuzione di Server Enterprise, vedere [Define and Configure a Front End Pool](https://technet.microsoft.com/library/713fc263-23dd-414a-b001-82932e4fe966.aspx) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sulla caratteristica e sui componenti di A/V Conferencing, vedere [Planning for Conferencing](https://technet.microsoft.com/library/983a272a-e1b3-4d70-8f84-836b092fe526.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sulle VoIP aziendale e sui componenti, incluso Mediation Server, vedere [Plan for VoIP aziendale in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md) nella documentazione relativa alla pianificazione.
-
-
+In generale, la collocazione di Mediation Server non è consigliabile se l'organizzazione ha disponibilità elevata e prevede requisiti di scalabilità. Per informazioni dettagliate sulla collocazione di questi ruoli server in un pool Front End in una distribuzione di Server Enterprise, vedere [Define and Configure a Front End Pool](/previous-versions/office/lync-server-2013/lync-server-2013-define-and-configure-a-front-end-pool-or-standard-edition-server) nella documentazione relativa alla distribuzione. Per informazioni dettagliate sulla caratteristica e sui componenti di A/V Conferencing, vedere [Planning for Conferencing](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-conferencing) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sulle VoIP aziendale e sui componenti, incluso Mediation Server, vedere [Plan for VoIP aziendale in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/enterprise-voice.md) nella documentazione relativa alla pianificazione.

@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 73aa2312b1467e2298b4ebaa14e22744a73730e3
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 98502d623edda6117b2838d2bc71197a43baf394
+ms.sourcegitcommit: 84d99b266dea2a972774d781b92eccc67d6c197a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51107302"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197521"
 ---
 <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 ==========================
@@ -64,9 +64,9 @@ Per disconnettersi da Teams, gli utenti possono selezionare l'immagine del profi
 
 Gli utenti su un computer aggiunto a un dominio potrebbero non riuscire ad accedere a Teams con un altro account nello stesso dominio di Active Directory.
 
-## <a name="macos-users"></a>Utenti di MacOS
+## <a name="macos-users"></a>Utenti di macOS
 
-In MacOS, Teams richiederà agli utenti di immettere il nome utente e le credenziali e potrebbe richiedere l'autenticazione a più fattori, in base alle impostazioni dell'organizzazione. Una volta immesse le credenziali, gli utenti non dovranno fornirle di nuovo. Da quel momento in poi, Teams si avvierà automaticamente ogni volta che lavorano con lo stesso computer.
+In macOS, Teams richiederà agli utenti di immettere il nome utente e le credenziali e potrebbe richiedere l'autenticazione a più fattori, in base alle impostazioni dell'organizzazione. Una volta immesse le credenziali, gli utenti non dovranno fornirle di nuovo. Da quel momento in poi, Teams si avvierà automaticamente ogni volta che lavorano con lo stesso computer.
 
 ## <a name="teams-on-ios-and-android-users"></a>Utenti di Teams per iOS e Android
 
@@ -114,15 +114,15 @@ Per creare un criterio di configurazione dell'app per i dispositivi iOS/iPadOS g
 Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](/mem/intune/apps/app-configuration-policies-use-android).
 
 ### <a name="how-to-restrict-sign-in-on-desktop-devices"></a>Come limitare l'accesso nei dispositivi desktop
-Le app Teams in Windows e MacOS supportano ora l'uso di criteri per i dispositivi che limitano l'accesso all'organizzazione. I criteri possono essere impostati mediante le normali soluzioni di gestione dei dispositivi, ad esempio MDM o GPO (oggetto Criteri di gruppo). 
+Le app Teams in Windows e macOS supportano ora l'uso di criteri per i dispositivi che limitano l'accesso all'organizzazione. I criteri possono essere impostati mediante le normali soluzioni di gestione dei dispositivi, ad esempio MDM o GPO (oggetto Criteri di gruppo). 
 
 Quando in un dispositivo è configurato questo criterio, gli utenti possono accedere solo con account ospitati in un tenant di Azure AD incluso nell'elenco dei tenant consentiti definito nel criterio. Il criterio si applica a tutti gli accessi, inclusi il primo e gli altri account. Se l'organizzazione si estende su più tenant di Azure AD, è possibile includere più ID tenant nell'elenco dei consentiti. I collegamenti per l'aggiunta di un altro account potrebbero continuare a essere visibili nell'app Teams, ma non saranno utilizzabili.
 
 > [!NOTE]
 >1. Il criterio limita solo gli accessi. Non limita la possibilità per gli utenti di essere invitati come guest in altri tenant di Azure AD o di passare ad altri tenant.
->2. Il criterio richiede Teams per Windows versione 1.3.00.30866 o successiva e Teams per MacOS versione 1.3.00.30882 (rilasciati a metà novembre 2020).
+>2. Il criterio richiede Teams per Windows versione 1.3.00.30866 o successiva e Teams per macOS versione 1.3.00.30882 (rilasciati a metà novembre 2020).
 
-**Criteri per Windows** I file dei modelli amministrativi (ADMX/ADML) sono disponibili nell'[area download](https://www.microsoft.com/download/details.aspx?id=49030). Inoltre, è possibile impostare manualmente le chiavi nel Registro di sistema di Windows:
+**Criteri per Windows** I file modello amministrativi (ADMX/ADML) sono disponibili dal [Centro download](https://www.microsoft.com/download/details.aspx?id=49030) (il nome descrittivo dell'impostazione criterio nel file modello amministrativo è "Limita l'accesso a Teams agli account in tenant specifici"). Inoltre, è possibile impostare manualmente le chiavi nel Registro di sistema di Windows:
 
 - Nome valore: RestrictTeamsSignInToAccountsFromTenantList
 - Tipo valore: stringa
@@ -133,7 +133,7 @@ Quando in un dispositivo è configurato questo criterio, gli utenti possono acce
 
 Esempio: SOFTWARE\Policies\Microsoft\Office\16.0\Teams\RestrictTeamsSignInToAccountsFromTenantList = Tenant ID o SOFTWARE\Policies\Microsoft\Office\16.0\Teams\RestrictTeamsSignInToAccountsFromTenantList = Tenant ID 1,Tenant ID 2,Tenant ID 3
 
-**Criteri per MacOS** Per i dispositivi gestiti MacOS, usare .plist per distribuire le restrizioni di accesso. Il profilo di configurazione è un file con estensione plist composto da voci identificate da una chiave (che indica il nome della preferenza), seguito da un valore che varia in base alla natura della preferenza. I valori possono essere semplici, ad esempio un valore numerico, o complessi, come un elenco annidato di preferenze.
+**Criteri per macOS** Per i dispositivi gestiti macOS, usare .plist per distribuire le restrizioni di accesso. Il profilo di configurazione è un file con estensione plist composto da voci identificate da una chiave (che indica il nome della preferenza), seguito da un valore che varia in base alla natura della preferenza. I valori possono essere semplici, ad esempio un valore numerico, o complessi, come un elenco annidato di preferenze.
 
 - Dominio: com.microsoft.teams
 - Chiave: RestrictTeamsSignInToAccountsFromTenantList

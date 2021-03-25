@@ -13,20 +13,20 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: b95b3301-fa1e-4b96-9af4-05b43d39db8d
-description: Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Leggimi che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
-ms.openlocfilehash: 902249e042694a37594c6dc0b753b0c1388c0729
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
+ms.openlocfilehash: 29a3bd35191cf326cafd1f4ad4f14fab50e47ea3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834726"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51122380"
 ---
 # <a name="install-the-planning-tool-in-skype-for-business-server-2015"></a>Installare lo strumento di pianificazione in Skype for Business Server 2015
 
-Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Leggimi che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
+Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
 
 > [!IMPORTANT]
-> Lo strumento di pianificazione richiede l'installazione da parte di un utente con autorizzazioni e diritti di amministratore nel computer in cui deve essere installato lo strumento.
+> Lo strumento di pianificazione richiede l'installazione da parte di un utente con diritti e autorizzazioni di amministratore nel computer in cui deve essere installato lo strumento.
 
 I sistemi operativi supportati per l'installazione e il funzionamento dello strumento di pianificazione sono:
 
@@ -56,11 +56,11 @@ Dopo aver soddisfatto i requisiti di preinstallazione, è possibile installare l
 
 1. Accedere al computer locale come membro del gruppo Administrators.
 
-2. Utilizzando Esplora risorse o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello Strumento di pianificazione.
+2. Utilizzando Esplora risorse o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello strumento di pianificazione.
 
 3. Individuare il SkypeForBusinessPlanningTool.msi. In Esplora risorse fare doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **INVIO** per eseguire il file.
 
-4. Nella pagina iniziale dell'Installazione guidata dello strumento di pianificazione di **Skype for Business Server 2015** fare clic su **Avanti.**
+4. Nella pagina iniziale di **Skype for Business Server 2015, Configurazione** guidata strumento di pianificazione, fare clic su **Avanti.**
 
 5. Leggere il **Contratto di Licenza con l'utente finale**, selezionare **Accetto i termini del Contratto di Licenza** se si sceglie di accettare le condizioni per l'utilizzo riportate nel contratto e quindi fare clic su **Avanti**.
 
@@ -70,7 +70,7 @@ Dopo aver soddisfatto i requisiti di preinstallazione, è possibile installare l
 
 8. L'installazione verrà avviata e verrà visualizzato il relativo stato. Al termine dell'installazione, fare clic su **Fine**.
 
-9. Lo strumento di pianificazione è pronto per l'utilizzo.
+9. Lo strumento di pianificazione è pronto per l'uso.
 
 ## <a name="optional-software"></a>Software facoltativo
 <a name="Optional_Software"> </a>
@@ -83,17 +83,17 @@ L'esportazione della struttura in Microsoft Excel crea un report che visualizza 
 
 - Riepilogo: visualizza informazioni sulla configurazione del sito, tra cui il numero di utenti, le impostazioni di capacità e le informazioni sul profilo del server.
 
-- Profilo hardware- Visualizza un report sulle configurazioni hardware consigliate per i server specificati nella topologia, tra cui CPU, memoria, disco e interfaccia di rete. Sono incluse anche la quantità e le specifiche consigliate per i componenti server. Ogni server viene inoltre definito dal sito per fornire una rappresentazione completa dei requisiti del server in base al sito.
+- Profilo hardware - Visualizza un report sulle configurazioni hardware consigliate per i server specificati nella topologia, tra cui CPU, memoria, disco e interfaccia di rete. Sono incluse anche la quantità e le specifiche consigliate per i componenti server. Inoltre, ogni server viene definito dal sito per fornire una rappresentazione completa dei requisiti del server in base al sito.
 
-- Requisiti delle porte - Visualizza un report di tutte le porte abilitate e l'associazione al bilanciamento del carico DNS (Domain Name System) e ai servizi di bilanciamento del carico hardware (HLB). È consigliabile utilizzare questo report per pianificare le configurazioni di bilanciamento del carico hardware e LB DNS.
+- Requisiti delle porte - Visualizza un report di tutte le porte abilitate e l'associazione al bilanciamento del carico DNS (Domain Name System) e ai servizi di bilanciamento del carico hardware (HLB). È consigliabile utilizzare questo report per pianificare le configurazioni firewall e DNS LB e HLB.
 
-- Rapporto riepilogativo- Visualizza il riepilogo generale delle impostazioni necessarie per configurare la rete dei server perimetrali.
+- Rapporto riepilogativo- Visualizza il riepilogo generale delle impostazioni necessarie per configurare la rete di server perimetrali.
 
-- Rapporto certificati- Visualizza il nome soggetto e i nomi soggetto alternativi necessari per i certificati necessari per l'esecuzione dei server perimetrali.
+- Rapporto certificati - Visualizza il nome soggetto e i nomi alternativi soggetto necessari per i certificati necessari per l'esecuzione dei server perimetrali.
 
 - Rapporto firewall - Visualizza le porte di origine e di destinazione e gli indirizzi IP per le interfacce esterne e interne.
 
-- Rapporto DNS- Visualizza il nome di dominio completo (FQDN) e gli indirizzi IP/VIP necessari per ogni voce DNS creata.
+- Rapporto DNS - Visualizza il nome di dominio completo (FQDN) e gli indirizzi IP/VIP necessari per ogni voce DNS creata.
 
 ### <a name="microsoft-visio"></a>Microsoft Visio
 
@@ -104,11 +104,11 @@ L'esportazione del progetto in Microsoft Visio consente di creare un diagramma d
 
 - Topologia globale - Diagramma dei siti di Skype for Business Server 2015 configurati.
 
-- Scheda Nome sito - Visualizza la topologia di configurazione del sito con Edge Server, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione del server interno. La distribuzione interna è costituita da server e pool configurati, inclusi pool Front End, server basati su SQL Server, Servizi di dominio Active Directory, Director, server Messaggistica unificata di Exchange, server Cassette postali di Exchange, server Office Web Apps, Mediation Server e server Chat persistente.
+- Scheda Nome sito - Visualizza la topologia di configurazione del sito con server perimetrali, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi pool Front End, server basati su SQL Server, Servizi di dominio Active Directory, Director, server Messaggistica unificata di Exchange, server Cassette postali di Exchange, server Office Web Apps, Mediation Server e server Chat persistente.
 
-- Diagramma reticolare perimetrale - Diagramma che illustra in dettaglio la configurazione del server perimetrale con indirizzi IP e FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i Director e il Front End Server o il pool Front End, con LB o HLB DNS associati e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e fqdn.
+- Edge Network Diagram - Diagramma che illustra in dettaglio la configurazione del server perimetrale con indirizzi IP e FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i Director e il Front End Server o il pool Front End, con LB DNS o HLB associati e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e fqdn.
 
 ## <a name="see-also"></a>Vedere anche
 <a name="Optional_Software"> </a>
 
-[Installazione dello strumento di pianificazione](https://technet.microsoft.com/library/ebdc9e26-4b22-4b02-85b9-7462bcfe7c93.aspx)
+[Installazione dello strumento di pianificazione](/previous-versions/office/lync-server-2013/lync-server-2013-installing-the-planning-tool)
