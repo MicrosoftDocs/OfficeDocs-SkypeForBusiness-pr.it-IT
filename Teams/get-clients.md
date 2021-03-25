@@ -19,12 +19,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2cb28295b0a9700a0eb7531111022a9498517d93
-ms.sourcegitcommit: 4386f4b89331112e0d54943dc3133791d5dca3fb
-ms.translationtype: HT
+ms.openlocfilehash: ff9e407edeab7d14e0d495c5f30a85abfb9ce02f
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49611590"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51112442"
 ---
 # <a name="get-clients-for-microsoft-teams"></a>Ottenere i client per Microsoft Teams 
 
@@ -43,7 +43,7 @@ Microsoft Teams dispone di client per PC (Windows, Mac e Linux), Web e dispositi
 > [!TIP]
 > Guardare la sessione seguente per informazioni sui vantaggi offerti dal client desktop per Windows e su come pianificare ed eseguire la distribuzione: [Teams Windows Desktop Client](https://aka.ms/teams-clients) (client desktop di Teams per Windows).
 
-Il client desktop di Microsoft Teams è un'applicazione autonoma ed è anche [disponibile in Microsoft 365 Apps for enterprise](https://docs.microsoft.com/deployoffice/teams-install). Teams è disponibile per le versioni a 32 e 64 bit di Windows (8.1 o successiva), ARM64 per Windows 10 su ARM e per Windows Server (2012 R2 o versione successiva) e anche per macOS e Linux (nei formati `.deb` e `.rpm`). In Windows, Teams richiede .NET Framework 4.5 o versione successiva. Se non è disponibile, il programma di installazione di Teams offrirà la possibilità di installarlo. In Linux, i gestori di pacchetti come `apt` e `yum` cercheranno di installare automaticamente tutti i requisiti. Se questo non avviene, prima di installare Team su Linux sarà necessario installare i requisiti segnalati.
+Il client desktop di Microsoft Teams è un'applicazione autonoma ed è anche [disponibile in Microsoft 365 Apps for enterprise](/deployoffice/teams-install). Teams è disponibile per le versioni a 32 e 64 bit di Windows (8.1 o successiva), ARM64 per Windows 10 su ARM e per Windows Server (2012 R2 o versione successiva) e anche per macOS e Linux (nei formati `.deb` e `.rpm`). In Windows, Teams richiede .NET Framework 4.5 o versione successiva. Se non è disponibile, il programma di installazione di Teams offrirà la possibilità di installarlo. In Linux, i gestori di pacchetti come `apt` e `yum` cercheranno di installare automaticamente tutti i requisiti. Se questo non avviene, prima di installare Team su Linux sarà necessario installare i requisiti segnalati.
 
 I client desktop supportano le comunicazioni in tempo reale (audio, video e condivisione del contenuto) per riunioni del team, chiamate di gruppo e chiamate private tra due persone.
 
@@ -118,8 +118,8 @@ Installando il pacchetto DEB o RPM verrà installato automaticamente il reposito
 La chiave di firma per abilitare l'aggiornamento automatico usando il gestore pacchetti del sistema viene installata automaticamente. Tuttavia, è disponibile anche alla pagina: (https://packages.microsoft.com/keys/microsoft.asc). Microsoft Teams viene aggiornato mensilmente. Se il repository è stato installato correttamente, il gestore pacchetti del sistema dovrebbe gestire l'aggiornamento automatico esattamente come per gli altri pacchetti presenti nel sistema.
 
 > [!NOTE] 
-> Se si trova un bug, inviarlo usando `Report a Problem` all'interno del client. Per problemi noti, vedere [Supportare Teams nell'organizzazione](Known-issues.md).
-> Per il supporto di Teams per Linux è possibile usare il [canale di supporto del forum per Linux su Microsoft Q&A](https://docs.microsoft.com/answers/topics/teams.html). Assicurarsi di usare il tag `teams-linux` quando si pubblicano le domande. 
+> Se si trova un bug, inviarlo usando `Report a Problem` all'interno del client. Per problemi noti, vedere [Supportare Teams nell'organizzazione](/MicrosoftTeams/troubleshoot/teams-welcome).
+> Per il supporto di Teams per Linux è possibile usare il [canale di supporto del forum per Linux su Microsoft Q&A](/answers/topics/teams.html). Assicurarsi di usare il tag `teams-linux` quando si pubblicano le domande. 
 
 #### <a name="install-teams-using-deb-package"></a>Installare Teams usando il pacchetto DEB
 

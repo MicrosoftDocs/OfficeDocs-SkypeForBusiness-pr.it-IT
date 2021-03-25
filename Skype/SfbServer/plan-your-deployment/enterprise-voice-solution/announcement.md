@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2abee804-2599-48bb-90b2-15df0bae5e20
 description: Pianificazione dell'applicazione annuncio in Skype for Business Server VoIP aziendale, che configura cosa fare con le chiamate telefoniche a numeri di telefono non assegnati nelle organizzazioni. Include i requisiti per i file audio.
-ms.openlocfilehash: b1929fa14b105fd8eccd0f178ae7ef77c1bdf086
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: e1309fe58942f3b9cd720b3643966ae9494bb0cb
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813756"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51112712"
 ---
 # <a name="plan-for-the-announcement-application-in-skype-for-business"></a>Pianificare l'applicazione Annuncio in Skype for Business
 
@@ -29,7 +29,7 @@ Pianificazione dell'applicazione annuncio in Skype for Business Server VoIP azie
 
 L'applicazione Annuncio di Skype for Business Server consente di configurare la gestione delle chiamate telefoniche in arrivo quando il numero composto è valido per l'organizzazione, ma non è assegnato a un utente o a un telefono. È possibile trasferire queste chiamate a una destinazione predeterminata (numero di telefono, URI SIP o segreteria telefonica) oppure riprodurre un annuncio audio o entrambe le opzioni. L'applicazione Annuncio consente di evitare il caso in cui un chiamante compone un numero errato e riceve un tono di occupato oppure il client SIP riceve un messaggio di errore. In questa sezione sono incluse informazioni sulla pianificazione specifiche per l'applicazione Annuncio
 
-Quando si distribuisce l'applicazione Annuncio, è necessario configurare una tabella dei numeri non assegnati che determina l'azione da eseguire quando un utente compone un numero non assegnato. La tabella dei numeri non assegnati contiene intervalli di numeri di telefono validi per l'organizzazione e specifica quale applicazione Annuncio gestisce ogni intervallo. Quando un chiamante compone un numero di telefono valido per l'organizzazione ma non assegnato a nessuno, Skype for Business Server cerca il numero nella tabella di routing dei numeri non assegnati, identifica l'intervallo in cui rientra il numero e instrada la chiamata all'applicazione Annuncio specificata per tale intervallo. L'applicazione Annuncio risponde alla chiamata e riproduce un messaggio audio (se è stata configurata) e quindi disconnette la chiamata o la trasferisce a una destinazione predeterminata, ad esempio a un operatore. È possibile utilizzare i cmdlet di Skype for Business Server Management Shell per configurare più messaggi audio o per trasferire destinazioni.
+Quando si distribuisce l'applicazione Annuncio, è necessario configurare una tabella dei numeri non assegnati che determina l'azione da eseguire quando un utente compone un numero non assegnato. La tabella dei numeri non assegnati contiene intervalli di numeri di telefono validi per l'organizzazione e specifica quale applicazione annuncio gestisce ogni intervallo. Quando un chiamante compone un numero di telefono valido per l'organizzazione ma non assegnato a nessuno, Skype for Business Server cerca il numero nella tabella di routing dei numeri non assegnati, identifica l'intervallo in cui rientra il numero e instrada la chiamata all'applicazione Annuncio specificata per tale intervallo. L'applicazione Annuncio risponde alla chiamata e riproduce un messaggio audio (se è stato configurato per farlo) e quindi disconnette la chiamata o la trasferisce a una destinazione predeterminata, ad esempio a un operatore. È possibile utilizzare i cmdlet di Skype for Business Server Management Shell per configurare più messaggi audio o per trasferire destinazioni.
 
 Il modo in cui configurare la tabella dei numeri non assegnati dipende da come si desidera usarla. Se si dispone di numeri specifici non più in uso e si desidera riprodurre messaggi personalizzati per ogni numero, è possibile immettere tali numeri specifici nella tabella dei numeri non assegnati. Se, ad esempio, è stato modificato il numero del Service Desk clienti, è possibile immettere il vecchio numero del servizio clienti e associarlo a un annuncio che fornisce il nuovo numero. Se si desidera riprodurre un messaggio generale a chiunque chiami un numero non assegnato, ad esempio per dipendenti che non lavorano più nell'organizzazione, è possibile immettere intervalli per tutti gli interni validi dell'organizzazione. La tabella dei numeri non assegnati viene richiamata ogni volta che il chiamante compone un numero attualmente non assegnato.
 
@@ -39,7 +39,7 @@ L'applicazione Annuncio viene installata automaticamente con l'applicazione Resp
 
 ### <a name="software-requirements"></a>Requisiti software
 
-In tutti i Front End Server o nei server Standard Edition che eseguono l'applicazione Annuncio deve essere installato Runtime formato Windows Media per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Runtime formato Windows Media viene installato come parte di Esperienza desktop di Windows. Runtime formato Windows Media o Microsoft Media Foundation sono necessari per i file Windows Media Audio (wma) riprodotti dall'applicazione Annuncio per annunci e musica.
+In tutti i Front End Server o nei server Standard Edition che eseguono l'applicazione Annuncio deve essere installato Runtime formato Windows Media per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Runtime formato Windows Media viene installato come parte di Windows Desktop Experience. Runtime formato Windows Media o Microsoft Media Foundation è necessario per i file Windows Media Audio (wma) riprodotti dall'applicazione Annuncio per annunci e musica.
 
 ### <a name="port-requirements"></a>Requisiti delle porte
 
@@ -50,6 +50,4 @@ L'applicazione Annuncio utilizza **la porta 5071** per le richieste di attesa SI
 
 ### <a name="audio-file-requirements"></a>Requisiti dei file audio
 
-L'applicazione Annuncio supporta il formato di file Wave (wav) e il formato di file Windows Media Audio (wma) per la musica e gli annunci. I requisiti dei file audio per l'applicazione Annuncio sono gli stessi dell'applicazione Response Group. Per informazioni dettagliate, vedere [Technical Requirements for Response Group.](https://technet.microsoft.com/library/477488bd-124f-437b-9327-732a0d7271ca.aspx)
-
-
+L'applicazione Annuncio supporta il formato di file Wave (wav) e il formato di file windows media audio (wma) per la musica e gli annunci. I requisiti dei file audio per l'applicazione Annuncio sono gli stessi dell'applicazione Response Group. Per informazioni dettagliate, vedere [Technical Requirements for Response Group](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).

@@ -12,27 +12,27 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: fa71a2da-2cc9-4ad1-8ec9-08d1c9c5247a
 ms.collection: M365-voice
-description: Leggi questi argomenti per informazioni su come effettuare il provisioning degli account di Exchange e Skype per Skype Room System.
-ms.openlocfilehash: fb0b511d8a99d6aa9901459e1ea06d2f05ae4a42
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Leggere questi argomenti per informazioni su come effettuare il provisioning degli account di Exchange e Skype per Skype Room System.
+ms.openlocfilehash: 0e8c73bc83a62465dc711b4a6f2725f1d9c576f8
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49833916"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51113062"
 ---
 # <a name="provisioning-of-skype-room-system-exchange-and-skype-accounts"></a>Provisioning degli account Skype Room System Exchange e Skype
  
-Leggi questi argomenti per informazioni su come effettuare il provisioning degli account di Exchange e Skype per Skype Room System. 
+Leggere questi argomenti per informazioni su come effettuare il provisioning degli account di Exchange e Skype per Skype Room System. 
 
 > [!NOTE]
-> Microsoft Teams Rooms è un prodotto diverso con dipendenze e procedure di distribuzione diverse. Per informazioni su Microsoft Teams Rooms, vedere la panoramica della distribuzione [di](room-systems-v2.md)Microsoft Teams Rooms.
+> Microsoft Teams Rooms è un prodotto diverso con dipendenze e procedure di distribuzione diverse. Per informazioni su Microsoft Teams Rooms, vedere panoramica della distribuzione di Microsoft Teams [Rooms.](/MicrosoftTeams/rooms/rooms-deploy)
   
 > [!NOTE]
-> Il provisioning degli account di Skype Room System dipende dal tipo di topologia dell'organizzazione. Per ulteriori informazioni sulle topologie di Active Directory, vedere [Requisiti ambientali per Skype for Business Server 2015.](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) 
+> Il provisioning dell'account di sistema sala Skype dipende dal tipo di topologia dell'organizzazione. Per ulteriori informazioni sulle topologie di Active Directory, vedere [Environmental requirements for Skype for Business Server 2015](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md). 
   
-## <a name="provisioning-of-skype-room-system-exchange-amp-skype-for-business-accounts"></a>Provisioning degli account Skype for Business di Skype Room System &amp; di Exchange
+## <a name="provisioning-of-skype-room-system-exchange-amp-skype-for-business-accounts"></a>Provisioning degli account Skype Room System di Exchange &amp; Skype for Business
 
-I seguenti argomenti descrivono come effettuare il provisioning e gestire gli account di Skype Room System Exchange e Skype for Business per:
+Gli argomenti seguenti descrivono come effettuare il provisioning e gestire gli account di Skype Room System Exchange e Skype for Business per:
   
 - Distribuzioni locali della singola foresta
     
@@ -42,8 +42,6 @@ I seguenti argomenti descrivono come effettuare il provisioning e gestire gli ac
     
 - Distribuzioni ibride
     
-- Partner federati Skype Room System e Skype for Business
+- Skype Room System e partner federati Skype for Business
     
 - Gestire gli account Skype Room System
-    
-

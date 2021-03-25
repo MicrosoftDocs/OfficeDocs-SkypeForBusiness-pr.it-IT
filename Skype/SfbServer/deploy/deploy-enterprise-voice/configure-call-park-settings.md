@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3bed9d09-8363-4fff-a220-f0f6d3a81241
 description: Modificare le impostazioni del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 2380c9b505ceef6ac5f4bbe04996bfdf611de39c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c1eecd55dac398752915ccb63886bbf85858fe47
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804116"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51111912"
 ---
 # <a name="configure-call-park-settings-in-skype-for-business"></a>Configurare le impostazioni del parcheggio di chiamata in Skype for Business
 
@@ -46,7 +46,7 @@ Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration*
 
 1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
 
-2. Correre:
+2. Eseguire: 
 
    ```powershell
    New-CsCpsConfiguration -Identity site:<sitename to apply settings> [-CallPickupTimeoutThreshold <hh:mm:ss>] -[EnableMusicOnHold <$true | $false>] [-MaxCallPickupAttempts <number of rings>] [-OnTimeoutURI sip:<sip URI for routing unanswered call>]
@@ -63,10 +63,10 @@ Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration*
 
 ## <a name="see-also"></a>Vedere anche
 
-[Personalizzare la musica di attesa del parcheggio di chiamata inSkype for Business 2015](customize-call-park-music-on-hold.md)
+[Personalizzare la musica del parcheggio di chiamata in attesa inSkype for Business 2015](customize-call-park-music-on-hold.md)
 
-[New-CsCpsConfiguration](https://docs.microsoft.com/powershell/module/skype/new-cscpsconfiguration?view=skype-ps)
+[New-CsCpsConfiguration](/powershell/module/skype/new-cscpsconfiguration?view=skype-ps)
 
-[Set-CsCpsConfiguration](https://docs.microsoft.com/powershell/module/skype/set-cscpsconfiguration?view=skype-ps)
+[Set-CsCpsConfiguration](/powershell/module/skype/set-cscpsconfiguration?view=skype-ps)
 
-[Get-CsSite](https://docs.microsoft.com/powershell/module/skype/get-cssite?view=skype-ps)
+[Get-CsSite](/powershell/module/skype/get-cssite?view=skype-ps)

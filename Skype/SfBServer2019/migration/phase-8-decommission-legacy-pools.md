@@ -1,5 +1,5 @@
 ---
-title: Fase 8 Rimuovere i pool legacy
+title: Fase 8 Rimozione dei pool legacy
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.custom: httpsfix
-description: Nell'argomento seguente vengono fornite indicazioni per l'aggiornamento delle voci DNS, lo spostamento di Content Management Server, la rimozione delle autorizzazioni dei pool e la disattivazione e la rimozione di server e pool da una distribuzione legacy. Non tutte le procedure elencate in questa sezione sono necessarie. Leggere la documentazione e determinare quale procedura di rimozione utilizzare.
-ms.openlocfilehash: 2406b25436bc13cafca8b09c92220a96e0635ae3
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+description: Nell'argomento seguente vengono fornite indicazioni per aggiornare le voci DNS, spostare Content Management Server, rimuovere pool e disattivare e rimuovere server e pool da una distribuzione legacy. Non tutte le procedure elencate in questa sezione sono necessarie. Leggere la documentazione e determinare quale procedura di rimozione utilizzare.
+ms.openlocfilehash: b1080c68e3b4075ce92aaef497854855135dc47d
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44753694"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51113242"
 ---
 # <a name="phase-8-decommission-legacy-pools"></a>Fase 8: rimuovere le autorizzazioni dei pool legacy
 
-Nell'argomento seguente vengono fornite indicazioni per l'aggiornamento delle voci DNS, lo spostamento di Content Management Server, la rimozione delle autorizzazioni dei pool e la disattivazione e la rimozione di server e pool da una distribuzione legacy. Non tutte le procedure elencate in questa sezione sono necessarie. Leggere la documentazione e determinare quale procedura di rimozione utilizzare. 
+Nell'argomento seguente vengono fornite indicazioni per aggiornare le voci DNS, spostare Content Management Server, rimuovere pool e disattivare e rimuovere server e pool da una distribuzione legacy. Non tutte le procedure elencate in questa sezione sono necessarie. Leggere la documentazione e determinare quale procedura di rimozione utilizzare. 
   
-Per un articolo aggiornato ma esaustivo sulla rimozione di server e ruoli del server e per una guida dettagliata alla rimozione delle autorizzazioni di una distribuzione, scaricare Disinstallazione di Microsoft Lync Server e Rimozione dei ruoli [del server.](https://go.microsoft.com/fwlink/p/?linkId=246227) 
+Per un articolo aggiornato ma esaustivo sulla rimozione di server e ruoli del server e per una guida dettagliata alla rimozione delle autorizzazioni di una distribuzione, scaricare [Disinstallazione](https://go.microsoft.com/fwlink/p/?linkId=246227)di Microsoft Lync Server e Rimozione dei ruoli del server . 
   
 > [!IMPORTANT]
-> Per informazioni sulla migrazione e l'aggiornamento delle applicazioni UCMA (Microsoft Unified Communications Managed API), prima di rimuovere le autorizzazioni dell'ambiente legacy, vedere [Applicazioni UCMA: scenari di coesistenza,](https://go.microsoft.com/fwlink/p/?LinkId=269555)migrazione e aggiornamento.
+> Per informazioni sulla migrazione e l'aggiornamento delle applicazioni UCMA (Microsoft Unified Communications Managed API), prima di rimuovere le autorizzazioni dell'ambiente legacy, vedere [Applicazioni UCMA: scenari di coesistenza,](/previous-versions/office/jj728782(v=office.15))migrazione e aggiornamento.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
@@ -40,8 +40,6 @@ Per un articolo aggiornato ma esaustivo sulla rimozione di server e ruoli del se
 > 
 > [Rimuovere l'associazione del server di monitoraggio](remove-the-monitoring-server-association.md)
 > 
-> [Rimuovere enterprise edition Front End Server o Standard Edition Front End Server](remove-the-front-end-server.md)
+> [Rimuovere il Front End Server Enterprise Edition o il Front End Server Standard Edition](remove-the-front-end-server.md)
 > 
 > [Rimuovere database e istanze di SQL Server nel server back-end](remove-sql-server-instances-and-databases-on-the-back-end-server.md)
-    
-
