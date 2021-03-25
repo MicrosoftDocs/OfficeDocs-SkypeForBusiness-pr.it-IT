@@ -15,18 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1d3fe1f6-e987-4b21-aafd-4ceaf523027a
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: b429d7c719b3e73f2d0eec44b3e296b142486568
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 89d88dd12d3e5a40413815c31a9f37772d67f5ff
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49800486"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119965"
 ---
-# <a name="configure-a-network-region"></a><span data-ttu-id="ceb2f-104">Configurare un'area di rete</span><span class="sxs-lookup"><span data-stu-id="ceb2f-104">Configure a Network Region</span></span>
+# <a name="configure-a-network-region"></a><span data-ttu-id="8d784-104">Configurare un'area di rete</span><span class="sxs-lookup"><span data-stu-id="8d784-104">Configure a Network Region</span></span>
 
-<span data-ttu-id="ceb2f-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="ceb2f-105">What do you want to do?</span></span> <span data-ttu-id="ceb2f-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="ceb2f-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="8d784-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="8d784-105">What do you want to do?</span></span> <span data-ttu-id="8d784-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="8d784-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="ceb2f-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="ceb2f-107">Configuring Network Regions</span></span>](https://technet.microsoft.com/library/bd08bb66-5976-4ece-b45c-7de19569f814.aspx)
+- [<span data-ttu-id="8d784-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="8d784-107">Configuring Network Regions</span></span>](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-regions)
 
-<span data-ttu-id="ceb2f-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="ceb2f-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
-
+<span data-ttu-id="8d784-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="8d784-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
