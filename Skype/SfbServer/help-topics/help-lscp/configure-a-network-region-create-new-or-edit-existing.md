@@ -1,5 +1,5 @@
 ---
-title: Configurare un'area di rete crearne una nuova o modificarne una esistente
+title: Configurare un'area di rete Crea nuova o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,18 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0277b988-e12e-4786-9001-9c212495cb89
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 1ae2af9fc4a2e34131879c0ce35a5157331b0a7f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 045a222ec9295e410989d665b9ba4012d0adb3df
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807336"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51122617"
 ---
-# <a name="configure-a-network-region-create-new-or-edit-existing"></a><span data-ttu-id="86857-104">Configurare un'area di rete: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="86857-104">Configure a Network Region: Create New or Edit Existing</span></span>
+# <a name="configure-a-network-region-create-new-or-edit-existing"></a><span data-ttu-id="bcd9a-104">Configurare un'area di rete: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="bcd9a-104">Configure a Network Region: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="86857-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="86857-105">What do you want to do?</span></span> <span data-ttu-id="86857-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="86857-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="bcd9a-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="bcd9a-105">What do you want to do?</span></span> <span data-ttu-id="bcd9a-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="bcd9a-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="86857-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="86857-107">Configuring Network Regions</span></span>](https://technet.microsoft.com/library/bd08bb66-5976-4ece-b45c-7de19569f814.aspx)
+- [<span data-ttu-id="bcd9a-107">Configurazione delle aree di rete</span><span class="sxs-lookup"><span data-stu-id="bcd9a-107">Configuring Network Regions</span></span>](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-regions)
 
-<span data-ttu-id="86857-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="86857-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
-
+<span data-ttu-id="bcd9a-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="bcd9a-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>

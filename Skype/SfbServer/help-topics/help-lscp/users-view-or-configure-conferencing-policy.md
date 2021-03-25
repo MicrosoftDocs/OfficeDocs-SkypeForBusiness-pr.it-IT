@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione o configurazione dei criteri di conferenza da parte degli utenti
+title: Utenti Visualizza o configura criteri conferenza
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,18 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 112c77cf-3625-4a97-a1a4-be6f3234cd53
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 9bdb8eb5c21e6a9bf5cf77845ebb99a138b0ab11
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: af0e5a2bce95a3ac4a2e090f1fbef1f45eb25229
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824376"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51122510"
 ---
-# <a name="users-view-or-configure-conferencing-policy"></a><span data-ttu-id="7f5ba-104">Utenti: visualizzare o configurare i criteri di conferenza</span><span class="sxs-lookup"><span data-stu-id="7f5ba-104">Users: View or Configure Conferencing Policy</span></span>
+# <a name="users-view-or-configure-conferencing-policy"></a><span data-ttu-id="8ad39-104">Utenti: visualizzare o configurare i criteri di conferenza</span><span class="sxs-lookup"><span data-stu-id="8ad39-104">Users: View or Configure Conferencing Policy</span></span>
 
-<span data-ttu-id="7f5ba-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="7f5ba-105">What do you want to do?</span></span> <span data-ttu-id="7f5ba-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="7f5ba-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="8ad39-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="8ad39-105">What do you want to do?</span></span> <span data-ttu-id="8ad39-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="8ad39-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="7f5ba-107">Assegnare criteri di conferenza per modificare l'esperienza riunione predefinita di un utente</span><span class="sxs-lookup"><span data-stu-id="7f5ba-107">Assign a Conferencing Policy to Modify a User's Default Meeting Experience</span></span>](https://technet.microsoft.com/library/72f12c72-65f7-44fe-ab81-0f57cb2f87d1.aspx)
+- [<span data-ttu-id="8ad39-107">Assegnare criteri di conferenza per modificare l'esperienza di riunione predefinita di un utente</span><span class="sxs-lookup"><span data-stu-id="8ad39-107">Assign a Conferencing Policy to Modify a User's Default Meeting Experience</span></span>](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-conferencing-policy)
 
-<span data-ttu-id="7f5ba-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="7f5ba-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
-
+<span data-ttu-id="8ad39-108">Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)</span><span class="sxs-lookup"><span data-stu-id="8ad39-108">For details about the different procedures that you can perform by using the Skype for Business Server Control Panel, see [Manage Skype for Business Server 2015](../../manage/manage.md).</span></span>
