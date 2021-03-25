@@ -21,31 +21,31 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come cercare i numeri di conferenza telefonica con accesso esterno all'interno di Skype for Business online. "
-ms.openlocfilehash: 48cca375f2039a1cebbd07100a8bcd8d275f55f0
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: f7343010cfdc34325d2f164b5560c542af0551ef
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164685"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51114152"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-skype-for-business-online"></a>Visualizzare un elenco di numeri per Audioconferenza in Skype for Business online
 
 > [!NOTE]
 > Per informazioni sui numeri per Audioconferenza in Microsoft Teams, consulta [Visualizzare un elenco di numeri per Audioconferenza in Microsoft Teams](/MicrosoftTeams/see-a-list-of-audio-conferencing-numbers-in-teams) .
 
-When you set up Audio Conferencing for Skype for Business users, you can view the phone numbers that are available to them for audio conferencing. This list will have all of the audio conferencing phone numbers that are available to your organization.
+Quando imposti un'Audioconferenza per gli utenti di Skype for Business, è possibile visualizzare i numeri di telefono disponibili per Audioconferenza. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
   
- **Looking for prices?** See [Pricing for Audio Conferencing](https://products.office.com/skype-for-business/audio-conferencing#Requirements).
+ **Stai cercando i prezzi?** Vedere [Prezzi per le audioconferenze](https://products.office.com/skype-for-business/audio-conferencing#Requirements).
   
 > [!IMPORTANT]
-> **There isn't a resource that contains a listing of all of the dial-in numbers for Audio Conferencing.** If you are looking to see if there are dial-in phone numbers available in your area or country/region, go to **Skype for Business admin center** > **Voice** > **Phone Numbers**, click **Add**, and then click **New Service Numbers**. Use the lists for **Country/Region**, **State/Region**, and **City** to filter your search. Also, if you are looking for toll-free service numbers, select **Toll-Free** from the **State/Region** list.
+> **Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza.** Se si sta cercando di verificare se sono disponibili numeri di telefono per l'accesso esterno nella propria area geografica o paese/area geografica, passare all'interfaccia di amministrazione **di Skype for Business** Numeri di telefono vocali, fare clic su Aggiungi e quindi su Nuovi numeri di  >    >   **servizio.**  Utilizza gli elenchi per **paese/area geografica**, **stato/regione**, e **città** per filtrare la ricerca. Inoltre, se si cercano numeri di servizio gratuiti, selezionare **Numero verde** nell'elenco **Stato/Area** geografica.
   
-If there is only one phone number available in your organization, it will be used as the default number for all of your users. When multiple phone numbers are available, you can select the default phone number for each user. This default number will be included in Skype for Business meeting invitations.
+Se è disponibile un solo numero di telefono all'interno dell'organizzazione, questo verrà utilizzato come numero predefinito per tutti gli utenti. Quando sono disponibili più numeri di telefono, è possibile selezionare il numero di telefono predefinito per ogni utente. Questo numero predefinito verrà incluso negli inviti alle riunioni di Skype for Business.
   
 È possibile consultare [Impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites.md) per modificare il numero di telefono di accesso esterno per un singolo utente.
   
 > [!NOTE]
-> Domestic dial-in numbers are dedicated to your organization and are the only ones that can be set as a default phone number. However, international dial-in numbers may be shared across multiple organizations. 
+> I numeri nazionali di accesso esterno sono dedicati all'organizzazione e sono gli unici che possono essere impostati come numero di telefono predefinito. Tuttavia, i numeri internazionali di accesso esterno possono essere condivisi tra più organizzazioni. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -54,40 +54,39 @@ If there is only one phone number available in your organization, it will be use
 
 1. Accedere con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedi all'interfaccia di amministrazione > **Skype for Business.**
+2. Passare all'interfaccia di amministrazione > **Skype for Business**.
     
-3. **Nell'interfaccia di amministrazione di Skype for Business,** nella barra di spostamento sinistra, passa a Bridge Microsoft per **audioconferenze**  >  e quindi:
+3. **Nell'interfaccia di amministrazione di Skype for Business,** nel riquadro di spostamento sinistro, vai a Bridge Microsoft per **audioconferenze**  >  e quindi:
     
-   - Puoi visualizzare i numeri di telefono disponibili per i servizi di audioconferenza.
+   - È possibile visualizzare i numeri di telefono disponibili per le audioconferenze.
     
-   - Puoi anche visualizzare la posizione e la lingua principale e le lingue secondarie che verranno utilizzate dall'operatore automatico di audioconferenza.
+   - È anche possibile visualizzare la posizione e le lingue principale e secondaria che verranno usate dall'operatore automatico di audioconferenza.
     
 > [!NOTE]
-> You can go to **Audio conferencing** > **Users** and select the user's properties to change the default number by choosing a new number from the list of available numbers in your organization. See [Set the phone numbers included on invites](set-the-phone-numbers-included-on-invites.md). 
+> È possibile passare a **Utenti di audioconferenza** e selezionare le proprietà dell'utente per modificare il numero predefinito scegliendo un nuovo numero nell'elenco dei numeri disponibili  >   nell'organizzazione. Vedere [Impostare i numeri di telefono inclusi per gli inviti.](set-the-phone-numbers-included-on-invites.md) 
 
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Per risparmiare tempo o automatizzare questa operazione, puoi utilizzare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber.](https://go.microsoft.com/fwlink/?LinkId=617691)
+- Per risparmiare tempo o automatizzare questa operazione, è possibile usare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber.](/powershell/module/skype/Get-CsOnlineDialInConferencingServiceNumber)
     
-- Windows PowerShell riguarda la gestione degli utenti e le operazioni che sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 tramite un unico punto di amministrazione, che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
-  - [Perché è necessario usare PowerShell di Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché occorre Windows PowerShell per gestire Office 365 o Microsoft 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
-  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti:
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
-  - [Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
-  - [Uso di Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
+  - [Uso di Windows PowerShell per gestire Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
     > [!NOTE]
-    > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business Online.](https://go.microsoft.com/fwlink/?LinkId=294688)
+    > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business online.](https://go.microsoft.com/fwlink/?LinkId=294688)
   
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Provare o acquistare audioconferenze in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md)
-  

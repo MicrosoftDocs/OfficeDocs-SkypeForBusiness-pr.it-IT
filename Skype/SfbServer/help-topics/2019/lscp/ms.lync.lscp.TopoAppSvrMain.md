@@ -1,5 +1,5 @@
 ---
-title: Applicazione server di topologia
+title: Applicazione server topologia
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 8c95b160-3d88-46c7-987c-38384bac3e51
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'La pagina Topologia: Applicazione server mostra le applicazioni server disponibili nella distribuzione.'
-ms.openlocfilehash: 4c76e2abc488e650819d5fe6fa19f9b0abbd6d36
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 719f49ca48ac8c9b5808178779405e56f47fc7fe
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49836276"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120190"
 ---
 # <a name="topology-server-application"></a>Topologia: applicazione server
 
@@ -38,6 +38,6 @@ Nella pagina **Topologia**: **Applicazione server** è possibile eseguire le att
 
 ## <a name="see-also"></a>Vedere anche
 
-[Abilitare o disabilitare un'applicazione server MSPL (Microsoft SIP Processing Language)](https://technet.microsoft.com/library/b20af38d-224a-4459-991d-0b7eabb3ca7c.aspx)
+[Abilitare o disabilitare un'applicazione server MSPL (Microsoft SIP Processing Language)](/previous-versions/office/lync-server-2013/lync-server-2013-enable-or-disable-a-microsoft-sip-processing-language-mspl-server-application)
 
-[Contrassegnare un'applicazione MSPL (Microsoft SIP Processing Language) come critica o non critica](https://technet.microsoft.com/library/df68fdc6-b7e6-4f07-acdc-0cd4c2c888a1.aspx)
+[Contrassegnare un'applicazione MSPL (Microsoft SIP Processing Language) come critica o non critica](/previous-versions/office/lync-server-2013/lync-server-2013-mark-a-microsoft-sip-processing-language-mspl-application-as-critical-or-not-critical)

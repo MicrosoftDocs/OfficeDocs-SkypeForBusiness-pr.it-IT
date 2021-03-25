@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 11d1f9ac-0029-429b-be2b-d7591abfc192
 description: 'Riepilogo: informazioni su come modificare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 80ba12266ebc45fdae3256f5238ecf18415734c8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2f0d1220312ac810d26fdd4691492133e54db9b6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49827996"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119415"
 ---
 # <a name="modify-meeting-configuration-settings-in-skype-for-business-server"></a>Modificare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
@@ -31,9 +31,9 @@ ms.locfileid: "49827996"
     
 2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Configurazione riunione.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Configurazione riunione.**
     
-4. Nell'elenco delle configurazioni riunione fare clic sulla configurazione che si desidera modificare, fare clic su **Modifica** e quindi su **Mostra dettagli.**
+4. Nell'elenco delle configurazioni delle riunioni fare clic sulla configurazione che si desidera modificare, fare clic su **Modifica** e quindi su **Mostra dettagli.**
     
 5. In **Modifica configurazione riunione** modificare qualsiasi impostazione di configurazione, tranne il nome della configurazione, che non può essere modificato.
     
@@ -43,12 +43,10 @@ ms.locfileid: "49827996"
 
 Per modificare le impostazioni di configurazione delle riunioni, utilizzare il cmdlet **Set-CsMeetingConfiguration.**
   
-Il comando riportato nell'esempio seguente consente di modificare le impostazioni di configurazione delle riunioni assegnate al sito Redmond (-Identity site:Redmond). In questo caso, il valore della proprietà DesignateAsPresenter è impostato su Tutti:
+Il comando riportato nell'esempio seguente modifica le impostazioni di configurazione delle riunioni assegnate al sito Redmond (-Identity site:Redmond). In questo caso, il valore della proprietà DesignateAsPresenter è impostato su Everyone:
   
 ```PowerShell
 Set-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone"
 ```
 
-Per ulteriori informazioni, incluso un elenco completo dei parametri, [vedere Set-CsMeetingConfiguration.](https://docs.microsoft.com/powershell/module/skype/set-csmeetingconfiguration?view=skype-ps)
-  
-
+Per ulteriori informazioni, incluso un elenco completo di parametri, [vedere Set-CsMeetingConfiguration.](/powershell/module/skype/set-csmeetingconfiguration?view=skype-ps)

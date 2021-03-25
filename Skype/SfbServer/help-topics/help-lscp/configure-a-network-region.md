@@ -15,18 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1d3fe1f6-e987-4b21-aafd-4ceaf523027a
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: b429d7c719b3e73f2d0eec44b3e296b142486568
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 89d88dd12d3e5a40413815c31a9f37772d67f5ff
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49800486"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119965"
 ---
 # <a name="configure-a-network-region"></a>Configurare un'area di rete
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Configurazione delle aree di rete](https://technet.microsoft.com/library/bd08bb66-5976-4ece-b45c-7de19569f814.aspx)
+- [Configurazione delle aree di rete](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-regions)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
-
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)

@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: cb09f9c2-c6dc-4083-b45a-8b6773341373
 description: 'Riepilogo: informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server.'
-ms.openlocfilehash: 9ca73d3d32ce03a8119d805b5e7260c0a871eb27
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 796266dd3b571e525f657d5dbe712d1577779cae
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828106"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119455"
 ---
 # <a name="manage-conference-join-and-leave-announcements-in-skype-for-business-server"></a>Gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server.
   
-Quando gli utenti con accesso esterno aderiscono o escono da una conferenza, l'applicazione Annuncio conferenza può annunciare l'ingresso o l'uscita riproducendo un tono o pronunciando i propri nomi. È possibile modificare il funzionamento degli annunci utilizzando Skype for Business Server Management Shell e il cmdlet **Set-CsDialinConferencing** con i parametri seguenti:
+Quando gli utenti con accesso esterno aderiscono o escono da una conferenza, l'applicazione Annuncio conferenza può annunciare l'ingresso o l'uscita riproducendo un tono o pronunciando i nomi. È possibile modificare il funzionamento degli annunci utilizzando Skype for Business Server Management Shell e il cmdlet **Set-CsDialinConferencing** con i parametri seguenti:
   
 - EnableNameRecording - Determina se ai partecipanti anonimi viene richiesto di registrare il proprio nome prima di accedere alla conferenza. Il valore predefinito è "$true" e indica che ai partecipanti anonimi viene richiesto di specificare il proprio nome durante l'accesso a una conferenza. I partecipanti autenticati non registrano il proprio nome perché viene utilizzato il nome visualizzato.
     
 - EntryExitAnnouncementsEnabledByDefault - Indica se gli annunci sono attivati o disattivati per impostazione predefinita. Il valore predefinito è "$false" e indica che per impostazione predefinita non vengono visualizzati annunci quando gli utenti partecipano a una conferenza o la abbandonano. L'organizzatore della riunione può sostituire questa impostazione durante la pianificazione della riunione.
     
-- EntryExitAnnouncementsType - Indica l'azione eseguita ogni volta che un partecipante partecipa o abbandona una conferenza per cui sono abilitati gli annunci. Il valore predefinito è "UseNames" e indica la visualizzazione di un annuncio simile al seguente: "Davide Garghentini si è unito alla conferenza" quando gli annunci sono attivati.
+- EntryExitAnnouncementsType - Indica l'azione eseguita ogni volta che un partecipante partecipa o abbandona una conferenza per la quale sono abilitati gli annunci. Il valore predefinito è "UseNames" e indica la visualizzazione di un annuncio simile al seguente: "Davide Garghentini si è unito alla conferenza" quando gli annunci sono attivati.
     
 È possibile configurare queste impostazioni a livello globale o di sito. Le impostazioni configurate a livello di sito hanno la precedenza su quelle configurate a livello globale.
    
@@ -46,7 +46,7 @@ Quando gli utenti con accesso esterno aderiscono o escono da una conferenza, l'a
    Get-CsDialinConferencingConfiguration
    ```
 
-Questo cmdlet recupera informazioni sull'eventuale necessità per i partecipanti di registrare il proprio nome durante la partecipazione a una conferenza e su come Skype for Business Server risponde quando i partecipanti aderiscono o abbandonano una conferenza telefonica con accesso esterno.
+Questo cmdlet consente di recuperare informazioni sulla necessità o meno ai partecipanti di registrare il proprio nome durante la partecipazione a una conferenza e su come Skype for Business Server risponde quando i partecipanti aderiscono o abbandonano una conferenza telefonica con accesso esterno.
     
 4. Eseguire il comando seguente al prompt:
     
@@ -66,6 +66,4 @@ Set-CsDialinConferencingConfiguration -Identity site:Redmond
 -EntryExitAnnouncementsType ToneOnly
 ```
 
-Per ulteriori informazioni, inclusa la sintassi e un elenco completo dei parametri, vedere [Set-CsDialInConferencingConfiguration.](https://docs.microsoft.com/powershell/module/skype/set-csdialinconferencingconfiguration?view=skype-ps)
-  
-
+Per ulteriori informazioni, inclusa la sintassi e un elenco completo dei parametri, [vedere Set-CsDialInConferencingConfiguration](/powershell/module/skype/set-csdialinconferencingconfiguration?view=skype-ps).

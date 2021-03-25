@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c1c0976e-2bfb-475b-9255-ed6b093d8798
 description: 'Riepilogo: informazioni su come visualizzare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 39b37a1335f8b257f9dec1fff28bea90ac7a6db9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: afe86f0a77e73c3fa7bf96339c4865598a7bc609
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817506"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119405"
 ---
 # <a name="view-conferencing-policies-in-skype-for-business-server"></a>Visualizzare i criteri di conferenza in Skype for Business Server
  
@@ -31,7 +31,7 @@ ms.locfileid: "49817506"
     
 2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Criteri conferenza.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     
 4. Nella pagina **Criteri conferenza** fare doppio clic sul criterio di conferenza che si desidera visualizzare.
     
@@ -39,7 +39,7 @@ ms.locfileid: "49817506"
     
     **Modifica criteri \<policy\> conferenza -** visualizza le impostazioni per il criterio selezionato.
     
-    Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [Creare criteri di conferenza in Skype for Business Server.](create-policies.md)
+    Per informazioni dettagliate sulla configurazione delle impostazioni, vedere [Create conferencing policies in Skype for Business Server.](create-policies.md)
     
 ## <a name="view-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Visualizzare i criteri di conferenza tramite Skype for Business Server Management Shell
 
@@ -88,6 +88,4 @@ TotalReceiveVideoBitRateKb                : 6000
 EnableMultiViewJoin                       : True
 </pre>
 
-Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, vedere [Get-CsConferencingPolicy.](https://docs.microsoft.com/powershell/module/skype/get-csconferencingpolicy?view=skype-ps)
-  
-
+Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, vedere [Get-CsConferencingPolicy](/powershell/module/skype/get-csconferencingpolicy?view=skype-ps).

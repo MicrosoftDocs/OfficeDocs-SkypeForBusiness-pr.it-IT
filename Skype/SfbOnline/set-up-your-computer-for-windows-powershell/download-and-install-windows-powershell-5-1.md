@@ -20,12 +20,12 @@ ms.custom:
 - PowerShell
 - LIL_Placement
 description: Scaricare, installare e usare Windows PowerShell 5.1 per creare una sessione remota di PowerShell che si connette a Skype for Business online.
-ms.openlocfilehash: 64d1ed1b3e3031f5186a09289ab6e1d9088840cf
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+ms.openlocfilehash: ed719a2df084c968c622a54fe145647b2d7b7aa8
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42029097"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120335"
 ---
 # <a name="download-and-install-windows-powershell-51"></a>Scaricare e installare Windows PowerShell 5.1
 
@@ -55,7 +55,7 @@ Dopo aver verificato che Windows PowerShell 5.1 è installato, è necessario ver
   
 1. Fai clic su **Start**, fai clic su **Tutti i programmi**, fai clic su **Accessori**, fai clic su **Windows PowerShell**, fai clic con il pulsante destro su **Windows PowerShell** e poi fai clic su **Esegui come amministratore**.
     
-2. Se viene visualizzata la finestra di dialogo **Controllo dell'account utente**, fare clic su **Sì** per verificare che PowerShell venga eseguito con credenziali di amministratore.
+2. Se viene visualizzata la finestra di dialogo **Controllo dell'account utente**, fai clic su **Sì** per confermare che vuoi eseguire PowerShell con credenziali da amministratore.
     
 Se invece usi Windows 8, procedi come segue.
   
@@ -94,7 +94,7 @@ Prima di installare Windows Management Framework 5.1:
 
 Se non sei sicuro della versione di Windows in uso o non sei sicuro di aver installato Windows 7 Service Pack 1, fai click su **Start**, fai clic con il pulsante destro su **Computer**, poi fai clic su **Proprietà**. Queste informazioni saranno riportate nella finestra di dialogo Sistema.
   
-Per installare Windows Management Framework 5.1, completare la procedura descritta in [Installare e configurare WMF 5.1](https://docs.microsoft.com/powershell/scripting/wmf/setup/install-configure).
+Per installare Windows Management Framework 5.1, completare la procedura descritta in [Installare e configurare WMF 5.1](/powershell/scripting/wmf/setup/install-configure).
   
 Una volta riavviato il computer, verifica che Windows PowerShell si avvii e che possa essere eseguito con credenziali di amministratore. Procedi come segue.
   
@@ -148,4 +148,3 @@ Se l'autenticazione di base è stata impostata su true, è possibile usare Power
 [Configurare il computer per Windows PowerShell](set-up-your-computer-for-windows-powershell.md) 
 
   
- 

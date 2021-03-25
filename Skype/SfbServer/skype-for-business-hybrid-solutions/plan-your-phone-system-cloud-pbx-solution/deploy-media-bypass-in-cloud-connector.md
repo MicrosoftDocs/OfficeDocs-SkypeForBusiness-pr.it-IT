@@ -16,31 +16,31 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0ebba3a4-6124-434c-84aa-32b1cc3345bc
 description: Leggere questo argomento per informazioni sulla procedura per distribuire il bypass multimediale con Cloud Connector Edition versione 2.0 e successive.
-ms.openlocfilehash: eeb566e2a1a16e235813c077d4e4bf6903a467d7
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+ms.openlocfilehash: c9dc79a3079fd27e8901d31abf1a27310d18ed28
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359312"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119365"
 ---
 # <a name="deploy-media-bypass-in-cloud-connector-edition"></a>Distribuire il bypass multimediale in Cloud Connector Edition
  
 > [!Important]
-> Cloud Connector Edition andrà in ritiro il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Instradamento diretto.](https://docs.microsoft.com/MicrosoftTeams/direct-routing-landing-page)
+> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
 
 Leggere questo argomento per informazioni sulla procedura per distribuire il bypass multimediale con Cloud Connector Edition versione 2.0 e successive. 
   
-Il bypass multimediale consente a un client di inviare contenuti multimediali direttamente all'hop successivo PSTN (Public Switched Telephone Network), ovvero un gateway o un Session Border Controller (SBC), ed eliminare il componente Cloud Connector Edition dal percorso multimediale. Vedere anche [Pianificare il bypass multimediale in Cloud Connector Edition.](plan-for-media-bypass-in-cloud-connector-edition.md)
+Il bypass multimediale consente a un client di inviare contenuti multimediali direttamente all'hop successivo PSTN (Public Switched Telephone Network), un gateway o session border controller (SBC), ed eliminare il componente Cloud Connector Edition dal percorso multimediale. Vedi anche [Pianificare il bypass multimediale in Cloud Connector Edition.](plan-for-media-bypass-in-cloud-connector-edition.md)
   
 ## <a name="enable-media-bypass"></a>Abilita bypass multimediale
 
-Per abilitare il bypass multimediale, è necessario configurare il nome DNS del servizio Web di bypass multimediale e attivare il bypass multimediale nella configurazione tenant. Il servizio Web di bypass multimediale viene distribuito automaticamente in ogni Mediation Server. Un amministratore tenant deve selezionare un nome per un servizio vocale ibrido (sito) e questo nome deve derivare da un dominio SIP registrato per la voce ibrida. Il nome del servizio deve essere lo stesso in tutti i dispositivi Cloud Connector e in tutti i siti PSTN indipendentemente dalla posizione del client. Il servizio Web deve essere disponibile solo internamente nella rete.
+Per abilitare il bypass multimediale, è necessario configurare il nome DNS del servizio Web di bypass multimediale e attivare il bypass multimediale nella configurazione tenant. Il servizio Web bypass multimediale viene distribuito automaticamente in ogni Mediation Server. Un amministratore tenant deve selezionare un nome per un servizio vocale ibrido (sito) e questo nome deve derivare da un dominio SIP registrato per la voce ibrida. Il nome del servizio deve essere lo stesso in tutti i dispositivi Cloud Connector e in tutti i siti PSTN indipendentemente dalla posizione del client. Il servizio Web deve essere disponibile solo internamente nella rete.
   
-Un amministratore tenant deve configurare un record A DNS in Active Directory di produzione interna. Se si dispone di un ambiente multisnode complesso, vedere l'esempio in Esempio: record DNS del sito Web bypass multimediale [in ambienti multisodei complessi.](deploy-media-bypass-in-cloud-connector.md#Example) Il record DNS deve essere risolto solo per i client di rete interni. non deve essere risolto per i client di rete esterni.
+Un amministratore tenant deve configurare un record A DNS in Active Directory di produzione interna. Se si dispone di un ambiente multis sito complesso, vedere l'esempio in Esempio: record DNS del sito Web bypass multimediale [in ambienti multis](deploy-media-bypass-in-cloud-connector.md#Example)sito complessi. Il record DNS deve essere risolto solo per i client di rete interni. non deve essere risolto per i client di rete esterni.
   
-Dopo aver configurato DNS, connettersi a Skype for Business online usando Remote PowerShell con le credenziali di amministratore di Skype for Business. Per ulteriori informazioni, vedere [Configurare il computer per Windows PowerShell.](../../../SfbOnline/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
+Dopo aver configurato DNS, connettersi a Skype for Business online usando Remote PowerShell con le credenziali di amministratore di Skype for Business. Per ulteriori informazioni, vedere [Set up your computer for Windows PowerShell](../../../SfbOnline/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md) .
   
-Nella sessione di PowerShell, immettere i comandi seguenti per abilitare il bypass multimediale:
+Nella sessione di PowerShell immettere i comandi seguenti per abilitare il bypass multimediale:
   
 ```powershell
 Set-CsTenantHybridConfiguration -HybridConfigServiceInternalUrl http://newname.domain/hybridconfig/hybridconfigservice.svc
@@ -48,7 +48,7 @@ $mediabypass = New-CsNetworkMediaBypassConfiguration -AlwaysBypass $true -Enable
 Set-CsNetworkConfiguration -MediaBypassSettings $mediabypass
 ```
 
-L'abilitazione del bypass multimediale è un processo in due passaggi. Il cmdlet New-CsNetworkMedia non salva immediatamente la nuova configurazione. crea solo le impostazioni in memoria. L'oggetto creato da questo cmdlet deve essere salvato in una variabile e quindi assegnato alla proprietà MediaBypassSettings della configurazione di rete. Per ulteriori informazioni, vedere [Example: media bypass web site DNS records in complex multi-site environments.](deploy-media-bypass-in-cloud-connector.md#Example)
+L'abilitazione del bypass multimediale è un processo in due passaggi. Il cmdlet New-CsNetworkMedia non salva immediatamente la nuova configurazione. crea solo le impostazioni in memoria. L'oggetto creato da questo cmdlet deve essere salvato in una variabile e quindi assegnato alla proprietà MediaBypassSettings della configurazione di rete. Per ulteriori informazioni, vedere [Example: media bypass web site DNS records in complex multi-site environments](deploy-media-bypass-in-cloud-connector.md#Example).
   
 La replica tra i componenti locali e online può richiedere fino a 24 ore, pertanto Microsoft consiglia di eseguire i comandi necessari prima di abilitare gli utenti.
   
@@ -69,7 +69,7 @@ Per controllare la replica locale, connettersi ai Mediation Server cloud Connect
 Get-CsNetworkConfiguration -LocalStore
 ```
 
-Per controllare le impostazioni del client, disconnettersi dal client Skype for Business, accedere di nuovo e verificare che il client abbia ricevuto l'URL del servizio nel modo seguente:
+Per controllare le impostazioni del client, disconnettersi dal client Skype for Business, accedere di nuovo e verificare che il client abbia ricevuto l'URL del servizio come segue:
   
 1. Aprire %appdatalocal%\Microsoft\Office\16.0\Lync\Tracing\Lync-UccApi-0.UccApilog. 
     
@@ -95,7 +95,7 @@ $mediabypass = New-CsNetworkMediaBypassConfiguration  -Enabled $false
 Set-CsNetworkConfiguration -MediaBypassSettings $mediabypass
 ```
 
-Dopo aver apportato la modifica, la replica delle modifiche in tutti i connettori cloud potrebbe richiedere del tempo. Per controllare lo stato della replica, eseguire il cmdlet seguente in PowerShell nei Mediation Server cloud Connector: 
+Dopo aver apportato la modifica, potrebbe essere necessario del tempo per la replica delle modifiche in tutti i connettori cloud. Per controllare lo stato della replica, eseguire il cmdlet seguente in PowerShell sui Mediation Server cloud Connector: 
   
 ```powershell
 Get- CsNetworkConfiguration -LocalStore
@@ -103,7 +103,7 @@ Get- CsNetworkConfiguration -LocalStore
 
 Dopo la replica delle modifiche, il servizio Web nel Mediation Server inizierà a rifiutare le richieste client per il servizio di bypass multimediale.
   
-## <a name="disable-media-bypass-permanently"></a>Disabilitare in modo permanente il bypass multimediale
+## <a name="disable-media-bypass-permanently"></a>Disabilitare il bypass multimediale in modo permanente
 
 Per disabilitare definitivamente il bypass multimediale, un amministratore tenant deve eseguire i comandi seguenti: 
   
@@ -113,14 +113,14 @@ Set-CsTenantHybridConfiguration -HybridConfigServiceInternalUrl  $null
 Set-CsNetworkConfiguration -MediaBypassSettings $mediabypass 
 ```
 
-Un amministratore dovrà anche rimuovere gli indirizzi Web per il bypass multimediale dai server DNS interni. Dopo aver apportato la modifica, potrebbe essere necessario del tempo prima che le modifiche vengano replicate in tutte le appliance del connettore cloud. 
+Un amministratore dovrà anche rimuovere gli indirizzi Web per il bypass multimediale dai server DNS interni. Dopo aver apportato la modifica, potrebbe essere necessario del tempo per la replica delle modifiche in tutte le appliance del connettore cloud. 
   
-## <a name="example-media-bypass-web-site-dns-records-in-complex-multi-site-environments"></a>Esempio: record DNS del sito Web bypass multimediale in ambienti multisolutore complessi
+## <a name="example-media-bypass-web-site-dns-records-in-complex-multi-site-environments"></a>Esempio: record DNS del sito Web bypass multimediale in ambienti multis sito complessi
 <a name="Example"> </a>
 
-I client riceveranno l'indirizzo Web del servizio Web di bypass multimediale da un server DNS interno. Il nome del servizio Web sarà lo stesso per tutti i dispositivi Cloud Connector e i siti PSTN di Cloud Connector. In un ambiente multisito complesso, è consigliabile usare i criteri DNS di Windows 2016 per la gestione del traffico basato su Geo-Location, in modo che i client possano essere reindirizzati al servizio Web locale per la propria rete. 
+I client riceveranno l'indirizzo Web del servizio Web bypass multimediale da un server DNS interno. Il nome del servizio Web sarà lo stesso in tutti i dispositivi Cloud Connector e nei siti PSTN del connettore cloud. In un ambiente multisito complesso, è consigliabile usare i criteri DNS di Windows 2016 per la gestione del traffico basato su Geo-Location, in modo che i client possano essere reindirizzati al servizio Web locale per la propria rete. 
   
-Per ulteriori informazioni sui criteri DNS di Windows 2016, vedere Use [DNS Policy for Geo-Location Based Traffic Management with Primary Servers.](https://docs.microsoft.com/windows-server/networking/dns/deploy/primary-geo-location)
+Per ulteriori informazioni sui criteri DNS di Windows 2016, vedere [Use DNS Policy for Geo-Location Based Traffic Management with Primary Servers](/windows-server/networking/dns/deploy/primary-geo-location).
   
 Di seguito è riportato un esempio di configurazione per una società con diversi siti che usano i criteri DNS di Windows 2016 per la Geo-Location del traffico basato su windows.
   
@@ -144,23 +144,23 @@ Il sito di Seattle dispone di tre appliance Cloud Connector distribuite con i se
     
 - 10.10.1.10
     
-Utilizzando Geo-Location traffico basato su server DNS, i server DNS verrebbero configurati nel modo seguente:
+Utilizzando Geo-Location gestione del traffico in base al traffico, i server DNS verrebbero configurati come segue:
   
 1. Creare subnet client DNS per entrambe le subnet di Amsterdam e Seattle.
     
-2. Creare ambiti di zona DNS per adatum.biz sia per Amsterdam che per Seattle.
+2. Creare ambiti di zona DNS per adatum.biz per Amsterdam e Seattle.
     
 3. Creare record DNS in ogni ambito di zona DNS.
     
     Amsterdam
     
-   - Tipo A;
+   - Digitare A;
     
-   - Nome : hybridvoice nella adatum.biz DNS
+   - Name : hybridvoice nella adatum.biz DNS
     
    - Destinazione: 192.168.1.45
     
-     Creare record aggiuntivi per mediation server aggiuntivi
+     Creare record aggiuntivi per ulteriori mediation server
     
    - 192.168.1.46
     
@@ -176,18 +176,18 @@ Utilizzando Geo-Location traffico basato su server DNS, i server DNS verrebbero 
     
    - Destinazione: 10.10.1.8
     
-     Creare record aggiuntivi per mediation server aggiuntivi
+     Creare record aggiuntivi per ulteriori mediation server
     
    - 10.10.1.9
     
    - 10.10.1.10
     
-4. Creare i criteri DNS che connettono le subnet client agli ambiti di zona appropriati per garantire la risoluzione DNS desiderata.
+4. Creare il criterio DNS che connette le subnet client agli ambiti di zona appropriati per garantire la risoluzione DNS desiderata.
     
-A questo punto, i client che effettuano query DNS dalla subnet di Amsterdam per hybridvoice.adatum.biz restituiranno il valore 192.168.1.45, 192.168.1.46, 192.168.1.47 e 192.168.1.48, mentre i client che effettuano lo stesso modulo di query Seattle restituiranno 10.10.1.8, 10.10.1.9 e 10.10.1.10.
+A questo punto, i client che estituiscono query DNS dalla subnet di Amsterdam per hybridvoice.adatum.biz restituiranno il valore 192.168.1.45, 192.168.1.46, 192.168.1.47 e 192.168.1.48, mentre i client che estituiscono lo stesso modulo di query Seattle restituiranno 10.10.1.8, 10.10.1.9 e 10.10.1.10.
 
 > [!NOTE]
-> Se l'applicazione CCE non sembra ottenere le impostazioni aggiornate, verificare se l'applicazione è in grado di contattare il tenant tramite Remote PowerShell. È possibile utilizzare Remote PowerShell per controllare lo stato dell'applicazione con Get-CsHybridPSTNAppliance o utilizzare PowerShell nell'host CCE per controllare lo stato con Get-CcApplianceStatus.
+> Se l'appliance CCE non sembra ottenere le impostazioni aggiornate, verificare se l'appliance è in grado di contattare il tenant tramite PowerShell remoto. È possibile utilizzare Remote PowerShell per controllare lo stato dell'appliance con Get-CsHybridPSTNAppliance oppure usare PowerShell nell'host CCE per controllare lo stato con Get-CcApplianceStatus.
 
   
 ## <a name="see-also"></a>Vedere anche

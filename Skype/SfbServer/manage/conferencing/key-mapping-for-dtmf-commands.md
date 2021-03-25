@@ -12,22 +12,22 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: f91e80ee-a587-4a1b-ac8f-12fa102c098c
 description: 'Riepilogo: informazioni su come gestire il mapping dei tasti dei comandi DTMF (Dual Tone Multi-Frequency) in Skype for Business Server.'
-ms.openlocfilehash: b804c9a0923630f6de3d1b5af2acdda123cc6331
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6b409ccce10128fdd7776e3ea77d6ee17d4a49f4
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828096"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119445"
 ---
 # <a name="manage-key-mapping-for-dtmf-commands-in-skype-for-business-server"></a>Gestire il mapping dei tasti per i comandi DTMF in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire il mapping dei tasti dei comandi DTMF (Dual Tone Multi-Frequency) in Skype for Business Server.
   
-Gli utenti delle conferenze telefoniche con accesso esterno possono premere i tasti sulla tastiera del telefono per eseguire comandi DTMF (Dual Tone Multi-Frequency). I comandi DTMF consentono agli utenti che affollano una conferenza di controllare le impostazioni della conferenza (ad esempio, disattivare e riattivare l'audio o bloccare e sbloccare la conferenza) utilizzando il tastierino del telefono. 
+Gli utenti delle conferenze telefoniche con accesso esterno possono premere i tasti sulla tastiera del telefono per eseguire comandi DTMF (Dual-Tone Multi-Frequency). I comandi DTMF consentono agli utenti che affollano una conferenza di controllare le impostazioni della conferenza (ad esempio, la disattivazione e l'attivazione dell'audio o il blocco e lo sblocco della conferenza) utilizzando la tastiera del telefono. 
   
 Per gestire le chiavi utilizzate per i comandi DTMF, utilizzare Skype for Business Server Management Shell con i cmdlet **Get-CsDialinConferencingDtmfConfiguration,** **Set-CsDialinConferencingDtmfConfiguration** e **New-CsDialinConferencingDtmfConfiguration.**
   
-Quando si creano nuove impostazioni DTMF per i siti, le impostazioni dei siti hanno la precedenza sulle impostazioni globali. 
+Quando si creano nuove impostazioni DTMF per i siti, le impostazioni del sito hanno la precedenza sulle impostazioni globali. 
 
 ### <a name="manage-the-key-mapping-of-dtmf-commands"></a>Gestire il mapping dei tasti dei comandi DTMF
 
@@ -59,6 +59,4 @@ Nell'esempio seguente viene scambiato il tasto premuto per abilitare o disabilit
 Set-CsDialinConferencingDtmfConfiguration -EnableDisableAnnouncementsCommand 4 -AudienceMuteCommand 9
 ```
 
-Per ulteriori informazioni, vedere [Get-CsDialInConferencingDtmfConfiguration,](https://docs.microsoft.com/powershell/module/skype/get-csdialinconferencingdtmfconfiguration?view=skype-ps) [Set-CsDialInConferencingDtmfConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csdialinconferencingdtmfconfiguration?view=skype-ps)e [New-CsDialInConferencingDtmfConfiguration.](https://docs.microsoft.com/powershell/module/skype/new-csdialinconferencingdtmfconfiguration?view=skype-ps)
-  
-
+Per ulteriori informazioni, vedere [Get-CsDialInConferencingDtmfConfiguration,](/powershell/module/skype/get-csdialinconferencingdtmfconfiguration?view=skype-ps) [Set-CsDialInConferencingDtmfConfiguration](/powershell/module/skype/set-csdialinconferencingdtmfconfiguration?view=skype-ps)e [New-CsDialInConferencingDtmfConfiguration.](/powershell/module/skype/new-csdialinconferencingdtmfconfiguration?view=skype-ps)

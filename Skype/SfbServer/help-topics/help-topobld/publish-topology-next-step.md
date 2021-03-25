@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 29e4a215-80f9-4ac8-8069-b220f3ac251d
 description: Al termine della pubblicazione della topologia, viene visualizzata la pagina Pubblicazione guidata completata.
-ms.openlocfilehash: 1974ac4e9c2e6d6f617e85af7743a620f3cb6c07
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 318eec747fd812bc411a9d900e917bce0fc4a7d4
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823686"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119615"
 ---
 # <a name="publish-topology-next-step"></a>Passaggio successivo della pubblicazione della topologia
 
@@ -31,10 +31,8 @@ Mentre si completano i diversi passaggi del processo di pubblicazione della topo
 > [!NOTE]
 > I file di log non sono associati a tutti i passaggi del processo di pubblicazione della topologia. Se si seleziona un passaggio e il pulsante **Visualizza log** è disponibile, significa che per quel passaggio è stato creato un file di log. Se invece il pulsante **Visualizza log** non è disponibile, ovvero risulta grigio, per quel passaggio non è stato creato alcun file di log.
 
-Per visualizzare i passaggi successivi suggeriti per completare la topologia, fare clic sul collegamento **Fare clic qui per aprire l'elenco delle cose da fare**. Nel file di testo che viene aperto facendo clic sul collegamento sono indicati i server per cui eseguire l'installazione locale e gli eventuali passaggi aggiuntivi necessari per completare la distribuzione. Per ogni attività elencata, consultare la sezione appropriata nella documentazione relativa alla distribuzione. Per informazioni dettagliate, vedere [Deploying Lync Server 2013 Preview](https://technet.microsoft.com/library/b76795a4-4e71-4c70-a5c0-d1197fa8028c.aspx) e leggere la sezione specifica per ogni ruolo del server riportato nell'elenco delle cose da fare.
+Per visualizzare i passaggi successivi suggeriti per completare la topologia, fare clic sul collegamento **Fare clic qui per aprire l'elenco delle cose da fare**. Nel file di testo che viene aperto facendo clic sul collegamento sono indicati i server per cui eseguire l'installazione locale e gli eventuali passaggi aggiuntivi necessari per completare la distribuzione. Per ogni attività elencata, consultare la sezione appropriata nella documentazione relativa alla distribuzione. Per informazioni dettagliate, vedere [Deploying Lync Server 2013 Preview](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-lync-server) e leggere la sezione specifica per ogni ruolo del server riportato nell'elenco delle cose da fare.
 
 Fare clic su **Fine**.
 
-Per informazioni dettagliate, vedere [Publish the Topology](https://technet.microsoft.com/library/3b5a744b-b3a8-4538-a55e-e2e4f72dff47.aspx).
-
-
+Per informazioni dettagliate, vedere [Publish the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-topology).

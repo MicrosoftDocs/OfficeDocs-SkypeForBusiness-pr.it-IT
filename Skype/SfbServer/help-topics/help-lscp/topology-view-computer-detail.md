@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione dettagli computer in topologia
+title: Topologia Visualizza dettagli computer
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,24 +15,23 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 482d8d7b-d674-46b5-b8b7-19bc0f20e9b2
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: e8c8cc72427f4cef0e83d4deebf55c43e09156b9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c0c7c4cda6bb0b20d2dd0ab4b85537d14bf8b896
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818936"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119905"
 ---
 # <a name="topology-view-computer-detail"></a>Topologia: visualizzare dettagli computer
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Visualizzare un elenco di computer che eseguono Lync Server 2010](https://technet.microsoft.com/library/44eeec27-8b99-44f0-b0bd-622c12393d34.aspx)
+- [Visualizzare un elenco di computer che eseguono Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-view-a-list-of-computers-running-lync-server-2013)
 
-- [Visualizzazione dei dettagli relativi a un servizio](https://technet.microsoft.com/library/bc8e8202-cd68-47e4-95b2-bb36e51cc124.aspx)
+- [Visualizzare i dettagli di un servizio](/previous-versions/office/lync-server-2013/lync-server-2013-view-details-about-a-service)
 
-- [Avviare o arrestare i servizi di Lync Server 2010](https://technet.microsoft.com/library/1c70b4ec-9de5-4f7a-a3c9-c0eb76710505.aspx)
+- [Avviare o arrestare i servizi di Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-start-or-stop-lync-server-services)
 
-- [Impedisci nuove connessioni ai servizi](https://technet.microsoft.com/library/977dcc5c-2aac-48ef-86a1-a8d47b4d9e74.aspx)
+- [Impedisci nuove connessioni ai servizi](/previous-versions/office/lync-server-2013/lync-server-2013-prevent-sessions-for-services)
 
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
-
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)

@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'Scopri le cause più comuni per Skype di errori di accesso Business online e il lavoro e risolvere questi problemi. '
-ms.openlocfilehash: ae5c2e5eb85ea7afb3033e7e6b769a607ab86601
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: ec441528fb6805f4c2c1c47c50f2debd62675a8a
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164325"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51103842"
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi di accesso a Skype for Business online (amministratori)
 
@@ -61,7 +61,7 @@ La maggior parte dei problemi di accesso rientrano in un numero limitato di caus
 
 | **Causa possibile**                                                                                                                                                    | **Risoluzione**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |:----------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Durante l’accesso viene visualizzata una finestra di dialogo che contiene la frase seguente: ** Impossibile verificare l'attendibilità del server per l'indirizzo di accesso. Connettersi comunque?** <br/> | Verificare che il nome di dominio nella finestra di dialogo sia un server attendibile dell'organizzazione, ad esempio, **nomedominio.contoso.com**. Chiedere all'utente di selezionare la **Considera il server sempre attendibile**, quindi fare clic su **Connetti**. <br/> I clienti aziendali possono disattivare la visualizzazione di questo messaggio quando l'utente accede per la prima volta modificando il Registro di sistema di Windows nel computer di ogni utente. Per informazioni dettagliate, vedere [Modificare le chiavi TrustModelData del Registro di sistema](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry).<br/> |
+| Durante l’accesso viene visualizzata una finestra di dialogo che contiene la frase seguente: **Impossibile verificare l'attendibilità del server per l'indirizzo di accesso. Connettersi comunque?** <br/> | Verificare che il nome di dominio nella finestra di dialogo sia un server attendibile dell'organizzazione, ad esempio, **nomedominio.contoso.com**. Chiedere all'utente di selezionare la **Considera il server sempre attendibile**, quindi fare clic su **Connetti**. <br/> I clienti aziendali possono disattivare la visualizzazione di questo messaggio quando l'utente accede per la prima volta modificando il Registro di sistema di Windows nel computer di ogni utente. Per informazioni dettagliate, vedere [Modificare le chiavi TrustModelData del Registro di sistema](troubleshooting-sign-in-errors-for-admins.md#modify-trustmodeldata-registry).<br/> |
 | Indirizzo, nome utente o password di accesso digitati in modo non corretto  <br/>                                                                                                               | Confermare che nome utente e password di accesso dell'utente siano corretti. <br/>  Verificare che il nome d’accesso dell’utente sia stato formattato nel modo seguente: <strong>bobk@contoso.com</strong>. Questo può essere diverso dal formato utilizzato per effettuare l’accesso alla rete della propria organizzazione.  <br/>  Chiedere all'utente di provare a effettuare nuovamente l’accesso. <br/>                                                                                                                                                                                                                             |
 | Password dimenticata  <br/>                                                                                                                                             | Reimpostare la password dell'utente e comunicare la nuova password temporanea.  <br/>                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Non si possiede la licenza per usare Skype for Business online.  <br/>                                                                                                                  | Verificare che l'utente sia registrato come utente Skype for Business online. In caso contrario, registrare l'utente e chiedere di effettuare nuovamente l’accesso.  <br/>                                                                                                                                                                                                                                                                                                                                                                                           |
@@ -170,7 +170,7 @@ Infine, se l'utente non riesce ancora ad accedere dopo l'aggiornamento delle cre
 
 2. Se necessario, attivare l'opzione di visualizzazione della cartella **Visualizzare i file nascosti**.
 
-3. Digitare il percorso seguente nella barra degli indirizzi di Esplora File: **C:\\Documents and Settings\\NomeUtente\\Application Data\\Microsoft\\Crypto\\RSA**, dove***NomeUtente*** è il nome di accesso di Windows.
+3. Digitare il percorso seguente nella barra degli indirizzi di Esplora File: **C:\\Documents and Settings\\NomeUtente\\Application Data\\Microsoft\\Crypto\\RSA**, dove **_NomeUtente_** è il nome di accesso di Windows.
 
 4. Eliminare le eventuali cartelle con un nome che inizia con **S-1-5-21-** seguito da una stringa di numeri.
 
@@ -195,7 +195,7 @@ Per risolvere il problema, eseguire le operazioni seguenti:
 
 1. Aggiornare l'attributo **msRTCSIP-UserEnabled** per tutti gli utenti interessati, impostandolo su **TRUE**.
 
-2. Eseguire nuovamente lo Strumento di sincronizzazione della directory dei Microsoft Online Services. Per informazioni dettagliate, vedere [AIntegrate locale directory con Azure Active Directory](https://technet.microsoft.com/library/hh967642.aspx).
+2. Eseguire nuovamente lo Strumento di sincronizzazione della directory dei Microsoft Online Services. Per informazioni dettagliate, vedere [AIntegrate locale directory con Azure Active Directory](/azure/active-directory/hybrid/whatis-hybrid-identity).
 
 Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
 ## <a name="use-the-microsoft-support-troubleshooting-guide"></a>Usare la guida alla risoluzione dei problemi del supporto tecnico Microsoft
@@ -220,5 +220,3 @@ Per risolvere i problemi di accesso a Skype for Business online problemi, è ben
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
 
 [Consentire agli utenti di Skype for Business di aggiungere contatti Skype](let-skype-for-business-users-add-skype-contacts.md)
-
-

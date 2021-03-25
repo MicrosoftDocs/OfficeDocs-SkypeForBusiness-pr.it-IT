@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: Informazioni su quali paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: e3abae815eca6dad17fe51efaf7ec715421650ff
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: 6badaf3234b174f4261d93f82239045f0d49bcff
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164715"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51114222"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-skype-for-business-online"></a>Numeri di telefono per Audioconferenza su Skype for Business online
 
@@ -55,7 +55,7 @@ There are two types of audio conferencing phone numbers that can be assigned to 
   
  I **numeri di telefono dedicati** sono i numeri di telefono disponibili solo per gli utenti all'interno dell'organizzazione. Puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
- **I numeri di telefono** condivisi sono i numeri di telefono che possono essere condivisi con altri account Microsoft 365 o Office 365. Non puoi cambiare le lingue utilizzate quando qualcuno chiama a uno di questi numeri.
+ **I numeri di telefono** condivisi sono i numeri di telefono che possono essere condivisi con altri account di Microsoft 365 o Office 365. Non puoi modificare le lingue utilizzate quando un utente partecipa a una riunione tramite telefono chiamando uno di questi numeri.
   
 While the default audio conferencing number that is assigned to an organizer is only included in the meeting invite, a caller can use any of the phone numbers that are assigned to your conferencing bridge to join a meeting. The list of phone numbers that can be used to join a meeting is available using the **Find a local number** link that is included on every meeting invite.
   
@@ -77,9 +77,9 @@ Per visualizzare un elenco di Paesi/aree geografiche che hanno numeri di telefon
 
 - Per visualizzare l'elenco delle lingue supportate per l’audioconferenza, consulta [Lingue supportate per audioconferenza](/MicrosoftTeams/audio-conferencing-supported-languages).
     
-- Puoi usare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber](https://go.microsoft.com/fwlink/?LinkId=617691) per visualizzare i numeri di telefono dedicati per i servizi di audioconferenza per l'organizzazione.
+- Puoi usare il cmdlet [Get-CsOnlineDialInConferencingServiceNumber](/powershell/module/skype/Get-CsOnlineDialInConferencingServiceNumber) per visualizzare i numeri di telefono dedicati per i servizi di audioconferenza per l'organizzazione.
     
-- È possibile usare il cmdlet [Get- CsOnlineDialInConferencingLanguagesSupported](https://go.microsoft.com/fwlink/?LinkId=617684) per visualizzare le lingue disponibili per il numero di telefono con accesso esterno dedicato.
+- È possibile usare il cmdlet [Get- CsOnlineDialInConferencingLanguagesSupported](/powershell/module/skype/Get-CsOnlineDialInConferencingLanguagesSupported) per visualizzare le lingue disponibili per il numero di telefono con accesso esterno dedicato.
     
 - You can set up to four languages for each audio conferencing phone number - one primary and three secondary. And you can also set languages on a dedicated audio conferencing phone number.
     

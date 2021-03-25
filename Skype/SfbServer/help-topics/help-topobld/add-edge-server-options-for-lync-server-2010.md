@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0b059af5-e83f-4564-90b2-d7ebb9e551c2
-description: 'Si definisce un nuovo server perimetrale o un nuovo pool di server perimetrali e viene offerta la possibilità di definire le funzionalità per il nuovo server o pool. Sono disponibili le opzioni seguenti:'
-ms.openlocfilehash: b6f6e07c3555101103aeaad7f1c45f4449c25078
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Si definisce un nuovo server perimetrale o un nuovo pool di server perimetrali e viene offerta l'opportunità di definire le funzionalità per il nuovo server o pool. Sono disponibili le opzioni seguenti:"
+ms.openlocfilehash: dfc8238bbbe4899f9819118a11fc11ba47fe21f3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835516"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119805"
 ---
 # <a name="add-edge-server-options-for-lync-server-2010"></a>Aggiungere opzioni Edge Server per Lync Server 2010
 
-Si definisce un nuovo server perimetrale o un nuovo pool di server perimetrali e viene offerta la possibilità di definire le funzionalità per il nuovo server o pool. Sono disponibili le opzioni seguenti:
+Si definisce un nuovo server perimetrale o un nuovo pool di server perimetrali e viene offerta l'opportunità di definire le funzionalità per il nuovo server o pool. Sono disponibili le opzioni seguenti:
 
 - **Usa singola combinazione di FQDN e indirizzo IP**: selezionare la casella di controllo per utilizzare un singolo indirizzo IPv4 o IPv6 (se si sceglie di utilizzare sia IPv4 che IPv6, sarà necessario definire un indirizzo per ogni tipo di indirizzo IP) e un nome di dominio completo (FQDN) per le interfacce perimetrali esterne.
 
@@ -33,10 +33,10 @@ Si definisce un nuovo server perimetrale o un nuovo pool di server perimetrali e
 
 - **Abilita federazione per pool di server perimetrali (porta 5061)**: selezionare questa casella di controllo se si attuerà la federazione con altre federazioni SIP, con altri provider oppure con offerte ospitate che utilizzano il protocollo SIP (Session Initiation Protocol).
 
-- L'indirizzo IP esterno di questo pool di server perimetrali viene convertito da **NAT:** selezionare questa casella di controllo se si utilizzano indirizzi IP privati per le interfacce esterne perimetrali e si fornirà un dispositivo NAT (Network Address Translation) in cui inserire logicamente il server perimetrale o il pool di server perimetrali.
+- **L'indirizzo IP** esterno di questo pool di server perimetrali viene convertito da NAT: selezionare questa casella di controllo se si utilizzano indirizzi IP privati per le interfacce esterne perimetrali e si fornirà un dispositivo NAT (Network Address Translation) in cui posizionare logicamente il server perimetrale o il pool di server perimetrali.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificazione dell'accesso utente esterno](https://technet.microsoft.com/library/ea098933-eff5-461e-aba3-e7f128784dc2.aspx)
+[Pianificazione dell'accesso utente esterno](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-external-user-access)
 
-[Distribuzione dell'accesso degli utenti esterni](https://technet.microsoft.com/library/d40c9574-c16b-4fe6-b848-21ae0b7e4f0e.aspx)
+[Distribuzione dell'accesso degli utenti esterni](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-external-user-access)

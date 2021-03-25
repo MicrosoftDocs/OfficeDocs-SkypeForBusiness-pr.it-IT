@@ -12,16 +12,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8c685326-8356-4075-bf95-32324b16ef81
 description: 'Riepilogo: informazioni su come creare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 8e707e6da1a56fa1818d436714327936369b06fe
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 81fcaa15c7b12b499c833ac012ef6d999da683ad
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828236"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119525"
 ---
 # <a name="create-conferencing-policies-in-skype-for-business-server"></a>Creare criteri conferenza in Skype for Business Server
  
-**Riepilogo:** Informazioni su come creare criteri di conferenza in Skype for Business Server.
+**Riepilogo:** Scopri come creare criteri di conferenza in Skype for Business Server.
   
 È possibile creare criteri di conferenza utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
@@ -31,7 +31,7 @@ ms.locfileid: "49828236"
     
 2. Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Criteri conferenza.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     
 4. Fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
@@ -70,7 +70,7 @@ ms.locfileid: "49828236"
     
     - Se si consente agli utenti di accedere alle riunioni tramite telefono e si desidera consentire agli utenti non autenticati (anonimi) di accedere utilizzando chiamate in uscita, selezionare la casella di controllo **Consenti chiamate in uscita ai partecipanti anonimi**. Con le chiamate in uscita il server per conferenze telefona all'utente, il quale accederà alla riunione rispondendo al telefono. Per impostazione predefinita, gli utenti anonimi non possono accedere alle riunioni utilizzando chiamate in uscita.
     
-12. Se si è scelto di consentire l'uso di video in **Audio/Video,** selezionare **Consenti più flussi video.**
+12. Se si è scelto di consentire l'uso di video in **Audio/video,** selezionare **Consenti più flussi video.**
     
 13. In **Collaborazione dati** eseguire una delle operazioni seguenti:
     
@@ -116,16 +116,14 @@ ms.locfileid: "49828236"
     
 21. Fare clic su **Commit**.
     
-## <a name="create-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Creare criteri conferenza tramite Skype for Business Server Management Shell
+## <a name="create-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Creare criteri di conferenza tramite Skype for Business Server Management Shell
 
 Per creare criteri di conferenza, utilizzare il cmdlet **New-CsConferencingPolicy.**
   
-Nell'esempio seguente viene creato un nuovo criterio di conferenza con Identità SalesConferencingPolicy. Questo criterio utilizzerà tutti i valori predefiniti per un criterio di conferenza ad eccezione di uno: MaxMeetingSize. In questo esempio, la dimensione massima di una riunione verrà impostata su 50 anziché sul valore predefinito di 250:
+Nell'esempio seguente viene creato un nuovo criterio di conferenza con Identity SalesConferencingPolicy. Questo criterio utilizzerà tutti i valori predefiniti per un criterio di conferenza ad eccezione di uno: MaxMeetingSize. In questo esempio la dimensione massima di una riunione verrà impostata su 50 anziché sul valore predefinito di 250:
   
 ```PowerShell
 New-CsConferencingPolicy -Identity SalesConferencingPolicy -MaxMeetingSize 50
 ```
 
-Per ulteriori informazioni, inclusa una descrizione della sintassi completa e un elenco di parametri, vedere [New-CsConferencingPolicy.](https://docs.microsoft.com/powershell/module/skype/new-csconferencingpolicy?view=skype-ps)
-  
-
+Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un elenco di parametri, vedere [New-CsConferencingPolicy](/powershell/module/skype/new-csconferencingpolicy?view=skype-ps).

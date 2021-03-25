@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9fd2087a-3c3a-4863-aa7f-e532a18e77af
 description: 'Per specificare nuovi URL semplici, rimuovere quelli esistenti o cambiare gli URL semplici attivi, eseguire queste operazioni:'
-ms.openlocfilehash: 4a6f01dde6259171c1c31669f7f87adf5261acc9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 69f98cf3402de39d24b1805b41e904c527ee4527
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818256"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119605"
 ---
 # <a name="simple-url-settings-expander"></a>Espansione delle impostazioni dell'URL semplice
 
@@ -50,6 +50,4 @@ Al termine di tutte le modifiche nella pagina Modifica proprietà, fare clic su 
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate, vedere [Planning for Simple URLs](https://technet.microsoft.com/library/20e4f4b6-b7ff-4297-b00d-d1211ee800ac.aspx)
-
-
+Per informazioni dettagliate, vedere [Planning for Simple URLs](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-simple-urls)

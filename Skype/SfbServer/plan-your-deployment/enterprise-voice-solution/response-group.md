@@ -16,28 +16,28 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6cc333e7-4029-4372-86b2-016040c415fb
 description: Pianificazione dei Response Group in Skype for Business Server VoIP aziendale, che consente di configurare il routing delle chiamate a gruppi di utenti. Include i requisiti per i file audio.
-ms.openlocfilehash: 5abf043531079e8eef707b8cdfc4efe70f8be4bb
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: b27f3d1c40a384bd7465e7d2c8843a0523687d19
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813476"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51114602"
 ---
 # <a name="plan-for-the-response-group-application-in-skype-for-business-server"></a>Pianificare l'applicazione Response Group in Skype for Business Server
 
 Pianificazione dei Response Group in Skype for Business Server VoIP aziendale, che consente di configurare il routing delle chiamate a gruppi di utenti. Include i requisiti per i file audio.
 
-Se l'organizzazione dispone di gruppi di persone che rispondono e gestiscono determinati tipi di chiamate, ad esempio per il servizio clienti, un help desk interno o il supporto telefonico generale per un reparto, è possibile distribuire l'applicazione Response Group per gestire questi tipi di chiamate. L'applicazione Response Group instrada e accoda le chiamate in arrivo a persone designate, note come agenti. È possibile aumentare l'utilizzo dei servizi di supporto telefonico e ridurre l'overhead prodotto dall'esecuzione di questi servizi tramite Response Group.
+Se nell'organizzazione sono disponibili gruppi di persone che rispondono e gestiscono determinati tipi di chiamate, ad esempio per il servizio clienti, un help desk interno o un supporto telefonico generale per un reparto, è possibile distribuire l'applicazione Response Group per gestire questi tipi di chiamate. L'applicazione Response Group instrada e accoda le chiamate in arrivo a persone designate, note come agenti. È possibile aumentare l'utilizzo dei servizi di supporto telefonico e ridurre l'overhead prodotto dall'esecuzione di questi servizi tramite Response Group.
 
-Quando un chiamante chiama un Response Group, viene eseguito il routing della chiamata a un agente in base a un gruppo di risposta o alle risposte del chiamante alle domande di un sistema IVR (Interactive Voice Response). L'applicazione Response Group utilizza metodi di routing standard di Response Group per instradare la chiamata al successivo agente disponibile. I metodi di routing delle chiamate supportati includono il routing seriale, più lungo, inattivo, parallelo, round robin e operatore ,ovvero tutti gli agenti vengono chiamati contemporaneamente per ogni chiamata in arrivo, indipendentemente dalla loro presenza corrente.
+Quando un chiamante chiama un Response Group, viene eseguito il routing della chiamata a un agente in base a un gruppo di risposta o alle risposte del chiamante alle domande di un sistema IVR (Interactive Voice Response). L'applicazione Response Group utilizza metodi di routing standard di Response Group per instradare la chiamata al successivo agente disponibile. I metodi di routing delle chiamate supportati includono il routing seriale, inattivo più lungo, parallelo, round robin e operatore (ovvero, tutti gli agenti vengono chiamati contemporaneamente per ogni chiamata in arrivo, indipendentemente dalla presenza corrente).
 
-Se non è disponibile alcun agente, la chiamata viene mantenuta in una coda fino a quando non è disponibile un agente. Mentre la chiamata è nella coda, il chiamante ascolta un brano musicale fino a quando un agente disponibile non accetta la chiamata. Se la coda è piena o se si verifica il timeout della chiamata mentre è in coda, il chiamante potrebbe ascoltare un messaggio e quindi essere disconnesso o trasferito a una destinazione diversa, ad esempio un numero di telefono o una segreteria telefonica diversa. Quando un agente accetta la chiamata, il chiamante può o meno visualizzare l'identità dell'agente, a seconda del modo in cui l'amministratore ha configurato Response Group. Gli agenti possono essere agenti formali, ovvero devono accedere al gruppo prima di poter accettare le chiamate di cui viene eseguito il routing al gruppo, oppure agenti informali, ovvero non accedono al gruppo né si disconnettono per accettare le chiamate.
+Se non è disponibile alcun agente, la chiamata viene mantenuta in una coda fino a quando non è disponibile un agente. Mentre la chiamata è nella coda, il chiamante ascolta un brano musicale fino a quando un agente disponibile non accetta la chiamata. Se la coda è piena o se si verifica il timeout della chiamata durante la coda, il chiamante potrebbe ascoltare un messaggio e quindi essere disconnesso o trasferito a una destinazione diversa, ad esempio un numero di telefono o una segreteria telefonica diversa. Quando un agente accetta la chiamata, il chiamante può o meno visualizzare l'identità dell'agente, a seconda del modo in cui l'amministratore ha configurato Response Group. Gli agenti possono essere agenti formali, ovvero devono accedere al gruppo prima di poter accettare le chiamate di cui viene eseguito il routing al gruppo, oppure agenti informali, ovvero non accedono al gruppo né si disconnettono per accettare le chiamate.
 
 > [!NOTE]
 > Solo gli utenti che si trovano in locale possono essere agenti. Se un agente viene spostato da in locale a online, le chiamate del Response Group non gli verranno instradate.
 
 > [!NOTE]
-> L'applicazione Response Group utilizza un servizio interno, denominato Match Making, per accodare le chiamate e trovare gli agenti disponibili. Ogni computer che esegue l'applicazione Response Group esegue il servizio Di corrispondenza, ma è attivo un solo servizio di creazione corrispondenze per pool alla volta, mentre gli altri sono passivi. Se il servizio di ricerca corrispondenze diventa non disponibile durante un guasto non pianificato, viene attivato uno dei servizi di ricerca corrispondenze passivi. L'applicazione Response Group si assicura che il routing delle chiamate e l'accodamento continuino senza interruzioni. Quando si verifica una transizione a un servizio di ricerca corrispondenze, tutte le chiamate in trasferimento durante la transizione vengono perdute. Se, ad esempio, la transizione è dovuta all'insod0> del Front End Server, anche tutte le chiamate attualmente gestite dal servizio Di corrispondenza attivo in tale Front End Server andranno perse.
+> L'applicazione Response Group utilizza un servizio interno, denominato Match Making, per accodare le chiamate e trovare gli agenti disponibili. Ogni computer che esegue l'applicazione Response Group esegue il servizio Match Making, ma è attivo un solo servizio match making per pool, mentre gli altri sono passivi. Se il servizio di ricerca corrispondenze diventa non disponibile durante un guasto non pianificato, viene attivato uno dei servizi di ricerca corrispondenze passivi. L'applicazione Response Group fa del suo meglio per assicurarsi che il routing delle chiamate e l'accodamento continuino ininterrottamente. Quando si verifica una transizione a un servizio di ricerca corrispondenze, tutte le chiamate in trasferimento durante la transizione vengono perdute. Ad esempio, se la transizione è dovuta al calo del Front End Server, anche le chiamate attualmente gestite dal servizio match making attivo su tale Front End Server andranno perse.
 
 ## <a name="response-group-workflows"></a>Flussi di lavoro di Response Group
 
@@ -48,18 +48,18 @@ Un flusso di lavoro definisce il comportamento di una chiamata dal momento in cu
 
 ## <a name="management-of-response-groups"></a>Gestione dei Response Group
 
-In Skype for Business Server sono disponibili due ruoli di gestione per la gestione dei Response Group: Response Group Manager e Response Group Administrator. Gli amministratori di Response Group possono gestire qualsiasi aspetto di qualsiasi Response Group. I responsabili di Response Group possono gestire solo determinati aspetti e solo per i Response Group di cui sono proprietari. Il ruolo Manager consente di ridurre i costi di amministrazione, poiché è possibile delegare responsabilità limitate per response group specifici a qualsiasi utente abilitato per VoIP aziendale. Si noti che un utente può essere sia un responsabile di Response Group che un amministratore di Response Group.
+In Skype for Business Server sono disponibili due ruoli di gestione per la gestione dei Response Group: Response Group Manager e Response Group Administrator. Gli amministratori di Response Group possono gestire qualsiasi aspetto di qualsiasi Response Group. I responsabili di Response Group possono gestire solo determinati aspetti e solo per i Response Group di cui sono proprietari. Il ruolo Manager consente di ridurre i costi di amministrazione, poiché è possibile delegare responsabilità limitate per gruppi di risposta specifici a qualsiasi utente abilitato per VoIP aziendale. Si noti che un utente può essere sia un responsabile di Response Group che un amministratore di Response Group.
 
-Per supportare il ruolo Manager, l'applicazione Response Group utilizza un tipo **di flusso** di lavoro gestito o non gestito. Nella tabella riportata di seguito vengono descritti i Response Group gestiti e non gestiti.
+Per supportare il ruolo Manager, l'applicazione Response Group utilizza un **tipo di flusso di** lavoro gestito o non gestito. Nella tabella riportata di seguito vengono descritti i Response Group gestiti e non gestiti.
 
 **Response Group gestiti e non gestiti**
 
 |**Tipo di Response Group**|**Descrizione**|
 |:-----|:-----|
-|Non gestito  <br/> | Ai Response Group non gestiti non è assegnato alcun Gestore. Solo l'amministratore di Response Group può configurare questi Response Group. <br/>  Response group multipli non gestiti possono condividere una coda o gruppo di agenti. <br/>  Quando si esegue la migrazione dei Response Group da una versione precedente a Skype for Business Server, il tipo è impostato su Non gestito. <br/> |
+|Non gestito  <br/> | Ai Response Group non gestiti non è assegnato alcun Gestore. Solo l'amministratore di Response Group può configurare questi Response Group. <br/>  Response group multipli non gestiti possono condividere una coda o gruppo di agenti. <br/>  Quando si esegue la migrazione di Response Group da una versione precedente a Skype for Business Server, il tipo è impostato su Non gestito. <br/> |
 |Gestione  <br/> | Gli amministratori di Response Group possono configurare qualsiasi aspetto dei Response Group gestiti. <br/>  I responsabili di Response Group non possono visualizzare o modificare i Response Group non assegnati in modo esplicito. <br/>  I responsabili di Response Group possono configurare solo alcune impostazioni per i Response Group assegnati in modo esplicito. <br/>  I Response group gestiti non possono condividere code o gruppi di agenti con altri Response group gestiti o non gestiti. <br/> |
 
-Nella tabella seguente vengono descritte le azioni che i responsabili di Response Group possono eseguire per i Response Group a loro assegnati.
+Nella tabella seguente vengono descritte le azioni che i responsabili di Response Group possono eseguire e non possono eseguire per i Response Group a loro assegnati.
 
 **Capacità del manager del Response group**
 
@@ -78,7 +78,7 @@ I responsabili di Response Group possono utilizzare gli strumenti seguenti per g
 
 - Skype for Business Server Management Shell
 
-Response Group si adatta bene agli ambienti di reparto o di gruppo di lavoro (per informazioni dettagliate, vedere [Capacity Planning for Response Group)](https://technet.microsoft.com/library/a2459a69-1f45-4f2f-bca5-d4f442708e44.aspx)e può essere distribuito in installazioni telefoniche completamente nuove. Supporta le chiamate in arrivo dalla distribuzione VoIP aziendale locale e dalla rete del gestore telefonico locale. Gli agenti possono utilizzare Skype for Business, Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Phone Edition per effettuare le chiamate instradati.
+Response Group si adatta bene agli ambienti di reparto o di gruppo di lavoro (per informazioni dettagliate, vedere [Capacity Planning for Response Group)](/previous-versions/office/lync-server-2013/lync-server-2013-capacity-planning-for-response-group)e può essere distribuito in installazioni di telefonia completamente nuove. Supporta le chiamate in arrivo dalla distribuzione VoIP aziendale e dalla rete del gestore locale. Gli agenti possono utilizzare Skype for Business, Lync 2013, Lync 2010, Lync 2010 Attendant o Lync Phone Edition per effettuare le chiamate instradati a loro.
 
 ## <a name="deployment-and-requirements"></a>Distribuzione e requisiti
 
@@ -86,31 +86,31 @@ L'applicazione Response Group viene abilitata automaticamente quando si distribu
 
 ### <a name="hardware-and-software-requirements"></a>Requisiti hardware e software
 
-L'applicazione Response Group ha gli stessi requisiti hardware, i requisiti del sistema operativo e i prerequisiti software dei Front End Server.
+L'applicazione Response Group ha gli stessi requisiti hardware, requisiti del sistema operativo e prerequisiti software dei Front End Server.
 
-Se si utilizzano file Windows Media Audio (wma) per la musica e gli annunci di Response Group, in tutti i Front End Server o nei server Standard Edition che eseguono l'applicazione Response Group deve essere installato Runtime formato Windows Media per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Runtime formato Windows Media viene installato come parte di Esperienza desktop di Windows.
+Se si utilizzano file Windows Media Audio (wma) per la musica e gli annunci di Response Group, in tutti i Front End Server o nei server Standard Edition che eseguono l'applicazione Response Group deve essere installato Runtime formato Windows Media per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Runtime formato Windows Media viene installato come parte di Windows Desktop Experience.
 
-Response Group utilizza **i Language Pack** per supportare la sintesi vocale e il riconoscimento vocale. Queste tecnologie vocali vengono usate quando si configurano messaggi, ad esempio messaggi di benvenuto o di altro tipo, nonché domande e risposte IVR (Interactive Voice Response). Per impostazione predefinita, i 26 Language Pack supportati vengono installati quando si distribuisce Skype for Business Server.
+Response Group usa **Language Pack** per supportare la sintesi vocale e il riconoscimento vocale. Queste tecnologie vocali vengono usate quando si configurano messaggi, ad esempio messaggi di benvenuto o di altro tipo, nonché domande e risposte IVR (Interactive Voice Response). Per impostazione predefinita, i 26 Language Pack supportati vengono installati quando si distribuisce Skype for Business Server.
 
 ### <a name="port-requirements"></a>Requisiti delle porte
 
 L'applicazione Response Group utilizza le porte seguenti:
 
-- **Porta 5071**   per le richieste di attesa SIP
+- **Porta 5071 per**   le richieste di attesa SIP
 
 - **Porta 8404 per**   le comunicazioni tra server
 
     > [!NOTE]
-    > Questa porta viene utilizzata per il servizio Di corrispondenza ed è necessaria quando l'applicazione Response Group viene distribuita in un pool con più Front End Server.
+    > Questa porta viene utilizzata per il servizio Match Making ed è necessaria quando l'applicazione Response Group viene distribuita in un pool con più Front End Server.
 
    > [!NOTE]
    > Tali porte vengono utilizzate per impostazione predefinita e possono essere cambiate mediante il cmdlet **Set-CsApplicationServer**. Per informazioni dettagliate su questo cmdlet, vedere la documentazione di Skype for Business Server Management Shell.
 
 ### <a name="audio-file-requirements"></a>Requisiti dei file audio
 
-L'applicazione Response Group supporta il formato di file wave (wav) e il formato di file Windows Media Audio (wma) per i messaggi di Response Group, la musica di attesa o le domande IVR (Interactive Voice Response).
+L'applicazione Response Group supporta il formato di file wave (wav) e il formato di file windows media audio (wma) per i messaggi di Response Group, la musica di attesa o le domande IVR (Interactive Voice Response).
 
-Il formato di file Windows Media Audio richiede che Runtime formato Windows Media sia installato nei Front End Server che eseguono Windows Server 2008 R2 e Windows Server 2008. Per ulteriori dettagli, vedere i "Requisiti software" presi già in esame in questa sezione.
+Il formato di file audio di Windows Media richiede che Runtime formato Windows Media sia installato nei Front End Server che eseguono Windows Server 2008 R2 e Windows Server 2008. Per ulteriori dettagli, vedere i "Requisiti software" presi già in esame in questa sezione.
 
 #### <a name="supported-wave-file-formats"></a>Formati di file wave supportati
 
@@ -134,7 +134,7 @@ Per convertire un file nel formato Windows Media Audio, è possibile utilizzare 
 
 ### <a name="response-group-configuration-tool-requirements"></a>Requisiti dello Strumento di configurazione Response Group
 
-Lo Strumento di configurazione di Response Group supporta le combinazioni di sistemi operativi e Web browser descritti nella tabella seguente.
+Lo strumento di configurazione di Response Group supporta le combinazioni di sistemi operativi e Web browser descritte nella tabella seguente.
 
 > [!NOTE]
 > Sono supportate sia le versioni a 32 bit che a 64 bit dei sistemi operativi. Sono supportate solo le versioni a 32 bit di Internet Explorer.
@@ -191,9 +191,9 @@ Il client specifico che è possibile utilizzare dipende dal tipo di utente di Re
 
 - **Chiamanti**: possono chiamare un Response Group utilizzando uno qualsiasi dei client elencati in precedenza e utilizzando un telefono standard nella rete PSTN (Public Switched Telephone Network).
 
-- **Gli agenti informali** ,ovvero gli agenti che non eseguono l'accesso e la disconnessione dai propri gruppi per accettare chiamate, possono accettare chiamate utilizzando Attendant, Lync o Lync Phone Edition. Gli agenti informali vengono automaticamente connessi ai propri gruppi quando a questo tipo di accesso a Skype for Business Server vengono utilizzati uno di questi client.
+- **Gli agenti informali** ,ovvero gli agenti che non eseguono l'accesso e la disconnessione dai propri gruppi per accettare chiamate, possono accettare chiamate utilizzando Attendant, Lync o Lync Phone Edition. Gli agenti informali vengono automaticamente connessi ai propri gruppi quando a loro volta a Skype for Business Server utilizzando uno di questi client.
 
-- Gli agenti formali **(agenti** che devono accedere e disconnettersi dai propri gruppi per accettare le chiamate) possono accettare le chiamate utilizzando Skype for Business e accedendo alla console agente dalla voce di menu oppure utilizzando Operatore e accedendo alla console agente direttamente da Internet Explorer.
+- Gli agenti formali **(gli** agenti che devono accedere e uscire dai propri gruppi per accettare le chiamate) possono accettare le chiamate utilizzando Skype for Business e accedendo alla console degli agenti dalla voce di menu oppure utilizzando Operatore e accedendo alla console dell'agente direttamente da Internet Explorer.
 
 ## <a name="capacity-planning"></a>Pianificazione della capacità
 
@@ -216,5 +216,3 @@ Nella tabella seguente viene descritto il modello utente di Response Group che �
 |Agenti attivi (formali e informali)  <br/> |2400  <br/> |2400  <br/> |
 |Numero di gruppi di risposta  <br/> |800  <br/> |800  <br/> |
 |Numero di gruppi IVR (utilizzo del riconoscimento vocale)  <br/> |400  <br/> |400  <br/> |
-
-

@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b40ba905-e74a-4456-ac94-65471bc2d66d
 description: 'Riepilogo: informazioni su come modificare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: eafeb56dd9b0c36afffab07830a9efb71bde18fe
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6bbba82c9785e074da492eb66cbdd943dc0cea35
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828006"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119425"
 ---
 # <a name="modify-conferencing-policies-in-skype-for-business-server"></a>Modificare i criteri di conferenza in Skype for Business Server
  
@@ -25,13 +25,13 @@ ms.locfileid: "49828006"
   
 È possibile modificare i criteri di conferenza utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
   
-## <a name="modify-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Modificare i criteri di conferenza utilizzando il Pannello di controllo di Skype for Business Server
+## <a name="modify-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Modificare i criteri di conferenza tramite il Pannello di controllo di Skype for Business Server
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
 2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Criteri conferenza.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     
 4. Nell'elenco dei criteri per conferenza fare clic sui criteri che si desidera modificare, fare clic su **Modifica** e quindi su **Mostra dettagli**.
     
@@ -43,12 +43,10 @@ ms.locfileid: "49828006"
 
 Per modificare i criteri di conferenza, utilizzare il cmdlet **Set-CsConferencingPolicy.**
   
-Nell'esempio seguente viene modificato un valore di proprietà del criterio di conferenza SalesConferencingPolicy. Il comando imposta il valore della proprietà AllowConferenceRecording su False:
+Nell'esempio seguente viene modificato il valore di una proprietà del criterio di conferenza SalesConferencingPolicy. Il comando imposta il valore della proprietà AllowConferenceRecording su False:
   
 ```PowerShell
 Set-CsConferencingPolicy -Identity SalesConferencingPolicy -AllowConferenceRecording $False
 ```
 
-Per ulteriori informazioni, inclusa la sintassi completa e un elenco di parametri, [vedere Set-CsConferencingPolicy.](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps)
-  
-
+Per ulteriori informazioni, inclusa la sintassi completa e un elenco di parametri, [vedere Set-CsConferencingPolicy](/powershell/module/skype/set-csconferencingpolicy?view=skype-ps).

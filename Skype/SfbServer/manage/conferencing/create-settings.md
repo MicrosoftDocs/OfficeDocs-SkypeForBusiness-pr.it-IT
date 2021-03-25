@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6d8f9ff8-2a04-4175-9bf0-1ec5d78fd015
 description: 'Riepilogo: informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: edc498ed3847618b17970fb2270c21fd3f4ec025
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 862ffc56fd14c446a747a490daa0655e410e01d9
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828206"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119515"
 ---
 # <a name="create-meeting-configuration-settings-in-skype-for-business-server"></a>Creare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
@@ -31,7 +31,7 @@ ms.locfileid: "49828206"
     
 2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Configurazione riunione.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Configurazione riunione.**
     
 4. Nella pagina **Configurazione riunione** fare clic su **Nuovo** e quindi eseguire una delle operazioni seguenti:
     
@@ -53,7 +53,7 @@ ms.locfileid: "49828206"
     
 8. Per impedire che gli utenti anonimi (non autenticati) vengano ammessi automaticamente, deselezionare la casella di controllo **Consenti utenti anonimi per impostazione predefinita**. Per impostazione predefinita, gli utenti anonimi vengono ammessi automaticamente alle riunioni.
     
-9. Per personalizzare l'invito alla riunione che viene inviato ai partecipanti, eseguire le operazioni seguenti. Si noti che la dimensione massima degli URL e del testo del piè di pagina personalizzato è di 1 KB. Se non si specifica un valore per le personalizzazioni, queste non verranno incluse nella riunione, ad eccezione di **URL Guida**. Se non si include un URL della Guida personalizzato, l'URL della Guida predefinito per Skype for Business verrà visualizzato nell'invito. 
+9. Per personalizzare l'invito alla riunione che viene inviato ai partecipanti, eseguire le operazioni seguenti. Si noti che la dimensione massima degli URL e del testo del piè di pagina personalizzato è di 1 KB. Se non si specifica un valore per le personalizzazioni, queste non verranno incluse nella riunione, ad eccezione di **URL Guida**. Se non si include un URL della Guida personalizzato, nell'invito verrà visualizzato l'URL della Guida predefinito per Skype for Business. 
     
    - Per personalizzare il logo che viene visualizzato nell'invito alla riunione, immettere il percorso del logo in **URL logo**. Il logo deve essere un'immagine GIF o JPG con una dimensione di 188 per 30 pixel. 
     
@@ -83,12 +83,10 @@ Per creare impostazioni basate su valori di proprietà diversi, è sufficiente i
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone"
 ```
 
-È possibile impostare più valori di proprietà includendo più parametri. Ad esempio, il comando seguente consente di ammettere tutti gli utenti a una riunione come relatori e di forzare anche gli utenti PSTN ad attendere nella sala di attesa fino a quando non vengono ammessi formalmente alla riunione:
+È possibile impostare più valori di proprietà includendo più parametri. Ad esempio, il comando seguente consente di ammettere tutti gli utenti a una riunione come relatori e di forzare anche gli utenti PSTN ad attendere nella sala di attesa fino a quando non vengono formalmente ammessi alla riunione:
   
 ```PowerShell
 New-CsMeetingConfiguration -Identity "site:Redmond" -DesignateAsPresenter "Everyone" -PSTNUCallersBypassLobby $True
 ```
 
-Per ulteriori informazioni, incluso un elenco completo dei parametri, [vedere New-CsMeetingConfiguration.](https://docs.microsoft.com/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps)
-  
-
+Per ulteriori informazioni, incluso un elenco completo di parametri, vedere [New-CsMeetingConfiguration.](/powershell/module/skype/new-csmeetingconfiguration?view=skype-ps)

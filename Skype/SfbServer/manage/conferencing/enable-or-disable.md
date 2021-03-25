@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c1f7cf91-8434-42ec-b09d-7d9d01e0b357
 description: 'Riepilogo: informazioni su come usare il Pannello di controllo o Management Shell per abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 99691540306ba0cccf9c63af2e2188e839367bc6
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ade7753f480856d68535daadda40eac6296a5d6e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828126"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119465"
 ---
 # <a name="enable-or-disable-dial-in-conferencing-in-skype-for-business-server"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
@@ -31,7 +31,7 @@ ms.locfileid: "49828126"
     
 2.  Aprire il Pannello di controllo di Skype for Business Server.
     
-3. Sulla barra di spostamento sinistra fare clic su Servizio **di** conferenza e quindi su **Criteri conferenza.**
+3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     
 4. Nell'elenco dei criteri conferenza selezionare il criterio per il quale abilitare il servizio di conferenza con accesso esterno e quindi fare clic su **Modifica** e su **Mostra dettagli**. 
     
@@ -41,12 +41,10 @@ ms.locfileid: "49828126"
     
 ## <a name="enable-or-disable-dial-in-conferencing-by-using-skype-for-business-server-management-shell"></a>Abilitare o disabilitare le conferenze telefoniche con accesso esterno tramite Skype for Business Server Management Shell
 
-Per abilitare o disabilitare le conferenze telefoniche con accesso esterno, utilizzare il cmdlet **Set-CsConferencingPolicy** con il parametro EnableDialInConferencing nel modo seguente:
+Per abilitare o disabilitare le conferenze telefoniche con accesso esterno, utilizzare il cmdlet **Set-CsConferencingPolicy** con il parametro EnableDialInConferencing come indicato di seguito:
   
 ```PowerShell
 Set-CsConferencingPolicy  [-EnableDialInConferencing <$true | $false>] 
 ```
 
-Per ulteriori informazioni, vedere [Set-CsConferencingPolicy.](https://docs.microsoft.com/powershell/module/skype/set-csconferencingpolicy?view=skype-ps)
-  
-
+Per ulteriori informazioni, vedere [Set-CsConferencingPolicy.](/powershell/module/skype/set-csconferencingpolicy?view=skype-ps)

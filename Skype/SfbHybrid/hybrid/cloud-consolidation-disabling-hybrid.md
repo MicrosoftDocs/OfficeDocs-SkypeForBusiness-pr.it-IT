@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Questo articolo include la procedura dettagliata per disabilitare l'ambiente ibrido come parte del consolidamento del cloud per Teams e Skype for Business.
-ms.openlocfilehash: 90ec73246007542ad0215007b0da91f4fe9405e8
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 36ec3cba2d821cc8554e0fba95108756c83b7b3d
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50874696"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120355"
 ---
 # <a name="disable-hybrid-to-complete-migration-to-the-cloud-overview"></a>Disabilitare la migrazione ibrida per completare la migrazione nel cloud: panoramica
 
@@ -99,7 +99,7 @@ Gli amministratori possono gestire gli utenti che in precedenza erano stati spos
 
   ![Strumento Utenti e computer di Active Directory](../media/disable-hybrid-1.png)
   
--  Se l'utente in origine non aveva un valore per l'ambiente locale prima dello spostamento, è possibile modificare il numero di telefono utilizzando il parametro - nel `msRTCSIP-Line` `onpremLineUri` cmdlet [Set-CsUser](https://docs.microsoft.com/powershell/module/skype/set-csuser?view=skype-ps) nel modulo PowerShell di Skype for Business Online.
+-  Se l'utente in origine non aveva un valore per l'ambiente locale prima dello spostamento, è possibile modificare il numero di telefono utilizzando il parametro - nel `msRTCSIP-Line` `onpremLineUri` cmdlet [Set-CsUser](/powershell/module/skype/set-csuser?view=skype-ps) nel modulo PowerShell di Skype for Business Online.
 
 Questi passaggi non sono necessari per i nuovi utenti creati dopo la disabilitazione ibrida e possono essere gestiti direttamente nel cloud. Se si ha familiarità con l'uso della combinazione di questi metodi e con l'abbandono degli attributi msRTCSIP in locale in Active Directory, è sufficiente ri-immagine dei server Skype for Business locali. Tuttavia, se preferisci cancellare tutti gli attributi msRTCSIP ed eseguire una disinstallazione tradizionale di Skype for Business Server, usa il metodo 2.
 

@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 6ab53530-143d-4f1e-90cd-a92685f98a20
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella pagina ClientCriteri dispositivi mobili vengono visualizzati i criteri dispositivi mobili disponibili nella distribuzione.
-ms.openlocfilehash: 758b5a7471a934e65156f5f82810a6e1b940d1ac
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 641280af27b793eccff2f1bfab327708b93b0a46
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830186"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120245"
 ---
 # <a name="clients-mobility-policy"></a>Client: criteri dispositivi mobili
 
@@ -50,10 +50,10 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
 - **Aggiorna** Aggiorna l'elenco dei criteri visualizzati. Quando si fa clic su **Aggiorna** la stringa di filtro della ricerca viene cancellata e vengono visualizzati tutti i criteri esistenti.
 
-Per informazioni dettagliate sulla configurazione di criteri dispositivi mobili, vedere [Configuring Mobility Policy](https://technet.microsoft.com/library/595536e0-9bb3-49a3-8d13-1a77351ebc62.aspx).
+Per informazioni dettagliate sulla configurazione di criteri dispositivi mobili, vedere [Configuring Mobility Policy](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-mobility-policy).
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificazione della versione per dispositivi mobili](https://technet.microsoft.com/library/12000359-09b5-48f0-986d-fab3a1487f9c.aspx)
+[Pianificazione della versione per dispositivi mobili](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-mobility)
 
-[Distribuzione per dispositivi mobili](https://technet.microsoft.com/library/f41e6b25-d2cd-43fd-a17b-22cfda8bcd4f.aspx)
+[Distribuzione per dispositivi mobili](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-mobility)

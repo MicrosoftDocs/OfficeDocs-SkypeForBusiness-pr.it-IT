@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 50feb75f-92a1-4916-b92e-c039e1290c52
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell'account SAM (Security Accounts Manager), all'indirizzo SIP o all'URI (Uniform Resource Identifier) della linea. È inoltre possibile cercare utenti utilizzando il Pannello di controllo di Lync Server o lo snap-in Utenti e computer di Active Directory.
-ms.openlocfilehash: f74c1dfe7f1b8184c59261ff03a01f2f5b39db18
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ff98ed04ce4d411c118e9b0b497a2118ba38e17e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49820246"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120095"
 ---
 # <a name="control-panel---updated-user-search"></a>Pannello di controllo (aggiornato): ricerca utenti
 
@@ -28,23 +28,23 @@ ms.locfileid: "49820246"
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-Nella pagina Pannello di  controllo ricerca utente è possibile eseguire le attività seguenti:
+Nella pagina Pannello di controllo ricerca utente è possibile **eseguire** le attività seguenti:
 
-- [Cercare utenti](https://technet.microsoft.com/library/3b9f6f55-d7a9-46ae-8e10-f221ba0d3bb5.aspx)
+- [Cercare utenti](/previous-versions/office/lync-server-2013/lync-server-2013-search-for-lync-server-users)
 
-- [Abilitare o disabilitare gli utenti](https://technet.microsoft.com/library/12497d00-f665-4a97-be68-854c5a8be4fc.aspx)
+- [Abilitare o disabilitare gli utenti](/previous-versions/office/lync-server-2013/lync-server-2013-disable-or-re-enable-user-account-for-lync-server)
 
 - [Spostare un utente](ms.lync.lscp.UserMove.md)
 
 - [Spostare tutti gli utenti](ms.lync.lscp.UserMoveAll.md)
 
-- [Assegnare criteri agli utenti](https://technet.microsoft.com/library/a4ed0120-d9e5-4eb2-acfd-8de2cb503652.aspx)
+- [Assegnare criteri agli utenti](/previous-versions/office/lync-server-2013/lync-server-2013-assigning-per-user-policies)
 
 - [Abilitare gli utenti per VoIP aziendale in Skype for Business Server](../../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)
 
-- [Configurare la federazione, l'accesso degli utenti remoti e la connettività per la messaggistica istantanea pubblica per gli utenti](https://technet.microsoft.com/library/736fcaad-9f95-4896-b767-e199d86a00a4.aspx)
+- [Configurare la federazione, l'accesso utente remoto e la connettività di messaggistica istantanea pubblica per gli utenti](/previous-versions/office/lync-server-2013/lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user)
 
-- [Configurare la telefonia per gli utenti](https://technet.microsoft.com/library/4546432e-c839-4517-a2c5-bc0d4d8c6a03.aspx)
+- [Configurare telefonia per gli utenti](/previous-versions/office/lync-server-2013/lync-server-2013-configure-telephony-for-a-user)
 
 
 
@@ -58,7 +58,7 @@ Nei seguenti elenchi vengono descritti i menu, i comandi, i campi e le propriet�
 
 - **Ricerca LDAP** Cercare utenti digitando un'espressione LDAP.
 
-- **Casella Cerca utenti** Digitare i dati utente o l'espressione LDAP che si desidera ricercare.
+- **Casella Cerca utenti** Digitare i dati utente o l'espressione LDAP per cui si desidera eseguire il seach.
 
 - **Trova** Fare clic per visualizzare gli utenti che corrispondono ai valori di ricerca immessi nella **casella Cerca utenti** e.
 
@@ -66,9 +66,9 @@ Nei seguenti elenchi vengono descritti i menu, i comandi, i campi e le propriet�
 
 - **Salva query** Fare clic per salvare una query di ricerca.
 
-- **+ Aggiungi filtro** Fare clic per aggiungere ulteriori criteri di ricerca.
+- **+ Aggiungi filtro** Fare clic per aggiungere altri criteri di ricerca.
 
-- **Campi del filtro di ricerca** Selezionare il campo in base al quale si desidera filtrare i risultati della ricerca, selezionare un operatore per la query e quindi digitare la stringa in base alla quale si desidera eseguire la ricerca.
+- **Campi filtro di ricerca** Selezionare il campo in cui si desidera filtrare i risultati della ricerca, selezionare un operatore per la query e quindi digitare la stringa in base alla quale si desidera eseguire la ricerca.
 
 - **Numero massimo di utenti da visualizzare** Digitare il numero di risultati della ricerca che si desidera visualizzare oppure utilizzare le frecce su e giù per specificare il numero.
 
@@ -76,25 +76,25 @@ Aggiungere ulteriore testo descrittivo in base alle necessità.
 
 ### <a name="search-results-menus"></a>Menu dei risultati della ricerca
 
-- **Abilitare gli utenti** Fare clic per aprire [la finestra di dialogo Utenti:](ms.lync.lscp.UserNew.md) Nuovo utente di Lync Server, in cui è possibile aggiungere un nuovo utente a Skype for Business Server.
+- **Abilitare gli utenti** Fare clic per aprire [la finestra di dialogo Utenti: Nuovo](ms.lync.lscp.UserNew.md) utente di Lync Server, in cui è possibile aggiungere un nuovo utente a Skype for Business Server.
 
     Per aggiungere un nuovo contatto, fare clic sulla freccia verso il basso e selezionare **Abilita contatti** per aprire la finestra di dialogo [Users: New Contact Objects](ms.lync.lscp.UserNewContact.md).
 
-- **Modifica** Fare **clic** su  Modifica e quindi su Mostra dettagli  per visualizzare i dettagli dell'utente selezionato oppure fare clic su Seleziona tutti i risultati della ricerca per selezionare tutti gli utenti visualizzati nella tabella dei risultati.
+- **Modifica** Fare **clic su** Modifica e quindi su Mostra dettagli  per visualizzare i dettagli dell'utente selezionato oppure fare clic su Seleziona tutti i risultati della ricerca per selezionare tutti gli utenti visualizzati nella tabella dei risultati. 
 
-- **Azione** Fare **clic** su Azione e quindi selezionare l'azione che si desidera eseguire per gli utenti selezionati nei risultati della ricerca. Sono disponibili le azioni seguenti:
+- **Azione** Fare **clic su** Azione e quindi selezionare l'azione che si desidera eseguire per gli utenti selezionati nei risultati della ricerca. Sono disponibili le azioni seguenti:
 
-  - **Ri enable for Lync Server** Abilita l'account utente selezionato dopo che è stato temporaneamente disabilitato.
+  - **Ri-abilitazione per Lync Server** Abilita l'account utente selezionato dopo che è stato temporaneamente disabilitato.
 
   - **Disabilitazione temporanea per Lync Server** Disabilita l'account utente in Skype for Business Server fino a quando non viene riattivato, senza rimuovere l'account utente.
 
-  - **Assegnare criteri** Apre la [finestra di dialogo Utenti: Assegna](ms.lync.lscp.UserAssignPolicy.md) criteri, in cui è possibile configurare i criteri assegnati all'utente.
+  - **Assegnare criteri** Apre la [finestra di dialogo Utenti:](ms.lync.lscp.UserAssignPolicy.md) Assegna criteri, in cui è possibile configurare i criteri assegnati all'utente.
 
-  - **Visualizzare lo stato del PIN** Apre la [finestra di dialogo Utenti: Visualizza stato PIN,](ms.lync.lscp.UserViewPin.md) in cui vengono visualizzati i dati del PIN per l'utente selezionato.
+  - **Visualizzare lo stato del PIN** Apre la [finestra di dialogo Utenti: Visualizza stato PIN,](ms.lync.lscp.UserViewPin.md) che visualizza i dati del PIN per l'utente selezionato.
 
-  - **Impostare il PIN** Apre la finestra di dialogo Imposta [PIN,](ms.lync.lscp.UserSetPin.md) in cui puoi impostare il PIN per l'utente selezionato.
+  - **Imposta PIN** Apre la finestra di dialogo Imposta [PIN,](ms.lync.lscp.UserSetPin.md) in cui è possibile impostare il PIN per l'utente selezionato.
 
-  - **Pin di blocco** Blocca il PIN per l'utente.
+  - **Blocca PIN** Blocca il PIN per l'utente.
 
   - **Sblocca PIN** Rimuove il blocco sul PIN dell'utente.
 
@@ -102,8 +102,6 @@ Aggiungere ulteriore testo descrittivo in base alle necessità.
 
   - **Rimuovere il certificato utente** Rimuove tutti i certificati concessi all'utente.
 
-  - **Spostare gli utenti selezionati nel pool** Apre la [finestra di dialogo Sposta](ms.lync.lscp.UserMove.md) utente, in cui è possibile selezionare un pool in cui spostare l'utente selezionato.
+  - **Spostare gli utenti selezionati nel pool** Apre la [finestra di dialogo](ms.lync.lscp.UserMove.md) Sposta utente, in cui è possibile selezionare un pool in cui spostare l'utente selezionato.
 
-  - **Spostare tutti gli utenti nel pool** Apre la [finestra di dialogo Sposta](ms.lync.lscp.UserMove.md) utente, in cui è possibile selezionare un pool in cui spostare tutti gli utenti selezionati.
-
-
+  - **Spostare tutti gli utenti nel pool** Apre la [finestra di dialogo](ms.lync.lscp.UserMove.md) Sposta utente, in cui è possibile selezionare un pool in cui spostare tutti gli utenti selezionati.
