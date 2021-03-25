@@ -1,5 +1,5 @@
 ---
-title: Siti di succursale (strumento di pianificazione)
+title: Siti di succursale (Strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,15 +16,13 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7b9d0779-436f-4965-8110-a41ff4d0302d
 description: Per informazioni dettagliate sulla resilienza dei siti di succursale, vedere Planning for Branch-Site Voice Resiliency.
-ms.openlocfilehash: 482ea9cbe7b6f96ebf2bfa34ab0db14784e8a6a5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 96ef2d9afc376b5dee648f431d243ba5f67fe06b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810656"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116134"
 ---
-# <a name="branch-sites-planning-tool"></a><span data-ttu-id="89387-103">Siti di succursale (strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="89387-103">Branch Sites (Planning Tool)</span></span>
+# <a name="branch-sites-planning-tool"></a><span data-ttu-id="cb5ee-103">Siti di succursale (Strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="cb5ee-103">Branch Sites (Planning Tool)</span></span>
 
-<span data-ttu-id="89387-104">Per informazioni dettagliate sulla resilienza dei siti di succursale, vedere [Planning for Branch-Site Voice Resiliency.](https://technet.microsoft.com/library/67713f57-3ded-4127-ac37-57d8099bf384.aspx)</span><span class="sxs-lookup"><span data-stu-id="89387-104">For details about branch-site resiliency, see [Planning for Branch-Site Voice Resiliency](https://technet.microsoft.com/library/67713f57-3ded-4127-ac37-57d8099bf384.aspx).</span></span>
-
-
+<span data-ttu-id="cb5ee-104">Per informazioni dettagliate sulla resilienza dei siti di succursale, [vedere Planning for Branch-Site Voice Resiliency](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-branch-site-voice-resiliency).</span><span class="sxs-lookup"><span data-stu-id="cb5ee-104">For details about branch-site resiliency, see [Planning for Branch-Site Voice Resiliency](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-branch-site-voice-resiliency).</span></span>

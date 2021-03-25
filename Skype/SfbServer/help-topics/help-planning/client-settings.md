@@ -16,15 +16,13 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0f0a866a-b85d-4fb6-843b-90bb3c977498
 description: La funzionalità per dispositivi mobili in Skype for Business Server 2015 supporta le funzionalità di Skype for Business nei dispositivi mobili. Per informazioni dettagliate, vedere Planning for Mobility.
-ms.openlocfilehash: d883478f29d3a2a3a85e11f72281b77f48cd9222
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cb8929468840f1e26bc216196eaa46b5cc4ab4d2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810556"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116124"
 ---
-# <a name="client-settings-planning-tool"></a><span data-ttu-id="56727-104">Impostazioni client (Strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="56727-104">Client Settings (Planning Tool)</span></span>
+# <a name="client-settings-planning-tool"></a><span data-ttu-id="3fcd3-104">Impostazioni client (Strumento di pianificazione)</span><span class="sxs-lookup"><span data-stu-id="3fcd3-104">Client Settings (Planning Tool)</span></span>
 
-<span data-ttu-id="56727-105">La funzionalità per dispositivi mobili in Skype for Business Server 2015 supporta le funzionalità di Skype for Business nei dispositivi mobili.</span><span class="sxs-lookup"><span data-stu-id="56727-105">The mobility feature in Skype for Business Server 2015 supports Skype for Business functionality on mobile devices.</span></span> <span data-ttu-id="56727-106">Per informazioni dettagliate, vedere [Planning for Mobility.](https://technet.microsoft.com/library/12000359-09b5-48f0-986d-fab3a1487f9c.aspx)</span><span class="sxs-lookup"><span data-stu-id="56727-106">For details, see [Planning for Mobility](https://technet.microsoft.com/library/12000359-09b5-48f0-986d-fab3a1487f9c.aspx).</span></span>
-
-
+<span data-ttu-id="3fcd3-105">La funzionalità per dispositivi mobili in Skype for Business Server 2015 supporta le funzionalità di Skype for Business nei dispositivi mobili.</span><span class="sxs-lookup"><span data-stu-id="3fcd3-105">The mobility feature in Skype for Business Server 2015 supports Skype for Business functionality on mobile devices.</span></span> <span data-ttu-id="3fcd3-106">Per informazioni dettagliate, vedere [Planning for Mobility.](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-mobility)</span><span class="sxs-lookup"><span data-stu-id="3fcd3-106">For details, see [Planning for Mobility](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-mobility).</span></span>
