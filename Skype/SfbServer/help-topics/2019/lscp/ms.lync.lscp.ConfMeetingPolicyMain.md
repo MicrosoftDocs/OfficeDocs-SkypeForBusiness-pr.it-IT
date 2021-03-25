@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 90eaa64e-369e-448d-bac4-2574c7c598b8
 ROBOTS: NOINDEX, NOFOLLOW
 description: Il criterio di conferenza definisce le caratteristiche e le funzionalità disponibili agli utenti durante una conferenza, detta anche riunione.
-ms.openlocfilehash: 23377ce4974be1139cf5ff3e7d090cb83d8f2504
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 4895847cc4c05008830c285862556466036d5265
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824866"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118885"
 ---
 # <a name="conferencing-policy"></a>Criteri conferenza
 
@@ -50,33 +50,31 @@ Nella pagina **Criteri percorso** è possibile eseguire le attività seguenti:
 
 Nell'elenco seguente sono descritti i comandi della pagina.
 
-- **Nuovo** Avvia un nuovo criterio di conferenza del sito o di conferenza utente.
+- **Nuovo** Avvia un nuovo criterio di conferenza del sito o criteri di conferenza utente.
 
-- **Modifica** Apre il criterio di conferenza selezionato per modificarlo, seleziona tutti i criteri conferenza nell'elenco oppure elimina il criterio sito o utente selezionato.
+- **Modifica** Apre il criterio di conferenza selezionato per modificarlo, seleziona tutti i criteri conferenza nell'elenco o elimina il criterio sito o il criterio utente selezionato.
 
     > [!NOTE]
     > Per il criterio globale, **Elimina** consente di riportare le impostazioni ai valori predefiniti.
 
-- **Aggiorna** Aggiorna l'elenco dei criteri di conferenza.
+- **Aggiorna** Aggiorna l'elenco dei criteri conferenza.
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Name** Identifica il criterio di conferenza.
+- **Nome** Identifica il criterio di conferenza.
 
 - **Ambito** Identifica l'ambito dei criteri di conferenza: globale, sito o utente.
 
-- **Collaborazione dati** Selezionata se il criterio di conferenza specifica che la collaborazione dati è consentita nelle conferenze.
+- **Collaborazione dati** Selezionato se il criterio di conferenza specifica che la collaborazione dati è consentita nelle conferenze.
 
-- **Condivisione applicazioni** Selezionata se il criterio di conferenza specifica che la condivisione applicazioni è consentita nelle conferenze.
+- **Condivisione applicazioni** Selezionato se il criterio di conferenza specifica che la condivisione delle applicazioni è consentita nelle conferenze.
 
 - **Audio** Selezionato se il criterio di conferenza specifica che l'audio è consentito nelle conferenze.
 
 - **Video** Selezionato se il criterio di conferenza specifica che il video è consentito nelle conferenze.
 
-- **PSTN** Selezionata se il criterio di conferenza specifica che le conferenze telefoniche con accesso esterno PSTN sono consentite.
+- **PSTN** Selezionato se il criterio di conferenza specifica che le conferenze telefoniche con accesso esterno PSTN sono consentite.
 
-- **Registrazione** Selezionata se il criterio di conferenza specifica che la registrazione è consentita nelle conferenze.
+- **Registrazione** Selezionato se il criterio di conferenza specifica che la registrazione è consentita nelle conferenze.
 
-Per informazioni dettagliate sulle caratteristiche e sulle funzionalità di conferenza, vedere [Overview of Conferencing](https://technet.microsoft.com/library/5bb90e69-3d4f-4d59-a1ee-2550de84439f.aspx) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei criteri di conferenza, vedere [Conferencing Policies](https://technet.microsoft.com/library/8f92eb7c-ee66-4df6-a726-4bff93b122cb.aspx) nella documentazione relativa alle operazioni.
-
-
+Per informazioni dettagliate sulle caratteristiche e sulle funzionalità di conferenza, vedere [Overview of Conferencing](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-conferencing) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei criteri di conferenza, vedere [Conferencing Policies](/previous-versions/office/lync-server-2013/lync-server-2013-conferencing-policies) nella documentazione relativa alle operazioni.

@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: ''
 description: Usare i modelli di Microsoft Teams nell’interfaccia di amministrazione o con Microsoft Graph per creare team in modo rapido e semplice fornendo un modello predefinito di impostazioni, canali e app.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b45c949b70aa2a299f2aafe54d81cdd8a1a6c0b5
-ms.sourcegitcommit: 774c2fdc71df430674493c33b609523af3cbda4c
-ms.translationtype: HT
+ms.openlocfilehash: 13b85818101e1c3d42ae6dc715274ac23453e178
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50260308"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117874"
 ---
 # <a name="create-a-team-using-teams-healthcare-templates"></a>Creare un team usando i modelli di Teams per il settore sanitario
 
@@ -67,7 +67,7 @@ Semplificare le comunicazioni e la collaborazione tra più reparti, dispensari e
 
 ## <a name="use-the-teams-templates-with-the-microsoft-graph"></a>Usare i modelli di Teams con Microsoft Graph
 
-Gli sviluppatori possono usare Microsoft Graph per creare team con i modelli di Teams. Attualmente sono disponibili due modelli del produttore per il settore sanitario da usare in diverse situazioni. Per scoprire di più sui modelli dei team in generale, vedere [Introduzione ai modelli di Teams](../../get-started-with-teams-templates.md). Per informazioni sui modelli di Teams e su Microsoft Graph, vedere la [panoramica sull'API Microsoft Teams](https://docs.microsoft.com/graph/teams-concept-overview?view=graph-rest-1.0) e [tipo di risorsa teamsTemplate](https://docs.microsoft.com/graph/api/resources/teamstemplate?view=graph-rest-1.0).
+Gli sviluppatori possono usare Microsoft Graph per creare team con i modelli di Teams. Attualmente sono disponibili due modelli del produttore per il settore sanitario da usare in diverse situazioni. Per scoprire di più sui modelli dei team in generale, vedere [Introduzione ai modelli di Teams](../../get-started-with-teams-templates.md). Per informazioni sui modelli di Teams e su Microsoft Graph, vedere la [panoramica sull'API Microsoft Teams](/graph/teams-concept-overview?view=graph-rest-1.0) e [tipo di risorsa teamsTemplate](/graph/api/resources/teamstemplate?view=graph-rest-1.0).
 
 ### <a name="ward-template"></a>Modello di reparto
 
@@ -93,7 +93,7 @@ Il modello ospedale mira a semplificare le comunicazioni e la collaborazione tra
 
 ### <a name="how-to-use-first-party-templates"></a>Come usare i modelli del produttore
 
-Per usare questi modelli, è sufficiente modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti.  Per altre informazioni su come implementare i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team](https://docs.microsoft.com/graph/api/team-post?view=graph-rest-beta).
+Per usare questi modelli, è sufficiente modificare la proprietà "template@odata.bind" nel corpo della richiesta da "standard" ai TemplateID precedenti.  Per altre informazioni su come implementare i modelli di Teams, vedere l'articolo di Microsoft Graph su come [creare un team](/graph/api/team-post?view=graph-rest-beta).
 
 > [!NOTE]
 > I canali nel modello verranno creati automaticamente nella scheda Generale.

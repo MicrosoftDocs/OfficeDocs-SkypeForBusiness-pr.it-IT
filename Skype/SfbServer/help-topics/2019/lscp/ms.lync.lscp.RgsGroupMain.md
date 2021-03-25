@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: b8bd4c3f-3d32-42b2-9712-2d0f159577d8
 ROBOTS: NOINDEX, NOFOLLOW
 description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Un gruppo di agenti è un gruppo di persone designate a rispondere alle chiamate di Response Group.
-ms.openlocfilehash: 687263d9d5778239c78038b39edc3da59f444a5a
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 74f7114894e76981003faf4a0e9167a03df02302
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49808256"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118815"
 ---
 # <a name="response-groups-group"></a>Response Group: gruppo
 
@@ -30,7 +30,7 @@ Nella **pagina Response Group** Group viene visualizzato un elenco di tutti i gr
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-È possibile eseguire le attività seguenti dalla pagina **Response Group:**  -  
+Nella pagina **Response Group** Group è possibile eseguire le attività  -   seguenti:
 
 - Creare un nuovo gruppo di agenti
 
@@ -50,12 +50,10 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Name** Nome univoco che identifica il gruppo di agenti.
+- **Nome** Nome univoco che identifica il gruppo di agenti.
 
 - **Servizio** Servizio **ApplicationServer** che ospita il gruppo di agenti.
 
 - **Descrizione** Descrizione del gruppo di agenti.
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei gruppi di agenti, vedere [Managing Agent Groups](https://technet.microsoft.com/library/36084cdc-38f1-4c45-922f-f81c7e86210c.aspx) nella documentazione relativa alle operazioni.
-
-
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei gruppi di agenti, vedere [Managing Agent Groups](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-agent-groups) nella documentazione relativa alle operazioni.

@@ -18,12 +18,12 @@ description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 60ed1c821389fb56d6e6bfb4ab4a37e562be726a
-ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
+ms.openlocfilehash: cc3dca351924daa368658a8f0c110099768e9986
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50196220"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117704"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
@@ -32,7 +32,7 @@ ms.locfileid: "50196220"
 
 L'anteprima pubblica per Microsoft Teams offre accesso anticipato alle funzionalità non rilasciate in Teams. Le anteprime consentono di esplorare e testare le funzionalità imminenti. Microsoft è lieta di ricevere feedback sulle funzionalità presentate nelle anteprime pubbliche. L'anteprima pubblica è abilitata per gli utenti di Teams, pertanto non è necessario preoccuparsi per l'impatto sull'intera organizzazione.
 
-Per un elenco delle funzionalità disponibili nell'anteprima pubblica di Teams, visitare [Note sulla versione del Canale corrente (Anteprima) di Office](https://docs.microsoft.com/officeupdates/current-channel-preview).
+Per un elenco delle funzionalità disponibili nell'anteprima pubblica di Teams, visitare [Note sulla versione del Canale corrente (Anteprima) di Office](/officeupdates/current-channel-preview).
 
 ## <a name="set-the-update-policy"></a>Impostare i criteri di aggiornamento
 
@@ -58,5 +58,4 @@ Per abilitare l'anteprima pubblica su un client desktop o Web, è necessario ese
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Anteprima pubblica per sviluppatori](https://docs.microsoft.com/microsoftteams/platform/resources/dev-preview/developer-preview-intro)
-
+[Anteprima pubblica per sviluppatori](/microsoftteams/platform/resources/dev-preview/developer-preview-intro)

@@ -24,24 +24,24 @@ ms.custom:
 - O365M_SkypeforBusinessON
 - O365P_SkypeforBusinessON
 description: "Informazioni su come configurare il dominio, gli utenti, la messaggistica Istantanea e la presenza dell'organizzazione per l'installazione di Skype for Business.  Vedere anche Informazioni su come Configurazione di conferenze Audio, Sistema telefonico e Piani di chiamata e Skype Meeting broadcast. "
-ms.openlocfilehash: c61e2b7dd4a9c4bb4e04a90ffa403e930e4d142b
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: 0c357c1dbe5b91c06b385562bf31d5f1307bd240
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777181"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51109962"
 ---
 # <a name="set-up-skype-for-business-online"></a>Configurare Skype for Business online
 
-Per configurare Skype for Business, è necessario disporre delle autorizzazioni di amministratore globale. Se si dispone di un server proxy o firewall che limita l'accesso a parti del sito web, è consigliabile affidarsi a un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) configurare Skype for Business automaticamente.
+Devi avere le autorizzazioni di amministratore globale per configurare Skype for Business. Se si dispone di un server proxy o firewall che limita l'accesso a parti del sito web, è consigliabile affidarsi a un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) configurare Skype for Business automaticamente.
 
 ## <a name="setting-up-skype"></a>Impostare Skype
 
-A quanto pare hai bisogno di aiuto per configurare Skype con il tuo abbonamento a Microsoft 365 o Office 365. È possibile seguire la procedura descritta in questo articolo per completare la configurazione.
+Sembra che sia necessario aiuto per configurare Skype con l'abbonamento a Microsoft 365 o Office 365. È possibile seguire la procedura descritta in questo articolo per completare la configurazione.
 
 ## <a name="1-plan-for-skype-for-business"></a>1. Pianificare Skype for Business 
 
-Se si dispone di **[Microsoft 365 Business Premium Standard](https://products.office.com/business/office-365-business-premium)** o Business **Essentials,** è possibile usare Skype for Business per effettuare chiamate online ad altre persone dell'azienda che fanno parte dell'abbonamento. Ad esempio, se l'azienda ha 10 dipendenti, sarà possibile [Iniziare a usare Skype for Business per la messaggistica Istantanea e riunioni online](https://support.office.com/article/cc05afa6-1894-4a82-9dd9-6222061f50fd) tra loro, e [Riunioni con Skype for Business](https://support.office.com/article/2eed8424-581a-4497-b505-c08c152e5851) usando Skype for Business dopo ave eseguito i passaggi da 2 a 6, descritti qui sotto. È possibile [Impostare una Riunione in Skype for Business su Outlook](https://support.office.com/article/b8305620-d16e-4667-989d-4a977aad6556#bkmk_OWA) oltre alle riunioni online!
+Se si ha **[Microsoft 365 Business Premium Standard](https://products.office.com/business/office-365-business-premium)** o Business **Essentials,** è possibile usare Skype for Business per effettuare chiamate online ad altre persone dell'azienda che fanno parte dell'abbonamento. Ad esempio, se l'azienda ha 10 dipendenti, sarà possibile [Iniziare a usare Skype for Business per la messaggistica Istantanea e riunioni online](https://support.office.com/article/cc05afa6-1894-4a82-9dd9-6222061f50fd) tra loro, e [Riunioni con Skype for Business](https://support.office.com/article/2eed8424-581a-4497-b505-c08c152e5851) usando Skype for Business dopo ave eseguito i passaggi da 2 a 6, descritti qui sotto. È possibile [Impostare una Riunione in Skype for Business su Outlook](https://support.office.com/article/b8305620-d16e-4667-989d-4a977aad6556#bkmk_OWA) oltre alle riunioni online!
 
 Se si desidera usare Skype for Business per effettuare e ricevere **chiamate** da persone *esterne* all'azienda:
 
@@ -56,7 +56,7 @@ Per ulteriori informazioni, vedere [Pianificare la configurazione di Office 365 
 
 Skype for Business online fa parte della famiglia di servizi di Office 365. Per configurare Skype for Business online, è necessario effettuare l'accesso a Office 365. Ecco come si esegue questa operazione:
 
-1. Individuare l'ID utente di Microsoft 365 o <em></em> Office 365, ad esempio rob@fourthcoffee.com . Il team di Microsoft Online Services ha ricevuto un messaggio di posta elettronica contenente l'ID utente di Microsoft 365 o Office 365 creato al momento dell'acquisto di Skype for Business online. L'aspetto della email dovrebbe essere simile a questo:
+1. Individuare l'ID utente di Microsoft 365 o Office 365, ad esempio  <em>rob@fourthcoffee.com</em>  . Hai ricevuto un messaggio di posta elettronica dal team di Microsoft Online Services che contiene l'ID utente di Microsoft 365 o Office 365 creato al momento dell'acquisto di Skype for Business online. L'aspetto della email dovrebbe essere simile a questo:
 
     ![Esempio del messaggio di posta elettronica di benvenuto che si riceve dopo essersi iscritti a Skype for Business online. Contiene l'ID utente di Microsoft 365 o Office 365.](../images/977c5c96-29c5-40c0-a4c4-1ba66ba3a1fb.png)
 
@@ -174,7 +174,4 @@ La qualità di audio, video e condivisione delle applicazioni non è soddisfacen
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="bkmk_more"> </a>
 
-[Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business online](https://go.microsoft.com/fwlink/p/?linkid=400791)
-
-
-
+[Pianificare la connettività ibrida tra Skype for Business Server e Skype for Business online](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)

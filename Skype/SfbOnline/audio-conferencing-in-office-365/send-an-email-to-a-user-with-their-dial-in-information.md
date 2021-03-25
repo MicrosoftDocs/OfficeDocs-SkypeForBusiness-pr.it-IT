@@ -21,26 +21,26 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Inviare agli utenti un messaggio di posta elettronica con le loro informazioni di audioconferenza su Skype for Business online.
-ms.openlocfilehash: f2137d05ebe588a316704fabf4c8878910a40bc0
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: f070353069c937a62935e1cc570ebae6c0e981db
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44163899"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51109993"
 ---
-# <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-skype-for-business-online"></a>Inviare un messaggio di posta elettronica con le informazioni sulle audioconferenze a un utente in Skype for Business online
+# <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-skype-for-business-online"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative alle audioconferenze in Skype for Business online
 
 > [!Note]
 > Per informazioni sull'invio di informazioni di Audioconferenza agli utenti su Microsoft Teams, consulta [Inviare un messaggio di posta elettronica a un utente con le informazioni di Audioconferenza su Microsoft Teams](/MicrosoftTeams/send-an-email-to-a-user-with-their-dial-in-information-in-teams).
 
-Sometimes Skype for Business users may need you to send them their Audio Conferencing information. You can do this by using the **Skype for Business admin center** and clicking **Send conference info via email** under the properties for a user. When you send this email, it will contain all of the audio conferencing information, including:
+In alcuni casi, potrebbe essere necessario inviare agli utenti di Skype for Business le informazioni di Audioconferenza. È possibile farlo usando l'interfaccia di amministrazione di **Skype for Business** e facendo clic su Invia info conferenza tramite posta **elettronica** sotto le proprietà di un utente. Quando invii questo messaggio di posta elettronica, conterrà tutte le informazioni relative ai servizi di audioconferenza, tra cui:
   
 - Il numero di telefono per le conferenze o per l'accesso esterno dell'utente.
     
 - L'ID conferenza dell'utente.
     
    
-Ecco un esempio di messaggio di posta elettronica inviato:
+Ecco un esempio del messaggio di posta elettronica inviato:
   
 ![Posta elettronica di conferenza telefonica con accesso esterno](../images/audio-conferencing-info.png)
 
@@ -49,7 +49,7 @@ Ecco un esempio di messaggio di posta elettronica inviato:
   
 ## <a name="send-an-email-with-audio-conferencing-information-to-a-user"></a>Inviare un messaggio di posta elettronica con informazioni di audioconferenza a un utente
 
-1. Nel riquadro di spostamento sinistro fare **clic su** Utenti e quindi selezionare l'utente nell'elenco di utenti disponibili.
+1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
 2. Nella parte superiore della pagina, fai clic su **Modifica**.
 
@@ -57,32 +57,32 @@ Ecco un esempio di messaggio di posta elettronica inviato:
 
 1. Accedere con l'account aziendale o dell'istituto di istruzione.
     
-2. Accedi all'interfaccia di amministrazione > **Skype for Business** e, nella barra di spostamento sinistra, fai clic su **Audioconferenza.**
+2. Passare all'interfaccia di amministrazione > **Skype for Business** e nel riquadro di spostamento sinistro fare clic su **Audioconferenza.**
     
 3. Fare **clic su** Utenti e quindi selezionare l'utente.
     
 4. In the Action pane, click **Send conference info via email**.
     
 > [!TIP]
-> Puoi anche inviare messaggi di posta elettronica all'utente con le impostazioni di audioconferenza modificando le proprietà dell'utente e facendo clic su **Invia** informazioni conferenza tramite  >  **posta elettronica.** 
+> È anche possibile inviare messaggi di posta elettronica all'utente con le impostazioni di audioconferenza modificando le proprietà dell'utente e quindi facendo clic su **Invia** informazioni conferenza  >  **tramite posta elettronica.** 
 
 ## <a name="what-else-should-you-know-about-this-email"></a>Cos'altro occorre sapere su questo messaggio di posta elettronica?
 
-- Dopo aver abilitato i servizi di audioconferenza, agli utenti dell'organizzazione vengono inviati diversi messaggi di posta elettronica:
+- Sono disponibili diversi messaggi di posta elettronica inviati agli utenti dell'organizzazione dopo che sono stati abilitati per le audioconferenze:
     
   - Quando una licenza di **Audioconferenza** viene loro assegnata.
     
-  - Quando si reimposta manualmente il PIN dell'utente per i servizi di audioconferenza.
+  - Quando si reimposta manualmente il PIN di audioconferenza dell'utente.
     
   - Quando reimposti manualmente l'ID conferenza dell'utente.
     
   - Quando una licenza di **Audioconferenza** è rimossa a loro.
     
-  - Quando il provider dei servizi di audioconferenza per un utente viene modificato da Microsoft a un altro provider o **a Nessuno.**
+  - Quando il provider di servizi di audioconferenza per un utente viene modificato da Microsoft a un altro provider o **Nessuno**.
     
   - Quando il provider di servizi di audioconferenza per un utente viene modificato in Microsoft.
     
-- Per impostazione predefinita, il mittente dei messaggi verrà inviato da Microsoft 365 o Office 365, ma puoi modificare l'indirizzo e il nome visualizzato utilizzando Windows PowerShell e il cmdlet [Set-CsOnlineDialInConferencingTenantSettings.](https://go.microsoft.com/fwlink/?LinkId=708983) Per apportare modifiche all'indirizzo di posta elettronica che invia il messaggio agli utenti, è necessario:
+- Per impostazione predefinita, il mittente dei messaggi di posta elettronica viene inviato da Microsoft 365 o Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell e il cmdlet [Set-CsOnlineDialInConferencingTenantSettings.](/powershell/module/skype/Set-CsOnlineDialInConferencingTenantSettings) Per apportare modifiche all'indirizzo di posta elettronica che invia il messaggio agli utenti, è necessario:
     
   - Immettere l'indirizzo di posta elettronica nel parametro SendEmailFromAddress.
     
@@ -97,30 +97,30 @@ Ecco un esempio di messaggio di posta elettronica inviato:
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Per renderle automatiche o per risparmiare tempo, puoi utilizzare il cmdlet [Set-CsOnlineDialInConferencingUser](https://go.microsoft.com/fwlink/?LinkId=617688 ).
+- Per renderle automatiche o per risparmiare tempo, puoi utilizzare il cmdlet [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/Set-CsOnlineDialInConferencingUser).
     
-    Per inviare un messaggio di posta elettronica con le informazioni per i servizi di audioconferenza, eseguire le operazioni seguenti:
+    Per inviare un messaggio di posta elettronica all'utente con le informazioni relative ai servizi di audioconferenza, eseguire le operazioni seguenti:
     
   ```PowerShell
   Set-CsOnlineDialInConferencingUser -id amos.marble@contoso.com  -SendEmail
   ```
 
-- Per quanto riguarda Windows PowerShell, Skype for Business online riguarda la gestione degli utenti e le operazioni che sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 tramite un unico punto di amministrazione, che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Per quanto riguarda Windows PowerShell, è possibile gestire gli utenti di Skype for Business online e le azioni che sono autorizzati a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
-  - [Perché è necessario usare PowerShell di Microsoft 365 o Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Perché occorre Windows PowerShell per gestire Office 365 o Microsoft 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
-  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell presenta molti vantaggi in termini di rapidità, semplicità e produttività rispetto all'uso della sola interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, vedere gli argomenti seguenti: 
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
-  - [Introduzione a Windows Powershell e Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525039)
+  - [Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
-    [Uso di Windows PowerShell per gestire Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525453)
+    [Uso di Windows PowerShell per gestire Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
-  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business Online](https://go.microsoft.com/fwlink/?LinkId=525038)
+  - [Uso di Windows PowerShell per eseguire le più comuni attività di gestione di Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     
     > [!NOTE]
-    > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business Online.](https://go.microsoft.com/fwlink/?LinkId=294688)
+    > Il modulo Windows PowerShell per Skype for Business online consente di creare una sessione di Windows PowerShell remota che si connette a Skype for Business online. Questo modulo, supportato solo nei computer a 64 bit, può essere scaricato dall'Area download Microsoft nel [modulo Windows PowerShell per Skype for Business online.](https://go.microsoft.com/fwlink/?LinkId=294688)
   
 ## <a name="related-topics"></a>Argomenti correlati
 

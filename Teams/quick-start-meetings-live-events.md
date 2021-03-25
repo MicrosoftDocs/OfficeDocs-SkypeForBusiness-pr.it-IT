@@ -20,12 +20,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 58f871e8e741856253667649484ac429bb68dd2c
-ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+ms.openlocfilehash: cafd88594935565595a48a55c6a6b8f07d254345
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50460826"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117674"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
@@ -50,7 +50,7 @@ Le persone che intendono organizzare, pianificare o condurre riunioni o eventi l
 >
 > <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero**,](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Potrebbe essere necessario anche un [dial plan](what-are-dial-plans.md).
 
-Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description).
+Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
 
 ## <a name="make-sure-your-networks-ready"></a>Assicurarsi che la rete sia pronta
 
@@ -66,7 +66,7 @@ Se la rete è già stata preparata durante la distribuzione di Microsoft 365 o O
 
 - Per informazioni sulla gestione delle opzioni per una riunione, vedi [Modificare le impostazioni dei partecipanti per una riunione Teams](https://support.microsoft.com/article/change-participant-settings-for-a-teams-meeting-53261366-dbd5-45f9-aae9-a70e6354f88e).
 
-- Non dimenticare la [gestione dei dispositivi degli utenti](device-management.md), quali telefoni, auricolari e videocamere. Per ottenere le informazioni più recenti e aggiornate sui dispositivi certificati Teams, vedere [Dispositivi di Teams](https://office.com/teamsdevices).
+- Non dimenticare la [gestione dei dispositivi degli utenti](./devices/device-management.md), quali telefoni, auricolari e videocamere. Per ottenere le informazioni più recenti e aggiornate sui dispositivi certificati Teams, vedere [Dispositivi di Teams](https://office.com/teamsdevices).
 
 ## <a name="live-events"></a>Eventi live
 

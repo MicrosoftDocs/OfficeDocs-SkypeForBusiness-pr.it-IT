@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: e4ee8abb-e1e5-413c-919d-cd3fb7193840
 ROBOTS: NOINDEX, NOFOLLOW
 description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. I flussi di lavoro di Response Group definiscono le azioni che vengono eseguite quando l'applicazione Response Group riceve una chiamata telefonica.
-ms.openlocfilehash: b4f9a80be55e00d5874c79cf426e331a464d0e2c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: dc34ec69af86658c6624ada6a9f25ff3aaa61499
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49820266"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118765"
 ---
 # <a name="response-groups-workflow"></a>Flusso di lavoro Response Group
 
@@ -30,7 +30,7 @@ Nella **pagina Flusso di lavoro** di Response Group viene visualizzato un elenco
 
 ## <a name="tasks-you-can-perform"></a>Attività che è possibile eseguire
 
-È possibile eseguire le attività seguenti dalla pagina Flusso di **lavoro di Response**  -   Group:
+È possibile eseguire le attività seguenti dalla pagina **Flusso di lavoro di Response Group:**  -  
 
 - Creare o modificare un flusso di lavoro di un gruppo di risposta
 
@@ -40,26 +40,24 @@ Nella **pagina Flusso di lavoro** di Response Group viene visualizzato un elenco
 
 Nell'elenco seguente sono descritti i comandi della pagina.
 
-- **Creare o modificare un flusso di lavoro** Apre lo Strumento di configurazione di Response Group per la creazione o la modifica di un flusso di lavoro.
+- **Creare o modificare un flusso di lavoro** Apre lo strumento di configurazione di Response Group per la creazione o la modifica di un flusso di lavoro.
 
 - **Aggiorna** Aggiorna l'elenco dei flussi di lavoro.
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Name** Nome univoco assegnato al flusso di lavoro.
+- **Nome** Nome univoco assegnato al flusso di lavoro.
 
-- **Servizio** Servizio **ApplicationServer che** ospita il flusso di lavoro.
+- **Servizio** Servizio **ApplicationServer** che ospita il flusso di lavoro.
 
 - **Indirizzo SIP** Indirizzo SIP del gruppo che risponderà alle chiamate al flusso di lavoro.
 
 - **Telefono** Numero di telefono chiamato per raggiungere questo Response Group.
 
-- **Lingua** Lingua usata per il riconoscimento vocale e la sintesi vocale.
+- **Lingua** Lingua utilizzata per il riconoscimento vocale e la sintesi vocale.
 
 - **IVR** Indica se il flusso di lavoro è un gruppo di risposta o un flusso di lavoro interattivo.
 
 - **Abilitato** Indica se il flusso di lavoro è attivato per ricevere chiamate.
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo dei flussi di lavoro di Response Group, vedere [Managing Response Group Workflows](https://technet.microsoft.com/library/42cfccdd-2844-4875-b4e3-813e1df15f08.aspx) nella documentazione relativa alle operazioni.
-
-
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo dei flussi di lavoro di Response Group, vedere [Managing Response Group Workflows](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-workflows) nella documentazione relativa alle operazioni.

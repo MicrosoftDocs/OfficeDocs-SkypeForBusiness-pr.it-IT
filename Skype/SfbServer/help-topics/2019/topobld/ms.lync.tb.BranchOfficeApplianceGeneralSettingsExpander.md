@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 86860416-7c9b-49af-b9d2-658c172852de
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni di un Survivable Branch Appliance o Survivable Branch Server esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: a191c89fc41bc5a4fc7f33c2e6802c87455259f5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: be0deea657fa33db300c7aa73c9e3f3304113f0f
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49811276"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118665"
 ---
 # <a name="branch-office-appliance-general-settings-expander"></a>Espansione delle impostazioni generali di Branch Office Appliance
 
@@ -43,23 +43,23 @@ Nome di dominio completo (FQDN) del Survivable Branch Appliance o Survivable Bra
 
 In **Associazioni** è possibile modificare o specificare quanto segue:
 
-- Associa server di archiviazione consente di scegliere di associare un server di archiviazione al Survivable Branch Appliance o al Survivable Branch Server. È possibile eseguire la selezione da un server di archiviazione già definito  selezionandolo nell'elenco a discesa oppure fare clic su Nuovo per specificare un nuovo server di archiviazione.
+- Associa server di archiviazione consente di scegliere di associare un server di archiviazione al Survivable Branch Appliance o al Survivable Branch Server. È possibile eseguire una selezione da un server di archiviazione già definito selezionandolo nell'elenco a discesa oppure fare clic su **Nuovo** per specificare un nuovo server di archiviazione.
 
     > [!IMPORTANT]
     > Prima della pubblicazione della nuova topologia definita, il server specificato deve esistere ed essere aggiunto al dominio.
 
-- Associa Monitoring Server consente di scegliere di associare un Monitoring Server al Survivable Branch Appliance o al Survivable Branch Server. È possibile scegliere da un Monitoring Server già definito selezionandolo nell'elenco a discesa oppure fare clic su **Nuovo** per specificare un nuovo Monitoring Server.
+- Associa Monitoring Server consente di scegliere di associare un Monitoring Server al Survivable Branch Appliance o al Survivable Branch Server. È possibile eseguire una selezione da un Monitoring Server già definito selezionando il server nell'elenco a discesa oppure fare clic su **Nuovo** per specificare un nuovo Monitoring Server.
 
-- Associa pool di server perimetrali consente di scegliere di associare un server perimetrale o un pool di server perimetrali al Survivable Branch Appliance o al Survivable Branch Server. È possibile usare un server perimetrale o un pool di server perimetrali già definito selezionandolo nell'elenco a discesa oppure specificare un nuovo server perimetrale o un nuovo pool di server perimetrali facendo clic su **Nuovo**.
+- Associa pool di server perimetrali consente di scegliere di associare un server perimetrale o un pool al Survivable Branch Appliance o al Survivable Branch Server. È possibile usare un server perimetrale o un pool di server perimetrali già definito selezionandolo nell'elenco a discesa oppure specificare un nuovo server perimetrale o un nuovo pool di server perimetrali facendo clic su **Nuovo**.
 
 ### <a name="resiliency"></a>Resilienza
 
 La resilienza garantisce una disponibilità elevata per il pool di registrazione. Fornendo una funzione di registrazione di backup, in caso di malfunzionamento della funzione di registrazione principale, quella di backup può subentrare, consentendo agli utenti di connettersi e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda di quali sistemi hanno avuto problemi con la funzione di registrazione principale.
 
-Nell'elenco a discesa selezionare il pool Enterprise Edition Front End o il Front End Server Standard Edition che fungerà da funzione di registrazione di backup per il Survivable Branch Appliance o il Survivable Branch Server. È inoltre possibile scegliere di impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione di registrazione principale sia di nuovo attiva e pronta per riacquisire il controllo del processo di registrazione.
+Nell'elenco a discesa selezionare il pool Enterprise Edition Front End o il Front End Server Standard Edition che fungerà da registrar di backup per il Survivable Branch Appliance o il Survivable Branch Server. È inoltre possibile scegliere di impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione di registrazione principale sia di nuovo attiva e pronta per riacquisire il controllo del processo di registrazione.
 
 > [!IMPORTANT]
-> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se la funzione di registrazione non risponde per un breve periodo di tempo. È infatti possibile che la funzione di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per un Survivable Branch Appliance o un Survivable Branch Server in un sito in un pool o Standard Edition Front End Server sono 120 secondi per il failover e 240 secondi per il fallback.
+> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se la funzione di registrazione non risponde per un breve periodo di tempo. È infatti possibile che la funzione di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per un Survivable Branch Appliance o un Survivable Branch Server in un sito in un pool o un Front End Server Standard Edition sono 120 secondi per il failover e 240 secondi per il fallback.
 
 ### <a name="mediation-server"></a>Mediation Server
 
@@ -74,6 +74,4 @@ Definire gateway PSTN associati al Mediation Server collocato. Se i gateway sono
 Se a un Mediation Server è associato più di un gateway, il primo gateway associato sarà quello predefinito. Se è necessario scegliere un altro gateway come predefinito, selezionare il gateway desiderato e fare clic su **Rendi predefinito**.
 
 
-Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il Survivable Branch Appliance o il Survivable Branch Server, vedere [Branch-Site Resiliency Solutions](https://technet.microsoft.com/library/1700f99b-709c-4e47-88eb-c0a5490e26e2.aspx).
-
-
+Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il Survivable Branch Appliance o il Survivable Branch Server, vedere [Branch-Site Resiliency Solutions](/previous-versions/office/lync-server-2013/lync-server-2013-branch-site-resiliency-solutions).

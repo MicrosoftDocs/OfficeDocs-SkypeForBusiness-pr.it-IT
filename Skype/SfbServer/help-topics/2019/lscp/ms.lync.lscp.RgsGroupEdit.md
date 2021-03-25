@@ -1,5 +1,5 @@
 ---
-title: Response Group crearne uno nuovo o modificarne uno esistente
+title: Response Group Crea nuovo o Modifica gruppo di agenti esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 79eaaf6c-6928-4925-8220-c7ada6b37205
 ROBOTS: NOINDEX, NOFOLLOW
 description: I gruppi di agenti definiscono quali utenti possono rispondere alle chiamate a un Response Group (anche definito agenti) e le impostazioni che si applicano a tutti gli agenti del gruppo.
-ms.openlocfilehash: d38886289bdadc1f82bd87f93a8a108641fa1128
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 944cd48745a2524ccfcd795d9edc60e806859301
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49808276"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118965"
 ---
 # <a name="response-groups-create-new-or-edit-existing-agent-group"></a>Response Group: creare un nuovo gruppo di agenti o modificarne uno esistente
 
@@ -30,19 +30,19 @@ I gruppi di agenti definiscono quali utenti possono rispondere alle chiamate a u
 
 L'elenco seguente descrive i campi presenti nella pagina.
 
-- **Name** Ogni gruppo di agenti richiede un nome univoco. Usa un nome descrittivo che identifichi la funzione del gruppo. Ad esempio, Help Desk.
+- **Nome** Ogni gruppo di agenti richiede un nome univoco. Utilizzare un nome descrittivo che identifichi la funzione del gruppo. Ad esempio, Help Desk.
 
 - **Descrizione** Questo campo è facoltativo. Usarlo per fornire maggiori dettagli sul gruppo.
 
 - **Criteri di partecipazione** Specificare la modalità di accesso degli agenti al Response Group:
 
-  - Selezionare **Informale** per specificare che gli agenti nel gruppo non devono accedere e disconnettersi. Gli agenti informali vengono connessi automaticamente all'accesso. L'impostazione predefinita è **Informale**.
+  - Selezionare **Informale** per specificare che gli agenti del gruppo non devono accedere e disconnettersi. Gli agenti informali vengono connessi automaticamente all'accesso. L'impostazione predefinita è **Informale**.
 
-  - Selezionare **Formale** per specificare che gli agenti nel gruppo devono accedere e disconnettersi. Quando si seleziona questa opzione, gli agenti selezionano una voce di menu nel client per aprire un browser e visualizzare una console della pagina Web per l'accesso e la disconnessione.
+  - Selezionare **Formal** per specificare che gli agenti del gruppo devono accedere e disconnettersi. Quando si seleziona questa opzione, gli agenti selezionano una voce di menu nel client per aprire un browser e visualizzare una console della pagina Web per l'accesso e la disconnessione.
 
-- **Tempo avviso (secondi)** Specificare il numero di secondi di squillo di un agente prima di offrire la chiamata al successivo agente disponibile. Il valore deve essere compreso tra 10 e 180 secondi. Il valore predefinito è 20 secondi.
+- **Tempo di avviso (secondi)** Specificare il numero di secondi di squillo di un agente prima di offrire la chiamata al successivo agente disponibile. Il valore deve essere compreso tra 10 e 180 secondi. Il valore predefinito è 20 secondi.
 
-- **Metodo di routing** Selezionare il metodo per determinare l'ordine in cui gli agenti ricevono le chiamate:
+- **Routing, metodo** Selezionare il metodo per determinare l'ordine in cui gli agenti ricevono le chiamate:
 
   - Selezionare **Inattività più lunga** per inoltrare una nuova chiamata prima all'agente che è stato inattivo (ha avuto una presenza **Disponibile** o **Inattivo**) più a lungo.
 
@@ -52,7 +52,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - Per inoltrare sempre una nuova chiamata agli agenti in base all'ordine con cui sono elencati nell'elenco **Agente**, selezionare **Seriale**.
 
-  - Selezionare **Operatore** per offrire una nuova chiamata a tutti gli agenti che hanno eseguito l'accesso e all'applicazione Response Group contemporaneamente, indipendentemente dalla presenza corrente. Gli operatori e gli utenti client configurati come agenti possono visualizzare tutte le chiamate in attesa e rispondere alle chiamate in attesa in qualsiasi ordine. La chiamata viene inviata al primo agente che la accetta e gli altri operatori e utenti non la vedono più.
+  - Selezionare **Operatore** per offrire una nuova chiamata a tutti gli agenti che hanno eseguito l'accesso e all'applicazione Response Group contemporaneamente, indipendentemente dalla presenza corrente. Gli operatori e gli utenti client configurati come agenti possono visualizzare tutte le chiamate in attesa e rispondere alle chiamate in attesa in qualsiasi ordine. La chiamata viene inviata al primo agente che la accetta e gli altri operatori e utenti non vedono più la chiamata.
 
 - **Agenti** Selezionare gli utenti che devono essere agenti per il Response Group in uno dei modi seguenti:
 
@@ -71,6 +71,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
     Le frecce su e giù consentono di spostare un agente selezionato verso l'alto e verso il basso nell'elenco di agenti. L'ordine degli agenti nell'elenco determina l'ordine in cui ricevono le chiamate per il routing di tipo round robin e seriale.
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei gruppi di agenti, vedere [Managing Agent Groups](https://technet.microsoft.com/library/36084cdc-38f1-4c45-922f-f81c7e86210c.aspx) nella documentazione relativa alle operazioni.
-
-
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso dei gruppi di agenti, vedere [Managing Agent Groups](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-agent-groups) nella documentazione relativa alle operazioni.

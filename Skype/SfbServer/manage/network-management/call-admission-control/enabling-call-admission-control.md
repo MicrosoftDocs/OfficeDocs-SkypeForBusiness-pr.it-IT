@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: " Dopo aver configurato la rete del servizio Controllo di ammissione di chiamata, è necessario abilitare il servizio Controllo di ammissione di chiamata per applicare le limitazioni della larghezza di banda."
-ms.openlocfilehash: 8e996b4d2272144a35f667a5d6987b2cb91af708
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 090b19282ce85289b0e79e09d58646c5bf5e81e2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816506"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118575"
 ---
 # <a name="enabling-call-admission-control-in-skype-for-business-server"></a>Abilitazione del controllo di ammissione di chiamata in Skype for Business Server
 
@@ -27,14 +27,14 @@ Il servizio Controllo di ammissione di chiamata è una rete di aree, siti e subn
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Globale.**
 
 4.  Nella pagina  **Globale** fare clic sulla scheda della configurazione  **Globale**.
    
     > [!NOTE]  
-    > È possibile configurare una sola rete per qualsiasi distribuzione di Skype for Business Server, quindi non ci sarà mai più di una configurazione di rete nell'elenco. Non è possibile rinominare la configurazione globale.
+    > È possibile configurare una sola rete per qualsiasi distribuzione di Skype for Business Server, quindi non saranno mai presenti più configurazioni di rete nell'elenco. Non è possibile rinominare la configurazione globale.
 
 5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
@@ -50,8 +50,8 @@ Se si apportano modifiche alla configurazione di rete, sarà possibile eseguire 
  
 [Distribuire il controllo di ammissione di chiamata](../../../deploy/deploy-enterprise-voice/deploy-call-admission-control.md) 
 
-[Get-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/Get-CsNetworkConfiguration)  
+[Get-CsNetworkConfiguration](/powershell/module/skype/Get-CsNetworkConfiguration)  
 
-[Set-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/Set-CsNetworkConfiguration)  
+[Set-CsNetworkConfiguration](/powershell/module/skype/Set-CsNetworkConfiguration)  
 
-[Remove-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/Remove-CsNetworkConfiguration)  
+[Remove-CsNetworkConfiguration](/powershell/module/skype/Remove-CsNetworkConfiguration)

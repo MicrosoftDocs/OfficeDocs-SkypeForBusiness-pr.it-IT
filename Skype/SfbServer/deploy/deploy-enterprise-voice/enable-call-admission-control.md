@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 80201105-18f7-4c02-9c71-8df5a952f6c7
 description: Abilitare il controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 9ea8b03b48827abbb73e3d6e93ffb88ab93ad1ff
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2b8096a9223250cec88e57e68fdc201f5591fd92
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831016"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51109862"
 ---
 # <a name="enable-call-admission-control-in-skype-for-business-server"></a>Abilitare il controllo di ammissione di chiamata in Skype for Business Server
  
@@ -64,8 +64,8 @@ Dopo aver configurato le impostazioni di rete per la distribuzione del servizio 
     
 ## <a name="see-also"></a>Vedere anche
 
-[Get-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/get-csnetworkconfiguration?view=skype-ps)
+[Get-CsNetworkConfiguration](/powershell/module/skype/get-csnetworkconfiguration?view=skype-ps)
   
-[Set-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/set-csnetworkconfiguration?view=skype-ps)
+[Set-CsNetworkConfiguration](/powershell/module/skype/set-csnetworkconfiguration?view=skype-ps)
   
-[Remove-CsNetworkConfiguration](https://docs.microsoft.com/powershell/module/skype/remove-csnetworkconfiguration?view=skype-ps)
+[Remove-CsNetworkConfiguration](/powershell/module/skype/remove-csnetworkconfiguration?view=skype-ps)

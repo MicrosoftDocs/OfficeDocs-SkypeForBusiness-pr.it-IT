@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Vedere come selezionare le lingue dell'operatore automatico per un numero di Audioconferenza in Skype for Business online.
-ms.openlocfilehash: 93b6ea917c7f79747273366893efc47a22b89bb2
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: d2b4c0d9be666a6ee7de9c2bd36b8dd06cccdf32
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44163902"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51109998"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-skype-for-business-online"></a>Impostare le lingue dell'operatore automatico per Audioconferenza in Skype for Business online
 
@@ -35,42 +35,42 @@ ms.locfileid: "44163902"
 
 L'operatore automatico di Audioconferenza per Skype for Business può dare il benvenuto ai partecipanti in diverse lingue quando questi ultimi aderiscono a una riunione.
   
-Choose one primary language and up to four secondary languages. The primary language that you set will be used first and the secondary languages will be used by the auto-attendant in order that you select. 
+Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua impostata come principale verrà utilizzata per prima e le lingue secondarie verranno utilizzate dall'operatore automatico nell'ordine selezionato. 
   
 > [!NOTE]
->  Puoi cambiare solo le lingue dei numeri di audioconferenza che sono della categoria Dedicata. Non è possibile modificare le lingue del numero di audioconferenza condiviso.
+>  È possibile modificare solo le lingue dei numeri di audioconferenza della categoria Dedicata. Non è possibile modificare le lingue del numero di audioconferenza condiviso.
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="set-the-conferencing-auto-attendant-languages"></a>Impostare le lingue dell'operatore automatico per i servizi di conferenza
 
-Per eseguire questo passaggio [devi essere un amministratore globale](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) o un amministratore Skype for [Business.](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)
+Per eseguire questo [passaggio,](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) è necessario essere un amministratore globale o un amministratore di [Skype for Business.](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)
     
-1. **Nell'interfaccia di amministrazione di Skype for Business,** nella barra di spostamento sinistra, passa a Portale **legacy.** Nel portale legacy seleziona **Audioconferenza** e quindi fai clic su **Microsoft bridge.**
+1. **Nell'interfaccia di amministrazione di Skype for Business,** nel riquadro di spostamento sinistro, passare a Portale **legacy.** Una volta nel portale legacy, selezionare **Audioconferenza** e quindi fare clic su **Bridge Microsoft.**
     
-2. Seleziona il numero di telefono per i servizi di audioconferenza dall'elenco e, nel riquadro Azioni, fai clic **su Imposta lingue.** È possibile cambiare solo le lingue dei numeri di audioconferenza dedicati.  
+2. Selezionare il numero di telefono per i servizi di audioconferenza nell'elenco e nel riquadro Azioni fare clic **su Imposta lingue.** È possibile cambiare solo le lingue dei numeri di audioconferenza dedicati.  
     
 3. Nella pagina **Imposta lingue,** fai clic sull'elenco **Lingua principale** per visualizzare l'elenco completo delle lingue supportate. Se lo desideri, fai clic su ognuno degli elenchi delle **Lingue secondarie** per selezionare una lingua secondaria.
     
     > [!NOTE]
-    > Vengono elencate le lingue principali e secondarie supportate. L'ordine in cui le si seleziona nell'elenco sarà l'ordine delle lingue presentate ai chiamanti. 
+    > Vengono elencate le lingue principali e secondarie supportate. L'ordine in cui vengono selezionati negli elenchi sarà l'ordine delle lingue presentate ai chiamanti. 
   
 4. Fare clic su **Salva**.
     
-## <a name="want-else-should-i-know"></a>Altre informazioni da conoscere
+## <a name="want-else-should-i-know"></a>Se vuoi altro, devo saperlo?
 
 - Per visualizzare l'elenco delle lingue supportate per Audioconferenza, consulta [Lingue supportate per Audioconferenza](/MicrosoftTeams/audio-conferencing-supported-languages).
     
 - Le lingue possono essere impostate per numeri specifici, ma non per i numeri di telefono condivisi.
     
-- Per visualizzare un elenco dei paesi e delle aree geografiche in cui sono disponibili i servizi di audioconferenza in Microsoft 365 o Office 365 che utilizzano Microsoft come provider, consulta Numeri di telefono per i servizi [di audioconferenza.](phone-numbers-for-audio-conferencing.md)
+- Per visualizzare un elenco di paesi/aree geografiche in cui sono disponibili audioconferenze in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere Numeri di telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing.md)
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 
-Per automatizzare questo passaggio, puoi utilizzare i cmdlet [Set-CsOnlineDialInConferencingServiceNumber](https://go.microsoft.com/fwlink/?LinkId=617689) e [Get-CsOnlineDialInConferencingLanguagesSupported.](https://go.microsoft.com/fwlink/?LinkId=617684)
+Per automatizzare questo passaggio, è possibile usare i cmdlet [Set-CsOnlineDialInConferencingServiceNumber](/powershell/module/skype/Set-CsOnlineDialInConferencingServiceNumber) e [Get-CsOnlineDialInConferencingLanguagesSupported.](/powershell/module/skype/Get-CsOnlineDialInConferencingLanguagesSupported)
   
-Per ulteriori informazioni, consulta Uso Windows PowerShell [eseguire le più comuni attività di](https://go.microsoft.com/fwlink/?LinkId=525038) gestione di Skype for Business Online
+Per altre informazioni, vedere [Uso Windows PowerShell attività di gestione](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md) comuni di Skype for Business Online
   
 ## <a name="related-topics"></a>Argomenti correlati
 

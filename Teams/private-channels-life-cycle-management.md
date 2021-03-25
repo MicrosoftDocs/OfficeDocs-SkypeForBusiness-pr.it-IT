@@ -17,17 +17,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come gestire canali privati nell'organizzazione con l'API Graph.
-ms.openlocfilehash: 854e8721dac7d49e258db42845b84480955bfec7
-ms.sourcegitcommit: 44bd56f67b1ad85ef8c21bb30d5b0d47e5a80339
+description: Informazioni su come gestire i canali privati nell'organizzazione usando l'API Graph.
+ms.openlocfilehash: e97d808bd9f544ef611b0b5e4b0456d302b4013d
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49772039"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117744"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
-Qui sono disponibili le indicazioni necessarie per gestire l'uso dell'API Graph per gestire i canali [privati di Teams](https://docs.microsoft.com/microsoftteams/private-channels) nell'organizzazione.
+Ecco le indicazioni necessarie per gestire l'uso dell'API Graph per gestire i canali [privati di Teams](./private-channels.md) nell'organizzazione.
 
 ## <a name="set-whether-team-members-can-create-private-channels"></a>Specificare se i membri del team possono creare canali privati
 
@@ -138,7 +138,7 @@ Gli amministratori possono usare i comandi delle API Graph per eseguire query su
 
 È possibile elencare i proprietari e i membri di un canale privato per decidere se sia necessario alzare di livello determinati membri del canale privato e impostarli come proprietari. Questo può verificarsi se sono presenti proprietari di canali privati che hanno lasciato l'organizzazione e il canale privato richiede l'assistenza da parte dell'amministratore per rivendicarne la proprietà.
 
-L'amministratore può usare l'API Graph per eseguire queste operazioni.
+Gli amministratori possono usare l'API Graph per eseguire queste azioni.
 
 È possibile provare questi comandi con [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -211,14 +211,14 @@ L'amministratore può usare l'API Graph per eseguire queste operazioni.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Usare l'API Microsoft Graph per lavorare con Teams](https://docs.microsoft.com/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
+[Usare l'API Microsoft Graph per lavorare con Teams](/graph/api/resources/teams-api-overview?view=graph-rest-1.0)
 
-[Elencare canali](https://docs.microsoft.com/graph/api/channel-list)
+[Elencare canali](/graph/api/channel-list)
 
-[Creare canali](https://docs.microsoft.com/graph/api/channel-post)
+[Creare canali](/graph/api/channel-post)
 
-[Aggiungere membri al canale](https://docs.microsoft.com/graph/api/conversationmember-add)
+[Aggiungere membri al canale](/graph/api/conversationmember-add)
 
-[Aggiornare membri nel canale](https://docs.microsoft.com/graph/api/conversationmember-update)
+[Aggiornare membri nel canale](/graph/api/conversationmember-update)
 
-[Rimuovere membri dal canale](https://docs.microsoft.com/graph/api/conversationmember-delete)
+[Rimuovere membri dal canale](/graph/api/conversationmember-delete)

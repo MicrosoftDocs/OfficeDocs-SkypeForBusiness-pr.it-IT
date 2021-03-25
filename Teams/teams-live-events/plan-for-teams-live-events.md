@@ -20,12 +20,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 26192da2b9d11a94f9d37adb7e1a170cb81d3170
-ms.sourcegitcommit: 0fddd05334e37b0086ccc0aebe17a26f8e6e8e6c
+ms.openlocfilehash: 1d5c2ad8b737c8299eb04735d5df5dc2893c3568
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50884580"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51119155"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -45,7 +45,7 @@ Ecco le licenze che devono essere assegnate per organizzare, produrre o presenta
 - **Per organizzare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A3 o A5. 
 - **Per produrre o presentare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A1, A3 o A5. L'eccezione a questo requisito è che gli utenti guest possono presentare senza licenza se vengono soddisfatti gli altri criteri per gli [utenti guest](plan-for-teams-live-events.md#guest-to-present).
 - Una licenza di Microsoft Teams - questa licenza è inclusa nelle licenze indicate al primo e al secondo punto dell'elenco.
-- Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](https://docs.microsoft.com/stream/license-overview).
+- Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](/stream/license-overview).
 
   Gli utenti non avranno bisogno di una licenza di Microsoft Stream assegnata se si vuole consentire loro solo di registrare e scaricare le registrazioni. Ciò significa che le registrazioni non verranno archiviate in Microsoft Stream ma in Azure Media Services (AMS) con un limite di 180 giorni prima di essere eliminate. Non è qualcosa a questo punto che gli amministratori possono controllare o gestire per includere la possibilità di eliminarle.
 
@@ -63,7 +63,7 @@ Ecco le licenze che devono essere assegnate per organizzare, produrre o presenta
 > [!NOTE]
 > Gli eventi live di Teams sono ora disponibili per le organizzazioni GCC (Government Cloud Community) degli Stati Uniti.
 
-Per altre informazioni sulle licenze, vedere [Licenze per i componenti aggiuntivi di Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing).
+Per altre informazioni sulle licenze, vedere [Licenze per i componenti aggiuntivi di Microsoft Teams](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
 L'utente deve disporre di:
 

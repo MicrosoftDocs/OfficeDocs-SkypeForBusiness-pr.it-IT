@@ -14,15 +14,15 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 66124a70-67e8-4bda-9da5-8ab13afccf49
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile utilizzare la sezione Add-in della pagina di Persistent Chat per associare GLI URL alle chat room di Persistent Chat. Questi URL vengono visualizzati nel client nella chat room nel riquadro di estendibilità della conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori di chat room devono associare le chat room a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
-ms.openlocfilehash: 87fa42ec690a46183b0121fe9504749031e14b4a
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: È possibile utilizzare la sezione Componente aggiuntivo della pagina Persistent Chat per associare GLI URL alle chat room di Persistent Chat. Questi URL vengono visualizzati nel client nella chat room nel riquadro di estendibilità della conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori di chat devono associare le chat room a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
+ms.openlocfilehash: 948a62eb7580e7a6b7f15d21048b912f62819084
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49808396"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118855"
 ---
 # <a name="persistent-chat-add-in"></a>Componente aggiuntivo di Chat persistente
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. Le stesse funzionalità sono disponibili in Teams. Per altre informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](https://docs.microsoft.com/MicrosoftTeams/upgrade-start-here) Se è necessario usare Chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](/MicrosoftTeams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.

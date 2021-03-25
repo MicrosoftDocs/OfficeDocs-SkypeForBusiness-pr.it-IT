@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
-ms.openlocfilehash: b2ee63ca498e810d7eebdb80ab6252ce97864401
-ms.sourcegitcommit: 1c2359f10ad5f5ec10dc52508ef4774c04b631ab
+ms.openlocfilehash: 12b16d75b793c3d406aae8c510400f07dfce2cec
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2020
-ms.locfileid: "44230965"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118265"
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 
@@ -43,7 +43,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Toronto</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Toronto</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
 
 ## <a name="phone-system"></a>Sistema telefonico
@@ -60,8 +60,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 | **Funzionalità**                                        | **Dettagli**                                                                                                                                                                                                                                                                 |
 |:---------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | I Piani per chiamate sono disponibili per l'acquisto?  <br/>    | Sì  <br/>                                                                                                                                                                                                                                                                  |
-| Minuti disponibili per i Piani per chiamate.               | Sono disponibili quattro opzioni di piano per ogni mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 3000 minuti</li></li><li>Piano per chiamate nazionali e internazionali: 3.000 minuti di chiamate nazionali -OR- 600 minuti di chiamate internazionali (a seconda di quale viene raggiunto per primo nel mese di calendario)</li>|
-| Puoi effettuare chiamate in uscita ai numeri Premium?  <br/> | Non supportato al momento.<br/>                                                                                                                                                                                                                                            |
+| Minuti disponibili per i Piani per chiamate.               | Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali da 120 minuti </li><li>Piano per chiamate nazionali da 240 minuti</li></li><li>Piano per chiamate nazionali di 3000 minuti</li></li><li>Piano per chiamate nazionali e internazionali: 3000 minuti di chiamate nazionali -OR- 600 minuti di chiamate internazionali (a seconda di quale sia stata raggiunta per prima nel mese di calendario)</li>|
+| È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato.<br/>                                                                                                                                                                                                                                            |
 | Chiamate in uscita possibili verso...?  <br/>                 | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/>                                                                                                                                                                  |
 
 > [!Note]
@@ -75,10 +75,10 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
 
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
+ Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
 
 > [!Note] 
-> Quando un utente di Un Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà considerato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada effettua una chiamata a un numero statunitense.
+> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada effettua una chiamata a un numero degli Stati Uniti.
 
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
@@ -90,6 +90,6 @@ Se vuoi procedere alla configurazione, consulta [Configurare i Crediti comunicaz
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)

@@ -25,16 +25,16 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Cina.
-ms.openlocfilehash: 8db46e038ff817844f738fbaea630089970908e7
-ms.sourcegitcommit: 67c686810d37bffda72a6e92155d9c8ec86bfae6
+ms.openlocfilehash: 76feb7bba530b766e8d00880963058d770a1bd49
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47766890"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51118245"
 ---
 # <a name="availability-in-china"></a>Disponibilità in Cina
 
-[Per trovare un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o per altre informazioni sulla disponibilità di Piano chiamata e Audioconferenza per paese e aree geografica.
+[Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
 Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Cina.
   
@@ -43,7 +43,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì, per l'uso da parte di utenti che si trovano al di fuori della Cina. Per altre informazioni, contattare il team dell'account.  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | Non geografiche. I numeri di telefono non sono associati a una località o a una città specifica. <br/>  Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | Non geografiche. I numeri di telefono non sono associati a una località o a una città specifica. <br/>  Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> | Sì, ad eccezione dei clienti che acquistano il servizio dalla Cina. Le funzionalità di chiamata in uscita sono disabilitate per i clienti che acquistano il servizio dalla Cina.   <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico
@@ -71,9 +71,9 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |:-----|:-----|
 |Per quali capitali o città principali puoi ottenere numeri a tariffa?  <br/> |Pechino  <br/> |
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
-|Sono disponibili numeri verdi gratuiti?  <br/> |Sì[(su richiesta),](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)ad eccezione dei clienti che acquistano il servizio dalla Cina. I numeri verde non sono disponibili per i clienti che acquistano il servizio dalla Cina. <br/> |
+|Sono disponibili numeri verdi gratuiti?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)), ad eccezione dei clienti che acquistano il servizio dalla Cina. I numeri verde non sono disponibili per i clienti che acquistano il servizio dalla Cina. <br/> |
    
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers).
+ Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
@@ -84,7 +84,6 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](/microsoftteams/getting-service-phone-numbers)
+[Ottenere numeri di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md)
 
 [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
-
