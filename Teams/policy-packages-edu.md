@@ -21,21 +21,23 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: f580d8c41fe629a1c705f650a2aef84302128c20
-ms.sourcegitcommit: ee217e1d7188842c7becd19387fd421b485c3575
+ms.openlocfilehash: 10b87a804523758df69a68ff9c5812a6ea5b448c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48908615"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117794"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
+
+[!INCLUDE [policy-wizard-edu](includes/policy-wizard-edu.md)]
 
 > [!NOTE]
 > Per informazioni approfondite sui criteri in Microsoft Teams, vedere [Assegnare i criteri agli utenti in Microsoft Teams](assign-policies.md).
 
 ## <a name="admins-getting-started-with-microsoft-teams-policy-management"></a>Amministratori: introduzione alla gestione dei criteri di Microsoft Teams
 
-Microsoft Teams consente agli utenti di svolgere attività come partecipare a riunioni o eventi live, chattare, effettuare chiamate e usare app. Configurare i criteri di amministrazione di Microsoft Teams giusti è un passaggio fondamentale per la creazione di un ambiente di apprendimento sicuro per gli studenti in Teams. Gli amministratori possono usare i criteri per controllare le funzionalità di Teams disponibili per gli utenti dell'istituto di istruzione.  Nella maggior parte dei casi, i criteri devono essere modificati per mantenere sicuro l'ambiente per studenti e docenti.  
+Microsoft Teams consente agli utenti di svolgere attività come partecipare a riunioni o eventi live, chattare, effettuare chiamate e usare app. Configurare i criteri di amministrazione di Microsoft Teams giusti è un passaggio fondamentale per la creazione di un ambiente di apprendimento sicuro per gli studenti in Teams. Gli amministratori possono usare i criteri per controllare le funzionalità di Teams disponibili per gli utenti dell'istituto di istruzione. Nella maggior parte dei casi, i criteri devono essere modificati per mantenere sicuro l'ambiente per studenti e docenti.  
 
 Ecco un elenco delle aree dei criteri principali disponibili in Microsoft Teams. Per altre informazioni sui criteri di ogni area e delle funzionalità che controllano, usare i link seguenti:
 
@@ -107,7 +109,7 @@ Una volta creata o aggiornata la definizione di criteri, è possibile assegnarla
 
 ![Riquadro Gestisci utenti sul lato destro, nella parte superiore della pagina Criteri di messaggistica.](media/edu-manage-users-pane.png)
 
-È possibile assegnare un criterio a un utente passando a **Utenti** , selezionando l'utente per il quale si vogliono aggiornare i criteri, e quindi selezionando **Criteri** e **Modifica**. Da qui è possibile selezionare la definizione di criteri che si vuole assegnare all'utente per ogni area di funzionalità.
+È possibile assegnare un criterio a un utente passando a **Utenti**, selezionando l'utente per il quale si vogliono aggiornare i criteri, e quindi selezionando **Criteri** e **Modifica**. Da qui è possibile selezionare la definizione di criteri che si vuole assegnare all'utente per ogni area di funzionalità.
 
 ![Riquadro Modifica criteri utente, sul lato destro della pagina Criteri assegnati.](media/edu-edit-user-policies-pane.png)
 
@@ -155,7 +157,7 @@ A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in mod
 
 ### <a name="view"></a>Visualizzare
 
-Visualizzare le impostazioni di ogni criterio in un pacchetto di criteri prima di assegnare il pacchetto. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Pacchetti di criteri** , selezionare il nome del pacchetto e quindi selezionare il nome del criterio.
+Visualizzare le impostazioni di ogni criterio in un pacchetto di criteri prima di assegnare il pacchetto. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Pacchetti di criteri**, selezionare il nome del pacchetto e quindi selezionare il nome del criterio.
 
 Stabilire se i valori predefiniti sono appropriati per la propria organizzazione o se è necessario personalizzarli in modo da renderli più restrittivi o permissivi.
 
@@ -189,7 +191,7 @@ Per altre informazioni, vedere [Assegnare un pacchetto di criteri a un gruppo](a
 
 #### <a name="assign-a-policy-package-to-a-large-set-batch-of-users"></a>Assegnare un pacchetto di criteri a un set di utenti di grandi dimensioni (batch)
 
-Usare l'assegnazione pacchetti di criteri per batch per assegnare un pacchetto di criteri a grandi set di utenti per volta. Per inviare un batch di utenti e il pacchetto di criteri da assegnare, usare il cmdlet [New-CsBatchPolicyPackageAssignmentOperation](https://docs.microsoft.com/powershell/module/teams/new-csbatchpolicypackageassignmentoperation). Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch.
+Usare l'assegnazione pacchetti di criteri per batch per assegnare un pacchetto di criteri a grandi set di utenti per volta. Per inviare un batch di utenti e il pacchetto di criteri da assegnare, usare il cmdlet [New-CsBatchPolicyPackageAssignmentOperation](/powershell/module/teams/new-csbatchpolicypackageassignmentoperation). Le assegnazioni vengono elaborate come operazione in background e viene generato un ID operazione per ogni batch.
 
 Un batch può contenere fino a 5.000 utenti. È possibile specificare gli utenti in base all'ID oggetto, all'UPN, all'indirizzo SIP o all'indirizzo di posta elettronica. Per altre informazioni, vedere [Assegnare un pacchetto di criteri a un batch di utenti](assign-policies.md#assign-a-policy-package-to-a-batch-of-users).
 
