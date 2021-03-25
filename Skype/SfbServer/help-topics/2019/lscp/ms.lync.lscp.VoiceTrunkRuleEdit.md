@@ -15,20 +15,17 @@ localization_priority: Normal
 ms.assetid: ff701979-9ea9-4ae8-a2da-91c4e1d97c25
 ROBOTS: NOINDEX, NOFOLLOW
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: fb4f96cf64896aa30b027c59a747828cd6021ccb
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 74955797a104841aca77ff533e55523edc56511e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824526"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51121796"
 ---
-# <a name="translation-rule-create-new-or-edit-existing"></a><span data-ttu-id="9579c-104">Regola di conversione: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="9579c-104">Translation Rule: Create New or Edit Existing</span></span>
+# <a name="translation-rule-create-new-or-edit-existing"></a><span data-ttu-id="25825-104">Regola di conversione: crearne una nuova o modificarne una esistente</span><span class="sxs-lookup"><span data-stu-id="25825-104">Translation Rule: Create New or Edit Existing</span></span>
 
-<span data-ttu-id="9579c-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="9579c-105">What do you want to do?</span></span> <span data-ttu-id="9579c-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="9579c-106">Click the link to the task that you want to perform.</span></span>
+<span data-ttu-id="25825-105">Operazione desiderata</span><span class="sxs-lookup"><span data-stu-id="25825-105">What do you want to do?</span></span> <span data-ttu-id="25825-106">Fare clic sul collegamento all'attività che si desidera eseguire.</span><span class="sxs-lookup"><span data-stu-id="25825-106">Click the link to the task that you want to perform.</span></span>
 
-- [<span data-ttu-id="9579c-107">Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="9579c-107">Create or modify a translation rule for called ID presentation in Skype for Business Server</span></span>](../../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
+- [<span data-ttu-id="25825-107">Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server</span><span class="sxs-lookup"><span data-stu-id="25825-107">Create or modify a translation rule for called ID presentation in Skype for Business Server</span></span>](../../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
 
-- [<span data-ttu-id="9579c-108">Creare o modificare manualmente una regola di conversione</span><span class="sxs-lookup"><span data-stu-id="9579c-108">Create or Modify a Translation Rule Manually</span></span>](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx)
-
-
-
+- [<span data-ttu-id="25825-108">Creare o modificare manualmente una regola di conversione</span><span class="sxs-lookup"><span data-stu-id="25825-108">Create or Modify a Translation Rule Manually</span></span>](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually)
