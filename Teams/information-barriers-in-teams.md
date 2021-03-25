@@ -16,12 +16,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 818e674014104178efea3e6467d2e5bfbf553c68
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 79a1a416e0d868129e2d78f305cfe32efb527d53
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50874796"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120647"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere alle informazioni in Microsoft Teams
 
@@ -111,7 +111,7 @@ I criteri IB vengono attivati quando si verificano gli eventi di Teams seguenti:
 
 - Un utente effettua una chiamata **telefonica in Teams:** ogni volta che un utente avvia una chiamata vocale (tramite VOIP) a un altro utente o gruppo di utenti, la chiamata viene valutata per assicurarsi che non violi i criteri IB di altri membri del team. In caso di violazione, la chiamata vocale viene bloccata.
 
-- **Guest in Teams** : le politiche IB si applicano anche agli ospiti in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [Gestire l'accesso guest nei gruppi di Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/create-groups/manage-guest-access-in-groups) Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](/office365/securitycompliance/information-barriers-policies)
+- **Guest in Teams** : le politiche IB si applicano anche agli ospiti in Teams. Se i guest devono essere individuabili nell'elenco indirizzi globale dell'organizzazione, vedere [Gestire l'accesso guest nei gruppi di Microsoft 365.](/microsoft-365/admin/create-groups/manage-guest-access-in-groups) Quando gli utenti guest sono individuabili, è [possibile definire i criteri IB.](/office365/securitycompliance/information-barriers-policies)
 
 ## <a name="how-policy-changes-impact-existing-chats"></a>Impatto delle modifiche ai criteri sulle chat esistenti
 
@@ -189,7 +189,7 @@ Quando viene creato un team, viene eseguito il provisioning di un sito di ShareP
 Esempio di criteri IB nel sito di SharePoint di un **team:** in Contoso Bank corporation l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
 Quando l'utente Sesha crea un team per il segmento Investment Banking, il team e il sito di SharePoint che lo contiene saranno accessibili solo agli utenti di Investment Banking. L'utente Nikita non può accedere al sito anche se ha il collegamento di sito.
 
-Per altre informazioni, vedere [Usare le barriere di informazioni con SharePoint.](https://docs.microsoft.com/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
+Per altre informazioni, vedere [Usare le barriere di informazioni con SharePoint.](/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni necessarie
 

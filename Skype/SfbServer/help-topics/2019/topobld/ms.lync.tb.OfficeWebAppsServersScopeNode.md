@@ -15,23 +15,23 @@ localization_priority: Normal
 ms.assetid: 087ca1f2-2329-4fa1-b6bb-685f2f4ba296
 ROBOTS: NOINDEX, NOFOLLOW
 description: Fare clic con il pulsante destro del mouse su Server Office Web Apps e scegliere Nuovo server Office Web Apps per aprire la procedura guidata.
-ms.openlocfilehash: eb03185e46e63cfe855155addba5e21c9d7418a1
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: dc58a6e203362f5811ecb60b2b8bc981b70c9ba3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49829936"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51121049"
 ---
 # <a name="office-web-apps-servers-scope-node"></a>Nodo di ambito di Office Online Server
 
-Fare clic con il pulsante destro del mouse su **Server Office Web Apps** e scegliere Nuovo server Office Web **Apps** per aprire la procedura guidata.
+Fare clic con il **pulsante destro del mouse** su Server Office Web Apps e scegliere Nuovo server Office Web **Apps** per aprire la procedura guidata.
 
 ![Nodo di ambito dei server OfficeWebApps](../../../media/OfficeWebApps_Servers_Scope_Node.jpg)
 
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
 
 - **Guida**. È possibile utilizzare questa opzione per accedere alla Guida per il nodo attivo.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Configurazione dell'integrazione con il server Office Web Apps](https://technet.microsoft.com/library/3370ab55-9949-4f32-b88b-5cffed6aaad8.aspx)
+[Configurazione dell'integrazione con il server Office Web Apps](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013)

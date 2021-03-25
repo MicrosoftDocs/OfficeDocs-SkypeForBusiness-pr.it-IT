@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 77f4b62a-f75c-424d-8f02-a6519090015d
 description: Un utente attendibile è un utente le cui credenziali sono state autenticate da un server attendibile in Skype for Business Server. Tale server è in genere un server Standard Edition, Enterprise Edition Front End o Director. Skype for Business Server si basa su Servizi di dominio Active Directory come unico archivio back-end attendibile delle credenziali utente.
-ms.openlocfilehash: bf0bde8478cd6c4e2eb068ffade7fba7fac14d56
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 544b661523bea73d65d64946d7bb88d4c6ecaa51
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832006"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120888"
 ---
 # <a name="user-and-client-authentication-for-skype-for-business-server"></a>Autenticazione utente e client per Skype for Business Server
  
@@ -46,11 +46,11 @@ Gli utenti con credenziali valide emesse da un partner federato sono attendibili
   
 I protocolli ICE e TURN utilizzano inoltre la richiesta di autenticazione del digest come descritto nella specifica RFC TURN IETF.
   
-I certificati client forniscono un modo alternativo per autenticare gli utenti da Skype for Business Server. Invece di fornire un nome utente e una password, gli utenti dispongono di un certificato e della chiave privata corrispondente al certificato necessario per risolvere una richiesta di verifica crittografica. Questo certificato deve avere un nome soggetto o un nome alternativo del soggetto che identifichi l'utente e che sia emesso da una CA radice attendibile dai server che eseguono Skype for Business Server, che sia entro il periodo di validità del certificato e che non sia stato revocato. Per essere autenticati, gli utenti devono digitare solo un PIN. I certificati sono particolarmente utili per telefoni, telefoni cellulari e altri dispositivi in cui è difficile immettere un nome utente e una password.
+I certificati client forniscono un modo alternativo per l'autenticazione degli utenti da Skype for Business Server. Invece di fornire un nome utente e una password, gli utenti dispongono di un certificato e della chiave privata corrispondente al certificato necessario per risolvere una richiesta di verifica crittografica. Questo certificato deve avere un nome soggetto o un nome alternativo del soggetto che identifichi l'utente e che sia emesso da una CA radice attendibile dai server che eseguono Skype for Business Server, che sia entro il periodo di validità del certificato e che non sia stato revocato. Per essere autenticati, gli utenti devono digitare solo un PIN. I certificati sono particolarmente utili per telefoni, telefoni cellulari e altri dispositivi in cui è difficile immettere un nome utente e una password.
   
-### <a name="cryptographic-requirements-due-to-asp-net-45"></a>Requisiti di crittografia dovuti ad ASP .NET 4.5 
+### <a name="cryptographic-requirements-due-to-asp-net-45"></a>Requisiti di crittografia dovuti a ASP.NET 4.5 
 
-A partire da Skype for Business Server 2015 CU5, AES non è supportato per ASP.NET 4.6 e ciò potrebbe causare l'avvio dell'app Riunioni Skype. Se un client usa AES come valore di convalida della chiave del computer, dovrai reimpostare il valore della chiave del computer su SHA-1 o su un altro algoritmo supportato a livello di sito dell'app Riunioni Skype in IIS. Se necessario, vedere [Gestione configurazione ASP.NET IIS 8.0](https://docs.microsoft.com/iis/get-started/whats-new-in-iis-8/iis-80-aspnet-configuration-management) per istruzioni.
+A partire da Skype for Business Server 2015 CU5, AES non è supportato per ASP.NET 4.6 e ciò potrebbe causare l'avvio dell'app Riunioni Skype. Se un client usa AES come valore di convalida della chiave del computer, dovrai reimpostare il valore della chiave del computer su SHA-1 o su un altro algoritmo supportato a livello di sito dell'app Riunioni Skype in IIS. Se necessario, vedere Gestione configurazione ASP.NET [IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-aspnet-configuration-management) per istruzioni.
   
 Altri valori supportati sono:
   
@@ -60,5 +60,4 @@ Altri valori supportati sono:
     
 - HMACSHA512
     
-  I valori AES, 3DES e MD5 non sono più consentiti, in quanto una volta erano ASP.NET 4. [I miglioramenti della crittografia in ASP.NET 4.5, pt. 2](https://blogs.msdn.microsoft.com/webdev/2012/10/23/cryptographic-improvements-in-asp-net-4-5-pt-2/) hanno altri dettagli.
-  
+  I valori AES, 3DES e MD5 non sono più consentiti, in quanto una volta erano ASP.NET 4. [Miglioramenti della crittografia in ASP.NET 4.5, pt. 2](https://blogs.msdn.microsoft.com/webdev/2012/10/23/cryptographic-improvements-in-asp-net-4-5-pt-2/) ha altri dettagli.

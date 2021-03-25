@@ -22,18 +22,18 @@ ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.callerid.overview
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: cd2074fec3027f1172b6ea681013f53994963cb5
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.openlocfilehash: e723311b2780dd1d43bad4874b72133e09ff4fc3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255449"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120677"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
 L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
   
-La funzionalità ID chiamante è disponibile per tutti gli utenti del Sistema telefonico, indipendentemente dalla connettività PSTN:
+La funzionalità ID chiamante è disponibile per tutti gli utenti del sistema telefonico, indipendentemente dalla connettività PSTN:
 
 - Piani per chiamate Microsoft 
 
@@ -54,7 +54,7 @@ Sono disponibili tre opzioni per l'ID chiamante PSTN in uscita:
   
 - Numero di telefono assegnato all'utente, ovvero l'impostazione predefinita.
     
-- Un numero di telefono classificato  come *servizio* e numero verde nell'inventario dei numeri di telefono dei Piani per chiamate. In genere assegnato a una coda di chiamata o operatore automatico dell'organizzazione.
+- Numero di telefono classificato  come  servizio e numero verde nell'inventario dei numeri di telefono dei Piani per chiamate. In genere assegnato a una coda di chiamata o operatore automatico dell'organizzazione.
     
 - Impostato su anonimo.
     
@@ -64,17 +64,17 @@ Tuttavia, non è possibile assegnare questi tipi di numeri di telefono per l'ID 
     
 - Un numero di telefono Skype for Businesss Server locale
     
-Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](/microsoftteams/set-the-caller-id-for-a-user).
+Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](./set-the-caller-id-for-a-user.md).
   
-### <a name="end-user-control-of-outbound-caller-id"></a>Controllo dell'ID chiamante in uscita da parte dell'utente finale
+### <a name="end-user-control-of-outbound-caller-id"></a>Controllo utente finale dell'ID chiamante in uscita
 
 L'attributo EnableUserOverride consente a uno o più utenti di modificare l'impostazione dell'ID chiamante su **Anonimo.** Ciò è valido solo quando viene configurato un criterio CallingLineIdentity con un parametro CallingIDSubstitute LineURI o sostituto. Il valore predefinito di EnableUserOverride è False.
   
-Gli utenti finali possono impostare  l'ID  chiamante su Anonimo utilizzando la scheda Impostazioni nel client desktop di Skype for Business, seleziona Chiama un utente finale **(se** abilitato dall'amministratore), quindi seleziona Nascondi il mio numero di telefono e le informazioni del profilo per tutte le **chiamate.** In Teams, gli utenti possono accedere all'immagine del profilo nell'angolo in alto a destra, selezionare Impostazioni chiamate, quindi in ID chiamante selezionare Nascondi il mio numero di telefono e le informazioni del profilo per tutte le  >   **chiamate.** 
+Gli utenti finali possono impostare  l'ID  chiamante su Anonimo usando la scheda Impostazioni nel client desktop Skype for Business, selezionare Chiama un utente finale **(se** abilitato dall'amministratore) e quindi selezionare Nascondi il numero di telefono e le informazioni del profilo per tutte le **chiamate.** In Teams gli utenti possono passare all'immagine del profilo nell'angolo in alto a destra, selezionare Impostazioni chiamate e quindi in ID chiamante selezionare Nascondi il numero di telefono e le informazioni del profilo per tutte  >   **le chiamate.** 
   
 ||||
 |:-----|:-----|:-----|
-|**Windows** <br/> |**Versione** <br/> |**Supportata** <br/> |
+|**Windows** <br/> |**Versione** <br/> |**Supportato** <br/> |
 |A portata di clic  <br/> |Current Channel rilasciato il 6 dicembre 2016 - versione 1611 (Build 7571.2072)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Prima versione per Deferred Channel rilasciata il 22 febbraio 2017 - versione 1701 (Build 7766.2060)  <br/> |Sì  <br/> |
 |A portata di clic  <br/> |Deferred Channel rilasciato il 13 giugno 2017 - versione 1701 (Build 7766.2092)  <br/> |Sì  <br/> |
@@ -83,22 +83,21 @@ Gli utenti finali possono impostare  l'ID  chiamante su Anonimo utilizzando la s
    
 ## <a name="inbound-caller-id"></a>ID chiamante in ingresso
 
-Sistema telefonico mostrerà l'ID di un numero di telefono esterno se è associato a un utente in Azure AD. Se il numero di telefono non è presente in Azure AD, verrà visualizzato il nome visualizzato fornito con telco, se disponibile.
+Sistema telefonico mostrerà l'ID chiamato per un numero di telefono esterno se il numero è associato a un utente in Azure AD. Se il numero di telefono non è in Azure AD, il nome visualizzato fornito da telco verrà visualizzato se disponibile.
 
 L'attributo BlockIncomingCallerID consente di bloccare l'ID chiamante nelle chiamate PSTN in arrivo. Puoi impostare questo attributo, ma questo non è disponibile per gli utenti finali nella pagina Impostazioni utente. Ed è attualmente disponibile solo con connettività PSTN in linea.
   
-Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](/microsoftteams/set-the-caller-id-for-a-user).
+Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](./set-the-caller-id-for-a-user.md).
   
 ## <a name="related-topics"></a>Argomenti correlati
-[Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)
+[Domande comuni sul trasferimento dei numeri di telefono](./phone-number-calling-plans/port-order-overview.md)
 
-[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](/microsoftteams/different-kinds-of-phone-numbers-used-for-calling-plans)
+[Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](./different-kinds-of-phone-numbers-used-for-calling-plans.md)
 
 [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization)
 
-[Termini e condizioni per le chiamate al numero di emergenza](/microsoftteams/emergency-calling-terms-and-conditions)
+[Termini e condizioni per le chiamate al numero di emergenza](./emergency-calling-terms-and-conditions.md)
 
 [Skype for Business Online: dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   
- 

@@ -19,12 +19,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1e6628467d4300130c39a3bade87919fb064a14f
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: ae050080814afe12ce2ba791c6b68058d5e4bc58
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50874706"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120858"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Considerazioni e autorizzazioni per le app di Microsoft Teams
 
@@ -37,7 +37,7 @@ Le app di Microsoft Teams consentono di aggregare una o più funzionalità in un
 
 Le app sono autorizzate dagli utenti e gestite dall'IT dal punto di vista dei criteri. Tuttavia, per la maggior parte, le autorizzazioni e il profilo di rischio di un'app sono definiti dalle autorizzazioni e dai profili di rischio delle funzionalità contenute nell'app. Di conseguenza, questo articolo si concentra sulle autorizzazioni e sulle considerazioni a livello di funzionalità.
 
-Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate nella documentazione per sviluppatori di [Microsoft Teams](https://aka.ms/teamsdevdocs) o nelle autorizzazioni per [Microsoft Graph.](https://developer.microsoft.com/graph/docs/concepts/permissions_reference) Si tratta semplicemente di una abbreviazione descrittiva ai fini di questo articolo.
+Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate nella documentazione per sviluppatori di [Microsoft Teams](/microsoftteams/platform/overview) o nelle autorizzazioni per [Microsoft Graph.](/graph/permissions-reference) Si tratta semplicemente di una abbreviazione descrittiva ai fini di questo articolo.
 
 
 | Titolo   | Descrizione    |
@@ -45,7 +45,7 @@ Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_M
 | ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Usare le tabelle seguenti come guida per comprendere le autorizzazioni richieste dall'app che si sta esaminando.</li></ul> |
 | ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se consentire l'accesso all'app o al servizio stesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, ad eccezione dei bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Pertanto, qualsiasi app che include un bot richiede queste autorizzazioni e ha almeno quel profilo di rischio. </li></ul>|
 
-Vedere anche [Richiedere autorizzazioni per i dispositivi per la scheda Microsoft Teams.](https://docs.microsoft.com/microsoftteams/platform/concepts/device-capabilities/native-device-permissions)
+Vedere anche [Richiedere autorizzazioni per i dispositivi per la scheda Microsoft Teams.](/microsoftteams/platform/concepts/device-capabilities/native-device-permissions)
 
 ## <a name="global-app-permissions-and-considerations"></a>Considerazioni e autorizzazioni per le app globali
 
@@ -61,9 +61,9 @@ Nessuno
 
 - Un'app deve divulgare i dati usati e i relativi collegamenti alle condizioni d'uso e all'informativa sulla privacy.
 
-- [Il consenso specifico delle](resource-specific-consent.md) risorse fornisce un set di autorizzazioni che le app possono richiedere, che vengono visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni di consenso specifiche delle risorse, vedere Informazioni [di riferimento sulle autorizzazioni del grafico.](https://docs.microsoft.com/graph/permissions-reference#teams-resource-specific-consent-permissions)
+- [Il consenso specifico delle](resource-specific-consent.md) risorse fornisce un set di autorizzazioni che le app possono richiedere, che vengono visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni di consenso specifiche delle risorse, vedere Informazioni [di riferimento sulle autorizzazioni del grafico.](/graph/permissions-reference#teams-resource-specific-consent-permissions)
 
-- Le app potrebbero anche avere bisogno di autorizzazioni diverse da quelle specifiche per le risorse. Dopo l'installazione di un'app, l'app può richiedere le autorizzazioni di Graph tramite una richiesta di consenso. Per altre informazioni, vedere Informazioni sulle esperienze [di consenso delle applicazioni di Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/application-consent-experience) È possibile configurare le autorizzazioni API e il consenso nel portale di Azure. Per altre informazioni, vedere Framework di consenso [di Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/develop/consent-framework)
+- Le app potrebbero anche avere bisogno di autorizzazioni diverse da quelle specifiche per le risorse. Dopo l'installazione di un'app, l'app può richiedere le autorizzazioni di Graph tramite una richiesta di consenso. Per altre informazioni, vedere Informazioni sulle esperienze [di consenso delle applicazioni di Azure AD.](/azure/active-directory/develop/application-consent-experience) È possibile configurare le autorizzazioni API e il consenso nel portale di Azure. Per altre informazioni, vedere Framework di consenso [di Azure Active Directory.](/azure/active-directory/develop/consent-framework)
 
 ## <a name="bots-and-messaging-extensions"></a>Bot ed estensioni di messaggistica
 

@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 499b6966-25f4-4b90-a225-d6be48ddab19
 ROBOTS: NOINDEX, NOFOLLOW
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 98580f52fa87fb9381409b0a97b4d84efc17b222
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 71b37f08ffabfb03e8e0d0f4f400a727a2e7057c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49833556"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51121806"
 ---
 # <a name="trunk-configuration"></a>Configurazione trunk
 
@@ -32,7 +32,4 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server](../../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
 
-- [Creare o modificare manualmente una regola di conversione](https://technet.microsoft.com/library/049d1db3-af58-48c5-be89-52e1d068a4bd.aspx)
-
-
-
+- [Creare o modificare manualmente una regola di conversione](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually)

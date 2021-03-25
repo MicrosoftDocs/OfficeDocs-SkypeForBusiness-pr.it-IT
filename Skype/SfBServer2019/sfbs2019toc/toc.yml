@@ -985,7 +985,7 @@
           href: ../../SfbServer/manage/authentication/authentication.md?toc=/SkypeForBusiness/sfbs2019toc/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json
           items:
             - name: Usare ADAL
-              href: ../../SfbServer/manage/authentication/use-adal.md?toc=/SkypeForBusiness/sfbs2019toc/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json
+              href: /microsoft-365/enterprise/hybrid-modern-auth-overview?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2fsfbs2019toc%2ftoc.json
             - name: Eseguire un'installazione di appoggio dei certificati AV e OAuth
               href: ../../SfbServer/manage/authentication/stage-av-and-oauth-certificates.md?toc=/SkypeForBusiness/sfbs2019toc/toc.json&bc=/SkypeForBusiness/breadcrumb/toc.json
             - name: Assegnare un certificato da server a server

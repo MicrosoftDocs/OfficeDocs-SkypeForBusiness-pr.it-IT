@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b4a6f59223103527b9a2ad95101a2a8ab5044caf
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: ed657590e024104e773b7a96b785b3b3db0ccbfc
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909370"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120747"
 ---
 # <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -190,7 +190,7 @@ I criteri di messaggistica vengono usati per controllare le funzionalità di mes
 #### <a name="steps-to-create-teams-message-policies"></a>Procedura per la creazione di criteri di messaggistica di Teams
 
 1. Trovare il file **TeamsMessagingPolicies.csv** nella cartella degli script nel repository.
-1. Aggiornare il file **TeamsMessagingPolicies.csv** con le informazioni specifiche dell'organizzazione. Altre informazioni su alcune delle opzioni sono disponibili [qui](https://docs.microsoft.com/microsoftteams/messaging-policies-in-teams#messaging-policy-settings).
+1. Aggiornare il file **TeamsMessagingPolicies.csv** con le informazioni specifiche dell'organizzazione. Altre informazioni su alcune delle opzioni sono disponibili [qui](./messaging-policies-in-teams.md#messaging-policy-settings).
 1. Trovare lo script **CreateTeamsMessagePolicies.ps1** nella cartella degli script nel repository.
 1. In PowerShell eseguire lo script **CreateTeamsMessagePolicies.ps1**.
 
@@ -211,7 +211,7 @@ Le app vengono aggiunte alla barra delle app. Questa barra si trova sul lato del
 
 #### <a name="create-the-frontline-manager-app-setup-policy"></a>Creare i criteri di installazione app per i manager sul campo
 
-Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy).
+Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](./teams-app-setup-policies.md#create-a-custom-app-setup-policy).
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
 2. Fare clic su  **Aggiungi**.  
@@ -235,7 +235,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 
 #### <a name="create-the-frontline-worker-app-setup-policy"></a>Creare i criteri di installazione app per gli operatori sul campo
 
-Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](https://docs.microsoft.com/MicrosoftTeams/teams-app-setup-policies#create-a-custom-app-setup-policy).
+Le impostazioni seguenti possono essere personalizzate in base alle esigenze aziendali. Le opzioni consigliate sono state scelte in base alle procedure consigliate e per semplificare l'onboarding di nuovi utenti su vasta scala. Per altre informazioni, fare clic [qui](./teams-app-setup-policies.md#create-a-custom-app-setup-policy).
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
 2. Fare clic su  **Aggiungi**.
@@ -297,8 +297,8 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 Per lavorare con un numero considerevole di utenti in Teams, prima di tutto è necessario creare gli utenti in Azure AD. Ci sono molti modi per eseguire il provisioning di un numero elevato di utenti, ma in questo caso si evidenzia quanto segue:
 
 - Se questi utenti sono già presenti in uno dei seguenti sistemi HR, usare i collegamenti seguenti per configurarne il provisioning:
-  - SAP SuccessFactors - [Esercitazione: configurare il provisioning degli utenti SAP SuccessFactors in Active Directory](https://docs.microsoft.com/azure/active-directory/saas-apps/sap-successfactors-inbound-provisioning-tutorial).
-  - Workday - [Esercitazione: configurare Workday per il provisioning automatico degli utenti](https://docs.microsoft.com/azure/active-directory/saas-apps/workday-inbound-tutorial).
+  - SAP SuccessFactors - [Esercitazione: configurare il provisioning degli utenti SAP SuccessFactors in Active Directory](/azure/active-directory/saas-apps/sap-successfactors-inbound-provisioning-tutorial).
+  - Workday - [Esercitazione: configurare Workday per il provisioning automatico degli utenti](/azure/active-directory/saas-apps/workday-inbound-tutorial).
 - Se le informazioni degli utenti sono archiviate in altri sistemi, procedere con i passaggi successivi.
 
 Per gestire questi utenti su vasta scala in modo più efficace, è necessario creare due gruppi di sicurezza per i manager sul campo e per gli operatori sul campo ed eseguire il provisioning degli utenti direttamente nei gruppi di sicurezza, seguendo questa procedura:
@@ -310,7 +310,7 @@ Per gestire questi utenti su vasta scala in modo più efficace, è necessario cr
 1. Trovare il file **SecurityGroups.csvv** nella cartella degli script nel repository.
 1. Aggiornare il file **SecurityGroups.csv** con le informazioni specifiche del gruppo di sicurezza dell'organizzazione.
     1. Aggiornare i campi **MessagePolicy**, **AppPermissionPolicy** e **AppSetupPolicy** in modo da associarli ai criteri appropriati creati in precedenza.
-    1. Aggiornare il campo **LicensePlan** per riflettere la licenza che si intende assegnare a ogni utente. Per altre informazioni sui nomi dei prodotti e sugli identificatori dei piani di servizio, vedere la documentazione [qui](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
+    1. Aggiornare il campo **LicensePlan** per riflettere la licenza che si intende assegnare a ogni utente. Per altre informazioni sui nomi dei prodotti e sugli identificatori dei piani di servizio, vedere la documentazione [qui](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 1. In PowerShell eseguire lo script **CreateUsers.ps1** presente nelle risorse.
 
 ### <a name="assign-licensing-to-users-via-group-based-licensing"></a>Assegnare licenze agli utenti tramite le licenze basate sui gruppi
@@ -379,7 +379,7 @@ Le funzionalità minime di gestione degli errori è stata implementata in questi
 
 ## <a name="further-reading"></a>Altre informazioni
 
-- [Nuovo canale del team (PowerShell)](https://docs.microsoft.com/powershell/module/teams/new-teamchannel?view=teams-ps)
-- [Nuovi criteri di messaggistica dei team (PowerShell)](https://docs.microsoft.com/powershell/module/skype/new-csteamsmessagingpolicy?view=skype-ps)
+- [Nuovo canale del team (PowerShell)](/powershell/module/teams/new-teamchannel?view=teams-ps)
+- [Nuovi criteri di messaggistica dei team (PowerShell)](/powershell/module/skype/new-csteamsmessagingpolicy?view=skype-ps)
 - [Assegnare i criteri agli utenti in Microsoft Teams](assign-policies.md#install-and-connect-to-the-microsoft-teams-powershell-module) 
-- [Assegnare le licenze e gli account utente con PowerShell di Office 365.](https://docs.microsoft.com/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)
+- [Assegnare le licenze e gli account utente con PowerShell di Office 365.](/office365/enterprise/powershell/assign-licenses-to-user-accounts-with-office-365-powershell)

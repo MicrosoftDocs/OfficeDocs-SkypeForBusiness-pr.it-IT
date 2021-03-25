@@ -20,23 +20,23 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: 'Informazioni sulle informazioni inviate automaticamente agli utenti tramite posta elettronica quando le impostazioni delle conferenze telefoniche con accesso esterno vengono modificate in Microsoft Teams. '
-ms.openlocfilehash: 1cef5f0ea8865820f6f6f83e29fe5f66799b70ae
-ms.sourcegitcommit: d1e4e1105d86745009cf0fdf42d1fc5ad545a952
+description: 'Informazioni sulle informazioni che vengono inviate automaticamente agli utenti tramite posta elettronica quando le impostazioni dei servizi di conferenza telefonica con accesso esterno cambiano in Microsoft Teams. '
+ms.openlocfilehash: a9ca30e7e701afca2e42eccfaef4f3d45660cd3a
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2020
-ms.locfileid: "46788690"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120757"
 ---
 # <a name="emails-sent-to-users-when-their-settings-change-in-microsoft-teams"></a>Messaggi di posta elettronica inviati agli utenti quando le impostazioni cambiano in Microsoft Teams
 
 I messaggi di posta elettronica vengono inviati automaticamente agli utenti che sono [abilitati per le audioconferenze](set-up-audio-conferencing-in-teams.md) tramite Microsoft come provider di servizi di audioconferenza.
 
-Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica inviata agli utenti abilitati per le audioconferenze. Tuttavia, se desideri limitare il numero di messaggi di posta elettronica inviati agli utenti, puoi disabilitare l'opzione. Le audioconferenze in Microsoft 365 o Office 365 invieranno un messaggio di posta elettronica agli utenti quando:
+Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica inviata agli utenti abilitati per le audioconferenze. Tuttavia, se desideri limitare il numero di messaggi di posta elettronica inviati agli utenti, puoi disabilitare l'opzione. Le audioconferenze in Microsoft 365 o Office 365 invieranno posta elettronica ai messaggi di posta elettronica degli utenti quando:
 
 - **Viene assegnata loro una licenza di Audioconferenza o quando cambi il provider di audioconferenza e passi a Microsoft.**
 
-     Questo messaggio di posta elettronica include l'ID conferenza, il numero di telefono predefinito per le riunioni, il PIN per le audioconferenze dell'utente e le istruzioni e il collegamento per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business online che consente di aggiornare riunioni esistenti per l'utente. Vedi [Assegnare licenze per i componenti aggiuntivi Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing) o [Assegnare Microsoft come provider di servizi di audioconferenza.](/SkypeForBusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider)
+     Questo messaggio di posta elettronica include l'ID conferenza, il numero di telefono predefinito per le riunioni, il PIN per le audioconferenze dell'utente e le istruzioni e il collegamento per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business online che consente di aggiornare riunioni esistenti per l'utente. Vedere [Assegnare licenze per i componenti](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) aggiuntivi di Microsoft Teams o [Assegnare Microsoft come provider di servizi di audioconferenza.](/SkypeForBusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider)
 
     > [!NOTE]
     > Se l'organizzazione è stata abilitata per gli ID conferenza dinamici, tutte le riunioni dell'utente pianificate avranno ID conferenza univoci. È possibile impostare [gli ID audioconferenza dinamici all'interno dell'organizzazione](/skypeforbusiness/audio-conferencing-in-office-365/reset-a-conference-id-for-a-user). 
@@ -45,7 +45,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
 
      ![Verificare la licenza Skype for Business](media/teams-emails-sent-to-users-when-settings-change-image1.png)
 
-    Per ulteriori informazioni sulle licenze, consulta [l'articolo sulle licenze per i componenti aggiuntivi di Microsoft Teams.](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)
+    Per altre informazioni sulle licenze, vedere Licenze per i componenti aggiuntivi di [Microsoft Teams.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 
 - **L'ID conferenza o il numero di telefono per le conferenze predefinito di un utente cambia.**
 
@@ -57,7 +57,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
 
 - **Viene reimpostato il PIN di audioconferenza di un utente.**
 
-    Questo messaggio di posta elettronica contiene il PIN di audioconferenza dell'organizzatore, l'ID conferenza esistente e il numero di telefono di conferenza predefinito per l'utente. Consulta [Reimpostare il PIN di audioconferenza.](reset-the-audio-conferencing-pin-in-teams.md)
+    Questo messaggio di posta elettronica contiene il PIN di audioconferenza dell'organizzatore, l'ID conferenza esistente e il numero di telefono di conferenza predefinito per l'utente. Vedere [Reimpostare il PIN dei servizi di audioconferenza.](reset-the-audio-conferencing-pin-in-teams.md)
     
      Di seguito è riportato un esempio di questo messaggio di posta elettronica:
     
@@ -65,7 +65,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
   
 - **Una licenza dell'utente è stata rimossa o quando il provider di servizi di audioconferenza viene modificato da Microsoft a altri provider o nessuno.**
 
-    Ciò si verifica quando la licenza per i servizi **di audioconferenza** viene rimossa da un utente o quando si imposta il provider di servizi di audioconferenza su **Nessuno.**
+    Questo problema si verifica quando la licenza **di audioconferenza** viene rimossa da un utente o quando si imposta il provider di servizi di audioconferenza **su Nessuno**.
 
     Vedere [Assegnare o rimuovere licenze per Microsoft 365 per le aziende.](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)
 
@@ -78,43 +78,43 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
 
 ## <a name="make-changes-to-the-email-messages-that-are-sent-to-them"></a>Apportare modifiche ai messaggi di posta elettronica inviati
 
-È possibile apportare modifiche ai messaggi di posta elettronica inviati automaticamente agli utenti. Per impostazione predefinita, il mittente dei messaggi di posta elettronica verrà inviato da Microsoft 365 o Office 365, ma è possibile modificare il nome visualizzato usando Windows PowerShell. Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
+È possibile apportare modifiche al messaggio di posta elettronica che viene inviato automaticamente agli utenti. Per impostazione predefinita, il mittente dei messaggi di posta elettronica viene da Microsoft 365 o Office 365, ma è possibile modificare il nome visualizzato usando Windows PowerShell. Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)
 
 ## <a name="what-if-you-dont-want-email-to-be-sent-to-them"></a>E se non vuoi che la posta elettronica venga inviata a loro?
 
 Quando disattivi l'invio di messaggi di posta elettronica agli utenti, la posta elettronica non verrà inviata anche quando un utente riceve una licenza. In questo caso, l'ID conferenza, il numero di telefono per conferenze predefinito e, soprattutto, il PIN di audioconferenza non verranno inviati all'utente. In questo caso, devi informare l'utente inviandogli un messaggio di posta elettronica separato o chiamandolo.
 
-Per impostazione predefinita, i messaggi di posta elettronica vengono inviati agli utenti, ma se vuoi impedire loro di ricevere e-mail per i servizi di audioconferenza, puoi utilizzare Microsoft Teams o Windows PowerShell. 
+Per impostazione predefinita, i messaggi di posta elettronica verranno inviati agli utenti, ma se si vuole impedire loro di ricevere posta elettronica per le audioconferenze, è possibile usare Microsoft Teams o Windows PowerShell. 
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nella barra di spostamento sinistra, passa **a Riunioni**-  >  **Bridge conferenza.** 
+1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**. 
 
 2. Nella parte superiore della pagina **Bridge di conferenza** fare clic su Impostazioni **bridge.** 
 
-3. Nel riquadro **Impostazioni bridge abilitare o** disabilitare l'invio automatico dei messaggi di posta elettronica agli utenti in caso di modifica delle impostazioni di accesso **remoto.**
+3. Nel riquadro **Impostazioni bridge** abilitare o disabilitare Invia automaticamente messaggi di posta elettronica agli utenti se le impostazioni di accesso **remoto cambiano.**
 
 4. Fare clic su **Salva**.
 
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
 
-**Uso Windows PowerShell**
+**Uso di Windows PowerShell**
 
-Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
+Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)
 
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
-Per impostazione predefinita, il mittente dei messaggi verrà inviato da Microsoft 365 o Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell. 
+Per impostazione predefinita, il mittente dei messaggi di posta elettronica verrà inviato da Microsoft 365 o Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell. 
 
-Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 tramite un unico punto di amministrazione, che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
 
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
 
-  - [Modi migliori per gestire Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Modi migliori per gestire Office 365 con Windows PowerShell](/previous-versions//dn568025(v=technet.10))
 
-Per altre informazioni sulle Windows PowerShell, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
+Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
 
 
 ## <a name="related-topics"></a>Argomenti correlati

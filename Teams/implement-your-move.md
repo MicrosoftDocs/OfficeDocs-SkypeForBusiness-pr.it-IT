@@ -13,12 +13,12 @@ localization_priority: Normal
 search.appverid: ''
 ms.collection: ''
 ms.custom: ''
-ms.openlocfilehash: 5647969ccbb19599efea062d94d88b79c2d8a6f4
-ms.sourcegitcommit: c6b630f9193d7f82f0416bd567a1de390d4b260f
+ms.openlocfilehash: 678cad1b71c9f3e8d1e79a50f5ae46aba4456b5a
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819450"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120667"
 ---
 # <a name="implement-your-move-to-microsoft-teams"></a>Implementare il passaggio a Microsoft Teams
 
@@ -45,7 +45,7 @@ Seguire le istruzioni di questo articolo, se **Microsoft Teams** è già stato i
    
 1. Prima di tutto, spostare i gruppi di chat in Microsoft Teams.
 1. Usare quindi le app in Teams per sostituire le schede azione di Kaizala.
-1. Per assicurarsi che i lavoratori in prima linea siano dotati, eseguire l'aggiornamento alla funzionalità Frontline Worker di Teams. Per una guida introduttiva su Teams Frontline Worker, vedere Guida introduttiva di [Frontline Worker.](https://docs.microsoft.com/microsoftteams/flw-quickstart)
+1. Per assicurarsi che i lavoratori in prima linea siano dotati, eseguire l'aggiornamento alla funzionalità Frontline Worker di Teams. Per una guida introduttiva su Teams Frontline Worker, vedere Guida introduttiva di [Frontline Worker.](./flw-quickstart.yml)
 1. Valutare l'onboarding di fornitori e partner da invitare come guest in Teams.  
   
 **Gestire le modifiche**  
@@ -96,4 +96,4 @@ Seguire le istruzioni di questa sezione, se si usa Kaizala e si vogliono spostar
      
 - **Spostare l'organizzazione in Teams** 
 
-    Offri alla tua organizzazione uno strumento semplificato per la comunicazione dal CEO alla prima linea. 
+    Offri alla tua organizzazione uno strumento semplificato per la comunicazione dal CEO alla prima linea.

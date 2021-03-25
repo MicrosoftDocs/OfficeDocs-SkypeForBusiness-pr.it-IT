@@ -1,5 +1,5 @@
 ---
-title: Configurare un collegamento area di rete crearne uno nuovo o modificarne uno esistente
+title: Configurare un collegamento area di rete Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,18 +15,15 @@ localization_priority: Normal
 ms.assetid: 4c4225d4-3a51-4f54-a6cb-c262e07c51fd
 ROBOTS: NOINDEX, NOFOLLOW
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 5ad673c0f793a42b150b9fe9781e875fea1f9ebf
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: b04a1ca9038682c5d92aaae953d4dbc089ec422b
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824706"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51122110"
 ---
 # <a name="configure-a-network-region-link-create-new-or-edit-existing"></a>Configurare un collegamento area di rete: crearne uno nuovo o modificarne uno esistente
 
 Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
 
-- [Configurazione dei collegamenti alle aree di rete](https://technet.microsoft.com/library/952bc93e-e6aa-4539-85c7-2b15f14eb382.aspx)
-
-
-
+- [Configurazione dei collegamenti di area di rete](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-network-region-links)

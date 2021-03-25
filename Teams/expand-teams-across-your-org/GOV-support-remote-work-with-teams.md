@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare i lavoratori degli enti pubblici che lavorano da remoto a essere produttivi con Microsoft Teams, in particolare se lavorano da casa in risposta all'epidemia di COVID-19 (Coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 46e2b3a713ee1c2a1f5de1f858df19dd25c5aef0
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: 3196796e702a458d7bbf813e5bed8166b764b0de
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583875"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51121384"
 ---
 # <a name="support-remote-government-workers-using-microsoft-teams"></a>Supporto per i lavoratori remoti degli enti pubblici con Microsoft Teams
 
@@ -31,13 +31,13 @@ Se si esegue Microsoft Teams come parte di Office 365 per enti pubblici, usare q
 
 Informazioni su come preparare Teams nell'organizzazione:
 
-  - Assicurarsi che tutti abbiano accesso a Teams con un [abbonamento a pagamento che includa Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description). 
+  - Assicurarsi che tutti abbiano accesso a Teams con un [abbonamento a pagamento che includa Teams](/office365/servicedescriptions/teams-service-description). 
 
   - Se si dispone già di un abbonamento, assicurarsi che **[Teams sia attivo](../user-access.md)** per tutti.
 
-  - Per una rapida distribuzione, visitare il [** PowerPoint su FastPath per Teams**](https://aka.ms/TeamsGovFastPath) per distribuire Teams nell'organizzazione.
+  - Per una rapida distribuzione, visitare il [**PowerPoint su FastPath per Teams**](https://aka.ms/TeamsGovFastPath) per distribuire Teams nell'organizzazione.
 
-  - Comprendere come iniziare a usare le **[riunioni in Teams](https://docs.microsoft.com/MicrosoftTeams/tutorial-meetings-in-teams)** nell'organizzazione.
+  - Comprendere come iniziare a usare le **[riunioni in Teams](../tutorial-meetings-in-teams.yml)** nell'organizzazione.
 
 ## <a name="end-user-communication"></a>Comunicazione con gli utenti finali
 
@@ -63,10 +63,10 @@ Condividere queste risorse e video con gli utenti finali per aiutarli a iniziare
 
 ## <a name="learn-more"></a>Altre informazioni
 
-  - Iniziare il percorso in Teams con una serie di **[training interattivi](https://aka.ms/TeamsLiveTraining)** dal vivo, progettati per aumentare la produttività dell'organizzazione con Teams.
+  - Iniziare il percorso in Teams con una serie di **[training interattivi](../instructor-led-training-teams-landing-page.yml)** dal vivo, progettati per aumentare la produttività dell'organizzazione con Teams.
 
   - Partecipare a uno dei **[corsi online](../instructor-led-training-teams-landing-page.yml)** per vedere Teams in azione e trovare risposte alle eventuali domande.
 
   - Condividere **[video di formazione approfonditi](https://www.youtube.com/playlist?list=PLXPr7gfUMmKzR7_jXN5s886apYoHNC3Xk)** con gli utenti che vogliono saperne di più.
 
-  - Leggere la **[documentazione di amministrazione di Teams](https://docs.microsoft.com/MicrosoftTeams/)** per informazioni su come implementare e gestire Teams.
+  - Leggere la **[documentazione di amministrazione di Teams](../index.yml)** per informazioni su come implementare e gestire Teams.

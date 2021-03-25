@@ -1,5 +1,5 @@
 ---
-title: Problemi con la ricezione di messaggi e chiamate su sistemi legacy in Teams
+title: Problemi di ricezione di messaggi e chiamate su sistemi legacy in Teams
 ms.reviewer: ''
 author: cichur
 ms.author: v-cichur
@@ -13,21 +13,21 @@ ms.collection:
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Risoluzione dei problemi relativi alla ricezione di messaggi e chiamate in sistemi legacy
+description: Risolvere i problemi relativi alla ricezione di messaggi e chiamate in sistemi legacy
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: af7845b5fd6d50d63be6cd21749cbfedc7669fcf
-ms.sourcegitcommit: 90939ad992e65f840e4c2e7a6d18d821621319b4
+ms.openlocfilehash: 1c209d1acc83e63792722b00b63be5a6b9f3721a
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2020
-ms.locfileid: "45085152"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120607"
 ---
-<a name="issues-receiving-messages-and-calls-on-legacy-systems"></a>Problemi con la ricezione di messaggi e chiamate su sistemi legacy
+<a name="issues-receiving-messages-and-calls-on-legacy-systems"></a>Problemi con la ricezione di messaggi e chiamate in sistemi legacy
 ==============================================================
 
-Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano versioni precedenti di Teams o se hanno eseguito l'accesso con altre applicazioni.
+Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano versioni precedenti di Teams o hanno eseguito l'accesso con altre applicazioni.
 
 ## <a name="legacy-adu-setups"></a>Configurazioni ADU legacy
 
@@ -44,9 +44,9 @@ Per altre informazioni, vedere Accedere [a Microsoft Teams con l'autenticazione]
 
 ## <a name="skype-token-revocation"></a>Revoca di token Skype
 
-Quando si modifica/reimposta una password, i client meno recenti non riceveranno messaggi e chiamate fino a un'ora. Per risolvere il problema, riavviare l'app o passare ai client più nuovi.
+Quando si modifica o si reimposta una password, i client meno recenti non riceveranno messaggi e chiamate fino a un'ora. Per risolvere il problema, riavviare l'app o passare ai client più nuovi.
 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
+[Risoluzione dei problemi di Teams](/MicrosoftTeams/troubleshoot/teams)

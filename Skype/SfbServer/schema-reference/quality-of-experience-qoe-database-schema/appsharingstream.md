@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 391490cb-d7b8-44ca-b4d1-429600da909c
 description: La tabella AppSharingStream include la metrica QoE (Quality of Experience) per i flussi di rete utilizzati per la condivisione di applicazioni. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 675b4ef689b62577cbee1cef93a28865ca09abfe
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d95e0d78175f8e17363dc558d82cafefba36ce28
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809676"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120878"
 ---
 # <a name="appsharingstream-table"></a>Tabella AppSharingStream
  
@@ -28,7 +28,7 @@ La tabella AppSharingStream include la metrica QoE (Quality of Experience) per i
 |:-----|:-----|:-----|:-----|
 |**ConferenceDateTime** <br/> |dateTime  <br/> |Primaria/o, esterna/o  <br/> |Data e ora di avvio della sessione.  <br/> |
 |**SessionSeq** <br/> |int  <br/> |Primaria/o, esterna/o  <br/> |Identificatore sequenziale utilizzato per distinguere tra loro sessioni avviate nella stessa data alla stessa ora.  <br/> |
-|**MediaLineLabel** <br/> |tinyint  <br/> |Primaria, esterna  <br/> | Vedi [MediaLine Table.](https://docs.microsoft.com/skypeforbusiness/schema-reference/quality-of-experience-qoe-database-schema/medialine-0) <br/> |
+|**MediaLineLabel** <br/> |tinyint  <br/> |Primaria, esterna  <br/> | Vedi [MediaLine Table.](./medialine-0.md) <br/> |
 |**StreamID** <br/> |int  <br/> |Principale  <br/> |Identificatore univoco del flusso di condivisione di applicazioni.  <br/> |
 |**JitterInterArrival** <br/> |int  <br/> ||Instabilità media rilevata tra gli arrivi dei pacchetti RTP (Real-Time Transport Protocol). L'instabilità è un indice della qualità di una chiamata. Valori di instabilità elevati sono generalmente dovuti a congestione o overload di un server di contenuti multimediali e comportano distorsione o perdita di audio.  <br/> |
 |**JitterInterArrivalMax** <br/> |int  <br/> ||Instabilità massima rilevata tra gli arrivi dei pacchetti RTP (l'instabilità è un indice della qualità di una chiamata). Valori di instabilità elevati sono generalmente dovuti a congestione o overload di un server di contenuti multimediali e comportano distorsione o perdita di audio.  <br/> |
@@ -42,19 +42,19 @@ La tabella AppSharingStream include la metrica QoE (Quality of Experience) per i
 |**RelativeOneWayTotal** <br/> |float  <br/> ||Quantità complessiva di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.  <br/> |
 |**RelativeOneWayAverage** <br/> |float  <br/> ||Quantità complessiva di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.  <br/> |
 |**RelativeOneWayMax** <br/> |float  <br/> ||Quantità massima di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.  <br/> |
-|**RelativeOneWayBurstOccurrences** <br/> |int  <br/> ||Occorrenze burst unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
-|**RelativeOneWayBurstDensity** <br/> |float  <br/> ||Densità burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
-|**RelativeOneWayBurstDuration** <br/> |float  <br/> ||Durata burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
-|**RelativeOneWayGapOccurrences** <br/> |int  <br/> ||Occorrenze gap unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile; le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
-|**RelativeOneWayGapDensity** <br/> |float  <br/> ||Densità gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile; le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
-|**RelativeOneWayGapDuration** <br/> |float  <br/> ||Durata gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile; le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
+|**RelativeOneWayBurstOccurrences** <br/> |int  <br/> ||Occorrenze burst unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
+|**RelativeOneWayBurstDensity** <br/> |float  <br/> ||Densità burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
+|**RelativeOneWayBurstDuration** <br/> |float  <br/> ||Durata burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
+|**RelativeOneWayGapOccurrences** <br/> |int  <br/> ||Occorrenze gap unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
+|**RelativeOneWayGapDensity** <br/> |float  <br/> ||Densità di gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
+|**RelativeOneWayGapDuration** <br/> |float  <br/> ||Durata del gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> |
 |**ApplicationSharingType** <br/> |varChar(256)  <br/> ||Ruolo applicazione (condivisore o visualizzatore) e tipo di contenuto.  <br/> |
 |**RDPTileProcessingLatencyTotal** <br/> |float  <br/> ||Tempo totale di elaborazione per le sezioni RDP (Remote Desktop Protocol). Un valore superiore corrisponde a un ritardo maggiore nell'esperienza di visualizzazione.  <br/> |
 |**RDPTileProcessingLatencyAverage** <br/> |float  <br/> ||Tempo medio di elaborazione per le sezioni RDP. Un valore superiore corrisponde a un ritardo maggiore nell'esperienza di visualizzazione.  <br/> |
 |**RDPTileProcessingLatencyMax** <br/> |float  <br/> ||Tempo massimo di elaborazione per le sezioni RDP. Un valore superiore corrisponde a un ritardo maggiore nell'esperienza di visualizzazione.  <br/> |
-|**RDPTileProcessingLatencyBurstOccurrences** <br/> |int  <br/> ||Occorrenze burst nel tempo di elaborazione per le sezioni RDP. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile.  <br/> |
-|**RDPTileProcessingLatencyBurstDensity** <br/> |float  <br/> ||Densità burst nel tempo di elaborazione per le sezioni RDP. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile.  <br/> |
-|**RDPTileProcessingLatencyBurstDuration** <br/> |float  <br/> ||Durata burst nel tempo di elaborazione per le sezioni RDP. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile.  <br/> |
+|**RDPTileProcessingLatencyBurstOccurrences** <br/> |int  <br/> ||Occorrenze burst nel tempo di elaborazione per le sezioni RDP. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante.  <br/> |
+|**RDPTileProcessingLatencyBurstDensity** <br/> |float  <br/> ||Densità burst nel tempo di elaborazione per le sezioni RDP. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante.  <br/> |
+|**RDPTileProcessingLatencyBurstDuration** <br/> |float  <br/> ||Durata burst nel tempo di elaborazione per le sezioni RDP. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante.  <br/> |
 |**RDPTileProcessingLatencyGapOccurrences** <br/> |int  <br/> ||Occorrenze gap nel tempo di elaborazione per le sezioni RDP.  <br/> |
 |**RDPTileProcessingLatencyGapDensity** <br/> |float  <br/> ||Densità gap nel tempo di elaborazione per le sezioni RDP. Una densità gap bassa corrisponde a un'esperienza di visualizzazione migliore.  <br/> |
 |**RDPTileProcessingLatencyGapDuration** <br/> |float  <br/> ||Durata gap nel tempo di elaborazione per le sezioni RDP. Durate gap basse corrispondono a un'esperienza di visualizzazione migliore.  <br/> |
@@ -126,5 +126,3 @@ La tabella AppSharingStream include la metrica QoE (Quality of Experience) per i
 |**In ingresso** <br/> |bit  <br/> ||Frequenza media dei fotogrammi (frame al secondo) per le trasmissioni in entrata.  <br/> |
 |**In uscita** <br/> |bit  <br/> ||Frequenza media dei fotogrammi (frame al secondo) per le trasmissioni in uscita.  <br/> |
 |**SenderIsCallerPAI** <br/> |bit  <br/> ||1 indica che la direzione del flusso va dal chiamante al destinatario della chiamata.  <br/> 0 indica che la direzione del flusso va dal destinatario della chiamata al chiamante.  <br/> |
-   
-

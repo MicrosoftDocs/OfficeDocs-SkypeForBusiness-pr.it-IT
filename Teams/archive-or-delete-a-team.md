@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 334ecfdc387f1b3dd6d7f1312b90d81aee320df0
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
-ms.translationtype: HT
+ms.openlocfilehash: da2d330986ca2fd924df75e0fcae6fc4388c5d48
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46582763"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120838"
 ---
 <a name="archive-or-delete-a-team-in-microsoft-teams"></a>Archiviare o eliminare un team in Microsoft Teams
 ===========================================
@@ -40,7 +40,7 @@ Con l'eliminazione di un team, vengono eliminate anche le attività del team in 
 
 ## <a name="archive-a-team"></a>Archiviare un team
 
-Seguire questi passaggi per archiviare un team. Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](https://docs.microsoft.com/microsoftteams/using-admin-roles) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
+Seguire questi passaggi per archiviare un team. Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
 1. Nell'interfaccia di amministrazione, selezionare **Teams**.
 2. Selezionare un team facendo clic sul nome del team.
@@ -72,7 +72,7 @@ Se il team non è più necessario, è possibile eseguire l’eliminazione al pos
 
 Seguire questi passaggi per ripristinare un team eliminato ripristinando il gruppo di Microsoft 365 associato al team. Il ripristino del gruppo di Microsoft 365 per un team ripristina anche i contenuti del team, incluse schede, canali standard e privati e raccolte siti associate.
 
-Per impostazione predefinita, un gruppo di Microsoft 365 viene mantenuto per 30 giorni. Questo periodo di 30 giorni è definito di "eliminazione temporanea", perché è ancora possibile ripristinare il gruppo. Per ulteriori informazioni, vedere [Ripristinare un gruppo eliminato](https://docs.microsoft.com/microsoft-365/admin/create-groups/restore-deleted-group).
+Per impostazione predefinita, un gruppo di Microsoft 365 viene mantenuto per 30 giorni. Questo periodo di 30 giorni è definito di "eliminazione temporanea", perché è ancora possibile ripristinare il gruppo. Per ulteriori informazioni, vedere [Ripristinare un gruppo eliminato](/microsoft-365/admin/create-groups/restore-deleted-group).
 
 ### <a name="install-the-azureadpreview-module"></a>Installare l’anteprima del modulo di Azure AD
 

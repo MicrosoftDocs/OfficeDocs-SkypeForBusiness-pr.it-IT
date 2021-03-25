@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d75e540de7e40206f0b1dd15e26adc62d6f6baa7
-ms.sourcegitcommit: d27b97f012d0cb3f1690d3673d50bbaa0caae16f
+ms.openlocfilehash: 56ee2c83827c25da5b16cc3f7c2725a3daf815c2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "47652474"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51121514"
 ---
 <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 ============================================
@@ -42,9 +42,9 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 
     ![Criteri riunione selezionati](media/configure-desktop-sharing-image1.png)
 
-2. Nella pagina **Criteri riunione** selezionare **Aggiungi.**
+2. Nella pagina **Criteri riunione** selezionare **Aggiungi**.
 
-    ![Messaggio criteri riunione](media/addMeeting.png)
+    ![Messaggio Criteri riunione](media/addMeeting.png)
 
 3. Assegnare un titolo univoco al criterio e immettere una breve descrizione.
 
@@ -57,12 +57,12 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
     ![Opzioni della modalità di condivisione](media/configure-desktop-sharing-image3.png)
 
   > [!Note]
-  > Non è necessario abilitare il criterio di chiamata per consentire agli utenti di usare la condivisione dello schermo dalla chat. Tuttavia, l'audio viene disattivato finché l'audio non viene riattivato. Inoltre, l'utente che condivide lo schermo può fare clic **su Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non saranno in grado di aggiungere audio alla condivisione dello schermo da una sessione di chat.
+  > Non è necessario abilitare il criterio di chiamata per consentire agli utenti di usare la condivisione dello schermo dalla chat. Tuttavia, l'audio viene disattivato finché non riattiva l'audio. Inoltre, l'utente che condivide lo schermo può fare clic **su Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non potranno aggiungere audio alla condivisione dello schermo da una sessione di chat.
 
 5. Abilitare o disabilitare le impostazioni seguenti:
 
     - **Consentire a un partecipante di concedere o richiedere il controllo**: consente ai membri del team di concedere o richiedere il controllo dell'applicazione o del desktop del relatore.
-    - **Consentire a un partecipante esterno di concedere o richiedere il controllo.** Si tratta di un criterio per utente. Se un'organizzazione ha impostato questa opzione per un utente, non controlla cosa possono fare i partecipanti esterni, indipendentemente dall'impostazione configurata dall'organizzatore della riunione. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione.
+    - **Consentire a un partecipante esterno di concedere o richiedere il controllo:** si tratta di un criterio per utente. Se un'organizzazione ha impostato questa opzione per un utente, non controlla cosa possono fare i partecipanti esterni, indipendentemente dall'impostazione configurata dall'organizzatore della riunione. Questo parametro controlla se i partecipanti esterni possono ricevere o richiedere il controllo dello schermo del relatore, a seconda delle impostazioni configurate dal relatore nei criteri di riunione dell'organizzazione.
     - **Consentire la condivisione di PowerPoint**: consente di creare riunioni nelle quali è possibile caricare e condividere le presentazioni di PowerPoint.
     - **Consentire la lavagna**: consente agli utenti di condividere una lavagna.
     - **Consentire le note condivise**: consente agli utenti di creare note condivise.
@@ -71,7 +71,7 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 
 ## <a name="use-powershell-to-configure-shared-desktop"></a>Usare PowerShell per configurare il desktop condiviso
 
-Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) per controllare la condivisione del desktop. Impostare i seguenti parametri:
+Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) per controllare la condivisione del desktop. Impostare i seguenti parametri:
 
 - Descrizione
 - ScreenSharingMode
@@ -82,4 +82,4 @@ Inoltre, è possibile usare il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.mi
 - AllowWhiteboard
 - AllowSharedNotes
 
-[Altre informazioni sull'utilizzo del cmdlet csTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps).
+[Altre informazioni sull'utilizzo del cmdlet csTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps).

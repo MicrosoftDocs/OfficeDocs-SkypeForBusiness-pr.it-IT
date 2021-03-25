@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8a5f21d0-f6c8-4907-9958-5ca36f702542
 description: 'Per modificare le impostazioni per un pool Front End o un server Standard Edition esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: 2560c07e8e9a59259bcf9dbfd1af385fdb18845d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: a899f7adc670009aaafff3b946432c13702935be
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818386"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120938"
 ---
 # <a name="front-end-general-settings-expander"></a>Espansione delle impostazioni generali di Front End
 
@@ -36,7 +36,7 @@ Per modificare le impostazioni per un pool Front End o un server Standard Editio
 
 ## <a name="front-end-pool"></a>Pool Front End
 
-Per un pool Front End, è possibile configurare impostazioni generali, di resilienza, dei servizi Web e del Mediation Server. Per informazioni dettagliate, vedere le sottosezioni riportate di seguito. Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il pool Front End, vedere [Deploying Mediation Servers and Defining Peers](https://technet.microsoft.com/library/a684f1da-6671-4011-adf6-2db49e2528e2.aspx).
+Per un pool Front End, è possibile configurare impostazioni generali, di resilienza, dei servizi Web e del Mediation Server. Per informazioni dettagliate, vedere le sottosezioni riportate di seguito. Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il pool Front End, vedere [Deploying Mediation Servers and Defining Peers](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-mediation-servers-and-defining-peers).
 
 ### <a name="general-settings"></a>Impostazioni generali
 
@@ -50,7 +50,7 @@ Per un pool Front End, è possibile configurare impostazioni generali, di resili
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare Servizi di conferenza telefonica con accesso esterno (PSTN). È possibile specificare e definire un gateway PSTN (Public Switched Telephone Network) più avanti nella sottosezione "Impostazioni del Mediation Server" di questa sezione.
 
-  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e ai client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** modificare o specificare quanto segue:
 
@@ -103,7 +103,7 @@ Per modificare o specificare ulteriori impostazioni per i servizi Web nel pool F
 In **Servizi Web interni** specificare quanto segue:
 
 > [!CAUTION]
-> Se si dispone di più pool Front End o Front End Server, l'FQDN dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server come **pool01.contoso.com,** non sarà possibile utilizzare **pool01.contoso.com** per un altro pool Front End o Front End Server. Se si distribuiscono anche Director, l'FQDN dei servizi Web esterni definito per qualsiasi director o pool di server Director deve essere univoco da qualsiasi altro director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un FQDN autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
+> Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server **come pool01.contoso.com**, non è possibile **utilizzare** pool01.contoso.com per un altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
 
 - Se si seleziona **Sostituisci FQDN**, sarà possibile specificare un FQDN diverso per l'identità dei **Servizi Web interni** nel pool. Per impostazione predefinita, l'impostazione corrisponde al nome corrente definito per il pool Front End.
 
@@ -113,7 +113,7 @@ In **Servizi Web esterni** specificare quanto segue:
 
 - L'FQDN dei servizi Web esterni. L'FQDN specificato qui in genere dipenderà dai requisiti della connessione esterna, ad esempio del proxy inverso.
 
-- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. Queste impostazioni per le porte di attesa vengono modificate in base ai requisiti del proxy inverso e della rete esterna. Le porte pubblicate sono impostate sul valore predefinito della porta 80 per HTTP e della porta 443 per HTTPS. Questi valori determinano le porte che il pool ascolterà per le richieste in arrivo. In genere, non è necessario modificare queste impostazioni, a meno che non si sia verificata una conflitto di requisiti relativi alle porte nel pool. Sono previste porte pubblicate interne ed esterne che utilizzano gli stessi valori di porta. Non si tratta di un conflitto.
+- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. Queste impostazioni vengono modificate per le porte di attesa in base ai requisiti del proxy inverso e della rete esterna. Le porte pubblicate sono impostate sul valore predefinito della porta 80 per HTTP e della porta 443 per HTTPS. Questi valori determinano le porte che il pool ascolterà per le richieste in arrivo. In genere, non è necessario modificare queste impostazioni, a meno che non si sia verificata una conflitto di requisiti di porta nel pool. Sono previste porte pubblicate interne ed esterne che utilizzano gli stessi valori di porta. Non si tratta di un conflitto.
 
 ### <a name="mediation-server"></a>Mediation Server
 
@@ -127,11 +127,11 @@ In **Mediation Server** specificare quanto segue:
 
 - Se a un Mediation Server è associato più di un trunk, è possibile specificare un trunk predefinito selezionando il gateway e facendo clic su **Rendi predefinito**. Per annullare l'impostazione del gateway come predefinito, fare clic su **Annulla predefinito**.
 
-Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il pool Front End, vedere [Deploying Mediation Servers and Defining Peers](https://technet.microsoft.com/library/a684f1da-6671-4011-adf6-2db49e2528e2.aspx).
+Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il pool Front End, vedere [Deploying Mediation Servers and Defining Peers](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-mediation-servers-and-defining-peers).
 
 ## <a name="standard-edition-server"></a>Server Standard Edition
 
-Per un server Standard Edition, è possibile configurare impostazioni generali, di resilienza, dei servizi Web e del Mediation Server. Per informazioni dettagliate, vedere le sottosezioni riportate di seguito. Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il server Standard Edition, vedere [Defining and Configuring the Topology](https://technet.microsoft.com/library/51d1601e-4f83-48d4-ad08-3b4d5e2003aa.aspx) e [Deploying Mediation Servers and Defining Peers](https://technet.microsoft.com/library/a684f1da-6671-4011-adf6-2db49e2528e2.aspx).
+Per un server Standard Edition, è possibile configurare impostazioni generali, di resilienza, dei servizi Web e del Mediation Server. Per informazioni dettagliate, vedere le sottosezioni riportate di seguito. Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il server Standard Edition, vedere [Defining and Configuring the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-defining-and-configuring-the-topology) e [Deploying Mediation Servers and Defining Peers](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-mediation-servers-and-defining-peers).
 
 ### <a name="general-settings"></a>Impostazioni generali
 
@@ -147,7 +147,7 @@ Per un server Standard Edition, è possibile configurare impostazioni generali, 
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare **Servizi di conferenza telefonica con accesso esterno (PSTN)**. È possibile specificare e definire un gateway PSTN più avanti nelle impostazioni del Mediation Server.
 
-  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e ai client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** è possibile modificare o specificare quanto segue:
 
@@ -206,6 +206,4 @@ Per **Mediation Server** è possibile specificare quanto segue:
 
 - Se a un Mediation Server è associato più di un gateway, è possibile specificare un gateway predefinito selezionando il gateway e facendo clic su **Rendi predefinito**. Per annullare l'impostazione del gateway come predefinito, fare clic su **Annulla predefinito**.
 
-Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il server Standard Edition, vedere [Defining and Configuring the Topology](https://technet.microsoft.com/library/51d1601e-4f83-48d4-ad08-3b4d5e2003aa.aspx) e [Deploying Mediation Servers and Defining Peers](https://technet.microsoft.com/library/a684f1da-6671-4011-adf6-2db49e2528e2.aspx).
-
-
+Per informazioni dettagliate sulla definizione e sulla configurazione delle impostazioni per il server Standard Edition, vedere [Defining and Configuring the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-defining-and-configuring-the-topology) e [Deploying Mediation Servers and Defining Peers](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-mediation-servers-and-defining-peers).

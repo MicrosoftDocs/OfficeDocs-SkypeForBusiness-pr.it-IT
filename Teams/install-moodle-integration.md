@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d51aba578de4dc5245a8d9459b160e5743b786a5
-ms.sourcegitcommit: 71b9b5ec80014bd25758493bc06d633c4eac735c
+ms.openlocfilehash: 60fabc107ba684afdf32c4eeeb0351f12dec883e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50867115"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120637"
 ---
 # <a name="installing-the-moodle-integration-with-microsoft-teams"></a>Installazione dell'integrazione moodle con Microsoft Teams
 
@@ -41,7 +41,7 @@ Per aiutare gli amministratori IT a configurare facilmente questa integrazione, 
 * Installazione automatica della scheda Moodle e del bot Assistente Moodle in ogni team sincronizzato. (Prossimamente)
 * Pubblicazione con un solo clic dell'app Moodle nel tuo App Store privato di Teams. (Prossimamente)
 
-Per altre informazioni sulle funzionalità fornite da questa integrazione, vedere Installazione [dell'integrazione moodle con Microsoft Teams.](https://docs.microsoft.com/microsoftteams/platform/resources/moodleinstructions)
+Per altre informazioni sulle funzionalità fornite da questa integrazione, vedere Installazione [dell'integrazione moodle con Microsoft Teams.](/microsoftteams/platform/resources/moodleinstructions)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -176,7 +176,7 @@ Al termine della distribuzione delle risorse in Azure, sarà necessario configur
 
 Ora che il bot è stato distribuito in Azure e configurato per parlare con il server Moodle, è il momento di distribuire l'app Microsoft Teams. A questo scopo, caricare il file manifesto scaricato dalla pagina Impostazioni del team del plug-in Moodle nel passaggio precedente.
 
-Prima di installare l'app, è necessario assicurarsi che le app esterne e il sideload delle app siano abilitati. A questo scopo, è possibile seguire [questa procedura.](https://docs.microsoft.com/MicrosoftTeams/admin-settings) Dopo aver accertato che le app esterne siano abilitate, è possibile seguire la procedura seguente per distribuire l'app.
+Prima di installare l'app, è necessario assicurarsi che le app esterne e il sideload delle app siano abilitati. A questo scopo, è possibile seguire [questa procedura.](./admin-settings.md) Dopo aver accertato che le app esterne siano abilitate, è possibile seguire la procedura seguente per distribuire l'app.
 
 1. Aprire Microsoft Teams.
 2. Fare clic **sull'icona** dello Store nell'angolo in basso a sinistra della barra di spostamento.

@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: ec043088-722b-4739-a460-3b07864cf5ea
 ROBOTS: NOINDEX, NOFOLLOW
 description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: fa1fa8f1013596aa74c80faba6aaa4dd9dc09a35
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: a9b55948228144fecbddc0d70b69c883b96590cd
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807886"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51122080"
 ---
 # <a name="voice-route"></a>Route vocale
 
@@ -28,7 +28,4 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Creare o modificare una route vocale in Skype for Business](../../../deploy/deploy-enterprise-voice/create-or-modify-a-voice-route.md)
 
-- [Modificare una route vocale](https://technet.microsoft.com/library/afc562cc-8807-489b-8850-dbbe1c1ab9f5.aspx)
-
-
-
+- [Modificare una route vocale](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-voice-route)

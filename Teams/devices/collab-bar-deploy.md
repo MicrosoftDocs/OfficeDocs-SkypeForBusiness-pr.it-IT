@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione di Microsoft Teams Rooms in Android.
-ms.openlocfilehash: bb02ff59eb473d0db276fd773e9f1ff3f1ae0007
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 3da0192ee3676f5ff7294ba719c778ea7b1cc7b2
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875006"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51120798"
 ---
 # <a name="deploy-microsoft-teams-rooms-on-android"></a>Distribuire Le chat room di Microsoft Teams in Android
 
@@ -64,7 +64,7 @@ Prima di distribuire Teams Rooms, è necessario decidere se useranno gli account
 
 Se si decide di configurare un account delle risorse di Microsoft 365, è necessario acquistare una licenza per la sala riunioni. La licenza sala riunioni include una cassetta postale delle risorse che consente agli utenti dell'organizzazione di prenotare la sala riunioni tramite Outlook o Teams. La licenza consente anche videoconferenze e audioconferenza e condivisione dello schermo tra i partecipanti alla riunione.
 
-Se è necessario ricevere o effettuare chiamate da o verso un numero di telefono esterno, potrebbe essere necessario un piano per chiamate o una licenza per il componente aggiuntivo Microsoft 365 Business [Voice.](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing?tabs=small-business) Se il routing diretto è abilitato nell'organizzazione, è necessario solo lo SKU della sala riunioni.
+Se è necessario ricevere o effettuare chiamate da o verso un numero di telefono esterno, potrebbe essere necessario un piano per chiamate o una licenza per il componente aggiuntivo Microsoft 365 Business [Voice.](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md?tabs=small-business) Se il routing diretto è abilitato nell'organizzazione, è necessario solo lo SKU della sala riunioni.
 
 Quando si crea un account delle risorse, è possibile scegliere se consentire all'account di accettare o rifiutare automaticamente le convocazioni di riunione, consentire riunioni ricorrenti, specificare con quale anticipo gli utenti possono prenotare la risorsa e così via.
 
@@ -114,7 +114,7 @@ Successivamente, è necessario creare il piano per distribuire i dispositivi e i
 
 Dopo aver distribuito Teams Rooms, è consigliabile testarle. Accedere a Teams Rooms e verificare che le funzionalità previste funzionino. È consigliabile verificare che siano visualizzati  nella sezione Barre di collaborazione nella scheda **Dispositivi** dell'interfaccia di amministrazione di Microsoft Teams. È anche importante effettuare una serie di chiamate e riunioni di prova per verificare la qualità e le prestazioni.
 
-Nell'ambito dell'implementazione generale di Microsoft Teams, è consigliabile configurare i file di creazione per Call Quality Dashboard (CQD), monitorare le tendenze qualitative e partecipare al processo di revisione della qualità dell'esperienza. Per altre informazioni, vedere la [Guida alla revisione della qualità dell'esperienza.](https://aka.ms/qerguide)
+Nell'ambito dell'implementazione generale di Microsoft Teams, è consigliabile configurare i file di creazione per Call Quality Dashboard (CQD), monitorare le tendenze qualitative e partecipare al processo di revisione della qualità dell'esperienza. Per altre informazioni, vedere la [Guida alla revisione della qualità dell'esperienza.](../quality-of-experience-review-guide.md)
 
 ### <a name="asset-management"></a>Gestione delle risorse
 

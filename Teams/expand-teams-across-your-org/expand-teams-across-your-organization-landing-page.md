@@ -1,6 +1,6 @@
 ---
-title: Espandere Microsoft Teams nell'organizzazione
-description: Informazioni sulle risorse disponibili per la creazione della distribuzione standard di Teams per aiutarti a ottenere il massimo da Teams per tipi di organizzazione specifici.
+title: Espandere Microsoft Teams all'interno dell'organizzazione
+description: Informazioni sulle risorse disponibili per la distribuzione standard di Teams per ottenere il massimo da Teams per specifici tipi di organizzazione.
 ms.topic: conceptual
 author: cichur
 ms.author: v-cichur
@@ -15,18 +15,18 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1c90ea2da91d8e5e12fe01565e0c929f73d1ff01
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6ba2b2724f1a8c58d2776e7aa7b55eb38bf69886
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49814636"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51121364"
 ---
-# <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft Teams nell'organizzazione
+# <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft Teams all'interno dell'organizzazione
 
-Queste risorse si basano sulle indicazioni standard per la distribuzione di Teams e sono progettate per aiutarti a ottenere il massimo da Teams per tipi di organizzazione specifici. Se Teams non è ancora stato distribuito, vedere il percorso consigliato per Teams in [Come implementare Microsoft Teams.](../How-to-roll-out-teams.md)
+Queste risorse si basano sulle linee guida standard per la distribuzione di Teams e sono progettate per aiutarti a ottenere il massimo da Teams per specifici tipi di organizzazione. Se Teams non è ancora stato distribuito, vedere il percorso consigliato per Teams in [Come implementare Microsoft Teams.](../deploy-overview.md)
 
 |               |               |               |               |               |               | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
-| ![task-checklist-planning-teams](../media/clock-teams-small.svg)  |  [Turni per Teams](/microsoftteams/expand-teams-across-your-org/shifts-for-teams-landing-page) |![health-teams](../media/health-teams-small.svg)  | [Teams per il settore sanitario](/microsoftteams/expand-teams-across-your-org/teams-for-healthcare-landing-page) |![education-tutorial-teams](../media/education-tutorial-teams-small.svg) |  [Teams per l'istruzione](/microsoftteams/expand-teams-across-your-org/teams-for-education-landing-page) 
-|![small-business-teams](../media/small-business-teams-small.svg)  | [Teams per la vendita al dettaglio](/microsoftteams/expand-teams-across-your-org/teams-for-retail-landing-page) |![blocks-teams](../media/blocks-teams-small.svg)  | [Teams per enti pubblici](/microsoftteams/expand-teams-across-your-org/teams-for-government-landing-page) |               |               |
+| ![task-checklist-planning-teams](../media/clock-teams-small.svg)  |  [Turni per Teams](./shifts-for-teams-landing-page.md) |![health-teams](../media/health-teams-small.svg)  | [Teams per il settore sanitario](./teams-for-healthcare-landing-page.md) |![education-tutorial-teams](../media/education-tutorial-teams-small.svg) |  [Teams per l'istruzione](./teams-for-education-landing-page.md) 
+|![small-business-teams](../media/small-business-teams-small.svg)  | [Teams per la vendita al dettaglio](./teams-for-retail-landing-page.md) |![blocks-teams](../media/blocks-teams-small.svg)  | [Teams per enti pubblici](./teams-for-government-landing-page.md) |               |               |
