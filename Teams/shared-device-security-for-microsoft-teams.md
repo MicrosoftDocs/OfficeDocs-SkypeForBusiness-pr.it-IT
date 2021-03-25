@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a2d10048cf668c15060147b8426c5226e98fdaa4
-ms.sourcegitcommit: b424ab14683ab5080ebfd085adff7c0dbe1be84c
+ms.openlocfilehash: 45497c824cfc20644a59e35f7812b17058f61c2c
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47359382"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117054"
 ---
 # <a name="use-microsoft-teams-securely-on-shared-computers"></a>Usare Microsoft teams in modo sicuro sui computer condivisi
 
@@ -36,7 +36,7 @@ Se possibile, *si raccomanda* alle organizzazioni di adottare un approccio Zero 
 Gli amministratori possono creare ambienti molto sicuri *concentrandosi* sulla verifica, il principio del privilegio minimo e la presunzione della violazione: sono standard che comportano azioni che riducono al minimo i rischi per utenti e dati. 
 
 > [!TIP]
-> Per un'analisi più approfondita dell'architettura Zero Trust, vedere [questi video](https://docs.microsoft.com/security/ciso-workshop/ciso-workshop-module-3#part-2-zero-trust-definition-and-models-1537).
+> Per un'analisi più approfondita dell'architettura Zero Trust, vedere [questi video](/security/ciso-workshop/ciso-workshop-module-3#part-2-zero-trust-definition-and-models-1537).
 
 ## <a name="tips-for-using-microsoft-teams-securely-from-a-shared-computer"></a>Suggerimenti per usare Microsoft Teams in modo sicuro con un computer condiviso
 
@@ -46,8 +46,8 @@ Si consiglia di sviluppare piani per rispettare le linee guida nel modo più rig
 
 1. Usare le funzionalità di sicurezza della piattaforma del sistema operativo.
     1. Assicurarsi che il sistema operativo sia configurato in modo da installare gli aggiornamenti automatici distribuiti dal provider del sistema operativo (per i sistemi Microsoft, ciò può essere fatto tramite [**Windows Update**](https://support.microsoft.com/help/12373/windows-update-faq)). 
-    1. Assicurarsi che le funzionalità crittografiche del dispositivo, come [**bitlocker**](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-overview), siano abilitate, e che la chiave usata per accedere al dispositivo sia protetta.  Si noti che la maggior parte dei [**dispositivi Windows 10 moderni supporta BitLocker**](https://docs.microsoft.com/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10) 
-    1. Usare le funzionalità antivirus, come quelle offerte da [**Windows Defender**](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), sul proprio dispositivo.
+    1. Assicurarsi che le funzionalità crittografiche del dispositivo, come [**bitlocker**](/windows/security/information-protection/bitlocker/bitlocker-overview), siano abilitate, e che la chiave usata per accedere al dispositivo sia protetta.  Si noti che la maggior parte dei [**dispositivi Windows 10 moderni supporta BitLocker**](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10) 
+    1. Usare le funzionalità antivirus, come quelle offerte da [**Windows Defender**](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), sul proprio dispositivo.
     1. L'uso di [account utente separati](https://support.microsoft.com/help/4026923/windows-10-create-a-local-user-or-administrator-account) per ogni utente del sistema è fortemente raccomandato.
     1. *Non* concedere né usare i privilegi di amministrazione per funzioni non amministrative (come navigare su internet, eseguire Teams, ecc.).
 
@@ -64,20 +64,20 @@ Se non è possibile soddisfare le indicazioni precedenti, è consigliabile usare
     1. Chiudere tutte le schede e le finestre del browser.
     1. Disconnettersi dal dispositivo.
 
-Gli elementi precedenti non sono un elenco completo delle migliori pratiche o dei controlli di sicurezza relativi a tutti i casi, e potrebbe essere possibile compiere altre azioni nel proprio ambiente (ad esempio, gli amministratori di sicurezza possono scegliere di usare i collegamenti e gli allegati sicuri di Teams se usano [Office 365 ATP piano 1 o 2](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2)). Tuttavia, questi passaggi sono un punto di partenza per creare indicazioni per l'uso di Teams con dispositivi condivisi.
+Gli elementi precedenti non sono un elenco completo delle migliori pratiche o dei controlli di sicurezza relativi a tutti i casi, e potrebbe essere possibile compiere altre azioni nel proprio ambiente (ad esempio, gli amministratori di sicurezza possono scegliere di usare i collegamenti e gli allegati sicuri di Teams se usano [Office 365 ATP piano 1 o 2](/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2)). Tuttavia, questi passaggi sono un punto di partenza per creare indicazioni per l'uso di Teams con dispositivi condivisi.
 
 ## <a name="more-information"></a>Altre informazioni
 
-[Bitlocker in Gestione configurazione](https://docs.microsoft.com/mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent)
+[Bitlocker in Gestione configurazione](/mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent)
 
-[BitLocker per Windows 10 in Intune](https://docs.microsoft.com/mem/intune/protect/encrypt-devices)
+[BitLocker per Windows 10 in Intune](/mem/intune/protect/encrypt-devices)
 
-[Sicurezza degli endpoint in Intune](https://docs.microsoft.com/mem/intune/protect/endpoint-security)
+[Sicurezza degli endpoint in Intune](/mem/intune/protect/endpoint-security)
 
-[Abilitare](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus#ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app) Microsoft Defender in Sicurezza di Windows ed [eseguire le scansioni](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus#run-a-scan-with-the-windows-security-app)
+[Abilitare](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus#ensure-microsoft-defender-antivirus-is-enabled-in-the-windows-security-app) Microsoft Defender in Sicurezza di Windows ed [eseguire le scansioni](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus#run-a-scan-with-the-windows-security-app)
 
-[Articolo su Centro sicurezza di Microsoft Defender ](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus)
+[Articolo su Centro sicurezza di Microsoft Defender ](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-security-center-antivirus)
 
-[Client web e app web di Teams](https://docs.microsoft.com/microsoftteams/get-clients#web-client)
+[Client web e app web di Teams](./get-clients.md#web-client)
 
-[Sicurezza e Microsoft Teams](https://docs.microsoft.com/microsoftteams/teams-security-guide)
+[Sicurezza e Microsoft Teams](./teams-security-guide.md)

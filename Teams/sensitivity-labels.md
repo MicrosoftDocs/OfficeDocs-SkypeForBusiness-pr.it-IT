@@ -17,18 +17,18 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare le etichette di riservatezza per proteggere i team in Microsoft Teams.
-ms.openlocfilehash: 6929e9c51f35cb4483c81323048b2a1f9ec6243a
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 25c6e6a9a69f9172bebdab284754998e4acb910a
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875106"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117194"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di riservatezza per Microsoft Teams
 
-[Le etichette di riservatezza](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels) consentono agli amministratori di Teams di proteggere e regolare l'accesso ai contenuti aziendali riservati creati durante la collaborazione all'interno dei team. Dopo aver configurato le etichette di riservatezza con i criteri associati nel Centro conformità [Microsoft,](https://docs.microsoft.com/microsoft-365/compliance/go-to-the-securitycompliance-center)queste etichette possono essere applicate ai team dell'organizzazione.
+[Le etichette di riservatezza](/microsoft-365/compliance/sensitivity-labels) consentono agli amministratori di Teams di proteggere e regolare l'accesso ai contenuti aziendali riservati creati durante la collaborazione all'interno dei team. Dopo aver configurato le etichette di riservatezza con i criteri associati nel Centro conformità [Microsoft,](/microsoft-365/compliance/go-to-the-securitycompliance-center)queste etichette possono essere applicate ai team dell'organizzazione.
 
-Le etichette di riservatezza non sono attualmente supportate per i clienti che usano SKU di Teams Education. Per altre informazioni sulle licenze, vedere Descrizione [del servizio Microsoft Teams.](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description)
+Le etichette di riservatezza non sono attualmente supportate per i clienti che usano SKU di Teams Education. Per altre informazioni sulle licenze, vedere Descrizione [del servizio Microsoft Teams.](/office365/servicedescriptions/teams-service-description)
 
 ## <a name="whats-the-difference-between-sensitivity-labels-and-teams-classification-labels"></a>Qual è la differenza tra le etichette di riservatezza e le etichette di classificazione di Teams?
 
@@ -36,7 +36,7 @@ Le etichette di riservatezza sono diverse dalle etichette di classificazione, no
 
 Il vantaggio dell'uso delle etichette di riservatezza è che i criteri vengono applicati automaticamente end-to-end tramite una combinazione della piattaforma Gruppi di Microsoft 365, del Centro conformità e dei servizi di Teams. Le etichette di riservatezza offrono un potente supporto dell'infrastruttura per proteggere i dati sensibili dell'organizzazione e garantire la conformità ai criteri o alle normative interne.
 
-Se attualmente si usano etichette di classificazione, vedere la documentazione seguente per altre informazioni e istruzioni su come eseguirne la migrazione alle etichette di riservatezza: Classificazione classica dei gruppi [di Azure AD.](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)
+Se attualmente si usano etichette di classificazione, vedere la documentazione seguente per altre informazioni e istruzioni su come eseguirne la migrazione alle etichette di riservatezza: Classificazione classica dei gruppi [di Azure AD.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)
 
 ## <a name="example-scenarios-for-sensitivity-labels"></a>Scenari di esempio per le etichette di riservatezza
 
@@ -100,4 +100,4 @@ Prima di usare le etichette di riservatezza per Teams, tenere presenti le limita
 
 Seguire le istruzioni della documentazione di Microsoft 365 per creare e configurare etichette di riservatezza per Teams: 
 
-- [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, nei gruppi di Microsoft 365 e nei siti di SharePoint.](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, nei gruppi di Microsoft 365 e nei siti di SharePoint.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)

@@ -17,12 +17,12 @@ description: Informazioni su come usare il report utilizzo PSTN di Teams nell'in
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a7783c3084beaa87b709ca1e9d5ab4e6932a5e59
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: d870581b8921e39d50d0187120cf89067ac38819
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875026"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116864"
 ---
 # <a name="microsoft-teams-pstn-usage-report"></a>Report sull'utilizzo PSTN di Microsoft Teams
 
@@ -108,7 +108,7 @@ La prima riga del file CSV contiene nomi di colonna. Tutte le date sono UTC e in
  È possibile esportare dati fino a un anno dalla data corrente, a meno che le normative specifiche del paese non impedino la conservazione dei dati per 12 mesi.
 
 > [!div class="has-no-wrap"]  
-> | # | Nome | [Tipo di dati (SQL Server)](https://docs.microsoft.com/sql/t-sql/data-types/data-types-transact-sql) | Descrizione |
+> | # | Nome | [Tipo di dati (SQL Server)](/sql/t-sql/data-types/data-types-transact-sql) | Descrizione |
 > | :-: | :-: | :-: |:------------------- |
 > | 0 | UsageId | `uniqueidentifier` | Identificatore univoco della chiamata |
 > | 1 | ID chiamata | `nvarchar(64)` | Identificatore di chiamata. Non è garantito che sia univoco |
@@ -136,7 +136,7 @@ La prima riga del file CSV contiene nomi di colonna. Tutte le date sono UTC e in
 È possibile esportare dati fino a cinque mesi (150 giorni) dalla data corrente, a meno che le normative specifiche del paese non proibino la conservazione dei dati per tale periodo.
 
 > [!div class="has-no-wrap"]  
-> | # | Nome | [Tipo di dati (SQL Server)](https://docs.microsoft.com/sql/t-sql/data-types/data-types-transact-sql) | Descrizione |
+> | # | Nome | [Tipo di dati (SQL Server)](/sql/t-sql/data-types/data-types-transact-sql) | Descrizione |
 > | :-: | :-: | :-: |:------------------- |
 > | 0 | CorrelationId | `uniqueidentifier` | Identificatore univoco della chiamata |
 > | 1 | Indirizzo SIP | `nvarchar(128)` | Indirizzo dell'utente o del bot che ha effettuato o ricevuto la chiamata.<br/>Si noti che si tratta in realtà di UserPrincipalName (UPN, nome di accesso) in Azure Active Directory, che in genere corrisponde all'indirizzo SIP |

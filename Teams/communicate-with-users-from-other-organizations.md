@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Priority
 description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno (federazione) e l'accesso guest.
-ms.openlocfilehash: 10ce0e7f89872a7fda842871d17f8bd06481193f
-ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+ms.openlocfilehash: e4aea581af73e69512e8ab55f87faa0602219575
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461046"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51115994"
 ---
 # <a name="use-guest-access-and-external-access-to-collaborate-with-people-outside-your-organization"></a>Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 
@@ -53,7 +53,7 @@ Usare l'accesso guest per aggiungere una persona esterna all'organizzazione a un
 
 Gli utenti guest vengono aggiunti all'istanza di Azure Active Directory dell'organizzazione come utenti B2B e devono accedere a Teams usando l'account guest. Questo significa che per accedere all'organizzazione potrebbero doversi disconnettere dalla propria organizzazione.
 
-Per configurare l'accesso guest per Teams, vedere [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team).
+Per configurare l'accesso guest per Teams, vedere [Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team).
 
 ## <a name="compare-external-and-guest-access"></a>Confronto tra accesso esterno e accesso guest
 
@@ -105,4 +105,3 @@ Le tabelle seguenti mostrano le differenze nell'uso dell'accesso esterno (federa
 [Accesso esterno in Teams](manage-external-access.md)
 
 [Accesso guest in Teams](guest-access.md)
-

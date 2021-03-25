@@ -14,12 +14,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Informazioni sull'esperienza di condivisione di file e cartelle in Microsoft Teams.
-ms.openlocfilehash: 5b6847c42f13701e289b2efaad4a5489351f339b
-ms.sourcegitcommit: b68a7b5100fc2b47ae81f465d48d1ac2348c1744
+ms.openlocfilehash: 53997f4493a0217e980427ab0d1f85d64095b9c9
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49795777"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117024"
 ---
 # <a name="sharing-files-in-microsoft-teams"></a>Condividere file in Microsoft Teams
 
@@ -48,6 +48,6 @@ Quando gli utenti condividono un file in una chat o in un canale, vengono avvisa
 
 [Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams](sharepoint-onedrive-interact.md)
 
-[Modificare il tipo di collegamento predefinito per un sito](https://docs.microsoft.com/sharepoint/change-default-sharing-link)
+[Modificare il tipo di collegamento predefinito per un sito](/sharepoint/change-default-sharing-link)
 
-[Collaborare con guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team)
+[Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team)

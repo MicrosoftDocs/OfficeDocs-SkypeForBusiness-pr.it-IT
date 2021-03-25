@@ -1,5 +1,5 @@
 ---
-title: Visualizzare un elenco di utenti abilitati per i servizi di audioconferenza
+title: Visualizzare un elenco di utenti abilitati per le audioconferenze
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,17 +21,17 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per i servizi di conferenza telefonica con accesso esterno da Microsoft Teams. "
-ms.openlocfilehash: 7e40d83d63e8346a4eef2bfcb2f3c9c53a097b6d
-ms.sourcegitcommit: 1807ea5509f8efa6abba8462bce2f3646117e8bf
+description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per le conferenze telefoniche con accesso esterno da Microsoft Teams. "
+ms.openlocfilehash: 13cee193c74e04ad530eef074ba989a1e5c300af
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2020
-ms.locfileid: "44691162"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117224"
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-microsoft-teams"></a>Visualizzare un elenco di utenti abilitati per le audioconferenze in Microsoft Teams
 
-Dopo aver abilitato gli utenti di Microsoft Teams nell'organizzazione per le audioconferenze, è possibile visualizzare l'elenco di tali utenti abilitati. 
+Dopo aver abilitato gli utenti di Microsoft Teams nell'organizzazione per le audioconferenze, è possibile visualizzare l'elenco degli utenti abilitati. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
@@ -43,22 +43,22 @@ Dopo aver abilitato gli utenti di Microsoft Teams nell'organizzazione per le aud
 
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
-- Quando si visualizza l'elenco degli utenti abilitati, è possibile selezionare un utente dall'elenco per modificare le impostazioni di audioconferenza per tale utente.
+- Quando si visualizza l'elenco degli utenti abilitati, è possibile selezionare un utente nell'elenco per modificare le impostazioni di audioconferenza per tale utente.
     
-- Quando si seleziona un singolo utente, è possibile visualizzare il numero di telefono predefinito assegnato all'utente e qualsiasi altra impostazione pertinente per i servizi di audioconferenza.    
+- Quando si seleziona un singolo utente, è possibile visualizzare il numero di telefono predefinito assegnato all'utente e qualsiasi altra impostazione di audioconferenza pertinente.    
    
 - Puoi utilizzare il pulsante Cerca per cercare un singolo utente nell'elenco.
     
     
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più su Windows PowerShell
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
-Windows PowerShell is all about managing users and what users are allowed or not allowed to do. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere i seguenti argomenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](https://go.microsoft.com/fwlink/?LinkId=525041)
+  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
-  - [Modi migliori per gestire Microsoft 365 o Office 365 con Windows PowerShell](https://go.microsoft.com/fwlink/?LinkId=525142)
+  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-Per altre informazioni sulle Windows PowerShell, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](https://docs.microsoft.com/powershell/module/teams/?view=teams-ps)
+Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
     
 ## <a name="related-topics"></a>Argomenti correlati
 

@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: ritikag
 ms.service: msteams
 audience: admin
-description: Usare questo script di PowerShell per creare un criterio di messaggistica in Teams e assegnarlo agli utenti dell'organizzazione.
+description: Usare questo script di PowerShell per creare criteri di messaggistica in Teams e assegnarli agli utenti dell'organizzazione.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -17,27 +17,27 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e3d1fa3ebe45785c088852c518ac5490263fa6aa
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c665b96c0c44c2ea763c343bb2857d4c2b9dbb26
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804656"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117274"
 ---
 # <a name="powershell-script-sample---create-and-assign-a-messaging-policy"></a>Esempio di script di PowerShell - Creare e assegnare criteri di messaggistica
 
 Usare questo script di PowerShell per creare un criterio di messaggistica in Microsoft Teams e assegnarlo agli utenti. 
 
-Per altre informazioni sull'uso di questo script di PowerShell, vedere [La Guida introduttiva di Teams per l'istruzione.](https://docs.microsoft.com/microsoftteams/teams-quick-start-edu)
+Per altre informazioni sull'uso di questo script di PowerShell, vedere [Guida introduttiva - Teams per l'istruzione.](../teams-quick-start-edu.yml)
 
-Questo script usa il cmdlet [Grant-CsTeamsMessagingPolicy](https://docs.microsoft.com/powershell/module/skype/grant-csteamsmessagingpolicy) presente nel modulo PowerShell di Skype for Business Online. Per altre informazioni sulla gestione di Teams con [PowerShell,](../teams-powershell-overview.md) vedere la panoramica di Teams su PowerShell.
+Questo script usa il cmdlet [Grant-CsTeamsMessagingPolicy](/powershell/module/skype/grant-csteamsmessagingpolicy) che si trova nel modulo di PowerShell di Skype for Business online. Per altre informazioni sulla gestione di Teams con [PowerShell,](../teams-powershell-overview.md) vedere Panoramica di Teams PowerShell.
 
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Scaricare e installare il [modulo PowerShell di Skype for Business online,](https://www.microsoft.com/download/details.aspx?id=39366)quindi riavviare il computer, se richiesto.
+Scaricare e installare il [modulo di PowerShell di Skype for Business Online,](https://www.microsoft.com/download/details.aspx?id=39366)quindi riavviare il computer, se richiesto.
 
-Per saperne di più, [consulta Gestire Skype for Business online con PowerShell di Office 365.](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)
+Per snellire di più, vedere Gestire Skype for Business online con PowerShell di [Office 365.](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)
 
 ## <a name="sample-script"></a>Script di esempio
 
@@ -61,4 +61,4 @@ $dataSetFilePath = "<csv file with user ids for newly provisioned students> "
 ```
 
 > [!NOTE]
-> È anche possibile assegnare criteri di messaggistica direttamente agli utenti su scala mediante un'assegnazione di criteri batch o a un gruppo di cui gli utenti sono membri. Per altre informazioni, vedere [Assegnare criteri a grandi set di utenti](../batch-group-policy-assignment-edu.md) dell'istituto di istruzione e Assegnare criteri agli utenti in [Teams.](../assign-policies.md)
+> È anche possibile assegnare un criterio di messaggistica direttamente agli utenti su larga scala tramite un'assegnazione di criteri batch o a un gruppo di cui gli utenti sono membri. Per altre informazioni, vedere [Assegnare criteri a grandi set di utenti](../batch-group-policy-assignment-edu.md) dell'istituto di istruzione e Assegnare criteri agli utenti in [Teams.](../assign-policies.md)

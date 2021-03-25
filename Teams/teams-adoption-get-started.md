@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: In questo articolo si apprenderanno le fasi di avvio, esperimento e abilitazione dell'adozione di Microsoft Teams.
+description: Questo articolo illustra le fasi di avvio, sperimentazione e abilitazione dell'adozione di Microsoft Teams.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,42 +21,42 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7fc3d2deea06e7502884741470aec7e58660eeb0
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 9bfdd41bc03e89a08e68f024d284b63d9d3fbbe6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834146"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116904"
 ---
 # <a name="get-started-driving-adoption-of-microsoft-teams"></a>Introduzione all'adozione di Microsoft Teams
 
-Sulla base dell'adozione di Microsoft Teams, è possibile offrire un'esperienza utente eccellente e un aumento del valore aziendale all'interno dell'azienda. Il nostro obiettivo è essere rapidamente in grado di iniziare a usare Teams. Questa guida è incentrata sull'adozione di Teams da parte degli utenti e dipende dalla conformità tecnica dell'ambiente, che è illustrata in altre sezioni della documentazione.
+Grazie all'adozione di Microsoft Teams, è possibile offrire un'esperienza utente eccellente e un maggiore valore aziendale all'interno dell'azienda. Il nostro obiettivo è di iniziare rapidamente il tuo viaggio con Teams. Questa guida è incentrata sull'adozione da parte degli utenti di Teams e ha dipendenze dalla conformità tecnica dell'ambiente, trattata in altre sezioni della documentazione.
 
-## <a name="adoption-prerequisites"></a>Prerequisiti di adozione
+## <a name="adoption-prerequisites"></a>Prerequisiti per l'adozione
 
-Prima di iniziare, verifica che:
+Prima di iniziare, verificare che:
 
-- [Teams viene installato](get-clients.md) e [le licenze vengono assegnate](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description) nel proprio ambiente. Al team di base e agli early adopter che parteciperanno alla fase iniziale del progetto dovrebbe essere assegnata almeno una licenza.
+- [Teams è installato](get-clients.md) e [le licenze vengono assegnate](/office365/servicedescriptions/teams-service-description) nel tuo ambiente. Come minimo, le licenze devono essere assegnate al team di base e ai primi utenti che parteciperanno a questa fase iniziale del progetto.
 
-- Sono stati scaricati le applicazioni desktop e per dispositivi mobili. 
+- Hai scaricato le applicazioni desktop e per dispositivi mobili. 
 
 ## <a name="adoption-framework"></a>Framework di adozione
 
-Microsoft 365 e Office 365 hanno un framework di adozione che si applica ai carichi di lavoro principali del servizio. Questo framework illustra i passaggi di base che qualsiasi organizzazione deve eseguire per supportare i servizi cloud. Per altre informazioni sul framework di adozione generale, vedere la documentazione e le risorse [di Microsoft Enterprise.](https://aka.ms/O365AdoptionHub) 
+Microsoft 365 e Office 365 hanno un framework di adozione che si applica ai carichi di lavoro principali del servizio. Questo framework illustra i passaggi principali che qualsiasi organizzazione deve eseguire per supportare i servizi cloud. Per altre informazioni sul framework generale di adozione, vedere la documentazione e le [risorse di Microsoft Enterprise.](/microsoft-365/enterprise/) 
 
-In questo piano di adozione di Teams, abbiamo organizzato i passaggi in fasi e fornito indicazioni specifiche su Teams, come indicato in Fasi [di](#adoption-phases)adozione, successivo.
+In questo piano di adozione di Teams, i passaggi sono stati organizzati in fasi e sono stati forniti indicazioni specifiche su Teams, come descritto in [Fasi di](#adoption-phases)adozione.
 
 ## <a name="adoption-phases"></a>Fasi di adozione 
 
-Ogni progetto di adozione varia per dimensioni e complessità in base all'ambiente, ma i passaggi iniziali sono identici all'interno della lavagna. Riteniamo che la suddivisione del processo in tre fasi distinte, ovvero avvio, esperimento e abilitazione, consentirà a tutti di semplificare l'adozione.  
+Ogni progetto di adozione varia in base alle dimensioni e alla complessità in base all'ambiente, ma i passaggi iniziali sono identici. Riteniamo che suddividere il processo in tre fasi distinte, ovvero avvio, sperimentazione e abilitazione, snellirà l'adozione per tutti.  
 
-- **Inizia:** in questa prima fase riunirai il tuo team, settarai i team iniziali e userai Teams per iniziare a pianificare l'adozione di Teams. Questo approccio aumenterà la tua familiarità tecnica con il prodotto e ti aiuterà a sviluppare le competenze necessarie per completare correttamente le fasi successive. 
+- **Inizia:** in questa prima fase, riunirai il tuo team, configurarai i team iniziali e userai Teams per iniziare a pianificare l'adozione di Teams. Questo approccio aumenta la familiarità tecnica con il prodotto e consente di creare le competenze necessarie per completare correttamente le fasi successive. 
 
-- **Prova:** in questa fase di crescita controllata porterai a bordo i tuoi campioni interni e gli early adopter. Si parla con gli utenti aziendali per identificare scenari che trarrebbe immediatamente vantaggio dalle funzionalità di collaborazione e comunicazione fornite da Teams. Si raccoglierà feedback che informeranno la fase di adozione su vasta scala e si prendereranno decisioni del servizio in materia di governance e gestione del ciclo di vita che garantiranno una distribuzione corretta.
+- **Esperimento:** in questa fase di crescita controllata, porterai a bordo i tuoi campioni interni e i primi utenti a bordo. Si parlerà con gli utenti aziendali per identificare gli scenari che trarrebbe immediatamente vantaggio dalle funzionalità di collaborazione e comunicazione fornite da Teams. Raccoglierai feedback che informeranno la fase di adozione su vasta scala e prenderemo decisioni relative alla governance e alla gestione del ciclo di vita che garantiranno una distribuzione corretta.
 
-- **Scala:** questa è la fase di distribuzione su vasta scala in cui si attivano le funzionalità di Teams per tutti i dipendenti. In questa fase, le dimensioni dell'organizzazione determineranno se si tratta di un progetto "grande" che accederà Teams per tutti i dipendenti contemporaneamente o se ci si avvicina per area geografica, business unit o altro metodo di segmentazione della popolazione di dipendenti. In questa fase si passa a un modello di recapito continuo. Dipendenti, responsabili e business unit vorranno espandere il loro uso di Teams e richiederanno formazione e il coinvolgimento per capire come usare al meglio Teams e altre funzionalità di Microsoft 365 o Office 365.
+- **Scala:** questa è la fase di distribuzione su larga scala in cui si attivano le funzionalità di Teams per tutti i dipendenti. In questa fase, le dimensioni dell'organizzazione determineranno se si tratta di un progetto "grande" che attiva Teams per tutti i dipendenti contemporaneamente o se ci si avvicina in base all'area geografica, alla business unit o a un altro metodo di segmentazione della popolazione dei dipendenti. In questa fase si passa a un modello di recapito continuo. Dipendenti, dirigenti e business unit vorranno espandere l'uso di Teams e richiederanno formazione e impegno per comprendere come usare al meglio Teams e altre caratteristiche di Microsoft 365 o Office 365.
 
 Ognuna di queste fasi di adozione dipende dalla preparazione tecnica e ambientale per Teams. Iniziamo!
 
 
-![Icona che rappresenta il passaggio successivo: Fase di adozione di ](media/teams-adoption-next-icon.png)        [Microsoft Teams 1: Inizio](teams-adoption-phase1.md)|
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Fase 1:](teams-adoption-phase1.md) Avvio dell'adozione di Microsoft Teams|

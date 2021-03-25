@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-mar2020
 description: Gestione remota delle impostazioni predefinite usate da un dispositivo Microsoft Teams Rooms, tra cui l'applicazione di un tema personalizzato e la creazione di un file di impostazioni master.
-ms.openlocfilehash: a1634e34242a54bb93e3f61da6afd97ec35ec14e
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: ecac38b0261dbf9b6c27b1b636df31ecc9b3afd7
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875116"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117324"
 ---
 # <a name="manage-a-microsoft-teams-rooms-console-settings-remotely-with-an-xml-configuration-file"></a>Gestire le impostazioni della console di Microsoft Teams Rooms in remoto con un file di configurazione XML
 
@@ -163,7 +163,7 @@ All'avvio, se una console di Microsoft Teams Rooms trova un file XML denominato 
 A seconda del numero di dispositivi Microsoft Teams Rooms dell'organizzazione e di come si sceglie di gestirli, è possibile inserire il file di configurazione XML in diversi modi. Dopo aver inserito il file nella console, riavviarlo per elaborare le modifiche alla configurazione. Il file di configurazione XML viene eliminato dopo l'elaborazione. I metodi di gestione suggeriti per i dispositivi Microsoft Teams Rooms sono descritti in:
   
 - [Configurazione di Criteri di gruppo per Le chat room di Microsoft Teams](rooms-operations.md#GroupPolicy)
-- [Gestione remota con PowerShell](rooms-operations.md#RemotePS) e [Configurare un elemento file](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx)
+- [Gestione remota con PowerShell](rooms-operations.md#RemotePS) e [Configurare un elemento file](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772536(v=ws.11))
 
 Puoi usare qualsiasi metodo che ti piace, purché tu possa usarlo per trasferire file e attivare un riavvio nel dispositivo console. Il file deve essere leggibile, scrivibile ed eliminabile dall'account utente locale del dispositivo. Preferibilmente è di proprietà di e dispone di privilegi completi concessi a tale utente. Se le autorizzazioni per i file non sono impostate correttamente, il software potrebbe non riuscire ad applicare le impostazioni, potrebbe non riuscire a eliminare il file al completamento dell'elaborazione e persino arrestarsi in modo anomalo.
   
@@ -195,4 +195,4 @@ Per individuare il percorso dell'istanza:
 
 [Gestire Microsoft Teams Rooms](rooms-manage.md).
 
-[Configurare un elemento file](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx)
+[Configurare un elemento file](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772536(v=ws.11))

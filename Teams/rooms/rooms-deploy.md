@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni su come distribuire Microsoft Teams Rooms, incluse le fasi di distribuzione.
-ms.openlocfilehash: 87ded33b464d6f5248fe1fb71d579d5f191bb6b6
-ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
+ms.openlocfilehash: 3ac6ceabd1d421551ab3b9404688bd4a9302e3d6
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50726307"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117464"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -140,9 +140,9 @@ Quando si prevede di distribuire Microsoft Teams Rooms, è possibile scegliere d
 
 **Suggerimento per i** professionisti: ogni chat room di Microsoft Teams deve avere un nome di computer valido e univoco nella rete. Molti sistemi di monitoraggio e avviso visualizzano il nome del computer come identificatore chiave, quindi è importante sviluppare una convenzione di denominazione per le distribuzioni di Microsoft Teams Rooms che consenta al personale di supporto di individuare facilmente le chat room di Microsoft Teams contrassegnate come che richiedono un'azione. Un esempio potrebbe essere l'uso di uno schema MTR-*Site* - *Room Name* (MTR-LON-CURIE). 
 
-Nell'ambito della distribuzione, è anche necessario prendere in considerazione [](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/clients-and-devices/skype-room-systems-v2-0#local-accounts) la strategia di gestione e configurazione degli account locali creati dal programma di installazione dell'applicazione Microsoft Teams Rooms.
+Nell'ambito della distribuzione, è anche necessario prendere in considerazione [](/skypeforbusiness/plan-your-deployment/clients-and-devices/skype-room-systems-v2-0#local-accounts) la strategia di gestione e configurazione degli account locali creati dal programma di installazione dell'applicazione Microsoft Teams Rooms.
 
-Microsoft fornisce indicazioni su come usare [Microsoft Azure Monitor](https://docs.microsoft.com/skypeforbusiness/plan-your-deployment/clients-and-devices/azure-monitor) per monitorare la distribuzione di Microsoft Teams Rooms e segnalare la disponibilità, gli errori hardware/software e la versione dell'applicazione Microsoft Teams Rooms. Se si decide di usare Microsoft Operations Management Suite, è consigliabile installare l'agente di Operations Management Suite nell'ambito del processo di installazione del software e configurare le informazioni di connessione dell'area di lavoro per l'area di lavoro. 
+Microsoft fornisce indicazioni su come usare [Microsoft Azure Monitor](/skypeforbusiness/plan-your-deployment/clients-and-devices/azure-monitor) per monitorare la distribuzione di Microsoft Teams Rooms e segnalare la disponibilità, gli errori hardware/software e la versione dell'applicazione Microsoft Teams Rooms. Se si decide di usare Microsoft Operations Management Suite, è consigliabile installare l'agente di Operations Management Suite nell'ambito del processo di installazione del software e configurare le informazioni di connessione dell'area di lavoro per l'area di lavoro. 
 
 Un'altra considerazione è se le chat room di Microsoft Teams verranno unite al dominio. Informazioni sui vantaggi dell'aggiunta al dominio sono disponibili in Considerazioni sull'aggiunta al dominio [di Skype Room System.](domain-joining-considerations.md) 
 
@@ -200,5 +200,3 @@ _Tabella delle risorse di esempio_
 |-----------|---------------|---------------|------------------------------------------|------------------------------------------|------------------------------------------|--------------------------------------------|-------------------|
 | Sede centrale di Londra | Curie         | Media.        |                                          |                                          |                                          |                                            |                   |
 | Sede centrale di Sydney | Collina          | Grande         |                                          |                                          |                                          |                                            |                   |
-
-

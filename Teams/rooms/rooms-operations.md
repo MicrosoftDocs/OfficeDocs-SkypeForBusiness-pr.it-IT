@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Leggere questo argomento per informazioni sulla gestione di Microsoft Teams Rooms, la nuova generazione di Skype Room Systems.
-ms.openlocfilehash: 56468ad85b20b25d6e9310a20638ae35e941db73
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: 52234f72c380c4f5af8f47fff51998fa8c3d1459
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875146"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117434"
 ---
 # <a name="microsoft-teams-rooms-maintenance-and-operations"></a>Manutenzione e operazioni di Microsoft Teams Rooms 
  
@@ -81,7 +81,7 @@ Questa sezione illustra le impostazioni di sistema da cui Microsoft Teams Rooms 
 |Power Management - \> In AC, disattivare lo schermo dopo 10 minuti  <br/> Gestione risparmio energia - \> In modalità di sospensione, non mettere mai in sospensione il sistema  <br/> |Consente a Microsoft Teams Rooms di disattivare gli schermi collegati e riattivarsi automaticamente  <br/> |
 |net accounts /maxpwage:unlimited  <br/> Oppure mezzi equivalenti per disabilitare la scadenza delle password nell'account locale. Se non si riesce a farlo, l'account Skype non riesce ad accedere lamentando una password scaduta. Si noti che questa operazione influisce su tutti gli account locali nel computer e quindi la mancata impostazione di questa impostazione causerà anche la scadenza dell'account amministrativo nella casella.  <br/> |Consente all'account Skype di accedere sempre  <br/> |
    
-Il trasferimento di file tramite Criteri di gruppo è illustrato in [Configurare un elemento file.](https://technet.microsoft.com/library/cc772536%28v=ws.11%29.aspx)
+Il trasferimento di file tramite Criteri di gruppo è illustrato in [Configurare un elemento file.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc772536(v=ws.11))
 
 > [!NOTE]
 > Quando il dispositivo Microsoft Teams Rooms è compatibile con la versione successiva del sistema operativo Windows 10, il dispositivo viene aggiornato automaticamente alla versione successiva tramite Windows Update. Il dispositivo Microsoft Teams Rooms non deve essere aggiornato alla prossima versione di Windows 10 manualmente o tramite l'abilitazione dei criteri di gruppo di Windows Update for Business (WUFB) "Selezionare il livello di conformità di Windows per gli aggiornamenti da ricevere" e "Selezionare quando vengono ricevuti gli aggiornamenti delle build di anteprima e delle funzionalità" tramite l'oggetto Criteri di gruppo. Un dispositivo con questi criteri di gruppo abilitato è noto per i problemi con l'aggiornamento del sistema operativo Windows 10 da parte dell'app Microsoft Teams Rooms.
@@ -99,7 +99,7 @@ Il trasferimento di file tramite Criteri di gruppo è illustrato in [Configurare
 - Trasferire file (richiede una chat room di Microsoft Teams appartenente a un dominio)
     
 > [!NOTE]
-> Questa funzionalità è disattivata per impostazione predefinita. È necessario abilitare PowerShell remoto per l'ambiente nel sistema Microsoft Teams Rooms per eseguire le operazioni seguenti. Per informazioni su come abilitare PowerShell remoto, vedere la documentazione in **[Enable-PSRemoting.](https://technet.microsoft.com/library/hh849694.aspx)**
+> Questa funzionalità è disattivata per impostazione predefinita. È necessario abilitare PowerShell remoto per l'ambiente nel sistema Microsoft Teams Rooms per eseguire le operazioni seguenti. Per informazioni su come abilitare PowerShell remoto, vedere la documentazione in **[Enable-PSRemoting.](/powershell/module/microsoft.powershell.core/enable-psremoting)**
   
 Ad esempio, è possibile abilitare Remote PowerShell nel modo seguente:
   
@@ -169,7 +169,7 @@ Per impostazione predefinita, Microsoft Teams Rooms prova a connettersi a Window
   
 Per impostazione predefinita, Microsoft Teams Rooms si connette a Windows Update per recuperare gli aggiornamenti del firmware del sistema operativo e delle periferiche USB e le installa al di fuori dell'orario di ufficio configurato. È possibile configurare l'orario di ufficio accedendo all'account di amministratore ed eseguendo l'app Impostazioni.
   
-Se si vogliono gestire gli aggiornamenti manualmente e non si riesce a seguire la normale procedura per [Microsoft Store per](https://businessstore.microsoft.com/store) le aziende per distribuire le app [offline,](https://docs.microsoft.com/microsoft-store/distribute-offline-apps)è possibile acquisire il file APPX appropriato e le dipendenze dal [kit](https://go.microsoft.com/fwlink/?linkid=851168) di distribuzione (dalle istruzioni per configurare una console di Microsoft [Teams Rooms)](console.md)che può essere usato con Configuration Manager. Il rilascio del kit di distribuzione è in ritardo rispetto al rilascio dello store, quindi potrebbe non corrispondere sempre all'ultima build disponibile.
+Se si vogliono gestire gli aggiornamenti manualmente e non si riesce a seguire la normale procedura per [Microsoft Store per](https://businessstore.microsoft.com/store) le aziende per distribuire le app [offline,](/microsoft-store/distribute-offline-apps)è possibile acquisire il file APPX appropriato e le dipendenze dal [kit](https://go.microsoft.com/fwlink/?linkid=851168) di distribuzione (dalle istruzioni per configurare una console di Microsoft [Teams Rooms)](console.md)che può essere usato con Configuration Manager. Il rilascio del kit di distribuzione è in ritardo rispetto al rilascio dello store, quindi potrebbe non corrispondere sempre all'ultima build disponibile.
   
 ### <a name="to-update-using-powershell"></a>Per eseguire l'aggiornamento con Powershell
 
@@ -223,4 +223,3 @@ La console è tornata nella modalità di funzionamento normale. La procedura seg
 - Nel caso in cui un'immagine speculare sia visualizzata nell'anteprima della sala, l'amministratore IT può correggere l'impostazione ciclica dell'alimentazione della fotocamera o capovolgere l'orientamento dell'immagine usando il telecomando della fotocamera.
 - Si è verificata una perdita dell'accesso al touchscreen della console. In questi casi, il problema viene talvolta risolto riavviando il sistema Microsoft Teams Rooms.
 - È stata nota la perdita dell'audio locale durante la connessione di un PC alla console tramite l'ingestione cablata. In questi casi, il riavvio del PC può risolvere il problema di riproduzione audio locale.
-    

@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni sulle licenze disponibili per i diversi tipi di funzionalità per chiamate e riunioni nelle sale di Microsoft Teams.
-ms.openlocfilehash: c01fafd6820b1ae62afccbfc2eab89c46c9d1598
-ms.sourcegitcommit: b8c4536db4ce9ea682e247d6c8ee7019b08462f8
+ms.openlocfilehash: f538d6adc0e07f30ee4fe5c0ea3613ea962838c5
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/18/2021
-ms.locfileid: "50875156"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117454"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Aggiornamento delle licenze delle sale riunioni di Teams
 
@@ -39,7 +39,7 @@ Microsoft ha due SKU dedicati per le riunioni con licenza e per le chiamate per 
 |:--- |:---: |:---: |
 |Skype for Business |&#x2714;| &#x2714;|
 |Microsoft Teams|  &#x2714;|  &#x2714;|
-|Phone System|  &#x2714;|  &#x2714;|
+|Sistema telefonico|  &#x2714;|  &#x2714;|
 |Audioconferenza|&#x2714; &sup1;|&#x2714; &sup1;|
 |Microsoft Intune|&#x2714;|&#x2714;|  
 |Disponibilità in tutto il mondo | &#x2714; &sup2;| &#x2714; &sup2;|
@@ -47,7 +47,7 @@ Microsoft ha due SKU dedicati per le riunioni con licenza e per le chiamate per 
 |Servizi gestiti | | &#x2714; &sup3;|
 | | | |
 
-&sup1; La disponibilità e i minuti inclusi possono variare in base all'area geografica. Per verificare la disponibilità del servizio, vedere Disponibilità di paesi [e aree geografica per audioconferenze e piani per chiamate.](https://docs.microsoft.com/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans) I costi di consumo possono essere applicati per servizi aggiuntivi, come il numero verde, i minuti internazionali per i piani nazionali e così via. I clienti possono disabilitare queste funzionalità per evitare la fatturazione aggiuntiva.  
+&sup1; La disponibilità e i minuti inclusi possono variare in base all'area geografica. Per verificare la disponibilità del servizio, vedere Disponibilità di paesi [e aree geografica per audioconferenze e piani per chiamate.](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans) I costi di consumo possono essere applicati per servizi aggiuntivi, come il numero verde, i minuti internazionali per i piani nazionali e così via. I clienti possono disabilitare queste funzionalità per evitare la fatturazione aggiuntiva.  
 
 &sup2; Non disponibile nei cloud sovrani  
 
@@ -70,13 +70,13 @@ La tabella seguente elenca le funzionalità disponibili in Microsoft Teams Rooms
 |Avviare una riunione ad hoc | Microsoft Teams Rooms Standard o Premium  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Avviare una riunione ad hoc ed effettuare chiamate in uscita da una riunione ai numeri di telefono |  Microsoft Teams Rooms Standard o Premium |Skype for Business Licenza CAL Standard  <br/> Skype for Business Licenza CAL per server Enterprise|
 |Assegnare un numero di telefono alla sala e effettuare o ricevere una chiamata dalla sala o partecipare a un'audioconferenza usando un numero di telefono  | Con routing diretto: Microsoft Teams Rooms Standard o Premium<br/>Senza instradamento diretto: piano per chiamate nazionali o internazionali<br/>Microsoft 365 Business Voice  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Plus  |
-|Gestire il dispositivo della sala con Microsoft Intune |Microsoft Teams Rooms Standard o Premium  |Abbonamento a Microsoft Intune [con MDM locale](https://docs.microsoft.com/configmgr/mdm/plan-design/plan-on-premises-mdm) |
+|Gestire il dispositivo della sala con Microsoft Intune |Microsoft Teams Rooms Standard o Premium  |Abbonamento a Microsoft Intune [con MDM locale](/configmgr/mdm/plan-design/plan-on-premises-mdm) |
 |Servizi gestiti di Microsoft Teams Rooms | Microsoft Teams Rooms Premium ||
 | |||
 
 > [!NOTE]
 > Se sono state assegnate licenze esistenti per i sistemi delle chat room, queste continueranno a funzionare senza interruzioni. È consigliabile passare all'uso del nuovo SKU della sala riunioni alla scadenza delle licenze esistenti.  
 
- **Usare la versione corretta di Windows 10:** per i clienti che vogliono distribuire immagini di Windows 10 nei propri dispositivi, vedere Configurare una console di [Microsoft Teams Rooms.](https://docs.microsoft.com/microsoftteams/room-systems/console) È possibile ottenere una copia dal [Centro servizi per contratti multilicenza.](https://www.microsoft.com/Licensing/servicecenter/) 
+ **Usare la versione corretta di Windows 10:** per i clienti che vogliono distribuire immagini di Windows 10 nei propri dispositivi, vedere Configurare una console di [Microsoft Teams Rooms.](./console.md) È possibile ottenere una copia dal [Centro servizi per contratti multilicenza.](https://www.microsoft.com/Licensing/servicecenter/) 
  
  Vedi anche [Esperienze eccezionali nelle sale riunioni: Scopri i nuovi Microsoft Teams Rooms Standard e Premium.](https://www.microsoft.com/microsoft-365/blog/2020/07/21/microsoft-teams-meetings-hybrid-workplace-options/)

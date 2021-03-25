@@ -17,12 +17,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e5c64b8ff26ae91263925a23151cdc6619b29b3
-ms.sourcegitcommit: b4b2c7e79679cce6cf5f863ddf708e50164f9a9d
+ms.openlocfilehash: c991c038e40d988de596d10ca0e868cfd911175d
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50861420"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116024"
 ---
 # <a name="country-and-region-availability-for-business-voice"></a>Disponibilità di Business Voice per paesi e aree geografiche
 
@@ -46,7 +46,7 @@ Nei paesi e nelle regioni **senza** di supporto per Piani per chiamate e la proc
 
 Se il tenant si trova in un paese o un'area geografica che non supporta Piani per chiamate e la procedura guidata Attività, vedere [Ottenere assistenza da parte di un rivenditore o un partner Microsoft](reseller-partner-support.md).
 
-Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano per chiamate, vedere [Descrizione del servizio Microsoft 365 Business Voice](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-business-voice-service-description).
+Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano per chiamate, vedere [Descrizione del servizio Microsoft 365 Business Voice](/office365/servicedescriptions/microsoft-365-business-voice-service-description).
 
 
 | Paese o area geografica    | Business Voice<br> con Piano per chiamate | Business Voice<br> senza Piano per chiamate<br>(instradamento diretto) | Procedura guidata Attività |

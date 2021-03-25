@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: brandber
 ms.service: msteams
 audience: admin
-description: Usare questo script di PowerShell per esportare un elenco di responsabili e i relativi indirizzi per l'organizzazione, in preparazione alla creazione di un team per ogni responsabile con i relativi diretti come membri del team.
+description: Usare questo script di PowerShell per esportare un elenco di responsabili e le relative dirette per l'organizzazione, in preparazione per la creazione di un team per ogni responsabile con i propri diretti come membri del team.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -16,20 +16,20 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d9e7b35710811438f1435306ce08b487b490d472
-ms.sourcegitcommit: 43d66693f6f08d4dcade0095bf613240031fec56
+ms.openlocfilehash: a7f2217bc39ead0abec48dafb75ff3f846681f20
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46583123"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117314"
 ---
 # <a name="powershell-script-sample---export-managers-and-their-directs"></a>Esempio di script di PowerShell - Esportare i responsabili e i relativi diretti
 
-Usare questo script di PowerShell per esportare un elenco di responsabili e i relativi diretti per l'organizzazione, in preparazione alla creazione di un team di responsabili per ogni responsabile con i relativi diretti come membri del team.
+Usare questo script di PowerShell per esportare un elenco di responsabili e le relative dirette per l'organizzazione, in preparazione per la creazione di un team di responsabili di persone per ogni responsabile con i propri diretti come membri del team.
 
-Per informazioni su questo script di PowerShell, vedere [Creare team di gestione utenti.](../create-manager-directs-teams.md)
+Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone.](../create-manager-directs-teams.md)
 
-Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell.](https://docs.microsoft.com/powershell/azure/overview?view=azurermps-5.1.1)
+Se non si ha una nuova versione di PowerShell e si ha bisogno di assistenza per iniziare, vedere [Panoramica di Azure PowerShell.](/powershell/azure/overview?view=azurermps-5.1.1)
 
 
 ## <a name="export-managers-script"></a>Export-Managers script
@@ -142,5 +142,3 @@ Write-Host -ForegroundColor Green "$(Get-Timestamp) Exported tab delimited outpu
 
 
 ```
-
-

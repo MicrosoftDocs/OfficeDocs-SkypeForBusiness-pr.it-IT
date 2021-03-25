@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: f2830f80-0b64-4b1e-96de-65ee4cddc3d9
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per definire un nuovo sito di succursale, specificare quanto segue:'
-ms.openlocfilehash: 3ab0f19c66d1238454dac08a9094d7a95ffbc04d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 3452c80cce4941d33d1781a5e90dff26841131cb
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49811926"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116464"
 ---
 # <a name="add-branch-site-name"></a>Aggiungere il nome del sito di succursale
 
@@ -30,6 +30,4 @@ Un nome per il nuovo sito di succursale. Il nome specificato deve essere univoco
 
 Il campo relativo alla descrizione è facoltativo e consente di specificare ulteriori informazioni descrittive che non faranno parte del nome dell'infrastruttura, ma che illustreranno meglio il sito.
 
-Per informazioni dettagliate, vedere [Sites](https://technet.microsoft.com/library/022cb6dd-37e2-4882-a53e-5ddfdbc6f53a.aspx).
-
-
+Per informazioni dettagliate, vedere [Sites](/previous-versions/office/lync-server-2013/lync-server-2013-sites).

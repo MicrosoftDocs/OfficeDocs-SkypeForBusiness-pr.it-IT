@@ -13,12 +13,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Questo articolo illustra come configurare l'organizzazione e i dispositivi di Teams Rooms per supportare la partecipazione a riunioni di terze parti a Cisco WebEx e Zoom.
-ms.openlocfilehash: ac4c57dc5cc743fb7b141ecaaaf3531b35912e77
-ms.sourcegitcommit: 2eaf80bca6dfad367283e57662d81a809c9437e8
+ms.openlocfilehash: c8f6bda7680ccd3107c313c87001902e442518c9
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50997434"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117374"
 ---
 # <a name="enable-teams-room-devices-to-join-third-party-meetings"></a>Abilitare i dispositivi di Teams Room per partecipare a riunioni di terze parti
 
@@ -34,9 +34,9 @@ Le sezioni seguenti illustrano come eseguire ognuno di questi passaggi.
 
 ## <a name="step-1-allow-calendar-invite-processing-for-third-party-meetings"></a>Passaggio 1: Consentire l'elaborazione degli inviti al calendario per le riunioni di terze parti
 
-La prima cosa da fare per abilitare un'esperienza di partecipazione con un solo tocco da un dispositivo Team Rooms è impostare le regole di elaborazione del calendario per la cassetta postale sala di Exchange Online del dispositivo. La cassetta postale della sala deve consentire riunioni esterne e mantenere il corpo e l'oggetto del messaggio in modo che possa vedere l'URL necessario per partecipare alla riunione di terze parti. Per impostare queste opzioni della cassetta postale sala usando il cmdlet [Set-CalendarProcessing,](https://docs.microsoft.com/powershell/module/exchange/set-calendarprocessing?view=exchange-ps.) eseguire le operazioni seguenti:
+La prima cosa da fare per abilitare un'esperienza di partecipazione con un solo tocco da un dispositivo Team Rooms è impostare le regole di elaborazione del calendario per la cassetta postale sala di Exchange Online del dispositivo. La cassetta postale della sala deve consentire riunioni esterne e mantenere il corpo e l'oggetto del messaggio in modo che possa vedere l'URL necessario per partecipare alla riunione di terze parti. Per impostare queste opzioni della cassetta postale sala usando il cmdlet [Set-CalendarProcessing,](/powershell/module/exchange/set-calendarprocessing?view=exchange-ps.) eseguire le operazioni seguenti:
 
-1. Connettersi a PowerShell di Exchange Online. Per altre informazioni, vedere Connettersi a [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps) con l'autenticazione di base o Connettersi a [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps)usando l'autenticazione a più fattori, a seconda del metodo di autenticazione.
+1. Connettersi a PowerShell di Exchange Online. Per altre informazioni, vedere Connettersi a [PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps) con l'autenticazione di base o Connettersi a [PowerShell di Exchange Online](/powershell/exchange/mfa-connect-to-exchange-online-powershell?view=exchange-ps)usando l'autenticazione a più fattori, a seconda del metodo di autenticazione.
 
 2. Ottenere il nome dell'entità utente (UPN) della cassetta postale della chat room se non lo si conosce eseguendo il comando seguente:Get the User Principal Name (UPN) of the room mailbox if you don't know it by running the following command:
 
@@ -52,13 +52,13 @@ La prima cosa da fare per abilitare un'esperienza di partecipazione con un solo 
     Set-CalendarProcessing <UserPrincipalName> -ProcessExternalMeetingMessages $True -DeleteComments $False -DeleteSubject $False
     ```
 
-Altre informazioni su [PowerShell di Exchange Online.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell?view=exchange-ps)
+Altre informazioni su [PowerShell di Exchange Online.](/powershell/exchange/exchange-online-powershell?view=exchange-ps)
 
 ## <a name="step-2-configure-office-365-threat-protection-and-link-rewrite"></a>Passaggio 2: Configurare Office 365 Threat Protection e la riscrittura dei collegamenti
 
-Per abilitare l'esperienza di partecipazione con un solo tocco, le informazioni sul collegamento di partecipazione alla riunione della riunione di terze parti devono essere presenti e leggibili nell'invito alla riunione. Se l'organizzazione usa la caratteristica Collegamenti sicuri di [Office 365 Advanced Threat Protection](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links) o se si usa una soluzione di terze parti che analizza tutti gli URL in arrivo e in uscita alla ricerca di minacce, può modificare gli URL di partecipazione alla riunione e rendere la riunione irriconoscibile dal dispositivo Teams Rooms. Per assicurarsi che non accada, è necessario aggiungere gli URL del servizio riunioni di terze parti all'elenco collegamenti sicuri ATP "non riscrivere" o all'elenco di eccezioni di riscrittura URL di terze parti.
+Per abilitare l'esperienza di partecipazione con un solo tocco, le informazioni sul collegamento di partecipazione alla riunione della riunione di terze parti devono essere presenti e leggibili nell'invito alla riunione. Se l'organizzazione usa la caratteristica Collegamenti sicuri di [Office 365 Advanced Threat Protection](/microsoft-365/security/office-365-security/atp-safe-links) o se si usa una soluzione di terze parti che analizza tutti gli URL in arrivo e in uscita alla ricerca di minacce, può modificare gli URL di partecipazione alla riunione e rendere la riunione irriconoscibile dal dispositivo Teams Rooms. Per assicurarsi che non accada, è necessario aggiungere gli URL del servizio riunioni di terze parti all'elenco collegamenti sicuri ATP "non riscrivere" o all'elenco di eccezioni di riscrittura URL di terze parti.
 
-Per aggiungere URL del servizio riunioni di terze parti all'elenco Collegamenti sicuri ATP "non riscrivere", seguire la procedura descritta in Configurare un elenco personalizzato di URL non riscrivere usando Collegamenti sicuri [ATP.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp?view=o365-worldwide) Se si usa una soluzione di terze parti, vedere le istruzioni per tale soluzione per aggiungere URL al relativo elenco di eccezioni di riscrittura URL.
+Per aggiungere URL del servizio riunioni di terze parti all'elenco Collegamenti sicuri ATP "non riscrivere", seguire la procedura descritta in Configurare un elenco personalizzato di URL non riscrivere usando Collegamenti sicuri [ATP.](/microsoft-365/security/office-365-security/set-up-a-custom-do-not-rewrite-urls-list-with-atp?view=o365-worldwide) Se si usa una soluzione di terze parti, vedere le istruzioni per tale soluzione per aggiungere URL al relativo elenco di eccezioni di riscrittura URL.
 
 Ecco alcune voci di esempio che potrebbe essere necessario aggiungere all'elenco di eccezioni "non riscrivere" collegamenti sicuri ATP o url di terze parti:
 

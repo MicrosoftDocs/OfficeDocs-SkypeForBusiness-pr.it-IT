@@ -14,13 +14,13 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 319fdc9f-7ed6-4ed3-8f3f-b78758a0eb42
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile definire gli indirizzi IPv4 o IPv6 per il gateway PSTN (Phone Switched Telephone Network) o IP selezionando Abilita IPv4 o Abilita IPv6. È possibile scegliere Usa tutti gli indirizzi IP configurati o Limita utilizzo servizio a indirizzi IP selezionati.
-ms.openlocfilehash: 850e5dcc0553047ea951a4b07b9cc3f86e4d67e9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: È possibile definire gli indirizzi IPv4 o IPv6 per il gateway PSTN (Phone Switched Telephone Network) o IP selezionando Abilita IPv4 o Abilita IPv6. È possibile scegliere Usa tutti gli indirizzi IP configurati o Limita l'utilizzo del servizio agli indirizzi IP selezionati.
+ms.openlocfilehash: 6b21d2cb3d117c41654e1245bdfb80ad1ae93e8e
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830046"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116424"
 ---
 # <a name="define-the-ip-address-of-the-ip-or-pstn-gateway"></a>Definire l'indirizzo IP del gateway PSTN o IP
 
@@ -30,4 +30,4 @@ Se si seleziona **Usa tutti gli indirizzi IP configurati**, verranno usati tutti
 
 ## <a name="see-also"></a>Vedere anche
 
-[Requisiti per le conferenze telefoniche con accesso esterno](https://technet.microsoft.com/library/9aff949e-3dac-481a-be46-a180c72e8066.aspx)
+[Requisiti per le conferenze telefoniche con accesso esterno](/previous-versions/office/lync-server-2013/lync-server-2013-dial-in-conferencing-requirements)

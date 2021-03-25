@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7adc2d1cf040c778251784b19c92b1f79d7071fe
-ms.sourcegitcommit: c477aa1a7da0b6b9bea1f5d10f1395eef418bfdb
+ms.openlocfilehash: 73aa2312b1467e2298b4ebaa14e22744a73730e3
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50711643"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51107302"
 ---
 <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 ==========================
@@ -109,9 +109,9 @@ Impostare i parametri di configurazione seguenti nel portale di Azure Intune per
 
 Dopo la configurazione dell'account, Teams limiterà la possibilità di eseguire l'accesso, in modo che possano accedere solo agli account autorizzati nei dispositivi registrati.
 
-Per creare un criterio di configurazione dell'app per i dispositivi iOS/iPadOS gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti](https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-use-ios).
+Per creare un criterio di configurazione dell'app per i dispositivi iOS/iPadOS gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi iOS/iPadOS gestiti](/mem/intune/apps/app-configuration-policies-use-ios).
 
-Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-use-android).
+Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](/mem/intune/apps/app-configuration-policies-use-android).
 
 ### <a name="how-to-restrict-sign-in-on-desktop-devices"></a>Come limitare l'accesso nei dispositivi desktop
 Le app Teams in Windows e MacOS supportano ora l'uso di criteri per i dispositivi che limitano l'accesso all'organizzazione. I criteri possono essere impostati mediante le normali soluzioni di gestione dei dispositivi, ad esempio MDM o GPO (oggetto Criteri di gruppo). 
@@ -150,7 +150,7 @@ Gli utenti di dispositivi mobili possono disconnettersi da Teams passando al men
 
 ### <a name="global-sign-in-and-sign-out"></a>Accesso e disconnessione globali
 
-L'app Teams per Android ora supporta l'accesso e la disconnessione globali, in modo da fornire un'esperienza di accesso e disconnessione senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](https://docs.microsoft.com/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
+L'app Teams per Android ora supporta l'accesso e la disconnessione globali, in modo da fornire un'esperienza di accesso e disconnessione senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
 
 L'esperienza di accesso sarà simile a quella standard di Teams, mentre la disconnessione sarà simile alle due immagini seguenti:
 
@@ -158,11 +158,11 @@ L'esperienza di accesso sarà simile a quella standard di Teams, mentre la disco
 
 ## <a name="urls-and-ip-address-ranges"></a>URL e intervalli di indirizzi IP
 
-Teams richiede la connettività a Internet. Per informazioni sugli endpoint che devono essere raggiungibili per i clienti che usano Teams per i piani di Office 365, nel cloud per enti pubblici e in altri cloud, vedere [URL e intervalli di indirizzi IP per Office 365](https://docs.microsoft.com/office365/enterprise/urls-and-ip-address-ranges).
+Teams richiede la connettività a Internet. Per informazioni sugli endpoint che devono essere raggiungibili per i clienti che usano Teams per i piani di Office 365, nel cloud per enti pubblici e in altri cloud, vedere [URL e intervalli di indirizzi IP per Office 365](/office365/enterprise/urls-and-ip-address-ranges).
 
 > [!IMPORTANT]
 > Attualmente Teams richiede l'accesso sulla porta TCP 443 al servizio Google ssl.gstatic.com per tutti gli utenti. Questo avviene anche se non si usa Gstatic. Teams rimuoverà il requisito presto (all'inizio del 2020) e questo articolo verrà aggiornato di conseguenza.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Risoluzione dei problemi di Teams](https://docs.microsoft.com/MicrosoftTeams/troubleshoot/teams)
+[Risoluzione dei problemi di Teams](/MicrosoftTeams/troubleshoot/teams)

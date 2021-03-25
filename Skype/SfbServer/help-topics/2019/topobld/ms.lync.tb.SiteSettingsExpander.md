@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 940bd9c0-bfcf-4d15-a5c1-a09f1cd692b6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le proprietà di un sito esistente, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 30e11a6b580b80719ffd6f745c7c37edf2cf358e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 4bcf07ef1b550fb96ce503f31b4026ccc4ae6960
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49805566"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51115376"
 ---
 # <a name="lync-server-site-settings-expander"></a>Espansione delle impostazioni del sito di Lync Server
 
@@ -32,7 +32,7 @@ Per modificare le proprietà di un sito esistente, eseguire le operazioni seguen
 
 Nelle proprietà del sito è possibile cambiare o modificare il nome del sito (obbligatorio), la descrizione (facoltativa), la città (facoltativa), la provincia (facoltativa) e il codice paese/area geografica (facoltativo).
 
-Per informazioni dettagliate sulle proprietà di un sito, vedere [Add Branch Sites to Your Topology](https://technet.microsoft.com/library/b9c35fb0-0081-4aeb-8f95-ac2fcc6c3335.aspx).
+Per informazioni dettagliate sulle proprietà di un sito, vedere [Add Branch Sites to Your Topology](/previous-versions/office/lync-server-2013/lync-server-2013-add-branch-sites-to-your-topology).
 
 ## <a name="federation-route-properties"></a>Proprietà della route di federazione
 
@@ -45,6 +45,4 @@ Se l'impostazione di federazione è stata configurata nel server perimetrale o n
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate, vedere [Topologies for External User Access](https://technet.microsoft.com/library/25697446-b045-4d12-9b1c-47f694b4f224.aspx).
-
-
+Per informazioni dettagliate, vedere [Topologies for External User Access](/previous-versions/office/lync-server-2013/lync-server-2013-scenarios-for-external-user-access).

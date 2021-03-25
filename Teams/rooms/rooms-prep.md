@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione di Microsoft Teams Rooms in modo da sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 181599e6b5181f50548621e4895b400f442646a6
-ms.sourcegitcommit: 0fddd05334e37b0086ccc0aebe17a26f8e6e8e6c
+ms.openlocfilehash: 81aa41895f11b65c9406bd30311f2fcb974949a7
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50884570"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51117424"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -66,7 +66,7 @@ Per funzionare correttamente, il dispositivo Microsoft Teams Rooms deve avere ac
 > Assicurarsi di usare una connessione di rete cablata da 1 Gbps per assicurarsi di avere la larghezza di banda necessaria.
 
 > [!NOTE]
-> Gli aggiornamenti software per Microsoft Teams Rooms vengono scaricati automaticamente da Microsoft Store per le aziende. Vedere [Prerequisiti per Microsoft Store per le aziende](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) e l'istruzione per verificare che la console della sala sia in grado di accedere al negozio e di eseguire l'aggiornamento automatico.
+> Gli aggiornamenti software per Microsoft Teams Rooms vengono scaricati automaticamente da Microsoft Store per le aziende. Vedere [Prerequisiti per Microsoft Store per le aziende](/microsoft-store/prerequisites-microsoft-store-for-business) e l'istruzione per verificare che la console della sala sia in grado di accedere al negozio e di eseguire l'aggiornamento automatico.
   
 ### <a name="certificates"></a>Certificati
 
@@ -117,7 +117,7 @@ Microsoft Teams Rooms è progettato per ereditare le impostazioni del proxy dal 
     
 11. Torna alla schermata di accesso, scegli **l'utente Skype.** Se tutti i passaggi precedenti hanno avuto esito positivo, il dispositivo Microsoft Teams Rooms accederà correttamente.
     
-Vedere [l'articolo Sicurezza](https://docs.microsoft.com/microsoftteams/rooms/security#network-security) di rete per informazioni dettagliate su FQDN, porte e intervalli di indirizzi IP necessari per le chat room di Microsoft Teams.
+Vedere [l'articolo Sicurezza](./security.md#network-security) di rete per informazioni dettagliate su FQDN, porte e intervalli di indirizzi IP necessari per le chat room di Microsoft Teams.
   
   
 ### <a name="create-provisioning-packages"></a>Creare pacchetti di provisioning
@@ -166,4 +166,4 @@ Se si vuole rinominare il computer dopo l'aggiunta a un dominio, usare **Rename-
   
 [Gestire Microsoft Teams Rooms](rooms-manage.md).
 
-[Prerequisiti per Microsoft Store per le aziende e l'istruzione](https://docs.microsoft.com/microsoft-store/prerequisites-microsoft-store-for-business) 
+[Prerequisiti per Microsoft Store per le aziende e l'istruzione](/microsoft-store/prerequisites-microsoft-store-for-business)

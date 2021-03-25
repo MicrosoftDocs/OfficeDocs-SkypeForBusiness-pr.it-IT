@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze per i componenti aggiuntivi per Microsoft Teams e sulle funzionalità disponibili con ogni licenza.
-ms.openlocfilehash: ef0fd186fc3f7836e45fccacbfcdba6cb31ba60e
-ms.sourcegitcommit: 5c49dc68c964481c46127f9fb3f5ca358897b0f8
+ms.openlocfilehash: 3925cd7b388ec884990cfb2310e8d53b537e7a64
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50937863"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116914"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Licenze per i componenti aggiuntivi di Microsoft Teams
 
@@ -404,4 +404,4 @@ Ecco un riepilogo delle offerte di valutazione per le funzionalità vocali.
 
 - [Assegnare licenze per i componenti aggiuntivi di Teams](assign-teams-add-on-licenses.md)
 - [Gestire l'accesso degli utenti a Teams](../user-access.md)
-- [Descrizione del servizio Teams](https://docs.microsoft.com/office365/servicedescriptions/teams-service-description)
+- [Descrizione del servizio Teams](/office365/servicedescriptions/teams-service-description)

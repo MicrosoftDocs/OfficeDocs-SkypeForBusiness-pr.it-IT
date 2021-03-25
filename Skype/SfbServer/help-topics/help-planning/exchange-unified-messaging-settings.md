@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di messaggistica unificata di Exchange (strumento di pianificazione)
+title: Impostazioni messaggistica unificata di Exchange (strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,23 +16,21 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d4c4a5d9-1523-49ff-b994-882b037ed46f
 description: Skype for Business Server 2015 supporta l'integrazione con la messaggistica unificata di Exchange per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
-ms.openlocfilehash: 8e2a5c755222aaa4ed5d178de67a244af293a4a7
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 7f73e3ea6f7033103242c9ff8ee425963e9f6729
+ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49800316"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51116114"
 ---
-# <a name="exchange-unified-messaging-settings-planning-tool"></a>Impostazioni di messaggistica unificata di Exchange (strumento di pianificazione)
+# <a name="exchange-unified-messaging-settings-planning-tool"></a>Impostazioni messaggistica unificata di Exchange (strumento di pianificazione)
 
 Skype for Business Server 2015 supporta l'integrazione con la messaggistica unificata di Exchange per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
 
 Per dettagli, vedere:
 
-- [Pianificazione dell'integrazione della messaggistica unificata di Exchange in locale](https://technet.microsoft.com/library/e7c63a71-2d99-4aa9-b649-36c1a431bdf1.aspx)
+- [Pianificazione dell'integrazione della messaggistica unificata di Exchange in locale](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-exchange-unified-messaging-integration)
 
-- "Messaggistica unificata" all'indirizzo [https://go.microsoft.com/fwlink/?LinkId=285341](https://go.microsoft.com/fwlink/?LinkId=285341)
+- "Messaggistica unificata" all'indirizzo [https://go.microsoft.com/fwlink/?LinkId=285341](/exchange/unified-messaging-exchange-2013-help)
 
-- "Planning for Unified Messaging" all'indirizzo [https://go.microsoft.com/fwlink/?LinkId=285344](https://go.microsoft.com/fwlink/?LinkId=285344) .
-
-
+- "Planning for Unified Messaging" all'indirizzo [https://go.microsoft.com/fwlink/?LinkId=285344](/exchange/planning-for-unified-messaging-exchange-2013-help) .
