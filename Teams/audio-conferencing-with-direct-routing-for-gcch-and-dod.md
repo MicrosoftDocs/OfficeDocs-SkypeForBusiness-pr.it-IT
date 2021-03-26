@@ -20,12 +20,12 @@ f1.keywords:
 localization_priority: Normal
 description: L'amministratore può imparare a usare le audioconferenze con il routing diretto in ambienti GCCH e DoD.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ef20f340ec0c1fb225505ece273373e40d9d5c44
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 577a9fe106cb5dae23049404b54433288e350b78
+ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119335"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51262621"
 ---
 # <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Audioconferenza con Instradamento diretto per GCC High e DoD
 
@@ -46,7 +46,7 @@ Per usare le audioconferenze in GCC High o DoD, l'organizzazione e gli utenti de
 Per abilitare il servizio sono necessarie una licenza tenant e almeno una licenza utente. Non è possibile abilitare il servizio solo con la licenza tenant o con solo licenze utente. Per ottenere licenze di servizio per il tenant e gli utenti dell'organizzazione, contattare il team dell'account.
 
 > [!IMPORTANT]
-> Gli utenti non possono essere abilitati per le audioconferenze con routing diretto finché non vengono impostati i numeri di telefono con accesso esterno e gli utenti non hanno una tastiera del telefono funzionante nel client Teams. È consigliabile non assegnare agli utenti audioconferenze con routing diretto per le licenze GCC High o DoD fino a quando non si configurano i numeri di telefono per l'accesso esterno come descritto in questo articolo.
+> Gli utenti non possono essere abilitati per le audioconferenze con routing diretto finché non vengono impostati i numeri di telefono con accesso esterno. È consigliabile non assegnare agli utenti audioconferenza con routing diretto per le licenze GCC High o DoD fino a quando non si configurano i numeri di telefono per l'accesso esterno come descritto in questo articolo.  Se non si seguono queste indicazioni, la tastiera del telefono potrebbe risultare completamente mancante nel client Teams.
 
 ### <a name="step-2-set-up-direct-routing"></a>Passaggio 2: Configurare il routing diretto
 

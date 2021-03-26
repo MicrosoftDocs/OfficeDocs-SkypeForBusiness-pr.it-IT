@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b691a9d722a82e68384f8937479c5f71d3f4c11d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b75f9bf5328b25a1ce1fd695a90163f63a61f823
+ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096170"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51262583"
 ---
 # <a name="meetings-first"></a>Riunioni al primo posto
 
@@ -111,7 +111,7 @@ Tutte le funzionalità e le esperienze utente in [](teams-client-experience-and-
 
 ![Screenshot delle impostazioni di amministrazione per abilitare Riunioni per prime](media/teams-meeting-admin-settings.png)
 
-Facoltativamente, è consigliabile nascondere l'applicazione Teams e canali dalla barra di spostamento sinistra del client Teams degli utenti per concentrare ulteriormente la propria esperienza sulle riunioni, che possono essere ottenute usando i criteri di autorizzazione [app.](teams-app-permission-policies.md)
+Facoltativamente, è consigliabile nascondere l'applicazione Teams e canali dalla barra di spostamento sinistra del client Teams degli utenti per concentrare ulteriormente la propria esperienza sulle riunioni, che possono essere ottenute usando il criterio Configurazione [app.](teams-app-setup-policies.md)
 
 ## <a name="reporting-and-call-analytics"></a>Creazione di report e analisi delle chiamate
 

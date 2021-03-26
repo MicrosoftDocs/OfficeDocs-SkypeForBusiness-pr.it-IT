@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c04820336cc992f7ec4e53a80d8eb8f7deb05622
-ms.sourcegitcommit: d62e6cefceebe481eb207c59872f1aa67f0fc528
+ms.openlocfilehash: f5e6668229ef481d0b6c30683540c060495e0f21
+ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50460626"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51262353"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -35,12 +35,12 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 
 | Componente | Requisiti |
 |---------|---------|
-|Computer e processore    | Minimo 1,6 GHz (o superiore), dual core<br><br>Nota: per i processori Intel, è necessario prendere in considerazione la velocità massima ottenuta utilizzando la tecnologia Intel Boost Boost (Max Num numrea)         |
+|Computer e processore    | Minimo 1,6 GHz (o superiore), dual core<br><br>Nota: per i processori Intel, è necessario considerare la velocità massima ottenuta con la tecnologia Intel Turbo Boost Technology (Max Turbo Frequency)         |
 |Memoria     |    4,0 GB di RAM     |
 |Disco rigido    | 3,0 GB di spazio disponibile su disco        |
 |Schermo    |   Risoluzione dello schermo 1024 x 768 |
 |Hardware grafico |  Sistema operativo Windows: l'accelerazione grafica hardware richiede DirectX 9 o versione successiva, con WDDM 2.0 o versione successiva per Windows 10 (o WDDM 1.3 o versione successiva per Windows 10 Fall Creators Update)
-|Sistema operativo  |    Windows 10, Windows 10 su ARM, Windows 8.1, Windows Server 2019, Windows Server 2016|
+|Sistema operativo  |    Windows 10, Windows 10 in ARM, Windows 8.1, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2|
 |Versione .NET    |  Richiede .NET 4.5 CLR o versione successiva       |
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    |

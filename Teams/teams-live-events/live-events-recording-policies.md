@@ -17,12 +17,12 @@ description: Informazioni sui criteri di registrazione degli eventi live.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7a5f793230798c68f0a39e2d9a3500eab9791065
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: cd54bc123b852ff34da9353dd7e250924931420d
+ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119165"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51262658"
 ---
 # <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione degli eventi live in Microsoft Teams
 
@@ -50,9 +50,9 @@ Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la 
 
 |                                 | Registrazione disponibile per produttori e relatori | Registrazione disponibile per i partecipanti |
 | ------------------------------- | ---------------------------------------------------- | ------------------------------------- |
-| Registra sempre               | Disabilitato e selezionato                                | Disabilitato e selezionato         |
-| L'organizzatore può registrare o meno | Abilitato e non selezionato per impostazione predefinita                  | Abilitato e non selezionato per impostazione predefinita   |
-| Non registrare mai               | Disabilitato e non selezionato                            | Disabilitato e non selezionato      |
+| Registra sempre               | Disabilitato e selezionato                                | Abilitato e selezionato         |
+| L'organizzatore può registrare o meno | Abilitato e selezionato per impostazione predefinita                  | Abilitato e selezionato per impostazione predefinita   |
+| Non registrare mai               | Disabilitato e non selezionato                            | Abilitato e non selezionato      |
 
 Quando il criterio è impostato su **Registra sempre**, nella pagina dei criteri sono disponibili le opzioni selezionate seguenti:
 

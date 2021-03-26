@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 659505c39fd6eace8cd0264aaef0a4994604e651
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2e81f1d40c73cb8bcdf0a5ebd48f05c015732afe
+ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117864"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51262641"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare gli operatori automatici e le code di chiamata di Teams
 
@@ -217,6 +217,8 @@ Per informazioni su come creare operatori automatici e code di chiamata, vedere 
 
 - [Configurare un operatore automatico](create-a-phone-system-auto-attendant.md)
 - [Creare una coda di chiamata](create-a-phone-system-call-queue.md)
+
+Se sono necessarie funzionalità più estese, ad esempio l'integrazione con flussi di lavoro, bot e SMS, prendere in considerazione [Servizi di comunicazione di Azure.](/azure/communication-services/overview)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

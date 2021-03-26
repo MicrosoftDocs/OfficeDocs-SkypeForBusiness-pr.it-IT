@@ -10,7 +10,6 @@
 |------|------------|--------|
 | 3/15/2021 | [Monitoraggio e avvisi per i dispositivi di Microsoft Teams](../alerts/device-health-status.md) | aggiunto |
 | 3/15/2021 | [Monitoraggio e avvisi di Microsoft Teams](../alerts/teams-admin-alerts.md) | aggiunto |
-| 3/15/2021 | [Implementare il passaggio a Microsoft Teams](../implement-your-move.md) | aggiunto |
 | 3/15/2021 | [Integrazione di Teams e posta elettronica di Outlook](../teams-outlook-email-integration.md) | modificato |
 | 3/15/2021 | [Condividere con Teams](../teams-outlook-share-teams.md) | aggiunto |
 | 3/16/2021 | [Creare un modello di team personalizzato in Microsoft Teams](../create-a-team-template.md) | modificato |
