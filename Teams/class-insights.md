@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8d8acd2e8f8c7360f9f83a478cfcf928f2939d54
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 68bb46beb40fdb4e5a0814a659df6af092903fc4
+ms.sourcegitcommit: f4393657584666842e874d526a08cfa1137b911d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102622"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215321"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -85,7 +85,7 @@ In entrambe le visualizzazioni, i docenti possono accedere ai dati della classe.
 A livello di classe, se un docente è proprietario di un team di classe, Insights è disponibile senza altre azioni da parte dell'amministratore IT.
 
 ### <a name="education-leaders"></a>Responsabili dell'istruzione
-I responsabili dell'istruzione possono usare Insights come app personale disponibile nella barra delle app a sinistra di Teams.
+I responsabili dell'istruzione possono usare Insights come [app personale](https://support.microsoft.com/office/8738d1b1-4e1c-49bd-9e8d-b5292474c347) disponibile nella barra delle app a sinistra di Teams.
 
 A livello organizzativo, l'amministratore IT deve connettere il sistema informazioni degli studenti e assegnare autorizzazioni a ogni ruolo per accedere agli istituti o ai reparti a loro pertinenti.
 
@@ -131,6 +131,7 @@ Al momento, i dati vengono raccolti dalle aree seguenti nei team di classe:
 | **Attività** | Apertura, consegna e assegnazione dei voti alle attività.|
 | **Impegno nel canale** |  Visita di un canale, creazione di post, risposta e gradimento di un post, escluso il contenuto della chat.|
 | **File** |   Carico, download, accesso, modifica, commento e condivisione dei file, escluso il contenuto del file.|
+| **Blocco appunti di OneNote per la classe** |  Modificare una pagina o una sezione del Blocco appunti (escluso il contenuto della pagina).|
 | **Riunioni** |    Frequenza, escluso il contenuto della riunione.|
 
 > [!NOTE]
@@ -205,7 +206,8 @@ Distribuire ai **docenti** il materiale seguente:
 *   Eseguire il training con il [corso gratuito di Insights](https://aka.ms/insights/course) disponibile in Microsoft Educator Center
 *   Infine, vedere [questo blog](https://techcommunity.microsoft.com/t5/education-blog/6-ways-to-be-insight-ful-and-support-student-engagement/ba-p/1903091) dedicato a Insights.
 
-Il materiale per i **responsabili dell’istruzione** verrà pubblicato a breve.
+Materiale per i **responsabili dell'istruzione**:
+*   [Pagina di supporto di Insights per le organizzazioni nel settore dell'istruzione](https://support.microsoft.com/office/8738d1b1-4e1c-49bd-9e8d-b5292474c347).
 
 ## <a name="turn-insights-off-or-on"></a>Disattivare o attivare Insights
 Per impostazione predefinita, Insights è attivato. Quando si sceglie di non usare il servizio, *tutti i dati raccolti per Insights verranno eliminati*. Se si riattiva Insights, la raccolta dei dati inizierà dal momento in cui il servizio viene riattivato.
