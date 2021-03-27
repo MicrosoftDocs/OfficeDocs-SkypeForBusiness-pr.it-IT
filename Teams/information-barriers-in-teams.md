@@ -16,12 +16,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 79a1a416e0d868129e2d78f305cfe32efb527d53
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c5137a67169198a16b62e179d32ae1779001011d
+ms.sourcegitcommit: e55d1623e686db2b183e02052bfe10a0269abb5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120647"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51397579"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere alle informazioni in Microsoft Teams
 
@@ -201,6 +201,8 @@ Per altre informazioni sulle licenze e sulle autorizzazioni, inclusi i piani e i
 - **Gli utenti non possono** partecipare alle riunioni del canale: se i criteri IB sono abilitati, gli utenti non possono partecipare alle riunioni del canale se non sono membri del team. La causa principale è che i controlli IB si basano sul fatto che gli utenti possono essere aggiunti a un elenco di chat della riunione e solo quando possono essere aggiunti al roster possono partecipare alla riunione. Il thread di chat in una riunione del canale è disponibile solo per i membri del team/canale e i non membri non possono vedere o accedere al thread di chat. Se IB è abilitato per il tenant e un membro non del team prova a partecipare a una riunione del canale, l'utente non è autorizzato a partecipare alla riunione. Tuttavia, se IB non è abilitato per il tenant e un membro non del team prova a partecipare a una riunione del canale, l'utente è autorizzato a partecipare alla riunione, ma non vede l'opzione di chat nella riunione. 
 - I proprietari del team non vengono **rimossi:** se viene applicato un nuovo criterio IB che determina la visualizzazione di due o più segmenti in conflitto presenti in un canale di Teams, ai segmenti con proprietari del team viene data una preferenza più alta e altri utenti del segmento vengono rimossi. Inoltre, al momento, i proprietari dei team non vengono rimossi, anche se sono in conflitto con altri proprietari/utenti. Gli amministratori tenant e altri proprietari di canali doranno rimuovere manualmente i proprietari in conflitto.
 - **Numero massimo di segmenti consentiti in un tenant:** ogni tenant può configurare fino a 100 segmenti durante la configurazione dei criteri IB. Non esiste alcun limite per il numero di criteri che è possibile configurare.
+
+- **I criteri IB** non funzionano per gli utenti federati: se si consente la federazione con tenant esterni, gli utenti di tali tenant non saranno limitati dai criteri IB. Se gli utenti dell'organizzazione aderiscono a una chat o a una riunione organizzata da utenti federati esterni, anche i criteri IB non limitano le comunicazioni tra gli utenti dell'organizzazione.
 
 ## <a name="more-information"></a>Altre informazioni
 

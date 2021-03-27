@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 463f081151761d4c587c893672e7bbee093cc844
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 51768d35f70f0008d5d8a2ad7cccb213de9dcc3c
+ms.sourcegitcommit: e55d1623e686db2b183e02052bfe10a0269abb5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117734"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51397569"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -118,6 +118,8 @@ Attualmente, i canali privati supportano i connettori e le schede, ad eccezione 
 Ogni team può avere un massimo di 30 canali privati e ogni canale privato può avere un massimo di 250 membri. Il limite di 30 canali privati si aggiunge al limite di 200 standard per ogni team. 
 
 Quando si crea un team da uno esistente, eventuali canali privati nel team esistente non verranno copiati.
+
+Al momento, le notifiche provenienti da canali privati non sono incluse nei messaggi di posta elettronica delle attività perse.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

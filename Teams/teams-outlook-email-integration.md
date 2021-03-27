@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3bfab6643d478537b3f9d2b7e4fa990b75511582
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: cc1ce6eec084dfe2f4bb736f018352e0eb0e2c88
+ms.sourcegitcommit: e55d1623e686db2b183e02052bfe10a0269abb5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51104052"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51397559"
 ---
 # <a name="teams-and-outlook-email-integration"></a>Integrazione di Teams e posta elettronica di Outlook
 
@@ -45,3 +45,5 @@ Gli utenti ottengono automaticamente messaggi di posta elettronica di attività 
 ![Screenshot che mostra come rispondere a un messaggio di posta elettronica di un'attività persa](media/missed-activity-email-reply.png)
 
 È possibile usare il cmdlet [Set-OrganizationConfig](/powershell/module/exchange/organization/set-organizationconfig) insieme al parametro **SmtpActionableMessagesEnabled** per disattivare i messaggi di posta elettronica utilizzabili. Per impostazione predefinita, il **parametro SmtpActionableMessagesEnabled** è impostato su **true.** L'impostazione del parametro **su false disattiva** i messaggi di posta elettronica utilizzabili in Office 365. Per gli utenti di  Teams, questo significa che l'opzione Rispondi per rispondere direttamente in Outlook non è disponibile nei messaggi di posta elettronica delle attività perse. I messaggi di posta elettronica delle attività perse includono invece un'opzione Rispondi **in Teams** per consentire agli utenti di rispondere in Teams.
+
+Vedere anche [Messaggi utilizzabili in Outlook e Gruppi di Office 365.](https://docs.microsoft.com/outlook/actionable-messages/)
