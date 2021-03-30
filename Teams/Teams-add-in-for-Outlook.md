@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ddbdc84228011c4db3c0eab01bb1bab4f5d773c6
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: de3ef5f7fdd594fbc4471d3d7af4b2c3f3c683c1
+ms.sourcegitcommit: 6505dd1fb891ab27fcc9f36423fda67aae6fcfd7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092604"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418754"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -39,7 +39,7 @@ Il componente aggiuntivo Riunione di Teams viene installato automaticamente per 
 
 > [!NOTE]
 > - Non sono presenti **URL diretti** che portino al componente aggiuntivo di Teams.
-> - Sono da prendere in considerazione elementi aggiuntivi se l'organizzazione esegue sia Teams che Skype for Business. In alcune circostanza, il componente aggiuntivo Teams non è disponibile in Outlook. Vedere [Aggiornare da Skype for Business a Teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) per ulteriori informazioni.
+> - Sono da prendere in considerazione elementi aggiuntivi se l'organizzazione esegue sia Teams che Skype for Business. In alcune circostanza, il componente aggiuntivo Teams non è disponibile in Outlook. Vedere [Aggiornare da Skype for Business a Teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview) per ulteriori informazioni.
 > - Le autorizzazioni utente per eseguire il file Regsvr32.exe sono un requisito minimo per installare il componente aggiuntivo Riunione di Teams nel computer.
 > - Se gli utenti non vedono il componente aggiuntivo Riunione di Teams, puoi chiedere loro di chiudere Outlook e Teams, quindi di riavviare prima il client Team, poi di accedere a Teams e infine di riavviare il client Outlook nell’ordine appena esposto.
 > - Se si usa un'installazione di Office Outlook da Microsoft Store, il componente aggiuntivo Riunione di Teams non è supportato. Gli utenti che richiedono questo componente aggiuntivo possono installare la versione a portata di clic di Office, come descritto nell’articolo [Office su Windows 10 in modalità S](https://support.office.com/article/faq-office-on-windows-10-in-s-mode-717193b5-ff9f-4388-84c0-277ddf07fe3f).
