@@ -1491,6 +1491,8 @@ items:
         items:
           - name: Gestire i dispositivi in Teams
             href: devices/device-management.md
+          - name: Provisioning remoto e accesso
+            href: devices/remote-provision-remote-login.md
           - name: Aggiornare i dispositivi in remoto
             href: devices/remote-update.md
           - name: Gestire i tag dei dispositivi Teams
