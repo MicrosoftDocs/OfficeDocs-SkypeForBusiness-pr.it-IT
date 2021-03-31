@@ -23,13 +23,13 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 - seo-marvel-apr2020
-description: Informazioni su come configurare Sistema telefonico per le code di chiamata con Microsoft Teams, che forniscono un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 9bb33e5590df1af6b70dffecba64eb313838b228
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Scopri come configurare Sistema telefonico per le code di chiamata con Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
+ms.openlocfilehash: 963633ef3ba1743522dbbacb93166f20d489e8be
+ms.sourcegitcommit: d3883b3d9de7251e60033bece53a2bab17d7b1b8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092714"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51450633"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -71,11 +71,21 @@ Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda
 
 ## <a name="call-agents"></a>Agenti di chiamata
 
-Fare riferimento ai [Prerequisiti per](plan-auto-attendant-call-queue.md#prerequisites) poter aggiungere agenti a una coda di chiamata.
+Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan-auto-attendant-call-queue.md#prerequisites)
 
 ![Screenshot delle impostazioni di utenti e gruppi per le code di chiamata](media/call-queue-users-groups.png)
 
+##### <a name="teams-channel"></a>Canale di Teams
+
+È possibile aggiungere fino a 200 agenti tramite un canale di Teams.
+
+Se si vuole usare [un canale di Teams per gestire la coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione Scegli un **team** e fare clic su **Aggiungi canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare e fare clic su **Applica.**
+
+##### <a name="users-and-groups"></a>Utenti e gruppi
+
 È possibile aggiungere fino a 20 agenti singolarmente e fino a 200 agenti tramite gruppi.
+
+Per aggiungere singoli utenti o gruppi alla coda, selezionare **l'opzione Scegli utenti e** gruppi. 
 
 Per aggiungere un utente alla coda, fare clic **su Aggiungi utenti**, cercare l'utente, fare clic su **Aggiungi** e quindi su **Aggiungi**.
 
