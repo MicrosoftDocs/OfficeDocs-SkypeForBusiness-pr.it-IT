@@ -17,12 +17,12 @@ description: Informazioni su come usare il report Attività utente di Teams nell
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5f01d71a119116268c5d03850e5e1d26a54ae8dc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9122289d0765dbdded98727d2ed06912d0348f64
+ms.sourcegitcommit: 66e7b28ba1c0433535eb6a3e7d883851c27d9d1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116854"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51478336"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Report attività utente di Microsoft Teams
 
@@ -52,6 +52,16 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 |**9**   |Esportare il report in un file CSV per l'analisi offline. Selezionare **Esporta in Excel** e quindi nella scheda **Download** selezionare **Scarica** per scaricare il report quando è pronto.<br><br>![Screenshot della scheda Download che mostra i report esportati da scaricare](../media/teams-reports-export-to-csv.png) <br>Quando si visualizza il report in Excel, viene visualizzata anche una colonna **ID** che rappresenta l'ID utente. Un ID utente è in genere una stringa alfanumerica. ||
 
 [!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
+
+## <a name="make-the-user-specific-data-anonymous"></a>Rendere anonimi i dati specifici dell'utente
+
+Per rendere anonimi i dati nel report attività utente di Teams, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nel report e la relativa esportazione.
+
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare a **Impostazioni** organizzazione Impostazioni e nella scheda Servizi \> scegliere **Report.** 
+    
+2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo nell'interfaccia di amministrazione di Microsoft 365 che all'interfaccia di amministrazione di Teams.
+  
+3. Selezionare **Salva modifiche**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

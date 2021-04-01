@@ -16,16 +16,51 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le funzionalità di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 4c7219e3850eeeb2f502431db222f531d6166c56
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e36c11ad79c2061f4a94db3af5c21e7f2be4a3d2
+ms.sourcegitcommit: 31387f7b34270672789cc4dc1d7b2275840b91f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117664"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51487230"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
 Queste note sulla versione forniscono informazioni sulle nuove funzionalità di amministrazione per Microsoft Teams.
+
+## <a name="march-31-2021"></a>31 marzo 2021
+
+### <a name="share-to-teams-from-outlook"></a>Condividere in Teams da Outlook
+
+Condividi in Teams da Outlook consente di inviare una copia di messaggi di posta elettronica o conversazioni, inclusi gli allegati, in chat e canali di Teams. Trovare **l'opzione Condividi in Teams** nella barra multifunzione di Outlook o nel menu delle azioni per un messaggio di posta elettronica. Condividi con Teams supporta Outlook sul Web, Outlook per Windows e il nuovo Outlook per Mac Preview. [Altre informazioni](../teams-outlook-share-teams.md).
+
+## <a name="march-30-2021"></a>30 marzo 2021
+
+### <a name="customize-apps-in-teams-preview"></a>Personalizzare le app in Teams (anteprima)
+
+Microsoft Teams offre la personalizzazione delle app per migliorare l'esperienza di Teams. Alcuni sviluppatori di app consentono di personalizzare un'app dall'amministratore di Teams. L'amministratore può personalizzare o ridenobrare le proprietà dell'app in base alle esigenze dell'organizzazione usando la pagina Gestisci app dell'interfaccia di amministrazione di Teams. [Altre informazioni](../customize-apps.md).
+
+## <a name="march-24-2021"></a>24 marzo 2021
+
+### <a name="enable-live-transcripts-in-teams"></a>Abilitare trascrizioni in tempo reale in Teams
+
+Questo è un criterio per utente e si applica durante una riunione. Questa impostazione controlla se, l'opzione Abilita i sottotitoli in tempo reale è disponibile nelle riunioni a cui l'utente partecipa, per l'attivazione e la disattivazione dei sottotitoli in tempo reale. [Altre informazioni](../meeting-policies-in-teams.md#enable-live-captions).
+
+## <a name="march-23-2021"></a>23 marzo 2021
+
+### <a name="supervised-chats"></a>Chat supervisionate
+
+La chat supervisionata consente ai docenti designati di avviare chat con gli studenti e impedisce agli studenti di avviare nuove chat a meno che non sia presente un docente appropriato. Quando la supervisione della chat è abilitata, i supervisori non possono uscire dalla chat e gli altri partecipanti non sono autorizzati a rimuoverli, assicurando che le chat che coinvolgono studenti siano correttamente supervisionate.
+[Altre informazioni](../supervise-chats-edu.md).
+
+### <a name="masking-phone-numbers"></a>Mascherare i numeri di telefono
+
+È stata rilasciata una nuova impostazione di amministratore per mascherare i numeri di telefono per i partecipanti all'accesso esterno quando aderiscono a una riunione. Gli amministratori possono scegliere di mascherare i numeri di telefono di tutti i partecipanti alla riunione (ad eccezione dell'organizzatore), solo da persone esterne o che hanno la maschera disabilitata. Se gli amministratori scelgono di disabilitare questa impostazione, i numeri di telefono verranno visualizzati completamente nella riunione. [Altre informazioni](../ptsn-mask-phone-numbers.md).
+
+## <a name="march-1-2021"></a>1 marzo 2021
+
+### <a name="additional-golocal-support-in-teams-live-events"></a>Supporto aggiuntivo di GoLocal negli eventi live di Teams
+
+Il supporto per Sudafrica, Corea del Sud, Svizzera, Francia, Germania e Brasile è stato aggiunto agli eventi live. [Ulteriori informazioni](../teams-live-events/plan-for-teams-live-events.md#regional-availability)
 
 ## <a name="february-22-2021"></a>22 febbraio 2021
 
