@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e4614bc88ba65803ea5a8696af9e55a104912855
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 20ac1e6c120e1602a39e61d00798f8a796975603
+ms.sourcegitcommit: d3883b3d9de7251e60033bece53a2bab17d7b1b8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101302"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51450613"
 ---
 # <a name="set-up-microsoft-teams-in-your-enterprise"></a>Configurare Microsoft Teams nell'azienda
 
@@ -78,12 +78,12 @@ Chat, team e canali sono gli elementi essenziali di Teams. La **chat** consente 
 
 | Decisione | Descrizione |
 |--|--|
-| L'accesso esterno andrebbe abilitato? | L'accesso esterno consente a tutte le persone di un'altra organizzazione di comunicare con gli utenti della propria. Questa funzionalità è utile quando si ha una stretta relazione con un'altra organizzazione, ad esempio un fornitore, e si vuole che le persone di entrambe le aziende possano con la massima semplicità chattare, organizzare riunioni e così via. <p>L'accesso esterno è diverso dall'accesso guest. L'accesso esterno consente di accedere a tutti gli utenti di un'altra organizzazione per interagire con gli utenti della propria. Con l'accesso guest si invitano persone specifiche ad accedere per interagire con le persone della propria organizzazione.<p>L'accesso esterno è **disattivato** per impostazione predefinita.<p>[Gestire l'accesso esterno in Microsoft Teams](manage-external-access.md)  |
-| L'accesso guest deve essere abilitato? |L'accesso guest consente agli utenti dell'organizzazione di invitare persone esterne all'organizzazione ad accedere ai team e ai canali interni. L'accesso guest viene spesso usato per collaborare con persone esterne all'organizzazione che non hanno una relazione formale con la propria. Ad esempio, è possibile invitare un progettista a lavorare temporaneamente su un progetto.<p>L'accesso guest è diverso dall'accesso esterno. Con l'accesso guest si invitano persone specifiche ad accedere per interagire con le persone della propria organizzazione. L'accesso esterno consente di accedere a tutti gli utenti di un'altra organizzazione per interagire con gli utenti della propria. <p>L'accesso guest è **disattivato** per impostazione predefinita. <p>[Attivare o disattivare l'accesso guest in Microsoft Teams.](set-up-guests.md)  |
+| L'accesso esterno andrebbe abilitato? | L'accesso esterno consente a tutte le persone di un'altra organizzazione di comunicare con gli utenti della propria. Questa funzionalità è utile quando si ha una stretta relazione con un'altra organizzazione, ad esempio un fornitore, e si vuole che le persone di entrambe le aziende possano con la massima semplicità chattare, organizzare riunioni e così via. <p>L'accesso esterno è diverso dall'accesso guest. L'accesso esterno consente a tutte le persone di un'organizzazione di accedere e interagire con le persone di un'altra organizzazione. Con l'accesso guest si invitano persone specifiche ad accedere per interagire con le persone della propria organizzazione.<p>L'accesso esterno è **disattivato** per impostazione predefinita.<p>[Gestire l'accesso esterno in Microsoft Teams](manage-external-access.md)  |
+| L'accesso guest deve essere abilitato? |L'accesso guest consente agli utenti dell'organizzazione di invitare persone esterne all'organizzazione ad accedere ai team e ai canali interni. L'accesso guest viene spesso usato per collaborare con persone esterne all'organizzazione che non hanno una relazione formale con la propria. Ad esempio, è possibile invitare un progettista a lavorare temporaneamente su un progetto.<p>L'accesso guest è diverso dall'accesso esterno. L'accesso guest invita persone specifiche ad accedere per interagire con le persone dell'organizzazione. L'accesso esterno consente a tutte le persone di un'altra organizzazione di accedere e interagire con le persone dell'organizzazione. <p>L'accesso guest è **disattivato** per impostazione predefinita. <p>[Attivare o disattivare l'accesso guest in Microsoft Teams.](set-up-guests.md)  |
 
 #### <a name="meetings-and-audio-conferencing"></a>[Riunioni e audioconferenza](#tab/MeetingsAudioConferencing)
 
-Le riunioni e le conferenze consentono alle persone dell'organizzazione di collegarsi tra di loro e con persone esterne all'organizzazione. Chiunque abbia un client Teams o Skype for Business può partecipare alle **riunioni** a cui è stato invitato. Usando il microfono, la fotocamera e lo schermo del proprio dispositivo, gli utenti possono partecipare alla conversazione senza bisogno di un telefono. I partecipanti possono chattare, effettuare chiamate vocali e condividere video e app con altri partecipanti usando un PC o un dispositivo mobile.
+Le riunioni e le conferenze consentono alle persone dell'organizzazione di comunicare tra loro e con persone esterne all'organizzazione. Chiunque abbia un client Teams o Skype for Business può partecipare alle **riunioni** a cui è stato invitato. Usando il microfono, la fotocamera e lo schermo del proprio dispositivo, gli utenti possono partecipare alla conversazione senza bisogno di un telefono. I partecipanti possono chattare, effettuare chiamate vocali e condividere video e app con altri partecipanti usando un PC o un dispositivo mobile.
 
 L'**audioconferenza** offre agli utenti la possibilità di partecipare alle riunioni usando un normale telefono, componendo il numero di telefono della conferenza e immettendo l'ID della riunione. Le audioconferenze sono utili quando un partecipante non dispone di una buona connessione Internet, se la riunione è solo vocale o in altre circostanze che impediscono di partecipare tramite il client Teams.
 

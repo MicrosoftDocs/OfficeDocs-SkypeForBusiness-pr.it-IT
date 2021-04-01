@@ -14,15 +14,15 @@ MS.collection:
 - M365-collaboration
 - Teams_Business_Voice
 search.appverid: MET150
-description: ''
+description: Paesi e aree geografiche in cui Microsoft 365 Business Voice è disponibile.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c991c038e40d988de596d10ca0e868cfd911175d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 3a876bb7bb0cdd45210f5cb31a77fb949814f035
+ms.sourcegitcommit: 88cb2362d07bca88402cf771a6f366c972e26001
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116024"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471460"
 ---
 # <a name="country-and-region-availability-for-business-voice"></a>Disponibilità di Business Voice per paesi e aree geografiche
 
@@ -56,7 +56,7 @@ Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano
 | Stati Uniti        | X                                    | X<sup>1</sup>                                               | X                      |
 | Argentina            |                                      | X                                                           |                        |
 | Australia            |                                      | X                                                           |                        |
-| Austria              | X                                    | X                                                           |                        |
+| Austria              |                                      | X                                                           |                        |
 | Belgio              |                                      | X                                                           |                        |
 | Bosnia ed Erzegovina |                                      | X                                                           |                        |
 | Brasile               |                                      | X                                                           |                        |
@@ -67,7 +67,7 @@ Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano
 | Croazia              |                                      | X                                                           |                        |
 | Cipro               |                                      | X                                                           |                        |
 | Repubblica Ceca       |                                      | X                                                           |                        |
-| Danimarca              | X                                    | X                                                           |                        |
+| Danimarca              |                                      | X                                                           |                        |
 | Repubblica Dominicana   |                                      | X                                                           |                        |
 | Ecuador              |                                      | X                                                           |                        |
 | Egitto                |                                      | X                                                           |                        |
@@ -81,7 +81,7 @@ Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano
 | Indonesia            |                                      | X                                                           |                        |
 | Irlanda              |                                      | X                                                           |                        |
 | Israele               |                                      | X                                                           |                        |
-| Italia                | X                                    | X                                                           |                        |
+| Italia                |                                      | X                                                           |                        |
 | Giappone                |                                      | X<sup>2</sup>                                               |                        |
 | Giordania               |                                      | X                                                           |                        |
 | Kenya                |                                      | X                                                           |                        |
@@ -100,7 +100,7 @@ Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano
 | Perù                 |                                      | X                                                           |                        |
 | Filippine          |                                      | X                                                           |                        |
 | Polonia               |                                      | X                                                           |                        |
-| Portogallo             | X                                    | X                                                           |                        |
+| Portogallo             |                                      | X                                                           |                        |
 | Portorico          |                                      | X                                                           |                        |
 | Qatar                |                                      | X                                                           |                        |
 | Romania              |                                      | X                                                           |                        |
@@ -113,8 +113,8 @@ Per informazioni sulle funzionalità incluse in Business Voice con e senza Piano
 | Sud Corea          |                                      | X                                                           |                        |
 | Spagna                |                                      | X                                                           |                        |
 | Sri Lanka            |                                      | X                                                           |                        |
-| Svezia               | X                                    | X                                                           |                        |
-| Svizzera          | X                                    | X                                                           |                        |
+| Svezia               |                                      | X                                                           |                        |
+| Svizzera          |                                      | X                                                           |                        |
 | Taiwan               |                                      | X                                                           |                        |
 | Thailandia             |                                      | X                                                           |                        |
 | Trinidad e Tobago  |                                      | X                                                           |                        |
