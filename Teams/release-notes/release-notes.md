@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le funzionalità di amministrazione di Microsoft Teams.
-ms.openlocfilehash: db6961e0f625c5f030c71e0a38a81d281523b8f4
-ms.sourcegitcommit: e511748ede1c0410d1ba1ea8342f4afcbe1c61c7
+ms.openlocfilehash: 709cbf8b4a5438f0f8e2447e093414de9829f161
+ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51495751"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574095"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
@@ -38,6 +38,12 @@ Condividi in Teams da Outlook consente di inviare una copia di messaggi di posta
 ### <a name="customize-apps-in-teams-preview"></a>Personalizzare le app in Teams (anteprima)
 
 Microsoft Teams offre la personalizzazione delle app per migliorare l'esperienza di Teams. Alcuni sviluppatori di app consentono di personalizzare un'app dall'amministratore di Teams. L'amministratore può personalizzare o ridenobrare le proprietà dell'app in base alle esigenze dell'organizzazione usando la pagina Gestisci app dell'interfaccia di amministrazione di Teams. [Altre informazioni](../customize-apps.md).
+
+## <a name="march-29-2021"></a>29 marzo 2021
+
+### <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per i dispositivi Android di Teams
+
+Gli amministratori IT possono eseguire il provisioning in remoto e accedere a un dispositivo Android di Teams. Per eseguire il provisioning di un dispositivo in remoto, l'amministratore deve caricare gli ID MAC dei dispositivi di cui viene eseguito il provisioning e creare un codice di verifica. L'intero processo può essere completato in remoto dall'interfaccia di amministrazione di Teams. [Altre informazioni](../devices/remote-provision-remote-login.md).
 
 ## <a name="march-24-2021"></a>24 marzo 2021
 

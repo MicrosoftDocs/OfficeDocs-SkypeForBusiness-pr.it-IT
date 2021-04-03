@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a596f2755434e7074c4a925f5c7c1dd8b1efbcaf
-ms.sourcegitcommit: fdada65628b31e4c267c87f0100e9f046b878c12
+ms.openlocfilehash: 08dba2975886b117fcc45058c98d33aa7cde4565
+ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50831034"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506736"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -93,11 +93,15 @@ Per iniziare:
 
 **Problema:** se è stato creato un team da un modello personalizzato che conteneva altre schede personalizzate, al posto delle app per schede personalizzate potrebbero essere visualizzate schede vuote. Le schede predefinite, ad esempio **Post,** **File** e **Wiki,** verranno visualizzate come previsto.
 
-**Soluzione:** se è stato creato un team da un modello personalizzato che contiene altre schede personalizzate, al posto delle app per schede personalizzate potrebbero essere visualizzate schede vuote. Le schede predefinite, ad esempio Post, File e Wiki, verranno visualizzate come previsto.
-
-Per risolvere il problema, rimuovere la scheda personalizzata e aggiungere una nuova scheda con la stessa app. Se non si hanno le autorizzazioni per rimuovere la scheda personalizzata e aggiungere una nuova scheda, contattare il proprietario del team per assistenza.
+**Soluzione:** per risolvere il problema, rimuovere la scheda personalizzata e aggiungere una nuova scheda con la stessa app. Se non si hanno le autorizzazioni per rimuovere la scheda personalizzata e aggiungere una nuova scheda, contattare il proprietario del team per assistenza.
 
 Stiamo lavorando a una correzione per i futuri team creati da modelli personalizzati.
+
+**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di una scheda Teams.
+
+![messaggio di errore del browser](media/browser-error-message.png)
+
+**Soluzione:** in caso di problemi di visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata oppure all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

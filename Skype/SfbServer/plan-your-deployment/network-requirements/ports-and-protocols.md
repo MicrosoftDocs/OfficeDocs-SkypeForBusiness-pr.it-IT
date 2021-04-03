@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c94063f1-e802-4a61-be90-022fc185335e
 description: "Riepilogo: esaminare le considerazioni sull'utilizzo delle porte prima di implementare Skype for Business Server."
-ms.openlocfilehash: 70caf72231797c4e245ac3117ec7fcc9241185f0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f56b8545f8c60578321354bebbe5a118bf895348
+ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094950"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51573985"
 ---
 # <a name="port-and-protocol-requirements-for-servers"></a>Requisiti di porta e protocollo per i server
  
@@ -30,12 +30,13 @@ ms.locfileid: "51094950"
   
 Skype for Business Server richiede che porte specifiche sui firewall esterni e interni siano aperte. Inoltre, se nell'organizzazione è distribuito Internet Protocol Security (IPsec), IPsec deve essere disabilitato nell'intervallo di porte utilizzate per la distribuzione di audio, video e video panoramici. 
   
-Anche se all'inizio questo può sembrare un po' scoraggiante, il lavoro pesante per la pianificazione può essere eseguito utilizzando lo strumento di pianificazione di [Skype for Business Server 2015.](https://go.microsoft.com/fwlink/p/?LinkID=282725) Dopo aver seguito le domande della procedura guidata sulle funzionalità che si prevede di utilizzare, per ogni sito definito è possibile visualizzare il Report firewall all'interno del report di amministrazione edge e utilizzare le informazioni elencate per creare le regole di protezione. È inoltre possibile apportare modifiche a molti dei nomi e degli indirizzi IP utilizzati, per informazioni dettagliate, vedere [Review the Firewall Report](../../management-tools/planning-tool/review-the-administrator-reports.md#Firewall_report). Tenere presente che è possibile esportare il report di amministrazione di Edge in un foglio di calcolo di Excel e il report firewall sarà uno dei fogli di lavoro nel file. 
+Anche se questo può sembrare un po' scoraggiante, l'attività di pianificazione può essere eseguita utilizzando lo strumento di pianificazione di [Skype for Business Server 2015.](https://go.microsoft.com/fwlink/p/?LinkID=282725) Dopo aver seguito le domande della procedura guidata sulle funzionalità che si prevede di utilizzare, per ogni sito definito è possibile visualizzare il Report firewall all'interno del report di amministrazione edge e utilizzare le informazioni elencate per creare le regole del firewall. È inoltre possibile apportare modifiche a molti dei nomi e degli indirizzi IP utilizzati, per informazioni dettagliate, vedere [Review the Firewall Report](../../management-tools/planning-tool/review-the-administrator-reports.md#Firewall_report). Tenere presente che è possibile esportare il report di amministrazione di Edge in un foglio di calcolo di Excel e il report firewall sarà uno dei fogli di lavoro nel file. 
   
-È inoltre possibile trovare le informazioni in queste tabelle sotto forma di diagramma esaminando il poster Carichi di lavoro protocollo collegato all'articolo Diagrammi tecnici [per Skype for Business Server 2015.](../../technical-diagrams.md)
+È possibile trovare le informazioni in queste tabelle sotto forma di diagramma esaminando il poster Carichi di lavoro protocollo collegato all'articolo Diagrammi tecnici per [Skype for Business Server 2015.](../../technical-diagrams.md)
+
 > [!NOTE]
-> - Se si implementa Skype for Business online (Microsoft 365 o Office 365), fare riferimento agli URL e agli intervalli di indirizzi IP di [Microsoft 365 e Office 365.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US) Gli ambienti ibridi dovranno fare riferimento a questo argomento e pianificare [anche la connettività ibrida.](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
-> - Puoi avere firewall hardware o software, non sono necessari modelli o versioni specifici. Ciò che conta è ciò che le porte sono nella whitelist in modo che il firewall non comprometti il funzionamento di Skype for Business Server.
+> - Se si implementa Skype for Business online (Microsoft 365 o Office 365), fare riferimento agli URL e agli intervalli di indirizzi IP di [Microsoft 365 e Office 365.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;amp;rs=en-US&amp;amp;ad=US) Gli ambienti ibridi dovranno fare riferimento a questo argomento e pianificare [anche la connettività ibrida.](../../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2floc.json&toc=%2fSkypeForBusiness%2ftoc.json)
+> - È possibile disporre di firewall hardware o software. Non sono necessari modelli o versioni specifici. Ciò che conta è quali porte vengono aggiunte a un elenco di indirizzi consentiti in modo che il firewall non comprometti il funzionamento di Skype for Business Server.
   
 ## <a name="port-and-protocol-details"></a>Informazioni dettagliate sulle porte e sui protocolli
 
@@ -53,7 +54,7 @@ Nella tabella seguente sono elencate le porte che è necessario aprire per ogni 
 |Ruolo server|Nome servizio|Porta|Protocollo|Note|
 |:-----|:-----|:-----|:-----|:-----|
 |Tutti i server  |SQL Browser  |1434  |UDP  |SQL browser per la copia replicata locale del database dell'archivio di gestione centrale.  |
-|Front End Server  |Servizio Front-End Skype for Business Server  |5060  |TCP  |Utilizzata facoltativamente dai server Standard Edition e dai Front End Server per le route statiche ai servizi trusted, ad esempio i server di controllo delle chiamate remote.  |
+|Front-End Server  |Servizio Front-End Skype for Business Server  |5060  |TCP  |Utilizzata facoltativamente dai server Standard Edition e dai Front End Server per le route statiche ai servizi trusted, ad esempio i server di controllo delle chiamate remote.  |
 |Front End Server  |Servizio Front-End Skype for Business Server  |5061  | TCP (TLS) |Utilizzato dai server Standard Edition e dai pool Front End per tutte le comunicazioni SIP interne tra server (MTLS), per le comunicazioni SIP tra server e client (TLS) e per le comunicazioni SIP tra Front End Server e Mediation Server (MTLS). Utilizzato anche per le comunicazioni con un Monitoring Server.  |
 | Front End Server |Servizio Front-End Skype for Business Server  |444  | HTTPS <br/> TCP  |Usato per la comunicazione HTTPS tra lo stato attivo (il componente Skype for Business Server che gestisce lo stato della conferenza) e i singoli server.  <br/> Questa porta viene utilizzata anche per le comunicazioni TCP tra Survivable Branch Appliance e Front End Server.  |
 |Front End Server  |Servizio Front-End Skype for Business Server  |135  |DCOM e RPC (Remote Procedure Call)  |Utilizzata per le operazioni basate su DCOM quali spostamento utenti, sincronizzazione User Replicator e sincronizzazione rubrica.  |

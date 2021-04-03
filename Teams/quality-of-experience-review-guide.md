@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 04106a79458913783c0e25965f17afdfdccd87d1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 85b860965c7883d5df9bc734bc336fb2d24a5ed8
+ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117694"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574145"
 ---
 #  <a name="use-cqd-to-manage-call-and-meeting-quality-in-microsoft-teams"></a>Usare CQD per gestire la qualità delle chiamate e delle riunioni in Microsoft Teams 
 
@@ -666,7 +666,7 @@ Questo report identifica edifici e subnet specifici che contribuiscono all'utili
 
 La causa più comune dell'utilizzo di HTTP è la mancanza di regole di eccezione nei proxy. Usando l'edificio o la subnet fornita, è possibile determinare rapidamente quale proxy deve essere configurato per il bypass multimediale.
 
-Verificare che gli FQDN di [Microsoft 365 o Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges) necessari siano whitelist nel proxy.
+Verificare che i nomi FQDN di [Microsoft 365 o Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges) necessari siano aggiunti a un elenco di indirizzi consentiti nel proxy.
 
 ## <a name="endpoint-investigations"></a>Indagini sull'endpoint
 

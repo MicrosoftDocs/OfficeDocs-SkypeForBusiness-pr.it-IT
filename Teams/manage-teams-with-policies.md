@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b54c64c637d44132ac0f978561267ef34f720e67
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 77afc1cbb71fff9cb54decbbf6e5cfd10d6c4e59
+ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101102"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574185"
 ---
 # <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
@@ -36,7 +36,7 @@ I criteri possono essere assegnati in diversi modi, a seconda delle operazioni c
 
 ![Screenshot dell'assegnazione di Criteri di gruppo.](media/group-policy-assignment.png)
 
-Per altre informazioni sull'assegnazione di [criteri, vedere](assign-policies.md).
+Per altre informazioni sull'assegnazione di [criteri, vedere](policy-assignment-overview.md).
 
 ## <a name="how-to-manage-policies"></a>Come gestire i criteri
 
@@ -70,8 +70,8 @@ Tipo di criterio | Descrizione
 
 ## <a name="related-topics"></a>Argomenti correlati
 
+* [Assegnare criteri in Teams - Guida introduttiva](policy-assignment-overview.md)
 * [Gestire i criteri di feedback in Microsoft Teams](manage-feedback-policies-in-teams.md)
 * [Gestire i criteri dei team in Microsoft Teams](teams-policies.md)
-* [Visualizzare le assegnazioni dei criteri nel log attività](activity-log.md)
 * [Configurare gli eventi live in Microsoft Teams](teams-live-events/set-up-for-teams-live-events.md)
 * [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md)

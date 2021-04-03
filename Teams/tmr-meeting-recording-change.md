@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 83688d6c4318aff9ef7a014a1792f52761145b4f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c57b925875308b7cdd9e654103e8d11050ce082d
+ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111032"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506669"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -34,7 +34,7 @@ ms.locfileid: "51111032"
 |5 ottobre 2020<br> *(Completa)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;| Si abilita il criterio Riunione di Teams in modo che le registrazioni delle riunioni vengono salvate in OneDrive for Business e SharePoint invece che in Microsoft Stream (classica)|
 |Distribuzione a partire dal 7 gennaio 2021<br> *(Completa)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Tutte le nuove registrazioni delle riunioni di Teams verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri riunione di Teams dell'organizzazione e impostandoli esplicitamente su **Stream**. La visualizzazione dei report dei criteri come Stream non è sufficiente. È necessario impostare in modo esplicito il valore del criterio su **Stream**.|
 |Distribuzione a partire dall'11 gennaio 2021<br> *(Completa)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC**<br> Anche se i clienti GCC possono rifiutare esplicitamente l'accesso a partire dal 5 ottobre, non è possibile acconsentire esplicitamente. Questa funzionalità verrà lanciata a tutti i clienti GCC a partire dall'11 gennaio 2021, a meno che non sia stata rifiutata esplicitamente.<br>  <br>A partire dall'11 gennaio 2021, tutte le nuove registrazioni delle riunioni di Teams per i clienti GCC verranno salvate in OneDrive for Business e SharePoint, a meno che questa modifica non venga ritardata modificando i criteri riunione di Teams dell'organizzazione e impostandoli esplicitamente su **Stream**. <br><br>Se si è scelto di rifiutare esplicitamente l'opzione ma si è pronti per attivare questa funzionalità, è possibile farlo impostando i criteri riunione di Teams in modo esplicito su **OneDrive for Business.** |
-|Distribuzione a partire dall'1 marzo 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC-High e DoD**<br> I clienti possono ora abilitare le registrazioni delle riunioni nel cloud in Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte in OneDrive e SharePoint per impostazione predefinita. |
+|Distribuzione a partire dall'1 marzo 2021<br> *(Completa)*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Solo GCC-High e DoD**<br> I clienti possono ora abilitare le registrazioni delle riunioni nel cloud in Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte in OneDrive e SharePoint per impostazione predefinita. |
 |Distribuzione incrementale a partire dal 7 luglio 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare nuove registrazioni delle riunioni in Microsoft Stream (classica); Tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint, anche se i criteri delle riunioni di Teams sono stati modificati in Stream.<br><br> È consigliabile che i clienti, per controllare meglio la modifica all'interno dell'organizzazione, acconsentano esplicitamente ogni volta che si è a proprio agio con la modifica, invece di attendere che si ripeta. |
 
 Microsoft Teams ha un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dal classico Microsoft Stream al nuovo [stream,](/stream/streamnew/new-stream)questo metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
@@ -52,7 +52,9 @@ I vantaggi dell'uso di OneDrive for Business e SharePoint per l'archiviazione de
 - Supporto multi-geo: le registrazioni vengono archiviate in un'area geografica specifica dell'utente
 - Portare il proprio supporto per la chiave (BYOK)
 
-Per altre informazioni, vedere "Registrazione riunione".
+Vedere l'elenco completo delle [funzionalità disponibili oggi e cosa aspettarsi nel corso del tempo.](https://docs.microsoft.com/stream/streamnew/features-new-version-stream) 
+
+Per altre informazioni, vedere "Novità di Microsoft Teams Meeting Recordings".
 
 > [!VIDEO https://www.youtube.com/embed/8iol0KfCeL8]
 

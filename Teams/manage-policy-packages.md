@@ -20,12 +20,12 @@ ms.custom:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft Teams per semplificare, semplificare e garantire la coerenza durante la gestione dei criteri per gruppi di utenti.
-ms.openlocfilehash: 5713274270a7784379eb47c6dd1fa875b41e20b1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 125c89505727e4fd4e6c18419b32dc1b99dfb67b
+ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51162691"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51583112"
 ---
 # <a name="manage-policy-packages-in-microsoft-teams"></a>Gestire i pacchetti di criteri in Microsoft Teams
 
@@ -130,7 +130,7 @@ Ecco i passaggi per visualizzare, assegnare e personalizzare i pacchetti di crit
 2. Selezionare il criterio da modificare. I criteri collegati a un pacchetto di criteri hanno lo stesso nome del pacchetto di criteri.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
-### <a name="assign-a-policy-package"></a>Assegnare un pacchetto di criteri 
+### <a name="assign-a-policy-package"></a>Assegnare un pacchetto di criteri
 
 #### <a name="assign-a-policy-package-to-one-user"></a>Assegnare un pacchetto di criteri a un utente
 
@@ -165,7 +165,7 @@ Questo problema può verificarsi se uno o più criteri nel pacchetto non sono st
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Assegnare i criteri agli utenti in Teams](assign-policies.md)
+[Assegnare pacchetti di criteri](assign-policy-packages.md)
 
 [Pacchetti di criteri di Teams per gli amministratori di EDU](policy-packages-edu.md)
 

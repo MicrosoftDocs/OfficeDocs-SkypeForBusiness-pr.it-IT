@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati per Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 2d72e9b71be6bab7c077a060a9828ad1f4175d74
-ms.sourcegitcommit: 2eaf80bca6dfad367283e57662d81a809c9437e8
+ms.openlocfilehash: 16e2487c1c7279b470e4938245513727ca2ad0ca
+ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50997454"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506703"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Dispositivi certificati Microsoft Teams
 
@@ -79,9 +79,9 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 | Poly TC8                | 3.3.2.210441     | Marzo 2021    | Compatibile con Poly Studio X30 e Poly Studio X50 |
 | Yealink VC210           | 118.15.0.14      | Febbraio 2020 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
 
-## <a name="currently-certified-teams-displays"></a>Display di Teams attualmente certificati
+## <a name="currently-certified-teams-displays"></a>Schermi di Teams attualmente certificati
 
-I dispositivi seguenti sono certificati nel programma di certificazione dello schermo di Microsoft Teams:
+I dispositivi seguenti sono certificati nel programma di certificazione Microsoft Teams Displays Android:
 
 | Modello di dispositivo | Versione firmware | Data di rilascio  |
 |:------------------------|:-----------------|:--------------|
@@ -103,7 +103,8 @@ Di seguito sono riportate le versioni più recenti dell'app per telefono e del f
 
 | Rilascio del prodotto | Data di rilascio  | Versione dell'app Microsoft Teams | Versione del portale aziendale | Versione dell'agente di amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
-| Aggiornamento 2020 #7  | 8 dicembre 2020  |1449/1.0.94.2020111101 | 5.0.4927.0            | 1.0.0.202010121132.product (.223) |
+| Aggiornamento 2021 #1  | 26 marzo 2021  |1449/1.0.94.2021022403 |  5.0.5045.0 |  1.0.0.202101280722.product (253) |
+| Aggiornamento 2020 #7  | 8 dicembre 2020  |1449/1.0.94.2020111101 | 5.0.4927.0            | 1.0.0.202010121132.product (223) |
 | Aggiornamento 2020 #6  | 12 ottobre 2020  |1449/1.0.94.2020091801     | 5.0.4912.0             | 1.0.0.202006290446.product(216) |
 | Aggiornamento 2020 #5  | 31 agosto 2020 | 1449/1.0.94.2020071702    | 5.0.4867.0             | 1.0.0.202006290446.product(216) |
 | Aggiornamento 2020 #4  | 30 giugno 2020 | 1449/1.0.94.2020051601      | 5.0.4771.0             | 1.0.0.202005060552  |
@@ -115,6 +116,11 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo        | Versione firmware     | Rilascio del prodotto incluso  |
 |:--------------------|:---------------------|:-------------------------|
+| YL T55/T56/T58   | 58.15.0.124  | Aggiornamento 2021 #1 |
+| YL VP59   | 91.15.0.58  | Aggiornamento 2021 #1 |
+| YL CP960  |73.15.0.117  | Aggiornamento 2021 #1 |
+| YL MP56/MP54/MP58  |122.15.0.36  | Aggiornamento 2021 #1 |
+| Crestron UC-2  |1.0.3.52 | Aggiornamento 2021 #1 |
 | AudioCodes C448HD   | C450HD_TEAMS_1.8.288  | Aggiornamento 2020 #7           |
 | AudioCodes C450HD   | C450HD_TEAMS_1.8.288  | Aggiornamento 2020 #7           |
 | Crestron UC-2       | 1.0.2.53              | Aggiornamento 2020 #7            |
@@ -153,16 +159,15 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Poly Studio X30 | 3.2.3.280012          | Aggiornamento 2020 #3    |
 | Poly Studio X50 | 3.2.3.280012          | Aggiornamento 2020 #3    |
 
-### <a name="product-release-information-for-teams-displays"></a>Informazioni sulla versione del prodotto per Teams visualizzate
+### <a name="product-release-information-for-teams-displays"></a>Informazioni sulla versione del prodotto per Teams Displays
 
-Di seguito sono riportate le versioni più recenti per l'app di visualizzazione e il firmware di Microsoft Teams.
+Di seguito sono riportate le versioni più recenti dell'app Microsoft Teams Displays e del firmware.
 
 #### <a name="app-versions"></a>Versioni delle app
 
 |Rilascio del prodotto| Data di rilascio | Versione dell'app Microsoft Teams | Versione del portale aziendale | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
-|Aggiornamento 2021 #1  |18 marzo 2021 |1449/1.0.95.2021021104    |5.0.5045.0            |1.0.0.202101280722.product|
-|Aggiornamento 2020 #1  |22 ottobre 2020 |1449/1.0.95.2020092307    |5.0.4927.0              |1.0.0.202006290446.product|
+|Aggiornamento 2021 #1  |18 marzo 2021 |1449/1.0.95.2021021104    |5.0.5045.0            | 1.0.0.202101280722.product (253)|
 
 
 #### <a name="firmware-versions"></a>Versioni firmware

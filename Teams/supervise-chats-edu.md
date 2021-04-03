@@ -15,12 +15,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sulle chat supervisionate nelle riunioni di Microsoft Teams.
-ms.openlocfilehash: 125273131ea4de6937b65f15d48469f3039d6aeb
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e705120eb2f8b92ea437c78be67c139018f786fc
+ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118057"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506679"
 ---
 # <a name="supervised-chats-in-microsoft-teams"></a>Chat supervisionate in Microsoft Teams
 
@@ -28,7 +28,7 @@ Gli istituti di istruzione offrono uno spazio digitale sicuro e sano per gli stu
 
 La chat supervisionata consente ai docenti designati di avviare chat con gli studenti e impedisce agli studenti di avviare nuove chat a meno che non sia presente un docente appropriato. Quando la supervisione della chat è abilitata, i supervisori non possono uscire dalla chat e gli altri partecipanti non sono autorizzati a rimuoverli, assicurando che le chat che coinvolgono studenti siano correttamente supervisionate.
 
-Queste limitazioni vengono applicate solo alle nuove chat private create dopo che la chat supervisionata è stata completamente abilitata. Non si applicano a chat private, chat di riunioni o canali esistenti. Per altre informazioni sulle procedure consigliate per la chat delle riunioni o la sicurezza dei canali, vedere la guida alla sicurezza degli studenti.
+Queste limitazioni vengono applicate solo alle nuove chat private create dopo che la chat supervisionata è stata completamente abilitata. Non si applicano a chat private, chat di riunioni o canali esistenti. Per altre informazioni sulle procedure consigliate per la chat delle riunioni, la sicurezza dei canali e la sicurezza degli studenti, vedere Tenere gli studenti al [sicuro durante l'uso di Teams.](https://support.microsoft.com/topic/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8?ui=en-us&rs=en-us&ad=us#ID0EBBAAA=For_educators&ID0EDD=For_educators)
 
 > [!Note]
 > La chat con supervisione protegge le nuove chat create dopo l'applicazione della funzionalità.  Non protegge le chat esistenti.

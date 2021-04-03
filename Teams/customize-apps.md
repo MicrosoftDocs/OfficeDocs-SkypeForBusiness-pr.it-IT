@@ -19,12 +19,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come personalizzare le app in Microsoft Teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b2e924da384b5bff54e63872aa7026d2da456311
-ms.sourcegitcommit: 88cb2362d07bca88402cf771a6f366c972e26001
+ms.openlocfilehash: a87ce5f7dd63a78af4a7a1ea5f56aed1cad7263a
+ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471500"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574155"
 ---
 # <a name="customize-apps-in-microsoft-teams"></a>Personalizzare le app in Microsoft Teams
 
@@ -107,9 +107,9 @@ Ora gli utenti finali di Teams possono aprire il proprio client Teams per visual
 La nota seguente include dettagli importanti sulla personalizzazione di un'app.
 
 > [!Note]
-> - Quando si personalizzano le app e qualsiasi descrizione relativa a un'app, assicurarsi di seguire le linee guida per la personalizzazione fornite dall'autore dell'app. L'utente è responsabile del rispetto dei diritti di altri utenti in merito alle immagini di terze parti che potrebbero essere usate.
-> - I dati di personalizzazione forniti dall'amministratore vengono archiviati nell'archivio impostazioni nell'area geografica più vicina. Non è necessariamente in alcuna distribuzione di GoLocal Cloud Teams.
-> - L'utente è responsabile della validità dei collegamenti alle condizioni per l'uso o all'informativa sulla privacy. È necessario fornire una gestione appropriata delle modifiche che apportano (o consentono di essere apportate) ai metadati dell'app. L'implementazione corrente fornirà supporto per ripristinare gli URL forniti dallo sviluppatore. Non è possibile configurare l'app senza un URL (se l'app consente la personalizzazione degli URL).
+> - Quando si personalizzano le app e qualsiasi descrizione relativa a un'app, assicurarsi di seguire le eventuali linee guida per la personalizzazione fornite dall'autore dell'app nella documentazione o nelle condizioni per l'uso. L'utente è anche responsabile del rispetto dei diritti di altri utenti per quanto riguarda le immagini di terze parti che potrebbero essere usate.
+> - I dati di personalizzazione forniti dall'amministratore vengono archiviati nell'area geografica più vicina.
+> - L'utente è responsabile della validità dei collegamenti alle condizioni d'uso o all'informativa sulla privacy.
 > - Nel caso in cui l'autore dell'app non consenta più la personalizzazione di un campo, nella pagina dei dettagli dell'app viene visualizzato un messaggio che informa l'amministratore dei campi che non possono più essere personalizzati. Tutte le modifiche apportate al campo verranno ripristinate ai valori originali.
 > - Le modifiche alla personalizzazione potrebbero richiedere fino a 24 ore per consentire agli utenti di visualizzare le modifiche.
 

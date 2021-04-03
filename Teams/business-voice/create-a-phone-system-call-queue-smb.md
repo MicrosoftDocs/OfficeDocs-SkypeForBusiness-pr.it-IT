@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata con Microsoft 365 Business Voice.
-ms.openlocfilehash: 3e75dbb75d9edffedbf25d42f197d8723e3ef9a4
-ms.sourcegitcommit: 66e7b28ba1c0433535eb6a3e7d883851c27d9d1f
+ms.openlocfilehash: f60919dccd25231dbdb7e9c2991251bcb3f96700
+ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51478366"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506643"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -84,7 +84,7 @@ Per aggiungere un canale
 2. Digitare un nome e una descrizione per il canale e quindi fare clic su **Aggiungi**.
 
 > [!div class="nextstepaction"]
-> [Passaggio 2 - Account delle risorse >](https://docs.microsoft.com/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=resource-account#steps)
+> [Passaggio 2 - Account delle risorse >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=resource-account#steps)
 
 # <a name="step-2brresource-accounts"></a>[Passaggio 2 <br> Account delle risorse](#tab/resource-account)
 
@@ -143,7 +143,7 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 > La musica predefinita fornita nelle code di chiamata di Teams è gratuita di eventuali royalty pagate dall'organizzazione. 
 
 > [!div class="nextstepaction"]
-> [Passaggio 3 - Chiamare gli agenti >](https://docs.microsoft.com/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-agents#steps)
+> [Passaggio 3 - Chiamare gli agenti >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-agents#steps)
 
 # <a name="step-3brcall-agents"></a>[Passaggio 3 <br> Agenti di chiamata](#tab/call-agents)
 
@@ -160,7 +160,7 @@ Per aggiungere agenti alla coda di chiamata, li aggiungeremo al team e al canale
 > Quando vengono aggiunti nuovi utenti al team, l'arrivo della prima chiamata può richiedere fino a otto ore.
 
 > [!div class="nextstepaction"]
-> [Passaggio 4 - Account delle risorse >](https://docs.microsoft.com/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-routing#steps)
+> [Passaggio 4 - Account delle risorse >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-routing#steps)
 
 # <a name="step-4brcall-routing"></a>[Passaggio 4 <br> Routing delle chiamate](#tab/call-routing)
 
@@ -189,7 +189,7 @@ Scegliere il metodo di routing delle chiamate da usare.
     ![Screenshot delle impostazioni relative a routing, rifiuto esplicito e tempo di avviso](../media/call-queue-presence-agents-time.png)
 
 > [!div class="nextstepaction"]
-> [Passaggio 5 - Overflow delle chiamate >](https://docs.microsoft.com/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-overflow#steps)
+> [Passaggio 5 - Overflow delle chiamate >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-overflow#steps)
 
 # <a name="step-5brcall-overflow"></a>[Passaggio 5 <br> Overflow delle chiamate](#tab/call-overflow)
 
@@ -206,7 +206,7 @@ Scegliere come gestire le chiamate che superano il massimo in coda.
     ![Screenshot delle impostazioni di overflow delle chiamate](../media/call-queue-overflow-handling.png)
 
 > [!div class="nextstepaction"]
-> [Passaggio 6 - Timeout chiamata >](https://docs.microsoft.com/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-timeout#steps)
+> [Passaggio 6 - Timeout chiamata >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-timeout#steps)
 
 # <a name="step-6brcall-timeout"></a>[Passaggio 6 <br> Timeout chiamata](#tab/call-timeout)
 

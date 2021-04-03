@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fc61e47a8c5c86f2591026ef8cc9d502cc43604e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e3368fde246e61c7e006d9223a37283f2953945f
+ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122190"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506663"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
@@ -47,7 +47,7 @@ L'**accesso esterno** consente agli utenti di Teams e Skype for Business di comu
 Per aggiungere o bloccare un dominio:
 
 1. Selezionare **Aggiungi un dominio**.
-2. Nel riquadro Aggiungi un dominio immettere il nome del dominio e fare clic sulla barra spaziatrice per salvare il nome.
+2. Nel riquadro Aggiungi un dominio immettere il nome del dominio e selezionare la barra spaziatrice per salvare il nome.
 3. Selezionare **Consentito** o **Bloccato**.
 4. Selezionare **Fine** per salvare le modifiche. 
 
@@ -94,9 +94,13 @@ Queste impostazioni controllano il comportamento dell'account di risorsa per i d
 La ricerca nella directory con ambito di Microsoft Teams usa i criteri rubrica di Exchange per consentire alle organizzazioni di creare confini virtuali che controllano il modo in cui gli utenti possono trovare e comunicare con altri utenti dell'organizzazione. Può essere utile usare la ricerca nella directory con ambito in situazioni come queste:
 
 - L'organizzazione ha più società all'interno del tenant che si vogliono mantenere separate. 
-- L'istituto di istruzione vuole limitare le chat tra docenti e studenti. 
+- L'istituto di istruzione vuole limitare le chat tra docenti e studenti.
 
 **Attivare** questa impostazione per abilitare le ricerche nella directory con ambito.
+
+#### <a name="safety-and-communications"></a>Sicurezza e comunicazioni
+
+La chat supervisionata consente a organizzazioni e istituti di istruzione di limitare le funzionalità di chat usando autorizzazioni basate sui ruoli. Queste autorizzazioni controllano la quantità di supervisione necessaria per un utente durante la chat con altri utenti. Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
 
 ### <a name="skype-for-business"></a>Skype for Business
 

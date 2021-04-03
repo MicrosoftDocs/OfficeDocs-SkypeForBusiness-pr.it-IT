@@ -22,32 +22,41 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: b93a3b5ecbe7b9edcc54034635721ee3b6db610b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 8f196e1539085966c22a775a784913ced417c9cb
+ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119125"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51506723"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi live di Microsoft Teams
 
 ## <a name="overview"></a>Panoramica
 
-Con gli eventi live di Teams, gli utenti dell'organizzazione possono trasmettere i video e i contenuti delle riunioni ad ampi gruppi di destinatari online.
+Con teams vive eventi, gli utenti dell'organizzazione possono trasmettere video e contenuti delle riunioni a un pubblico online di grandi dimensioni.
 
 Gli eventi live di Microsoft 365 portano lo streaming video live a un nuovo livello. Gli eventi live favoriscono la connessione durante l'intero ciclo di vita di interazione con i partecipanti: prima, durante e dopo gli eventi live. È possibile creare un evento live con Microsoft Stream, Teams o Yammer in modo da raggiungere i gruppi di destinatari, i team o la community, ovunque si trovino.  
 
-Teams offre una collaborazione basata su chat, chiamate, riunioni ed eventi live, in modo da poter ampliare il gruppo di destinatari delle riunioni. Gli eventi live di Teams sono un'estensione delle riunioni di Teams. Questi consentono agli utenti di trasmettere video e contenuti a un gruppo di destinatari online. Questi sono pensati per le comunicazioni “uno-molti”, dove l'organizzatore dell'evento guida le interazioni e l’unica forma di partecipazione del pubblico è principalmente quella di visualizzare il contenuto condiviso dal presentatore. I partecipanti possono guardare l'evento in tempo reale o registrato in Yammer, Teams e/o Stream e interagire con i relatori tramite domande e risposte moderate o una conversazione in Yammer.
+Teams offre una collaborazione basata su chat, chiamate, riunioni ed eventi live, in modo da poter ampliare il gruppo di destinatari delle riunioni. Gli eventi live di Teams sono un'estensione delle riunioni di Teams. Questi consentono agli utenti di trasmettere video e contenuti a un gruppo di destinatari online. Questi sono pensati per le comunicazioni “uno-molti”, dove l'organizzatore dell'evento guida le interazioni e l’unica forma di partecipazione del pubblico è principalmente quella di visualizzare il contenuto condiviso dal presentatore. I partecipanti possono guardare l'evento live o registrato in Yammer, Teams o Stream e interagire con i relatori usando domande e risposte moderate & O una conversazione di Yammer.
 
-Gli eventi live di Teams sono considerati la versione futura di Skype Meeting Broadcast. Questi, a lungo termine, sostituiranno le funzionalità fornite da Skype Meeting Broadcast. Microsoft continuerà a supportare Skype Meeting Broadcast per gli utenti che usano Skype for Business nelle loro organizzazioni, senza interruzioni del servizio per gli eventi nuovi o futuri. Tuttavia, è consigliabile provare gli eventi live di Teams per sfruttare tutte le nuove ed entusiasmanti funzionalità tra cui la condivisione dello schermo e il supporto per codificatori hardware/software esterni.
+Gli eventi live di Teams sono considerati la versione futura di Skype Meeting Broadcast. Questi, a lungo termine, sostituiranno le funzionalità fornite da Skype Meeting Broadcast. Microsoft continuerà a supportare Skype Meeting Broadcast per gli utenti che usano Skype for Business nelle loro organizzazioni, senza interruzioni del servizio per gli eventi nuovi o futuri. Tuttavia, ti consigliamo di provare gli eventi live di Teams per usare tutte le nuove ed entusiasmanti funzionalità, tra cui la condivisione dello schermo e il supporto per codificatori hardware/software esterni.
 
 Iniziare la procedura. Esaminare prima di tutto il seguente diagramma, che mostra i componenti di alto livello coinvolti negli eventi live di Microsoft 365 e il modo in cui sono connessi.
 
 ![Componenti principali degli eventi live](../media/live-event-flow-diagram.png  "Componenti chiave di eventi live, programmazione, produzione, piattaforma Stream, provider eCDN di terze parti certificati")
 
+> [!Note]
+> Vorremmo sottolineare che gli eventi live di Teams, data la natura della tecnologia broadcast, spesso superano le normali popolazioni di riunioni (interne).
+>
+> Come nel caso di altri servizi di trasmissione multimediale di grandi dimensioni, microsoft si affida alle reti per la distribuzione di contenuti per distribuire i contenuti per l'evento live ai destinatari. Questo contenuto è protetto da metodi di crittografia e soggetto all'autorizzazione da parte di token di accesso rilasciati solo ai destinatari in base alla configurazione della riunione evento live.
+>
+> È consigliabile fare in modo che il contenuto della riunione sia appropriato per un pubblico di grandi dimensioni o che il pubblico sia ridotto in modo appropriato per i contenuti riservati.  
+>
+> Come è comune nel settore, i compromessi ad altri elementi della sicurezza, ad esempio il personale o l'infrastruttura, potrebbero influire sulla sicurezza degli eventi live. Le organizzazioni devono prendere in considerazione l'inclusione di eventi live e altri servizi di trasmissione nella pianificazione della sicurezza e negli esercizi.
+
 ### <a name="event-group-roles"></a>Ruoli del gruppo eventi
 
-Gli eventi live in Teams consentono a utenti con diversi ruoli (organizzatore, produttore, relatore e partecipante) di trasmettere e partecipare con successo a un evento. Per altre informazioni, vedere [Ruoli del gruppo di eventi](https://support.office.com/article/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a?ui=en-US&rs=en-US&ad=US#bkmk_roles).
+Gli eventi live in Teams consentono a più ruoli (organizzatore, produttore, relatore e partecipante) di trasmettere e partecipare correttamente a un evento. Per altre informazioni, vedere [Ruoli del gruppo di eventi](https://support.office.com/article/get-started-with-microsoft-teams-live-events-d077fec2-a058-483e-9ab5-1494afda578a?ui=en-US&rs=en-US&ad=US#bkmk_roles).
 
 ## <a name="key-components"></a>Componenti fondamentali
 
