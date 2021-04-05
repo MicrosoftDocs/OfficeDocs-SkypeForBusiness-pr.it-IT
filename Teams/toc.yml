@@ -317,10 +317,12 @@ items:
         items:
           - name: Panoramica
             href: manage-teams-with-policies.md
-          - name: Assegnare i criteri agli utenti
-            href: assign-policies.md
-          - name: Visualizzare le assegnazioni dei criteri nel log attività
-            href: activity-log.md
+          - name: Assegna criteri in Teams - Guida introduttiva
+            href: policy-assignment-overview.md
+          - name: Assegna criteri a utenti e gruppi
+            href: assign-policies-users-and-groups.md
+          - name: Assegna pacchetti di criteri
+            href: assign-policy-packages.md
           - name: Gestire i criteri di feedback in Teams
             href: manage-feedback-policies-in-teams.md
           - name: Gestire i pacchetti di criteri in Teams
