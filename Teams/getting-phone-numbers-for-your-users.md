@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: 'Scopri come ottenere nuovi numeri, portarne o trasferire quelli esistenti per Teams e come mostrare le modifiche agli utenti. '
-ms.openlocfilehash: 41693bedec0bd41edd80bc12ae67c87204f1c38e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c80f7a54af697322665c110c14aeccaf5fa4f667
+ms.sourcegitcommit: 109b3869afb5ff1ca4eaf771399d7cda70a43bea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120717"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51586565"
 ---
 # <a name="getting-phone-numbers-for-your-users"></a>Recupero di numeri di telefono per gli utenti
 
@@ -41,7 +41,7 @@ Esistono tre modi per ottenere i numeri utente:
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese o dell'area geografica) non è possibile ottenere i nuovi numeri di telefono tramite l'interfaccia di amministrazione di Microsoft Teams oppure sono necessari numeri di telefono o codici di area specifici. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).
   
 > [!NOTE]
-> Per assistenza nella configurazione dei numeri di telefono per l'organizzazione, contattare il contatto del supporto tecnico per i prodotti aziendali - Guida per gli amministratori( https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=online .
+> Per assistenza nella configurazione dei numeri di telefono per l'organizzazione, contattare il contatto di supporto per i prodotti [aziendali - Guida per gli amministratori.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products?view=o365-worldwide&tabs=online)
   
 ## <a name="get-new-phone-numbers-for-your-users"></a>Ottenere numeri di telefono per gli utenti
 
