@@ -550,9 +550,25 @@ items:
       - name: Riunioni
         items:
           - name: Gestire i criteri di riunione
-            href: meeting-policies-in-teams.md
-          - name: Rimuovere criterio riunione RestrictedAnonymousAccess da utenti
-            href: meeting-policies-restricted-anonymous-access.md
+            items:
+              - name: Panoramica
+                href: meeting-policies-overview.md
+              - name: Policy ospiti
+                href: meeting-policies-in-teams-general.md
+              - name: Audio e video
+                href: meeting-policies-audio-and-video.md
+              - name: Policy su contenuti e condivisione dello schermo
+                items:
+                  - name: Condivisione di contenuti
+                    href: meeting-policies-content-sharing.md
+                  - name: Configura la condivisione desktop
+                    href: configure-desktop-sharing.md
+              - name: 'Policy su partecipanti, ospiti e accesso'
+                items:
+                  - name: Policy su partecipanti e ospiti
+                    href: meeting-policies-participants-and-guests.md
+                  - name: Rimuovere criterio riunione RestrictedAnonymousAccess da utenti
+                    href: meeting-policies-restricted-anonymous-access.md
           - name: Gestire le impostazioni delle riunioni
             href: meeting-settings-in-teams.md
           - name: Messaggi di posta elettronica inviati automaticamente agli utenti in caso di modifica delle impostazioni

@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le funzionalità di amministrazione di Microsoft Teams.
-ms.openlocfilehash: 709cbf8b4a5438f0f8e2447e093414de9829f161
-ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
+ms.openlocfilehash: 5f9020afaa230156df2927ceecfd26ae33c2c2ae
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574095"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598505"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le funzionalità di amministrazione di Microsoft Teams
 
@@ -49,7 +49,7 @@ Gli amministratori IT possono eseguire il provisioning in remoto e accedere a un
 
 ### <a name="enable-live-transcripts-in-teams"></a>Abilitare trascrizioni in tempo reale in Teams
 
-Questo è un criterio per utente e si applica durante una riunione. Questa impostazione controlla se, l'opzione Abilita i sottotitoli in tempo reale è disponibile nelle riunioni a cui l'utente partecipa, per l'attivazione e la disattivazione dei sottotitoli in tempo reale. [Altre informazioni](../meeting-policies-in-teams.md#enable-live-captions).
+Questo è un criterio per utente e si applica durante una riunione. Questa impostazione controlla se, l'opzione Abilita i sottotitoli in tempo reale è disponibile nelle riunioni a cui l'utente partecipa, per l'attivazione e la disattivazione dei sottotitoli in tempo reale. [Altre informazioni](../meeting-policies-participants-and-guests.md#enable-live-captions).
 
 ## <a name="march-23-2021"></a>23 marzo 2021
 
@@ -216,7 +216,7 @@ Di recente è stato aggiunto il supporto per i piani per chiamate per Austria, D
 
 ### <a name="meeting-policy-settings"></a>Impostazioni dei criteri di riunione
 
-Aggiunta di due impostazioni dei criteri per l'audio IP e il video IP nei criteri per le riunioni di Teams: Modalità per l'audio IP e Modalità per video IP. È ora possibile impostare l'audio e il video IP in arrivo e in uscita nei criteri di riunione di Teams. [Altre informazioni](../meeting-policies-in-teams.md#meeting-policy-settings---audio--video).
+Aggiunta di due impostazioni dei criteri per l'audio IP e il video IP nei criteri per le riunioni di Teams: Modalità per l'audio IP e Modalità per video IP. È ora possibile impostare l'audio e il video IP in arrivo e in uscita nei criteri di riunione di Teams. [Altre informazioni](../meeting-policies-audio-and-video.md).
 
 ## <a name="september-27-2020"></a>27 settembre 2020
 

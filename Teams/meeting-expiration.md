@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione in Microsoft Teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 1685da93c90d8d12cc4e8b8f2a92fd4f93391c87
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 6e8821781eab70696c9b24c8df18cc8dd0b46870
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51115564"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598615"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri delle riunioni e scadenza delle riunioni in Microsoft Teams
 
@@ -35,11 +35,11 @@ ms.locfileid: "51115564"
 
 Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri per le riunioni seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams, a cui si fa riferimento in questo articolo.
 
-- [Consenti riunione ora nei canali:](meeting-policies-in-teams.md#allow-meet-now-in-channels)controlla se un utente può avviare una riunione improvvisata in un canale.
-- [Consenti pianificazione riunione canale:](meeting-policies-in-teams.md#allow-channel-meeting-scheduling)controlla se un utente può pianificare una riunione in un canale.
-- [Consenti pianificazione riunioni private:](meeting-policies-in-teams.md#allow-scheduling-private-meetings)controlla se un utente può pianificare una riunione privata in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
-- [Consenti l'aggiunta di Outlook:](meeting-policies-in-teams.md#allow-the-outlook-add-in)controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
-- [Consenti riunione ora in riunioni private:](meeting-policies-in-teams.md#allow-meet-now-in-private-meetings)controlla se un utente può avviare una riunione privata esemptuosa.
+- [Consenti riunione ora nei canali:](meeting-policies-in-teams-general.md#allow-meet-now-in-channels)controlla se un utente può avviare una riunione improvvisata in un canale.
+- [Consenti pianificazione riunione canale:](meeting-policies-in-teams-general.md#allow-channel-meeting-scheduling)controlla se un utente può pianificare una riunione in un canale.
+- [Consenti pianificazione riunioni private:](meeting-policies-in-teams-general.md#allow-scheduling-private-meetings)controlla se un utente può pianificare una riunione privata in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
+- [Consenti l'aggiunta di Outlook:](meeting-policies-in-teams-general.md#allow-the-outlook-add-in)controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
+- [Consenti riunione ora in riunioni private:](meeting-policies-in-teams-general.md#allow-meet-now-in-private-meetings)controlla se un utente può avviare una riunione privata esemptuosa.
 
 Per impostazione predefinita, queste impostazioni sono disponibili. Quando una di queste impostazioni è disattivata, qualsiasi utente a cui è assegnato il criterio non può avviare o pianificare nuove riunioni di questo tipo. Allo stesso tempo, i collegamenti di partecipazione alla riunione e gli ID conferenza di tutte le riunioni esistenti di quel tipo che l'utente ha avviato o pianificato in precedenza scadono.
 

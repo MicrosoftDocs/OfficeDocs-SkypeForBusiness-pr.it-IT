@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6a8c3c842b47c4575779de4c0ae8301bededb632
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 6fc4f4f53262127355afa573b0fc2abec6b05e64
+ms.sourcegitcommit: 3861d661d32f507bd8479509ed09b1cfcf0b214f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098302"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51607518"
 ---
 # <a name="microsoft-teams-apps-behavior-for-non-standard-users"></a>Comportamento delle app di Microsoft Teams per utenti non standard
 
@@ -73,6 +73,6 @@ Gli utenti anonimi non possono installare, aggiornare o eliminare app nelle riun
 
 ### <a name="usage-behavior-and-policy-for-anonymous-users"></a>Comportamento di utilizzo e criteri per gli utenti anonimi
 
-Gli utenti anonimi non possono usare direttamente le app nelle riunioni. Gli utenti nativi possono continuare a usare le app riunioni se sono presenti utenti anonimi. Se un'app invia una scheda adattiva nella chat, gli utenti anonimi possono interagire con la scheda.
+Gli utenti anonimi non possono usare direttamente le app nelle riunioni. Gli utenti nativi possono continuare a usare le app riunioni se sono presenti utenti anonimi. Se un'app invia una scheda adattiva nella chat, gli utenti anonimi possono interagire con la scheda Per altre informazioni, vedere Consentire agli utenti anonimi di [partecipare alle riunioni.](https://docs.microsoft.com/microsoftteams/meeting-settings-in-teams#allow-anonymous-users-to-join-meetings)
 
-Gli utenti anonimi erediteranno i criteri di autorizzazione predefiniti globali a livello di utente. Questo controllo consente agli utenti anonimi di interagire con le app nelle riunioni di Teams se i criteri di autorizzazione a livello di utente hanno abilitato l'app. Gli utenti anonimi possono interagire solo con app già disponibili in una riunione e che non possono acquisire e/o gestire queste app.
+Gli utenti anonimi erediteranno i criteri di autorizzazione predefiniti globali a livello di utente. Possono interagire con le app nelle riunioni di Teams se i criteri di autorizzazione a livello di utente hanno abilitato l'app. Gli utenti anonimi possono interagire solo con app già disponibili in una riunione e che non possono acquisire e/o gestire queste app.

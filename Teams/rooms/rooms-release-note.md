@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può leggere le note sulla versione di Microsoft Teams Rooms, che elencano i miglioramenti cumulativi nelle sale di Microsoft Teams.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: cfb7742cb1f25db0dec7e777bdb9a891ca009867
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a922f3fead6c33f70e7393dd536b856934ddb390
+ms.sourcegitcommit: 3861d661d32f507bd8479509ed09b1cfcf0b214f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117414"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51607546"
 ---
 # <a name="release-notes"></a>Note sulla versione
 
@@ -29,6 +29,7 @@ Questo articolo illustra i miglioramenti cumulativi in Microsoft Teams Rooms.
 
 |Rilascio |Pubblicato in <br/> Microsoft Store |
 |--- |--- |
+|4.8.19.0 |04/06/2021 |
 |4.7.19.0 |02/03/2021 |
 |4.7.15.0 |12/11/2020 |
 |4.6.23.0 |10/19/2020 |
@@ -70,6 +71,16 @@ Questo articolo illustra i miglioramenti cumulativi in Microsoft Teams Rooms.
 |RTM (1.0.8) |12/7/2016 |
 
 ## <a name="microsoft-teams-rooms-feature-introduction-and-issue-resolution"></a>Introduzione alle funzionalità di Microsoft Teams Rooms e risoluzione dei problemi
+
+### <a name="48190-04062021"></a>4.8.19.0 (04/06/2021)
+
+Introdotto in questo aggiornamento:
+- Supporto government Community Cloud High (GCCH) per Teams Rooms. I clienti GCCH con i dispositivi Teams Rooms esistenti possono scaricare la versione 4.8.18.0 da Aggiornare manualmente [un dispositivo Microsoft Teams Rooms](manual-update.md)
+- Partecipare alle riunioni zoom con una migliore qualità video (supporto di 720p) e ricevere la raccolta video dei partecipanti
+- Banner di errore di accesso di Skype for Business rimosso per la modalità predefinita di Teams. Questa modifica supporta le organizzazioni che rimuovono l'infrastruttura Skype for Business
+- Le riunioni di Teams aderiscono all'analisi dei collegamenti ora gestisce i collegamenti sicuri di Microsoft Defender Advanced Thread Protection per consentire di partecipare a Teams esterni senza problemi
+- Risolvere il problema di ridimensionamento dei contenuti condivisi nelle riunioni Skype for Business quando il PC del condivisore ha un set DPI personalizzato in Windows
+- Correzioni di qualità e affidabilità
 
 ### <a name="47190-02032021"></a>4.7.19.0 (02/03/2021)
 
@@ -204,7 +215,7 @@ Introdotto in questo aggiornamento:
 - Aggiornamento del tema: mantenere l'immagine di sfondo personalizzata solo davanti agli schermi della sala, rendendo lo sfondo della console un colore neutro per garantire che i controlli dell'interfaccia utente della console soddisfino il contrasto dei colori, requisiti di accessibilità
 - Barra universale per i controlli delle chiamate in riunione per le chiamate/le riunioni di Teams per offrire un'esperienza coerente con microsoft Teams PC/ Web/ Client mobili<sup>1</sup>
 - Valutazione del feedback sulla qualità delle chiamate dopo le chiamate/le riunioni di Teams<sup>1</sup>
-- Recieve/ render Microsoft Whiteboard on Microsoft Teams Rooms front of room display when shared from PC/ Web/ Mobile Teams client<sup>1</sup> <sup>2</sup>
+- Ricevere/eseguire il rendering di Microsoft Whiteboard nella parte anteriore dello schermo delle chat room di Microsoft Teams quando si condivide da PC/ Web/ client di Mobile Teams<sup>1</sup> <sup>2</sup>
 - È stato rimosso il supporto per gli aggiornamenti di Windows 10 versione 1809 a causa di problemi di compatibilità con il client Microsoft Teams Rooms. Il supporto per Windows 10 versione 19H1 verrà aggiunto nelle versioni future
 
 <sup>1</sup> Implementazione del servizio Microsoft Teams con anelli di Teams. Questa funzionalità potrebbe essere disponibile prima o dopo l'aggiornamento del client 4.0.105.0

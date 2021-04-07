@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aa192472da86850a580bc981291762386f15c434
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 31f468e6e3fea0915322e632ad27f2213d5d63c7
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094638"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598365"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -122,7 +122,7 @@ Di seguito sono riportate alcune considerazioni aggiuntive su come implementare 
 
 - Controllare e proteggere la configurazione dei criteri di conformità in Teams ed Exchange con l’accesso condizionale. Per ulteriori informazioni, vedere [Come funzionano i criteri di accesso condizionale per Teams?](security-compliance-overview.md#how-conditional-access-policies-work-for-teams)
 
-- Se l’organizzazione possiede dei requisiti di conformità per garantire che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l’organizzatore dispone di una cassetta postale di Exchange locale. Per ulteriori informazioni, vedere [Consentire la pianificazione di riunioni private](./meeting-policies-in-teams.md#allow-scheduling-private-meetings).
+- Se l’organizzazione possiede dei requisiti di conformità per garantire che tutte le discussioni delle riunioni siano individuabili, è consigliabile disabilitare le riunioni private se l’organizzatore dispone di una cassetta postale di Exchange locale. Per ulteriori informazioni, vedere [Consentire la pianificazione di riunioni private](./meeting-policies-in-teams-general.md#allow-scheduling-private-meetings).
 
 - In una distribuzione ibrida di Exchange, il contenuto dei messaggi di chat è disponibile per la ricerca, indipendentemente dal fatto che i partecipanti alla chat abbiano una cassetta postale basata sul cloud o una cassetta postale locale. Per ulteriori informazioni, consultare [Ricerca in cassette postali basate sul cloud per gli utenti locali](/office365/securitycompliance/search-cloud-based-mailboxes-for-on-premises-users). Per informazioni sulla ricerca di contenuto in Teams, consultare [Ricerca contenuto nel Centro conformità di Microsoft 365](/Office365/SecurityCompliance/content-search#searching-microsoft-teams-and-office-365-groups).
 

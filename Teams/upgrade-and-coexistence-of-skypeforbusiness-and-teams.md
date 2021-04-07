@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 680bfad9090899ecce1f6e2be7bd9a0a25f5099a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 015a0f079f5e95f43c4245ff48f2d88df0e1fa74
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51112172"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598305"
 ---
 # <a name="choose-your-upgrade-journey-from-skype-for-business-to-teams"></a>Scegli il percorso di aggiornamento da Skype for Business a Teams
 
@@ -62,7 +62,7 @@ Per guidare il processo decisionale, familiarizzare con le varie modalità, conc
 
 Un utente di cui è stata eseguita la migrazione a Teams non usa più un client Skype for Business se non per partecipare a una riunione ospitata in Skype for Business. Tutte le chat e le chiamate in arrivo vengono effettuate nel client Teams dell'utente, indipendentemente dal fatto che il mittente usi Teams o Skype for Business. Le nuove riunioni organizzate dall'utente aggiornato verranno pianificate come riunioni di Teams. Se l'utente prova a usare il client Skype for Business, l'avvio di chat e chiamate viene bloccato<sup>1</sup>. Tuttavia, l'utente può (e deve) continuare a usare il client Skype for Business per partecipare alle riunioni a cui è invitato.
 
-Gli amministratori gestiscono la transizione a Teams usando il concetto di [modalità](migration-interop-guidance-for-teams-with-skype.md), che è una proprietà di [TeamsUpgradePolicy](/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps). Un utente di cui è stata eseguita la migrazione a Teams come descritto in precedenza è in modalità "TeamsOnly". Per un'organizzazione che esegue la migrazione a Teams, l'obiettivo finale è spostare tutti gli utenti in modalità TeamsOnly.
+Gli amministratori gestiscono la transizione a Teams usando il concetto di [modalità](migration-interop-guidance-for-teams-with-skype.md), che è una proprietà di [TeamsUpgradePolicy](/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps&preserve-view=true). Un utente di cui è stata eseguita la migrazione a Teams come descritto in precedenza è in modalità "TeamsOnly". Per un'organizzazione che esegue la migrazione a Teams, l'obiettivo finale è spostare tutti gli utenti in modalità TeamsOnly.
 
 Esistono due metodi per eseguire la migrazione di un'organizzazione esistente con Skype for Business (online o locale) a Teams:
 
@@ -113,7 +113,7 @@ La tabella seguente riepiloga l'esperienza di Teams sia per la modalità Isole c
 | Chat e chiamate in arrivo ricevute in:|  Teams o Skype for Business | Teams |
 | Chiamate PSTN ricevute in: | Skype for Business <br>L'uso della funzionalità PSTN in Teams non è supportato in modalità Isole.     | Teams |   
  |Icone di presenza    | La presenza in Skype for Business e Teams è indipendente. Gli utenti possono visualizzare stati diversi per lo stesso utente delle Isole, a seconda del client che usano. | La presenza si basa esclusivamente sull'attività dell'utente in Teams. Tutti gli altri utenti, indipendentemente dal client che usano, vedono questa presenza. | 
- | Pianificazione delle riunioni    | Gli utenti possono pianificare riunioni in Teams o Skype for Business. Per impostazione predefinita, verranno visualizzati entrambi i componenti aggiuntivi in Outlook. È possibile impostare criteri di riunione di Teams per controllare se gli utenti possono usare solo il componente aggiuntivo Riunione di Teams o entrambi i componenti aggiuntivi Riunione Teams e Riunione Skype for Business. Per altre informazioni, vedere [Impostare il provider di riunioni per gli utenti in modalità Isole.](meeting-policies-in-teams.md#meeting-policy-settings---meeting-provider-for-islands-mode) |     Gli utenti pianificano solo riunioni in Teams. In Outlook è disponibile solo il componente aggiuntivo Teams. | 
+ | Pianificazione delle riunioni    | Gli utenti possono pianificare riunioni in Teams o Skype for Business. Per impostazione predefinita, verranno visualizzati entrambi i componenti aggiuntivi in Outlook. È possibile impostare criteri di riunione di Teams per controllare se gli utenti possono usare solo il componente aggiuntivo Riunione di Teams o entrambi i componenti aggiuntivi Riunione Teams e Riunione Skype for Business. Per altre informazioni, vedere [Impostare il provider di riunioni per gli utenti in modalità Isole.](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode) |     Gli utenti pianificano solo riunioni in Teams. In Outlook è disponibile solo il componente aggiuntivo Teams. | 
 
 La tabella seguente riepiloga i pro e i contro dell'uso del metodo delle funzionalità sovrapposte per eseguire la migrazione dell'organizzazione a Teams.
 
@@ -212,6 +212,6 @@ Dopo aver scelto il percorso di aggiornamento migliore per l'organizzazione, [es
 
 [Impostazione delle impostazioni di coesistenza e aggiornamento](setting-your-coexistence-and-upgrade-settings.md)
 
-[Grant-CsTeamsUpgradePolicy](/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps)
+[Grant-CsTeamsUpgradePolicy](/powershell/module/skype/grant-csteamsupgradepolicy?view=skype-ps&preserve-view=true)
 
 [Uso del servizio di migrazione delle riunioni (MMS)](/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)

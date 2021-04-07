@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata con Microsoft 365 Business Voice.
-ms.openlocfilehash: f60919dccd25231dbdb7e9c2991251bcb3f96700
-ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
+ms.openlocfilehash: 40018ce331dfe8516e00c6781373d528a71e85c5
+ms.sourcegitcommit: 3861d661d32f507bd8479509ed09b1cfcf0b214f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506643"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51607558"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -98,7 +98,7 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 2. Fare clic su **Aggiungi**.
 
-3. Nel riquadro **Aggiungi account risorsa** compilare **Nome** visualizzato , Nome **utente** e scegliere **Coda** di chiamata per il tipo di **account risorsa**.
+3. Nel riquadro **Aggiungi account risorsa** compilare **Nome** visualizzato , Nome **utente** e scegliere **Coda** di chiamata per il tipo di **account risorsa**. Gli agenti visualizzano il nome visualizzato quando ricevono una chiamata in arrivo dalla coda.
 
     ![Screenshot dell'interfaccia utente per l'aggiunta di un account di risorsa](../media/resource-account-add-cq.png)
 
@@ -112,7 +112,7 @@ Il nuovo account verrà visualizzato nell'elenco degli account.
 
 È necessario assegnare una licenza Sistema telefonico - Utente virtuale di *Microsoft 365* all'account della risorsa.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
+1. Nell'elenco Utenti attivi dell'interfaccia  di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
 
 2. Nella scheda **Licenze e app,** in **Licenze,** selezionare Sistema telefonico **Microsoft 365 - Utente virtuale.**
 
@@ -126,7 +126,7 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 1. Nell'interfaccia di amministrazione di Teams espandere **Voce,** fare clic su **Code di chiamata** e quindi su **Aggiungi.**
 
-1. Digitare un nome per la coda di chiamata. Gli agenti visualizzano questo nome quando ricevono una chiamata in arrivo dalla coda.
+1. Digitare un nome per la coda di chiamata.
 
 2. Fare **clic su Aggiungi account,** cercare l'account della risorsa che si vuole usare con questa coda di chiamata, fare clic su Aggiungi e quindi su **Aggiungi.** 
 
@@ -212,7 +212,7 @@ Scegliere come gestire le chiamate che superano il massimo in coda.
 
 Scegli cosa vuoi fare quando le chiamate sono in coda da troppo tempo.
 
-1. Impostare il **Timeout chiamata: tempo di attesa massimo**.
+1. Impostare il **tempo di attesa massimo**.
 
 2. Scegliere l'operazione da eseguire quando si verifica il timeout di una chiamata. È possibile disconnettere la chiamata o reindirizzarla. È consigliabile reindirizzare la chiamata a una delle destinazioni seguenti:
     - **Persona dell'organizzazione,** una persona dell'organizzazione che è in grado di ricevere chiamate vocali
