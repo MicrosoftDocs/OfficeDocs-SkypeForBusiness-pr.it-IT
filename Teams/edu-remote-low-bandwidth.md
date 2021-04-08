@@ -18,16 +18,16 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b254bfb89a96efed65e2c1fdba1c345825d81dc2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 17520645f23500550c6bc991c9d25ad2f72b2b6e
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111082"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598425"
 ---
 # <a name="help-for-low-bandwidth-situations-for-teams-for-edu"></a>Indicazioni per le situazioni di larghezza di banda ridotta per Teams per l'istruzione
 
-Quando si lavora in Microsoft Teams, molti elementi di rete possono incidere sulle prestazioni e la larghezza di banda ridotta è uno dei fattori che possono sembrare totalmente al di fuori del proprio controllo. Tenere in considerazione gli aspetti seguenti:
+Quando si lavora in Microsoft Teams, molti elementi di rete possono incidere sulle prestazioni e la larghezza di banda ridotta è uno dei fattori che possono sembrare totalmente al di fuori del proprio controllo. Prendere in considerazione le situazioni seguenti:
 
 - Connessione Internet a bassa velocità per l'istituto di istruzione.
 - Connessione Internet a bassa velocità per uno o più studenti.
@@ -40,14 +40,14 @@ Questo articolo illustra le procedure consigliate da seguire per svariate attivi
 > [!IMPORTANT]
 > Leggere le informazioni su [Come viene usata la memoria in Microsoft Teams](teams-memory-usage-perf.md). Ai problemi di larghezza di banda ridotta potrebbero infatti accompagnarsi problemi di risorse nel dispositivo. Se si cercano indicazioni sulla rete per Microsoft Teams, vedere [Preparare la rete dell'organizzazione per Microsoft Teams](prepare-network.md).
 
-## <a name="resolving-low-bandwidth-issues-for-itadmins"></a>Risoluzione dei problemi di larghezza di banda ridotta per amministratori IT
+## <a name="resolving-low-bandwidth-issues-for-admins"></a>Risoluzione dei problemi di larghezza di banda ridotta per amministratori
 
-Per gli amministratori IT, l'aspetto più importante da ricordare è che, sebbene esistano soluzioni rapide ai problemi di larghezza di banda estesi, è consigliabile valutare i casi con attenzione, perché alcuni problemi possono essere risolti a livello di singolo docente o anche di singolo studente o genitore.
+La cosa importante da ricordare, come amministratore IT, è che sebbene ci siano soluzioni per problemi di larghezza di banda ridotta ampiamente diffuse che risolvono rapidamente i problemi, le soluzioni devono essere valutate con attenzione. Alcuni problemi possono essere risolti con una particolare attenzione da parte degli educatori o persino a livello di studente/genitore.
 
 In breve, agire come amministratore IT ha senso se i problemi di larghezza di banda riguardano un ampio gruppo di studenti e anche se le azioni intraprese a livello di studente o docente non sono state utili.
 
 > [!NOTE]
-> Se si ha tempo da investire, la [Guida sul controllo della qualità dell'esperienza](quality-of-experience-review-guide.md) è una lettura utile, che non è specifica per il settore dell'istruzione, ma offre comunque informazioni preziose. Questo permetterà agli amministratori IT esperti di analizzare a fondo l'esperienza dei propri insegnanti e studenti.
+> Se si ha tempo da investire, la [Guida sul controllo della qualità dell'esperienza](quality-of-experience-review-guide.md) è una lettura utile, che non è specifica per il settore dell'istruzione, ma offre comunque informazioni preziose. Questa guida permetterà agli amministratori IT esperti di analizzare a fondo l'esperienza dei propri insegnanti e studenti.
 
 ### <a name="meetings-and-video"></a>Riunioni e video
 
@@ -55,20 +55,20 @@ Una delle aree di attenzione principali per quanto riguarda i problemi di larghe
 
 #### <a name="meeting-policies"></a>Criteri di riunione
 
-Per quanto riguarda le riunioni, l'area in cui si concentrano i problemi dovuti a larghezza di banda insufficiente è quella del video. Fortunatamente, Teams si adatta automaticamente alla larghezza di banda rilevata e l'amministratore IT può anche impostare opzioni dei criteri a livello di organizzatore e/o di utente, mirate a offrire a tutti la migliore esperienza possibile in base alla larghezza di banda disponibile in un determinato momento.
+Per quanto riguarda le riunioni, l'area in cui si concentrano i problemi dovuti a larghezza di banda insufficiente è quella del video. Oltre al fatto che Teams è in grado di adattarsi automaticamente alla larghezza di banda rilevata, l'amministratore IT può anche impostare opzioni dei criteri a livello di organizzatore e/o di utente. Queste opzioni consentono di offrire a tutti la migliore esperienza possibile in base alla larghezza di banda disponibile in un determinato momento.
 
 Alcuni degli elementi che è possibile impostare tramite criteri includono:
 
 - Disabilitazione completa del video, in modo che nessuno possa abilitarlo.
-- Velocità in bit dei contenuti multimediali (si imposta a livello di utente).
+- Velocità in bit dei contenuti multimediali (questa opzione è impostata a livello di utente).
 
-Per altre informazioni sulle opzioni disponibili e per informazioni dettagliate sui criteri che può essere necessario impostare per le riunioni e il video, vedere [Impostazioni dei criteri per le riunioni in Teams: audio e video](./meeting-policies-in-teams.md#meeting-policy-settings---audio--video).
+Per altre informazioni sulle opzioni disponibili e per informazioni dettagliate sui criteri che può essere necessario impostare per le riunioni e il video, vedere [Impostazioni dei criteri per le riunioni in Teams: audio e video](meeting-policies-audio-and-video.md).
 
 #### <a name="screen-sharing-policies"></a>Criteri di condivisione dello schermo
 
-In altri casi, è possibile che i docenti stiano condividendo l'intero schermo con gli studenti, mentre la condivisione deve essere limitata a un'applicazione rilevante per la lezione in corso. Questo può essere impostato anche tramite criteri, se è un metodo preferibile rispetto a lasciare la scelta ai singoli docenti.
+In altri casi, è possibile che i docenti stiano condividendo l'intero schermo con gli studenti, mentre la condivisione deve essere limitata a un'applicazione rilevante per la lezione in corso. Questa opzione può essere impostata anche tramite criteri, se è un metodo preferibile rispetto a lasciare la scelta ai singoli docenti.
 
-Per informazioni sul modo in cui è possibile limitare la condivisione dello schermo con le impostazioni dei criteri, vedere [Impostazioni dei criteri per le riunioni in Teams: condivisione dello schermo](./meeting-policies-in-teams.md#meeting-policy-settings---audio--video).
+Per informazioni sul modo in cui è possibile limitare la condivisione dello schermo con le impostazioni dei criteri, vedere [Impostazioni dei criteri per le riunioni in Teams: audio e video](meeting-policies-audio-and-video.md).
 
 #### <a name="dial-in-number-for-meetings"></a>Numero telefonico di accesso esterno per le riunioni
 
@@ -91,6 +91,6 @@ Per altre informazioni, vedere come [Usare Teams per la didattica quando la larg
 
 Ci sono anche situazioni, di cui è necessario discutere in modo proattivo con i docenti, in cui il problema della larghezza di banda può essere sul versante dello studente. Ad esempio, un numero elevato di studenti riesce a guardare le lezioni video senza problemi, mentre un numero limitato di studenti ha difficoltà.
 
-Non è ragionevole aspettarsi che tutti i genitori siano in grado di risolvere questi problemi, inoltre i problemi di larghezza di banda ridotta possono essere al di fuori del controllo di uno studente o di un genitore. L'abitazione potrebbe non avere accesso alla banda larga, possono esserci molte persone nell'area immediatamente limitrofa che consumano larghezza di banda, potrebbe esserci instabilità della rete Internet e così via.
+Non è ragionevole aspettarsi che molti genitori siano in grado di risolvere questi problemi. I problemi di larghezza di banda ridotta possono essere al di fuori del controllo di uno studente o di un genitore. L'abitazione potrebbe non avere accesso alla banda larga, possono esserci molte persone nell'area immediatamente limitrofa che consumano larghezza di banda, potrebbe esserci instabilità della rete Internet e così via.
 
 L'articolo [Usare Teams per la didattica quando la larghezza di banda è ridotta](https://support.office.com/article/use-teams-for-schoolwork-when-bandwidth-is-low-5c5675f7-1b55-471a-9daa-ec1e6df38262) raccoglie consigli utili per genitori e studenti, in caso di problemi.

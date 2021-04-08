@@ -19,15 +19,15 @@ ms.custom:
 - ms.teamsadmincenter.dashboard.allteamsdocuments
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e93e30c2c6eeffc2232b6d9049af8d1224f24532
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 3e0e20b4b9b696d7fc23c227afcd67d2132c5952
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094402"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598395"
 ---
 # <a name="welcome-to-microsoft-teams"></a>Benvenuto in Microsoft Teams
-Se si ricopre il ruolo di amministratore di Microsoft Teams nell'organizzazione, questo è il posto giusto. Una volta pronti a lavorare con Teams, iniziare con [Come distribuire Teams](./deploy-overview.md).
+Se si ricopre il ruolo di amministratore di Microsoft Teams nell'organizzazione, questo è il posto giusto. Quando si è pronti a iniziare a usare Teams, iniziare con [Come implementare Teams](./deploy-overview.md) e [Configurare la collaborazione sicura con Microsoft 365 e Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams).
 
 Se si è un nuovo utente di Teams e si desiderano ulteriori informazioni, vedere il breve video di 55 secondi [Benvenuto in Teams](https://www.youtube.com/embed/s3aQV3T0D6c).
 

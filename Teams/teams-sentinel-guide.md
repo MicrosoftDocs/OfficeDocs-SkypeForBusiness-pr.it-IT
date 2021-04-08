@@ -19,14 +19,17 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 320accf1e0588024e72d69dcbb4af45c0a6765eb
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1075a2c345bd866266b175a4b62432e9f819b330
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098182"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598525"
 ---
 # <a name="azure-sentinel-and-microsoft-teams"></a>Azure Sentinel e Microsoft Teams
+
+> [!IMPORTANT]
+> Azure Sentinel ha ora un connettore integrato. Per altre informazioni, vedere [Collegare i log di Office 365 ad Azure Sentinel](/azure/sentinel/connect-office-365). Questa è la route consigliata per raccogliere questi log e sostituisce i metodi di raccolta descritti di seguito.
 
 Teams riveste un ruolo centrale sia nella comunicazione che nella condivisione di dati nel cloud di Microsoft 365. Poiché il servizio Teams è in contatto con così tante tecnologie sottostanti nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda la *ricerca nei log*, ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
 
@@ -48,7 +51,7 @@ Questa sezione include tre parti:
 2. Registrazione di un'app in **Microsoft Azure** per consentire l'autenticazione e l'autorizzazione per la raccolta di log.
 3. Registrazione della sottoscrizione per l'API che consentirà la raccolta di log con l'API Microsoft 365 tramite **PowerShell**.
 
-### <a name="enable-audit-logs-in-m365"></a>Abilitare i log di controllo in Microsoft 365
+### <a name="enable-audit-logs-in-microsoft-365"></a>Abilitare i log di controllo in Microsoft 365
 
 Poiché Teams registra le attività tramite Microsoft 365, i log di controllo non vengono raccolti per impostazione predefinita. Attivare questa funzionalità seguendo [questi passaggi](/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&viewFallbackFrom=o365-worldwide%c2%a0). I dati di Teams vengono raccolti nel log di controllo di Microsoft 365 in *Audit.General*.
 
@@ -76,7 +79,7 @@ Autenticare e autorizzare un'app di Azure Active Directory (Azure AD) per la rac
 
 ### <a name="register-the-api-with-powershell-to-collect-teams-logs"></a>Registrare l'API con PowerShell per raccogliere i log di Teams
 
-Il passaggio finale della configurazione consiste nel raccogliere e registrare la sottoscrizione dell'API in modo che sia possibile raccogliere i dati di log. Questa operazione viene eseguita tramite chiamate REST di PowerShell all'API Office 365 Management Activity.
+Il passaggio finale della configurazione consiste nel raccogliere e registrare la sottoscrizione dell'API in modo che sia possibile raccogliere i dati di log. Questa operazione viene eseguita tramite chiamate REST di PowerShell all'API Microsoft 365 Management Activity.
 
 Prepararsi a inserire l'**ID applicazione (client)**, il nuovo **segreto client**, il **dominio URL per Microsoft 365** e l'**ID directory (tenant)** nel cmdlet di PowerShell di seguito.
 

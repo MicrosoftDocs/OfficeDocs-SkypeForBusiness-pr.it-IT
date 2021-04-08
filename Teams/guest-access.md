@@ -19,16 +19,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 59e0fd09721e488a1806cc7a4ffcf527d34b029a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: d927c601380223b3381a65e09549a632ed32903e
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51112422"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51598535"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
-Tramite l’accesso guest, è possibile consentire l'accesso a team, documenti nei canali, risorse, chat e applicazioni alle persone esterne all’organizzazione, pur mantenendo il totale controllo dei dati aziendali.
+Tramite l’accesso guest, è possibile consentire l'accesso a team, documenti nei canali, risorse, chat e applicazioni alle persone esterne all’organizzazione, pur mantenendo il totale controllo dei dati aziendali. Vedere [Configurare la collaborazione sicura con Microsoft 365 e Microsoft Teams](/microsoft-365/solutions/setup-secure-collaboration-with-teams).
 
 > [!NOTE]
 > Se si vuole semplicemente trovare, chiamare, chattare e configurare riunioni con persone di altre organizzazioni, usare l’[accesso esterno](manage-external-access.md).

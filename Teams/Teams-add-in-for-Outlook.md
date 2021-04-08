@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1def8b943070fc5c7ed1bf2fb3279e0e61a477b6
-ms.sourcegitcommit: f223b5f3735f165d46bb611a52fcdfb0f4b88f66
+ms.openlocfilehash: 4ce2e7ff2822e87d3a2a4784a10d83a4c12ced8f
+ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/06/2021
-ms.locfileid: "51593774"
+ms.locfileid: "51598385"
 ---
 <a name="use-the-teams-meeting-add-in-in-outlook"></a>Usare il componente aggiuntivo Riunione di Teams in Outlook
 =======================================
@@ -115,7 +115,7 @@ A causa di alcune limitazioni nel rilascio iniziale, Outlook Mobile supporta sol
 
 Come amministratore, è possibile configurare un'impostazione criterio per le riunioni di Teams per controllare quale componente aggiuntivo per le riunioni di Outlook viene usato per *gli utenti in modalità Isole*. È possibile specificare se gli utenti possono usare solo il componente aggiuntivo Riunione di Teams o sia Riunione di Teams che Riunione di Skype for Business per programmare le riunioni in Outlook.
 
-È possibile applicare questo criterio agli utenti in modalità Isole e hanno impostato il parametro **AllowOutlookAddIn** su **True** nel loro criterio per le riunioni di Teams. Per i passaggi su come configurare questo criterio, vedere [Configurare il provider per le riunioni per gli utenti in modalità Isole](meeting-policies-in-teams.md#meeting-policy-settings---meeting-provider-for-islands-mode).
+È possibile applicare questo criterio agli utenti in modalità Isole e hanno impostato il parametro **AllowOutlookAddIn** su **True** nel loro criterio per le riunioni di Teams. Per la procedura su come impostare questo criterio, vedere [Impostazioni dei criteri di riunione - Generale](meeting-policies-in-teams-general.md#meeting-provider-for-islands-mode).
 
 ## <a name="other-considerations"></a>Altre considerazioni
 
@@ -142,7 +142,7 @@ In alternativa, eseguire manualmente i seguenti passaggi:
 
 - Gli utenti di Windows 7 sono tenuti a installare l'[aggiornamento per Universal C Runtime in Windows](https://support.microsoft.com/help/2999226/update-for-universal-c-runtime-in-windows) affinché funzioni il componente aggiuntivo Riunione di Teams.
 - Controllare che l'utente disponga di un criterio di aggiornamento di Teams che abiliti la programmazione delle riunioni in Teams. Vedere [Aggiornare da Skype for Business a Teams](https://docs.microsoft.com/microsoftteams/upgrade-to-teams-on-prem-overview#meetings) per ulteriori informazioni.
-- Controllare che l'utente disponga di un criterio di Riunione di Teams che consenta il componente aggiuntivo per Outlook. Vedere [Gestire i criteri di riunione in Teams](./meeting-policies-in-teams.md#allow-the-outlook-add-in) per ulteriori dettagli.
+- Controllare che l'utente disponga di un criterio di Riunione di Teams che consenta il componente aggiuntivo per Outlook. Per altri dettagli, vedere [Impostazioni dei criteri di riunione - Generale](./meeting-policies-in-teams-general.md#allow-the-outlook-add-in).
 - Assicurarsi che l'utente abbia installato il client desktop di Teams. Il componente aggiuntivo per le riunioni non verrà installato se si utilizza solo il client Web di Teams.
 - Assicurarsi che l'utente abbia installato Outlook 2013 o versioni successive.
 - Assicurarsi che l'utente disponga delle autorizzazione per eseguire regsvr32.exe.
