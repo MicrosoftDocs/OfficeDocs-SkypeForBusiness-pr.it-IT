@@ -13,12 +13,12 @@ ms.collection:
 description: Informazioni su come gestire Microsoft Teams usando Teams PowerShell.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bd302e2e5572c98e3338f0803155876e1c7689fc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 8494f7951a051f95f9b934d04f274a020446b6cd
+ms.sourcegitcommit: b52b6aba289396c4fc10dd856817137eb1bc1f67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094146"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51617748"
 ---
 # <a name="manage-teams-with-microsoft-teams-powershell"></a>Gestire Teams con Microsoft Teams PowerShell
 
@@ -33,7 +33,7 @@ I cmdlet per la creazione e la gestione dei team sono disponibili nel [modulo di
 Teams è supportato da Gruppi di Office 365, quindi quando si crea un team si crea un gruppo. Sono disponibili un set di cmdlet per il funzionamento nel team di base e le relative impostazioni ( , , ), la gestione degli utenti del team ( , ), nonché i cmdlet per la gestione dei canali ``new-team`` del team ( , ``get-team``  ``set-team`` ``add-teamuser`` ``remove-teamuser`` ``new-teamchannel`` ``remove-teamchannel`` ). Tutti questi cmdlet possono essere eseguiti come utenti finali, ma funzionano solo nei team di cui si è proprietari o di cui si è membri. Gli amministratori globali o gli amministratori dei servizi di Teams possono agire su tutti i team dell'organizzazione.
 
 ```powershell
-New-Team -Name "Contoso Marketing" -Description "Collaboration space for Contoso's Marketing department"
+New-Team -DisplayName "Contoso Marketing" -Description "Collaboration space for Contoso's Marketing department"
 ```
 
 > Il **Valore GroupId** usato nei cmdlet del modulo di PowerShell di Microsoft Teams è uguale alla proprietà **Identity** restituita da nel modulo ``Get-UnifiedGroup`` di PowerShell di Exchange.

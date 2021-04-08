@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, presentazioni di PowerPoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2922f22ec0ea7db095c63ce05f9d37752ba134a4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f5015317fb2aff22cdc53fb30f62e6d4ea8c2237
+ms.sourcegitcommit: b52b6aba289396c4fc10dd856817137eb1bc1f67
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094568"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51617799"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Guida introduttiva alla formazione per gli amministratori per Microsoft Teams
 
@@ -75,6 +75,7 @@ Usare le risorse di formazione per istruirsi su Teams, insegnare ad altri utenti
 | Titolo                                                                       | Astratto                                                                                                                                                                                                               |  Collegamento alla Guida                             |
 |-----------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | Gestione di identità e accessi & Threat Protection per Teams                   | Informazioni su come usare le interfaccia di amministrazione Microsoft e PowerShell per configurare i criteri di accesso e identità e abilitare Office 365 Advanced Threat Protection per Teams                                                            | [Guida alla sicurezza di Teams](https://aka.ms/teamsesecurityinteractiveguide)         |
+| Criteri di prevenzione della perdita dei dati per Microsoft Teams                     | Informazioni su come aggiungere Microsoft Teams a un criterio di prevenzione della perdita dei dati esistente e creare un nuovo criterio, in base a un modello o completamente personalizzato in base alle esigenze di protezione dei dati dell'organizzazione.                        | [Guida alla prevenzione della perdita dei dati di Teams](https://aka.ms/teamsdlpguide)         |
 | Gestione della conformità in Teams                                                | Usare le centri di amministrazione di Microsoft 365 Security, Microsoft 365 Compliance e Microsoft Teams, oltre a Windows PowerShell per gestire e configurare i criteri e le impostazioni di Microsoft Teams di un'organizzazione di Office 365. | [Guida alla gestione della conformità in Teams](https://aka.ms/complianceinteamsinteractiveguide)      |
 | Teams Advisor: Distribuzione di chat, team, canali e app in Microsoft Teams | Scopri come usare l'advisor di Teams per valutare l'ambiente e creare un piano per la distribuzione di chat, team, canali e app.                                                                                         |  [Guida di Teams Advisor](https://aka.ms/MicrosoftTeamsAdvisorInteractiveguide)  |
 | Snellire l'amministrazione di Teams con PowerShell e gruppi dinamici        | Convertire un gruppo di Office 365 dall'appartenenza statica a un gruppo dinamico e usare Windows PowerShell per assegnare un nuovo criterio di autorizzazione app a tutti i membri.                                                                         |  [Guida all'amministrazione di Teams](https://aka.ms/StreamliningTeamsadminInteractiveGuide) |
@@ -85,6 +86,7 @@ Usare le risorse di formazione per istruirsi su Teams, insegnare ad altri utenti
 | Configurazione e distribuzione di riunioni di Microsoft Teams                          | Eseguire il processo di distribuzione del carico di lavoro delle riunioni per Microsoft Teams.                                                                                                                                       |  [Guida alla configurazione e alla distribuzione di riunioni di Microsoft Teams](https://aka.ms/TeamsMeetingsInteractiveGuide)          |
 | Configurare le audioconferenze per Microsoft Teams                            | Scopri le funzionalità di audioconferenza in Teams e scopri come assegnare bridge di conferenza e numeri di telefono con accesso esterno.                                                                                          |  [Guida alla configurazione di audioconferenze per Microsoft Teams](https://aka.ms/AudioConferencingInteractiveGuide)      |
 | Configurazione di Microsoft Teams per Firstline Worker                           | Scopri come configurare e distribuire l'ambiente Microsoft Teams giusto per la tua Firstline Workforce.                                                                                                                  | [Guida alla configurazione di Microsoft Teams per Firstline Workers](https://aka.ms/ConfigFLWInteractiveGuide)              |
+| Identity for the frontline workforce: Empower IT, managers, and frontline workers                    | Informazioni su come integrare Microsoft Teams con i sistemi hr esistenti, configurare la gestione delle identità con delega leggera e configurare l'accesso semplificato e transizioni fluide per gli utenti che usano dispositivi condivisi.                                                                                                                  | [Guida all'identità dei lavoratori in prima linea](https://aka.ms/FLWIdentityIG)              |
 | Distribuzione delle chat room di Microsoft Teams                           | Informazioni su come creare e configurare un account da usare con Microsoft Teams Rooms e gestire il dispositivo nell'interfaccia di amministrazione di Microsoft Teams.                                                                                                                  | [Distribuzione delle chat room di Microsoft Teams](https://aka.ms/teamsroomslab)              |
 
 <h2>Guide introduttive</h2>
