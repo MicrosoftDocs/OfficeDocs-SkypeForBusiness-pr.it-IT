@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e5f19aa6cfee7d4cce19ef5a0936a5a72e954648
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9749484344d969671e8a0195de3386a57388d275
+ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119345"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51637878"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
@@ -87,6 +87,10 @@ Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $T
 ```PowerShell
 Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $True -SdnProviderName riverbed -SdnApiTemplateUrl "{API template URL provided by Riverbed}" -SdnApiToken {API token GUID provided by Riverbed}
 ```
+**Ramp** 
+```PowerShell
+Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $True -SdnProviderName ramp -SdnRuntimeConfiguration "{Configuration provided by RAMP}"
+```
 
 Per altre informazioni, vedere [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps).
 
@@ -95,6 +99,9 @@ Per altre informazioni, vedere [Set-CsTeamsMeetingBroadcastConfiguration](/power
 
 >[!Note]
 > Il passaggio dall'utilizzo di Microsoft Stream a [ OneDrive for Business e SharePoint per le registrazioni delle riunioni ](../tmr-meeting-recording-change.md) sarà graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni.
+
+>[!Note]
+> La soluzione eCDN scelta è soggetta alle condizioni di servizio e all'informativa sulla privacy del provider di terze parti selezionato, che regolano l'uso della soluzione del provider eCDN. L'uso della soluzione del provider eCDN non sarà soggetto alle condizioni per i contratti multilicenza Microsoft o ai Termini dei Servizi online. Se non si accettano le condizioni del provider di terze parti, non abilitare la soluzione eCDN in Microsoft Teams.
 
 ### <a name="related-topics"></a>Argomenti correlati
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)

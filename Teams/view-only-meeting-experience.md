@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 25cd674e5f93e4f52f0a2cecd2acff97e4844834
-ms.sourcegitcommit: f4393657584666842e874d526a08cfa1137b911d
+ms.openlocfilehash: 4822628288ea6e1727a68e551a725f278e4dcc6e
+ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215331"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51637868"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -105,9 +105,6 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 - Partecipare alla sala di sola visualizzazione usando il sistema Microsoft Teams Rooms o i servizi CVI (Cloud Video Interop).
 - Condividere l'audio o il video.
 - Leggere o partecipare alla chat della riunione.
-  - I primi 1000 (o 300 a seconda del limite della riunione principale) gli utenti invitati alla riunione verranno aggiunti alla chat.
-  - Anche se gli utenti di sola visualizzazione non vedono la chat nella riunione, potrebbero comunque essere in grado di chattare nell'app principale se sono state le prime 350 persone invitate.
-  - Al contrario, se un utente interattivo non fa parte dei primi 350 utenti invitati alla riunione, non otterrà accesso alla chat della riunione sia nell'app teams principale che nella riunione.
 - Visualizzare il video trasmesso dai partecipanti alla riunione, se non sono i relatori attivi.
 - Vedere File di PowerPoint condivisi con la funzionalità PowerPoint Live o singole condivisioni di applicazioni ,ad esempio desktop o condivisione dello schermo.
 - Alzare la mano durante la riunione.

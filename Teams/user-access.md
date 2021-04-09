@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 29cf3f6816b3c1e0b00026b1ba4ad961a6a92aa6
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 770dcea62d6f3dc65f576a3d64a520dd4de2ecad
+ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51093540"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51637728"
 ---
 # <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
@@ -57,6 +57,9 @@ I passaggi variano a seconda che si usi la **pagina Licenze** o la **pagina Uten
 |![Screenshot della licenza di Teams abilitata per un utente](media/assign-teams-licenses-1.png)    | ![Screenshot della licenza di Teams abilitata per un utente](media/assign-teams-licenses-2.png)        |
 
 ### <a name="remove-a-teams-license"></a>Rimuovere una licenza di Teams
+
+> [!IMPORTANT]
+> La disabilitazione di uno SKU di Teams richiede circa 24 ore.
 
 Quando rimuovi una licenza di Teams da un utente, Teams viene disabilitato per quell'utente e non sarà più visualizzato nell'icona di avvio delle app o nella home page. Per la procedura dettagliata, vedere [Annullare l'assegnazione di licenze da parte degli utenti.](/microsoft-365/admin/manage/remove-licenses-from-users)
 

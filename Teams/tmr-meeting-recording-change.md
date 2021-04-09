@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c57b925875308b7cdd9e654103e8d11050ce082d
-ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
+ms.openlocfilehash: 23be0069ffe862bcd5295493c8a6fc6acaa5f55d
+ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506669"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51637818"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -38,6 +38,11 @@ ms.locfileid: "51506669"
 |Distribuzione incrementale a partire dal 7 luglio 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare nuove registrazioni delle riunioni in Microsoft Stream (classica); Tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate in OneDrive for Business e SharePoint, anche se i criteri delle riunioni di Teams sono stati modificati in Stream.<br><br> È consigliabile che i clienti, per controllare meglio la modifica all'interno dell'organizzazione, acconsentano esplicitamente ogni volta che si è a proprio agio con la modifica, invece di attendere che si ripeta. |
 
 Microsoft Teams ha un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dal classico Microsoft Stream al nuovo [stream,](/stream/streamnew/new-stream)questo metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
+
+> [!NOTE]
+> Se la registrazione di una riunione di Teams non viene caricata correttamente in OneDrive/SharePoint, la registrazione verrà salvata temporaneamente in Servizi multimediali di Azure (AMS). Dopo l'archiviazione in AMS, non vengono effettuati tentativi per caricare automaticamente la registrazione in OneDrive/SharePoint o stream.
+
+Le registrazioni delle riunioni archiviate in AMS sono disponibili per 21 giorni prima di essere eliminate automaticamente. Gli utenti possono scaricare il video da AMS se devono conservarne una copia.
 
 I vantaggi dell'uso di OneDrive for Business e SharePoint per l'archiviazione delle registrazioni includono:
 
@@ -63,29 +68,29 @@ Per altre informazioni, vedere "Novità di Microsoft Teams Meeting Recordings".
 L'opzione di registrazione della riunione è un'impostazione a livello di criteri di Teams. L'esempio seguente mostra come impostare i criteri globali. Assicurarsi di impostare l'opzione di registrazione della riunione per i criteri assegnati agli utenti.
 
 > [!Note]
-> La propagazione delle modifiche ai criteri delle riunioni di Teams può richiedere del tempo. Controllare di nuovo dopo alcune ore di impostazione, quindi disconnettersi e accedere di nuovo.
+> La propagazione delle modifiche ai criteri delle riunioni di Teams può richiedere del tempo. Riparti dopo alcune ore dall'impostazione, quindi disconnenneti e accedi di nuovo all'app Desktop di Teams o riavvia semplicemente il computer.
 
 1. Installare PowerShell di Teams.
 
    > [!NOTE]
    > Skype for Business Online Connector fa attualmente parte dell'ultimo modulo di PowerShell di Teams. Se si usa l'ultima versione pubblica di Teams PowerShell, non è necessario installare Skype for Business Online Connector. Vedere [Gestire Skype for Business online con PowerShell.](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell?preserve-view=true&view=o365-worldwide)
 
-1. Avviare PowerShell come amministratore.
+2. Avviare PowerShell come amministratore.
 
-2. Installare [il modulo di PowerShell di Teams](./teams-powershell-install.md).
+3. Installare [il modulo di PowerShell di Teams](./teams-powershell-install.md).
 
-3. Importare il modulo MicrosoftTeams e accedere come amministratore di Teams.
+4. Importare il modulo MicrosoftTeams e accedere come amministratore di Teams.
 
 
-```powershell
-  # When using Teams PowerShell Module
-
+   ```powershell
+   # When using Teams PowerShell Module
+   
    Import-Module MicrosoftTeams
    $credential = Get-Credential
    Connect-MicrosoftTeams -Credential $credential
-```
+   ```
 
-4. Usare [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) per impostare criteri riunione di Teams per la transizione dallo spazio di archiviazione stream a OneDrive for Business e SharePoint.
+5. Usare [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) per impostare criteri riunione di Teams per la transizione dallo spazio di archiviazione stream a OneDrive for Business e SharePoint.
 
    ```powershell
    Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "OneDriveForBusiness"
@@ -146,6 +151,10 @@ Poiché i video sono come qualsiasi altro file in OneDrive for Business e ShareP
 
 - Per le riunioni del Canale, le autorizzazioni vengono ereditate dall'elenco dei proprietari e dei membri nel canale.
 
+> [!NOTE]
+> Non si riceverà un messaggio di posta elettronica al termine del salvataggio della registrazione, ma la registrazione verrà visualizzata nella chat della riunione al termine. Questa operazione si verifica molto più velocemente di quanto non accadesse in Stream in precedenza.
+> È possibile controllare con chi si condivide la registrazione, ma non è possibile impedire agli utenti con accesso condiviso di scaricare la registrazione.  
+
 **Come si gestiscono le didascalie?**
 
 I sottotitoli codificati per le registrazioni delle riunioni di Teams saranno disponibili durante la riproduzione solo se l'utente aveva attivato la trascrizione al momento della registrazione. Gli amministratori devono [attivare la trascrizione della registrazione tramite criteri]( https://docs.microsoft.com/microsoftteams/cloud-recording#turn-on-or-turn-off-recording-transcription) per assicurarsi che gli utenti hanno la possibilità di registrare le riunioni con la trascrizione.
@@ -155,6 +164,9 @@ I sottotitoli consentono di creare contenuti inclusivi per gli utenti di tutte l
 I sottotitoli codificati sono supportati per le registrazioni delle riunioni di Teams per 60 giorni dalla registrazione della riunione.
 
 I sottotitoli codificati non sono completamente supportati se la registrazione delle riunioni di Teams viene spostata o copiata dalla posizione originale in OneDrive for Business o SharePoint.
+
+> [!NOTE]
+> Ci saranno sottotitoli codificati solo in inglese (la trascrizione della riunione non è ancora disponibile in GCC).
 
 **In che modo verrà influenzata la quota di archiviazione?**
 

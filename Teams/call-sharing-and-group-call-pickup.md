@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: La condivisione delle chiamate e il ritiro delle chiamate di gruppo consentono agli utenti di condividere le chiamate in arrivo con i colleghi in modo che le chiamate possano essere acquisite quando l'utente non è disponibile.
-ms.openlocfilehash: 1ec3c389bf2eb69f30e13ebbba6c7d5d1d5fe38c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 88c8d41eb0cf58413df995274bb9accd50b897c9
+ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102792"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51637828"
 ---
 # <a name="call-sharing-and-group-call-pickup-in-microsoft-teams"></a>Condivisione delle chiamate e ritiro delle chiamate di gruppo in Microsoft Teams
 
@@ -43,7 +43,7 @@ Per condividere le chiamate con altri utenti, un utente crea un gruppo di chiama
 
 ## <a name="license-required"></a>Licenza richiesta
 
-Gli utenti devono essere VoIP aziendale abilitati per configurare e usare la condivisione delle chiamate e il ritiro delle chiamate di gruppo. Per altre informazioni sul modello di licenza, vedere Descrizione [del servizio Microsoft Teams.](/office365/servicedescriptions/teams-service-description)
+Agli utenti deve essere assegnata una licenza Di sistema telefonico di Microsoft Teams per configurare e usare la condivisione delle chiamate e il ritiro delle chiamate di gruppo. Per altri dettagli sul modello di licenza, vedere Ecco cosa [si ottiene con Sistema telefonico.](https://docs.microsoft.com/MicrosoftTeams/here-s-what-you-get-with-phone-system)
 
 ## <a name="configure-group-call-pickup"></a>Configurare il ritiro delle chiamate di gruppo
 

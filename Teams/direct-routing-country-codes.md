@@ -1,5 +1,5 @@
 ---
-title: Direct Routing country codes
+title: Codici paese routing diretto
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -15,26 +15,29 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo articolo per individuare i codici di paese dei percorsi multimediali per il routing diretto, in modo da poter selezionare il percorso ottimale del supporto.
+description: Leggere questo articolo per individuare i codici paese del percorso multimediale per Direct Routing, in modo da poter selezionare il percorso multimediale ottimale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 69265e797b256186f714e2cd4dcefcb3751c05ee
-ms.sourcegitcommit: a9e16aa3539103f3618427ffc7ebbda6919b5176
+ms.openlocfilehash: 56cdc48b33e048776a43a37864930fc153c47aac
+ms.sourcegitcommit: c80af314f1a573f99dd66858301c004ccc5410d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/27/2020
-ms.locfileid: "43904808"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51648125"
 ---
-# <a name="direct-routing-media-path-country-codes"></a>Direct Routing media path country codes
+# <a name="direct-routing-media-path-country-codes"></a>Codici del paese del percorso multimediale per il routing diretto
 
-Quando si sceglie un percorso di routing per gli elementi multimediali, per impostazione predefinita il routing diretto assegna sempre un data center in base all'indirizzo IP pubblico del controller dei confini della sessione (SBC) e seleziona sempre il percorso più vicino al data center SBC.
+Quando si sceglie un percorso di routing per i supporti multimediali, per impostazione predefinita, Il routing diretto assegna sempre un data center in base all'indirizzo IP pubblico del session border controller (SBC) e seleziona sempre il percorso più vicino al data center SBC.
 
-Tuttavia, in alcuni casi il percorso del supporto predefinito potrebbe non essere il percorso ottimale del supporto; Ad esempio, un indirizzo IP pubblico di un intervallo negli Stati Uniti potrebbe essere assegnato a un indirizzo SBC situato in Europa. 
+Tuttavia, in alcuni casi il percorso multimediale predefinito potrebbe non essere quello ottimale. ad esempio, a un indirizzo IP pubblico di un intervallo degli Stati Uniti potrebbe essere assegnato un indirizzo SBC situato in Europa. 
 
-Usando il parametro -MediaRelayRoutingLocationOverride con i cmdlet New-CsOnlinePSTNGateway e Set-CsOnlinePSTNGateway, è possibile specificare l'area geografica preferita per il traffico multimediale. Ad esempio, il comando seguente specifica che l'area geografica preferita è la Germania:
+Usando il parametro -MediaRelayRoutingLocationOverride con i cmdlet New-CsOnlinePSTNGateway e Set-CsOnlinePSTNGateway, è possibile specificare l'area preferita per il traffico multimediale. Ad esempio, il comando seguente specifica che l'area preferita è la Germania:
 
 Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com –MediaRelayRoutingLocationOverride DE 
 
-Si noti che Microsoft consiglia di impostare questo parametro solo se i registri delle chiamate indicano chiaramente che l'assegnazione predefinita del data center per il percorso del supporto non usa il percorso più vicino al data center SBC. 
+Si noti che Microsoft consiglia di impostare questo parametro solo se i registri delle chiamate indicano chiaramente che l'assegnazione predefinita del data center per il percorso multimediale non usa il percorso più vicino al data center SBC. 
+
+> [!NOTE]
+> -MediaRelayRoutingLocationOverride: questo comando non è disponibile per l'uso in scenari di routing diretto.
  
 ## <a name="country-code-reference-table"></a>Tabella di riferimento del codice paese
 
@@ -49,9 +52,9 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Samoa americane  | AS |
 | Andorra         | Active Directory |
 | Angola          | AO |
-| Anguilla        | IA |
+| Anguilla        | Intelligenza artificiale |
 | Antartide      | AQ | 
-| Antigua e Barbuda | AG |
+| Antigua e Barbuda | Gruppo di disponibilità |
 | Argentina       | AR |
 | Armenia         | AM |
 | Aruba           | AW |
@@ -59,7 +62,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Austria         | AT |
 | Azerbaigian      | AZ |
 | Bahamas         | BS |
-| Bahrein         | PIÙ.SE |
+| Bahrein         | BH |
 | Bangladesh      | BD |
 | Barbados        | BB |
 | Bielorussia         | BY |
@@ -74,12 +77,12 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Botswana        | BW |
 | Isola Bouvet   | BV |
 | Brasile          | BR |
-| Territorio britannico dell'Oceano Indiano | IO |
+| Territorio britannico dell'Oceano Indiano | I/O |
 | Isole Vergini Britanniche | VG |
 | Brunei          | BN |
 | Bulgaria        | BG |
 | Burkina Faso    | BF |
-| Burundi         | BI |
+| Burundi         | Business intelligence |
 | Cabo Verde      | CV |
 | Cambogia        | KH |
 | Camerun        | CM |
@@ -89,7 +92,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Ciad            | TD |
 | Cile           | CL |
 | Cina           | CN |
-| Isola Christmas | CX |
+| Isola di Natale | CX |
 | Isole Cocos (Keeling) | CC |
 | Colombia        | CO |
 | Comore         | KM |
@@ -102,7 +105,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Cuba            | CU |
 | Curacao         | CW |
 | Cipro          | CY |
-| Repubblica Ceca         | CZ |
+| Cecoslovacchia         | CZ |
 | Danimarca         | DK |
 | Gibuti        | DJ |
 | Dominica        | DM |
@@ -122,33 +125,33 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Francia          | FR |
 | Guyana francese   | GF |
 | Polinesia francese | PF |
-| Territori australi francesi | TF |
-| Gabon           | GA |
+| Territori meridionali francesi | TF |
+| Gabon           | Ga |
 | Gambia          | GM |
 | Georgia         | GE |
 | Germania         | DE |
 | Ghana           | GH |
 | Gibilterra       | GI |
 | Grecia          | GR |
-| Groenlandia       | GL |
+| Groenlandia       | Contabilità generale |
 | Grenada         | GD |
-| Guadalupa      | Gp |
+| Guadalupa      | Criteri di gruppo |
 | Guam            | GU |
 | Guatemala       | GT |
 | Guernsey        | GG |
 | Guinea          | GN |
 | Guinea-Bissau   | GW |
-| Guyana          | GE |
+| Guyana          | GY |
 | Haiti           | HI |
-| Heard e McDonald | HM |
+| Isole Heard e McDonald | HM |
 | Honduras        | HN |
 | RAS di Hong Kong   | HK |
 | Ungheria         | HU |
 | Islanda         | IS |
 | India           | IN |
 | Indonesia       | ID |
-| Iran            | IR |
-| Iraq            | IQ |
+| Iran            | A/A |
+| Iraq            | QI |
 | Irlanda         | IE |
 | Isola di Man     | Messaggistica istantanea |
 | Israele          | IL |
@@ -162,11 +165,11 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Kenya           | KE |
 | Kiribati        | KI |
 | Corea           | KR |
-| Snodato          | XK |
+| Kosovo          | XK |
 | Kuwait          | KW |
 | Kirghizistan      | KG |
 | Laos            | LA |
-| Lettonia          | LV |
+| Lettonia          | VL |
 | Libano         | LB |
 | Lesotho         | LS |
 | Liberia         | LR |
@@ -196,7 +199,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Marocco         | Ma |
 | Mozambico      | MZ |
 | Myanmar         | MM |
-| Namibia         | N/D |
+| Namibia         | NA |
 | Nauru           | NR |
 | Nepal           | NP |
 | Paesi Bassi     | NL |
@@ -206,7 +209,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Niger           | NE |
 | Nigeria         | NG |
 | Niue            | NU |
-| Isola Norfolk  | NF |
+| Isola norfolk  | NF |
 | Corea del Nord     | KP |
 | Macedonia del Nord | MK |
 | Isole Marianne settentrionali | NP |
@@ -234,11 +237,11 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Saint Kitts e Nevis | KN |
 | Saint Lucia     | LC |
 | Saint Martin    | MF |
-| #A0 e Miquelon | PM |
+| Saint Pierre e Miquelon | PM |
 | Saint Vincent e Grenadine | VC |
 | Samoa           | WS |
 | San Marino      | SM |
-| São Tomo e Principe | ST |
+| Sao Tome e Principe | ST |
 | Arabia Saudita    | SA |
 | Senegal         | SN |
 | Serbia          | RS |
@@ -252,7 +255,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Isole Salomone | SB |
 | Somalia         | Allora |
 | Sudafrica    | Immagine dell'icona |
-| Georgia del Sud e Sandwich del Sud | GS |
+| Georgia del Sud e Isole Sandwich del Sud | GS |
 | Sud Sudan     | SS |
 | Spagna           | ES |
 | Sri Lanka       | LK |
@@ -277,7 +280,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Turkmenistan    | TM |
 | Isole Turks e Caicos | TC |
 | Tuvalu          | TV |
-| Altre isole del Sud degli Stati Uniti | Messaggistica unificata |
+| U.S. Outlying Islands | Messaggistica unificata |
 | Isole Vergini Americane | VI |
 | Uganda          | UG |
 | Ucraina         | UA |

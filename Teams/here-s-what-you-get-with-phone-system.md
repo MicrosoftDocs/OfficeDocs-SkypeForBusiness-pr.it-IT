@@ -23,12 +23,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare Microsoft Phone System per l'azienda. "
-ms.openlocfilehash: 3c63362b1be16a2e6ad1b55ca6090fadb81b3ee7
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b26f6d72a92f0012f47d155531be523872e5a08c
+ms.sourcegitcommit: c80af314f1a573f99dd66858301c004ccc5410d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120687"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51648135"
 ---
 # <a name="heres-what-you-get-with-phone-system"></a>Vantaggi offerti dal Sistema telefonico
 
@@ -67,7 +67,7 @@ Sistema telefonico offre le caratteristiche seguenti. Se non diversamente specif
 |[Suoneria secondaria](https://support.office.com/article/Manage-your-call-settings-in-Teams-456cb611-3477-496f-b31a-6ab752a7595f) <br/> | Gli utenti con più dispositivi altoparlanti collegati al PC possono scegliere di impostare un dispositivo secondario in modo che squilli oltre all'altoparlante predefinito. Ad esempio, un utente con un auricolare collegato al PC e agli altoparlanti da tavolo può scegliere di fare squillare sia l'auricolare che gli altoparlanti della scrivania quando viene chiamata, in modo da non perdere una chiamata.  |
 |[Avvisi squillo distintivi](https://support.office.com/article/Manage-your-call-settings-in-Teams-456cb611-3477-496f-b31a-6ab752a7595f) (solo Teams)<br/> |Consente agli utenti di scegliere suonerie separate per le normali chiamate, le chiamate inoltrate e le chiamate delegate in modo che possano distinguere il tipo di chiamata.  <br/> |
 |[Modalità di linea condivisa](shared-line-appearance.md) <br/> | Consente agli utenti di condividere la propria linea telefonica in modo che un altro utente possa effettuare e ricevere chiamate per suo conto.|
-|[Occupato (solo](teams-calling-policy.md) Teams) <br/> | Un criterio di chiamata che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Il chiamante sentirà un segnale di occupato quando il chiamato è già sul telefono. Il destinatario riceve una notifica di chiamata senza risposta, ma non è in grado di rispondere alle chiamate in arrivo. Questa caratteristica è disabilitata per impostazione predefinita, ma può essere attivata dall'amministratore del tenant. |
+|[Occupato (solo](teams-calling-policy.md) Teams) <br/> | Un criterio di chiamata che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Il chiamante sentirà un segnale di occupato quando il chiamato è già sul telefono o verrà instradato di conseguenza alle impostazioni senza risposta dell'utente, ad esempio il chiamante potrebbe lasciare una segreteria telefonica all'utente che è già in una chiamata. Il destinatario riceve una notifica di chiamata senza risposta, ma non è in grado di rispondere alle chiamate in arrivo. Questa caratteristica è disabilitata per impostazione predefinita, ma può essere attivata dall'amministratore del tenant.|
 |[Blocco delle chiamate](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f?ui=en-US&rs=en-US&ad=US) <br/> | Consente agli utenti di aggiungere numeri di telefono (PSTN) a un elenco bloccato in modo che la chiamata successiva da tale numero non squilli all'utente.|
 |[Telefoni dell'area comune](set-up-common-area-phones.md) <br/> | Un telefono dell'area comune viene in genere inserito in un'area come una sala d'attesa o una sala riunioni, rendendolo disponibile per più persone. I telefoni dell'area comune sono impostati come dispositivi anziché come utenti e possono accedere automaticamente a una rete.|
 |[Supporto del bypass multimediale](direct-routing-plan-media-bypass.md) (solo per Teams Direct Routing) <br/> | Per migliorare le prestazioni, i supporti multimediali vengono mantenuti tra session border controller (SBC) e il client invece di inviarli tramite Microsoft Phone System. |
