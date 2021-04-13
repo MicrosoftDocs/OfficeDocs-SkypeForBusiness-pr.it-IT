@@ -21,22 +21,24 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Questo articolo include la procedura dettagliata per disabilitare l'ambiente ibrido come parte del consolidamento del cloud per Teams e Skype for Business.
-ms.openlocfilehash: 5528172c6a9309a0884c9417a64da589f0f0d4a4
-ms.sourcegitcommit: f223b5f3735f165d46bb611a52fcdfb0f4b88f66
+ms.openlocfilehash: 18bda898563e10dbf964ba149f27202372fbcceb
+ms.sourcegitcommit: 71d90f0a0056f7604109f64e9722c80cf0eda47d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51593854"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656702"
 ---
 # <a name="disable-your-hybrid-configuration-to-complete-migration-to-the-cloud"></a>Disabilitare la configurazione ibrida per completare la migrazione nel cloud
 
 Questo articolo descrive come disabilitare la configurazione ibrida prima di rimuovere le autorizzazioni dell'ambiente Skype for Business locale. Questo è il passaggio 2 della procedura seguente per rimuovere le autorizzazioni dell'ambiente locale:
 
-- Passaggio 1. [Spostare tutti gli utenti e gli endpoint dell'applicazione necessari da](decommission-move-on-prem-users.md)locale a online.
+- Passaggio 1. [Spostare tutti gli utenti necessari da locale a online.](decommission-move-on-prem-users.md)
 
 - **Passaggio 2. Disabilitare la configurazione ibrida.** (Questo articolo)
 
-- Passaggio 3. Rimuovere la distribuzione locale di [Skype for Business.](decommission-remove-on-prem.md)
+- Passaggio 3. [Spostare gli endpoint dell'applicazione ibrida da locale a online.](decommission-move-on-prem-endpoints.md)
+
+- Passaggio 4. Rimuovere la distribuzione locale di [Skype for Business.](decommission-remove-on-prem.md)
 
 
 ## <a name="overview"></a>Panoramica
@@ -243,11 +245,12 @@ Questa opzione richiede ulteriori sforzi e una pianificazione adeguata perché g
     ```PowerShell
     Get-CsOnlineUser -Filter {Enabled -eq $True -and (OnPremHostingProvider -ne $null -or MCOValidationError -ne $null -or ProvisioningStamp -ne $null -or SubProvisioningStamp -ne $null)} | fl SipAddress, InterpretedUserType, OnPremHostingProvider, MCOValidationError, *ProvisioningStamp
     ``` 
-12. Dopo aver completato tutti i passaggi nel metodo 2, fare riferimento a [Rimuovere Skype for Business Server](decommission-remove-on-prem.md) locale per ulteriori passaggi per rimuovere la distribuzione locale di Skype for Business Server.
+12. Dopo aver completato tutti i passaggi nel metodo 2, vedere Spostare gli endpoint dell'applicazione ibrida da locale a [online](decommission-move-on-prem-endpoints.md) e [Rimuovere Skype for Business Server](decommission-remove-on-prem.md) locale per ulteriori passaggi per rimuovere la distribuzione locale di Skype for Business Server.
 
 
 ## <a name="see-also"></a>Vedere anche
 
 - [Consolidamento cloud per Teams e Skype for Business](cloud-consolidation.md)
 
-- [Rimuovere le autorizzazioni dell'ambiente Skype for Business locale](decommission-on-prem-overview.md)
+- [Rimuovi le autorizzazioni dell'ambiente locale Skype for Business](decommission-on-prem-overview.md)
+

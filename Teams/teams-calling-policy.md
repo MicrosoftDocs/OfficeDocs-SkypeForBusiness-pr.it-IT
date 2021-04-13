@@ -20,12 +20,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5e3cc466d855f55f63f34e798443fb285dc36c9e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e469cc183134bab35855e83257126029ce78a8cc
+ms.sourcegitcommit: c80af314f1a573f99dd66858301c004ccc5410d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51162661"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51653944"
 ---
 <a name="calling-policies-in-microsoft-teams"></a>Criteri di chiamata in Microsoft Teams
 ===================================
@@ -94,7 +94,7 @@ Se si imposta questa opzione **su Attivata,** le chiamate verranno inviate trami
 
 ### <a name="busy-on-busy-is-available-while-in-a-call"></a>Occupato su Occupato è disponibile durante una chiamata
 
-Occupato (Opzioni occupato) è una nuova impostazione che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di occupato, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
+Occupato (Opzioni occupato) è una nuova impostazione che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o instradate di conseguenza alle impostazioni senza risposta dell'utente. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di occupato, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
 
 ### <a name="allow-web-pstn-calling"></a>Consenti chiamate PSTN Web
 

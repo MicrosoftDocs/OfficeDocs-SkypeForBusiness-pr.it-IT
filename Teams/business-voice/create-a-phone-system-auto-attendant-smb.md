@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft 365 Business Voice.
-ms.openlocfilehash: 7ee7dad833119778ceb64bd1e52bd30da4529ba8
-ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
+ms.openlocfilehash: 7fb9a9509354f5f6e3a17b2323eeaf2b5872e96e
+ms.sourcegitcommit: 71d90f0a0056f7604109f64e9722c80cf0eda47d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506653"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656742"
 ---
 # <a name="set-up-an-auto-attendant---small-business-tutorial"></a>Configurare un operatore automatico - Esercitazione sulle piccole imprese
 
@@ -62,9 +62,9 @@ Ogni operatore automatico creato richiede un account della risorsa. È simile a 
 
 4. Fare clic su **Salva**.
 
-Il nuovo account verrà visualizzato nell'elenco degli account.
+    Il nuovo account verrà visualizzato nell'elenco degli account.
 
-![Screenshot di un elenco di account delle risorse](../media/resource-accounts-page.png)
+    ![Screenshot di un elenco di account delle risorse](../media/resource-accounts-page.png)
 
 ### <a name="assign-a-license"></a>Assegnare una licenza
 
@@ -214,11 +214,11 @@ L'operatore automatico può avere un flusso di chiamate per ogni festività impo
 
 7. Fare clic su **Salva**.
 
-Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
-
-![Screenshot delle impostazioni delle festività con le festività elencate](../media/auto-attendant-holiday-call-settings.png)
-
-Dopo aver aggiunto tutte le festività, fare clic su **Avanti.**
+    Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
+    
+    ![Screenshot delle impostazioni delle festività con le festività elencate](../media/auto-attendant-holiday-call-settings.png)
+    
+    Dopo aver aggiunto tutte le festività, fare clic su **Avanti.**
 
 > [!div class="nextstepaction"]
 > [Passaggio 6 - Scegliere chi è nella directory >](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb?tabs=dial-scope#steps)
@@ -245,7 +245,7 @@ A tutti gli operatori automatici deve essere associato un account di risorsa.  G
 
 Per aggiungere un account della risorsa
 
-1. Fare **clic su Aggiungi account** e cercare l'account da aggiungere. Fare **clic su** Aggiungi e quindi su **Aggiungi.**
+1. Fare **clic** su Aggiungi e cercare l'account da aggiungere. Fare **clic su** Aggiungi e quindi su **Aggiungi.**
 
     ![Screenshot del riquadro Aggiungi account dell'account della risorsa](../media/auto-attendant-add-resource-account.png)
 
@@ -253,7 +253,7 @@ Per aggiungere un account della risorsa
 
     ![Screenshot dell'elenco degli account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato](../media/auto-attendant-resource-account-assigned.png)
 
-La configurazione dell'operatore automatico viene completata.
+    La configurazione dell'operatore automatico viene completata.
 
 ---
 

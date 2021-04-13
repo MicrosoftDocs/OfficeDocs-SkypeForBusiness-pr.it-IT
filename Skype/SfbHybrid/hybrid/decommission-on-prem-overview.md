@@ -1,5 +1,5 @@
 ---
-title: Rimuovere le autorizzazioni dell'ambiente Skype for Business locale
+title: Rimuovi le autorizzazioni dell'ambiente locale Skype for Business
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -17,14 +17,14 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni su come rimuovere le autorizzazioni dell'ambiente Skype for Business locale.
-ms.openlocfilehash: 7f5109661fc7d29d83172489dd987b96cb7e87fd
-ms.sourcegitcommit: f223b5f3735f165d46bb611a52fcdfb0f4b88f66
+ms.openlocfilehash: 46848c6730d37f549a8d5ee16f066fa67c789873
+ms.sourcegitcommit: 71d90f0a0056f7604109f64e9722c80cf0eda47d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51593899"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656682"
 ---
-# <a name="decommission-your-on-premises-skype-for-business-environment"></a>Rimuovere le autorizzazioni dell'ambiente Skype for Business locale
+# <a name="decommission-your-on-premises-skype-for-business-environment"></a>Rimuovi le autorizzazioni dell'ambiente locale Skype for Business
 
 Se l'organizzazione usa Teams o Skype for Business online con una distribuzione locale di Skype for Business Server, è possibile eseguire la migrazione completa di questi ambienti nel cloud e quindi ritirare la distribuzione locale di Skype for Business Server. 
 
@@ -33,9 +33,11 @@ Se l'organizzazione usa Teams o Skype for Business online con una distribuzione 
 
 Per completare lo spostamento dall'ambiente locale al cloud e rimuovere le autorizzazioni dell'ambiente Skype for Business Server locale, è necessario completare i passaggi seguenti nell'ordine seguente:
 
-- **Passaggio 1.** [Spostare tutti gli utenti e gli endpoint dell'applicazione necessari da](decommission-move-on-prem-users.md)locale a online.
+- **Passaggio 1.** [Spostare tutti gli utenti necessari da locale a online.](decommission-move-on-prem-users.md)
 
 - **Passaggio 2.** [Disabilitare la configurazione ibrida](cloud-consolidation-disabling-hybrid.md).
 
-- **Passaggio 3.** Rimuovere la distribuzione locale di [Skype for Business.](decommission-remove-on-prem.md)
+- **Passaggio 3.** [Spostare gli endpoint dell'applicazione ibrida da locale a online.](decommission-move-on-prem-endpoints.md)
+
+- **Passaggio 4.** Rimuovere la distribuzione locale di [Skype for Business.](decommission-remove-on-prem.md)
 

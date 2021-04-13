@@ -3,7 +3,7 @@ title: Gestire i criteri di feedback in Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
-ms.reviewer: msedliak
+ms.reviewer: heprecel
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -17,12 +17,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se gli utenti di Teams nell'organizzazione possono inviare feedback su Teams a Microsoft.
-ms.openlocfilehash: bc925320959c55b2fa06c8480f1011aab81aae9c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 66f14467e66456f244664a8273e0ff962297c05f
+ms.sourcegitcommit: 71d90f0a0056f7604109f64e9722c80cf0eda47d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094266"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51656722"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
@@ -41,9 +41,9 @@ Gli utenti possono inviare commenti e suggerimenti su Teams a Microsoft andando 
 
 **Sondaggi**
 
-Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettagli sulla valutazione che danno. Questo sondaggio popup viene visualizzato agli utenti di tanto in tanto in Teams. Quando un utente fa clic **su Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
+Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettagli sulla valutazione che danno. Questo sondaggio popup viene visualizzato agli utenti di tanto in tanto in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
 
-![Screenshot della notifica e del modulo del sondaggio in Teams](media/manage-feedback-policies-in-teams-survey.png)
+![notifica e modulo del sondaggio in Teams](media/manage-feedback-policies-in-teams-survey.png)
 
 ## <a name="set-whether-users-can-send-feedback-about-teams-to-microsoft"></a>Specificare se gli utenti possono inviare feedback su Teams a Microsoft
 
@@ -53,12 +53,13 @@ Gli amministratori possono controllare se gli utenti dell'organizzazione possono
 
 Si supponga, ad esempio, di voler consentire a tutti gli utenti dell'organizzazione di inviare feedback tramite Invia **feedback** e ricevere sondaggi ad eccezione dei nuovi assunti nella formazione. In questo scenario si crea un criterio personalizzato per disattivare entrambe le caratteristiche e assegnarlo ai nuovi assunti. Tutti gli altri utenti dell'organizzazione ottengono i criteri globali con le funzionalità attivate.  
 
-Per gestire i criteri di feedback, usare PowerShell. Usare il cmdlet **New-CsTeamsFeedbackPolicy,** disponibile *qui, [](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)* per creare un criterio personalizzato e il cmdlet **Grant-CsTeamsFeedbackPolicy** per assegnarlo a uno o più utenti o gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione.
+Per gestire i criteri di feedback, usare PowerShell. Usare il cmdlet **New-CsTeamsFeedbackPolicy,** disponibile *qui, [](https://docs.microsoft.com/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)* per creare criteri personalizzati. Usare il cmdlet **Grant-CsTeamsFeedbackPolicy** per assegnarlo a uno o più utenti o gruppi di utenti, ad esempio un gruppo di sicurezza o un gruppo di distribuzione. Usare **Set-CsTeamsFeedbackPolicy** per impostare flag specifici.
 
 Per disattivare e attivare le funzionalità, impostare i parametri seguenti:
 
  - **Inviare feedback:** impostare il **parametro userInitiatedMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di inviare feedback. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
  - **Sondaggi:** impostare il **parametro receiveSurveysMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams gli utenti possono quindi passare **a** Impostazioni Privacy e scegliere se partecipare  >   ai sondaggi. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non riceveranno il sondaggio.
+ - **Posta** elettronica: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
 
 ## <a name="create-a-custom-feedback-policy"></a>Creare criteri di feedback personalizzati
 
