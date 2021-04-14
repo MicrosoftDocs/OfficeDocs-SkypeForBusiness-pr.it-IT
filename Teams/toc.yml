@@ -117,18 +117,18 @@ items:
                 href: teams-client-update.md
               - name: Risoluzione dei problemi di installazione e aggiornamento
                 href: troubleshoot-installation.md
-          - name: Formazione su Teams
-            items:
-              - name: Panoramica
-                href: training-microsoft-teams-landing-page.md
-              - name: Formazione amministratori per Teams
-                href: itadmin-readiness.md
-              - name: Sessioni Teams a Ignite 2020
-                href: ignite-2020-landing-page.md
-              - name: Formazione dal vivo di Teams
-                href: instructor-led-training-teams-landing-page.yml
-              - name: Formazione online di Teams
-                href: 'https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7'
+      - name: Formazione su Teams
+        items:
+          - name: Panoramica
+            href: training-microsoft-teams-landing-page.md
+          - name: Formazione amministratori per Teams
+            href: itadmin-readiness.md
+          - name: Sessioni Teams a Ignite 2020
+            href: ignite-2020-landing-page.md
+          - name: Formazione dal vivo di Teams
+            href: instructor-led-training-teams-landing-page.yml
+          - name: Formazione online di Teams
+            href: 'https://support.office.com/article/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7'
   - name: Aggiornamento da Skype for Business
     items:
       - name: Per iniziare
@@ -1325,6 +1325,8 @@ items:
             href: teams-app-setup-policies.md
           - name: Gestire le impostazioni e i criteri delle app personalizzate in Teams
             href: teams-custom-app-policies-and-settings.md
+          - name: Personalizzare le app in Teams
+            href: customize-apps.md
   - name: Istruzioni per industrie ed enti pubblici
     items:
       - name: Panoramica
