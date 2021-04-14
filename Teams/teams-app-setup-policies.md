@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: 94e33421043b0cad195489d78e2eb96c95bb222e
-ms.sourcegitcommit: da2a70a9b5e05d0fd7ecc150b451f5805667514c
+ms.openlocfilehash: ee50af6dec780480b8efdbf39dabb8e52ff03f3a
+ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50756182"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697711"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -162,7 +162,7 @@ Gli utenti possono modificare l'ordine delle app aggiunte nei client desktop e m
 
 #### <a name="does-user-pinning-take-precedence"></a>Il blocco degli utenti ha la precedenza
 
-Se il criterio di configurazione dell'app assegnato all'utente viene modificato per bloccare il blocco delle app utente, Teams rimuove tutte le app aggiunte alla barra dell'app. Se il criterio viene modificato per consentire l'aggiunta di app utente, gli utenti devono aggiungere di nuovo le app aggiunte in precedenza.
+I pin di amministratore hanno sempre la precedenza. Se **l'opzione Consenti aggiunta utenti** è attivata, gli utenti manterranno le app aggiunte sotto le app aggiunte dall'amministratore. Se **l'opzione** Consenti blocco utenti è disattivata, gli utenti perderanno i pin preesistnti e nella barra dell'app saranno presenti solo le app aggiunte dall'amministratore.
 
 ### <a name="custom-teams-apps"></a>App di Teams personalizzate
 

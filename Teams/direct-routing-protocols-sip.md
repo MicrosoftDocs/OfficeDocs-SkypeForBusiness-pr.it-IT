@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 00cdb644efe9fb2c3e49973d7a539718252a7df9
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 8b1917408fa14ced9a490cba1559228dde924cfc
+ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098472"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697781"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto - Protocollo SIP
 
@@ -350,7 +350,10 @@ Vedere la sezione Meccanismo di failover per la segnalazione SIP in [Pianificare
 
 ## <a name="retry-after"></a>Retry-After
 
-Se un data center Di routing diretto è occupato, il servizio può inviare un messaggio di Retry-After con un intervallo di un secondo all'SBC. Quando L'SBC riceve un messaggio 503 con un'intestazione Retry-After in risposta a un invito, deve terminare la connessione e provare il successivo data center Microsoft disponibile. 
+Se un data center Di routing diretto è occupato, il servizio può inviare un messaggio di Retry-After con un intervallo di un secondo all'SBC. Quando L'SBC riceve un messaggio 503 con un'intestazione Retry-After in risposta a un invito, deve terminare la connessione e provare il successivo data center Microsoft disponibile.
+
+## <a name="handling-retries-603-response"></a>Gestione dei tentativi (risposta 603)
+Se un utente finale osserva diverse chiamate perse per una chiamata dopo aver declinato la chiamata in arrivo, significa che il meccanismo di ripetizione dei tentativi del provider trunk SBC o PSTN non è configurato correttamente. L'SBC deve essere riconfigurato per interrompere i tentativi nella risposta 603.
 
 ## <a name="ice-restart-media-bypass-call-transferred-to-an-endpoint-that-does-not-support-media-bypass"></a>Riavvio ICE: chiamata bypass multimediale trasferita a un endpoint che non supporta il bypass multimediale
 

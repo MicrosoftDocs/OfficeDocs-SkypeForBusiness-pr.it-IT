@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.addpinnedapp.permissions
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: aa11b21405079ab26bf1fa9572eb203560c4e461
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
-ms.translationtype: HT
+ms.openlocfilehash: 73b583493a57141fef3c120fa2eb134cbaa8a500
+ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49802496"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697741"
 ---
 # <a name="manage-app-permission-policies-in-microsoft-teams"></a>Gestire i criteri di autorizzazione app in Microsoft Teams
 
@@ -45,14 +45,14 @@ Se l'organizzazione è già su Teams, le impostazioni app configurate nelle **im
 Se si volesse bloccare tutte le app di terze parti e consentire app specifiche da Microsoft per il team HR nell'organizzazione. Per prima cosa, è necessario passare alla pagina [Gestisci app](manage-apps.md) e assicurarsi che tutte le app che si desidera consentire per il team HR siano consentite a livello di organizzazione. Quindi, creare un criterio personalizzato denominato Criterio di autorizzazione app HR, impostarlo in modo tale da bloccare e consentire le app desiderate e assegnarlo agli utenti del team HR.
 
 > [!NOTE]
-> Se si distribuisce Teams in un ambiente Government Community Cloud (GCC) di Microsoft 365, vedere [Gestisci le impostazioni app a livello di organizzazione per Government di Microsoft 365](#manage-org-wide-app-settings-for-microsoft-365-government) per ulteriori informazioni sulle impostazioni app di terze parti proprie di GCC.
+> Se Teams è stato distribuito in un ambiente Microsoft 365 Government Community Cloud High (GCCH) e Department of Defense (DoD), vedere Gestire le impostazioni delle app a livello di organizzazione per [Microsoft 365 Government](#manage-org-wide-app-settings-for-microsoft-365-government) per altre informazioni sulle impostazioni delle app di terze parti che sono univoche per GCCH e DoD.
 
 ## <a name="create-a-custom-app-permission-policy"></a>Creare un criterio di autorizzazione app personalizzato
 
 Se si vuole controllare le app disponibili per diversi gruppi di utenti dell'organizzazione, è possibile creare e assegnare uno o più criteri di autorizzazione app personalizzati. È possibile creare e assegnare criteri personalizzati in base a chi pubblica le app: Microsoft, terze parti o l'organizzazione. È importante sapere che, dopo aver creato un criterio personalizzato, non sarà possibile cambiarlo se le app di terze parti sono disabilitate nelle impostazioni app a livello di organizzazione.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Criteri di autorizzazione**.
-2. Fare clic su **Aggiungi**. <br>
+2. Fare clic su **Aggiungi**.<br>
     ![Screenshot di un nuovo criterio di autorizzazione app](media/app-permission-policies-new-policy.png)
 3. Immettere un nome e una descrizione per il criterio.
 4. In **App Microsoft**, **App di terze parti** e **App personalizzate**, selezionare una delle seguenti opzioni:
@@ -86,11 +86,11 @@ Se si vuole controllare le app disponibili per diversi gruppi di utenti dell'org
 
 ## <a name="manage-org-wide-app-settings-for-microsoft-365-government"></a>Gestire impostazioni app a livello di organizzazione per Government di Microsoft 365  
 
-Nell'ambito della distribuzione GCC di Microsoft 365 di Teams, è importante sapere quanto segue in merito alle impostazioni app di terze parti, proprie di GCC.
+In una distribuzione di Microsoft 365 Government - GCCH e DoD di Teams, è importante conoscere le informazioni seguenti sulle impostazioni delle app di terze parti, che sono univoche per GCCH e DoD.
 
-In GCC, tutte le app di terze parti vengono bloccate per impostazione predefinita. Inoltre, verrà visualizzata la seguente nota in merito alla gestione delle app di terze parti nella pagina dei criteri di autorizzazione app nell'interfaccia di amministrazione di Microsoft Teams.
+In GCCH e DoD tutte le app di terze parti sono bloccate per impostazione predefinita. Inoltre, verrà visualizzata la seguente nota in merito alla gestione delle app di terze parti nella pagina dei criteri di autorizzazione app nell'interfaccia di amministrazione di Microsoft Teams.
 
-![Screenshot di un criterio di autorizzazione app in GCC](media/app-permission-policies-gcc.png)
+![Screenshot dei criteri di autorizzazione delle app in GCCH e DoD](media/app-permission-policies-gcc.png)
 
 Usare le impostazioni app a livello di organizzazione per controllare se gli utenti possono installare le app di terze parti. Le impostazioni app a livello di organizzazione disciplinano il comportamento di tutti gli utenti e sostituiscono qualsiasi criterio di autorizzazione app assegnato agli utenti. È possibile usarle per controllare eventuali app dannose o problematiche.
 
@@ -100,10 +100,10 @@ Usare le impostazioni app a livello di organizzazione per controllare se gli ute
     
 2. In **App di terze parti**, disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
 
-    - **Consenti app di terze parti**: questa impostazione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non potranno installare o usare qualsiasi app di terze parti. Nell'ambito della distribuzione GCC di Microsoft 365 di Teams, questa impostazione è disattivata per impostazione predefinita.
+    - **Consenti app di terze parti**: questa impostazione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non potranno installare o usare qualsiasi app di terze parti. In una distribuzione di Microsoft 365 Government - GCCH e DoD di Teams, questa impostazione è disattivata per impostazione predefinita.
     - **Consenti qualsiasi nuova app di terze parti pubblicata nello Store per impostazione predefinita**: questa impostazione consente di controllare se eventuali nuove app di terze parti pubblicate nello Store di Teams diventano disponibili automaticamente in Teams. È possibile impostare questa opzione solo se si consentono le app di terze parti.
 
-3. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. Nell'ambito della distribuzione GCC di Microsoft 365 di Teams, tutte le app di terze parti vengono aggiunte all'elenco per impostazione predefinita. Per qualsiasi app di terze parti che si desidera consentire nell'organizzazione, rimuovere l'app da questo elenco delle app bloccate. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, che sia consentita o meno dai criteri di autorizzazione app.
+3. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. In una distribuzione di Microsoft 365 Government - GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Per qualsiasi app di terze parti che si desidera consentire nell'organizzazione, rimuovere l'app da questo elenco delle app bloccate. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, che sia consentita o meno dai criteri di autorizzazione app.
 4. Fare clic su **Salva** per fare in modo che le impostazioni app a livello di organizzazione abbiano effetto.
 
 Come indicato in precedenza, per consentire app di terze parti è possibile modificare e usare il criterio globale (a livello di organizzazione, per impostazione predefinita) o creare e assegnare criteri personalizzati.

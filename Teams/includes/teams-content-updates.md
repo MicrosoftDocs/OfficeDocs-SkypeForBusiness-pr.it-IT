@@ -3,6 +3,75 @@
 
 
 
+## <a name="week-of-april-05-2021"></a>Settimana del 05 aprile 2021
+
+
+| Pubblicato il |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 4/5/2021 | [Pianificare Instradamento diretto](/MicrosoftTeams/direct-routing-plan) | modificato |
+| 4/5/2021 | [Recuperare numeri di telefono per gli utenti](/MicrosoftTeams/getting-phone-numbers-for-your-users) | modificato |
+| 4/5/2021 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 4/5/2021 | [Installare Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-install) | modificato |
+| 4/5/2021 | [Che cos'è Call Quality Dashboard (CQD)?](/MicrosoftTeams/cqd-what-is-call-quality-dashboard) | modificato |
+| 4/5/2021 | [Usare il componente aggiuntivo Riunione di Microsoft Teams in Outlook](/MicrosoftTeams/teams-add-in-for-outlook) | modificato |
+| 4/5/2021 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 4/5/2021 | [Etichette di riservatezza per Microsoft Teams](/MicrosoftTeams/sensitivity-labels) | modificato |
+| 4/6/2021 | [Gestire i criteri delle riunioni per audio e video](/MicrosoftTeams/meeting-policies-audio-and-video) | aggiunto |
+| 4/6/2021 | [Gestire i criteri delle riunioni per la condivisione di contenuti](/MicrosoftTeams/meeting-policies-content-sharing) | aggiunto |
+| 4/6/2021 | [Gestire i criteri delle riunioni generali](/MicrosoftTeams/meeting-policies-in-teams-general) | aggiunto |
+| 4/6/2021 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-overview) | aggiunto |
+| 4/6/2021 | [Gestire i criteri delle riunioni per partecipanti e guest](/MicrosoftTeams/meeting-policies-participants-and-guests) | aggiunto |
+| 4/6/2021 | [Creare una coda di chiamata in Microsoft Teams - Esercitazione sulle piccole imprese](/MicrosoftTeams/business-voice/create-a-phone-system-call-queue-smb) | modificato |
+| 4/6/2021 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | modificato |
+| 4/6/2021 | [Indicazioni per larghezza di banda ridotta per Microsoft Teams per l'istruzione](/MicrosoftTeams/edu-remote-low-bandwidth) | modificato |
+| 4/6/2021 | [Accesso guest in Microsoft Teams](/MicrosoftTeams/guest-access) | modificato |
+| 4/6/2021 | [Criteri delle riunioni e scadenza delle riunioni in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | modificato |
+| 4/6/2021 | [Note sulla versione per Microsoft Teams](/MicrosoftTeams/release-notes/release-notes) | modificato |
+| 4/6/2021 | [Risorse di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/remote-learning-edu) | modificato |
+| 4/6/2021 | [Report sulla partecipazione alle riunioni di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/meeting-attendance-report) | modificato |
+| 4/6/2021 | [Azure Sentinel e Microsoft Teams](/MicrosoftTeams/teams-sentinel-guide) | modificato |
+| 4/6/2021 | [Scegli il percorso di aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-and-coexistence-of-skypeforbusiness-and-teams) | modificato |
+| 4/6/2021 | [Usare NDI in Microsoft Teams](/MicrosoftTeams/use-ndi-in-meetings) | modificato |
+| 4/6/2021 | [Audioconferenze con tariffe al minuto](/MicrosoftTeams/audio-conferencing-pay-per-minute) | modificato |
+| 4/6/2021 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 4/6/2021 | [Comportamento delle app di Teams per utenti non standard](/MicrosoftTeams/non-standard-users) | modificato |
+| 4/6/2021 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
+| 4/6/2021 | [Creare un'app "Portale Intranet" di Teams da un sito o una pagina di SharePoint Online](/MicrosoftTeams/teams-standalone-static-tabs-using-spo-sites) | modificato |
+| 4/7/2021 | [Risorse di formazione per gli amministratori - Microsoft Teams](/MicrosoftTeams/itadmin-readiness) | modificato |
+| 4/7/2021 | [Audioconferenze con tariffe al minuto](/MicrosoftTeams/audio-conferencing-pay-per-minute) | modificato |
+| 4/7/2021 | [Audioconferenza chiamata in uscita/Chiamata in minuti](/MicrosoftTeams/audio-conferencing-subscription-dial-out) | modificato |
+| 4/7/2021 | [Registrazione delle riunioni di Teams nel cloud](/MicrosoftTeams/cloud-recording) | modificato |
+| 4/7/2021 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 4/7/2021 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
+| 4/7/2021 | [Comportamento delle app di Teams per utenti non standard](/MicrosoftTeams/non-standard-users) | modificato |
+| 4/7/2021 | [Gestire i criteri di conservazione per Microsoft Teams](/MicrosoftTeams/retention-policies) | modificato |
+| 4/7/2021 | [Gestire Teams con Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-managing-teams) | modificato |
+| 4/7/2021 | [Configurare la funzionalità Chiamami per gli utenti](/MicrosoftTeams/set-up-the-call-me-feature-for-your-users) | modificato |
+| 4/8/2021 | [Servizi di conferenza in rete per audioconferenza](/MicrosoftTeams/audio-conferencing-on-network) | modificato |
+| 4/8/2021 | [Condivisione delle chiamate e risposta alle chiamate di gruppo](/MicrosoftTeams/call-sharing-and-group-call-pickup) | modificato |
+| 4/8/2021 | [Session Border Controller certificati per il routing diretto](/MicrosoftTeams/direct-routing-border-controllers) | modificato |
+| 4/8/2021 | [Configurare le impostazioni degli eventi live in Microsoft Teams](/MicrosoftTeams/teams-live-events/configure-teams-live-events) | modificato |
+| 4/8/2021 | [Pianificare un evento live in Microsoft Teams](/MicrosoftTeams/teams-live-events/plan-for-teams-live-events) | modificato |
+| 4/8/2021 | [Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni](/MicrosoftTeams/tmr-meeting-recording-change) | modificato |
+| 4/8/2021 | [Gestire l'accesso degli utenti a Microsoft Teams](/MicrosoftTeams/user-access) | modificato |
+| 4/8/2021 | [Esperienza di solo visualizzazione nelle riunioni](/MicrosoftTeams/view-only-meeting-experience) | modificato |
+| 4/8/2021 | [Codici paese routing diretto](/MicrosoftTeams/direct-routing-country-codes) | modificato |
+| 4/8/2021 | [Vantaggi offerti dal Sistema telefonico](/MicrosoftTeams/here-s-what-you-get-with-phone-system) | modificato |
+| 4/8/2021 | [Criteri di chiamata in Microsoft Teams](/MicrosoftTeams/teams-calling-policy) | modificato |
+| 4/8/2021 | [Formazione per gli amministratori di Microsoft Teams](/MicrosoftTeams/training-microsoft-teams-landing-page) | modificato |
+| 4/9/2021 | [Configurare un operatore automatico per Microsoft Teams - Esercitazione su Small Business](/MicrosoftTeams/business-voice/create-a-phone-system-auto-attendant-smb) | modificato |
+| 4/9/2021 | [Gestire i criteri di feedback in Microsoft Teams](/MicrosoftTeams/manage-feedback-policies-in-teams) | modificato |
+| 4/9/2021 | [Centro contatti di Teams](/MicrosoftTeams/teams-contact-center) | modificato |
+| 4/9/2021 | [Personalizzare le app Microsoft in Teams](/MicrosoftTeams/customize-apps) | modificato |
+| 4/9/2021 | [Session Border Controller certificati per il routing diretto](/MicrosoftTeams/direct-routing-border-controllers) | modificato |
+| 4/9/2021 | [Vantaggi offerti dal Sistema telefonico](/MicrosoftTeams/here-s-what-you-get-with-phone-system) | modificato |
+| 4/9/2021 | [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/manage-apps) | modificato |
+| 4/9/2021 | [Gestire i criteri di autorizzazione app in Microsoft Teams](/MicrosoftTeams/teams-app-permission-policies) | modificato |
+| 4/9/2021 | [Esperienza di solo visualizzazione nelle riunioni](/MicrosoftTeams/view-only-meeting-experience) | modificato |
+| 4/9/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 4/9/2021 | [Requisiti per Microsoft Teams Rooms](/MicrosoftTeams/rooms/requirements) | modificato |
+
+
 ## <a name="week-of-march-29-2021"></a>Settimana del 29 marzo 2021
 
 

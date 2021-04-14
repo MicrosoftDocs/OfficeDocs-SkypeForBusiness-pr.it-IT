@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4822628288ea6e1727a68e551a725f278e4dcc6e
-ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
+ms.openlocfilehash: 09fe424dc576b6b167eec49e7cd8edf2f61d6cce
+ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51637868"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697801"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -31,7 +31,7 @@ ms.locfileid: "51637868"
 > [!Note]
 > Se la riunione o il webinar supera la capacità, Teams si adatterà rapidamente per offrire un'esperienza di trasmissione in modalità solo visualizzazione per 10.000 persone.  Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno.
 
-Microsoft Teams consente fino a 10.000 partecipanti alle riunioni. Dopo aver raggiunto la capacità della riunione principale , ovvero quando 300 utenti in WW o 250 in GCC entrano in una riunione, altri partecipanti si uniranno con un'esperienza di sola visualizzazione.
+Microsoft Teams consente fino a 10.000 partecipanti alle riunioni. Dopo aver raggiunto la capacità della riunione principale, ovvero quando 300 utenti aderiscono a una riunione, altri partecipanti si uniranno con un'esperienza di sola visualizzazione.
 
 I partecipanti che aderiscono per primi alla riunione, fino alla capacità della riunione principale, otterrà l'esperienza completa della riunione di Teams. Possono condividere audio e video, visualizzare i video condivisi e partecipare alla chat delle riunioni.
 
@@ -65,7 +65,7 @@ L'esperienza d'uso varia a seconda di numerosi fattori.
 Quando il limite di partecipati della riunione principale viene raggiunto, i partecipanti non possono accedere alla riunione se una qualsiasi delle seguenti condizioni è vera: 
 
 - Un amministratore ha disabilitato l'esperienza di sola visualizzazione di Teams per l'organizzatore o per l'intero tenant.
-- Il partecipante di sola visualizzazione non può ignorare la sala d'attesa. Ad esempio, se un organizzatore di una  riunione sceglie di fare in modo che solo le persone dell'organizzazione esemplino la sala d'attesa e un partecipante esterno all'organizzazione tenti di partecipare come partecipante di sola visualizzazione, verrà rifiutato.
+- Il partecipante di sola visualizzazione non può ignorare la sala d'attesa. Ad esempio, se un organizzatore di una  riunione sceglie di fare in modo che solo le persone dell'organizzazione esemplino la sala d'attesa e un partecipante esterno all'organizzazione tenti di partecipare come partecipante di sola visualizzazione, non potrà partecipare.
 
 Una volta raggiunta la capacità della riunione principale, l'organizzatore della riunione e i relatori vedranno uno striscione che informa che i nuovi partecipanti si uniranno come partecipanti di sola visualizzazione.
 
@@ -75,13 +75,13 @@ Quando viene raggiunto il limite di partecipanti della riunione principale, i pa
 
   ![la schermata preliminare di accesso e il messaggio per i partecipanti che notifica  che si sta accedendo a un'esperienza di sola visualizzazione](media/view-only-pre-join-screen.png)
 
-Se lo spazio è sufficiente, i nuovi utenti accedono sempre alla riunione principale. Se il limite della riunione principale viene raggiunto e uno o più utenti abbandonano la riunione, la riunione principale ha una capacità sufficiente. I partecipanti che accedono (o riaccedono) alla riunione entreranno nella sala principale fino al raggiungimento del limite di utenti. I partecipanti che hanno avviato l'esperienza di sola visualizzazione non saranno promossi automaticamente alla riunione principale, e al momento non possono esservi promossi.
+Se lo spazio è sufficiente, i nuovi utenti accedono sempre alla riunione principale. Se il limite della riunione principale viene raggiunto e uno o più utenti abbandonano la riunione, la riunione principale ha una capacità sufficiente. I partecipanti che accedono (o riaccedono) alla riunione entreranno nella sala principale fino al raggiungimento del limite di utenti. I partecipanti all'esperienza di sola visualizzazione non verranno alzati di livello automaticamente alla riunione principale e non potranno essere alzati di livello manualmente alla riunione principale.
 
-Se sono stati impostati ruoli di relatore e partecipante e un relatore prova a partecipare a una riunione dopo che la riunione principale di ha raggiunto la capacità, partecipa come partecipante di sola visualizzazione e ha le stesse limitazioni degli altri partecipanti di sola visualizzazione. Supporto per garantire che tutti i relatori che aderiscono alla riunione principale siano in un secondo momento. L'organizzatore avrà sempre uno spazio garantito nella riunione principale.
+Se sono stati impostati ruoli di relatore e partecipante e un relatore prova a partecipare a una riunione dopo che la riunione principale ha raggiunto la capacità, partecipa come partecipante di sola visualizzazione e ha le stesse limitazioni degli altri partecipanti di sola visualizzazione. Supporto per garantire che tutti i relatori che aderiscono alla riunione principale siano in un secondo momento. L'organizzatore avrà sempre uno spazio garantito nella riunione principale.
 
-## <a name="impact-to-meeting-presenters"></a>Impatto per i relatori della riunione
+## <a name="impact-to-meeting-presenters-and-organizers"></a>Impatto sui relatori e gli organizzatori della riunione
 
-Le limitazioni dei relatori delle riunioni includono:
+Le limitazioni per relatori e organizzatori della riunione includono:
 
 - Non sono disponibili informazioi sui partecipanti in modalità di sola visualizzazione. I processi e-discovery non sono supportati per i partecipanti in modalità di sola visualizzazione.
 - Gli utenti della riunione principale non possono vedere i partecipanti di sola visualizzazione.

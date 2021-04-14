@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 92ff8b256f203549541529336396fdd44f67b12c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: edfa29dd1c2c3f5197b175f49d8d045967fc79f1
+ms.sourcegitcommit: d3c67eadf7cab167340d35b76401ff49fc7eb728
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51093996"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749484"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
@@ -261,7 +261,7 @@ I partecipanti alla riunione sono inoltre classificati per posizione e credenzia
     b. *Utenti remoti*: questi utenti partecipano dall'esterno della rete aziendale. Possono comprendere i dipendenti che lavorano da casa o in viaggio e altri, come dipendenti di fornitori affidabili, a cui sono state concesse credenziali aziendali per le rispettive condizioni d'uso. Gli utenti remoti possono creare e partecipare alle riunioni, anche come relatori.
 .
 2. **Utenti che non appartengono al tenant**: questi utenti non dispongono di credenziali in Azure Active Directory per il tenant.
-    a. *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono pertanto trattati come autenticati da Teams, ma rimangono comunque anonimi per il tenant della riunione o dell'organizzatore. Gli utenti federati possono partecipare alle riunioni ed essere promossi a relatori dopo che hanno partecipato alla riunione, ma non possono creare riunioni in aziende con cui sono federati.
+    a. *Utenti federati*: gli utenti federati dispongono di credenziali valide con partner federati e vengono pertanto trattati come autenticati da Teams, ma rimangono comunque esterni per il tenant della riunione o dell'organizzatore. Gli utenti federati possono partecipare alle riunioni ed essere promossi a relatori dopo che hanno partecipato alla riunione, ma non possono creare riunioni in aziende con cui sono federati.
     b. *Utenti anonimi*: gli utenti anonimi non hanno un'identità di Active Directory e non sono federati con il tenant.
 
 Molte riunioni coinvolgono utenti esterni. Queste stesse società desiderano anche rassicurazioni in merito all'identità degli utenti esterni prima di consentire a tali utenti di partecipare a una riunione. Nella sezione seguente viene descritto in che modo Teams limita l'accesso alle riunioni per i tipi di utenti che non sono stati autorizzati in modo esplicito e richiede a tutti i tipi di utente di fornire *credenziali* appropriate per l'accesso a una riunione.

@@ -16,12 +16,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c5137a67169198a16b62e179d32ae1779001011d
-ms.sourcegitcommit: e55d1623e686db2b183e02052bfe10a0269abb5d
+ms.openlocfilehash: b2bae63b2a37b5c5739a988cfe69f23b7609e63b
+ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51397579"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697821"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere alle informazioni in Microsoft Teams
 
@@ -184,12 +184,7 @@ Attualmente, gli utenti verificano gli scenari seguenti se un criterio IB blocca
 
 ## <a name="teams-policies-and-sharepoint-sites"></a>Criteri di Teams e siti di SharePoint
 
-Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e associato a Microsoft Teams per l'esperienza file. Per impostazione predefinita, i criteri IB non vengono rispettati in questo sito di SharePoint e nei file. Per abilitare i criteri IB, l'amministratore ha già compilato un modulo, richiedendo che i  criteri IB siano abilitati in SharePoint e OneDrive (vedere la sezione Prerequisiti in Ostacoli alle [informazioni).](/sharepoint/information-barriers#prerequisites) Se i criteri IB sono attivati in SharePoint e OneDrive, i criteri IB funzionano nei siti di SharePoint di cui viene eseguito il provisioning quando viene creato un team con Microsoft Teams.
-
-Esempio di criteri IB nel sito di SharePoint di un **team:** in Contoso Bank corporation l'utente "Sesha@contosobank.onmicrosoft.com" appartiene al segmento Investment Banking e l'utente "Nikita@contosobank.onmicrosoft.com" appartiene al segmento Advisory. I criteri IB dell'organizzazione bloccano la comunicazione e la collaborazione tra questi due segmenti.
-Quando l'utente Sesha crea un team per il segmento Investment Banking, il team e il sito di SharePoint che lo contiene saranno accessibili solo agli utenti di Investment Banking. L'utente Nikita non può accedere al sito anche se ha il collegamento di sito.
-
-Per altre informazioni, vedere [Usare le barriere di informazioni con SharePoint.](/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
+Quando viene creato un team, viene eseguito il provisioning di un sito di SharePoint e associato a Microsoft Teams per l'esperienza file. Per impostazione predefinita, i criteri di protezione delle informazioni non vengono rispettati in questo sito di SharePoint e nei file. Per abilitare le barriere alle informazioni in SharePoint e OneDrive, seguire le istruzioni e i passaggi nell'argomento Usare le barriere [di informazioni con SharePoint.](/sharepoint/information-barriers#enable-sharepoint-and-onedrive-information-barriers-in-your-organization)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni necessarie
 
