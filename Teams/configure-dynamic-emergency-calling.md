@@ -18,12 +18,12 @@ description: Informazioni su come configurare la funzionalità di chiamata di em
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 73b894b0eb02b8f860a3486251dab002832f4d46
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2531add2b43b7061b81a23676c54fbc557929c0f
+ms.sourcegitcommit: 2ce82f301f2d59da57f579a23038b2cab5e31360
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122330"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51858009"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -226,9 +226,9 @@ La tabella seguente mostra il supporto per le chiamate di emergenza dinamiche ne
 
 | Cloud | Disponibilità |
 | :------------|:-------|
-| World Wide Multi Tenant | Completamente disponibile |
-| GCC | Disponibile su tutti i client tranne i telefoni IP di Teams |
-| GCCH | In sospeso |
+| World Wide Multi Tenant | Disponibile in tutti i client di Teams |
+| GCC | Disponibile in tutti i client di Teams |
+| GCCH | Disponibile su Teams desktop |
 | DoD | In sospeso |
 
  ## <a name="related-topics"></a>Argomenti correlati

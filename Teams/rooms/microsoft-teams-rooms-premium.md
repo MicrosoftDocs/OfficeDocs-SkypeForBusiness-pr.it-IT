@@ -17,12 +17,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sul servizio gestito di Microsoft Teams Rooms.
 f1keywords: ''
-ms.openlocfilehash: 9fdfa4a3fdb6c9058f5feada655a88abcd136b3e
-ms.sourcegitcommit: 616403037ddb2d44f06cd9b2eaa9da699b119ef8
+ms.openlocfilehash: beb8c0a7cf4a2a78364b145da1da83e2ae04bd0b
+ms.sourcegitcommit: 2ce82f301f2d59da57f579a23038b2cab5e31360
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768435"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51858019"
 ---
 # <a name="microsoft-teams-rooms-managed-service"></a>Servizio gestito di Microsoft Teams Rooms
 
@@ -91,7 +91,7 @@ Per altre informazioni sulla copertura del supporto dei servizi gestiti di Micro
 
 ## <a name="supported-regions"></a>Aree geografiche supportate
 
-Il servizio gestito da Microsoft Teams Rooms è disponibile in tutti i paesi e le aree geografiche in cui è disponibile Microsoft 365. Per un elenco completo dei paesi e delle aree geografiche, vedere Disponibilità internazionale di [Microsoft 365.](https://www.microsoft.com/microsoft-365/business/international-availability)
+La licenza Microsoft Teams Rooms Premium è disponibile in tutti i paesi e le aree geografiche in cui è disponibile Microsoft 365. Per un elenco completo dei paesi e delle aree geografiche, vedere Disponibilità internazionale di [Microsoft 365.](https://www.microsoft.com/microsoft-365/business/international-availability)
 
 ## <a name="support-inclusions-and-exclusions"></a>Supportare inclusioni ed esclusioni
 

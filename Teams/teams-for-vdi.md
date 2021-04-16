@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 020ed67b695c10e54d43891d78a77783ab61ee81
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9688b700d900720aa9af1c0f68cadee99d7de858
+ms.sourcegitcommit: 2ce82f301f2d59da57f579a23038b2cab5e31360
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119195"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51858049"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -377,10 +377,9 @@ Questa funzionalità è disponibile in Teams versione 1.3.00.13565 e successive.
 ### <a name="client-deployment-installation-and-setup"></a>Distribuzione, installazione e configurazione del client
 
 - Con l'installazione per computer, Teams in VDI non viene aggiornato automaticamente come i client di Teams non VDI. È necessario aggiornare l'immagine della macchina virtuale installando un nuovo file MSI come descritto nella sezione Installare o aggiornare [l'app desktop Teams in VDI.](#install-or-update-the-teams-desktop-app-on-vdi) È necessario disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente.
+- Negli ambienti Citrix, se l'utente si disconnette dalla macchina virtuale mentre Teams è in esecuzione, gli aggiornamenti di Teams possono comportare che l'utente sia in uno stato non ottimizzato per AV quando si riconnette. È consigliabile che gli utenti si disconnettano da Teams prima di disconnettersi da Citrix Virtual Machine per evitare questo scenario.
 - Teams deve essere distribuito per utente o per computer. La distribuzione di Teams per utenti simultanei e per computer non è supportata. Per eseguire la migrazione da un computer o un utente a una di queste modalità, seguire la procedura di disinstallazione e ridistribuire in entrambe le modalità.
 - Windows Virtual Desktop e VMware non supportano al momento i client basati su MacOS e Linux.
-- Citrix al momento non supporta i client MacOs.
-- Citrix non supporta l'uso di proxy HTTP espliciti definiti in un endpoint.
 
 ### <a name="calling-and-meetings"></a>Chiamate e riunioni
 
@@ -396,6 +395,7 @@ Le funzionalità di chiamata e riunione seguenti non sono supportate:
 - Coda di chiamata
 - Audio/computer di sistema condiviso
 - Bypass multimediale per Instradamento diretto
+- Zoom avanti sul contenuto condiviso
 
 > [!NOTE]
 > Stiamo lavorando per aggiungere funzionalità di chiamata e riunione attualmente disponibili solo in ambienti non VDI. Questi potrebbero includere un maggiore controllo dell'amministratore sulla qualità, altri scenari di condivisione dello schermo e funzionalità avanzate aggiunte di recente a Teams. Contatta il rappresentante di Teams per saperne di più sulle funzionalità imminenti.
