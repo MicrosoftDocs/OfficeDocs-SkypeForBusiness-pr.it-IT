@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati per Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 2cebad1c415ba717439b2c10edbf2ac367d913d0
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: 758907a284afc7ab4ec4f172eee10c82ce456d61
+ms.sourcegitcommit: 616403037ddb2d44f06cd9b2eaa9da699b119ef8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697641"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768445"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Dispositivi certificati Microsoft Teams
 
@@ -103,6 +103,7 @@ Di seguito sono riportate le versioni più recenti dell'app per telefono e del f
 
 | Rilascio del prodotto | Data di rilascio  | Versione dell'app Microsoft Teams | Versione del portale aziendale | Versione dell'agente di amministrazione |
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
+| Aggiornamento #1A 2021 | 5 aprile 2021  |1449/1.0.94.2021033002|  5.0.5045.0 |  1.0.0.202101280722.product (253) |
 | Aggiornamento 2021 #1  | 26 marzo 2021  |1449/1.0.94.2021022403 |  5.0.5045.0 |  1.0.0.202101280722.product (253) |
 | Aggiornamento 2020 #7  | 8 dicembre 2020  |1449/1.0.94.2020111101 | 5.0.4927.0            | 1.0.0.202010121132.product (223) |
 | Aggiornamento 2020 #6  | 12 ottobre 2020  |1449/1.0.94.2020091801     | 5.0.4912.0             | 1.0.0.202006290446.product(216) |
@@ -116,10 +117,13 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo        | Versione firmware     | Rilascio del prodotto incluso  |
 |:--------------------|:---------------------|:-------------------------|
-| YL T55/T56/T58   | 58.15.0.124  | Aggiornamento 2021 #1 |
-| YL VP59   | 91.15.0.58  | Aggiornamento 2021 #1 |
-| YL CP960  |73.15.0.117  | Aggiornamento 2021 #1 |
-| YL MP56/MP54/MP58  |122.15.0.36  | Aggiornamento 2021 #1 |
+| Poly Trio C60   | 7.0.2.1071  | Aggiornamento 2021 #1                        |
+| CCX400/CCX500/CCX600   | 7.0.2.1072  | Aggiornamento 2021 #1                 |
+| Codici audio C448HD/C450HD/C470HD   | 1.10.120  | Aggiornamento 2021 #1       |
+| Yealink T55/T56/T58   | 58.15.0.124  | Aggiornamento 2021 #1                      |
+| Yealink VP59   | 91.15.0.58  | Aggiornamento 2021 #1                              |
+| Yealink CP960  |73.15.0.117  | Aggiornamento 2021 #1                              |
+| Yealink MP56/MP54/MP58  |122.15.0.36  | Aggiornamento 2021 #1                     |
 | Crestron UC-2  |1.0.3.52 | Aggiornamento 2021 #1 |
 | AudioCodes C448HD   | C450HD_TEAMS_1.8.288  | Aggiornamento 2020 #7           |
 | AudioCodes C450HD   | C450HD_TEAMS_1.8.288  | Aggiornamento 2020 #7           |
@@ -145,6 +149,7 @@ Di seguito sono riportate le versioni più recenti di Teams Rooms per l'app Andr
 
 | Rilascio del prodotto| Data di rilascio | Versione dell'app Microsoft Teams | Versione del portale aziendale | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
+| Aggiornamento 2021 #1  |7 aprile 2021  |1449/1.0.96.2021020902(Yealink VC210)  |5.0.4927.0     |1.0.0.20201012132.product version code: 223 |
 | Aggiornamento 2021 #1  |5 aprile 2021  |1449/1.0.96.2021032002  |5.0.4927.0     |1.0.0.20201012132.product version code: 223 |
 | Aggiornamento 2020 #3  |24 novembre 2020  |1449/1.0.94.2020102101  |5.0.4927.0     |1.0.0.202006290446.product version code: 216 |
 | Aggiornamento 2020 #2  | 24 agosto 2020| 1449/1.0.94.2020062501    | 5.0.4771.0    | 1.0.0.202005060552.product version code: 212|
@@ -156,6 +161,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso |
 |:--------------|:-----------------|:-------------------------|
+| Yealink VC210 |118.15.0.47     | Aggiornamento 2021 #1    |
 | Yealink MeetingBar A20 | 133.15.0.54     | Aggiornamento 2021 #1    |
 | Yealink MeetingBar A30 | 133.15.0.54     | Aggiornamento 2021 #1    |
 | Yealink CTP18 | 137.15.0.30     | Aggiornamento 2021 #1    |

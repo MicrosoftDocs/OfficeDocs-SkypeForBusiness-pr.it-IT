@@ -19,349 +19,130 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1075a2c345bd866266b175a4b62432e9f819b330
-ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
+ms.openlocfilehash: c3b2c37f7f3731b34abb5337bf954250e0c3564d
+ms.sourcegitcommit: 046b020cee8af00a1d0e5f5866f847d42e8ad9a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51598525"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51712768"
 ---
 # <a name="azure-sentinel-and-microsoft-teams"></a>Azure Sentinel e Microsoft Teams
 
 > [!IMPORTANT]
 > Azure Sentinel ha ora un connettore integrato. Per altre informazioni, vedere [Collegare i log di Office 365 ad Azure Sentinel](/azure/sentinel/connect-office-365). Questa è la route consigliata per raccogliere questi log e sostituisce i metodi di raccolta descritti di seguito.
 
-Teams riveste un ruolo centrale sia nella comunicazione che nella condivisione di dati nel cloud di Microsoft 365. Poiché il servizio Teams è in contatto con così tante tecnologie sottostanti nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda la *ricerca nei log*, ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
+Teams riveste un ruolo centrale nella comunicazione e nella condivisione di dati nel cloud di Microsoft 365. Poiché Teams è in contatto con così tante tecnologie nel cloud, può trarre beneficio dall'analisi automatica e manuale, non solo per quanto riguarda *la ricerca nei log*, ma anche per il *monitoraggio in tempo reale delle riunioni*. Azure Sentinel offre agli amministratori queste soluzioni.
 
 > [!NOTE]
 > Per un ripasso su Azure Sentinel, vedere [questo articolo](/azure/sentinel/overview).
 
 ## <a name="sentinel-and-microsoft-teams-activity-logs"></a>Sentinel e i log attività di Microsoft Teams
 
-Questo articolo è incentrato sulla raccolta dei log attività di Teams in Azure Sentinel. Oltre a consentire agli amministratori di gestire la sicurezza in un'unica interfaccia, inclusi dispositivi di terze parti selezionati, Microsoft Threat Protection e altri carichi di lavoro di Microsoft 365, le cartelle di lavoro e i runbook di Sentinel consentono di rendere il monitoraggio della sicurezza sistematico. Un buon primo passo in questo processo è la raccolta dei log necessari per l'analisi.
+Questo articolo è incentrato sulla raccolta dei log attività di Teams in Azure Sentinel.
+
+Sentinel consente agli amministratori di eseguire attività di gestione della sicurezza in un’unica posizione. Ciò include la gestione di:
+
+- dispositivi di terze parti
+- Microsoft Threat Protection
+- Carichi di lavoro di Microsoft 365
+
+Le cartelle di lavoro e i runbook di Sentinel possono rendere il monitoraggio della sicurezza *sistematico*. Un buon primo passo in questo processo è la raccolta dei log necessari per l'analisi.
 
 > [!NOTE]
 > È possibile visualizzare più abbonamenti a Microsoft 365 nella stessa istanza di Azure Sentinel. Questo consentirà il [monitoraggio in tempo reale](/azure/sentinel/livestream) e la ricerca di minacce nei file di log cronologici. Gli amministratori potranno svolgere le ricerche usando [query tra risorse](/azure/azure-monitor/log-query/cross-workspace-query), ovvero all'interno di un unico gruppo di risorse, tra gruppi di risorse o in un altro abbonamento.
 
-## <a name="step-1-collect-teams-logs"></a>Passaggio 1: Raccogliere i log di Teams
+## <a name="step-1-collect-teams-logs-enable-audit-logs-in-microsoft-365"></a>Passaggio 1: raccogliere log di Teams: abilitare i log di controllo in Microsoft 365
 
-Questa sezione include tre parti:
+Poiché Teams registra le attività tramite Microsoft 365, i log di controllo non vengono raccolti per impostazione predefinita. Attivare questa funzionalità seguendo [questi passaggi](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). I dati di Teams vengono raccolti nel log di controllo di Microsoft 365 in *Audit.General*.
 
-1. Abilitazione dei log di controllo in **Microsoft 365**.
-2. Registrazione di un'app in **Microsoft Azure** per consentire l'autenticazione e l'autorizzazione per la raccolta di log.
-3. Registrazione della sottoscrizione per l'API che consentirà la raccolta di log con l'API Microsoft 365 tramite **PowerShell**.
+## <a name="step-2-connect-office-365-logs-to-azure-sentinel"></a>Passaggio 2: collegare i log di Office 365 ad Azure Sentinel
 
-### <a name="enable-audit-logs-in-microsoft-365"></a>Abilitare i log di controllo in Microsoft 365
-
-Poiché Teams registra le attività tramite Microsoft 365, i log di controllo non vengono raccolti per impostazione predefinita. Attivare questa funzionalità seguendo [questi passaggi](/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&viewFallbackFrom=o365-worldwide%c2%a0). I dati di Teams vengono raccolti nel log di controllo di Microsoft 365 in *Audit.General*.
-
-### <a name="register-an-app-in-microsoft-azure-for-log-collection"></a>Registrare un'app in Microsoft Azure per la raccolta di log
-
-> [!TIP]
-> Prima di iniziare, è necessario prendere nota dell'**ID applicazione/ID client** e dell'**ID tenant** per usarli più avanti. Registrarli mentre si esegue la procedura di registrazione dell'app riportata sotto. Verranno visualizzati entrambi gli ID.
->- Dopo la creazione dell'app, fare clic su Registrazione app sulla barra laterale di avvio veloce > individuare il nome visualizzato della nuova app > copiare l'ID applicazione (client).
->- Fare clic su Panoramica sulla barra laterale di avvio veloce > copiare l'ID della directory (tenant).
-
-Autenticare e autorizzare un'app di Azure Active Directory (Azure AD) per la raccolta di dati di log dall'API.
-
-1. Passare al pannello *Azure AD* nel portale di Azure.
-2. Fare clic su *Registrazioni app* sulla barra laterale di avvio veloce.
-3. Selezionare *Nuova registrazione*.
-4. Assegnare un nome all'app per la raccolta di log di Teams e fare clic su *Registra*.
-5. Seguire questo percorso: *Autorizzazioni API* > *Aggiungi un'autorizzazione* > *API di gestione di Office 365* > *Autorizzazioni applicazione*.
-6. Espandere Feed attività e selezionare *ActivityFeed.Read*.
-7. Scegliere *Fornisci il consenso amministratore*. Quando viene richiesto di confermare, fare clic su Sì.
-8. Fare clic su *Certificati e segreti* nella barra laterale > pulsante *Nuovo segreto client*.
-9. Nella finestra Nuovo segreto client immettere una descrizione per il nuovo segreto client, assicurarsi di scegliere "Mai" per la scadenza e quindi fare clic su *Aggiungi*.
-
-> [!IMPORTANT]
-> È **fondamentale** copiare il nuovo segreto client in una voce di gestione password associata al nome dell'app appena creata. Non sarà possibile visualizzare di nuovo il segreto dopo aver chiuso il pannello di Azure (*pannello* è il termine usato in Azure per indicare una finestra).
-
-### <a name="register-the-api-with-powershell-to-collect-teams-logs"></a>Registrare l'API con PowerShell per raccogliere i log di Teams
-
-Il passaggio finale della configurazione consiste nel raccogliere e registrare la sottoscrizione dell'API in modo che sia possibile raccogliere i dati di log. Questa operazione viene eseguita tramite chiamate REST di PowerShell all'API Microsoft 365 Management Activity.
-
-Prepararsi a inserire l'**ID applicazione (client)**, il nuovo **segreto client**, il **dominio URL per Microsoft 365** e l'**ID directory (tenant)** nel cmdlet di PowerShell di seguito.
-
-```PowerShell
-$ClientID = "<Application (client) ID>"  
-$ClientSecret = "<Client secret>"  
-$loginURL = "https://login.microsoftonline.com/"  
-$tenantdomain = "<domain>.onmicrosoft.com"  
-
-$TenantGUID = "<Directory (tenant) ID>"  
-$resource = "https://manage.office.com"  
-$body = @{grant_type="client_credentials";resource=$resource;client_id=$ClientID;client_secret=$ClientSecret}
-$oauth = Invoke-RestMethod -Method Post -Uri $loginURL/$tenantdomain/oauth2/token?api-version=1.0 -Body $body  
-$headerParams = @{'Authorization'="$($oauth.token_type) $($oauth.access_token)"}
-$publisher = New-Guid
-Invoke-WebRequest -Method Post -Headers $headerParams -Uri "https://manage.office.com/api/v1.0/$tenantGuid/activity/feed/subscriptions/start?contentType=Audit.General&PublisherIdentifier=$Publisher"
-```
-
-## <a name="step-2-deploy-a-sentinel-playbook-to-ingest-the-teams-logs"></a>Passaggio 2: Distribuire un playbook di Sentinel per inserire i log di Teams
-
-I playbook di Azure Sentinel, anche detti app per la logica, consentiranno ad Azure di inserire i dati di Teams raccolti. L'app per la logica interroga Office 365 per trovare i dati di controllo che scrive nell'area di lavoro di Azure Sentinel.
-
-Usare [questo](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/Get-O365Data) modello ARM per distribuire il playbook di Sentinel.
-
-Aspetti da ricordare:
-
-1. Sarà necessario esaminare il modello ARM e sostituire alcuni valori con valori appropriati per l'ambiente in uso.
-2. Tra l'inserimento dei log e la visualizzazione dei risultati in Azure Sentinel trascorrerà del tempo.
-
-   Attendere 5 o 10 minuti, tenendo presente che se non ci sono dati relativi agli ultimi 5 minuti verrà visualizzato un messaggio di errore. Controllare i log di controllo tenendo presente che, poiché le informazioni di Teams si trovano tra gli eventi Audit.General, che contengono altro oltre ai log di Teams, nei sistemi in uso i risultati dovrebbero essere visualizzati entro 5 o 10 minuti. Se si usa un ambiente di testo, accertarsi di usare Teams per generare la registrazione.
-
-![Immagine che mostra le classi dell'app per la logica.](media/tracyp-teams-sentinel-logic-app.png#thumbnail)
-
- <p><details><summary> Spiegazione delle azioni nella figura: 
-  </summary>
-
-  • Ricorrenza è il trigger dell'app per la logica che indica che il flusso di lavoro deve essere eseguito ogni ora.
-  <p>
-• L'azione Ora corrente è molto semplice e ottiene semplicemente l'orario attuale.
-  <p>
-• Inizializza variabile crea una variabile denominata NextPage e la imposta su 1. Verrà usata in seguito per gestire la paginazione dall'API Office 365.
-  <p>
-• Inizializza variabile 2 crea una variabile vuota denominata StartTime.
-  <p>
-• Esegui la query ed elenca i risultati è un'azione di Monitoraggio di Azure che eseguirà una query sull'area di lavoro per l'ultimo log di Office 365 immesso dall'app per la logica.
-  <p>
-• Condizione 4 serve per verificare se l'azione Esegui la query ed elenca i risultati ha restituito i dati. Questa operazione viene eseguita per controllare se è la prima volta che si usa l'app per la logica. Se non vengono restituiti dati, la variabile StartTime viene impostata su Adesso - 24 ore. Se vengono restituiti dati, StartTime è impostato sul valore TimeGenerated dell'ultimo record. Questa operazione viene eseguita in modo che la query possa recuperare dati dall'ultima voce fino ad ora nel polling dell'API Office 365, o nelle ultime 24 ore se si tratta della prima esecuzione.
-  <p>
-• Inizializza variabile 3 crea una variabile vuota denominata AvailableUri. Si tratta di una stringa con l'URL generato usando StartTime e CurrentTime rispettivamente come ora di inizio e ora di fine.
-  <p>
-• La condizione Until è un ciclo che consente all'app per la logica di continuare a eseguire il polling dell'API per vedere se sono presenti altri dati (paginazione). Finché la variabile NextPage è 1, il ciclo continuerà. In seguito questa variabile verrà aggiornata se non ci sono altre pagine da recuperare.
-  <p>
-• All'interno del ciclo Until, il primo passaggio HTTP effettua la connessione ad AvailableURI. Questo URI restituisce un elenco del contenuto disponibile e l'URI di ogni contenuto. Per saperne di più, vedere questo articolo: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#list-available-content.
-  <p>
-• Viene poi eseguito un controllo per verificare che vengano restituiti dati. La condizione controlla se la lunghezza del corpo è 0. In caso affermativo, non sono disponibili dati da scrivere in Log Analytics. Se il valore è maggiore di 0, sono presenti dati da elaborare.
-  <p>
-• Se vengono rilevati dati, sarà necessario elaborarli. Analizza JSON definisce uno schema dei dati restituiti. Questo consente alle app per la logica di usare i dati analizzati come contenuto dinamico nei passaggi successivi.
-  <p>
-• Poiché l'elenco di dati disponibili restituito è una matrice, viene usata un'azione For Each per scorrere l'elenco di contenuto disponibile.
-  <p>
-• A questo punto viene recuperato il contenuto.  HTTP viene usato nuovamente per ottenere contentUri, una proprietà dinamica creata da Analizza JSON, che è l'URL dei dati da recuperare.
-  <p>
-• Analizza JSON consente anche di analizzare i dati restituiti. È possibile trovare contenuto di esempio all'URL: https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#list-available-content.
-  <p>
-• Anche i dati restituiti sono una matrice. Anche in questo caso si può quindi usare un ciclo For Each. In questo ciclo, il flusso di lavoro acquisisce l'elemento di dati corrente e usa l'azione Invia dati per scrivere i dati in Log Analytics.
-  <p>
-• Poiché potrebbero esserci più pagine di contenuto disponibile, una condizione controlla se NextPageUri non è NULL. Se è NULL, o vuoto, NextPage viene impostato su 0, terminando così il ciclo Until. Se contiene un URL, la variabile AvaibleUri viene aggiornata all'URL. In questo modo, la successiva esecuzione del ciclo Until userà un URL disponibile successivo e non l'URL iniziale.
-
-  </details>
-
-> [!TIP]
-> È possibile scegliere di usare una *funzione di Azure* per inserire questi log e, in tal caso, le informazioni su come distribuirla sono disponibili [qui](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/O365%20Data)o [qui](https://github.com/Azure/Azure-Sentinel/tree/master/DataConnectors/O365%20DataCSharp), in base alle preferenze.
-
-Con il connettore in esecuzione, indipendentemente dall'opzione scelta, dovrebbe essere visualizzata una tabella personalizzata denominata O365API_CL nell'area di lavoro di Azure Sentinel. Questa tabella ospiterà i log di Teams.
-
-## <a name="step-3-use-sentinel-to-monitor-microsoft-teams"></a>Passaggio 3: Usare Sentinel per monitorare Microsoft Teams
-
-L'identità è un vettore di attacco importante da monitorare in Microsoft Teams. Poiché Azure Active Directory (Azure AD) è alla base della directory di Microsoft 365, incluso Teams, la raccolta e la ricerca di minacce relative all'autenticazione nei log di Azure AD saranno utili per individuare comportamenti sospetti relativi all'identità. È possibile usare il connettore integrato per eseguire il pull dei dati di Azure Active Directory in Azure Sentinel e usare queste query di [rilevamento](https://github.com/Azure/Azure-Sentinel/tree/master/Detections/SigninLogs) e [ricerca](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/SigninLogs) per individuare i problemi.
-
-Per quanto riguarda gli attacchi specifici di Microsoft Teams, le minacce ai dati, ad esempio, Azure Sentinel offre anche il modo di monitorarli e cercarli.
-
-### <a name="create-a-parser-for-your-data"></a>Creare un parser per i dati
-
-La prima cosa da fare per interpretare l'ampio set di dati raccolti consiste nel darvi un senso mediante l'analisi. Questa operazione si può eseguire con una funzione in linguaggio di query Kusto (KQL) che semplifica l'uso dei dati.
-
-> [!NOTE]
-> Le funzioni KQL sono query KQL salvate come tipo di dati "function". Le funzioni KQL hanno un alias che può essere immesso nella casella della query in Sentinel per ripetere velocemente l'esecuzione della query. Per altre informazioni sulle funzioni KQL e su come creare una funzione parser, leggere [questo articolo della Tech Community](https://techcommunity.microsoft.com/t5/azure-sentinel/using-kql-functions-to-speed-up-analysis-in-azure-sentinel/ba-p/712381).
+Azure sentinel fornisce un connettore incorporato per i log di Office 365, che consente di inserire i dati di Teams in Azure Sentinel e altri dati di Office 365.
  
- Il parser seguente è un esempio personalizzabile il cui scopo è selezionare un subset dei campi dell'API di gestione di Office 365 pertinenti per *Teams*. Esiste anche un parser [GitHub](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Teams_parser.txt) suggerito, ma quello che segue può essere modificato in base a esigenze e preferenze diverse.
-
-```kusto
-O365API_CL
-| where Workload_s =~ "MicrosoftTeams"
-| project TimeGenerated,
-          Workload=Workload_s,
-          Operation=Operation_s,
-          TeamName=columnifexists('TeamName_s', ""),
-          UserId=columnifexists('UserId_s', ""),
-          AddOnName=columnifexists('AddOnName_s', AddOnGuid_g),
-          Members=columnifexists('Members_s', ""),
-          Settings=iif(Operation_s contains "Setting", pack("Name", columnifexists('Name_s', ""), "Old Value", columnifexists('OldValue_s', ""), "New Value", columnifexists('NewValue_s', "")),""),
-          Details=pack("Id", columnifexists('Id_g', ""),  "OrganizationId", columnifexists('OrganizationId_g', ""), "UserType", columnifexists('UserType_d', ""), "UserKey", columnifexists('UserKey_g', ""), "TeamGuid", columnifexists('TeamGuid_s', "")) 
-```
- Salvare il parser come funzione KQL, con l'alias TeamsData. Verrà usato per le query successive. I dettagli sulla configurazione e sull'uso di una funzione KQL come parser sono disponibili in questo[ articolo della Tech Community](https://techcommunity.microsoft.com/t5/azure-sentinel/using-kql-functions-to-speed-up-analysis-in-azure-sentinel/ba-p/712381).
+In Azure Sentinel, abilitare il connettore di dati di Office 365. Per altre informazioni, vedere la [Documentazione di Azure Sentinel](/azure/sentinel/connect-office-365).
 
 ## <a name="helpful-hunting-kql-queries"></a>Query KQL utili per la ricerca
 
 Usare queste query per acquisire familiarità con i dati e l'ambiente di Teams. Conoscere l'aspetto e il comportamento che l'ambiente dovrebbe avere è un buon primo passo per riconoscere le attività sospette. Fatto questo, ci si può dedicare alla ricerca delle minacce.
 
-#### <a name="federated-external-users-query"></a>Query per utenti esterni federati
+### <a name="federated-external-users-query"></a>Query per utenti esterni federati
 
-Questa query consente di ottenere l'elenco dei siti di Teams con utenti esterni federati. Questi utenti avranno un suffisso del nome di dominio o UPN che *non è* di proprietà dell'organizzazione. In questa query di esempio l'organizzazione è proprietaria di contoso.com.
+Questa query consente di ottenere l'elenco dei siti di Teams con utenti esterni federati. Questi utenti avranno un suffisso del nome di dominio e/o UPN che non è di proprietà dell'organizzazione.
 
-```kusto
-TeamsData
+In questa query di esempio l'organizzazione è proprietaria di contoso.com.
+
+```Kusto
+OfficeActivity
 | where TimeGenerated > ago(7d)
 | where Operation =~ "MemberAdded"
-| extend UPN = tostring(parse_json(Members)[0].Upn)
-| where UPN !endswith "contoso.com"
 | where parse_json(Members)[0].Role == 3
-| project TeamName, Operation, UserId, Members, UPN
+| project TeamName, Operation, UserId, Members
+| mv-expand bagexpansion=array Members
+| evaluate bag_unpack(Members)
 ```
 
 > [!TIP]
-> Per altre informazioni sui tipi di accesso esterno e guest in Teams, vedere [questo articolo](./communicate-with-users-from-other-organizations.md)o la sezione *Tipi di partecipante* nella [Guida alla sicurezza di Teams](./teams-security-guide.md).
+> Per altre informazioni sui tipi di accesso esterno e guest in Teams, vedere [Comunicare con utenti di altre organizzazioni](communicate-with-users-from-other-organizations.md), o la sezione [Tipi di partecipanti](teams-security-guide.md#participant-types) nella Guida alla sicurezza di Teams.
 
-#### <a name="who-recently-joined--whose-role-changed"></a>Chi si è unito di recente/chi ha cambiato ruolo
+### <a name="who-recently-joined--whose-role-changed"></a>Chi si è unito di recente/chi ha cambiato ruolo
 
-Eseguire una query su uno specifico utente per controllare se è stato aggiunto a un canale di Teams negli ultimi 7:
+Eseguire una query su uno specifico utente per controllare se è stato aggiunto a un canale di Teams negli ultimi 7 giorni o entro una settimana:
 
-```kusto
-TeamsData
+```Kusto
+OfficeActivity
 | where TimeGenerated > ago(7d)
 | where Operation =~ "MemberAdded"
-| where Members contains "UserName"
+| where Members has "<DisplayName>" or Members has "<UserPrincipalName>"
+| project TeamName, Operation, UserId, Members
 ```
 
-Controllare se il ruolo di un utente in un team è stato cambiato negli ultimi 7 giorni:
+Controllare se il ruolo di un utente in un team è stato cambiato negli ultimi sette giorni:
 
-```kusto
-TeamsData
+```Kusto
+OfficeActivity
 | where TimeGenerated > ago(7d)
 | where Operation =~ "MemberRoleChanged"
-| where Members contains "Role" and Members contains "1"
-```
+| project TeamName, Operation, UserId, Members
+| mv-expand bagexpansion=array Members
+| evaluate bag_unpack(Members)
+| where Role == '1'
+``` 
 
-#### <a name="external-users-from-unknown-or-new-organizations"></a>Utenti esterni di organizzazioni sconosciute o nuove
+### <a name="external-users-from-unknown-or-new-organizations"></a>Utenti esterni di organizzazioni sconosciute o nuove
 
 In Teams è possibile aggiungere utenti esterni ai propri canali o al proprio ambiente. Spesso le organizzazioni hanno un numero limitato di partnership strategiche e aggiungono utenti da queste società partner. Questa query KQL esamina gli utenti esterni aggiunti ai team che provengono da organizzazioni mai viste o aggiunte in precedenza.
 
-```kusto
-// If you have more than 14 days worth of Teams data change this value 
-let data_date = 14d; 
-// If you want to look at users further back than the last day change this value 
-let lookback_data = 1d; 
-let known_orgs = ( 
-TeamsData  
-| where TimeGenerated > ago(data_date) 
-| where Operation =~ "MemberAdded" or Operation =~ "TeamsSessionStarted" 
-// Extract the correct UPN and parse our external organization domain 
-| extend UPN = iif(Operation == "MemberAdded", tostring(parse_json(Members)[0].UPN), UserId) 
-| extend Organization = tostring(split(split(UPN, "_")[1], "#")[0]) 
-| where isnotempty(Organization) 
-| summarize by Organization); 
-TeamsData  
-| where TimeGenerated > ago(lookback_data) 
-| where Operation =~ "MemberAdded" 
-| extend UPN = tostring(parse_json(Members)[0].UPN) 
-| extend Organization = tostring(split(split(UPN, "_")[1], "#")[0]) 
-| where isnotempty(Organization) 
-| where Organization !in (known_orgs) 
-// Uncomment the following line to map query entities is you plan to use this as a detection query 
-//| extend timestamp = TimeGenerated, AccountCustomEntity = UPN 
-```
+Per altre informazioni, vedere la query [nel github della community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/ExternalUserFromNewOrgAddedToTeams.yaml).
 
-#### <a name="external-users-who-were-added-and-then-removed"></a>Aggiunta e successiva rimozione di utenti esterni
+### <a name="external-users-who-were-added-and-then-removed"></a>Aggiunta e successiva rimozione di utenti esterni
 
 Gli utenti malintenzionati con qualche livello di accesso esistente possono aggiungere un nuovo account esterno a Teams per accedere ed esfiltrare dati. Possono anche rimuovere rapidamente l'utente per nascondere l'accesso. Questa query cerca account esterni aggiunti a Teams e rimossi rapidamente, per identificare comportamenti sospetti.
 
-```kusto
-// If you want to look at user added further than 7 days ago adjust this value 
-let time_ago = 7d; 
-// If you want to change the timeframe of how quickly accounts need to be added and removed change this value 
-let time_delta = 1h; 
-TeamsData  
-| where TimeGenerated > ago(time_ago) 
-| where Operation =~ "MemberAdded" 
-| extend UPN = tostring(parse_json(Members)[0].UPN) 
-| project TimeAdded=TimeGenerated, Operation, UPN, UserWhoAdded = UserId, TeamName, TeamGuid = tostring(Details.TeamGuid) 
-| join ( 
-TeamsData  
-| where TimeGenerated > ago(time_ago) 
-| where Operation =~ "MemberRemoved" 
-| extend UPN = tostring(parse_json(Members)[0].UPN) 
-| project TimeDeleted=TimeGenerated, Operation, UPN, UserWhoDeleted = UserId, TeamName, TeamGuid = tostring(Details.TeamGuid)) on UPN, TeamGuid 
-| where TimeDeleted < (TimeAdded + time_delta) 
-| project TimeAdded, TimeDeleted, UPN, UserWhoAdded, UserWhoDeleted, TeamName, TeamGuid 
-// Uncomment the following line to map query entities is you plan to use this as a detection query 
-//| extend timestamp = TimeAdded, AccountCustomEntity = UPN 
-```
+Per altre informazioni, vedere la query [nel github della community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Detections/OfficeActivity/ExternalUserAddedRemovedInTeams.yaml).
 
-#### <a name="new-bot-or-application-added"></a>Aggiunta di nuovi bot o applicazioni
+### <a name="new-bot-or-application-added"></a>Aggiunta di nuovi bot o applicazioni
 
-Teams offre la possibilità di includere app o bot in un team per estendere il set di funzionalità. Questo include app e bot personalizzati. In alcuni casi, un'app o un bot potrebbe essere usato per stabilire la persistenza in Teams senza bisogno di un account utente, oltre che per accedere ai file e ad altri dati. Questa query cerca nuove app o bot in Teams.
+Teams può includere app o bot in un team per estendere il set di caratteristiche (incluse le app e i bot personalizzati). In alcuni casi, un'app o un bot può essere usato per *persistenza* in Teams senza bisogno di un account utente e può accedere ai file e ad altri dati. Questa query cerca nuove app o bot in Teams.
 
-```kusto
-// If you have more than 14 days worth of Teams data change this value 
-let data_date = 14d; 
-let historical_bots = ( 
-TeamsData 
-| where TimeGenerated > ago(data_date) 
-| where isnotempty(AddOnName) 
-| project AddOnName); 
-TeamsData 
-| where TimeGenerated > ago(1d) 
-// Look for add-ins we have never seen before 
-| where AddOnName in (historical_bots) 
-// Uncomment the following line to map query entities is you plan to use this as a detection query 
-//| extend timestamp = TimeGenerated, AccountCustomEntity = UserId 
-```
+Per altre informazioni, vedere la query [nel github della community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/NewBotAddedToTeams.yaml).
 
-#### <a name="user-accounts-who-are-owners-of-large-numbers-of-teams"></a>Account utente proprietari di un numero elevato di team
+### <a name="user-accounts-who-are-owners-of-large-numbers-of-teams"></a>Account utente proprietari di un numero elevato di team
 
-Gli utenti malintenzionati che provano a elevare i propri privilegi possono assegnare a se stessi privilegi proprietario di un numero elevato di team diversi, mentre in genere gli utenti creano e possiedono un numero limitato di team su argomenti specifici. Questa query KQL cerca i comportamenti sospetti.
+Gli utenti malintenzionati che provano a elevare i propri privilegi possono assegnare a se stessi privilegi proprietario di un numero elevato di team diversi, mentre *In genere*, gli utenti creano e possiedono un numero limitato di team su argomenti specifici. Questa query KQL cerca i comportamenti sospetti.
 
-```kusto
-// Adjust this value to change how many teams a user is made owner of before detecting 
-let max_owner_count = 3; 
-// Change this value to adjust how larger timeframe the query is run over. 
-let time_window = 1d; 
-let high_owner_count = (TeamsData 
-| where TimeGenerated > ago(time_window) 
-| where Operation =~ "MemberRoleChanged" 
-| extend Member = tostring(parse_json(Members)[0].UPN)  
-| extend NewRole = toint(parse_json(Members)[0].Role)  
-| where NewRole == 2 
-| summarize dcount(TeamName) by Member 
-| where dcount_TeamName > max_owner_count 
-| project Member); 
-TeamsData 
-| where TimeGenerated > ago(time_window) 
-| where Operation =~ "MemberRoleChanged" 
-| extend Member = tostring(parse_json(Members)[0].UPN)  
-| extend NewRole = toint(parse_json(Members)[0].Role)  
-| where NewRole == 2 
-| where Member in (high_owner_count) 
-| extend TeamGuid = tostring(Details.TeamGuid) 
-// Uncomment the following line to map query entities is you plan to use this as a detection query 
-//| extend timestamp = TimeGenerated, AccountCustomEntity = Member 
-```
+Per altre informazioni, vedere la query [nel github della community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultiTeamOwner.yaml).
 
-#### <a name="many-team-deletions-by-a-single-user"></a>Numerose eliminazioni di team da parte di un singolo utente
+### <a name="many-team-deletions-by-a-single-user"></a>Numerose eliminazioni di team da parte di un singolo utente
 
 Gli utenti malintenzionati possono causare interruzioni e mettere in pericolo progetti e dati eliminando più team. Poiché i team vengano generalmente eliminati dai singoli proprietari, l'eliminazione centrale di molti team può essere un segnale di problemi. Questa query KQL cerca singoli utenti che eliminano più team.
 
-```kusto
- // Adjust this value to change how many Teams should be deleted before including
- let max_delete = 3;
- // Adjust this value to change the timewindow the query runs over
- let time_window = 1d;
- let deleting_users = (
- TeamsData 
- | where TimeGenerated > ago(time_window)
- | where Operation =~ "TeamDeleted"
- | summarize count() by UserId
- | where count_ > max_delete
- | project UserId);
- TeamsData
- | where TimeGenerated > ago(time_window)
- | where Operation =~ "TeamDeleted"
- | where UserId in (deleting_users)
- | extend TeamGuid = tostring(Details.TeamGuid)
- | project-away AddOnName, Members, Settings
- // Uncomment the following line to map query entities is you plan to use this as a detection query
- //| extend timestamp = TimeGenerated, AccountCustomEntity = UserId
-```
+Per altre informazioni, vedere la query [nel github della community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/blob/master/Hunting%20Queries/OfficeActivity/MultipleTeamsDeletes.yaml).
 
-#### <a name="expanding-your-thread-hunting-opportunities"></a>Espansione delle opportunità di ricerca delle minacce
+### <a name="expanding-your-threat-hunting-opportunities"></a>Espansione delle opportunità di ricerca delle minacce
 
-È possibile espandere la ricerca combinando le query di risorse come Azure Active Directory (Azure AD) o altri carichi di lavoro di Office 365 con le query di Teams. Ad esempio, si può combinare il rilevamento degli schemi sospetti nei log di accesso (SigninLogs) di Azure AD e usare tali informazioni durante la ricerca dei proprietari di team.
+Combinando le query di risorse come Azure Active Directory (Azure AD) o altri carichi di lavoro di Office 365 possono essere usati con le query di Teams. Per esempio, combinare il rilevamento degli schemi sospetti nei log di accesso (SigninLogs) di Azure AD e usare tali output durante la ricerca dei proprietari del team.
 
-```kusto
+```Kusto
 let timeRange = 1d;
 let lookBack = 7d;
 let threshold_Failed = 5;
@@ -397,31 +178,30 @@ by UserPrincipalName, UserId, UserDisplayName, AppDisplayName, Browser, OS, Full
 | summarize StartTime = min(TimeGenerated), EndTime = max(TimeGenerated) by UserPrincipalName, UserId, UserDisplayName, Status, FailedLogonCount, IPAddress, IPAddressCount, AppDisplayName, Browser, OS, FullLocation
 | where (IPAddressCount >= threshold_IPAddressCount and FailedLogonCount >= threshold_Failed) or FailedLogonCount >= threshold_FailedwithSingleIP
 | project UserPrincipalName);
-TeamsData
+OfficeActivity
 | where TimeGenerated > ago(time_window)
 | where Operation =~ "MemberRoleChanged"
-| extend Member = tostring(parse_json(Members)[0].UPN) 
-| extend NewRole = toint(parse_json(Members)[0].Role) 
-| where NewRole == 2
-| where Member in (failed_signins)
-| extend TeamGuid = tostring(Details.TeamGuid)
+| mv-expand bagexpansion=array Members
+| evaluate bag_unpack(Members)
+| where Role == '2'
+| where Members in (failed_signins)
 ```
 
 Inoltre, è possibile rendere i rilevamenti in SigninLogs specifici per Teams, aggiungendo un filtro per i soli accessi basati su Teams usando:
 
-```kusto
-| where AppDisplayName startswith "Microsoft Teams"
+```Kusto
+| where AppDisplayName has 'Teams'
 ```
 
-Per spiegare meglio l'uso di `where AppDisplayName starts with "Microsoft Teams"`, la query KQL seguente illustra un accesso riuscito da un indirizzo IP con un errore da un indirizzo IP diverso, ma con ambito limitato agli accessi di Teams:
+Per spiegare meglio l'uso di *in cui AppDisplayName include Teams*, la query KQL seguente illustra un accesso riuscito da un indirizzo IP con un errore da un indirizzo IP diverso, ma con ambito *limitato* agli accessi di Teams:
 
-```kusto
+```Kusto
 let timeFrame = 1d;
 let logonDiff = 10m;
 SigninLogs 
   | where TimeGenerated >= ago(timeFrame) 
   | where ResultType == "0" 
-  | where AppDisplayName startswith "Microsoft Teams"
+  | where AppDisplayName has "Teams"
   | project SuccessLogonTime = TimeGenerated, UserPrincipalName, SuccessIPAddress = IPAddress, AppDisplayName, SuccessIPBlock = strcat(split(IPAddress, ".")[0], ".", split(IPAddress, ".")[1])
   | join kind= inner (
       SigninLogs 
@@ -438,10 +218,16 @@ SigninLogs
 
 ## <a name="important-information-and-updates"></a>Informazioni e aggiornamenti importanti
 
-**Grazie per la collaborazione sui contenuti a Pete Bryan, Nicholas DiCola e Matthew Lowe.** Pete Bryan e i suoi collaboratori continueranno a sviluppare query di rilevamento e ricerca per Teams, consultare questo repository [GitHub](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/TeamsLogs) per gli aggiornamenti.  Controllare la disponibilità di aggiornamenti per il [parser](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Teams_parser.txt) e l'[app per la logica](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/Get-O365Data) usati in questo articolo. Si può anche entrare a far parte della [community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/wiki) e collaborare. Grazie! Buona caccia alle minacce.
+**Grazie per la collaborazione sui contenuti a Pete Bryan, Nicholas DiCola e Matthew Lowe.** Pete Bryan e i suoi collaboratori continueranno a sviluppare query di rilevamento e ricerca per Teams.
+
+Consultare questo repository [ Github](https://github.com/Azure/Azure-Sentinel/tree/master/Hunting%20Queries/TeamsLogs) per gli aggiornamenti.
+
+Controllare la disponibilità di aggiornamenti per il [parser](https://github.com/Azure/Azure-Sentinel/blob/master/Parsers/Teams_parser.txt) e l'[app per la logica](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks/Get-O365Data) usati in questo articolo.
+
+Si può anche entrare a far parte della [community di Azure Sentinel](https://github.com/Azure/Azure-Sentinel/wiki). Microsoft sta cercando attivamente feedback su questo articolo, quindi usare l’opzione per il feedback riportata di seguito. Grazie a tutti e buona caccia alle minacce.
 
 [Registrazione dell'applicazione in Azure AD](/skype-sdk/ucwa/registeringyourapplicationinazuread%C2%A0%20%20%C2%A0)
 
-[Abilitare o disabilitare la ricerca nel log di controllo](/microsoft-365/compliance/turn-audit-log-search-on-or-off?view=o365-worldwide&viewFallbackFrom=o365-worldwide%c2%a0)
+[Abilitare o disabilitare la ricerca nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 [Che cos'è Azure Sentinel?](/azure/sentinel/overview)

@@ -26,12 +26,12 @@ description: Scopri le funzionalità di assistenza sanitaria come la telemedicin
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 00dbf546166dbc1fd40d633516ac77ffaff3774c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f6048d2413ea92e377358af43c7348abbbe00be1
+ms.sourcegitcommit: ca2230a981a1e3c03437d1ecb8727d66ad6967f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092684"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760599"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -140,7 +140,7 @@ Ulteriori informazioni su [Gestire l'app Elenchi per l'organizzazione in Teams](
 
 ### <a name="track-and-monitor-tasks-with-the-tasks-app"></a>Tieni traccia e monitora le attività con l'app Tasks
 
-Usare [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) in Teams per monitorare le cose da fare per il team sanitario. Il tuo team sanitario può creare, assegnare e pianificare attività, classificare attività e aggiornare lo stato in qualsiasi momento, da qualsiasi dispositivo che esegue Teams.
+Usare [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) in Teams per monitorare le cose da fare per il team sanitario. Il tuo team sanitario può creare, assegnare e pianificare attività, classificare attività e aggiornare lo stato in qualsiasi momento, da qualsiasi dispositivo che esegue Teams. I professionisti IT e gli amministratori possono anche pubblicare attività in team specifici per l'organizzazione. Ad esempio, è possibile pubblicare un set di attività per i nuovi protocolli di sicurezza o un nuovo passaggio di assunzione da usare in un ospedale.
 
 Per ulteriori informazioni vedere [Gestire l'app Tasks per l'organizzazione in Microsoft Teams](../../manage-tasks-app.md)
 

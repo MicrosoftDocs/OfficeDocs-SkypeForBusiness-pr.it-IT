@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Uso delle impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti.
-ms.openlocfilehash: c13c4222b1c6d6fc9e0c6fcdf73e614999f874e5
-ms.sourcegitcommit: b52b6aba289396c4fc10dd856817137eb1bc1f67
+ms.openlocfilehash: 43ea3be7c8c8f99fdc762030ac526b4b068a4214
+ms.sourcegitcommit: 046b020cee8af00a1d0e5f5866f847d42e8ad9a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51617869"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51712778"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestione dei criteri riunione in Teams
 
@@ -451,6 +451,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 - [Consenti alle persone anonime di avviare una riunione](#let-anonymous-people-start-a-meeting)
 - [Ammetti automaticamente le persone](#automatically-admit-people)
 - [Consenti agli utenti che chiamano di ignorare la sala di attesa](#allow-dial-in-users-to-bypass-the-lobby)
+- [Consenti ai membri del team di evitare la sala di attesa](#allow-team-members-to-bypass-the-lobby)
 - [Abilita i sottotitoli in tempo reale](#enable-live-captions)
 - [Consenti l'uso della chat nelle riunioni](#allow-chat-in-meetings)
 
@@ -478,9 +479,10 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
 |**Tutti**   |Tutti i partecipanti accedono direttamente alla riunione senza passare dalla sala di attesa. Sono inclusi utenti autenticati, utenti esterni di organizzazioni attendibili (federati), guest e utenti anonimi.     |
-|**Tutti gli utenti dell'organizzazione e delle organizzazioni federate**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti anonimi attendono nella sala di attesa.   |
-|**Tutti gli utenti dell'organizzazione**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa.  Gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.           |
+|**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti anonimi attendono nella sala di attesa.   |
+|**Utenti dell’organizzazione e guest**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.           |
 |**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi quelli autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa.           |
+|**Utenti dell’organizzazione**  |Gli utenti autenticati all'interno dell'organizzazione, esclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti guest e di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa.|
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
@@ -488,6 +490,10 @@ Questo è un criterio per organizzatore. Questa impostazione consente di control
 
 > [!NOTE]
 > Se un utente con accesso esterno partecipa a una riunione prima che un utente dell'organizzazione acceda alla riunione, verrà inserito nella sala di attesa finché un utente dell'organizzazione non accede alla riunione usando un client di Teams e gli consente di accedere. Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
+
+### <a name="allow-team-members-to-bypass-the-lobby"></a>Consenti ai membri del team di evitare la sala di attesa
+
+I criteri di riunione hanno un’impostazione che consente ai membri del team di evitare la sala di attesa della riunione. È stata aggiunta l’opzione EveryoneInCompanyExcludingGuests che consente agli utenti dell’organizzazione di evitare la sala di attesa, ma che non consente agli utenti guest di farlo.
 
 ### <a name="enable-live-captions"></a>Abilita i sottotitoli in tempo reale
 
@@ -516,7 +522,7 @@ L'impostazione **Chi può essere un relatore?** consente agli organizzatori di s
 
 È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
-Per specificare il valore predefinito dell'impostazione **Chi può essere un relatore?** in Teams, impostare il parametro **DesignatedPresenterRoleMode** su uno dei parametri seguenti:
+Per specificare il valore predefinito dell'impostazione **Chi può essere un relatore?** in Teams, impostare il parametro **DesignatedPresenterRoleMode** su una delle impostazioni seguenti:
 
 - **EveryoneUserOverride**: tutti i partecipanti alla riunione possono essere relatori. Questo è il valore predefinito. Questo parametro corrisponde all'impostazione **Tutti** in Teams.
 - **EveryoneInCompanyUserOverride**: gli utenti autenticati nell'organizzazione, inclusi gli utenti guest, possono essere relatori. Questo parametro corrisponde all'impostazione **Persone dell'organizzazione** in Teams.

@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Scopri come configurare Sistema telefonico per le code di chiamata con Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 963633ef3ba1743522dbbacb93166f20d489e8be
-ms.sourcegitcommit: d3883b3d9de7251e60033bece53a2bab17d7b1b8
+ms.openlocfilehash: 87c65a104b8b6921aecf2ceb860d677cfa8f7d33
+ms.sourcegitcommit: ca2230a981a1e3c03437d1ecb8727d66ad6967f9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51450633"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760589"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -104,6 +104,9 @@ Per aggiungere un gruppo alla coda, fare clic **su Aggiungi gruppi,** cercare il
   - Microsoft Teams phone version 1449/1.0.94.2020051601 o versioni successive
   
 Gli account di Teams degli agenti devono essere impostati sulla modalità Solo Teams. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se tutti gli agenti usano client compatibili.
+
+> [!NOTE]
+> La modalità conferenza non è supportata se le chiamate telefoniche vengono instradati alla coda da un gateway di routing diretto abilitato per il routing in base alla posizione.
 
 **Il metodo di** routing determina l'ordine in cui gli agenti ricevono le chiamate dalla coda. Scegliere una delle opzioni seguenti:
 
