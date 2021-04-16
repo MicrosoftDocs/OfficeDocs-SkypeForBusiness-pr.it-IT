@@ -15,15 +15,15 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+localization_priority: Priority
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 51768d35f70f0008d5d8a2ad7cccb213de9dcc3c
-ms.sourcegitcommit: e55d1623e686db2b183e02052bfe10a0269abb5d
-ms.translationtype: MT
+ms.openlocfilehash: e95277fab2c0813d94cf93aa4c1b207e3b06b46a
+ms.sourcegitcommit: 616403037ddb2d44f06cd9b2eaa9da699b119ef8
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51397569"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768395"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -119,7 +119,7 @@ Ogni team può avere un massimo di 30 canali privati e ogni canale privato può 
 
 Quando si crea un team da uno esistente, eventuali canali privati nel team esistente non verranno copiati.
 
-Al momento, le notifiche provenienti da canali privati non sono incluse nei messaggi di posta elettronica delle attività perse.
+Le notifiche dai canali privati non sono incluse nelle email di attività perse in questo momento.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

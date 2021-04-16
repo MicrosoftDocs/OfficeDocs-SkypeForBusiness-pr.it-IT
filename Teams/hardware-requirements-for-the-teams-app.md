@@ -10,7 +10,7 @@ ms.service: msteams
 ms.collection:
 - M365-collaboration
 - m365initiative-deployteams
-localization_priority: Normal
+localization_priority: Priority
 search.appverid: MET150
 description: In questo articolo verranno descritti i requisiti hardware necessari per installare ed eseguire Microsoft Teams.
 f1.keywords:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f5e6668229ef481d0b6c30683540c060495e0f21
-ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
-ms.translationtype: MT
+ms.openlocfilehash: fe6e1daa0092fdffb92b9a800acd17365e3ffffc
+ms.sourcegitcommit: 616403037ddb2d44f06cd9b2eaa9da699b119ef8
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51262353"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768215"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -35,12 +35,12 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 
 | Componente | Requisiti |
 |---------|---------|
-|Computer e processore    | Minimo 1,6 GHz (o superiore), dual core<br><br>Nota: per i processori Intel, è necessario considerare la velocità massima ottenuta con la tecnologia Intel Turbo Boost Technology (Max Turbo Frequency)         |
+|Computer e processore    | Minimo 1,6 GHz (o superiore), dual core<br><br>Nota: per i processori Intel, bisogna considerare la velocità massima raggiunta utilizzando la tecnologia Intel Turbo Boost (Max Turbo Frequency)         |
 |Memoria     |    4,0 GB di RAM     |
 |Disco rigido    | 3,0 GB di spazio disponibile su disco        |
 |Schermo    |   Risoluzione dello schermo 1024 x 768 |
 |Hardware grafico |  Sistema operativo Windows: l'accelerazione grafica hardware richiede DirectX 9 o versione successiva, con WDDM 2.0 o versione successiva per Windows 10 (o WDDM 1.3 o versione successiva per Windows 10 Fall Creators Update)
-|Sistema operativo  |    Windows 10, Windows 10 in ARM, Windows 8.1, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2|
+|Sistema operativo  |    Windows 10, Windows 10 su ARM, Windows 8.1, Windows Server 2019, Windows Server 2016, Windows Server 2012 R2|
 |Versione .NET    |  Richiede .NET 4.5 CLR o versione successiva       |
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    |
@@ -55,7 +55,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Memoria     |   4,0 GB di RAM      |
 |Disco rigido    |   1,5 GB di spazio disponibile su disco      |
 |Schermo    | Risoluzione 1280 × 800 o superiore    |
-|Sistema operativo  |    Una delle tre versioni più recenti di macOS. È possibile trovare informazioni sulle versioni più recenti di macOS e come aggiornare la propria versione di macOS [qui](https://support.apple.com/en-us/HT201260). Ad esempio, quando viene rilasciata una nuova versione di macOS, la nuova versione e le due immediatamente precedenti diventano le versioni supportate.      |
+|Sistema operativo  |    Una delle tre versioni più recenti di macOS. È possibile trovare informazioni sulle versioni più recenti di macOS e come aggiornare la propria versione di macOS [qui](https://support.apple.com/it-IT/HT201260). Ad esempio, quando viene rilasciata una nuova versione di macOS, la nuova versione e le due immediatamente precedenti diventano le versioni supportate.      |
 |Video  |    Compatibilità con webcam     |
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
 |Videochiamate e riunioni | <ul><li>Richiede un processore dual core. Per una risoluzione di condivisione video/schermo e una frequenza fotogrammi più elevata, si consiglia un processore quad core o superiore. </li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su macOS.</li></ul>
