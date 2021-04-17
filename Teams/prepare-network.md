@@ -7,8 +7,8 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: jastark, kojika
 audience: admin
-description: Informazioni sulla preparazione della rete dell'organizzazione per Microsoft Teams, inclusi i requisiti di rete, l'ottimizzazione della rete e i requisiti di larghezza di banda.
-localization_priority: Normal
+description: Informazioni sulla preparazione della rete delL’organizzazione per Microsoft Teams, tra cui requisiti di rete, ottimizzazione della rete e requisiti di larghezza di banda.
+localization_priority: Priority
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
@@ -19,68 +19,68 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 1c84a753146899011fa34be56e0746cc0c600b31
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
-ms.translationtype: MT
+ms.openlocfilehash: ff6959319a55183f33c8998adc4a4a46c640bca4
+ms.sourcegitcommit: 616403037ddb2d44f06cd9b2eaa9da699b119ef8
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117754"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768385"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
 ## <a name="network-requirements"></a>Requisiti di rete
 
-Se la rete è già stata ottimizzata per [Microsoft 365 o Office 365,](/Office365/Enterprise/assessing-network-connectivity)probabilmente si è pronti per Microsoft Teams. In ogni caso, e soprattutto se si sta stendando Rapidamente Teams come primo carico di lavoro di Microsoft 365 o Office 365 per supportare i lavoratori **remoti,** verificare quanto segue prima di iniziare l'implementazione di Teams:
+Se la rete è già [ottimizzata per Microsoft 365 o Office 365](/Office365/Enterprise/assessing-network-connectivity), è probabile che sia pronta per Microsoft Teams. In ogni caso, e soprattutto se stai implementando rapidamente Teams come primo carico di lavoro di Microsoft 365 o Office 365 per supportare i **lavoratori remoti**, verifica quanto segue prima di iniziare a implementare Microsoft Teams:
 
-1.  Tutte le posizioni hanno accesso a Internet (in modo che possano connettersi a Microsoft 365 o Office 365)? Almeno, oltre al normale traffico Web, assicurati di aver aperto quanto segue, per tutte le posizioni, per i file multimediali in Teams:
+1.  Le sedi della tua organizzazione hanno accesso a Internet (in modo che possano connettersi a Microsoft 365 o Office 365)? Oltre al normale traffico Web, è necessario assicurarsi di aver consentito l’accesso a tutte le sedi e ai supporti in Teams di quanto segue:
 
     |  |  |
     |---------|---------|
-    |Porte     |Porte UDP <strong>da 3478</strong> a <strong>3481</strong>        |
-    |[Indirizzi IP](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) |<strong>13.107.64.0/18,</strong> <strong>52.112.0.0/14</strong>e <strong>52.120.0.0/14</strong>         |
+    |Porte     |Porte UDP da <strong>3478</strong> a <strong>3481</strong>        |
+    |[Indirizzi IP](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) |<strong>13.107.64.0/18</strong>, <strong>52.112.0.0/14</strong> e <strong>52.120.0.0/14</strong>         |
 
     > [!IMPORTANT]
-    > Se è necessario eseguire la federazione con Skype for Business, locale o online, è necessario configurare alcuni record DNS aggiuntivi.
+    > Se è necessario attuare la federazione con Skype® for Business, in locale o online, è necessario configurare altri record DNS.
     >
-    >|Record CNAME /Nome host  |TTL  |Punta all'indirizzo o al valore  |
+    >|Record CNAME/nome host  |TTL  |Indirizzo o valore di puntamento  |
     >|---------|---------|---------|
     >|sip     |    3600     |    sipdir.online.lync.com     |
     >|lyncdiscover     |   3600      |    webdir.online.lync.com     |
     
-2.  Si ha un dominio verificato per Microsoft 365 o Office 365 (ad esempio, contoso.com)?
+2.  Si dispone di un dominio verificato per Microsoft 365 o Office 365 (ad esempio, contoso.com)?
     
-    - Se l'organizzazione non ha eseguito l'implementazione di Microsoft 365 o Office 365, vedere [Introduzione.](/microsoft-365/admin/admin-overview/get-started-with-office-365)
-    - Se l'organizzazione non ha aggiunto o configurato un dominio verificato per Microsoft 365 o Office 365, vedere le domande [frequenti sui domini.](/microsoft-365/admin/setup/domains-faq)
+    - Se l’organizzazione non ha implementato Microsoft 365 o Office 365, consulta la [Guida introduttiva](/microsoft-365/admin/admin-overview/get-started-with-office-365).
+    - Se l’organizzazione non ha aggiunto o configurato un dominio verificato per Microsoft 365 o Office 365, consulta le [Domande frequenti sui domini](/microsoft-365/admin/setup/domains-faq).
 
-3.  L'organizzazione ha distribuito Exchange Online e SharePoint Online?
+3.  L’organizzazione ha implementato Exchange Online e Microsoft SharePoint Online?
     
-    - Se l'organizzazione non ha Exchange Online, vedere Informazioni [sull'interazione tra Exchange e Microsoft Teams.](exchange-teams-interact.md)
-    - Se l'organizzazione non ha SharePoint Online, vedere Informazioni sull'interazione tra SharePoint Online e [OneDrive for Business con Microsoft Teams.](sharepoint-onedrive-interact.md)
+    - Se l’organizzazione non ha implementato Exchange Online, vedi [Informazioni su come interagiscono Exchange e Microsoft Teams](exchange-teams-interact.md).
+    - Se l’organizzazione non ha implementato SharePoint Online, vedi [Informazioni su come Microsoft SharePoint Online e Microsoft OneDrive for Business interagiscono con Microsoft Teams](sharepoint-onedrive-interact.md).
 
-Dopo aver verificato che soddisfi questi requisiti di rete, potresti essere pronto per [l'implementazione di Teams.](./deploy-overview.md) Se si è un'azienda multinazionale di grandi dimensioni o se si sa di avere alcune limitazioni di rete, leggere per informazioni su come valutare e ottimizzare la rete per Teams.
+Dopo aver verificato che i requisiti di rete siano soddisfatti, è possibile [implementare Microsoft Teams](./deploy-overview.md). Nel caso di una grande azienda multinazionale o se si riscontrano limitazioni di rete, leggere le informazioni su come valutare e ottimizzare la rete per Microsoft Teams.
 
 > [!IMPORTANT]
-> **Per gli istituti di** istruzione: se l'organizzazione è un istituto di istruzione e si usa un sistema SIS [(Student](/schooldatasync/) Information System), distribuire School Data Sync prima di distribuire Teams.
+> **Per gli istituti di istruzione**: se l’organizzazione è un istituto di istruzione e si utilizza un sistema informativo degli studenti (SIS), [implementare School Data Sync](/schooldatasync/) prima di implementare Microsoft Teams.
 >  
-> Esecuzione di **Skype for Business Server** locale: se l'organizzazione esegue Skype for Business Server locale (o Lync Server), è necessario configurare Azure AD [Connect](/skypeforbusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Microsoft 365 o Office 365.
+> **Esecuzione in locale di Skype for Business Server**: se l'organizzazione esegue Skype for Business Server (o Lync Server) in locale, è necessario [configurare Azure AD Connect](/skypeforbusiness/hybrid/configure-azure-ad-connect) per sincronizzare la directory locale con Microsoft 365 o Microsoft Office 365.
 
-### <a name="best-practice-monitor-your-network-using-cqd-and-call-analytics"></a>Procedura consigliata: monitorare la rete usando CQD e l'analisi delle chiamate 
+### <a name="best-practice-monitor-your-network-using-cqd-and-call-analytics"></a>Procedura consigliata: monitorare la rete utilizzando Dashboard Qualità della chiamata e Analisi delle chiamate 
 
-Usa il [call quality dashboard (CQD)](turning-on-and-using-call-quality-dashboard.md) per ottenere informazioni approfondite sulla qualità delle chiamate e delle riunioni in Teams. CQD consente di ottimizzare la rete tenendo sotto controllo la qualità, l'affidabilità e l'esperienza utente. CQD esamina la telemetria aggregata per un'intera organizzazione in cui i modelli complessivi possono diventare evidenti, il che consente di identificare i problemi e pianificare le correzioni. Inoltre, CQD fornisce report dettagliati sulle metriche che forniscono informazioni generali sulla qualità, l'affidabilità e l'esperienza utente. 
+Utilizzare [Dashboard Qualità della chiamata (DQC)](turning-on-and-using-call-quality-dashboard.md) per ottenere informazioni dettagliate sulla qualità delle chiamate e delle riunioni in Microsoft Teams. DQC consente di ottimizzare la rete mantenendo sotto controllo la qualità, l’affidabilità e l’esperienza utente. DQC esamina la telemetria aggregata per un’intera organizzazione nella quale è possibile rilevare modelli generali che consentono di identificare i problemi e pianificare le correzioni. Inoltre, DQC fornisce report dettagliati sulle metriche per informazioni dettagliate sulla qualità, l’affidabilità e l’esperienza utente complessive. 
 
-Si userà [l'analisi delle chiamate](set-up-call-analytics.md) per esaminare i problemi di chiamata e riunione per un singolo utente.
+[Analisi delle chiamate](set-up-call-analytics.md) consente di indagare i problemi relativi alle chiamate e alle riunioni per un singolo utente.
 
 ## <a name="network-optimization"></a>Ottimizzazione della rete
 
-Le attività seguenti sono facoltative e non sono necessarie per la distribuzione di Teams, soprattutto se si è una piccola azienda e si è già eseguito l'implementazione di Microsoft 365 o Office 365. Usare queste indicazioni per ottimizzare le prestazioni della rete e di Teams o se si sa di avere alcune limitazioni di rete.
+Le attività seguenti sono facoltative e non sono necessarie per l’implementazione di Microsoft Teams, specialmente nel caso di una piccola azienda che ha già implementato Microsoft 365 o Microsoft Office 365. Attenersi a queste indicazioni per ottimizzare le prestazioni della rete e di Microsoft Teams o in caso di limitazioni di rete.
 
-È consigliabile eseguire un'ulteriore ottimizzazione della rete se:
+È consigliabile eseguire un’ulteriore ottimizzazione della rete se:
 
-  - Teams viene eseguito lentamente (forse la larghezza di banda non è sufficiente)
-  - Le chiamate continuano a essere in uscita (potrebbe essere dovuto a firewall o proxy blocker)
-  - Le chiamate sono statiche e tagliate o le voci suonano come robot (potrebbe essere instabilità o perdita di pacchetti)
+  - L’esecuzione di Microsoft Teams è lenta (ad esempio la larghezza di banda è insufficiente)
+  - Le chiamate si interrompono (probabilmente a causa di blocchi del firewall o del proxy)
+  - Si riscontrano interferenze o distorsioni durante le chiamate oppure riproduzioni audio robotiche (a causa di instabilità o perdita di pacchetti)
 
-Per una discussione approfondita sull'ottimizzazione della rete, incluse indicazioni per l'identificazione e la correzione di problemi di rete, vedere Principi di connettività di rete di [Microsoft 365 e Office 365.](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)
+Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazioni per l’identificazione e la correzione di eventuali problemi di rete, consulta [Principi di connettività di rete di Microsoft 365 e Microsoft Office 365](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles).
 
 <table>
 <thead>
@@ -92,65 +92,65 @@ Per una discussione approfondita sull'ottimizzazione della rete, incluse indicaz
 <tbody>
 <tr class="odd">
 <td>Network Planner</td>
-<td><p>Per informazioni sulla valutazione della rete, inclusi i calcoli della larghezza di banda e i requisiti di rete nelle posizioni fisiche dell'organizzazione, vedere lo strumento <a href="/microsoftteams/network-planner">Network Planner</a> nell'interfaccia di amministrazione <a href="https://admin.teams.microsoft.com">di Teams.</a> Quando si forniscono i dettagli della rete e l'utilizzo di Teams, Network Planner calcola i requisiti di rete per la distribuzione di Teams e della voce cloud nelle posizioni fisiche dell'organizzazione.</p>
-<p>Per uno scenario di esempio, vedere <a href="/microsoftteams/tutorial-network-planner-example">Uso di Network Planner - scenario di esempio.</a></p></td>
+<td><p>Per ricevere assistenza nella valutazione della rete, nonché nei calcoli della larghezza di banda e nei requisiti di rete per le varie sedi dell’organizzazione, consulta lo strumento <a href="/microsoftteams/network-planner">Network Planner</a> nelll’<a href="https://admin.teams.microsoft.com">Interfaccia di amministrazione di Microsoft Teams</a>. Quando si specificano i dettagli della rete e l'uso di Teams, Network Planner calcola i requisiti di rete per la distribuzione di Teams e Cloud Voice nei luoghi fisici dell'organizzazione.</p>
+<p>Per uno scenario di esempio, vedere <a href="/microsoftteams/tutorial-network-planner-example">Utilizzo di Network Planner, scenario di esempio</a>.</p></td>
 </tr>
 <tr class="even">
-<td>Advisor per Teams</td>
-<td><a href="/microsoftteams/use-advisor-teams-roll-out">Advisor per Teams</a> fa parte dell'interfaccia <a href="https://admin.teams.microsoft.com">di amministrazione di Teams.</a> Valuta l'ambiente di Microsoft 365 o Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.</td>
+<td>Assistente per Teams</td>
+<td><a href="/microsoftteams/use-advisor-teams-roll-out">Advisor per Teams</a> fa parte dell’<a href="https://admin.teams.microsoft.com">interfaccia di amministrazione di Microsoft Teams</a>. Valuta l'ambiente di Microsoft 365 o Office 365 e identifica le configurazioni più comuni che può essere necessario aggiornare o modificare prima che sia possibile implementare correttamente Teams.</td>
 </tr>
 <tr class="odd">
-<td>Risoluzione dei nomi esterni</td>
-<td>Assicurarsi che tutti i computer che eseguono il client Teams possano risolvere le query DNS esterne per individuare i servizi forniti da Microsoft 365 o Office 365 e che i firewall non impedino l'accesso. Per informazioni sulla configurazione delle porte del firewall, vedere URL e intervalli IP di <a href="/microsoftteams/office-365-urls-ip-address-ranges">Microsoft 365 e Office 365.</a></td>
+<td>Risoluzione del nome esterno</td>
+<td>Assicurarsi che tutti i computer che eseguono il client Teams possano risolvere query DNS esterne per rilevare i servizi forniti da Microsoft 365 o Microsoft Office 365 e che il firewall non impedisca l’accesso. Per informazioni sulla configurazione delle porte del firewall, vai a <a href="/microsoftteams/office-365-urls-ip-address-ranges">URL e intervalli IP di Microsoft 365 e Microsoft Office 365</a>.</td>
 </tr>
 <tr class="odd">
-<td>Mantenere la persistenza della sessione</td>
-<td>Assicurarsi che il firewall non cambi gli indirizzi o le porte NAT (Network Address Translation) mappati per UDP.</td>
+<td>Salvataggio permanente della sessione</td>
+<td>Verificare che il firewall non modifichi gli indirizzi NAT (Network Address Translation) o le porte mappate per UDP.</td>
 </tr><tr class="odd">
 <td>Convalidare le dimensioni del pool NAT</td>
-<td>Convalidare le dimensioni del pool NAT (Network Address Translation) necessarie per la connettività degli utenti. Quando più utenti e dispositivi accedono a Microsoft 365 o Office 365 con <a href="/office365/enterprise/nat-support-with-office-365">NAT (Network Address Translation) o PAT (Port Address Translation),</a>è necessario assicurarsi che i dispositivi nascosti dietro ogni indirizzo IP pubblicamente instradabile non superino il numero supportato. Assicurarsi che ai pool NAT siano assegnati indirizzi IP pubblici adeguati per evitare l'esaurimento delle porte. L'esaurimento delle porte contribuirà a consentire agli utenti e ai dispositivi interni di connettersi al servizio Microsoft 365 o Office 365.</td>
+<td>Convalidare le dimensioni del pool NAT necessarie per la connettività utente. Quando più utenti e dispositivi accedono a Microsoft 365 o Microsoft Office 365 utilizzando <a href="/office365/enterprise/nat-support-with-office-365">NAT (Network Address Translation) o PAT (Port Address Translation)</a>, è necessario assicurarsi che i dispositivi nascosti dietro ogni indirizzo IP instradabile pubblicamente non superino il numero supportato. Assicurarsi che ai pool NAT siano assegnati indirizzi IP pubblici adeguati per prevenire l'esaurimento della porta. L’esaurimento delle porte non consente agli utenti interni e ai dispositivi di connettersi al servizio Microsoft 365 o Microsoft Office 365.</td>
 </tr>
 <tr class="even">
 <td>Routing ai data center Microsoft</td>
-<td><a href="/office365/enterprise/client-connectivity">Implementare il routing più efficiente ai data center Microsoft.</a> Identificare le posizioni che possono usare i punti di uscita locali o locali per connettersi alla rete Microsoft nel modo più efficiente possibile.</td>
+<td><a href="/office365/enterprise/client-connectivity">Implementare il routing ottimizzato ai data center Microsoft</a>. Identificare le posizioni che possono utilizzare i punti di uscita locali per connettersi alla rete Microsoft nel modo più efficiente possibile.</td>
 </tr>
 <tr class="odd">
 <td>Indicazioni per il rilevamento e la prevenzione delle intrusioni</td>
-<td>Se nell'ambiente <a href="/azure/network-watcher/network-watcher-intrusion-detection-open-source-tools"></a> è distribuito un sistema di rilevamento o prevenzione delle intrusioni (IDS/IPS) per un ulteriore livello di sicurezza per le connessioni in uscita, assicurarsi di consentire tutti gli URL di Microsoft 365 o Office 365.</td>
+<td>Se l’ambiente ha implementato un <a href="/azure/network-watcher/network-watcher-intrusion-detection-open-source-tools">Rilevamento intrusioni</a> o un sistema di prevenzione (IDS/IPS) per un livello di sicurezza supplementare per le connessioni in uscita, assicurarsi di autorizzare tutti gli URL di Microsoft 365 o Office 365.</td>
 </tr>
 <tr class="even">
-<td>Configurare la VPN a tunnel diviso</td>
-<td><p>È consigliabile specificare un percorso alternativo per il traffico di Teams che ignora la rete privata virtuale (VPN), comunemente nota come <a href="/windows/security/identity-protection/vpn/vpn-routing">VPN a tunnel diviso.</a> Il tunneling diviso significa che il traffico per Microsoft 365 o Office 365 non passa attraverso la VPN, ma passa direttamente a Microsoft 365 o Office 365. L'esclusione della VPN avrà un impatto positivo sulla qualità di Teams e riduce il carico dai dispositivi VPN e dalla rete dell'organizzazione. Per implementare una VPN a tunnel diviso, collaborare con il fornitore della VPN.</p>
+<td>Configurare split tunneling per VPN</td>
+<td><p>È consigliabile specificare un percorso alternativo per il traffico di Microsoft Teams che ignori la rete privata virtuale (VPN), comunemente nota come <a href="/windows/security/identity-protection/vpn/vpn-routing">Split tunnelling per VPN</a>. Lo split tunnelling per VPN consente di inviare il traffico di Microsoft 365 o Office 365 non alla VPN ma direttamente a Microsoft 365 o Office 365. Ignorare la VPN influisce positivamente sulla qualità di Microsoft Teams e riduce il carico nei dispositivi VPN e nella rete dell’organizzazione. Per implementare lo split tunneling per VPN, contatta il fornitore VPN.</p>
 <p>Altri motivi per cui è consigliabile ignorare la VPN:
 <ul>
-<li><p>Le RETI VPN in genere non sono progettate o configurate per supportare supporti multimediali in tempo reale.</p></li> 
-<li><p>Alcune VPN potrebbero anche non supportare UDP (obbligatorio per Teams).</p></li> 
-<li><p>Le VPN introducono anche un ulteriore livello di crittografia sul traffico multimediale già crittografato.</p></li> 
-<li><p>La connettività a Teams potrebbe non essere efficiente a causa del traffico che blocca i capelli attraverso un dispositivo VPN.</p></li></td>
+<li><p>Le VPN in genere non sono progettate o configurate per supportare il traffico multimediale in tempo reale.</p></li> 
+<li><p>È inoltre possibile che alcune VPN non supportino l’UDP (necessario per Microsoft Teams).</p></li> 
+<li><p>Le VPN introducono anche un livello di crittografia aggiuntivo al traffico multimediale già crittografato.</p></li> 
+<li><p>La connettività a Microsoft Teams potrebbe non essere efficiente a causa dell’hairpinning del traffico tramite un dispositivo VPN.</p></li></td>
 </tr>
 <tr class="odd">
 <td>Implementare QoS</td>
-<td><a href="/microsoftteams/qos-in-teams">Usare la qualità del servizio (QoS)</a> per configurare la priorità dei pacchetti. Questo migliorerà la qualità delle chiamate in Teams e ti aiuterà a monitorare e risolvere i problemi relativi alla qualità delle chiamate. La QoS deve essere implementata in tutti i segmenti di una rete gestita. Anche quando è stato eseguito il provisioning adeguato di una rete per la larghezza di banda, QoS fornisce una riduzione dei rischi in caso di eventi di rete imprevisti. Con QoS, il traffico vocale è prioritario in modo che questi eventi imprevisti non influiscano negativamente sulla qualità.</td>
+<td><a href="/microsoftteams/qos-in-teams">Utilizzare il servizio QoS (Quality of Service)</a> per configurare la priorità dei pacchetti. In tal modo è possibile migliorare la qualità delle chiamate in Microsoft Teams nonché monitorare e risolvere i problemi relativi alla qualità delle chiamate. È necessario implementare QoS in tutti i segmenti di una rete gestita. Anche se per la larghezza di banda è stato eseguito un adeguato provisioning della rete, QoS consente la mitigazione dei rischi in caso di eventi di rete imprevisti. QoS assegna la priorità al traffico vocale in modo da impedire che eventi imprevisti influiscano negativamente sulla qualità.</td>
 </tr>
 <tr class="even">
-<td>Ottimizza WiFi</td>
-<td><p>Analogamente alla VPN, le reti WiFi non sono necessariamente progettate o configurate per supportare supporti multimediali in tempo reale. La pianificazione o l'ottimizzazione di una rete WiFi per supportare Teams è una considerazione importante per una distribuzione di alta qualità. Considerare questi fattori:</p>
+<td>Ottimizzazione WiFi</td>
+<td><p>Proprio come la VPN, le reti WiFi non sono necessariamente progettate o configurate per supportare il traffico multimediale in tempo reale. La pianificazione o l'ottimizzazione di una rete WiFi per supportare Microsoft Teams è una considerazione importante per una distribuzione di alta qualità. Prendere in considerazione questi fattori:</p>
 <ul>
-<li><p>Implementare QoS o WiFi Multimedia (WMM) per garantire che il traffico multimediale sia classificato in modo appropriato sulle reti WiFi.</p></li>
-<li><p>Pianificare e ottimizzare le bande WiFi e il posizionamento dei punti di accesso. L'intervallo di 2,4 GHz potrebbe offrire un'esperienza adeguata a seconda del posizionamento del punto di accesso, ma i punti di accesso sono spesso interessati da altri dispositivi consumer che operano in tale intervallo. L'intervallo di 5 GHz è più adatto ai supporti multimediali in tempo reale a causa della sua fitta gamma, ma richiede più punti di accesso per ottenere una copertura sufficiente. Gli endpoint devono inoltre supportare tale intervallo e devono essere configurati per sfruttare di conseguenza tali bande.</p></li>
-<li><p>Se si usano reti WiFi a banda doppia, valutare l'implementazione dello sterzo a banda. <em>Lo sterzo</em> a banda è una tecnica implementata dai fornitori WiFi per influenzare i client a banda doppia per l'uso dell'intervallo di 5 GHz.</p></li>
-<li><p>Quando i punti di accesso dello stesso canale sono troppo vicini tra loro, possono causare la sovrapposizione del segnale e competere involontariamente, causando un'esperienza negativa per l'utente. Assicurarsi che i punti di accesso uno accanto all'altro siano su canali che non si sovrappongono.</p></li>
+<li><p>Implementare QoS o Wi-Fi Multimedia (WMM) per garantire che il traffico multimediale abbia la priorità appropriata sulle reti Wi-Fi.</p></li>
+<li><p>Pianificare e ottimizzare le bande Wi-Fi e il posizionamento del punto di accesso. L’intervallo a 2,4 GHz potrebbe offrire un’esperienza adeguata a seconda del posizionamento del punto di accesso. Tuttavia, i punti di accesso sono spesso influenzati da altri dispositivi di consumo che operano nell’intervallo. L'intervallo a 5 GHz è più adatto al traffico multimediale in tempo reale grazie al fitto intervallo ma richiede più punti di accesso per ottenere una copertura sufficiente. Gli endpoint devono inoltre supportare tale intervallo ed essere configurati per sfruttare tali bande di conseguenza.</p></li>
+<li><p>Se si utilizzano reti WiFi dual band, prendere in considerazione l’implementazione del band steering. <em>Il band steering</em> è una tecnica implementata dai fornitori di reti WiFi per influenzare i client dual band a utilizzare l'intervallo a 5 GHz.</p></li>
+<li><p>Quando i punti di accesso dello stesso canale sono troppo vicini tra loro, possono causare la sovrapposizione del segnale e competere involontariamente, causando una brutta esperienza per l'utente. Assicurarsi che i punti di accesso che si trovano uno accanto all'altro siano su canali che non si sovrappongono.</p></li>
 </ul>
-<p>Ogni fornitore wireless ha i propri consigli per la distribuzione della soluzione wireless. Per indicazioni specifiche, rivolgersi al fornitore del WiFi.</p></td>
+<p>Ogni fornitore wireless ha le proprie raccomandazioni per l'implementazione della propria soluzione wireless. Per indicazioni specifiche, contattare il fornitore della rete WiFi.</p></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="bandwidth-requirements"></a>Requisiti di larghezza di banda
+## <a name="bandwidth-requirements"></a>Requisiti relativi alla larghezza di banda
 
-Teams è progettato per offrire la migliore esperienza di condivisione di contenuti, video e audio indipendentemente dalle condizioni di rete. Detto questo, quando la larghezza di banda è insufficiente, Teams assegna priorità alla qualità audio rispetto alla qualità video.
+Microsoft Teams è progettato per offrire esperienze audio, video e di condivisione contenuti eccezionali, a prescindere dalle condizioni di rete. Tuttavia, se la larghezza di banda è insufficiente, Microsoft Teams assegna la priorità alla qualità audio sulla qualità video.
 
-Se  la larghezza di banda non è limitata, Teams ottimizza la qualità dei contenuti multimediali, inclusa la risoluzione video fino a 1080p, fino a 30fps per video e 15fps per i contenuti e audio ad alta fedeltà. 
+Se la larghezza di banda *non è* limitata, Microsoft Teams ottimizza la qualità multimediale, inclusa una risoluzione video massima di 1080p, fino a 30fps per il video e 15fps per il contenuto e l'audio ad alta fedeltà. 
 
 [!INCLUDE [bandwidth-requirements](includes/bandwidth-requirements.md)]
 
@@ -159,13 +159,13 @@ Se  la larghezza di banda non è limitata, Teams ottimizza la qualità dei conte
 
 [Principi di connettività di rete di Microsoft 365 e Office 365](/microsoft-365/enterprise/microsoft-365-network-connectivity-principles)
 
-[Endpoint in tutto il mondo: Skype for Business Online e Teams](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
+[Endpoint in tutto il mondo: Skype for Business Online e Microsoft Teams](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams)
 
 [Server proxy per Teams](proxy-servers-for-skype-for-business-online.md)
 
-[Elementi multimediali in Teams: Perché le riunioni sono semplici](https://aka.ms/teams-media)
+[Elementi multimediali di Teams: ciò che rende le riunioni così semplici](https://aka.ms/teams-media)
 
-[Elementi multimediali in Teams: Approfondimento sui flussi multimediali](https://aka.ms/teams-media-flows)
+[Elementi multimediali di Teams: un approfondimento sui flussi multimediali](https://aka.ms/teams-media-flows)
 
 [Modelli di identità e autenticazione in Teams](identify-models-authentication.md)
 
