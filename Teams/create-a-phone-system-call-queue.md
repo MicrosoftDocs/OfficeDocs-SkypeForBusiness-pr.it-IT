@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Scopri come configurare Sistema telefonico per le code di chiamata con Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 87c65a104b8b6921aecf2ceb860d677cfa8f7d33
-ms.sourcegitcommit: ca2230a981a1e3c03437d1ecb8727d66ad6967f9
+ms.openlocfilehash: 1202de31beddb8f70391d40d4e6218942c59cba1
+ms.sourcegitcommit: 4e1f5d99c1d0612dc5b50f850280983867ff53d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760589"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51874452"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -80,6 +80,11 @@ Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan
 È possibile aggiungere fino a 200 agenti tramite un canale di Teams.
 
 Se si vuole usare [un canale di Teams per gestire la coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione Scegli un **team** e fare clic su **Aggiungi canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare e fare clic su **Applica.**
+
+I client seguenti sono supportati quando si usa un canale di Teams per le code di chiamata: 
+
+  - Client Windows di Microsoft Teams
+  - Client Microsoft Teams Mac
 
 ##### <a name="users-and-groups"></a>Utenti e gruppi
 

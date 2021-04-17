@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottieni informazioni dettagliate sulle dimensioni e le misure usate dal Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business online.
-ms.openlocfilehash: 6e7733320331cae0f57b82615fcebe9d8d620c72
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: cef151eb8941135112bab92a806b620727567bee
+ms.sourcegitcommit: b56727299d7ea47e23807114a4f5881e289c0b6a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51115574"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "51880455"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -77,8 +77,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Second OS Filtered  | Stringa  | Nome del sistema operativo e versione principale e secondaria riportati dal secondo endpoint. Questa stringa può contenere più del nome e della versione del sistema operativo. <br/> **Valore di esempio:** Windows 10  | <br/>&bull; L'endpoint non ha segnalato queste informazioni <br/>&bull; Il report da questo endpoint non è stato ricevuto |
 | First OS Architecture  | Stringa  | Architettura hardware riportata dal primo endpoint. <br/> **Valore di esempio:** x64  | &bull; L'endpoint non ha segnalato queste informazioni <br/>&bull; Il report da questo endpoint non è stato ricevuto <br/>&bull; Il formato dell'architettura non è stato riconosciuto |
 | Second OS Architecture  | Stringa  | Architettura hardware riportata dal secondo endpoint. <br/> **Valore di esempio:** x64  | &bull; L'endpoint non ha segnalato queste informazioni <br/>&bull; Il report da questo endpoint non è stato ricevuto <br/>&bull; Il formato dell'architettura non è stato riconosciuto  |
-| First Virtualization Flag  | Enumerazione <br/>**Valori possibili:** <br/> "0x00" = Nessuno " <br/> "0x01" = HyperV <br/> "0x02" = VMWare <br/> "0x04" = Virtual PC <br/> "0x08" = PC Xen | Flag che indica il tipo di ambiente di virtualizzazione segnalato dal primo endpoint. | <br/>&bull; I dati non sono stati segnalati dall'endpoint |
-| Second Virtualization Flag  | Enumerazione <br/>**Valori possibili:** <br/> "0x00" = Nessuno " <br/> "0x01" = HyperV <br/> "0x02" = VMWare <br/> "0x04" = Virtual PC <br/> "0x08" = PC Xen | Flag che indica il tipo di ambiente di virtualizzazione segnalato dal secondo endpoint.  | <br/>&bull; I dati non sono stati segnalati dall'endpoint |
+| First Virtualization Flag  | Enumerazione <br/>**Valori possibili:** <br/> "0x00" = Nessuno  <br/> "0x01" = Hyper-V <br/> "0x02" = VMware <br/> "0x04" = Virtual PC <br/> "0x08" = PC Xen | Flag che indica il tipo di ambiente di virtualizzazione segnalato dal primo endpoint. | <br/>&bull; I dati non sono stati segnalati dall'endpoint |
+| Second Virtualization Flag  | Enumerazione <br/>**Valori possibili:** <br/> "0x00" = Nessuno  <br/> "0x01" = Hyper-V <br/> "0x02" = VMware <br/> "0x04" = Virtual PC <br/> "0x08" = PC Xen | Flag che indica il tipo di ambiente di virtualizzazione segnalato dal secondo endpoint.  | <br/>&bull; I dati non sono stati segnalati dall'endpoint |
 |First Endpoint Make |Stringa |Produttore del dispositivo, le informazioni vengono lette da un campo EndpointMake del file di dati dell'endpoint. | <br/>&bull; Nessun file di dati per l'endpoint |
 | Primo modello di endpoint |Stringa|Modello di dispositivo, le informazioni vengono lette da un campo EndpointModel del file di dati dell'endpoint.| <br/>&bull; Nessun file di dati per l'endpoint |
 | Primo tipo di endpoint|Stringa|Tipo di dispositivo, le informazioni vengono lette da un campo EndpointType del file di dati dell'endpoint.| <br/>&bull; Nessun file di dati per l'endpoint |
@@ -91,6 +91,16 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Second Endpoint Label 1|Stringa| Un'etichetta personalizzabile, le informazioni vengono lette da un file di dati dell'endpoint. | <br/>&bull; Nessun file di dati per l'endpoint |
 | Second Endpoint Label 2|Stringa|Un'etichetta personalizzabile, le informazioni vengono lette da un file di dati dell'endpoint.| <br/>&bull; Nessun file di dati per l'endpoint|
 | Etichetta secondo endpoint 3|Stringa|Un'etichetta personalizzabile, le informazioni vengono lette da un file di dati dell'endpoint.| <br/>&bull; Nessun file di dati per l'endpoint |
+| First ASN|Stringa|Numero di sistema autonomo per il primo endpoint. <br/> **Valore di esempio:** 8069  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Second ASN|Stringa|Numero di sistema autonomo per il secondo endpoint. <br/> **Valore di esempio:** 8069  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Primo codice paese ASN|Stringa|Codice paese per il numero di sistema autonomo determinato per il primo endpoint. <br/> **Valore di esempio:** Stati Uniti  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Second ASN Country Code|Stringa|Codice paese per il numero di sistema autonomo determinato per il secondo endpoint. <br/> **Valore di esempio:** Stati Uniti  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Primo paese ASN|Stringa|Nome del paese per il numero di sistema autonomo determinato per il primo endpoint. <br/> **Valore di esempio:** Stati Uniti  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Secondo paese ASN|Stringa|Nome del paese per il numero di sistema autonomo determinato per il secondo endpoint. <br/> **Valore di esempio:** Stati Uniti  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Prima città ASN|Stringa|Nome della città per il numero di sistema autonomo determinato per il primo endpoint. <br/> **Valore di esempio:** Redmond  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Second ASN City|Stringa|Nome della città per il numero di sistema autonomo determinato per il secondo endpoint. <br/> **Valore di esempio:** Redmond  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Primo stato ASN|Stringa|Nome dello stato per il numero di sistema autonomo determinato per il primo endpoint. <br/> **Valore di esempio:** WA  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
+| Secondo stato ASN|Stringa|Nome dello stato per il numero di sistema autonomo determinato per il secondo endpoint. <br/> **Valore di esempio:** WA  | <br/>&bull; I dati di rete non erano disponibili per determinare l'ASN dell'endpoint |
 |**Edificio**| | |
 | First Network | Stringa | Subnet usata per lo stream multimediale dal primo endpoint se la subnet è presente nei dati dell'edificio subnet-tenant. <br/> **Valore di esempio:** 10.0.1.12.0 | &bull; I dati di rete non sono stati segnalati dall'endpoint <br/>&bull; La rete non è definita nei dati di mappatura subnet.  |
 | First Network Name  | Stringa  | Nome della rete usata per lo stream multimediale dal primo endpoint. In base al mapping tra subnet e dati dell'edificio tenant. <br/> **Valore di esempio:** USA/WA/REDMOND | &bull; I dati di rete non sono stati segnalati dall'endpoint <br/>&bull; La rete non è definita nei dati di mapping subnet  |
@@ -443,7 +453,10 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 |Jitter|Millisecondi|Variazione dell'ora di arrivo dei pacchetti RTP. Per altre [informazioni, vedere Classificazione dei flussi nel dashboard della qualità](stream-classification-in-call-quality-dashboard.md) delle chiamate.<br/>**Esempio:** 5,982||
 |Packet Loss Rate|Percentuale|Percentuale di flussi tra Mediation Server e SBC o Gateway, se disponibile. Per altre [informazioni, vedere Classificazione dei flussi nel dashboard della qualità](stream-classification-in-call-quality-dashboard.md) delle chiamate.<br/>**Esempio:** 1,2%||
 |Latenza (tempo di andata e ritorno)|Millisecondi|Tempo medio di round trip di propagazione della rete per flusso calcolato. Per altre [informazioni, vedere Classificazione dei flussi nel dashboard della qualità](stream-classification-in-call-quality-dashboard.md) delle chiamate.<br/>**Esempio:** 3,49||
+|**Riunione**|||
+|Scenario riunione|Enumerazione <br/>**Valori possibili:** <br/> Prenotazioni <br/> Connettore EHR <br/> Sconosciuto |Campo fornito dai team dei clienti per la pianificazione delle riunioni (ad esempio Bookings, Connettore EHR) tramite la telemetria per distinguere le riunioni dagli altri. A partire da aprile 2021, solo Bookings e EHR Connector si sono sottoscritti per fornire telemetria per identificare lo scenario di una riunione.|Il client di pianificazione non ha fornito questo parametro tramite la telemetria.|
 ||||
+
 
 ### <a name="notes-on-dimension-data-typeunits"></a>Note sul tipo/unità di dati delle dimensioni
 

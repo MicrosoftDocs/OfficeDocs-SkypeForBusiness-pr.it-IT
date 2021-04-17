@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9688b700d900720aa9af1c0f68cadee99d7de858
-ms.sourcegitcommit: 2ce82f301f2d59da57f579a23038b2cab5e31360
+ms.openlocfilehash: b7262cc77310a9ea198a51af720e6e5117a72111
+ms.sourcegitcommit: 4e1f5d99c1d0612dc5b50f850280983867ff53d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51858049"
+ms.locfileid: "51874472"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -395,7 +395,7 @@ Le funzionalità di chiamata e riunione seguenti non sono supportate:
 - Coda di chiamata
 - Audio/computer di sistema condiviso
 - Bypass multimediale per Instradamento diretto
-- Zoom avanti sul contenuto condiviso
+- Controllo zoom 
 
 > [!NOTE]
 > Stiamo lavorando per aggiungere funzionalità di chiamata e riunione attualmente disponibili solo in ambienti non VDI. Questi potrebbero includere un maggiore controllo dell'amministratore sulla qualità, altri scenari di condivisione dello schermo e funzionalità avanzate aggiunte di recente a Teams. Contatta il rappresentante di Teams per saperne di più sulle funzionalità imminenti.
