@@ -1,5 +1,5 @@
 ---
-title: Poster di soluzioni di telefonia e architettura IT di Microsoft Teams
+title: Poster di soluzioni voce e architettura IT di Microsoft Teams
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -15,40 +15,40 @@ search.appverid:
 - MET150
 f1.keywords:
 - NOCSH
-description: "Riepilogo: informazioni sull'architettura logica dei servizi di produttività in Microsoft 365, con Microsoft Teams. Sono disponibili inoltre informazioni sulle soluzioni di telefonia per Teams. "
-ms.openlocfilehash: 3f90627cf82200837e15f1231a36062715026e79
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Riepilogo: informazioni sull'architettura logica dei servizi di produttività in Microsoft 365, con avanti Microsoft Teams. Sono disponibili inoltre informazioni sulle soluzioni voce per Teams."
+ms.openlocfilehash: ad67895e734b2fa9e9d0cdfd5ba2343d5caeb8d8
+ms.sourcegitcommit: 2ce82f301f2d59da57f579a23038b2cab5e31360
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119265"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51858032"
 ---
-# <a name="microsoft-teams-it-architecture-and-telephony-solutions-posters"></a>Poster di soluzioni di telefonia e architettura IT di Microsoft Teams
+# <a name="microsoft-teams-it-architecture-and-voice-solutions-posters"></a>Poster di soluzioni voce e architettura IT di Microsoft Teams
 
 ## <a name="teams-as-part-of-microsoft-365"></a>Teams come parte di Microsoft 365
+
 Teams è essenziale per l'architettura logica dei servizi di produttività in Microsoft 365, incluse le funzionalità di governance dei dati, sicurezza e conformità. 
 
 Questa serie di immagini offre una visualizzazione dell'architettura logica di servizi di produttività per gli architetti IT aziendali, con Teams.
 
-[![Immagine di scorrimento per poster dell'architettura logica di Teams](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.pdf)  <br/>[PDF](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)
+[![Immagine di scorrimento per poster dell'architettura logica di Teams](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-teams-logical-architecture-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf)  <br/>[PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) | [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx)
 
 
 ## <a name="groups-in-microsoft-365"></a>Gruppi in Microsoft 365
+
 Ecco cosa devono sapere gli architetti IT sui gruppi di Microsoft 365. Queste immagini mostrano dettagliatamente i diversi gruppi, come vengono creati e gestiti, e alcuni consigli di governance.
 
 [![Immagine di scorrimento per infografica dei gruppi](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.pdf)  <br/> [PDF](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx)
 
+## <a name="microsoft-voice-solutions"></a>Soluzioni voce Microsoft
 
-## <a name="microsoft-telephony-solutions"></a>Soluzioni di telefonia Microsoft
+Microsoft supporta varie opzioni durante il percorso verso l'implementazione di Teams nel cloud Microsoft. Questo poster è utile per decidere la soluzione voce Microsoft (Sistema telefonico nel cloud o VoIP aziendale in locale) più adatta per gli utenti dell'organizzazione e per stabilire in che modo l'organizzazione si connetterà alla rete PSTN (Public Switched Telephone Network).
 
-Microsoft supporta varie opzioni durante il percorso verso l'implementazione di Teams nel cloud Microsoft. Questo poster è utile per decidere la soluzione di telefonia Microsoft (Sistema telefonico nel cloud o VoIP aziendale in locale) più adatta per gli utenti dell'organizzazione e per stabilire in che modo l'organizzazione si connetterà alla rete PSTN (Public Switched Telephone Network).
+[![Anteprima del poster di Soluzioni Voce Microsoft](media/microsoft-telephony-solutions-thumb.png)](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) <br/>
+[PDF](https://download.microsoft.com/download/4/3/5/435cd4e9-ca56-4fd1-acb6-d1fda7952320/microsoft-voice-solutions.pdf) | [Visio](https://download.microsoft.com/download/7/5/c/75c13012-e20c-48bd-a6dd-ea49d1a3420d/microsoft-voice-solutions.vsdx)
 
-[![Anteprima del poster di Soluzioni di telefonia Microsoft](/office365/enterprise/media/microsoft-telephony-solutions-thumb.png)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-19.pdf) <br/>
-[PDF](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.pdf) | [Visio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/telephony-solutions/microsoft-telephony-solutions-12-18.vsdx) 
-
-Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni di telefonia Microsoft](/SkypeForBusiness/hybrid/msft-telephony-solutions).
+Per altre informazioni, vedere l'articolo correlato a questo poster: [Soluzioni voce Microsoft](cloud-voice-landing-page.md).
   
-   
 ## <a name="see-also"></a>Vedere anche
 
 [Risorse sull'architettura IT del cloud Microsoft](/office365/enterprise/microsoft-cloud-it-architecture-resources)
