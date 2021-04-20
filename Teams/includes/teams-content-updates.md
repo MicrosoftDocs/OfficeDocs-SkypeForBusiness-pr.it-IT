@@ -3,6 +3,52 @@
 
 
 
+## <a name="week-of-april-12-2021"></a>Settimana del 12 aprile 2021
+
+
+| Pubblicato il |Titolo dell'argomento | Modifica |
+|------|------------|--------|
+| 4/12/2021 | [Limiti e specifiche per Microsoft Teams](/MicrosoftTeams/limits-specifications-teams) | modificato |
+| 4/12/2021 | [Gestire i pacchetti di criteri in Microsoft Teams](/MicrosoftTeams/manage-policy-packages) | modificato |
+| 4/12/2021 | [Esperienza di solo visualizzazione nelle riunioni](/MicrosoftTeams/view-only-meeting-experience) | modificato |
+| 4/12/2021 | [Instradamento diretto di Sistema telefonico](/MicrosoftTeams/direct-routing-protocols-sip) | modificato |
+| 4/12/2021 | [Gestire i criteri di configurazione delle app in Microsoft Teams](/MicrosoftTeams/teams-app-setup-policies) | modificato |
+| 4/12/2021 | [Azure Sentinel e Microsoft Teams](/MicrosoftTeams/teams-sentinel-guide) | modificato |
+| 4/12/2021 | [Barriere alle informazioni in Microsoft Teams](/MicrosoftTeams/information-barriers-in-teams) | modificato |
+| 4/13/2021 | [Gestire i criteri delle riunioni](/MicrosoftTeams/meeting-policies-in-teams) | modificato |
+| 4/13/2021 | [Azure Sentinel e Microsoft Teams](/MicrosoftTeams/teams-sentinel-guide) | modificato |
+| 4/13/2021 | [Guida alla sicurezza di Microsoft Teams](/MicrosoftTeams/teams-security-guide) | modificato |
+| 4/13/2021 | [Microsoft Teams Chalk Talks](/MicrosoftTeams/chalk-talks-landing-page) | modificato |
+| 4/13/2021 | [Introduzione a Teams per le organizzazioni sanitarie](/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc) | modificato |
+| 4/13/2021 | [Ottenere i client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
+| 4/13/2021 | [Usare l'analisi delle chiamate per risolvere i problemi relativi alla scarsa qualità delle chiamate](/MicrosoftTeams/use-call-analytics-to-troubleshoot-poor-call-quality) | modificato |
+| 4/14/2021 | [Spostarsi all'interno di Microsoft Teams](/MicrosoftTeams/navigate-teams) | aggiunto |
+| 4/14/2021 | [Grafico del percorso da Kaizala a Teams](/MicrosoftTeams/prepare-for-teams) | aggiunto |
+| 4/14/2021 | [Esperienza di Teams in un ambiente abilitato per Microsoft 365 Multi-Geo](/MicrosoftTeams/teams-experience-o365odb-spo-multi-geo) | modificato |
+| 4/14/2021 | [Ottenere i client per Microsoft Teams](/MicrosoftTeams/get-clients) | modificato |
+| 4/14/2021 | [Requisiti hardware per Microsoft Teams](/MicrosoftTeams/hardware-requirements-for-the-teams-app) | modificato |
+| 4/14/2021 | [Preparare la rete dell'organizzazione per Teams](/MicrosoftTeams/prepare-network) | modificato |
+| 4/14/2021 | [Presenza utente in Teams](/MicrosoftTeams/presence-admins) | modificato |
+| 4/14/2021 | [Canali privati in Microsoft Teams](/MicrosoftTeams/private-channels) | modificato |
+| 4/14/2021 | [Note sulla versione](/MicrosoftTeams/rooms/rooms-release-note) | modificato |
+| 4/14/2021 | [Installare Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-install) | modificato |
+| 4/14/2021 | [Panoramica di Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-overview) | modificato |
+| 4/14/2021 | [Note sulla versione di Microsoft Teams PowerShell](/MicrosoftTeams/teams-powershell-release-notes) | modificato |
+| 4/14/2021 | [Risoluzione dei problemi di installazione e aggiornamento di Microsoft Teams in Windows](/MicrosoftTeams/troubleshoot-installation) | modificato |
+| 4/14/2021 | [Dispositivi per Teams](/MicrosoftTeams/devices/teams-ip-phones) | modificato |
+| 4/14/2021 | [Servizio gestito di Microsoft Teams Rooms](/MicrosoftTeams/rooms/microsoft-teams-rooms-premium) | modificato |
+| 4/15/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
+| 4/15/2021 | [Configurare chiamate di emergenza dinamiche](/MicrosoftTeams/configure-dynamic-emergency-calling) | modificato |
+| 4/15/2021 | [Servizio gestito di Microsoft Teams Rooms](/MicrosoftTeams/rooms/microsoft-teams-rooms-premium) | modificato |
+| 4/15/2021 | [Poster di soluzioni voce e architettura IT di Microsoft Teams](/MicrosoftTeams/teams-architecture-solutions-posters) | modificato |
+| 4/16/2021 | [Installare Power BI Connector per usare i modelli di query CQD](/MicrosoftTeams/cqd-power-bi-connector) | modificato |
+| 4/16/2021 | [Creare una coda di chiamata in Microsoft Teams](/MicrosoftTeams/create-a-phone-system-call-queue) | modificato |
+| 4/16/2021 | [Teams per Virtualized Desktop Infrastructure (VDI)](/MicrosoftTeams/teams-for-vdi) | modificato |
+| 4/16/2021 | [Introduzione alla registrazione basata su criteri di Teams per le chiamate & riunioni](/MicrosoftTeams/teams-recording-policy) | modificato |
+| 4/16/2021 | [Dimensioni e misure - Call Quality Dashboard (CQD)](/MicrosoftTeams/dimensions-and-measures-available-in-call-quality-dashboard) | modificato |
+| 4/16/2021 | [Installare, gestire e assegnare autorizzazioni per Microsoft Viva Learning (anteprima privata)](/MicrosoftTeams/teams-learning-app-overview) | modificato |
+
+
 ## <a name="week-of-april-05-2021"></a>Settimana del 05 aprile 2021
 
 
@@ -28,7 +74,7 @@
 | 4/6/2021 | [Criteri delle riunioni e scadenza delle riunioni in Microsoft Teams](/MicrosoftTeams/meeting-expiration) | modificato |
 | 4/6/2021 | [Note sulla versione per Microsoft Teams](/MicrosoftTeams/release-notes/release-notes) | modificato |
 | 4/6/2021 | [Risorse di Microsoft Teams per l'istruzione per amministratori](/MicrosoftTeams/remote-learning-edu) | modificato |
-| 4/6/2021 | [Report sulla partecipazione alle riunioni di Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/meeting-attendance-report) | modificato |
+| 4/6/2021 | [Report di partecipazione alle riunioni Microsoft Teams](/MicrosoftTeams/teams-analytics-and-reports/meeting-attendance-report) | modificato |
 | 4/6/2021 | [Azure Sentinel e Microsoft Teams](/MicrosoftTeams/teams-sentinel-guide) | modificato |
 | 4/6/2021 | [Scegli il percorso di aggiornamento da Skype for Business a Microsoft Teams](/MicrosoftTeams/upgrade-and-coexistence-of-skypeforbusiness-and-teams) | modificato |
 | 4/6/2021 | [Usare NDI in Microsoft Teams](/MicrosoftTeams/use-ndi-in-meetings) | modificato |
