@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con Phone System Direct Routing, che consente di abbreviare il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: bbd31a62bf6ebcd481a3cdafeabaf29bb4767f2d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f2cbe739a567588b44bef87f7b852ed8de965ad3
+ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51115594"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899097"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -30,7 +30,7 @@ ms.locfileid: "51115594"
 
 Il bypass multimediale consente di abbreviare il percorso del traffico multimediale e ridurre il numero di hop in transito per migliorare le prestazioni. Con il bypass multimediale, i supporti multimediali vengono mantenuti tra session border controller (SBC) e il client invece di inviarlo tramite Il sistema telefonico Microsoft. Per configurare il bypass multimediale, SBC e il client devono essere nella stessa posizione o rete.
 
-È possibile controllare il bypass multimediale per ogni SBC usando il **comando Set-CSOnlinePSTNGateway** con il **parametro -MediaBypass** impostato su true o false. Se si abilita il bypass multimediale, questo non significa che tutto il traffico multimediale rimarrà all'interno della rete aziendale. Questo articolo descrive il flusso delle chiamate in scenari diversi.    
+È possibile controllare il bypass multimediale per ogni SBC usando il **comando Set-CSOnlinePSTNGateway** con il **parametro -MediaBypass** impostato su true o false. Se si abilita il bypass multimediale, questo non significa che tutto il traffico multimediale rimarrà all'interno della rete aziendale. Questo articolo descrive il flusso delle chiamate in scenari diversi.
 
 I diagrammi seguenti illustrano la differenza nel flusso delle chiamate con e senza bypass multimediale.
 
@@ -126,7 +126,11 @@ In Microsoft Cloud sono disponibili due componenti che possono essere nel percor
 
    Gli inoltri di trasporto potrebbero essere o meno nel percorso per le chiamate ignorate, originate o destinate agli utenti finali, a seconda della posizione dell'utente e della configurazione della rete.
 
-Il diagramma seguente mostra due flussi di chiamata: uno con il bypass multimediale abilitato e il secondo con bypass multimediale disabilitato. Si noti che il diagramma illustra solo il traffico proveniente da o destinato agli utenti finali.  
+Il diagramma seguente mostra due flussi di chiamata: uno con il bypass multimediale abilitato e il secondo con bypass multimediale disabilitato.
+
+> [!NOTE]
+> Il diagramma illustra solo il traffico proveniente da utenti finali o destinati a utenti finali.  
+
 - Il Controller multimediale è un microservizio in Azure che assegna processori multimediali e crea offerte SDP (Session Description Protocol).
 
 - Il proxy SIP è un componente che converte la segnalazione REST HTTP usata in Teams in SIP.    
@@ -255,7 +259,8 @@ Il traffico multimediale fluisce tra il client SBC e il client Teams se è dispo
 
 Il client deve avere accesso alle porte specificate (vedere la tabella) nell'indirizzo IP pubblico dell'SBC. 
 
-Nota: se il client si trova in una rete interna, i supporti multimediali vengono indirizzati all'indirizzo IP pubblico del servizio SBC. È possibile configurare l'aggiunta di capelli nel dispositivo NAT in modo che il traffico non lasci mai l'apparecchiatura di rete aziendale.
+> [!NOTE]
+> Se il client si trova in una rete interna, il contenuto multimediale passa all'indirizzo IP pubblico del servizio SBC. È possibile configurare l'aggiunta di capelli nel dispositivo NAT in modo che il traffico non lasci mai l'apparecchiatura di rete aziendale.
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
@@ -274,7 +279,7 @@ I relè di trasporto sono nello stesso intervallo dei processori multimediali (p
 
 - 52.112.0.0 /14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
 
-## <a name="office-365-gcc-dod-environment"></a>Ambiente DoD GCC di Office 365
+### <a name="office-365-gcc-dod-environment"></a>Ambiente DoD GCC di Office 365
 
 - 52.127.64.0/21
 
@@ -314,7 +319,7 @@ L'intervallo IP per il traffico multimediale è
 
 - 52.112.0.0 /14 (indirizzi IP da 52.112.0.1 a 52.115.255.254)
 
-## <a name="office-365-gcc-dod-environment"></a>Ambiente DoD GCC di Office 365
+### <a name="office-365-gcc-dod-environment"></a>Ambiente DoD GCC di Office 365
 
 - 52.127.64.0/21
 
@@ -349,8 +354,8 @@ L'esempio seguente illustra questa logica.
 
 | Set di utenti | Numero di utenti | FQDN trunk assegnato in OVRP | Bypass multimediale abilitato |
 | :------------ |:----------------- |:--------------|:--------------|
-Utenti con trunk di bypass non multimediali | 980 | sbc1.contoso.com:5060 | true
-Utenti con trunk bypass multimediale | 20 | sbc2.contoso.com:5061 | false | 
+Utenti con trunk di bypass non multimediali | 980 | sbc1.contoso.com:5061 | false |
+Utenti con trunk bypass multimediale | 20 | sbc2.contoso.com:5060 | true | 
 
 Entrambi i trunk possono puntare allo stesso SBC con lo stesso indirizzo IP pubblico. Le porte di segnalazione TLS nel SBC devono essere diverse, come illustrato nel diagramma seguente. Si noti che è necessario assicurarsi che il certificato supporti entrambi i trunk. Nella rete SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con caratteri jolly.
 

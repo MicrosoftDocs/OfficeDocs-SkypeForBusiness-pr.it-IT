@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 09fe424dc576b6b167eec49e7cd8edf2f61d6cce
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: 2f9df0bf1c4acaf8ec32db07ce4af961c491ba0d
+ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697801"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899117"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -40,7 +40,7 @@ Gli utenti che accedono dopo il superamento della capacità della riunione acced
 I partecipanti potranno partecipare all'esperienza di sola visualizzazione tramite desktop, Web e Teams mobile (Android e iOS).
 
 > [!Note]
-> La capacità limite corrente della "riunione principale", o in altre parole, il numero di utenti completamente interattivi è 300 in WW e 250 in GCC, GCC High e DoD.
+> La capacità limite corrente della "riunione principale", o in altre parole, il numero di utenti completamente interattivi è 300.
 
 ## <a name="teams-view-only-experience-controls"></a>Controlli dell'esperienza di sola visualizzazione di Teams
 

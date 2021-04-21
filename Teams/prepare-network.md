@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: ff6959319a55183f33c8998adc4a4a46c640bca4
-ms.sourcegitcommit: 616403037ddb2d44f06cd9b2eaa9da699b119ef8
+ms.openlocfilehash: 0bde5b2fac365369fea385a325cbd1d0d05cca07
+ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768385"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899087"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -40,12 +40,11 @@ Se la rete è già [ottimizzata per Microsoft 365 o Office 365](/Office365/Enter
     |[Indirizzi IP](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) |<strong>13.107.64.0/18</strong>, <strong>52.112.0.0/14</strong> e <strong>52.120.0.0/14</strong>         |
 
     > [!IMPORTANT]
-    > Se è necessario attuare la federazione con Skype® for Business, in locale o online, è necessario configurare altri record DNS.
+    > Se è necessario attuare la federazione con Skype for Business, sia locale che online, è necessario configurare un record DNS aggiuntivo.
     >
-    >|Record CNAME/nome host  |TTL  |Indirizzo o valore di puntamento  |
-    >|---------|---------|---------|
-    >|sip     |    3600     |    sipdir.online.lync.com     |
-    >|lyncdiscover     |   3600      |    webdir.online.lync.com     |
+    >|Record DNS  |Servizio  |Protocol  |Priority  |Peso  |Port  |Target  |
+    >|---------|---------|---------|---------|---------|---------|---------|
+    >|SRV     |sipfederationtls     |TCP     |100     |1     |5061     |sipfed.online.lync.com     |
     
 2.  Si dispone di un dominio verificato per Microsoft 365 o Office 365 (ad esempio, contoso.com)?
     
@@ -85,8 +84,8 @@ Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazio
 <table>
 <thead>
 <tr class="header">
-<th><strong>Attività di ottimizzazione della rete</strong></th>
-<th><strong>Dettagli</strong></th>
+<th>Attività di ottimizzazione della rete</th>
+<th>Dettagli</th>
 </tr>
 </thead>
 <tbody>

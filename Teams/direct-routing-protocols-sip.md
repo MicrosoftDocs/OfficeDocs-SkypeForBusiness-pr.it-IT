@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8b1917408fa14ced9a490cba1559228dde924cfc
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: 04e9507595ef721ced5d47eb58646559601c5cab
+ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697781"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899127"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto - Protocollo SIP
 
@@ -168,6 +168,9 @@ Un utente di Teams potrebbe avere più endpoint contemporaneamente. Ad esempio, 
     > In alcuni casi la risposta media potrebbe non essere generata e il punto finale potrebbe rispondere con il messaggio "Chiamata accettata".
 
 -   Chiamata accettata: convertita dal proxy SIP nel messaggio SIP 200 con SDP. Alla ricezione del messaggio 200, è previsto che SBC invii e riceva elementi multimediali da e verso i candidati SDP forniti.
+
+    > [!NOTE]
+    > Il routing diretto non supporta l'invito all'offerta ritardata (invito senza SDP).
 
 #### <a name="multiple-endpoints-ringing-with-provisional-answer"></a>Squillo di più endpoint con risposta provvisoria
 

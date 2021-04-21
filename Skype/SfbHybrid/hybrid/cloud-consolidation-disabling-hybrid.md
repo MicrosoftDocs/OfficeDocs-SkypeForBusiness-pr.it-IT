@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Questo articolo include la procedura dettagliata per disabilitare l'ambiente ibrido come parte del consolidamento del cloud per Teams e Skype for Business.
-ms.openlocfilehash: 18bda898563e10dbf964ba149f27202372fbcceb
-ms.sourcegitcommit: 71d90f0a0056f7604109f64e9722c80cf0eda47d
+ms.openlocfilehash: 08d305fa2650cffbadb0ec3122458f4a57e052a4
+ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51656702"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899107"
 ---
 # <a name="disable-your-hybrid-configuration-to-complete-migration-to-the-cloud"></a>Disabilitare la configurazione ibrida per completare la migrazione nel cloud
 
@@ -106,7 +106,10 @@ Sono disponibili due opzioni per gestire questa situazione:
 
 Gli amministratori possono gestire gli utenti che in precedenza erano stati spostati da Skype for Business Server locale al cloud, anche dopo la rimozione della distribuzione locale. Se si desidera apportare modifiche all'indirizzo SIP di un utente o al numero di telefono di un utente (e l'indirizzo sip o il numero di telefono ha già un valore in Active Directory locale), è necessario eseguire questa operazione in Active Directory locale e consentire il flusso dei valori fino ad Azure AD. Questo non richiede Skype for Business Server locale. È invece possibile modificare questi attributi direttamente in Active Directory locale, utilizzando lo snap-in MMC Utenti e computer di Active Directory (come illustrato di seguito) o PowerShell. Se si utilizza lo snap-in MMC, aprire la pagina delle proprietà dell'utente, fare clic sulla scheda Editor attributi e individuare gli attributi appropriati da modificare:
 
-- Per modificare l'indirizzo SIP di un utente, modificare la proprietà `msRTCSIP-PrimaryUserAddress` . Si noti che, `ProxyAddresses` se l'attributo contiene un indirizzo sip, aggiornare anche tale valore come procedura consigliata. Anche se l'indirizzo sip in viene ignorato da O365 se viene popolato, può essere utilizzato `ProxyAddresses` `msRTCSIP-PrimaryUserAddress` da altri componenti locali.
+- Per modificare l'indirizzo SIP di un utente, modificare la proprietà `msRTCSIP-PrimaryUserAddress` .
+
+    > [!NOTE]
+    > Se `ProxyAddresses` l'attributo contiene un indirizzo SIP, aggiornare anche tale valore come procedura consigliata. Anche se l'indirizzo sip in viene ignorato da O365 se viene popolato, può essere utilizzato `ProxyAddresses` `msRTCSIP-PrimaryUserAddress` da altri componenti locali.
 
 - Per modificare il numero di telefono di un utente, modificare `msRTCSIP-Line` *se ha già un valore*.
 
@@ -172,7 +175,7 @@ Questa opzione richiede ulteriori sforzi e una pianificazione adeguata perché g
    Set-ADUser -Identity $user.SamAccountName -Clear msRTCSIP-DeploymentLocator}
    ```
 
-5. Eseguire il seguente cmdlet di PowerShell di Skype for Business locale per aggiungere nuovamente il valore dell'indirizzo sip ai proxyAddresses di Active Directory locali. In questo modo si evitano problemi di interoperabilità che si basano su questo attributo. 
+5. Eseguire il seguente cmdlet di Active Directory Windows PowerShell locale per aggiungere nuovamente il valore dell'indirizzo SIP ai proxyAddresses di Active Directory locali. In questo modo si evitano problemi di interoperabilità che si basano su questo attributo. 
 
    ```PowerShell
    $sfbusers=import-csv "c:\data\SfbUsers.csv"
