@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft Teams.
-ms.openlocfilehash: 66bebbd381fb1997e2e8770debb24c7629525f1e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9efd30eb91e9760f800dd24935724d2a3cdd97c2
+ms.sourcegitcommit: c56c87e912a4b3729c7c52d8de78fd4d24448a8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092754"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51926052"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -46,6 +46,11 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 - **Annuncio (digitato):** digitare un messaggio. Testo che deve essere letto dal sistema. È possibile immettere fino a 1000 caratteri. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
+
+> [!NOTE]
+> Quando si sceglie Segreteria telefonica come destinazione, sono disponibili due opzioni aggiuntive:
+> - **Trascrizione** (impostazione predefinita: disattivata): se abilitato, il messaggio della segreteria telefonica verrà trascritto e incluso come parte del messaggio di posta elettronica.
+> - **Elimina messaggio di** saluto (impostazione predefinita: disattivato): se abilitato, il messaggio di sistema standard "Lascia un messaggio dopo il tono. Al termine, riagganciare o premere il tasto hash per altre opzioni". verrà soppresso.
 
 Per configurare un operatore automatico, nell'interfaccia di amministrazione di Teams espandere **Voce,** selezionare **Operatori automatici** e quindi **aggiungi**.
 

@@ -17,16 +17,19 @@ description: Informazioni su come usare il report Attività utente di Teams nell
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9122289d0765dbdded98727d2ed06912d0348f64
-ms.sourcegitcommit: 66e7b28ba1c0433535eb6a3e7d883851c27d9d1f
+ms.openlocfilehash: 1a528d92a633e42623772f0f43a85658e4e8aecc
+ms.sourcegitcommit: 4cf89ce07184083c8c28892a2acbb85d797c21c4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51478336"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51938255"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Report attività utente di Microsoft Teams
 
 Il report Attività utente di Teams fornisce informazioni dettagliate sui tipi di attività che gli utenti dell'organizzazione ese in Teams. È possibile vedere quanti utenti comunicano in modo non pianificato tramite riunioni non pianificate (1:1 e chiamate di gruppo). Visualizzare il numero di riunioni organizzate da un utente di Teams e le riunioni a cui un utente di Teams ha partecipato. Visualizza i dettagli sui minuti dello schermo, video e audio e le statistiche sulle comunicazioni chat, ad esempio il numero di utenti che rispondono e pubblicano messaggi del canale e il numero di utenti che si impegnano in messaggi di chat 1:1 o di gruppo.
+
+> [!NOTE]
+> Al momento non è possibile pianificare un report attività utente.
 
 ## <a name="view-the-user-activity-report"></a>Visualizzare il report attività utente
 
@@ -55,14 +58,14 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 ## <a name="make-the-user-specific-data-anonymous"></a>Rendere anonimi i dati specifici dell'utente
 
-Per rendere anonimi i dati nel report attività utente di Teams, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nel report e la relativa esportazione.
+Per rendere anonimi i dati nel report attività utente di Teams, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nel report e nella relativa esportazione.
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 passare a **Impostazioni** organizzazione Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
-2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo nell'interfaccia di amministrazione di Microsoft 365 che all'interfaccia di amministrazione di Teams.
+2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo nell'interfaccia di amministrazione di Microsoft 365 che nell'interfaccia di amministrazione di Teams.
   
 3. Selezionare **Salva modifiche**.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Analisi e creazione di report di Teams](teams-reporting-reference.md)
+- [Analisi e creazione dei report di Teams](teams-reporting-reference.md).
