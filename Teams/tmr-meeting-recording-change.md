@@ -2,7 +2,7 @@
 title: Usare OneDrive for Business e SharePoint per le registrazioni delle riunioni
 author: cichur
 ms.author: v-cichur
-ms.reviewer: hao.moy
+ms.reviewer: debhag
 manager: serdars
 ms.topic: article
 audience: admin
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 23be0069ffe862bcd5295493c8a6fc6acaa5f55d
-ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
+ms.openlocfilehash: d0de88cd3295e1e04681cf6ff63bccab80e4b4a8
+ms.sourcegitcommit: a731226d62d8b23fe73bd7bf61654e16367fbd90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51637818"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51948662"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -189,3 +189,8 @@ Vedere [Come applicare automaticamente un'etichetta di conservazione.](/microsof
 **Come si assegnano i criteri agli utenti in Microsoft Teams e quali criteri hanno la precedenza?**
 
 Vedere [Quali criteri hanno la precedenza?](./assign-policies.md#which-policy-takes-precedence).
+
+**Dove si trova la registrazione se l'utente non ha OneDrive for Business o SharePoint?**
+
+La registrazione verrà atterrato nella posizione di archiviazione temporanea in cui verrà tenuta per 21 giorni. Durante questo periodo, l'organizzatore deve scaricare la registrazione. Se non viene scaricato entro 21 giorni, la registrazione viene eliminata.
+

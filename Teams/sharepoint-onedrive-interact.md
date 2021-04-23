@@ -18,12 +18,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b69b156e5cea0ff63925e91f5e3c077c794b3425
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2d063cae8b87ffcacd63676da17fc000384c432c
+ms.sourcegitcommit: a731226d62d8b23fe73bd7bf61654e16367fbd90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117034"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51948624"
 ---
 # <a name="how-sharepoint-online-and-onedrive-for-business-interact-with-microsoft-teams"></a>Modalità di interazione di SharePoint Online e OneDrive for Business con Microsoft Teams
 
@@ -52,6 +52,8 @@ Per ogni team viene creato un sito di SharePoint e la cartella Documenti **condi
 
 > [!NOTE]
 > Al momento non è possibile sostituire il sito e la raccolta documenti di SharePoint predefiniti con un altro. Abbiamo sentito da te che lo desideri, e lo stiamo valutando. Consulta la [roadmap di Teams](https://aka.ms/teamsroadmap) o Teams [UserVoice](https://aka.ms/TeamsUserVoice) per essere sempre al corrente delle funzionalità imminenti.
+
+[!INCLUDE [uservoice-disclaimer-note](includes/uservoice-disclaimer-note.md)]
 
 > [!TIP]
 > Per aggiungere al team una scheda collegata a una pagina del sito di SharePoint esistente o alla raccolta documenti di SharePoint esistente:

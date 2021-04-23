@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 64416c08c7fa43883bfab060d63c7a7598ea3218
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 78737ec26d0aabfedcefa01abc3fb14c4bf118c7
+ms.sourcegitcommit: a731226d62d8b23fe73bd7bf61654e16367fbd90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092443"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51948702"
 ---
 # <a name="microsoft-staffhub-has-been-retired"></a>Microsoft StaffHub è stato ritirato
 
@@ -157,6 +157,9 @@ Per altre informazioni, vedere [Gestire l'app Turni per l'organizzazione in Team
 È possibile gestire Teams tramite il modulo PowerShell di Microsoft Teams e il modulo PowerShell di Skype for Business. Per altre informazioni, vedere Panoramica [di PowerShell di Teams.](../../teams-powershell-overview.md) Al momento non sono disponibili cmdlet di PowerShell specifici per la gestione dei turni.  
 
 Se si è interessati, inviare una richiesta tramite il portale di feedback di [Teams in UserVoice.](https://microsoftteams.uservoice.com/forums/555103-public-preview/category/182881-developer-platform)
+
+
+[!INCLUDE [uservoice-disclaimer-note](../../includes/uservoice-disclaimer-note.md)]
 
 #### <a name="is-reporting-available-to-view-shifts-usage-across-my-organization"></a>I report sono disponibili per visualizzare l'utilizzo dei turni nell'intera organizzazione?
 

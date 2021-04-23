@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può sapere quali session border controller (SBC) sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 36228b1c8d9e563670bfff2d1d3cebfcc9652023
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: 99684ef9e3a86fed267d57a2d5482f45dabfe176
+ms.sourcegitcommit: a731226d62d8b23fe73bd7bf61654e16367fbd90
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697701"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "51948672"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -110,4 +110,8 @@ La tabella seguente elenca i dispositivi verificati per l'interoperabilità tra 
   | [Cisco](https://www.cisco.com/c/en/us/products/collateral/unified-communications/ata-190-series-analog-telephone-adapters/datasheet-c78-740013.html) |  Adattatore telefonico analogico multipiattaforma ATA 191 |     &#10004;     |
   
 Per inviare feedback sui prodotti su Teams, ad esempio idee per le nuove funzionalità, vedere [Uservoice.](https://microsoftteams.uservoice.com)
+
+
+[!INCLUDE [uservoice-disclaimer-note](includes/uservoice-disclaimer-note.md)]
+
 Si noti la certificazione concessa a una versione principale. Questo significa che è supportato il firmware con qualsiasi numero nel firmware SBC che segue la versione principale.
