@@ -1,52 +1,52 @@
 ---
-title: Gestire l'app Complimento nell'interfaccia di amministrazione di Teams
+title: Gestire l'app Complimenti nell'interfaccia di amministrazione di Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
-ms.reviewer: adotey
+ms.reviewer: jozhuan
 audience: admin
 ms.topic: article
 ms.service: msteams
 localization_priority: Normal
-description: Informazioni sulle impostazioni di amministrazione nell'app Complimento nell'interfaccia di amministrazione di Microsoft Teams
-ms.openlocfilehash: acb9d000aeec61daa35421c5ded389888032873f
-ms.sourcegitcommit: d2e67f2eed7b817c2c5f76015ec11582d0e0cb9e
+description: Informazioni sulle impostazioni di amministratore nell'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams
+ms.openlocfilehash: becaccc9c8370d25e3d085e3c896d4f1a8a0ad95
+ms.sourcegitcommit: 900f28c4ac12d65ccbd996028205ba183b4afb03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50037852"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995184"
 ---
-# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimento nell'interfaccia di amministrazione di Microsoft Teams
+# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia di amministrazione di Microsoft Teams
 
 > [!NOTE]
-> Gli amministratori devono avere una licenza di Teams per accedere a questa funzionalità. Se provi ad accedere a questa funzione senza una licenza di Teams, verrà visualizzato un messaggio di errore.
+> Gli amministratori devono avere una licenza di Teams per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza una licenza di Teams, viene visualizzato un messaggio di errore.
 
-L'app Complimento in Microsoft Teams consente agli utenti di mostrare il proprio apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare badge personalizzati, Complimento è progettato per aiutare a riconoscere l'impegno che viene inserito nell'ampia gamma di lavori degli utenti di Teams, dai docenti agli operatori in prima linea. Per altre informazioni, vedere [Inviare un complimento alle persone.](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e)
+L'app Complimenti in Microsoft Teams aiuta gli utenti a mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Lode è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti di Teams fanno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere Inviare [complimenti alle persone.](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e)
 
-Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'interfaccia di amministrazione di Microsoft Teams. Nella barra di spostamento sinistra, vai alle **app di Teams > Gestisci app.** Nell'elenco delle app fare **clic** su Complimento e quindi selezionare **Impostazioni.**  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e creare badge personalizzati.
+Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare a **App di Teams > Gestisci app**. Nell'elenco delle app fare clic su **Complimento** e quindi selezionare **Impostazioni.**  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e di creare badge personalizzati.
 
-![Screenshot della scheda Impostazioni per l'app Complimento](media/manage-praise-app-settings.png)
+![Screenshot della scheda Impostazioni per l'app Complimenti](media/manage-praise-app-settings.png)
 
 > [!NOTE]
-> L'app Complimento non è disponibile per le nuvole governative degli Stati Uniti.
+> La funzionalità dell'app Praise non è disponibile per i cloud governativi degli Stati Uniti.
 
 ## <a name="use-built-in-badge-sets"></a>Usare set di badge predefiniti
 
-I set predefiniti sono raccolte di badge progettati da Microsoft per l'app Complimento. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell'app Complimento. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, attivare o disattivare l'interruttore corrispondente. 
+I set predefiniti sono raccolte di badge progettati da Microsoft per l'app Praise. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell'app Complimenti. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, impostare l'interruttore corrispondente su Attivato o Disattivato. 
 
 <a name="default-badges"></br></a>
 
 ### <a name="default-badges"></a>Badge predefiniti
 
-Il set di badge predefinito è progettato per aiutare gli utenti di Teams a riconoscere i colleghi per andare oltre e oltre con il proprio lavoro.
+Il set di badge predefinito è progettato per consentire agli utenti di Teams di riconoscere i colleghi per andare oltre con il proprio lavoro.
 
-![Anteprima del set di badge predefinito](media/default-set-praise.png)
+![Anteprima del set di notifiche predefinito](media/default-set-praise.png)
 
 <a name="sel-edu-badges"></br></a>
 
 ### <a name="social-and-emotional-learning-badges-for-education"></a>Badge di apprendimento sociale ed emotivo per l'istruzione
 
-I docenti possono riconoscere i singoli studenti per i risultati e i comportamenti di apprendimento sociale ed emotivo (SEL) con badge che illustrano questi concetti.
+I docenti possono riconoscere singoli studenti per obiettivi e comportamenti di apprendimento sociale ed emotivo (SEL) con badge che illustrano questi concetti.
 
 ![Anteprima dei badge di apprendimento sociale ed emotivo per l'istruzione](media/sel-edu-set-praise.png)
 
@@ -58,36 +58,36 @@ Selezionare **Crea un badge personalizzato.** Da qui è possibile progettare un 
 
 ![Screenshot del riquadro Crea un badge personalizzato](media/manage-praise-app-create-custom-badge.png)
 
-1. Immettere un nome di badge. Nome visualizzato nel badge quando gli utenti inviano un complimento.
+1. Immettere un nome di badge. Questo è il nome che verrà visualizzato nel badge quando gli utenti inviano complimenti.
 
 2. Impostare i colori del badge. Per impostare i colori del testo e dello sfondo del badge, è necessario immettere i colori come valori esadecimali (esadecimali).
 
    > [!TIP]
-   > Se non si ha distogliere [](#hex-colors-intro) i valori esadecimali, questo articolo include una rapida introduzione per illustrarne l'uso.
+   > Se non si ha novità per i valori esadecimali, questo articolo include una rapida [introduzione](#hex-colors-intro) per illustrare come usarli.
 
-3. Caricare un'immagine badge. Il tipo di file accettato è . PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 X 216 pixel.
+3. Caricare un'immagine del badge. Il tipo di file accettato è . PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 x 216 pixel.
 ![Badge con campi di sfondo, testo e immagine etichettati](media/praise-app-badge-fields.png)
 
-4. Localizzare il nome della notifica: in **Nomi badge localizzati** selezionare **Aggiungi.** Selezionare le impostazioni locali desiderate nell'elenco a discesa. Immettere quindi il nome del badge nella lingua designata.
+4. Localizzare il nome del badge: in **Nomi badge localizzati** selezionare **Aggiungi.** Selezionare le impostazioni locali desiderate nell'elenco a discesa. Immettere quindi il nome del badge nella lingua designata.
 
-5. Escludere il badge da impostazioni locali specifiche: in **Escludi badge da** queste impostazioni locali selezionare **Aggiungi.** Selezionare le impostazioni locali da escludere dall'elenco a discesa.
+5. Escludere il badge da impostazioni locali specifiche: in **Escludi badge da queste impostazioni** locali selezionare **Aggiungi**. Selezionare le impostazioni locali da escludere dall'elenco a discesa.
 
-6. Selezionare **Applica.** Il nuovo badge verrà visualizzato nella tabella dei badge personalizzati.
+6. Selezionare **Applica**. Il nuovo badge verrà ora visualizzato nella tabella dei badge personalizzati.
 
 > [!NOTE]
-> Se i passaggi 4 e 5 vengono ignorati, il badge verrà visualizzato nella lingua predefinita per tutte le impostazioni locali.
+> Se i passaggi 4 e 5 vengono ignorati, il badge sarà nella lingua predefinita per tutte le impostazioni locali.
 >
-> Dopo aver apportato tutte le modifiche alla selezione del badge, assicurarsi di selezionare **Invia.** Possono essere necessarie alcune ore prima che le modifiche siano disponibili per l'organizzazione.
+> Dopo aver apportato le modifiche alla selezione del badge, assicurarsi di selezionare **Invia**. Potrebbero essere necessarie fino a poche ore prima che queste modifiche siano disponibili per l'organizzazione.
 
 <a name="hex-colors-intro"></br></a>
 
-## <a name="specify-colors-with-hex-values"></a>Specificare colori con valori esadecimali
+## <a name="specify-colors-with-hex-values"></a>Specificare i colori con valori esadecimali
 
-I valori esadecimali sono stringhe di sei cifre esadecimali che rappresentano l'intensità di rosso (RR), verde (GG) e blu (BB) in un colore specifico su una scala da 00 a FF. Quando si uniscono i valori di tutti e tre i colori, si ottiene un valore esadecimale: #RRGGBB
+I valori dei colori esadecimali sono stringhe di sei cifre esadecimali che rappresentano l'intensità del rosso (RR), del verde (GG) e del blu (BB) in un colore specifico su una scala da 00 a FF. Quando si uniscono i valori di tutti e tre i colori, si ottiene un valore esadecimale: #RRGGBB
 
-Ad esempio, il valore esadecimale per il colore rosso è #FF0000 perché il rosso è impostato sul valore più alto possibile, FF e il verde e il blu sono impostati sul valore più basso possibile, 00.
+Ad esempio, il valore esadecimale per il colore rosso è #FF0000 perché il rosso è impostato sul valore più alto possibile, FF e verde e blu sono impostati ognuno sul valore più basso possibile, 00.
 
-Per esplorare colori e valori esadecimali diversi, vedere selezione colori [di Bing.](https://www.bing.com/search?q=color+picker)
+Per esplorare colori diversi e i relativi valori esadecimali, vedere [Selezione colori di Bing.](https://www.bing.com/search?q=color+picker)
 
 Di seguito è riportato un elenco di colori di esempio per iniziare:
 
@@ -104,56 +104,56 @@ Di seguito è riportato un elenco di colori di esempio per iniziare:
 
 ## <a name="best-practices-for-creating-custom-badges"></a>Procedure consigliate per la creazione di badge personalizzati
 
-**Invia tutti i badge contemporaneamente.** Poiché l'elaborazione dei nuovi badge richiede del tempo, è meglio aggiungere tutti i badge personalizzati alla tabella prima di inviarli.
+**Invia tutti i tuoi badge contemporaneamente.** Poiché l'elaborazione dei nuovi badge richiede del tempo, è meglio aggiungere tutti i badge personalizzati alla tabella prima di inviarli.
 
-**Quando si scelgono i colori, tenere presente l'accessibilità.** Alcuni colori si uniscono meglio di altri.  Creare un contrasto tra il testo e i colori di sfondo per semplificare la lettura del nome del badge. Ad esempio, se si sceglie un colore di sfondo scuro, scegliere un colore chiaro per il testo.
+**Quando si scelgono i colori, tenere presente l'accessibilità.** Alcuni colori si uniscono meglio di altri.  Creare un contrasto tra il testo e i colori di sfondo per semplificare la lettura del nome del badge. Ad esempio, se si sceglie un colore di sfondo scuro, scegliere un colore di testo chiaro.
 
-**Quando si seleziona un'immagine, tenere presenti le dimensioni del badge.** Per una qualità ottimale, è consigliabile caricare un file di immagine di dimensioni 216 x 216 pixel (ovvero le dimensioni massime). Evitare di estendere o distorcere l'immagine per adattarla a queste dimensioni.
+**Quando si seleziona un'immagine, tenere presente le dimensioni del badge.** Per una qualità ottimale, è consigliabile caricare un file di immagine di 216 x 216 pixel,ovvero le dimensioni massime. Evitare di estendere o distorcere l'immagine per adattarla a queste dimensioni.
 
-**Se l'immagine del badge non è rettangolare, renderla trasparente.** Sarà necessario eseguire questa operazione prima di caricare il file di immagine in Complimento.
+**Se l'immagine del badge non è rettangolare, rendere trasparente l'immagine.** È necessario eseguire questa operazione prima di caricare il file di immagine in Complimento.
 
-![Sinistra: badge con immagine non trasparente, destra: badge con immagine trasparente](media/praise-app-best-practices.png)
+![A sinistra: badge con immagine non trasparente, a destra: badge con immagine trasparente](media/praise-app-best-practices.png)
 
-## <a name="badge-set-assets"></a>Badge set assets
+## <a name="badge-set-assets"></a>Risorse del set di badge
 
-I set di badge predefiniti non possono essere modificati, quindi quando un set predefinito è abilitato, tutti i badge del set vengono aggiunti all'app Complimento. Se vuoi aggiungere badge specifici da un set predefinito e oscenirne altri, crea di nuovo i badge che vuoi usare come badge personalizzati. È possibile scaricare l'immagine del badge e trovare il testo e i colori di sfondo dei badge dei set predefiniti nelle tabelle seguenti.
+I set di badge predefiniti non possono essere modificati, quindi quando è abilitato un set predefinito, tutti i badge nel set vengono aggiunti all'app Complimenti. Se si vogliono aggiungere badge specifici da un set predefinito e osare altri utenti, creare di nuovo i badge da usare come badge personalizzati. È possibile scaricare l'immagine del badge e trovare il testo e i colori di sfondo dei badge dai set predefiniti nelle tabelle seguenti.
 
 ### <a name="default-badges-assets"></a>Risorse badge predefinite
 
 </br>
 
-|Nome badge     |File di immagine  |Colore del testo | Colore di sfondo |
+|Nome del badge     |File di immagine  |Colore del testo | Colore di sfondo |
 |---------------|------------|---------- |--------|
 |Achiever       |[Achiever PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/achiever-badge.png)|#D36E70    |#E3F4FC|
-|Straordinario        |[PNG straordinario](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/awesome-badge.png)</a>|#8283B2    |#D1EFF2|
-|Allenatore          |[Coach PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/coach-badge.png)</a>|#6AA55A    |#DBF1D6|
-|Invasa        |[PNG conse erta](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/courage-badge.png)</a>|#DC5041    |#FCF6C8|
-|Creative       |[Creative PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/creative-badge.png) |#CF9D50    |#FCF6C8|
+|Eccezionale        |[PNG straordinario](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/awesome-badge.png)</a>|#8283B2    |#D1EFF2|
+|Coach          |[Coach PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/coach-badge.png)</a>|#6AA55A    |#DBF1D6|
+|Coraggio        |[Courage PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/courage-badge.png)</a>|#DC5041    |#FCF6C8|
+|Creatività       |[PNG creativo](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/creative-badge.png) |#CF9D50    |#FCF6C8|
 |Inclusivo      |[PNG inclusivo](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/inclusive-badge.png)</a>|#3C77BB    |#E2F4FC|
 |Cuore gentile     |[Kind Heart PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/kind-heart-badge.png)</a>|#D36D6E    |#F4DEDE|
 |Leadership     |[Leadership PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/leadership-badge.png)|#419098    |#D2EAEC|
-|Snodato       |[PNG semestio](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/optimism-badge.png)</a>|#D8338C    |#F4DDDE|
+|Ottimismo       |[Ottimizza PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/optimism-badge.png)</a>|#D8338C    |#F4DDDE|
 |Risolutore di problemi |[PNG risolutore di problemi](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/problem-solver-badge.png)|#B8916E    |#CBDADF|
-|Giocatore del team    |[PNG del lettore di team](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/team-player-badge.png)|#8B8DC0    |#F4EEC0|
+|Giocatore del team    |[PNG del giocatore del team](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/team-player-badge.png)|#8B8DC0    |#F4EEC0|
 |Grazie      |[Grazie PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/default-set/thank-you-badge.png)|#469CA4    |#BACCB6|
 
 </br>
 
-### <a name="social-and-emotional-learning-badges-for-education-assets"></a>Badge di apprendimento sociale ed emotivo per i beni didattici
+### <a name="social-and-emotional-learning-badges-for-education-assets"></a>Badge di apprendimento sociale ed emotivo per le risorse didattiche
 
 </br>
 
-|Nome badge        |File di immagine  |Colore del testo | Colore di sfondo |
+|Nome del badge        |File di immagine  |Colore del testo | Colore di sfondo |
 |------------------|------------|---------- |--------|
-|Comunicazione     |[Communication PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/communication-badge.png)|#FFFFFF    |#173B65|
-|Pensiero critico |[PNG con pensiero critico](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/critical-thinking-badge.png)|#FFFFFF    |#084D26|
-|Invasi         |[PNG snodato](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/curiosity-badge.png)|#FFFFFF    |#008078|
-|Empatia           |[Empathy PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/empathy-badge.png)|#FFFFFF    |#650B35|
-|Obiettivo principale      |[Obiettivo PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/goal-pursuit-badge.png)|#FFFFFF    |#006F95|
-|Motivazione        |[PNG motivazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/motivation-badge.png)|#FFFFFF    |#C52127|
-|Persistenza       |[PNG persistenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/persistence-badge.png)|#FFFFFF    |#167D3E|
-|Rispetta           |[Rispetta PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/respect-badge.png)|#FFFFFF    |#8251A0|
-|Responsabilità    |[Responsibility PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/responsibility-badge.png)|#FFFFFF    |#B05DA3|
-|Auto consapevolezza    |[PNG auto consapevolezza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/self-awareness-badge.png)|#FFFFFF    |#1680E5|
-|Gestione in autonomia   |[PNG di auto-gestione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/self-management-badge.png)|#FFFFFF    |#4C144D|
-|Pensieroso    |[Pensieroso PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/thoughtfulness-badge.png)|#FFFFFF    |#EE4086|
+|Comunicazione     |[PNG di comunicazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/communication-badge.png)|#FFFFFF    |#173B65|
+|Pensiero critico |[PNG pensiero critico](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/critical-thinking-badge.png)|#FFFFFF    |#084D26|
+|Curiosità         |[Curiosity PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/curiosity-badge.png)|#FFFFFF    |#008078|
+|Empatia           |[PNG empatia](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/empathy-badge.png)|#FFFFFF    |#650B35|
+|Ricerca degli obiettivi      |[Obiettivo ricerca PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/goal-pursuit-badge.png)|#FFFFFF    |#006F95|
+|Motivazione        |[Motivazione PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/motivation-badge.png)|#FFFFFF    |#C52127|
+|Persistenza       |[PNG di persistenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/persistence-badge.png)|#FFFFFF    |#167D3E|
+|Rispetto           |[Rispetta PNG](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/respect-badge.png)|#FFFFFF    |#8251A0|
+|Responsabilità    |[PNG di responsabilità](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/responsibility-badge.png)|#FFFFFF    |#B05DA3|
+|Consapevolezza di sé    |[PNG di autosassazione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/self-awareness-badge.png)|#FFFFFF    |#1680E5|
+|Gestione autonoma   |[PNG auto-gestione](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/self-management-badge.png)|#FFFFFF    |#4C144D|
+|Premura    |[PNG riflessivo](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/raw/live/Teams/downloads/praise-app/sel-edu-set/thoughtfulness-badge.png)|#FFFFFF    |#EE4086|

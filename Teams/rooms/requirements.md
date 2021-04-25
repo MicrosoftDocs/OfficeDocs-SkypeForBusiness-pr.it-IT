@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni sui requisiti per il supporto di Microsoft Teams Rooms, tra cui la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9083a66add26ff7149fddd16052bac87625d2b27
-ms.sourcegitcommit: 234c928b9ac127716e3d5a92ee2bcdda1a415a38
+ms.openlocfilehash: bf1bf7f076a75fb9ce504d62391e93d0e6d65a6f
+ms.sourcegitcommit: 900f28c4ac12d65ccbd996028205ba183b4afb03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51959473"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995174"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
@@ -38,7 +38,7 @@ Fare riferimento a:
 > [!NOTE]
 > Microsoft Teams Rooms consente di accede a Microsoft Teams, Skype for Business Server 2019, Skype for Business Server 2015 o Skype for Business Online e può partecipare alle riunioni ospitate da tali prodotti.
 >
-> Le piattaforme precedenti, come Lync Server 2013, non sono supportate da Microsoft Teams Rooms. Microsoft Teams Rooms non è supportato in Microsoft 365 o Office 365 gestito da 21Vianet o in ambienti GCC-High o DoD.
+> Le piattaforme precedenti, come Lync Server 2013, non sono supportate da Microsoft Teams Rooms. Microsoft Teams Rooms non è supportato in Microsoft 365 o Office 365 gestito da ambienti 21Vianet o DoD.
 >
 > Se si dispone di un server Exchange locale, è necessario usare Exchange Server 2013 SP1 o versione successiva per Microsoft Teams Rooms.
 

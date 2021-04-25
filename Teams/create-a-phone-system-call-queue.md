@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Scopri come configurare Sistema telefonico per le code di chiamata con Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 1202de31beddb8f70391d40d4e6218942c59cba1
-ms.sourcegitcommit: 4e1f5d99c1d0612dc5b50f850280983867ff53d8
+ms.openlocfilehash: f60714bc1c4868496209f414583c925da527460a
+ms.sourcegitcommit: 900f28c4ac12d65ccbd996028205ba183b4afb03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51874452"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995284"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -185,6 +185,7 @@ I client seguenti sono supportati per gli agenti di chiamata in una coda di chia
   - Client Mac Skype for Business (versione 6.16.0 e versioni successive)
   - Client Windows di Microsoft Teams (versioni a 32 bit e a 64 bit)
   - Client Microsoft Teams Mac
+  - Microsoft Teams in [Virtualized Desktop Infrastructure](/microsoftteams/teams-for-vdi) (Windows Virtual Desktop, Citrix e VMware)
   - App Per iPhone di Microsoft Teams
   - App Microsoft Teams per Android
 

@@ -18,12 +18,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8eac7d39835abdb05ee86be47504c3f9fecc7022
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f5b8973034f9d0b65a5b6bdc11069a1e81efc477
+ms.sourcegitcommit: 900f28c4ac12d65ccbd996028205ba183b4afb03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117014"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995154"
 ---
 # <a name="skype-for-business-online-retirement"></a>Ritiro di Skype for Business Online
 
@@ -96,7 +96,7 @@ Teams è disponibile in molte delle suite Microsoft 365. Le capacità che oggi s
 **Microsoft sta pianificando aggiornamenti programmati?**<br>
 Attualmente non sono previsti aggiornamenti programmati per i clienti aziendali. I clienti possono scegliere di passare a Teams quando è opportuno per la propria organizzazione, prima della data di ritiro di Skype for Business Online il 31 luglio 2021. A utenti e amministratori saranno resi disponibili strumenti e istruzioni per la transizione a Teams.
 
-Per supportare i clienti più piccoli che potrebbero non avere risorse IT dedicate, Microsoft assiste gli aggiornamenti automatici da Skype for Business Online a Teams. I clienti idonei ricevono una notifica dell'aggiornamento tramite messaggi di posta elettronica e notifiche del Centro messaggi. Nelle comunicazioni sono disponibili maggiori dettagli. Per altre informazioni, vedere [Aggiornamenti automatici da Skype for Business Online a Microsoft Teams](./upgrade-automated.md).
+Per supportare i clienti più piccoli che potrebbero non avere risorse IT dedicate, Microsoft assiste gli aggiornamenti automatici da Skype for Business Online a Teams. I clienti idonei ricevono una notifica dell'aggiornamento tramite messaggi di posta elettronica e notifiche del Centro messaggi. Nelle comunicazioni sono disponibili maggiori dettagli. Per altre informazioni, vedere [Aggiornamenti automatici da Skype for Business Online a Microsoft Teams](./upgrade-assisted.md).
 
 **In che modo l'annuncio del ritiro di Skype for Business Online riguarda le organizzazioni con configurazioni ibride (Skype for Business Online e Skype for Business Server)?**<br>
 I clienti che usano ambienti ibridi con configurazioni online e locali dovranno eseguire la transizione degli utenti da Skype for Business Online a Microsoft Teams entro la data di ritiro del 31 luglio 2021. I percorsi di aggiornamento per le configurazioni ibride, basati su principi di coesistenza e interoperabilità rimarranno dopo il ritiro di Skype for Business Online. Per altre informazioni, vedere [Coesistenza con Skype for Business](coexistence-chat-calls-presence.md) e [Coesistenza e interoperabilità di Microsoft Teams e Skype for Business](teams-and-skypeforbusiness-coexistence-and-interoperability.md).

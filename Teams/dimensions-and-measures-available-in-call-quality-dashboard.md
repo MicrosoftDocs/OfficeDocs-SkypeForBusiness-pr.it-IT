@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottieni informazioni dettagliate sulle dimensioni e le misure usate dal Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business online.
-ms.openlocfilehash: cef151eb8941135112bab92a806b620727567bee
-ms.sourcegitcommit: b56727299d7ea47e23807114a4f5881e289c0b6a
+ms.openlocfilehash: 1c91ce322e51705c9e0813b6c12a29af93319448
+ms.sourcegitcommit: 900f28c4ac12d65ccbd996028205ba183b4afb03
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "51880455"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "51995304"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -407,6 +407,8 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Is Anonymous Join Session  | Boolean  | Vero se la partecipazione dell'utente alla conferenza era anonima, Falso negli altri casi.   | &bull; Nessun dato per determinare se l'utente è stato aggiunto in forma anonima o meno   |
 | Blob di diagnostica multimediale  | Boolean  | Vero se erano presenti dati di diagnostica per il supporto, Falso negli altri casi.   | &bull; Alcuni dati di segnalazione non sono stati raccolti per questo flusso   |
 | Call Setup Failure Reason  | Enumerazione  | Classificazione del motivo per cui non è stato possibile stabilire una connessione con il supporto. <br/>**Valori possibili:** <br/> **Regola di esenzione** da FW Deep Packet Inspection mancante: indica che le apparecchiature di rete lungo il percorso hanno probabilmente impedito la creazione del percorso multimediale a causa delle regole di ispezione profonda dei pacchetti. Il motivo potrebbe essere l'errata configurazione delle regole del proxy o del firewall. <br/> **Regola di esenzione** blocco IP FW mancante: indica che le apparecchiature di rete lungo il percorso hanno probabilmente impedito la connessione del percorso multimediale alla rete di Office 365. Il motivo potrebbe essere l'errata configurazione delle regole del proxy o del firewall che consentono l'accesso agli indirizzi IP e alle porte usate per il traffico di Skype for Business. <br/> **Altro:** indica che non è stato possibile stabilire il percorso multimediale per la chiamata, ma non è stato possibile classificare la causa radice. <br/> Not Media Failure : indica che non è stato rilevato alcun problema con la creazione del percorso multimediale.  | &bull; La configurazione della chiamata non è riuscita a causa di un problema di supporto sconosciuto  |
+| Tipo di sessione  | Enumerazione <br/>**Valori possibili:** <br/> Conf, P2P  | Indica se il tipo di sessione di chiamata è stato uno scenario di riunione (Conf) o di chiamata peer-to-peer (P2P). <br/> **Valore di esempio:** Conf | |
+| Motivo risposta CDR  | Enumerazione <br/>**Valori possibili:** <br/> 0 o 200 = "OK" <br/> 410 = "MediaConnectivityErrors"<br/> 480 = "UserUnavailable"<br/> 487 = "PickupTimedOut" <br/> 603 = "CallDeclined" | Tutti gli altri codici CDR = "Altro" | Fornisce il motivo per cui una sessione di chiamata si conclude, se la chiamata è riuscita o meno e consente la differenziazione tra le chiamate incomplete (nessuna risposta, occupato, rifiutata) e le chiamate non riuscite (creazione di supporti multimediali). <br/> **Valore di esempio:** Ok | <br/>&bull; Il valore "Altro" implica che il codice di risposta non è diagnosticamente utile all'esterno dei team di progettazione Microsoft |
 |**DNS**|||
 | Cache di risoluzione DNS usata  | Boolean  | Vero se l'endpoint ha usato la cache del DNS per risolvere l'indirizzo di inoltro del supporto, Falso negli altri casi.    | <br/>&bull; Questi dati non sono stati segnalati dall'endpoint    |
 |**UserData**| |||
