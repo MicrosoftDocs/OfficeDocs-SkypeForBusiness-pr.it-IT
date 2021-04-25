@@ -21,12 +21,12 @@ metadata:
   - M365-collaboration
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 6ba7e86d6abd9cca8fa6745549eb85f064bdc9d1
-  ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+  ms.openlocfilehash: 7ae2f78db68a84106b25329f374ac93f616fba31
+  ms.sourcegitcommit: 900f28c4ac12d65ccbd996028205ba183b4afb03
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "51094844"
+  ms.lasthandoff: 04/24/2021
+  ms.locfileid: "51995274"
 title: Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 summary: ''
 sections:
@@ -84,7 +84,7 @@ sections:
       Attualmente non sono previsti aggiornamenti programmati per i clienti aziendali. I clienti possono scegliere di passare a Teams quando è opportuno per la propria organizzazione, prima della data di ritiro di Skype for Business Online il 31 luglio 2021. A utenti e amministratori saranno resi disponibili strumenti e istruzioni per la transizione a Teams.
 
 
-      A supporto dei clienti di piccole dimensioni, che potrebbero non avere risorse IT dedicate, Microsoft fornisce aggiornamenti automatici da Skype for Business Online a Teams. I clienti idonei ricevono una notifica dell'aggiornamento tramite messaggi di posta elettronica e notifiche del Centro messaggi. Nelle comunicazioni sono disponibili maggiori dettagli. Per altre informazioni, vedere [Aggiornamenti automatici da Skype for Business Online a Microsoft Teams](upgrade-automated.md).
+      A supporto dei clienti di piccole dimensioni, che potrebbero non avere risorse IT dedicate, Microsoft fornisce aggiornamenti automatici da Skype for Business Online a Teams. I clienti idonei ricevono una notifica dell'aggiornamento tramite messaggi di posta elettronica e notifiche del Centro messaggi. Nelle comunicazioni sono disponibili maggiori dettagli. Per altre informazioni, vedere [Aggiornamenti automatici da Skype for Business Online a Microsoft Teams](upgrade-assisted.md).
   - question: Quali sono i vantaggi dell'infrastruttura di back-end di Teams?
     answer: >
       Teams è stato creato per il cloud sulla base di un'architettura a microservizi altamente scalabile, che è efficiente in termini di consumo di larghezza di banda, offre funzioni di telemetria più robuste e permette di eseguire le operazioni di manutenzione e aggiornamento con interruzioni minime. Per gli utenti, questo si traduce in tempi di accesso alle riunioni più rapidi e in un'esperienza nel browser migliore senza dover scaricare plug-in. Con questa infrastruttura moderna è semplice iniziare a usare Servizi cognitivi Microsoft, che include funzionalità di trascrizione, traduzione, riconoscimento vocale e Machine Learning in grado di rendere la comunicazione e la collaborazione più facili ed efficienti.
