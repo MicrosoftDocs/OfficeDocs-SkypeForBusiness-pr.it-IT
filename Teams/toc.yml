@@ -187,6 +187,8 @@ items:
         href: continue-journey.md
       - name: Ritiro di Skype for Business Online
         href: skype-for-business-online-retirement.md
+      - name: Aggiornamenti assistiti online di Skype for Business
+        href: upgrade-assisted.md
       - name: Domande frequenti
         href: FAQ-journey.yml
       - name: Riferimenti
@@ -1422,8 +1424,6 @@ items:
       - name: Teams per la vendita al dettaglio
         href: expand-teams-across-your-org/teams-for-retail-landing-page.md
         items:
-          - name: Introduzione ai modelli di Teams per la vendita al dettaglio nell’interfaccia di amministrazione
-            href: retail-teams-templates-in-the-admin-console.md
           - name: Introduzione ai modelli di Teams per la vendita al dettaglio
             href: get-started-with-retail-teams-templates.md
       - name: Teams per enti pubblici
