@@ -22,16 +22,16 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata con Microsoft 365 Business Voice.
-ms.openlocfilehash: 40018ce331dfe8516e00c6781373d528a71e85c5
-ms.sourcegitcommit: 3861d661d32f507bd8479509ed09b1cfcf0b214f
+ms.openlocfilehash: ded780f0793a503e4f4089c7a201e659008e9eb7
+ms.sourcegitcommit: 5a39061c2156531f4b7f5f69eecf81a8c8b238d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51607558"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52030126"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
-Le code di chiamata forniscono un metodo per instradare i chiamanti alle persone dell'organizzazione che possono aiutare con un particolare problema o domanda. Le chiamate vengono distribuite una alla volta alle persone in coda (note come *agenti).* 
+Le code di chiamata forniscono un metodo per instradare i chiamanti alle persone dell'organizzazione che possono aiutare a risolvere un particolare problema o domanda. Le chiamate vengono distribuite una alla volta alle persone in coda (note come *agenti).* 
 
 Le code di chiamata forniscono:
 
@@ -104,9 +104,9 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 4. Fare clic su **Salva**.
 
-Il nuovo account verrà visualizzato nell'elenco degli account.
+   Il nuovo account verrà visualizzato nell'elenco degli account.
 
-![Screenshot di un elenco di account delle risorse](../media/resource-accounts-page.png)
+   ![Screenshot di un elenco di account delle risorse](../media/resource-accounts-page.png)
 
 ### <a name="assign-a-license"></a>Assegnare una licenza
 
@@ -138,9 +138,9 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 5. Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
-> [!NOTE]
-> La registrazione caricata non può essere superiore a 5 MB.
-> La musica predefinita fornita nelle code di chiamata di Teams è gratuita di eventuali royalty pagate dall'organizzazione. 
+   > [!NOTE]
+   > La registrazione caricata non può essere superiore a 5 MB.
+   > La musica predefinita fornita nelle code di chiamata di Teams è gratuita di eventuali royalty pagate dall'organizzazione. 
 
 > [!div class="nextstepaction"]
 > [Passaggio 3 - Chiamare gli agenti >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-agents#steps)

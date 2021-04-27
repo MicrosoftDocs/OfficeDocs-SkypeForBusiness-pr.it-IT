@@ -19,12 +19,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come personalizzare le app in Microsoft Teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9e9c7d250f60c3cc100f7d95b26f662ca8af6305
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: 0f61cd0d56c1c050508e9a716ba9846d99d422ad
+ms.sourcegitcommit: 5a39061c2156531f4b7f5f69eecf81a8c8b238d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697791"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52030142"
 ---
 # <a name="customize-apps-in-microsoft-teams"></a>Personalizzare le app in Microsoft Teams
 
@@ -44,7 +44,8 @@ ms.locfileid: "51697791"
 
 Per informazioni dettagliate sui campi che è possibile personalizzare, vedere lo schema manifesto di [Teams.](https://docs.microsoft.com/microsoftteams/platform/resources/schema/manifest-schema)
 
-> [! NOTA La personalizzazione delle app al momento non è supportata in Government Community Cloud High (GCCH) o Department of Defense (DoD).
+> [!NOTE]
+> Al momento, la personalizzazione delle app non è supportata in Government Community Cloud High (GCCH) o Department of Defense (DoD).
 
 ## <a name="customize-the-apps-details"></a>Personalizzare i dettagli dell'app
 
@@ -102,7 +103,7 @@ Per iniziare a personalizzare un'app, completare la procedura seguente:
 
 Ora gli utenti finali di Teams possono aprire il proprio client Teams per visualizzare l'app personalizzata.
 
-   ![App personalizzata nel client di Teams](media/find-customized-app.png)
+   ![App personalizzata nel client di Teams](media/contoso-app.png)
 
 ### <a name="special-considerations-for-customizing-an-app"></a>Considerazioni speciali per la personalizzazione di un'app
 
@@ -127,7 +128,7 @@ La nota seguente include dettagli importanti sulla personalizzazione di un'app.
 
 4. Visualizzare i dettagli dell'app, incluso il nome dell'app originale **Nome breve dell'autore.**
 
-   ![Personalizzare il nome dell'app del pannello icone](media/app-details-original-name.png)
+   ![Personalizzare il nome dell'app del pannello icone](media/original-app-version.png)
 
    Il **campo Nome breve dell'autore** è visibile solo se è stato modificato il nome breve dell'app.
 

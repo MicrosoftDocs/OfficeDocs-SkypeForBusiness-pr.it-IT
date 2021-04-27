@@ -20,12 +20,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 1acde038bc2df64d7cf35828bf0b08273bf1f095
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 7e93b66f9a7a0abc4dfc2e3484818da28a65f36a
+ms.sourcegitcommit: 5a39061c2156531f4b7f5f69eecf81a8c8b238d0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51108352"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52030046"
 ---
 <a name="plan-for-microsoft-365-groups-when-creating-teams-in-microsoft-teams"></a>Pianificare i gruppi di Microsoft 365 durante la creazione di team in Microsoft Teams
 ==========================================================
@@ -38,12 +38,9 @@ Esistono due scenari che giustificano alcune discussioni sulla pianificazione de
 
 -   Secondo, per i clienti che non hanno gruppi esistenti definiti in Microsoft 365, è possibile crearli usando l'interfaccia di amministrazione di Microsoft 365, il Web di Teams o i client desktop. Come accennato in precedenza, gestire tutte le future appartenenze al gruppo di Microsoft 365 usando il client Teams. Poiché anche l'appartenenza a un team sta definendo l'appartenenza ai gruppi di Microsoft 365, è consigliabile preparare gli utenti per questa modifica.
 
-## <a name="teams-respects-microsoft-365-groups-naming-policy-in-private-preview"></a>Teams rispetta i criteri di denominazione dei gruppi di Microsoft 365 (in anteprima privata)
+## <a name="teams-respects-microsoft-365-groups-naming-policy"></a>Teams rispetta i criteri di denominazione dei gruppi di Microsoft 365
 
 I criteri di denominazione dei gruppi di Microsoft 365 impostati dall'amministratore verranno applicati in Teams quando gli utenti creano o modificano i nomi dei team. Sono inclusi elementi come prefissi o suffissi obbligatori e l'esclusione di parole escluse.
-
-> [!NOTE]
-> Questa funzionalità è in anteprima privata, il che significa che se non si fa parte di questa anteprima, Teams non è ancora conforme a questo criterio di denominazione dei gruppi di Microsoft 365.
 
 Per altre informazioni, vedere Criteri di denominazione dei gruppi di [Microsoft 365 in Teams.](https://support.office.com/article/Office-365-Groups-Naming-Policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
 
