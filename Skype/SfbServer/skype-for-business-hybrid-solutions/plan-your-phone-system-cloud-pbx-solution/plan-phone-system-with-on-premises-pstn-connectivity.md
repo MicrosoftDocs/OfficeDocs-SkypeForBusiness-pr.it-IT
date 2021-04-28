@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 021a4c0b-d5de-4155-a506-650d758624aa
 description: Informazioni sulle considerazioni sulla pianificazione per Sistema telefonico (Cloud PBX) con connettività PSTN locale.
-ms.openlocfilehash: e0caed5560e7b7609adbfccf79e4ef63ee4eae09
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: afa97a00b474017e6aed5e92802e7ba13483f7af
+ms.sourcegitcommit: 03ff569a0b7a8e04d7b0ab32f370a9a537fa7fe7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51110542"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "52064702"
 ---
 # <a name="plan-phone-system-with-on-premises-pstn-connectivity-in-skype-for-business-server"></a>Pianificare Sistema telefonico con connettività PSTN locale in Skype for Business Server
 
@@ -34,7 +34,7 @@ ms.locfileid: "51110542"
 
 Informazioni sulle considerazioni sulla pianificazione per Sistema telefonico (Cloud PBX) con connettività PSTN locale.
 
-Questo contenuto è rilevante se Skype for Business Server o Lync Server 2013 è già distribuito in locale. Per altri scenari, vedere [Soluzioni di telefonia Microsoft](../../../SfbHybrid/hybrid/msft-telephony-solutions.md).
+Questo contenuto è rilevante se Skype for Business Server o Lync Server 2013 è già distribuito in locale. Per altri scenari, vedere [Soluzioni di telefonia Microsoft](/microsoftteams/cloud-voice-landing-page).
 
  Sistema telefonico con connettività PSTN locale consente di sfruttare le funzionalità di Sistema telefonico (Cloud PBX) per gli utenti. Ciò può essere utile per gli scenari seguenti:
 

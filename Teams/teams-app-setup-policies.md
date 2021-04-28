@@ -19,12 +19,12 @@ f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.overview
-ms.openlocfilehash: ee50af6dec780480b8efdbf39dabb8e52ff03f3a
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: ebfcff8ce7215e34e3c17e9c09f3a56d249d5b40
+ms.sourcegitcommit: 1ee9b1857f472a5b95352f7471c0cf21be6ea0c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697711"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52059200"
 ---
 # <a name="manage-app-setup-policies-in-microsoft-teams"></a>Gestire i criteri di configurazione delle app in Microsoft Teams
 
@@ -152,7 +152,9 @@ Per visualizzare tutte le app aggiunte per un utente, gli utenti potrebbero dove
 
 #### <a name="what-do-i-need-to-know-about-the-teams-mobile-experience"></a>Cosa c'è da sapere sull'esperienza di Teams per dispositivi mobili
 
-I client mobili di Teams (iOS e Android) attualmente non supportano le app personali con schede statiche. A seconda delle app impostate nel criterio, le app aggiunte al client desktop di Teams potrebbero non essere visualizzate nei client mobili di Teams. I bot personali verranno comunque visualizzati in Chat sui client mobili.
+I client mobili di Teams (iOS e Android) supportano le app personali con schede statiche. Le app aggiunte al client desktop di Teams verranno visualizzate nei client mobili di Teams. I bot personali verranno visualizzati in Chat sui client mobili.
+
+Le app di terze parti (che possono essere scaricate da Teams Store) devono essere approvate prima di essere mostrate su dispositivi mobili. Se un amministratore aggiunge un'app, che non è approvata da Microsoft per dispositivi mobili, verrà visualizzata in Teams Desktop, ma non su un dispositivo mobile. Per [altre informazioni, vedere](/microsoftteams/platform/tabs/what-are-tabs#mobile-clients) Client per dispositivi mobili.
 
 Con i client di Teams per dispositivi mobili, gli utenti potranno vedere le app principali di Teams, come Attività, Chat e Teams, ed è possibile aggiungere alcune app di prima parte da Microsoft, ad esempio Turni.
 

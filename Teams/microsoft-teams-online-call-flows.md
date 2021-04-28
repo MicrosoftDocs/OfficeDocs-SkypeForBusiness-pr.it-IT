@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 description: Informazioni su come Teams usa i flussi di Office 365 in varie topologie, oltre a flussi univoci del team usati per la comunicazione multimediale peer-to-peer.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a720838958fa249674f6216cbc24ade5134127bc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 27a2c68483c3d54cb3f3572bbed3a06a53ccc67e
+ms.sourcegitcommit: 1ee9b1857f472a5b95352f7471c0cf21be6ea0c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098482"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "52059210"
 ---
 # <a name="microsoft-teams-call-flows"></a>Flussi di chiamata in Microsoft Teams
 
@@ -87,12 +87,12 @@ La connettività dei flussi multimediali di Teams viene implementata usando le p
 
 ### <a name="technologies-that-are-not-recommended-with-microsoft-teams"></a>Tecnologie non consigliate con Microsoft Teams
 
-**Rete VPN**. Non è consigliabile per il traffico multimediale (o il flusso 2'). Il client VPN deve usare vpn divise e instradare il traffico multimediale come qualsiasi utente esterno non VPN, come specificato in Abilitazione dei supporti multimediali [di Lync per bypassare un tunnel VPN.](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Enabling-Lync-Media-to-Bypass-a-VPN-Tunnel/ba-p/620210)
+**Rete VPN**. Non è consigliabile per il traffico multimediale (o il flusso 2'). Il client VPN deve usare il split tunneling e instradare il traffico multimediale di Teams come qualsiasi utente esterno non VPN, come specificato in Abilitazione dei supporti multimediali di Lync per bypassare [un tunnel VPN.](https://techcommunity.microsoft.com/t5/Skype-for-Business-Blog/Enabling-Lync-Media-to-Bypass-a-VPN-Tunnel/ba-p/620210)
 
 > [!NOTE]
 > Anche se il titolo indica Lync, è applicabile anche a Teams.
 
-**Formatori di pacchetti**. Non è consigliabile qualsiasi tipo di snipper di pacchetti, ispezione dei pacchetti o dispositivi shaper di pacchetti e può ridurre notevolmente la qualità.
+**Formatori di pacchetti**. Qualsiasi tipo di dispositivo di snipper di pacchetti, ispezione pacchetti o shaper di pacchetti non è consigliato per il traffico multimediale di Teams e può ridurre notevolmente la qualità.
 
 ### <a name="principles"></a>Principi
 
