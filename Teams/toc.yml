@@ -1395,6 +1395,8 @@ items:
                 href: class-insights.md
               - name: Sincronizza i dati SIS con Insights
                 href: education-insights-sis-data-sync.md
+              - name: Introduzione a Reflect
+                href: reflect.md
           - name: Assegnare attività in Teams per l'istruzione
             href: expand-teams-across-your-org/assignments-in-teams.md
           - name: Risorse di Teams per l'istruzione per amministratori
