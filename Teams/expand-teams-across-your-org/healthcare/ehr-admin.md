@@ -25,7 +25,7 @@ ms.reviewer: ''
 description: Usare Microsoft Teams per configurare il sistema di visite virtuali
 ms.openlocfilehash: 37b93533aeff6b519b1f5a65cf49211464b41388
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51096280"
@@ -66,7 +66,7 @@ All'interno dell'organizzazione saranno necessarie anche le informazioni seguent
 - Customer Analyst di Epic
 
 > [!Note]
-> Consulta la [Guida all'integrazione telesalana epica](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357) di Microsoft Teams con il tuo esperto tecnico Epic. Assicurarsi che tutti i prerequisiti siano stati completati. 
+> Rivedere la [Guida all'integrazione della telemedicina di Epic-Microsoft Teams](https://galaxy.epic.com/Search/GetFile?Url=1!68!100!100100357) con uno specialista tecnico Epic. Assicurarsi che tutti i prerequisiti siano soddisfatti. 
 
 ## <a name="connector-setup"></a>Configurazione dei connettori
 
@@ -144,7 +144,7 @@ Caratteristiche principali dell'esperienza del provider:
 
 - I provider devono eseguire l'accesso singolo con il proprio account Microsoft 365 quando partecipano a una visita virtuale per la prima volta.
 
-- Dopo aver eseguito l'accesso singolo, il provider verrà trasferito direttamente all'appuntamento virtuale in Microsoft Teams (il provider deve aver eseguito l’accesso a Microsoft Teams).
+- Dopo aver eseguito l'accesso singolo, il provider verrà trasferito direttamente all'appuntamento virtuale in Microsoft Teams. (Il provider dovrà aver eseguito l'accesso a Microsoft Teams).
 
 - Il provider può vedere gli aggiornamenti in tempo reale dei partecipanti che si connettono e disconnettono per un appuntamento specifico. Il provider può vedere quando il paziente è connesso a una visita virtuale.
 
