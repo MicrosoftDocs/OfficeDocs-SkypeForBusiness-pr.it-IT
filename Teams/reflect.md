@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2594b39fed7d7194aabacd5df1a977a9d1262d70
-ms.sourcegitcommit: 03ff569a0b7a8e04d7b0ab32f370a9a537fa7fe7
+ms.openlocfilehash: 4fb7dc36dc08677d0f6dd1e849383b7e146c972b
+ms.sourcegitcommit: bbf44378373668899d338d56cde4c92cc31202c4
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/28/2021
-ms.locfileid: "52064865"
+ms.locfileid: "52070652"
 ---
 # <a name="it-admin-guide-to-reflect-in-microsoft-teams"></a>Guida per gli amministratori a Reflect in Microsoft Teams
 
@@ -54,20 +54,22 @@ Se gestisci i criteri di configurazione delle app per il tuo istituto, assicurai
 
 Per consentire a un utente di installare e interagire con qualsiasi app, devi autorizzazione l'app a livello di organizzazione nella pagina **Gestisci app** e nel **criterio di autorizzazione dell'app** assegnato all'utente.
 
-Se in precedenza hai stabilito che ogni app deve essere autorizzata, passa alla pagina Gestisci app e "consenti" Reflect. **Quando blocchi un'app, l'app non compare in Teams per qualsiasi utente dell'organizzazione.**
+Se in precedenza hai stabilito che ogni app deve essere autorizzata, passa alla pagina Gestisci app e "consenti" Reflect. **Quando blocchi un'app, l'app non compare in Teams per tutti gli utenti dell'organizzazione.**
+
+> [!NOTE]
+> Per accedere all’app Reflect, è necessaria una licenza A1, A3 o A5 per Microsoft 365.
 
 > [!TIP]
-> Per altri dettagli, leggi [come consentire un'app o aggiungerla a un team di classe](manage-apps.md#allow-and-block-apps).
-
+> Per altri dettagli, leggi [Come consentire un'app o aggiungerla a un team di classe](manage-apps.md#allow-and-block-apps).
 
 ## <a name="where-do-educators-find-reflect"></a>Dove possono trovare Reflect i docenti?
-Dopo aver abilitato Reflect, gli educatori entrano nella classe e selezionano **Nuova conversazione**. Possono poi selezionare '**…**' per aprire le estensioni di messaggistica e immettere **Reflect** nella barra di ricerca. La finestra di dialogo li guida nella definizione delle domanda e delle autorizzazioni di lettura degli utenti
+Dopo aver abilitato Reflect, i docenti entrano nella classe e selezionano **Nuova conversazione**. Possono poi selezionare '**…**' per aprire le estensioni di messaggistica e immettere **Reflect** nella barra di ricerca. La finestra di dialogo li guida nella definizione delle domanda e delle autorizzazioni di lettura degli utenti
 
 :::image type="content" source="media/reflect-add-app.png" alt-text="Aggiungere Reflect al team di classe":::
 
-È possibile fare clic destro sull'icona Reflect e selezionare **Blocca in alto** per accedervi rapidamente.
+È possibile fare clic con il pulsante destro del mouse sull'icona Reflect e selezionare **Blocca in alto** per accedervi rapidamente.
 
-:::image type="content" source="media/insights-pin-app.png" alt-text="Aggiungere l'app Insights":::
+:::image type="content" source="media/reflect-pin-app.png" alt-text="Bloccare in alto l’app Reflect":::
 
 > [!TIP]
 > È anche possibile individuare l'app Insights tramite questo collegamento: [https://aka.ms/getReflect](https://aka.ms/getReflect)
