@@ -24,13 +24,13 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Romania.
-ms.openlocfilehash: 6ded589276ca8132090b5bda9a8d8425cd34e7d4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Ecco i servizi per Skype for Business e Microsoft Teams disponibili per la Romania.
+ms.openlocfilehash: c094a08cd748adac8cd07b406cce3e43cf4ae17c
+ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098492"
+ms.lasthandoff: 05/03/2021
+ms.locfileid: "52130175"
 ---
 # <a name="availability-in-romania"></a>Disponibilità in Romania
 
@@ -54,16 +54,15 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 | Operatori automatici <br/> |Disponibile  <br/> |
 |Code di chiamata  <br/> |Disponibile  <br/> |
 |Segreteria telefonica  <br/> |Disponibile  <br/> |
-   
+
 ## <a name="calling-plans"></a>Piani di chiamata
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
-
-Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
+|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>Supporto dell'accessibilità Microsoft Teams [Prezentare generală accesibilitate a Microsoft Teams - Asistență Office](https://support.microsoft.com/ro-ro/office/prezentare-general%C4%83-accesibilitate-a-microsoft-teams-2d4009e7-1300-4766-87e8-7a217496c3d5?ui=ro-RO&rs=ro-RO&ad=RO)<br>[MicrosoftOnlineServicesTerms(WW)(Rumeno)(febbraio2021)](https://www.microsoft.com/licensing/terms/productoffering/AudioServices/EAEAS#GeneralServiceTerms)|
+|È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
+|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

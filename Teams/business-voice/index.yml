@@ -1,87 +1,81 @@
 ### YamlMime:Hub
-title: Documentazione di Microsoft 365 Business Voice
-summary: Informazioni su come pianificare, configurare e usare Microsoft 365 Business Voice all’interno dell’organizzazione. Business Voice consente alle organizzazioni di piccole e medie dimensioni di impostare un sistema telefonico potente e flessibile senza i costi e le complessità delle soluzioni interne.
+title: Microsoft 365 Business Voice documentazione
+summary: 'Informazioni su come pianificare, configurare e usare Microsoft 365 Business Voice all’interno dell’organizzazione. Business Voice consente alle organizzazioni di piccole e medie dimensioni di impostare un sistema telefonico potente e flessibile senza i costi e le complessità delle soluzioni interne.'
 metadata:
-  title: Documentazione di Microsoft 365 Business Voice
-  description: Informazioni su come pianificare, distribuire e usare Microsoft 365 Business Voice.
+  title: Microsoft 365 Business Voice documentazione
+  description: 'Informazioni su come pianificare, distribuire e usare Microsoft 365 Business Voice.'
   ms.topic: hub-page
   author: dstrome
   ms.author: dstrome
   ms.date: 06/17/2020
-  ms.openlocfilehash: 6cf78bac0d7fafee768641120116f8397b8566c8
-  ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
-  ms.translationtype: MT
-  ms.contentlocale: it-IT
-  ms.lasthandoff: 03/23/2021
-  ms.locfileid: "51102952"
 productDirectory:
   items:
-  - title: Presentazione
-    imageSrc: https://docs.microsoft.com/office/media/icons/blocks-blue.svg
-    links:
-    - url: whats-business-voice.md
-      text: Che cos’è Business Voice
-    - url: https://www.microsoft.com/microsoft-365/business-voice
-      text: Microsoft 365 Business Voice
-    - url: /office365/servicedescriptions/microsoft-365-business-voice-service-description
-      text: Descrizione del servizio
-  - title: Configurazione
-    imageSrc: https://docs.microsoft.com/office/media/icons/deploy-blue.svg
-    links:
-    - url: ./what-to-buy.md
-      text: Come ottenere Business Voice
-    - url: get-ready-internet.md
-      text: Controllare la connessione Internet
-    - url: prepare-users.md
-      text: Preparare gli utenti
-    - url: use-getting-started-wizard.md
-      text: Eseguire l’introduzione guidata
-  - title: Personalizzare la configurazione
-    imageSrc: https://docs.microsoft.com/office/media/icons/migration-blue.svg
-    links:
-    - url: port-phone-numbers.md
-      text: Trasferire numeri di telefono esistenti
-    - url: ./create-a-phone-system-auto-attendant-smb.md
-      text: Configurare gli operatori automatici
-    - url: set-up-policies.md
-      text: Configurare i criteri
-    - url: ./create-a-phone-system-call-queue-smb.md
-      text: Configurare le code delle chiamate
-  - title: Utilizzo
-    imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    links:
-    - url: create-users.md
-      text: Creare altri utenti
-    - url: manage-devices.md
-      text: Gestire i dispositivi
-    - url: monitor-quality.md
-      text: Monitorare la qualità delle chiamate
-    - url: analytics-dashboard.md
-      text: Dashboard di analisi della qualità delle chiamate
-  - title: Risorse per i partner
-    imageSrc: https://docs.microsoft.com/office/media/icons/success-blue.svg
-    links:
-    - url: /partner-center/
-      text: Ottenere Microsoft 365 Business presso il Centro per i partner
-    - url: https://www.microsoft.com/microsoft-365/partners/businessvoice
-      text: Microsoft 365 Business Voice per i partner
-    - url: partner-resources.md
-      text: Risorse di supporto di Microsoft 365 Business Voice per i partner
-  - title: Hai bisogno di assistenza?
-    imageSrc: https://docs.microsoft.com/office/media/icons/users-people.svg
-    links:
-    - url: https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b
-      text: Contattare il supporto per Microsoft 365 o Office 365
-    - url: https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB
-      text: Community tecnica per piccole e medie imprese
-  - title: Documentazione della Guida
-    imageSrc: https://docs.microsoft.com/office/media/icons/chat.svg
-    links:
-    - url: ../cloud-voice-landing-page.md
-      text: Documenti per gli amministratori di Microsoft Teams
-    - url: https://microsoftteams.uservoice.com/
-      text: Feedback UserVoice di Microsoft Teams
-    - url: https://support.office.com/teams
-      text: Documenti del client di Microsoft Teams
-    - url: /office365/admin/
-      text: Documenti per gli amministratori di Microsoft 365 e Office 365
+    - title: Presentazione
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/blocks-blue.svg'
+      links:
+        - url: whats-business-voice.md
+          text: Che cos’è Business Voice
+        - url: 'https://www.microsoft.com/microsoft-365/business-voice'
+          text: Microsoft 365 Business Voice
+        - url: /office365/servicedescriptions/microsoft-365-business-voice-service-description
+          text: Descrizione del servizio
+    - title: Configurazione
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/deploy-blue.svg'
+      links:
+        - url: ./what-to-buy.md
+          text: Come ottenere Business Voice
+        - url: get-ready-internet.md
+          text: Controllare la connessione Internet
+        - url: prepare-users.md
+          text: Preparare gli utenti
+        - url: set-up-overview.md
+          text: Configurare La voce aziendale
+    - title: Personalizzare la configurazione
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-blue.svg'
+      links:
+        - url: port-phone-numbers.md
+          text: Trasferire numeri di telefono esistenti
+        - url: ./create-a-phone-system-auto-attendant-smb.md
+          text: Configurare gli operatori automatici
+        - url: set-up-policies.md
+          text: Configurare i criteri
+        - url: ./create-a-phone-system-call-queue-smb.md
+          text: Configurare le code delle chiamate
+    - title: Utilizzo
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-blue.svg'
+      links:
+        - url: create-users.md
+          text: Creare altri utenti
+        - url: manage-devices.md
+          text: Gestire i dispositivi
+        - url: monitor-quality.md
+          text: Monitorare la qualità delle chiamate
+        - url: analytics-dashboard.md
+          text: Dashboard di analisi della qualità delle chiamate
+    - title: Risorse per i partner
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/success-blue.svg'
+      links:
+        - url: /partner-center/
+          text: Ottenere Microsoft 365 Business presso il Centro per i partner
+        - url: 'https://www.microsoft.com/microsoft-365/partners/businessvoice'
+          text: Microsoft 365 Business Voice per i partner
+        - url: partner-resources.md
+          text: Risorse di supporto di Microsoft 365 Business Voice per i partner
+    - title: Hai bisogno di assistenza?
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/users-people.svg'
+      links:
+        - url: 'https://support.office.com/article/Contact-support-for-business-products-Admin-Help-32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b'
+          text: Contattare il supporto per Microsoft 365 o Office 365
+        - url: 'https://techcommunity.microsoft.com/t5/Small-and-Medium-Businesses/ct-p/SMB'
+          text: Community tecnica per piccole e medie imprese
+    - title: Documentazione della Guida
+      imageSrc: 'https://docs.microsoft.com/office/media/icons/chat.svg'
+      links:
+        - url: ../cloud-voice-landing-page.md
+          text: Documenti per gli amministratori di Microsoft Teams
+        - url: 'https://microsoftteams.uservoice.com/'
+          text: Feedback UserVoice di Microsoft Teams
+        - url: 'https://support.office.com/teams'
+          text: Documenti del client di Microsoft Teams
+        - url: /office365/admin/
+          text: Documenti per gli amministratori di Microsoft 365 e Office 365

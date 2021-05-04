@@ -26,22 +26,22 @@ ms.custom:
 - ms.lync.lac.VASAMissingGeoCodes
 - Calling Plans
 - seo-marvel-apr2020
-description: Scopri come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a numero verde e a numero verde) per Microsoft Teams per la tua organizzazione.
-ms.openlocfilehash: 7b7bbc7dae1aff2b582853c3deaf0d1861f20361
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Informazioni su come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a numero verde e a numero verde) per Microsoft Teams per l'organizzazione.
+ms.openlocfilehash: 3979604f281a75a5c3062a1a54630f34253788d0
+ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101172"
+ms.lasthandoff: 05/03/2021
+ms.locfileid: "52129635"
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione
 
 Esistono quattro modi per ottenere i numeri di telefono per l'utente (abbonato) e il servizio (a numero verde e a numero verde) per l'organizzazione:
 
-- [Ottenere nuovi numeri di telefono dell'utente nell'interfaccia di amministrazione di Microsoft Teams.](../getting-phone-numbers-for-your-users.md#get-new-phone-numbers-for-your-users)
-- [Ottenere nuovi numeri di telefono del servizio nell'interfaccia di amministrazione di Microsoft Teams.](../getting-service-phone-numbers.md#get-new-service-numbers)
+- [Ottenere nuovi numeri di telefono utente nell'Microsoft Teams di amministrazione.](../getting-phone-numbers-for-your-users.md#get-new-phone-numbers-for-your-users)
+- [Ottenere nuovi numeri di telefono di servizio nell'Microsoft Teams di amministrazione.](../getting-service-phone-numbers.md#get-new-service-numbers)
 - [Trasferisci o _trasferisci_ i tuoi numeri di telefono esistenti con noi.](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md#create-a-port-order-and-transfer-your-phone-numbers-to-teams)
-- Usare un modulo di richiesta per i nuovi numeri di telefono non elencati nell'interfaccia di amministrazione di Microsoft Teams.
+- Usare un modulo di richiesta per i nuovi numeri di telefono non elencati nell'Microsoft Teams di amministrazione.
 
 > [!IMPORTANT]
 > Per nuovi numeri di telefono in Australia, consulta [Servizi vocali Telstra](https://aka.ms/TelstraVoicePlan). Per i nuovi numeri di telefono in Giappone, vedere [SoftBank Voice Services.](https://aka.ms/SoftBankVoicePlan)
@@ -56,17 +56,27 @@ Se si conosce il tipo di modulo cercato, usare l'elenco a discesa per selezionar
 > - [Austria](phone-number-management-for-austria.md)
 > - [Belgio](phone-number-management-for-belgium.md)
 > - [Canada](phone-number-management-for-canada.md)
+> - [Repubblica Ceca](phone-number-management-for-czech-republic.md)
 > - [Danimarca](phone-number-management-for-denmark.md)
+> - [Finlandia](phone-number-management-for-finland.md)
 > - [Francia](phone-number-management-for-france.md)
 > - [Germania](phone-number-management-for-germany.md)
+> - [Ungheria](phone-number-management-for-hungary.md)
 > - [Irlanda](phone-number-management-for-ireland.md)
 > - [Italia](phone-number-management-for-italy.md)
 > - [Giappone](phone-number-management-for-japan.md)
-> - [Paesi Bassi](phone-number-management-for-the-netherlands.md)
+> - [Lussemburgo](phone-number-management-for-luxembourg.md)
+> - [Nuova Zelanda](phone-number-management-for-new-zealand.md)
+> - [Norvegia](phone-number-management-for-norway.md)
+> - [Polonia](phone-number-management-for-poland.md)
 > - [Portogallo](phone-number-management-for-portugal.md)
+> - [Romania](phone-number-management-for-romania.md)
+> - [Singapore](phone-number-management-for-singapore.md)
+> - [Slovacchia](phone-number-management-for-slovakia.md)
 > - [Spagna](phone-number-management-for-spain.md)
 > - [Svezia](phone-number-management-for-sweden.md)
 > - [Svizzera](phone-number-management-for-switzerland.md)
+> - [Paesi Bassi](phone-number-management-for-the-netherlands.md)
 > - [Regno Unito](phone-number-management-for-the-u-k.md)
 > - [Stati Uniti & Portorico](phone-number-management-for-the-u-s.md)
 
@@ -76,13 +86,13 @@ Se si conosce il tipo di modulo cercato, usare l'elenco a discesa per selezionar
 
 ### <a name="request-forms-for-new-phone-numbers"></a>Moduli di richiesta per nuovi numeri telefonici
 
-Ogni paese o area geografica ha istruzioni diverse, diversi tipi di numeri di telefono (geografici/non geografici e di servizio (numero verde)) e regole/regolamenti per ottenere i numeri di telefono in modo che possano essere usati in Microsoft Teams.
+Ogni paese o area geografica ha istruzioni diverse, diversi tipi di numeri di telefono (geografici/non geografici e di servizio (numero verde)) e regole/normative per ottenere i numeri di telefono in modo che possano essere usati in Microsoft Teams.
 
-A volte (a seconda del paese o dell'area geografica) non sarà possibile ottenere nuovi numeri di telefono per utenti (abbonati)  o servizi (a numero  verde o a numero verde) usando l'interfaccia di amministrazione di Microsoft Teams oppure potrebbero essere necessari numeri di telefono specifici (richieste di vanità) o codici area specifici.
+A volte (a seconda del paese o dell'area geografica) non è possibile ottenere nuovi numeri di telefono per utenti (abbonati) o  servizi (a numero verde  o a numero verde) usando l'interfaccia di amministrazione di Microsoft Teams oppure potrebbero essere necessari numeri di telefono specifici (richieste di vanità) o codici area specifici.
 
 In tal caso, è necessario scaricare il modulo PDF LOA corretto (per paese o area geografica e tipo di numeri di telefono) e inviarlo di nuovo a Microsoft. Il nostro service desk lo prenderà da lì e inizierà a elaborare la tua richiesta.
 
-### <a name="letters-of-authorization-loas-to-transferport-existing-phone-numbers-from-another-service-provider-to-microsoft-teams"></a>Lettere di autorizzazione (LOA) per trasferire/trasferire i numeri di telefono esistenti da un altro provider di servizi a Microsoft Teams
+### <a name="letters-of-authorization-loas-to-transferport-existing-phone-numbers-from-another-service-provider-to-microsoft-teams"></a>Lettere di autorizzazione (LOA) per trasferire/trasferire i numeri di telefono esistenti da un altro provider di servizi Microsoft Teams
 
 Se è necessario trasferire/trasferire i numeri di telefono esistenti, è necessario scaricare, compilare e inviare una Lettera di autorizzazione (LOA), che ci consente di richiedere e trasferire, per conto dell'utente, i numeri esistenti da un provider di servizi diverso in Microsoft Teams.
 
@@ -91,7 +101,7 @@ Inviaci un **LOA** se hai al momento le seguenti informazioni con un altro gesto
 - Numeri utente (abbonato).
 - Numeri di servizio (a pedaggio) per bridge di audioconferenza, operatori automatici o code di chiamata.
 - Toll-Free numeri di telefono.
-- Più di 999 numeri di telefono degli utenti che è necessario trasferire/trasferire, ma che non è possibile accedere all'interfaccia di amministrazione di Microsoft Teams usando la procedura guidata per la portabilità dei numeri locali.
+- Più di 999 numeri di telefono utente che è necessario trasferire/trasferire, ma che non è possibile accedere all'interfaccia di amministrazione di Microsoft Teams usando la procedura guidata di portabilità dei numeri locali.
 
 Una volta completato il contratto LOA compilato **e** firmato, contatta il [nostro Service Desk PSTN](./contact-pstn-service-desk.md) in modo da poterti aiutare.
 

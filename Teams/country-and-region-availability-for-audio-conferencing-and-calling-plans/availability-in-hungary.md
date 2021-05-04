@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Ungheria.
-ms.openlocfilehash: 99963b456328a64bb6330d52d28c6a2ffd1b3593
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: fa90a2f7b3a0d3e8add48b17b27d1f17f171a8ea
+ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118004"
+ms.lasthandoff: 05/03/2021
+ms.locfileid: "52129775"
 ---
 # <a name="availability-in-hungary"></a>Disponibilità in Ungheria
 
@@ -59,11 +59,10 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
-
-Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
+|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali da 120 minuti </li><li>Piano per chiamate nazionali da 240 minuti</li></li><li>Piano per chiamate nazionali da 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
+|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

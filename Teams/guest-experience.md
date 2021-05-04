@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 description: Questo articolo descrive la funzionalità Microsoft Teams disponibile per gli utenti guest.
-ms.openlocfilehash: 8eda5d3cabf497d105c0fd4a4610ba59db128bfc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e0efaaf036816980f5e104efebda253411827258
+ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092084"
+ms.lasthandoff: 05/03/2021
+ms.locfileid: "52129725"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza guest in Teams
 
@@ -52,7 +52,7 @@ La tabella seguente consente di confrontare le funzionalità di Teams disponibil
 |Pubblicare, eliminare e modificare messaggi  <br/> |&#x2713;|&#x2713;|
 |Condividere un file di canale  <br/> |&#x2713;|&#x2713;|
 |Accedere ai file di SharePoint<br/> |&#x2713;|&#x2713;|
-|Allegare file<br/> |&#x2713;|Solo chat del team|
+|Allegare file<br/> |&#x2713;|Solo post del canale|
 |Scaricare file di chat private<br/> |&#x2713;|&#x2713;|
 |Eseguire ricerche all'interno di file<br/> |&#x2713;||
 |Condividere un file di chat  <br/> |&#x2713;||
