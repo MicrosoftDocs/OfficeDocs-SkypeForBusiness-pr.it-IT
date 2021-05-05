@@ -15,7 +15,7 @@ MS.collection:
 - Teams_Business_Voice
 - m365initiative-voice
 search.appverid: MET150
-description: ''
+description: Informazioni sulle licenze e gli altri componenti aggiuntivi da acquistare per configurare Microsoft 365 Business Voice.
 appliesto:
 - Microsoft Teams
 no-loc:
@@ -25,12 +25,12 @@ no-loc:
 - Teams
 - Microsoft Teams
 - Office 365
-ms.openlocfilehash: 7175bc47cc3e9db1dde3d92c1b3024dcdcfd3e41
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: de844a68d29e0bcb1bc7144fb3101d69a13f2966
+ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102822"
+ms.lasthandoff: 05/03/2021
+ms.locfileid: "52129865"
 ---
 # <a name="what-do-i-need-to-buy-to-use-microsoft-365-business-voice"></a>Cosa serve per acquistare e usare Microsoft 365 Business Voice?
 
@@ -38,7 +38,7 @@ ms.locfileid: "51102822"
 
 Per effettuare o ricevere chiamate telefoniche da numeri *esterni* in Microsoft Teams, gli utenti devono avere una licenza di Microsoft 365 Business Voice. La licenza offre tutte le funzionalità che servono per effettuare o ricevere chiamate telefoniche, organizzare conferenze audio e altro ancora.
 
-Per coloro che non prevedono alcuno scambio di telefonate con numeri esterni, Teams risulta più che sufficiente; in questo caso, quindi, non è necessaria una licenza di Microsoft 365 Business Voice.
+Per coloro che non prevedono alcuno scambio di telefonate con numeri esterni, Teams risulta più che sufficiente; non è quindi necessaria una licenza di Microsoft 365 Business Voice.
 
 Per fare un esempio, si ipotizzi di avere 10 dipendenti in fabbrica e 5 in ufficio. L'unico bisogno di coloro che lavorano in fabbrica potrebbe essere quello di contattare altri dipendenti interni all'azienda. Oltre ad interagire con altri dipendenti, chi lavora in ufficio ha anche la necessità di ricevere ed effettuare chiamate da e verso fornitori, partner e clienti. In questo caso, solo i 5 dipendenti dell'ufficio avrebbero bisogno di una licenza di Microsoft 365 Business Voice.
 
@@ -46,7 +46,7 @@ Per fare un esempio, si ipotizzi di avere 10 dipendenti in fabbrica e 5 in uffic
 
 Sono disponibili due tipi di licenza di Business Voice: Business Voice **con** Piano di chiamata e Business Voice **senza** Piano di chiamata. Il tipo di licenza di Business Voice disponibile dipende dall'ubicazione del tenant di Microsoft 365. Il tipo di licenza determina se è possibile configurare Business Voice autonomamente, se è necessaria l'assistenza da parte di un partner o di un rivenditore Microsoft, chi gestisce i numeri di telefono e così via.
 
-- **Business Voice con Piano di chiamata** È possibile acquistare Business Voice da Microsoft, usare la procedura guidata Attività iniziali per configurare Business Voice e quindi configurare o trasferire i numeri di telefono esistenti a Microsoft. L'articolo [Usare la procedura guidata Attività iniziali per configurare Business Voice](use-getting-started-wizard.md) spiega come configurare Business Voice per il tenant.
+- **Business Voce con Piano per chiamate** È possibile acquistare Microsoft Business Voice, configurarlo e quindi configurare o trasferire gli attuali numeri di telefono in Microsoft. L'articolo [Configurazione di Microsoft 365 Business Voice](set-up-overview.md) illustra come configurare Business Voice per il tenant.
 
   Per altre informazioni su come acquistare licenze di Business Voice con Piano di chiamata, vedere [Business Voice con Piano di chiamata](#business-voice-with-calling-plan) più avanti in questo articolo.
 - **Business Voice senza Piano di chiamata** È necessario acquistare Business Voice da un partner o un rivenditore Microsoft, che assisterà l'utente nella configurazione. I numeri di telefono esistenti restano con l'attuale provider di telefonia di terze parti. L'articolo [Ottenere assistenza da parte di un rivenditore o un partner Microsoft](reseller-partner-support.md) offre una panoramica del processo necessario per configurare Business Voice nel tenant.
@@ -96,7 +96,7 @@ Se si pensa di acquistare il Piano per chiamate internazionali per un utente, oc
 
 ### <a name="communications-credits"></a>Credito per la comunicazione
 
-Il Credito per la comunicazione è come un portafoglio digitale, da utilizzarsi per pagare le chiamate ricevute o effettuate da numeri di telefono non inclusi nel proprio sistema telefonico. Il Credito per la comunicazione si dimostra utile in diverse situazioni.
+I crediti per la comunicazione sono come un impianto digitale usato per pagare le chiamate verso o da numeri di telefono all'esterno del sistema di telefonia. I crediti per la comunicazione vengono usati in poche situazioni.
 
 - **Un utente ha esaurito i minuti del suo Piano per chiamate nazionali o internazionali:** se un utente non dispone di un Piano per chiamate internazionali, Business Voice inizia automaticamente a usare il saldo disponibile del Credito per la comunicazione.
 - **Un utente che non dispone di un Piano per chiamate internazionali effettua chiamate telefoniche internazionali:** Business Voice inizia automaticamente a usare il saldo disponibile del Credito per la comunicazione.
