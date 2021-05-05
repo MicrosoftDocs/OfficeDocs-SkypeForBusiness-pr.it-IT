@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c71f08840ffa9c41622d07376933c14a7ae6b493
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: 127fc2831e58e7ddea152c7754015a9126390ecc
+ms.sourcegitcommit: 5a738cbb96f09edd8c3779f9385bc9ed126e3001
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52129795"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "52212169"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -55,11 +55,20 @@ Per usare l'app Approvazioni, è necessaria l'autorizzazione per gli elementi se
 
 - Licenza per [Power Automate](/power-automate/get-started-approvals), Office 365 o Dynamics 365.
 
+- La licenza per Microsoft Forms è necessaria per consentire agli utenti di configurare nuovi modelli di approvazione.
+
 ## <a name="storage-with-cds"></a>Archiviazione su CDS
 
 Common Data Model (CDM) è il linguaggio dei dati condiviso usato dalle applicazioni aziendali e di analisi in CDS. È costituito da un set di schemi di dati standardizzati ed estendibili pubblicati da Microsoft e dai propri partner, che consentono la coerenza dei dati e il loro significato nelle applicazioni e nei processi aziendali. Per altre informazioni, vedere [Common Data Model di Microsoft Power Platform](/power-automate/get-started-approvals).
 
 Altre informazioni sui [flussi di lavoro di Approvazioni](/power-automate/modern-approvals).
+
+Le approvazioni create da un modello archiviano comunque i dati in CDS, ad esempio il titolo, i dettagli, l'ID del modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Moduli. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms.](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe)
+
+>[!Note]
+>Se si elimina il modello di modulo nel sito Di Microsoft Forms, il modello Di approvazione verrà eliminato e gli utenti non potranno avviare la richiesta. Gli utenti riceveranno un messaggio di errore "Tabella CDBNonFound" quando si prova ad aprire un modello approvazione eliminato in Microsoft Forms.
+
+I modelli di approvazione sono archiviati in Substrate Data Archiviazione (SDS), una piattaforma di archiviazione conforme usata internamente solo all'interno di Microsoft. I modelli con ambito di organizzazione sono archiviati nella "partizione tenant" di SDS e i modelli con ambito team sono archiviati in "partizioni di gruppo" di SDS. Questo significa che i modelli con ambito di organizzazione condividono la stessa durata del tenant e i modelli con ambito di team condividono la stessa durata del team. Pertanto, l'eliminazione definitiva del team elimina i modelli correlati.
 
 ## <a name="approvals-teams-app-permissions"></a>Autorizzazioni dell'app Approvazioni di Teams
 
@@ -84,6 +93,15 @@ L'app Approvazioni di Teams consente di accedere alle funzionalità seguenti:
 
 - Uso delle informazioni del team per i contatti.
 
+Autorizzazioni per i modelli di approvazione
+
+- Tutti i proprietari del team possono creare un modello di approvazione per i team di cui sono proprietari.
+
+- Quando un amministratore crea un modello per l'intera organizzazione per la prima volta, crea automaticamente un nuovo team di Teams per tutti gli amministratori del tenant, inclusi gli amministratori dei servizi globali e del team. Questi amministratori verranno aggiunti come proprietari del team, in modo che possano gestire insieme i modelli dell'organizzazione. Gli amministratori che non hanno più accesso all'organizzazione dopo la creazione del team devono essere aggiunti manualmente come proprietari del team in modo che abbia le stesse autorizzazioni per gestire i modelli a livello di organizzazione.
+
+> [!Note]
+> Se un amministratore elimina il team, è necessario un mese per ripristinarlo all'interno del portale Azure Active Directory (AAD) per ripristinare tutti i dati correlati. Dopo un mese o se l'amministratore elimina il team nel Cestino, si perderanno tutti i dati correlati.
+
 ## <a name="disable-the-approvals-app"></a>Disabilitare l'app Approvazioni
 
 L'app Approvazioni è disponibile per impostazione predefinita. È possibile disabilitarla nell'interfaccia di amministrazione di Teams.
@@ -105,6 +123,12 @@ L'app Approvazioni è disponibile per impostazione predefinita. È possibile dis
 ## <a name="retention-policy"></a>Criteri di conservazione
 
 Le approvazioni create dall'app Approvazioni sono archiviate nell'ambiente CDS predefinito, che al momento non supporta i backup. Altre informazioni su come eseguire il [Backup e il ripristino di ambienti - Power Platform \|Microsoft Docs](/power-platform/admin/backup-restore-environments).
+
+I dati archiviati in Forms non verranno eliminati finché i proprietari del team non lo puliranno dalla **scheda** Moduli eliminati nell'app Web Microsoft Forms.
+
+## <a name="data-limitations"></a>Limitazioni dei dati
+
+Ogni team può contenere al massimo 400 modelli di approvazione e ogni modello può raccogliere un massimo di 50.000 richieste in base alla funzionalità corrente in Microsoft Forms.
 
 ## <a name="auditing"></a>Controllo
 
@@ -141,6 +165,14 @@ L'app Approvazioni registra gli eventi di controllo all'interno del Centro sicur
 - Richiesta di firma elettronica esaminata
 
 - Richiesta di firma elettronica annullata
+
+- Creare un nuovo modello
+
+- Modificare un modello esistente
+
+- Abilitare/disabilitare un modello
+
+- Modello visualizzato
 
 Per accedere ad altre approvazioni di controllo all'interno del flusso, abilitare e configurare il controllo nell'ambiente predefinito per le entità di approvazione principali Approvazione, Richiesta di approvazione e Risposta di approvazione. Le operazioni di creazione, aggiornamento ed eliminazione sono eventi controllabili per i record di approvazione. Per altre informazioni, vedere [Dati di controllo e attività degli utenti per la sicurezza e la conformità - Power Platform \| Microsoft Docs](/power-platform/admin/audit-data-user-activity).
 

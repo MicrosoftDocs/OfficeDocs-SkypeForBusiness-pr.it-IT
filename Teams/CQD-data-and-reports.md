@@ -22,12 +22,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (CQD).
-ms.openlocfilehash: 2d36787a5341db016c18a30977cb086b0b6d7afc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 47fce642bf90b1be9285a11cf19a5e6421aa262b
+ms.sourcegitcommit: 5a738cbb96f09edd8c3779f9385bc9ed126e3001
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111542"
+ms.lasthandoff: 05/04/2021
+ms.locfileid: "52212199"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in Call Quality Dashboard (CQD)
 
@@ -40,10 +40,10 @@ Microsoft Call Quality Dashboard (CQD) usa un feed di dati in tempo quasi reale 
 
 |  |  |
 |---------|---------|
-|Interfaccia di amministrazione di Teams [( https://admin.teams.microsoft.com) ](https://admin.teams.microsoft.com)    | I dati CQD  sono inclusi nella pagina Utenti dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati CQD trovati in **Utenti**.  |
+|Teams di amministrazione [( https://admin.teams.microsoft.com) ](https://admin.teams.microsoft.com)    | I dati CQD  sono inclusi nella pagina Utenti dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati CQD trovati in **Utenti**.  |
 |Portale CQD [( https://cqd.teams.microsoft.com) ](https://cqd.teams.microsoft.com)     | Riepilogo efficace e report dettagliati che soddisfano la maggior parte delle esigenze, con il filtro drill-through. È anche possibile personalizzare i report nel portale CQD. <br><br>È possibile [ottenere due modelli di report CQD](#import-the-cqd-report-templates) che consentono di analizzare i dati nel portale CQD.       |
-|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli [di Power BI personalizzabili.](CQD-Power-BI-query-templates.md) [Scaricare i modelli di query di Power BI per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. Il vantaggio di usare questo metodo è una migliore prestazione, particolarmente utile per set di dati di grandi dimensioni che si insediano in Power BI quando si è online.       |
-|API di Microsoft Graph     | Accedere ai dati sulla qualità delle chiamate usando [l'API Graph.](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta) Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirlo ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare dati sulla qualità delle chiamate.        |
+|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli Power BI [personalizzati.](CQD-Power-BI-query-templates.md) [Scaricare Power BI di query per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. Il vantaggio dell'uso di questo metodo è un miglioramento delle prestazioni, particolarmente utile per set di dati di grandi dimensioni che Power BI quando si è online.       |
+|API di Microsoft Graph     | Accedere ai dati sulla qualità delle chiamate usando [l'API Graph chiamata](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta). Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirsi ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
 
 ## <a name="import-the-cqd-report-templates"></a>Importare i modelli di report CQD
 
@@ -71,7 +71,7 @@ Per motivi di conformità, i dati relativi alle informazioni identificabili dell
 - Indirizzo IP completo
 - Indirizzo MAC (Media Access Control)
 - Identificatore del set di servizi di base (BSSID)
-- URI SIP (Session Initiation Protocol) (solo Skype for Business)
+- URI SIP (Session Initiation Protocol) (solo Skype for Business sessione)
 - Nome entità utente (UPN)
 - Nome endpoint computer
 - Feedback verbale dell'utente
@@ -81,15 +81,15 @@ Per motivi di conformità, i dati relativi alle informazioni identificabili dell
 
 Questi [ruoli del controllo](/azure/role-based-access-control/overview) degli **accessi in base al ruolo hanno** accesso EUII:
 - Amministratore globale
-- Amministratore del servizio Teams
-- Amministratore di Teams Communications
+- Teams Amministratore del servizio
+- Teams Amministratore delle comunicazioni
 - Tecnico supporto comunicazioni Teams
 - Lettore globale
-- Amministratore di Skype for Business
+- Skype for Business Amministratore
 
 Questi ruoli RBAC **non hanno accesso** EUII:
 - Lettore report
-- Specialista del supporto tecnico di Teams Communications
+- Teams Specialista del supporto per le comunicazioni
 
 
 ## <a name="date-controls"></a>Controlli data
@@ -118,7 +118,7 @@ Per impostazione predefinita, il giorno corrente del mese viene usato come ultim
 
 Il riepilogo predefinito e i report CQD dettagliati possono essere tutti necessari per gestire la qualità delle chiamate per l'organizzazione. Se necessario, è possibile [creare report personalizzati.](#create-custom-detailed-reports) 
 
-Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [di CQD per Teams.](CQD-Power-BI-query-templates.md)
+Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [CQD per](CQD-Power-BI-query-templates.md)Teams .
 
 |Funzionalità|Report di riepilogo|Report dettagliati|
 |:--- |:--- |:--- |
@@ -134,18 +134,19 @@ Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per 
 |Metriche di condivisione dello schermo basate su video   | No   | Sì   |
 |Metriche video   | No   | Sì   |
 |Quantità di dati disponibili   | Ultimi 12 mesi   | Ultimi 12 mesi   |
-|Dati di Microsoft Teams   | Sì   | Sì   |
+|Microsoft Teams dati   | Sì   | Sì   |
 | | | |
 
 
  
 ### <a name="select-product-data-to-see-in-reports"></a>Selezionare i dati di prodotto da visualizzare nei report
 
-Nei report riepilogo e Location-Enhanced, è  possibile usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo i dati di Microsoft Teams o solo i dati di Skype for Business Online.
+Nei report riepilogo e Location-Enhanced, è  possibile usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo Microsoft Teams dati o solo i Skype for Business online.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot: mostra le opzioni del controllo Filtro prodotti](media/206ad818-0f72-4c8e-b25e-3cc8fcfbef05.png)
   
-![Screenshot: mostra le opzioni del controllo Filtro prodotti](media/206ad818-0f72-4c8e-b25e-3cc8fcfbef05.png)
-  
-Nei report dettagliati è possibile usare la dimensione **Is Teams** per filtrare i dati in base ai dati di Microsoft Teams o Skype for Business Online.
+Nei report dettagliati è  possibile usare la dimensione Teams per filtrare i dati Microsoft Teams o Skype for Business online.
 
 ## <a name="summary-reports"></a>Report di riepilogo
 
@@ -156,30 +157,34 @@ Questi sono i report che verranno visualizzati nel dashboard CQD quando si acced
 |Qualità complessiva delle chiamate     | Aggregazione delle altre 3 schede.       |
 |Server- Client     |Dettagli dei flussi tra endpoint server ed endpoint client.        |
 |Client- Client     |Dettagli dei flussi tra due endpoint client.        |
-|Contratto di servizio sulla qualità vocale     |Informazioni sulle chiamate incluse nel contratto di servizio sulla [qualità](https://go.microsoft.com/fwlink/p/?linkid=846252)vocale di Skype for Business.        |
+|Contratto di servizio sulla qualità vocale     |Informazioni sulle chiamate incluse nel contratto Skype for Business qualità [vocale.](https://go.microsoft.com/fwlink/p/?linkid=846252)        |
 
 ### <a name="overall-call-quality-tab"></a>Scheda Generale Qualità chiamata
 
 Usare i dati in questa scheda per valutare lo stato della qualità delle chiamate e le tendenze in base al numero di flussi e alle percentuali scadenti. La legenda nell'angolo in alto a destra mostra il colore e gli elementi visivi che rappresentano queste metriche.
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot: mostra la scheda Qualità chiamata](media/c8d183b1-6592-49b0-a81d-35cc0568d5f0.png)
   
-![Screenshot: mostra la scheda Qualità chiamata](media/c8d183b1-6592-49b0-a81d-35cc0568d5f0.png)
-  
-Gli stream sono classificati in tre gruppi: Good, Poor e Unclassified. Sono inoltre disponibili valori  *poor %*  calcolati che forniscono il rapporto tra i flussi classificati *come Poor*  e il conteggio totale dei flussi classificati. Poiché *Poor % = Poor streams/ (Poor streams+ Good streams) * 100*, poor *%*  non è interessato dalla presenza di più flussi *non*  classificati. Per vedere cosa classifica uno stream come scadente o buono, vedere Classificazione dei flussi [in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md)
+Flussi sono classificati in tre gruppi: Buono, Medio e Non classificato. Sono inoltre disponibili valori  *poor %*  calcolati che forniscono il rapporto tra i flussi classificati *come Poor*  e il conteggio totale dei flussi classificati. Poiché *Poor % = Poor streams/ (Poor streams+ Good streams) * 100*, poor *%*  non è interessato dalla presenza di più flussi *non*  classificati. Per vedere cosa classifica uno stream come scadente o buono, vedere Classificazione dei flussi [in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md)
   
 Usare la scala a sinistra per misurare i valori del conteggio dei flussi.
-  
-![Screenshot: mostra i valori del conteggio dei flussi](media/850bd25d-d9b2-4df4-8ca6-526a528897c2.png)
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot: mostra i valori del conteggio dei flussi](media/850bd25d-d9b2-4df4-8ca6-526a528897c2.png)
   
 Usare la scala a destra per misurare i valori di % scarsa.
-  
-![Screenshot: mostra i valori di % scadente](media/29795f71-ca96-4763-a76c-b4bb7c0e5828.png)
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot: mostra i valori di % scadente](media/29795f71-ca96-4763-a76c-b4bb7c0e5828.png)
   
 È anche possibile ottenere i valori numerici effettivi posizionando il puntatore del mouse su una barra.
   
 > [!NOTE]
 > L'esempio seguente si trova in un set di dati di esempio molto piccolo e i valori non sono realistici per una distribuzione effettiva.
-  
-![Screenshot: mostra il mouse usato per accedere ai dati](media/8724b016-1a50-4d19-b48a-3b1aae4eb895.png)
+
+> [!div class="mx-imgBorder"]
+> ![Screenshot: mostra il mouse usato per accedere ai dati](media/8724b016-1a50-4d19-b48a-3b1aae4eb895.png)
   
 Il volume complessivo dello stream consente di determinare quanto sono rilevanti le percentuali di scarsa qualità calcolate. Minore è il volume dei flussi complessivi, meno affidabili sono i valori percentuali di scarsa qualità riportati.
   
@@ -216,13 +221,13 @@ Come indicano i nomi, i criteri di classificazione si basano sul tipo di conness
   
 ## <a name="tenant-data-information"></a>Informazioni sui dati del tenant
 
-Il dashboard Report di riepilogo CQD include una pagina Caricamento dati **tenant,** a cui si accede selezionando Caricamento dati **tenant** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
+Il dashboard Report di riepilogo CQD include una pagina Upload **Tenant Data,** accessibile selezionando Tenant **Data Upload** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
 
 - Mappa dell'indirizzo IP e delle informazioni geografiche.
 - Mappa di ogni punto di accesso wireless e del relativo indirizzo MAC.
 - Mappa di Endpoint a Endpoint Make/Model/Type e così via.
   
-È consigliabile caricare i dati del tenant, dell'edificio e della posizione in modo che CQD possa includere queste informazioni nei report. Se questi dati non sono già stati caricati, leggere Caricare i dati del [tenant e della creazione.](CQD-upload-tenant-building-data.md) 
+È consigliabile caricare i dati del tenant, dell'edificio e della posizione in modo che CQD possa includere queste informazioni nei report. Se questi dati non sono già stati caricati, leggere Upload [tenant e i dati di creazione.](CQD-upload-tenant-building-data.md) 
 
 
 ## <a name="detailed-reports"></a>Report dettagliati
@@ -242,7 +247,7 @@ Il dashboard Report di riepilogo CQD include una pagina Caricamento dati **tenan
 
 ## <a name="create-custom-detailed-reports"></a>Creare report dettagliati personalizzati
 
-Se i report CQD predefiniti non soddisfano le proprie esigenze, usare queste istruzioni per creare un report personalizzato. Oppure (a partire da gennaio 2020) Usare [invece i report Power BI per CQD. ](cqd-power-bi-query-templates.md)
+Se i report CQD predefiniti non soddisfano le proprie esigenze, usare queste istruzioni per creare un report personalizzato. Oppure (a partire da gennaio 2020) Usare [Power BI per i report CQD. ](cqd-power-bi-query-templates.md)
 
 Nell'elenco a discesa dei report nella parte superiore della schermata visualizzata all'accesso nella schermata Report di riepilogo selezionare Report \(  \) **dettagliati** e quindi **Nuovo**. Fare **clic su** Modifica in un report per visualizzare l'editor di query. Ogni report è supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report.
 
@@ -358,7 +363,7 @@ Per applicare filtri URL con valori a selezione multipla, separare ogni valore c
 Se si specifica un nome o un valore non valido, il filtro URL non verrà applicato.
 
 
-È possibile usare un filtro URL per filtrare ogni report in base a una dimensione specifica. I filtri URL più comuni vengono usati per filtrare i report per escludere la telemetria dei partecipanti federati o concentrarsi solo su Teams o Skype for Business online. L'esclusione dei dati federati dai report CQD è utile per correggere gli edifici gestiti o le reti in cui gli endpoint federati potrebbero influire sui report.
+È possibile usare un filtro URL per filtrare ogni report in base a una dimensione specifica. I filtri URL più comuni vengono usati per filtrare i report per escludere la telemetria dei partecipanti federati o concentrarsi solo su Teams o Skype for Business Online. L'esclusione dei dati federati dai report CQD è utile per correggere gli edifici gestiti o le reti in cui gli endpoint federati potrebbero influire sui report.
 
 | Filter         | Descrizione          | Esempio di filtro di query CQD      |
 |----------------|----------------------|-------------------------------|
@@ -371,7 +376,7 @@ Se si specifica un nome o un valore non valido, il filtro URL non verrà applica
 
 L'ID tenant in CQD corrisponde all'ID directory in Azure. Se non si conosce l'ID directory, è possibile trovarlo nel portale di Azure:
 
-1.  Accedere al portale di Microsoft Azure: <https://portal.azure.com>
+1.  Accedere al portale Microsoft Azure:<https://portal.azure.com>
 
 2.  Selezionare **Azure Active Directory**.
 
@@ -383,32 +388,16 @@ L'ID tenant in CQD corrisponde all'ID directory in Azure. Se non si conosce l'ID
 Login-AzureRmAccount
 ```
 
-## <a name="comparing-teams-and-skype-for-business-cqd-data"></a>Confronto tra i dati CQD di Teams e Skype for Business
+## <a name="comparing-teams-and-skype-for-business-cqd-data"></a>Confronto tra Teams e Skype for Business CQD
 
-Anche all'interno dell'ultimo CQD (cqd.teams.microsoft.com), vedrai differenze nei dati tra Teams e Skype for Business. Alcuni motivi:
+Durante la revisione dei dati, potrebbero verificarsi differenze tra Teams e Skype for Business. Alcuni motivi:
 - Differenze nei meccanismi per garantire prestazioni e affidabilità:
-  - Teams ha la riconnessione automatica e il roaming veloce. Skype for Business non lo fa.
-  - Teams ha una gestione dinamica della larghezza di banda. Skype for Business non lo fa.
-- Differenze negli [intervalli di indirizzi IP](Office-365-URLs-IP-address-ranges.md) tra Teams e Skype for Business. Gli intervalli IP di Teams sono più nuovi, il che potrebbe causare problemi di connettività nel firewall.
-
-## <a name="open-cqd-from-the-skype-for-business-legacy-portal"></a>Aprire CQD dal portale legacy di Skype for Business
-
-![Icona del logo di Skype for Business ](media/sfb-logo-30x30.png) **Usando il portale legacy di Skype for Business**
-
-1. Accedere all'organizzazione di Office 365 con un  account di amministratore e quindi selezionare il riquadro Amministratore per aprire l'interfaccia di amministrazione.
-
-2. Nel riquadro sinistro, in **Interfaccia di amministrazione,** selezionare **Microsoft Teams** per aprire l'interfaccia di amministrazione di Teams.
-
-3. Nell'interfaccia di amministrazione di Teams seleziona **Portale legacy** nel riquadro sinistro, seleziona **Strumenti** e quindi seleziona Dashboard qualità chiamate Skype for **Business Online.**
-
-   ![Screenshot: Selezionare il dashboard della qualità delle chiamate](media/6cc7f80f-b8e2-4a9b-aab8-ac871d07a261.png)
-
-4. Nella pagina visualizzata accedere con l'account amministratore globale e quindi specificare le credenziali per l'account quando richiesto.
-
-Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i dati. 
+  - Teams la riconnessione automatica e il roaming veloce. Skype for Business non lo fa.
+  - Teams gestione dinamica della larghezza di banda. Skype for Business non lo fa.
+- Differenze negli [intervalli di indirizzi IP](Office-365-URLs-IP-address-ranges.md) tra Teams e Skype for Business. Gli Teams IP sono più nuovi, il che potrebbe causare problemi di connettività nel firewall.
 
 > [!IMPORTANT]
-> A partire da dicembre 2019 è ancora possibile accedere alla versione precedente di CQD (cqd.lync.com), anche se il portale legacy offre un collegamento all'ultima versione di CQD (cqd.teams.microsoft.com). Alla fine, la versione precedente di CQD verrà rimossa. A partire dal 1° luglio 2020, la versione precedente di CQD accede ai dati dal nuovo CQD ( e non è più possibile esportare i dati di compilazione https://CQD.teams.microsoft.com) e report. A volte alla fine del 2020, il vecchio CQD verrà disattivato e non sarà più possibile accedervi.
+> A partire dal 1° luglio 2020, la versione legacy di CQD (cqd.lync.com) accede ai dati dal nuovo CQD ( e non è più possibile esportare i dati di compilazione e https://CQD.teams.microsoft.com) report). A partire dal 31 luglio 2021, in conciso con il ritiro di Skype for Business Online, il CQD legacy verrà disattivato e non sarà più possibile accedervi.
 
 
 ## <a name="related-topics"></a>Argomenti correlati
@@ -419,7 +408,7 @@ Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i da
 
 [Configurare call quality dashboard (CQD)](turning-on-and-using-call-quality-dashboard.md)
 
-[Caricare i dati del tenant e dell'edificio](CQD-upload-tenant-building-data.md)
+[Upload tenant e edificio](CQD-upload-tenant-building-data.md)
 
 [Usare CQD per gestire la qualità delle chiamate e delle riunioni](quality-of-experience-review-guide.md)
 
