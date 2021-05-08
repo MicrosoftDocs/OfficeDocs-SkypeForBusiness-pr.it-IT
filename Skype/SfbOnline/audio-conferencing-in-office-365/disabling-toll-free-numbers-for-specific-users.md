@@ -20,21 +20,23 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Gli amministratori possono controllare come gli organizzatori utilizzano i numeri gratuiti per le riunioni.
-ms.openlocfilehash: 42323afd397612c3cdc0549bdcc33b16cfdae9ea
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+ms.openlocfilehash: 4fae54e3ed140ab876e6fadef10907e40f59057e
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41695681"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238511"
 ---
 # <a name="disabling-toll-free-numbers-for-specific-skype-for-business-online-users"></a>Disattivazione di numeri gratuiti per utenti specifici su Skype for Business online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
  
 > [!Note]
 > Per informazioni sulla disattivazione dei numeri telefonici gratuiti per gli utenti di Teams, consulta [Disabilitazione numeri gratuiti per utenti specifici su Teams](/MicrosoftTeams/disabling-toll-free-numbers-for-specific-teams-users).
 
 Se la tua organizzazione dispone di numeri gratuiti nel relativo ponte per audioconferenze Microsoft, puoi consentire o impedire il loro utilizzo in riunioni di organizzatori specifici.  
 
-By default, all users in your organization are enabled for using toll-free numbers, meaning that those numbers, if available, can be used by participants to join their meetings. If this is not the desired behavior for some users in your organization, you can restrict specific users from using those numbers in their meetings via a toll-free number enablement control. 
+Per impostazione predefinita, tutti gli utenti nell'organizzazione sono abilitati per l'utilizzo di numeri gratuiti, ovvero questi numeri, se disponibili, possono essere utilizzati dai partecipanti per partecipare alle riunioni. Se desideri che alcuni utenti all'interno dell'organizzazione siano esclusi, puoi limitare l'uso di tali numeri relativi alle riunioni per utenti specifici tramite un controllo di attivazione dei numeri gratuiti. 
 
 Quando i numeri gratuiti sono disabilitati per un determinato organizzatore: 
  - Un numero gratuito non verrà più incluso nel suo invito alle riunioni. 
@@ -49,13 +51,13 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
 
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
-**Dall'interfaccia di amministrazione di Microsoft Teams:**
+**Nell'Microsoft Teams di amministrazione:**
 
-1. Nel riquadro di spostamento sinistro fare **clic su** Utenti e quindi selezionare l'utente nell'elenco di utenti disponibili.
+1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
-2. Accanto a **Audioconferenza,** fai clic **su Modifica.**
+2. Accanto a **Audioconferenza** fare clic su **Modifica.**
 
-3. Impostare **Includi numeri verde nelle convocazioni riunione di questo utente su** **Disattivato.** 
+3. Impostare **Includi numeri verde nelle convocazioni di riunione di questo utente su** **Disattivato.** 
 
 4. Fare clic **su Salva.** 
  

@@ -19,14 +19,16 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: d27e40c7db423b0ef364a9d23eb956ba7059b03b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f4bcb9c758d1660cafd7a6bd3f57c95d6bf3b546
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51097282"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238907"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 [] Questo argomento offre informazioni che ti aiuteranno a diagnosticare e risolvere i problemi che si possono verificare quando provi a creare una sessione remota di Microsoft PowerShell che si connette a Skype for Business online. Consulta le sezioni seguenti:
   
@@ -44,9 +46,9 @@ ms.locfileid: "51097282"
     
 - [La possibilità di connetterti al tenant è stata disabilitata in Skype for Business Online](diagnose-connection-problems-with-the-skype-for-business-online-connector.md#BKMKAbilityConnect)
 
-- [È stato superato il numero massimo di shell simultanee per questo utente in Skype for Business online](#the-maximum-number-of-concurrent-shells-for-this-user-in-skype-for-business-online-has-been-exceeded)
+- [Il numero massimo di shell simultanee per questo utente in Skype for Business Online è stato superato](#the-maximum-number-of-concurrent-shells-for-this-user-in-skype-for-business-online-has-been-exceeded)
 
-- [È stato superato il numero massimo di shell simultanee per questo tenant in Skype for Business online](#the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded)
+- [È stato superato il numero massimo di shell simultanee per questo tenant in Skype for Business Online](#the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded)
 
     
 ## <a name="import-module-error-caused-by-windows-powershell-execution-policy"></a>Errore di Import-Module causato dal criterio di esecuzione di Windows PowerShell
@@ -87,7 +89,7 @@ Sono in genere tre i motivi della non riuscita di un tentativo di connessione, c
     Start-Service "msoidsvc"
     ```
 
-    Se il servizio è in esecuzione, potrebbero essersi verificati problemi di connessione di rete tra il computer e il server di autenticazione di Microsoft Live ID. Per verificare, apri Internet Explorer e accedi a [https://login.microsoftonline.com/.](https://login.microsoftonline.com/.) Provare ad accedere a Microsoft 365 o Office 365 da qui. Se l'accesso non riesce, è probabile che ci siano problemi con la connessione di rete.
+    Se il servizio è in esecuzione, potrebbero essersi verificati problemi di connessione di rete tra il computer e il server di autenticazione di Microsoft Live ID. Per verificare, apri Internet Explorer e accedi a [https://login.microsoftonline.com/.](https://login.microsoftonline.com/.) Prova ad accedere a Microsoft 365 o Office 365 da lì. Se l'accesso non riesce, è probabile che ci siano problemi con la connessione di rete.
   
     Meno frequentemente, è possibile che l'URI di connessione per il server di autenticazione di Microsoft Live ID sia stato impostato con un valore errato. Se si è già verificato che l'Assistente per l'accesso è in esecuzione e non sono stati riscontrati problemi di rete, questa potrebbe essere la causa del problema. In questo caso, contattare il supporto tecnico Microsoft.
   

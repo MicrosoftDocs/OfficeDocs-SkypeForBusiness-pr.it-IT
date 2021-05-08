@@ -20,44 +20,46 @@ f1.keywords:
 ms.custom:
 - Licensing
 - LIL_Placement
-description: 'Informazioni sulle licenze per i componenti aggiuntivi, sulle funzionalità e su come acquistare i piani di Microsoft 365 Business Standard. '
-ms.openlocfilehash: 18e0e16def82354339948f63f958025924e17d1e
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+description: 'Informazioni sulle licenze dei componenti aggiuntivi, sulle caratteristiche e su come acquistare per Microsoft 365 Business Standard piani. '
+ms.openlocfilehash: e7a63c210264109eab0df1e89cf214de3cc5d827
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43777411"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238484"
 ---
 # <a name="microsoft-365-business-standard"></a>Microsoft 365 Business Standard
 
-Se si dispone [di Microsoft 365 Business Standard,](https://products.office.com/en/business/office-365-business-premium)è possibile usare Skype for Business per effettuare chiamate ad altre persone dell'azienda che fanno parte dell'abbonamento. Ad esempio, se l'azienda ha 10 persone, è possibile chiamarsi e immediarsi usando Skype for Business.
+[!INCLUDE [sfbo-retirement](../../../Hub/includes/sfbo-retirement.md)]
+
+Se si [ha](https://products.office.com/en/business/office-365-business-premium)Microsoft 365 Business Standard , è possibile usare Skype for Business per effettuare chiamate ad altre persone dell'azienda che fanno parte dell'abbonamento. Ad esempio, se nell'azienda lavorano 10 persone, queste possono comunicare tra loro effettuando chiamate o inviando messaggi istantanei con Skype for Business.
 
  **Per effettuare e ricevere le chiamate da persone esterne all'azienda, hai due opzioni**:
 
-- **Option 1. Use the free [Skype app](https://www.skype.com/)**. If you have a very small business (for example, 1-2 people), using the Skype app is the better way to go. It's less expensive to use for domestic and international calls. You can still hold conference calls, make video calls, and share your desktop for presentations. [Check out the rates and payment options](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).
+- **Opzione 1. Usare il software gratuito [app Skype](https://www.skype.com/)**. Se hai un'azienda molto piccola (composta, ad esempio, da 1 o 2 persone), l'utilizzo dell'app Skype è la soluzione migliore. L'app è infatti meno costosa da usare per le chiamate nazionali e internazionali. È comunque possibile tenere conferenze telefoniche, effettuare videochiamate e condividere il desktop per le presentazioni. [Scopri le tariffe e le opzioni di pagamento](https://secure.skype.com/en/calling-rates?wt.mc_id=legacy&amp;expo365=bundled).
 
     Nota che l'app Skype non è inclusa nelle applicazioni di Office 365, per cui non viene integrata in Outlook 2016, a differenza di Skype for Business. Ciò significa che i contatti presenti in Outlook 2016 non verranno visualizzati in Skype, ma li dovrai aggiungere tu.
 
     È consigliabile iniziare a usare l'app Skype per vedere se soddisfa le tue esigenze. In caso contrario, per aggiornare il tuo piano, prendi in considerazione la prossima opzione.
 
     > [!IMPORTANT]
-    > You have to set a toggle to allow your employees to use Skype for Business to search for Skype users. See [Let Skype for Business users add Skype contacts](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md).
+    > È necessario impostare un interruttore per consentire ai dipendenti di usare Skype for Business per cercare Skype utenti. Vedere [Consentire agli Skype for Business utenti di aggiungere Skype contatti.](../../set-up-skype-for-business-online/let-skype-for-business-users-add-skype-contacts.md)
 
 
 - **Opzione 2. Aggiornare il proprio piano e acquistare un Sistema telefonico e un Piano di chiamata nazionale o nazionale e internazionale**.
 
     > [!Important]
-    > Although Skype for Business Online Plan 2 is included with the Office Business Premium subscription, **you can’t add cloud voice calling features**. So, we recommend that you evaluate an Enterprise E5 (or Enterprise E3) plan to see if it is more cost effective.
+    > Sebbene Skype per Business Online Plan 2 sia incluso con l'abbonamento a Office Business Premium, **non è possibile aggiungere funzionalità per chiamate vocali su cloud**. Pertanto, è consigliabile valutare un piano aziendale E5 (o aziendale E3) per verificare se è più conveniente.
 
-1. [Switch to a different Office 365 for business plan](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a). We recommend that you evaluate an Enterprise E5 plan to see if it is more cost effective.
+1. [Passare a un piano di Office 365 per le aziende diverso](https://support.office.com/article/73318661-8f33-478b-bcc7-fb8d69dbb22a). È consigliabile valutare un piano aziendale E5 per verificare se è più conveniente.
 
 2. Acquisto di un componente aggiuntivo al **Sistema telefonico**.
     
-3. Acquista un [Piano per chiamate per Office 365:](/MicrosoftTeams/calling-plans-for-office-365)puoi acquistarlo solo dopo aver acquistato il componente aggiuntivo **Sistema** telefonico.
+3. Acquista un [piano per chiamate per Office 365:](/MicrosoftTeams/calling-plans-for-office-365)puoi acquistarlo solo dopo aver acquistato il **Sistema telefonico** componente aggiuntivo.
     
     Questa seconda opzione è ideale per le aziende con molti dipendenti che effettuano e ricevono chiamate esterne.
 
-## <a name="how-to-see-prices-and-buy"></a>Come visualizzare i prezzi e acquistare
+## <a name="how-to-see-prices-and-buy"></a>Come vedere i prezzi e acquistare
 <a name="bkmk_buypremium"> </a>
 
  **Per ottenere Audioconferenza e Credito per la comunicazione:**
@@ -76,6 +78,6 @@ Se si dispone [di Microsoft 365 Business Standard,](https://products.office.com/
 
 2. Passare all'interfaccia di amministrazione > **abbonamenti di**  >  **fatturazione.**
 
-3. Choose **Add-ons**. You'll now see the prices for Phone System, and the option to buy it.
+3. Seleziona **Componenti aggiuntivi**. Ora vedrai i prezzi per Sistema telefonico e l'opzione per acquistarlo.
 
 4. Dopo aver acquistato una licenza **Sistema telefonico**, verranno visualizzati il prezzo e l'opzione per acquistare un piano di chiamata.

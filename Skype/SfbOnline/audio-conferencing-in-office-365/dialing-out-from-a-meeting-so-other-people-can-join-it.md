@@ -1,5 +1,5 @@
 ---
-title: Effettuare chiamate in uscita da una riunione Skype for Business in modo che altri utenti possano parteciparvi
+title: Chiamata in uscita da una riunione Skype for Business in modo che altri utenti possano parteciparvi
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,25 +21,27 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Informazioni su requisiti e sul modo in cui gli organizzatori delle riunioni possono effettua una chiamata a utenti che utilizzano Skype for Business.
-ms.openlocfilehash: c0bf11f3bd6a865bcd5dea107eedb8f2d5f5951f
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: 814d753570fd2337a8e443f93c3d58748711b964
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44164285"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238501"
 ---
-# <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Effettuare chiamate in uscita da una riunione Skype for Business in modo che altri utenti possano parteciparvi
+# <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Skype for Business in modo che altri utenti possano parteciparvi
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!NOTE]
 > Se cerchi informazioni sulle chiamate in uscita da una riunione di Teams, consulta [Chiamate in uscita da una riunione di Teams in modo che altri utenti possano accedervi](/MicrosoftTeams/dialing-out-from-a-teams-meeting-so-other-people-can-join-it).
 
-As the meeting organizer, you can dial out using the Skype for Business app to let other people join the same meeting using their phone. Although it's not required, when you are dialing out to someone, it's recommended that you dial the full number, including the country/region code. To get dial-out to work:
+L'organizzatore della riunione può effettuare chiamate in uscita usando l'app Skype for Business per consentire ad altre persone di partecipare alla stessa riunione usando il telefono. Sebbene non sia obbligatorio, quando effettui una chiamata a un altro utente, è consigliabile comporre il numero completo, incluso il codice del paese o dell'area geografica. Per attivare la chiamata in uscita:
   
-- È possibile effettuare chiamate in uscita solo se si partecipa a una riunione con l'app Skype for Business.
+- È possibile effettuare chiamate in uscita solo se si partecipa a una riunione usando un Skype for Business app.
     
 - L'organizzatore della riunione è abilitato alle conferenze telefoniche con accesso esterno.
 
-Per aggiungere altri partecipanti tramite chiamata in uscita alle riunioni dell'organizzazione, è necessario che nella riunione sia presente almeno un utente autenticato della stessa organizzazione (l'organizzazione) per consentire l'aggiunta di altri partecipanti tramite chiamata in uscita. 
+Per aggiungere altri partecipanti tramite chiamata in uscita alle riunioni dell'organizzazione, è necessario che almeno un utente autenticato della stessa organizzazione dell'organizzatore (l'organizzazione) sia presente alla riunione per consentire l'aggiunta di altri partecipanti tramite chiamata in uscita. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -54,7 +56,7 @@ Per aggiungere altri partecipanti tramite chiamata in uscita alle riunioni dell'
   
 ## <a name="supported-countries-and-regions"></a>Paesi e aree geografiche supportati
 
-Dial-out is only available to some countries/regions. Per l'elenco completo, consulta la [disponibilità del Paese e dell'area geografica per audioconferenze e piani per chiamate.](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
+Dial-out is only available to some countries/regions. Per l'elenco completo, vedere [Disponibilità di paesi e aree geografica per audioconferenze e piani per chiamate.](/microsoftteams/country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans)
   
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 

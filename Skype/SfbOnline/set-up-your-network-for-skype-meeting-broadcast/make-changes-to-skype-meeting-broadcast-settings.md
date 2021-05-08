@@ -1,5 +1,5 @@
 ---
-title: Apportare modifiche alle impostazioni di Skype Meeting Broadcast per l'organizzazione
+title: Apportare modifiche alle impostazioni Riunione Skype broadcast per l'organizzazione
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -19,24 +19,26 @@ f1.keywords:
 ms.custom:
 - SMB
 - ms.lync.lac.BroadcastMeetings
-description: È possibile abilitare Skype Meeting Broadcast e apportare modifiche alle impostazioni e ai criteri per tali riunioni.
-ms.openlocfilehash: 75b1894f486d6448662c459b0d77d4f5d3057a2f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: È possibile abilitare Riunione Skype broadcast e apportare modifiche alle impostazioni e ai criteri per tali riunioni.
+ms.openlocfilehash: fae53601c858bf67db57352e18dbc9799243f996
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106552"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238648"
 ---
-# <a name="make-changes-to-skype-meeting-broadcast-settings-for-your-organization"></a>Apportare modifiche alle impostazioni di Skype Meeting Broadcast per l'organizzazione
+# <a name="make-changes-to-skype-meeting-broadcast-settings-for-your-organization"></a>Apportare modifiche alle impostazioni Riunione Skype broadcast per l'organizzazione
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!IMPORTANT]
-> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for Business (portale legacy). Tutte le impostazioni per la gestione di Skype for Business sono ora disponibili nell'interfaccia di amministrazione di Teams. Per gestire le funzionalità di Skype for Business nell'interfaccia di amministrazione di Teams, è necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) dell'amministratore globale o dell'amministratore di Skype for Business. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+> L Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la Skype for Business sono ora disponibili nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
 
-È possibile abilitare Skype Meeting Broadcast e apportare modifiche alle impostazioni e ai criteri per tali riunioni.
+È possibile abilitare Riunione Skype broadcast e apportare modifiche alle impostazioni e ai criteri per tali riunioni.
   
-- **Abilitare Skype Meeting Broadcast** Abilita Skype Meeting Broadcast. Dopo aver abilitato Skype Meeting Broadcast, devi [configurare la rete per Skype Meeting Broadcast.](set-up-your-network-for-skype-meeting-broadcast.md) Eseguire questo passaggio se si vogliono tenere webinar e altre trasmissioni per utenti esterni all'azienda. 
+- **Abilitare Riunione Skype broadcast** Abilita Riunione Skype Broadcast. Dopo aver abilitato Riunione Skype broadcast, è necessario configurare la [rete per](set-up-your-network-for-skype-meeting-broadcast.md)Riunione Skype Broadcast . Eseguire questo passaggio se si vogliono tenere webinar e altre trasmissioni per utenti esterni all'azienda. 
     
-- **Abilitare le funzionalità Di anteprima di Skype Meeting Broadcast per la mia organizzazione** I programmi per i clienti Skype for Business offrono accesso anticipato a nuovi prodotti e funzionalità. In questo modo l'organizzazione offre un'anteprima delle novità in arrivo e l'opportunità di testare le nuove funzionalità del proprio ambiente e inviare feedback prima di rilasciare le build dei prodotti al pubblico generale.<br/>[Anteprima di Skype for Business](https://www.skypepreview.com/)
+- **Abilitare Riunione Skype Broadcast Preview per l'organizzazione** I Skype for Business dei clienti consentono di accedere in anticipo a nuovi prodotti e funzionalità. In questo modo l'organizzazione offre un'anteprima delle novità in arrivo e l'opportunità di testare le nuove funzionalità del proprio ambiente e inviare feedback prima di rilasciare le build dei prodotti al pubblico generale.<br/>[Skype for Business anteprima](https://www.skypepreview.com/)
     
 - **Consentire agli organizzatori di pianificare riunioni anonime** In questo modo gli organizzatori possono creare eventi di trasmissione che consentono a chiunque all'esterno dell'organizzazione di partecipare senza l'obbligo di accedere.
     

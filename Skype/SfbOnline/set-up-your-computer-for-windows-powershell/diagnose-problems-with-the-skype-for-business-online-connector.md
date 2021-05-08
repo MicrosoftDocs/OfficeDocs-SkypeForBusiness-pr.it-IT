@@ -19,14 +19,16 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Troubleshoot creating a remote PowerShell session to connect to Skype for Business Online, including Import-Module, concurrent shell, Live ID, and permission errors.
-ms.openlocfilehash: b7cc45c0ea09c254f05d1cdd7609faea8877f299
-ms.sourcegitcommit: 6505dd1fb891ab27fcc9f36423fda67aae6fcfd7
+ms.openlocfilehash: 02952ea878424cb0b5e84337051c30660101d144
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51418744"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238897"
 ---
 # <a name="diagnose-connection-problems-with-the-skype-for-business-online-connector"></a>Diagnosi dei problemi di connessione con il connettore di Skype for Business Online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 [] Questo argomento offre informazioni che ti aiuteranno a diagnosticare e risolvere i problemi che si possono verificare quando provi a creare una sessione remota di Microsoft PowerShell che si connette a Skype for Business online. Consulta le sezioni seguenti:
   
@@ -46,13 +48,13 @@ ms.locfileid: "51418744"
     
 - [La possibilità di connetterti al tenant è stata disabilitata in Skype for Business Online](diagnose-problems-with-the-skype-for-business-online-connector.md#BKMKAbilityConnect)
     
-- [È stato superato il numero massimo di shell simultanee per questo utente in Skype for Business online](#the-maximum-number-of-concurrent-shells-for-this-user-in-skype-for-business-online-has-been-exceeded)
+- [Il numero massimo di shell simultanee per questo utente in Skype for Business Online è stato superato](#the-maximum-number-of-concurrent-shells-for-this-user-in-skype-for-business-online-has-been-exceeded)
 
-- [È stato superato il numero massimo di shell simultanee per questo tenant in Skype for Business online](#the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded)
+- [È stato superato il numero massimo di shell simultanee per questo tenant in Skype for Business Online](#the-maximum-number-of-concurrent-shells-for-this-tenant-in-skype-for-business-online-has-been-exceeded)
     
 
 > [!IMPORTANT]
-> Per impostazione predefinita, le sessioni di PowerShell si verificano dopo 60 minuti. Per riconnettersi, è necessario chiudere la sessione e avviare una nuova sessione di PowerShell. Di recente è stata lanciata una nuova versione di Skype for Business Online, modulo [Windows PowerShell (2046.123 - Pubblicato il 2/10/2019),](https://www.microsoft.com/download/details.aspx?id=39366)che include un nuovo cmdlet denominato **Enable-CsOnlineSessionForReconnection** che riduce il problema di timeout di 60 minuti.
+> Per impostazione predefinita, le sessioni di PowerShell si verificano dopo 60 minuti. Per riconnettersi, è necessario chiudere la sessione e avviare una nuova sessione di PowerShell. Di recente è stata avviata una nuova versione di [Skype for Business Online, modulo Windows PowerShell (2046.123 - Pubblicato il 2/10/2019),](https://www.microsoft.com/download/details.aspx?id=39366)che include un nuovo cmdlet denominato **Enable-CsOnlineSessionForReconnection** che riduce il problema di timeout di 60 minuti.
 > La sessione di PowerShell si riconnette ed esegue l'autenticazione, consentendone il nuovo utilizzo senza dover avviare una nuova istanza per riconnettersi.
 
 
@@ -82,7 +84,7 @@ Il Modulo del connettore di Skype for Business Online può essere eseguito solo 
 ## <a name="modern-authentication-fails-when-winrm-basic-authentication-has-been-disabled"></a>L'autenticazione moderna non riesce quando l'autenticazione di base di WinRM è stata disabilitata
 <a name="BKMKWinRMBasicAuth"> </a>
 
-L'ultima versione del modulo Skype for Business Online Connector usa l'autenticazione moderna, ma il client Windows Remote Management (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base.  L'autenticazione moderna usa i token del portatore, che in genere vengono passati *nell'intestazione Authorization: Bearer.* Windows PowerShell, su cui è stato creato PowerShell di Skype for Business, non consente la modifica di questa intestazione.  Skype for Business PowerShell usa invece *l'intestazione Authorization: Basic* per passare il token del portatore.
+La versione più recente del modulo Skype for Business Online Connector usa l'autenticazione moderna, ma il client Windows Remote Management (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base.  L'autenticazione moderna usa i token del portatore, che in genere vengono passati *nell'intestazione Authorization: Bearer.* Windows PowerShell, su cui viene Skype for Business PowerShell, non consente la modifica di questa intestazione.  Al contrario, Skype for Business PowerShell usa *l'intestazione Authorization: Basic* per passare il token del portatore.
 
 Vedere [Scaricare e installare Windows PowerShell](./download-and-install-windows-powershell-5-1.md) per istruzioni su come abilitare Gestione remota Windows per l'autenticazione di base.
 
@@ -90,7 +92,7 @@ Vedere [Scaricare e installare Windows PowerShell](./download-and-install-window
 <a name="BKMKFailedConnect"> </a>
 
 > [!WARNING] 
-> L'autenticazione Live ID è stata deprecata per Skype For Business online Connector. Usare il modulo di PowerShell di Teams per gestire il tenant online. Quando si gestiscono ambienti ibridi, eseguire l'aggiornamento all'aggiornamento cumulativo più recente o usare l'autenticazione oAuth.
+> L'autenticazione Live ID è stata deprecata per Skype For Business online Connector. Usare il Teams powershell per gestire il tenant online. Quando si gestiscono ambienti ibridi, eseguire l'aggiornamento all'aggiornamento cumulativo più recente o usare l'autenticazione oAuth.
 
 Sono in genere tre i motivi della non riuscita di un tentativo di connessione, con l'errore riportato di seguito:
 
@@ -105,7 +107,7 @@ Sono in genere tre i motivi della non riuscita di un tentativo di connessione, c
     Start-Service "msoidsvc"
     ```
 
-    Se il servizio è in esecuzione, potrebbero essersi verificati problemi di connessione di rete tra il computer e il server di autenticazione di Microsoft Live ID. Per verificare, apri Internet Explorer e accedi a [https://login.microsoftonline.com/.](https://login.microsoftonline.com/.) Provare ad accedere a Microsoft 365 o Office 365 da qui. Se l'accesso non riesce, è probabile che ci siano problemi con la connessione di rete.
+    Se il servizio è in esecuzione, potrebbero essersi verificati problemi di connessione di rete tra il computer e il server di autenticazione di Microsoft Live ID. Per verificare, apri Internet Explorer e accedi a [https://login.microsoftonline.com/.](https://login.microsoftonline.com/.) Prova ad accedere a Microsoft 365 o Office 365 da lì. Se l'accesso non riesce, è probabile che ci siano problemi con la connessione di rete.
   
     Meno frequentemente, è possibile che l'URI di connessione per il server di autenticazione di Microsoft Live ID sia stato impostato con un valore errato. Se si è già verificato che l'Assistente per l'accesso è in esecuzione e non sono stati riscontrati problemi di rete, questa potrebbe essere la causa del problema. In questo caso, contattare il supporto tecnico Microsoft.
   

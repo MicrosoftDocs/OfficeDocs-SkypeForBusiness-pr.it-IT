@@ -20,21 +20,23 @@ f1.keywords:
 ms.custom:
 - Licensing
 - LIL_Placement
-description: 'Informazioni sulle licenze per i componenti aggiuntivi, sulle funzionalità e su come acquistare i piani di Office 365 Enterprise. '
-ms.openlocfilehash: 5181136bc95d2f74840af36ed6b4a29484485ed4
-ms.sourcegitcommit: 88a16c09dd91229e1a8c156445eb3c360c942978
+description: 'Informazioni sulle licenze dei componenti aggiuntivi, sulle caratteristiche e su come acquistare per Office 365 Enterprise piani. '
+ms.openlocfilehash: caa062e78fff49750c85e5db180081a96cae9f34
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/15/2020
-ms.locfileid: "42010579"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238429"
 ---
 # <a name="office-365-enterprise-e5"></a>Office 365 Enterprise E5
+
+[!INCLUDE [sfbo-retirement](../../../Hub/includes/sfbo-retirement.md)]
 
 Il piano [Office 365 Enterprise E5](https://products.office.com/business/office-365-enterprise-e5-business-software) include gran parte delle funzionalità di Skype for Business. Ci sono solo alcune opzioni aggiuntive.
   
 |||
 |:-----|:-----|
 |**Per aggiungere questa funzionalità** <br/> |**Ecco cosa è necessario acquistare** <br/> |
-|**Audioconferenza incluse!** <br/> |Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza.  <br/> |
-|**Numeri verde per l'accesso esterno alle riunioni e possibilità di effettuare chiamate in uscita all'interno di una riunione per aggiungere qualcuno chiamando qualsiasi numero di telefono del mondo.** <br/> |[Credito per la comunicazione](/microsoftteams/set-up-communications-credits-for-your-organization)|
-|**Sistema telefonico e segreteria telefonica inclusi!** <br/> |Piani di chiamata: acquista un [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365) da Office 365. <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing). |
+|**Sono incluse le audioconferenze.** <br/> |Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza.  <br/> |
+|**Numeri verde per l'accesso esterno alle riunioni e la possibilità di effettuare chiamate in uscita da una riunione per aggiungere qualcuno chiamando qualsiasi numero di telefono in tutto il mondo.** <br/> |[Credito per la comunicazione](/microsoftteams/set-up-communications-credits-for-your-organization)|
+|**Sistema telefonico e la segreteria telefonica è inclusa!** <br/> |Piani di chiamata: acquista un [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365) da Office 365. <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing). |

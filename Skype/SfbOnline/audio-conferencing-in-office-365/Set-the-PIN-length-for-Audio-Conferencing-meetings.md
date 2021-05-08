@@ -21,14 +21,16 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Informazioni sui parametri per la lunghezza e i requisiti di un PIN, e su come impostare la lunghezza delle riunioni in Skype for Business.
-ms.openlocfilehash: a2acaad15712621c33b275e914263f6781178d9b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2e4e1d087ad6e0f91d034c6a5abe513e8b3aab01
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100792"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238601"
 ---
 # <a name="set-the-pin-length-for-audio-conferencing-meetings-in-skype-for-business-online"></a>Impostare la lunghezza del PIN per le riunioni in Audioconferenza in Skype for Business online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 
 > [!NOTE]
@@ -43,7 +45,7 @@ Il bridge di conferenza risponde a una chiamata di un utente che partecipa a una
   
 ## <a name="setting-the-pin-length"></a>Impostazione della lunghezza del PIN
  
-1. **Nell'interfaccia di amministrazione di Skype for Business,** nel riquadro di spostamento sinistro, vai a Impostazioni bridge Microsoft per   >  **audioconferenze.**
+1. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a Impostazioni bridge Microsoft **per audioconferenze.**  >  
     
 2. In **Lunghezza** PIN di sicurezza selezionare il numero di cifre desiderato per il PIN e quindi fare clic su  >   **Salva.**
     

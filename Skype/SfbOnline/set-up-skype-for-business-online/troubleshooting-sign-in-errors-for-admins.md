@@ -19,14 +19,16 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'Scopri le cause più comuni per Skype di errori di accesso Business online e il lavoro e risolvere questi problemi. '
-ms.openlocfilehash: ec441528fb6805f4c2c1c47c50f2debd62675a8a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 653ad6fec51803cbf818595a39412d535c49d969
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103842"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52239404"
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi di accesso a Skype for Business online (amministratori)
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 Per risolvere i problemi di accesso a Skype for Business online problemi, è bene iniziare eliminando le cause più comuni dei problemi di accesso. Se necessario, è possibile seguire una procedura di risoluzione specifica in base al tipo di errore. Se non è ancora possibile accedere, raccogliere nuove informazioni e chiedere ulteriore assistenza.
 
@@ -144,7 +146,7 @@ Per installare un certificato SSL di terze parti nel server Active Domain Federa
 
 Questa procedura è una possibile soluzione per il messaggio di errore **Si è verificato un problema durante l'acquisizione di un certificato personale richiesto per eseguire l'accesso**.
 
-Per eliminare possibili problemi di certificato o credenziali, rinnovare prima di tutto il certificato dell'utente in Gestione certificati Windows. A tale scopo, eseguire la procedura seguente:
+Per eliminare possibili problemi di certificato o credenziali, rinnovare prima di tutto il certificato dell'utente in Gestione certificati Windows:
 
 1. Aprire Windows Certificate Manager. A questo scopo, fare clic su **Start**, scegliere **Esegui**, digitare **certmgr.msc**, quindi fare clic su **OK**.
 
@@ -154,7 +156,7 @@ Per eliminare possibili problemi di certificato o credenziali, rinnovare prima d
 
 4. Fare clic con il pulsante destro del mouse sul certificato e quindi scegliere **Elimina**.
 
-In seguito, se l'utente esegue Windows 7, rimuovere le credenziali archiviate in Gestione credenziali in Windows Credential Manager. A tale scopo, eseguire la procedura seguente:
+Se l'utente esegue Windows 7, rimuovere quindi le credenziali archiviate in Gestione credenziali Windows. A tale scopo, eseguire le operazioni seguenti:
 
 1. Fare clic sul pulsante **Start**, scegliere **Pannello di controllo** e quindi fare clic su **Gestione credenziali**.
 
@@ -206,7 +208,7 @@ Se non si riesce ancora a risolvere i problemi di accesso dell'utente, esaminare
 ## <a name="collect-more-information-and-seek-additional-help"></a>Raccogliere ulteriori informazioni e richiedere assistenza
 <a name="collect-more-information"> </a>
 
-Se dopo aver seguito le istruzioni nelle sezioni precedenti non è ancora possibile risolvere i problemi di accesso, è necessario raccogliere ulteriori informazioni e contattare il supporto tecnico.  A tale scopo, eseguire la procedura seguente:
+Se, dopo aver seguito le istruzioni nelle sezioni precedenti non è ancora possibile risolvere i problemi di accesso, sarà necessario raccogliere ulteriori informazioni e contattare il supporto tecnico. Per proseguire, seguire questi passaggi:
 
 1. Ottenere i file di log e i dettagli registro eventi di Windows dal computer dell'utente. Per istruzioni dettagliate, vedere l'argomento della Guida dell’utente finale [Attivare a registrazione eventi in Lync](https://support.office.com/article/eaf6602b-95e0-4c27-869f-36017475806c).
 

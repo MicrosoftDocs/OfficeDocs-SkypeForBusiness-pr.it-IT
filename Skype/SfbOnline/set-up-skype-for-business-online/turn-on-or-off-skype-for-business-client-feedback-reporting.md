@@ -18,23 +18,25 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: Puoi consentire agli utenti di Skype for Business di usare lo strumento di feedback dell'app Skype for Business integrato per consentire agli utenti di segnalare i problemi e fornire feedback direttamente a Microsoft sulla loro esperienza.
-ms.openlocfilehash: 0c9045a899905e1e09176d086a70bc820267643d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: È possibile consentire agli utenti Skype for Business utenti di usare lo strumento di feedback dell'app Skype for Business incorporato per consentire agli utenti di segnalare i problemi e fornire feedback direttamente a Microsoft sulla loro esperienza.
+ms.openlocfilehash: 151ba9ee82c95f088f5c7fc87de3a06ce609ab01
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106582"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52239099"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
-È possibile consentire agli utenti di Skype for Business Online di usare lo strumento di feedback dell'app Skype for Business incorporato per consentire agli utenti di segnalare i problemi e fornire feedback direttamente a Microsoft sulla loro esperienza. 
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+È possibile consentire agli utenti di Skype for Business Online di usare lo strumento di feedback dell'app Skype for Business incorporato per consentire agli utenti di segnalare i problemi e inviare feedback direttamente a Microsoft sulla loro esperienza. 
   
 ![Icona Fornisci feedback](../images/eac13837-04d9-4da1-8e80-54612cf6650d.png)
   
 Usando questo strumento, un utente può copiare i log dall'app nel dispositivo per consentire a Microsoft di analizzare e risolvere meglio i problemi che potrebbero verificarsi. 
   
-![Segnalare un problema usando l'icona Impostazioni](../images/2dfb5603-1d69-41fc-a43e-91a3379acbe0.png)
+![Segnalare un problema con l'icona Impostazioni](../images/2dfb5603-1d69-41fc-a43e-91a3379acbe0.png)
   
 Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo che gli utenti possano includere una schermata del proprio dispositivo nel loro feedback.
   
@@ -46,10 +48,10 @@ Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo c
 ## <a name="start-windows-powershell"></a>Avviare Windows PowerShell
 
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'ultimo modulo di PowerShell di Teams. Se si usa l'ultima versione pubblica di Teams PowerShell, non è necessario installare Skype for Business Online Connector.
-1. Installare il [modulo di PowerShell di Teams.](/microsoftteams/teams-powershell-install)
+> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente. Se si usa la versione pubblica più recente Teams PowerShell, non è necessario installare Skype for Business Online Connector.
+1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
     
-2. Aprire un Windows PowerShell comando ed eseguire i comandi seguenti: 
+2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
 
    ```powershell
    # When using Teams PowerShell Module
@@ -58,7 +60,7 @@ Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo c
    $userCredential = Get-Credential
    Connect-MicrosoftTeams -Credential $userCredential
    ```
-   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connettersi a tutti i servizi [di Microsoft 365 o Office 365 in](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) un'unica finestra di Windows PowerShell o Configurare il [computer](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)per Windows PowerShell .
+   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connessione a tutti i servizi Microsoft 365 o Office 365 in un'unica finestra [di Windows PowerShell](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) o Configurare il [computer](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)per Windows PowerShell .
    
 ## <a name="turn-on-client-app-feedback-reporting-for-all-the-users-in-your-organization"></a>Attiva i report di feedback dell'applicazione client per tutti gli utenti dell'organizzazione
 
@@ -67,8 +69,8 @@ Per abilitare la segnalazione di feedback per gli utenti dell'organizzazione e c
   ```PowerShell
   Set-CsClientPolicy -Identity EnableOnlineFeedback -EnableOnlineFeedback $true -EnableOnlineFeedbackScreenshots $true
   ```
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

@@ -1,5 +1,5 @@
 ---
-title: Il piano di servizio Skype for Business online dell'utente non è valido
+title: Il piano di Skype for Business online dell'utente non è valido
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -20,19 +20,21 @@ f1.keywords:
 ms.custom:
 - Setup
 - ms.lync.lac.ServicePlanNotValid
-description: 'Dove assegnare un piano di servizio valido per un utente se un piano di servizio Skype for Business online non è valido. '
-ms.openlocfilehash: a3f7ac1a0816845b24d8580f63165b73ea9c99e9
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+description: 'Vedere dove assegnare un piano di servizio valido per un utente dopo che un Skype for Business non è un errore valido del piano di servizio online. '
+ms.openlocfilehash: 3545d0341e7e094ca1152d37a145e3c52640ae50
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769579"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52239469"
 ---
-# <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a>Il piano di servizio Skype for Business online dell'utente non è valido
+# <a name="the-users-skype-for-business-online-service-plan-isnt-valid"></a>Il piano di Skype for Business online dell'utente non è valido
 
-Il piano di servizio Skype for Business online assegnato a questo utente non è stato riconosciuto o non è valido.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+Il piano di Skype for Business Online assegnato a questo utente non è riconosciuto o non è valido.
   
-Accedere all'interfaccia di amministrazione di *Microsoft 365**> **utenti attivi** e assegnare un piano di servizio valido a questo utente.
+Passare *all'Microsoft 365 di amministrazione** > **utenti attivi** e assegnare un piano di servizio valido a questo utente.
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

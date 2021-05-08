@@ -19,20 +19,22 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: "Questo riepilogo delle impostazioni dell'organizzazione e degli utenti di Skype for Business consente di ottenere altre informazioni sulla connettività per messaggistica istantanea pubblica, gli inviti alle riunioni, la registrazione di chiamate e riunioni e altro ancora.  "
-ms.openlocfilehash: d48da549a48cf3326cc55a44d68ca36048fae439
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Questo riepilogo delle impostazioni Skype for Business dell'organizzazione e degli utenti può essere utile per saperne di più sulla connettività per la messaggistica istantanea pubblica, gli inviti alle riunioni, la registrazione di chiamate e riunioni e altro ancora.  "
+ms.openlocfilehash: deb1ed7df753377d97c23793278b317a633559b6
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109922"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52239719"
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
-**L'interfaccia di amministrazione di Skype for Business** include le impostazioni per l'intera organizzazione e per i singoli utenti. 
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+**L Skype for Business di amministrazione include** le impostazioni per l'intera organizzazione e per i singoli utenti. 
   
 > [!NOTE]
->  A seconda della posizione, potresti non avere accesso a tutte le funzionalità di Skype for Business online. Per informazioni dettagliate, [vedere Restrizioni di licenza per Microsoft 365 e Office 365.](/microsoft-365/commerce/) 
+>  A seconda della posizione, potresti non avere accesso a tutte le funzionalità di Skype for Business online. Per informazioni dettagliate, vedere [Restrizioni di licenza per Microsoft 365 e Office 365](/microsoft-365/commerce/). 
   
 ## <a name="skype-for-business-online-organization-settings"></a>Impostazioni aziendali di Skype for Business online
 <a name="__top"> </a>
