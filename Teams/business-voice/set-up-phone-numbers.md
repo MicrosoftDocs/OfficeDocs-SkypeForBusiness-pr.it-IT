@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni su come configurare i numeri Microsoft 365 Business Voice di telefono per gli utenti e i servizi dell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6cec0bc8e55ef6be169de1f48a375ab40ca8ccf7
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: 7dcf582593cf09977f4992d6b78035a9726c12b8
+ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52130054"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52282543"
 ---
 # <a name="step-2-set-up-business-voice-phone-numbers"></a>Passaggio 2: Configurare i numeri di telefono di VoIP aziendale
 
@@ -41,8 +41,8 @@ Prima di configurare utenti o operatori automatici nell'organizzazione, è neces
 
 Il numero di servizio configurato ora verrà usato in un passaggio successivo per il numero di telefono principale dell'azienda.
 
-1. Passare all'Microsoft Teams di amministrazione.
-2. Nel riquadro di spostamento sinistro passare a **Numeri**  >  **Telefono** vocali e quindi fare clic su **Aggiungi.**
+1. Aprire l Microsoft Teams di amministrazione di Microsoft Teams e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
+2. Nel riquadro di spostamento sinistro passare a <a href="https://admin.teams.microsoft.com/phone-numbers" target="_blank"> **Numeri**  >  **Telefono**</a>vocali e quindi fare clic su **Aggiungi.**
 3. Immettere un nome per l'ordine e aggiungere una descrizione.
 4. Nella pagina Ubicazione e quantità eseguire le operazioni seguenti:
     1. In **Paese o area geografica** selezionare un paese o un'area geografica.
@@ -54,23 +54,34 @@ Il numero di servizio configurato ora verrà usato in un passaggio successivo pe
     3. In **Quantità** selezionare **1.**
         > [!NOTE]
         > Se viene visualizzato il messaggio Non si hanno licenze **sufficienti** per richiedere più numeri di questo tipo, assicurarsi di aver acquistato le licenze di VoIP aziendale. Per altre informazioni, vedere Cosa è necessario acquistare per usare [Microsoft 365 Business Voice?](what-to-buy.md).
-    4. In **Posizione** digitare il nome della posizione creata nel [passaggio Configurare le posizioni per gli interventi di](set-up-emergency-locations.md) emergenza.
-    5. In **Codice area** selezionare un codice area e quindi fare clic su **Avanti** per selezionare i numeri
+    4. Scegliere Località **o** **Codice** area, a seconda che si vogliano cercare numeri di telefono usando la città di una località o se si vogliono cercare numeri in un codice di area specifico.
+    5. Se si seleziona **Posizione**:
+
+        1. Digitare la città in cui si [](set-up-emergency-locations.md) trova l'indirizzo per gli interventi di emergenza nel passaggio Configurare le posizioni per gli interventi di emergenza oppure, se è necessario creare una nuova posizione per un altro ufficio o un home office, fare clic su Aggiungi **una posizione.**
+        2. In **Codice area** selezionare un codice di area e quindi selezionare **Avanti** per prenotare il numero.
+
+    6. Se si seleziona **Codice area,** digitare il codice area da cercare e quindi selezionare **Avanti** per prenotare il numero.
+
 5. Selezionare il numero desiderato. Hai 10 minuti per selezionare il tuo numero di telefono e inserire l'ordine. Se si prendono più di 10 minuti, il numero di telefono verrà restituito al pool di numeri.
 6. Quando si è pronti per eseguire l'ordine, fare clic **su Ordina** e quindi su **Fine**
 
 ## <a name="set-up-phone-numbers-for-your-users"></a>Configurare i numeri di telefono per gli utenti
 
-1. Passare all'Microsoft Teams di amministrazione.
-2. Nel riquadro di spostamento sinistro passare a **Numeri**  >  **Telefono** vocali e quindi fare clic su **Aggiungi.**
+1. Aprire l Microsoft Teams di amministrazione di Microsoft Teams e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
+2. Nel riquadro di spostamento sinistro passare a <a href="https://admin.teams.microsoft.com/phone-numbers" target="_blank"> **Numeri**  >  **Telefono**</a>vocali e quindi fare clic su **Aggiungi.**
 3. Immettere un nome per l'ordine e aggiungere una descrizione.
 4. Nella pagina Ubicazione e quantità eseguire le operazioni seguenti:
 
     1. In **Paese o area geografica** selezionare un paese o un'area geografica.
     2. In **Tipo di numero** selezionare Utente **(abbonato)**.
     3. In **Quantità** immettere il numero di numeri desiderato per l'organizzazione.
-    4. In **Posizione** selezionare una posizione. È possibile selezionare la posizione per [](set-up-emergency-locations.md) gli interventi di emergenza aggiunta nel passaggio Configurare le posizioni per gli interventi di emergenza oppure, se è necessario creare una nuova posizione per un altro ufficio o un ufficio domestico, fare clic su Aggiungi **una posizione.**
-    5. In **Codice area** selezionare un codice area e quindi fare clic su **Avanti** per selezionare i numeri.
+    4. Scegliere Località **o** **Codice** area, a seconda che si vogliano cercare numeri di telefono usando la città di una località o se si vogliono cercare numeri in un codice di area specifico.
+    5. Se si seleziona **Posizione**:
+
+        1. Digitare la città in cui si [](set-up-emergency-locations.md) trova l'indirizzo per gli interventi di emergenza nel passaggio Configurare le posizioni per gli interventi di emergenza oppure, se è necessario creare una nuova posizione per un altro ufficio o un home office, fare clic su Aggiungi **una posizione.**
+        2. In **Codice area** selezionare un codice di area e quindi selezionare **Avanti** per prenotare il numero.
+
+    6. Se si seleziona **Codice area,** digitare il codice area da cercare e quindi selezionare **Avanti** per prenotare il numero.
 5. Selezionare i numeri desiderati. Hai 10 minuti per selezionare i numeri di telefono e eseguire l'ordine. Se si prendono più di 10 minuti, i numeri di telefono verranno restituiti al pool di numeri.
 6. Quando si è pronti per eseguire l'ordine, fare clic **su Ordina** e quindi su **Fine.**
 

@@ -21,19 +21,21 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come abilitare o disabilitare Skype dall'invio di messaggi di posta elettronica agli utenti quando cambiano le impostazioni, quali ad esempio le modifiche del pin o del numero predefinito della conferenza. "
-ms.openlocfilehash: 6b9e67d8c87b023409b7934a944f298487f91289
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f6596e3e5c52dd82f4f61ad176ae4d656a5f146c
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51114252"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237322"
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-skype-for-business-online"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di Audioconferenza in Skype for Business online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
 > Se si desidera abilitare o disabilitare l'invio di messaggi di posta elettronica in Microsoft Teams, consulta [Abilitare o disabilitare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di Audioconferenza in Microsoft Teams](/MicrosoftTeams/enable-or-disable-sending-emails-when-their-settings-change-in-teams).
 
-Gli utenti vengono informati automaticamente tramite posta elettronica quando sono abilitati per l'Audioconferenza. A volte, tuttavia, si vuole ridurre il numero di messaggi di posta elettronica inviati agli utenti di Skype for Business. In tal caso, puoi disabilitare l'invio dei messaggi posta elettronica.
+Gli utenti vengono informati automaticamente tramite posta elettronica quando sono abilitati per l'Audioconferenza. A volte, tuttavia, si vuole ridurre il numero di messaggi di posta elettronica inviati Skype for Business utenti. In tal caso, puoi disabilitare l'invio dei messaggi posta elettronica.
   
 Se si disabilita l'invio di messaggi di posta elettronica, i messaggi di posta elettronica per i servizi di audioconferenza non verranno inviati agli utenti, inclusi i messaggi di posta elettronica per i quali gli utenti sono abilitati o disabilitati per le audioconferenze, quando il PIN viene reimpostato e quando cambia l'ID conferenza e il numero di telefono di conferenza predefinito.
   
@@ -60,12 +62,12 @@ Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando so
 
 ## <a name="enable-or-disable-email-from-being-sent-to-users"></a>Abilitare o disabilitare l'invio di posta elettronica agli utenti
 
-Puoi usare l'interfaccia di amministrazione di Skype for Business o Windows PowerShell per abilitare o disabilitare la posta elettronica inviata agli utenti.
+È possibile usare l'interfaccia Skype for Business di amministrazione o Windows PowerShell per abilitare o disabilitare la posta elettronica inviata agli utenti.
 
  
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
     
-1. **Nell'interfaccia di amministrazione di Skype for Business** fare clic su Audioconferenza nel riquadro di spostamento **sinistro.**
+1. **Nell'Skype for Business di amministrazione fare** clic su Audioconferenza nel riquadro di spostamento **sinistro.**
     
 2. Nella pagina **Impostazioni ponte Microsoft**, seleziona o deseleziona **Invia automaticamente messaggi di posta elettronica agli utenti se le impostazioni di audioconferenza vengono modificate**.
     
@@ -89,7 +91,7 @@ Puoi usare l'interfaccia di amministrazione di Skype for Business o Windows Powe
     
 ## <a name="what-else-should-you-know"></a>Informazioni aggiuntive
 
-- Quando i messaggi di posta elettronica automatici sono disabilitati, è comunque possibile attivare manualmente l'invio di un messaggio di posta elettronica con l'ID conferenza e il numero di telefono usando l'interfaccia di amministrazione di Skype for Business. Tuttavia, in questo caso, il PIN non verrà incluso. Se si vuole reimpostare il PIN di audioconferenza e l'invio di messaggi di posta elettronica è disabilitato, è necessario inviarlo all'utente in un altro modo.
+- Quando i messaggi di posta elettronica automatici sono disabilitati, è comunque possibile attivare manualmente l'invio di un messaggio di posta elettronica con l'ID conferenza e il numero di telefono usando l'Skype for Business di amministrazione. Tuttavia, in questo caso, il PIN non verrà incluso. Se si vuole reimpostare il PIN di audioconferenza e l'invio di messaggi di posta elettronica è disabilitato, è necessario inviarlo all'utente in un altro modo.
     
 - L'invio dei messaggi di posta elettronica agli utenti può essere disabilitato tramite l'interfaccia di amministrazione di Skype for Business o Windows PowerShell.
     
@@ -111,7 +113,7 @@ Puoi usare l'interfaccia di amministrazione di Skype for Business o Windows Powe
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

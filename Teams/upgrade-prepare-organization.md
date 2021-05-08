@@ -1,13 +1,13 @@
 ---
 title: Preparare l'organizzazione per un aggiornamento da Skype for Business a Teams
-author: msdmaguire
-ms.author: dmaguire
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Valutare la disponibilità dell'organizzazione ad accettare le modifiche e preparare un piano per preparare gli utenti all'aggiornamento da Skype for Business a Microsoft Teams.
+description: Valutare la disponibilità dell'organizzazione ad accettare le modifiche e preparare un piano per preparare gli utenti per l'aggiornamento da Skype for Business a Microsoft Teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ddfd7c4f15733d08a82ee77f63da2a08ee15533f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 55a2feebce0d54d2ad0a0df943f5b55b0e9a9a55
+ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119045"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52282153"
 ---
 # <a name="prepare-your-organization"></a>Preparare l'organizzazione
 
@@ -38,7 +38,7 @@ Questo articolo fa parte della fase di preparazione dell'utente del percorso di 
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Per ottenere il massimo valore da Teams, gli utenti devono usarlo, ma fare in modo che gli utenti cambino il loro modo di lavorare non è sempre facile. Il tempo necessario per comprendere gli utenti e progettare il piano di conformità più idoneo può aiutare a facilitare il cambiamento e accelerare l'adozione di Teams. Queste attività devono essere completate in parallelo con la preparazione tecnica:
+Per realizzare il valore massimo Teams, gli utenti devono usarlo, ma fare in modo che gli utenti cambino il loro modo di lavorare non è sempre facile. Il tempo necessario per comprendere gli utenti e progettare il piano di conformità più idoneo può aiutare a facilitare il cambiamento e accelerare l'adozione di Teams. Queste attività devono essere completate in parallelo con la preparazione tecnica:
 
 - [Valutazione della conformità alle](./upgrade-org-change-readiness.md)modifiche dell'organizzazione: questo include la comprensione degli utenti, il modo in cui useranno la nuova tecnologia e il modo in cui si adattano prontamente al cambiamento. Questa è anche un'opportunità per identificare profili utente specifici che potrebbero trarre vantaggio dall'onboarding mirato.
 - [Preparazione di](./upgrade-user-readiness.md)un piano di conformità dell'utente: costituito da attività di consapevolezza, formazione e supporto, il piano di conformità deve essere rivolto sia all'ampia base di utenti che ai profili mirati, come identificato nell'articolo sulla valutazione della conformità [alle](./upgrade-org-change-readiness.md) modifiche.

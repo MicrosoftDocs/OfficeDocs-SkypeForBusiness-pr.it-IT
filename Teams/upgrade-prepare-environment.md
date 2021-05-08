@@ -1,7 +1,7 @@
 ---
 title: Preparare l'ambiente per l'aggiornamento a Teams
-author: msdmaguire
-ms.author: dmaguire
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f75d899f2b14915e265ce8d36c57daeaf0ce72d2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e154dc5844c4b8f3994c8c7bc00865c494a4c8c6
+ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119055"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52282143"
 ---
 # <a name="prepare-your-environment-for-upgrading-to-teams"></a>Preparare l'ambiente per l'aggiornamento a Teams
 
@@ -38,12 +38,12 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Per eseguire correttamente l'aggiornamento di Teams nell'organizzazione, è importante convalidare l'attuale ambiente Skype for Business e la conformità alla rete. La preparazione dell'ambiente corrente consente di garantire un'esperienza utente di alta qualità, oltre a migliorare la qualità dell'esperienza utente in Teams. La pianificazione di singoli passaggi può essere utile per accelerare la distribuzione e assicurarsi di non aver ignorato le azioni importanti.
+Per ottenere un aggiornamento Teams nell'organizzazione, è importante convalidare l'ambiente di Skype for Business corrente e la conformità alla rete. La preparazione dell'ambiente corrente consente di garantire un'esperienza utente di alta qualità, oltre a migliorare la qualità dell'esperienza utente in Teams. La pianificazione di singoli passaggi può essere utile per accelerare la distribuzione e assicurarsi di non aver ignorato le azioni importanti.
 
 Completare queste attività in parallelo con la preparazione dell'utente:
 
 - [Preparare il personale IT per](upgrade-prepare-IT-pros.md) assicurarsi di avere tutto il necessario per un percorso di aggiornamento efficace.
-- Verificare che l'ambiente soddisfi tutti [i prerequisiti](upgrade-plan-journey-prerequisites.md)e comprendere le dipendenze tra i servizi e Teams di Microsoft 365 o Office 365.
+- Verificare che l'ambiente soddisfi [tutti](upgrade-plan-journey-prerequisites.md)i prerequisiti e comprendere le dipendenze tra Microsoft 365 o Office 365 servizi e Teams.
 - [Valutare l'ambiente](upgrade-plan-journey-evaluate-environment.md) eseguendo l'individuazione dell'ambiente usando un questionario di esempio per confermare la disponibilità dell'organizzazione a intraprendere un percorso di aggiornamento a Teams.
-- [Preparare la rete con](prepare-network.md) la pianificazione, la preparazione e l'esecuzione dei passaggi di correzione necessari per la rete per supportare i carichi di lavoro di Teams.
-- [Preparare il servizio per](upgrade-prepare-environment-prepare-service.md) l'implementazione usando elenchi di controllo di onboarding per assicurarsi che la configurazione di Teams sia pronta per supportare la migrazione degli utenti da Skype for Business a Teams.
+- [Preparare la rete con](prepare-network.md) la pianificazione, la preparazione e l'esecuzione dei passaggi di correzione necessari per la rete per supportare Teams di lavoro.
+- [Preparare il servizio per](upgrade-prepare-environment-prepare-service.md) l'implementazione usando gli elenchi di controllo di onboarding per assicurarsi che la configurazione di Teams sia pronta per supportare la migrazione degli utenti da Skype for Business a Teams.

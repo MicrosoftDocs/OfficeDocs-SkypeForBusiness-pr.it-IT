@@ -1,7 +1,7 @@
 ---
-title: Pianificare l'aggiornamento da Skype for Business a Microsoft Teams
-author: msdmaguire
-ms.author: dmaguire
+title: Pianificare l'Skype for Business di Microsoft Teams aggiornamento
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.topic: conceptual
 ms.service: msteams
@@ -20,16 +20,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c9438f7f8fa97507e78e64633383e29ad032c3e4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 5dd2fd5241533f54da3e5a06dab90df7f082fe2d
+ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119075"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52282123"
 ---
 # <a name="plan-for-your-upgrade"></a>Pianificare l'aggiornamento
 
-![Diagramma del percorso di aggiornamento di Teams](media/upgrade-banner-main.png "Assicurarsi che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare la conformità tecnica e dell'utente. Eseguire il piano di implementazione. Mantenere lo stato di forza per massimizzare i risultati.")
+![Diagramma del percorso di Teams di aggiornamento](media/upgrade-banner-main.png "Assicurarsi che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare la conformità tecnica e dell'utente. Eseguire il piano di implementazione. Mantenere lo stato di forza per massimizzare i risultati.")
 
 Un ambiente tecnico sano, un'adozione sostenuta degli utenti e la realizzazione degli obiettivi aziendali iniziano tutti con una pianificazione appropriata. Un piano solido offre un framework per il progetto di aggiornamento e assicura che tutti gli stakeholder lavorino verso gli stessi obiettivi. Con il tempo necessario per definire correttamente il successo, è possibile misurare i risultati durante l'avanzamento della distribuzione e verificare che si stanno ottenendo i risultati desiderati. La pianificazione del viaggio include:
 

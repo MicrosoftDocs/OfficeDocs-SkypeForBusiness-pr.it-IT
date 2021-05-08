@@ -21,14 +21,16 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Vedere come selezionare le lingue dell'operatore automatico per un numero di Audioconferenza in Skype for Business online.
-ms.openlocfilehash: d2b4c0d9be666a6ee7de9c2bd36b8dd06cccdf32
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 714312989bc3898fea2ed0d335fed8f5f2eebbb3
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109998"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237022"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-skype-for-business-online"></a>Impostare le lingue dell'operatore automatico per Audioconferenza in Skype for Business online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
 > Per informazioni sull'impostazione della lingua dell'operatore automatico in Microsoft Teams, vedere [Impostare le lingue dell'operatore automatico per l'Audioconferenza in Microsoft Teams](/MicrosoftTeams/set-auto-attendant-languages-for-audio-conferencing-in-teams).
@@ -45,9 +47,9 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
   
 ## <a name="set-the-conferencing-auto-attendant-languages"></a>Impostare le lingue dell'operatore automatico per i servizi di conferenza
 
-Per eseguire questo [passaggio,](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) è necessario essere un amministratore globale o un amministratore di [Skype for Business.](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d)
+Per eseguire questo [passaggio,](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) è necessario essere un amministratore globale [o Skype for Business](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) amministratore globale.
     
-1. **Nell'interfaccia di amministrazione di Skype for Business,** nel riquadro di spostamento sinistro, passare a Portale **legacy.** Una volta nel portale legacy, selezionare **Audioconferenza** e quindi fare clic su **Bridge Microsoft.**
+1. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a **Portale legacy.** Una volta nel portale legacy, selezionare **Audioconferenza** e quindi fare clic su **Bridge Microsoft.**
     
 2. Selezionare il numero di telefono per i servizi di audioconferenza nell'elenco e nel riquadro Azioni fare clic **su Imposta lingue.** È possibile cambiare solo le lingue dei numeri di audioconferenza dedicati.  
     
@@ -64,13 +66,13 @@ Per eseguire questo [passaggio,](https://support.office.com/article/da585eea-f57
     
 - Le lingue possono essere impostate per numeri specifici, ma non per i numeri di telefono condivisi.
     
-- Per visualizzare un elenco di paesi/aree geografiche in cui sono disponibili audioconferenze in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere Numeri di telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing.md)
+- Per visualizzare un elenco di paesi/aree geografiche in cui è disponibile l'audioconferenza in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere numeri di Telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing.md)
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 
 Per automatizzare questo passaggio, è possibile usare i cmdlet [Set-CsOnlineDialInConferencingServiceNumber](/powershell/module/skype/Set-CsOnlineDialInConferencingServiceNumber) e [Get-CsOnlineDialInConferencingLanguagesSupported.](/powershell/module/skype/Get-CsOnlineDialInConferencingLanguagesSupported)
   
-Per altre informazioni, vedere [Uso Windows PowerShell attività di gestione](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md) comuni di Skype for Business Online
+Per altre informazioni, vedere [Uso di Windows PowerShell per eseguire attività Skype for Business gestione online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
   
 ## <a name="related-topics"></a>Argomenti correlati
 

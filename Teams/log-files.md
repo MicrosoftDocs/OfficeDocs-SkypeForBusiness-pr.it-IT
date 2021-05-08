@@ -1,5 +1,5 @@
 ---
-title: Usare i file di log nella risoluzione dei problemi di Microsoft Teams
+title: Usare i file di log nella risoluzione dei Microsoft Teams
 ms.reviewer: tejeshs
 author: SerdarSoysal
 ms.author: serdars
@@ -16,17 +16,17 @@ search.appverid: MET150
 description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove possono essere trovati e su come possono essere utili per la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3e2c4d42d511e2a33a797099132ac42c0475d36
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f816830f24a3d1180cb33a91a3f02d30d360cfef
+ms.sourcegitcommit: 2c2176b9d32b8f7218e8d11e82c0ae01318bfdc5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51112192"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "52264876"
 ---
-<a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log nella risoluzione dei problemi di Microsoft Teams
+<a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log nella risoluzione dei Microsoft Teams
 =================================================
 
-Esistono tre tipi di file di log prodotti automaticamente dal client, che possono essere utilizzati per facilitare la risoluzione dei problemi di Microsoft Teams:
+Esistono tre tipi di file di log prodotti automaticamente dal client, che possono essere utilizzati per facilitare la risoluzione dei problemi Microsoft Teams:
 
 -   Log di debug
 
@@ -34,7 +34,7 @@ Esistono tre tipi di file di log prodotti automaticamente dal client, che posson
 
 -   Log del desktop
 
-Quando si crea una richiesta di supporto con il supporto tecnico Microsoft, il tecnico del supporto richiederà i log di debug. Avere a disposizione i log di debug prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente a risolvere il problema. **I** log **multimediali o desktop** sono necessari solo se richiesti da Microsoft.
+Quando si crea una richiesta di supporto con il supporto tecnico Microsoft, il tecnico del supporto richiederà i log di debug. Avere a disposizione i log di debug prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente a risolvere il problema. **I** registri multimediali **o** desktop sono necessari solo se richiesti da Microsoft.
 
 > [!NOTE]
 > In questo articolo il termine **Log di debug** fa riferimento ai log usati per la risoluzione dei problemi. Tuttavia, i file generati per questi log conterranno il termine **log di diagnostica** nei nomi.  
@@ -51,7 +51,7 @@ La tabella seguente descrive i vari client e i log associati. I file di log veng
 |iOS     |-         |-         |-         |
 |Android     |-         |-         |-         |
 
-Per un elenco completo dei sistemi operativi e dei browser supportati, vedere [Ottenere client per Microsoft Teams.](get-clients.md)
+Per un elenco completo dei sistemi operativi e dei browser supportati, vedere Ottenere [i client per Microsoft Teams](get-clients.md).
 
 <a name="debug-logs"></a>Log di debug
 ---------------------------
@@ -93,9 +93,9 @@ I log di debug vengono scaricati automaticamente nelle cartelle seguenti:
 <a name="media-logs"></a>Registri multimediali
 ---------------------------
 
-I log multimediali contengono dati diagnostici relativi a audio, video e condivisione dello schermo nelle riunioni di Teams. Sono necessari per i casi di supporto collegati a problemi relativi alle chiamate.
+I log multimediali contengono dati diagnostici relativi a audio, video e condivisione dello schermo nelle Teams riunioni. Sono necessari per i casi di supporto collegati a problemi relativi alle chiamate.
 
-La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica per le riunioni di Teams, gli utenti devono attivare l'opzione nel client Teams. Passare a **Impostazioni** generali, selezionare la casella di controllo Abilita registrazione per diagnostica riunione (richiede il riavvio di  >   **Teams),** riavviare Teams e riprodurre il problema. 
+La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica Teams riunioni, gli utenti devono attivare l'opzione nel client Teams. Passare a **Impostazioni** Generale , selezionare la casella di controllo Abilita registrazione per diagnostica riunione (è necessario riavviare Teams ), riavviare Teams e riprodurre  >  il problema.  
 
 La tabella seguente descrive le posizioni dei log multimediali. Quando si inviano i file di log al supporto tecnico Microsoft, verificare il timestamp dei file di log per assicurarsi che i log copriranno l'intervallo di tempo in cui è stato riprodotto il problema.
 
@@ -126,7 +126,7 @@ I log desktop, noti anche come log del programma di avvio automatico, contengono
 
 Windows:
 
- - Fare clic con il pulsante **destro del mouse sull'icona di Microsoft Teams** nella barra delle applicazioni e scegliere Ottieni **log.**
+ - Fare clic con il pulsante **destro Microsoft Teams'icona** della barra delle applicazioni e scegliere **Ottieni log.**
 
 Mac OsX:
 
@@ -134,7 +134,7 @@ Mac OsX:
 
 Linux:
 
- - Fare clic **sull'icona di Microsoft Teams** nell'area di notifica e selezionare Ottieni **log.**
+ - Fare clic **sull'Microsoft Teams** sulla barra delle applicazioni e selezionare **Ottieni log.**
 
 |Client |Posizione |
 |---------|---------|
@@ -142,6 +142,26 @@ Linux:
 |Mac OSX     |~/Library/Application Support/Microsoft/Teams/logs.txt         |
 |Linux       |~/.config/Microsoft/Microsoft Teams/logs.txt         |
 
+
+<a name="browser-trace"></a>Traccia del browser
+---------------------------
+
+Per alcune categorie di errori, il supporto Tecnico Microsoft potrebbe richiedere la raccolta di una traccia del browser. Queste informazioni possono fornire dettagli importanti sullo stato del client Teams client quando si verifica l'errore.
+
+Prima di avviare la traccia del browser, assicurarsi di aver eseguito l'accesso a Teams. È importante eseguire questa operazione prima di avviare la traccia in modo che la traccia non contenga informazioni di accesso riservate.
+
+Dopo aver eseguito l'accesso, selezionare uno dei collegamenti seguenti, in base alle esigenze del browser, e seguire la procedura fornita. 
+
+-   [Chrome & Edge (Chromium)](/azure/azure-portal/capture-browser-trace#google-chrome-and-microsoft-edge-chromium?preserve-view=true#resolution)
+
+-   [Edge](/azure/azure-portal/capture-browser-trace#microsoft-edge-edgehtml?preserve-view=true#resolution)
+
+-   [Safari](/azure/azure-portal/capture-browser-trace#apple-safari?preserve-view=true#resolution)
+
+-   [Firefox](/azure/azure-portal/capture-browser-trace#firefox?preserve-view=true#resolution)
+
+> [!NOTE]
+> Nei passaggi sostituire tutti i riferimenti al portale di Azure con il Teams client. 
 
 ## <a name="related-topics"></a>Argomenti correlati
 

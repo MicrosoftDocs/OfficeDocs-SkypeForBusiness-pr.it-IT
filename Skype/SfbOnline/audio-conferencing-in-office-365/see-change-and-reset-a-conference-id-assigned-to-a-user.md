@@ -1,5 +1,5 @@
 ---
-title: Visualizzare, modificare e reimpostare un ID conferenza assegnato a un utente in Skype for Business online
+title: Visualizzare, modificare e reimpostare un ID conferenza assegnato a un utente in Skype for Business Online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,17 +21,19 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Informazioni su come assegnare un ID conferenza per un utente in Skype for Business online e quale devono essere i parametri ID conferenza. '
-ms.openlocfilehash: 79c83999fdf9a9736dfe1ee425337edf938d3375
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f12982298903485d93582fae3a4f39aaed49170c
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51110012"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237052"
 ---
 # <a name="view-and-reset-a-conference-id-assigned-to-a-user-in-skype-for-business-online"></a>Visualizzare e reimpostare un ID conferenza assegnato a un utente in Skype for Business online
 
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
 > [!Note]
-> Per informazioni sugli ID conferenza degli utenti in Microsoft Teams, vedere Visualizzare e reimpostare un ID conferenza assegnato a un utente [in Microsoft Teams.](/MicrosoftTeams/see-change-and-reset-a-conference-id-assigned-to-a-user-in-teams)
+> Per informazioni sugli ID conferenza utente in Microsoft Teams, vedere Visualizzare e reimpostare un ID conferenza assegnato a un utente [in Microsoft Teams](/MicrosoftTeams/see-change-and-reset-a-conference-id-assigned-to-a-user-in-teams).
 
 Un ID conferenza viene assegnato automaticamente a un utente Skype for Business quando è configurato per le audioconferenze in Microsoft 365 o Office 365 e usa Microsoft come provider di servizi di audioconferenza. L'ID conferenza assegnato viene inviato nell'invito alla riunione quando la riunione è pianificata. A ogni riunione che un utente pianifica viene assegnato un ID conferenza univoco.
 
@@ -82,7 +84,7 @@ Per altre informazioni sul cmdlet, vedere [Get-CsOnlineDialInConferencingUser.](
 
 2. Passare all'interfaccia di amministrazione > **Skype for Business**.
 
-3. **Nell'interfaccia di amministrazione di Skype for Business** Gli utenti di audioconferenza , nel riquadro Azioni in ID >    >   **conferenza,** fare clic su **Reimposta**.
+3. **Nell'Skype for Business di amministrazione audioconferenza** Utenti , nel riquadro Azioni in ID >    >   **conferenza** fare clic su **Reimposta**.
 
 4. Nella finestra **Reimposta ID conferenza?** fare clic su **Sì.** A conference ID will be automatically created and an email sent to the user with the new conference ID.
 
@@ -97,7 +99,7 @@ Per altre informazioni sul cmdlet, vedere [Get-CsOnlineDialInConferencingUser.](
 ## <a name="what-else-should-you-know"></a>Informazioni aggiuntive
 
    > [!IMPORTANT]
-   >  Dopo la creazione o la reimpostazione di un nuovo ID conferenza, il vecchio ID conferenza non può essere usato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo strumento di migrazione delle riunioni Skype for Business per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento, vedere: Strumento di aggiornamento delle riunioni per [Skype for Business e Lync,](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4)Skype for Business online, Strumento di migrazione delle riunioni [(64 bit)](https://go.microsoft.com/fwlink/?LinkID=626047)e Skype for Business online, Strumento di migrazione delle riunioni [(32 bit).](https://www.microsoft.com/download/details.aspx?id=54079)
+   >  Dopo la creazione o la reimpostazione di un nuovo ID conferenza, il vecchio ID conferenza non può essere usato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo strumento Skype for Business migrazione delle riunioni per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento, vedere: Strumento di aggiornamento delle riunioni per [Skype for Business e Lync](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4), Skype for Business Online, Strumento di migrazione delle riunioni [(64 bit)](https://go.microsoft.com/fwlink/?LinkID=626047)e Skype for Business Online, Strumento di migrazione delle riunioni [(32 bit).](https://www.microsoft.com/download/details.aspx?id=54079)
 
 - See [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/Set-CsOnlineDialInConferencingUser) to learn more about the cmdlet.
 
@@ -108,7 +110,7 @@ Per altre informazioni sul cmdlet, vedere [Get-CsOnlineDialInConferencingUser.](
 
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
 

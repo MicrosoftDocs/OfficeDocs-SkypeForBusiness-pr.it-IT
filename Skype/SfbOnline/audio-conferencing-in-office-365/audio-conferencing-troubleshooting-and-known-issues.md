@@ -21,22 +21,24 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere un elenco dei problemi noti quando si usa Microsoft come provider di conferenze telefoniche con accesso esterno, lo stato e alcune soluzioni alternative. '
-ms.openlocfilehash: 13c493e16e5a6fef8b93b80d2a0e706f8f222ffa
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 71d363ff98fc4590fb6d96cc3e8a8cb77b1fa24c
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111962"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237192"
 ---
 # <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza
 
- **Questo articolo è per gli utenti skype for business che usano Microsoft come provider di servizi di audioconferenza. Non si applica ai clienti che usano un provider di servizi di audioconferenza di terze parti.**
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+ **Questo articolo è per Skype for Business utenti che usano Microsoft come provider di servizi di audioconferenza. Non si applica ai clienti che usano un provider di servizi di audioconferenza di terze parti.**
   
 ## <a name="troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti
 
 Le audioconferenze che utilizzano Microsoft come provider di servizi di audioconferenza presentano problemi correnti che vengono monitorati e esaminati attivamente e che potrebbero essere risolti quando la funzionalità verrà aggiornata nelle versioni future di Microsoft 365.
   
-Per il momento, usa questa opzione come riferimento per la risoluzione di potenziali problemi relativi alla configurazione e al funzionamento delle audioconferenze per le persone che usano Skype for Business nella tua organizzazione.
+Per il momento, usare questa opzione come riferimento per la risoluzione di potenziali problemi relativi alla configurazione e al funzionamento delle audioconferenze per le persone che usano Skype for Business nell'organizzazione.
 
 |**Problema**|**Comportamento/sintomi**|**Soluzione alternativa nota**|**Data di scoperta**|
 |:-----|:-----|:-----|:-----|
@@ -44,7 +46,7 @@ Per il momento, usa questa opzione come riferimento per la risoluzione di potenz
 |Se, durante il provisioning iniziale, a un utente viene assegnata una licenza E5, è possibile che l'e-mail di benvenuto ai servizi di audioconferenza non sia stata recapitata in caso di mancata attivazione della cassetta postale.  <br/> |In tale evenienza è possibile inviare nuovamente le informazioni sui servizi di audioconferenza dell'utente utilizzando l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o mediante PowerShell. Vedere [Abilitare o disabilitare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di audioconferenza.](enable-or-disable-sending-emails-when-their-settings-change.md)  <br/> **Nota:** Per inviare di nuovo il PIN di audioconferenza all'utente, è necessario reimpostarlo. L'operazione può essere eseguita tramite l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o tramite PowerShell.          |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |La visualizzazione delle chiamate per i servizi di audioconferenza nei rapporti sull'utilizzo può richiedere fino a 24 ore.  <br/> |Nei prossimi aggiornamenti del servizio, ci impegniamo a introdurre miglioramenti in proposito.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |Quando un chiamante accede a un bridge di conferenza tramite telefono dopo che la riunione è stata bloccata da un utente Skype for Business, nell'app Skype for Business non è presente alcuna notifica che indica che l'utente è in sala di attesa.  <br/> |Si tratta di un'impostazione inerente alla progettazione; tuttavia, alla luce dei feedback raccolti, abbiamo deciso di introdurre un supporto per questa funzionalità nei prossimi aggiornamenti del servizio.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
-|Un utente di Skype for Business Server (locale) a cui è stata assegnata la licenza di audioconferenza prima del 1° marzo 2019 potrebbe non vedere le coordinate di accesso esterno negli inviti alla riunione.  <br/> |Il provisioning degli utenti di Skype for Business Server per le audioconferenze di Teams non è stato supportato fino a quella data. Ora è supportato ed è un componente di [Meetings First.](/microsoftteams/meetings-first) L'utente deve avere una licenza di Teams.  <br/> |La pipeline di provisioning deve essere riattivata. Rimuovere la licenza di audioconferenza dell'utente, attendere un paio d'ore e riassegnare la licenza.  <br/> |3/1/2019  <br/> |
+|Un Skype for Business Server utente (prem) a cui è stata assegnata la licenza di audioconferenza prima del 1° marzo 2019 potrebbe non vedere le coordinate di accesso esterno negli inviti alla riunione.  <br/> |Il provisioning Skype for Business Server utenti per Teams audioconferenze non era supportato fino a quella data. Ora è supportato ed è un componente di [Meetings First.](/microsoftteams/meetings-first) L'utente deve avere una Teams licenza.  <br/> |La pipeline di provisioning deve essere riattivata. Rimuovere la licenza di audioconferenza dell'utente, attendere un paio d'ore e riassegnare la licenza.  <br/> |3/1/2019  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

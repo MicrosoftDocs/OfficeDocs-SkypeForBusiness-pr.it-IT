@@ -20,14 +20,16 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni sui passaggi di distribuzione per ottenere il firmware corretto, aggiornarlo se necessario, assegnare licenze e configurare le impostazioni per i telefoni dell'area comune.
-ms.openlocfilehash: 16490c10418928f875d4513c509f17e09ac4359d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 4fd45f446d71e581305f7e596c7eacc62f54f8ca
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106432"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237352"
 ---
 # <a name="set-up-common-area-phones"></a>Configurare i telefoni di aree comuni
+
+[!INCLUDE [sfbo-retirement](../../../Hub/includes/sfbo-retirement.md)]
 Un telefono di area comune (CAP) è in genere collocato in un'area come un atrio o un'altra area a disposizione di molte persone. Ad esempio, un telefono nella reception, un citofono o un telefono per sala riunioni, i CAP vengono configurati come dispositivi anziché come utenti e si collegano automaticamente ad una rete. Nei seguenti passaggi, ti aiuteremo a configurare un account per Sistema telefonico con piani tariffari in modo da poter distribuire questi tipi di telefoni nella tua azienda.
 
 ## <a name="prerequisites-for-common-area-phones"></a>Prerequisiti per i telefoni delle aree comuni
@@ -37,10 +39,10 @@ La prima cosa che devi fare è confermare di aver fatto quanto segue:
 - Acquistato la licenza per telefono di area comune e un piano tariffario.
 - Cercato e acquistato telefoni approvati (visualizza l'elenco [Qui](deploying-skype-for-business-online-phones.md)).
 - Aggiornato il firmware sui tuoi telefoni (vedi firmware supportato [in questo argomento](getting-phones-for-skype-for-business-online.md)).  Puoi controllare il firmware sul tuo telefono in questo modo:
-  - **Telefoni Polycom VVX**: Passare a **Impostazioni**  >  **Stato**  >  **Piattaforma Applicazione**  >    >  **Principale**.
+  - **Polycom VVX phones**: Vai **a** Impostazioni  >  **Status**  >  **Platform**  >  **Application**  >  **Main**.
   - **Telefoni Yealink:** passare a **Stato** nella schermata principale del telefono.
   - **AudioCodes phones**: Passare alla **versione firmware** dello stato del dispositivo menu  >    >   dalla schermata start.
-  - **Telefoni Lync Phone Edition (LPE):** passare a **Menu**  >  **System Information** dalla schermata start.
+  - **Telefoni Lync Telefono Edition (LPE):** passare a **Menu**  >  **System Information** dalla schermata start.
 
     Gli upgrade del firmware sono gestiti dal servizio Skype for Business Service. Ogni firmware del telefono certificato Skype for Business viene caricato sul server Skype for Business Update e gli aggiornamenti dispositivo sono attivati su tutti i telefoni per impostazione predefinita.
 
@@ -52,7 +54,7 @@ Dovrai seguire questi passaggi:
 ### <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 1. Nell'interfaccia di amministrazione passare a **Servizi**  >  **di acquisto fatturazione** e aggiungere Altri **piani.**
 
-    ![Screenshot della licenza Common Area Phone](../../images/cap-license.png)
+    ![Screenshot della licenza Telefono area comune](../../images/cap-license.png)
 2. Clicca su **Telefono di area comune** > **Acquista ora** > sulla pagina di **Check-out** clicca su **Acquista ora**.
 3. Clicca per espandere **Abbonamenti aggiuntivi** e quindi clicca per acquistare un piano di chiamata. Scegli **Piano di chiamata domestico** o **Piano di chiamata nazionale e internazionale**.
 
@@ -82,9 +84,9 @@ Per maggiori dettagli, vedi [Aggiungere un utente](https://support.office.com/ar
 
 ### <a name="step-3---assign-a-phone-number-to-the-common-area-phone-user-account"></a>Passaggio 3: assegna un numero di telefono all'account utente del telefono di area comune
 
-![Icona che mostra il logo di Skype for Business Assegnare un numero di telefono all'utente usando ](../../images/sfb-logo-30x30.png) **l'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il logo Skype for Business assegnare un numero di telefono all'utente usando ](../../images/sfb-logo-30x30.png) **l'interfaccia Skype for Business di amministrazione**
 
-1. Nell'interfaccia di amministrazione > **di amministrazione** Skype  >  **for Business**.
+1. Nell'interfaccia di amministrazione > **di amministrazione**  >  **Skype for Business**.
 2. Nell' **Interfaccia di amministrazione Skype for Business** >  **Voce** > **Numeri di telefono**.
 3. Seleziona un numero dall'elenco di numeri di telefono e fai clic su **Assegnare**.
 4. Sulla pagina relativa all'**Assegnazione**, nella casella **Utente vocale** immetti il nome dell'utente che viene utilizzato per il telefono, quindi seleziona l'utente nel menù a tendina **Seleziona un utente vocale**.
@@ -138,7 +140,7 @@ Il telefono o i telefoni in dotazione devono avere la modalità **Telefono di ar
 
 
 > [!NOTE]
-> Il sito di provisioning CAP afferma che ripristinerà la password dell'account CAP ad una password casuale. Prendere nota che l'account a cui fa riferimento il CAP è l'account Azure Active Directory (AAD). Se hai creato l'account solo in AAD, la procedura è semplice. Se è stata sincronizzata una versione locale di Active Directory con AAD e si usa un IDP o ADFS di terze parti, il provisioning cap non riuscirà. In questo caso, è necessario usare solo un account di Microsoft 365 o Office 365/Azure Active Directory (ad esempio un account con un dominio **onmicrosoft.com)** per il provisioning di CAP.
+> Il sito di provisioning CAP afferma che ripristinerà la password dell'account CAP ad una password casuale. Prendere nota che l'account a cui fa riferimento il CAP è l'account Azure Active Directory (AAD). Se hai creato l'account solo in AAD, la procedura è semplice. Se è stata sincronizzata una versione locale di Active Directory con AAD e si usa un IDP o ADFS di terze parti, il provisioning cap non riuscirà. In questo caso, è necessario usare solo un account Microsoft 365 o Office 365/Azure Active Directory (ad esempio  un account con un dominio di onmicrosoft.com) per il funzionamento del provisioning cap.
 
 
 ### <a name="related-topics"></a>Argomenti correlati

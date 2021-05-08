@@ -1,7 +1,7 @@
 ---
 title: Preparare il servizio per un aggiornamento a Microsoft Teams
-author: msdmaguire
-ms.author: dmaguire
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ef3c8ced54686e04a00bded3266bd5814a3466e9
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2ad5887c50b15efc2dcddd000a8f117c2f350ac5
+ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119065"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52282190"
 ---
 # <a name="prepare-your-service-for-upgrading-to-teams"></a>Preparare il servizio per l'aggiornamento a Teams
 
@@ -38,15 +38,15 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Questo articolo offre una panoramica dei requisiti per la preparazione dell'organizzazione per la collaborazione e i servizi vocali cloud con Teams. La preparazione corretta consente di essere certi di essere pronti a fornire queste funzionalità all'organizzazione.
+Questo articolo offre una panoramica dei requisiti per preparare l'organizzazione per la collaborazione e i servizi vocali cloud con Teams. La preparazione corretta consente di essere certi di essere pronti a fornire queste funzionalità all'organizzazione.
 
-## <a name="onboarding-checklists-and-landing-pages-for-microsoft-teams-rollout"></a>Elenchi di controllo per l'onboarding e pagine di destinazione per l'implementazione di Microsoft Teams
+## <a name="onboarding-checklists-and-landing-pages-for-microsoft-teams-rollout"></a>Elenchi di controllo per l'onboarding e pagine di destinazione per Microsoft Teams distribuzione
 
 Gli elenchi di controllo e le pagine di destinazione seguenti illustrano i passaggi per la distribuzione di Microsoft Teams nell'organizzazione:
 
 - [Preparare Microsoft 365 o Office 365 per Teams](onboarding-checklist-enable-office-365.md)
 
-- [Configurare le funzionalità principali di Teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md)
+- [Configurare le Teams principali](onboarding-checklist-configure-microsoft-teams-core-capabilities.md)
 
 - [Preparare la rete](prepare-network.md)
 
@@ -54,22 +54,22 @@ Gli elenchi di controllo e le pagine di destinazione seguenti illustrano i passa
 
 - [Riunioni e audioconferenza](deploy-meetings-microsoft-teams-landing-page.md)
 
-- [Opzioni di connettività sistema telefonico e PSTN](cloud-voice-landing-page.md)
+- [Sistema telefonico di connettività PSTN e pstn](cloud-voice-landing-page.md)
 
 
-Le attività e le attività in questi elenchi di controllo sono gli elementi di base che si applicano a ogni distribuzione di funzionalità vocali e di collaborazione con Teams. È possibile personalizzare gli elenchi di controllo in modo da includere le attività e le attività specifiche per il proprio percorso di Teams.
+Le attività e le attività in questi elenchi di controllo sono gli elementi di base delle attività che si applicano a ogni distribuzione di funzionalità vocali e di collaborazione con Teams. È possibile personalizzare gli elenchi di controllo in modo da includere le attività e le attività specifiche per il proprio Teams viaggio.
 
 Usare gli elenchi di controllo forniti per tenere traccia dello stato di ogni singola attività e attività e per assicurarsi di non aver ignorato i passaggi critici. Ogni attività include una descrizione dettagliata delle azioni richieste e riferimenti a informazioni aggiuntive che è possibile usare per completare l'attività.
 
-Anche se è consigliabile seguire gli elenchi di controllo nell'ordine indicato, la sequenza esatta dipenderà dall'ambito della distribuzione e dalla configurazione e dalla complessità dell'ambiente. Sono organizzate per supportare la distribuzione di Teams "greenfield" (una senza presenza precedente in Skype for Business online) o l'aggiornamento da Skype for Business Online a Teams. Se stai eseguendo l'aggiornamento da Skype for Business online, potresti aver già completato alcune di queste attività e puoi ignorarle ora.
+Anche se è consigliabile seguire gli elenchi di controllo nell'ordine indicato, la sequenza esatta dipenderà dall'ambito della distribuzione e dalla configurazione e dalla complessità dell'ambiente. Sono organizzate per supportare una distribuzione Teams "greenfield" (una senza presenza precedente in Skype for Business Online) o l'aggiornamento da Skype for Business Online a Teams. Se si esegue l'aggiornamento da Skype for Business Online, alcune di queste attività potrebbero essere già state completate e possono essere ignorate.
 
 Quando si esegue l'onboarding degli utenti in base al sito, è consigliabile usare il Playbook di abilitazione del sito per la voce [(Playbook)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/site-enablement-playbook-for-voice-(playbook).xlsx?raw=true) come guida supplementare a questi elenchi di controllo.
 
 >[!NOTE]
->La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business online. Usare l'interfaccia di amministrazione di Microsoft Teams per configurare queste impostazioni.
+>La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business Online. Usare l'Microsoft Teams di amministrazione per configurare queste impostazioni.
 
 <table>
-<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting a decision point"/> <br/>Punto di decisione</td><td><ul><li>Chi sarà responsabile della supervisione del completamento degli elenchi di controllo per l'onboarding?</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting a decision point"/> <br/>Punto di decisione</td><td><ul><li>Who sarà responsabile della supervisione del completamento degli elenchi di controllo per l'onboarding?</li></ul></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Scaricare gli elenchi di controllo per l'onboarding.</li><li>Usare gli elementi dell'elenco di controllo per l'onboarding in modo dettagliato in base al piano di distribuzione dell'organizzazione.</li></ul></td></tr>
 </table>
 

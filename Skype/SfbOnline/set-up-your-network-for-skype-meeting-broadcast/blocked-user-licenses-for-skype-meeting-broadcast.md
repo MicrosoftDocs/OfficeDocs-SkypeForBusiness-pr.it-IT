@@ -18,34 +18,36 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - SMB
-description: Purtroppo, alcune licenze utente vengono bloccate quando l'utente passa a e https://broadcast.skype.com vuole usare Skype Meeting Broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se si vuole comunque che lo usino, assegnare loro un'altra licenza di Office 365.
-ms.openlocfilehash: 91c1005ee211bd51fc0f713237362b43a79d5e69
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Purtroppo, alcune licenze utente vengono bloccate quando l'utente passa a e vuole https://broadcast.skype.com usare Riunione Skype Broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se vuoi che lo usino ancora, assegnagli un'altra Office 365 licenza.
+ms.openlocfilehash: a29bdca6deaea9fc622ec34996f9f2ac8be3b023
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103762"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237042"
 ---
-# <a name="blocked-user-licenses-for-hosting-skype-meeting-broadcast"></a>Licenze utente bloccate per l'hosting di Skype Meeting Broadcast
+# <a name="blocked-user-licenses-for-hosting-skype-meeting-broadcast"></a>Licenze utente bloccate per l'hosting Riunione Skype Broadcast
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!IMPORTANT]
-> Skype for Business online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
+> Skype for Business Online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
 
-Purtroppo, alcune licenze utente vengono bloccate quando gli utenti visitano e https://broadcast.skype.com vogliono ospitare skype meeting broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se si vuole comunque che lo usino, assegnare loro un'altra licenza di Office 365.
+Purtroppo, alcune licenze utente vengono bloccate quando gli utenti visitano e vogliono ospitare un Riunione Skype https://broadcast.skype.com Broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se vuoi che lo usino ancora, assegnagli un'altra Office 365 licenza.
   
- *"La tua politica aziendale non ti consente di usare Skype Meeting Broadcast. Rivolgersi all'amministratore di sistema per verificare che il servizio sia abilitato e che si abbia la licenza corretta".* 
+ *"I criteri aziendali non consentono di usare Riunione Skype Broadcast. Rivolgersi all'amministratore di sistema per verificare che il servizio sia abilitato e che si abbia la licenza corretta".* 
   
 ## <a name="blocked-user-licenses"></a>Licenze utente bloccate 
 
-L'hosting di eventi Skype Meeting Broadcast verrà bloccato se a un utente viene assegnata una delle licenze utente seguenti. I partecipanti che stanno trasmettendo eventi di trasmissione non richiedono licenze utente.
+L'hosting Riunione Skype eventi broadcast verrà bloccato se a un utente viene assegnata una delle licenze utente seguenti. I partecipanti che stanno trasmettendo eventi di trasmissione non richiedono licenze utente.
   
 - Office 365 Education Fac/Staff
     
-- Office 365 Education Student
+- Office 365 Education Studente
     
 - Office 365 Education Plus Fac/Staff
     
-- Office 365 Education Plus Student
+- Office 365 Education Plus Studente
     
 - Office 365 Education E1 Fac/Staff
     
@@ -55,11 +57,11 @@ L'hosting di eventi Skype Meeting Broadcast verrà bloccato se a un utente viene
     
 - Office 365 Education E3 Fac/Staff Large
     
-- Office 365 Education E3 Student
+- Office 365 Education Studente di E3
     
-- Vantaggi per l'uso degli studenti in Office 365 A1
+- Office 365 A1 vantaggio per l'uso degli studenti
     
-- Vantaggi per l'uso degli studenti in Microsoft 365 A1
+- Microsoft 365 A1 vantaggi per l'uso degli studenti
 
     
 ## <a name="related-topics"></a>Argomenti correlati
