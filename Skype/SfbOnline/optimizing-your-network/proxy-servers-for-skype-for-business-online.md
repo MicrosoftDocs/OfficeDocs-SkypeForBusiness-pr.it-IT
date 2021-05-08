@@ -20,22 +20,24 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Questo articolo fornisce informazioni sull'uso di un server proxy con Skype for Business.
-ms.openlocfilehash: a154b36fc03dc84916d5cb4bd383ff80bef901cd
-ms.sourcegitcommit: 2511cd95a186d95f4571afa4212f8e0fc207817d
+ms.openlocfilehash: 09ed98c5f69d6e244a5f87125e4ad607e4d16226
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2020
-ms.locfileid: "41863752"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240415"
 ---
-# <a name="proxy-servers-for-skype-for-business-online"></a>Server proxy per Skype for Business online
+# <a name="proxy-servers-for-skype-for-business-online"></a>Server proxy per Skype for Business Online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 Questo articolo fornisce indicazioni sull'uso di un server proxy con Skype for Business.
   
 ## <a name="not-using-a-proxy-server-is-recommended"></a>Consigliamo di non usare un server proxy
 
-Per quanto riguarda il traffico di Skype for Business via proxy, Microsoft consiglia di bypassare il proxy. I proxy non rendono Skype for Business più sicuro perché il traffico è già crittografato.
+Per quanto riguarda il traffico di Skype for Business via proxy, Microsoft consiglia di bypassare il proxy. I proxy non rendono più sicuro Skype for Business perché il traffico è già crittografato.
   
-Inoltre, avere un proxy può causare problemi. I problemi di prestazioni possono essere introdotti nell'ambiente attraverso latenza e perdita di pacchetti. Problemi come questi genere genereranno un'esperienza negativa in scenari di Teams o Skype for Business come audio e video, in cui i flussi in tempo reale sono essenziali.
+Inoltre, avere un proxy può causare problemi. Possono essere introdotti in un ambiente problemi di prestazioni attraverso latenza e perdita di pacchetti. Problemi come questi comportano un'esperienza negativa in scenari Teams o Skype for Business audio e video, in cui i flussi in tempo reale sono essenziali.
   
 ## <a name="if-you-need-to-use-a-proxy-server"></a>Se devi usare un server proxy
 

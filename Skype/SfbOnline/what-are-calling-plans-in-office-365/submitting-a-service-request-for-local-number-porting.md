@@ -22,16 +22,18 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderQuickViewPanelO365Support
 description: 'If you have more than 999 phone numbers to transferred to Skype for Business, learn how to submit a port order service request to get them moved. '
-ms.openlocfilehash: a8260308d5072478dba4ff054bb54e841bacfdda
-ms.sourcegitcommit: dd3a3ab4ddbdcfe772f30fb01ba3b97c45c43dd4
+ms.openlocfilehash: e7b3b5b5a0ffdfa57fd1c61284b52dfda17b0204
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2020
-ms.locfileid: "41769309"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237992"
 ---
 # <a name="submitting-a-service-request-for-local-number-porting"></a>Invio di una richiesta di servizio per la portabilità dei numeri locali
 
-Se devi trasferire su Skype for Business online più di 999 numeri di telefono (per utenti [](/microsoftteams/manage-phone-numbers-for-your-organization)o numeri di servizio, inclusi numeri a verde o a numero verde), consulta Gestire i numeri di telefono per l'organizzazione.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+Se è necessario trasferire più di 999 numeri di telefono (per gli utenti o numeri di servizio inclusi i numeri a pedaggio o a numero verde) a Skype for Business Online, vedere Gestire i numeri di telefono per [l'organizzazione.](/microsoftteams/manage-phone-numbers-for-your-organization)
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

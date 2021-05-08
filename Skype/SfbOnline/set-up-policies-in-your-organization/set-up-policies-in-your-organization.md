@@ -1,5 +1,5 @@
 ---
-title: Configurare criteri nell'organizzazione
+title: Configurare i criteri nell'organizzazione
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -18,16 +18,18 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-ms.openlocfilehash: a6a00dc43e578753796cf7a9b03ff7cedfa46ed4
-ms.sourcegitcommit: 80b66127b3415c99f9468625add6a8f2c36bca74
+ms.openlocfilehash: 20da0e58c2f8b47f2c1d84959eb3ae3f69ba377c
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "48376559"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240021"
 ---
-# <a name="set-up-policies-in-your-organization"></a>Configurare criteri nell'organizzazione
+# <a name="set-up-policies-in-your-organization"></a>Configurare i criteri nell'organizzazione
 
-I criteri aiutano a determinare le funzionalità di Skype for Business online rese disponibili agli utenti. Per informazioni dettagliate, vedere gli articoli seguenti.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+I criteri consentono di determinare le funzionalità Skype for Business Online rese disponibili per gli utenti. Per informazioni dettagliate, vedere gli articoli seguenti.
 
 - [Bloccare i trasferimenti di file punto a punto](block-point-to-point-file-transfers.md)
 - [Creare criteri di accesso esterno personalizzato](create-custom-external-access-policies.md)

@@ -20,18 +20,20 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.CivicAddressValidation
 description: "Scopri cos'è la convalida dell'indirizzo, perché è importante e che rapporto ha con gli indirizzi e servizi di emergenza. "
-ms.openlocfilehash: 9cde4246cf449e1259fb7b46264f20d65d3a7849
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+ms.openlocfilehash: dfd582236289e7a7891b52d34c758f78a95a89f7
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220696"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237952"
 ---
 # <a name="what-is-address-validation"></a>Cos'è la convalida dell'indirizzo?
 
-Quando si configurano i Piani per chiamate, è necessario assegnare un numero di telefono e un indirizzo per gli interventi di emergenza a ciascun utente.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]?
+
+Quando si configuraNo i Piani per le chiamate, è necessario assegnare un numero di telefono e un indirizzo di emergenza a ogni utente.
   
-La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo per gli interventi di emergenza parzialmente corretto, ad esempio un nome non specificato correttamente della città, superi comunque la convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso, viene considerato convalidato e può essere assegnato a un numero di telefono.
+La convalida di un indirizzo civico o stradale implica la verifica della legittimità e della corretta formattazione dell'indirizzo. È possibile che un indirizzo di emergenza parzialmente corretto, ad esempio un nome non corretto della città, superi comunque la convalida. Il processo di convalida utilizza tutte le parti di un dato indirizzo per stabilire se contiene informazioni sufficienti a inoltrare la chiamata al centro dei servizi di emergenza più appropriato. In tal caso, viene considerato convalidato e può essere assegnato a un numero di telefono.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

@@ -1,5 +1,5 @@
 ---
-title: Reimpostare un ID conferenza per un utente in Skype for Business online
+title: Reimpostare un ID conferenza per un utente in Skype for Business Online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,15 +20,17 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
-description: "Informazioni sulla procedura per reimpostare l'ID conferenza di una riunione di un utente in Skype for Business online e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni. "
-ms.openlocfilehash: 424b0dfb24d6034af20c18a0172221a09bef5ecd
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Informazioni sulla procedura per reimpostare l'ID conferenza di un utente in Skype for Business Online e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni. "
+ms.openlocfilehash: 24037de3849ae54920777636e7eb745671ae2f57
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51114212"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237772"
 ---
-# <a name="reset-a-conference-id-for-a-user-in-skype-for-business-online"></a>Reimpostare un ID conferenza per un utente in Skype for Business online
+# <a name="reset-a-conference-id-for-a-user-in-skype-for-business-online"></a>Reimpostare un ID conferenza per un utente in Skype for Business Online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!NOTE]
 > Per informazioni sulla reimpostazione di un ID conferenza su Microsoft Teams, consulta [Reimpostare un ID conferenza per un utente su Microsoft Teams](/MicrosoftTeams/reset-a-conference-id-for-a-user-in-teams).
@@ -40,12 +42,12 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 
 ## <a name="resetting-the-conference-id-for-a-user"></a>Reimpostazione dell'ID conferenza per un utente
    
-1. **Nell'interfaccia di amministrazione di Skype for Business** fare clic su Utenti di **audioconferenza,** selezionare un utente e quindi nel riquadro Azioni in ID conferenza fare clic su  >   **Reimposta.** 
+1. **Nell'Skype for Business di amministrazione fare** clic su Utenti di **audioconferenza,** selezionare un utente e quindi nel riquadro Azioni in ID conferenza fare clic su  >   **Reimposta.** 
     
 2. Nella finestra **Reimposta ID conferenza?** fare clic su **Sì.** A conference ID will be automatically created and an email sent to the user with the new conference ID. Per impostazione predefinita, i messaggi di posta elettronica vengono inviati agli utenti, ma possono essere disattivati.
     
 > [!NOTE]
-> Dopo la reimpostazione dell'ID conferenza, viene inviata all'utente un'e-mail con il nuovo ID conferenza. Questo messaggio di posta elettronica verrà inviato all'indirizzo di posta elettronica principale, in molti casi, alla cassetta postale di Microsoft 365 o Office 365. Nell'e-mail è contenuto il nuovo ID conferenza, i numeri di telefono predefiniti per l'accesso esterno e alcune istruzioni per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business, che consente di aggiornare le riunioni esistenti. 
+> Dopo la reimpostazione dell'ID conferenza, viene inviata all'utente un'e-mail con il nuovo ID conferenza. Questo messaggio di posta elettronica verrà inviato all'indirizzo di posta elettronica principale, in molti casi, Microsoft 365 o Office 365 cassetta postale. Nell'e-mail è contenuto il nuovo ID conferenza, i numeri di telefono predefiniti per l'accesso esterno e alcune istruzioni per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business, che consente di aggiornare le riunioni esistenti. 
   
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -60,7 +62,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
     
 - L'ID conferenza di un utente per le audioconferenze può essere visualizzato nella parte inferiore del riquadro Azioni in **Audioconferenza** quando si seleziona l'utente nella **pagina** Utenti.
     
-- Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo strumento riunione Skype for Business per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento di aggiornamento delle riunioni Skype for Business, vedi:
+- Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo Skype for Business per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento di aggiornamento Skype for Business riunione, vedere:
     
   - [Meeting Update Tool per Skype for Business e Lync](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4)
     
@@ -70,7 +72,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
     
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

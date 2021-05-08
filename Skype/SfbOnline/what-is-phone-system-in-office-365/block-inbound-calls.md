@@ -1,5 +1,5 @@
 ---
-title: Bloccare le chiamate in ingresso in Skype for Business online
+title: Bloccare le chiamate in ingresso in Skype for Business Online
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -13,16 +13,18 @@ appliesto:
 - Skype for Business
 localization_priority: Normal
 ms.custom: Learn how to use PowerShell to manage inbound call blocking in Skype for Business Online.
-ms.openlocfilehash: 7848aff5f5b4dbb56be713b9241f2ace1ee6e6b3
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: dae0d585df2f67904712e9220f16213a2f925369
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102072"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52238032"
 ---
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
-I piani per chiamate Skype for Business online ora supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente di definire un elenco globale tenant di schemi numerici in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere verificato rispetto all'elenco per trovare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+Skype for Business I piani per chiamate online ora supportano il blocco delle chiamate in ingresso dalla rete PSTN (Public Switched Telephone Network). Questa caratteristica consente di definire un elenco globale tenant di schemi numerici in modo che l'ID chiamante di ogni chiamata PSTN in arrivo al tenant possa essere verificato rispetto all'elenco per trovare una corrispondenza. Se viene effettuata una corrispondenza, una chiamata in arrivo viene rifiutata.
 
 Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso provenienti dalla rete PSTN e funziona solo su base tenant-globale. Non è disponibile per ogni utente.  
 
@@ -177,4 +179,4 @@ Come indicato in precedenza, la corrispondenza dei criteri per bloccare i chiama
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Configurare il computer per gestire Skype for Business online usando Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
+- [Configurare il computer per la gestione Skype for Business Online usando Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)

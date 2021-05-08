@@ -22,14 +22,16 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderFinish
 description: Scopri cosa devi fare dopo aver esportato i numeri di telefono in Skype for Business.
-ms.openlocfilehash: 8dcb74cad8a745fd81b22c0aa68d4f3cedd3502a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: d49fea9315e44f7d126021ec8733143916f5e366
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101862"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237942"
 ---
 # <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Cosa è necessario fare dopo il port dei numeri di telefono?
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]?
 
 Dopo aver inviato l'ordine di trasferimento, contattare il gestore e inviare i dettagli. Quando è stata impostata la data di trasferimento finale, ti invieremo una notifica tramite e-mail. Tuttavia, in attesa che il gestore accetti l'ordine, vai avanti e crea gli indirizzi di emergenza necessari che userai con questi numeri.
   

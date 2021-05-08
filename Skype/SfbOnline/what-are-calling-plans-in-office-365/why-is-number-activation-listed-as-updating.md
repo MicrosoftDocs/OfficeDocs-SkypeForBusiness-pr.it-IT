@@ -1,5 +1,5 @@
 ---
-title: Perché l'attivazione del numero è elencata come aggiornamento?
+title: Perché l'attivazione dei numeri è elencata come aggiornamento?
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -21,17 +21,19 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - ms.lync.lac.NumberActivationStateUpdating
-description: La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 2722928d44867547740e4049f9090af683f61824
-ms.sourcegitcommit: d69bad69ba9a9bca4614d72d8f34fb2a0a9e4dc4
+description: La convalida dell'indirizzo è una parte importante della configurazione dei piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: 2bc70c06ac5423864f7861fc44bbb2529a3d04f2
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2020
-ms.locfileid: "44220656"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237792"
 ---
-# <a name="why-is-number-activation-listed-as-updating"></a>Perché l'attivazione del numero è elencata come aggiornamento?
+# <a name="why-is-number-activation-listed-as-updating"></a>Perché l'attivazione dei numeri è elencata come aggiornamento?
 
-La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Se per qualche motivo un numero di telefono  non è attivato ed è elencato come aggiornato a causa della convalida dell'indirizzo, sarà necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]?
+
+La convalida dell'indirizzo è una parte importante della configurazione dei piani per chiamate. Se per qualche motivo un numero di telefono  non è attivato ed è elencato come aggiornamento a causa della convalida dell'indirizzo, sarà necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
   
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
 1. Nell'interfaccia di amministrazione scegliere **Serve aiuto?**
@@ -42,9 +44,9 @@ La convalida dell'indirizzo è una parte importante della configurazione dei Pia
 
 ## <a name="for-organizations-with-more-than-150-users-create-a-service-request-to-validate-an-emergency-address"></a>Per le organizzazioni con più di 150 utenti, crea una richiesta di servizio per convalidare un indirizzo per gli interventi di emergenza
 
-1. Accedere a Microsoft 365 o Office 365 come amministratore con l'account aziendale o dell'istituto di istruzione.
+1. Accedere come amministratore per accedere Microsoft 365 o Office 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione fare clic **su**  >  **Supporto per la nuova richiesta di servizio.**
+2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione fare clic **su**  >  **Supporto nuova richiesta di servizio.**
     
 3. In **Richieste di servizio** fai clic su **Aggiungi**.
     
@@ -69,7 +71,7 @@ La convalida dell'indirizzo è una parte importante della configurazione dei Pia
       - Paese o area geografica
     
      > [!IMPORTANT]
-     > **Inserisci il paese/area geografica in cui offriamo i Piani per chiamate che stai tentando di convalidare come indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
+     > **Inserisci il paese/area geografica in cui offriamo Piani per chiamate in cui stai cercando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
   
       - Codice postale
     
@@ -94,7 +96,7 @@ La convalida dell'indirizzo è una parte importante della configurazione dei Pia
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
-> Il numero di riferimento sarà elencato nella pagina **Richieste di servizio** dell'interfaccia di amministrazione di Microsoft 365.
+> Il numero di riferimento verrà elencato nella pagina **Richieste di** servizio nell'Microsoft 365 di amministrazione.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

@@ -22,16 +22,18 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Learn how to assign Microsoft the dial-in conferencing provider for Skype for Business.
-ms.openlocfilehash: b0276b0f5ed50e3c287bc872de45d6c1c4c69157
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 74469a7686855d1bb17627282a9f2e5378a0d59e
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51110042"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237762"
 ---
 # <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di audioconferenza
 
-Per usare le audioconferenze in Microsoft 365 o Office 365 con Skype for Business e Microsoft Teams, gli utenti dell'organizzazione devono avere una licenza di audioconferenza assegnata. Vedere [Provare o acquistare audioconferenze in Microsoft 365 o Office 365](try-or-purchase-audio-conferencing-in-office-365.md) per altre informazioni sulle licenze e sui costi.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+Per usare i servizi di audioconferenza in Microsoft 365 o Office 365 con Skype for Business e Microsoft Teams, gli utenti dell'organizzazione devono avere una licenza di audioconferenza assegnata. Vedere [Provare o acquistare audioconferenze in Microsoft 365](try-or-purchase-audio-conferencing-in-office-365.md) o Office 365 per altre informazioni sulle licenze e sul costo.
 
 L'audioconferenza Microsoft fornisce i numeri di telefono di accesso esterno, pin e ID conferenza che possono essere utilizzati dai partecipanti alla riunione per colegarsi alle riunioni della propria organizzazione. È sufficiente assegnare agli utenti che desiderano programmare o condurre riunioni con Skype for Business o Microsoft Teams.
 
@@ -40,11 +42,11 @@ L'audioconferenza Microsoft fornisce i numeri di telefono di accesso esterno, pi
   
 ## <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di audioconferenza
 
-### <a name="an-icon-showing-the-skype-for-business-logo-using-the-skype-for-business-admin-center"></a>![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) Utilizzo dell'interfaccia di amministrazione di Skype for Business
+### <a name="an-icon-showing-the-skype-for-business-logo-using-the-skype-for-business-admin-center"></a>![Icona che mostra il logo Skype for Business](../images/sfb-logo-30x30.png) Utilizzo dell'interfaccia di amministrazione di Skype for Business
 
-1. Passare al portale **legacy dell'interfaccia** di amministrazione di Microsoft  >  Teams.
+1. Passare **all'interfaccia Microsoft Teams di amministrazione**  >  **legacy**.
     
-2. **Nell'interfaccia di amministrazione di Skype for Business,** nel riquadro di spostamento sinistro, vai a **Audioconferenza.**
+2. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a **Servizi di audioconferenza.**
     
 3. Se viene visualizzata un'intestazione di notifica che indica che vi sono utenti che dispongono di una licenza **Audioconferenza** assegnata ma non dispone di Microsoft impostato come i provider di servizi di conferenza audio sono ancora stati, fare clic **Clicca qui per spostarli**. Se non viene visualizzata l'intestazione, nell' **interfaccia di amministrazione di Skype for Business** fare clic su **utenti** e quindi selezionare il filtro **utenti pronti per audioconferenza** .
     
@@ -197,4 +199,4 @@ Per ulteriori informazioni sull'uso di Windows PowerShell, consulta [Uso di Wind
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Provare o acquistare audioconferenze in Microsoft 365 o Office 365](../audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365.md) 
- [Configurare Skype for Business online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)
+ [Configurare Skype for Business Online](../set-up-skype-for-business-online/set-up-skype-for-business-online.md)

@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b371d696008d7ef58ce7722e6a9f27e9c9bc970
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 96012732c3f8023535e67cd753a16a7aac32f913
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117804"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240496"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -78,7 +78,7 @@ I ruoli di amministratore di Teams determinano le capacità dei titolari dei var
 </thead>
 <tbody>
    <tr>
-    <td valign="top" colspan="2">Amministratore del servizio Teams</td>
+    <td valign="top" colspan="2">Amministratore di Teams</td>
     <td valign="top">Gestire il servizio Teams e creare e gestire i gruppi di Microsoft 365</td>
     <td valign="top">Gestire le riunioni, inclusi criteri riunione, configurazioni e bridge di conferenza<sup>1</sup><br><br>Gestire le funzionalità vocali, tra cui criteri di chiamata, inventario e assegnazione dei numeri di telefono, code delle chiamate e operatori automatici<sup>1</sup><br><br>Gestire la messaggistica, inclusi i criteri di messaggistica<sup>1</sup><br><br>Gestire tutte le impostazioni a livello di organizzazione, inclusi federazione, aggiornamento di Teams e impostazioni del client di Teams<sup>1</sup><br><br>Gestire i team dell'organizzazione e le impostazioni associate, inclusa l'appartenenza<sup>2</sup><br><br>Visualizzare la pagina del profilo utente e risolvere i problemi di qualità delle chiamate degli utenti usando il set di strumenti per la risoluzione dei problemi avanzato<sup>3</sup></td>
 </tr>

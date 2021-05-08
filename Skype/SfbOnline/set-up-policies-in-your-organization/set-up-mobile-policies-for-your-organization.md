@@ -18,32 +18,34 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: È possibile configurare la modalità di connessione degli utenti a Skype for Business online usando l'app Skype for Business su dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate sul proprio cellulare usando il numero di telefono dell'ufficio invece del numero di cellulare. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate.
-ms.openlocfilehash: b0e2f7524f300733840159eacfcf27bb54f5e815
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: È possibile configurare la modalità di connessione degli utenti a Skype for Business Online usando l'app Skype for Business nei dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate sul cellulare usando il numero di telefono dell'ufficio invece del numero di cellulare. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate.
+ms.openlocfilehash: e29a02bddcb9ace29ebd059f8cbc42c5a85c3f12
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100492"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240068"
 ---
 # <a name="set-up-mobile-policies-for-your-organization"></a>Impostazione dei criteri per dispositivi mobili per la propria organizzazione
 
-È possibile configurare la modalità di connessione degli utenti a Skype for Business online usando l'app Skype for Business su dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate sul proprio cellulare usando il numero di telefono dell'ufficio invece del numero di cellulare. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+È possibile configurare la modalità di connessione degli utenti a Skype for Business Online usando l'app Skype for Business nei dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate sul cellulare usando il numero di telefono dell'ufficio invece del numero di cellulare. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate.
   
 Le impostazioni dei criteri per dispositivi mobili possono essere configurate al momento della creazione di un criterio oppure è possibile usare il cmdlet **Set-CsMobilityPolicy** per modificare le impostazioni di un criterio esistente.
   
 ## <a name="set-your-mobile-policies"></a>Impostare i criteri di mobilità
 
 > [!NOTE]
-> Per tutte le impostazioni dei criteri per dispositivi mobili in Skype for Business online, è necessario usare Windows PowerShell e non è possibile usare **l'interfaccia** di amministrazione **di Skype for Business.** 
+> Per tutte le impostazioni dei criteri per dispositivi mobili in Skype for Business Online, è necessario usare Windows PowerShell e non è possibile usare **l'interfaccia** di amministrazione di **Skype for Business dispositivi mobili.** 
   
 ### <a name="start-windows-powershell"></a>Avviare Windows PowerShell
 
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'ultimo modulo di PowerShell di Teams. Se si usa l'ultima versione pubblica di Teams PowerShell, non è necessario installare Skype for Business Online Connector.
-1. Installare il [modulo di PowerShell di Teams.](/microsoftteams/teams-powershell-install)
+> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente. Se si usa la versione pubblica più recente Teams PowerShell, non è necessario installare Skype for Business Online Connector.
+1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
     
-2. Aprire un Windows PowerShell comando ed eseguire i comandi seguenti: 
+2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
 
    ```powershell
    # When using Teams PowerShell Module
@@ -52,7 +54,7 @@ Le impostazioni dei criteri per dispositivi mobili possono essere configurate al
    $credential = Get-Credential
    Connect-MicrosoftTeams -Credential $credential
    ```
-   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connettersi a tutti i servizi [di Microsoft 365 o Office 365 in](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) un'unica finestra di Windows PowerShell o Configurare il [computer](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)per Windows PowerShell .
+   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connessione a tutti i servizi Microsoft 365 o Office 365 in un'unica finestra [di Windows PowerShell](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) o Configurare il [computer](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)per Windows PowerShell .
    
 ### <a name="require-a-wifi-connection-for-video-for-a-user"></a>Richiedere una connessione Wi-Fi per il video per un utente
 
@@ -108,9 +110,9 @@ Le impostazioni dei criteri per dispositivi mobili possono essere configurate al
     
 Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsMobilityPolicy](/powershell/module/skype/Set-CsMobilityPolicy) per apportare modifiche ai criteri esistenti e quindi usare il cmdlet[Grant-CsMobilityPolicy](/powershell/module/skype/Grant-CsMobilityPolicy) per applicare l'impostazione agli utenti.
   
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

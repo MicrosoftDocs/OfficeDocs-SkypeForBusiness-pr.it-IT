@@ -18,17 +18,19 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: In Skype for Business online è possibile controllare i trasferimenti di file P2P (Point-to-Point) come parte delle impostazioni dei criteri di conferenza esistenti. Tuttavia, consente o blocca i trasferimenti di file per gli utenti, indipendentemente dal fatto che trasferiscono o meno file a un utente all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguendo la procedura seguente, è possibile bloccare i trasferimenti di file P2P con organizzazioni o partner federati.
-ms.openlocfilehash: e2a0bb2f250f89433c09566197df7a56efa7f64f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: In Skype for Business Online è possibile controllare i trasferimenti di file P2P (Point-to-Point) come parte delle impostazioni dei criteri di conferenza esistenti. Tuttavia, consente o blocca i trasferimenti di file per gli utenti, indipendentemente dal fatto che trasferiscono o meno file a un utente all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguendo la procedura seguente, è possibile bloccare i trasferimenti di file P2P con organizzazioni o partner federati.
+ms.openlocfilehash: e20cf0d5ff7a884e81fe2ee5de57ed026c53552e
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100622"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52240175"
 ---
 # <a name="block-point-to-point-file-transfers"></a>Bloccare i trasferimenti di file “punto a punto”
 
-In Skype for Business online è possibile controllare i trasferimenti di file P2P (Point-to-Point) come parte delle impostazioni dei criteri di conferenza esistenti. Tuttavia, consente o blocca i trasferimenti di file per gli utenti, indipendentemente dal fatto che trasferiscono o meno file a un utente all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguendo la procedura seguente, è possibile bloccare i trasferimenti di file P2P con organizzazioni o partner federati.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+In Skype for Business Online è possibile controllare i trasferimenti di file P2P (Point-to-Point) come parte delle impostazioni dei criteri di conferenza esistenti. Tuttavia, consente o blocca i trasferimenti di file per gli utenti, indipendentemente dal fatto che trasferiscono o meno file a un utente all'interno della stessa organizzazione o a un utente federato di un'altra organizzazione. Seguendo la procedura seguente, è possibile bloccare i trasferimenti di file P2P con organizzazioni o partner federati.
   
  Uno scenario molto comune è quando si vuole consentire agli utenti interni di usare il trasferimento di file P2P ma bloccare il trasferimento di file con partner federati. Per questo scenario, è necessario eseguire le seguenti operazione:
   
@@ -40,7 +42,7 @@ Per altre informazioni su queste impostazioni, [fare clic qui.](/previous-versio
   
 Se un utente federato esterno all'organizzazione prova a inviare un file a un utente a cui è stato applicato il criterio, riceverà un **errore Trasferimento non** riuscito. Inoltre, se un utente prova a inviare un file, riceverà un **messaggio di errore Trasferimento file disattivato.**
   
-Per farlo funzionare, l'utente deve usare una versione supportata di un'app Skype for Business 2016 a scelta che la supporta. È necessaria la versione minima seguente del client Skype for Business 2016 A scelta:
+Per eseguire questa operazione, l'utente deve usare una versione supportata di un'app a Skype for Business A scelta 2016 che la supporta. È necessaria la versione minima di Skype for Business 2016 A scelta del client:
   
 |**Tipo**|**Data di rilascio**|**Versione**|**Build**|
 |:-----|:-----|:-----|:-----|
@@ -49,15 +51,15 @@ Per farlo funzionare, l'utente deve usare una versione supportata di un'app Skyp
 |Deferred Channel  <br/> |2/22/2017  <br/> |16.0.7369.2118  <br/> |Versione 1609 (Build 7369.2118)  <br/> |
    
 > [!CAUTION]
-> Gli utenti che usano versioni precedenti delle app Skype for Business per Windows o i client Mac saranno comunque in grado di trasferire i file. 
+> Gli utenti che usano versioni precedenti di Skype for Business Windows app o client Mac saranno comunque in grado di trasferire i file. 
   
 ## <a name="start-windows-powershell"></a>Avviare Windows PowerShell
 
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'ultimo modulo di PowerShell di Teams. Se si usa l'ultima versione pubblica di Teams PowerShell, non è necessario installare Skype for Business Online Connector.
-1. Installare il [modulo di PowerShell di Teams.](/microsoftteams/teams-powershell-install)
+> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente. Se si usa la versione pubblica più recente Teams PowerShell, non è necessario installare Skype for Business Online Connector.
+1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
     
-2. Aprire un Windows PowerShell comando ed eseguire i comandi seguenti: 
+2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
 
     ```powershell
    # When using Teams PowerShell Module
@@ -67,7 +69,7 @@ Per farlo funzionare, l'utente deve usare una versione supportata di un'app Skyp
    Connect-MicrosoftTeams -Credential $credential
    ```
    
-   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connettersi a tutti i servizi [di Microsoft 365 o Office 365 in](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) un'unica finestra di Windows PowerShell o Configurare il [computer](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)per Windows PowerShell .
+   Per altre informazioni sull'avvio di Windows PowerShell, vedere Connessione a tutti i servizi Microsoft 365 o Office 365 in un'unica finestra [di Windows PowerShell](/microsoft-365/enterprise/connect-to-all-microsoft-365-services-in-a-single-windows-powershell-window) o Configurare il [computer](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)per Windows PowerShell .
     
 ## <a name="disable-p2p-file-transfers-for-your-organization"></a>Disabilitare i trasferimenti di file P2P per l'organizzazione
 
@@ -91,9 +93,9 @@ New-CsExternalUserCommunicationPolicy -Identity BlockExternalFT -EnableP2PFileTr
 Grant-CsExternalUserCommunicationPolicy -PolicyName BlockExternalFT -Identity amosm@contoso.com
 ```
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
-- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business online con un unico punto di amministrazione che può semplificare il lavoro quotidiano, quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+- Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

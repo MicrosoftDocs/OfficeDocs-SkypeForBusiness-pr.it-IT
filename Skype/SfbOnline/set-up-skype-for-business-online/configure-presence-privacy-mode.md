@@ -20,31 +20,33 @@ ms.custom:
 - Setup
 - ms.lync.lac.OrgPresencePrivacy
 description: 'Scopri come configurare la modalità di privacy per gli utenti in modo che possano controllare meglio il modo in cui le persone vedono la loro disponibilità. '
-ms.openlocfilehash: 0b708c86d2693228ad7a613755a181fff5b3743d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f8589dfb648693f0c0c4331a1a16119a3d7fe748
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51093470"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52239953"
 ---
 # <a name="configure-presence-privacy-mode"></a>Configurare la modalità di privacy della presenza
 
-> [!IMPORTANT]
-> L'interfaccia di amministrazione di Microsoft Teams ha sostituito l'interfaccia di amministrazione di Skype for Business (portale legacy). Tutte le impostazioni per la gestione di Skype for Business sono ora disponibili nell'interfaccia di amministrazione di Teams. Per gestire le funzionalità di Skype for Business nell'interfaccia di amministrazione di Teams, è necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) dell'amministratore globale o dell'amministratore di Skype for Business. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-L'impostazione presenza di Skype for Business online offre alle persone un maggiore controllo su chi può vedere se sono disponibili, in una riunione o fuori sede. Per informazioni dettagliate sulle impostazioni di presenza e privacy di Skype for Business, vedi [Configurare la presenza in Skype for Business online.](configure-presence-in-skype-for-business-online.md) 
+> [!IMPORTANT]
+> L Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la Skype for Business sono ora disponibili nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+
+L Skype for Business presenza online offre agli utenti un maggiore controllo su chi può vedere se sono disponibili, in una riunione o fuori sede. Per informazioni dettagliate sulle Skype for Business di presenza e privacy, vedere Configurare la presenza [in Skype for Business Online.](configure-presence-in-skype-for-business-online.md) 
   
 ## <a name="choose-the-default-online-presence-setting-for-everyone-in-your-organization"></a>Scegliere l'impostazione della presenza online predefinita per tutti gli utenti dell'organizzazione
 <a name="__top"> </a>
 
-1. Passare all'interfaccia di amministrazione di Skype for Business online > **organizzazione > Generale**.
+1. Passare all'interfaccia di amministrazione di Skype for Business Online > **organizzazione > Generale**.
     
 2. In **Modalità privacy presenza** scegliere l'impostazione e quindi fare clic su **Salva.**
     
-|**Impostazione**|**Chi può visualizzare la presenza di un utente**|
+|**Impostazione**|**Who possibile visualizzare la presenza di un utente**|
 |:-----|:-----|
 |**Visualizza automaticamente le informazioni sulla presenza** <br/> |Qualunque utente di Skype for Business non appartenente al gruppo di privacy **Esterno** o **Bloccato**. <br/> |
-|**Visualizzare le informazioni sulla presenza solo ai contatti di un utente** <br/> |Chiunque nell'elenco contatti di un utente non appartenga al **gruppo di** **privacy** Esterno o Bloccato. <br/> I singoli utenti possono modificare questa impostazione nella finestra di dialogo **Opzioni di** Skype for Business. <br/> |
+|**Visualizzare le informazioni sulla presenza solo ai contatti di un utente** <br/> |Chiunque nell'elenco contatti di un utente non appartenga al **gruppo di** **privacy** Esterno o Bloccato. <br/> I singoli utenti possono modificare questa impostazione nella Skype for Business **finestra di dialogo** Opzioni. <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
