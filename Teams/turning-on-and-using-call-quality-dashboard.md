@@ -23,20 +23,20 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità delle chiamate e ottenere report di riepilogo sulla qualità delle chiamate.
-ms.openlocfilehash: 2d671de0e2ddc5d4c2a4e321cf90e2e2f0dbe770
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c71cb25732a99f207467a988ad0db54c959d15f4
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51162697"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52254269"
 ---
 # <a name="set-up-call-quality-dashboard-cqd"></a>Configurare call quality dashboard (CQD)
 
-Aprire microsoft Call Quality Dashboard (CQD) all'indirizzo [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) (accedere con le credenziali di amministratore). Oppure vai all'interfaccia di amministrazione di Teams e seleziona **Call Quality Dashboard**. 
+Aprire microsoft Call Quality Dashboard (CQD) all'indirizzo [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) (accedere con le credenziali di amministratore). Oppure vai all'interfaccia di Teams e seleziona **Call Quality Dashboard**. 
 
-:::image type="content" source="media/turning-on-and-using-call-quality-dashboard3.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'interfaccia di amministrazione di Teams":::
+:::image type="content" source="media/turning-on-and-using-call-quality-dashboard3.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione":::
 
-Nella pagina visualizzata fare clic su **Accedi e** immettere l'account amministratore globale o le informazioni sull'account di amministratore del servizio Microsoft Teams. Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i dati. Tenere presente che potrebbero essere sufficienti una o più ore per elaborare dati sufficienti per visualizzare risultati significativi nei report.
+Nella pagina visualizzata fare clic su Accedi **e** immettere l'account amministratore globale o le Microsoft Teams dell'account amministratore. Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i dati. Tenere presente che potrebbero essere sufficienti una o più ore per elaborare dati sufficienti per visualizzare risultati significativi nei report.
 
 CQD mostra la qualità delle chiamate e delle riunioni, a livello di organizzazione, per Microsoft Teams, Skype for Business Online e Skype for Business Server 2019. 
 
@@ -51,23 +51,23 @@ Assegnare [ruoli](/microsoft-365/admin/add-users/about-admin-roles) per l'access
 Se si vuole che gli utenti non amministratori, ad esempio tecnici del supporto tecnico e agenti helpdesk, usino call quality dashboard, è possibile assegnare a tali utenti uno dei ruoli seguenti, che consente l'accesso a CQD. 
 
 
-|  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Caricare i dati dell'edificio  |
+|  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Upload di edificio  |
 |---------|:-------:|:-------:|:-------:|:-------:|
 |Amministratore globale     |Sì         |Sì         |Sì         |Sì         |
-|Amministratore del servizio Teams     |Sì         |Sì         |Sì         |Sì         |
+|Amministratore di Teams     |Sì         |Sì         |Sì         |Sì         |
 |Amministratore comunicazioni Teams     |Sì         |Sì         |Sì         |Sì         |
 |Tecnico supporto comunicazioni Teams     |Sì         |Sì         |Sì         |No         |
-|Specialista del supporto tecnico di Teams Communications     |Sì         |No         |Sì         |No         |
-|Amministratore di Skype for Business     |Sì         |Sì         |Sì         |Sì         |
+|Teams Specialista del supporto per le comunicazioni     |Sì         |No         |Sì         |No         |
+|Skype for Business Amministratore     |Sì         |Sì         |Sì         |Sì         |
 |Lettore globale |Sì         |Sì         |Sì         |No         |
 |Lettore report<sup>1</sup>     |Sì         |No         |Sì         |No         |
 
-<sup>1</sup> Oltre a leggere i report CQD, [](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) l'utilità per la lettura dei report può visualizzare tutti i report attività nell'interfaccia di amministrazione e tutti i report del pacchetto di contenuto [Microsoft 365 Adoption.](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+<sup>1</sup> Oltre a leggere i report CQD, [](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) l'utilità per la lettura dei report può visualizzare tutti i report attività nell'interfaccia di amministrazione e tutti i report del pacchetto di [contenuto Microsoft 365 Adoption.](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
 
 > [!NOTE]
 > Se l'interfaccia [EUII (informazioni](CQD-data-and-reports.md#euii-data) identificabili dall'utente finale) non è visualizzata e si ha uno dei ruoli autorizzati a visualizzare queste informazioni, tenere presente che CQD mantiene solo EUII per 28 giorni. Qualsiasi elemento più vecchio di 28 giorni viene eliminato.
 
-Per altre informazioni su questi ruoli, vedere Informazioni sui ruoli di amministratore [di Office 365.](/office365/admin/add-users/about-admin-roles)
+Per altre informazioni su questi ruoli, vedere [Informazioni sui Office 365 di amministratore.](/office365/admin/add-users/about-admin-roles)
 
 
 Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i dati. A partire da dicembre 2019 è ancora possibile accedere alla versione precedente di CQD (cqd.lync.com), anche se il portale legacy offre un collegamento all'ultima versione di CQD (cqd.teams.microsoft.com). Alla fine, la versione precedente di CQD verrà rimossa. A partire dal 1° luglio 2020, la versione precedente di CQD accede ai dati dall'ultima versione di CQD.
@@ -82,7 +82,7 @@ Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i da
 
 ## <a name="use-power-bi-to-analyze-cqd-data"></a>Usare Power BI per analizzare i dati CQD
 
-Novità di gennaio 2020: [Scaricare i modelli di query di Power BI per CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) Modelli di Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati CQD.
+Novità di gennaio 2020: [Scaricare Power BI di query per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true). Modelli Power BI personalizzabili che è possibile usare per analizzare e segnalare i dati CQD.
 
 Leggere [Usare Power BI per analizzare i dati CQD](CQD-Power-BI-query-templates.md) per altre informazioni.
 
@@ -93,7 +93,7 @@ Leggere [Usare Power BI per analizzare i dati CQD](CQD-Power-BI-query-templates.
 
 [Che cos'è CQD?](CQD-what-is-call-quality-dashboard.md)
 
-[Caricare i dati del tenant e dell'edificio](CQD-upload-tenant-building-data.md)
+[Upload tenant e edificio](CQD-upload-tenant-building-data.md)
 
 [Dati e report CQD](CQD-data-and-reports.md)
 

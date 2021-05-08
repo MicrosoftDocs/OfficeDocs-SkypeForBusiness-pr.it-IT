@@ -21,22 +21,24 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere i passaggi per creare un numero di telefono predefinito affinché i chiamanti possano partecipare ad una riunione di Skype for Business online. '
-ms.openlocfilehash: 956c2fa23f61f0c0e24cd1c2a0802bd3f1397bb1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 84bf0240270bfc9633f9d845130a6049d36c8cad
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51113222"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237732"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare in Skype for Business online i numeri di telefono inclusi negli inviti
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
 > Per informazioni sui numeri di telefono inclusi negli inviti di Microsoft Teams, vedere[Impostare i numeri di telefono inclusi negli inviti di Microsoft Teams](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams).
 
-Le audioconferenze in Microsoft 365 o Office 365 consentono agli utenti dell'organizzazione di creare riunioni Skype for Business e quindi di accedere a tali riunioni tramite telefono. In Microsoft 365 e Office 365 è possibile usare un bridge di audioconferenza Microsoft o un bridge di audioconferenza di terze parti ospitato da un provider di servizi di audioconferenza (ACP) approvato.
+I servizi di audioconferenza Microsoft 365 o Office 365 consentono agli utenti dell'organizzazione di creare riunioni Skype for Business e quindi consentire agli utenti di accedere a tali riunioni usando un telefono. In Microsoft 365 e Office 365, è possibile usare un bridge di audioconferenza Microsoft o un bridge di audioconferenza di terze parti ospitato da un provider di servizi di audioconferenza (ACP) approvato.
   
 > [!NOTE]
-> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Se stai cercando di vedere se sono disponibili numeri di telefono per l'accesso esterno nella tua area geografica o paese/area geografica, usa l'interfaccia di amministrazione **Di Skype for Business** Numeri di telefono vocali , fai clic su Aggiungi e quindi su Nuovi numeri di  >    >   **servizio**.  Utilizza gli elenchi **Paese/area geografica**, **Stato/regione** e **Città** per filtrare la ricerca. > Inoltre, se stai cercando numeri di servizio gratuiti, seleziona **Numero verde** dall'elenco **Stato/regione**.
+> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Se si sta cercando di verificare se sono disponibili numeri di telefono per l'accesso esterno nella propria area geografica o paese/area geografica, usare l'interfaccia di amministrazione di **Skype for Business**  >  **Numeri**  >  **vocali Telefono**,  fare clic su Aggiungi e quindi su Nuovi numeri di servizio . Utilizza gli elenchi **Paese/area geografica**, **Stato/regione** e **Città** per filtrare la ricerca. > Inoltre, se stai cercando numeri di servizio gratuiti, seleziona **Numero verde** dall'elenco **Stato/regione**.
   
 Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
   
@@ -75,14 +77,14 @@ Un ponte per conferenze offre un insieme di numeri di telefono di accesso estern
    - **Microsoft è il provider**: usa gli elenchi **Numero a pagamento predefinito** e **Numero verde predefinito** per selezionare i numeri predefiniti per l'utente.
     
      > [!NOTE]
-     > Almeno un numero verde deve essere assegnato al ponte per conferenze prima che possa essere impostato come numero verde predefinito per un utente. Per ottenere un numero verde, consulta Ottenere i numeri di servizio [per Skype for Business.](/microsoftteams/getting-service-phone-numbers) 
+     > Almeno un numero verde deve essere assegnato al ponte per conferenze prima che possa essere impostato come numero verde predefinito per un utente. Per ottenere un numero verde, vedere Ottenere numeri di telefono di [servizio per Skype for Business](/microsoftteams/getting-service-phone-numbers). 
   
    - **Il provider è una terza parte**: utilizza i campi **Numero a pagamento** e **Numero verde** per immettere i numeri per l'utente.
 
 
 ## <a name="reset-audio-conferencing-phone-numbers"></a>Reimpostare i numeri di telefono per Audioconferenza
 
-1. **Nell'interfaccia di amministrazione di Skype for Business** scegliere **Audioconferenza.**
+1. **Nell'Skype for Business di amministrazione scegliere** **Audioconferenza.**
     
 2. Nella parte superiore della pagina, scegli **Utenti**.
     

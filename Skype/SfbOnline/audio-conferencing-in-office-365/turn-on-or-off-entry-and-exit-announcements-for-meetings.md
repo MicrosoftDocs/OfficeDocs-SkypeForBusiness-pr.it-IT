@@ -21,14 +21,16 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come attivare gli annunci di entrata e uscita per le riunioni in Skype for Business Online tramite l'interfaccia di amministrazione di Skype for Business. "
-ms.openlocfilehash: 5165facfdc4de040b24b199cd99a1bb42565a76b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f097563ca8dce47277a44573f2af66ed7f1539dd
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111932"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237572"
 ---
 # <a name="turn-on-or-off-entry-and-exit-announcements-for-meetings-in-skype-for-business-online"></a>Attivare o disattivare gli annunci di entrata e uscita per le riunioni in Skype for Business online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
 > Per informazioni sugli annunci di entrata e uscita in Microsof Teamst, consulta [Attivazione o disattivazione degli annunci di entrata e uscita per le riunioni in Microsoft Teams](/MicrosoftTeams/turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams).
@@ -42,7 +44,7 @@ Il ponte per audioconferenze risponde a una chiamata di un utente che si collega
   
 ## <a name="setting-meeting-join-options"></a>Impostazione delle opzioni di partecipazione alla riunione
     
-1. **Nell'interfaccia di amministrazione di Skype for Business,** nel riquadro di spostamento sinistro, vai a Impostazioni bridge Microsoft per   >  **audioconferenze.**
+1. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a Impostazioni bridge Microsoft **per audioconferenze.**  >  
     
 2. Su **Esperienza di partecipazione alle riunioni**, seleziona o deseleziona **Abilita l'attivazione di annunci di entrata e uscita per la riunione**. Questa opzione è selezionata per impostazione predefinita. Se si deseleziona l’opzione, gli utenti che partecipano alla riunione non verranno avvisati quando un utente entra o esce dalla riunione.
     
@@ -63,7 +65,7 @@ Il ponte per audioconferenze risponde a una chiamata di un utente che si collega
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

@@ -20,23 +20,25 @@ f1.keywords:
 ms.custom:
 - Licensing
 - LIL_Placement
-description: 'Informazioni sulle licenze e sulle funzionalità per i piani gov, EDU e organizzazioni no profit. '
-ms.openlocfilehash: ea3ac1e76f16de7a5cc7d9e32f16299bc348a613
-ms.sourcegitcommit: 19f534bfafbc74dbc2d381672b0650a3733cb982
+description: 'Informazioni sulle licenze e le funzionalità dei componenti aggiuntivi per i piani GOV, EDU e organizzazioni no profit. '
+ms.openlocfilehash: a9a0ca689c3e67927ee2d03636da296bbdf35c9a
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2020
-ms.locfileid: "41692501"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237422"
 ---
 # <a name="gov-edu-and-non-profit-organizations"></a>Organizzazioni GOV, EDU e no profit
 
-La maggior parte delle funzionalità di Skype for Business è disponibile per le organizzazioni .gov, .edu e no profit. Per altri dettagli, vedere la tabella seguente.
+[!INCLUDE [sfbo-retirement](../../../Hub/includes/sfbo-retirement.md)]
+
+La maggior Skype for Business sono disponibili per le organizzazioni con estensione gov, edu e no profit. Per altri dettagli, vedere la tabella seguente.
 
 |**Funzionalità Skype for Business**|**Disponibile per .GOV (CCG)**|**Disponibile per .GOV (non CCG)**|**Disponibile per .EDU**|**Disponibile per organizzazioni no profit**|
 |:-----|:-----|:-----|:-----|:-----|
 |Trasmissione riunione Skype  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |
-|Audioconferenze Skype for Business  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Sistema telefonico Office 365  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
-|Piano per chiamate Office 365  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Skype for Business Audioconferenza  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Sistema telefonico di Office 365  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
+|Office 365 Piano chiamate  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |Sì  <br/> |
    
 Consultare questo post del blog:[Funzionalità avanzate di Office 365 ora disponibili per i clienti U.S. Government Community Cloud.](https://blogs.office.com/2017/01/17/advanced-office-365-capabilities-now-available-to-u-s-government-community-customers/)

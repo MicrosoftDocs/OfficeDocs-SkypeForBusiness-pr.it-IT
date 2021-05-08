@@ -1,5 +1,5 @@
 ---
-title: Reimpostare il PIN di audioconferenza in Skype for Business online
+title: Reimpostare il PIN di audioconferenza in Skype for Business Online
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,20 +20,22 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
-description: 'Informazioni sui PIN e su come reimpostarli in Skype for Business online. '
-ms.openlocfilehash: 4b042775a5a0525099c0116d7d55d0092f560cdf
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Informazioni sui PIN e su come reimpostarli in Skype for Business Online. '
+ms.openlocfilehash: 95c2d19a7d867d97ab977b722648de1373a4739b
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51114202"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237752"
 ---
-# <a name="reset-the-audio-conferencing-pin-in-skype-for-business-online"></a>Reimpostare il PIN di audioconferenza in Skype for Business online
+# <a name="reset-the-audio-conferencing-pin-in-skype-for-business-online"></a>Reimpostare il PIN di audioconferenza in Skype for Business Online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
 > Per informazioni sulla reimpostazione del PIN di audioconferenza in Microsoft Teams, vedere [reimpostare il PIN di audioconferenza di Microsoft Teams](/MicrosoftTeams/reset-the-audio-conferencing-pin-in-teams).
 
-Un PIN è un codice costituito da numeri creati per ogni utente di Skype for Business abilitato per le audioconferenze. I PIN di audioconferenza vengono usati dagli organizzatori della riunione per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se usano l'app Skype for Business per avviare la riunione, non è necessario un PIN. Se gli utenti dimenticano il PIN e non lo trovano nel messaggio di posta elettronica inviato quando sono stati abilitati per le audioconferenze, un amministratore può reimpostare il PIN oppure reimpostare il PROPRIO PIN.
+Un PIN è un codice costituito da numeri creati per ogni Skype for Business utente abilitato per le audioconferenze. I PIN di audioconferenza vengono usati dagli organizzatori della riunione per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se usano l'app Skype for Business per avviare la riunione, non è necessario un PIN. Se gli utenti dimenticano il PIN e non lo trovano nel messaggio di posta elettronica inviato quando sono stati abilitati per le audioconferenze, un amministratore può reimpostare il PIN oppure reimpostare il PROPRIO PIN.
   
 Le riunioni possono essere avviate quando un utente autenticato partecipa usando l'app Skype for Business o quando l'organizzatore partecipa con il proprio PIN tramite telefono. Se è richiesto un PIN per avviare la riunione tramite telefono, per impostazione predefinita tutti gli utenti che partecipano alla riunione tramite telefono prima dell'inizio della riunione dovranno rimanere nella sala di attesa ascoltando musica fino all'inizio della riunione. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
   
@@ -72,7 +74,7 @@ Un utente può reimpostare un PIN utilizzando l'opzione **Reimposta PIN** nella 
     
 - Quando si imposta una audioconferenza, impostare le cifre necessari per il PIN nella propria organizzazione. I PIN possono essere da 4 a 12 cifre, il valore predefinito è 5. Se si modifica l'impostazione della lunghezza del PIN, l'impostazione viene applicata solo sui PIN generati successivamente e non viene applicata per l'impostazione del PIN degli utenti precedetemente abilitati per le audioconferenze. Vedere [impostare la lunghezza del PIN per le riunioni in audioconferenze](Set-the-PIN-length-for-Audio-Conferencing-meetings.md).
     
-- Il messaggio di posta elettronica per impostazione predefinita verrà impostato sull'indirizzo SMTP principale di Microsoft 365 o Office 365 dell'utente. È possibile inviare un messaggio di posta elettronica a un indirizzo non Microsoft 365 o non di Office 365, ad esempio un indirizzo di posta elettronica Hotmail o MSN. È possibile sostituire l'indirizzo di posta elettronica predefinito tramite Windows PowerShell. Questa opzione è utile se gli utenti non hanno una cassetta postale di Exchange in Microsoft 365 o Office 365.
+- Per impostazione predefinita, il messaggio di posta elettronica verrà Microsoft 365 o Office 365'indirizzo SMTP principale dell'utente. È possibile inviare un messaggio di posta elettronica a un indirizzo di posta elettronica non Microsoft 365 o non Office 365, ad esempio un indirizzo di posta elettronica Hotmail o MSN. È possibile sostituire l'indirizzo di posta elettronica predefinito tramite Windows PowerShell. Questa opzione è utile se gli utenti non hanno una cassetta postale Exchange in Microsoft 365 o Office 365.
     
 - Per ignorare l'indirizzo utente predefinito in cui viene inviato il messaggio di posta elettronica, l'amministratore del tenant può usare il cmdlet seguente: Set-CsOnlineDialInConferencingUser -amos.marble -ResetLeaderPIN -SendEmail -SendEmailToAddress "u@hotmail.com". Il parametro SendEmail è necessario per sostituire l'indirizzo di posta elettronica dell'utente.
     

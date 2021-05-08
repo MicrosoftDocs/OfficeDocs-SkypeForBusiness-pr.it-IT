@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di Anteprima di Skype Meeting Broadcast
+title: Riunione Skype Impostazioni di Anteprima trasmissione
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,17 +20,19 @@ f1.keywords:
 ms.custom:
 - SMB
 - ms.lync.lac.BroadcastMeetingsPreview
-description: Il programma skype for business per l'anteprima dei clienti ti offre accesso anticipato a nuovi prodotti e funzionalità. Consente all'organizzazione di ottenere un'anteprima delle novità in arrivo, testare le nuove funzionalità del proprio ambiente e inviare feedback prima di rilasciare le build dei prodotti al pubblico generale. Per saperne di più, vedi Anteprima di Skype for Business.
-ms.openlocfilehash: 37c597e2c668bcfb77c928d3c379f9109caf1c49
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Il Skype for Business anteprima del cliente offre accesso anticipato a nuovi prodotti e funzionalità. Consente all'organizzazione di ottenere un'anteprima delle novità in arrivo, testare le nuove funzionalità del proprio ambiente e inviare feedback prima di rilasciare le build dei prodotti al pubblico generale. Per altre informazioni, vedere Skype for Business anteprima.
+ms.openlocfilehash: d713e3225ed963beb1b201d515db558513020d39
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106502"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237502"
 ---
-# <a name="skype-meeting-broadcast-preview-settings"></a>Impostazioni di Anteprima di Skype Meeting Broadcast
+# <a name="skype-meeting-broadcast-preview-settings"></a>Riunione Skype Impostazioni di Anteprima trasmissione
 
-Il programma skype for business per l'anteprima dei clienti ti offre accesso anticipato a nuovi prodotti e funzionalità. Consente all'organizzazione di ottenere un'anteprima delle novità in arrivo, testare le nuove funzionalità del proprio ambiente e inviare feedback prima di rilasciare le build dei prodotti al pubblico generale. Per saperne di più, vedi [Anteprima di Skype for Business.](https://www.skypepreview.com/)
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+Il Skype for Business anteprima del cliente offre accesso anticipato a nuovi prodotti e funzionalità. Consente all'organizzazione di ottenere un'anteprima delle novità in arrivo, testare le nuove funzionalità del proprio ambiente e inviare feedback prima di rilasciare le build dei prodotti al pubblico generale. Per altre informazioni, vedere Skype for Business [anteprima.](https://www.skypepreview.com/)
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)

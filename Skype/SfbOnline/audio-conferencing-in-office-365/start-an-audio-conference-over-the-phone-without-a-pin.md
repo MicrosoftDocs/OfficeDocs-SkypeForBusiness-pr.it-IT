@@ -21,14 +21,16 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione dall'interfaccia di amministrazione di Skype for Business o utilizzando uno script di PowerShell. "
-ms.openlocfilehash: 6eb62e2a2a295644185b3f0e6fd424749dc5bf56
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 655f61c449554a9044095a5b8ef8bd8ef2940bc4
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111942"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237592"
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin-in-skype-for-business-online"></a>Avviare un'audioconferenza tramite telefono senza un PIN in Skype for Business online
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
 > Per informazioni sull'avvio di un'audioconferenza senza un PIN in Microsoft Teams, consulta [Avviare un'audioconferenza tramite telefono senza un PIN in Microsoft Teams](/MicrosoftTeams/start-an-audio-conference-over-the-phone-without-a-pin-in-teams).
@@ -37,14 +39,14 @@ Può essere frustrante per gli utenti che a una riunione a una riunione si svolg
   
 Se l'organizzatore della riunione chiama per impostazione predefinita, è necessario un PIN per avviare una riunione. È possibile configurarla in modo che chiunque possa accedere a una riunione e non venga richiesto un PIN per avviare la riunione. Puoi usare l'interfaccia di amministrazione di Skype for Business per abilitare o disabilitare questa impostazione per un singolo utente.
   
-Se qualcuno ha avviato la riunione dall'app Skype for Business, non è necessario un PIN per l'organizzatore della riunione. Il PIN è necessario solo quando l'organizzatore della riunione partecipa alla riunione tramite telefono. Il PIN per le riunioni viene inviato all'utente audio quando gli viene assegnata la licenza **di audioconferenza** e viene abilitato per le audioconferenze. Vedere [Inviare un messaggio di posta](send-an-email-to-a-user-with-their-dial-in-information.md) elettronica a un utente con le informazioni relative alle audioconferenze e i messaggi di posta elettronica che vengono inviati automaticamente agli utenti quando cambiano le [impostazioni di audioconferenza.](emails-sent-to-users-when-their-settings-change.md)
+Non è necessario un PIN per l'organizzatore della riunione se qualcuno ha avviato la riunione dall'app Skype for Business riunione. Il PIN è necessario solo quando l'organizzatore della riunione partecipa alla riunione tramite telefono. Il PIN per le riunioni viene inviato all'utente audio quando gli viene assegnata la licenza **di audioconferenza** e viene abilitato per le audioconferenze. Vedere [Inviare un messaggio di posta](send-an-email-to-a-user-with-their-dial-in-information.md) elettronica a un utente con le informazioni relative alle audioconferenze e i messaggi di posta elettronica che vengono inviati automaticamente agli utenti quando cambiano le [impostazioni di audioconferenza.](emails-sent-to-users-when-their-settings-change.md)
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
   
 ## <a name="enable-or-disable-anonymous-callers-from-joining-a-meeting"></a>Abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione
     
-1. **Nell'interfaccia di amministrazione di Skype for Business,** nella barra di spostamento sinistra, vai a Utenti di **audioconferenza.**  >   
+1. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a **Utenti di servizi di audioconferenza.**  >   
     
 2. Nell'elenco selezionare l'utente e nel riquadro Azioni fare clic su **Modifica.** 
     

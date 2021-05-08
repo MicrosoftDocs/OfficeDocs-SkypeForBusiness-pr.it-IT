@@ -23,14 +23,16 @@ ms.custom:
 - LIL_Placement
 - O365P_DialInConfDesc
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: bfd9c9ec31736b0f7fc16f15a907c87406113871
-ms.sourcegitcommit: 36f7ec432090683aedb77a5bd7856e1b10af2a81
+ms.openlocfilehash: ce5d80b8be0fe2e6983229be8185bcdf02e06ab6
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44163945"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237642"
 ---
 # <a name="set-up-audio-conferencing-for-skype-for-business"></a>Configurare il servizio Audioconferenza per Skype for Business
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 A volte gli utenti di un'organizzazione potrebbero avere la necessità di accedere a una riunione tramite telefono. In questo caso è possibile usare la funzionalità di conferenza telefonica disponibile in Skype for Business, che consente agli utenti di accedere alle riunioni di Skype for Business usando un telefono, invece di usare la app di Skype for Business su un dispositivo mobile o un PC. 
   
@@ -50,7 +52,7 @@ Vai a [Disponibilità di audioconferenza e Piani di chiamata per Paese e area ge
     >[!NOTE] 
     > Il servizio Audioconferenza è incluso nelle licenze Office 365 Enterprise E5 e come componente aggiuntivo.
         
-2. Dopo aver acquistato le licenze per Audioconferenza, è necessario assegnarle agli utenti dell'organizzazione che intendono pianificare o coordinare riunioni. Vedere Assegnare o rimuovere licenze per [Microsoft 365 Apps per](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) le aziende acquistate agli utenti dell'organizzazione che inducono o pianificano le riunioni.
+2. Dopo aver acquistato le licenze per Audioconferenza, è necessario assegnarle agli utenti dell'organizzazione che intendono pianificare o coordinare riunioni. Vedere [Assegnare o rimuovere licenze Microsoft 365 Apps for business](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) acquistate alle persone dell'organizzazione che pianificano o conducono riunioni.
     
 3. È inoltre consigliabile assegnare licenze di Credito per la comunicazione (non costano nulla) agli stessi utenti a cui sono state assegnate le licenze nel passo precedente. Per altre informazioni sulla configurazione di Credito per la comunicazione, vedere [Configurare Credito per la comunicazione per l'organizzazione](/microsoftteams/set-up-communications-credits-for-your-organization).
     
@@ -64,7 +66,7 @@ Non è possibile utilizzare numeri di telefono per gli utenti per l'Audioconfere
   
 - **Usare l'interfaccia di amministrazione di Skype for Business**. In alcuni paesi/aree geografiche è possibile ottenere i numeri del servizio per i bridge di conferenza usando l'interfaccia di amministrazione di Skype for Business. Vedere [Recupero dei numeri di telefono del servizio](/microsoftteams/getting-service-phone-numbers).
     
-- **Trasferire i numeri del servizio esistenti**. Per trasferire i numeri esistenti dal gestore o provider di servizi corrente a Microsoft 365 o Office 365. Per ulteriori informazioni su come eseguire questa operazione, è possibile consultare [Trasferire numeri di telefono in Teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
+- **Trasferire i numeri del servizio esistenti**. Per trasferire o trasferire i numeri esistenti dal provider di servizi corrente o dal gestore telefonico a Microsoft 365 o Office 365. Per ulteriori informazioni su come eseguire questa operazione, è possibile consultare [Trasferire numeri di telefono in Teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
   
 - **Usare un modulo di richiesta per nuovi numeri**. A seconda del paese/area geografica, talvolta non è possibile ottenere nuovi numeri del servizio tramite l'interfaccia di amministrazione Skype for Business oppure sono necessari numeri di telefono o prefissi specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization). 
     

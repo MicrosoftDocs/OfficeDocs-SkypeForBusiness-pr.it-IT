@@ -18,24 +18,26 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - SMB
-description: Informazioni sulla funzionalità Skype Meeting Broadcast di Skype for Business online che consente di pianificare, produrre e trasmettere riunioni o eventi a un pubblico online di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: 513b6f8d677550557293855389eff29dc61c21c1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Informazioni sulla funzionalità Riunione Skype Broadcast di Skype for Business Online che consente di pianificare, produrre e trasmettere riunioni o eventi a un pubblico online di grandi dimensioni fino a 10.000 partecipanti.
+ms.openlocfilehash: da27110313765bb50df92e3bafb6f09ceae5f301
+ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106512"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "52237552"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
-Dopo aver [abilitato Skype Meeting Broadcast](enable-skype-meeting-broadcast.md) Skype Meeting Broadcast, è necessario configurare la rete. Eseguire questo passaggio se si vogliono tenere webinar e altre trasmissioni per utenti esterni all'azienda.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+Dopo aver [abilitato Riunione Skype broadcast Riunione Skype](enable-skype-meeting-broadcast.md) broadcast, è necessario configurare la rete. Eseguire questo passaggio se si vogliono tenere webinar e altre trasmissioni per utenti esterni all'azienda.
 
 > [!IMPORTANT]
-> Skype for Business online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
+> Skype for Business Online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
 
 Se non si ha esperienza nella configurazione del firewall, è consigliabile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
 
-Per ignorare questo passaggio e aggiungere un'altra attività alla federazione in modo da poterle invitare a trasmettere, seguire la procedura descritta in Consentire agli utenti di contattare utenti [esterni di Skype for Business.](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md)
+Per ignorare questo passaggio e aggiungere invece un'altra azienda alla [federazione](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md)in modo da poterle invitare alle trasmissioni, seguire la procedura descritta in Consentire agli utenti di contattare utenti Skype for Business esterni .
 
 ## <a name="step-1-set-up-allowed-domains"></a>Passaggio 1: Configurare i domini consentiti
 
@@ -45,7 +47,7 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
  **Metodo 1: Usare l'interfaccia di amministrazione**
 
-1. Passare all'interfaccia di amministrazione e quindi nel riquadro di spostamento sinistro fare clic su Componenti aggiuntivi Servizi impostazioni e quindi scegliere Skype for  >  **&amp;** **Business.**
+1. Passare all'interfaccia di amministrazione e quindi nel riquadro di spostamento sinistro fare clic su componenti aggiuntivi Impostazioni Servizi e quindi scegliere  >  **&amp;** **Skype for Business**.
 
 2. Nella pagina **Condivisione esterna** in **Eccezioni** dominio selezionare Tutti i domini sono bloccati tranne **e** immettere i domini seguenti, separati da una virgola (,):
 
@@ -63,7 +65,7 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
  **Metodo 2: Usare Windows PowerShell**
 
-- Nel **menu Start fare clic con** il pulsante destro **Windows PowerShell** clic su Esegui **come amministratore.** Nella finestra **Windows PowerShell** digitare ogni riga e premere INVIO.
+- Nel **menu Start fare clic con** il pulsante destro del **mouse** Windows PowerShell e scegliere Esegui **come amministratore.** Nella finestra **Windows PowerShell** digitare ogni riga e premere INVIO.
 
   ```PowerShell
   $r = New-CsEdgeDomainPattern -Domain "noammeetings.lync.com"
@@ -89,15 +91,15 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
   Set-CsTenantFederationConfiguration -AllowedDomains $newAllowList
   ```
 
-## <a name="step-2-add-skype-meeting-broadcast-domains-urls-and-ip-addresses"></a>Passaggio 2: Aggiungere domini, URL e indirizzi IP Skype Meeting Broadcast
+## <a name="step-2-add-skype-meeting-broadcast-domains-urls-and-ip-addresses"></a>Passaggio 2: Aggiungere Riunione Skype broadcast, URL e indirizzi IP
 
-Il secondo passaggio del processo di configurazione consiste nell'aggiungere prima i domini necessari e quindi aggiungere gli indirizzi IP e gli URL necessari per il funzionamento di Skype Meeting Broadcast.
+Il secondo passaggio del processo di configurazione consiste nell'aggiungere prima i domini necessari e quindi aggiungere gli indirizzi IP e gli URL necessari per il funzionamento di Riunione Skype Broadcast.
 
-- **Aggiungere gli URL degli endpoint e** gli indirizzi IP di Skype for Business Online necessari per vedere quali sono necessari [qui.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_lyo)
+- **Aggiungere gli URL e gli indirizzi IP Skype for Business gli url** degli endpoint e degli indirizzi IP di Online per vedere quali sono necessari [qui.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_lyo)
 
-## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurare Skype Meeting Broadcast nelle distribuzioni ibride e nelle organizzazioni
+## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurare Riunione Skype broadcast nelle distribuzioni ibride e nelle organizzazioni
 
-Se si ha un'organizzazione Skype for Business Online e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype for Business Server 2015 e si hanno utenti sia online che locali, è necessario eseguire altre operazioni di configurazione oltre a quelle precedenti per consentire all'organizzazione locale di comunicare con Skype for Business Online e consentire a tutti gli utenti di partecipare a Skype Meeting Broadcast. Per sapere quali sono questi requisiti, consulta Configurare la distribuzione [locale per Skype Meeting Broadcast.](../../SfbServer/deploy/configure-skype-meeting-broadcast.md)
+Se si ha un'organizzazione di Skype for Business Online e una distribuzione locale di Lync Server 2010, Microsoft Lync Server 2013 e Skype for Business Server 2015 e si hanno utenti sia online che locali, è necessario eseguire altre operazioni di configurazione oltre a quelle precedenti per consentire all'organizzazione locale di comunicare con Skype for Business Online e consentire a tutti gli utenti di partecipare a una trasmissione Riunione Skype. Per sapere quali sono questi requisiti, vedere Configurare la distribuzione locale [per Riunione Skype Broadcast.](../../SfbServer/deploy/configure-skype-meeting-broadcast.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
