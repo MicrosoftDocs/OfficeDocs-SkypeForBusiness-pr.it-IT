@@ -23,13 +23,13 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Uso delle impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti.
-ms.openlocfilehash: 43ea3be7c8c8f99fdc762030ac526b4b068a4214
-ms.sourcegitcommit: 046b020cee8af00a1d0e5f5866f847d42e8ad9a5
+description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare tali impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
+ms.openlocfilehash: 09d821eb4a0ae6f1315ff5ff817c4b702512a974
+ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51712778"
+ms.lasthandoff: 05/08/2021
+ms.locfileid: "52282793"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestione dei criteri riunione in Teams
 
@@ -214,16 +214,6 @@ Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi,
 
 ![Le opzioni di registrazione](media/meeting-policies-recording.png)
 
-Osserviamo l'esempio seguente.
-
-|Utente |Criterio di riunione  |Consenti registrazione cloud |
-|---------|---------|---------|
-|Daniela | Globale   | Disattivato |
-|Amanda | CriterioRiunionePosizione1 | Attivato|
-|Luca (utente esterno) | Non applicabile | Non applicabile|
-
-Daniela, anche se fosse l’organizzatore non potrebbe registrare perché il suo criterio è disattivato. Amanda, che ha l’impostazione dei criteri abilitata, può registrare le riunioni, incluse quelle organizzate da Daniela. Se Amanda organizzasse la riunione, potrebbe registrarla. Tuttavia, Daniela che ha l’impostazione dei criteri disabilitata e Luca che è un utente esterno, non possono registrare la riunione.
-
 Per altre informazioni sulla registrazione di una riunione cloud, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
 ### <a name="mode-for-ip-audio"></a>Modalità per audio IP
@@ -232,7 +222,7 @@ La modalità per l'audio IP è un criterio per utente. Questa impostazione contr
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Audio in uscita e in arrivo abilitato**    |L'audio in uscita e in arrivo è consentito nella riunione. Questa è l'impostazione predefinita. |
+|**Audio in uscita e in arrivo abilitato**    |Per impostazione predefinita, sia l’audio in entrata che in uscita sono consentiti nella riunione. |
 |**Disattiva**     |L'audio in uscita e in arrivo è disattivato nella riunione.     |
 
 Se l'opzione è impostata su **Disabilitata** per un utente, tale utente può comunque pianificare e organizzare riunioni ma senza poter usare l'audio. Per partecipare a una riunione, deve connettersi telefonicamente tramite la rete PSTN (Public Switched Telephone Network) o partecipare tramite chiamata telefonica. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Audio in uscita e in arrivo abilitato** per impostazione predefinita. Nei client per dispositivi mobili di Teams, se questa impostazione è disabilitata, l'utente deve connettersi telefonicamente alla riunione tramite PSTN.
@@ -341,7 +331,7 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 ### <a name="screen-sharing-mode"></a>Modalità condivisione schermo
 
 > [!NOTE]
-> Questa funzionalità è ancora in fase di sviluppo. La condivisione dello schermo è un criterio per partecipante, tuttavia, può essere interessato dalle impostazioni di condivisione dello schermo dell'organizzatore, come descritto in questa sezione.
+> Questa caratteristica è ancora in fase di sviluppo. La condivisione dello schermo è un criterio per partecipante, tuttavia, può essere interessato dalle impostazioni di condivisione dello schermo dell'organizzatore, come descritto in questa sezione.
 
 Questa impostazione determina se la condivisione del desktop o della finestra è consentita nella riunione dell'utente. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi, guest, B2B e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -463,7 +453,7 @@ Queste impostazioni controllano i partecipanti che devono aspettare nella sala d
 Si tratta di un criterio per organizzatore che consente riunioni di audioconferenza senza un rappresentante dell'organizzazione. Questa impostazione controlla se gli utenti anonimi possono partecipare alla riunione senza la presenza di un utente autenticato dell'organizzazione. Per impostazione predefinita, questa impostazione è disattivata, il che significa che gli utenti anonimi aspetteranno nella sala di attesa finché un utente autenticato dall'organizzazione non accede alla riunione.
 
 > [!NOTE]
-> Se questa impostazione è disattivata e un utente anonimo accede alla riunione e viene inserito nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di Teams per consentire l'accesso all'utente dalla sala di attesa. Non sono disponibili controlli di sala di attesa per gli utenti che hanno effettuato l'accesso.
+> Se questa impostazione è disattivata e un utente anonimo accede alla riunione e viene inserito nella sala di attesa, un utente dell'organizzazione deve partecipare alla riunione con un client di Teams per consentire l'accesso all'utente dalla sala di attesa. Non sono disponibili controlli della sala di attesa per gli utenti connessi.
 
 ### <a name="automatically-admit-people"></a>Ammetti automaticamente le persone
 
@@ -474,7 +464,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
  Gli organizzatori di riunioni possono selezionare **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
 
 > [!NOTE]
-> Questa opzione della riunione è denominata "Chi può evitare la sala di attesa?". Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
+> Nelle opzioni della riunione l'impostazione è contrassegnata da "Chi può ignorare la sala di attesa". Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
   
 |Valore dell'impostazione  |Comportamento di partecipazione |
 |---------|---------|
@@ -486,10 +476,10 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 
-Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti con accesso esterno potranno accedere automaticamente alla riunione quando un utente dell'organizzazione accede alla riunione.
+Questo è un criterio per organizzatore. Questa impostazione consente di controllare se le persone che effettuano l'accesso tramite telefono si uniscono direttamente alla riunione oppure aspettano in sala d'attesa, indipendentemente dall'impostazione **Ammetti automaticamente le persone**. Per impostazione predefinita, questa impostazione è disattivata. Se questa impostazione è disattivata, gli utenti con accesso esterno attenderanno nella sala di attesa finché un utente dell'organizzazione non accede alla riunione con un client di Teams e consente loro di accedere. Quando questa impostazione è attivata, gli utenti con accesso esterno potranno accedere automaticamente alla riunione.
 
 > [!NOTE]
-> Se un utente con accesso esterno partecipa a una riunione prima che un utente dell'organizzazione acceda alla riunione, verrà inserito nella sala di attesa finché un utente dell'organizzazione non accede alla riunione usando un client di Teams e gli consente di accedere. Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
+> Se si modifica l'impostazione predefinita per un utente, questa viene applicata a tutte le nuove riunioni organizzate da tale utente e alle riunioni precedenti in cui l'utente non ha modificato le opzioni per le riunioni.
 
 ### <a name="allow-team-members-to-bypass-the-lobby"></a>Consenti ai membri del team di evitare la sala di attesa
 
@@ -510,7 +500,7 @@ Questo è un criterio per utente e si applica durante una riunione. Questa impos
 
 ### <a name="allow-chat-in-meetings"></a>Consenti l'uso della chat nelle riunioni 
 
-Si tratta di un'impostazione per partecipante. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
+Questa è un'impostazione per partecipante. Questa impostazione determina se la chat della riunione è consentita nella riunione dell'utente.
 
 <a name="bkparticipantsandguests"> </a>
 
