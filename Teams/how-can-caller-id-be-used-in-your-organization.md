@@ -1,16 +1,16 @@
 ---
 title: Come usare l'ID chiamante nella tua organizzazione
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: crowe
+author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, roykuntz
+ms.reviewer: jens, roykuntz
 ms.topic: article
 ms.assetid: 5a0bd8ba-3334-46ee-becf-1025597737f6
 ms.tgt.pltfrm: cloud
-ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection:
 - M365-voice
+ms.service: msteams
 audience: Admin
 appliesto:
 - Skype for Business
@@ -22,72 +22,89 @@ ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.callerid.overview
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: e723311b2780dd1d43bad4874b72133e09ff4fc3
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2a104679be84dfdaa4574353ccc79142d8a82284
+ms.sourcegitcommit: 83f14c4c79559ef28357ff076938e52b369fc0c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120677"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52308345"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
-L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
+L'ID chiamante è costituito da due informazioni identificabili dall'utente:
+
+- Un numero di telefono (in genere definito CLID o ID della linea telefonica). Si tratta del numero pstn (Public Switched Telephone Number) presentato come identificativo del chiamante.
+
+- Nome di una parte chiamante(in genere denominata CNAM). 
   
-La funzionalità ID chiamante è disponibile per tutti gli utenti del sistema telefonico, indipendentemente dalla connettività PSTN:
+La funzionalità ID chiamante è disponibile per tutti Sistema telefonico utenti indipendentemente dall'opzione di connettività PSTN:
 
 - Piani per chiamate Microsoft 
 
 - Instradamento diretto di Sistema telefonico 
   
-- Connettività PSTN in linea
-    
-- Connettività PSTN locale con Skype for Businesss Cloud Connector Edition (richiede Cloud Connector Edition 1.4.2 e versioni successive)
-    
-- Connettività PSTN locale con Skype for Businesss Server (richiede Skype for Businesss Server 2015 CU5 e versioni successive)
-    
-> [!NOTE]
-> Questo criterio non è disponibile in Skype for Businesss 2015 Server. 
-  
-## <a name="outbound-caller-id"></a>ID chiamante in uscita
+È possibile controllare l'ID chiamante per le chiamate in ingresso e in uscita usando un criterio denominato CallingLineIdentity. Per altre informazioni, vedere [Altre informazioni su ID linea chiamante e Nome della parte chiamante.](more-about-calling-line-id-and-calling-party-name.md)
 
-Sono disponibili tre opzioni per l'ID chiamante PSTN in uscita:
+  
+## <a name="outbound-pstn-caller-id"></a>ID chiamante PSTN in uscita
+
+Per l'ID chiamante PSTN in uscita, sono disponibili le opzioni seguenti. 
+
+> [!NOTE]
+> Alcune opzioni, indicate di seguito, sono disponibili nella versione di anteprima.
   
 - Numero di telefono assegnato all'utente, ovvero l'impostazione predefinita.
+
+- Anonimo, che è disponibile rimuovendo la presentazione del numero PSTN dell'utente. 
+
+- Un numero di telefono sostitutivo, che può essere:
+
+  - Numero di telefono classificato come servizio e numero verde nell'inventario dei numeri di telefono dei Piani per chiamate. In genere viene assegnato a una Teams Operatore automatico o coda di chiamata.
+
+  - **Versione di anteprima.** Numero di telefono locale tramite Routing diretto assegnato a un account di risorsa usato da un Teams Operatore automatico o coda di chiamata. 
+
+- **Versione di anteprima.** Nome della parte chiamante o CNAM impostato sulla chiamata PSTN in uscita.  
     
-- Numero di telefono classificato  come  servizio e numero verde nell'inventario dei numeri di telefono dei Piani per chiamate. In genere assegnato a una coda di chiamata o operatore automatico dell'organizzazione.
-    
-- Impostato su anonimo.
-    
-Tuttavia, non è possibile assegnare questi tipi di numeri di telefono per l'ID chiamante in uscita:
-  
-- I numeri di telefono classificati come *utente* nella rubrica telefonica dei tuoi Piani chiamata
-    
-- Un numero di telefono Skype for Businesss Server locale
-    
-Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](./set-the-caller-id-for-a-user.md).
+Per altre informazioni, vedere [Impostare l'ID chiamante per un utente.](./set-the-caller-id-for-a-user.md)
   
 ### <a name="end-user-control-of-outbound-caller-id"></a>Controllo utente finale dell'ID chiamante in uscita
 
-L'attributo EnableUserOverride consente a uno o più utenti di modificare l'impostazione dell'ID chiamante su **Anonimo.** Ciò è valido solo quando viene configurato un criterio CallingLineIdentity con un parametro CallingIDSubstitute LineURI o sostituto. Il valore predefinito di EnableUserOverride è False.
-  
-Gli utenti finali possono impostare  l'ID  chiamante su Anonimo usando la scheda Impostazioni nel client desktop Skype for Business, selezionare Chiama un utente finale **(se** abilitato dall'amministratore) e quindi selezionare Nascondi il numero di telefono e le informazioni del profilo per tutte le **chiamate.** In Teams gli utenti possono passare all'immagine del profilo nell'angolo in alto a destra, selezionare Impostazioni chiamate e quindi in ID chiamante selezionare Nascondi il numero di telefono e le informazioni del profilo per tutte  >   **le chiamate.** 
-  
-||||
-|:-----|:-----|:-----|
-|**Windows** <br/> |**Versione** <br/> |**Supportato** <br/> |
-|A portata di clic  <br/> |Current Channel rilasciato il 6 dicembre 2016 - versione 1611 (Build 7571.2072)  <br/> |Sì  <br/> |
-|A portata di clic  <br/> |Prima versione per Deferred Channel rilasciata il 22 febbraio 2017 - versione 1701 (Build 7766.2060)  <br/> |Sì  <br/> |
-|A portata di clic  <br/> |Deferred Channel rilasciato il 13 giugno 2017 - versione 1701 (Build 7766.2092)  <br/> |Sì  <br/> |
-|MSI  <br/> |Skype for Business  <br/> |No  <br/> |
-|Mac  <br/> |Skype for Business  <br/> |No  <br/> |
+Gli utenti possono modificare l'impostazione dell'ID chiamante **su Anonimo** impostando l'attributo EnableUserOverride. 
+
+Se l'ID chiamante in uscita è impostato su Anonimo, EnableUserOverride non ha alcun effetto e l'ID chiamante è sempre impostato su Anonimo. Il valore predefinito di EnableUserOverride è False.
+
+Gli utenti finali possono impostare l'ID chiamante su Anonimo selezionando **Impostazioni > Chiamate** e quindi in **ID** chiamante selezionare Nascondi il numero di telefono e le informazioni del profilo per tutte **le chiamate.**
+
+### <a name="notes"></a>Note
+
+Tenere presente quanto segue:
+
+- Non è possibile assegnare i tipi di numeri di telefono seguenti per l'ID chiamante in uscita:
+
+  - Tutti i numeri di telefono classificati come utente nell'inventario dei numeri di telefono dei Piani per chiamate.
+
+  - Qualsiasi numero di telefono locale tramite Routing diretto assegnato a un utente.
+
+  - Un Skype for Business Server di telefono locale.
+
+- L'uso della sostituzione del numero di telefono dell'account della risorsa funziona solo per Teams utenti. La sostituzione del numero di telefono del servizio funziona sia per Skype for Business online che per Teams utenti.
+
+- Il nome della parte chiamante viene inviato solo sulle chiamate in cui l'ID chiamante viene sostituito con LineUri, un numero di telefono dell'account di servizio o della risorsa e quando il chiamante è un Teams utente.
+
+- Nome parte chiamante può contenere un massimo di 200 caratteri, ma i sistemi a valle potrebbero supportare un numero inferiore di caratteri.
+
+- Per l'instradamento diretto, la sostituzione del numero di telefono e il nome della parte chiamante vengono inviati nell'intestazione SIP FROM. Se il corrispondente OnlinePstnGateway è configurato con ForwardPai = True, l'intestazione SIP P-ASSERTED-IDENTITY conterrà l'utente chiamante reale.
+
+- EnableUserOverride ha la precedenza sulle altre impostazioni del criterio, a meno che la sostituzione non sia impostata su Anonimo. Si supponga, ad esempio, che l'istanza dei criteri abbia la sostituzione con un account di risorsa e che EnableUserOverride sia impostato e abilitato dall'utente. In questo caso, l'ID chiamante in uscita verrà bloccato e verrà usato Anonimo. Se un'istanza dei criteri ha la sostituzione impostata su Anonimo e EnableUserOverride è impostato, l'ID chiamante in uscita sarà sempre Anonimo, indipendentemente dall'impostazione dell'utente finale.
+
    
 ## <a name="inbound-caller-id"></a>ID chiamante in ingresso
 
-Sistema telefonico mostrerà l'ID chiamato per un numero di telefono esterno se il numero è associato a un utente in Azure AD. Se il numero di telefono non è in Azure AD, il nome visualizzato fornito da telco verrà visualizzato se disponibile.
+Sistema telefonico il numero di telefono esterno in arrivo come ID chiamante. Se il numero è associato a un utente o un contatto in Azure AD o a un contatto personale, i client Skype for Business e Teams mostreranno l'ID chiamante in base a queste informazioni. Se il numero di telefono non si trova in Azure AD o in un contatto personale, se disponibile verrà visualizzato il nome visualizzato fornito da telco.
 
-L'attributo BlockIncomingCallerID consente di bloccare l'ID chiamante nelle chiamate PSTN in arrivo. Puoi impostare questo attributo, ma questo non è disponibile per gli utenti finali nella pagina Impostazioni utente. Ed è attualmente disponibile solo con connettività PSTN in linea.
+L'attributo BlockIncomingCallerID consente di bloccare l'ID chiamante nelle chiamate PSTN in arrivo. Puoi impostare questo attributo, ma questo non è disponibile per gli utenti finali nella pagina Impostazioni utente. Quando questa impostazione è abilitata, il chiamante PSTN in arrivo verrà visualizzato come proveniente da Anonimo.
   
-Per impostare l'ID chiamante in uscita, vedere [Impostazione dell'ID chiamante per gli utenti](./set-the-caller-id-for-a-user.md).
+Per bloccare l'ID chiamante in ingresso, vedere [Impostare l'ID chiamante per un utente.](./set-the-caller-id-for-a-user.md)
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](./phone-number-calling-plans/port-order-overview.md)
