@@ -1,44 +1,46 @@
 ---
 title: Ulteriori informazioni su ID linea chiamante e nome del chiamante
-ms.author: mikeplum
-author: MikePlumleyMSFT
+ms.author: crowe
+author: CarolynRowe
 manager: serdars
-ms.reviewer: mikedav, roykuntz, jastark
+ms.reviewer: roykuntz, jenstr
 ms.topic: article
 ms.tgt.pltfrm: cloud
-ms.service: skype-for-business-online
 search.appverid: MET150
 ms.collection:
 - M365-voice
 audience: Admin
 appliesto:
-- Skype for Business
+- Skype for Business Online
 - Microsoft Teams
 localization_priority: Normal
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
-description: Perché è necessario aggiungere una persona autorizzata che possa apportare modifiche all'account quando si usa la procedura guidata Nuovo ordine di portabilità numero locale.
-ms.openlocfilehash: db64a5d1a7e7a5969f66d67d6b056ec6947d44bb
-ms.sourcegitcommit: 2874aec7768bb46ed4506c1a2d431841f47190bf
+ms.service: msteams
+description: Informazioni sull'ID della linea di chiamata e sul nome della parte chiamante.
+ms.openlocfilehash: dd68327c8fb3f63bf17e0736f9d41b727efc1ff8
+ms.sourcegitcommit: 83f14c4c79559ef28357ff076938e52b369fc0c7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2020
-ms.locfileid: "47255399"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "52308315"
 ---
-# <a name="more-about-calling-line-id-and-calling-party-name"></a><span data-ttu-id="cb736-103">Ulteriori informazioni su ID linea chiamante e nome del chiamante</span><span class="sxs-lookup"><span data-stu-id="cb736-103">More about Calling Line ID and Calling Party Name</span></span>
+# <a name="more-about-calling-line-id-and-calling-party-name"></a><span data-ttu-id="7b973-103">Ulteriori informazioni su ID linea chiamante e nome del chiamante</span><span class="sxs-lookup"><span data-stu-id="7b973-103">More about Calling Line ID and Calling Party Name</span></span>
 
-<span data-ttu-id="cb736-104">CallerID, come si fa in genere, è costituito da due informazioni identificabili per l'utente:</span><span class="sxs-lookup"><span data-stu-id="cb736-104">CallerID, as it is typically referred to, actually consists of two user-facing identifiable pieces of information:</span></span>
-    - <span data-ttu-id="cb736-105">Un numero di telefono (in genere denominato CLID o ID linea chiamante)</span><span class="sxs-lookup"><span data-stu-id="cb736-105">A phone number (typically referred to as CLID or calling line ID)</span></span> 
-    - <span data-ttu-id="cb736-106">Nome del chiamante (in genere denominato CNAM), che può avere una lunghezza massima di 15 caratteri.</span><span class="sxs-lookup"><span data-stu-id="cb736-106">Calling party name (typically referred to as CNAM) which can be up to 15 characters in length.</span></span> 
+<span data-ttu-id="7b973-104">CallerID è costituito da due informazioni rivolte all'utente:</span><span class="sxs-lookup"><span data-stu-id="7b973-104">CallerID consists of two user-facing pieces of information:</span></span>
 
-<span data-ttu-id="cb736-107">Quando viene effettuata una chiamata, il CLID (numero di telefono) viene instradato al corriere di destinazione (noto anche come gestore finale).</span><span class="sxs-lookup"><span data-stu-id="cb736-107">When a call is made, the CLID (phone number) is routed to the destination's carrier (also known as the terminating carrier).</span></span> <span data-ttu-id="cb736-108">Le informazioni CNAM per la chiamata possono essere instradati o meno con la chiamata, in quanto ciò dipende da come il Paese ha implementato il CNAM (se del tutto).</span><span class="sxs-lookup"><span data-stu-id="cb736-108">The CNAM info for the call may or may not be routed with the call as this depends on how the country has implemented CNAM (if at all).</span></span> <span data-ttu-id="cb736-109">L'affidabilità della consegna di CNAM con la chiamata varia a seconda del paese e dei gestori che gestiscono la chiamata come intermediario e/o gestore terminante.</span><span class="sxs-lookup"><span data-stu-id="cb736-109">The reliability of CNAM delivery with the call varies depending on the country and carriers which handle the call either as an intermediary and/or a terminating carrier.</span></span> 
+- <span data-ttu-id="7b973-105">Un numero di telefono (in genere definito CLID o ID della linea telefonica).</span><span class="sxs-lookup"><span data-stu-id="7b973-105">A phone number (typically referred to as CLID or calling line ID).</span></span>
 
-<span data-ttu-id="cb736-110">La trasmissione CLID & CNAM è responsabilità del corriere che termina nel momento in cui il vettore che termina deve supportare la funzionalità CLID & CNAM e fornire record aggiornati per entrambi i valori.</span><span class="sxs-lookup"><span data-stu-id="cb736-110">CLID & CNAM transmission is the responsibility of the terminating carrier insofar as the terminating carrier must support CLID & CNAM functionality as well as provide up to date records for both values.</span></span> <span data-ttu-id="cb736-111">Microsoft fornisce in modo affidabile i valori CLID al momento delle chiamate di origine, ma tali valori potrebbero non essere mantenuti intatti dopo il passaggio da un operatore intermedio o dal gestore di terminazione.</span><span class="sxs-lookup"><span data-stu-id="cb736-111">Microsoft reliably provides CLID values when originating calls, but those values may not be kept intact once they pass through an intermediary carrier or the terminating carrier.</span></span> <span data-ttu-id="cb736-112">Purtroppo, nel caso in cui il valore CLID sia cambiato, omesso o troncato dall'intermediario o dal gestore di terminazione, Microsoft non ha nulla in più per correggere tali problemi nella rete telefonica pubblica.</span><span class="sxs-lookup"><span data-stu-id="cb736-112">Unfortunately, in the event the CLID value is changed, omitted or truncated by the intermediary or terminating carrier, Microsoft has little to no recourse in correcting such problems in the public telephone network.</span></span>
+- <span data-ttu-id="7b973-106">Nome della parte chiamante (in genere denominata CNAM).</span><span class="sxs-lookup"><span data-stu-id="7b973-106">Calling party name (typically referred to as CNAM).</span></span> 
 
-<span data-ttu-id="cb736-113">Le incoerenze nel CNAM possono essere causate da ritardi nei gestori intermedi o che terminano aggiornando le informazioni CNAM nei database autorevoli come nel caso degli Stati Uniti.</span><span class="sxs-lookup"><span data-stu-id="cb736-113">Inconsistencies in CNAM can be caused by delays in intermediate or terminating carriers refreshing CNAM info in authoritative databases as in the case of the United States.</span></span> <span data-ttu-id="cb736-114">Nei paesi in cui non esiste un database autorevole per il CNAM, le procedure dei singoli gestori possono anche causare problemi con le informazioni CNAM che rimangono intatte con la chiamata.</span><span class="sxs-lookup"><span data-stu-id="cb736-114">In countries where there is no authoritative database for CNAM, individual carrier practices can also cause problems with CNAM information arriving intact with the call.</span></span> <span data-ttu-id="cb736-115">Microsoft attualmente non supporta le informazioni CNAM provenienti da paesi diversi dagli Stati Uniti."</span><span class="sxs-lookup"><span data-stu-id="cb736-115">Microsoft currently does not support originating CNAM information in countries other than the United States."</span></span>
+<span data-ttu-id="7b973-107">Quando viene effettuata una chiamata, il CLID (numero di telefono) viene instradato al gestore di destinazione (noto anche come gestore di terminazione).</span><span class="sxs-lookup"><span data-stu-id="7b973-107">When a call is made, the CLID (phone number) is routed to the destination's carrier (also known as the terminating carrier).</span></span> <span data-ttu-id="7b973-108">Le informazioni CNAM per la chiamata possono essere instradati o meno con la chiamata, perché queste informazioni dipendono da come il paese ha implementato CNAM (se del tutto).</span><span class="sxs-lookup"><span data-stu-id="7b973-108">The CNAM information for the call may or may not be routed with the call because as this information depends on how the country has implemented CNAM (if at all).</span></span> <span data-ttu-id="7b973-109">L'affidabilità della consegna CNAM con la chiamata varia a seconda del paese e dei gestori che gestiscono la chiamata, sia come intermediario che come gestore di terminazione.</span><span class="sxs-lookup"><span data-stu-id="7b973-109">The reliability of CNAM delivery with the call varies depending on the country and carriers that handle the call--either as an intermediary or a terminating carrier.</span></span> 
 
-## <a name="related-topics"></a><span data-ttu-id="cb736-116">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="cb736-116">Related topics</span></span>
+<span data-ttu-id="7b973-110">La trasmissione CLID & CNAM è responsabilità del gestore di terminazione.</span><span class="sxs-lookup"><span data-stu-id="7b973-110">CLID & CNAM transmission is the responsibility of the terminating carrier.</span></span> <span data-ttu-id="7b973-111">Il gestore di terminazione deve supportare & CNAM clid e fornire record aggiornati per entrambi i valori.</span><span class="sxs-lookup"><span data-stu-id="7b973-111">The terminating carrier must support CLID & CNAM functionality as well as provide up-to-date records for both values.</span></span> <span data-ttu-id="7b973-112">Microsoft fornisce in modo affidabile i valori CLID durante le chiamate di origine, ma questi valori potrebbero non essere mantenuti intatti quando passano attraverso un gestore intermedio o il gestore di terminazione.</span><span class="sxs-lookup"><span data-stu-id="7b973-112">Microsoft reliably provides CLID values when originating calls, but those values may not be kept intact once they pass through an intermediary carrier or the terminating carrier.</span></span> <span data-ttu-id="7b973-113">Se il valore CLID viene modificato, omesso o troncato dal gestore intermedio o di terminazione, Microsoft non ha alcun ricorso per correggere tali problemi nella rete telefonica pubblica.</span><span class="sxs-lookup"><span data-stu-id="7b973-113">If the CLID value is changed, omitted, or truncated by the intermediary or terminating carrier, Microsoft has little to no recourse in correcting such problems in the public telephone network.</span></span>
+
+<span data-ttu-id="7b973-114">Le incoerenze in CNAM possono essere causate quando i gestori intermedi o terminanti ritardano l'aggiornamento delle informazioni CNAM in database autorevoli, come nel caso degli Stati Uniti.</span><span class="sxs-lookup"><span data-stu-id="7b973-114">Inconsistencies in CNAM can be caused when the intermediate or terminating carriers delay refreshing the CNAM information in authoritative databases--as in the case of the United States.</span></span> <span data-ttu-id="7b973-115">Nei paesi in cui non sono presenti database autorevoli per CNAM, le procedure dei singoli gestori possono anche causare problemi con le informazioni CNAM che arrivano intatte con la chiamata.</span><span class="sxs-lookup"><span data-stu-id="7b973-115">In countries where there are no authoritative databases for CNAM, individual carrier practices can also cause problems with CNAM information arriving intact with the call.</span></span> <span data-ttu-id="7b973-116">Microsoft attualmente non supporta le informazioni CNAM di origine in paesi diversi dagli Stati Uniti.</span><span class="sxs-lookup"><span data-stu-id="7b973-116">Microsoft currently does not support originating CNAM information in countries other than the United States.</span></span>
+
+## <a name="related-topics"></a><span data-ttu-id="7b973-117">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="7b973-117">Related topics</span></span>
 
 
