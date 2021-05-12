@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2f9df0bf1c4acaf8ec32db07ce4af961c491ba0d
-ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
+ms.openlocfilehash: 76137c0ebfe73c6ba500a0dbcdc8ee1a01de85fc
+ms.sourcegitcommit: 242561bfc12504614633539ca696b91dfc890b92
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899117"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52328558"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -31,18 +31,18 @@ ms.locfileid: "51899117"
 > [!Note]
 > Se la riunione o il webinar supera la capacità, Teams si adatterà rapidamente per offrire un'esperienza di trasmissione in modalità solo visualizzazione per 10.000 persone.  Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno.
 
-Microsoft Teams consente fino a 10.000 partecipanti alle riunioni. Dopo aver raggiunto la capacità della riunione principale, ovvero quando 300 utenti aderiscono a una riunione, altri partecipanti si uniranno con un'esperienza di sola visualizzazione.
+Microsoft Teams consente fino a 10.000 partecipanti alle riunioni. Dopo aver raggiunto la capacità della riunione principale, ovvero quando 1000 utenti aderiscono a una riunione, altri partecipanti si uniranno con un'esperienza di sola visualizzazione.
 
-I partecipanti che aderiscono per primi alla riunione, fino alla capacità della riunione principale, otterrà l'esperienza completa della riunione di Teams. Possono condividere audio e video, visualizzare i video condivisi e partecipare alla chat delle riunioni.
+I partecipanti che aderiscono per primi alla riunione, fino alla capacità della riunione principale, otterrà l'esperienza Teams riunione. Possono condividere audio e video, visualizzare i video condivisi e partecipare alla chat delle riunioni.
 
 Gli utenti che accedono dopo il superamento della capacità della riunione accederanno a un'esperienza di sola visualizzazione.  
 
 I partecipanti potranno partecipare all'esperienza di sola visualizzazione tramite desktop, Web e Teams mobile (Android e iOS).
 
 > [!Note]
-> La capacità limite corrente della "riunione principale", o in altre parole, il numero di utenti completamente interattivi è 300.
+> La capacità limite corrente della "riunione principale", o in altre parole, il numero di utenti completamente interattivi è 1000 e include GCC.
 
-## <a name="teams-view-only-experience-controls"></a>Controlli dell'esperienza di sola visualizzazione di Teams
+## <a name="teams-view-only-experience-controls"></a>Teams di sola visualizzazione
 
 È possibile abilitare l'esperienza di sola visualizzazione usando PowerShell.
 
@@ -56,7 +56,7 @@ Per disabilitare l'esperienza di sola visualizzazione, è anche possibile usare 
 Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Disabled
 ```
 
-In futuro sarà possibile abilitare o disabilitare l'esperienza di sola visualizzazione nell'interfaccia di amministrazione di Teams.
+In futuro sarà possibile abilitare o disabilitare l'esperienza di sola visualizzazione nell'interfaccia Teams di amministrazione.
 
 ## <a name="impact-to-users"></a>Impatto sugli utenti
 
@@ -64,7 +64,7 @@ L'esperienza d'uso varia a seconda di numerosi fattori.
 
 Quando il limite di partecipati della riunione principale viene raggiunto, i partecipanti non possono accedere alla riunione se una qualsiasi delle seguenti condizioni è vera: 
 
-- Un amministratore ha disabilitato l'esperienza di sola visualizzazione di Teams per l'organizzatore o per l'intero tenant.
+- Un amministratore ha disabilitato l'Teams di sola visualizzazione per l'organizzatore o per l'intero tenant.
 - Il partecipante di sola visualizzazione non può ignorare la sala d'attesa. Ad esempio, se un organizzatore di una  riunione sceglie di fare in modo che solo le persone dell'organizzazione esemplino la sala d'attesa e un partecipante esterno all'organizzazione tenti di partecipare come partecipante di sola visualizzazione, non potrà partecipare.
 
 Una volta raggiunta la capacità della riunione principale, l'organizzatore della riunione e i relatori vedranno uno striscione che informa che i nuovi partecipanti si uniranno come partecipanti di sola visualizzazione.
@@ -102,14 +102,14 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 
 - Partecipare alle riunioni se il partecipante non è autorizzato a ignorare la sala di attesa in base ai criteri o alle opzioni configurati della sala di attesa.
 - Accedere alla sala di solo visualizzazione usando la funzionalità di audioconferenza.
-- Partecipare alla sala di sola visualizzazione usando il sistema Microsoft Teams Rooms o i servizi CVI (Cloud Video Interop).
+- Partecipare alla sala di sola visualizzazione usando Microsoft Teams Rooms o i servizi CVI (Cloud Video Interop).
 - Condividere l'audio o il video.
 - Leggere o partecipare alla chat della riunione.
 - Visualizzare il video trasmesso dai partecipanti alla riunione, se non sono i relatori attivi.
-- Vedere File di PowerPoint condivisi con la funzionalità PowerPoint Live o singole condivisioni di applicazioni ,ad esempio desktop o condivisione dello schermo.
+- Vedere PowerPoint file condivisi usando la funzionalità live PowerPoint o le singole condivisioni di applicazioni ,ad esempio desktop o condivisione dello schermo.
 - Alzare la mano durante la riunione.
 - Inviare o visualizzare le reazioni.
-- Interagisci con qualsiasi app 3P che si integra nella riunione di Teams, inclusi i sondaggi.
+- Interagisci con qualsiasi app 3P che si integra nella riunione Teams, inclusi i sondaggi.
 
 ## <a name="view-only-feature-limitations"></a>Limitazioni della funzionalità di sola visualizzazione
 
