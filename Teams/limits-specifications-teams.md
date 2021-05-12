@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 60ee9246df70f3f91bd5624ec9fece879b622896
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: 5fbf2efa3ad1d77300138a57336b4254ea788e84
+ms.sourcegitcommit: 242561bfc12504614633539ca696b91dfc890b92
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697631"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "52328508"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -131,7 +131,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 300. **Solo visualizzazione** consente a un massimo di 10.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).|
+|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000, include GCC ma non ancora per GCCH o DoD. **Solo visualizzazione** consente a un massimo di 20.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).|
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
@@ -139,7 +139,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 ### <a name="meeting-expiration"></a>Scadenza della riunione
 
 > [!NOTE]
-> L'URL di una riunione non scade mai. La scadenza riguarda solo i numeri telefonici di accesso esterno PSTN e/o i criteri e le impostazioni per le riunioni.
+> Un URL riunione non smetterà mai di funzionare. La scadenza riguarda solo i numeri telefonici di accesso esterno PSTN e/o i criteri e le impostazioni per le riunioni.
 
 |Tipo di riunione  |La riunione scade dopo un certo intervallo di tempo  |Ogni volta che si avvia o si aggiorna una riunione, la scadenza viene estesa di un certo intervallo di tempo  |
 |---------|---------|---------|
