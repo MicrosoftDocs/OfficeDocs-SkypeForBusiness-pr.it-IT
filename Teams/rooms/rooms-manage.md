@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come sviluppare ed eseguire operazioni e manutenzione continuativa per assicurarsi che i Microsoft Teams Rooms di lavoro siano disponibili per gli utenti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: deb538c8b249faddf16096f052bca4020da6f6c0
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: b95e1191201e3b5a8f234cc47c1a886cb7f0cf9a
+ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237982"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52469598"
 ---
 # <a name="manage-microsoft-teams-rooms"></a>Gestire Microsoft Teams Rooms.
 
@@ -28,7 +28,7 @@ Se nell'organizzazione Microsoft Teams Rooms dispositivi certificati, sono dispo
 
 Con Microsoft Teams di amministrazione è possibile:
 
-- Eseguire la gestione dei dispositivi, ad esempio il riavvio o il blocco dei dispositivi e il download dei log dei dispositivi
+- Eseguire la gestione dei dispositivi, ad esempio il riavvio dei dispositivi e il download dei log dei dispositivi
 - Applicare Teams specifiche
 - Controllare lo stato di integrità dei Microsoft Teams room e delle relative periferiche, tra cui fotocamere, schermi, microfoni e così via
 - Esaminare le attività della riunione correnti e passate (ad esempio dettagli sulla qualità delle chiamate, sull'integrità e la connettività di rete e sul numero di partecipanti)
@@ -101,30 +101,16 @@ Le modifiche alle impostazioni dei dispositivi avranno effetto solo dopo il riav
 > [!CAUTION]
 > I dispositivi in uso al momento del riavvio non saranno più disponibili per la durata del processo di riavvio. Verranno disconnessi dalle riunioni in corso e non saranno disponibili per partecipare a nuove riunioni.
 
-### <a name="remove-or-block-a-device"></a>Rimuovere o bloccare un dispositivo
+### <a name="remove-device"></a>Rimuovi dispositivo
 
-Quando si **rimuove** un dispositivo, il dispositivo viene rimosso dall'organizzazione e non viene più visualizzato nell'elenco dei dispositivi di Teams Rooms nell'interfaccia Teams di amministrazione. 
+Quando si rimuove un dispositivo, il dispositivo viene rimosso dall'organizzazione e non viene più visualizzato nell'elenco dei dispositivi di Teams Rooms nell'interfaccia Teams di amministrazione.
 
-Quando si **blocca** un dispositivo, Teams non comunica più con il dispositivo. I dispositivi bloccati non verranno inviati comandi anche se sono inclusi in un gruppo di dispositivi che vengono modificati in blocco. È ancora elencato nell'elenco dei dispositivi Teams Rooms con stato **Bloccato**.
-
-Indipendentemente dal fatto che un dispositivo sia bloccato o rimosso, se è ancora configurato con un nome utente e una password validi, verrà automaticamente aggiunto di nuovo all'elenco dei dispositivi Teams Rooms se si connette a Microsoft 365.
+Se rimuovi un dispositivo ed è ancora configurato con un nome utente e una password validi, verrà automaticamente aggiunto di nuovo all'elenco dei dispositivi Teams Rooms se si connette di nuovo a Microsoft 365.
 
 Per rimuovere uno o più dispositivi, eseguire le operazioni seguenti:
 
 1. Passare **a Dispositivi**  >  **Teams Rooms** e selezionare i dispositivi da rimuovere.
 1. Selezionare **Rimuovi**.
-
-Per bloccare un dispositivo, eseguire le operazioni seguenti:
-
-1. Passare **a**  >  **Dispositivi Teams Rooms** e selezionare il nome del dispositivo da bloccare.
-1. Nella pagina dei dettagli del dispositivo selezionare **Azioni** nell'angolo in alto a destra della pagina.
-1. Selezionare **Blocca**.
-
-Per sbloccare un dispositivo, eseguire le operazioni seguenti:
-
-1. Passare **a**  >  **Dispositivi Teams Rooms** e selezionare il nome del dispositivo da bloccare.
-1. Nella pagina dei dettagli del dispositivo selezionare **Azioni** nell'angolo in alto a destra della pagina.
-1. Selezionare **Sblocca**.
 
 ## <a name="download-device-logs"></a>Scaricare i log dei dispositivi
 

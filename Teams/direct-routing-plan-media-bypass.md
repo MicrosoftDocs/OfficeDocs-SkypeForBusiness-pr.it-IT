@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con Sistema telefonico Direct Routing, che consente di abbreviare il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 9b6624a81994c1d6797ed996fbcc233fe75f8907
-ms.sourcegitcommit: 83f14c4c79559ef28357ff076938e52b369fc0c7
+ms.openlocfilehash: 4978c7ce2a69f23164a3869dd69368b3aaad2c4e
+ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52308355"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52469628"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -296,7 +296,7 @@ L'intervallo di porte dei Teams di trasporto (applicabile a tutti gli ambienti) 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
 UDP/SRTP | Inoltro di trasporto | SBC | 50 000 -59 999    | Definito nell'SBC |
-| UDP/SRTP | SBC | Inoltro di trasporto | Definito nell'SBC | 50 000 – 59 999, 3478, 3479     |
+| UDP/SRTP | SBC | Inoltro di trasporto | Definito nell'SBC | 50 000 – 59 999, 3478-3481     |
 
 
 > [!NOTE]
@@ -304,11 +304,11 @@ UDP/SRTP | Inoltro di trasporto | SBC | 50 000 -59 999    | Definito nell'SBC |
 > 
 > - v4, che può funzionare solo con l'intervallo di porte da 50 000 a 59 999
 > 
-> - v6, che funziona con le porte 3478, 3479
+> - v6, che funziona con le porte 3478-3481
 
 Al momento, il bypass multimediale supporta solo la versione v4 di Transport Relays. In futuro verrà introdotto il supporto della versione v6. 
 
-È necessario aprire le porte 3478 e 3479 per la transizione. Quando Microsoft introduce il supporto per i relay di trasporto v6 con Media Bypass, non sarà necessario riconfigurare le apparecchiature di rete o gli SBC. 
+È necessario aprire le porte 3478-3481 per la transizione. Quando Microsoft introduce il supporto per i relay di trasporto v6 con Media Bypass, non sarà necessario riconfigurare le apparecchiature di rete o gli SBC. 
 
 ### <a name="requirements-for-using-media-processors"></a>Requisiti per l'uso di processori multimediali
 
@@ -333,8 +333,8 @@ L'intervallo di porte dei processori multimediali (applicabile a tutti gli ambie
 
 | Traffico | Da | A | Porta di origine | Porta di destinazione|
 | :-------- | :-------- |:-----------|:--------|:---------|
-UDP/SRTP | Processore multimediale | SBC | 3478, 3479 e 49 152 – 53 247    | Definito nell'SBC |
-| UDP/SRTP | SBC | Processore multimediale | Definito nell'SBC | 3478, 3479 e 49 152 – 53 247     |
+UDP/SRTP | Processore multimediale | SBC | 3478-3481 e 49 152 – 53 247    | Definito nell'SBC |
+| UDP/SRTP | SBC | Processore multimediale | Definito nell'SBC | 3478-3481 e 49 152 – 53 247     |
 
 ## <a name="configure-separate-trunks-for-media-bypass-and-non-media-bypass"></a>Configurare trunk separati per bypass multimediale e bypass non multimediale  
 

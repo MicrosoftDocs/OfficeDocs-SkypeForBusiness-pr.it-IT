@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e le misure usate dal Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 63a9bba74b1c072a9c61885db03fa85357e034e9
-ms.sourcegitcommit: 2c2176b9d32b8f7218e8d11e82c0ae01318bfdc5
+ms.openlocfilehash: 981c5811f00d2e9005bd1387a7b58d23431af848
+ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52264946"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52469738"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -416,12 +416,12 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Second User ObjectId|Stringa|ID dell'oggetto Active Directory dell'utente del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII. | |
 | Primo indirizzo MAC|Stringa|Indirizzo MAC (Media Access Control) del dispositivo di rete del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| |
 | Secondo indirizzo MAC|Stringa|Indirizzo MAC (Media Access Control) del dispositivo di rete del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| |
-| Primo URI Sip|Stringa|URI SIP (Session Initiation Protocol) dell'utente del primo endpoint. Popolato solo per Skype for Business endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.|
-| Secondo URI Sip|Stringa|URI SIP dell'utente del primo endpoint. Popolato solo per Skype for Business endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.|
-| First Telefono Number|Stringa|Numero di telefono del primo utente dell'endpoint. Popolato solo per gli endpoint PSTN. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.|
-| Second Telefono Number|Stringa|Numero di telefono dell'utente del secondo endpoint. Popolato solo per gli endpoint PSTN. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.|
-| Primo UPN|Stringa|Nome dell'entità utente (UPN) dell'utente del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.|
-| Secondo UPN|Stringa|Nome dell'entità utente (UPN) dell'utente del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| <br/>&bull; Non tutti gli UserTypes hanno UPN; includere le dimensioni Second UserType o Second User ObjectId per altre informazioni su questi endpoint |
+| Primo URI Sip|Stringa|URI SIP (Session Initiation Protocol) dell'utente del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull;Popolato solo per Skype for Business endpoint. <br/>&bull; L'utente non ha le autorizzazioni per visualizzare EUII. |
+| Secondo URI Sip|Stringa|URI SIP dell'utente del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull;Popolato solo per Skype for Business endpoint.<br/>&bull; L'utente non ha le autorizzazioni per visualizzare EUII. |
+| First Telefono Number|Stringa|Numero di telefono del primo utente dell'endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII. Le ultime quattro cifre dei numeri PSTN vengono sempre offuscate in CQD indipendentemente dai privilegi di visualizzazione dell'EUII.<br/> **Valore di esempio:** +1425555****| &bull; Popolato solo per gli endpoint PSTN. <br/>&bull; L'utente non ha le autorizzazioni per visualizzare EUII. |
+| Second Telefono Number|Stringa|Numero di telefono dell'utente del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII. Le ultime quattro cifre dei numeri PSTN vengono sempre offuscate in CQD indipendentemente dai privilegi di visualizzazione dell'EUII.<br/> **Valore di esempio:** +1425555**** | &bull; Popolato solo per gli endpoint PSTN.<br/>&bull; L'utente non ha le autorizzazioni per visualizzare EUII. |
+| Primo UPN|Stringa|Nome dell'entità utente (UPN) dell'utente del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull; Non tutti gli UserTypes hanno UPN; includere le dimensioni Second UserType o Second User ObjectId per altre informazioni su questi endpoint. |
+| Secondo UPN|Stringa|Nome dell'entità utente (UPN) dell'utente del secondo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.| &bull; Non tutti gli UserTypes hanno UPN; includere le dimensioni Second UserType o Second User ObjectId per altre informazioni su questi endpoint. |
 | Testo del primo feedback|Stringa|Testo di feedback dettagliato, se presente, fornito dall'utente del primo endpoint al termine di una chiamata. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII. | |
 | Secondo testo di feedback|Stringa| Testo di feedback dettagliato, se presente, fornito dall'utente del secondo endpoint al termine di una chiamata. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.|
 | Nome primo endpoint client|Stringa|Nome computer del primo endpoint. Disponibile solo per gli ultimi 28 giorni di dati e visibile solo agli utenti con ruoli che consentono l'accesso EUII.|

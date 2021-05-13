@@ -1,10 +1,10 @@
 ---
 title: Usare i file di log nella risoluzione dei Microsoft Teams
 ms.reviewer: tejeshs
-author: SerdarSoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
-ms.date: 09/25/2017
+ms.date: 05/06/2021
 audience: admin
 ms.topic: troubleshooting
 ms.service: msteams
@@ -13,26 +13,29 @@ f1.keywords:
 ms.collection:
 - M365-collaboration
 search.appverid: MET150
-description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove possono essere trovati e su come possono essere utili per la risoluzione dei problemi.
+description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove possono essere trovati e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f816830f24a3d1180cb33a91a3f02d30d360cfef
-ms.sourcegitcommit: 2c2176b9d32b8f7218e8d11e82c0ae01318bfdc5
+ms.openlocfilehash: 58460390d9562d77ed6a4e3dfcbb3948cbe2749e
+ms.sourcegitcommit: 40f76bc6b5e304faea8516a78f8576ba1cdb7f7c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52264876"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "52337743"
 ---
-<a name="use-log-files-in-troubleshooting-microsoft-teams"></a>Usare i file di log nella risoluzione dei Microsoft Teams
-=================================================
+# <a name="use-log-files-to-monitor-and-troubleshoot-microsoft-teams"></a>Usare i file di log per monitorare e risolvere i Microsoft Teams
 
-Esistono tre tipi di file di log prodotti automaticamente dal client, che possono essere utilizzati per facilitare la risoluzione dei problemi Microsoft Teams:
+Esistono tre tipi di file di log prodotti automaticamente dal client, che possono essere utilizzati per agevolare il monitoraggio e la risoluzione dei Teams:
 
--   Log di debug
+-   [Log di debug](#debug-logs)
 
--   Registri multimediali
+-   [Registri multimediali](#media-logs)
 
--   Log del desktop
+-   [Log del desktop](#desktop-logs)
+
+Questo articolo descrive i tre log e il modo in cui vengono usati. 
+
+Per informazioni sulla risoluzione di problemi specifici, vedere: Teams [risoluzione dei problemi](/MicrosoftTeams/troubleshoot/teams). Per informazioni su come contattare il supporto, vedere [Ottenere supporto.](/microsoft-365/business-video/get-help-support)
 
 Quando si crea una richiesta di supporto con il supporto tecnico Microsoft, il tecnico del supporto richiederà i log di debug. Avere a disposizione i log di debug prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente a risolvere il problema. **I** registri multimediali **o** desktop sono necessari solo se richiesti da Microsoft.
 
@@ -53,8 +56,7 @@ La tabella seguente descrive i vari client e i log associati. I file di log veng
 
 Per un elenco completo dei sistemi operativi e dei browser supportati, vedere Ottenere [i client per Microsoft Teams](get-clients.md).
 
-<a name="debug-logs"></a>Log di debug
----------------------------
+## <a name="debug-logs"></a>Log di debug
 
 Questi sono i log più comuni e sono necessari per tutti i casi di supporto Tecnico Microsoft. I log di debug vengono prodotti dai client desktop Windows e Mac, oltre che dai client basati su browser. I log sono basati su testo e vengono letti dal basso verso l'alto. Possono essere letti con qualsiasi editor basato su testo e i nuovi log vengono creati quando si accede al client.
 
@@ -90,8 +92,7 @@ I log di debug vengono scaricati automaticamente nelle cartelle seguenti:
 
 -   Browser: verrà chiesto di salvare il log di debug nel percorso di salvataggio predefinito
 
-<a name="media-logs"></a>Registri multimediali
----------------------------
+## <a name="media-logs"></a>Registri multimediali
 
 I log multimediali contengono dati diagnostici relativi a audio, video e condivisione dello schermo nelle Teams riunioni. Sono necessari per i casi di supporto collegati a problemi relativi alle chiamate.
 
@@ -119,8 +120,7 @@ Ecco un elenco dei file di log generati e delle informazioni che contengono.
 |Debug-0-s2790420889.blog    | Contiene informazioni relative all'agente multimediale, inclusa la qualità del rendering.          |
 |tscalling-0-2061129496.blog   |Registra gli eventi nell'API ts-calling.       |
 
-<a name="desktop-logs"></a>Log del desktop
----------------------
+## <a name="desktop-logs"></a>Log del desktop
 
 I log desktop, noti anche come log del programma di avvio automatico, contengono i dati del log che si verificano tra il client desktop e il browser. Come i log multimediali, questi log sono necessari solo se richiesti da Microsoft. I log sono basati su testo e possono essere letti con qualsiasi editor basato su testo in un formato dall'alto verso il basso.
 
@@ -143,8 +143,7 @@ Linux:
 |Linux       |~/.config/Microsoft/Microsoft Teams/logs.txt         |
 
 
-<a name="browser-trace"></a>Traccia del browser
----------------------------
+## <a name="browser-trace"></a>Traccia del browser
 
 Per alcune categorie di errori, il supporto Tecnico Microsoft potrebbe richiedere la raccolta di una traccia del browser. Queste informazioni possono fornire dettagli importanti sullo stato del client Teams client quando si verifica l'errore.
 
