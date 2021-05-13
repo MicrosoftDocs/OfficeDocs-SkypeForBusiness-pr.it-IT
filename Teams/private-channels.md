@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 77ebc7abc73163bfdc9804d22efa12ade510d925
-ms.sourcegitcommit: 234c928b9ac127716e3d5a92ee2bcdda1a415a38
+ms.openlocfilehash: 543060371a42c3b0c514828779be14676fda8a25
+ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "51959483"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52469618"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -36,7 +36,7 @@ Ad esempio, un canale privato è utile negli scenari seguenti:
 - Un gruppo di persone in un team desidera uno spazio mirato per collaborare senza dover creare un team distinto.
 - Un sottoinsieme di persone in un team vuole un canale privato per discutere di informazioni riservate, come budget, gestione delle risorse, posizionamento strategico e così via.
 
-Un'icona a forma di lucchetto indica un canale privato. Solo i membri dei canali privati possono visualizzare e partecipare ai canali privati a cui vengono aggiunti.
+Un'icona a lucchetto indica un canale privato. Solo i membri dei canali privati possono visualizzare e partecipare ai canali privati a cui vengono aggiunti.
 
 Quando viene creato un canale privato, questo viene collegato al team padre e non può essere spostato in un altro team. Inoltre, i canali privati non possono essere convertiti in canali standard e viceversa.
 
@@ -120,6 +120,8 @@ Ogni team può avere un massimo di 30 canali privati e ogni canale privato può 
 Quando si crea un team da uno esistente, eventuali canali privati nel team esistente non verranno copiati.
 
 Le notifiche dai canali privati non sono incluse nelle email di attività perse in questo momento.
+
+I criteri di conservazione non sono supportati per i messaggi nei canali privati.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
