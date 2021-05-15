@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 200e3c34c5c7136a441f492d0228c6af6f551a94
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: 8c54a38a547708b78f652096cdad577088283c5b
+ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909150"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "52469648"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
@@ -57,7 +57,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - viene visualizzata la scheda **Attività**.
   - Teams acquisisce un evento della scheda **Attività**.
 - **activityTypeDropdown**: acquisisce l'utilizzo del filtro attività per passare da **Le mie attività** a **Feed**.
-- **addChannel**: aggiunta di un canale. Questo elemento contiene i dati relativi all'efficacia della creazione di un canale.
+- **addChannel**: aggiunta di un canale. Questo elemento fornisce dati sulla creazione corretta di un canale.
 - **addMember**: si attiva quando il pulsante **Invita persone** è selezionato nel menu **Altro**.
 - **addMembers**: aggiunge membri a un team o a un canale privato.
 - **addToCalendar**: seleziona il pulsante **Aggiungi al calendario** per gli eventi del calendario mancanti nel calendario privato.
@@ -121,7 +121,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **BYOELiveEventJoin**: un utente si unisce a un evento live BYOE (trasmetti il tuo evento).
 - **calendarLiveChatClicked**: chat dalla riunione live nella scheda **Pianificazione**.
 - **calendarMeetingJoin** - Il pulsante **Partecipa riunione** selezionato da un calendario.
-- **calendarTab**: seleziona la scheda **Riunioni** nella barra di scorrimento. È utile per comprendere l'uso del calendario e il confrontarlo con altre app nella parte inferiore della barra di scorrimento, o determinare se si è verificato un errore durante il rendering del post del calendario dopo aver selezionato la barra inferiore.
+- **calendarTab**: selezionare la scheda **Riunioni** nella barra di scorrimento in basso. È utile per comprendere l'uso del calendario e confrontarlo con altre app sulla barra di scorrimento, o determinare se si è verificato un errore durante il rendering del post del calendario dopo aver selezionato la barra di scorrimento.
 - **calendarTabClicked**: nelle circostanze elencate di seguito, questo mostrerà l'uso del calendario e consentirà di confrontarlo con altre app della barra di spostamento nella barra di scorrimento inferiore. È possibile usare questa funzione per determinare se si è verificato un errore quando:
   - viene mostrata la scheda **Pianifica**.
   - la barra **Riunioni** viene selezionata nella barra di scorrimento inferiore.
@@ -222,7 +222,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - si disattiva il video.
   - viene selezionato il pulsante Video durante una riunione live o una chiamata.
 - **callPark** si attiva quando:
-  - viene selezionato **Parcheggia chiamata** nel menu **...**.  
+  - viene selezionato **Parcheggia chiamata** nel menu **...**.
   - viene selezionato il pulsante **Riprendi**.
   - viene selezionato **Rispondi** nella finestra di dialogo Riprendi.
   - viene selezionato **Annulla** nella finestra di dialogo Riprendi.
@@ -359,6 +359,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **composeParticipantAdded**: quando si aggiunge un partecipante all'app Turni.
 - **composeSearchResult**: selezione del risultato dell'estensione messaggio, utile per comprendere la pertinenza dei risultati di ricerca dell'app. Inoltre, migliora la telemetria di invio dei messaggi con i dati dell'app.
 - **composeSelectExtension**: toccare un’app ME.
+- **composeSendSmartReply**: si fa clic su un elemento di risposta intelligente.
 - **composeSendMessage**: migliora la telemetria di invio dei messaggi con i dati dell'app.
 - **confirmAudioOn**: un utente conferma che vuole attivare l'audio.
 - **confirmlFileShare** - viene selezionato **Condividi** nella finestra di dialogo di conferma.
@@ -399,7 +400,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **createPlannerTask**: verifica una chiamata al servizio Planner. Conferma che un'attività è stata creata correttamente in un elenco di attività condivise.
 - **createShiftClicked**: quando un manager seleziona **Crea un turno**.
 - **createShiftOrTimeOffClicked**: si attiva se si seleziona **Crea un turno** oppure **Permesso**.
-- **createTask**: usato quando l'azione di creazione non riesce, controlla le chiamate al servizio Planner. Conferma che un'operazione di creazione di un'attività non è riuscita.
+- **createTask**: viene usato quando l'azione di creazione non riesce, controlla la chiamata al servizio Planner. Conferma che un'operazione di creazione dell'attività non è riuscita.
 - **createTaskList**: quando un utente accede alla visualizzazione Crea piano dalla visualizzazione Home.
 - **createTeam** fornisce dati di successo sulla creazione o sull'azione di scarto per la creazione di un nuovo team, quando:
   - il pulsante **Fatto** viene selezionato nella pagina **Crea team**.
@@ -489,6 +490,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **editNavigation** -  viene selezionato **Riordina** nel menu **Altro** per modificare l'ordine delle app nella barra inferiore.
 - **editRsvpMeetingOptions**: selezionare **conferma di partecipazione** per cambiare la selezione precedente.
 - **editShiftClicked**: modificare un turno.
+- **editSmartReply**: viene modificato un elemento di risposta intelligente.
 - **editTeam**: un utente tocca un pulsante per la modifica di un team di cui è proprietario o amministratore.
 - **editTeam, editChannel** è relativo all'aggiunta con succeso di membri in un team e alla creazione con successo di un team esistente quando:
   - viene selezionato il pulsante **Annulla** nella pagina **Aggiungi membri** (membro o team esistente).
@@ -522,7 +524,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **expand/collapse**: sezione contatti dispositivo o contatti aziendali.
 - **expandCollapseSection** : toccare un'intestazione di sezione per espandere o comprimere una sezione.
 - **Previsto: atMention - Android: chatSendMessage - iOS: sendMsg**: @menzionare un bot in una casella di composizione.
-- **Previsto: botClickCardAction - Android: showCard - iOS: missing**: toccare i pulsanti della scheda. Le schede sono costrutti chiave della piattaforma e misurare il loro utilizzo e modello è necessario per comprendere l'uso della piattaforma e tenere d'occhio potenziali problemi dal lato client.
+- **Previsto: botClickCardAction - Android: showCard - iOS: missing**: toccare i pulsanti della scheda. Le schede sono costrutti principali della piattaforma e la misura dell'utilizzo e dello schema è necessaria per comprendere l'utilizzo della piattaforma e tenere traccia dei potenziali problemi sul lato client.
 - **Previsto: chatSendMessage - iOS: composeSendMessage**: toccare **Rispondi** e rispondere a una chat bot in un canale.
 - **Previsto: composeSendMessage - Android: replyChannel - iOS: mancante**: toccare **Rispondi** e rispondere a una chat bot in un canale.
 - **Previsto: messageLike - Android: reactLike_CM**: mettere mi piace su un messaggio bot.
@@ -560,13 +562,13 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **galleryImage**: immagine caricata - galleria.
 - **get_directions_clicked**: viene selezionato il pulsante **Ottieni indicazioni**.
 - **goToNotificationSettings**: andare alla pagina delle impostazioni di notifica dalla finestra di dialogo **Abbiamo aggiornato le impostazioni di notifica**.
-- **GPSPromptClicked**: viene selezionato **Consenti** o **Non consentire** in un avviso OS. consentendo il GPS o meno.
+- **GPSPromptClicked**: viene selezionata l'opzione **Consenti** o **Non consentire** in una richiesta del sistema operativo, consentendo o meno la funzione GPS.
 - **group_map_closed**: un utente apre una visualizzazione mappa da una chat.
 - **group_map_open**: un utente chiude una visualizzazione mappa.
 - **groupCallJoin**: un utente partecipa a una chiamata di gruppo.
 - **groupClicked**: tiene traccia di quando un utente seleziona il turno del gruppo.
 - **guideMe**: gli utenti selezionano un banner che li informa su un'app di terze parti che blocca le notifiche e offre una guida alla risoluzione dei problemi.
-- **hamburgerMenu**: passare al menu hamburger. Il menu dell'hamburger contiene azioni importanti, come il cambio di account, le impostazioni di notifica, dei dati e del profilo.
+- **hamburgerMenu**: passare al menu hamburger. Il menu contiene azioni importanti, come il cambio di account, le impostazioni di notifica, l'impostazione dei dati e le impostazioni del profilo.
 - **handoffComplete**: una riunione o una chiamata è stata trasferita su questo dispositivo.
 - **handoffJoi**: viene selezionata un’opzione di trasferimento nel foglio di lavoro.
 - **hardwareAudioOff**: disattiva l'audio tramite i pulsanti hardware.
@@ -635,7 +637,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **location_family_sync**: mostra i membri di un gruppo famiglia che sono stati creati nell'app per famiglie MSA. Conferma che vengono visualizzati tutti i membri della famiglia a cui può essere dato il consenso.
 - **location_group_map_sync**: viene aperta la visualizzare mappa.
 - **location_map_load**: carica la visualizzazione mappa.
-- **location_map_markers_load**: carica la visualizzazione mappa. Conferma che gli indicatori di posizione per tutti gli utenti che condividono attivamente vengono visualizzati correttamente nella visualizzazione mappa.
+- **location_map_markers_load**: viene caricata la visualizzazione della mappa. Conferma che gli indicatori di posizione per tutti gli utenti che condividono attivamente sono visualizzati correttamente nella visualizzazione della mappa.
 - **location_message_send**: un utente avvia una sessione di condivisione della posizione.
 - **location_data_use_privacy_denied**: un utente ignora o seleziona **Non ora** in un popup che spiega come usare i dati di una posizione per TFL.
 - **location_data_use_privacy_granted**: un utente seleziona **Consenti** in un popup che spiega come usare i dati di una posizione per TFL.
@@ -645,6 +647,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **loginFailed**: l’utente non ha potuto eseguire l'accesso.
 - **loginSuccess**: l’utente ha potuto eseguire l'accesso.
 - **manageBlockedNumbers**: accedere a numeri bloccati tramite impostazioni.
+- **manualSendMessage** - viene inviato un messaggio manualmente.
 - **mapAppPicker**: quando un utente seleziona l'app di mapping da usare quando tocca una scheda di percorso.
 - **markAsRead**: segnare come già letto.
 - **markAsUnread**: segnare come da leggere.
@@ -712,7 +715,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **muteParticipant**: disattivare l’audio di un partecipante (passare al foglio di lavoro).
 - **my_location_button_clicked**: l'utente centra la mappa sulla propria posizione selezionando il pulsante **La mia posizione**.
 - **my_location_clicked**: l'utente centra la mappa sulla propria posizione selezionando il **punto blu** sulla mappa.
-- **myShiftPickerClicked**: viene registrato soltanto se la richiesta di invio è un cambio o un'offerta. La selezione **Mio turno** viene selezionata.
+- **myShiftPickerClicked**: viene registrato solo se la richiesta inviata è uno scambio o un'offerta. Viene selezionata l'opzione **Il mio turno**.
 - **nameGroupChat**: nome chat di gruppo.
 - **nativeTimeClockBreak**: un pausa sul marcatempo.
 - **nativeChatLink**: viene selezionato un collegamento alla chat nativa.
@@ -1003,7 +1006,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **shiftDetailsTodaysCoworkers**: nella schermata di registrazione dell’orario in entrata, il pulsate **Inizia** o **Termina pausa** viene selezionato.
 - **shortCircuitContactCount**: Il numero di contatti cortocircuito corrispondenti a quelli ricevuti da un recupero dei contatti.
 - **showBanner**: numero di volte in cui viene visualizzato il banner **Wi-Fi connesso, Internet non disponibile**.
-- **showCard**: toccare i pulsanti della scheda. Le schede sono costrutti chiave della piattaforma e misurare il loro utilizzo e modello è necessario per comprendere l'uso della piattaforma e tenere d'occhio potenziali problemi dal lato client.
+- **showCard**: toccare i pulsanti sulla scheda. Le schede sono costrutti chiave della piattaforma e misurare il loro utilizzo e modello è necessario per comprendere l'uso della piattaforma, tenendo così d'occhio potenziali problemi dal lato client.
 - **shownReadReceiptNotice**: L'utente ha mostrato l'avviso di funzionalità con le opzioni di impostazione.
 - **signIn** - **Accedi** viene selezionato nella home page, o viene premuto il pulsante **Accedi**.
 - **signUp** - **Crea un account gratuito** o **Iscriviti gratis** è selezionato.
@@ -1011,6 +1014,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - viene impostato l’inoltro delle chiamate simultanee.
   - l'inoltro di chiamata simultaneo è abilitato (Ricevo io le chiamate è abilitato e anche lo squillo è impostato).
 - **skipVerificationForLink**: un utente THW sceglie di ignorare la verifica.
+- **smartReply**: viene selezionato l'interruttore di risposta intelligente.
 - **SMSSendMessage**: l'utente invia un messaggio SMS.
 - **sortChanged**: si attiva quando l'utente modifica l'ordinamento durante la visualizzazione di un elenco di attività.
 - **startEditing** -  pulsante **Modifica** selezionato.
@@ -1044,9 +1048,9 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **switchTeamsDialogTriggered**: un utente visualizza la scheda **Turni**.
 - **tabActionCopyLink**: in che modo gli utenti scoprono e utilizzano il collegamento di copia della scheda sui dispositivi mobili.
 - **tabActionMoreOptions**: comprendere l'utilizzo dei puntini di sospensione (**...**) dall'interno di una scheda.
-- **tabActionOpenInBrowser**: aprire in uso del browser. Questa operazione è necessaria per capire se gli utenti preferiscono aprire una scheda all'esterno di Teams.
-- **tabActionOpenInBrowserFromTab**: comprendere l'utilizzo dell'apertura nel browser dall'interno di una scheda per ulteriori opzioni: individuazione e uso.
-- **tabActionOpenInTeams**: aprire in uso. Questa è la chiave per capire se la scheda può essere impostata per impostazione predefinita per essere aperta in Teams.
+- **tabActionOpenInAction**: uso di Apri nel browser. È necessario per capire se gli utenti preferiscono aprire una scheda all'esterno di Teams.
+- **tabActionOpenInBrowserFromTab**: informazioni sull'utilizzo di Apri nel browser dall'interno di una scheda per altre opzioni: individuazione e uso.
+- **tabActionOpenInTeams**: uso di Apri. È fondamentale per capire se la scheda può essere impostata per impostazione predefinita per essere aperta in Teams.
 - **tabActionRemove**: capire in che modo è possibile individuare l'opzione di eliminazione e l'uso della funzionalità.
 - **tabActionRemove**: capire quanto è rilevabile la ridenominazione e l'uso della funzionalità.
 - **tabActionSetting, Android - aggiornamento**: come individuare e usare la configurazione della scheda nei dispositivi mobili.
@@ -1065,15 +1069,15 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **tasksAppLaunchDashboard**: l'app attività è aperta dal riquadro dashboard del pulsante **Vedi tutti**, controllare l'avvio dell'app tramite il servizio MT.
 - **tasksAppLaunchDefault**: l'app attività viene aperta nel cassetto inferiore, controllare l'avvio dell'app tramite il servizio MT.
 - **tabCalendarClicked**: un utente ha scelto un team dalla selezione team.
-- **teamChannelChanged**: generato quando un utente seleziona e accede a un piano dall'elenco piano. Inviato solo a appInsights, non ad Aria.
+- **teamChannelChanged**: attivato quando un utente seleziona e passa a un piano dall'elenco dei piani. Inviato solo ad AppInsights, non ad Aria.
 - **teamCreate**: un utente seleziona l'opzione per creare un nuovo team.
 - **teamEdit**: un utente modifica alcuni aspetti di un team di cui è proprietario o che gestisce.
 - **teamNav**: visualizzare opzioni menu per un team.
 - **teamsDeviceCallResumed**: un utente con una periferica Bluetooth collegata (dock per telefoni cellulari) riattiva una chiamata in attesa.
 - **teamSelectedClicked**: quando un utente seleziona **Team selezionato** da una scheda attività.
 - **teamShiftPickerClicked**: quando un utente aggiunge una nuova voce per una pausa. L'evento viene registrato dopo che l'utente ha salvato le modifiche.
-- **tenantSwitch**: nell’opzione Cambia tenant. Metriche sulle funzionalità per l'MTMA (più tenant e account multipli), che consente di identificare e correggere i problemi in modo proattivo e di offrire un'esperienza di commutazione fluida.
-- **tenantSwitchUnsupportedError**: errore tenant non supportato (quando un utente vede l'errore). Metriche per il successo della funzionalità per MTMA (tenant multiplo e account multiplo), fornisce la telemetria per l'account o gli errori di commutazione tenant, in modo da poter identificare e risolvere i problemi in modo proattivo e offrire un'esperienza di commutazione fluida.
+- **tenantSwitch**: nel cambio tenant. Metriche sulla riuscita delle funzionalità per l'MTMA (diversi tenant e account), che consente di identificare e correggere i problemi in modo proattivo e di offrire un'esperienza di passaggio uniforme.
+- **tenant UnsupportedError**: errore di tenant non supportato (quando un utente visualizza l'errore). Le metriche sulla riuscita delle funzionalità per MTMA (diversi tenant e account), forniscono la telemetria sugli errori di passaggio di account o tenant, in modo che è possibile identificare e correggere i problemi in modo proattivo e offrire un'esperienza di passaggio uniforme.
 - **timeClockClicked**: un utente seleziona il pulsante **Marcatempo** nella scheda turni personali.
 - **timeOffReasonClicked**: determina se viene citato un motivo per il periodo di ferie.
 - **timesheetAddClicked**: quando un utente aggiunge una nota alla modica della pausa. L'evento viene registrato dopo che l'utente ha salvato le modifiche.
@@ -1109,8 +1113,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **updatePersonalTask**: conferma che è stata aggiornata correttamente un’attività personale.
 - **updatePlaybackSpeedVoicemail**: il valore della velocità di riproduzione della segreteria telefonica è stato modificato.
 - **updateTask**: conferma che l'azione di aggiornamento delle attività non è riuscita.
-- **updateTaskState**: conferma che lo stato dell'attività è stato aggiornato.
-azione.
+- **updateTaskState**: conferma che lo stato dell'attività è stato aggiornato. Azione.
 - **upgrade**: selezionare il pulsante **Aggiorna** nel menu **Altro**.
 - **uploadFile**: un utente seleziona **Carica da dispositivo**.
 - **uploadSelectedFile** si attiva nelle seguenti circostanze:
@@ -1186,6 +1189,9 @@ azione.
 - **load_smart_task_list**: conferma il recupero riuscito delle attività di un elenco attività smart per la visualizzazione elenco attività.
 - **rename_personal_plan**: conferma la riuscita ridenominazione di un elenco attività personale.
 - **rename_planner_plan**: conferma la riuscita ridenominazione di un elenco attività condivise.
+- **smart_reply_enabled**: conferma che la risposta intelligente è abilitata per l'utente corrente.
+- **smart_reply_received**: conferma la ricezione di un suggerimento per una risposta intelligente.
+- **smart_reply_banned**: conferma che non è possibile visualizzare una risposta intelligente per l'utente corrente.
 - **update_planner_task_and_nav_to_view**: conferma il corretto aggiornamento di un elemento di attività condivisa e il tempo impiegato da un utente per arrivare alla visualizzazione dopo l'azione.
 - **update_personal_task_and_nav_to_view**: conferma il corretto aggiornamento di un elemento dell'attività personale e il tempo impiegato da un utente per arrivare alla vista dopo **updatePlannerTask**. Conferma che un utente ha aggiornato correttamente un'attività in un elenco di attività condivise. 
 

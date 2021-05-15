@@ -28,7 +28,7 @@ ms.custom:
 - seo-marvel-jun2020
 ms.openlocfilehash: f6048d2413ea92e377358af43c7348abbbe00be1
 ms.sourcegitcommit: ca2230a981a1e3c03437d1ecb8727d66ad6967f9
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/14/2021
 ms.locfileid: "51760599"
@@ -76,7 +76,7 @@ Utilizza la piattaforma completa per riunioni in Microsoft Teams per pianificare
 
 ## <a name="teams-policy-packages"></a>Pacchetti di criteri per Teams
 
-Applica i pacchetti di criteri di Teams per definire cosa possono fare i diversi ruoli in Teams. Ad esempio, specificare criteri per:
+Applicare i pacchetti di criteri di Teams per definire i compiti dei diversi ruoli in Teams. Ad esempio, specificare i criteri per:
 
 - Operatori sanitari, ad esempio infermieri, caposala, medici e operatori sociali in modo che abbiano accesso completo alle chat, alle chiamate, alla gestione dei turni e alle riunioni.
 - Operatori dell'informazione nella tua organizzazione sanitaria, ad esempio personale in ambito IT e finanziario e responsabili della conformità possono avere accesso completo alle chat, alle chiamate e alle riunioni.
@@ -110,9 +110,9 @@ Riunisci il tuo team sanitario per coordinare l'assistenza e collaborare con Mic
 Microsoft Teams consente a medici, infermieri e altro personale di collaborare in modo efficiente con le funzionalità di collaborazione incluse in Microsoft Teams, come:
 
 - Crea team e canali per i team sanitari e gli operatori dell'informazione. Usa i canali con le schede come metodo per strutturare il loro lavoro, con ulteriore aiuto dalle schede in cui potranno bloccare fonti di informazioni.
-- Chatta, pubblica messaggi e comunica. Il tuo team può portare avanti conversazioni costanti su diversi pazienti che richiedono attenzione.
-- Chiama e incontra i membri del team sanitario. Configura riunioni individuali o usa le riunioni del canale per gestire le riunioni quotidiane, con la potenza delle funzionalità audio, video, condivisione dello schermo, registrazione e trascrizione di Teams.
-- Archiviare e condividere i file e documenti. Il tuo team sanitario fa parte di un unico team virtuale che lavora e collabora su documenti di Office.
+- Chatta, pubblica messaggi e comunica. Il tuo team può avere conversazioni permanenti su diversi pazienti bisognosi di attenzioni.
+- Chiama e organizza riunioni con i membri del team sanitario. Configura le riunioni individuali o usa le riunioni del canale per gestire le riunioni quotidiane, con l'efficacia delle funzionalità audio, video, di condivisione dello schermo, registrazione e trascrizione di Teams.
+- Archivia e condividi file e documenti. Il team sanitario fa parte di un unico team virtualizzato che lavora e collabora ai documenti di Office.
 
 Inoltre, il tuo team può usare le app in Teams per:
 
@@ -128,9 +128,9 @@ Inoltre, il tuo team può usare le app in Teams per:
 
 L'app Elenchi in Teams consente ai team di tenere traccia delle informazioni e organizzare il lavoro. L’app è preinstallata per tutti gli utenti di Teams ed è disponibile come scheda in ogni team e canale. Gli elenchi possono essere creati da zero, da modelli predefiniti o importando dati in Excel.
 
-I team sanitari possono usare il modello Pazienti per iniziare. Possono creare elenchi per tenere traccia delle esigenze e dello stato dei pazienti. I dati dei pazienti esistenti su fogli di calcolo Excel possono essere importati per creare un elenco in Teams. Questi elenchi possono essere utilizzati per scenari come turni e monitoraggio del paziente per coordinare l'assistenza.
+I team sanitari possono utilizzare il modello Pazienti per iniziare. Possono creare elenchi per tenere traccia delle esigenze e dello stato dei pazienti. I dati dei pazienti esistenti su fogli di calcolo Excel possono essere importati per creare un elenco in Teams. Questi elenchi possono essere utilizzati per scenari come turni e monitoraggio del paziente per coordinare l'assistenza.
 
-Ad esempio, un caposala crea un elenco di pazienti in un team che include tutti i membri del team sanitario. Durante i giri visite, il team sanitario accede a Teams sui propri dispositivi mobili e aggiorna le informazioni sui pazienti nell'elenco, che tutti i membri del team possono visualizzare per rimanere sincronizzati. Quando il team sanitario si riunisce per discutere e valutare le metriche chiave delle prestazioni di salute per garantire che un paziente sia sulla giusta strada per la dimissione, possono condividere queste informazioni utilizzando Teams su un ampio schermo. i membri del team sanitario che non sono sul posto possono partecipare da remoto.
+Ad esempio, un'infermiera caposala crea un elenco di pazienti in un team che include tutti i membri del team sanitario. Durante i turni, i membri del team sanitario accedono a Teams sui propri dispositivi mobili e aggiornano le informazioni sui pazienti nell'elenco che tutti i membri del team possono visualizzare per rimanere aggiornati. Durante le riunioni multidisciplinari in cui il team discute e valuta i parametri delle prestazioni sanitarie principali per assicurarsi che i pazienti proseguano lungo il percorso per la dimissione, i membri possono condividere le informazioni con Teams su uno schermo di grandi dimensioni. I membri del team sanitario che non sono presenti possono partecipare in remoto.
 
 Di seguito è riportato un elenco di esempio impostato per il giro visite dei pazienti.
 
@@ -140,7 +140,7 @@ Ulteriori informazioni su [Gestire l'app Elenchi per l'organizzazione in Teams](
 
 ### <a name="track-and-monitor-tasks-with-the-tasks-app"></a>Tieni traccia e monitora le attività con l'app Tasks
 
-Usare [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) in Teams per monitorare le cose da fare per il team sanitario. Il tuo team sanitario può creare, assegnare e pianificare attività, classificare attività e aggiornare lo stato in qualsiasi momento, da qualsiasi dispositivo che esegue Teams. I professionisti IT e gli amministratori possono anche pubblicare attività in team specifici per l'organizzazione. Ad esempio, è possibile pubblicare un set di attività per i nuovi protocolli di sicurezza o un nuovo passaggio di assunzione da usare in un ospedale.
+Usare [Tasks](https://support.microsoft.com/office/use-the-tasks-app-in-teams-e32639f3-2e07-4b62-9a8c-fd706c12c070) in Teams per monitorare le cose da fare per il team sanitario. Il tuo team sanitario può creare, assegnare e pianificare attività, classificare attività e aggiornare lo stato in qualsiasi momento, da qualsiasi dispositivo che esegue Teams. I professionisti e gli amministratori IT possono anche pubblicare attività in team specifici per l'organizzazione. Ad esempio, si potrebbero pubblicare una serie di attività per i nuovi protocolli di sicurezza o un nuovo passaggio per l'assunzione da usare in ospedale.
 
 Per ulteriori informazioni vedere [Gestire l'app Tasks per l'organizzazione in Microsoft Teams](../../manage-tasks-app.md)
 
