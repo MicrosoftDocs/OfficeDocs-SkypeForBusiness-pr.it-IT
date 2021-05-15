@@ -23,12 +23,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare Telefono Microsoft sistema per l'azienda. "
-ms.openlocfilehash: eba13d07c41af8b449d0164542c4d241b1b54f66
-ms.sourcegitcommit: 272e8cf0075a566f055801433c9eb0313050530f
+ms.openlocfilehash: 2d4f4bada45242ddd5a3aa48308d2acaad495a23
+ms.sourcegitcommit: a628b22c9a0ef3bcd7dee3f308a79b4c427872cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 05/14/2021
-ms.locfileid: "52486360"
+ms.locfileid: "52491779"
 ---
 # <a name="heres-what-you-get-with-phone-system"></a>Vantaggi offerti dal Sistema telefonico
 
@@ -52,7 +52,7 @@ Sistema telefonico fornisce le caratteristiche seguenti. Se non diversamente spe
 |Risposta/avvio della chiamata (per nome e numero)  <br/> |Consente agli utenti di rispondere alle chiamate in ingresso con un tocco e di effettuare chiamate in uscita componendo il numero di telefono completo o facendo clic su un nome nel client.  <br/> |
 |[Opzioni di inoltro di chiamata e squillo simultaneo](https://support.office.com/article/call-forwarding-call-groups-and-simultaneous-ring-in-teams-a88da9e8-1343-4d3c-9bda-4b9615e4183e) <br/> |Consente agli utenti di configurare le regole di inoltro in modo che le chiamate possano essere inoltrate ovunque o che le chiamate possano essere inoltrate ai colleghi o alla segreteria telefonica.  <br/> |
 |[Ritiro della chiamata di gruppo e inoltro al gruppo](call-sharing-and-group-call-pickup.md) <br/> | Consente agli utenti di condividere le chiamate in arrivo con i colleghi in modo che i colleghi possano rispondere alle chiamate che si verificano quando l'utente non è disponibile. Meno disturbante per i destinatari rispetto ad altre forme di condivisione delle chiamate ,ad esempio inoltro di chiamata o squillo simultaneo, perché gli utenti possono configurare la modalità di notifica di una chiamata condivisa in arrivo. |
-|[Trasferire una chiamata e un trasferimento consultivo](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0) <br/> |Consente agli utenti di trasferire le chiamate a un'altra persona. Oppure, se devono uscire dall'ufficio ma vogliono continuare la conversazione, possono trasferire le chiamate dal pc o dal telefono IP al cellulare.  <br/> Si noti che *gli utenti devono* essere abilitati per la voce per ricevere chiamate trasferite da un altro utente. |
+|[Trasferire una chiamata e un trasferimento consultivo](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0) <br/> |Consente agli utenti di trasferire le chiamate a un'altra persona. Oppure, se devono uscire dall'ufficio ma vogliono continuare la conversazione, possono trasferire le chiamate dal pc o dal telefono IP al cellulare.  <br/> Si noti che *gli utenti non devono* essere abilitati alla voce per ricevere chiamate trasferite da un altro utente. |
 |[Trasferisci alla segreteria telefonica a metà chiamata*](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0) <br/> | Consente agli utenti di eseguire il trasferimento alla segreteria telefonica durante una chiamata. |
 |[Parcheggio di chiamata e recupero](call-park-and-retrieve.md)  <br/> | Consente agli utenti di mettere una chiamata in attesa nel servizio Teams nel cloud. Quando una chiamata è parcheggiata, il servizio genera un codice univoco per il recupero delle chiamate. L'utente che ha parcheggiato la chiamata o un altro utente può quindi usare il codice e un'app o un dispositivo supportato per recuperare la chiamata. <br/> |
 |Chiama il numero di telefono dalla ricerca  <br/> | Consente agli utenti di effettuare una chiamata dalla casella di ricerca usando il comando /call e specificando un nome o un numero. <br/> |

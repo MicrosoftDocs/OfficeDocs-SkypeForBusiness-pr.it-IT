@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle opzioni di composizione e riconoscimento vocale dell'operatore automatico e della coda di chiamata in Teams.
-ms.openlocfilehash: f62a04735d386637489d52956e6a064a2eba1e4e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ee79f5024ee15fc1b8f00ecd5026f2eb5a9b4b22
+ms.sourcegitcommit: a628b22c9a0ef3bcd7dee3f308a79b4c427872cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098442"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "52491813"
 ---
 # <a name="auto-attendant-and-call-queue-dialing-and-voice-recognition-reference"></a>Informazioni di riferimento sulla composizione e il riconoscimento vocale dell'operatore automatico e della coda di chiamata
 
@@ -35,9 +35,9 @@ Chiama per nome è una caratteristica di un operatore automatico noto anche come
 
 ## <a name="searching-for-users"></a>Ricerca di utenti
 
-Gli utenti che desideri trovare e raggiungere usando Chiama per nome non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono essere VoIP aziendale abilitati per gli utenti **di Skype for Business Server.** La chiamata per nome sarà anche in grado di trovare e trasferire chiamate a utenti di Microsoft Teams ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare in modo esplicito La chiamata in base al nome in un operatore automatico.
+Gli utenti che desideri trovare e raggiungere usando Chiama per nome non devono avere un numero di telefono o avere piani di chiamata **assegnati,** ma devono essere abilitati VoIP aziendale per gli utenti Skype for Business Server chiamata. La chiamata per nome sarà anche in grado di trovare e trasferire chiamate a Microsoft Teams utenti ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare in modo esplicito La chiamata in base al nome in un operatore automatico.
 
-Chiama per interno è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte del tastierino del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta cercando di raggiungere e quindi trasferire la chiamata. Gli utenti che desideri trovare e raggiungere usando Chiama per interno non devono avere un numero di telefono o avere piani di chiamata assegnati, ma devono essere abilitati VoIP aziendale per gli utenti **di Skype for Business Server.** Sarà anche necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. La chiamata per interno sarà anche in grado di trovare e trasferire chiamate a utenti di Microsoft Teams ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare esplicitamente La chiamata per interno in un operatore automatico.
+Chiama per interno è una caratteristica di un operatore automatico che fa anche parte della ricerca nella directory. Consente alle persone che chiamano l'operatore automatico di usare la voce (riconoscimento vocale) o le risposte del tastierino del telefono (DTMF) per immettere l'estensione del telefono dell'utente che sta cercando di raggiungere e quindi trasferire la chiamata. Gli utenti che desideri trovare e raggiungere usando Chiama per interno non devono avere un numero di telefono o avere piani di chiamata **assegnati,** ma devono essere abilitati VoIP aziendale per gli utenti Skype for Business Server . Sarà anche necessario disporre di un piano di chiamata configurato in modo appropriato per gli utenti. Chiama per interno sarà anche in grado di trovare e trasferire chiamate a Microsoft Teams utenti ospitati in diversi paesi o aree geografiche per organizzazioni multi-nazionali. Dati i prerequisiti necessari, è possibile abilitare esplicitamente La chiamata per interno in un operatore automatico.
 
 ### <a name="maximum-directory-size"></a>Dimensione massima dell'elenco
 
@@ -80,7 +80,7 @@ Ci sono diversi caratteri speciali che vengono utilizzati per la ricerca di pers
 
 Gli utenti possono cercare altri utenti nell'organizzazione con la voce (riconoscimento vocale). Possono anche raggiungere chiunque in Active Directory pronunciando il nome completo o parziale della persona che sta cercando di individuare. L'uso di input vocali consente di riconoscere i nomi in vari formati, tra cui Nome, Cognome, Nome + Cognome o Cognome + Nome.
   
-È possibile abilitare il riconoscimento vocale per un operatore automatico, ma la voce del tastierino del telefono (DTMF) non è disabilitata. L'immissione del tastierino del telefono può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato sull'operatore automatico.
+È possibile abilitare il riconoscimento vocale per un operatore automatico, ma la voce del tastierino del telefono (DTMF) non è disabilitata. Telefono voce del tastierino numerico può essere usata in qualsiasi momento, anche se il riconoscimento vocale è abilitato sull'operatore automatico.
   
 Come per la voce del tastierino del telefono, se vengono trovati più nomi, la persona che chiama sente un elenco di nomi tra cui selezionare.
   
@@ -101,33 +101,9 @@ I chiamanti possono pronunciare nomi nei formati seguenti:
   
 ## <a name="language-support"></a>Supporto della lingua
 
-Le lingue seguenti sono disponibili per la sintesi vocale usata con le richieste in uscita:
-  
-|-|-|-|
-|:-----|:-----|:-----|
-|Arabo (EG)  |Inglese (NZ)  |Coreano (KO)  |
-|Cinese (HK)  |Inglese (UK) |Norvegese (NO)  |
-|Cinese (TW) |Inglese (US) |Polacco (PL)  |
-|Cinese (ZH) |Finlandese (FI) |Portoghese (BR) |
-|Danese (DA)  |Francese (CA)  |Portoghese (PT) |
-|Olandese (NL)   |Francese (FR)  |Russo (RU) |
-|Inglese (AU)  |Tedesco (DE) |Spagnolo (ES)  |
-|Inglese (CA)  |Italiano (IT) |Spagnolo (MX)|
-|Inglese (IN)  |Giapponese (JP) |Svedese (SV)|
+Il supporto della lingua per la sintesi vocale e il riconoscimento vocale è disponibile in [queste lingue supportate.](create-a-phone-system-auto-attendant-languages.md)
 
-L'input di riconoscimento vocale per gli operatori automatici è disponibile nelle lingue seguenti:
-  
-|-|-|
-|:-----|:-----|
-|Cinese (ZH)  |Francese (FR)  |
-|Inglese (AU)  |Tedesco (DE)  |
-|Inglese (CA)  |Italiano (IT)  |
-|Inglese (IN)  |Giapponese (JP)  |
-|Inglese (UK)  |Portoghese (BR)  |
-|Inglese (US)  |Spagnolo (ES)  |
-|Francese (CA)   |Spagnolo (MX)  |
-
-I comandi vocali seguenti sono disponibili nelle 14 lingue supportate per il riconoscimento vocale:
+Per il riconoscimento vocale sono disponibili i comandi vocali seguenti: 
   
 |Comando vocale| Corrisponde a |
 |:-----|:-----|

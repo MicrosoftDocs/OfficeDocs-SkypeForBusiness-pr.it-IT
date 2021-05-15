@@ -22,27 +22,27 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per Microsoft Teams.
-ms.openlocfilehash: 9efd30eb91e9760f800dd24935724d2a3cdd97c2
-ms.sourcegitcommit: c56c87e912a4b3729c7c52d8de78fd4d24448a8d
+ms.openlocfilehash: 2aef87d1a7885df01b02a5708ac1079ea8021add
+ms.sourcegitcommit: 745b37921a878f1b524a274bfb2fd0732716a5c8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "51926052"
+ms.lasthandoff: 05/15/2021
+ms.locfileid: "52498791"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
-Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'interfaccia di amministrazione di Microsoft Teams o con PowerShell.
+Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
 
-Assicurarsi di aver letto Pianificare gli operatori automatici e [](plan-auto-attendant-call-queue.md#getting-started) le code di chiamata di [Teams](plan-auto-attendant-call-queue.md) e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
+Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le [](plan-auto-attendant-call-queue.md#getting-started) code di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
 
 Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle destinazioni seguenti: <a name="call-routing-options" ></a>
 
 - **Operatore:** l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come qualsiasi altra destinazione in questo elenco.
-- **Persona dell'organizzazione,** una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale con Skype for Business Server.
+- **Persona dell'organizzazione,** una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale usando Skype for Business Server.
 - **App vocale:** un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
-- **Segreteria telefonica:** la cassetta postale vocale associata a un gruppo di Microsoft 365 specificato dall'utente.
+- **Segreteria telefonica:** la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente.
 - **Numero di telefono esterno:** qualsiasi numero di telefono. (Vedere [dettagli tecnici sul trasferimento esterno).](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)
-- **Annuncio (file audio)** - Riprodurre un file audio. Messaggio di annuncio registrato caricato salvato come audio in . WAV, . MP3 o . Formato WMA. La registrazione non può essere superiore a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
+- **Annuncio (file audio)** - Riprodurre un file audio. Messaggio di annuncio registrato caricato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere superiore a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 - **Annuncio (digitato):** digitare un messaggio. Testo che deve essere letto dal sistema. È possibile immettere fino a 1000 caratteri. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
@@ -52,7 +52,13 @@ Durante la configurazione di un operatore automatico, verrà richiesto di scegli
 > - **Trascrizione** (impostazione predefinita: disattivata): se abilitato, il messaggio della segreteria telefonica verrà trascritto e incluso come parte del messaggio di posta elettronica.
 > - **Elimina messaggio di** saluto (impostazione predefinita: disattivato): se abilitato, il messaggio di sistema standard "Lascia un messaggio dopo il tono. Al termine, riagganciare o premere il tasto hash per altre opzioni". verrà soppresso.
 
-Per configurare un operatore automatico, nell'interfaccia di amministrazione di Teams espandere **Voce,** selezionare **Operatori automatici** e quindi **aggiungi**.
+Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori automatici** e quindi **selezionare Aggiungi**.
+
+## <a name="video-demonstration"></a>Dimostrazione video
+
+Questo video mostra un esempio di base di come creare un operatore automatico in Teams.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEnCG?autoplay=false]
 
 ## <a name="general-info"></a>Informazioni generali
 
@@ -79,7 +85,7 @@ Per configurare un operatore automatico, nell'interfaccia di amministrazione di 
 
 Scegliere se si vuole riprodurre un messaggio di saluto quando l'operatore automatico risponde a una chiamata.
 
-Se si seleziona **Riproduci un file audio,** è possibile usare il pulsante Carica **file** per caricare un messaggio di saluto registrato salvato come audio in . WAV, . MP3 o . Formato WMA. La registrazione non può essere superiore a 5 MB.
+Se si seleziona **Riproduci un file audio,** è possibile usare il pulsante Upload **file per** caricare un messaggio di saluto registrato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere superiore a 5 MB.
 
 Se si seleziona **Digita un messaggio** di saluto, il sistema leggerà il testo digitato (fino a 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
 
@@ -121,7 +127,7 @@ Se non sono stati assegnati tasti di chiamata, scegliere un'opzione per **La ric
 
 **Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con **Chiamata per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-Gli utenti che si vogliono rendere disponibili per l'estensione Chiamata per interno devono avere un'estensione specificata come parte di uno degli attributi telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
+Gli utenti che si vogliono rendere disponibili per l'estensione Chiamata per interno devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
 
 - OfficePhone
 - HomePhone
@@ -139,7 +145,7 @@ Il formato necessario per immettere l'interno nel campo del numero di telefono d
 - Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678x5678"
 - Esempio 3: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "x5678"
 
-È possibile impostare l'estensione nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com/) o nell'interfaccia [di amministrazione di Azure Active Directory.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
+È possibile impostare l'estensione [nell'interfaccia Microsoft 365 o](https://admin.microsoft.com/) nell'Azure Active Directory di [amministrazione.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
 > [!NOTE]
 > Se si vogliono usare  sia le  funzionalità Chiama per nome che Chiama per interno, è possibile assegnare un tasto di composizione all'operatore automatico principale per raggiungere un operatore automatico abilitato per Chiama **per nome.** All'interno di tale operatore automatico, è possibile assegnare il tasto 1 (a cui non sono associate lettere) per raggiungere l'operatore automatico Chiama **per** interno.
@@ -192,9 +198,9 @@ Dopo aver aggiunto tutte le festività, selezionare **Avanti.**
 
 ![Screenshot delle opzioni di inclusione ed esclusione dell'ambito di chiamata](media/auto-attendant-dial-scope.png)
 
-*L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti** gli utenti online include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale tramite Skype for Business Server.
+*L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli** utenti online include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale usando Skype for Business Server.
 
-È possibile includere o escludere utenti specifici  selezionando  Gruppo di utenti personalizzato **in** Includi o Escludi e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza. Ad esempio, è consigliabile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
+È possibile includere o escludere utenti specifici  selezionando  Gruppo di utenti personalizzato in Includi o Escludi e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza.  Ad esempio, è consigliabile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
 
 > [!NOTE]
 > L'elenco del nome di un nuovo utente nella directory potrebbe richiedere fino a 36 ore.
@@ -219,7 +225,7 @@ Fare riferimento ai [Prerequisiti per](plan-auto-attendant-call-queue.md#prerequ
 
 - Per un account della risorsa con una licenza piano per [chiamate,](calling-plans-for-office-365.md)il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
 
-- Per un account delle risorse con criteri di routing vocale online licenza sistema telefonico e routing diretto, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
+- Per un account della risorsa con criteri di routing vocale Sistema telefonico License e Direct Routing online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
 
 Il numero di telefono in uscita visualizzato viene determinato nel modo seguente:
 
@@ -228,7 +234,7 @@ Il numero di telefono in uscita visualizzato viene determinato nel modo seguente
     - Se è impostato su Disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
     - Se è impostato su Abilitato, viene visualizzato il numero di telefono dell'account della risorsa.
 
-In un ambiente ibrido di Skype for Business, per trasferire una chiamata dell'operatore automatico alla rete PSTN, creare un nuovo utente locale con l'inoltro di chiamata impostato sul numero PSTN. L'utente deve essere abilitato per VoIP aziendale e assegnare un criterio vocale. Per altre informazioni, vedere [Trasferimento di chiamata dell'operatore automatico a PSTN.](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn)
+In un Skype for Business ibrido, per trasferire una chiamata dell'operatore automatico alla rete PSTN, creare un nuovo utente locale con l'inoltro di chiamata impostato sul numero PSTN. L'utente deve essere abilitato per VoIP aziendale e avere assegnato un criterio vocale. Per altre informazioni, vedere [Trasferimento di chiamata dell'operatore automatico a PSTN.](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn)
 
 ### <a name="create-an-auto-attendant-with-powershell"></a>Creare un operatore automatico con PowerShell
 

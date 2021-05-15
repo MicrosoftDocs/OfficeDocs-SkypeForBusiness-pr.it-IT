@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8cad935092b1b3b99209c45bf61b7ee40d285ea6
-ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
+ms.openlocfilehash: c92f4d0bf3e72f79687fa151567052934b49ba55
+ms.sourcegitcommit: a628b22c9a0ef3bcd7dee3f308a79b4c427872cc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52469658"
+ms.lasthandoff: 05/14/2021
+ms.locfileid: "52491793"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -182,7 +182,7 @@ Il video verrà riprodotto nel lettore video di OneDrive for Business o SharePoi
 
 Lo stream come piattaforma non sarà deprecato nel prossimo futuro. I video attualmente in diretta in Stream rimarranno lì fino a quando non inizieremo a eseguire la migrazione. Al momento della migrazione, questi video verranno migrati anche a OneDrive for Business o SharePoint. Per altre [informazioni, vedere Migrazione classica](/stream/streamnew/classic-migration) di Stream.
 
-**Come si applica un'etichetta di conservazione?**
+**Come si applica un'etichetta di conservazione alle registrazioni Microsoft Teams riunione?**
 
 Vedere [Come applicare automaticamente un'etichetta di conservazione.](/microsoft-365/compliance/apply-retention-labels-automatically?view=o365-worldwide#microsoft-teams-meeting-recordings)
 
@@ -190,7 +190,7 @@ Vedere [Come applicare automaticamente un'etichetta di conservazione.](/microsof
 
 Vedere [Quali criteri hanno la precedenza?](./assign-policies.md#which-policy-takes-precedence).
 
-**Dove si trova la registrazione se l'utente non ha OneDrive for Business o SharePoint?**
+**Dove si trova la registrazione se l'utente non ha OneDrive for Business o SharePoint o se la quota di archiviazione è piena?**
 
 La registrazione verrà atterrato nella posizione di archiviazione temporanea in cui verrà tenuta per 21 giorni. Durante questo periodo, l'organizzatore deve scaricare la registrazione. Se non viene scaricato entro 21 giorni, la registrazione viene eliminata.
 
