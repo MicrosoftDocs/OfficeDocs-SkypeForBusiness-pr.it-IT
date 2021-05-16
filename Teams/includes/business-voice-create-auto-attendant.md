@@ -1,3 +1,9 @@
+#### <a name="video-demonstration"></a>Dimostrazione video
+
+Questo video mostra un esempio di base di come creare un operatore automatico in Teams.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEnCG?autoplay=false]
+
 #### <a name="before-you-begin"></a>Prima di iniziare
 
 Ottenere i numeri di servizio (i numeri di servizio sono un tipo speciale di numero di telefono usato dagli operatori automatici) necessari per gli operatori automatici a cui si vuole essere accessibili componendo direttamente dall'esterno dell'organizzazione. Questo può includere [il trasferimento di numeri da un altro provider o](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md) la richiesta di nuovi numeri di [servizio.](../getting-service-phone-numbers.md)
