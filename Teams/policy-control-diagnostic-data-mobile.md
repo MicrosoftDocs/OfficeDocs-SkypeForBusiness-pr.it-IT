@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8c54a38a547708b78f652096cdad577088283c5b
-ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
+ms.openlocfilehash: 83c1693125140fcb78d2267ad3955f67d5c5d9a9
+ms.sourcegitcommit: 745b37921a878f1b524a274bfb2fd0732716a5c8
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52469648"
+ms.lasthandoff: 05/15/2021
+ms.locfileid: "52498771"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
@@ -385,6 +385,20 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **copyLink**: copia un collegamento a un post di canale.
 - **contactActivity**: quando viene selezionato il pulsante per visualizzare l'attività di un utente dalla scheda contatto.
 - **conversazione**: quando un utente accede alla scheda **Chat** o **Post**.
+- **cortanaClose**: quando un utente chiude manualmente l'area di disegno di Cortana.
+- **cortanaEduCategorySelect**: quando un utente fa clic su un elemento della categoria dei suggerimenti per l'istruzione.
+- **cortanaEduOpen**: quando viene visualizzata una pagina del settore dell'istruzione nell'area di disegno di Cortana.
+- **cortanaInvoke**: quando Cortana avvia l’ascolto.
+- **cortanaKWSSwitchToggle**: quando un utente tocca l’interruttore KWS nella pagina di impostazioni di Cortana.
+- **cortanaMicPermissionDialogButtonClick**: quando un utente concede o rifiuta le autorizzazioni per il microfono nell'area di disegno di Cortana.
+- **cortanaOpen**: quando un utente apre un'area di disegno di Cortana.
+- **cortana OptionsOpen**: quando l'utente tocca il pulsante Opzioni nell'area di disegno di Cortana.
+- **cortanaSafetyFirstActions**: quando l'utente accetta la prima dichiarazione di sicurezza.
+- **cortanaSafetyFirstLaunch**: quando l'utente apre Cortana per la prima volta dopo il termine di FRE.
+- **cortanaSettingsOpen**: quando un utente apre la pagina delle impostazioni di Cortana facendo clic sul pulsante Impostazioni Cortana nell'area di disegno di Cortana.
+- **cortanaStopResponding**: quando un utente fa clic sul pulsante Annulla nell'area di disegno di Cortana.
+- **cortanaUserSettingsLaunch**: quando l'utente apre le impostazioni di Cortana nelle impostazioni di Teams.
+- **cortanaVoiceSelect**: quando un utente seleziona il tipo di carattere voce Cortana nella pagina delle impostazioni di Cortana.
 - **createChannel** fornisce dati di successo sulla creazione o sull'azione di scarto per la creazione di un nuovo canale, quando:
   - il pulsante **Fatto** viene selezionato nella pagina **Crea canale**.
   - il pulsante **Annulla** viene selezionato nella pagina **Crea canale**.
@@ -655,6 +669,9 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **messageBookmarkMessage**: salva scheda connettore. Usa la telemetria esistente con i dati specifici dell'app. Oppure salva un messaggio di bot.
 - **markAsLastUnread**: menu di scelta rapida della scheda del connettore.
 - **maskCallerId**: un utente abilita o disabilita l'opzione chiamata per nascondere l'ID chiamante.
+- **meetingAttachmentFileClick**: un utente fa clic su un elemento allegato a una riunione.
+- **meetingAttachmentFileOptions**: un utente fa clic su un’opzione elemento allegata a una riunione.
+- **meetingAttachmentSeeMoreClick**: un utente fa clic sul pulsante Visualizza altro allegato di una riunione.
 - **meetingDetailCalendarList**: pagina Dettagli riunione selezionata dall'elenco dei calendari o selezionare la scheda **Dettagli** nella pagina dei dettagli della riunione.
 - **meetingDetailChatWithParticipants**: chattare con i partecipanti dalla pagina dei dettagli della riunione.
 - **meetingDetailDeleteMeetingforSelf**: eliminare una riunione dalla pagina dei dettagli della riunione.
@@ -662,6 +679,10 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **meetingDetailParticipants**: vedere tutti i partecipanti dalla pagina dei dettagli della riunione.
 - **meetingDetailScheduledMeeting**: pagina dei dettagli della riunione selezionata dall'oggetto della riunione pianificata (**…**) oppure selezionare la scheda **Dettagli** di una riunione pianificata.
 - **meetingDetailSearchParticipants**: viene selezionata l’opzione **Cerca** nei partecipanti alla riunione all’interno della pianificazione della riunione.
+- **meetingInsightFileClick**: un utente fa clic su un elemento file correlato a una riunione.
+- **meetingInsightFileLocatorClick**: un utente fa clic sul pulsante del suggerimento per un localizzatore di contenuto correlato a una riunione.
+- **meetingInsightFileOptions**: un utente fa clic su un’opzione elemento file correlata a una riunione.
+- **meetingInsightSeeMoreClick**: un utente fa clic sul pulsante Visualizza altro contenuto relativo a una riunione.
 - **meetingJoinLeave**: lasciare premuto **x** dopo che viene toccato il pulsante **Partecipa**.
 - **meetingJoinNow** - **Partecipa ora per VOIP** selezionato.
 - **meetingJoinNowWithCallMe**: un utente partecipa a una riunione tramite **Chiamami**.
@@ -1172,6 +1193,24 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 > [!NOTE]
 > Per informazioni sulle proprietà degli eventiPanelAction, vedere [Proprietà inviate con eventi scenario](#properties-sent-with-scenario-events).
 
+- **cortanaError** Per monitorare i messaggi di errore di Cortana.
+- **cortanaView** Per monitorare la visualizzazione dell'area di disegno di Cortana.
+- **cortanaRestart** Per monitorare il riavvio di Cortana.
+- **cortanaSetNewConversation** Per monitorare Cortana imposta una nuova conversazione.
+- **cortanaSpeechRecognization** Per monitorare la latenza del riconoscimento vocale di Cortana.
+- **cortanaStart** Per monitorare l'inizio del back-end di Cortana.
+- **CortanaStartListening** Per monitorare l'avvio dell'ascolto di Cortana.
+- **cortanaStopListening** Per monitorare l'arresto dell'ascolto di Cortana.
+- **cortanaThinking** Per monitorare la modifica dello stato di Cortana in Sto pensando (in attesa della risposta del servizio).
+- **cortanaTokenRefresh** Per monitorare l'aggiornamento del token Cortana in primo piano.
+- **cortanaWarmingUp** per monitorare l'avvio del programma Cortana (Cortana è aperto ma il token è ancora in recupero).
+- **cortana_admin_policy_refresh** Per monitorare l'aggiornamento dei criteri di amministrazione di Cortana.
+- **cortana_background_token_refresh** Per monitorare l'aggiornamento del token Cortana.
+- **cortana_initialization** Per monitorare i passaggi di inizializzazione di Cortana.
+- **cortana_sdk_events** Per monitorare la disattivazione degli eventi correlati da parte di Cortana.
+- **cortana_skill_action_execution** Per monitorare l'esecuzione dell'azione di Cortana.
+- **cortana_skill_action_delay** Conferma l'inizio dell'azione di ritardo.
+- **cortana_watchdog** Per monitorare il processo di ripristino di Cortana watchdog.
 - **create_default_plan_and_nav_to_view**: conferma la corretta creazione di un elenco di attività condivise predefinito e il tempo impiegato da un utente per raggiungere la visualizzazione dopo l'azione.
 - **create_personal_plan_and_nav_to_view**: conferma la corretta creazione di un elenco di attività personali e il tempo impiegato da un utente per raggiungere la visualizzazione dopo l'azione.
 - **create_personal_task**: conferma la creazione di un elemento di attività personale.
@@ -1187,6 +1226,11 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **load_personal_task_list**: conferma il recupero riuscito delle attività di un elenco attività personale per la visualizzazione elenco attività.
 - **load_shared_task_list**: conferma il recupero riuscito delle attività di un elenco attività condivise per la visualizzazione elenco attività.
 - **load_smart_task_list**: conferma il recupero riuscito delle attività di un elenco attività smart per la visualizzazione elenco attività.
+- **meetingAttachmentRender** Conferma il rendering degli allegati alla riunione.
+- **meetingInsightFetch** Conferma il recupero del contenuto correlato alla riunione.
+- **meetingInsightLocatorRender** Conferma il rendering del suggerimento per il localizzatore di contenuti correlati alla riunione.
+- **meetingInsightRender** Conferma il rendering del contenuti correlati alla riunione.
+- **meetingInsightVisible** Confermala visibilità del contenuti correlati alla riunione.
 - **rename_personal_plan**: conferma la riuscita ridenominazione di un elenco attività personale.
 - **rename_planner_plan**: conferma la riuscita ridenominazione di un elenco attività condivise.
 - **smart_reply_enabled**: conferma che la risposta intelligente è abilitata per l'utente corrente.
