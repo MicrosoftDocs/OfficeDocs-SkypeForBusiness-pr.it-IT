@@ -17,16 +17,16 @@ description: Informazioni sui criteri di registrazione degli eventi live.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9c808e4ae4e27e48c14c45711ef80ffd1c812125
-ms.sourcegitcommit: 3fc6fb528806f967bdc80671761cd45c32db6516
+ms.openlocfilehash: f9654c139433ffa764767e0a2140896eab52204b
+ms.sourcegitcommit: 56bebf42f545af57fdf387faa90e555abc8acd40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51383970"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "52513849"
 ---
 # <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione degli eventi live in Microsoft Teams
 
-Sono disponibili diverse opzioni per registrare un evento live di Microsoft Teams. Le opzioni di registrazione vengono impostate usando i criteri di registrazione. Questo articolo descrive le varie impostazioni.
+Sono disponibili diverse opzioni per registrare un evento Microsoft Teams live. Le opzioni di registrazione vengono impostate usando i criteri di registrazione. Questo articolo descrive le varie impostazioni.
 
 Le opzioni di registrazione vengono impostate usando il comando di PowerShell [Set-CsTeamsMeetingBroadcastPolicy.](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy?view=skype-ps)
 
@@ -52,17 +52,13 @@ Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la 
 | ------------------------------- | ---------------------------------------------------- | ------------------------------------- |
 | Registra sempre               | Disabilitato e selezionato                                | Abilitato e selezionato         |
 | L'organizzatore può registrare o meno | Abilitato e selezionato per impostazione predefinita                  | Abilitato e selezionato per impostazione predefinita   |
-| Non registrare mai               | Disabilitato e non selezionato                            | Abilitato e non selezionato      |
+| Non registrare mai               | Disabilitato e non selezionato                            | Disabilitato e non selezionato      |
 
-Quando il criterio è impostato su **Registra sempre**, nella pagina dei criteri sono disponibili le opzioni selezionate seguenti:
-
-![Impostazioni dei criteri per gli eventi live](../media/live-event-recording-policy.png "Screenshot dell'impostazione dei criteri per gli eventi live nell'interfaccia di amministrazione di Microsoft Teams.")
-
-## <a name="storage-and-persistence-behavior"></a>Comportamento di archiviazione e persistenza
+## <a name="storage-and-persistence-behavior"></a>Archiviazione e persistenza
 
 | Opzione                                       | Stato   | DVR                                                   | VOD                                                     | Registrazione                |
 | ------------------------------------------------ | ------------ | --------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------- |
-| Registrazione disponibile per produttori e relatori | Selezionato     | DVR è disponibile e l'asset di Azure Media Services (AMS) è archiviato per 180 giorni | Il partecipante può accedere e guardare l'evento                     |                              |
+| Registrazione disponibile per produttori e relatori | Selezionato     | DVR è disponibile e la risorsa Servizi multimediali di Azure (AMS) viene archiviata per 180 giorni | Il partecipante può accedere e guardare l'evento                     |                              |
 |                                                  | Non selezionato | DVR è disponibile e la risorsa AMS viene archiviata per 180 giorni | Il partecipante non ottiene l'accesso all'evento al termine |                              |
 ||Disabilitato (non selezionato)|DVR è disponibile e la risorsa AMS viene eliminata dopo l'evento|Il partecipante non ottiene l'accesso all'evento al termine||
 | Registrazione disponibile per produttori e relatori | Selezionato     |                                                           |                                                             | Viene creato e archiviato un MP4 |
@@ -73,4 +69,4 @@ Quando il criterio è impostato su **Registra sempre**, nella pagina dei criteri
 - [Cosa sono gli eventi live di Teams?](what-are-teams-live-events.md)
 - [Pianificare gli eventi live di Teams](plan-for-teams-live-events.md)
 - [Configurare le impostazioni degli eventi live in Teams](configure-teams-live-events.md)
-- [Registrazione delle riunioni nel cloud di Teams](../cloud-recording.md)
+- [Teams delle riunioni in cloud](../cloud-recording.md)

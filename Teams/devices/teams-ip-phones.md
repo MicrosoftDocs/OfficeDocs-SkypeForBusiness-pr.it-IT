@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 90651f5e88544f86022d65842f760f5ff47e9d6c
-ms.sourcegitcommit: 242561bfc12504614633539ca696b91dfc890b92
+ms.openlocfilehash: 140c823fcbb1e8bd227e68eee7c5e5e2b66f854c
+ms.sourcegitcommit: 56bebf42f545af57fdf387faa90e555abc8acd40
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52328548"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "52513859"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
@@ -44,7 +44,10 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 
 |Modello di dispositivo                         | Versione firmware                                                                                                                                                                                                                           | Data di rilascio
 |:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
-| Yealink MP52                           | 145.15.0.6                                               |   Aprile 2021                 |
+| UC-P10-T (con e senza ricevitore)    | 1.0.0.80                                                 | Maggio 2021                     |
+| UC-P10-C-T (con e senza ricevitore)  | 1.0.0.80                                                 | Maggio 2021                     |
+| UC-P8-C-T (con e senza ricevitore)   | 1.0.0.80                                                 | Maggio 2021                     |
+| Yealink MP52                           | 145.15.0.6                                               | Aprile 2021                   |
 | AudioCodes C435HD                      | 1.12.33                                                  | Aprile 2021                   |
 | AudioCodes C470HD                      | 1.8.293                                                  | Gennaio 2021                 |
 | AudioCodes C450HD                      | C450HD_TEAMS_0,225                                       | Marzo 2019                   |
