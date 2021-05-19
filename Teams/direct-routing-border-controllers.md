@@ -18,12 +18,12 @@ f1.keywords:
 - NOCSH
 description: L'amministratore può sapere quali session border controller (SBC) sono stati certificati per il routing diretto.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4eab3bb25690c939afd2687f5a67e63a2c417a89
-ms.sourcegitcommit: 272e8cf0075a566f055801433c9eb0313050530f
+ms.openlocfilehash: b15ff9956e988047b0246e7a965fcd58b1d9d74b
+ms.sourcegitcommit: 02703e8f9a512848e158a3a4f38d84501ad5f633
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "52486370"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52526739"
 ---
 # <a name="list-of-session-border-controllers-certified-for-direct-routing"></a>Elenco di Session Border Controller certificati per Instradamento diretto
 
@@ -47,7 +47,7 @@ Se hai domande sul programma di certificazione SBC per Direct Routing, contatta 
 
 ## <a name="certified-sbc-vendors"></a>Fornitori SBC certificati
 
-|                                                       Fornitore                                                        |       Prodotto       | Bypass non multimediale | Bypass multimediale | Versione software | 911 Service Provider Capable | ELIN in grado di
+|                                                       Fornitore                                                        |       Prodotto       | Bypass non multimediale | Bypass multimediale | Versione software | 911 Service Provider Capable* | ELIN in grado di
 |---------------------------------------------------------------------------------------------------------------------|---------------------|------------------|--------------|------------------|-----------------|------------------|
 | [AudioCodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-microsoft-teams) |   Mediant 500 SBC   |     &#10004;     |   &#10004;    |  Supportata 7.20A.250 (scelta consigliata 7.20A.258)   | &#10004;   |  &#10004;  |
 |                                                                                                                     |   Mediant 800 SBC   |     &#10004;     |   &#10004;     |  Supportata 7.20A.250 (scelta consigliata 7.20A.258)   | &#10004;   |  &#10004;  |
@@ -92,6 +92,11 @@ Se hai domande sul programma di certificazione SBC per Direct Routing, contatta 
 |                     [Patton Electronics Co.](https://www.patton.com/microsoft/)|    Patton SmartNode eSBC   |     &#10004;     |         |      3.19.x      |     |    |
 
 <br/>
+* 911 provider di servizi
+
+- [Bandwidth Dynamic Location Routing](https://www.bandwidth.com/partners/microsoft-teams-direct-routing/)
+- [Servizio di routing di emergenza Intrado (ERS)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/)
+- [Gateway di emergenza Intrado (EGW)](https://www.west.com/safety-services/enterprise-e911-solutions/microsoft-teams-e911-solutions/)
 <br/>
 
 ## <a name="direct-routing-and-analog-devices-interoperability"></a>Routing diretto e interoperabilità di dispositivi analogici

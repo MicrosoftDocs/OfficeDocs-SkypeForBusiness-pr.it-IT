@@ -20,12 +20,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cafd88594935565595a48a55c6a6b8f07d254345
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 4ca2c048b28d82c7c41a7f98712264c739bce210
+ms.sourcegitcommit: d5e77f8a3b8084ed92f0a77888a555626309591b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117674"
+ms.lasthandoff: 05/18/2021
+ms.locfileid: "52517739"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
@@ -34,9 +34,9 @@ Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Q
 > [!Note]
 > Per informazioni dettagliate sulla configurazione rapida delle riunioni e degli eventi di Teams su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
- - Le **riunioni** in Teams includono audio, video e condivisione dello schermo per un massimo di 300 persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi.
+ - Le **riunioni** in Teams includono audio, video e condivisione dello schermo per un massimo di 1000 persone. Sono uno dei modi principali per collaborare in Teams. Inoltre, non è necessario essere membri di un'organizzazione (né avere un account Teams) per partecipare a una riunione di Teams: nell'invito sono incluse tutte le istruzioni per collegarsi.
 
- - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 300 persone, usare un evento live.
+ - Gli **eventi live** sono un'estensione delle riunioni di Teams. Permettono di pianificare e produrre eventi da trasmettere a un vasto pubblico online, fino a 10.000 persone. Per una riunione con più di 1000 persone, usare un evento live.
 
 ## <a name="get-licenses-for-meetings-and-live-events"></a>Ottenere licenze per riunioni ed eventi live
 

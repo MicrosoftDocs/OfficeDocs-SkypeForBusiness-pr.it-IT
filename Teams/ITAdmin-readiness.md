@@ -19,28 +19,30 @@ ms.custom:
 description: Video di formazione, PowerPoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0b4aa047177e44f5ee922ece2ec327fc4d211c12
-ms.sourcegitcommit: 745b37921a878f1b524a274bfb2fd0732716a5c8
+ms.openlocfilehash: 44f89bc41f8c4f8a866e2c08837f37b282fbe2cb
+ms.sourcegitcommit: 02703e8f9a512848e158a3a4f38d84501ad5f633
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "52498721"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52526669"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Guida introduttiva alla formazione per gli amministratori per Microsoft Teams
 
 Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o eseguire laboratori. Torna spesso qui per cercare nuovi contenuti.
 
-|       Icona        | Descrizione               |    Icona           |Descrizione               |
-| :------------ | :------------ | :------------ | :------------ |
-| [Avviare l'implementazione qui](./get-started-with-teams-quick-start.md) | [Visualizzare Teams funzionalità per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3) |
-| [Visualizzare le procedure consigliate e i video di procedure nel canale Coffee in the Cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos) | [Teams Colloqui con gessetto: informazioni sulle procedure consigliate e indicazioni pratiche per gli scenari Teams comuni](./chalk-talks-landing-page.yml) |
+
+|  |  |
+|---------|---------|
+|[Avviare l'implementazione qui](./get-started-with-teams-quick-start.md)     |[Visualizzare Teams funzionalità per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3)         |
+|[Visualizzare le procedure consigliate e i video di procedure nel canale Coffee in the Cloud su YouTube](https://www.youtube.com/channel/UCs2IXBqperxWVe2ozrr3Gdg/videos)     |[Teams Colloqui con gessetto: informazioni sulle procedure consigliate e indicazioni pratiche per gli scenari Teams comuni](./chalk-talks-landing-page.yml)         |
+
 
 <h2>Offerte e corsi di formazione chiave</h2>
 
-|   Icona            | Descrizione              |  Icona             |    Descrizione           |
-| :------------ | :------------ | :------------ | :------------ |
-| [Supporto per i lavoratori remoti con Microsoft Teams](support-remote-work-with-teams.md#support-remote-workers-using-microsoft-teams) | [Teams essenziali per l'IT](https://aka.ms/MicrosoftTeamsforIT) | [Gestire la collaborazione del team per l'IT](/learn/paths/m365-manage-team-collaboration) | [Certificazione Service Adoption Specialist](/learn/paths/m365-service-adoption) |
-| [Introduzione al lavoro di squadra in Microsoft 365](/learn/modules/intro-to-teamwork-in-m365/index) | [Microsoft 365 Certified: Teamwork Administrator Associate](/learning/m365-teamwork-administrator.aspx) |
+| | |  |
+|---------|---------|---------|
+|Teams essenziali per [**l'IT**](https://aka.ms/MicrosoftTeamsforIT) - La serie di video "Teams for IT" di Microsoft Mechanics mostra all'amministratore come implementare, configurare e gestire Teams.     |[**Supportare i lavoratori**](support-remote-work-with-teams.md#support-remote-workers-using-microsoft-teams) remoti Microsoft Teams - Ottenere le indicazioni necessarie, inclusi i collegamenti alla formazione, per supportare gli utenti che lavorano da casa.         |Gestire la collaborazione in team [**per l'IT-**](/learn/paths/m365-manage-team-collaboration) Informazioni su come usare i Teams per facilitare il lavoro in team e le comunicazioni all'interno dell'organizzazione tra applicazioni e dispositivi.         |
+|[**Certificazione Service Adoption Specialist**](/learn/paths/m365-service-adoption) : il corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.     |[**Introduzione al lavoro in team in Microsoft 365**](/learn/modules/intro-to-teamwork-in-m365/index) - Caratteristiche del corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.        |[**Microsoft 365 Certified: Teamwork Administrator Associate-**](/learning/m365-teamwork-administrator.aspx) Microsoft 365 Teamwork Administrators configura, distribuisce e gestisce i carichi di lavoro di Microsoft 365 o Office 365, ad esempio SharePoint (online, locale e ibrido), OneDrive e Teams.        |
 
 
 <h2>Formazione tecnica</h2>
@@ -80,7 +82,7 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 
 <h2>Teams Dispositivi Android</h2>
 
-<p>La tabella seguente contiene collegamenti a corsi di formazione video completi, con mazzi PowerPoint (in formato PDF) su dispositivi Android Microsoft Teams che includono schermi Teams, telefoni Teams, Teams Rooms per Android e pannelli Teams.  
+<p>La tabella seguente contiene collegamenti a corsi di formazione video completi, con deck PowerPoint (in formato PDF) su dispositivi Android Microsoft Teams che includono schermi Teams, telefoni Teams, Teams Rooms per Android e pannelli Teams.  
 
 | Modulo | Video | PowerPoint presentazione (PDF)  |
 | ------------ | -------------------- | -------------------- |
