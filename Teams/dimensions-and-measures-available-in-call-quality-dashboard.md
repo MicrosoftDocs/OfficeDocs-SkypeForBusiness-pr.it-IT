@@ -22,12 +22,12 @@ ms.custom:
 - Reporting
 - seo-marvel-mar2020
 description: Ottenere informazioni dettagliate sulle dimensioni e le misure usate dal Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 981c5811f00d2e9005bd1387a7b58d23431af848
-ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
+ms.openlocfilehash: b44323d8fd15b3e0f97269afe7459981348d977b
+ms.sourcegitcommit: d3a5efa1e11e4dad97f31d633d31aa7c9b2dee57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52469738"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52583925"
 ---
 # <a name="dimensions-and-measurements-available-in-call-quality-dashboard-cqd"></a>Dimensioni e misure disponibili in Call Quality Dashboard (CQD)
 
@@ -157,7 +157,7 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Duration (Minutes)  | Intervallo (minuti)  | Durata dello stream in minuti. I valori sono raggruppati per intervalli.<br/> **Valore di esempio:** 065: [3–4) ||
 | Duration (Seconds)  | Intervallo (secondi) | Durata dello stream in secondi. I valori sono raggruppati per intervalli.<br/> **Valore di esempio:** 062: [1 -2)||
 |**Data**|||
-|Ora di fine|  Stringa| Ora del giorno in cui la chiamata è terminata.|&bull; Configurazione della chiamata non riuscita |
+|Ora di fine|  Stringa| Ora del giorno in cui la chiamata è terminata.|&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
 | Year  | Numero intero  | Anno della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2018 | |
 | Month  | Numero intero  | Mese della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2 | |
 | Day  | Numero intero  | Giorno della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 1 | |
@@ -168,10 +168,10 @@ Le informazioni sulle dimensioni si basano in parte sui dati caricati nel portal
 | Day Of Year  | Numero intero  | Giorno dell'anno di fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 32 | |
 | Day Of Week  | Stringa  | Giorno della settimana della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** Mercoledì | |
 | Day Number Of Week  | Numero intero  | Numero di giorno della settimana di fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 3 | |
-|Settimana|  Stringa  |Data di inizio della settimana in cui ha avuto luogo la chiamata. <br/> **Valore di esempio:** 2019-09-01 |&bull; Configurazione della chiamata non riuscita |
+|Settimana|  Stringa  |Data di inizio della settimana in cui ha avuto luogo la chiamata. <br/> **Valore di esempio:** 2019-09-01 |&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
 | Month Year  | Stringa  | Mese e anno della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2017-02 | |
 | Full Month  | Data e ora  | Mese completo della fine dello stream. I valori vengono riportati nel fuso orario UTC. <br/> **Valore di esempio:** 2017-02-01T00:00:00 | |
-|Ora di inizio|Stringa  |Ora del giorno in cui è iniziata la chiamata.|&bull; Configurazione della chiamata non riuscita |
+|Ora di inizio|Stringa  |Ora del giorno in cui è iniziata la chiamata.|&bull; La configurazione della chiamata non è riuscita o non è stata stabilita (vedere Motivo risposta CDR) |
 |**UserAgent** | | |
 | First Domain  | Stringa  | Dominio dell'utente del primo endpoint. Se il primo endpoint è un server di conferenze, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario.  <br/> **Valore di esempio:** <span></span> contoso.com | |
 | Second Domain  | Stringa  | Dominio dell'utente del secondo endpoint. Se il secondo endpoint è un server di conferenze, usa il dominio dell'organizzatore della riunione. Può anche essere il dominio degli account di servizio utilizzati nello scenario. <br/> **Valore di esempio:** <span></span> contoso.com  | |

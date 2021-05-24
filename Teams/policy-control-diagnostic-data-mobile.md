@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 83c1693125140fcb78d2267ad3955f67d5c5d9a9
-ms.sourcegitcommit: 745b37921a878f1b524a274bfb2fd0732716a5c8
+ms.openlocfilehash: 93a58b878443943b2dbd8322dc710bf59d3827e9
+ms.sourcegitcommit: 6227667c9941cc3289029099b7b6781581f16ea7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "52498771"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "52569234"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
@@ -1188,11 +1188,43 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **whiteboardUsed**: un utente annota su una lavagna (qualsiasi azione nel WebView).
 - **wiki - Nessun AS assegnato**: telemetria uso Wiki.
 
+### <a name="panelview"></a>PanelView
+
+> [!NOTE]
+> Per informazioni sulle proprietà degli eventi PanelView, vedere [Proprietà inviate con eventi panelview](#properties-sent-with-panelview-events).
+
+- **fileDeleteFailed** : si attiva quando un'operazione di eliminazione file non riesce.
+- **fileDeleteSuccess**: si attiva al termine di un'operazione di eliminazione di un file.
+- **filePreview** - si attiva nei seguenti scenari:
+  - quando l'opzione di condivisione viene toccata nella schermata di anteprima file.
+  - quando l'opzione di copia viene toccata nella schermata di anteprima file.
+  - quando l'opzione di download viene toccata nella schermata di anteprima file.
+  - quando un'anteprima del file viene caricata correttamente.
+- **files** - si attiva nei seguenti scenari:
+  - quando viene visualizzata un'anteprima di un file nell'app Teams.
+  - quando viene toccata l'opzione di caricamento file nella schermata dei file di OneDrive.
+  - quando viene toccata l'opzione "Copia collegamento" nella schermata di anteprima file.
+  - quando la schermata di condivisione dei file viene chiusa.
+  - quando viene aperto il menu delle opzioni dei file o quando viene toccata una delle opzioni in quel menu.
+  - quando viene aperta la schermata dei file "in chiamata".
+  - quando viene toccato un file per aprirlo.
+- **filesChannel**: si attiva quando viene aperta la schermata dei file dei canali.
+- **fileSources**: si attiva quando viene aperto il menu delle opzioni dei file o quando viene toccata una delle opzioni in quel menu.
+- **filesPersonal**: si attiva quando viene caricato un batch di file in OneDrive o nella schermata dei file recenti.
+- **fileUploadDeleteTriggered**: si attiva quando un file allegato viene eliminato o scollegato dall'area dei messaggi.
+- **fileUploadFailed**: si attiva quando un'operazione di caricamento file non riesce.
+- **fileUploadIndividualUsing**: si attiva quando il contenuto della notifica di caricamento del file cambia o quando si interagisce con la notifica. Le interazioni possono includere movimenti come lo scorrimento rapido per ignorare la notifica o toccare la notifica e così via.
+- **fileUploadSuccess**: si attiva al termine di un'operazione di caricamento file.
+- **fileUploadSummary Più**: si attiva quando il contenuto della notifica di riepilogo del caricamento del file cambia o quando si interagisce con la notifica. Le interazioni possono includere movimenti come lo scorrimento rapido per ignorare la notifica o toccare la notifica e così via.
+- **meetingFiles**: si attiva quando si apre la schermata dei file della riunione.
+- **navPersonalFiles**: si attiva quando si esegue lo spostamento nella schermata dei file.
+
 ### <a name="scenario"></a>Scenario
 
 > [!NOTE]
 > Per informazioni sulle proprietà degli eventiPanelAction, vedere [Proprietà inviate con eventi scenario](#properties-sent-with-scenario-events).
 
+- **chat_add_giphy**: conferma che l'azione di rendering GIF Giphy è riuscita o meno.
 - **cortanaError** Per monitorare i messaggi di errore di Cortana.
 - **cortanaView** Per monitorare la visualizzazione dell'area di disegno di Cortana.
 - **cortanaRestart** Per monitorare il riavvio di Cortana.
@@ -1216,6 +1248,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **create_personal_task**: conferma la creazione di un elemento di attività personale.
 - **create_planner_plan_and_nav_to_view**: conferma la corretta creazione di un elenco di attività condivise e il tempo impiegato da un utente per raggiungere la visualizzazione dopo l'azione.
 - **create_planner_task**: conferma la creazione di un elemento di attività personale.
+- **forwardExistingAmsObject**: conferma che l'azione di inoltro multimediale è riuscita o meno.
 - **delete_personal_plan**: conferma la riuscita dell'eliminazione di un elenco attività personale.
 - **delete_personal_task**: conferma la riuscita dell'eliminazione di un elemento di attività personale.
 - **delete_planner_plan**: conferma la riuscita dell'eliminazione di un elenco attività condivise.
@@ -1231,13 +1264,20 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **meetingInsightLocatorRender** Conferma il rendering del suggerimento per il localizzatore di contenuti correlati alla riunione.
 - **meetingInsightRender** Conferma il rendering del contenuti correlati alla riunione.
 - **meetingInsightVisible** Confermala visibilità del contenuti correlati alla riunione.
+- **open_image**: conferma che il rendering dell'immagine a schermo intero è riuscito o meno.
 - **rename_personal_plan**: conferma la riuscita ridenominazione di un elenco attività personale.
 - **rename_planner_plan**: conferma la riuscita ridenominazione di un elenco attività condivise.
+- **save_image**: conferma che il salvataggio dell'immagine è riuscito o meno.
+- **share_image**: conferma che la condivisione dell'immagine è riuscita o meno.
 - **smart_reply_enabled**: conferma che la risposta intelligente è abilitata per l'utente corrente.
 - **smart_reply_received**: conferma la ricezione di un suggerimento per una risposta intelligente.
 - **smart_reply_banned**: conferma che non è possibile visualizzare una risposta intelligente per l'utente corrente.
 - **update_planner_task_and_nav_to_view**: conferma il corretto aggiornamento di un elemento di attività condivisa e il tempo impiegato da un utente per arrivare alla visualizzazione dopo l'azione.
-- **update_personal_task_and_nav_to_view**: conferma il corretto aggiornamento di un elemento dell'attività personale e il tempo impiegato da un utente per arrivare alla vista dopo **updatePlannerTask**. Conferma che un utente ha aggiornato correttamente un'attività in un elenco di attività condivise. 
+- **update_personal_task_and_nav_to_view**: conferma il completamento di un aggiornamento di un elemento dell'attività personale e il tempo impiegato da un utente per visualizzare la schermata successiva. 
+- **updatePlannerTask**: conferma che un utente ha aggiornato correttamente un'attività in un elenco di attività condiviso.
+- **upload_images**: conferma che il caricamento dell'immagine è riuscito o meno.
+- **upload_voice_messages**: conferma che il caricamento del messaggio vocale è riuscito o meno.
+- **voiceMessageUpload**: conferma che il caricamento del messaggio vocale è riuscito o meno.
 
 ## <a name="property-lists"></a>Elenchi delle proprietà
 

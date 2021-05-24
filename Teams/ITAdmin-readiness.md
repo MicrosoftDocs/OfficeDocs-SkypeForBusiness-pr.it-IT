@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, PowerPoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 44f89bc41f8c4f8a866e2c08837f37b282fbe2cb
-ms.sourcegitcommit: 02703e8f9a512848e158a3a4f38d84501ad5f633
+ms.openlocfilehash: 901a6bd2f6eb2c120af45aef8d4ca9eb4bea45e5
+ms.sourcegitcommit: bdd9901db1fc741aaec9c7ddcf5ee1caaca4d777
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52526669"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52589190"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Guida introduttiva alla formazione per gli amministratori per Microsoft Teams
 
@@ -42,7 +42,7 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 | | |  |
 |---------|---------|---------|
 |Teams essenziali per [**l'IT**](https://aka.ms/MicrosoftTeamsforIT) - La serie di video "Teams for IT" di Microsoft Mechanics mostra all'amministratore come implementare, configurare e gestire Teams.     |[**Supportare i lavoratori**](support-remote-work-with-teams.md#support-remote-workers-using-microsoft-teams) remoti Microsoft Teams - Ottenere le indicazioni necessarie, inclusi i collegamenti alla formazione, per supportare gli utenti che lavorano da casa.         |Gestire la collaborazione in team [**per l'IT-**](/learn/paths/m365-manage-team-collaboration) Informazioni su come usare i Teams per facilitare il lavoro in team e le comunicazioni all'interno dell'organizzazione tra applicazioni e dispositivi.         |
-|[**Certificazione Service Adoption Specialist**](/learn/paths/m365-service-adoption) : il corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.     |[**Introduzione al lavoro in team in Microsoft 365**](/learn/modules/intro-to-teamwork-in-m365/index) - Caratteristiche del corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.        |[**Microsoft 365 Certified: Teamwork Administrator Associate-**](/learning/m365-teamwork-administrator.aspx) Microsoft 365 Teamwork Administrators configura, distribuisce e gestisce i carichi di lavoro di Microsoft 365 o Office 365, ad esempio SharePoint (online, locale e ibrido), OneDrive e Teams.        |
+|[**Certificazione Service Adoption Specialist**](/learn/paths/m365-service-adoption) : il corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.     |[**Introduzione al lavoro in team in Microsoft 365**](/learn/modules/intro-to-teamwork-in-m365/index) - Caratteristiche del corso di certificazione Microsoft Service Adoption Specialist Teams. Informazioni su come favorire l’adozione dei servizi Microsoft nell'organizzazione.        |[**Microsoft 365 Certified: Teamwork Administrator Associate-**](/learn/certifications/m365-teamwork-administrator) Microsoft 365 Teamwork Administrators configura, distribuisce e gestisce i carichi di lavoro di Microsoft 365 o Office 365, ad esempio SharePoint (online, locale e ibrido), OneDrive e Teams.        |
 
 
 <h2>Formazione tecnica</h2>

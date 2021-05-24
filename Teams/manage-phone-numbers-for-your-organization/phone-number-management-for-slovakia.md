@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Slovacchia per Microsoft Teams.
-ms.openlocfilehash: 39ff9e216edf6699934574874efed18ae8d342ea
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: c97fc50522b9102ac5ea34ab6babc4ef982fd5b0
+ms.sourcegitcommit: bdd9901db1fc741aaec9c7ddcf5ee1caaca4d777
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52130388"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "52589250"
 ---
 # <a name="phone-number-management-for-slovakia"></a>Telefono gestione dei numeri per la Slovacchia
 
@@ -38,7 +38,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
 |Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione. |In Slovacchia è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Puoi anche inviare una nuova richiesta di numero di telefono scaricando il modulo e [inviandoci il modulo.](mailto:ptneu@microsoft.com)<br/><br/>[Nuova richiesta di numero di telefono per la Slovacchia (v.1.0) (en-sk)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true). <br/><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
-|Ricevi i numeri di telefono trasferiti a Noi.   | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Slovacchia (tutti i numeri) (v.1.0) (en-sk)](https://download.microsoft.com/download/5/e/2/5e294448-313e-4398-bd8e-bbaee92dc78d/letter-of-authorization-(loa)-for-slovakia-(all-numbers)-(v.1.0)-(en-sk).pdf). <br/> <br/>[Lettera di autorizzazione (LOA) per la Slovacchia (tutti i numeri) (v.1.0) (sk-sk).](https://download.microsoft.com/download/f/2/d/f2d73643-c597-4da6-8e0e-d6d3af3737a3/letter-of-authorization-(loa)-for-slovakia-(all-numbers)-(v.1.0)-(sk-sk)(2).pdf) <br/><br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/><br/>Il trasferimento di numeri in questo mercato può richiedere da quattro a cinque settimane. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento. |
+|Ricevi i numeri di telefono trasferiti a Noi.   | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Slovacchia (tutti i numeri) (v.1.0) (en-sk)](https://download.microsoft.com/download/5/e/2/5e294448-313e-4398-bd8e-bbaee92dc78d/letter-of-authorization-(loa)-for-slovakia-(all-numbers)-(v.1.0)-(en-sk).pdf). <br/> <br/>[Lettera di autorizzazione (LOA) per la Slovacchia (tutti i numeri) (v.1.0) (sk-sk).](https://download.microsoft.com/download/f/2/d/f2d73643-c597-4da6-8e0e-d6d3af3737a3/letter-of-authorization-(loa)-for-slovakia-(all-numbers)-(v.1.0)-(sk-sk)%20(2).pdf) <br/><br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/><br/>Il trasferimento di numeri in questo mercato può richiedere da quattro a cinque settimane. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento. |
 |Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
 |Eseguire aggiornamenti del servizio directory per i numeri di coda di chiamata o operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
