@@ -23,17 +23,20 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 - seo-marvel-apr2020
-description: Scopri come configurare Sistema telefonico per le code di chiamata con Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 8b4fe4283ac9734c1dc29bf33759039098578744
-ms.sourcegitcommit: 03ff569a0b7a8e04d7b0ab32f370a9a537fa7fe7
+description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
+ms.openlocfilehash: 926e3903f0ee59271d0b4806cf61ad02a6f52088
+ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52064802"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52628935"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
 Le code di chiamata forniscono un metodo per instradare i chiamanti alle persone dell'organizzazione che possono aiutare a risolvere un particolare problema o domanda. Le chiamate vengono distribuite una alla volta alle persone in coda (note come *agenti).* 
+
+> [!TIP]
+> Questo articolo contiene organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Creare una coda [di chiamata - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb) imprese.
 
 Le code di chiamata forniscono:
 
@@ -45,9 +48,7 @@ Le code di chiamata forniscono:
 
 - Opzioni di gestione per l'overflow e il timeout della coda.
 
-Assicurarsi di aver letto Pianificare gli operatori automatici e [](plan-auto-attendant-call-queue.md#getting-started) le code di chiamata di [Teams](plan-auto-attendant-call-queue.md) e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
-
-Per configurare una coda di chiamata, nell'interfaccia di amministrazione di Teams espandere **Voce,** fare clic su **Code di chiamata** e quindi su **Aggiungi.**
+Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le [](plan-auto-attendant-call-queue.md#getting-started) code di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -55,7 +56,11 @@ Questo video mostra un esempio di base di come creare una coda di chiamata in Te
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWCF23?autoplay=false]
 
-## <a name="resource-account-and-language"></a>Account e lingua delle risorse
+## <a name="create-the-call-queue"></a>Creare la coda di chiamata
+
+Per configurare una coda di chiamata, nell'interfaccia Teams di amministrazione espandere **Voce,** fare clic su Code di chiamata **e** quindi su **Aggiungi.**
+
+### <a name="resource-account-and-language"></a>Account e lingua delle risorse
 
 ![Screenshot delle impostazioni dell'account della risorsa e della lingua](media/call-queue-name-language.png)
 
@@ -65,31 +70,31 @@ Questo video mostra un esempio di base di come creare una coda di chiamata in Te
 
 3. Scegliere una [lingua supportata.](create-a-phone-system-call-queue-languages.md) Questa lingua verrà usata per le istruzioni vocali generate dal sistema e per la trascrizione della segreteria telefonica (se abilitate).
 
-## <a name="greetings-and-music-on-hold-in-queue"></a>Messaggi di saluto e musica in attesa in coda
+### <a name="greetings-and-music-on-hold-in-queue"></a>Messaggi di saluto e musica in attesa in coda
 
 Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre.
 
-Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
+Teams musica predefinita ai chiamanti mentre sono in attesa in una coda. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
 > [!NOTE]
 > La registrazione caricata non può essere superiore a 5 MB.
-> La musica predefinita fornita nelle code di chiamata di Teams è gratuita di eventuali royalty pagate dall'organizzazione. 
+> La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. 
 
-## <a name="call-agents"></a>Agenti di chiamata
+### <a name="call-agents"></a>Agenti di chiamata
 
 Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan-auto-attendant-call-queue.md#prerequisites)
 
 ![Screenshot delle impostazioni di utenti e gruppi per le code di chiamata](media/call-queue-users-groups.png)
 
-##### <a name="teams-channel"></a>Canale di Teams
+##### <a name="teams-channel"></a>Teams canale
 
-È possibile aggiungere fino a 200 agenti tramite un canale di Teams.
+È possibile aggiungere fino a 200 agenti tramite un Teams canale.
 
-Se si vuole usare [un canale di Teams per gestire la coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione Scegli un **team** e fare clic su **Aggiungi canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare e fare clic su **Applica.**
+Se si vuole usare un canale Teams per gestire la [coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione **Scegli un team** e fare clic su Aggiungi **canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare e fare clic su **Applica.**
 
-I client seguenti sono supportati quando si usa un canale di Teams per le code di chiamata: 
+I client seguenti sono supportati quando si usa un canale Teams per le code di chiamata: 
 
-  - Client Windows di Microsoft Teams
+  - Microsoft Teams Windows client
   - Client Microsoft Teams Mac
 
 ##### <a name="users-and-groups"></a>Utenti e gruppi
@@ -100,21 +105,21 @@ Per aggiungere singoli utenti o gruppi alla coda, selezionare **l'opzione Scegli
 
 Per aggiungere un utente alla coda, fare clic **su Aggiungi utenti**, cercare l'utente, fare clic su **Aggiungi** e quindi su **Aggiungi**.
 
-Per aggiungere un gruppo alla coda, fare clic **su Aggiungi gruppi,** cercare il gruppo, fare clic su **Aggiungi** e quindi su **Aggiungi.** È possibile usare liste di distribuzione, gruppi di sicurezza e gruppi di Microsoft 365 o team di Microsoft Teams.
+Per aggiungere un gruppo alla coda, fare clic **su Aggiungi gruppi,** cercare il gruppo, fare clic su **Aggiungi** e quindi su **Aggiungi.** È possibile usare liste di distribuzione, gruppi di sicurezza e gruppi di Microsoft 365 o Microsoft Teams team.
 
 > [!NOTE]
 > I nuovi utenti aggiunti a un gruppo possono richiedere fino a otto ore prima dell'arrivo della prima chiamata.
 
-## <a name="call-routing"></a>Routing delle chiamate
+### <a name="call-routing"></a>Routing delle chiamate
 
 ![Screenshot delle impostazioni della modalità conferenza e del metodo di routing](media/call-queue-conference-mode-routing-method.png)
 
 **La modalità conferenza** riduce significativamente il tempo necessario per la connessione di un chiamante a un agente, dopo che l'agente ha accettato la chiamata. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
 
-  - La versione più recente del client desktop di Microsoft Teams, dell'app Android o dell'app iOS
-  - Microsoft Teams phone version 1449/1.0.94.2020051601 o versioni successive
+  - La versione più recente del client desktop Microsoft Teams, dell'app Android o dell'app iOS
+  - Microsoft Teams telefono 1449/1.0.94.2020051601 o versione successiva
   
-Gli account di Teams degli agenti devono essere impostati sulla modalità Solo Teams. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se tutti gli agenti usano client compatibili.
+Gli account Teams agenti devono essere impostati sulla modalità Teams solo utenti. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se tutti gli agenti usano client compatibili.
 
 > [!NOTE]
 > La modalità conferenza non è supportata se le chiamate telefoniche vengono instradati alla coda da un gateway di routing diretto abilitato per il routing in base alla posizione.
@@ -139,7 +144,7 @@ Gli account di Teams degli agenti devono essere impostati sulla modalità Solo T
 Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate indipendentemente dal relativo stato di disponibilità impostato. 
 
 > [!NOTE]
-> Gli agenti che usano il client Skype for Business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza. Se hai agenti che usano Skype for Business, non abilitare il routing delle chiamate basato sulla presenza.
+> Gli agenti che usano il client Skype for Business non sono inclusi nell'elenco di routing delle chiamate quando è abilitato il routing basato sulla presenza. Se si hanno agenti che usano Skype for Business, non abilitare il routing delle chiamate basato sulla presenza.
 
 **Tempo di avviso agente** specifica per quanto tempo il telefono di un agente squillerà prima che la coda reindirizza la chiamata all'agente successivo.
 
@@ -153,7 +158,7 @@ Sono consigliate le impostazioni seguenti:
 > [!NOTE]
 > Se il routing basato sulla presenza non è abilitato e la coda contiene più chiamate, il sistema presenterà queste chiamate contemporaneamente agli agenti indipendentemente dal loro stato di presenza. In questo modo si riceveranno più notifiche di chiamata agli agenti, in particolare se alcuni agenti non rispondono alla chiamata iniziale presentata.
 
-## <a name="call-overflow-handling"></a>Gestione dell'overflow delle chiamate
+### <a name="call-overflow-handling"></a>Gestione dell'overflow delle chiamate
 
 ![Screenshot delle impostazioni di overflow delle chiamate](media/call-queue-overflow-handling.png)
 
@@ -164,7 +169,7 @@ Sono consigliate le impostazioni seguenti:
 > [!NOTE]
 > Se il numero massimo di chiamate è impostato su 0, il messaggio di saluto non verrà riprodotto.
 
-## <a name="call-timeout-handling"></a>Gestione del timeout delle chiamate
+### <a name="call-timeout-handling"></a>Gestione del timeout delle chiamate
 
 ![Screenshot delle impostazioni di timeout delle chiamate](media/call-queue-timeout-handling.png)
 
@@ -176,27 +181,27 @@ Dopo aver selezionato le opzioni di timeout della chiamata, fare clic su **Salva
 
 ## <a name="caller-id-for-outbound-calls"></a>ID chiamante per le chiamate in uscita
 
-Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per i membri di una coda di chiamata sul numero di servizio di un operatore automatico appropriato. Per altre informazioni, vedere Gestire [i criteri id chiamante in Microsoft Teams.](caller-id-policies.md)
+Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per i membri di una coda di chiamata sul numero di servizio di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i [criteri id chiamante in Microsoft Teams](caller-id-policies.md) chiamate.
 
 ## <a name="supported-clients"></a>Client supportati
 
 I client seguenti sono supportati per gli agenti di chiamata in una coda di chiamata:
 
-  - Client desktop Skype for Business 2016 (versioni a 32 bit e a 64 bit)
+  - Skype for Business client desktop 2016 (versioni a 32 bit e a 64 bit)
   - Client desktop Lync 2013 (versioni a 32 bit e a 64 bit)
-  - Tutti i modelli di telefono IP supportati per Microsoft Teams. Vedere [Ottenere telefoni per Skype for Business online](/skypeforbusiness/what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online).
+  - Tutti i modelli di telefono IP supportati per Microsoft Teams. Vedere [Ottenere telefoni per Skype for Business Online](/skypeforbusiness/what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/getting-phones-for-skype-for-business-online).
   - Client Mac Skype for Business (versione 16.8.196 e versioni successive)
   - Client Android Skype for Business (versione 6.16.0.9 e versioni successive)
   - Client iPhone Skype for Business (versione 6.16.0 e versioni successive)
   - Client Mac Skype for Business (versione 6.16.0 e versioni successive)
-  - Client Windows di Microsoft Teams (versioni a 32 bit e a 64 bit)
+  - Microsoft Teams Windows client (versioni a 32 bit e a 64 bit)
   - Client Microsoft Teams Mac
   - Microsoft Teams in [Virtualized Desktop Infrastructure](/microsoftteams/teams-for-vdi) (Windows Virtual Desktop, Citrix e VMware)
-  - App Per iPhone di Microsoft Teams
-  - App Microsoft Teams per Android
+  - Microsoft Teams iPhone app
+  - Microsoft Teams App Android
 
     > [!NOTE]
-    > Le code di chiamata a cui è assegnato un numero di instradamento diretto non supportano i client Skype for Business, i client Lync o i telefoni IP Skype for Business come agenti.
+    > Le code di chiamata a cui è assegnato un numero di instradamento diretto non supportano Skype for Business client, client Lync o telefoni IP Skype for Business telefoni IP come agenti.
 
 ## <a name="call-queue-cmdlets"></a>Cmdlet della coda di chiamata
 

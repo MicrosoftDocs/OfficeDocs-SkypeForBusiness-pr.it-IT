@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
-ms.openlocfilehash: 12b16d75b793c3d406aae8c510400f07dfce2cec
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ebd49f2a15467504863e113f1eb06db6ba881f64
+ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118265"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629015"
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 
@@ -77,8 +77,8 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
 
-> [!Note] 
-> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada effettua una chiamata a un numero degli Stati Uniti.
+> [!Note]
+> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente solo a "nazionali", un utente degli Stati Uniti non sarà in grado di chiamare il Canada e, allo stesso modo, un utente canadese non sarà in grado di chiamare un utente statunitense.
 
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

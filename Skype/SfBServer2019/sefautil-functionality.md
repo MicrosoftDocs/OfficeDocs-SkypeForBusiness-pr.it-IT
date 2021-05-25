@@ -1,5 +1,5 @@
 ---
-title: Supporto per l'uso della funzionalità SEFAUtil in PowerShell in Skype for Business Server 2019
+title: Supporto per l'utilizzo della funzionalità SEFAUtil in PowerShell in Skype for Business Server 2019
 ms.reviewer: rogupta
 ms.author: heidip
 author: MicrosoftHeidi
@@ -13,16 +13,16 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come usare PowerShell per ottenere la funzionalità SEFAUtil in Skype for Business Server 2019 dopo l'installazione dell'aggiornamento cumulativo 1."
-ms.openlocfilehash: d97dd84a3d05cf18752e40dd73a8c5f7e9752d3d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: fa7bccaa30b559bf694274471b1f8883e8482861
+ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120507"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629005"
 ---
-# <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Utilizzo della funzionalità SEFAUtil tramite PowerShell in Skype for Business Server 2019
+# <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Utilizzo della funzionalità SEFAUtil tramite PowerShell Skype for Business Server 2019
 
-SEFAUtil (Secondary Extension Feature Activation) consente agli amministratori di Skype for Business Server e agli agenti helpdesk di configurare le impostazioni di squillo delegato, inoltro di chiamata e prelievo chiamata di gruppo per conto di un utente di Skype for Business Server. Questo strumento consente inoltre agli amministratori di eseguire query nelle impostazioni di routing delle chiamate pubblicate per un determinato utente. Dopo aver installato l'aggiornamento cumulativo di luglio 2019 di Skype for Business Server, le funzionalità seguenti che attualmente possono essere gestite solo tramite SEFAUtil saranno gestibili anche tramite PowerShell:
+SEFAUtil (Secondary Extension Feature Activation) consente agli amministratori di Skype for Business Server e agli agenti dell'helpdesk di configurare le impostazioni di squillo delegato, inoltro di chiamata e prelievo chiamata di gruppo per conto di un Skype for Business Server utente. Questo strumento consente inoltre agli amministratori di eseguire query nelle impostazioni di routing delle chiamate pubblicate per un determinato utente. Dopo aver installato l'aggiornamento cumulativo Skype for Business Server luglio 2019, le funzionalità seguenti attualmente gestibili solo tramite SEFAUtil saranno gestibili anche tramite PowerShell:
 
 - [Impostazioni di inoltro di chiamata](#call-forwarding-settings)
 - [Impostazioni di delega](#delegation-settings)
@@ -52,7 +52,7 @@ Questo cmdlet modifica le impostazioni di inoltro di chiamata dell'utente.
 - `Set-CsUserCallForwardingSettings [-Identity] <UserIdParameter> -EnableSimulRing <String> [-UnansweredToVoicemail]  [-UnansweredWaitTime <TimeSpan>] [-Delegates <PSListModifier>] [-Team <PSListModifier>] [-TeamDelegateRingWaitTime <TimeSpan>] [-SettingsActiveWorkHours]`
 - `Set-CsUserCallForwardingSettings [-Identity] <UserIdParameter> -EnableSimulRing <String> [-UnansweredToOther <String>] [-UnansweredWaitTime <TimeSpan>] [-Delegates <PSListModifier>]  [-Team <PSListModifier>]  [-TeamDelegateRingWaitTime <TimeSpan>]  [-SettingsActiveWorkHours]`
 
-Questo cmdlet modifica le impostazioni di SimulRing (anche in questo caso, con due esempi di parametri, uno per la segreteria telefonica senza risposta e il secondo senza risposta ad altri).
+Questo cmdlet modifica le impostazioni dell'anello simultaneo (anche in questo caso, con due esempi di parametri, uno per la segreteria telefonica senza risposta e il secondo senza risposta ad altri).
 
 ## <a name="delegation-settings"></a>Impostazioni di delega
 
@@ -102,8 +102,8 @@ Per le distribuzioni locali, i cmdlet introdotti in questa funzionalità possono
 - CsVoiceAdministrator - Get e Set per tutti i cmdlet
 - CsHelpDesk - Get per tutti i cmdlet
 
-Per ulteriori informazioni su questi ruoli di amministratore, vedere [Create Skype for Business Server Control Panel Administrators.](../SfbServer/help-topics/help-depwiz/create-skype-for-business-server-control-panel-administrators.md) L'amministratore può accedere a questi cmdlet accedendo direttamente o in remoto a un computer server.
-Per una distribuzione ibrida, gli amministratori di Skype for Business dovrebbero essere in grado di chiamare Get e Set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [Informazioni sui ruoli di amministratore.](/microsoft-365/admin/add-users/about-admin-roles)
+Per ulteriori informazioni su questi ruoli di amministratore, vedere [Create Skype for Business Server Control Panel Administrators](../SfbServer/help-topics/help-depwiz/create-skype-for-business-server-control-panel-administrators.md). L'amministratore può accedere a questi cmdlet accedendo direttamente o in remoto a un computer server.
+Per una distribuzione ibrida, Skype for Business gli amministratori devono essere in grado di chiamare Get e Set per tutti i cmdlet. Per ulteriori informazioni sull'elenco completo dei ruoli, vedere [Informazioni sui ruoli di amministratore.](/microsoft-365/admin/add-users/about-admin-roles)
 
 > [!NOTE]
 > L'individuazione automatica del server deve essere abilitata. Non verranno introdotti ulteriori requisiti di licenza per l'utilizzo dei cmdlet.

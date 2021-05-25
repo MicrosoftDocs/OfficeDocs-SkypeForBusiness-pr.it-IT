@@ -1,5 +1,5 @@
 ---
-title: Creare una coda di chiamata in Microsoft Teams - Esercitazione sulle piccole imprese
+title: Creare una coda di chiamata in Microsoft Teams - Esercitazione su Small Business
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -21,13 +21,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
-description: Informazioni su come configurare le code di chiamata con Microsoft 365 Business Voice.
-ms.openlocfilehash: c7533227796fb9ae9357590993a9065dc01d5030
-ms.sourcegitcommit: 03ff569a0b7a8e04d7b0ab32f370a9a537fa7fe7
+description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
+ms.openlocfilehash: 755c4914271c96cdd668bb2933872ebf1fa21b94
+ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52064822"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629055"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -51,9 +51,9 @@ Questo video illustra come creare una coda di chiamata in Teams.
 
 #### <a name="before-you-begin"></a>Prima di iniziare
 
-Ottenere un [sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere un po' di più se decidi di apportare modifiche alla configurazione in futuro.
+Ottenere alcune [Sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere un po' di più se decidi di apportare modifiche alla configurazione in futuro.
 
-Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire [i criteri id chiamante in Microsoft Teams.](../caller-id-policies.md)
+Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i [criteri id chiamante in Microsoft Teams](../caller-id-policies.md) chiamate.
 
 <a name="steps"></a>
 
@@ -61,11 +61,11 @@ Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita
 
 # <a name="step-1brcreate-a-team"></a>[Passaggio 1 <br> Creare un team](#tab/create-team)
 
-Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza esistente, un gruppo di Microsoft 365 o un team di Microsoft Teams. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
+Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza, un gruppo di Microsoft 365 o un team Microsoft Teams esistente. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
 
 Per creare un team
 
-1. Prima di tutto, fai clic su **Teams** sul lato sinistro dell'app, quindi fai clic su **Partecipa o** crea un team nella parte inferiore dell'elenco dei team.
+1. Prima di tutto, **Teams** sul lato sinistro dell'app, quindi fare clic su Partecipa o crea un **team** nella parte inferiore dell'elenco dei team.
 
 2. Quindi fare clic **su Crea team** (prima scheda, angolo in alto a sinistra).
 
@@ -85,7 +85,7 @@ Verrà quindi aggiunto un canale da usare con la coda di chiamata.
 
 Per aggiungere un canale
 
-1. In Teams trovare il team appena creato, fare clic su **Altre opzioni** (...), quindi fare clic su **Aggiungi canale.**
+1. In Teams trovare il team appena creato, fare clic su **Altre** opzioni (...), quindi fare clic **su Aggiungi canale.**
 
 2. Digitare un nome e una descrizione per il canale e quindi fare clic su **Aggiungi**.
 
@@ -94,13 +94,13 @@ Per aggiungere un canale
 
 # <a name="step-2brresource-accounts"></a>[Passaggio 2 <br> Account delle risorse](#tab/resource-account)
 
-Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio creeremo l'account, gli assegniamo una licenza *Microsoft 365 Phone System - Virtual User* e quindi lo useremo per iniziare a creare la coda di chiamata.
+Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio creeremo l'account, gli assegniamo una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale e quindi lo useremo per iniziare a creare la coda di chiamata.
 
 ### <a name="create-a-resource-account"></a>Creare un account della risorsa
 
-È possibile creare un account delle risorse nell'interfaccia di amministrazione di Teams.
+È possibile creare un account della risorsa nell'Teams di amministrazione.
 
-1. Nell'interfaccia di amministrazione di Teams espandere **Impostazioni a livello di organizzazione** e quindi fare clic su Account **risorse.**
+1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su **Account risorse.**
 
 2. Fare clic su **Aggiungi**.
 
@@ -116,21 +116,21 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 ### <a name="assign-a-license"></a>Assegnare una licenza
 
-È necessario assegnare una licenza Sistema telefonico - Utente virtuale di *Microsoft 365* all'account della risorsa.
+È necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale all'account della risorsa.
 
-1. Nell'elenco Utenti attivi dell'interfaccia  di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
+1. Nell'Microsoft 365 di amministrazione fare clic  sull'account della risorsa a cui si vuole assegnare una licenza nell'elenco Utenti attivi.
 
-2. Nella scheda **Licenze e app,** in **Licenze,** selezionare Sistema telefonico **Microsoft 365 - Utente virtuale.**
+2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 
 3. Fare clic **su Salva modifiche**.
 
-    ![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nell'interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
+    ![Screenshot dell'interfaccia utente per l'assegnazione di licenze nell'interfaccia Microsoft 365 di amministrazione](../media/resource-account-assign-virtual-user-license.png)
 
 ### <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
 A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'account della risorsa.
 
-1. Nell'interfaccia di amministrazione di Teams espandere **Voce,** fare clic su **Code di chiamata** e quindi su **Aggiungi.**
+1. Nell'Teams di amministrazione espandere **Voce,** fare clic su **Code di chiamata** e quindi su **Aggiungi.**
 
 1. Digitare un nome per la coda di chiamata.
 
@@ -142,11 +142,11 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 4. Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre.
 
-5. Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
+5. Teams musica predefinita ai chiamanti mentre sono in attesa in una coda. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
    > [!NOTE]
    > La registrazione caricata non può essere superiore a 5 MB.
-   > La musica predefinita fornita nelle code di chiamata di Teams è gratuita di eventuali royalty pagate dall'organizzazione. 
+   > La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. 
 
 > [!div class="nextstepaction"]
 > [Passaggio 3 - Chiamare gli agenti >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-agents#steps)

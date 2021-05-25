@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per gli Stati Uniti.
-ms.openlocfilehash: 65cd883ef6cffc295f8559bbb4b1779cae020946
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b3503c3a8c5421c7a2059019d3798bf23823960d
+ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094648"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52629035"
 ---
 # <a name="availability-in-the-united-states-us"></a>Disponibilità negli Stati Uniti (Stati Uniti)
 
@@ -64,9 +64,9 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 | È possibile effettuare chiamate in uscita verso numeri premium? <br/> | Al momento non supportato. <br/>                                                                                                                                                                                                                                                                                               |
 | Chiamate in uscita possibili verso...?  <br/>                | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/>                                                                                                                                                                                                                      |
 > [!Note]
-> Le chiamate verso il Canada vengono trattate come chiamate nazionali.
+> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente solo a "nazionali", un utente degli Stati Uniti non sarà in grado di chiamare il Canada e, allo stesso modo, un utente canadese non sarà in grado di chiamare un utente statunitense.
 
->[!Note] 
+>[!Note]
 > Le chiamate nazionali negli Stati Uniti includono le chiamate a tutti i 50 Stati e a Portorico. Gli utenti a cui è assegnata la posizione di utilizzo della licenza degli Stati Uniti e/o a Portorico condividono lo stesso pool di minuti.
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi

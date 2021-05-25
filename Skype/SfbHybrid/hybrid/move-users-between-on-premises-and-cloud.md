@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: "Riepilogo: in una distribuzione locale di Skype for Business Server abilitata per la distribuzione ibrida, è possibile spostare gli utenti tra l'ambiente locale e il cloud (da Microsoft Teams a Skype for Business Online prima del ritiro)."
-ms.openlocfilehash: 8fce1799ba3e10f2e96b8beab0fbde7805c7c229
-ms.sourcegitcommit: 17ad87556fb8e0de3c498e53f98f951ae3fa526b
+ms.openlocfilehash: 3140811a08f582488e672fccbfa7f34678b813d4
+ms.sourcegitcommit: 9d446485aa842abbdcd34d946b247166c2bf1610
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52305958"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "52642086"
 ---
 # <a name="move-users-between-on-premises-and-cloud"></a>Spostare utenti tra ambiente locale e cloud
 
@@ -40,7 +40,7 @@ Prerequisiti per spostare un utente nel cloud (se si Teams solo modalità o Skyp
 
 - L'organizzazione deve avere Azure AD Connessione configurato correttamente e sincronizzare tutti gli attributi rilevanti per l'utente, come descritto in [Configure Azure AD Connessione](configure-azure-ad-connect.md).
 - Skype for Business ibrido deve essere configurato, come descritto in [Configure Skype for Business hybrid](configure-federation-with-skype-for-business-online.md).
-- All'utente deve essere assegnata una licenza per Teams e Skype for Business Online (Piano 2). Anche dopo il ritiro di Skype for Business Online, la licenza Skype for Business online è ancora necessaria.  Inoltre:
+- All'utente deve essere assegnata una licenza per Teams e Skype for Business Online (Piano 2). Anche dopo il ritiro Skype for Business Online, la licenza Skype for Business Online è ancora necessaria.  Inoltre:
     - Se l'utente è abilitato per le conferenze telefoniche con accesso esterno in locale, per impostazione predefinita l'utente deve disporre anche di una licenza di audioconferenza assegnata in Teams prima di spostare l'utente online. Dopo la migrazione al cloud l'utente dovrà eseguire il provisioning per le audioconferenze nel cloud. Se per qualche motivo si desidera spostare un utente nel cloud, ma non utilizzare la funzionalità di audioconferenza, è possibile ignorare questo controllo specificando il `BypassAudioConferencingCheck` parametro in `Move-CsUser` .
     - Se l'utente è abilitato per VoIP aziendale in locale, per impostazione predefinita l'utente deve disporre di una licenza Sistema telefonico assegnata in Teams prima di spostare l'utente online. Dopo la migrazione al cloud l'utente dovrà eseguire il provisioning per Sistema telefonico nel cloud. Se per qualche motivo si desidera spostare un utente nel cloud ma non utilizzare la funzionalità Sistema telefonico, è possibile ignorare questo controllo specificando il `BypassEnterpriseVoiceCheck` parametro in `Move-CsUser` .
 
@@ -68,7 +68,7 @@ Per spostare gli utenti tra l'ambiente locale e il cloud (da Teams a Skype for B
 
 Per spostare gli utenti tra l'ambiente locale e il cloud, è necessario utilizzare un account con privilegi sufficienti sia nell'ambiente Skype for Business Server locale che nell'organizzazione Teams. È possibile utilizzare un solo account con tutti i privilegi necessari oppure due account, nel qual caso si accederà agli strumenti locali utilizzando le credenziali locali e quindi in tali strumenti verranno fornite credenziali aggiuntive per un account amministrativo di Teams.  
 
-- Nell'ambiente locale l'utente che esegue lo spostamento deve avere il ruolo CSServerAdminstrator in Skype for Business Server.
+- Nell'ambiente locale, l'utente che esegue lo spostamento deve avere il ruolo CSServerAdministrator in Skype for Business Server.
 - In Teams, l'utente che esegue lo spostamento deve soddisfare uno dei criteri seguenti:
   - L'utente è membro del ruolo Amministratore globale.
   - L'utente è membro dei ruoli amministratore Teams utente e Amministratore utente.

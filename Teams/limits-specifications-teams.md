@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5fbf2efa3ad1d77300138a57336b4254ea788e84
-ms.sourcegitcommit: 242561bfc12504614633539ca696b91dfc890b92
+ms.openlocfilehash: b714da86c51072eb7efae846dbeb29b205674751
+ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "52328508"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "52628885"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -53,9 +53,9 @@ Questo articolo descrive alcuni dei limiti, le specifiche e altri requisiti appl
 
 <sup>2</sup> Questo limite include i team archiviati. 
 
-<sup>3</sup> Per aumentare ulteriormente il numero di team, è necessario contattare il supporto Microsoft e richiedere un aumento ulteriore del numero di oggetti di Azure Active Directory nel tenant. L'aumento viene eseguito solo per scenari di produzione reali.
+<sup>3</sup> Per aumentare ulteriormente il numero di team, è necessario contattare il supporto tecnico Microsoft e richiedere un ulteriore aumento del numero di oggetti Azure Active Directory nel tenant. L'aumento viene eseguito solo per scenari di produzione reali.
 
-<sup>4</sup> I canali eliminati possono essere ripristinati entro 30 giorni. In questi 30 giorni, un canale eliminato continua a essere considerato rispetto al limite di 200 canali o 30 canali privati per team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più calcolato per il limite per team.
+<sup>4</sup> I canali eliminati possono essere ripristinati entro 30 giorni. In questi 30 giorni, un canale eliminato continua a essere conteggiato ai fini del limite di 200 canali o 30 canali privati per team. Dopo 30 giorni, un canale eliminato e il relativo contenuto vengono eliminati definitivamente e il canale non viene più calcolato ai fini del limite per team.
 
 <sup>5</sup> 28 KB è un limite approssimativo perché include il messaggio stesso (testo, collegamenti a immagini e così via), menzioni con @, numero di connettori e reazioni.
 
@@ -131,7 +131,7 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000, include GCC ma non ancora per GCCH o DoD. **Solo visualizzazione** consente a un massimo di 20.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).|
+|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000 include GCC ma non ancora per MCCH, DoD o A1 (300). **Solo visualizzazione** consente a un massimo di 20.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).|
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
