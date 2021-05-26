@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 30f5dc38b713e59b49a166694d5c760accc639be
-ms.sourcegitcommit: 326aa6375cb830cdb0f82ea791b84d570758853a
+ms.openlocfilehash: a24de985b601b1d84250863e06fed90a77699483
+ms.sourcegitcommit: 592e5a0638c7739dfaa3565b67d4edc621eebc9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/05/2021
-ms.locfileid: "52221809"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52656079"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -402,8 +402,7 @@ Le funzionalità di chiamata e riunione seguenti non sono supportate:
 Di seguito sono riportati i problemi noti e le limitazioni per le chiamate e le riunioni:
 
 - L'interoperabilità con Skype for Business è limitata alle chiamate audio; non esiste alcuna modalità video.
-- Nelle riunioni o nelle chiamate di gruppo è supportato un solo flusso video in arrivo. Quando più persone inviano video, viene visualizzato solo il video dell'altoparlante dominante in un determinato momento.
-- La risoluzione dello stream video in ingresso e in uscita è limitata a una risoluzione di 720p. Si tratta di una limitazione di WebRTC.
+- La risoluzione dello stream video in ingresso e in uscita è limitata a una risoluzione di 720p.
 - È supportato un solo flusso video da una fotocamera in arrivo o da uno stream di condivisione dello schermo. Quando c'è una condivisione dello schermo in arrivo, viene visualizzata la condivisione dello schermo, invece del video dell'altoparlante dominante.
 - Teams non passa all'ultimo dispositivo audio selezionato da un utente, se il dispositivo è disconnesso e quindi riconnesso.
 - Condivisione dello schermo in uscita:

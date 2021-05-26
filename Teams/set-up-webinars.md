@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire i criteri webinar per Teams riunioni.
-ms.openlocfilehash: 739c0b5494b0ecc5b9a20fd8db4756313848325b
-ms.sourcegitcommit: e5d6a2c3ad45c1285016b93ec4c7afea907d71a1
+ms.openlocfilehash: bc1460f93259a9dd3095cf764c38b56ab703bba0
+ms.sourcegitcommit: 592e5a0638c7739dfaa3565b67d4edc621eebc9f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52275520"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52656049"
 ---
 # <a name="set-up-for-webinars-in-microsoft-teams"></a>Configurare i webinar in Microsoft Teams
 
@@ -58,10 +58,10 @@ Set-CsTeamsMeetingPolicy -AllowMeetingRegistration True
 ```
 ### <a name="configure-who-can-register-for-webinars"></a>Configurare gli utenti che possono registrarsi per i webinar
 
-È possibile limitare la registrazione solo agli utenti dell'organizzazione o aprirla a tutti gli utenti interni ed esterni al tenant. Per impostazione predefinita, **WhoCanRegister** è abilitato e impostato su **Tutti**. Se si vuole disattivare la registrazione della riunione, impostare **WhoCanRegister** su **False**.
+È possibile limitare la registrazione solo agli utenti dell'organizzazione o aprirla a tutti gli utenti interni ed esterni al tenant. Per impostazione predefinita, **WhoCanRegister** è abilitato e impostato su **Tutti**. Se si vuole disattivare la registrazione della riunione, impostare **AllowMeetingRegistration** su **False**.
 
 > [!IMPORTANT]
-> Tenere presente che **AllowPrivateMeetingScheduling** deve essere impostato su **True** per il funzionamento di **WhoCanRegister.** Inoltre, gli elenchi Microsoft devono essere impostati in SharePoint. Per altre informazioni, vedere [Impostazioni di controllo per Elenchi Microsoft.](/sharepoint/control-lists)
+> Tenere presente che **AllowPrivateMeetingScheduling** deve essere impostato su **True** per consentire il funzionamento di **AllowMeetingRegistration.** Inoltre, gli elenchi Microsoft devono essere impostati in SharePoint. Per altre informazioni, vedere [Impostazioni di controllo per Elenchi Microsoft.](/sharepoint/control-lists)
 
 **Per consentire *solo agli* utenti dell'organizzazione di registrarsi per i webinar, eseguire:**
 
