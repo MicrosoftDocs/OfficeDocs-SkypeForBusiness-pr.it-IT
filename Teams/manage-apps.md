@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app Teams nella pagina Gestisci app
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: d42c9609014e4609e74f3cf5022b350d9890ef58
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: 16b139750e5a227cc6702e0f8d57cd2f4625f983
+ms.sourcegitcommit: 358038cee16ac041da10a67c26cf463901ae53d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52129665"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52669228"
 ---
 # <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia Microsoft Teams di amministrazione
 
@@ -149,6 +149,10 @@ Usare le impostazioni dell'app a livello di organizzazione per controllare se gl
 
         > [!NOTE]
         > Quando **l'opzione Consenti app di terze** parti è disattivata, i [webhook](/microsoftteams/platform/webhooks-and-connectors/what-are-webhooks-and-connectors) in uscita sono disabilitati, il che significa che gli utenti non possono crearle. Quando questa impostazione è attivata, i webhook in uscita sono abilitati per tutti gli utenti ed è possibile controllarli a livello di utente consentendo o bloccando l'app Webhook in uscita tramite i criteri di autorizzazione [delle app.](teams-app-permission-policies.md) <br><br>Si noti che se sono disponibili criteri di  autorizzazione per le [app](teams-app-permission-policies.md) **Microsoft** che usano l'impostazione Consenti app specifiche e bloccano tutti gli altri utenti e si vogliono abilitare i webhook in uscita per gli utenti, aggiungere l'app Webhook in uscita all'elenco.
+
+        > [!NOTE]
+        > Teams gli utenti possono aggiungere app quando ospitano riunioni o chat con persone di altre organizzazioni. Possono anche usare le app condivise da persone di altre organizzazioni quando aderiscono a riunioni o chat ospitate da tali organizzazioni. Vengono applicati i criteri dati dell'organizzazione dell'utente di hosting, nonché le procedure di condivisione dei dati di qualsiasi app di terze parti condivise dall'organizzazione dell'utente.
+
     - **Consenti qualsiasi nuova app di terze parti pubblicata nello Store per impostazione predefinita**: questa impostazione consente di controllare se eventuali nuove app di terze parti pubblicate nello Store di Teams diventano disponibili automaticamente in Teams. È possibile impostare questa opzione solo se si consentono le app di terze parti.
 
 3. In **App personalizzate** disattivare o attivare Consenti interazione con le app **personalizzate.** Questa impostazione controlla se gli utenti possono interagire con le app personalizzate. Per altre informazioni, vedere [Gestisci criteri e impostazioni app personalizzate in Teams](teams-custom-app-policies-and-settings.md).

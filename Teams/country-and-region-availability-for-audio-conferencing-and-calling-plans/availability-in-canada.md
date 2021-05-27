@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
-ms.openlocfilehash: ebd49f2a15467504863e113f1eb06db6ba881f64
-ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
+ms.openlocfilehash: 29bced17ee6b0dd9c5240651728f390b2f014ac3
+ms.sourcegitcommit: 358038cee16ac041da10a67c26cf463901ae53d8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629015"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "52669218"
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 
@@ -65,6 +65,9 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 | Chiamate in uscita possibili verso...?  <br/>                 | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/>                                                                                                                                                                  |
 
 > [!Note]
+> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente solo a "nazionali", un utente degli Stati Uniti non sarà in grado di chiamare il Canada e, allo stesso modo, un utente canadese non sarà in grado di chiamare un utente statunitense.
+
+> [!Note]
 > Le chiamate verso gli Stati Uniti vengono trattate come chiamate nazionali.
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
@@ -76,9 +79,6 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
 
  Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
-
-> [!Note]
-> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente solo a "nazionali", un utente degli Stati Uniti non sarà in grado di chiamare il Canada e, allo stesso modo, un utente canadese non sarà in grado di chiamare un utente statunitense.
 
 ## <a name="communications-credits"></a>Credito per la comunicazione
 
