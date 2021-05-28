@@ -1,0 +1,81 @@
+---
+title: Operatore Connessione
+author: cazawideh
+ms.author: czawideh
+manager: serdars
+ms.date: 04/12/2021
+ms.topic: article
+ms.service: msteams
+audience: admin
+ms.collection:
+- M365-voice
+- m365initiative-voice
+ms.reviewer: crowe
+search.appverid: MET150
+f1.keywords:
+- NOCSH
+- ms.teamsadmincenter.directrouting.overview
+description: Altre informazioni sulla gestione Connessione, ad esempio i requisiti e la pianificazione della distribuzione.
+ms.custom:
+- seo-marvel-apr2020
+- seo-marvel-jun2020
+appliesto:
+- Microsoft Teams
+ms.openlocfilehash: 088b36f546cebe67e10d840075e601e96a6df6e2
+ms.sourcegitcommit: 39d26edd43b6066d5a6dee2a5ad1354a1e560a0d
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52694541"
+---
+# <a name="plan-for-operator-connect"></a><span data-ttu-id="a8fdb-103">Pianificare l'accesso Connessione</span><span class="sxs-lookup"><span data-stu-id="a8fdb-103">Plan for Operator Connect</span></span>
+
+>[!NOTE]
+><span data-ttu-id="a8fdb-104">La Connessione operatore è attualmente disponibile solo **nell'anteprima pubblica.**</span><span class="sxs-lookup"><span data-stu-id="a8fdb-104">Operator Connect is currently available only in **public preview**.</span></span> <span data-ttu-id="a8fdb-105">L'anteprima pubblica consente di testare le funzionalità imminenti e fornire feedback.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-105">Public preview allows you to test upcoming features and provide feedback.</span></span> <span data-ttu-id="a8fdb-106">Le funzionalità incluse nell'anteprima pubblica potrebbero non essere complete, potrebbero subire modifiche e non sono supportate in Office 365 Government Cloud.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-106">Features included in public preview may not be complete, may undergo changes, and are not supported in Office 365 Government Cloud.</span></span>
+
+<span data-ttu-id="a8fdb-107">La Connessione operatore è un'altra opzione per fornire connettività PSTN (Public Switched Telephone Network) con Teams e Sistema telefonico.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-107">Operator Connect is another option for providing Public Switched Telephone Network (PSTN) connectivity with Teams and Phone System.</span></span>  
+
+<span data-ttu-id="a8fdb-108">Questo articolo descrive i vantaggi e i requisiti ed elenca gli operatori che partecipano al Programma Connessione operatore.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-108">This article describes benefits and requirements, and lists the operators participating in the Operator Connect Program.</span></span>  <span data-ttu-id="a8fdb-109">Se si decide Connessione operatore è la soluzione giusta per l'organizzazione, dopo aver letto questo articolo, vedere Configurare l'operatore [Connessione](operator-connect-configure.md).</span><span class="sxs-lookup"><span data-stu-id="a8fdb-109">If you decide Operator Connect is the right solution for your organization, after reading this article, see [Configure Operator Connect](operator-connect-configure.md).</span></span>  
+
+## <a name="benefits"></a><span data-ttu-id="a8fdb-110">Vantaggi</span><span class="sxs-lookup"><span data-stu-id="a8fdb-110">Benefits</span></span>
+
+<span data-ttu-id="a8fdb-111">Con Operator Connessione, se l'operatore esistente è un partecipante al programma Microsoft Operator Connessione, può gestire il servizio per portare le chiamate PSTN in Teams.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-111">With Operator Connect, if your existing operator is a participant in the Microsoft Operator Connect program, they can manage the service for bringing PSTN calling to Teams.</span></span> <span data-ttu-id="a8fdb-112">Il programma operatore Connessione offre i vantaggi seguenti:</span><span class="sxs-lookup"><span data-stu-id="a8fdb-112">The Operator Connect program provides the following benefits:</span></span>
+
+- <span data-ttu-id="a8fdb-113">**Sfruttare i contratti esistenti o trovare un nuovo operatore.**</span><span class="sxs-lookup"><span data-stu-id="a8fdb-113">**Leverage existing contracts, or find a new operator.**</span></span> <span data-ttu-id="a8fdb-114">È possibile mantenere l'operatore e i contratti preferiti oppure sceglierne uno nuovo tra una selezione di operatori partecipanti per soddisfare le esigenze aziendali.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-114">You keep your preferred operator and contracts, or choose a new one from a selection of participating operators to meet your business needs.</span></span>
+
+- <span data-ttu-id="a8fdb-115">**Infrastruttura gestita dall'operatore.**</span><span class="sxs-lookup"><span data-stu-id="a8fdb-115">**Operator-managed infrastructure.**</span></span> <span data-ttu-id="a8fdb-116">L'operatore gestisce i servizi di chiamata PSTN e i session border controller (SBC), consentendo di risparmiare sull'acquisto e la gestione dell'hardware.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-116">Your operator manages the PSTN calling services and Session Border Controllers (SBCs), allowing you to save on hardware purchase and management.</span></span>
+
+- <span data-ttu-id="a8fdb-117">**Distribuzione più rapida e semplice.**</span><span class="sxs-lookup"><span data-stu-id="a8fdb-117">**Faster, easier deployment.**</span></span> <span data-ttu-id="a8fdb-118">È possibile connettersi rapidamente all'operatore e assegnare numeri di telefono agli utenti, tutti dall'Teams di amministrazione.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-118">You can quickly connect to your operator and assign phone numbers to users -– all from the Teams Admin Center.</span></span>
+
+- <span data-ttu-id="a8fdb-119">**Supporto e affidabilità migliorati.**</span><span class="sxs-lookup"><span data-stu-id="a8fdb-119">**Enhanced support and reliability.**</span></span> <span data-ttu-id="a8fdb-120">Gli operatori forniscono supporto tecnico e contratti di servizio condivisi per migliorare il servizio di supporto, mentre il peering diretto basato su Azure crea una connessione di rete uno-a-uno per migliorare l'affidabilità.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-120">Operators provide technical support and shared service level agreements to improve support service, while direct peering powered by Azure creates a one-to-one network connection for enhanced reliability.</span></span>
+
+## <a name="requirements"></a><span data-ttu-id="a8fdb-121">Requisiti</span><span class="sxs-lookup"><span data-stu-id="a8fdb-121">Requirements</span></span>
+
+ <span data-ttu-id="a8fdb-122">La Connessione operatore potrebbe essere la soluzione giusta per l'organizzazione se:</span><span class="sxs-lookup"><span data-stu-id="a8fdb-122">Operator Connect might be the right solution for your organization if:</span></span>
+
+- <span data-ttu-id="a8fdb-123">Microsoft Calling Plan non è disponibile nella tua posizione geografica.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-123">Microsoft Calling Plan isn't available in your geographic location.</span></span>
+- <span data-ttu-id="a8fdb-124">L'operatore preferito è un partecipante al programma Microsoft Operator Connessione.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-124">Your preferred operator is a participant in the Microsoft Operator Connect program.</span></span>
+- <span data-ttu-id="a8fdb-125">Si vuole trovare un nuovo operatore per abilitare le chiamate in Teams.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-125">You want to find a new operator to enable calling in Teams.</span></span>
+
+<span data-ttu-id="a8fdb-126">Per abilitare le assegnazioni dei numeri di telefono con operatore Connessione, assicurati che gli utenti siano:</span><span class="sxs-lookup"><span data-stu-id="a8fdb-126">To enable phone number assignments with Operator Connect, make sure your users are:</span></span>
+
+- <span data-ttu-id="a8fdb-127">Teams Telefono concesso in licenza.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-127">Teams Phone licensed.</span></span> <span data-ttu-id="a8fdb-128">Per altre informazioni, vedere [Che cos'è Sistema telefonico?](what-is-phone-system-in-office-365.md) e Assegnare Teams [licenze per i componenti aggiuntivi agli utenti.](teams-add-on-licensing/assign-teams-add-on-licenses.md)</span><span class="sxs-lookup"><span data-stu-id="a8fdb-128">To learn more, see [What is Phone System?](what-is-phone-system-in-office-365.md) and [Assign Teams add-on licenses to users](teams-add-on-licensing/assign-teams-add-on-licenses.md).</span></span>
+- <span data-ttu-id="a8fdb-129">In modalità TeamsOnly.</span><span class="sxs-lookup"><span data-stu-id="a8fdb-129">In TeamsOnly mode.</span></span> <span data-ttu-id="a8fdb-130">Per altre informazioni, vedere [Comprendere Microsoft Teams e Skype for Business coesistenza e interoperabilità.](teams-and-skypeforbusiness-coexistence-and-interoperability.md)</span><span class="sxs-lookup"><span data-stu-id="a8fdb-130">To learn more, see [Understand Microsoft Teams and Skype for Business coexistence and interoperability](teams-and-skypeforbusiness-coexistence-and-interoperability.md).</span></span>
+
+## <a name="available-operators"></a><span data-ttu-id="a8fdb-131">Operatori disponibili</span><span class="sxs-lookup"><span data-stu-id="a8fdb-131">Available Operators</span></span>
+
+<span data-ttu-id="a8fdb-132">Gli operatori seguenti sono partecipanti al programma Microsoft Operator Connessione:</span><span class="sxs-lookup"><span data-stu-id="a8fdb-132">The following operators are participants in the Microsoft Operator Connect program:</span></span>
+
+| <span data-ttu-id="a8fdb-133">Operatore</span><span class="sxs-lookup"><span data-stu-id="a8fdb-133">Operator</span></span> | <span data-ttu-id="a8fdb-134">Funzionalità</span><span class="sxs-lookup"><span data-stu-id="a8fdb-134">Capability</span></span> | <span data-ttu-id="a8fdb-135">Copertura paese</span><span class="sxs-lookup"><span data-stu-id="a8fdb-135">Country coverage</span></span> |
+| --- | --- | --- |
+| `BT`  | <span data-ttu-id="a8fdb-136">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-136">Calling</span></span> | <span data-ttu-id="a8fdb-137">Belgio, Danimarca, Finlandia, Francia, Germania, Irlanda, Italia, Lussemburgo, Paesi Bassi, Norvegia, Polonia, Sudafrica, Spagna, Svezia, Svizzera, Regno Unito</span><span class="sxs-lookup"><span data-stu-id="a8fdb-137">Belgium, Denmark, Finland, France, Germany, Ireland, Italy, Luxembourg, Netherlands, Norway, Poland, South Africa, Spain, Sweden, Switzerland, United Kingdom</span></span> |
+| `Intrado` | <span data-ttu-id="a8fdb-138">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-138">Calling</span></span> | <span data-ttu-id="a8fdb-139">Belgio, Canada, Danimarca, Francia, Germania, Irlanda, Lussemburgo, Paesi Bassi, Spagna, Svezia, Regno Unito, Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="a8fdb-139">Belgium, Canada, Denmark, France, Germany, Ireland, Luxembourg, Netherlands, Spain, Sweden, United Kingdom, United States</span></span>  |
+| `NTT`  | <span data-ttu-id="a8fdb-140">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-140">Calling</span></span> | <span data-ttu-id="a8fdb-141">Austria, Belgio, Brasile, Canada, Cecoia, Danimarca, Finlandia, Francia, Germania, Irlanda, Italia, Lussemburgo, Messico, Paesi Bassi, Norvegia, Polonia, Portogallo, Portorico, Romania, Sudafrica, Spagna, Svezia, Svizzera, Regno Unito, Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="a8fdb-141">Austria, Belgium, Brazil, Canada, Czechia, Denmark, Finland,  France, Germany, Ireland, Italy, Luxembourg, Mexico, Netherlands, Norway, Poland, Portugal, Puerto Rico, Romania, South Africa, Spain, Sweden, Switzerland, United Kingdom, United States</span></span> |
+| `NuWave` | <span data-ttu-id="a8fdb-142">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-142">Calling</span></span> | <span data-ttu-id="a8fdb-143">Austria, Belgio, Canada, Danimarca, Francia, Germania, Irlanda, Italia, Paesi Bassi, Portogallo, Spagna, Svezia, Svizzera, Regno Unito, Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="a8fdb-143">Austria, Belgium, Canada, Denmark, France, Germany, Ireland, Italy, Netherlands, Portugal, Spain, Sweden, Switzerland, United Kingdom, United States</span></span>   |
+| `Orange Business Services` | <span data-ttu-id="a8fdb-144">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-144">Calling</span></span> | <span data-ttu-id="a8fdb-145">Austria, Belgio, Cecoia, Danimarca, Finlandia, Francia, Guiana francese, Germania, Guadalupa, Irlanda, Italia, Lussemburgo, Martinica, Mayotte, Paesi Bassi, Norvegia, Polonia, Portogallo, Riunione, Saint Barthélemy, Saint Martin, Spagna, Svalbard, Svezia, Svizzera, Regno Unito</span><span class="sxs-lookup"><span data-stu-id="a8fdb-145">Austria, Belgium, Czechia, Denmark, Finland, France, French Guiana, Germany, Guadeloupe, Ireland, Italy, Luxembourg, Martinique, Mayotte, Netherlands, Norway, Poland, Portugal, Réunion, Saint Barthélemy, Saint Martin, Spain, Svalbard, Sweden, Switzerland, United Kingdom</span></span>  |
+| `Pure IP` | <span data-ttu-id="a8fdb-146">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-146">Calling</span></span> | <span data-ttu-id="a8fdb-147">Australia, Austria, Belgio, Brasile, Bulgaria, Canada, Cile, Colombia, Croazia, Cipro, Cecoslovacchia, Danimarca, Finlandia, Francia, Germania, Grecia, Hong Kong S.A.R., Irlanda, Italia, Giappone, Lituania, Lussemburgo, Malaysia, Messico, Paesi Bassi, Nuova Zelanda, Norvegia, Panama, Polonia, Portogallo, PortoRico, Romania, Singapore, Slovacchia, Slovenia, Sudafrica, Spagna, Svezia, Svizzera, Regno Unito, Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="a8fdb-147">Australia, Austria, Belgium, Brazil, Bulgaria, Canada, Chile, Colombia, Croatia, Cyprus, Czechia, Denmark, Finland, France, Germany, Greece, Hong Kong S.A.R., Ireland, Italy, Japan, Lithuania, Luxembourg, Malaysia, Mexico, Netherlands, New Zealand, Norway, Panama, Poland, Portugal, Puerto Rico, Romania, Singapore, Slovakia, Slovenia, South Africa, Spain, Sweden, Switzerland, United Kingdom, United States</span></span>  |
+| `Rogers Business` | <span data-ttu-id="a8fdb-148">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-148">Calling</span></span> | <span data-ttu-id="a8fdb-149">Canada</span><span class="sxs-lookup"><span data-stu-id="a8fdb-149">Canada</span></span>  |
+| `TATA Communications` | <span data-ttu-id="a8fdb-150">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-150">Calling</span></span> | <span data-ttu-id="a8fdb-151">Australia, Austria, Belgio, Canada, Cecoia, Danimarca, Francia, Germania, Hong Kong S.A.R., Ungheria, Irlanda, Italia, Malaysia, Messico, Paesi Bassi, Nuova Zelanda, Polonia, Portogallo, Romania, Singapore, Corea del Sud, Spagna, Svezia, Svizzera, Thailandia, Regno Unito, Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="a8fdb-151">Australia, Austria, Belgium, Canada, Czechia, Denmark, France, Germany, Hong Kong S.A.R., Hungary, Ireland, Italy, Malaysia, Mexico, Netherlands, New Zealand, Poland, Portugal, Romania, Singapore, South Korea, Spain, Sweden, Switzerland, Thailand, United Kingdom, United States</span></span> |
+| `Telekom Deutschland` | <span data-ttu-id="a8fdb-152">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-152">Calling</span></span> | <span data-ttu-id="a8fdb-153">Germania</span><span class="sxs-lookup"><span data-stu-id="a8fdb-153">Germany</span></span>  |
+| `Telenor` | <span data-ttu-id="a8fdb-154">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-154">Calling</span></span> | <span data-ttu-id="a8fdb-155">Danimarca, Finlandia, Norvegia, Svezia</span><span class="sxs-lookup"><span data-stu-id="a8fdb-155">Denmark, Finland, Norway, Sweden</span></span>  |
+| `Verizon` | <span data-ttu-id="a8fdb-156">Chiamate</span><span class="sxs-lookup"><span data-stu-id="a8fdb-156">Calling</span></span> | <span data-ttu-id="a8fdb-157">Stati Uniti</span><span class="sxs-lookup"><span data-stu-id="a8fdb-157">United States</span></span> |
