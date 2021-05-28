@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Spostare gli endpoint dell'applicazione hyrid prima di rimuovere le autorizzazioni Skype for Business'ambiente locale.
-ms.openlocfilehash: 562da9e8e83684ab3ff532be68190161ffc412b5
-ms.sourcegitcommit: 02703e8f9a512848e158a3a4f38d84501ad5f633
+ms.openlocfilehash: 959a3ed47993f431636fe3c99b8502cf9aa634fe
+ms.sourcegitcommit: 36924dc54fe7b09607b07d7543fe7e39eb4d2483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52526719"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684383"
 ---
 # <a name="move-hybrid-application-endpoints-before-decommissioning-your-on-premises-environment"></a>Spostare gli endpoint dell'applicazione ibrida prima di rimuovere le autorizzazioni dell'ambiente locale
 
@@ -46,7 +46,7 @@ Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di a
    ```PowerShell
    Get-CsHybridApplicationEndpoint|select Sipaddress, DisplayName, ApplicationID, LineUri |Export-Csv -Path "c:\backup\HybridEndpoints.csv"
    ```
-2. Creare e creare nuove [licenze per](https://docs.microsoft.com/microsoftteams/manage-resource-accounts) i nuovi account Microsoft 365 per sostituire gli endpoint dell'applicazione ibrida locale esistenti.
+2. Creare e creare nuove [licenze per](/microsoftteams/manage-resource-accounts) i nuovi account Microsoft 365 per sostituire gli endpoint dell'applicazione ibrida locale esistenti.
 
 3. Associare i nuovi account delle risorse agli endpoint dell'applicazione ibrida esistenti.
 
@@ -70,7 +70,7 @@ Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di a
    }
    ```
 
-6. Assegnare numeri di telefono ai nuovi account delle risorse creati nel passaggio 2. Per ulteriori informazioni su come assegnare un numero di telefono a un account della risorsa, vedere l'articolo seguente: [Assegnare un numero di servizio](https://docs.microsoft.com/microsoftteams/manage-resource-accounts#assign-a-service-number).
+6. Assegnare numeri di telefono ai nuovi account delle risorse creati nel passaggio 2. Per ulteriori informazioni su come assegnare un numero di telefono a un account della risorsa, vedere l'articolo seguente: [Assegnare un numero di servizio](/microsoftteams/manage-resource-accounts#assign-a-service-number).
 
 7. Eliminare gli endpoint locali eseguendo il comando di PowerShell Skype for Business Server locale seguente:
 

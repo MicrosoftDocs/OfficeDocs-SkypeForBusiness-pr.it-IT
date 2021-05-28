@@ -20,24 +20,24 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 800bc37ee25c073d0702c519196620faa1faf92e
-ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
+ms.openlocfilehash: 5b202d0a1895c3fd9b4279d6a7db072cd18f72ad
+ms.sourcegitcommit: 17e34d2de3d10f1d04929a695e301127db7014bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574165"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689784"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
 <!--- Add zone marker here--->
 
-I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica di chat e canale sono disponibili per gli utenti [(proprietari e membri)](assign-roles-permissions.md) in Microsoft Teams. È possibile usare i criteri globali (impostazione predefinita a livello di organizzazione) creati automaticamente oppure creare e assegnare criteri di messaggistica personalizzati.
+I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica di chat e canale sono disponibili per gli utenti (proprietari e [membri)](assign-roles-permissions.md) in Microsoft Teams. È possibile usare i criteri globali (impostazione predefinita a livello di organizzazione) creati automaticamente oppure creare e assegnare criteri di messaggistica personalizzati.
 
 Gli utenti dell'organizzazione otterrà automaticamente i criteri globali, a meno che non si creino e assegnino criteri personalizzati. Modificare le impostazioni nei criteri globali oppure creare e assegnare uno o più criteri personalizzati per attivare o disattivare le caratteristiche desiderate.
 
 ## <a name="create-a-custom-messaging-policy"></a>Creare criteri di messaggistica personalizzati
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri di messaggistica.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Criteri di messaggistica.**
 2. Selezionare **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 4. Scegliere le impostazioni desiderate.
@@ -55,7 +55,7 @@ Assegnare quindi il criterio agli utenti.
 
 È possibile modificare il criterio globale e i criteri personalizzati creati.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri di messaggistica.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Criteri di messaggistica.**
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Da lì, apportare le modifiche desiderate.
 4. Selezionare **Salva**.
@@ -86,15 +86,15 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 
 - **Chat**  Attivare questa impostazione se si vuole che gli utenti dell'organizzazione possano usare l'app Teams per chattare con altre persone.
 - **Usare Giphys nelle conversazioni**  Se attivi Giphys, gli utenti possono includere Giphys nelle conversazioni in chat con altre persone. Giphy è un database online e un motore di ricerca che consente agli utenti di cercare e condividere file GIF animati. A ogni Giphy viene assegnata una classificazione dei contenuti. Oltre a attivare questa impostazione, è [](/deployoffice/privacy/manage-privacy-controls#policy-setting-for-optional-connected-experiences) necessario abilitare esperienze connesse facoltative per consentire a Giphys di accedere alle conversazioni.
-- **Classificazione del contenuto gipsy**
+- **Classificazione del contenuto Giphy**
     - **Nessuna restrizione** Questo significa che gli utenti saranno in grado di inserire qualsiasi Giphy nelle chat, indipendentemente dalla classificazione del contenuto.
     - **Moderato**  Questo significa che gli utenti saranno in grado di inserire Giphys nelle chat, ma saranno moderatamente limitati dai contenuti per adulti.
     - **Strict**  Questo significa che gli utenti saranno in grado di inserire Giphys nelle chat, ma saranno strettamente limitati dai contenuti per adulti.
 - **Usare Memes nelle conversazioni** Se attivi Memes, gli utenti possono includere Memes nelle conversazioni in chat con altre persone.
-- **Usare adesivi nelle conversazioni. Se si attiva questa opzione, gli utenti possono includere adesivi nelle conversazioni in chat con altre persone.
+- **Usare gli adesivi nelle conversazioni** Se si attiva questa opzione, gli utenti possono includere adesivi nelle conversazioni in chat con altre persone.
 - **Consenti anteprime URL** Usare questa impostazione per attivare o disattivare l'anteprima automatica degli URL nei messaggi.
-- **Consentire agli utenti di tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre automaticamente i messaggi di Teams nella lingua specificata dalle impostazioni della lingua personale per Microsoft 365 o Office 365.
-- **Consentire lo strumento di lettura immersiva per la visualizzazione dei messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft Immersive Reader. Lo strumento di lettura immersiva è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
+- **Consentire agli utenti di tradurre i messaggi** Attivare questa impostazione per consentire agli utenti di tradurre Teams messaggi nella lingua specificata dalle impostazioni della lingua personale per Microsoft 365 o Office 365.
+- **Consentire lo strumento di lettura immersiva per la visualizzazione dei messaggi** Attivare questa impostazione per consentire agli utenti di visualizzare i messaggi in Microsoft Strumento di lettura immersiva. Strumento di lettura immersiva è uno strumento di apprendimento che offre un'esperienza di lettura a schermo intero per aumentare la leggibilità del testo.
 - **Inviare messaggi urgenti usando le notifiche di priorità** Se si attiva questa opzione, gli utenti possono inviare messaggi usando le [notifiche di priorità.](https://support.microsoft.com/article/mark-a-message-as-important-or-urgent-in-teams-ea99d5b6-1317-4550-8d75-86ff14cd4462) Le notifiche di priorità notificano agli utenti ogni 2  minuti per 20 minuti o finché i messaggi contrassegnati come urgenti non vengono ricevuti e letti dal destinatario. Questa caratteristica aumenta la probabilità che il messaggio si agiti in modo appropriato.
 - **Creazione di messaggi audio**
   > [!Important]
@@ -105,7 +105,7 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
 - **Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti** Abilitare questa impostazione per spostare i canali preferiti nella parte superiore dello schermo del dispositivo mobile in modo che un utente non sia necessario scorrere per trovarli.
 - **Consentire a un utente di rimuovere utenti da una chat di gruppo** Attivare questa impostazione per consentire a un utente di rimuovere altri utenti da una chat di gruppo. Questa caratteristica consente di continuare una chat con un gruppo di persone più piccolo senza perdere la cronologia della chat.
 - **Abilitare le risposte suggerite**  Attivare questa impostazione per abilitare le risposte suggerite per i messaggi di chat.
-- **Ruolo di autorizzazione chat** Usare questa impostazione per definire il ruolo di chat supervisionato dell'utente.  Altre informazioni sulla [chat supervisionata.](supervise-chats-edu.md)
+- **Ruolo di autorizzazione chat** Usare questa impostazione per definire il ruolo di chat supervisionato dell'utente.  Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
 
 > [!NOTE]
 > Alcune di queste impostazioni, ad esempio Giphys, possono essere configurate anche a livello di team dai proprietari del team e a livello di canale privato dai proprietari dei canali privati.

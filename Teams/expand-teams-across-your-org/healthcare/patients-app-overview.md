@@ -18,12 +18,12 @@ appliesto:
 ms.reviewer: anach
 description: Informazioni sull’app Pazienti per amministratori di Teams
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 92bc7581610abf1dc8baab17d2e9d23abb6c6fd3
-ms.sourcegitcommit: beaaee10019f4eda746f348888a4a3c2aaa6f196
-ms.translationtype: HT
+ms.openlocfilehash: 2302f117564e1dd00a6f238ca23a8e36c63ae554
+ms.sourcegitcommit: e6e6a2a85ff376f97a3af3548e13d1273fa84a52
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48803504"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "52697843"
 ---
 # <a name="patients-app-overview"></a>Panoramica dell'app Pazienti
 
@@ -45,7 +45,7 @@ Durante i giri visite ad ogni turno nei reparti medici, i medici si riuniscono i
 
 ## <a name="configure-patients-app"></a>Configurare app Pazienti
 
-Per informazioni su come preparare l'ambiente per utilizzare l'app Pazienti in modalità EMR, vedere [Integrare cartelle cliniche elettroniche in Microsoft Teams](patients-app.md). Vedi anche [Gestire i criteri di configurazione delle app in Microsoft Teams](../../teams-app-setup-policies.md) per abilitare l'app Pazienti per la tua organizzazione.
+Vedere [Gestire i criteri di configurazione delle app in Microsoft Teams](../../teams-app-setup-policies.md) per abilitare l'app Pazienti per l'organizzazione.
 
 Per informazioni su come gli utenti finali possono accedere e installare l’app Pazienti in un team di cui sono proprietari o coordinatori, vedere [Introduzione a Microsoft Teams Pazienti](https://support.office.com/article/get-started-with-microsoft-teams-patients-aa7daebe-706a-4a65-8ce9-b9b79233f393).
 
@@ -74,6 +74,3 @@ Non adesso, ma questa funzione sarà presto disponibile.
 
 Sì. Ogni singola azione dell'interfaccia utente eseguita da un utente di Microsoft Teams sull'app Pazienti viene controllata e resa disponibile nel centro sicurezza e conformità. I dettagli sono spiegati in [Log di controllo per l'app Pazienti](patients-audit.md).
 
-## <a name="related-topics"></a>Argomenti correlati
-
-[Integrare cartelle cliniche elettroniche in Microsoft Teams](patients-app.md)

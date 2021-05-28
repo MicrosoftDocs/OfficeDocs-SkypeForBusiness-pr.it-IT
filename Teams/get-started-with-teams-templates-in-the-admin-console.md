@@ -1,5 +1,5 @@
 ---
-title: Usare Teams modelli nell'interfaccia di amministrazione
+title: Usare i modelli di team nell'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -11,28 +11,28 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare i modelli Teams per creare spazi di collaborazione con canali per diversi argomenti usando i modelli preinstallati.
+description: Informazioni su come usare i modelli di team per creare spazi di collaborazione con canali per diversi argomenti usando modelli preinstallati.
 f1.keywords:
 - CSH
 ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 56577639e62c954d430d2745f5b105e97f5c56ff
-ms.sourcegitcommit: 2c2176b9d32b8f7218e8d11e82c0ae01318bfdc5
+ms.openlocfilehash: 773b97197a4f233dea9a404d87e669239b3969f6
+ms.sourcegitcommit: 36924dc54fe7b09607b07d7543fe7e39eb4d2483
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "52264896"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52684453"
 ---
-# <a name="get-started-with-teams-templates-in-the-admin-center"></a>Introduzione ai modelli Teams nell'interfaccia di amministrazione
+# <a name="get-started-with-team-templates-in-the-admin-center"></a>Introduzione ai modelli di team nell'interfaccia di amministrazione
 
 **La possibilità di creare modelli personalizzati non è ancora supportata per i clienti EDU.**
 
 > [!NOTE]
-> I canali privati e le etichette di riservatezza non sono attualmente supportati nei modelli Teams privati. La creazione di canali privati non è inclusa nelle definizioni dei modelli. L'opzione etichetta di riservatezza in **Crea team dal flusso del** modello non verrà applicata al team.
+> I canali privati e le etichette di riservatezza non sono attualmente supportati nei modelli di team. La creazione di canali privati non è inclusa nelle definizioni dei modelli. L'opzione etichetta di riservatezza in **Crea team dal flusso del** modello non verrà applicata al team.
 
-Teams modelli sono definizioni predefinite della struttura di un team progettata in base a un'esigenza aziendale o a un progetto. Usare modelli predefiniti o creare un modello personalizzato. Teams modelli consentono di creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e app di preinstallazione per inserire contenuti e servizi mission-critical. Teams modelli offrono una struttura predefinita del team che consente di creare facilmente team coerenti all'interno dell'organizzazione. Attualmente è possibile creare un team da un modello in Teams o usando [Microsoft Graph](get-started-with-teams-templates.md).
+I modelli di team sono definizioni predefinite della struttura di un team progettata in base a un'esigenza aziendale o a un progetto. Usare modelli predefiniti o creare un modello personalizzato. I modelli di team consentono di creare rapidamente spazi di collaborazione avanzati con canali per diversi argomenti e app di preinstallazione per inserire contenuti e servizi mission-critical. I modelli di team offrono una struttura predefinita del team che consente di creare facilmente team coerenti in tutta l'organizzazione. Attualmente è possibile creare un team da un modello in Teams o usando [Microsoft Graph](get-started-with-teams-templates.md).
 
 Questo articolo descrive le caratteristiche seguenti:
 
@@ -42,11 +42,11 @@ Questo articolo descrive le caratteristiche seguenti:
 
 Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione
 
-## <a name="teams-template-capabilities"></a>Teams dei modelli
+## <a name="team-template-capabilities"></a>Funzionalità dei modelli di team
 
-La maggior parte delle proprietà di un team sono incluse e supportate dai modelli. Esistono però alcune proprietà e funzionalità attualmente non supportate. La tabella seguente fornisce un breve riepilogo degli elementi inclusi e di ciò che non è incluso nei modelli Teams predefiniti.
+La maggior parte delle proprietà di un team sono incluse e supportate dai modelli. Esistono però alcune proprietà e funzionalità attualmente non supportate. La tabella seguente fornisce un breve riepilogo degli elementi inclusi e di ciò che non è incluso nei modelli di team.
 
-| **Proprietà del team supportate dai modelli Teams team** | **Proprietà del team non ancora supportate dai modelli Teams team** |
+| **Proprietà del team supportate dai modelli di team** | **Proprietà del team non ancora supportate dai modelli di team** |
 | ------------------------------------------------ | -------------------------------------------------------- |
 | Tipologia di modello base | Appartenenza al team |
 | Nome del team | Immagine del team |
@@ -115,11 +115,11 @@ Per [altre informazioni, vedere Limiti e specifiche di Teams.](limits-specificat
 
 Usare i cmdlt seguenti per gestire i modelli in PowerShell.
 
-- [Get-CsTeamTemplate](https://docs.microsoft.com/powershell/module/teams/get-csteamtemplate?view=teams-ps) 
-- [Get-CsTeamTemplateList](https://docs.microsoft.com/powershell/module/teams/get-csteamtemplatelist?view=teams-ps)
-- [New-CsTeamTemplate](https://docs.microsoft.com/powershell/module/teams/new-csteamtemplate?view=teams-ps)
-- [Remove-CsTeamTemplate](https://docs.microsoft.com/powershell/module/teams/remove-csteamtemplate?view=teams-ps) 
-- [Update-CsTeamTemplate](https://docs.microsoft.com/powershell/module/teams/update-csteamtemplate?view=teams-ps)
+- [Get-CsTeamTemplate](/powershell/module/teams/get-csteamtemplate?view=teams-ps) 
+- [Get-CsTeamTemplateList](/powershell/module/teams/get-csteamtemplatelist?view=teams-ps)
+- [New-CsTeamTemplate](/powershell/module/teams/new-csteamtemplate?view=teams-ps)
+- [Remove-CsTeamTemplate](/powershell/module/teams/remove-csteamtemplate?view=teams-ps) 
+- [Update-CsTeamTemplate](/powershell/module/teams/update-csteamtemplate?view=teams-ps)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

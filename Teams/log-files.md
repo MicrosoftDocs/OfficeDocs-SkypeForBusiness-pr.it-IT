@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove possono essere trovati e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 58460390d9562d77ed6a4e3dfcbb3948cbe2749e
-ms.sourcegitcommit: 40f76bc6b5e304faea8516a78f8576ba1cdb7f7c
+ms.openlocfilehash: a18dbef0441055c1202c2b77ce4f8af87040e561
+ms.sourcegitcommit: 17e34d2de3d10f1d04929a695e301127db7014bd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52337743"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "52689694"
 ---
 # <a name="use-log-files-to-monitor-and-troubleshoot-microsoft-teams"></a>Usare i file di log per monitorare e risolvere i Microsoft Teams
 
@@ -33,14 +33,29 @@ Esistono tre tipi di file di log prodotti automaticamente dal client, che posson
 
 -   [Log del desktop](#desktop-logs)
 
-Questo articolo descrive i tre log e il modo in cui vengono usati. 
-
-Per informazioni sulla risoluzione di problemi specifici, vedere: Teams [risoluzione dei problemi](/MicrosoftTeams/troubleshoot/teams). Per informazioni su come contattare il supporto, vedere [Ottenere supporto.](/microsoft-365/business-video/get-help-support)
-
-Quando si crea una richiesta di supporto con il supporto tecnico Microsoft, il tecnico del supporto richiederà i log di debug. Avere a disposizione i log di debug prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente a risolvere il problema. **I** registri multimediali **o** desktop sono necessari solo se richiesti da Microsoft.
+Questo articolo descrive questi log e come vengono usati. Per informazioni sulla risoluzione di problemi specifici, vedere: Teams [risoluzione dei problemi](/MicrosoftTeams/troubleshoot/teams). Per informazioni su come contattare il supporto, vedere [Ottenere supporto.](/microsoft-365/business-video/get-help-support) Quando si crea una richiesta di supporto con il supporto tecnico Microsoft, il tecnico del supporto richiederà i log di debug. Avere a disposizione i log di debug prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente a risolvere il problema. **I** registri multimediali **o** desktop sono necessari solo se richiesti da Microsoft.
 
 > [!NOTE]
 > In questo articolo il termine **Log di debug** fa riferimento ai log usati per la risoluzione dei problemi. Tuttavia, i file generati per questi log conterranno il termine **log di diagnostica** nei nomi.  
+
+## <a name="collect-and-enable-logging"></a>Raccogliere e abilitare la registrazione
+
+È importante raccogliere i log non appena si verifica un problema. I log possono essere raccolti insieme a un paio di clic.
+
+Windows: fare clic con il pulsante destro del mouse sull'icona Teams sulla barra delle applicazioni e scegliere **Raccolta file di supporto.** 
+
+Mac: selezionare il menu ? e scegliere **Raccogli file di supporto.**
+
+I log di debug, desktop e multimediali verranno raccolti in un'unica cartella con il nome MSTeams Diagnostics <local data and time> Log. Questa cartella può essere compressa e condivisa quando si apre una richiesta di supporto con il supporto tecnico Microsoft. La cartella conterrà cartelle per Desktop, Riunione (elementi multimediali) e Debug (Web). È possibile raccogliere i file usando le scelte rapide da tastiera seguenti:
+
+Windows: Crtl + ALT + MAIUSC + 1
+
+Mac: OPZIONE+ COMANDO + MAIUSC + 1
+
+La registrazione multimediale è disattivata per impostazione predefinita. Per abilitare la registrazione multimediale, gli utenti devono attivare l'opzione nel client Teams dati. Passare a **Impostazioni** Generale e selezionare Abilita registrazione per diagnostica riunione  >   **(è necessario riavviare Teams).** Il Teams client deve essere riavviato per avviare la registrazione.
+
+> [!NOTE]
+> Se la registrazione multimediale è abilitata, nella cartella Riunione saranno inclusi altri file necessari per analizzare i problemi audio e video. Se la registrazione multimediale non è abilitata, sarà disponibile un numero limitato di log.
 
 La tabella seguente descrive i vari client e i log associati. I file di log vengono archiviati in posizioni specifiche del client e del sistema operativo.
 
@@ -58,7 +73,7 @@ Per un elenco completo dei sistemi operativi e dei browser supportati, vedere Ot
 
 ## <a name="debug-logs"></a>Log di debug
 
-Questi sono i log più comuni e sono necessari per tutti i casi di supporto Tecnico Microsoft. I log di debug vengono prodotti dai client desktop Windows e Mac, oltre che dai client basati su browser. I log sono basati su testo e vengono letti dal basso verso l'alto. Possono essere letti con qualsiasi editor basato su testo e i nuovi log vengono creati quando si accede al client.
+Vedere la _sezione Raccogliere e abilitare la registrazione_ per Windows istruzioni per Mac. I log di debug vengono prodotti dai client desktop Windows e Mac, oltre che dai client basati su browser. I log sono basati su testo e vengono letti dal basso verso l'alto. Possono essere letti con qualsiasi editor basato su testo e i nuovi log vengono creati quando si accede al client.
 
 I log di debug mostrano i flussi di dati seguenti:
 
@@ -68,47 +83,19 @@ I log di debug mostrano i flussi di dati seguenti:
 
 -   Chiamata/conversazione
 
-I log di debug vengono prodotti usando i metodi specifici del sistema operativo seguenti:
+Per raccogliere log per Linux: Scelta rapida da tastiera: CTRL+ALT+MAIUSC+1 I file saranno disponibili in ~/Downloads
 
--   Windows:
-
-      Scelta rapida da tastiera: CTRL+ALT+MAIUSC+1
-
--   Mac OSX:
-
-      Scelta rapida da tastiera: OPZIONE+COMANDO+MAIUSC+1
-
--   Linux:
-
-      Scelta rapida da tastiera: CTRL+ALT+MAIUSC+1
-
-I log di debug vengono scaricati automaticamente nelle cartelle seguenti:
-
--   Windows: download di %userprofile% \\
-
--   Mac OSX: ~/Downloads
-
--   Linux: ~/Downloads
-
--   Browser: verrà chiesto di salvare il log di debug nel percorso di salvataggio predefinito
+Per raccogliere i log per il browser: Scelta rapida da tastiera: Crtl + ALT + MAIUSC + 1 I file saranno disponibili in %userprofile%\Downloads
 
 ## <a name="media-logs"></a>Registri multimediali
 
-I log multimediali contengono dati diagnostici relativi a audio, video e condivisione dello schermo nelle Teams riunioni. Sono necessari per i casi di supporto collegati a problemi relativi alle chiamate.
+Vedere la _sezione Raccogliere e abilitare la registrazione_ per Windows istruzioni per Mac. I log multimediali contengono dati diagnostici relativi a audio, video e condivisione dello schermo nelle Teams riunioni. Sono necessari per i casi di supporto collegati a problemi relativi alle chiamate.
 
 La registrazione multimediale è disattivata per impostazione predefinita. Per registrare i dati di diagnostica Teams riunioni, gli utenti devono attivare l'opzione nel client Teams. Passare a **Impostazioni** Generale , selezionare la casella di controllo Abilita registrazione per diagnostica riunione (è necessario riavviare Teams ), riavviare Teams e riprodurre  >  il problema.  
 
-La tabella seguente descrive le posizioni dei log multimediali. Quando si inviano i file di log al supporto tecnico Microsoft, verificare il timestamp dei file di log per assicurarsi che i log copriranno l'intervallo di tempo in cui è stato riprodotto il problema.
+Quando si inviano i file di log al supporto tecnico Microsoft, verificare il timestamp dei file di log per assicurarsi che i log copriranno l'intervallo di tempo in cui è stato riprodotto il problema.
 
-|Client |Posizione |
-|---------|---------|
-|Windows     |%appdata%\Microsoft\Teams\media-stack \\ *.blog         |
-|            |%appdata%\Microsoft\Teams\skylib \\ *.blog
-|            |%appdata%\Microsoft\Teams\media-stack \\ *.etl         |
-|Mac OSX     |~/Library/Application Support/Microsoft/Teams/media-stack/*.blog         |
-|            |~/Library/Application Support/Microsoft/Teams/skylib/*.blog         |
-|Linux       |~/.config/Microsoft/Microsoft Teams/media-stack/*.blog         |
-|            |~/.config/Microsoft/Microsoft Teams/skylib/*.blog         |
+Per raccogliere log per Linux: i file saranno disponibili in ~/.config/Microsoft/Microsoft Teams/media-stack/ .blog e *~/.config/Microsoft/Microsoft Teams/skylib/*.blog.
 
 Ecco un elenco dei file di log generati e delle informazioni che contengono.
 
@@ -122,25 +109,10 @@ Ecco un elenco dei file di log generati e delle informazioni che contengono.
 
 ## <a name="desktop-logs"></a>Log del desktop
 
-I log desktop, noti anche come log del programma di avvio automatico, contengono i dati del log che si verificano tra il client desktop e il browser. Come i log multimediali, questi log sono necessari solo se richiesti da Microsoft. I log sono basati su testo e possono essere letti con qualsiasi editor basato su testo in un formato dall'alto verso il basso.
+Vedere la _sezione Raccogliere e abilitare la registrazione_ per Windows istruzioni per Mac. I log desktop, noti anche come log del programma di avvio automatico, contengono i dati del log che si verificano tra il client desktop e il browser. Come i log multimediali, questi log sono necessari solo se richiesti da Microsoft. I log sono basati su testo e possono essere letti usando qualsiasi editor basato su testo in un formato dall'alto verso il basso.
 
-Windows:
-
- - Fare clic con il pulsante **destro Microsoft Teams'icona** della barra delle applicazioni e scegliere **Ottieni log.**
-
-Mac OsX:
-
- - Scegliere **Ottieni log** dal menu **a** discesa ?
-
-Linux:
-
- - Fare clic **sull'Microsoft Teams** sulla barra delle applicazioni e selezionare **Ottieni log.**
-
-|Client |Posizione |
-|---------|---------|
-|Windows     |%appdata%\Microsoft\Teams\logs.txt         |
-|Mac OSX     |~/Library/Application Support/Microsoft/Teams/logs.txt         |
-|Linux       |~/.config/Microsoft/Microsoft Teams/logs.txt         |
+Per raccogliere i log per Linux: fare clic sull'icona Microsoft Teams sulla barra delle applicazioni e selezionare **Recupera registri**.
+I file saranno disponibili in ~/.config/Microsoft/Microsoft Teams/logs.txt.  
 
 
 ## <a name="browser-trace"></a>Traccia del browser
