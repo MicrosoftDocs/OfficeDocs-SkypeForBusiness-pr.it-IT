@@ -21,23 +21,23 @@ ms.collection:
 - m365solution-scenario
 appliesto:
 - Microsoft Teams
-ms.reviewer: ''
+ms.reviewer: ansantam
 description: Usare Microsoft Teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 37b93533aeff6b519b1f5a65cf49211464b41388
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
-ms.translationtype: HT
+ms.openlocfilehash: 9c002a90cd91014ca4887386ca5834a4b5b41266
+ms.sourcegitcommit: d73dc8505a5cc5af29635a50cbbf0f25bbb17eac
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096280"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "52705250"
 ---
 # <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con Teams - Integrazione in CCE
 
-Il connettore CCE (cartella clinica elettronica) di Microsoft Teams consente al personale medico di avviare una visita o un consulto virtuale con un altro provider in Teams direttamente dal sistema CCE. Basato sul cloud di Microsoft 365, Microsoft Teams semplifica e assicura la collaborazione e la comunicazione con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
-Con la piattaforma di comunicazione e collaborazione di Teams, il personale medico può facilmente superare la complessità e la confusione di sistemi frammentati per dedicare il proprio tempo a fornire la migliore assistenza possibile. Il connettore CCE (cartella clinica elettronica) di Microsoft Teams permette di:
+Microsoft Teams Il connettore EHR (Electronic Health Record) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider in Teams direttamente dal sistema EHR. Basato sul cloud di Microsoft 365, Microsoft Teams semplifica e assicura la collaborazione e la comunicazione con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
+Con la piattaforma di comunicazione e collaborazione di Teams, il personale medico può facilmente superare la complessità e la confusione di sistemi frammentati per dedicare il proprio tempo a fornire la migliore assistenza possibile. Microsoft Teams Il connettore EHR (Electronic Health Record) può:
 
-- Avviare visite virtuali di Teams dai portali del provider e dei pazienti.
-- Eseguire il writeback nei metadati CCE sugli eventi di connessione e disconnessione per abilitare l’auditing e l’archiviazione dei dati automatici.
-- Integrarsi nei flussi di lavoro esistenti di medici e pazienti consentendo loro di usare Microsoft Teams.
+- Avvia Teams visite virtuali dal sistema provider EHR con un flusso di lavoro clinico integrato.
+- Consenti ai pazienti di partecipare Teams visite virtuali dal portale dei pazienti.
+- Scrivere di nuovo i metadati nel sistema EHR Teams le visite virtuali da registrare quando i partecipanti si connettono e si disconnettino e abilitano il controllo automatico e la conservazione dei record.
 
   Guardare il video su come gestire le visite virtuali dal portale CCE.
 
@@ -49,7 +49,7 @@ Prima di integrare il connettore CCE, è necessario verificare di avere i prereq
 
 - Accesso all'app Microsoft Teams nel [marketplace App Orchard di Epic](https://apporchard.epic.com/Gallery?id=6153).
 
-- Abbonamento attivo a Microsoft Cloud per il Settore Sanitario o abbonamento all'offerta autonoma del connettore CCE di Microsoft Teams (applicato solo in fase di test di produzione).
+- Abbonamento attivo a Microsoft Cloud per l'assistenza sanitaria o abbonamento Microsoft Teams'offerta autonoma del connettore EHR (applicata solo durante i test di produzione).
 
 - Gli utenti devono avere una licenza Microsoft 365 o Office 365 appropriata che includa le riunioni di Microsoft Teams.
 
@@ -72,14 +72,14 @@ All'interno dell'organizzazione saranno necessarie anche le informazioni seguent
 
 Per la configurazione del connettore è necessario:
 
-- [Avviare il portale di configurazione del connettore CCE](ehr-admin.md#launch-the-ehr-connector-configuration-portal)
+- [Avviare il portale di configurazione del connettore EHR](ehr-admin.md#launch-the-ehr-connector-configuration-portal)
 - [Informazioni sulla configurazione](ehr-admin.md#configuration-information)
 - [Approvare o visualizzare la configurazione](ehr-admin.md#approve-or-view-configuration)
 - [Rivedere e completare la configurazione](ehr-admin.md#review-and-finish-the-configuration)
 
-### <a name="launch-the-ehr-connector-configuration-portal"></a>[Avviare il portale di configurazione del connettore CCE](#launch-the-ehr-connector-configuration-portal)
+### <a name="launch-the-ehr-connector-configuration-portal"></a>[Avviare il portale di configurazione del connettore EHR](#launch-the-ehr-connector-configuration-portal)
 
-Per configurare l'organizzazione del settore sanitario in modo da organizzare visite virtuali con Microsoft Teams, avviare il portale di configurazione del connettore CCE. Configurare una o più organizzazioni per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Testare l'integrazione dall'ambiente di test di Epic prima di passare alla produzione.
+La configurazione dell'organizzazione sanitaria per l'avvio di visite virtuali Microsoft Teams parte dall'avvio del portale di configurazione del connettore EHR. Configurare una o più organizzazioni per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Testare l'integrazione dall'ambiente di test di Epic prima di passare alla produzione.
   
 - URL di configurazione del connettore CCE: [https://ehrconnector.teams.microsoft.com](https://ehrconnector.teams.microsoft.com)
 
@@ -99,7 +99,7 @@ Per completare questo passaggio, l'amministratore di Microsoft 365 deve ricevere
 
 ### <a name="approve-or-view-configuration"></a>[Approvare o visualizzare la configurazione](#approve-or-view-configuration)
 
-Il Customer Analyst di Epic per l'organizzazione del settore sanitario che è stato aggiunto come responsabile approvazione deve ora usare lo stesso URL del connettore CCE del passaggio precedente per accedere con le proprie credenziali di Microsoft 365. Dopo aver completato la convalida, al responsabile approvazione verrà chiesto di accedere con le credenziali di Epic per convalidare l'organizzazione Epic.
+L'analista del cliente Epic per l'organizzazione sanitaria aggiunta come responsabile approvazione deve ora usare lo stesso URL del connettore EHR del passaggio precedente per accedere usando le credenziali Microsoft 365 servizio. Dopo aver completato la convalida, al responsabile approvazione verrà chiesto di accedere con le credenziali di Epic per convalidare l'organizzazione Epic.
 
 > [!Note]
 > L'amministratore di Microsoft 365 e il Customer Analyst di Epic nell'organizzazione possono essere la stessa persona. In questo caso, aggiungere il proprio nome utente come responsabile approvazione. Sarà comunque necessario accedere a Epic per convalidare l'accesso. Le informazioni di accesso di Epic vengono usate solo per convalidare l'URL di base FHIR. Con questo accesso, Microsoft non archivia le credenziali o accede ai dati CCE.
@@ -126,7 +126,7 @@ Quando l’amministratore di Epic avrà approvato le informazioni di configurazi
 
 ## <a name="launch-teams-virtual-visits"></a>Avviare visite virtuali di Teams
 
-Dopo aver completato la procedura per il connettore CCE e la configurazione di Epic, l'organizzazione è pronta per supportare le video visite con Microsoft Teams.
+Dopo aver completato i passaggi del connettore EHR e la configurazione epica, l'organizzazione è pronta a supportare le video visite con Microsoft Teams.
 
 ### <a name="virtual-visit-prerequisites"></a>Prerequisiti per la visita virtuale
 
@@ -175,4 +175,8 @@ Caratteristiche principali dell'esperienza del paziente:
 
 L'integrazione di Teams nei sistemi CCE ottimizza la quantità di dati usati e archiviati durante l'integrazione e i flussi di visita virtuale. La soluzione segue i principi generali della privacy e della gestione dei dati di Teams e le linee guida descritte nell’informativa sulla privacy di Teams.
 
-Il connettore CCE di Microsoft Teams non archivia né trasferisce dati personali identificabili né cartelle sanitarie di pazienti o provider di servizi sanitari dal sistema CCE. Gli unici dati archiviati dal connettore CCE sono l'ID univoco dell'utente CCE, che viene usato durante la configurazione della riunione di Teams. L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche descritte in [Dove sono archiviati i dati dei clienti di Microsoft 365](/microsoft-365/enterprise/o365-data-locations?view=o365-worldwide#data-center-geographies). Tutti i dati di chat, registrazioni e altre fonti immessi in Teams dai partecipanti alla riunione vengono archiviati in base ai criteri di archiviazione esistenti. Per altre informazioni sulla posizione dei dati in Microsoft Teams, visitare [Posizione dei dati in Teams](../../location-of-data-in-teams.md).
+Il connettore CCE di Microsoft Teams non archivia né trasferisce dati personali identificabili né cartelle sanitarie di pazienti o provider di servizi sanitari dal sistema CCE. Gli unici dati archiviati dal connettore CCE sono l'ID univoco dell'utente CCE, che viene usato durante la configurazione della riunione di Teams. L'ID univoco dell'utente CCE viene archiviato in una delle tre aree geografiche descritte in [Dove sono archiviati i dati dei clienti di Microsoft 365](/microsoft-365/enterprise/o365-data-locations). Tutti i dati di chat, registrazioni e altre fonti immessi in Teams dai partecipanti alla riunione vengono archiviati in base ai criteri di archiviazione esistenti. Per altre informazioni sulla posizione dei dati in Microsoft Teams, visitare [Posizione dei dati in Teams](../../location-of-data-in-teams.md).
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Teams visite virtuali](ehr-admin-reports.md)
