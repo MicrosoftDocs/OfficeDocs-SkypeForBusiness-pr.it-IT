@@ -307,6 +307,8 @@ items:
             href: policy-control-diagnostic-data-desktop.md
           - name: Esperienze connesse facoltative
             href: teams-privacy-oce-overview.md
+          - name: Trasferimento dati della connessione con operatore
+            href: operator-connect-data-transfer.md
   - name: Gestire e monitorare Teams
     items:
       - name: Panoramica
@@ -499,25 +501,25 @@ items:
         href: archive-or-delete-a-team.md
       - name: Effettuare la migrazione da Slack a Teams
         href: migrate-slack-to-teams.md
-      - name: Usare i modelli di Teams
+      - name: Usare i modelli di team
         items:
-          - name: Usare i modelli di Teams nella console di amministrazione
+          - name: Usare i modelli di team nell'interfaccia di amministrazione
             href: get-started-with-teams-templates-in-the-admin-console.md
-          - name: Modelli di Teams creati in Graph per piccole e medie imprese
+          - name: Modelli di team creati in Graph per piccole e medie aziende
             href: smb-templates.md
-          - name: Creare modelli personalizzati di Teams
+          - name: Creare modelli di team personalizzati
             href: create-a-team-template.md
           - name: Creare un modello da un team esistente
             href: create-template-from-existing-team.md
           - name: Creare un modello da un modello esistente
             href: create-template-from-existing-template.md
-          - name: Modelli di Teams per la categoria finanziaria
+          - name: Modelli di team per le categorie finanziarie
             href: financial-teams-templates-in-the-admin-console.md
-          - name: Modelli di Teams per la categoria generale
+          - name: Modelli di team per le categorie generali
             href: general-teams-templates-in-the-admin-console.md
-          - name: Modelli di Teams per la categoria manifatturiera
+          - name: Modelli di team per le categorie manifatturiere
             href: manufacturing-teams-templates-in-the-admin-console.md
-          - name: Gestire i criteri per i modelli di Teams
+          - name: Gestire i criteri per i modelli di team
             href: templates-policies.md
       - name: Lavorare con persone esterne all'organizzazione
         items:
@@ -957,6 +959,12 @@ items:
                 href: manage-voice-routing-policies.md
               - name: Instradamento diretto di Survivable Branch Appliance
                 href: direct-routing-survivable-branch-appliance.md
+      - name: Connessione con operatore
+        items:
+          - name: Piano per la connessione con operatore
+            href: operator-connect-plan.md
+          - name: Configurare la connessione con operatore
+            href: operator-connect-configure.md
       - name: Numeri di telefono
         items:
           - name: Gestire i numeri di telefono per la propria organizzazione
@@ -1375,7 +1383,7 @@ items:
         href: expand-teams-across-your-org/expand-teams-across-your-organization-landing-page.md
       - name: Tutti i settori
         items:
-          - name: Introduzione ai modelli di Teams
+          - name: Introduzione ai modelli di team
             href: get-started-with-teams-templates.md
           - name: Turni per Teams
             href: expand-teams-across-your-org/shifts-for-teams-landing-page.md
@@ -1390,6 +1398,8 @@ items:
             items:
               - name: Visite virtuali con Teams - integrazione in CCE
                 href: expand-teams-across-your-org/healthcare/ehr-admin.md
+              - name: Sincronizzare report di amministrazione EHR
+                href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md
               - name: Visite virtuali con Bookings e Teams
                 href: bookings-app-admin.md
           - name: Visualizzare e assegnare pacchetti di criteri
@@ -1400,7 +1410,7 @@ items:
                 href: expand-teams-across-your-org/healthcare/messaging-policies-hc.md
               - name: Delega messaggi
                 href: expand-teams-across-your-org/healthcare/hc-delegates.md
-          - name: Usare i modelli di Teams per il settore sanitario
+          - name: Usare i modelli di team per il settore sanitario
             href: expand-teams-across-your-org/healthcare/healthcare-templates-admin-console.md
           - name: Gestire l'app Elenchi
             href: manage-lists-app.md
@@ -1470,14 +1480,14 @@ items:
       - name: Teams per la vendita al dettaglio
         href: expand-teams-across-your-org/teams-for-retail-landing-page.md
         items:
-          - name: Introduzione ai modelli di Teams per la vendita al dettaglio
+          - name: Introduzione ai modelli di team per la vendita al dettaglio
             href: get-started-with-retail-teams-templates.md
       - name: Teams per enti pubblici
         href: expand-teams-across-your-org/teams-for-government-landing-page.md
         items:
           - name: Supporto lavoratori remoti
             href: expand-teams-across-your-org/GOV-support-remote-work-with-teams.md
-          - name: Introduzione ai modelli di Teams per enti pubblici
+          - name: Introduzione ai modelli di team per gli enti pubblici
             href: government-teams-templates-in-the-admin-console.md
           - name: Gestire la versione di valutazione di Office 365 G1
             href: g1-trial-license.md
@@ -1570,6 +1580,10 @@ items:
             href: devices/teams-ip-phones.md
           - name: Telefoni per Skype for Business Online
             href: /SkypeForBusiness/what-is-phone-system-in-office-365/getting-phones-for-skype-for-business-online/deploying-skype-for-business-online-phones?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
+          - name: Avvisi e monitoraggio in Teams
+            href: alerts/teams-admin-alerts.md
+          - name: Monitoraggio dell'integrità dei dispositivi in Teams
+            href: alerts/device-health-status.md
       - name: PowerShell per Teams
         items:
           - name: Panoramica
