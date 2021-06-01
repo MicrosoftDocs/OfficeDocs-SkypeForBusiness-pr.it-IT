@@ -1,6 +1,6 @@
 ### YamlMime:Landing
 title: Amministratore Skype for Business online
-summary: Skype for Business online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, l'hub per il lavoro in team in Microsoft 365.
+summary: Skype for Business Online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, l'hub per il lavoro in team in Microsoft 365.
 metadata:
   title: Amministratore Skype for Business Online
   description: Scopri come gestire Skype for Business Online per la tua organizzazione.
@@ -24,11 +24,11 @@ metadata:
   ms.lasthandoff: 03/23/2021
   ms.locfileid: "51118925"
 landingContent:
-- title: Informazioni su Skype for Business online
+- title: Informazioni su Skype for Business Online
   linkLists:
   - linkListType: whats-new
     links:
-    - text: Skype for Business online verrà ritirato nel 2021
+    - text: Skype for Business Online da ritirare nel 2021
       url: https://techcommunity.microsoft.com/t5/microsoft-teams-blog/skype-for-business-online-to-be-retired-in-2021/ba-p/777833
   - linkListType: get-started
     links:
