@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Leggere questo articolo per individuare i codici paese del percorso multimediale per Direct Routing, in modo da poter selezionare il percorso multimediale ottimale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 56cdc48b33e048776a43a37864930fc153c47aac
-ms.sourcegitcommit: c80af314f1a573f99dd66858301c004ccc5410d6
+ms.openlocfilehash: 330d178c7bfa969020ffc8c26b1e05283c182ae8
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51648125"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52717997"
 ---
 # <a name="direct-routing-media-path-country-codes"></a>Codici del paese del percorso multimediale per il routing diretto
 
@@ -37,7 +37,7 @@ Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com –MediaRelayRoutingLocationO
 Si noti che Microsoft consiglia di impostare questo parametro solo se i registri delle chiamate indicano chiaramente che l'assegnazione predefinita del data center per il percorso multimediale non usa il percorso più vicino al data center SBC. 
 
 > [!NOTE]
-> -MediaRelayRoutingLocationOverride: questo comando non è disponibile per l'uso in scenari di routing diretto.
+> Il parametro MediaRelayRoutingLocationOverride è riservato per l'uso con i gestori gestiti.
  
 ## <a name="country-code-reference-table"></a>Tabella di riferimento del codice paese
 
@@ -233,7 +233,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Russia          | RU |
 | Ruanda          | RW |
 | Saba            | XS |
-| Saint Barthelemy | BL |
+| Saint Barthélemy | BL |
 | Saint Kitts e Nevis | KN |
 | Saint Lucia     | LC |
 | Saint Martin    | MF |
@@ -297,4 +297,3 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Yemen           | YE |
 | Zambia          | ZM |
 | Zimbabwe        | ZW |
-

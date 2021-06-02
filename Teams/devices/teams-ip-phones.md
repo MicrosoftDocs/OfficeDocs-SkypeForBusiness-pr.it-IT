@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: bbc596f0e0e3d973b170b6631941020437bdb778
-ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
+ms.openlocfilehash: 9795b78de51f554e7091bc3d2fbd333efccaffb6
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629025"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52717887"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
@@ -44,9 +44,9 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 
 |Modello di dispositivo                         | Versione firmware                                                                                                                                                                                                                           | Data di rilascio
 |:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
-| UC-P10-T (con e senza ricevitore)    | 1.0.0.80                                                 | Maggio 2021                     |
-| UC-P10-C-T (con e senza ricevitore)  | 1.0.0.80                                                 | Maggio 2021                     |
-| UC-P8-C-T (con e senza ricevitore)   | 1.0.0.80                                                 | Maggio 2021                     |
+| Crestron UC-P10-T (con e senza ricevitore)    | 1.0.0.80                                                 | Maggio 2021                     |
+| Crestron UC-P10-C-T (con e senza ricevitore)  | 1.0.0.80                                                 | Maggio 2021                     |
+| Crestron UC-P8-C-T (con e senza ricevitore)   | 1.0.0.80                                                 | Maggio 2021                     |
 | Yealink MP52                           | 145.15.0.6                                               | Aprile 2021                   |
 | AudioCodes C435HD                      | 1.12.33                                                  | Aprile 2021                   |
 | AudioCodes C470HD                      | 1.8.293                                                  | Gennaio 2021                 |

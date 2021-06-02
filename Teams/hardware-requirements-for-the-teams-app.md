@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3289d9ffed84f18cfd70f60a1f8e32d859973e5
-ms.sourcegitcommit: f0f41332fd6dc2480139812c1b6b9f30573e523d
+ms.openlocfilehash: 4ecf4d9abbd3f5c8747744010015ecda35cbeecf
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52074053"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52717617"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -36,7 +36,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 | Componente | Requisiti |
 |---------|---------|
 |Computer e processore    | Minimo 1,6 GHz (o superiore), dual core<br><br>Nota: per i processori Intel, bisogna considerare la velocità massima raggiunta utilizzando la tecnologia Intel Turbo Boost (Max Turbo Frequency)         |
-|Memoria     |    4,0 GB di RAM     |
+|Memoria     |    4,0 GB di RAM (Teams richiede 4 GB di RAM dedicati oltre ad altri requisiti di sistema)    |
 |Disco rigido    | 3,0 GB di spazio disponibile su disco        |
 |Schermo    |   Risoluzione dello schermo 1024 x 768 |
 |Hardware grafico |  Sistema operativo Windows: l'accelerazione grafica hardware richiede DirectX 9 o versione successiva, con WDDM 2.0 o versione successiva per Windows 10 (o WDDM 1.3 o versione successiva per Windows 10 Fall Creators Update)
@@ -44,7 +44,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Versione .NET    |  Richiede .NET 4.5 CLR o versione successiva       |
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    |
-|Videochiamate e riunioni|<ul><li>Richiede un processore dual core. Per una risoluzione di condivisione video/schermo e una frequenza fotogrammi più elevata, si consiglia un processore quad core o superiore.</li> <li>Gli effetti video in background richiedono Windows 10 o un processore con set di istruzioni AVX2.</li> <li>Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>Per partecipare a una riunione con il rilevamento di prossimità in una sala riunioni di Microsoft Teams è necessario il Bluetooth LE, il quale richiede l'abilitazione del Bluetooth nel dispositivo client, mentre per i client Windows è anche necessario il client Teams a 64 bit. Questa funzionalità non è disponibile nei client Teams a 32 bit.</li></ul> |
+|Videochiamate e riunioni|<ul><li>Richiede un processore 2 core. Per una risoluzione di condivisione video/schermo e una frequenza fotogrammi più elevata, si consiglia un processore quad core o superiore.</li> <li>Gli effetti video in background richiedono Windows 10 o un processore con set di istruzioni AVX2.</li> <li>Per un elenco dei decodificatori e codificatori non supportati, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md).</li><li>Per partecipare a una riunione con il rilevamento di prossimità in una sala riunioni di Microsoft Teams è necessario il Bluetooth LE. Questo richiede l'abilitazione del Bluetooth nel dispositivo client, mentre per i client Windows è anche necessario il client Teams a 64 bit. Tale funzionalità non è disponibile nei client Teams a 32 bit.</li></ul> |
 |Eventi live in Teams | Se si desidera creare un evento live di Teams, è consigliabile usare un computer con processore Core i5 Kaby Lake con 4,0 GB di RAM (o superiore) e codificatore hardware. Per un elenco dei decodificatori e codificatori **non supportati**, vedere [Suggerimenti sui driver codificatori e decodificatori hardware](hardware-decoders-and-encoders.md). |
 
 ## <a name="hardware-requirements-for-teams-on-a-mac"></a>Requisiti hardware per Teams su Mac
@@ -52,13 +52,13 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 | Componente | Requisiti |
 |---------|---------|
 |Computer e processore    | Processore Intel Core Duo |
-|Memoria     |   4,0 GB di RAM      |
+|Memoria     |   4,0 GB di RAM (Teams richiede 4 GB di RAM dedicati oltre ad altri requisiti di sistema)     |
 |Disco rigido    |   1,5 GB di spazio disponibile su disco      |
 |Schermo    | Risoluzione 1280 × 800 o superiore    |
 |Sistema operativo  |    Una delle tre versioni più recenti di macOS. È possibile trovare informazioni sulle versioni più recenti di macOS e come aggiornare la propria versione di macOS [qui](https://support.apple.com/it-IT/HT201260). Ad esempio, quando viene rilasciata una nuova versione di macOS, la nuova versione e le due immediatamente precedenti diventano le versioni supportate.      |
 |Video  |    Compatibilità con webcam     |
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
-|Videochiamate e riunioni | <ul><li>Richiede un processore dual core. Per una risoluzione di condivisione video/schermo e una frequenza fotogrammi più elevata, si consiglia un processore quad core o superiore. </li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su macOS.</li></ul>
+|Videochiamate e riunioni | <ul><li>Richiede un processore 2 core. Per una risoluzione di condivisione video/schermo e una frequenza fotogrammi più elevata, si consiglia un processore quad core o superiore. </li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su macOS.</li></ul>
 |
 
 ## <a name="hardware-requirements-for-teams-on-linux"></a>Requisiti hardware per Teams su Linux
@@ -66,7 +66,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 | Componente | Requisiti |
 |---------|---------|
 |Computer e processore    | 1,6 GHz o superiore (32 bit o 64 bit), dual core        |
-|Memoria     |    4,0 GB di RAM     |
+|Memoria     |    4,0 GB di RAM (Teams richiede 4 GB di RAM dedicati oltre ad altri requisiti di sistema)   |
 |Disco rigido    | 3,0 GB di spazio disponibile su disco        |
 |Schermo    |   Risoluzione dello schermo 1024 x 768 |
 |Hardware grafico |  128 MB di memoria grafica
@@ -74,7 +74,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 |Video    |  Videocamera USB 2.0       |
 |Dispositivi    |   Videocamera, microfono e altoparlanti standard del portatile    |
 |Opzioni vocali    |  Compatibilità con microfoni e altoparlanti, auricolari con microfono o dispositivi equivalenti       |
-|Videochiamate e riunioni | <ul><li>Richiede un processore dual core. Per una risoluzione di condivisione video/schermo e una frequenza fotogrammi più elevata, si consiglia un processore quad core o superiore.</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
+|Videochiamate e riunioni | <ul><li>Richiede un processore 2 core. Per una risoluzione di condivisione video/schermo e una frequenza fotogrammi più elevata, si consiglia un processore quad core o superiore.</li><li>La funzionalità di partecipazione a una riunione tramite il rilevamento di prossimità in una sala riunioni di Microsoft Teams non è disponibile su Linux.</li></ul>
 |Distribuzioni Linux supportate | Ubuntu 18.04 LTS, 20.04 LTS, Fedora 30 Workstation, RHEL 8 Workstation, CentOS 8       |
 |Ambiente desktop supportato | GNOME, KDE       |
 |Server di visualizzazione supportato | X11       |

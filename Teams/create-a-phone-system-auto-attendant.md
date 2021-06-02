@@ -22,19 +22,19 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 270a2e613e387b797cb70914ad400da80b15b1ca
-ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
+ms.openlocfilehash: 52a9636a6a92656293e90d00563be16b500ee4ce
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52628945"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52717867"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
 Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
 
 > [!TIP]
-> Questo articolo contiene organizzazioni di grandi dimensioni. Se l'organizzazione è un'azienda smaall, vedere Configurare un operatore automatico [- esercitazione per le piccole](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb) imprese.
+> Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Configurare un operatore [automatico - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb) imprese.
 
 Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le [](plan-auto-attendant-call-queue.md#getting-started) code di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
 
@@ -77,8 +77,8 @@ Questo video mostra un esempio di base di come creare un operatore automatico in
 
 5. Scegliere se abilitare gli input vocali. Se abilitata, il nome di ogni opzione di menu diventa una parola chiave di riconoscimento vocale. Ad esempio, i chiamanti possono pronunciare "Uno" per selezionare l'opzione di menu mappata al tasto 1 oppure pronunciare "Vendite" per selezionare l'opzione di menu denominata "Vendite".
 
-> [!NOTE]
-> Se si sceglie una lingua nel passaggio 4 che non supporta gli input vocali, questa opzione verrà disabilitata.
+   > [!NOTE]
+   > Se si sceglie una lingua nel passaggio 4 che non supporta gli input vocali, questa opzione verrà disabilitata.
 
 6. Selezionare **Avanti**.
 

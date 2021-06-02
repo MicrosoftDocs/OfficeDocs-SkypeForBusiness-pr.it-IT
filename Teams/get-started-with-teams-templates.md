@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: fdee4dc55d0922796e66ece87b535b953ecf1580
-ms.sourcegitcommit: 36924dc54fe7b09607b07d7543fe7e39eb4d2483
+ms.openlocfilehash: 0208b8c6ad16cc42611768a25237a6e48bf60401
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684543"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52717827"
 ---
 # <a name="get-started-with-team-templates-using-microsoft-graph"></a>Introduzione ai modelli di team con Microsoft Graph
 
@@ -68,14 +68,14 @@ Per impostazione predefinita, il modello di base è impostato su **Standard,** c
 
 | Tipologia di modello base | baseTemplateId | Proprietà del modello base |
 | ------------------ | -------------- | ----------------------------------------------------- |
-| Standard | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('standard')` | Nessuna app e proprietà aggiuntive |
-| Istruzione -<br>Team di classe | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('educationClass')` | App:<ul><li>OneNote Blocco appunti per la classe (aggiunto alla **scheda** Generale) </li><li>App Attività (aggiunta alla **scheda** Generale)</li></ul> Proprietà del team:<ul><li>Visibilità del team impostata **su HiddenMembership** (non può essere sostituita)</li></ul> |
-| Istruzione -<br>Team del personale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('educationStaff')` | App:<ul><li>OneNote Blocco appunti per personale (aggiunto alla **scheda** Generale)</li></ul> |
-|Istruzione -<br>Team PLC |`https://graph.microsoft.com/beta/`<br>`teamsTemplates('educationProfessionalLearningCommunity')` | App:<ul><li>OneNote Blocco appunti PLC (aggiunto alla **scheda** Generale)</ul></li>|
-| Retail -<br>Store | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailStore')` | Canali:<ul><li>Passaggio di consegne del turno</li><li>Apprendimento</li></ul>Proprietà del team<ul><li>Visibilità del team impostata su Public</li></ul>Autorizzazioni dei membri<ul><li>Impedire ai membri di creare, aggiornare o rimuovere canali</li><li>Impedire ai membri di aggiungere o rimuovere app</li><li>Impedire ai membri di creare, aggiornare o rimuovere connettori</li></ul> |
-| Retail -<br>Collaborazione con i manager | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('retailManagerCollaboration')` | Canali:<ul><li>Apprendimento</li><li>Operazioni</li></ul>Proprietà del team:<ul><li>Visibilità del team impostata su Private</li></ul>Autorizzazioni per i membri:<ul><li>Impedire ai membri di creare, aggiornare o rimuovere canali</li><li>Impedire ai membri di aggiungere o rimuovere app</li><li>Impedire ai membri di creare, aggiornare o rimuovere connettori</li></ul>|
-| Sanità -<br>Rione |`https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareWard')` |Canali: <ul><li>Annunci\*</li><li>Briefing\*</li><li>Giri di visite</li><li>Personale\*</li><li>Formazione\*</li></ul>\*Canali aggiunti automaticamente ai preferiti |
-|Sanità -<br>Ospedale | `https://graph.microsoft.com/beta/`<br>`teamsTemplates('healthcareHospital')` |Canali:<ul><li>Annunci\*</li><li>Conformità\*</li><li>Pulizie</li><li>Risorse umane</li></li><li>Farmacia</li></ul>\*Canale preferito automaticamente|
+| Standard | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('standard')` | Nessuna app e proprietà aggiuntive |
+| Istruzione -<br>Team di classe | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationClass')` | App:<ul><li>OneNote Blocco appunti per la classe (aggiunto alla **scheda** Generale) </li><li>App Attività (aggiunta alla **scheda** Generale)</li></ul> Proprietà del team:<ul><li>Visibilità del team impostata **su HiddenMembership** (non può essere sostituita)</li></ul> |
+| Istruzione -<br>Team del personale | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationStaff')` | App:<ul><li>OneNote Blocco appunti per personale (aggiunto alla **scheda** Generale)</li></ul> |
+|Istruzione -<br>Team PLC |`https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('educationProfessionalLearningCommunity')` | App:<ul><li>OneNote Blocco appunti PLC (aggiunto alla **scheda** Generale)</ul></li>|
+| Retail -<br>Store | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('retailStore')` | Canali:<ul><li>Passaggio di consegne del turno</li><li>Apprendimento</li></ul>Proprietà del team<ul><li>Visibilità del team impostata su Public</li></ul>Autorizzazioni dei membri<ul><li>Impedire ai membri di creare, aggiornare o rimuovere canali</li><li>Impedire ai membri di aggiungere o rimuovere app</li><li>Impedire ai membri di creare, aggiornare o rimuovere connettori</li></ul> |
+| Retail -<br>Collaborazione con i manager | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('retailManagerCollaboration')` | Canali:<ul><li>Apprendimento</li><li>Operazioni</li></ul>Proprietà del team:<ul><li>Visibilità del team impostata su Private</li></ul>Autorizzazioni per i membri:<ul><li>Impedire ai membri di creare, aggiornare o rimuovere canali</li><li>Impedire ai membri di aggiungere o rimuovere app</li><li>Impedire ai membri di creare, aggiornare o rimuovere connettori</li></ul>|
+| Sanità -<br>Rione |`https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('healthcareWard')` |Canali: <ul><li>Annunci\*</li><li>Briefing\*</li><li>Giri di visite</li><li>Personale\*</li><li>Formazione\*</li></ul>\*Canali aggiunti automaticamente ai preferiti |
+|Sanità -<br>Ospedale | `https://graph.microsoft.com/v1.0/`<br>`teamsTemplates('healthcareHospital')` |Canali:<ul><li>Annunci\*</li><li>Conformità\*</li><li>Pulizie</li><li>Risorse umane</li></li><li>Farmacia</li></ul>\*Canale preferito automaticamente|
 |||
 
 

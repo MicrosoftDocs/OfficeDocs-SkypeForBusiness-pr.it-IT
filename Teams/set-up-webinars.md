@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire i criteri webinar per Teams riunioni.
-ms.openlocfilehash: bc1460f93259a9dd3095cf764c38b56ab703bba0
-ms.sourcegitcommit: 592e5a0638c7739dfaa3565b67d4edc621eebc9f
+ms.openlocfilehash: aafa7b57eea1228fa5565bb4d5e95304b42751a3
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52656049"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52718047"
 ---
 # <a name="set-up-for-webinars-in-microsoft-teams"></a>Configurare i webinar in Microsoft Teams
 
@@ -54,7 +54,7 @@ Per altre informazioni sul cmdlet, vedere [Set-CsTeamsMeetingPolicy.](/powershel
 Per consentire agli utenti dell'organizzazione di pianificare webinar, eseguire:
 
 ```powershell
-Set-CsTeamsMeetingPolicy -AllowMeetingRegistration True
+Set-CsTeamsMeetingPolicy -AllowMeetingRegistration $True
 ```
 ### <a name="configure-who-can-register-for-webinars"></a>Configurare gli utenti che possono registrarsi per i webinar
 
@@ -66,7 +66,7 @@ Set-CsTeamsMeetingPolicy -AllowMeetingRegistration True
 **Per consentire *solo agli* utenti dell'organizzazione di registrarsi per i webinar, eseguire:**
 
 ```powershell
-Set-CsTeamsMeetingPolicy -AllowPrivateMeetingScheduling True
+Set-CsTeamsMeetingPolicy -AllowPrivateMeetingScheduling $True
 ```
 
 Quindi, esegui:
@@ -78,7 +78,7 @@ Set-CsTeamsMeetingPolicy -WhoCanRegister EveryoneInCompany
 **Per consentire a chiunque, inclusi gli utenti anonimi, di registrarsi per i webinar, eseguire:**
 
 ```powershell
-Set-CsTeamsMeetingPolicy -AllowPrivateMeetingScheduling True
+Set-CsTeamsMeetingPolicy -AllowPrivateMeetingScheduling $True
 ```
 
 Quindi, esegui:

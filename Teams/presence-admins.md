@@ -17,20 +17,22 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d7eaa2b35cdb01ce9bc59e69883ce1ac6ca20322
-ms.sourcegitcommit: 616403037ddb2d44f06cd9b2eaa9da699b119ef8
+ms.openlocfilehash: 82d9f152dbba345f876ac166bcf6833e53bab799
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768415"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52718037"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
 La presenza fa parte del profilo utente in Microsoft Teams (e in tutto Microsoft 365 o Office 365). La presenza indica la disponibilità e lo stato correnti dell'utente ad altri utenti. Per impostazione predefinita, tutti gli utenti dell'organizzazione che usano Teams possono vedere (praticamente in tempo reale) se gli altri utenti sono disponibili online. La presenza viene aggiornata in tempo reale sul Web e sulle versioni desktop quando si aggiorna la pagina in un dispositivo mobile.
 
- > [!Note]
+ > [!NOTE]
  > Per informazioni dettagliate sui profili utente di Teams su diverse piattaforme, vedere [Funzionalità di Teams per piattaforma](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3).
 
+ > [!NOTE]
+ > Teams rispetta la configurazione della privacy. Pertanto, se è stata abilitata la modalità privacy, la presenza dell'utente non sarà visibile agli utenti esterni.
 ## <a name="presence-states-in-teams"></a>Stati di presenza in Teams
 
 |Utente configurato|App configurata|
@@ -43,16 +45,17 @@ La presenza fa parte del profilo utente in Microsoft Teams (e in tutto Microsoft
 || ![Cerchio rosso trasparente, indica Non disponibile](media/Presence_Busy_OOF.png) Chiamata in corso, fuori sede|
 |  ![Cerchio rosso con linea bianca, indica Non disturbare](media/Presence_DND.png) Non disturbare ||
 || ![Cerchio rosso con linea bianca, indica Presentazione in corso](media/Presence_DND.png) Presentazione in corso|
-|| ![Cerchio rosso con linea bianca, indica Occupato](media/Presence_DND.png) Occupato. Lo stato attivo si verifica quando gli utenti pianificano il tempo produttivo in MyAnalytics/Insights nei propri calendari.|
+|| ![Cerchio rosso con linea bianca, indica Occupato](media/Presence_DND.png) Concentrato. Lo stato Concentrato si verifica quando gli utenti pianificano il tempo produttivo in MyAnalytics/Insights nei propri calendari.|
 | ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente| ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente|
 || ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente, ultimo accesso *orario*|
 |![Icona orologio giallo, indica Assente, torno subito](media/Presence_Away.png) Torno subito| |
-|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Invisibile|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline.  Se gli utenti non effettuano l'accesso ad alcun dispositivo per alcuni minuti, risultano invisibili. | |
+|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Invisibile|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline. Se gli utenti non effettuano l'accesso ad alcun dispositivo per alcuni minuti, risultano invisibili. | |
 || ![Cerchio grigio trasparente, indica Stato sconosciuto](media/Presence_Unknown.png) Stato sconosciuto|
-|| ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede. Fuori sede viene usato quando è impostata una risposta automatica. (Disponibile solo in Outlook). |
+|| ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede. Fuori sede viene usato quando è impostata una risposta automatica. |
 |||
- > [!Note]
- > Per gli utenti che hanno una casella postale ospitata onprem ci si aspetta di avere ritardi di presenza con un massimo di un'ora.
+ > [!NOTE]
+ > Per gli utenti che hanno la propria cassetta postale in locale, sono previsti ritardi di presenza di un'ora (massimo).
+
 Gli stati di presenza configurati dall'app si basano sulle attività utente (Disponibile, Assente), gli stati del calendario di Outlook (In riunione) o gli stati dell'app Teams (Chiamata in corso, Presentazione in corso). Quando ci si trova in modalità focus in base al calendario, **Occupato** sarà lo stato che le persone visualizzeranno in Teams. La modalità focus viene visualizzata come **Non disturbare** in altri prodotti.
 
 Lo stato di presenza corrente cambia in Assente quando si blocca il computer o quando si attiva la modalità di sospensione. In un dispositivo mobile, lo stato di presenza viene impostato su Assente quando l'app Teams è in background.
