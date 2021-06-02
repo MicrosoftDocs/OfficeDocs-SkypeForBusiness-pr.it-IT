@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 93a58b878443943b2dbd8322dc710bf59d3827e9
-ms.sourcegitcommit: 6227667c9941cc3289029099b7b6781581f16ea7
+ms.openlocfilehash: baea63a8ed51d2e47fa24b7602573b1dda342e93
+ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52569234"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52717987"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
@@ -109,10 +109,6 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - numeri dalle impostazioni.
 - **blockChat**: blocco di una chatbot. Questo migliora l’esistente telemetria delle chat e aggiunge solo le informazioni sull'applicazione.
 - **botClickCardAction**: utilizzo della scheda del connettore.
-- **brbFeedback**: relativa alle prestazioni del modulo di feedback BRB.
-- **brbFormCancelled**: un evento inviato quando il modulo di feedback BRB viene annullato e l'utente torna all'app.
-- **brbFormOpened**: un evento inviato all'apertura del modulo BRB.
-- **brbFormSubmit**: un evento inviato quando l'utente seleziona **Invia** nel modulo di feedback.
 - **breakStartEndClicked**: nella schermata di registrazione dell’orario in entrata, il pulsate **Inizia** o **Termina pausa** viene selezionato.
 - **breakStartEndTriggered**: registra le scelte dell’utente sull’utilizzo di inizio o fine pausa.
 - **bucketSelected**: conferma che un contenitore è stato selezionato.
@@ -1187,6 +1183,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **voicemail - Nessun AS Assegnato**: un relatore tocca un elemento della segreteria telefonica.
 - **whiteboardUsed**: un utente annota su una lavagna (qualsiasi azione nel WebView).
 - **wiki - Nessun AS assegnato**: telemetria uso Wiki.
+- **poorNetworkBanner**: viene visualizzato il banner di rete debole.
+- **badNetworkBanner**: viene visualizzato il banner di rete scadente.
 
 ### <a name="panelview"></a>PanelView
 
@@ -1224,6 +1222,11 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 > [!NOTE]
 > Per informazioni sulle proprietà degli eventiPanelAction, vedere [Proprietà inviate con eventi scenario](#properties-sent-with-scenario-events).
 
+- **app_incremental_sync_launch**: conferma che il conteggio dei nuovi badge (pill count) viene aggiornato correttamente per l'avvio a freddo.
+- **app_incremental_sync_resume**: conferma che il conteggio dei nuovi badge (pill count) viene aggiornato correttamente per l'avvio a caldo/tiepido.
+- **app_start_cold**: per monitorare l'avvio dell'app a freddo (solo Android).
+- **app_start_hot**: per monitorare l'avvio dell'app a caldo (solo Android).
+- **app_start_warm**: per monitorare l'avvio dell'app a tiepido (solo Android).
 - **chat_add_giphy**: conferma che l'azione di rendering GIF Giphy è riuscita o meno.
 - **cortanaError** Per monitorare i messaggi di errore di Cortana.
 - **cortanaView** Per monitorare la visualizzazione dell'area di disegno di Cortana.
@@ -1278,6 +1281,18 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **upload_images**: conferma che il caricamento dell'immagine è riuscito o meno.
 - **upload_voice_messages**: conferma che il caricamento del messaggio vocale è riuscito o meno.
 - **voiceMessageUpload**: conferma che il caricamento del messaggio vocale è riuscito o meno.
+- **cancel_channel_meeting**: conferma che l'annullamento di una riunione di canale è riuscito o meno.
+- **cancel_meeting**: conferma che l'annullamento di una riunione è riuscito o meno.
+- **cancel_private_meeting**: conferma che l'annullamento di una riunione privata è riuscito o meno.
+- **edit_channel_meeting**: conferma che l'operazione di modifica di una riunione di canale è riuscita o meno.
+- **edit_meeting**: conferma che l'operazione di modifica di una riunione è riuscita o meno.
+- **server_fetch_agenda_view**: conferma che la sincronizzazione dell'evento del calendario attraverso l'API di livello intermedio sia riuscita o meno.
+- **server_fetch_date_picker_view**: conferma che la sincronizzazione dell'evento del calendario con l'API REST di Outlook sia riuscita o meno.
+- **server_fetch_agenda_view_group**: conferma che la sincronizzazione dell'evento del calendario con l'API di livello intermedio per il gruppo TFL è riuscita o meno.
+- **server_fetch_date_picker_view_incremental**: conferma che la sincronizzazione incrementale dell'evento del calendario con l'API REST di Outlook è riuscita o meno.
+- **meeting_details**: conferma che la sincronizzazione dei dettagli della riunione è riuscita o meno.
+- **show_meeting_participants**: conferma che la visualizzazione dell'elenco dei partecipanti alla riunione è riuscita o meno.
+
 
 ## <a name="property-lists"></a>Elenchi delle proprietà
 
