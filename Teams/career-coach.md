@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 95272545080559b94faeff42d715b8f57c4d0242
-ms.sourcegitcommit: ea9a0119d184179300e51f58ca4fee249c12d00a
+ms.openlocfilehash: 8a16f6cbb3d6ade57a81bb245c42c5ea0917f849
+ms.sourcegitcommit: 19b9904588fcc14398e65b4153ab9fe7f5dd6a5d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52699357"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52729789"
 ---
 # <a name="purchase-configure-and-enable-career-coach-for-microsoft-teams"></a>Acquistare, configurare e abilitare Career Coach per Microsoft Teams
 
@@ -110,7 +110,7 @@ Usare la [pagina Gestisci app per](/microsoftteams/manage-apps) visualizzare le 
 
 4. Selezionare **Career Coach** e quindi selezionare **Impostazioni.**  
 
-    ![mostra l'app Career Coach selezionata con l'opzione Impostazioni mostra](media/app-settings.png)
+    ![mostra l'app Career Coach selezionata con l'opzione Impostazioni mostra](media/career-coach-app.png)
 
 ### <a name="configure-the-career-coach-app-settings"></a>Configurare le impostazioni dell'app Career Coach
 
@@ -133,7 +133,7 @@ Career Coach ha cinque categorie di configurazione:
 
 Impostare il nome, il logo e la lingua predefinita dell'istituto di istruzione nella pagina delle impostazioni del marchio e delle preferenze.
 
-![sezione di personalizzazione di Career Coach nell'interfaccia di amministrazione](media/brand-preferences.png)
+![sezione di personalizzazione di Career Coach nell'interfaccia di amministrazione](media/career-coach-brand.png)
 
 ##### <a name="educational-institution-icon"></a>Icona dell'istituto di istruzione
 
@@ -172,7 +172,7 @@ Determinare la pagina LinkedIn dell'istituto di istruzione. Trovare la pagina Li
 
 4. Copiare l'URL di verifica e condividerlo con la documentazione dell'amministratore della pagina LinkedIn dell'istituto [didattico.](https://www.linkedin.com/help/linkedin/answer/4783/linkedin-page-admins-overview?lang=en) Il collegamento di verifica scade dopo 30 giorni.  
 
-   ![Impostazioni linkedin per il career coach](media/linkedin.png)  
+   ![Impostazioni linkedin per il career coach](media/career-coach-linked-in.png)  
 
 #### <a name="course-catalog"></a>Catalogo dei corsi
 

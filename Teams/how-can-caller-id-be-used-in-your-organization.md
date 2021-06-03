@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.callerid.overview
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: 2a104679be84dfdaa4574353ccc79142d8a82284
-ms.sourcegitcommit: 83f14c4c79559ef28357ff076938e52b369fc0c7
+ms.openlocfilehash: 43d3d6633ca46485aa111a7d97b9bd37b0547818
+ms.sourcegitcommit: 02e243d6c58eab463a00ed45dadd80112087006e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52308345"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "52723547"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
@@ -49,9 +49,6 @@ La funzionalità ID chiamante è disponibile per tutti Sistema telefonico utenti
 ## <a name="outbound-pstn-caller-id"></a>ID chiamante PSTN in uscita
 
 Per l'ID chiamante PSTN in uscita, sono disponibili le opzioni seguenti. 
-
-> [!NOTE]
-> Alcune opzioni, indicate di seguito, sono disponibili nella versione di anteprima.
   
 - Numero di telefono assegnato all'utente, ovvero l'impostazione predefinita.
 
@@ -61,9 +58,9 @@ Per l'ID chiamante PSTN in uscita, sono disponibili le opzioni seguenti.
 
   - Numero di telefono classificato come servizio e numero verde nell'inventario dei numeri di telefono dei Piani per chiamate. In genere viene assegnato a una Teams Operatore automatico o coda di chiamata.
 
-  - **Versione di anteprima.** Numero di telefono locale tramite Routing diretto assegnato a un account di risorsa usato da un Teams Operatore automatico o coda di chiamata. 
+  - Numero di telefono locale tramite Routing diretto assegnato a un account di risorsa usato da un Teams Operatore automatico o coda di chiamata. 
 
-- **Versione di anteprima.** Nome della parte chiamante o CNAM impostato sulla chiamata PSTN in uscita.  
+- Nome della parte chiamante o CNAM impostato sulla chiamata PSTN in uscita.  
     
 Per altre informazioni, vedere [Impostare l'ID chiamante per un utente.](./set-the-caller-id-for-a-user.md)
   
