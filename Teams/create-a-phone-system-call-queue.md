@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: 73b0e0c6c73b86e544ade5a43756e2e80c60c25a
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: fe0c2863c627f728f5418cfeb9b7b17c91d246fa
+ms.sourcegitcommit: 17d0108fb4d36a3f56144460683f53d77a8a0a7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52717877"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52777927"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -60,17 +60,33 @@ Questo video mostra un esempio di base di come creare una coda di chiamata in Te
 
 Per configurare una coda di chiamata, nell'interfaccia Teams di amministrazione espandere **Voce,** fare clic su Code di chiamata **e** quindi su **Aggiungi.**
 
-### <a name="resource-account-and-language"></a>Account e lingua delle risorse
+Digitare un nome per la coda di chiamata.
 
-![Screenshot delle impostazioni dell'account della risorsa e della lingua](media/call-queue-name-language.png)
+### <a name="resource-accounts"></a>Account delle risorse
 
-1. Digitare un nome per la coda di chiamata.
+![Screenshot delle impostazioni dell'account delle risorse](media/call-queue-name-language.png)
 
-2. Fare **clic su Aggiungi account,** cercare l'account della risorsa che si vuole usare con questa coda di chiamata, fare clic su Aggiungi e quindi su **Aggiungi.**  Gli agenti visualizzano il nome dell'account della risorsa quando ricevono una chiamata in arrivo.
+Fare **clic su Aggiungi account,** cercare l'account della risorsa che si vuole usare con questa coda di chiamata, fare clic su Aggiungi e quindi su **Aggiungi.**  Gli agenti visualizzano il nome dell'account della risorsa quando ricevono una chiamata in arrivo.
 
-3. Scegliere una [lingua supportata.](create-a-phone-system-call-queue-languages.md) Questa lingua verrà usata per le istruzioni vocali generate dal sistema e per la trascrizione della segreteria telefonica (se abilitate).
+### <a name="assign-calling-id"></a>Assegnare l'ID chiamata
+
+![Screenshot delle impostazioni dell'ID chiamata](media/call-queue-assign-calling-id.png)
+
+Se si prevede di usare un canale Teams per gli agenti di chiamata, è possibile assegnare un numero di ID chiamante in uscita per gli agenti specificando uno o più account delle risorse con un numero di telefono.
+
+Fare **clic su** Aggiungi , cercare gli account delle risorse a cui consentire agli agenti di effettuare chiamate con ID durante le chiamate in uscita, fare clic su **Aggiungi** e quindi su **Aggiungi.**
+
+Se non si usa un canale di Teams per controllare l'appartenenza all'agente, è consigliabile impostare direttamente l'ID chiamante per i membri della coda di chiamata sul numero di servizio della coda di chiamata o sull'operatore automatico appropriato. Per altre informazioni, vedere Gestire i [criteri id chiamante in Microsoft Teams](caller-id-policies.md) chiamate.
+
+### <a name="language"></a>Lingua
+
+![Screenshot delle impostazioni della lingua](media/call-queue-language.png)
+
+Scegliere una [lingua supportata.](create-a-phone-system-call-queue-languages.md) Questa lingua verrà usata per le istruzioni vocali generate dal sistema e per la trascrizione della segreteria telefonica (se abilitate).
 
 ### <a name="greetings-and-music-on-hold-in-queue"></a>Messaggi di saluto e musica in attesa in coda
+
+![Screenshot di messaggi di saluto e musica in attesa nelle impostazioni della coda](media/call-queue-greetings-music.png)
 
 Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre.
 
@@ -136,10 +152,12 @@ Gli account Teams agenti devono essere impostati sulla modalità Teams solo uten
 
 ![Screenshot delle impostazioni relative a routing, rifiuto esplicito e tempo di avviso](media/call-queue-presence-agents-time.png)
 
-
 **Il routing basato sulla presenza** usa lo stato di disponibilità degli agenti di chiamata per determinare se un agente deve essere incluso nell'elenco di routing delle chiamate per il metodo di routing selezionato. Gli agenti di chiamata il cui stato di disponibilità è impostato su **Disponibile** sono inclusi nell'elenco di routing delle chiamate e possono ricevere chiamate. Gli agenti il cui stato di disponibilità è impostato su qualsiasi altro stato vengono esclusi dall'elenco di routing delle chiamate e non riceveranno chiamate finché lo stato di disponibilità non torna su **Disponibile**. 
 
 È possibile abilitare il routing delle chiamate basate sulla presenza con uno qualsiasi dei metodi di routing.
+
+> [!NOTE]
+> Quando **l'opzione** Inattività più lunga è selezionata come metodo di routing, il routing  basato sulla presenza è obbligatorio e abilitato automaticamente anche se l'interruttore routing basato sulla presenza sarà disattivato e disattivato.
 
 Se un agente rifiuta esplicitamente di ricevere chiamate, non verrà incluso nell'elenco di routing delle chiamate indipendentemente dal relativo stato di disponibilità impostato. 
 
@@ -178,10 +196,6 @@ Sono consigliate le impostazioni seguenti:
 È possibile scegliere di disconnettere la chiamata o reindirizzarla a una delle destinazioni di routing delle chiamate. Ad esempio, è possibile che il chiamante lasci una segreteria telefonica per gli agenti in coda. Per i trasferimenti esterni, vedere Prerequisiti e trasferimenti di numeri di telefono esterni [- dettagli tecnici](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details) per la formattazione dei numeri. [](plan-auto-attendant-call-queue.md#prerequisites)
 
 Dopo aver selezionato le opzioni di timeout della chiamata, fare clic su **Salva.**
-
-## <a name="caller-id-for-outbound-calls"></a>ID chiamante per le chiamate in uscita
-
-Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per i membri di una coda di chiamata sul numero di servizio di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i [criteri id chiamante in Microsoft Teams](caller-id-policies.md) chiamate.
 
 ## <a name="supported-clients"></a>Client supportati
 

@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 1ccce8205afcf019fea539823c21e3a29a2fa206
-ms.sourcegitcommit: d5e77f8a3b8084ed92f0a77888a555626309591b
+ms.openlocfilehash: 51ab11603a957dad9748def3a1508de6e42577f5
+ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "52517749"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52739636"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare Teams operatori automatici e code di chiamata
 
@@ -152,7 +152,7 @@ Quando le chiamate vengono reindirizzate da un operatore automatico o da una cod
 - **Persona dell'organizzazione:** una persona dell'organizzazione che è in grado di ricevere chiamate vocali. Può trattarsi di un utente online o di un utente ospitato in locale usando Skype for Business Server.
 - **App vocale:** un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato alla destinazione.
 - **Numero di telefono esterno:** qualsiasi numero di telefono. (Vedere [dettagli tecnici sul trasferimento esterno).](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)
-- **Segreteria telefonica:** la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente.
+- **Segreteria telefonica:** la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lasciare un messaggio dopo il tono". richiesta di sistema.
 - **Operatore** (solo operatore automatico): l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. Un operatore può essere una qualsiasi delle altre destinazioni dell'elenco.
 
 Gli operatori automatici offrono opzioni di routing delle chiamate separate per le chiamate ricevute al di fuori dell'orario di ufficio e nei giorni festivi. L'instradamento delle chiamate dopo le ore consente tutte le opzioni elencate sopra, mentre l'instradamento delle chiamate natalizie consente solo il reindirizzamento o la disconnessione di una chiamata, ma non le opzioni dei tasti di chiamata.

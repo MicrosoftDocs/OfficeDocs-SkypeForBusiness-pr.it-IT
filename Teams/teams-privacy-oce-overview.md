@@ -14,19 +14,21 @@ search.appverid: MET150
 description: Questo articolo illustra le esperienze connesse facoltative che verranno visualizzate in Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 228a14c29d082037de1bbcd1f9f5ee45e3a35728
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 49b2cf94f660b7935ae61aadf21bdb9a7a78fb21
+ms.sourcegitcommit: 17d0108fb4d36a3f56144460683f53d77a8a0a7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094076"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52777887"
 ---
 # <a name="overview-of-optional-connected-experiences-in-microsoft-teams"></a>Panoramica delle esperienze connesse facoltative in Microsoft Teams
 
 Se si ha un account aziendale o dell'istituto di istruzione, l'amministratore dell'organizzazione può aver offerto agli utenti la possibilità di usare uno o più servizi cloud opzionali (detti anche **esperienze connesse facoltative**) durante l'utilizzo di Microsoft Teams, ad esempio GIPHY o il servizio di anteprima URL. Questi servizi basati sul cloud sono facoltativi. La scelta di usarli o meno dipende dall'utente. Vengono offerti in base a condizioni diverse rispetto alle  [Condizioni dei servizi online Microsoft](https://www.microsoft.com/licensing/product-licensing/products), come descritto separatamente per ogni servizio facoltativo. Questo articolo illustra i servizi basati su cloud per Teams.
 
+Se l'amministratore ha offerto la possibilità di usare le esperienze connesse facoltative in Teams, si può passare a **Impostazioni** > **Privacy** in Teams e scegliere se si vogliono usare le esperienze connesse facoltative.
+
 > [!NOTE]
-> Gli amministratori possono vedere l'articolo [Gestire i controlli della privacy](/deployoffice/privacy/manage-privacy-controls) per informazioni su come concedere o limitare la possibilità degli utenti di usare le esperienze connesse facoltative.
+> Gli amministratori possono concedere o limitare la possibilità degli utenti di usare le esperienze connesse facoltative. A questo scopo, possono usare il [servizio di criteri cloud di Office](/deployoffice/overview-office-cloud-policy-service) e configurare l'impostazione dei criteri *Consenti l'uso di altre esperienze connesse facoltative in Office*. 
 
 ## <a name="giphy"></a>GIPHY
 
@@ -42,8 +44,8 @@ Il servizio Anteprima URL genera automaticamente un frammento di contenuto di an
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Panoramica dei controlli di privacy per Microsoft 365 Apps for enterprise](/deployoffice/privacy/overview-privacy-controls)
 - [Panoramica dei controlli dei criteri per Teams](policy-control-overview.md)
 - [Privacy e Microsoft Teams](teams-privacy.md)
+- [Panoramica delle esperienze connesse facoltative in Office](/deployoffice/privacy/optional-connected-experiences)
 - [Dati di servizio obbligatori per Office](/deployoffice/privacy/required-service-data)
 - [Impostazioni di Privacy account](https://support.microsoft.com/office/3e7bc183-bf52-4fd0-8e6b-78978f7f121b)

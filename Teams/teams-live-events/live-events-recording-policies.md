@@ -17,12 +17,12 @@ description: Informazioni sui criteri di registrazione degli eventi live.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: f9654c139433ffa764767e0a2140896eab52204b
-ms.sourcegitcommit: 56bebf42f545af57fdf387faa90e555abc8acd40
+ms.openlocfilehash: 8d25f37f94a514b83bd37e44d1b022bac064a839
+ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "52513849"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52739656"
 ---
 # <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione degli eventi live in Microsoft Teams
 
@@ -58,7 +58,7 @@ Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la 
 
 | Opzione                                       | Stato   | DVR                                                   | VOD                                                     | Registrazione                |
 | ------------------------------------------------ | ------------ | --------------------------------------------------------- | ----------------------------------------------------------- | ---------------------------- |
-| Registrazione disponibile per produttori e relatori | Selezionato     | DVR è disponibile e la risorsa Servizi multimediali di Azure (AMS) viene archiviata per 180 giorni | Il partecipante può accedere e guardare l'evento                     |                              |
+| Registrazione disponibile per i partecipanti | Selezionato     | DVR è disponibile e la risorsa Servizi multimediali di Azure (AMS) viene archiviata per 180 giorni | Il partecipante può accedere e guardare l'evento                     |                              |
 |                                                  | Non selezionato | DVR è disponibile e la risorsa AMS viene archiviata per 180 giorni | Il partecipante non ottiene l'accesso all'evento al termine |                              |
 ||Disabilitato (non selezionato)|DVR è disponibile e la risorsa AMS viene eliminata dopo l'evento|Il partecipante non ottiene l'accesso all'evento al termine||
 | Registrazione disponibile per produttori e relatori | Selezionato     |                                                           |                                                             | Viene creato e archiviato un MP4 |

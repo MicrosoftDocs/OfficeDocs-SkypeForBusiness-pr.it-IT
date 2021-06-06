@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
-ms.openlocfilehash: 755c4914271c96cdd668bb2933872ebf1fa21b94
-ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
+ms.openlocfilehash: be6c53855a6d32f8348f02b18ac3074388dafc88
+ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629055"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52739686"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -136,9 +136,13 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 2. Fare **clic su Aggiungi account,** cercare l'account della risorsa che si vuole usare con questa coda di chiamata, fare clic su Aggiungi e quindi su **Aggiungi.** 
 
+3. (Facoltativo) In **Assegna ID chiamata** fare clic su **Aggiungi**, cercare gli account delle risorse creati per l'operatore automatico, fare clic su Aggiungi **e** quindi su **Aggiungi**. In questo modo gli agenti di chiamata riceveranno l'ID chiamante della linea principale al momento della chiamata.
+
+    ![Screenshot delle impostazioni dell'ID chiamata](../media/call-queue-assign-calling-id.png)
+
 3. Scegliere una lingua. Questa lingua verrà usata per le istruzioni vocali generate dal sistema e per la trascrizione della segreteria telefonica (se abilitate).
 
-    ![Screenshot delle impostazioni dell'account della risorsa e della lingua](../media/call-queue-name-language.png)
+    ![Screenshot delle impostazioni dell'account delle risorse](../media/call-queue-name-language.png)
 
 4. Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre.
 

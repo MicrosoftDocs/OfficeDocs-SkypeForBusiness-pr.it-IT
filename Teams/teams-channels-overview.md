@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c6f6b3cbb80fb209c519593c28077b03e4a13ed9
-ms.sourcegitcommit: ab566ddab9d26440bac1716a975f30e075d0c7b5
+ms.openlocfilehash: 2ce282df27a30f0741a7b95a5400fd5ba6d4e367
+ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49865170"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "52739546"
 ---
 # <a name="overview-of-teams-and-channels-in-microsoft-teams"></a>Panoramica dei team e i canali in Microsoft Teams
 
@@ -39,7 +39,7 @@ Per iniziare è necessario capire come Microsoft Teams consente a singoli team d
 - **Team** sono una combinazione di persone, contenuti e strumenti intorno a vari progetti e obiettivi all'interno di un'organizzazione.
 
     - I team possono essere configurati come privati e accessibili ai soli utenti invitati.
-    - I team possono anche essere creati per essere pubblici e aperti e chiunque all'interno dell'organizzazione può partecipare (fino a 10.000 membri).
+    - Teams può anche essere creato per essere pubblico e aperto e chiunque all'interno dell'organizzazione può partecipare (fino a 10.000 membri).
     
     Un team è progettato per riunire un gruppo di persone che collabora a stretto contatto per portare a termine un attività. I team possono essere dinamici: lavorare sui progetti, ad esempio il lancio di un prodotto, la creazione di una sala operativa digitale, e in maniera stabile nella struttura interna dell'organizzazione, ad esempio i reparti e gli uffici. Le conversazioni, i file e le note presenti nei canali del team sono visibili solo ai membri del team.
 
@@ -54,14 +54,13 @@ Questo breve video illustra le procedure consigliate per la creazione di team e 
 
    > [!VIDEO https://www.youtube.com/embed/WkAVgNKn0hs]
 
-<a name="membership-roles-and-settings"></a>Appartenenza, ruoli e impostazioni
-------------------------------
+## <a name="membership-roles-and-settings"></a>Appartenenza, ruoli e impostazioni
 
 **Appartenenza al team**
 
-Quando viene attivato Microsoft Teams per l'intera organizzazione, i proprietari dei team designati possono invitare qualsiasi dipendente con cui collabora a partecipare al team. Microsoft Teams consente ai proprietari dei team di aggiungere facilmente gli utenti dell'organizzazione tramite il nome. In base alle impostazioni dell'organizzazione, è possibile aggiungere ai team utenti guest che appartengono a team esterni all'organizzazione. Vedere [Accesso guest in Microsoft Teams](guest-access.md) per altre informazioni. 
+Quando viene attivato Microsoft Teams per l'intera organizzazione, i proprietari dei team designati possono invitare qualsiasi dipendente con cui collabora a partecipare al team. Microsoft Teams consente ai proprietari dei team di aggiungere facilmente gli utenti dell'organizzazione tramite il nome. A seconda delle impostazioni dell'organizzazione, le persone esterne all'organizzazione possono essere aggiunte ai team come guest. Vedere [Accesso guest in Microsoft Teams](guest-access.md) per altre informazioni. 
 
-I proprietari dei team possono anche creare un team basato su un gruppo di Microsoft 365 esistente. Qualsiasi modifica apportata al gruppo verrà sincronizzata automaticamente con Microsoft Teams. La creazione di un team basato su un gruppo di Microsoft 365 esistente semplifica non solo il processo di invito e gestione dei membri, ma anche la sincronizzazione dei file del gruppo all'interno di Microsoft Teams.
+I proprietari del team possono anche creare un team in base a un gruppo Microsoft 365 team. Qualsiasi modifica apportata al gruppo verrà sincronizzata automaticamente con Microsoft Teams. La creazione di un team basato su un gruppo Microsoft 365 non solo semplifica il processo di invito e gestione dei membri, ma sincronizza anche i file di gruppo all'interno di Microsoft Teams.
 
 **Ruoli all'interno del team**
 
@@ -72,6 +71,9 @@ Esistono due ruoli principali in Microsoft Teams:
 
 Inoltre, se viene configurata la moderazione i proprietari e i membri del team possono assumere le funzioni di moderatore per un canale. I moderatori possono avviare nuovi post nel canale e controllare se i membri del team possono rispondere ai messaggi esistenti nel canale. I proprietari del team possono assegnare i moderatori a un canale. Per impostazione predefinita, i proprietari del team assumono le funzioni di moderatori. I moderatori possono aggiungere o rimuovere altri moderatori all'interno del canale. Per altre informazioni, vedere [Configurare e gestire la moderazione dei canali in Microsoft Teams](manage-channel-moderation-in-teams.md).
 
+> [!NOTE]
+> Quando si aggiunge un proprietario del team, vengono aggiunti anche come membri, tranne quando il team viene creato nell'interfaccia di amministrazione di Teams o quando un team viene aggiunto a un gruppo di Microsoft 365 nuovo o esistente.
+
 **Impostazioni del team** 
 
 I proprietari del team possono gestire le impostazioni a livello di team direttamente in Microsoft Teams. Le impostazioni includono la possibilità di aggiungere un'immagine del team, di impostare le autorizzazioni ai membri del team per la creazione di canali standard e [canali privati](private-channels.md), l'aggiunta di schede e connettori, della funzionalità di @ menzione per l'intero team o canale e l'utilizzo di GIF, adesivi e meme.
@@ -80,14 +82,13 @@ Richiede tre minuti la visione del video seguente con la guida per i proprietari
 
    > [!VIDEO https://www.youtube.com/embed/kalV4dG-oFo]
 
-Gli amministratori di Microsoft Teams in Microsoft 365 o Office 365 possono accedere alle impostazioni a livello di sistema nell'interfaccia di amministrazione di Microsoft Teams. Queste impostazioni possono influire sulle opzioni e le impostazioni predefinite che i proprietari visualizzano nelle impostazioni del team. Ad esempio, è possibile abilitare un canale predefinito "Generale", per gli annunci a livello di team, le discussioni e le risorse che verranno visualizzate nei team.
+Se si è un amministratore Microsoft Teams in Microsoft 365 o Office 365, si ha accesso alle impostazioni a livello di sistema nell'interfaccia di Microsoft Teams di amministrazione. Queste impostazioni possono influire sulle opzioni e le impostazioni predefinite che i proprietari visualizzano nelle impostazioni del team. Ad esempio, è possibile abilitare un canale predefinito "Generale", per gli annunci a livello di team, le discussioni e le risorse che verranno visualizzate nei team.
 
-Per impostazione predefinita, tutti gli utenti dispongono delle autorizzazioni per creare un team in Microsoft Teams. Per modificare questa impostazione, vedere [Assegnare ruoli e autorizzazioni in Teams](assign-roles-permissions.md). Gli utenti di un gruppo di Microsoft 365 esistente possono anche migliorare le autorizzazioni con la funzionalità Teams.
+Per impostazione predefinita, tutti gli utenti dispongono delle autorizzazioni per creare un team in Microsoft Teams. Per modificare questa impostazione, vedere [Assegnare ruoli e autorizzazioni in Teams](assign-roles-permissions.md). Gli utenti di un gruppo Microsoft 365 utenti possono anche migliorare le autorizzazioni con Teams funzionalità.
 
 Un'attività essenziale della pianificazione iniziale per incoraggiare gli utenti a collaborare con Microsoft Teams consiste nell'aiutare gli utenti a comprendere come Teams può migliorare la collaborazione nella vita quotidiana. Parlare con gli utenti e invitarli a considerare gli scenari aziendali in cui collaborano in modo frammentato. Riunirli in un canale con le schede pertinenti che consentiranno loro di portare a termine le attività. Uno dei casi più significativi di utilizzo di Teams è all'interno dei processi interorganizzativi. 
 
-<a name="example-teams"></a>Team di esempio
---------------
+## <a name="example-teams"></a>Team di esempio
 
 Di seguito sono illustrati alcuni esempi di come i vari tipi di utenti potrebbero affrontare la configurazione dei team, dei canali e delle app (schede/connettori/bot). Questo potrebbe essere un utile spunto per avviare una conversazione su Microsoft Teams con la community di utenti. Se si pensa a come implementare Microsoft Teams nell'organizzazione, tenere presente che è possibile offrire indicazioni su come strutturare il team. Tuttavia, gli utenti hanno il controllo della propria organizzazione. Questi sono solo esempi che consentono ai team di considerare le varie possibilità.
 

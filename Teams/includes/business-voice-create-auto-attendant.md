@@ -82,7 +82,7 @@ Per configurare un operatore automatico
 
 4. Specificare il fuso orario per questo operatore automatico. Il fuso orario viene usato per calcolare l'orario di ufficio se si crea un flusso di chiamata separato per le ore successive.
 
-5. Specificare una lingua per l'operatore automatico. Questa è la lingua che verrà usata per le istruzioni vocali generate dal sistema.
+5. Specificare una [lingua supportata per](../create-a-phone-system-auto-attendant-languages.md) questo operatore automatico. Questa è la lingua che verrà usata per le istruzioni vocali generate dal sistema. 
 
 6. Scegliere se abilitare gli input vocali. Se abilitata, il nome di ogni opzione di menu diventa una parola chiave di riconoscimento vocale. Ad esempio, i chiamanti possono pronunciare "Uno" per selezionare l'opzione di menu mappata al tasto 1 oppure pronunciare "Vendite" per selezionare l'opzione di menu denominata "Vendite".
 
@@ -122,7 +122,7 @@ Scegliere le opzioni del flusso di chiamata
     - **Persona dell'organizzazione:** una persona dell'organizzazione che è in grado di ricevere chiamate vocali.
     - **App vocale:** un altro operatore automatico o una coda di chiamata.
     - **Numero di telefono esterno:** qualsiasi numero di telefono. Usare questo formato: +[codice paese][codice area][numero di telefono]
-    - **Segreteria telefonica:** la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente.
+    - **Segreteria telefonica:** la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lasciare un messaggio dopo il tono". richiesta di sistema.
     - **Operatore:** l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come qualsiasi altra destinazione in questo elenco.
 
     È consigliabile impostare il tasto 0 sull'operatore.

@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 52a9636a6a92656293e90d00563be16b500ee4ce
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: cc4d0de8fd1d6c643f23b6e8215f0f7a343b2a8f
+ms.sourcegitcommit: 17d0108fb4d36a3f56144460683f53d77a8a0a7f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52717867"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52777803"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -43,17 +43,12 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 - **Operatore:** l'operatore definito per l'operatore automatico. La definizione di un operatore è facoltativa. L'operatore può essere definito come qualsiasi altra destinazione in questo elenco.
 - **Persona dell'organizzazione,** una persona dell'organizzazione che può ricevere chiamate vocali. Questa persona può essere un utente online o un utente ospitato in locale usando Skype for Business Server.
 - **App vocale:** un altro operatore automatico o una coda di chiamata. Scegliere l'account della risorsa associato all'operatore automatico o alla coda di chiamata quando si sceglie questa destinazione.
-- **Segreteria telefonica:** la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente.
+- **Segreteria telefonica:** la cassetta postale vocale associata a Microsoft 365 gruppo specificato dall'utente. È possibile scegliere se si vogliono le trascrizioni della segreteria telefonica e "Lasciare un messaggio dopo il tono". richiesta di sistema.
 - **Numero di telefono esterno:** qualsiasi numero di telefono. (Vedere [dettagli tecnici sul trasferimento esterno).](create-a-phone-system-auto-attendant.md#external-phone-number-transfers---technical-details)
 - **Annuncio (file audio)** - Riprodurre un file audio. Messaggio di annuncio registrato caricato salvato come audio in . WAV, .MP3 o . Formato WMA. La registrazione non può essere superiore a 5 MB. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 - **Annuncio (digitato):** digitare un messaggio. Testo che deve essere letto dal sistema. È possibile immettere fino a 1000 caratteri. Il sistema riproduce l'annuncio e quindi torna al menu dell'operatore automatico.
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
-
-> [!NOTE]
-> Quando si sceglie Segreteria telefonica come destinazione, sono disponibili due opzioni aggiuntive:
-> - **Trascrizione** (impostazione predefinita: disattivata): se abilitato, il messaggio della segreteria telefonica verrà trascritto e incluso come parte del messaggio di posta elettronica.
-> - **Elimina messaggio di** saluto (impostazione predefinita: disattivato): se abilitato, il messaggio di sistema standard "Lascia un messaggio dopo il tono. Al termine, riagganciare o premere il tasto hash per altre opzioni". verrà soppresso.
 
 Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori automatici** e quindi **selezionare Aggiungi**.
 

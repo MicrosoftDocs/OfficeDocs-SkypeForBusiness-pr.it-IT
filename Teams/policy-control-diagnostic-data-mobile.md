@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: baea63a8ed51d2e47fa24b7602573b1dda342e93
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: 03206c6a1d3a9bfb8a42446e7134ad21689d93cc
+ms.sourcegitcommit: 02e243d6c58eab463a00ed45dadd80112087006e
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/02/2021
-ms.locfileid: "52717987"
+ms.locfileid: "52723567"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
@@ -344,6 +344,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **companionDismissProximity**: ignorare il banner complementario.
 - **companionJoin**: viene selezionata l’opzione dal foglio Partecipare con dispositivo complementare.
 - **companionJoinProximity**: aggiunto attraverso il banner complementario.
+- **completeVaultFRE**: l'utente completa il processo di generazione di una chiave master usata per crittografare i dati della Cassaforte.
 - **completionStateChange**: si attiva quando un interruttore del filtro completato o incompleto viene selezionato nella visualizzazione del filtro dall'elenco delle attività.
 - **composeExpandComposer** -  viene toccato il pulsante **Formato**.
 - **composeFilePick**: selezione file nativo avviata.
@@ -432,6 +433,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **deleteMeeting**: selezionare il pulsante **Elimina** nella pagina dei dettagli della riunione.
 - **deletePersonalTask**: conferma che è stata eliminata correttamente un’attività personale.
 - **deletePersonalSubtask**: conferma che è stata eliminata correttamente una sottoattività personale.
+- **deletePersonalVaultItem**: l'utente richiede di eliminare la Cassaforte personale.
 - **deletePlannerTask**: conferma che un'operazione di eliminazione di un'attività condivisa è stata completata correttamente.
 - **deleteShift**: eliminazione turni.
 - **duration_picker_dismissed**: quando viene ignorata la selezione della durata.
@@ -571,6 +573,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **funSelectItem**: immagine Giphy selezionata. Dati di successo relativi alla funzionalità di allegato Giphy in Teams.
 - **galleryImage**: immagine caricata - galleria.
 - **get_directions_clicked**: viene selezionato il pulsante **Ottieni indicazioni**.
+- **giphyUserDisabled**: l'utente sceglie di rifiutare i termini e/o le condizioni di Giphy.
+- **giphyUserDisabled**: l'utente sceglie di accettare i termini e/o le condizioni di Giphy.
 - **goToNotificationSettings**: andare alla pagina delle impostazioni di notifica dalla finestra di dialogo **Abbiamo aggiornato le impostazioni di notifica**.
 - **GPSPromptClicked**: viene selezionata l'opzione **Consenti** o **Non consentire** in una richiesta del sistema operativo, consentendo o meno la funzione GPS.
 - **group_map_closed**: un utente apre una visualizzazione mappa da una chat.
@@ -617,6 +621,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **labelSelected**: conferma che un’etichetta è stata selezionata.
 - **labelUnselected**: conferma che un’etichetta è stata deselezionata.
 - **launchLinksGallery**: quando un utente accede alla raccolta collegamenti nel dashboard.
+- **launchSlideshow**: l'utente avvia il visualizzatore di immagini a schermo intero della presentazione da una delle tre possibili posizioni delle funzionalità dell'app. 
 - **Sorgente di avvio come diretta, collegamento, appShortcut**: si avvia direttamente o tramite collegamento (registrando la telemetria Mobile Application Management (MAM) o Gestione dispositivi mobili (MDM) all'avvio dell'app per raccogliere dati per gli utenti attivi).
 - **leaveChat**: conferma che si esce dalla chat.
 - **legacyChatLink**: viene selezionato un collegamento a una chat legacy.
@@ -656,7 +661,9 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **location_sharing_start**: un utente interrompe la condivisione della posizione live in una chat.
 - **loginFailed**: l’utente non ha potuto eseguire l'accesso.
 - **loginSuccess**: l’utente ha potuto eseguire l'accesso.
+- **logoutVault**: l'utente si disconnette dall'app e a sua volta si disconnette dalla Cassaforte. 
 - **manageBlockedNumbers**: accedere a numeri bloccati tramite impostazioni.
+- **manageVaultKey**: l'utente modifica la scelta per la gestione delle chiavi della Cassaforte (MSA e rilevamento automatico).
 - **manualSendMessage** - viene inviato un messaggio manualmente.
 - **mapAppPicker**: quando un utente seleziona l'app di mapping da usare quando tocca una scheda di percorso.
 - **markAsRead**: segnare come già letto.
@@ -708,6 +715,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **meetingUserFreemium**: un utente freemium si è unito alla riunione.
 - **meetingUserGuest**: un utente guest si è unito alla riunione.
 - **meetingUserTenant**: un utente interno al tenant si è unito alla riunione.
+- **memeGenerated**: quando viene generato un meme dato l'input dell'utente di dati di immagine e di testo. 
 - **messageCopyMessage**: copiare messaggio.
 - **messageDelete**: eliminare messaggio.
 - **messageEditMessage**: modificare messaggio.
@@ -940,6 +948,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **requestToJoinTeam**: richiesta di unirsi al team (pubblico o privato).
 - **requestToJoinTeamError**: errore con la richiesta di partecipazione.
 - **requestTypeClicked**: determinare il tipo di richiesta che le persone scelgono nella selezione richieste.
+- **resetLocalVault**: l'utente reimposta e cancella tutti i dati della Cassaforte dal dispositivo.
 - **resolveIssue** - **Resolvi** viene selezionato nel riquadro a comparsa di risoluzione dei problemi di notifica per passare all'app di blocco.
 - **responseClicked**: un utente seleziona una pagina di risposta.
 - **retryButtonClicked**: viene selezionato il pulsante **Riprova**.
@@ -1003,6 +1012,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **Setting/Dismiss**: impostazione dei contatti del dispositivo.
 - **settingsNavReadReceiptNotice**: l'utente è passato alle impostazioni dall'avviso di funzionalità.
 - **settingsOpened**: questa operazione viene attivata quando il fuso orario del dispositivo dell'utente non corrisponde al fuso orario del team e quindi l'utente passa a impostazioni.
+- **setupPinVault**: l'utente salva un pin della Cassaforte per il proprio account. 
 - **shareFile**: viene attivata quando viene selezionato **Condividi file**. Inoltre, consente di verificare se:
   - l'utente è stato in grado di avviare l'operazione di condivisione dei file.
   - l'utente può condividere il file correttamente.
