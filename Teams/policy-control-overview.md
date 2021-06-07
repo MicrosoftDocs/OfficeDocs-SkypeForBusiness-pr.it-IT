@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b4e87103a5325e231bb07ca56ee5c14b8f48294a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1a4b0dcc52b5c497d594a26fda09f3f48b1c563a
+ms.sourcegitcommit: 17d0108fb4d36a3f56144460683f53d77a8a0a7f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117784"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "52777903"
 ---
 # <a name="policy-control-overview-for-microsoft-teams"></a>Panoramica sui controlli dei criteri di Microsoft Teams
 
@@ -35,7 +35,7 @@ Questo articolo ha lo scopo di fornire informazioni sui controlli per la privacy
 Nell'ambito di queste modifiche, nell'interfaccia utente vengono introdotti nuovi elementi e nuove impostazioni dei criteri.
 
 > [!IMPORTANT]
-> Per altre informazioni, vedere la sezione della [Panoramica sui controlli dei criteri](/deployoffice/privacy/overview-privacy-controls) relativa a M365.
+> Per altre informazioni, vedere la sezione della [Panoramica sui controlli dei criteri](/deployoffice/privacy/overview-privacy-controls) relativa a Microsoft 365.
 
 ## <a name="diagnostic-data-sent-from-microsoft-365-apps-for-enterprise-to-microsoft"></a>Dati di diagnostica inviati da Microsoft 365 Apps for enterprise a Microsoft
 
@@ -59,9 +59,10 @@ I client seguenti sono sottoposti ai controlli diagnostici e inviano dati:
 - Android
 - Desktop (solo il componente che usa l'API win32)
 
-Per i dati diagnostica per dispositivi mobili necessari, vedere [Controlli dei criteri dei dati di diagnostica per dispositivi mobili](policy-control-diagnostic-data-mobile.md).
+Per visualizzare un elenco degli eventi dei dati di diagnostica obbligatori necessari e delle relative proprietà, vedere gli articoli seguenti:
 
-Per i dati diagnostica desktop necessari, vedere [Controlli dei criteri dei dati di diagnostica desktop](policy-control-diagnostic-data-desktop.md).
+- [Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams](policy-control-diagnostic-data-mobile.md)
+- [Dati di diagnostica necessari per la versione desktop di Microsoft Teams](policy-control-diagnostic-data-desktop.md)
 
 ## <a name="diagnostic-data-sent-from-the-teams-app-to-microsoft"></a>Dati di diagnostica inviati da Teams a Microsoft
 
@@ -77,21 +78,22 @@ I dati di diagnostici necessari possono includere, ad esempio, informazioni sull
 
 Se si sceglie di inviare i dati di diagnostica facoltativi, saranno inclusi anche i dati indispensabili.
 
-Come amministratori della propria organizzazione, sarà possibile utilizzare un'impostazione di criterio per scegliere il livello di dati di diagnostica da inviare a Microsoft. I dati di diagnostica facoltativi verranno inviati a Microsoft se non si modificano le impostazioni. I dati di diagnostica facoltativi consentono al team di progettazione di Office a Microsoft di rilevare, diagnosticare e ridurre in modo più efficiente i problemi e attenuare il loro impatto sulla propria organizzazione.
+Come amministratori della propria organizzazione, sarà possibile utilizzare un'impostazione di criterio per scegliere il livello di dati di diagnostica da inviare a Microsoft. I dati di diagnostica facoltativi verranno inviati a Microsoft se non si modificano le impostazioni. I dati di diagnostica facoltativi consentono al team di progettazione di Office a Microsoft di rilevare, diagnosticare e ridurre in modo più efficiente i problemi e attenuare il loro impatto sulla propria organizzazione. 
+
+Per scegliere il livello di dati di diagnostica che ci viene inviato, utilizzare il [servizio criteri cloud di Office](/deployoffice/overview-office-cloud-policy-service) e configurare l'impostazione dei criteri *Configura il livello dei dati di diagnostica del software client inviati da Office a Microsoft*. Si tratta della stessa impostazione dei criteri usata per configurare il livello di dati di diagnostica inviato da altre app di Office (ad esempio Word, Excel e PowerPoint) che sono incluse tra le app di Microsoft 365 Apps for enterprise.
 
 I propri utenti non saranno in grado di modificare il livello di dati di diagnostica per i dispositivi, se si trovano connessi a Teams con le credenziali dell'organizzazione, a volte definita azienda o istituto di istruzione.
 
 Tali dati diagnostici non includono i nomi degli utenti, il proprio indirizzo di posta elettronica o il contenuto dei file di Office. Il sistema crea un ID univoco che si associa ai dati di diagnostica degli utenti. Alla ricezione di dati di diagnostica che mostrano l’arresto anomalo di Teams per 100 volte, questo ID univoco consente di determinare se si tratta di un singolo utente che ha subito l’arresto anomalo dell’app per 100 ore o se si tratta di 100 utenti diversi che hanno subito l’arresto anomalo dell’app una sola volta. Microsoft non usa l'ID univoco per identificare un utente specifico.
 
+Per visualizzare i dati di diagnostica inviati a Microsoft, è possibile usare il visualizzatore dati di diagnostica che può essere scaricato e installato da Microsoft Store. Per altre informazioni, vedere [Uso di Visualizzatore dati di diagnostica con Office](https://support.microsoft.com/topic/cf761ce9-d805-4c60-a339-4e07f3182855).
+
+> [!NOTE]
+> Il supporto per il Visualizzatore dati di diagnostica è disponibile per Teams nei dispositivi che eseguono Android. Il supporto per Teams nei dispositivi che eseguono Windows, macOS o iOS è in fase di sviluppo.
+
 ## <a name="required-service-data-for-connected-experiences"></a>Dati di servizio obbligatori per le esperienze connesse
 
-I dati di servizio obbligatori sono dati che consentono di fornire queste esperienze connesse basate sul cloud garantendo che siano sicure e correttamente funzionanti. I dati di servizio obbligatori comprendono tre tipi di informazioni.
-
-- **Contenuto dei clienti**, ovvero contenuto creato con Office dagli utenti, ad esempio il testo digitato in un documento di Word.
-- **Dati funzionali**, che includono le informazioni necessarie alle esperienze connesse per eseguire le attività, ad esempio informazioni di configurazione dell'app.
-- **Dati di diagnostica del servizio**, ovvero i dati necessari per mantenere il servizio sicuro, aggiornato e garantire le prestazioni ottimali previste. Poiché questi dati sono strettamente correlati all'esperienza connessa, sono separati dai livelli di dati di diagnostica indispensabili o facoltativi.
-
-È possibile scegliere di non offrire questa funzionalità agli utenti. In questo caso, le informazioni non saranno fornite a Microsoft per supportare la funzionalità delle esperienze connesse. Sono disponibili altre informazioni sui [dati di servizio necessari](/deployoffice/privacy/required-service-data).
+I dati di servizio obbligatori sono dati che consentono di fornire queste esperienze connesse basate sul cloud garantendo che siano sicure e correttamente funzionanti. È possibile scegliere di non offrire questa funzionalità agli utenti. In questo caso, le informazioni non saranno fornite a Microsoft per supportare la funzionalità delle esperienze connesse. Sono disponibili altre informazioni sui [dati di servizio necessari](/deployoffice/privacy/required-service-data).
 
 ## <a name="essential-services-for-microsoft-teams"></a>Servizi essenziali per Microsoft Teams
 
