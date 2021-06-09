@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: 10b87a804523758df69a68ff9c5812a6ea5b448c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a23c54003f700b3d6dc3e0c45cbbc9ee42a311ed
+ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117794"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796840"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -54,7 +54,7 @@ Ecco un elenco delle aree dei criteri principali disponibili in Microsoft Teams.
 
 ### <a name="where-to-find-microsoft-teams-policies"></a>Dove trovare i criteri di Microsoft Teams
 
-Dopo aver eseguito l'accesso all'interfaccia di amministrazione di Teams, sarà possibile accedere alle impostazioni dei criteri per qualsiasi area di Teams che è necessario gestire facendo clic sull'opzione dei criteri nel riquadro di spostamento sinistro. Lo screenshot che segue mostra la posizione dei criteri di messaggistica.
+Dopo aver eseguito l'accesso all'interfaccia di amministrazione di Teams, sarà possibile accedere alle impostazioni dei criteri per qualsiasi area di Teams che è necessario gestire, facendo clic sull'opzione dei criteri nel riquadro di spostamento sinistro. Lo screenshot che segue mostra la posizione dei criteri di messaggistica.
 
 :::image type="content" source="media/edu-messaging-policies.png" alt-text="Posizione dei criteri di messaggistica nell'interfaccia di amministrazione di Teams.":::
 
@@ -170,6 +170,9 @@ Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessa
 ### <a name="assign"></a>Assegnare
 
 Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un criterio e successivamente gli si assegna un criterio diverso, avrà priorità l'assegnazione più recente.
+
+> [!NOTE]
+> Ogni utente richiederà il componente aggiuntivo Comunicazioni avanzate per ricevere un'assegnazione del pacchetto di criteri personalizzata. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
 
 #### <a name="assign-a-policy-package-to-one-or-several-users"></a>Assegnare un pacchetto di criteri a uno o più utenti
 
