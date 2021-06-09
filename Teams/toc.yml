@@ -832,7 +832,7 @@ items:
               - name: Modificare la lingua predefinita per la segreteria telefonica
                 href: change-the-default-language-for-greetings-and-emails.md
               - name: Lingue per messaggi e messaggi di saluto della segreteria telefonica
-                href: languages-for-voicemail-greetings-and-messages.md
+                href: languages-for-voicemail-greetings-and-messages-teams.md
           - name: ID chiamante
             items:
               - name: Come usare l'ID chiamante nell'organizzazione
