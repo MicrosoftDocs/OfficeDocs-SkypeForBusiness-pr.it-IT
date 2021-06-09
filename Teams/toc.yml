@@ -481,8 +481,6 @@ items:
         href: teams-policies.md
       - name: Configurare la moderazione dei canali in Teams
         href: manage-channel-moderation-in-teams.md
-      - name: Condividere file in Teams
-        href: sharing-files-in-teams.md
       - name: Integrazione della posta elettronica di Outlook e Teams
         href: teams-outlook-email-integration.md
       - name: Condividere in Teams da Outlook
@@ -832,7 +830,7 @@ items:
               - name: Modificare la lingua predefinita per la segreteria telefonica
                 href: change-the-default-language-for-greetings-and-emails.md
               - name: Lingue per messaggi e messaggi di saluto della segreteria telefonica
-                href: languages-for-voicemail-greetings-and-messages-teams.md
+                href: languages-for-voicemail-greetings-and-messages.md
           - name: ID chiamante
             items:
               - name: Come usare l'ID chiamante nell'organizzazione
