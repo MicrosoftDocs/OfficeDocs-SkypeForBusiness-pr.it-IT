@@ -827,6 +827,8 @@ items:
             items:
               - name: Configurare Cloud Voicemail
                 href: set-up-phone-system-voicemail.md
+              - name: Gestire i criteri per la segreteria telefonica
+                href: manage-voicemail-policies.md
               - name: Modificare la lingua predefinita per la segreteria telefonica
                 href: change-the-default-language-for-greetings-and-emails.md
               - name: Lingue per messaggi e messaggi di saluto della segreteria telefonica
