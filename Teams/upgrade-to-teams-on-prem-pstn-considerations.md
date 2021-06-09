@@ -1,7 +1,7 @@
 ---
 title: Considerazioni su PSTN durante l'aggiornamento a Teams da Skype for Business
-author: msdmaguire
-ms.author: dmaguire
+author: dstrome
+ms.author: dstrome
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1d2a33b408ffbb4154ce6e872ae9e1e9bb48dd67
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: f4024e62c90ef99f3280d5aec15cd718b3d2b6de
+ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240506"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796820"
 ---
 # <a name="pstn-considerations-for-upgrading-to-teams-from-skype-for-business-on-premises"></a>Considerazioni su PSTN per l'aggiornamento a Teams da Skype for Business locale
 
@@ -38,7 +38,9 @@ Gli articoli seguenti descrivono inoltre i concetti importanti per l'aggiornamen
 
 
  > [!NOTE]
- > - L'Sistema telefonico con Teams è supportato solo quando l'utente è in modalità TeamsOnly.  Se l'utente è in modalità Isole, Sistema telefonico è supportato solo con Skype for Business. 
+ > - L'Sistema telefonico con Teams è supportato solo quando all'account dell'utente viene assegnato un criterio Teams di aggiornamento con Teams modalità Solo utenti.  
+ > - L'Sistema telefonico con Skype for Business è supportato solo quando all'account dell'utente viene assegnato un criterio Teams di aggiornamento con la modalità SfB. 
+ > - Sistema telefonico non è supportato quando all'account dell'utente viene assegnato un Teams di aggiornamento con la modalità Isole.
  > - Le impostazioni di inoltro di chiamata, gruppo di chiamate del team e delega Skype for Business non vengono migrate e dovranno essere ricreate per Teams.
  > - Per una panoramica generale delle Microsoft Teams vocali cloud e per decidere quale soluzione vocale Microsoft è più giusta per l'organizzazione, vedere Pianificare la Teams [vocale.](cloud-voice-landing-page.md)
 

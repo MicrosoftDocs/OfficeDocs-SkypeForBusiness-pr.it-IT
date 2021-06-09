@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c92f4d0bf3e72f79687fa151567052934b49ba55
-ms.sourcegitcommit: a628b22c9a0ef3bcd7dee3f308a79b4c427872cc
+ms.openlocfilehash: f204869bf068350bdc49801654f84856f32a44a0
+ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "52491793"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796630"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -153,7 +153,6 @@ Poiché i video sono esattamente come qualsiasi altro file in OneDrive for Busin
 
 > [!NOTE]
 > Non si riceverà un messaggio di posta elettronica al termine del salvataggio della registrazione, ma la registrazione verrà visualizzata nella chat della riunione al termine. Questa operazione si verifica molto più velocemente di quanto non accadesse in Stream in precedenza.
-> È possibile controllare con chi si condivide la registrazione, ma non è possibile impedire agli utenti con accesso condiviso di scaricare la registrazione.  
 
 **Come si gestiscono le didascalie?**
 

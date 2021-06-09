@@ -18,28 +18,31 @@ description: Informazioni sui diversi modi per assegnare pacchetti di criteri a 
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: 0266cb5c34a13df0dac62be2258134e553a357d8
-ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
+ms.openlocfilehash: e70d5e2bf0db6cb7dfd93e35a8207fce61fa75fd
+ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574318"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796830"
 ---
 # <a name="assign-policy-packages-to-users-and-groups"></a>Assegnare pacchetti di criteri a utenti e gruppi
 
-Questo articolo illustra i diversi modi per assegnare pacchetti di criteri a utenti e gruppi in Microsoft Teams. Prima di leggere, assicurarsi di aver letto [Assegnare criteri in Teams - Guida introduttiva.](policy-assignment-overview.md)
+Questo articolo illustra i diversi modi per assegnare pacchetti di criteri a utenti e gruppi in Microsoft Teams. Prima di leggere, assicurarsi di aver letto [Assegnare criteri in Teams - Guida introduttiva](policy-assignment-overview.md).
+
+> [!NOTE]
+> Ogni utente richiederà il componente aggiuntivo Advanced Communications per ricevere un'assegnazione di pacchetti di criteri personalizzati. Per altre informazioni, vedere [Componente aggiuntivo Comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
 
 ## <a name="assign-a-policy-package-to-users"></a>Assegnare un pacchetto di criteri agli utenti
 
-Un pacchetto di criteri in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli uguali o simili nell'organizzazione. Ogni pacchetto di criteri è progettato in base a un ruolo utente e include criteri predefiniti e impostazioni dei criteri che supportano le attività tipiche del ruolo. Alcuni esempi di pacchetti di criteri sono il pacchetto Education (Teacher) e il pacchetto Healthcare (Clinical Worker). Per altre informazioni, vedere [Gestire i pacchetti di criteri in Teams.](manage-policy-packages.md)
+Un pacchetto di criteri in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli uguali o simili nell'organizzazione. Ogni pacchetto di criteri è progettato in base a un ruolo utente e include criteri predefiniti e impostazioni dei criteri che supportano le attività tipiche del ruolo. Alcuni esempi di pacchetti di criteri sono il pacchetto Education (Teacher) e il pacchetto Healthcare (Clinical Worker). Per altre informazioni, vedere [Gestire i pacchetti di criteri in Teams](manage-policy-packages.md).
 
 ### <a name="assign-a-policy-package-to-one-user"></a>Assegnare un pacchetto di criteri a un utente
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti** e quindi selezionare l'utente.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Utenti** e quindi selezionare l'utente.
 2. Nella pagina dell'utente selezionare **Criteri** e quindi accanto a Pacchetto **criteri** selezionare **Modifica.**
 3. Nel riquadro **Assegna pacchetto di** criteri selezionare il pacchetto da assegnare e quindi scegliere **Salva**.
 
-![Screenshot dell'interfaccia di amministrazione di Teams per l'assegnazione di pacchetti di criteri a un utente](media/assign-policypackages-user.png)
+![Teams screenshot dell'interfaccia di amministrazione per l'assegnazione di pacchetti di criteri a un utente](media/assign-policypackages-user.png)
 
 ### <a name="assign-a-policy-package-to-multiple-users"></a>Assegnare un pacchetto di criteri a più utenti
 
@@ -48,7 +51,7 @@ Un pacchetto di criteri in Teams è una raccolta di criteri e impostazioni dei c
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 4. Dopo aver aggiunto gli utenti, selezionare **Salva.**
 
-![Screenshot dell'interfaccia di amministrazione di Teams per l'assegnazione di pacchetti di criteri a più utenti](media/assign-policypackages-multipleusers.png)
+![Teams screenshot dell'interfaccia di amministrazione per l'assegnazione di pacchetti di criteri a più utenti](media/assign-policypackages-multipleusers.png)
 
 ## <a name="assign-a-policy-package-to-a-group"></a>Assegnare un pacchetto di criteri a un gruppo
 
@@ -83,9 +86,9 @@ Quando si assegna il pacchetto di criteri, questo viene immediatamente assegnato
 
 ### <a name="work-with-powershell"></a>Usare PowerShell
 
-#### <a name="get-the-teams-powershell-module"></a>Ottenere il modulo di PowerShell di Teams
+#### <a name="get-the-teams-powershell-module"></a>Ottenere il modulo Teams PowerShell
 
-Per istruzioni dettagliate, vedere Installare [PowerShell di Teams.](teams-powershell-install.md)
+Per istruzioni dettagliate, vedere Installare [Teams PowerShell.](teams-powershell-install.md)
 
 #### <a name="assign-a-policy-package-to-a-group-of-users"></a>Assegnare un pacchetto di criteri a un gruppo di utenti
 
@@ -105,9 +108,9 @@ Specificare gli utenti in base all'ID oggetto o all'indirizzo SIP (Session Initi
 
 Un batch contiene fino a 5.000 utenti. Per risultati ottimali, non inviare più di pochi batch alla volta. Consentire ai batch di completare l'elaborazione prima di inviare altri batch.
 
-### <a name="use-the-teams-powershell-module"></a>Usare il modulo di PowerShell di Teams
+### <a name="use-the-teams-powershell-module"></a>Usare il modulo Teams PowerShell
 
-Eseguire le operazioni seguenti per installare il [modulo di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) di Microsoft Teams (se non è già stato fatto). Assicurarsi di installare la versione 1.0.5 o successiva.
+Eseguire le operazioni seguenti per installare [il Microsoft Teams di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) (se non è già stato fatto). Assicurarsi di installare la versione 1.0.5 o successiva.
 
 ```powershell
 Install-Module -Name MicrosoftTeams
@@ -149,5 +152,5 @@ Per altre informazioni, vedere [Get-CsBatchPolicyAssignmentOperation](https://do
 
 - [Gestire Teams con i criteri](manage-teams-with-policies.md)
 - [Gestire i pacchetti di criteri in Microsoft Teams](manage-policy-packages.md)
-- [Panoramica di Teams PowerShell](teams-powershell-overview.md)
+- [Teams Panoramica di PowerShell](teams-powershell-overview.md)
 - [Assegnare criteri in Teams - Guida introduttiva](policy-assignment-overview.md)

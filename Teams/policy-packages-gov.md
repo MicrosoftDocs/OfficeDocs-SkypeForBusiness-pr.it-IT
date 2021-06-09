@@ -1,5 +1,5 @@
 ---
-title: Pacchetti di criteri di Teams per enti pubblici
+title: Teams di criteri per enti pubblici
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -16,18 +16,18 @@ f1.keywords: ''
 ms.custom: ''
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione governativa.
-ms.openlocfilehash: 891d8762a914a003e3707d8f5eab29b3d8d916c9
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Informazioni su come usare e gestire i Teams dei criteri per l'organizzazione governativa.
+ms.openlocfilehash: 41ae937323b37948c03128efd565f40c02bbd6a2
+ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117774"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796870"
 ---
-# <a name="teams-policy-packages-for-government"></a>Pacchetti di criteri di Teams per enti pubblici
+# <a name="teams-policy-packages-for-government"></a>Teams di criteri per enti pubblici
 
 > [!NOTE]
-> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni di Microsoft 365 Government GCC High o DoD.
+> I pacchetti di criteri non sono attualmente disponibili nelle distribuzioni Microsoft 365 Government GCC High o DoD.
 
 ## <a name="overview"></a>Panoramica
 
@@ -73,6 +73,9 @@ Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessa
 
 Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un criterio e successivamente gli si assegna un criterio diverso, avrà priorità l'assegnazione più recente.
 
+> [!NOTE]
+> Ogni utente richiederà il componente aggiuntivo Advanced Communications per ricevere un'assegnazione di pacchetti di criteri personalizzati. Per altre informazioni, vedere [Componente aggiuntivo Comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
+
 #### <a name="assign-a-policy-package-to-one-or-several-users"></a>Assegnare un pacchetto di criteri a uno o più utenti
 
 Per assegnare un pacchetto di criteri a uno o più utenti, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Pacchetti di criteri** e quindi selezionare **Gestisci utenti**.  
@@ -101,4 +104,4 @@ Un batch può contenere fino a 5.000 utenti. È possibile specificare gli utenti
 
 [Gestire i pacchetti di criteri in Teams](manage-policy-packages.md)
 
-[Assegnare i criteri agli utenti in Teams](assign-policies.md)
+[Assegnare pacchetti di criteri a utenti e gruppi](assign-policy-packages.md)

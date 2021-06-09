@@ -18,12 +18,12 @@ description: Scopri come configurare i Piani per chiamate Microsoft e la funzion
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8de3dcbff637a80b871b0f758c8afcd6c7432212
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: 46e9e206e82fdc535f115ab276e9cb67ba58d959
+ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52718017"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796790"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -110,7 +110,7 @@ Le impostazioni di rete vengono usate per determinare la posizione di un client 
 Le impostazioni di rete includono siti che includono una raccolta di subnet e vengono usate esclusivamente per l'assegnazione dinamica dei criteri agli utenti. Ad esempio, un criterio per le chiamate di emergenza e un criterio di routing delle chiamate di emergenza potrebbero essere assegnati al "sito Redmond" in modo che qualsiasi utente che effettua il roaming da casa o da un'altra località Microsoft sia configurato con numeri di emergenza, routing e desk di sicurezza specifici per Redmond.  
 
 >[!Note]
->Le subnet possono anche essere definite in LIS e possono essere associate a una posizione di emergenza.  
+>Le subnet possono anche essere definite in LIS e possono essere associate a una posizione di emergenza.  Le subnet LIS devono essere definite dall'ID di rete corrispondente all'intervallo IP subnet assegnato ai client. Ad esempio, l'ID di rete per un IP/mask client di 10.10.10.150/25 è **10.10.10.128.** Per altre informazioni, vedere [Informazioni di base sull'indirizzamento TCP/IP e la subnetting.](https://docs.microsoft.com/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting)
 
 Tenere presenti le definizioni seguenti. Per altre informazioni, vedere [Impostazioni di rete per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 

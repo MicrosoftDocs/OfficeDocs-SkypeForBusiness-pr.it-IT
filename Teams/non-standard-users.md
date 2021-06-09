@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 50ab15d188f2f8a198f59446a0bd5fd8015d0c74
-ms.sourcegitcommit: 592e5a0638c7739dfaa3565b67d4edc621eebc9f
+ms.openlocfilehash: d7b79371cdc8ff5109bf67b1c78639106a83a95e
+ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52656029"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "52796649"
 ---
 # <a name="microsoft-teams-apps-behavior-for-non-standard-users"></a>Microsoft Teams delle app per gli utenti non standard
 
@@ -63,13 +63,13 @@ I bot possono inviare messaggi proattivi agli utenti guest, ma gli utenti guest 
 
 ### <a name="install-update-and-delete-for-external-users"></a>Installare, aggiornare ed eliminare utenti esterni
 
-Gli utenti esterni non possono installare, aggiornare o eliminare app in qualsiasi contesto, ad esempio una riunione, una chat, un canale o una chat personale. Non hanno accesso all'app store Teams.
+Gli utenti esterni non possono installare, aggiornare o eliminare app in qualsiasi contesto, ad esempio una riunione, una chat, un canale o una chat personale. Non hanno accesso all'app store Teams dell'organizzazione di hosting.
 
 ### <a name="usage-behavior-and-policy-for-external-users"></a>Comportamento di utilizzo e criteri per gli utenti esterni
 
-- Gli utenti di altre organizzazioni aderiscono ai criteri di autorizzazione utente predefiniti dell'organizzazione di hosting e alle impostazioni a livello di organizzazione.
-- Gli utenti dell'organizzazione di hosting possono aggiungere app nelle chat delle riunioni con persone di altre organizzazioni. Le persone di altre organizzazioni non possono aggiungere app nelle chat delle riunioni, ma possono interagire con bot e schede una volta aggiunte alla chat.
-- Dopo l'installazione di un bot in una chat, può comunicare in modo proattivo con persone di altre organizzazioni nella chat e queste persone possono comunicare con il bot.
+- Gli utenti di altre organizzazioni aderiscono ai criteri globali dell'organizzazione ospitata (impostazione predefinita a livello di organizzazione)
+- Gli utenti dell'organizzazione di hosting possono aggiungere app nelle chat delle riunioni con persone di altre organizzazioni. Le persone di altre organizzazioni non possono aggiungere app nelle chat delle riunioni, ma possono interagire con bot, schede ed estensioni dei messaggi una volta aggiunte alla chat.
+- Dopo aver installato un bot in una chat di riunione, può comunicare in modo proattivo con persone di altre organizzazioni nella chat e queste persone possono comunicare con il bot.
 - Vengono applicati i criteri dati dell'organizzazione di hosting, nonché le procedure di condivisione dei dati di qualsiasi app di terze parti condivise dall'organizzazione dell'utente.
 
 ## <a name="anonymous-users"></a>Utenti anonimi
