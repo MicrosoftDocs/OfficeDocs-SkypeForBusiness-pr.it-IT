@@ -57,18 +57,18 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
    
 ## <a name="calling-plans"></a>Piani di chiamata
 > [!IMPORTANT]
-> Disponibile solo tramite SoftBank per i tenant giapponesi. Per altre informazioni, vedere [Chiamate SoftBank per Office 365](https://aka.ms/SoftBankVoicePlan).
+> Disponibile solo tramite SoftBank per i tenant giapponesi. Per altre informazioni, vedere [Chiamate SoftBank per Office 365](https://aka.ms/SoftBankVoicePlan)).
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, vedere [Chiamate SoftBank per Office 365.](https://aka.ms/SoftBankVoicePlan)  <br/> |
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì, vedere [Chiamate SoftBank per Office 365](https://aka.ms/SoftBankVoicePlan).  <br/> |
 |Minuti disponibili per i Piani per chiamate  <br/> |Vedere [Chiamate SoftBank per Office 365](https://aka.ms/SoftBankVoicePlan). <br/> |
 |Chiamate in uscita possibili verso...?  <br/> |Vedere [Chiamate SoftBank per Office 365](https://aka.ms/SoftBankVoicePlan). <br/> |
 
 > [!IMPORTANT]
 > Per eliminare i numeri degli utenti (abbonati) in Giappone (forniti da SoftBank), contatta direttamente SoftBank.
 > Per aggiornare le informazioni sull'indirizzo di emergenza per i numeri degli utenti (abbonati) in Giappone (forniti da SoftBank), contattare direttamente SoftBank.
-> Per altre informazioni, vedere [Chiamate SoftBank per Office 365.](https://aka.ms/SoftBankVoicePlan)
+> Per altre informazioni, vedere [Chiamate SoftBank per Office 365](https://aka.ms/SoftBankVoicePlan).
 
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

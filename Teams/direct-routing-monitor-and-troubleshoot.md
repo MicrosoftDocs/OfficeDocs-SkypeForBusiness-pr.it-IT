@@ -79,7 +79,7 @@ Per monitorare la configurazione, è possibile usare gli strumenti seguenti:
 
 Il servizio Di routing diretto ha codici di errore molto descrittivi riportati nei log di Call Analytics o SBC. 
 
-Il dashboard qualità chiamata fornisce informazioni sulla qualità e l'affidabilità delle chiamate. Per altre informazioni su come risolvere i problemi relativi all'uso di Call Analytics, vedere Attivare e usare call quality dashboard per Microsoft Teams e [Skype for Business online](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard) e Usare Call Analytics per risolvere i problemi di scarsa qualità delle [chiamate.](/SkypeForBusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) 
+Il dashboard qualità chiamata fornisce informazioni sulla qualità e l'affidabilità delle chiamate. Per altre informazioni su come risolvere i problemi con Call Analytics, vedere Attivare e usare Call [Quality Dashboard](/SkypeForBusiness/using-call-quality-in-your-organization/turning-on-and-using-call-quality-dashboard) per Microsoft Teams e Skype for Business Online e Usare Call Analytics per risolvere i problemi di qualità scarsa delle [chiamate.](/SkypeForBusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) 
 
 In caso di errori di chiamata, Call Analytics fornisce codici SIP standard per facilitare la risoluzione dei problemi. 
 

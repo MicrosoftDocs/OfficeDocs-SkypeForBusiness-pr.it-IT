@@ -7,7 +7,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: anwara
-description: Informazioni sulla conformità delle comunicazioni, parte del set di soluzioni di rischio insider, dal punto di vista di Microsoft Teams (fa parte della funzionalità di conformità alle comunicazioni M365).
+description: Informazioni sulla conformità delle comunicazioni, parte del set di soluzioni di rischio insider, dal punto di vista Microsoft Teams (fa parte della funzionalità di conformità alle comunicazioni M365).
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -27,30 +27,30 @@ ms.locfileid: "51121534"
 
 La conformità alle comunicazioni è una soluzione di rischio insider in Microsoft 365 che consente di ridurre al minimo i rischi di comunicazione consentendo di rilevare, acquisire e agire in base a messaggi inappropriati nell'organizzazione.
 
-Per Microsoft Teams, la conformità alle comunicazioni consente di identificare i seguenti [tipi](/microsoft-365/compliance/communication-compliance-feature-reference) di contenuto inappropriato nei canali di Teams o nelle chat 1:1 e di gruppo:
+Per Microsoft Teams, la conformità alle [](/microsoft-365/compliance/communication-compliance-feature-reference) comunicazioni consente di identificare i seguenti tipi di contenuto inappropriato nei canali Teams o nelle chat 1:1 e di gruppo:
 
 - Linguaggio offensivo, profano e molesto
 - Immagini per adulti, racy e gory
 - Condivisione di informazioni riservate
 
-Per altre informazioni sulla conformità delle comunicazioni e su come configurare i criteri per l'organizzazione, vedere [Conformità alle comunicazioni in Microsoft 365.](/microsoft-365/compliance/communication-compliance)
+Per altre informazioni sulla conformità delle comunicazioni e su come configurare i criteri per l'organizzazione, vedere Conformità alle comunicazioni [in Microsoft 365](/microsoft-365/compliance/communication-compliance).
 
 ## <a name="how-to-use-communication-compliance-in-microsoft-teams"></a>Come usare la conformità alle comunicazioni in Microsoft Teams
 
-La conformità alle comunicazioni e Microsoft Teams sono strettamente integrate e consentono di ridurre al minimo i rischi di comunicazione all'interno dell'organizzazione. Dopo aver configurato i primi criteri di conformità delle comunicazioni, è possibile gestire attivamente i messaggi e il contenuto non appropriati di Microsoft Teams contrassegnati automaticamente negli avvisi.
+La conformità e la Microsoft Teams comunicazioni sono strettamente integrate e consentono di ridurre al minimo i rischi di comunicazione all'interno dell'organizzazione. Dopo aver configurato i primi criteri di conformità per le comunicazioni, è possibile gestire attivamente i messaggi Microsoft Teams e il contenuto inappropriati contrassegnati automaticamente negli avvisi.
 
 ### <a name="getting-started"></a>Introduzione
 
-Per iniziare a usare la [](/microsoft-365/compliance/communication-compliance-plan) conformità alle comunicazioni in Microsoft Teams, si inizia con la pianificazione e la creazione di criteri predefiniti o personalizzati per identificare le attività degli utenti inappropriati nei canali di Teams o nei gruppi 1:1 e. Tenere presente che è necessario configurare [alcune](/microsoft-365/compliance/communication-compliance-configure) autorizzazioni e prerequisiti di base nell'ambito del processo di configurazione.
+Introduzione alla conformità delle comunicazioni in [](/microsoft-365/compliance/communication-compliance-plan) Microsoft Teams inizia con la pianificazione e la creazione di criteri predefiniti o personalizzati per identificare le attività degli utenti inappropriati nei canali Teams o in 1:1 e gruppi. Tenere presente che è necessario configurare [alcune](/microsoft-365/compliance/communication-compliance-configure) autorizzazioni e prerequisiti di base nell'ambito del processo di configurazione.
 
-Gli amministratori di Teams possono configurare i criteri di conformità delle comunicazioni ai livelli seguenti:
+Teams amministratori possono configurare i criteri di conformità delle comunicazioni ai livelli seguenti:
 
-- **Livello utente:** i criteri di questo livello si applicano a un singolo utente di Teams o possono essere applicati a tutti gli utenti di Teams dell'organizzazione. Questi criteri riguardano i messaggi che questi utenti possono inviare in chat 1:1 o di gruppo. Le comunicazioni chat per gli utenti vengono monitorate automaticamente in tutti i Microsoft Teams in cui gli utenti sono membri.
-- **Livello team:** i criteri di questo livello si applicano a un canale Microsoft Team. Questi criteri riguardano solo i messaggi inviati nel canale teams.
+- **Livello utente:** i criteri di questo livello si applicano a un singolo Teams utente o possono essere applicati a tutti Teams utenti dell'organizzazione. Questi criteri riguardano i messaggi che questi utenti possono inviare in chat 1:1 o di gruppo. Le comunicazioni chat per gli utenti vengono monitorate automaticamente in Microsoft Teams in cui gli utenti sono membri.
+- **Teams livello:** i criteri di questo livello si applicano a un canale Microsoft Team. Questi criteri riguardano solo i messaggi inviati nel Teams canale.
 
 ### <a name="act-on-inappropriate-messages-in-microsoft-teams"></a>Agire in base ai messaggi inappropriati in Microsoft Teams
 
-Dopo aver configurato i criteri e aver ricevuto avvisi di conformità alle comunicazioni per i messaggi di Microsoft Teams, è il momento che i revisori della conformità dell'organizzazione eseempano azioni su questi messaggi. I revisori possono aiutare a proteggere l'organizzazione esaminando gli avvisi di conformità alle comunicazioni e rimuovendo i messaggi contrassegnati dalla visualizzazione in Microsoft Teams.
+Dopo aver configurato i criteri e aver ricevuto avvisi di conformità alle comunicazioni per i messaggi Microsoft Teams, è il momento che i revisori della conformità dell'organizzazione eseempano un'azione su questi messaggi. I revisori possono aiutare a proteggere l'organizzazione esaminando gli avvisi di conformità alle comunicazioni e rimuovendo i messaggi contrassegnati dalla visualizzazione Microsoft Teams.
 
 ![Rimuovere un messaggio in Teams](./media/communication-compliance-remove-teams-message.png)
 

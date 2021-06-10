@@ -31,7 +31,7 @@ ms.locfileid: "51617768"
 ---
 # <a name="audio-conferencing-subscription-dial-outcall-me-at-minutes-benefit"></a>Vantaggio minuti per l'abbonamento ai servizi di audioconferenza "Chiamata in uscita"/"Chiamami a"
 
-## <a name="microsoft-teams-and-skype-for-business-pstn-audio-conferencing"></a>Audioconferenza PSTN di Microsoft Teams e Skype for Business
+## <a name="microsoft-teams-and-skype-for-business-pstn-audio-conferencing"></a>Microsoft Teams e Skype for Business audioconferenze PSTN
 
 Ogni abbonamento ai servizi di audioconferenza fornisce 60 minuti per utente al mese che possono essere usati per effettuare chiamate in uscita a numeri non premium in qualsiasi paese dell'area A, come descritto in questo documento. Le dimensioni del pool di minuti di chiamata in uscita del tenant si basano *sulle licenze* acquistate. Questo vantaggio è applicabile alle licenze di abbonamento *mensile* per audioconferenze e non si estende alle licenze di audioconferenza a pagamento al minuto.
 
@@ -76,11 +76,11 @@ Si consideri l'esempio seguente. Un cliente ha acquistato 115 licenze di abbonam
 
 ## <a name="how-can-i-monitor-minute-my-pool-usage"></a>Come è possibile monitorare i minuti di utilizzo del pool?
 
-- È possibile monitorare l'utilizzo rispetto al pool di minuti di chiamata in uscita nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare a **Analisi & report** utilizzo e quindi selezionare Pool di minuti  >   **PSTN.** Zona Un pool di minuti di chiamata in uscita verrà etichettato nel report come "Chiamate in uscita verso paesi della zona A".
+- È possibile monitorare l'utilizzo rispetto al pool di minuti di chiamata in uscita nell'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a **Analisi & report** utilizzo e quindi selezionare Pool di minuti  >   **PSTN.** Zona Un pool di minuti di chiamata in uscita verrà etichettato nel report come "Chiamate in uscita verso paesi della zona A".
 - Le notifiche tramite posta elettronica verranno inviate agli amministratori seguenti quando l'utilizzo del pool di minuti di chiamata in uscita dell'organizzazione ha raggiunto l'80% e il 100%:
 
   - Amministratore fatturazione
-  - Amministratore di Skype for Business
+  - Skype for Business Amministratore
   - Amministratore globale 
   - Amministratore utente
   - Amministratore helpdesk
@@ -93,7 +93,7 @@ Si consideri l'esempio seguente. Un cliente ha acquistato 115 licenze di abbonam
   - Amministratore dell'autenticazione con privilegi
   - Amministratore comunicazioni Teams
   - Tecnico supporto comunicazioni Teams
-  - Specialista del supporto tecnico di Teams Communications
+  - Teams Specialista del supporto per le comunicazioni
   - Amministratore di Teams
 
 Per altre informazioni sui Crediti comunicazioni, vedere [Crediti comunicazioni](what-are-communications-credits.md).

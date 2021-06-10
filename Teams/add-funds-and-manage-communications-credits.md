@@ -29,7 +29,7 @@ ms.custom:
 - O365P_SFBVoiceCredit
 - O365P_SFBVoiceCreditAether
 - Licensing
-description: 'Scopri come pagare i crediti di comunicazione (Consumo PSTN) per i servizi Skype for Business e vedi i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
+description: 'Informazioni su come pagare i crediti di comunicazione (Consumo PSTN) per i servizi Skype for Business e vedere i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
 ms.openlocfilehash: 4730cf33a11adfa3d1527304ef0adecf2d2209cb
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -39,7 +39,7 @@ ms.locfileid: "51121494"
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere fondi e gestire Credito per la comunicazione
 
-I crediti comunicazioni sono un modo pratico per pagare i piani per sistemi telefonici e chiamate in Microsoft 365 o Office 365. I Crediti comunicazioni assicurano che l'utente e gli utenti non vengano mai catturati senza essere in grado di:
+I Crediti comunicazioni sono un modo pratico per pagare i piani Sistema telefonico e per le chiamate in Microsoft 365 o Office 365. I Crediti comunicazioni assicurano che l'utente e gli utenti non vengano mai catturati senza essere in grado di:
   
 - Accedere alle riunioni di audioconferenza usando numeri di telefono con accesso esterno a numero verde.
 
@@ -75,11 +75,11 @@ Per consultare piani e prezzi, consultare uno di questi link:
 
 - [Piani di audioconferenza](https://go.microsoft.com/fwlink/?LinkId=799762 )
 
-- [Piani di Sistema telefonico](https://go.microsoft.com/fwlink/?LinkId=799763)
+- [Sistema telefonico piani](https://go.microsoft.com/fwlink/?LinkId=799763)
 
-È anche possibile visualizzare le informazioni accedendo all'interfaccia di amministrazione di Microsoft 365 e accedendo a **Abbonamenti** di fatturazione  >    >  **Aggiungi abbonamenti.**
+È anche possibile visualizzare le informazioni accedendo all'interfaccia Microsoft 365 di amministrazione e selezionando Abbonamenti fatturazione  >    >  **Aggiungi abbonamenti**.
   
-Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Licenze [per i componenti aggiuntivi di Microsoft Teams.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -87,4 +87,4 @@ Per visualizzare una tabella con la licenza o le licenze necessarie per ogni fun
 
 - [Configurare Cloud Voicemail - Guida per gli amministratori](set-up-phone-system-voicemail.md)
 
-- [Configurare piani per chiamate e](set-up-calling-plans.md) piani per chiamate per Microsoft [365 o Office 365](calling-plans-for-office-365.md)
+- [Configurare piani per chiamate e](set-up-calling-plans.md) piani per chiamate per Microsoft 365 o [Office 365](calling-plans-for-office-365.md)

@@ -32,7 +32,7 @@ Health Dashboard monitora due livelli di informazioni:
 - Integrità generale degli SBC connessi
 - Informazioni dettagliate sugli SBC connessi
 
-È possibile visualizzare il dashboard integrità nell'interfaccia di amministrazione di Microsoft Teams e Skype for Business.
+È possibile visualizzare il dashboard integrità nell'Microsoft Teams e Skype for Business di amministrazione.
 
 ## <a name="overall-health"></a>Integrità generale
 
@@ -98,7 +98,7 @@ La visualizzazione dettagliata mostra i parametri aggiuntivi seguenti:
 
 - **Chiamata simultanea:** mostra il numero di chiamate simultanee gestite da SBC. Queste informazioni sono utili per prevedere il numero di canali simultanei necessari e visualizzare la tendenza. È possibile scorrere i dati in base al numero di giorni e alla direzione della chiamata (in ingresso/uscita/tutti i flussi).
 
-- **Parametri di rete:** tutti i parametri di rete vengono misurati dall'interfaccia Di routing diretto al Session Border Controller. Per informazioni sui valori consigliati, vedere Preparare la rete [dell'organizzazione](./prepare-network.md)per Microsoft Teams e esaminare i valori consigliati da Customer Edge a Microsoft Edge.
+- **Parametri di rete:** tutti i parametri di rete vengono misurati dall'interfaccia Di routing diretto al Session Border Controller. Per informazioni sui valori consigliati, vedere Preparare la rete [dell'organizzazione](./prepare-network.md)per Microsoft Teams e osservare Customer Edge per Microsoft Edge valori consigliati.
 
    - Instabilità: misura in millisecondo della variazione del tempo di ritardo della propagazione della rete calcolata tra due endpoint usando RTCP (RtP Control Protocol).
 

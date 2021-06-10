@@ -12,7 +12,7 @@ ms.reviewer: rafarhi
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni su come abilitare l'applicazione client desktop di Teams con i criteri di controllo dell'applicazione AppLocker.
+description: Informazioni su come abilitare l'Teams client desktop con i criteri di controllo dell'applicazione AppLocker.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
@@ -25,23 +25,23 @@ ms.locfileid: "51120848"
 ---
 # <a name="applocker-application-control-policies-in-microsoft-teams"></a>Criteri di controllo dell'applicazione AppLocker in Microsoft Teams
 
-Questo articolo spiega come abilitare l'app client desktop teams con i criteri di controllo delle applicazioni appLocker. L'uso di AppLocker è progettato per limitare l'esecuzione di programmi e script da parte di utenti non amministrativi. Per altre informazioni e indicazioni su AppLocker, vedere [Che cos'è AppLocker?](/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker).
+Questo articolo spiega come abilitare l'app client desktop Teams con i criteri di controllo dell'applicazione AppLocker. L'uso di AppLocker è progettato per limitare l'esecuzione di programmi e script da parte di utenti non amministrativi. Per altre informazioni e indicazioni su AppLocker, vedere [Che cos'è AppLocker?](/windows/security/threat-protection/windows-defender-application-control/applocker/what-is-applocker).
 
-Il processo per abilitare Teams con AppLocker richiede la creazione di criteri di elenchi consentiti basati su AppLocker. I criteri vengono creati con il software di gestione di Criteri di gruppo e/o l'uso di cmdlet di Windows PowerShell per AppLocker (per altre informazioni, vedere le informazioni di riferimento tecnico su [AppLocker).](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference) I criteri di AppLocker vengono salvati in formato XML e possono essere modificati con qualsiasi editor di testo o XML.
+Il processo per l'abilitazione Teams con AppLocker richiede la creazione di criteri di elenchi consentiti basati su AppLocker. I criteri vengono creati con il software di gestione di Criteri di gruppo e/o l'uso di cmdlet di Windows PowerShell per AppLocker (per altre informazioni, vedere le informazioni di riferimento tecnico su [AppLocker).](/windows/security/threat-protection/windows-defender-application-control/applocker/applocker-technical-reference) I criteri di AppLocker vengono salvati in formato XML e possono essere modificati con qualsiasi editor di testo o XML.
 
-## <a name="teams-allow-list-with-applocker"></a>Elenco di team consentiti con AppLocker
+## <a name="teams-allow-list-with-applocker"></a>Teams elenco consenti con AppLocker
 
 Le regole di AppLocker sono organizzate in raccolte di regole. Le regole di AppLocker si applicano all'app di destinazione e sono i componenti che costituiscono i criteri di AppLocker.  
 
-Per consentire Teams, è consigliabile usare le regole delle condizioni dell'autore [perché](/windows/security/threat-protection/windows-defender-application-control/applocker/understanding-the-publisher-rule-condition-in-applocker) tutti i file dell'app Teams sono firmati digitalmente.
+Per consentire l Teams, è consigliabile [](/windows/security/threat-protection/windows-defender-application-control/applocker/understanding-the-publisher-rule-condition-in-applocker) usare le regole delle condizioni dell'autore perché tutti i Teams dell'app sono firmati digitalmente.
   
-Non è consigliabile usare regole percorso perché la directory di installazione di Teams è scrivibile dall'utente. È anche sconsigliato l'uso di regole hash perché le regole devono essere aggiornate ogni volta che l'app client teams viene aggiornata.
+Non è consigliabile usare regole percorso perché la directory Teams di installazione è scrivibile dall'utente. È anche sconsigliato l'uso di regole hash perché le regole devono essere aggiornate ogni volta che l'app client Teams viene aggiornata.
 
-Poiché i file eseguibili desktop di Teams sono firmati digitalmente, la condizione dell'autore identifica un file dell'app in base alla firma digitale e agli attributi di versione incorporati. La firma digitale contiene informazioni sulla società che ha creato il file dell'app (l'autore). Le informazioni sulla versione, ottenute dalla risorsa binaria, includono il nome del prodotto di cui fa parte il file e il numero di versione del file dell'applicazione.
+Poiché Teams file eseguibili desktop sono firmati digitalmente, la condizione dell'autore identifica un file dell'app in base alla firma digitale e agli attributi di versione incorporati. La firma digitale contiene informazioni sulla società che ha creato il file dell'app (l'autore). Le informazioni sulla versione, ottenute dalla risorsa binaria, includono il nome del prodotto di cui fa parte il file e il numero di versione del file dell'applicazione.
 
 ### <a name="example-of-publisher-condition-rules"></a>Esempio di regole delle condizioni dell'autore
 
-Per l'app client Teams (tutti i file, tutte le versioni) aggiungere quanto segue alle regole eseguibili & DLL:
+Per l Teams app client (tutti i file, tutte le versioni) aggiungere quanto segue alle regole eseguibili & DLL:
 
 ```console
 Publisher: O=MICROSOFT CORPORATION, L=REDMOND, S=WASHINGTON, C=US

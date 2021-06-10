@@ -1,5 +1,5 @@
 ---
-title: Distribuire Le chat room di Microsoft Teams in Android
+title: Distribuire Microsoft Teams Rooms in Android
 ms.author: mitressl
 author: flinchbot
 manager: serdars
@@ -22,15 +22,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51120798"
 ---
-# <a name="deploy-microsoft-teams-rooms-on-android"></a>Distribuire Le chat room di Microsoft Teams in Android
+# <a name="deploy-microsoft-teams-rooms-on-android"></a>Distribuire Microsoft Teams Rooms in Android
 
-La distribuzione di Microsoft Teams Rooms in Android può essere suddivisa nelle fasi seguenti:
+La distribuzione Microsoft Teams Rooms in Android può essere suddivisa nelle fasi seguenti:
 
 - **Conformità del sito** Verificare che le posizioni di distribuzione (sale) soddisfino i requisiti di distribuzione.
-- **Conformità del servizio** Creare account delle risorse e assegnarli ai dispositivi ( vedere Creare un account delle risorse usando l'interfaccia di amministrazione [di Microsoft 365](resource-account-ui.md)). Anche se è consigliabile usare una licenza di chat room dedicata, un account utente finale con licenza appropriata può anche accedere a Teams Rooms in Android.
-- **Configurazione e distribuzione** Configurare Teams Rooms e collegare i dispositivi periferici necessari (per informazioni dettagliate, vedere la documentazione del produttore).
+- **Conformità del servizio** Creare account delle risorse e assegnarli ai dispositivi ([vedere Creare un account delle risorse usando](resource-account-ui.md)l'interfaccia Microsoft 365 di amministrazione ). Anche se è consigliabile usare una licenza sala dedicata, un account utente finale con licenza appropriata può anche accedere a Teams Rooms su Android.
+- **Configurazione e distribuzione** Configurare Teams Rooms e collegare le periferiche necessarie (vedere la documentazione del produttore per informazioni dettagliate).
 
-Per gestire le chat room di Teams, è necessario essere un amministratore globale, un amministratore del servizio Teams o un amministratore di Teams Device. Per altre informazioni sui ruoli di amministratore, vedere [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams.](../using-admin-roles.md)
+Per gestire Teams Rooms, è necessario essere un amministratore globale, un amministratore Teams Service o un amministratore Teams dispositivo. Per altre informazioni sui ruoli di amministratore, vedere Usare Microsoft Teams [di amministratore per gestire Teams](../using-admin-roles.md).
 
 ## <a name="site-readiness"></a>Conformità del sito
 
@@ -42,14 +42,14 @@ I nostri consigli per i siti delle barre di collaborazione sono:
 - Account delle risorse dedicate
 - Schermi abilitati per il tocco
 - Cablaggio Ethernet
-- Qualità del servizio (QoS) abilitata nella rete per i supporti multimediali di Microsoft Teams
+- Qualità del servizio (QoS) abilitata nella rete per Microsoft Teams multimediali
 
 Per considerazioni sull'installazione fisica, vedere la documentazione del produttore e, se disponibile, sfruttare l'esperienza del team audio-visivo prima di installare e montare gli schermi ed eseguire il cablaggio.
 
 > [!TIP]
-> Assicurarsi di consultare Preparare la rete [per Teams per](../prepare-network.md) la pianificazione della larghezza di banda e valutare l'idoneità della rete per il traffico in tempo reale.
+> Assicurarsi di vedere Preparare la rete [per](../prepare-network.md) la Teams pianificazione della larghezza di banda e valutare l'idoneità della rete per il traffico in tempo reale.
 >
-> Non è consigliabile inserire server proxy tra i dispositivi Teams e Internet. Per altre informazioni sui server proxy e Teams, vedere [Server proxy per Teams](../proxy-servers-for-skype-for-business-online.md).
+> Non è consigliabile inserire server proxy tra Teams e Internet. Per altre informazioni sui server proxy e sui Teams, vedere [Server proxy per](../proxy-servers-for-skype-for-business-online.md)Teams .
 
 |    |     |
 |-----------|------------|
@@ -58,19 +58,19 @@ Per considerazioni sull'installazione fisica, vedere la documentazione del produ
 
 ## <a name="service-readiness"></a>Prontezza del servizio
 
-Prima di distribuire Teams Rooms, è necessario decidere se useranno gli account delle risorse di Microsoft 365, gli account degli utenti finali o una combinazione di entrambi. Gli account delle risorse di Microsoft 365 sono account delle cassette postali e di Teams dedicati a risorse specifiche, ad esempio una sala, un proiettore e così via. Questi account delle risorse possono rispondere automaticamente agli inviti alle riunioni usando le regole definite al momento della creazione. A meno che Teams Rooms non sia dedicato a un utente specifico per l'uso privato, è consigliabile configurare un account delle risorse di Microsoft 365.
+Prima di distribuire Teams Rooms, è necessario decidere se useranno gli account delle risorse Microsoft 365, gli account utente finale o una combinazione di entrambi. Microsoft 365 account delle risorse sono account Teams cassette postali e account dedicati a risorse specifiche, ad esempio una sala, un proiettore e così via. Questi account delle risorse possono rispondere automaticamente agli inviti alle riunioni usando le regole definite al momento della creazione. A Teams Rooms è dedicato a un utente specifico per l'uso privato, è consigliabile configurare un account Microsoft 365 di risorse.
 
 ### <a name="using-a-resource-account"></a>Uso di un account delle risorse
 
-Se si decide di configurare un account delle risorse di Microsoft 365, è necessario acquistare una licenza per la sala riunioni. La licenza sala riunioni include una cassetta postale delle risorse che consente agli utenti dell'organizzazione di prenotare la sala riunioni tramite Outlook o Teams. La licenza consente anche videoconferenze e audioconferenza e condivisione dello schermo tra i partecipanti alla riunione.
+Se si decide di configurare un account Microsoft 365 risorsa, è necessario acquistare una licenza Sala riunioni licenza. La licenza Sala riunioni include una cassetta postale delle risorse che consente agli utenti dell'organizzazione di prenotare la sala riunioni tramite Outlook o Teams. La licenza consente anche videoconferenze e audioconferenza e condivisione dello schermo tra i partecipanti alla riunione.
 
-Se è necessario ricevere o effettuare chiamate da o verso un numero di telefono esterno, potrebbe essere necessario un piano per chiamate o una licenza per il componente aggiuntivo Microsoft 365 Business [Voice.](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md?tabs=small-business) Se il routing diretto è abilitato nell'organizzazione, è necessario solo lo SKU della sala riunioni.
+Se è necessario ricevere o effettuare chiamate da o verso un numero di telefono esterno, potrebbe essere necessario un piano per chiamate o una licenza per il componente aggiuntivo Microsoft 365 Business Voice [chiamata.](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md?tabs=small-business) Se il routing diretto è abilitato nell'organizzazione, è necessario solo lo SKU Sala riunioni.
 
 Quando si crea un account delle risorse, è possibile scegliere se consentire all'account di accettare o rifiutare automaticamente le convocazioni di riunione, consentire riunioni ricorrenti, specificare con quale anticipo gli utenti possono prenotare la risorsa e così via.
 
 [!INCLUDE [m365-teams-resource-account-difference](../includes/m365-teams-resource-account-difference.md)]
 
-Per altre informazioni sugli account delle risorse di Microsoft 365, vedere Creare un account delle risorse con l'interfaccia di amministrazione [di Microsoft 365.](resource-account-ui.md)
+Per altre informazioni sugli account Microsoft 365 risorse, vedere Creare un account delle risorse usando l'interfaccia Microsoft 365 [di amministrazione.](resource-account-ui.md)
 
 |    |     |
 |-----------|------------|
@@ -83,18 +83,18 @@ La pianificazione della configurazione e della distribuzione riguarda le aree ch
 
 - Provisioning dell'account delle risorse
 - Distribuzione di dispositivi
-- Configurazione dell'applicazione Teams Rooms e dei dispositivi periferici
+- Teams Rooms delle applicazioni e dei dispositivi periferici
 -  Test
 - Gestione delle risorse
 
 ### <a name="account-provisioning"></a>Provisioning dell'account
 
-Se si prevede di usare gli account delle risorse di Microsoft 365 per consentire agli utenti di prenotare barre di collaborazione, seguire le istruzioni in Creare un account delle risorse usando l'interfaccia di amministrazione di [Microsoft 365](resource-account-ui.md) per creare un account di risorse di Microsoft 365 per ogni barra di collaborazione che ne ha bisogno. Qui è anche necessario aggiungere una licenza sala riunioni all'account della risorsa e, se si vuole effettuare o ricevere chiamate da o verso numeri di telefono esterni, una licenza Piano chiamate o Voce aziendale se l'organizzazione non usa Il routing diretto.
+Se si prevede di usare gli account delle risorse di Microsoft 365 per consentire agli utenti di prenotare barre di collaborazione, seguire le istruzioni in Creare un account delle risorse usando l'interfaccia di amministrazione di [Microsoft 365](resource-account-ui.md) per creare un account delle risorse di Microsoft 365 per ogni barra di collaborazione che ne richiede uno. Qui è anche necessario aggiungere una licenza Sala riunioni all'account della risorsa e, se si vogliono effettuare o ricevere chiamate da o verso numeri di telefono esterni, una licenza Piano per chiamate o Voce aziendale se l'organizzazione non usa Il routing diretto.
 
-Se si vogliono assegnare le chat room di Teams a singoli utenti per l'uso privato, non è necessario configurare altri account. Gli utenti possono accedere alle barre di collaborazione usando gli account personali.
+Se si vuole assegnare Teams Rooms a singoli utenti per l'uso privato, non è necessario configurare altri account. Gli utenti possono accedere alle barre di collaborazione usando gli account personali.
 
 > [!TIP]
-> Rendere descrittivi e facili da comprendere i nomi visualizzati per gli account delle risorse di Microsoft 365. Questi sono i nomi che gli utenti visualizzano durante la ricerca e l'aggiunta di sale di Teams alle riunioni. È possibile usare una convenzione come Site Room Name ( Max Room Capacity ), quindi ad esempio Curie, una sala riunioni di 4 persone a Londra, potrebbe avere il nome visualizzato - LON-CURIE(4).
+> Rendere descrittivi e facili da comprendere i nomi visualizzati Microsoft 365 account delle risorse di lavoro. Questi sono i nomi che gli utenti visualizzano quando cercano e aggiungono Teams Rooms alle riunioni. È possibile usare una convenzione come Site Room Name ( Max Room Capacity ), quindi ad esempio Curie, una sala riunioni di 4 persone a Londra, potrebbe avere il nome visualizzato - LON-CURIE(4).
 
 |    |     |
 |-----------|------------|
@@ -107,12 +107,12 @@ Successivamente, è necessario creare il piano per distribuire i dispositivi e i
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti decisionali](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere chi gestirà la distribuzione sito per sito.</li><li> Identificare le risorse che installeranno Teams Rooms nel sito e intraprendere la configurazione e il test.</li></ul>|
+| ![Icona che descrive i punti decisionali](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere chi gestirà la distribuzione sito per sito.</li><li> Identificare le risorse che installeranno Teams Rooms sul sito e intraprendere la configurazione e il test.</li></ul>|
 | ![Icona che illustra i passaggi successivi](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Avviare il test del dispositivo.</li></ul>|
 
 ### <a name="testing"></a> Test
 
-Dopo aver distribuito Teams Rooms, è consigliabile testarle. Accedere a Teams Rooms e verificare che le funzionalità previste funzionino. È consigliabile verificare che siano visualizzati  nella sezione Barre di collaborazione nella scheda **Dispositivi** dell'interfaccia di amministrazione di Microsoft Teams. È anche importante effettuare una serie di chiamate e riunioni di prova per verificare la qualità e le prestazioni.
+Dopo aver distribuito i Teams Rooms, è consigliabile testarli. Accedere a Teams Rooms e verificare che le funzionalità previste funzionino correttamente. È consigliabile verificare che siano visualizzati  nella sezione  Barre di collaborazione nella scheda Dispositivi dell'interfaccia Microsoft Teams di amministrazione. È anche importante effettuare una serie di chiamate e riunioni di prova per verificare la qualità e le prestazioni.
 
 Nell'ambito dell'implementazione generale di Microsoft Teams, è consigliabile configurare i file di creazione per Call Quality Dashboard (CQD), monitorare le tendenze qualitative e partecipare al processo di revisione della qualità dell'esperienza. Per altre informazioni, vedere la [Guida alla revisione della qualità dell'esperienza.](../quality-of-experience-review-guide.md)
 
@@ -122,6 +122,6 @@ Nell'ambito della distribuzione, è necessario aggiornare il registro delle riso
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Configurare gli account per Le chat room di Microsoft Teams usando l'interfaccia di amministrazione di Microsoft Teams](resource-account-ui.md)
+[Configurare gli account per Microsoft Teams Rooms l'Microsoft Teams di amministrazione](resource-account-ui.md)
 
 <!-- [Configure accounts for collaboration bars for Microsoft Teams using PowerShell](resource-account-ps.md) -->

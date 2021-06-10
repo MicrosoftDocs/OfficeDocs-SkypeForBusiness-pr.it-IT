@@ -15,7 +15,7 @@ ms.collection:
 - m365initiative-meetings
 - m365initiative-meetings-enabler
 - enabler-strategic
-description: Informazioni su come gestire le impostazioni per gli eventi live di Teams che si svolgono nell'organizzazione.
+description: Informazioni su come gestire le impostazioni Teams eventi live che si svolgono nell'organizzazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -31,11 +31,11 @@ ms.locfileid: "51637878"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
-Usare le impostazioni degli eventi live di Teams per configurare le impostazioni per gli eventi live che si svolgono nell'organizzazione. È possibile configurare un URL di supporto e un provider di distribuzione video di terze parti. Queste impostazioni si applicano a tutti gli eventi live creati nell'organizzazione.
+Usare Teams eventi live per configurare le impostazioni per gli eventi live che si svolgono nell'organizzazione. È possibile configurare un URL di supporto e un provider di distribuzione video di terze parti. Queste impostazioni si applicano a tutti gli eventi live creati nell'organizzazione.
 
-È possibile gestire facilmente queste impostazioni nell'interfaccia di amministrazione di Microsoft Teams. Nel riquadro di spostamento sinistro passare a **Impostazioni eventi**  >  **live riunioni.**
+È possibile gestire facilmente queste impostazioni nell'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a **Impostazioni eventi**  >  **live riunioni.**
 
-![Schermata delle impostazioni degli eventi live di Teams](../media/teams-live-events-settings.png "Schermata delle impostazioni degli eventi live di Teams che è possibile configurare nell'interfaccia di amministrazione di Microsoft Teams")
+![Schermata delle impostazioni Teams eventi live](../media/teams-live-events-settings.png "Schermata delle impostazioni Teams eventi live che è possibile configurare nell'interfaccia Microsoft Teams di amministrazione")
 
 ## <a name="set-up-event-support-url"></a>Configurare l'URL di supporto per gli eventi
 
@@ -46,7 +46,7 @@ Questo URL viene visualizzato per i partecipanti all'evento live. Aggiungere l'U
 1. Nel riquadro di spostamento sinistro passare a **Impostazioni evento live**  >  **riunioni.**
 2. In **URL supporto** immettere l'URL di supporto dell'organizzazione.
 
-    ![Impostazione dell'URL di supporto per gli eventi live nell'interfaccia di amministrazione](../media/teams-live-events-settings-supporturl.png "Schermata dell'impostazione dell'URL di supporto per gli eventi live di Teams")
+    ![Impostazione dell'URL di supporto per gli eventi live nell'interfaccia di amministrazione](../media/teams-live-events-settings-supporturl.png "Schermata dell'impostazione dell'URL di supporto per Teams eventi live")
 
 ### <a name="using-windows-powershell"></a>Uso di Windows PowerShell
 

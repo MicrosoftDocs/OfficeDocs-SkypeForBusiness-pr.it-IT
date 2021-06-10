@@ -36,11 +36,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono di servizio o utenti non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> | Scarica uno di questi moduli.</br> [Nuova richiesta di numero di telefono per Spagna (v.5.0) (es-es)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-spain-(v.5.0)-(es-es).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per la Spagna (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-spain-(v.5.0)-(en-us).pdf?raw=true)<br/><br/>    Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> |
-|Ottieni i numeri di telefono trasferiti a Noi.  <br/> |Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per la Spagna (tutti i numeri) (v.5.0)(es-es)](https://download.microsoft.com/download/e/8/b/e8bd034a-c5fa-4da2-8fd6-3dd13988b834/letter-of-authorization-(loa)-for-spain-(all-numbers)-(v.5.0)-(es-es).pdf)<br/><br/> Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
-|Pubblicare o annullare la pubblicazione di numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
+|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione.   <br/> | Scarica uno di questi moduli.</br> [Nuova richiesta di numero di telefono per la Spagna (v.5.0) (es-es)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-spain-(v.5.0)-(es-es).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per la Spagna (v.5.0) (it-IT)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-spain-(v.5.0)-(en-us).pdf?raw=true)<br/><br/>    Compilalo e [inviacelo](mailto:ptneu@microsoft.com).  <br/> |
+|Ricevi i numeri di telefono trasferiti a Noi.  <br/> |Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Spagna (tutti i numeri) (v.5.0)(es-es)](https://download.microsoft.com/download/e/8/b/e8bd034a-c5fa-4da2-8fd6-3dd13988b834/letter-of-authorization-(loa)-for-spain-(all-numbers)-(v.5.0)-(es-es).pdf)<br/><br/> Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
+|Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
-|Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |
+|Eseguire aggiornamenti del servizio directory per i numeri di coda di chiamata o operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -50,4 +50,4 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)
+[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

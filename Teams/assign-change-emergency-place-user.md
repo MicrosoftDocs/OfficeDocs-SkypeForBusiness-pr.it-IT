@@ -29,15 +29,15 @@ ms.locfileid: "51120828"
 
 Ogni numero di telefono attivo deve avere una posizione di emergenza associata quando lo assegni a un utente. L'indirizzo viene associato quando si ottiene un numero di telefono in Office 365 o quando si trasferisce un numero di telefono. Quando si associa il numero a una posizione di emergenza, è anche possibile aggiungere un luogo per fornire una posizione più esatta all'interno di una posizione fisica. Un luogo può essere il piano, l'ala dell'edificio o il numero dell'ufficio in cui si trova l'utente. È possibile avere un numero illimitato di posti per una determinata posizione di emergenza e cambiare il luogo se l'utente si sposta in un altro ufficio o edificio. Ad esempio, se l'utente passa dal piano 34 al piano 35.
   
-Per informazioni su come ottenere piani per chiamate e sul costo, vedere Licenze [per i componenti aggiuntivi di Teams.](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+Per informazioni su come ottenere piani per chiamate e sul costo, vedere Teams [licenze per i componenti aggiuntivi.](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   
 È possibile assegnare o modificare la posizione di un luogo per gli interventi di emergenza per un utente nell'interfaccia di amministrazione di Microsoft Teams o usando PowerShell.
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Numeri di telefono**  >  **vocali.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Numeri**  >  **Telefono vocali**.
 
-2. Nella pagina **Numeri di telefono** fare clic sulla scheda **Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
+2. Nella pagina **Telefono numeri** fare clic sulla scheda **Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
 
 3. Nel riquadro **Modifica,** in **Posizione emergenza,** eseguire una delle operazioni seguenti:
 

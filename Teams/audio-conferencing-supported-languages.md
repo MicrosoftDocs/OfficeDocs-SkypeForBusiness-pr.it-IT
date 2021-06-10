@@ -31,7 +31,7 @@ ms.locfileid: "51098512"
 ---
 # <a name="audio-conferencing-supported-languages"></a>Lingue supportate per i servizi di audioconferenza
 
-Quando si configurano e si configurano le audioconferenze in Microsoft 365 o Office 365, è possibile selezionare le lingue principale e secondaria (fino a 4) usate quando i chiamanti a una riunione Skype for Business o Microsoft Teams. Ecco l'elenco delle lingue supportate per le audioconferenze: 
+Quando si configurano e si configurano i servizi di audioconferenza in Microsoft 365 o Office 365, è possibile selezionare le lingue principale e secondaria (fino a 4) usate quando i chiamanti a una riunione Skype for Business o Microsoft Teams. Ecco l'elenco delle lingue supportate per le audioconferenze: 
   
 > [!IMPORTANT]
 > Le lingue principale e secondaria possono essere modificate solo su numeri di telefono dedicati per audioconferenza. 
@@ -52,7 +52,7 @@ Quando si configurano e si configurano le audioconferenze in Microsoft 365 o Off
 |Inglese  <br/> |Australia  <br/> |en-AU  <br/> |
 |Inglese  <br/> |Regno Unito  <br/> |en-GB  <br/> |
 |Inglese  <br/> |Stati Uniti  <br/> |en-US  <br/> |
-|Estone  <br/> |Estonia  <br/> |et-EE  <br/> |
+|Estone  <br/> |Estonia  <br/> |et-edizione Enterprise  <br/> |
 |Filippine  <br/> |Filippine  <br/> |fil-PH  <br/> |
 |Finlandese  <br/> |Finlandia  <br/> |fi-FL  <br/> |
 |Francese  <br/> |Canada  <br/> |fr-CA  <br/> |
@@ -87,7 +87,7 @@ Quando si configurano e si configurano le audioconferenze in Microsoft 365 o Off
    
 Se si cercano paesi o aree geografiche in cui è possibile acquistare audioconferenze, vedere Disponibilità di paesi e aree geografiche per audioconferenze [e piani per chiamate.](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
   
-Se si cercano paesi o aree geografiche specifici con numeri di telefono per le audioconferenze, vedere Numeri di telefono per le audioconferenze [in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md) o Numeri di telefono per le [audioconferenze in Skype for Business online.](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing)
+Se si cercano paesi o aree geografiche specifici con numeri di telefono per le audioconferenze, vedere numeri Telefono per le audioconferenze [in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md) o numeri Telefono per le audioconferenze in [Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing)
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 

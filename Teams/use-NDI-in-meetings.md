@@ -29,7 +29,7 @@ ms.locfileid: "51598465"
 
 La tecnologia NDI® è diventata una soluzione di settore standard per la produzione di contenuti live per i flussi e ha acquisito una notevole consapevolezza e adozione nel mondo della trasmissione professionale.
 
-Skype ha aggiunto in ® funzionalità NDI a Skype alla fine del 2018. Microsoft Teams usa questa funzionalità per migliorare l'esperienza della riunione.
+Skype aggiunto in precedenza ® funzionalità di Skype NDI alla fine del 2018. Microsoft Teams questa funzionalità per migliorare l'esperienza della riunione.
 
 La tecnologia NDI® è limitata a una rete locale e deve essere considerata solo una parte del flusso di lavoro di produzione, non una soluzione broadcast.
 
@@ -43,13 +43,13 @@ La tecnologia NDI® richiede due passaggi per essere attivata per un utente.
 Set-CsTeamsMeetingPolicy -Identity MEETING_POLICY -AllowNDIStreaming $true
 ```
 
-2. Dopo aver popolato questa modifica, l'utente finale deve attivare la tecnologia NDI® per il proprio client specifico da **Autorizzazioni**  >  **impostazioni.**
+2. Dopo aver popolato questa modifica, l'utente finale deve attivare la tecnologia NDI® per il proprio client specifico da  >  **Impostazioni Autorizzazioni**.
 
 Quando un utente partecipa a una riunione, viene visualizzato un messaggio che informa che la riunione è in fase di trasmissione. Se gli utenti non vogliono essere inclusi nella trasmissione, dovranno rilasciare dalla riunione.
 
-L'immagine seguente mostra il messaggio banner visualizzato da un utente in una riunione di Teams.
+L'immagine seguente mostra il messaggio banner visualizzato da un utente in una Teams riunione.
 
-![striscione ® tecnologia NDI che viene visualizzato in una riunione di Teams.](media/NDI-disclosure.png)
+![striscione ® tecnologia NDI che viene visualizzato in una Teams riunione.](media/NDI-disclosure.png)
 
 Il banner contiene un collegamento [all'informativa sulla privacy Microsoft.](https://aka.ms/teamsprivacy)
 
@@ -62,7 +62,7 @@ La ® NDI è supportata in tutte le impostazioni locali. Gli utenti seguenti son
 
 - In-tenant: supporto completo, fornito in base a ring/tenantId/userId (controllato dai criteri riunioni)
 - Federato: nessun accesso al flusso (anche se ha la tecnologia NDI® su)<sup>1</sup>
-- Premium - nessun accesso in streaming
+- Premium - nessun accesso al flusso
 - Anonimo: nessun accesso al flusso
 - Guest: nessun accesso in streaming  
 

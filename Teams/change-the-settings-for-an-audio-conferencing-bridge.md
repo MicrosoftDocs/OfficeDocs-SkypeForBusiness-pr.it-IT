@@ -33,12 +33,12 @@ ms.locfileid: "51102643"
 ---
 # <a name="change-the-settings-for-an-audio-conferencing-bridge"></a>Modificare le impostazioni per un bridge per audioconferenza
 
-Quando si configurano le audioconferenze in Microsoft 365 o Office 365, si riceveranno numeri di telefono per gli utenti da quello che viene chiamato bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono usati quando i chiamanti a una riunione con accesso esterno. Il numero di telefono è incluso nella parte inferiore dell'invito alla riunione Skype for Business o Microsoft Teams.
+Quando si configurano le audioconferenze in Microsoft 365 o Office 365, si riceveranno i numeri di telefono per gli utenti da quello che viene chiamato bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono. Questi numeri di telefono vengono usati quando i chiamanti a una riunione con accesso esterno. Il numero di telefono è incluso nella parte inferiore dell'invito Skype for Business o Microsoft Teams riunione.
   
-Il bridge di conferenza risponde a una chiamata e chiede al chiamante di usare un operatore automatico della riunione e quindi, a seconda delle impostazioni, può riprodurre notifiche, chiedere ai chiamanti di registrare il proprio nome e controllare le impostazioni del PIN. I PIN vengono dati agli organizzatori della riunione per consentire loro di avviare una riunione quando non usano un'app Skype for Business o Microsoft Teams.
+Il bridge di conferenza risponde a una chiamata e chiede al chiamante di usare un operatore automatico della riunione e quindi, a seconda delle impostazioni, può riprodurre notifiche, chiedere ai chiamanti di registrare il proprio nome e controllare le impostazioni del PIN. I PIN vengono dati agli organizzatori della riunione per consentire loro di avviare una riunione quando non usano un'app Skype for Business o Microsoft Teams riunione.
 
   > [!IMPORTANT]
-  > Un PIN è necessario per l'organizzatore della riunione solo quando un utente dell'app Skype for Business o Microsoft Teams non ha ancora avviato la riunione. Se tutti gli utenti stanno per accedere alla riunione, il PIN è necessario per l'organizzatore della riunione per avviare la riunione. 
+  > Un PIN è necessario per l'organizzatore della riunione solo quando un Skype for Business o un Microsoft Teams'app non ha ancora avviato la riunione. Se tutti gli utenti stanno per accedere alla riunione, il PIN è necessario per l'organizzatore della riunione per avviare la riunione. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
@@ -63,7 +63,7 @@ Il bridge di conferenza risponde a una chiamata e chiede al chiamante di usare u
 4. Per impostare la lunghezza del PIN per le riunioni, selezionare il numero di cifre desiderato per il PIN **nell'elenco Lunghezza PIN.**
 
 5. Per specificare se inviare messaggi di posta elettronica agli utenti, abilitare o disabilitare Invia automaticamente messaggi di posta elettronica agli utenti se la configurazione delle **audioconferenze cambia.**
-    Per altre [informazioni,](emails-sent-to-users-when-their-settings-change-in-teams.md) vedere Messaggi di posta elettronica inviati automaticamente agli utenti quando le impostazioni di audioconferenza cambiano in Microsoft Teams o Messaggi di posta elettronica inviati agli utenti quando le impostazioni cambiano [in Skype for Business online.](/SkypeForBusiness/audio-conferencing-in-office-365/emails-sent-to-users-when-their-settings-change)
+    Per altre [informazioni,](emails-sent-to-users-when-their-settings-change-in-teams.md) vedere Messaggi di posta elettronica inviati automaticamente agli utenti quando le impostazioni dei servizi di audioconferenza cambiano in Microsoft Teams o Messaggi inviati agli utenti quando le impostazioni cambiano [in Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/emails-sent-to-users-when-their-settings-change)
  
 6. Fare clic su **Salva**. 
 
@@ -77,7 +77,7 @@ Il bridge di conferenza risponde a una chiamata e chiede al chiamante di usare u
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
     
@@ -92,4 +92,4 @@ Il bridge di conferenza risponde a una chiamata e chiede al chiamante di usare u
 
 [Configurare Audioconferenza per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
 
-[Configurare audioconferenze per Skype for Business online](/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)
+[Configurare le audioconferenze per Skype for Business Online](/skypeforbusiness/audio-conferencing-in-office-365/set-up-audio-conferencing)

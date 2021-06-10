@@ -45,7 +45,7 @@ Se l'organizzazione è già su Teams, le impostazioni app configurate nelle **im
 Se si volesse bloccare tutte le app di terze parti e consentire app specifiche da Microsoft per il team HR nell'organizzazione. Per prima cosa, è necessario passare alla pagina [Gestisci app](manage-apps.md) e assicurarsi che tutte le app che si desidera consentire per il team HR siano consentite a livello di organizzazione. Quindi, creare un criterio personalizzato denominato Criterio di autorizzazione app HR, impostarlo in modo tale da bloccare e consentire le app desiderate e assegnarlo agli utenti del team HR.
 
 > [!NOTE]
-> Se Teams è stato distribuito in un ambiente Microsoft 365 Government Community Cloud High (GCCH) e Department of Defense (DoD), vedere Gestire le impostazioni delle app a livello di organizzazione per [Microsoft 365 Government](#manage-org-wide-app-settings-for-microsoft-365-government) per altre informazioni sulle impostazioni delle app di terze parti che sono univoche per GCCH e DoD.
+> Se è stato distribuito Teams in un ambiente Microsoft 365 Government Community Cloud High (GCCH) e Department of Defense (DoD), vedere Gestire le impostazioni delle app a livello di organizzazione per [Microsoft 365 Government](#manage-org-wide-app-settings-for-microsoft-365-government) per altre informazioni sulle impostazioni delle app di terze parti univoche per GCCH e DoD.
 
 ## <a name="create-a-custom-app-permission-policy"></a>Creare un criterio di autorizzazione app personalizzato
 
@@ -100,10 +100,10 @@ Usare le impostazioni app a livello di organizzazione per controllare se gli ute
     
 2. In **App di terze parti**, disattivare o attivare queste impostazioni per controllare l'accesso alle app di terze parti:
 
-    - **Consenti app di terze parti**: questa impostazione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non potranno installare o usare qualsiasi app di terze parti. In una distribuzione di Microsoft 365 Government - GCCH e DoD di Teams, questa impostazione è disattivata per impostazione predefinita.
+    - **Consenti app di terze parti**: questa impostazione controlla se gli utenti possono usare app di terze parti. Se si disattiva questa impostazione, gli utenti non potranno installare o usare qualsiasi app di terze parti. In un Microsoft 365 government - GCCH e DoD di Teams, questa impostazione è disattivata per impostazione predefinita.
     - **Consenti qualsiasi nuova app di terze parti pubblicata nello Store per impostazione predefinita**: questa impostazione consente di controllare se eventuali nuove app di terze parti pubblicate nello Store di Teams diventano disponibili automaticamente in Teams. È possibile impostare questa opzione solo se si consentono le app di terze parti.
 
-3. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. In una distribuzione di Microsoft 365 Government - GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Per qualsiasi app di terze parti che si desidera consentire nell'organizzazione, rimuovere l'app da questo elenco delle app bloccate. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, che sia consentita o meno dai criteri di autorizzazione app.
+3. In **App bloccate**, aggiungere le app che si desidera bloccare nell'organizzazione. In una Microsoft 365 government - GCCH e DoD di Teams, tutte le app di terze parti vengono aggiunte a questo elenco per impostazione predefinita. Per qualsiasi app di terze parti che si desidera consentire nell'organizzazione, rimuovere l'app da questo elenco delle app bloccate. Quando si blocca un'app a livello di organizzazione, l'app viene bloccata automaticamente per tutti gli utenti, che sia consentita o meno dai criteri di autorizzazione app.
 4. Fare clic su **Salva** per fare in modo che le impostazioni app a livello di organizzazione abbiano effetto.
 
 Come indicato in precedenza, per consentire app di terze parti è possibile modificare e usare il criterio globale (a livello di organizzazione, per impostazione predefinita) o creare e assegnare criteri personalizzati.

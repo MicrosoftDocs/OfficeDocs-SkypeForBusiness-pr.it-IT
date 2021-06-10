@@ -14,12 +14,12 @@ search.appverid: MET150
 description: Questo articolo illustra le esperienze connesse facoltative che verranno visualizzate in Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 49b2cf94f660b7935ae61aadf21bdb9a7a78fb21
-ms.sourcegitcommit: 17d0108fb4d36a3f56144460683f53d77a8a0a7f
+ms.openlocfilehash: 588dd904794ce79cfdcdbfa7fb9e17275f1d3661
+ms.sourcegitcommit: 2591c96d8613660220c5af71fc945e27b31175d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52777887"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52863237"
 ---
 # <a name="overview-of-optional-connected-experiences-in-microsoft-teams"></a>Panoramica delle esperienze connesse facoltative in Microsoft Teams
 
@@ -28,7 +28,7 @@ Se si ha un account aziendale o dell'istituto di istruzione, l'amministratore de
 Se l'amministratore ha offerto la possibilità di usare le esperienze connesse facoltative in Teams, si può passare a **Impostazioni** > **Privacy** in Teams e scegliere se si vogliono usare le esperienze connesse facoltative.
 
 > [!NOTE]
-> Gli amministratori possono concedere o limitare la possibilità degli utenti di usare le esperienze connesse facoltative. A questo scopo, possono usare il [servizio di criteri cloud di Office](/deployoffice/overview-office-cloud-policy-service) e configurare l'impostazione dei criteri *Consenti l'uso di altre esperienze connesse facoltative in Office*. 
+> Gli amministratori possono concedere o limitare la possibilità degli utenti di usare le esperienze connesse facoltative. A questo scopo, possono usare il [servizio di criteri cloud di Office](/deployoffice/overview-office-cloud-policy-service) e configurare l'impostazione dei criteri *Consenti l'uso di altre esperienze connesse facoltative in Office*. Questa è la stessa impostazione criterio che controlla se le esperienze connesse opzionali sono disponibili agli utenti nelle app di Office (come Word, Excel, and PowerPoint) presenti in Microsoft 365 Apps for enterprise.
 
 ## <a name="giphy"></a>GIPHY
 

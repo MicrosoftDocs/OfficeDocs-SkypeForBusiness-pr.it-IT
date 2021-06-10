@@ -32,12 +32,12 @@ ms.locfileid: "51102662"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
-Quando si acquistano licenze **di audioconferenza,** Microsoft ospita il bridge di audioconferenza per l'organizzazione. Il bridge di audioconferenza fornisce numeri di telefono con accesso esterno da posizioni diverse, in modo che gli organizzatori e i partecipanti possano usarli per partecipare alle riunioni Skype for Business o Microsoft Teams con un telefono.
+Quando si acquistano licenze **di audioconferenza,** Microsoft ospita il bridge di audioconferenza per l'organizzazione. Il bridge di audioconferenza fornisce numeri di telefono per l'accesso esterno da posizioni diverse, in modo che gli organizzatori e i partecipanti possano usarli per partecipare a riunioni Skype for Business o Microsoft Teams tramite telefono.
   
 Oltre ai numeri di telefono già assegnati al bridge di conferenza, è possibile ottenere altri numeri di servizio [(numeri](./getting-service-phone-numbers.md) a numero verde e a numero verde usati per le audioconferenze) da altre posizioni e quindi assegnarli al bridge di conferenza in modo da espandere la copertura per gli utenti.
   
 > [!NOTE]
-> Per poter assegnare/annullare l'assegnazione di un numero di telefono per un bridge di conferenza, il numero di telefono deve essere un *numero* di servizio. Per visualizzare il tipo di numero, passare a Numeri di telefono vocale nell'interfaccia di amministrazione di Microsoft Teams e cercare  >   nella colonna **Tipo di** numero. I crediti per le comunicazioni di Microsoft 365 o Office 365 devono essere impostati per primi per consentire agli utenti di accedere al bridge su un numero verde.
+> Per poter assegnare/annullare l'assegnazione di un numero di telefono per un bridge di conferenza, il numero di telefono deve essere un *numero* di servizio. Per visualizzare il tipo di numero, passare a Numeri Telefono voce nell'interfaccia di amministrazione di Microsoft Teams e cercare nella  >   **colonna Tipo** numero. Microsoft 365 o Office 365 crediti comunicazioni devono essere impostati per primi per consentire agli utenti di accedere al bridge su un numero verde.
 
 ## <a name="steps-when-you-are-assigning-a-new-service-phone-number-to-your-conference-bridge"></a>Istruzioni per assegnare un numero telefonico di servizio al tuo bridge di conferenza
 
@@ -45,7 +45,7 @@ Oltre ai numeri di telefono già assegnati al bridge di conferenza, è possibile
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
-1. Nel riquadro di spostamento sinistro passare a **Numeri di telefono**  >  **vocale.**
+1. Nel riquadro di spostamento sinistro passare a Numeri  >  **Telefono vocali**.
 
 2. Selezionare il numero di telefono nell'elenco e fare clic su **Modifica**.
 
@@ -67,7 +67,7 @@ Il numero di telefono predefinito del bridge di conferenza definisce l'ID chiama
  
 ### <a name="step-3---change-the-default-phone-numbers-that-are-included-in-the-meeting-invites-of-users-optional"></a>Passaggio 3 - Modificare i numeri di telefono predefiniti inclusi negli inviti alla riunione degli utenti (facoltativo)
 
-I numeri di telefono predefiniti di un utente sono quelli inclusi nelle convocazioni di riunione quando pianificano una riunione. Per altre informazioni, inclusa la modalità di assegnazione dei numeri di telefono predefiniti per i nuovi utenti, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in Skype for Business [online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
+I numeri di telefono predefiniti di un utente sono quelli inclusi nelle convocazioni di riunione quando pianificano una riunione. Per altre informazioni, inclusa la modalità di assegnazione dei numeri di telefono predefiniti per i nuovi utenti, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in [Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
 
 ![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
@@ -114,9 +114,9 @@ Sostituire il numero verde o a pedaggio predefinito per tutti gli utenti che han
 Set-CsOnlineDialInConferencingUserDefaultNumber -FromNumber <Number to be removed> -ToNumber <Number to be set as new default> -NumberType <"Toll" or "Toll-Free"> -RescheduleMeetings
 ```
  > [!IMPORTANT] 
- >È anche possibile modificare il numero verde o a numero verde predefinito di utenti nell'interfaccia di amministrazione di Microsoft Teams. Tuttavia, questa azione non riprogrammerà automaticamente le riunioni. 
+ >È anche possibile modificare il numero verde o a pedaggio predefinito di utenti nell'interfaccia Microsoft Teams di amministrazione. Tuttavia, questa azione non riprogrammerà automaticamente le riunioni. 
  
- Per altre informazioni, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in Skype for Business [online.](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites)
+ Per altre informazioni, vedere Impostare i numeri di telefono inclusi negli inviti [in Microsoft Teams](set-the-phone-numbers-included-on-invites-in-teams.md) o Impostare i numeri di telefono inclusi negli inviti in [Skype for Business Online](/SkypeForBusiness/audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites).
 
   > [!NOTE]
   > A seconda delle dimensioni della tua organizzazione, questa operazione potrebbe richiedere un certo tempo.
@@ -180,7 +180,7 @@ Per risparmiare tempo automatizzando questo processo, è possibile usare i cmdle
   ```
 
     > [!NOTE]
-    > La posizione usata sopra deve corrispondere alle informazioni di contatto degli utenti impostate nell'interfaccia di amministrazione di Microsoft 365.
+    > La posizione usata sopra deve corrispondere alle informazioni di contatto degli utenti impostate nell'Microsoft 365 di amministrazione.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -202,7 +202,7 @@ Unregister-CsOnlineDialInConferencingServiceNumber -BridgeName "Conference Bridg
 
 ## <a name="about-windows-powershell"></a>Informazioni su Windows PowerShell
 
-Con Windows PowerShell puoi gestire gli utenti e cosa gli è consentito fare oppure no. Windows PowerShell può aiutarti a gestire Microsoft 365 o Office 365 e Skype for Business online usando un unico punto di amministrazione che può semplificare il lavoro quotidiano, soprattutto quando hai più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
+Con Windows PowerShell puoi gestire gli utenti e cosa gli è consentito fare oppure no. Windows PowerShell consente di gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, soprattutto quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
 
   - [Introduzione a Windows PowerShell e Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
 

@@ -1,5 +1,5 @@
 ---
-title: Criteri delle riunioni e scadenza delle riunioni in Microsoft Teams
+title: Criteri di riunione e scadenza della riunione in Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -16,7 +16,7 @@ appliesto:
 f1.keywords:
 - CSH
 ms.custom: ''
-description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione in Microsoft Teams.
+description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione Microsoft Teams.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 6e8821781eab70696c9b24c8df18cc8dd0b46870
 ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
@@ -25,20 +25,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/06/2021
 ms.locfileid: "51598615"
 ---
-# <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri delle riunioni e scadenza delle riunioni in Microsoft Teams
+# <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri di riunione e scadenza della riunione in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
 ## <a name="overview"></a>Panoramica
 
-[I criteri riunione](meeting-policies-in-teams.md) in Microsoft Teams vengono usati per controllare se gli utenti dell'organizzazione possono avviare e pianificare riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri riunione nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet di PowerShell [Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
+[I criteri](meeting-policies-in-teams.md) riunione in Microsoft Teams consentono di controllare se gli utenti dell'organizzazione possono avviare e pianificare riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri riunione nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet di PowerShell [Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
 
-Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri per le riunioni seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams, a cui si fa riferimento in questo articolo.
+Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare le riunioni in Teams, a cui si fa riferimento in questo articolo.
 
 - [Consenti riunione ora nei canali:](meeting-policies-in-teams-general.md#allow-meet-now-in-channels)controlla se un utente può avviare una riunione improvvisata in un canale.
 - [Consenti pianificazione riunione canale:](meeting-policies-in-teams-general.md#allow-channel-meeting-scheduling)controlla se un utente può pianificare una riunione in un canale.
 - [Consenti pianificazione riunioni private:](meeting-policies-in-teams-general.md#allow-scheduling-private-meetings)controlla se un utente può pianificare una riunione privata in Teams. Una riunione è privata quando non viene pubblicata in un canale in un team.
-- [Consenti l'aggiunta di Outlook:](meeting-policies-in-teams-general.md#allow-the-outlook-add-in)controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
+- [Consenti l Outlook aggiungi in:](meeting-policies-in-teams-general.md#allow-the-outlook-add-in)controlla se un utente può pianificare una riunione privata da Outlook. Una riunione è privata quando non viene pubblicata in un canale in un team.
 - [Consenti riunione ora in riunioni private:](meeting-policies-in-teams-general.md#allow-meet-now-in-private-meetings)controlla se un utente può avviare una riunione privata esemptuosa.
 
 Per impostazione predefinita, queste impostazioni sono disponibili. Quando una di queste impostazioni è disattivata, qualsiasi utente a cui è assegnato il criterio non può avviare o pianificare nuove riunioni di questo tipo. Allo stesso tempo, i collegamenti di partecipazione alla riunione e gli ID conferenza di tutte le riunioni esistenti di quel tipo che l'utente ha avviato o pianificato in precedenza scadono.
@@ -69,7 +69,7 @@ Ecco un riepilogo del funzionamento della scadenza della riunione per ognuna del
 |---------|---------|---------|
 |Scadenza del canale Riunione ora riunioni avviate da un utente  |Disattivare **Consenti ora di incontrarsi nei canali.**|Nessuno può partecipare al canale Riunione ora le riunioni avviate dall'utente.         |
 |Scadere le riunioni del canale pianificate da un utente   |Disattivare **Consenti pianificazione delle riunioni del canale**.         |Nessuno può partecipare alle riunioni del canale pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare a quanto segue:<ul><li>Riunioni del canale avvenute in passato.</li> <li>Riunioni del canale pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni di canale ricorrenti.</li></ul>       |
-|Scadere le riunioni private pianificate da un utente    |Disattivare **Consenti pianificazione riunioni private** *e* Consenti il componente **aggiuntivo outlook.**          |Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare a quanto segue: <ul><li>Riunioni private avvenute in passato.</li> <li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul> Sia **Consenti pianificazione riunioni private** che Consenti il componente aggiuntivo **outlook** devono essere disattivati per la scadenza delle riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.      |
+|Scadere le riunioni private pianificate da un utente    |Disattivare **Consenti pianificazione riunioni private** *e* Consenti Outlook componente **aggiuntivo**.          |Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare a quanto segue: <ul><li>Riunioni private avvenute in passato.</li> <li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul> Sia Consenti pianificazione riunioni  **private** che Consenti Outlook il componente aggiuntivo deve essere disattivato per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.      |
 |Scadenza riunione privata ora riunioni avviate da un utente  |Disattivare **Consenti riunione ora nelle riunioni private.**          |Nessuno può partecipare a riunioni private di Meet now avviate dall'utente.         |
 
 Se si vuole che gli utenti accertano le riunioni pianificate o avviate in precedenza da un determinato utente, è possibile:

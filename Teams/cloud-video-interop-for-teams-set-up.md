@@ -32,7 +32,7 @@ Dopo aver scelto i partner cloud [Video Interop,](cloud-video-interop.md)è nece
 
 ## <a name="plan"></a>Piano
 
-Per [informazioni sull'identificazione](cloud-video-interop.md) di un partner o di un partner da usare nell'organizzazione, vedere Interoperabilità video cloud per Microsoft Teams. 
+Vedere [Cloud Video Interop per Microsoft Teams](cloud-video-interop.md) informazioni sull'identificazione di un partner o di un partner da usare nell'organizzazione. 
 
 Per pianificare l'abilitazione basata su utenti/simultanei/a livello di sito: 
 
@@ -80,7 +80,7 @@ Per eseguire il provisioning della chiave del tenant, è necessario eseguire i c
 
 Sarà necessario fornire il consenso per l'autorizzazione per i dispositivi di teleconferenza video (VTC) per partecipare alle riunioni delle organizzazioni tramite il servizio partner. Questo collegamento di consenso verrà fornito anche dal partner.  
  
-Al termine di questi passaggi, gli utenti abilitati singolarmente tramite il cmdlet Grant precedente o tutti gli utenti dell'organizzazione, se il tenant è abilitato, avranno le coordinate VTC in tutte le riunioni di Teams pianificate. Qualsiasi VTC può partecipare a queste riunioni tramite queste coordinate.
+Al termine di questi passaggi, gli utenti abilitati singolarmente tramite il cmdlet Grant precedente o tutti gli utenti dell'organizzazione, se il tenant è abilitato, avranno le coordinate VTC in tutte le riunioni Teams pianificate. Qualsiasi VTC può partecipare a queste riunioni tramite queste coordinate.
 
 
 |Nome|Descrizione breve dell'autorizzazione dell'applicazione| Descrizione|
@@ -92,21 +92,21 @@ Al termine di questi passaggi, gli utenti abilitati singolarmente tramite il cmd
 
 ## <a name="schedule"></a>Pianificazione
 
-Pianificare quindi una riunione di Teams con coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
-- [Componente aggiuntivo Riunione di Teams per Outlook](teams-add-in-for-outlook.md)
-- Client e dispositivi mobili di Teams
+Pianificare quindi una Teams riunione con coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
+- [Teams Componente aggiuntivo Riunione per Outlook](teams-add-in-for-outlook.md)
+- Teams client desktop e mobile
 
 
 ## <a name="join"></a>Partecipa
 
-È possibile partecipare alle riunioni di Teams con i dispositivi VTC nei modi seguenti:
+È possibile partecipare Teams riunioni con i dispositivi VTC nei modi seguenti:
  
 - IVR (Risposta vocale interattiva)
     - È possibile accedere all'IVR del partner usando il tenantkey@domain. 
-    - Una volta che sei nell'IVR del partner, ti verrà chiesto di accedere all'ID conferenza VTC, che ti connetterà alla riunione di Teams.
+    - Una volta che sei nell'IVR del partner, ti verrà chiesto di immettere l'ID conferenza VTC, che ti connetterà alla riunione Teams riunione.
 - Chiamata diretta
-    - È possibile accedere direttamente alla riunione di Teams senza interagire con l'IVR del partner usando la funzionalità di composizione diretta usando la stringa completa di tenantkey. VTC ConferenceId@domain.
+    - È possibile accedere direttamente alla riunione Teams senza interagire con l'IVR del partner usando la funzione di chiamata diretta usando la stringa completa di tenantkey. VTC ConferenceId@domain.
 - Chiamata con un solo tocco
-    - Se si dispone di una sala di Teams integrata, è possibile usare le funzionalità di composizione con un solo tocco offerte dal partner senza dover digitare alcuna stringa di chiamata.
+    - Se si ha una sala Teams integrata, è possibile usare le funzionalità di composizione con un solo tocco offerte dal partner (senza bisogno di digitare alcuna stringa di chiamata).
 
-Infine, è possibile interagire con gli utenti di Teams nelle riunioni usando audio, video e condivisione di contenuti.
+Infine, è possibile coinvolgere Teams utenti nelle riunioni usando audio, video e condivisione di contenuti.

@@ -1,5 +1,5 @@
 ---
-title: Problemi di ricezione di messaggi e chiamate su sistemi legacy in Teams
+title: Problemi di ricezione di messaggi e chiamate in sistemi legacy in Teams
 ms.reviewer: ''
 author: cichur
 ms.author: v-cichur
@@ -27,7 +27,7 @@ ms.locfileid: "51120607"
 <a name="issues-receiving-messages-and-calls-on-legacy-systems"></a>Problemi con la ricezione di messaggi e chiamate in sistemi legacy
 ==============================================================
 
-Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano versioni precedenti di Teams o hanno eseguito l'accesso con altre applicazioni.
+Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano versioni precedenti di Teams o se hanno eseguito l'accesso con altre applicazioni.
 
 ## <a name="legacy-adu-setups"></a>Configurazioni ADU legacy
 
@@ -42,7 +42,7 @@ Gli utenti potrebbero avere problemi a ricevere messaggi o chiamate se usano ver
 
 Per altre informazioni, vedere Accedere [a Microsoft Teams con l'autenticazione](sign-in-teams.md) moderna.
 
-## <a name="skype-token-revocation"></a>Revoca di token Skype
+## <a name="skype-token-revocation"></a>Skype revoca del token
 
 Quando si modifica o si reimposta una password, i client meno recenti non riceveranno messaggi e chiamate fino a un'ora. Per risolvere il problema, riavviare l'app o passare ai client più nuovi.
 

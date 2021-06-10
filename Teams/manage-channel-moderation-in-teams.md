@@ -54,15 +54,15 @@ In questo scenario, il proprietario del team aggiunge i clienti potenziali di ma
 
 ### <a name="use-a-channel-for-class-discussions-in-teams-for-education"></a>Usare un canale per le discussioni di classe in Teams per l'istruzione
 
-In Teams for Education, un docente di scienze vuole usare un canale per coinvolgere gli studenti in discussioni mirate su specifici argomenti della classe.
+In Teams per l'istruzione, un docente di scienze vuole usare un canale per coinvolgere gli studenti in discussioni mirate su specifici argomenti della classe.
 
 In questo scenario, il docente consente agli assistenti didattici di moderare il canale. Gli assistenti didattici possono quindi creare nuovi post per avviare e avviare discussioni con gli studenti.
 
 ## <a name="manage-channel-moderation"></a>Gestire la moderazione dei canali
 
-In Teams, vai al canale, fai clic su **Altre opzioni ...**  >  **Gestisci canale**. Da qui è possibile attivare e disattivare la moderazione, aggiungere membri del team come moderatori e impostare le preferenze.
+In Teams passare al canale, fare clic su **Altre opzioni ...**  >  **Gestisci canale**. Da qui è possibile attivare e disattivare la moderazione, aggiungere membri del team come moderatori e impostare le preferenze.
 
-La moderazione dei canali è un'impostazione per canale. Non esiste un'impostazione a livello di tenant per la moderazione dei canali. Se si desidera aggiungere un'impostazione di moderazione del canale a livello di tenant, richiederla in [Teams UserVoice.](https://microsoftteams.uservoice.com/)
+La moderazione dei canali è un'impostazione per canale. Non esiste un'impostazione a livello di tenant per la moderazione dei canali. Se si desidera aggiungere un'impostazione di moderazione del canale a livello di tenant, richiederla [Teams UserVoice.](https://microsoftteams.uservoice.com/)
 
 [!INCLUDE [uservoice-disclaimer-note](includes/uservoice-disclaimer-note.md)]
 
@@ -76,7 +76,7 @@ Per attivare la moderazione per un canale, in **Moderazione canale** fare clic s
 
 ### <a name="add-or-remove-channel-moderators"></a>Aggiungere o rimuovere moderatori del canale
 
-In **Chi sono i moderatori?** fare clic su **Gestisci** e quindi aggiungere o rimuovere i membri del team come moderatori. I proprietari e i moderatori del team possono aggiungere e rimuovere altri moderatori.  
+In **Who i moderatori?**, fare clic su **Gestisci** e quindi aggiungere o rimuovere i membri del team come moderatori. I proprietari e i moderatori del team possono aggiungere e rimuovere altri moderatori.  
 
 ### <a name="set-team-member-permissions"></a>Impostare le autorizzazioni per i membri del team
 

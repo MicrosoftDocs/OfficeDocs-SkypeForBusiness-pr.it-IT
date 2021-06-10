@@ -30,7 +30,7 @@ ms.locfileid: "51598733"
 
 <a name="bkgeneral"> </a>
 
-Questo articolo descrive le impostazioni dei criteri generali seguenti per le riunioni di Teams:
+Questo articolo descrive le impostazioni dei criteri generali seguenti per Teams riunioni:
 
 - [Consenti l'uso di Riunione immediata nei canali](#allow-meet-now-in-channels)
 - [Consenti il componente aggiuntivo per Outlook](#allow-the-outlook-add-in)
@@ -90,7 +90,7 @@ Nell'interfaccia di amministrazione:
 
 L'app del calendario del canale sarà visualizzata nella sezione **App Microsoft** nella pagina dei criteri di autorizzazione delle app.
 
-![Screenshot che mostra i criteri di autorizzazione dell'app nell'interfaccia di amministrazione di Teams.](media/manage-microsoft-apps-policy.png)
+![Screenshot che mostra i criteri di autorizzazione dell'app nell'Teams di amministrazione.](media/manage-microsoft-apps-policy.png)
 
 ## <a name="allow-scheduling-private-meetings"></a>Consenti la pianificazione di riunioni private
 
@@ -145,9 +145,9 @@ Per specificare il componente aggiuntivo per le riunioni da rendere disponibile 
 
 ## <a name="meeting-reactions"></a>Reazioni alle riunioni
 
-L'impostazione AllowMeetingReactions può essere applicata solo con PowerShell. Non è possibile attivare o disattivare AllowMeetingReactions dall'interfaccia di amministrazione di Teams.
+L'impostazione AllowMeetingReactions può essere applicata solo tramite PowerShell. Non è possibile attivare o disattivare AllowMeetingReactions nell'interfaccia di amministrazione di Teams.
 
-Le reazioni alle riunioni sono disattivate per impostazione predefinita. La disattivazione delle reazioni per un utente non significa che un utente non può usare le reazioni nelle riunioni pianificate. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita.
+Le reazioni nelle riunioni sono disattivate per impostazione predefinita. Se si disattivano le reazioni di un utente non significa che un altro utente non può usare le reazioni nelle riunioni pianificate. L'organizzatore della riunione può comunque attivare le reazioni dalla pagina delle opzioni della riunione, indipendentemente dall'impostazione predefinita.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

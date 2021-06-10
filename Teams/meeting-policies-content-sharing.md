@@ -18,7 +18,7 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione di contenuti.
+description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione del contenuto.
 ms.openlocfilehash: 7b318ad0025d6c68b041c65d8fbb78cbfbc87723
 ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: MT
@@ -68,7 +68,7 @@ Se questa impostazione è attivata per l'utente, nella barra superiore di una se
 
 ![Screenshot che mostra l'opzione Concedi controllo](media/meeting-policies-give-control.png)
 
-Se l'impostazione è disattivata per l'utente, l'opzione **Consegni controllo** non è disponibile.
+Se l'impostazione è disattivata per l'utente, l'opzione **Concedi controllo** non è disponibile.
 
 ![Screenshot che mostra che l'opzione Concedi controllo non è disponibile](media/meeting-policies-give-control-not-available.png)
 

@@ -27,9 +27,9 @@ ms.locfileid: "50726789"
 ---
 # <a name="manage-bridge-settings-in-teams"></a>Gestire le impostazioni del bridge in Teams
 
-Prima e durante una riunione o una telefonata di Microsoft Teams, l'organizzatore della riunione ha diverse opzioni per scegliere le impostazioni del bridge. Per altre informazioni, vedere gli articoli seguenti:
+Prima e durante una riunione Microsoft Teams o una telefonata, l'organizzatore della riunione ha diverse opzioni per scegliere le impostazioni del bridge. Per altre informazioni, vedere gli articoli seguenti:
 
 - [Messaggi di posta elettronica inviati agli utenti quando le impostazioni cambiano in Teams](emails-sent-to-users-when-their-settings-change-in-teams.md)
 - [Consentire agli utenti di registrare i loro nomi quando aderiscono a una riunione](enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md)
-- [Disattivare gli annunci di entrata e uscita in una riunione di Teams](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md)
+- [Disattivare gli annunci di entrata e uscita in una Teams riunione](turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md)
 - [Mascherare i numeri di telefono](ptsn-mask-phone-numbers.md)

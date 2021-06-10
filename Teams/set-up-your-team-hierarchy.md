@@ -24,7 +24,7 @@ ms.locfileid: "51891283"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
-La configurazione di una gerarchia di targeting del team consentirà all'organizzazione di pubblicare contenuto in un set di team di grandi dimensioni. La gerarchia di destinazione del team definisce il modo in cui tutti i team della gerarchia sono correlati tra loro, quali utenti possono pubblicare attività e in quali team gli utenti hanno le autorizzazioni per la pubblicazione. Le caratteristiche di pubblicazione sono disabilitate per tutti gli utenti, a meno che non sia stata impostata una gerarchia di destinazione del team per l'organizzazione. Per configurare una gerarchia di destinazione del team, è necessario creare un file che definisce la gerarchia e quindi caricarlo in Teams per applicarlo all'organizzazione. Dopo il caricamento dello schema, le app all'interno di Teams possono usarlo.
+La configurazione di una gerarchia di targeting del team consentirà all'organizzazione di pubblicare contenuto in un set di team di grandi dimensioni. La gerarchia di destinazione del team definisce il modo in cui tutti i team della gerarchia sono correlati tra loro, quali utenti possono pubblicare attività e in quali team gli utenti hanno le autorizzazioni per la pubblicazione. Le caratteristiche di pubblicazione sono disabilitate per tutti gli utenti, a meno che non sia stata impostata una gerarchia di destinazione del team per l'organizzazione. Per configurare una gerarchia di destinazione del team, è necessario creare un file che definisce la gerarchia e quindi caricarlo in Teams per applicarla all'organizzazione. Dopo il caricamento dello schema, le app all Teams possono usarlo.
 
 > [!IMPORTANT]
 > Per la versione iniziale, solo l'app Attività supporta i team gerarchici.  L'applicazione di una gerarchia di destinazione del team all'organizzazione consentirà [la pubblicazione delle attività](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df) nell'app Attività. Non verrà visualizzata una gerarchia di team in altre aree di Microsoft Teams.
@@ -104,7 +104,7 @@ Dopo aver aggiunto le tre colonne obbligatorie, è possibile aggiungere colonne 
 
 Quando si aggiunge una colonna attributo, tenere presente quanto segue:
 
-* Il nome della colonna specificato o il nome della colonna specificato prima dei due punti (:) diventa il nome dell'attributo. Questo valore verrà visualizzato nelle app di Teams che usano la gerarchia.
+* Il nome della colonna specificato o il nome della colonna specificato prima dei due punti (:) diventa il nome dell'attributo. Questo valore verrà visualizzato nelle app Teams che usano la gerarchia.
 * Nella gerarchia possono essere presenti fino a 50 colonne di attributi.
 * Il nome della colonna può contenere fino a 100 caratteri e contenere solo i caratteri A-Z, a-z e 0-9 e gli spazi. I nomi di colonna devono essere univoci.
 
@@ -116,7 +116,7 @@ Categorizzando gli elementi di lavoro una sola volta centralmente, il team di pu
 
 Quando si aggiunge una colonna bucket, tenere presente quanto segue:
 
-* Il nome della colonna diventa il nome del contenitore. Ogni contenitore specificato verrà visualizzato nell'elenco Bucket nelle app di Teams che usano la gerarchia.
+* Il nome della colonna diventa il nome del contenitore. Ogni contenitore specificato verrà visualizzato nell'elenco Contenitori Teams app che usano la gerarchia.
 * È consigliabile non includere informazioni riservate nei nomi dei bucket. Al momento, i team di pubblicazione non possono rimuovere un bucket tramite la pubblicazione dopo che è stato creato.
 * Il nome della colonna deve essere preceduto da un hashtag (#). Può contenere fino a 100 caratteri e contenere solo i caratteri A-Z, a-z e 0-9. Ad esempio, #Operations e #Frozen beni.
 * Una gerarchia può contenere fino a 25 colonne di bucket. Microsoft prevede di collaborare con i clienti per aumentare questo limite per le organizzazioni più grandi.
@@ -150,7 +150,7 @@ Los Angeles Store,West Regional Zone,204a1287-2efb-4a8a-88e0-56fbaf5a2389,Large,
 
 ## <a name="apply-your-hierarchy"></a>Applicare la gerarchia
 
-Dopo aver definito la gerarchia nel file CSV dello schema, è possibile caricarla in Teams. A questo scopo, eseguire il comando seguente. Per eseguire questo passaggio, è necessario essere un amministratore globale o un amministratore del servizio Teams.
+Dopo aver definito la gerarchia nel file CSV dello schema, è possibile caricarla in Teams. A questo scopo, eseguire il comando seguente. Per eseguire questo passaggio, è necessario essere un amministratore globale o Teams del servizio.
 
 ```powershell
 Set-TeamTargetingHierarchy -FilePath "C:\ContosoTeamSchema.csv"
@@ -173,7 +173,7 @@ Il comando restituirà i campi seguenti:
 Campo|Descrizione
 -----|------------
 ID | ID univoco per il caricamento.
-Stato | Stato di caricamento. I valori **includono Starting**, **Validating**, **Successful** e **Failed**
+Stato | Upload stato. I valori **includono Starting**, **Validating**, **Successful** e **Failed**
 ErrorDetails | Dettagli se c'è un errore di caricamento. Per altre informazioni sui dettagli dell'errore, vedere la sezione Risoluzione dei problemi. Se non ci sono errori, questo campo è vuoto.
 LastUpdatedAt | Data e ora dell'ultimo aggiornamento del file.
 LastModifiedBy | ID dell'ultimo utente che ha modificato il file.
@@ -193,14 +193,14 @@ Quando si conferma l'eliminazione, il messaggio di stato continuerà a visualizz
 
 ## <a name="create-a-sample-hierarchy"></a>Creare una gerarchia di esempio
 
-### <a name="install-the-teams-powershell-module"></a>Installare il modulo di PowerShell di Teams
+### <a name="install-the-teams-powershell-module"></a>Installare il modulo Teams PowerShell
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare il modulo di anteprima pubblica di PowerShell di Teams dalla [raccolta di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/) Per la procedura di installazione del modulo, vedere [Installare Teams PowerShell.](teams-powershell-install.md)
+> Per eseguire questo passaggio, è necessario installare e usare il Teams di anteprima pubblica di PowerShell dalla [raccolta di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/) Per la procedura di installazione del modulo, vedere Installare [Teams PowerShell.](teams-powershell-install.md)
 
 ### <a name="sample-script"></a>Script di esempio
 
-Lo script seguente può essere usato per creare i team e caricare un file CSV nel tenant di Microsoft Teams. Se si ha una gerarchia esistente, questo script la sostituirà.
+Lo script seguente può essere usato per creare i team e caricare un file .csv nel tenant Microsoft Teams team. Se si ha una gerarchia esistente, questo script la sostituirà.
 
 #### <a name="create-teams-for-a-simple-hierarchy"></a>Creare team per una gerarchia semplice
 
@@ -227,14 +227,14 @@ $csvOutput = $csvOutput + $tm6.DisplayName + "," + $tm5.DisplayName + "," + $tm6
 $csvOutput = $csvOutput + $tm7.DisplayName + "," + $tm5.DisplayName + "," + $tm7.GroupID 
 ```
 
-#### <a name="save-output-to-a-csv-file-in-the-downloads-folder"></a>Salvare l'output in un file CSV nella **cartella** Download
+#### <a name="save-output-to-a-csv-file-in-the-downloads-folder"></a>Salvare l'output in .csv file nella **cartella** Download
 
 ```powershell
 $csvOutputPath = $env:USERPROFILE + "\downloads\testhierarchy-" + (Get-Date -Format "yyyy-MM-dd-hhmmss") + ".csv" 
 $csvOutput | Out-File $csvOutputPath
 ```
 
-#### <a name="upload-the-hierarchy"></a>Caricare la gerarchia
+#### <a name="upload-the-hierarchy"></a>Upload gerarchia
 
 ```powershell
 Set-TeamTargetingHierarchy -FilePath $csvOutputPath
@@ -264,13 +264,13 @@ Error: InvalidTeamId
 Description: TeamID in row # doesn't match a valid Group ID. Please view our documentation to learn how to get the proper GroupID for each team.
 ```
 
-Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID Team deve essere uguale all'ID gruppo del gruppo di Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'interfaccia di amministrazione di Microsoft Teams.
+Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID Team deve essere uguale all'ID gruppo del gruppo Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'Microsoft Teams di amministrazione.
 
-1. Nel riquadro di spostamento sinistro [dell'interfaccia di amministrazione di Microsoft Teams](https://admin.teams.microsoft.com/)passare a **Teams**  >  **Manage teams**.
+1. Nel riquadro di spostamento sinistro [dell'interfaccia Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/)passare Teams Gestisci   >  **team.**
 2. Se la **colonna ID** gruppo non è visualizzata nella tabella, selezionare Modifica colonne nell'angolo **in** alto a destra della tabella e quindi attivare **ID gruppo.**
 3. Trovare il team nell'elenco e quindi individuare l'ID gruppo.
 
-Verificare che l'ID Team nel file CSV dello schema corrisponda all'ID gruppo visualizzato nell'interfaccia di amministrazione di Microsoft Teams.
+Verificare che l'ID team nel file CSV dello schema corrisponda all'ID gruppo visualizzato nell'interfaccia di amministrazione Microsoft Teams lavoro.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

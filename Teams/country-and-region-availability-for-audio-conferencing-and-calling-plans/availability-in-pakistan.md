@@ -73,7 +73,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |No  <br/> |
    
- Si noti che in Pakistan i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se vuoi ottenere numeri a numero verde e a numero verde per audioconferenze, vedi Ottenere i numeri di servizio per [Skype for Business e Microsoft Teams.](../getting-service-phone-numbers.md)
+ Si noti che in Pakistan i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se si vogliono ottenere numeri a numero verde e a numero verde per le audioconferenze, vedere Ottenere i numeri di telefono del servizio per Skype for Business [e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

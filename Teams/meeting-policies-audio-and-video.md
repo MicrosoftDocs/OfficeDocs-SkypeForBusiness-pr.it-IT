@@ -18,7 +18,7 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per l'audio e il video.
+description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
 ms.openlocfilehash: 3f7a557555d6846c4ada792ceb05da43ce91ed0f
 ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
 ms.translationtype: MT
@@ -73,7 +73,7 @@ Questo è un criterio per utente. Questa impostazione controlla se l'audio può 
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
-|**Audio in uscita e in arrivo abilitato**    |L'audio in uscita e in arrivo è consentito nella riunione. Questa è l'impostazione predefinita. |
+|**Audio in uscita e in arrivo abilitato**    |Per impostazione predefinita, sia l’audio in entrata che in uscita sono consentiti nella riunione. |
 |**Disattiva**     |L'audio in uscita e in arrivo è disattivato nella riunione.     |
 
 Se l'opzione è impostata su **Disabilitato** per un utente, tale utente può comunque pianificare e organizzare riunioni ma senza poter usare l'audio. Per partecipare a una riunione, deve connettersi telefonicamente tramite la rete PSTN (Public Switched Telephone Network) o dal telefono. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Audio in uscita e in arrivo abilitato** per impostazione predefinita. Nei client per dispositivi mobili di Teams, se questa impostazione è disabilitata, l'utente deve connettersi telefonicamente alla riunione tramite PSTN.
@@ -106,7 +106,7 @@ Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riun
 
 ### <a name="allow-ip-video"></a>Consenti video IP
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei client mobili di Teams, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione. 
+Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei Teams per dispositivi mobili, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione. 
 
 Le riunioni organizzate da un utente che ha questa impostazione di criteri abilitata consentono la condivisione di video nella riunione da parte dei partecipanti, se anche questi ultimi hanno l'impostazione di criteri abilitata. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 

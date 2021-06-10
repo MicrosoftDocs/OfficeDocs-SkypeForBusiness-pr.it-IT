@@ -1,5 +1,5 @@
 ---
-title: Considerazioni e autorizzazioni per le app di Microsoft Teams
+title: Microsoft Teams e considerazioni sulle app
 author: rmw2890
 ms.author: rowille
 manager: serdars
@@ -12,7 +12,7 @@ ms.collection:
 - M365-collaboration
 search.appverid: MET150
 ms.reviewer: rowille
-description: L'amministratore può scoprire quali dati e autorizzazioni le app di Microsoft Teams richiedono all'organizzazione.
+description: L'amministratore può scoprire quali dati e autorizzazioni Microsoft Teams app richiedono all'organizzazione.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -26,9 +26,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51120858"
 ---
-# <a name="microsoft-teams-apps-permissions-and-considerations"></a>Considerazioni e autorizzazioni per le app di Microsoft Teams
+# <a name="microsoft-teams-apps-permissions-and-considerations"></a>Microsoft Teams e considerazioni sulle app
 
-Le app di Microsoft Teams consentono di aggregare una o più funzionalità in un pacchetto di _app_ che può essere installato, aggiornato e disinstallato. Le funzionalità includono:
+Microsoft Teams sono un modo per aggregare una o più funzionalità in un pacchetto di _app_ che può essere installato, aggiornato e disinstallato. Le funzionalità includono:
 
 - Bot
 - Estensioni di messaggistica
@@ -37,7 +37,7 @@ Le app di Microsoft Teams consentono di aggregare una o più funzionalità in un
 
 Le app sono autorizzate dagli utenti e gestite dall'IT dal punto di vista dei criteri. Tuttavia, per la maggior parte, le autorizzazioni e il profilo di rischio di un'app sono definiti dalle autorizzazioni e dai profili di rischio delle funzionalità contenute nell'app. Di conseguenza, questo articolo si concentra sulle autorizzazioni e sulle considerazioni a livello di funzionalità.
 
-Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate nella documentazione per sviluppatori di [Microsoft Teams](/microsoftteams/platform/overview) o nelle autorizzazioni per [Microsoft Graph.](/graph/permissions-reference) Si tratta semplicemente di una abbreviazione descrittiva ai fini di questo articolo.
+Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate nella documentazione per sviluppatori di [Microsoft Teams](/microsoftteams/platform/overview) o nelle autorizzazioni per [Microsoft Graph](/graph/permissions-reference). Si tratta semplicemente di una abbreviazione descrittiva ai fini di questo articolo.
 
 
 | Titolo   | Descrizione    |
@@ -45,7 +45,7 @@ Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_M
 | ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Usare le tabelle seguenti come guida per comprendere le autorizzazioni richieste dall'app che si sta esaminando.</li></ul> |
 | ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se consentire l'accesso all'app o al servizio stesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, ad eccezione dei bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Pertanto, qualsiasi app che include un bot richiede queste autorizzazioni e ha almeno quel profilo di rischio. </li></ul>|
 
-Vedere anche [Richiedere autorizzazioni per i dispositivi per la scheda Microsoft Teams.](/microsoftteams/platform/concepts/device-capabilities/native-device-permissions)
+Vedere anche [Richiedere autorizzazioni per i dispositivi per la Microsoft Teams scheda .](/microsoftteams/platform/concepts/device-capabilities/native-device-permissions)
 
 ## <a name="global-app-permissions-and-considerations"></a>Considerazioni e autorizzazioni per le app globali
 
@@ -61,9 +61,9 @@ Nessuno
 
 - Un'app deve divulgare i dati usati e i relativi collegamenti alle condizioni d'uso e all'informativa sulla privacy.
 
-- [Il consenso specifico delle](resource-specific-consent.md) risorse fornisce un set di autorizzazioni che le app possono richiedere, che vengono visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni di consenso specifiche delle risorse, vedere Informazioni [di riferimento sulle autorizzazioni del grafico.](/graph/permissions-reference#teams-resource-specific-consent-permissions)
+- [Il consenso specifico delle](resource-specific-consent.md) risorse fornisce un set di autorizzazioni che le app possono richiedere, che vengono visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni di consenso specifiche delle risorse, vedere informazioni di [Graph sulle autorizzazioni.](/graph/permissions-reference#teams-resource-specific-consent-permissions)
 
-- Le app potrebbero anche avere bisogno di autorizzazioni diverse da quelle specifiche per le risorse. Dopo l'installazione di un'app, l'app può richiedere le autorizzazioni di Graph tramite una richiesta di consenso. Per altre informazioni, vedere Informazioni sulle esperienze [di consenso delle applicazioni di Azure AD.](/azure/active-directory/develop/application-consent-experience) È possibile configurare le autorizzazioni API e il consenso nel portale di Azure. Per altre informazioni, vedere Framework di consenso [di Azure Active Directory.](/azure/active-directory/develop/consent-framework)
+- Le app potrebbero anche avere bisogno di autorizzazioni diverse da quelle specifiche per le risorse. Dopo l'installazione di un'app, l'app può richiedere Graph autorizzazioni tramite una richiesta di consenso. Per altre informazioni, vedere Informazioni sulle esperienze [di consenso delle applicazioni di Azure AD.](/azure/active-directory/develop/application-consent-experience) È possibile configurare le autorizzazioni API e il consenso nel portale di Azure. Per altre informazioni, vedere Azure Active Directory [framework di consenso.](/azure/active-directory/develop/consent-framework)
 
 ## <a name="bots-and-messaging-extensions"></a>Bot ed estensioni di messaggistica
 
@@ -101,7 +101,7 @@ Nessuno
 
 - È in teoria possibile che i messaggi bot contengano collegamenti a siti di phishing o malware, ma i bot possono essere bloccati dall'utente, dall'amministratore del tenant o globalmente da Microsoft.
 
-- Un bot può recuperare (e archiviare) informazioni di identità molto di base per i membri del team a cui è stata aggiunta l'app o per i singoli utenti nelle chat personali o di gruppo. Per ottenere altre informazioni su questi utenti, il bot deve richiedere l'accesso ad Azure Active Directory (Azure AD).
+- Un bot può recuperare (e archiviare) informazioni di identità molto di base per i membri del team a cui è stata aggiunta l'app o per i singoli utenti nelle chat personali o di gruppo. Per ottenere altre informazioni su questi utenti, il bot deve richiedere l'accesso a Azure Active Directory (Azure AD).
 
 - I bot possono recuperare (e archiviare) l'elenco dei canali in un team; questi dati lasciano la rete aziendale.
 
@@ -117,18 +117,18 @@ Nessuno
 
 - Le linee guida per le app (e il processo di revisione di AppSource) richiedono la discrezione di pubblicare messaggi di chat personali agli utenti (tramite l'autorizzazione POST_MESSAGE_TEAM) per scopi validi. In caso di abuso, gli utenti possono bloccare il bot, gli amministratori del tenant possono bloccare l'app e Microsoft può bloccare i bot centralmente, se necessario.
 
-<sup>1</sup> Alcuni bot inviano solo messaggi (POST_MESSAGE_USER). Si chiamano bot "solo notifiche", ma il termine non fa riferimento a ciò che un bot è consentito o non può eseguire, significa che il bot non vuole esporre un'esperienza di conversazione. Teams usa questo campo per disabilitare nell'interfaccia utente la funzionalità che normalmente verrebbe abilitata; il bot non è limitato alle attività consentite rispetto ai bot che espongono un'esperienza di conversazione.
+<sup>1</sup> Alcuni bot inviano solo messaggi (POST_MESSAGE_USER). Si chiamano bot "solo notifiche", ma il termine non fa riferimento a ciò che un bot è consentito o non può eseguire, significa che il bot non vuole esporre un'esperienza di conversazione. Teams usa questo campo per disabilitare la funzionalità nell'interfaccia utente che normalmente verrebbe abilitata; il bot non è limitato alle attività consentite rispetto ai bot che espongono un'esperienza di conversazione.
 
 <sup>2</sup> Regolato dalla proprietà booleana supportsFiles sull'oggetto bot nell'manifest.jsfile per l'app.
 
 > [!NOTE]
 > Se un bot ha un proprio accesso, la prima volta che l'utente effettua l'accesso esiste un'esperienza di consenso diversa.
 >
->Attualmente, le autorizzazioni di Azure AD associate a qualsiasi funzionalità all'interno di un'app Teams (bot, scheda, connettore o estensione di messaggistica) sono completamente separate dalle autorizzazioni di Teams elencate di seguito.
+>Attualmente, le autorizzazioni di Azure AD associate a qualsiasi funzionalità all'interno di un'app Teams (bot, scheda, connettore o estensione di messaggistica) sono completamente separate dalle autorizzazioni Teams di messaggistica qui elencate.
 
 ## <a name="tabs"></a>Schede
 
-Una scheda è un sito Web in esecuzione all'interno di Teams.
+Una scheda è un sito Web in esecuzione all'interno Teams.
 
 ### <a name="required-permissions"></a>Autorizzazioni obbligatorie
 
@@ -142,7 +142,7 @@ Nessuno (attualmente)
 
 - Il profilo di rischio per una scheda è quasi identico allo stesso sito Web in esecuzione in una scheda del browser. 
 
-- Una scheda ottiene anche il contesto in cui è in esecuzione, inclusi il nome di accesso e l'UPN dell'utente corrente, l'ID oggetto di Azure AD per l'utente corrente, l'ID del gruppo di Microsoft 365 in cui si trova (se si tratta di un team), l'ID tenant e le impostazioni locali correnti dell'utente. Tuttavia, per mappare questi ID alle informazioni di un utente, la scheda deve rendere l'utente connesso ad Azure AD.
+- Una scheda ottiene anche il contesto in cui è in esecuzione, inclusi il nome di accesso e l'UPN dell'utente corrente, l'ID oggetto di Azure AD per l'utente corrente, l'ID del gruppo Microsoft 365 in cui si trova (se si tratta di un team), l'ID tenant e le impostazioni locali correnti dell'utente. Tuttavia, per mappare questi ID alle informazioni di un utente, la scheda deve rendere l'utente connesso ad Azure AD.
 
 ## <a name="connectors"></a>Connettori
 
@@ -177,7 +177,7 @@ REPLYTO_CONNECTOR_MESSAGE. Alcuni connettori supportano messaggi utilizzabili, c
 
 ## <a name="outgoing-webhooks"></a>Webhook in uscita
 
-*I webhook in uscita* vengono creati al volo dai proprietari del team o dai membri del team. Non sono funzionalità delle app di Teams. queste informazioni sono incluse per completezza.
+*I webhook in uscita* vengono creati al volo dai proprietari del team o dai membri del team. Non sono funzionalità delle Teams app. queste informazioni sono incluse per completezza.
 
 ### <a name="required-permissions"></a>Autorizzazioni obbligatorie
 
@@ -191,7 +191,7 @@ Nessuno
 
 - I webhook in uscita sono simili ai bot, ma hanno meno privilegi. Devono essere menzionati esplicitamente, proprio come i bot.
 
-- Quando viene registrato un webhook in uscita, viene generato un segreto, che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams anziché un utente malintenzionato. Questo segreto deve rimanere segreto; Chiunque abbia accesso ad essa può impersonare Microsoft Teams. Se il segreto viene compromesso, il webhook in uscita può essere eliminato e ri-creato e verrà generato un nuovo segreto.
+- Quando viene registrato un webhook in uscita, viene generato un segreto, che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams invece di un utente malintenzionato. Questo segreto deve rimanere segreto; chiunque abbia accesso ad esso può impersonare Microsoft Teams. Se il segreto viene compromesso, il webhook in uscita può essere eliminato e ri-creato e verrà generato un nuovo segreto.
 
 - Anche se è possibile creare un webhook in uscita che non convalida il segreto, è consigliabile non farlo.
 

@@ -22,7 +22,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: 'Vedere la procedura di Microsoft Teams per assegnare una licenza di conferenza telefonica con accesso esterno e un ID conferenza a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno. '
+description: 'Vedere Microsoft Teams procedura per assegnare una licenza e un ID conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno. '
 ms.openlocfilehash: 96a8995b995340642c6b58be9d5062eacd3cd29c
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "51101092"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni di audioconferenza per l'organizzazione in Microsoft Teams
 
-Potrebbe essere più facile visualizzare tutte le impostazioni di audioconferenza per Microsoft Teams in un'unica posizione. 
+Potrebbe essere più facile visualizzare tutte le impostazioni di audioconferenza Microsoft Teams in un'unica posizione. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
@@ -40,20 +40,20 @@ Potrebbe essere più facile visualizzare tutte le impostazioni di audioconferenz
 ## <a name="assign-an-audio-conferencing-license"></a>Assegnare una licenza di audioconferenza
 
 > [!NOTE]
-> Non è possibile assegnare licenze con Teams. È necessario usare l'interfaccia di amministrazione di Microsoft 365. Vedere [Assegnare licenze per i componenti aggiuntivi di Microsoft Teams.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) 
+> Non è possibile assegnare licenze usando Teams. È necessario usare l'interfaccia Microsoft 365 di amministrazione. Vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) 
   
  **Per assegnare una licenza per un utente**
   
 1. Accedere a Microsoft 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di **Microsoft 365** passare a Utenti utenti attivi e quindi selezionare l'utente o gli utenti nell'elenco degli  >  utenti disponibili.
+2. Nel riquadro di spostamento sinistro dell Microsoft 365 di amministrazione passare a Utenti utenti attivi e quindi selezionare l'utente o gli utenti nell'elenco  >  degli utenti disponibili.
     
     > [!NOTE]
     > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**.  
   
 3. Nel riquadro Azioni, in **Licenze prodotti**, fai clic su **Modifica**. 
     
-4. Nella pagina **Licenze per i prodotti**, attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, vedere [Licenze per i componenti aggiuntivi di Microsoft Teams.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+4. Nella pagina **Licenze per i prodotti**, attiva **Servizi di Audioconferenza** e quindi fai clic su **Salva**. Per altre informazioni sulle licenze, [Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
     
    > [!NOTE]
    > Dopo aver assegnato la licenza, Microsoft potrebbe non comparire inizialmente nell'elenco come provider di servizi di audioconferenza. In questo caso, disconnettersi dall'interfaccia di amministrazione o premere CTRL+F5 per aggiornare la finestra del browser. 
@@ -73,11 +73,11 @@ Potrebbe essere più facile visualizzare tutte le impostazioni di audioconferenz
     
 **Uso di Windows PowerShell**
   
-Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)
+Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
   
 ## <a name="reset-the-meeting-conference-id"></a>Accedi a Office 365 con l'account aziendale o dell'istituto di istruzione.
 
-![Icona che mostra il logo di Teams ](media/teams-logo-30x30.png) **Usando l'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il logo Teams ](media/teams-logo-30x30.png) **con l'interfaccia Microsoft Teams di amministrazione**
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -215,7 +215,7 @@ See [Set auto attendant languages for Audio Conferencing](set-auto-attendant-lan
 Vedere [Visualizzare un elenco di numeri di audioconferenza.](see-a-list-of-audio-conferencing-numbers-in-teams.md)
   
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

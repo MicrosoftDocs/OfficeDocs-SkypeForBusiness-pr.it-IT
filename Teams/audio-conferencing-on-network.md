@@ -39,15 +39,15 @@ Questo articolo descrive i prerequisiti e i passaggi di configurazione necessari
 
 Prima di configurare le conferenze in rete, assicurarsi che l'organizzazione soddisfi i prerequisiti seguenti: 
 
-- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o abilitati per le audioconferenze utilizzino Teams per tutte le riunioni. Il routing delle chiamate di audioconferenza in ingresso e in uscita tramite conferenze in rete è supportato solo per le riunioni di Teams.
+- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o abilitati per le audioconferenze utilizzino Teams per tutte le riunioni. L'instradamento delle chiamate di audioconferenza in ingresso e in uscita tramite conferenze in rete è supportato solo per le Teams riunioni.
 
 - Assegnare licenze di audioconferenza a tutti gli utenti che usano servizi di conferenza in rete.
 
-- Configurare il servizio di audioconferenza. Per altre informazioni, vedere [Configurare audioconferenze per Microsoft Teams.](set-up-audio-conferencing-in-teams.md)
+- Configurare il servizio di audioconferenza. Per altre informazioni, vedere [Configurare le audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md).
 
 - Configurare il session border controller (SBC) per il routing diretto. Per altre informazioni, vedere [Pianificare il routing diretto](direct-routing-plan.md) e Configurare il routing [diretto.](direct-routing-configure.md) 
 
-  Se si configura il routing diretto solo ai fini delle audioconferenze, è necessario completare solo il "Passaggio 1: Connettere il proprio SBC" per le conferenze in rete.
+  Se si configura il routing diretto solo ai fini delle audioconferenze, è necessario completare solo "Passaggio 1: Connessione SBC" per le conferenze in rete.
   
 ## <a name="enable-the-routing-of-dial-in-calls-to-microsoft-audio-conferencing-through-direct-routing"></a>Abilitare il routing delle chiamate con accesso esterno alle audioconferenze Microsoft tramite routing diretto 
 
@@ -55,16 +55,16 @@ Per instradare le chiamate con accesso esterno effettuate dagli utenti locali al
 
 È necessario configurare le apparecchiature di telefonia dei siti per instradare le chiamate a qualsiasi numero di servizio del bridge di conferenza dell'organizzazione tramite un trunk di routing diretto.
 
-È possibile trovare i numeri di servizio nell'interfaccia di amministrazione di Teams in Riunioni **-> Conferencing Bridges** o usando il cmdlet di PowerShell di Skype for Business Online Get-CsOnlineDialInConferencingBridge. Per altre informazioni, vedere un elenco di numeri [di audioconferenza in Microsoft Teams.](see-a-list-of-audio-conferencing-numbers-in-teams.md)
+È possibile trovare i numeri di servizio nell Teams intervalla di amministrazione in Riunioni **-> Conferencing Bridges** o usando il cmdlet di PowerShell di Skype for Business Online Get-CsOnlineDialInConferencingBridge. Per altre informazioni, vedere un elenco di numeri [di audioconferenza in Microsoft Teams](see-a-list-of-audio-conferencing-numbers-in-teams.md).
 
 > [!NOTE]
 > Questa funzionalità non è disponibile per gli utenti con la licenza di audioconferenza a pagamento al minuto.
 
-## <a name="enable-the-routing-of-teams-meeting-dial-out-calls-through-direct-routing"></a>Abilitare l'instradamento delle chiamate in uscita delle riunioni di Teams tramite Routing diretto
+## <a name="enable-the-routing-of-teams-meeting-dial-out-calls-through-direct-routing"></a>Abilitare l'instradamento Teams chiamate in uscita tramite Routing diretto
 
-Le chiamate in uscita di Teams vengono avviate dall'interno di una riunione dell'organizzazione ai numeri PSTN, incluse le chiamate con chiamata al telefono e le chiamate per portare i nuovi partecipanti a una riunione. 
+Teams le chiamate in uscita di una riunione vengono avviate dall'interno di una riunione dell'organizzazione ai numeri PSTN, incluse le chiamate con chiamata al telefono e le chiamate per portare i nuovi partecipanti a una riunione. 
 
-Per abilitare il routing esterno delle riunioni di Teams tramite Routing diretto agli utenti in rete, è necessario creare e assegnare un criterio di routing delle audioconferenze denominato "OnlineAudioConferencingRoutingPolicy". 
+Per abilitare Teams routing esterno delle riunioni tramite Routing diretto agli utenti in rete, è necessario creare e assegnare un criterio di routing delle audioconferenze denominato "OnlineAudioConferencingRoutingPolicy". 
 
 Il criterio OnlineAudioConferencingRoutingPolicy equivale al criterio CsOnlineVoiceRoutingPolicy per le chiamate PSTN 1:1 tramite routing diretto. Il criterio OnlineAudioConferencingRoutingPolicy può essere gestito usando i cmdlet seguenti:
 
@@ -83,7 +83,7 @@ Per abilitare l'instradamento delle chiamate in uscita delle riunioni tramite Ro
 - Configurare il routing nell'apparecchiatura di telefonia dell'organizzazione
 - (Facoltativo) Configurare un piano di chiamata
 
-Le chiamate in uscita dalle riunioni di Teams vengono effettuate dal numero di servizio predefinito sul bridge di conferenza. Per altre informazioni sul numero di servizio predefinito del bridge di audioconferenza, vedere Modificare i numeri di telefono [nel bridge di audioconferenza.](change-the-phone-numbers-on-your-audio-conferencing-bridge.md)
+Le chiamate in uscita provenienti Teams riunioni sono provenienti dal numero di servizio predefinito sul bridge di conferenza. Per altre informazioni sul numero di servizio predefinito del bridge di audioconferenza, vedere Modificare i numeri di telefono [nel bridge di audioconferenza.](change-the-phone-numbers-on-your-audio-conferencing-bridge.md)
 
 ### <a name="configure-audio-conferencing-routing-policies"></a>Configurare i criteri di routing delle audioconferenze
 
@@ -108,7 +108,7 @@ Set-CsOnlinePstnUsage -Identity Global -Usage @{Add="US and Canada"}
 
 #### <a name="configure-voice-routes"></a>Configurare le route vocali
 
-Le route vocali determinano il gateway PSTN che deve essere usato per instradare una chiamata in base al numero di telefono composto da una riunione di Teams. Le route vocali determinano il gateway PSTN che deve essere usato per instradare una determinata chiamata abbinando il numero di telefono composto da una riunione di Teams con uno schema regex. Quando si crea una route vocale, la route deve essere associata a uno o più utilizzi PSTN.
+Le route vocali determinano il gateway PSTN che deve essere usato per instradare una chiamata in base al numero di telefono composto da una Teams riunione. Le route vocali determinano il gateway PSTN che deve essere usato per instradare una determinata chiamata abbinando il numero di telefono composto da una riunione Teams con uno schema regex. Quando si crea una route vocale, la route deve essere associata a uno o più utilizzi PSTN.
 
 È possibile creare una route vocale e definire l'espressione regolare e i gateway da associare alla route vocale usando il cmdlet "New-CsOnlineVoiceRoute". Per esempio:
 
@@ -148,7 +148,7 @@ Nelle apparecchiature di telefonia dell'organizzazione è necessario assicurarsi
 
 Un piano di chiamata è un set di regole di normalizzazione che traducono i numeri di telefono digitati da un singolo utente in un formato alternativo (in genere E.164) ai fini dell'autorizzazione delle chiamate e del routing delle chiamate.
 
-Per impostazione predefinita, gli utenti di Teams possono effettuare chiamate in uscita verso numeri PSTN in formato E.164, ad esempio + \<country code\> \<number\> . Tuttavia, i piani di chiamata possono essere usati per consentire agli utenti di comporre numeri di telefono in altri formati, ad esempio estensioni a 4 cifre.
+Per impostazione predefinita, Teams gli utenti possono effettuare chiamate in uscita verso numeri PSTN in formato E.164, ad esempio + \<country code\> \<number\> . Tuttavia, i piani di chiamata possono essere usati per consentire agli utenti di comporre numeri di telefono in altri formati, ad esempio estensioni a 4 cifre.
 
 Se si vuole abilitare la composizione basata sull'interno tramite servizi di conferenza telefonica in rete, è possibile configurare i piani di chiamata in modo che corrispondano allo schema di composizione dell'interno agli intervalli di numeri di telefono del numero di telefono dell'organizzazione. Per configurare i dial plan, vedere [Creare e gestire i dial plan.](create-and-manage-dial-plans.md)
 

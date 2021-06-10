@@ -9,7 +9,7 @@ ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
-description: Usare gli elenchi di controllo per l'onboarding per preparare Microsoft 365 o Office 365 per Teams e configurare le funzionalità principali di Teams, i carichi di lavoro di rete e vocali nel cloud.
+description: Usare gli elenchi di controllo di onboarding per preparare Microsoft 365 o Office 365 per Teams e configurare Teams funzionalità di base, rete e carichi di lavoro vocali cloud.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -30,36 +30,36 @@ ms.locfileid: "51103972"
 
 Questo articolo offre una panoramica dei requisiti per la preparazione dei servizi vocali cloud per l'organizzazione. La preparazione corretta consente di essere certi di essere pronti a fornire funzionalità vocali cloud all'organizzazione.
 
-## <a name="onboarding-checklists-for-microsoft-teams-voice-workloads"></a>Elenchi di controllo per l'onboarding per i carichi di lavoro vocali di Microsoft Teams
+## <a name="onboarding-checklists-for-microsoft-teams-voice-workloads"></a>Elenchi di controllo per l'onboarding Microsoft Teams dei carichi di lavoro vocali
 
-Gli elenchi di controllo seguenti illustrano i passaggi per l'implementazione delle funzionalità audioconferenze, Sistema telefonico con piani per chiamate ("Piani per chiamate") e Routing diretto del sistema telefonico in Microsoft Teams.
+Gli elenchi di controllo seguenti illustrano i passaggi per l'implementazione delle funzionalità di audioconferenza, Sistema telefonico con piani per chiamate ("Piani per chiamate") e funzionalità di Sistema telefonico Direct Routing ("Instradamento diretto") in Microsoft Teams.
 
 *  [Preparare Microsoft 365 o Office 365 per Teams](onboarding-checklist-enable-office-365.md)
 
-*  [Configurare le funzionalità principali di Teams](onboarding-checklist-configure-microsoft-teams-core-capabilities.md)
+*  [Configurare le Teams principali](onboarding-checklist-configure-microsoft-teams-core-capabilities.md)
 
 *  [Preparare la rete](prepare-network.md)
 
-*  [Configurare i carichi di lavoro vocali nel cloud in Teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md)
+*  [Configurare i carichi di lavoro vocali cloud in Teams](onboarding-checklist-configure-cloud-voice-workloads-in-Microsoft-Teams.md)
 
 *  [Configurare il routing diretto in Teams](onboarding-checklist-configure-direct-routing-in-Microsoft-Teams.md)
 
-Le attività e le attività in questi elenchi di controllo sono gli elementi di base che si applicano a ogni distribuzione di funzionalità vocali cloud con Teams. È possibile personalizzare gli elenchi di controllo in modo da includere le attività e le attività specifiche per il proprio percorso di Teams.
+Le attività e le attività in questi elenchi di controllo sono le attività principali che si applicano a ogni distribuzione di funzionalità vocali cloud con Teams. È possibile personalizzare gli elenchi di controllo in modo da includere le attività e le attività specifiche per il proprio Teams viaggio.
 
 >[!NOTE]
->Queste indicazioni sono incentrate esclusivamente su Piani per chiamate, audioconferenze e routing diretto. Per i nuovi utenti di Teams, vedere [Panoramica di Microsoft Teams.](teams-overview.md) Per indicazioni generali sulla pianificazione della distribuzione di Teams, iniziare con [Distribuire chat, team, canali e app in Microsoft Teams.](deploy-chat-teams-channels-microsoft-teams-landing-page.md)
+>Queste indicazioni sono incentrate esclusivamente su Piani per chiamate, audioconferenze e routing diretto. Se non si ha la Teams, vedere Panoramica [di Microsoft Teams](teams-overview.md). Per indicazioni generali sulla pianificazione della distribuzione Teams, iniziare con Distribuire [chat, team,](deploy-chat-teams-channels-microsoft-teams-landing-page.md)canali e app in Microsoft Teams.
 
 Usare gli elenchi di controllo forniti per tenere traccia dello stato di ogni singola attività e attività e per assicurarsi di non aver ignorato i passaggi critici. Ogni attività include una descrizione dettagliata delle azioni richieste e riferimenti a informazioni aggiuntive che è possibile usare per completare l'attività.
 
-Anche se è consigliabile seguire gli elenchi di controllo nell'ordine indicato, la sequenza esatta dipenderà dall'ambito della distribuzione e dalla configurazione e dalla complessità dell'ambiente. Sono organizzate per supportare la distribuzione di Teams "greenfield" (una senza presenza precedente in Skype for Business online) o la migrazione da Skype for Business Online a Teams. Se stai eseguendo la migrazione da Skype for Business online, potresti aver già completato alcune di queste attività e puoi ignorarle ora.
+Anche se è consigliabile seguire gli elenchi di controllo nell'ordine indicato, la sequenza esatta dipenderà dall'ambito della distribuzione e dalla configurazione e dalla complessità dell'ambiente. Sono organizzate per supportare una distribuzione Teams "greenfield" (una senza presenza Skype for Business Online precedente) o per eseguire la migrazione da Skype for Business Online a Teams. Se si esegue la migrazione da Skype for Business Online, è possibile che alcune di queste attività sono già state completate e che ora sia possibile ignorarle.
 
 Quando si esegue l'onboarding degli utenti in base al sito, è consigliabile usare il Playbook di abilitazione del sito per la voce [(Playbook)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/site-enablement-playbook-for-voice-(playbook).xlsx?raw=true) come guida supplementare a questi elenchi di controllo.
 
 >[!NOTE]
->La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business online. Usare l'interfaccia di amministrazione di Microsoft 365 e l'interfaccia di amministrazione di Microsoft Teams per configurare queste impostazioni.
+>La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business Online. Usare l'interfaccia Microsoft 365 e l'Microsoft Teams di amministrazione per configurare queste impostazioni.
 
 <table>
-<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Chi sarà responsabile della supervisione del completamento degli elenchi di controllo per l'onboarding?</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Who sarà responsabile della supervisione del completamento degli elenchi di controllo per l'onboarding?</li></ul></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Scaricare gli elenchi di controllo per l'onboarding.</li><li>Usare gli elementi dell'elenco di controllo per l'onboarding in modo dettagliato in base al piano di distribuzione dell'organizzazione.</li></ul></td></tr>
 </table>
 
@@ -67,7 +67,7 @@ Quando si esegue l'onboarding degli utenti in base al sito, è consigliabile usa
 
 ## <a name="continue-onboarding"></a>Continuare l'onboarding
 
-Dopo aver completato questi elenchi di controllo, le funzionalità vocali saranno state aggiunte correttamente alla distribuzione di Teams.
+Dopo aver completato questi elenchi di controllo, le funzionalità vocali sono state aggiunte correttamente alla Teams distribuzione.
 
 Come passaggio successivo, usare il Playbook di abilitazione del sito per la voce [(Playbook)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/site-enablement-playbook-for-voice-(playbook).xlsx?raw=true) per facilitare l'onboarding degli utenti in ogni sito e garantire la pianificazione e l'esecuzione di importanti attività specifiche del sito.
 
@@ -81,7 +81,7 @@ Come passaggio successivo, usare il Playbook di abilitazione del sito per la voc
 
 ## <a name="test-cloud-voice-workloads-in-teams"></a>Testare i carichi di lavoro vocali nel cloud in Teams
 
-Dopo aver definito e documentato i piani di successo e implementazione tecnica di Teams nel cloud come parte della fase Envision e aver intrapreso la configurazione desiderata nell'interfaccia di amministrazione, il passaggio successivo consiste nel verificare che le aspettative e i requisiti dell'organizzazione siano soddisfatti tramite funzionalità, funzionalità e usabilità. È consigliabile eseguire questo passaggio di convalida prima di distribuire una distribuzione pilota o finale nell'ambiente di produzione.
+Dopo aver definito e documentato i piani di successo e implementazione tecnica di Teams cloud voice nell'ambito della fase Envision e aver intrapreso la configurazione desiderata nell'interfaccia di amministrazione, il passaggio successivo consiste nel verificare che le aspettative e i requisiti dell'organizzazione siano soddisfatti tramite funzionalità, funzionalità e usabilità. È consigliabile eseguire questo passaggio di convalida prima di distribuire una distribuzione pilota o finale nell'ambiente di produzione.
 
 È possibile sfruttare il piano di successo aziendale definito durante la fase di Envision per fungere da base per determinare le attività, le aspettative, i test case di funzionalità/funzionalità e l'ambito generale da valutare durante la fase di test.
 
@@ -92,7 +92,7 @@ Nella sua forma più semplice, l'approccio di test si basa sulla revisione delle
 
 | Funzionalità di audioconferenza da testare | Riepilogo dei risultati | Note aggiuntive |
 |------------|-----------------|------------------|
-| Pianificare una riunione di Teams ad hoc contenente informazioni sull'accesso esterno per audioconferenza | Pass/Fail   | TBD |
+| Pianificare una riunione ad hoc Teams conferenza telefonica con accesso esterno | Pass/Fail   | TBD |
 | Usare un telefono per l'audio della riunione componendo una riunione dalla RETE PSTN con le informazioni di accesso fornite | Pass/Fail | TBD |
 | Partecipare ad altre persone a una riunione esistente tramite chiamata in uscita tramite PSTN | Pass/Fail | TBD |
 
@@ -102,17 +102,17 @@ Nella sua forma più semplice, l'approccio di test si basa sulla revisione delle
 |----------------------------------------------------|-----------------|------------------|
 | Effettuare una chiamata PSTN componendo un numero PSTN       | Pass/Fail       | TBD |
 | Ricevere una chiamata PSTN componendo il numero PSTN da una linea esterna (cellulare, rete fissa) | Pass/Fail | TBD|
-| Trasferire una chiamata PSTN da un utente di Teams a un altro | Pass/Fail | TBD |
+| Trasferire una chiamata PSTN da un Teams utente a un altro | Pass/Fail | TBD |
 
 
 >[!TIP]
->Per facilitare la creazione di test case come punto di partenza, vedere l'elenco delle indicazioni per gli utenti disponibili in [Riunioni e chiamate di Teams.](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8#bkmk_havingmeetings)
+>Per agevolare la creazione di test case come punto di partenza, vedere l'elenco delle indicazioni per l'utente disponibili in [Riunioni e chiamate di Teams.](https://support.office.com/article/Meetings-and-calls-d92432d5-dd0f-4d17-8f69-06096b6b48a8#bkmk_havingmeetings)
 
 <!--ENDOFSECTION-->
 
 ## <a name="set-up-cloud-voice-workloads-for-teams"></a>Configurare i carichi di lavoro vocali cloud per Teams
 
-Dopo aver definito l'approccio di test, il passaggio successivo consiste nella configurazione dell'ambiente del servizio e degli utenti nell'ambito delle funzionalità vocali cloud di Teams.
+Dopo aver definito l'approccio di test, il passaggio successivo consiste nella configurazione dell'ambiente del servizio e degli utenti nell'ambito Teams cloud voice.
 
 Per altre informazioni, vedere:
 
@@ -120,7 +120,7 @@ Per altre informazioni, vedere:
 
 - [Configurare Audioconferenza per Microsoft Teams](set-up-audio-conferencing-in-teams.md)
 
-- [Pianificazione tecnica del sistema telefonico con piani per chiamate](calling-plan-landing-page.md)
+- [Pianificazione tecnica per Sistema telefonico piani per chiamate](calling-plan-landing-page.md)
 
 - [Configurare piani per chiamate per Skype for Business e Microsoft Teams](/skypeforbusiness/what-are-calling-plans-in-office-365/set-up-calling-plans)
 
@@ -159,7 +159,7 @@ Dopo aver configurato l'ambiente utente e il servizio, l'ultimo passaggio di tes
 
 -   L'elenco dei siti dell'organizzazione e dei gruppi di utenti è stato identificato.
 
--   I numeri di telefono da assegnare agli utenti sono stati acquisiti o esportati in Microsoft e sono disponibili nel portale tenant.
+-   Telefono i numeri da assegnare agli utenti sono stati acquisiti o esportati in Microsoft e sono disponibili nel portale tenant.
 
 -   [I Crediti comunicazioni](what-are-communications-credits.md) (se necessario) sono stati impostati per l'organizzazione.
 
@@ -175,9 +175,9 @@ Dopo aver configurato l'ambiente utente e il servizio, l'ultimo passaggio di tes
 
 -   L'elenco dei siti dell'organizzazione e dei gruppi di utenti è stato identificato.
 
--   Un [controller SBC (Session Border Controller)](./direct-routing-plan.md#supported-session-border-controllers-sbcs) certificato è stato distribuito, configurato e associato a Sistema telefonico.
+-   Un [controller SBC (Certified Session Border Controller)](./direct-routing-plan.md#supported-session-border-controllers-sbcs) è stato distribuito, configurato e associato a Sistema telefonico.
 
--   La voce aziendale è stata abilitata e i numeri di telefono sono stati assegnati.
+-   Enterprise voce è stata abilitata e i numeri di telefono sono stati assegnati.
 
 -   I criteri di routing vocale sono stati identificati, configurati e assegnati.
 
@@ -186,13 +186,13 @@ Dopo aver configurato l'ambiente utente e il servizio, l'ultimo passaggio di tes
 -   I requisiti di conformità del routing diretto sono stati identificati e configurati.
 
 <table>
-<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Decidere quali funzionalità di audioconferenza verranno distribuite (decisione del servizio).</li><li>Identificare i requisiti di funzionalità utente per le audioconferenze.</li><li>Identificare i requisiti di configurazione del servizio per le audioconferenze.</li><br><li>Decidere se il routing diretto o i piani per chiamate verranno distribuiti e configurati.<li>Decidere quali funzionalità del sistema telefonico verranno distribuite (decisione del servizio).</li><li>Identificare i requisiti di funzionalità utente per i piani per chiamate o il routing diretto.</li><li>Identificare i requisiti di configurazione del servizio per i piani per chiamate o il routing diretto.</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Decidere quali funzionalità di audioconferenza verranno distribuite (decisione del servizio).</li><li>Identificare i requisiti di funzionalità utente per le audioconferenze.</li><li>Identificare i requisiti di configurazione del servizio per le audioconferenze.</li><br><li>Decidere se il routing diretto o i piani per chiamate verranno distribuiti e configurati.<li>Decidere quali funzionalità Sistema telefonico verranno distribuite (decisione del servizio).</li><li>Identificare i requisiti di funzionalità utente per i piani per chiamate o il routing diretto.</li><li>Identificare i requisiti di configurazione del servizio per i piani per chiamate o il routing diretto.</li></ul></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Sviluppare e documentare l'approccio del piano di test.</li><li>Preparare l'ambiente del servizio e gli utenti nell'ambito per le funzionalità di audioconferenza.</li><li>Preparare l'ambiente del servizio e gli utenti nell'ambito per le funzionalità Piani per chiamate o Instradamento diretto.</li><li>Eseguire la convalida di test per le funzionalità di audioconferenza da abilitare.</li><li>Eseguire la convalida dei test per le funzionalità Piani per chiamate o Routing diretto che si vuole abilitare.</li><li>Per eventuali errori di test, verificare che la configurazione sia corretta, esaminare gli articoli della community e, se necessario, sollevare un caso di supporto.</li></ul></td></tr>
 </table>
 
 
 Per altre istruzioni dettagliate su come eseguire i test per le audioconferenze in Teams, vedere la guida dettagliata ai [test per le audioconferenze.](./deploy-audio-conferencing-teams-landing-page.md)
 
-Per altre istruzioni dettagliate su come eseguire i test per i piani per chiamate in Teams, vedere la guida dettagliata [ai test per Sistema telefonico.](./cloud-voice-landing-page.md)
+Per altre indicazioni dettagliate su come eseguire i test per i piani per chiamate in Teams, vedere la guida dettagliata ai [test per Sistema telefonico](./cloud-voice-landing-page.md).
 
 <!--ENDOFSECTION-->

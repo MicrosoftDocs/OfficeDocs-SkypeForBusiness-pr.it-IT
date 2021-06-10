@@ -32,11 +32,11 @@ ms.locfileid: "51120757"
 
 I messaggi di posta elettronica vengono inviati automaticamente agli utenti che sono [abilitati per le audioconferenze](set-up-audio-conferencing-in-teams.md) tramite Microsoft come provider di servizi di audioconferenza.
 
-Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica inviata agli utenti abilitati per le audioconferenze. Tuttavia, se desideri limitare il numero di messaggi di posta elettronica inviati agli utenti, puoi disabilitare l'opzione. Le audioconferenze in Microsoft 365 o Office 365 invieranno posta elettronica ai messaggi di posta elettronica degli utenti quando:
+Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica inviata agli utenti abilitati per le audioconferenze. Tuttavia, se desideri limitare il numero di messaggi di posta elettronica inviati agli utenti, puoi disabilitare l'opzione. Le audioconferenze Microsoft 365 o Office 365 invieranno posta elettronica ai messaggi di posta elettronica degli utenti quando:
 
 - **Viene assegnata loro una licenza di Audioconferenza o quando cambi il provider di audioconferenza e passi a Microsoft.**
 
-     Questo messaggio di posta elettronica include l'ID conferenza, il numero di telefono predefinito per le riunioni, il PIN per le audioconferenze dell'utente e le istruzioni e il collegamento per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business online che consente di aggiornare riunioni esistenti per l'utente. Vedere [Assegnare licenze per i componenti](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) aggiuntivi di Microsoft Teams o [Assegnare Microsoft come provider di servizi di audioconferenza.](/SkypeForBusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider)
+     Questo messaggio di posta elettronica include l'ID conferenza, il numero di telefono predefinito per le riunioni, il PIN per le audioconferenze dell'utente e le istruzioni e il collegamento per utilizzare lo strumento di aggiornamento delle riunioni di Skype for Business online che consente di aggiornare riunioni esistenti per l'utente. Vedere [Assegnare Microsoft Teams licenze per i componenti](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) aggiuntivi o [Assegnare Microsoft come provider di servizi di audioconferenza.](/SkypeForBusiness/audio-conferencing-in-office-365/assign-microsoft-as-the-audio-conferencing-provider)
 
     > [!NOTE]
     > Se l'organizzazione è stata abilitata per gli ID conferenza dinamici, tutte le riunioni dell'utente pianificate avranno ID conferenza univoci. È possibile impostare [gli ID audioconferenza dinamici all'interno dell'organizzazione](/skypeforbusiness/audio-conferencing-in-office-365/reset-a-conference-id-for-a-user). 
@@ -45,7 +45,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
 
      ![Verificare la licenza Skype for Business](media/teams-emails-sent-to-users-when-settings-change-image1.png)
 
-    Per altre informazioni sulle licenze, vedere Licenze per i componenti aggiuntivi di [Microsoft Teams.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+    Per altre informazioni sulle licenze, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 
 - **L'ID conferenza o il numero di telefono per le conferenze predefinito di un utente cambia.**
 
@@ -78,7 +78,7 @@ Per impostazione predefinita, sono disponibili quattro tipi di posta elettronica
 
 ## <a name="make-changes-to-the-email-messages-that-are-sent-to-them"></a>Apportare modifiche ai messaggi di posta elettronica inviati
 
-È possibile apportare modifiche al messaggio di posta elettronica che viene inviato automaticamente agli utenti. Per impostazione predefinita, il mittente dei messaggi di posta elettronica viene da Microsoft 365 o Office 365, ma è possibile modificare il nome visualizzato usando Windows PowerShell. Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)
+È possibile apportare modifiche al messaggio di posta elettronica che viene inviato automaticamente agli utenti. Per impostazione predefinita, il mittente dei messaggi di posta elettronica Microsoft 365 o Office 365, ma è possibile modificare il nome visualizzato usando Windows PowerShell. Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
 
 ## <a name="what-if-you-dont-want-email-to-be-sent-to-them"></a>E se non vuoi che la posta elettronica venga inviata a loro?
 
@@ -101,12 +101,12 @@ Per impostazione predefinita, i messaggi di posta elettronica verranno inviati a
 
 **Uso di Windows PowerShell**
 
-Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)
+Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
 
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
-Per impostazione predefinita, il mittente dei messaggi di posta elettronica verrà inviato da Microsoft 365 o Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell. 
+Per impostazione predefinita, il mittente dei messaggi di posta elettronica Microsoft 365 o Office 365, ma è possibile modificare l'indirizzo di posta elettronica e il nome visualizzato usando Windows PowerShell. 
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
 

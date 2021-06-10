@@ -21,7 +21,7 @@ ms.custom:
 - Reporting
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
-description: Informazioni su come usare il report Power BI del dashboard qualità delle chiamate per visualizzare i Operatore automatico e la cronologia della coda di chiamata.
+description: Informazioni su come usare il report Dashboard qualità Power BI per visualizzare i Operatore automatico della coda di chiamata.
 ms.openlocfilehash: d3c8bd7181bab9ee7c199aedbac8a6fcc4c78d75
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -31,7 +31,7 @@ ms.locfileid: "51121544"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Operatore automatico & cronologia della coda di chiamata
 
-Il modello di Power BI Report Operatore automatico & coda di chiamata di CQD Teams fornisce i tre report seguenti:
+Il modello CQD Teams Operatore automatico & report cronologico coda di chiamata Power BI report fornisce i tre report seguenti:
 
 - Operatore automatico: mostra l'analisi delle chiamate in arrivo nei tuoi operatori automatici.
 - Coda di chiamata: mostra l'analisi delle chiamate in arrivo nelle code di chiamata.
@@ -41,7 +41,7 @@ Questi report usano i dati dell'archivio dati di [Call Quality Dashboard](CQD-Po
 
 ## <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
 
-È necessario che Power BI Desktop sia installato. È possibile installarlo da [Microsoft Windows Store.](https://aka.ms/pbidesktopstore)
+È necessario avere installato Power BI Desktop. È possibile installarlo da [Microsoft Windows Store.](https://aka.ms/pbidesktopstore)
 
 È possibile usare la versione gratuita di Power BI Desktop. La versione minima compatibile è 2.85.681.0 (settembre 2020).
 
@@ -51,28 +51,28 @@ L'account che si usa per visualizzare il report cronologico di AA & CQ Analytics
 
 ## <a name="installation"></a>Installazione 
 
-I passaggi seguenti presuppongono che Power BI Desktop sia già installato nel computer e che l'account abbia le autorizzazioni necessarie per accedere alla pipeline di dati CQD.
+I passaggi seguenti presuppongono che Power BI Desktop nel computer e che l'account abbia le autorizzazioni necessarie per accedere alla pipeline di dati CQD.
 
 Eseguire questa procedura:
 
-- Scaricare i [modelli di Power BI Query CQD](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file ZIP in una directory del computer.
+- Scaricare i [modelli di query Power BI CQD](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file ZIP in una directory del computer.
 
 - Fare doppio clic sul file ZIP per aprirlo.
 
-- Fare doppio clic sul file del modello "CQ and AA combined Analytics 20201105.pbit" e dovrebbe essere avviato Power BI Desktop.
+- Fare doppio clic sul file di modello "CQ and AA combined Analytics 20201105.pbit" e Power BI Desktop dovrebbe essere avviato.
 
 - Verrà richiesto di selezionare l'area della pipeline di dati CQD. Selezionare l'area geografica in cui si trova il tenant.
 
   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Screenshot che seleziona l'area della pipeline di dati CQD":::
 
- - È possibile visualizzare l'area geografica usando il cmdlet di PowerShell di Skype for Business Online (Get-CsTenant). Output di ServiceInstance. 
+ - È possibile visualizzare l'area usando il cmdlet di PowerShell Skype for Business Online (Get-CsTenant). Output di ServiceInstance. 
  L'area verrà visualizzata dopo l'opzione / like in questo esempio:
 
    microsoftcommunicationsonline/noam-4a-s7 dove l'area geografica è noam.
  
  - Il report verrà avviato con dati di esempio.
  
- - Per visualizzare i propri dati, fare clic **su Aggiorna** nella scheda Home in Query in Power BI Desktop.
+ - Per visualizzare i propri dati, fare clic **su** Aggiorna nella scheda Home in Query in Power BI Desktop.
 
    :::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot che seleziona l'opzione di aggiornamento":::
 
@@ -80,7 +80,7 @@ Eseguire questa procedura:
 
   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot che mostra l'accesso":::
 
-- Selezionare **Connetti e** osservare l'aggiornamento dei dati.
+- Selezionare **Connessione** e osservare l'aggiornamento dei dati.
 
 ## <a name="data-latency-and-aa--cq-analytics"></a>Latenza dei dati e analisi AA & CQ
 
@@ -116,7 +116,7 @@ Eseguire questa procedura:
 |Operatore automatico ricerca nella directory  |stringa                   |Ultimo metodo di ricerca rubrica        |
 |Operatore automatico trasferimento          |stringa                   |Tipo di destinazione trasferimento chiamata<br>valori possibili:<br>§ sconosciuto: il tipo di entità non è stato specificato<br>§ utente - entità utente<br>§ orgaa - Entità Operatore automatico organizzativa<br>§ hunt_group - Entità Coda di chiamata<br>§ application - voice application entity<br>§ external_pstn - entità PSTN esterna<br>§ shared_voicemail - entità segreteria telefonica condivisa|
 |Operatore automatico risultato della chiamata              |stringa                   |Risultato della chiamata:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined<br>§ service_terminated<br>§ failed_to_establish_media<br>§ terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long|
-|Operatore automatico flusso delle chiamate                |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>§ annuncio|
+|Operatore automatico chiamata Flow                |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>§ annuncio|
 |È Operatore automatico coinvolta              |Boolean                  |Indicato se AA è coinvolto nella chiamata |
 |Operatore automatico numero di azioni chiamanti      |int                      |Numero di azioni usate dal chiamante         |
 |Operatore automatico Durata catena secondi   |int                      |Durata della chiamata in AA                 |
@@ -131,7 +131,7 @@ Eseguire questa procedura:
 |È coinvolta la coda di chiamata                  |Boolean                  |Se la coda di chiamata è coinvolta in questa chiamata uguale a 1 |
 
 
-### <a name="power-bi-data-model-dimensions"></a>Dimensioni del modello di dati di Power BI
+### <a name="power-bi-data-model-dimensions"></a>Power BI del modello di dati
 
 |Nome                                    |Tipo di dati                |Descrizione                            |
 |:---------------------------------------|:------------------------|:--------------------------------------|
@@ -162,7 +162,7 @@ Eseguire questa procedura:
 |Durata media chiamata( secondi)         |int                      |Durata totale delle chiamate in coda di chiamata in secondi     |
 
 
-### <a name="power-bi-graph-description-auto-attendant"></a>Descrizione del grafico di Power BI Operatore automatico
+### <a name="power-bi-graph-description-auto-attendant"></a>Power BI descrizione del grafico Operatore automatico
 
 |Nome                                      |Descrizione                            |
 |:---------------------------------------|:--------------------------------------|

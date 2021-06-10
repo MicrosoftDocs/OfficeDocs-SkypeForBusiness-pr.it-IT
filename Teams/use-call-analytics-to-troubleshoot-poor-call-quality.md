@@ -21,7 +21,7 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.callanalytics
 - ms.teamsadmincenter.users.activity.audioqualitycolumn
 - Reporting
-description: Usare i dettagli di analisi delle chiamate per utente su dispositivi, reti e connettività per risolvere i problemi degli utenti con le chiamate e le riunioni di Microsoft Teams.
+description: Usare i dettagli di analisi delle chiamate per utente su dispositivi, reti e connettività per risolvere i problemi degli utenti Microsoft Teams chiamate e riunioni.
 ms.openlocfilehash: 4732cf68624b824a452455fc779b22ae7eb32d56
 ms.sourcegitcommit: ca2230a981a1e3c03437d1ecb8727d66ad6967f9
 ms.translationtype: MT
@@ -31,23 +31,23 @@ ms.locfileid: "51760561"
 ---
 # <a name="use-call-analytics-to-troubleshoot-poor-call-quality"></a>Usare l'analisi delle chiamate per risolvere i problemi relativi alla scarsa qualità delle chiamate
 
-Questo articolo spiega come usare l'analisi delle chiamate per risolvere i problemi di qualità scarsa delle chiamate o delle riunioni di Microsoft Teams per i singoli utenti se si è un amministratore di Teams o un tecnico o un tecnico del supporto per le comunicazioni di Teams.
+Questo articolo spiega come usare l'analisi delle chiamate per risolvere i problemi di qualità scarsa Microsoft Teams chiamata o riunione per singoli utenti se si è un amministratore di Teams o un tecnico o uno specialista del supporto per le comunicazioni Teams.
 
 ## <a name="call-analytics-permissions"></a>Autorizzazioni di Call Analytics
 
-Questo articolo presuppone che l'analisi delle chiamate sia già stata impostata. In caso contrario, vedere [Configurare l'analisi delle chiamate per Teams.](set-up-call-analytics.md)
+Questo articolo presuppone che l'analisi delle chiamate sia già stata impostata. In caso contrario, vedere Configurare [l'analisi](set-up-call-analytics.md)delle chiamate per Teams .
 
 ## <a name="introduction-to-call-analytics"></a>Introduzione all'analisi delle chiamate
 
-L'analisi delle chiamate mostra informazioni dettagliate sulle chiamate e le riunioni di Teams per ogni utente dell'account di Office 365. Include informazioni su dispositivi, reti, connettività e qualità delle chiamate (uno di questi fattori può essere un fattore di scarsa qualità per le chiamate o le riunioni). Se si caricano informazioni sull'edificio, il sito e il tenant, queste informazioni verranno visualizzate anche per ogni chiamata e riunione. Usare l'analisi delle chiamate per capire perché un utente ha avuto una scarsa esperienza di chiamata o riunione.
+L'analisi delle chiamate mostra informazioni dettagliate su Teams chiamate e riunioni per ogni utente del Office 365 account. Include informazioni su dispositivi, reti, connettività e qualità delle chiamate (uno di questi fattori può essere un fattore di scarsa qualità per le chiamate o le riunioni). Se si caricano informazioni sull'edificio, il sito e il tenant, queste informazioni verranno visualizzate anche per ogni chiamata e riunione. Usare l'analisi delle chiamate per capire perché un utente ha avuto una scarsa esperienza di chiamata o riunione.
 
-L'analisi delle chiamate mostra ogni fase di una chiamata o di una riunione, ad esempio da un partecipante a un secondo partecipante. Analizzando questi dettagli, un amministratore di Teams può isolare le aree di problemi e identificare la causa principale per la scarsa qualità.
+L'analisi delle chiamate mostra ogni fase di una chiamata o di una riunione, ad esempio da un partecipante a un secondo partecipante. Analizzando questi dettagli, un amministratore Teams può isolare le aree di problemi e identificare la causa radice per la scarsa qualità.
 
-L'amministratore di Teams ottiene l'accesso completo a tutti i dati di analisi delle chiamate per ogni utente. Inoltre, è possibile assegnare ruoli di Azure Active Directory al personale di supporto. Per altre informazioni su questi ruoli, vedere [Concedere l'autorizzazione al supporto e al personale dell'helpdesk.](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff) Da non perdere Cosa fa ogni ruolo di [supporto di Teams?](#what-does-each-teams-support-role-do) di seguito.
+Come amministratore Teams, si ottiene l'accesso completo a tutti i dati di analisi delle chiamate per ogni utente. Inoltre, è possibile assegnare Azure Active Directory ruoli al personale di supporto. Per altre informazioni su questi ruoli, vedere [Concedere l'autorizzazione al supporto e al personale dell'helpdesk.](set-up-call-analytics.md#give-permission-to-support-and-helpdesk-staff) Da non perdere [Cosa fa ogni Teams di supporto tecnico?](#what-does-each-teams-support-role-do) di seguito.
 
 ## <a name="where-to-find-per-user-call-analytics"></a>Dove trovare l'analisi delle chiamate per utente
 
-Per visualizzare tutte le informazioni sulle chiamate e i dati per un utente, passare [all'interfaccia di amministrazione di Teams.](https://admin.teams.microsoft.com) In **Utenti** selezionare un utente e quindi aprire la scheda Riunioni **& chiamate** nella pagina del profilo dell'utente. Qui troverai tutte le chiamate e le riunioni per quell'utente per gli ultimi 30 giorni.
+Per visualizzare tutte le informazioni sulle chiamate e i dati per un utente, passare [all'interfaccia Teams di amministrazione.](https://admin.teams.microsoft.com) In **Utenti** selezionare un utente e quindi aprire la scheda Riunioni **& chiamate** nella pagina del profilo dell'utente. Qui troverai tutte le chiamate e le riunioni per quell'utente per gli ultimi 30 giorni.
 
 ![Screenshot di tutti i dati utente di analisi](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image1.png)
 
@@ -55,11 +55,11 @@ Per ottenere altre informazioni su una determinata sessione, inclusi elementi mu
 
 ![Screenshot dei dati della sessione utente di analisi delle chiamate](media/teams-difference-between-call-analytics-and-call-quality-dashboard-image2.png)
 
-## <a name="what-does-each-teams-support-role-do"></a>Cosa fa ogni ruolo di supporto di Teams?
+## <a name="what-does-each-teams-support-role-do"></a>Cosa fa ogni Teams supporto tecnico?
 
-Lo **specialista del supporto per le comunicazioni di Teams** (supporto di livello 1) gestisce i problemi di qualità delle chiamate di base. Non esaminano i problemi relativi alle riunioni. Al contrario, raccolgono informazioni correlate e quindi vengono inoltrate a un tecnico del supporto per le comunicazioni.
+Lo **Teams di supporto per le comunicazioni** (supporto di livello 1) gestisce i problemi di qualità delle chiamate di base. Non esaminano i problemi relativi alle riunioni. Al contrario, raccolgono informazioni correlate e quindi vengono inoltrate a un tecnico del supporto per le comunicazioni.
 
-**L'ingegnere del supporto per** le comunicazioni di Teams (supporto di livello 2) visualizza informazioni nei log delle chiamate dettagliati nascosti allo specialista del supporto per le comunicazioni di Teams. La tabella seguente elenca le informazioni disponibili per ogni ruolo di supporto per le comunicazioni di Teams.
+Il **Teams di** supporto per le comunicazioni di livello 2 visualizza informazioni nei log delle chiamate dettagliati nascosti allo specialista Teams supporto per le comunicazioni. La tabella seguente elenca le informazioni disponibili per ogni ruolo di supporto Teams comunicazione.
 
 La tabella seguente indica quali informazioni per utente sono disponibili per ogni ruolo di supporto per le comunicazioni.
 
@@ -78,7 +78,7 @@ La tabella seguente indica quali informazioni per utente sono disponibili per og
 
 ## <a name="troubleshoot-user-call-quality-problems"></a>Risolvere i problemi di qualità delle chiamate degli utenti
 
-1. Aprire l'interfaccia di amministrazione di Teams ( ) e accedere con il supporto per le comunicazioni <https://admin.teams.microsoft.com> di Teams o con le credenziali di amministratore di Teams.
+1. Aprire l'Teams di amministrazione ( ) e accedere con il supporto Teams comunicazioni o Teams <https://admin.teams.microsoft.com> credenziali di amministratore.
 
 2. Nel **dashboard,** in **Ricerca utente,** iniziare a digitare il nome o l'indirizzo  SIP dell'utente di cui si vuole risolvere i problemi di chiamata oppure selezionare Visualizza utenti per visualizzare un elenco di utenti.
 

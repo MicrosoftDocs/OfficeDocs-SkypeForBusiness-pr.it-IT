@@ -16,7 +16,7 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare i criteri di feedback per controllare se gli utenti di Teams nell'organizzazione possono inviare feedback su Teams a Microsoft.
+description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft.
 ms.openlocfilehash: 66f14467e66456f244664a8273e0ff962297c05f
 ms.sourcegitcommit: 71d90f0a0056f7604109f64e9722c80cf0eda47d
 ms.translationtype: MT
@@ -28,26 +28,26 @@ ms.locfileid: "51656722"
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft per farci sapere come stiamo facendo, direttamente dall'interno dei client desktop e Web di Teams. Stiamo continuamente migliorando l'esperienza di Teams e usiamo questo feedback per migliorare Teams.
+Gli utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft per farci sapere come stiamo facendo, direttamente dall'interno Teams desktop e client Web. Stiamo continuamente migliorando l'esperienza Teams e usiamo questo feedback per migliorare Teams migliore.
 
 > [!NOTE]
-> I criteri di feedback non sono disponibili nelle distribuzioni GCC, GCC High o DOD.
+> I criteri di feedback non sono disponibili nelle distribuzioni GCC, GCC high o DOD.
 
 **Caratteristica Invia feedback**
 
-Gli utenti possono inviare commenti e suggerimenti su Teams a Microsoft andando su **Come**  >  **inviare feedback** in Teams. I dati inviati tramite Invia **feedback** sono considerati come "Dati di supporto" ai sensi del contratto Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "Dati dei clienti" o "Dati personali".
+Gli utenti possono inviare commenti e suggerimenti su Teams inviandoci un  >  **feedback** in Teams. I dati inviati tramite Invia **feedback** sono considerati "Dati di supporto" ai sensi del contratto di Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "Dati dei clienti" o "Dati personali".
 
 ![Screenshot dell'opzione Invia feedback in Teams](media/manage-feedback-policies-in-teams-give-feedback.png)
 
 **Sondaggi**
 
-Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettagli sulla valutazione che danno. Questo sondaggio popup viene visualizzato agli utenti di tanto in tanto in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
+Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettagli sulla valutazione che danno. Questo sondaggio popup viene visualizzato per gli utenti di tanto in tanto in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
 
 ![notifica e modulo del sondaggio in Teams](media/manage-feedback-policies-in-teams-survey.png)
 
-## <a name="set-whether-users-can-send-feedback-about-teams-to-microsoft"></a>Specificare se gli utenti possono inviare feedback su Teams a Microsoft
+## <a name="set-whether-users-can-send-feedback-about-teams-to-microsoft"></a>Specificare se gli utenti possono inviare commenti e suggerimenti Teams a Microsoft
 
-Gli amministratori possono controllare se gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft tramite Invia **feedback** e se ricevono il sondaggio. Per impostazione predefinita, a tutti gli utenti dell'organizzazione viene assegnato automaticamente il criterio globale (impostazione predefinita a livello di organizzazione) e la caratteristica Invia **feedback** e il sondaggio sono abilitati nel criterio. L'eccezione è Teams per l'istruzione, in cui le funzionalità sono abilitate per i docenti e disabilitate per gli studenti.
+Gli amministratori possono controllare se gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft tramite Inviare **feedback** e se ricevono il sondaggio. Per impostazione predefinita, a tutti gli utenti dell'organizzazione viene assegnato automaticamente il criterio globale (impostazione predefinita a livello di organizzazione) e la caratteristica Invia **feedback** e il sondaggio sono abilitati nel criterio. L'eccezione è Teams per l'istruzione, in cui le funzionalità sono abilitate per i docenti e disabilitate per gli studenti.
 
 È possibile modificare i criteri globali o creare e assegnare criteri personalizzati. Dopo aver modificato i criteri globali o aver assegnato un criterio personalizzato, l'applicazione delle modifiche può richiedere alcune ore.
 
@@ -58,7 +58,7 @@ Per gestire i criteri di feedback, usare PowerShell. Usare il cmdlet **New-CsTea
 Per disattivare e attivare le funzionalità, impostare i parametri seguenti:
 
  - **Inviare feedback:** impostare il **parametro userInitiatedMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di inviare feedback. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
- - **Sondaggi:** impostare il **parametro receiveSurveysMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams gli utenti possono quindi passare **a** Impostazioni Privacy e scegliere se partecipare  >   ai sondaggi. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non riceveranno il sondaggio.
+ - **Sondaggi:** impostare il **parametro receiveSurveysMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams, gli utenti possono quindi passare a Impostazioni Privacy e scegliere se partecipare  >   ai sondaggi. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non riceveranno il sondaggio.
  - **Posta** elettronica: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
 
 ## <a name="create-a-custom-feedback-policy"></a>Creare criteri di feedback personalizzati
@@ -81,5 +81,5 @@ Grant-CsTeamsFeedbackPolicy -Identity user1@contoso.com -PolicyName "New Hire Fe
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica di Teams PowerShell](teams-powershell-overview.md)
+- [Teams Panoramica di PowerShell](teams-powershell-overview.md)
 - [Assegnare i criteri agli utenti in Teams](assign-policies.md)

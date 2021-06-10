@@ -45,7 +45,7 @@ Prima di elaborare una chiamata in arrivo o in uscita, i messaggi OPTIONS vengon
 > [!NOTE]
 > Le intestazioni SIP non contengono userinfo nell'URI SIP in uso. Come da [RFC 3261, sezione 19.1.1,](https://tools.ietf.org/html/rfc3261#section-19.1.1)la parte userinfo di un URI è facoltativa e può essere assente quando l'host di destinazione non ha una nozione di utenti o quando l'hosst stesso è la risorsa identificata. Se il segno @ è presente in un URI SIP, il campo utente NON DEVE essere vuoto.
 
-In una chiamata in arrivo, il proxy SIP deve trovare il tenant a cui è destinata la chiamata e trovare l'utente specifico all'interno del tenant. L'amministratore del tenant potrebbe configurare numeri non DID, ad esempio +1001, in più tenant. Pertanto, è importante trovare il tenant specifico in cui eseguire la ricerca dei numeri perché i numeri non DID potrebbero essere gli stessi in più organizzazioni di Microsoft 365 o Office 365.  
+In una chiamata in arrivo, il proxy SIP deve trovare il tenant a cui è destinata la chiamata e trovare l'utente specifico all'interno del tenant. L'amministratore del tenant potrebbe configurare numeri non DID, ad esempio +1001, in più tenant. Pertanto, è importante trovare il tenant specifico in cui eseguire la ricerca di numeri perché i numeri non DID potrebbero essere uguali in più organizzazioni Microsoft 365 o Office 365.  
 
 Questa sezione descrive come il proxy SIP trova il tenant e l'utente ed esegue l'autenticazione del servizio SBC sulla connessione in ingresso.
 
@@ -71,11 +71,11 @@ Alla ricezione dell'invito, il proxy SIP esegue la procedura seguente:
 
 2. Provare a trovare un tenant usando il nome FQDN completo presentato nell'intestazione Contatto.  
 
-   Verificare se il nome FQDN dell'intestazione contatto (sbc1.adatum.biz) è registrato come nome DNS in qualsiasi organizzazione di Microsoft 365 o Office 365. Se viene trovato, la ricerca dell'utente viene eseguita nel tenant con l'FQDN SBC registrato come nome di dominio. Se non viene trovato, si applica il passaggio 3.   
+   Verificare se il nome FQDN dell'intestazione contatto (sbc1.adatum.biz) è registrato come nome DNS in qualsiasi organizzazione Microsoft 365 o Office 365. Se viene trovato, la ricerca dell'utente viene eseguita nel tenant con l'FQDN SBC registrato come nome di dominio. Se non viene trovato, si applica il passaggio 3.   
 
 3. Il passaggio 3 si applica solo se il passaggio 2 non è riuscito. 
 
-   Rimuovere la parte host dall'FQDN, presentata nell'intestazione contatto (FQDN: sbc12.adatum.biz, dopo aver rimosso la parte host: adatum.biz) e verificare se questo nome è registrato come nome DNS in qualsiasi organizzazione di Microsoft 365 o Office 365. Se viene trovato, la ricerca utente viene eseguita in questo tenant. Se non viene trovato, la chiamata non riesce.
+   Rimuovere la parte relativa all'host dall'FQDN, presentata nell'intestazione contatto (FQDN: sbc12.adatum.biz, dopo aver rimosso la parte host: adatum.biz) e verificare se questo nome è registrato come nome DNS in qualsiasi organizzazione Microsoft 365 o Office 365. Se viene trovato, la ricerca utente viene eseguita in questo tenant. Se non viene trovato, la chiamata non riesce.
 
 4. Usando il numero di telefono presentato nel Request-URI, eseguire la ricerca inversa del numero all'interno del tenant individuato nel passaggio 2 o 3. Abbinare il numero di telefono presentato a un URI SIP utente all'interno del tenant trovato nel passaggio precedente.
 
@@ -158,7 +158,7 @@ La tabella seguente riepiloga le differenze e le analogie del flusso di chiamata
 
 ###  <a name="non-media-bypass-flow"></a>Flusso di bypass non multimediale
 
-Un utente di Teams potrebbe avere più endpoint contemporaneamente. Ad esempio, il client Teams per Windows, il client Teams per iPhone e Teams Phone (client Android di Teams). Ogni endpoint potrebbe segnalare una pausa HTTP nel modo seguente:
+Un Teams utente potrebbe avere più endpoint contemporaneamente. Ad esempio, Teams per Windows client, Teams per iPhone client e Teams Telefono (Teams client Android). Ogni endpoint potrebbe segnalare una pausa HTTP nel modo seguente:
 
 -   Stato della chiamata: convertito dal proxy SIP nel messaggio SIP 180. Quando si riceve il messaggio 180, il servizio SBC deve generare squilli locali.
 
@@ -176,9 +176,9 @@ Un utente di Teams potrebbe avere più endpoint contemporaneamente. Ad esempio, 
 
 1.  Alla ricezione del primo invito da SBC, il proxy SIP invia il messaggio "SIP SIP/2.0 100 Tentativo" e notifica a tutti gli endpoint dell'utente finale la chiamata in arrivo. 
 
-2.  Al momento della notifica, ogni endpoint inizierà a squillare e a inviare messaggi "Stato chiamata" al proxy SIP. Poiché un utente di Teams può avere più punti finali, il proxy SIP potrebbe ricevere più messaggi di stato delle chiamate.
+2.  Al momento della notifica, ogni endpoint inizierà a squillare e a inviare messaggi "Stato chiamata" al proxy SIP. Poiché un Teams può avere più punti finali, il proxy SIP potrebbe ricevere più messaggi di stato delle chiamate.
 
-3.  Per ogni messaggio di stato della chiamata ricevuto dai client, il proxy SIP converte il messaggio Stato chiamata nel messaggio SIP "SIP SIP/2.0 180 Trying". L'intervallo per l'invio di tali messaggi è definito dall'intervallo dei messaggi ricevuti dal Controllore chiamate. Nel diagramma seguente sono presenti due 180 messaggi generati dal proxy SIP. Questi messaggi provengono dai due endpoint di Teams dell'utente. Ogni client ha un ID tag univoco.  Ogni messaggio proveniente da un endpoint diverso sarà una sessione separata (il parametro "tag" nel campo "A" sarà diverso). Tuttavia, un endpoint potrebbe non generare immediatamente il messaggio 180 e inviare immediatamente il messaggio 183, come illustrato nel diagramma seguente.
+3.  Per ogni messaggio di stato della chiamata ricevuto dai client, il proxy SIP converte il messaggio Stato chiamata nel messaggio SIP "SIP SIP/2.0 180 Trying". L'intervallo per l'invio di tali messaggi è definito dall'intervallo dei messaggi ricevuti dal Controllore chiamate. Nel diagramma seguente sono presenti due 180 messaggi generati dal proxy SIP. Questi messaggi provengono dai due Teams endpoint dell'utente. Ogni client ha un ID tag univoco.  Ogni messaggio proveniente da un endpoint diverso sarà una sessione separata (il parametro "tag" nel campo "A" sarà diverso). Tuttavia, un endpoint potrebbe non generare immediatamente il messaggio 180 e inviare immediatamente il messaggio 183, come illustrato nel diagramma seguente.
 
 4.  Quando un endpoint genera un messaggio Media Answer con gli indirizzi IP dei candidati per i supporti multimediali dell'endpoint, il proxy SIP converte il messaggio ricevuto in un messaggio "Stato sessione SIP 183" con il SDP del client sostituito dal provider di servizi multimediali dal processore multimediale. Nel diagramma seguente, l'endpoint da Fork 2 ha risposto alla chiamata. Se il trunk non viene ignorato, il messaggio SIP 183 viene generato una sola volta (Ring Bot o Client End Point). Il 183 potrebbe essere una forchetta esistente o crearne una nuova.
 
@@ -191,9 +191,9 @@ Un utente di Teams potrebbe avere più endpoint contemporaneamente. Ad esempio, 
 
 1.  Alla ricezione del primo invito da SBC, il proxy SIP invia il messaggio "SIP SIP/2.0 100 Tentativo" e notifica a tutti gli endpoint dell'utente finale la chiamata in arrivo. 
 
-2.  Al momento della notifica, ogni endpoint inizierà a squillare e a inviare il messaggio "Stato chiamata" al proxy SIP. Poiché un utente di Teams può avere più punti finali, il proxy SIP potrebbe ricevere più messaggi di stato delle chiamate.
+2.  Al momento della notifica, ogni endpoint inizierà a squillare e a inviare il messaggio "Stato chiamata" al proxy SIP. Poiché un Teams può avere più punti finali, il proxy SIP potrebbe ricevere più messaggi di stato delle chiamate.
 
-3.  Per ogni messaggio di stato della chiamata ricevuto dai client, il proxy SIP converte il messaggio Stato chiamata nel messaggio SIP "SIP SIP/2.0 180 Trying".  L'intervallo per l'invio dei messaggi è definito dall'intervallo di ricezione dei messaggi dal Controllore chiamate. Nell'immagine seguente sono presenti due 180 messaggi generati dal proxy SIP, il che significa che l'utente ha effettuato l'accesso a tre client di Teams e ogni client invia lo stato di avanzamento della chiamata. Ogni messaggio sarà una sessione separata (il parametro "tag" nel campo "A" è diverso)
+3.  Per ogni messaggio di stato della chiamata ricevuto dai client, il proxy SIP converte il messaggio Stato chiamata nel messaggio SIP "SIP SIP/2.0 180 Trying".  L'intervallo per l'invio dei messaggi è definito dall'intervallo di ricezione dei messaggi dal Controllore chiamate. Nell'immagine seguente sono presenti due 180 messaggi generati dal proxy SIP, il che significa che l'utente ha eseguito l'accesso a tre client Teams e ogni client invia lo stato di avanzamento della chiamata. Ogni messaggio sarà una sessione separata (il parametro "tag" nel campo "A" è diverso)
 
 4.  Viene inviato un messaggio di accettazione chiamata con i candidati finali dell'endpoint che hanno accettato la chiamata. Il messaggio accettazione chiamata viene convertito in messaggio SIP 200. 
 
@@ -273,9 +273,9 @@ Lo standard è illustrato nella sezione 6 di RFC 5589. Le RFC correlate sono:
 Questa opzione presuppone che il proxy SIP agisca da transferor e invii un messaggio Di riferimento a SBC. L'SBC funge da cessione e gestisce il riferimento per generare una nuova offerta per il trasferimento. Esistono due casi possibili:
 
 - La chiamata viene trasferita a un partecipante PSTN esterno. 
-- La chiamata viene trasferita da un utente di Teams a un altro utente di Teams nello stesso tenant tramite SBC. 
+- La chiamata viene trasferita da un Teams utente a un altro utente Teams nello stesso tenant tramite SBC. 
 
-Se la chiamata viene trasferita da un utente di Teams a un altro tramite SBC, il SBC dovrebbe emettere un nuovo invito (avviare una nuova finestra di dialogo) per l'obiettivo di trasferimento (l'utente di Teams) usando le informazioni ricevute nel messaggio Di riferimento. 
+Se la chiamata viene trasferita da un utente di Teams a un altro tramite SBC, il servizio SBC dovrebbe emettere un nuovo invito (avviare una nuova finestra di dialogo) per l'obiettivo di trasferimento (l'utente Teams) usando le informazioni ricevute nel messaggio Di riferimento. 
 
 Per popolare i campi A/Trasferimento per la transazione della richiesta internamente, il proxy SIP deve comunicare queste informazioni all'interno delle intestazioni REFER-TO/REFERRED-BY. 
 
@@ -311,7 +311,7 @@ Microsoft consiglia di applicare sempre il parametro user=phone per semplificare
 
 ## <a name="history-info-header"></a>History-Info intestazione
 
-L'intestazione History-Info viene usata per il retargeting delle richieste SIP e "fornisce un meccanismo standard per l'acquisizione delle informazioni della cronologia delle richieste per consentire un'ampia gamma di servizi per le reti e gli utenti finali". Per altre informazioni, vedere [RFC 4244 – Sezione 1.1.](http://www.ietf.org/rfc/rfc4244.txt) Per Microsoft Phone System, questa intestazione viene usata negli scenari di simulring e inoltro di chiamata.  
+L'intestazione History-Info viene usata per il retargeting delle richieste SIP e "fornisce un meccanismo standard per l'acquisizione delle informazioni della cronologia delle richieste per consentire un'ampia gamma di servizi per le reti e gli utenti finali". Per altre informazioni, vedere [RFC 4244 – Sezione 1.1.](http://www.ietf.org/rfc/rfc4244.txt) Per Telefono Microsoft sistema, questa intestazione viene usata negli scenari di simulring e inoltro di chiamata.  
 
 Se si invia, la History-Info è abilitata nel modo seguente:
 
@@ -368,4 +368,4 @@ Il riavvio in Direct Routing viene implementato in base ai paragrafi seguenti de
 
 *Un agente imposta il resto dei campi nel file SDP per questo flusso multimediale come in un'offerta iniziale di questo flusso multimediale (vedere la Sezione 4.3).  Di conseguenza, l'insieme di candidati PUÒ includere alcuni, nessuno o tutti i candidati precedenti per tale flusso e PUÒ includere un set completamente nuovo di candidati raccolti come descritto nella sezione 4.1.1.*
 
-Se la chiamata è stata inizialmente stabilita con bypass multimediale e la chiamata viene trasferita a un client Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio.
+Se la chiamata è stata inizialmente stabilita con il bypass multimediale e la chiamata viene trasferita a un client Skype for Business, Direct Routing deve inserire un processore multimediale, perché il routing diretto non può essere usato con un client Skype for Business con bypass multimediale. Direct Routing avvia il processo di riavvio ice modificando ice-pwd e ice-ufrag e offrendo nuovi media candidate in un rinvio.

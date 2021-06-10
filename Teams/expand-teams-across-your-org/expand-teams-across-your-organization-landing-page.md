@@ -1,6 +1,6 @@
 ---
 title: Espandere Microsoft Teams all'interno dell'organizzazione
-description: Informazioni sulle risorse disponibili per la distribuzione standard di Teams per ottenere il massimo da Teams per specifici tipi di organizzazione.
+description: Informazioni sulle risorse disponibili per la creazione della distribuzione Teams standard per ottenere il massimo dal Teams specifici tipi di organizzazione.
 ms.topic: conceptual
 author: cichur
 ms.author: v-cichur
@@ -24,7 +24,7 @@ ms.locfileid: "51121364"
 ---
 # <a name="expand-microsoft-teams-across-your-organization"></a>Espandere Microsoft Teams all'interno dell'organizzazione
 
-Queste risorse si basano sulle linee guida standard per la distribuzione di Teams e sono progettate per aiutarti a ottenere il massimo da Teams per specifici tipi di organizzazione. Se Teams non è ancora stato distribuito, vedere il percorso consigliato per Teams in [Come implementare Microsoft Teams.](../deploy-overview.md)
+Queste risorse si basano sulle linee guida standard Teams distribuzione e sono progettate per consentire di ottenere il massimo Teams specifici tipi di organizzazione. Se non è ancora stata Teams, vedere il percorso consigliato per Teams in [Come implementare](../deploy-overview.md)Microsoft Teams .
 
 |               |               |               |               |               |               | 
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | 
