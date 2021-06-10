@@ -1,5 +1,5 @@
 ---
-title: Come faccio a cercare il MIO PIN di supporto?
+title: Come si cerca il PIN di supporto?
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -10,7 +10,7 @@ ms.collection:
 - M365-collaboration
 ms.reviewer: mikedav
 search.appverid: MET150
-description: Informazioni su come cercare il PIN di supporto.
+description: Scopri come cercare il PIN di supporto.
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 8d9fbc7805adb2bec12625daea4d0745ffd80472
@@ -22,13 +22,13 @@ ms.locfileid: "44221640"
 ---
 # <a name="how-to-look-up-your-support-pin"></a>Come cercare il PIN di supporto
 
-Per cercare il PIN di supporto, che abilita il Supporto tecnico Microsoft telefonicamente, segui questi passaggi: 
+Per cercare il PIN di supporto, che abilita l'assistenza clienti Microsoft tramite telefono, seguire questa procedura: 
 
-1. Accedere [all'interfaccia di amministrazione di Office.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) 
+1. Accedere [all'interfaccia Office di amministrazione.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/homepage) 
 
 2. Fare clic sull'icona a forma di ingranaggio.
 
-3. Il PIN di supporto verrà visualizzato nel riquadro in basso a destra. Se necessario, è anche possibile scegliere di generare nuovamente il PIN.  
+3. Il PIN di supporto verrà visualizzato nel riquadro in basso a destra. Se necessario, è anche possibile scegliere di generare di nuovo il PIN.  
 
    ![Diagramma che mostra il PIN di supporto](media/support-pin.png)
 

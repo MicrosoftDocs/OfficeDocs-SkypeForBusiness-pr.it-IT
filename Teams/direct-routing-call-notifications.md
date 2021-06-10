@@ -27,27 +27,27 @@ ms.locfileid: "42341802"
 ---
 # <a name="manage-call-notifications"></a>Gestire le notifiche di chiamata
 
-Questo articolo descrive come gestire le notifiche di chiamata per gli utenti. È possibile configurare gli endpoint di chiamata sia per Teams che per un pbx (Private Branch Exchange) o un controller dei confini della sessione (SBC) di terze parti.  Questa opzione è utile, ad esempio, se si vuole inviare una chiamata contemporaneamente al cellulare e ai telefoni da tavolo di un utente.   
+Questo articolo descrive come gestire le notifiche di chiamata per gli utenti. È possibile configurare gli endpoint di chiamata sia per Teams che per un pbx (Private Branch Exchange) o SBC (Session Border Controller) di terze parti.  Questa opzione è utile, ad esempio, se si vuole inviare una chiamata contemporaneamente ai telefoni cellulari e da tavolo di un utente.   
 
 Nel diagramma seguente l'utente Irena ha due endpoint:
 
-- Endpoint di Teams
+- Un endpoint Teams
 - Un telefono SIP connesso a un SBC di terze parti
 
-Quando arriva una chiamata, SBC la forierà tra l'instradamento diretto del sistema telefonico e la SBC di terze parti.
+Quando arriva una chiamata, la SBC la forierà tra Sistema telefonico Direct Routing e SBC di terze parti.
 
 
-![Diagramma che mostra gli endpoint di Teams forked](media/direct-routing-call-notification-1.png)
+![Diagramma che mostra gli endpoint Teams forked](media/direct-routing-call-notification-1.png)
 
-Se la chiamata viene accettata su Fork 2 (dalla SBC di terze parti), Teams genererà una notifica "Chiamata senza chiamata".  
+Se la chiamata viene accettata su Fork 2 (da parte di SBC di terze parti), Teams genererà una notifica "Chiamata persa".  
 
-È possibile impedire la notifica "Chiamata senza chiamata" configurando SBC in modo da inviare l'opzione Annulla il Fork 1 come indicato di seguito:
+È possibile impedire la notifica "Chiamata persa" configurando SBC in modo che invii un messaggio Annulla al fork 1 come indicato di seguito:
 
-MOTIVO: SIP; cause=200;testo"Chiamata completata altrove" 
+MOTIVO: SIP; causa=200;testo"Chiamata completata altrove" 
 
-Nota che la chiamata non verrà registrata nelle registrazioni dei dettagli delle chiamate del Sistema telefonico Microsoft come chiamata riuscita. La chiamata verrà registrata come "Tentativo" con codice SIP finale "487", sottocodice finale Microsoft "540200" e frase del codice SIP finale "Chiamata completata altrove".  Per visualizzare i record di dettaglio delle chiamate, passa al portale di amministrazione di Teams, a Analytics e report, ai report di utilizzo e seleziona Utilizzo PSTN.
+Si noti che la chiamata non verrà registrata nei record dei dettagli della chiamata di Telefono Microsoft sistema come chiamata riuscita. La chiamata verrà registrata come "Tentativo" con codice SIP finale "487", sottocodice finale Microsoft "540200" e frase del codice SIP finale "Chiamata completata altrove".  Per visualizzare i record dei dettagli delle chiamate, passare al portale di amministrazione di Teams, Analisi e report, Report utilizzo e selezionare Utilizzo PSTN.
 
 
-Il diagramma seguente illustra la causa sip per Fork 1, spiega il flusso delle chiamate e il motivo previsto nel messaggio Annulla. 
+Il diagramma seguente illustra la scala SIP per fork 1, spiega il flusso delle chiamate e il motivo previsto nel messaggio Annulla. 
 
-![Diagramma che mostra gli endpoint di Teams forked](media/direct-routing-call-notification-2.png)
+![Diagramma che mostra gli endpoint Teams forked](media/direct-routing-call-notification-2.png)

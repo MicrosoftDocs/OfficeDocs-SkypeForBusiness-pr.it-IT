@@ -1,5 +1,5 @@
 ---
-title: Operazioni da eseguire dopo la configurazione di Business Voice
+title: Operazioni da provare dopo la configurazione di VoIP aziendale
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -25,6 +25,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/06/2020
 ms.locfileid: "41827364"
 ---
-# <a name="things-to-try-after-setting-up-business-voice"></a>Operazioni da eseguire dopo la configurazione di Business Voice
+# <a name="things-to-try-after-setting-up-business-voice"></a>Operazioni da provare dopo la configurazione di VoIP aziendale
 
 <!-- This topic will be populated in the future. Intentionally left out of the TOC>

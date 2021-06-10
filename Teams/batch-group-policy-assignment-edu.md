@@ -29,11 +29,11 @@ ms.locfileid: "51092904"
 [!INCLUDE [policy-wizard-edu](includes/policy-wizard-edu.md)]
 
 > [!NOTE]
-> Per informazioni più esaustivo sull'assegnazione di criteri in Microsoft Teams, vedere [Assegnare criteri agli utenti in Teams.](assign-policies.md)
+> Per informazioni più esaustivo sull'assegnazione di criteri in Microsoft Teams, vedere [Assegnare criteri](assign-policies.md)agli utenti in Teams .
 
 ## <a name="overview"></a>Panoramica
 
-È necessario concedere a studenti e docenti l'accesso a diverse funzionalità di Microsoft Teams? È possibile identificare rapidamente gli utenti dell'organizzazione in base al tipo di licenza e quindi assegnare loro i criteri appropriati. Questa esercitazione illustra come assegnare criteri di riunione a grandi set di utenti dell'istituto di istruzione. È possibile assegnare criteri usando l'interfaccia di amministrazione di Microsoft Teams e PowerShell e verranno mostrati entrambi i modi.
+È necessario concedere a studenti e docenti l'accesso a diverse funzionalità di Microsoft Teams? È possibile identificare rapidamente gli utenti dell'organizzazione in base al tipo di licenza e quindi assegnare loro i criteri appropriati. Questa esercitazione illustra come assegnare criteri di riunione a grandi set di utenti dell'istituto di istruzione. È possibile assegnare criteri usando l'Microsoft Teams di amministrazione e PowerShell e verranno mostrati entrambi i modi.
 
 È possibile assegnare criteri di riunione a un gruppo di sicurezza di cui gli utenti sono membri o direttamente agli utenti su vasta scala tramite un'assegnazione di criteri batch. Imparerai a:
 
@@ -41,7 +41,7 @@ ms.locfileid: "51092904"
 
 - **Usare [l'assegnazione di criteri batch](assign-policies.md#assign-a-policy-to-a-batch-of-users) per assegnare un criterio di riunione direttamente agli utenti in blocco.** È possibile assegnare un criterio per un massimo di 5.000 utenti alla volta. Se si hanno più di 5.000 utenti, è possibile inviare più batch. Con questo metodo, quando si hanno nuovi utenti, sarà necessario eseguire di nuovo l'assegnazione batch per assegnare i criteri a questi nuovi utenti.
 
-Tenere presente che in Teams gli utenti ottengono automaticamente i criteri globali (impostazione predefinita a livello di organizzazione) per un tipo di criterio di Teams, a meno che non si creino e assegnino criteri personalizzati. Poiché la popolazione degli studenti è spesso il set più grande di utenti e spesso ricevono le impostazioni più restrittive, è consigliabile eseguire le operazioni seguenti:
+Tenere presente che in Teams gli utenti ottengono automaticamente i criteri globali (impostazione predefinita a livello di organizzazione) per un tipo di criteri Teams a meno che non si creino e assegnino criteri personalizzati. Poiché la popolazione degli studenti è spesso il set più grande di utenti e spesso ricevono le impostazioni più restrittive, è consigliabile eseguire le operazioni seguenti:
 
 - Creare criteri personalizzati che consentano funzionalità di base come la chat privata e la pianificazione delle riunioni e assegnare i criteri al personale e ai docenti.
 - Assegnare i criteri personalizzati al personale e ai docenti.
@@ -51,7 +51,7 @@ Tenere presente che i criteri globali verranno applicati a tutti gli utenti dell
 
 In questa esercitazione gli studenti riceveranno i criteri riunione globali e verrà assegnato un criterio di riunione personalizzato denominato EducatorMeetingPolicy a personale e docenti. Si presuppone che siano stati modificati i criteri globali [](policy-packages-edu.md) per personalizzare le impostazioni delle riunioni per gli studenti e che siano stati creati criteri personalizzati che definiscono l'esperienza di riunione per personale e docenti.
 
-![Screenshot della pagina Criteri riunione nell'interfaccia di amministrazione di Teams](media/batch-group-policy-assignment-edu-meeting-policies.png)
+![Screenshot della pagina Criteri riunione nell'interfaccia di amministrazione Teams riunione](media/batch-group-policy-assignment-edu-meeting-policies.png)
 
 ## <a name="assign-a-policy-to-a-group"></a>Assegnare un criterio a un gruppo
 
@@ -74,7 +74,7 @@ Prima di iniziare, è importante comprendere le regole di precedenza e la [class
 
 Prima di tutto, creare un gruppo di sicurezza per il personale e i docenti.
 
-Con [School Data Sync](/SchoolDataSync/) (SDS) è possibile creare facilmente gruppi di sicurezza per docenti e [studenti](/SchoolDataSync/edu-security-groups) dell'istituto di istruzione. È consigliabile usare SDS per creare i gruppi di sicurezza necessari per gestire i criteri per l'istituto di istruzione.
+Con [School Data Sync](/SchoolDataSync/) (SDS), è possibile creare facilmente gruppi di sicurezza [per docenti e studenti](/SchoolDataSync/edu-security-groups) dell'istituto di istruzione. È consigliabile usare SDS per creare i gruppi di sicurezza necessari per gestire i criteri per l'istituto di istruzione.
 
 Se non è possibile distribuire SDS all'interno dell'ambiente, usare questo script di [PowerShell](scripts/powershell-script-security-groups-edu.md) per creare due gruppi di sicurezza, uno per tutti i membri del personale e i docenti a cui è assegnata una licenza per istituti di istruzione e un altro per tutti gli studenti a cui è assegnata una licenza per studenti. È necessario eseguire regolarmente questo script per mantenere i gruppi aggiornati e aggiornati.
 
@@ -83,7 +83,7 @@ Se non è possibile distribuire SDS all'interno dell'ambiente, usare questo scri
 #### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 > [!NOTE]
-> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata di Teams, i criteri del parcheggio di chiamata di Teams, i criteri di Teams, i criteri per gli eventi live di Teams, i criteri per le riunioni di Teams e i criteri di messaggistica di Teams. Per altri tipi di criteri, usare PowerShell.
+> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, per i criteri di parcheggio di chiamata Teams, per i criteri di Teams, per gli eventi live Teams, per i criteri per le riunioni Teams e per i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
 2. Selezionare la scheda **Assegnazione criteri di** gruppo.
@@ -102,11 +102,11 @@ Per modificare la classificazione di un'assegnazione di gruppo, è necessario pr
 #### <a name="using-powershell"></a>Utilizzo di PowerShell
 
 > [!NOTE]
-> Attualmente, l'assegnazione dei criteri ai gruppi con PowerShell non è disponibile per tutti i tipi di criteri di Teams. Vedere [New-CsGroupPolicyAssignment per](/powershell/module/teams/new-csgrouppolicyassignment) l'elenco dei tipi di criteri supportati.
+> Attualmente, l'assegnazione dei criteri ai gruppi con PowerShell non è disponibile per tutti i Teams di criteri. Vedere [New-CsGroupPolicyAssignment per](/powershell/module/teams/new-csgrouppolicyassignment) l'elenco dei tipi di criteri supportati.
 
-##### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
+##### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo Microsoft Teams PowerShell
 
-Eseguire le operazioni seguenti per installare il [modulo di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) di Teams (se non è già installato). Assicurarsi di installare la versione 1.0.5 o successiva.
+Eseguire le operazioni seguenti per installare [il Teams di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) (se non è già installato). Assicurarsi di installare la versione 1.0.5 o successiva.
 
 ```powershell
 Install-Module -Name MicrosoftTeams
@@ -136,9 +136,9 @@ Per altre informazioni, vedere [Informazioni necessarie sull'assegnazione dei cr
 
 Seguire questa procedura per rimuovere i criteri riunione assegnati direttamente al personale e ai docenti.
 
-#### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
+#### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo Microsoft Teams PowerShell
 
-Eseguire le operazioni seguenti per installare il [modulo di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) di Teams (se non è già installato). Assicurarsi di installare la versione 1.0.5 o successiva.
+Eseguire le operazioni seguenti per installare [il Teams di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) (se non è già installato). Assicurarsi di installare la versione 1.0.5 o successiva.
 
 ```powershell
 Install-Module -Name MicrosoftTeams
@@ -193,13 +193,13 @@ Seguire questa procedura per assegnare un criterio di riunione personalizzato de
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 
-#### <a name="connect-to-the-azure-ad-powershell-for-graph-module-and-the-teams-powershell-module"></a>Connettersi al modulo Azure AD PowerShell per Graph e al modulo di PowerShell di Teams
+#### <a name="connect-to-the-azure-ad-powershell-for-graph-module-and-the-teams-powershell-module"></a>Connessione al modulo di PowerShell di Azure AD per Graph e al modulo Teams PowerShell
 
-Prima di eseguire i passaggi descritti in questo articolo, è necessario installare e connettersi al modulo PowerShell per Graph di Azure AD (per identificare gli utenti in base alle licenze assegnate) e al modulo PowerShell di Microsoft Teams (per assegnare i criteri a tali utenti).
+Prima di eseguire i passaggi descritti in questo articolo, è necessario installare e connettersi al modulo di PowerShell di Azure AD per Graph (per identificare gli utenti in base alle licenze assegnate) e al modulo di PowerShell di Microsoft Teams (per assegnare i criteri a tali utenti).
 
-##### <a name="install-and-connect-to-the-azure-ad-powershell-for-graph-module"></a>Installare e connettersi al modulo PowerShell per Graph di Azure AD
+##### <a name="install-and-connect-to-the-azure-ad-powershell-for-graph-module"></a>Installare e connettersi al modulo powershell di Azure AD Graph
 
-Aprire un prompt dei comandi Windows PowerShell con privilegi elevati (eseguire Windows PowerShell come amministratore) e quindi eseguire quanto segue per installare il modulo PowerShell per Graph di Azure Active Directory.
+Aprire un prompt dei comandi di Windows PowerShell con privilegi elevati (eseguire Windows PowerShell come amministratore) e quindi eseguire quanto segue per installare Azure Active Directory PowerShell per Graph modulo.
 
 ```powershell
 Install-Module -Name AzureAD
@@ -213,11 +213,11 @@ Connect-AzureAD
 
 Quando richiesto, accedere con le credenziali di amministratore.
 
-Per altre informazioni, vedere [Connettersi con il modulo PowerShell di Azure Active Directory per Graph.](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Per altre informazioni, vedere [Connessione con il Azure Active Directory PowerShell per Graph modulo](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
-##### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo di PowerShell di Microsoft Teams
+##### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo Microsoft Teams PowerShell
 
-Eseguire le operazioni seguenti per installare il [modulo di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) di Teams (se non è già installato). Assicurarsi di installare la versione 1.0.5 o successiva.
+Eseguire le operazioni seguenti per installare [il Teams di PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams) (se non è già installato). Assicurarsi di installare la versione 1.0.5 o successiva.
 
 ```powershell
 Install-Module -Name MicrosoftTeams
@@ -314,7 +314,7 @@ Get-CsUserPolicyAssignment -Identity hannah@contoso.com
 
 **Non ho familiarità con PowerShell per Teams. Dove si possono trovare altre informazioni?**
 
-Per una panoramica sull'uso di PowerShell per gestire Teams, vedere Panoramica [di Teams PowerShell.](teams-powershell-overview.md) Per altre informazioni sui cmdlet usati in questo articolo, vedere:
+Per una panoramica dell'uso di PowerShell per gestire Teams, vedere panoramica Teams [PowerShell.](teams-powershell-overview.md) Per altre informazioni sui cmdlet usati in questo articolo, vedere:
 
 - [New-CsGroupPolicyAssignment](/powershell/module/teams/new-csgrouppolicyassignment)
 - [Get-CsGroupPolicyAssignment](/powershell/module/teams/get-csgrouppolicyassignment)
@@ -325,5 +325,5 @@ Per una panoramica sull'uso di PowerShell per gestire Teams, vedere Panoramica [
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Assegnare criteri agli utenti](assign-policies.md)
-- [Criteri e pacchetti di criteri di Teams per Education](policy-packages-edu.md)
+- [Criteri e pacchetti di criteri di Teams per l'istruzione](policy-packages-edu.md)
 - [Gestire i criteri di riunione in Teams](meeting-policies-in-teams.md)

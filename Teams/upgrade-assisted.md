@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2e445fd6c5d26a64005ff1c285d8e9d843ca0211
-ms.sourcegitcommit: 592e5a0638c7739dfaa3565b67d4edc621eebc9f
+ms.openlocfilehash: 9c19a0569fe56e9bf8c822b1418ac2fe0685532b
+ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52656059"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52855935"
 ---
 # <a name="assisted-upgrades-from-skype-for-business-online-to-microsoft-teams"></a>Aggiornamenti assistiti da Skype for Business Online a Microsoft Teams
 
@@ -96,11 +96,11 @@ Al termine dell'aggiornamento assistito, la **modalità di coesistenza** per gli
             >La migrazione dei contatti deve essere eseguita entro 90 giorni dal completamento dell'aggiornamento.
         - Le Skype for Business online esistenti vengono convertite in Teams riunioni
             > [!IMPORTANT]
-            > I clienti con configurazioni Skype for Business online devono usare il servizio di migrazione delle riunioni (MMS) per eseguire la migrazione delle riunioni Skype for Business Online esistenti a Teams riunioni. È consigliabile usare MMS prima della data di aggiornamento assistito. Per altre informazioni su MMS, vedere Uso del servizio di [migrazione delle riunioni (MMS)](/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)
+            > I clienti con configurazioni Skype for Business online devono usare il servizio di migrazione delle riunioni (MMS) per eseguire la migrazione delle riunioni Skype for Business Online esistenti a Teams riunioni. È consigliabile usare MMS prima della data di aggiornamento assistito. Per altre informazioni su MMS, vedere [Uso del servizio di migrazione delle riunioni (MMS).](/skypeforbusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms)
     :::column-end:::
 :::row-end:::
 
-Al termine dell'aggiornamento, le organizzazioni con distribuzioni ibride possono spostare gli utenti dalla versione locale a Teams o spostarsi da Teams a locale.  
+Se si ha una distribuzione ibrida Skype for Business Server e si esegue l'aggiornamento a Teams, è possibile spostare gli utenti tra Skype for Business Server e Teams al termine dell'aggiornamento.
 
 ## <a name="related-content"></a>Contenuti correlati
 

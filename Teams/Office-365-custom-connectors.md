@@ -17,12 +17,12 @@ description: I connettori mantengono il team aggiornato, fornendo contenuto e ag
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: df9cdc8bb53ae55acae10b0146655f5e5f3e0346
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: 77b1c99847ca35de51af5e062593a29c18e98999
+ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52717607"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52855795"
 ---
 # <a name="use-microsoft-365-and-custom-connectors-in-microsoft-teams"></a>Usare Microsoft 365 connettori personalizzati in Microsoft Teams
 
@@ -33,7 +33,7 @@ Qualsiasi membro di un team può connettere il team ai servizi cloud più diffus
 Microsoft 365 connettori possono essere usati con gruppi di Microsoft Teams e Microsoft 365, semplificando la sincronizzazione di tutti i membri e la ricezione rapida di informazioni pertinenti. Sia Microsoft Teams che Exchange lo stesso modello di connettore, che consente di usare gli stessi connettori all'interno di entrambe le piattaforme. È tuttavia opportuno notare che la disabilitazione dei connettori per il gruppo di Microsoft 365 da cui dipende un team disabiliterà anche la possibilità di creare connettori per il team.
 
 > [!NOTE]
-> I connettori sono disabilitati per impostazione predefinita negli GCC locali. Se è necessario abilitarli, impostare i parametri ConnectorsEnabled o ConnectorsEnabledForTeams su $true con il cmdlet [Set-OrganizationConfig.](https://docs.microsoft.com/powershell/module/exchange/set-organizationconfig) In precedenza è [necessario connettersi a Exchange Online PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+> I connettori sono disabilitati per impostazione predefinita negli GCC locali. Se è necessario abilitarli, impostare i parametri ConnectorsEnabled o ConnectorsEnabledForTeams su $true con il cmdlet [Set-OrganizationConfig.](/powershell/module/exchange/set-organizationconfig) In precedenza è [necessario connettersi a Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell)
 
 > [!NOTE]
 > I connettori sono disabilitati per impostazione predefinita negli ambienti Government Cloud Community (GCC). Se è necessario abilitarli, impostare i parametri ConnectorsEnabled o ConnectorsEnabledForTeams su $true con il cmdlet [SetOrganizationConfig.](/powershell/module/exchange/set-organizationconfig?view=exchange-ps) In precedenza era necessario connettersi alla [Exchange Online PowerShell.](/powershell/exchange/connect-to-exchange-online-powershell?view=exchange-ps)

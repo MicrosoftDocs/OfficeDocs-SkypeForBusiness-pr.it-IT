@@ -1,5 +1,5 @@
 ---
-title: Codice di gestione reclami per il Regno Unito - Piani per chiamate Di Microsoft 365
+title: Codice di gestione dei reclami per regno Unito - Microsoft 365 per chiamate
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -22,7 +22,7 @@ ms.custom:
 - Legal
 - seo-marvel-mar2020
 hideEdit: true
-description: È possibile reclamare i servizi di chiamata Skype for Business (Chiamate PSTN in Regno Unito), impostare i tempi per le risposte e risolvere le controversie per i reclami non risolti.
+description: Inviare un reclamo per i Skype per le chiamate PSTN (Chiamate PSTN nel Regno Unito), le tempistiche per le risposte e la risoluzione di controversie per reclami non risolti.
 ms.openlocfilehash: 75ee19a237f669bf52ce354f325275f859180dd0
 ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
 ms.translationtype: MT
@@ -30,9 +30,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 04/22/2020
 ms.locfileid: "43780275"
 ---
-# <a name="calling-plans-in-microsoft-365---complaint-handling-code-for-the-united-kingdom-uk"></a>Piani per chiamate in Microsoft 365 - Codice di gestione reclami per il Regno Unito
+# <a name="calling-plans-in-microsoft-365---complaint-handling-code-for-the-united-kingdom-uk"></a>Piani per chiamate in Microsoft 365 - Codice di gestione dei reclami per il Regno Unito (Regno Unito)
 
-Il presente Codice si applica ai clienti delle piccole imprese (organizzazioni con non più di 10 dipendenti) nel Regno Unito relativamente al servizio Del piano per chiamate Microsoft 365 (il "Servizio"), in conformità alle normative del Regno Unito in materia di t communications. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
+Il presente Codice si applica ai clienti di piccole imprese (organizzazioni con 10 dipendenti o meno) nel Regno Unito (Regno Unito) in relazione al servizio piano per chiamate di Microsoft 365 (il "Servizio") in conformità alle normative sulle comunicazioni del Regno Unito. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
 
 ## <a name="how-to-make-a-complaint"></a>Come presentare un reclamo
 
@@ -40,7 +40,7 @@ La soddisfazione del cliente è una priorità per Skype for Business. Tuttavia, 
 
 - Numero verde: 0800 032 6417
 
-- Online: accedi all'interfaccia di amministrazione di Microsoft 365 e invia una richiesta di servizio selezionando Nuova richiesta **di servizio in** **Supporto.**
+- Online: accedere all'interfaccia di Microsoft 365 e inviare una richiesta di servizio selezionando Nuova richiesta **di servizio** in **Supporto**.
 
 ## <a name="timelines"></a>Tempistiche
 
@@ -52,7 +52,7 @@ Se il rappresentante Skype for Business non sarà in grado di risolvere il probl
 
 L'obiettivo di Skype for Business è risolvere tutti i reclami relativi al servizio entro (7) giorni lavorativi dal ricevimento.
 
-Se il reclamo relativo al Servizio viene gestito in modo insoddisfatto, è possibile chiedere al rappresentante di Skype for Business che gestisce il reclamo, telefonicamente o via posta elettronica, di inoltrare il reclamo al livello più alto in base al contratto di servizio. Microsoft valuterà il reclamo entro (7) giorni dal ricevimento.
+Se non si è soddisfatti del modo in cui viene gestito il reclamo relativo al Servizio, l'utente può chiedere al rappresentante di Skype for Business che gestisce il reclamo, tramite telefono o posta elettronica, di inoltrare il reclamo in conformità al contratto di servizio. Microsoft valuterà il reclamo entro (7) giorni dal ricevimento.
 
 ## <a name="alternative-dispute-resolution"></a>Risoluzione alternativa dei contenziosi
 
@@ -64,7 +64,7 @@ Tutti i reclami devono essere presentati a Ombudsman Services entro dodici (12) 
 
 Le istruzioni per il ricorso a Ombudsman Services per un reclamo si trovano sul [sito web](https://go.microsoft.com/fwlink/?LinkID=820708&amp;clcid=0x809) di Ombudsman Services.
 
-Ombudsman Services può essere contattato compilando un modulo di contatto sul sito web di Ombudsman Services oppure via telefono, lettera o posta elettronica:
+L'utente può contattare Ombudsman Services compilando un modulo di contatto sul sito Web di Ombudsman Services o tramite telefono, lettera o e-mail:
 
 - Modulo di contatto: [https://www.ombudsman-services.org/about-us/contact-us](https://www.ombudsman-services.org/about-us/contact-us)
 

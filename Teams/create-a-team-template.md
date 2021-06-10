@@ -33,7 +33,7 @@ Per iniziare:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro espandere **Modelli team di**  >  **Teams.**
+2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
 
 3. Selezionare **Aggiungi**.
 
@@ -97,11 +97,11 @@ Per iniziare:
 
 Stiamo lavorando a una correzione per i futuri team creati da modelli personalizzati.
 
-**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di una scheda Teams.
+**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di una Teams pagina.
 
 ![messaggio di errore del browser](media/browser-error-message.png)
 
-**Soluzione:** in caso di problemi di visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata oppure all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
+**Soluzione:** in caso di problemi di visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata o all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

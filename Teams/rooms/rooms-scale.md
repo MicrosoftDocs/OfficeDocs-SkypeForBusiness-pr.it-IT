@@ -1,5 +1,5 @@
 ---
-title: Distribuire le chat room di Microsoft Teams con Microsoft Endpoint Configuration Manager
+title: Distribuire Microsoft Teams Rooms usando Microsoft Endpoint Configuration Manager
 author: dstrome
 ms.author: dstrome
 ms.reviewer: Turgayo
@@ -16,7 +16,7 @@ ms.custom:
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 ms.collection:
 - M365-collaboration
-description: Informazioni sulla distribuzione di Microsoft Teams Rooms su distribuzioni su larga scala con Microsoft Endpoint Configuration Manager.
+description: Informazioni sulla distribuzione di Microsoft Teams Rooms su larga scala con Microsoft Endpoint Configuration Manager.
 no-loc:
 - Microsoft
 - Microsoft Corporation
@@ -41,38 +41,38 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/29/2021
 ms.locfileid: "51410112"
 ---
-# <a name="deploy-microsoft-teams-rooms-by-using-microsoft-endpoint-configuration-manager"></a>Distribuire le chat room di Microsoft Teams usando Microsoft Endpoint Configuration Manager
+# <a name="deploy-microsoft-teams-rooms-by-using-microsoft-endpoint-configuration-manager"></a>Distribuire Microsoft Teams Rooms usando Microsoft Endpoint Configuration Manager
 
-Questo articolo fornisce tutte le informazioni necessarie per creare le distribuzioni di Microsoft Teams Rooms usando Microsoft Endpoint Configuration Manager.
+Questo articolo fornisce tutte le informazioni necessarie per creare le distribuzioni Microsoft Teams Rooms con Microsoft Endpoint Configuration Manager.
 
 Con i metodi di facile utilizzo forniti da Configuration Manager, è possibile distribuire il sistema operativo e altre applicazioni in più dispositivi di destinazione.
 
 Usare l'approccio illustrato di seguito per illustrare la configurazione di Configuration Manager e personalizzare i pacchetti e gli script di esempio forniti in questa guida in base alle esigenze dell'organizzazione.
 
-![Processo di distribuzione di Microsoft Teams Rooms con Configuration Manager](../media/room-systems-scale-image1.png)
+![Microsoft Teams Rooms di distribuzione tramite Configuration Manager](../media/room-systems-scale-image1.png)
 
 > [!IMPORTANT]
-> Questa soluzione è stata testata solo con le distribuzioni basate su Surface Pro. Seguire le linee guida del produttore per le configurazioni non basate su Surface Pro.
+> Questa soluzione è stata testata solo con Surface Pro basate su criteri. Seguire le linee guida del produttore per le configurazioni non basate su Surface Pro.
 
 ## <a name="validate-prerequisites"></a>Convalidare i prerequisiti
 
 Per distribuire Microsoft Teams Rooms con Configuration Manager, assicurarsi di soddisfare i prerequisiti e i requisiti seguenti.
 
-### <a name="microsoft-endpoint-configuration-manager-requirements"></a>Requisiti di Microsoft Endpoint Configuration Manager
+### <a name="microsoft-endpoint-configuration-manager-requirements"></a>Microsoft Endpoint Configuration Manager requisiti
 
--   La versione di Microsoft Endpoint Configuration Manager deve essere almeno 1706 o successiva. È consigliabile usare 1710 o versione successiva. Vedere [Supporto per Windows 10 in Configuration Manager](/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client) per informazioni sulle versioni di Windows 10 supportate da Configuration Manager.
+-   Microsoft Endpoint Configuration Manager versione deve essere almeno 1706 o successiva. È consigliabile usare 1710 o versione successiva. Vedere [Supporto per Windows 10 in Configuration Manager](/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-as-a-client) per informazioni sulle versioni Windows 10 supportate da Configuration Manager.Check out Support for Windows 10 in Configuration Manager to learn about the Windows 10 versions that Configuration Manager supports.
 
--   Deve essere installata una versione supportata di Windows Assessment and Deployment Kit (ADK) per Windows 10. Vedere le versioni di [Windows 10 ADK](/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk) che è possibile usare con diverse versioni di Configuration Manager e verificare che la distribuzione includa la versione corretta.
+-   È necessario installare una versione supportata di Windows Assessment and Deployment Kit (ADK) per Windows 10. Vedere le versioni del [Windows 10 ADK](/configmgr/core/plan-design/configs/support-for-windows-10#windows-10-adk) che è possibile usare con diverse versioni di Configuration Manager e verificare che la distribuzione includa la versione corretta.
 
 -   Ai server del sistema del sito deve essere stato assegnato il ruolo di punto di distribuzione e le immagini di avvio devono essere abilitate per il supporto [PXE (Preboot Execution Environment)](/configmgr/osd/deploy-use/use-pxe-to-deploy-windows-over-the-network) per abilitare le distribuzioni avviate dalla rete. Se il supporto PXE non è abilitato, è possibile usare i supporti [di](/configmgr/osd/deploy-use/use-bootable-media-to-deploy-windows-over-the-network) avvio per le distribuzioni.
 
 -   Un account di accesso alla rete deve essere configurato per supportare nuovi scenari di distribuzione di computer (bare metal). Per altre informazioni sulla configurazione di un account di accesso di rete, vedere [Account usati in Configuration Manager.](/configmgr/core/plan-design/hierarchy/manage-accounts-to-access-content#bkmk_NAA)
 
--   È consigliabile abilitare il [supporto multicast,](/configmgr/osd/deploy-use/use-multicast-to-deploy-windows-over-the-network)se è probabile che si distribuirà la stessa immagine di Microsoft Teams Rooms in più unità contemporaneamente.
+-   È consigliabile abilitare il [supporto multicast,](/configmgr/osd/deploy-use/use-multicast-to-deploy-windows-over-the-network)se è probabile che si distribuirà la stessa immagine Microsoft Teams Rooms a più unità contemporaneamente.
 
 ### <a name="networking-requirements"></a>Requisiti di rete
 
--   La rete deve avere un server DHCP (Dynamic Host Configuration Protocol), configurato per la distribuzione automatica degli indirizzi IP alle subnet in cui verranno distribuite le unità di Microsoft Teams Rooms.
+-   La rete deve avere un server DHCP (Dynamic Host Configuration Protocol), configurato per la distribuzione automatica degli indirizzi IP alle subnet in cui verranno distribuite Microsoft Teams Rooms di rete.
 
     > [!NOTE]
     > La durata del lease DHCP deve essere impostata su un valore più lungo della durata della distribuzione dell'immagine. In caso contrario, la distribuzione potrebbe non riuscire.
@@ -80,11 +80,11 @@ Per distribuire Microsoft Teams Rooms con Configuration Manager, assicurarsi di 
 -   La rete, inclusi gli switch e le reti LAN virtuali (VLAN), deve essere configurata per supportare PXE. Per altre informazioni sulla configurazione di HELPER IP e PXE, vedere il fornitore della rete. In alternativa, è possibile usare i supporti [di](/configmgr/osd/deploy-use/use-bootable-media-to-deploy-windows-over-the-network) avvio per le distribuzioni, se il supporto PXE non è abilitato.
 
     > [!NOTE]
-    > Per i dispositivi Surface Pro, l'avvio dalla rete (avvio PXE) è supportato solo quando si usa un adattatore Ethernet o un'alloggiamento di espansione da Microsoft. Gli adattatori Ethernet di terze parti non supportano l'avvio PXE con Surface Pro. Per altre [informazioni, vedere Adattatori Ethernet](/surface/ethernet-adapters-and-surface-device-deployment) e distribuzione di Surface.
+    > Per Surface Pro dispositivi, l'avvio dalla rete (avvio PXE) è supportato solo quando si usa un adattatore Ethernet o un'alloggiamento di espansione da Microsoft. Gli adattatori Ethernet di terze parti non supportano l'avvio PXE con Surface Pro. Per altre [informazioni, vedere Adattatori Ethernet](/surface/ethernet-adapters-and-surface-device-deployment) e distribuzione di Surface.
 
-## <a name="configure-microsoft-endpoint-configuration-manager-for-operating-system-deployment"></a>Configurare Microsoft Endpoint Configuration Manager per la distribuzione del sistema operativo
+## <a name="configure-microsoft-endpoint-configuration-manager-for-operating-system-deployment"></a>Configurare le Microsoft Endpoint Configuration Manager per la distribuzione del sistema operativo
 
-Questo articolo presuppone che sia già presente una distribuzione di Configuration Manager integra e non descrive in dettaglio tutti i passaggi necessari per distribuire e configurare Configuration Manager da zero. La [documentazione e le indicazioni sulla configurazione](/configmgr/) di Microsoft Endpoint Configuration Manager sono una risorsa eccezionale. se Configuration Manager non è ancora stato distribuito, è consigliabile iniziare con queste risorse.
+Questo articolo presuppone che sia già presente una distribuzione di Configuration Manager integra e non descrive in dettaglio tutti i passaggi necessari per distribuire e configurare Configuration Manager da zero. La [documentazione e le indicazioni di configurazione](/configmgr/) sul Microsoft Endpoint Configuration Manager sono una risorsa eccezionale. se Configuration Manager non è ancora stato distribuito, è consigliabile iniziare con queste risorse.
 
 Usare le istruzioni seguenti per verificare che le funzionalità di distribuzione del sistema operativo (OSD) siano configurate correttamente.
 
@@ -102,7 +102,7 @@ Usare le istruzioni seguenti per verificare che le funzionalità di distribuzion
 
 1.  Nella console di Configuration Manager passare a **Punti di** distribuzione \> **di amministrazione**.
 
-2.  Selezionare il server del punto di distribuzione che servirà la distribuzione di Microsoft Teams Rooms e quindi scegliere **Proprietà**.
+2.  Selezionare il server del punto di distribuzione che servirà la Microsoft Teams Rooms distribuzione e quindi selezionare **Proprietà**.
 
 3.  Selezionare la **scheda PXE** e verificare che le impostazioni seguenti siano abilitate:
     -   Abilitare il supporto PXE per i client
@@ -117,7 +117,7 @@ Usare le istruzioni seguenti per verificare che le funzionalità di distribuzion
 
 1.  Nella console di Configuration Manager passare a **Siti di** configurazione del sito \> **di** \> **amministrazione** e quindi selezionare il sito.
 
-2.  Nel gruppo **Impostazioni** selezionare **Configura distribuzione** software componenti \> **del sito.**
+2.  Nel gruppo **Impostazioni** selezionare **Configura distribuzione** software componenti \> **del sito**.
 
 3.  Selezionare la **scheda Account di accesso alla** rete. Configurare uno o più account e quindi scegliere **OK.**
 
@@ -152,21 +152,21 @@ Per altre informazioni, vedere [Gestire le immagini di avvio con Configuration M
 ## <a name="create-configuration-manager-packages"></a>Creare pacchetti di Configuration Manager
 
 > [!IMPORTANT]
-> La versione del sistema operativo richiesta per ogni versione del programma di installazione di SRS cambia a ogni versione msi. Per determinare la versione migliore del sistema operativo per un determinato file MSI, eseguire lo script di configurazione della console una sola volta. Per altre informazioni, vedere [Distribuire le chat room di Microsoft Teams usando Microsoft Endpoint Configuration Manager.](rooms-scale.md)
+> La versione del sistema operativo richiesta per ogni versione del programma di installazione di SRS cambia a ogni versione msi. Per determinare la versione migliore del sistema operativo per un determinato file MSI, eseguire lo script di configurazione della console una sola volta. Per altre informazioni, vedere [Distribuire Microsoft Teams Rooms usando Microsoft Endpoint Configuration Manager](rooms-scale.md).
 
-Configuration Manager richiede diversi pacchetti per distribuire e configurare le unità di Microsoft Teams Rooms.
+Configuration Manager richiede diversi pacchetti per distribuire e configurare le Microsoft Teams Rooms di distribuzione.
 
 È necessario creare e configurare i pacchetti seguenti e quindi distribuirli ai sistemi del sito di Configuration Manager a cui è stato assegnato il ruolo di server del punto di distribuzione.
 
 | **Nome pacchetto**                     | **Tipo**               | **Descrizione**                                                                           |
 |--------------------------------------|------------------------|-------------------------------------------------------------------------------------------|
-| SRS v2 - Pacchetto di applicazioni SRS     | Pacchetto software       | Pacchetto per il kit di distribuzione di Microsoft Teams Rooms                                      |
-| SRS v2 - Pacchetto Sysprep             | Pacchetto software       | Pacchetto per il pacchetto Unattended.xml configurare le unità di Microsoft Teams Rooms            |
+| SRS v2 - Pacchetto di applicazioni SRS     | Pacchetto software       | Pacchetto per il kit Microsoft Teams Rooms distribuzione                                      |
+| SRS v2 - Pacchetto Sysprep             | Pacchetto software       | Pacchetto per le unità di Unattended.xml per configurare le Microsoft Teams Rooms personalizzate            |
 | SRS v2 - Set-SRSComputerName pacchetto | Pacchetto software       | Pacchetto per l'applicazione HTML (HTA) per assegnare un nome di computer durante la distribuzione    |
-| SRS v2 - Configurare la configurazione di SRS         | Pacchetto software       | Pacchetto per configurare la distribuzione dell'app Microsoft Teams Rooms                          |
+| SRS v2 - Configurare la configurazione di SRS         | Pacchetto software       | Pacchetto per configurare la distribuzione dell Microsoft Teams Rooms app                          |
 | SRS v2 - Pacchetto di aggiornamenti del sistema operativo          | Pacchetto software       | Pacchetto per distribuire gli aggiornamenti obbligatori del sistema operativo                                      |
 | SRS v2 - Pacchetto di certificati radice    | Pacchetto software       | Facoltativo: pacchetto per distribuire il certificato radice (non necessario per le unità appartenenti al dominio)  |
-| SRS v2 - Pacchetto Microsoft Monitoring Agent | Pacchetto software       | Facoltativo: pacchetto per distribuire e configurare l'agente di Microsoft Operations Management Suite|
+| SRS v2 - Microsoft Monitoring Agent pacchetto | Pacchetto software       | Facoltativo: pacchetto per distribuire e configurare l'agente di Microsoft Operations Management Suite|
 | SRS v2 - Pacchetto in background WinPE    | Pacchetto software       | Pacchetto per l'immagine di sfondo personalizzata da usare con le immagini di avvio                           |
 | Windows 10 Enterprise                | Immagine del sistema operativo | Pacchetto per il file di installazione del sistema operativo (install.wim)                          |
 | Surface Pro                          | Pacchetto driver         | Pacchetto per i driver di dispositivo e il firmware per Microsoft Surface Pro                     |
@@ -178,9 +178,9 @@ Per altre informazioni, vedere [Pacchetti e programmi in Configuration Manager.]
 
 Configuration Manager richiede che i file di origine del pacchetto siano organizzati in una struttura di cartelle specifica quando vengono creati per la prima volta e quando vengono aggiornati.
 
-Creare la struttura di cartelle seguente nel sito di amministrazione centrale o nel sito principale di Microsoft Endpoint Configuration Manager oppure in una condivisione server in uso per ospitare i file di origine del pacchetto:
+Creare la struttura di cartelle seguente nel Microsoft Endpoint Configuration Manager di amministrazione centrale o nel sito principale oppure in una condivisione server in uso per ospitare i file di origine del pacchetto:
 
--   SRS v2 - Pacchetto Microsoft Monitoring Agent
+-   SRS v2 - Microsoft Monitoring Agent pacchetto
 -   SRS v2 - Pacchetto di aggiornamenti del sistema operativo
 -   SRS v2 - Pacchetto di certificati radice
 -   SRS v2 - Set-SRSComputerName pacchetto
@@ -200,19 +200,19 @@ Creare la struttura di cartelle seguente nel sito di amministrazione centrale o 
 
 1. Scaricare l'agente di monitoraggio da <https://go.microsoft.com/fwlink/?LinkId=828603> .
 
-2. Estrarre il pacchetto nella cartella **SRS v2 - Pacchetto** di Microsoft Monitoring Agent aprendo una finestra del prompt dei comandi e immettendo **MMASetup-AMD64.exe /C:**     al prompt dei comandi.
+2. Estrarre il pacchetto nella cartella **pacchetto SRS v2 - Microsoft Monitoring Agent** aprendo una finestra del prompt dei comandi e immettendoMMASetup-AMD64.exe **/C:** al prompt dei comandi.
 
 3. Nella console di Configuration Manager passare a **Pacchetti di gestione** applicazioni raccolta software e quindi selezionare Crea \>  \>  **pacchetto.**
 
 4. Immettere le informazioni seguenti per creare il pacchetto:
 
-   - Nome<strong>: SRS v2 - Pacchetto Microsoft Monitoring Agent</strong>
+   - Nome<strong>: SRS v2 - Microsoft Monitoring Agent pacchetto</strong>
 
    - Produttore<strong>: Microsoft Corporation</strong>
 
    - Versione<strong>: 8.1.11081.0</strong> (immettere la versione del file di installazione scaricato)
 
-   - Selezionare la **casella di controllo** Il pacchetto contiene i file di origine, immettere il percorso della cartella **SRS v2 - Pacchetto di Microsoft Monitoring Agent** e quindi selezionare **Avanti.**
+   - Selezionare la **casella di controllo** Il pacchetto contiene i file di origine, immettere il percorso della cartella **SRS v2 - Microsoft Monitoring Agent Pacchetto** e quindi selezionare **Avanti**.
 
 5. Selezionare **Non creare un programma** e quindi avanti. 
 
@@ -238,9 +238,9 @@ Creare la struttura di cartelle seguente nel sito di amministrazione centrale o 
      Wait-Process -name wusa
    }
    ```
-3. Scaricare i pacchetti obbligatori di Windows Update nella stessa cartella.
+3. Scaricare i pacchetti Windows di aggiornamento obbligatori nella stessa cartella.
    > [!NOTE]
-   > Al momento della pubblicazione di questo articolo, era necessario [solo KB4056892.](http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/01/windows10.0-kb4056892-x64_a41a378cf9ae609152b505c40e691ca1228e28ea.msu) Selezionare [Configura una console di Microsoft Teams Rooms](console.md)per verificare se sono necessari altri aggiornamenti.
+   > Al momento della pubblicazione di questo articolo, era necessario [solo KB4056892.](http://download.windowsupdate.com/c/msdownload/update/software/secu/2018/01/windows10.0-kb4056892-x64_a41a378cf9ae609152b505c40e691ca1228e28ea.msu) Selezionare [Configura una Microsoft Teams Rooms ,](console.md)per verificare se sono necessari altri aggiornamenti.
 
 4. Nella console di Configuration Manager passare a **Pacchetti di gestione** applicazioni raccolta software e quindi selezionare Crea \>  \>  **pacchetto.**
 
@@ -260,7 +260,7 @@ Creare la struttura di cartelle seguente nel sito di amministrazione centrale o 
 
 Questo pacchetto viene creato per distribuire il certificato radice per i dispositivi che non verranno aggiunti a un dominio di Active Directory. Creare questo pacchetto solo se si applicano entrambe le condizioni seguenti:
 -   La distribuzione include Lync locale o Skype for Business Server.
--   Le unità di Microsoft Teams Rooms sono configurate per lavorare in un gruppo di lavoro invece che in un membro di dominio.
+-   Microsoft Teams Rooms sono configurate per lavorare in un gruppo di lavoro invece che in un membro di dominio.
 
 1.  Copiare il certificato radice nella **cartella SRS v2 - Root Certificate Package.**
 
@@ -278,9 +278,9 @@ Questo pacchetto viene creato per distribuire il certificato radice per i dispos
 
 6.  Selezionare **Chiudi**.
 
-### <a name="create-the-microsoft-teams-rooms-deployment-kit-package"></a>Creare il pacchetto del kit di distribuzione di Microsoft Teams Rooms
+### <a name="create-the-microsoft-teams-rooms-deployment-kit-package"></a>Creare il pacchetto Microsoft Teams Rooms kit di distribuzione
 
-1.  Scaricare l'ultima versione del kit di distribuzione **di Microsoft Teams Rooms** da e <https://go.microsoft.com/fwlink/?linkid=851168> installarlo in una workstation.
+1.  Scaricare l'ultima versione del **kit di Microsoft Teams Rooms di** distribuzione da e <https://go.microsoft.com/fwlink/?linkid=851168> installarlo in una workstation.
 
 2.  Copiare il contenuto **da C: \\ Programmi (x86) \\ Skype Room System Deployment Kit** nella cartella **SRS v2 - Pacchetto applicazioni SRS.**
 
@@ -476,15 +476,15 @@ Questo pacchetto viene creato per distribuire il certificato radice per i dispos
 
 7. Selezionare **Chiudi**.
 
-### <a name="create-the-windows-10-enterprise-package"></a>Creare il pacchetto di Windows 10 Enterprise
+### <a name="create-the-windows-10-enterprise-package"></a>Creare il Windows 10 Enterprise pacchetto
 
-1.  Ottenere un supporto x64 windows 10 Enterprise e copiare il file **install.wim** nella cartella Sistemi operativi **\\ Windows 10 Enterprise.**
+1.  Ottenere un Windows 10 Enterprise supporto x64 e copiare il file **install.wim** nella cartella **Operating Systems \\ Windows 10 Enterprise.**
 
 2.  Nella console di Configuration Manager passare a **Software Library** Operating Systems \> **Operating System** \> **Images** e quindi selezionare **Add Operating System Image**.
 
 3.  Specificare il percorso del file **install.wim** appena copiato e quindi scegliere **Avanti**.
 
-4.  Aggiornare il **campo Versione** in modo che corrisponda al numero di build dell'immagine di Windows 10 Enterprise e quindi selezionare **Avanti**.
+4.  Aggiornare il **campo Versione** in modo che corrisponda al numero di build dell'immagine Windows 10 Enterprise e quindi selezionare **Avanti**.
 
 5.  Esaminare la **pagina** Dettagli e quindi selezionare **Avanti.**
 
@@ -492,16 +492,16 @@ Questo pacchetto viene creato per distribuire il certificato radice per i dispos
 
 Per altre informazioni, vedere [Gestire le immagini del sistema operativo con Configuration Manager.](/configmgr/osd/get-started/manage-operating-system-images)
 
-### <a name="create-surface-pro-device-driver-packages"></a>Creare pacchetti di driver di dispositivo Surface Pro
+### <a name="create-surface-pro-device-driver-packages"></a>Creare Surface Pro pacchetti di driver di dispositivo
 
-Microsoft Teams Rooms è supportato sia per Surface Pro che per Surface Pro 4. Devi creare un pacchetto driver per ogni modello di Surface Pro che hai nel tuo ambiente.
+Microsoft Teams Rooms è supportato sia per Surface Pro che per Surface Pro 4. È necessario creare un pacchetto driver per ogni Surface Pro modello di driver presente nell'ambiente.
 
 > [!IMPORTANT]
-> I driver devono essere compatibili con la build di Windows 10 Enterprise e con la versione del kit di distribuzione di Microsoft Teams Rooms. Per altre informazioni, vedere Scaricare il firmware e i driver più [recenti per i dispositivi Surface](/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices) e Configurare una [console.](console.md)
+> I driver devono essere compatibili con la build Windows 10 Enterprise e con la Microsoft Teams Rooms del kit di distribuzione. Per altre informazioni, vedere Scaricare il firmware e i driver più [recenti per i dispositivi Surface](/surface/deploy-the-latest-firmware-and-drivers-for-surface-devices) e Configurare una [console.](console.md)
 
 1.  Scarica i driver e il firmware più recenti.
-    -   Per Surface Pro: <https://www.microsoft.com/download/details.aspx?id=55484>
-    -   Per Surface Pro 4: <https://www.microsoft.com/download/details.aspx?id=49498>
+    -   Per Surface Pro:<https://www.microsoft.com/download/details.aspx?id=55484>
+    -   Per Surface Pro 4:<https://www.microsoft.com/download/details.aspx?id=49498>
 
 2.  Estrarre il driver e il firmware scaricati. Aprire una finestra del prompt dei comandi e al prompt dei comandi immettere uno dei comandi seguenti:
     -   `msiexec /a C:\SurfacePro_Win10.msi /passive TARGETDIR="C:\_Sources\Drivers\Surface Pro"`
@@ -509,7 +509,7 @@ Microsoft Teams Rooms è supportato sia per Surface Pro che per Surface Pro 4. D
 
 3.  Nella console di Configuration Manager passare a Driver dei sistemi operativi della raccolta **software** e quindi selezionare \>  \> Importa **driver.**
 
-4.  Selezionare Importa tutti i driver nel percorso di rete **seguente (UNC),** selezionare la cartella di origine , ad esempio C: \\ _Sources Drivers Surface \\ Pro, quindi \\ scegliere **Avanti**.
+4.  Selezionare Importa tutti i driver nel percorso di rete **seguente (UNC),** selezionare la cartella di origine, ad esempio C: \\ _Sources Drivers \\ \\ Surface Pro, quindi scegliere **Avanti**.
 
 5.  Nella pagina **Specificare i dettagli per i** driver importati selezionare tutti i driver elencati e quindi selezionare Abilita questi driver e consentire ai computer di **installarli.**
 
@@ -517,20 +517,20 @@ Microsoft Teams Rooms è supportato sia per Surface Pro che per Surface Pro 4. D
 
 7.  Selezionare **Nuovo pacchetto**.
 
-8.  Specificare il nome del pacchetto che corrisponde al modello Surface Pro, immettere un percorso di cartella in cui archiviare i file del pacchetto driver, selezionare **OK** e quindi **selezionare Avanti.**
+8.  Specificare il nome del pacchetto che corrisponde al modello Surface Pro, immettere un percorso di cartella in cui archiviare i file del pacchetto driver, scegliere **OK** e quindi **avanti.**
 
 9.  Nella pagina **immagini di avvio** verificare che non sia selezionata alcuna immagine di avvio e quindi scegliere **Avanti**.
 
 10. Selezionare **Chiudi**.
 
-11. Passare a Driver dei sistemi operativi della raccolta **software,** selezionare Crea cartella e immettere un nome di cartella corrispondente al modello di Surface Pro per cui sono stati appena importati \>  \> i driver. **\>**
+11. Passare a Driver dei sistemi operativi della raccolta **software,** selezionare Crea cartella e immettere un nome di cartella corrispondente al modello di Surface Pro per cui sono stati importati \>  \> i driver. **\>**
 
 12. Spostare tutti i driver importati nella cartella appena creata per semplificare l'esplorazione e il funzionamento.
 
 > [!NOTE]
-> Ripetere gli stessi passaggi per altri modelli di Surface Pro che potrebbero essere disponibili. Per altre informazioni, vedere [Gestire i driver in Configuration Manager.](/configmgr/osd/get-started/manage-drivers)
+> Ripetere gli stessi passaggi per altri Surface Pro modelli disponibili. Per altre informazioni, vedere [Gestire i driver in Configuration Manager.](/configmgr/osd/get-started/manage-drivers)
 
-### <a name="create-microsoft-teams-rooms-configuration-package"></a>Creare il pacchetto di configurazione di Microsoft Teams Rooms
+### <a name="create-microsoft-teams-rooms-configuration-package"></a>Creare un Microsoft Teams Rooms di configurazione
 
 1.  Nella console di Configuration Manager passare a **Pacchetti di gestione** applicazioni raccolta software e quindi selezionare Crea \>  \>  **pacchetto.**
 
@@ -589,13 +589,13 @@ Tutti i pacchetti devono essere distribuiti ai server a cui è stato assegnato i
 > [!NOTE]
 > La distribuzione dei pacchetti può richiedere del tempo, a seconda delle dimensioni del pacchetto, della gerarchia di Configuration Manager, del numero di server dei punti di distribuzione e della larghezza di banda disponibile nella rete.
 > 
-> Tutti i pacchetti devono essere distribuiti prima di iniziare a distribuire un'unità di Microsoft Teams Rooms.
+> Tutti i pacchetti devono essere distribuiti prima di iniziare a distribuire un'Microsoft Teams Rooms distribuzione.
 > 
 > Per esaminare lo stato della distribuzione dei pacchetti nella console di Configuration Manager, vedere Monitoraggio **dello** stato del contenuto \> **dello stato** della \> **distribuzione.**
 
 ## <a name="configuration-manager-task-sequences"></a>Sequenze di attività di Configuration Manager
 
-Le sequenze di attività con Configuration Manager consentono di automatizzare i passaggi per la distribuzione di un'immagine del sistema operativo in un computer di destinazione. Per distribuire un'unità Sale di Microsoft Teams in modo automatizzato, creare una sequenza di attività che fa riferimento all'immagine di avvio usata per avviare il computer microsoft Teams Rooms di destinazione, all'immagine del sistema operativo Windows 10 Enterprise che si vuole installare e a qualsiasi altro contenuto aggiuntivo, ad esempio altre applicazioni o aggiornamenti software.
+Le sequenze di attività con Configuration Manager consentono di automatizzare i passaggi per la distribuzione di un'immagine del sistema operativo in un computer di destinazione. Per distribuire un'unità di Microsoft Teams Rooms in modo automatico, creare una sequenza di attività che fa riferimento all'immagine di avvio usata per avviare il computer Microsoft Teams Rooms di destinazione, all'immagine del sistema operativo Windows 10 Enterprise da installare e a qualsiasi altro contenuto aggiuntivo, ad esempio altre applicazioni o aggiornamenti software.
 
 ### <a name="import-the-sample-task-sequence"></a>Importare la sequenza di attività di esempio
 
@@ -604,7 +604,7 @@ Le sequenze di attività con Configuration Manager consentono di automatizzare i
 1.  [**Scaricare**](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Skype/SfbOnline/downloads/Skype-Room-Systems-v2/SRS-v2-Configuration-Manager-Files.zip?raw=true) la sequenza di attività di esempio e copiare il file ZIP scaricato in un percorso condiviso.
 2.  Nella console di Configuration Manager passare a Sequenze di attività dei sistemi operativi della raccolta **software** \>  \> e quindi selezionare Importa **sequenza di attività.** 
 
-3.  Selezionare **Sfoglia**, passare al percorso della cartella condivisa usato nel passaggio 1, selezionare il file **Microsoft Teams Rooms Deployment (EN-US).zip** e quindi scegliere **Avanti**.
+3.  Selezionare **Sfoglia**, passare al percorso della cartella condivisa usato nel passaggio 1, selezionare il file **di Microsoft Teams Rooms Deployment (EN-US).zip** e quindi scegliere **Avanti**.
 
 4.  Impostare **Azione** **su Crea nuovo** e quindi selezionare **Avanti.**
 
@@ -616,63 +616,63 @@ Le sequenze di attività con Configuration Manager consentono di automatizzare i
 
 1. Selezionare la sequenza di attività importata e quindi scegliere **Modifica**.
 
-    Si apre l'Editor sequenza di attività e vengono visualizzati tutti i passaggi sequenziali necessari per distribuire e configurare un'unità di Microsoft Teams Rooms.
+    Si apre l'Editor sequenza di attività e vengono visualizzati tutti i passaggi sequenziali necessari per distribuire e configurare un'Microsoft Teams Rooms lavoro.
 
 2. Eseguire ogni passaggio e completare gli aggiornamenti consigliati:
 
-   1. **Riavvia in Windows PE:** questo passaggio riavvia e quindi avvia il computer in Windows PXE. Per questo passaggio non sono necessarie modifiche.
+   1. **Riavvia in Windows PE:** questo passaggio riavvia e quindi avvia il computer Windows PXE. Per questo passaggio non sono necessarie modifiche.
 
    2. **Disco di partizione 0 - UEFI:** questo passaggio cancella la configurazione del disco e crea le partizioni in base alle impostazioni configurate. È consigliabile non apportare modifiche a questo passaggio.
 
-   3. **Imposta nome computer SRS:** questo passaggio include un'applicazione HTML per fornire un'interfaccia utente per impostare un nome di computer per l'unità Microsoft Teams Rooms durante la distribuzione.
+   3. **Imposta nome computer SRS:** questo passaggio include un'applicazione HTML per fornire un'interfaccia utente per impostare un nome di computer per l'unità di Microsoft Teams Rooms durante la distribuzione.
       -  Si tratta di un passaggio facoltativo, ma può essere disabilitato solo se si vuole gestire la denominazione dei computer tramite un processo alternativo.
       -  Verificare che il **pacchetto SRS v2 - Set-SRSComputerName** sia selezionato. In caso contrario, passare al pacchetto e selezionarlo.
 
    4. **Applica sistema operativo:** questo passaggio specifica l'immagine del sistema operativo da distribuire e il file di risposte Sysprep automatico da usare.
-      -  Verificare che sia selezionato il file di immagine del sistema operativo Windows 10 Enterprise corretto.
+      -  Verificare che sia selezionata la Windows 10 Enterprise file di immagine del sistema operativo corretto.
       -  Verificare che **l'opzione** Usa un file di risposte automatico o Sysprep per un'installazione personalizzata sia abilitata ed è selezionato il pacchetto **SRS v2 - Sysprep.** Assicurarsi inoltre che **Nome file** sia impostato su **unattend.xml**.
 
-   5. **Applica impostazioni di Windows:** questo passaggio raccoglie informazioni sull'installazione di Windows.
+   5. **Applica Windows Impostazioni:** questo passaggio raccoglie informazioni sull'Windows installazione.
       -  Fornire informazioni sulle licenze e sulla registrazione, tra cui il codice Product Key, la password dell'account dell'amministratore locale e il fuso orario (a seconda delle esigenze).
 
-   6. **Applica impostazioni di rete:** questo passaggio consente di specificare un nome di dominio e un'unità organizzativa di Active Directory o un gruppo di lavoro.
+   6. **Applica nome Impostazioni** rete: questo passaggio consente di specificare un nome di dominio e un'unità organizzativa del gruppo di lavoro o di Active Directory.
       > [!NOTE]
-      > Per le azioni consigliate da eseguire per la distribuzione delle unità di Microsoft Teams Rooms come membri di un dominio directory Actve, vedere Considerazioni sull'aggiunta al dominio di Sistema sala [Skype.](domain-joining-considerations.md)
-   7. **Applica driver:** Questo passaggio e i relativi passaggi secondari vengono usati per distribuire i driver di dispositivo e il firmware applicabili in base al modello Surface Pro in uso. Aggiornare ogni passaggio per specificare il pacchetto driver pertinente associato a questa distribuzione.
-      -   Ogni pacchetto di driver è configurato per sfruttare i filtri di Strumentazione gestione Windows (WMI) per distribuire driver e firmware pertinenti in base alla creazione e al modello di Surface Pro.
+      > Vedere Skype considerazioni sull'aggiunta a un dominio room [system](domain-joining-considerations.md) per le azioni consigliate da eseguire nella distribuzione di Microsoft Teams Rooms come membri di un dominio directory Actve.
+   7. **Applica driver:** Questo passaggio e i relativi passaggi secondari vengono usati per distribuire i driver di dispositivo e il firmware applicabili in base al modello Surface Pro installato. Aggiornare ogni passaggio per specificare il pacchetto driver pertinente associato a questa distribuzione.
+      -   Ogni pacchetto di driver è configurato per sfruttare Windows filtri di Strumentazione gestione windows (WMI) per distribuire driver e firmware pertinenti in base alla Surface Pro e al modello.
       -   È consigliabile non modificare la configurazione di questi driver, altrimenti la distribuzione potrebbe non riuscire.
 
    8. **Configurare Windows e Configuration Manager:** questo passaggio distribuisce e configura il client di Configuration Manager. Aggiornare questo passaggio per specificare il pacchetto client predefinito di Configuration Manager.
 
    9. **Installa certificato radice:** questo passaggio distribuisce il certificato radice per i dispositivi non appartenenti al dominio e pertanto è facoltativo e disabilitato per impostazione predefinita.
-      -   Abilitare questo passaggio se è necessario distribuire un certificato radice nelle unità di Microsoft Teams Rooms.Enable this step if you need to deploy a root certificate to the Microsoft Teams Rooms units.
+      -   Abilitare questo passaggio se è necessario distribuire un certificato radice nelle unità Microsoft Teams Rooms radice.
       -   Se è necessario eseguire questo passaggio, verificare che siano selezionate le impostazioni **SRS v2 - Root Certificate Package** e Disable **64-bit file system redirection.**
 
    10. **Installare e configurare l'agente** di monitoraggio: questo passaggio installa la versione a 64 bit dell'agente di monitoraggio di Microsoft Azure e configura l'agente per la connessione all'area di lavoro Log Analytics.
-       -   Questo passaggio è disabilitato per impostazione predefinita. Abilitare questo passaggio solo se si userà l'agente di monitoraggio per monitorare l'integrità delle unità di Microsoft Teams Rooms.
+       -   Questo passaggio è disabilitato per impostazione predefinita. Abilitare questo passaggio solo se si userà l'agente di monitoraggio per monitorare l'integrità delle Microsoft Teams Rooms lavoro.
        -   Modificare questo passaggio e aggiornare i parametri della riga di comando per specificare l'ID area **di lavoro** e la **chiave dell'area di lavoro.**
        -   Per altre informazioni su come ottenere l'ID area di lavoro di Operations Management Suite e la chiave primaria, vedere Configurare i dispositivi di test per il monitoraggio di [Azure.](azure-monitor-deploy.md#configure-test-devices-for-azure-monitoring)
-       -   Verificare che **l'opzione SRS v2 - Pacchetto Microsoft Monitoring Agent** e Disabilita reindirizzamento del file system a **64 bit** sia selezionata.
-       -   Per altre informazioni sul monitoraggio dell'integrità della distribuzione di Microsoft Teams Rooms, vedere Pianificare la gestione delle sale di Microsoft Teams con [Monitor di Azure,](azure-monitor-plan.md)Distribuire la gestione delle sale di Microsoft Teams con [Monitor di Azure](azure-monitor-deploy.md) e Gestire i dispositivi Microsoft Teams Rooms con Monitor [di Azure.](azure-monitor-manage.md)
+       -   Verificare che **l'opzione SRS v2 – Microsoft Monitoring Agent pacchetto** e disabilita il reindirizzamento del file system a **64 bit** sia selezionata.
+       -   Per altre informazioni sul monitoraggio dell'integrità della distribuzione di Microsoft Teams Rooms, vedere Pianificare la gestione di Microsoft Teams Rooms con [Monitor di Azure,](azure-monitor-plan.md)Distribuire la gestione [di Microsoft Teams Rooms](azure-monitor-deploy.md) con Monitoraggio di Azure e Gestire i dispositivi Microsoft Teams Rooms con Monitor [di Azure.](azure-monitor-manage.md)
 
-   11. **Copia file di configurazione SRS v2:** questo passaggio copia i file di configurazione e di configurazione necessari dal kit di distribuzione di Microsoft Teams Rooms al disco rigido locale. Per questo passaggio non è necessaria alcuna personalizzazione.
+   11. **Copia file di configurazione SRS v2:** questo passaggio copia i file di configurazione e di configurazione necessari dal kit di distribuzione di Microsoft Teams Rooms nel disco rigido locale. Per questo passaggio non è necessaria alcuna personalizzazione.
        -   Verificare che siano selezionati **il pacchetto dell'applicazione SRS v2 - SRS** e il reindirizzamento del file system a **64 bit.**
 
-   12. **Install-SRSv2-OS-Updates:** questo passaggio distribuisce tutti gli aggiornamenti obbligatori del sistema operativo necessari con la distribuzione di Microsoft Teams Rooms. Eseguire le operazioni seguenti:
-       -   Selezionare [Configura una console di Microsoft Teams Rooms](console.md) per vedere quali aggiornamenti sono necessari.
+   12. **Install-SRSv2-OS-Updates:** questo passaggio distribuisce tutti gli aggiornamenti obbligatori del sistema operativo necessari con la Microsoft Teams Rooms distribuzione. Eseguire le operazioni seguenti:
+       -   Selezionare [Configura una Microsoft Teams Rooms per](console.md) vedere quali aggiornamenti sono necessari.
        -   Verificare che il **pacchetto di aggiornamenti del sistema operativo SRS v2 includa** tutti gli aggiornamenti necessari.
        -   Verificare che sia **selezionato il pacchetto SRS v2 - Aggiornamenti** del sistema operativo.
        -   Verificare che i criteri di esecuzione di PowerShell siano impostati su **Ignora**.
 
    13. **Riavvia computer:** questo passaggio riavvia il computer dopo l'installazione degli aggiornamenti obbligatori del sistema operativo. Per questo passaggio non è necessaria alcuna personalizzazione.
 
-   14. **Configurare i componenti di Windows:** questo passaggio configura le funzionalità di Windows necessarie. Per questo passaggio non è necessaria alcuna personalizzazione.
+   14. **Configurazione Windows componenti:** questo passaggio configura le caratteristiche Windows componenti. Per questo passaggio non è necessaria alcuna personalizzazione.
 
-   15. **Riavvia computer:** questo passaggio riavvia il computer dopo la configurazione delle funzionalità di Windows. Per questo passaggio non è necessaria alcuna personalizzazione.
+   15. **Riavvia computer:** questo passaggio riavvia il computer dopo la configurazione delle Windows funzionalità. Per questo passaggio non è necessaria alcuna personalizzazione.
 
-   16. **Aggiungi utente Skype locale:** questo passaggio crea l'account Skype locale usato per accedere automaticamente a Windows e avviare l'applicazione Microsoft Teams Rooms. A questo passaggio non è associato alcun pacchetto software e non è necessaria alcuna personalizzazione.
+   16. **Aggiungi utente Skype** locale: questo passaggio crea l'account Skype locale usato per accedere automaticamente a Windows e avviare l'applicazione Microsoft Teams Rooms locale. A questo passaggio non è associato alcun pacchetto software e non è necessaria alcuna personalizzazione.
 
-   17. **Configurare e configurare l'applicazione SRS:** questo passaggio configura l'installazione dell'applicazione Microsoft Teams Rooms per l'avvio successivo del sistema operativo.
+   17. **Configurare e configurare l'applicazione SRS:** questo passaggio configura l Microsoft Teams Rooms installazione dell'applicazione per l'avvio successivo del sistema operativo.
        -   Verificare che **l'opzione SRS v2 - Configura pacchetto** di installazione SRS e Disabilita il reindirizzamento del file system a **64 bit** sia selezionata.
 
 > [!IMPORTANT]
@@ -696,7 +696,7 @@ Le sequenze di attività con Configuration Manager consentono di automatizzare i
    > [!WARNING]
    > È molto importante che **Scopo** sia impostato su **Disponibile**. Assicurarsi che **l'opzione Scopo** **NON sia** impostata su **Obbligatorio**. Assicurarsi inoltre di selezionare Solo elementi multimediali **e PXE** nell'elenco **Rendi disponibile per l'elemento seguente.**
    >
-   > Se si impostano questi valori su un altro valore, tutti i computer potrebbero ottenere l'immagine di distribuzione di Microsoft Teams Rooms all'avvio.
+   > L'impostazione di questi valori su un altro valore potrebbe causare l'Microsoft Teams Rooms di distribuzione di tutti i computer all'avvio.
 7. Non specificare alcuna pianificazione e selezionare **Avanti**.
 
 8. Non modificare nulla all'interno **della sezione Esperienza** utente e selezionare **Avanti**.
@@ -712,9 +712,9 @@ Le sequenze di attività con Configuration Manager consentono di automatizzare i
 <a name="validate-and-troubleshoot-the-solution"></a>Convalidare e risolvere i problemi della soluzione
 --------------------------------------
 
-Dopo aver completato le sequenze di attività di Microsoft Endpoint Configuration Manager, è necessario eseguire un'esecuzione dei test per verificare che la sequenza di attività sia in grado di distribuire e configurare le unità di Microsoft Teams Rooms.
+Dopo aver completato le sequenze di attività Microsoft Endpoint Configuration Manager, è necessario eseguire un'esecuzione dei test per verificare che la sequenza di attività sia in grado di distribuire e configurare Microsoft Teams Rooms lavoro.
 
-1.  Connettere il dispositivo di test alla rete cablata usando uno degli adattatori Ethernet supportati o il dock surface. Se la funzionalità di avvio PXE non è stata configurata per l'ambiente, è possibile usare l'immagine di avvio nell'unità flash USB creata in precedenza per eseguire l'avvio da USB e connettersi a Configuration Manager. [](/configmgr/osd/deploy-use/create-bootable-media)
+1.  Connessione il dispositivo di test alla rete cablata usando uno degli adattatori Ethernet supportati o il Dock surface. Se la funzionalità di avvio PXE non è stata configurata per l'ambiente, è possibile usare l'immagine di avvio nell'unità flash USB creata in precedenza per eseguire l'avvio da USB e connettersi a Configuration Manager. [](/configmgr/osd/deploy-use/create-bootable-media)
 
 2.  Accedere al firmware e avviare l'avvio PXE:
 
@@ -737,21 +737,21 @@ Dopo aver completato le sequenze di attività di Microsoft Endpoint Configuratio
 
 4.  Quando richiesto, selezionare **INVIO per** il servizio di avvio di rete.
 
-5.  Windows PE verrà caricato in memoria e verrà avviata la Creazione guidata Sequenza attività. Selezionare **Avanti** per continuare.
+5.  Windows Pe verrà caricato in memoria e verrà avviata la Creazione guidata Sequenza attività. Selezionare **Avanti** per continuare.
 
 6.  Selezionare la sequenza di attività importata in precedenza e quindi scegliere **Avanti**.
 
-7.  Dopo l'applicazione della configurazione del disco, verrà richiesto di specificare un nome di computer per il dispositivo. L'interfaccia utente visualizza un nome di computer consigliato in base al numero di serie del dispositivo Surface Pro. È possibile accettare il nome proposto o specificarne uno nuovo. Seguire le istruzioni visualizzate nella schermata di assegnazione del nome del computer. Quando si seleziona **Accetta**, viene avviata la distribuzione.
+7.  Dopo l'applicazione della configurazione del disco, verrà richiesto di specificare un nome di computer per il dispositivo. L'interfaccia utente visualizza un nome di computer consigliato in base al numero di serie Surface Pro dispositivo. È possibile accettare il nome proposto o specificarne uno nuovo. Seguire le istruzioni visualizzate nella schermata di assegnazione del nome del computer. Quando si seleziona **Accetta**, viene avviata la distribuzione.
 
 8.  Il resto del processo di distribuzione è automatico e non richiede altri input dell'utente.
 
-9.  Al termine della configurazione del dispositivo da parte della sequenza di attività di distribuzione, verrà visualizzata la schermata di configurazione seguente che chiede di configurare le impostazioni dell'applicazione Microsoft Teams Rooms.
+9.  Al termine della configurazione del dispositivo da parte della sequenza di attività di distribuzione, verrà visualizzata la schermata di configurazione seguente che chiede di configurare le impostazioni Microsoft Teams Rooms'applicazione.
 
-    ![Schermata di configurazione iniziale per l'applicazione Microsoft Teams Rooms](../media/room-systems-scale-image2.png)
+    ![Schermata di configurazione iniziale per l Microsoft Teams Rooms app](../media/room-systems-scale-image2.png)
 
-10.  Collega Surface Pro alla console di Microsoft Teams Rooms e configura le impostazioni dell'applicazione.
+10.  Collegare il Surface Pro nella console Microsoft Teams Rooms e configurare le impostazioni dell'applicazione.
 
-11.  Verificare che le funzionalità elencate nella [Guida di Microsoft Teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) funzionino sul dispositivo distribuito.
+11.  Verificare che le funzionalità elencate nella [Guida Microsoft Teams Rooms funzionino](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) nel dispositivo distribuito.
 
 
 Per risolvere i problemi relativi a un'installazione non riuscita, controllare il file **SMSTS.log,** che registra tutti i passaggi eseguiti in una sequenza di attività di Configuration Manager.
@@ -761,7 +761,7 @@ Il file SMSTS.log viene archiviato in uno dei diversi percorsi, a seconda della 
 
 | **Fase di distribuzione**                                                            | **Percorso del log della sequenza di attività**                         |
 |---------------------------------------------------------------------------------|----------------------------------------------------|
-| WinPE, prima del formato HDD                                                        | X: \\ Windows \\ Temp \\ smstslog \\ smsts.log             |
+| WinPE, prima del formato HDD                                                        | X: \\ Windows \\ temp \\ smstslog \\ smsts.log             |
 | WinPE, dopo il formato HDD                                                         | C: \\ _SMSTaskSequence \\ log \\ Smstslog \\ smsts.log    |
 | Sistema operativo distribuito prima dell'installazione dell'agente di Configuration Manager | c: \\ _SMSTaskSequence \\ log \\ Smstslog \\ smsts.log    |
 | Sistema operativo e agente di Configuration Manager distribuiti                   | %windir% \\ System32 \\ ccm \\ registra \\ Smstslog \\ smsts.log |
@@ -776,4 +776,4 @@ Per risolvere i problemi di avvio PXE, controllare i due file di log nel server 
 
 -   **Smspxe.log**, che si trova nella directory dei log di Configuration Manager Management Point (MP)
 
-Per un elenco completo dei file di log che è possibile usare per risolvere ulteriormente i problemi di installazione di Configuration Manager, vedere le informazioni di riferimento sul [file di](/configmgr/core/plan-design/hierarchy/log-files)log di Microsoft Endpoint Configuration Manager.
+Per un elenco completo dei file di log che è possibile usare per risolvere ulteriormente i problemi di installazione di Configuration Manager, vedere le informazioni di riferimento Microsoft Endpoint Configuration Manager [file di log.](/configmgr/core/plan-design/hierarchy/log-files)

@@ -1,5 +1,5 @@
 ---
-title: Implementare la qualità del servizio (QoS) nei client Microsoft Teams
+title: Implementare la qualità del servizio (QoS) nei Microsoft Teams client
 author: SerdarSoysal
 ms.author: serdars
 manager: Serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: vkorlep, siunies
 audience: admin
-description: Informazioni su come usare la qualità del servizio (QoS) per ottimizzare il traffico di rete per il client desktop di Microsoft Teams.
+description: Informazioni su come usare la qualità del servizio (QoS) per ottimizzare il traffico di rete per il client Microsoft Teams desktop.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -26,9 +26,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51094784"
 ---
-# <a name="implement-quality-of-service-qos-in-microsoft-teams-clients"></a>Implementare la qualità del servizio (QoS) nei client Microsoft Teams
+# <a name="implement-quality-of-service-qos-in-microsoft-teams-clients"></a>Implementare la qualità del servizio (QoS) nei Microsoft Teams client
 
-È possibile usare la qualità del servizio (QoS) basata su criteri all'interno di Criteri di gruppo per impostare l'intervallo di porte di origine per il valore DSCP predefinito nel client Teams. Gli intervalli di porta specificati nella tabella seguente sono un punto di partenza per creare un criterio per ogni carico di lavoro.
+È possibile usare la qualità del servizio (QoS) basata su criteri all'interno di Criteri di gruppo per impostare l'intervallo di porte di origine per il valore DSCP predefinito nel client Teams client. Gli intervalli di porta specificati nella tabella seguente sono un punto di partenza per creare un criterio per ogni carico di lavoro.
 
 *Tabella 1. Intervalli di porta iniziali consigliati*
 
@@ -39,9 +39,9 @@ ms.locfileid: "51094784"
 |Condivisione di applicazioni/schermi| 50.040–50.059|TCP/UDP|18|Assured Forwarding (AF21)|
 | | | | | |
 
-Se possibile, configurare le impostazioni QoS basate su criteri all'interno di un oggetto Criteri di gruppo. I passaggi seguenti sono molto simili alla configurazione degli intervalli di porte e ai criteri di qualità del servizio per i clienti  [in Skype for Business Server,](/SkypeForBusiness/manage/network-management/qos/configuring-port-ranges-for-your-skype-clients#configure-quality-of-service-policies-for-clients-running-on-windows-10)che contiene alcuni dettagli aggiuntivi che potrebbero non essere necessari.
+Se possibile, configurare le impostazioni QoS basate su criteri all'interno di un oggetto Criteri di gruppo. La procedura seguente è molto simile alla configurazione degli intervalli di porte e ai criteri di qualità del servizio per i client in [Skype for Business Server](/SkypeForBusiness/manage/network-management/qos/configuring-port-ranges-for-your-skype-clients#configure-quality-of-service-policies-for-clients-running-on-windows-10), che include alcuni dettagli aggiuntivi che potrebbero non essere necessari.
 
-Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, accedere prima di tutto a un computer in cui è installato Gestione Criteri di gruppo. Aprire Gestione Criteri di gruppo (fare clic sul pulsante Start, scegliere Strumenti di amministrazione e quindi fare clic su Gestione Criteri di gruppo) e quindi completare i passaggi seguenti:
+Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, accedere prima di tutto a un computer in cui è stato installato Gestione Criteri di gruppo. Aprire Gestione Criteri di gruppo (fare clic sul pulsante Start, scegliere Strumenti di amministrazione e quindi fare clic su Gestione Criteri di gruppo) e quindi completare i passaggi seguenti:
 
 1. In Gestione Criteri di gruppo individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer client si trovano in un'unità organizzativa denominata **Client,** il nuovo criterio deve essere creato nell'unità organizzativa Client.
 
@@ -51,11 +51,11 @@ Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, acce
 
 1. Fare clic con il pulsante destro del mouse sul criterio appena creato e quindi scegliere **Modifica**.
 
-1. Nell'Editor Gestione Criteri di gruppo espandere **Configurazione computer**, espandere Impostazioni **di Windows**, fare clic con il pulsante destro del mouse su **QoS** basata su criteri e quindi scegliere **Crea nuovo criterio**.
+1. Nell'Editor Gestione Criteri di gruppo espandere **Configurazione computer**, espandere **Windows Impostazioni**, fare clic con il pulsante destro del mouse su **QoS** basata su criteri e quindi scegliere **Crea nuovo criterio**.
 
 1. Nella pagina di apertura della finestra di dialogo **QoS** basata su criteri digitare un nome per il nuovo criterio nella **casella** Nome. Selezionare **Specifica valore DSCP** e impostare il valore su **46.** Lasciare **deselezionata l'opzione Specifica** velocità in uscita e quindi fare clic su **Avanti.**
 
-1. Nella pagina successiva selezionare Solo le applicazioni con questo nome **eseguibile** **e** immettere il nomeTeams.exee quindi fare clic su **Avanti.** Questa impostazione indica al criterio di assegnare la priorità solo al traffico corrispondente dal client Teams.
+1. Nella pagina successiva selezionare Solo le applicazioni con questo nome **eseguibile** **e** immettere il nomeTeams.exee quindi fare clic su **Avanti.** Questa impostazione indica al criterio di assegnare priorità solo al traffico corrispondente Teams client.
 
 1. Nella terza pagina verificare che siano selezionate le opzioni Qualsiasi indirizzo **IP** di origine e Qualsiasi indirizzo **IP** di destinazione e quindi fare clic su **Avanti.** Queste due impostazioni assicurano che i pacchetti siano gestiti indipendentemente dal computer (indirizzo IP) che ha inviato i pacchetti e dal computer (indirizzo IP) che riceverà i pacchetti.
 
@@ -99,11 +99,11 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
 
 1. Aprire l'editor del Registro di sistema e passare a
 
-   HKEY \_ LOCAL \_ MACHINE \\ Software \\ Policies \\ Microsoft \\ Windows \\ QoS
+   HKEY \_ LOCAL MACHINE Software Policies Microsoft Windows \_ \\ \\ \\ \\ \\ QoS
 
    Verificare i valori per le voci del Registro di sistema elencate nella tabella 2.
 
-   *Tabella 2. Valori per le voci del Registro di sistema di Windows per QoS*
+   *Tabella 2. Valori per le Windows del Registro di sistema per QoS*
 
    |          Nome          |  Tipo  |    Dati     |
    |         :---:          | :---:  |    :---:    |
@@ -112,7 +112,7 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
    |        IP locale        | REG_SZ |     \*      |
    | Lunghezza prefisso IP locale | REG_SZ |     \*      |
    |       Porta locale       | REG_SZ | 50000-50019 |
-   |        Protocollo        | REG_SZ |     \*      |
+   |        Protocol        | REG_SZ |     \*      |
    |       IP remoto        | REG_SZ |     \*      |
    |    Prefisso IP remoto    | REG_SZ |     \*      |
    |      Porta remota       | REG_SZ |     \*      |

@@ -1,5 +1,5 @@
 ---
-title: Interfaccia DSTU2 dell'integrazione di Pazienti app ed EHR
+title: Interfaccia DSTU2 per l'integrazione di Patients App ed EHR
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -16,7 +16,7 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.reviewer: anach
-description: Informazioni sulla specifica dell'interfaccia DSTU2 in Teams, inclusa la configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Pazienti di Microsoft Teams.
+description: Informazioni sulla specifica dell'interfaccia DSTU2 in Teams, tra cui la configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Microsoft Teams Patients.
 ms.custom: seo-marvel-mar2020
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 12833ea55977cf7e8d18ee5c10b1f17d898b27b3
@@ -29,58 +29,58 @@ ms.locfileid: "48803484"
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
 
 > [!NOTE]
-> A partire dal 30 ottobre 2020, l'app Pazienti è stata ritirata e sostituita [dall'app Elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in Teams. I dati dell'app Pazienti vengono archiviati nella cassetta postale del gruppo di Office 365 che backup il team. Tutti i dati associati all'app Pazienti vengono conservati in questo gruppo, ma non sono più accessibili tramite l'interfaccia utente. Gli utenti possono creare di nuovo i propri elenchi usando [l'app Elenchi.](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db)
+> A partire dal 30 ottobre 2020, l'app Pazienti è stata ritirata e sostituita dall’app [Elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) in Teams. I dati dell’app Pazienti vengono archiviati nella casella postale di gruppo del gruppo di Office 365 che supporta il team. Tutti i dati associati all'app Pazienti vengono conservati in questo gruppo, ma non è più possibile accedervi tramite l'interfaccia utente. Gli utenti possono ricreare i propri elenchi utilizzando l’app [Elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db).
 >
->Con Elenchi, i team di assistenza all'interno dell'organizzazione sanitaria possono creare elenchi di pazienti per scenari che vanno da turni e riunioni interdisciplinari del team al monitoraggio generale dei pazienti. Per iniziare, vedere il modello Pazienti in Elenchi. Per altre informazioni su come gestire l'app Elenchi nell'organizzazione, vedere [Gestire l'app Elenchi.](../../manage-lists-app.md)
+>Con Elenchi, i team di assistenza della tua organizzazione sanitaria possono creare elenchi di pazienti per scenari che vanno da turni e riunioni di team interdisciplinari al monitoraggio generale dei pazienti. Estrai il modello Coordinamento pazienti in Elenchi per iniziare. Per ulteriori informazioni su come gestire l'app Elenchi nella tua organizzazione, vedere [Gestire l’app Elenchi](../../manage-lists-app.md).
 
-La configurazione o la riconfigurazione di un server FHIR per l'utilizzo dell'app Pazienti di Microsoft Teams richiede la comprensione dei dati a cui l'app deve accedere. Il server FHIR deve supportare le richieste POST tramite bundle per le risorse seguenti:
+La configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Microsoft Teams Patients richiede la comprensione dei dati a cui l'app deve accedere. Il server FHIR deve supportare le richieste POST usando bundle per le risorse seguenti:
 
 - [Paziente](#patient)
 - [Osservazione](#observation)
 - [Condizione](#condition)
-- [Incontrarsi](#encounter)
-- [Intoleranza invariabile](#allergyintolerance)
+- [Incontro](#encounter)
+- [Intolleranza allergia](#allergyintolerance)
 - [Copertura](#coverage)
-- [Ordine di farmaci](#medication-order)
+- [Ordine dei farmaci](#medication-order)
 - [Posizione](#location)
 
 > [!NOTE]
-> La risorsa paziente è l'unica risorsa obbligatoria (senza la quale l'app non verrà caricata affatto. Tuttavia, è consigliabile che il partner implementi il supporto per tutte le risorse menzionate sopra per specifiche fornite di seguito per la migliore esperienza utente con l'app Pazienti di Microsoft Teams.
+> La risorsa Paziente è l'unica risorsa obbligatoria senza la quale l'app non verrà caricata. Tuttavia, è consigliabile che il partner implementi il supporto per tutte le risorse menzionate sopra in base alle specifiche fornite di seguito per la migliore esperienza dell'utente finale con l'app Microsoft Teams Patients.
 
-Query dall'app Pazienti di Microsoft Teams per più di una risorsa pubblicano un bundle (BATCH) di richieste all'URL del server FHIR. Il server elabora ogni richiesta e restituisce un bundle delle risorse corrispondenti a ogni richiesta. Per altre informazioni ed esempi, vedere [https://www.hl7.org/fhir/DSTU2/http.html#transaction](https://www.hl7.org/fhir/DSTU2/http.html#transaction) .
+Query dall'app Microsoft Teams Patients per più risorse pubblicano un pacchetto (BATCH) di richieste all'URL del server FHIR. Il server elabora ogni richiesta e restituisce un bundle delle risorse corrispondenti a ogni richiesta. Per altre informazioni ed esempi, vedere [https://www.hl7.org/fhir/DSTU2/http.html#transaction](https://www.hl7.org/fhir/DSTU2/http.html#transaction) .
 
-Tutte le risorse FHIR seguenti devono essere accessibili con riferimento diretto alle risorse.
+Tutte le risorse FHIR seguenti devono essere accessibili tramite riferimento diretto alle risorse.
 
-## <a name="conformance-minimum-required-field-set"></a>Set di campi Obbligatorio minimo di conformità
+## <a name="conformance-minimum-required-field-set"></a>Set di campi obbligatorio minimo di conformità
 
- Il server FHIR deve implementare la dichiarazione di conformità perché ci sia un riepilogo dei fatti delle sue capacità. In un server DSTU2 FHIR sono previsti i parametri seguenti:
+ Il server FHIR deve implementare la dichiarazione di conformità per poter disporre di un riepilogo fattuale delle sue funzionalità. In un server DSTU2 FHIR sono previsti i parametri seguenti:
 
- - REST
+ - RESTO
 
     - Modalità
     - Interazione
     - Risorsa: Tipo
     - Sicurezza: [estensione per GLI URI OAuth](https://hl7.org/fhir/extension-oauth-uris.html)
    
- - FhirVersion (Il nostro codice richiede questo perché comprendi la versione su cui è necessario eseguire il pivot perché supportiamo più versioni).)
+ - FhirVersion (Il nostro codice richiede questa operazione per comprendere la versione a cui è necessario eseguire il pivot mentre supportiamo più versioni).
 
-Per [https://www.hl7.org/fhir/dstu2/conformance.html](https://www.hl7.org/fhir/dstu2/conformance.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/dstu2/conformance.html](https://www.hl7.org/fhir/dstu2/conformance.html) per altri dettagli su questo set di campi.
 
 ## <a name="patient"></a>Paziente
 
-Si tratta dei campi minimi obbligatori, che sono un sottoinsieme dei campi del profilo del [paziente Inaut:](http://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-patient.html)
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme dei campi del profilo del paziente di Argonaut:These are the minimum required fields, which are a subset of the [Argonaut patient profile](http://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-patient.html) fields:
 
  - Name.Family
  - Name.Given
- - Gender
+ - Sesso
  - BirthDate
- - MRN (identificatore)
+ - MRN (Identificatore)
 
-Oltre ai campi Clientenaut, per un'esperienza utente ottimale, l'app Pazienti legge anche i campi seguenti:
+Oltre ai campi di Argonaut, per un'esperienza utente ottimale l'app Pazienti legge anche i campi seguenti:
 
  - Name.Use
  - Name.Prefix
- - CareProvider (Questo riferimento sulla risorsa Patient deve includere i campi visualizzati nell'esempio seguente).
+ - CareProvider (Questo riferimento nella risorsa Patient deve includere i campi visualizzati nell'esempio seguente).
 
     ```
     Request:
@@ -121,20 +121,20 @@ Oltre ai campi Clientenaut, per un'esperienza utente ottimale, l'app Pazienti le
     }
     ```
 
-Una ricerca di risorse usa il metodo POST presso /Patient/_search e i parametri seguenti:
+Una ricerca di risorse usa il metodo POST in /Patient/_search e i parametri seguenti:
 
  - id
  - family:contains=(cerca tutti i pazienti il cui nome di famiglia contiene il valore).
  - given=\<substring>
  - name=\<substring>
- - birthdate=(corrispondenza esatta)
- - \_count (numero massimo di risultati che deve essere restituito) <br> La risposta deve contenere il conteggio totale dei record restituiti come risultato della ricerca e verrà usato dall'app Pazienti per limitare il numero \_ di record restituiti.
- - identifier=\<mrn>
+ - datadi nascita=(corrispondenza esatta)
+ - \_count (numero massimo di risultati da restituire) <br> La risposta deve contenere il conteggio totale dei record restituiti come risultato della ricerca e il conteggio verrà usato dalla PatientsApp per limitare il numero \_ di record restituiti.
+ - identificatore=\<mrn>
 
-L'obiettivo è poter cercare e filtrare un paziente in base alle condizioni seguenti:
+L'obiettivo è quello di poter cercare e filtrare un paziente in base a quanto segue:
 
-- ID: ID risorsa di ogni risorsa disponibile in FHIR.
-- MRN: l'identificatore effettivo del paziente che il personale clinico conoscerebbe. Sappiamo che questo MRN si basa sul tipo di identificatore all'interno della risorsa identificatore in FHIR
+- ID: ID risorsa di ogni risorsa in FHIR.
+- MRN: questo è l'identificatore effettivo del paziente che il personale clinico conoscerebbe. Sappiamo che questo MRN si basa sul tipo di identificatore all'interno della risorsa identificatore in FHIR
 - Nome
 - Data di nascita
 
@@ -176,29 +176,29 @@ Response:
 }
 ```
 
-Per [https://www.hl7.org/fhir/DSTU2/Patient.html](https://www.hl7.org/fhir/DSTU2/Patient.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/Patient.html](https://www.hl7.org/fhir/DSTU2/Patient.html) per altri dettagli su questo set di campi.
 
 ## <a name="observation"></a>Osservazione
 
-Si tratta dei campi minimi obbligatori, che sono un sottoinsieme del profilo dei segni essenziali dell'antasta:
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo dei segni vitali di Argonaut:
 
- - Validità (data e ora o periodo)
+ - Validità (data/ora o periodo)
  - Code.Coding.Code
- - ValueQuantity.Value
+ - ValoreQuantity.Value
 
-Oltre ai campi Clientenaut, per un'esperienza utente ottimale, l'app Pazienti legge anche i campi seguenti:
+Oltre ai campi di Argonaut, per un'esperienza utente ottimale l'app Pazienti legge anche i campi seguenti:
 
  - Code.Coding.Display
  - ValueQuantity.Unit
 
-Se si usano osservazioni dei componenti, si applica la stessa logica per ogni osservazione dei componenti.
+Se si usano osservazioni di componenti, la stessa logica si applica per ogni osservazione dei componenti.
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
  - patient=\<patient id\>
  - sort:desc=\<field ex. date\>
 
-L'obiettivo è quello di recuperare i segni essenziali più recenti per un paziente, [VitalSigns.DSTU.saz] (osservazione?).
+L'obiettivo è recuperare i segni vitali più recenti per un paziente, [VitalSigns.DSTU.saz] (osservazione?).
 
 ```
 Request:
@@ -243,15 +243,15 @@ Response:
 }
 ```
 
-Per [https://www.hl7.org/fhir/DSTU2/Observation.html](https://www.hl7.org/fhir/DSTU2/Observation.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/Observation.html](https://www.hl7.org/fhir/DSTU2/Observation.html) per altri dettagli su questo set di campi.
 
 ## <a name="condition"></a>Condizione
 
-Si tratta dei campi minimi obbligatori, che sono un sottoinsieme del profilo della [condizione Dinaut:](http://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-condition.html)
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo condizione [di Argonaut:](http://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-condition.html)
 
-1. Code.Coding[0]. Schermo
+1. Code.Coding[0]. Visualizzazione
 
-Oltre ai campi Clientenaut, per un'esperienza utente ottimale, l'app Pazienti può anche leggere i campi seguenti:
+Oltre ai campi di Argonaut, per un'esperienza utente ottimale, l'app Pazienti può anche leggere i campi seguenti:
 
  - Data registrazione
  - Gravità
@@ -303,16 +303,16 @@ Response:
 }
 ```
 
-Per [https://www.hl7.org/fhir/DSTU2/Condition.html](https://www.hl7.org/fhir/DSTU2/Condition.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/Condition.html](https://www.hl7.org/fhir/DSTU2/Condition.html) per altri dettagli su questo set di campi.
 
-## <a name="encounter"></a>Incontrarsi
+## <a name="encounter"></a>Incontro
 
-Si tratta dei campi minimi obbligatori, che sono un sottoinsieme dei campi "obbligatori" del profilo di verifica principale per gli Stati Uniti:
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme dei campi "must have" del profilo Us Core Encounter:
 
  - Stato
- - Digitare[0]. Codifica[0]. Schermo
+ - Type[0]. Codifica[0]. Visualizzazione
 
-Inoltre, i seguenti campi dei campi "deve supportare" del profilo Us Core Encounter
+Inoltre, i campi seguenti dei campi "must support" del profilo Us Core Encounter
 
  - Period.Start
  - Location[0]. Location.Display
@@ -323,7 +323,7 @@ Una ricerca di risorse usa il metodo GET e i parametri seguenti:
  - _sort:desc=\<field ex. date>
  - _count=\<max results>
 
-L'obiettivo è quello di recuperare l'ultima posizione nota del paziente. Ogni riferimento fa riferimento a una risorsa posizione. Il riferimento deve includere anche il campo di visualizzazione della posizione. Vedere l'esempio seguente di questa chiamata.
+L'obiettivo è recuperare l'ultima posizione nota del paziente. Ogni incontro fa riferimento a una risorsa posizione. Il riferimento deve includere anche il campo di visualizzazione della posizione. Vedere l'esempio seguente di questa chiamata.
 
 ```
 Request:
@@ -359,27 +359,27 @@ Response:
 }
 ```
 
-Per [https://www.hl7.org/fhir/DSTU2/Encounter.htm](https://www.hl7.org/fhir/DSTU2/Encounter.htm) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/Encounter.htm](https://www.hl7.org/fhir/DSTU2/Encounter.htm) per altri dettagli su questo set di campi.
 
-## <a name="allergyintolerance"></a>IntolerazioneSocietà
+## <a name="allergyintolerance"></a>AllergyIntolerance
 
-Si tratta dei campi minimi obbligatori, che sono un sottoinsieme del profilo Disapersa Avi:
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo Disarginamentoargia Argonaut:
 
  - Code.Text
- - Code.Coding[0]. Schermo
+ - Code.Coding[0]. Visualizzazione
  - Stato
 
-Oltre ai campi Clientenaut, per un'esperienza utente ottimale, l'app Pazienti legge anche i campi seguenti:
+Oltre ai campi di Argonaut, per un'esperienza utente ottimale l'app Pazienti legge anche i campi seguenti:
 
  - RecordedDate
  - Note.Text
- - Reaction[..]. Evase.Testo
- - Reaction[..]. Evaso[..]. Testo
+ - Reaction[..]. Sostanza.Testo
+ - Reaction[..]. Manifestazione[..]. Testo
  - Text.Div
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
- - Patient =  \<patient id>
+ - Paziente =  \<patient id>
 
 Vedere l'esempio seguente di questa chiamata:
 
@@ -421,21 +421,21 @@ Response:
 }
 ```
 
-Per [https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html](https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html](https://www.hl7.org/fhir/DSTU2/AllergyIntolerance.html) per altri dettagli su questo set di campi.
 
-## <a name="medication-order"></a>Ordine di farmaci
+## <a name="medication-order"></a>Ordine dei farmaci
 
-Questi sono i campi minimi obbligatori, che sono un sottoinsieme del profilo Ordine Farmacia per farmaci:
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo Argonaut MedicationOrder:These are the minimum required fields, which are a subset of the Argonaut MedicationOrder profile:
 
  - DateWritten
  - Prescriber.Display
- - Medication.Display (se di riferimento)
- - Medication.Text (se concetto)
+ - Medication.Display (se riferimento)
+ - Farmaci.Testo (se concetto)
 
-Oltre ai campi Clientenaut, per un'esperienza utente ottimale, l'app Pazienti può anche leggere i campi seguenti:
+Oltre ai campi di Argonaut, per un'esperienza utente ottimale, l'app Pazienti può anche leggere i campi seguenti:
 
  - DateEnded
- - Estrazione.Testo.Istruzione.Testo
+ - DoseInstruction.Text
  - Text.Div
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
@@ -478,13 +478,13 @@ Response:
 }
 ```
 
-Per [https://www.hl7.org/fhir/DSTU2/MedicationOrder.html](https://www.hl7.org/fhir/DSTU2/MedicationOrder.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/MedicationOrder.html](https://www.hl7.org/fhir/DSTU2/MedicationOrder.html) per altri dettagli su questo set di campi.
 
 ## <a name="coverage"></a>Copertura
 
-Si tratta dei campi minimi obbligatori, non coperti dai profili US Core oDiscout:
+Questi sono i campi minimi obbligatori, non coperti dai profili Us Core o Argonaut:
 
- - Pagante
+ - Pagatore
 
 Una ricerca di risorse usa il metodo GET e i parametri seguenti:
 
@@ -514,10 +514,10 @@ Response:
 }
 ```
     
-Per [https://www.hl7.org/fhir/DSTU2/Coverage.html](https://www.hl7.org/fhir/DSTU2/Coverage.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/Coverage.html](https://www.hl7.org/fhir/DSTU2/Coverage.html) per altri dettagli su questo set di campi.
 
 ## <a name="location"></a>Posizione
 
-Questa risorsa viene usata solo come riferimento per la [risorsa](#encounter) Incontra.
+Questa risorsa viene usata solo come riferimento nella [risorsa](#encounter) Incontro.
 
-Per [https://www.hl7.org/fhir/DSTU2/Location.html](https://www.hl7.org/fhir/DSTU2/Location.html) altre informazioni su questo set di campi, vedere.
+Vedere [https://www.hl7.org/fhir/DSTU2/Location.html](https://www.hl7.org/fhir/DSTU2/Location.html) per altri dettagli su questo set di campi.

@@ -33,20 +33,20 @@ ms.locfileid: "51506723"
 
 ## <a name="overview"></a>Panoramica
 
-Con teams vive eventi, gli utenti dell'organizzazione possono trasmettere video e contenuti delle riunioni a un pubblico online di grandi dimensioni.
+Con Teams eventi, gli utenti dell'organizzazione possono trasmettere video e contenuti delle riunioni a un pubblico online di grandi dimensioni.
 
 Gli eventi live di Microsoft 365 portano lo streaming video live a un nuovo livello. Gli eventi live favoriscono la connessione durante l'intero ciclo di vita di interazione con i partecipanti: prima, durante e dopo gli eventi live. È possibile creare un evento live con Microsoft Stream, Teams o Yammer in modo da raggiungere i gruppi di destinatari, i team o la community, ovunque si trovino.  
 
-Teams offre una collaborazione basata su chat, chiamate, riunioni ed eventi live, in modo da poter ampliare il gruppo di destinatari delle riunioni. Gli eventi live di Teams sono un'estensione delle riunioni di Teams. Questi consentono agli utenti di trasmettere video e contenuti a un gruppo di destinatari online. Questi sono pensati per le comunicazioni “uno-molti”, dove l'organizzatore dell'evento guida le interazioni e l’unica forma di partecipazione del pubblico è principalmente quella di visualizzare il contenuto condiviso dal presentatore. I partecipanti possono guardare l'evento live o registrato in Yammer, Teams o Stream e interagire con i relatori usando domande e risposte moderate & O una conversazione di Yammer.
+Teams offre una collaborazione basata su chat, chiamate, riunioni ed eventi live, in modo da poter ampliare il gruppo di destinatari delle riunioni. Gli eventi live di Teams sono un'estensione delle riunioni di Teams. Questi consentono agli utenti di trasmettere video e contenuti a un gruppo di destinatari online. Questi sono pensati per le comunicazioni “uno-molti”, dove l'organizzatore dell'evento guida le interazioni e l’unica forma di partecipazione del pubblico è principalmente quella di visualizzare il contenuto condiviso dal presentatore. I partecipanti possono guardare l'evento live o registrato in Yammer, Teams o Stream e possono interagire con i relatori usando domande & e risposte moderate o una conversazione Yammer.
 
-Gli eventi live di Teams sono considerati la versione futura di Skype Meeting Broadcast. Questi, a lungo termine, sostituiranno le funzionalità fornite da Skype Meeting Broadcast. Microsoft continuerà a supportare Skype Meeting Broadcast per gli utenti che usano Skype for Business nelle loro organizzazioni, senza interruzioni del servizio per gli eventi nuovi o futuri. Tuttavia, ti consigliamo di provare gli eventi live di Teams per usare tutte le nuove ed entusiasmanti funzionalità, tra cui la condivisione dello schermo e il supporto per codificatori hardware/software esterni.
+Gli eventi live di Teams sono considerati la versione futura di Skype Meeting Broadcast. Questi, a lungo termine, sostituiranno le funzionalità fornite da Skype Meeting Broadcast. Microsoft continuerà a supportare Skype Meeting Broadcast per gli utenti che usano Skype for Business nelle loro organizzazioni, senza interruzioni del servizio per gli eventi nuovi o futuri. Tuttavia, ti consigliamo di provare gli eventi Teams live per usare tutte le nuove ed entusiasmanti funzionalità, tra cui la condivisione dello schermo e il supporto per codificatori hardware/software esterni.
 
 Iniziare la procedura. Esaminare prima di tutto il seguente diagramma, che mostra i componenti di alto livello coinvolti negli eventi live di Microsoft 365 e il modo in cui sono connessi.
 
 ![Componenti principali degli eventi live](../media/live-event-flow-diagram.png  "Componenti chiave di eventi live, programmazione, produzione, piattaforma Stream, provider eCDN di terze parti certificati")
 
 > [!Note]
-> Vorremmo sottolineare che gli eventi live di Teams, data la natura della tecnologia broadcast, spesso superano le normali popolazioni di riunioni (interne).
+> Vorremmo sottolineare che gli Teams live, data la natura della tecnologia broadcast, spesso superano le normali popolazioni di riunioni (interne).
 >
 > Come nel caso di altri servizi di trasmissione multimediale di grandi dimensioni, microsoft si affida alle reti per la distribuzione di contenuti per distribuire i contenuti per l'evento live ai destinatari. Questo contenuto è protetto da metodi di crittografia e soggetto all'autorizzazione da parte di token di accesso rilasciati solo ai destinatari in base alla configurazione della riunione evento live.
 >

@@ -1,6 +1,6 @@
 ---
 title: Teams per l'istruzione
-description: Informazioni sulle risorse di amministrazione disponibili per la distribuzione, l'adozione e la gestione di Teams nell'istituto o nell'istituto di istruzione.
+description: Informazioni sulle risorse di amministrazione disponibili per la distribuzione, l'adozione e la gestione dei Teams nell'istituto o nell'istituto di istruzione.
 ms.topic: conceptual
 author: cichur
 ms.author: v-cichur
@@ -28,7 +28,7 @@ ms.locfileid: "51092504"
 ---
 # <a name="teams-for-education"></a>Teams per l'istruzione
 
-Con Teams, docenti e docenti possono creare classi collaborative, connettersi nelle community di apprendimento professionale e comunicare con studenti e docenti. Usare le risorse di amministrazione qui per distribuire, adottare e gestire correttamente Teams nell'istituto o nell'istituto di istruzione. 
+Con Teams, docenti e docenti possono creare classi collaborative, connettersi nelle community di apprendimento professionale e comunicare con studenti e docenti. Usare le risorse di amministrazione disponibili qui per distribuire, adottare e gestire correttamente i Teams nell'istituto o nell'istituto di istruzione. 
 
 
 |               |               |
@@ -36,5 +36,5 @@ Con Teams, docenti e docenti possono creare classi collaborative, connettersi ne
 | ![Screenshot dell'icona della freccia destra](../media/arrow-right-2-teams.svg)  |  [Guida introduttiva per amministratori - Teams per l'istruzione](../teams-quick-start-edu.yml) |
 | ![Screenshot dell'icona di carta e matita](../media/sign-up-teams.svg) | [Assegnare attività in Teams per l'istruzione](./assignments-in-teams.md) |
 | ![Screenshot dell'icona approfondimenti](../media/insights-teams.svg) | [Approfondimenti in Teams per l'istruzione](../class-insights.md) |
-| ![Screenshot dell'icona della casella degli strumenti](../media/toolbox.svg)  |  [Risorse per gli amministratori di Teams per l'istruzione](../resources-teams-edu.md) |
-| ![Screenshot dell'icona dell'elenco di controllo](../media/task-checklist-planning-teams.svg)  |  [Domande frequenti sulla governance per gli amministratori di Teams for Education](../plan-teams-governance-edu.md) |
+| ![Screenshot dell'icona della casella degli strumenti](../media/toolbox.svg)  |  [Risorse per gli Teams education](../resources-teams-edu.md) |
+| ![Screenshot dell'icona dell'elenco di controllo](../media/task-checklist-planning-teams.svg)  |  [Domande frequenti sulla governance Teams per gli amministratori di Education](../plan-teams-governance-edu.md) |

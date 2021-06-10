@@ -43,7 +43,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | I numeri di telefono non sono associati a una località o a una città specifica. Se si vogliono numeri di telefono dedicati, vedere Ottenere numeri di telefono[di servizio per Skype for Business e Microsoft Teams.](../getting-service-phone-numbers.md)  <br/> |
+|Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> | I numeri di telefono non sono associati a una località o a una città specifica. Se si vogliono numeri di telefono dedicati, vedere Ottenere numeri di telefono di servizio Skype for Business[e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Richiede crediti di comunicazione  <br/> |
    
 ## <a name="phone-system"></a>Sistema telefonico

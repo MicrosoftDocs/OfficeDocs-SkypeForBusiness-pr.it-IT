@@ -1,5 +1,5 @@
 ---
-title: Case study di Teams voice Contoso
+title: Teams caso di studio contoso vocale
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -13,7 +13,7 @@ ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Case study vocale di Teams per multinazionali
+description: Teams caso di studio vocale per multinazionali
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: b0da56bc0da083654a0cd694bd5983f2fe4fe515
@@ -23,9 +23,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51093726"
 ---
-# <a name="contoso-case-study-teams-upgrade-plan"></a>Case study contoso: Piano di aggiornamento di Teams
+# <a name="contoso-case-study-teams-upgrade-plan"></a>Case study contoso: Teams di aggiornamento
 
-Nella decisione di eseguire la migrazione da Skype for Business a Teams, Contoso ha voluto offrire un'esperienza di transizione facile per gli utenti finali. Invece di passare tutti a Teams contemporaneamente, hanno deciso di configurare la connettività ibrida e di usare il metodo delle funzionalità sovrapposte per spostare gli utenti in Teams. In questo modo gli utenti di Teams e Skype for Business locali possono condividere la presenza e comunicare. Quando gli utenti entravano nel progetto pilota per Sistema telefonico, venivano spostati in modalità Solo Teams.
+Nella decisione di eseguire la migrazione da Skype for Business a Teams, Contoso ha voluto offrire un'esperienza di transizione semplice per gli utenti finali. Invece di passare tutti alla Teams contemporaneamente, hanno deciso di configurare la connettività ibrida e di usare il metodo delle funzionalità sovrapposte per spostare gli utenti in Teams. In questo modo gli utenti Teams e Skype for Business locali di condividere la presenza e comunicare. Quando gli utenti entravano nel progetto pilota per Sistema telefonico, venivano spostati in Teams modalità Solo utenti.
 
 Per comprendere i concetti fondamentali sull'aggiornamento, i metodi e le modalità, Contoso leggere gli articoli seguenti:
 
@@ -33,7 +33,7 @@ Per comprendere i concetti fondamentali sull'aggiornamento, i metodi e le modali
 - [Strategie di aggiornamento per gli amministratori IT](upgrade-to-teams-on-prem-implement.md) 
 - [Guida alla migrazione e all'interoperabilità](migration-interop-guidance-for-teams-with-skype.md)
  
-Contoso ha partecipato anche alla sessione Ignite 2019 Progettazione del percorso [da Skype for Business a Teams.](https://myignite.techcommunity.microsoft.com/sessions/81820?source=sessions) Contoso ha appreso di:
+Contoso ha partecipato anche alla sessione Ignite 2019 Progettazione del percorso da [Skype for Business a Teams](https://myignite.techcommunity.microsoft.com/sessions/81820?source=sessions). Contoso ha appreso di:
 
 - Concetti fondamentali come l'interoperabilità, la federazione e il comportamento di aggiornamento 
 
@@ -45,7 +45,7 @@ Contoso ha partecipato anche alla sessione Ignite 2019 Progettazione del percors
 
   - Pianificazione delle riunioni 
 
-  - Disponibilità delle funzionalità di collaborazione nei client di Teams 
+  - Disponibilità delle funzionalità di collaborazione nei Teams client 
 
 Per pianificare e configurare la connettività ibrida, il primo passaggio per [](/SkypeForBusiness/hybrid/plan-hybrid-connectivity) spostare l'ambiente locale nel cloud, Contoso ha letto Pianificare la connettività ibrida e Configurare la connettività ibrida per comprendere come: [](/SkypeForBusiness/hybrid/configure-hybrid-connectivity) 
 
@@ -53,8 +53,8 @@ Per pianificare e configurare la connettività ibrida, il primo passaggio per []
 
   - Configurare l'ambiente locale in modo da considerare attendibile Office 365 e abilitare lo spazio degli indirizzi SIP condiviso con Office 365 
 
-  - Abilitare lo spazio di indirizzi SIP condiviso nel tenant di Office 365.
+  - Abilitare lo spazio degli indirizzi SIP condiviso nel tenant Office 365.
 
   - Usare la modalità Isole durante il progetto pilota tecnico.
 
-  - Passare alla modalità TeamsOnly quando l'utente è abilitato per Sistema telefonico. La modalità TeamsOnly è obbligatoria per Piano chiamate e Instradamento diretto.
+  - Passare alla modalità TeamsOnly dopo che l'utente è abilitato per Sistema telefonico. La modalità TeamsOnly è obbligatoria per Piano chiamate e Instradamento diretto.
