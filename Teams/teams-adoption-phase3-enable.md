@@ -1,5 +1,5 @@
 ---
-title: Fase di adozione di Microsoft Teams 3 - Scala
+title: Microsoft Teams fase 3 - Scalabilità
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Leggere una panoramica dei passaggi necessari per supportare l'abilitazione su larga scala di Teams per l'organizzazione.
+description: Leggere una panoramica dei passaggi necessari per supportare l'abilitazione su larga scala Teams per l'organizzazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -28,17 +28,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49806106"
 ---
-# <a name="microsoft-teams-adoption-phase-3---scale"></a>Fase di adozione di Microsoft Teams 3 - Scala
+# <a name="microsoft-teams-adoption-phase-3---scale"></a>Microsoft Teams fase 3 - Scalabilità
 
-In questa fase userai i tuoi apprendimento, il team di progetto di grande capacità e le relazioni con stakeholder, campioni e early adopter per supportare l'abilitazione su larga scala di Teams per l'organizzazione. Per prepararsi a un continuo impegno aziendale in relazione all'uso di Microsoft Teams nelle organizzazioni, è necessario completare i passaggi seguenti:
+In questa fase si useranno i propri apprendimenti, il team di progetto di talento e le relazioni con stakeholder, campioni e primi utenti per supportare l'abilitazione su vasta scala di Teams per l'organizzazione. I passaggi seguenti verranno completati mentre ci si prepara per il continuo impegno aziendale relativo all'uso delle risorse Microsoft Teams:
 
-1. Definire i risultati e le misure del successo.
+1. Definire i risultati e le misure di successo.
 2. Selezionare la strategia di servizio.
 3. Coinvolgere gli stakeholder.
-4. Progettare e avviare una campagna di consapevolezza.
+4. Progettare e avviare una campagna di sensibilizzazione.
 5. Progettare e avviare un programma di formazione.
-6. Comprendere gli strumenti per la creazione di report.
-7. Preparati all'impegno aziendale continuo.
-8. Prepararsi all'integrità continua dei servizi & le revisioni di adozione.
+6. Informazioni su strumenti di creazione di report.
+7. Prepararsi per l'impegno aziendale continuo.
+8. Prepararsi per le revisioni dell'integrità dei & sulle adozioni.
 
-![Icona che rappresenta il passaggio ](media/teams-adoption-next-icon.png) successivo: Definire [i risultati e il successo](teams-adoption-define-outcomes.md)
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Definire i risultati e il successo](teams-adoption-define-outcomes.md)

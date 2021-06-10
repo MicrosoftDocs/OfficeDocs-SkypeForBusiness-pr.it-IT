@@ -26,7 +26,7 @@ ms.locfileid: "51117284"
 ---
 # <a name="powershell-script-sample---create-security-groups-for-educators-and-students-in-your-school"></a>Esempio di script di PowerShell: creare gruppi di sicurezza per docenti e studenti dell'istituto di istruzione
 
-Usare questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri di Microsoft Teams nell'istituto di istruzione. La [caratteristica assegnazione dei criteri ai](../assign-policies.md#assign-a-policy-to-a-group) gruppi in Teams consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
+Usare questo script di PowerShell per creare i gruppi di sicurezza necessari per gestire i criteri di Microsoft Teams nell'istituto di istruzione. [L'assegnazione dei criteri ai](../assign-policies.md#assign-a-policy-to-a-group) gruppi in Teams consente di assegnare un criterio a un gruppo di utenti, ad esempio un gruppo di sicurezza. L'assegnazione dei criteri viene propagata ai membri del gruppo in base alle regole di precedenza. Quando vengono aggiunti o rimossi membri da un gruppo, le assegnazioni dei criteri ereditate vengono aggiornate di conseguenza.
 
 Questo script di PowerShell crea due gruppi di sicurezza, uno per personale e docenti e un altro per gli studenti dell'istituto di istruzione, in base al tipo di licenza. È quindi possibile assegnare criteri ai gruppi di sicurezza creati. Per altre informazioni sull'uso di questo script, vedere Assegnare criteri a set di utenti di grandi dimensioni [nell'istituto di istruzione.](../batch-group-policy-assignment-edu.md)
 
@@ -43,9 +43,9 @@ Questo script esegue le operazioni seguenti:
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Scaricare e installare il [modulo di PowerShell di Skype for Business Online,](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)quindi riavviare il computer, se richiesto.
+Scaricare e installare il modulo [di PowerShell Skype for Business Online,](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell)quindi riavviare il computer, se richiesto.
 
-Per snellire di più, vedere Gestire Skype for Business online con PowerShell di [Office 365](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) e [panoramica di Teams PowerShell.](../teams-powershell-overview.md)
+Per snellire di più, [vedere Gestire Skype for Business Online con Office 365 PowerShell](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell) e Teams panoramica di [PowerShell.](../teams-powershell-overview.md)
 
 
 ## <a name="sample-script"></a>Script di esempio

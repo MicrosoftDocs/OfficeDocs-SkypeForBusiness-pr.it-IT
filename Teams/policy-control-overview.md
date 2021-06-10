@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1a4b0dcc52b5c497d594a26fda09f3f48b1c563a
-ms.sourcegitcommit: 17d0108fb4d36a3f56144460683f53d77a8a0a7f
+ms.openlocfilehash: 7f642b1ce9a767c30077374aa193355edbbbef09
+ms.sourcegitcommit: 2591c96d8613660220c5af71fc945e27b31175d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52777903"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52863217"
 ---
 # <a name="policy-control-overview-for-microsoft-teams"></a>Panoramica sui controlli dei criteri di Microsoft Teams
 
@@ -84,7 +84,7 @@ Per scegliere il livello di dati di diagnostica che ci viene inviato, utilizzare
 
 I propri utenti non saranno in grado di modificare il livello di dati di diagnostica per i dispositivi, se si trovano connessi a Teams con le credenziali dell'organizzazione, a volte definita azienda o istituto di istruzione.
 
-Tali dati diagnostici non includono i nomi degli utenti, il proprio indirizzo di posta elettronica o il contenuto dei file di Office. Il sistema crea un ID univoco che si associa ai dati di diagnostica degli utenti. Alla ricezione di dati di diagnostica che mostrano l’arresto anomalo di Teams per 100 volte, questo ID univoco consente di determinare se si tratta di un singolo utente che ha subito l’arresto anomalo dell’app per 100 ore o se si tratta di 100 utenti diversi che hanno subito l’arresto anomalo dell’app una sola volta. Microsoft non usa l'ID univoco per identificare un utente specifico.
+Questi dati di diagnostica non includono i nomi degli utenti, i loro messaggi di posta elettronica o altri contenuti utente quali file Office condivisi in Teams, un messaggio di chat in Teams o un testo di un post pubblicato in un canale di Teams. Il sistema crea un ID univoco che si associa ai dati di diagnostica degli utenti. Alla ricezione di dati di diagnostica che mostrano l’arresto anomalo di Teams per 100 volte, questo ID univoco consente di determinare se si tratta di un singolo utente che ha subito l’arresto anomalo dell’app per 100 ore o se si tratta di 100 utenti diversi che hanno subito l’arresto anomalo dell’app una sola volta. Microsoft non usa l'ID univoco per identificare un utente specifico.
 
 Per visualizzare i dati di diagnostica inviati a Microsoft, è possibile usare il visualizzatore dati di diagnostica che può essere scaricato e installato da Microsoft Store. Per altre informazioni, vedere [Uso di Visualizzatore dati di diagnostica con Office](https://support.microsoft.com/topic/cf761ce9-d805-4c60-a339-4e07f3182855).
 

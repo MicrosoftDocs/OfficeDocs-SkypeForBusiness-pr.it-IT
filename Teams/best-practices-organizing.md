@@ -42,7 +42,7 @@ Per la prima distribuzione di Teams, è consigliabile iniziare con un numero ris
 
 ## <a name="create-channels-to-focus-discussions"></a>Creare canali per concentrarsi sulle discussioni
 
-Dopo aver creato il team, è bene iniziare a pensare ai diversi progetti e ai tipi di conversazioni che è necessario supportare. Creare dei canali iniziali in modo che gli utenti sappiano dove poter collaborare e trovare le conversazioni esistenti. Usare nomi descrittivi per i canali per consentire agli utenti di orientarsi tra le varie conversazione. Aggiungere strumenti (come OneNote, Power BI o Planner) come schede a un canale affinché gli utenti abbiano tutto il necessario direttamente nel canale. Inoltre, è possibile aggiungere a un canale una pagina Web usata frequentemente come scheda.
+Dopo aver creato il team, è buona idea iniziare a pensare ai diversi progetti e tipi di conversazioni che è necessario supportare. Creare dei canali iniziali in modo che gli utenti sappiano dove poter collaborare e trovare le conversazioni esistenti. Usare nomi descrittivi per i canali per consentire agli utenti di orientarsi tra le varie conversazione. Aggiungere strumenti (come OneNote, Power BI o Planner) come schede a un canale affinché gli utenti abbiano tutto il necessario direttamente nel canale. Inoltre, è possibile aggiungere a un canale una pagina Web usata frequentemente come scheda.
 
 Con questi suggerimenti rapidi per utenti finali è possibile scoprire di più sul [lavoro in team](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499#ID0EAABAAA=Work_in_teams).
 

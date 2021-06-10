@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
-description: Gli organizzatori delle riunioni possono imparare a usare l'app Teams per consentire ad altri utenti di partecipare alla stessa riunione usando i loro telefoni.
+description: Gli organizzatori della riunione possono imparare a effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i loro telefoni.
 ms.openlocfilehash: 55cbd5ccc9e9c364bcb829d9a392f61cbdd2f7f8
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51119285"
 ---
-# <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione di Microsoft Teams in modo che altri utenti possano parteciparvi
+# <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Microsoft Teams in modo che altre persone possano parteciparvi
 
-L'organizzatore della riunione può effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i loro telefoni.
+L'organizzatore della riunione può effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i telefoni.
 
 Quando si chiama un utente, è consigliabile farlo usando i numeri di telefono completi (incluso il codice paese/area geografica - formato E.164).
   
   Tenere presente che:
 
-- È possibile effettuare chiamate in uscita solo se si partecipa a una riunione con Teams.
+- È possibile effettuare chiamate in uscita solo se si partecipa a una riunione usando Teams.
 - L'organizzatore della riunione, è stato abilitato per le audioconferenze oppure, nel caso in cui non sia assegnata alcuna licenza per i servizi di audioconferenza, è autorizzato a effettuare chiamate alla rete telefonica a commutazione pubblica tramite piani di chiamata online o routing diretto.
 - All'organizzatore della riunione [è concesso un criterio di chiamata in uscita online che abilita la chiamata in uscita dalle conferenze telefoniche abilitate](/powershell/module/skype/grant-csdialoutpolicy?view=skype-ps)
 
@@ -57,7 +57,7 @@ Dial-out is only available to some countries/regions. Per l'elenco completo, ved
 
 ## <a name="allow-users-to-dial-in"></a>Consenti agli utenti di effettuare l'accesso
 
-Per istruzioni su come consentire agli utenti di accedere a una riunione di Teams, vedere Numeri di telefono per [le audioconferenze in Microsoft Teams.](phone-numbers-for-audio-conferencing-in-teams.md)
+Per istruzioni su come consentire agli utenti di accedere a una riunione di Teams, vedere i numeri Telefono per le audioconferenze [in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md).
 
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 

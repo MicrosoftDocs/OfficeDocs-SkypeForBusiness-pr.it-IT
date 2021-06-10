@@ -1,5 +1,5 @@
 ---
-title: Configurazione della tastiera del telefono di Teams
+title: Teams tastiera del telefono
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -16,7 +16,7 @@ appliesto:
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Informazioni su come configurare la tastiera del telefono nel client di Teams in modo che gli utenti possano accedere alla funzionalità PSTN (Public Switched Telephone Network).
+description: Informazioni su come configurare la tastiera del telefono nel client Teams in modo che gli utenti possano accedere alla funzionalità PSTN (Public Switched Telephone Network).
 ms.openlocfilehash: 44fcbb766cadaa4b31aa065fae80fdcd48c5453f
 ms.sourcegitcommit: a94a267c421a78587b0dbbea5fa167aad2882e9b
 ms.translationtype: MT
@@ -26,19 +26,19 @@ ms.locfileid: "45012417"
 ---
 # <a name="dial-pad-configuration"></a>Configurazione della tastiera del telefono
 
-Nel client di Teams, la tastiera del telefono consente agli utenti di accedere alla funzionalità PSTN (Public Switched Telephone Network). La tastiera del telefono è disponibile per gli utenti con licenza Sistema telefonico, a condizione che siano configurati correttamente. Per visualizzare la tastiera del telefono sono tutti necessari i criteri seguenti:
+Nel client Teams, la tastiera del telefono consente agli utenti di accedere alla funzionalità PSTN (Public Switched Telephone Network). La tastiera del telefono è disponibile per gli utenti con una licenza Sistema telefonico, purché siano configurati correttamente. Per visualizzare la tastiera del telefono, sono necessari tutti i criteri seguenti:
 
-- L'utente ha una licenza Sistema telefonico ("MCOEV") abilitata
-- L'utente ha un Piano per chiamate Microsoft o è abilitato per l'instradamento diretto
-- L'utente ha VoIP aziendale abilitato
-- L'utente è ospitata online e non in Skype for Business locale
-- L'utente ha abilitato i criteri di chiamata di Teams
+- L'utente ha una licenza Sistema telefonico ("MCOEV")
+- L'utente ha un piano per chiamate Microsoft o è abilitato per il routing diretto
+- L'utente VoIP aziendale abilitato
+- L'utente è disponibile online e non Skype for Business locale
+- L'utente ha Teams dei criteri di chiamata abilitati
 
-Le sezioni seguenti descrivono come usare PowerShell per controllare i criteri. Nella maggior parte dei casi, è necessario esaminare varie proprietà nell'output del cmdlet Get-CsOnlineUser. Gli esempi $user che si tratta dell'UPN o dell'indirizzo SIP dell'utente.
+Le sezioni seguenti descrivono come usare PowerShell per controllare i criteri. Nella maggior parte dei casi, è necessario esaminare varie proprietà nell'output del cmdlet Get-CsOnlineUser. Gli esempi presuppongono $user sia l'indirizzo UPN o sip dell'utente.
 
-## <a name="user-has-an-enabled-phone-system-mcoev-license"></a>L'utente ha una licenza Sistema telefonico ("MCOEV") abilitata
+## <a name="user-has-an-enabled-phone-system-mcoev-license"></a>L'utente ha una licenza Sistema telefonico ("MCOEV")
 
-È necessario assicurarsi che il piano assegnato per l'utente mostra l'attributo **CapabilityStatus impostato** su Abilitato e il piano capacità impostato su **MCOEV** (licenza Sistema telefonico). Potrebbero essere visualizzati MCOEV, MCOEV1 e così via. Tutto è accettabile, a meno che il piano di capacità inizi con MCOEV.
+È necessario assicurarsi che il piano assegnato per l'utente mostra l'attributo **CapabilityStatus** impostato su Abilitato e il piano di funzionalità impostato su **MCOEV** (Sistema telefonico licenza). Potrebbero essere visualizzati MCOEV, MCOEV1 e così via. Tutti sono accettabili, purché il piano di funzionalità inizi con MCOEV.
 
 Per verificare che gli attributi siano impostati correttamente, usare il comando seguente:
 
@@ -63,9 +63,9 @@ L'output sarà simile al seguente. È necessario controllare solo gli **attribut
 ```
 
 
-## <a name="user-has-microsoft-calling-plan-or-is-enabled-for-direct-routing"></a>L'utente ha un Piano per chiamate Microsoft OR abilitato per l'instradamento diretto
+## <a name="user-has-microsoft-calling-plan-or-is-enabled-for-direct-routing"></a>L'utente ha microsoft Calling Plan OR abilitato per il routing diretto
 
-**Se l'utente** ha un Piano per chiamate Microsoft, è necessario verificare che l'attributo **CapabilityStatus** sia impostato su Enabled e che Capability Plan sia impostato su **MCOPSTN.** Potrebbero essere visualizzati MCOPSTN1, MCOPSTN2 e così via. Tutti sono accettabili, a meno che il piano di capacità inizi con MCOPSTN.
+**Se l'utente ha Un** piano per chiamate Microsoft, è necessario verificare che l'attributo **CapabilityStatus** sia impostato su Abilitato e che il piano di funzionalità sia impostato **su MCOPSTN.** Potrebbero essere visualizzati MCOPSTN1, MCOPSTN2 e così via. Tutti sono accettabili, purché il piano di funzionalità inizi con MCOPSTN.
 
 Per controllare gli attributi, usare il comando seguente:
 
@@ -103,9 +103,9 @@ OnlineVoiceRoutingPolicy
 Test_Policy
 ```
 
-## <a name="user-has-enterprise-voice-enabled"></a>L'utente ha VoIP aziendale abilitato
+## <a name="user-has-enterprise-voice-enabled"></a>L'utente VoIP aziendale abilitato
 
-Per verificare se l'utente ha VoIP aziendale abilitato, usare il comando seguente:
+Per verificare se l'utente VoIP aziendale abilitato, usare il comando seguente:
 
 ```
 Get-CsOnlineUser -Identity $user|Select EnterpriseVoiceEnabled
@@ -120,9 +120,9 @@ EnterpriseVoiceEnabled
 
 ```
  
-## <a name="user-is-homed-online-and-not-in-skype-for-business-on-premises"></a>L'utente è ospitata online e non in Skype for Business locale
+## <a name="user-is-homed-online-and-not-in-skype-for-business-on-premises"></a>L'utente è disponibile online e non Skype for Business locale
 
-Per garantire che l'utente sia ospitato online e non in Skype for Business locale, RegistrarPool non deve essere Null e HostingProvider deve contenere un valore che inizia con "sipfed.online".  Per controllare i valori, usare il comando seguente:
+Per assicurarsi che l'utente sia ospitato online e non in Skype for Business locale, RegistrarPool non deve essere Null e HostingProvider deve contenere un valore che inizia con "sipfed.online".  Per controllare i valori, usare il comando seguente:
 
 ```
 Get-CsOnlineUser -Identity $user|Select RegistrarPool, HostingProvider
@@ -136,9 +136,9 @@ RegistrarPool                 HostingProvider
 sippoolbn10M02.infra.lync.com sipfed.online.lync.com
 ```
 
-## <a name="user-has-teams-calling-policy-enabled"></a>L'utente ha abilitato i criteri di chiamata di Teams
+## <a name="user-has-teams-calling-policy-enabled"></a>L'utente ha Teams dei criteri di chiamata abilitati
 
-TeamsCallingPolicy effettivo dell'utente deve avere AllowPrivateCalling impostato su true.  Per impostazione predefinita, gli utenti ereditano il criterio globale, per cui AllowPrivateCallingPolicy è impostato su true per impostazione predefinita.
+TeamsCallingPolicy effettivo dell'utente deve avere AllowPrivateCalling impostato su true.  Per impostazione predefinita, gli utenti ereditano i criteri globali, che hanno AllowPrivateCallingPolicy impostato su true per impostazione predefinita.
 
 Per ottenere TeamsCallingPolicy per un utente e verificare che AllowPrivateCalling sia impostato su true, usare il comando seguente:
 
@@ -165,16 +165,16 @@ MusicOnHoldEnabledType     : Enabled
 
 ## <a name="additional-notes"></a>Note aggiuntive
 
--   Potrebbe essere necessario riavviare il client di Teams dopo aver apportato le modifiche alla configurazione.
+-   Potrebbe essere necessario riavviare il client Teams dopo aver apportato una di queste modifiche alla configurazione.
 
--   Se di recente è stato aggiornato uno dei criteri precedenti, potrebbe essere necessario attendere alcune ore perché il client riceva le nuove impostazioni.
+-   Se di recente è stato aggiornato uno dei criteri indicati sopra, potrebbe essere necessario attendere alcune ore prima che il client riceva le nuove impostazioni.
 
--   Se ancora non vedi la tastiera del telefono, verifica se si verifica un errore di provisioning usando il comando seguente:
+-   Se la tastiera del telefono non è ancora visualizzata, verificare se è presente un errore di provisioning usando il comando seguente:
 
   ```
   Get-CsOnlineUser -Identity $user|Select McoValidationError
   ```
 
--    Se dopo più di 24 ore il problema persiste, contattare il supporto.
+-    Se sono state più di 24 ore e il problema persiste, contattare il supporto tecnico.
 
 

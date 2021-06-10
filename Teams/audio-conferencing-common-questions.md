@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono riportate alcune delle principali domande dei clienti che vogliono usare le audioconferenze.
-ms.openlocfilehash: 48450dad380294503fdffc9210e225777ad60bb3
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 6547aa6cb0021cfdb7a9cf3af1f77ebc8f625c5d
+ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282748"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52856415"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
@@ -129,12 +129,21 @@ Stiamo lavorando a una soluzione che consente all'utente di accedere e reimposta
   
 ## <a name="what-in-meeting-dial-pad-commands-are-supported"></a>Quali comandi della tastiera del telefono in riunione sono supportati?
 
-- *6 (Disattivare/riattivare l'audio)
-    
-- *1 (Riproduce le descrizioni dei comandi della tastiera del telefono disponibili) 
+Per i partecipanti alla riunione e gli organizzatori:
 
-- *2, *21, *22 (notifiche di entrata e sala di attesa)
-    
+| Nome comando | Tasti di comando | Descrizione                                                     |
+|--------------|--------------|-----------------------------------------------------------------|
+| Menu di comando | \*1          | Premere 1 per riprodurre le descrizioni dei comandi della tastiera \* del telefono disponibili. |
+| Disattivare/riattivare l'audio  | \*6          | Premere \* 6 per disattivare o riattivare l'audio.                         |
+
+Solo per gli organizzatori della riunione:
+
+| Nome comando                   | Tasti di comando | Descrizione                                                 |
+|--------------------------------|--------------|-------------------------------------------------------------|
+| Ammetti tutto                      | \*21         | Premere \* 21 per ammettere tutti i partecipanti in attesa nella sala d'attesa.  |
+| Disattivare l'audio di tutti                       | \*22         | Premere \* 21 per disattivare l'audio di tutti i partecipanti (ad eccezione dell'organizzatore). |
+| Attiva/disattiva invio/uscita annuncio | \*23         | Premere \* 23 per abilitare o disabilitare Invio/Uscita annuncio.    |
+
 ## <a name="can-attendees-dial-out-to-international-phone-numbers-when-they-are-in-a-skype-for-business-or-microsoft-teams-meeting"></a>I partecipanti possono effettuare chiamate in uscita a numeri di telefono internazionali durante una riunione Skype for Business o Microsoft Teams riunione?
 
 Sì, i partecipanti possono effettuare chiamate in uscita a livello internazionale e invitare altri chiamanti a una riunione Skype for Business o Microsoft Teams riunione. Vedere [Chiamata in uscita](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) da una riunione Microsoft Teams in modo che altre persone possano parteciparvi o Effettuare chiamate in uscita da una riunione di Skype for Business Online in modo che altre persone possano [parteciparvi.](/SkypeForBusiness/audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it)
@@ -150,7 +159,7 @@ Pianificare una riunione a cui tutti i partecipanti potranno accedere usando un 
 - **Opzione #1:** per impostazione predefinita, se l'organizzatore della riunione e tutti i partecipanti stanno partecipando a una riunione usando un telefono, l'organizzatore della riunione deve immettere il PIN di audioconferenza per avviarla. Ai chiamanti viene chiesto se vogliono eseguire l'autenticazione come organizzatore di una determinata riunione quando comporre il numero di telefono di una riunione online. Tutti i partecipanti che aderiscono alla riunione tramite accesso esterno prima dell'inizio dell'organizzatore verranno inseriti nella sala d'attesa e ascolteranno la musica in attesa. Per Skype for Business riunioni, una volta che l'organizzatore lo ha avviato con l'immissione del PIN per i servizi di audioconferenza, tutti i partecipanti nella sala d'attesa si uniranno automaticamente alla riunione. Per Microsoft Teams riunioni, i partecipanti si uniranno alla riunione in base al valore dell'impostazione di ammetta automaticamente persone nei criteri di riunione dell'organizzatore.
 
 - **Opzione #2:** l'impostazione "Consenti ai chiamanti non autenticati di essere i primi utenti di una riunione" è disabilitata per impostazione predefinita. Se l'impostazione è abilitata per un determinato organizzatore, tutte le riunioni pianificate dall'organizzatore possono essere avviate prima che l'organizzatore inseri il PIN di audioconferenza. Quando questa impostazione è abilitata, la riunione inizierà non appena il primo partecipante vi partecipa tramite un numero di telefono esterno e il primo partecipante non verrà inserito nella sala d'attesa. Per altre informazioni, vedere Gestire le impostazioni di [audioconferenza](manage-the-audio-conferencing-settings-for-a-user-in-teams.md) per un utente in Microsoft Teams o Gestire le impostazioni di audioconferenza per un utente in Skype for Business [Online.](/SkypeForBusiness/audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-a-user)
-   
+  
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Configurare Skype for Business Online](/SkypeForBusiness/set-up-skype-for-business-online/set-up-skype-for-business-online)

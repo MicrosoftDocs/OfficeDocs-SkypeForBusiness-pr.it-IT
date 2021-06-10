@@ -97,7 +97,7 @@ Le notifiche importanti relative al saldo crediti comunicazioni dell'organizzazi
 - Amministratore comunicazioni Teams
 - Tecnico supporto comunicazioni Teams
 - Teams Specialista del supporto per le comunicazioni
-- Teams Amministratore
+- Amministratore di Teams
 
 > [!NOTE]
 > I Crediti comunicazioni vengono usati anche per i numeri a tariffa maggiorato. Il chiamante paga gli addebiti.

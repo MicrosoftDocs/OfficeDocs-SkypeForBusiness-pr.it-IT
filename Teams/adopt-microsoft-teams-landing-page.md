@@ -19,19 +19,19 @@ ms.custom:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 020875ca5e0938fce322654be0e4a7b3e032ebf6
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 4083c0cf50062e69554218dd090a14812b29a6c0
+ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118485"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52856385"
 ---
 # <a name="adopt-microsoft-teams"></a>Adottare Microsoft Teams
 
 > [!NOTE]
-> Per una panoramica sul passaggio all'apprendimento a distanza e per risorse utili per iniziare, vedere la [home page sull'apprendimento remoto](https://www.microsoft.com/education/remote-learning).
+> Per una panoramica sul passaggio all'apprendimento a distanza e per risorse utili per iniziare, vedere la [home page sull'apprendimento remoto](/education/remote-learning).
 
-Se si vuole implementare Teams a partire da chat, canali di & [](get-started-with-teams-quick-start.md)team e riunioni, usare la guida introduttiva, che è progettata per essere subito operativo. Se si è un'organizzazione di grandi dimensioni con una configurazione ibrida o locale di Skype for Business o se si vogliono implementare le funzionalità vocali (ad esempio i piani per le chiamate o il sistema telefonico di Microsoft 365 o Office 365), è possibile iniziare con le indicazioni introduttive, ma sono necessarie le indicazioni aggiuntive seguenti, [in](#deeper-adoption-guidance)Indicazioni sull'adozione più approfondite.
+Se si vuole implementare Teams a partire da chat, canali di & team [](get-started-with-teams-quick-start.md)e riunioni, usare la guida introduttiva, che è progettata per iniziare a essere rapidamente operativo. Se si è un'organizzazione di grandi dimensioni con una configurazione ibrida o locale di Skype for Business o se si vogliono implementare funzionalità vocali, ad esempio piani per chiamate o sistemi telefonici di [](#deeper-adoption-guidance)Microsoft 365 o Office 365), è possibile iniziare con le indicazioni introduttive, ma sono necessarie le indicazioni aggiuntive seguenti, in Indicazioni sull'adozione più approfondite.
 
 |               |               |               |               |               |               |
 | :-------------| :-------------| :-------------| :-------------| :-------------| :-------------|

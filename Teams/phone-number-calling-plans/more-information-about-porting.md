@@ -18,7 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
 ms.custom: ms.teamsadmincenter.voice.phonenumbers.porting.moreinfo
-description: Ottenere le indicazioni necessarie per il portabilità dei numeri di telefono in Microsoft Teams.
+description: Ottieni le indicazioni necessarie per convertire i numeri di telefono in Microsoft Teams.
 ms.openlocfilehash: bb63e22b7cc3aa787ddb984f82180937c5aaf9fc
 ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
 ms.translationtype: MT
@@ -28,87 +28,87 @@ ms.locfileid: "49802516"
 ---
 # <a name="more-information-about-porting"></a>Altre informazioni sulla portabilità
 
-Qui troverai altre informazioni su come eseguire il porting dei numeri di telefono in Microsoft Teams.
+Qui troverai altre informazioni sul porting dei numeri di telefono in Microsoft Teams.
 
-Per le istruzioni dettagliate, vedi Trasferire i numeri [di telefono in Teams.](transfer-phone-numbers-to-teams.md)
+Per istruzioni dettagliate, vedere Trasferire i numeri di telefono Teams [.](transfer-phone-numbers-to-teams.md)
 
-Se è necessaria assistenza o se è necessario ottenere altri numeri di telefono, contattare [l'assistenza del service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
+Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare l'assistenza [del service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
 
-## <a name="port-order-account-information"></a>Informazioni account per l'ordine di trasferimento
+## <a name="port-order-account-information"></a>Informazioni sull'account dell'ordine di trasferimento
 
-Nella pagina Aggiungi informazioni **account** della procedura guidata di portabilità per inviare un ordine di portabilità, immetti quasi tutte le informazioni che fornirebbe nel modulo LOA, tra cui:
+Quando si è nella pagina Aggiungi informazioni **sull'account** della procedura guidata di porting per inviare un ordine di trasferimento, si immettono quasi tutte le stesse informazioni che verrebbero fornite nella loa, tra cui:
   
-- Numero di account per il fornitore di servizi o il gestore
+- Numero di account per il provider di servizi o il gestore
     
 - Numero di telefono di fatturazione (BTN, Billing Telephone Number)
     
-- PIN: se necessario dal gestore o provider di servizi corrente
+- PIN- se necessario dal provider di servizi o dal gestore corrente
     
 - Nome organizzazione
     
     > [!NOTE]
-    > Sono consentiti solo 25 caratteri, spazi inclusi. Se il nome dell'organizzazione è più lungo di 25 caratteri, i primi 25 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato.
+    > Verranno accettati solo 25 caratteri, inclusi gli spazi. Se il nome dell'organizzazione è più lungo di 25 caratteri, i primi 25 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato.
   
-- Nome della persona autorizzata ad apportare modifiche all'account
+- Nome della persona autorizzata a apportare modifiche all'account
     
     > [!NOTE]
-    > Sono consentiti solo 15 caratteri, spazi inclusi. Se il nome dell'utente autorizzato è più lungo di 15 caratteri, i primi 15 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato. 
+    > Verranno accettati solo 15 caratteri, inclusi gli spazi. Se il nome della persona autorizzata è più lungo di 15 caratteri, i primi 15 caratteri del nome verranno inviati e l'ordine di trasferimento continuerà a essere elaborato. 
   
 - Indirizzo del servizio
   
-Per semplificare l'invio dell'ordine di trasferimento ed evitare errori, assicurati di eseguire le operazioni seguenti:
+Per semplificare l'invio dell'ordine di trasferimento ed evitare errori, assicurarsi di eseguire le operazioni seguenti:
   
-- Rimuovi tutte le funzionalità (ad esempio i gruppi di risposta) associate ai numeri. Assicurarsi che su questi numeri di telefono non siano attivate funzionalità di controllo chiamate avanzate, come la risposta alle chiamate o la suoneria differenziata.
+- Rimuovere tutte le caratteristiche (ad esempio i gruppi di risposta) associate ai numeri. Assicurarsi che non siano disponibili funzionalità avanzate di controllo delle chiamate, ad esempio La risposta alle chiamate o Anello distintivo, abilitate su questi numeri di telefono.
     
-- Assicurati di non aver effettuato nuovi ordini di servizio o di disconnetterti dal provider di servizi corrente.
+- Assicurarsi di non aver effettuato nuovi ordini di assistenza o di disconnettersi con il provider di servizi corrente.
     
 - Assicurati che tutti i numeri siano dello stesso gestore e dello stesso account.
     
-- Assicurati che le informazioni dell'account fornite corrispondano esattamente a ciò che ha registrato il gestore telefonico. La mancata corrispondenza delle informazioni è una delle cause più comuni di errori e può comportare ritardi nell'ordine di trasferimento.
+- Assicurarsi che le informazioni dell'account fornite corrispondano esattamente a quanto registrato dal gestore telefonico. Le informazioni non corrispondenti sono la causa più comune di errori e possono ritardare l'ordine di trasferimento.
     
 > [!CAUTION]
-> Non disconnettere i servizi dal gestore o provider di servizi. È necessario mantenere attivo il servizio precedente per poter eseguire il trasferimento dei numeri di telefono in Teams. Non bloccare il tuo account con il gestore o provider di servizi. Il blocco dell'account impedisce la modifica dei corrieri sull'account. L'utente autorizzato dovrà inviare un ordine al gestore corrente per rimuovere il blocco. Questo processo può richiedere da una a tre settimane, a seconda del gestore.
+> Non disconnettere i servizi con il provider di servizi o il gestore. È necessario mantenere attivo il servizio precedente per poter convertire i numeri di telefono in Teams. Non bloccare l'account con il provider di servizi o il gestore. Il blocco dell'account impedisce la modifica dei gestori dell'account. L'utente autorizzato dovrà inviare un ordine al gestore corrente per rimuovere il blocco. Questo processo può richiedere da una a tre settimane, a seconda del gestore.
 
-## <a name="authorized-person-on-the-account"></a>Persona autorizzata sull'account
+## <a name="authorized-person-on-the-account"></a>Persona autorizzata nell'account
 
-Nella procedura guidata di portabilità è necessario immettere il nome della persona autorizzata ad apportare modifiche all'account con il provider di servizi o il gestore. Il nome non viene usato per elaborare l'ordine di portabilità, ma viene usato in caso di contenziosi o se ci sono risultati non corretti durante la portabilità dei numeri. Questa persona è responsabile della lettera di autorizzazione (LOA, Letter of Authorization) per un ordine di trasferimento.
+Nella procedura guidata di porting è necessario immettere il nome della persona autorizzata a apportare modifiche all'account con il provider di servizi o il gestore. Il nome non viene usato per elaborare l'ordine di trasferimento, ma viene usato in caso di controversia o se qualcosa non è corretto quando i numeri vengono portati. Questa persona è responsabile della lettera di autorizzazione (LOA) per un ordine di trasferimento.
   
 > [!NOTE]
-> La casella è limitata a 15 caratteri (spazi inclusi). Se il nome completo non è presente nella casella, l'ordine di trasferimento non verrà ritardato o annullato.
+> La casella è limitata a 15 caratteri (spazi inclusi). Se non si ha il nome completo nella casella, l'ordine di trasferimento non verrà ritardato o annullato.
   
 ## <a name="whats-my-billing-telephone-number"></a>Qual è il mio numero di telefono di fatturazione?
 
-Il numero di telefono di fatturazione è il numero di telefono principale incluso nella fattura e fatturato dal gestore o provider di servizi. Se stai trasferendo un numero di telefono da un account che ha un solo numero di telefono, devi immettere questo numero di telefono. Se stai trasferendo numeri di telefono da un account che ne ha più di uno, puoi esaminare la fattura o contattare il fornitore di servizi o il gestore per determinare qual è la BTN per il tuo account.
+Il numero di telefono di fatturazione (BTN) è il numero di telefono principale incluso nella fattura e fatturato dal provider di servizi o dal gestore. Se stai trasferendo un numero di telefono da un account che ha un solo numero di telefono, devi immettere questo numero di telefono. Se stai trasferendo numeri di telefono da un account che ne ha più di uno, puoi guardare la fattura o contattare il provider di servizi o il gestore per determinare qual è il BTN per il tuo account.
 
-## <a name="what-should-i-put-in-for-the-account-number"></a>Cosa devo inserire nel numero di conto?
+## <a name="what-should-i-put-in-for-the-account-number"></a>Cosa devo inserire per il numero di conto?
 
-In genere, puoi trovare il numero di account su qualsiasi fattura del gestore o del provider di servizi oppure puoi accedere al sito Web del gestore. Se ancora non conosci il numero dell'account, puoi contattare il fornitore di servizi o il gestore per ottenerlo.
+In genere, è possibile trovare il numero di conto in qualsiasi fattura o fattura del provider di servizi o del gestore oppure accedere al sito Web del gestore. Se ancora non conosci il numero dell'account, puoi contattare il provider di servizi o il gestore per ottenerlo.
   
 > [!CAUTION]
->  È importante assicurarsi di non usare spazi, trattini o trattini durante l'immissione del numero account del gestore o del provider di servizi.
+>  È importante assicurarsi di non usare spazi, trattini o trattini quando si immette il numero di account del provider di servizi o del gestore.
 
-## <a name="what-should-i-put-in-for-the-organization-name"></a>Cosa devo inserire nel nome dell'organizzazione?
+## <a name="what-should-i-put-in-for-the-organization-name"></a>Cosa si deve inserire per il nome dell'organizzazione?
 
-Questo è il nome dell'organizzazione. Il nome dell'organizzazione è limitato a 25 caratteri, spazi inclusi. Il nome della società non viene usato per elaborare la richiesta di ordine di trasferimento. Viene usato in caso di contenziosi o se ci sono risultati non corretti durante la portabilità dei numeri di telefono. Se non riesci a contenere l'intero nome dell'azienda nella casella, l'ordine di trasferimento non verrà ritardato o annullato.
+Questo è il nome dell'organizzazione. Il nome dell'organizzazione è limitato a 25 caratteri, inclusi gli spazi. Il nome della società non viene usato per elaborare la richiesta di ordine di trasferimento. Viene usato in caso di controversia o se qualcosa non è corretto quando i numeri di telefono vengono traslati. Se non è possibile inserire l'intero nome della società nella casella, l'ordine di trasferimento non verrà ritardato o annullato.
   
-## <a name="what-should-i-put-in-for-the-service-address"></a>Cosa devo inserire nell'indirizzo del servizio?
+## <a name="what-should-i-put-in-for-the-service-address"></a>Cosa devo inserire per l'indirizzo del servizio?
 
-L'indirizzo del servizio è diverso dall'indirizzo di fatturazione o di emergenza registrato con il gestore o provider di servizi telefonici. Se non lo conosci, contatta il fornitore di servizi o il gestore per trovare l'indirizzo del servizio elencato sul tuo account.
+L'indirizzo del servizio è diverso dall'indirizzo di fatturazione o di emergenza registrato con il gestore o il provider di servizi telefonici. Se non lo conosci, contatta il provider di servizi o il gestore per scoprire l'indirizzo del servizio indicato nel tuo account.
 
-## <a name="how-should-i-enter-the-phone-numbers"></a>Come devo immettere i numeri di telefono?
+## <a name="how-should-i-enter-the-phone-numbers"></a>Come si immettono i numeri di telefono?
 <a name="bkadding"> </a>
 
-Quando invii un ordine di trasferimento, devi utilizzare un file CSV formattato correttamente per inviare i numeri di telefono. Ecco i requisiti per il file CSV:
+Quando si invia un ordine di trasferimento, è necessario usare un file CSV formattato correttamente per inviare i numeri di telefono. Ecco i requisiti per il file CSV:
 
- - È possibile assegnare al file qualsiasi nome.
- - Il file deve contenere una sola colonna con un'intestazione denominata Numero Phone.
+ - È possibile assegnare al file il nome desiderato.
+ - Il file deve contenere una sola colonna con un'intestazione denominata NumeroFono.
  - Ogni numero di telefono deve essere in una riga separata.
- - I numeri di telefono possono essere solo cifre o in formato E.164.
- - Il formato del numero di telefono deve corrispondere al paese o all'area geografica selezionata. Ad esempio, se si sceglie il Regno Unito nella procedura guidata di portabilità, usare 44, che è il codice paese, seguito dal numero di telefono con il numero di cifre corretto. Ad esempio, 4420812341234.
+ - Telefono numeri possono essere solo cifre o in formato E.164.
+ - Il formato del numero di telefono deve corrispondere al paese o all'area geografica selezionata. Ad esempio, se si sceglie il Regno Unito nella procedura guidata di porting, usare 44, ovvero il codice paese, seguito dal numero di telefono con il numero di cifre corretto. Ad esempio, 4420812341234.
 
-## <a name="how-do-i-see-the-status-of-my-port-order"></a>Come faccio a vedere lo stato del mio ordine di trasferimento?
+## <a name="how-do-i-see-the-status-of-my-port-order"></a>Come si visualizza lo stato dell'ordine di trasferimento?
 
-Vedi [qual è lo stato dei tuoi ordini di trasferimento?](port-order-status.md)
+Vedere [Qual è lo stato degli ordini di trasferimento?](port-order-status.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -116,4 +116,4 @@ Vedi [qual è lo stato dei tuoi ordini di trasferimento?](port-order-status.md)
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
-- [Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+- [Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)

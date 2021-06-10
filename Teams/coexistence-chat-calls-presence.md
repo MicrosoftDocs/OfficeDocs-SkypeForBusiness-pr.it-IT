@@ -98,8 +98,8 @@ Nelle tabelle seguenti:
 
 | <br/><br/> Modalità   | Creatore <br/><br/> Client | <br/><br/> SfB &nbsp; homed |<br/><br/>Percorso: >|   Destinatario <br/><br/> TeamsOnly  |
 |--- |--- |--- |--- | --- |
-| Isole   |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business<br/>|Online<br/> Online<br/> On-prem<br/> On-prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|  Teams <br/>*Team* <br/>**Non possibile** <br/>*Team*  |
-|SfB\*  | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-prem<br/> | &boxv;<br/>&boxv; | *Team*  <br/>*Team*   |
+| Isole   |Teams<br/>Skype for Business<br/>Teams <br/>Skype for Business<br/>|Online<br/> Online<br/> On-prem<br/> On-prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;|  Teams <br/>*Teams* <br/>**Non possibile** <br/>*Teams*  |
+|SfB\*  | Skype for Business<br/>Skype for Business<br/> | Online<br/> On-prem<br/> | &boxv;<br/>&boxv; | *Teams*  <br/>*Teams*   |
 |TeamsOnly  | Teams | Online |  &boxv; |Teams   |
 |  |  |  | | |
 
@@ -138,8 +138,8 @@ Le tabelle seguenti descrivono quale cliente riceverà una chiamata dall'iniziat
 
 | <br/><br/>Modalità | Creatore<br/><br/> Client| <br/><br/>SfB homed|<br/><br/>Percorso: >|  Destinatario<br/>  <br/> TeamsOnly  |
 |--- |--- |--- |--- |--- |
-| Isole  |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business <br/>|Online<br/> Online<br/> On-prem<br/> On-prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;| Teams <br/>*Team* <br/>**Non possibile** <br/>*Team* |
-| SfB\* |Skype for Business <br/>Skype for Business  | Online<br/> On-prem| &boxv;<br/>&boxv;|*Team* <br/>*Team*   |
+| Isole  |Teams<br/>Skype for Business <br/>Teams <br/>Skype for Business <br/>|Online<br/> Online<br/> On-prem<br/> On-prem<br/>  | &boxv;<br/>&boxv;<br/>&boxv;<br/>&boxv;| Teams <br/>*Teams* <br/>**Non possibile** <br/>*Teams* |
+| SfB\* |Skype for Business <br/>Skype for Business  | Online<br/> On-prem| &boxv;<br/>&boxv;|*Teams* <br/>*Teams*   |
 | TeamsOnly |Teams |Online |&boxv; |Teams |
 |  | | | | |
 

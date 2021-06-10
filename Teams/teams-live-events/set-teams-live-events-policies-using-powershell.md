@@ -25,9 +25,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51119145"
 ---
-# <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri per gli eventi live in Microsoft Teams
+# <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri degli eventi live in Microsoft Teams
 
-È possibile usare i cmdlet di Windows PowerShell per impostare e assegnare le impostazioni dei criteri per gli eventi live in Teams: 
+È possibile usare i cmdlet Windows PowerShell per impostare e assegnare le impostazioni dei criteri per gli eventi live in Teams: 
 - [Get-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/get-csteamsmeetingbroadcastpolicy?view=skype-ps)
 - [Set-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy?view=skype-ps)
 - [New-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/new-csteamsmeetingbroadcastpolicy?view=skype-ps)
@@ -37,12 +37,12 @@ ms.locfileid: "51119145"
 Ecco alcuni esempi.
 
 > [!NOTE]
-> Prima di eseguire questi cmdlet, è necessario essere connessi a PowerShell di Skype for Business online. Per altre informazioni, vedere [Gestire Skype for Business online con Microsoft 365 o PowerShell di Office 365.](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)
+> Prima di eseguire questi cmdlet, è necessario essere connessi Skype for Business PowerShell online. Per altre informazioni, vedere [Gestire Skype for Business Online con Microsoft 365 o Office 365 PowerShell.](/office365/enterprise/powershell/manage-skype-for-business-online-with-office-365-powershell)
 
 ## <a name="allow-users-to-schedule-live-events"></a>Consentire agli utenti di pianificare eventi live 
 
 > [!NOTE]
-> Questi esempi sono relativi agli eventi prodotti in Teams. Per gli eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire altre operazioni. Per altre informazioni, vedere Consentire agli utenti di pianificare eventi prodotti [con un'app o un dispositivo esterno.](set-up-for-teams-live-events.md#enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device)
+> Questi esempi sono relativi a eventi prodotti in Teams. Per gli eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire altre operazioni. Per altre informazioni, vedere Consentire agli utenti di pianificare eventi prodotti [con un'app o un dispositivo esterno.](set-up-for-teams-live-events.md#enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device)
 
 **Consentire a un utente di pianificare eventi live**
 

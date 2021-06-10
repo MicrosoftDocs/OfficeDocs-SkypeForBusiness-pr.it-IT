@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 description: Pianificare l'implementazione della connettività ibrida tra Skype for Business Server e Teams o Skype for Business Online configurando la Skype for Business ibrida.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 4b38e5aa046224572da485a63bd651b705c83011
-ms.sourcegitcommit: 83f14c4c79559ef28357ff076938e52b369fc0c7
+ms.openlocfilehash: 7d886016495d194997ebf99361916c9c387e5d1f
+ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52308325"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52856335"
 ---
 # <a name="plan-hybrid-connectivity-between-skype-for-business-server-and-teams"></a>Pianificare la connettività ibrida tra Skype for Business Server e Teams
 
@@ -54,11 +54,12 @@ Dopo il ritiro di Skype for Business Online, tuttavia, le organizzazioni ibride 
 - Utenti locali (Who utenti possono o possono usare Teams, ma non in modalità TeamsOnly)
 - Teams Solo utenti. 
 
-Per fare in modo che le organizzazioni si spostino da Skype for Business Server o Lync Server 2013 a Teams, devono comunque configurare e configurare la distribuzione ibrida utilizzando lo stesso set di strumenti, esattamente come prima del *ritiro.* Ciò che cambia è che quando si sposta un utente da locale a Teams, non sarà più necessario specificare il passaggio per spostare gli utenti direttamente da locale a `-MoveToTeams` `Move-CsUser` TeamsOnly. Attualmente, se questa opzione non è specificata, gli utenti passano dall'abitazione Skype for Business Server locale a Skype for Business Online e la relativa modalità rimane invariata. Dopo il ritiro, quando si sposta un utente da locale Teams cloud con , agli utenti verrà automaticamente assegnata la modalità TeamsOnly e le riunioni da locale verranno convertite automaticamente Teams riunioni, come se fosse , indipendentemente dal fatto che il commutatore sia `Move-CsUser` effettivamente `-MoveToTeams switch had been specified` specificato. Sono incluse le migrazioni da Lync Server 2013, che non hanno mai avuto il `MoveToTeams` passaggio.  Microsoft prevede di rilasciare questa funzionalità (che non richiede alcuna data di aggiornamento locale) prima del ritiro effettivo il 31 luglio 2021.
+Per fare in modo che le organizzazioni si spostino da Skype for Business Server o Lync Server 2013 a Teams, devono comunque configurare e configurare la distribuzione ibrida utilizzando lo stesso set di strumenti, esattamente come prima del *ritiro.* Ciò che è cambiato è che quando si sposta un utente da locale a Teams, non è più necessario specificare il passaggio per spostare gli utenti direttamente da locale a `-MoveToTeams` `Move-CsUser` TeamsOnly. In precedenza, se questa opzione non è stata specificata, gli utenti passavano da Skype for Business Server locale a Skype for Business Online e la loro modalità rimaneva invariata. In preparazione per il ritiro, quando si sposta un utente da locale al cloud con , agli utenti viene automaticamente assegnata la modalità TeamsOnly e le riunioni da locale vengono convertite automaticamente Teams riunioni, come se fosse stato specificato il commutatore, indipendentemente dal fatto che il commutatore sia effettivamente `Move-CsUser` `-MoveToTeams` specificato. Sono incluse le migrazioni da Lync Server 2013, che non hanno mai avuto il `MoveToTeams` passaggio. 
 
 Le modalità di coesistenza continueranno ad esistere dopo il ritiro di Skype for Business Online. Come in precedenza, agli utenti con account ospitati in Skype for Business Server locale può essere assegnata qualsiasi modalità di coesistenza ad eccezione di TeamsOnly. Dopo il ritiro, tuttavia, gli utenti ospitati online possono essere solo TeamsOnly (a differenza del presente in cui gli utenti di Skype for Business Online possono essere qualsiasi modalità).  
 
-[!Important] Le organizzazioni ibride esistenti con utenti ospitati in Skype for Business Online che non sono TeamsOnly dovrebbero concentrarsi sull'aggiornamento di questi utenti alla modalità Solo Teams il prima possibile, ma non oltre il ritiro il 31 luglio 2021. Se nell'organizzazione sono ancora presenti utenti ospitati in Skype for Business Online che non sono TeamsOnly, è possibile che venga pianificato un aggiornamento assistito da Microsoft per la transizione di questi utenti a TeamsOnly. Ciò non inciderà sugli utenti ospitati in Skype for Business Server locale. Le notifiche di pianificazione verranno inviate in anticipo ai clienti ibridi con utenti ospitati in Skype for Business Online prima che questi utenti online non di TeamsOnly siano aggiornati a Teams.
+> [!Important]
+> Le organizzazioni ibride esistenti con utenti ospitati in Skype for Business Online che non sono TeamsOnly dovrebbero concentrarsi sull'aggiornamento di questi utenti alla modalità Solo Teams il prima possibile, ma non oltre il ritiro il 31 luglio 2021. Se nell'organizzazione sono ancora presenti utenti ospitati in Skype for Business Online che non sono TeamsOnly, è possibile che venga pianificato un aggiornamento assistito da Microsoft per la transizione di questi utenti a TeamsOnly. Ciò non inciderà sugli utenti ospitati in Skype for Business Server locale. Le notifiche di pianificazione verranno inviate in anticipo ai clienti ibridi con utenti ospitati in Skype for Business Online prima che questi utenti online non di TeamsOnly siano aggiornati a Teams.
 
 
 ## <a name="about-shared-sip-address-space-functionality"></a>Informazioni sulla funzionalità Spazio indirizzi SIP condiviso

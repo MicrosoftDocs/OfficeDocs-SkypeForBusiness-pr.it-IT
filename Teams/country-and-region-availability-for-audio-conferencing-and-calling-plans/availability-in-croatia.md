@@ -24,7 +24,7 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Croazia.
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams per la Croazia.
 ms.openlocfilehash: 27f51dba37a62519d87098ddd205905a44d92e33
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -36,7 +36,7 @@ ms.locfileid: "51118215"
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Croazia.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams per la Croazia.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 

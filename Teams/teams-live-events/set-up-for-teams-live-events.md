@@ -50,7 +50,7 @@ I criteri per gli eventi live consentono di controllare chi nell'organizzazione 
 
 <a name="bkcreatepolicy"> </a>
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Criteri eventi**  >  **live riunioni.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Criteri eventi**  >  **live riunioni**.
 2. Eseguire una delle opzioni seguenti:
 
     - Se si vuole modificare il criterio predefinito esistente, scegliere **Globale (predefinito a livello di organizzazione)**.
@@ -80,7 +80,7 @@ Se è stato creato un criterio personalizzato per gli eventi live, assegnarlo ag
 
 Per consentire agli utenti di pianificare eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire anche la procedura seguente:
 
-1. Abilitare Microsoft Stream per gli utenti dell'organizzazione. Stream è disponibile come parte di abbonamenti idonei a Microsoft 365 o Office 365 o come servizio autonomo. Stream non è incluso nei piani Business Essentials o Business Premium. Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](/stream/license-overview).
+1. Abilitare Microsoft Stream per gli utenti dell'organizzazione. Stream è disponibile come parte di abbonamenti Microsoft 365 o Office 365 o come servizio autonomo. Stream non è incluso nei piani Business Essentials o Business Premium. Per altre informazioni, vedere la [Panoramica sulle licenze di Stream](/stream/license-overview).
 
    >[!Note]
    > Il passaggio dall’uso di Microsoft Stream all’uso di [OneDrive for Business e SharePoint per le registrazioni delle riunioni](../tmr-meeting-recording-change.md) avverrà in modo graduale. Al momento del lancio sarà possibile acconsentire esplicitamente all’esperienza. A novembre sarà necessario rifiutarla esplicitamente se si vuole continuare a usare Stream e all'inizio del 2021 sarà chiesto a tutti i clienti di usare OneDrive for Business e SharePoint per le nuove registrazioni delle riunioni. Altre informazioni su come assegnare [**licenze agli utenti in**](https://support.office.com/article/Assign-licenses-to-users-in-Office-365-for-business-997596B5-4173-4627-B915-36ABAC6786DC) modo che gli utenti possano accedere a Stream. Assicurarsi che Stream non sia bloccato per gli utenti come definito in [**questo articolo.**](/stream/disable-user-organization)
@@ -103,7 +103,7 @@ Le soluzioni SDN/eCDN seguenti sono preintegrate e possono essere configurate pe
 
 - **Ramp OmniCache** offre distribuzione in rete di nuova generazione e assicura la trasmissione ininterrotta di contenuti video nelle WAN globali, aiutando i produttori di eventi a ottimizzare la larghezza di banda della rete e supportare lo streaming di eventi live e on demand. Il supporto di Ramp OmniCache per gli eventi live prodotti in Teams sarà disponibile a breve. [Altre informazioni](https://rampecdn.com).
 
-- **Riverbed,** lo standard di settore nell'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft Teams e Stream.  Ora i clienti di Microsoft 365 possono accelerare con sicurezza il traffico a 365, inclusi Teams e Stream, insieme ad altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. L'accelerazione di Teams e Stream può essere abilitata con una configurazione senza sforzo, fornita con tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti in corso.
+- **Riverbed,** lo standard di settore nell'ottimizzazione della rete, estende le soluzioni di accelerazione a Microsoft Teams e Stream.  Ora Microsoft 365 clienti possono accelerare in tutta sicurezza il traffico a 365, tra cui Teams e Stream, oltre a una grande quantità di altri servizi SaaS aziendali leader per aumentare la produttività della forza lavoro ovunque ci si trovi. Teams e l'accelerazione stream possono essere abilitate con una configurazione senza sforzo che include tutta la garanzia del supporto di livello mondiale di Riverbed e degli investimenti in corso.
 
 > [!NOTE]
 > La soluzione SDN o eCDN scelta è soggetta ai **termini di servizio e all'informativa sulla privacy del provider di terze parti scelto**, che disciplineranno l'uso della soluzione del provider. L'uso della soluzione del provider non sarà soggetto alle condizioni dei servizi online o dei contratti multilicenza Microsoft. Se non accettano i **termini del provider di terze parti** la soluzione non verrà abilitata in Teams.

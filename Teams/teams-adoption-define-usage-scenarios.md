@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come scegliere gli scenari di utilizzo più applicabili per la fase di esperimento dell'adozione di Teams.
+description: Informazioni su come scegliere gli scenari di utilizzo più applicabili per la fase di sperimentazione dell Teams in adozione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -30,46 +30,46 @@ ms.locfileid: "49804596"
 ---
 # <a name="define-usage-scenarios-for-microsoft-teams"></a>Definire scenari di utilizzo per Microsoft Teams
 
-Assicurarsi di comprendere i progetti commerciali (scenari) che avranno ambito per questa fase dell'implementazione. Esaminare questo elenco di scenari di esempio che sono ottimi candidati per un programma per gli early adopter. È possibile iniziare con semplici successi, ad esempio:
+Assicurarsi di comprendere i progetti commerciali (scenari) che saranno nell'ambito di questa fase dell'implementazione. Esaminare questo elenco di scenari di esempio che sono ottimi candidati per un programma di adozione iniziale. È possibile iniziare a vincere facilmente, ad esempio:
 
 - Produttività personale
-- Gestione dei progetti moderna
+- Gestione moderna dei progetti
 - Riunioni moderne
 
 ![Illustrazione dei tre scenari principali](media/teams-adoption-modernizing-core-scenarios.png)
 
 Altri scenari da considerare sono:
 
-- Interazione e comunicazione dei dipendenti
-- Portare le campagne sul mercato più rapidamente
+- Coinvolgimento e comunicazione dei dipendenti
+- Portare le campagne sul mercato più velocemente
 - Aumentare la produttività delle vendite e aumentare i ricavi
-- Semplificare le recensioni aziendali
+- Semplificare le revisioni aziendali
 
-![Illustrazione dei casi di utilizzo di Teams per ogni scenario](media/teams-adoption-use-cases.png)
+![Illustrazione dei casi Teams per ogni scenario](media/teams-adoption-use-cases.png)
 
-Questo scenario di modernizzazione è un processo cumulativo, con scenari di base che creano entusiasmo, familiarità e credibilità con questo nuovo modo di lavorare. Passa poi ad aree di impatto più ambiziose. Dato che un maggiore impatto con Microsoft Teams viene dimostrato ai colleghi aziendali, più persone si impegnano e l'interesse si crea. Per molti dei nostri clienti, una volta ottenuto questo processo, gli stakeholder aziendali si avvicinano a loro dopo aver appreso il valore ottenuto dai colleghi da Microsoft Teams.
+Il movimento di modernizzazione di questo scenario è un processo cumulativo: è possibile creare scenari più semplici per creare entusiasmo, familiarità e credibilità con questo nuovo modo di lavorare. Passare quindi ad aree di impatto più ambiziose. Più l'impatto con Microsoft Teams è dimostrato ai colleghi aziendali, più di essi si impegheranno e si baserà lo stato di forza. Per molti dei nostri clienti, una volta ottenuto questo processo, gli stakeholder aziendali si avvicinano a loro dopo aver appreso come i colleghi hanno ottenuto valore da Microsoft Teams.
 
-## <a name="interview-business-stakeholders"></a>Intervistare gli stakeholder del business
+## <a name="interview-business-stakeholders"></a>Intervistare gli stakeholder aziendali
 
-Per confermare la selezione di questi primi progetti, è consigliabile incontrare direttamente le parti interessate identificate in precedenza nel processo. A questo punto l'obiettivo è ascoltare e ottenere informazioni aggiuntive sulla propria attività. Considerare le domande seguenti per guidare la conversazione:
+Per confermare la selezione di questi progetti iniziali, è consigliabile incontrarsi direttamente con gli stakeholder identificati in precedenza in questo processo. Il tuo obiettivo a questo punto è ascoltare e ottenere altre informazioni sulla loro attività. Considerare le domande seguenti per guidare la conversazione:
 
-- Quali sono alcune delle sfide o dei problemi dell'organizzazione correlati alle comunicazioni e alla collaborazione?
+- Quali sono alcune delle sfide o dei problemi dell'organizzazione correlati alla comunicazione e alla collaborazione?
 - Quali sono le aree in cui l'organizzazione vuole migliorare?
-- Quali sono le iniziative strategiche o i progetti di trasformazione correnti che Teams può supportare?
-- Quali sono i metodi di comunicazione e collaborazione che in genere la propria organizzazione riceve meglio rispetto ad altri?
-- Qual è il processo per la redazione, la distribuzione e la condivisione di informazioni?
+- Quali sono le iniziative strategiche dell'organizzazione o gli attuali progetti di trasformazione che Teams possono supportare?
+- Quali metodi di comunicazione e collaborazione sono in genere più ricevuti dall'organizzazione rispetto ad altri?
+- Qual è il processo per redigere, distribuire e condividere informazioni?
 
 ## <a name="map-and-prioritize-business-scenarios"></a>Mappare e assegnare priorità a scenari aziendali
 
-Per essere certi di avere le informazioni giuste sullo scenario aziendale, è consigliabile usare il formato seguente per documentare lo scenario dal punto di vista del dipendente che completa il lavoro e del proprietario aziendale del processo. Entrambe le prospettive sono necessarie per creare un percorso di successo in avanti.
+Per assicurarsi di avere le informazioni giuste sullo scenario aziendale, è consigliabile usare il formato seguente per documentare lo scenario dal punto di vista del dipendente che completa il lavoro e del proprietario aziendale del processo. Entrambe le prospettive sono necessarie per creare un percorso di successo.
 
-![Illustrazione della struttura per l'identificazione degli scenari](media/teams-adoption-identify-scenarios.png)
+![Illustrazione del framework per l'identificazione degli scenari](media/teams-adoption-identify-scenarios.png)
 
-Dopo aver parlato con uno o più stakeholder dell'azienda, è possibile assegnare priorità agli scenari in base all'impatto e alle difficoltà. Gli scenari potrebbero essere in aggiunta a quello suggerito in precedenza. I candidati appropriati per la fase di sperimentazione devono avere un impatto maggiore e difficoltà da basso a medio-alto. In questo modo si è certi che il progetto non sia interessato da difficoltà di ambito o tecniche prima di poter mostrare il valore del lavoro. Di seguito è illustrato un grafico di esempio.
+Dopo aver parlato con uno o più stakeholder aziendali, è possibile assegnare priorità agli scenari in base all'impatto e alle difficoltà. Gli scenari potrebbero essere in aggiunta agli scenari suggeriti in precedenza. I candidati appropriati per la fase di sperimentazione devono avere un impatto maggiore e difficoltà da basso a medio. In questo modo il progetto non sarà interessato da difficoltà tecniche o dall'ambito prima di poter mostrare il valore del lavoro. Di seguito è riportato un grafico di esempio.
 
-![Immagine che mostra l'impatto dello scenario e le difficoltà](media/teams-adoption-impact-difficulty.png)
+![Illustrazione che mostra l'impatto dello scenario rispetto alla difficoltà](media/teams-adoption-impact-difficulty.png)
 
 > [!Note]
-> Siamo sempre entusiasti di imparare come i nostri clienti usano Teams in modi innovativi. Condividi i tuoi #TeamsStories con noi nel [forum di discussione Driving Adoption.](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption) Includere l'hashtag **#TeamsStories** nel post. Siamo sempre interessati a come usi Teams nella tua organizzazione.
+> Siamo sempre desiderosi di scoprire come i nostri clienti usano Teams nuovi modi innovativi. Condividi le tue #TeamsStories con noi nel forum di discussione [Driving Adoption.](https://techcommunity.microsoft.com/t5/driving-adoption/ct-p/DrivingAdoption) Includere l'hashtag **#TeamsStories** nel post. Siamo sempre interessati al modo in cui usi i Teams nella tua organizzazione.
 
-![Un'icona che rappresenta il passaggio successivo: aggiungere gli ](media/teams-adoption-next-icon.png) [early adopter e raccogliere feedback.](teams-adoption-onboard-early-adopters.md)
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Onboard early adopters e raccogliere feedback.](teams-adoption-onboard-early-adopters.md)

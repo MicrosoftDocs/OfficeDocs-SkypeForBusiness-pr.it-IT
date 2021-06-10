@@ -1,5 +1,5 @@
 ---
-title: Gestire team di grandi dimensioni in Microsoft Teams - procedure consigliate
+title: Gestire team di grandi dimensioni in Microsoft Teams procedure consigliate
 ms.reviewer: abgupta
 author: lolaj
 ms.author: serdars
@@ -7,7 +7,7 @@ manager: serdars
 ms.topic: conceptual
 ms.service: msteams
 audience: admin
-description: Informazioni sulle procedure consigliate per la gestione di team di grandi dimensioni in Microsoft Teams in base alle esigenze dell'organizzazione.
+description: Informazioni sulle procedure consigliate per la gestione di team di grandi Microsoft Teams in base alle esigenze dell'organizzazione.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -17,17 +17,16 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9dfecde14e47992588fa13e04aa652a069f7108b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: fff84bd660eb19f01c6a7e3388f5289b09896401
+ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092884"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52856345"
 ---
-<a name="manage-large-teams-in-microsoft-teams---best-practices"></a>Gestire team di grandi dimensioni in Microsoft Teams - Procedure consigliate
-======================================================
+# <a name="manage-large-teams-in-microsoft-teams---best-practices"></a>Gestire team di grandi dimensioni in Microsoft Teams - Procedure consigliate
 
-Microsoft Teams è altrettanto efficace nel facilitare le comunicazioni tra piccoli gruppi con decine di membri e gruppi di grandi dimensioni con migliaia di membri. Esaminare [i limiti e le specifiche per Teams](limits-specifications-teams.md) per gli aggiornamenti sulle dimensioni dei team. L'aumento delle dimensioni del team comporta sfide operative e di gestione uniche. Questo articolo descrive le procedure consigliate per la creazione e la gestione di team di grandi dimensioni composti da migliaia di membri.
+Microsoft Teams è altrettanto efficace nel facilitare le comunicazioni tra piccoli gruppi con decine di membri e gruppi di grandi dimensioni con migliaia di membri. Rivedere [i limiti e le specifiche per Teams](limits-specifications-teams.md) aggiornamenti sulle dimensioni del team. L'aumento delle dimensioni del team comporta sfide operative e di gestione uniche. Questo articolo descrive le procedure consigliate per la creazione e la gestione di team di grandi dimensioni composti da migliaia di membri.
 
 ## <a name="value-of-large-teams"></a>Valore dei team di grandi dimensioni
 
@@ -41,17 +40,17 @@ I team di grandi dimensioni sono molto utili per abilitare gli scenari di collab
 
 ## <a name="create-teams-from-existing-groups"></a>Creare team da gruppi esistenti
 
-Usare i gruppi di contatti, i gruppi di sicurezza o i gruppi di Office per avviare il team. È possibile importare un gruppo per creare un team o crearne uno da un gruppo di Office.
+Usare gruppi di contatti, gruppi di sicurezza o Office per avviare il team. È possibile importare un gruppo per creare un team o creare un team da un Office gruppo.
 
 **Importare** un gruppo per creare un team: quando si importa un gruppo con un massimo di 3.500 membri in Teams, Teams calcola automaticamente il numero totale di membri del gruppo. Si tratta di una sola importazione e le modifiche future nel gruppo non verranno aggiornate automaticamente in Teams.
 
-Creare un team da un gruppo di **Microsoft 365** di grandi dimensioni: quando si crea un team da  un gruppo di Microsoft 365 di grandi dimensioni, i membri fanno automaticamente parte del gruppo di Microsoft 365 e del team. In futuro, quando i membri del team si uniranno o abbandonano il gruppo di Microsoft 365, verranno aggiunti o rimossi automaticamente dal team.
+**Creare un team** da un gruppo di Microsoft 365 di grandi dimensioni: quando si crea un team da un gruppo di Microsoft 365 di grandi dimensioni, i membri fanno automaticamente parte del gruppo Microsoft 365 e **del** team. In futuro, quando i membri del team si uniranno o Microsoft 365 gruppo, verranno aggiunti o rimossi automaticamente dal team.
 
 ## <a name="bulk-importexportremove-members-in-a-team"></a>Importare/esportare/rimuovere membri in blocco in un team
 
-Il portale di Azure consente agli utenti di importare/esportare/rimuovere membri in blocco in un gruppo di Microsoft 365. Per altre informazioni, vedere Per [importare in blocco i membri del gruppo.](/azure/active-directory/enterprise-users/groups-bulk-import-members#to-bulk-import-group-members)
+Il portale di Azure consente agli utenti di importare/esportare/rimuovere membri in blocco in un Microsoft 365 gruppo. Per altre informazioni, vedere Per [importare in blocco i membri del gruppo.](/azure/active-directory/enterprise-users/groups-bulk-import-members#to-bulk-import-group-members)
 
-Poiché ogni team è supportato da un gruppo di Microsoft 365, è possibile usare il portale di Azure per eseguire queste operazioni nel gruppo corrispondente al team. Le operazioni dei membri verranno riflesse nel team entro 24 ore.
+Poiché ogni team è supportato da un Microsoft 365, è possibile usare il portale di Azure per eseguire queste operazioni nel gruppo corrispondente al team. Le operazioni dei membri verranno riflesse nel team entro 24 ore.
 
 ## <a name="create-channels-to-focus-discussions"></a>Creare canali per concentrarsi sulle discussioni
 
@@ -59,9 +58,9 @@ Poiché ogni team è supportato da un gruppo di Microsoft 365, è possibile usar
 
 ## <a name="restrict-channel-creation"></a>Limitare la creazione di canali
 
-Se a un membro del team è consentito creare canali, il team può avere un'espansione dei canali. I proprietari del team devono disattivare la creazione, l'aggiornamento, l'eliminazione e il ripristino dei canali per i membri in **Impostazioni > autorizzazioni per i membri.** Vedere [Panoramica di team e canali.](teams-channels-overview.md)
+Se a un membro del team è consentito creare canali, il team può avere un'espansione dei canali. I proprietari del team devono disattivare la creazione, l'aggiornamento, l'eliminazione e il ripristino dei canali per i membri Impostazioni > **autorizzazioni per i membri.** Vedere [Panoramica di team e canali.](teams-channels-overview.md)
 
-![Immagine della schermata che mostra la sezione autorizzazioni per i membri della scheda Impostazioni della console di amministrazione.](media/no-channel-creation.png "Immagine della schermata della sezione autorizzazioni per i membri della scheda Impostazioni della console di amministrazione. Le opzioni consenti ai membri di creare o eliminare canali sono deselezionate.")
+![Immagine della schermata che mostra la sezione autorizzazioni per i membri della console di amministrazione Impostazioni scheda.](media/no-channel-creation.png "Immagine della schermata della sezione autorizzazioni per i membri della scheda Impostazioni amministratore. Le opzioni consenti ai membri di creare o eliminare canali sono deselezionate.")
 
 ## <a name="add-favorite-channels"></a>Aggiungere canali preferiti
 
@@ -73,15 +72,15 @@ Per velocizzare il coinvolgimento degli utenti e l'individuazione dei contenuti,
 
 ## <a name="regulate-applications-and-bots-in-large-teams"></a>Regolare applicazioni e bot in team di grandi dimensioni
 
-Per evitare l'aggiunta di applicazioni o bot distratti, i proprietari del team possono disabilitare, aggiungere, rimuovere e caricare app e connettori per i membri del team. Nell'interfaccia di amministrazione in **Impostazioni > autorizzazioni** per i membri deselezionare le tre opzioni che consentono ai membri di aggiungere app o connettori.
+Per evitare l'aggiunta di applicazioni o bot distratti, i proprietari del team possono disabilitare, aggiungere, rimuovere e caricare app e connettori per i membri del team. Nell'interfaccia di amministrazione in **Impostazioni > autorizzazioni per** i membri deselezionare le tre opzioni che consentono ai membri di aggiungere app o connettori.
 
-![Immagine della schermata che mostra la sezione Autorizzazioni membri del riquadro Impostazioni.](media/disable-bots-connectors.png "Immagine della schermata che mostra la sezione Autorizzazioni per i membri del riquadro Impostazioni. Le opzioni per consentire ai membri di aggiungere app o connettori sono deselezionate.")
+![Immagine della schermata che mostra la sezione Autorizzazioni membri del riquadro Impostazioni gruppo.](media/disable-bots-connectors.png "Immagine della schermata che mostra la sezione Autorizzazioni per i membri del riquadro Impostazioni gruppo. Le opzioni per consentire ai membri di aggiungere app o connettori sono deselezionate.")
 
 Vedere [App, bot, & connettori](deploy-apps-microsoft-teams-landing-page.md).
 
 ## <a name="regulate-team-and-channel-mentions"></a>Regolare le menzioni del team e del canale
 
-Le menzioni del team e del canale possono essere usate per attirare l'attenzione dell'intero team su determinati post del canale. Una volta usata una menzione in un post, viene inviata una notifica a migliaia di membri del team. Se le notifiche sono troppo frequenti, i membri del team possono diventare sovraccarichi e potrebbero lamentarsi con i proprietari del team. Per impedire le menzioni del team o del canale, disattivare le menzioni di team e canali per i membri deselezionando le caselle nel riquadro impostazioni **> @mentions** team.
+Le menzioni del team e del canale possono essere usate per attirare l'attenzione dell'intero team su determinati post del canale. Una volta usata una menzione in un post, viene inviata una notifica a migliaia di membri del team. Se le notifiche sono troppo frequenti, i membri del team possono diventare sovraccarichi e potrebbero lamentarsi con i proprietari del team. Per evitare menzioni di team o canali, disattivare le menzioni di team e canali per i membri deselezionando le caselle nel riquadro Impostazioni > @mentions **team.**
 
 ![Immagine della schermata che mostra la sezione Menzioni del riquadro Impostazioni.](media/no-at-mentions.png "Immagine della schermata che mostra la sezione Menzioni del riquadro Impostazioni. Le opzioni per mostrare e concedere ai membri l'accesso alle menzioni sono deselezionate.")
 
@@ -91,5 +90,5 @@ I proprietari del team possono abilitare la moderazione in un canale per control
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Procedure consigliate per l'organizzazione di Teams](best-practices-organizing.md)
+- [Procedure consigliate per l'organizzazione Teams](best-practices-organizing.md)
 - [Creare un team a livello di organizzazione](create-an-org-wide-team.md)
