@@ -1,5 +1,5 @@
 ---
-title: Assegnare licenze per i componenti aggiuntivi di Teams agli utenti
+title: Assegnare Teams licenze per i componenti aggiuntivi agli utenti
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -13,7 +13,7 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 ms.reviewer: mikedav
-description: Informazioni su come assegnare licenze per i componenti aggiuntivi di Teams agli utenti per funzionalità come audioconferenze, sistema telefonico e piani per chiamate.
+description: Informazioni su come assegnare Teams licenze per i componenti aggiuntivi agli utenti per funzionalità come audioconferenze, Sistema telefonico e piani per chiamate.
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 240672b125190492a036bc9dfa3f7a42070e8320
@@ -23,32 +23,32 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51116934"
 ---
-# <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare licenze per i componenti aggiuntivi di Teams agli utenti
+# <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare Teams licenze per i componenti aggiuntivi agli utenti
 
-Le licenze per i componenti aggiuntivi sono licenze per specifiche funzionalità di Teams, ad esempio audioconferenze, sistema telefonico e piani per chiamate. Questo articolo descrive come assegnare licenze di componenti aggiuntivi a singoli utenti e a set di utenti di grandi dimensioni in blocco.
+Le licenze per i componenti aggiuntivi sono licenze per Teams funzionalità di audioconferenza, Sistema telefonico e piani per chiamate. Questo articolo descrive come assegnare licenze di componenti aggiuntivi a singoli utenti e a set di utenti di grandi dimensioni in blocco.
 
 > [!NOTE]
-> Vedere [Licenze per i componenti aggiuntivi di Teams](./microsoft-teams-add-on-licensing.md) per le funzionalità di Teams disponibili con licenze per i componenti aggiuntivi. Troverai anche informazioni sulle licenze da acquistare e su come acquistarle (a seconda del piano), in modo che gli utenti possano ottenere funzionalità come audioconferenze, numeri a numero verde e la possibilità di chiamare numeri di telefono all'esterno dell'organizzazione. Dopo aver deciso quali funzionalità si vogliono assegnare agli utenti, assegnarle le licenze.
+> Vedere [Teams licenze per i](./microsoft-teams-add-on-licensing.md) componenti aggiuntivi Teams funzionalità disponibili con le licenze per i componenti aggiuntivi. Troverai anche informazioni sulle licenze da acquistare e su come acquistarle (a seconda del piano), in modo che gli utenti possano ottenere funzionalità come audioconferenze, numeri a numero verde e la possibilità di chiamare numeri di telefono all'esterno dell'organizzazione. Dopo aver deciso quali funzionalità si vogliono assegnare agli utenti, assegnarle le licenze.
 
-È possibile usare l'interfaccia di amministrazione di Microsoft 365 o PowerShell per assegnare licenze agli utenti dell'organizzazione. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
+È possibile usare l'interfaccia Microsoft 365 o PowerShell per assegnare licenze agli utenti dell'organizzazione. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
 
-## <a name="what-you-need-to-know-before-you-assign-phone-system-calling-plan-and-communication-credits-licenses"></a>Cosa è necessario sapere prima di assegnare le licenze Sistema telefonico, Piano chiamate e Crediti comunicazioni
+## <a name="what-you-need-to-know-before-you-assign-phone-system-calling-plan-and-communication-credits-licenses"></a>Informazioni da sapere prima di assegnare le licenze Sistema telefonico, piano chiamate e crediti comunicazioni
 
 Prima di iniziare, esaminare i requisiti seguenti:
 
-- Se si usa la connettività PSTN (Public Switched Telephone Network) locale per gli utenti ibridi, è necessario assegnare solo una licenza sistema telefonico. NON assegnare una licenza per il piano di chiamata.
+- Se si usa la connettività PSTN (Public Switched Telephone Network) locale per gli utenti ibridi, è necessario assegnare una licenza Sistema telefonico locale. NON assegnare una licenza per il piano di chiamata.
 
 - A causa della latenza tra Microsoft 365 e Microsoft Teams, l'assegnazione di un piano per chiamate a un utente dopo l'assegnazione di una licenza può richiedere fino a 24 ore. Se all'utente non è assegnato un piano per chiamate dopo 24 ore, contattare il supporto per i prodotti [aziendali - Guida per gli amministratori.](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 - Se non è stato acquistato il numero corretto di licenze, verrà visualizzato un messaggio di errore. Se è necessario acquistare altre licenze per il piano per chiamate, scegliere l'opzione per acquistarne altre.
 
-- Anche se agli utenti sono assegnate licenze Enterprise [](../what-are-communications-credits.md) E5, è comunque necessario assegnare loro licenze di Crediti comunicazioni se vogliono effettuare o ricevere chiamate dalla rete PSTN.
+- Anche se agli utenti vengono assegnate Enterprise licenze E5, è comunque necessario assegnare loro le licenze crediti comunicazioni se vogliono effettuare o ricevere chiamate dalla rete PSTN. [](../what-are-communications-credits.md)
 
 - Dopo aver assegnato licenze per piani per chiamate o crediti comunicazioni agli utenti, è necessario ottenere i numeri di telefono per l'organizzazione e quindi assegnarli agli utenti. Per istruzioni dettagliate, vedere [Configurare i piani per chiamate.](../set-up-calling-plans.md)
 
-## <a name="using-the-microsoft-365-admin-center"></a>Uso dell'interfaccia di amministrazione di Microsoft 365
+## <a name="using-the-microsoft-365-admin-center"></a>Uso dell'Microsoft 365 di amministrazione
 
-Usare l'interfaccia di amministrazione di Microsoft 365 per assegnare licenze a singoli utenti o a piccoli set di utenti alla volta. Le licenze vengono assegnate nella **pagina Licenze** (per un massimo di 20 utenti alla volta) o nella **pagina Utenti** attivi. Il metodo scelto varia a seconda che si vogliano gestire licenze di prodotto per utenti specifici o licenze utente per prodotti specifici.
+Usare l Microsoft 365 di amministrazione per assegnare licenze a singoli utenti o a piccoli set di utenti alla volta. Le licenze vengono assegnate nella **pagina Licenze** (per un massimo di 20 utenti alla volta) o nella **pagina Utenti** attivi. Il metodo scelto varia a seconda che si vogliano gestire licenze di prodotto per utenti specifici o licenze utente per prodotti specifici.
 
 Per istruzioni dettagliate, vedere [Assegnare licenze agli utenti.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
@@ -63,15 +63,15 @@ Usare PowerShell per assegnare licenze agli utenti in blocco.  Per altre informa
 Ecco un esempio di come usare uno script per assegnare licenze agli utenti.
 
 1. Installare la versione a 64 bit dell'Assistente Microsoft Online Services per i professionisti [IT RTW.](/collaborate/connect-redirect?DownloadID=59185)
-2. Installare il modulo di Microsoft Azure Active Directory per Windows PowerShell:
+2. Installare il modulo Microsoft Azure Active Directory per Windows PowerShell:
     1. Aprire un prompt dei comandi Windows PowerShell utente con privilegi elevati (eseguire Windows PowerShell come amministratore).
     2. Eseguire il comando seguente:
         ```powershell
         Install-Module MSOnline
         ```
-    3. Se viene chiesto di installare il provider NuGet, digitare **Y** e quindi premere INVIO.
+    3. Se viene chiesto di installare il provider di NuGet, digitare **Y** e quindi premere INVIO.
     4. Se viene chiesto di installare il modulo da PSGallery, digitare **Y** e quindi premere INVIO.
-3. Al prompt Windows PowerShell, eseguire lo script seguente per assegnare licenze agli utenti, dove è il nome dell'organizzazione e l'identificatore della licenza da \<CompanyName:License> assegnare. Ad esempio, litwareinc:MCOMEETADV.
+3. Al prompt dei Windows PowerShell eseguire lo script seguente per assegnare licenze agli utenti, dove è il nome dell'organizzazione e l'identificatore della licenza da \<CompanyName:License> assegnare. Ad esempio, litwareinc:MCOMEETADV.
 
     L'identificatore è diverso dal nome descrittivo della licenza. Ad esempio, l'identificatore per le audioconferenze è MCOMEETADV. Per altre informazioni, vedere [Nomi dei prodotti e identificatori SKU per le licenze.](#product-names-and-sku-identifiers-for-licensing)
 
@@ -110,7 +110,7 @@ Ecco un esempio di come usare uno script per assegnare licenze agli utenti.
         }
     ```
 
-    Ad esempio, per assegnare le licenze di Microsoft 365 Enterprise 1 e audioconferenza, usare la sintassi seguente nello script:
+    Ad esempio, per assegnare Microsoft 365 Enterprise 1 e le licenze di audioconferenza, usare la sintassi seguente nello script:
 
       ```powershell
       Set-MsolUserLicense -UserPrincipalName $user -AddLicenses "litwareinc:ENTERPRISEPACK" -ErrorAction SilentlyContinue
@@ -131,7 +131,7 @@ Per altre informazioni, vedere Visualizzare licenze [](/azure/active-directory/u
 
 | Nome del prodotto| Nome parte SKU |
 |--------------|---------------|
-| Microsoft Enterprise E5 (con sistema telefonico) | ENTERPRISEPREMIUM |
+| Microsoft Enterprise E5 (con Sistema telefonico) | ENTERPRISEPREMIUM |
 | Microsoft Enterprise E5 (senza audioconferenza) | ENTERPRISEPREMIUM_NOPSTNCONF |
 | Microsoft Enterprise E5 (con audioconferenza) | ENTERPRISEPREMIUM |
 | Microsoft Enterprise E3 | ENTERPRISEPACK |

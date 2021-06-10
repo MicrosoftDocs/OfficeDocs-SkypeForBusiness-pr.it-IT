@@ -33,7 +33,7 @@ ms.locfileid: "51116534"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare audioconferenze in Microsoft 365 per Microsoft Teams
 
-A volte le persone all'interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft Teams include la funzionalità di audioconferenza per questa situazione. Le persone possono accedere alle riunioni di Microsoft Teams usando un telefono, invece di usare l'app Microsoft Teams su un dispositivo mobile o un PC.
+A volte le persone all'interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft Teams include la funzionalità di audioconferenza per questa situazione. Le persone possono accedere a Microsoft Teams riunioni usando un telefono, invece di usare l'app Microsoft Teams su un dispositivo mobile o un PC.
 
 È necessario configurare le audioconferenze solo per le persone che pianificano o conducono riunioni. Le persone che partecipano alla riunione tramite telefono non hanno bisogno che le venga assegnata alcuna licenza o di altre impostazioni.
 
@@ -49,13 +49,13 @@ Per eseguire questa [procedura, è](https://support.office.com/article/da585eea-
 
 2. Ottenere le licenze di **Audioconferenza**. Se vuoi:
 
-   - **Provare prima** di acquistarlo: è possibile iscriversi a una versione di valutazione gratuita di Office 365 Enterprise E5 che include audioconferenze. Consulta [Versione di valutazione di Office 365 Enterprise E5](https://portal.office.com/Signup?OfferId=101bde18-5ffb-4d79-a47b-f5b2c62525b3).
+   - **Provalo** prima di acquistarlo: puoi iscriverti a una versione di valutazione gratuita Office 365 Enterprise E5 che include audioconferenze. Consulta [Versione di valutazione di Office 365 Enterprise E5](https://portal.office.com/Signup?OfferId=101bde18-5ffb-4d79-a47b-f5b2c62525b3).
 
-   - **Acquistalo**: vedi [Licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+   - **Acquistalo**: vedi Microsoft Teams [licenze per i componenti aggiuntivi](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
 
 3. [Assegnare licenze agli utenti](/microsoft-365/admin/manage/assign-licenses-to-users) dell'organizzazione che pianificano o conducono riunioni.
 
-4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, vedere [Assegnare licenze per i componenti aggiuntivi di Microsoft Teams.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
+4. Se hai acquistato licenze del componente aggiuntivo Audioconferenza e licenze di Credito per la comunicazione, assegna anche quelle. Per istruzioni, vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 
 ### <a name="to-buy-and-assign-pay-per-minute-audio-conferencing-licenses"></a>Per acquistare e assegnare licenze di audioconferenza con pagamento al minuto
 

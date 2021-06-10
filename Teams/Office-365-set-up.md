@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: ritikag
 audience: admin
-description: Informazioni su come attivare Microsoft Teams per l'organizzazione di Microsoft 365 o Office 365, assegnare licenze utente per controllare l'accesso individuale e consentire o bloccare le origini contenuto.
+description: Informazioni su come attivare le Microsoft Teams per l'organizzazione Microsoft 365 o Office 365, assegnare licenze utente per controllare l'accesso individuale e consentire o bloccare le origini contenuto.
 localization_priority: Normal
 f1.keywords:
 - CSH
@@ -39,7 +39,7 @@ Gli amministratori dell'organizzazione possono assegnare agli utenti le licenze 
 
 
  
-Per altre informazioni sulla gestione delle singole licenze, vedere Descrizione [del servizio Microsoft Teams.](/office365/servicedescriptions/teams-service-description) 
+Per altre informazioni sulla gestione di singole licenze, leggere la [Microsoft Teams del servizio.](/office365/servicedescriptions/teams-service-description) 
 
  
 ## <a name="turn-teams-on-or-off-for-your-entire-organization"></a>Attivare o disattivare Teams per l'intera organizzazione 

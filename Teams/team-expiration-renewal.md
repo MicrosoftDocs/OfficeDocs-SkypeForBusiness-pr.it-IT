@@ -11,7 +11,7 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni sulla scadenza e il rinnovo del team e su come usare i criteri di scadenza dei gruppi di Microsoft 365 per pulire automaticamente i team inutilizzati in Microsoft Teams.
+description: Informazioni sulla scadenza e il rinnovo del team e su come usare i criteri di scadenza Microsoft 365 gruppo per pulire automaticamente i team inutilizzati Microsoft Teams.
 f1.keywords:
 - NOCSH
 appliesto:
@@ -27,7 +27,7 @@ ms.locfileid: "51116954"
 
 Le organizzazioni con un numero elevato di team hanno spesso team che non vengono mai effettivamente usati. Questo problema può verificarsi a causa di diversi motivi, tra cui la sperimentazione del prodotto, la collaborazione in team a breve termine o l'uscita dall'organizzazione da parte dei proprietari del team. Nel corso del tempo, questi team possono accumularsi e creare un onere sulle risorse del tenant.  
 
-Per limitare il numero di team inutilizzati, come amministratore, è possibile usare i criteri di scadenza dei gruppi di [Microsoft 365](/microsoft-365/admin/create-groups/office-365-groups-expiration-policy) per pulire automaticamente i team inutilizzati. Poiché i team sono supportati da gruppi, i criteri di scadenza dei gruppi vengono applicati automaticamente anche ai team.
+Per limitare il numero di team inutilizzati, come [](/microsoft-365/admin/create-groups/office-365-groups-expiration-policy) amministratore, è possibile usare i criteri di scadenza Microsoft 365 di gruppo per pulire automaticamente i team inutilizzati. Poiché i team sono supportati da gruppi, i criteri di scadenza dei gruppi vengono applicati automaticamente anche ai team.
 
 Quando si applicano criteri di scadenza a un team, il proprietario del team riceve una notifica per il rinnovo del team 30 giorni, 15 giorni e 1 giorno prima della data di scadenza del team. Quando il proprietario del team riceve la notifica, può fare clic su Rinnova **ora** nelle impostazioni del team per rinnovare il team.
 

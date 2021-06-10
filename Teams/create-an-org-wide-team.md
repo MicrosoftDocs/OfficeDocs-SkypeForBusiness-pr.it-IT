@@ -8,7 +8,7 @@ ms.topic: article
 audience: admin
 ms.service: msteams
 search.appverid: MET150
-description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams per consentire a tutti gli utenti di un'organizzazione di piccole e medie dimensioni di collaborare in modo automatico.
+description: Informazioni su come creare e gestire un team a livello di organizzazione in Teams per fornire un modo automatico di collaborazione a tutti gli utenti di un'organizzazione di piccole e medie dimensioni.
 localization_priority: Normal
 f1.keywords:
 - NOCSH
@@ -32,7 +32,7 @@ Con i team a livello di organizzazione, gli amministratori globali possono crear
 
 ![Screenshot dell'opzione per la creazione di un team a livello di organizzazione](media/create-org-wide-team.png "Screenshot dell'opzione per la creazione di un team a livello di organizzazione")
 
-Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori dei servizi di Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, all'utente viene assegnata una licenza Esplorativa di Microsoft Teams. Per altre informazioni sulla licenza Esplorativa, vedere [Gestire la licenza Esplorativa](teams-exploratory.md)di Microsoft Teams. 
+Quando viene creato un team a livello di organizzazione, tutti gli amministratori globali e gli amministratori dei servizi Teams vengono aggiunti come proprietari del team e tutti gli utenti attivi vengono aggiunti come membri del team. Anche gli utenti senza licenza vengono aggiunti al team. La prima volta che un utente senza licenza accede a Teams, all'utente viene assegnata una Microsoft Teams Exploratory. Per altre informazioni sulla licenza Esplorativa, vedere Gestire [la licenza esplorativa Microsoft Teams esplorativa](teams-exploratory.md). 
 
 Questi tipi di account non verranno aggiunti al team a livello di organizzazione:
 
@@ -48,7 +48,7 @@ Quando la directory dell'organizzazione viene aggiornata per includere nuovi ute
 > - Se l'opzione a  livello di organizzazione non è visualizzata quando si crea un team e si è un amministratore globale, è possibile che sia stato raggiunto il limite di cinque team a livello di organizzazione oppure che l'organizzazione abbia più del limite di dimensioni corrente di 10.000 membri. Contiamo di aumentare il limite in futuro. I team a livello di organizzazione non sono ancora disponibili per Teams per l'istruzione.
 > - Le sale che non fanno parte di un elenco di account di sale, attrezzature e risorse potrebbero essere aggiunte o sincronizzate con il team dell'organizzazione. I proprietari del team possono rimuovere facilmente questi account dal team.
 > - Tutte le azioni del sistema per aggiungere o rimuovere membri sono pubblicate nel canale Generale. Inoltre, nel client di Teams sarà indicato che il canale ha nuove attività.
-> - Se l'organizzazione non ha più di 10.000 utenti, verrà creato automaticamente un team a livello di organizzazione per l'organizzazione. Il nome del team rifletterà il nome del tenant e avrà un canale Generale. Gli amministratori globali possono modificare questo team come qualsiasi altro team. 
+> - Se l'organizzazione non ha più di Teams e non ha più di 10.000 utenti, verrà creato automaticamente un team a livello di organizzazione per l'organizzazione. Il nome del team rifletterà il nome del tenant e avrà un canale Generale. Gli amministratori globali possono modificare questo team come qualsiasi altro team. 
 
 ## <a name="best-practices"></a>Procedure consigliate
 
@@ -92,4 +92,4 @@ I modelli di team non possono essere usati per creare un team a livello di organ
 
 ## <a name="see-also"></a>Vedere anche
 
-Guardare un video sulla [creazione di un team a livello aziendale in Microsoft Teams.](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3)
+Guardare un video sulla creazione di un team a livello aziendale [in Microsoft Teams.](https://support.office.com/article/037bb27a-bcc9-48fe-8d72-44d9482420a3)

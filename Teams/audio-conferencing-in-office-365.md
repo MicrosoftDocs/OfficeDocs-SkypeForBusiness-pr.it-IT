@@ -24,7 +24,7 @@ ms.custom:
 - Audio Conferencing
 - ms.teamsadmincenter.audioconferencing.overview
 - seo-marvel-apr2020
-description: Informazioni su come le audioconferenze in Microsoft 365 o Office 365 consentono agli utenti di accedere alle riunioni dal proprio telefono.
+description: Informazioni su come i servizi di audioconferenza in Microsoft 365 o Office 365 gli utenti possono accedere alle riunioni dal proprio telefono.
 ms.openlocfilehash: bce9aee26fa1fa9cfd8a365074bd67fcc79bde6f
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/23/2021
 ms.locfileid: "51111272"
 ---
 # <a name="audio-conferencing-in-microsoft-365"></a>Audioconferenza in Microsoft 365
-Le audioconferenze in Microsoft 365 e Office 365 consentono agli utenti di accedere alle riunioni dal proprio telefono. L’audioconferenza permette di avere fino a 250 partecipanti al telefono.
+Le audioconferenze Microsoft 365 e Office 365 consentono agli utenti di accedere alle riunioni dal proprio telefono. L’audioconferenza permette di avere fino a 250 partecipanti al telefono.
 
 ## <a name="what-is-audio-conferencing"></a>Informazioni sulle audioconferenze
 Accedere alle riunioni tramite telefono è molto utile per gli utenti che sono in viaggio e non possono partecipare a una riunione usando le app Skype for Business o Microsoft Teams su laptop o dispositivi mobili. Esistono tuttavia altre situazioni in cui l'uso di un telefono per partecipare a una riunione di Skype for Business o Microsoft Teams può essere un'opzione migliore rispetto all'uso di un'app su un computer, ad esempio quando:
@@ -91,7 +91,7 @@ I numeri di telefono dedicati per le audioconferenze sono numeri di servizio che
 
 - **Uso dell'interfaccia di amministrazione di Skype for Business**. In alcuni paesi/aree geografiche è possibile recuperare numeri di servizio per i bridge di conferenza usando l'interfaccia di amministrazione di Skype for Business. Vedere [Recupero dei numeri di telefono di servizio](./getting-service-phone-numbers.md).
     
-- **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi corrente o dal gestore telefonico a Microsoft 365 o Office 365. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
+- **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico corrente Microsoft 365 o Office 365. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
   
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese/area geografica) non sarà possibile ottenere nuovi numeri di telefono tramite l'interfaccia di amministrazione di Skype for Business oppure serviranno numeri di telefono o prefissi specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
