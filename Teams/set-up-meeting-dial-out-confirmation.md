@@ -20,11 +20,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51117094"
 ---
-# <a name="set-up-meeting-dial-out-confirmation-for-your-users-in-microsoft-teams"></a>Configurare la conferma di chiamata in uscita per la riunione per gli utenti in Microsoft Teams
+# <a name="set-up-meeting-dial-out-confirmation-for-your-users-in-microsoft-teams"></a>Configurare la conferma di chiamata in uscita della riunione per gli utenti in Microsoft Teams
 
 Le chiamate in uscita e le chiamate call me sono modi molto utili per invitare i partecipanti a partecipare a una riunione e per i partecipanti esistenti a partecipare a una riunione usando un telefono tradizionale o cellulare. Tuttavia, quando la persona chiamata non è in grado di rispondere alla chiamata e la chiamata viene risposto da un sistema di segreteria telefonica, il sistema di segreteria telefonica è connesso alla riunione e i partecipanti potranno ascoltarla finché non viene rimossa dalla riunione.
 
-Per evitare che i sistemi di segreteria telefonica si connettono alle riunioni quando una chiamata in uscita viene inviata a un numero di telefono e la persona chiamata non è in grado di rispondere alla chiamata, è possibile configurare Teams in modo da richiedere una conferma alla persona chiamata per consentire loro di partecipare alla riunione. Se la persona chiamata non è in grado di rispondere alla chiamata e la chiamata viene risposto da un sistema di segreteria telefonica, il sistema di segreteria telefonica non sarà connesso alla riunione perché non fornirà una conferma per parteciparvi.
+Per evitare che i sistemi di segreteria telefonica si connettono alle riunioni quando una chiamata in uscita viene inviata a un numero di telefono e la persona chiamata non è in grado di rispondere alla chiamata, è possibile configurare Teams per richiedere una conferma alla persona chiamata per consentire loro di partecipare alla riunione. Se la persona chiamata non è in grado di rispondere alla chiamata e la chiamata viene risposto da un sistema di segreteria telefonica, il sistema di segreteria telefonica non sarà connesso alla riunione perché non fornirà una conferma per parteciparvi.
 
 Quando questa funzionalità è abilitata, le persone che ricevono una chiamata in uscita o chiamata in uscita devono confermare di voler partecipare alla riunione premendo 1 sul telefono tradizionale o sul cellulare.
 

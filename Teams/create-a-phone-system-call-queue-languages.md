@@ -1,5 +1,5 @@
 ---
-title: Lingue supportate per la coda di chiamata di Microsoft Teams
+title: Microsoft Teams delle code di chiamata supportate
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -21,7 +21,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: Lingue supportate della coda di chiamata di Microsoft Teams
+description: Microsoft Teams delle code di chiamata supportate
 ms.openlocfilehash: 0d5e587c8a90c11a2b6b3234a98510101e2cb94c
 ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/12/2021
 ms.locfileid: "50197084"
 ---
-# <a name="microsoft-teams-call-queue-supported-languages"></a>Lingue supportate per la coda di chiamata di Microsoft Teams
+# <a name="microsoft-teams-call-queue-supported-languages"></a>Microsoft Teams delle code di chiamata supportate
 
-La coda di chiamata supporta le seguenti lingue per la sintesi vocale:
+La coda di chiamata supporta le lingue seguenti per la sintesi vocale (TTS):
 
 |Lingua                                |
 |:---------------------------------------|
 |Arabo (Egitto)                          |
 |Catalano (catalano)                       |
-|Cinese (semplificato, CINA)               |
+|Cinese (semplificato, RPC)               |
 |Cinese (tradizionale, Hong Kong)        |
 |Cinese (tradizionale, Taiwan)           |
 |Croato (Croazia)                      |
@@ -59,7 +59,7 @@ La coda di chiamata supporta le seguenti lingue per la sintesi vocale:
 |Italiano (Italia)                         |
 |Giapponese (Giappone)                        |
 |Coreano (Corea)                          |
-|Norvegese Bomale (Norvegia)               |
+|Norvegese Bokmal (Norvegia)               |
 |Polacco (Polonia)                         |
 |Portoghese (Brasile)                     |
 |Portoghese (Portogallo)                   |
@@ -75,4 +75,4 @@ La coda di chiamata supporta le seguenti lingue per la sintesi vocale:
 |Vietnamita (Vietnam)                    |
 
 > [!NOTE]
-> Quando si usa la sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.
+> Quando si usa La sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.

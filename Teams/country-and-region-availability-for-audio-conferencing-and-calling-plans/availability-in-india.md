@@ -42,7 +42,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Microsoft non vende audioconferenze in India. TATA Communications offre un servizio di accesso remoto e di accesso remoto compatibile con Microsoft Teams Meetings. Per altre informazioni, visitare il sito Web [di TATA Communications.](https://www.tatacommunications.com/for-you/tata-communications-connections-for-microsoft-teams/)   <br/> |
+|I servizi di Audioconferenza sono disponibili per l'acquisto?  <br/> |Microsoft non vende audioconferenze in India. TATA Communications offre un servizio di accesso remoto e di chiamata in uscita compatibile con Microsoft Teams riunioni. Per altre informazioni, visitare il sito Web [di TATA Communications.](https://www.tatacommunications.com/for-you/tata-communications-connections-for-microsoft-teams/)   <br/> |
 |Vengono assegnati automaticamente i numeri di telefono per l'Audioconferenza?  <br/> |Sì, per:<br/><ul><li> Mumbai</ul>Se vuoi numeri di telefono dedicati, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).  <br/> |
 |Capacità di chiamata in uscita utilizzando la funzione Chiamami  <br/> |Disponibile  <br/> |
 
@@ -73,7 +73,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
 
- Si noti che in India i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se vuoi ottenere numeri a numero verde e a numero verde per audioconferenze, vedi Ottenere numeri di telefono di servizio per [Skype for Business e Microsoft Teams.](../getting-service-phone-numbers.md)
+ Si noti che in India i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se si vogliono ottenere numeri a numero verde e a numero verde per le audioconferenze, vedere Ottenere numeri di telefono di servizio per Skype for Business [e Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

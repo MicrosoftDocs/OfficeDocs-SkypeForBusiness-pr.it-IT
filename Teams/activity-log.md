@@ -1,5 +1,5 @@
 ---
-title: Visualizzare le assegnazioni dei criteri nel log attività nell'interfaccia di amministrazione di Microsoft Teams
+title: Visualizzare le assegnazioni dei criteri nel log attività nell'Microsoft Teams di amministrazione
 author: cichur
 ms.author: v-cichur
 ms.reviewer: jastark
@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 search.appverid: MET150
-description: Informazioni su come visualizzare le attività di assegnazione dei criteri nel log attività nell'interfaccia di amministrazione di Microsoft Teams.
+description: Informazioni su come visualizzare le attività di assegnazione dei criteri nel log attività nell'Microsoft Teams di amministrazione.
 localization_priority: Normal
 f1.keywords:
 - CSH
@@ -27,7 +27,7 @@ ms.locfileid: "49821316"
 ---
 # <a name="view-your-policy-assignments-in-the-activity-log"></a>Visualizzare le assegnazioni dei criteri nel log attività
 
-Quando si assegnano criteri agli utenti nell'interfaccia di amministrazione di Microsoft Teams, è possibile visualizzare lo stato di tali assegnazioni nel log attività. Il log attività mostra le assegnazioni dei criteri a batch di più di 20 utenti tramite l'interfaccia di amministrazione di Microsoft Teams degli ultimi 30 giorni. Tenere presente che il log attività non mostra le assegnazioni dei pacchetti dei criteri, le assegnazioni dei criteri a batch di meno di 20 utenti tramite l'interfaccia di amministrazione di Microsoft Teams o le assegnazioni dei criteri tramite PowerShell.
+Quando si assegnano criteri agli utenti nell Microsoft Teams di amministrazione, è possibile visualizzare lo stato di tali assegnazioni di criteri nel log attività. Il log attività mostra le assegnazioni dei criteri a batch di più di 20 utenti tramite l'Microsoft Teams di amministrazione degli ultimi 30 giorni. Tenere presente che il log attività non mostra le assegnazioni dei pacchetti di criteri, le assegnazioni dei criteri a batch di meno di 20 utenti tramite l'interfaccia di amministrazione di Microsoft Teams o le assegnazioni dei criteri tramite PowerShell.
 
 ![Screenshot della pagina Log attività](media/activity-log.png)
 
@@ -35,11 +35,11 @@ Quando si assegnano criteri agli utenti nell'interfaccia di amministrazione di M
 
 Per visualizzare le assegnazioni dei criteri nel log attività:
 
-1. Nella barra di spostamento sinistra dell'interfaccia di amministrazione di Microsoft Teams, passa a **Dashboard,** quindi in **Log** attività seleziona **Visualizza dettagli.**
-2. È possibile visualizzare tutte le assegnazioni dei criteri o filtrare l'elenco in base allo stato per visualizzare solo le assegnazioni non **iniziate,** **in** corso o **completate.** Verranno visualizzate le informazioni seguenti su ogni attività:
-    - **Nome:** nome dell'assegnazione dei criteri. Fare clic sul collegamento per visualizzare altri dettagli. Questo include il numero di utenti a cui è stato assegnato il criterio e il numero di assegnazioni completate, in corso e non iniziate. Verrà visualizzato anche l'elenco di utenti nel batch e lo stato e il risultato di ogni utente. Ecco un esempio:
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Dashboard** e quindi in **Log attività** selezionare **Visualizza dettagli.**
+2. È possibile visualizzare tutte le assegnazioni dei criteri o filtrare l'elenco in base allo stato per visualizzare solo le assegnazioni non **avviate,** **in** corso o **completate.** Verranno visualizzate le informazioni seguenti su ogni attività:
+    - **Nome:** nome dell'assegnazione dei criteri. Fare clic sul collegamento per visualizzare altri dettagli. Include il numero di utenti a cui è stato assegnato il criterio e il numero di assegnazioni completate, in corso e non avviate. Verranno visualizzati anche l'elenco degli utenti nel batch e lo stato e il risultato per ogni utente. Ecco un esempio:
 
-        ![Screenshot della](media/activity-log-policy-assignment-detail.png)
+        ![Screenshot del pulsante](media/activity-log-policy-assignment-detail.png)
 
     - **Inviato:** data e ora di invio dell'assegnazione dei criteri.
     - **Ora di completamento:** data e ora di completamento dell'assegnazione dei criteri.
@@ -47,7 +47,7 @@ Per visualizzare le assegnazioni dei criteri nel log attività:
     - **Stato generale:** stato dell'assegnazione dei criteri.
 
 > [!NOTE]
-> Puoi anche accedere al log attività dalla **pagina** Utenti. Dopo aver fatto **clic su** Applica per inviare un'assegnazione di criteri in blocco, nella parte superiore della pagina verrà visualizzato un banner. Fai clic **sul collegamento Log** attività nel banner.
+> È anche possibile accedere al log attività dalla **pagina** Utenti. Dopo aver fatto **clic su Applica** per inviare un'assegnazione di criteri in blocco, nella parte superiore della pagina verrà visualizzato un banner. Fare clic **sul collegamento Log** attività nel banner.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

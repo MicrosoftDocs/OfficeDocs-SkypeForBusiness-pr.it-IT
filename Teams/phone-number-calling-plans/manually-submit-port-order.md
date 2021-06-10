@@ -29,7 +29,7 @@ ms.locfileid: "51098262"
 
 In alcuni paesi e aree geografiche potrebbe essere necessario inviare manualmente una richiesta di servizio per ottenere numeri di telefono, trasferire numeri di telefono, rilasciare numeri di telefono o cambiare indirizzo. Per vedere cosa è necessario per ogni paese e area geografica o per altre informazioni sulla portabilità dei numeri, vedere Gestire i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-Seguire i passaggi descritti in questo articolo per inviare manualmente un ordine di trasferimento se il proprio paese o area geografica non è elencato nella procedura guidata di [porting nell'interfaccia](transfer-phone-numbers-to-teams.md)di amministrazione di Microsoft Teams.
+Usare i passaggi descritti in questo articolo per inviare manualmente un ordine di trasferimento se il proprio paese o area geografica non è elencato nella procedura guidata di [porting nell'interfaccia](transfer-phone-numbers-to-teams.md)di amministrazione di Microsoft Teams.
 
 ## <a name="manually-submit-a-new-port-order-request"></a>Inviare manualmente una nuova richiesta di ordine di trasferimento
 
@@ -41,7 +41,7 @@ Per inviare manualmente un nuovo ordine di trasferimento, inviare il modulo lett
 
 ## <a name="what-else-should-you-know-about-number-porting"></a>Altre informazioni sulla portabilità dei numeri
 
-- Per usare i Piani per chiamate, è necessario acquistare e assegnare licenze agli utenti. Vedere [Licenze per i componenti aggiuntivi di Teams](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+- Per usare i Piani per chiamate, è necessario acquistare e assegnare licenze agli utenti. Vedere [Teams licenze per i componenti aggiuntivi.](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 
 - Devi assegnare i nuovi numeri di telefono a ogni utente. Vedere [Assegnare, modificare o rimuovere un numero di telefono per un utente.](../assign-change-or-remove-a-phone-number-for-a-user.md)
 

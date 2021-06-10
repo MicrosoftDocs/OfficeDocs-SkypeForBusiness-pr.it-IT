@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per le conferenze telefoniche con accesso esterno da Microsoft Teams. "
+description: "Informazioni su come visualizzare un elenco di utenti dell'organizzazione abilitati per le conferenze telefoniche con accesso esterno dall'Microsoft Teams. "
 ms.openlocfilehash: 13cee193c74e04ad530eef074ba989a1e5c300af
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -31,14 +31,14 @@ ms.locfileid: "51117224"
 ---
 # <a name="see-a-list-of-users-that-are-enabled-for-audio-conferencing-in-microsoft-teams"></a>Visualizzare un elenco di utenti abilitati per le audioconferenze in Microsoft Teams
 
-Dopo aver abilitato gli utenti di Microsoft Teams nell'organizzazione per le audioconferenze, è possibile visualizzare l'elenco degli utenti abilitati. 
+Dopo aver abilitato Microsoft Teams utenti dell'organizzazione per le audioconferenze, è possibile visualizzare l'elenco degli utenti abilitati. 
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
   
 ## <a name="viewing-a-list-of-users"></a>Visualizzazione di un elenco di utenti
 
-- Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Utenti.**
+- Nel riquadro Microsoft Teams di amministrazione fare clic su Utenti nel riquadro **di spostamento sinistro.**
 
 
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
@@ -50,7 +50,7 @@ Dopo aver abilitato gli utenti di Microsoft Teams nell'organizzazione per le aud
 - Puoi utilizzare il pulsante Cerca per cercare un singolo utente nell'elenco.
     
     
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

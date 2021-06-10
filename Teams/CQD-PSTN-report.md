@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-description: Usare il report Routing diretto PSTN di Microsoft Teams Call Quality Dashboard (CQD) per monitorare e risolvere i problemi relativi alle chiamate PSTN in Microsoft Teams.
+description: Usare il report Microsoft Teams Routing diretto PSTN (Call Quality Dashboard) per monitorare e risolvere i problemi relativi alle chiamate PSTN in Microsoft Teams.
 ms.openlocfilehash: f2b63f991f42aa4de9e0e4474137f7f992f95c53
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -24,7 +24,7 @@ ms.locfileid: "51094980"
 ---
 # <a name="using-the-cqd-pstn-direct-routing-report"></a>Uso del report CQD PSTN Direct Routing
 
-Novità di marzo 2020, è stato aggiunto un report di Routing diretto PSTN (Call Quality Dashboard) di Microsoft Teams ai modelli di query di Power BI scaricabili per [CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) 
+A marzo 2020 è stato aggiunto un report Microsoft Teams Call Quality Dashboard (CQD) PSTN Direct Routing ai modelli di query Power BI scaricabili per [CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) 
 
 
 Il report CQD PSTN Direct Routing Report (CQD PSTN Direct Routing Report.pbit) consente di comprendere i modelli di utilizzo e la qualità dei servizi PSTN. Usare questo report per monitorare l'utilizzo del servizio, informazioni sul session border controller (SBC), sul servizio di telefonia, sui parametri di rete e sui dettagli sul rapporto di efficacia della rete. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui le chiamate sono in uscita. Ad esempio, sarà possibile vedere quando il volume scende o quante chiamate vengono interessate e per quale motivo.
@@ -125,7 +125,7 @@ Dalla tendenza oraria NER Good Percentage, è possibile trovare che il tuffo si 
 
 ## <a name="network-parameters"></a>Parametri di rete
 
-Tutti i parametri di rete vengono misurati dall'interfaccia di routing diretto al session border controller. Per informazioni sui valori consigliati, vedere Preparare la rete [dell'organizzazione](prepare-network.md)per Microsoft Teams e esaminare i valori consigliati da Customer Edge a Microsoft Edge.
+Tutti i parametri di rete vengono misurati dall'interfaccia di routing diretto al session border controller. Per informazioni sui valori consigliati, vedere Preparare la rete [dell'organizzazione](prepare-network.md)per Microsoft Teams e osservare Customer Edge per Microsoft Edge valori consigliati.
 
   - **Instabilità:** misura in millisecondo della variazione del tempo di ritardo della propagazione della rete calcolata tra due endpoint usando RTCP (RtP Control Protocol).
 
@@ -145,6 +145,6 @@ Se viene visualizzato un picco in uno dei quattro grafici (Latenza, Instabilità
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Usare Power BI per analizzare i dati CQD per Microsoft Teams](CQD-PSTN-report.md)
+[Usare Power BI per analizzare i dati di CQD per Microsoft Teams](CQD-PSTN-report.md)
 
 [Risoluzione dei problemi di Teams](/MicrosoftTeams/troubleshoot/teams)

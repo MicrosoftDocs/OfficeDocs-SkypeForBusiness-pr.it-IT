@@ -40,14 +40,14 @@ Se serve aiuto per ottenere i numeri di telefono, è possibile [vedere](/microso
 
 **Per cercare numeri di telefono per gli utenti**
 
-![Icona che mostra il logo di Teams ](media/teams-logo-30x30.png) **Usando l'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il logo Teams ](media/teams-logo-30x30.png) **con l'interfaccia Microsoft Teams di amministrazione**
   
-1. Passare **all'interfaccia di amministrazione di Microsoft Teams.**
+1. Passare **all'Microsoft Teams di amministrazione.**
 
-2. Nel riquadro di spostamento sinistro selezionare **Numeri**  >  **di telefono vocale** Ottieni nuovi  >  **numeri.**
+2. Nel riquadro di spostamento sinistro selezionare **Voce**  >  **Telefono numeri** Ottieni nuovi  >  **numeri**.
   
     > [!IMPORTANT]
-    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di Microsoft  Teams, è necessario prima  acquistare almeno una licenza **Enterprise E5,** una licenza per il componente aggiuntivo Sistema telefonico o una licenza per i componenti aggiuntivi Audioconferenza.   
+    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di Microsoft Teams, è necessario prima acquistare almeno una  licenza **Enterprise E5,** una licenza per componenti aggiuntivi  **Sistema telefonico** o una licenza per i componenti aggiuntivi per audioconferenza.  
 
 3. Nella pagina **Seleziona posizione e quantità** selezionare  una posizione nell'elenco a discesa Paese o area geografica.
 
@@ -69,7 +69,7 @@ Se serve aiuto per ottenere i numeri di telefono, è possibile [vedere](/microso
 
 9. Nella pagina **Conferma** verificare le scelte effettuate e quindi fare clic su **Ordina.**
 
-10. Quando si torna alla pagina **Numeri di** telefono, selezionare il numero di telefono o i numeri da assegnare e quindi fare clic **su** Modifica per assegnarlo a un utente.  
+10. Quando si torna alla pagina **Telefono** numeri di telefono, selezionare il numero di telefono o i numeri da assegnare e quindi fare clic **su** Modifica per assegnarlo a un utente.  
 
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](./phone-number-calling-plans/port-order-overview.md)

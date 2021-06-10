@@ -29,9 +29,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51117214"
 ---
-# <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-microsoft-teams"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative alle audioconferenze in Microsoft Teams
+# <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-microsoft-teams"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative ai servizi di audioconferenza in Microsoft Teams
 
-A volte gli utenti di Microsoft Teams potrebbero dover inviare loro le informazioni relative ai servizi di audioconferenza. A questo scopo, fare clic su **Invia info conferenza tramite posta elettronica** sotto le proprietà di un utente. Quando invii questo messaggio di posta elettronica, conterrà tutte le informazioni relative ai servizi di audioconferenza, tra cui:
+A Microsoft Teams utenti potrebbe essere necessario inviare loro le informazioni di audioconferenza. A questo scopo, fare clic su **Invia info conferenza tramite posta elettronica** sotto le proprietà di un utente. Quando invii questo messaggio di posta elettronica, conterrà tutte le informazioni relative ai servizi di audioconferenza, tra cui:
   
 - Il numero di telefono per le conferenze o per l'accesso esterno dell'utente.
     
@@ -72,7 +72,7 @@ Ecco un esempio del messaggio di posta elettronica inviato:
     
   - Quando il provider di servizi di audioconferenza per un utente viene modificato in Microsoft.
   
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

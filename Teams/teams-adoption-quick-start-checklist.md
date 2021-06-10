@@ -1,5 +1,5 @@
 ---
-title: Elenco di controllo introduttivo per l'adozione di Microsoft Teams
+title: Microsoft Teams elenco di controllo introduttivo sull'adozione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Usare questo elenco di controllo introduttivo per assicurare il successo dell'organizzazione con l'adozione di Microsoft Teams.
+description: Usare questo elenco di controllo introduttivo per garantire il successo quando l'organizzazione inizia ad adottare Microsoft Teams.
 f1.keywords:
 - CSH
 ms.custom:
@@ -28,35 +28,35 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/12/2021
 ms.locfileid: "49809316"
 ---
-# <a name="microsoft-teams-adoption-quick-start-checklist"></a>Elenco di controllo introduttivo per l'adozione di Microsoft Teams
+# <a name="microsoft-teams-adoption-quick-start-checklist"></a>Microsoft Teams elenco di controllo introduttivo sull'adozione
 
 [Scaricare una copia dell'elenco di controllo](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/teams-adopt-quickstart-checklist-oct2018.pdf?raw=true)
 
 ## <a name="get-started-driving-adoption-of-microsoft-teams"></a>Introduzione all'adozione di Microsoft Teams
 
-- [Prerequisiti di adozione](teams-adoption-get-started.md)
+- [Prerequisiti per l'adozione](teams-adoption-get-started.md)
 
 ## <a name="phase-1---start"></a>Fase 1: inizio
 
 - [Informazioni su team e canali](teams-adoption-understand-teams-and-channels.md)
 - [Creare i primi team](teams-adoption-your-first-teams.md)
-- [Sei pronto per Teams?](teams-adoption-assess-readiness.md)
-- [Incontrare gli stakeholder](teams-adoption-assess-readiness.md#assess-your-stakeholders)
-- [Identificare gli early adopter](teams-adoption-assess-readiness.md#identify-early-adopters)
+- [Sei pronto per la Teams?](teams-adoption-assess-readiness.md)
+- [Incontrarsi con gli stakeholder](teams-adoption-assess-readiness.md#assess-your-stakeholders)
+- [Identificare i primi utenti](teams-adoption-assess-readiness.md#identify-early-adopters)
 
 ## <a name="phase-2---experiment"></a>Fase 2: sperimentazione
 
 - [Creare il programma Campioni](teams-adoption-create-champions-program.md)
-- [Completare la Guida introduttiva alla governance](teams-adoption-governance-quick-start.md)
+- [Completare la guida introduttiva alla governance](teams-adoption-governance-quick-start.md)
 - [Definire gli scenari di utilizzo](teams-adoption-define-usage-scenarios.md)
-- [Intervistare gli stakeholder del business](teams-adoption-define-usage-scenarios.md#interview-business-stakeholders)
+- [Intervistare gli stakeholder aziendali](teams-adoption-define-usage-scenarios.md#interview-business-stakeholders)
 - [Mappare e assegnare priorità a scenari aziendali](teams-adoption-define-usage-scenarios.md#map-and-prioritize-business-scenarios)
 - [Eseguire l'onboarding degli early adopter e raccogliere feedback](teams-adoption-onboard-early-adopters.md)
 - [Supporto per l'onboarding](teams-adoption-onboard-support.md)
 
 ## <a name="phase-3---scale"></a>Fase 3: scala
 
-- [Definire i risultati e le misure del successo](teams-adoption-define-outcomes.md)
+- [Definire i risultati e le misure di successo](teams-adoption-define-outcomes.md)
 - [Selezionare una strategia di abilitazione del servizio](teams-adoption-define-outcomes.md#select-a-service-enablement-strategy)
 - [Coinvolgere gli stakeholder](teams-adoption-define-outcomes.md#engage-stakeholders)
 - [Espandere il team di implementazione](teams-adoption-define-outcomes.md#expand-your-implementation-team)

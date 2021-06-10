@@ -35,13 +35,13 @@ Questo articolo fornisce indicazioni sull'uso di un server proxy con Teams o Sky
   
 ## <a name="not-using-a-proxy-server-is-recommended"></a>Consigliamo di non usare un server proxy
 
-Per quanto riguarda il traffico di Teams o Skype for Business sui proxy, Microsoft consiglia di ignorare i proxy. I proxy non rendono Teams o Skype for Business più sicuro perché il traffico è già crittografato.
+Per quanto riguarda il traffico Teams o Skype for Business proxy, Microsoft consiglia di ignorare i proxy. I proxy non rendono più Teams o Skype for Business perché il traffico è già crittografato.
   
-Inoltre, avere un proxy può causare problemi. Possono essere introdotti in un ambiente problemi di prestazioni attraverso latenza e perdita di pacchetti. Problemi come questi comportano un'esperienza negativa in scenari di Teams o Skype for Business come audio e video, dove i flussi in tempo reale sono essenziali.
+Inoltre, avere un proxy può causare problemi. Possono essere introdotti in un ambiente problemi di prestazioni attraverso latenza e perdita di pacchetti. Problemi come questi comportano un'esperienza negativa in scenari Teams o Skype for Business audio e video, in cui i flussi in tempo reale sono essenziali.
   
 ## <a name="if-you-need-to-use-a-proxy-server"></a>Se devi usare un server proxy
 
-Alcune organizzazioni non hanno alcuna opzione per ignorare un proxy per il traffico di Teams o Skype for Business. Se questo è il tuo caso, dovrai tenere in considerazione i problemi di cui abbiamo parlato.
+Alcune organizzazioni non hanno alcuna opzione per ignorare un proxy per Teams o Skype for Business traffico. Se questo è il tuo caso, dovrai tenere in considerazione i problemi di cui abbiamo parlato.
   
 Microsoft inoltre consiglia:
   
@@ -51,7 +51,7 @@ Microsoft inoltre consiglia:
     
 - Consentire il traffico UDP
     
-- Seguendo gli altri suggerimenti nelle linee guida di rete: [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
+- Seguire gli altri suggerimenti nelle linee guida di rete: Preparare la rete [dell'organizzazione per Teams](prepare-network.md)
   
     
 Seguire queste indicazioni dovrebbe ridurre al minimo i potenziali problemi.

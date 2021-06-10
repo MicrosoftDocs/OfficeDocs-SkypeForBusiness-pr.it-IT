@@ -26,7 +26,7 @@ ms.locfileid: "51117624"
 
 Il consenso specifico delle risorse in Microsoft Teams consente ai proprietari del team di fornire il consenso alle app per accedere ai dati del team. Esempi di questo tipo di accesso includono la possibilità di leggere i messaggi dei canali, creare ed eliminare canali e creare e rimuovere schede dei canali.
 
-Gli amministratori possono controllare se i proprietari dei team dell'organizzazione possono fornire il consenso tramite le impostazioni configurate usando il modulo PowerShell di Azure Active Directory (Azure AD) o il portale di Azure e l'interfaccia di amministrazione di Microsoft Teams.  
+Gli amministratori possono controllare se i proprietari dei team dell'organizzazione possono fornire il consenso tramite le impostazioni configurate usando il modulo di PowerShell di Azure Active Directory (Azure AD) o il portale di Azure e l'interfaccia di amministrazione di Microsoft Teams.  
 
 ## <a name="set-whether-team-owners-can-give-consent-to-apps"></a>Specificare se i proprietari del team possono concedere il consenso alle app
 
@@ -43,8 +43,8 @@ Le due impostazioni seguenti determinano se i proprietari del team possono forni
 
 Questa impostazione controlla se gli utenti dell'organizzazione possono acconsentire alle app per loro conto. Per consentire ai proprietari del team di fornire il consenso, questa impostazione deve essere impostata su **Sì.** Per gestire questa impostazione, eseguire le operazioni seguenti:
 
-1. Nel portale di Azure passare a **Impostazioni utente delle applicazioni**  >  **enterprise.**
-2. In **Applicazioni aziendali** impostare Gli utenti possono **acconsentire** alle app che accedono ai dati aziendali per loro conto **su No** o **Sì.**
+1. Nel portale di Azure passare a Enterprise **applicazioni**  >  **utente**.
+2. In **Enterprise ,** impostare Gli utenti possono acconsentire alle **app** che accedono ai dati aziendali per loro conto su **No** o **Sì.**
 
 È anche possibile gestire questa impostazione usando PowerShell. Per altre informazioni, vedere [Configurare il contenuto degli utenti per le applicazioni.](/azure/active-directory/manage-apps/configure-user-consent#configure-user-consent-to-applications)
 
@@ -52,7 +52,7 @@ Questa impostazione controlla se gli utenti dell'organizzazione possono acconsen
 
 Questa impostazione controlla se gli utenti dell'organizzazione possono acconsentire alle app che accedono ai dati aziendali per i gruppi di cui sono proprietari. Questa impostazione deve essere abilitata per il consenso dei proprietari del team. Per la procedura per gestire questa impostazione usando PowerShell, vedere Configurare il consenso del proprietario del gruppo alle app che [accedono ai dati del gruppo.](/azure/active-directory/manage-apps/configure-user-consent#configure-group-owner-consent-to-apps-accessing-group-data)
 
-### <a name="settings-in-the-microsoft-teams-admin-center"></a>Impostazioni nell'interfaccia di amministrazione di Microsoft Teams
+### <a name="settings-in-the-microsoft-teams-admin-center"></a>Impostazioni nell'interfaccia Microsoft Teams di amministrazione
 
 Oltre alle impostazioni in Azure AD, le [](manage-apps.md) impostazioni [](manage-apps.md#allow-and-block-apps) [dell'app](manage-apps.md#manage-org-wide-app-settings) a livello di organizzazione nella pagina Gestisci app, se un'app è bloccata o consentita nella pagina Gestisci app e i criteri di autorizzazione [dell'app](teams-app-permission-policies.md) assegnati al proprietario del team determinano se un proprietario del team può fornire il consenso.
 
@@ -63,7 +63,7 @@ Oltre alle impostazioni in Azure AD, le [](manage-apps.md) impostazioni [](manag
 
 Questa impostazione dell'app a livello di organizzazione controlla se gli utenti dell'organizzazione possono usare app di terze parti. Questa impostazione deve essere attivata per consentire ai proprietari del team di fornire il consenso. Per gestire questa impostazione, eseguire le operazioni seguenti:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Gestisci app** di Teams e quindi fare clic su Impostazioni app a livello  >  di **organizzazione.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare Teams app Gestisci **app** e quindi fare clic su Impostazioni app a livello  >  di **organizzazione.**
 2. In **App di terze parti** disattivare o attivare Consenti app di terze **parti.**
 
     ![Screenshot dell'impostazione "Consenti app di terze parti in Teams"](media/resource-specific-consent-org-wide-setting.png)
@@ -83,7 +83,7 @@ Quando si blocca o si consente un'app nella pagina Gestisci [app,](manage-apps.m
 
 I proprietari del team possono fornire il consenso solo alle app che i criteri di autorizzazione dell'app gli consentono di eseguire. Per visualizzare e gestire i criteri di autorizzazione dell'app assegnati a un proprietario del team, eseguire le operazioni seguenti:
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Utenti**.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Utenti**.
 2. Fare doppio clic sul nome visualizzato del proprietario del team e quindi fare clic su **Criteri.**
 3. I criteri assegnati al proprietario del team sono elencati in **Criteri di autorizzazione app.**
     - Per assegnare un criterio diverso, fare clic **su Modifica** e quindi selezionare il criterio da assegnare.
@@ -97,5 +97,5 @@ Quando si carica un'app personalizzata (anche nota come sideload) che usa il con
 
 - [Autorizzazioni RSC disponibili](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
 - [Microsoft Graph](https://developer.microsoft.com/graph)
-- [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
+- [Gestire le app nell'interfaccia Microsoft Teams di amministrazione](manage-apps.md)
 - [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)

@@ -29,7 +29,7 @@ Usare questo script di PowerShell per esportare un elenco di responsabili e le r
 
 Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone.](../create-manager-directs-teams.md)
 
-Se non si ha una nuova versione di PowerShell e si ha bisogno di assistenza per iniziare, vedere [Panoramica di Azure PowerShell.](/powershell/azure/overview?view=azurermps-5.1.1)
+Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell.](/powershell/azure/overview?view=azurermps-5.1.1)
 
 
 ## <a name="export-managers-script"></a>Export-Managers script

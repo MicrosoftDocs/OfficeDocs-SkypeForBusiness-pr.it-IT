@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
-description: Scopri come cercare i numeri di conferenza telefonica con accesso esterno disponibili per le audioconferenze da Microsoft Teams.
+description: Informazioni su come cercare i numeri di conferenza telefonica con accesso esterno disponibili per le audioconferenze dall'interno Microsoft Teams.
 ms.openlocfilehash: 8d8b2f543b7e5a7acad5f8b91e8793420cf54517
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -31,11 +31,11 @@ ms.locfileid: "51117244"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri di audioconferenza in Microsoft Teams
 
-Quando si configurano le audioconferenze per gli utenti di Microsoft Teams, è possibile visualizzare i numeri di telefono disponibili per le audioconferenze. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
+Quando si configurano le audioconferenze per Microsoft Teams utenti, è possibile visualizzare i numeri di telefono disponibili per le audioconferenze. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
   
  **Stai cercando i prezzi?** Vedere [Prezzi per le audioconferenze](https://products.office.com/skype-for-business/audio-conferencing#Requirements).
   
-Se è disponibile un solo numero di telefono all'interno dell'organizzazione, questo verrà utilizzato come numero predefinito per tutti gli utenti. Quando sono disponibili più numeri di telefono, è possibile selezionare il numero di telefono predefinito per ogni utente. Questo numero predefinito verrà incluso negli inviti alle riunioni di Microsoft Teams.
+Se è disponibile un solo numero di telefono all'interno dell'organizzazione, questo verrà utilizzato come numero predefinito per tutti gli utenti. Quando sono disponibili più numeri di telefono, è possibile selezionare il numero di telefono predefinito per ogni utente. Questo numero predefinito verrà incluso negli inviti Microsoft Teams riunione.
   
 È possibile consultare [Impostare i numeri di telefono inclusi negli inviti](set-the-phone-numbers-included-on-invites-in-teams.md) per modificare il numero di telefono di accesso esterno per un singolo utente.
 
@@ -51,7 +51,7 @@ Se è disponibile un solo numero di telefono all'interno dell'organizzazione, qu
 
 - È anche possibile visualizzare la posizione e la lingua principale che verranno usate dall'operatore automatico di audioconferenza.
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

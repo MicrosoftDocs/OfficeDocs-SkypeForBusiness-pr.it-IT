@@ -1,5 +1,5 @@
 ---
-title: Disabilitazione dei numeri verde per utenti di Teams specifici
+title: Disabilitazione dei numeri verde per utenti Teams utenti
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -28,7 +28,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51096346"
 ---
-# <a name="disabling-toll-free-numbers-for-specific-teams-users"></a>Disabilitazione dei numeri verde per utenti di Teams specifici
+# <a name="disabling-toll-free-numbers-for-specific-teams-users"></a>Disabilitazione dei numeri verde per utenti Teams utenti
 
 Se la tua organizzazione dispone di numeri gratuiti nel relativo ponte per audioconferenze Microsoft, puoi consentire o impedire il loro utilizzo in riunioni di organizzatori specifici.  
 
@@ -47,7 +47,7 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
 
 ## <a name="disabling-toll-free-numbers-for-specific-users"></a>Disattivazione dei numeri verdi per utenti specifici 
 
-**Nell'interfaccia di amministrazione di Microsoft Teams:**
+**Nell'Microsoft Teams di amministrazione:**
 
 1. Nel riquadro di spostamento sinistro fare clic **su Utenti** e quindi selezionare l'utente nell'elenco degli utenti disponibili.
 
@@ -63,4 +63,4 @@ Quando i numeri gratuiti sono disabilitati per un determinato organizzatore:
  
 **Utilizzo di PowerShell**  
 
-Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)
+Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)

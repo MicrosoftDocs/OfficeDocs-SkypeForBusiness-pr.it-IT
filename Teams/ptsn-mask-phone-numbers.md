@@ -1,5 +1,5 @@
 ---
-title: Mascherare i numeri di telefono nelle riunioni di Microsoft Teams
+title: Mascherare i numeri di telefono nelle Microsoft Teams riunioni
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -17,7 +17,7 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come mascherare i numeri di telefono nelle riunioni di Microsoft Teams
+description: Informazioni su come mascherare i numeri di telefono nelle Microsoft Teams riunioni
 ms.openlocfilehash: bc3325805db63f86937a27d63cfc08ab0de84006
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -25,17 +25,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51117714"
 ---
-# <a name="mask-phone-numbers-in-microsoft-teams-meetings"></a>Mascherare i numeri di telefono nelle riunioni di Microsoft Teams
+# <a name="mask-phone-numbers-in-microsoft-teams-meetings"></a>Mascherare i numeri di telefono nelle Microsoft Teams riunioni
 
-Per una maggior privacy, i numeri di telefono dei partecipanti che a una riunione di Teams con l'audioconferenza vengono visualizzati completamente ai partecipanti interni. I numeri vengono mascherati dai partecipanti esterni all'organizzazione. Questa impostazione è l'impostazione predefinita per tutte le organizzazioni. Il numero mascherato viene visualizzato come illustrato nell'immagine seguente:
+Per una maggior privacy, i numeri di telefono dei partecipanti che a una riunione Teams tramite audioconferenza vengono visualizzati completamente ai partecipanti interni. I numeri vengono mascherati dai partecipanti esterni all'organizzazione. Questa impostazione è l'impostazione predefinita per tutte le organizzazioni. Il numero mascherato viene visualizzato come illustrato nell'immagine seguente:
 
 ![esempio di numero di telefono mascherato](media/hiddenPhoneNum.png)
 
 Per specifici casi d'uso del settore, gli amministratori possono scegliere come visualizzare i numeri di telefono dei partecipanti ai servizi di audioconferenza nelle riunioni organizzate nel tenant. Gli amministratori possono scegliere tra tre opzioni:
 
-- I numeri di telefono sono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
-- I numeri di telefono sono mascherati da tutti i partecipanti alla riunione, ad eccezione dell'organizzatore.
-- I numeri di telefono vengono smascherati, quindi sono visibili a tutti i partecipanti alla riunione.
+- Telefono numeri sono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
+- Telefono numeri sono mascherati da tutti i partecipanti alla riunione, ad eccezione dell'organizzatore.
+- Telefono i numeri vengono smascherati, che li rende visibili a tutti i partecipanti alla riunione.
 
 Questa impostazione viene applicata a tutte le superfici della riunione in cui sono esposti i numeri di telefono.
 

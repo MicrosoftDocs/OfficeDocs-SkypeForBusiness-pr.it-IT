@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Scegliere gli early adopter per la fase di esperimento dell'adozione di Teams, quindi raccogliere feedback per il progetto.
+description: Scegliere i primi utenti per la fase di sperimentazione della Teams e quindi raccogliere feedback per il progetto.
 f1.keywords:
 - CSH
 ms.custom:
@@ -30,23 +30,23 @@ ms.locfileid: "49821076"
 ---
 # <a name="onboard-early-adopters-and-gather-feedback-for-microsoft-teams"></a>Onboard early adopters and gather feedback for Microsoft Teams
 
-Torna all'elenco di dipendenti che hanno espresso interesse nel tuo programma early adopter. Decidi quale di queste persone dovrà partecipare ai tuoi esperimenti iniziali con Teams. Il problema potrebbe essere solo una parte delle persone interessate o solo una parte. Anche se non vengono selezionati per questi progetti iniziali, continuare a comunicare con loro in modo che rimangano interessati e si vogliano partecipare in futuro. Fanno parte del processo di onboarding per i progetti selezionati in base alle discussioni con gli stakeholder dell'azienda, con il team tecnico e con l'esercizio di priorità illustrato in precedenza. 
+Tornare all'elenco dei dipendenti che hanno espresso interesse per il programma di adozione iniziale. Decidere quali di queste persone devono partecipare agli esperimenti iniziali con Teams. Può trattarsi di una parte o di tutte le persone interessate. Anche se non li si seleziona per questi progetti iniziali, continuare a comunicare con loro in modo che rimangano interessati e siano disposti a partecipare al futuro. Fanno parte del processo di onboarding per i progetti selezionati in base alle discussioni con gli stakeholder aziendali, il team tecnico e l'esercizio di assegnazione delle priorità illustrato in precedenza. 
 
-Completare la procedura seguente con questi early adopter:
+Completare i passaggi seguenti con questi primi utenti:
 
-1. Invia un'e-mail di invito per invitarli nella community,
-2. Ospita una chiamata di avvio per condividere con loro gli obiettivi e i risultati del programma early adopter,
-3. Assicurarsi l'accesso al canale di feedback del team di campioni del lavoro in team e a qualsiasi altro strumento di social networking interno. 
+1. Inviare un messaggio di posta elettronica di invito per invitarli nella community,
+2. Ospitare una chiamata di avvio per condividere con loro gli obiettivi e i risultati del programma early adopter,
+3. Assicurati di accedere al canale di feedback del tuo team di campioni del lavoro di squadra e a qualsiasi altro strumento di social networking interno che potresti usare. 
 4. È consigliabile creare sondaggi periodici da completare per raccogliere informazioni mirate.
 
 ## <a name="gather-feedback"></a>Raccogliere il feedback
 
-Usare i componenti di Microsoft 365 o Office 365 per raccogliere feedback sul progetto.
+Usare i componenti di Microsoft 365 o Office 365 per raccogliere feedback per il progetto.
   
-![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png) Decisione: se l'organizzazione ha già un investimento in una rete Yammer, è possibile usarlo come forum di feedback per il programma di early adopter. In caso contrario, e il programma per gli early adopter ha meno di 5.000 membri, crea un team in Teams per raccogliere feedback e fornire formazione.
+![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png) Decisione: se l'organizzazione ha già un investimento in una rete Yammer, è possibile usarla come forum di feedback per il programma di adozione iniziale. In caso contrario, e il programma di adozione iniziale ha meno di 5.000 membri, creare un team in Teams per raccogliere feedback e fornire formazione.
   
 > [!Note]
-> Alcune organizzazioni uniranno i canali per il feedback degli early adopter nel team di campioni del programma del lavoro in team. Si tratta di un buon approccio perché molti early adopter potrebbero diventare campioni in futuro e costruire una community più solida. 
+> Alcune organizzazioni uniranno i canali per il feedback dei primi utenti nel team dei campioni del lavoro di squadra. Si tratta di un buon approccio perché molti primi utenti potrebbero diventare campioni in futuro e costruire una community più forte. 
 
 
-![Icona che rappresenta il passaggio ](media/teams-adoption-next-icon.png) successivo: [supporto per l'onboarding.](teams-adoption-onboard-support.md)
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Supporto onboard](teams-adoption-onboard-support.md).

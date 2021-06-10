@@ -1,5 +1,5 @@
 ---
-title: Pianificare l'esperienza degli utenti di Microsoft Teams
+title: Pianificare l'esperienza degli utenti Microsoft Teams
 author: rmw2890
 ms.author: Rowille
 manager: serdars
@@ -9,7 +9,7 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
-description: Scegliere le app client di Teams, pianificare la qualità degli endpoint, ottenere consigli per la distribuzione Wi-Fi endpoint e la scelta di dispositivi audio.
+description: Scegliere Teams client, pianificare la qualità dell'endpoint, ottenere consigli per la distribuzione Wi-Fi endpoint e la scelta di dispositivi audio.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -31,7 +31,7 @@ Questo articolo offre una panoramica dei requisiti per identificare correttament
 
 ## <a name="client-deployment"></a>Distribuzione client
 
-Microsoft Teams ha clienti disponibili per web, desktop (Windows e Mac) e per dispositivi mobili (Android e iOS). Per altre informazioni sulla modalità di installazione dei client desktop (Windows e Mac) e per dispositivi mobili, vedere [Ottenere client per Microsoft Teams](./get-clients.md).
+Microsoft Teams client disponibili per Web, desktop (Windows e Mac) e per dispositivi mobili (Android e iOS). Per altre informazioni sulla modalità di installazione del desktop (Windows Mac) e dei client mobili, vedere Ottenere [client per Microsoft Teams](./get-clients.md).
 
 ## <a name="client-updates"></a>Aggiornamenti del client
 
@@ -45,27 +45,27 @@ Come si può vedere dal diagramma seguente, gli endpoint sono un importante elem
 
 ![Diagramma che descrive i tre componenti della qualità](media/plan-my-users-experience-image1.png "Diagramma che descrive i tre componenti della qualità e il modo in cui la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
 
-Gli endpoint di Teams possono essere eseguiti su molti dispositivi, tra cui PC, Mac, tablet e dispositivi mobili. Parte dell'esperienza non riguarda solo il dispositivo, ma anche il modo in cui un utente si connette al dispositivo, ad esempio usando il microfono/altoparlante incorporato del dispositivo, auricolari o un auricolare ottimizzato. L'uso di un auricolare ottimizzato può arricchire l'esperienza utente generale.
+Teams endpoint possono essere eseguiti su molti dispositivi, tra cui PC, Mac, tablet e dispositivi mobili. Parte dell'esperienza non riguarda solo il dispositivo, ma anche il modo in cui un utente si connette al dispositivo, ad esempio usando il microfono/altoparlante incorporato del dispositivo, auricolari o un auricolare ottimizzato. L'uso di un auricolare ottimizzato può arricchire l'esperienza utente generale.
 
 Le indicazioni seguenti sulla pianificazione degli endpoint consentono di garantire all'organizzazione un'esperienza di onboarding efficace con Teams.
 
 ## <a name="endpoint-capability"></a>Funzionalità dell'endpoint
 
-La prima parte della pianificazione è garantire che tutti i PC e gli altri dispositivi dell'organizzazione possano eseguire Teams. Questo implica non solo la ricerca dei requisiti hardware, ma anche la comprensione delle altre attività del PC in background. Molte organizzazioni eseguono altri software, tra cui sistemi di rilevamento delle intrusioni e software antimalware, che possono influire sulle prestazioni di base di un dispositivo.
+La prima parte della pianificazione è garantire che tutti i PC e gli altri dispositivi dell'organizzazione possano essere eseguiti Teams. Questo implica non solo la ricerca dei requisiti hardware, ma anche la comprensione delle altre attività del PC in background. Molte organizzazioni eseguono altri software, tra cui sistemi di rilevamento delle intrusioni e software antimalware, che possono influire sulle prestazioni di base di un dispositivo.
 
-Per informazioni sui requisiti software per i client di Teams in ogni piattaforma (Web, desktop e dispositivi mobili), vedere [Ottenere client per Microsoft Teams](./get-clients.md).
+Per informazioni sui requisiti software per Teams client su ogni piattaforma (Web, desktop e dispositivi mobili), vedere Ottenere client [per Microsoft Teams](./get-clients.md).
 
 ## <a name="endpoint-firewalls"></a>Firewall endpoint
 
 I firewall lato client possono avere un impatto significativo sull'esperienza utente.
-I firewall sul lato client possono influire sulla qualità delle chiamate, oltre a impedire che venga stabilita una chiamata. Configurare le esclusioni appropriate nel firewall client in base alle informazioni contenute negli URL e negli intervalli di indirizzi IP di [Microsoft 365 o Office 365.](/microsoft-365/enterprise/urls-and-ip-address-ranges) Il fornitore di terze parti avrà indicazioni specifiche su come creare le esclusioni.
+I firewall sul lato client possono influire sulla qualità delle chiamate, oltre a impedire che venga stabilita una chiamata. Configurare le esclusioni appropriate nel firewall client in base alle informazioni Microsoft 365 o Office 365 URL e [intervalli di](/microsoft-365/enterprise/urls-and-ip-address-ranges)indirizzi IP. Il fornitore di terze parti avrà indicazioni specifiche su come creare le esclusioni.
 
 >[!NOTE]
-> Microsoft Teams aggiornerà automaticamente Windows Firewall con una configurazione del firewall appropriata.
+> Microsoft Teams aggiornerà automaticamente il firewall Windows firewall con una configurazione del firewall appropriata.
 
 ## <a name="wi-fi-recommendations-for-endpoints"></a>Wi-Fi per gli endpoint
 
-È necessario pianificare in modo significativo la distribuzione di una rete Wi-Fi ottimizzata per supportare carichi di lavoro in tempo reale in Microsoft Teams. Le sezioni seguenti forniscono alcune indicazioni generali che consentono di evitare insidie comuni durante la pianificazione degli endpoint.
+È necessario pianificare in modo significativo la distribuzione di una rete di Wi-Fi ottimizzata per supportare i carichi di lavoro in tempo reale in Microsoft Teams. Le sezioni seguenti forniscono alcune indicazioni generali che consentono di evitare insidie comuni durante la pianificazione degli endpoint.
 
 ### <a name="wi-fi-drivers"></a>Wi-Fi driver
 
@@ -87,11 +87,11 @@ Alcune organizzazioni preferiscono evitare di Wi-Fi del tutto. A volte queste in
 
 ### <a name="80211-power-save-protocol"></a>Protocollo Power Save 802.11
 
-Se l'organizzazione usa punti di accesso wireless o router che non supportano il protocollo Power Save 802.11, è possibile che si verifichino chiamate perse o scarsa qualità delle chiamate in Microsoft Teams in esecuzione su dispositivi Windows. Se non è possibile aggiornare il punto di accesso wireless o i router, è consigliabile aggiornare le impostazioni di Windows Power Plan nei dispositivi che eseguono l'alimentazione a batteria. Ulteriori informazioni dettagliate e indicazioni sulla configurazione sono disponibili nell'articolo del [supporto tecnico seguente.](https://support.microsoft.com/help/928152/you-may-experience-connectivity-issues-or-performance-issues-when-you)
+Se l'organizzazione usa punti di accesso wireless o router che non supportano il protocollo Power Save 802.11, è possibile che si verifichino chiamate perse o scarsa qualità delle chiamate in Microsoft Teams in esecuzione su Windows dispositivi. Se non è possibile aggiornare il punto di accesso wireless o i router, è consigliabile aggiornare le impostazioni di Power Plan Windows nei dispositivi che eseguono l'alimentazione a batteria. Ulteriori informazioni dettagliate e indicazioni sulla configurazione sono disponibili nell'articolo del [supporto tecnico seguente.](https://support.microsoft.com/help/928152/you-may-experience-connectivity-issues-or-performance-issues-when-you)
 
 <table>
-<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Quali client di Teams verranno distribuiti nell'organizzazione?</li><li>Come si distribuiranno inizialmente i client di Teams agli utenti?</li><li>Chi è responsabile della valutazione di endpoint e dispositivi per verificare che soddisfino i requisiti di Teams per un'esperienza di qualità?</li></ul></td></tr>
-<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Documentare il processo che verrà seguito per distribuire i client di Teams.</li><li>Valutare endpoint e dispositivi ed eseguire e correggere i problemi necessari.</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Quali Teams client verranno distribuiti nell'organizzazione?</li><li>Come si distribuiscono inizialmente Teams client agli utenti?</li><li>Who è responsabile della valutazione degli endpoint e dei dispositivi per verificare che soddisfino Teams requisiti di qualità?</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Documentare il processo che verrà seguito per distribuire Teams client.</li><li>Valutare endpoint e dispositivi ed eseguire e correggere i problemi necessari.</li></ul></td></tr>
 </table>
 
 <!--ENDOFSECTION-->
@@ -108,7 +108,7 @@ Nell'ambito del processo di pianificazione, è necessario completare un esercizi
 Dopo aver selezionato i dispositivi, includerli nel piano di test pilota per la convalida finale. Sfruttare i sondaggi durante il progetto pilota per raccogliere feedback per assicurarsi che la strategia del dispositivo sia ottimale.
 
 > [!NOTE]
-> Al momento, è consigliabile usare dispositivi audio certificati tramite il programma di certificazione Skype for Business. Per trovare i dispositivi certificati in questo programma, vedere i dispositivi [Microsoft Teams](https://products.office.com/microsoft-teams/across-devices/devices) e i dispositivi audio e [video USB.](/SkypeForBusiness/certification/devices-usb-devices)
+> Al momento, è consigliabile usare dispositivi audio certificati tramite il programma Skype for Business certificazione. Per trovare i dispositivi certificati in questo programma, vedere i [Microsoft Teams](https://products.office.com/microsoft-teams/across-devices/devices) usb [e i dispositivi audio e video USB.](/SkypeForBusiness/certification/devices-usb-devices)
 
 
 

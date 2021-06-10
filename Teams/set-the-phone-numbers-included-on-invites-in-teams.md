@@ -21,7 +21,7 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Seguire questa procedura per creare un numero di telefono predefinito per consentire ai chiamanti di partecipare a una riunione di Microsoft Teams.
+description: Seguire questa procedura per creare un numero di telefono predefinito per consentire ai chiamanti di partecipare a una Microsoft Teams riunione.
 ms.openlocfilehash: 476075ccf5e261695564b78ec084605af9e6898c
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -31,7 +31,7 @@ ms.locfileid: "51117174"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
 
-Le audioconferenze in Microsoft 365 e Office 365 consentono agli utenti dell'organizzazione di creare riunioni di Microsoft Teams e quindi di accedere a tali riunioni tramite telefono.
+L'audioconferenza in Microsoft 365 e Office 365 consente agli utenti dell'organizzazione di creare riunioni Microsoft Teams e quindi consentire agli utenti di accedere a tali riunioni usando un telefono.
   
 Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
   
@@ -55,11 +55,11 @@ Dopo aver abilitato l'utente per il servizio di audioconferenza, i numeri di tel
 
 Per apportare queste modifiche, è necessario essere un amministratore del servizio Teams. Vedere [Usare i ruoli di amministratore di Teams per gestire Teams](./using-admin-roles.md) per informazioni su come ottenere ruoli e autorizzazioni di amministratore.
 
-1. Accedere all'interfaccia di amministrazione di Microsoft Teams.
+1. Accedere all'interfaccia Microsoft Teams di amministrazione.
 
 2. Nel riquadro di spostamento sinistro fare clic su **Utenti.**
 
-    ![Mostra la selezione di utenti nell'interfaccia di amministrazione di Microsoft Teams](media/Admin-users.png)
+    ![Mostra la selezione di utenti nell'Microsoft Teams di amministrazione](media/Admin-users.png)
 
 3. Fare clic sul nome utente nell'elenco degli utenti disponibili.
 
@@ -70,7 +70,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 5. Usare i campi  **Numero a pedaggio** o Numero verde per immettere i numeri per l'utente.
 
 > [!IMPORTANT]
-> Quando si modificano le impostazioni di audioconferenza di un utente, le riunioni ricorrenti e future di Microsoft Teams devono essere aggiornate e inviate ai partecipanti.
+> Quando si modificano le impostazioni di audioconferenza di un utente, le riunioni ricorrenti e future Microsoft Teams devono essere aggiornate e inviate ai partecipanti.
 
 ## <a name="want-to-use-windows-powershell"></a>Si vuole usare Windows PowerShell
 

@@ -1,5 +1,5 @@
 ---
-title: Supporto a bordo per Microsoft Teams
+title: Supporto onboard per Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 localization_priority: Normal
 search.appverid: MET150
-description: Usare risorse di formazione online per portare il personale di supporto a bordo per la fase di sperimentazione dell'adozione di Teams.
+description: Usare risorse di formazione online per portare il personale di supporto a bordo per la fase di sperimentazione della Teams adozione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -28,13 +28,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51116889"
 ---
-# <a name="onboard-support-for-microsoft-teams"></a>Supporto a bordo per Microsoft Teams
+# <a name="onboard-support-for-microsoft-teams"></a>Supporto onboard per Microsoft Teams
 
-Per assicurarsi che i team di primi utenti e campioni avranno il supporto appropriato quando inizieranno a usare Teams, incontra il personale di supporto e rivedi le funzionalità di Teams. I membri chiave dell'organizzazione di supporto potrebbero voler partecipare al programma di adozione iniziale. Incoraggiare l'uso di Teams nei propri scenari. È possibile eseguire l'onboarding di base del prodotto usando le risorse di formazione online.  
+Per assicurarsi che i team di primi utenti e campioni avranno il supporto appropriato quando inizieranno a usare Teams, incontrare il personale di supporto ed esaminare le funzionalità di Teams. I membri chiave dell'organizzazione di supporto potrebbero voler partecipare al programma di adozione iniziale. Incoraggiare l'uso di Teams nei propri scenari. È possibile eseguire l'onboarding di base del prodotto usando le risorse di formazione online.  
 
 - [Fondazioni - Componenti di base di Microsoft Teams](https://youtu.be/V6B4KraD-FM)
-- [Risoluzione dei problemi di Teams](https://youtu.be/0KNh9KNpXcA)
+- [Risoluzione dei Teams](https://youtu.be/0KNh9KNpXcA)
 - [Problemi noti e risoluzione dei problemi](/MicrosoftTeams/troubleshoot/teams-welcome)
 - [Formazione su Microsoft Teams](./training-microsoft-teams-landing-page.md)
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: Fase 3 dell'adozione [di Microsoft Teams: Scala](teams-adoption-phase3-enable.md).
+![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: Microsoft Teams [fase di adozione 3: Scala](teams-adoption-phase3-enable.md).

@@ -123,19 +123,19 @@ Per indicazioni tecniche su come implementare queste impostazioni, vedere:
 - [Gestione dei diritti](/azure/active-directory/governance/entitlement-management-overview)
 - [Recensioni di Access](/azure/active-directory/governance/access-reviews-overview)
 
-## <a name="teams-feature-management"></a>Gestione delle funzionalità di Teams
+## <a name="teams-feature-management"></a>Teams delle funzionalità
 
-Un altro aspetto importante della governance e della gestione del ciclo di vita per Teams è la possibilità di controllare le funzionalità a cui gli utenti avranno accesso. È possibile gestire le funzionalità di messaggistica, riunione e chiamata a livello di organizzazione di Microsoft 365 o Office 365 o per utente.
+Un altro aspetto importante della governance e della gestione del ciclo di Teams è la possibilità di controllare le caratteristiche a cui gli utenti avranno accesso. È possibile gestire le funzionalità di messaggistica, riunione e chiamata, a livello Microsoft 365 o Office 365 dell'organizzazione o per utente.
 
 
 |-        |-        |
 |---------|---------|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede la limitazione delle funzionalità di Teams per l'intero tenant?</li><li>L'organizzazione richiede la limitazione delle funzionalità di Teams per utenti specifici?</li></ul>|
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per limitare le funzionalità di Teams a livello di tenant e utente.</li><li>Pianificare l'implementazione di requisiti specifici nell'ambito dell'implementazione di Teams.</li><li>Comunicare e pubblicare i criteri per informare gli utenti di Teams del comportamento previsto.</li></ul>|
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede la limitazione delle Teams per l'intero tenant?</li><li>L'organizzazione richiede la limitazione delle Teams per utenti specifici?</li></ul>|
+| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per limitare Teams caratteristiche a livello di tenant e utente.</li><li>Pianificare l'implementazione di requisiti specifici nell'ambito dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento previsto.</li></ul>|
 
-### <a name="teams-feature-management-focus-areas"></a>Aree di interesse per la gestione delle funzionalità di Teams
+### <a name="teams-feature-management-focus-areas"></a>Teams focus sulla gestione delle funzionalità
 
-Teams offre funzionalità granulari per controllare le funzionalità di messaggistica, riunione, chiamate ed eventi live e altro ancora, tramite criteri. È possibile applicare criteri diversi a tutti gli utenti per impostazione predefinita o per utente, come richiesto dall'organizzazione. 
+Teams funzionalità granulari per il controllo delle funzionalità di messaggistica, riunione, chiamate ed eventi live e altro ancora, tramite i criteri. È possibile applicare criteri diversi a tutti gli utenti per impostazione predefinita o per utente, come richiesto dall'organizzazione. 
 
 Per elenchi dettagliati di tutte le impostazioni, incluse indicazioni tecniche su come implementarle per l'organizzazione, vedere gli articoli seguenti:
 
@@ -144,22 +144,22 @@ Per elenchi dettagliati di tutte le impostazioni, incluse indicazioni tecniche s
 - [Canali privati in Microsoft Teams](private-channels.md)
 - [Gestire i criteri di riunione in Teams](meeting-policies-in-teams.md)
 - [Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md)
-- [Gestire le app nell'interfaccia di amministrazione di Microsoft Teams](manage-apps.md)
+- [Gestire le app nell'interfaccia Microsoft Teams di amministrazione](manage-apps.md)
 
-Inoltre, è possibile configurare la moderazione per un canale e fornire funzionalità di moderatore a determinati utenti in modo che possano controllare chi può creare post del canale e rispondere. Per [altre informazioni, vedere Configurare e gestire la moderazione dei](manage-channel-moderation-in-teams.md) canali in Microsoft Teams.
+Inoltre, è possibile configurare la moderazione per un canale e fornire funzionalità di moderatore a determinati utenti in modo che possano controllare chi può creare post del canale e rispondere. Per altre informazioni, vedere Configurare e gestire [la moderazione](manage-channel-moderation-in-teams.md) Microsoft Teams canale.
 
 ## <a name="security-and-compliance"></a>Sicurezza e conformità
 
 Teams è basato sulle funzionalità avanzate di sicurezza e conformità di Microsoft 365 e Office 365 e supporta il controllo e la creazione di report, la ricerca di contenuto di conformità, l'individuazione elettronica, il blocco legale e i criteri di conservazione.
 
 > [!Important]
-> Se l'organizzazione ha requisiti di conformità e sicurezza, esaminare il contenuto approfondito fornito su questo argomento nell'articolo Panoramica della sicurezza e della conformità [in Microsoft Teams.](security-compliance-overview.md)
+> Se l'organizzazione ha requisiti di conformità e sicurezza, esaminare il contenuto approfondito fornito su questo argomento nell'articolo Panoramica della sicurezza e della conformità [in Microsoft Teams](security-compliance-overview.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Guida introduttiva sulla governance per Teams](teams-adoption-governance-quick-start.md)
 
-[Guida alle licenze di Microsoft 365 per la conformità & sicurezza](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
+[Microsoft 365 sulle licenze per la conformità & sicurezza](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)
 
 <!--
 ## Teams lifecycle management

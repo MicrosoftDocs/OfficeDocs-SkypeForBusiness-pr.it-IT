@@ -72,7 +72,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
    
- Se vuoi ottenere numeri a numero verde e a numero verde per audioconferenze, operatore automatico e code di chiamata, vedi Ottenere i numeri di servizio per Skype for Business e [Microsoft Teams.](../getting-service-phone-numbers.md)
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenza, operatore automatico e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

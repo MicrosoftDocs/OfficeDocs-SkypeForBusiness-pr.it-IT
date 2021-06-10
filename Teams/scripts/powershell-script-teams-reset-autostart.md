@@ -1,5 +1,5 @@
 ---
-title: Esempio di script di PowerShell - Reimpostare l'impostazione di avvio automatico in Teams
+title: "Esempio di script di PowerShell: reimpostare l'impostazione di avvio automatico in Teams"
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: article
 ms.reviewer: amitsri
 ms.service: msteams
 audience: admin
-description: Usare questo script di PowerShell per reimpostare l'impostazione di avvio automatico in Teams per ogni utente.
+description: Usare questo script di PowerShell per reimpostare l'impostazione di avvio automatico in Teams in base all'utente.
 f1.keywords:
 - NOCSH
 localization_priority: Normal
@@ -23,13 +23,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51117264"
 ---
-# <a name="powershell-script-sample---reset-the-autostart-setting-in-teams"></a>Esempio di script di PowerShell - Reimpostare l'impostazione di avvio automatico in Teams
+# <a name="powershell-script-sample---reset-the-autostart-setting-in-teams"></a>Esempio di script di PowerShell: reimpostare l'impostazione di avvio automatico in Teams
 
-Usare questo script per reimpostare l'impostazione di avvio automatico di Teams per ogni utente. Sono inclusi tutti i valori impostati dall'utente o dall'app Teams. Per impostazione predefinita, Teams viene avviato automaticamente quando un utente accede al computer dopo l'installazione.
+Usare questo script per reimpostare l'Teams di avvio automatico su base per utente. Sono inclusi tutti i valori impostati dall'utente o dall Teams app. Per impostazione predefinita, Teams viene avviato automaticamente quando un utente accede al computer dopo l'installazione.
 
-Se Teams è già stato distribuito e si vuole impostare l'impostazione Impedisci l'avvio automatico di [Microsoft Teams](../msi-deployment.md#use-group-policy-recommended) dopo l'installazione di Criteri di gruppo per disabilitare l'avvio automatico di Teams, è necessario prima impostare l'impostazione di Criteri di gruppo sul valore desiderato e quindi eseguire lo script.
+Se è già stata distribuita Teams e si vuole impostare l'impostazione Impedisci l'avvio automatico di [Microsoft Teams](../msi-deployment.md#use-group-policy-recommended) dopo l'installazione di Criteri di gruppo per disabilitare l'avvio automatico di Teams, è necessario prima impostare l'impostazione di Criteri di gruppo sul valore desiderato e quindi eseguire lo script.
 
-Dopo l'avvio di Teams per un utente, le impostazioni di avvio automatico non possono essere disabilitate tramite Criteri di gruppo.
+Dopo Teams per un utente, le impostazioni di avvio automatico non possono essere disabilitate tramite Criteri di gruppo.
 
 ## <a name="sample-script"></a>Script di esempio
 
@@ -150,4 +150,4 @@ if($null -eq $teamsProc) {
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Installare Teams con MSI](../msi-deployment.md)
-- [Distribuire Teams con Le app di Microsoft 365 per le aziende](/deployoffice/teams-install)
+- [Distribuire Teams con Microsoft 365 Apps for enterprise](/deployoffice/teams-install)

@@ -1,5 +1,5 @@
 ---
-title: Gestire i canali privati in Microsoft Teams con l'API Graph
+title: Gestire i canali privati in Microsoft Teams con Graph API
 author: MikePlumleyMSFT
 ms.author: mikeplum
 manager: serdars
@@ -17,7 +17,7 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come gestire i canali privati nell'organizzazione usando l'API Graph.
+description: Informazioni su come gestire i canali privati nell'organizzazione usando Graph API.
 ms.openlocfilehash: e97d808bd9f544ef611b0b5e4b0456d302b4013d
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "51117744"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
-Ecco le indicazioni necessarie per gestire l'uso dell'API Graph per gestire i canali [privati di Teams](./private-channels.md) nell'organizzazione.
+Ecco le indicazioni necessarie per gestire l'uso dell'API Graph per gestire Teams [canali privati](./private-channels.md) dell'organizzazione.
 
 ## <a name="set-whether-team-members-can-create-private-channels"></a>Specificare se i membri del team possono creare canali privati
 
@@ -70,7 +70,7 @@ GET /teams/{id}/channels/{id}/messages/{id}/replies/{id}
 
 Sia che si stia cercando di eseguire l'eDiscovery o la conservazione legale su file in un canale privato, oppure si stia cercando di creare un'app personalizzata che metta i file in canali privati specifici, è necessario un modo per effettuare una query delle raccolte siti univoci di SharePoint create per ciascuno canale privato.
 
-Gli amministratori possono usare i comandi delle API Graph per eseguire query su questi URL.
+Gli amministratori possono usare i comandi api Graph per eseguire query su questi URL.
 
 È possibile provare questi comandi con [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -138,7 +138,7 @@ Gli amministratori possono usare i comandi delle API Graph per eseguire query su
 
 È possibile elencare i proprietari e i membri di un canale privato per decidere se sia necessario alzare di livello determinati membri del canale privato e impostarli come proprietari. Questo può verificarsi se sono presenti proprietari di canali privati che hanno lasciato l'organizzazione e il canale privato richiede l'assistenza da parte dell'amministratore per rivendicarne la proprietà.
 
-Gli amministratori possono usare l'API Graph per eseguire queste azioni.
+L'amministratore può usare l'API Graph per eseguire queste azioni.
 
 È possibile provare questi comandi con [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 

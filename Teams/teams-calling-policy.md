@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: jastark
 audience: admin
 search.appverid: MET150
-description: Informazioni su come creare, modificare e aggiungere utenti a criteri di chiamata personalizzati in Microsoft Teams, oltre a varie impostazioni dei criteri di chiamata.
+description: Informazioni su come creare, modificare e aggiungere utenti ai criteri di chiamata personalizzati in Microsoft Teams, oltre a varie impostazioni dei criteri di chiamata.
 localization_priority: Normal
 ms.collection:
 - M365-voice
@@ -38,7 +38,7 @@ In Microsoft Teams, i criteri di chiamata controllano quali funzionalità di chi
 
 Seguire questa procedura per creare un criterio di chiamata personalizzato.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Criteri **per le chiamate**  >  **vocali.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a Criteri  >  **per le chiamate vocali.**
 2. Selezionare **Aggiungi**.
 3. Attivare o disattivare le funzionalità da usare nei criteri di chiamata.
 4. Per controllare se gli utenti possono instradare le chiamate in ingresso alla segreteria telefonica, selezionare **Abilitato** o **Controllato dall'utente.** Per impedire l'instradamento alla segreteria telefonica, selezionare **Disabilitato.**
@@ -48,7 +48,7 @@ Seguire questa procedura per creare un criterio di chiamata personalizzato.
 
 Seguire questa procedura per modificare un criterio di chiamata esistente.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams selezionare **Criteri per le chiamate**  >  **vocali.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare **Criteri per le chiamate**  >  **vocali.**
 2. Fare clic accanto al criterio da modificare e quindi selezionare **Modifica.**
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
@@ -98,7 +98,7 @@ Occupato (Opzioni occupato) è una nuova impostazione che consente di configurar
 
 ### <a name="allow-web-pstn-calling"></a>Consenti chiamate PSTN Web
 
-Questa impostazione consente agli utenti di chiamare numeri PSTN usando il client Web di Teams.
+Questa impostazione consente agli utenti di chiamare i numeri PSTN usando Teams web client.
 
 ### <a name="allow-music-on-hold"></a>Consentire la musica in attesa
 

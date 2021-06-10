@@ -35,11 +35,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono di servizio o utenti non elencati nell'interfaccia di amministrazione di Microsoft Teams. <br/> |In Irlanda non è possibile ottenere numeri di telefono per l'organizzazione tramite l'interfaccia di amministrazione di Microsoft Teams. Devi inviare una richiesta di nuovo numero di telefono. <br/><br/>Scarica questo modulo.<br/>[Nuova richiesta di numero di telefono per l'Irlanda (v.5.0) (en-us).](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-ireland-(v.5.0)-(en-us).pdf?raw=true) <br/><br/> Compilala e [inviala a Microsoft.](mailto:ptneu@microsoft.com)  <br/> |
-|Trasferire i numeri di telefono a Microsoft.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA, Letter of Authorization) per l'Irlanda (tutti i numeri) (v.6.0) (en-us)](https://download.microsoft.com/download/d/a/f/daf4edb9-69c7-4d3d-a483-e0c4427abb50/letter-of-authorization-(loa)-for-ireland-(all-numbers)-(v.6.0)-(en-us).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
-|Pubblicare o annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
+|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione. <br/> |In Irlanda, non è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Devi inviare una richiesta di nuovo numero di telefono. <br/><br/>Scarica questo modulo.<br/>[Nuova richiesta di numero di telefono per l'Irlanda (v.5.0) (it-IT)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-ireland-(v.5.0)-(en-us).pdf?raw=true). <br/><br/> Compilalo e [invialo a Noi](mailto:ptneu@microsoft.com).  <br/> |
+|Ricevi i numeri di telefono trasferiti a Noi.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per l'Irlanda (tutti i numeri) (v.6.0) (en-us)](https://download.microsoft.com/download/d/a/f/daf4edb9-69c7-4d3d-a483-e0c4427abb50/letter-of-authorization-(loa)-for-ireland-(all-numbers)-(v.6.0)-(en-us).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/> |
+|Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
-|Effettuare aggiornamenti del servizio directory ai numeri della coda di chiamata o dell'operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contatta [il service desk PSTN.](contact-pstn-service-desk.md) |
+|Eseguire aggiornamenti del servizio directory per i numeri di coda di chiamata o operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,4 +49,4 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta della dichiarazione di non responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)
+[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

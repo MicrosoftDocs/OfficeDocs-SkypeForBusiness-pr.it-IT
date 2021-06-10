@@ -21,12 +21,12 @@ metadata:
   - M365-collaboration
   appliesto:
   - Microsoft Teams
-  ms.openlocfilehash: 1f23be9a2324bc3fe51f19440562cdcc31df8ad0
-  ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+  ms.openlocfilehash: a753374ec71014352b04721f2019f5e9a6425acd
+  ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 05/08/2021
-  ms.locfileid: "52282703"
+  ms.lasthandoff: 06/09/2021
+  ms.locfileid: "52856275"
 title: Domande frequenti - Aggiornamento da Skype for Business a Microsoft Teams
 summary: ''
 sections:
@@ -35,17 +35,21 @@ sections:
   - question: Esiste una scadenza precisa entro la quale i clienti devono passare da Skype for Business Online a Teams?
     answer: >
       Sì. [Skype for Business Online verrà ritirato](skype-for-business-online-retirement.md) il 31 luglio 2021, a quel punto non sarà più accessibile. Invitiamo i clienti di Skype for Business Online a iniziare subito a usare Teams e a pianificare gli aggiornamenti, in modo da avere tutto il tempo necessario per completare l'aggiornamento prima della data di ritiro.
+  - question: I clienti locali Skype for Business Server devono eseguire l'aggiornamento a Microsoft Teams quando Skype for Business Online si ritira?
+    answer: "No. Il ritiro Skype for Business online non influisce sugli utenti ospitati in locale. Anche se incoraggiamo tutti i clienti a sfruttare le funzionalità espanse e le offerte di Microsoft Teams per le prestazioni, alcuni clienti di Skype for Business Server potrebbero dover usare il prodotto autonomo o come parte di una configurazione ibrida con Microsoft Teams. Fare riferimento al sito [Microsoft Lifecycle Policy](https://docs.microsoft.com/lifecycle/products/?terms=skype%20for%20business%20server) per le date di supporto per le versioni di Skype for Business Server. \n"
   - question: Se Riunione Skype Broadcast andrà in ritiro contemporaneamente a Skype for Business online?
     answer: "Sì. Teams Eventi live è la soluzione successore di Riunione Skype Broadcast.    \n"
   - question: Quanto tempo è necessario per aggiornare l'organizzazione a Teams?
     answer: >
-      Il percorso da Skype for Business a Teams può essere definito dall'organizzazione stessa. Per agevolare la pianificazione e l'esecuzione, sono state sviluppate indicazioni complete sull'aggiornamento basate su un framework collaudato, progettato per aiutare i clienti a orientarsi tra gli elementi tecnici e organizzativi del cambiamento. Iniziare il percorso familiarizzando con il [framework per il successo dell'aggiornamento](upgrade-framework.md) e le risorse associate che fungono da base per procedere nel percorso da Skype for Business a Teams.
+      Il percorso percorso da Skype for Business a Teams varia in base alle caratteristiche dell'organizzazione, ad esempio la complessità tecnica, l'attitudine al cambiamento, le integrazioni personalizzate di applicazioni e flussi di lavoro e così via. Per agevolare la pianificazione e l'esecuzione, sono state sviluppate indicazioni complete sull'aggiornamento basate su un framework collaudato, progettato per aiutare i clienti a orientarsi tra gli elementi tecnici e organizzativi del cambiamento. Iniziare il percorso familiarizzando con il [framework per il successo dell'aggiornamento](upgrade-framework.md) e le risorse associate che fungono da base per procedere nel percorso da Skype for Business a Teams.
   - question: Esiste un percorso di aggiornamento consigliato per Skype for Business?
     answer: >
       Si consiglia di pianificare il percorso da Skype for Business a Teams sfruttando le indicazioni e le risorse di pianificazione alla pagina [aka.ms/SkypetoTeams](upgrade-start-here.md) e di partecipare a un [workshop gratuiti di pianificazione dell'aggiornamento](upgrade-workshops-landing-page.yml) per identificare e implementare il percorso di aggiornamento più adatto alle esigenze dell'organizzazione.
   - question: Dove è possibile trovare altre informazioni sulle modalità di coesistenza nell'interfaccia di amministrazione di Microsoft Teams?
+    answer: "Nell'interfaccia di amministrazione di Microsoft Teams sono presenti opzioni per la modalità di coesistenza, che consentono di gestire il percorso da Skype for Business a Teams nel modo migliore per l'organizzazione. Leggere altre informazioni sulle [modalità di coesistenza e aggiornamento](teams-and-skypeforbusiness-coexistence-and-interoperability.md).\n      \n"
+  - question: Microsoft sta pianificando aggiornamenti assistiti?
     answer: >
-      Nell'interfaccia di amministrazione di Microsoft Teams sono presenti opzioni per la modalità di coesistenza, che consentono di gestire il percorso da Skype for Business a Teams nel modo migliore per l'organizzazione. Leggere altre informazioni sulle [modalità di coesistenza e aggiornamento](teams-and-skypeforbusiness-coexistence-and-interoperability.md).
+      Sì. Skype for Business I clienti online potrebbero essere pianificati per gli aggiornamenti assistiti Microsoft Teams. Questo programma è stato progettato per aiutare i clienti con gli elementi tecnici dell'aggiornamento di un tenant di Skype for Business Online a Teams solo. I clienti pianificati per gli aggiornamenti assistiti riceveranno notifiche sia nell'interfaccia di amministrazione di Teams che nel Centro messaggi di Microsoft 365 90 giorni prima della data di aggiornamento per consentire la preparazione tecnica e dell'utente.  Per altre informazioni, vedere [Aggiornamenti assistiti da Skype for Business Online a Microsoft Teams](upgrade-assisted.md).
   - question: Cosa occorre fare per prepararsi all'aggiornamento?
     answer: >
       Un aggiornamento corretto includerà la convalida dell'idoneità tecnica e di quella degli utenti. Anche se si determina che l'organizzazione non è pronta per l'aggiornamento a Teams, si può comunque iniziare subito il processo di pianificazione. Inoltre, si può iniziare a comprendere il valore di Teams abilitandolo insieme a Skype for Business. È possibile iniziare il [percorso da Skype a Teams](./upgrade-start-here.md) oggi stesso.
@@ -79,8 +83,6 @@ sections:
   - question: Quali sono le implicazioni in termini di licenze? In che modo i clienti pagheranno per funzionalità come audioconferenze e chiamate in Teams?
     answer: >
       Teams è disponibile nelle famiglie di prodotti Microsoft 365 e Office 365. Le capacità che oggi sono carichi di lavoro Premium in Skype for Business Online continueranno a essere carichi di lavoro Premium in Teams. Gli investimenti esistenti in materia di licenze effettuati dai clienti vengono mantenuti in Teams. Ad esempio, se un cliente ha acquistato Audioconferenza come prodotto autonomo o come parte di E5 con Skype for Business, Audioconferenza sarà abilitato in Teams così com'è disponibile oggi.
-  - question: Microsoft sta pianificando aggiornamenti assistiti?
-    answer: "Con il ritiro del servizio Skype for Business Online il 31 luglio 2021, Microsoft è dedicata ad aiutare i clienti a eseguire correttamente la transizione a Teams fornendo indicazioni per l'aggiornamento, laboratori online e formazione per utenti e amministratori. \n\nSkype for Business I clienti online potrebbero essere pianificati per gli aggiornamenti assistiti Microsoft Teams. Questo programma è stato progettato per aiutare i clienti con gli elementi tecnici dell'aggiornamento di un tenant di Skype for Business Online a Teams solo. I clienti pianificati per gli aggiornamenti assistiti riceveranno notifiche sia nell'interfaccia di amministrazione di Teams che nel Centro messaggi di Microsoft 365 90 giorni prima della data di aggiornamento per consentire la preparazione tecnica e dell'utente.  Per altre informazioni, vedere [Aggiornamenti assistiti da Skype for Business Online a Microsoft Teams](upgrade-assisted.md).\n"
   - question: Quali sono i vantaggi dell'infrastruttura di back-end di Teams?
     answer: >
       Teams è stato creato per il cloud sulla base di un'architettura a microservizi altamente scalabile, che è efficiente in termini di consumo di larghezza di banda, offre funzioni di telemetria più robuste e permette di eseguire le operazioni di manutenzione e aggiornamento con interruzioni minime. Per gli utenti, questo si traduce in tempi di accesso alle riunioni più rapidi e in un'esperienza nel browser migliore senza dover scaricare plug-in. Con questa infrastruttura moderna è semplice iniziare a usare Servizi cognitivi Microsoft, che include funzionalità di trascrizione, traduzione, riconoscimento vocale e Machine Learning in grado di rendere la comunicazione e la collaborazione più facili ed efficienti.

@@ -1,5 +1,5 @@
 ---
-title: Gestire e monitorare Teams
+title: Gestire e monitorare i Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -13,7 +13,7 @@ search.appverid: MET150
 f1.keywords: ''
 ms.custom: ''
 ms.reviewer: ''
-description: Guida di orientamento ad articoli su come gestire e monitorare Teams.
+description: Roadmap ad articoli su come gestire e monitorare i Teams.
 appliesto:
 - Microsoft Teams
 ms.openlocfilehash: 1682565d015d104ca4a60d2770e526453bea535a
@@ -23,31 +23,31 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/02/2021
 ms.locfileid: "50071044"
 ---
-# <a name="manage-and-monitor-teams"></a>Gestire e monitorare Teams
+# <a name="manage-and-monitor-teams"></a>Gestire e monitorare i Teams
 
-Teams offre diversi strumenti per gestire e monitorare il servizio Teams e per gestire gli utenti dell'organizzazione.
+Teams fornisce diversi strumenti per la gestione e il monitoraggio del servizio Teams e per la gestione degli utenti nell'organizzazione.
 
-Questo articolo fornisce una roadmap per i contenuti necessari per gestire e monitorare correttamente la distribuzione di Teams.
+Questo articolo fornisce una roadmap per il contenuto necessario per gestire e monitorare correttamente la distribuzione Teams distribuzione.
 
-- [Ruoli di amministratore.](using-admin-roles.md) Leggere questo articolo per informazioni su ruoli e funzionalità di amministratore di Teams e su come assegnare ruoli agli utenti.
+- [Ruoli di amministratore](using-admin-roles.md). Leggere questo articolo per informazioni Teams ruoli e funzionalità dell'amministratore e su come assegnare ruoli agli utenti.
 
-- [Interfaccia di amministrazione di Teams.](manage-teams-in-modern-portal.md) Leggere questo articolo per informazioni su come usare l'interfaccia di amministrazione di Teams per la gestione di Teams.  
+- [Interfaccia Teams di amministrazione.](manage-teams-in-modern-portal.md) Leggere questo articolo per informazioni su come usare l'interfaccia Teams di amministrazione per la gestione dei Teams.  
 
-- [Gestisci Teams durante la transizione alla nuova interfaccia di amministrazione.](manage-teams-skypeforbusiness-admin-center.md) Leggere questo articolo per informazioni su come passare dall'interfaccia di amministrazione di Skype for Business alla nuova interfaccia di amministrazione di Teams. 
+- [Gestire Teams durante la transizione alla nuova interfaccia di amministrazione.](manage-teams-skypeforbusiness-admin-center.md) Leggere questo articolo per informazioni su come eseguire la transizione dall'interfaccia Skype for Business di amministrazione di Office alla nuova interfaccia Teams di amministrazione. 
 
-- [Gestire le impostazioni di Teams per l'organizzazione.](enable-features-office-365.md) Leggere questo articolo per informazioni su come gestire le impostazioni di Teams per l'accesso guest ed esterno, le notifiche, l'integrazione della posta elettronica e i dispositivi.  
+- [Gestire Teams per l'organizzazione](enable-features-office-365.md). Leggere questo articolo per informazioni su come gestire le impostazioni Teams per l'accesso guest ed esterno, le notifiche, l'integrazione della posta elettronica e i dispositivi.  
 
-- [Comunicare con utenti di altre organizzazioni.](communicate-with-users-from-other-organizations.md) Leggere questo articolo per comprendere le differenze tra l'accesso guest ed esterno e le funzionalità disponibili in entrambi. Altri articoli di questa sezione descrivono come gestire l'accesso guest ed esterno.
+- [Comunicare con utenti di altre organizzazioni.](communicate-with-users-from-other-organizations.md) Leggere questo articolo per informazioni sulle differenze tra l'accesso guest e quello esterno e sulle funzionalità disponibili per entrambi. Altri articoli di questa sezione descrivono come gestire l'accesso guest ed esterno.
 
-- [Gestire i criteri.](assign-policies.md) Leggere questo articolo per informazioni su come definire e assegnare criteri per gestire utenti, autorizzazioni e funzionalità di Teams.
+- [Gestire i criteri](assign-policies.md). Leggere questo articolo per informazioni su come definire e assegnare criteri per la gestione di utenti, autorizzazioni e Teams funzionalità.
 
-- [Monitorare e gestire la qualità delle chiamate.](monitor-call-quality-qos.md) Leggere questo articolo per informazioni su come usare gli strumenti disponibili per il monitoraggio e il miglioramento della qualità delle chiamate per l'organizzazione.
+- [Monitorare e gestire la qualità delle chiamate](monitor-call-quality-qos.md). Leggere questo articolo per informazioni su come usare gli strumenti disponibili per il monitoraggio e il miglioramento della qualità delle chiamate per l'organizzazione.
 
-- [Report nell'interfaccia di amministrazione di Teams](teams-analytics-and-reports/teams-reporting-reference.md) e Report nell'interfaccia di amministrazione di Microsoft [365.](teams-activity-reports.md) Leggere questi articoli per informazioni sui report disponibili e su come usarli per monitorare l'utilizzo di Teams e l'integrità dei servizi.
+- [Report nell'interfaccia Teams e](teams-analytics-and-reports/teams-reporting-reference.md) Report [nell'Microsoft 365 di amministrazione.](teams-activity-reports.md) Leggere questi articoli per informazioni sui report disponibili e su come usarli per monitorare l'utilizzo Teams e l'integrità dei servizi.
 
-- [Gestire il servizio](teams-analytics-and-reports/teams-reporting-reference.md) e [ottimizzare il servizio.](upgrade-enhance-my-service.md) Leggere questi articoli per indicazioni e roadmap su come usare e ottimizzare il servizio Teams.
+- [Gestire il servizio e](teams-analytics-and-reports/teams-reporting-reference.md) [migliorare il servizio](upgrade-enhance-my-service.md). Leggere questi articoli per linee guida e roadmap su come gestire e migliorare il servizio Teams assistenza.
 
-Alcuni argomenti di gestione rimangono nelle sezioni del carico di lavoro pertinenti. Per altre informazioni, vedere gli articoli di panoramica seguenti:
+Alcuni argomenti di gestione rimangono nelle sezioni del carico di lavoro pertinenti. Per altre informazioni, vedere gli articoli di panoramica relativi agli argomenti seguenti:
 
 - [Chat, team, canali](deploy-chat-teams-channels-microsoft-teams-landing-page.md)
 - [Riunioni e audioconferenze](deploy-meetings-microsoft-teams-landing-page.md)

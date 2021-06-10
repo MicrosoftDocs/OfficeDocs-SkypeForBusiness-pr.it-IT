@@ -15,7 +15,7 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Informazioni su come configurare Microsoft Phone System Direct Routing.
+description: Informazioni su come configurare Telefono Microsoft routing diretto di sistema.
 ms.openlocfilehash: 03abeed954a7760c7c53142380a8ca558c5b3761
 ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
 ms.translationtype: MT
@@ -27,7 +27,7 @@ ms.locfileid: "51096376"
 
 Questo articolo descrive come tradurre i numeri per le chiamate in uscita e in ingresso in un formato alternativo.  Questo è il passaggio 4 della procedura seguente per la configurazione del routing diretto:
 
-- Passaggio 1. [Connettere SBC a Microsoft Phone System e convalidare la connessione](direct-routing-connect-the-sbc.md) 
+- Passaggio 1. [Connessione SBC con Telefono Microsoft sistema e convalidare la connessione](direct-routing-connect-the-sbc.md) 
 - Passaggio 2. [Abilitare gli utenti per routing diretto, segreteria telefonica e segreteria telefonica](direct-routing-enable-users.md)   
 - Passaggio 3. [Configurare il routing vocale](direct-routing-voice-routing.md)
 - **Passaggio 4. Tradurre i numeri in un formato alternativo**   (questo articolo)
@@ -68,7 +68,7 @@ Le regole di traduzione assegnate a SBC sono riepilogate nella tabella seguente:
 |AddSeattleAreaCode    |^(\d {4} )$          | 425555$ 1         |
 |StripPlus1    |^+1(\d {10} )$          | $1         |
 
-Negli esempi seguenti sono presenti due utenti, Alice e Luca. Alice è un utente di Teams il cui numero è +1 206 555 0100. Luca è un utente PSTN il cui numero è +1 425 555 0100.
+Negli esempi seguenti sono presenti due utenti, Alice e Luca. Alice è un utente Teams il cui numero è +1 206 555 0100. Luca è un utente PSTN il cui numero è +1 425 555 0100.
 
 ## <a name="example-1-inbound-call-to-a-ten-digit-number"></a>Esempio 1: chiamata in ingresso a un numero a dieci cifre
 
@@ -97,9 +97,9 @@ SBC usa 0100 nelle intestazioni RequestURI e To e 4255550100 nell'intestazione F
 ## <a name="example-3-outbound-call-using-a-ten-digit-non-e164-number"></a>Esempio 3: Chiamata in uscita con un numero non E.164 di dieci cifre
 
 Alice chiama Luca usando un numero di dieci cifre. Alice compone il numero 425 555 0100 per raggiungere Luca.
-SBC è configurato per l'uso di numeri a dieci cifre non E.164 sia per gli utenti di Teams che per gli utenti PSTN.
+SBC è configurato per l'uso di numeri a dieci cifre non E.164 per gli utenti Teams e PSTN.
 
-In questo scenario, un dial plan traduce il numero prima di inviarlo all'interfaccia di routing diretto. Quando Alice immette 425 555 0100 nel client Teams, il numero viene convertito in +14255550100 dal piano di chiamata del paese. I numeri risultanti sono una normalizzazione cumulativa delle regole del piano di chiamata e delle regole di traduzione di Teams. Le regole di traduzione di Teams rimuovono il "+1" aggiunto dal piano di chiamata.
+In questo scenario, un dial plan traduce il numero prima di inviarlo all'interfaccia di routing diretto. Quando Alice immette 425 555 0100 nel client Teams, il numero viene convertito in +14255550100 dal piano di chiamata del paese. I numeri risultanti sono una normalizzazione cumulativa delle regole del piano di chiamata e Teams di traduzione. Le Teams di traduzione rimuovono il "+1" aggiunto dal piano di chiamata.
 
 
 |Intestazione  |Originale |Intestazione tradotta |Parametro e regola applicati  |
@@ -111,7 +111,7 @@ In questo scenario, un dial plan traduce il numero prima di inviarlo all'interfa
 ## <a name="example-4-outbound-call-using-a-four-digit-non-e164-number"></a>Esempio 4: Chiamata in uscita con un numero non E.164 a quattro cifre
 
 Alice chiama Luca usando un numero a quattro cifre. Alice usa 0100 per raggiungere Luca da Chiamate o tramite un contatto.
-SBC è configurato per l'uso di numeri a quattro cifre non E.164 per gli utenti di Teams e di dieci cifre per gli utenti PSTN. Il piano di chiamata non viene applicato in questo scenario.
+SBC è configurato per l'uso di numeri a quattro cifre diversi da E.164 per gli utenti Teams e di dieci cifre per gli utenti PSTN. Il piano di chiamata non viene applicato in questo scenario.
 
 
 |Intestazione  |Originale |Intestazione tradotta |Parametro e regola applicati  |

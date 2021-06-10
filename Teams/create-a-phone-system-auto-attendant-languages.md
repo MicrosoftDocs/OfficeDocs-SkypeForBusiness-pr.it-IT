@@ -1,5 +1,5 @@
 ---
-title: Lingue supportate dall'operatore automatico di Microsoft Teams
+title: Microsoft Teams lingue supportate dall'operatore automatico
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -21,7 +21,7 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: Lingue supportate dall'operatore automatico di Microsoft Teams
+description: Microsoft Teams lingue supportate dall'operatore automatico
 ms.openlocfilehash: 8a55b1613aaf1c14989d1626966ca6051d7015d9
 ms.sourcegitcommit: bfada4fd06c5cff12b0eefd3384bb3c10d10787f
 ms.translationtype: MT
@@ -29,15 +29,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/12/2021
 ms.locfileid: "50197089"
 ---
-# <a name="microsoft-teams-auto-attendant-supported-languages"></a>Lingue supportate dall'operatore automatico di Microsoft Teams
+# <a name="microsoft-teams-auto-attendant-supported-languages"></a>Microsoft Teams lingue supportate dall'operatore automatico
 
-L'operatore automatico supporta le seguenti lingue per la sintesi vocale e il riconoscimento vocale:
+L'operatore automatico supporta le lingue seguenti per sintesi vocale (TTS) e Riconoscimento vocale:
 
-|Lingua                                |Sintesi vocale     |Riconoscimento vocale                     |
+|Lingua                                |Sintesi vocale (TTS)     |Riconoscimento vocale                     |
 |:---------------------------------------|:-----------------------:|:-------------------------------------:|
 |Arabo (Egitto)                          |S                        |                                       |
 |Catalano (catalano)                       |S                        |S                                      |
-|Cinese (semplificato, CINA)               |S                        |S                                      |
+|Cinese (semplificato, RPC)               |S                        |S                                      |
 |Cinese (tradizionale, Hong Kong)        |S                        |                                       |
 |Cinese (tradizionale, Taiwan)           |S                        |                                       |    
 |Croato (Croazia)                      |S                        |                                       |    
@@ -59,7 +59,7 @@ L'operatore automatico supporta le seguenti lingue per la sintesi vocale e il ri
 |Italiano (Italia)                         |S                        |S                                      |
 |Giapponese (Giappone)                        |S                        |S                                      |
 |Coreano (Corea)                          |S                        |                                       |    
-|Norvegese Bomale (Norvegia)               |S                        |                                       |    
+|Norvegese Bokmal (Norvegia)               |S                        |                                       |    
 |Polacco (Polonia)                         |S                        |                                       |    
 |Portoghese (Brasile)                     |S                        |S                                      |
 |Portoghese (Portogallo)                   |S                        |                                       |    
@@ -75,7 +75,7 @@ L'operatore automatico supporta le seguenti lingue per la sintesi vocale e il ri
 |Vietnamita (Vietnam)                    |S                        |                                       |    
 
 > [!NOTE]
-> La scelta di una lingua che non supporta Riconoscimento vocale disabiliterà l'opzione per gli input vocali nel menu e chiamata per nome sarà limitata all'uso solo dell'immissione da tastiera (DTMF). Per ulteriori informazioni, consulta Chiamata per nome - Immissione da [tastiera (DTMF).](dial-voice-reference.md#dial-by-name---keypad-dtmf-entry)
+> Se si sceglie una lingua che non supporta riconoscimento vocale, l'opzione di input vocale nel menu verrà disabilitata e la composizione per nome sarà limitata all'uso solo della tastiera (DTMF). Per altre informazioni, fare riferimento alla voce Chiamata per nome [- Tastiera (DTMF).](dial-voice-reference.md#dial-by-name---keypad-dtmf-entry)
 
 > [!NOTE]
-> Quando si usa la sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.
+> Quando si usa La sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.

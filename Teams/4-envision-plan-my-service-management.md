@@ -1,5 +1,5 @@
 ---
-title: Pianificare la gestione dei servizi di Microsoft Teams
+title: Pianificare la Microsoft Teams dei servizi
 author: rmw2890
 ms.author: Rowille
 manager: serdars
@@ -27,26 +27,26 @@ ms.locfileid: "51094744"
 ---
 # <a name="plan-my-service-management"></a>Pianificare la gestione dei servizi
 
-Questo articolo offre una panoramica dei requisiti necessari per offrire e mantenere una distribuzione di Microsoft Teams di alta qualità. È possibile garantire una distribuzione corretta pianificando la gestione dei servizi e la qualità durante la fase di Envision, prima della prima distribuzione pilota o di produzione.
+Questo articolo offre una panoramica dei requisiti necessari per offrire e mantenere una distribuzione di qualità Microsoft Teams alta qualità. È possibile garantire una distribuzione corretta pianificando la gestione dei servizi e la qualità durante la fase di Envision, prima della prima distribuzione pilota o di produzione.
 
 ## <a name="service-management-for-teams"></a>Gestione dei servizi per Teams
 
-La gestione dei servizi è un argomento generale che illustra le operazioni quotidiane del servizio Microsoft Teams dopo che è stato distribuito e abilitato per gli utenti. Il servizio Teams include Microsoft 365 o Office 365 e i componenti dell'infrastruttura distribuiti in locale, ad esempio la rete.
+La gestione dei servizi è un argomento generale che illustra le operazioni quotidiane del servizio Microsoft Teams dopo che è stato distribuito e abilitato per gli utenti. Il Teams include Microsoft 365 o Office 365 e i componenti dell'infrastruttura distribuiti in locale, ad esempio la rete.
 
 La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la maggior parte delle organizzazioni. Probabilmente sono già stati implementati processi e attività associati ai servizi esistenti. Detto questo, è probabile che sia possibile aumentare ciò che si ha in essere quando si pianifica oggi la gestione dei servizi per supportare Microsoft Teams in futuro.
 
-La gestione dei servizi include tutte le attività e i processi coinvolti nella gestione end-to-end di Microsoft Teams. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura di cui fa parte il servizio Microsoft 365 o Office 365 stesso, sono responsabilità di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti di Teams, della rete e degli endpoint che forniscono.
-Per una discussione completa sulla responsabilità del cliente per la gestione dei servizi di Teams e su come è correlata ai componenti chiave che sono alla base della qualità dell'esperienza utente, vedere Pianificare la gestione dei servizi e la [qualità.](./prepare-network.md)
+La gestione dei servizi include tutte le attività e i processi coinvolti nella gestione dei Microsoft Teams end-to-end. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura di cui fa parte il servizio Microsoft 365 o Office 365 stesso, sono responsabilità di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti di Teams, della rete e degli endpoint che forniscono.
+Per una discussione completa sulla responsabilità del cliente per la gestione dei servizi di Teams e su come è correlata ai componenti chiave che sono alla base della qualità dell'esperienza utente, vedere Pianificare la gestione e la qualità dei [servizi.](./prepare-network.md)
 
-![Diagramma dei tre componenti della qualità](media/plan-my-service-management-image1.png "Diagramma dei tre componenti della qualità, il servizio, la rete e gli endpoint di Microsoft 365 o Office 365, e il modo in cui la gestione dei servizi si sovrappone a tutti e tre.")
+![Diagramma dei tre componenti della qualità](media/plan-my-service-management-image1.png "Diagramma dei tre componenti di qualità, Microsoft 365 o Office 365 servizio, rete ed endpoint, e il modo in cui la gestione dei servizi si sovrappone a tutti e tre.")
 
 <!--ENDOFSECTION-->
 
 ## <a name="introduction-to-the-operations-guide"></a>Introduzione alla Guida operativa 
 
-**Quali** sono, **Chi** e **Come** sono tre domande importanti a cui è necessario rispondere quando si tratta di gestione dei servizi.
+**Quali**, **Who** e **Quali** sono le tre domande importanti a cui è necessario rispondere quando si tratta di gestione dei servizi.
 
-È possibile usare la [Guida operativa per](./1-drive-value-operate-my-service.md) risolvere tutte e tre queste domande. La guida fornisce un elenco delle attività da eseguire quotidianamente, settimanalmente, mensilmente e in base alle esigenze. Queste attività e attività sono fondamentali per mantenere una distribuzione di Teams di alta qualità. Determinare chi sarà responsabile dell'esecuzione di attività specifiche nella gestione dei servizi è un aspetto fondamentale della pianificazione che è necessario eseguire all'inizio della fase di Envision per garantire una distribuzione corretta. Dopo aver compreso le attività e le attività, è necessario comprenderle e seguirle con i gruppi o gli utenti assegnati. La Guida operativa fornisce informazioni e indicazioni su come eseguire ognuna delle attività e/o riferimenti a contenuto esterno.
+È possibile usare la [Guida operativa per](./1-drive-value-operate-my-service.md) risolvere tutte e tre queste domande. La guida fornisce un elenco delle attività da eseguire quotidianamente, settimanalmente, mensilmente e in base alle esigenze. Queste attività e attività sono fondamentali per mantenere una distribuzione di qualità Teams alta qualità. Determinare chi sarà responsabile dell'esecuzione di attività specifiche nella gestione dei servizi è un aspetto fondamentale della pianificazione che è necessario eseguire all'inizio della fase di Envision per garantire una distribuzione corretta. Dopo aver compreso le attività e le attività, è necessario comprenderle e seguirle con i gruppi o gli utenti assegnati. La Guida operativa fornisce informazioni e indicazioni su come eseguire ognuna delle attività e/o riferimenti a contenuto esterno.
 
 ## <a name="plan-for-operational-role-mapping"></a>Pianificare il mapping dei ruoli operativi
 
@@ -72,7 +72,7 @@ La Guida operativa fornisce un elenco di attività comuni mappate a ruoli tipici
 |Team & endpoint client|Gestire le distribuzioni desktop|TBA|TBA|
 |Operazioni sulle identità|Gestire l'infrastruttura delle identità (Active Directory, Active Directory Federation Services, Azure AD)|TBA|TBA|
 |Adozione/gestione delle modifiche|Gestire consapevolezza, formazione e adozione per la soluzione|TBA|TBA|
-|Operazioni di Exchange|Gestire l'ambiente di Exchange|TBA|TBA|
+|Exchange Operazioni|Gestire l'Exchange di lavoro|TBA|TBA|
 |Operazioni di telefonia|Gestire i numeri SBC e i numeri di telefono|TBA|TBA|
 
 <!--ENDOFSECTION-->

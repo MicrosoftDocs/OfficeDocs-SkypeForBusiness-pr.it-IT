@@ -31,7 +31,7 @@ ms.locfileid: "51117184"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-microsoft-teams"></a>Impostare le lingue degli operatori automatici per le audioconferenze in Microsoft Teams
 
-L'operatore automatico di audioconferenza per Microsoft Teams può salutare i chiamanti audio in diverse lingue quando aderiscono a una riunione.
+L'operatore automatico di audioconferenza per Microsoft Teams può accogliere i chiamanti audio in diverse lingue quando aderiscono a una riunione.
   
 Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua impostata come principale verrà utilizzata per prima e le lingue secondarie verranno utilizzate dall'operatore automatico nell'ordine selezionato. 
   
@@ -63,11 +63,11 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
     
 - Le lingue possono essere impostate per numeri specifici, ma non per i numeri di telefono condivisi.
     
-- Per visualizzare un elenco di paesi/aree geografiche in cui sono disponibili audioconferenze in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere Numeri di telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing-in-teams.md)
+- Per visualizzare un elenco di paesi/aree geografiche in cui è disponibile l'audioconferenza in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere numeri di Telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing-in-teams.md)
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 
-Per altre informazioni, vedere le informazioni di riferimento su [Microsoft Teams PowerShell.](/powershell/module/teams/?view=teams-ps)
+Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
   
 ## <a name="related-topics"></a>Argomenti correlati
 

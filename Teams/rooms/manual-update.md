@@ -1,5 +1,5 @@
 ---
-title: Aggiornare manualmente un dispositivo Microsoft Teams Rooms
+title: Aggiornare manualmente un Microsoft Teams Rooms dispositivo
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -22,20 +22,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 03/23/2021
 ms.locfileid: "51117514"
 ---
-# <a name="manually-update-a-microsoft-teams-rooms-device"></a>Aggiornare manualmente un dispositivo Microsoft Teams Rooms
+# <a name="manually-update-a-microsoft-teams-rooms-device"></a>Aggiornare manualmente un Microsoft Teams Rooms dispositivo
 
-L'app Microsoft Teams Rooms viene distribuita tramite Microsoft Store. Gli aggiornamenti dell'app vengono installati automaticamente da Microsoft Store durante la manutenzione notturna; questo è il metodo consigliato per ottenere gli aggiornamenti. Esistono tuttavia alcune situazioni in cui un dispositivo Teams Rooms non può ricevere aggiornamenti da Microsoft Store. Ad esempio, i criteri di sicurezza potrebbero non consentire la connessione dei dispositivi a Internet o il download delle app da Microsoft Store. Oppure, potresti voler aggiornare un dispositivo prima di eseguire la configurazione, durante il quale Microsoft Store non è disponibile.
+L Microsoft Teams Rooms app viene distribuita tramite il Microsoft Store. Gli aggiornamenti dell'app vengono installati automaticamente dal Microsoft Store durante la manutenzione notturna; questo è il metodo consigliato per ottenere gli aggiornamenti. Esistono tuttavia alcune situazioni in cui un dispositivo Teams Rooms non può ricevere gli aggiornamenti dal Microsoft Store. Ad esempio, i criteri di sicurezza potrebbero non consentire la connessione dei dispositivi a Internet o il download delle app dal Microsoft Store. In caso contrario, è possibile aggiornare un dispositivo prima di eseguire la configurazione, durante il quale il Microsoft Store non è disponibile.
 
-Se non è possibile ottenere gli aggiornamenti da Microsoft Store, è possibile usare uno script di PowerShell di aggiornamento dell'app offline per aggiornare manualmente i dispositivi di Teams Rooms a una versione più recente dell'app Teams Rooms. Seguire la procedura descritta in questo articolo per aggiornare manualmente i dispositivi di Teams Rooms.
+Se non è possibile ottenere gli aggiornamenti dal Microsoft Store, è possibile usare uno script di PowerShell di aggiornamento dell'app offline per aggiornare manualmente i dispositivi Teams Rooms a una versione più recente dell'app Teams Rooms. Seguire la procedura descritta in questo articolo per aggiornare manualmente i dispositivi Teams Rooms mobili.
 
 > [!NOTE]
-> Questo processo può aggiornare solo un dispositivo Teams Rooms con l'app Teams Rooms già installata. Non può essere usato per eseguire una nuova installazione. Non può inoltre essere usato per eseguire il downgrade dell'app a una versione precedente. Per eseguire una nuova installazione dell'app Teams Rooms, contattare il produttore del dispositivo per ottenere elementi multimediali specifici oppure vedere [Preparare il supporto di installazione.](console.md#prepare-the-installation-media)
+> Questo processo può aggiornare solo un dispositivo Teams Rooms con l'app Teams Rooms già installata. Non può essere usato per eseguire una nuova installazione. Non può inoltre essere usato per eseguire il downgrade dell'app a una versione precedente. Per eseguire una nuova installazione dell'app Teams Rooms, contattare il produttore del dispositivo per ottenere elementi multimediali specifici oppure vedere Preparare il supporto [di installazione.](console.md#prepare-the-installation-media)
 
 ## <a name="step-1-download-the-offline-app-update-script"></a>Passaggio 1: Scaricare lo script di aggiornamento dell'app offline
 
 Prima di tutto, scaricare l'ultima versione dello script di aggiornamento dell'app offline. Per scaricare lo script, fare clic su <https://go.microsoft.com/fwlink/?linkid=2151817> . Lo script verrà scaricato nella cartella di download predefinita del dispositivo.
 
-I file scaricati potrebbero essere contrassegnati come bloccati da Windows. Se è necessario eseguire lo script senza alcuna interazione, è necessario sbloccarlo. Per sbloccare lo script, eseguire le operazioni seguenti:
+I file scaricati potrebbero essere contrassegnati come bloccati Windows. Se è necessario eseguire lo script senza alcuna interazione, è necessario sbloccarlo. Per sbloccare lo script, eseguire le operazioni seguenti:
 
 1. Fare clic con il pulsante destro del mouse sul file in Esplora file
 2. Fare clic **su Proprietà**
@@ -44,11 +44,11 @@ I file scaricati potrebbero essere contrassegnati come bloccati da Windows. Se �
 
 Per sbloccare lo script con PowerShell, vedere [Sblocca file](/powershell/module/microsoft.powershell.utility/unblock-file?view=powershell-7.1).
 
-Dopo aver scaricato lo script di aggiornamento dell'app offline, trasferire il file nel dispositivo Teams Rooms. È possibile trasferire un file nel dispositivo usando un'unità USB o accedendo al file da una condivisione file di rete mentre è attiva la modalità di amministrazione nel dispositivo. Assicurarsi di prendere nota della posizione in cui si salva il file nel dispositivo.
+Dopo aver scaricato lo script di aggiornamento dell'app offline, trasferire il file nel Teams Rooms dispositivo. È possibile trasferire un file nel dispositivo usando un'unità USB o accedendo al file da una condivisione file di rete mentre è attiva la modalità di amministrazione nel dispositivo. Assicurarsi di prendere nota della posizione in cui si salva il file nel dispositivo.
 
-## <a name="step-2-run-the-script-to-update-the-teams-rooms-app"></a>Passaggio 2: Eseguire lo script per aggiornare l'app Teams Rooms
+## <a name="step-2-run-the-script-to-update-the-teams-rooms-app"></a>Passaggio 2: Eseguire lo script per aggiornare l Teams Rooms app
 
-Lo script di aggiornamento dell'app offline deve essere eseguito da un prompt dei comandi con privilegi elevati mentre l'utente Skype (l'utente con cui viene eseguita l'app) è ancora connesso. Per altre informazioni su come accedere a un account amministratore per usare il prompt dei comandi con privilegi elevati mentre l'utente Skype è ancora connesso, vedere Passare alla modalità di amministrazione e tornare alla modalità di amministrazione quando [l'app Microsoft Teams Rooms](rooms-operations.md#switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running)è in esecuzione.
+Lo script di aggiornamento dell'app offline deve essere eseguito da un prompt dei comandi con privilegi elevati mentre l'utente di Skype (l'utente con cui viene eseguita l'app) è ancora connesso. Per altre informazioni su come accedere a un account di amministratore per usare il prompt dei comandi con privilegi elevati mentre l'utente di Skype è ancora connesso, vedere Passare alla modalità di amministrazione e tornare alla modalità di amministrazione quando [l'app Microsoft Teams Rooms](rooms-operations.md#switching-to-admin-mode-and-back-when-the-microsoft-teams-rooms-app-is-running)è in esecuzione.
 
 Eseguire le operazioni seguenti per eseguire lo script da un prompt dei comandi con privilegi elevati:
 
@@ -66,12 +66,12 @@ Ad esempio, se il file script si trova in `C:\Users\Admin\Downloads` e il nome d
 PowerShell -ExecutionPolicy Unrestricted "C:\Users\Admin\Downloads\MTR-Update-4.5.6.7.ps1"
 ```
 
-Consentire l'esecuzione dello script. Al termine, lo script riavvierà il dispositivo Teams Rooms.
+Consentire l'esecuzione dello script. Al termine, lo script riavvia il Teams Rooms dispositivo.
 
-È anche possibile eseguire lo script usando PowerShell remoto. Per altre informazioni sull'uso di PowerShell remoto con i dispositivi Teams Rooms, vedere [Gestione remota tramite PowerShell.](rooms-operations.md#remote-management-using-powershell)
+È anche possibile eseguire lo script usando PowerShell remoto. Per altre informazioni sull'uso di PowerShell remoto con Teams Rooms, vedere Gestione [remota tramite PowerShell.](rooms-operations.md#remote-management-using-powershell)
 
 ## <a name="step-3-verify-the-app-has-been-updated-successfully"></a>Passaggio 3: Verificare che l'app sia stata aggiornata correttamente
 
-Se lo script viene eseguito correttamente, il dispositivo verrà riavviato nell'app Teams Rooms.
+Se lo script viene eseguito correttamente, il dispositivo verrà riavviato nell Teams Rooms app.
 
 Se lo script rileva un problema, indicherà il problema nella riga di comando e ne registrerà l'output in un file. Seguire le istruzioni fornite nello script. Se è necessario contattare il supporto tecnico Microsoft, assicurarsi di includere il file di log insieme alla richiesta di supporto. Lo script fornirà il percorso del file di log.

@@ -11,7 +11,7 @@ localization_priority: Normal
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come aggiungere e aggiornare le etichette dei report caricando un file di testo contenente un elenco di posizioni fisiche e subnet associate.
+description: Informazioni su come aggiungere e aggiornare le etichette dei report caricando un file di testo che contiene un elenco di posizioni fisiche e subnet associate.
 f1.keywords:
 - CSH
 ms.custom:
@@ -32,33 +32,33 @@ ms.locfileid: "50237486"
 <a name="add-and-update-reporting-labels"></a>Aggiungere e aggiornare etichette di reporting
 ============================
 
-Le etichette dei report vengono usate nell'organizzazione per indicare la posizione fisica di uffici, edifici o siti dell'organizzazione. La pagina Etichette report nell'interfaccia di amministrazione di Microsoft Teams consente di fornire un file di testo (con estensione csv o tsv) contenente un elenco di posizioni fisiche e le subnet di rete associate. Questo file viene utilizzato da Call Analytics per la generazione di report. Quando si carica la mappatura della subnet, i report forniti da questi servizi conterranno anche i nomi delle località, semplificando la comprensione e l'uso dei report per la correzione di potenziali problemi.
+Le etichette dei report vengono usate nell'organizzazione per indicare le posizioni fisiche di uffici, edifici o siti dell'organizzazione. La pagina Etichette report nell'interfaccia di amministrazione di Microsoft Teams consente di fornire un file di testo (.csv o tsv) contenente un elenco delle posizioni fisiche e delle subnet di rete associate. Questo file viene usato da Call Analytics per la generazione di report. Quando si carica il mapping della subnet, i report forniti da questi servizi conterranno anche i nomi delle località, semplificando la comprensione e l'uso dei report per correggere eventuali problemi potenziali.
 
 > [!IMPORTANT]
-> Le etichette per le relazioni  caricate verranno gestite come Dati di supporto ai sensi del contratto per Office 365, incluse eventuali informazioni che verrebbero altrimenti *considerate* dati dei clienti o *dati personali.* Non includere dati che non desideri fornire a Microsoft come dati di *supporto,* perché queste informazioni saranno visibili ai tecnici Microsoft a scopo di supporto.
+> Le etichette di segnalazione caricate verranno gestite come dati di supporto ai sensi  del contratto per Office 365, incluse eventuali informazioni che altrimenti verrebbero considerate Dati dei clienti *o Dati personali.*  Non includere dati che non si desidera fornire a Microsoft come dati di *supporto,* in quanto queste informazioni saranno visibili ai tecnici Microsoft per scopi di supporto.
 
-I dati relativi alle etichette e alle posizioni dei report forniti costituiscono un'unica struttura di dati e al momento non è disponibile alcuna interfaccia per apportare singole modifiche ai dati.
+I dati relativi alle etichette e alle posizioni dei report forniti sono un'unica struttura di dati: attualmente non è disponibile un'interfaccia per apportare singole modifiche ai dati.
 
-**Per modificare l'indice delle subnet e delle posizioni**
+**Per modificare la tabella delle subnet e delle posizioni**
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams fare clic su **Etichette** per la  >  **creazione di rapporti sulle posizioni.**
-2. Fare clic **su Carica dati.**
-3. Nel riquadro **Carica dati** fare clic su Seleziona **un file,** quindi individuare e caricare il file con estensione csv o tsv modificato.
-4. Fare clic **su Carica.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Etichette**  >  **report posizioni.**
+2. Fare **clic Upload dati**.
+3. Nel riquadro **Upload dati** fare clic su Seleziona **un file** e quindi individuare e caricare il file .csv o tsv modificato.
+4. Fare **clic Upload**.
 
-È possibile scaricare un modello di [esempio qui.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/locations-template.zip?raw=true)
+È possibile scaricare un modello di esempio [qui](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/locations-template.zip?raw=true).
 
 Usare l'esempio seguente per creare il file di dati.
 
 > [!IMPORTANT]
-> Il file di dati non deve contenere intestazioni di colonna, ad esempio Rete, Nome rete e così via. Qui vengono usate solo a scopo informativo. <br>
+> Il file di dati non deve contenere intestazioni di colonna, ad esempio Rete, Nome rete e così via. Vengono usati qui solo a scopo informativo. <br>
 
-|Rete|Nome rete|Intervallo di rete|Nome edificio|Tipo di proprietà|Tipo di edificio|Building Office Type|Città|CAP|Paese|Stato|Area geografica|Inside Corp|Express Route|
+|Rete|Nome rete|Intervallo di rete|Nome edificio|Tipo di proprietà|Tipo di edificio|Tipo Office edificio|Città|CAP|Paese|Stato|Area geografica|Inside Corp|Express Route|
 |-|-|-|-|-|-|-|-|-|-|-|-|-|-|
-|10.0.128.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Vista delle montagne|94043|Stati Uniti|CA|Stati Uniti|1|1|
-|10.0.130.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Vista delle montagne|94043|Stati Uniti|CA|Stati Uniti|1|1|
-|10.0.131.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Vista delle montagne|94043|Stati Uniti|CA|Stati Uniti|1|1|
-|10.0.132.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Vista delle montagne|94043|Stati Uniti|CA|Stati Uniti|1|1|
+|10.0.128.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Mountain View|94043|Stati Uniti|CA|Stati Uniti|1|1|
+|10.0.130.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Mountain View|94043|Stati Uniti|CA|Stati Uniti|1|1|
+|10.0.131.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Mountain View|94043|Stati Uniti|CA|Stati Uniti|1|1|
+|10.0.132.0    |SVC-1|32|USCAMTV001|Contoso Leased RE&F|Office|RE&F|Mountain View|94043|Stati Uniti|CA|Stati Uniti|1|1|
 
 Per altre informazioni sulla formattazione del file di dati, vedere Formato del file di [dati tenant e Struttura del file di dati.](CQD-upload-tenant-building-data.md#upload-building-data-file)
 
@@ -66,4 +66,4 @@ Per altre informazioni sulla formattazione del file di dati, vedere Formato del 
 
 [Configurare l'analisi delle chiamate](set-up-call-analytics.md)
 
-[Usare i dati analitici delle chiamate per risolvere problemi di bassa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)
+[Usare l'analisi delle chiamate per risolvere i problemi relativi alla scarsa qualità delle chiamate](use-call-analytics-to-troubleshoot-poor-call-quality.md)

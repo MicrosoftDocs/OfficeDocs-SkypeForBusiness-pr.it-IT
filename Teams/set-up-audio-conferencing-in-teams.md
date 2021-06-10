@@ -53,7 +53,7 @@ Vai a [Disponibilità di audioconferenza e Piani di chiamata per Paese e area ge
     >[!NOTE] 
     > Il servizio Audioconferenza è incluso nelle licenze Office 365 Enterprise E5 e come componente aggiuntivo.
         
-2. Dopo aver acquistato le licenze per Audioconferenza, è necessario assegnarle agli utenti dell'organizzazione che intendono pianificare o coordinare riunioni. Vedere Assegnare licenze agli utenti [in Microsoft 365 o Office 365](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) per le aziende acquistati alle persone dell'organizzazione che pianificano o conducono riunioni.
+2. Dopo aver acquistato le licenze per Audioconferenza, è necessario assegnarle agli utenti dell'organizzazione che intendono pianificare o coordinare riunioni. Vedere [Assegnare licenze](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) agli utenti di Microsoft 365 o Office 365 per le aziende acquistate alle persone dell'organizzazione che pianificano o conducono riunioni.
     
 3. È inoltre consigliabile assegnare licenze di Credito per la comunicazione (non costano nulla) agli stessi utenti a cui sono state assegnate le licenze nel passo precedente. Per altre informazioni sulla configurazione di Credito per la comunicazione, vedere [Configurare Credito per la comunicazione per l'organizzazione](set-up-communications-credits-for-your-organization.md).
     
