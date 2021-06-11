@@ -16,16 +16,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 03206c6a1d3a9bfb8a42446e7134ad21689d93cc
-ms.sourcegitcommit: 02e243d6c58eab463a00ed45dadd80112087006e
+ms.openlocfilehash: 28cebeabe860f1e76d10d0af976454161ed448e1
+ms.sourcegitcommit: 2591c96d8613660220c5af71fc945e27b31175d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52723567"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52863247"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
 Questo articolo contiene un elenco degli eventi per dispositivo mobile di Microsoft Teams e gli elenchi delle proprietà raccolte da ciascun evento.
+
+Per altre informazioni sui dati di diagnostica, tra cui come controllare i dati diagnostici inviati a Microsoft, vedere [Dati di diagnostica inviati dall'app Teams a Microsoft](policy-control-overview.md#diagnostic-data-sent-from-the-teams-app-to-microsoft). Per vedere i dati di diagnostica inviati a Microsoft, è possibile usare il [Visualizzatore dati di diagnostica](https://support.microsoft.com/topic/cf761ce9-d805-4c60-a339-4e07f3182855).
 
 ## <a name="events"></a>Eventi
 
@@ -109,6 +111,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - numeri dalle impostazioni.
 - **blockChat**: blocco di una chatbot. Questo migliora l’esistente telemetria delle chat e aggiunge solo le informazioni sull'applicazione.
 - **botClickCardAction**: utilizzo della scheda del connettore.
+- **brbFormOpened**: l'utente ha richiesto l’invio del feedback.
+- **brbFormSubmit**: l'utente ha inviato il feedback.
 - **breakStartEndClicked**: nella schermata di registrazione dell’orario in entrata, il pulsate **Inizia** o **Termina pausa** viene selezionato.
 - **breakStartEndTriggered**: registra le scelte dell’utente sull’utilizzo di inizio o fine pausa.
 - **bucketSelected**: conferma che un contenitore è stato selezionato.
@@ -338,12 +342,12 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **closeLobbyBanner**: numero di volte in cui l’avviso popup delle sala di attesa viene chiuso usando il pulsante **Chiudi**.
 - **commentAdded**: conferma che è stato aggiunto un commento a un'attività.
 - **commentsClicked**: conferma che la visualizzazione commenti è stata avviata correttamente.
-- **commentUpdated**: conferma che è stato aggiornato un commento in un'attività.
+- **commentUpdated**: conferma che un commento è stato aggiornato correttamente in un'attività.
 - **companionBannerJoin**: selezionare **Partecipa** nel banner principale.
 - **companionDismiss**: ignorare il banner complementario.
 - **companionDismissProximity**: ignorare il banner complementario.
 - **companionJoin**: viene selezionata l’opzione dal foglio Partecipare con dispositivo complementare.
-- **companionJoinProximity**: aggiunto attraverso il banner complementario.
+- **companionJoinProximity**: partecipazione attraverso il banner companion.
 - **completeVaultFRE**: l'utente completa il processo di generazione di una chiave master usata per crittografare i dati della Cassaforte.
 - **completionStateChange**: si attiva quando un interruttore del filtro completato o incompleto viene selezionato nella visualizzazione del filtro dall'elenco delle attività.
 - **composeExpandComposer** -  viene toccato il pulsante **Formato**.
@@ -461,6 +465,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **dialOutDialog** -  viene selezionato **Nuovo numero** nel foglio di lavoro.
 - **dialOutFailRetry** - viene selezionato **Riprova** da un banner di errore.
 - **DialPad**: il pulsante **Tastiera** viene selezionato dall’elenco chiamate.
+- **directShare**: ha condiviso un collegamento di invito su un'app nativa di sms/e-mail.
 - **disableCategory**: disabilita un tipo di notifica o disattiva le notifiche di chiamate in arrivo.
 - **disabled** -  viene selezionato **Ignora notifiche** in First-run experience (FRE). Fornisce i dati di successo chiave per ignorare la notifica nel flusso FRE.
 - **disableQuietDays**: giorni in modalità non interattiva disabilitato. Funzionalità di telemetria di successo per giorni in modalità non interattiva.
@@ -577,7 +582,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **giphyUserDisabled**: l'utente sceglie di accettare i termini e/o le condizioni di Giphy.
 - **goToNotificationSettings**: andare alla pagina delle impostazioni di notifica dalla finestra di dialogo **Abbiamo aggiornato le impostazioni di notifica**.
 - **GPSPromptClicked**: viene selezionata l'opzione **Consenti** o **Non consentire** in una richiesta del sistema operativo, consentendo o meno la funzione GPS.
-- **group_map_closed**: un utente apre una visualizzazione mappa da una chat.
+- **group_map_closed**: un utente apre una visualizzazione mappa dalla chat.
 - **group_map_open**: un utente chiude una visualizzazione mappa.
 - **groupCallJoin**: un utente partecipa a una chiamata di gruppo.
 - **groupClicked**: tiene traccia di quando un utente seleziona il turno del gruppo.
@@ -625,6 +630,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **Sorgente di avvio come diretta, collegamento, appShortcut**: si avvia direttamente o tramite collegamento (registrando la telemetria Mobile Application Management (MAM) o Gestione dispositivi mobili (MDM) all'avvio dell'app per raccogliere dati per gli utenti attivi).
 - **leaveChat**: conferma che si esce dalla chat.
 - **legacyChatLink**: viene selezionato un collegamento a una chat legacy.
+- **link**: l’utente ha iniziato il riscatto del collegamento di invito accedendo all’app Teams.
 - **likeAppDismiss**: quando il prompt che chiede se a un utente piace o meno l'app viene ignorato senza una risposta.
 - **likeAppNo**: quando il prompt che chiede se all'utente piace l'app riceve una risposta negativa.
 - **likeAppYes**: quando il prompt che chiede se all'utente piace l'app riceve una risposta positiva.
@@ -650,6 +656,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **location_active_tracking**: il dispositivo di un utente passa a verifica attiva.
 - **locationCard**: seleziona una scheda di posizione.
 - **location_family_sync**: mostra i membri di un gruppo famiglia che sono stati creati nell'app per famiglie MSA. Conferma che vengono visualizzati tutti i membri della famiglia a cui può essere dato il consenso.
+- **location_data_use_privacy_denied**: l’utente non ha accettato le condizioni sulla privacy.
 - **location_group_map_sync**: viene aperta la visualizzare mappa.
 - **location_map_load**: carica la visualizzazione mappa.
 - **location_map_markers_load**: viene caricata la visualizzazione della mappa. Conferma che gli indicatori di posizione per tutti gli utenti che condividono attivamente sono visualizzati correttamente nella visualizzazione della mappa.
@@ -855,6 +862,9 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **pinChannel**: aggiungere un canale per visualizzarlo al di sopra dell'elenco di Teams e Canali.
 - **pinSelf**: aggiungere se stessi dal foglio di lavoro.
 - **pinUser**: aggiungere un utente dal foglio di lavoro.
+- **place_created**: l'utente ha creato una posizione condivisa.
+- **place_deleted**: l'utente ha eliminato una posizione condivisa.
+- **place_edited**: l'utente ha modificato una posizione condivisa.
 - **play**: riprodurre la registrazione.
 - **playVoicemail** - **Riproduci** toccato in un elemento della segreteria telefonica.
 - **plusButtonClicked**: selezionare il **pulsante più** (**+**).
@@ -918,6 +928,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **reactRemoved_HB**: quando un utente rimuove una reazione tramite la pagina di riepilogo della reazione.
 - **readReceipts**: caratteristica abilitata dall'utente.
 - **redeemInvite**: riscatto all’interno dell’app.
+- **redeemLinkInAppStart**: l’utente ha iniziato il riscatto del collegamento di invito nell’applicazione di Teams. 
 - **refreshCalendarList**: trascinare verso il basso per aggiornare la visualizzazione dell’agenda.
 - **refreshLinksGallery**: quando un utente scorre verso il basso per aggiornare la raccolta collegamenti.
 - **removeAssignee**: conferma che un assegnatario viene rimosso dalla visualizzazione selezione assegnazione, anziché *assignmentRemoved* che viene attivato selezionando **x** all'esterno della visualizzazione selezione assegnazione.
@@ -933,7 +944,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **reorderChannelItem**: un utente riordina i canali aggiunti.
 - **reportAbuseConfirmation**: quando un utente seleziona il pulsante **Fatto** nella schermata di conferma.
 - **reportAbuseOpen**: il numero di volte in cui viene selezionato il pulsante **Segnala un problema** nel menu di scelta rapida.
-- **reportAbuseSend**: quando un utente seleziona il pulsante **Segnala**, la telemetria deve archiviare il tipo di report selezionato.
+- **reportAbuseSend**: quando un utente seleziona il pulsante **Segnala**, la telemetria dovrebbe archiviare il tipo di report selezionato.
 - **replyChain**: pulsante o casella di testo **Nuovo messaggio** selezionato nella catena di risposte (thread).
 - **replyChannel**: pulsante **Rispondi** selezionato in tutti i canali.
 - **replyNavigation**: l'oggetto Rispondi è stato selezionato per passare al post di riferimento.
@@ -958,6 +969,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **saveEditMeeting**: viene selezionato il pulsante **Salva** nella pagina di pianificazione delle riunioni, dopo aver aggiornato una riunione.
 - **saveNewMeeting**: viene selezionato il pulsante **Salva** nella pagina di pianificazione delle riunioni. Per registrare le riunioni salvate con successo e la percentuale di riunioni che non sono state create a causa di un errore lato client o di servizio.
 - **savePlanClicked**: **Crea** viene selezionato nel nuovo autore del piano dall'apertura predefinita dell'app.
+- **dashboardNav**: l’utente passa a una sezione nel dashboard della chat.
+- **scenarioDashboardNav**: l'utente accede alla scheda dashboard all'interno di una conversazione (di pari livello alla scheda chat).
 - **scheduledMeetingJoin**: il pulsante **Partecipa riunione** viene selezionato dall’oggetto riunione pianificata.
 - **scrollCalendarList**: misura il numero di volte che si scorre nel calendario.
 - **scrollDatePicker**: scorrere nel controllo selezione data calendario.
@@ -1013,6 +1026,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **settingsNavReadReceiptNotice**: l'utente è passato alle impostazioni dall'avviso di funzionalità.
 - **settingsOpened**: questa operazione viene attivata quando il fuso orario del dispositivo dell'utente non corrisponde al fuso orario del team e quindi l'utente passa a impostazioni.
 - **setupPinVault**: l'utente salva un pin della Cassaforte per il proprio account. 
+- **shareCharmCompleted**: l’utente ha completato la condivisione di un collegamento di invito tramite l'accesso alla condivisione dell’applicazione.
+- **shareCharmCompleted**: l’utente ha avviato la condivisione di un collegamento di invito tramite l'accesso alla condivisione dell’applicazione. 
 - **shareFile**: viene attivata quando viene selezionato **Condividi file**. Inoltre, consente di verificare se:
   - l'utente è stato in grado di avviare l'operazione di condivisione dei file.
   - l'utente può condividere il file correttamente.
@@ -1127,6 +1142,8 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
   - la destinazione di trasferimento è impostata su Persona.
   - la destinazione di trasferimento è impostata su Numero di telefono.
 - **translateFailed**: traduzione non riuscita (escluso offline). Metriche sulle funzionalità di successo per la traduzione dei messaggi.
+- **place_created**: l'utente ha creato un recinto virtuale.
+- **place_deleted**: l'utente ha eliminato un recinto virtuale.
 - **unansweredCallForward**: viene impostato l’inoltro di chiamata senza risposta. Abilita anche l'inoltro delle chiamate senza risposta (Ricevo io le chiamate è abilitato e Se senza risposta è abilitato).
 - **unblockCaller** sblocca:
   - contatti o numeri dal foglio di lavoro.
@@ -1225,6 +1242,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **fileUploadSuccess**: si attiva al termine di un'operazione di caricamento file.
 - **fileUploadSummary Più**: si attiva quando il contenuto della notifica di riepilogo del caricamento del file cambia o quando si interagisce con la notifica. Le interazioni possono includere movimenti come lo scorrimento rapido per ignorare la notifica o toccare la notifica e così via.
 - **meetingFiles**: si attiva quando si apre la schermata dei file della riunione.
+- **meetNowActionSheet**: si attiva quando l'utente crea un meeting con Riunione immediata.
 - **navPersonalFiles**: si attiva quando si esegue lo spostamento nella schermata dei file.
 
 ### <a name="scenario"></a>Scenario
@@ -1238,7 +1256,7 @@ Questo articolo contiene un elenco degli eventi per dispositivo mobile di Micros
 - **app_start_hot**: per monitorare l'avvio dell'app a caldo (solo Android).
 - **app_start_warm**: per monitorare l'avvio dell'app a tiepido (solo Android).
 - **chat_add_giphy**: conferma che l'azione di rendering GIF Giphy è riuscita o meno.
-- **cortanaError** Per monitorare i messaggi di errore di Cortana.
+- **cortanaError** Per monitorare gli errore di Cortana.
 - **cortanaView** Per monitorare la visualizzazione dell'area di disegno di Cortana.
 - **cortanaRestart** Per monitorare il riavvio di Cortana.
 - **cortanaSetNewConversation** Per monitorare Cortana imposta una nuova conversazione.
