@@ -16,16 +16,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dbac20caa3f1eff0ead7ef0bf7f11d55b7718903
-ms.sourcegitcommit: 448606977ee67befbdc91060363cf90dd346a528
+ms.openlocfilehash: c255fd02342eb6db1878608ad2da09683d7a83ec
+ms.sourcegitcommit: 2591c96d8613660220c5af71fc945e27b31175d7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "48136053"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "52863227"
 ---
 # <a name="required-desktop-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per la versione desktop di Microsoft Teams
 
 Questo articolo contiene un elenco degli eventi desktop di Microsoft Teams e delle proprietà raccolte da ciascun evento.
+
+Per altre informazioni sui dati di diagnostica, tra cui come controllare i dati diagnostici inviati a Microsoft, vedere [Dati di diagnostica inviati dall'app Teams a Microsoft](policy-control-overview.md#diagnostic-data-sent-from-the-teams-app-to-microsoft). Per vedere i dati di diagnostica inviati a Microsoft, è possibile usare il [Visualizzatore dati di diagnostica](https://support.microsoft.com/topic/cf761ce9-d805-4c60-a339-4e07f3182855).
 
 ## <a name="events"></a>Eventi
 
@@ -205,7 +207,7 @@ Questo articolo contiene un elenco degli eventi desktop di Microsoft Teams e del
 | Session_DesktopId                 | ID univoco sessione                                                                  |
 | machineLocked                     | Rileva se il computer era bloccato o no                                          |
 | windowIsVisible                   | Rileva se la finestra dell'app era visibile per l'utente                                      |
-| appStates/webAppStates            | registra un elenco di stati dell'app. Questo è utile per l'analisi dell'arresto anomalo, perché è possibile vedere quale era lo stato dell'app |
+| appStates/webAppStates            | registra un elenco degli stati dell'applicazione. Questo è utile per l’analisi degli arresti anomali perché è possibile vedere lo stato in cui si trovava l'applicazione |
 | crashDesktopSession               | Acquisisce l'ID della sessione arrestata in modo anomalo                                                 |
 | appRuntime                        | Acquisisce il tempo di esecuzione dell'app                                                        |
 | diagnosticEvents                  | Ultimi 50 eventi di diagnostica dell'app web prima dell'arresto anomalo dell'app                                 |
@@ -397,6 +399,6 @@ Questo articolo contiene un elenco degli eventi desktop di Microsoft Teams e del
 | TeamsRing                       | Anello dell'utente corrente autenticato nel client di Teams                            |
 | TeamsVersion                    | Acquisisce la versione dell'app Teams                                            |
 | TelemetrySetupCompletedTime     | Ora di completamento della configurazione della telemetria                                   |
-| UpnMismatch                     | Rilevamento delle mancate corrispondenze tra Outlook e Teams                  |
+| UpnMismatch                     | Possibile mancata corrispondenza del nome dell’entità utente (UPN) tra Outlook e Teams                  |
 | UserDomain                      | Dominio dell'utente                                                       |
 | ViewUpdatedTime                 | Ora di aggiornamento della visualizzazione                                           |
