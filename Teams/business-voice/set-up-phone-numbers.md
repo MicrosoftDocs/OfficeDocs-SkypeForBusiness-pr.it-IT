@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni su come configurare i numeri Microsoft 365 Business Voice di telefono per gli utenti e i servizi dell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7dcf582593cf09977f4992d6b78035a9726c12b8
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 89cb3764e30fa0bf4fcfa9d6a18d29ca69786cef
+ms.sourcegitcommit: 2419348e964cfe97b72d533f267c5d7055d5366f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282543"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52910038"
 ---
 # <a name="step-2-set-up-business-voice-phone-numbers"></a>Passaggio 2: Configurare i numeri di telefono di VoIP aziendale
 
@@ -36,6 +36,10 @@ Prima di configurare utenti o operatori automatici nell'organizzazione, è neces
 
 > [!NOTE]
 > Potrebbero essere necessario diverse ore prima che i nuovi numeri di telefono diventino disponibili in Teams.
+
+Il video seguente mostra come completare questi passaggi nell'interfaccia Teams di amministrazione.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWENzQ]
 
 ## <a name="set-up-a-service-number"></a>Configurare un numero di servizio
 

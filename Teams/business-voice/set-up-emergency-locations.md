@@ -17,18 +17,22 @@ search.appverid: MET150
 description: Informazioni su come configurare le posizioni di emergenza per Microsoft 365 Business Voice.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9fab5fead952837e2fb272819a600381252bcbf8
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: e8f740034a67e1f2199b5a18aa34d67e16df43e2
+ms.sourcegitcommit: 2419348e964cfe97b72d533f267c5d7055d5366f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282533"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "52907762"
 ---
 # <a name="step-1-set-up-a-business-voice-emergency-location"></a>Passaggio 1: Configurare una posizione di emergenza di Business Voice
 
 Una posizione per gli interventi di emergenza viene usata quando qualcuno nell'organizzazione chiama i servizi di emergenza, come il fuoco, la polizia o l'eliambulanza. Quando una persona chiama un servizio di emergenza, l'indirizzo configurato come indirizzo di emergenza dell'organizzazione viene inviato al servizio. Questo passaggio configura la posizione principale per gli interventi di emergenza per l'organizzazione. Questa posizione verrà associata al numero di telefono principale dell'azienda in un passaggio successivo.
 
 Se si hanno utenti in più posizioni, ad esempio uffici privati o uffici in altre città, è possibile configurare altre posizioni per gli interventi di emergenza. È anche possibile configurare posizioni specifiche all'interno di una posizione. I luoghi possono essere edifici, piani, uffici o altri luoghi in cui gli utenti possono essere in una posizione diversa. Dopo aver completato la configurazione iniziale di Business Voice, è possibile aggiungere altre posizioni e posizioni.
+
+Il video seguente mostra come completare questi passaggi nell'interfaccia Teams di amministrazione.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWEZGE]
 
 ## <a name="add-an-emergency-location"></a>Aggiungere una posizione per gli interventi di emergenza
 

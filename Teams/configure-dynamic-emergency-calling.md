@@ -18,12 +18,12 @@ description: Scopri come configurare i Piani per chiamate Microsoft e la funzion
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7c0578496c2ce8d66c7292ac7d7030a1abdd8f88
-ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
+ms.openlocfilehash: ee730c737d105572c9c34c6f329b04de4f8f8472
+ms.sourcegitcommit: 2419348e964cfe97b72d533f267c5d7055d5366f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52856455"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52910048"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -85,7 +85,11 @@ Attualmente sono supportati i client seguenti.  Controllare spesso per visualizz
 - Teams Rooms versione 4.4.25.0 e successive
 
 > [!NOTE]
-> Le chiamate di emergenza dinamiche, inclusa la notifica del desk di sicurezza, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere [Criteri di chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) Subnet e WiFi AP sono supportati. L'opzione/porta Ethernet è supportata Windows 8.1 e versioni successive al momento. 
+> Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere [Criteri di chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 
+
+> [!NOTE]
+> Le posizioni basate su subnet e WiFi sono supportate in tutti Teams client. <br>
+> Ethernet/Switch (LLDP) è supportato solo in Windows e solo in Windows versioni 8.1 e successive al momento.
 
 ## <a name="assign-emergency-addresses"></a>Assegnare indirizzi di emergenza
 
