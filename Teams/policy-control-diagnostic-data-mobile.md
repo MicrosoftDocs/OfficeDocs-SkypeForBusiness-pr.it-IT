@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 28cebeabe860f1e76d10d0af976454161ed448e1
-ms.sourcegitcommit: 2591c96d8613660220c5af71fc945e27b31175d7
+ms.openlocfilehash: 9306646cf76485ba06828f7dad2113912ec28b55
+ms.sourcegitcommit: 2c9ce2e3e4c3f1e3bfe317daa4fed5033d65876b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52863247"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "52873843"
 ---
 # <a name="required-mobile-diagnostic-data-for-microsoft-teams"></a>Dati di diagnostica necessari per dispositivo mobile di Microsoft Teams
 
@@ -1303,6 +1303,8 @@ Per altre informazioni sui dati di diagnostica, tra cui come controllare i dati 
 - **smart_reply_enabled**: conferma che la risposta intelligente è abilitata per l'utente corrente.
 - **smart_reply_received**: conferma la ricezione di un suggerimento per una risposta intelligente.
 - **smart_reply_banned**: conferma che non è possibile visualizzare una risposta intelligente per l'utente corrente.
+- **park_call_for_hold_v2**: conferma che la messa in attesa della chiamata con il parcheggio di chiamata è riuscita o ha avuto esito negativo.
+- **unpark_call_for_hold_v2**: conferma che la ripresa della chiamata con la ripresa di chiamata è riuscita o ha avuto esito negativo. 
 - **update_planner_task_and_nav_to_view**: conferma il corretto aggiornamento di un elemento di attività condivisa e il tempo impiegato da un utente per arrivare alla visualizzazione dopo l'azione.
 - **update_personal_task_and_nav_to_view**: conferma il completamento di un aggiornamento di un elemento dell'attività personale e il tempo impiegato da un utente per visualizzare la schermata successiva. 
 - **updatePlannerTask**: conferma che un utente ha aggiornato correttamente un'attività in un elenco di attività condiviso.
