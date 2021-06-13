@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4ecf4d9abbd3f5c8747744010015ecda35cbeecf
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: ed6ad995cd0a1624171396b68bec3355fc05f559
+ms.sourcegitcommit: 2419348e964cfe97b72d533f267c5d7055d5366f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52717617"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "52909948"
 ---
 # <a name="hardware-requirements-for-microsoft-teams"></a>Requisiti hardware per Microsoft Teams
 
@@ -35,7 +35,7 @@ Tutti i requisiti nelle sezioni seguenti sono validi sia per l'applicazione desk
 
 | Componente | Requisiti |
 |---------|---------|
-|Computer e processore    | Minimo 1,6 GHz (o superiore), dual core<br><br>Nota: per i processori Intel, bisogna considerare la velocità massima raggiunta utilizzando la tecnologia Intel Turbo Boost (Max Turbo Frequency)         |
+|Computer e processore    | Almeno 1,1 GHz o superiore, dual core<br><br>Nota: per i processori Intel, bisogna considerare la velocità massima raggiunta utilizzando la tecnologia Intel Turbo Boost (Max Turbo Frequency)         |
 |Memoria     |    4,0 GB di RAM (Teams richiede 4 GB di RAM dedicati oltre ad altri requisiti di sistema)    |
 |Disco rigido    | 3,0 GB di spazio disponibile su disco        |
 |Schermo    |   Risoluzione dello schermo 1024 x 768 |
