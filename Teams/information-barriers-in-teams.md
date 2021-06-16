@@ -16,12 +16,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b2bae63b2a37b5c5739a988cfe69f23b7609e63b
-ms.sourcegitcommit: cfef9dd41cac0df83bd02b35036d8f8f1b472feb
+ms.openlocfilehash: 7946d6c098979d478f91d8ef67a3214c11823d7d
+ms.sourcegitcommit: dba7984f899f8921b462a56d158fa0a1cc2c2a8b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51697821"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "52929322"
 ---
 # <a name="information-barriers-in-microsoft-teams"></a>Barriere all'informazione in Microsoft Teams
 
@@ -29,7 +29,7 @@ Le barriere alle informazioni sono criteri che un amministratore può configurar
 
 >[!NOTE]
 >- Non è possibile creare gruppi IB (Information Barrier) tra tenant.
->- L'uso di bot, Azure Active Directory (Azure AD) e alcune API per aggiungere utenti non è supportato nella versione 1.
+>- L'uso di bot, app Azure Active Directory (Azure AD), API per l'invio di notifiche del feed attività e alcune API per aggiungere utenti non sono supportate nella versione 1.
 >- I canali privati sono conformi ai criteri IB che si configurano.
 >- Novità: per informazioni sul supporto delle barriere per i siti SharePoint connessi a Teams, vedere Segmenti associati ai siti Microsoft Teams [esterni.](/sharepoint/information-barriers#segments-associated-with-microsoft-teams-sites)
 
