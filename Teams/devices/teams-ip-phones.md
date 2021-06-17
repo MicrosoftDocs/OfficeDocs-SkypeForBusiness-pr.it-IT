@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: f0bd721dd11c81cb294ce3fc5694798867bc3526
-ms.sourcegitcommit: 2419348e964cfe97b72d533f267c5d7055d5366f
+ms.openlocfilehash: 594470affe3de69d2190fadcdbbae96aaa9bc3c7
+ms.sourcegitcommit: a188b3457a923744ffdc35f8efe3e5440af83256
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52910078"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "52957685"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
@@ -44,7 +44,8 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 
 |Modello di dispositivo                         | Versione firmware                                                                                                                                                                                                                           | Data di rilascio
 |:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
-| Crestron UC-P10-T (con e senza ricevitore)    | 1.0.0.80                                                 | Maggio 2021                     |
+| Crestron UC-P10-T (con e senza ricevitore)    | 1.0.0.80                                                 | Maggio 2021             |
+| Crestron UC-P8-T (con e senza ricevitore)     | 1.0.0.56                                                 | Febbraio 2021        
 | Crestron UC-P10-C-T (con e senza ricevitore)  | 1.0.0.80                                                 | Maggio 2021                     |
 | Crestron UC-P8-C-T (con e senza ricevitore)   | 1.0.0.80                                                 | Maggio 2021                     |
 | Yealink MP52                           | 145.15.0.6                                               | Aprile 2021                   |
@@ -52,7 +53,7 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 | AudioCodes C470HD                      | 1.8.293                                                  | Gennaio 2021                 |
 | AudioCodes C450HD                      | C450HD_TEAMS_0,225                                       | Marzo 2019                   |
 | AudioCodes C448HD (solo modalità CAP)      | C450HD_TEAMS_0,225                                       | Marzo 2019                   |
-|Crestron UC-2                           |1.0.1.46                                                  | Luglio 2020                    |
+| Crestron UC-2                          |1.0.1.46                                                  | Luglio 2020                    |
 | Crestron M100                          | Questo prodotto è stato sospeso. Per altre informazioni, visitare [Crestron M100](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Tabletop-Conferencing-Systems/UC-M100-T) sul sito Web di Crestron. | Non più in produzione (11/5/2020) |
 | Crestron Flex UC-P100-T & UC-P110-T    | Questo prodotto è stato sospeso. Per altre informazioni, visitare [uc Telefono](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Accessories/UC-PHONE-T-PLUS) sul sito Web di Crestron.                  | Non più in produzione (11/5/2020) |
 | Visualizzazione ThinkSmart di Lenovo                 | CD-18781Y.200410.067                                                                                                                                                                                                                       | Aprile 2020                   |
@@ -101,6 +102,7 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams di certificazione d
 |:------------------------|:-----------------|:--------------|
 |Crestron TSS-770 | 1.003.0082 |Febbraio 2021 |
 |Crestron TSS-1070 | 1.003.0082 |Febbraio 2021 |
+|Yealink RoomPanel | 147.15.0.2 |Maggio 2021 |
 
 ### <a name="product-release-information-for-teams-phones"></a>Informazioni sulla versione del prodotto per Teams telefoni
 

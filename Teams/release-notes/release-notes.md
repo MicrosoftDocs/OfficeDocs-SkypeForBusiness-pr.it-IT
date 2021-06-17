@@ -16,12 +16,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Note sulla versione per le Microsoft Teams di amministrazione.
-ms.openlocfilehash: 6d634d89c5b810b0df149385e020ab0944def475
-ms.sourcegitcommit: d73dc8505a5cc5af29635a50cbbf0f25bbb17eac
+ms.openlocfilehash: 94213748d55e91022f19e29a48dab7f4fe6e5199
+ms.sourcegitcommit: 1b057bfcc3207960b956962845fd5051afe91722
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "52705260"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "52947608"
 ---
 # <a name="release-notes-for-microsoft-teams-admin-features"></a>Note sulla versione per le Microsoft Teams di amministrazione
 
@@ -31,13 +31,13 @@ Queste note sulla versione forniscono informazioni sulle nuove funzionalità di 
 
 ### <a name="career-coach"></a>Career coach
 
-Career Coach è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce indicazioni personalizzate per gli studenti dell'istruzione superiore per esplorare il percorso di carriera. Career Coach offre agli istituti di istruzione una soluzione di carriera unificata per gli studenti per scoprire il percorso di carriera, sviluppare competenze reali e creare la propria rete in un'unica posizione. [Altre informazioni](../career-coach.md).
+Assistente alla carriera è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce indicazioni personalizzate per gli studenti dell'istruzione superiore per esplorare il percorso di carriera. Assistente alla carriera offre agli istituti di istruzione una soluzione di carriera unificata che consente agli studenti di scoprire il percorso di carriera, sviluppare competenze reali e creare la propria rete in un'unica posizione. [Altre informazioni](../career-coach.md).
 
 ## <a name="march-31-2021"></a>31 marzo 2021
 
 ### <a name="share-to-teams-from-outlook"></a>Condividere in Teams da Outlook
 
-Condividi con Teams da Outlook consente di inviare una copia di messaggi di posta elettronica o conversazioni, inclusi allegati, in chat e canali Teams messaggi. Trovare **l'opzione Condividi Teams** nella barra multifunzione Outlook o nel menu delle azioni per un messaggio di posta elettronica. Condividi con Teams supporta Outlook sul Web, Outlook per Windows e il nuovo Outlook per Mac Preview. [Altre informazioni](../teams-outlook-share-teams.md).
+Condividi con Teams da Outlook consente di inviare una copia di messaggi di posta elettronica o conversazioni, inclusi allegati, in chat e canali Teams messaggi. Trovare **l'opzione Condividi Teams** nella barra multifunzione Outlook o nel menu delle azioni per un messaggio di posta elettronica. Condividi con Teams supporta Outlook sul web, Outlook per Windows e il nuovo Outlook per Mac Preview. [Altre informazioni](../teams-outlook-share-teams.md).
 
 ## <a name="march-30-2021"></a>30 marzo 2021
 
@@ -146,7 +146,7 @@ Un centro tariffe è il termine di settore per un'area geografica che definisce 
 
 ## <a name="december-9-2020"></a>9 dicembre 2020
 
-### <a name="advisor-for-teams-with-microsoft-365-learning-pathways"></a>Consulente per Teams percorsi Microsoft 365 di apprendimento
+### <a name="advisor-for-teams-with-microsoft-365-learning-pathways"></a>Consulente per Teams con Microsoft 365 Learning percorsi
 
 I percorsi di apprendimento di Microsoft 365 rappresentano una soluzione su richiesta che è possibile personalizzare per formare gli utenti e incrementare l'utilizzo di Teams nell'organizzazione. Usare i percorsi di apprendimento insieme ad Assistente per Teams per aiutare gli utenti e favorire una rapida adozione.
 
@@ -258,7 +258,7 @@ Usare Teams eventi live per configurare le impostazioni per gli eventi live che 
 
 ### <a name="skype-for-business-online-connector-integrated-to-teams-powershell-module"></a>Skype for Business Online Connector integrato nel modulo Teams PowerShell
 
-L'ultima Teams pubblica di PowerShell è integrata con Skype for Business Online Connector, fornendo un singolo modulo per la gestione Teams PowerShell. [Altre informazioni](../teams-powershell-overview.md#manage-teams-with-powershell).
+L'ultima Teams pubblica di PowerShell è integrata con Skype for Business Online Connector, fornendo un singolo modulo per la gestione Teams PowerShell.  [Altre informazioni](../teams-powershell-overview.md).
 
 ## <a name="september-8-2020"></a>8 settembre 2020
 
@@ -298,9 +298,9 @@ Con questa funzionalità, agli utenti vengono assegnati automaticamente tag che 
 
 ## <a name="august-14-2020"></a>14 agosto 2020
 
-### <a name="cortana-voice-skills-in-teams"></a>Competenze vocali di Cortana in Teams
+### <a name="cortana-voice-skills-in-teams"></a>Cortana competenze vocali in Teams
 
-Le competenze vocali di Cortana nell'app Teams per dispositivi mobili consentono agli utenti di eseguire attività di riunione, comunicazione e collaborazione usando semplicemente il linguaggio naturale parlato. Gli utenti possono parlare con Cortana facendo clic sul pulsante del microfono nell'app Teams e inviando richieste come "Chiama Megan" o "Invia un messaggio alla mia prossima riunione", se hanno bisogno di connettersi con qualcuno mentre fanno le faccende domestiche o camminano con il cane o in generale in viaggio. Gli utenti possono partecipare alle riunioni semplicemente pronunciando "Partecipa alla prossima riunione" o controllando il calendario chiedendo "cosa ho questa mattina". Una volta in una riunione o una chiamata, possono richiamare Cortana dal menu di overflow nella fase della riunione ed eseguire attività tipiche durante la riunione, come l'aggiunta di persone per nome o numero ("Aggiungi Megan alla chiamata"), una presentazione della presentazione ("presenta la presentazione delle revisioni trimestrali") o la navigazione tra le diapositive ("Vai alla diapositiva dell'appendice"). Altri elementi supportati dalla funzionalità sono la ricerca e la condivisione di file, la ricerca e lo spostamento all'interno dell'app Teams ("Apri la chat con Giovanni, Vai all'attività non letta, Vai alle mie menzioni e così via).
+Cortana vocali nell'app Teams per dispositivi mobili consentono agli utenti di eseguire attività di riunione, comunicazione e collaborazione usando semplicemente il linguaggio naturale parlato. Gli utenti possono parlare con Cortana facendo clic sul pulsante del microfono nell'app Teams e inviando richieste come "Chiama Megan" o "Invia un messaggio alla mia prossima riunione" se hanno bisogno di connettersi con qualcuno durante le faccende domestiche o mentre camminano con il cane o in generale in viaggio. Gli utenti possono partecipare alle riunioni semplicemente pronunciando "Partecipa alla prossima riunione" o controllando il calendario chiedendo "cosa ho questa mattina". Una volta in una riunione o una chiamata, possono richiamare Cortana dal menu di riversamento nella fase della riunione ed eseguire attività tipiche durante la riunione, come l'aggiunta di persone per nome o numero ("Aggiungi Megan alla chiamata"), una presentazione della presentazione ("presentare la presentazione delle revisioni trimestrali") o lo spostamento tra le diapositive ("Passare alla diapositiva dell'appendice"). Altri elementi supportati dalla funzionalità sono la ricerca e la condivisione di file, la ricerca e lo spostamento all'interno dell'app Teams ("Apri la chat con Giovanni, Vai all'attività non letta, Vai alle mie menzioni e così via).
 
 Cortana in Teams rispetta le stesse promesse di privacy, sicurezza e conformità a livello aziendale per i servizi enterprise di Cortana, come illustrato nelle Condizioni per i Servizi [online (OST).](https://www.microsoft.com/licensing/product-licensing/products?rtc=1) [Altre informazioni](../cortana-in-teams.md).
 
