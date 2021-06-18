@@ -12,70 +12,70 @@ f1.keywords:
 localization_priority: Normal
 ms.collection:
 - M365-collaboration
-description: L'amministratore può ottenere informazioni su un elenco di problemi noti per Microsoft Teams Rooms, tra cui l'aggiornamento, l'interfaccia utente, l'hardware e le limitazioni e i comportamenti previsti.
+description: L'amministratore può ottenere informazioni su un elenco di problemi noti per Microsoft Teams Rooms, tra cui aggiornamento, interfaccia utente, hardware e limitazioni e comportamenti previsti.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: d601db3c028c7c93a97131db48de81bdcab314e4
 ms.sourcegitcommit: bd7b4986044f7921b25506488dfed405fc2e7ca3
-ms.translationtype: MT
+ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/10/2021
 ms.locfileid: "52877488"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
-Questo articolo elenca i problemi noti per l'Microsoft Teams Rooms, in base all'area delle caratteristiche.
+Questo articolo elenca i problemi noti di Microsoft Teams Rooms per area funzionale.
 <!-- If we get word that one of these issues no longer applies, contact meerak@microsoft.com or msmets@microsoft.com and let them know to EoL the corresponding KB  -->
 
 <a name="update"> </a>  
-## <a name="update"></a>Aggiornamento 
+## <a name="update"></a>Update 
 
-| Titolo del problema |  Sintomo \/ del comportamento | Soluzione alternativa nota | Articolo della Knowledge Base |
+| Titolo problema |  Comportamento \/ Sintomo | Soluzione alternativa nota | Articolo della Knowledge Base |
 |  ---        |      ---             |   ---            | --- |
-| Applicazione non avviata |  Dopo l'aggiornamento alla versione 4.4.41.0 dell'applicazione, il sistema viene avviato sullo schermo nero o passa alla schermata di accesso dopo alcuni minuti. | Seguire i passaggi descritti in Microsoft Teams Rooms'applicazione non viene avviata dopo l'aggiornamento alla [versione 4.4.41.0](/microsoftteams/troubleshoot/teams-administration/teams-rooms-app-wont-start-after-update) per risolvere il problema.  | Nessuno |
-|  Volume della riunione basso dopo la condivisione del contenuto         |   Microsoft Teams Rooms dispositivi in Windows 10 20H2 l'esperienza ha ridotto i contenuti multimediali e il volume delle riunioni dopo la condivisione di contenuti tramite HDMI in sala. Questo problema è causato da un problema audio in Windows 10 20H2. | Attualmente non esiste una soluzione alternativa per questo problema. Per ridurre l'impatto sul volume audio della riunione (ad esempio, la voce dei partecipanti), abbiamo disabilitato l'audio HDMI in tutti Teams Rooms dispositivi. Il Windows 10 sta esaminando il problema e l'avviso del cliente rimarrà in vigore fino a quando non viene trovata una soluzione. | Nessuno |
-|  App non aggiornata         |    La Microsoft Teams Rooms console visualizza un errore "Configurazione di sistema non aggiornata".                |   [Usare lo strumento Microsoft Teams Rooms ripristino](recovery-tool.md)             |  Nessuno |
-|  Dispositivo aggiornato alla versione non supportata di Windows 10   |    Windows 10 dispositivo aggiornato dalla versione 1803 alla versione 1809, che non è supportato. La versione supportata è 1903. |   Questo problema può verificarsi se l'impostazione di Criteri di gruppo o MDM per [l'impostazione DeferFeatureUpdatesPeriodinDays,](/windows/deployment/update/waas-configure-wufb) che consente di posticipare gli aggiornamenti delle funzionalità per un numero di giorni specificato, è impostata su un massimo di 365 giorni. <br><br> Windows 10 versione 1809 non è supportata con Microsoft Teams Rooms, mentre la versione 1903 è supportata. Tuttavia, a partire dal 27 marzo 2020, la versione 1809 ha più di 365 giorni. Se questa impostazione non viene modificata, Windows l'installazione della versione 1809, che potrebbe causare problemi con Microsoft Teams Rooms.<br><br>Per evitare questa situazione, **rimuovere qualsiasi** impostazione di Criteri di gruppo o MDM per posticipare gli aggiornamenti. In questo modo Windows l'aggiornamento alla versione del sistema operativo più recente e supportata. <br><br>**IMPORTANTE** L'impostazione di Criteri di gruppo o MDM deve essere **rimossa** (non configurata) e **non deve essere impostata su 0.** Se il criterio è impostato su 0, Windows l'ultima versione disponibile che potrebbe non essere supportata. |  Nessuno |
+| L'applicazione non viene avviata |  Dopo l'aggiornamento all'applicazione versione 4.4.41.0, il sistema viene avviato su schermo nero o passa alla schermata di accesso dopo alcuni minuti. | Segui la procedura descritta in [applicazione Microsoft Teams Rooms non viene avviata dopo l'aggiornamento alla versione 4.4.41.0](/microsoftteams/troubleshoot/teams-administration/teams-rooms-app-wont-start-after-update) per risolvere questo problema.  | Nessuno |
+|  Volume di riunioni basso dopo la condivisione del contenuto         |   I dispositivi Microsoft Teams Rooms su Windows 10 esperienza 20H2 hanno ridotto il volume di contenuti multimediali e riunioni dopo la condivisione di contenuti tramite HDMI in sala. Questo è causato da un problema audio in Windows 10 20H2. | Attualmente non esiste alcuna soluzione per questo problema. Per ridurre l'impatto sul volume audio della riunione (ad esempio, la voce dei partecipanti), abbiamo disabilitato l'audio HDMI in tutti i dispositivi Teams Rooms. Il team di Windows 10 sta analizzando il problema e un avviso del cliente rimarrà attivo fino a quando non viene trovata una risoluzione. | Nessuno |
+|  App non aggiornato         |    La console di Microsoft Teams Rooms mostra un errore "configurazione del sistema non aggiornata".                |   [Utilizza lo strumento di ripristino di Microsoft Teams Rooms](recovery-tool.md)             |  Nessuno |
+|  Il dispositivo è stato aggiornato alla versione non supportata di Windows 10   |    Dispositivo con Windows 10 aggiornato dalla versione 1803 alla versione 1809, che non è supportato. La versione supportata è la 1903. |   Questo può verificarsi se l'impostazione [Criteri di gruppo o MDM per DeferFeatureUpdatesPeriodinDays](/windows/deployment/update/waas-configure-wufb), che consente di rinviare gli aggiornamenti delle funzionalità per un numero specificato di giorni, è configurata a un massimo di 365 giorni. <br><br> Windows 10 versione 1809 non è supportata con Microsoft Teams Rooms, mentre la versione 1903 è supportata. Tuttavia, a partire dal 27 marzo 2020, la versione 1809 ha più di 365 giorni. Se questa impostazione non viene modificata, Windows cerca di installare la versione 1809, causando problemi con Microsoft Teams Rooms.<br><br>Per evitare questa situazione, **rimuovi** qualsiasi impostazione Criteri di gruppo o MDM per il rinvio degli aggiornamenti. In questo modo Windows può eseguire l'aggiornamento alla versione del sistema operativo più recente supportata. <br><br>**IMPORTANTE** L'impostazione Criteri di gruppo o MDM deve essere **rimossa** (non configurata) e non **impostata su 0**. Se il criterio è impostato su 0, Windows accetta la versione disponibile più recente che potrebbe non essere supportata. |  Nessuno |
 
 
 
 <a name="OS-conflicts"> </a>  
 ## <a name="user-interface"></a>Interfaccia utente 
 
-| Titolo del problema |  Sintomo \/ del comportamento | Soluzione alternativa nota | Articolo della Knowledge Base |
+| Titolo problema |  Comportamento \/ Sintomo | Soluzione alternativa nota | Articolo della Knowledge Base |
 |  ---        |      ---             |   ---            | --- |
-|Tastiera virtuale mancante   | La tastiera virtuale non viene visualizzata quando è necessario immettere informazioni in Microsoft Teams Rooms. Questo problema si verifica in Windows 10, versione 1903. | Installare l'aggiornamento cumulativo 2020-04 per Windows 10, versione 1903 per sistemi basati su x64 tramite Windows aggiornamenti.  | Nessuno | 
+|Tastiera virtuale mancante   | La tastiera virtuale non viene visualizzata quando è necessario immettere informazioni in Microsoft Teams Rooms. Questo problema si verifica in Windows 10, versione 1903. | Installa l'aggiornamento cumulativo 2020-04 per Windows 10, versione 1903 per sistemi basati su x64 tramite gli aggiornamenti di Windows.  | Nessuno | 
 
 <a name="Hardware"> </a>  
 ## <a name="hardware"></a>Hardware
 
-| Titolo del problema |  Sintomo \/ del comportamento | Soluzione alternativa nota | Articolo della Knowledge Base |
+| Titolo problema |  Comportamento \/ Sintomo | Soluzione alternativa nota | Articolo della Knowledge Base |
 |  ---        |      ---             |   ---            |   --- |
-| Monitor non rilevati | Quando si esegue Microsoft Teams Rooms in un dispositivo Surface Pro (modello 2017), i monitor non vengono rilevati. |  Tenere premuto il Surface Pro di alimentazione per 20 o più secondi. In questo caso, il dispositivo si riavvia e cancella la cache grafica. |[KB4055681](https://support.microsoft.com/help/4055681/monitors-are-not-detected-when-you-run-skype-room-systems-on-a-surface)       | 
+| Monitor non rilevati | Quando esegui Microsoft Teams Rooms in un dispositivo Surface Pro (modello 2017), i monitor non vengono rilevati. |  Tieni premuto il pulsante di alimentazione Surface Pro per 20 o più secondi. Quando esegui questa operazione, il dispositivo viene riavviato e la cache grafica viene cancellata. |[KB4055681](https://support.microsoft.com/help/4055681/monitors-are-not-detected-when-you-run-skype-room-systems-on-a-surface)       | 
 
 <a name="Limits"> </a>
 ## <a name="limitations-and-expected-behaviors"></a>Limitazioni e comportamenti previsti
 
 ***
 
-Microsoft Teams Rooms non supporta l'input HDCP, che è stato osservato per causare problemi con la funzionalità di inserimento HDMI (video, audio). Assicurarsi che gli switch connessi a Microsoft Teams Rooms le opzioni HDCP siano disattivate. 
+Microsoft Teams Rooms non supporta l'input HDCP, che è stato osservato per causare problemi con la funzionalità di inserimento HDMI (video, audio). Verifica che i commutatori connessi a Microsoft Teams Rooms abbiano le opzioni HDCP disattivate. 
 
 ***
 
-Se si vuole che lo schermo anteriore della sala si sbiliti automaticamente a un'origine video attiva , ad esempio una console MTR, quando la fonte si riattiva dalla modalità standby, è necessario che siano soddisfatte determinate condizioni. Questa funzionalità è facoltativa ma supportata da Microsoft Teams Rooms software, purché l'hardware sottostante supporti la funzionalità. Una TV consumer usata come schermo davanti alla sala deve supportare la funzionalità Consumer Electronics Control (CEC) di HDMI.  A seconda del dock o della console selezionata (che potrebbe non supportare CEC, vedere la documentazione del supporto del produttore), potrebbe essere necessario un controller come [hd-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato. 
+Se desideri che un display frontale passi automaticamente a un’origine video attiva (come una console MTR) quando l’origine si sveglia dalla modalità standby, devono essere soddisfatte alcune condizioni. Questa funzionalità è facoltativa ma supportata dal software Microsoft Teams Rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore utente usato come display frontale della sala deve supportare la funzionalità Consumer Electronics Control (CEC) di HDMI.  A seconda del dock o della console selezionati (che potrebbe non supportare CEC, fare riferimento alla documentazione di supporto del produttore), potrebbe essere necessario un controller come un [HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato. 
 
 ***
 
-Usare sempre una connessione di rete cablata a 1 Gbps per garantire la larghezza di banda necessaria. 
+Usa sempre una connessione di rete cablata da 1 Gbps per assicurarti di avere la larghezza di banda necessaria. 
 
 ***
 
-Se il Microsoft Teams Rooms dispositivo perde la fiducia con il dominio, non sarà possibile eseguire l'autenticazione nel dispositivo e aprire Impostazioni. Ad esempio, se si rimuove il Microsoft Teams Rooms dal dominio dopo che è stato aggiunto al dominio, l'attendibilità viene persa. La soluzione alternativa consiste nell'accedere con l'account di amministratore locale. 
+Se il tuo dispositivo Microsoft Teams Rooms perde l'attendibilità con il dominio, non sarà possibile eseguire l'autenticazione nel dispositivo e aprire Impostazioni. Ad esempio, se si rimuove Microsoft Teams Rooms dal dominio dopo che è stato aggiunto al dominio, l'attendibilità viene persa. La soluzione alternativa consiste nell'accedere con l'account amministratore locale. 
 ***
-Microsoft Teams Rooms è un'applicazione multi-finestra e richiede che uno schermo anteriore della sala sia connesso alla porta HDMI del dispositivo, per il corretto funzionamento dell'app. Assicurarsi di avere collegato uno schermo HDMI o di usare un connettore HDMI fittizio se si sta testando e non si ha ancora acquistato uno schermo.
+Microsoft Teams Rooms è un'applicazione a più finestre e richiede che un display frontale della sala sia connesso alla porta HDMI del dispositivo, affinché l'app funzioni correttamente. Verifica di avere un display HDMI connesso o di usare un plug-in HDMI fittizio se stai testando e non si è ancora acquistato un display.
 ***
 <a name="See"> </a>  
 ## <a name="see-also"></a>Vedere anche
 
-[Microsoft Teams Rooms guida](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+[Guida Microsoft Teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
 
 [Gestire Microsoft Teams Rooms](rooms-manage.md).
