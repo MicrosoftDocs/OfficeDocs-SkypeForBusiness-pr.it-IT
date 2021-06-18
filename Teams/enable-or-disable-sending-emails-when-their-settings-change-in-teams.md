@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: "Informazioni su come abilitare o disabilitare Skype l'invio di messaggi di posta elettronica agli utenti quando vengono apportate modifiche a impostazioni come il pin o il numero di conferenza predefinito in Microsoft Teams. "
-ms.openlocfilehash: e1bb6df0a443f01ed3c9bc70d03eedc05f217ce4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 17c2864703eafa2c70709da0381f870abba58ad0
+ms.sourcegitcommit: 8c2093f7a048a9a56b36e4a3b4c48ae1206c52f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092704"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53004168"
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-microsoft-teams"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano in Microsoft Teams
 
@@ -75,6 +75,14 @@ Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando so
 
 **Uso di Windows PowerShell**
   
+È anche possibile usare il modulo Microsoft Teams PowerShell ed eseguire:
+
+```PowerShell
+Set-CsOnlineDialInConferencingTenantSettings -AutomaticallySendEmailsToUsers $true|$false
+```
+
+È possibile usare [Set-CsOnlineDialInConferencingTenantSettings](/powershell/module/skype/set-csonlinedialinconferencingtenantsettings) per gestire altre impostazioni per l'organizzazione, tra cui la posta elettronica.
+
 Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
 
     

@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
-ms.openlocfilehash: 3f7a557555d6846c4ada792ceb05da43ce91ed0f
-ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
+ms.openlocfilehash: e599948a78baa96849e9ddaedf6eb2a4a131ebf4
+ms.sourcegitcommit: 8c2093f7a048a9a56b36e4a3b4c48ae1206c52f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51598744"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53004181"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri per le riunioni per & video
 
@@ -35,11 +35,12 @@ Questo articolo descrive le impostazioni dei criteri di riunione specifiche per 
 
 - [Consenti la trascrizione](#allow-transcription)
 - [Consenti registrazione cloud](#allow-cloud-recording)
-- [Modalità per audio IP](#mode-for-ip-audio) 
-- [Modalità per video IP](#mode-for-ip-video) 
+- [Modalità per audio IP](#mode-for-ip-audio)
+- [Modalità per video IP](#mode-for-ip-video)
 - [Consenti video IP](#allow-ip-video)
 - [Velocità in bit supporto (Kbs)](#media-bit-rate-kbs)
-- [Modalità vilter video](#video-filters-mode)
+- [Modalità filtri video](#video-filters-mode)
+- [Consenti impostazioni di sfondo personalizzate](#allow-custom-background-settings)
 
 ### <a name="allow-transcription"></a>Consenti la trascrizione
 
@@ -95,7 +96,7 @@ Questo è un criterio per utente. Questa impostazione controlla se il video può
 
 Se impostata su **Disabilitato** per un utente, tale utente non può attivare il video o visualizzare i video condivisi dagli altri partecipanti alla riunione. Per i partecipanti alla riunione che non hanno criteri assegnati (ad esempio, i partecipanti anonimi), questa opzione è impostata su **Video in uscita e in arrivo abilitato** per impostazione predefinita.
 
-Questa impostazione non si applica ai dispositivi delle sale riunioni come i dispositivi Surface Hub e Microsoft Teams Rooms. 
+Questa impostazione non si applica ai dispositivi delle sale riunioni come i dispositivi Surface Hub e Microsoft Teams Rooms.
 
 Questa impostazione non è ancora disponibile per gli ambienti Microsoft 365 Government Community Cloud (GCC), GCC High o Department of Defense (DoD).
 
@@ -106,7 +107,7 @@ Per altre informazioni, vedere [Gestire audio/video per i partecipanti alle riun
 
 ### <a name="allow-ip-video"></a>Consenti video IP
 
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei Teams per dispositivi mobili, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione. 
+Questa è una combinazione di criterio per organizzatore e criterio per utente. Il video è un componente chiave per le riunioni. In alcune organizzazioni, gli amministratori possono volere un maggiore controllo sugli utenti che possono usare il video nelle riunioni. Questa impostazione controlla se è possibile attivare il video nelle riunioni ospitate da un utente e nelle chiamate tra due persone e di gruppo avviate da un utente. Nei Teams per dispositivi mobili, questa impostazione controlla se gli utenti possono condividere foto e video in una riunione.
 
 Le riunioni organizzate da un utente che ha questa impostazione di criteri abilitata consentono la condivisione di video nella riunione da parte dei partecipanti, se anche questi ultimi hanno l'impostazione di criteri abilitata. I partecipanti alla riunione a cui non sono assegnati criteri, ad esempio i partecipanti anonimi e federati, ereditano i criteri dell'organizzatore della riunione.
 
@@ -150,7 +151,7 @@ Per un utente, l'impostazione di criteri più restrittiva per il video ha la pre
 |---------|---------|
 |Disabilitare audio e video per i partecipanti nelle riunioni  |Modalità per audio IP: **Disabilitata**<br> Modalità per video IP: **Disabilitato**<br>Consenti video IP: N/D       |
 |Abilitare solo video e audio in arrivo per i partecipanti nelle riunioni  |Modalità per audio IP: **Audio in uscita e in arrivo abilitato**<br> Modalità per video IP: **Video in uscita e in arrivo abilitato**<br>Consenti video IP: **Disattivato**       |
-|Disabilitare video per i partecipanti nelle riunioni (i partecipanti hanno solo audio)|  Modalità per audio IP: **Abilita audio in uscita e in arrivo**<br> Modalità per video IP: **Disabilitato**<br>Consenti video IP: N/D        
+|Disabilitare video per i partecipanti nelle riunioni (i partecipanti hanno solo audio)|  Modalità per audio IP: **Abilita audio in uscita e in arrivo**<br> Modalità per video IP: **Disabilitato**<br>Consenti video IP: N/D
 |Abilitare audio e video per i partecipanti nelle riunioni    |Modalità per audio IP: **Audio in uscita e in arrivo abilitato** (impostazione predefinita)<br> Modalità per video IP: **Video in uscita e in arrivo abilitato** (impostazione predefinita)<br>Consenti video IP: **Attivata** (impostazione predefinita)    |
 
 Vengono applicati i criteri più restrittivi tra i criteri dell'organizzatore della riunione e i criteri dell'utente. Ad esempio, se un organizzatore ha un criterio che limita il video e un criterio di un utente non limita il video, i partecipanti alla riunione ereditano il criterio dell'organizzatore della riunione e non hanno accesso al video nelle riunioni. Ciò significa che possono partecipare alla riunione solo con l'audio.
@@ -160,7 +161,7 @@ Vengono applicati i criteri più restrittivi tra i criteri dell'organizzatore de
 
 #### <a name="teams-mobile-clients"></a>Client Teams per dispositivi mobili
 
-Per gli utenti di client Teams per dispositivi mobili, la possibilità di condividere foto e video durante una riunione dipende anche dall'impostazione **Consenti video IP** o **Modalità video IP**. A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](meeting-policies-content-sharing.md#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](https://docs.microsoft.com/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
+Per gli utenti di client Teams per dispositivi mobili, la possibilità di condividere foto e video durante una riunione dipende anche dall'impostazione **Consenti video IP** o **Modalità video IP**. A seconda dell'impostazione di criteri che ha la precedenza, la possibilità di condividere video e foto non sarà disponibile. Questa impostazione non interessa la condivisione dello schermo, che si configura usando un'impostazione [Modalità di condivisione dello schermo](meeting-policies-content-sharing.md#screen-sharing-mode) separata. Inoltre, è possibile impostare un [criterio per dispositivi mobili di Teams](/powershell/module/skype/new-csteamsmobilitypolicy) per impedire agli utenti di dispositivi mobili di usare il video IP tramite una rete cellulare, il che significa che devono usare una connessione WiFi.
 
 ### <a name="media-bit-rate-kbs"></a>Velocità in bit supporto (KB)
 
@@ -176,7 +177,7 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 
 Questo è un criterio per utente. Questa impostazione controlla se gli utenti possono personalizzare lo sfondo del video in una riunione.
 
-Attualmente, è possibile usare solo PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegnarlo agli utenti.
+Attualmente, è possibile usare solo PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegnarlo agli utenti.
 
 Per specificare se gli utenti possono personalizzare lo sfondo del video in una riunione, impostare il parametro **VideoFiltersMode** come indicato di seguito:
 
@@ -190,13 +191,41 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 > [!NOTE]
 > Le immagini caricate dagli utenti non vengono analizzate da Teams. Se si usa l'impostazione **AllFilters**, sono previsti criteri interni dell'organizzazione per impedire agli utenti di caricare immagini offensive o inappropriate o di cui l'organizzazione non dispone dei diritti di utilizzo per gli sfondi delle riunioni di Teams.
 
+### <a name="allow-custom-background-settings"></a>Consenti impostazioni di sfondo personalizzate
 
+È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa caratteristica consente alle aziende di applicare il marchio aziendale Teams riunioni.
 
+1. Passare all'interfaccia di amministrazione di Teams.
 
+2. Selezionare **Criteri riunione Personalizza** immagini  >  **riunione**.
 
+   ![Selezione dei criteri riunione con il pulsante Personalizza immagini riunione evidenziato](media/custom-background-image-button.png)
+
+3. Selezionare **Su da** immagini di sfondo a livello di **organizzazione.**
+
+4. Selezionare **+ Aggiungi immagini**.
+
+5. Nel riquadro Gestione sfondi selezionare **Aggiungi immagine.**
+
+6. Verificare che le immagini soddisfino questi requisiti:
+  
+   - Dimensioni minime 360 px
+   - Dimensioni massime 2048 px
+   - Tipo di file PNG, JPG o BMP
+   - È possibile caricare al massimo 50 immagini
+
+7. Visualizzare in anteprima le immagini selezionate e quindi selezionare **Chiudi**.
+
+8. Rivedi le immagini e aggiungi altre immagini in base alle esigenze.
+
+9. Selezionare **Salva**.
+
+I partecipanti alla riunione visualizzano una selezione di immagini di sfondo che possono usare quando partecipano a una riunione.
+
+> [!NOTE]
+> L'applicazione delle modifiche potrebbe richiedere fino a 24 ore.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
 - [Assegnare i criteri agli utenti in Teams](assign-policies.md)
-

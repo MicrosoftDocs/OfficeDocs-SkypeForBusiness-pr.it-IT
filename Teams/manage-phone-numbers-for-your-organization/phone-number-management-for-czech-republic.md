@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono nella Repubblica Ceca per Microsoft Teams.
-ms.openlocfilehash: 0fd6a2db9b74dbc4f567c0a18d4aaaf54dc2f367
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: f0f5d3243595590571112df2b697000d871c5fd2
+ms.sourcegitcommit: 7015d6f5858399a4e6c5feded95dfba50d17ce7b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52130377"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52993979"
 ---
 # <a name="phone-number-management-for-the-czech-republic"></a>Telefono gestione dei numeri per la Repubblica Ceca
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione. |Nella Repubblica Ceca è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. Puoi anche inviare una nuova richiesta di numero di telefono scaricando il modulo e [inviandoci il modulo.](mailto:ptneu@microsoft.com)<br/><br/>[Nuova richiesta di numero di telefono per la Repubblica Ceca (v.1.0)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true). <br/><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
+|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione. |Nella Repubblica Ceca è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. Puoi anche inviare una nuova richiesta di numero di telefono scaricando il modulo e [inviandoci il modulo.](mailto:ptneu@microsoft.com)<br/><br/>Nuova richiesta di numero di telefono per la Repubblica [Ceca (v.1.0) cs-CZ](https://download.microsoft.com/download/9/0/c/90c1b1c3-048f-4ee1-b741-f93911635271/know-your-customer-for-the-czech-republic-(v1.0)-(cs-CZ).pdf). <br/><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
 |Ricevi i numeri di telefono trasferiti a Noi. | Scarica questo modulo. <br/><br/>[Lettera di autorizzazione (LOA) per la Repubblica Ceca (tutti i numeri) (v.1.0) (cz-cz)](https://download.microsoft.com/download/6/f/6/6f66c134-5ad4-42d8-b7f9-f857fb5fd4ca/letter-of-authorization-(loa)-for-czech-republic-(all-numbers)-(v1.0)-(cz-cz).pdf)<br/><br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/><br/>Il completamento del trasferimento di numeri in questo mercato può richiedere da due a tre settimane. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento. |
 |Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |

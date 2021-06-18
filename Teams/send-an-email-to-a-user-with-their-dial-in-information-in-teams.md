@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come inviare agli utenti un messaggio di posta elettronica con le informazioni relative ai servizi di audioconferenza in Microsoft Teams.
-ms.openlocfilehash: 8cc0e549d502a2c7a8d8052ebe496a82e36b6648
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 13c566884c5bc3e8d5de873696541c4b88fcb271
+ms.sourcegitcommit: 8c2093f7a048a9a56b36e4a3b4c48ae1206c52f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117214"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53004198"
 ---
 # <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-microsoft-teams"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative ai servizi di audioconferenza in Microsoft Teams
 
@@ -55,7 +55,6 @@ Ecco un esempio del messaggio di posta elettronica inviato:
 
 3. Su **Audioconferenza**, fai clic su **Invia informazioni sulla conferenza nel messaggio di posta elettronica**.
 
-
 ## <a name="what-else-should-you-know-about-this-email"></a>Cos'altro occorre sapere su questo messaggio di posta elettronica?
 
 - Sono disponibili diversi messaggi di posta elettronica inviati agli utenti dell'organizzazione dopo che sono stati abilitati per le audioconferenze:
@@ -71,17 +70,6 @@ Ecco un esempio del messaggio di posta elettronica inviato:
   - Quando il provider di servizi di audioconferenza per un utente viene modificato da Microsoft a un altro provider o **Nessuno**.
     
   - Quando il provider di servizi di audioconferenza per un utente viene modificato in Microsoft.
-  
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
-
-Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
-    
-  - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
-    
-  - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
-    
-Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
-    
   
 ## <a name="related-topics"></a>Argomenti correlati
 

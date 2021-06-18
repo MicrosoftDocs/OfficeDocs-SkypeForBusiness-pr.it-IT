@@ -21,16 +21,16 @@ description: Informazioni su come gestire le attività nell'Microsoft Teams di a
 localization_priority: Normal
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 410f5d32dd8af4775639a080725cd5680b6a70c2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: abf17b12e8555ce12642627093d856f917dce439
+ms.sourcegitcommit: 8c2093f7a048a9a56b36e4a3b4c48ae1206c52f6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121374"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "53004148"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
-Le funzionalità Attività e voti in Teams per l'istruzione consentono ai docenti di assegnare attività, lavoro o quiz agli studenti. I docenti possono gestire le sequenze temporali delle assegnazioni, le istruzioni, aggiungere risorse per l'assegnazione, classificare con le rubriche e altro ancora. Possono anche tenere traccia dello stato di avanzamento della classe e dei singoli studenti nella scheda Voti.
+Le funzionalità Attività e voti in Teams per l'istruzione i docenti possono assegnare attività, lavoro o quiz agli studenti. I docenti possono gestire le sequenze temporali delle assegnazioni, le istruzioni, aggiungere risorse per l'assegnazione, classificare con le rubriche e altro ancora. Possono anche tenere traccia dello stato di avanzamento della classe e dei singoli studenti nella scheda Voti.
 
 [Altre informazioni su Attività e voti in Teams per l'istruzione.](https://support.office.com/article/microsoft-teams-5aa4431a-8a3c-4aa5-87a6-b6401abea114?ui=en-US&rs=en-IE&ad=IE#ID0EAABAAA=Assignments)
 
@@ -107,3 +107,10 @@ Selezionare **Integrazioni** dal menu laterale, quindi selezionare **Aggiungi** 
 ![Screenshot che mostra la copia della chiave API](./educationImages/Assignments_mopo_turnitin3.png)
 
 Dopo aver fatto **clic sul pulsante** Salva nell'interfaccia di amministrazione per questa impostazione, consentire l'applicazione di queste impostazioni per alcune ore.
+
+### <a name="removing-assignments-and-grades"></a>Rimozione di attività e voti
+È possibile usare i Teams per rimuovere assegnazioni e voti per un utente specifico o per l'intero tenant. 
+
+Per rimuovere assegnazioni e voti per un singolo utente, passare **all'interfaccia** di amministrazione di Teams e passare alle app Teams **>** Criteri di autorizzazione per creare una nuova definizione dei criteri di autorizzazione delle app.  Quando si crea la nuova definizione dei  criteri, impostare i criteri delle **app Microsoft** su Blocca app specifiche e consentire a tutti gli altri utenti e aggiungere Attività **all'elenco** delle applicazioni bloccate. Dopo aver salvato la nuova definizione dei criteri, assegnarla agli utenti appropriati.
+
+Per rimuovere attività e voti per l'intero tenant, passare **Teams** Interfaccia di amministrazione, passare Teams app > Gestisci  **app** e cercare e selezionare Attività nell'elenco delle applicazioni. Modificare l'impostazione dello stato nella pagina Delle impostazioni dell'applicazione Assegnazione su _Bloccato_. 

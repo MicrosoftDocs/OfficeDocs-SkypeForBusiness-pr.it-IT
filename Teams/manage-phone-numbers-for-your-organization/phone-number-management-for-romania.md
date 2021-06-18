@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Romania per Microsoft Teams.
-ms.openlocfilehash: 4a1420ff3e0ff9ea8ac00e5e154c68412a8cd4df
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: 88364b4168cecd6e58c558547e3ce96812e3ebed
+ms.sourcegitcommit: 7015d6f5858399a4e6c5feded95dfba50d17ce7b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52130394"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52993909"
 ---
 # <a name="phone-number-management-for-romania"></a>Telefono gestione dei numeri per la Romania
 
@@ -37,7 +37,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione. <br/> |In Romania, è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Puoi anche inviare una nuova richiesta di numero di telefono scaricando il modulo e [inviandoci il modulo.](mailto:ptneu@microsoft.com)<br/><br/>[Nuova richiesta di numero di telefono per la Romania (v.1.0) (rm-rm).](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true) <br/><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato. |
+|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione. <br/> |In Romania, è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Puoi anche inviare una nuova richiesta di numero di telefono scaricando il modulo e [inviandoci il modulo.](mailto:ptneu@microsoft.com)<br/><br/>[Nuova richiesta di numero di telefono per la Romania (v.1.0) (rm-rm).](https://download.microsoft.com/download/1/4/d/14d27bf9-4326-409e-be0c-30f88d1fae83/new-phone-number-request-for-romania-(v1.0)-(ro-RO).pdf) <br/><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato. |
 |Ricevi i numeri di telefono trasferiti a Noi.<br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Romania (tutti i numeri) (v.1.0) (rm-rm)](https://download.microsoft.com/download/9/c/1/9c1dcdc3-2161-4e2e-bdce-34397d20782e/letter-of-authorization-(loa)-for-romania-(all-numbers)-(v.1.0)-(rm-rm).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com).<br/><br/>Il trasferimento di numeri in questo mercato può richiedere da quattro a cinque settimane. <br/><br/>Questi numeri non possono essere usati per le conferenze in questo momento.  <br/> |
 |Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |
