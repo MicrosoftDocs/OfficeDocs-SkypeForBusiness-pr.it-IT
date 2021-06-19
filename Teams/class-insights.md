@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9be2f3e173a450f99b4ca6451684dd22e7ab267e
-ms.sourcegitcommit: 03ff569a0b7a8e04d7b0ab32f370a9a537fa7fe7
+ms.openlocfilehash: 62b0fec32218d2e3a04c92d5a58c82b6a8d7572c
+ms.sourcegitcommit: 35ee6946b6f560a268d1313bf51c3cc94d8d52f1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "52064852"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "52997725"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -44,7 +44,7 @@ I docenti accedono a Insights a livello di classe. Vedono l'attività degli stud
 
 Non esistono prerequisiti per l'uso di Insights e i docenti devono solo aggiungere Insights alla barra delle app a sinistra o come scheda a ciascuna delle loro classi in Teams.
 
-I docenti sono identificati in base agli istituti di istruzione. I docenti devono appartenere a un istituto di istruzione ed essere proprietari del team di classe per visualizzare i dati in Insights.
+I docenti sono definiti secondo gli istituti di istruzione. I docenti devono appartenere a un istituto di istruzione ed essere proprietari del team di classe per visualizzare i dati in Insights.
 
 ### <a name="education-leaders"></a>Responsabili dell'istruzione
 I responsabili dell'istruzione sono tutti quei ruoli dell'istituto che necessitano di una visione organizzativa per comprendere l’impegno, i progressi, il benessere e così via degli studenti. I docenti possono anche essere responsabili dell'istruzione quando sono proprietari di un team di classe e hanno bisogno di qualcosa in più rispetto alla vista della loro classi, come ad esempio il capo di un dipartimento disciplinare. 
@@ -182,7 +182,7 @@ La visualizzazione di Insights a livello di classe come docente *non* richiede c
 Per altre informazioni, vedere [**Sincronizzare i dati del sistema informativo degli studenti (SIS) con Insights per l'istruzione**](education-insights-sis-data-sync.md).
 
 ## <a name="manage-permissions"></a>Gestione autorizzazioni
-È necessario fornire le autorizzazioni per i responsabili dell'istruzione, i dirigenti distrettuali, i presidi scolastici, i dirigenti scolastici, i consulenti, i responsabili delle aree di apprendimento, i direttori dei programmi, gli assistenti sociali e gli psicologi. Ai docenti viene *automaticamente* concessa l'autorizzazione quando sono proprietari di un team di classe.
+Gli amministratori IT possono fornire le autorizzazioni per i responsabili dell'istruzione, i dirigenti distrettuali, i presidi scolastici, i dirigenti scolastici, i consulenti, i responsabili delle aree di apprendimento, i direttori dei programmi, gli assistenti sociali e gli psicologi. Ai docenti viene *automaticamente* concessa l'autorizzazione quando sono proprietari di un team di classe.
 
 Per altre informazioni, leggere [**Gestione dell'accesso utenti a Education Insights**](education-insights-manage-access.md).
 
@@ -210,18 +210,18 @@ Distribuire ai **docenti** il materiale seguente:
 Materiale per i **responsabili dell'istruzione**:
 *   [Pagina di supporto di Insights per le organizzazioni nel settore dell'istruzione](https://support.microsoft.com/office/8738d1b1-4e1c-49bd-9e8d-b5292474c347).
 
-## <a name="turn-insights-off-or-on"></a>Disattivare o attivare Insights
+## <a name="turn-insights-on-or-off"></a>Disattivare o attivare Insights
 Per impostazione predefinita, Insights è attivato. Quando si sceglie di non usare il servizio, *tutti i dati raccolti per Insights verranno eliminati*. Se si riattiva Insights, la raccolta dei dati inizierà dal momento in cui il servizio viene riattivato.
 
-### <a name="turn-off-insights-using-school-data-sync-sds"></a>Disattivare Insights tramite School Data Sync (SDS)
 School Data Sync (SDS) consente di automatizzare il processo di importazione e sincronizzazione dei dati del sistema informativo degli studenti (SIS) con Teams.
 
-L'uso di Insights *non* richiede l'uso di SDS. Tuttavia, è possibile scegliere di non usare Insights in qualsiasi momento. Aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com) e passare a **Impostazioni** > **Gestisci Insights per l'istruzione**. Disattivare '**Raccogli dati per Insights**' per disabilitare Insights. 
+L'uso di Insights *non* richiede l'uso di SDS. Tuttavia, è possibile scegliere di non usare Insights in qualsiasi momento. 
 
-:::image type="content" source="media/insights-sds-settings.png" alt-text="Attivazione o disattivazione di Insights.":::
+* Per attivare/disattivare Insights nello stesso posto, aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com/) e passare a **Impostazioni** > **Gestisci Insights per l’istruzione**. Attivare/isattivare '**Raccogli dati attività per Insights**' per abilitare/disabilitare Insights.
 
-### <a name="turn-on-insights"></a>Attivare Insights
-Se Insights è stato disattivato, è possibile attivarlo rapidamente. Aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com) e passare a **Impostazioni** > **Gestisci Insights per l'istruzione**. Attivare '**Raccogli dati per Insights**' per abilitare Insights.
+* Per disattivare l'uso di Insights di School Data Sync seguire le istruzioni in [Disabilitazione di SDS for Insights](/schooldatasync/how-to-deploy-sds-for-insights#disabling-sds-for-insights).
+
+* Per riattivarlo, seguire le istruzioni in [Come distribuire SDS per Insights](/schooldatasync/how-to-deploy-sds-for-insights).
 
 ### <a name="how-to-delete-your-data"></a>Come eliminare i dati
 Insights archivia le azioni che i docenti e gli studenti compiono nel contesto di un team di classe. Questo tipo di dati è considerato un set di dati mescolati e pertanto non viene eliminato automaticamente una volta che gli account utente di studenti o docenti vengono eliminati dall'organizzazione.
@@ -238,9 +238,9 @@ Se non si ha un account manager, aprire un ticket. Passare all'[interfaccia di a
  
 Verificare anche che la raccolta dei dati per Insights sia abilitata. Anche se è attivata per impostazione predefinita, l'amministratore IT potrebbe aver disattivato il servizio e quindi eliminato tutti i dati conservati in Insights.
 
-Per verificarlo, aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com) e passare a **Impostazioni** > **Gestisci Insights per l’istruzione**. Controllare lo stato di "Raccogli dati per Insights".
+Per verificarlo, aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com) e passare a **Impostazioni** > **Gestisci Insights per l’istruzione**. Controllare lo stato di ‘Raccogli dati attività per Insights’.
 
-Se è disattivato, riattivarlo.  Insights inizierà a raccogliere dati, ma per vederli nei report possono essere necessarie fino a 24 ore. 
+Se è disattivato, riattivarlo. Insights inizierà a raccogliere dati, ma per vederli nei report possono essere necessarie fino a 24 ore. 
 
 
 ### <a name="why-do-i-see-data-for-some-students-or-classes-not-all"></a>Perché vengono visualizzati solo i dati di alcuni studenti o classi e non tutti?
