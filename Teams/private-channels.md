@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: 8dd0120f0a92591b3417d01c7a86c396161215a1
-ms.sourcegitcommit: 8c2093f7a048a9a56b36e4a3b4c48ae1206c52f6
+ms.openlocfilehash: 53eeff9791ac07939756f56a7ebce635ac7cd819
+ms.sourcegitcommit: 24ae0c223e9d915c505146d422ad049c88a4ed51
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "53004158"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "53023237"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -95,7 +95,7 @@ Ogni canale privato include una siti di SharePoint. La raccolta siti separata co
 >I siti di SharePoint del canale privato non sono inclusi nella pagina Siti attivi della nuova interfaccia di amministrazione di SharePoint.
 >I siti di SharePoint del canale privato creati dopo il 28 giugno 2021 avranno l'ID modello personalizzato TEAMCHANNEL#1.
 
-Un sito di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dal sito del team padre. L'appartenenza ai gruppi dei membri e di proprietari al sito viene mantenuta sincronizzata con quella ai canali privati in Teams. Le modifiche apportate all'appartenenza ai gruppi di membri o di proprietari in SharePoint verranno trasferite automaticamente all'appartenenza ai canali privati entro quattro ore. Negli scenari in cui alcuni utenti hanno l'esigenza di accedere ai documenti senza bisogno di accedere ai messaggi del canale privato, è possibile aggiungerli al gruppo Visitatori nel sito o a un nuovo gruppo distinto da quelli di Proprietari e Membri.
+Un sito di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dal sito del team padre. L'appartenenza ai gruppi dei membri e di proprietari al sito viene mantenuta sincronizzata con quella ai canali privati in Teams. Le modifiche apportate all'appartenenza ai gruppi di membri o di proprietari in SharePoint verranno trasferite automaticamente all'appartenenza ai canali privati entro quattro ore. Negli scenari in cui alcuni utenti hanno l'esigenza di accedere ai documenti senza bisogno di accedere ai messaggi del canale privato, è possibile aggiungerli al gruppo Visitatori nel documento e nella raccolta o a un nuovo gruppo distinto da quelli di Proprietari e Membri.
 
 Teams gestisce il ciclo di vita della raccolta siti del canale privato. Se il sito viene eliminato all'esterno di Teams, un processo in background ripristina il sito entro quattro ore, a condizione che il canale privato sia ancora attivo. Se il sito viene eliminato permanentemente, viene eseguito il provisioning del sito per il canale privato.
 
