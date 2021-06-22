@@ -21,53 +21,53 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come usare l'interfaccia Microsoft Teams di amministrazione o Windows PowerShell per creare e gestire i dial plan (piani di chiamata PSTN).
-ms.openlocfilehash: f94c847f5c75e793856c0975678e2806629e2dcd
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 59867dfe49436635f690ff9f5d56a2be36e553ec
+ms.sourcegitcommit: 127f9fdf05b93ee3af4244224e1c32a45d73d3ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282363"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "53046233"
 ---
-# <a name="create-and-manage-dial-plans"></a><span data-ttu-id="3f2b6-103">Creare e impostare dial plan</span><span class="sxs-lookup"><span data-stu-id="3f2b6-103">Create and manage dial plans</span></span>
+# <a name="create-and-manage-dial-plans"></a><span data-ttu-id="6acd4-103">Creare e impostare dial plan</span><span class="sxs-lookup"><span data-stu-id="6acd4-103">Create and manage dial plans</span></span>
 
-<span data-ttu-id="3f2b6-104">Dopo aver programmato i dial plan per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per il routing delle chiamate, è possibile creare i dial plan.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-104">After you plan the dial plans for your organization and figured out all the normalization rules that need to be created for call routing, you're ready to create the dial plans.</span></span> <span data-ttu-id="3f2b6-105">Con un account di amministratore con una licenza di Teams valida, è possibile usare l'interfaccia di amministrazione di Microsoft Teams o Windows PowerShell per creare e gestire i dial plan.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-105">With an administrator account that has a valid Teams license, you can use the Microsoft Teams admin center or Windows PowerShell to create and manage dial plans.</span></span>  
+<span data-ttu-id="6acd4-104">Dopo aver programmato i dial plan per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per il routing delle chiamate, è possibile creare i dial plan.</span><span class="sxs-lookup"><span data-stu-id="6acd4-104">After you plan the dial plans for your organization and figured out all the normalization rules that need to be created for call routing, you're ready to create the dial plans.</span></span> <span data-ttu-id="6acd4-105">Con un account di amministratore con una licenza di Teams valida, è possibile usare l'interfaccia di amministrazione di Microsoft Teams o Windows PowerShell per creare e gestire i dial plan.</span><span class="sxs-lookup"><span data-stu-id="6acd4-105">With an administrator account that has a valid Teams license, you can use the Microsoft Teams admin center or Windows PowerShell to create and manage dial plans.</span></span>  
 
-## <a name="using-the-microsoft-teams-admin-center"></a><span data-ttu-id="3f2b6-106">Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-106">Using the Microsoft Teams admin center</span></span>
+## <a name="using-the-microsoft-teams-admin-center"></a><span data-ttu-id="6acd4-106">Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="6acd4-106">Using the Microsoft Teams admin center</span></span>
 
-### <a name="create-a-dial-plan"></a><span data-ttu-id="3f2b6-107">Creare un piano di chiamata</span><span class="sxs-lookup"><span data-stu-id="3f2b6-107">Create a dial plan</span></span>
+### <a name="create-a-dial-plan"></a><span data-ttu-id="6acd4-107">Creare un piano di chiamata</span><span class="sxs-lookup"><span data-stu-id="6acd4-107">Create a dial plan</span></span>
 
-1. <span data-ttu-id="3f2b6-108">Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Piano di**  >  **chiamata vocale.**</span><span class="sxs-lookup"><span data-stu-id="3f2b6-108">In the left navigation of the Microsoft Teams admin center, go to **Voice** > **Dial plan**.</span></span>
-2. <span data-ttu-id="3f2b6-109">Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per il piano di chiamata.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-109">Click **Add**, and then enter a name and description for the dial plan.</span></span>
-    <span data-ttu-id="3f2b6-110">![Screenshot che mostra la pagina Aggiungi per la creazione di un dial plan](media/create-dial-plan.png)</span><span class="sxs-lookup"><span data-stu-id="3f2b6-110">![Screenshot showing the Add page for creating a dial plan](media/create-dial-plan.png)</span></span>
-3. <span data-ttu-id="3f2b6-111">In **Dettagli piano di** chiamata specificare un prefisso di composizione esterno se gli utenti devono comporre una o più cifre iniziali aggiuntive , ad esempio 9, per ottenere una linea esterna.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-111">Under **Dial plan details**, specify an external dialing prefix if users need to dial one or more additional leading digits (for example, 9) to get an external line.</span></span> <span data-ttu-id="3f2b6-112">Procedi come segue.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-112">To do this:</span></span>
-    1. <span data-ttu-id="3f2b6-113">Nella casella **Prefisso di composizione esterno** immettere un prefisso di composizione esterno.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-113">In the **External dialing prefix** box, enter an external dialing prefix.</span></span> <span data-ttu-id="3f2b6-114">Il prefisso può contenere fino a quattro caratteri (#,\*, e 0-9).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-114">The prefix can be up to four characters (#,\*, and 0-9).</span></span>
-    2. <span data-ttu-id="3f2b6-115">Attivare la **composizione ottimizzata del dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-115">Turn on **Optimized device dialing**.</span></span> <span data-ttu-id="3f2b6-116">Se si specifica un prefisso di composizione esterno, è necessario attivare questa impostazione anche per applicare il prefisso in modo che le chiamate possano essere effettuate all'esterno dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-116">If you specify an external dialing prefix, you must also turn on this setting to apply the prefix so calls can be made outside your organization.</span></span>
-4. <span data-ttu-id="3f2b6-117">In **Regole di normalizzazione** configurare e associare una o più regole [di normalizzazione](what-are-dial-plans.md#normalization-rules) per il piano di chiamata.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-117">Under **Normalization rules**, configure and associate one or more [normalization rules](what-are-dial-plans.md#normalization-rules) for the dial plan.</span></span> <span data-ttu-id="3f2b6-118">A ogni piano di chiamata deve essere associata almeno una regola di normalizzazione.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-118">Each dial plan must have at least one normalization rule associated with it.</span></span>  <span data-ttu-id="3f2b6-119">A questo scopo, eseguire una o più delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-119">To do this, do one or more of the following:</span></span>
-    - <span data-ttu-id="3f2b6-120">Per creare una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Aggiungi** e quindi definire la regola.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-120">To create a new normalization rule and associate it with the dial plan, click **Add**, and then define the rule.</span></span>
-    - <span data-ttu-id="3f2b6-121">Per modificare una regola di normalizzazione già associata al dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Modifica.**</span><span class="sxs-lookup"><span data-stu-id="3f2b6-121">To edit a normalization rule that's already associated with the dial plan, select the rule by clicking to the left of the rule name, and then click **Edit**.</span></span> <span data-ttu-id="3f2b6-122">Apportare le modifiche desiderate e quindi fare clic su **Salva.**</span><span class="sxs-lookup"><span data-stu-id="3f2b6-122">Make the changes you want, and then click **Save**.</span></span>
-    - <span data-ttu-id="3f2b6-123">Per rimuovere una regola di normalizzazione dal dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Rimuovi.**</span><span class="sxs-lookup"><span data-stu-id="3f2b6-123">To remove a normalization rule from the dial plan, select the rule by clicking to the left of the rule name, and then click **Remove**.</span></span>
-5. <span data-ttu-id="3f2b6-124">Disporre le regole di normalizzazione nell'ordine desiderato.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-124">Arrange the normalization rules in the order that you want.</span></span> <span data-ttu-id="3f2b6-125">Fare **clic su Sposta su** o Sposta **giù** per modificare la posizione delle regole nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-125">Click **Move up** or **Move down** to change the position of rules in the list.</span></span>
+1. <span data-ttu-id="6acd4-108">Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Piano di**  >  **chiamata vocale.**</span><span class="sxs-lookup"><span data-stu-id="6acd4-108">In the left navigation of the Microsoft Teams admin center, go to **Voice** > **Dial plan**.</span></span>
+2. <span data-ttu-id="6acd4-109">Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per il piano di chiamata.</span><span class="sxs-lookup"><span data-stu-id="6acd4-109">Click **Add**, and then enter a name and description for the dial plan.</span></span>
+    <span data-ttu-id="6acd4-110">![Screenshot che mostra la pagina Aggiungi per la creazione di un dial plan](media/create-dial-plan.png)</span><span class="sxs-lookup"><span data-stu-id="6acd4-110">![Screenshot showing the Add page for creating a dial plan](media/create-dial-plan.png)</span></span>
+3. <span data-ttu-id="6acd4-111">In **Dettagli piano di** chiamata specificare un prefisso di composizione esterno se gli utenti devono comporre una o più cifre iniziali aggiuntive , ad esempio 9, per ottenere una linea esterna.</span><span class="sxs-lookup"><span data-stu-id="6acd4-111">Under **Dial plan details**, specify an external dialing prefix if users need to dial one or more additional leading digits (for example, 9) to get an external line.</span></span> <span data-ttu-id="6acd4-112">Procedi come segue.</span><span class="sxs-lookup"><span data-stu-id="6acd4-112">To do this:</span></span>
+    1. <span data-ttu-id="6acd4-113">Nella casella **Prefisso di composizione esterno** immettere un prefisso di composizione esterno.</span><span class="sxs-lookup"><span data-stu-id="6acd4-113">In the **External dialing prefix** box, enter an external dialing prefix.</span></span> <span data-ttu-id="6acd4-114">Il prefisso può contenere fino a quattro caratteri (#,\*, e 0-9).</span><span class="sxs-lookup"><span data-stu-id="6acd4-114">The prefix can be up to four characters (#,\*, and 0-9).</span></span>
+    2. <span data-ttu-id="6acd4-115">Attivare la **composizione ottimizzata del dispositivo**.</span><span class="sxs-lookup"><span data-stu-id="6acd4-115">Turn on **Optimized device dialing**.</span></span> <span data-ttu-id="6acd4-116">Se si specifica un prefisso di composizione esterno, è necessario attivare questa impostazione anche per applicare il prefisso in modo che le chiamate possano essere effettuate all'esterno dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="6acd4-116">If you specify an external dialing prefix, you must also turn on this setting to apply the prefix so calls can be made outside your organization.</span></span>
+4. <span data-ttu-id="6acd4-117">In **Regole di normalizzazione** configurare e associare una o più regole [di normalizzazione](what-are-dial-plans.md#normalization-rules) per il piano di chiamata.</span><span class="sxs-lookup"><span data-stu-id="6acd4-117">Under **Normalization rules**, configure and associate one or more [normalization rules](what-are-dial-plans.md#normalization-rules) for the dial plan.</span></span> <span data-ttu-id="6acd4-118">A ogni piano di chiamata deve essere associata almeno una regola di normalizzazione.</span><span class="sxs-lookup"><span data-stu-id="6acd4-118">Each dial plan must have at least one normalization rule associated with it.</span></span>  <span data-ttu-id="6acd4-119">A questo scopo, eseguire una o più delle operazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="6acd4-119">To do this, do one or more of the following:</span></span>
+    - <span data-ttu-id="6acd4-120">Per creare una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Aggiungi** e quindi definire la regola.</span><span class="sxs-lookup"><span data-stu-id="6acd4-120">To create a new normalization rule and associate it with the dial plan, click **Add**, and then define the rule.</span></span>
+    - <span data-ttu-id="6acd4-121">Per modificare una regola di normalizzazione già associata al dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Modifica.**</span><span class="sxs-lookup"><span data-stu-id="6acd4-121">To edit a normalization rule that's already associated with the dial plan, select the rule by clicking to the left of the rule name, and then click **Edit**.</span></span> <span data-ttu-id="6acd4-122">Apportare le modifiche desiderate e quindi fare clic su **Salva.**</span><span class="sxs-lookup"><span data-stu-id="6acd4-122">Make the changes you want, and then click **Save**.</span></span>
+    - <span data-ttu-id="6acd4-123">Per rimuovere una regola di normalizzazione dal dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Rimuovi.**</span><span class="sxs-lookup"><span data-stu-id="6acd4-123">To remove a normalization rule from the dial plan, select the rule by clicking to the left of the rule name, and then click **Remove**.</span></span>
+5. <span data-ttu-id="6acd4-124">Disporre le regole di normalizzazione nell'ordine desiderato.</span><span class="sxs-lookup"><span data-stu-id="6acd4-124">Arrange the normalization rules in the order that you want.</span></span> <span data-ttu-id="6acd4-125">Fare **clic su Sposta su** o Sposta **giù** per modificare la posizione delle regole nell'elenco.</span><span class="sxs-lookup"><span data-stu-id="6acd4-125">Click **Move up** or **Move down** to change the position of rules in the list.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="3f2b6-126">Teams scorre l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-126">Teams traverses the list of normalization rules from the top down and uses the first rule that matches the dialed number.</span></span> <span data-ttu-id="3f2b6-127">Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano ordinate al di sopra di quelle meno restrittive.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-127">If you set up a dial plan so that a dialed number can match more than one normalization rule, make sure the more restrictive rules are sorted above the less restrictive ones.</span></span>
+    > <span data-ttu-id="6acd4-126">Teams scorre l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto.</span><span class="sxs-lookup"><span data-stu-id="6acd4-126">Teams traverses the list of normalization rules from the top down and uses the first rule that matches the dialed number.</span></span> <span data-ttu-id="6acd4-127">Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano ordinate al di sopra di quelle meno restrittive.</span><span class="sxs-lookup"><span data-stu-id="6acd4-127">If you set up a dial plan so that a dialed number can match more than one normalization rule, make sure the more restrictive rules are sorted above the less restrictive ones.</span></span> <span data-ttu-id="6acd4-128">Se si configura un piano di chiamata che normalizza un numero composto senza un "+", il servizio di chiamata tenterà di normalizzare di nuovo il numero usando le regole del piano di chiamata tenant e regionale.</span><span class="sxs-lookup"><span data-stu-id="6acd4-128">If you set up a dial plan that normalizes a dialed number without a "+", the calling service will attempt to normalize the number again using Tenant and regional dial plan rules.</span></span> <span data-ttu-id="6acd4-129">Per evitare la doppia normalizzazione, è consigliabile che tutte le regole di normalizzazione dia origine a numeri che iniziano con "+".</span><span class="sxs-lookup"><span data-stu-id="6acd4-129">To avoid double normalization, it's recommended that all normalization rules result in numbers starting with a "+".</span></span> <span data-ttu-id="6acd4-130">I clienti di Direct Routing possono usare [le regole di traduzione trunk](direct-routing-translate-numbers.md) per rimuovere il "+" se necessario.</span><span class="sxs-lookup"><span data-stu-id="6acd4-130">Direct Routing customers can use [trunk translation](direct-routing-translate-numbers.md) rules to remove the "+" if required.</span></span> 
 
-6. <span data-ttu-id="3f2b6-128">Fare clic su **Salva**.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-128">Click **Save**.</span></span>
-7. <span data-ttu-id="3f2b6-129">Se si vuole testare il piano di chiamata, in **Test piano di chiamata** immettere un numero di telefono e quindi fare clic su **Test**.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-129">If you want to test the dial plan, under **Test dial plan**, enter a phone number, and then click **Test**.</span></span>
+6. <span data-ttu-id="6acd4-131">Fare clic su **Salva**.</span><span class="sxs-lookup"><span data-stu-id="6acd4-131">Click **Save**.</span></span>
+7. <span data-ttu-id="6acd4-132">Se si vuole testare il piano di chiamata, in **Test piano di chiamata** immettere un numero di telefono e quindi fare clic su **Test**.</span><span class="sxs-lookup"><span data-stu-id="6acd4-132">If you want to test the dial plan, under **Test dial plan**, enter a phone number, and then click **Test**.</span></span>
 
-### <a name="edit-a-dial-plan"></a><span data-ttu-id="3f2b6-130">Modificare un piano di chiamata</span><span class="sxs-lookup"><span data-stu-id="3f2b6-130">Edit a dial plan</span></span>
+### <a name="edit-a-dial-plan"></a><span data-ttu-id="6acd4-133">Modificare un piano di chiamata</span><span class="sxs-lookup"><span data-stu-id="6acd4-133">Edit a dial plan</span></span>
 
-1. <span data-ttu-id="3f2b6-131">Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Piano di**  >  **chiamata vocale.**</span><span class="sxs-lookup"><span data-stu-id="3f2b6-131">In the left navigation of the Microsoft Teams admin center, go to **Voice** > **Dial plan**.</span></span>
-2. <span data-ttu-id="3f2b6-132">Selezionare il piano di chiamata facendo clic a sinistra del nome del dial plan e quindi fare clic su **Modifica.**</span><span class="sxs-lookup"><span data-stu-id="3f2b6-132">Select the dial plan by clicking to the left of the dial plan name, and then click **Edit**.</span></span>
-3. <span data-ttu-id="3f2b6-133">Apportare le modifiche desiderate e quindi fare clic su **Salva.**</span><span class="sxs-lookup"><span data-stu-id="3f2b6-133">Make the changes that you want, and then click **Save**.</span></span>
+1. <span data-ttu-id="6acd4-134">Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Piano di**  >  **chiamata vocale.**</span><span class="sxs-lookup"><span data-stu-id="6acd4-134">In the left navigation of the Microsoft Teams admin center, go to **Voice** > **Dial plan**.</span></span>
+2. <span data-ttu-id="6acd4-135">Selezionare il piano di chiamata facendo clic a sinistra del nome del dial plan e quindi fare clic su **Modifica.**</span><span class="sxs-lookup"><span data-stu-id="6acd4-135">Select the dial plan by clicking to the left of the dial plan name, and then click **Edit**.</span></span>
+3. <span data-ttu-id="6acd4-136">Apportare le modifiche desiderate e quindi fare clic su **Salva.**</span><span class="sxs-lookup"><span data-stu-id="6acd4-136">Make the changes that you want, and then click **Save**.</span></span>
 
-### <a name="assign-a-dial-plan-to-users"></a><span data-ttu-id="3f2b6-134">Assegnare un piano di chiamata agli utenti</span><span class="sxs-lookup"><span data-stu-id="3f2b6-134">Assign a dial plan to users</span></span>
+### <a name="assign-a-dial-plan-to-users"></a><span data-ttu-id="6acd4-137">Assegnare un piano di chiamata agli utenti</span><span class="sxs-lookup"><span data-stu-id="6acd4-137">Assign a dial plan to users</span></span>
 
-<span data-ttu-id="3f2b6-135">Assegnare un piano di chiamata nello stesso modo in cui si assegnano i criteri.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-135">You assign a dial plan in the same way you assign policies.</span></span> [!INCLUDE [assign-policy](includes/assign-policy.md)]
+<span data-ttu-id="6acd4-138">Assegnare un piano di chiamata nello stesso modo in cui si assegnano i criteri.</span><span class="sxs-lookup"><span data-stu-id="6acd4-138">You assign a dial plan in the same way you assign policies.</span></span> [!INCLUDE [assign-policy](includes/assign-policy.md)]
 
-## <a name="using-powershell"></a><span data-ttu-id="3f2b6-136">Utilizzo di PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f2b6-136">Using PowerShell</span></span>
+## <a name="using-powershell"></a><span data-ttu-id="6acd4-139">Utilizzo di PowerShell</span><span class="sxs-lookup"><span data-stu-id="6acd4-139">Using PowerShell</span></span>
   
-### <a name="start-powershell"></a><span data-ttu-id="3f2b6-137">Avviare PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f2b6-137">Start PowerShell</span></span>
-- <span data-ttu-id="3f2b6-138">Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-138">Open a Windows PowerShell command prompt and run the following commands:</span></span>
+### <a name="start-powershell"></a><span data-ttu-id="6acd4-140">Avviare PowerShell</span><span class="sxs-lookup"><span data-stu-id="6acd4-140">Start PowerShell</span></span>
+- <span data-ttu-id="6acd4-141">Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti:</span><span class="sxs-lookup"><span data-stu-id="6acd4-141">Open a Windows PowerShell command prompt and run the following commands:</span></span>
 
 ```powershell
   # When using Teams PowerShell Module
@@ -77,72 +77,72 @@ ms.locfileid: "52282363"
    Connect-MicrosoftTeams -Credential $credential
 ```
   
-### <a name="create-and-manage-your-dial-plans"></a><span data-ttu-id="3f2b6-139">Creare e gestire i dial plan</span><span class="sxs-lookup"><span data-stu-id="3f2b6-139">Create and manage your dial plans</span></span>
+### <a name="create-and-manage-your-dial-plans"></a><span data-ttu-id="6acd4-142">Creare e gestire i dial plan</span><span class="sxs-lookup"><span data-stu-id="6acd4-142">Create and manage your dial plans</span></span>
 
-<span data-ttu-id="3f2b6-140">È possibile utilizzare un singolo cmdlet o uno script di PowerShell per creare e gestire i piani di chiamata dei tenant.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-140">You can either use a single cmdlet or a PowerShell script to create and manage tenant dial plans.</span></span>
+<span data-ttu-id="6acd4-143">È possibile utilizzare un singolo cmdlet o uno script di PowerShell per creare e gestire i piani di chiamata dei tenant.</span><span class="sxs-lookup"><span data-stu-id="6acd4-143">You can either use a single cmdlet or a PowerShell script to create and manage tenant dial plans.</span></span>
   
-#### <a name="using-single-cmdlets"></a><span data-ttu-id="3f2b6-141">Utilizzo di cmdlet singolo</span><span class="sxs-lookup"><span data-stu-id="3f2b6-141">Using single cmdlets</span></span>
+#### <a name="using-single-cmdlets"></a><span data-ttu-id="6acd4-144">Utilizzo di cmdlet singolo</span><span class="sxs-lookup"><span data-stu-id="6acd4-144">Using single cmdlets</span></span>
 
-- <span data-ttu-id="3f2b6-142">Per creare un nuovo piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-142">To create a new dial plan, run:</span></span>
+- <span data-ttu-id="6acd4-145">Per creare un nuovo piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="6acd4-145">To create a new dial plan, run:</span></span>
     
   ```PowerShell
   New-CsTenantDialPlan -Identity RedmondDialPlan -Description "Dial Plan for Redmond" -NormalizationRules <pslistmodifier> -ExternalAccessPrefix 9 -SimpleName "Dial-Plan-for-Redmond"
   ```
 
-    <span data-ttu-id="3f2b6-143">Per altri esempi e parametri, consultare[New-CsTenantDialPlan](/powershell/module/skype/new-cstenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-143">For other examples and parameters, see [New-CsTenantDialPlan](/powershell/module/skype/new-cstenantdialplan).</span></span>
+    <span data-ttu-id="6acd4-146">Per altri esempi e parametri, consultare[New-CsTenantDialPlan](/powershell/module/skype/new-cstenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="6acd4-146">For other examples and parameters, see [New-CsTenantDialPlan](/powershell/module/skype/new-cstenantdialplan).</span></span>
     
-- <span data-ttu-id="3f2b6-144">Per modificare le impostazioni di un piano di chiamata esistente, eseguire:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-144">To edit the settings of an existing dial plan, run:</span></span>
+- <span data-ttu-id="6acd4-147">Per modificare le impostazioni di un piano di chiamata esistente, eseguire:</span><span class="sxs-lookup"><span data-stu-id="6acd4-147">To edit the settings of an existing dial plan, run:</span></span>
     
   ```PowerShell
   Set-CsTenantDialPlan -Identity RedmondDialPlan  -NormalizationRules <pslistmodifier> -ExternalAccessPrefix 9
     -SimpleName "Dial-Plan-for-Redmond"
   ```
 
-    <span data-ttu-id="3f2b6-145">Per altri esempi e parametri, consultare[Set-CsTenantDialPlan](/powershell/module/skype/set-cstenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-145">For other examples and parameters, see [Set-CsTenantDialPlan](/powershell/module/skype/set-cstenantdialplan).</span></span>
+    <span data-ttu-id="6acd4-148">Per altri esempi e parametri, consultare[Set-CsTenantDialPlan](/powershell/module/skype/set-cstenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="6acd4-148">For other examples and parameters, see [Set-CsTenantDialPlan](/powershell/module/skype/set-cstenantdialplan).</span></span>
     
-- <span data-ttu-id="3f2b6-146">Per aggiungere utenti a un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-146">To add users to a dial plan, run:</span></span>
+- <span data-ttu-id="6acd4-149">Per aggiungere utenti a un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="6acd4-149">To add users to a dial plan, run:</span></span>
     
   ```PowerShell
   Grant-CsTenantDialPlan -Identity amos.marble@contoso.com -PolicyName RedmondDialPlan
   ```
 
-    <span data-ttu-id="3f2b6-147">Per altri esempi e parametri, consultare [Grant-CsTenantDialPlan](/powershell/module/skype/grant-cstenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-147">For other examples and parameters, see [Grant-CsTenantDialPlan](/powershell/module/skype/grant-cstenantdialplan).</span></span>
+    <span data-ttu-id="6acd4-150">Per altri esempi e parametri, consultare [Grant-CsTenantDialPlan](/powershell/module/skype/grant-cstenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="6acd4-150">For other examples and parameters, see [Grant-CsTenantDialPlan](/powershell/module/skype/grant-cstenantdialplan).</span></span>
     
-- <span data-ttu-id="3f2b6-148">Per visualizzare le impostazioni di un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-148">To view the settings on a dial plan, run:</span></span>
+- <span data-ttu-id="6acd4-151">Per visualizzare le impostazioni di un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="6acd4-151">To view the settings on a dial plan, run:</span></span>
     
   ```PowerShell
   Get-CsTenantDialPlan -Identity RedmondDialPlan
   ```
 
-    <span data-ttu-id="3f2b6-149">Per altri esempi e parametri, consultare [Get-CsTenantDialPlan](/powershell/module/skype/get-cstenantdialplan?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-149">For other examples and parameters, see [Get-CsTenantDialPlan](/powershell/module/skype/get-cstenantdialplan?view=skype-ps).</span></span>
+    <span data-ttu-id="6acd4-152">Per altri esempi e parametri, consultare [Get-CsTenantDialPlan](/powershell/module/skype/get-cstenantdialplan?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="6acd4-152">For other examples and parameters, see [Get-CsTenantDialPlan](/powershell/module/skype/get-cstenantdialplan?view=skype-ps).</span></span>
     
-- <span data-ttu-id="3f2b6-150">Per eliminare un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-150">To delete a dial plan, run:</span></span>
+- <span data-ttu-id="6acd4-153">Per eliminare un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="6acd4-153">To delete a dial plan, run:</span></span>
     
   ```PowerShell
   Remove-CsTenantDialPlan -Identity RedmondDialPlan -force
   ```
 
-    <span data-ttu-id="3f2b6-151">Per altri esempi e parametri, consultare [Remove-CsTenantDialPlan](/powershell/module/skype/remove-cstenantdialplan?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-151">For other examples and parameters, see [Remove-CsTenantDialPlan](/powershell/module/skype/remove-cstenantdialplan?view=skype-ps).</span></span>
+    <span data-ttu-id="6acd4-154">Per altri esempi e parametri, consultare [Remove-CsTenantDialPlan](/powershell/module/skype/remove-cstenantdialplan?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="6acd4-154">For other examples and parameters, see [Remove-CsTenantDialPlan](/powershell/module/skype/remove-cstenantdialplan?view=skype-ps).</span></span>
     
-- <span data-ttu-id="3f2b6-152">Per visualizzare le impostazioni dell'effettivo piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-152">To see the settings of the effective dial plan, run:</span></span>
+- <span data-ttu-id="6acd4-155">Per visualizzare le impostazioni dell'effettivo piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="6acd4-155">To see the settings of the effective dial plan, run:</span></span>
     
   ```PowerShell
   Get-CsEffectiveTenantDialPlan -Identity amos.marble@contoso.com
   ```
 
-    <span data-ttu-id="3f2b6-153">Per altri esempi e parametri, consultare [Get-CsEffectiveTenantDialPlan](/powershell/module/skype/get-cseffectivetenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-153">For other examples and parameters, see [Get-CsEffectiveTenantDialPlan](/powershell/module/skype/get-cseffectivetenantdialplan).</span></span>
+    <span data-ttu-id="6acd4-156">Per altri esempi e parametri, consultare [Get-CsEffectiveTenantDialPlan](/powershell/module/skype/get-cseffectivetenantdialplan).</span><span class="sxs-lookup"><span data-stu-id="6acd4-156">For other examples and parameters, see [Get-CsEffectiveTenantDialPlan](/powershell/module/skype/get-cseffectivetenantdialplan).</span></span>
     
-- <span data-ttu-id="3f2b6-154">Per testare le impostazioni effettive di un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-154">To test the effective settings of a dial plan, run:</span></span>
+- <span data-ttu-id="6acd4-157">Per testare le impostazioni effettive di un piano di chiamata, eseguire:</span><span class="sxs-lookup"><span data-stu-id="6acd4-157">To test the effective settings of a dial plan, run:</span></span>
     
   ```PowerShell
   Test-CsEffectiveTenantDialPlan -DialedNumber 14255550199 -Identity amos.marble@contoso.com
   ```
 
-    <span data-ttu-id="3f2b6-155">Per altri esempi e parametri, consultare [Test-CsEffectiveTenantDialPlan](/powershell/module/skype/test-cseffectivetenantdialplan?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="3f2b6-155">For other examples and parameters, see [Test-CsEffectiveTenantDialPlan](/powershell/module/skype/test-cseffectivetenantdialplan?view=skype-ps).</span></span>
+    <span data-ttu-id="6acd4-158">Per altri esempi e parametri, consultare [Test-CsEffectiveTenantDialPlan](/powershell/module/skype/test-cseffectivetenantdialplan?view=skype-ps).</span><span class="sxs-lookup"><span data-stu-id="6acd4-158">For other examples and parameters, see [Test-CsEffectiveTenantDialPlan](/powershell/module/skype/test-cseffectivetenantdialplan?view=skype-ps).</span></span>
     
-#### <a name="using-a-powershell-script"></a><span data-ttu-id="3f2b6-156">Uso di uno script di PowerShell</span><span class="sxs-lookup"><span data-stu-id="3f2b6-156">Using a PowerShell script</span></span>
+#### <a name="using-a-powershell-script"></a><span data-ttu-id="6acd4-159">Uso di uno script di PowerShell</span><span class="sxs-lookup"><span data-stu-id="6acd4-159">Using a PowerShell script</span></span>
 
-<span data-ttu-id="3f2b6-157">Eseguire questa operazione per eliminare una regola di normalizzazione associata a un piano di chiamata tenant senza prima eliminare il piano di chiamata del tenant:</span><span class="sxs-lookup"><span data-stu-id="3f2b6-157">Run this to delete a normalization rule that is associated with a tenant dial plan without needing to delete the tenant dial plan first:</span></span>
+<span data-ttu-id="6acd4-160">Eseguire questa operazione per eliminare una regola di normalizzazione associata a un piano di chiamata tenant senza prima eliminare il piano di chiamata del tenant:</span><span class="sxs-lookup"><span data-stu-id="6acd4-160">Run this to delete a normalization rule that is associated with a tenant dial plan without needing to delete the tenant dial plan first:</span></span>
 ```PowerShell
 $b1=New-CsVoiceNormalizationRule -Identity Global/NR4 -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$b1}
@@ -150,18 +150,18 @@ Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$b1}
 $b2=New-CsVoiceNormalizationRule -Identity Global/NR4 -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$b2}
 ```
-<span data-ttu-id="3f2b6-158">Eseguire questo metodo per aggiungere la seguente regola di normalizzazione al piano di chiamata del tenant denominato RedmondDialPlan.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-158">Run this to add the following normalization rule to the existing tenant dial plan named RedmondDialPlan.</span></span>
+<span data-ttu-id="6acd4-161">Eseguire questo metodo per aggiungere la seguente regola di normalizzazione al piano di chiamata del tenant denominato RedmondDialPlan.</span><span class="sxs-lookup"><span data-stu-id="6acd4-161">Run this to add the following normalization rule to the existing tenant dial plan named RedmondDialPlan.</span></span>
 ```PowerShell
 $nr1=New-CsVoiceNormalizationRule -Parent Global -Description 'Organization extension dialing' -Pattern '^(\\d{3})$' -Translation '+14255551$1' -Name NR1 -IsInternalExtension $false -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{add=$nr1}
 ```
-<span data-ttu-id="3f2b6-159">Eseguire questa operazione per rimuovere la seguente regola di normalizzazione dal piano di chiamata del tenant denominato RedmondDialPlan.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-159">Run this to remove the following normalization rule from the existing tenant dial plan named RedmondDialPlan.</span></span>
+<span data-ttu-id="6acd4-162">Eseguire questa operazione per rimuovere la seguente regola di normalizzazione dal piano di chiamata del tenant denominato RedmondDialPlan.</span><span class="sxs-lookup"><span data-stu-id="6acd4-162">Run this to remove the following normalization rule from the existing tenant dial plan named RedmondDialPlan.</span></span>
 ```PowerShell
 $nr1=New-CsVoiceNormalizationRule -Parent Global/NR1 -InMemory
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$nr1}
 ```
 
-<span data-ttu-id="3f2b6-160">Eseguire quanto segue quando si desidera esaminare anche le regole di normalizzazione esistenti, determinare quale si desidera eliminare e quindi utilizzare l'indice per rimuoverla.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-160">Run the following when you want to also examine the existing normalization rules, determine which one you want to delete, and then use its index to remove it.</span></span> <span data-ttu-id="3f2b6-161">Matrice delle regole di normalizzazione inizia con l'indice 0.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-161">The array of normalization rules starts with index 0.</span></span> <span data-ttu-id="3f2b6-162">Si desidera rimuovere la regola di normalizzazione a 3 cifre, in modo che sia indice 1.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-162">We would like to remove the 3-digit normalization rule, so that is index 1.</span></span>
+<span data-ttu-id="6acd4-163">Eseguire quanto segue quando si desidera esaminare anche le regole di normalizzazione esistenti, determinare quale si desidera eliminare e quindi utilizzare l'indice per rimuoverla.</span><span class="sxs-lookup"><span data-stu-id="6acd4-163">Run the following when you want to also examine the existing normalization rules, determine which one you want to delete, and then use its index to remove it.</span></span> <span data-ttu-id="6acd4-164">Matrice delle regole di normalizzazione inizia con l'indice 0.</span><span class="sxs-lookup"><span data-stu-id="6acd4-164">The array of normalization rules starts with index 0.</span></span> <span data-ttu-id="6acd4-165">Si desidera rimuovere la regola di normalizzazione a 3 cifre, in modo che sia indice 1.</span><span class="sxs-lookup"><span data-stu-id="6acd4-165">We would like to remove the 3-digit normalization rule, so that is index 1.</span></span>
   
 ```PowerShell
 Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules
@@ -181,20 +181,20 @@ $nr1=(Get-CsTenantDialPlan RedmondDialPlan).NormalizationRules[1]
 Set-CsTenantDialPlan -Identity RedmondDialPlan -NormalizationRules @{remove=$nr1}
 ```
 
-<span data-ttu-id="3f2b6-163">Eseguire questa operazione per trovare tutti gli utenti a cui è stato concesso il piano di chiamata del tenant RedmondDialPlan.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-163">Run this to find all users who have been granted the RedmondDialPlan tenant dial plan.</span></span>
+<span data-ttu-id="6acd4-166">Eseguire questa operazione per trovare tutti gli utenti a cui è stato concesso il piano di chiamata del tenant RedmondDialPlan.</span><span class="sxs-lookup"><span data-stu-id="6acd4-166">Run this to find all users who have been granted the RedmondDialPlan tenant dial plan.</span></span>
   
 ```PowerShell
 Get-CsOnlineUser | Where-Object {$_.TenantDialPlan -eq "RedmondDialPlan"}
 ```
 
-<span data-ttu-id="3f2b6-164">Esegui questa operazione per rimuovere qualsiasi TenantDialPlan assegnato da tutti gli utenti che hanno un HostingProvider di sipfed.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-164">Run this to remove any assigned TenantDialPlan from all users who have a HostingProvider of sipfed.online.lync.com.</span></span>
+<span data-ttu-id="6acd4-167">Esegui questa operazione per rimuovere qualsiasi TenantDialPlan assegnato da tutti gli utenti che hanno un HostingProvider di sipfed.online.lync.com.</span><span class="sxs-lookup"><span data-stu-id="6acd4-167">Run this to remove any assigned TenantDialPlan from all users who have a HostingProvider of sipfed.online.lync.com.</span></span>
 ```PowerShell
 Get-CsOnlineUser -Filter {HostingProvider -eq "sipfed.online.lync.com"} | Grant-CsTenantDialPlan -policyname $null
 ```
 
-<span data-ttu-id="3f2b6-165">Eseguirli per aggiungere il piano di chiamata esistente locale denominato OPDP1 come un piano di chiamata del tenant per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-165">Run these to add the existing on-premises dial plan named OPDP1 as a tenant dial plan for your organization.</span></span> <span data-ttu-id="3f2b6-166">È necessario innanzitutto salvare il piano di chiamata del tenant locale in un file .xml e quindi utilizzarlo per creare il nuovo piano di chiamata del tenant.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-166">You need to first save the on-premises dial plan to an .xml file, and then use it to create the new tenant dial plan.</span></span>
+<span data-ttu-id="6acd4-168">Eseguirli per aggiungere il piano di chiamata esistente locale denominato OPDP1 come un piano di chiamata del tenant per l'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="6acd4-168">Run these to add the existing on-premises dial plan named OPDP1 as a tenant dial plan for your organization.</span></span> <span data-ttu-id="6acd4-169">È necessario innanzitutto salvare il piano di chiamata del tenant locale in un file .xml e quindi utilizzarlo per creare il nuovo piano di chiamata del tenant.</span><span class="sxs-lookup"><span data-stu-id="6acd4-169">You need to first save the on-premises dial plan to an .xml file, and then use it to create the new tenant dial plan.</span></span>
   
-<span data-ttu-id="3f2b6-167">Eseguire questa operazione per salvare il piano di chiamata del tenant locale nel file .xml.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-167">Run this to save the on-premises dial plan to the .xml file.</span></span>
+<span data-ttu-id="6acd4-170">Eseguire questa operazione per salvare il piano di chiamata del tenant locale nel file .xml.</span><span class="sxs-lookup"><span data-stu-id="6acd4-170">Run this to save the on-premises dial plan to the .xml file.</span></span>
   
 ```PowerShell
 $DPName = "OPDP1"
@@ -202,7 +202,7 @@ $DPFileName = "dialplan.xml"
 Get-CsDialplan $DPName | Export-Clixml $DPFileName
 ```
 
-<span data-ttu-id="3f2b6-168">Eseguire questa operazione per creare il nuovo piano di chiamata del tenant.</span><span class="sxs-lookup"><span data-stu-id="3f2b6-168">Run this to create the new tenant dial plan.</span></span>
+<span data-ttu-id="6acd4-171">Eseguire questa operazione per creare il nuovo piano di chiamata del tenant.</span><span class="sxs-lookup"><span data-stu-id="6acd4-171">Run this to create the new tenant dial plan.</span></span>
   
 ```PowerShell
 $DPFileName = "dialplan.xml"
@@ -217,12 +217,12 @@ ForEach($nr in $dp.NormalizationRules)
 New-CsTenantDialPlan -Identity $dp.SimpleName -ExternalAccessPrefix $dp.ExternalAccessPrefix -Description $dp.Description -OptimizeDeviceDialing $dp.OptimizeDeviceDialing -SimpleName $dp.SimpleName -NormalizationRules $NormRules
 ```
     
-## <a name="related-topics"></a><span data-ttu-id="3f2b6-169">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="3f2b6-169">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="6acd4-172">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="6acd4-172">Related topics</span></span>
 
-- [<span data-ttu-id="3f2b6-170">Che cosa sono i piani di chiamata?</span><span class="sxs-lookup"><span data-stu-id="3f2b6-170">What are dial plans?</span></span>](what-are-dial-plans.md)
-- [<span data-ttu-id="3f2b6-171">Domande comuni sul trasferimento dei numeri di telefono</span><span class="sxs-lookup"><span data-stu-id="3f2b6-171">Transferring phone numbers common questions</span></span>](./phone-number-calling-plans/port-order-overview.md)
-- [<span data-ttu-id="3f2b6-172">Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="3f2b6-172">Different kinds of phone numbers used for Calling Plans</span></span>](different-kinds-of-phone-numbers-used-for-calling-plans.md)
-- [<span data-ttu-id="3f2b6-173">Gestire i numeri di telefono per la propria organizzazione</span><span class="sxs-lookup"><span data-stu-id="3f2b6-173">Manage phone numbers for your organization</span></span>](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
-- [<span data-ttu-id="3f2b6-174">Termini e condizioni per le chiamate al numero di emergenza</span><span class="sxs-lookup"><span data-stu-id="3f2b6-174">Emergency calling terms and conditions</span></span>](emergency-calling-terms-and-conditions.md)
-- <span data-ttu-id="3f2b6-175">[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span><span class="sxs-lookup"><span data-stu-id="3f2b6-175">[Emergency calling disclaimer label](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span></span>
-- [<span data-ttu-id="3f2b6-176">Panoramica di PowerShell per Teams</span><span class="sxs-lookup"><span data-stu-id="3f2b6-176">Teams PowerShell overview</span></span>](teams-powershell-overview.md)
+- [<span data-ttu-id="6acd4-173">Che cosa sono i piani di chiamata?</span><span class="sxs-lookup"><span data-stu-id="6acd4-173">What are dial plans?</span></span>](what-are-dial-plans.md)
+- [<span data-ttu-id="6acd4-174">Domande comuni sul trasferimento dei numeri di telefono</span><span class="sxs-lookup"><span data-stu-id="6acd4-174">Transferring phone numbers common questions</span></span>](./phone-number-calling-plans/port-order-overview.md)
+- [<span data-ttu-id="6acd4-175">Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate</span><span class="sxs-lookup"><span data-stu-id="6acd4-175">Different kinds of phone numbers used for Calling Plans</span></span>](different-kinds-of-phone-numbers-used-for-calling-plans.md)
+- [<span data-ttu-id="6acd4-176">Gestire i numeri di telefono per la propria organizzazione</span><span class="sxs-lookup"><span data-stu-id="6acd4-176">Manage phone numbers for your organization</span></span>](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+- [<span data-ttu-id="6acd4-177">Termini e condizioni per le chiamate al numero di emergenza</span><span class="sxs-lookup"><span data-stu-id="6acd4-177">Emergency calling terms and conditions</span></span>](emergency-calling-terms-and-conditions.md)
+- <span data-ttu-id="6acd4-178">[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span><span class="sxs-lookup"><span data-stu-id="6acd4-178">[Emergency calling disclaimer label](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)</span></span>
+- [<span data-ttu-id="6acd4-179">Panoramica di PowerShell per Teams</span><span class="sxs-lookup"><span data-stu-id="6acd4-179">Teams PowerShell overview</span></span>](teams-powershell-overview.md)
