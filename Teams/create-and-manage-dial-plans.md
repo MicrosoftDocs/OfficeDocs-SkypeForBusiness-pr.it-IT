@@ -21,12 +21,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come usare l'interfaccia Microsoft Teams di amministrazione o Windows PowerShell per creare e gestire i dial plan (piani di chiamata PSTN).
-ms.openlocfilehash: f94c847f5c75e793856c0975678e2806629e2dcd
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 59867dfe49436635f690ff9f5d56a2be36e553ec
+ms.sourcegitcommit: 127f9fdf05b93ee3af4244224e1c32a45d73d3ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282363"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "53046233"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare dial plan
 
@@ -49,7 +49,7 @@ Dopo aver programmato i dial plan per l'organizzazione e aver trovato tutte le r
 5. Disporre le regole di normalizzazione nell'ordine desiderato. Fare **clic su Sposta su** o Sposta **giù** per modificare la posizione delle regole nell'elenco.
 
     > [!NOTE]
-    > Teams scorre l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano ordinate al di sopra di quelle meno restrittive.
+    > Teams scorre l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano ordinate al di sopra di quelle meno restrittive. Se si configura un piano di chiamata che normalizza un numero composto senza un "+", il servizio di chiamata tenterà di normalizzare di nuovo il numero usando le regole del piano di chiamata tenant e regionale. Per evitare la doppia normalizzazione, è consigliabile che tutte le regole di normalizzazione dia origine a numeri che iniziano con "+". I clienti di Direct Routing possono usare [le regole di traduzione trunk](direct-routing-translate-numbers.md) per rimuovere il "+" se necessario. 
 
 6. Fare clic su **Salva**.
 7. Se si vuole testare il piano di chiamata, in **Test piano di chiamata** immettere un numero di telefono e quindi fare clic su **Test**.

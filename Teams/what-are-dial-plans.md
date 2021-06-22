@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.dialplans.overview
 - Calling Plans
 description: "Informazioni sul tipo di piani di chiamata (piani di chiamata PSTN) disponibili con Teams e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 86ec311a7abec9b9268555884db3ff8de7ee256b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 010065c32135d893b15bcc692e84a1b59269650d
+ms.sourcegitcommit: 127f9fdf05b93ee3af4244224e1c32a45d73d3ee
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100982"
+ms.lasthandoff: 06/21/2021
+ms.locfileid: "53046223"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
@@ -60,7 +60,7 @@ Di seguito sono riportati i possibili piani di chiamata effettivi.
 Vedere [Creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare i dial plan del tenant.
 
 > [!NOTE]
-> Nello scenario in cui nessuna regola di normalizzazione del piano di chiamata si applica a un numero composto, la stringa chiamata viene ancora normalizzata anteponendo "+CC", dove CC è il codice paese della località di utilizzo dell'utente che chiama. Questo vale per i piani di chiamata, il routing diretto e gli scenari di chiamata in uscita per conferenze PSTN.
+> Nello scenario in cui nessuna regola di normalizzazione del piano di chiamata si applica a un numero composto, la stringa chiamata viene ancora normalizzata anteponendo "+CC", dove CC è il codice paese della località di utilizzo dell'utente che chiama. Questo vale per i piani di chiamata, il routing diretto e gli scenari di chiamata in uscita per conferenze PSTN. Inoltre, se una regola di normalizzazione del piano di chiamata tenant determina un numero che non inizia con "+", il servizio di chiamata tenterà di normalizzare il numero ricevuto dal client Teams in base al piano di chiamata tenant e, se non corrisponde, al piano di chiamata dell'area geografica. Per evitare la doppia normalizzazione, è consigliabile che i clienti di Routing diretto normalizzino i numeri in modo da includere un segno + e quindi rimuovere il segno + usando le regole di traduzione trunk. 
 
 ## <a name="planning-for-tenant-dial-plans"></a>Pianificazione dei piani di chiamata tenant
 
