@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come pianificare il bypass multimediale con Sistema telefonico Direct Routing, che consente di abbreviare il percorso del traffico multimediale e migliorare le prestazioni.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4978c7ce2a69f23164a3869dd69368b3aaad2c4e
-ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
+ms.openlocfilehash: 8d60513dbcf1128d303102f494600a67335b366d
+ms.sourcegitcommit: cae94cd5761baafde51aea1137e6d164722eead9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52469628"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53075399"
 ---
 # <a name="plan-for-media-bypass-with-direct-routing"></a>Pianificare il bypass multimediale con Instradamento diretto
 
@@ -197,19 +197,11 @@ I punti di connessione per il routing diretto sono i tre FQDN seguenti:
 - Fornire il failover quando viene stabilita una connessione da un SBC a un data center in cui si verifica un problema temporaneo. Per altre informazioni, vedere Meccanismo di failover più avanti.
 
 
-I nomi FQDN **sip.pstnhub.microsoft.com,** **sip2.pstnhub.microsoft.com** e **sip3.pstnhub.microsoft.com** verranno risolti in uno degli indirizzi IP seguenti:
-- 52.114.148.0
-- 52.114.132.46 
-- 52.114.75.24 
-- 52.114.76.76 
-- 52.114.7.24 
-- 52.114.14.70
-- 52.114.16.74
-- 52.114.20.29
-- 52.114.36.156 
-- 52.114.32.169
+I nomi FQDN **sip.pstnhub.microsoft.com,** **sip2.pstnhub.microsoft.com** e sip3.pstnhub.microsoft.com  verranno risolti in indirizzi IP dalle subnet seguenti:
+- 52.112.0.0/14
+- 52.120.0.0/14
 
-È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in ingresso e in uscita da e verso gli indirizzi per la segnalazione. Se il firewall supporta i nomi DNS, l'FQDN **sip-all.pstnhub.microsoft.com** si risolve in tutti questi indirizzi IP. 
+È necessario aprire le porte per tutti questi intervalli IP nel firewall per consentire il traffico in ingresso e in uscita da e verso gli indirizzi per la segnalazione. Se il firewall supporta i nomi DNS, l'FQDN **sip-all.pstnhub.microsoft.com** viene risolto in tutte queste subnet IP. 
 
 ### <a name="office-365-gcc-dod-environment"></a>Office 365 GCC DoD
 
@@ -217,12 +209,11 @@ Il punto di connessione per il routing diretto è il seguente FQDN:
 
 **sip.pstnhub.dod.teams.microsoft.us** : FQDN globale. Poiché l'Office 365 DoD esiste solo nei data center degli Stati Uniti, non sono disponibili FQDN secondari e terziari.
 
-I nomi FQDN - sip.pstnhub.dod.teams.microsoft.us verranno risolti in uno degli indirizzi IP seguenti:
+Il nome fqdn sip.pstnhub.dod.teams.microsoft.us verrà risolto in un indirizzo IP dalla subnet seguente:
 
-- 52.127.64.33
-- 52.127.68.34
+- 52.127.64.0/21
 
-È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in ingresso e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, l'FQDN sip.pstnhub.dod.teams.microsoft.us si risolve in tutti questi indirizzi IP. 
+È necessario aprire le porte per tutti questi intervalli IP nel firewall per consentire il traffico in ingresso e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, l'FQDN sip.pstnhub.dod.teams.microsoft.us viene risolto in tutte queste subnet IP. 
 
 ### <a name="office-365-gcc-high-environment"></a>Office 365 GCC ambiente High
 
@@ -230,12 +221,11 @@ Il punto di connessione per il routing diretto è il seguente FQDN:
 
 **sip.pstnhub.gov.teams.microsoft.us** : FQDN globale. Poiché l'GCC High è presente solo nei data center degli Stati Uniti, non sono disponibili fqdn secondari e terziari.
 
-I nomi FQDN - sip.pstnhub.gov.teams.microsoft.us verranno risolti in uno degli indirizzi IP seguenti:
+Il nome fqdn sip.pstnhub.gov.teams.microsoft.us verrà risolto in un indirizzo IP della subnet seguente:
 
-- 52.127.88.59
-- 52.127.92.64
+- 52.127.64.0/21
 
-È necessario aprire le porte per tutti questi indirizzi IP nel firewall per consentire il traffico in ingresso e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, l'FQDN sip.pstnhub.gov.teams.microsoft.us viene risolto in tutti questi indirizzi IP. 
+È necessario aprire le porte per tutti questi intervalli IP nel firewall per consentire il traffico in ingresso e in uscita da e verso gli indirizzi per la segnalazione.  Se il firewall supporta i nomi DNS, l'FQDN sip.pstnhub.gov.teams.microsoft.us viene risolto in tutte queste subnet IP. 
 
 ## <a name="sip-signaling-ports"></a>Segnalazione SIP: Porte
 

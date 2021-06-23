@@ -22,18 +22,18 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come reimpostare il PIN di audioconferenza di un utente in Microsoft Teams informazioni importanti sui PIN.
-ms.openlocfilehash: 7ea380fbeb722337eaec598823b12dbe18f49918
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ece69ec231408cc860f2fad803d92d22feaca781
+ms.sourcegitcommit: cae94cd5761baafde51aea1137e6d164722eead9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117634"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53075379"
 ---
 # <a name="reset-the-audio-conferencing-pin-in-microsoft-teams"></a>Reimpostare il PIN di audioconferenza in Microsoft Teams
 
 Un PIN è un codice costituito da numeri creati per ogni utente Microsoft Teams abilitato per le audioconferenze. I PIN di audioconferenza vengono usati dagli organizzatori della riunione per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se usano l'app Microsoft Teams per avviare la riunione, non è necessario un PIN. Se gli utenti dimenticano il PIN e non lo trovano nel messaggio di posta elettronica inviato quando sono stati abilitati per le audioconferenze, un amministratore può reimpostare il PIN oppure reimpostare il PROPRIO PIN.
   
-Le riunioni possono essere avviate quando un utente autenticato partecipa usando l'app Microsoft Teams o quando l'organizzatore partecipa con il PIN tramite telefono. Se è richiesto un PIN per avviare la riunione tramite telefono, per impostazione predefinita tutti gli utenti che partecipano alla riunione tramite telefono prima dell'inizio della riunione dovranno rimanere nella sala di attesa ascoltando musica fino all'inizio della riunione. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
+Le riunioni possono essere avviate quando un utente autenticato partecipa usando l'app Microsoft Teams o quando l'organizzatore partecipa con il PIN tramite telefono. Quando una riunione richiede l'avvio di un PIN, gli utenti che aderiscono al telefono vengono inseriti nella sala d'attesa e ascoltano la musica in attesa finché l'organizzatore non lo ammette. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
 
 ## <a name="reset-a-users-pin"></a>Reimpostare il PIN dell'utente
 

@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 39150cc5ff6a64c17bad660b4df4b74610399cd1
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: a6eba4f1da849a2cf8e355454fd1ba794a3496db
+ms.sourcegitcommit: cae94cd5761baafde51aea1137e6d164722eead9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52717737"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53075389"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -396,9 +396,10 @@ Le funzionalità di chiamata e riunione seguenti non sono supportate:
 - Sfocatura ed effetti dello sfondo
 - Ruoli di relatore e produttore di eventi live e broadcast
 - Location-Based routing (LBR)
-- Parcheggio di chiamata
+- Tono di squillo delle chiamate PSTN
 - Audio/computer di sistema condiviso
 - Bypass multimediale per Instradamento diretto
+- Parcheggio di chiamata
 - Controllo zoom 
 
 > [!NOTE]
