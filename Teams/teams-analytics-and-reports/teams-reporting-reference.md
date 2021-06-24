@@ -18,12 +18,12 @@ description: In questo articolo sono disponibili informazioni sui report Teams d
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6d195c90dc7e959146546dde1a75fedf0764c24a
-ms.sourcegitcommit: 66e7b28ba1c0433535eb6a3e7d883851c27d9d1f
+ms.openlocfilehash: 57135e50b604c8e92a7ff78963af9520ccc87b8a
+ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51478346"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096320"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Microsoft Teams analisi e creazione di report
 
@@ -36,7 +36,7 @@ Per accedere ai report, è necessario essere un amministratore globale in Micros
 Passare all'interfaccia Microsoft Teams di amministrazione, nel riquadro di spostamento sinistro, selezionare Analisi & report e **quindi in** **Report** scegliere il report da eseguire.
 
 > [!NOTE]
-> I report nell'interfaccia di amministrazione di Microsoft Teams sono separati dai report attività per Teams che fanno parte dei report Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nell'interfaccia di amministrazione di Microsoft 365, vedere Teams report attività nell'interfaccia Microsoft 365 [di amministrazione](../teams-activity-reports.md)
+> I report nell'interfaccia Microsoft Teams di amministrazione sono separati dai report attività per Teams che fanno parte dei report Microsoft 365 nel interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nel interfaccia di amministrazione di Microsoft 365, vedere Teams [report attività](../teams-activity-reports.md) nel interfaccia di amministrazione di Microsoft 365
 
 ## <a name="teams-reporting-reference"></a>Teams di riferimento per la creazione di report
 
@@ -54,6 +54,8 @@ Stiamo continuamente migliorando l'esperienza Teams creazione di report e l'aggi
 |[Teams Report pool di minuti PSTN](pstn-minute-pools-report.md) |  Paese o area geografica<br>Capability (licenza) <br>Totale minuti<br>Minuti usati<br>Minuti disponibili|
 |[Teams Report sull'utilizzo PSTN - Piani per chiamate](pstn-usage-report.md#calling-plans)|  Indicatore data e ora<br>Nome utente<br>Telefono numero<br>Tipo di chiamata <br>Chiamato a<br>A paese o area geografica <br>Chiamata da <br>Da paese o area geografica<br>Addebito<br>Valuta<br>Durata<br>Nazionale/Internazionale<br>ID chiamata<br>Tipo di numero<br>Paese o area geografica<br>ID conferenza<br>Capability (licenza)|
 |[Teams Report utilizzo PSTN - Routing diretto](pstn-usage-report.md#direct-routing)  |  Indicatore data e ora<br>Nome visualizzato<br>Indirizzo SIP<br>Telefono numero <br>Tipo di chiamata<br>Chiamato a<br>Ora di inizio<br>Ora di invito<br>Tempo di errore<br>Ora di fine<br>Durata<br>Tipo di numero<br>Bypass multimediale<br>SBC FQDN<br>Area geografica di Azure<br>Tipo di evento<br>Codice SIP finale<br>Sottocodice Microsoft finale<br>Frase SIP finale<br>ID correlazione  |
+|[Teams report sulle licenze di protezione delle informazioni - Routing diretto](information-protection-license-report.md)  | <br>Se gli utenti hanno licenze valide per inviare i messaggi tramite notifiche di modifica</br><br>Numero totale di eventi di notifica di modifica valutati da un utente</br><br>Quali app ascoltano gli eventi di notifica delle modifiche a livello di organizzazione</br>|
+
 
 [!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
 
@@ -61,9 +63,9 @@ Stiamo continuamente migliorando l'esperienza Teams creazione di report e l'aggi
 
 Per rendere anonimi i dati Teams'attività degli utenti e Teams di utilizzo dei dispositivi, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nei report e nelle relative esportazioni.
 
-1. Nell Microsoft 365 di amministrazione passare  all'Impostazioni org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
+1. In interfaccia di amministrazione di Microsoft 365 passare alla scheda  Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
-2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo nell'interfaccia Microsoft 365 di amministrazione sia all'Teams di amministrazione.
+2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo in interfaccia di amministrazione di Microsoft 365 che all'Teams di amministrazione.
   
 3. Selezionare **Salva modifiche**.
 

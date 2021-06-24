@@ -16,12 +16,12 @@ ms.reviewer: mikedav
 description: Informazioni su come assegnare Teams licenze per i componenti aggiuntivi agli utenti per funzionalità come audioconferenze, Sistema telefonico e piani per chiamate.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 240672b125190492a036bc9dfa3f7a42070e8320
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b30df309412d159b878b4b57655787c9b4b292a8
+ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116934"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53095580"
 ---
 # <a name="assign-teams-add-on-licenses-to-users"></a>Assegnare Teams licenze per i componenti aggiuntivi agli utenti
 
@@ -30,7 +30,7 @@ Le licenze per i componenti aggiuntivi sono licenze per Teams funzionalità di a
 > [!NOTE]
 > Vedere [Teams licenze per i](./microsoft-teams-add-on-licensing.md) componenti aggiuntivi Teams funzionalità disponibili con le licenze per i componenti aggiuntivi. Troverai anche informazioni sulle licenze da acquistare e su come acquistarle (a seconda del piano), in modo che gli utenti possano ottenere funzionalità come audioconferenze, numeri a numero verde e la possibilità di chiamare numeri di telefono all'esterno dell'organizzazione. Dopo aver deciso quali funzionalità si vogliono assegnare agli utenti, assegnarle le licenze.
 
-È possibile usare l'interfaccia Microsoft 365 o PowerShell per assegnare licenze agli utenti dell'organizzazione. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
+È possibile usare la interfaccia di amministrazione di Microsoft 365 o PowerShell per assegnare licenze agli utenti dell'organizzazione. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
 
 ## <a name="what-you-need-to-know-before-you-assign-phone-system-calling-plan-and-communication-credits-licenses"></a>Informazioni da sapere prima di assegnare le licenze Sistema telefonico, piano chiamate e crediti comunicazioni
 
@@ -46,9 +46,9 @@ Prima di iniziare, esaminare i requisiti seguenti:
 
 - Dopo aver assegnato licenze per piani per chiamate o crediti comunicazioni agli utenti, è necessario ottenere i numeri di telefono per l'organizzazione e quindi assegnarli agli utenti. Per istruzioni dettagliate, vedere [Configurare i piani per chiamate.](../set-up-calling-plans.md)
 
-## <a name="using-the-microsoft-365-admin-center"></a>Uso dell'Microsoft 365 di amministrazione
+## <a name="using-the-microsoft-365-admin-center"></a>Uso del interfaccia di amministrazione di Microsoft 365
 
-Usare l Microsoft 365 di amministrazione per assegnare licenze a singoli utenti o a piccoli set di utenti alla volta. Le licenze vengono assegnate nella **pagina Licenze** (per un massimo di 20 utenti alla volta) o nella **pagina Utenti** attivi. Il metodo scelto varia a seconda che si vogliano gestire licenze di prodotto per utenti specifici o licenze utente per prodotti specifici.
+Usare il interfaccia di amministrazione di Microsoft 365 per assegnare licenze a singoli utenti o a piccoli set di utenti alla volta. Le licenze vengono  assegnate nella pagina Licenze (per un massimo  di 20 utenti alla volta) o nella pagina Utenti attivi (per un massimo di 40 utenti alla volta). Il metodo scelto varia a seconda che si vogliano gestire licenze di prodotto per utenti specifici o licenze utente per prodotti specifici.
 
 Per istruzioni dettagliate, vedere [Assegnare licenze agli utenti.](/microsoft-365/admin/manage/assign-licenses-to-users)
 

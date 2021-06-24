@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f204869bf068350bdc49801654f84856f32a44a0
-ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
+ms.openlocfilehash: 4824e24eb1e648d2ffc2d52fbdc1fa8593bbe9d9
+ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796630"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096300"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -86,8 +86,7 @@ L'opzione di registrazione della riunione è un'impostazione a Teams livello di 
    # When using Teams PowerShell Module
    
    Import-Module MicrosoftTeams
-   $credential = Get-Credential
-   Connect-MicrosoftTeams -Credential $credential
+   Connect-MicrosoftTeams
    ```
 
 5. Usare [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy) per impostare un criterio Teams riunione per la transizione dallo spazio di archiviazione Stream a OneDrive for Business e SharePoint.
@@ -118,7 +117,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -RecordingStorageMode "Stream"
 |Chiamata 1:1 con parti interne             |Chiamato                 |Account OneDrive for Business del OneDrive for Business chiamata                        |Il chiamato è proprietario e ha diritti completi. <br /><br />Chiamante (se nello stesso tenant ha accesso in sola lettura. Nessun accesso di condivisione. <br /><br />Il chiamante (se in un tenant diverso) non ha accesso. Il chiamante deve condividerlo con il chiamante.|
 |Chiamata 1:1 con una chiamata esterna             |Chiamante                 |Account OneDrive for Business chiamante                        |Il chiamante è proprietario e ha diritti completi.<br /> <br />Il chiamato non ha accesso. Il chiamante deve condividerlo con il chiamato.|
 |Chiamata 1:1 con una chiamata esterna             |Chiamato                 |Account OneDrive for Business del OneDrive for Business chiamata                        |Il chiamato è proprietario e ha diritti completi.<br /><br />Il chiamante non ha accesso. Il chiamante deve condividerlo con il chiamante.|
-|Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro del gruppo che ha fatto clic sull'account OneDrive for Business record  |Il membro che ha fatto clic su Record ha diritti completi. <br /><br /> Altri fr dello stesso tenant hanno diritti di lettura. <br /><br /> Gli altri membri del gruppo di un tenant diverso non hanno alcun diritto.|
+|Chiamata di gruppo                                 |Qualsiasi membro della chiamata |Membro del gruppo che ha fatto clic sull'account OneDrive for Business record  |Il membro che ha fatto clic su Record ha diritti completi. <br /><br /> Altri membri dello stesso tenant hanno diritti di lettura. <br /><br /> Gli altri membri del gruppo di tenant diversi non hanno alcun diritto.|
 |Riunione adhoc/pianificata                    |Organizzatore              |Account OneDrive for Business organizzatore                     |L'organizzatore ha i diritti completi per la registrazione. <br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura.|
 |Riunione adhoc/pianificata                    |Altro membro della riunione   |Membro della riunione che ha fatto clic su Registra                                  |Il membro che ha fatto clic su Record ha i diritti completi per la registrazione. <br /><br />L'organizzatore ha i diritti di modifica e può condividere.<br /><br /> Tutti gli altri membri della riunione hanno accesso in lettura.|
 |Riunione adhoc/pianificata con utenti esterni|Organizzatore              |Account OneDrive for Business organizzatore                     |L'organizzatore ha i diritti completi per la registrazione.<br /> <br /> Tutti gli altri membri della riunione dallo stesso tenant dell'organizzatore hanno accesso in lettura. <br /><br /> Tutti gli altri membri esterni non hanno accesso e l'Organizzatore deve condividerlo con loro.|
@@ -192,4 +191,3 @@ Vedere [Quali criteri hanno la precedenza?](./assign-policies.md#which-policy-ta
 **Dove si trova la registrazione se l'utente non ha OneDrive for Business o SharePoint o se la quota di archiviazione è piena?**
 
 La registrazione verrà atterrato nella posizione di archiviazione temporanea in cui verrà tenuta per 21 giorni. Durante questo periodo, l'organizzatore deve scaricare la registrazione. Se non viene scaricato entro 21 giorni, la registrazione viene eliminata.
-

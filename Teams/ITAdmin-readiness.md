@@ -19,12 +19,12 @@ ms.custom:
 description: Video di formazione, PowerPoint, esercitazioni e altre risorse per gli amministratori su come pianificare, distribuire ed eseguire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 024da06002d6f3f4647cc48a854042320a8a5f66
-ms.sourcegitcommit: 02e243d6c58eab463a00ed45dadd80112087006e
+ms.openlocfilehash: 664e9649d5fab01fb40124aa383943ec496ce452
+ms.sourcegitcommit: 38fa37d83704200911866cf017566fcb128ea2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52723424"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105028"
 ---
 # <a name="getting-started-with-admin-training-for-microsoft-teams"></a>Guida introduttiva alla formazione per gli amministratori per Microsoft Teams
 
@@ -87,7 +87,8 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 | ------------| -------------------- |
 | Modulo 1: Introduzione ai dispositivi Microsoft Teams Android  |[Presentazione](https://download.microsoft.com/download/8/0/2/8020c233-8989-4def-b3ea-fb06365c663a/%281%29%20Introduction%20to%20Microsoft%20Teams%20Android%20Devices.pdf) |
 | Modulo 2: Pianificazione Microsoft Teams dispositivi Android|[Presentazione](https://download.microsoft.com/download/f/8/f/f8f94605-9545-449b-b5d3-f24efc55f966/Planning%20Microsoft%20Teams%20Android%20Devices.pdf) |
-|Modulo 3: Caratteristiche di Microsoft Teams dispositivi Android |[Presentazione](https://download.microsoft.com/download/c/9/9/c9922544-7e27-40af-bf19-dbdc8516f0c1/Module%203-%20Features%20of%20Microsoft%20Teams%20Android%20Devices.pdf)
+|Modulo 3: Caratteristiche di Microsoft Teams dispositivi Android |[Presentazione](https://download.microsoft.com/download/c/9/9/c9922544-7e27-40af-bf19-dbdc8516f0c1/Module%203-%20Features%20of%20Microsoft%20Teams%20Android%20Devices.pdf)|
+|Modulo 4: Gestione Microsoft Teams dispositivi Android|[Presentazione](https://download.microsoft.com/download/c/e/b/ceb686ff-9be2-495c-9e2e-80047765e5b4/(4)%20Managing%20Microsoft%20Teams%20Android%20Devices.pdf)|
 
 <h2>Guide interattive</h2>
 
@@ -107,10 +108,11 @@ Usare le risorse di formazione per istruirsi sulle Teams, insegnare ad altri o e
 | Configurazione di Microsoft Teams per Firstline Worker                           | Informazioni su come configurare e distribuire l'ambiente Microsoft Teams per Firstline Workforce.                                                                                                                  | [Guida alla configurazione Microsoft Teams per Firstline Workers](https://aka.ms/ConfigFLWInteractiveGuide)              |
 | Identity for the frontline workforce: Empower IT, managers, and frontline workers                    | Informazioni su come integrare Microsoft Teams con i sistemi HR esistenti, configurare la gestione delle identità delegate semplificata e configurare l'accesso semplificato e transizioni fluide per gli utenti che usano dispositivi condivisi.                                                                                                                  | [Guida all'identità dei lavoratori in prima linea](https://aka.ms/FLWIdentityIG)              |
 | Distribuzione di Microsoft Teams Rooms                           | Informazioni su come creare e configurare un account da usare con Microsoft Teams Rooms e gestire il dispositivo nell'Microsoft Teams di amministrazione.                                                                                                                  | [Distribuzione di Microsoft Teams Rooms](https://aka.ms/teamsroomslab)              |
+|Uso di Teams dispositivi Android certificati|Informazioni su come gestire e aggiornare Microsoft Teams telefoni, Microsoft Teams display, Microsoft Teams Rooms e Microsoft Teams pannelli.|[Uso di Microsoft Teams dispositivi Android certificati](https://aka.ms/teamsandroiddeviceslab)|
 
 <h2>Guide introduttive</h2>
 
-- [Guida introduttiva: Teams per gli amministratori di Education](teams-quick-start-edu.yml)
+- [Guida introduttiva: Teams per l'istruzione amministratori](teams-quick-start-edu.yml)
 - [Guida introduttiva: Configurazione dei piani per chiamate in Teams](configuring-teams-calling-quickstartguide.md)
 
 <h2>Esercitazioni</h2>

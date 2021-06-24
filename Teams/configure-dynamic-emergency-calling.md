@@ -18,12 +18,12 @@ description: Scopri come configurare i Piani per chiamate Microsoft e la funzion
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ee730c737d105572c9c34c6f329b04de4f8f8472
-ms.sourcegitcommit: 2419348e964cfe97b72d533f267c5d7055d5366f
+ms.openlocfilehash: 5454eff6e09e923a6db8de1ba8c9e9fe47c3f0f2
+ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "52910048"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096310"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -113,8 +113,11 @@ Le impostazioni di rete vengono usate per determinare la posizione di un client 
 
 Le impostazioni di rete includono siti che includono una raccolta di subnet e vengono usate esclusivamente per l'assegnazione dinamica dei criteri agli utenti. Ad esempio, un criterio per le chiamate di emergenza e un criterio di routing delle chiamate di emergenza potrebbero essere assegnati al "sito Redmond" in modo che qualsiasi utente che effettua il roaming da casa o da un'altra località Microsoft sia configurato con numeri di emergenza, routing e desk di sicurezza specifici per Redmond.  
 
->[!Note]
->Le subnet possono anche essere definite in LIS e possono essere associate a una posizione di emergenza.  Le subnet LIS devono essere definite dall'ID di rete corrispondente all'intervallo IP subnet assegnato ai client. Ad esempio, l'ID di rete per un IP/mask client di 10.10.10.150/25 è **10.10.10.128.** Per altre informazioni, vedere [Informazioni di base sull'indirizzamento TCP/IP e la subnetting.](/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting)
+> [!Note]
+> Le subnet possono anche essere definite in LIS e possono essere associate a una posizione di emergenza.  Le subnet LIS devono essere definite dall'ID di rete corrispondente all'intervallo IP subnet assegnato ai client. Ad esempio, l'ID di rete per un IP/mask client di 10.10.10.150/25 è **10.10.10.128.** Per altre informazioni, vedere [Informazioni di base sull'indirizzamento TCP/IP e la subnetting.](/troubleshoot/windows-client/networking/tcpip-addressing-and-subnetting)
+
+> [!Important]
+> Le ricerche delle impostazioni di configurazione di rete non sono supportate nelle distribuzioni del servizio proxy cloud che modificano gli indirizzi IP di origine Teams client.
 
 Tenere presenti le definizioni seguenti. Per altre informazioni, vedere [Impostazioni di rete per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 

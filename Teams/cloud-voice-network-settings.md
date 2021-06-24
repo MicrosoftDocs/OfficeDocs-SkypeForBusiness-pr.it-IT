@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 10547a99b0e63585ae39cc90a5b0cf573a9c94e3
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: e97ddf7f6b7410e83a5e2257d7df6ae2ad27cb7f
+ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834336"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "53096283"
 ---
 # <a name="network-settings-for-cloud-voice-features-in-microsoft-teams"></a>Impostazioni di rete per le funzionalità vocali cloud in Microsoft Teams
 
@@ -61,3 +61,6 @@ Gli indirizzi IP attendibili sono gli indirizzi IP esterni Internet della rete a
 Se l'indirizzo IP esterno dell'utente corrisponde a un indirizzo IP presente nell'elenco indirizzi IP attendibili, la funzionalità voce cloud controlla per determinare la subnet interna in cui si trova l'endpoint dell'utente. È possibile trovare una corrispondenza con gli indirizzi IP IPv4 o IPv6 e dipende dal formato del pacchetto IP inviato alle impostazioni di rete. Se un indirizzo IP pubblico ha sia IPv4 che IPv6, è necessario aggiungerli entrambi come indirizzi IP attendibili.
 
 Se l'indirizzo IP esterno dell'utente non corrisponde a un indirizzo IP presente nell'elenco indirizzi IP attendibili, l'endpoint viene classificato come in una posizione sconosciuta.
+
+> [!Important]
+> Le ricerche delle impostazioni di configurazione di rete non sono supportate nelle distribuzioni del servizio proxy cloud che modificano gli indirizzi IP di origine Teams client.

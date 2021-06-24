@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 594470affe3de69d2190fadcdbbae96aaa9bc3c7
-ms.sourcegitcommit: a188b3457a923744ffdc35f8efe3e5440af83256
+ms.openlocfilehash: db6240e972ac346c38961d94aa1a408e20f3cd4b
+ms.sourcegitcommit: 38fa37d83704200911866cf017566fcb128ea2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "52957685"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105148"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
@@ -77,6 +77,7 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificaz
 
 | Modello di dispositivo | Versione firmware | Data di rilascio  | Dimensioni della sala                                        |
 |:------------------------|:-----------------|:--------------|:----------------------------------------------------------|
+| Logitech Rally Bar      | 1.2.788     |       Giugno 2021    |    Sala di medie dimensioni (4,5 m x 6m)       |
 | AudioCodes RXV80 | 1.9.155        |   Maggio 2021  | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
 | EPOS EXPAND Vision 3T       | 1.2.0.21102.03    | Aprile 2021 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
 | Yealink MeetingBar A30       | 133.15.0.52    | Marzo 2021 | Sala di medie dimensioni (4,5 m x 6m) |

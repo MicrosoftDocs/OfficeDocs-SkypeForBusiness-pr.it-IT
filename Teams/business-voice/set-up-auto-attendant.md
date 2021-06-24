@@ -17,16 +17,18 @@ search.appverid: MET150
 description: Informazioni su come configurare un operatore automatico (noto anche come coda di chiamata) Microsoft 365 Business Voice.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ea18bcd84ce67dda914461c1bee08fbf8f4f4332
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 1313edc2a1336218f9ab86f53aa207a92d2b6b39
+ms.sourcegitcommit: 38fa37d83704200911866cf017566fcb128ea2fe
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282443"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53105178"
 ---
 # <a name="step-6-set-up-an-auto-attendant-for-your-companys-main-phone-number"></a>Passaggio 6: Configurare un operatore automatico per il numero di telefono principale dell'azienda
 
 Un operatore automatico consente di configurare un menu di chiamata in modo che i chiamanti al numero di telefono principale possano scegliere da un elenco di opzioni. Ad esempio, è possibile scegliere di connettersi a un reparto di vendita o supporto, a una persona specifica, al cambio e persino a un altro operatore automatico.
+
+Il video seguente mostra come completare questi passaggi nell'interfaccia Teams di amministrazione.
 
 [!INCLUDE [business-voice-create-auto-attendant](../includes/business-voice-create-auto-attendant.md)]
 
