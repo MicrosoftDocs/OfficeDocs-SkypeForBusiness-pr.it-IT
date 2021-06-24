@@ -20,12 +20,12 @@ description: Questo articolo offre informazioni sui fattori da prendere in consi
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: fbacbc4e17d08ae8e5e3a86338f764976ac34b4d
-ms.sourcegitcommit: ea9a0119d184179300e51f58ca4fee249c12d00a
+ms.openlocfilehash: e3baf6a27b98d9f8b3fb30572391cd3442530c3d
+ms.sourcegitcommit: 112df406ae2c127cd9b5f717c1b43b11784b592d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "52699337"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "53069362"
 ---
 # <a name="plan-for-live-events-in-microsoft-teams"></a>Pianificare un evento live in Microsoft Teams
 
@@ -43,7 +43,7 @@ Per la pianificazione di un evento live di Teams, sono necessari i prerequisiti 
 Ecco le licenze che devono essere assegnate per organizzare, produrre o presentare un evento live di Teams:  
 
 - **Per organizzare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A3 o A5. 
-- **Per produrre o presentare:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[oppure]** una licenza di Microsoft o Office 365 Education A1, A3 o A5. L'eccezione a questo requisito è che gli utenti guest possono presentare senza licenza se vengono soddisfatti gli altri criteri per gli [utenti guest](plan-for-teams-live-events.md#guest-to-present).
+- **Per creare o eseguire:** una licenza di Microsoft o Office 365 Enterprise E1, E3 o E5 **[or]** una licenza di Microsoft o Office 365 Education A1, A3 o A5. L'eccezione a questo requisito è che gli utenti guest possono presentare senza licenza se sono soddisfatti gli altri criteri per gli [utenti Guest](plan-for-teams-live-events.md#guest-to-present).
 - Una licenza di Microsoft Teams - questa licenza è inclusa nelle licenze indicate al primo e al secondo punto dell'elenco.
 - Una licenza di Microsoft Stream, necessaria se si prevede di condividere il contenuto in un'app o un dispositivo esterno. Vedere l'articolo sulla [gestione delle licenze di Microsoft Stream](/stream/license-overview).
 
@@ -106,13 +106,13 @@ La tabella seguente illustra le funzionalità principali disponibili negli event
 > [!IMPORTANT]
 > **Aumento del limite degli eventi live di Microsoft 365**
 >
-> **Per continuare a supportare le esigenze dei nostri clienti, da gennaio 2022 estenderemo gli incrementi del limite temporaneo per gli eventi live, inclusi**:
+> **Per continuare a soddisfare le esigenze dei nostri clienti, dal 31 dicembre 2021 estenderemo gli incrementi del limite temporaneo per gli eventi live, inclusi**:
 >
 >- Supporto agli eventi fino a 20.000 partecipanti
 >- 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
 >- Durata degli eventi fino a 16 ore per trasmissione
 >
-> Inoltre, tramite il programma di assistenza per gli eventi live di Microsoft 365 è possibile pianificare eventi live con un totale di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Altre informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). 
+> Inoltre, tramite il programma di assistenza di Microsoft 365 per gli eventi live è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). 
 
 | Funzionalità | Skype Meeting Broadcast | Eventi prodotti in Teams | Eventi prodotti in app o dispositivi esterni |
 |---------|---------|---------|---------|
