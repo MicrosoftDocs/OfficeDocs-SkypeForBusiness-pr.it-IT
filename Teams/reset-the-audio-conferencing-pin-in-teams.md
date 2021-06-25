@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come reimpostare il PIN di audioconferenza di un utente in Microsoft Teams informazioni importanti sui PIN.
-ms.openlocfilehash: ece69ec231408cc860f2fad803d92d22feaca781
-ms.sourcegitcommit: cae94cd5761baafde51aea1137e6d164722eead9
+ms.openlocfilehash: 6470085fed25a83c1a8dc46ab45e8c6ea57b5603
+ms.sourcegitcommit: a07040d1527692b4dbde7bd2c21994377ad0a92e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53075379"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114025"
 ---
 # <a name="reset-the-audio-conferencing-pin-in-microsoft-teams"></a>Reimpostare il PIN di audioconferenza in Microsoft Teams
 
@@ -64,7 +64,7 @@ Le riunioni possono essere avviate quando un utente autenticato partecipa usando
     
 - L'invio automatico di messaggi di posta elettronica agli utenti è abilitato per impostazione predefinita e gli utenti riceveranno un messaggio di posta elettronica con il PIN quando sono abilitati per le audioconferenze o quando il PIN viene reimpostato. Se tuttavia l'invio automatico dei messaggi di posta elettronica è stato disabilitato, non verrà inviato un messaggio di posta elettronica di reimpostazione del PIN a un utente e sarà necessario inviare manualmente le informazioni sul PIN all'utente.
     
-- Quando la riunione inizia, tutti gli utenti nella sala di attesa si uniranno automaticamente. Ad esempio, se due partecipanti provano a partecipare a una riunione prima dell'inizio, verranno messi nella sala d'attesa e ascoltano musica in attesa e quando l'organizzatore della riunione partecipa usando il PIN tramite telefono, la riunione verrà avviata e i partecipanti nella sala d'attesa si uniranno alla riunione.
+- All'avvio di una riunione, l'organizzatore deve ammettere tutti gli utenti PSTN nella sala d'attesa per partecipare alla riunione. Ad esempio, se due partecipanti PSTN provano a partecipare a una riunione prima dell'inizio, vengono messi nella sala d'attesa e ascoltano la musica in attesa e quando l'organizzatore della riunione partecipa usando il PIN tramite telefono, la riunione verrà avviata e l'organizzatore potrà usare il comando in riunione (premere *21) per ammettere tutti gli utenti PSTN nella sala d'attesa.
     
 - L'impostazione predefinita è non consentire l'avvio di una riunione da parte di chiamanti anonimi.
     

@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull Teams di utilizzo dei dat
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 993c1b124737a0f335e9c9b1e720af72fcc88a8e
-ms.sourcegitcommit: 93d84e172cb4b19acde4b8bae9b77efe96c44c00
+ms.openlocfilehash: 37f0a69a5e6a6a3e2c54ae7c60effc0f1639bbef
+ms.sourcegitcommit: a07040d1527692b4dbde7bd2c21994377ad0a92e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122256"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114039"
 ---
 # <a name="microsoft-teams-usage-report"></a>Microsoft Teams utilizzo
 
@@ -33,7 +33,7 @@ Il report sull'utilizzo di Teams nell'interfaccia di amministrazione di Microsof
 1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare Teams **utilizzo.**
 2. In **Intervallo di date** selezionare un intervallo e quindi fare clic su Esegui **report.**
 
-    ![Screenshot del report sull Teams di utilizzo dei messaggi nell'Teams di amministrazione con callout](../media/teams-reports-teams-usage-with-callouts.png "Screenshot del report sull Teams di utilizzo dei messaggi nell'Teams di amministrazione con callout")
+    ![Screenshot del report sull Teams di utilizzo dei messaggi nell'Teams di amministrazione con callout](../media/teams-reports-teams-usage-with-callouts1.png "Screenshot del report sull Teams di utilizzo dei messaggi nell'Teams di amministrazione con callout")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
@@ -46,6 +46,8 @@ Il report sull'utilizzo di Teams nell'interfaccia di amministrazione di Microsof
 |**5**   |La tabella fornisce una suddivisione dell'utilizzo in base al team. <ul><li>**Il nome del** team è il nome visualizzato del team. È possibile fare clic sul nome del team per passare alla pagina delle impostazioni del team nell'Microsoft Teams di amministrazione. </li> <li>**Per privacy** si intende se il team è un team privato o un team pubblico.</li> <li>**Utenti attivi** è il numero di utenti attivi nel team nel periodo di tempo specificato.</li><li>**Guest** è il numero di guest nel team nel periodo di tempo specificato.</li> <li>**Canali attivi** è il numero di canali che hanno almeno un utente attivo nel periodo di tempo specificato.</li> <li>**Pubblica messaggi** è il numero di tutti i messaggi dei post nei canali nel periodo di tempo specificato.</li> <li>**Messaggi di** risposta è il numero di tutti i messaggi di risposta nei canali nel periodo di tempo specificato.</li> <li>**Riunioni organizzate** è il numero di riunioni pianificate e ad hoc organizzate da un utente durante il periodo di tempo specificato. </li><li>**Messaggi urgenti** è il numero di tutti i messaggi urgenti nel periodo di tempo specificato.</li><li>**Reazioni** è il numero di tutte le reazioni ai messaggi nel periodo di tempo specificato.</li><li>**Menzioni** è il numero di tutte le menzioni usate nei messaggi nel periodo di tempo specificato.</li><li>**Messaggi del** canale è il numero di messaggi univoci che gli utenti del team hanno pubblicato in una chat del team durante il periodo di tempo specificato.</li> </li> </ul>Si noti che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
 |**6**   |Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
 |**7**   |È possibile esportare il report in un file CSV per l'analisi offline. Fare **clic su Esporta in Excel** e quindi nella scheda **Download** fare clic su **Scarica** per scaricare il report quando è pronto.<br><br>![Screenshot della scheda Download che mostra i report esportati da scaricare](../media/teams-reports-export-to-csv.png)|
+|**8** |I punti dati della serie temporale nel grafico mostrano metriche di utilizzo diverse aggregate nel tenant|
+|**9** |I dati tabulari rappresentavano metriche di utilizzo diverse aggregate per ogni team|
 
 [!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
 

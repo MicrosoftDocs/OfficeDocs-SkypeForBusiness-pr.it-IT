@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4824e24eb1e648d2ffc2d52fbdc1fa8593bbe9d9
-ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
+ms.openlocfilehash: 72c65de4892a25889fb456c73406126d34335f9a
+ms.sourcegitcommit: a07040d1527692b4dbde7bd2c21994377ad0a92e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096300"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "53114015"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -57,7 +57,7 @@ I vantaggi dell'uso di OneDrive for Business e SharePoint per l'archiviazione de
 - Supporto multi-geo: le registrazioni vengono archiviate in un'area geografica specifica dell'utente
 - Portare il proprio supporto per la chiave (BYOK)
 
-Vedere l'elenco completo delle [funzionalità disponibili oggi e cosa aspettarsi nel corso del tempo.](https://docs.microsoft.com/stream/streamnew/features-new-version-stream) 
+Vedere l'elenco completo delle [funzionalità disponibili oggi e cosa aspettarsi nel corso del tempo.](/stream/streamnew/features-new-version-stream) 
 
 Per altre informazioni, vedere "Novità Microsoft Teams registrazioni delle riunioni".
 
@@ -142,7 +142,7 @@ Per impostazione predefinita, tutti i file di registrazione verranno OneDrive'ac
 
 **Come si gestiscono le registrazioni di ex dipendenti?**
 
-Poiché i video sono esattamente come qualsiasi altro file in OneDrive for Business e SharePoint, la gestione della proprietà e della conservazione dopo l'uscita di un dipendente seguirà il normale processo di OneDrive for Business e [SharePoint.]( https://docs.microsoft.com/onedrive/retention-and-deletion#the-onedrive-deletion-process)
+Poiché i video sono esattamente come qualsiasi altro file in OneDrive for Business e SharePoint, la gestione della proprietà e della conservazione dopo l'uscita di un dipendente seguirà il normale processo di OneDrive for Business e [SharePoint.](/onedrive/retention-and-deletion#the-onedrive-deletion-process)
 
 **Who le autorizzazioni per visualizzare la registrazione della riunione?**
 
@@ -155,7 +155,7 @@ Poiché i video sono esattamente come qualsiasi altro file in OneDrive for Busin
 
 **Come si gestiscono le didascalie?**
 
-I sottotitoli codificati Teams registrazioni delle riunioni saranno disponibili durante la riproduzione solo se l'utente aveva attivato la trascrizione al momento della registrazione. Gli amministratori devono [attivare la trascrizione della registrazione tramite criteri]( https://docs.microsoft.com/microsoftteams/cloud-recording#turn-on-or-turn-off-recording-transcription) per assicurarsi che gli utenti hanno la possibilità di registrare le riunioni con la trascrizione.
+I sottotitoli codificati Teams registrazioni delle riunioni saranno disponibili durante la riproduzione solo se l'utente aveva attivato la trascrizione al momento della registrazione. Gli amministratori devono [attivare la trascrizione della registrazione tramite criteri](/microsoftteams/cloud-recording#turn-on-or-turn-off-recording-transcription) per assicurarsi che gli utenti hanno la possibilità di registrare le riunioni con la trascrizione.
 
 I sottotitoli consentono di creare contenuti inclusivi per gli utenti di tutte le abilità. I proprietari possono nascondere le didascalie nella registrazione della riunione, anche se la trascrizione della riunione sarà ancora disponibile Teams a meno che non venga eliminato. 
 

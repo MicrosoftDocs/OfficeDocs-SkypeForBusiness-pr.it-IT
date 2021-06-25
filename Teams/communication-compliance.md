@@ -7,7 +7,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: anwara
-description: Informazioni sulla conformità delle comunicazioni, parte del set di soluzioni di rischio insider, dal punto di vista Microsoft Teams (fa parte della funzionalità di conformità alle comunicazioni M365).
+description: Learning sulla conformità delle comunicazioni, parte del set di soluzioni di rischio insider, dal punto di vista Microsoft Teams (fa parte della funzionalità di conformità alle comunicazioni M365).
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -16,18 +16,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cf032669edc7255571e2501774ac0d0ee0df47d8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c5957e8900a9b3d9915a88e3ad8bf5e18c7a08b3
+ms.sourcegitcommit: d77104d5606ff93a792e8712d6c7780ae247b536
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121534"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53126902"
 ---
 # <a name="communication-compliance-with-microsoft-teams"></a>Conformità alle comunicazioni con Microsoft Teams
 
 La conformità alle comunicazioni è una soluzione di rischio insider in Microsoft 365 che consente di ridurre al minimo i rischi di comunicazione consentendo di rilevare, acquisire e agire in base a messaggi inappropriati nell'organizzazione.
 
-Per Microsoft Teams, la conformità alle [](/microsoft-365/compliance/communication-compliance-feature-reference) comunicazioni consente di identificare i seguenti tipi di contenuto inappropriato nei canali Teams o nelle chat 1:1 e di gruppo:
+Per Microsoft Teams, la conformità alle [](/microsoft-365/compliance/communication-compliance-feature-reference) comunicazioni consente di identificare i seguenti tipi di contenuto inappropriato nei canali Teams, nei canali Teams privati o nelle chat 1:1 e di gruppo:
 
 - Linguaggio offensivo, profano e molesto
 - Immagini per adulti, racy e gory
@@ -46,7 +46,7 @@ Introduzione alla conformità delle comunicazioni in [](/microsoft-365/complianc
 Teams amministratori possono configurare i criteri di conformità delle comunicazioni ai livelli seguenti:
 
 - **Livello utente:** i criteri di questo livello si applicano a un singolo Teams utente o possono essere applicati a tutti Teams utenti dell'organizzazione. Questi criteri riguardano i messaggi che questi utenti possono inviare in chat 1:1 o di gruppo. Le comunicazioni chat per gli utenti vengono monitorate automaticamente in Microsoft Teams in cui gli utenti sono membri.
-- **Teams livello:** i criteri di questo livello si applicano a un canale Microsoft Team. Questi criteri riguardano solo i messaggi inviati nel Teams canale.
+- **Teams livello:** i criteri di questo livello si applicano a un canale Microsoft Team, incluso un canale privato. Questi criteri riguardano solo i messaggi inviati nel Teams canale.
 
 ### <a name="act-on-inappropriate-messages-in-microsoft-teams"></a>Agire in base ai messaggi inappropriati in Microsoft Teams
 

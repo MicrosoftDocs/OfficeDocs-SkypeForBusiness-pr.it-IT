@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
-ms.openlocfilehash: be6c53855a6d32f8348f02b18ac3074388dafc88
-ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
+ms.openlocfilehash: e7141d32015207469346e018bc12bc362254ba2f
+ms.sourcegitcommit: d77104d5606ff93a792e8712d6c7780ae247b536
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52739686"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53126922"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -118,13 +118,13 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 È necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale all'account della risorsa.
 
-1. Nell'Microsoft 365 di amministrazione fare clic  sull'account della risorsa a cui si vuole assegnare una licenza nell'elenco Utenti attivi.
+1. Nell'interfaccia di amministrazione di Microsoft 365 utenti attivi **nell'elenco** Utenti attivi fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
 
 2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 
 3. Fare clic **su Salva modifiche**.
 
-    ![Screenshot dell'interfaccia utente per l'assegnazione di licenze nell'interfaccia Microsoft 365 di amministrazione](../media/resource-account-assign-virtual-user-license.png)
+    ![Screenshot dell'interfaccia utente per l'assegnazione di licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
 
 ### <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -157,7 +157,7 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 # <a name="step-3brcall-agents"></a>[Passaggio 3 <br> Agenti di chiamata](#tab/call-agents)
 
-Per aggiungere agenti alla coda di chiamata, li aggiungeremo al team e al canale creato in precedenza.
+Per aggiungere agenti alla coda di chiamata, li aggiungeremo al team e al canale creato in precedenza. Per eseguire questa operazione, è necessario essere membri del team.
 
 1. Selezionare **l'opzione Scegli un team** e fare clic **su Aggiungi canale.**
 2. Digitare il nome del team creato, selezionarlo e fare clic su **Aggiungi.**

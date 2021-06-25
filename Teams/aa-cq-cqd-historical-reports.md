@@ -21,45 +21,46 @@ ms.custom:
 - Reporting
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
-description: Informazioni su come usare il report Power BI del dashboard qualità delle chiamate per visualizzare i Operatore automatico e la cronologia della coda di chiamata.
-ms.openlocfilehash: 77b74eb48a16992f7f601bd6cccf3c61b421fc30
-ms.sourcegitcommit: 24ae0c223e9d915c505146d422ad049c88a4ed51
+description: Informazioni su come usare il report Dashboard qualità Power BI per visualizzare i Operatore automatico della coda di chiamata.
+ms.openlocfilehash: 994e135cfd579d473da02879adde0d3603ab0ed2
+ms.sourcegitcommit: 0122be629450e203e7143705ac2b395bf3792fd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "53023247"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129336"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Operatore automatico & cronologia della coda di chiamata
 
-Il modello di Power BI Report Operatore automatico & coda di chiamata di CQD Teams fornisce i tre report seguenti:
+Il modello CQD Teams Operatore automatico & report cronologico coda di chiamata Power BI report fornisce i tre report seguenti:
 
-- Operatore automatico: mostra l'analisi delle chiamate in arrivo nei tuoi operatori automatici.
-- Coda di chiamata: mostra l'analisi delle chiamate in arrivo nelle code di chiamata.
-- Sequenza temporale agente: mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
+- [Operatore automatico,](media/cqd-teams-aa-cq-historical-report-sample-aa.png) che mostra l'analisi delle chiamate in arrivo negli operatori automatici.
+- [Coda di chiamata:](media/cqd-teams-aa-cq-historical-report-sample-cq.png) mostra l'analisi delle chiamate in arrivo nelle code di chiamata.
+- [Sequenza temporale agente:](media/cqd-teams-aa-cq-historical-report-sample-at.png) mostra una visualizzazione sequenza temporale degli agenti attivi nelle chiamate in coda di chiamata.
 
 Questi report usano i dati [dell'archivio dati di Call Quality Dashboard.](CQD-Power-BI-query-templates.md) Consentono alle organizzazioni di segnalare il numero di chiamate elaborate dagli operatori automatici e dalle code di chiamata.  Forniscono anche informazioni approfondite sulle prestazioni degli agenti nelle code di chiamata.
 
-## <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
+## <a name="prerequisites"></a>Prerequisiti
 
-È necessario che Power BI Desktop sia installato. È possibile installarlo da [Microsoft Windows Store.](https://aka.ms/pbidesktopstore)
+### <a name="power-bi-desktop"></a>Power BI Desktop
+È necessario avere installato Power BI Desktop. È possibile installarlo da [Microsoft Windows Store.](https://aka.ms/pbidesktopstore)
 
 È possibile usare la versione gratuita di Power BI Desktop. La versione minima compatibile è 2.85.681.0 (settembre 2020).
 
-## <a name="permissions-to-access-the-cqd-pipeline"></a>Autorizzazioni per accedere alla pipeline CQD
+### <a name="permissions-to-access-the-cqd-pipeline"></a>Autorizzazioni per accedere alla pipeline CQD
 
 L'account che si usa per visualizzare il report cronologico di AA & CQ Analytics deve avere le autorizzazioni per accedere alla pipeline di dati CQD. Per altre informazioni, vedere [Ruolo di accesso CQD.](./turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd)
 
 ## <a name="installation"></a>Installazione 
 
-I passaggi seguenti presuppongono che Power BI Desktop sia già installato nel computer e che l'account abbia le autorizzazioni necessarie per accedere alla pipeline di dati CQD.
+I passaggi seguenti presuppongono che Power BI Desktop nel computer e che l'account abbia le autorizzazioni necessarie per accedere alla pipeline di dati CQD.
 
 Eseguire la procedura seguente:
 
-- Scaricare i [modelli di Power BI Query CQD](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file ZIP in una directory del computer.
+- Scaricare i [modelli di query Power BI CQD](https://www.microsoft.com/download/details.aspx?id=102291) e salvare il file ZIP in una directory del computer.
 
 - Fare doppio clic sul file ZIP per aprirlo.
 
-- Fare doppio clic sul file del modello "CQ and AA combined Analytics 20201105.pbit" e dovrebbe essere avviato Power BI Desktop.
+- Fare doppio clic sul file di modello "CQ and AA combined Analytics 20201105.pbit" e Power BI Desktop dovrebbe essere avviato.
 
 - Verrà richiesto di selezionare l'area della pipeline di dati CQD. Selezionare l'area geografica in cui si trova il tenant.
 
@@ -86,7 +87,7 @@ Eseguire la procedura seguente:
 
   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot che mostra l'accesso":::
 
-- Selezionare **Connetti e** osservare l'aggiornamento dei dati.
+- Selezionare **Connessione** e osservare l'aggiornamento dei dati.
 
 ## <a name="data-latency-and-aa--cq-analytics"></a>Latenza dei dati e analisi AA & CQ
 

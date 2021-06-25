@@ -16,12 +16,12 @@ f1.keywords:
 description: Ottimizzazione del supporto locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aab38cb7f844764faac0e9c19bc03110adac9c10
-ms.sourcegitcommit: 50ec59b454e751d952cde9fd13c8017529d0e1d6
+ms.openlocfilehash: 36d42310b056d0b7774dfddd04f63e4f871851fe
+ms.sourcegitcommit: 0122be629450e203e7143705ac2b395bf3792fd3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "52469668"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53129346"
 ---
 # <a name="local-media-optimization-for-direct-routing"></a>Ottimizzazione del supporto locale per il routing diretto
 
@@ -35,7 +35,7 @@ L'ottimizzazione multimediale locale per il routing diretto consente di gestire 
 
 L'ottimizzazione multimediale locale supporta due scenari:
 
-- Centralizzazione di tutti i trunk locali tramite un SBC centralizzato connesso al trunk SIP (Session Initiation Protocol) principale, che fornisce servizi di telefonia a tutte le succursali locali dell'azienda.
+- Centralizzazione di tutti i trunk locali tramite una SBC centralizzata connessa al trunk SIP (Session Initiation Protocol) principale, che fornisce servizi di telefonia a tutte le succursali locali dell'azienda.
 
 -   Creazione di una topologia di rete virtuale di SBC, in cui gli SBC nelle succursali locali sono connessi a un SBC proxy centralizzato visibile a Telefono Microsoft System tramite l'indirizzo IP esterno. In una topologia di rete virtuale, gli SBC downstream comunicano tramite IP interni e non sono direttamente visibili Sistema telefonico.
 
@@ -78,7 +78,8 @@ Per creare una soluzione in cui i servizi PSTN vengono forniti a tutte le succur
 
 - Quando un utente si trova all'esterno della rete aziendale, L'SBC fornisce l'IP esterno (pubblico) dell'SBC.
 
-Nota: tutti i valori inclusi in esempi, tabelle o diagrammi vengono presentati solo a scopo illustrativo.
+> [!NOTE]
+> Tutti i valori inclusi in esempi, tabelle o diagrammi vengono presentati solo a scopo illustrativo.
 
 Tabella 1. Parametri di rete di esempio per SBC 
 
@@ -152,7 +153,8 @@ Il diagramma seguente mostra il flusso di traffico di alto livello per lo scenar
 
 - L'SBC a valle nella succursale locale non è visibile a Sistema telefonico direttamente, ma è mappato all'interno della topologia di rete virtuale definita dall'amministratore di Contoso durante la configurazione dell'ottimizzazione del supporto locale.
 
-Nota: il comportamento potrebbe essere diverso per gli utenti locali e per gli utenti non locali a seconda della modalità di ottimizzazione del supporto locale configurata. 
+> [!NOTE]
+> Il comportamento potrebbe essere diverso per gli utenti locali e gli utenti non locali a seconda della modalità di ottimizzazione del supporto locale configurata. 
 
 Per altre informazioni sulle modalità possibili e sul comportamento pertinente, vedere Configurare l'ottimizzazione del supporto locale.
 
@@ -188,8 +190,8 @@ L'ottimizzazione multimediale locale supporta due modalità:
 
 Per distinguere tra le modalità di ottimizzazione dei supporti multimediali locali, l'amministratore del tenant deve impostare il parametro -BypassMode su 'Always' o 'OnlyForLocalUsers' per ogni SBC usando il cmdlet Set-CSonlinePSTNGateway. Per altre informazioni, vedere [Configurare l'ottimizzazione multimediale locale.](direct-routing-media-optimization-configure.md)  
 
- > [!NOTE]
-  > Quando gli utenti sono interni, è necessaria la connettività multimediale tra l'utente e SBC tramite l'indirizzo IP **interno.** In questo caso non esiste alcun fallback agli inoltri di trasporto pubblico per i supporti multimediali, in quanto SBC fornirà un indirizzo IP interno per la connettività multimediale. 
+> [!NOTE]
+> Quando gli utenti sono interni, è necessaria la connettività multimediale tra l'utente e SBC tramite l'indirizzo IP **interno.** In questo caso non esiste alcun fallback agli inoltri di trasporto pubblico per i supporti multimediali, in quanto SBC fornirà un indirizzo IP interno per la connettività multimediale. 
 
 ### <a name="mode-1-always-bypass"></a>Modalità 1: ignora sempre
 
@@ -331,7 +333,7 @@ Di seguito è riportato un elenco dei problemi noti attualmente presenti in Otti
 
 | Problema | Soluzione alternativa |
 | :--- | :--- |
-| Teams client non viene identificato  come interno quando l'indirizzo IP pubblico del client Teams corrisponde all'elenco indirizzi IP attendibili del cliente. | L'ottimizzazione del supporto locale richiede che la subnet del client Teams corrisponda a una subnet di rete configurata [dal tenant](https://docs.microsoft.com/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps)|
+| Teams client non viene identificato  come interno quando l'indirizzo IP pubblico del client Teams corrisponde all'elenco indirizzi IP attendibili del cliente. | L'ottimizzazione del supporto locale richiede che la subnet del client Teams corrisponda a una subnet di rete configurata [dal tenant](/powershell/module/skype/new-cstenantnetworksubnet?view=skype-ps)|
 | Le escalation delle chiamate comportano chiamate eliminate quando il client Teams viene identificato come interno.| Disabilitare l'ottimizzazione del supporto locale nell'SBC di routing diretto.|
 | Le escalation delle chiamate da 1 a 1 chiamata tra clienti interni a chiamate multiparty con clienti/risorse esterni causano chiamate eliminate | Lavoro in corso su una correzione. In alternativa, disabilitare Ottimizzazione multimediale locale nell'SBC di routing diretto.|
 | Teams utente mette la chiamata in attesa. Musica viene riprodotto all'estremità PSTN e l'ottimizzazione dei supporti locali funziona. L Teams utente riprende la chiamata. La chiamata a PSTN riprende, ma l'ottimizzazione dei supporti locali non funziona e la chiamata continua tramite SBC centrale (proxy) | Quando un utente parcheggia una chiamata per avviare la musica in attesa (MoH), viene riassegnata da 1:1 a una chiamata multiparty da parte del Controller di chiamata per richiamare Media Controller e Processore multimediale (che funge da mixer AVMCU) attraverso cui MoH raggiunge un utente che è stato messo in attesa. La de-escalation a una chiamata 1:1 dopo la ripresa della chiamata non viene mai eseguita come da progettazione. Disabilitare l'ottimizzazione del supporto locale nell'SBC di routing diretto.|
