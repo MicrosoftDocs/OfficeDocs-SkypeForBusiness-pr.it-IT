@@ -1,11 +1,11 @@
 ---
-title: Restrizioni di composizione a numero verde in Messico
-ms.author: crowe
-author: CarolynRowe
-manager: serdars
+title: Restrizioni di composizione a numero verde in Canada
+ms.author: v-lsaldanha
+author: lovina-saldanha
+manager: dansimp
 ms.reviewer: mikedav, oscarr
 ms.topic: reference
-ms.assetid: 576e0cc3-0a1a-43bf-a6fc-3a28e47ecd58
+ms.assetid: 4e3ffa25-762e-4066-acb2-15634818b586
 ms.tgt.pltfrm: cloud
 ms.service: msteams
 ms.collection:
@@ -23,15 +23,15 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla composizione di numeri verde in Messico, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: 93a7a92d15860519fe9a599cfb247982be1b0ac3
+description: Informazioni sulla composizione di numeri verde in Canada, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
+ms.openlocfilehash: 85ac884050c69e5be64c99c9c07df7549b2b2a9a
 ms.sourcegitcommit: 7579dda8018691eb1a724cb0311b53333dc3ae5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 06/25/2021
-ms.locfileid: "53142832"
+ms.locfileid: "53142918"
 ---
-# <a name="toll-free-dialing-restrictions-in-mexico"></a>Restrizioni di composizione a numero verde in Messico
+# <a name="toll-free-dialing-restrictions-in-canada"></a>Restrizioni di composizione a numero verde in Canada
 
 [Trova un altro paese o area](../toll-free-dialing-limitations-and-restrictions.md)geografica o altre informazioni sulle limitazioni e le restrizioni di composizione a numero verde.
 
@@ -39,7 +39,7 @@ ms.locfileid: "53142832"
 |:-----|:-----|
 |Sono disponibili chiamate a numero verde?  <br/> |Sì  <br/> |
 |Formati di composizione  <br/> | 844<br/>833<br/>855<br/>800<br/>866<br/>877<br/>888<br/>|
-|Codice ISO del paese/area geografica  <br/> |MX  <br/> |
+|Codice ISO del paese/area geografica  <br/> |CAN  <br/> |
 |Isola/territorio coperto  <br/> |Samoa americane, Anguilla, Antigua e Barbuda, Bahamas, Barbados, Bermuda, Isole Vergini Britanniche, Canada, Isole Cayman, Dominica, Repubblica Dominicana, Grenada, Guam, Giamaica, Montserrat, Isole Marianne settentrionali, Porto Rico, Saint Kitts e Nevis, Saint Lucia, Saint Vincent e Grenadines, Sint Maarten, Trinidad e Tobago, Isole Turks e Caicos, Stati Uniti, Isole Vergini Degli Stati Uniti <br/> |
 |Disponibilità linea cablata/fissa  <br/> |Sì  <br/> |
 |Disponibilità rete mobile  <br/> |Sì  <br/> |

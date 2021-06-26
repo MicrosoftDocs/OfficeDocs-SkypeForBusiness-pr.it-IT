@@ -21,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come usare il parcheggio di chiamata e recuperare per mettere una chiamata in attesa in Microsoft Teams.
-ms.openlocfilehash: 11c0abc5c9cd49a524417ce9706129cea9ccae1e
-ms.sourcegitcommit: 84d99b266dea2a972774d781b92eccc67d6c197a
+ms.openlocfilehash: fb60e09148f2b96ce9b4d059d7d112c817239822
+ms.sourcegitcommit: 355c7858b98518f6a922110390c51eb7e2cd6690
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197581"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "53147184"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Parcheggio di chiamata e recupero in Microsoft Teams
 
@@ -46,6 +46,8 @@ Per parcheggiare e recuperare le chiamate, un utente deve essere un VoIP azienda
 ## <a name="configure-call-park-and-retrieve"></a>Configurare il parcheggio di chiamata e recuperare
 
 È necessario essere un amministratore Teams per configurare il parcheggio di chiamata e recuperarlo. È disabilitato per impostazione predefinita. È possibile abilitarlo per gli utenti e creare gruppi di utenti usando i criteri di parcheggio di chiamata. Quando si applicano gli stessi criteri a un set di utenti, possono parcheggiare e recuperare le chiamate tra loro.
+
+L'intervallo di numeri di ritiro delle chiamate è predefinito compreso tra 10 e 99 e non può essere modificato. La prima chiamata parcheggiata verrà resa un codice di ritiro di 10, la successiva chiamata parcheggiata verrà resa un codice di ritiro di 11 e così via. fino a quando 99 non viene visualizzato come codice di ritiro. Dopo di che, i codici di ritiro renderizzati ricominciano da 10 di nuovo.  Se sono presenti più di 89 chiamate parcheggiate attive, i codici di ritiro visualizzati continueranno a essere incrementati oltre le 99, in modo che la 90a chiamata parcheggiata attiva sia resa 100 per un codice di ritiro, mentre per la 91a chiamata parcheggiata attiva verrà visualizzato un codice di ritiro di 101.
 
 Per abilitare un criterio di parcheggio di chiamata
 
