@@ -1,7 +1,7 @@
 ---
 title: Teams per Virtualized Desktop Infrastructure (VDI)
-author: msdmaguire
-ms.author: dmaguire
+author: cichur
+ms.author: v-cichur
 manager: serdars
 ms.topic: article
 ms.service: msteams
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a6eba4f1da849a2cf8e355454fd1ba794a3496db
-ms.sourcegitcommit: cae94cd5761baafde51aea1137e6d164722eead9
+ms.openlocfilehash: 7d498f66241de3edc46a86ae884b615384508b84
+ms.sourcegitcommit: 4d2e1328dee2b6c60ba0022976da8dfe5efba2ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53075389"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53203625"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -121,6 +121,7 @@ In una configurazione non persistente, le modifiche al sistema operativo locale 
 Per una configurazione non persistente, Teams'app desktop deve essere installata per computer nell'immagine dorata. Per altre informazioni, vedere la sezione Installare o [aggiornare Teams'app desktop in VDI.](#install-or-update-the-teams-desktop-app-on-vdi) In questo modo si garantisce un avvio efficiente dell'app Teams durante una sessione utente.
 
 L Teams in una configurazione non persistente richiede anche un gestore della memorizzazione nella cache del profilo, per una sincronizzazione Teams dati di runtime efficiente. Una sincronizzazione efficiente dei dati assicura che le informazioni appropriate specifiche dell'utente, ad esempio i dati, il profilo o le impostazioni di un utente, siano memorizzate nella cache durante la sessione dell'utente. Assicurarsi che i dati in queste due cartelle siano sincronizzati:<br>
+
 - C:\Utenti\nomeutente\AppData\Local\Microsoft\IdentityCache (%localAppdata%\Microsoft\IdentityCache)
 - C:\Utenti\nomeutente\AppData\Roaming\Microsoft\Teams (%appdata%\Microsoft\Teams)
 
@@ -186,6 +187,7 @@ Per altre informazioni su Teams e Microsoft 365 Apps for enterprise, vedere Come
         ```console
         reg add "HKLM\SOFTWARE\Microsoft\Teams" /v IsWVDEnvironment /t REG_DWORD /d 1 /f
         ```
+
         Questo processo aggiunge una chiave del Registro di sistema necessaria al computer che consente al Teams programma di installazione di sapere che si tratta di un'istanza VDI.  Senza di essa, il programma di installazione verrà visualizzato un errore che indica: "Installazione non riuscita.  Non è possibile eseguire l'installazione per tutti gli utenti quando non viene rilevato un ambiente VDI".
 
         ```console
@@ -256,7 +258,7 @@ Teams nel browser Chrome non fornisce una sostituzione dell'app desktop Teams pe
 
 ## <a name="teams-on-vdi-with-chat-and-collaboration"></a>Teams su VDI con chat e collaborazione
 
-Se l'organizzazione vuole usare solo le funzionalità di chat e collaborazione in Teams, è possibile impostare criteri a livello di utente per disattivare la funzionalità di chiamata e riunione in Teams. 
+Se l'organizzazione vuole usare solo le funzionalità di chat e collaborazione in Teams, è possibile impostare criteri a livello di utente per disattivare la funzionalità di chiamata e riunione in Teams.
 
 ### <a name="set-policies-to-turn-off-calling-and-meeting-functionality"></a>Impostare i criteri per disattivare la funzionalità di chiamata e riunione
 
@@ -273,8 +275,8 @@ Per assegnare i criteri di chiamata DisallowCalling e i criteri della riunione A
 1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Utenti**.
 2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. Eseguire le operazioni seguenti:
-    1.  In **Criteri di chiamata** fare clic su **DisallowCalling**.
-    2.  In **Criteri riunione fare** clic su **AllOff.**
+    1. In **Criteri di chiamata** fare clic su **DisallowCalling**.
+    2. In **Criteri riunione fare** clic su **AllOff.**
 4. Fare clic **su Applica**.
 
 Per assegnare un criterio a più utenti contemporaneamente:
@@ -318,7 +320,7 @@ Se si ha un'implementazione esistente di Teams in VDI con chat e collaborazione 
 
 È possibile usare l'interfaccia Microsoft Teams o PowerShell per impostare e assegnare criteri di chiamata e riunione agli utenti. La propagazione delle modifiche ai criteri può richiedere del tempo (alcune ore). Se le modifiche per un determinato account non sono immediatamente disponibili, riprovare dopo alcune ore.
 
-[**Criteri di chiamata:**](teams-calling-policy.md)i criteri di chiamata Teams le funzionalità di chiamata disponibili per gli utenti. Teams include il criterio di chiamata AllowCalling predefinito, in cui tutte le funzionalità di chiamata sono attivate. Per attivare tutte le funzionalità di chiamata, assegnare il criterio AllowCalling. In caso contrario, creare un criterio di chiamata personalizzato per attivare le funzionalità di chiamata desiderate e assegnarle agli utenti. 
+[**Criteri di chiamata:**](teams-calling-policy.md)i criteri di chiamata Teams le funzionalità di chiamata disponibili per gli utenti. Teams include il criterio di chiamata AllowCalling predefinito, in cui tutte le funzionalità di chiamata sono attivate. Per attivare tutte le funzionalità di chiamata, assegnare il criterio AllowCalling. In caso contrario, creare un criterio di chiamata personalizzato per attivare le funzionalità di chiamata desiderate e assegnarle agli utenti.
 
 [**Criteri riunione:**](meeting-policies-in-teams.md)i criteri riunione in Teams i tipi di riunioni che gli utenti possono creare e le caratteristiche disponibili per i partecipanti alla riunione pianificati dagli utenti dell'organizzazione. Teams include i criteri predefiniti per le riunioni AllOn, in cui tutte le funzionalità della riunione sono attivate. Per attivare tutte le caratteristiche della riunione, assegnare il criterio AllOn. In caso contrario, è possibile creare criteri di riunione personalizzati per attivare le caratteristiche della riunione desiderate e assegnarle gli utenti.
 
@@ -329,8 +331,8 @@ Per assegnare i criteri di chiamata AllowCalling e i criteri riunione AllOn a un
 1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Utenti**.
 2. Per selezionare l'utente facendo clic a sinistra del nome utente e poi fare clic su **Impostazioni di modifica**.
 3. Eseguire le operazioni seguenti:
-    1.  In **Criteri di chiamata** fare clic su **AllowCalling**.
-    2.  In **Criteri riunione fare** clic su **AllOn.**
+    1. In **Criteri di chiamata** fare clic su **AllowCalling**.
+    2. In **Criteri riunione fare** clic su **AllOn.**
 4. Fare clic **su Applica**.
 
 Per assegnare un criterio a più utenti contemporaneamente:
@@ -377,6 +379,90 @@ Per disabilitare la modalità di fallback, impostare il valore su **1.** Per abi
 
 Questa funzionalità è disponibile nella Teams versione 1.3.00.13565 e successive.
 
+## <a name="disable-audio-and-video-settings-for-vdi"></a>Disabilitare le impostazioni audio e video per VDI
+
+Teams I criteri VDI sono disponibili nel Microsoft Teams modulo. Questi criteri sono attivi e applicati in ambienti VDI non ottimizzati.
+
+- New-CsTeamsVdiPolicy  
+- Grant-CsTeamsVdiPolicy
+- Remove-CsTeamsVdiPolicy
+- Set-CsTeamsVdiPolicy
+
+> [!NOTE]
+> Si tratta solo di ambienti non ottimizzati.
+
+### <a name="update-a-module-name"></a>Aggiornare il nome di un modulo
+
+update-Module -Name MicrosoftTeams -AllowPrerelease
+
+```PowerShell
+<# Import and connect to online (CSOnline runs the policies) #>
+Import-Module microsoftTeams
+if( -not $sess){
+    $session = New-CsOnlineSession
+    $pss = Import-PSSession $session
+}
+<# Check out the commands #>
+Get-Command -Noun *VDI*
+<#
+```
+
+### <a name="set-policies-to-limit-calling-features"></a>Impostare criteri per limitare le funzionalità di chiamata
+
+Quando gli utenti con questa impostazione dei criteri VDI -DisableCallsAndMeetings $true per accedere a Teams in VDI, non dovrebbero essere in grado di:
+
+- Effettuare chiamate.
+- Partecipare alle riunioni.
+- Fai una condivisione dello schermo dalla chat.
+
+Tutti i tipi di chiamata devono essere disabilitati.
+
+> [!NOTE]
+> Si tratta solo di ambienti non ottimizzati.
+
+```PowerShell
+#>
+New-CsTeamsVdiPolicy -Identity DisableCallsAndMeetingsTrue -DisableCallsAndMeetings $true -DisableAudioVideoInCallsAndMeetings $false
+<# Assign Policy #>
+$user = 'meganb@jvteams.xyz'
+Grant-CsTeamsVdiPolicy -Identity $user -PolicyName DisableCallsAndMeetingsTrue
+<# wait for some time until the policy is applied #>
+get-CSOnlineUser -identity $user | FL UserPrincipalName, *vdi*
+<#
+Show all Policies  
+#>
+Get-CsTeamsVdiPolicy | FT Iden*, Disable*
+<#
+```
+
+Quando gli utenti con l'impostazione dei criteri VDI -DisableAudioVideoInCallsAndMeetings $true a Teams in VDI, dovrebbero essere in grado di:
+
+- Fai una condivisione dello schermo dalla chat.
+- Partecipare a una riunione e condividere uno schermo. Spostare l'audio in un telefono.
+- Gli utenti non dovrebbero essere in grado di effettuare una chiamata audio e video da persona a persona da VDI.
+
+> [!NOTE]
+> Si tratta solo di ambienti non ottimizzati.
+
+```powershell
+#>
+$PolName = "DisableCallsAndMeetingsAV"
+New-CsTeamsVdiPolicy -Identity $PolName -DisableCallsAndMeetings $false -DisableAudioVideoInCallsAndMeetings $true
+Grant-CsTeamsVdiPolicy -Identity $user -PolicyName $PolName
+<# wait for some time until the policy is applied #>
+get-CSOnlineUser -identity $user | FL UserPrincipalName, *vdi*
+<# ## Cleanup afterwards #>
+$cleanup = $false
+if($cleanup){
+    "Doing cleanup"
+    # de-assign policy from user  
+    Grant-CsTeamsVdiPolicy -Identity $user -PolicyName $null
+    get-CSOnlineUser -identity $user | FL UserPrincipalName, *vdi*
+    # remove Policies
+    Get-CsTeamsVdiPolicy | ?{$_.identity -ne 'Global'} | remove-csTeamsVdiPolicy
+}
+```
+
 ## <a name="known-issues-and-limitations"></a>Problemi noti e limitazioni
 
 ### <a name="client-deployment-installation-and-setup"></a>Distribuzione, installazione e configurazione del client
@@ -400,7 +486,7 @@ Le funzionalità di chiamata e riunione seguenti non sono supportate:
 - Audio/computer di sistema condiviso
 - Bypass multimediale per Instradamento diretto
 - Parcheggio di chiamata
-- Controllo zoom 
+- Controllo zoom
 
 > [!NOTE]
 > Stiamo lavorando per aggiungere funzionalità di chiamata e riunione attualmente disponibili solo in ambienti non VDI. Questi potrebbero includere un maggiore controllo dell'amministratore sulla qualità, altri scenari di condivisione dello schermo e funzionalità avanzate aggiunte di recente a Teams. Contatta il tuo Teams per altre informazioni sulle funzionalità imminenti.

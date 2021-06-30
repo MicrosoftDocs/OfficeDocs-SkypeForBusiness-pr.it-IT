@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6b4a8a5d0b866a3eb278ffdba575966f97c549d6
-ms.sourcegitcommit: 35ee6946b6f560a268d1313bf51c3cc94d8d52f1
+ms.openlocfilehash: 96f82b398ff75cdaf651eb841c412c502c5108d4
+ms.sourcegitcommit: 4d2e1328dee2b6c60ba0022976da8dfe5efba2ef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52997756"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53203585"
 ---
 # <a name="manage-voice-recognition-technology-controls-for-an-intelligent-speaker"></a>Gestire i controlli della tecnologia di riconoscimento vocale per un altoparlante intelligente
 
@@ -83,7 +83,7 @@ Di seguito sono riportati i criteri necessari per impostare un altoparlante inte
 |-|-|-|
 |enrollUserOverride|Consente di impostare l'acquisizione o la registrazione del profilo vocale nelle Teams per un tenant. |**Disattiva**<br><ul><li> Gli utenti che non si sono mai registrati non possono visualizzare, registrare o registrare di nuovo.<li>Il punto di ingresso al flusso di registrazione verrà nascosto.<li>Se gli utenti selezionano un collegamento alla pagina di registrazione, verrà visualizzato un messaggio che indica che questa caratteristica non è abilitata per l'organizzazione.  <li>Gli utenti registrati possono visualizzare e rimuovere il proprio profilo vocale nelle impostazioni Teams utente. Dopo aver rimosso il profilo vocale, non potranno visualizzare, accedere o completare il flusso di registrazione.</li></ul><br>**Abilitato**<br><ul><li> Gli utenti possono visualizzare, accedere e completare il flusso di registrazione.<li>Il punto di ingresso verrà visualizzato nella Teams impostazioni sotto la **scheda** Riconoscimento.</li></ul>|
 |roomAttributeUserOverride|Controllare l'identificazione utente basata sulla voce nelle sale riunioni. Questa impostazione è obbligatoria per gli Teams Rooms account.| **Disattivato**<br><ul><li>Il Teams Rooms non invierà larghezza di banda per il risparmio di flussi audio dalla sala. <li>Gli utenti delle sale riunioni non verranno attribuiti o distinti e le firme vocali non verranno recuperate o usate.<li>Gli utenti delle sale riunioni sono sconosciuti.</li></ul> <br>**Attributo**<br><ul><li>Gli utenti delle chat room verranno attribuiti in base allo stato di registrazione.<li>Gli utenti registrati vengono visualizzati con il nome nella trascrizione.  <li>Gli utenti che non sono registrati vengono visualizzati come relatore n.<li>Il Teams Rooms invia sette flussi audio dalla sala.</ul> <br>**Distinguere**<br> *Questa impostazione sarà disponibile in un secondo momento.*|
-|enabletranscription|Obbligatorio per gli account utente Teams chat room.|**Vero** e **Falso**|
+|AllowTranscription|Obbligatorio per gli account utente Teams chat room.|**Vero** e **Falso**|
 ||||
 
 Nell'Teams di amministrazione impostare il criterio Consenti **trascrizione.** Impostazioni sono **disattivate per** impostazione predefinita.
