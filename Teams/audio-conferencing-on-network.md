@@ -18,17 +18,17 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
-description: Di seguito viene descritta la funzionalità Open Preview per i servizi di audioconferenza in rete.
-ms.openlocfilehash: d6df81cc077c69fdeb4246d682797d2ebb26b875
-ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
+description: Di seguito sono descritte le funzionalità in rete per le audioconferenze.
+ms.openlocfilehash: b7851bd2457debe8ee0de3144e24a15edb521222
+ms.sourcegitcommit: b39bd1de0219a9e3a3b0c97fc485c9578ddb643c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51637838"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230563"
 ---
-# <a name="open-preview-of-on-network-conferencing-for-audio-conferencing"></a>Aprire l'anteprima delle conferenze in rete per audioconferenza
+# <a name="on-network-conferencing-for-audio-conferencing"></a>Servizi di conferenza in rete per audioconferenza
 
-L'anteprima aperta delle conferenze in rete è disponibile per tutti i clienti. Le conferenze in rete consentono alle organizzazioni di inviare chiamate di audioconferenza in ingresso e in uscita ai numeri di accesso esterno Microsoft tramite Routing diretto. Questa funzionalità non è progettata per estendere il supporto delle audioconferenze ai numeri di accesso esterno di terze parti. Le conferenze in rete non sono supportate se vengono usate per instradare le chiamate in ingresso al servizio di audioconferenza tramite numeri di telefono con accesso esterno di terze parti o chiamate in uscita alla rete PSTN da Microsoft Audio Conferencing Bridge. 
+Le conferenze in rete consentono alle organizzazioni di inviare chiamate di audioconferenza in ingresso e in uscita ai numeri di accesso esterno Microsoft tramite Routing diretto. Questa funzionalità non è progettata per estendere il supporto delle audioconferenze ai numeri di accesso esterno di terze parti. Le conferenze in rete non sono supportate se vengono usate per instradare le chiamate in ingresso al servizio di audioconferenza tramite numeri di telefono con accesso esterno di terze parti o chiamate in uscita alla rete PSTN da Microsoft Audio Conferencing Bridge. 
 
 Questo articolo descrive i prerequisiti e i passaggi di configurazione necessari per abilitare le conferenze in rete per l'organizzazione.
 
@@ -151,19 +151,6 @@ Un piano di chiamata è un set di regole di normalizzazione che traducono i nume
 Per impostazione predefinita, Teams gli utenti possono effettuare chiamate in uscita verso numeri PSTN in formato E.164, ad esempio + \<country code\> \<number\> . Tuttavia, i piani di chiamata possono essere usati per consentire agli utenti di comporre numeri di telefono in altri formati, ad esempio estensioni a 4 cifre.
 
 Se si vuole abilitare la composizione basata sull'interno tramite servizi di conferenza telefonica in rete, è possibile configurare i piani di chiamata in modo che corrispondano allo schema di composizione dell'interno agli intervalli di numeri di telefono del numero di telefono dell'organizzazione. Per configurare i dial plan, vedere [Creare e gestire i dial plan.](create-and-manage-dial-plans.md)
-
-
-## <a name="known-issues-in-open-preview"></a>Problemi noti in Open Preview
-
-Di seguito è riportato un elenco dei problemi noti attualmente presenti nella versione Open Preview delle conferenze in rete. Microsoft sta lavorando per risolvere questi problemi.
-
-| Problema | Soluzione alternativa |
-| :--- | :--- |
-| Le chiamate con accesso esterno con ID chiamante anonimi/nascosti instradati tramite conferenze in rete non possono essere connesse alla riunione. | Se possibile, impostare una configurazione nel SISTEMA PBX o SBC in modo da inviare sempre un ID chiamante per le chiamate instradati tramite conferenze in rete.|
-| In alcuni casi, il messaggio di benvenuto che viene riprodotto agli utenti quando accodati al servizio ("Benvenuto nel servizio di audioconferenza...") viene troncato e gli utenti non sentono la parola "Benvenuto".| Al momento non sono disponibili soluzioni alternative per questo problema. |
-
-
-
 
 ## <a name="related-topics"></a>Argomenti correlati
 

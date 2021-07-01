@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 72c65de4892a25889fb456c73406126d34335f9a
-ms.sourcegitcommit: a07040d1527692b4dbde7bd2c21994377ad0a92e
+ms.openlocfilehash: cfbff25ff4f241b18baa6b313977c687c73c8262
+ms.sourcegitcommit: b7da2655607a17cde9537ed9e00db29b4c1a68df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53114015"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53219123"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -35,6 +35,7 @@ ms.locfileid: "53114015"
 |Distribuzione a partire dal 7 gennaio 2021<br> *(Completa)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|Tutte le nuove registrazioni delle riunioni Teams verranno salvate in OneDrive for Business e SharePoint a meno che questa modifica non venga ritardata modificando i criteri riunione Teams dell'organizzazione e impostandoli in modo esplicito su Flusso **.** La visualizzazione dei report dei criteri come Stream non è sufficiente. È necessario impostare in modo esplicito il valore del criterio su **Stream**.|
 |Distribuzione a partire dall'11 gennaio 2021<br> *(Completa)*&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**GCC solo**<br> Anche GCC i clienti possono rifiutare esplicitamente l'accesso a partire dal 5 ottobre, ma non è possibile acconsentire esplicitamente. Questa funzionalità verrà lanciata a tutti GCC clienti a partire dall'11 gennaio 2021, a meno che non si sia scelto di rifiutare esplicitamente l'opzione.<br>  <br>A partire dall'11 gennaio 2021, tutte le nuove registrazioni delle riunioni di Teams per i clienti di GCC verranno salvate in OneDrive for Business e SharePoint a meno che non si ritardi questa modifica modificando i criteri riunione Teams dell'organizzazione e impostandoli esplicitamente su **Flusso**. <br><br>Se si è scelto di rifiutare esplicitamente l'opzione ma si è pronti per attivare questa funzionalità, è possibile farlo impostando esplicitamente i criteri riunione di Teams su **OneDrive for Business**. |
 |Distribuzione a partire dall'1 marzo 2021<br> *(Completa)*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**GCC high e DoD**<br> I clienti possono ora abilitare le registrazioni delle riunioni nel cloud Microsoft Teams per la prima volta. Queste registrazioni verranno archiviate e riprodotte in OneDrive e SharePoint per impostazione predefinita. |
+|Distribuzione a partire dal 7 luglio 2021<br> *(Completa)*  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br> Per una riunione di Teams registrata in OneDrive e SharePoint ed è stata trascritta anche in tempo reale durante la riunione, è ora possibile cercare in Microsoft Search per trovare il file di registrazione della riunione in base alla trascrizione. |
 |Distribuzione incrementale a partire dal 16 agosto 2021 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|**Tutti i clienti (Enterprise, Education e GCC)**<br>Non è possibile salvare nuove registrazioni delle riunioni in Microsoft Stream (classica); Tutti i clienti avranno automaticamente le registrazioni delle riunioni salvate OneDrive for Business e SharePoint anche se hanno cambiato i criteri Teams riunione in Stream.<br><br> È consigliabile che i clienti, per controllare meglio la modifica all'interno dell'organizzazione, acconsentano esplicitamente ogni volta che si è a proprio agio con la modifica, invece di attendere che si ripeta. |
 
 Microsoft Teams ha un nuovo metodo per salvare le registrazioni delle riunioni. Come prima fase di una transizione dal classico Microsoft Stream al nuovo [stream,](/stream/streamnew/new-stream)questo metodo archivia le registrazioni in Microsoft OneDrive for Business e SharePoint in Microsoft 365 e offre molti vantaggi.
@@ -53,6 +54,7 @@ I vantaggi dell'uso di OneDrive for Business e SharePoint per l'archiviazione de
 - Richiedi flusso di accesso
 - Fornire OneDrive for Business e SharePoint condivisi
 - Le registrazioni delle riunioni sono disponibili più velocemente
+- Trascrizione della base di ricerca registrata nella riunione
 - **Passare al supporto tenant** locale
 - Supporto multi-geo: le registrazioni vengono archiviate in un'area geografica specifica dell'utente
 - Portare il proprio supporto per la chiave (BYOK)

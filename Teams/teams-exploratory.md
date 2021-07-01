@@ -18,16 +18,16 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ff84b1dc161aa5b8ab99a74509fa7a93a1a9b270
-ms.sourcegitcommit: 6e492297a886ff8c7894a6469965e63d1b806184
+ms.openlocfilehash: 8803219c93a66d7094ce6ca1aa635f1fbff8580e
+ms.sourcegitcommit: b39bd1de0219a9e3a3b0c97fc485c9578ddb643c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51399143"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230553"
 ---
 # <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 
-L'esperienza Microsoft Teams Exploratory consente agli utenti dell'organizzazione che hanno Azure Active Directory (AAD) e non hanno una licenza per Teams di iniziare a usare un'esperienza esplorativa di Teams. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti nell'organizzazione. L'esperienza Teams Exploratory ha sostituito la precedente [Microsoft Commercial Cloud Trial]().
+L'esperienza Microsoft Teams Exploratory consente agli utenti dell'organizzazione che hanno Azure Active Directory (AAD) e non hanno una licenza per Teams di iniziare a usare un'esperienza esplorativa di Teams. Gli amministratori possono attivare o disattivare questa funzionalità per gli utenti dell'organizzazione.
 
 ## <a name="whats-in-the-teams-exploratory-experience"></a>Contenuto dell'esperienza Teams Exploratory
 
@@ -119,7 +119,7 @@ Per disattivare l'accesso a Teams:
 
 ### <a name="manage-teams-availability-for-users-who-are-already-using-the-teams-exploratory-experience"></a>Gestire la disponibilità di Teams per gli utenti che usano già l'esperienza Teams Exploratory
 
-Se un utente usa già l'esperienza Teams Exploratory, è possibile disattivarla rimuovendo la licenza o il piano di servizio. È necessario avere i privilegi di amministratore.
+Se un utente usa già l'esperienza Teams Exploratory, è possibile disattivarla rimuovendo la licenza o il piano di servizio. Per procedere in tal senso, è necessario disporre dei privilegi di amministratore.
 
 Per disattivare la licenza dell'esperienza Teams Exploratory:
 
@@ -138,26 +138,12 @@ Per disattivare la licenza dell'esperienza Teams Exploratory:
 
 Gli utenti che hanno una licenza di Teams Exploratory possono essere gestiti nello stesso modo in cui si gestiscono gli utenti con una normale licenza a pagamento. Per altre informazioni, vedere [Gestire le impostazioni di Teams per l'organizzazione](enable-features-office-365.md).
 
-### <a name="upgrade-users-from-the-teams-exploratory-license"></a>Aggiornare gli utenti dalla licenza di Teams Exploratory
+### <a name="upgrade-users-from-teams-exploratory"></a>Aggiornare gli utenti da Teams Exploratory
 
-Per aggiornare gli utenti dalla licenza di Teams Exploratory è necessario avere i privilegi di amministratore e procedere come segue:
-
-1. Acquistare un abbonamento che include Teams.
-
-2. Rimuovere l'abbonamento di Teams Exploratory dall'utente.
-
-3. Assegnare la licenza acquistata.
-
-Per altre informazioni, vedere [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
+Per aggiornare gli utenti da Teams Exploratory, è necessario disporre dei privilegi di amministratore. Per altre informazioni, vedere [Aggiornare gli utenti dalla versione di valutazione di Teams Exploratory](upgrade-from-teams-exploratory.md).
 
 > [!NOTE]
-> Se la licenza di Teams Exploratory license e un utente non viene immediatamente aggiornato a un abbonamento che include Teams, ha a disposizione un periodo di tolleranza di 30 giorni e di altri 30 giorni successivi, dopo di che i dati verranno eliminati. L'utente esiste ancora in Azure Active Directory. Una volta assegnata una nuova licenza all'utente per abilitare nuovamente le funzionalità di Teams, tutto il contenuto sarà ancora disponibile se l'utente viene aggiunto entro il periodo di tolleranza.
-
-## <a name="what-happens-to-legacy-microsoft-teams-commercial-cloud-trial-licenses"></a>Cosa accade alle licenze legacy della versione di valutazione Cloud commerciale di Microsoft Teams
-
-A partire dal febbraio 2020, gli utenti idonei possono iniziare a usare l'esperienza Microsoft Teams Exploratory più recente. Tutte le licenze legacy della versione di valutazione Cloud commerciale di Microsoft Teams verranno convertite automaticamente alla nuova offerta prima della scadenza.
-
-Quando gli utenti accedono all'offerta della versione di valutazione Cloud commerciale di Teams scaduta per la prima volta, gli viene assegnata automaticamente una licenza per l'esperienza Teams Exploratory. Gli utenti non vengono convertiti finché non accedono.
+> Se allo scadere della licenza di Teams Exploratory non viene immediatamente eseguito l'aggiornamento a un abbonamento che include Teams, l'utente perderà l'accesso a Teams dopo un periodo di prova di 30 giorni. Altri 30 giorni, trascorsi i quali i dati verranno eliminati. L'utente esiste ancora in Azure Active Directory. Una volta assegnata una nuova licenza all'utente per abilitare nuovamente le funzionalità di Teams, tutto il contenuto sarà ancora disponibile se l'utente viene aggiunto entro il periodo di tolleranza.
 
 ### <a name="remove-a-teams-exploratory-license"></a>Rimuovere una licenza di Teams Exploratory
 
@@ -184,4 +170,4 @@ Alla fine dell'abbonamento di 12 mesi, gli amministratori devono convertire tutt
 > [!NOTE]
 > I clienti verranno disabilitati e sarà loro impedito l'avvio di una nuova licenza per la versione di valutazione Exploratory per tre mesi dopo la scadenza della precedente.
 
-Per altre informazioni, vedere [Aggiornare gli utenti dalla licenza Teams Exploratory](#upgrade-users-from-the-teams-exploratory-license), in questo articolo.
+Per altre informazioni, vedere [Aggiornare gli utenti da Teams Exploratory](#upgrade-users-from-teams-exploratory), in questo articolo.

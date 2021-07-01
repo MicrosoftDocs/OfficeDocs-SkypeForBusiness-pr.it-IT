@@ -23,12 +23,12 @@ ms.custom:
 - Licensing
 - seo-marvel-apr2020
 description: 'Learn how to set up communication credits (PSTN Consumption) billing licenses for your users and organization. '
-ms.openlocfilehash: 98591d7603cdf63a76bef3478834f37504d8ff6c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 33206e09a63a74689361fcfb34d51c5b0b4a4973
+ms.sourcegitcommit: b7da2655607a17cde9537ed9e00db29b4c1a68df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117104"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "53219133"
 ---
 # <a name="set-up-communications-credits-for-your-organization"></a>Configurare i Crediti comunicazioni per la propria organizzazione
 
@@ -58,9 +58,9 @@ Per altre informazioni, vedere Microsoft Teams [licenze per i componenti aggiunt
   
 ## <a name="step-2-set-up-communications-credits-for-your-organization"></a>Passaggio 2: configurare i Crediti comunicazioni per la propria organizzazione
 
-1. Accedere all'interfaccia [di Microsoft 365 di amministrazione con](https://portal.office.com/Adminportal) l'account aziendale o dell'istituto di istruzione.
+1. Accedere al interfaccia di amministrazione di Microsoft 365 con [l'account](https://portal.office.com/Adminportal) aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro dell'Microsoft 365 di amministrazione passare a **Servizi di**  >  **acquisto fatturazione.** Scorrere verso il basso e **selezionare Componenti aggiuntivi**.
+2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365, passare a **Servizi**  >  **di acquisto fatturazione.** Scorrere verso il basso e **selezionare Componenti aggiuntivi**.
 
 3. Selezionare **Crediti comunicazioni**.
     
@@ -79,7 +79,7 @@ Per altre informazioni, vedere Microsoft Teams [licenze per i componenti aggiunt
       > [!NOTE]
      > I fondi verranno applicati solo ai servizi Crediti comunicazioni alle tariffe Microsoft pubblicate quando i servizi vengono utilizzati. Eventuali fondi non utilizzati entro 12 mesi dalla data di acquisto andranno persi. 
      > 
-     > La fatturazione mensile per i Crediti comunicazioni verrà applicata solo se è stato usato il fondo assegnato, per informazioni su come controllare l'utilizzo mensile, leggere il report sull'utilizzo Skype for Business [PSTN](/skypeforbusiness/skype-for-business-online-reporting/pstn-usage-report)
+     > Quando si usa la funzione di ricarica automatica, la fatturazione per i crediti di comunicazione viene generata quando viene raggiunto l'importo del trigger e viene elaborata una transazione di ricarica. Gli importi del credito di comunicazione vengono usati per primi in modo non corretto. Per informazioni su come controllare l'utilizzo mensile, Skype for Business [report sull'utilizzo PSTN](/skypeforbusiness/skype-for-business-online-reporting/pstn-usage-report)
     
 5. Immettere le informazioni di pagamento e scegliere **Esecuzione dell'ordine**.
     >[!IMPORTANT]
@@ -91,9 +91,9 @@ Quando si configurano i Crediti comunicazioni, è necessario esaminare l'utilizz
   
 ## <a name="step-3-assign-a-communications-credits-license-to-users"></a>Passaggio 3: assegnare agli utenti una licenza Crediti comunicazioni
 
-1. Accedere all'interfaccia [di Microsoft 365 di amministrazione con](https://portal.office.com/Adminportal) l'account aziendale o dell'istituto di istruzione.
+1. Accedere al interfaccia di amministrazione di Microsoft 365 con [l'account](https://portal.office.com/Adminportal) aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro dell'Microsoft 365 di amministrazione passare a **Utenti** utenti attivi e quindi  >  selezionare un utente nell'elenco.
+2. Nel riquadro di spostamento sinistro del interfaccia di amministrazione di Microsoft 365 passare a **Utenti** utenti attivi e quindi  >  selezionare un utente nell'elenco.
     
 3. Scegliere **Licenze e app.**
     
@@ -115,7 +115,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
     
 - [Piani Sistema telefonico](https://go.microsoft.com/fwlink/?LinkId=799763)
     
-È anche possibile visualizzare le informazioni [accedendo all'Microsoft 365 di amministrazione](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e selezionando Abbonamenti   >  **fatturazione**  >  **Aggiungi abbonamenti**.
+È anche possibile visualizzare le informazioni [accedendo al interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home?add=sub&amp;adminportal=1#/catalog) e selezionando Abbonamenti   >  **fatturazione**  >  **Aggiungi abbonamenti**.
   
 Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   

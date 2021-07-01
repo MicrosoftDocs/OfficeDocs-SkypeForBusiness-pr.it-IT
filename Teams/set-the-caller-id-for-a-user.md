@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sul numero Microsoft 365 e Office 365 l'ID chiamante predefinito (il numero di telefono assegnato dall'utente), noto anche come ID linea chiamante. È possibile modificare o bloccare l'ID chiamante di un utente.
-ms.openlocfilehash: dbbb48952264d82ca24bdd82dbb45538b0428368
-ms.sourcegitcommit: 83f14c4c79559ef28357ff076938e52b369fc0c7
+ms.openlocfilehash: 20b80bbc96f46d6b1a2766eea367132b9e0b1418
+ms.sourcegitcommit: b39bd1de0219a9e3a3b0c97fc485c9578ddb643c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "52308335"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230603"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 
@@ -39,6 +39,7 @@ Per impostazione predefinita, le impostazioni dell'ID chiamante seguenti **sono 
     
   > [!NOTE]
   > Se si vuole usare il parametro *Service,* è necessario specificare un numero di servizio valido.
+  > Se non è visibile nell'elenco a discesa, è necessario usare i cmdlet di PowerShell per il numero di account delle risorse.
   
 - **Bloccare l'ID chiamante in uscita.** È possibile bloccare l'invio dell'ID chiamante in uscita nelle chiamate PSTN in uscita di un utente. In questo modo il suo numero non verrà visualizzato sul telefono di una persona che chiama.
     
@@ -138,7 +139,7 @@ Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazio
     
 - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Microsoft 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
 - [Modi migliori per gestire Microsoft 365 con Windows PowerShell](/previous-versions//dn568025(v=technet.10))
     

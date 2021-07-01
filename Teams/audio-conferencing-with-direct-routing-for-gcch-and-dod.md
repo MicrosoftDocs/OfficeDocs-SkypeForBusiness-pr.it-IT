@@ -20,12 +20,12 @@ f1.keywords:
 localization_priority: Normal
 description: L'amministratore può imparare a usare le audioconferenze con il routing diretto in ambienti GCCH e DoD.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 577a9fe106cb5dae23049404b54433288e350b78
-ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
+ms.openlocfilehash: 4daea8636ce99ed711d7fd982cd42eb9aa8c6b93
+ms.sourcegitcommit: b39bd1de0219a9e3a3b0c97fc485c9578ddb643c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51262621"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "53230583"
 ---
 # <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Audioconferenza con Instradamento diretto per GCC High e DoD
 
@@ -170,8 +170,6 @@ Per modificare il set di numeri di telefono inclusi negli inviti alla riunione d
 Di seguito sono riportate le funzionalità di audioconferenza non supportate nelle audioconferenze con routing diretto GCC High e DoD:
 
 - Notifiche di entrata e uscita con la registrazione del nome. Per le audioconferenze con routing diretto, le notifiche di entrata e uscita vengono riprodotte nella riunione come toni.
-
-- Criteri di restrizione delle chiamate in uscita per le audioconferenze. I controlli a livello utente per limitare le chiamate in uscita non sono applicabili alle chiamate in uscita instradati tramite Routing diretto.
 
 - Disabilitare l'uso di numeri verde per l'organizzatore specifico delle riunioni. I controlli a livello utente per limitare l'uso di numeri verde per partecipare alle riunioni dell'organizzazione non sono applicabili alle chiamate instradati tramite Routing diretto.
 
