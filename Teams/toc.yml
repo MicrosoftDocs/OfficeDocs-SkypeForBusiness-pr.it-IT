@@ -557,6 +557,8 @@ items:
         href: cortana-in-teams.md
       - name: Configurare la gerarchia di destinazione del team
         href: set-up-your-team-hierarchy.md
+      - name: Chat con supervisione per tenant non didattici
+        href: supervised-chat-non-edu.md
   - name: 'Riunioni, conferenze ed eventi live'
     items:
       - name: 'Avvio veloce: riunioni ed eventi live'
