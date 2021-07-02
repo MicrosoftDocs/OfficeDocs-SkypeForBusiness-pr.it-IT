@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7e2cecf24d9bbd9e8c510ce722b059d2e00837d5
-ms.sourcegitcommit: 0c942d9e25f9a51bb9bd22b40c5926e1d6d3892d
+ms.openlocfilehash: 83b95032e89accca311eb66933a9991d4f0ca195
+ms.sourcegitcommit: 28b83243411b54760875e7fd137549d5d2182c7a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "53186805"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53252641"
 ---
 # <a name="overview-of-teams-and-channels-in-microsoft-teams"></a>Panoramica dei team e i canali in Microsoft Teams
 
@@ -47,9 +47,9 @@ Per iniziare è necessario capire come Microsoft Teams consente a singoli team d
     
 Per informazioni sull'uso dei team e i canali, vedere [Teams e canali](https://support.office.com/article/teams-and-channels-df38ae23-8f85-46d3-b071-cb11b9de5499).
 
-Questo breve video illustra le procedure consigliate per la creazione di team e canali.
+Questo breve video illustra le procedure consigliate per la creazione di team e canali:
 
-   > [!VIDEO https://www.youtube.com/embed/WkAVgNKn0hs]
+- [Suggerimento tecnico: Indicazioni per la](https://youtu.be/WkAVgNKn0hs) creazione Teams & canali privati inclusi i canali privati in Microsoft Teams (21:08 min)
 
 ## <a name="membership-roles-and-settings"></a>Appartenenza, ruoli e impostazioni
 

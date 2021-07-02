@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: ec6b257f91c7e5003a4a69079e37b20b5f338528
-ms.sourcegitcommit: b52b6aba289396c4fc10dd856817137eb1bc1f67
-ms.translationtype: HT
+ms.openlocfilehash: c99fc4bfb185ec291a98a96572167b389b3e6252
+ms.sourcegitcommit: 28b83243411b54760875e7fd137549d5d2182c7a
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51617758"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53252651"
 ---
 # <a name="manage-retention-policies-for-microsoft-teams"></a>Gestire i criteri di conservazione per Microsoft Teams
 
@@ -63,13 +63,17 @@ Questi due principi di conservazione risolvono la maggior parte dei conflitti ch
 
 In molti casi, le organizzazioni sentono maggiore responsabilità per i dati di chat private invece che per i messaggi dei canali, che in genere sono conversazioni relative a progetti.
 
-È possibile configurare criteri di conservazione distinti per le chat private (chat individuali o di gruppo) e per i messaggi dei canali. È anche possibile configurare criteri univoci che si applicano a utenti o team specifici dell'organizzazione. Per le chat di Teams, è possibile selezionare gli utenti a cui applicare i criteri. Per i messaggi dei canali di Teams, è possibile selezionare i team a cui applicare i criteri.
+È possibile configurare in modo molto efficiente un singolo criterio di conservazione per tutti Teams messaggi. Oppure, per un controllo più accurato, è possibile:
 
-Per i messaggi dei canali, ad esempio, è possibile applicare un criterio di conservazione a team specifici dell'organizzazione e tale criterio è configurato con un'azione di eliminazione dopo 1 anno. Applicare quindi un altro criterio di conservazione a tutti gli altri team e tale criterio viene configurato con un'azione di eliminazione dopo 3 anni.
+- È possibile disporre di criteri di conservazione separati per le chat private (1:1 o 1:many), i messaggi provenienti da canali standard o i messaggi provenienti da canali privati.
+
+- Applicare i criteri solo a utenti o team specifici dell'organizzazione. Per Teams chat e canali privati, è possibile selezionare gli utenti a cui si applica il criterio. Per i messaggi dei canali di Teams, è possibile selezionare i team a cui applicare i criteri.
+
+Ad esempio, per i messaggi di canale standard: creare un criterio di conservazione per team specifici dell'organizzazione e configurarlo con un'azione di eliminazione dopo 1 anno. Creare quindi un altro criterio di conservazione per i messaggi di canale standard per tutti gli altri team e configurarlo con un'azione di eliminazione dopo 3 anni.
 
 ## <a name="create-and-manage-retention-policies-for-teams"></a>Creare e gestire i criteri di conservazione per Teams
 
-Per creare o modificare un criterio di conservazione per le chat di Teams e i messaggi del canale, usare le istruzioni di [Criteri di conservazione per le posizioni di Teams](/microsoft-365/compliance/create-retention-policies#retention-policy-for-teams-locations).
+Per creare o modificare un criterio di conservazione per Teams messaggi, seguire le istruzioni fornite in Criteri di conservazione per Teams [percorsi.](/microsoft-365/compliance/create-retention-policies#retention-policy-for-teams-locations)
 
 Questa pagina contiene informazioni aggiuntive sulla creazione e sulla gestione dei criteri di conservazione per altri carichi di lavoro in Microsoft 365. Ad esempio, è possibile creare anche un criterio di conservazione per Gruppi di Microsoft 365 per conservare ed eliminare i file a cui si accede in Teams e archiviati in OneDrive o SharePoint.  
 
@@ -91,7 +95,7 @@ Per i messaggi del canale, gli utenti (membri del canale) vedranno i messaggi el
 > [!NOTE]
 > I messaggi visualizzati dagli utenti come risultato dei messaggi eliminati non sono configurabili in questo momento.
 
-I collegamenti in questi messaggi visualizzati vanno a [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/it-IT/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b). Questa documentazione per gli utenti finali consente di rispondere alle domande di base sul motivo per cui i messaggi sono stati eliminati. Tuttavia, come parte della distribuzione dei criteri di conservazione, assicurarsi di comunicare agli utenti e all’help desk l'impatto delle impostazioni configurate.
+I collegamenti in questi messaggi visualizzati vanno a [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/en-us/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b). Questa documentazione per gli utenti finali consente di rispondere alle domande di base sul motivo per cui i messaggi sono stati eliminati. Tuttavia, come parte della distribuzione dei criteri di conservazione, assicurarsi di comunicare agli utenti e all’help desk l'impatto delle impostazioni configurate.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
