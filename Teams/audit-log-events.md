@@ -12,15 +12,15 @@ f1.keywords:
 - NOCSH
 ms.reviewer: anwara
 search.appverid: MET150
-description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel Centro Microsoft 365 conformità.
+description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel Centro conformità Microsoft 365.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b4398ed1c89b1ece93bf2e1ca31947f6fadf7afa
-ms.sourcegitcommit: ea2ccf77ba86c3cc10184a2c8a2eceafc6842d1b
+ms.openlocfilehash: 027d3691a5e5c501beb69448a4d4060de4a7fad9
+ms.sourcegitcommit: e023c3023f49e196315e176ce346f0dc5825fa56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "52091673"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53275675"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare gli eventi nel log di controllo Microsoft Teams
 
@@ -127,37 +127,55 @@ Stiamo lavorando per integrare gli eventi Teams nei criteri di rilevamento anoma
 
 Ecco un elenco di tutti gli eventi registrati per le attività di utente e amministratore Teams nel log Microsoft 365 di controllo. La tabella include il nome descrittivo  visualizzato nella colonna Attività e il nome dell'operazione corrispondente visualizzata nelle informazioni dettagliate di un record di controllo e nel file CSV quando si esportano i risultati della ricerca.
 
-|Nome descrittivo  |Operazione|Descrizione |
-|---------|---------|---------|
+|Nome descrittivo  |Operazione |Descrizione |
+|:---------|:---------|:---------|
 |Bot aggiunto al team   |BotAddedToTeam        |Un utente aggiunge un bot a un team.        |
 |Canale aggiunto   |ChannelAdded         |Un utente aggiunge un canale a un team.         |
 |Connettore aggiunto  |ConnectorAdded          |Un utente aggiunge un connettore a un canale.        |
 |Membri aggiunti    |MemberAdded         |Il proprietario del team aggiunge membri a un team, un canale o una chat di gruppo.         |
 |Scheda Aggiunta    |TabAdded         |Un utente aggiunge una scheda a un canale.        |
 |Impostazione del canale modificata    |ChannelSettingChanged         |L'operazione ChannelSettingChanged viene registrata quando un membro del team esegue le attività seguenti. Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi nella colonna **Elemento** nei risultati della ricerca nel log di controllo. <ul><li>Modifica il nome di un canale del team (**Nome canale**)</li><li>Modifica la descrizione di un canale del team (**Descrizione canale**)</li> </ul>      |
-|Impostazione dell'organizzazione modificata   |TeamsTenantSettingChanged         |L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale nell'Microsoft 365 di amministrazione. Queste attività influiscono sulle impostazioni Teams a livello di organizzazione. Per altre informazioni, vedere [Gestire le Teams per l'organizzazione.](enable-features-office-365.md) <br>Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Abilita o disabilita la Teams per l'organizzazione (**Microsoft Teams**).</li><li>Abilita o disabilita l'interoperabilità tra Microsoft Teams e Skype for Business per l'organizzazione (**Skype for Business interoperabilità**).</li><li>Abilita o disabilita la visualizzazione organigramma nei client Microsoft Teams (**visualizzazione Organigramma**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare riunioni private (**Pianificazione riunione privata**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare le riunioni del canale (**Pianificazione delle riunioni del canale**).</li><li>Abilita o disabilita le videochiamate Teams riunioni (**Video per** Skype riunioni ).</li><li>Abilita o disabilita la condivisione dello schermo Microsoft Teams riunioni per l'organizzazione (**Condivisione dello schermo** per Skype riunioni ).</li><li>Abilita o disabilita la possibilità di aggiungere immagini animate (denominate Giphys) Teams conversazioni (**Immagini animate**).</li><li>Modifica l'impostazione della classificazione del contenuto per l'organizzazione (**Classificazione contenuto**). La classificazione del contenuto limita il tipo di immagine animata che può essere visualizzata nelle conversazioni.</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini personalizzabili (denominate meme personalizzati) da Internet alle conversazioni del team (immagini personalizzabili **da Internet).**</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini modificabili (detti adesivi) alle conversazioni del team (**Immagini modificabili**).</li><li>Abilita o disabilita questa possibilità per i membri del team di usare bot in chat e canali Microsoft Teams (bot a livello **di organizzazione).**</li><li>Abilita bot specifici per Microsoft Teams. Questo non include il T-Bot, che è un bot della Guida Teams disponibile quando i bot sono abilitati per l'organizzazione (**Singoli bot**).</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere estensioni o schede (**Estensioni o schede**).</li><li>Abilita o disabilita il side-loading dei bot proprietari per Microsoft Teams (**Caricamento laterale dei bot**).</li><li>Abilita o disabilita la possibilità per gli utenti di inviare messaggi di posta elettronica a un Microsoft Teams canale (**Posta elettronica del canale**).</li></ul>|
+|Impostazione dell'organizzazione modificata   |TeamsTenantSettingChanged         |L'operazione TeamsTenantSettingChanged viene registrata quando le attività seguenti vengono eseguite da un amministratore globale nella interfaccia di amministrazione di Microsoft 365. Queste attività influiscono sulle impostazioni Teams a livello di organizzazione. Per altre informazioni, vedere [Gestire le Teams per l'organizzazione.](enable-features-office-365.md) <br>Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Abilita o disabilita la Teams per l'organizzazione (**Microsoft Teams**).</li><li>Abilita o disabilita l'interoperabilità tra Microsoft Teams e Skype for Business per l'organizzazione (**Skype for Business interoperabilità**).</li><li>Abilita o disabilita la visualizzazione organigramma nei client Microsoft Teams (**visualizzazione Organigramma**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare riunioni private (**Pianificazione riunione privata**).</li><li>Abilita o disabilita la possibilità per i membri del team di pianificare le riunioni del canale (**Pianificazione delle riunioni del canale**).</li><li>Abilita o disabilita le videochiamate Teams riunioni (**Video per** Skype riunioni ).</li><li>Abilita o disabilita la condivisione dello schermo Microsoft Teams riunioni per l'organizzazione (**Condivisione dello schermo** per Skype riunioni ).</li><li>Abilita o disabilita la possibilità di aggiungere immagini animate (denominate Giphys) Teams conversazioni (**Immagini animate**).</li><li>Modifica l'impostazione della classificazione del contenuto per l'organizzazione (**Classificazione contenuto**). La classificazione del contenuto limita il tipo di immagine animata che può essere visualizzata nelle conversazioni.</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini personalizzabili (denominate meme personalizzati) da Internet alle conversazioni del team (immagini personalizzabili **da Internet).**</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere immagini modificabili (detti adesivi) alle conversazioni del team (**Immagini modificabili**).</li><li>Abilita o disabilita questa possibilità per i membri del team di usare bot in chat e canali Microsoft Teams (bot a livello **di organizzazione).**</li><li>Abilita bot specifici per Microsoft Teams. Questo non include il T-Bot, che è un bot della Guida Teams disponibile quando i bot sono abilitati per l'organizzazione (**Singoli bot**).</li><li>Abilita o disabilita la possibilità per i membri del team di aggiungere estensioni o schede (**Estensioni o schede**).</li><li>Abilita o disabilita il side-loading dei bot proprietari per Microsoft Teams (**Caricamento laterale dei bot**).</li><li>Abilita o disabilita la possibilità per gli utenti di inviare messaggi di posta elettronica a un Microsoft Teams canale (**Posta elettronica del canale**).</li></ul>|
 |Ruolo modificato dei membri nel team    |MemberRoleChanged         |Il proprietario di un team cambia il ruolo dei membri in un team. I valori seguenti indicano il tipo di ruolo assegnato all'utente. <br><br>**1** - Indica il ruolo membro.<br>**2** - Indica il ruolo di proprietario.<br>**3** - Indica il ruolo Guest.<br><br>La proprietà Members include anche il nome dell'organizzazione e l'indirizzo di posta elettronica del membro.        |
 |Impostazione del team modificata    |TeamSettingChanged        |L'operazione TeamSettingChanged viene registrata quando il proprietario del team esegue le attività seguenti. Per ognuna di queste attività, viene visualizzata una descrizione dell'impostazione modificata (visualizzata tra parentesi) nella colonna **Elemento** nei risultati della ricerca nel log di controllo.<ul><li>Modifica il tipo di accesso per un team. Teams può essere impostato come privato o pubblico (**tipo di accesso team**). Quando un team è privato (impostazione predefinita), gli utenti possono accedere al team solo su invito. Quando un team è pubblico, è individuabile da chiunque.</li><li>Modifica la classificazione delle informazioni di un team (**Classificazione team**). Ad esempio, i dati del team possono essere classificati come ad alto impatto aziendale, a medio impatto aziendale o a basso impatto aziendale.</li><li>Modifica il nome di un team (**Nome team**).</li><li>Modifica la descrizione del team (**Descrizione team**).</li><li>Modifiche apportate alle impostazioni del team. Per accedere a queste impostazioni, il proprietario del team può fare clic con il pulsante destro del mouse su un team, scegliere **Gestisci** **team** e quindi fare clic sulla Impostazioni gruppo. Per queste attività, il nome dell'impostazione modificata viene visualizzato nella colonna **Elemento** nei risultati della ricerca nel log di controllo.</li></ul>         |
+|Creazione di una chat <sup>1</sup>|   ChatCreated|    È stata Teams una chat.|
 |Team creato    |TeamCreated         |Un utente crea un team.         |
 |Tutte le app dell'organizzazione sono state eliminate|DeletedAllOrganizationApps           |Tutte le app dell'organizzazione sono state eliminate dal catalogo.     |
 |App eliminata |AppDeletedFromCatalog           |Un'app è stata eliminata dal catalogo.     |
 |Canale eliminato     |ChannelDeleted         |Un utente elimina un canale da un team.         |
 |Team eliminato  |TeamDeleted            |Il proprietario del team elimina un team.      |
 |È stato modificato un messaggio con un collegamento URL in Teams     |MessageEditedHasLink         |Un utente modifica un messaggio e aggiunge un collegamento URL in Teams.         |
+|Messaggi esportati <sup>1</sup> |   MessagesExported |I messaggi della chat o del canale sono stati esportati|.
+|Chat recuperate <sup>1</sup> |ChatRetrieved  |È Microsoft Teams stata recuperata una chat.|
+|È stato recuperato tutto il contenuto ospitato di un messaggio<sup>1</sup>    |MessageHostedContentsListed    |Tutto il contenuto ospitato in un messaggio, ad esempio immagini o frammenti di codice, è stato recuperato.|
 |App installata |AppInstalled         |È stata installata un'app.   |
 |Azione eseguita sulla scheda|PerformedCardAction|Un utente ha fatto un'azione su una scheda adattiva all'interno di una chat. Le schede adattive vengono in genere usate dai bot per consentire la visualizzazione di informazioni e interazioni nelle chat. <br/><br/>**Nota:** Solo le azioni di input in linea in una scheda adattiva all'interno di una chat saranno disponibili nel log di controllo. Ad esempio, quando un utente invia una risposta al sondaggio in una conversazione di canale su una scheda adattiva generata da un bot Sondaggio. Le azioni utente, ad esempio "Visualizza risultato", che apriranno una finestra di dialogo o le azioni degli utenti all'interno delle finestre di dialogo non saranno disponibili nel log di controllo.|
+|Pubblicato un nuovo messaggio <sup>1</sup>  |MessaggioSent Un nuovo messaggio è stato pubblicato in una chat o in un canale.|
 |App pubblicata |AppPublishedToCatalog           |È stata aggiunta un'app al catalogo.     |
+|Leggere un messaggio <sup>1</sup>    |MessageRead    |È stato recuperato un messaggio di una chat o di un canale.|
+|Leggere il contenuto ospitato di un messaggio <sup>1</sup>  |MessageHostedContentRead   |Il contenuto ospitato in un messaggio, ad esempio un'immagine o un frammento di codice, è stato recuperato.|
 |Bot rimosso dal team   |BotRemovedFromTeam         |Un utente rimuove un bot da un team.       |
 |Connettore rimosso     |ConnectorRemoved         |Un utente rimuove un connettore da un canale.         |
 |Membri rimossi    |MemberRemoved        |Il proprietario del team rimuove i membri da un team, un canale o una chat di gruppo.         |
 |Scheda Rimossa    |TabRemoved         |Un utente rimuove una scheda da un canale.         |
+|Messaggi recuperati <sup>1</sup>    |MessagesListed |I messaggi provenienti da una chat o da un canale sono stati recuperati.|
 |È stato inviato un messaggio con un collegamento URL in Teams |MessageCreatedHasLink|Un utente invia un messaggio contenente un collegamento URL in Teams.|
+|Notifica di modifica inviata per la creazione <sup>del messaggio 1</sup> |MessageCreatedNotification |È stata inviata una notifica di modifica per inviare una notifica a un'applicazione listener sottoscritta di un nuovo messaggio.|
+|Notifica di modifica inviata per l'eliminazione <sup>del messaggio 1</sup> |MessageDeletedNotification |È stata inviata una notifica di modifica per inviare una notifica a un'applicazione listener sottoscritta di un messaggio eliminato.|
+|Notifica di modifica inviata per l'aggiornamento <sup>del messaggio 1</sup>   |MessageUpdatedNotification |È stata inviata una notifica di modifica per notificare a un'applicazione listener sottoscritta un messaggio aggiornato.|
+|Sottoscritto alle notifiche di modifica del messaggio <sup>1</sup>    |SubscribedToMessages   |Un abbonamento è stato creato da un'applicazione listener per ricevere le notifiche di modifica per i messaggi.|
 |App disinstallata |AppUninstalled           |Un'app è stata disinstallata.     |
 |App aggiornata |AppUpdatedInCatalog           |Un'app è stata aggiornata nel catalogo.     |
+|È stata aggiornata una chat <sup>1</sup>    |ChatUpdated    |Una Teams chat è stata aggiornata.|
+|È stato aggiornato un <sup>messaggio 1</sup> |MessageUpdated |È stato aggiornato un messaggio di una chat o di un canale.|
 |Connettore aggiornato    |ConnectorUpdated         |Un utente ha modificato un connettore in un canale.         |
 |Scheda Aggiornata   |TabUpdated         |Un utente ha modificato una scheda in un canale.         |
 |App aggiornata |AppUpgraded           |Un'app è stata aggiornata alla versione più recente nel catalogo.     |
 |Utente che ha eseguito l'accesso a Teams     |TeamsSessionStarted         |Un utente accede a un Microsoft Teams client. Questo evento non acquisisce le attività di aggiornamento del token.         |
+||||
+
+> [!NOTE]
+> <sup>1</sup> Un record di controllo per questo evento viene registrato solo quando l'operazione viene eseguita chiamando un'API microsoft Graph. Se l'operazione viene eseguita nel client Teams, non verrà registrato un record di controllo
 
 ## <a name="shifts-in-teams-activities"></a>Turni nelle Teams lavoro
 
@@ -205,4 +223,4 @@ Le modifiche all'appartenenza a Teams (ad esempio gli utenti aggiunti o eliminat
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Cercare nel log di controllo nel Centro Microsoft 365 conformità](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Cercare nel log di controllo nel Centro conformità Microsoft 365](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)

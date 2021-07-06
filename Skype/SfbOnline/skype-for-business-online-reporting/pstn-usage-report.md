@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area Skype for Business report dell'interfaccia di amministrazione mostra le attività di chiamata e audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo PSTN per i servizi di audioconferenza, incluso il costo della chiamata, in modo da comprendere i dettagli di utilizzo e di fatturazione delle chiamate per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: b806c0b3a471f862de6d69c6ed9b5220441c4257
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 2c6a0410611919662f5eaf37a03bfcca11b543be
+ms.sourcegitcommit: 3704577b1424c063fd925a58a6f6d0b3ff2c8148
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238204"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53278449"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
@@ -37,7 +37,7 @@ Vedere la [panoramica dei report](https://support.office.com/article/0d6dfb17-85
 Questo report, insieme agli altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo delle chiamate all'interno dell'organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni.](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
-> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore all'Microsoft 365 di amministrazione. 
+> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore al interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-pstn-usage-details-report"></a>Come ottenere i report di utilizzo PSTN di Skype for Business
 

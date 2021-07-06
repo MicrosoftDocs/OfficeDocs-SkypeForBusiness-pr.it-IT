@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'utilizzo Teams PSTN nell'
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 402e602e9f15beef30f0c44901398fa22b63c807
-ms.sourcegitcommit: bd7847de9d1402476f8faaeae2ff97ec60d86a1b
+ms.openlocfilehash: af904400b7a20befe650977c4baea035f998cf86
+ms.sourcegitcommit: 3704577b1424c063fd925a58a6f6d0b3ff2c8148
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51262668"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53278519"
 ---
 # <a name="microsoft-teams-pstn-usage-report"></a>Microsoft Teams Report sull'utilizzo PSTN
 
@@ -140,7 +140,7 @@ La prima riga del file CSV contiene nomi di colonna. Tutte le date sono UTC e in
 > | :-: | :-: | :-: |:------------------- |
 > | 0 | CorrelationId | `uniqueidentifier` | Identificatore univoco della chiamata |
 > | 1 | Indirizzo SIP | `nvarchar(128)` | Indirizzo dell'utente o del bot che ha effettuato o ricevuto la chiamata.<br/>Si noti che si tratta in realtà di UserPrincipalName (UPN, nome di accesso) in Azure Active Directory, che in genere corrisponde all'indirizzo SIP |
-> | 2 | Nome visualizzato | `nvarchar(128)` | Il nome di un utente o di un bot chiamante (ad esempio coda di chiamata o Operatore automatico) impostato nell'interfaccia Microsoft 365 di amministrazione |
+> | 2 | Nome visualizzato | `nvarchar(128)` | Il nome di un utente o di un bot chiamante (ad esempio coda di chiamata o Operatore automatico) impostato in interfaccia di amministrazione di Microsoft 365 |
 > | 3 | Paese utente | `nvarchar(2)` | Codice paese dell'utente, [ISO 3166-1 alfa-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) |
 > | 4 | Ora di invito | `datetimeoffset` | Quando l'invito iniziale viene inviato Teams uscita da una chiamata di un utente o bot alla SBC o viene ricevuta in ingresso a Teams o una chiamata bot dal componente proxy SIP di Routing diretto da SBC |
 > | 5 | Ora di inizio | `datetimeoffset` | Ora in cui il proxy SIP ha ricevuto la risposta finale (messaggio SIP "200 OK") da SBC in uscita (Teams/Bot a un utente PSTN) o dopo che il proxy SIP ha inviato l'invito all'hop successivo all'interno di Teams un back-end alla chiamata in ingresso (utente PSTN a un Teams/Bot).<br/>Per le chiamate non riuscite e senza risposta, questo può essere uguale al tempo di invito o di errore |

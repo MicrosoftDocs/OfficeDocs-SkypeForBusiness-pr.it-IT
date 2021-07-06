@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ca1a679fbdce7ca2840c41266053cf13f1452fe0
-ms.sourcegitcommit: 84d99b266dea2a972774d781b92eccc67d6c197a
+ms.openlocfilehash: ebc1bb12b8a864e65cf6cb26b3d2022ae2e1563b
+ms.sourcegitcommit: e023c3023f49e196315e176ce346f0dc5825fa56
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197531"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53275685"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine di eDiscovery sul contenuto in Microsoft Teams
 
@@ -82,7 +82,7 @@ Per altre informazioni sull'esecuzione di un'indagine di eDiscovery, vedere Intr
 
 Microsoft Teams i dati verranno visualizzati come messaggistica istantanea o Conversazioni nell'output Excel di esportazione di eDiscovery. È possibile aprire il `.pst` file in Outlook visualizzare i messaggi dopo averli esportati.
 
-Quando si visualizza il file PST per il team, tutte le conversazioni vengono mantenute nella cartella Chat del team in Cronologia conversazioni. Il titolo del messaggio contiene il nome del team e il nome del canale. Ad esempio, l'immagine seguente mostra un messaggio di Luca che ha inviato un messaggio al canale standard Project 7 del team Manufacturing Specs.
+Quando si visualizza il file PST per il team, tutte le conversazioni si trovano nella cartella Chat del team in Cronologia conversazioni. Il titolo del messaggio contiene il nome del team e il nome del canale. Ad esempio, l'immagine seguente mostra un messaggio di Luca che ha inviato un messaggio al canale standard Project 7 del team Manufacturing Specs.
 
 ![Screenshot di una cartella di Team Chat nella cassetta postale di un utente in Outlook](media/Conduct_an_eDiscovery_investigation_of_content_in_Microsoft_Teams_image1.png)
 

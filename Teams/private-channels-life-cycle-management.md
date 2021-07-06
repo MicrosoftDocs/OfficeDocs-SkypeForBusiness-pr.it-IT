@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire i canali privati nell'organizzazione usando Graph API.
-ms.openlocfilehash: e97d808bd9f544ef611b0b5e4b0456d302b4013d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 263c490156a3dc02ddc8f81233a049ff020c72f8
+ms.sourcegitcommit: 3704577b1424c063fd925a58a6f6d0b3ff2c8148
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117744"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "53278529"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
@@ -149,7 +149,7 @@ L'amministratore può usare l'API Graph per eseguire queste azioni.
     ```Graph API
     GET https://graph.microsoft.com/beta/teams/<group_id>/channels/<channel_id>/members
     ```
-    
+
     **Risposta**
 
     ```Graph API
@@ -177,7 +177,8 @@ L'amministratore può usare l'API Graph per eseguire queste azioni.
               }
           ]
     }
-    ```    
+    ```
+
 2. Usare quanto segue per alzare di livello un membro a proprietario, in cui &lt;group_id&gt;, &lt;channel_id&gt;, e &lt;id&gt; vengono restituiti dalla chiamata precedente. Si noti che &lt;id&gt; e &lt;userId&gt; restituiti dalla chiamata precedente non sono uguali e non sono intercambiabili. Assicurarsi di usare &lt;id&gt;.
 
     **Richiesta**
