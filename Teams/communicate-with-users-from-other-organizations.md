@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Priority
 description: Informazioni su come telefonare, chattare, trovare e aggiungere utenti esterni all'organizzazione in Microsoft Teams usando l'accesso esterno (federazione) e l'accesso guest.
-ms.openlocfilehash: e4aea581af73e69512e8ab55f87faa0602219575
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: bda5652aedd8d071984334a3851e50ba52400943
+ms.sourcegitcommit: 89e26d9ffca180e56233984bf0a341b3c3ec7208
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51115994"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "53302001"
 ---
 # <a name="use-guest-access-and-external-access-to-collaborate-with-people-outside-your-organization"></a>Usare l'accesso guest e l'accesso esterno per collaborare con persone esterne all'organizzazione
 
@@ -77,7 +77,7 @@ Le tabelle seguenti mostrano le differenze nell'uso dell'accesso esterno (federa
 | Le persone esterne all'organizzazione possono | Utenti con accesso esterno | Utenti guest |
 |---------|-----------------------|--------------------|
 | Accedere alle risorse di Teams | No | Sì |
-| Essere aggiunti a una chat di gruppo | No | Sì |
+| Essere aggiunti a una chat di gruppo | Sì | Sì |
 | Essere invitati a una riunione | Sì | Sì |
 | Effettuare chiamate private | Sì | Sì<sup>5</sup> |
 | Visualizzare il numero di telefono dei partecipanti alla riunione con accesso tramite telefono | No<sup>4</sup> | Sì |
