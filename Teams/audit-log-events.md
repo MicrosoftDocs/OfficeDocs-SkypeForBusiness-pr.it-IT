@@ -15,12 +15,12 @@ search.appverid: MET150
 description: Informazioni su come recuperare Microsoft Teams dati dal log di controllo nel Centro conformità Microsoft 365.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 027d3691a5e5c501beb69448a4d4060de4a7fad9
-ms.sourcegitcommit: e023c3023f49e196315e176ce346f0dc5825fa56
+ms.openlocfilehash: d130ea4e72b6343def4bfe232934063e0385b72d
+ms.sourcegitcommit: 08bcad09296c96354f0e6203a623dc548e827aa2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53275675"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "53324459"
 ---
 # <a name="search-the-audit-log-for-events-in-microsoft-teams"></a>Cercare gli eventi nel log di controllo Microsoft Teams
 
@@ -69,7 +69,7 @@ Ecco alcuni suggerimenti per cercare Teams attività nel log di controllo.
 
   ![Screenshot della ricerca nel log di controllo](media/audit-log-search.png)
 
-- Per visualizzare gli eventi per le attività eseguite con i cmdlet, selezionare **Mostra risultati per** tutte le attività **nell'elenco** Attività. Se si conosce il nome dell'operazione per queste attività, cercare tutte le attività e quindi filtrare i risultati digitando il nome dell'operazione nella casella nella **colonna** Attività. Per altre informazioni, vedere [Passaggio 3: Filtrare i risultati della ricerca.](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance?view=o365-worldwide#step-3-filter-the-search-results)
+- Per visualizzare gli eventi per le attività eseguite con i cmdlet, selezionare **Mostra risultati per** tutte le attività **nell'elenco** Attività. Se si conosce il nome dell'operazione per queste attività, cercare tutte le attività e quindi filtrare i risultati digitando il nome dell'operazione nella casella nella **colonna** Attività. Per altre informazioni, vedere [Passaggio 3: Filtrare i risultati della ricerca.](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#step-3-filter-the-search-results)
 
 - Per cancellare i criteri di ricerca correnti, fare clic su **Cancella.** L'intervallo di date torna al valore predefinito degli ultimi sette giorni. È anche possibile fare clic **su Cancella tutto per visualizzare i risultati di tutte le attività** per annullare tutte le attività selezionate.
 
@@ -87,13 +87,13 @@ Dopo aver impostato un criterio di rilevamento attività, inizia a generare avvi
 
 Uno scenario da tenere sotto controllo, dal punto di vista aziendale, è l'aggiunta di utenti esterni all'ambiente Teams aziendale. Se gli utenti esterni sono abilitati, è buona idea monitorare la loro presenza.  È possibile usare le [Cloud App Security](/cloud-app-security/what-is-cloud-app-security) per identificare potenziali minacce.
 
-![Screenshot di un elenco di eventi attivati da eliminazioni di massa](media/TeamsExternalUserAddPolicy.png)
+![Criteri per monitorare l'aggiunta di utenti esterni](media/TeamsExternalUserAddPolicy.png)
 
 Lo screenshot di questo criterio per monitorare l'aggiunta di utenti esterni consente di assegnare un nome al criterio, impostare la gravità in base alle esigenze aziendali, impostarlo come (in questo caso) una singola attività e quindi stabilire i parametri che monitoreranno specificamente solo l'aggiunta di utenti non interni e limitare questa attività a Teams.
 
 I risultati di questo criterio possono essere visualizzati nel log attività:
 
-![Screenshot di un elenco di eventi attivati da eliminazioni di massa](media/TeamsExternalUserList.png)
+![Eventi attivati dai criteri degli utenti esterni](media/TeamsExternalUserList.png)
 
 Qui è possibile rivedere le corrispondenze con i criteri impostati e apportare le modifiche necessarie oppure esportare i risultati per usarli altrove.
 
@@ -101,13 +101,13 @@ Qui è possibile rivedere le corrispondenze con i criteri impostati e apportare 
 
 Come accennato in precedenza, è possibile monitorare gli scenari di eliminazione. È possibile creare criteri che monitorino l'eliminazione di massa Teams siti. In questo esempio vengono impostati criteri basati su avvisi per rilevare l'eliminazione di massa dei team in un intervallo di 30 minuti.
 
-![Screenshot della pagina di creazione dei criteri che mostra la configurazione di un criterio per il rilevamento dell'eliminazione di massa del team](media/TeamsMassDeletePolicy.png)
+![Criterio che mostra la configurazione di un criterio per il rilevamento dell'eliminazione di massa del team](media/TeamsMassDeletePolicy.png)
 
 Come illustrato nella schermata, è possibile impostare molti parametri diversi per questo criterio per monitorare le eliminazioni di Teams, tra cui la gravità, l'azione singola o ripetuta e i parametri che limitano l'eliminazione Teams ed eliminazione del sito. Questa operazione può essere eseguita indipendentemente da un modello oppure potrebbe essere creato un modello su cui basare questo criterio, a seconda delle esigenze dell'organizzazione.
 
 Dopo aver stabilito un criterio che funziona per l'azienda, è possibile esaminare i risultati nel log attività quando vengono attivati gli eventi:
 
-![Screenshot di un elenco di eventi attivati da eliminazioni di massa](media/TeamsMassDeleteList.png)
+![Eventi dello screenshot attivati da eliminazioni di massa](media/TeamsMassDeleteList.png)
 
 È possibile filtrare fino al criterio impostato per visualizzare i risultati di tale criterio. Se i risultati che si stanno ottenendo nel log attività non sono soddisfacenti ,ad esempio se vengono visualizzati molti risultati o niente, è possibile ottimizzare la query per renderla più pertinente per le attività da eseguire.
 
@@ -146,7 +146,7 @@ Ecco un elenco di tutti gli eventi registrati per le attività di utente e ammin
 |Team eliminato  |TeamDeleted            |Il proprietario del team elimina un team.      |
 |È stato modificato un messaggio con un collegamento URL in Teams     |MessageEditedHasLink         |Un utente modifica un messaggio e aggiunge un collegamento URL in Teams.         |
 |Messaggi esportati <sup>1</sup> |   MessagesExported |I messaggi della chat o del canale sono stati esportati|.
-|Chat recuperate <sup>1</sup> |ChatRetrieved  |È Microsoft Teams stata recuperata una chat.|
+|Chat recuperata <sup>1</sup>  |ChatRetrieved  |È Microsoft Teams stata recuperata una chat.|
 |È stato recuperato tutto il contenuto ospitato di un messaggio<sup>1</sup>    |MessageHostedContentsListed    |Tutto il contenuto ospitato in un messaggio, ad esempio immagini o frammenti di codice, è stato recuperato.|
 |App installata |AppInstalled         |È stata installata un'app.   |
 |Azione eseguita sulla scheda|PerformedCardAction|Un utente ha fatto un'azione su una scheda adattiva all'interno di una chat. Le schede adattive vengono in genere usate dai bot per consentire la visualizzazione di informazioni e interazioni nelle chat. <br/><br/>**Nota:** Solo le azioni di input in linea in una scheda adattiva all'interno di una chat saranno disponibili nel log di controllo. Ad esempio, quando un utente invia una risposta al sondaggio in una conversazione di canale su una scheda adattiva generata da un bot Sondaggio. Le azioni utente, ad esempio "Visualizza risultato", che apriranno una finestra di dialogo o le azioni degli utenti all'interno delle finestre di dialogo non saranno disponibili nel log di controllo.|

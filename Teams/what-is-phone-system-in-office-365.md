@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Questo articolo illustra la tecnologia di Sistema telefonico in Microsoft 365 e Office 365.
-ms.openlocfilehash: 0c750a4abe92b9fee83a3d152db92c767147d295
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a0b05c5e0f3fe0f684f160e75e62cec2f36fc86b
+ms.sourcegitcommit: 70f47cc2333e790c15c3f9f209302afdbb5a07d7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100922"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53333090"
 ---
 # <a name="what-is-phone-system"></a>Che cos'è Sistema telefonico?
 
@@ -55,7 +55,7 @@ Sistema telefonico può essere connesso alla rete PSTN in due modi:
 
   Per gli Teams utenti, è possibile connettere l'infrastruttura di telefonia locale a Sistema telefonico tramite Routing diretto. Per altre informazioni, vedere Sistema telefonico [routing diretto](direct-routing-landing-page.md).
 
-  Per altre informazioni su tutte le soluzioni di telefonia Microsoft, vedere [Soluzioni di telefonia Microsoft](/SkypeForBusiness/hybrid/msft-telephony-solutions).
+  Per altre informazioni su tutte le soluzioni di telefonia Microsoft, vedere Pianificare [la Teams vocale.](cloud-voice-landing-page.md)
 
 
 ## <a name="phone-system-with-services"></a>Sistema telefonico con i servizi
