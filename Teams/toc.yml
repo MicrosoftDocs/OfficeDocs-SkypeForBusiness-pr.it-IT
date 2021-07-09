@@ -587,6 +587,8 @@ items:
                     href: meeting-policies-participants-and-guests.md
                   - name: Rimuovere criterio riunione RestrictedAnonymousAccess da utenti
                     href: meeting-policies-restricted-anonymous-access.md
+          - name: Criteri riunione e scadenza delle riunioni
+            href: meeting-expiration.md
           - name: Gestire le impostazioni delle riunioni
             href: meeting-settings-in-teams.md
           - name: Messaggi di posta elettronica inviati automaticamente agli utenti in caso di modifica delle impostazioni
