@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 98502d623edda6117b2838d2bc71197a43baf394
-ms.sourcegitcommit: 84d99b266dea2a972774d781b92eccc67d6c197a
+ms.openlocfilehash: d58d9aaecd2c5d07922a96e0d5b0cb1ead4ba25b
+ms.sourcegitcommit: 5df33e7fe912426e3e158b3be7334e05dc3803a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197521"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53345702"
 ---
 <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 ==========================
@@ -43,7 +43,7 @@ L'autenticazione moderna è disponibile per tutte le organizzazioni che usano Te
 
 - Microsoft consiglia di usare Windows 10 versione 1903 o successiva per ottenere un'esperienza di Single Sign-On ottimale.
 
-- Se gli utenti non hanno eseguito l'accesso al proprio account Microsoft aziendale o dell'istituto di istruzione, all'avvio di Teams viene loro chiesto di fornire l'autenticazione a uno o a più fattori (SFA o MFA). Questo processo dipende da quale procedura di accesso ha deciso di richiedere l’organizzazione.
+- Se gli utenti non hanno eseguito l'accesso al proprio account Microsoft aziendale o dell'istituto di istruzione, all'avvio di Teams viene loro chiesto di fornire l'autenticazione a uno o a più fattori (SFA o MFA). Questo processo dipende dalla scelta dei requisiti per la procedura di accesso da parte dell'organizzazione.
 
 - Se gli utenti hanno eseguito l'accesso a un computer aggiunto a un dominio, all'avvio di Teams potrebbero dover eseguire un ulteriore passaggio di autenticazione, a seconda che l'organizzazione abbia scelto di richiedere l'autenticazione MFA o che il computer in uso richieda già l'autenticazione MFA per accedere. Se il computer in uso richiede già l'autenticazione MFA per accedere, aprendo Teams l'app viene avviata automaticamente.
 
@@ -72,7 +72,7 @@ In macOS, Teams richiederà agli utenti di immettere il nome utente e le credenz
 
 Dopo l'accesso, gli utenti dei dispositivi mobili visualizzano un elenco di tutti gli account di Microsoft 365 attualmente connessi o che sono stati connessi al dispositivo in precedenza. Possono toccare uno qualsiasi degli account per eseguire l'accesso. Per l'accesso ai dispositivi mobili sono possibili due scenari:
 
-1. Se l'account selezionato è attualmente connesso ad altre app di Office 365 o Microsoft 365, l'utente viene indirizzato direttamente a Teams. Non è necessario che l'utente immetta le credenziali.
+1. Se l'account selezionato è attualmente connesso ad altre app Office 365 o Microsoft 365, l'utente viene indirizzato direttamente a Teams, senza dover immettere le credenziali.
 
 2. Se l'utente non ha effettuato l'accesso al proprio account di Microsoft 365 in nessun'altra posizione, verrà chiesto di effettuare un'autenticazione a uno o più fattori (SFA o MFA), a seconda di come l'organizzazione ha configurato i criteri di accesso per i dispositivi mobili.
 
@@ -119,7 +119,7 @@ Le app Teams in Windows e macOS supportano ora l'uso di criteri per i dispositiv
 Quando in un dispositivo è configurato questo criterio, gli utenti possono accedere solo con account ospitati in un tenant di Azure AD incluso nell'elenco dei tenant consentiti definito nel criterio. Il criterio si applica a tutti gli accessi, inclusi il primo e gli altri account. Se l'organizzazione si estende su più tenant di Azure AD, è possibile includere più ID tenant nell'elenco dei consentiti. I collegamenti per l'aggiunta di un altro account potrebbero continuare a essere visibili nell'app Teams, ma non saranno utilizzabili.
 
 > [!NOTE]
->1. Il criterio limita solo gli accessi. Non limita la possibilità per gli utenti di essere invitati come guest in altri tenant di Azure AD o di passare ad altri tenant.
+>1. Il criterio limita solo gli accessi, ma non la possibilità per gli utenti di essere invitati come guest in altri tenant di Azure AD o di passare ad altri tenant (in cui gli utenti sono stati invitati come guest).
 >2. Il criterio richiede Teams per Windows versione 1.3.00.30866 o successiva e Teams per macOS versione 1.3.00.30882 (rilasciati a metà novembre 2020).
 
 **Criteri per Windows** I file modello amministrativi (ADMX/ADML) sono disponibili dal [Centro download](https://www.microsoft.com/download/details.aspx?id=49030) (il nome descrittivo dell'impostazione criterio nel file modello amministrativo è "Limita l'accesso a Teams agli account in tenant specifici"). Inoltre, è possibile impostare manualmente le chiavi nel Registro di sistema di Windows:

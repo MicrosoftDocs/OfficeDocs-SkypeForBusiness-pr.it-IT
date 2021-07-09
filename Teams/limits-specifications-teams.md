@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 16713d115dafaac4667fcf8ca1b52624a3b95424
-ms.sourcegitcommit: e023c3023f49e196315e176ce346f0dc5825fa56
+ms.openlocfilehash: abff04e9fd51f0d7e399b8619442dbf9e3070c43
+ms.sourcegitcommit: 5df33e7fe912426e3e158b3be7334e05dc3803a5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53275655"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53345722"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -120,10 +120,14 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 
 |Funzionalità     | Limite massimo |
 |------------|---------------|
-|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000, include GCC, GCCH e DoD, ma non A1 (300). **Solo visualizzazione** consente a un massimo di 20.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).|
+|Numero di persone in una riunione (che possono chattare e partecipare tramite telefono)  | 1000, include GCC, GCCH e DoD, ma non A1 (300). **Solo visualizzazione** consente a un massimo di 20.000 persone di partecipare in solo ascolto a una riunione in cui l'organizzatore ha una licenza per lo SKU E3/E5/A3/A5, oltre al Governo (GCC, GCC High, DoD). Altre informazioni sull'[esperienza di sola visualizzazione](view-only-meeting-experience.md).<sup>1,2</sup>|
 |Numero di persone in un video o una chiamata audio dalla chat | 20 |
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
+  
+<sup>1</sup> Per un'esperienza ottimale nelle riunioni di grandi dimensioni, su consiglia di usare il client desktop di Teams o i client per dispositivi mobili di Teams.
+  
+<sup>2</sup> Nelle riunioni di grandi dimensioni, si consiglia ai relatori di usare l'app desktop di Teams. Per altri suggerimenti su come ospitare riunioni di grandi dimensioni, vedere [Procedure consigliate per le riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16).
   
 > [!NOTE]
 > I gruppi di lavoro possono essere creati esclusivamente nelle riunioni con meno di 300 partecipanti. Inoltre, la creazione di gruppi di lavoro in una riunione limita automaticamente il numero di partecipanti alla riunione a 300. Consigliare agli utenti finali di non avviare gruppi di lavoro in riunioni in cui si prevede la partecipazione di oltre 300 partecipanti. Per altre informazioni sulle riunioni di grandi dimensioni in Teams, condividere le linee guida [Best practice per riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16) con gli utenti finali. 
