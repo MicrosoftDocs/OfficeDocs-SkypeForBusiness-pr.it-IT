@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come abilitare gli utenti Telefono Microsoft Routing diretto di sistema.
-ms.openlocfilehash: 7c1ed58369892ee947bb3d8c29a24628d39d41ea
-ms.sourcegitcommit: 0122be629450e203e7143705ac2b395bf3792fd3
+ms.openlocfilehash: 86132778226702577068d9502ae46cba949667c6
+ms.sourcegitcommit: 5df33e7fe912426e3e158b3be7334e05dc3803a5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129326"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53345712"
 ---
 # <a name="enable-users-for-direct-routing-voice-and-voicemail"></a>Abilitare gli utenti per routing diretto, segreteria telefonica e segreteria telefonica
 
@@ -53,7 +53,9 @@ Se la distribuzione di Skype for Business Online coesiste con Skype for Business
 
 Per informazioni sui requisiti di licenza, vedere [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements) in Pianificare il routing [diretto.](direct-routing-plan.md)
 
-## <a name="ensure-that-the-user-is-homed-online-applicable-for-skype-for-business-server-enterprise-voice-enabled-users-being-migrated-to-teams-direct-routing"></a>Verificare che l'utente sia ospitato online (applicabile Skype for Business Server VoIP aziendale utenti abilitati per la migrazione a Teams Routing diretto)
+## <a name="ensure-that-the-user-is-homed-online"></a>Verificare che l'utente sia disponibile online 
+
+Questo passaggio è applicabile Skype for Business Server VoIP aziendale utenti abilitati per la migrazione a Teams routing diretto.
 
 Il routing diretto richiede che l'utente sia ospitato online. È possibile verificare esaminando il parametro RegistrarPool, che deve avere un valore nel infra.lync.com dominio. È anche consigliabile, ma non obbligatorio, modificare la gestione di LineURI da locale a online durante la migrazione degli utenti a Teams Direct Routing. 
 

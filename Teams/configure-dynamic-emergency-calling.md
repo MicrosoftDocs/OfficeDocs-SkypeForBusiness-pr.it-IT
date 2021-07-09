@@ -18,12 +18,12 @@ description: Scopri come configurare i Piani per chiamate Microsoft e la funzion
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5454eff6e09e923a6db8de1ba8c9e9fe47c3f0f2
-ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
+ms.openlocfilehash: 5e399c5e18bc90f99ebe59f3f4e603da5f7cbfe9
+ms.sourcegitcommit: 1c5608e6b539e90e42f48212d038f861ecf8136b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096310"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53337835"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -83,6 +83,9 @@ Attualmente sono supportati i client seguenti.  Controllare spesso per visualizz
 - Teams client per dispositivi mobili Android e Google Play Store versione 1416/1.0.0.2019121201 e successive
 - Teams telefono 1449/1.0.94.2019110802 e successive
 - Teams Rooms versione 4.4.25.0 e successive
+
+> [!NOTE]
+> I telefoni 3PIP non supportano chiamate di emergenza dinamiche. 
 
 > [!NOTE]
 > Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere [Criteri di chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 

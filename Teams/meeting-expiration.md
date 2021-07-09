@@ -17,23 +17,18 @@ f1.keywords:
 - CSH
 ms.custom: ''
 description: Informazioni su come usare le impostazioni dei criteri riunione per controllare la scadenza della riunione Microsoft Teams.
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6e8821781eab70696c9b24c8df18cc8dd0b46870
-ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
+ms.openlocfilehash: e201348ba1734539844a76b0fee2e2f072757e87
+ms.sourcegitcommit: 1c5608e6b539e90e42f48212d038f861ecf8136b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51598615"
+ms.lasthandoff: 07/08/2021
+ms.locfileid: "53337815"
 ---
 # <a name="meeting-policies-and-meeting-expiration-in-microsoft-teams"></a>Criteri di riunione e scadenza della riunione in Microsoft Teams
 
-[!INCLUDE [preview-feature](includes/preview-feature.md)]
-
-## <a name="overview"></a>Panoramica
-
 [I criteri](meeting-policies-in-teams.md) riunione in Microsoft Teams consentono di controllare se gli utenti dell'organizzazione possono avviare e pianificare riunioni e le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. È possibile gestire i criteri riunione nell'interfaccia di amministrazione di Microsoft Teams o usando i cmdlet di PowerShell [Get](/powershell/module/skype/get-csteamsmeetingpolicy), [New](/powershell/module/skype/new-csteamsmeetingpolicy), [Set](/powershell/module/skype/set-csteamsmeetingpolicy), [Remove](/powershell/module/skype/remove-csteamsmeetingpolicy), [Grant](/powershell/module/skype/grant-csteamsmeetingpolicy) -CsTeamsMeetingPolicy.
 
-Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare le riunioni in Teams, a cui si fa riferimento in questo articolo.
+Le impostazioni dei criteri di riunione che controllano se gli utenti possono avviare e pianificare riunioni e controllano anche la scadenza delle riunioni pianificate dagli utenti. Quando un collegamento di partecipazione alla riunione e l'ID conferenza per una riunione scadono, nessuno può partecipare alla riunione. Le impostazioni dei criteri di riunione seguenti determinano se gli utenti possono avviare e pianificare riunioni in Teams. Questo articolo illustra le impostazioni della riunione.
 
 - [Consenti riunione ora nei canali:](meeting-policies-in-teams-general.md#allow-meet-now-in-channels)controlla se un utente può avviare una riunione improvvisata in un canale.
 - [Consenti pianificazione riunione canale:](meeting-policies-in-teams-general.md#allow-channel-meeting-scheduling)controlla se un utente può pianificare una riunione in un canale.
@@ -63,14 +58,14 @@ Quando si cambia l'impostazione di un criterio riunione da Disattivato a **Attiv
 
 ## <a name="meeting-expiration-scenarios"></a>Scenari di scadenza delle riunioni
 
-Ecco un riepilogo del funzionamento della scadenza della riunione per ognuna delle impostazioni dei criteri di riunione descritte in questo articolo. 
+Ecco un riepilogo del funzionamento della scadenza della riunione per ognuna delle impostazioni dei criteri di riunione descritte in questo articolo.
 
-|Per: |Eseguire questa operazione  |Comportamento di partecipazione alla riunione  |
-|---------|---------|---------|
-|Scadenza del canale Riunione ora riunioni avviate da un utente  |Disattivare **Consenti ora di incontrarsi nei canali.**|Nessuno può partecipare al canale Riunione ora le riunioni avviate dall'utente.         |
-|Scadere le riunioni del canale pianificate da un utente   |Disattivare **Consenti pianificazione delle riunioni del canale**.         |Nessuno può partecipare alle riunioni del canale pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare a quanto segue:<ul><li>Riunioni del canale avvenute in passato.</li> <li>Riunioni del canale pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni di canale ricorrenti.</li></ul>       |
-|Scadere le riunioni private pianificate da un utente    |Disattivare **Consenti pianificazione riunioni private** *e* Consenti Outlook componente **aggiuntivo**.          |Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare a quanto segue: <ul><li>Riunioni private avvenute in passato.</li> <li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul> Sia Consenti pianificazione riunioni  **private** che Consenti Outlook il componente aggiuntivo deve essere disattivato per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.      |
-|Scadenza riunione privata ora riunioni avviate da un utente  |Disattivare **Consenti riunione ora nelle riunioni private.**          |Nessuno può partecipare a riunioni private di Meet now avviate dall'utente.         |
+|Se si vuole...&nbsp;&nbsp; |Eseguire questa operazione&nbsp;&nbsp;&nbsp;&nbsp;  |Comportamento di partecipazione alla riunione&nbsp;&nbsp;&nbsp;&nbsp;  |
+|---------------------------|---------------------|---------|
+|Scadenza riunione privata ora riunioni avviate da un utente&nbsp;&nbsp;|Disattivare **Consenti riunione ora nelle riunioni private.**&nbsp;&nbsp;|Nessuno può partecipare a riunioni **private di Meet now** avviate dall'utente.|
+|Scadere le riunioni private pianificate da un utente&nbsp;&nbsp;|Disattivare **Consenti pianificazione riunioni private** _e_ Consenti Outlook componente **aggiuntivo**. &nbsp;&nbsp;|Nessuno può partecipare a riunioni private pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni private avvenute in passato.</li><li>Riunioni private pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni private ricorrenti.</li></ul><br>Sia Consenti pianificazione riunioni  **private** che Consenti Outlook il componente aggiuntivo deve essere disattivato per scadere le riunioni private pianificate da un utente. Se un'impostazione è disattivata e l'altra è attivata, i collegamenti e gli ID conferenza delle riunioni esistenti rimangono attivi e non saranno scaduti.|
+|Scadenza del canale **Riunione ora riunioni** avviate da un utente&nbsp;&nbsp;|Disattiva **Consenti riunione ora nei canali e** _disattiva_ Consenti pianificazione delle riunioni **dei canali.**&nbsp;&nbsp;|Nessuno può partecipare al canale **Riunione ora** le riunioni avviate dall'utente.|
+|Scadere le riunioni del canale pianificate da un utente&nbsp;&nbsp;|Disattivare **Consenti pianificazione delle riunioni del canale**.&nbsp;&nbsp;|Nessuno può partecipare alle riunioni del canale pianificate dall'utente. In questo modo si impedisce agli utenti di partecipare alle riunioni seguenti:<ul><li>Riunioni del canale avvenute in passato.</li><li>Riunioni del canale pianificate per il futuro e non ancora avvenute.</li><li>Istanze future di riunioni di canale ricorrenti.</li></ul>|
 
 Se si vuole che gli utenti accertano le riunioni pianificate o avviate in precedenza da un determinato utente, è possibile:
 
