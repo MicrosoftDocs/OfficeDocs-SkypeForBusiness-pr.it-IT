@@ -1,7 +1,7 @@
 ---
-title: Gestire i criteri del routing delle chiamate di emergenza
-author: cichur
-ms.author: v-cichur
+title: Gestire i criteri di routing delle chiamate di emergenza per il routing diretto
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.reviewer: jastark, roykuntz
 ms.topic: article
@@ -21,14 +21,14 @@ description: Informazioni su come usare e gestire i criteri di routing delle chi
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
-ms.openlocfilehash: 0fb3a80bf5c1a064435754c4f999f6a62214b021
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 86f73bed2e086efee666e5592ca3f42e9756096c
+ms.sourcegitcommit: 5720fa12bdabdfc2988bf835c8cf95e4d64fa54e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096180"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "53354306"
 ---
-# <a name="manage-emergency-call-routing-policies-in-microsoft-teams"></a>Gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams
+# <a name="manage-emergency-call-routing-policies-for-direct-routing"></a>Gestire i criteri di routing delle chiamate di emergenza per il routing diretto
 
 Se nell'organizzazione è stato distribuito [Sistema telefonico Routing](direct-routing-landing-page.md) diretto, è possibile usare i criteri di routing delle chiamate di emergenza in Microsoft Teams per configurare i numeri di emergenza e specificare la modalità di instradamento delle chiamate di emergenza. Un criterio di routing delle chiamate di emergenza determina se i servizi di emergenza migliorati sono abilitati per gli utenti a cui è assegnato il criterio, i numeri usati per chiamare i servizi di emergenza (ad esempio, il 911 negli Stati Uniti) e la modalità di instradamento delle chiamate ai servizi di emergenza.
 

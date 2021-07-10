@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come abilitare gli utenti Telefono Microsoft Routing diretto di sistema.
-ms.openlocfilehash: 86132778226702577068d9502ae46cba949667c6
-ms.sourcegitcommit: 5df33e7fe912426e3e158b3be7334e05dc3803a5
+ms.openlocfilehash: 6dab88312634a0dc3c595fec109905b308acbdaa
+ms.sourcegitcommit: 5720fa12bdabdfc2988bf835c8cf95e4d64fa54e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/09/2021
-ms.locfileid: "53345712"
+ms.locfileid: "53354296"
 ---
 # <a name="enable-users-for-direct-routing-voice-and-voicemail"></a>Abilitare gli utenti per routing diretto, segreteria telefonica e segreteria telefonica
 
@@ -126,7 +126,7 @@ Dopo aver creato l'utente e aver assegnato una licenza, il passaggio successivo 
     > Se il numero di telefono dell'utente è gestito in locale, usare in locale Skype for Business Management Shell o il Pannello di controllo per configurare il numero di telefono dell'utente. 
 
 
-## <a name="configuring-sending-calls-directly-to-voicemail"></a>Configurazione dell'invio di chiamate direttamente alla segreteria telefonica
+## <a name="configure-sending-calls-directly-to-voicemail"></a>Configurare l'invio di chiamate direttamente alla segreteria telefonica
 
 Instradamento diretto consente di terminare la chiamata a un utente e inviarla direttamente alla segreteria telefonica dell'utente. Se si vuole inviare la chiamata direttamente alla segreteria telefonica, allegare opaque=app:voicemail all'intestazione Request URI. Ad esempio, "sip:user@yourdomain.com;opaque=app:voicemail". In questo caso, l Teams'utente non riceverà la notifica di chiamata, la chiamata verrà connessa direttamente alla segreteria telefonica dell'utente.
 
