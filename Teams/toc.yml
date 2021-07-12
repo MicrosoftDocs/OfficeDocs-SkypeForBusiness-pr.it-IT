@@ -817,8 +817,6 @@ items:
     items:
       - name: Pianificare la soluzione vocale di Teams
         href: cloud-voice-landing-page.md
-      - name: Gestisci i criteri vocali e di chiamata in Teams
-        href: voice-and-calling-policies.md
       - name: Sistema telefonico
         items:
           - name: Che cos'è Sistema telefonico
@@ -879,100 +877,102 @@ items:
             href: shared-line-appearance.md
           - name: Configurazione del tastierino
             href: dial-pad-configuration.md
-      - name: Piani di chiamata
-        items:
-          - name: Qual è il piano di chiamata adatto alle proprie esigenze?
-            href: calling-plan-landing-page.md
-          - name: Come acquistare un piano di chiamata
-            href: calling-plans-for-office-365.md
-          - name: Configurare i piani di chiamata per l'organizzazione
-            href: set-up-calling-plans.md
-          - name: 'Guida introduttiva: configurazione dei piani di chiamata'
-            href: configuring-teams-calling-quickstartguide.md
-          - name: Disponibilità di Piano di chiamata per Paesi e aree geografiche
-            href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
-      - name: Instradamento diretto di Sistema telefonico
+      - name: Opzioni di connettività PSTN
         items:
           - name: Panoramica
-            href: direct-routing-landing-page.md
-          - name: Pianificare Instradamento diretto
-            href: direct-routing-plan.md
-          - name: Elenco di Session Border Controller certificati per Instradamento diretto
-            href: direct-routing-border-controllers.md
-          - name: Configurare l'instradamento diretto
+            href: pstn-connectivity.md
+          - name: Piani di chiamata
+            items:
+              - name: Qual è il piano di chiamata adatto alle proprie esigenze?
+                href: calling-plan-landing-page.md
+              - name: Configurare i piani di chiamata per l'organizzazione
+                href: set-up-calling-plans.md
+              - name: 'Guida introduttiva: configurazione dei piani di chiamata'
+                href: configuring-teams-calling-quickstartguide.md
+              - name: Disponibilità di Piano di chiamata per Paesi e aree geografiche
+                href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
+          - name: Instradamento diretto di Sistema telefonico
             items:
               - name: Panoramica
-                href: direct-routing-configure.md
-              - name: 'Passaggio 1: Connettere un controller SBC'
-                href: direct-routing-connect-the-sbc.md
-              - name: 'Passaggio 2: Abilitare gli utenti'
-                href: direct-routing-enable-users.md
-              - name: 'Passaggio 3: Configurare il routing vocale'
-                href: direct-routing-voice-routing.md
-              - name: 'Passaggio 4: Tradurre i numeri di telefono'
-                href: direct-routing-translate-numbers.md
-              - name: Configurare un SBC per più tenant
-                href: direct-routing-sbc-multiple-tenants.md
-              - name: Come usare i dispositivi analogici con l'instradamento diretto
-                href: direct-routing-analog-devices.md
-          - name: Routing basato sulla posizione
-            items:
-              - name: Pianificare l'instradamento basato sulla posizione per Instradamento diretto
-                href: location-based-routing-plan.md
-              - name: Configurare le impostazioni di rete per l'instradamento basato sulla posizione
-                href: location-based-routing-configure-network-settings.md
-              - name: Abilitare l'instradamento basato sulla posizione per Instradamento diretto
-                href: location-based-routing-enable.md
-          - name: Bypass multimediale per Instradamento diretto
-            items:
-              - name: Pianificare il bypass multimediale con Instradamento diretto
-                href: direct-routing-plan-media-bypass.md
-              - name: Configurare il bypass multimediale con Instradamento diretto
-                href: direct-routing-configure-media-bypass.md
-          - name: Ottimizzazione degli elementi multimediali locali per Instradamento diretto
-            items:
-              - name: Pianificare l'ottimizzazione degli elementi multimediali locali
-                href: direct-routing-media-optimization.md
-              - name: Configurare l'ottimizzazione degli elementi multimediali locali
-                href: direct-routing-media-optimization-configure.md
-          - name: Account utente in un ambiente ibrido con connettività PSTN
-            href: direct-routing-user-accounts-in-a-hybrid-environment.md
-          - name: Eseguire la migrazione a Instradamento diretto
-            href: direct-routing-migrating.md
-          - name: Monitorare e risolvere i problemi di Instradamento diretto
-            items:
-              - name: Panoramica
-                href: direct-routing-monitor-and-troubleshoot.md
-              - name: Dashboard sull'integrità
-                href: direct-routing-health-dashboard.md
-          - name: Informazioni di riferimento tecniche per Instradamento diretto
-            items:
-              - name: Failover trunk sulle chiamate in uscita
-                href: direct-routing-trunk-failover-on-outbound-call.md
-              - name: Prefisso internazionale per percorso multimediale
-                href: direct-routing-country-codes.md
-              - name: Script di PowerShell per testare le connessioni dei Session Border Controller
-                href: sip-tester-powershell-script.md
-              - name: Gestire le notifiche di chiamata
-                href: direct-routing-call-notifications.md
-              - name: Protocolli
+                href: direct-routing-landing-page.md
+              - name: Pianificare Instradamento diretto
+                href: direct-routing-plan.md
+              - name: Elenco di Session Border Controller certificati per Instradamento diretto
+                href: direct-routing-border-controllers.md
+              - name: Configurare l'instradamento diretto
                 items:
-                  - name: Definizioni e standard RFC
-                    href: direct-routing-protocols.md
-                  - name: Protocollo SIP
-                    href: direct-routing-protocols-SIP.md
-                  - name: Protocolli multimediali
-                    href: direct-routing-protocols-media.md
-              - name: Gestire i criteri di routing vocale
-                href: manage-voice-routing-policies.md
-              - name: Instradamento diretto di Survivable Branch Appliance
-                href: direct-routing-survivable-branch-appliance.md
-      - name: Connessione con operatore
-        items:
-          - name: Piano per la connessione con operatore
-            href: operator-connect-plan.md
-          - name: Configurare la connessione con operatore
-            href: operator-connect-configure.md
+                  - name: Panoramica
+                    href: direct-routing-configure.md
+                  - name: 'Passaggio 1: Connettere un controller SBC'
+                    href: direct-routing-connect-the-sbc.md
+                  - name: 'Passaggio 2: Abilitare gli utenti'
+                    href: direct-routing-enable-users.md
+                  - name: 'Passaggio 3: Configurare il routing vocale'
+                    href: direct-routing-voice-routing.md
+                  - name: 'Passaggio 4: Tradurre i numeri di telefono'
+                    href: direct-routing-translate-numbers.md
+                  - name: Configurare un SBC per più tenant
+                    href: direct-routing-sbc-multiple-tenants.md
+                  - name: Come usare i dispositivi analogici con l'instradamento diretto
+                    href: direct-routing-analog-devices.md
+                  - name: Gestire i criteri di routing vocale
+                    href: manage-voice-routing-policies.md
+                  - name: Gestire le notifiche di chiamata
+                    href: direct-routing-call-notifications.md
+              - name: Routing basato sulla posizione
+                items:
+                  - name: Pianificare l'instradamento basato sulla posizione per Instradamento diretto
+                    href: location-based-routing-plan.md
+                  - name: Configurare le impostazioni di rete per l'instradamento basato sulla posizione
+                    href: location-based-routing-configure-network-settings.md
+                  - name: Abilitare l'instradamento basato sulla posizione per Instradamento diretto
+                    href: location-based-routing-enable.md
+              - name: Bypass multimediale per Instradamento diretto
+                items:
+                  - name: Pianificare il bypass multimediale con Instradamento diretto
+                    href: direct-routing-plan-media-bypass.md
+                  - name: Configurare il bypass multimediale con Instradamento diretto
+                    href: direct-routing-configure-media-bypass.md
+              - name: Ottimizzazione degli elementi multimediali locali per Instradamento diretto
+                items:
+                  - name: Pianificare l'ottimizzazione degli elementi multimediali locali
+                    href: direct-routing-media-optimization.md
+                  - name: Configurare l'ottimizzazione degli elementi multimediali locali
+                    href: direct-routing-media-optimization-configure.md
+              - name: Account utente in un ambiente ibrido con connettività PSTN
+                href: direct-routing-user-accounts-in-a-hybrid-environment.md
+              - name: Eseguire la migrazione a Instradamento diretto
+                href: direct-routing-migrating.md
+              - name: Monitorare e risolvere i problemi di Instradamento diretto
+                items:
+                  - name: Panoramica
+                    href: direct-routing-monitor-and-troubleshoot.md
+                  - name: Dashboard sull'integrità
+                    href: direct-routing-health-dashboard.md
+              - name: Informazioni di riferimento tecniche per Instradamento diretto
+                items:
+                  - name: Failover trunk sulle chiamate in uscita
+                    href: direct-routing-trunk-failover-on-outbound-call.md
+                  - name: Prefisso internazionale per percorso multimediale
+                    href: direct-routing-country-codes.md
+                  - name: Script di PowerShell per testare le connessioni dei Session Border Controller
+                    href: sip-tester-powershell-script.md
+                  - name: Protocolli
+                    items:
+                      - name: Definizioni e standard RFC
+                        href: direct-routing-protocols.md
+                      - name: Protocollo SIP
+                        href: direct-routing-protocols-SIP.md
+                      - name: Protocolli multimediali
+                        href: direct-routing-protocols-media.md
+                  - name: Instradamento diretto di Survivable Branch Appliance
+                    href: direct-routing-survivable-branch-appliance.md
+          - name: Connessione con operatore
+            items:
+              - name: Piano per la connessione con operatore
+                href: operator-connect-plan.md
+              - name: Configurare la connessione con operatore
+                href: operator-connect-configure.md
       - name: Numeri di telefono
         items:
           - name: Gestire i numeri di telefono per la propria organizzazione
@@ -1037,8 +1037,10 @@ items:
                 href: emergency-calling-labels.md
           - name: Gestire i criteri delle chiamate di emergenza
             href: manage-emergency-calling-policies.md
-          - name: Gestire i criteri del routing delle chiamate di emergenza
+          - name: Gestire i criteri del routing delle chiamate di emergenza per l’instradamento diretto
             href: manage-emergency-call-routing-policies.md
+      - name: Gestire i criteri vocali e di chiamata in Teams
+        href: voice-and-calling-policies.md
       - name: Caso studio sulla migrazione della funzionalità vocale di Contoso
         items:
           - name: Panoramica
@@ -1556,8 +1558,6 @@ items:
                 href: /microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365
           - name: Modalità di interazione di SharePoint Online e OneDrive for Business con Teams
             href: sharepoint-onedrive-interact.md
-          - name: Esperienza di Teams in un tenant con Microsoft 365 o Office 365 Multi-Geo
-            href: teams-experience-o365odb-spo-multi-geo.md
       - name: Dispositivi supportati
         items:
           - name: Gestire i dispositivi in Teams
