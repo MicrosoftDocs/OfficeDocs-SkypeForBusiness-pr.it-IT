@@ -3,8 +3,8 @@ title: Guida introduttiva per l'amministratore - Riunioni ed eventi live in Micr
 ms.reviewer: ''
 description: Guida introduttiva per amministratori su come ottenere le licenze, distribuire e configurare riunioni online ed eventi live in Microsoft Teams.
 ms.topic: article
-author: SerdarSoysal
-ms.author: serdars
+author: CarolynRowe
+ms.author: crowe
 manager: serdars
 ms.service: msteams
 audience: admin
@@ -20,12 +20,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4ca2c048b28d82c7c41a7f98712264c739bce210
-ms.sourcegitcommit: d5e77f8a3b8084ed92f0a77888a555626309591b
+ms.openlocfilehash: 03611f2d166883ce960e272e2f3b11300cd20c54
+ms.sourcegitcommit: 616b6d0d5be2b333519b79ab59a4117036ba647e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "52517739"
+ms.lasthandoff: 07/10/2021
+ms.locfileid: "53363581"
 ---
 # <a name="admin-quick-start---meetings-and-live-events-in-microsoft-teams"></a>Guida introduttiva per l'amministratore - Riunioni ed eventi live in Microsoft Teams
 
@@ -42,15 +42,9 @@ Esistono due modi per incontrarsi in Microsoft Teams: riunioni ed eventi live. Q
 
 Chiunque può partecipare gratuitamente a una riunione o a un evento live pubblico di Teams. Non è necessaria una licenza. Per partecipare a una riunione o a un evento live di Teams, è sufficiente fare clic sul pulsante **Partecipa** in Teams o nell'invito alla riunione. L'audio della riunione è incluso in una riunione di Teams, ma se vuoi consentire agli utenti di accedere a una riunione tramite telefono, si dovrà specificare un numero di accesso esterno.
 
-Le persone che intendono organizzare, pianificare o condurre riunioni o eventi live devono disporre di una delle licenze di Microsoft 365 o Office 365 elencate nella tabella seguente. Se si usa già Teams, è probabile che si abbia la licenza necessaria per organizzare e condurre riunioni ed eventi live.
+Le persone che intendono organizzare, pianificare o condurre riunioni o eventi live devono disporre di uno dei piani di licenza indicati nella [descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description). 
 
-:::image type="content" source="media/quick-start-meetings-live-events-image1.png" alt-text="Tabella con le licenze necessarie per le riunioni o gli eventi live di Teams":::
-
-> <sup>1</sup> Gli organizzatori delle riunioni devono avere una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md) per inviare un invito che include una conferenza telefonica con accesso esterno.
->
-> <sup>2</sup> Per una riunione con chiamata in uscita a un numero [**Chiamami al numero**,](set-up-the-call-me-feature-for-your-users.md) gli organizzatori devono avere una licenza E5 o una [licenza per il componente aggiuntivo Audioconferenza](teams-add-on-licensing/microsoft-teams-add-on-licensing.md). Potrebbe essere necessario anche un [dial plan](what-are-dial-plans.md).
-
-Per altre informazioni sulle licenze, vedere [Descrizione del servizio Microsoft Teams](/office365/servicedescriptions/teams-service-description).
+Se usi già Teams, è probabile che tu abbia la licenza necessaria per organizzare e condurre riunioni ed eventi live.
 
 ## <a name="make-sure-your-networks-ready"></a>Assicurarsi che la rete sia pronta
 
