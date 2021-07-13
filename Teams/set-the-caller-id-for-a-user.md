@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sul numero Microsoft 365 e Office 365 l'ID chiamante predefinito (il numero di telefono assegnato dall'utente), noto anche come ID linea chiamante. È possibile modificare o bloccare l'ID chiamante di un utente.
-ms.openlocfilehash: 20b80bbc96f46d6b1a2766eea367132b9e0b1418
-ms.sourcegitcommit: b39bd1de0219a9e3a3b0c97fc485c9578ddb643c
+ms.openlocfilehash: 2e94dde2c3271e2b31e4c679c5e020c121d28c25
+ms.sourcegitcommit: 41e2e97b5856e727e42ebf5bfebceede9af56481
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230603"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "53388651"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 
@@ -35,11 +35,11 @@ Sistema telefonico in Microsoft 365 fornisce un ID chiamante predefinito che è 
   
 Per impostazione predefinita, le impostazioni dell'ID chiamante seguenti **sono disattivate.** Questo significa che il Teams di telefono dell'utente può essere visualizzato quando l'utente effettua una chiamata a un telefono PSTN. È possibile modificare queste impostazioni nel modo seguente:
   
-- **ID chiamante in uscita** È possibile sostituire l'ID chiamante di un utente, che per impostazione predefinita è il numero di telefono, con un altro numero di telefono. Per esempio, è possibile cambiare l'ID chiamante dell'utente dal suo numero di telefono a un numero principale usato dall'azienda o cambiare l'ID linea chiamante dal suo numero di telefono al numero principale dell'ufficio legale. È possibile modificare il numero id chiamata in qualsiasi numero di servizio online (numero a pagamento o numero verde). È anche possibile modificare il numero di ID chiamata in un numero di telefono locale tramite Instradamento diretto assegnato a un account della risorsa usato da un Operatore automatico o coda di chiamata.
+- **ID chiamante in uscita** È possibile sostituire l'ID chiamante di un utente, che per impostazione predefinita è il numero di telefono, con un altro numero di telefono. Ad esempio, è possibile modificare l'ID chiamante dell'utente dal suo numero di telefono a un numero di telefono principale per l'azienda o a un numero di telefono principale per il reparto legale. Inoltre, è possibile impostare il numero ID chiamata su qualsiasi numero di servizio online (a pagamento o numero verde) o su un numero di telefono locale tramite Instradamento diretto assegnato a un account della risorsa usato da un Operatore automatico o da una coda di chiamata.
     
   > [!NOTE]
   > Se si vuole usare il parametro *Service,* è necessario specificare un numero di servizio valido.
-  > Se non è visibile nell'elenco a discesa, è necessario usare i cmdlet di PowerShell per il numero di account delle risorse.
+  > È necessario usare i cmdlet di PowerShell New-CsCallingLineIdentity o Set-CsCallingLineIdentity nel modulo di PowerShell di Teams 2.3.1 o versione successiva per il numero di account della risorsa, se non è visibile nell'elenco a discesa.
   
 - **Bloccare l'ID chiamante in uscita.** È possibile bloccare l'invio dell'ID chiamante in uscita nelle chiamate PSTN in uscita di un utente. In questo modo il suo numero non verrà visualizzato sul telefono di una persona che chiama.
     
@@ -90,7 +90,7 @@ Connect-MicrosoftTeams -Credential $credential
 3. Applicare il nuovo criterio creato usando il cmdlet Grant-CsCallingIdentity. Ad esempio, l'esempio seguente applica il nuovo criterio all'utente Amos Marble.
     
      ```PowerShell
-      Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName Anonymous
+     Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName Anonymous
      ```
    Per altre informazioni, vedere [Cmdlet Grant-CsCallingLineIdentity.](/powershell/module/skype/Grant-CsCallingLineIdentity)
     
