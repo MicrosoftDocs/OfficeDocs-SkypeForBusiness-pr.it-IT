@@ -1,5 +1,5 @@
 ---
-title: Spostare gli endpoint dell'applicazione ibrida nel cloud
+title: Eseguire la migrazione degli endpoint dell'applicazione ibrida nel cloud
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -16,15 +16,15 @@ ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
-description: Spostare gli endpoint dell'applicazione hyrid prima di rimuovere le autorizzazioni Skype for Business'ambiente locale.
-ms.openlocfilehash: 959a3ed47993f431636fe3c99b8502cf9aa634fe
-ms.sourcegitcommit: 36924dc54fe7b09607b07d7543fe7e39eb4d2483
+description: Eseguire la migrazione degli endpoint dell'applicazione hyrid prima di rimuovere le autorizzazioni Skype for Business'ambiente locale.
+ms.openlocfilehash: 7315ee807bb79b9186cd92ccc19074021b2fcfa1
+ms.sourcegitcommit: f39484688800a3d22f361e660d0eeba974a44fb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684383"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53420801"
 ---
-# <a name="move-hybrid-application-endpoints-before-decommissioning-your-on-premises-environment"></a>Spostare gli endpoint dell'applicazione ibrida prima di rimuovere le autorizzazioni dell'ambiente locale
+# <a name="migrate-hybrid-application-endpoints-before-decommissioning-your-on-premises-environment"></a>Eseguire la migrazione degli endpoint dell'applicazione ibrida prima di rimuovere le autorizzazioni dell'ambiente locale
 
 In questo articolo viene descritto come spostare gli endpoint dell'applicazione ibrida necessari nel cloud Microsoft prima di rimuovere le autorizzazioni dell'ambiente Skype for Business locale. Questo è il passaggio 3 della procedura seguente per rimuovere le autorizzazioni dell'ambiente locale:
 
@@ -32,14 +32,14 @@ In questo articolo viene descritto come spostare gli endpoint dell'applicazione 
 
 - Passaggio 2. [Disabilitare la configurazione ibrida](cloud-consolidation-disabling-hybrid.md).
 
-- **Passaggio 3. Spostare gli endpoint dell'applicazione ibrida da locale a online.** (Questo articolo)
+- **Passaggio 3. Eseguire la migrazione degli endpoint dell'applicazione ibrida da locale a online.** (Questo articolo)
 
 - Passaggio 4. [Rimuovere la distribuzione locale Skype for Business .](decommission-remove-on-prem.md)
 
 
-## <a name="move-all-required-hybrid-application-endpoints-from-on-premises-to-online"></a>Spostare tutti gli endpoint dell'applicazione ibrida necessari da locale a online
+## <a name="migrate-all-required-hybrid-application-endpoints-from-on-premises-to-online"></a>Eseguire la migrazione di tutti gli endpoint dell'applicazione ibrida necessari da locale a online
 
-Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di aver aggiornato i record DNS in modo che puntino a Microsoft 365 per tutti i domini sip utilizzati dagli endpoint. Non è possibile creare account di risorse online se i record DNS puntano a locali. Per ulteriori informazioni, vedere [Disable your hybrid configuration](cloud-consolidation-disabling-hybrid.md).
+Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di aver aggiornato i record DNS in modo che puntino a Microsoft 365 per tutti i domini sip utilizzati dagli endpoint. Tenere presente che una volta aggiornato IL DNS in modo che punti a Microsoft 365, tutti gli endpoint dell'applicazione ibrida esistenti non saranno più individuabili fino al completamento di questo passaggio. Poiché questo passaggio (creazione di account delle risorse online) non è possibile se i record DNS puntano a locali, è consigliabile pianificare entrambi i passaggi 2 e 3 nella stessa finestra di manutenzione. Per ulteriori informazioni, vedere [Disable your hybrid configuration](cloud-consolidation-disabling-hybrid.md).
 
 1. Recuperare ed esportare le impostazioni degli endpoint dell'applicazione ibrida locale eseguendo il comando di PowerShell Skype for Business Server locale seguente:
 
