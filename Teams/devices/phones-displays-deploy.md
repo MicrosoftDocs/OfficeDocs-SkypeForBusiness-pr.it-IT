@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo fornisce una panoramica delle funzionalità supportate Microsoft Teams display.
-ms.openlocfilehash: 178f8c594f8953c56a2d354806e86f4a19de028f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ee5b536aaadaf458b6edf9b32dea299a3ecad9a0
+ms.sourcegitcommit: f39484688800a3d22f361e660d0eeba974a44fb1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120778"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53420821"
 ---
 # <a name="deploy-teams-phones-and-teams-displays-using-intune"></a>Distribuire Teams telefoni e Teams display usando Intune
 
-Questo articolo offre una panoramica su come distribuire Teams telefoni e Teams display con Intune.
+Questo articolo offre una panoramica su come eseguire la distribuzione. Teams telefoni e Teams tramite Intune.
 
 ## <a name="conditional-access"></a>Accesso condizionale
 
@@ -35,17 +35,33 @@ In genere, i criteri di conformità definiti in Intune vengono assegnati a grupp
 
 Se si usa l'accesso condizionale, che richiede l'applicazione della registrazione di Intune, nell'organizzazione è necessario configurare un paio di elementi per consentire la corretta registrazione di Intune:
 
-- **Licenza di Intune** L'utente che accede al Teams deve avere una licenza per Intune.  Purché il dispositivo Teams sia connesso a un account utente con una licenza intune valida, il dispositivo verrà registrato automaticamente in Microsoft Intune come parte del processo di accesso.
+- **Licenza di Intune** L'utente che accede al Teams deve avere una licenza per Intune.  Finché il dispositivo Teams è connesso a un account utente con una licenza intune valida, il dispositivo verrà registrato automaticamente in Microsoft Intune come parte del processo di accesso.
 - **Configurare Intune** È necessario avere configurato correttamente un tenant di Intune per la registrazione dell'amministratore di dispositivi Android.
 
 ## <a name="configure-intune-to-enroll-teams-android-based-devices"></a>Configurare Intune per la registrazione Teams dispositivi basati su Android
 
 Teams I dispositivi basati su Android sono gestiti da Intune tramite la gestione di Android Device Administrator (DA). Prima che i dispositivi possano essere registrati in Intune, è necessario eseguire alcuni passaggi di base.  Se si stanno già gestendo i dispositivi con Intune oggi, è probabile che siano già state eseguite tutte queste operazioni.  In caso contrario, ecco cosa fare:
 
-1. Impostare Intune MDM (gestione di dispositivi mobili) Authority.  Se intune non è mai stato usato in precedenza, è necessario impostare l'autorità MDM prima di poter registrare i dispositivi. Per altre informazioni, vedere [Impostare l'autorità di gestione dei dispositivi mobili.](/intune/fundamentals/mdm-authority-set)  Si tratta di un passaggio di una sola volta che deve essere eseguito quando si crea un nuovo tenant di Intune.
-2. Abilitare la registrazione dell'amministratore di dispositivi Android. I dispositivi Teams basati su Android vengono gestiti come dispositivi di amministratore di dispositivi con Intune.  La registrazione dell'amministratore del dispositivo è disattivata per impostazione predefinita per i tenant appena creati.  Per altre informazioni, vedere Registrazione [dell'amministratore di dispositivi Android](/intune/enrollment/android-enroll-device-administrator).
-3. Assegnare licenze agli utenti. Agli utenti Teams dispositivi di registrazione a Intune deve essere assegnata una licenza intune valida. Per altre informazioni, vedere Assegnare licenze agli utenti in modo [che possano registrare i dispositivi in Intune.](/intune/fundamentals/licenses-assign)
-4. Assegnare i criteri di conformità dell'amministratore di dispositivo.  Creare criteri di conformità di Amministratore dispositivi Android e assegnarli al gruppo di Azure Active Directory che contiene gli utenti che accederanno ai Teams dispositivi. Per altre informazioni, vedere [Usare i criteri di conformità per impostare regole per i dispositivi gestiti con Intune.](/mem/intune/protect/device-compliance-get-started)
+> [!NOTE]
+> - Se gli amministratori del tenant vogliono che i telefoni di area comune siano registrati in Intune, devono aggiungere una licenza di Intune all'account e seguire i passaggi per la registrazione di Intune.
+> - Se l'account utente usato per accedere a un dispositivo Teams non è concesso in licenza per Intune, i criteri di conformità di Intune e le restrizioni di registrazione devono essere disabilitati per l'account.
+
+
+
+1. Impostare Intune MDM (gestione di dispositivi mobili) Authority.  
+
+   Se intune non è mai stato usato in precedenza, è necessario impostare l'autorità MDM prima di poter registrare i dispositivi. Per altre informazioni, vedere [Impostare l'autorità di gestione dei dispositivi mobili.](/intune/fundamentals/mdm-authority-set)  Si tratta di un passaggio di una sola volta che deve essere eseguito quando si crea un nuovo tenant di Intune.
+1. Abilitare la registrazione dell'amministratore di dispositivi Android.
+  
+   I dispositivi Teams basati su Android vengono gestiti come dispositivi di amministratore di dispositivi con Intune.  La registrazione dell'amministratore del dispositivo è disattivata per impostazione predefinita per i tenant appena creati. Vedere [Registrazione dell'amministratore di dispositivi Android](/intune/enrollment/android-enroll-device-administrator).
+1. Assegnare licenze agli utenti. 
+ 
+   Agli utenti Teams dispositivi di registrazione a Intune deve essere assegnata una licenza intune valida. Per altre informazioni, vedere Assegnare licenze agli utenti in modo [che possano registrare i dispositivi in Intune.](/intune/fundamentals/licenses-assign)
+1. Assegnare i criteri di conformità dell'amministratore di dispositivo.  
+
+   a. Creare criteri di conformità per l'amministratore di dispositivi Android.
+
+   b. Assegnarlo al gruppo Azure Active Directory che contiene gli utenti che accederanno ai Teams dispositivi. Vedere [Usare i criteri di conformità per impostare regole per i dispositivi gestiti con Intune.](/mem/intune/protect/device-compliance-get-started)
 
 ## <a name="see-also"></a>Vedere anche
 
