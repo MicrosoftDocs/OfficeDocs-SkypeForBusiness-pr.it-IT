@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: b3a17343b21f0dcb35ba2f2d6bb99178bdafffd0
-ms.sourcegitcommit: f39484688800a3d22f361e660d0eeba974a44fb1
+ms.openlocfilehash: a8dbcddbbc7b0717678f56a2876b617d06f49187
+ms.sourcegitcommit: ede53639ac782eb51d7560fc41fb01ec6979dfd9
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420851"
+ms.locfileid: "53428202"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -111,6 +111,9 @@ I client seguenti sono supportati quando si usa un canale Teams per le code di c
 
   - Microsoft Teams Windows client
   - Client Microsoft Teams Mac
+
+> [!NOTE]
+> Se si usa questa opzione, la piena operatività della coda di chiamata può richiedere fino a 24 ore.
 
 ##### <a name="users-and-groups"></a>Utenti e gruppi
 
