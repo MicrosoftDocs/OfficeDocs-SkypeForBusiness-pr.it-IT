@@ -26,8 +26,14 @@
           href: ../hybrid/decommission-on-prem-overview.md
         - name: Spostare gli utenti nel cloud
           href: ../hybrid/decommission-move-on-prem-users.md
-        - name: Disabilitare la soluzione ibrida per completare la migrazione al cloud
-          href: ../hybrid/cloud-consolidation-disabling-hybrid.md
+        - name: Disabilitare la soluzione ibrida per completare la migrazione a solo Team
+          items:
+            - name: Disabilitare la soluzione ibrida per completare la migrazione a solo Team
+              href: ../hybrid/cloud-consolidation-disabling-hybrid.md
+            - name: Aggiornare le voci DNS
+              href: ../hybrid/decommission-manage-dns-entries.md
+            - name: Decidere come gestire gli attributi dopo la rimozione delle autorizzazioni
+              href: ../hybrid/cloud-consolidation-managing-attributes.md
         - name: Spostare gli endpoint applicazione nel cloud
           href: ../hybrid/decommission-move-on-prem-endpoints.md
         - name: Rimuovere la distribuzione locale di Skype for Business
