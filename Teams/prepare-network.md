@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 0bde5b2fac365369fea385a325cbd1d0d05cca07
-ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
+ms.openlocfilehash: db911db3631caebb0e767401f80c36bdac6c9c1b
+ms.sourcegitcommit: f39484688800a3d22f361e660d0eeba974a44fb1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899087"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "53420831"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -32,12 +32,7 @@ ms.locfileid: "51899087"
 
 Se la rete è già [ottimizzata per Microsoft 365 o Office 365](/Office365/Enterprise/assessing-network-connectivity), è probabile che sia pronta per Microsoft Teams. In ogni caso, e soprattutto se stai implementando rapidamente Teams come primo carico di lavoro di Microsoft 365 o Office 365 per supportare i **lavoratori remoti**, verifica quanto segue prima di iniziare a implementare Microsoft Teams:
 
-1.  Le sedi della tua organizzazione hanno accesso a Internet (in modo che possano connettersi a Microsoft 365 o Office 365)? Oltre al normale traffico Web, è necessario assicurarsi di aver consentito l’accesso a tutte le sedi e ai supporti in Teams di quanto segue:
-
-    |  |  |
-    |---------|---------|
-    |Porte     |Porte UDP da <strong>3478</strong> a <strong>3481</strong>        |
-    |[Indirizzi IP](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams) |<strong>13.107.64.0/18</strong>, <strong>52.112.0.0/14</strong> e <strong>52.120.0.0/14</strong>         |
+1.  Le sedi della tua organizzazione hanno accesso a Internet (in modo che possano connettersi a Microsoft 365 o Office 365)? Oltre al normale traffico Web, verifica di aver aperto le porte TCP e gli indirizzi IP elencati per Teams negli [gli URL e gli intervalli di indirizzi IP di Office 365](/office365/enterprise/urls-and-ip-address-ranges#skype-for-business-online-and-microsoft-teams).
 
     > [!IMPORTANT]
     > Se è necessario attuare la federazione con Skype for Business, sia locale che online, è necessario configurare un record DNS aggiuntivo.
@@ -149,10 +144,173 @@ Per informazioni dettagliate sull’ottimizzazione della rete, incluse indicazio
 
 Microsoft Teams è progettato per offrire esperienze audio, video e di condivisione contenuti eccezionali, a prescindere dalle condizioni di rete. Tuttavia, se la larghezza di banda è insufficiente, Microsoft Teams assegna la priorità alla qualità audio sulla qualità video.
 
-Se la larghezza di banda *non è* limitata, Microsoft Teams ottimizza la qualità multimediale, inclusa una risoluzione video massima di 1080p, fino a 30fps per il video e 15fps per il contenuto e l'audio ad alta fedeltà. 
+Se la larghezza di banda non è limitata, Microsoft Teams ottimizza la qualità multimediale, audio di alta fedeltà, inclusa una risoluzione video massima di 1080p, fino a 30fps (fotogrammi al secondo) per video e contenuto.
 
-[!INCLUDE [bandwidth-requirements](includes/bandwidth-requirements.md)]
+Questa tabella descrive le modalità di utilizzo della larghezza di banda da parte di Teams. Teams fa un utilizzo moderato della larghezza di banda ed è in grado di garantire una qualità video ad alta definizione in meno di 1,5 Mbps. Il consumo effettivo della larghezza di banda in ogni chiamata audio/video o riunione varia in base a diversi fattori, ad esempio il layout video, la risoluzione video e i fotogrammi video al secondo. Quando sarà disponibile una maggiore larghezza di banda, la qualità e l'utilizzo aumenteranno per offrire la migliore esperienza.
 
+:::row:::
+   :::column span="":::
+      **Modalità**
+   :::column-end:::
+   :::column span="3":::
+      **Requisiti di larghezza di banda (bitrate KB/s su/giù)**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+   :::column-end:::
+   :::column span="":::
+      **Minimo**
+   :::column-end:::
+   :::column span="":::
+      **Consigliata**
+   :::column-end:::
+   :::column span="":::
+      **Prestazioni ottimali**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      **Audio**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Uno a uno
+   :::column-end:::
+   :::column span="":::
+        10/10
+   :::column-end:::
+   :::column span="":::
+        58/58
+   :::column-end:::
+   :::column span="":::
+        76/76
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Riunioni
+   :::column-end:::
+   :::column span="":::
+        10/10
+   :::column-end:::
+   :::column span="":::
+        58/58
+   :::column-end:::
+   :::column span="":::
+        76/76
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      **Video**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Uno a uno
+   :::column-end:::
+   :::column span="":::
+        150/150
+   :::column-end:::
+   :::column span="":::
+        1,500/1,500
+   :::column-end:::
+   :::column span="":::
+        4,000/4,000
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Riunioni
+   :::column-end:::
+   :::column span="":::
+        150/200
+   :::column-end:::
+   :::column span="":::
+        2,500/4,000
+   :::column-end:::
+   :::column span="":::
+        4,000/4,000
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      **Condivisione dello schermo.**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Uno a uno
+   :::column-end:::
+   :::column span="":::
+        200/200
+   :::column-end:::
+   :::column span="":::
+        1,500/1,500
+   :::column-end:::
+   :::column span="":::
+        4,000/4,000
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Riunioni
+   :::column-end:::
+   :::column span="":::
+        250/250
+   :::column-end:::
+   :::column span="":::
+        2,500/2,500
+   :::column-end:::
+   :::column span="":::
+        4,000/4,000
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="4":::
+      **Modalità Insieme**
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Uno a uno
+   :::column-end:::
+   :::column span="":::
+        N/D
+   :::column-end:::
+   :::column span="":::
+        N/D
+   :::column-end:::
+   :::column span="":::
+        N/D
+   :::column-end:::
+:::row-end:::
+:::row:::
+   :::column span="":::
+        Riunioni
+   :::column-end:::
+   :::column span="":::
+        1,000/1,500
+   :::column-end:::
+   :::column span="":::
+        1,500/2,500
+   :::column-end:::
+   :::column span="":::
+        2,500/4,000
+   :::column-end:::
+:::row-end:::
+
+I requisiti **minimi**, **consigliati** e **le prestazioni migliori** della larghezza di banda sono basati sull'utilizzo per endpoint. In genere, è presente un endpoint per utente, come un computer o un dispositivo mobile. Tuttavia, se un utente partecipa a una riunione di Teams in *sia* un computer *che* un dispositivo mobile, a tale utente vengono associati due endpoint.
+
+- I requisiti **minimi** della larghezza di banda per le videochiamate sono fino a una risoluzione di 240p, la frequenza dei fotogrammi del contenuto di condivisione dello schermo adattiva da 1,875 a 7,5 fps e i video in modalità Insieme/Raccolta grande fino a una risoluzione di 540p.  
+
+- I requisiti **consigliati** per la larghezza di banda per le videochiamate sono fino a 1080p di risoluzione<sup>\*</sup>, frequenza dei fotogrammi del contenuto di condivisione dello schermo adattivi da 7,5 a 30 fps e video in modalità Insieme/Raccolta grande fino a una risoluzione di 1080p<sup>\*</sup>.  
+
+- **Prestazioni ottimali** Guidance consente una maggiore fedeltà di video per riunioni con partecipanti di grandi dimensioni, ambienti con perdita elevata e contenuti di movimento più elevati con frequenze dei fotogrammi del contenuto di condivisione dello schermo adattive da 15 a 30 fps.
+
+<sup>\*</sup>È prevista una qualità fino a 1080p, ma a seconda delle condizioni della rete, la risoluzione e la qualità del video verranno ottimizzate di conseguenza.  
 
 ## <a name="related-topics"></a>Argomenti correlati
 

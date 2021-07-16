@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8803219c93a66d7094ce6ca1aa635f1fbff8580e
-ms.sourcegitcommit: b39bd1de0219a9e3a3b0c97fc485c9578ddb643c
+ms.openlocfilehash: 946847793ea90e549a555cd9d100cd1ae2809fa3
+ms.sourcegitcommit: f3e9989cbcc2f9f83ff94204bdd75b1e6ad43b5e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "53230553"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "53408755"
 ---
 # <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 
@@ -69,7 +69,7 @@ Gli utenti devono essere abilitati all'iscrizione per app e versioni di valutazi
 
 Gli utenti non soddisfano i criteri se:
 
-- al momento o in precedenza disponevano di Teams con una licenza a pagamento, non pagata o di prova
+- Attualmente disponi di Teams da una licenza a pagamento o una licenza di valutazione oppure in precedenza disponevi di una licenza di valutazione
 - si trovano in un tenant che usava/riceveva almeno un'offerta speciale COVID.
 
 L'organizzazione non è idonea per questa offerta se è un Syndication Partner Customer oppure un cliente GCC, GCC High, DoD o EDU.

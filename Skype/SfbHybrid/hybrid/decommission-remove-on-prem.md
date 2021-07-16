@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni per la rimozione delle autorizzazioni Skype for Business Server.
-ms.openlocfilehash: a69ba2d9a3bbdce8bee342c3554b758138ad1d87
-ms.sourcegitcommit: f39484688800a3d22f361e660d0eeba974a44fb1
+ms.openlocfilehash: e96c4cd37d09fc62fbfbe34a8b8d61c79ea08289
+ms.sourcegitcommit: 405b22cfd94e50d651f4c3f73fb46780cd8a6d06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420791"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454339"
 ---
 # <a name="remove-your-on-premises-skype-for-business-deployment"></a>Rimuovere la distribuzione locale di Skype for Business
 
@@ -38,7 +38,7 @@ In questo articolo viene descritto come rimuovere la distribuzione locale Skype 
 
 
 > [!IMPORTANT] 
-> La procedura descritta in questo articolo si applica solo se si utilizza il metodo 2 per la gestione degli attributi utente, come descritto [qui.](cloud-consolidation-disabling-hybrid.md#method-2---clear-skype-for-business-attributes-for-all-on-premises-users-in-active-directory) Se si utilizza il metodo 1, non eseguire la procedura descritta in questo articolo per rimuovere i Skype for Business server. Al contrario, è possibile ri-immagine dei server.
+> La procedura descritta in questo articolo si applica solo se si utilizza il metodo 2 per la gestione degli attributi utente, come descritto [qui.](cloud-consolidation-managing-attributes.md#method-2---clear-skype-for-business-attributes-for-all-on-premises-users-in-active-directory) Se si utilizza il metodo 1, non eseguire la procedura descritta in questo articolo per rimuovere i Skype for Business server. Al contrario, è possibile ri-immagine dei server.
 
 Per completare i passaggi descritti in questo articolo, sono necessari privilegi sia per il gruppo Schema Admins che per il Enterprise Admin. Questi privilegi sono necessari per annullare le modifiche Skype for Business Server schema e a livello di foresta in Servizi di dominio Active Directory. Sarà inoltre necessario essere membri del gruppo RTCUniversalServerAdmins.
 
