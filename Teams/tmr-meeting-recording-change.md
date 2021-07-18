@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cfbff25ff4f241b18baa6b313977c687c73c8262
-ms.sourcegitcommit: b7da2655607a17cde9537ed9e00db29b4c1a68df
+ms.openlocfilehash: cd4d8b4136639a057250bf72aa969e13f8619e1d
+ms.sourcegitcommit: 405b22cfd94e50d651f4c3f73fb46780cd8a6d06
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "53219123"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "53454349"
 ---
 # <a name="use-onedrive-for-business-and-sharepoint-or-stream-for-meeting-recordings"></a>Usare OneDrive for Business e SharePoint o Stream per le registrazioni delle riunioni
 
@@ -161,9 +161,9 @@ I sottotitoli codificati Teams registrazioni delle riunioni saranno disponibili 
 
 I sottotitoli consentono di creare contenuti inclusivi per gli utenti di tutte le abilità. I proprietari possono nascondere le didascalie nella registrazione della riunione, anche se la trascrizione della riunione sarà ancora disponibile Teams a meno che non venga eliminato. 
 
-I sottotitoli codificati sono supportati Teams registrazioni delle riunioni per 60 giorni dalla registrazione della riunione.
+Oggi i sottotitoli codificati per il file video di registrazione sono collegati alla trascrizione Teams riunione. Questo collegamento rimarrà per tutta la durata del file nella maggior parte dei casi, ma a volte può essere interrotto, ad esempio se il file video viene copiato all'interno dello stesso sito di OneDrive o SharePoint, con il risultato che le didascalie non sono disponibili nel nuovo file video di registrazione.
 
-I sottotitoli codificati non sono completamente supportati se la registrazione Teams riunione viene spostata o copiata dalla posizione originale in OneDrive for Business o SharePoint.
+Eventuali modifiche future verranno chiarite qui e nelle notifiche del centro messaggi e garantiranno che la registrazione di file meno di 60 giorni fa visualizza la trascrizione della riunione come didascalie durante qualsiasi periodo di migrazione.
 
 > [!NOTE]
 > Ci saranno sottotitoli codificati solo in inglese (la trascrizione della riunione non è ancora disponibile in GCC).
