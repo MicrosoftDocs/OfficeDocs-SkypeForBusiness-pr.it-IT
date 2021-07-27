@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b6ad3c5062a96a4becff32136c551a3247aa660f
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 949c3189b80e9843b4b256f8d3f65cc3b52e2d1a
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282584"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53586975"
 ---
 # <a name="define-your-project-scope"></a>Definire l'ambito del progetto
 
@@ -37,7 +37,7 @@ Questo articolo fa parte della fase di definizione Project del percorso di aggio
 
 Il tempo necessario per definire la visione, l'ambito, gli obiettivi e la governance del progetto aiuterà a garantire che tutti gli stakeholder del progetto siano allineati e che lavorino verso gli stessi risultati finali. Questo è particolarmente importante dato che il team di preparazione tecnica e il team di preparazione degli utenti stanno lavorando in modo indipendente per riunire le rispettive parti. Dopo aver completato questa sezione, fare riferimento a questa sezione in tutto il progetto per assicurarsi di essere sulla strada giusta per raggiungere lo stato finale desiderato. Usare gli obiettivi individuati di seguito per misurare i risultati e attenuare in base alle esigenze.
 
-| | |
+| &nbsp;| &nbsp;|
 |---|---|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Cosa si vuole realizzare con questo progetto(in altre parole, perché lo si sta facendo)?</li><li>Che aspetto ha il successo?</li><li>Quali sono i rischi e qual è il piano per attenuare tali rischi?</li></ul> |
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Discutere le sezioni seguenti con il team di progetto e gli sponsor.</li><li>Documentare la visione, l'ambito, gli obiettivi e i rischi per questo progetto.</li><li>Rivisitare il team di progetto per verificare di aver coinvolto il team giusto.</li></ul>|

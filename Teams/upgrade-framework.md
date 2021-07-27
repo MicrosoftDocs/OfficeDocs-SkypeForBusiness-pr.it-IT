@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 78215457177689b549112a19a9477fdd01c91de2
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: d0184198d7e419642a582f8642b312238900f1f8
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282513"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53586995"
 ---
 # <a name="about-the-upgrade-framework"></a>Informazioni sul framework di aggiornamento
 
@@ -55,7 +55,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 ### <a name="plan-create-your-upgrade-plan-to-help-ensure-your-organization-is-set-up-for-long-term-success"></a>Piano: creare il piano di aggiornamento per assicurarsi che l'organizzazione sia impostata per il successo a lungo termine
 
-| Passaggio |  | Riepilogo | Risorsa |
+| Passaggio |&nbsp;| Riepilogo | Risorsa |
 |------|--|---------|----------|
 | **1** | **Definire gli stakeholder** | Assegnare ai membri del team di progetto la gestione del successo dell'aggiornamento. | [Integrare gli stakeholder](upgrade-enlist-stakeholders.md) |
 | **2** | **Definire la visione e l'ambito del progetto** | Progettare la visione "generale" e l'ambito del progetto corrente per creare un blueprint per il percorso di aggiornamento. | [Project visione](upgrade-define-project-scope.md#project-vision) <br> <br>[Project ambito](upgrade-define-project-scope.md#project-scope) |
@@ -67,7 +67,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 ### <a name="prepare-evaluate-your-organizations-readiness-for-teams"></a>Preparare: valutare la conformità dell'organizzazione per Teams
 
-| Passaggio |  | Riepilogo | Risorsa |
+| Passaggio |&nbsp;  | Riepilogo | Risorsa |
 |------|--|---------|----------|
 | **1** | **Valutare l'ambiente e completare Teams onboarding tecnico** | Assicurarsi che l'ambiente sia pronto per Teams per ottimizzare l'esperienza utente e facilitare l'aggiornamento nel tempo. | [Valutare l'ambiente prima di eseguire l'aggiornamento a Teams](upgrade-plan-journey-evaluate-environment.md).<br><br> [Preparare il servizio per l'aggiornamento a Teams](upgrade-prepare-environment-prepare-service.md) |
 | **2** | **Ottimizzare la rete per Teams, in particolare per gli scenari multimediali in tempo reale** | Se si distribuiscono audio, video o riunioni, eseguire questi passaggi aggiuntivi per ottimizzare la rete per tale funzionalità. | [Preparare la rete per l'aggiornamento a Teams](prepare-network.md) |
@@ -78,7 +78,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 ### <a name="pilot-run-a-pilot-to-confirm-that-your-organization-is-ready-and-inform-your-optimal-journey-to-teams"></a>Pilota: eseguire un progetto pilota per verificare che l'organizzazione sia pronta e informare il percorso ottimale verso Teams
 
-| Passaggio |  | Riepilogo | Risorsa |
+| Passaggio | &nbsp; | Riepilogo | Risorsa |
 |------|--|---------|----------|
 | **1** | **Strutturare la logistica pilota** | Definire la logistica pilota formale per convalidare la conformità dell'organizzazione all'aggiornamento o alla coesistenza. | [Strutturare la logistica pilota](pilot-essentials.md#1-outline-pilot-logistics) |
 | **2** | **Selezionare i partecipanti pilota e gli scenari di test** | Identificare gli utenti che possono convalidare gli scenari di lavoro in team e verificare Teams conformità. | [Selezionare i partecipanti pilota e gli scenari di test](pilot-essentials.md#2-select-your-pilot-participants-and-test-scenarios) |
@@ -89,7 +89,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 ### <a name="deploy-run-teams-in-coexistence-with-skype-for-business"></a>Distribuire: eseguire Teams in coesistenza con Skype for Business
 
-| Passaggio |  | Riepilogo | Risorsa |
+| Passaggio |&nbsp;  | Riepilogo | Risorsa |
 |------|--|---------|----------|
 | **1** | **Annunciare il lancio ufficiale di Teams** | Genera entusiasmo e entusiasmo inviando un annuncio di lancio ufficiale quando Teams è pronto. | [Kit di successo dell'aggiornamento](https://aka.ms/UpgradeSuccessKit) |
 | **2** | **Implementare l'aggiornamento** | I passaggi da eseguire dipendono dalla distribuzione corrente di Skype for Business. | [Implementare l'aggiornamento](upgrade-to-teams.md) |
@@ -102,7 +102,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 ### <a name="upgrade-implement-your-upgrade-from-skype-for-business-to-teams"></a>Aggiornamento: implementare l'aggiornamento da Skype for Business a Teams
 
-| Passaggio |  | Riepilogo | Risorsa |
+| Passaggio |&nbsp;  | Riepilogo | Risorsa |
 |------|--|---------|----------|
 | **1** | **Verificare di aver completato le attività pre-aggiornamento descritte in precedenza** | Consente di garantire il successo dell'aggiornamento confermando il completamento di tutte le attività di pianificazione e preparazione. | Tutte le informazioni precedenti |
 | **2** | **Avviare le comunicazioni con gli utenti del primo gruppo di aggiornamento** | Informare gli utenti dell'avvio degli aggiornamenti e tenerli informati durante l'intero processo. | [Preparare un piano di idoneità degli utenti](upgrade-user-readiness.md) <br><br> [Kit di successo dell'aggiornamento](https://aka.ms/UpgradeSuccessKit) |
@@ -116,7 +116,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 ### <a name="operate-measure-the-success-of-your-upgrade"></a>Operare: misurare il successo dell'aggiornamento
 
-| Passaggio |  | Riepilogo | Risorsa |
+| Passaggio | &nbsp; | Riepilogo | Risorsa |
 |------|--|---------|----------|
 | **1** | **Valutare il successo dell'aggiornamento iniziale** | Valutare lo stato di avanzamento rispetto a quello stabilito nella fase pre-aggiornamento. | [Project obiettivi](upgrade-define-project-scope.md#project-goals) |
 | **2** | **Implementare un piano di attenuazione per gli obiettivi non in tempo** | Definire strategie di attenuazione o correzione del corso per gli obiettivi che non vengono raggiunti. | [Project obiettivi](upgrade-define-project-scope.md#project-goals) |

@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: d927c601380223b3381a65e09549a632ed32903e
-ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
+ms.openlocfilehash: 80e0f7edb581b5c9089a1d79feece5a6877f1e2f
+ms.sourcegitcommit: 330b5c3e299ddad5168958e4722d1e0b987372e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51598535"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53536832"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -72,10 +72,7 @@ I guest possono abbandonare il team in qualsiasi momento tramite Teams. Per i de
 
 ## <a name="licensing-for-guest-access"></a>Licenze per l'accesso guest
 
-L'accesso guest è incluso in tutti gli abbonamenti di Microsoft 365 Business Standard, Microsoft 365 Enterprise e Microsoft 365 Education. Non sono necessarie altre licenze di Microsoft 365. Teams non impone un numero limite di utenti guest che è possibile aggiungere. Tuttavia, il numero totale di guest che possono essere aggiunti al tenant possono essere limitati dalle funzionalità a pagamento di Azure AD. Per altre informazioni, vedere [Modello di fatturazione per Azure Active Directory per identità esterne](/azure/active-directory/b2b/licensing-guidance).
-
-> [!NOTE]
-> Gli utenti dell'organizzazione che hanno solo piani di abbonamento a Microsoft 365 autonomi, ad esempio Exchange Online piano 2, non possono essere invitati come utenti guest nell'organizzazione perché Teams li considera come appartenenti alla stessa organizzazione. Affinché questi utenti possano usare Teams, è necessario assegnare loro un abbonamento a Microsoft 365 Business Standard, Office 365 Enterprise o Office 365 Education. 
+L'accesso guest può essere usato in tutti gli abbonamenti di Microsoft 365 Business Standard, Microsoft 365 Enterprise e Microsoft 365 Education. Non sono necessarie altre licenze di Microsoft 365. Il [modello di fatturazione per Azure AD per identità esterne](/azure/active-directory/b2b/licensing-guidance) si applica agli utenti guest in Microsoft 365. Solo le persone esterne all'organizzazione possono essere invitate come utenti guest.
 
 ## <a name="guest-access-reviews"></a>Verifiche di accesso per gli utenti guest
 

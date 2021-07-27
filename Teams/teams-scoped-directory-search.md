@@ -19,12 +19,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1048b6451163cd7b0cdbcd3f52e48c6b0f4811d1
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: df03c4d59b55780f38b5f99983a11fd5dc905e40
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52717797"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587015"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
 
@@ -35,7 +35,7 @@ Microsoft Teams consente alle organizzazioni di fornire visualizzazioni personal
 > [!NOTE]
 > In Exchange ibridi, questa caratteristica funziona solo con le cassette postali Exchange Online e non con le cassette postali locali.
 
-Vedere anche [Criteri della Rubrica in Exchange Online](https://docs.microsoft.com/exchange/address-books/address-book-policies/address-book-policies).
+Vedere anche [Criteri della Rubrica in Exchange Online](/exchange/address-books/address-book-policies/address-book-policies).
 
 ## <a name="when-should-you-use-scoped-directory-searches"></a>Quando usare le ricerche nella directory con ambito?
 

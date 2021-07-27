@@ -18,14 +18,16 @@ ms.collection:
 - Adm_Skype4B_Online
 description: Pianificare l'implementazione della connettività ibrida tra Skype for Business Server e Teams o Skype for Business Online configurando la Skype for Business ibrida.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 277e592df24a03f50d09ebca21bad0211e6c8c57
-ms.sourcegitcommit: e19fdedca6573110d08c7d114e05b84779e36b58
+ms.openlocfilehash: d8f1468d4278c905779a5cbb31e98bd4d0ffa6a4
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53437653"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53509827"
 ---
 # <a name="plan-hybrid-connectivity-between-skype-for-business-server-and-teams"></a>Pianificare la connettività ibrida tra Skype for Business Server e Teams
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 Leggere questo argomento per informazioni su come pianificare la connettività ibrida tra Skype for Business Server e Teams (o Skype for Business Online fino al 31 luglio 2021). La configurazione della connettività ibrida è il primo passaggio per spostare l'ambiente locale nel cloud.
 

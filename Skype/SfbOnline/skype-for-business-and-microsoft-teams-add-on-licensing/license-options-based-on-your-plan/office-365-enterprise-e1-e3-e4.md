@@ -21,12 +21,12 @@ ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle caratteristiche e sull'acquisto di piani E1, E3 ed E4 per Office 365 Enterprise. "
-ms.openlocfilehash: 54b24f2e3debf58305214bbc48dac56babcfc681
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 44f55fff23a048a85ad220e03a24af58f099833e
+ms.sourcegitcommit: 05b46fc512678f39c345f15f3369e05d9c2efb3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238474"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53495166"
 ---
 # <a name="office-365-enterprise-e1-e3-and-e4"></a>Office 365 Enterprise E1, E3 e E4
 
@@ -40,8 +40,10 @@ Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products
 |**Audioconferenza** <br/> Buy 1 **Audio Conferencing** license for each person who is going to schedule or host a dial-in meeting. Attendees do not need licenses. <br/> |Componente aggiuntivo **Audioconferenza** <br/>Una volta acquistate le licenze, Microsoft sarà il provider di servizi di audioconferenza. |
 |**Numeri verdi per l'accesso esterno alle riunioni o per avere la possibilità di effettuare chiamate in uscita all'interno di una riunione per aggiungere un partecipante chiamando qualsiasi numero di telefono in tutto il mondo** <br/> |[Credito per la comunicazione](/microsoftteams/add-funds-and-manage-communications-credits)|
 |**Sistema telefonico** <br/> |1. Componente aggiuntivo **Sistema telefonico di Office 365** <br/> 2. Piani di chiamata: acquista un [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365) da Office 365. <br/>  In alternativa, utilizza il [servizio telefonico del tuo provider esistente](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md#bkmk_existing).  <br/> |
-|**Cloud Voicemail** <br/> |Per i piani E1 e E4, acquistare Exchange Online (Piano 2). <br/>Oppure, passare a una suite Office fornita con Exchange Online (Piano 2), come Office 365 E3. |
+|**Cloud Voicemail**<sup>1</sup> <br/> |Per i piani E1 e E4, acquistare Exchange Online (Piano 2). <br/>Oppure, passare a una suite Office fornita con Exchange Online (Piano 2), come Office 365 E3. |
 |**Piani di chiamata** <br/> |1. Componente aggiuntivo **Sistema telefonico** <br/> 2. [Piano di chiamata](/MicrosoftTeams/calling-plans-for-office-365): è possibile acquistarlo solo dopo l'acquisto del componente aggiuntivo **Sistema telefonico**. <br/> |
+
+<sup>1</sup> Per gli utenti locali. Per altre informazioni, vedere Pianificare Cloud Voicemail per gli utenti [locali.](/skypeforbusiness/hybrid/plan-cloud-voicemail)
    
  > [!IMPORTANT]
  > Office 365 Le licenze E4 sono state ritirate ufficialmente. Per altre [informazioni, vedere Informazioni](https://support.office.com/article/important-information-for-office-365-enterprise-e4-customers-f9572348-43a2-43fa-a3d8-3b6c9c042147) importanti per Office 365 Enterprise E4 clienti.

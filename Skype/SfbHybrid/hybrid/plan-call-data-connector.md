@@ -12,16 +12,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica dell'Skype for Business strumenti di telemetria online per monitorare un'implementazione locale in uno scenario ibrido.
-ms.openlocfilehash: 7b6076224280446b7fc52c505fe5fc3ab8d41be4
-ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
+ms.openlocfilehash: 5d14e5000b18680592084c45c798f7eead82a917
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52856355"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53509767"
 ---
 # <a name="plan-call-data-connector"></a>Pianificare connettore dati chiamate
 
 ## <a name="overview"></a>Panoramica
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 In questo argomento vengono descritti i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione Skype for Business Server Call Data Connector. Per ulteriori informazioni sulla configurazione di Call Data Connector, vedere [Configure Call Data Connector](configure-call-data-connector.md).
 

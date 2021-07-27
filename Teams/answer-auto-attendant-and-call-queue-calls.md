@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 3e1656af8ee457cb4c112d229c2dee03d2590ece
-ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
+ms.openlocfilehash: 6e7f20bc34b22449a115b0742a7cfdac88792f4c
+ms.sourcegitcommit: d34dbdc2f71f3d024cb7f1856fc0f8bbc701f66d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52856375"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53506395"
 ---
 # <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 
@@ -59,6 +59,8 @@ Il supporto per l'operatore automatico e le chiamate in coda di chiamata è disp
 -    Client Microsoft Teams Mac
 -    Microsoft Teams iPhone app
 -    Microsoft Teams App Android
+
+Il Teams client è supportato solo con una [modalità di coesistenza di Teams solo](/microsoftteams/setting-your-coexistence-and-upgrade-settings).
 
 ## <a name="configure-auto-attendant-and-call-queue-support-for-microsoft-teams"></a>Configurare il supporto dell'operatore automatico e della coda di chiamata per Microsoft Teams
 

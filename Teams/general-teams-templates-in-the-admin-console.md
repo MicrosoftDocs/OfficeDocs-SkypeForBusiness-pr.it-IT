@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c2b805f4cfddce18f1fa055b7de96a4afcaa47fb
-ms.sourcegitcommit: 36924dc54fe7b09607b07d7543fe7e39eb4d2483
+ms.openlocfilehash: c68965bb658328646b5308ad85092ce23bc0ab02
+ms.sourcegitcommit: 3f1635d1915561798ea764c3e33d7db55f7e49da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684563"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53574051"
 ---
 # <a name="use-general-team-templates-in-the-admin-center"></a>Usare modelli di team generali nell'interfaccia di amministrazione
 
@@ -34,7 +34,7 @@ I modelli di team hanno definizioni predefinite delle strutture del team progett
 
 In questo articolo vengono presentati tutti i modelli di team e viene consigliato come usarli.
 
-Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione finanziaria. Il servizio Teams è già stato implementato nell'organizzazione. Se non è stata ancora Teams, iniziare leggendo come [implementare](./deploy-overview.md)Microsoft Teams .
+Questo articolo è utile se si è responsabili della pianificazione, della distribuzione e della gestione di più team all'interno dell'organizzazione. Il servizio Teams è già stato implementato nell'organizzazione. Se non è stata ancora Teams, iniziare leggendo come [implementare](./deploy-overview.md)Microsoft Teams .
 
 Per altre informazioni sui modelli di team in generale, vedere Introduzione [ai modelli di team.](get-started-with-teams-templates-in-the-admin-console.md)
 
@@ -44,7 +44,7 @@ Centralizzare la collaborazione per il team di crisi tra le business unit e cont
 
 | Tipologia di modello base |baseTemplateId| Proprietà del modello base |
 | ------------------ |--|----------------------------------------------------------|
-| Collaborare alla crisi globale o all'evento |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` |Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Continuità aziendale</li><li>Comms esterni</li><li>Richiesta di approvazione</li><li>Lavorare in remoto</li><li>Messaggi interni</li><li>Comms esterni</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento per dirigenti</li></ul>App: <ul><li>Complimenti</li><li>Wiki</li><li>Sito Web</li><li>Programmazione</li></ul>|
+| Collaborare alla crisi globale o all'evento |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` |Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Continuità aziendale</li><li>Comms esterni</li><li>Approvazioni richiesta</li><li>Lavorare in remoto</li><li>Messaggi interni</li><li>Comms esterni</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento per dirigenti</li></ul>App: <ul><li>Complimenti</li><li>Wiki</li><li>Sito Web</li><li>Programmazione</li></ul>|
 ||||
 
 ## <a name="adopt-office-365"></a>Adottare Office 365

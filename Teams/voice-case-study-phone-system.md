@@ -1,5 +1,5 @@
 ---
-title: Teams caso di studio contoso vocale
+title: 'Caso di studio Contoso: Sistema telefonico per una multinazionale'
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -13,17 +13,17 @@ ms.reviewer: jowrig
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Teams caso di studio vocale per multinazionali
+description: 'Teams case study vocale per multinazionali: sistema telefonico'
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 995b4ddf9c07dea57c8d4de9940776d5137c2d02
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 6ee15ef9bb42a28023c86963dd9100797c51edc3
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101032"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587145"
 ---
-# <a name="contoso-case-study-phone-system"></a>Case study contoso: Sistema telefonico
+# <a name="contoso-case-study-phone-system-for-a-multi-national-corporation"></a>Caso di studio Contoso: Sistema telefonico per una multinazionale
 
 A seconda della posizione geografica e di altri fattori, Contoso aveva uffici che usavano le soluzioni di telefonia seguenti:
 
@@ -54,17 +54,17 @@ Le abitudini di composizione dell'utente erano di comporre un utente nel sistema
 
 Contoso ha basato la propria decisione sulle domande seguenti:
 
-- D. È necessario mantenere le funzionalità fornite dalla distribuzione locale?<br>
+- Q. È necessario mantenere le funzionalità fornite dalla distribuzione locale?<br>
   A. No 
 
-- D. È necessario interagire con sistemi PBX di terze parti e altre apparecchiature di telefonia?<br>
+- Q. È necessario interagire con sistemi PBX di terze parti e altre apparecchiature di telefonia?<br>
   A. No 
 
-- D. È necessario conservare l'attuale gestore di terze parti?<br> A. Sì (paesi regolamentati) e No 
+- Q. È necessario conservare l'attuale gestore di terze parti?<br> A. Sì (paesi regolamentati) e No 
 
-- D. È necessario distribuire il ROI sugli SBC?<br> A. Sì e no  
+- Q. È necessario distribuire il ROI sugli SBC?<br> A. Sì e no  
 
-- D. I piani per chiamate PSTN Microsoft sono disponibili in questa area geografica?<br> A. Sì e no 
+- Q. I piani per chiamate PSTN Microsoft sono disponibili in questa area geografica?<br> A. Sì e no 
 
 In base alle risposte alle loro domande, Contoso ha deciso di:
 
@@ -74,7 +74,7 @@ In base alle risposte alle loro domande, Contoso ha deciso di:
 
 Il diagramma seguente mostra la distribuzione Skype for Business VoIP aziendale distribuzione iniziale e come è stata eseguita la migrazione di questa distribuzione ai piani per chiamate Microsoft e al routing diretto:
 
-![Diagramma che mostra gli stati prima e dopo](media/voice-case-study-1.png)
+![Il diagramma mostra gli stati prima e dopo.](media/voice-case-study-1.png)
 
 ## <a name="site-type-b-traditional-legacy-telephony-systems"></a>Tipo di sito B: Sistemi di telefonia legacy tradizionali
 
@@ -82,14 +82,14 @@ Contoso aveva molti uffici che sfruttavano sistemi di telefonia legacy. C'era un
 
 Contoso ha basato la propria decisione sulle domande seguenti:
 
-- D. È necessario mantenere le funzionalità fornite dalla distribuzione locale?<br>
+- Q. È necessario mantenere le funzionalità fornite dalla distribuzione locale?<br>
   A. No 
 
-- D. È necessario interagire con sistemi PBX di terze parti e altre apparecchiature di telefonia?<br> A. Sì
+- Q. È necessario interagire con sistemi PBX di terze parti e altre apparecchiature di telefonia?<br> A. Sì
 
-- D. È necessario conservare l'attuale gestore di terze parti?<br> A. No 
+- Q. È necessario conservare l'attuale gestore di terze parti?<br> A. No 
 
-- D. Il piano per le chiamate PSTN di Microsoft è disponibile nella nostra area geografica?<br> A. Sì e no 
+- Q. Il piano per le chiamate PSTN di Microsoft è disponibile nella nostra area geografica?<br> A. Sì e no 
 
 In base alle risposte alle loro domande, Contoso ha deciso di: 
 
@@ -102,12 +102,12 @@ In base alle risposte alle loro domande, Contoso ha deciso di:
 I diagrammi seguenti mostrano la distribuzione del sistema legacy originale con siti remoti e la migrazione a una distribuzione di Routing diretto con l'ottimizzazione del supporto locale:
 
 **Distribuzione legacy originale**  
- ![ Diagramma che mostra gli stati prima e dopo](media/voice-case-study-2.png)
+ ![ Un diagramma mostra gli stati prima e dopo.](media/voice-case-study-2.png)
 
 
 **Distribuzione con routing diretto**
 
-![Diagramma che mostra gli stati prima e dopo](media/voice-case-study-3.png)
+![Diagramma che mostra gli stati prima e dopo.](media/voice-case-study-3.png)
  
 ## <a name="site-type-c-combination-of-skype-for-business-enterprise-voice-and-traditional-legacy-telephony-systems"></a>Tipo di sito C: Combinazione di Skype for Business VoIP aziendale tradizionali sistemi di telefonia legacy
 
@@ -115,16 +115,16 @@ Contoso Skype for Business VoIP aziendale i numeri degli utenti risiedono nel tr
 
 Contoso ha basato la propria decisione sulle domande seguenti:
 
-- D. È necessario mantenere le funzionalità fornite dalla distribuzione locale?<br>
+- Q. È necessario mantenere le funzionalità fornite dalla distribuzione locale?<br>
   A. No 
 
-- D. È necessario interagire con sistemi PBX di terze parti e altre apparecchiature di telefonia?<br> A. No 
+- Q. È necessario interagire con sistemi PBX di terze parti e altre apparecchiature di telefonia?<br> A. No 
 
-- D. È necessario conservare l'attuale gestore di terze parti?<br> A. No 
+- Q. È necessario conservare l'attuale gestore di terze parti?<br> A. No 
 
-- D. È necessario distribuire il ROI sugli SBC?<br> A. Sì e no  
+- Q. È necessario distribuire il ROI sugli SBC?<br> A. Sì e no  
 
-- D. Il piano chiamate PSTN di Microsoft è disponibile in questa area geografica?<br> A. No 
+- Q. Il piano chiamate PSTN di Microsoft è disponibile in questa area geografica?<br> A. No 
 
 In base alle risposte alle loro domande, Contoso ha deciso quanto segue: 
 
@@ -137,21 +137,21 @@ In base alle risposte alle loro domande, Contoso ha deciso quanto segue:
 I diagrammi seguenti mostrano la distribuzione originale Skype for Business VoIP aziendale sistema di telefonia legacy e la migrazione a una distribuzione mista con Routing diretto:
 
 **Distribuzione mista originale** 
- ![ Diagramma che mostra prima dello stato](media/voice-case-study-4.png)
+ ![ Diagramma 1 che mostra lo stato precedente.](media/voice-case-study-4.png)
 
 **Distribuzione mista con routing diretto** 
- ![ Diagramma che mostra prima dello stato](media/voice-case-study-4a.png)
+ ![ Diagramma 2 che mostra lo stato precedente.](media/voice-case-study-4a.png)
 
 
 ## <a name="calling-plans"></a>Piani di chiamata
 
 Per determinare i requisiti di configurazione per i piani per chiamate, Contoso ha esaminato le decisioni di distribuzione principali del piano [di chiamata.](calling-plan-landing-page.md#core-deployment-decisions) Le decisioni risultanti sono state prese: 
 
-- D. Gli utenti hanno bisogno di chiamate internazionali?<br> A. Sì 
+- Q. Gli utenti hanno bisogno di chiamate internazionali?<br> A. Sì 
 
-- D. Gli utenti hanno un numero di telefono DID diretto verso l'interno?<br> A. Non oggi. Tutti gli utenti abilitati riceveranno un DID. 
+- Q. Gli utenti hanno un numero di telefono DID diretto verso l'interno?<br> A. Non oggi. Tutti gli utenti abilitati riceveranno un DID. 
 
-- D. Si vuole mascherare o disabilitare l'ID chiamante?<br> A. L'ID chiamante di un utente verrà mascherato al numero locale di Contoso. 
+- Q. Si vuole mascherare o disabilitare l'ID chiamante?<br> A. L'ID chiamante di un utente verrà mascherato al numero locale di Contoso. 
 
 
 ## <a name="direct-routing"></a>Routing diretto

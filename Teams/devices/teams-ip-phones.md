@@ -21,12 +21,12 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 76a4d88cc82379911f6f4716f199bb2424328959
-ms.sourcegitcommit: f3e9989cbcc2f9f83ff94204bdd75b1e6ad43b5e
+ms.openlocfilehash: b531f6bb3a6a097f1480b3bcbfc938cdf20a8ec4
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53408765"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510347"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
@@ -169,6 +169,7 @@ Di seguito sono riportate le versioni più Teams Rooms versioni dell'app e del f
 
 | Rilascio del prodotto| Data di rilascio | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
+| Aggiornamento #2A 2021 | 15 luglio 2021  |1449/1.0.96.2021070803|  5.0.5088.0 |   1.0.0.202104280345.product version code: 262 |
 | Aggiornamento #2 2021 | 28 giugno 2021  |1449/1.0.96.2021051904|  5.0.5088.0 |   1.0.0.202104280345.product version code: 262 |
 | Aggiornamento #1A 2021  |12 maggio 2021  |1449/1.0.96.2021042903 |5.0.4927.0     |1.0.0.20201012132.product version code: 223 |
 | Aggiornamento 2021 #1  |5 aprile 2021  |1449/1.0.96.2021032002  |5.0.4927.0     |1.0.0.20201012132.product version code: 223 |
@@ -182,6 +183,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso |
 |:--------------|:-----------------|:-------------------------|
+| AudioCodes RXV80 |1.13.356   | Aggiornamento #2 2021 |
 | Yealink VC210 |118.15.0.54   | Aggiornamento #2 2021    |
 | Yealink MeetingBar A20 | 133.15.0.60     | Aggiornamento #2 2021    |
 | Yealink MeetingBar A30 | 133.15.0.60    | Aggiornamento #2 2021    |

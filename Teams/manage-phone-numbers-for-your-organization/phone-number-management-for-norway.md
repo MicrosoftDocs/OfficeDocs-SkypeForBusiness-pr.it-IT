@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Norvegia per Microsoft Teams.
-ms.openlocfilehash: eba8ad5c5b9aebbb4190f0305e037cd2549febc8
-ms.sourcegitcommit: 7015d6f5858399a4e6c5feded95dfba50d17ce7b
+ms.openlocfilehash: 208d69aceaf03921af60bdbceba9fe6b2e9a155d
+ms.sourcegitcommit: 05b46fc512678f39c345f15f3369e05d9c2efb3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "52993883"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53495176"
 ---
 # <a name="phone-number-management-for-norway"></a>Telefono gestione dei numeri per la Norvegia
 
@@ -37,8 +37,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione.<br/> |In Norvegia è possibile ottenere i numeri di telefono dell'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Puoi anche inviare una nuova richiesta di numero di telefono scaricando il modulo e [inviandoci il modulo.](mailto:ptneu@microsoft.com)<br/><br/><ul><li>[Nuova richiesta di numero di telefono per la Norvegia (v.1.0) (nb-NO)](https://download.microsoft.com/download/3/9/a/39adb4f0-74b8-424d-8830-2a116b576bee/know-your-customer-for-norway-(v.1.0)-(nb-NO).pdf)
-</li><li>[Nuova richiesta di numero di telefono per la Norvegia - Norvegese Bokmål (v.1.0) (nb-no)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true)</li></ul><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft. <br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
+|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione.<br/> |In Norvegia è possibile ottenere i numeri di telefono dell'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Puoi anche inviare una nuova richiesta di numero di telefono scaricando il modulo e [inviandoci il modulo.](mailto:ptneu@microsoft.com)<br/><br/><ul><li>[Nuova richiesta di numero di telefono per la Norvegia (v.1.0) (nb-NO)](https://download.microsoft.com/download/3/9/a/39adb4f0-74b8-424d-8830-2a116b576bee/know-your-customer-for-norway-(v.1.0)-(nb-NO).pdf)</li><li>[Nuova richiesta di numero di telefono per la Norvegia - Norvegese Bokmål (v.1.0) (nb-no)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true)</li></ul><br/> Prima di assegnarti i numeri di telefono, devi scaricare il modulo Conosci il tuo cliente, compilarlo per intero e inviarlo a Microsoft. <br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.  |
 |Ricevi i numeri di telefono trasferiti a Noi.<br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Norvegia (tutti i numeri) (v.1.0) (en-nw)](https://download.microsoft.com/download/a/6/8/a68d6c80-daf5-4d40-ba6e-d0f99db1041b/letter-of-authorization-(loa)-for-finland-(all-numbers)-(v1.0)-(en-fi).pdf) <br/> <br/>Compilalo e [inviacelo](mailto:ptneu@microsoft.com). <br/><br/>Il trasferimento di numeri in questo mercato può richiedere da quattro a cinque settimane.<br/><br/> Questi numeri non possono essere usati per le conferenze in questo momento.  |
 |Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi pubblicare/rimuovere. <br/> |
 |Modificare il numero di un utente in un numero di servizio.  <br/> |[Inviaci](mailto:ptneu@microsoft.com) l'elenco dei numeri di telefono che vuoi convertire in numeri di servizio. <br/> |

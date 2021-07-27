@@ -1,5 +1,5 @@
 ---
-title: Criteri di chiamata in Microsoft Teams
+title: 'Criteri di chiamata in Microsoft Teams: funzionalità di chiamata e inoltro di chiamata'
 author: SerdarSoysal
 ms.author: tonysmit
 manager: serdars
@@ -20,15 +20,14 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e469cc183134bab35855e83257126029ce78a8cc
-ms.sourcegitcommit: c80af314f1a573f99dd66858301c004ccc5410d6
+ms.openlocfilehash: f4502d76bbb2e12f38ba79d0848ecd06739417cc
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51653944"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53596607"
 ---
-<a name="calling-policies-in-microsoft-teams"></a>Criteri di chiamata in Microsoft Teams
-===================================
+#  <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
 
 In Microsoft Teams, i criteri di chiamata controllano quali funzionalità di chiamata e inoltro di chiamata sono disponibili per gli utenti. I criteri di chiamata determinano se un utente può effettuare chiamate private, usare l'inoltro di chiamata o lo squillo simultaneo ad altri utenti o numeri di telefono esterni, instradare le chiamate alla segreteria telefonica, inviare chiamate a gruppi di chiamate, usare la delega per le chiamate in ingresso e in uscita e così via.
 
@@ -106,6 +105,6 @@ Questa impostazione consente di attivare o disattivare il blocco della musica qu
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Set-CSTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps)
+[Set-CSTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy)
 
 [Assegnare i criteri agli utenti in Teams](assign-policies.md)

@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 81a20980530f28f20fb48fa06a2068088dc1a305
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 8fc726dbe05358844c23a3ee90a8885e8b97f54d
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282523"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53586965"
 ---
 # <a name="enlist-your-project-stakeholders"></a>Integrare gli stakeholder del progetto
 
@@ -40,7 +40,7 @@ Dall'implementazione dei risultati finali del progetto alla gestione della respo
 
 Facoltativamente, è possibile creare un comitato direttivo. A volte i progetti più grandi o complessi finiscono con "troppi cuochi in cucina", con conseguenti disconnessioni tra i gruppi di stakeholder. Per questi progetti, potrebbe essere necessario formare un comitato direttivo. Un comitato direttivo è responsabile della gestione delle decisioni, della supervisione strategica, del supporto delle iniziative del progetto e, se necessario, della rimozione dei blocchi. Per altre informazioni sull'implementazione di un comitato direttivo, vedere la guida [del comitato direttivo.](./envision-steering-committee-complete-guide.md)
 
-| | |
+|&nbsp; |&nbsp; |
 |---|---|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali | <ul><li>Who le persone giuste per fungere da team degli stakeholder per questo progetto?</li></ul> |
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi | <ul><li>Valutare l'ambito del progetto e assegnare gli stakeholder pertinenti.</li><li>Usare la tabella seguente come linea guida, ma tenere presente che questo elenco non è all-inclusive.<br><strong>Suggerimento</strong><br>Creare una matrice [RACI](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix) (responsible-accountable-consulted-informed) per distinguere ulteriormente le persone che saranno ritenute responsabili da quelle che devono semplicemente essere tenute informate in una particolare area del progetto.</li> |
@@ -63,7 +63,7 @@ Facoltativamente, è possibile creare un comitato direttivo. A volte i progetti 
 | Cliente potenziale di telefonia | Fornisce informazioni approfondite sulla progettazione e l'implementazione della telefonia |
 | Proprietario del servizio/Campione qualitativo | È proprietaria dell'Teams all-up, inclusa la qualità dell'esperienza utente |
 | Lead per desktop e dispositivi | Fornisce input in client, dispositivi e app desktop |
-| Amministratore Pro it/tenant | Assicura la conformità della rete e Microsoft 365 configurazione dell'interfaccia di amministrazione |
+| Amministratore Pro it/tenant | Garantisce la conformità della rete e interfaccia di amministrazione di Microsoft 365 di rete siano in atto |
 | Lead del supporto tecnico/help desk | Gestisce la conformità del supporto tecnico |
 | Cliente potenziale di gestione delle modifiche | Supervisiona il programma di gestione e adozione delle modifiche degli utenti |
 | Cliente potenziale di marketing | Progetta e implementa campagne di comunicazione |

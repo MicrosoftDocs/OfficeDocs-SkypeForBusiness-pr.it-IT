@@ -15,12 +15,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Scopri quali dispositivi e periferiche USB (ad esempio cuffie, vivavoci, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: e3225490e52b527e02449796d614107221853554
-ms.sourcegitcommit: 3704577b1424c063fd925a58a6f6d0b3ff2c8148
+ms.openlocfilehash: 476d61d2e2465dd1791b950d2922299073b5e210
+ms.sourcegitcommit: 05b46fc512678f39c345f15f3369e05d9c2efb3d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53278509"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53495186"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -81,6 +81,13 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 |EPOS/Sennheiser      |ADAPT 160T ANC                                             |6/24/2021       |Certificato per Microsoft Teams                           |
 |Dell                 |Ultrasharp Webcam WB7022                                   |6/16/2021       |Certificato per Microsoft Teams                           |
 |NEC                  |Wd551 Windows di collaborazione                        |5/21/2021       |Certificato per Microsoft Teams                           |
+|Poly                 |EncorePro 520 e DA85-M                                   |4/26/2021       |Certificato per Microsoft Teams                           |
+|Poly                 |EncorePro 510 e DA85-M                                   |4/26/2021       |Certificato per Microsoft Teams                           |
+|Poly                 |EncorePro 525-M                                            |4/26/2021       |Certificato per Microsoft Teams                           |
+|Poly                 |EncorePro 515-M                                            |4/26/2021       |Certificato per Microsoft Teams                           |
+|Dell                 |Cuffie WL7022 Premier Wireless ANC                        |4/22/2021       |Certificato per Microsoft Teams                           |
+|Dell                 |Auricolare wireless WL5022 Pro wireless                                |4/22/2021       |Certificato per Microsoft Teams                           |
+|Dell                 |Wh3022 Pro auricolare cablato                                   |4/22/2021       |Certificato per Microsoft Teams                           |
 |Logitech             |C920e Webcam                                               |4/22/2021       |Certificato per Microsoft Teams                           |
 |Poly                 |Studio P5 Webcam                                           |4/22/2021       |Certificato per Microsoft Teams                           |
 |Jabra                |Biz 2400 II                                                |4/22/2021       |Skype for Business con l'aggiornamento a Microsoft Teams      |

@@ -7,7 +7,7 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: keschm
-description: Indicazioni su come usare uno script per distribuire o eseguire il provisioning di Microsoft Teams per gli operatori sul campo.
+description: Indicazioni su come usare gli script per distribuire o eseguire il provisioning di Microsoft Teams per gli operatori sul campo.
 localization_priority: Priority
 search.appverid: MET150
 f1.keywords:
@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ed657590e024104e773b7a96b785b3b3db0ccbfc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 384c7d98dbbae5fa1c471130f8699c9c570c79ac
+ms.sourcegitcommit: 330b5c3e299ddad5168958e4722d1e0b987372e2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120747"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53536822"
 ---
 # <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -69,13 +69,13 @@ Scaricare le risorse disponibili [qui](https://aka.ms/flwteamsscale).
     1. Creare criteri di messaggistica di Teams
     1. Creare criteri di installazione app di Teams
     1. Creare criteri di autorizzazione app di Teams
-1. **Creare utenti e gruppi di sicurezza**
+1. **Utenti e gruppi di sicurezza**
     1. Creare utenti e gruppi di sicurezza
     1. Assegnare licenze agli utenti tramite le licenze basate sui gruppi
 1. **Assegnare utenti e criteri**
     1. Assegnare gli utenti ai team
     1. Assegnare i criteri di Teams agli utenti
-    1. FACOLTATIVO: convertire il tipo di appartenenza al gruppo
+    1. Facoltativo: convertire il tipo di appartenenza al gruppo
 1. **Eseguire il test e la convalida**
     1. Accedere a Teams con un utente di test
     1. Verificare la presenza di errori
@@ -99,7 +99,7 @@ Se si configurano le variabili di ambiente locali, gli script di riferimento dev
 
 Ad esempio: .\SetConfig.ps1 -tenantName contoso.onmicrosoft.com -rootPath "C:\data\source\FLWTeamsScale"
 
-### <a name="setup-credentials"></a>Configurare le credenziali
+### <a name="set-up-credentials"></a>Configurare le credenziali
 
 > [!IMPORTANT]
 > La modalità di gestione delle credenziali in questi script potrebbe non essere appropriata, pertanto può essere facilmente modificata in base alle esigenze dell'utente. Seguire sempre le norme e le procedure aziendali per la protezione degli account di servizio e delle identità gestite.
@@ -138,7 +138,7 @@ Per comunicare e collaborare con gli operatori sul campo, è necessario prima di
 
 I team sono una insieme di persone, contenuti e strumenti all'interno dell'organizzazione. Per la maggior parte delle organizzazioni orientate agli operatori sul campo, è consigliabile associare un team a una posizione fisica. Ad esempio, un team per ognuna delle seguenti posizioni:
 
-- Negozio
+- Store
 - Centro di distribuzione
 - Stabilimento di produzione
 - Ospedale
@@ -177,17 +177,17 @@ I canali sono sezioni dedicate all'interno di un team in cui le conversazioni so
 
 ## <a name="create-teams-policies"></a>Creare criteri di Teams
 
-L'amministratore può usare i criteri per i team in Microsoft Teams per controllare ciò che gli utenti dell'organizzazione possono vedere. Ad esempio, è possibile controllare quali applicazioni sono bloccate sulla barra di sinistra nel browser desktop o Web o sulla barra inferiore dei dispositivi mobili, per semplificare l'esperienza dell'utente finale durante l'onboarding di una grande quantità di utenti. Alcuni di questi criteri possono essere creati con PowerShell, mentre altri devono essere creati manualmente nella console di amministrazione di Teams.
+L'amministratore può usare i criteri per i team in Microsoft Teams per controllare ciò che gli utenti dell'organizzazione possono vedere. Ad esempio, è possibile controllare quali applicazioni sono bloccate sulla barra di sinistra nel browser desktop o Web o sulla barra inferiore dei dispositivi mobili, per semplificare l'esperienza dell'utente finale durante l'onboarding di una grande quantità di utenti. Alcuni di questi criteri possono essere creati con PowerShell, mentre altri devono essere creati manualmente nell'interfaccia di amministrazione di Teams.
 
 *Discussione sulle procedure consigliate*: per ognuno dei criteri seguenti, decidiamo di creare due criteri, uno per gli operatori sul campo e uno per i manager sul campo. È possibile crearne un numero qualsiasi, in base alle proprie preferenze. Per la maggior parte dei clienti, due è un numero sufficiente per iniziare, anche se inizialmente si assegnano le stesse impostazioni a ciascun gruppo. Man mano che si acquisisce esperienza con Teams, si potrà decidere di differenziare ulteriormente l'esperienza e i due criteri separati già creati possono semplificare questa operazione.
 
-### <a name="create-teams-message-policies"></a>Creare criteri di messaggistica di Teams
+### <a name="create-teams-messaging-policies"></a>Creare criteri di messaggistica di Teams
 
 I criteri di messaggistica vengono usati per controllare le funzionalità di messaggistica disponibili in chat e canali per gli utenti di Microsoft Teams.
 
 *Discussione sulle procedure consigliate*: anche se è possibile usare il criterio globale predefinito che viene creato automaticamente, abbiamo deciso di creare un criterio personalizzato usando la procedura descritta di seguito per offrire un'esperienza più definita, semplice e differenziata per i manager sul campo e gli operatori sul campo.
 
-#### <a name="steps-to-create-teams-message-policies"></a>Procedura per la creazione di criteri di messaggistica di Teams
+#### <a name="steps-to-create-teams-messaging-policies"></a>Procedura per la creazione di criteri di messaggistica di Teams
 
 1. Trovare il file **TeamsMessagingPolicies.csv** nella cartella degli script nel repository.
 1. Aggiornare il file **TeamsMessagingPolicies.csv** con le informazioni specifiche dell'organizzazione. Altre informazioni su alcune delle opzioni sono disponibili [qui](./messaging-policies-in-teams.md#messaging-policy-settings).
@@ -201,11 +201,11 @@ Gli amministratori possono usare i criteri di installazione app per eseguire le 
 - Personalizzare Teams in modo da evidenziare le app più importanti per gli utenti. Scegliere le app da aggiungere e impostare l'ordine in cui vengono visualizzate. L'aggiunta di app consente di mettere in evidenza le app di cui gli utenti dell'organizzazione hanno bisogno, incluse quelle create da terze parti o dagli sviluppatori dell'organizzazione.
 - Controllare se gli utenti possono aggiungere app a Teams.
 
-Le app vengono aggiunte alla barra delle app. Questa barra si trova sul lato del client Teams desktop e nella parte inferiore dei client Teams per dispositivi mobili (iOS e Android).
+Le app vengono aggiunte alla barra dell'app. Questa barra si trova sul lato del client desktop di Teams e nella parte inferiore dei client per dispositivi mobili (iOS e Android) di Teams.
 
-|Client Teams per desktop  |         |Client Teams per dispositivi mobili  |
+|Client desktop di Teams  |         |Client per dispositivi mobili di Teams  |
 |---------|---------|---------|
-|![Screenshot del client Teams per desktop con le app aggiunte alla barra delle *app*.](media/FLW-Teams-Desktop-Client.png)         |         |![Screenshot del client Teams per desktop con le app aggiunte alla barra *inferiore*.](media/FLW-Teams-Mobile-Client.png) |
+|![Screenshot del client desktop di Teams con le app aggiunte alla barra inferiore.](media/flw-teams-desktop-client.png)         |         |![Screenshot del client per dispositivi mobili di Teams con le app aggiunte alla barra inferiore.](media/flw-teams-mobile-client.png) |
 
 *Discussione sulle procedure consigliate*: i criteri di installazione app vengono gestiti nell'interfaccia di amministrazione di Microsoft Teams. Non possono essere creati con PowerShell. È possibile usare il criterio globale (predefinito per l'intera organizzazione) o creare criteri personalizzati e assegnarli agli utenti. Gli utenti dell'organizzazione verranno automaticamente assegnati al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato. In questo caso, stiamo creando due nuovi criteri per gli operatori sul campo e per i manager sul campo, per offrire loro una soluzione più semplice e più snella per semplificare l'onboarding di un numero elevato di utenti contemporaneamente. È possibile decidere di personalizzare l'esperienza in base alle esigenze aziendali.
 
@@ -215,23 +215,26 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
 2. Fare clic su  **Aggiungi**.  
-3. Immettere un nome e una descrizione per il criterio. Ad esempio: **Criterio di installazione app per manager sul campo**.
-![Immagine del criterio di installazione app per i manager sul campo](media/FLW-FLM-App-Setup-Policy.png).
+3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criteri di installazione app per i manager sul campo.
+    :::image type="content" source="media/flw-flm-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per i manager sul campo":::
 
 4. Disattivare **Carica app personalizzate**.
 5. Disattivare **Consenti di aggiungere un utente**.
-![Immagine dell'opzione Consenti di aggiungere un utente.](media/FLW-Allow-User-Pinning.png)
+    :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot dell'impostazione Consenti di aggiungere un utente":::
 
-6. Se non è già presente nell'elenco, aggiungere l'app **Turni**. Per altre informazioni su **Turni**, fare clic [qui](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md).
-![Schermata Aggiungi app bloccate, con l'app Turni accanto a un pulsante Aggiungi.](media/FLW-Add-Pinned-Apps.png)
+6. Se non è già presente nell'elenco, aggiungere l'app **Turni**. Per altre informazioni su [Turni](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md), fare clic qui.
+    :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot della schermata Aggiungi app bloccate, con il pulsante Aggiungi per l'app Turni":::
 
-7. Rimuovere Chiamata, se presente. Nota: quando questa funzionalità viene rimossa, non viene disabilitata per l'utente ma si impedisce che venga visualizzata sulla barra delle app, per semplificare l'esperienza dell'utente finale.
+7. Rimuovere Chiamata, se presente. Quando questa funzionalità viene rimossa, non viene disabilitata per l'utente ma si impedisce che venga visualizzata sulla barra delle app, per semplificare l'esperienza dell'utente finale.
 8. Disporre le app nell'ordine seguente per specificare l'ordine in cui vengono visualizzate sulla barra delle app di Teams, quindi fare clic su  **Salva**.
-    1. Attività
-    1. Chat
-    1. Teams
-    1. Calendario
-    1. Turni ![Screenshot dell'elenco delle app dei manager in ordine.](media/FLW-Manager-Pinned-Apps.png)
+
+    - Attività
+    - Chat
+    - Teams
+    - Calendario
+    - Turni
+
+    :::image type="content" source="media/flw-manager-pinned-apps.png" alt-text="Screenshot delle app per i manager sul campo elencate in ordine":::
 
 #### <a name="create-the-frontline-worker-app-setup-policy"></a>Creare i criteri di installazione app per gli operatori sul campo
 
@@ -239,22 +242,25 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
 2. Fare clic su  **Aggiungi**.
-3. Immettere un nome e una descrizione per il criterio. Ad esempio: **Criterio di installazione app per operatori sul campo**.
-![Immagine del criterio di installazione app per gli operatori sul campo](media/FLW-FLW-App-Setup-Policy.png).
+3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di configurazione app per gli operatori sul campo.
+    :::image type="content" source="media/flw-flw-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per gli operatori sul campo":::
 
 4. Disattivare **Carica app personalizzate**.
 5. Disattivare **Consenti di aggiungere un utente**.
-![Immagine dell'opzione Consenti di aggiungere un utente.](media/FLW-Allow-User-Pinning.png)
+    :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot dell'impostazione Consenti di aggiungere un utente":::
 
-6. Se non è già presente nell'elenco, aggiungere l'app **Turni**. Per altre informazioni su **Turni**, fare clic qui.
-![Schermata Aggiungi app bloccate, con l'app Turni accanto a un pulsante Aggiungi.](media/FLW-Add-Pinned-Apps.png)
+6. Se non è già presente nell'elenco, aggiungere l'app **Turni**. Per altre informazioni su [Turni](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md), fare clic qui.
 
-7. Rimuovere Riunioni e Chiamate, se presenti. Nota: quando queste funzionalità vengono rimosse, non vengono disabilitate per l'utente ma si impedisce che vengano visualizzate sulla barra delle app, per semplificare l'esperienza dell'utente finale.
+    :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot della schermata Aggiungi app bloccate, con il pulsante Aggiungi per l'app Turni":::
+
+7. Rimuovere Riunioni e Chiamata, se presenti. Quando queste funzionalità vengono rimosse, non vengono disabilitate per l'utente ma si impedisce che vengano visualizzate sulla barra delle app, per semplificare l'esperienza dell'utente finale.
 8. Disporre le app nell'ordine seguente per specificare l'ordine in cui vengono visualizzate sulla barra delle app di Teams, quindi fare clic su  **Salva**.
-    1. Attività
-    1. Chat
-    1. Teams
-    1. Turni ![Screenshot dell'elenco delle app degli operatori in ordine.](media/FLW-Worker-Pinned-Apps.png)
+    - Attività
+    - Chat
+    - Teams
+    - Turni
+
+    :::image type="content" source="media/flw-worker-pinned-apps.png" alt-text="Screenshot delle app per gli operatori sul campo elencate in ordine":::
 
 ### <a name="create-teams-app-permission-policies"></a>Creare criteri di autorizzazione app di Teams
 
@@ -268,12 +274,13 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di autorizzazione**.
 2. Fare clic su  **Aggiungi**.
-![Mostra la pagina Aggiungi i criteri di autorizzazione app, con sezioni per le app Microsoft, di terze parti e tenant.](media/FLW-add-app-permission-policy.png)
 
-3. Immettere un nome e una descrizione per il criterio. Ad esempio: Criterio di autorizzazione app per manager sul campo.
-4. In App Microsoft selezionare **Consenti tutte le app**.
-5. In App di terze parti selezionare **Consenti tutte le app**.
-6. In App tenant selezionare **Consenti tutte le app**.
+    :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app":::
+
+3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di autorizzazione app per manager sul campo.
+4. In  **App Microsoft**, selezionare **Consenti tutte le app**.
+5. In  **App di terze parti**, selezionare **Consenti tutte le app**.
+6. In **App personalizzate**, selezionare **Consenti tutte le app**.
 7. Fare clic su  **Salva**.
 
 #### <a name="create-the-frontline-worker-app-permission-policy"></a>Creare i criteri di autorizzazione app per gli operatori sul campo
@@ -282,12 +289,13 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di autorizzazione**.
 2. Fare clic su  **Aggiungi**.
-![Mostra la pagina Aggiungi i criteri di autorizzazione app, con sezioni per le app Microsoft, di terze parti e tenant.](media/FLW-add-app-permission-policy.png)
 
-3. Immettere un nome e una descrizione per il criterio. Ad esempio: Criterio di autorizzazione app per operatori sul campo.
-4. In App Microsoft selezionare **Consenti tutte le app**.
-5. In App di terze parti selezionare **Blocca tutte le app**.
-6. In App tenant selezionare **Consenti tutte le app**.
+    :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app":::
+
+3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di autorizzazione app per operatori sul campo.
+4. In  **App Microsoft**, selezionare **Consenti tutte le app**.
+5. In  **App di terze parti**, selezionare **Blocca tutte le app**.
+6. In **App personalizzate**, selezionare **Consenti tutte le app**.
 7. Fare clic su  **Salva**.
 
 ## <a name="users-and-security-groups"></a>Utenti e gruppi di sicurezza
@@ -335,7 +343,7 @@ Dopo avere creato gli utenti e i criteri per modificarne la loro esperienza in T
 1. Trovare il file **SecurityGroups.csv** nella cartella dati nel repository e assicurarsi che in questo file sia presente il mapping corretto tra i criteri e i gruppi.
 1. In PowerShell eseguire lo script **AssignPoliciestoUsers.ps1** presente nella cartella degli script nel repository.
 
-### <a name="optional-convert-group-membership-type"></a>FACOLTATIVO: convertire il tipo di appartenenza al gruppo
+### <a name="optional-convert-group-membership-type"></a>Facoltativo: convertire il tipo di appartenenza al gruppo
 
 > [!NOTE]
 > Questo passaggio è per gli utenti che hanno Azure AD P1 o versione successiva.
@@ -354,7 +362,7 @@ Se si usa l'appartenenza dinamica, vengono scritte delle regole che determinano 
 
 ## <a name="test-and-validate"></a>Eseguire il test e la convalida
 
-### <a name="login-to-teams-with-a-test-user"></a>Accedere a Teams con un utente di test
+### <a name="sign-in-to-teams-with-a-test-user"></a>Accedere a Teams con un utente di test
 
 Dopo aver completato tutti i passaggi, verificare il lavoro completato.
 

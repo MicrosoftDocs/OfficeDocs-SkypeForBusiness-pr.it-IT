@@ -19,12 +19,12 @@ ms.collection:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3e79eecaaa0fbdbc00b73358f8a9fa2e147675e6
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 2c0933d9347a1aa2da49abf85e7b420413a5961a
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282187"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587185"
 ---
 # <a name="prepare-your-it-staff-for-microsoft-teams"></a>Preparare il personale IT per Microsoft Teams
 
@@ -48,7 +48,7 @@ Condividere le risorse seguenti con i membri del personale IT e verificare che s
 
 
 
-| | |
+|&nbsp; |&nbsp; |
 |---|---|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Hai coinvolto tutto il personale di supporto che probabilmente sarà coinvolto nella distribuzione e nel supporto Teams?</li><li>È stato sviluppato un piano di formazione per l'onboarding di personale aggiuntivo con l'avanzamento dell'aggiornamento?</li></ul> |
 | ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Verificare che il personale IT abbia le informazioni necessarie.</li><li>Rivisitare i piani di formazione e preparazione non appena vengono rilasciate nuove funzionalità.</li></ul>|

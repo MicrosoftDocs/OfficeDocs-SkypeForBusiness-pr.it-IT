@@ -24,12 +24,12 @@ search.appverid: MET150
 description: Altre informazioni sulle funzionalità vocali Microsoft Teams cloud e sulle decisioni di distribuzione che verranno prese per l'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 95b8f60f9d664432fbb68c48ee61d6f26902eeae
-ms.sourcegitcommit: 5720fa12bdabdfc2988bf835c8cf95e4d64fa54e
+ms.openlocfilehash: ad80bbdaa5a51540d8444ca97fa72c087f2f1763
+ms.sourcegitcommit: 79d20fa2c45173d5a990551e79571caff06d7f82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "53354382"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "53486126"
 ---
 # <a name="plan-your-teams-voice-solution"></a>Pianificare la soluzione Teams vocale 
 
@@ -48,9 +48,9 @@ Se si risponde sì a quanto segue, Sistema telefonico piano per chiamate è la s
 Tuttavia, la situazione potrebbe essere più complessa. Ad esempio, potresti avere uffici in località in cui il piano per chiamate non è disponibile. In caso contrario, potrebbe essere necessaria una soluzione combinata che supporti una distribuzione complessa e nazionale, con requisiti diversi per posizioni geografiche diverse. Microsoft supporta una combinazione di soluzioni: 
 
 - Sistema telefonico piano chiamate
-- Sistema telefonico con il proprio gestore PSTN con operatore Connessione (attualmente disponibile solo in **anteprima pubblica)**
+- Sistema telefonico con il proprio gestore PSTN con Connessione con operatore (attualmente disponibile solo in **anteprima pubblica)**
 - Sistema telefonico con il proprio gestore PSTN con Routing diretto
-- Una soluzione combinata che usa Sistema telefonico piano per chiamate, Sistema telefonico con operatore Connessione e/o Sistema telefonico con Routing diretto
+- Una soluzione combinata che usa Sistema telefonico piano per chiamate, Sistema telefonico con Connessione con operatore e/o Sistema telefonico con Direct Routing
 
 
 ## <a name="what-do-you-need-to-read"></a>Cosa è necessario leggere?
@@ -61,7 +61,7 @@ Tuttavia, la situazione potrebbe essere più complessa. Ad esempio, potresti ave
 | Obbligatorio per tutti | Descrizione |
 | :------------|:-------|
 | [**Sistema telefonico**](#phone-system) | Tecnologia Microsoft per l'abilitazione del controllo delle chiamate e delle funzionalità PBX (Private Branch Exchange) nel cloud Microsoft 365 con Microsoft Teams. |
-| [**Opzioni di connettività PSTN (Public Switched Telephone Network)**](#public-switched-telephone-network-connectivity-options) | Scelta tra l'uso di Microsoft come gestore di telefonia o la connessione del proprio gestore di telefonia a Microsoft Teams tramite Routing diretto o Operatore Connessione. In combinazione con Sistema telefonico, le opzioni di connettività PSTN consentono agli utenti di effettuare chiamate telefoniche in tutto il mondo.|
+| [**Opzioni di connettività PSTN (Public Switched Telephone Network)**](#public-switched-telephone-network-connectivity-options) | Scelta tra l'uso di Microsoft come gestore di telefonia o la connessione del proprio gestore di telefonia a Microsoft Teams tramite Connessione con operatore o Routing diretto. In combinazione con Sistema telefonico, le opzioni di connettività PSTN consentono agli utenti di effettuare chiamate telefoniche in tutto il mondo.|
 
 **A seconda dei requisiti.** Alcune delle sezioni di questo articolo e degli articoli correlati sono pertinenti a seconda della distribuzione e dei requisiti esistenti. Ad esempio, Location-Based routing diretto è necessario solo per i clienti di Routing diretto in posizioni geografiche che non consentono il bypass a pedaggio.
 
@@ -79,7 +79,7 @@ Valutare quali di queste configurazioni aggiuntive potrebbero essere necessarie:
 | [**Eseguire la migrazione della soluzione vocale esistente**](#migrate-your-existing-voice-solution-to-teams) | Cosa occorre pensare quando si esegue la migrazione della soluzione vocale a Teams.  Leggere questa sezione se si esegue la migrazione da una soluzione vocale esistente a Teams. 
 
 > [!Important]
-> Questo articolo è in particolare sulle soluzioni vocali con Microsoft Teams. Anche se le soluzioni con Skype for Business Online sono ancora disponibili, è importante comprendere che Skype for Business Online verrà ritirato il 31 luglio 2021.  Dopo tale data, il Skype for Business online non sarà più accessibile. Inoltre, la connettività PSTN tra l'ambiente locale tramite Skype for Business Server o Cloud Connector Edition e Skype for Business Online non &mdash; &mdash; sarà più supportata. Questo articolo illustra Teams soluzioni vocali e illustra come connettere la rete di telefonia locale, se necessario, a Teams usando Routing diretto o Operatore Connessione.
+> Questo articolo è in particolare sulle soluzioni vocali con Microsoft Teams. Anche se le soluzioni con Skype for Business Online sono ancora disponibili, è importante comprendere che Skype for Business Online verrà ritirato il 31 luglio 2021.  Dopo tale data, il Skype for Business online non sarà più accessibile. Inoltre, la connettività PSTN tra l'ambiente locale tramite Skype for Business Server o Cloud Connector Edition e Skype for Business Online non &mdash; &mdash; sarà più supportata. Questo articolo presenta Teams e come connettere la rete di telefonia locale, se necessario, a Teams usando Routing diretto o Connessione con operatore.
 
 
 ## <a name="phone-system"></a>Sistema telefonico
@@ -143,9 +143,9 @@ Sistema telefonico offre funzionalità PBX complete per l'organizzazione. Tuttav
 
 - [**Sistema telefonico piano chiamate**](pstn-connectivity.md#phone-system-with-calling-plan). Una soluzione all-in-the-cloud con Microsoft come gestore PSTN.
 
-- [**Sistema telefonico con il proprio gestore PSTN usando Il**](pstn-connectivity.md#phone-system-with-direct-routing) routing diretto per connettere l'ambiente locale a Teams.
+- [**Sistema telefonico con il proprio gestore PSTN**](operator-connect-plan.md)usando Connessione con operatore , attualmente disponibile solo in **anteprima pubblica.**  Con Connessione con operatore, se l'operatore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire il servizio per portare le chiamate PSTN in Teams. Per informazioni sui vantaggi e i requisiti di Connessione con operatore e per un elenco degli operatori che partecipano a questo programma, vedere Pianificare Connessione con operatore [.](operator-connect-plan.md)
 
-- [**Sistema telefonico con il proprio gestore PSTN**](operator-connect-plan.md)usando operatore Connessione , attualmente disponibile solo **nell'anteprima pubblica.**  Con Operator Connessione, se l'operatore esistente è un partecipante al programma Microsoft Operator Connessione, può gestire il servizio per portare le chiamate PSTN in Teams. Per informazioni sui vantaggi e i requisiti dell'operatore Connessione e per un elenco degli operatori che partecipano a questo programma, vedere Pianificare l'operatore [Connessione](operator-connect-plan.md).
+- [**Sistema telefonico con il proprio gestore PSTN usando Il**](pstn-connectivity.md#phone-system-with-direct-routing) routing diretto per connettere l'ambiente locale a Teams.
 
 È anche possibile scegliere una combinazione di opzioni, che consente di progettare una soluzione per un ambiente complesso o di gestire una migrazione in più passaggi (altre informazioni sulla migrazione in un secondo momento).
 

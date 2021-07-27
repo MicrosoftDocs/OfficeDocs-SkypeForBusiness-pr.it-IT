@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cc1ce6eec084dfe2f4bb736f018352e0eb0e2c88
-ms.sourcegitcommit: e55d1623e686db2b183e02052bfe10a0269abb5d
+ms.openlocfilehash: b77f63afe0307d9dcf3c883d8b93242d26c7f7cc
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "51397559"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587245"
 ---
 # <a name="teams-and-outlook-email-integration"></a>Teams e Outlook di posta elettronica
 
@@ -31,7 +31,7 @@ Microsoft Teams include funzionalità che consentono agli utenti dell'organizzaz
 
 ![Screenshot che mostra la caratteristica Condividi in Outlook in Teams](media/share-to-outlook.png)
 
-Per usare questa funzionalità, Outlook sul Web deve essere attivata per l'utente. Se Outlook sul Web è disattivata,  l'opzione Condividi su Outlook non viene visualizzata in Teams per l'utente. Per informazioni su come attivare e disattivare le Outlook sul Web, vedere Abilitare o disabilitare Outlook sul [Web per una cassetta postale.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
+Per usare questa funzionalità, Outlook sul web deve essere attivata per l'utente. Se Outlook sul web è disattivata,  l'opzione Condividi su Outlook non viene visualizzata in Teams per l'utente. Per istruzioni su come attivare e disattivare le Outlook sul web, vedere Abilitare o disabilitare le Outlook sul web [per una cassetta postale.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
 
 ## <a name="actionable-activity-emails"></a>Messaggi di posta elettronica di attività utilizzabili
 
@@ -46,4 +46,4 @@ Gli utenti ottengono automaticamente messaggi di posta elettronica di attività 
 
 È possibile usare il cmdlet [Set-OrganizationConfig](/powershell/module/exchange/organization/set-organizationconfig) insieme al parametro **SmtpActionableMessagesEnabled** per disattivare i messaggi di posta elettronica utilizzabili. Per impostazione predefinita, il **parametro SmtpActionableMessagesEnabled** è impostato su **true.** L'impostazione del parametro **su false disattiva** i messaggi di posta elettronica utilizzabili Office 365. Per Teams utenti, questo significa  che l'opzione Rispondi per rispondere direttamente Outlook non è disponibile nei messaggi di posta elettronica delle attività perse. I messaggi di posta elettronica delle attività perse includono invece un'opzione Rispondi **in** Teams per consentire agli utenti di rispondere in Teams.
 
-Vedere anche [Messaggi utilizzabili in Outlook e Office 365 gruppi](https://docs.microsoft.com/outlook/actionable-messages/).
+Vedere anche [Messaggi utilizzabili in Outlook e Office 365 gruppi](/outlook/actionable-messages/).

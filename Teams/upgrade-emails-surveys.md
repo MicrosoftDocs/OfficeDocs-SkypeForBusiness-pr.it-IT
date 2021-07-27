@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e0b462488bd9faa1ef52e2e610a0ed7892898018
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6071d567972babbe16bae8ce00852be713199ef0
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809076"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53586985"
 ---
 # <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a>Messaggi di posta elettronica e sondaggi di esempio per le comunicazioni di base sull'aggiornamento
 
@@ -203,7 +203,7 @@ Should you have questions, contact <<insert alias or contact info>>.
 
 Indicare quanto sei esperto nell'eseguire le attività seguenti in Teams e se ci sono una o più attività su cui vuoi saperne di più.
 
-| &nbsp; | Molto abile | Un po' esperto | Non è affatto esperto | Per saperne di più | N/D | Incerto/non familiare | | | | |
+| &nbsp; | Molto abile | Un po' esperto | Non è affatto esperto | Per saperne di più | N/D | Incerto/non familiare |&nbsp; | &nbsp;|&nbsp; |&nbsp; |
 |---|---|---|---|---|---|---|---|---|---|---|
 | Usare Teams messaggistica istantanea/chat con altri utenti | | | | | | | | | | |
 | Usare le Teams per le riunioni online | | | | | | | | | | |

@@ -21,22 +21,22 @@ searchScope:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 889c3f4149489f6bcea44acde93d897a7f2e50e1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: d4901258f7e0422b373553beba509bdfa0673d96
+ms.sourcegitcommit: 330b5c3e299ddad5168958e4722d1e0b987372e2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092554"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53536712"
 ---
 # <a name="shifts-for-teams"></a>Turni per Teams
 
-Teams offre ai Frontline Worker dell'organizzazione gli strumenti necessari per comunicare e collaborare in modo efficace. Questo articolo illustra come configurare e gestire. Turni e usare lo strumento di gestione della pianificazione in Teams.
+Teams fornisce ai dipendenti in prima linea dell'organizzazione gli strumenti necessari per comunicare e collaborare in modo efficace. Vedere le risorse seguenti per altre informazioni su come configurare e gestire turni, lo strumento di gestione della pianificazione in Teams.
 
 ### <a name="set-up-and-manage-shifts-for-your-organization"></a>Configurare e gestire turni per l'organizzazione
 
 |               |               |               |               |
 | ------------- | ------------- | ------------- | ------------- |
-|![task-checklist-planning-teams](../media/task-checklist-planning-teams-small.svg) | **[Gestire turni nell'organizzazione](./shifts/manage-the-shifts-app-for-your-organization-in-teams.md)** |![progettazione](../media/Help-small.svg)  | **[Guida di Turni per gli operatori sul campo](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Specific_apps)** |
+|![task-checklist-planning-teams](../media/task-checklist-planning-teams-small.svg) | **[Gestire turni nell'organizzazione](./shifts/manage-the-shifts-app-for-your-organization-in-teams.md)** |![progettazione](../media/Help-small.svg)  | **[Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Specific_apps)** |
 
 ### <a name="shifts-extensions"></a>Estensioni turni
 

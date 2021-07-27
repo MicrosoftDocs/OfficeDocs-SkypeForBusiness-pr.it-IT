@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5dfc2be330f0890a73bdfa34077c910e7cfc3e84
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 705ad7ab9dbfccf12f269636e8c38312c3b8a3c7
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282713"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587225"
 ---
 # <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di idoneità degli utenti
 
@@ -43,7 +43,7 @@ Un piano di conformità ottimale per gli utenti incorpora le modalità di comuni
 > [!Tip]
 > Scaricare [l'Upgrade Success Kit per](https://aka.ms/UpgradeSuccessKit) i materiali di conformità degli utenti dei modelli, ad esempio le comunicazioni e i sondaggi degli utenti, oltre a un piano di progetto di aggiornamento di esempio e un piano di test pilota.
 
-| | |
+|&nbsp; |&nbsp; |
 |---|---|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Come si può creare un piano di conformità per facilitare e accelerare l'adozione della nuova soluzione da parte degli utenti?</li><li>Si hanno le risorse giuste per la consapevolezza, la formazione e il supporto in linea con la capacità degli utenti di gestire il cambiamento e le persone definite dall'utente?</li></ul> |
 | ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Usare l'elenco seguente per generare idee per il piano di conformità. Selezionare le attività più pertinenti o aggiungene di personalizzate per progettare un piano di conformità ottimizzato per l'organizzazione. Ricordarsi di usare una combinazione di campagne a vasta portata (per l'intera organizzazione) e campagne mirate (per gruppi di ritardo o persone specifiche) per ottenere risultati massimi.</li></ul>|

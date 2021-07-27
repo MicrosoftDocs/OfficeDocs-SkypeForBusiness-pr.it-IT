@@ -565,14 +565,14 @@ items:
         href: set-up-your-team-hierarchy.md
       - name: Chat con supervisione per tenant non didattici
         href: supervised-chat-non-edu.md
-  - name: 'Riunioni, conferenze ed eventi live'
+  - name: Panoramica su riunioni e conferenze
     items:
-      - name: 'Avvio veloce: riunioni ed eventi live'
-        href: quick-start-meetings-live-events.md
       - name: Pianificare la distribuzione
         href: deploy-meetings-microsoft-teams-landing-page.md
-      - name: Riunioni
+      - name: 'Riunioni, conferenze ed eventi live'
         items:
+          - name: Guida introduttiva
+            href: quick-start-meetings-live-events.md
           - name: Gestire i criteri di riunione
             items:
               - name: Panoramica
@@ -599,42 +599,58 @@ items:
             href: meeting-settings-in-teams.md
           - name: Messaggi di posta elettronica inviati automaticamente agli utenti in caso di modifica delle impostazioni
             href: emails-sent-to-users-when-their-settings-change-in-teams.md
-          - name: Consentire agli utenti di registrare il loro nome quando partecipano a una riunione
-            href: enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md
-          - name: Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
-            href: turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md
-          - name: Usare la tecnologia NDI® in Teams
-            href: use-NDI-in-meetings.md
-          - name: Opzione Alza la mano nelle riunioni di Teams
-            href: raise-hand-meetings.md
-          - name: Riunioni di Teams in browser non supportati
-            href: unsupported-browsers.md
-          - name: Configurare la condivisione desktop in Teams
-            href: configure-desktop-sharing.md
-          - name: Registrazione delle riunioni di Teams nel cloud
-            href: cloud-recording.md
-          - name: Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni
-            href: tmr-meeting-recording-change.md
-          - name: Integrazioni del Centro contatti
-            href: teams-contact-center.md
-          - name: Usare il componente aggiuntivo Riunione di Teams in Outlook
-            href: teams-add-in-for-outlook.md
-          - name: Configurare l'app Riunioni Skype per Teams
-            href: configure-skype-meetings-app-to-work-with-teams.md
-          - name: Configurare la funzionalità Chiamami per gli utenti
-            href: set-up-the-call-me-feature-for-your-users.md
-          - name: Ottenere un report di partecipazione alle riunioni
-            href: teams-analytics-and-reports/meeting-attendance-report.md
+          - name: Gestire le riunioni e le funzionalità per le riunioni
+            items:
+              - name: Consentire agli utenti di registrare il loro nome quando partecipano a una riunione
+                href: enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md
+              - name: Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
+                href: turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md
+              - name: Usare la tecnologia NDI® in Teams
+                href: use-NDI-in-meetings.md
+              - name: Riunioni di Teams in browser non supportati
+                href: unsupported-browsers.md
+              - name: Configurare la condivisione desktop in Teams
+                href: configure-desktop-sharing.md
+              - name: Registrazione delle riunioni di Teams nel cloud
+                href: cloud-recording.md
+              - name: Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni
+                href: tmr-meeting-recording-change.md
+              - name: Integrazioni del Centro contatti
+                href: teams-contact-center.md
+              - name: Usare il componente aggiuntivo Riunione di Teams in Outlook
+                href: teams-add-in-for-outlook.md
+              - name: Configurare l'app Riunioni Skype per Teams
+                href: configure-skype-meetings-app-to-work-with-teams.md
+              - name: Configurare la funzionalità Chiamami per gli utenti
+                href: set-up-the-call-me-feature-for-your-users.md
+              - name: Ottenere un report di partecipazione alle riunioni
+                href: teams-analytics-and-reports/meeting-attendance-report.md
+              - name: Gestire la Lavagna in Teams
+                href: manage-whiteboard.md
+              - name: Configurare il componente aggiuntivo delle riunioni di Teams per Google Workspace
+                href: google-workspace-addon-teams.md
+              - name: Interoperabilità video nel cloud
+                href: cloud-video-interop.md
+              - name: Esperienza di solo visualizzazione nelle riunioni
+                href: view-only-meeting-experience.md
           - name: Configurazione del servizio MMS (Meeting Migration Service)
             href: /SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
-          - name: Gestire la Lavagna in Teams
-            href: manage-whiteboard.md
-          - name: Configurare il componente aggiuntivo delle riunioni di Teams per Google Workspace
-            href: google-workspace-addon-teams.md
-          - name: Interoperabilità video nel cloud
-            href: cloud-video-interop.md
-          - name: Configurare webinar in Microsoft Teams
+          - name: Configurare i webinar in Microsoft Teams
             href: set-up-webinars.md
+          - name: Eventi live
+            items:
+              - name: Cosa sono gli eventi live di Teams?
+                href: teams-live-events/what-are-teams-live-events.md
+              - name: Pianificare gli eventi live di Teams
+                href: teams-live-events/plan-for-teams-live-events.md
+              - name: Configurare gli eventi live di Teams
+                href: teams-live-events/set-up-for-teams-live-events.md
+              - name: Usare PowerShell per impostare i criteri degli eventi live di Teams
+                href: teams-live-events/set-teams-live-events-policies-using-powershell.md
+              - name: Configurare le impostazioni degli eventi live di Teams
+                href: teams-live-events/configure-teams-live-events.md
+              - name: Criteri di registrazione degli eventi live
+                href: teams-live-events/live-events-recording-policies.md
       - name: Audioconferenza
         items:
           - name: Pianificare la distribuzione
@@ -725,20 +741,6 @@ items:
                 href: audio-conferencing-zones.md
               - name: 'Video: audioconferenza in Teams'
                 href: ./audio-conferencing-in-office-365.md
-      - name: Eventi live
-        items:
-          - name: Cosa sono gli eventi live di Teams?
-            href: teams-live-events/what-are-teams-live-events.md
-          - name: Pianificare gli eventi live di Teams
-            href: teams-live-events/plan-for-teams-live-events.md
-          - name: Configurare gli eventi live di Teams
-            href: teams-live-events/set-up-for-teams-live-events.md
-          - name: Usare PowerShell per impostare i criteri degli eventi live di Teams
-            href: teams-live-events/set-teams-live-events-policies-using-powershell.md
-          - name: Configurare le impostazioni degli eventi live di Teams
-            href: teams-live-events/configure-teams-live-events.md
-          - name: Criteri di registrazione degli eventi live
-            href: teams-live-events/live-events-recording-policies.md
       - name: Microsoft Teams Rooms
         items:
           - name: Panoramica

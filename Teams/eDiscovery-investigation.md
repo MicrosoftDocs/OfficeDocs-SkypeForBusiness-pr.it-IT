@@ -17,12 +17,12 @@ description: Informazioni su cosa fare quando è necessario eseguire eDiscovery,
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ebc1bb12b8a864e65cf6cb26b3d2022ae2e1563b
-ms.sourcegitcommit: e023c3023f49e196315e176ce346f0dc5825fa56
+ms.openlocfilehash: b9010bb233438029d6e755cf1fcd8b78b7cba6eb
+ms.sourcegitcommit: 79d20fa2c45173d5a990551e79571caff06d7f82
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53275685"
+ms.lasthandoff: 07/20/2021
+ms.locfileid: "53486166"
 ---
 # <a name="conduct-an-ediscovery-investigation-of-content-in-microsoft-teams"></a>Condurre un'indagine di eDiscovery sul contenuto in Microsoft Teams
 
@@ -213,111 +213,9 @@ Quando si visualizza il contenuto della scheda nei risultati della ricerca conte
 > [!NOTE]
 > Per visualizzare immagini dal contenuto della scheda nei risultati della ricerca in questo momento, ad esempio i segni di spunta nello screenshot precedente, è necessario accedere a Teams (in un'altra scheda nella stessa sessione del browser che si usa per visualizzare i risultati della https://teams.microsoft.com) ricerca. In caso contrario, vengono visualizzati i segnaposto immagine.
 
-## <a name="advanced-ediscovery"></a>Advanced eDiscovery
-
-Alcuni Microsoft Teams possono anche essere cercati e mantenuti usando il flusso [Advanced eDiscovery flusso di lavoro.](/microsoft-365/compliance/overview-ediscovery-20) Mentre eDiscovery offre una gamma di funzionalità di ricerca, blocco ed esportazione, Advanced eDiscovery offre agli amministratori di conformità più strumenti per identificare le origini dati e analizzarne il contenuto.
-
-### <a name="advanced-ediscovery-custodian-workflow-for-teams-content"></a>Advanced eDiscovery flusso di lavoro di custodia per Teams contenuto
-
-I custodi potrebbero essere membri di vari team. È possibile acquisire Teams contenuti rilevanti per questi custodi. Per istruzioni sul flusso di lavoro del responsabile, vedere Aggiungere i custodi a un [Advanced eDiscovery caso.](/microsoft-365/compliance/add-custodians-to-case)
-
-Dopo aver aggiunto un responsabile, fare clic **sul pulsante** Avanti, quindi sul **pulsante** Aggiungi. Viene quindi visualizzata una finestra in cui viene chiesto di selezionare altre posizioni, in cui sono visualizzate tutte le appartenenze del responsabile e le posizioni del sito SharePoint corrispondenti per i dati. Da tutte queste origini dati e team è possibile scegliere il contenuto da usare per eDiscovery, quindi mettere l'utente e tutte le origini dati identificate in blocco.
-
-È possibile scegliere se includere il contenuto Exchange, il OneDrive o entrambi. Exchange contenuto include tutto il contenuto dell'applicazione nelle cassette postali dell'utente, ad esempio la posta elettronica, il contenuto Teams archiviato nella cassetta postale e così via. Il contenuto OneDrive include non solo il contenuto dell'utente, ma anche tutto il contenuto di Teams archiviato in OneDrive, ad esempio chat 1:1, chat 1:N e file condivisi nelle chat.
-
-È anche possibile associare qualsiasi team di cui il responsabile è membro, in modo che siano inclusi i messaggi di chat del canale e i file a cui il responsabile ha accesso. Inoltre, qualsiasi altro team può essere associato a un responsabile.
-
-> [!NOTE]
-> eDiscovery dei messaggi e dei file nei [canali privati](private-channels.md) funziona in modo diverso rispetto ai canali standard. Per altre informazioni, vedere [eDiscovery dei canali privati.](#ediscovery-of-private-channels)
-
-### <a name="placing-a-data-source-on-hold"></a>Applicazione di un blocco a un'origine dati
-
-Se non esiste un utente specifico da designare come responsabile, è possibile mettere in blocco un'intera origine dati. Per altre informazioni sui blocchi, vedere [Gestire i blocchi in Advanced eDiscovery](/microsoft-365/compliance/managing-holds).
-
-Quando si crea un blocco Teams contenuto, è possibile scegliere tutte le posizioni da includere nel blocco. Anche se gli utenti eliminano o modificano il contenuto, il blocco manterrà copie di tutte le versioni precedenti del contenuto.
-
-È anche possibile usare una query facoltativa per impostare condizioni per il blocco in base a parole chiave, intervallo di date, autore e molti altri criteri. Se non si specificano parole chiave, tutti gli elementi dell'origine dati saranno soggetti al blocco.
-
-### <a name="advanced-ediscovery-searches"></a>Advanced eDiscovery ricerche
-
-Teams ricerca è possibile eseguire ricerche anche nel contenuto. Per altre informazioni sulle ricerche, vedere [Raccogliere dati per un caso in Advanced eDiscovery](/microsoft-365/compliance/collecting-data-for-ediscovery). Una ricerca restituirà un'intera conversazione se anche un messaggio corrisponde alla query di ricerca.
-
-Quando si crea una query di ricerca, è possibile scegliere i custodi in modo che la ricerca sia eseguita in tutte le origini già selezionate. È anche possibile eseguire ricerche in origini non custodiali, ad esempio un sito Teams non mappato a un utente. Sono disponibili anche query facoltative per restringere la ricerca all'interno Teams contenuto.
-
-Dopo aver creato e selezionato una ricerca, viene visualizzata una finestra con altri dettagli e azioni che è possibile eseguire sulla ricerca selezionata. Se si  fa clic sul pulsante Statistiche, è possibile visualizzare le statistiche sulla ricerca, incluse le suddivisioni in base ai tipi di posizione, all'origine originale per il contenuto e al fatto che il contenuto si trovi in una cassetta postale di gruppo, nella cassetta postale del singolo utente o in un sito di SharePoint. È quindi possibile visualizzare un'analisi delle origini che contribuiscono ai risultati della ricerca. È disponibile anche una **visualizzazione** Query che consente di vedere le singole parole chiave che contribuiscono ai risultati.
-
-Dopo aver finalizzato la ricerca, è possibile fare clic sul **pulsante Aggiungi risultati** per rivedere il set e aggiungerlo a un set di revisioni. Per altre informazioni sui set di revisioni, vedere [Gestire](/microsoft-365/compliance/managing-review-sets) i set di Advanced eDiscovery e [Il flusso di](#review-sets-workflow) lavoro Set di revisioni più avanti in questo articolo.
-
-#### <a name="normal-review-sets-and-conversation-review-sets"></a>Set di revisione normali e set di revisione delle conversazioni
-
-Quando si aggiunge una ricerca a un set di revisioni, è possibile scegliere tra un set di revisioni normale o un set di revisioni di conversazione.
-
-Un set di revisioni normale è simile a un'esportazione. fornisce i singoli file per il contenuto Teams e `.msg` presenta il contenuto in una visualizzazione di base. In genere si usa un normale set di revisioni quando si prevede di usare altri strumenti software per rielaborare i file in un secondo momento.
-
-Un set di revisione delle conversazioni offre una visualizzazione in thread più intuitiva delle conversazioni; visualizza i messaggi correlati nell'ordine corretto.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot del set di revisioni delle conversazioni](media/conversationOptions2.png)
-
-Funzionalità come la redazione sono disponibili in entrambi i tipi di set di revisioni. Per altre informazioni sui set di revisioni, vedere [Rivedere le conversazioni in eDiscovery avanzato.](/microsoft-365/compliance/conversation-review-sets)
-
-#### <a name="collection-options"></a>Opzioni di raccolta
-
-Quando si aggiunge un set di revisioni, sono  disponibili diverse opzioni come  caselle di controllo nella sezione Opzioni raccolta della finestra, tra cui Opzioni di recupero conversazioni e Teams **Conversazioni**. Se si abilitano queste opzioni, verranno visualizzati Teams singoli messaggi che fanno parte del set di revisioni, con altri messaggi che li circondano per il contesto. Ad esempio, se la query è specifica e di conseguenza viene restituito un solo messaggio, l'abilitazione di queste opzioni restituirà anche diversi messaggi che portano e segue il messaggio corrispondente alla query.
-
-Molti criteri logici vengono usati per determinare se altri messaggi forniscono contesto ai messaggi che corrispondono alla query. Ad esempio, per Teams contenuto, l'abilitazione di queste opzioni recupererà il messaggio padre e tutti i messaggi figlio a causa del modo in cui i messaggi sono in thread.
-
-Vengono controllati anche gli indicatori di data e ora dei messaggi. Se un messaggio corrisponde alla query, i messaggi adiacenti che lo precedono entro un intervallo di 4 ore o che lo seguono entro un intervallo di 4 ore vengono considerati parte della conversazione e vengono inclusi anche nei risultati.
-
-Se è necessario essere certi di quali messaggi contestuali verranno restituiti con corrispondenze alla query di ricerca, non è necessario usare queste opzioni. È possibile raccogliere tutto il contenuto oppure ampliare l'intervallo di date della ricerca in modo che più messaggi siano restituiti come risultato della query.
-
-### <a name="review-sets-workflow"></a>Flusso di lavoro set di revisioni
-
-È possibile visualizzare i set di revisioni esistenti o crearne di nuovi facendo clic **sulla scheda Set di** revisioni. Per altre informazioni sui set di revisioni, vedere [Gestire i set di revisioni in Advanced eDiscovery](/microsoft-365/compliance/managing-review-sets).
-
-Oltre ai documenti, è possibile aggiungere messaggi di posta elettronica, Teams, messaggi Yammer e altri contenuti al set di revisioni. All'interno di un set di revisioni è anche possibile eseguire molte delle stesse operazioni che è possibile eseguire in altri contesti, ad esempio la ricerca di contenuto e la creazione di query personalizzate. Queste operazioni si applicano solo agli elementi aggiunti al set di revisioni.
-
-Il **pulsante Gestisci set di revisioni** include opzioni aggiuntive, ad esempio analisi, report di riepilogo, il numero di set di caricamento aggiunti e così via.
-
-Per accedere alle visualizzazioni e ai grafici dei dati, fare clic su **Risultati singoli** Visualizzazione profilo di \> **ricerca** in alto a destra. È possibile fare clic sui cunei in questi grafici per selezionare in modo interattivo il tipo di contenuto su cui eseguire una query. Ad esempio, è possibile scegliere di eseguire query solo Teams contenuto. È anche possibile salvare queste query esattamente come si salvano le query che si scrivono manualmente.
-
-#### <a name="summary-view-text-view-and-annotate-view"></a>Visualizzazione Riepilogo, visualizzazione testo e visualizzazione annotazioni
-
-Se si fa clic su Teams conversazione nel set di revisioni, viene visualizzata la visualizzazione Riepilogo, che visualizza un'intera conversazione Teams come elenco di messaggi con cui è possibile interagire singolarmente. Fare clic sulla freccia rivolta verso il basso a destra di un messaggio per visualizzare un menu di scelta rapida che consente di visualizzare i dettagli del messaggio o scaricare il singolo `.msg` file. Se si fa clic sui dettagli del messaggio, viene visualizzato un riepilogo dei metadati o dei metadati completi del messaggio.
-
-Per scaricare un PDF, fare clic sul pulsante di download nell'angolo in alto a destra della visualizzazione di riepilogo.
-
-Fare clic **sulla scheda Visualizzazione** testo per visualizzare una visualizzazione testo normale del testo estratto della conversazione Teams conversazione. Questo contenuto in testo normale è adatto per l'esportazione e può essere facilmente utilizzato con altri strumenti software.
-
-Fare clic sulla scheda **Visualizzazione annotazioni** per accedere alle caratteristiche di annotazione. Questa scheda visualizza il contenuto in un formato simile a Teams conversazione, ma sono disponibili anche altre opzioni per la modifica. È disponibile uno strumento a matita che è possibile usare per creare note, disegnare sul messaggio o eseguire graffi a grana fine a scopo di redazione. È anche disponibile uno **strumento di riattivazione** area che è possibile usare per disegnare un rettangolo che nere l'area e lo contrassegna come "Rifatto".
-
-Ecco un esempio di file redacted per la conversazione in thread tra utenti.
-
-> [!div class="mx-imgBorder"]
-> ![Screenshot del file redacted](media/RedactedFileExample.png)
-
-Nella parte inferiore della scheda **Visualizzazione annotazioni** è visualizzato il **pulsante** Contrassegna documenti, che visualizza il riquadro di aggiunta di tag. All'interno di questo riquadro, è possibile applicare un tag a tutti i messaggi all'interno Teams conversazione. È possibile etichettare una conversazione come reattiva o non reattiva, privilegiata o non privilegiata, se contiene "Elementi interessanti", se deve essere inclusa nell'esportazione e se deve essere ulteriormente esaminata. È anche possibile gestire e applicare altri tag personalizzabili.
-
-#### <a name="action-menu"></a>Menu Azioni
-
-All'interno della finestra dei set di revisioni è possibile esportare il contenuto facendo clic **su Azione** \> **esporta.** Durante l'esportazione sono disponibili molte opzioni.
-
-Per esportare un file che contiene tutti i metadati per Teams messaggi, fare clic per selezionare la **casella di controllo Carica file.** Per includere nel file tutti i tag applicati al contenuto, fare clic per selezionare la casella **di controllo** Contrassegni.
-
-Usare **l'opzione File** nativi per esportare i file nel formato nativo. È possibile scegliere di esportare una conversazione come un unico file o tutti i singoli messaggi di chat nei propri file separati.
-
-**L'opzione File** di testo consente di salvare versioni di contenuto in testo normale. Per altre informazioni su come ottenere una visualizzazione di testo normale Teams conversazioni nel set di revisioni, vedere visualizzazione Riepilogo, visualizzazione testo e visualizzazione [di annotazione](#summary-view-text-view-and-annotate-view) sopra.
-
-Se sono state applicate modifiche al contenuto come descritto nella sezione [Riepilogo,](#summary-view-text-view-and-annotate-view) visualizzazione testo e  visualizzazione annotazioni precedente, è possibile selezionare l'opzione Sostituisci i nativi con PDF convertiti per sostituire i file nativi con copie convertite in PDF.
-
-È possibile scegliere di esportare in un contenitore di archiviazione BLOB di Azure fornito da Microsoft oppure fornire un contenitore di archiviazione BLOB di Azure personalizzato.
-
-Quando si è pronti per iniziare il processo di esportazione, fare clic **sul pulsante** Esporta. Vedere [Scaricare i processi di esportazione](/microsoft-365/compliance/download-export-jobs) per altre informazioni su come accedere al contenitore di archiviazione BLOB di Azure e scaricare il contenuto esportato al termine dell'esportazione.
-
-> [!NOTE]
-> L'esportazione può richiedere un periodo di tempo prolungato. Per tenere traccia dello stato del processo di esportazione, chiudere la scheda **Set di** revisioni e fare clic sulla **scheda** Esportazioni.
-
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [eDiscovery in Microsoft 365](/microsoft-365/compliance/ediscovery)
+- [Microsoft 365 eDiscovery](/microsoft-365/compliance/ediscovery)
+- [Introduzione a Core eDiscovery](/microsoft-365/compliance/get-started-core-ediscovery)
+- [Teams flusso di lavoro in Advanced eDiscovery](/microsoft-365/compliance/teams-workflow-in-advanced-ediscovery)
 - [Teams Panoramica di PowerShell](teams-powershell-overview.md)

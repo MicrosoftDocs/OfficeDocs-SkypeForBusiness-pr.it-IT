@@ -11,15 +11,17 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
-description: Panoramica dell'utilizzo di un operatore automatico cloud con Skype for Business Server 2019.
-ms.openlocfilehash: 62731691f4e56c923d2dd8fa6057f244776ec65b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Panoramica dell'uso di un operatore automatico cloud con Skype for Business Server 2019.
+ms.openlocfilehash: 79682e7079519c2c9532aecdd79a43a6d2e8b30b
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51110492"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53509807"
 ---
 # <a name="plan-cloud-call-queues"></a>Pianificare le code delle chiamate cloud
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 La coda delle chiamate cloud è un servizio che accetta le chiamate dei clienti, riproduce un messaggio di saluto e quindi le inserisce in una coda di attesa durante la ricerca di un elenco preconfigurato di agenti per rispondere a queste chiamate. È possibile definire il set di agenti nelle liste di distribuzione abilitate alla posta o nei gruppi di sicurezza. L'organizzazione può avere una o più code di chiamata. Le code di chiamata vengono in genere utilizzate in combinazione con gli operatori automatici.
 
@@ -41,11 +43,11 @@ I requisiti seguenti presuppongono che Skype for Business Server 2019 sia già s
 
 Oltre ai requisiti indicati in precedenza, è necessario configurare i requisiti seguenti per la connessione al servizio di coda delle chiamate di Microsoft Cloud:
 
-- Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario assicurarsi di avere configurato la connettività ibrida tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
+- Connettività ibrida. Se sono già state distribuite Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
 
-   Per ulteriori informazioni, vedere Pianificare la connettività ibrida tra Skype for Business Server e [Microsoft 365 o Office 365](plan-hybrid-connectivity.md) e Configurare la connettività ibrida tra Skype for Business Server e [Microsoft 365 o Office 365.](configure-hybrid-connectivity.md)
+   Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) e Configure hybrid connectivity between Skype for Business Server and Microsoft 365 or [Office 365](configure-hybrid-connectivity.md).
 
-- Se stai assegnando un numero di telefono a un account della risorsa, ora puoi usare la licenza utente virtuale sistema telefonico gratuita. In questo modo sono disponibili funzionalità del sistema telefonico per i numeri di telefono a livello dell'organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
+- Se stai assegnando un numero di telefono a un account di risorsa, ora puoi usare la licenza Sistema telefonico virtual user gratuita. In questo modo Sistema telefonico ai numeri di telefono a livello dell'organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
 
 - Creare un account di risorsa [locale](configure-onprem-ra.md) per ogni coda di chiamata e assegnare una licenza e un numero di telefono, se necessario.  
 
