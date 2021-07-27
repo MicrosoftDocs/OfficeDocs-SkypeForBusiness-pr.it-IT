@@ -17,14 +17,16 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni su come gestire le voci DNS durante la rimozione delle autorizzazioni dell'ambiente Skype for Business locale.
-ms.openlocfilehash: a5321aa187a88505b3973c3e5418f4a88e1e6f69
-ms.sourcegitcommit: 79d20fa2c45173d5a990551e79571caff06d7f82
+ms.openlocfilehash: d51cd3bb7617eaca563de35e708bb6ab56368ab3
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2021
-ms.locfileid: "53486246"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510767"
 ---
 # <a name="update-dns-entries-to-enable-your-organization-to-be-all-teams-only"></a>Aggiornare le voci DNS per consentire all'organizzazione di essere Teams solo
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 Le organizzazioni che in precedenza avevano distribuzioni locali di Skype for Business Server o Lync Server potrebbero avere ancora voci DNS che puntano a una distribuzione Skype for Business locale. Questi record sono necessari se l'organizzazione include utenti Skype for Business locali. Tuttavia, una volta che l'organizzazione non ha più utenti di Skype for Business o Lync Server locali, questi record originali non sono più necessari per la distribuzione locale e queste voci DNS devono essere aggiornate in modo che puntino **a Microsoft 365 (o in** alcuni casi rimosse) come parte della migrazione da locale a solo Teams. *Microsoft non può aggiornare questi record DNS per conto dell'utente.*
 

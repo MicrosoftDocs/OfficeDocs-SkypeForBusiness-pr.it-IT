@@ -20,12 +20,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f7c55d6192c4c3aa8aa9b00def41b998410bcb60
-ms.sourcegitcommit: 3173bb338a4b79f9443941a3def4223360e45f61
+ms.openlocfilehash: 88a9f86ae72bcc86ba2a1c7d252950c6b11cbf36
+ms.sourcegitcommit: 0c3ff4933360813b9c6d78adea02f42688dea997
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/19/2021
-ms.locfileid: "53479053"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "53463299"
 ---
 # <a name="quick-start---meetings-webinars-and-live-events"></a>Guida introduttiva: riunioni, webinar ed eventi live 
 
@@ -54,7 +54,7 @@ La tabella seguente riepiloga brevemente i tre tipi di riunioni, il numero di pa
 
 *Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021.<br>
 
-**Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance). 
+**Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](https://docs.microsoft.com/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](https://docs.microsoft.com/stream/live-events-assistance). 
 
 Per un'esperienza ottimale nelle riunioni di grandi dimensioni, Microsoft consiglia di usare il client desktop di Teams o i client per dispositivi mobili di Teams. Nelle riunioni di grandi dimensioni, i relatori dovrebbero usare il client desktop di Teams. Per altri suggerimenti su come ospitare riunioni di grandi dimensioni, vedere [Procedure consigliate per le riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16).
 
