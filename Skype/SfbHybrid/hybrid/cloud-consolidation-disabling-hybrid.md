@@ -1,5 +1,5 @@
 ---
-title: Disabilitare la distribuzione ibrida per completare la migrazione Teams solo
+title: Disabilitare la soluzione ibrida per completare la migrazione a solo Team
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -21,14 +21,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Questo articolo include la procedura dettagliata per disabilitare l'ambiente ibrido come parte del consolidamento del cloud per Teams e Skype for Business.
-ms.openlocfilehash: 87bd1f6e0dcabed067174972dd0f0fc51149beb0
-ms.sourcegitcommit: 405b22cfd94e50d651f4c3f73fb46780cd8a6d06
+ms.openlocfilehash: 90f3b6d5cd533ca92966a46dd271d2f82f40acc4
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53453645"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510507"
 ---
 # <a name="disable-your-hybrid-configuration-to-complete-migration-to-teams-only"></a>Disabilitare la configurazione ibrida per completare la migrazione a Teams solo 
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
 
 In questo articolo viene descritto come disabilitare la configurazione ibrida prima di rimuovere le autorizzazioni dell'ambiente Skype for Business locale. Questo è il passaggio 2 della procedura seguente per rimuovere le autorizzazioni dell'ambiente locale:
 

@@ -293,6 +293,8 @@ items:
             href: legal-hold.md
           - name: Ricerca contenuto
             href: content-search.md
+          - name: Flusso di lavoro di Teams in Advanced eDiscovery
+            href: /microsoft-365/compliance/teams-workflow-in-advanced-ediscovery
           - name: Controllo
             href: audit-log-events.md
           - name: Customer Key
@@ -813,7 +815,7 @@ items:
                 href: rooms/rooms-manage.md
               - name: Manutenzione e operazioni
                 href: rooms/rooms-operations.md
-              - name: Supportare Teams nell'organizzazione
+              - name: Problemi noti
                 href: rooms/known-issues.md
               - name: Dispositivi con Monitoraggio di Azure
                 href: rooms/azure-monitor-manage.md
@@ -899,7 +901,13 @@ items:
                 href: configuring-teams-calling-quickstartguide.md
               - name: Disponibilità di Piano di chiamata per Paesi e aree geografiche
                 href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
-          - name: Instradamento diretto di Sistema telefonico
+          - name: Connessione con operatore
+            items:
+              - name: Piano per la connessione con operatore
+                href: operator-connect-plan.md
+              - name: Configurare la connessione con operatore
+                href: operator-connect-configure.md
+          - name: Instradamento diretto
             items:
               - name: Panoramica
                 href: direct-routing-landing-page.md
@@ -975,12 +983,6 @@ items:
                         href: direct-routing-protocols-media.md
                   - name: Instradamento diretto di Survivable Branch Appliance
                     href: direct-routing-survivable-branch-appliance.md
-          - name: Connessione con operatore
-            items:
-              - name: Piano per la connessione con operatore
-                href: operator-connect-plan.md
-              - name: Configurare la connessione con operatore
-                href: operator-connect-configure.md
       - name: Numeri di telefono
         items:
           - name: Gestire i numeri di telefono per la propria organizzazione

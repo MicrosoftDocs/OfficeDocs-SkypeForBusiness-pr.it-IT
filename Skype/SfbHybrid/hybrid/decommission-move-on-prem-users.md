@@ -17,14 +17,16 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Spostare gli utenti prima di rimuovere un Skype for Business locale.
-ms.openlocfilehash: 992f2dd479e0b8ca8a3f11f069e8ef049259ad9c
-ms.sourcegitcommit: f39484688800a3d22f361e660d0eeba974a44fb1
+ms.openlocfilehash: bc98ebfcfb7ad4d4b2c64942b5f84500a98cdc84
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420811"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510717"
 ---
 # <a name="move-required-users-before-decommissioning-your-on-premises-environment"></a>Spostare gli utenti necessari prima di rimuovere le autorizzazioni dell'ambiente locale
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 In questo articolo viene descritto come spostare gli utenti necessari nel cloud Microsoft prima di rimuovere le autorizzazioni dell'ambiente Skype for Business locale. Questo è il passaggio 1 della procedura seguente per rimuovere le autorizzazioni dell'ambiente locale:
 

@@ -17,17 +17,20 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 ms.custom: ''
-description: 'Riepilogo: informazioni su come configurare la federazione per un provider di servizi di audioconferenza in Skype for Business online.'
-ms.openlocfilehash: 5d9c49299452f579cd7c58adf54facb09f0b8a21
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: informazioni su come configurare la federazione per un provider di servizi di audioconferenza in Skype for Business Online.'
+ms.openlocfilehash: 4c2f0b9163202ff8469f2a2223c88ba10db193c3
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118975"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510567"
 ---
 # <a name="configure-federation-for-an-audio-conferencing-provider-in-your-hybrid-deployment"></a>Configurare la federazione per un provider di servizi di audioconferenza nella distribuzione ibrida
 
-**Riepilogo:** Informazioni su come configurare la federazione per un provider di servizi di audioconferenza in Skype for Business online.
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
+
+**Riepilogo:** Informazioni su come configurare la federazione per un provider di servizi di audioconferenza in Skype for Business Online.
 
 Se si desidera utilizzare un provider di servizi di audioconferenza (ACP) nella distribuzione ibrida (locale con online), è necessario configurare la federazione tra la distribuzione locale e il partner ACP come server partner consentito. È possibile configurare la federazione aggiungendo il dominio partner ACP e il server perimetrale (denominato anche proxy di accesso) all'elenco Domini federati per la distribuzione locale. Il partner ACP deve quindi aggiungere il nome di dominio completo del pool di server perimetrali locale all'elenco dei domini federati consentiti. Per ulteriori dettagli, contattare il provider ACP. Il partner ACP deve quindi aggiungere il nome di dominio completo del pool di server perimetrali locale all'elenco dei domini federati consentiti.
 

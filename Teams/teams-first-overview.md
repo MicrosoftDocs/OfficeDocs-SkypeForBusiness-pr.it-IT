@@ -15,12 +15,12 @@ description: Usare queste indicazioni per implementare Microsoft Teams come prim
 ROBOTS: NOINDEX, NOFOLLOW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 81ecf9a0f963a1be577149c585424c140df2abd5
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 89fb1ac43e199b3c8081735705a7d05bfcae710b
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119355"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587365"
 ---
 # <a name="roll-out-microsoft-teams-first"></a>Implementare Microsoft Teams First
 
@@ -113,7 +113,8 @@ Questo punto di partenza presuppone che l'organizzazione non usa attualmente Sky
 <td><p>Possibilità di creare riunioni interne ed esterne tramite Outlook componente aggiuntivo.</p>
 <p>Con le licenze di audioconferenza è disponibile la funzionalità Di accesso esterno e Chiamata in uscita PSTN.</p>
 <p>Teams l'accesso al calendario richiede Exchange 2016 CU3+ locale distribuito con una distribuzione ibrida di Exchange: Creare una distribuzione ibrida con la procedura guidata Configurazione <a href="/exchange/hybrid-deployment/deploy-hybrid">ibrida.</a> </p>
-<p>Oltre alla Exchange ibrida, stabilire Exchange autenticazione OAuth: Configurare l'autenticazione OAuth tra Exchange e <a href="https://docs.microsoft.com/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help"> Exchange Online organizzazioni".</p>
+
+Oltre alla configurazione ibrida Exchange, stabilire Exchange autenticazione OAuth: Configurare l'autenticazione [OAuth](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)tra Exchange e Exchange Online organizzazioni . 
 
 </p></td>
 </tr>
@@ -192,7 +193,7 @@ Questo punto di partenza presuppone che l'organizzazione Skype for Business serv
 <p>Con le licenze di audioconferenza è disponibile la funzionalità Di accesso esterno e Chiamata in uscita PSTN.</p>
 <p>Teams l'accesso al calendario richiede Exchange 2016 CU3+ locale distribuito con Exchange ibrido stabilito:<br />
 <a href="/exchange/hybrid-deployment/deploy-hybrid">Creare una distribuzione ibrida con la procedura guidata Configurazione ibrida.</a></p>
-<p>L'amministratore può controllare Skype for Business Outlook componente aggiuntivo tramite l'attributo PreferredMeetingProviderForIslandsMode del criterio di riunione Teams:<a href="/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps"> set-csteamsmeetingpolicy</a>.</p> 
+<p>L'amministratore può controllare Skype for Business Outlook componente aggiuntivo tramite l'attributo PreferredMeetingProviderForIslandsMode del criterio di riunione Teams:<a href="/powershell/module/skype/set-csteamsmeetingpolicy"> set-csteamsmeetingpolicy</a>.</p> 
 </td>
 </tr>
 <tr class="even">

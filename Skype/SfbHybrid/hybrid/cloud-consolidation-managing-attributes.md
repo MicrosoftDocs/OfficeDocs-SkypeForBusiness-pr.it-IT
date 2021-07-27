@@ -21,14 +21,17 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: In questo articolo viene descritto come gestire gli attributi dopo la rimozione delle autorizzazioni dell'ambiente locale.
-ms.openlocfilehash: 1c862e8c0055fc2eb40efcc7d26bb9a1166ae550
-ms.sourcegitcommit: 405b22cfd94e50d651f4c3f73fb46780cd8a6d06
+ms.openlocfilehash: d8c61e1a5a76206cadd8ab4ae3ed51de77badc74
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "53458992"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510647"
 ---
 # <a name="decide-how-to-manage-attributes-after-decommissioning"></a>Decidere come gestire gli attributi dopo la rimozione delle autorizzazioni
+
+[!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
+
 
 Per impostazione predefinita, tutti gli utenti precedentemente abilitati per Skype for Business Server e successivamente spostati nel cloud hanno ancora attributi msRTCSIP configurati in Active Directory locale. 
 

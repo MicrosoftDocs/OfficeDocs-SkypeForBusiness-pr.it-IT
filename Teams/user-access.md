@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 770dcea62d6f3dc65f576a3d64a520dd4de2ecad
-ms.sourcegitcommit: 950387da2a2c094b7580bcf81ae5d8b6dfba0d6b
+ms.openlocfilehash: c996df5c0253f3eee02a2b76297952ccf9cf56d3
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51637728"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587485"
 ---
 # <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
@@ -33,18 +33,18 @@ ms.locfileid: "51637728"
 Per impostazione predefinita, quando a un utente viene assegnato un piano di licenza, ad esempio Microsoft 365 Enterprise E3 o Microsoft 365 Business Premium, viene assegnata automaticamente una licenza Teams e l'utente è abilitato per Teams. È possibile disabilitare o abilitare Teams per un utente rimuovendo o assegnando una licenza in qualsiasi momento.
 
 Usare i criteri di messaggistica, gestiti <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">dall'interfaccia</a>di amministrazione di Teams , per controllare quali funzionalità di messaggistica di chat e canale sono disponibili per gli utenti in Teams. È possibile usare i criteri predefiniti o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Per altre informazioni, vedere [Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md).
-È possibile gestire Teams licenze nell'Microsoft 365 di amministrazione o usando PowerShell. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
+È possibile gestire Teams licenze nel interfaccia di amministrazione di Microsoft 365 o usando PowerShell. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
 
 > [!NOTE]
 > È consigliabile abilitare la Teams per tutti gli utenti in modo che i team possano essere formati organicamente per progetti e altre iniziative dinamiche. Anche se si esegue un progetto pilota, può essere comunque utile mantenere abilitata l'Teams per tutti gli utenti, ma solo per le comunicazioni mirate al gruppo pilota di utenti.
 
-## <a name="using-the-microsoft-365-admin-center"></a>Uso dell'Microsoft 365 di amministrazione
+## <a name="using-the-microsoft-365-admin-center"></a>Uso del interfaccia di amministrazione di Microsoft 365
 
-Teams le licenze a livello di utente vengono gestite direttamente tramite le interfacce di gestione Microsoft 365 di amministrazione. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o agli utenti con account esistenti. 
+Teams licenze a livello utente vengono gestite direttamente tramite le interfacce interfaccia di amministrazione di Microsoft 365 di gestione utente. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o agli utenti con account esistenti. 
 
 > [!IMPORTANT]
 > L'amministratore deve avere i privilegi di amministratore globale o di amministratore di gestione utenti per gestire Microsoft Teams licenze.
-Usare l Microsoft 365 di amministrazione per gestire Teams licenze per singoli utenti o piccoli set di utenti alla volta. È possibile gestire Teams licenze nella **pagina Licenze** (per un massimo di 20 utenti contemporaneamente) o nella **pagina Utenti** attivi. Il metodo scelto varia a seconda che si vogliano gestire licenze di prodotto per utenti specifici o licenze utente per prodotti specifici.
+Usare il interfaccia di amministrazione di Microsoft 365 per gestire Teams licenze per singoli utenti o piccoli set di utenti alla volta. È possibile gestire Teams licenze nella **pagina Licenze** (per un massimo di 20 utenti contemporaneamente) o nella **pagina Utenti** attivi. Il metodo scelto varia a seconda che si vogliano gestire licenze di prodotto per utenti specifici o licenze utente per prodotti specifici.
 
 Se è necessario gestire le licenze Teams per un numero elevato di utenti, ad esempio centinaia o migliaia di utenti, usare [PowerShell](#using-powershell) o le licenze basate su gruppo [in Azure Active Directory (Azure AD).](/azure/active-directory/users-groups-roles/licensing-groups-assign) 
 
@@ -52,9 +52,9 @@ Se è necessario gestire le licenze Teams per un numero elevato di utenti, ad es
 
 I passaggi variano a seconda che si usi la **pagina Licenze** o la **pagina Utenti** attivi.  Per istruzioni dettagliate, vedere [Assegnare licenze agli utenti.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
-|||
+|&nbsp;|&nbsp;|
 |---------|---------|
-|![Screenshot della Teams licenza abilitata per un utente](media/assign-teams-licenses-1.png)    | ![Screenshot della Teams licenza abilitata per un utente](media/assign-teams-licenses-2.png)        |
+|![Screenshot 1 della licenza Teams abilitata per un utente](media/assign-teams-licenses-1.png)    | ![Screenshot 2 della licenza Teams abilitata per un utente](media/assign-teams-licenses-2.png)        |
 
 ### <a name="remove-a-teams-license"></a>Rimuovere una Teams licenza
 
@@ -63,9 +63,9 @@ I passaggi variano a seconda che si usi la **pagina Licenze** o la **pagina Uten
 
 Quando si rimuove una licenza Teams da un utente, il Teams viene disabilitato per tale utente e non sarà più visualizzato Teams nell'icona di avvio delle app o nella home page. Per la procedura dettagliata, vedere [Annullare l'assegnazione di licenze da parte degli utenti.](/microsoft-365/admin/manage/remove-licenses-from-users)
 
-|||
+|&nbsp;|&nbsp;|
 |---------|---------|
-|![Screenshot della licenza Teams disabilitata per un utente](media/remove-teams-licenses-1.png)    | ![Screenshot della licenza Teams disabilitata per un utente](media/remove-teams-licenses-2.png)        |
+|![Screenshot 1 della licenza Teams disabilitata per un utente](media/remove-teams-licenses-1.png)    | ![Screenshot 2 della licenza Teams disabilitata per un utente](media/remove-teams-licenses-2.png)        |
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
 

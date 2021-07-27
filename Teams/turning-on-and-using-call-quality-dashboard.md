@@ -23,14 +23,14 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard qualità delle chiamate e ottenere report di riepilogo sulla qualità delle chiamate.
-ms.openlocfilehash: c71cb25732a99f207467a988ad0db54c959d15f4
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 8c720a9ef99537be517f29a8b558db8912ea6a75
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52254269"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53596644"
 ---
-# <a name="set-up-call-quality-dashboard-cqd"></a>Configurare call quality dashboard (CQD)
+# <a name="how-to-set-up-call-quality-dashboard"></a>Come configurare il dashboard qualità delle chiamate
 
 Aprire microsoft Call Quality Dashboard (CQD) all'indirizzo [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) (accedere con le credenziali di amministratore). Oppure vai all'interfaccia di Teams e seleziona **Call Quality Dashboard**. 
 
@@ -51,7 +51,7 @@ Assegnare [ruoli](/microsoft-365/admin/add-users/about-admin-roles) per l'access
 Se si vuole che gli utenti non amministratori, ad esempio tecnici del supporto tecnico e agenti helpdesk, usino call quality dashboard, è possibile assegnare a tali utenti uno dei ruoli seguenti, che consente l'accesso a CQD. 
 
 
-|  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Upload di edificio  |
+|&nbsp;  |Visualizzare i report  |Visualizzare i campi EUII  |Creare report  |Upload di edificio  |
 |---------|:-------:|:-------:|:-------:|:-------:|
 |Amministratore globale     |Sì         |Sì         |Sì         |Sì         |
 |Amministratore di Teams     |Sì         |Sì         |Sì         |Sì         |

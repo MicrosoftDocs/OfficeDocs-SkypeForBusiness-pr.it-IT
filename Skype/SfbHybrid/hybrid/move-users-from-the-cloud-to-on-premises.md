@@ -17,19 +17,19 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 ms.custom: ''
-description: Informazioni su come spostare gli utenti da Skype for Business Online a locale.
-ms.openlocfilehash: 78e86e48e9f409c9e2a9f348cada9c24f30c6279
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+description: Informazioni su come spostare gli utenti Teams locale.
+ms.openlocfilehash: db1557c3929bdf62557e31a7fce78050569016ee
+ms.sourcegitcommit: 3f1635d1915561798ea764c3e33d7db55f7e49da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53509787"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53574091"
 ---
 # <a name="move-users-from-the-cloud-to-on-premises"></a>Spostare gli utenti dal cloud a quello locale 
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Se necessario, è possibile spostare un utente migrato in precedenza da locale al cloud (se si usa Skype for Business Online o solo Teams) in locale. Per spostare gli utenti dalla modalità Skype for Business Online o TeamsOnly a una distribuzione locale di Skype for Business Server, utilizzare il cmdlet Move-CsUser o il Pannello di controllo di Skype for Business Server, entrambi strumenti locali. Quando si sposta di nuovo un utente in una distribuzione locale, è necessario decidere in quale pool spostare l'utente.
+Se necessario, è possibile spostare un utente migrato in precedenza dall'Teams locale a quello locale. Per spostare gli utenti dalla modalità Skype for Business Online o TeamsOnly a una distribuzione locale di Skype for Business Server, utilizzare il cmdlet Move-CsUser o il Pannello di controllo di Skype for Business Server, entrambi strumenti locali. Quando si sposta di nuovo un utente in una distribuzione locale, è necessario decidere in quale pool spostare l'utente.
 
 > [!Important]
 > Se l'utente era in precedenza in modalità TeamsOnly e si utilizza una versione precedente a Skype for Business Server 2015 con CU8, è inoltre necessario rimuovere l'assegnazione di TeamsOnly mode assignment of TeamsUpgradePolicy per tale utente. Gli utenti locali non devono avere mode= TeamsOnly.  Le versioni successive Skype for Business Server automaticamente questa assegnazione. Per ulteriori informazioni, [vedere Grant-CsTeamsUpgradePolicy.](/powershell/module/skype/grant-csteamsupgradepolicy)

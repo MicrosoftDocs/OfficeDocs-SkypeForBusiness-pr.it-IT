@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Eseguire la migrazione degli endpoint dell'applicazione hyrid prima di rimuovere le autorizzazioni Skype for Business'ambiente locale.
-ms.openlocfilehash: ee437f7f6c35ee67168c81e8e8ad440b1b0ba824
-ms.sourcegitcommit: 3f1635d1915561798ea764c3e33d7db55f7e49da
+ms.openlocfilehash: 556c6dca43f1fb273d1934dfe581bdc86356ca15
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53574241"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510537"
 ---
 # <a name="migrate-hybrid-application-endpoints-before-decommissioning-your-on-premises-environment"></a>Eseguire la migrazione degli endpoint dell'applicazione ibrida prima di rimuovere le autorizzazioni dell'ambiente locale
 
@@ -57,7 +57,7 @@ Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di a
    ```PowerShell
    Get-CsHybridApplicationEndpoint -Filter {LineURI -ne $null} | Set-CsHybridApplicationEndpoint -LineURI ""
    ```
-5. Poiché è possibile che i numeri di telefono per questi account sono stati gestiti in Microsoft 365 anziché in locale, eseguire il comando seguente in Teams PowerShell:
+5. Poiché è possibile che i numeri di telefono per questi account sono stati gestiti in Microsoft 365 anziché in locale, eseguire il comando seguente in Skype for Business PowerShell online:
 
    ```PowerShell
    $endpoints = import-csv "c:\backup\HybridEndpoints.csv"

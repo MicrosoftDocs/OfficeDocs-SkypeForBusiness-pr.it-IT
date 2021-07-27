@@ -17,18 +17,18 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni su come rimuovere le autorizzazioni dell'ambiente Skype for Business locale.
-ms.openlocfilehash: 820a5b55fe7bf2b5e2351fff253990fd794c562d
-ms.sourcegitcommit: 3f1635d1915561798ea764c3e33d7db55f7e49da
+ms.openlocfilehash: 420ca75e12737ce85c2fd03031f3e1b8fd9ca625
+ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53574221"
+ms.lasthandoff: 07/21/2021
+ms.locfileid: "53510797"
 ---
 # <a name="decommission-your-on-premises-skype-for-business-environment"></a>Rimuovi le autorizzazioni dell'ambiente locale Skype for Business
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Se l'organizzazione usa Teams con una distribuzione locale di Skype for Business Server, è possibile eseguire la migrazione completa di questi ambienti nel cloud e quindi ritirare la distribuzione locale di Skype for Business Server. 
+Se l'organizzazione usa Teams o Skype for Business Online con una distribuzione locale di Skype for Business Server, è possibile eseguire la migrazione completa di questi ambienti nel cloud e quindi ritirare la distribuzione locale di Skype for Business Server. 
 
 > [!NOTE]
 > Prima di rimuovere le autorizzazioni dell'ambiente [](configure-hybrid-connectivity.md) locale, è necessario configurare la connettività ibrida tra la distribuzione locale e Microsoft 365. Dopo aver configurato la connettività ibrida, è possibile eseguire la migrazione degli utenti nel cloud, durante la migrazione delle riunioni da locale e la migrazione di qualsiasi contatto da Skype for Business Server a Teams. La configurazione della connettività ibrida è un passaggio necessario per eseguire la migrazione degli utenti da locale al cloud e per garantire la funzionalità Teams completa.

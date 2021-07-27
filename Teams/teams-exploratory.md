@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 946847793ea90e549a555cd9d100cd1ae2809fa3
-ms.sourcegitcommit: f3e9989cbcc2f9f83ff94204bdd75b1e6ad43b5e
+ms.openlocfilehash: 571bc53925bb807d11c16d72f25ad247fe9496b3
+ms.sourcegitcommit: f781600a40e174cfc522e29375a4820b1142e23a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "53408755"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "53596394"
 ---
 # <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 
@@ -157,7 +157,7 @@ Vedere le [Informazioni sull'abbonamento a Microsoft 365](/microsoft-365/commerc
 
 ## <a name="how-long-does-the-teams-exploratory-experience-last"></a>Durata dell'esperienza di Teams Exploratory
 
-A partire dall'inizio del 2021, Teams Exploratory è disponibile con un abbonamento di 12 mesi, dall'iscrizione iniziale degli utenti, per tutti i nuovi clienti. Il nuovo abbonamento a Teams Exploratory inizia dal momento dell’iscrizione del primo utente e scadrà dopo 12 mesi. La data di fine verrà applicata a tutti gli utenti dello stesso tenant, con un periodo di 12 mesi a partire dalla data di iscrizione del primo utente.
+Teams Exploratory è disponibile con un abbonamento di 12 mesi, dall'iscrizione iniziale degli utenti, per tutti i nuovi clienti. Il nuovo abbonamento a Teams Exploratory inizia dal momento dell’iscrizione del primo utente e scadrà dopo 12 mesi. La data di fine verrà applicata a tutti gli utenti dello stesso tenant, con un periodo di 12 mesi a partire dalla data di iscrizione del primo utente.
 
 > [!NOTE]
 > La data di fine è configurata a livello di organizzazione, il che significa che verrà applicata a tutti gli utenti della stessa organizzazione. Ad esempio, l'utente 1 inizia l'abbonamento il 1° gennaio 2021. Pertanto, la data di fine dell'abbonamento sarà il 31 dicembre 2021. Un altro utente, l’utente 2, inizia l'abbonamento il 1° ottobre 2021. L'utente 2 può usare Teams Exploratory per due mesi, perché la data di fine sarà il 31 dicembre 2021 poiché fa parte dell'abbonamento della stessa organizzazione dell'utente 1.

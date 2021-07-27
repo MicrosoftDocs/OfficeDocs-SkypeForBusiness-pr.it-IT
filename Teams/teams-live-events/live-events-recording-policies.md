@@ -17,18 +17,18 @@ description: Informazioni sui criteri di registrazione degli eventi live.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8d25f37f94a514b83bd37e44d1b022bac064a839
-ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
+ms.openlocfilehash: c0f5f089bf4f1a0dc2c28a0b718d89b9200a4676
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52739656"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587335"
 ---
 # <a name="live-event-recording-policies-in-microsoft-teams"></a>Criteri di registrazione degli eventi live in Microsoft Teams
 
 Sono disponibili diverse opzioni per registrare un evento Microsoft Teams live. Le opzioni di registrazione vengono impostate usando i criteri di registrazione. Questo articolo descrive le varie impostazioni.
 
-Le opzioni di registrazione vengono impostate usando il comando di PowerShell [Set-CsTeamsMeetingBroadcastPolicy.](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy?view=skype-ps)
+Le opzioni di registrazione vengono impostate usando il comando di PowerShell [Set-CsTeamsMeetingBroadcastPolicy.](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy)
 
 ## <a name="scheduling-and-option-behaviors"></a>Comportamenti di pianificazione e opzioni
 
@@ -48,7 +48,7 @@ Durante la pianificazione di una registrazione di un evento live sono disponibil
 
 Nell'ambito dei criteri di trasmissione, è possibile attivare o disattivare la registrazione per un evento live.
 
-|                                 | Registrazione disponibile per produttori e relatori | Registrazione disponibile per i partecipanti |
+| &nbsp;| Registrazione disponibile per produttori e relatori | Registrazione disponibile per i partecipanti |
 | ------------------------------- | ---------------------------------------------------- | ------------------------------------- |
 | Registra sempre               | Disabilitato e selezionato                                | Abilitato e selezionato         |
 | L'organizzatore può registrare o meno | Abilitato e selezionato per impostazione predefinita                  | Abilitato e selezionato per impostazione predefinita   |
