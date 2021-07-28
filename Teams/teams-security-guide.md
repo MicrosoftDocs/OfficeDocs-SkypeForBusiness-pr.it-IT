@@ -1,5 +1,5 @@
 ---
-title: Guida alla sicurezza di Microsoft Teams
+title: Panoramica della guida alla sicurezza di Microsoft Teams
 author: MSFTTracyP
 ms.author: tracyp
 manager: dansimp
@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: edfa29dd1c2c3f5197b175f49d8d045967fc79f1
-ms.sourcegitcommit: d3c67eadf7cab167340d35b76401ff49fc7eb728
+ms.openlocfilehash: 5eeeaa0da5058abe4466cda3a063df96c5ea3098
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51749484"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587025"
 ---
 # <a name="security-and-microsoft-teams"></a>Sicurezza e Microsoft Teams
 
@@ -40,7 +40,7 @@ Teams è progettato e sviluppato in conformità con Microsoft Trustworthy Comput
 
 ## <a name="trustworthy-by-default"></a>Affidabilità per impostazione predefinita
 
-In Teams le comunicazioni di rete sono crittografate per impostazione predefinita. Con l’utilizzo dei certificati in tutti i server, OAuth, TLS e SRTP (Secure Real-Time Transport Protocol), tutti i dati di Teams sono protetti sulla rete.
+Le comunicazioni di rete in Teams sono crittografate per impostazione predefinita. Con l'utilizzo dei certificati in tutti i server, OAuth, TLS e SRTP (Secure Real-Time Transport Protocol), tutti i dati di Teams sono protetti sulla rete.
 
 ## <a name="how-teams-handles-common-security-threats"></a>In che modo Teams tratta le minacce alla sicurezza comuni
 
@@ -48,7 +48,7 @@ Questa sezione identifica le più comuni minacce alla sicurezza del servizio Tea
 
 ### <a name="compromised-key-attack"></a>Attacco basato su chiave compromessa
 
-Teams utilizza le funzionalità PKI nel sistema operativo del Server Windows per proteggere i dati della chiave utilizzati per la crittografia nelle connessioni TLS (Transport Layer Security). Le chiavi utilizzate per la crittografia dei file multimediali vengono scambiate tramite le connessioni TLS.
+Teams utilizza le funzionalità PKI nel sistema operativo del Server Windows per proteggere i dati della chiave utilizzati per la crittografia nelle connessioni TLS (Transport Layer Security). Le chiavi utilizzate per la crittografia degli elementi multimediali vengono scambiate tramite connessioni TLS.
 
 ### <a name="network-denial-of-service-attack"></a>Attacco Denial-of-Service di rete
 
@@ -57,8 +57,7 @@ L'attacco Denial-of-Service si verifica quando l'utente malintenzionato impedisc
 - Inviare dati non validi alle applicazioni e ai servizi in esecuzione nella rete attaccata per interromperne la normale funzione.
 - Inviare una grande quantità di traffico, sovraccaricando il sistema fino a quando non smette di rispondere o risponde lentamente alle richieste legittime.
 - Nascondere l'evidenza degli attacchi.
-- Impedire agli utenti di accedere alle risorse di rete.
-Teams attenua questi attacchi eseguendo la protezione di rete DDOS di Azure e limitando le richieste dei client dagli stessi endpoint, subnet e entità federate.
+- Impedire agli utenti di accedere alle risorse di rete. Teams attenua questi attacchi eseguendo la protezione di rete DDOS di Azure e limitando le richieste dei client dagli stessi endpoint, subnet ed entità federate.
 
 ### <a name="eavesdropping"></a>Intercettazione
 
@@ -82,7 +81,7 @@ Per impedire gli attacchi man-in-the-middle al traffico multimediale tra due end
 
 ### <a name="rtp-replay-attack"></a>Attacco di riproduzione RTP
 
-Un attacco di riproduzione si verifica quando una trasmissione di file multimediali valida tra due parti viene intercettata e ritrasmessa per scopi illeciti. Teams utilizza SRTP in combinazione con un protocollo di segnalazione sicuro che protegge le trasmissioni dagli attacchi di ripetizione, abilitando il destinatario a mantenere un indice dei pacchetti RTP già ricevuti e confrontare ogni nuovo pacchetto con quelli già elencati nell'indice.
+Un attacco replay si verifica quando una trasmissione di file multimediali valida tra due parti viene intercettata e ritrasmessa per scopi illeciti. Teams utilizza SRTP in combinazione con un protocollo di segnalazione sicuro che protegge le trasmissioni dagli attacchi di ripetizione, abilitando il destinatario a mantenere un indice dei pacchetti RTP già ricevuti e confrontare ogni nuovo pacchetto con quelli già elencati nell'indice.
 
 ### <a name="spim"></a>Messaggi istantanei indesiderati
 
@@ -138,9 +137,9 @@ In questa tabella sono riepilogati i protocolli usati da Teams.
 
 ***Crittografia del traffico***
 
-|||
-|:-----|:-----|
+
 |**Tipo di traffico**|**Crittografato da**|
+|:-----|:-----|
 |Da server a server|MTLS|
 |Da client a server (ad esempio, messaggistica istantanea e presenza)|TLS|
 |Flussi multimediali (ad esempio, condivisione audio e video di contenuti multimediali)|TLS|
@@ -156,7 +155,7 @@ Teams utilizza un token basato su credenziali per proteggere l'accesso ai conten
 
 #### <a name="fips"></a>FIPS
 
-Teams utilizza algoritmi FIPS (Federal Information Processing Standard) per gli scambi di chiavi di crittografia. Per altre informazioni sull'implementazione di FIPS, vedere [Pubblicazione Federal Information Processing Standard (FIPS) 140-2](/microsoft-365/compliance/offering-fips-140-2?view=o365-worldwide).
+Teams utilizza algoritmi FIPS (Federal Information Processing Standard) per gli scambi di chiavi di crittografia. Per altre informazioni sull'implementazione di FIPS, vedere [Pubblicazione Federal Information Processing Standard (FIPS) 140-2](/microsoft-365/compliance/offering-fips-140-2).
 
 ### <a name="user-and-client-authentication"></a>Autenticazione utente e client
 
