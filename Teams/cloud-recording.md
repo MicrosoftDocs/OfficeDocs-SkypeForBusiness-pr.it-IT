@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1ad5cb2c6bd1abd394d23d68c6636274a6cd1447
-ms.sourcegitcommit: 79d20fa2c45173d5a990551e79571caff06d7f82
+ms.openlocfilehash: 6f492ab931e765534adf455114ff570a94768a40
+ms.sourcegitcommit: e3bc5418025780207b05766cd817ef01c014a809
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/20/2021
-ms.locfileid: "53486146"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "53565712"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -179,6 +179,8 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowTranscription $false
 |Voglio disabilitare completamente la trascrizione delle registrazioni. |<ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowTranscription = False. <li>A tutti gli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowTranscription = False. </ol>|
 |Voglio disabilitare la trascrizione per la maggior parte degli utenti, ma abilitare in modo selettivo la trascrizione per utenti specifici. |<ol><li>Verificare che il criterio CsTeamsMeetingPolicy globale abbia AllowCloudRecording = False. <li>Alla maggior parte degli utenti è stato assegnato il criterio CsTeamsMeetingPolicy globale OPPURE uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = False. <li>A tutti gli altri utenti è stato assegnato uno dei criteri CsTeamsMeetingPolicy con AllowCloudRecording = True. </ol>|
 
+### <a name="terms-of-use-acceptance"></a>Accettazione delle condizioni per l'utilizzo
+Se l'organizzazione dispone di un criterio di registrazione delle riunioni che si desidera che gli utenti accettino prima di registrare una riunione, utilizzare la funzionalità [Condizioni per l'utilizzo di Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use). Questa funzionalità consente agli utenti di accettare i termini dei criteri utente dell'organizzazione prima di accedere a Microsoft Teams. Questa funzionalità non è specifica per fare clic sul pulsante di registrazione, ma è correlata all'uso di Teams o di altre app Microsoft 365 in generale. Si consiglia di aggiungere le informazioni sulla registrazione della riunione alle condizioni per l'utilizzo generali per l'uso di Teams o Microsoft 365. 
 
 ## <a name="permissions-and-storage"></a>Autorizzazioni e archiviazione
 

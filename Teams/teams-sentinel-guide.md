@@ -19,12 +19,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c3b2c37f7f3731b34abb5337bf954250e0c3564d
-ms.sourcegitcommit: 046b020cee8af00a1d0e5f5866f847d42e8ad9a5
+ms.openlocfilehash: 55307637e18f81775229bb46db51a6f5738cce7c
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51712768"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587045"
 ---
 # <a name="azure-sentinel-and-microsoft-teams"></a>Azure Sentinel e Microsoft Teams
 
@@ -40,7 +40,7 @@ Teams riveste un ruolo centrale nella comunicazione e nella condivisione di dati
 
 Questo articolo è incentrato sulla raccolta dei log attività di Teams in Azure Sentinel.
 
-Sentinel consente agli amministratori di eseguire attività di gestione della sicurezza in un’unica posizione. Ciò include la gestione di:
+Sentinel consente agli amministratori di gestire la sicurezza in un'unica posizione. Ciò include la gestione di:
 
 - dispositivi di terze parti
 - Microsoft Threat Protection
@@ -53,7 +53,7 @@ Le cartelle di lavoro e i runbook di Sentinel possono rendere il monitoraggio de
 
 ## <a name="step-1-collect-teams-logs-enable-audit-logs-in-microsoft-365"></a>Passaggio 1: raccogliere log di Teams: abilitare i log di controllo in Microsoft 365
 
-Poiché Teams registra le attività tramite Microsoft 365, i log di controllo non vengono raccolti per impostazione predefinita. Attivare questa funzionalità seguendo [questi passaggi](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off). I dati di Teams vengono raccolti nel log di controllo di Microsoft 365 in *Audit.General*.
+Poiché Teams registra le attività tramite Microsoft 365, i log di controllo non vengono raccolti per impostazione predefinita. Attivare questa funzionalità seguendo [questi passaggi](/microsoft-365/compliance/turn-audit-log-search-on-or-off). I dati di Teams vengono raccolti nel log di controllo di Microsoft 365 in *Audit.General*.
 
 ## <a name="step-2-connect-office-365-logs-to-azure-sentinel"></a>Passaggio 2: collegare i log di Office 365 ad Azure Sentinel
 
@@ -228,6 +228,6 @@ Si può anche entrare a far parte della [community di Azure Sentinel](https://gi
 
 [Registrazione dell'applicazione in Azure AD](/skype-sdk/ucwa/registeringyourapplicationinazuread%C2%A0%20%20%C2%A0)
 
-[Abilitare o disabilitare la ricerca nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+[Abilitare o disabilitare la ricerca nel log di controllo](/microsoft-365/compliance/turn-audit-log-search-on-or-off)
 
 [Che cos'è Azure Sentinel?](/azure/sentinel/overview)
