@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7980b062d864b7354a329ce5743b0209d9a54e2a
-ms.sourcegitcommit: e3bc5418025780207b05766cd817ef01c014a809
+ms.openlocfilehash: 2a8883b48b2fc5efc33b3c4e0128cc5ac3d3c760
+ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53565702"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "53587295"
 ---
 # <a name="manage-user-access-to-education-insights"></a>Gestire l'accesso degli utenti a Dati analitici per l'istruzione
 
@@ -37,8 +37,6 @@ Per fornire Dati analitici a livello di organizzazione, è necessario [importare
 > [!TIP]
 > È consigliabile abilitare Dati analitici per tutti i responsabili della didattica in modo che abbiano a disposizione i dati per conoscere ogni istituto e possano identificare rapidamente i problemi, nonché fornire supporto ai docenti. Anche se si esegue un progetto pilota, può comunque essere utile mantenere Dati analitici abilitato per tutti i responsabili della didattica, impostando però come destinatari delle comunicazioni solo il gruppo pilota di utenti.
 
-
-
 ## <a name="manange-permissions"></a>Gestire le autorizzazioni
 
 * Aprire l'app Dati analitici, fare clic su **Impostazioni** e selezionare **Autorizzazioni utente**
@@ -46,7 +44,7 @@ Per fornire Dati analitici a livello di organizzazione, è necessario [importare
 :::image type="content" source="media/insights-user-permissions.png" alt-text="Impostazioni":::
 
 > [!NOTE]
-> Quando si fornisce l'autorizzazione per un livello organizzativo, l'utente può vedere tutte le unità organizzative sottostanti. Fornire l'autorizzazione solo ai responsabili della didattica che ne hanno bisogno.
+> Quando si fornisce l'autorizzazione per un livello organizzativo, l'utente può vedere tutte le unità organizzative sottostanti.
 > 
 > Fornire l'autorizzazione solo ai responsabili della didattica che ne hanno bisogno e solo alle unità organizzative di cui sono responsabili. Se non si è certi che sia necessaria l'autorizzazione dell'utente per una specifica organizzazione, consultare gli esperti in materia di privacy dell'istituto, ad esempio il personale legale o delle risorse umane.
 
@@ -56,6 +54,9 @@ Se si utilizza il [formato di file SDS V2.1](/schooldatasync/sds-v2.1-csv-file-f
 
 > [!NOTE]
 > Quando a un utente viene assegnato un ruolo, riceve automaticamente le giuste autorizzazioni per visualizzare i dati rilevanti.
+>
+> Se un utente non ha più un ruolo, la sua autorizzazione per quel ruolo viene automaticamente revocata (sebbene possa ancora disporre di autorizzazioni individuali).
+
 
 * Se necessario, fare clic sulla scheda **Autorizzazioni basate sui ruoli**.
 
@@ -67,13 +68,14 @@ Se si utilizza il [formato di file SDS V2.1](/schooldatasync/sds-v2.1-csv-file-f
   
 * Per ogni ruolo, fare clic sull'icona a forma di matita per selezionare il livello di autorizzazione. L'impostazione predefinita è che il ruolo non dispone dell'autorizzazione per visualizzare Insights.
 * Selezionare il livello di autorizzazione **Visualizza i dati per l'organizzazione** o **Nessuno**.
+
+  :::image type="content" source="media/insights-role-based-permissions-panel.png" alt-text="Pannello delle autorizzazioni basate sui ruoli":::
+  
+  Se nell'elenco viene visualizzato un utente che necessita di un livello di autorizzazione più complesso, modificare il ruolo e/o l'organizzazione nei [dati importati dal SIS](education-insights-sis-data-sync.md) e [concedere autorizzazioni individuali](#grant-individual-permission-to-a-user) (se necessario).
+
 * Fare clic su **Salva modifiche**.
 
-  Questo livello di autorizzazione viene ora assegnato automaticamente a qualsiasi nuovo utente con questo ruolo e livello di organizzazione. L'utente vedrà i dati per tutte le unità organizzative al suo livello della gerarchia e al di sotto.
-  
-  Se nell'elenco è presente un utente che necessita di un livello di autorizzazione più complesso, modificarlo in Autorizzazioni individuali.
-  
-  Se un utente non ha più un ruolo, la sua autorizzazione per quel ruolo viene automaticamente revocata (sebbene possa ancora disporre di autorizzazioni individuali).
+  Questo livello di autorizzazione viene ora assegnato automaticamente a qualsiasi nuovo utente con questo ruolo e livello di organizzazione. L'utente vedrà i dati per tutte le unità organizzative al suo livello della gerarchia e a un livello sottostante.  
 
 
 ## <a name="individual-permissions"></a>Autorizzazioni individuali
@@ -99,5 +101,8 @@ Utilizzare le autorizzazioni individuali per modificare l'autorizzazione per un 
 * Selezionare il livello di autorizzazione:
   * **Tutti** indica che l'utente può visualizzare tutte le unità organizzative a tutti i livelli. Questo livello viene usato molto raramente.
   * **Organizzazione specifica** indica che l'utente vede l'unità organizzativa selezionata e tutte le unità organizzative sottostanti. Iniziare a digitare e selezionare l'unità organizzativa nell'elenco.
-  * **Nessuno** indica che l'utente vede solo le unità organizzative assegnate automaticamente dal proprio ruolo (se presente).
-* Fare clic su **Salva modifiche**.
+  * **Nessuno** indica che l'utente vede solo le unità organizzative assegnate automaticamente dal proprio ruolo (se presenti).
+  
+  :::image type="content" source="media/insights-individual-permissions-panel.png" alt-text="Pannello delle autorizzazioni individuali":::
+
+* Fare clic su **Salva modifiche** per salvare.
