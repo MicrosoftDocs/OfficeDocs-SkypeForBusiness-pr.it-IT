@@ -54,13 +54,10 @@
       "version": 0
     }
   ],
-  "notification_subscribers": [],
-  "branches_to_filter": [
-    "live"
-  ],
-  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness",
+  "notification_subscribers": ["v-jijaku@microsoft.com","v-mipop@microsoft.com"],
+  "branches_to_filter": ["live-sxs"],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness.it-it",
   "git_repository_branch_open_to_public_contributors": "live",
-  "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
   "contribution_branch_mappings": {},
@@ -79,7 +76,7 @@
     },
     {
       "path_to_root": "Skype/common",
-      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr",
+      "url": "https://github.com/MicrosoftDocs/OfficeDocs-pr.it-it",
       "branch": "live",
       "branch_mapping": {}
     },
@@ -89,12 +86,16 @@
       "branch": "live",
       "branch_mapping": {
         "live": "live",
-        "main": "main"
+        "master": "master"
       }
     }
   ],
   "branch_target_mapping": {
     "live": [
+      "Publish",
+      "Pdf"
+    ],
+    "live-sxs": [
       "Publish",
       "Pdf"
     ],
@@ -113,6 +114,10 @@
       "template_folder": "_themes.pdf"
     }
   },
-  "need_generate_pdf": true,
-  "need_generate_intellisense": false
+  "need_generate_pdf": false,
+  "need_generate_intellisense": false,
+  "redirection_files": [
+    ".openpublishing.redirection.json",
+    ".openpublishing.redirection.lync.json"
+  ]
 }
