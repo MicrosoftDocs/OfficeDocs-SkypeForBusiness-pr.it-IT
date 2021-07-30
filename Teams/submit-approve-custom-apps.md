@@ -17,12 +17,12 @@ f1.keywords:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come approvare le app personalizzate inviate usando l'API Teams per l'invio di app in Microsoft Teams.
-ms.openlocfilehash: e544fdc12e17fc8917a2d3b9ce01dfc5985261de
-ms.sourcegitcommit: 40f76bc6b5e304faea8516a78f8576ba1cdb7f7c
+ms.openlocfilehash: 19d0378376e1abbc57d4a992a37c5c0286b9b29f
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "52337793"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646627"
 ---
 # <a name="publish-a-custom-app-submitted-through-the-teams-app-submission-api"></a>Pubblicare un'app personalizzata inviata tramite l'API Teams per l'invio di app
 
@@ -50,9 +50,9 @@ La Microsoft Teams per sviluppatori consente agli sviluppatori di integrare faci
 
 ### <a name="submit-the-app"></a>Inviare l'app
 
-Quando l'app è pronta per l'uso nell'ambiente di produzione, lo sviluppatore può inviare l'app usando l'API di invio dell'app Teams, che può essere chiamata <a href="https://docs.microsoft.com/graph/api/teamsapp-publish?view=graph-rest-beta&tabs=http#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog" target="_blank" target="_blank">dall'API Graph</a>, da un ambiente di sviluppo integrato (IDE) come Visual Studio Code o da una piattaforma come Power Apps e Power Virtual Agents. In questo modo l'app sarà disponibile nella pagina Gestisci <a href="/microsoftteams/manage-apps" target="_blank">app</a> dell'interfaccia di amministrazione di Microsoft Teams, in cui l'amministratore potrà rivedirla e approvarla.
+Quando l'app è pronta per l'uso nell'ambiente di produzione, lo sviluppatore può inviare l'app usando l'API di invio dell'app Teams, che può essere chiamata [dall'API Graph](/graph/api/teamsapp-publish), da un ambiente di sviluppo integrato (IDE) come Visual Studio Code o da una piattaforma come Power Apps e Power Virtual Agents. In questo modo l'app sarà disponibile nella pagina Gestisci <a href="/microsoftteams/manage-apps" target="_blank">app</a> dell'interfaccia di amministrazione di Microsoft Teams, in cui l'amministratore potrà rivedirla e approvarla.
 
-L'API di invio delle app di Teams, basata su <a href="/graph/api/teamsapp-publish?tabs=http&view=graph-rest-beta#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog" target="_blank">Microsoft Graph,</a>consente all'organizzazione di svilupparsi sulla piattaforma scelta e automatizza il processo di invio all'approvazione per le app personalizzate in Teams.
+L'API di invio delle app di Teams, basata su <a href="/graph/api/teamsapp-publish" target="_blank">Microsoft Graph,</a>consente all'organizzazione di svilupparsi sulla piattaforma scelta e automatizza il processo di invio all'approvazione per le app personalizzate in Teams.
 
 Ecco un esempio dell'aspetto di questo passaggio di invio dell'app in Visual Studio Code:
 
@@ -60,7 +60,7 @@ Ecco un esempio dell'aspetto di questo passaggio di invio dell'app in Visual Stu
 
 Tenere presente che non è ancora possibile pubblicare l'app nell'app store dell'organizzazione. Questo passaggio invia l'app all'Microsoft Teams di amministrazione, dove è possibile approvarla per la pubblicazione nell'app store dell'organizzazione.
 
-Per altre informazioni sull'uso dell'API Graph per inviare app, vedere <a href="/graph/api/teamsapp-publish?tabs=http&view=graph-rest-beta#example-2-upload-a-new-application-for-review-to-an-organizations-app-catalog" target="_blank">qui</a>.
+Per altre informazioni sull'uso dell'API Graph per inviare app, vedere <a href="/graph/api/teamsapp-publish" target="_blank">qui</a>.
 
 ## <a name="validate"></a>Convalida
 
@@ -74,7 +74,7 @@ Fare clic sul nome dell'app per passare alla pagina dei dettagli dell'app. Nella
 
 ![Pagina dei dettagli dell'app per un'app inviata](media/custom-app-lifecycle-app-details.png)
 
-Per altre informazioni sull'uso dell'API Graph per controllare lo **stato di pubblicazione,** vedere <a href="/graph/api/appcatalogs-list-teamsapps?tabs=http&view=graph-rest-beta#example-3-find-application-based-on-the-teams-app-manifest-id" target="_blank">qui</a>.
+Per altre informazioni sull'uso dell'API Graph per controllare lo **stato di pubblicazione,** vedere <a href="/graph/api/appcatalogs-list-teamsapps" target="_blank">qui</a>.
 
 ## <a name="publish"></a>Pubblica
 
@@ -109,7 +109,7 @@ Gli utenti che hanno le autorizzazioni per l'app possono trovarla nell'app store
 
 Se sono stati creati e assegnati criteri di configurazione dell'app, l'app viene aggiunta alla barra dell'app in Teams per un facile accesso per gli utenti a cui è stato assegnato il criterio.
 
-## <a name="update"></a>Aggiornamento
+## <a name="update"></a>Update
 
 Per aggiornare un'app, gli sviluppatori devono continuare a seguire i passaggi della [sezione](#develop) Sviluppo.
 
@@ -132,7 +132,7 @@ Tenere presente quanto segue:
 - Quando un'app viene approvata, qualsiasi utente può inviare un aggiornamento all'app. Questo significa che altri sviluppatori, incluso lo sviluppatore che ha originariamente inviato l'app, possono inviare un aggiornamento all'app.
 - Quando uno sviluppatore invia un'app e la richiesta è in sospeso, solo lo stesso sviluppatore può inviare un aggiornamento all'app. Gli altri sviluppatori possono inviare un aggiornamento solo dopo l'approvazione dell'app.
 
-Per altre informazioni sull'uso dell'API Graph per aggiornare le app, vedere <a href="/graph/api/teamsapp-update?view=graph-rest-beta#example-2-update-a-previously-reviewed-and-published-application-to-the-teams-app-catalog" target="_blank">qui</a>.
+Per altre informazioni sull'uso dell'API Graph per aggiornare le app, vedere <a href="/graph/api/teamsapp-update">qui</a>.
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -141,4 +141,4 @@ Per altre informazioni sull'uso dell'API Graph per aggiornare le app, vedere <a 
 - [Gestire le impostazioni e i criteri delle app personalizzate in Teams](teams-custom-app-policies-and-settings.md)
 - [Gestire i criteri di autorizzazione delle app in Teams](teams-app-permission-policies.md)
 - [Gestire i criteri di configurazione delle app in Teams](teams-app-setup-policies.md)
-- <a href="/graph/api/resources/teamsapp?view=graph-rest-beta" target="_blank">API microsoft Graph per Teams app</a>
+- <a href="/graph/api/resources/teamsapp" target="_blank">API microsoft Graph per Teams app</a>

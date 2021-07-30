@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Questo articolo illustra le considerazioni di pianificazione pertinenti per la distribuzione di Microsoft Teams Rooms, la nuova generazione di Skype Room Systems.
-ms.openlocfilehash: fae50e076467efdfe69115d967f3d6564ba9266a
-ms.sourcegitcommit: 4d76837f9481ca2cda437afdf11de5eaf7a57d99
+ms.openlocfilehash: d07783e2e3df7b4a8c2563b39fb702369751d139
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50726277"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646987"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare Microsoft Teams Rooms
 
@@ -56,7 +56,7 @@ In genere, i pacchetti e le unità integrate includono software preinstallato, m
 
 È possibile distribuire Microsoft Teams Rooms con Microsoft Teams, Skype for Business Online o Skype for Business distribuzioni ibride o locali.  Per informazioni [sulle licenze necessarie,](rooms-licensing.md) vedere l'Teams Sala riunioni gestione licenze.
 
-|    |     |
+| &nbsp;   |  &nbsp;   |
 |-----------|------------|
 |![decidere la distribuzione](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Si distribuiranno Microsoft Teams Rooms nell'organizzazione? </li><li>Come si acquistano i Microsoft Teams Rooms, in bundle, come componenti separati o come unità integrate?</li></ul> |
 | ![identificare le attività](../media/audio_conferencing_image9.png)<br/>Passaggi successivi | <ul><li>Identificare gli utenti che intraprenderanno le attività principali durante l'intera distribuzione.</li><li>Esaminare le sale riunioni disponibili (e pianificare la configurazione) per capire dove si vuole distribuire Microsoft Teams Rooms e i dispositivi periferici appropriati per le dimensioni della sala.</li></ul> |
@@ -94,7 +94,7 @@ Dopo aver creato un inventario delle apparecchiature e delle funzionalità in og
 
 Nell'ambito della scoperta, è fondamentale considerare l'acustica e il layout delle chat room. Ad esempio, verificare che le sedie nella stanza non blocchino la visualizzazione della fotocamera. Verificare che la stanza non abbia un'eco eccessiva o un condizionamento rumoroso e che abbia una potenza sufficiente per gli schermi e le Microsoft Teams Rooms. Ci sono molti fattori da considerare su cui il team o il partner audio-visivo (AV) sarà in grado di consigliare. 
 
-|    |     |
+| &nbsp;   | &nbsp;    |
 |-----------|------------|
 | ![ammortizzazioni](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Esaminare le chat room nell'ambito e definire Microsoft Teams Rooms relative configurazioni.</li></ul>|
 
@@ -115,7 +115,7 @@ In base al fornitore preferito, usare le informazioni fornite nell'articolo sui 
 
 **Pro suggerimento:** alcuni tipi di chat room potrebbero non essere applicabili per la distribuzione.
 
-|    |     |
+| &nbsp;   |  &nbsp;   |
 |-----------|------------|
 | ![chat room nell'ambito](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Dall'inventario, quali tipi di chat room sono nell'ambito della distribuzione?</li><li>Quali sistemi verranno distribuiti per ogni tipo di chat room?</li></ul>|
 | ![raccogliere materiale](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a raccogliere materiale operativo chiave per i sistemi scelti e coinvolgere il team di approvvigionamento.</li></ul>|
@@ -139,7 +139,7 @@ _Modello Microsoft Teams Rooms di distribuzione per l'organizzazione_
 
 A seconda della scala di distribuzione e dell'approccio, è possibile decidere di spedire i dispositivi Microsoft Teams Rooms e le periferiche supportate in una posizione centrale per la configurazione iniziale e l'assegnazione. Questo potrebbe essere un buon approccio per un'implementazione a fasi in molti siti. In caso contrario, è possibile scegliere di spedire i pacchetti direttamente ai siti. 
 
-|    |     |
+|   &nbsp; |  &nbsp;   |
 |-----------|------------|
 | ![componenti di spedizione](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>I componenti verranno spediti direttamente a un sito o a una struttura di gestione temporanea?</li><li>Who gestirà la struttura di gestione temporanea (se si decide di usarla)?</li></ul>|
 | ![pianificare le operazioni](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Pianificare le operazioni.</li><li>Pianificare l'adozione e la gestione delle modifiche.</li></ul>|
@@ -152,7 +152,7 @@ Molte organizzazioni hanno un team o un partner AV che gestisce le sale riunioni
 
 Valutare la coda dell'helpdesk da instradare Microsoft Teams Rooms Microsoft Teams Rooms</DICT__Microsoft⚐Teams⚐Rooms> e le procedure di risoluzione dei problemi principali che possono eseguire. Un buon punto di partenza per queste domande frequenti è la [Guida dell'utente](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) e [i problemi noti.](known-issues.md)
 
-|    |     |
+|  &nbsp;  |  &nbsp;   |
 |-----------|------------|
 | ![scegliere manager](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere chi gestirà i Microsoft Teams Rooms.</li><li>Decidere a quale coda dell'helpdesk instradare Microsoft Teams Rooms chiamate correlate.</li></ul>|
 | ![preparare gli account host](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Preparare l'hosting degli account. </li></ul>|

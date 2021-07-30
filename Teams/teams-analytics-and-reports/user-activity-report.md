@@ -17,12 +17,12 @@ description: Informazioni su come usare il report attività Teams utente nell'in
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 071b5eaa37cd2b6a5d353b2f0309a338d28ce971
-ms.sourcegitcommit: 358038cee16ac041da10a67c26cf463901ae53d8
+ms.openlocfilehash: 13d2d261358fc5c373304c46b48684d1f116fc06
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/26/2021
-ms.locfileid: "52669238"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646057"
 ---
 # <a name="microsoft-teams-user-activity-report"></a>Microsoft Teams attività utente
 
@@ -42,7 +42,7 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 
-|Callout |Descrizione  |
+| Callout |Descrizione  |
 |--------|-------------|
 |**1**   |Il Teams attività degli utenti può essere visualizzato per le tendenze degli ultimi 7, 30 o 90 giorni. |
 |**2**   |Ogni report riporta la data in cui è stato generato. I report in genere riflettono una latenza di 24 ore dal momento dell'attività. |
@@ -60,9 +60,9 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 Per rendere anonimi i Teams report attività utente, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nel report e nella relativa esportazione.
 
-1. Nell Microsoft 365 di amministrazione passare  all'Impostazioni org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
+1. In interfaccia di amministrazione di Microsoft 365 passare alla scheda  Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
-2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo nell'interfaccia Microsoft 365 e nell'Teams di amministrazione.
+2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo in interfaccia di amministrazione di Microsoft 365 e Teams di amministrazione.
   
 3. Selezionare **Salva modifiche**.
 

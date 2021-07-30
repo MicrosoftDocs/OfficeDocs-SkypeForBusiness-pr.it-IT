@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni sulle licenze dei componenti aggiuntivi per Microsoft Teams e sulle funzionalità disponibili con ogni licenza.
-ms.openlocfilehash: ff5c9ca199a017406b46061daea99658157318e5
-ms.sourcegitcommit: a628b22c9a0ef3bcd7dee3f308a79b4c427872cc
+ms.openlocfilehash: 968ec222b32a14d85ffac5f66c9a1d87b0b4fa43
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "52491778"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646847"
 ---
 # <a name="microsoft-teams-add-on-licenses"></a>Microsoft Teams licenze per i componenti aggiuntivi
 
@@ -37,9 +37,9 @@ Le licenze per i componenti aggiuntivi sono licenze per funzionalità specifiche
 
 Ecco un elenco di funzionalità che è possibile aggiungere con Teams licenze per i componenti aggiuntivi. Le opzioni di licenza per i componenti aggiuntivi disponibili dipendono dal piano di Microsoft 365 o Office 365 disponibile.
 
-|||||
+|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|:-----|
-|**Funzionalità** <br/> |**Descrizione** <br/> |**Small Business (<300 utenti)**|**Grandi aziende (>300 utenti)**|
+|Funzionalità|Descrizione|Small Business (<300 utenti)|Grandi aziende (>300 utenti)|
 **Microsoft 365 Business Voice** <br/> | [Business Voice](../business-voice/whats-business-voice.md) è una soluzione di telefonia progettata per le piccole e medie imprese con un massimo di 300 utenti che include Sistema telefonico, audioconferenze, un piano per chiamate nazionali e altro ancora. Sistema telefonico funzionalità disponibili includono la segreteria telefonica, l'ID chiamante, il parcheggio di chiamata, l'inoltro di chiamata, gli operatori automatici e le code di chiamata. <br> Per sapere se Business Voice è disponibile nel proprio paese o area geografica, vedere Disponibilità di Paese [e area geografica per Voce aziendale.](../business-voice/country-region-availability.md) Per informazioni sui prezzi, vedere [Prezzi per VoIP aziendale.](https://go.microsoft.com/fwlink/?linkid=2127221) <br/> |&#x2713;||
 |**Audioconferenza** <br/> |A volte gli utenti dell'organizzazione dovranno usare un telefono per accedere a una riunione Teams invece del computer. Configurare le [audioconferenze](../audio-conferencing-in-office-365.md) per gli utenti che pianificano o conducono riunioni. <br/> Per sapere se l'Audioconferenza è disponibile nel proprio Paese o area geografica, consulta [Disponibilità per Paese e area geografica di Audioconferenza e Piani di chiamata](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md). Per informazioni sui prezzi, vedere i [prezzi per le audioconferenze](https://go.microsoft.com/fwlink/?linkid=799762).  <br/> <br/>Se sei una piccola o media azienda con un massimo di 300 utenti e attualmente non hai licenze di audioconferenza, puoi ottenere audioconferenza gratis per un anno. A partire dal 1° ottobre 2020, l'offerta di audioconferenza gratuita è disponibile per gli utenti con licenze Microsoft 365 Business Basic, Business Standard, Business Premium, Enterprise E1 o Enterprise E3. Per altre informazioni, vedere [Configurare le audioconferenze per le piccole e medie imprese.](../audio-conferencing-smb.md)|&#x2713;|&#x2713;|
 |**Numeri verde** |Se si vogliono numeri gratuiti per audioconferenze, operatori automatici o code di chiamata, è necessario [configurare Crediti comunicazioni.](../set-up-communications-credits-for-your-organization.md) <br/> |&#x2713;|&#x2713;|
@@ -48,7 +48,7 @@ Ecco un elenco di funzionalità che è possibile aggiungere con Teams licenze pe
 |**Microsoft Teams Rooms** <br/> |[Microsoft Teams Rooms](../rooms/index.md) non è un componente aggiuntivo, ma una funzionalità che porta video, audio e condivisione di contenuti nelle sale riunioni. Vedere [Teams Sala riunioni licenze](../rooms/rooms-licensing.md).  <br/> |&#x2713;|&#x2713;|
 |**Comunicazioni avanzate** <br/> |[Advanced Communications include](advanced-communications.md) la personalizzazione avanzata delle riunioni e strumenti per gestire i criteri di comunicazione dell'organizzazione. Altre funzionalità includono sala d'attesa personalizzata per le riunioni e strumenti per monitorare, tenere traccia e analizzare i dati di utenti e dispositivi.   |&#x2713;|&#x2713;|
 
-<sup>1</sup> Se si ha un piano di Microsoft 365 Enterprise per le piccole o medie imprese, è comunque possibile acquistare licenze per i componenti aggiuntivi per queste funzionalità vocali, tuttavia è consigliabile prendere in considerazione un piano [di Microsoft 365 Business](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-products?&activetab=tab:primaryr2) e [VoIP aziendale.](https://www.microsoft.com/microsoft-365/business/business-voice)
+<sup>1</sup> Se si ha un piano di Microsoft 365 Enterprise per le piccole o medie imprese, è comunque possibile acquistare licenze per i componenti aggiuntivi per queste funzionalità vocali, tuttavia è consigliabile prendere in considerazione un piano [Microsoft 365 Business](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-products?&activetab=tab:primaryr2) e [VoIP aziendale.](https://www.microsoft.com/microsoft-365/business/business-voice)
 
 ## <a name="what-voice-features-are-available-with-my-plan"></a>Quali funzionalità vocali sono disponibili con il piano?
 
@@ -60,7 +60,7 @@ A seconda delle funzionalità vocali desiderate, è consigliabile confrontare se
 
 Per le piccole o medie imprese (meno di 300 utenti), è possibile ottenere le funzionalità vocali in quattro modi:
 
-- Acquistare un piano Microsoft 365 Business e Microsoft 365 Business Voice.
+- Acquistare un piano Microsoft 365 Business e un piano Microsoft 365 Business Voice.
 - Acquistare un piano Enterprise E1 o E3 e Microsoft 365 Business Voice.
 - Acquista un piano Enterprise E1 o E3 e aggiungi le funzionalità vocali singolarmente.
 - Acquista un piano Enterprise E5, che include le funzionalità vocali.
@@ -121,7 +121,7 @@ Crediti per le comunicazioni per audioconferenze </td><td>Oppure</td>
 
 Se i servizi di audioconferenza non sono supportati nel proprio paese o area geografica, è possibile ottenere un Microsoft 365 Enterprise E5 senza piano di audioconferenza o un piano di audioconferenza Office 365 Enterprise E5 senza piano di audioconferenza.
 
-Se si ha già un piano Microsoft 365 Enterprise o Office 365 Enterprise, è comunque possibile acquistare licenze per i componenti aggiuntivi per singole funzionalità vocali. Tuttavia, è possibile passare [a](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-products?&activetab=tab:primaryr2) un piano Microsoft 365 Business e [Microsoft 365 Business Voice](https://www.microsoft.com/microsoft-365/business/business-voice). In alcuni casi, a seconda delle caratteristiche desiderate, potrebbe essere più conveniente ottenere un piano Microsoft 365 Business con Microsoft 365 Business Voice.
+Se si ha già un piano Microsoft 365 Enterprise o Office 365 Enterprise, è comunque possibile acquistare licenze per i componenti aggiuntivi per singole funzionalità vocali. Tuttavia, è possibile passare a un piano Microsoft 365 [Business](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-products?&activetab=tab:primaryr2) e [Microsoft 365 Business Voice](https://www.microsoft.com/microsoft-365/business/business-voice). In alcuni casi, a seconda delle caratteristiche desiderate, può risultare più conveniente ottenere un piano Microsoft 365 Business con Microsoft 365 Business Voice.
 
 > [!NOTE]
 > Se è necessario usare un servizio telefonico di terze [parti,](../direct-routing-landing-page.md) l'instradamento diretto viene distribuito nell'organizzazione oppure, se i piani per chiamate non sono disponibili nel proprio paese o area geografica, è necessario usare Routing diretto per le funzionalità vocali.
@@ -384,7 +384,7 @@ Ecco un riepilogo delle offerte di valutazione per le funzionalità vocali.
 </tbody>
 </table>
 
- Il piano di base non deve essere un'offerta di valutazione per usare queste versioni di valutazione per le funzionalità vocali. È possibile usare un piano Microsoft 365 Business o un piano Enterprise, per enti pubblici, per l'istruzione o per organizzazioni no profit con una delle offerte di valutazione per le funzionalità vocali. Per visualizzare le offerte di valutazione e i componenti aggiuntivi disponibili, nell'interfaccia di amministrazione di Microsoft 365 passare a Servizi di acquisto fatturazione, selezionare Altre categorie che potrebbero interessare e quindi selezionare  >   **Componenti aggiuntivi.** 
+ Il piano di base non deve essere un'offerta di valutazione per usare queste versioni di valutazione per le funzionalità vocali. È possibile usare un piano Microsoft 365 Business o un piano Enterprise, Government, Education o Nonprofit con una delle offerte di valutazione per le funzionalità vocali. Per visualizzare le offerte di valutazione e i componenti aggiuntivi disponibili, nel interfaccia di amministrazione di Microsoft 365 passare a Servizi di acquisto fatturazione, selezionare Altre categorie che potrebbero interessare e quindi selezionare  >   **Componenti aggiuntivi.** 
 
   Per ognuna di queste opzioni vocali e di [conferenza,](../set-up-communications-credits-for-your-organization.md) i Crediti comunicazioni sono necessari se si hanno numeri a pagamento o se è necessario aggiungere altri minuti per consentire agli utenti di effettuare chiamate esterne dalle riunioni o per consentire agli utenti di effettuare chiamate PSTN nazionali e internazionali.
 

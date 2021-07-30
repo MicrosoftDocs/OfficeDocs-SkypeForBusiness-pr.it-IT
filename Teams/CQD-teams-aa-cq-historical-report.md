@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come usare il report Dashboard qualità Power BI per visualizzare i Operatore automatico della coda di chiamata.
-ms.openlocfilehash: cfd72d0397407205aef729188c630e99148f154c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: dd6214871a471341ed2d3836e72c5f729e3f6a9f
+ms.sourcegitcommit: d0fb9035903d9e1ce184417250913db10608b1a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111512"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53660694"
 ---
 # <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
 È necessario avere installato Power BI Desktop. È possibile installarlo da [Microsoft Windows Store.](https://aka.ms/pbidesktopstore)
@@ -98,7 +98,7 @@ Eseguire questa procedura:
 |Operatore automatico'ora di inizio della catena         |datetime                 |Ora di inizio della catena AA                    |
 |Operatore automatico ricerca nella directory  |stringa                   |Ultimo metodo di ricerca rubrica        |
 |Operatore automatico trasferimento          |stringa                   |Tipo di destinazione trasferimento chiamata<br>Valori possibili:<br>§ sconosciuto: il tipo di entità non è stato specificato<br>§ utente - entità utente<br>§ orgaa - Entità Operatore automatico organizzativa<br>§ hunt_group - Entità Coda di chiamata<br>§ application - voice application entity<br>§ external_pstn - entità PSTN esterna<br>§ shared_voicemail - entità segreteria telefonica condivisa|
-|Operatore automatico risultato della chiamata              |stringa                   |Risultato della chiamata:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined<br>§ service_terminated<br>§ failed_to_establish_media<br>§ terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long|
+|Operatore automatico risultato della chiamata              |stringa                   |Risultato della chiamata:<br>§ sconosciuto: la chiamata non è riuscita a configurare o trasferire e il servizio non ha ricevuto alcun motivo di errore significativo <br>§ transferred_to_user - Chiamata trasferita a un utente tramite chiamata per nome/interno o opzione di menu configurata <br>§ transferred_to_operator - La chiamata è stata trasferita a un operatore configurato, ad esempio se AA è configurato con un operatore per le ore successive <br>§ failover_to_operator - Fallback all'operatore quando il trasferimento non riesce o il riconoscimento del nome non funziona dopo tre tentativi<br>§ user_terminated - Il chiamante ha terminato la chiamata <br>§ service_declined - Chiamata rifiutata dal servizio, ciò potrebbe verificarsi se il servizio non riesce a recuperare Operatore automatico configurazione <br>§ service_terminated - Il servizio back-end ha terminato la chiamata, se un trasferimento a destinazione non è riuscito e nessun operatore è configurato come fallback <br>§ failed_to_establish_media - Media establishment failed between caller and service <br>§ terminated_no_operator - Riconoscimento del nome non riuscito dopo tre tentativi e non è configurato alcun operatore <br>§ terminated_transfer_failed - Trasferimento alla destinazione non riuscito e nessun operatore è configurato <br>§ terminated_automatic_selection- Se non è configurata alcuna azione durante o dopo l'orario, la chiamata terminerà per impostazione predefinita <br>§ transferred_to_shared_voicemail - Chiamata trasferita alla segreteria telefonica condivisa se configurata come destinazione <br>§ oaa_chain_too_long- Quando una catena di Operatore automatico supera cinque operatori automatici in successione, la chiamata termina per evitare possibili cicli di chiamata <br>§ oaa_session_too_long - La chiamata ha superato la durata massima consentita della sessione ed è scaduto |
 |Operatore automatico chiamata Flow                |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>§ annuncio|
 |È Operatore automatico coinvolta              |Boolean                  |Indicato se AA è coinvolto nella chiamata |
 |Operatore automatico numero di azioni chiamanti      |int                      |Numero di azioni usate dal chiamante         |

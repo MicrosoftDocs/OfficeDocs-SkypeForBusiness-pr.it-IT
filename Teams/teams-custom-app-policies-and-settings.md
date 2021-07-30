@@ -23,12 +23,12 @@ ms.custom:
 - ms.teamsadmincenter.appsetuppolicies.tooltip.allowsideloading
 - ms.teamsadmincenter.apppermspolicies.orgwideapps.customapps
 - seo-marvel-mar2020
-ms.openlocfilehash: e89a7aa3a2d016551695406551068cd07a2042e6
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 3a45e2e4616b952dd7aa5cd2218e52a7f8f92d5c
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119215"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646077"
 ---
 # <a name="manage-custom-app-policies-and-settings-in-microsoft-teams"></a>Gestire le impostazioni e i criteri delle app personalizzati in Microsoft Teams
 
@@ -117,6 +117,7 @@ Se questa impostazione è attivata:
 Questa tabella riepiloga i criteri e le impostazioni delle app personalizzate, il modo in cui funzionano insieme e il loro effetto combinato sul controllo degli utenti dell'organizzazione che possono caricare app personalizzate in Teams.
 
 Si supponga, ad esempio, di voler consentire solo ai proprietari dei team di caricare app personalizzate in team specifici. È necessario impostare quanto segue:
+
 - Attivare **l'impostazione Consenti interazione con app personalizzate** nell'Microsoft Teams di amministrazione.
 - Disattivare **l'opzione Consenti ai membri di caricare app personalizzate** per ogni team a cui si vuole limitare l'accesso.
 - Creare e assegnare criteri di configurazione delle app personalizzati  nell'interfaccia di amministrazione di Microsoft Teams con l'impostazione delle app personalizzate Upload attivata e assegnarla ai proprietari del team.
@@ -133,7 +134,7 @@ Si supponga, ad esempio, di voler consentire solo ai proprietari dei team di car
 | Attivato    | Attivato        | Attivato        | L'utente può caricare app personalizzate nel team, indipendentemente dal fatto che l'utente sia il proprietario del team. L'utente può caricare app personalizzate nel contesto personale.       |
 
 ## <a name="related-topics"></a>Argomenti correlati
- 
+
 [Impostazioni di amministrazione per le app in Teams](admin-settings.md)
 
-[Assegnare i criteri agli utenti in Teams](assign-policies.md)
+[Assegnare i criteri agli utenti in Teams](assign-policies-users-and-groups.md)

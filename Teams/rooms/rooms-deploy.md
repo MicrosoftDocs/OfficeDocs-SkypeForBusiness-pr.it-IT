@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni su come distribuire Microsoft Teams Rooms, incluse le fasi di distribuzione.
-ms.openlocfilehash: 3ac6ceabd1d421551ab3b9404688bd4a9302e3d6
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 86564c8b90b0c7c8269d5de258c31d140eca7dc4
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117464"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646697"
 ---
 # <a name="deployment-overview"></a>Panoramica della distribuzione
 
@@ -47,7 +47,7 @@ Per altre informazioni su queste dipendenze, vedere i collegamenti alle indicazi
 
 **Pro suggerimento:** se si prevede di usare server proxy per fornire l'accesso a Teams o Skype for Business Online, leggere questo [articolo.](../proxy-servers-for-skype-for-business-online.md) Per quanto riguarda il traffico Skype for Business server proxy, è consigliabile ignorare del tutto i server proxy. Skype for Business il traffico è già crittografato, quindi i server proxy non lo rendono più sicuro. Nell'ambito della distribuzione più ampia, è consigliabile seguire le indicazioni fornite in Preparare la rete [per Teams](../prepare-network.md) per la pianificazione della larghezza di banda e valutare l'idoneità della rete per il traffico in tempo reale.
 
-|    |     |
+|  &nbsp;  | &nbsp;    |
 |-----------|------------|
 | ![confermare i siti](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Verificare che i siti soddisfino i requisiti principali per Microsoft Teams Rooms.</li><li>Verificare di aver fornito larghezza di banda sufficiente per ogni sito.</li></ul>| 
 | ![pianificare la distribuzione di dispositivi](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a pianificare la distribuzione e la configurazione del dispositivo.</li></ul>| 
@@ -72,7 +72,7 @@ A seconda degli scenari di collaborazione che si è deciso di abilitare con la d
 Per altre informazioni sugli account Microsoft Teams Rooms, vedere [Configurare gli account per Microsoft Teams Rooms](rooms-configure-accounts.md).
 
 
-|    |     |
+|  &nbsp;  |  &nbsp;   |
 |-----------|------------|
 | ![supporto per scenari](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere quali scenari supportare e identificare i requisiti di licenza per gli account Microsoft Teams Rooms servizio.</li></ul>| 
 | ![preparare il computer host](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Preparare l'hosting degli account del computer e del servizio.</li></ul>| 
@@ -121,7 +121,7 @@ Ogni Microsoft Teams Rooms richiede un account di risorsa dedicato e univoco che
 
 **Pro suggerimento:** rendere descrittivi e facili da comprendere i nomi visualizzati per questi account. Questi sono i nomi che gli utenti visualizzano quando cercano e aggiungono Microsoft Teams Rooms alle riunioni. Alcune organizzazioni usano la convenzione *Site* Room Name ( Max Room Capacity )-RS, quindi ad esempio Curie, una sala riunioni di 12 persone a Londra, potrebbe avere il nome visualizzato - LON-CURIE(12)-RS. 
 
-|    |     |
+|  &nbsp;  | &nbsp;    |
 |-----------|------------|
 | ![decidere la convenzione di denominazione](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere la convenzione di denominazione per gli Microsoft Teams Rooms account.</li><li>Decidere se creare singoli account o usare script di provisioning in blocco.</li></ul>| 
 | ![passaggi successivi](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a pianificare la distribuzione del dispositivo.</li></ul>| 
@@ -146,7 +146,7 @@ Vengono fornite indicazioni su come usare Microsoft Azure [Monitor](/skypeforbus
 
 Una considerazione aggiuntiva è se il Microsoft Teams Rooms verrà aggiunto al dominio. Informazioni sui vantaggi dell'aggiunta al dominio sono disponibili Skype considerazioni sull'aggiunta a un dominio di [Room System.](domain-joining-considerations.md) 
 
-|    |     |
+| &nbsp;   |  &nbsp;   |
 |-----------|------------|
 | ![denominazione dei dispositivi dei punti decisionali](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere la Microsoft Teams Rooms di denominazione dei dispositivi da usare durante la distribuzione.</li><li>Decidere se si aggiungeranno Microsoft Teams Rooms dispositivi al dominio e come gestire e configurare gli account locali. </li><li>Decidere se si userà Operations Management Suite per monitorare la Microsoft Teams Rooms distribuzione.</li><li>Decidere il metodo da usare per distribuire il software e gli agenti nel sistema Microsoft Teams Rooms in preparazione per la distribuzione dei dispositivi. </li></ul>| 
 | ![Dispositivo piano passaggi successivi](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a pianificare l'approccio di distribuzione del dispositivo.</li></ul>| 
@@ -157,7 +157,7 @@ Una considerazione aggiuntiva è se il Microsoft Teams Rooms verrà aggiunto al 
 Dopo aver distribuito il software nelle unità Microsoft Teams Rooms, creare il piano per spedire i dispositivi e i dispositivi periferici assegnati alle chat room e quindi procedere con l'installazione e la configurazione. 
 
 
-|    |     |
+|  &nbsp;  |   &nbsp;  |
 |-----------|------------|
 | ![gestire la distribuzione sito per sito](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere chi gestirà la distribuzione sito per sito.</li><li> Identificare le risorse che installeranno i dispositivi Microsoft Teams Rooms sul sito e intraprendere la configurazione e il test.</li></ul>| 
 | ![Avviare il test del dispositivo](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Avviare il test del dispositivo.</li></ul>| 
@@ -179,7 +179,7 @@ Per altre informazioni su come usare il file di configurazione XML, vedere Gesti
 
 È possibile usare [PowerShell remoto per](rooms-operations.md#remote-management-using-powershell) estrarre la configurazione Microsoft Teams Rooms per le esigenze di creazione di report. 
 
-|    |     |
+| &nbsp;   |  &nbsp;   |
 |-----------|------------|
 | ![configurazione del punto di decisione](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Decidere se configurare manualmente ogni sistema Microsoft Teams Rooms o usare un file XML centrale (uno per Microsoft Teams Rooms dispositivo).</li></ul>| 
 | ![approccio remoto dei passaggi successivi](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Definire l'approccio di gestione remota.</li></ul>| 

@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f3ba85b8-442c-4133-963f-76f1c8a1fff9
 description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Exchange Online e Skype for Business Server locali.
-ms.openlocfilehash: 2f92f85ddf39c5e1a813492b3092eeeef9b77e4c
-ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
+ms.openlocfilehash: 6684173df916b268b35061c735614188e1d58e40
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796680"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646247"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-online"></a>Distribuire Microsoft Teams Rooms con Exchange Online
 
@@ -37,7 +37,7 @@ Prima di distribuire Microsoft Teams Rooms con Exchange Online, assicurarsi di a
 Per distribuire Microsoft Teams Rooms con Exchange Online, seguire la procedura seguente. Assicurarsi di avere le autorizzazioni appropriate per eseguire i cmdlet associati. 
 
    > [!NOTE]
-   >  Il [modulo Azure Active Directory](/powershell/azure/active-directory/overview?view=azureadps-1.0) per i cmdlet Windows PowerShell in questa sezione, ad esempio Set-MsolUser, è stato testato nella configurazione degli account per Microsoft Teams Rooms dispositivi. È possibile che altri cmdlet funzionino, ma non sono stati testati in questo scenario specifico.
+   >  Il [modulo Azure Active Directory](/powershell/azure/active-directory/overview) per i cmdlet Windows PowerShell in questa sezione, ad esempio Set-MsolUser, è stato testato nella configurazione degli account per Microsoft Teams Rooms dispositivi. È possibile che altri cmdlet funzionino, ma non sono stati testati in questo scenario specifico.
 
 Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe essere necessario convertire l'account utente in un utente gestito prima di eseguire questa procedura e quindi convertire di nuovo l'utente in un utente federato dopo aver completato questa procedura.
   
@@ -84,14 +84,14 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
     > La **selezione della password non scade** mai è un requisito per Skype for Business Server in Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In questo caso, è necessario creare un'eccezione per ogni account Microsoft Teams Rooms utente.
   
 4. Fare **clic su** Fine per creare l'account.
-5. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Questa operazione può essere eseguita usando [Set-MsolDirSyncConfiguration](/powershell/module/msonline/set-msoldirsyncconfiguration?view=azureadps-1.0) in PowerShell. Al termine, passare alla pagina degli utenti e verificare che i due account creati nei passaggi precedenti siano stati uniti.
+5. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Questa operazione può essere eseguita usando [Set-MsolDirSyncConfiguration](/powershell/module/msonline/set-msoldirsyncconfiguration) in PowerShell. Al termine, passare alla pagina degli utenti e verificare che i due account creati nei passaggi precedenti siano stati uniti.
 
 ### <a name="assign-a-microsoft-365-or-office-365-license"></a>Assegnare una Microsoft 365 o Office 365 licenza
 
-1. Prima di tutto, connettersi ad Azure AD per applicare alcune impostazioni dell'account. È possibile eseguire questo cmdlet per connettersi. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0)
+1. Prima di tutto, connettersi ad Azure AD per applicare alcune impostazioni dell'account. È possibile eseguire questo cmdlet per connettersi. Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview)
 
    > [!NOTE]
-   > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato.
+   > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview) non è supportato.
 
     ``` PowerShell
    Connect-MsolService -Credential $cred
@@ -122,17 +122,17 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 
 1. Creare una sessione Windows PowerShell remota da un PC come segue:
 
-> [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente.
->
-> Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
+   > [!NOTE]
+   > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente.
+   >
+   > Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 
-    ``` Powershell
-    # When using Teams PowerShell Module
-    Import-Module MicrosoftTeams
-    $credential = Get-Credential
-    Connect-MicrosoftTeams -Credential $credential
-    ```
+   ``` Powershell
+   # When using Teams PowerShell Module
+   Import-Module MicrosoftTeams
+   $credential = Get-Credential
+   Connect-MicrosoftTeams -Credential $credential
+   ```
 
 2. Per abilitare l'account Microsoft Teams Rooms per Skype for Business Server, eseguire questo comando:
 
@@ -151,7 +151,7 @@ Se è stato distribuito Active Directory Federation Services (AD FS), potrebbe e
 > [!NOTE]
 > Se si sta configurando un Teams Rooms solo per partecipare a Microsoft Teams riunioni, non è necessario eseguire la procedura seguente. I passaggi seguenti sono necessari solo se si vuole abilitare il supporto per Skype for Business.
 
-1. Accedere come amministratore tenant, aprire l'Microsoft 365 di amministrazione e fare clic sull'app Amministratore.
+1. Accedere come amministratore tenant, aprire il interfaccia di amministrazione di Microsoft 365 e fare clic sull'app Amministratore.
 2. Fare clic **su Utenti e gruppi** e quindi su Aggiungi **utenti, reimpostazione password e altro ancora.**
 3. Fare clic sull Microsoft Teams Rooms account e quindi fare clic sull'icona della penna per modificare le informazioni dell'account.
 4. Fare clic **su Licenze**.

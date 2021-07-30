@@ -34,12 +34,12 @@ no-loc:
 - Azure Monitor
 - Log Analytics
 - Operations Management Suite
-ms.openlocfilehash: 2348d0f3e9d94aed80494155fbaab8288ddd97a6
-ms.sourcegitcommit: 95386369e2256ba382b4d6e34adb7473de050b26
+ms.openlocfilehash: 1dabc8e4b3f2e238945bf68fdbad73cebebd7fd5
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51410112"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646677"
 ---
 # <a name="deploy-microsoft-teams-rooms-by-using-microsoft-endpoint-configuration-manager"></a>Distribuire Microsoft Teams Rooms usando Microsoft Endpoint Configuration Manager
 
@@ -709,8 +709,7 @@ Le sequenze di attività con Configuration Manager consentono di automatizzare i
 
 12. Selezionare **Chiudi**.
 
-<a name="validate-and-troubleshoot-the-solution"></a>Convalidare e risolvere i problemi della soluzione
---------------------------------------
+**Convalidare e risolvere i problemi della soluzione**
 
 Dopo aver completato le sequenze di attività Microsoft Endpoint Configuration Manager, è necessario eseguire un'esecuzione dei test per verificare che la sequenza di attività sia in grado di distribuire e configurare Microsoft Teams Rooms lavoro.
 

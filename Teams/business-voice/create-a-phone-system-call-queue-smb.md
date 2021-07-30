@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
-ms.openlocfilehash: e7141d32015207469346e018bc12bc362254ba2f
-ms.sourcegitcommit: d77104d5606ff93a792e8712d6c7780ae247b536
+ms.openlocfilehash: 0e0f6dde164f270987d4b01c6bc3528f8799a662
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53126922"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646487"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -87,7 +87,9 @@ Per aggiungere un canale
 
 1. In Teams trovare il team appena creato, fare clic su **Altre** opzioni (...), quindi fare clic **su Aggiungi canale.**
 
-2. Digitare un nome e una descrizione per il canale e quindi fare clic su **Aggiungi**.
+2. Digitare un nome e una descrizione per il canale.
+
+3. In **Privacy** scegliere **Standard - Accessibile a tutti** gli utenti del team e quindi fare clic su **Aggiungi.**
 
 > [!div class="nextstepaction"]
 > [Passaggio 2 - Account delle risorse >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=resource-account#steps)
@@ -122,7 +124,7 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 
-3. Fare clic **su Salva modifiche**.
+3. Fare clic su **Salva modifiche**.
 
     ![Screenshot dell'interfaccia utente per l'assegnazione di licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
 

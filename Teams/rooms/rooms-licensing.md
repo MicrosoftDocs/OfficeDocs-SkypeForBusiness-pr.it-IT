@@ -22,12 +22,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni sulle licenze disponibili per i diversi tipi di funzionalità di chiamata e riunione in Microsoft Teams Rooms.
-ms.openlocfilehash: f538d6adc0e07f30ee4fe5c0ea3613ea962838c5
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 03557d1e833241b36bb1bc5df3a5ef36ff2ca450
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117454"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646687"
 ---
 # <a name="teams-meeting-room-licensing-update"></a>Teams Sala riunioni gestione licenze
 
@@ -35,7 +35,7 @@ ms.locfileid: "51117454"
 
 Microsoft ha due SKU dedicati per le riunioni e le chiamate per ogni dispositivo per i dispositivi delle sale riunioni (ad esempio Microsoft Teams Rooms, Microsoft Surface Hub e barre di collaborazione per Microsoft Teams).
 
-||Microsoft Teams Rooms Standard |Microsoft Teams Rooms Premium |
+|&nbsp;|Microsoft Teams Rooms Standard |Microsoft Teams Rooms Premium |
 |:--- |:---: |:---: |
 |Skype for Business |&#x2714;| &#x2714;|
 |Microsoft Teams|  &#x2714;|  &#x2714;|
@@ -64,7 +64,7 @@ La tabella seguente elenca le funzionalità disponibili in Microsoft Teams Rooms
 > [!NOTE]
 > È necessario che la sala configurata sia un oggetto utente e abbia le licenze assegnate.
 
-|  | Hai Microsoft Teams o Skype for Business Online <br/> Ecco cosa devi acquistare:   |È stato Skype for Business Server 2015/2019 (locale o ibrido). <br/> Ecco cosa devi acquistare:|
+| &nbsp; | Hai Microsoft Teams o Skype for Business Online <br/> Ecco cosa devi acquistare:   |È stato Skype for Business Server 2015/2019 (locale o ibrido). <br/> Ecco cosa devi acquistare:|
 |:-----|:-----|:-----|
 |Partecipazione a una riunione programmata  | Microsoft Teams Rooms Standard o Premium  |Skype for Business Licenza CAL per server Standard  |
 |Avviare una riunione ad hoc | Microsoft Teams Rooms Standard o Premium  |Skype for Business Licenza CAL per server Standard  <br/> Skype for Business Licenza CAL per server Enterprise|

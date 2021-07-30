@@ -21,12 +21,12 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: "Informazioni su come configurare i telefoni dell'area comune per lobby, aree di ricezione e sale riunioni "
-ms.openlocfilehash: bb17b21eac262c160abc3e16a4b552fb32b97d00
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 7d04b1262c88a2600e2167cbaf5498672983cb0b
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117114"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646217"
 ---
 # <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza dell'area Telefono per Microsoft Teams
 > [!NOTE]
@@ -40,7 +40,7 @@ Prima di tutto, è necessario acquistare una licenza di Common Area Telefono (CA
 
 ## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 
-1. Nell'Microsoft 365 di amministrazione, passare a **Servizi** di acquisto fatturazione  >   e quindi espandere **Altri piani.**
+1. Nel interfaccia di amministrazione di Microsoft 365, passare a **Servizi di** acquisto  >  **fatturazione** e quindi espandere Altri **piani**.
 
     ![Screenshot che mostra il riquadro Telefono area comune](media/set-up-common-area-phone-image1.png)
 
@@ -61,7 +61,7 @@ Per altre informazioni sulle licenze, vedere Microsoft Teams [licenze per i comp
 La licenza common area Telefono supporta: 
 
 
-|   |  Telefono di area comune  |
+| &nbsp;  |  Telefono di area comune  |
 |---------|---------|
 |Skype for Business |   &#x2714; |
 |Microsoft Teams |   &#x2714; |
@@ -80,7 +80,7 @@ La licenza common area Telefono supporta:
 
 ## <a name="step-2---create-a-new-user-account-for-the-phone-and-assign-the-licenses"></a>Passaggio 2: crea un nuovo account utente per il telefono e assegna le licenze
 
-1. Nell'Microsoft 365 di amministrazione passare **a** Utenti utenti attivi  >    >  **che aggiungono un utente.**
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare a **Utenti**  >  **utenti attivi che**  >  **aggiungono un utente.**
 
 2. Immettere un nome utente come "Principale" per il nome e "Ricezione" per il secondo nome.
 
@@ -92,7 +92,7 @@ La licenza common area Telefono supporta:
 
 6. Assegnare le licenze all'utente. Nella stessa pagina, fai clic per espandere **Licenze di prodotto**. Attiva l'area comune Telefono e scegli un **piano** per chiamate nazionali o un piano per chiamate nazionali **e internazionali.** 
 
-    ![Screenshot che mostra l'assegnazione delle licenze](media/set-up-common-area-phone-image2.png)
+    ![Screenshot che mostra l'assegnazione delle licenze con il piano per chiamate nazionali e le opzioni del piano nazionale e internazionale evidenziate](media/set-up-common-area-phone-image2.png)
 
 > [!NOTE]
 > Se si usa il Telefono Microsoft System Direct Routing, non è necessario assegnare una licenza per il piano di chiamata.
@@ -113,7 +113,7 @@ Usare l Teams di amministrazione per assegnare un numero all'utente.
 
 6. Clicca su **Salvare** e il tuo utente dovrebbe apparire così:
 
-   ![Screenshot che mostra l'assegnazione delle licenze](media/set-up-common-area-phone-image3.png)
+   ![Screenshot che mostra l'assegnazione di licenze utente di esempio](media/set-up-common-area-phone-image3.png)
 
 > [!NOTE]
 > Gli utenti verranno visualizzati solo se è applicata una Sistema telefonico licenza. Se lo hai appena fatto, a volte ci vuole un po' perché l'utente venga visualizzato nell'elenco.

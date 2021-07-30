@@ -17,12 +17,12 @@ description: Informazioni su come gestire le app Teams nella pagina Gestisci app
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 6ea09ae40068277c5e450c19b6e258d04fd40fdc
-ms.sourcegitcommit: d77104d5606ff93a792e8712d6c7780ae247b536
+ms.openlocfilehash: e237fc1e511694b80cb9b98ca4e1f9c36f1eba25
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53126912"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646467"
 ---
 # <a name="manage-your-apps-in-the-microsoft-teams-admin-center"></a>Gestire le app nell'interfaccia Microsoft Teams di amministrazione
 
@@ -51,7 +51,7 @@ Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Micr
 - **Stato:** stato dell'app a livello di organizzazione, che può essere uno dei seguenti:
 - **Consentito:** l'app è disponibile per tutti gli utenti dell'organizzazione.
 - **Bloccato:** l'app è bloccata e non è disponibile per gli utenti dell'organizzazione.
-  - **Bloccato a livello di organizzazione:** l'app è bloccata nelle impostazioni dell'app a livello di organizzazione.
+- **Bloccato a livello di organizzazione:** l'app è bloccata nelle impostazioni dell'app a livello di organizzazione.
       È importante sapere che questa colonna rappresenta lo stato consentito e bloccato delle app che in precedenza erano nel **riquadro Impostazioni a livello di** organizzazione. Ora è possibile visualizzare, bloccare e consentire le app a livello di organizzazione nella **pagina Gestisci app.**
 - **Licenze:** indica se un'app offre un abbonamento a Software as a Service (SaaS) per l'acquisto. Questa colonna si applica solo alle app di terze parti. Ogni app di terze parti avrà uno dei valori seguenti:
 - **Acquista ora:** l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
@@ -63,6 +63,7 @@ Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Micr
 - **- -**: l'app non ha le autorizzazioni che necessitano del consenso.
 - **Categorie:** categorie applicabili all'app.
 - **Versione:** versione dell'app.
+- **L'amministratore può installare nelle** riunioni: indica se un'app può essere installata dagli amministratori nelle riunioni del team. [Ulteriori informazioni](teams-app-setup-policies.md#install-apps)
 
 Per visualizzare le informazioni desiderate nella  tabella, selezionare Modifica colonna nell'angolo in alto a destra per aggiungere o rimuovere colonne alla tabella.
 

@@ -20,12 +20,12 @@ ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f4502d76bbb2e12f38ba79d0848ecd06739417cc
-ms.sourcegitcommit: b387296c043fcf10fba7b9ef416328383e54a565
+ms.openlocfilehash: 061573176da10c48dc5cbee72a49f22eb4994c09
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "53596607"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53661864"
 ---
 #  <a name="calling-and-call-forwarding-in-teams"></a>Chiamate e inoltro di chiamata in Teams
 
@@ -79,11 +79,11 @@ Questa impostazione consente di inviare chiamate in ingresso alla segreteria tel
 - **Disabilitato**  La segreteria telefonica non è disponibile per le chiamate in ingresso.
 - **Controllato dall'utente** Gli utenti possono determinare se vogliono che la segreteria telefonica sia disponibile.
 
-### <a name="inbound-calls-can-be-routed-to-call-groups"></a>Le chiamate in ingresso possono essere instradati ai gruppi di chiamate 
+### <a name="inbound-calls-can-be-routed-to-call-groups"></a>Le chiamate in ingresso possono essere instradati ai gruppi di chiamate
 
 Questa impostazione controlla se le chiamate in arrivo possono essere inoltrate a un gruppo di chiamate.
 
-### <a name="allow-delegation-for-inbound-and-outbound-calls"></a>Consentire la delega per le chiamate in ingresso e in uscita
+### <a name="delegation-for-inbound-and-outbound-calls"></a>Delega per le chiamate in ingresso e in uscita
 
 Questa impostazione consente di instradare le chiamate in ingresso ai delegati, consentendo ai delegati di effettuare chiamate in uscita per conto degli utenti per cui hanno autorizzazioni delegate. Per altre informazioni, vedere [Condividere una linea telefonica con un delegato.](https://support.office.com/article/share-a-phone-line-with-a-delegate-16307929-a51f-43fc-8323-3b1bf115e5a8)
 
@@ -91,19 +91,23 @@ Questa impostazione consente di instradare le chiamate in ingresso ai delegati, 
 
 Se si imposta questa opzione **su Attivata,** le chiamate verranno inviate tramite PSTN e verranno sostenute spese invece di inviarle tramite la rete e ignorare i pedaggi.
 
-### <a name="busy-on-busy-is-available-while-in-a-call"></a>Occupato su Occupato è disponibile durante una chiamata
+### <a name="busy-on-busy-is-available-when-in-a-call"></a>Occupato in caso di disponibilità è disponibile durante una chiamata
 
-Occupato (Opzioni occupato) è una nuova impostazione che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o instradate di conseguenza alle impostazioni senza risposta dell'utente. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di occupato, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
+Occupato (Opzioni occupato) consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o instradate di conseguenza alle impostazioni senza risposta dell'utente. È possibile abilitare le opzioni di disponibilità a livello di tenant o a livello di utente. Indipendentemente dal modo in cui vengono configurate le opzioni di occupato, gli utenti di una chiamata o di una conferenza o quelli con una chiamata in attesa non possono avviare nuove chiamate o conferenze. Questa impostazione è disabilitata per impostazione predefinita.
 
-### <a name="allow-web-pstn-calling"></a>Consenti chiamate PSTN Web
+### <a name="web-pstn-calling"></a>Chiamate PSTN Web
 
 Questa impostazione consente agli utenti di chiamare i numeri PSTN usando Teams web client.
+
+### <a name="incoming-meeting-invites-are-automatically-answered"></a>Agli inviti alle riunioni in arrivo viene automaticamente risposto
+
+Questa impostazione controlla se gli inviti alle riunioni in arrivo devono rispondere automaticamente. Per impostazione predefinita l'opzione è disattivata. Tenere presente che questa impostazione si applica solo agli inviti alle riunioni in arrivo. Non si applica ad altri tipi di chiamate.
 
 ### <a name="allow-music-on-hold"></a>Consentire la musica in attesa
 
 Questa impostazione consente di attivare o disattivare il blocco della musica quando un chiamante PSTN viene sospeso. È attivata per impostazione predefinita. Questa impostazione non si applica alle funzionalità di parcheggio di chiamata e delegato del responsabile ed è attualmente disponibile solo tramite PowerShell.
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-articles"></a>Articoli correlati
 
 [Set-CSTeamsCallingPolicy](/powershell/module/skype/set-csteamscallingpolicy)
 
