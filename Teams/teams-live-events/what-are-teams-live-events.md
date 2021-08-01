@@ -22,12 +22,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: 0d1d453e0d9d6575ec108b4bc17cdce1f4dac839
-ms.sourcegitcommit: 5c68298474d1782e69bde8c0940be7150cb93f6e
+ms.openlocfilehash: 56287bc82afbd686ead23134779043ceb27782f3
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "53096330"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646097"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi live di Microsoft Teams
 
@@ -102,6 +102,7 @@ L'obiettivo dell’eCDN consiste nell'estrarre il contenuto video da Internet e 
 - [Kollective](https://kollective.com/ecdn-solutions/microsoft-live-events/)
 - [Ramp](https://rampecdn.com)
 - [Riverbed](https://www.riverbed.com/solutions/office-365.html)
+- [Peer5](https://www.peer5.com/) (presto disponibile)
 
 ### <a name="attendee-experience"></a>Esperienza partecipanti
 

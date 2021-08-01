@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.deploymentadvisor.overview
 description: Usare Advisor per Teams per pianificare e completare la distribuzione di Microsoft Teams.
-ms.openlocfilehash: 98a2d2ee2bdfca82de0f42651b1936d982ab6805
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 9b86ade0aa067e895ebf21b912801c761e7657ba
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240551"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646617"
 ---
 # <a name="use-advisor-for-teams-to-help-you-roll-out-microsoft-teams"></a>Usare Advisor per Teams per distribuire Microsoft Teams
 
@@ -71,8 +71,16 @@ Advisor per Teams attualmente prevede i seguenti piani:
     - Sondaggio utenti con Forms
     - Bot Advisor per Teams
     - Progettato per i clienti che attualmente utilizzano ambienti locali Skype for Business online o Skype for Business, il piano di aggiornamento di Skype for Business consentirà un aggiornamento pianificato in ogni minimo dettaglio. Sfruttando un efficiente framework comprovato per l'implementazione del cambiamento, il piano farà da guida attraverso una procedura dettagliata, sia che si abbia appena iniziato a usare Teams, che già lo si utilizzi insieme a Skype for Business o che si sia pronti per l'aggiornamento. Il piano mette a disposizione anche [materiale sussidiario e procedure consigliate online](./upgrade-start-here.md), [risorse scaricabili](https://aka.ms/UpgradeSuccessKit), [workshop di pianificazione di gruppo](./upgrade-workshops-landing-page.yml) e risorse aggiuntive a supporto del raggiungimento dei risultati.
+1. Education (visibile solo alle organizzazioni educative)
+    - Valutazione del tenant
+    - Piano di Planner, incluse le attività di adozione
+    - Sondaggio utenti con Forms
+    - Bot Advisor per Teams
+    - Progettato per le organizzazioni educative, il piano Education ti aiuterà a distribuire, adottare e gestire i team nel tuo istituto formativo.
 
-È consigliabile iniziare con il piano Chat, team, canali e app. Dopo aver completato la distribuzione del carico di lavoro, tornare in Assistente per Teams e selezionare **Aggiungi canale** per avviare il carico di lavoro successivo.
+Per le organizzazioni commerciali, è consigliabile iniziare con il piano Chat, team, canali e app. Per le organizzazioni educative, ti consigliamo di iniziare con il piano Education. Dopo aver completato la distribuzione del carico di lavoro, tornare in Assistente per Teams e selezionare **Aggiungi canale** per avviare il carico di lavoro successivo.
+
+
 
 ## <a name="tenant-assessment"></a>Valutazione del tenant
 

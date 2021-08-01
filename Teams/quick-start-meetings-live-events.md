@@ -20,12 +20,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 88a9f86ae72bcc86ba2a1c7d252950c6b11cbf36
-ms.sourcegitcommit: 0c3ff4933360813b9c6d78adea02f42688dea997
+ms.openlocfilehash: 854443e529736207520cbfdbe845c0b4992f9cd6
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "53463299"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53647017"
 ---
 # <a name="quick-start---meetings-webinars-and-live-events"></a>Guida introduttiva: riunioni, webinar ed eventi live 
 
@@ -42,25 +42,31 @@ Questo articolo, destinato ad amministratori e professionisti IT, descrive breve
 
 I diversi tipi di riunioni sono anche caratterizzati da diversi limiti e capacità dei partecipanti. 
 
-La tabella seguente riepiloga brevemente i tre tipi di riunioni, il numero di partecipanti consigliati e il modo in cui i partecipanti possono interagire nella riunione. Altre informazioni su ogni tipo di riunione seguono la tabella.
-<br><br>
+La tabella seguente riepiloga brevemente i tre tipi di riunioni, il numero di partecipanti consigliati e il modo in cui i partecipanti possono interagire nella riunione. Altre informazioni su ciascun tipo di riunioni sono riportate dopo la tabella.<br><br>
 
 | Tipo di riunione | Numero di partecipanti | Interazione | Registrazione supportata |
 |----------|--------|--------|-----|
-| Riunioni  | Fino a 20,000* <br> | - Con un numero massimo di 1.000 partecipanti sono disponibili funzionalità completamente interattive uguali per tutti durante la riunione <br> - Con un numero di partecipanti compreso tra 1.000 e 20.000 sono disponibili funzionalità di [sola visualizzazione](view-only-meeting-experience.md)  | No |
-| Webinar | Fino a 20,000* |- Con un numero massimo di 1.000 partecipanti sono disponibili funzionalità completamente interattive <br> - Con un numero di partecipanti compreso tra 1.000 e 20.000 sono disponibili funzionalità di [sola visualizzazione](view-only-meeting-experience.md)  <br> - Interazione del gruppo di destinatari configurabile <br> - È possibile specificare i relatori | Sì |
-| Eventi live | Fino a 20,000** |- Trasmissione a un vasto pubblico <br>- Sessione di domande e risposte con moderatore per l'interazione con il pubblico <br> - È possibile specificare produttori e relatori, inclusi i relatori esterni<br>- Supporta funzionalità di produzione più avanzate | No |
+| Riunioni  | Fino a 20,000* <br> | - Con un numero massimo di 1.000 partecipanti sono disponibili funzionalità completamente interattive uguali per tutti durante la riunione. <br> - Con un numero di partecipanti compreso tra 1.000 e 20.000 sono disponibili funzionalità di [sola visualizzazione](view-only-meeting-experience.md).  | No |
+| Webinar | - Fino a 1.000<br>- Maggiori limiti con [funzionalità di sola visualizzazione](view-only-meeting-experience.md)saranno disponibili prossimamente. |- Con un numero massimo di 1.000 partecipanti sono disponibili funzionalità completamente interattive. <br> - Interazione tra il pubblico configurabile. <br> - È possibile specificare i relatori. | Sì |
+| Eventi live | Fino a 20,000** |- Trasmissione a un pubblico vasto. <br>- Sessione di domande e risposte con moderatore per l'interazione con il pubblico. <br> - È possibile specificare i produttori e i relatori, inclusi i relatori esterni.<br>- Supporta funzionalità di produzione più avanzate. | No |
 ||||
 
 *Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021.<br>
 
-**Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](https://docs.microsoft.com/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](https://docs.microsoft.com/stream/live-events-assistance). 
+**Il consueto tetto di 10.000 partecipanti aumenta a 20.000 fino al 31 dicembre 2021. È possibile pianificare numeri ancora maggiori con eventi live in Yammer e/o Microsoft Stream. Per altre informazioni, vedere [Eventi live in Microsoft 365](/stream/live-event-m365). Si noti che gli eventi che superano 20.000 partecipanti richiedono il [programma di assistenza per eventi live](/stream/live-events-assistance). 
 
-Per un'esperienza ottimale nelle riunioni di grandi dimensioni, Microsoft consiglia di usare il client desktop di Teams o i client per dispositivi mobili di Teams. Nelle riunioni di grandi dimensioni, i relatori dovrebbero usare il client desktop di Teams. Per altri suggerimenti su come ospitare riunioni di grandi dimensioni, vedere [Procedure consigliate per le riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16).
+**Considerazioni in merito a riunioni di grandi dimensioni, webinar ed eventi live**: quando si ospitano riunioni di grandi dimensioni, considerare quanto segue:
+
+- Per un'esperienza ottimale nei webinar, negli eventi live e nelle riunioni di grandi dimensioni, Microsoft consiglia di usare l'ultima versione del client desktop di Teams o dei client per dispositivi mobili di Teams. 
+
+- Nelle riunioni di grandi dimensioni, nei webinar e negli eventi live, i relatori dovrebbero usare il client desktop di Teams. 
+
+- Per altri suggerimenti su come ospitare riunioni di grandi dimensioni, vedere [Procedure consigliate per le riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16).
 
 Per informazioni sull'esperienza di riunione di sola visualizzazione, vedere [Esperienza di sola visualizzazione nelle riunioni di Teams](view-only-meeting-experience.md).
 
 Si noti che NDI è completamente supportato in riunioni, webinar ed eventi live, consentendo di produrre la trasmissione usando strumenti come OBS e Wirecast. Per altre informazioni, vedere [Usare la tecnologia NDI® in Microsoft Teams](use-ndi-in-meetings.md).
+
 
 ### <a name="meetings"></a>Riunioni
 

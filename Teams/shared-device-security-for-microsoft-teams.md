@@ -1,5 +1,5 @@
 ---
-title: Guida alla sicurezza di Microsoft Teams
+title: 'Guida alla sicurezza per Microsoft Teams: utilizzare Teams in modo sicuro sui computer condivisi'
 author: MSFTTracyP
 ms.author: tracyp
 manager: dansimp
@@ -20,12 +20,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 45497c824cfc20644a59e35f7812b17058f61c2c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: cc886b2783d1398a85e00927a224968d65a9539b
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117054"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646007"
 ---
 # <a name="use-microsoft-teams-securely-on-shared-computers"></a>Usare Microsoft teams in modo sicuro sui computer condivisi
 
@@ -33,7 +33,7 @@ Se possibile, *si raccomanda* alle organizzazioni di adottare un approccio Zero 
 
 :::image type="content" source="media/tp_ZeroTrustPrinciples.PNG" alt-text="Immagine dell'architettura Zero Trust che mostra la verifica esplicita, il principio del privilegio minimo e la presunzione della violazione, ossia i principi fondamentali dell'approccio Zero Trust, nei cerchi blu.":::
 
-Gli amministratori possono creare ambienti molto sicuri *concentrandosi* sulla verifica, il principio del privilegio minimo e la presunzione della violazione: sono standard che comportano azioni che riducono al minimo i rischi per utenti e dati. 
+Gli amministratori possono creare ambienti sicuri *concentrandosi* sulla verifica, il principio del privilegio minimo e la presunzione della violazione: sono standard che comportano azioni che riducono al minimo i rischi per utenti e dati. 
 
 > [!TIP]
 > Per un'analisi più approfondita dell'architettura Zero Trust, vedere [questi video](/security/ciso-workshop/ciso-workshop-module-3#part-2-zero-trust-definition-and-models-1537).
@@ -46,14 +46,14 @@ Si consiglia di sviluppare piani per rispettare le linee guida nel modo più rig
 
 1. Usare le funzionalità di sicurezza della piattaforma del sistema operativo.
     1. Assicurarsi che il sistema operativo sia configurato in modo da installare gli aggiornamenti automatici distribuiti dal provider del sistema operativo (per i sistemi Microsoft, ciò può essere fatto tramite [**Windows Update**](https://support.microsoft.com/help/12373/windows-update-faq)). 
-    1. Assicurarsi che le funzionalità crittografiche del dispositivo, come [**bitlocker**](/windows/security/information-protection/bitlocker/bitlocker-overview), siano abilitate, e che la chiave usata per accedere al dispositivo sia protetta.  Si noti che la maggior parte dei [**dispositivi Windows 10 moderni supporta BitLocker**](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10) 
+    1. Assicurarsi che le funzionalità crittografiche del dispositivo, come [**bitlocker**](/windows/security/information-protection/bitlocker/bitlocker-overview) siano abilitate, e che la chiave usata per accedere al dispositivo sia protetta.[**dei dispositivi Windows 10 moderni supporta bitlocker**](/windows/security/information-protection/bitlocker/bitlocker-device-encryption-overview-windows-10). 
     1. Usare le funzionalità antivirus, come quelle offerte da [**Windows Defender**](/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10), sul proprio dispositivo.
     1. L'uso di [account utente separati](https://support.microsoft.com/help/4026923/windows-10-create-a-local-user-or-administrator-account) per ogni utente del sistema è fortemente raccomandato.
     1. *Non* concedere né usare i privilegi di amministrazione per funzioni non amministrative (come navigare su internet, eseguire Teams, ecc.).
 
 Se non è possibile soddisfare le indicazioni precedenti, è consigliabile usare altre procedure consigliate per la sicurezza del browser:
 
-1. Sfruttare le funzionalità di sicurezza del browser.
+1. Applicare le funzionalità di sicurezza del browser.
     1. Usare le sessioni di navigazione privata per minimizzare i dati e la cronologia che persistono sul disco. Per esempio, usare la [navigazione inPrivate di Microsoft Edge](https://support.microsoft.com/help/4533513/microsoft-edge-browse-inprivate), [la navigazione in incognito di Google Chrome](https://support.google.com/chrome/answer/95464?co=GENIE.Platform%3DDesktop&hl=en), o le funzionalità di navigazione privata del browser in uso. 
     1. Si raccomanda di modificare il sistema in modo che la navigazione privata sia attivata per *impostazione predefinita*. 
 
@@ -64,11 +64,11 @@ Se non è possibile soddisfare le indicazioni precedenti, è consigliabile usare
     1. Chiudere tutte le schede e le finestre del browser.
     1. Disconnettersi dal dispositivo.
 
-Gli elementi precedenti non sono un elenco completo delle migliori pratiche o dei controlli di sicurezza relativi a tutti i casi, e potrebbe essere possibile compiere altre azioni nel proprio ambiente (ad esempio, gli amministratori di sicurezza possono scegliere di usare i collegamenti e gli allegati sicuri di Teams se usano [Office 365 ATP piano 1 o 2](/microsoft-365/security/office-365-security/office-365-atp?view=o365-worldwide#office-365-atp-plan-1-and-plan-2)). Tuttavia, questi passaggi sono un punto di partenza per creare indicazioni per l'uso di Teams con dispositivi condivisi.
+Gli elementi precedenti non sono un elenco completo delle migliori pratiche o dei controlli di sicurezza relativi a tutti i casi, e potrebbe essere possibile compiere altre azioni nel proprio ambiente (ad esempio, gli amministratori di sicurezza possono scegliere di usare i collegamenti e gli allegati sicuri di Teams se usano [Office 365 ATP piano 1 o 2](/microsoft-365/security/office-365-security/office-365-atp#office-365-atp-plan-1-and-plan-2)). Tuttavia, questi passaggi sono un punto di partenza per la creazione di linee guida per l'uso di Teams da dispositivi condivisi.
 
 ## <a name="more-information"></a>Altre informazioni
 
-[Bitlocker in Gestione configurazione](/mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent)
+[BitLocker in Gestione configurazione](/mem/configmgr/protect/deploy-use/bitlocker/deploy-management-agent)
 
 [BitLocker per Windows 10 in Intune](/mem/intune/protect/encrypt-devices)
 

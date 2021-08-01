@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 80e0f7edb581b5c9089a1d79feece5a6877f1e2f
-ms.sourcegitcommit: 330b5c3e299ddad5168958e4722d1e0b987372e2
+ms.openlocfilehash: ac699c662c8e0ac61180c1031cfc77c300c51d19
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "53536832"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646427"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -54,6 +54,12 @@ L'accesso guest in Teams richiede la configurazione di altre impostazioni in Mic
 - Per collaborare con un'organizzazione partner che usa Azure Active Directory e consentire agli utenti guest di iscriversi autonomamente per l'accesso a Teams, vedere [Creare una Extranet B2B con utenti guest gestiti](/microsoft-365/solutions/b2b-extranet).
 
 L'accesso guest in Teams è un'impostazione a livello di organizzazione ed è disattivato per impostazione predefinita. È possibile controllare l'accesso guest ai singoli team usando le [etichette di riservatezza](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+
+### <a name="turning-guest-access-off"></a>Disattivazione dell’accesso guest
+
+Se si disattiva l'accesso guest in Teams, gli utenti guest esistenti perdono l'accesso al proprio team. Tuttavia, non vengono rimossi dal team. Sono ancora visibili ai membri del team e possono essere @menzionati. Se si riattiva l'accesso guest di Teams, l'accesso verrà recuperato.
+
+Se si ha intenzione di lasciare disattivato l'accesso guest, si consiglia di informare i proprietari dei team di rimuovere manualmente gli account guest dai team. Sebbene questi ospiti non avranno accesso, avere i loro account visibili nel team potrebbe creare confusione agli altri membri del team.
 
 ## <a name="how-a-guest-becomes-a-member-of-a-team"></a>Come diventare un membro di un team da utente guest
 
