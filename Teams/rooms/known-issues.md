@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può ottenere informazioni su un elenco di problemi noti per Microsoft Teams Rooms, tra cui aggiornamento, interfaccia utente, hardware e limitazioni e comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: d601db3c028c7c93a97131db48de81bdcab314e4
-ms.sourcegitcommit: bd7b4986044f7921b25506488dfed405fc2e7ca3
-ms.translationtype: HT
+ms.openlocfilehash: b3656e73226f29f6580a4ae3a1807ee8273731a8
+ms.sourcegitcommit: ad215c120d7e550a7aebf2e1bb620c69039e5d8d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "52877488"
+ms.lasthandoff: 08/01/2021
+ms.locfileid: "53679781"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -32,7 +32,7 @@ Questo articolo elenca i problemi noti di Microsoft Teams Rooms per area funzion
 | Titolo problema |  Comportamento \/ Sintomo | Soluzione alternativa nota | Articolo della Knowledge Base |
 |  ---        |      ---             |   ---            | --- |
 | L'applicazione non viene avviata |  Dopo l'aggiornamento all'applicazione versione 4.4.41.0, il sistema viene avviato su schermo nero o passa alla schermata di accesso dopo alcuni minuti. | Segui la procedura descritta in [applicazione Microsoft Teams Rooms non viene avviata dopo l'aggiornamento alla versione 4.4.41.0](/microsoftteams/troubleshoot/teams-administration/teams-rooms-app-wont-start-after-update) per risolvere questo problema.  | Nessuno |
-|  Volume di riunioni basso dopo la condivisione del contenuto         |   I dispositivi Microsoft Teams Rooms su Windows 10 esperienza 20H2 hanno ridotto il volume di contenuti multimediali e riunioni dopo la condivisione di contenuti tramite HDMI in sala. Questo è causato da un problema audio in Windows 10 20H2. | Attualmente non esiste alcuna soluzione per questo problema. Per ridurre l'impatto sul volume audio della riunione (ad esempio, la voce dei partecipanti), abbiamo disabilitato l'audio HDMI in tutti i dispositivi Teams Rooms. Il team di Windows 10 sta analizzando il problema e un avviso del cliente rimarrà attivo fino a quando non viene trovata una risoluzione. | Nessuno |
+|  Volume di riunioni basso dopo la condivisione del contenuto         |   I dispositivi Microsoft Teams Rooms su Windows 10 esperienza 20H2 hanno ridotto il volume di contenuti multimediali e riunioni dopo la condivisione di contenuti tramite HDMI in sala. Questo è causato da un problema audio in Windows 10 20H2. | La correzione per questo problema è disponibile nella versione [dell'applicazione 4.9.12.0.](/microsoftteams/rooms/rooms-release-note#49120-7282021) | Nessuno |
 |  App non aggiornato         |    La console di Microsoft Teams Rooms mostra un errore "configurazione del sistema non aggiornata".                |   [Utilizza lo strumento di ripristino di Microsoft Teams Rooms](recovery-tool.md)             |  Nessuno |
 |  Il dispositivo è stato aggiornato alla versione non supportata di Windows 10   |    Dispositivo con Windows 10 aggiornato dalla versione 1803 alla versione 1809, che non è supportato. La versione supportata è la 1903. |   Questo può verificarsi se l'impostazione [Criteri di gruppo o MDM per DeferFeatureUpdatesPeriodinDays](/windows/deployment/update/waas-configure-wufb), che consente di rinviare gli aggiornamenti delle funzionalità per un numero specificato di giorni, è configurata a un massimo di 365 giorni. <br><br> Windows 10 versione 1809 non è supportata con Microsoft Teams Rooms, mentre la versione 1903 è supportata. Tuttavia, a partire dal 27 marzo 2020, la versione 1809 ha più di 365 giorni. Se questa impostazione non viene modificata, Windows cerca di installare la versione 1809, causando problemi con Microsoft Teams Rooms.<br><br>Per evitare questa situazione, **rimuovi** qualsiasi impostazione Criteri di gruppo o MDM per il rinvio degli aggiornamenti. In questo modo Windows può eseguire l'aggiornamento alla versione del sistema operativo più recente supportata. <br><br>**IMPORTANTE** L'impostazione Criteri di gruppo o MDM deve essere **rimossa** (non configurata) e non **impostata su 0**. Se il criterio è impostato su 0, Windows accetta la versione disponibile più recente che potrebbe non essere supportata. |  Nessuno |
 

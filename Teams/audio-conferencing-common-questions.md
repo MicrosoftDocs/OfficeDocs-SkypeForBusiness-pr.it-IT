@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono riportate alcune delle principali domande dei clienti che vogliono usare le audioconferenze.
-ms.openlocfilehash: 6547aa6cb0021cfdb7a9cf3af1f77ebc8f625c5d
-ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
+ms.openlocfilehash: c8c5ea445e9c8d01f869a9340934fe75fe92a329
+ms.sourcegitcommit: ad215c120d7e550a7aebf2e1bb620c69039e5d8d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52856415"
+ms.lasthandoff: 08/01/2021
+ms.locfileid: "53679751"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
@@ -111,7 +111,7 @@ No, un utente non può ottenere assistenza o supporto per l'operatore premendo *
   
 ## <a name="how-does-a-user-access-or-change-their-conference-id"></a>In che modo un utente accede o modifica l'ID conferenza?
 
-Skype for Business o Microsoft Teams gli utenti possono trovare l'ID conferenza assegnato pianificando una riunione in Outlook e Outlook sul Web. Inoltre, gli utenti possono trovare l'ID conferenza nel messaggio di posta elettronica che gli verrà inviato dopo la configurazione.
+Skype for Business o Microsoft Teams gli utenti possono trovare l'ID conferenza assegnato pianificando una riunione in Outlook e Outlook sul web. Inoltre, gli utenti possono trovare l'ID conferenza nel messaggio di posta elettronica che gli verrà inviato dopo la configurazione.
   
 > [!NOTE]
 > Gli utenti non saranno in grado di reimpostare l'ID conferenza. L'ID conferenza può essere reimpostato solo dall'utente, [l'amministratore,](https://support.office.com/article/admin-eac4d046-1afd-4f1a-85fc-8219c79e1504)per l'organizzazione. 
@@ -131,10 +131,11 @@ Stiamo lavorando a una soluzione che consente all'utente di accedere e reimposta
 
 Per i partecipanti alla riunione e gli organizzatori:
 
-| Nome comando | Tasti di comando | Descrizione                                                     |
-|--------------|--------------|-----------------------------------------------------------------|
-| Menu di comando | \*1          | Premere 1 per riprodurre le descrizioni dei comandi della tastiera \* del telefono disponibili. |
-| Disattivare/riattivare l'audio  | \*6          | Premere \* 6 per disattivare o riattivare l'audio.                         |
+| Nome comando    | Tasti di comando | Descrizione                                                                 |
+|--------------   |--------------|-----------------------------------------------------------------------------|
+| Menu di comando    | \*1          | Premere 1 per riprodurre le descrizioni dei comandi della tastiera \* del telefono disponibili. |
+| Alza/abbassa mano| \*5          | Premere \* 5 per alzare o abbassare la mano.                                           |  
+| Disattivare/riattivare l'audio     | \*6          | Premere \* 6 per disattivare o riattivare l'audio.                                     |
 
 Solo per gli organizzatori della riunione:
 
@@ -150,7 +151,7 @@ Sì, i partecipanti possono effettuare chiamate in uscita a livello internaziona
   
 ## <a name="how-does-a-skype-for-business-or-microsoft-teams-user-schedule-a-meeting-with-audio-conferencing-meeting-details"></a>In che modo un utente Skype for Business o Microsoft Teams pianificare una riunione con i dettagli delle riunioni di audioconferenza?
 
-Quando a un utente viene assegnata una licenza di **audioconferenza** e l'utente crea una nuova riunione Skype for Business o Microsoft Teams in Outlook o Outlook sul Web, i numeri di telefono e gli ID conferenza telefonica con accesso esterno vengono aggiunti automaticamente all'invito alla riunione.
+Quando a un utente viene assegnata una licenza di **audioconferenza** e l'utente crea una nuova riunione Skype for Business o Microsoft Teams in Outlook o Outlook sul web, i numeri di telefono e gli ID conferenza telefonica con accesso esterno vengono aggiunti automaticamente all'invito alla riunione.
   
 ## <a name="how-does-a-user-schedule-and-start-a-meeting-when-all-attendees-will-be-using-a-phone-to-dial-in"></a>In che modo un utente pianifica e avvia una riunione quando tutti i partecipanti usano un telefono per effettuare l'accesso?
 
