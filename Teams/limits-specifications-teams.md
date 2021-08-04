@@ -1,6 +1,6 @@
 ---
 title: Limiti e specifiche per Microsoft Teams
-author: microsoftheidi
+author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
 ms.topic: reference
@@ -19,12 +19,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: f28e9f1b0fcc4d8855b0c053dbd71ee30cf58747
-ms.sourcegitcommit: d34dbdc2f71f3d024cb7f1856fc0f8bbc701f66d
+ms.openlocfilehash: 08b6686a640e039cbd84d95196824d4b35fb9f35
+ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53506345"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "53646037"
 ---
 # <a name="limits-and-specifications-for-microsoft-teams"></a>Limiti e specifiche per Microsoft Teams
 
@@ -125,12 +125,12 @@ Inoltre, i nomi di canale non possono iniziare con un carattere di sottolineatur
 |Dimensione massima file di PowerPoint | 2 GB|
 |Teams conserva le [registrazioni delle riunioni](cloud-recording.md) che non vengono caricate in Microsoft Stream, disponibili per il download locale | 20 giorni |
   
-<sup>1</sup> Per un'esperienza ottimale nelle riunioni di grandi dimensioni, nei webinar e negli eventi live, Microsoft consiglia di usare il client desktop di Teams o i client per dispositivi mobili di Teams.
-  
+<sup>1</sup> Per un'esperienza ottimale nei webinar, negli eventi live e nelle riunioni di grandi dimensioni, Microsoft consiglia di usare l'ultima versione del client desktop di Teams o dei client per dispositivi mobili di Teams.
+
 <sup>2</sup> Nelle riunioni di grandi dimensioni, nei webinar e negli eventi live, i relatori dovrebbero usare il client desktop di Teams. Per altri suggerimenti su come ospitare riunioni di grandi dimensioni, vedere [Procedure consigliate per le riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16).
-  
+
 > [!NOTE]
-> I gruppi di lavoro possono essere creati esclusivamente nelle riunioni con meno di 300 partecipanti. Inoltre, la creazione di gruppi di lavoro in una riunione limita automaticamente il numero di partecipanti alla riunione a 300. Consigliare agli utenti finali di non avviare gruppi di lavoro in riunioni in cui si prevede la partecipazione di oltre 300 partecipanti. Per altre informazioni sulle riunioni di grandi dimensioni in Teams, condividere le linee guida [Best practice per riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16) con gli utenti finali. 
+> I gruppi di lavoro possono essere creati esclusivamente nelle riunioni con meno di 300 partecipanti. Inoltre, la creazione di gruppi di lavoro in una riunione limita automaticamente il numero di partecipanti alla riunione a 300. Consigliare agli utenti finali di non avviare gruppi di lavoro in riunioni in cui si prevede la partecipazione di oltre 300 partecipanti. Per altre informazioni sulle riunioni di grandi dimensioni in Teams, condividere le linee guida [Best practice per riunioni di grandi dimensioni in Teams](https://support.microsoft.com/office/best-practices-for-a-large-teams-meeting-ce2cdb9a-0546-43a4-bb55-34ab98ab6b16) con gli utenti finali.
 
 ### <a name="meeting-expiration"></a>Scadenza della riunione
 
@@ -169,7 +169,7 @@ Per altre informazioni sugli eventi live e per un confronto tra gli eventi live 
 >- 50 eventi possono avere luogo contemporaneamente in uno stesso tenant
 >- Durata degli eventi fino a 16 ore per trasmissione
 >
-> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions). 
+> Inoltre, tramite il programma di assistenza di Microsoft 365 è possibile pianificare eventi live con un massimo di 100.000 partecipanti. Il team valuterà ogni richiesta e collaborerà con l'utente per determinare le opzioni che potrebbero essere disponibili. [Ulteriori informazioni](https://aka.ms/Stream/Blog/LiveEventOptions).
 
 ## <a name="presence-in-outlook"></a>Presenza in Outlook
 
