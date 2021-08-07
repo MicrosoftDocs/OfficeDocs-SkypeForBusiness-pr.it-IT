@@ -16,20 +16,20 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 72c66249-c4ce-48ce-b1b9-90ebf77d7805
 description: Processo di distribuzione e passaggi per l'applicazione Annuncio in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: cfb1436f22681b45de5c399907d4776a9d1db5de
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 18345e8265ffed46f2e39d4acc8e0fca115731b4381efc64b98ecb4aba9e49c9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49812306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305928"
 ---
 # <a name="deployment-process-for-the-announcement-application-in-skype-for-business-server"></a>Processo di distribuzione per l'applicazione Annuncio in Skype for Business Server
  
 Processo di distribuzione e passaggi per l'applicazione Annuncio in Skype for Business Server VoIP aziendale.
   
-L'applicazione Annuncio è una funzionalità di VoIP aziendale che consente di configurare cosa accade alle chiamate a estensioni non assegnate (estensioni valide per l'organizzazione, ma non assegnate a una persona o a un telefono). È ad esempio possibile configurare le chiamate a numeri non assegnati in modo che venga riprodotto un messaggio, in modo che vengano trasferite a un'altra destinazione oppure in modo che vengano eseguite entrambe queste azioni.
+L'applicazione Annuncio è una funzionalità di VoIP aziendale che consente di configurare ciò che accade alle chiamate alle estensioni non assegnate (estensioni valide per l'organizzazione, ma non assegnate a una persona o a un telefono). È ad esempio possibile configurare le chiamate a numeri non assegnati in modo che venga riprodotto un messaggio, in modo che vengano trasferite a un'altra destinazione oppure in modo che vengano eseguite entrambe queste azioni.
   
-L'applicazione Annuncio viene installata come caratteristica dell'applicazione Response Group nel Front End Server o nel server Standard Edition quando si distribuisce VoIP aziendale. È necessario configurare gli annunci caricando i file audio oppure configurando la sintesi vocale e la tabella dei numeri non assegnati.
+L'applicazione Annuncio viene installata come funzionalità dell'applicazione Response Group nel Front End Server o nel server Standard Edition quando si distribuisce VoIP aziendale. È necessario configurare gli annunci caricando i file audio oppure configurando la sintesi vocale e la tabella dei numeri non assegnati.
   
 In questa sezione viene fornita una panoramica dei passaggi necessari per distribuire l'applicazione Annuncio. È necessario distribuire VoIP aziendale prima di configurare gli annunci. I componenti richiesti dall'applicazione Annuncio vengono installati e abilitati quando si distribuisce VoIP aziendale.
   

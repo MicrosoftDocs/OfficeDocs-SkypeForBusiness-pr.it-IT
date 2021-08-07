@@ -13,12 +13,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Configurare un account di risorsa per Skype for Business Server 2019.
-ms.openlocfilehash: 312947b379f62686e16718cc40f2be69b9eb6474
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: 87db9779a6f90730d6aa53e3084a2014a71bad5aba91844d2e545f7d78ae37cf
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53510837"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54304698"
 ---
 # <a name="configure-resource-accounts"></a>Configurare gli account delle risorse
 

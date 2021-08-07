@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ec043088-722b-4739-a460-3b07864cf5ea
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: a9b55948228144fecbddc0d70b69c883b96590cd
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 99d4d86c42534307a9f935cba81a314d33b931dd785e50c9c597a273661b49a9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122080"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54277311"
 ---
 # <a name="voice-route"></a>Route vocale
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare o modificare una route vocale in Skype for Business](../../../deploy/deploy-enterprise-voice/create-or-modify-a-voice-route.md)
 

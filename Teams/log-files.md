@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove possono essere trovati e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a18dbef0441055c1202c2b77ce4f8af87040e561
-ms.sourcegitcommit: 17e34d2de3d10f1d04929a695e301127db7014bd
+ms.openlocfilehash: d6baa1b7cbaff690899945ac554d1a3bcf9ff170
+ms.sourcegitcommit: f3c2559a89e1c4b3514e102cf94c38a697b4bc57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52689694"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53724959"
 ---
 # <a name="use-log-files-to-monitor-and-troubleshoot-microsoft-teams"></a>Usare i file di log per monitorare e risolvere i Microsoft Teams
 
@@ -48,7 +48,7 @@ Mac: selezionare il menu ? e scegliere **Raccogli file di supporto.**
 
 I log di debug, desktop e multimediali verranno raccolti in un'unica cartella con il nome MSTeams Diagnostics <local data and time> Log. Questa cartella può essere compressa e condivisa quando si apre una richiesta di supporto con il supporto tecnico Microsoft. La cartella conterrà cartelle per Desktop, Riunione (elementi multimediali) e Debug (Web). È possibile raccogliere i file usando le scelte rapide da tastiera seguenti:
 
-Windows: Crtl + ALT + MAIUSC + 1
+Windows: CTRL + ALT + MAIUSC + 1
 
 Mac: OPZIONE+ COMANDO + MAIUSC + 1
 
@@ -85,7 +85,7 @@ I log di debug mostrano i flussi di dati seguenti:
 
 Per raccogliere log per Linux: Scelta rapida da tastiera: CTRL+ALT+MAIUSC+1 I file saranno disponibili in ~/Downloads
 
-Per raccogliere i log per il browser: Scelta rapida da tastiera: Crtl + ALT + MAIUSC + 1 I file saranno disponibili in %userprofile%\Downloads
+Per raccogliere i log per il browser: Scelta rapida da tastiera: CTRL+ALT+MAIUSC+1 I file saranno disponibili in %userprofile%\Downloads
 
 ## <a name="media-logs"></a>Registri multimediali
 

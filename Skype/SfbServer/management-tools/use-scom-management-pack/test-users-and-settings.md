@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni e gli utenti di test del nodo Watcher
+title: Come configurare le impostazioni e gli utenti di test del nodo Watcher
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,17 +13,17 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ab2e0d93-cf52-4a4e-b5a4-fd545df7a1a9
-description: 'Riepilogo: configurare gli account utente di test e le impostazioni del nodo Watcher per le transazioni sintetiche di Skype for Business Server.'
-ms.openlocfilehash: 4069b1b51dc826beb631306e941eb40146188f42
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Come configurare gli account utente di test e le impostazioni del nodo Watcher per Skype for Business Server sintetiche.
+ms.openlocfilehash: 2be4b8aef73def9f9fee11e3469eae93b83393ff
+ms.sourcegitcommit: f3c2559a89e1c4b3514e102cf94c38a697b4bc57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111602"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53724779"
 ---
-# <a name="configure-watcher-node-test-users-and-settings"></a>Configurare le impostazioni e gli utenti di test del nodo Watcher
+# <a name="how-to-configure-watcher-node-test-users-and-settings"></a>Come configurare le impostazioni e gli utenti di test del nodo Watcher
  
-**Riepilogo:** Configurare gli account utente di test e le impostazioni del nodo Watcher per le transazioni sintetiche di Skype for Business Server.
+**Riepilogo:** Configurare gli account utente di test e le impostazioni del nodo Watcher per Skype for Business Server sintetiche.
   
 Dopo avere configurato il computer che fungerà da nodo Watcher, è necessario eseguire le operazioni seguenti:
   
@@ -34,9 +34,9 @@ Dopo avere configurato il computer che fungerà da nodo Watcher, è necessario e
 ## <a name="configure-test-user-accounts"></a>Configurare gli account utente di test
 <a name="testuser"> </a>
 
-Gli account di test non devono rappresentare persone effettive, ma devono essere account di Active Directory validi. Inoltre, questi account devono essere abilitati per Skype for Business Server, devono avere indirizzi SIP validi e devono essere abilitati per VoIP aziendale (per usare la transazione sintetica Test-CsPstnPeerToPeerCall). 
+Gli account di test non devono rappresentare persone effettive, ma devono essere account di Active Directory validi. Inoltre, questi account devono essere abilitati per Skype for Business Server, devono avere indirizzi SIP validi e devono essere abilitati per VoIP aziendale (per utilizzare la transazione sintetica Test-CsPstnPeerToPeerCall). 
   
-Se si utilizza il metodo di autenticazione TrustedServer, è necessario assicurarsi che tali account esistano e configurarli come specificato. È consigliabile assegnare almeno due utenti di test per ogni pool che si desidera testare. Se si utilizza il metodo di autenticazione Negotiate, è necessario utilizzare anche il cmdlet Set-CsTestUserCredential e Skype for Business Server Management Shell per consentire a questi account di test di funzionare con le transazioni sintetiche. A tale scopo, eseguire un comando simile al seguente (questi comandi presuppongono che i due account utente di Active Directory siano stati creati e che questi account siano abilitati per Skype for Business Server):
+Se si utilizza il metodo di autenticazione TrustedServer, è necessario assicurarsi che tali account esistano e configurarli come specificato. Assegnare almeno due utenti di test per ogni pool che si desidera testare. Se si utilizza il metodo di autenticazione Negotiate, è necessario utilizzare anche il cmdlet Set-CsTestUserCredential e Skype for Business Server Management Shell per consentire a questi account di test di funzionare con le transazioni sintetiche. A tale scopo, eseguire un comando simile al seguente (questi comandi presuppongono che i due account utente di Active Directory siano stati creati e che questi account siano abilitati per Skype for Business Server):
   
 ```PowerShell
 Set-CsTestUserCredential -SipAddress "sip:watcher1@litwareinc.com" -UserName "litwareinc\watcher1" -Password "P@ssw0rd"
@@ -52,7 +52,7 @@ Get-CsTestUserCredential -SipAddress "sip:watcher1@litwareinc.com"
 Get-CsTestUserCredential -SipAddress "sip:watcher2@litwareinc.com"
 ```
 
-Informazioni simili a queste verranno restituite per ogni utente:
+Per ogni utente verranno restituite informazioni simili alle seguenti:
   
 |**UserName**|**Password**|
 |:-----|:-----|
@@ -76,7 +76,7 @@ New-CsWatcherNodeConfiguration -UseAutoDiscovery $true -TargetFqdn "atl-cs-001.l
 
 ### <a name="configuring-extended-tests"></a>Configurazione dei test estesi
 
-Se si desidera abilitare il test PSTN, che verifica la connettività con la rete telefonica a commutazione pubblica, è necessario eseguire alcune operazioni di configurazione aggiuntive durante la configurazione del nodo Watcher. Innanzitutto, è necessario associare gli utenti di test al tipo di test PSTN eseguendo un comando simile al seguente da Skype for Business Server Management Shell:
+Se si desidera abilitare il test PSTN, che verifica la connettività con la rete telefonica a commutazione pubblica, è necessario eseguire alcune operazioni di configurazione aggiuntive durante la configurazione del nodo Watcher. Prima di tutto, è necessario associare gli utenti di test al tipo di test PSTN eseguendo un comando simile al seguente da Skype for Business Server Management Shell:
   
 ```PowerShell
 $pstnTest = New-CsExtendedTest -TestUsers "sip:watcher1@litwareinc.com", "sip:watcher2@litwareinc.com" -Name "Contoso Provider Test" -TestType PSTN
@@ -85,13 +85,13 @@ $pstnTest = New-CsExtendedTest -TestUsers "sip:watcher1@litwareinc.com", "sip:wa
 > [!NOTE]
 > I risultati di questo comando devono essere archiviati in una variabile. In questo esempio la variabile è denominata $pstnTest. 
   
-Successivamente, è possibile utilizzare il cmdlet **New-CsWatcherNodeConfiguration** per associare il tipo di test (archiviato nella variabile $pstnTest) a un pool di Skype for Business Server. Ad esempio, il comando seguente crea una nuova configurazione del nodo Watcher per il pool atl-cs-001.litwareinc.com, aggiungendo i due utenti di test creati in precedenza e aggiungendo il tipo di test PSTN:
+Successivamente, è possibile utilizzare il cmdlet **New-CsWatcherNodeConfiguration** per associare il tipo di test (archiviato nella variabile $pstnTest) a Skype for Business Server pool. Ad esempio, il comando seguente crea una nuova configurazione del nodo Watcher per il pool atl-cs-001.litwareinc.com, aggiungendo i due utenti di test creati in precedenza e aggiungendo il tipo di test PSTN:
   
 ```PowerShell
 New-CsWatcherNodeConfiguration -TargetFqdn "atl-cs-001.litwareinc.com" -PortNumber 5061 -TestUsers @{Add= "sip:watcher1@litwareinc.com","sip:watcher2@litwareinc.com"} -ExtendedTests @{Add=$pstnTest}
 ```
 
-Il comando precedente avrà esito negativo se non sono stati installati i file di base di Skype for Business Server e il database RTCLocal nel computer del nodo Watcher. 
+Il comando precedente avrà esito negativo se non sono stati installati i file di Skype for Business Server core e il database RTCLocal nel computer del nodo Watcher. 
   
 Per testare più criteri vocali, è possibile creare un test esteso per ogni criterio utilizzando il cmdlet **New-CsExtendedTest.** Gli utenti forniti devono essere configurati con i criteri vocali desiderati. I test estesi vengono passati al cmdlet **New-CsWatcherNodeConfiguration** utilizzando delimitatori virgole, ad esempio:
   
@@ -159,7 +159,7 @@ Set-CsWatcherNodeConfiguration -Identity "atl-cs-001.litwareinc.com" -Tests @{Ad
 
 Se uno o più di questi test , ad esempio DataConference, sono già stati abilitati nel nodo Watcher, si verificherà un errore. In questo caso verrà visualizzato un messaggio di errore simile al seguente:
   
-Set-CsWatcherNodeConfiguration : esiste una sequenza di chiavi duplicata 'DataConference' per la chiave 'urn:schema:Microsoft.Rtc.Management.Settings.WatcherNode.2010:TestName' o vincolo di identità univoco.
+Set-CsWatcherNodeConfiguration : esiste una sequenza di chiavi duplicata 'DataConference' per 'urn:schema:Microsoft.Rtc.Management. Impostazioni. WatcherNode.2010:TestName' chiave o vincolo di identità univoco.
   
 Quando si verifica questo errore, non vengono apportate modifiche. Il comando deve essere rieseguiti con il test duplicato rimosso.
   
@@ -251,7 +251,7 @@ Set-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com" -Enabl
 Remove-CsWatcherNodeConfiguration -Identity "atl-watcher-001.litwareinc.com"
 ```
 
-Questo comando rimuove tutte le impostazioni di configurazione del nodo Watcher dal computer specificato, impedendo al computer di eseguire automaticamente transazioni sintetiche. Tuttavia, il comando non disinstalla i file dell'agente di System Center o i file di sistema di Skype for Business Server.
+Questo comando rimuove tutte le impostazioni di configurazione del nodo Watcher dal computer specificato, impedendo al computer di eseguire automaticamente transazioni sintetiche. Tuttavia, il comando non disinstalla i file System Center agent o i Skype for Business Server di sistema.
   
 Per impostazione predefinita, i nodi Watcher utilizzano gli URL Web esterni di un'organizzazione durante l'esecuzione di test. Tuttavia, i nodi Watcher possono anche essere configurati per l'utilizzo degli URL Web interni dell'organizzazione. Ciò consente agli amministratori di verificare l'accesso agli URL per gli utenti che si trovano all'interno della rete perimetrale. Per configurare un nodo Watcher in modo che utilizzi URL interni anziché URL esterni, impostare la proprietà UseInternalWebURls su True ($True):
   
@@ -272,9 +272,9 @@ La maggior parte delle transazioni sintetiche può essere eseguita in un nodo Wa
   
 ### <a name="data-conferencing-synthetic-transaction"></a>Transazione sintetica per conferenze dati
 
-Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, probabilmente non sarà possibile eseguire la transazione sintetica per conferenze dati a meno che non si disattiveranno innanzitutto le impostazioni proxy del browser Internet di Windows Internet Explorer® per l'account servizio di rete completando la procedura seguente:
+Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, probabilmente non sarà possibile eseguire la transazione sintetica per conferenze dati a meno che non si disabilitino innanzitutto le impostazioni proxy del browser Internet Windows Internet Explorer® per l'account Servizio di rete completando la procedura seguente:
   
-1. Nel computer del nodo Watcher fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Accessori,** fare clic con il pulsante destro del mouse su **Prompt** dei comandi e quindi scegliere Esegui **come amministratore.**
+1. Nel computer del nodo Watcher fare clic su **Start**, scegliere **Tutti i programmi**, **Accessori**, quindi fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
     
 2. Nella finestra della console digitare il comando seguente e quindi premere INVIO. 
     
@@ -294,9 +294,9 @@ Se il computer del nodo Watcher si trova all'esterno della rete perimetrale, pro
       
     Questo messaggio indica che sono state disabilitate le impostazioni proxy di Internet Explorer per l'account servizio di rete.
   
-### <a name="exchange-unified-messaging-synthetic-transaction"></a>Transazione sintetica di messaggistica unificata di Exchange
+### <a name="exchange-unified-messaging-synthetic-transaction"></a>Exchange Transazione sintetica di messaggistica unificata
 
-La transazione sintetica di messaggistica unificata di Exchange verifica che gli utenti di prova possano connettersi agli account della segreteria telefonica ospitati in Exchange.
+La Exchange sintetica di messaggistica unificata verifica che gli utenti di prova possano connettersi agli account della segreteria telefonica ospitati in Exchange.
   
 Gli utenti di test dovranno essere preconfigurati con gli account della segreteria telefonica. 
   
@@ -313,7 +313,7 @@ $cred2 = Get-Credential "contoso\testUser2"
 Test-CsPersistentChatMessage -TargetFqdn pool0.contoso.com -SenderSipAddress sip:testUser1@contoso.com -SenderCredential $cred1 -ReceiverSipAddress sip:testUser2@contoso.com -ReceiverCredential $cred2 -TestUser1SipAddress sip:testUser1@contoso.com -TestUser2SipAddress sip:testUser2@contoso.com -Setup $true
 ```
 
-È necessario eseguire questa attività di installazione dall'interno dell'organizzazione:
+Eseguire questa attività di installazione deve essere eseguita dall'interno dell'organizzazione:
   
 - Se eseguito da un computer non server, l'utente che esegue il cmdlet deve essere membro del ruolo CsPersistentChatAdministrators per Role-Based Access Control (RBAC).
     
@@ -335,21 +335,21 @@ Per eseguire questa transazione sintetica, è necessario configurare:
     
 ### <a name="unified-contact-store-synthetic-transaction"></a>Transazione sintetica archivio contatti unificato
 
-La transazione sintetica dell'archivio contatti unificato verifica la capacità di Skype for Business Server di recuperare i contatti per conto di un utente da Exchange.
+La transazione sintetica dell'archivio contatti unificato verifica la capacità Skype for Business Server recuperare i contatti per conto di un utente da Exchange.
   
 Per utilizzare questa transazione sintetica, devono essere soddisfatte le condizioni seguenti:
   
 - Lyss-Exchange'autenticazione da server a server deve essere configurata.
     
-- Gli utenti di prova devono disporre di una cassetta postale di Exchange valida.
+- Gli utenti di test devono disporre di una cassetta Exchange valida.
     
-Dopo aver soddisfatto queste condizioni, è possibile eseguire il cmdlet Windows PowerShell seguente per eseguire la migrazione degli elenchi contatti degli utenti di test a Exchange:
+Dopo aver soddisfatto queste condizioni, è possibile eseguire il cmdlet Windows PowerShell seguente per eseguire la migrazione degli elenchi di contatti degli utenti di test a Exchange:
   
 ```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer -Setup
 ```
 
-La migrazione degli elenchi di contatti degli utenti di prova a Exchange potrebbe richiedere del tempo. Per monitorare lo stato della migrazione, è possibile eseguire la stessa riga di comando senza il flag -Setup:
+La migrazione degli elenchi di contatti degli utenti di test a Exchange potrebbe richiedere del tempo. Per monitorare lo stato della migrazione, è possibile eseguire la stessa riga di comando senza il flag -Setup:
   
 ```PowerShell
 Test-CsUnifiedContactStore -TargetFqdn pool0.contoso.com -UserSipAddress sip:testUser1@contoso.com -RegistrarPort 5061 -Authentication TrustedServer
@@ -367,16 +367,16 @@ Per abilitare la transazione sintetica XMPP, è necessario fornire un parametro 
 Set-CsWatcherNodeConfiguration -Identity pool0.contoso.com -Tests @{Add="XmppIM"} -XmppTestReceiverMailAddress user1@litwareinc.com
 ```
 
-In questo esempio, una regola di Skype for Business Server dovrà esistere per instradare i messaggi per litwareinc.com a un gateway XMPP.
+In questo esempio, deve esistere Skype for Business Server per instradare i messaggi per litwareinc.com a un gateway XMPP.
 
 > [!NOTE]
-> I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md) 
+> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per ulteriori informazioni, vedere [Migrating XMPP federation](../../../SfBServer2019/migration/migrating-xmpp-federation.md).
   
 ### <a name="video-interop-server-vis-synthetic-transaction"></a>Transazione sintetica di Video Interop Server (VIS)
 
 La transazione sintetica Video Interop Server (VIS) richiede il download e l'installazione dei file di supporto delle transazioni sintetiche ([VISSTSupportPackage.msi](https://www.microsoft.com/download/details.aspx?id=46921)). 
   
-Per installare VISSTSupportPackage.msi verificare che le dipendenze (in Requisiti di sistema) per il file msi siano già installate. Eseguire VISSTSupportPackage.msi per eseguire un'installazione semplice. Il file MSI installa tutti i file nel percorso seguente: "%ProgramFiles%\VIS Synthetic Transaction Support Package".
+Per installare VISSTSupportPackage.msi verificare che le dipendenze (in Requisiti di sistema) per il file msi siano già installate. Eseguire VISSTSupportPackage.msi per eseguire un'installazione semplice. Il .msi installa tutti i file nel percorso seguente: "%ProgramFiles%\VIS Synthetic Transaction Support Package".
   
 Per ulteriori informazioni su come eseguire la transazione sintetica VIS, vedere la documentazione relativa al cmdlet [Test-CsP2PVideoInteropServerSipTrunkAV.](/powershell/module/skype/Test-CsP2PVideoInteropServerSipTrunkAV)
   
@@ -402,7 +402,7 @@ Per modificare la frequenza di esecuzione delle transazioni sintetiche, eseguire
 ## <a name="using-rich-logging-for-synthetic-transactions"></a>Utilizzo della registrazione dettagliata per le transazioni sintetiche
 <a name="special_synthetictrans"> </a>
 
-Le transazioni sintetiche si rivelano estremamente utili per identificare i problemi del sistema. Ad esempio, il cmdlet Test-CsRegistration può avvisare gli amministratori del fatto che gli utenti hanno difficoltà a registrarsi con Skype for Business Server. Tuttavia, potrebbero essere necessari ulteriori dettagli per determinare la causa effettiva di un errore.
+Le transazioni sintetiche sono molto utili per identificare i problemi relativi al sistema. Ad esempio, il cmdlet Test-CsRegistration può avvisare gli amministratori del fatto che gli utenti hanno difficoltà a registrarsi con Skype for Business Server. Tuttavia, potrebbero essere necessari ulteriori dettagli per determinare la causa effettiva di un errore.
   
 Per questo motivo, le transazioni sintetiche forniscono una registrazione completa. Con la registrazione completa, per ogni attività intrapresa da una transazione sintetica vengono registrate le informazioni seguenti:
   
@@ -410,7 +410,7 @@ Per questo motivo, le transazioni sintetiche forniscono una registrazione comple
     
 - Ora di fine dell'attività.
     
-- L'azione eseguita (ad esempio, la creazione, la partecipazione o l'uscita da una conferenza, l'accesso a Skype for Business Server, l'invio di un messaggio istantaneo).
+- Azione eseguita, ad esempio la creazione, la partecipazione o l'uscita da una conferenza, l'accesso a Skype for Business Server, l'invio di un messaggio istantaneo.
     
 - Messaggi informativi, dettagliati, di avviso o di errore generati durante l'esecuzione dell'attività.
     
@@ -449,7 +449,7 @@ $RegistrationTest.ToXML() | Out-File C:\Logs\Registration.xml
 
 Puoi visualizzare questi file usando Windows Internet Explorer, Microsoft Visual Studio o qualsiasi altra applicazione in grado di aprire file HTML/XML.
   
-Le transazioni sintetiche eseguite dall'interno di System Center Operations Manager genereranno automaticamente questi file di registro per gli errori. Questi log non verranno generati se l'esecuzione ha esito negativo prima che PowerShell di Skype for Business Server sia in grado di caricare ed eseguire la transazione sintetica. 
+Le transazioni sintetiche eseguite dall'interno System Center Operations Manager genererà automaticamente questi file di registro per gli errori. Questi log non verranno generati se l'esecuzione ha esito negativo prima Skype for Business Server PowerShell è in grado di caricare ed eseguire la transazione sintetica. 
   
 > [!IMPORTANT]
-> Per impostazione predefinita, Skype for Business Server salva i file di registro in una cartella non condivisa. Per rendere questi registri facilmente accessibili, è consigliabile condividere questa cartella. Ad esempio: \\ atl-watcher-001.litwareinc.com\WatcherNode.
+> Per impostazione predefinita, Skype for Business Server i file di registro in una cartella non condivisa. Per rendere questi registri facilmente accessibili, è consigliabile condividere questa cartella. Ad esempio: \\ atl-watcher-001.litwareinc.com\WatcherNode.

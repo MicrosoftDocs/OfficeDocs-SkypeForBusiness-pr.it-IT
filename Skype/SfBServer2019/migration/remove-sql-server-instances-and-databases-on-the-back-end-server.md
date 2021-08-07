@@ -10,17 +10,17 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Rimuovere i database Microsoft SQL Server e le istanze dopo aver rimosso i server in esecuzione che dipendono da essi o dopo aver riconfigurato i server per l'utilizzo di un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira il SQL Server corrente o si riconfigura il server corrente in modo che il rendering dei database sia obsoleto o non disponibile.
-ms.openlocfilehash: 6e108e4dfef86b482b839bd440f54702ab42107d
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+description: Rimuovere i database Microsoft SQL Server e le istanze dopo aver rimosso i server in esecuzione che dipendono da essi o dopo aver riconfigurato i server per l'utilizzo di un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira il SQL Server corrente o si riconfigura il server corrente in modo che i database siano obsoleti o non disponibili.
+ms.openlocfilehash: f9e942f1f5516c0bf3437dd3fc9e2dc25b4cc4236e3cffabbf07ff08dde1e404
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752158"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54306209"
 ---
 # <a name="remove-sql-server-instances-and-databases-on-the-back-end-server"></a>Rimuovere database e istanze di SQL Server nel server back-end
 
-Rimuovere i database Microsoft SQL Server e le istanze dopo aver rimosso i server in esecuzione che dipendono da essi o dopo aver riconfigurato i server per l'utilizzo di un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira il SQL Server corrente o si riconfigura il server corrente in modo che il rendering dei database sia obsoleto o non disponibile.
+Rimuovere i database Microsoft SQL Server e le istanze dopo aver rimosso i server in esecuzione che dipendono da essi o dopo aver riconfigurato i server per l'utilizzo di un altro database. È necessario eseguire la procedura descritta in questo argomento quando si ritira il SQL Server corrente o si riconfigura il server corrente in modo che i database siano obsoleti o non disponibili.
   
 Per rimuovere i database o le istanze per il server di archiviazione o il Monitoring Server, è necessario innanzitutto rimuovere il ruolo del server. Analogamente, per rimuovere le istanze o i database per il pool Front End, è necessario innanzitutto rimuovere o riconfigurare il ruolo del server dipendente. Per queste procedure non viene fatta distinzione tra database collocati o istanze separate dei server. La collocazione dei database non incide sulle procedure.
   

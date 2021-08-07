@@ -1,5 +1,5 @@
 ---
-title: Testare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
+title: 'Skype for Business Server: testare le impostazioni di configurazione dei trunk SIP'
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,28 +16,28 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c8712308-0e2d-4e39-8f90-d1a250487a94
 description: 'Riepilogo: informazioni su come testare le impostazioni di configurazione dei trunk SIP tramite Skype for Business Server Management Shell.'
-ms.openlocfilehash: 6f569c7e397e7902cb347e13b4077acb5a9b34fb
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 19e0ad72b33d6ebbd5411fb269c3cdcbf2849a18
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772757"
 ---
-# <a name="test-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Testare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
+# <a name="skype-for-business-server-test-sip-trunk-configuration-settings"></a>Skype for Business Server: testare le impostazioni di configurazione dei trunk SIP
  
 **Riepilogo:** Informazioni su come testare le impostazioni di configurazione dei trunk SIP tramite Skype for Business Server Management Shell.
   
 Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Branch eXchange) di IP-Public o un session border controller (SBC) presso il provider di servizi. Queste impostazioni consentono di specificare quanto segue:
   
-- Se abilitare il bypass multimediale nei trunk.
+- Se il bypass multimediale deve essere abilitato nei trunk
     
-- Condizioni in base alle quali vengono inviati i pacchetti RTCP (Realtime Transport Control Protocol).
+- Condizioni in cui vengono inviati pacchetti RTCP (Realtime Transport Control Protocol)
     
-- Indica se è necessaria o meno la crittografia SRTP (Secure Realtime Transport Protocol) in ogni trunk.
+- Se è necessaria la crittografia SRTP (Secure Realtime Transport Protocol) in ogni trunk
     
-Quando si installa Skype for Business Server, viene creata automaticamente una raccolta globale di impostazioni di configurazione trunk SIP. Gli amministratori inoltre possono creare raccolte di impostazioni personalizzate nell'ambito del sito o del servizio (solo per il servizio gateway PSTN). Gli amministratori possono anche utilizzare il cmdlet Test-CsTrunkConfiguration per verificare che un trunk sia in grado di convertire un numero composto da un utente in un numero gestibile dal gateway.
+Quando si installa Skype for Business Server, viene creata automaticamente una raccolta globale di impostazioni di configurazione trunk SIP. Inoltre, gli amministratori possono creare raccolte di impostazioni personalizzate nell'ambito del sito o nell'ambito del servizio (solo per il servizio gateway PSTN). Gli amministratori possono inoltre utilizzare il cmdlet Test-CsTrunkConfiguration per verificare che un trunk sia in grado di convertire un numero composto da un utente in un numero che il gateway può gestire.
   
-Le impostazioni di configurazione dei trunk possono essere verificate solo utilizzando Windows PowerShell e il cmdlet [Test-CsTrunkConfiguration](/powershell/module/skype/test-cstrunkconfiguration?view=skype-ps). Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Skype for Business Server Management Shell.
+Le impostazioni di configurazione dei trunk possono essere verificate solo utilizzando Windows PowerShell e il cmdlet [Test-CsTrunkConfiguration](/powershell/module/skype/test-cstrunkconfiguration). Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Skype for Business Server Management Shell.
   
 ### <a name="to-test-sip-trunk-configuration-settings"></a>Per testare le impostazioni di configurazione dei trunk SIP
 

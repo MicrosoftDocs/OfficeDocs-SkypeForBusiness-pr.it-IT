@@ -1,5 +1,5 @@
 ---
-title: Visualizzare informazioni sui singoli trunk SIP in Skype for Business Server
+title: Visualizzare le informazioni sul trunk SIP in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,20 +16,20 @@ ms.collection:
 ms.custom: ''
 ms.assetid: adfacb74-7ea5-4c53-934e-ba7ec59879eb
 description: 'Riepilogo: informazioni su come visualizzare informazioni sui trunk SIP in Skype for Business Server.'
-ms.openlocfilehash: 989f9fea44bfcce67eba71b9f0b495b924f9e3a2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2f4cc3a7435577d6c9d635a7dc910873b21f9981
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772797"
 ---
-# <a name="view-information-about-individual-sip-trunks-in-skype-for-business-server"></a>Visualizzare informazioni sui singoli trunk SIP in Skype for Business Server
+# <a name="skype-for-business-server-view-information-about-individual-sip-trunks"></a>Skype for Business Server: visualizzare informazioni sui singoli trunk SIP 
  
 **Riepilogo:** Informazioni su come visualizzare informazioni sui trunk SIP in Skype for Business Server.
   
-I trunk SIP vengono utilizzati per connettere Skype for Business Server Voice over IP Phone Network alla rete PSTN (Public Switched Telephone Network). Nella versione precedente del prodotto i trunk vengono utilizzati per instradare le chiamate in uscita da un Mediation Server a un gateway PSTN e ogni gateway è limitato a un singolo trunk. Un gateway PSTN e un trunk SIP in questo caso pertanto sono essenzialmente identici. Per gli amministratori, questo significa che possono visualizzare le informazioni relative a un trunk SIP semplicemente visualizzando le informazioni relative al gateway PSTN associato.
+I trunk SIP vengono utilizzati per Skype for Business Server rete telefonica Voice over IP con la rete PSTN (Public Switched Telephone Network). Nella versione precedente del prodotto i trunk vengono utilizzati per instradare le chiamate in uscita da un Mediation Server a un gateway PSTN e ogni gateway è limitato a un singolo trunk. Un gateway PSTN e un trunk SIP in questo caso pertanto sono essenzialmente identici. Per gli amministratori, questo significa che possono visualizzare le informazioni relative a un trunk SIP semplicemente visualizzando le informazioni relative al gateway PSTN associato.
   
-In Skype for Business Server, tuttavia, ora è possibile assegnare più trunk a un singolo gateway PSTN. ciò significa che i gateway e i trunk non sono più uguali. Questo di conseguenza significa che gli amministratori devono utilizzare il nuovo cmdlet [Get-CsTrunk](/powershell/module/skype/get-cstrunk?view=skype-ps) per visualizzare le informazioni relative a un singolo trunk SIP.
+In Skype for Business Server, tuttavia, ora è possibile assegnare più trunk a un singolo gateway PSTN. ciò significa che i gateway e i trunk non sono più uguali. Questo di conseguenza significa che gli amministratori devono utilizzare il nuovo cmdlet [Get-CsTrunk](/powershell/module/skype/get-cstrunk) per visualizzare le informazioni relative a un singolo trunk SIP.
   
 ### <a name="to-view-information-for-all-your-sip-trunks"></a>Per visualizzare le informazioni per tutti i trunk SIP
 

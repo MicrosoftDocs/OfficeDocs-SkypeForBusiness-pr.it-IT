@@ -1,5 +1,5 @@
 ---
-title: Rete perimetrale (strumento di pianificazione)
+title: Skype for Business Server Strumento di pianificazione della rete perimetrale
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,15 +15,15 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d7f85abf-2045-4b08-ba29-c6211a3f6ff6
-description: 'La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari di server perimetrali in Skype for Business Server 2015 e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:'
-ms.openlocfilehash: b4b32e124569cd2318bd5bccea628b19cfa28659
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. Questi componenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti qui descritti fanno parte degli scenari di server perimetrali in Skype for Business Server 2015 e si trova nella rete perimetrale.
+ms.openlocfilehash: 89ee3f0763e85fb5ec563ba44dc0e272b21e44c1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772377"
 ---
-# <a name="edge-network-planning-tool"></a>Rete perimetrale (strumento di pianificazione)
+# <a name="skype-for-business-server-edge-network-planning-tool"></a>Skype for Business Server Strumento di pianificazione della rete perimetrale
  
 La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari di server perimetrali [in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/scenarios.md) e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:
   
@@ -41,4 +41,4 @@ La maggior parte dei componenti perimetrali viene distribuita in una rete perime
 
 [Pianificare le distribuzioni dei server perimetrali in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md)
   
-[Requisiti di sistema dei server perimetrali in Skype for Business Server](../../plan-your-deployment/edge-server-deployments/system-requirements.md)
+[Requisiti di sistema dei server perimetrali in Skype for Business Server 2015](../../plan-your-deployment/edge-server-deployments/system-requirements.md)

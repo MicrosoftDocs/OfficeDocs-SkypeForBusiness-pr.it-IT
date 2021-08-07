@@ -1,5 +1,5 @@
 ---
-title: Configurare i computer Skype for Business Server che verranno monitorati
+title: Configurare i Skype for Business Server computer da monitorare
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,34 +13,34 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: b24ea184-4b3e-4277-a244-157afb4b368b
-description: 'Riepilogo: installare i file agente di Operations Manager nel computer Skype for Business Server 2015 da monitorare e configurare il computer in modo che funzioni come proxy di System Center.'
-ms.openlocfilehash: bb4dc64a1c04bbef1b6cb0e391fc27568edfef43
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Riepilogo: installare i file dell'agente Operations Manager nel computer Skype for Business Server 2015 da monitorare e configurare il computer in modo che funzioni come proxy System Center locale."
+ms.openlocfilehash: c3526c4e48056968a132a949b0c91cbb43ba9663
+ms.sourcegitcommit: f3c2559a89e1c4b3514e102cf94c38a697b4bc57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111682"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725319"
 ---
-# <a name="configure-the-skype-for-business-server-computers-that-will-be-monitored"></a>Configurare i computer Skype for Business Server che verranno monitorati
+# <a name="configure-the-skype-for-business-server-computers-to-monitor"></a>Configurare i Skype for Business Server computer da monitorare
 
-**Riepilogo:** Installare i file agente di Operations Manager nel computer Skype for Business Server 2015 da monitorare e configurare il computer in modo che agirà come proxy di System Center.
+**Riepilogo:** Installare i file dell'agente Operations Manager nel computer Skype for Business Server 2015 da monitorare e configurare il computer in modo che agirà come proxy System Center client.
 
-Ogni computer Skype for Business Server 2015 che si desidera monitorare deve essere in grado di segnalare autonomamente l'esistenza al server di gestione. Per abilitare questo processo, è necessario installare i file dell'agente Operations Manager in ognuno dei computer da monitorare. Dopo aver installato i file dell'agente, è necessario configurare il computer in modo che agirà come proxy di System Center. Assicurarsi di aver prima installato e configurato Skype for Business Server in questi computer prima di eseguire queste procedure.
+Ogni Skype for Business Server 2015 che si desidera monitorare deve essere in grado di segnalare autonomamente l'esistenza al server di gestione. Per abilitare questo processo, è necessario installare i file dell'agente Operations Manager in ognuno dei computer da monitorare. Dopo aver installato i file dell'agente, è necessario configurare il computer in modo che agirà come proxy System Center locale. Prima di eseguire queste procedure, assicurarsi di aver installato e Skype for Business Server in questi computer.
 
 ## <a name="installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network"></a>Installazione di un certificato in un nodo Watcher posizionato all'esterno del perimetro della rete
 <a name="watcher_node_outside"> </a>
 
-Gli agenti di System Center Operations Manager in esecuzione in una rete perimetrale (ad esempio un server perimetrale Skype for Business Server), all'esterno dell'organizzazione (ad esempio un nodo External Synthetic Transaction Watcher) o attraverso un limite di trust di Active Directory, possono richiedere la configurazione di un server gateway di System Center Operations Manager. Questo ruolo del server consente agli agenti che non hanno una relazione di trust con il server di gestione radice di generare avvisi. Per informazioni dettagliate, [vedere Managing Gateway Servers in Operations Manager 2012](/previous-versions/system-center/system-center-2012-R2/hh212823(v=sc.12)).
+System Center Gli agenti di Operations Manager in esecuzione in una rete perimetrale (ad esempio un server perimetrale Skype for Business Server), all'esterno dell'organizzazione (ad esempio un nodo External Synthetic Transaction Watcher) o attraverso un limite di trust di Active Directory, possono richiedere la configurazione di un server gateway di System Center Operations Manager. Questo ruolo del server consente agli agenti che non hanno una relazione di trust con il server di gestione radice di generare avvisi. Per informazioni dettagliate, [vedere Managing Gateway Servers in Operations Manager 2012](/previous-versions/system-center/system-center-2012-R2/hh212823(v=sc.12)).
 
 Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessario richiedere e configurare un certificato che consenta al nodo Watcher di inviare avvisi a System Center Operations Manager. Per semplificare questo processo, il team di Operations Manager ha creato un set di utilità che consente di richiedere e installare il tipo di certificato corretto nel computer del nodo di controllo. Per informazioni dettagliate e per scaricare queste utilità, vedere [Obtaining Certificates for Non-Domain Joined Agents Made Easy with Certificate Generation Wizard](https://go.microsoft.com/fwlink/p/?LinkID=267421&amp;amp;clcid=0x409).
 
 ### <a name="installing-the-operation-manager-agent-files"></a>Installazione dei file dell'agente Operations Manager
 
-1. Nel supporto di installazione di System Center fare doppio clic su **Setup.exe**.
+1. Nel supporto System Center di installazione fare doppio clic su **Setup.exe**.
 
-2. Nell'installazione guidata di System Center Operation Manager, fare clic **su Installa agente Operations Manager** da Installa agente in Installazioni facoltative
+2. Nell'System Center guidata di Operation Manager fare clic su **Installa agente Operations Manager** da Installa agente in Installazioni facoltative
 
-3. Nella pagina Iniziale dell'installazione guidata di System Center Operations Manager fare clic su **Avanti.**
+3. Nella pagina System Center System Center installazione guidata di Operations Manager fare clic su **Avanti.**
 
 4. Nella pagina Cartella di destinazione selezionare la cartella in cui verranno installati i file dell'agente Operations Manager e fare clic su **Avanti.**
 
@@ -58,13 +58,13 @@ Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessari
 
 11. Fare clic su **Exit**.
 
-Per System Center 2012, è possibile verificare che l'agente sia stato creato facendo clic sul pulsante **Start**, scegliendo Tutti i programmi **,** facendo clic su System Center Operations Manager **2012** e quindi su **Operations 2012 Manager Shell**. In Operations Manager Shell digitare il comando Windows PowerShell seguente e quindi premere INVIO:
+Per System Center 2012, è possibile verificare che l'agente sia stato creato facendo clic sul pulsante **Start**, scegliendo Tutti i programmi **,** facendo clic su System Center Operations Manager **2012** e quindi su **Operations 2012 Manager Shell**. Nella casella shell di Operations Manager digitare il comando Windows PowerShell seguente e quindi premere INVIO:
 ```PowerShell
 Get-SCOMAgent
 ```
 
 Verrà visualizzato un elenco di tutti gli agenti di Operations Manager.
-## <a name="configuring-the-skype-for-business-server-computer-to-participate-in-system-center-discovery"></a>Configurazione del computer Skype for Business Server per partecipare all'individuazione di System Center
+## <a name="configuring-the-skype-for-business-server-computer-to-participate-in-system-center-discovery"></a>Configurazione del computer Skype for Business Server per partecipare all'System Center individuazione
 <a name="watcher_node_outside"> </a>
 
 Per assicurarsi che il nuovo agente di Skype for Business Server partecipi al processo di individuazione per System Center Operations Manager, è necessario completare la procedura seguente in ogni computer in cui è stata installata la console di System Center Operations Manager:

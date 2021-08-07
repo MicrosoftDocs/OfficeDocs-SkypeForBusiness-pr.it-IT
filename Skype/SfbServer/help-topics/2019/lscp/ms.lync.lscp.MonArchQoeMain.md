@@ -14,23 +14,23 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 2b030ced-0aae-4023-bb26-544d14bdd2f0
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 9793f94cc724dad15cecc8f9c8b65be16bc77224
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 9680816cd7771b1a4829bccc91c2bd01c63af752c451abfd998dcf75dc9b681d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54277441"
 ---
 # <a name="quality-of-experience-qoe-data"></a>Dati QoE
  
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
   
 - [Abilitare la qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/enable-qoe.md)
     
 - [Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/modify-qoe-settings.md)
     
-- [Creare le impostazioni di configurazione della qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
+- [Creare impostazioni di configurazione per la qualità dell'esperienza in Skype for Business Server](../../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
     
  
 

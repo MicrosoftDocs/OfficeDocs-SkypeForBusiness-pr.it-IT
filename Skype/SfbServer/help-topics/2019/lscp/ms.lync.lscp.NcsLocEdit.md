@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: d9b30b3b-570b-49a6-b2b4-46b0cf490153
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile configurare i criteri percorso per determinare se enhanced 9-1-1 (E9-1-1) è abilitato e come viene utilizzato, nonché come vengono utilizzate le informazioni sulla posizione per utenti e contatti.
-ms.openlocfilehash: 63e2f323bf2a1fb70cfb28ff7b308676cf432629
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1102aeccb6b9e91e29526b6512c7742b766514a15a5d6e13e0e1c00698d866a1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305758"
 ---
 # <a name="location-policy-create-new-or-edit-existing"></a>Criteri percorso: crearne di nuovi o modificare quelli esistenti
 
@@ -68,4 +68,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Bidiredirei** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore PSAP.
 
-Per informazioni dettagliate VoIP aziendale funzionalità e funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate VoIP aziendale funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.

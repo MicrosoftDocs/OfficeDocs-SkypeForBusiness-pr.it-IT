@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: c33bb6c2-d43b-4fb6-a0fa-6d82a7b09abe
-description: Abilitare gli utenti per la risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
-ms.openlocfilehash: 5469e9634e16b855993518092114184a2dca7359
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Abilitare gli utenti per la risposta alle chiamate di gruppo Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
+ms.openlocfilehash: 6765cfab12cd888bb5e86f7b1c9b709b8edc7a8855d35de071ebb25619e48ce8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111832"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305908"
 ---
 # <a name="enable-group-call-pickup-for-users-and-assign-a-group-number-in-skype-for-business"></a>Abilitare la risposta alle chiamate di gruppo per gli utenti e assegnare un numero di gruppo in Skype for Business
 
-Abilitare gli utenti per la risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
+Abilitare gli utenti per la risposta alle chiamate di gruppo Skype for Business Server VoIP aziendale e assegnare un numero di gruppo.
 
 Dopo aver aggiunto i numeri del gruppo di prelievo chiamata alla tabella orbit del parcheggio di chiamata, si utilizza lo strumento SEFAUtil per assegnare i numeri di gruppo agli utenti e abilitare la risposta alle chiamate di gruppo.
 

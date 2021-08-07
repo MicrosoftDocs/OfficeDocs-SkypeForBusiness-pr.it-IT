@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 344b9be6-dd37-46bc-bfa4-5c06f6666aa7
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: a24388bbc04e9823328c15a9f67dd227eb001915
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 9e51d9a284596d7b2d987eb499687b8de6a1639bc525c1fd8fba6b5438a5b5cb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305728"
 ---
 # <a name="pin-policy-create-new-or-edit-existing"></a>Criteri PIN: crearne di nuovi o modificare quelli esistenti
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare un nuovo criterio PIN in Skype for Business Server](../../../manage/authentication/create-a-new-pin-policy.md)
 

@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni sui problemi noti relativi al piano chiamate per le chiamate PSTN e sulle relative attività.
-ms.openlocfilehash: 9c660ee3b173f104e26816460db45c5bcf400837
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 239a0c83a12ae7d5d7b0be2fcbf81bf8825dd85d8a0dcb7a880bc53ad8b8e477
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54306109"
 ---
 # <a name="calling-plans-known-issues"></a>Problemi noti relativi ai piani di chiamata
 

@@ -10,17 +10,17 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: "In generale, la migrazione della Rubrica viene eseguita insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi di post-migrazione se nell'ambiente legacy sono stati personalizzati i seguenti elementi:"
-ms.openlocfilehash: 6d2ccf0d38814d149495518a71f888f0c2999d24
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+description: "In generale, viene eseguita la migrazione della Rubrica insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi successivi alla migrazione se nell'ambiente legacy sono stati personalizzati i passaggi seguenti:"
+ms.openlocfilehash: 19ff3b0ca389832cfb2b1739aeb85738c30238576143d3542388fd1ef97a6498
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752838"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54306219"
 ---
 # <a name="migrate-address-book"></a>Eseguire la migrazione della rubrica
 
-In generale, la migrazione della Rubrica viene eseguita insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi di post-migrazione se nell'ambiente legacy sono stati personalizzati i seguenti elementi: 
+In generale, viene eseguita la migrazione della Rubrica insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi successivi alla migrazione se nell'ambiente legacy sono stati personalizzati i passaggi seguenti: 
 
 - Personalizzazione delle regole di normalizzazione della Rubrica.
 
@@ -29,21 +29,21 @@ In generale, la migrazione della Rubrica viene eseguita insieme al resto della t
 
  **Regole di normalizzazione della Rubrica**
 
-Se le regole di normalizzazione della Rubrica sono personalizzate nell'ambiente legacy, è necessario eseguire la migrazione delle regole personalizzate nel pool pilota. Se non è stata personalizzata alcuna regola di normalizzazione della Rubrica, non sarà necessario effettuare alcuna migrazione per il servizio Rubrica. Le regole di normalizzazione predefinite per Skype for Business Server 2019 sono le stesse predefinite per l'installazione legacy. Eseguire la procedura descritta più avanti in questa sezione per eseguire la migrazione delle regole di normalizzazione personalizzate.
+Se le regole di normalizzazione della Rubrica sono personalizzate nell'ambiente legacy, è necessario eseguire la migrazione delle regole personalizzate nel pool pilota. Se non è stata personalizzata alcuna regola di normalizzazione della Rubrica, non sarà necessario effettuare alcuna migrazione per il servizio Rubrica. Le regole di normalizzazione predefinite per Skype for Business Server 2019 sono le stesse delle regole predefinite per l'installazione legacy. Eseguire la procedura descritta più avanti in questa sezione per eseguire la migrazione delle regole di normalizzazione personalizzate.
 
 > [!NOTE]
 > Se nell'organizzazione viene utilizzato il controllo delle chiamate remote e le regole di normalizzazione della Rubrica sono state personalizzate, prima di utilizzare il controllo delle chiamate remote è necessario eseguire la procedura descritta in questo argomento. L'esecuzione della procedura richiede l'appartenenza al gruppo RTCUniversalServerAdmins o diritti equivalenti. 
 
  **UseNormalizationRules impostato su False**
 
-Se si imposta il valore di **UseNormalizationRules** su False in modo che gli utenti possano utilizzare i numeri di telefono così come sono definiti in Servizi di dominio Active Directory senza che Skype for Business Server 2019 appliche le regole di normalizzazione, è necessario impostare i parametri **UseNormalizationRules** e **IgnoreGenericRules** su True. Eseguire la procedura descritta più avanti in questa sezione per impostare tali parametri su True. 
+Se si imposta il valore di **UseNormalizationRules** su False in modo che gli utenti possano utilizzare i numeri di telefono così come sono definiti in Servizi di dominio Active Directory senza che Skype for Business Server 2019 applicheranno le regole di normalizzazione, è necessario impostare i parametri **UseNormalizationRules** e **IgnoreGenericRules** su True. Eseguire la procedura descritta più avanti in questa sezione per impostare tali parametri su True. 
 
 ## <a name="to-migrate-address-book-customized-normalization-rules"></a>Per eseguire la migrazione delle regole di normalizzazione personalizzate della Rubrica
 
-1. Trovare il file Company_Phone_Number_Normalization_Rules.txt nella radice della cartella condivisa della Rubrica e copiarlo nella radice della cartella condivisa della Rubrica nel pool pilota di Skype for Business Server 2019.
+1. Individuare il file Company_Phone_Number_Normalization_Rules.txt nella radice della cartella condivisa della Rubrica e copiarlo nella radice della cartella condivisa della Rubrica nel pool pilota di Skype for Business Server 2019.
 
     > [!NOTE]
-    > Le regole di normalizzazione della Rubrica di esempio sono state installate nella directory dei file dei componenti Web del Servizio Rubrica. Il percorso è **$installedDriveLetter:\Programmi\Microsoft Skype for Business Server 2019\Web Components\Address Book Files\Files\ Sample_Company_Phone_Number_Normalization_Rules.txt**. Questo file può essere copiato e rinominato **Company_Phone_Number_Normalization_Rules.txt** nella directory radice della cartella condivisa della rubrica. Ad esempio, la rubrica condivisa in **$serverX**, il percorso sarà simile a: **\\ $serverX \SkypeForBusiness-FileShare\2-WebServices-1\ABFiles.** 
+    > Le regole di normalizzazione della Rubrica di esempio sono state installate nella directory dei file dei componenti Web del Servizio Rubrica. Il percorso è **$installedDriveLetter:\Programmi\Microsoft Skype for Business Server 2019\Web Components\Address Book Files\Files\ Sample_Company_Phone_Number_Normalization_Rules.txt**. Questo file può essere copiato e rinominato **Company_Phone_Number_Normalization_Rules.txt** nella directory radice della cartella condivisa della rubrica. Ad esempio, la rubrica condivisa in **$serverX**, il percorso sarà simile **\\ a: $serverX \SkypeForBusiness-FileShare\2-WebServices-1\ABFiles**. 
 
 2. Utilizzare un editor di testo, ad esempio il Blocco Note, per aprire il file Company_Phone_Number_Normalization_Rules.txt.
 
@@ -63,7 +63,7 @@ Se si imposta il valore di **UseNormalizationRules** su False in modo che gli ut
 
 ## <a name="to-set-usenormalizationrules-and-ignoregenericrules-to-true"></a>Per impostare UseNormalizationRules e IgnoreGenericRules su True
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Eseguire una delle operazioni seguenti:
 
@@ -81,11 +81,11 @@ Se si imposta il valore di **UseNormalizationRules** su False in modo che gli ut
 
 3. Attendere che la replica dell'archivio di gestione centrale si verifichi in tutti i pool.
 
-4. Modificare il file delle regole di normalizzazione dei numeri di telefono, "Company_Phone_Number_Normalization_Rules.txt", per la distribuzione per cancellare il contenuto. Il file si trova nella condivisione file di ogni pool di Skype for Business Server 2019. Se il file non è presente, creare un file vuoto denominato "Company_Phone_Number_Normalization_Rules.txt".
+4. Modificare il file delle regole di normalizzazione dei numeri di telefono, "Company_Phone_Number_Normalization_Rules.txt", per la distribuzione per cancellare il contenuto. Il file si trova nella condivisione file di ogni Skype for Business Server 2019. Se il file non è presente, creare un file vuoto denominato "Company_Phone_Number_Normalization_Rules.txt".
 
 5. Attendere alcuni minuti che tutti i pool Front End leggono i nuovi file.
 
-6. Eseguire il cmdlet seguente in ogni pool di Skype for Business Server 2019 nella distribuzione:
+6. Eseguire il cmdlet seguente in ogni Skype for Business Server 2019 della distribuzione:
 
    ```PowerShell
    Update-CsAddressBook

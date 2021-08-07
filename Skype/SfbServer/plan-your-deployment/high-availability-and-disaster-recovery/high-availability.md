@@ -12,26 +12,26 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 965041b7-3136-49f2-89c1-8b30417cb8ea
-description: Informazioni sulla gestione dei pool Front End in Skype for Business Server, inclusa la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
-ms.openlocfilehash: 47e4b2157961a2856256e3d96a0676dd86d3f996
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
+ms.openlocfilehash: 697cebf352d4fa0e2f245f50395107477ac3bae712346302e94746f173ce4d39
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51093074"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276621"
 ---
 # <a name="front-end-pool-high-availability-and-management"></a>Disponibilità e gestione elevata del pool Front End
  
-Informazioni sulla gestione dei pool Front End in Skype for Business Server, inclusa la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
+Informazioni sulla gestione dei pool Front End in Skype for Business Server, tra cui la gestione dei pool, la perdita di quorum e la procedura speciale per i pool con solo due Front End Server.
   
-In Skype for Business Server, l'architettura dei pool Front End utilizza un modello di sistemi distribuiti, con i dati di ogni utente conservati su fino a tre Front End Server nel pool. È consigliabile che tutti i pool Enterprise Edition Front End includano almeno tre Front End Server.
+In Skype for Business Server, l'architettura dei pool Front End utilizza un modello di sistemi distribuiti, con i dati di ogni utente conservati su fino a tre Front End Server nel pool. È consigliabile che tutti edizione Enterprise pool Front End includano almeno tre Front End Server.
 
 > [!NOTE]
-> Skype for Business Server 2019 non supporta pool Enterprise Edition Front End con due Front End Server e non consente la pubblicazione della topologia in tale scenario.
+> Skype for Business Server 2019 non supporta edizione Enterprise pool Front End con due Front End Server e non consente la pubblicazione della topologia in tale scenario.
   
 ## <a name="planning-for-the-management-of-front-end-pools"></a>Pianificazione della gestione dei pool Front End
 
- Skype for Business Server usa un modello di sistemi distribuiti basato su Windows Fabric. In questo modello, i dati importanti per ogni utente e conferenza vengono archiviati in tre Front End Server in un pool Front End. Questi tre server che archiviano un determinato set di dati sono denominatireplica.
+ Skype for Business Server un modello di sistemi distribuiti basato su Windows Fabric. In questo modello, i dati importanti per ogni utente e conferenza vengono archiviati in tre Front End Server in un pool Front End. Questi tre server che archiviano un determinato set di dati sono denominatireplica.
   
 Con il modello distribuito per i pool Front End, un determinato numero di server di un pool deve essere in esecuzione per il funzionamento del pool. Esistono due modalità di perdita per un pool.
   
@@ -45,7 +45,7 @@ La prima volta che si avvia un nuovo pool Front End, è essenziale che l'85% dei
   
 |Numero totale di server nel pool  <br/> |Numero di server che devono essere in esecuzione per il primo avvio del pool  <br/> |
 |:-----|:-----|
-|2   <br/> |1  <br/> |
+|2  <br/> |1  <br/> |
 |3   <br/> |3   <br/> |
 |4   <br/> |3   <br/> |
 |5   <br/> |4   <br/> |
@@ -53,9 +53,9 @@ La prima volta che si avvia un nuovo pool Front End, è essenziale che l'85% dei
 |7   <br/> |5   <br/> |
 |8   <br/> |6   <br/> |
 |9   <br/> |7   <br/> |
-|10    <br/> |8   <br/> |
-|11   <br/> |9   <br/> |
-|12   <br/> |10    <br/> |
+|10   <br/> |8   <br/> |
+|11  <br/> |9   <br/> |
+|12   <br/> |10   <br/> |
 |16 **Per Skype for Business Server 2019** <br/> |12   <br/> |
 
 
@@ -63,21 +63,21 @@ La prima volta che si avvia un nuovo pool Front End, è essenziale che l'85% dei
 Ogni volta che il pool viene avviato successivamente, deve essere avviato l'85% dei server (come illustrato nella tabella precedente). Se non è possibile avviare questo numero di server , ma è possibile avviare un numero sufficiente di server in modo da non essere a livello di quorum a livello di pool, è possibile utilizzare il cmdlet per consentire al pool di eseguire il ripristino dalla perdita del quorum a livello di gruppo di routing e apportare  `Reset-CsPoolRegistrarState -ResetType QuorumLossRecovery` progressi. Per ulteriori informazioni su come utilizzare questo cmdlet, vedere [Reset-CsPoolRegistrarState.](/powershell/module/skype/reset-cspoolregistrarstate?view=skype-ps) 
   
 > [!NOTE]
-> Nei pool con un numero pari di server, Skype for Business Server usa il database SQL primario come server di controllo. In un pool come questo, se si arresta il database primario e si passa alla copia mirror e si arresta un numero sufficiente di Front End Server in modo che l'esecuzione non sia sufficiente in base alla tabella precedente, l'intero pool verrà arrestato. Per ulteriori informazioni, vedere [Database Mirroring Witness](/sql/database-engine/database-mirroring/database-mirroring-witness). 
+> Nei pool con un numero pari di server, Skype for Business Server il database di SQL primario come server di controllo. In un pool come questo, se si arresta il database primario e si passa alla copia mirror e si arresta un numero sufficiente di Front End Server in modo che l'esecuzione non sia sufficiente in base alla tabella precedente, l'intero pool verrà arrestato. Per ulteriori informazioni, vedere [Database Mirroring Witness](/sql/database-engine/database-mirroring/database-mirroring-witness). 
   
 #### <a name="pool-level-quorum-loss"></a>Perdita quorum a livello di pool
 
-Per il funzionamento di un pool Front End, non può essere in caso di perdita del quorum a livello di pool. Se il numero di server in esecuzione scende al di sotto del livello funzionale, come illustrato nella tabella seguente, i server rimanenti nel pool arresteranno tutti i servizi di Skype for Business Server. Si noti che i numeri nella tabella seguente presuppongono che i server back-end nel pool siano in esecuzione.
+Per il funzionamento di un pool Front End, non può essere in caso di perdita del quorum a livello di pool. Se il numero di server in esecuzione scende al di sotto del livello funzionale, come illustrato nella tabella seguente, i server rimanenti nel pool arresteranno tutti Skype for Business Server servizi. Si noti che i numeri nella tabella seguente presuppongono che i server back-end nel pool siano in esecuzione.
   
 |Numero totale di Front End Server nel pool  <br/> |Numero minimo di server attivi per il funzionamento del pool  <br/> |
 |:-----|:-----|
-|2   <br/> |1  <br/> |
+|2  <br/> |1  <br/> |
 |3-4  <br/> |Qualsiasi 2  <br/> |
 |5-6  <br/> |Qualsiasi 3  <br/> |
 |7   <br/> |Qualsiasi 4  <br/> |
 |8-9  <br/> |Qualsiasi 4 dei primi 7 server  <br/> |
 |10-12  <br/> |Qualsiasi 5 dei primi 9 server  <br/> |
-|12-16  **Per Skype for Business Server 2019**  <br/> |Qualsiasi 7 dei primi 12 server  <br/> |
+|12-16 **Per Skype for Business Server 2019**  <br/> |Qualsiasi 7 dei primi 12 server  <br/> |
    
 Nella tabella precedente, i "primi server" sono i server che sono stati avviati per primi, cronologicamente, quando il pool è stato avviato per la prima volta. Per determinare questi server, è possibile utilizzare il  `Get-CsComputer` cmdlet con `-PoolFqdn` l'opzione . Questo cmdlet mostrerà i server nell'ordine in cui sono visualizzati nella topologia e quelli all'inizio dell'elenco sono i primi server.
   
@@ -90,11 +90,11 @@ Nella tabella precedente, i "primi server" sono i server che sono stati avviati 
   
 - Quando si spostano gli utenti nel pool per la prima volta, assicurarsi che siano in esecuzione almeno tre Front End Server.
     
-- Se si stabilisce una relazione di associazione tra il pool e un altro pool a scopo di ripristino di emergenza, dopo aver stabilito tale relazione è necessario verificare che nel pool siano in esecuzione contemporaneamente tre Front End Server per sincronizzare correttamente i dati con il pool di backup. Per ulteriori informazioni sulle funzionalità di associazione del pool e ripristino di emergenza, vedere [Plan for high availability and disaster recovery in Skype for Business Server.](high-availability-and-disaster-recovery.md) 
+- Se si stabilisce una relazione di associazione tra il pool e un altro pool a scopo di ripristino di emergenza, dopo aver stabilito tale relazione è necessario verificare che nel pool siano in esecuzione contemporaneamente tre Front End Server per sincronizzare correttamente i dati con il pool di backup. Per ulteriori informazioni sulle funzionalità di associazione del pool e ripristino di emergenza, vedere [Plan for high availability and disaster recovery in Skype for Business Server](high-availability-and-disaster-recovery.md). 
     
 ## <a name="front-end-pool-with-two-front-end-servers"></a>Pool Front End con due Front End Server
 
-Non è consigliabile distribuire un pool Front End contenente due soli Front End Server. Questo pool di piccole dimensioni non fornirà una soluzione affidabile a disponibilità elevata come farebbe un pool più grande e necessita di ulteriore attenzione nella gestione. Inoltre, se il server back-end di un pool a due server si è arrestato, è probabile che anche l'intero pool finirà presto. Se si desidera distribuire solo uno o due server che eseguono Skype for Business Server, è consigliabile distribuirli come server Standard Edition.
+Non è consigliabile distribuire un pool Front End contenente due soli Front End Server. Questo pool di piccole dimensioni non fornirà una soluzione affidabile a disponibilità elevata come farebbe un pool più grande e necessita di ulteriore attenzione nella gestione. Inoltre, se il server back-end di un pool a due server si è arrestato, è probabile che anche l'intero pool finirà presto. Se si desidera distribuire solo uno o due server che eseguono Skype for Business Server, è consigliabile distribuirli come edizione Standard server.
   
 Se è necessario distribuire un pool con due Front End Server, attenersi alle linee guida seguenti:
   

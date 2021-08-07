@@ -1,5 +1,5 @@
 ---
-title: Rapporto sulla posizione in Skype for Business Server
+title: Rapporto percorso in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,14 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: cb2f1551-1e21-4f13-a39d-91f5f9010ccf
 description: 'Riepilogo: informazioni sul Rapporto percorso in Skype for Business Server.'
-ms.openlocfilehash: 4c99b958c4cdf129338b263486dc12adc3ef64a7
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 0bebc7e04ae97cb90a5a2b2382bfceb679315d5b3442248852b3fb9a4aa31e5e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49827896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276781"
 ---
-# <a name="location-report-in-skype-for-business-server"></a>Rapporto sulla posizione in Skype for Business Server
+# <a name="location-report-in-skype-for-business-server"></a>Rapporto percorso in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto percorso in Skype for Business Server.
   

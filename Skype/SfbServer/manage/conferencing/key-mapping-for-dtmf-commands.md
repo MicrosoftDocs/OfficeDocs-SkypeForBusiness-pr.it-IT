@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: f91e80ee-a587-4a1b-ac8f-12fa102c098c
 description: 'Riepilogo: informazioni su come gestire il mapping dei tasti dei comandi DTMF (Dual Tone Multi-Frequency) in Skype for Business Server.'
-ms.openlocfilehash: 6b409ccce10128fdd7776e3ea77d6ee17d4a49f4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 106cd301826792ec494df4d490a6b953baf3badd1740d9cfd2de12e6de966d09
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119445"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276851"
 ---
 # <a name="manage-key-mapping-for-dtmf-commands-in-skype-for-business-server"></a>Gestire il mapping dei tasti per i comandi DTMF in Skype for Business Server
  
@@ -33,7 +33,7 @@ Quando si creano nuove impostazioni DTMF per i siti, le impostazioni del sito ha
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Per visualizzare le impostazioni DTMF utilizzate per le conferenze telefoniche con accesso esterno, al prompt dei comandi eseguire il comando seguente:
     

@@ -23,12 +23,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni sui passaggi necessari per assegnare un nuovo numero di telefono del servizio al bridge di conferenza per espandere la copertura per gli utenti.
-ms.openlocfilehash: f477c583db36e6dee514a84f32de202361d01c11
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 4514c9cf34049f9c9b92be697176c7897e560605
+ms.sourcegitcommit: f3c2559a89e1c4b3514e102cf94c38a697b4bc57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102662"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53724509"
 ---
 # <a name="change-the-phone-numbers-on-your-audio-conferencing-bridge"></a>Cambiare i numeri di telefono del bridge per i servizi di audioconferenza
 
@@ -133,13 +133,14 @@ Per ulteriori informazioni sul servizio MMS (Meeting Migration Service), consult
   
 ### <a name="step-3---unassign-the-old-phone-number-from-the-audio-conferencing-bridge"></a>Passaggio 3 - Annullare l'assegnazione del vecchio numero di telefono dal bridge di audioconferenza
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+Usare il cmdlet Unregister-CsOnlineDialInConferencingServiceNumber per annullare la registrazione di un numero verde o a pedaggio da un bridge per conferenze
 
-1. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono**.
+```PowerShell
+Unregister-CsOnlineDialInConferencingServiceNumber -identity "toll number to be removed" -bridgeId "Conference Bridge ID"
+Unregister-CsOnlineDialInConferencingServiceNumber -identity "toll free number to be removed" -bridgeId "Conference Bridge ID"
+```
+Nota: per trovare l'ID del bridge di conferenza, eseguire powershell seguente: Get-CsOnlineDialInConferencingBridge.
 
-2. Se il numero di telefono è un numero verde, selezionare il numero nell'elenco e fare clic su **Rilascia**. Se il numero di telefono è a numero verde, contattare il [supporto tecnico Microsoft](/microsoft-365/admin/contact-support-for-business-products) per avere il numero di telefono non assegnato.
-
-3. Se il numero di telefono è un numero verde, fare clic su **Sì** nella finestra di conferma.
 
    > [!IMPORTANT]
    > Dopo che un numero di telefono non è stato assegnato da un bridge di audioconferenza, il numero di telefono non sarà più disponibile per gli utenti per partecipare a riunioni nuove o esistenti.
@@ -180,7 +181,7 @@ Per risparmiare tempo automatizzando questo processo, è possibile usare i cmdle
   ```
 
     > [!NOTE]
-    > La posizione usata sopra deve corrispondere alle informazioni di contatto degli utenti impostate nell'Microsoft 365 di amministrazione.
+    > La posizione usata in precedenza deve corrispondere alle informazioni di contatto degli utenti impostate nel interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -208,7 +209,7 @@ Con Windows PowerShell puoi gestire gli utenti e cosa gli è consentito fare opp
 
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
 
-Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
 
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
 

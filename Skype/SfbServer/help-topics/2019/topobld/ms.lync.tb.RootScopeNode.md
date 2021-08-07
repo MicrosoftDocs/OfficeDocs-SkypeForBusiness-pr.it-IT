@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: d190f1f0-7741-432a-84ac-9530bb00abef
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Nel nodo Lync Server sono elencati i siti centrali della topologia. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 90d1b7fed5dec0372a7db33d7ffa5791f189ac13
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 5416a32c2dc00651a19c6ebcce263d11cba18faa04cd9a536360e03740068ac4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305618"
 ---
 # <a name="skype-for-business-server-root-scope-node"></a>Nodo di ambito della radice di Skype for Business Server
  
@@ -36,13 +36,13 @@ Nel **nodo Lync Server** sono elencati i siti centrali della topologia. È possi
     
 - **Scarica topologia**. Consente di caricare la topologia attualmente distribuita dall'archivio di gestione centrale. Se si è già provveduto a definire una topologia e a stabilire l'archivio di gestione centrale, è sempre consigliabile utilizzare questa opzione per caricare la topologia.
     
-- **Salva una copia della topologia con nome**. Salva la topologia corrente in un file che può essere caricato di nuovo in un secondo momento in Generatore di topologie.
+- **Salva una copia della topologia con nome**. Salva la topologia corrente in un file che è possibile caricare di nuovo in un secondo momento in Generatore di topologie.
     
 - **Pubblica topologia**. Utilizzare questa opzione per pubblicare la topologia nell'archivio di gestione centrale, in modo che sia possibile iniziare a distribuire i server.
     
 - **Installa database**. Consente di creare i database necessari per la distribuzione.
     
-- **Unire la topologia di Office Communications Server 2007 R2.** Consente di avviare la procedura di unione guidata di Generatore di topologie. Questo strumento raccoglie informazioni sull'ambiente Office Communications Server precedente, incluse le informazioni sul server perimetrale, e le pubblica in un database condiviso. 
+- **Merge Office Communications Server 2007 R2 Topology**. Consente di avviare la procedura di unione guidata di Generatore di topologie. Questo strumento raccoglie informazioni sull'ambiente Office Communications Server precedente, incluse le informazioni sul server perimetrale, e le pubblica in un database condiviso. 
     
 - **Rimuovi distribuzione**. Avvia la procedura guidata Rimuovi distribuzione, che consente di iniziare a rimuovere l'intera distribuzione.
     

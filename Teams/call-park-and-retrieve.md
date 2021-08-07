@@ -21,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come usare il parcheggio di chiamata e recuperare per mettere una chiamata in attesa in Microsoft Teams.
-ms.openlocfilehash: fb60e09148f2b96ce9b4d059d7d112c817239822
-ms.sourcegitcommit: 355c7858b98518f6a922110390c51eb7e2cd6690
+ms.openlocfilehash: 751101a250c7a3f38ac7ba51dc8a22cc91d4d7b5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53147184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772607"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Parcheggio di chiamata e recupero in Microsoft Teams
 
@@ -53,7 +53,7 @@ Per abilitare un criterio di parcheggio di chiamata
 
 1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Criteri**  >  **del parco chiamate vocali.**
 2. Nella scheda **Gestisci criteri** fare clic su **Aggiungi.**
-3. Assegnare un nome al criterio e quindi impostare **Consenti parcheggio di chiamata** su **Attivata.**
+3. Assegnare un nome al criterio e quindi impostare **Consenti parcheggio di chiamata** su **Attivata.** Non è possibile personalizzare l'intervallo di risposta e il timeout della chiamata.
 
     ![Screenshot delle impostazioni dei criteri del parcheggio di chiamata](media/call-park-add-policy.png)
 

@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 9bd9c2b2-8329-4b31-a937-e462f5cc7293
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per incorporare un server perimetrale o un pool di server perimetrali nella progettazione della topologia, è necessario specificare il nome di dominio completo (FQDN) del server in cui si desidera distribuire il server perimetrale o il pool di server perimetrali. Prima di pubblicare una topologia che include il server perimetrale o il pool di server perimetrali e installare Skype for Business Server, è necessario aver completato tutti i prerequisiti per la distribuzione dell'accesso degli utenti esterni. Per informazioni dettagliate su questi prerequisiti, vedere Preparing for Installation of Servers in the Perimeter Network nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: b242cf6d3b0957cec4dca81c6674eded8814337b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c5e89770e07e8306ff8399d3a84753c689519f65b2dcb4404e8d9c8a2f98da92
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122697"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54277251"
 ---
 # <a name="add-edge-server"></a>Aggiungere Edge Server
 

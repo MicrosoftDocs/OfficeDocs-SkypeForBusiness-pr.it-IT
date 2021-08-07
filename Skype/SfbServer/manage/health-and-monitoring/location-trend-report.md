@@ -1,5 +1,5 @@
 ---
-title: Rapporto tendenze percorso in Skype for Business Server
+title: Rapporto tendenze posizione in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,14 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 61e2db3c-9f10-4411-8e7e-c6950faf8533
 description: 'Riepilogo: informazioni sul Rapporto tendenze percorso in Skype for Business Server.'
-ms.openlocfilehash: cde443757da903daa261d12fd34f50a9288870d0
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 1ca84e4122c26743cfc97addad6c3ef09d568a28b838e1b93dc1f4e900d2e48a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49827886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276771"
 ---
-# <a name="location-trend-report-in-skype-for-business-server"></a>Rapporto tendenze percorso in Skype for Business Server
+# <a name="location-trend-report-in-skype-for-business-server"></a>Rapporto tendenze posizione in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto tendenze percorso in Skype for Business Server.
   

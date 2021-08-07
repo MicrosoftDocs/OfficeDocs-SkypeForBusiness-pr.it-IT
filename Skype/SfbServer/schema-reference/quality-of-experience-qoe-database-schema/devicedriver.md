@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ca91a0b4-98c0-49f6-af9d-7d0f8ac75f1a
 description: La tabella DeviceDriver è una tabella di supporto. Ogni record rappresenta un driver utilizzato da un dispositivo di acquisizione o di rendering.
-ms.openlocfilehash: 1f83bfd014fa5fb49f4d0f900e01aeecfe2b5f46
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 49bf941de3c0639552bd01e5066c9b823953ca7d4c01acc1b77a973045d89985
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276571"
 ---
 # <a name="devicedriver-table"></a>Tabella DeviceDriver
  

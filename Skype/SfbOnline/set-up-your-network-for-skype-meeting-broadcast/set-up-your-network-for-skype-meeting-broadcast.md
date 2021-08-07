@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità Riunione Skype Broadcast di Skype for Business Online che consente di pianificare, produrre e trasmettere riunioni o eventi a un pubblico online di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: da27110313765bb50df92e3bafb6f09ceae5f301
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: e5248ca2f8b8bb8080eae5eebe44e3d7c5bc01f5
+ms.sourcegitcommit: f3c2559a89e1c4b3514e102cf94c38a697b4bc57
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237552"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "53725359"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
@@ -43,9 +43,7 @@ Per ignorare questo passaggio e aggiungere invece un'altra azienda alla [federaz
 
 Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
-## #
-
- **Metodo 1: Usare l'interfaccia di amministrazione**
+### <a name="method-1-use-the-admin-center"></a>Metodo 1: Usare l'interfaccia di amministrazione
 
 1. Passare all'interfaccia di amministrazione e quindi nel riquadro di spostamento sinistro fare clic su componenti aggiuntivi Impostazioni Servizi e quindi scegliere  >  **&amp;** **Skype for Business**.
 
@@ -61,9 +59,7 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
 3. Fare clic su **Salva**.
 
-## #
-
- **Metodo 2: Usare Windows PowerShell**
+### <a name="method-2-use-windows-powershell"></a>Metodo 2: Usare Windows PowerShell
 
 - Nel **menu Start fare clic con** il pulsante destro del **mouse** Windows PowerShell e scegliere Esegui **come amministratore.** Nella finestra **Windows PowerShell** digitare ogni riga e premere INVIO.
 

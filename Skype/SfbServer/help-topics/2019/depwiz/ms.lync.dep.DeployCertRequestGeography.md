@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: aef0110c-b4b0-453c-a2dd-602372e64952
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella pagina Dati geografici vengono richieste ulteriori informazioni sulla richiesta del certificato. In tale pagina è possibile selezionare il Paese e quindi digitare la Provincia e la Città in una casella di testo. Si noti che, invece di utilizzare abbreviazioni, è consigliabile specificare per esteso il nome della provincia e della città.
-ms.openlocfilehash: 64e110126cac5a5e192f5d04383f3a85fcac58e6
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ff688b780abfbe674794ded97c60e26f8d59815d2c7e1d00d1ec1cd8348dd2a7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49808836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305858"
 ---
 # <a name="certificate-request-geography"></a>Richiesta di certificato (geografia)
  

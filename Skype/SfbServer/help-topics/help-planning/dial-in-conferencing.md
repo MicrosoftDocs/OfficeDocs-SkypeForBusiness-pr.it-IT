@@ -1,5 +1,5 @@
 ---
-title: Conferenze telefoniche con accesso esterno (Strumento di pianificazione)
+title: Skype for Business Server Strumento di pianificazione delle conferenze telefoniche con accesso esterno
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,19 +15,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: c1f79a05-165c-47ec-8593-0bb3d43ee16f
-description: Le conferenze telefoniche con accesso esterno di Skype for Business Server 2015 consentono agli utenti di partecipare alla parte audio di una conferenza Skype for Business Server 2015 utilizzando un telefono PSTN (Public Switched Telephone Network) senza richiedere un provider di servizi di audioconferenza di terze parti.
-ms.openlocfilehash: 4b14193144dc8f1323fbc8ccdebf08409a8cfdaa
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Skype for Business Server conferenza telefonica con accesso esterno 2015 consente agli utenti di partecipare alla parte audio di una conferenza di Skype for Business Server 2015 utilizzando un telefono PSTN (Public Switched Telephone Network) senza richiedere un provider di servizi di audioconferenza di terze parti.
+ms.openlocfilehash: 538141da2f3b1ff6239079f6255a6f73d687fe62
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772897"
 ---
-# <a name="dial-in-conferencing-planning-tool"></a>Conferenze telefoniche con accesso esterno (Strumento di pianificazione)
+# <a name="skype-for-business-server-dial-in-conferencing-planning-tool"></a>Skype for Business Server Strumento di pianificazione delle conferenze telefoniche con accesso esterno
  
-Le conferenze telefoniche con accesso esterno di Skype for Business Server 2015 consentono agli utenti di partecipare alla parte audio di una conferenza Skype for Business Server 2015 utilizzando un telefono PSTN (Public Switched Telephone Network) senza richiedere un provider di servizi di audioconferenza di terze parti.
+Skype for Business Server conferenza telefonica con accesso esterno 2015 consente agli utenti di partecipare alla parte audio di una conferenza di Skype for Business Server 2015 utilizzando un telefono PSTN (Public Switched Telephone Network) senza richiedere un provider di servizi di audioconferenza di terze parti.
   
-Per informazioni dettagliate sulla pianificazione dell'abilitazione delle conferenze telefoniche con accesso esterno per l'organizzazione, vedere l'argomento seguente e gli argomenti a cui è collegata: 
+Per informazioni dettagliate sull'abilitazione delle conferenze telefoniche con accesso esterno per l'organizzazione, vedere l'argomento seguente e gli argomenti a cui è collegata: 
   
 - [Pianificare le conferenze in Skype for Business Server 2015](../../plan-your-deployment/conferencing/conferencing.md)
     

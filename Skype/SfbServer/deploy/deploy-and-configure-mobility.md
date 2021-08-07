@@ -1,5 +1,5 @@
 ---
-title: Distribuire e configurare Dispositivi mobili per Skype for Business Server
+title: Distribuire e configurare dispositivi mobili per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 8ec6197a-3d1e-4b42-9465-564044cdab1a
-description: In questo articolo vengono descritti i passaggi per configurare un'installazione esistente di Skype for Business Server per l'utilizzo del servizio per dispositivi mobili, consentendo ai dispositivi mobili di sfruttare le funzionalità di Skype for Business Server Mobility.
-ms.openlocfilehash: 2ba0a81350dac6e47f4e909b4cfba256ee90de18
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: In questo articolo vengono descritti i passaggi per configurare un'installazione di Skype for Business Server esistente per l'utilizzo del servizio per dispositivi mobili, consentendo ai dispositivi mobili di sfruttare le funzionalità di Skype for Business Server Mobility.
+ms.openlocfilehash: 4e2cbb49d74347082bf3db02bba4a01de7f31ca187867b8e95474e88ec01fcbb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54306038"
 ---
-# <a name="deploy-and-configure-mobility-for-skype-for-business-server"></a>Distribuire e configurare Dispositivi mobili per Skype for Business Server  
+# <a name="deploy-and-configure-mobility-for-skype-for-business-server"></a>Distribuire e configurare dispositivi mobili per Skype for Business Server  
  
-In questo articolo vengono descritti i passaggi per configurare un'installazione esistente di Skype for Business Server per l'utilizzo del servizio per dispositivi mobili, consentendo ai dispositivi mobili di sfruttare le funzionalità di Skype for Business Server Mobility.
+In questo articolo vengono descritti i passaggi per configurare un'installazione di Skype for Business Server esistente per l'utilizzo del servizio per dispositivi mobili, consentendo ai dispositivi mobili di sfruttare le funzionalità di Skype for Business Server Mobility.
   
-Dopo aver esaminato l'articolo [Plan for Mobility for Skype for Business Server,](../plan-your-deployment/mobility.md) dovresti essere pronto a procedere con i passaggi seguenti per distribuire Mobility nell'ambiente Skype for Business Server. I passaggi sono i seguenti (e in questa tabella è incluso un elenco di autorizzazioni):
+Dopo aver esaminato l'articolo Plan [for Mobility for Skype for Business Server,](../plan-your-deployment/mobility.md) è consigliabile procedere con i passaggi seguenti per distribuire Mobility nell'Skype for Business Server ambiente. I passaggi sono i seguenti (e in questa tabella è incluso un elenco di autorizzazioni):
   
 |**Fase**|**Autorizzazioni**|
 |:-----|:-----|
@@ -38,12 +38,12 @@ Dopo aver esaminato l'articolo [Plan for Mobility for Skype for Business Server,
 Tutte le sezioni seguenti contengono passaggi che presuppongono che sia stato letto l'argomento Pianificazione. Se qualcosa ti confonde, non esita a consultare le informazioni.
 
 > [!NOTE]
-> Il supporto MCX (Servizio per dispositivi mobili) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client mobili Skype for Business correnti usano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
+> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
 ## <a name="create-dns-records"></a>Creare record DNS
 <a name="CreateDNSRec"> </a>
 
-Questi record potrebbero essere già presenti nell'ambiente Skype for Business Server, ma è necessario creare i record seguenti per il funzionamento dell'individuazione automatica:
+Potrebbero essere già presenti nell'ambiente Skype for Business Server, ma è necessario creare i record seguenti per il funzionamento dell'individuazione automatica:
   
 - Record DNS interno per supportare gli utenti mobili che si connettono dalla rete dell'organizzazione.
     
@@ -57,7 +57,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
     
 2. Fare clic sul pulsante **Start,**  scegliere Strumenti di amministrazione **(potrebbe** essere necessario cercarlo se non è un'opzione del menu Start), quindi fare clic su **DNS** per aprire lo snap-in di amministrazione DNS.
     
-3. Nel riquadro sinistro della finestra della console, è necessario passare al dominio che ospita i Front End Server di  Skype for Business Server ed espandere le zone di ricerca diretta.
+3. Nel riquadro sinistro della finestra della console, è necessario passare al dominio che ospita i Front End Server del  Skype for Business Server ed espandere le zone di ricerca diretta.
     
 4. Prenditi un momento per vedere quale dei seguenti elementi hai:
     
@@ -71,13 +71,13 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
     
 7. Nel nome di dominio completo (FQDN per **l'host** di destinazione), è necessario digitare o passare all'FQDN dei servizi Web interni per il pool Front End (o un singolo Front End Server o pool di server Director o Director), identificato nel passaggio 4 precedente. Al momento dell'immissione, fare clic su OK.
     
-8. Dovrai creare un nuovo record CNAME di individuazione automatica nella zona di ricerca diretta per ogni dominio SIP supportato nell'ambiente Skype for Business Server.
+8. Sarà necessario creare un nuovo record CNAME di individuazione automatica nella zona di ricerca diretta per ogni dominio SIP supportato nell'Skype for Business Server locale.
     
 ### <a name="create-an-external-dns-cname-record"></a>Creare un record CNAME DNS esterno
 
 1. Questi passaggi sono generici, perché non è possibile indicare quale provider DNS pubblico potrebbe essere in uso, ma vogliamo comunque aiutarti. Accedere al provider DNS pubblico con un account che sarà in grado di creare nuovi record DNS.
     
-2. A questo punto, dovrebbe esistere già un dominio SIP per Skype for Business Server. Espandere la **zona di ricerca diretta** per il dominio SIP o aprirla in altro modo.
+2. A questo punto, deve esistere già un dominio SIP per Skype for Business Server. Espandere la **zona di ricerca diretta** per il dominio SIP o aprirla in altro modo.
     
 3. Prenditi un momento per vedere quale dei seguenti elementi hai:
     
@@ -91,7 +91,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
     
 6. Successivamente dovrebbe essere presente un'area da immettere in un nome di dominio completo per **l'host** di destinazione, che dovrà essere il nome di dominio completo per il pool Front End (o un singolo Front End Server o pool di server Director o Director), identificato nel passaggio 3 precedente.
     
-7. Potrebbe essere necessario salvare qui o se è necessario creare record CNAME aggiuntivi nella zona di ricerca diretta di ogni dominio SIP nell'ambiente Skype for Business Server, ma una volta pronti, salvare il lavoro.
+7. Potrebbe essere necessario salvare qui o se è necessario creare ulteriori record CNAME nella zona di ricerca diretta di ogni dominio SIP nell'ambiente Skype for Business Server, ma una volta pronti, salvare il lavoro.
     
 ### <a name="create-an-internal-dns-a-record"></a>Creare un record A DNS interno
 
@@ -99,7 +99,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
     
 2. Fare clic sul pulsante **Start,**  scegliere Strumenti di amministrazione **(potrebbe** essere necessario cercarlo se non è un'opzione del menu Start), quindi fare clic su **DNS** per aprire lo snap-in di amministrazione DNS.
     
-3. Nel riquadro sinistro della finestra della console, è necessario passare al dominio che ospita i Front End Server di  Skype for Business Server ed espandere le zone di ricerca diretta.
+3. Nel riquadro sinistro della finestra della console, è necessario passare al dominio che ospita i Front End Server del  Skype for Business Server ed espandere le zone di ricerca diretta.
     
 4. Prenditi un momento per vedere quale dei seguenti elementi hai:
     
@@ -115,7 +115,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
     
 8. Al termine, fare clic **su Aggiungi host** e quindi su **OK.**
     
-9. Dovrai creare un nuovo record A o AAAA di individuazione automatica nella zona di ricerca diretta per ogni dominio SIP supportato nell'ambiente Skype for Business Server. A tale scopo, ripetere i passaggi da 6 a 8 il numero di volte necessario.
+9. Sarà necessario creare un nuovo record A o AAAA di individuazione automatica nella zona di ricerca diretta per ogni dominio SIP supportato nell'Skype for Business Server locale. A tale scopo, ripetere i passaggi da 6 a 8 il numero di volte necessario.
     
 10. Al termine, fare clic su **Fine.**
     
@@ -123,7 +123,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
 
 1. Questi passaggi sono generici, perché non è possibile indicare quale provider DNS pubblico potrebbe essere in uso, ma vogliamo comunque aiutarti. Accedere al provider DNS pubblico con un account che sarà in grado di creare nuovi record DNS.
     
-2. A questo punto, dovrebbe esistere già un dominio SIP per Skype for Business Server. Espandere la **zona di ricerca diretta** per il dominio SIP o aprirla in altro modo.
+2. A questo punto, deve esistere già un dominio SIP per Skype for Business Server. Espandere la **zona di ricerca diretta** per il dominio SIP o aprirla in altro modo.
     
 3. Prenditi un momento per vedere quale dei seguenti elementi hai:
     
@@ -137,7 +137,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
     
 6. Successivamente dovrebbe essere presente un'area da immettere in un indirizzo **IP,** che dovrà essere l'IP per il pool Front End (o un singolo Front End Server o pool di server Director o Director), identificato nel passaggio 3 precedente.
     
-7. Potrebbe essere necessario salvare qui o, se è necessario creare record A o AAAA aggiuntivi nella zona di ricerca diretta di ogni dominio SIP per l'ambiente Skype for Business Server, è consigliabile farlo, ma una volta pronti, salvare il lavoro.
+7. Potrebbe essere necessario salvare qui o se è necessario creare ulteriori record A o AAAA nella zona di ricerca diretta di ogni dominio SIP per l'ambiente Skype for Business Server, ma una volta pronti, salvare il lavoro.
     
 ## <a name="modify-certificates"></a>Modificare i certificati
 <a name="ModCerts"> </a>
@@ -154,9 +154,9 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
     
 ### <a name="do-i-need-new-certificates"></a>Sono necessari nuovi certificati?
 
-1. In primo luogo, potrebbe essere necessario controllare e vedere quali certificati sono sul posto e se hanno o meno le voci necessarie. A tale scopo, dovrai accedere a Skype for Business Server con un account amministratore locale. Potrebbe inoltre essere necessario disporre dei diritti per l'Autorità di certificazione (CA) emittente per alcuni di questi passaggi.
+1. In primo luogo, potrebbe essere necessario controllare e vedere quali certificati sono sul posto e se hanno o meno le voci necessarie. A tale scopo, dovrai accedere al tuo Skype for Business Server con un account che sia un amministratore locale. Potrebbe inoltre essere necessario disporre dei diritti per l'Autorità di certificazione (CA) emittente per alcuni di questi passaggi.
     
-2. Apri Skype for Business Server Management Shell (puoi usare La ricerca per trovarlo se non lo hai aggiunto al menu Start o alla barra delle applicazioni).
+2. Aprire Skype for Business Server Management Shell (è possibile utilizzare la funzionalità di ricerca per trovarla se non è stata aggiunta alla menu Start o alla barra delle applicazioni).
     
 3. Sarà essenziale sapere quali certificati sono stati assegnati prima di provare ad aggiungere un certificato aggiornato. Quindi, al comando, digitare:
     
@@ -170,7 +170,7 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
     
 ### <a name="request-a-new-certificate-or-certificates-from-your-certificate-authority-ca"></a>Richiedere un nuovo certificato o un nuovo certificato all'autorità di certificazione (CA)
 
-1. Dopo aver controllato le voci SAN disponibili, si è a sapere di disporre di un singolo certificato **(dopo** aver controllato tramite i passaggi precedenti) e di aver appreso di non disporre di tutte le voci necessarie. È necessario eseguire una nuova richiesta di certificato all'autorità di certificazione. Aprire PowerShell di Skype for Business Server:
+1. Dopo aver controllato le voci SAN disponibili, si è a sapere di disporre di un singolo certificato **(dopo** aver controllato tramite i passaggi precedenti) e di aver appreso di non disporre di tutte le voci necessarie. È necessario eseguire una nuova richiesta di certificato all'autorità di certificazione. Aprire la Skype for Business Server PowerShell:
     
    - Per una san del servizio di individuazione automatica mancante (sostituendo il parametro -Ca con il percorso dell'autorità di certificazione):
     
@@ -184,7 +184,7 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
    Request-CsCertificate -New -Type Default,WebServicesInternal,WebServicesExternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
    ```
 
-2. In caso contrario, dopo aver verificato quali voci SAN sono  disponibili, è possibile trovare più certificati che non dispongono di tutte le voci necessarie. È necessario eseguire una nuova richiesta di certificato all'autorità di certificazione. Aprire PowerShell di Skype for Business Server:
+2. In caso contrario, dopo aver verificato quali voci SAN sono  disponibili, è possibile trovare più certificati che non dispongono di tutte le voci necessarie. È necessario eseguire una nuova richiesta di certificato all'autorità di certificazione. Aprire la Skype for Business Server PowerShell:
     
    - Per una san del servizio di individuazione automatica mancante (sostituendo il parametro -Ca con il percorso dell'autorità di certificazione):
     
@@ -275,7 +275,7 @@ Abbiamo due aspetti principali da considerare:
 - Se si sta eseguendo la richiesta di individuazione automatica iniziale su HTTP, sarà necessario creare o modificare anche la regola.
     
 > [!NOTE]
-> **Importante** Un valore di timeout proxy è un numero che varia da distribuzione a distribuzione. È consigliabile monitorare la distribuzione e modificare il valore per un'esperienza ottimale per i client. Potresti essere in grado di impostare il valore fino a 200. Se si supportano i client mobili Lync nell'ambiente, è consigliabile impostare il valore su 960 per consentire i timeout delle notifiche push da Office 365, con un valore di timeout pari a 900. È molto probabile che sia necessario aumentare il valore di timeout per evitare la disconnessione del client quando il valore è troppo basso o diminuire il numero se le connessioni tramite il proxy non si disconnettino, ma si cancellano a lungo dopo la disconnessione del client. Il monitoraggio e la base di ciò che è consueto per l'ambiente sono l'unico modo accurato per determinare l'impostazione appropriata per questo valore.
+> **Importante** Un valore di timeout proxy è un numero che varia da distribuzione a distribuzione. È consigliabile monitorare la distribuzione e modificare il valore per un'esperienza ottimale per i client. Potresti essere in grado di impostare il valore fino a 200. Se si supportano i client mobili Lync nell'ambiente, è consigliabile impostare il valore su 960 per consentire timeout di notifica push da Office 365, con un valore di timeout pari a 900. È molto probabile che sia necessario aumentare il valore di timeout per evitare la disconnessione del client quando il valore è troppo basso o diminuire il numero se le connessioni tramite il proxy non si disconnettino, ma si cancellano a lungo dopo la disconnessione del client. Il monitoraggio e la base di ciò che è consueto per l'ambiente sono l'unico modo accurato per determinare l'impostazione appropriata per questo valore.
   
 ### <a name="modify-the-existing-web-publishing-rule-for-your-external-autodiscover-san-and-url"></a>Modificare la regola di pubblicazione Web esistente per la SAN e l'URL di individuazione automatica esterni
 
@@ -386,13 +386,13 @@ Abbiamo due aspetti principali da considerare:
 ## <a name="configure-autodiscover-for-mobility-with-hybrid-deployments"></a>Configurare l'individuazione automatica per dispositivi mobili con distribuzioni ibride
 <a name="ConfigAutoD"> </a>
 
-Gli ambienti ibridi in Skype for Business Server sono ambienti che combinano un ambiente locale e un ambiente O365. Quando Skype for Business Server funziona in un ambiente ibrido, il servizio di individuazione automatica deve essere in grado di individuare un utente da uno di questi ambienti.
+Gli ambienti ibridi Skype for Business Server sono ambienti che combinano un ambiente locale e un ambiente O365. Dopo aver Skype for Business Server in un ambiente ibrido, il servizio di individuazione automatica deve essere in grado di individuare un utente da uno di questi ambienti.
   
 Per consentire ai client mobili di individuare la posizione di un utente, è necessario configurare il servizio di individuazione automatica con un nuovo URL (Uniform Resource Locator). Ecco come procedere:
   
 1. Aprire Skype for Business Server Management Shell.
     
-2. Eseguire le operazioni seguenti per ottenere il valore dell'attributo **ProxyFQDN per** l'ambiente Skype for Business Server:
+2. Eseguire quanto segue per ottenere il valore dell'attributo **ProxyFQDN** per l'Skype for Business Server locale:
     
    ```powershell
    Get-CsHostingProvider
@@ -409,18 +409,18 @@ Per consentire ai client mobili di individuare la posizione di un utente, è nec
 ## <a name="test-your-mobility-deployment"></a>Testare la distribuzione per dispositivi mobili
 <a name="TestMobility"> </a>
 
-Dopo aver distribuito il servizio per dispositivi mobili di Skype for Business Server e il servizio di individuazione automatica di Skype for Business Server, è necessario eseguire una transazione di test per assicurarsi che la distribuzione funzioni correttamente. È possibile eseguire **Test-CsUcwaConference** per testare la capacità di due utenti di creare, partecipare e comunicare in una conferenza. Per eseguire questo test saranno necessari due utenti (reali o di prova) e le relative credenziali complete. Questo comando funzionerà sia per i client Skype for Business che per i client Lync Server 2013.
+Dopo aver distribuito il servizio per dispositivi mobili Skype for Business Server e il servizio di individuazione automatica di Skype for Business Server, è necessario eseguire una transazione di test per verificare che la distribuzione funzioni correttamente. È possibile eseguire **Test-CsUcwaConference** per testare la capacità di due utenti di creare, partecipare e comunicare in una conferenza. Per eseguire questo test saranno necessari due utenti (reali o di prova) e le relative credenziali complete. Questo comando funzionerà sia per Skype for Business client di Lync Server 2013 che per i client Lync Server 2013.
   
-Per i client Lync Server 2010 in Skype for Business Server 2015, è necessario eseguire **Test-CsMcxP2PIM** per testare. Gli utenti di Lync Server 2010 dovranno comunque essere utenti effettivi o utenti di test predefiniti e saranno necessarie le credenziali della password.
+Per i client Lync Server 2010 Skype for Business Server 2015, è necessario eseguire **Test-CsMcxP2PIM** per testare. Gli utenti di Lync Server 2010 dovranno comunque essere utenti effettivi o utenti di test predefiniti e saranno necessarie le credenziali della password.
 
 > [!NOTE]
-> Il supporto MCX (Servizio per dispositivi mobili) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client mobili Skype for Business correnti usano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
+> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
 ### <a name="test-conferencing-for-skype-for-business-and-lync-2013-mobile-clients"></a>Test conferencing for Skype for Business and Lync 2013 mobile clients
 
-1. Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
+1. Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui **Skype for Business Server Management Shell** e **Ocscore** siano installati.
     
-2. Avviare **Skype for Business Server Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i** programmi e sceglierlo).
+2. Avviare la **Skype for Business Server Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i** programmi e sceglierlo).
     
 3. Nella riga di comando immettere:
     
@@ -441,11 +441,11 @@ Per i client Lync Server 2010 in Skype for Business Server 2015, è necessario e
 ### <a name="test-conferencing-for-lync-2010-mobile-clients"></a>Test conferencing for Lync 2010 mobile clients
 
 > [!NOTE]
-> Il supporto MCX (Servizio per dispositivi mobili) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client mobili Skype for Business correnti usano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
+> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
 
-1. Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
+1. Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui **Skype for Business Server Management Shell** e **Ocscore** siano installati.
     
-2. Avviare **Skype for Business Server Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i** programmi e sceglierlo).
+2. Avviare la **Skype for Business Server Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i** programmi e sceglierlo).
     
 3. Nella riga di comando immettere:
     
@@ -468,23 +468,23 @@ Per esaminare ulteriormente le procedure di comando, è possibile consultare [Te
 ## <a name="configure-for-push-notifications"></a>Configurare il sistema per le notifiche push
 <a name="ConfigPush"> </a>
 
-Le notifiche push, sotto forma di notifiche, icone o avvisi, possono essere inviate a un dispositivo mobile anche quando l'app Skype o Lync è inattiva. Ma cosa sono le notifiche push? Si tratta di avvisi di eventi, ad esempio un invito di messaggistica istantanea nuovo o perso, o per una segreteria telefonica ricevuta. Il servizio Per dispositivi mobili di Skype for Business Server invia queste notifiche al servizio di notifica Push di Skype for Business Server basato sul cloud, che quindi invia le notifiche al servizio di notifica Push Microsoft (MSNS) per gli utenti di Windows Phone.
+Le notifiche push, sotto forma di notifiche, icone o avvisi, possono essere inviate a un dispositivo mobile anche quando l'Skype o l'app Lync è inattiva. Ma cosa sono le notifiche push? Si tratta di avvisi di eventi, ad esempio un invito di messaggistica istantanea nuovo o perso, o per una segreteria telefonica ricevuta. Il servizio Skype for Business Server Mobility invia queste notifiche al servizio di notifica Push Skype for Business Server basato su cloud, che quindi invia le notifiche al servizio di notifica Push Microsoft (MSNS) per gli utenti Windows Phone cloud.
   
-Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si dispone di Skype for Business Server, è necessario eseguire le operazioni seguenti:
+Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si dispone di un Skype for Business Server, è necessario eseguire le operazioni seguenti:
   
-- Per un server perimetrale Di Skype for Business Server, aggiungi un nuovo provider di hosting, Microsoft Skype for Business online e quindi configura la federazione del provider di hosting tra l'organizzazione e Skype for Business online.
+- Per un server perimetrale Skype for Business Server, aggiungere un nuovo provider di hosting, Microsoft Skype for Business Online, quindi configurare la federazione del provider di hosting tra l'organizzazione e Skype for Business Online.
     
 - Abilitare le notifiche push eseguendo il cmdlet **Set-CsPushNotificationConfiguration.** Per impostazione predefinita, le notifiche push sono disattivate.
     
 - Testare la configurazione della federazione e le notifiche push.
     
-### <a name="configure-your-skype-for-business-edge-server-for-push-notifications"></a>Configurare skype for business edge server per le notifiche push
+### <a name="configure-your-skype-for-business-edge-server-for-push-notifications"></a>Configurare il server perimetrale Skype for Business per le notifiche push
 
 1. Accedere con un account membro del ruolo **CsAdministrator** a un computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
     
 2. Avviare **Skype for Business Server Management Shell**.
     
-3. Aggiungere un provider di hosting online di Skype for Business Server.
+3. Aggiungere un Skype for Business Server di hosting online.
     
    ```powershell
    New-CsHostingProvider -Identity <unique identifier for hosting provider> -Enabled $True -ProxyFQDN <FQDN for the Access Server used by the hosting provider> -VerificationLevel UseSourceVerification
@@ -499,7 +499,7 @@ Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si disp
     > [!NOTE]
     > Non è possibile avere più di una relazione di federazione con un singolo provider di hosting. Pertanto, se hai già configurato un provider di hosting con una relazione di federazione con sipfed.online.lync.com, non aggiungere un altro provider di hosting, anche se l'identità del provider di hosting è diversa da SkypeOnline. 
   
-4. Configurare la federazione del provider di hosting tra l'organizzazione e il servizio di notifica Push in Skype for Business online. Nella riga di comando, è necessario digitare:
+4. Configurare la federazione del provider di hosting tra l'organizzazione e il servizio di notifica Push su Skype for Business Online. Nella riga di comando, è necessario digitare:
     
    ```powershell
     New-CsAllowedDomain -Identity "push.lync.com"
@@ -575,7 +575,7 @@ Per consentire agli utenti di usare Chiama tramite il lavoro, dovranno anche ess
 - Assegnato un criterio per dispositivi mobili con **EnableOutsideVoice** impostato su **True.**
     
 > [!NOTE]
-> Gli utenti che non sono abilitati per VoIP aziendale possono usare i propri dispositivi mobili per effettuare chiamate VoIP Da Skype a Skype o possono partecipare alle conferenze utilizzando il collegamento Fai clic per partecipare mentre sono nei dispositivi mobili, se sono impostate le opzioni appropriate per il criterio vocale a cui sono associati. Nell'argomento PIANIFICAZIONE sono disponibili ulteriori dettagli. 
+> Gli utenti che non sono abilitati per VoIP aziendale possono usare i propri dispositivi mobili per effettuare Skype chiamate VoIP Skype o partecipare alle conferenze utilizzando il collegamento Fai clic per partecipare mentre sono nei dispositivi mobili, se le opzioni appropriate sono impostate per il criterio vocale a cui sono associati. Nell'argomento PIANIFICAZIONE sono disponibili ulteriori dettagli. 
   
 ### <a name="modify-global-mobility-policy"></a>Modificare i criteri globali per dispositivi mobili
 

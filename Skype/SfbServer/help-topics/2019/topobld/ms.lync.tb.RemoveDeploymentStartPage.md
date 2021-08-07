@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 8659fefa-97f1-4d4a-9628-5c6dae86b244
 ROBOTS: NOINDEX, NOFOLLOW
 description: Eseguire la Rimozione guidata distribuzione solo se si desidera non rendere disponibile l'intera distribuzione. Questa procedura guidata consente di creare una topologia vuota costituita da un singolo Front End Server. Dopo aver eseguito questa procedura guidata e aver pubblicato la topologia vuota, non è possibile ripristinare la topologia originale.
-ms.openlocfilehash: 3aaba62ae445cb0be9f674cdba21dfc14d9b61be
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 97f5122b791e6cf558e2f568b2c6dc42c5104496c845b3015b91b91bfa442ca2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54277201"
 ---
 # <a name="remove-deployment-introduction"></a>Introduzione a Rimuovi distribuzione
  

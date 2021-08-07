@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 5530cf17-4520-40b5-ba70-c62692685048
 ROBOTS: NOINDEX, NOFOLLOW
 description: I criteri percorso determinano se i servizi di emergenza avanzati sono abilitati e come vengono utilizzati, oltre a definire come vengono utilizzate le informazioni percorso per utenti e contatti.
-ms.openlocfilehash: 9f6d7468520b3398f186adeacffd5b393ce159b8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: eabd1ce415f420ef62e9f85a7b4a7c4342e0f4d1ea1a34cf71b14319761f002a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305748"
 ---
 # <a name="location-policy"></a>Criteri percorso
 
@@ -35,7 +35,7 @@ I criteri percorso includono un criterio globale e, facoltativamente, uno o più
 - **Criteri utente (facoltativo):** È possibile creare uno o più criteri percorso utente, ognuno dei quali si applica a un utente o a un gruppo di utenti specifico. I criteri utente prevalgono sul criteri globale e i criteri sito.
 
 > [!NOTE]
-> È inoltre possibile assegnare criteri percorso a siti di rete, ovvero gruppi di subnet. I criteri percorso assegnati a siti di rete hanno la precedenza su tutti gli altri criteri utente. Per informazioni dettagliate sull'assegnazione dei criteri percorso ai siti di rete tramite i cmdlet, vedere [Add a location policy to a network site in Skype for Business Server.](../../../deploy/deploy-enterprise-voice/add-a-location-policy-to-a-network-site.md) Per informazioni dettagliate sull'utilizzo del Pannello di controllo di Skype for Business Server per assegnare un criterio percorso a un sito di rete, vedere [Configuring Network Sites.](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-sites)
+> È inoltre possibile assegnare criteri percorso a siti di rete, ovvero gruppi di subnet. I criteri percorso assegnati a siti di rete hanno la precedenza su tutti gli altri criteri utente. Per informazioni dettagliate sull'assegnazione di criteri percorso ai siti di rete tramite cmdlet, vedere [Add a location policy to a network site in Skype for Business Server](../../../deploy/deploy-enterprise-voice/add-a-location-policy-to-a-network-site.md). Per informazioni dettagliate sull'Skype for Business Server di controllo per assegnare un criterio percorso a un sito di rete, vedere [Configuring Network Sites.](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-sites)
 
 Nella pagina **Criteri percorso** viene visualizzato un elenco di tutti i criteri percorso definiti per l'organizzazione.
 
@@ -70,7 +70,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **E9-1-1** Selezionato se gli utenti assegnati a questo criterio percorso sono abilitati per E9-1-1.
 
-- **Posizione** Specifica se agli utenti viene richiesto di immettere o meno le informazioni sulla posizione quando il client si registra con Skype for Business Server in una nuova posizione e se visualizzano una dichiarazione di non responsabilità se ignorano il prompt senza immettere le informazioni sulla posizione.
+- **Posizione** Specifica se agli utenti viene richiesto di immettere o meno le informazioni sulla posizione quando il client esegue la registrazione con Skype for Business Server in una nuova posizione e se visualizzano una dichiarazione di non responsabilità se ignorano il prompt senza immettere le informazioni sulla posizione.
 
 - **Utilizzo PSTN** Specifica l'utilizzo pstN (Public Switched Telephone Network) utilizzato per determinare la route vocale utilizzata per instradare le chiamate di emergenza dai client che utilizzano questo profilo.
 
@@ -78,4 +78,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Maschera E9-1-1** Specifica un numero composto da un utente che viene quindi convertito nel numero di chiamata di emergenza.
 
-Per informazioni dettagliate VoIP aziendale funzionalità e funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate VoIP aziendale funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.

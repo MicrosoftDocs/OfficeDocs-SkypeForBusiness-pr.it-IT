@@ -1,5 +1,5 @@
 ---
-title: Impostazioni messaggistica unificata di Exchange (strumento di pianificazione)
+title: Skype for Business Server Exchange strumento di pianificazione Impostazioni messaggistica unificata
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,17 +15,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d4c4a5d9-1523-49ff-b994-882b037ed46f
-description: Skype for Business Server 2015 supporta l'integrazione con la messaggistica unificata di Exchange per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
-ms.openlocfilehash: 7f73e3ea6f7033103242c9ff8ee425963e9f6729
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Skype for Business Server supporta l'integrazione con Exchange messaggistica unificata per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
+ms.openlocfilehash: e17be4642c2d9d09cc0468a49fde024f2ccd19fb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116114"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "53772587"
 ---
-# <a name="exchange-unified-messaging-settings-planning-tool"></a>Impostazioni messaggistica unificata di Exchange (strumento di pianificazione)
+# <a name="skype-for-business-server-exchange-unified-messaging-settings-planning-tool"></a>Skype for Business Server Exchange strumento di pianificazione Impostazioni messaggistica unificata
 
-Skype for Business Server 2015 supporta l'integrazione con la messaggistica unificata di Exchange per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
+Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per la combinazione di messaggistica vocale e messaggistica elettronica in un'unica infrastruttura di messaggistica.
 
 Per dettagli, vedere:
 

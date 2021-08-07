@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 24fb3caf-19b3-4c0a-90d7-ca5d53de32ad
 description: La tabella AppliedBandwidthSource è una tabella di supporto. Ogni record rappresenta un'origine.
-ms.openlocfilehash: bf7e1be3b98bcd56fea16dbd7aa7171b056a7f3c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: fcb0323b1e6775b20a8ca4d269bcc8eecdc055b73d5a93a490e97f8a1af44b11
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54305348"
 ---
 # <a name="appliedbandwidthsource-table"></a>Tabella AppliedBandwidthSource
  

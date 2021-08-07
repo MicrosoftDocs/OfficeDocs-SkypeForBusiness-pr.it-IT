@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 0a9102c4-47aa-40ea-8a0d-20e72ab09848
 description: tblADCookie contiene i cookie di sincronizzazione LDAP (Lightweight Directory Access Protocol) correnti.
-ms.openlocfilehash: 78a477399da811e674bb5a4493e61100acdd4782
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 19914e31819ea38df6de39e5b0afebcb6bb59fdb15b8d2fbe7d7d59b30271a38
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49814756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276591"
 ---
 # <a name="tbladcookie"></a>tblADCookie
  
@@ -29,7 +29,7 @@ tblADCookie contiene i cookie di sincronizzazione LDAP (Lightweight Directory Ac
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
 |prinGuid  <br/> |GUID, not null  <br/> |GUID entità del dominio da monitorare.  <br/> |
-|prinDCHost  <br/> |nvarchar (255)  <br/> |Nome di dominio completo (FQDN) del controller di dominio corrente utilizzato per la sincronizzazione di Servizi di dominio Active Directory. Ha un valore informativo.  <br/> |
+|prinDCHost  <br/> |nvarchar (255)  <br/> |Nome di dominio completo (FQDN) del controller di dominio corrente utilizzato per la sincronizzazione di Servizi di dominio Active Directory. Ha valore informativo.  <br/> |
 |adcContent  <br/> |image (binary)  <br/> |Cookie di sincronizzazione di Active Directory.  <br/> |
 |lastUpdated  <br/> |datetime  <br/> |Timestamp con data e ora di aggiornamento della riga  <br/> |
 |lockedUntil  <br/> |datetime  <br/> |Data e ora fino a cui la riga è bloccata in modo da impedire eventuali modifiche. Fa parte di un meccanismo di blocco software che garantisce che un solo servizio chat alla volta esegua la sincronizzazione di Active Directory.  <br/> |
