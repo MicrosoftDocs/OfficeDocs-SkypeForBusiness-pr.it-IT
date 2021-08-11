@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ec8c45e1-307d-40ec-a75e-6083306105f2
 description: Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni flusso video nel database. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 6341febeb8d43e36975c5b4cc446ac24ff1287c2
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 9caf8cac3c45088cde68635a46ab9ebd79b5ca3bc203f71dc2ea0fce34968e3b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279952"
 ---
 # <a name="videostreamdetail-view"></a>Visualizzazione VideoStreamDetail
  
@@ -26,9 +26,9 @@ Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni 
   
 |**Colonna**|**Tipo di dati**|**Descrizione**|
 |:-----|:-----|:-----|
-|SessionTime  <br/> |datetime  <br/> |Riferimento dalla [tabella MediaLine.](medialine-0.md)  <br/> |
-|SessionSeq  <br/> |int  <br/> |Riferimento dalla [tabella MediaLine.](medialine-0.md)  <br/> |
-|MediaLineLabel  <br/> |tinyint  <br/> |Riferimento dalla [tabella MediaLine.](medialine-0.md)  <br/> |
+|SessionTime  <br/> |datetime  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
+|SessionSeq  <br/> |int  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
+|MediaLineLabel  <br/> |tinyint  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
 |StreamId  <br/> |int  <br/> |ID univoco in una linea multimediale.  <br/> |
 |StartTime  <br/> |datetime  <br/> |Data e ora di inizio della sessione.  <br/> |
 |EndTime  <br/> |datetime  <br/> |Ora di fine della sessione.  <br/> |
@@ -39,23 +39,23 @@ Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni 
 |Chiamato  <br/> |nvarchar(450)  <br/> |URI del chiamato.  <br/> |
 |CallerUserAgent  <br/> |nvarchar(256)  <br/> |Stringa agente utente del chiamante.  <br/> |
 |CallerUserAgentType  <br/> |smallint  <br/> |Tipo di agente utente del chiamante. Per informazioni [dettagliate, vedere](useragent.md) la tabella UserAgent. <br/> |
-|CallerUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamante. Per informazioni dettagliate, vedere la [tabella UserAgentDef (QoE).](useragentdef-qoe.md) <br/> |
+|CallerUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamante. Per informazioni [dettagliate, vedere la tabella UserAgentDef (QoE).](useragentdef-qoe.md) <br/> |
 |CalleeUserAgent  <br/> |nvarchar(256)  <br/> |Stringa agente utente del chiamato.  <br/> |
 |CalleeUserAgentType  <br/> |smallint  <br/> |Tipo di agente utente del chiamato. Per [informazioni, vedere la tabella UserAgent.](useragent.md) <br/> |
-|CalleeUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamato. Per informazioni, vedere la tabella [UserAgentDef (QoE).](useragentdef-qoe.md) <br/> |
+|CalleeUserAgentCategory  <br/> |nvarchar(64)  <br/> |Categoria dell'agente utente del chiamato. Per [informazioni, vedere la tabella UserAgentDef (QoE).](useragentdef-qoe.md) <br/> |
 |CallerEndpoint  <br/> |nvarchar(256)  <br/> |Nome dell'endpoint del chiamante.  <br/> |
 |CalleeEndpoint  <br/> |nvarchar(256)  <br/> |Nome dell'endpoint del chiamato.  <br/> |
 |CallerOS  <br/> |nvarchar(128)  <br/> |Sistema operativo dell'endpoint del chiamante.  <br/> |
 |CalleeOS  <br/> |nvarchar(128)  <br/> |Sistema operativo dell'endpoint del chiamato.  <br/> |
-|CallerCPUName  <br/> |nvarchar(128)  <br/> |Nome della CPU dell'endpoint del chiamante.  <br/> |
-|CalleeCPUName  <br/> |nvarchar(128)  <br/> |Nome della CPU dell'endpoint del chiamato.  <br/> |
-|CallerCPUNumberOfCores  <br/> |smallint  <br/> |Numero di core della CPU dell'endpoint del chiamante.  <br/> |
+|CallerCPUName  <br/> |nvarchar(128)  <br/> |Nome CPU dell'endpoint del chiamante.  <br/> |
+|CalleeCPUName  <br/> |nvarchar(128)  <br/> |Nome CPU dell'endpoint del chiamato.  <br/> |
+|CallerCPUNumberOfCores  <br/> |smallint  <br/> |Numero di core di CPU dell'endpoint del chiamante.  <br/> |
 |CalleeCPUNumberOfCores  <br/> |smallint  <br/> |Numero di core della CPU dell'endpoint del chiamato.  <br/> |
 |CallerCPUProcessorSpeed  <br/> |int  <br/> |Velocità del processore della CPU dell'endpoint del chiamante.  <br/> |
 |CalleeCPUProcessorSpeed  <br/> |int  <br/> |Velocità del processore della CPU dell'endpoint del chiamato.  <br/> |
 |CallerVirtualizationFlag  <br/> |tinyint  <br/> |Indica se il sistema del chiamante è in esecuzione in un ambiente virtualizzato. Per ulteriori [informazioni, vedere](endpoint.md) la tabella Endpoint. <br/> |
 |CalleeVirtualizationFlag  <br/> |tinyint  <br/> |Indica se il sistema del chiamato è in esecuzione in un ambiente virtualizzato. Per ulteriori [informazioni, vedere](endpoint.md) la tabella Endpoint. <br/> |
-|ConnectivityIce  <br/> |tinyint  <br/> |Informazioni sul percorso multimediale, ad esempio diretto o inoltrato. Per altre [informazioni, vedi la tabella MediaLine.](medialine-0.md) <br/> |
+|ConnectivityIce  <br/> |tinyint  <br/> |Informazioni sul percorso multimediale, ad esempio diretto o inoltrato. Per ulteriori informazioni, vedi la tabella [MediaLine.](medialine-0.md) <br/> |
 |CallerIceWarningFlags  <br/> |int  <br/> |Informazioni sul processo ICE (Interactive Connectivity Establishment) descritto nei flag di bit per il chiamante. Per informazioni dettagliate, vedere la specifica del protocollo del Monitoring Server per QoE.  <br/> |
 |CalleeIceWarningFlags  <br/> |int  <br/> |Informazioni sul processo ICE (Interactive Connectivity Establishment) descritto nei flag di bit per il destinatario della chiamata. Per informazioni dettagliate, vedere la specifica del protocollo del Monitoring Server per QoE.  <br/> |
 |Trasporto  <br/> |int  <br/> |Tipo di trasporto: 0 per UDP, 1 per TCP.  <br/> |
@@ -97,7 +97,7 @@ Nella visualizzazione VideoStreamDetail vengono archiviate informazioni su ogni 
 |PacketLossRateMax  <br/> |decimal(5,4)  <br/> |Perdita di pacchetti massima rilevata durante la chiamata.  <br/> |
 |PacketUtilization  <br/> |int  <br/> |Numero di pacchetti per il flusso video (Real Time Transport Protocol, RTP).  <br/> |
 |BandwidthEst  <br/> |int  <br/> |Stime di larghezza di banda per il flusso audio.  <br/> |
-|PayloadDescription  <br/> |int  <br/> |Codec audio usato per la chiamata, a cui si fa riferimento dalla [tabella PayloadDescription.](payloaddescription.md)  <br/> |
+|PayloadDescription  <br/> |int  <br/> |Codec audio utilizzato per la chiamata, a cui viene fatto riferimento dalla [tabella PayloadDescription.](payloaddescription.md)  <br/> |
 |VideoResolution  <br/> |char(9)  <br/> |Risoluzione del video in larghezza pixel moltiplicata per altezza pixel. Riportata come stringa.  <br/> |
 |VideoBitRateAvg  <br/> |int  <br/> |Velocità in bit media del flusso video.  <br/> |
 |InboundVideoFrameRateAvg  <br/> |decimal(9,4)  <br/> |Frequenza dei fotogrammi del video ricevuto.  <br/> |

@@ -10,28 +10,28 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Microsoft ritira il servizio Exchange Unified Messaging Online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogate le informazioni che i clienti interessati devono conoscere e fare per pianificare la continuità aziendale.
-ms.openlocfilehash: 4da55c9004224c68e4e65c56038c5491fac5a0ab
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Microsoft ritira il servizio Exchange messaggistica unificata online (ExchUMO) entro il 28 febbraio 2020. In questo articolo vengono riepilogate le informazioni che i clienti interessati devono conoscere e fare per pianificare la continuità aziendale.
+ms.openlocfilehash: 933ba625506496c01242b26712e9b6d5b020dbb199c5f515444f7a8734fb84b9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116514"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279594"
 ---
 # <a name="exchange-unified-messaging-online-migration-support"></a>Supporto per la migrazione della messaggistica unificata online di Exchange
 
 > [!IMPORTANT]
-> **Il servizio messaggistica unificata in Exchange Online non è più disponibile a partire dal 28 febbraio 2020, 17.00 ora pacifica. Tutti gli account di segreteria telefonica sono stati migrati al servizio Cloud Voicemail da Microsoft. Il traffico rimanente dell'operatore automatico non verrà monitorato e potrebbe essere interrotto in qualsiasi momento.**
+> **Il servizio di messaggistica unificata di Exchange Online è fuori supporto a partire dal 28 febbraio 2020, 17.00 ora pacifica. Tutti gli account di segreteria telefonica sono stati migrati al Cloud Voicemail da Microsoft. Il traffico rimanente dell'operatore automatico non verrà monitorato e potrebbe essere interrotto in qualsiasi momento.**
 
 In riferimento [](https://blogs.technet.microsoft.com/exchange/2019/02/08/retiring-unified-messaging-in-exchange-online/) all'annuncio dell'8 febbraio 2019, Microsoft ritira il servizio Exchange Unified Messaging Online (ExchUMO) entro il 28 febbraio 2020. Questo articolo offre un riepilogo delle informazioni che i clienti interessati devono conoscere e fare per pianificare la continuità aziendale.
 
-ExchUMO viene distribuito dai clienti per la segreteria telefonica, l'operatore automatico, la coda di chiamata e i servizi di integrazione fax. Microsoft prevede di aiutare i clienti a eseguire la migrazione ai servizi del sistema telefonico che supportano già migliaia di clienti in Skype for Business online e Microsoft Teams.
+ExchUMO viene distribuito dai clienti per la segreteria telefonica, l'operatore automatico, la coda di chiamata e i servizi di integrazione fax. Microsoft prevede di aiutare i clienti a eseguire la migrazione a Sistema telefonico che supportano già migliaia di clienti Skype for Business Online e Microsoft Teams.
 
-La segreteria telefonica è principalmente una migrazione guidata da Microsoft; il coinvolgimento dell'amministratore e/o l'investimento potrebbe essere necessario per un sottoinsieme di clienti. L'operatore automatico è una migrazione guidata dall'amministratore. sarà necessario creare di nuovo gli alberi degli operatori automatici ExchUMO esistenti nel servizio cloud Operatore automatico cloud. I clienti che utilizzano una delle funzionalità exchUMO con un PBX di terze parti non verranno migrati nei servizi cloud Skype perché non supportano sistemi PBX di terze parti. In questo [blog](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853)è stato annunciato un piano di ritiro per il supporto di terze parti e i clienti di questo modello di distribuzione possono eseguire la migrazione degli utenti a una delle piattaforme/servizi Di comunicazioni unificate di Microsoft o acquisire una soluzione di segreteria telefonica e/o operatore automatico di terze parti per tali utenti. L'integrazione fax non è supportata nei servizi basati su cloud. i clienti dovranno eseguire la migrazione a una soluzione di terze parti.
+La segreteria telefonica è principalmente una migrazione guidata da Microsoft; il coinvolgimento dell'amministratore e/o l'investimento potrebbe essere necessario per un sottoinsieme di clienti. L'operatore automatico è una migrazione guidata dall'amministratore. sarà necessario creare di nuovo gli alberi degli operatori automatici ExchUMO esistenti nel servizio cloud Operatore automatico cloud. I clienti che utilizzano una delle funzionalità exchUMO con un PBX di terze parti non verranno migrati nei servizi cloud di Skype perché non supportano sistemi PBX di terze parti. In questo [blog](https://techcommunity.microsoft.com/t5/Exchange-Team-Blog/New-date-for-discontinuation-of-support-for-Session-Border/ba-p/607853)è stato annunciato un piano di ritiro per il supporto di terze parti e i clienti di questo modello di distribuzione possono eseguire la migrazione degli utenti a una delle piattaforme/servizi Di comunicazioni unificate di Microsoft o acquisire una soluzione di segreteria telefonica e/o operatore automatico di terze parti per tali utenti. L'integrazione fax non è supportata nei servizi basati su cloud. i clienti dovranno eseguire la migrazione a una soluzione di terze parti.
 
-## <a name="who-is-affected"></a>Chi è interessato?
+## <a name="who-is-affected"></a>Who è interessato?
 
-I clienti che utilizzano una delle seguenti funzionalità del servizio Messaggistica unificata di Exchange sono interessati:
+I clienti che utilizzano una delle seguenti funzionalità del servizio Exchange messaggistica unificata online sono interessati:
 
 - Servizio segreteria telefonica
 - Operatore automatico servizio
@@ -57,14 +57,14 @@ Microsoft ha identificato diverse distribuzioni dei clienti che utilizzano le fu
 
 ### <a name="get-informed"></a>Informazioni
 
-Acquisire familiarità con l'annuncio [di blog e](https://blogs.technet.microsoft.com/exchange/2019/02/08/retiring-unified-messaging-in-exchange-online/) questo articolo per pianificare una migrazione uniforme per gli utenti. Vedi [Controllare la segreteria telefonica e le opzioni](https://support.office.com/article/check-skype-for-business-voicemail-and-options-2deea7f8-831f-4e85-a0d4-b34da55945a8) di Skype for Business per informazioni dettagliate sulle funzionalità della segreteria telefonica del sistema telefonico.  
+Acquisire familiarità con l'annuncio [di blog e](https://blogs.technet.microsoft.com/exchange/2019/02/08/retiring-unified-messaging-in-exchange-online/) questo articolo per pianificare una migrazione uniforme per gli utenti. Per [informazioni dettagliate sulle Sistema telefonico della segreteria telefonica,](https://support.office.com/article/check-skype-for-business-voicemail-and-options-2deea7f8-831f-4e85-a0d4-b34da55945a8) vedere Check Skype for Business voicemail and options.  
 
-### <a name="establish-a-skype-for-business-hybrid-topology"></a>Stabilire una topologia ibrida di Skype for Business
+### <a name="establish-a-skype-for-business-hybrid-topology"></a>Stabilire una Skype for Business ibrida
 
-Se non è stata stabilita una topologia ibrida di Skype for Business, è necessario farlo per consentire una migrazione uniforme degli utenti di segreteria telefonica. Per altri dettagli, vedi Configurare [Skype for Business ibrido.](../../SfbHybrid/hybrid/configure-federation-with-skype-for-business-online.md)
+Se non è stata stabilita una Skype for Business ibrida, è necessario eseguire questa operazione per consentire una migrazione uniforme degli utenti di segreteria telefonica. Per [ulteriori informazioni, vedere Configure Skype for Business hybrid.](../../SfbHybrid/hybrid/configure-federation-with-skype-for-business-online.md)
 
 > [!Note]
-> Non è necessario eseguire la migrazione degli utenti online per la migrazione del servizio di segreteria telefonica. Tuttavia, per consentire agli utenti locali di sfruttare il servizio di segreteria telefonica del sistema telefonico, è necessario stabilire una topologia ibrida.
+> Non è necessario eseguire la migrazione degli utenti online per la migrazione del servizio di segreteria telefonica. Tuttavia, per consentire agli utenti locali di sfruttare Sistema telefonico servizio di segreteria telefonica, è necessario stabilire una topologia ibrida.
 
 ### <a name="plan-your-auto-attendant-migration"></a>Pianificare la migrazione dell'operatore automatico
 
@@ -84,7 +84,7 @@ La migrazione della segreteria telefonica è guidata da Microsoft. Gli amministr
 Guarda un avviso nell'interfaccia di notifica dell'amministratore con ulteriori dettagli e una sequenza temporale sulla migrazione degli utenti. Le notifiche vengono inviate almeno 30 giorni prima del periodo di migrazione.
 
 > [!Note]
-> Se si riceve una notifica con la sequenza temporale di migrazione degli utenti e si desidera posticipare la migrazione per un motivo critico per l'azienda, è possibile farlo contattando il Supporto Tecnico Microsoft. Non è possibile posticipare la migrazione oltre la data di ritiro del 28 febbraio 2020. Per i clienti che potrebbero avere altre domande, contattare il team dell'account o il supporto Tecnico Microsoft. I clienti che usano già Microsoft 365 o Office 365 possono inviare un caso di supporto tramite l'interfaccia di amministrazione di Microsoft 365.
+> Se si riceve una notifica con la sequenza temporale di migrazione degli utenti e si desidera posticipare la migrazione per un motivo critico per l'azienda, è possibile farlo contattando il Supporto Tecnico Microsoft. Non è possibile posticipare la migrazione oltre la data di ritiro del 28 febbraio 2020. Per i clienti che potrebbero avere altre domande, contattare il team dell'account o il supporto Tecnico Microsoft. I clienti che usano Microsoft 365 o Office 365 possono inviare un caso di supporto tramite il interfaccia di amministrazione di Microsoft 365.
 
 ### <a name="consider-opting-in-for-a-planned-migration"></a>Prendere in considerazione la possibilità di acconsentire esplicitamente a una migrazione pianificata
 
@@ -94,26 +94,26 @@ Guarda un avviso nell'interfaccia di notifica dell'amministratore con ulteriori 
 - Matrice di funzionalità dei servizi basati su cloud di ExchUMO e Azure
 - Impatto sull'esperienza utente
 
-Quando si sceglie una migrazione gestita, non si riceverà una notifica pre-migrazione di 30 giorni nel centro messaggi del portale di amministrazione di Microsoft 365.
+Quando si sceglie una migrazione gestita, non si riceverà una notifica pre-migrazione di 30 giorni nel centro messaggi Microsoft 365 portale di amministrazione.
 
 Per acconsentire esplicitamente a una migrazione pianificata, inviare una richiesta di posta elettronica dall'indirizzo di posta elettronica dell'amministratore [cvm@microsoft.com](mailto:cvm@microsoft.com) con le informazioni seguenti:
 
 - Data preferita (martedì): le ondate di migrazione vengono eseguite ogni martedì. Selezionare una data di martedì non successiva al 3/12/2019.
  
-- ID tenant: numero di 32 caratteri in questo formato 0046728c-688a-4472-a38f-098fec60ac6x. È possibile trovare l'ID tenant nel portale di amministrazione di Microsoft 365 in Azure AD o utilizzando il cmdlet PowerShell seguente: `Get-CsTenant | Select ObjectId`
+- ID tenant: numero di 32 caratteri in questo formato 0046728c-688a-4472-a38f-098fec60ac6x. È possibile trovare l'ID tenant nel portale Microsoft 365 di amministrazione di Azure AD o usando il cmdlet PowerShell seguente:`Get-CsTenant | Select ObjectId`
 
 Una volta completata la migrazione del tenant, si riceverà una conferma tramite posta elettronica.
 
 ## <a name="auto-attendant-migration-guidelines"></a>Linee guida per la migrazione dell'operatore automatico
 
-Gli amministratori dell'organizzazione di Microsoft 365 e Office 365 devono creare di nuovo gli operatori automatici di messaggistica unificata di Exchange Online nel servizio Microsoft Cloud Operatore automatico e passare loro i numeri di telefono locali prima della data di ritiro del servizio UMO di Exchange del 28 febbraio 2020. Questa è la linea guida consigliata per eseguire correttamente la migrazione e testare i nuovi operatori automatici cloud. Se si dispone di un numero elevato di operatori automatici, è possibile utilizzare il Operatore automatico di messaggistica unificata di Exchange per gli script di migrazione [Operatore automatico cloud](https://github.com/NathanJBennett/ExUMAAMigrationToCloudAA) per semplificare la migrazione in blocco degli operatori automatici.
+gli amministratori dell'organizzazione di Microsoft 365 e Office 365 devono creare di nuovo gli operatori automatici di messaggistica unificata di Exchange Um Online nel servizio Microsoft Cloud Operatore automatico e passare loro i numeri di telefono locali prima della data di ritiro del servizio UMO di Exchange del 28 febbraio 2020. Questa è la linea guida consigliata per eseguire correttamente la migrazione e testare i nuovi operatori automatici cloud. Se si dispone di un numero elevato di operatori automatici, è possibile utilizzare il Operatore automatico di messaggistica unificata di Exchange per gli script di migrazione [di Cloud Operatore automatico](https://github.com/NathanJBennett/ExUMAAMigrationToCloudAA) per semplificare la migrazione in blocco degli operatori automatici.
 
 ### <a name="auto-attendant-setup"></a>Configurazione dell’operatore automatico
 
 Ti consigliamo vivamente di avviare la configurazione dei nuovi operatori automatici in anticipo per evitare problemi dell'ultimo minuto e acquisire familiarità con le funzionalità e l'esperienza del servizio Cloud Operatore automatico. Per gli operatori automatici che richiedono una o più funzionalità gap, è possibile creare e testare gli operatori automatici quando le funzionalità gap sono disponibili per prepararsi alla distribuzione. Per ulteriori informazioni sulle funzionalità gap, vedere [l'Appendice](#appendix).
 
-1. Utilizzare i cmdlet UMO di Exchange per esportare la configurazione degli operatori automatici esistenti utilizzando [Get-UMAutoAttendant](/powershell/module/exchange/unified-messaging/get-umautoattendant).  
-2. Utilizzare il cmdlet [Export-UMprompt](/powershell/module/exchange/unified-messaging/export-umprompt) in PowerShell di Exchange Online per esportare i file multimediali dei messaggi di saluto (se utilizzati) e convertirli in formato MP3.
+1. Utilizzare i Exchange UMO per esportare la configurazione degli operatori automatici esistenti utilizzando [Get-UMAutoAttendant](/powershell/module/exchange/unified-messaging/get-umautoattendant).  
+2. Utilizzare il cmdlet [Export-UMprompt](/powershell/module/exchange/unified-messaging/export-umprompt) in Exchange Online PowerShell per esportare i file multimediali dei messaggi di saluto (se utilizzati) e convertirli in .mp3 formato.
 3. Seguire le istruzioni in [Plan Cloud auto attendants](../../SfbHybrid/hybrid/plan-cloud-auto-attendant.md) e Set up a Cloud auto attendant to create auto [attendants](/microsoftteams/create-a-phone-system-auto-attendant) by using the Microsoft Teams admin center or Powershell.
 4. Rivedere i messaggi di saluto se le opzioni di menu sono cambiate.
 5. Configurare i trasferimenti ai Response Group utilizzando la soluzione alternativa "Operatore automatico trasferimento di chiamata a PSTN" nella [sezione Problemi](#known-issues) noti di questo articolo.  
@@ -121,7 +121,7 @@ Ti consigliamo vivamente di avviare la configurazione dei nuovi operatori automa
 
 ### <a name="cutover"></a>Completa
 
-1. Passare i numeri di telefono dagli operatori automatici UMO di Exchange ai nuovi operatori automatici.
+1. Passare dai numeri di telefono Exchange operatori automatici UMO ai nuovi operatori automatici.
 2. Spostare l'URI SIP dall'oggetto contatto all'account della risorsa.
 3. Testare e convalidare gli operatori automatici utilizzando i nuovi numeri di telefono assegnati.
 
@@ -131,14 +131,14 @@ Ti consigliamo vivamente di avviare la configurazione dei nuovi operatori automa
 
 | Servizio | Livello funzionalità | Funzionalità | Note  | Cloud VM/AA  | ExUMO |
 |---------|-------|--------|----|--------|------|
-| VM  | Funzionalità del servizio| Supporto PBX di terze parti    | Inclusione di tutte le funzionalità fornite a PBX di terze parti, ad esempio LWI (Message Waiting Indicator) utilizzando i messaggi di notifica SIP dalla messaggistica unificata di Exchange Online | N   | Y    |
-| VM | Funzionalità del servizio  | Supporto di Skype for Business Server   |  | Y | Y    |
-| VM | Funzionalità del servizio | Supportare Microsoft Teams|  | Y | N    |
+| VM  | Funzionalità del servizio| Supporto PBX di terze parti    | Inclusione di tutte le funzionalità fornite a PBX di terze parti, ad esempio LWI (Message Waiting Indicator) utilizzando i messaggi di notifica SIP Exchange messaggistica unificata online | N   | Y    |
+| VM | Funzionalità del servizio  | Supporto Skype for Business Server   |  | Y | Y    |
+| VM | Funzionalità del servizio | Supporto Microsoft Teams|  | Y | N    |
 | VM | Funzionalità del servizio | eDiscovery e blocco  | Per sicurezza e conformità  | Y | Y    |
-| VM | Funzionalità del servizio | Supporto delle regole di Exchange | Per sicurezza e conformità  | Y | Y    |
+| VM | Funzionalità del servizio | Exchange Supporto delle regole | Per sicurezza e conformità  | Y | Y    |
 | VM | Funzionalità utente | Accesso con accesso remoto PSTN  | Accesso sottoscrittore  | N | Y    |
 | VM | Funzionalità utente | Delegato  | e-mail chiamata senza chiamata  | N | Y    |
-| VM | Funzionalità utente | PSTN Outlook Voice Access   | Accesso sottoscrittore  | N | Y    |
+| VM | Funzionalità utente | PstN Outlook Voice Access   | Accesso sottoscrittore  | N | Y    |
 | VM | Funzionalità utente | Accesso esterno con un endpoint autenticato | Chiamata del servizio di segreteria telefonica per ascoltare i messaggi vocali e modificare le impostazioni della segreteria telefonica| Y | Y    |
 | VM | Funzionalità utente | Impostazione utente per disabilitare la segreteria telefonica   |  | Y | Y    |
 | VM | Funzionalità utente | Impostazione utente per modificare il messaggio di saluto personale  |  | Y | Y    |
@@ -176,10 +176,10 @@ Ti consigliamo vivamente di avviare la configurazione dei nuovi operatori automa
 | VM | Tenant-Admin funzionalità | Criteri segreteria telefonica    |   | Y | Y    |
 | VM | Tenant-Admin funzionalità | Amministrazione portale Web   |  | CY19   | Y    |
 | VM | Tenant-Admin funzionalità | PowerShell   |  | Y | Y    |
-| Messaggistica unificata | Funzionalità utente | Indicatore di messaggi in attesa (MWI) su telefoni certificati Skype for Business   |Può essere fornito dal partner telefonico  | No | Sì    |
+| Messaggistica unificata | Funzionalità utente | Indicatore di messaggi in attesa (MWI) Skype for Business telefoni certificati   |Può essere fornito dal partner telefonico  | No | Sì    |
 | AA | Funzionalità del servizio | AA support 3rd-party PBX    |  | N | Y    |
-| AA | Funzionalità del servizio | Supporto di Skype for Business Server   |  | Y | Y    |
-| AA | Funzionalità del servizio | Supportare Microsoft Teams|  | Y | N    |
+| AA | Funzionalità del servizio | Supporto Skype for Business Server   |  | Y | Y    |
+| AA | Funzionalità del servizio | Supporto Microsoft Teams|  | Y | N    |
 | AA | Funzionalità del servizio | Composizione per nome, input DTMF    |  | Y | Y    |
 | AA | Funzionalità del servizio | Composizione per nome, input vocale  |  | Y | Y    |
 | AA | Funzionalità del servizio | Supporto multilingue | Dettagli lingua qui: https://docs.microsoft.com/microsoftteams/what-are-phone-system-auto-attendants | Y | Y    |
@@ -193,7 +193,7 @@ Ti consigliamo vivamente di avviare la configurazione dei nuovi operatori automa
 | AA | Funzionalità del servizio | Selezione utente personalizzata  | Consentire ai chiamanti di raggiungere un elenco personalizzato di utenti dell'organizzazione| Y | Y    |
 | AA | Funzionalità del servizio | Trattamento dopo le ore e le festività  |  | Y | Y    |
 | AA | Funzionalità del servizio | Messaggio di saluto personalizzato con sintesi vocale  |  | Y | Y    |
-| AA | Funzionalità del servizio | Composizione estensione   | Raggiungere un utente componendo il proprio interno  | Y   | Y    |
+| AA | Funzionalità del servizio | Composizione del numero di interno   | Raggiungere un utente componendo il proprio interno  | Y   | Y    |
 | AA | Funzionalità del servizio | Cassetta postale per i chiamanti AA per lasciare un messaggio    |  | Y   | Y    |
 | AA | Funzionalità del servizio | Assegnazioni di più numeri PSTN a un AA|  | Y | Y    |
 | AA | Tenant-Admin funzionalità | Amministrazione portale Web   |  | Y | N    |
@@ -202,7 +202,7 @@ Ti consigliamo vivamente di avviare la configurazione dei nuovi operatori automa
 
 ### <a name="suggested-test-plan-and-post-migration-validation-for-admins"></a>Piano di test consigliato e convalida post-migrazione per gli amministratori
 
-Per verificare che gli utenti siano stati migrati in Cloud Voicemail, lasciare una segreteria telefonica a un utente e controllare il corpo del messaggio in Outlook. I messaggi di Cloud Voicemail hanno un piè di pagina che legge:
+Per verificare che gli utenti siano stati migrati a Cloud Voicemail, lasciare una segreteria telefonica a un utente e controllare il corpo del messaggio in Outlook. Cloud Voicemail i messaggi hanno un piè di pagina che legge:
 
 "Grazie per l'uso della trascrizione! Se non vedi una trascrizione sopra, è perché la qualità audio non era abbastanza chiara da trascrivere."
 
@@ -211,8 +211,8 @@ Quando si testa la funzionalità di segreteria telefonica dopo la migrazione deg
 - Convalidare l'accesso alla segreteria telefonica in tutti i tipi di endpoint dell'organizzazione, ad esempio app e telefoni IP.
 - Verificare con gli utenti di esempio che i messaggi di saluto personalizzati configurati siano riprodotti ai chiamanti.
 - Se l'organizzazione ha un requisito legale o di conformità per disabilitare la trascrizione per gli utenti, assicurarsi che sia disabilitata dopo la migrazione. Per ulteriori dettagli, vedere [Set up Cloud Voicemail](/microsoftteams/set-up-phone-system-voicemail).
-- Se in precedenza sono stati configurati criteri e regole delle macchine virtuali di Exchange, assicurarsi che siano efficaci.
-- Acquisire familiarità con i cmdlet di PowerShell del servizio Cloud Voicemail per modificare le impostazioni utente.  
+- Se in precedenza sono stati configurati Exchange criteri e regole della macchina virtuale, assicurarsi che siano efficaci.
+- Acquisire familiarità con i cmdlet di PowerShell del Cloud Voicemail per la modifica delle impostazioni utente.  
 
 ### <a name="user-experience-impact"></a>Impatto sull'esperienza utente
 
@@ -227,12 +227,12 @@ Di seguito è riportata una panoramica dell'esperienza di migrazione della segre
 |Trascrizione | Enhanced<br>La trascrizione CVM ha una frequenza di accuratezza molto più elevata e lingue supportate rispetto a ExchUMO. |
 |Impostazione utente | Nuova esperienza<br>Gli utenti possono modificare le proprie preferenze da un portale delle impostazioni utente (USP). Gli utenti possono accedere al proprio USP da un collegamento ipertestuale nella posta elettronica della segreteria telefonica o dal pulsante User-Settings sul client SFB. https://aka.ms/vmsettings.
  |Funzionalità| Per informazioni dettagliate, vedere il confronto tra set di funzionalità. |
-|Regole di Outlook per i messaggi della macchina virtuale | Nessuna modifica<br>Le regole create in precedenza verranno applicate ai messaggi CVM dopo la migrazione.
+|Outlook per i messaggi della macchina virtuale | Nessuna modifica<br>Le regole create in precedenza verranno applicate ai messaggi CVM dopo la migrazione.
  |
 
 ### <a name="user-management-and-provisioning-in-cvm"></a>Gestione e provisioning degli utenti in CVM
 
-I nuovi utenti di Skype for Business verranno automaticamente predisposti per la segreteria telefonica cloud al momento della creazione. Per eseguire il provisioning di nuovi utenti di segreteria telefonica non è necessaria alcuna licenza o lavoro amministrativo aggiuntivo. Vedi [Configurare Cloud Voicemail per](/microsoftteams/set-up-phone-system-voicemail) informazioni sulla gestione dei criteri per gli utenti esistenti e nuovi.
+Quando vengono Skype for Business nuovi utenti, verrà eseguito automaticamente il provisioning della segreteria telefonica cloud. Per eseguire il provisioning di nuovi utenti di segreteria telefonica non è necessaria alcuna licenza o lavoro amministrativo aggiuntivo. Vedere [Configurare i Cloud Voicemail](/microsoftteams/set-up-phone-system-voicemail) per informazioni sulla gestione dei criteri per gli utenti esistenti e nuovi.
 
 ### <a name="admin-auto-attendant-management-experience"></a>Esperienza di gestione Operatore automatico amministratore
 
@@ -250,16 +250,16 @@ Per trasferire una chiamata dell'operatore automatico a un numero di telefono PS
 
 #### <a name="shared-mailbox-is-still-accessible"></a>La cassetta postale condivisa è ancora accessibile
 
-Una cassetta postale condivisa configurata utilizzando la messaggistica unificata di Exchange Online continua a ricevere messaggi dopo la migrazione a CVM ed essere accessibile agli utenti tramite Outlook. Tuttavia, l'accesso per modificare i messaggi di saluto di queste cassette postali non sarà disponibile dopo la migrazione a CVM. I clienti con cassette postali condivise che vengono utilizzate per acquisire i chiamanti degli operatori automatici devono sfruttare le funzionalità Diario automatico e Code di chiamata Cassette postali condivise una volta rilasciate (ETA ottobre 2019).
+Una cassetta postale condivisa configurata Exchange messaggistica unificata online continua a ricevere messaggi dopo la migrazione a CVM ed essere accessibile agli utenti tramite Outlook. Tuttavia, l'accesso per modificare i messaggi di saluto di queste cassette postali non sarà disponibile dopo la migrazione a CVM. I clienti con cassette postali condivise che vengono utilizzate per acquisire i chiamanti degli operatori automatici devono sfruttare le funzionalità Diario automatico e Code di chiamata Cassette postali condivise una volta rilasciate (ETA ottobre 2019).
   
-#### <a name="username-is-not-using-skype-for-business-banner-displays"></a>Visualizzazione del banner "Il nome utente non usa Skype for Business"
+#### <a name="username-is-not-using-skype-for-business-banner-displays"></a>Banner "Nome utente non Skype for Business"
 
-Il servizio CVM si basa sull'infrastruttura di Microsoft Teams e le chiamate provenienti da un client Skype for Business potrebbero causare la visualizzazione di un banner di informazioni sul client che legge: "Il nome utente non utilizza Skype for Business. Per un'esperienza più ricca, passa a Teams o avvia una riunione Skype."
-Assicurati di aggiornare il client Skype for Business degli utenti all'aggiornamento più recente del client C2R per impedire la visualizzazione di questo banner.
+Il servizio CVM si basa sull'infrastruttura Microsoft Teams e le chiamate provenienti da un client Skype for Business potrebbero causare la visualizzazione di un banner di informazioni sul client con la seguente informazione: "Nome utente non Skype for Business. Per un'esperienza più ricca, passa a Teams o avvia una Skype riunione."
+Assicurati di aggiornare il client Skype for Business degli utenti all'aggiornamento client C2R più recente per impedire la visualizzazione di questo banner.
   
 #### <a name="set-up-voice-mail-takes-you-to-owa"></a>"Configurazione casella vocale" consente di OWA
 
-Se  si fa clic su Configura casella vocale dal client, i clienti di Skype for Business Server 2015/2013 continueranno a passare alla pagina del portale di Office Web Access (OWA) dopo la migrazione a CVM. Tutte le impostazioni sono state rimosse dalla scheda Segreteria telefonica in OWA e verrà visualizzato un banner con un collegamento di reindirizzamento per consentire agli utenti di accedere al portale delle impostazioni utente CVM.
+Se  si fa clic su Configura casella vocale dal client, i clienti di Skype for Business Server 2015/2013 continueranno Skype for Business Server accedere alla pagina del portale di Office Web Access (OWA) dopo la migrazione a CVM. Tutte le impostazioni sono state rimosse dalla scheda Segreteria telefonica in OWA e verrà visualizzato un banner con un collegamento di reindirizzamento per consentire agli utenti di accedere al portale delle impostazioni utente CVM.
 
 #### <a name="changing-greeting-remotely"></a>Modifica del messaggio di saluto in remoto
 

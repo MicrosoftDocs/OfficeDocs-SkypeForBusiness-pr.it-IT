@@ -16,12 +16,12 @@ ms.reviewer: ''
 description: Roadmap ad articoli su come gestire e monitorare i Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1682565d015d104ca4a60d2770e526453bea535a
-ms.sourcegitcommit: 3500faff11f76fdff7c645931e6704f2d33f36a3
+ms.openlocfilehash: e3c30bb4aeba2866bcce042c3ce11840ec8e9d68e73386bfcb4f3b434a136506
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071044"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279703"
 ---
 # <a name="manage-and-monitor-teams"></a>Gestire e monitorare i Teams
 
@@ -43,7 +43,7 @@ Questo articolo fornisce una roadmap per il contenuto necessario per gestire e m
 
 - [Monitorare e gestire la qualità delle chiamate](monitor-call-quality-qos.md). Leggere questo articolo per informazioni su come usare gli strumenti disponibili per il monitoraggio e il miglioramento della qualità delle chiamate per l'organizzazione.
 
-- [Report nell'interfaccia Teams e](teams-analytics-and-reports/teams-reporting-reference.md) Report [nell'Microsoft 365 di amministrazione.](teams-activity-reports.md) Leggere questi articoli per informazioni sui report disponibili e su come usarli per monitorare l'utilizzo Teams e l'integrità dei servizi.
+- [Report nell'interfaccia Teams e](teams-analytics-and-reports/teams-reporting-reference.md) [Report nel interfaccia di amministrazione di Microsoft 365](teams-activity-reports.md). Leggere questi articoli per informazioni sui report disponibili e su come usarli per monitorare l'utilizzo Teams e l'integrità dei servizi.
 
 - [Gestire il servizio e](teams-analytics-and-reports/teams-reporting-reference.md) [migliorare il servizio](upgrade-enhance-my-service.md). Leggere questi articoli per linee guida e roadmap su come gestire e migliorare il servizio Teams assistenza.
 

@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: e3775bd6-682c-4f62-aafc-974fe3a65c61
-description: Esporta la configurazione di Skype for Business Cloud Connector Edition in un file locale nel server host Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: cd0745081e3f069aaf58c9ffdbf24494bfb3ece1
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Esporta la Skype for Business Cloud Connector Edition in un file locale nel server host Skype for Business Cloud Connector Edition locale.
+ms.openlocfilehash: f34f8454dfc3129be50b26114f71fdeee4a4b633f66ca9f80dc621c51c5af6ad
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41801466"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54288840"
 ---
 # <a name="export-ccconfiguration"></a>Export-CcConfiguration
  
-Esporta la configurazione di Skype for Business Cloud Connector Edition in un file locale nel server host Skype for Business Cloud Connector Edition.
+Esporta la Skype for Business Cloud Connector Edition in un file locale nel server host Skype for Business Cloud Connector Edition locale.
   
 ```powershell
 Export-CcConfiguration [-Path] <String> [<CommonParameters>]
@@ -33,7 +33,7 @@ Export-CcConfiguration [-Path] <String> [<CommonParameters>]
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente il parametro Path viene impostato come percorso completo del file e le configurazioni vengono esportate in tale file.
+Nell'esempio seguente il parametro Path viene impostato come percorso di file completo ed esporta le configurazioni in tale file.
   
 ```powershell
 Export-CcConfiguration -Path "C:\test\CloudConnector.ini" 
@@ -42,14 +42,14 @@ Export-CcConfiguration -Path "C:\test\CloudConnector.ini"
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="Examples"> </a>
 
-Il cmdlet Export-CcConfiguration consente di salvare la configurazione di Cloud Connector in un file in un percorso selezionato. Questo comando è stato introdotto in Cloud Connector Edition versione 2.0.
+Il cmdlet Export-CcConfiguration consente di salvare la configurazione del connettore cloud in un file in un percorso selezionato. Questo comando è stato introdotto in Cloud Connector Edition versione 2.0.
   
 ## <a name="parameters"></a>Parametri
 <a name="Examples"> </a>
 
 |**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-|Percorso  <br/> |Obbligatorio  <br/> |System.String  <br/> |Percorso completo del file in cui verranno archiviate le configurazioni di Cloud Connector.  <br/> |
+|Percorso  <br/> |Obbligatorio  <br/> |System.String  <br/> |Percorso completo del file in cui verranno archiviate le configurazioni del connettore cloud.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="Examples"> </a>

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb84f5b6-c991-4893-bdbf-f195b4b7d28e
 description: Configurare, popolare e pubblicare il database delle località di E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 70158864446c12b2e7636a2962aced05d87c49a0
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 9e97c959af9dc88ff43fd93e734e21bae051583206be3dd89390dcae59c6ca0c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54326602"
 ---
 # <a name="configure-the-location-database-in-skype-for-business-server"></a>Configurare il database delle località in Skype for Business Server
  
@@ -31,9 +31,9 @@ Per consentire ai client di individuare automaticamente la propria posizione in 
   
 Per configurare il database delle località, eseguire le attività seguenti:
   
-- Popolare il database con il mapping degli elementi di rete ai percorsi. Se si utilizza un gateway ELIN (Emergency Location Identification Number), è necessario includere il numero ELIN nel \<CompanyName\> campo.
+- Popolare il database con il mapping degli elementi di rete ai percorsi. Se si utilizza un gateway ELIN (Emergency Location Identification Number), è necessario includere l'ELIN nel \<CompanyName\> campo.
     
-    Se non si popola il database  delle località e la posizione necessaria nei criteri percorso è impostata su **Sì** o Dichiarazione di non **responsabilità,** il client chiederà all'utente di immettere manualmente una posizione.
+    Se non si popola il database  delle località e la posizione richiesta nei criteri percorso è impostata su **Sì** o Dichiarazione di non **responsabilità,** il client chiederà all'utente di immettere manualmente una posizione.
     
 - Convalidare gli indirizzi in base allo stradario generale gestito dal provider di servizi di emergenza.
     
@@ -41,11 +41,11 @@ Per configurare il database delle località, eseguire le attività seguenti:
     
 ## <a name="populate-the-location-database"></a>Popolare il database delle località
 
-Per individuare automaticamente i client all'interno di una rete, è innanzitutto necessario popolare il database delle località con una wiremap di rete, che esegue il mapping degli elementi di rete agli indirizzi civici (ovvero alla via). Puoi usare subnet, punti di accesso wireless, commutatori e porte per definire la wiremap.
+Per individuare automaticamente i client all'interno di una rete, è innanzitutto necessario popolare il database delle località con una wiremap di rete, che mappa gli elementi di rete a indirizzi civici (ovvero via). Puoi usare subnet, punti di accesso wireless, commutatori e porte per definire la wiremap.
   
 È possibile aggiungere indirizzi al database delle località singolarmente o in blocco utilizzando un file CSV contenente i formati di colonna descritti nella tabella seguente.
   
-Se si utilizza un gateway ELIN (Emergency Location Identification Number), includere il numero ELIN nel campo **CompanyName** per ogni posizione. È possibile includere più ELAN per ogni posizione, ognuno separato da un punto e virgola.
+Se si utilizza un gateway ELIN (Emergency Location Identification Number), includere eLIN nel **campo CompanyName** per ogni posizione. È possibile includere più ELAN per ogni posizione, ognuno separato da un punto e virgola.
   
 |**Elemento Network**|**Colonne obbligatorie**|
 |:-----|:-----|
@@ -62,7 +62,7 @@ Se si utilizza un gateway ELIN (Emergency Location Identification Number), inclu
    Set-CsLisSubnet -Subnet 157.56.66.0 -Description "Subnet 1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
    ```
 
-    Per i gateway ELIN, inserire il numero ELIN nel campo CompanyName. È possibile includere più di un ELIN. Ad esempio:
+    Per i gateway ELIN, inserire l'ELIN nel campo CompanyName. È possibile includere più di un ELIN. Ad esempio:
     
    ```powershell
    Set-CsLisSubnet -Subnet 157.56.66.0 -Description "Subnet 1" -Location Location1 -CompanyName 425-555-0100; 425-555-0200; 425-555-0300 -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
@@ -88,7 +88,7 @@ Se si utilizza un gateway ELIN (Emergency Location Identification Number), inclu
    $g | Set-CsLisWirelessAccessPoint
    ```
 
-3. Eseguire il cmdlet seguente per aggiungere le posizioni del commutatore al database delle posizioni.
+3. Eseguire il cmdlet seguente per aggiungere percorsi di commutazione al database delle posizioni.
     
    ```powershell
    Set-CsLisSwitch -ChassisID 0B-23-CD-16-AA-BB -Description "Switch1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
@@ -120,7 +120,7 @@ Se si utilizza un gateway ELIN (Emergency Location Identification Number), inclu
 
 ### <a name="to-validate-addresses-located-in-the-location-database"></a>Per convalidare gli indirizzi presenti nel database delle posizioni
 
-1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+1.  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Eseguire i seguenti cmdlet per configurare la connessione del provider dei servizi di emergenza.
     
@@ -145,7 +145,7 @@ Se si utilizzano gateway ELIN (Emergency Location Identification Number), è nec
   
 ### <a name="to-publish-the-location-database"></a>Per pubblicare il database delle posizioni
 
--  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+-  Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 - Per pubblicare il database delle posizioni, eseguire il cmdlet seguente.
     

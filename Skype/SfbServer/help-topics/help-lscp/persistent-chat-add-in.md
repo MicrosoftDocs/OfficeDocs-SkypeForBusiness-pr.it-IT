@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 66124a70-67e8-4bda-9da5-8ab13afccf49
 description: È possibile utilizzare la sezione Componente aggiuntivo della pagina Persistent Chat per associare GLI URL alle chat room di Persistent Chat. Questi URL vengono visualizzati nel client nella chat room nel riquadro di estendibilità della conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori di chat devono associare le chat room a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
-ms.openlocfilehash: c90383a26c658e8da73df09368a5d8fe04cfe69b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 179d3728deb11b16ac60d98f1c3815b43502e4047f01ab70ea046cf6f66baa99
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51099502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278804"
 ---
 # <a name="persistent-chat-add-in"></a>Componente aggiuntivo di Chat persistente
 
@@ -28,13 +28,13 @@ ms.locfileid: "51099502"
 
 I componenti aggiuntivi vengono utilizzati per estendere l'esperienza in chat. Un componente aggiuntivo tipico può includere un URL che punta a un'applicazione Silverlight che intercetta quando un ticker di azioni viene pubblicato in una chat room e mostra la cronologia delle azioni nel riquadro di estendibilità. Tra gli altri esempi c'è l'integrazione di un URL OneNote 2013 nella chat room in forma di componente aggiuntivo, per includere un contesto condiviso, ad esempio "Di facile riconoscibilità" o "Argomento del giorno".
 
-Per creare componenti aggiuntivi per le chat room di Persistent Chat, vedere [Configure add-ins for Persistent Chat rooms in Skype for Business Server 2015.](../../manage/persistent-chat/configure-add-ins.md) Gli amministratori di Persistent Chat possono creare componenti aggiuntivi utilizzando il Pannello di controllo o Windows PowerShell cmdlet.
+Per creare componenti aggiuntivi per chat room persistenti, vedere [Configure add-ins for Persistent Chat rooms in Skype for Business Server 2015.](../../manage/persistent-chat/configure-add-ins.md) Gli amministratori di Persistent Chat possono creare componenti aggiuntivi utilizzando il Pannello di controllo o Windows PowerShell cmdlet.
 
 ## <a name="tasks-that-you-can-perform"></a>Attività eseguibili
 
 Nella pagina **Componente aggiuntivo** è possibile eseguire le attività seguenti:
 
-- [Configurare i componenti aggiuntivi per le chat room di Persistent Chat in Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md)
+- [Configurare i componenti aggiuntivi per le chat room di Persistent Chat Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md)
 
 ## <a name="to-configure-add-ins-for-chat-rooms"></a>Per configurare componenti aggiuntivi per chat room
 
@@ -42,7 +42,7 @@ Nei seguenti elenchi vengono descritti i menu, i comandi, i campi e le propriet�
 
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator accedere a uno qualsiasi dei computer della distribuzione interna.
 
-2. Dal menu **Start** seleziona il Pannello di controllo di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Pannello di controllo, vedere [Open Lync Server Administrative Tools](/previous-versions/office/lync-server-2013/lync-server-2013-open-lync-server-administrative-tools).
+2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Pannello di controllo, vedere [Open Lync Server Administrative Tools](/previous-versions/office/lync-server-2013/lync-server-2013-open-lync-server-administrative-tools).
 
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Componente aggiuntivo**.
 
@@ -62,4 +62,4 @@ Nei seguenti elenchi vengono descritti i menu, i comandi, i campi e le propriet�
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere Plan [for Persistent Chat Server in Skype for Business Server 2015,](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md) [Deploy Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015.](../../manage/persistent-chat/persistent-chat.md)
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità del server Chat persistente, vedere [Plan for Persistent Chat Server in Skype for Business Server 2015,](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)Deploy Persistent Chat Server in Skype for Business Server [2015](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md)e [Manage Persistent Chat Server in Skype for Business Server 2015.](../../manage/persistent-chat/persistent-chat.md)

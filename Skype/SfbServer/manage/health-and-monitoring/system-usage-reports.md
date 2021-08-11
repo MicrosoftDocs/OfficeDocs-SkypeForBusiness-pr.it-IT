@@ -11,25 +11,25 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 187d316d-2456-417e-b636-05527a18ef06
-description: "Riepilogo: informazioni sui report sull'utilizzo del sistema in Skype for Business Server."
-ms.openlocfilehash: acebebaa88c95a879b4287c5bc9dd5eebdeb7b67
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni sui report di utilizzo del sistema in Skype for Business Server.'
+ms.openlocfilehash: 05704b507e52785e0b34c69616fce338a0e6c3a271e72d4f15eb5a126771bb11
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280061"
 ---
 # <a name="system-usage-reports-in-skype-for-business-server"></a>Report sull'utilizzo del sistema in Skype for Business Server
  
-**Riepilogo:** Informazioni sui report sull'utilizzo del sistema in Skype for Business Server.
+**Riepilogo:** Informazioni sui report di utilizzo del sistema in Skype for Business Server.
   
-I report sull'utilizzo del sistema forniscono informazioni sull'utilizzo del sistema basate sui dati di registrazione dettagli chiamata (CDR) raccolti da Skype for Business Server.
+I report sull'utilizzo del sistema forniscono informazioni sull'utilizzo del sistema basate sui dati di registrazione dettagli chiamata raccolti dal Skype for Business Server.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Rapporto registrazione utenti in Skype for Business Server](user-registration-report.md)
+- [Rapporto di registrazione utente in Skype for Business Server](user-registration-report.md)
     
-    Fornisce un riepilogo della connettività utente alla distribuzione di Skype for Business Server in base agli eventi di registrazione, ad esempio gli accessi degli utenti. Il report consente di visualizzare gli accessi sia interni che esterni e di confrontare il numero di utenti che hanno effettuato l'accesso a Skype for Business Server con il numero di utenti che hanno effettivamente utilizzato il servizio durante l'accesso.
+    Fornisce un riepilogo della connettività utente alla distribuzione Skype for Business Server in base a eventi di registrazione quali gli accessi degli utenti. Il report consente di visualizzare gli accessi interni ed esterni e di confrontare il numero di utenti che hanno eseguito l'accesso a Skype for Business Server con il numero di utenti che hanno effettivamente utilizzato il servizio mentre erano connessi.
     
 - [Rapporto riepilogativo attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-summary-report.md)
     
@@ -47,9 +47,9 @@ I report sull'utilizzo del sistema forniscono informazioni sull'utilizzo del sis
     
     Fornisce un riepilogo dell'utilizzo di Response Group. L'applicazione Response Group consente di instradare automaticamente le chiamate telefoniche a entità quali un help desk o una linea di assistenza clienti.
     
-- [Rapporto inventario telefoni IP in Skype for Business Server](ip-phone-inventory-report.md)
+- [Report inventario Telefono ip in Skype for Business Server](ip-phone-inventory-report.md)
     
-    Fornisce informazioni sui telefoni IP attualmente in uso nell'organizzazione. Il rapporto si basa sulle registrazioni telefoniche e sugli accessi. Non deve essere considerato un inventario completo. Ad esempio, è possibile che siano stati rimossi i telefoni ancora elencati nel rapporto perché hanno eseguito l'accesso almeno una volta. Allo stesso modo, potresti avere anche nuovi telefoni che non vengono visualizzati nel rapporto semplicemente perché gli utenti non hanno ancora effettuato l'accesso a Skype for Business Server con i nuovi telefoni.
+    Fornisce informazioni sui telefoni IP attualmente in uso nell'organizzazione. Il report si basa sulle registrazioni telefoniche e sugli accessi. Non deve essere considerato un inventario completo. Ad esempio, potresti aver rimosso i telefoni ancora elencati nel report perché hanno eseguito l'accesso almeno una volta. Allo stesso modo, potresti anche avere nuovi telefoni che non vengono visualizzati nel report semplicemente perché gli utenti non hanno ancora effettuato l'accesso a Skype for Business Server con i nuovi telefoni.
     
 - [Rapporto controllo di ammissione di chiamata in Skype for Business Server](call-admission-control-report.md)
     

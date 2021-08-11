@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: ff21cecb-5035-48fd-9705-11ea81ce7df6
-description: Il cmdlet Remove-CcLegacyServerCertificate rimuove i certificati del server legacy nell'archivio di gestione centrale, nel Mediation Server e nel server perimetrale dopo aver eseguito i cmdlet Renew-CcCACertificate o Renew CcServerCertificate.
-ms.openlocfilehash: f3fe17e8c6c559d1a2c8ab14543807f82c4b6813
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Remove-CcLegacyServerCertificate rimuove i certificati server legacy nell'archivio di gestione centrale, nel Mediation Server e nel server perimetrale dopo aver eseguito i cmdlet Renew-CcCACertificate o Renew CcServerCertificate.
+ms.openlocfilehash: 6c1665d0c21e5afd25ed630fc1da4f1987264d9325fec2058981fe91a1edc0bb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54288734"
 ---
 # <a name="remove-cclegacyservercertificate"></a>Remove-CcLegacyServerCertificate
  
-Il cmdlet Remove-CcLegacyServerCertificate rimuove i certificati del server legacy nell'archivio di gestione centrale, nel Mediation Server e nel server perimetrale dopo aver eseguito i cmdlet Renew-CcCACertificate o Renew CcServerCertificate.
+Il cmdlet Remove-CcLegacyServerCertificate rimuove i certificati server legacy nell'archivio di gestione centrale, nel Mediation Server e nel server perimetrale dopo aver eseguito i cmdlet Renew-CcCACertificate o Renew CcServerCertificate.
   
 ```powershell
 Remove-CcLegacyServerCertificate [[-Roles] <array> {Cms | MS | Edge}] 
@@ -33,7 +33,7 @@ Remove-CcLegacyServerCertificate [[-Roles] <array> {Cms | MS | Edge}]
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente vengono rimossi i certificati legacy emessi per l'archivio di gestione centrale, il Mediation Server e il server perimetrale dopo il rinnovo dei certificati:
+Nell'esempio seguente vengono rimossi i certificati legacy emessi per l'archivio di gestione centrale, il Mediation Server e il server perimetrale dopo aver rinnovato i certificati:
   
 ```powershell
 Remove-CcLegacyServerCertificate
@@ -62,7 +62,7 @@ Nessuna. Il cmdlet Remove-CcLegacyServerCertificate non accetta input da pipelin
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

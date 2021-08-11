@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: c8eeb387-dc1e-44e0-bbf9-a566f8bda551
 description: "Riepilogo: informazioni sull'operazione Get Cube, che fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: a3527f21bc1751c23bba088ae06c3e6702cb8c8e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: bc65a9d6886b9375a799c62a6abaefd33738dae5fd8a4d4aee83a536d9a82948
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278724"
 ---
 # <a name="get-cube"></a>Get Cube
  
@@ -45,9 +45,9 @@ L'operazione Get Cube restituisce l'elenco delle dimensioni e delle misure dispo
   
  **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
   
- **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
+ **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 > [!NOTE]
 > In questo esempio vengono mostrati solo i primi due elementi di ogni gruppo di elementi Cube. 
@@ -93,10 +93,10 @@ L'operazione Get Cube restituisce l'elenco delle dimensioni e delle misure dispo
 }
 ```
 
- *INDICATORI KPI*  - Riservato. La sezione KPI di un payload di richiesta consente all'operazione Esegui query di restituire i valori per gli indicatori KPI definiti nel cubo. Nel cubo QoE non sono ancora presenti indicatori KPI.
+ *INDICATORI KPI*  - Riservato. La sezione INDICATORI KPI di un payload di richiesta consente all'operazione Esegui query di restituire valori per gli indicatori KPI definiti nel cubo. Nel cubo QoE non sono ancora presenti indicatori KPI.
   
  *Dimensioni:*  elenco di dimensioni che possono essere utilizzate nelle sezioni Filtri e Dimensioni di un payload di richiesta per l'operazione Esegui query. Per utilizzare una dimensione in un'espressione di filtro, è necessario specificare un membro di dimensione, che può essere ottenuto utilizzando l'operazione Get Dimension Members.
   
- *Misurazioni-*  Elenco di misurazioni che possono essere utilizzate nella sezione Misurazioni di un payload di richiesta per l'operazione Esegui query.
+ *Misurazioni:*  elenco delle misurazioni che possono essere utilizzate nella sezione Misurazioni di un payload di richiesta per l'operazione Esegui query.
   
 

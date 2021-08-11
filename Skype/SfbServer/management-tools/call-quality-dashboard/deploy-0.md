@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 287f64f5-0f8a-455a-8979-7b34bf0217bb
 description: 'Riepilogo: informazioni sul processo di distribuzione per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 1f59209575284035fcdca52e4f18220aa05337af
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: eaabfe4700a2466c469776fcd839beab358ed763ede49c96a72d0be5f10f660c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51114112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278744"
 ---
 # <a name="deploy-call-quality-dashboard-for-skype-for-business-server"></a>Distribuire il dashboard qualità delle chiamate per Skype for Business Server
  
@@ -38,7 +38,7 @@ Call Quality Dashboard (CQD) è costituito da tre componenti principali:
   
 Il processo di installazione dell'archivio QoE prevede la creazione del database di archiviazione QoE, la distribuzione di una stored procedure di SQL Server che sposterà i dati dal database delle metriche QoE di origine nel database di archiviazione QoE e la configurazione del processo agente di SQL Server per l'esecuzione della stored procedure a intervalli regolari. 
   
-La distribuzione del cubo ottiene informazioni dall'utente in cui si trova l'archivio QoE, distribuisce il cubo e configura un processo agente SQL Server normale che aggiorna il cubo a intervalli regolari.
+La distribuzione del cubo ottiene informazioni dall'utente in cui si trova l'archivio QoE, distribuisce il cubo e imposta un processo agente SQL Server normale che aggiorna il cubo a intervalli regolari.
   
 L'installazione del portale crea un database repository in cui viene archiviato il mapping degli utenti CQD ai report/query di ogni utente. Viene quindi impostata un'applicazione Web IIS, ovvero il dashboard in cui gli utenti possono visualizzare un set predefinito di report, nonché personalizzare e creare query personalizzate per visualizzare i dati del cubo. L'installazione del portale crea due applicazioni Web aggiuntive che espongono le API per gli utenti per accedere al repository e al cubo a livello di programmazione. Queste API vengono usate anche internamente dal dashboard.
   
@@ -58,7 +58,7 @@ La distribuzione del dashboard qualità delle chiamate implica la configurazione
 
 1. Copiare il CallQualityDashboard.msi nel computer in cui deve essere installato il componente del database di archiviazione di CQD (questo è il computer in cui è SQL Server installato). 
     
-2. Eseguire il file MSI (Windows richiederà l'esecuzione con privilegi di amministratore, eseguire questa operazione). 
+2. Eseguire il file MSI (Windows verrà richiesto di eseguire con privilegi di amministratore, eseguire questa operazione). 
     
 3. Accettare l'EULA.
     
@@ -68,7 +68,7 @@ La distribuzione del dashboard qualità delle chiamate implica la configurazione
     
 6. Nella pagina Configurazione archivio QoE fornire le informazioni seguenti:
     
-   - **QoE Metrics SQL Server:** SQL Server nome dell'istanza per la posizione del database delle metriche QoE (questa sarà l'origine dati).
+   - **QoE Metrics SQL Server: SQL Server** instance name for where the QoE Metrics DB is located (this will be the data source).
     
    - **QoE Archive SQL Server Name:** Campo di sola lettura e fisso al nome di dominio completo del computer locale. Il database di archiviazione può essere installato solo nel computer locale.
     
@@ -78,50 +78,50 @@ La distribuzione del dashboard qualità delle chiamate implica la configurazione
     
    - **Directory file di database:** Percorso in cui devono essere posizionati i file di database (con estensione mdf e ldf) per il database di archiviazione. Dovrebbe essere in un'unità (HDD2 nella configurazione hardware consigliata) separata dal sistema operativo. Si noti che, poiché i nomi dei file sono corretti nell'installazione, per evitare potenziali conflitti, è consigliabile utilizzare una directory vuota senza file.
     
-   - **Usa più partizioni:** Il valore predefinito è "Multiple partition", che richiede l'edizione Business Intelligence o Enterprise di SQL Server. Per Edizione Standard, selezionare l'opzione "Partizione singola". Tenere presente che le prestazioni di elaborazione dei cubi possono essere influenzate se viene utilizzata una singola partizione.
+   - **Usa più partizioni:** Il valore predefinito è "Multiple partition", che richiede l'edizione business intelligence o Enterprise'edizione di SQL Server. Per Edizione Standard, selezionare l'opzione "Partizione singola". Tenere presente che le prestazioni di elaborazione dei cubi possono essere influenzate se viene utilizzata una singola partizione.
     
      > [!NOTE]
      > La selezione dell'opzione Usa più partizioni non può essere modificata al termine dell'installazione. Per modificarla, la funzionalità Cubo deve essere prima disinstallata e quindi reinstallata utilizzando l'opzione "Cambia" nel Pannello di controllo. 
   
    - **Directory dei file di partizione:** Percorso in cui devono essere posizionate le partizioni per il database di archiviazione QoE. Dovrebbe essere in un'unità (HDD3 nella configurazione hardware consigliata) separata dall'unità del sistema operativo e SQL file di registro del database. Si noti che, poiché i nomi dei file sono corretti nell'installazione, per evitare potenziali conflitti, è consigliabile utilizzare una directory vuota senza file.
     
-   - **SQL utente processo agente - Nome utente &amp; Password:** nome e password dell'account del servizio di dominio (mascherati) che verranno utilizzati per eseguire il passaggio "QoE Archive Data" del processo agente di SQL Server (che eseguirà la stored procedure per recuperare i dati dal database delle metriche QoE nel DATABASE di archiviazione, quindi questo account deve disporre dell'accesso in lettura al database delle metriche QoE, come indicato nella sezione Account. Questo account deve inoltre disporre di un account di accesso nell'istanza di QoE Archive SQL Server Instance).
+   - **SQL utente processo agente - Nome utente &amp; Password:** nome e password dell'account del servizio di dominio (mascherati) che verranno utilizzati per eseguire il passaggio "QoE Archive Data" del processo agente di SQL Server (che eseguirà la stored procedure per recuperare i dati dal database delle metriche QoE nel database di archiviazione, quindi questo account deve disporre dell'accesso in lettura al database delle metriche QoE, come indicato nella sezione Account. Questo account deve inoltre disporre di un account di accesso nell'SQL Server QoE Archive).
     
      > [!NOTE]
-     > L'account con cui viene eseguita l'istanza di SQL Server, ad esempio NT SERVICE\MSSQLSERVER, deve disporre dell'accesso/autorizzazione alle directory indicate in precedenza per l'esito positivo dell'installazione. Per informazioni dettagliate, vedere [Configure File System Permissions for Database Engine Access](/previous-versions/sql/sql-server-2012/jj219062(v=sql.110))
+     > L'account con cui viene eseguita l'istanza di SQL Server, ad esempio NT SERVICE\MSSQLSERVER, deve disporre dell'accesso/autorizzazione alle directory indicate in precedenza perché l'installazione abbia esito positivo. Per informazioni dettagliate, vedere [Configure File System Permissions for motore di database Access](/previous-versions/sql/sql-server-2012/jj219062(v=sql.110))
   
 7. Facendo clic su Avanti, il programma di installazione eseguirà i controlli prerequisiti e comunichi se si verificano problemi. Quando vengono superi tutti i controlli dei prerequisiti, il programma di installazione passerà alla pagina Configurazione cubo. 
     
     > [!NOTE]
-    > Se il programma di installazione visualizza un messaggio di avviso che indica che il servizio agente di SQL Server per l'istanza di SQL Server di archiviazione QoE non è in esecuzione, l'installazione può procedere, ma dopo l'installazione assicurarsi che il servizio agente di SQL sia in esecuzione e impostare il tipo di avvio su Automatico in modo che venga eseguito il processo pianificato. 
+    > Se il programma di installazione visualizza un messaggio di avviso che indica che il servizio agente di SQL Server per l'istanza di QoE Archive SQL Server non è in esecuzione, è possibile procedere con l'installazione, ma dopo l'installazione assicurarsi che il servizio agente SQL sia in esecuzione e impostare il tipo di avvio su Automatico in modo che venga eseguito il processo pianificato. 
   
 8. Nella pagina Configurazione cubo fornire le informazioni seguenti:
     
    - **QoE Archive SQL Server Name:** Campo di sola lettura e fisso al nome di dominio completo del computer locale. Il cubo può essere installato solo dal computer che dispone del database Archive QoE (nota. Il cubo stesso può essere installato in un computer remoto. Vedi sotto)
     
-   - **QoE Archive SQL Server Instance:** SQL Server nome dell'istanza per la posizione del database di archiviazione QoE. Per specificare un'istanza SQL Server predefinita, lasciare vuoto questo campo. Per specificare un'SQL Server denominata, immettere il nome dell'istanza (ad esempio, il nome dopo " \" ). Se per l'installazione è stato selezionato il componente di archiviazione QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio QoE.
+   - **QoE Archive SQL Server Instance: SQL Server** instance name for where the QoE Archive DB is located. Per specificare un'istanza SQL Server predefinita, lasciare vuoto questo campo. Per specificare un'SQL Server denominata, immettere il nome dell'istanza (ad esempio, il nome dopo " \" ). Se per l'installazione è stato selezionato il componente di archiviazione QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio QoE.
     
-   - **Cube Analysis Server:** SQL Server nome dell'istanza di Analysis Services in cui deve essere creato il cubo. Può trattarsi di un computer diverso, ma l'utente che installa deve essere membro degli amministratori del server dell'istanza di Analysis Services di SQL Server di destinazione.
+   - **Cube Analysis Server: SQL Server'istanza** di Analysis Services per la quale deve essere creato il cubo. Può trattarsi di un computer diverso, ma l'utente che installa deve essere membro degli amministratori del server dell'istanza di Analysis Services di destinazione SQL Server Analysis Service.
     
      > [!NOTE]
      >  Per ulteriori informazioni sulla configurazione delle autorizzazioni di amministratore del server Analysis Services, vedere [Grant Server Administrator Permissions (Analysis Services)](/analysis-services/instances/grant-server-admin-rights-to-an-analysis-services-instance?viewFallbackFrom=sql-server-ver15)
   
-   - **Usa più partizioni:** Il valore predefinito è "Multiple partition", che richiede l'edizione Business Intelligence o Enterprise di SQL Server. Per Edizione Standard, selezionare l'opzione "Partizione singola". Tenere presente che le prestazioni di elaborazione del cubo possono essere influenzate se viene utilizzata la partizione singola .
+   - **Usa più partizioni:** Il valore predefinito è "Multiple partition", che richiede l'edizione business intelligence o Enterprise'edizione di SQL Server. Per Edizione Standard, selezionare l'opzione "Partizione singola". Tenere presente che le prestazioni di elaborazione del cubo possono essere influenzate se viene utilizzata la partizione singola .
     
      > [!NOTE]
      >  La selezione dell'opzione Usa più partizioni non può essere modificata al termine dell'installazione. Per modificarla, la funzionalità Cubo deve essere prima disinstallata e quindi reinstallata utilizzando l'opzione "Cambia" nel Pannello di controllo.
   
-   - **Cube User - User Name &amp; Password: nome** e password dell'account del servizio di dominio (mascherati) che attiveranno l'elaborazione del cubo. Se è stato selezionato il componente di archiviazione QoE per l'installazione, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio per l'utente processo agente di SQL, ma è consigliabile specificare un account di servizio di dominio diverso in modo che il programma di installazione possa concederne il privilegio meno necessario.
+   - **Cube User - User Name &amp; Password: nome** e password dell'account del servizio di dominio (mascherati) che attiveranno l'elaborazione del cubo. Se per l'installazione è stato selezionato il componente di archiviazione QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio per l'utente processo agente di SQL, ma è consigliabile specificare un account di servizio di dominio diverso in modo che il programma di installazione possa concederne il privilegio meno necessario.
     
 9. Quando si fa clic su Avanti, verrà eseguito un altro round di convalida e verrà segnalato qualsiasi problema. Al termine della convalida, il programma di installazione verrà visualizzato nella pagina Configurazione portale. 
     
 10. Nella pagina Configurazione portale fornire le informazioni seguenti:
     
-    - **QoE Archive SQL Server:** SQL Server nome dell'istanza per la posizione del database di archiviazione QoE. Si noti che, a differenza della pagina Configurazione archivio QoE e della pagina Configurazione cubo, il nome del computer non è fisso e deve essere specificato. Se per l'installazione è stato selezionato il componente di archiviazione QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio QoE.
+    - **QoE Archive SQL Server: SQL Server** nome dell'istanza per cui si trova il database di archiviazione QoE. Si noti che, a differenza della pagina Configurazione archivio QoE e della pagina Configurazione cubo, il nome del computer non è fisso e deve essere specificato. Se per l'installazione è stato selezionato il componente di archiviazione QoE, questo campo verrà precompilato con il valore specificato nella pagina Configurazione archivio QoE.
     
-    - **Cube Analysis Server:** SQL Server nome dell'istanza di Analysis Services per la posizione del cubo. Se è stato selezionato il componente Cubo per l'installazione, questo campo verrà precompilato con il valore specificato nella pagina Configurazione cubo.
+    - **Cube Analysis Server: SQL Server** di istanza di Analysis Services per la posizione del cubo. Se è stato selezionato il componente Cubo per l'installazione, questo campo verrà precompilato con il valore specificato nella pagina Configurazione cubo.
     
-    - **Repository SQL Server:** SQL Server nome dell'istanza in cui deve essere creato il database repository. Se il nome dell'istanza di SQL Server per cui si trova il database di archiviazione QoE è stato fornito in precedenza nell'installazione (in altri componenti), questo campo verrà precompilato con il nome dell'istanza del database di archiviazione QoE SQL Server. Può trattarsi di qualsiasi SQL Server istanza.
+    - **Repository SQL Server: SQL Server** nome dell'istanza in cui deve essere creato il database repository. Se il nome dell'istanza di SQL Server per cui si trova il database di archiviazione QoE è stato fornito in precedenza nell'installazione (in altri componenti), questo campo verrà precompilato con il nome dell'istanza del database di archiviazione QoE SQL Server. Può trattarsi di qualsiasi SQL Server istanza.
     
     - **Database repository:** Per impostazione predefinita, l'opzione è impostata su "Crea nuovo database". Poiché l'aggiornamento del database repository non è supportato, l'unica circostanza in cui è possibile utilizzare l'opzione "Usa database esistente" è se il database repository esistente ha lo stesso schema della build da installare.
     
@@ -133,7 +133,7 @@ Al termine del programma di installazione, è molto probabile che il processo SQ
 > [!NOTE]
 > Si noti che l'URL per il controllo dello stato dell'elaborazione del cubo di download fa distinzione tra maiuscole e minuscole. Se si immette "integrità", l'URL non funzionerà. Devi immettere "Health" alla fine dell'URL con la maiuscola H. 
   
-Se è abilitata la modalità di debug, verranno visualizzati messaggi di registro dettagliati. Per abilitare la modalità di debug, passare **a %SYSTEMDRIVE%\Programmi\Skype For Business 2015 CQD\QoEDataService\web.config** e aggiornare la riga seguente in modo che il valore sia impostato su **True**:
+Se è abilitata la modalità di debug, verranno visualizzati messaggi di registro dettagliati. Per abilitare la modalità debug, passare **a %SYSTEMDRIVE%\Programmi\Skype For Business 2015 CQD\QoEDataService\web.config** e aggiornare la riga seguente in modo che il valore sia impostato su **True**:
 
 ```xml
 <add key="QoEDataLib.DebugMode" value="True" /> 
@@ -215,11 +215,11 @@ In rari casi, il programma di installazione non riesce a creare le impostazioni 
     
      ![Distribuire Dashboard Qualità della chiamata](../../media/dc6007aa-870b-4d70-867d-32ffd937063b.png)
   
-2. Fare clic su "Autenticazione". Se le impostazioni "Autenticazione anonima", "Rappresentazione ASP.NET", "Autenticazione basata su form" e "Autenticazione di Windows" non corrispondono alle impostazioni illustrate di seguito, modificarle manualmente in modo che corrispondano alle impostazioni seguenti. Tutti gli altri meccanismi di autenticazione devono essere disabilitati.
+2. Fare clic su "Autenticazione". Se le impostazioni "Autenticazione anonima", "Rappresentazione ASP.NET", "Autenticazione form" e "Autenticazione Windows" non corrispondono alle impostazioni illustrate di seguito, modificarle manualmente in modo che corrispondano alle impostazioni seguenti. Tutti gli altri meccanismi di autenticazione devono essere disabilitati.
     
      ![Distribuire Dashboard Qualità della chiamata](../../media/5d9e38fb-8a50-41a2-a423-3ce983a83d0c.png)
   
-3. Per "Autenticazione di Windows", fai clic su Impostazioni avanzate a destra.
+3. Per "Windows autenticazione", fai clic su Impostazioni avanzata sul lato destro.
     
      ![Distribuire Dashboard Qualità della chiamata](../../media/cad29486-df40-4cc9-82f3-bbdaca52d9ca.png)
   
@@ -235,7 +235,7 @@ Per abilitare SSL/TLS in IIS e forzare gli utenti a connettersi tramite HTTPS si
   
 1. Configurare Secure Sockets Layer in IIS, vedere [Configuring Secure Sockets Layer in IIS 7](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc771438(v=ws.10)). Al termine, sostituire  `http` con `https` .
     
-2. Per istruzioni sull'abilitazione di TLS nelle connessioni SQL Server, vedere Come abilitare la crittografia SSL per un'istanza di [SQL Server tramite Microsoft Management Console.](https://support.microsoft.com/kb/316898/)
+2. Per istruzioni sull'abilitazione di TLS nelle connessioni SQL Server, vedere [How to enable SSL encryption for an instance of SQL Server by using Microsoft Management Console.](https://support.microsoft.com/kb/316898/)
     
 ## <a name="cube-sync-fails"></a>Sincronizzazione cubo non riuscita
 
@@ -278,11 +278,11 @@ Esempi
   
 - Headquarters
     
-- Remote Office
+- Connessione Office
     
 - Joint-venture location
     
-  **Sintassi SQL esempio**
+  **Esempio SQL sintassi**
   
 ```SQL
 INSERT INTO
@@ -313,7 +313,7 @@ Esempi
     
 - Filiale noleggiata
     
-  **Sintassi SQL esempio**
+  **Esempio SQL sintassi**
   
 ```SQL
 INSERT INTO
@@ -343,7 +343,7 @@ Esempi
     
 - LAB
     
-  **Sintassi SQL esempio**
+  **Esempio SQL sintassi**
   
 ```SQL
 INSERT INTO [dbo].[CqdNetworkName] 
@@ -365,7 +365,7 @@ L'importazione di edifici offre la possibilità di ottenere informazioni dettagl
   
 Prima di importare un nuovo edificio, è necessario che sia già stata identificata una chiave predefinita. A tale scopo, eseguire il comando "SELECT MAX(BuildingKey) FROM CqdBuilding" SQL per identificare il valore corrente e aggiungere 1 al risultato.
   
- **Sintassi SQL esempio**
+ **Esempio SQL sintassi**
   
 ```SQL
 INSERT INTO [dbo].[CqdBuilding] 
@@ -388,9 +388,9 @@ L'importazione di edifici offre la possibilità di ottenere informazioni dettagl
 > [!NOTE]
 > Questo passaggio è facoltativo, ma consigliato.
   
-Importare subnet e mapparle agli edifici importati nell'ultimo passaggio. Se si è deciso di non popolare NetworkName, assicurarsi che ogni voce in questa tabella utilizzi un NetworkNameID di 0. Per ulteriori informazioni sulla SQL e sui parametri per il dashboard qualità delle chiamate, vedere [Use Call Quality Dashboard for Skype for Business Server.](./use.md)
+Importare subnet e mapparle agli edifici importati nell'ultimo passaggio. Se si è deciso di non popolare NetworkName, assicurarsi che ogni voce in questa tabella utilizzi un NetworkNameID di 0. Per ulteriori informazioni sulla sintassi SQL e sui parametri per il dashboard qualità delle chiamate, vedere [Use Call Quality Dashboard for Skype for Business Server](./use.md).
   
- **Sintassi SQL esempio**
+ **Esempio SQL sintassi**
   
 ```SQL
 INSERT INTO [dbo].[CqdNetwork] 
@@ -411,7 +411,7 @@ I parametri Network e UpdatedDate sono obbligatori, gli altri parametri sono fac
 
 Il popolamento delle informazioni BSSID offre una correlazione del flusso WiFi aggiuntiva in base al controller o alla radio. Si tratta di un'operazione che si aggiunge al filtro in base alla creazione o alla subnet. 
   
- **Sintassi SQL esempio**
+ **Esempio SQL sintassi**
   
 ```SQL
 INSERT INTO [dbo].[CqdBssid]

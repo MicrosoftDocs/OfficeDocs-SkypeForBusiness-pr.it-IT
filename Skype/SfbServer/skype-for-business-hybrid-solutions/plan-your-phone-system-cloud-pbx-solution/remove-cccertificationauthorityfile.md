@@ -13,16 +13,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 3600af8d-04de-4b9a-88ac-2491ca06494d
 description: Il cmdlet Remove-CcCertificationAuthorityFile rimuove il file di backup del servizio autorità di certificazione nella cartella CA nella directory della condivisione del sito per Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: 49a8f0f313b4153288ebdf037a41dc92f30e60d6
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+ms.openlocfilehash: aaff21023a63e8933235f4c462c1152339381ca0d9571ded57f6b43742679624
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824292"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54288774"
 ---
 # <a name="remove-cccertificationauthorityfile"></a>Remove-CcCertificationAuthorityFile
  
-Il cmdlet Remove-CcCertificationAuthorityFile rimuove il file di backup del servizio dell'autorità di certificazione " &lt; SiteRootDirectory &gt; \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito per Skype for Business Cloud Connector Edition. 
+Il cmdlet Remove-CcCertificationAuthorityFile rimuove il file di backup del servizio autorità di certificazione " &lt; SiteRootDirectory &gt; \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito per Skype for Business Cloud Connector Edition. 
   
 ```powershell
 Remove-CcCertificationAuthorityFile
@@ -30,14 +30,14 @@ Remove-CcCertificationAuthorityFile
 
 ## <a name="parameters"></a>Parametri
 
-None
+Nessuno
   
 ## <a name="examples"></a>Esempi
 <a name="Examples"> </a>
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente viene rimosso il file di backup del servizio autorità di certificazione " &lt; SiteRootDirectory &gt; \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito:
+Nell'esempio seguente viene rimosso il file di backup del servizio Autorità di certificazione " &lt; SiteRootDirectory &gt; \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito:
   
 ```powershell
 Remove-CcCertificationAuthorityFile
@@ -51,7 +51,7 @@ Nessuna. Il cmdlet Remove-CcCertificationAuthorityFile non accetta input da pipe
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

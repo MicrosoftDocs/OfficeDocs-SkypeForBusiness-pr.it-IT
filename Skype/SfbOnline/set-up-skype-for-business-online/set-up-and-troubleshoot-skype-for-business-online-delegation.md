@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: Questo articolo spiega come configurare e risolvere i problemi Skype for Business delega online. Questo articolo fornisce indicazioni per i suggerimenti per la configurazione, le procedure consigliate e i passaggi per la risoluzione dei problemi.
-ms.openlocfilehash: e5c710849f5829a4a270dc327f71d98185e85c89
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: c672006e8b78e5b3fb881da97e2ab3bbe65e465aa5981cc95fb2caf9bed39e4f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239825"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54310175"
 ---
 # <a name="set-up-and-troubleshoot-skype-for-business-online-delegation"></a>Configurare le deleghe e risolvere i problemi relativi alle deleghe in Skype for Business online
 

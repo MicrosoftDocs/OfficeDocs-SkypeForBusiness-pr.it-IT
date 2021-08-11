@@ -20,12 +20,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6ce0e580-8c4a-45de-a54f-e39e438335d6
 description: Informazioni su Skype for Business Cloud Connector Edition, un set di macchine virtuali (VM) in pacchetto che implementano la connettività PSTN locale con Sistema telefonico (Cloud PBX).
-ms.openlocfilehash: 4d4573b89f743ea8224905687869cb607a85c00d
-ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
+ms.openlocfilehash: 147fabd9866386b67c17022a37369149273de3caeecf40e471abbed40e0e33cb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52628805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54288854"
 ---
 # <a name="plan-for-skype-for-business-cloud-connector-edition"></a>Pianificare la Skype for Business Cloud Connector Edition
 
@@ -350,7 +350,7 @@ Questa tabella mostra le porte e gli intervalli di porte per abilitare la comuni
 |SBC/PSTN Gateway  <br/> |Componente Mediation Connector Cloud  <br/> |Qualsiasi  <br/> |TCP 5068/ TLS 5067  <br/> |
 |Componente Mediation Connector Cloud  <br/> |SBC/PSTN Gateway  <br/> |UDP 49 152 - 57 500  <br/> |Any\*\*\*  <br/> |
 |SBC/PSTN Gateway  <br/> |Componente Mediation Connector Cloud  <br/> |Any\*\*\*  <br/> |UDP 49 152 - 57 500  <br/> |
-|Componente Mediation Connector Cloud  <br/> |Client interni  <br/> |TCP 49 152 - 57 500\*  <br/> |TCP 50.000-50.019  <br/> (Facoltativo)  <br/> |
+|Componente Mediation Connector Cloud  <br/> |Client interni  <br/> |TCP 49 152 - 57 500\*  <br/> |TCP 50.000-50.019  <br/> (Facoltativa)  <br/> |
 |Componente Mediation Connector Cloud  <br/> |Client interni  <br/> |UDP 49 152 - 57 500\*  <br/> |UDP 50.000-50.019  <br/> |
 |Client interni  <br/> |Componente Mediation Connector Cloud  <br/> |TCP 50.000-50.019  <br/> |TCP 49 152 - 57 500\*  <br/> |
 |Client interni  <br/> |Componente Mediation Connector Cloud  <br/> |UDP 50.000-50.019  <br/> |UDP 49 152 -57 500\*  <br/> |
@@ -422,11 +422,11 @@ In questo caso, tutto il traffico multimediale per il punto finale in Internet p
 
 Il computer host deve essere in grado di raggiungere risorse esterne per installare, aggiornare e gestire correttamente Cloud Connector. La tabella seguente mostra le destinazioni e le porte necessarie tra il computer host e le risorse esterne.
 
-|Direction  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocollo  <br/> |Finalità  <br/> |
+|Direzione  <br/> |IP origine  <br/> |IP destinazione  <br/> |Porta di origine  <br/> |Porta di destinazione  <br/> |Protocollo  <br/> |Finalità  <br/> |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |In uscita  <br/> |IP host del connettore cloud  <br/> |any  <br/> |any  <br/> |53  <br/> |TCP/UDP  <br/> |DNS  <br/> |
 |In uscita  <br/> |IP host del connettore cloud  <br/> |any  <br/> |any  <br/> |80, 443  <br/> |TCP  <br/> |Elenco di revoche di certificati (CRL)  <br/> |
-|In uscita  <br/> |IP host del connettore cloud  <br/> |any  <br/> |any  <br/> |80, 443  <br/> |TCP  <br/> |Aggiornamento del connettore cloud  <br/> Skype for Business Online  <br/> Amministratore PowerShell  <br/> Windows Update  <br/> |
+|In uscita  <br/> |IP host del connettore cloud  <br/> |any  <br/> |any  <br/> |80, 443  <br/> |TCP  <br/> |Aggiornamento del connettore cloud  <br/> Skype for Business Online  <br/> Amministratore PowerShell  <br/> Windows Update  <br/> |
 
 Se sono necessarie regole più restrittive, fare riferimento agli URL allowlist seguenti:
 
@@ -528,7 +528,7 @@ Quando si configurano le informazioni sul gateway, tenere presente quanto segue:
 |Intervallo di porte multimediali per comunicare con/dal componente Mediation tramite il firewall interno  <br/> |Intervallo di porte UDP che verrà utilizzato dal componente Mediation Server per comunicare con client e gateway (consigliato 4 porte per chiamata).  <br/> ||
 |Intervallo di porte multimediali per comunicare con/da Skype for Business client tramite firewall interno  <br/> |A scopo di pianificazione, non è possibile modificare. Le porte devono essere aperte nel firewall interno per comunicare tra Skype for Business client all'interno della rete interna e con il componente Mediation.  <br/> |50 000- 50 019  <br/> |
 |Password certificato pubblico  <br/> |Deve essere specificato nello script.  <br/> ||
-|Password di amministratore in modalità provvisoria  <br/> Solo versione 1.4.2  <br/> |Password di amministratore in modalità provvisoria per il dominio CC interno.  <br/> ||
+|Cassaforte Password amministratore modalità  <br/> Solo versione 1.4.2  <br/> |Cassaforte di amministratore in modalità avanzata per il dominio CC interno.  <br/> ||
 |Password di amministratore del dominio del connettore cloud  <br/> Solo versione 1.4.2  <br/> |Password per l'amministratore di dominio del connettore cloud (diverso dal dominio di produzione). Il nome utente è Administrator. Non è possibile modificare il nome utente.  <br/> ||
 |Password amministratore macchine virtuali  <br/> Solo versione 1.4.2  <br/> |Usato per configurare la rete di gestione durante la distribuzione.  <br/> Il nome utente è Administrator. Non è possibile modificare il nome utente.  <br/> ||
 |CABackupFile  <br/> Versione 2.0 e successive  <br/> |Utilizzato per salvare il servizio Autorità di certificazione dal server Active Directory in un file quando si distribuiscono più appliance in un sito Cloud Connector. Assicurati di usare la stessa password per tutte le appliance all'interno di un sito Cloud Connector per importare correttamente il file di backup della CA in un nuovo accessorio aggiunto.  <br/> ||

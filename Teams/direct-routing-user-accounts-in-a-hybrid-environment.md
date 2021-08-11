@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni sulle diverse combinazioni di creazione utente e sulle combinazioni supportate o non supportate.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d55f72bc9b22a3bb1e1ba889f24cf7a7ea0cbb53
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 5b272ba42235b37b15c44d69fb4d96a444bd3b79498d0ade02aa0e1d15668a4c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279733"
 ---
 # <a name="user-accounts-in-a-hybrid-environment-with-pstn-connectivity"></a>Account utente in un ambiente ibrido con connettività PSTN
 

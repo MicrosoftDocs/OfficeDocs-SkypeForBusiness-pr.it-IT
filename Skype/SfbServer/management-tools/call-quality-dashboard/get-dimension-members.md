@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: bd89bbf7-cb98-4cd8-bbfa-0484663d14db
 description: "Riepilogo: informazioni sull'operazione Get Dimension Members. L'operazione Get Dimension Members fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: ffec3b02a3c876a003adb679a28b0e8f2edb91c2
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 3a0c01b310ed60c4b0808d669b553391277f3877bff4c4800bea1b5b765bf5b7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278714"
 ---
 # <a name="get-dimension-members"></a>Get Dimension Members
  
@@ -28,7 +28,7 @@ L'operazione Get Dimension Members fa parte dell'API dei dati per call quality d
   
 ## <a name="get-dimension-members"></a>Get Dimension Members
 
-L'operazione Get Dimension Members restituisce l'elenco dei membri di una dimensione specifica. Consente inoltre di filtrare l'elenco dei membri e ottenere un sottoinsieme, per ridurre il costo del trasferimento bancario.
+L'operazione Get Dimension Members restituisce l'elenco dei membri di una dimensione specifica. Offre anche la possibilità di filtrare l'elenco dei membri e ottenere un sottoinsieme, per ridurre il costo di trasferimento dei fili.
   
 
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
@@ -39,7 +39,7 @@ L'operazione Get Dimension Members restituisce l'elenco dei membri di una dimens
   
  **Intestazioni richiesta** - Nessuna intestazione aggiuntiva.
   
- **Corpo della** richiesta: contiene il nome della dimensione per cui si desiderano i membri. Oltre al numero massimo di membri restituiti, è possibile specificare un filtro per limitare i membri restituiti.
+ **Request Body** - Contiene il nome della dimensione per cui si desiderano i membri. Inoltre, il numero massimo di membri restituiti, oltre a poter specificare un filtro per limitare i membri restituiti.
   
 ```json
 {
@@ -56,9 +56,9 @@ L'operazione Get Dimension Members restituisce l'elenco dei membri di una dimens
   
  **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
   
- **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Corpo della risposta:** di seguito è riportato un payload di risposta di esempio in JSON in risposta a una richiesta di "[StartDate]. Dimensione [Month]".
+ **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON in risposta a una richiesta di "[StartDate]. Dimensione [Mese]".
   
 > [!NOTE]
 > L'elenco mostra solo una piccola parte dell'elenco. 

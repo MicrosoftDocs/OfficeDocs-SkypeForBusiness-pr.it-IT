@@ -21,12 +21,12 @@ ms.custom:
 - SMB
 - ms.lync.lac.BroadcastMeetingsPreview
 description: Il Skype for Business anteprima del cliente offre accesso anticipato a nuovi prodotti e funzionalità. Consente all'organizzazione di ottenere un'anteprima delle novità in arrivo, testare le nuove funzionalità del proprio ambiente e inviare feedback prima di rilasciare le build dei prodotti al pubblico generale. Per altre informazioni, vedere Skype for Business anteprima.
-ms.openlocfilehash: d713e3225ed963beb1b201d515db558513020d39
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: b372fcdbe23ed5fcd663cf7af0a0d4aea1cd684277d670308daab120625d2238
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298736"
 ---
 # <a name="skype-meeting-broadcast-preview-settings"></a>Riunione Skype Impostazioni di Anteprima trasmissione
 

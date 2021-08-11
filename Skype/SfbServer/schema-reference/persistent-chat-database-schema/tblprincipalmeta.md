@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 808490d4-7d6d-47a2-b8af-b5940d47073b
 description: tblPrincipalMeta contiene le entità che devono essere aggiornate da Servizi di dominio Active Directory.
-ms.openlocfilehash: e10b56a8a3a1c25f73cd1a07f4fdcde18c6f1215
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: a2cc7ef5313be8abdf50c6cebc5bb8999bf153eeeba0a188cd2d34d2c4608546
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54289424"
 ---
 # <a name="tblprincipalmeta"></a>tblPrincipalMeta
  

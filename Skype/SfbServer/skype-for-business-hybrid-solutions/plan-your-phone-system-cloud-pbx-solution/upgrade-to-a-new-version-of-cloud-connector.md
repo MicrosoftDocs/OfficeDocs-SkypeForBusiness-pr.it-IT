@@ -16,17 +16,17 @@ ms.collection:
 ms.custom: ''
 ms.assetid: efbe25f2-faf5-41c7-8c95-dbc4a835a4a8
 description: Informazioni su come aggiornare la distribuzione di Cloud Connector Edition.
-ms.openlocfilehash: fea78c6b1b6ba3b2e644fef71d78b94aa3a244b7
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2670557f3f5ab44545c511b759971a457bd37e333d01b323ad6cc35d82526858
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109132"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279972"
 ---
 # <a name="upgrade-to-a-new-version-of-cloud-connector"></a>Eseguire l'aggiornamento a una nuova versione di Cloud Connector
 
 > [!Important]
-> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
+> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business Online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
  
 Informazioni su come aggiornare la distribuzione di Cloud Connector Edition.
   
@@ -54,11 +54,11 @@ L'aggiornamento automatico richiede che il servizio Cloud Connector sia in esecu
     
   - Scaricare e controllare il file della versione dal sito di download.
     
-  - Scaricare il file MSI della nuova versione. 
+  - Scaricare la nuova versione .msi file. 
     
   - Disinstallare il vecchio file msi; installare il nuovo file msi.
     
-  - Scarica la nuova versione dei bit di Skype for Business.
+  - Scarica la nuova versione di Skype for Business bit.
     
   - Registrare l'appliance chiamando Register-CcAppliance.
     
@@ -78,7 +78,7 @@ Se nel sito è presente un solo dispositivo che si desidera aggiornare, eseguire
     
 2. Installare la nuova versione di CloudConnector.msi da [https://aka.ms/CloudConnectorInstaller](https://aka.ms/CloudConnectorInstaller) .
     
-3. Verificare di disporre del file CloudConnector.ini per la versione che si sta installando e di aver aggiornato tutti i valori necessari per l'ambiente. Non è possibile utilizzare il file ini di una versione precedente. Se si esegue l'aggiornamento di Cloud Connector, fare riferimento all'argomento [Prepare your Cloud Connector appliance](prepare-your-cloud-connector-appliance.md) e assicurarsi che SiteName e EnableReferSupport siano impostati sul valore corretto nel file CloudConnector.ini.
+3. Verificare di disporre del file CloudConnector.ini per la versione che si sta installando e di aver aggiornato tutti i valori necessari per l'ambiente. Non è possibile utilizzare il file .ini di una versione precedente. Se si esegue l'aggiornamento di Cloud Connector, fare riferimento all'argomento [Prepare your Cloud Connector appliance](prepare-your-cloud-connector-appliance.md) e assicurarsi che SiteName e EnableReferSupport siano impostati sul valore corretto nel file CloudConnector.ini.
     
 4. Avviare una console di PowerShell come amministratore ed eseguire il cmdlet seguente per registrare l'appliance corrente:
     
@@ -106,7 +106,7 @@ Se nel sito è presente un solo dispositivo che si desidera aggiornare, eseguire
 
 Se nel sito sono presenti più appliance, seguire i passaggi precedenti per aggiornare ogni appliance uno alla volta.
   
-Se si desidera aggiornare le credenziali di amministratore di dominio, amministratore della macchina virtuale, amministratore in modalità provvisoria e amministratore tenant, è possibile eseguire il cmdlet con il parametro  _UpdateAllCredentials_ per reimpostare tutte le credenziali:
+Se si desidera aggiornare le credenziali di amministratore di dominio, amministratore della macchina virtuale, amministratore della modalità Cassaforte e amministratore tenant, è possibile eseguire il cmdlet con il parametro _UpdateAllCredentials_ per reimpostare tutte le credenziali:
   
 ```powershell
 Install-CcAppliance -UpdateAllCredentials

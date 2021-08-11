@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: e8fc19fa-6cd7-4f68-b90a-1c7e1b649abd
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le impostazioni di configurazione delle riunioni definiscono l'esperienza di partecipazione degli utenti per le conferenze pianificate dagli utenti. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano alle riunioni ad hoc create facendo clic sull'opzione Riunione ora nel client.
-ms.openlocfilehash: 3d37b1894531a62f605f083cbe1e2f36953f2ff2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 4038f4175849481c43d2d8a9fc0849f44f0530906c3702580a892cd0edb17871
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121130"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54326489"
 ---
 # <a name="meeting-configuration-create-new-or-edit-existing"></a>Configurazione riunione: crearne una nuova o modificarne una esistente
 
@@ -56,4 +56,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Testo piè di pagina personalizzato** Digitare il testo da utilizzare per gli inviti a conferenze personalizzati.
 
-Per informazioni dettagliate sull'utilizzo di configurazioni riunioni, vedere [Create a or modify a Collection of Meeting Configuration Settings](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-collection-of-meeting-configuration-settings) nella documentazione relativa alle operazioni. Per informazioni dettagliate sull'impostazione delle configurazioni per riunioni di grandi dimensioni, vedere [Setting Up Support for Large Meetings](/previous-versions/office/lync-server-2013/lync-server-2013-setting-up-support-for-large-meetings) nella documentazione relativa alla pianificazione.
+Per informazioni dettagliate sulle configurazioni delle riunioni, vedere [Create a or modify a Collection of Meeting Configuration Settings](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-collection-of-meeting-configuration-settings) nella documentazione relativa alle operazioni. Per informazioni dettagliate sull'impostazione delle configurazioni per riunioni di grandi dimensioni, vedere [Setting Up Support for Large Meetings](/previous-versions/office/lync-server-2013/lync-server-2013-setting-up-support-for-large-meetings) nella documentazione relativa alla pianificazione.

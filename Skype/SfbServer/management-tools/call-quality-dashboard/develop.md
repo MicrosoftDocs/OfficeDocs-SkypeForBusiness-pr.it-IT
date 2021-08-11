@@ -12,29 +12,29 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 664917b4-c954-40b6-864e-f72db94c6180
-description: 'Riepilogo: informazioni su come sviluppare soluzioni per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 246a88654438ce4f4fd6138d17b9c53f9fdedf32
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni su come sviluppare soluzioni per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
+ms.openlocfilehash: d96f314621ab69eb6ad445d9567d7eb7f313aef2c9dc958ef6f93bed58d7eca9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278704"
 ---
 # <a name="develop-call-quality-dashboard-for-skype-for-business-server"></a>Sviluppare il dashboard qualità delle chiamate per Skype for Business Server
  
-**Riepilogo:** Informazioni su come sviluppare soluzioni per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Scopri come sviluppare soluzioni per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
 In questo argomento viene fornita la documentazione di sviluppo per Call Quality Dashboard (CQD) per Skype for Business Server.
   
 ## <a name="develop-call-quality-dashboard-for-skype-for-business-server"></a>Sviluppare il dashboard qualità delle chiamate per Skype for Business Server
 
-La DQD può essere estesa e integrata nell'ambiente di creazione di report tramite lo sviluppo personalizzato. 
+CQD può essere esteso e integrato nell'ambiente di creazione di report usando lo sviluppo personalizzato. 
   
-Sono disponibili due set di API Web, uno per l'accesso ai dati nel cubo (tramite LE API di dati) e uno per l'accesso ai metadati del report (tramite l'API repository). 
+Sono disponibili due set di API Web, uno per l'accesso ai dati nel cubo (tramite LE API dati) e uno per l'accesso ai metadati del report (tramite l'API repository). 
   
-- [API dati per Call Quality Dashboard (CQD) in Skype for Business Server](data-api.md)
+- [API dati per call quality dashboard (CQD) in Skype for Business Server](data-api.md)
     
-- [Repository API for Call Quality Dashboard (CQD) in Skype for Business Server](repository-api.md)
+- [API repository per call quality dashboard (CQD) in Skype for Business Server](repository-api.md)
     
 - [Esempi di sviluppo in DQC](cqd-development-samples.md)
     
