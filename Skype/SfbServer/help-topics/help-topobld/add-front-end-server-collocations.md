@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 23e3bda7-a8bf-4da4-88e5-098ae2aa268f
 description: Per una distribuzione di Server Enterprise, il servizio A/V Conferencing viene collocato nel pool Front End. È anche possibile collocare Mediation Server sul pool Front End oppure distribuirlo come server autonomo. Se il servizio di conferenza è abilitato, il servizio A/V Conferencing sarà sempre collocato.
-ms.openlocfilehash: 97f883f0d29f59961a0c396b57b14bbb9eb7f0cc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 496264b412e9caabb99cc8249d6933be72bcd10364eaed752b9e1921140d2868
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54321728"
 ---
 # <a name="add-front-end-server-collocations"></a>Aggiungere collocazioni di Front End Server
 

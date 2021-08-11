@@ -12,50 +12,50 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: b6d7b02a-a34e-4fef-986c-ca442e18fa0c
-description: "Riepilogo: informazioni su Item Service, che fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: b904f814a837af13e4015af5fbaca924739b8997
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: informazioni su Item Service, che fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 4e46cb213502e646a9fc3c750e7aeb40ffb6aff47b4d2aba0c19e04c56ce6cc0
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49827706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54331228"
 ---
 # <a name="item-service-for-call-quality-dashboard-cqd"></a>Item Service for Call Quality Dashboard (CQD)
  
-**Riepilogo:** Informazioni su Item Service, che fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni su Item Service, che fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-Item Service fa parte dell'API repository per call quality dashboard.
+Item Service fa parte dell'API repository per il dashboard di qualità delle chiamate.
   
 ## <a name="item-service"></a>Servizio elementi
 
 L'API repository offre un semplice servizio di gestione del contenuto, noto come servizio elementi, che può essere usato per archiviare qualsiasi contenuto definito dall'applicazione per gli utenti. 
   
-Il contenuto del sistema è di proprietà dell'utente di sistema e condiviso da tutti gli utenti con accesso in sola lettura. I contenuti degli utenti dedicati sono di proprietà di utenti normali e solo i proprietari possono modificarli o eliminarli, ma tutti gli utenti hanno ancora accesso in sola lettura.
+Il contenuto del sistema è di proprietà dell'utente di sistema e condiviso da tutti gli utenti con accesso di sola lettura. I contenuti degli utenti dedicati sono di proprietà di utenti normali e solo i proprietari possono modificarli o eliminarli, ma tutti gli utenti hanno ancora accesso in sola lettura.
   
 > [!NOTE]
 > Questa documentazione dell'API illustra le operazioni di sola lettura dell'API repository. 
   
-Il dashboard qualità delle chiamate salva i rapporti e le query come elementi nel database repository. Un elemento può avere elementi secondari facoltativi e call quality dashboard organizza report e query in una struttura gerarchica utilizzando la funzionalità elementi secondari.
+Il dashboard qualità delle chiamate salva report e query come elementi nel database repository. Un elemento può avere elementi secondari facoltativi e il dashboard qualità delle chiamate organizza report e query in una struttura gerarchica utilizzando la funzionalità elementi secondari.
   
-Il servizio elementi include i concetti seguenti:
+Item Service include i concetti seguenti:
   
-- **Elemento** : l'elemento di base del repository. Ogni elemento è di proprietà esattamente di un utente.
+- **Item** - Elemento di base del repository. Ogni elemento è di proprietà esattamente di un utente.
     
-- **Sotto-elemento:** le meccaniche organizzative di base dell'archivio. L'elemento può avere zero, uno o più elementi subordinati.
+- **Elemento secondario** : le meccaniche organizzative di base del repository. L'elemento può avere zero, uno o più elementi subordinati.
     
-- **Predecessori elemento** - Elenco di elementi, a partire dall'elemento più in alto, che è l'elemento predefinito dell'utente, che conduce a un determinato elemento.
+- **Predecessori elemento** - Elenco di elementi, a partire dall'elemento più in alto, che è l'elemento predefinito dell'utente, che conduce a un elemento specificato.
     
-- **Contenuto elemento:** il contenuto specifico dell'applicazione archiviato in Elementi. Call Quality Dashboard salva le rappresentazioni JSON di report e query nel contenuto.
+- **Contenuto elemento** - Contenuto specifico dell'applicazione archiviato in Elementi. Call Quality Dashboard salva le rappresentazioni JSON di report e query nel contenuto.
     
 Le operazioni REST sono incluse nella tabella seguente.
   
 
 |**Operazione**|**Descrizione**|
 |:-----|:-----|
-|[Ottenere elementi](get-items.md) <br/> |Il metodo Get Items restituisce tutti gli elementi nel repository.  <br/> |
-|[Ottieni elemento](get-item.md) <br/> |Get Item restituisce un elemento specifico.  <br/> |
-|[Ottieni elementi secondari](get-sub-items.md) <br/> |Ottiene Sub-Items restituisce gli elementi secondari di un elemento specifico.  <br/> |
-|[Ottieni predecessori elemento](get-item-ancestors.md) <br/> |Get Item Predecessors restituisce i predecessori di un elemento specifico.  <br/> |
+|[Ottenere elementi](get-items.md) <br/> |Get Items restituisce tutti gli elementi nel repository.  <br/> |
+|[Ottieni elemento](get-item.md) <br/> |Get Item restituisce un oggetto Item specifico.  <br/> |
+|[Ottieni elementi secondari](get-sub-items.md) <br/> |Get Sub-Items restituisce gli elementi secondari di un elemento specifico.  <br/> |
+|[Ottieni predecessori elemento](get-item-ancestors.md) <br/> |Get Item Ancestors restituisce i predecessori di un elemento specifico.  <br/> |
 |[Aggiorna elemento](update-item.md) <br/> |Aggiornare un elemento specifico nel repository.  <br/> |
    
 

@@ -14,12 +14,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0e0ad9f0-27d5-4975-ae88-0b8ff8a4c514
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a78fa8c12f2eb0db4cedd97a765e6445788c3382
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 064255bc958f9c1b59ca105cb943dca766f7715e59c71a5f1d1e0dee8620e868
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804266"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285156"
 ---
 # <a name="mediation-server-general-settings-expander"></a>Espansione delle impostazioni generali di Mediation Server
  
@@ -29,7 +29,7 @@ ms.locfileid: "49804266"
 
 Nome di dominio completo (FQDN) del pool Mediation Server o del Mediation Server. Modificare l'FQDN del server per cambiarne il valore. È necessario disporre di un record host (A) DNS (Domain Name System) che coincida con il nuovo valore.
   
-Nella sezione **Associazioni** è possibile selezionare un server perimetrale o un pool di server perimetrali da associare al pool Mediation Server o al Mediation Server. Selezionare il server perimetrale che verrà utilizzato dai componenti multimediali del Mediation Server per gli utenti VoIP aziendale.
+Nella sezione **Associazioni** è possibile selezionare un server perimetrale o un pool di server perimetrali da associare al pool Mediation Server o al Mediation Server. È possibile selezionare il server perimetrale che verrà utilizzato dai componenti multimediali del Mediation Server per l'VoIP aziendale.
   
 Se attualmente non è definito un server perimetrale ed è necessario associare il Mediation Server a un server di questo tipo, fare clic su **Nuovo** e definire il nuovo server perimetrale o il nuovo pool di server perimetrali nella procedura guidata Definisci pool di server perimetrali.
   

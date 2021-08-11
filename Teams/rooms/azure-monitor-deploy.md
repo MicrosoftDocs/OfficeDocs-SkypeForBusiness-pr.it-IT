@@ -15,12 +15,12 @@ ms.collection:
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo spiega come distribuire la gestione dei Microsoft Teams Rooms dispositivi in modo integrato e end-to-end con Monitor di Azure.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 7046fc0010a4337ea14854e356600ccf3428f9d0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: d0f3176f83e57db2203d37f2e65ecd8d54b1ea419367de997730180d27b1ee54
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117594"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312684"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con :::no-loc text="Azure Monitor":::
 
@@ -377,9 +377,9 @@ Configurare una regola di avviso che controlla la presenza di dispositivi che ha
 7. Configurare i gruppi di azioni:
     1.  Selezionare **Crea nuovo**
     2.  Specificare i nomi appropriati per *i campi Nome gruppo di azioni* e Nome *breve.*
-    3.  Specificare un nome *azione univoco* e selezionare **Posta elettronica/SMS/Push/Voice** e quindi **selezionare Modifica dettagli.**
+    3.  Specificare un nome *azione univoco* e selezionare **E-mail/SMS/Push/Voice** e quindi **selezionare Modifica dettagli.**
     4.  Selezionare la casella **di** controllo Posta elettronica e specificare l'indirizzo di posta elettronica della persona o del gruppo che riceverà gli avvisi.
-    5.  Puoi anche fornire il tuo numero di telefono per ricevere una notifica con SMS, una chiamata vocale o entrambe.
+    5.  Puoi anche fornire il tuo numero di telefono per ricevere una notifica tramite SMS, una chiamata vocale o entrambi.
     6. Scegliere **OK**.
 
 8. **Personalizzare le azioni** se si desidera ignorare la riga dell'oggetto dei messaggi di posta elettronica degli avvisi.

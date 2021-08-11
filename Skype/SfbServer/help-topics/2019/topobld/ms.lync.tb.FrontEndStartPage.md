@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 3f6e69ed-4add-4dc8-acb8-dfe050819f5a
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare questa procedura guidata per definire un nuovo pool Front End per un sito. Ogni sito deve disporre almeno di un pool Enterprise Edition o di un Server Standard. Per informazioni dettagliate sui requisiti per l'utilizzo della procedura guidata per creare un nuovo pool Front End, vedere Define and Configure a Front End Pool nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: 606c190c32338fed26b519de9383665955be45dd
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e9b3ff567b8ab540aab3620c9d3066660347be4addc4de0edd6aeb29072be1a4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54302780"
 ---
 # <a name="front-end-start-page"></a>Pagina iniziale di Front End
 

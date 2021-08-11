@@ -19,12 +19,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: db911db3631caebb0e767401f80c36bdac6c9c1b
-ms.sourcegitcommit: f39484688800a3d22f361e660d0eeba974a44fb1
+ms.openlocfilehash: 282a6646c321d14618b9aaede36918db8db58c774d7bd99ff79f15cac729f83e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "53420831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312694"
 ---
 # <a name="prepare-your-organizations-network-for-microsoft-teams"></a>Preparare la rete dell'organizzazione per Microsoft Teams 
 
@@ -306,7 +306,7 @@ I requisiti **minimi**, **consigliati** e **le prestazioni migliori** della larg
 
 - I requisiti **minimi** della larghezza di banda per le videochiamate sono fino a una risoluzione di 240p, la frequenza dei fotogrammi del contenuto di condivisione dello schermo adattiva da 1,875 a 7,5 fps e i video in modalità Insieme/Raccolta grande fino a una risoluzione di 540p.  
 
-- I requisiti **consigliati** per la larghezza di banda per le videochiamate sono fino a 1080p di risoluzione<sup>\*</sup>, frequenza dei fotogrammi del contenuto di condivisione dello schermo adattivi da 7,5 a 30 fps e video in modalità Insieme/Raccolta grande fino a una risoluzione di 1080p<sup>\*</sup>.  
+- I requisiti **consigliati** per la larghezza di banda per le videochiamate sono fino a 1080p di risoluzione <sup>\*</sup>, frequenza dei fotogrammi del contenuto di condivisione dello schermo adattivi da 7,5 a 30 fps e video in modalità Insieme/Raccolta grande fino a una risoluzione di 1080p <sup>\*</sup>.  
 
 - **Prestazioni ottimali** Guidance consente una maggiore fedeltà di video per riunioni con partecipanti di grandi dimensioni, ambienti con perdita elevata e contenuti di movimento più elevati con frequenze dei fotogrammi del contenuto di condivisione dello schermo adattive da 15 a 30 fps.
 

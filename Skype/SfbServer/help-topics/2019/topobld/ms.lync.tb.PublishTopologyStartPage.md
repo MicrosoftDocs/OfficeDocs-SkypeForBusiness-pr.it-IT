@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 2ea9613d-e74f-434b-aa51-eaaab206ff1e
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina Pubblica topologia viene visualizzata all'inizio del processo di pubblicazione. Leggere e verificare che le attività elencate siano state completate prima di continuare. Quando si è pronti per procedere, fare clic su Avanti. Se è necessario annullare il processo di pubblicazione, fare clic su Annulla.
-ms.openlocfilehash: 78b03f7c9daedae0891cbd6d7fd2a9ee471e1b4b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 97fb49a14b09b733aa43b648233547536739b09efb523e1e7b7869780ec257f7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54302750"
 ---
 # <a name="publish-topology"></a>Pubblicare topologia
  

@@ -14,21 +14,21 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d0e9b4d0-7110-4a29-b5e5-0e116ea6fa9c
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 5941bef38515732ff6f7fbe4678e3bb190060822
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: c0b005fe011c4de85a7fd4623aee8330b5ade6488c5e2b3a2616ad0c09095abc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49829526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54302740"
 ---
 # <a name="call-detail-recording-create-new-or-edit-existing"></a>Registrazione dettagli chiamata: crearne una nuova o modificarne una esistente
  
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
   
-- [Abilitare la registrazione dettagli chiamata in Skype for Business Server](../../manage/health-and-monitoring/enable-cdr.md)
+- [Abilitare la registrazione dettagli chiamata in Skype for Business Server 2015](../../manage/health-and-monitoring/enable-cdr.md)
     
-- [Specificare la conservazione dei dati cdR in Skype for Business Server](../../manage/health-and-monitoring/specify-retention-of-data.md)
+- [Specificare la conservazione dei dati cdR in Skype for Business Server 2015](../../manage/health-and-monitoring/specify-retention-of-data.md)
     
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
 

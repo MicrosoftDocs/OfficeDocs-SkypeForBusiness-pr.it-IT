@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b91045dae26d14ca1e902812a705e8fa99bdd164
-ms.sourcegitcommit: ea54990240fcdde1fb061489468aadd02fb4afc7
+ms.openlocfilehash: aa5102934cdeadf6b2418ab437bc0be28764307cda075139bfc6435c9d61948e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "43779192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278244"
 ---
 # <a name="enhance-my-service"></a>Migliorare il servizio
 
@@ -32,7 +32,7 @@ Questo articolo offre una panoramica dei requisiti per ottenere il massimo da se
 ## <a name="enhance-my-service-overview"></a>Panoramica dei servizi
 Dopo aver distribuito correttamente i servizi di audioconferenza o Sistema telefonico con piani per chiamate all'organizzazione e aver eseguito il servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno opportunità di migliorare i servizi. Fa parte della pianificazione continua del miglioramento del servizio, uno standard moderno per la gestione dei servizi cloud. 
 
-Un ottimo modo per assicurarsi di ottenere sempre il massimo dal proprio servizio è monitorare le roadmap pubbliche di [Teams per](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) i nuovi miglioramenti delle funzionalità che potrebbero essere di interesse per l'organizzazione. Se si ha accesso all'Microsoft 365 di amministrazione, si riceveranno regolarmente aggiornamenti sulle nuove e mutevoli funzionalità tramite il Centro messaggi. 
+Un ottimo modo per assicurarsi di ottenere sempre il massimo dal proprio servizio è monitorare le roadmap pubbliche di [Teams per](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) i nuovi miglioramenti delle funzionalità che potrebbero essere di interesse per l'organizzazione. Se si ha accesso al interfaccia di amministrazione di Microsoft 365 si riceveranno regolarmente aggiornamenti da Microsoft sulle nuove e mutevoli funzionalità tramite il Centro messaggi. 
 
 Inoltre, poiché le organizzazioni crescono e cambiano, è consigliabile rivedere e aggiornare i casi d'uso aziendali a intervalli regolari per assicurarsi che il servizio sia configurato in modo da soddisfare le esigenze correnti dell'organizzazione.  Assicurarsi di ricevere feedback reali dagli utenti e dai campioni interni stabilendo canali di feedback all'interno dell'organizzazione. Possono trattarsi di conversazioni informali, riunioni regolari o tramite un canale Teams o una Yammer community. 
 

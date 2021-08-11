@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6d8f9ff8-2a04-4175-9bf0-1ec5d78fd015
 description: 'Riepilogo: informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 862ffc56fd14c446a747a490daa0655e410e01d9
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 11871685d51a73f5f2e9dbcbaa2835060d8a7cdc59958af1785d689c3c9246ed
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119515"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54321689"
 ---
 # <a name="create-meeting-configuration-settings-in-skype-for-business-server"></a>Creare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
 **Riepilogo:** Informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.
   
-È possibile creare le impostazioni di configurazione delle riunioni utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+È possibile creare le impostazioni di configurazione delle riunioni Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell.
   
-## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare le impostazioni di configurazione delle riunioni utilizzando il Pannello di controllo di Skype for Business Server
+## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare le impostazioni di configurazione delle riunioni tramite Skype for Business Server pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Aprire il Pannello di controllo di Skype for Business Server.
+2.  Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Configurazione riunione.**
     
@@ -53,7 +53,7 @@ ms.locfileid: "51119515"
     
 8. Per impedire che gli utenti anonimi (non autenticati) vengano ammessi automaticamente, deselezionare la casella di controllo **Consenti utenti anonimi per impostazione predefinita**. Per impostazione predefinita, gli utenti anonimi vengono ammessi automaticamente alle riunioni.
     
-9. Per personalizzare l'invito alla riunione che viene inviato ai partecipanti, eseguire le operazioni seguenti. Si noti che la dimensione massima degli URL e del testo del piè di pagina personalizzato è di 1 KB. Se non si specifica un valore per le personalizzazioni, queste non verranno incluse nella riunione, ad eccezione di **URL Guida**. Se non si include un URL della Guida personalizzato, nell'invito verrà visualizzato l'URL della Guida predefinito per Skype for Business. 
+9. Per personalizzare l'invito alla riunione che viene inviato ai partecipanti, eseguire le operazioni seguenti. Si noti che la dimensione massima degli URL e del testo del piè di pagina personalizzato è di 1 KB. Se non si specifica un valore per le personalizzazioni, queste non verranno incluse nella riunione, ad eccezione di **URL Guida**. Se non si include un URL della Guida personalizzato, l'URL della Guida predefinito per Skype for Business verrà visualizzato nell'invito. 
     
    - Per personalizzare il logo che viene visualizzato nell'invito alla riunione, immettere il percorso del logo in **URL logo**. Il logo deve essere un'immagine GIF o JPG con una dimensione di 188 per 30 pixel. 
     

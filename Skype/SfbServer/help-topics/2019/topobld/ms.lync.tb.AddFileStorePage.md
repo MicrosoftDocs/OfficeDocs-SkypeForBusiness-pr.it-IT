@@ -15,18 +15,18 @@ localization_priority: Normal
 ms.assetid: 4e144ad2-6d28-4fad-8f01-2758f23e79db
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per definire un nuovo archivio file, specificare quanto segue:'
-ms.openlocfilehash: 413885ffb60e1308fef2984252edc8690917019d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ac382b7368e1be8753f802e47961b35ba881f1fceeefeab7642b284d761b4e89
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49833546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54302820"
 ---
 # <a name="add-file-store"></a>Aggiungere archivio file
  
 Per definire un nuovo archivio file, specificare quanto segue:
   
-- Il nome di dominio completo (FQDN) del server che ospiterà il nuovo archivio file. L'FQDN del server deve esistere nel DNS (Domain Name System) prima di pubblicare la topologia.
+- Il nome di dominio completo (FQDN) del server che ospiterà il nuovo archivio file. Il nome di dominio completo del server deve esistere nel DNS (Domain Name System) prima di pubblicare la topologia.
     
 - Il nome della condivisione file nel server host. La condivisione file deve esistere prima della pubblicazione della topologia. 
     

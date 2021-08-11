@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 324349df-ff11-40b5-93cf-4504e18b8985
 ROBOTS: NOINDEX, NOFOLLOW
-description: Skype for Business Server non supporta l'unione di una configurazione server perimetrale estesa legacy di Office Communications Server 2007 R2. Il server perimetrale espanso deve essere convertito in una configurazione di server perimetrale consolidato prima dell'unione delle informazioni sul server perimetrale.
-ms.openlocfilehash: f246f3edd9f59f1f72c7145ced6dc97fc222d258
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Skype for Business Server non supporta l'unione di un server perimetrale Office Communications Server 2007 R2 espanso. Il server perimetrale espanso deve essere convertito in una configurazione di server perimetrale consolidato prima dell'unione delle informazioni sul server perimetrale.
+ms.openlocfilehash: 34589e439fb2f6e31ea99cd047dd28e7e3c13aed229c4c511d6553c160907532
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49833476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285186"
 ---
 # <a name="legacy-merge-add-expanded-edge"></a>Unione legacy - Aggiungere Expanded Edge
  
-Skype for Business Server non supporta l'unione di una configurazione server perimetrale estesa legacy di Office Communications Server 2007 R2. Il server perimetrale espanso deve essere convertito in una configurazione di server perimetrale consolidato prima dell'unione delle informazioni sul server perimetrale. 
+Skype for Business Server non supporta l'unione di un server perimetrale Office Communications Server 2007 R2 espanso. Il server perimetrale espanso deve essere convertito in una configurazione di server perimetrale consolidato prima dell'unione delle informazioni sul server perimetrale. 
   
 

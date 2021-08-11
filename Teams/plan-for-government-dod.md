@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dd649507c0108e9a3d500f4d30cae46a3181d75d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 318ea793a037ecf47d48663e94b1c19e09fb2bcb8556b9f401f314d0bb9e998d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117854"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54339474"
 ---
 # <a name="plan-for-office-365-government---dod-deployments"></a>Pianificare le Office 365 Government - Distribuzioni DoD
 
@@ -90,7 +90,7 @@ Determinare i requisiti per la governance e come soddisfarli. Passare a [Pianifi
 
 Dopo aver eseguito l'onboarded a Office 365 Government - DoD, seguire il percorso di distribuzione consigliato descritto [in](./deploy-overview.md)Come implementare Microsoft Teams . Assicurarsi di interagire con il team di adozione e gestione delle modifiche e Teams campioni.
 
-È anche possibile collaborare con [FastTrack](https://www.microsoft.com/fasttrack) o con il partner scelto per l'onboarding del servizio.
+È anche possibile collaborare [con](https://www.microsoft.com/fasttrack) FastTrack o con il partner scelto per l'onboard del servizio.
 
 > [!NOTE]
 > Il client Teams Mac per ambienti DOD non è ancora supportato.
