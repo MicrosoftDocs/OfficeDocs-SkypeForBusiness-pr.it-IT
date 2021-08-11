@@ -15,17 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 50c799a3-90a0-4d58-8f8b-17eea56144dc
 description: Utilizzare la finestra di dialogo Assegna proprietà per specificare una descrizione e un ID sito di rete per più subnet alla volta. In Descrizione digitare la descrizione che si desidera utilizzare per le subnet selezionate. In ID sito di rete selezionare l'ID sito di rete che si desidera assegnare alle subnet selezionate. Per assegnare tali proprietà alle subnet selezionate, fare clic su OK.
-ms.openlocfilehash: 6124814aa8f730381d49eaea4568fe7177f313eb
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2a1e3ffb89c31be7538efb891a2f99d9dc0bcc4133189a085356aa08c6670997
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49826936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54307407"
 ---
 # <a name="assign-properties"></a>Assegnare proprietà
  
 Utilizzare la finestra di dialogo **Assegna proprietà** per specificare una descrizione e un ID sito di rete per più subnet alla volta. In **Descrizione** digitare la descrizione che si desidera utilizzare per le subnet selezionate. In **ID sito di rete** selezionare l'ID sito di rete che si desidera assegnare alle subnet selezionate. Per assegnare tali proprietà alle subnet selezionate, fare clic su **OK**.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
   
 

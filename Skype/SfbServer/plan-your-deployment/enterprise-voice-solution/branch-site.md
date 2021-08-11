@@ -16,27 +16,27 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c4d9dfcd-8baa-41ea-9677-48b0e429429d
 description: Informazioni sul trunking SIP nei siti di succursale in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: f8b875fca8adc1ac78c0b24cf3e53fab2ec2cd89
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 3a009e7e2a94cd9c172adb4cfb0496efc9a44a03749f6c40c6ee63fb321b7f62
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54306957"
 ---
 # <a name="branch-site-sip-trunking-in-skype-for-business-server"></a>Trunking SIP del sito di succursale in Skype for Business Server
  
 Informazioni sul trunking SIP nei siti di succursale in Skype for Business Server VoIP aziendale.
   
-In alcuni casi potrebbe essere necessario implementare il trunking SIP distribuito nei siti di succursale selezionati. Per determinare se è necessario un trunk SIP per un sito di succursale e per informazioni dettagliate sulle opzioni di topologia supportate per la distribuzione di trunk SIP nei siti di succursale, vedere [Trunking SIP in Skype for Business Server.](sip-trunking.md)
+In alcuni casi, potrebbe essere necessario implementare il trunking SIP distribuito nei siti di succursale selezionati. Per determinare se è necessario un trunk SIP per un sito di succursale e per informazioni dettagliate sulle opzioni di topologia supportate per la distribuzione dei trunk SIP nei siti di succursale, vedere [Trunking SIP in Skype for Business Server](sip-trunking.md).
   
 ## <a name="example-branch-site-sip-trunk-requirements-analysis"></a>Analisi dei requisiti di un trunk SIP per un sito di succursale di esempio
 
-Quando si decide di distribuire un trunk SIP del sito di succursale, è necessario eseguire un'analisi dei costi specifica del sito. Un'azienda con un sito centrale a Redmond, Washington e un sito di succursale di New York, ad esempio, deve eseguire un'analisi per determinare se implementare un trunk SIP dal sito di New York a un provider di servizi locale.
+Quando si decide di distribuire un trunk SIP del sito di succursale, è necessario eseguire un'analisi dei costi specifica del sito. Ad esempio, un'azienda con un sito centrale a Redmond, Washington e un sito di succursale a New York, deve eseguire un'analisi per determinare se implementare un trunk SIP dal sito di New York a un provider di servizi locale.
   
-Per stabilire se l'implementazione nel sito di Roma di un trunk SIP distribuito è una soluzione conveniente, identificare i numeri DID (Direct Inward Dialing) che utilizzeranno il trunk SIP e quindi analizzare il numero di chiamate effettuate dal sito di Roma ad aree diverse da Milano. È possibile eseguire la terminazione DID per il sito di succursale nel sito centrale. Ad esempio, il sito centrale Redmond può ospitare numeri DID per il sito di succursale di New York. Se il costo dell'implementazione di un trunk SIP distribuito è inferiore al costo di tali chiamate, prendere in considerazione l'implementazione di un trunk SIP nel sito di succursale di New York. 
+Per stabilire se l'implementazione nel sito di Roma di un trunk SIP distribuito è una soluzione conveniente, identificare i numeri DID (Direct Inward Dialing) che utilizzeranno il trunk SIP e quindi analizzare il numero di chiamate effettuate dal sito di Roma ad aree diverse da Milano. È possibile avere la terminazione DID per il sito di succursale nel sito centrale. Ad esempio, il sito centrale Redmond può ospitare numeri DID per il sito di succursale di New York. Se il costo dell'implementazione di un trunk SIP distribuito è inferiore al costo di tali chiamate, prendere in considerazione l'implementazione di un trunk SIP nel sito di succursale di New York. 
   
 ## <a name="other-branch-site-sip-trunk-requirements"></a>Altri requisiti per il trunk SIP di un sito di succursale
 
-La scelta tra la distribuzione di un trunk SIP anziché di un gateway si basa sulla differenza tra i costi delle chiamate interurbane PSTN per ogni opzione. Se si distribuisce un trunk SIP del sito di succursale, è inoltre necessario determinare i requisiti di resilienza e larghezza di banda. Se il collegamento tra il sito di succursale e il sito centrale è resiliente e dispone di una larghezza di banda sufficiente, è possibile distribuire un trunk SIP o un gateway. Non è necessario distribuire un Survivable Branch Appliance nel sito di succursale. Se il collegamento tra il sito di succursale e il sito centrale non è resiliente, distribuire un Survivable Branch Appliance o un Survivable Branch Server con un gateway o un trunk SIP nel sito di succursale. 
+La scelta tra la distribuzione di un trunk SIP anziché di un gateway si basa sulla differenza tra i costi delle chiamate interurbane PSTN per ogni opzione. Se si distribuisce un trunk SIP del sito di succursale, è inoltre necessario determinare i requisiti di resilienza e larghezza di banda. Se il collegamento tra il sito di succursale e il sito centrale è resiliente e dispone di larghezza di banda sufficiente, è possibile distribuire un trunk SIP o un gateway. Non è necessario distribuire un Survivable Branch Appliance nel sito di succursale. Se il collegamento tra il sito di succursale e il sito centrale non è resiliente, distribuire un Survivable Branch Appliance o un Survivable Branch Server con un gateway o un trunk SIP nel sito di succursale. 
   
 

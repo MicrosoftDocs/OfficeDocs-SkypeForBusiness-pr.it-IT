@@ -88,8 +88,8 @@ additionalContent:
   sections:
     - title: Serve ulteriore assistenza?
     - items:
-        - title: Coinvolgere FastTrack per assistenza per la distribuzione
-          summary: 'Quando Teams di distribuzione richiedono un''assistenza più coinvolta, i clienti con abbonamenti idonei possono coinvolgere FastTrack per ottenere supporto.'
+        - title: Coinvolgere FastTrack assistenza per la distribuzione
+          summary: 'Quando Teams di distribuzione richiedono un''assistenza più coinvolta, i clienti con abbonamenti idonei possono coinvolgere FastTrack supporto.'
           url: 'https://www.microsoft.com/fasttrack'
         - title: Trovare un partner Microsoft
           summary: Servono altre indicazioni? I provider di soluzioni Microsoft consentono di gestire la tecnica e la logistica dell'aggiornamento.

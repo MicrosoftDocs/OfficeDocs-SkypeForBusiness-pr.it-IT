@@ -23,12 +23,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: 'Vedere Microsoft Teams procedura per assegnare una licenza e un ID conferenza telefonica con accesso esterno a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno. '
-ms.openlocfilehash: 96a8995b995340642c6b58be9d5062eacd3cd29c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 24d779a0740e5f0a8c0b305e4b441c01b628571f9ddf3292a1d92cd6c2d3ecb3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276412"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-your-organization-in-microsoft-teams"></a>Gestire le impostazioni di audioconferenza per l'organizzazione in Microsoft Teams
 
@@ -40,13 +40,13 @@ Potrebbe essere più facile visualizzare tutte le impostazioni di audioconferenz
 ## <a name="assign-an-audio-conferencing-license"></a>Assegnare una licenza di audioconferenza
 
 > [!NOTE]
-> Non è possibile assegnare licenze usando Teams. È necessario usare l'interfaccia Microsoft 365 di amministrazione. Vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) 
+> Non è possibile assegnare licenze usando Teams. È necessario usare il interfaccia di amministrazione di Microsoft 365. Vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md) 
   
  **Per assegnare una licenza per un utente**
   
 1. Accedere a Microsoft 365 con l'account aziendale o dell'istituto di istruzione.
     
-2. Nel riquadro di spostamento sinistro dell Microsoft 365 di amministrazione passare a Utenti utenti attivi e quindi selezionare l'utente o gli utenti nell'elenco  >  degli utenti disponibili.
+2. Nel riquadro di spostamento sinistro del **interfaccia di amministrazione di Microsoft 365**, passare a **Utenti** utenti attivi e quindi selezionare l'utente o gli utenti nell'elenco  >  degli utenti disponibili.
     
     > [!NOTE]
     > Per assegnare licenze a un massimo di 20 utenti contemporaneamente, puoi ricorrere all'elenco a discesa **Selezionare una visualizzazione** e scegliere una delle opzioni oppure creare una visualizzazione personalizzata. Quindi fai clic su **Modifica**, due volte su **Avanti**, seleziona la licenza e fai clic su **Invia**.  

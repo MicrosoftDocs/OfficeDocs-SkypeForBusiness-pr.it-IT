@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: bbae05f9-d8de-40dc-8968-d225dcde80e4
-description: Il cmdlet Search-CcLog esegue la ricerca nei registri delle chiamate in ingresso e in uscita nella directory dei registri dell'appliance Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: a512d715f1640184217ce07e0b666954a6541fd2
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Search-CcLog esegue una ricerca nei registri delle chiamate in ingresso e in uscita nella directory Skype for Business Cloud Connector Edition registro dell'appliance.
+ms.openlocfilehash: 5fd062295ac9145660ca9a53f56973f77783cd9730993d958c7348b7761c4387
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824232"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54306607"
 ---
 # <a name="search-cclog"></a>Search-CcLog
  
-Il cmdlet Search-CcLog esegue la ricerca nei registri delle chiamate in ingresso e in uscita nella directory dei registri dell'appliance Skype for Business Cloud Connector Edition.
+Il cmdlet Search-CcLog esegue una ricerca nei registri delle chiamate in ingresso e in uscita nella directory Skype for Business Cloud Connector Edition registro dell'appliance.
   
 ```powershell
 Search-CcLog [[-StartTime] <datetime>] [[-EndTime] <datetime>] [[-FileName] <string>]
@@ -33,7 +33,7 @@ Search-CcLog [[-StartTime] <datetime>] [[-EndTime] <datetime>] [[-FileName] <str
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente viene eseguita la ricerca nei registri delle chiamate in ingresso e in uscita nella directory dei registri dell'appliance utilizzando il nome file predefinito:
+Nell'esempio seguente viene eseguita una ricerca nei registri delle chiamate in ingresso e in uscita nella directory di registro dell'appliance utilizzando il nome file predefinito:
   
 ```powershell
 Search-CcLog -StartTime "8/31/2012 8:00AM" -EndTime "8/31/2012 6:00PM"
@@ -41,7 +41,7 @@ Search-CcLog -StartTime "8/31/2012 8:00AM" -EndTime "8/31/2012 6:00PM"
 
 ### <a name="example-2"></a>Esempio 2
 
-Nell'esempio seguente viene eseguita la ricerca nei registri chiamate in ingresso e in uscita utilizzando il percorso e il nome del file specificato:
+Nell'esempio seguente viene eseguita una ricerca nei registri delle chiamate in ingresso e in uscita utilizzando il percorso e il nome del file specificato:
   
 ```powershell
 Search-CcLog -StartTime "8/31/2012 8:00AM" -EndTime "8/31/2012 6:00PM" -FileName "C:\Log\LogFile.log"
@@ -57,8 +57,8 @@ Il cmdlet Search-CsClsLogging offre un'opzione della riga di comando per la rice
 
 |**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-|StartTime  <br/> | Obbligatorio <br/> |System.Datetime  <br/> | Data e ora di inizio della ricerca delle voci di log. Specificate nel fuso orario locale. <br/> |
-|EndTime  <br/> |Obbligatorio  <br/> |System.Datetime  <br/> |Data e ora di fine delle voci di registro in cui eseguire la ricerca. Specificate nel fuso orario locale.  <br/> |
+|StartTime  <br/> | Obbligatoria <br/> |System.Datetime  <br/> | Data e ora di inizio della ricerca delle voci di log. Specificate nel fuso orario locale. <br/> |
+|EndTime  <br/> |Obbligatoria  <br/> |System.Datetime  <br/> |Data e ora di fine della ricerca delle voci di registro. Specificate nel fuso orario locale.  <br/> |
 |FileName  <br/> |Obbligatorio  <br/> |System.String  <br/> |Specifica il percorso completo del file di testo contenente i risultati della ricerca.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
@@ -69,7 +69,7 @@ Nessuna. Il cmdlet Search-CcLog non accetta input da pipeline.
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

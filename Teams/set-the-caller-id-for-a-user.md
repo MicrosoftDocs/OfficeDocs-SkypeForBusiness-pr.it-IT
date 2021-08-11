@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sul numero Microsoft 365 e Office 365 l'ID chiamante predefinito (il numero di telefono assegnato dall'utente), noto anche come ID linea chiamante. È possibile modificare o bloccare l'ID chiamante di un utente.
-ms.openlocfilehash: 2e94dde2c3271e2b31e4c679c5e020c121d28c25
-ms.sourcegitcommit: 41e2e97b5856e727e42ebf5bfebceede9af56481
+ms.openlocfilehash: ea3d9676caf0984c19137abe286f792aacfcceca393fd4ccfeff9117edef9011
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "53388651"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54275952"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 

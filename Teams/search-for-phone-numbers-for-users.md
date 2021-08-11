@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come cercare numeri di telefono che è possibile assegnare agli utenti, in base al paese o all'area geografica e alla città, e specificare la quantità di numeri necessaria.
-ms.openlocfilehash: 3b62812829f2c8742fb9910b1997b64101fe2ff8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 732f2128be87e71c2ce4e7d1a2ff618b5bf4960d07080bf0fa23218a736e9ad7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117254"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54275972"
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
@@ -80,4 +80,4 @@ Se serve aiuto per ottenere i numeri di telefono, è possibile [vedere](/microso
 
 [Termini e condizioni per le chiamate al numero di emergenza](./emergency-calling-terms-and-conditions.md)
 
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)

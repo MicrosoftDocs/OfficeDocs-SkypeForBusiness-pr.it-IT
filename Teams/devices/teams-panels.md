@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo fornisce una panoramica delle funzionalità supportate dai Microsoft Teams di lavoro.
-ms.openlocfilehash: 5588448bfbde95747c7f02f150deae24de51f55a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: fcb482303eb82990936ee090be6d8d78146f57c1f9ba78f967803bd3f37a599b
+ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102142"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54591120"
 ---
 # <a name="microsoft-teams-panels"></a>Microsoft Teams di lavoro
 
@@ -48,7 +48,7 @@ Per altre informazioni su queste funzionalità e su come usarle, vedere Usare Mi
 È possibile acquisire i Teams da uno dei partner seguenti:
 
 - Crestron
-- (Prossimamente) Yealink
+- Yealink
 
 ## <a name="teams-panels-requirements"></a>Teams dei pannelli
 
@@ -105,7 +105,7 @@ La pianificazione della configurazione e della distribuzione riguarda le aree ch
 
 Ogni Teams pannello richiede un account Microsoft 365 risorsa sala. Usare le credenziali dell'account della risorsa per accedere all Microsoft Teams app nel dispositivo dei pannelli.
 
-Per configurare un account Microsoft 365 per Teams, è consigliabile acquistare una licenza [Microsoft Teams Rooms Standard.](#license-requirement) Per informazioni su come creare un account delle risorse e assegnare una licenza, vedere Creare un account delle risorse usando l'interfaccia di amministrazione di Microsoft 365 [risorse.](resource-account-ui.md)
+Per configurare un account Microsoft 365 per Teams, è consigliabile acquistare una licenza [Microsoft Teams Rooms Standard.](#license-requirement) Per informazioni su come creare un account delle risorse e assegnare una licenza, vedere Creare un [account delle risorse usando](resource-account-ui.md)il interfaccia di amministrazione di Microsoft 365 .
 
 > [!NOTE]
 >

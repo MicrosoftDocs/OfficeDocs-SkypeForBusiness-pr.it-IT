@@ -18,12 +18,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Ottenere una panoramica degli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi a Teams.
-ms.openlocfilehash: f30bdc825caf7feadbb09bd4bbe65a4d5771a6a6
-ms.sourcegitcommit: 3704577b1424c063fd925a58a6f6d0b3ff2c8148
+ms.openlocfilehash: a0d8884df95e153544e5d0108af8b23af7e464d59480350c7422bfdfdbb6e113
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53278649"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54276122"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
@@ -93,7 +93,7 @@ Quando si trasferiscono i numeri di telefono in Teams, è possibile trasferire t
   
 - **Porta completa** Questo è il momento in cui trasferisci tutti i tuoi numeri dal provider di servizi corrente a Teams. Quando viene chiesto di specificare i numeri di  telefono da trasferire, è necessario includere il numero di telefono di fatturazione (BTN) insieme a tutti gli altri numeri di telefono dell'account.
 
-    Si supponga ad esempio che il numero BTN sia *+1 425-555-1234* e che si vogliano eseguire il port di tutti i 25 numeri di telefono (*+1 425-555-1235-1259).* Quando si seguono le istruzioni seguenti per trasferire i numeri, immettere: **+14255551234 - +14255551259**.
+    Si supponga ad esempio che il numero BTN sia *+1 425-555-1234* e che si vogliano eseguire il port di tutti i 25 numeri di telefono (*+1 425-555-1235-1259).* Quando segui le istruzioni seguenti per trasferire i tuoi numeri, immetti: **+14255551234 - +14255551259**.
 
 - **Porta parziale** Questo è il momento in cui trasferisci solo alcuni dei tuoi numeri di telefono dal provider di servizi corrente a Teams. Per convertire alcuni dei numeri di telefono collegati allo stesso BTN, **** non deve includere ** il BTN insieme a tutti gli altri numeri di telefono dell'account.
 
@@ -177,4 +177,4 @@ Ecco gli errori più comuni che i clienti commettono quando effettuano la portab
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
-- [Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+- [Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)

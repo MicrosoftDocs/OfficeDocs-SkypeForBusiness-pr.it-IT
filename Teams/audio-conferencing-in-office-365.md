@@ -25,15 +25,15 @@ ms.custom:
 - ms.teamsadmincenter.audioconferencing.overview
 - seo-marvel-apr2020
 description: Informazioni su come i servizi di audioconferenza in Microsoft 365 o Office 365 gli utenti possono accedere alle riunioni dal proprio telefono.
-ms.openlocfilehash: bce9aee26fa1fa9cfd8a365074bd67fcc79bde6f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 166ec76e8f63373056f73efd647b6810818a53ca410594ca06dc2f137e6ece02
+ms.sourcegitcommit: 02485b5f4bc8de106b064adf5c96dfc041f64e34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111272"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "57799067"
 ---
 # <a name="audio-conferencing-in-microsoft-365"></a>Audioconferenza in Microsoft 365
-Le audioconferenze Microsoft 365 e Office 365 consentono agli utenti di accedere alle riunioni dal proprio telefono. L’audioconferenza permette di avere fino a 250 partecipanti al telefono.
+Le audioconferenze Microsoft 365 e Office 365 consentono agli utenti di accedere alle riunioni dal proprio telefono. L'audioconferenza consente fino a 1000 partecipanti al telefono.
 
 ## <a name="what-is-audio-conferencing"></a>Informazioni sulle audioconferenze
 Accedere alle riunioni tramite telefono è molto utile per gli utenti che sono in viaggio e non possono partecipare a una riunione usando le app Skype for Business o Microsoft Teams su laptop o dispositivi mobili. Esistono tuttavia altre situazioni in cui l'uso di un telefono per partecipare a una riunione di Skype for Business o Microsoft Teams può essere un'opzione migliore rispetto all'uso di un'app su un computer, ad esempio quando:

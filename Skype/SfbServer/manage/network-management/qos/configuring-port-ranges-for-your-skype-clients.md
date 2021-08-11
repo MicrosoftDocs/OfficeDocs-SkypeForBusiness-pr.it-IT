@@ -14,21 +14,21 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Questo articolo descrive come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
-ms.openlocfilehash: 9cd5fe3fa84c4acd9365e02c0e5801b63d5497d1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: In questo articolo viene descritto come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
+ms.openlocfilehash: d2d38ff777322aa952efd427c7e528afbb0e333252aabec2a943b1a9007d0ca7
+ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122430"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54591140"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-clients-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i client in Skype for Business Server
 
-Questo articolo descrive come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
+In questo articolo viene descritto come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
 
 ## <a name="configure-port-ranges"></a>Configurare gli intervalli di porte
 
-Per impostazione predefinita, le applicazioni client Skype for Business possono utilizzare qualsiasi porta tra le porte 1024 e 65535 quando sono coinvolte in una sessione di comunicazione; ciò è dovuto al fatto che intervalli di porte specifici non vengono abilitati automaticamente per i client. Per utilizzare la qualità del servizio, tuttavia, è necessario riassegnare i vari tipi di traffico (audio, video, supporti, condivisione applicazioni e trasferimento di file) a una serie di intervalli di porte univoci. A tale scopo, è possibile utilizzare Set-CsConferencingConfiguration cmdlet.
+Per impostazione predefinita, Skype for Business applicazioni client possono utilizzare qualsiasi porta tra le porte 1024 e 65535 quando sono coinvolte in una sessione di comunicazione; ciò è dovuto al fatto che intervalli di porte specifici non vengono abilitati automaticamente per i client. Per utilizzare la qualità del servizio, tuttavia, è necessario riassegnare i vari tipi di traffico (audio, video, supporti, condivisione applicazioni e trasferimento di file) a una serie di intervalli di porte univoci. A tale scopo, è possibile utilizzare Set-CsConferencingConfiguration cmdlet.
 
 > [!NOTE]  
 > Gli utenti finali non possono apportare queste modifiche. Le modifiche alle porte possono essere apportate solo dagli amministratori che utilizzano il cmdlet Set-CsConferencingConfiguration.
@@ -36,51 +36,48 @@ Per impostazione predefinita, le applicazioni client Skype for Business possono 
 
 È possibile determinare gli intervalli di porte attualmente utilizzati per le sessioni di comunicazione eseguendo il comando seguente da Skype for Business Server Management Shell:
 
-    Get-CsConferencingConfiguration
+**Get-CsConferencingConfiguration**
 
 Presupponendo che non siano state apportate modifiche alle impostazioni di conferenza dopo l'installazione di Skype for Business Server, è consigliabile ottenere informazioni che includono questi valori di proprietà:
 
-    ClientMediaPortRangeEnabled : False
-    ClientAudioPort             : 5350
-    ClientAudioPortRange        : 40
-    ClientVideoPort             : 5350
-    ClientVideoPortRange        : 40
-    ClientAppSharingPort        : 5350
-    ClientAppSharingPortRange   : 40
-    ClientFileTransferPort      : 5350
-    ClientTransferPortRange     : 40
+ClientMediaPortRangeEnabled : False<br/>
+ClientAudioPort : 5350<br/>
+ClientAudioPortRange : 40<br/>
+ClientVideoPort : 5350<br/>
+ClientVideoPortRange : 40<br/>
+ClientAppSharingPort : 5350<br/>
+ClientAppSharingPortRange : 40<br/>
+ClientFileTransferPort : 5350<br/>
+ClientTransferPortRange : 40<br/>
 
 Se si osserva attentamente l'output precedente, si noteranno due aspetti importanti. Innanzitutto, la proprietà ClientMediaPortRangeEnabled è impostata su False:
 
-    ClientMediaPortRangeEnabled : False
+**ClientMediaPortRangeEnabled : False**
 
 Questo è importante perché, quando questa proprietà è impostata su False, i client Skype for Business utilizzeranno qualsiasi porta disponibile tra le porte 1024 e 65535 quando partecipano a una sessione di comunicazione. ciò è vero indipendentemente da qualsiasi altra impostazione di porta (ad esempio, ClientMediaPort o ClientVideoPort). Se si desidera limitare l'utilizzo a un set di porte specificato (operazione che si desidera eseguire se si prevede di implementare la qualità del servizio), è innanzitutto necessario abilitare gli intervalli di porte multimediali client. Questa operazione può essere eseguita utilizzando il comando Windows PowerShell seguente:
 
-    Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True
+**Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True**
 
 Il comando precedente abilita gli intervalli di porte multimediali dei client per la raccolta globale delle impostazioni di configurazione delle conferenze. Tali impostazioni, tuttavia, possono essere applicate anche all'ambito del sito e/o all'ambito del servizio (solo per il servizio Conferencing Server). Per abilitare gli intervalli di porte multimediali dei client per un determinato sito o server, specificare l'identità del sito o del server quando si chiama Set-CsConferencingConfiguration:
 
-    Set-CsConferencingConfiguration -Identity "site:Redmond" -ClientMediaPortRangeEnabled $True
+**Set-CsConferencingConfiguration -Identity "site:Redmond" -ClientMediaPortRangeEnabled $True**
 
 In alternativa, è possibile usare questo comando per abilitare contemporaneamente gli intervalli di porte per tutte le impostazioni di configurazione delle conferenze:
 
-    Get-CsConferencingConfiguration | Set-CsConferencingConfiguration  -ClientMediaPortRangeEnabled $True
+**Get-CsConferencingConfiguration | Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True**
 
 Il secondo aspetto importante da osservare è l'output di esempio. Questo mostra che, per impostazione predefinita, gli intervalli di porte multimediali impostati per ogni tipo di traffico di rete sono identici:
 
-    ClientAudioPort             : 5350
-    ClientVideoPort             : 5350
-    ClientAppSharingPort        : 5350
-    ClientFileTransferPort      : 5350
+ClientAudioPort : 5350<br/>
+ClientVideoPort : 5350<br/>
+ClientAppSharingPort : 5350<br/>
+ClientFileTransferPort : 5350<br/>
 
 Per implementare QoS, è necessario che ciascuno di questi intervalli di porte sia univoco. È ad esempio possibile configurare gli intervalli di porte in questo modo:
 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -118,31 +115,28 @@ Nella tabella precedente gli intervalli di porte dei client rappresentano un sub
 
 Si sarà inoltre notato che sono state riservate 8348 porte per la condivisione applicazioni sui server e che solo 20 porte sono state messe da parte per la condivisione applicazioni sui client. Anche questo è consigliato, ma non è una regola difficile e veloce. In generale, è possibile considerare ogni porta disponibile per rappresentare una singola sessione di comunicazione: se sono disponibili 100 porte in un intervallo di porte, significa che il computer in questione potrebbe partecipare al massimo a 100 sessioni di comunicazione in un determinato momento. Poiché è probabile che i server verranno coinvolti in un numero di conversazioni di gran lunga superiore a quelle dei client, è ragionevole aprire molte più porte sui server che non sui client. La scelta di riservare 20 porte per la condivisione applicazioni su un client significa che un utente può partecipare contemporaneamente a 20 sessioni di condivisione applicazioni sul dispositivo specificato. Questa configurazione dovrebbe soddisfare la maggior parte degli utenti.
 
-Per assegnare gli intervalli di porte precedenti alla raccolta globale di impostazioni di configurazione delle conferenze, è possibile utilizzare il seguente comando di Skype for Business Server Management Shell:
+Per assegnare gli intervalli di porte precedenti alla raccolta globale di impostazioni di configurazione delle conferenze, è possibile utilizzare il comando Skype for Business Server Management Shell seguente:
 
-    Set-CsConferencingConfiguration -Identity global -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20
+**Set-CsConferencingConfiguration -Identity global -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20**
 
 In alternativa, usare il comando per assegnare questi stessi intervalli di porte per tutte le impostazioni di configurazione delle conferenze:
 
-    Get-CsConferencingConfiguration | Set-CsConferencingConfiguration -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20
+**Get-CsConferencingConfiguration | Set-CsConferencingConfiguration -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20**
 
-I singoli utenti devono disconnettersi da Skype for Business e quindi eseguire di nuovo l'accesso prima che queste modifiche appartienino effettivamente.
+I singoli utenti devono disconnettersi da Skype for Business e quindi eseguire di nuovo l'accesso prima che queste modifiche avranno effetto.
 
 > [!NOTE]  
 > È anche possibile abilitare gli intervalli di porte multimediali dei client e quindi assegnarli con un singolo comando. Ad esempio:<BR><CODE>Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20</CODE>
 
-## <a name="configure-quality-of-service-policies-for-clients-running-on-windows-10"></a>Configurare i criteri di qualità del servizio per i client in esecuzione in Windows 10
+## <a name="configure-quality-of-service-policies-for-clients-running-on-windows-10"></a>Configurare i criteri di qualità del servizio per i client in Windows 10
 
-Oltre a specificare gli intervalli di porte per l'utilizzo da parte dei client Skype for Business, devi anche creare criteri di qualità del servizio separati che verranno applicati ai computer client. I criteri di qualità del servizio creati per i server per conferenze, applicazioni e Mediation Server non devono essere applicati ai computer client. Queste informazioni si applicano solo ai computer che eseguono il client Skype for Business e Windows 10.
+Oltre a specificare gli intervalli di porte per l'utilizzo da parte dei client di Skype for Business, è inoltre necessario creare criteri di qualità del servizio separati che verranno applicati ai computer client. I criteri di qualità del servizio creati per i server per conferenze, applicazioni e Mediation Server non devono essere applicati ai computer client. Queste informazioni si applicano solo ai computer che eseguono Skype for Business client e Windows 10.
 
 Nell'esempio seguente viene utilizzato questo set di intervalli di porte per creare un criterio audio e un criterio video:
 
 
 <table>
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -175,7 +169,7 @@ Nell'esempio seguente viene utilizzato questo set di intervalli di porte per cre
 </tbody>
 </table>
 
-Per creare criteri audio di qualità del servizio per i computer Windows 10, accedere innanzitutto a un computer in cui è stato installato Gestione Criteri di gruppo. Aprire Gestione Criteri di gruppo (fare clic sul pulsante **Start**, scegliere **Strumenti** di amministrazione e quindi Gestione Criteri di **gruppo**), quindi eseguire la procedura seguente:
+Per creare criteri audio di qualità del servizio per Windows 10 computer, accedere innanzitutto a un computer in cui è stato installato Gestione Criteri di gruppo. Aprire Gestione Criteri di gruppo (fare clic sul pulsante **Start**, scegliere **Strumenti** di amministrazione e quindi Gestione Criteri di **gruppo**), quindi eseguire la procedura seguente:
 
 1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer client si trovano in un'unità organizzativa denominata Client, il nuovo criterio deve essere creato nell'unità organizzativa Client.
 
@@ -185,11 +179,11 @@ Per creare criteri audio di qualità del servizio per i computer Windows 10, acc
 
 4.  Fare clic con il pulsante destro del mouse sul criterio appena creato e quindi scegliere **Modifica**.
 
-5.  Nell'Editor Gestione Criteri di gruppo espandere **Configurazione computer,** Espandere Impostazioni **di Windows,** fare clic con il pulsante destro del mouse su **QoS** basata su criteri e quindi scegliere **Crea nuovo criterio.**
+5.  Nell'Editor Gestione Criteri di gruppo espandere **Configurazione computer,** espandere Windows Impostazioni , **fare** clic con il pulsante destro del mouse su **QoS** basata su criteri e quindi scegliere **Crea nuovo criterio**.
 
 6.  Nella pagina di apertura della finestra di dialogo **QoS** basata su criteri digitare un nome per il nuovo criterio nella **casella** Nome. Selezionare **Specifica valore DSCP** e impostare il valore su **46**. Lasciare non selezionata l'opzione **Specifica velocità in uscita**, quindi fare clic su **Avanti**.
 
-7.  Nella pagina successiva selezionare **Solo** le applicazioni con questo nome eseguibile, immettere **Lync.exe** come nome e quindi fare clic su **Avanti.** Questa impostazione indica al criterio di assegnare solo la priorità al traffico corrispondente dal client Skype for Business.
+7.  Nella pagina successiva selezionare **Solo** le applicazioni con questo nome eseguibile, immettere **Lync.exe** come nome e quindi fare clic su **Avanti.** Questa impostazione indica al criterio di assegnare solo la priorità al traffico corrispondente Skype for Business client.
 
 8.  Nella terza pagina verificare che siano selezionati sia Qualsiasi indirizzo **IP** di origine che Qualsiasi indirizzo **IP** di destinazione e quindi fare clic su **Avanti.** Queste due impostazioni assicurano che i pacchetti vengano gestiti indipendentemente dal computer (indirizzo IP) di provenienza e dal computer (indirizzo IP) di destinazione.
 
@@ -207,7 +201,7 @@ Dopo aver creato il criterio QoS per l'audio, è necessario creare un secondo cr
 
 Se si decide di creare un criterio per la gestione del traffico di condivisione applicazioni, apportare le sostituzioni seguenti:
 
-  - Utilizzare un nome di criterio diverso (e univoco), ad esempio Condivisione applicazioni **di Skype for Business Server.**
+  - Utilizzare un nome di criterio diverso (e univoco), ad esempio Skype for Business Server **Condivisione applicazioni**.
 
   - Impostare il valore DSCP su **24** anziché su 46. Di nuovo, non è rilevante che questo valore sia 24, bensì è sufficiente che sia diverso dai valori utilizzati per l'audio e per il video.
 
@@ -215,7 +209,7 @@ Se si decide di creare un criterio per la gestione del traffico di condivisione 
 
 Per un criterio di trasferimento file:
 
-  - Usa un nome di criterio diverso (e univoco), ad esempio Trasferimenti **file di Skype for Business Server.**
+  - Utilizzare un nome di criterio diverso (e univoco), ad esempio Skype for Business Server **trasferimenti di file**.
 
   - Impostare il valore DSCP su **14**. Di nuovo, non è rilevante che questo valore sia 14, bensì è sufficiente che sia un codice DSCP univoco.
 
@@ -223,7 +217,7 @@ Per un criterio di trasferimento file:
 
 I nuovi criteri creati non saranno effettivi finché Criteri di gruppo non verrà aggiornato nei computer client. Benché Criteri di gruppo venga aggiornato automaticamente a intervalli regolari, è possibile effettuare un aggiornamento immediato eseguendo il comando seguente in ogni computer in cui è necessario aggiornare Criteri di gruppo:
 
-    Gpupdate.exe /force
+**Gpupdate.exe /force**
 
 Questo comando può essere eseguito da qualsiasi finestra dei comandi eseguita con credenziali di amministratore. Per eseguire una finestra dei comandi con credenziali di amministratore, fare clic sul pulsante **Start**, fare clic con il pulsante destro del mouse su **Prompt dei comandi** e quindi scegliere **Esegui come amministratore**.
 

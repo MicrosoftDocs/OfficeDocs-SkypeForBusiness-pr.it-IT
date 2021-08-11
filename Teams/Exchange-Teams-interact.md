@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6d908373cf3e8df6429823d9245cf53a52fbf901
-ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
+ms.openlocfilehash: e2088272756886b210ae99b32f8c3148d237b10ccb367702745f0327cc4e2896
+ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796540"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54590780"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -45,12 +45,12 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 **Azioni supportate:**
 
-| La cassetta postale dell'utente è ospitata in:                                        | eDiscovery       | Blocco&nbsp;a fini giudiziari    | Conservazione  | Gestione di team e canali | Creare e visualizzare riunioni in Teams | Modificare l’immagine del profilo | Cronologia delle chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Messaggi vocali  | Aggiungere e configurare connettori | Aggiungere e configurare schede | Aggiungere e configurare bot |
-|---------------------------------------------------------------------|------------------|--------------------|------------|-----------------------|-----------------------------------|-----------------------------|--------------|-----------------|-------------------------|------------|------------------------------|------------------------|------------------------|
-| **Exchange Online**                                                 | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì        | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì        | Sì                          | Sì                    | Sì                    |
-| **Exchange Online Dedicated vNext**                                 | Sì <sup>1</sup> | Sì <sup>1</sup>   | Sì        | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì        | Sì                          | Sì                    | Sì                    |
-| **Exchange Online Dedicated – legacy** (sincronizzazione con Azure AD obbligatoria)  | Sì <sup>1</sup> | Sì <sup>1,2</sup> | Sì <sup>3</sup> | Sì                   | No                                | No                          | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>                   | Sì                    | Sì                    |
-| **Exchange locale** (sincronizzazione con Azure AD) | Sì <sup>1,9</sup> | Sì <sup>1</sup>   | Sì <sup>3</sup> | Sì                   | Sì <sup>8</sup>         | Sì                          | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>                   | Sì                    | Sì                    |
+| La cassetta postale dell'utente è ospitata in:                                       | eDiscovery         | Blocco&nbsp;a fini giudiziari    | Conservazione        | Gestione di team e canali | Creare e visualizzare riunioni in Teams | Modificare l’immagine del profilo | Cronologia delle chiamate | Gestire i contatti | Accedere ai contatti di Outlook | Messaggi vocali        | Aggiungere e configurare connettori | Aggiungere e configurare schede | Aggiungere e configurare bot |
+|--------------------------------------------------------------------|--------------------|--------------------|------------------|-----------------------|-----------------------------------|-----------------------------|--------------|-----------------|-------------------------|------------------|------------------------------|------------------------|------------------------|
+| **Exchange Online**                                                | Sì <sup>1</sup>   | Sì <sup>1</sup>   | Sì              | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì              | Sì                          | Sì                    | Sì                    |
+| **Exchange Online Dedicated vNext**                                | Sì <sup>1</sup>   | Sì <sup>1</sup>   | Sì              | Sì                   | Sì                               | Sì<sup>7</sup>             | Sì          | Sì             | Sì <sup>6</sup>        | Sì              | Sì                          | Sì                    | Sì                    |
+| **Exchange Online Dedicated – legacy** (sincronizzazione con Azure AD obbligatoria) | Sì <sup>1</sup>   | Sì <sup>1,2</sup> | Sì <sup>3</sup> | Sì                   | No                                | No                          | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>             | Sì                    | Sì                    |
+| **Exchange locale** (sincronizzazione con Azure AD)                        | Sì <sup>1,9</sup> | Sì <sup>1</sup>   | Sì <sup>3</sup> | Sì                   | Sì <sup>8</sup>                  | Sì<sup>10</sup>            | Sì          | Sì             | No                      | Sì <sup>4</sup> | Sì <sup>5</sup>             | Sì                    | Sì                    |
 
 <sup>1</sup> eDiscovery e Blocco a fini giudiziari per la conformità nei messaggi di canale sono supportati per tutte le opzioni di hosting.
 
@@ -64,11 +64,13 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 <sup>6</sup> Solo i contatti nella cartella dei contatti predefinita. L'accesso ad altre cartelle o sottocartelle dei contatti non è supportato.
 
-<sup>7</sup> Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul web](/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo, quindi l'immagine porfile non verrà sincronizzata con i team se l'amministratore modifica la foto.
+<sup>7</sup> Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul web](/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo, quindi l'immagine del profilo non verrà sincronizzata con i team se l'amministratore modifica la foto.
 
 <sup>8</sup> È necessario soddisfare i requisiti elencati nella sezione [Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises).
 
 <sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere Cercare Teams chat per gli [utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
+
+<sup>10</sup> Gli utenti locali possono usare Teams per aggiornare l'immagine del profilo anche se il Outlook sul criterio cassetta postale `SetPhotoEnabled` Web è impostato su `false` .
 
 ## <a name="requirements-to-get-the-most-out-of-microsoft-teams"></a>Requisiti per sfruttare al meglio Microsoft Teams
 

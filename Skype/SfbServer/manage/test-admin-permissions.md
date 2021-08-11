@@ -11,25 +11,25 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Come testare le autorizzazioni di amministratore in Skype for Business Server
-ms.openlocfilehash: 535911c26bac5e3f1dadb2c8d59cffe82dc20c7a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1c828eeb965ee98aae72b00c7da9fa65016d2ed90e56c7cc982a59763c2703ae
+ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122400"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54590770"
 ---
 # <a name="testing-admin-permissions-in-skype-for-business-server"></a>Test delle autorizzazioni di amministratore in Skype for Business Server
 
-| | |
+|&nbsp; |&nbsp; |
 |--|--|
-|Pianificazione della verifica|Dopo la distribuzione iniziale di Skype for Business Server. Se necessario, se si verificano problemi relativi alle autorizzazioni.|
+|Pianificazione della verifica|Dopo la distribuzione Skype for Business Server iniziale. Se necessario, se si verificano problemi relativi alle autorizzazioni.|
 |Strumento di testing|Windows PowerShell|
-|Autorizzazioni necessarie|Quando vengono eseguiti localmente con Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsOUPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, dal prompt dei comandi Windows PowerShell seguente:<br/><br/>Get-CsAdminRole Where-Object \| {$_. Cmdlet -match "Test-CsOUPermission"}|
+|Autorizzazioni necessarie|Quando vengono eseguiti localmente Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsOUPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, dal prompt dei comandi Windows PowerShell seguente:<br/><br/>Get-CsAdminRole Where-Object \| {$_. Cmdlet -match "Test-CsOUPermission"}|
 |||
 
 ## <a name="description"></a>Descrizione
 
-Quando si installa Skype for Business Server, una delle attività eseguite dal programma di installazione assegna al gruppo RTCUniversalUserAdmins le autorizzazioni di Active Directory necessarie per gestire utenti, computer, contatti, contatti dell'applicazione e persone InetOrg. Se è stata disabilitata l'ereditarietà delle autorizzazioni in Active Directory, il programma di installazione non sarà in grado di assegnare tali autorizzazioni. Di conseguenza, i membri del gruppo RTCUniversalUserAdmins non saranno in grado di gestire le entità di Skype for Business Server. Tali privilegi di gestione saranno disponibili solo per gli amministratori di dominio. 
+Quando si installa Skype for Business Server, una delle attività eseguite dal programma di installazione assegna al gruppo RTCUniversalUserAdmins le autorizzazioni di Active Directory necessarie per gestire utenti, computer, contatti, contatti dell'applicazione e persone inetOrg. Se è stata disabilitata l'ereditarietà delle autorizzazioni in Active Directory, il programma di installazione non sarà in grado di assegnare tali autorizzazioni. Di conseguenza, i membri del gruppo RTCUniversalUserAdmins non saranno in grado di gestire Skype for Business Server entità. Tali privilegi di gestione saranno disponibili solo per gli amministratori di dominio. 
 
 Il cmdlet Test-CsOUPermission verifica che le autorizzazioni necessarie per gestire utenti, computer e altri oggetti siano impostate su un contenitore di Active Directory. Se tali autorizzazioni non sono impostate, è possibile risolvere il problema eseguendo il [cmdlet Grant-CsOUPermission](/powershell/module/skype/Grant-CsOUPermission). 
 
@@ -60,7 +60,7 @@ AVVISO: voce di controllo di accesso (ACE) atl-cs-001\RTCUniversalUserReadOnlyGr
 
 AVVISO: le voci di controllo di accesso (ACE) sull'oggetto "OU=NorthAmerica,DC=atl-cs-001\DC=litwareinc,DC=com" non sono pronte. 
 
-False 
+Falso 
 
 AVVISO: l'elaborazione "Test-CsOUPermission" è stata completata con avvisi. Durante questa esecuzione sono stati registrati avvisi di tipo "2". 
 

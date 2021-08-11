@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Utilizzare le procedure descritte in questo articolo per visualizzare, creare, modificare o eliminare i profili dei criteri di larghezza di banda di rete.
-ms.openlocfilehash: 47a4d268c24cd8d57c8aeda4deacc6b03e795c2c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 4905a80f402b15328f4bca5476dc47262030f323cee8ec12910b25e35aee6eda
+ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096672"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54590960"
 ---
 # <a name="managing-network-bandwidth-policy-profiles-in-skype-for-business-server"></a>Gestione dei profili di criteri di larghezza di banda di rete in Skype for Business Server
 
@@ -24,13 +24,13 @@ Utilizzare le procedure descritte in questo articolo per visualizzare, creare, m
 
 ## <a name="view-network-bandwidth-policy-profile-information"></a>Visualizzare le informazioni sul profilo dei criteri di larghezza di banda di rete
 
-In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda vengono utilizzati per definire le limitazioni della larghezza di banda per alcune modalità. In Skype for Business Server, solo le modalità audio e video possono essere assegnate limitazioni di larghezza di banda. È possibile impostare limitazioni della larghezza di banda globali o per le sessioni. Puoi usare il Pannello di controllo di Skype for Business Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Ogni profilo di criteri della larghezza di banda può essere associato a uno o più siti di rete. Utilizzare le procedure seguenti per visualizzare un profilo di criteri della larghezza di banda. 
+In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda vengono utilizzati per definire le limitazioni della larghezza di banda per alcune modalità. In Skype for Business Server, solo le modalità audio e video possono essere assegnate limitazioni di larghezza di banda. È possibile impostare limitazioni della larghezza di banda globali o per le sessioni. Puoi usare il Pannello Skype for Business Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Ogni profilo di criteri della larghezza di banda può essere associato a uno o più siti di rete. Utilizzare le procedure seguenti per visualizzare un profilo di criteri della larghezza di banda. 
 
 ### <a name="to-view-a-bandwidth-policy-profile"></a>Per visualizzare un profilo dei criteri di larghezza di banda
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Nella barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Criteri larghezza di banda**.
 
@@ -48,31 +48,30 @@ I profili di larghezza di banda di rete possono essere visualizzati Windows Powe
 
   - Per visualizzare informazioni su tutti i profili dei criteri di larghezza di banda di rete, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     
-        Get-CsNetworkBandwidthPolicyProfile
+    **Get-CsNetworkBandwidthPolicyProfile**
     
     Verranno restituite informazioni simili alle seguenti:
     
-        Identity          : RedmondBandwidthPolicy
-        BWPolicy          : {BWLimit=200;BWSessionLimit=200;
-                            BWPolicyModality=Audio, 
-                            BWLimit=1400;BWSessionLimit=500;
-                            BWPolicyModality=Video}
-        BWPolicyProfileID : RedmondBandwidthPolicy
-        Description       :
-
+    Identity : RedmondBandwidthPolicy<br/>
+    BWPolicy : {BWLimit=200; BWSessionLimit=200;<br/>
+                        BWPolicyModality=Audio, <br/>
+                        BWLimit=1400; BWSessionLimit=500;<br/>
+                        BWPolicyModality=Video}<br/>
+    BWPolicyProfileID : RedmondBandwidthPolicy<br/>
+    Descrizione :
 
 Per ulteriori informazioni, vedere l'argomento della Guida per il cmdlet [Get-CsNetworkBandwidthPolicyProfile](/powershell/module/skype/Get-CsNetworkBandwidthPolicyProfile).
 
 
 ## <a name="create-or-modify-bandwidth-policy-profiles"></a>Creare o modificare i profili dei criteri di larghezza di banda
 
-In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda vengono utilizzati per definire le limitazioni della larghezza di banda per alcune modalità. In Skype for Business Server, solo le modalità audio e video possono essere assegnate limitazioni di larghezza di banda. È possibile impostare limitazioni della larghezza di banda globali o per le sessioni. Puoi usare il Pannello di controllo di Skype for Business Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Ogni profilo di criteri della larghezza di banda può essere associato a uno o più siti di rete. Utilizzare le procedure seguenti per creare o modificare un profilo di criteri di larghezza di banda. 
+In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda vengono utilizzati per definire le limitazioni della larghezza di banda per alcune modalità. In Skype for Business Server, solo le modalità audio e video possono essere assegnate limitazioni di larghezza di banda. È possibile impostare limitazioni della larghezza di banda globali o per le sessioni. Puoi usare il Pannello Skype for Business Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Ogni profilo di criteri della larghezza di banda può essere associato a uno o più siti di rete. Utilizzare le procedure seguenti per creare o modificare un profilo di criteri di larghezza di banda. 
 
 ### <a name="to-create-a-new-bandwidth-policy-profile"></a>Per creare un nuovo profilo di criteri di larghezza di banda
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Criteri larghezza di **banda.**
 
@@ -100,7 +99,7 @@ In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda ven
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Criteri larghezza di **banda.**
 
@@ -118,13 +117,13 @@ In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda ven
   
 ## <a name="delete-network-bandwidth-policy-profiles"></a>Eliminare i profili dei criteri di larghezza di banda di rete
 
-In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda vengono utilizzati per definire le limitazioni della larghezza di banda per alcune modalità. In Skype for Business Server, solo le modalità audio e video possono essere assegnate limitazioni di larghezza di banda. È possibile impostare limitazioni della larghezza di banda globali o per le sessioni. Puoi usare il Pannello di controllo di Skype for Business Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Usare le procedure seguenti per eliminare profili di criteri della larghezza di banda di rete. 
+In Controllo di ammissione di chiamata (CAC) i criteri di larghezza di banda vengono utilizzati per definire le limitazioni della larghezza di banda per alcune modalità. In Skype for Business Server, solo le modalità audio e video possono essere assegnate limitazioni di larghezza di banda. È possibile impostare limitazioni della larghezza di banda globali o per le sessioni. Puoi usare il Pannello Skype for Business Server per creare, modificare o eliminare un profilo contenitore per questi criteri. Usare le procedure seguenti per eliminare profili di criteri della larghezza di banda di rete. 
 
 ### <a name="to-delete-a-bandwidth-policy-profile"></a>Per eliminare un profilo di criteri della larghezza di banda
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su Criteri larghezza di **banda.**
 

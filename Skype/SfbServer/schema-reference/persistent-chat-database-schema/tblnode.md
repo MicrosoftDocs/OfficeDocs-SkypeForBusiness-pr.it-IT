@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: a31d2961-aa83-4286-a12e-15d279c95f19
 description: tblNode contiene l'albero di oggetti (con nodi di categoria o chat room) gestito nel Pannello di controllo e nei cmdlet amministrativi.
-ms.openlocfilehash: cd2353d768ef61787b81efcdfe35f9c57409cc12
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2d26e61fc9404e2649ca71d4e48d4bb3f147c88ec787dfd798753eaa5f83a5b3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54306717"
 ---
 # <a name="tblnode"></a>tblNode
  
@@ -35,7 +35,7 @@ tblNode contiene l'albero di oggetti (con nodi di categoria o chat room) gestito
 |nodeName  <br/> |nvarchar (256), not null  <br/> |Nome nodo.  <br/> |
 |nodeDesc  <br/> |nvarchar (256), not null  <br/> |Descrizione nodo.  <br/> |
 |invite  <br/> |bit  <br/> | Per le categorie: <br/>  True se gli inviti sono attivi. <br/>  False se gli inviti sono inattivi. <br/>  Per le chat room: <br/>  False se gli inviti sono disattivati (la categoria padre viene ignorata). <br/>  Null se l'impostazione degli inviti viene ereditata dalla categoria padre. <br/> |
-|logged  <br/> |bit  <br/> | Per le categorie: <br/>  True se la cronologia della chat è attiva. <br/>  False se la cronologia della chat è inattiva. <br/>  Per le chat room: <br/>  Null. <br/> |
+|registrato  <br/> |bit  <br/> | Per le categorie: <br/>  True se la cronologia della chat è attiva. <br/>  False se la cronologia della chat è inattiva. <br/>  Per le chat room: <br/>  Null. <br/> |
 |filePost  <br/> |bit  <br/> | Per le categorie: <br/>  True se i caricamenti di file sono consentiti. <br/>  False se i caricamenti di file non sono consentiti. <br/>  Per le chat room: <br/>  Null. <br/> |
 |disabilitati  <br/> |bit, not null  <br/> |True se la chat room è disabilitata. Si applica solo alle chat room. False per le categorie.  <br/> |
 |comportamento  <br/> |smallint, not null  <br/> | Comportamento (cercato nella tabella EnumValue): <br/>  4: Normale (chat room normali) <br/>  5: Auditorium (chat room in modalità auditorium, solo i relatori possono contribuire) <br/>  Si applica solo alle chat room. <br/> |
@@ -45,7 +45,7 @@ tblNode contiene l'albero di oggetti (con nodi di categoria o chat room) gestito
 |nodeAddedOn  <br/> |bigint, not null  <br/> |Indicatore di data e ora della creazione del nodo.  <br/> |
 |nodeUpdatedBy  <br/> |int, not null  <br/> |ID dell'entità che ha eseguito l'ultimo aggiornamento del nodo.  <br/> |
 |nodeUpdatedOn  <br/> |bigint, not null  <br/> |Indicatore di data e ora dell'ultimo aggiornamento del nodo.  <br/> |
-|purgedOn  <br/> |datetime  <br/> |Ora dell'ultima operazione di eliminazione (rimozione degli ambiti dalla tabella tblScopedPrincipal e dei ruoli dalla tabella tblPrincipalRole) che ha interessato il nodo. Viene utilizzato dal meccanismo di aggiornamento della cache interno del servizio Chat.  <br/> |
+|purgedOn  <br/> |datetime  <br/> |Ora dell'ultima operazione di eliminazione (rimozione degli ambiti dalla tabella tblScopedPrincipal e dei ruoli dalla tabella tblPrincipalRole) che ha interessato il nodo. Viene utilizzato dal meccanismo di aggiornamento della cache interna del servizio Chat.  <br/> |
    
 **Tasti**
 

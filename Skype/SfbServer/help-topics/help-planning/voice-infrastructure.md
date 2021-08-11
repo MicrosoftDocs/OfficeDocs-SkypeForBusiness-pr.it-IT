@@ -1,5 +1,5 @@
 ---
-title: Infrastruttura vocale (strumento di pianificazione)
+title: Skype for Business Server Strumento di pianificazione dell'infrastruttura vocale
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,16 +15,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ab341060-3f2e-4a41-9be0-9ee8d29c35c5
-description: Skype for Business Server 2015 offre connettività PSTN affidabile e scalabile tramite trunk SIP, connessioni SIP dirette a un gateway PSTN o connessioni SIP dirette a un PBX. Per informazioni dettagliate, vedere Pianificare la connettività PSTN in Skype for Business Server 2015.
-ms.openlocfilehash: 114f8aa44127736a754b98d9693ca17317f95490
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Skype for Business Server 2015 offre connettività PSTN affidabile e scalabile utilizzando trunk SIP, connessioni SIP dirette a un gateway PSTN o connessioni SIP dirette a un PBX. Per informazioni dettagliate, vedere Plan for PSTN connectivity in Skype for Business Server 2015.
+ms.openlocfilehash: 4b679ba60e05a5ff065fdddbd8d5685ab915e5935302549207191da9e579a118
+ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49800266"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54590710"
 ---
-# <a name="voice-infrastructure-planning-tool"></a>Infrastruttura vocale (strumento di pianificazione)
+# <a name="skype-for-business-server-voice-infrastructure-planning-tool"></a>Skype for Business Server Strumento di pianificazione dell'infrastruttura vocale
  
-Skype for Business Server 2015 offre connettività PSTN affidabile e scalabile tramite trunk SIP, connessioni SIP dirette a un gateway PSTN o connessioni SIP dirette a un PBX. Per informazioni dettagliate, vedere [Pianificare la connettività PSTN in Skype for Business Server 2015.](../../plan-your-deployment/enterprise-voice-solution/pstn-connectivity-0.md)
+Skype for Business Server 2015 offre connettività PSTN affidabile e scalabile utilizzando trunk SIP, connessioni SIP dirette a un gateway PSTN o connessioni SIP dirette a un PBX. Per informazioni dettagliate, [vedere Plan for PSTN connectivity in Skype for Business Server 2015](../../plan-your-deployment/enterprise-voice-solution/pstn-connectivity-0.md).
   
 

@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f49adc03e8bb7481fa6cd682a2dcc401d783c0e3
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 5b10c62ddee396128b6622303906c6a37a10adec3f62ac386b55c084c3feb4a3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120737"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54304928"
 ---
 <a name="manage-the-office-365-g1-trial-for-us-government"></a>Gestire la versione di valutazione di Office 365 G1 per il governo degli Stati Uniti 
 ==============================

@@ -1,5 +1,5 @@
 ---
-title: Mediation Collocation (Strumento di pianificazione)
+title: Skype for Business Server Strumento di pianificazione mediation collocazione
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,17 +15,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 5ddc2ad3-9275-408a-a0ab-cc7a2c2d2fdc
-description: 'Il Mediation Server è collocato con il Front End Server per impostazione predefinita. Il Mediation Server può essere distribuito anche in un pool autonomo per motivi di prestazioni o se si distribuisce il trunking SIP, nel qual caso è consigliabile utilizzare il pool autonomo. La collocazione in Skype for Business Server funziona come in Lync Server 2013. Per informazioni dettagliate, vedere i seguenti argomenti:'
-ms.openlocfilehash: 29d9a24f4dffa3ed709433ac18e3d2d66ff67da3
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Per impostazione predefinita, il Mediation Server è collocato con il Front End Server. Può anche essere distribuito in un pool autonomo per motivi di prestazioni o se si distribuisce il trunking SIP, nel qual caso è consigliato il pool autonomo. La collocazione in Skype for Business Server funziona come in Lync Server 2013.
+ms.openlocfilehash: 2cbef02a91428b531a97a0392cf77d07db5b6d627a33ff44f9f0888367b1479a
+ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116084"
+ms.lasthandoff: 08/06/2021
+ms.locfileid: "54590940"
 ---
-# <a name="mediation-collocation-planning-tool"></a>Mediation Collocation (Strumento di pianificazione)
+# <a name="skype-for-business-server-mediation-collocation-planning-tool"></a>Skype for Business Server Strumento di pianificazione mediation collocazione
  
-Il Mediation Server è collocato con il Front End Server per impostazione predefinita. Il Mediation Server può essere distribuito anche in un pool autonomo per motivi di prestazioni o se si distribuisce il trunking SIP, nel qual caso è consigliabile utilizzare il pool autonomo. La collocazione in Skype for Business Server funziona come in Lync Server 2013. Per informazioni dettagliate, vedere i seguenti argomenti:
+Il Mediation Server è collocato con il Front End Server per impostazione predefinita. Il Mediation Server può essere distribuito anche in un pool autonomo per motivi di prestazioni o se si distribuisce il trunking SIP, nel qual caso è consigliato il pool autonomo. La collocazione in Skype for Business Server funziona come in Lync Server 2013. Per informazioni dettagliate, vedere i seguenti argomenti:
   
 - [Collocazione dei server supportata in Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-supported-server-collocation)
     
