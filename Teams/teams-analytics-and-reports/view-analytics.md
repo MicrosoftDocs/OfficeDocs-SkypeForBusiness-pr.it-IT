@@ -16,12 +16,12 @@ MS.collection:
 description: Informazioni su analisi tra team, analisi per team e analisi per canale in Teams, che consentono agli utenti di visualizzare i dati di utilizzo per i team o i canali di cui fanno parte.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 00ac44638a3f1b79ba98d1b2ebc6cf3645ef44bd
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: e5eac5dd4b16511041da58bc16d142a613c365982fb5f58b3c308b05df2924ff
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809176"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54292953"
 ---
 # <a name="view-analytics-in-teams"></a>Visualizzare l'analisi in Teams
 

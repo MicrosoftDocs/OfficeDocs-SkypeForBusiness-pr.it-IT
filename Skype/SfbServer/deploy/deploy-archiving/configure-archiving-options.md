@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 2f534697-ac7f-45b7-8cdc-ba67f052223b
-description: "Riepilogo: leggere questo argomento per informazioni su come configurare le opzioni di archiviazione iniziale per Skype for Business Server. Le configurazioni di archiviazione vengono inizialmente impostate durante la distribuzione dell'archiviazione, ma è possibile modificarle, aggiungerle ed eliminarle dopo la distribuzione."
-ms.openlocfilehash: 0a4803b821ee082a548b9f429b9596fd8019500f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: leggere questo argomento per informazioni su come configurare le opzioni di archiviazione iniziali per Skype for Business Server. Le configurazioni di archiviazione vengono inizialmente impostate quando si distribuisce l'archiviazione, ma è possibile modificare, aggiungere ed eliminare le configurazioni dopo la distribuzione."
+ms.openlocfilehash: d3bc24edc4c4b130094541eb6bde00c63c8977910f8a45106c43032be32c2fb3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312134"
 ---
 # <a name="configure-archiving-options-for-skype-for-business-server"></a>Configurare le opzioni di archiviazione per Skype for Business Server
  
-**Riepilogo:** Leggere questo argomento per informazioni su come configurare le opzioni di archiviazione iniziale per Skype for Business Server. Le configurazioni di archiviazione vengono inizialmente impostate durante la distribuzione dell'archiviazione, ma è possibile modificarle, aggiungerle ed eliminarle dopo la distribuzione.
+**Riepilogo:** Leggere questo argomento per informazioni su come configurare le opzioni di archiviazione iniziali per Skype for Business Server. Le configurazioni di archiviazione vengono inizialmente impostate quando si distribuisce l'archiviazione, ma è possibile modificare, aggiungere ed eliminare le configurazioni dopo la distribuzione.
   
-Per configurare le configurazioni di archiviazione iniziali, utilizzare il Pannello di controllo di Skype for Business Server per specificare quanto segue:
+Per configurare le configurazioni di archiviazione iniziali, utilizzare Skype for Business Server pannello di controllo per specificare quanto segue:
   
 - Configurazione a livello globale creata per impostazione predefinita quando si distribuisce Skype for Business Server
     
@@ -37,28 +37,28 @@ Sarà necessario configurare le opzioni per gli elementi seguenti:
     
 - Se archiviare le sessioni di messaggistica istantanea
     
-- Se archiviare le sessioni di Web Conferencing
+- Se archiviare le sessioni di Conferenza Web
     
 - Se bloccare l'attività quando l'archiviazione non è disponibile
     
-- Se utilizzare l'integrazione di Exchange
+- Se usare l'Exchange integrazione
     
 - Come configurare l'eliminazione e l'esportazione dei dati
     
 > [!NOTE]
 > È consigliabile specificare tutte le opzioni appropriate prima di abilitare l'archiviazione. 
   
-Per informazioni dettagliate sull'implementazione delle configurazioni di archiviazione, incluse le opzioni che è possibile specificare e la gerarchia delle configurazioni di archiviazione, vedere Pianificare l'archiviazione [in Skype for Business Server.](../../plan-your-deployment/archiving/archiving.md) Per informazioni dettagliate su come gestire le configurazioni dopo la distribuzione tramite il Pannello di controllo o tramite Windows PowerShell, vedere Gestire le opzioni di archiviazione [in Skype for Business Server.](../../manage/archiving/options.md)
+Per informazioni dettagliate sull'implementazione delle configurazioni di [archiviazione,](../../plan-your-deployment/archiving/archiving.md)incluse le opzioni che è possibile specificare e la gerarchia delle configurazioni di archiviazione, vedere Plan for archiving in Skype for Business Server . Per informazioni dettagliate su come gestire le configurazioni dopo la distribuzione utilizzando il Pannello di controllo o Windows PowerShell, vedere [Manage archiving options in Skype for Business Server](../../manage/archiving/options.md).
   
 ## <a name="configure-global-level-archiving-options"></a>Configurare le opzioni di archiviazione a livello globale
 
-Quando si aggiunge l'archiviazione alla topologia e si pubblica la topologia, Skype for Business Server crea una configurazione globale per l'archiviazione. Per impostazione predefinita, nella configurazione globale non è abilitata alcuna opzione di archiviazione. La configurazione globale controlla le opzioni abilitate per l'intera distribuzione, a meno che non si impostino configurazioni a livello di sito o di pool, le quali hanno la priorità sulla configurazione globale.
+Quando si aggiunge l'archiviazione alla topologia e si pubblica la topologia, Skype for Business Server una configurazione globale per l'archiviazione. Per impostazione predefinita, nella configurazione globale non è abilitata alcuna opzione di archiviazione. La configurazione globale controlla le opzioni abilitate per l'intera distribuzione, a meno che non si impostino configurazioni a livello di sito o di pool, le quali hanno la priorità sulla configurazione globale.
   
 Per configurare le opzioni di archiviazione a livello globale:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -76,7 +76,7 @@ Per configurare le opzioni di archiviazione a livello globale:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare il Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la casella di controllo **integrazione di Microsoft Exchange.**
+   - Per utilizzare Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     
@@ -92,7 +92,7 @@ Per configurare le opzioni di archiviazione a livello globale:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -112,7 +112,7 @@ Per configurare le opzioni di archiviazione a livello globale:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare il Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la casella di controllo **integrazione di Microsoft Exchange.**
+   - Per utilizzare Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     
@@ -128,7 +128,7 @@ Per configurare le opzioni di archiviazione a livello globale:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -148,7 +148,7 @@ Per configurare le opzioni di archiviazione a livello globale:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare il Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la casella di controllo **integrazione di Microsoft Exchange.**
+   - Per utilizzare Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     

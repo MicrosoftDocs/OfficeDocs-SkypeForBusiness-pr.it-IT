@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: fed12cb5-2c80-476a-af3b-d55b450c5fbc
 description: 'Riepilogo: informazioni su come eliminare una configurazione di archiviazione in Skype for Business Server.'
-ms.openlocfilehash: 43913485ce18660b6c7fa7ce747ceeaaebd49923
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b6a8aec925bf6bfb7914b6cf830ee6e38751ed7187c862ca2d26104ca3384f39
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51095410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320258"
 ---
 # <a name="delete-an-archiving-configuration-in-skype-for-business-server"></a>Eliminare una configurazione di archiviazione in Skype for Business Server
 
@@ -31,7 +31,7 @@ Per eliminare una configurazione di archiviazione tramite il Pannello di control
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Configurazione archiviazione**.
     
@@ -58,7 +58,7 @@ Il comando seguente rimuove tutte le impostazioni di configurazione dell'archivi
 Get-CsArchivingConfiguration -Filter "site:*" | Remove-CsArchivingConfiguration
 ```
 
-Il comando successivo rimuove tutte le impostazioni di configurazione dell'archiviazione in cui l'archiviazione di Exchange è stata disabilitata:
+Il comando successivo consente di rimuovere tutte le impostazioni di configurazione di archiviazione Exchange'archiviazione è stata disabilitata:
   
 ```PowerShell
 Get-CsArchivingConfiguration | Where-Object {$_.EnableExchangeArchiving -eq $False} | Remove-CsArchivingConfiguration

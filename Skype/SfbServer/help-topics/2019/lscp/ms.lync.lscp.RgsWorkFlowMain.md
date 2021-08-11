@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: e4ee8abb-e1e5-413c-919d-cd3fb7193840
 ROBOTS: NOINDEX, NOFOLLOW
 description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. I flussi di lavoro di Response Group definiscono le azioni che vengono eseguite quando l'applicazione Response Group riceve una chiamata telefonica.
-ms.openlocfilehash: dc34ec69af86658c6624ada6a9f25ff3aaa61499
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a1fc383d7b5f4e40c9b93c7e4700ff61c30e7de821ef5687933641a8bbca2eed
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118765"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54283558"
 ---
 # <a name="response-groups-workflow"></a>Flusso di lavoro Response Group
 
@@ -60,4 +60,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Abilitato** Indica se il flusso di lavoro è attivato per ricevere chiamate.
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo dei flussi di lavoro di Response Group, vedere [Managing Response Group Workflows](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-workflows) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di [Response Group,](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) vedere Plan for the Response Group application in Skype for Business Server nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo dei flussi di lavoro di Response Group, vedere [Managing Response Group Workflows](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-workflows) nella documentazione relativa alle operazioni.

@@ -1,5 +1,5 @@
 ---
-title: Distribuire pool Front End abbinati per il ripristino di emergenza in Skype for Business Server
+title: Distribuire pool Front End associati per il ripristino di emergenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,14 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 2f12467c-8b90-43e6-831b-a0b096427f17
 description: È possibile decidere di utilizzare pool Front End abbinati per fornire protezione da ripristino di emergenza, ma non è un requisito.
-ms.openlocfilehash: 7d066de60bf3ab98d73d8aeee08044803fad983c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: bc061e05931c6a4b58d754623bde580e35c2c51367228a05126783d83d3fd27a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830606"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312054"
 ---
-# <a name="deploy-paired-front-end-pools-for-disaster-recovery-in-skype-for-business-server"></a>Distribuire pool Front End abbinati per il ripristino di emergenza in Skype for Business Server
+# <a name="deploy-paired-front-end-pools-for-disaster-recovery-in-skype-for-business-server"></a>Distribuire pool Front End associati per il ripristino di emergenza in Skype for Business Server
  
 È possibile decidere di utilizzare pool Front End abbinati per fornire protezione da ripristino di emergenza, ma non è un requisito.
   
@@ -29,7 +29,7 @@ ms.locfileid: "49830606"
 
 1. Se i pool sono nuovi e non ancora definiti, utilizzare Generatore di topologie per creare i pool.
     
-2. In Generatore di topologie fare clic con il pulsante destro del mouse su uno dei due pool e quindi **scegliere Modifica proprietà.**
+2. In Generatore di topologie fare clic con il pulsante destro del mouse su uno dei due pool e quindi **scegliere Modifica proprietà**.
     
 3. Fare clic su **Resilienza** nel riquadro a sinistra e selezionare **Pool di backup associato** nel riquadro a destra.
     
@@ -53,9 +53,9 @@ ms.locfileid: "49830606"
 
     Consente di configurare altri servizi necessari per il corretto funzionamento dell'accoppiamento di backup.
     
-9. Al termine dell'installazione dei componenti necessari per l'associazione di backup in ogni Front End Server in entrambi i pool, assicurarsi di ri applicare nuovamente qualsiasi aggiornamento cumulativo esistente applicato in precedenza in questi Front End Server in entrambi i pool e quindi continuare con il passaggio successivo.
+9. Al termine dell'installazione dei componenti necessari per l'associazione di backup in ogni Front end Server in entrambi i pool, assicurarsi di applicare di nuovo qualsiasi aggiornamento cumulativo esistente applicato in precedenza su questi Front End Server in entrambi i pool e quindi continuare con il passaggio successivo.
 
-10. Da un prompt dei comandi di Skype for Business Server Management Shell, eseguire le operazioni seguenti: 
+10. Da un prompt Skype for Business Server Management Shell eseguire quanto segue: 
     
    ```powershell
    Start-CsWindowsService -Name LYNCBACKUP
@@ -82,7 +82,7 @@ ms.locfileid: "49830606"
     ```
 
 > [!NOTE]
-> L'opzione failover e **failback** automatici per VoIP e gli intervalli di tempo associati in Generatore di topologie si applicano solo alle funzionalità di resilienza vocale introdotte in Lync Server. La selezione di questa opzione non implica che il failover del pool descritto in questo documento sia automatico. Il failover e il failback del pool richiedono sempre che un amministratore richiami manualmente i cmdlet di failover e di failback, rispettivamente.
+> L'opzione Failover e **failback** automatici per Voice e gli intervalli di tempo associati in Generatore di topologie si applicano solo alle funzionalità di resilienza vocali introdotte in Lync Server. La selezione di questa opzione non implica che il failover del pool descritto in questo documento sia automatico. Il failover e il failback del pool richiedono sempre che un amministratore richiami manualmente i cmdlet di failover e di failback, rispettivamente.
   
 ## <a name="see-also"></a>Vedere anche
 

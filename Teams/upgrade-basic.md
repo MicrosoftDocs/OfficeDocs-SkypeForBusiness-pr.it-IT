@@ -23,12 +23,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d9453ad770b7ca21b5300b193cbafb932ea7645a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 24e13e7f1a47f993b6afc1d7e51496040c91c0ffb4ed1b0eff39ac47d62e2f3b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120527"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300762"
 ---
 # <a name="upgrade-basic"></a>Aggiornamento di base
 
@@ -115,7 +115,7 @@ Gli utenti che sono profondamente adottati in Skype for Business potrebbero aver
 Se si fornisce un'attenzione elevata agli utenti, gli utenti avranno il tempo di acquisire familiarità con Teams senza influire negativamente sulla produttività, con conseguente esperienza utente più positiva. Invia una comunicazione per comunicare loro cosa sta cambiando, perché sta cambiando e come possono prepararsi.
 
 > [!Note]
-> Se necessario, è possibile abilitare Teams per gli utenti tramite l'interfaccia Microsoft 365 di amministrazione.
+> Se necessario, è possibile abilitare Teams per gli utenti tramite interfaccia di amministrazione di Microsoft 365 in questo momento.
 
 **Risorse:**
 

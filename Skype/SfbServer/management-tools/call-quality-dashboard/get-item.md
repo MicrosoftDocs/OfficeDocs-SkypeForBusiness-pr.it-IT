@@ -12,17 +12,17 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e77bf649-d62a-4d94-80de-066ba47730cd
-description: "Riepilogo: informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 896540c4572fb3991356ce055f01690ed702c6f2
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: fa82d158b41826a950a852633e6c039e9262543d4aabece5c04397eba40be8ae
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832566"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278444"
 ---
 # <a name="get-item"></a>Get Item
  
-**Riepilogo:** Informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Item, che fa parte di Item Service. Item Service fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
 L'operazione Get Item fa parte di Item Service nell'API repository per call quality dashboard.
   
@@ -44,9 +44,9 @@ Get Item restituisce un elemento specifico nel repository.
   
  **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (Non trovato).
   
- **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
+ **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 {
@@ -64,8 +64,8 @@ Get Item restituisce un elemento specifico nel repository.
   
  *content*  - Contenuto specifico dell'applicazione.
   
- *type*  - Tipo di contenuto. Questo campo viene impostato dalle applicazioni.
+ *type*  - Tipo del contenuto. Questo campo viene impostato dalle applicazioni.
   
- *subItemIds*  - ID degli eventuali elementi secondari. Si tratta di un corto circuito dell'operazione Get Sub-Items salvare una chiamata. In alternativa, le applicazioni possono ottenere le stesse informazioni utilizzando l'Sub-Items get.
+ *subItemIds*  - ID degli eventuali elementi secondari. Si tratta di un corto circuito dell'operazione Get Sub-Items per salvare una chiamata. In alternativa, le applicazioni possono ottenere le stesse informazioni utilizzando l'operazione Get Sub-Items.
   
 

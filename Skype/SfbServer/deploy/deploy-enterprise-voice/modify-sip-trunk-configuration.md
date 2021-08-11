@@ -1,5 +1,5 @@
 ---
-title: Modificare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
+title: 'Skype for Business Server: Modificare le impostazioni di configurazione dei trunk SIP'
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 7d68b09c-9ea0-43bd-997c-df887869d607
-description: 'Riepilogo: informazioni su come modificare le impostazioni di configurazione dei trunk SIP tramite il Pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 34db4126f8f91ecfd7d68f0f982be5c81769b455
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: informazioni su come modificare le impostazioni di configurazione dei trunk SIP tramite il Skype for Business Server di controllo.'
+ms.openlocfilehash: fb590a53a510b73251a7cc47d0f66c20c5ed81cf104d626a0b4dd38e8937b43c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103415"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54283768"
 ---
-# <a name="modify-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Modificare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
+# <a name="skype-for-business-server-modify-sip-trunk-configuration-settings"></a>Skype for Business Server: Modificare le impostazioni di configurazione dei trunk SIP 
  
-**Riepilogo:** Informazioni su come modificare le impostazioni di configurazione dei trunk SIP tramite il Pannello di controllo di Skype for Business Server.
+**Riepilogo:** Informazioni su come modificare le impostazioni di configurazione dei trunk SIP utilizzando il Skype for Business Server di controllo.
   
 Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Branch eXchange) di IP-Public o un session border controller (SBC) presso il provider di servizi. Queste impostazioni consentono di specificare quanto segue:
   
@@ -35,16 +35,16 @@ Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzio
     
 - Indica se è necessaria o meno la crittografia SRTP (Secure Realtime Transport Protocol) in ogni trunk.
     
-Quando si installa Skype for Business Server, viene creata automaticamente una raccolta globale di impostazioni di configurazione trunk SIP. Gli amministratori inoltre possono creare raccolte di impostazioni personalizzate nell'ambito del sito o del servizio (solo per il servizio gateway PSTN). Una qualsiasi di queste raccolte può essere successivamente modificata utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+Quando si installa Skype for Business Server, viene creata automaticamente una raccolta globale di impostazioni di configurazione trunk SIP. Gli amministratori inoltre possono creare raccolte di impostazioni personalizzate nell'ambito del sito o del servizio (solo per il servizio gateway PSTN). Una qualsiasi di queste raccolte può essere modificata in un secondo momento Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
   
-Quando si modificano le impostazioni di configurazione dei trunk SIP tramite il Pannello di controllo di Skype for Business Server, sono disponibili le opzioni seguenti.
+Quando si modificano le impostazioni di configurazione dei trunk SIP Skype for Business Server pannello di controllo, sono disponibili le opzioni seguenti.
   
 |**Impostazione dell'interfaccia utente**|**Parametro di PowerShell**|**Descrizione**|
 |:-----|:-----|:-----|
 |Nome  <br/> |Identità  <br/> |Identificatore univoco della raccolta. È una proprietà di sola lettura; non è possibile modificare l'identitià di una raccolta di impostazioni di configurazione per il trunk.  <br/> |
 |Descrizione  <br/> |Descrizione  <br/> |Consente agli amministratori di archiviare informazioni aggiuntive sulle impostazioni (ad esempio, le finalità della configurazione del trunk).  <br/> |
 |Dialoghi anticipati massimi supportati  <br/> |MaxEarlyDialogs  <br/> |Il numero massimo di risposte instradate che un gateway PSTN, IP-PBX o SBC nel provider di servizi può ricevere per un invito inviato a Mediation Server.  <br/> |
-|Livello di supporto della crittografia  <br/> |SRTPMode  <br/> | Indica il livello di supporto per la protezione del traffico multimediale tra Mediation Server e il gateway PSTN, il sistema IP-PBX o il servizio SBC nel provider dei servizi. Nel caso del bypass multimediale, questo valore deve essere compatibile con l'impostazione di EncryptionLevel nella configurazione degli elementi multimediali. La configurazione multimediale viene impostata utilizzando i cmdlet [New-CsMediaConfiguration](/powershell/module/skype/new-csmediaconfiguration?view=skype-ps) e [Set-CsMediaConfiguration.](/powershell/module/skype/set-csmediaconfiguration?view=skype-ps) <br/>  I valori consentiti sono: <br/>  Obbligatorio: è necessario utilizzare la crittografia SRTP. <br/>  Facoltativo: SRTP verrà utilizzato se supportato dal gateway. <br/>  Non supportato: la crittografia SRTP non è supportata, pertanto non verrà utilizzata. <br/>  SRTPMode viene utilizzato solo se il gateway è configurato per l'uso di TLS (Transport Layer Security). Se il gateway è configurato con il protocollo TCP (Transmission Control Protocol) per il trasporto, SRTPMode viene impostato internamente su NotSupported.<br/> |
+|Livello di supporto della crittografia  <br/> |SRTPMode  <br/> | Indica il livello di supporto per la protezione del traffico multimediale tra Mediation Server e il gateway PSTN, il sistema IP-PBX o il servizio SBC nel provider dei servizi. Nel caso del bypass multimediale, questo valore deve essere compatibile con l'impostazione di EncryptionLevel nella configurazione degli elementi multimediali. La configurazione multimediale viene impostata utilizzando i cmdlet [New-CsMediaConfiguration](/powershell/module/skype/new-csmediaconfiguration) e [Set-CsMediaConfiguration.](/powershell/module/skype/set-csmediaconfiguration) <br/>  I valori consentiti sono: <br/>  Obbligatorio: è necessario utilizzare la crittografia SRTP. <br/>  Facoltativo: SRTP verrà utilizzato se supportato dal gateway. <br/>  Non supportato: la crittografia SRTP non è supportata, pertanto non verrà utilizzata. <br/>  SRTPMode viene utilizzato solo se il gateway è configurato per l'uso di TLS (Transport Layer Security). Se il gateway è configurato con il protocollo TCP (Transmission Control Protocol) per il trasporto, SRTPMode viene impostato internamente su NotSupported.<br/> |
 |Supporto riferimento  <br/> |Enable3pccRefer  <br/> EnableReferSupport  <br/> |Se impostato su **Abilita l'invio del riferimento al gateway**, indica che il trunk supporta ricezione di richieste Refer da Mediation Server.  <br/> Se impostato su **Abilita il riferimento usando il controllo delle chiamate di terze parti**, indica che il protocollo 3pcc può essere utilizzato per consentire alle chiamate trasferite di eseguire il bypass del sito ospitato. Il protocollo 3pcc è noto anche come "controllo delle terze parti," e si verifica quando si utilizza una terza parte per la connessione a una coppia di chiamanti (ad esempio, un operatore che connette una chiamata dall'utente A all'utente B).<br/> |
 |Abilita bypass multimediale  <br/> |EnableBypass  <br/> |Indica se il bypass multimediale è abilitato per questo trunk. È possibile abilitare il bypass multimediale solo se è abilitato anche **Elaborazione multimediale centralizzata**.<br/> |
 |Elaborazione multimediale centralizzata  <br/> |ConcentrateTopology  <br/> |Indica se esiste un punto di terminazione multimediale noto. Un esempio di punto di terminazione multimediale noto può essere costituito da un gateway PSTN in cui la terminazione dei supporti ha lo stesso IP della terminazione dei segnali.  <br/> |
@@ -61,11 +61,11 @@ Quando si modificano le impostazioni di configurazione dei trunk SIP tramite il 
 |Numero chiamato  <br/> |N/D  <br/> |Indica che il numero di telefono da testare è il numero di telefono della persona che riceve la chiamata.  <br/> |
    
 > [!NOTE]
-> I cmdlet CsTrunkConfiguration di Lync Server supportano proprietà aggiuntive non visualizzate nel Pannello di controllo di Lync Server. Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsTrunkConfiguration.](/powershell/module/skype/set-cstrunkconfiguration?view=skype-ps)
+> I cmdlet CsTrunkConfiguration di Lync Server supportano proprietà aggiuntive non visualizzate nel Pannello di controllo di Lync Server. Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Set-CsTrunkConfiguration.](/powershell/module/skype/set-cstrunkconfiguration)
   
-### <a name="to-modify-sip-trunk-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per modificare le impostazioni di configurazione dei trunk SIP tramite il Pannello di controllo di Skype for Business Server
+### <a name="to-modify-sip-trunk-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per modificare le impostazioni di configurazione dei trunk SIP tramite Skype for Business Server Pannello di controllo
 
-1. Nel Pannello di controllo di Skype for Business Server fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
+1. Nel Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
     
 2. Nella scheda **Configurazione trunk** fare doppio clic sulle impostazioni di configurazione del trunk che si desidera modificare. È possibile modificare una sola raccolta di impostazioni per volta. Per apportare le stesse modifiche a più raccolte, utilizzare Windows PowerShell.
     
@@ -75,4 +75,4 @@ Quando si modificano le impostazioni di configurazione dei trunk SIP tramite il 
     
 5. Nella finestra di dialogo **Impostazioni di configurazione vocale di cui non è stato eseguito il commit** fare clic su **OK**.
     
-6. Nella finestra **di dialogo Pannello di controllo** di Skype for Business Server fare clic su **OK.**
+6. Nella finestra **Skype for Business Server pannello** di controllo fare clic su **OK.**

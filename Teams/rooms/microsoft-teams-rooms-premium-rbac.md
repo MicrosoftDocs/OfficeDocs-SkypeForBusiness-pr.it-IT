@@ -16,12 +16,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sul controllo dell'accesso basato sui ruoli con il servizio Microsoft Teams Rooms gestito.
 f1keywords: ''
-ms.openlocfilehash: d673a20b122af876d95bac9d11a1db0433a396e4
-ms.sourcegitcommit: 975f81d9e595dfb339550625d7cef8ad84449e20
+ms.openlocfilehash: c73ad1385a0654f3ef50dab46b803debe418b834b6497acfcb27f5a4de736f98
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49662601"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54301062"
 ---
 # <a name="role-based-access-control-with-the-microsoft-teams-rooms-managed-service"></a>Controllo dell'accesso basato sui ruoli con il Microsoft Teams Rooms gestito
 
@@ -68,7 +68,7 @@ La tabella seguente riepiloga le operazioni che ogni ruolo può eseguire.
 |Report   |Visualizzare        |&#10004;           |&#10004;           ||
 |Gestione dei biglietti   |Creare un evento imprevisto per i clienti         |&#10004;           |&#10004;           |&#10004;  |
 |    |Visualizzare         |&#10004;           |&#10004;           |&#10004;  |
-|    |Aggiornamento         |&#10004;           |&#10004;           |&#10004;  |
+|    |Update         |&#10004;           |&#10004;           |&#10004;  |
 |Microsoft Teams Rooms dei servizi gestiti    |Visualizzare         |&#10004;           |         ||
 |    |Modifica        |&#10004;           |         ||
 |Gestione ruoli    |Visualizzare         |&#10004;           |         ||

@@ -12,19 +12,19 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: e7967dd9-0d6a-4a80-8b59-b8fc2e5615f8
-description: "Riepilogo: informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: c40041e41e04d2bdc62a9eb9fa1eb699697a5b3d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 42542a092baba41e334f30ba50029ab7efa70bf1af59b7ecf8cf2bd05f3f1b62
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832516"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278414"
 ---
 # <a name="get-last-integration-data"></a>Get Last Integration Data
  
-**Riepilogo:** Informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Get Last Integration Data, che fa parte dell'API dei dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get Last Integration Data fa parte dell'API dei dati per call quality dashboard.
+L'operazione Get Last Integration Data fa parte dell'API dei dati per il dashboard qualità delle chiamate.
   
 ## <a name="get-last-integration-data"></a>Get Last Integration Data
 
@@ -47,7 +47,7 @@ Questa funzionalità è disabilitata per impostazione predefinita e deve essere 
   
  **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
   
- **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
  **Corpo della risposta:** di seguito è riportato uno stato del log di esempio.
   

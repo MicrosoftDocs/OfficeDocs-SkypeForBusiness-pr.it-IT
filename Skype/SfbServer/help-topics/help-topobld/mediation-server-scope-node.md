@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3bad9844-2d3c-4ac7-adde-5b382f02d18d
 description: 'In questo nodo vengono visualizzate le porte di attesa e i gateway PSTN (Public Switched Telephone Network) associati per questo pool Mediation Server. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: ed3565f32b7f620320c8dd0e5153625a50866dfe
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 8da954e380bf144741e69d2e998c2a57a015857eb825bef3d51effa53121097d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49806696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320388"
 ---
 # <a name="mediation-server-scope-node"></a>Nodo dell'ambito di Mediation Server
  

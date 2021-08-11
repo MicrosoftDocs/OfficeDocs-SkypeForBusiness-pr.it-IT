@@ -14,13 +14,13 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e6da97ad-1546-4af8-b8e8-5a0053a1abea
-description: "Nel nodo Pool Mediation Server vengono elencati i pool Mediation Server della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: aa03067fa89dd2b290978c4acbf59c349fb88fd5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Nel nodo Pool Mediation Server vengono elencati i pool Mediation Server della topologia. È possibile eseguire l'operazione seguente:"
+ms.openlocfilehash: 26c0deff360b359c2f53c9d230c17f0288321b2a5c944cec9cd5a90b746d1403
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49806706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320368"
 ---
 # <a name="mediation-servers-scope-node"></a>Nodo dell'ambito dei server Mediation Server
  
@@ -30,7 +30,7 @@ Nel nodo **Pool Mediation Server** vengono elencati i pool Mediation Server dell
     
 Oltre alle opzioni per il pool Mediation Server, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
     
 - **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     

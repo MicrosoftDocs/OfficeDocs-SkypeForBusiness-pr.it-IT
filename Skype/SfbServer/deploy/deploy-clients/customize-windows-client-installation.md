@@ -1,5 +1,5 @@
 ---
-title: Personalizzare l'installazione client di Windows in Skype for Business Server
+title: Personalizzare Windows'installazione client in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,30 +12,30 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 5c1a85f1-5ebb-48fb-acb7-3bf46decbf80
 description: 'Riepilogo: panoramica dei metodi e degli strumenti di installazione per Skype for Business.'
-ms.openlocfilehash: 001224369e46978e96ee063b31fcb546ef213a05
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 9679dbf9b5673cc1393f62ba55bcafaeb6423c9d23df6a21d31d57d52017292a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49805716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312084"
 ---
-# <a name="customize-windows-client-installation-in-skype-for-business-server"></a>Personalizzare l'installazione client di Windows in Skype for Business Server
+# <a name="customize-windows-client-installation-in-skype-for-business-server"></a>Personalizzare Windows'installazione client in Skype for Business Server
  
 **Riepilogo:** Panoramica dei metodi e degli strumenti di installazione per Skype for Business.
   
 > [!NOTE]
-> Per informazioni sull'installazione di Skype for Business fornito con Microsoft 365 e Office 365, vedere Distribuire il [client Skype for Business in Microsoft 365 o Office 365.](https://support.office.com/article/8c563b81-22c9-4024-9efe-9fe28c7bbc96) 
+> Per informazioni sull'Skype for Business in Microsoft 365 e Office 365, vedere [Deploy the Skype for Business client in Microsoft 365 or Office 365](https://support.office.com/article/8c563b81-22c9-4024-9efe-9fe28c7bbc96). 
   
-Gli amministratori aziendali possono personalizzare l'installazione basata su Windows Installer (msi) di versioni con contratto multilicenza di Skype for Business utilizzando i metodi descritti in questa sezione. Poiché nessun singolo strumento fornisce tutte le opzioni di personalizzazione, probabilmente userai una combinazione di questi metodi nella distribuzione di Skype for Business. È possibile utilizzare gli strumenti descritti nelle sezioni seguenti:
+Enterprise amministratori possono personalizzare l'installazione basata su Windows (.msi) delle versioni con contratto multilicenza di Skype for Business utilizzando i metodi descritti in questa sezione. Poiché nessun singolo strumento fornisce tutte le opzioni di personalizzazione, è probabile che si utilizzi una combinazione di questi metodi nella distribuzione Skype for Business distribuzione. È possibile utilizzare gli strumenti descritti nelle sezioni seguenti:
   
-- [Utilizzare lo Strumento di personalizzazione](use-the-office-customization-tool-oct.md) di Office in Skype for Business Server per personalizzare le opzioni e le funzionalità di installazione per Skype for Business e altri programmi di Office.
+- [Utilizzare lo Office Customization Tool (OCT) in Skype for Business Server](use-the-office-customization-tool-oct.md) per personalizzare le opzioni e le funzionalità di installazione per Skype for Business e altri Office programmi.
     
-- [Utilizzare Config.xml eseguire attività di](use-config-xml-to-perform-installation-tasks.md) installazione in Skype for Business Server per specificare il percorso del punto di installazione di rete ed eseguire l'installazione invisibile all'utente.
+- [Utilizzare Config.xml per eseguire attività di](use-config-xml-to-perform-installation-tasks.md) installazione in Skype for Business Server specificare il percorso del punto di installazione di rete ed eseguire l'installazione invisibile all'utente.
     
-- [Utilizzare le opzioni della riga di](use-setup-command-line-options.md) comando del programma di installazione in Skype for Business Server per specificare Config.xml file da utilizzare durante l'installazione.
+- [Utilizzare le opzioni della riga di comando del programma](use-setup-command-line-options.md) di Skype for Business Server per specificare il file Config.xml da utilizzare durante l'installazione.
     
-- [Configurare i criteri di avvio automatico dei client in Skype for Business Server](configure-client-bootstrapping-policies.md) utilizzando lo snap-in MMC Editor oggetti Criteri di gruppo.
+- [Configurare i criteri di avvio automatico dei client Skype for Business Server](configure-client-bootstrapping-policies.md) utilizzando lo snap-in MMC Editor oggetti Criteri di gruppo.
     
-Probabilmente saranno disponibili altre opzioni da configurare durante la distribuzione della famiglia di prodotti Office. Negli argomenti di questa sezione viene fornita una panoramica di questi strumenti di personalizzazione e vengono illustrate considerazioni specifiche per Skype for Business. Sono inclusi collegamenti alle informazioni dettagliate della Guida di Office per ogni strumento. 
+Probabilmente saranno disponibili altre opzioni da configurare durante la distribuzione della Office di prodotti. Negli argomenti di questa sezione viene fornita una panoramica di questi strumenti di personalizzazione e vengono illustrate considerazioni specifiche per Skype for Business. Sono inclusi collegamenti alle informazioni dettagliate della Guida di Office per ogni strumento. 
   
 

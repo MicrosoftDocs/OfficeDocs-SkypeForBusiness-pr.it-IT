@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 01b62253-2aaf-43ed-9d63-804e31edc522
-description: Il cmdlet Start-CcLogging genera il registro chiamate in ingresso e in uscita per un dispositivo Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: bf84b55484e7f1d4f557730408676e337063a040
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Start-CcLogging genera il registro delle chiamate in ingresso e in uscita per un Skype for Business Cloud Connector Edition appliance.
+ms.openlocfilehash: c1e78f19a0df22749480b21410d3bcfcdba54f429ef1c8afb48467edd0ee7dbc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824170"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54329321"
 ---
 # <a name="start-cclogging"></a>Start-CcLogging
  
-Il cmdlet Start-CcLogging genera il registro chiamate in ingresso e in uscita per un dispositivo Skype for Business Cloud Connector Edition. 
+Il cmdlet Start-CcLogging genera il registro delle chiamate in ingresso e in uscita per un Skype for Business Cloud Connector Edition appliance. 
   
 ```powershell
 Start-CcLogging
@@ -30,7 +30,7 @@ Start-CcLogging
 
 ## <a name="parameters"></a>Parametri
 
-None
+Nessuno
   
 ## <a name="examples"></a>Esempi
 <a name="Examples"> </a>
@@ -46,7 +46,7 @@ Start-CcLogging
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il cmdlet Start-CcLogging consente agli amministratori di iniziare a registrare le chiamate in arrivo e in uscita su un dispositivo Cloud Connector. Per impostazione predefinita, la registrazione viene interrotta automaticamente dopo quattro ore.
+Il cmdlet Start-CcLogging consente agli amministratori di iniziare a registrare le chiamate in ingresso e in uscita su un dispositivo Cloud Connector. Per impostazione predefinita, la registrazione verrà interrotta automaticamente dopo quattro ore.
   
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
@@ -56,7 +56,7 @@ Nessuna. Il cmdlet Start-CcLogging non accetta input da pipeline.
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

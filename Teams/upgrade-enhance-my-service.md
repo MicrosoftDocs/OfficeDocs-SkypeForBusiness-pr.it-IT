@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ddac2cb17ce132af624274abc052ed3eefabe155
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: f4e12f5cb4018930dcfd342844a807987678c3ad44eb3c948408a3f34e883410
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300742"
 ---
 # <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottenere il massimo dall'Teams dopo l'aggiornamento
 
@@ -37,7 +37,7 @@ Questo articolo offre una panoramica dei requisiti per ottenere il massimo dal f
 
 Dopo aver distribuito Teams nell'organizzazione e aver eseguito il servizio con qualità e affidabilità, il passaggio successivo consiste nel valutare regolarmente se si hanno opportunità per migliorare i servizi. Fa parte della pianificazione continua del miglioramento del servizio, uno standard moderno per la gestione dei servizi cloud.
 
-Un ottimo modo per assicurarsi di ottenere sempre il massimo dal proprio servizio è monitorare le roadmap pubbliche di [Teams per](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) i nuovi miglioramenti delle funzionalità che potrebbero essere di interesse per l'organizzazione. Se si ha accesso all'Microsoft 365 di amministrazione, si riceveranno regolarmente aggiornamenti sulle nuove e mutevoli funzionalità tramite il Centro messaggi.
+Un ottimo modo per assicurarsi di ottenere sempre il massimo dal proprio servizio è monitorare le roadmap pubbliche di [Teams per](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) i nuovi miglioramenti delle funzionalità che potrebbero essere di interesse per l'organizzazione. Se si ha accesso al interfaccia di amministrazione di Microsoft 365, si riceveranno regolarmente aggiornamenti sulle nuove e mutevoli funzionalità tramite il Centro messaggi.
 
 Quando si vedono opportunità per migliorare il servizio, è necessario avere il tempo necessario per farlo nel modo giusto. Rivisitare [Distribuire chat, team,](deploy-chat-teams-channels-microsoft-teams-landing-page.md) canali e app [](deploy-chat-teams-channels-microsoft-teams-landing-page.md) in Microsoft Teams e nelle fasi di implementazione e applicare la stessa guida end-to-end. Quando si apportano modifiche incrementali di piccole dimensioni, è improbabile che sia necessario completare tutte le attività e tutte le attività, ma è consigliabile valutare ogni attività e ogni attività lungo il percorso per offrire la migliore possibilità di ottenere un risultato positivo.
 

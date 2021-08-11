@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 7445e7db-c574-46fa-b964-8640d77047a8
 description: tblConfig contiene alcune configurazioni non supportate del server Chat persistente, in una riga.
-ms.openlocfilehash: 614e4e6514d695777c39a9d76482f775bd1a0981
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 0e9cc0a0c4686432032591aa0c380b303fc5251a56a6c983a1e10b009e0eb28a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54278354"
 ---
 # <a name="tblconfig"></a>tblConfig
  

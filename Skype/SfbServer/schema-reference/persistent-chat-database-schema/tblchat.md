@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b7fcf1b4-7a3f-4585-a6d9-95e7f030c7dc
 description: In tblChat sono inclusi tutti i messaggi di chat.
-ms.openlocfilehash: b375c8c5dcd626a02f59aa9a916d3ca883e4767d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2e764fa9ca64089a7015885bb4d33dc466d7dc214532e698505a19d2cf1a0d4a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54329420"
 ---
 # <a name="tblchat"></a>tblChat
  
@@ -33,7 +33,7 @@ In tblChat sono inclusi tutti i messaggi di chat.
 |chatDate  <br/> |bigint, not null  <br/> |Timestamp per il messaggio chat.  <br/> |
 |userId  <br/> |int, not null  <br/> |ID di entità dell'autore del post.  <br/> |
 |isAlert  <br/> |bit, not null  <br/> |True se il messaggio è un messaggio di avviso. False in caso contrario.  <br/> |
-|content  <br/> |nvarchar (max), not null  <br/> | Contenuto della chat (versione in testo normale). Il contenuto è solitamente in testo normale con le eccezioni seguenti: <br/>  I file sono rappresentati come collegamenti ma-filelink:. <br/>  I collegamenti sono rappresentati come elemento HTML (sebbene il tipo di contenuto non possa essere considerato HTML). <br/>  Le storie sono codificate come formato "[STORY]....". <br/> |
+|contenuto  <br/> |nvarchar (max), not null  <br/> | Contenuto della chat (versione in testo normale). Il contenuto è solitamente in testo normale con le eccezioni seguenti: <br/>  I file sono rappresentati come collegamenti ma-filelink:. <br/>  I collegamenti sono rappresentati come elemento HTML (sebbene il tipo di contenuto non possa essere considerato HTML). <br/>  I brani vengono codificati come formato "[STORY]....". <br/> |
 |rtf  <br/> |varchar(max)  <br/> |Contenuto della chat (versione RTF). Può essere Null se il client non lo fornisce.  <br/> |
    
 **Chiave**

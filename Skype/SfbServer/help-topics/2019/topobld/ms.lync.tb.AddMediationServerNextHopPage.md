@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: ede4123a-b863-4c53-916b-edf776948dd7
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per definire l'hop successivo per un Mediation Server che si sta definendo, selezionare nell'elenco a discesa Pool hop successivo il server Enterprise Edition o il server Standard Edition che fungerà da hop successivo per il Mediation Server. Fare clic su Avanti per continuare.
-ms.openlocfilehash: a85a298d8cd607866a3e2893e74525272152ce8c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Per definire l'hop successivo per un Mediation Server che si sta definendo, selezionare nell'elenco a discesa Pool hop successivo il server edizione Enterprise o il server edizione Standard che fungerà da hop successivo per il Mediation Server. Fare clic su Avanti per continuare.
+ms.openlocfilehash: a0e448ebc4efc9c56d041b5d943d6c2e4d53bf3423a46b979437be6ded76954f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49811526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54283418"
 ---
 # <a name="add-mediation-server-nexthop"></a>Aggiungere Mediation Server NextHop
  
-Per definire l'hop successivo per un Mediation Server  che si sta definendo, selezionare nell'elenco a discesa Pool hop successivo il server Enterprise Edition o il server Standard Edition che fungerà da hop successivo per il Mediation Server. Fare clic su **Avanti** per continuare.
+Per definire l'hop successivo per un Mediation Server  che si sta definendo, selezionare nell'elenco a discesa Pool hop successivo il server edizione Enterprise o il server edizione Standard che fungerà da hop successivo per il Mediation Server. Fare clic su **Avanti** per continuare.
   
 

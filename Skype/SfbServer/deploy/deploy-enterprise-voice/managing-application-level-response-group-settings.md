@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: aab749a1-fa2d-4ce8-a6c6-ebcfa37ce02a
 description: Gestione delle impostazioni di Response Group a livello di applicazione, ad esempio le impostazioni di musica in attesa e di ringback, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 941164fb3a99f62303b45f587b64e7aff9cb1393
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a6883247f7be8816a8363c9b2790d6d0e45599484037d23af860b3e0f191dc10
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54337156"
 ---
 # <a name="managing-application-level-response-group-settings-in-skype-for-business"></a>Gestione delle impostazioni di Response Group a livello di applicazione in Skype for Business
  
@@ -35,7 +35,7 @@ La musica di attesa predefinita viene riprodotta quando una chiamata viene messa
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Nella riga di comando digitare il comando seguente:
     
