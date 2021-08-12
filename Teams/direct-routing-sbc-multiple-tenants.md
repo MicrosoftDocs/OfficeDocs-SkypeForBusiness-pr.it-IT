@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8ff378d55f551cfb11bd6f185840407e20095035
-ms.sourcegitcommit: 272e8cf0075a566f055801433c9eb0313050530f
+ms.openlocfilehash: c313ee09db068fca512a7f1c9c3478fad465ff4f9d64381f4f62790da4208ad2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/14/2021
-ms.locfileid: "52486380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54293913"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -112,15 +112,15 @@ Per configurare la base e i sottodomini, seguire la procedura descritta di segui
 
 ### <a name="ensure-that-you-have-appropriate-rights-in-the-carrier-tenant"></a>Assicurarsi di avere diritti appropriati nel tenant del gestore
 
-È possibile aggiungere nuovi domini solo se è stato eseguito l'accesso all'Microsoft 365 di amministrazione come amministratore globale. 
+È possibile aggiungere nuovi domini solo se è stato eseguito l'accesso al interfaccia di amministrazione di Microsoft 365 come amministratore globale. 
 
-Per convalidare il ruolo di cui si dispone, accedere all'interfaccia di amministrazione di Microsoft 365 ( , passare a Utenti attivi utenti e quindi verificare di avere un https://portal.office.com) ruolo di amministratore   >  globale. 
+Per convalidare il ruolo di cui si dispone, accedere al interfaccia di amministrazione di Microsoft 365 ( , passare a Utenti attivi utenti e quindi verificare di avere https://portal.office.com) un ruolo di amministratore   >  globale. 
 
 Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo in Microsoft 365 o Office 365, vedere [Informazioni sui ruoli di amministratore.](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)
 
 ### <a name="add-a-base-domain-to-the-tenant-and-verify-it"></a>Aggiungere un dominio di base al tenant e verificarlo
 
-1. Nell'Microsoft 365 di amministrazione passare a **Configurazione**  >  **domini**  >  **Aggiungi dominio**.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365, passare a **Configurazione**  >  **domini**  >  **Aggiungi dominio**.
 2. Nella casella **Immettere un dominio di cui** si è proprietari digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *customers.adatum.biz*.
 
     ![Screenshot che mostra la pagina Aggiungi un dominio](media/direct-routing-2-sbc-add-domain.png)
@@ -156,14 +156,14 @@ Sarà necessario creare un nome di sottodominio univoco per ogni cliente. In que
 
 ### <a name="ensure-that-you-have-appropriate-rights-in-the-customer-tenant"></a>Assicurarsi di avere diritti appropriati nel tenant del cliente
 
-È possibile aggiungere nuovi domini solo se è stato eseguito l'accesso all'Microsoft 365 di amministrazione come amministratore globale. 
+È possibile aggiungere nuovi domini solo se è stato eseguito l'accesso al interfaccia di amministrazione di Microsoft 365 come amministratore globale. 
 
-Per convalidare il ruolo di cui si dispone, accedere all'interfaccia di amministrazione di Microsoft 365 ( , passare a Utenti attivi utenti e quindi verificare di avere un https://portal.office.com) ruolo di amministratore   >  globale. 
+Per convalidare il ruolo di cui si dispone, accedere al interfaccia di amministrazione di Microsoft 365 ( , passare a Utenti attivi utenti e quindi verificare di avere https://portal.office.com) un ruolo di amministratore   >  globale. 
 
 Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo in Microsoft 365 o Office 365, vedere [Informazioni sui ruoli di amministratore.](https://support.office.com/article/About-Office-365-admin-roles-da585eea-f576-4f55-a1e0-87090b6aaa9d)
 
 ### <a name="add-a-subdomain-to-the-customer-tenant-and-verify-it"></a>Aggiungere un sottodominio al tenant del cliente e verificarlo
-1. Nell'Microsoft 365 di amministrazione passare a **Configurazione**  >  **domini**  >  **Aggiungi dominio**.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365, passare a **Configurazione**  >  **domini**  >  **Aggiungi dominio**.
 2. Nella casella **Immettere un dominio di cui** si è proprietari digitare il nome FQDN del sottodominio per il tenant. Nell'esempio seguente il sottodominio è sbc1.customers.adatum.biz.
 
     ![Screenshot della pagina Aggiungi un dominio](media/direct-routing-5-sbc-add-customer-domain.png)
@@ -183,7 +183,7 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
     Per altre informazioni, vedere Creare [record DNS presso qualsiasi provider di hosting DNS.](https://support.office.com/article/create-dns-records-at-any-dns-hosting-provider-for-office-365-7b7b075d-79f9-4e37-8a9e-fb60c1d95166)
 
-7. Tornare all'interfaccia di amministrazione Microsoft 365 clienti e fare clic su **Verifica**. 
+7. Tornare alla pagina del cliente interfaccia di amministrazione di Microsoft 365 fare clic su **Verifica**. 
 8. Nella pagina successiva selezionare I record DNS verranno **aggiunti manualmente** e fare clic su **Avanti.**
 
     ![Screenshot delle opzioni nella pagina Aggiorna impostazioni DNS](media/direct-routing-9-sbc-update-dns.png)

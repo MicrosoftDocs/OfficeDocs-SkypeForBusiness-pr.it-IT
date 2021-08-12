@@ -1,5 +1,5 @@
 ---
-title: Confronto tra le funzionalità dei client mobili per Skype for Business
+title: Confronto delle funzionalità dei client mobili per Skype for Business
 ms.author: v-cichur
 author: cichur
 ms.reviewer: PhillipGarding
@@ -16,19 +16,19 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: b2c950c9-76a5-400a-b146-9b1a22790c12
-description: 'Riepilogo: esaminare il supporto delle funzionalità per il client mobile durante la pianificazione di Skype for Business Server.'
-ms.openlocfilehash: cdd6e5d5afc95fe6488ee89ed96739963b5f5ac0
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: esaminare il supporto delle funzionalità per il client mobile durante la pianificazione Skype for Business Server.'
+ms.openlocfilehash: 790bcb217e90b4b24422a3f2b76ebb6f8915cc0f8c25eb302d2fb2193d8d299a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49825996"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54293983"
 ---
-# <a name="mobile-client-feature-comparison-for-skype-for-business"></a>Confronto tra le funzionalità dei client mobili per Skype for Business
+# <a name="mobile-client-feature-comparison-for-skype-for-business"></a>Confronto delle funzionalità dei client mobili per Skype for Business
  
-**Riepilogo:** Esaminare il supporto delle funzionalità per il client mobile durante la pianificazione di Skype for Business Server.
+**Riepilogo:** Esaminare il supporto delle funzionalità per il client per dispositivi mobili durante la pianificazione Skype for Business Server.
   
-Questo articolo confronta le funzionalità tra i client mobili Skype for Business e il client desktop Skype for Business nelle seguenti categorie:
+In questo articolo vengono confrontate le caratteristiche e le funzionalità tra Skype for Business client mobili e il client desktop Skype for Business nelle categorie seguenti:
   
 - Accesso, notifiche push e funzionalità generali
     
@@ -38,7 +38,7 @@ Questo articolo confronta le funzionalità tra i client mobili Skype for Busines
     
 - Messaggistica istantanea
     
-- Audio e video da Skype for Business a Skype for Business
+- Skype for Business per Skype for Business audio e video
     
 - Conferenze
     
@@ -50,51 +50,51 @@ Questo articolo confronta le funzionalità tra i client mobili Skype for Busines
     
 -  Autenticazione moderna
     
-Nelle tabelle seguenti sono elencate le funzionalità disponibili per gli utenti di Skype for Business in una distribuzione locale di Skype for Business Server. Le stesse funzionalità sono disponibili anche per gli utenti di Skype for Business online e Microsoft 365 o Office 365, se non diversamente indicato nelle note a piè di pagina della tabella.
+Nelle tabelle seguenti sono elencate le funzionalità disponibili per Skype for Business utenti in una distribuzione locale di Skype for Business Server. Le stesse funzionalità sono disponibili anche per gli utenti Skype for Business Online e Microsoft 365 o Office 365, se non diversamente indicato nelle note a piè di pagina della tabella.
   
 > [!NOTE]
-> Per assistenza online e risorse per gli utenti finali, vedere [Individuare Skype for Business.](https://go.microsoft.com/fwlink/p/?LinkId=528686) 
+> Per informazioni e risorse online per gli utenti finali, vedere [Discover Skype for Business](https://go.microsoft.com/fwlink/p/?LinkId=528686). 
   
 > [!NOTE]
-> Per confrontare le funzionalità disponibili in altri client Skype for Business, vedere Confronto delle funzionalità [del client desktop per Skype for Business.](desktop-feature-comparison.md) 
+> Per confrontare le funzionalità disponibili in altri client Skype for Business desktop, vedere [Desktop client feature comparison for Skype for Business](desktop-feature-comparison.md). 
 
 > [!NOTE]
-> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client mobili Skype for Business correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che utilizzano MCX dovranno eseguire l'aggiornamento a un client corrente.
+> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
 ## <a name="sign-in-push-notifications-and-general-features"></a>Accesso, notifiche push e funzionalità generali
 
  
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
-|La sessione di Skype for Business rimane con accesso  <br/> |&#x2714;|&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714;|
+|Skype for Business sessione rimane connesso  <br/> |&#x2714;|&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714;|
 |Supporto per le notifiche Push  <br/> |&#x2714; &#x2778; |&#x2714;|&#x2714; &#x2779; |&#x2714; &#x2779; |
 |È possibile memorizzare nella cache sullo stesso dispositivo le informazioni di account di più utenti  <br/> |&#x2714;||||
-|Utilità per la lettura dello schermo/voice over  <br/> |&#x2714;|&#x2714; &#x2777;           solo inglese  <br/> |&#x2714;|&#x2714;|
+|Screen reader/voice over  <br/> |&#x2714;|&#x2714; &#x2777;           solo inglese  <br/> |&#x2714;|&#x2714;|
 |Usare una tastiera esterna per l'accessibilità  <br/> |&#x2714;||&#x2714;|&#x2714;|
 |Supporto del programma Analisi utilizzo software Microsoft  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; in Windows Phone, Skype for Business si discosta automaticamente dopo un periodo di inattività, come indicato di seguito:
+ &#x2776; in Windows Phone, Skype for Business automaticamente dopo un periodo di inattività, come indicato di seguito:
   
-- Se l'utente ha abilitato le notifiche push, Skype for Business si discosta dopo 10 giorni di inattività.
+- Se l'utente ha abilitato le notifiche push, Skype for Business dopo 10 giorni di inattività.
     
 - Se l'utente non ha abilitato le notifiche push, Skype for Business si esce non appena l'utente lascia l'app.
     
-Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il client mobile non ha contattato il server per 10 giorni a causa della perdita di connettività di rete o di altri problemi.
+Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il client mobile non ha contattato il server per 10 giorni a causa della perdita della connettività di rete o di altri problemi.
   
  &#x2777; solo nell'app.
   
- &#x2778; notifiche sono disponibili quando l'app è in esecuzione in background.
+ &#x2778; le notifiche sono disponibili quando l'app è in esecuzione in background.
  
- &#x2779; i servizi di notifica mobile Google/Android/GCNS e Apple/APNS usano la crittografia HTTPS/TLS per il recapito delle notifiche. Il payload della notifica viene gestito in testo normale durante l'elaborazione da parte del provider di notifiche.
+ &#x2779; sia Google/Android/GCNS che i servizi di notifica mobile Apple/APNS usano la crittografia HTTPS/TLS per il recapito delle notifiche. Il payload della notifica viene gestito in testo normale durante l'elaborazione da parte del provider di notifiche.
  
 -   Skype for Business per Android riceve notifiche semplici (recapitate tramite GCNS) senza dati del cliente.
--   Skype for Business per iOS riceve notifiche (recapitate tramite APNS) che possono includere i dati dei clienti per la chiamata o il messaggio.
+-   Skype for Business per iOS riceve notifiche (recapitate tramite APNS) che possono includere i dati del cliente per la chiamata o il messaggio.
  
   
 ## <a name="enhanced-presence-support"></a>Supporto della presenza avanzata
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
 |Pubblicare e visualizzare lo stato  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Visualizzare lo stato in base alle informazioni sulla disponibilità del calendario  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -102,14 +102,14 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Aggiungere una posizione personalizzata  <br/> |&#x2714;||||
 |Aggiungere una nota personalizzata  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Pubblicare lo stato in base alle informazioni sulla disponibilità del calendario  <br/> |&#x2714; &#x2776; ||||
-|Impostare lo stato presenza manuale (ad esempio Occupato, Non disturbare e così via)  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
+|Impostare lo stato di presenza manuale (ad esempio Occupato, Non disturbare e così via)  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; client mobili Skype for Business non aggiornano la presenza di un utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se un utente del client mobile è connesso anche al client desktop Skype for Business, il client desktop aggiorna la presenza dell'utente in base alle informazioni di calendario sulla disponibilità dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornato in base alle informazioni del calendario sulla disponibilità.
+ &#x2776; Skype for Business client mobili non aggiornano la presenza di un utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se un utente client per dispositivi mobili è anche connesso al client desktop Skype for Business, il client desktop aggiorna la presenza dell'utente in base alle informazioni del calendario sulla disponibilità dell'utente. Se l'utente ha eseguito l'accesso solo a un client per dispositivi mobili, la presenza dell'utente non viene aggiornato in base alle informazioni del calendario sulla disponibilità.
   
 ## <a name="contacts-and-contact-groups-support"></a>Supporto per contatti e gruppi di contatti
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
 |Visualizzare l'elenco contatti  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Visualizzare i gruppi di contatti  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -125,12 +125,12 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Visualizzare o nascondere le foto dei contatti  <br/> |&#x2714;|&#x2714;|||
 |Aggiungere un contatto alla schermata iniziale  <br/> ||&#x2714;|||
    
- &#x2776; non disponibile per gli utenti di Skype for Business online e/o Microsoft 365 o Office 365.
+ &#x2776; non disponibile per Skype for Business online e/o Microsoft 365 o Office 365 utenti.
   
 ## <a name="instant-messaging-support"></a>Supporto per la messaggistica istantanea
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
 |Avviare la messaggistica istantanea con un contatto  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Partecipare a conversazioni istantanee tra più utenti  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -143,25 +143,25 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Visualizzare gli inviti di messaggistica istantanea persi  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Impostare la vibrazione per i messaggi istantanei in arrivo  <br/> ||&#x2714; &#x2776; |&#x2714;|&#x2714;|
    
- &#x2776; questo dispositivo vibra ogni volta che viene ricevuta una messaggistica istantanea anche se viene visualizzato il messaggio corrente nella conversazione di messaggistica istantanea
+ &#x2776; Questo dispositivo vibra ogni volta che viene ricevuta una messaggistica istantanea anche se viene visualizzato il messaggio corrente nella conversazione di messaggistica istantanea
   
-## <a name="skype-for-business-to-skype-for-business-audio-and-video"></a>Audio e video da Skype for Business a Skype for Business
+## <a name="skype-for-business-to-skype-for-business-audio-and-video"></a>Skype for Business per Skype for Business audio e video
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
-|Skype for Business-to-Skype for Business Voice  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
-|Video da Skype for Business a Skype for Business  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
+|Skype for Business da a Skype for Business vocale  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
+|Skype for Business da Skype for Business video  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
    
 > [!NOTE]
 > Il video su un dispositivo mobile richiede una connessione WiFi per impostazione predefinita. 
   
-## <a name="conferencing-support"></a>Supporto per le conferenze
+## <a name="conferencing-support"></a>Supporto per conferenze
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
-|Fare clic su un collegamento nel promemoria per partecipare a un video o a una riunione VoIP  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
+|Fare clic su un collegamento nel promemoria della riunione per partecipare a un video o a una riunione VoIP  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Partecipare a conversazioni istantanee tra più utenti  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Utilizzare la funzionalità di conferenza con chiamata in uscita (il server chiama il dispositivo mobile)  <br/> |&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714; &#x2776; |
 |Utilizzare l'audioconferenza con accesso esterno  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -173,26 +173,26 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Accedere all'elenco dettagliato dei partecipanti alle conferenze di messaggistica istantanea  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Condividere il desktop o un programma  <br/> |&#x2714;||||
 |Visualizzare il desktop o il programma condiviso (VbSS o RDP)  <br/> |&#x2714;|&#x2714; &#x2777; |&#x2714; &#x2777; |&#x2714; &#x2777; |
-|Visualizzare i file di PowerPoint condivisi  <br/> |&#x2714;|&#x2714; &#x2777; |&#x2714; &#x2777;&#x2778; |&#x2714; &#x2777; &#x2778;|
-|Caricare e presentare file di PowerPoint  <br/> |&#x2714;||&#x2714; &#x2777; |&#x2714; &#x2777; |
+|Visualizzare i file PowerPoint condivisi  <br/> |&#x2714;|&#x2714; &#x2777; |&#x2714; &#x2777;&#x2778; |&#x2714; &#x2777; &#x2778;|
+|Upload e presentare PowerPoint file  <br/> |&#x2714;||&#x2714; &#x2777; |&#x2714; &#x2777; |
 |Usare gli strumenti per le riunioni (usare lavagna, condurre sondaggi, condividere file)  <br/> |&#x2714;||||
 |Esplorare un elenco delle proprie riunioni  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
-|Partecipare a una riunione anche se non si dispone di un account Skype for Business  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
+|Partecipare a una riunione anche se non si dispone di un Skype for Business account  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Visualizzare ulteriori informazioni sui partecipanti alla riunione  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Avviare una conversazione di gruppo non pianificata con più partecipanti direttamente dal client o dal dispositivo  <br/> |&#x2714;|&#x2714;|&#x2714;||
    
- &#x2776; per gli utenti di Microsoft 365 o Office 365, questa funzionalità richiede VoIP aziendale, che fa parte della licenza E5.
+ &#x2776; Per Microsoft 365 utenti Office 365, questa funzionalità richiede VoIP aziendale, che fa parte della licenza E5.
   
  &#x2777; richiede una connessione WiFi per impostazione predefinita.
  
- &#x2778; la visualizzazione di video incorporati nelle presentazioni di PowerPoint non è supportata.
+ &#x2778; la visualizzazione di video incorporati in PowerPoint presentazioni non è supportata.
   
-## <a name="telephony-support"></a>Supporto per la telefonia
+## <a name="telephony-support"></a>Supporto per telefonia
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
-|In Skype for Business, toccare l'icona della chiamata per chiamare un contatto  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
+|In Skype for Business toccare l'icona chiamata per chiamare un contatto  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Trasferire una chiamata  <br/> |&#x2714;|&#x2714;|&#x2714;||
 |Trasferimento consultivo  <br/> |&#x2714; &#x2778; ||||
 |Gestire l'inoltro di chiamata  <br/> |&#x2714; &#x2776; |&#x2714;|&#x2714;|&#x2714;|
@@ -202,55 +202,55 @@ Nei dispositivi iOS, Skype for Business si esce automaticamente dopo che il clie
 |Supportare servizi di emergenza  <br/> |&#x2714; &#x2777; ||||
 |Eseguire chiamate per conto di un altro contatto (scenario manager/delegato)  <br/> |&#x2714; &#x2776; ||||
 |Gestire le chiamate di un altro contatto, se configurato come delegato  <br/> |&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714; &#x2776; |
-|Usare Chiama da lavoro  <br/> |&#x2714; &#x2776; |&#x2714;|&#x2714;||
+|Usare Chiamata tramite lavoro  <br/> |&#x2714; &#x2776; |&#x2714;|&#x2714;||
 |Accedere al sistema di caselle vocali  <br/> |&#x2714;|&#x2714;|&#x2714;||
-|Usare il tastierino numerico in Skype for Business  <br/> |&#x2714; &#x2776; |&#x2714;|&#x2714;||
+|Usare la tastiera in Skype for Business  <br/> |&#x2714; &#x2776; |&#x2714;|&#x2714;||
    
- &#x2776; disponibile per gli utenti di Skype for Business online e/o Office 365 E5 e gli utenti ospitati in Skype for Business Server o Lync Server 2013 con VoIP aziendale abilitata.
+ &#x2776; Disponibile per gli utenti di Skype for Business Online e/o Office 365 E5 e gli utenti ospitati in Skype for Business Server o Lync Server 2013 con VoIP aziendale abilitata.
   
- &#x2777; per gli utenti di Skype for Business online e/o Microsoft 365 o Office 365, questa funzionalità è supportata dai partner Microsoft.
+ &#x2777; Per Skype for Business online e/o Microsoft 365 o Office 365 utenti, questa funzionalità è supportata dai partner Microsoft.
   
- &#x2778; solo client Desktop di Windows.
+ &#x2778; Windows solo client Desktop.
   
-## <a name="external-user-support"></a>Supporto per gli utenti esterni
+## <a name="external-user-support"></a>Supporto per utenti esterni
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
 |Avviare conversazioni istantanee con un contatto pubblico  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Avviare conversazioni istantanee con un contatto federato  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Condurre chiamate con due utenti esterni  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Condurre chiamate con più utenti esterni.  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
-|Usare Chiama da ufficio per raggiungere un contatto federato sul proprio telefono cellulare chiamando il numero di lavoro pubblicato &#x2776;            <br/> ||&#x2714;|&#x2714;|&#x2714;|
+|Usare Chiama tramite ufficio per raggiungere un contatto federato sul proprio telefono cellulare chiamando il numero di ufficio pubblicato &#x2776;            <br/> ||&#x2714;|&#x2714;|&#x2714;|
    
- &#x2776; per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy Contatti esterni. Per poter raggiungere un contatto federato sul proprio telefono cellulare chiamando il numero di ufficio pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy Colleghi.
+ &#x2776; Per impostazione predefinita, agli utenti federati viene assegnata la relazione di privacy Contatti esterni. Per poter raggiungere un contatto federato sul proprio cellulare chiamando il numero di ufficio pubblicato, il contatto federato deve assegnare manualmente la relazione di privacy Colleghi.
   
 ## <a name="address-book-integration"></a>Integrazione della rubrica
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
-|Contatti della rubrica del dispositivo di chiamata  <br/> ||&#x2714;|&#x2714;|&#x2714;|
-|Effettuare chiamate Skype for Business ai contatti direttamente dalla rubrica del dispositivo  <br/> ||||&#x2714;|
+|Contatti rubrica del dispositivo di chiamata  <br/> ||&#x2714;|&#x2714;|&#x2714;|
+|Effettuare Skype for Business chiamate ai contatti direttamente dalla rubrica del dispositivo  <br/> ||||&#x2714;|
    
-## <a name="archiving-and-compliance-support"></a>Supporto per l'archiviazione e la conformità
+## <a name="archiving-and-compliance-support"></a>Supporto per archiviazione e conformità
 
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
 |Fornire l'archiviazione sul lato client  <br/> |&#x2714;||||
 |Fornire la registrazione sul lato client  <br/> |&#x2714; &#x2776; ||||
    
- &#x2776; non disponibile per gli utenti di Skype for Business online e/o Microsoft 365 o Office 365.
+ &#x2776; non disponibile per Skype for Business online e/o Microsoft 365 o Office 365 utenti.
   
 ## <a name="modern-authentication"></a>Autenticazione moderna
 
 Questa tabella illustra le funzionalità che richiedono il supporto per l'autenticazione moderna.
   
-L'autenticazione moderna richiede anche una topologia descritta nelle [topologie di Skype for Business supportate con l'autenticazione moderna.](../../plan-your-deployment/modern-authentication/topologies-supported.md)
+L'autenticazione moderna richiede anche una topologia descritta in [Skype for Business topologie supportate con l'autenticazione moderna.](../../plan-your-deployment/modern-authentication/topologies-supported.md)
   
 
- | Funzionalità/funzionalità  | Client desktop Skype for Business  | Windows Phone  | iOS  | Android |
+ | Funzionalità/funzionalità  | Skype for Business client desktop  | Windows Phone  | iOS  | Android |
 |:-----|:-----|:-----|:-----|:-----|
 |Autenticazione moderna  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Autenticazione a più fattori  <br/> |&#x2714;|&#x2714;|&#x2714;|&#x2714;|

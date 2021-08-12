@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare Telefono Microsoft routing diretto di sistema.
-ms.openlocfilehash: 03abeed954a7760c7c53142380a8ca558c5b3761
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ff560ca9417e5386819a90961562520da94d5cfcd65bd5348bd7718601610bf1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54337414"
 ---
 # <a name="translate-phone-numbers-to-an-alternate-format"></a>Tradurre i numeri di telefono in un formato alternativo
 
@@ -72,7 +72,7 @@ Negli esempi seguenti sono presenti due utenti, Alice e Luca. Alice è un utente
 
 ## <a name="example-1-inbound-call-to-a-ten-digit-number"></a>Esempio 1: chiamata in ingresso a un numero a dieci cifre
 
-Luca chiama Alice usando un numero a dieci cifre non E.164. Luca chiama 2065550100 per raggiungere Alice.
+Luca chiama Alice usando un numero a dieci cifre non E.164. Bob chiama 2065550100 per raggiungere Alice.
 SBC usa 2065550100 nelle intestazioni RequestURI e To e 4255550100 nell'intestazione From.
 
 
@@ -85,7 +85,7 @@ SBC usa 2065550100 nelle intestazioni RequestURI e To e 4255550100 nell'intestaz
 ## <a name="example-2-inbound-call-to-a-four-digit-number"></a>Esempio 2: Chiamata in ingresso a un numero a quattro cifre
 
 Luca chiama Alice usando un numero a quattro cifre. Luca chiama 0100 per raggiungere Alice.
-SBC usa 0100 nelle intestazioni RequestURI e To e 4255550100 nell'intestazione From.
+SBC usa 0100 nelle intestazioni RequestURI e To 4255550100 nell'intestazione From.
 
 
 |Intestazione  |Originale |Intestazione tradotta |Parametro e regola applicati  |

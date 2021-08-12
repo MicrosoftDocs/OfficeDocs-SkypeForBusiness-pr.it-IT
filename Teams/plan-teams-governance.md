@@ -7,7 +7,7 @@ ms.topic: reference
 ms.service: msteams
 ms.reviewer: rowille
 audience: admin
-description: In questo articolo imparerai a pianificare l'implementazione delle funzionalità di governance in Teams.
+description: Questo articolo illustra come pianificare l'implementazione delle funzionalità di governance in Teams.
 localization_priority: Normal
 search.appverid: MET150
 f1.keywords:
@@ -17,19 +17,19 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ab70daffa91b534f15b032cd0c137efe89abb438
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f55183b114919048776b7fcb6f39ae6a084c29832652c32f87b97d258fb7f835
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54293073"
 ---
 # <a name="plan-for-governance-in-teams"></a>Pianificare la governance in Teams
 
 Teams offre un set di strumenti avanzati per implementare tutte le funzionalità di governance che l'organizzazione potrebbe richiedere. Questo articolo guida i professionisti IT a porre le domande giuste per determinare i requisiti di governance e come soddisfarli. 
 
 > [!Tip] 
-> Guardare la sessione seguente per altre informazioni sulla governance in Microsoft Teams: [Governance, gestione e ciclo di vita in Microsoft Teams](https://aka.ms/teams-governance)
+> Guardare la sessione seguente per altre informazioni sulla governance in Microsoft Teams: [Governance, gestione e ciclo](https://aka.ms/teams-governance) di vita in Microsoft Teams
 
 ## <a name="group-and-team-creation-naming-classification-and-guest-access"></a>Creazione di gruppi e team, denominazione, classificazione e accesso guest
 
@@ -40,28 +40,28 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli rigorosi sul
 |-        |-        |-        |
 |---------|---------|---------|
 |<img src="media/audio_conferencing_image7.png" alt= "An icon depicting decision points"/>  |Punti decisionali|<ul><li>L'organizzazione richiede una convenzione di denominazione specifica per i team?</li><li>I creatori di team hanno bisogno della possibilità di assegnare classificazioni specifiche dell'organizzazione ai team?</li><li>È necessario limitare la possibilità di aggiungere guest ai team in base al team?</li><li>L'organizzazione richiede di limitare gli utenti che possono creare team?</li></ul>|
-|<img src="media/audio_conferencing_image9.png" alt= "An icon depicting the next steps"/>|Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la creazione, la denominazione, la classificazione e l'accesso guest del team.</li><li>Pianificare l'implementazione di questi requisiti nell'ambito dell'implementazione di Teams.</li><li>Comunicare e pubblicare i criteri per informare gli utenti di Teams del comportamento previsto.</li></ul>|
+|<img src="media/audio_conferencing_image9.png" alt= "An icon depicting the next steps"/>|Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la creazione, la denominazione, la classificazione e l'accesso guest del team.</li><li>Pianificare l'implementazione di questi requisiti come parte dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento previsto.</li></ul>|
 
 > [!NOTE]
 > Per pianificare in anticipo, [altre informazioni sull'impostazione di questi criteri e sulle licenze necessarie.](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#template-settings)
 > 
 > [!NOTE]
-> Limitare la creazione di gruppi e team può rallentare la produttività degli utenti, perché molti servizi di Microsoft 365 e Office 365 richiedono la creazione di gruppi per il funzionamento del servizio. Per altre informazioni, passare a Ed espandere Perché controllare chi [crea i gruppi di Microsoft 365.](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618#why)
+> Limitare la creazione di gruppi e team può rallentare la produttività degli utenti, perché molti servizi di Microsoft 365 e Office 365 richiedono la creazione di gruppi per il funzionamento del servizio. Per altre informazioni, passare a Ed espandere Perché controllare chi crea Microsoft 365 [gruppi](https://support.office.com/article/manage-who-can-create-office-365-groups-4c46c8cb-17d0-44b5-9776-005fced8e618#why).
 
 
 #### <a name="additional-information"></a>Informazioni aggiuntive
 
 Dopo aver determinato i requisiti, è possibile implementarli usando i controlli di Azure AD. Per indicazioni tecniche su come implementare queste impostazioni, vedere:
 
-- [Cmdlet di Azure Active Directory per la configurazione delle impostazioni dei gruppi](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+- [Azure Active Directory cmdlet per la configurazione delle impostazioni di gruppo](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
 
-- [Applicare criteri di denominazione per i gruppi di Microsoft 365 in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-naming-policy)
+- [Applicare criteri di denominazione per Microsoft 365 gruppi in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-naming-policy)
 
-- [Criteri di denominazione dei gruppi di Microsoft 365](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
+- [Microsoft 365 Criteri di denominazione dei gruppi](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
 
-- [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, nei gruppi di Microsoft 365 e nei siti di SharePoint](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- [Usare etichette di riservatezza per proteggere il contenuto in Microsoft Teams, Microsoft 365 gruppi e siti SharePoint sensibili](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-- [Opzioni di fine ciclo di vita per gruppi, team e Yammer](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer)
+- [Opzioni di fine del ciclo di vita per gruppi, team e Yammer](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer)
 
 ## <a name="group-and-team-expiration-retention-and-archiving"></a>Scadenza, conservazione e archiviazione di gruppi e team
 
@@ -70,27 +70,27 @@ L'organizzazione potrebbe avere requisiti aggiuntivi per l'impostazione di crite
 |-          |-           |
 |-----------|------------|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede di specificare una data di scadenza per i team?</li><li>L'organizzazione richiede l'applicazione di criteri di conservazione dei dati specifici ai team?</li><li>L'organizzazione prevede di richiedere la possibilità di archiviare i team inattivi per mantenere il contenuto in uno stato di sola lettura?</li></ul>|
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la scadenza del team, la conservazione dei dati e l'archiviazione.</li><li>Pianificare l'implementazione di questi requisiti nell'ambito dell'implementazione di Teams.</li><li>Comunicare e pubblicare i criteri per informare gli utenti di Teams del comportamento previsto.</li></ul>|
+| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la scadenza del team, la conservazione dei dati e l'archiviazione.</li><li>Pianificare l'implementazione di questi requisiti nell'ambito dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento previsto.</li></ul>|
 
 > [!TIP]
 > Usare la tabella seguente per acquisire i requisiti dell'organizzazione.
 
-|Funzionalità |Dettagli |È richiesta una licenza di Azure AD Premium |Decisione |
+|Funzionalità |Dettagli |Azure AD Premium richiesta una licenza |Decisione |
 |---------|---------|---------|---------|
-|Criteri di scadenza |Gestire il ciclo di vita dei gruppi di Microsoft 365 impostando criteri di scadenza. |P1 |TBD|
-|Criteri di conservazione |Conservare o eliminare i dati per un periodo di tempo specifico impostando criteri di conservazione per Teams nel Centro sicurezza & conformità. **Nota:** l'uso di questa caratteristica richiede la licenza di Microsoft 365 o Office 365 Enterprise E3 o versioni successive. |No |TBD |
+|Criteri di scadenza |Gestire il ciclo di vita Microsoft 365 gruppi impostando criteri di scadenza. |P1 |TBD|
+|Criteri di conservazione |Conservare o eliminare i dati per un periodo di tempo specifico impostando criteri di conservazione per Teams nel Centro sicurezza & conformità. **Nota:** l'uso di questa funzionalità richiede la licenza di Microsoft 365 o Office 365 Enterprise E3 o versioni successive. |No |TBD |
 |Archiviare e ripristinare |Archiviare un team quando non è più attivo, ma si vuole tenerlo in giro per riferimento o per riattivarlo in futuro. |No |TBD |
 
 > [!Note]
-> La scadenza del gruppo è una caratteristica di Azure AD Premium. Per la disponibilità di questa funzionalità, il tenant deve avere un abbonamento ad Azure AD Premium e le licenze per l'amministratore che configura le impostazioni e i membri dei gruppi interessati.
+> La scadenza del gruppo è una Azure AD Premium caratteristica. Perché questa funzionalità sia disponibile, il tenant deve avere un abbonamento a Azure AD Premium e licenze per l'amministratore che configura le impostazioni e i membri dei gruppi interessati.
 
 #### <a name="additional-information"></a>Informazioni aggiuntive
 
 Per indicazioni tecniche su come implementare queste impostazioni, vedere:
 
-- [Configurare la scadenza dei gruppi di Microsoft 365](/azure/active-directory/users-groups-roles/groups-lifecycle).
+- [Configurare la scadenza Microsoft 365 gruppi.](/azure/active-directory/users-groups-roles/groups-lifecycle)
 
-- [Configurare i criteri di conservazione di Teams](retention-policies.md).
+- [Configurare i Teams di conservazione.](retention-policies.md)
 
 - [Archiviare o ripristinare un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7).
 
@@ -102,13 +102,13 @@ La gestione coerente dei membri di gruppi basati su progetti o con restrizioni �
 
 |-|-|-|
 |:-|:-|:-|
-|<img src="media/audio_conferencing_image7.png" alt= "An icon depicting decision points"/>  | Punti decisionali | L'organizzazione richiede un processo coerente per gestire l'appartenenza a uno o più team? <br> L'organizzazione richiede ai proprietari o ai membri stessi di giustificare regolarmente l'appartenenza a uno o più team? <br> L'organizzazione richiede l'approvazione di utenti e guest per richiedere l'accesso alle risorse, inclusi team, gruppi, siti di SharePoint e app? |
-|<img src="media/audio_conferencing_image9.png" alt= "An icon depicting the next steps"/>| Passaggi successivi? | Documentare i requisiti dell'organizzazione per ogni team o team specifico per la scadenza dell'appartenenza.<br>Pianificare in che modo l'organizzazione può raggruppare team, gruppi, siti di SharePoint e app in pacchetti di access.<br>Pianificare quali persone, ad esempio il responsabile del richiedente, un project manager, uno sponsor di un'organizzazione connessa o un responsabile della sicurezza dell'organizzazione dovranno approvare o rifiutare le richieste di accesso. |
+|<img src="media/audio_conferencing_image7.png" alt= "An icon depicting decision points"/>  | Punti decisionali | L'organizzazione richiede un processo coerente per gestire l'appartenenza a uno o più team? <br> L'organizzazione richiede ai proprietari o ai membri stessi di giustificare regolarmente l'appartenenza a uno o più team? <br> L'organizzazione richiede l'approvazione di utenti e guest per richiedere l'accesso alle risorse, inclusi team, gruppi, SharePoint siti e app? |
+|<img src="media/audio_conferencing_image9.png" alt= "An icon depicting the next steps"/>| Passaggi successivi? | Documentare i requisiti dell'organizzazione per ogni team o team specifico per la scadenza dell'appartenenza.<br>Pianificare in che modo l'organizzazione può raggruppare team, gruppi, SharePoint siti e app in pacchetti di accesso.<br>Pianificare quali persone, ad esempio il responsabile del richiedente, un project manager, uno sponsor di un'organizzazione connessa o un responsabile della sicurezza dell'organizzazione dovranno approvare o rifiutare le richieste di accesso. |
 
 > [!TIP]
 > Usare la tabella seguente per acquisire i requisiti dell'organizzazione.
 
-| Funzionalità | Dettagli | È richiesta una licenza di Azure AD Premium | Decisione |
+| Funzionalità | Dettagli | Azure AD Premium richiesta una licenza | Decisione |
 |:-|:-|:-|:-|
 | Recensioni di Access | Configurare le revisioni di accesso per ricertificare l'appartenenza di team specifici a intervalli regolari | P2 | TBD |
 | Gestione dei diritti | Configurare il pacchetto di accesso per consentire a utenti e guest di richiedere l'accesso ai team | P2 | TBD |

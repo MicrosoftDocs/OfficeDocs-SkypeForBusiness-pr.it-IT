@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft Teams.
-ms.openlocfilehash: 68bb6a33741c1508765c0808b69934073e220445
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: 2d4d64232d0422a4ff0c2857f10cf7f2dbb2ea6fb9b2f0a258dc06fb1a7a5263
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53509997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54293793"
 ---
 # <a name="phone-number-management-for-japan"></a>Telefono gestione dei numeri per il Giappone
 
@@ -44,7 +44,7 @@ Per altre informazioni, vedere [Gestire i numeri di telefono per l'organizzazion
 |Trasferire i numeri di telefono in Microsoft 365 o Office 365 per le **code di chiamata** in Giappone.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) trasferire i numeri di telefono del servizio. Questi numeri saranno aggiunti all'organizzazione.|
 |Modificare l'indirizzo di emergenza assegnato agli utenti che hanno un numero di telefono del Piano per chiamate.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) apportare modifiche all'indirizzo di emergenza. Loro aggiorneranno le informazioni per te.|
 |Modificare un numero utente in un numero di servizio. |Attualmente non è supportato quando si usa SoftBank Calling.|
-|Eseguire aggiornamenti del servizio directory per i numeri di coda di chiamata o operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -54,4 +54,4 @@ Per altre informazioni, vedere [Gestire i numeri di telefono per l'organizzazion
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
 
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

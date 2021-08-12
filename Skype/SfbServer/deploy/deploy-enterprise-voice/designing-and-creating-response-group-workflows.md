@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: dcb9effb-5d12-4dee-80fc-ab9654222d5a
 description: Progettare e creare flussi di lavoro di Response Group in Skype for Business Server VoIP aziendale. Vengono trattati sia i flussi di lavoro dei gruppi di risposta che i flussi di lavoro interattivi.
-ms.openlocfilehash: 678dcb25f5f802f101016a2a289015a60e48ba88
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ac77753e82acc2a7733fb5d273a55b4c9fd0d0fd5466262fec6fdc9a2c223030
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51105782"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54303120"
 ---
 # <a name="designing-and-creating-response-group-workflows-in-skype-for-business"></a>Progettazione e creazione di flussi di lavoro di Response Group in Skype for Business
 
@@ -40,7 +40,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.
 
 3. Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Flusso di lavoro**.
 
@@ -68,7 +68,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     > Il criterio di accesso esterno globale si applica all'applicazione Response Group. È possibile configurare i criteri globali per la federazione di Response Group utilizzando il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsExternalAccessPolicy** per impostare il parametro EnableOutsideAccess su True. Considerare che le impostazioni di criteri globali vengono applicate a tutti gli utenti, a meno che non dispongano di un criterio sito o utente assegnato. Prima di modificare questa impostazione per i Response Group, verificare quindi che le impostazioni della federazione soddisfino i requisiti dell'organizzazione. Per informazioni dettagliate sull'applicazione dei criteri agli utenti, vedere [Manage External Access Policy for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-manage-external-access-policy-for-your-organization). Per informazioni dettagliate sull'impostazione di federazione, [vedere Set-CsExternalAccessPolicy.](/powershell/module/skype/set-csexternalaccesspolicy?view=skype-ps)
 
     > [!NOTE]
-    > Gli utenti ospitati in Skype for Business online non possono effettuare chiamate a Response Group ospitati in una distribuzione locale. Ciò vale sia nelle distribuzioni ibride che nei casi in cui una distribuzione locale è federata con una distribuzione di Skype for Business online.
+    > Gli utenti ospitati in Skype for Business Online non possono effettuare chiamate a Response Group ospitati in una distribuzione locale. Ciò vale sia nelle distribuzioni ibride che nei casi in cui una distribuzione locale è federata con una distribuzione Skype for Business online.
 
 9. Per nascondere l'identità degli agenti durante le chiamate, selezionare la casella di controllo **Abilita anonimato agente**.
 
@@ -124,7 +124,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
     - Per utilizzare una pianificazione dell'orario di ufficio predefinita, fare clic su **Usa pianificazione preimpostata**, quindi selezionare la pianificazione che si desidera utilizzare nell'elenco a discesa.
 
       > [!NOTE]
-      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. Per definire le pianificazioni preimpostate, utilizzare il cmdlet **New-CSRgsHoursOfBusiness**. Per informazioni dettagliate, [vedere (Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business.](optional-define-response-group-business-hours.md)
+      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. Per definire le pianificazioni preimpostate, utilizzare il cmdlet **New-CSRgsHoursOfBusiness**. Per informazioni dettagliate, vedere [(Facoltativo) Definire l'orario di ufficio](optional-define-response-group-business-hours.md)di Response Group in Skype for Business .
 
       > [!NOTE]
       > Quando si seleziona una pianificazione preimpostata, nei campi **Giorno**, **Apri** e **Chiudi** vengono inseriti automaticamente i giorni e le ore in cui il Response Group è disponibile.
@@ -163,7 +163,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
 24. In **Passaggio 5 Specificare le festività** fare clic sulle caselle di controllo per uno o più insiemi di festività che definiscono i giorni in cui il Response Group è chiuso.
 
     > [!NOTE]
-    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, [vedere (Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business.
+    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, vedere [(Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business .
 
 25. Se si desidera riprodurre un messaggio delle festività, selezionare la casella di controllo **Riproduci un messaggio durante le festività**, quindi specificare il messaggio da riprodurre effettuando una delle operazioni seguenti:
 
@@ -204,7 +204,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
 
 3. Creare il messaggio di benvenuto e salvarlo in una variabile. Nella riga di comando digitare il comando seguente:
 
@@ -244,7 +244,7 @@ Un flusso di lavoro inoltre definisce impostazioni quali il messaggio di benvenu
    $actionWM = New-CsRgsCallAction -Prompt $promptWM -Action TransferToQueue -QueueID $qid.Identity
    ```
 
-6. Se si desidera definire l'orario di ufficio e le festività, è necessario crearli prima della creazione o della modifica del flusso di lavoro. Per informazioni dettagliate, [vedere (Facoltativo) Definire](optional-define-response-group-business-hours.md) l'orario di ufficio di Response Group in Skype for Business e [(facoltativo) Definire i](optional-define-response-group-holiday-sets.md)set di festività di Response Group in Skype for Business.
+6. Se si desidera definire l'orario di ufficio e le festività, è necessario crearli prima della creazione o della modifica del flusso di lavoro. Per informazioni dettagliate, vedere [(Facoltativo) Definire](optional-define-response-group-business-hours.md) l'orario di ufficio di Response Group in Skype for Business e [(Facoltativo) Definire i](optional-define-response-group-holiday-sets.md)set di festività di Response Group in Skype for Business .
 
 7. Se si desidera definire messaggi per le chiamate ricevute al di fuori dell'orario di ufficio o durante le festività, utilizzare il cmdlet **New-CsRgsPrompt** per definire il messaggio e il cmdlet **New-CsRgsCallAction** per definire l'azione da eseguire dopo il messaggio. Per informazioni dettagliate, [vedere New-CsRgsPrompt](/powershell/module/skype/new-csrgsprompt?view=skype-ps) e [New-CsRgsCallAction.](/powershell/module/skype/new-csrgscallaction?view=skype-ps)
 
@@ -283,7 +283,7 @@ L'applicazione Response Group offre funzionalità di riconoscimento vocale e sin
 I flussi di lavoro interattivi supportano fino a due livelli di domande, con ogni domanda che prevede fino a quattro possibili risposte. L'IVR pone al chiamante una domanda e, a seconda della risposta del chiamante, instrada il chiamante a una coda o pone una seconda domanda. Anche la seconda domanda prevede quattro possibili risposte. A seconda della risposta alla domanda di secondo livello, il chiamante verrà instradato alla coda appropriata.
 
 > [!NOTE]
-> Quando si progettano flussi di chiamate utilizzando Skype for Business Server Management Shell, è possibile definire qualsiasi numero di livelli di domande IVR e qualsiasi numero di risposte. Tuttavia, per la facilità di utilizzo del chiamante, è consigliabile non utilizzare più di tre livelli di domande, con non più di cinque risposte per ognuno. Inoltre, se si progetta un flusso di chiamate con più di due livelli di domande con più di quattro risposte ciascuna, non è possibile modificare il flusso di chiamata utilizzando il Pannello di controllo di Skype for Business Server.
+> Quando si progettano flussi di chiamate utilizzando Skype for Business Server Management Shell, è possibile definire qualsiasi numero di livelli di domande IVR e qualsiasi numero di risposte. Tuttavia, per la facilità di utilizzo del chiamante, è consigliabile non utilizzare più di tre livelli di domande, con non più di cinque risposte per ognuno. Inoltre, se si progetta un flusso di chiamate con più di due livelli di domande con più di quattro risposte, non è possibile modificare il flusso di chiamata utilizzando il Skype for Business Server Pannello di controllo.
 
 Le domande dell'IVR e le risposte del chiamante vengono fornite all'agente che risponde che accetta la chiamata.
 
@@ -373,7 +373,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.
 
 3. Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Flusso di lavoro**.
 
@@ -401,7 +401,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     > Il criterio di accesso esterno globale si applica all'applicazione Response Group. È possibile configurare i criteri globali per la federazione di Response Group utilizzando il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsExternalAccessPolicy** per impostare il parametro EnableOutsideAccess su True. Considerare che le impostazioni di criteri globali vengono applicate a tutti gli utenti, a meno che non dispongano di un criterio sito o utente assegnato. Prima di modificare questa impostazione per i Response Group, verificare quindi che le impostazioni della federazione soddisfino i requisiti dell'organizzazione. Per informazioni dettagliate sull'applicazione dei criteri agli utenti, vedere [Manage External Access Policy for Your Organization](/previous-versions/office/lync-server-2013/lync-server-2013-manage-external-access-policy-for-your-organization). Per informazioni dettagliate sull'impostazione di federazione, **vedere Set-CsExternalAccessPolicy** nella documentazione.
 
     > [!NOTE]
-    > Gli utenti ospitati in Skype for Business online non possono effettuare chiamate a Response Group ospitati in una distribuzione locale. Ciò vale sia nelle distribuzioni ibride che nei casi in cui una distribuzione locale è federata con una distribuzione di Skype for Business online.
+    > Gli utenti ospitati in Skype for Business Online non possono effettuare chiamate a Response Group ospitati in una distribuzione locale. Ciò vale sia nelle distribuzioni ibride che nei casi in cui una distribuzione locale è federata con una distribuzione Skype for Business online.
 
 9. Per nascondere l'identità degli agenti durante le chiamate, selezionare la casella di controllo **Abilita anonimato agente**.
 
@@ -454,7 +454,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     - Per utilizzare una pianificazione dell'orario di ufficio predefinita, fare clic su **Usa pianificazione preimpostata**, quindi selezionare la pianificazione che si desidera utilizzare nell'elenco a discesa.
 
       > [!NOTE]
-      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. È possibile definire pianificazioni predefinite utilizzando il cmdlet **New-CsRgsHoursOfBusiness.** Per informazioni dettagliate, [vedere (Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business.](optional-define-response-group-business-hours.md) Quando si seleziona una pianificazione preimpostata, nei campi **Giorno**, **Apri** e **Chiudi** vengono inseriti automaticamente i giorni e le ore in cui il Response Group è disponibile.
+      > Per potere selezionare questa opzione, è necessario che in precedenza sia stata definita almeno una pianificazione preimpostata. È possibile definire pianificazioni predefinite utilizzando il cmdlet **New-CsRgsHoursOfBusiness.** Per informazioni dettagliate, vedere [(Facoltativo) Definire l'orario di ufficio](optional-define-response-group-business-hours.md)di Response Group in Skype for Business . Quando si seleziona una pianificazione preimpostata, nei campi **Giorno**, **Apri** e **Chiudi** vengono inseriti automaticamente i giorni e le ore in cui il Response Group è disponibile.
 
     - Per utilizzare una pianificazione personalizzata da applicare solo a questo flusso di lavoro, fare clic su **Usa pianificazione personalizzata**.
 
@@ -490,7 +490,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 24. In **Passaggio 5 Specificare le festività** fare clic sulle caselle di controllo per uno o più insiemi di festività che definiscono i giorni in cui il Response Group è chiuso.
 
     > [!NOTE]
-    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, [vedere (Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business.
+    > È necessario definire le festività e i relativi insiemi prima di configurare il flusso di lavoro. Utilizzare i cmdlet **New-CsRgsHoliday** e **New-CsRgsHolidaySet** per definire le festività e i relativi insiemi. Per informazioni dettagliate, vedere [(Facoltativo) Definire](optional-define-response-group-holiday-sets.md)i set di festività di Response Group in Skype for Business .
 
 25. Se si desidera riprodurre un messaggio delle festività, selezionare la casella di controllo **Riproduci un messaggio durante le festività**, quindi specificare il messaggio da riprodurre effettuando una delle operazioni seguenti:
 
@@ -533,7 +533,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
     > [!NOTE]
     > Il simbolo "#" viene convertito nella parola "numero" dal motore di sintesi vocale. Se è necessario fare riferimento al tasto #, utilizzare il nome del tasto anziché il simbolo nella richiesta. Ad esempio, "Per parlare con il reparto vendite, premere cancelletto".
 
-    - Per utilizzare un file audio preregistrato contenente la domanda, fare clic su Seleziona una registrazione **e** quindi sul collegamento **a** una registrazione per caricare il file. Nella nuova finestra del browser fare clic **su Sfoglia,** selezionare il file audio e quindi fare clic su **Apri.** Fare **clic** su Carica per caricare il file e facoltativamente è possibile digitare la domanda nella casella di testo, in modo da consentire l'inoltro della domanda e della risposta del chiamante all'agente che risponde.
+    - Per utilizzare un file audio preregistrato contenente la domanda, fare clic su Seleziona una registrazione **e** quindi sul collegamento **a** una registrazione per caricare il file. Nella nuova finestra del browser fare clic **su Sfoglia,** selezionare il file audio e quindi fare clic su **Apri.** Fare **clic Upload** per caricare il file e facoltativamente è possibile digitare la domanda nella casella di testo, in modo da consentire l'inoltro della domanda e della risposta del chiamante all'agente che risponde.
 
       > [!NOTE]
       > Tutti i file audio forniti dall'utente devono soddisfare requisiti specifici. Per informazioni dettagliate sui formati di file supportati, vedere [Technical Requirements for Response Groups](/previous-versions/office/lync-server-2013/lync-server-2013-technical-requirements-for-response-group).
@@ -564,7 +564,7 @@ Nell'elenco seguente vengono descritte alcune procedure consigliate nella proget
 
 1.  Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
 
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
 
 3. Recuperare il nome del servizio Response Group Service e assegnarlo a una variabile. Nella riga di comando digitare il comando seguente:
 

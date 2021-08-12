@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Guida dettagliata che illustra come configurare Sistema telefonico (Cloud PBX) per l'organizzazione in Microsoft 365 o Office 365.
-ms.openlocfilehash: c00b628716a54adcb19c3dd1f00e8e9e2b6f4c40
-ms.sourcegitcommit: 380a96f1ed2cefb429286854f06546bdb28d7d74
+ms.openlocfilehash: 1fd75870b53dafa5ade4db4f66a82593cce81836994cd4b5e01f1f1bda4864b4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "49701214"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54293003"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare Sistema telefonico nell'organizzazione
 

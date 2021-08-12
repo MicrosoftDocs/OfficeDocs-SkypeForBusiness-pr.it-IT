@@ -11,12 +11,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: Gli utenti finali possono imparare a usare le chat room in Microsoft Teams
-ms.openlocfilehash: 820380517a7f56a8a9738e02705ba68a5b6f8048
-ms.sourcegitcommit: 99bd62ea8a11b0068231e7b8335790323912cb9e
+ms.openlocfilehash: 77646dad78459b108f39803bb4927d849bce703f92e36c832d8606dbc3e15e94
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "49727712"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345115"
 ---
 # <a name="using-breakout-rooms-in-microsoft-teams"></a>Uso di chat room per i ritaglioni in Microsoft Teams
 
