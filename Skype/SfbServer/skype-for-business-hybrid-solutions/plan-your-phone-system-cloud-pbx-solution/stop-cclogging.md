@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: fee9eda7-ad15-40d2-b9fe-21c5462d3309
-description: Il Stop-CcLogging cmdlet interrompe la generazione del registro chiamate in ingresso e in uscita per un'applicazione Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: 8a012e9b1a94c3698cc61da4326eb0ccbb27bca2
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Stop-CcLogging interrompe la generazione del registro delle chiamate in ingresso e in uscita per un Skype for Business Cloud Connector Edition appliance.
+ms.openlocfilehash: 7813acf9867829cadaa26d84a0e8a6c33f825ef45b9fca781840a44f94574930
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54347561"
 ---
 # <a name="stop-cclogging"></a>Stop-CcLogging
  
-Il Stop-CcLogging cmdlet interrompe la generazione del registro chiamate in ingresso e in uscita per un'applicazione Skype for Business Cloud Connector Edition.
+Il cmdlet Stop-CcLogging interrompe la generazione del registro delle chiamate in ingresso e in uscita per un Skype for Business Cloud Connector Edition appliance.
   
 ```powershell
 Stop-CcLogging [-RemoveCache]
@@ -50,7 +50,7 @@ Stop-CcLogging -RemoveCache
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il Stop-CcLogging cmdlet interrompe la registrazione delle chiamate in ingresso e in uscita su un dispositivo. Per impostazione predefinita, la registrazione viene interrotta automaticamente dopo quattro ore.
+Il cmdlet Stop-CcLogging interrompe la registrazione delle chiamate in ingresso e in uscita su un dispositivo. Per impostazione predefinita, la registrazione verrà interrotta automaticamente dopo quattro ore.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>
@@ -67,7 +67,7 @@ Nessuna. Il cmdlet Stop-CcLogging non accetta input da pipeline.
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

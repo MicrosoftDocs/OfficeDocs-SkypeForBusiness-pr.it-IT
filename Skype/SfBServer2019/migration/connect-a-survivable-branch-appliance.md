@@ -10,23 +10,23 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Ogni Survivable Branch Appliance (SBA) è associato a un pool Front End che funge da registrar di backup per l'SBA. Quando il pool Front End viene migrato a Skype for Business Server 2019, l'SBA deve essere disassociato dal pool Front End durante l'aggiornamento del pool, Dopo aver eseguito la migrazione del pool a Skype for Business Server 2019, l'SBA può essere nuovamente associato al pool Front End aggiornato. Ciò implica l'eliminazione dell'SBA dalla topologia legacy in Generatore di topologie e quindi l'aggiunta dell'SBA alla topologia di Skype for Business Server 2019. Gli utenti ospitati nell'SBA legacy devono prima essere spostati in un altro pool Front End prima di rimuovere l'SBA dalla topologia. Dopo aver aggiunto l'SBA alla topologia di Skype for Business Server 2019, questi utenti possono essere spostati di nuovo nell'SBA. La procedura è sintetizzata sotto.
-ms.openlocfilehash: e56bae1631a315b6f42042fb6a7bedd4f144a1b6
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Ogni Survivable Branch Appliance (SBA) è associato a un pool Front End che funge da registrar di backup per l'SBA. Quando il pool Front End viene migrato Skype for Business Server Skype for Business Server 2019, l'SBA deve essere disassociato dal pool Front End durante l'aggiornamento del pool, Una volta eseguita la migrazione del pool Skype for Business Server Skype for Business Server 2019, l'SBA può essere nuovamente associato al pool Front End aggiornato. Ciò comporta l'eliminazione dell'SBA dalla topologia legacy in Generatore di topologie e quindi l'aggiunta dell'SBA alla topologia Skype for Business Server 2019. Gli utenti ospitati nell'SBA legacy devono prima essere spostati in un altro pool Front End prima di rimuovere l'SBA dalla topologia. Dopo aver aggiunto l'SBA alla topologia Skype for Business Server 2019, tali utenti possono essere spostati di nuovo nell'SBA. La procedura è sintetizzata sotto.
+ms.openlocfilehash: 4977868c45b274adea514d84e251f682da02cc8ee486a5a182d984ee652f3ae2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51113342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54313874"
 ---
 # <a name="connect-a-survivable-branch-appliance"></a>Connettere un Survivable Branch Appliance
 
-Ogni Survivable Branch Appliance (SBA) è associato a un pool Front End che funge da registrar di backup per l'SBA. Quando il pool Front End viene migrato a Skype for Business Server 2019, l'SBA deve essere disassociato dal pool Front End durante l'aggiornamento del pool. Dopo la migrazione del pool a Skype for Business Server 2019, l'SBA può essere nuovamente associato al pool Front End aggiornato. Ciò implica l'eliminazione dell'SBA dalla topologia legacy in Generatore di topologie e quindi l'aggiunta dell'SBA alla topologia di Skype for Business Server 2019. Gli utenti ospitati nell'SBA legacy devono prima essere spostati in un altro pool Front End prima di rimuovere l'SBA dalla topologia. Dopo l'aggiunta dell'SBA alla topologia di Skype for Business Server 2019, tali utenti possono essere spostati di nuovo nell'SBA. La procedura è sintetizzata sotto.
+Ogni Survivable Branch Appliance (SBA) è associato a un pool Front End che funge da registrar di backup per l'SBA. Quando il pool Front End viene migrato a Skype for Business Server 2019, l'SBA deve essere disassociato dal pool Front End durante l'aggiornamento del pool. Dopo la migrazione del pool a Skype for Business Server 2019, l'SBA può essere nuovamente associato al pool Front End aggiornato. Ciò comporta l'eliminazione dell'SBA dalla topologia legacy in Generatore di topologie e quindi l'aggiunta dell'SBA alla topologia Skype for Business Server 2019. Gli utenti ospitati nell'SBA legacy devono prima essere spostati in un altro pool Front End prima di rimuovere l'SBA dalla topologia. Dopo l'aggiunta dell'SBA alla topologia Skype for Business Server 2019, tali utenti possono essere spostati di nuovo nell'SBA. La procedura è sintetizzata sotto.
   
 1. Spostare gli utenti di succursale ospitati nell'SBA legacy in un altro pool Front End.
     
 2. Rimuovere SBA dalla topologia legacy per disconnettere il pool Front End esistente come registrar di backup.
     
-3. Aggiungere SBA alla topologia di Skype for Business Server 2019 e configurare questo nuovo pool Front End come registrar di backup. 
+3. Aggiungere SBA alla topologia Skype for Business Server 2019 e configurare questo nuovo pool Front End come registrar di backup. 
     
 4. Spostare gli utenti di succursale nel nuovo Skype for Business Server 2019 SBA.
     
@@ -52,7 +52,7 @@ Ogni Survivable Branch Appliance (SBA) è associato a un pool Front End che fung
     
 7. Fare **clic** su Avanti e quindi, se si utilizza un Survivable Branch Appliance o un Server in questo sito, deselezionare la casella di controllo Apri il Nuovo **Survivable Wizard** alla chiusura della procedura guidata. Fare clic su **Fine**.
     
-8. Per associare l'SBA legacy al pool Front End di Skype for Business Server 2019:
+8. Per associare l'SBA legacy al pool Front End Skype for Business Server 2019:
     
     1. Espandere il sito di succursale che è stato creato. 
     

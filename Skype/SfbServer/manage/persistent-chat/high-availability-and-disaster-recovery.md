@@ -13,21 +13,21 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 4346e70b-ac48-4ab9-853e-3cdd6dcfe678
 description: 'Riepilogo: informazioni su come gestire la disponibilità elevata e il ripristino di emergenza del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 4fb3a38fadf2a8a063715e389718859dcc7ddbdd
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b3535d87f939da1e8dc0caf2368ec5de77573639ca362002a097f1b1d9afd6c9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324285"
 ---
 # <a name="manage-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Gestire la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
  
-**Riepilogo:** Informazioni su come gestire la disponibilità elevata e il ripristino di emergenza del server Chat persistente in Skype for Business Server 2015.
+**Riepilogo:** Informazioni su come gestire la disponibilità elevata del server Chat persistente e il ripristino di emergenza in Skype for Business Server 2015.
   
-In questo argomento viene descritto come eseguire il failover e il fail back del server Chat persistente. Prima di leggere questo argomento, leggere Pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente [in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) e Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat [persistente in Skype for Business Server 2015.](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md)
+In questo argomento viene descritto come eseguire il failover e il fail back del server Chat persistente. Prima di leggere questo argomento, leggere Plan [for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) e [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md).
 
 > [!NOTE]
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="fail-over-persistent-chat-server"></a>Failover del server Chat persistente
 
@@ -37,7 +37,7 @@ La procedura di failover si basa sul presupposto che il data center secondario s
   
 - Il database primario del server Chat persistente e il database mirror del server Chat persistente non sono disponibili.
     
-- Skype for Business Server Front End Server non è disponibile.
+- Skype for Business Server Front End Server non disponibile.
     
 La procedura prevede due passaggi di base:
   
@@ -102,10 +102,10 @@ La procedura presuppone inoltre che non siano stati distribuiti nuovi server mir
   
 Questi passaggi sono pensati per consentite il ripristino della configurazione esistente prima della situazione di emergenza che ha causato il failover dal server primario a quello di backup.
   
-1. Cancellare tutti i server dall'elenco Server Chat persistente Active Server utilizzando il cmdlet **Set-CsPersistentChatActiveServer** da Skype for Business Server Management Shell. In questo modo tutti i server Chat persistente non si connettono al database mgc e al database mgccomp durante il failback.
+1. Cancellare tutti i server dall'elenco server Chat persistente Active Server utilizzando il cmdlet **Set-CsPersistentChatActiveServer** da Skype for Business Server Management Shell. In questo modo tutti i server Chat persistente non si connettono al database mgc e al database mgccomp durante il failback.
     
     > [!IMPORTANT]
-    > L'SQL Server sul server back-end secondario del server Chat persistente deve essere in esecuzione con un account con privilegi. In particolare, l'account deve disporre di: 
+    > L SQL Server interno del server Chat persistente secondario deve essere in esecuzione con un account con privilegi. In particolare, l'account deve disporre di: 
   
    - Accesso in lettura alla condivisione di rete in cui vengono posizionati i backup.
     

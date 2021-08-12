@@ -19,18 +19,18 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni generali dei criteri delle riunioni in Teams.
-ms.openlocfilehash: ecbdceefa5d60ca3c7d5b09aaa094054b88f60f915b17934a734fa07bdf3da23
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: aaeabbb61879e9e96c6b887a90fb3814fd7a3c4f3462d5e4f943a58b5dfacc56
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54293293"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57850297"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
 <a name="bkgeneral"> </a>
 
-Questo articolo descrive le impostazioni dei criteri generali seguenti per Teams riunioni:
+Questo articolo descrive le impostazioni generali dei criteri per le Teams riunioni:
 
 - [Consenti l'uso di Riunione immediata nei canali](#allow-meet-now-in-channels)
 - [Consenti il componente aggiuntivo per Outlook](#allow-the-outlook-add-in)
@@ -124,9 +124,9 @@ Questo è un criterio per utente. Questa impostazione controlla se gli organizza
 
 Attualmente, è possibile usare solo PowerShell per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
-Per consentire a un organizzatore di scaricare il rapporto sulla partecipazione alle riunioni, impostare il parametro **AllowEngagementReport** su **Abilitato**. Se abilitata, l'opzione per scaricare il rapporto viene visualizzata nel riquadro **Partecipanti**.
+Per consentire a un organizzatore della riunione di scaricare il report sulla partecipazione alla riunione, impostare il **parametro AllowEngagementReport** su **Enabled**. Se abilitata, l'opzione per scaricare il rapporto viene visualizzata nel riquadro **Partecipanti**. Per impostazione predefinita, questa impostazione è abilitata.
 
-Per evitare che un organizzatore della riunione scarichi il rapporto, impostare il parametro su **Disabilitato**. Per impostazione predefinita, questa impostazione è disabilitata e l'opzione per scaricare il rapporto non è disponibile.
+Per evitare che un organizzatore della riunione scarichi il rapporto, impostare il parametro su **Disabilitato**.
 
 ## <a name="meeting-provider-for-islands-mode"></a>Provider di riunioni per la modalità Isole
 

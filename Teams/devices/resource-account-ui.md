@@ -1,24 +1,24 @@
 ---
-title: Creare un account della risorsa usando l'interfaccia Microsoft 365 di amministrazione
-description: Se si preferisce usare un'interfaccia utente grafica, è possibile creare un account delle risorse per il Microsoft Teams Rooms e le barre di collaborazione per Microsoft Teams usando l'interfaccia di amministrazione di Microsoft 365.
+title: Creare un account della risorsa usando il interfaccia di amministrazione di Microsoft 365
+description: Se si preferisce usare un'interfaccia utente grafica, è possibile creare un account delle risorse per il Microsoft Teams Rooms e le barre di collaborazione per Microsoft Teams usando il centro Amministrazione Microsoft 365.
 ms.reviewer: payurevi
 manager: serdars
 audience: ITPro
-keywords: creare un account del dispositivo, Microsoft 365'interfaccia utente e Microsoft 365 di amministrazione
+keywords: creare un account del dispositivo, Microsoft 365'interfaccia utente, interfaccia di amministrazione di Microsoft 365
 ms.sitesec: library
 ms.service: msteams
 author: flinchbot
 ms.author: mitressl
 ms.topic: article
 ms.localizationpriority: medium
-ms.openlocfilehash: 1137f462b9c21455f3a65a87075fd653b5c081b9
-ms.sourcegitcommit: f0ccafb7e9c2d382ab4545e085657e8129024f1d
+ms.openlocfilehash: 014c51182213ec17e940f466ddd5fa0cc13185be561e3670277430ce78a054c2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/16/2020
-ms.locfileid: "44268036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54314092"
 ---
-# <a name="create-a-microsoft-365-resource-account-using-the-microsoft-365-admin-center"></a>Creare un account Microsoft 365 con l'interfaccia Microsoft 365 di amministrazione
+# <a name="create-a-microsoft-365-resource-account-using-the-microsoft-365-admin-center"></a>Creare un Microsoft 365 di risorse usando il interfaccia di amministrazione di Microsoft 365
 
 Microsoft 365 account delle risorse sono account Teams cassette postali e account dedicati a risorse specifiche, ad esempio una sala, un proiettore e così via. Questi account delle risorse possono rispondere automaticamente agli inviti alle riunioni usando le regole definite al momento della creazione. Ad esempio, se si ha una risorsa comune, ad esempio una sala riunioni, è possibile configurare un account della risorsa per tale sala riunioni che accetti o rifiuti automaticamente gli inviti alle riunioni a seconda della disponibilità del calendario.
 
@@ -35,15 +35,15 @@ Prima di creare un account Microsoft 365 risorsa, verificare il tipo di licenza 
 
 Per altre informazioni sulle licenze Sala riunioni, Sistema telefonico e Business Voice, vedere licenze per [Microsoft Teams componenti aggiuntivi](../teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 
-## <a name="create-a-resource-account-in-the-microsoft-365-admin-center"></a><a href="" id="create-device-acct-m365-admin-ctr"></a>Creare un account della risorsa nell'interfaccia Microsoft 365 di amministrazione
+## <a name="create-a-resource-account-in-the-microsoft-365-admin-center"></a><a href="" id="create-device-acct-m365-admin-ctr"></a>Creare un account della risorsa nel interfaccia di amministrazione di Microsoft 365
 
 1. Accedi a Microsoft 365 visitandohttps://admin.microsoft.com
-2. Specificare le credenziali di amministratore per il tenant Microsoft 365 tenant. Verrà visualizzato l'interfaccia Microsoft 365 di amministrazione.
+2. Specificare le credenziali di amministratore per il tenant Microsoft 365 tenant. Verrà visualizzato il interfaccia di amministrazione di Microsoft 365.
 
-:::image type="content" source="../media/collaboration-bar-m365-admin-center.png" alt-text="Microsoft 365 di amministrazione":::
+:::image type="content" source="../media/collaboration-bar-m365-admin-center.png" alt-text="interfaccia di amministrazione di Microsoft 365":::
 3. Nell'interfaccia di amministrazione  passare a Risorse nel riquadro  sinistro (potrebbe essere necessario selezionare Prima Mostra tutto) e quindi selezionare & **apparecchiature.**
 
-:::image type="content" source="../media/collaboration-bar-m365-resources-rooms.png" alt-text="Microsoft 365 di amministrazione - Risorse":::
+:::image type="content" source="../media/collaboration-bar-m365-resources-rooms.png" alt-text="interfaccia di amministrazione di Microsoft 365 - Risorse":::
 4. Selezionare **Aggiungi una cassetta postale della risorsa** per creare un nuovo account della chat room. Immettere un nome visualizzato e un indirizzo di posta elettronica per l'account, selezionare **Aggiungi** e quindi selezionare **Chiudi.** È consigliabile standardizzare una convenzione di denominazione per tutti gli account delle risorse.
 
 > [!NOTE]
@@ -55,16 +55,16 @@ Per altre informazioni sulle licenze Sala riunioni, Sistema telefonico e Busines
 >   - Durata massima (ore): 24
 > - Accettare automaticamente convocazioni di riunione
 
-:::image type="content" source="../media/collaboration-bars-admin-resources.png" alt-text="Microsoft 365 di amministrazione - Aggiungere risorse":::
+:::image type="content" source="../media/collaboration-bars-admin-resources.png" alt-text="interfaccia di amministrazione di Microsoft 365 - Aggiungere risorse":::
 5. Passare alla **sezione Utenti** nell'interfaccia di amministrazione e, nell'elenco Utenti attivi, verrà visualizzata la chat room appena creata. 
 
-:::image type="content" source="../media/collaboration-bars-M3565-admin-active-users.png" alt-text="Microsoft 365 di amministrazione - Vedere gli utenti attivi":::
+:::image type="content" source="../media/collaboration-bars-M3565-admin-active-users.png" alt-text="interfaccia di amministrazione di Microsoft 365 - Vedere gli utenti attivi":::
 6. Selezionare il nome della chat room e a destra verrà visualizzato il riquadro delle proprietà dell'account.
 
-:::image type="content" source="../media/collaboration-bar-m365-admin-center-active-user-settings.png" alt-text="Microsoft 365 di amministrazione - Proprietà utente":::
+:::image type="content" source="../media/collaboration-bar-m365-admin-center-active-user-settings.png" alt-text="interfaccia di amministrazione di Microsoft 365 - Proprietà utente":::
 7. Ora è necessario assegnare una password all'account della risorsa. Nel riquadro sono disponibili le proprietà dell'account e diverse azioni facoltative. Selezionare **l'icona Reimposta chiave password** sotto il nome utente per cambiare la password. Deselezionare **Richiedi a questo utente di cambiare la password al primo accesso.** Non è possibile cambiare la password tramite il processo di accesso del dispositivo. Selezionare **Reimposta**.
 
-:::image type="content" source="../media/collaboration-bar-m365-admin-center-active-user-password.png" alt-text="Microsoft 365 di amministrazione - Reimposta password":::
+:::image type="content" source="../media/collaboration-bar-m365-admin-center-active-user-password.png" alt-text="interfaccia di amministrazione di Microsoft 365 - Reimposta password":::
 8. Nella sezione **Licenze e app** impostare Seleziona **posizione** sul paese o sull'area geografica in cui verrà installato il dispositivo. Scorrere verso il basso e selezionare la casella accanto alla licenza da assegnare, ad esempio Sala riunioni, e quindi selezionare **Salva modifiche**. La licenza può variare a seconda dell'organizzazione.
 
-:::image type="content" source="../media/collaboration-bar-m365-admin-center-active-user-assign-license.png" alt-text="Microsoft 365 di amministrazione - Assegnare una licenza":::
+:::image type="content" source="../media/collaboration-bar-m365-admin-center-active-user-assign-license.png" alt-text="interfaccia di amministrazione di Microsoft 365 - Assegnare una licenza":::

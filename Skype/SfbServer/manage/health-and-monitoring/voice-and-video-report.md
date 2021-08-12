@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e17c36b5-5a2f-4673-9696-3b2d31c2bb2f
 description: 'Riepilogo: informazioni sul Rapporto voce e video peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: 7e07c5778f43c3a0cac4ff162ed3d7dd1108eb43
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 66d121965d7046a823e26bff8a14fba6ce8213690fcaa4a21ab7a31f4db9f904
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324325"
 ---
 # <a name="peer-to-peer-voice-and-video-report-in-skype-for-business-server"></a>Rapporto voce e video peer-to-peer in Skype for Business Server
  
@@ -27,7 +27,7 @@ Il Rapporto voce e video peer-to-peer consente di esaminare in modo dettagliato 
   
 - Chiamate per pool
     
-- Chiamate per tipo di chiamata (ad esempio, una chiamata da Skype for Business a Skype for Business e una chiamata Skype for Business a una persona sulla rete PSTN)
+- Chiamate per tipo di chiamata (ad esempio, un Skype for Business a Skype for Business una chiamata Skype for Business chiamata a una persona sulla rete PSTN)
     
 - Chiamate per tipo di accesso (utenti connessi alla rete interna o alla rete esterna)
     
@@ -59,7 +59,7 @@ I filtri consentono di ottenere un set di dati più specifico o di visualizzare 
 |:-----|:-----|
 |**From** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con data di inizio 7/7/2015 e data di fine 28/02/2015, i dati verranno visualizzati per i giorni 07/08/2015 12.00 al 7/09/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
+|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo Giornaliero con data di inizio 7/07/2015 e data di fine 28/02/2015, verranno visualizzati i dati per i giorni 7/08/2015 12.00 fino al 7/9/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
 |**Tipo di supporto** <br/> | Indica il tipo di supporto utilizzato nella sezione. Selezionare una delle opzioni seguenti: <br/>  Entrambi <br/>  Audio <br/>  Video <br/> |
 |**Disposizione chiamata** <br/> | Indica l'esito positivo o negativo della sezione. Selezionare una delle opzioni seguenti: <br/>  [All] <br/>  Chiamate riuscite <br/>  Chiamate non riuscite <br/> |
 |**Rapporto di** <br/> | Indica i valori da utilizzare nel rapporto. Selezionare una delle impostazioni seguenti: <br/>  Numero di sessioni <br/>  Minuti chiamata <br/> |
@@ -84,7 +84,7 @@ Nella tabella seguente sono elencate le informazioni fornite nel Rapporto voce e
 
 |**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Tipo di chiamata** <br/> |No  <br/> | Indica il tipo di chiamata che è stata effettuata. I valori sono uno dei seguenti: <br/>  Da UC a UC <br/>  Da UC a PSTN <br/>  Da PSTN a UC <br/>  Da PSTN a PSTN <br/> |
+|**Tipo di chiamata** <br/> |No  <br/> | Indica il tipo di chiamata che è stata effettuata. I valori sono uno dei seguenti: <br/>  Da UC a UC <br/>  DA UC a PSTN <br/>  DA PSTN a UC <br/>  Da PSTN a PSTN <br/> |
 |**Data/ora** <br/> |No  <br/> |Data e ora in cui è stata effettuata la chiamata.  <br/> |
 |**Totale** <br/> |No  <br/> |Numero totale di sessioni o di messaggi.  <br/> |
    

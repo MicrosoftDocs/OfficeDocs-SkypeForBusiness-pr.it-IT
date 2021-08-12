@@ -21,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.resourceaccounts.overview
 - seo-marvel-apr2020
 description: In questo articolo imparerai a creare, modificare e gestire gli account delle risorse in Microsoft Teams.
-ms.openlocfilehash: 21824c360e26e568ae47a9729960fca01a100ae8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: dd366e59e99b41386d4f5e7a9373401ca67381cf0cf08f44dae1763e401dff53
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324106"
 ---
 # <a name="manage-resource-accounts-in-microsoft-teams"></a>Gestire gli account di risorsa in Microsoft Teams
 
@@ -47,7 +47,7 @@ Ogni account della risorsa richiede una licenza per lavorare con operatori autom
 
 Verrà illustrato come assegnare la licenza a un account delle risorse più avanti in questo articolo.
 
-Per ottenere la licenza utente virtuale, nell'interfaccia di amministrazione di Microsoft 365 passare a Abbonamenti ai componenti aggiuntivi Per l'acquisto di fatturazione e scorrere fino alla fine - verrà visualizzato Sistema telefonico - Licenza utente  >    >   virtuale.  Seleziona **Acquista ora**. Il costo è zero, ma è comunque necessario seguire questa procedura per acquisire la licenza.
+Per ottenere la licenza per l'utente virtuale, nel interfaccia di amministrazione di Microsoft 365 passare a Abbonamenti ai componenti aggiuntivi Servizi di acquisto fatturazione e scorrere fino alla fine- verrà visualizzato Sistema telefonico - Licenza utente  >    >   virtuale.  Seleziona **Acquista ora**. Il costo è zero, ma è comunque necessario seguire questa procedura per acquisire la licenza.
 
 ### <a name="obtain-service-numbers"></a>Ottenere i numeri di servizio
 
@@ -79,13 +79,13 @@ Per trasferire un numero da un altro gestore, vedere [Trasferire numeri di telef
 
 Per ogni account della risorsa, è necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale o Sistema telefonico licenza. 
 
-![Screenshot dell'interfaccia utente per l'assegnazione di licenze nell'interfaccia Microsoft 365 di amministrazione](media/resource-account-assign-virtual-user-license.png)
+![Screenshot dell'interfaccia utente per l'assegnazione di licenze nel interfaccia di amministrazione di Microsoft 365](media/resource-account-assign-virtual-user-license.png)
 
-1. Nell'Microsoft 365 di amministrazione fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
 
 2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 
-3. Fare clic **su Salva modifiche**.
+3. Fare clic su **Salva modifiche**.
 
 ## <a name="assign-a-service-number"></a>Assegnare un numero di servizio
 
@@ -120,7 +120,7 @@ Vedere i riferimenti seguenti:
 
 ## <a name="change-an-existing-resource-account-to-use-a-virtual-user-license"></a>Modificare un account delle risorse esistente per usare una licenza utente virtuale
 
-Se si decide di cambiare le licenze dell'account delle risorse esistente da una licenza **di Sistema telefonico a** una licenza utente virtuale, è necessario acquisire la licenza utente virtuale gratuita e quindi seguire i passaggi nell'interfaccia di amministrazione di Microsoft 365 per spostare gli utenti in un altro abbonamento. [](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription)
+Se si decide di cambiare le licenze dell'account delle risorse esistenti da una licenza **di Sistema telefonico a** una licenza utente virtuale, è necessario acquisire la licenza utente virtuale gratuita e quindi seguire i passaggi del interfaccia di amministrazione di Microsoft 365 per spostare gli utenti in un abbonamento diverso. [](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription)
 
 > [!WARNING]
 > Rimuovere sempre una licenza Sistema telefonico e assegnare la licenza utente virtuale nella stessa attività di licenza. Se si rimuove la vecchia licenza, si salvano le modifiche all'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account della risorsa potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account della risorsa per la licenza utente virtuale e rimuovere l'account della risorsa danneggiato.
@@ -150,7 +150,7 @@ Per le implementazioni ibride con Skype for Business Server:
 
 Assicurarsi di dissociare il numero di telefono dall'account della risorsa prima di eliminarlo, per evitare che il numero di servizio venga bloccato in modalità in sospeso.
 
-Dopo aver fatto ciò, è possibile eliminare l'account della risorsa nell'interfaccia di amministrazione Microsoft 365, nella scheda Utenti.
+Dopo aver fatto ciò, è possibile eliminare l'account della risorsa nella interfaccia di amministrazione di Microsoft 365, nella scheda Utenti.
 
 Per disassociare un numero di telefono di routing diretto dall'account della risorsa, usare il cmdlet seguente:
 

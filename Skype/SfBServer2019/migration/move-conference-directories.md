@@ -10,21 +10,21 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory conferenze del pool legacy.
-ms.openlocfilehash: 8a25b955ae769a712750ff08325b3fa29538be8a
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+description: Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory conferenze nel pool legacy.
+ms.openlocfilehash: 7e124a81b8aed561419e5965c930ad64988c122540df6660ae68006fe6af9a55
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54313854"
 ---
 # <a name="move-conference-directories"></a>Spostare le directory conferenze
 
 Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogni directory conferenze nel pool legacy.
   
-### <a name="to-move-a-conference-directory-to-skype-for-business-server-2019"></a>Per spostare una directory conferenze in Skype for Business Server
+### <a name="to-move-a-conference-directory-to-skype-for-business-server-2019"></a>Per spostare una directory conferenze Skype for Business Server 2019
 
-1. Aprire Skype for Business Server Management Shell.
+1. Aprire la Skype for Business Server Management Shell.
     
 2. Per ottenere l'identità delle directory conferenze nell'organizzazione, eseguire il comando seguente:
     
@@ -32,21 +32,21 @@ Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogn
    Get-CsConferenceDirectory
    ```
 
-    Il comando precedente restituisce tutte le directory conferenze nell'organizzazione. Per questo, è possibile limitare i risultati al pool che viene disattivato. Ad esempio, se si desidera rimuovere le autorizzazioni per il pool con il nome di dominio completo (FQDN) pool01.contoso.net, utilizzare questo comando per limitare i dati restituiti alle directory conferenze da tale pool:
+    Il comando precedente restituisce tutte le directory conferenze dell'organizzazione. Per questo, potrebbe essere necessario limitare i risultati al pool in fase di rimozione. Ad esempio, se si sta decommissionando il pool con il nome di dominio completo (FQDN) pool01.contoso.net, utilizzare questo comando per limitare i dati restituiti alle directory conferenze da tale pool:
     
    ```PowerShell
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"}
    ```
 
-    Il comando restituisce solo le directory conferenze in cui la proprietà ServiceID contiene l'FQDN pool01.contoso.net.
+    Questo comando restituisce solo le directory conferenze in cui la proprietà ServiceID contiene il nome di dominio completo pool01.contoso.net.
     
-3. Per spostare le directory conferenze, eseguire il comando seguente per ogni directory conferenze nel pool:
+3. Per spostare le directory conferenze, eseguire il comando seguente per ogni directory conferenze del pool:
     
    ```PowerShell
    Move-CsConferenceDirectory -Identity <Numeric identity of conference directory> -TargetPool <FQDN of pool where ownership is to be transitioned>
    ```
 
-    Ad esempio, per spostare la directory conferenze 3, utilizzare questo comando, specificando un pool di Skype for Business Server 2019 come TargetPool:
+    Ad esempio, per spostare la directory conferenze 3, utilizzare questo comando, specificando un pool Skype for Business Server 2019 come TargetPool:
     
    ```PowerShell
    Move-CsConferenceDirectory -Identity 3 -TargetPool "pool02.contoso.net"
@@ -58,9 +58,9 @@ Prima di rimuovere un pool, è necessario eseguire la procedura seguente per ogn
    Get-CsConferenceDirectory | Where-Object {$_.ServiceID -match "pool01.contoso.net"} | Move-CsConferenceDirectory -TargetPool "pool02.contoso.net"
    ```
 
-Scaricare [la disinstallazione dei](https://go.microsoft.com/fwlink/p/?linkId=246227) ruoli legacy Microsoft e la rimozione dei ruoli del server per istruzioni complete e dettagliate sulla rimozione delle autorizzazioni dei pool legacy.
+Download [Uninstalling Microsoft legacy and Removing Server Roles](https://go.microsoft.com/fwlink/p/?linkId=246227) per istruzioni complete e dettagliate sulla rimozione dei pool legacy.
   
-Quando si spostano le directory conferenze, è possibile che si verifichi l'errore seguente:
+Durante lo spostamento delle directory conferenze, è possibile che si verifichi l'errore seguente:
   
 ```console
 WARNING: Move operation failed for conference directory with ID "5". Cannot perform a rollback because data migration might have already started. Retry the operation.
@@ -69,6 +69,6 @@ Move-CsConferenceDirectory : Unable to cast COM object of type 'System._ComObjec
 This operation failed because the QueryInterface call on the COM component for the interface with SID '{4262B886-503F-4BEA-868C-04E8DF562CEB}' failed due to the following error: The specified module could not be found.
 ```
 
-Questo errore si verifica in genere quando Skype for Business Server Management Shell richiede un set aggiornato di autorizzazioni di Active Directory per completare un'attività. Per risolvere il problema, chiudere l'istanza corrente di Management Shell, aprire una nuova istanza della shell ed eseguire di nuovo il comando per spostare la directory conferenze.
+Questo errore si verifica in genere quando Skype for Business Server Management Shell richiede un set aggiornato di autorizzazioni di Active Directory per completare un'attività. Per risolvere il problema, chiudere l'istanza corrente di Management Shell, quindi aprire una nuova istanza della shell ed eseguire di nuovo il comando per spostare la directory conferenze.
   
 

@@ -1,5 +1,5 @@
 ---
-title: Avviare o arrestare l'acquisizione del registro CLS in Skype for Business Server 2015
+title: Avviare o arrestare l'acquisizione del registro CLS Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,14 +14,14 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 0512b9ce-7f5b-48eb-a79e-f3498bacf2de
 description: 'Riepilogo: informazioni su come avviare o arrestare una sessione di acquisizione dei registri del servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: 773b93f62690b01d33f84bc5eb68b135280842ea
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9979af3724a245fb71f14f3db07dba7899269d904d5dfcc1d548dae3a2890559
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098822"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324116"
 ---
-# <a name="start-or-stop-cls-log-capture-in-skype-for-business-server-2015"></a>Avviare o arrestare l'acquisizione del registro CLS in Skype for Business Server 2015
+# <a name="start-or-stop-cls-log-capture-in-skype-for-business-server-2015"></a>Avviare o arrestare l'acquisizione del registro CLS Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come avviare o arrestare una sessione di acquisizione dei registri del servizio di registrazione centralizzata in Skype for Business Server 2015.
   
@@ -35,7 +35,7 @@ Il servizio di registrazione centralizzata offre due modi per emettere comandi. 
   
 ### <a name="to-run-start-csclslogging-with-windows-powershell-using-basic-commands"></a>Per eseguire Start-CsClsLogging con Windows PowerShell comandi di base
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Avviare uno scenario di registrazione con il servizio di registrazione centralizzato digitando quanto segue:
     
@@ -70,7 +70,7 @@ Il servizio di registrazione centralizzata offre due modi per emettere comandi. 
   
 ### <a name="to-run-start-csclslogging-with-windows-powershell-using-advanced-commands"></a>Per eseguire Start-CsClsLogging con Windows PowerShell comandi avanzati
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Sono disponibili ulteriori parametri per la gestione dei comandi di registrazione. È possibile utilizzare -Duration per modificare il periodo di tempo per l'esecuzione dello scenario. È inoltre possibile definire -Computers, un elenco di nomi di dominio completi (FQDN) del computer separati da una virgola oppure -Pools, un elenco separato da virgole di FQDN per i pool su cui si desidera eseguire l'accesso.
     
@@ -96,7 +96,7 @@ Il cmdlet Stop-CsClsLogging consente di interrompere una sessione di registrazio
   
 Una volta compresi il problema e l'ambito dell'impatto, andranno effettuate scelte attente sugli scenari da eseguire e sui computer e pool ai quali applicarli. Mentre lo scenario AlwaysOn è adatto all'applicazione su vasta scala, in quanto raccoglie informazioni su un'ampia gamma di provider, gli scenari specifici risultano utili solo se applicati a specifici computer o pool. È inoltre necessaria attenzione quando si avvia una sessione di registrazione scelta a caso senza prima comprendere il valore di un dato scenario. Se si utilizza lo scenario sbagliato, oppure si sceglie uno scenario appropriato per l'attività, ma lo si applica all'ambito sbagliato (a livello globale, di sito, di pool o di computer), si possono ottenere dati dubbi e non molto utili, come se non si fosse eseguito affatto lo scenario.
   
-Per controllare le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basato sui ruoli (RBAC) o di un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt Windows PowerShell:
+Per controllare le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basati sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
@@ -109,11 +109,11 @@ Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 ```
 
 > [!NOTE]
-> Potrebbe quindi chiedersi: Ora che è stata abilitata la registrazione, dove vengono conservati i log? Poiché è possibile accedere alle informazioni archiviate nei registri utilizzando le query della shell di gestione inviate agli agenti CLS ed è possibile inviare i risultati in diversi formati di file possibili, in cui in ogni server un agente CLS mantiene i propri record non è effettivamente importante sapere.  I file di registro possono essere salvati in un percorso specificato e letti e analizzati utilizzando diversi strumenti, tra cuiSnooper.exee qualsiasi strumento **in** grado di leggere un file di testo, ad esempio **Notepad.exe**. Snooper.exe fa parte degli strumenti di debug di Skype for Business Server 2015 ed è disponibile come [download Web.](https://go.microsoft.com/fwlink/p/?LinkId=285257)
+> Potrebbe quindi chiedersi: Ora che è stata abilitata la registrazione, dove vengono conservati i log? Poiché è possibile accedere alle informazioni archiviate nei registri utilizzando le query della shell di gestione inviate agli agenti CLS ed è possibile inviare i risultati in diversi formati di file possibili, in cui in ogni server un agente CLS mantiene i propri record non è effettivamente importante sapere.  I file di registro possono essere salvati in un percorso specificato e letti e analizzati utilizzando diversi strumenti, tra cuiSnooper.exee qualsiasi strumento **in** grado di leggere un file di testo, ad esempio **Notepad.exe**. Snooper.exe fa parte degli strumenti di debug Skype for Business Server 2015 ed è disponibile come [download Web.](https://go.microsoft.com/fwlink/p/?LinkId=285257)
 
 ### <a name="to-stop-a-currently-running-centralized-logging-service-session"></a>Per arrestare una sessione del servizio di registrazione centralizzata attualmente in esecuzione
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Eseguire una query sul servizio di registrazione centralizzata per individuare gli scenari attualmente in esecuzione digitando quanto segue:
     

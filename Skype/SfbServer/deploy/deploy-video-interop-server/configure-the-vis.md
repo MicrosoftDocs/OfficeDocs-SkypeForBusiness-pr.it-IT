@@ -12,13 +12,13 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 0fde142b-70b1-46c6-b1f9-f9d70115371d
-description: 'Riepilogo: configurare il ruolo Video Interop Server (VIS) in Skype for Business Server.'
-ms.openlocfilehash: 8d5da36d07583cc1c20407d842b94531062947ba
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: configurare il ruolo ViS (Video Interop Server) in Skype for Business Server.'
+ms.openlocfilehash: 8f32be864e950d100faa0e3b5f5065d12018c5752610f5c1684aa2c73c84c73b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120305"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54313684"
 ---
 # <a name="configure-the-video-interop-server-in-skype-for-business-server"></a>Configurare Video Interop Server in Skype for Business Server
  
@@ -30,9 +30,9 @@ ms.locfileid: "51120305"
 
 Utilizzare i seguenti comandi Windows PowerShell per specificare la configurazione del trunk video e il dial plan da associare ai nuovi trunk definiti nel Documento di topologia tra il VIS e tutti i gateway video. Tutte queste impostazioni possono essere impostate a livello globale, sito o servizio (gateway video). 
   
-Viene creato un dial plan con ambito globale per ogni distribuzione di Skype for Business Server. Questo dial plan viene applicato da VIS a tutti i trunk che non dispongono di dial plan con ambito più specifico. 
+Viene creato un dial plan con ambito globale per ogni Skype for Business Server distribuzione. Questo dial plan viene applicato da VIS a tutti i trunk che non dispongono di dial plan con ambito più specifico. 
   
-### <a name="configure-the-vis-using-windows-powershell"></a>Configurare il sistema VIS utilizzando Windows PowerShell
+### <a name="configure-the-vis-using-windows-powershell"></a>Configurare il sistema VIS Windows PowerShell
 
 1. Creare una nuova configurazione trunk video (una raccolta di impostazioni) da utilizzare nel trunk tra VIS e Cisco Unified Communications Manager (CallManager o CUCM), utilizzando il cmdlet Windows PowerShell seguente:
     
@@ -58,7 +58,7 @@ Viene creato un dial plan con ambito globale per ogni distribuzione di Skype for
    Remove-CsVideoTrunkConfiguration -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com"
    ```
 
-2. Stabilire un dial plan da associare al trunk, utilizzando i cmdlet Windows PowerShell seguenti:
+2. Stabilire un dial plan da associare al trunk utilizzando i cmdlet Windows PowerShell seguenti:
     
    ```powershell
    New-CsDialPlan -Identity "Service:VideoGateway:CUCMVIS1.CUCMInterop.contoso.com" -SimpleName "TrunkTestDialPlan" 
@@ -74,7 +74,7 @@ Il **comando Remove-CsVoiceNormalizationRule** è necessario per ignorare una re
 Per una chiamata trunk SIP video da un gateway video il cui URI di richiesta contiene un numero non E.164, VIS leggerà il nome del dial plan associato al trunk associato e includerà il nome del dial plan nella parte del contesto telefonico dell'URI richiesta nell'invito inviato da VIS al Front End. L'applicazione di traduzione nel Front End estrae e applica le regole di normalizzazione associate al dial plan all'URI della richiesta.
 ## <a name="trunk-configuration-options"></a>Opzioni di configurazione trunk
 
-I Windows PowerShell per la configurazione dei trunk video menzionati in precedenza erano nuovi di Skype for Business Server 2015. Le impostazioni associate alla configurazione del trunk video richiedono una breve spiegazione.
+I Windows PowerShell per la configurazione dei trunk video menzionati in precedenza erano nuovi Skype for Business Server 2015. Le impostazioni associate alla configurazione del trunk video richiedono una breve spiegazione.
   
  **GatewaySendsRtcpForActiveCalls** Questo parametro determina se i pacchetti RTCP vengono inviati dal VTC al VIS per le chiamate attive. Una chiamata attiva in questo contesto è una chiamata in cui il flusso dei supporti è consentito almeno in una direzione. Se GatewaySendsRtcpForActiveCalls è impostato su True, VIS può terminare una chiamata se non riceve pacchetti RTCP per un periodo superiore a 30 secondi. L'impostazione predefinita è **True**.
   

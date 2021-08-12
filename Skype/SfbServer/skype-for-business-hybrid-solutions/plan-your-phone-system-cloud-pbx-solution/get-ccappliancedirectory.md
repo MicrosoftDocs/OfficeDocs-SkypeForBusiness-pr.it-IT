@@ -12,19 +12,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: c2fda202-db2f-4122-b630-7df11a697c5f
-description: Il Get-CcApplianceDirectory cmdlet recupera la directory di lavoro nel server host Skype for Business Cloud Connector Edition. Tutti i file di distribuzione sono archiviati in questa directory.
-ms.openlocfilehash: 04764f312138132fb34c0979423da5dc4696ee63
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Get-CcApplianceDirectory consente di recuperare la directory di lavoro nel server host Skype for Business Cloud Connector Edition server host. Tutti i file di distribuzione vengono archiviati in questa directory.
+ms.openlocfilehash: 9be21029aaf582ce080b85af87b8d3f02be11ffea3b615f2b003bb6aeb29002d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41800846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54347591"
 ---
 # <a name="get-ccappliancedirectory"></a>Get-CcApplianceDirectory
  
-Il Get-CcApplianceDirectory cmdlet recupera la directory di lavoro nel server host Skype for Business Cloud Connector Edition. Tutti i file di distribuzione sono archiviati in questa directory. 
+Il cmdlet Get-CcApplianceDirectory consente di recuperare la directory di lavoro nel server host Skype for Business Cloud Connector Edition server host. Tutti i file di distribuzione vengono archiviati in questa directory. 
   
-Questo cmdlet si applica a Skype for Business Cloud Connector Edition 1.4.1, 1.4.2.
+Questo cmdlet si applica Skype for Business Cloud Connector Edition 1.4.1, 1.4.2.
   
 ```powershell
 Get-CcApplianceDirectory
@@ -32,14 +32,14 @@ Get-CcApplianceDirectory
 
 ## <a name="parameters"></a>Parametri
 
-None
+Nessuno
   
 ## <a name="examples"></a>Esempi
 <a name="Examples"> </a>
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente mostra la cartella corrente in cui sono archiviati i file di configurazione e della macchina virtuale dei componenti cloud connector:
+L'esempio seguente mostra la cartella corrente in cui sono archiviati i file di configurazione e delle macchine virtuali dei componenti del connettore cloud:
   
 ```powershell
 Get-CcApplianceDirectory
@@ -48,9 +48,9 @@ Get-CcApplianceDirectory
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il cmdlet Get-CcApplianceDirectory mostra dove vengono archiviati tutti i file, i registri e i certificati esterni della macchina virtuale e di configurazione per l'applicazione Cloud Connector.
+Il cmdlet Get-CcApplianceDirectory mostra dove vengono archiviati tutti i file di configurazione e delle macchine virtuali, i registri e i certificati esterni per l'appliance Cloud Connector.
   
-Ogni applicazione Cloud Connector dispone di quattro componenti: Mediation Server, Archivio di gestione centrale, Server perimetrale e controller di dominio. La cartella predefinita è C:\Users \% userprofile%\CloudConnector\ApplianceRoot. È possibile modificare questa cartella utilizzando il cmdlet Set-CCApplianceDirectory seguente.
+Ogni appliance Cloud Connector dispone di quattro componenti: Mediation Server, Archivio di gestione centrale, Server perimetrale e controller di dominio. La cartella predefinita è C:\Users \% userprofile%\CloudConnector\ApplianceRoot. È possibile modificare questa cartella utilizzando il cmdlet Set-CCApplianceDirectory.
   
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>

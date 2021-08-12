@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'La federazione XMPP definisce una distribuzione esterna basata sul protocollo XMPP (eXtensible Messaging and Presence Protocol). Una configurazione XMPP consente agli utenti di accedere agli utenti del dominio XMPP tramite:'
-ms.openlocfilehash: f94cd3bc0a769165f6ffe8ecabea8b7f48a1ff07
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 31d3c2a4b4d16407a30eb755e8b18b3ddf1a1b31c342ed6ff3384bbcef3afbc6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44753936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54296023"
 ---
 # <a name="configure-xmpp-gateway-access-policies-and-certificates"></a>Configurare criteri e certificati di accesso al gateway XMPP
 
@@ -24,16 +24,16 @@ La federazione XMPP definisce una distribuzione esterna basata sul protocollo XM
   
 - Messaggistica istantanea e presenza - solo da persona a persona
     
-- Creazione di contatti federati XMPP nel client Skype for Business
+- Creazione di contatti federati XMPP nel client Skype for Business XMPP
     
-Quando si configurano i criteri per il supporto dei partner federati XMPP, i criteri si applicano agli utenti dei domini federati XMPP, ma non agli utenti dei provider di servizi di messaggistica istantanea SIP (Session Initiation Protocol) o dei domini federati SIP. Configurare un partner federato XMPP per ogni dominio federato XMPP con cui si desidera consentire agli utenti di aggiungere contatti e comunicare con essi. Dopo aver configurato i criteri, è necessario configurare i certificati del gateway XMPP. 
+Quando si configurano criteri per il supporto dei partner federati XMPP, i criteri si applicano agli utenti dei domini federati XMPP, ma non agli utenti dei provider di servizi di messaggistica istantanea SIP (Session Initiation Protocol) o dei domini federati SIP. Configurare un partner federato XMPP per ogni dominio federato XMPP con cui si desidera consentire agli utenti di aggiungere contatti e comunicare. Dopo aver configurato i criteri, è necessario configurare i certificati del gateway XMPP. 
   
 > [!NOTE]
-> La funzionalità XMPP è deprecata in Skype for Business Server 2019, ma può essere continuata in un server legacy in coesistenza con Skype for Business Server 2019. Assicurarsi di aver già distribuito il server legacy (Skype for Business Server 2015 / Lync Server 2013) gateway XMPP e di aver configurato i criteri di accesso per abilitare gli utenti per il gateway XMPP legacy. Per informazioni dettagliate, vedere [Migrating XMPP Federation.](migrating-xmpp-federation.md) 
+> La funzionalità XMPP è deprecata Skype for Business Server 2019, ma può essere continuata in un server legacy in coesistenza con Skype for Business Server 2019. Assicurarsi di aver già distribuito il server legacy (Skype for Business Server 2015 / Lync Server 2013) Gateway XMPP e di aver configurato i criteri di accesso per abilitare gli utenti per il gateway XMPP legacy. Per informazioni dettagliate, vedere [Migrating XMPP Federation](migrating-xmpp-federation.md). 
   
 ### <a name="configure-an-external-access-policy-to-enable-users-for-legacy-xmpp-gateway"></a>Configurare un criterio di accesso esterno per abilitare gli utenti per il gateway XMPP legacy
 
-1. Aprire il Pannello di controllo di Skype for Business Server legacy.
+1. Apri il Pannello di controllo Skype for Business Server legacy.
     
 2. Sulla barra di spostamento sinistra fare clic su **Federazione e accesso esterno** e quindi su **Criteri di accesso esterno**.
     

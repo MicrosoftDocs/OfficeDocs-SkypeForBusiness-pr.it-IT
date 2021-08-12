@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono negli Stati Uniti (incluso PortoRico) per Microsoft Teams.
-ms.openlocfilehash: 8baef73ea10c9d4f4a48cd78a694146c76daa313b6effa9ac5c4b262e1520d9b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7754c0bac7ed99be640c24242b63d4db7d13217be26d01cba9690f23b6017d7e
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322528"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57850121"
 ---
 # <a name="phone-number-management-for-the-united-states"></a>Telefono gestione dei numeri per gli Stati Uniti
 
@@ -37,11 +37,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 | Cosa vuoi fare? | Segui queste istruzioni e scarica i moduli corretti |
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  <br/> |Scarica questo modulo.<br/>  [Nuova richiesta di numero di telefono per gli Stati Uniti (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true) <br/><br/> Compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). |
-|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri di utente e servizio) (v.3.3)(en-us)](https://download.microsoft.com/download/7/3/8/73843692-632f-4078-874d-021f9680e12b/letter-of-authorization-(loa)-for-the-u.s.-(user-and-service-numbers)-(v.3.3)-(en-us).pdf)<br/>[Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri verde) (v.3.3)(en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.s.-(toll-free-numbers)-(v.3.3)-(en-us).pdf?raw=true)<br/><br/>**Nota** Se stai cercando di ottenere più di 999 numeri di telefono per abbonati o utenti, dovrai compilare una Lettera di autorizzazione (LOA) e inviarla a Microsoft. Per [altre informazioni, vedere Trasferire](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md) numeri di telefono Teams numeri di telefono.          <br/>  <br/>   Compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md).  <br/> |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  <br/> |Scarica questo modulo.<br/>  [Nuova richiesta di numero di telefono per gli Stati Uniti (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-the-united-states-(v.5.0)-(en-us).pdf?raw=true) <br/><br/> Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |
+|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica uno di questi moduli: <br/> [Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri di utente e servizio) (v.3.3)(en-us)](https://download.microsoft.com/download/7/3/8/73843692-632f-4078-874d-021f9680e12b/letter-of-authorization-(loa)-for-the-u.s.-(user-and-service-numbers)-(v.3.3)-(en-us).pdf)<br/>[Lettera di autorizzazione (LOA) per gli Stati Uniti (numeri verde) (v.3.3)(en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-the-u.s.-(toll-free-numbers)-(v.3.3)-(en-us).pdf?raw=true)<br/><br/>**Nota** Se stai cercando di ottenere più di 999 numeri di telefono per abbonati o utenti, dovrai compilare una lettera di autorizzazione (LOA) e inviarla a Microsoft. Per [altre informazioni, vedere](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md) Trasferire numeri di telefono Teams numeri di telefono.          <br/>  <br/>   Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
 |Modificare il numero di un utente in un numero di servizio o un numero di servizio in numero di un utente  <br/> |[Inviaci](mailto:ptn@microsoft.com) il TUO PIN e l'elenco dei numeri da convertire. Per configurare un PIN, vedere [qui](../phone-number-calling-plans/port-order-overview.md#can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier).  <br/> |
-|Trasferire numeri da una Microsoft 365 o Office 365 a un'altra.  <br/> |[Contattare PTSN per](contact-pstn-service-desk.md) istruzioni relative all'elenco dei numeri di telefono degli utenti (abbonati) da trasferire insieme al PIN dell'organizzazione di origine da cui trasferire i numeri. Per configurare un PIN, vedere [qui](../phone-number-calling-plans/port-order-overview.md#can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier).  <br/> |
-|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
+|Trasferire numeri da una Microsoft 365 o Office 365 a un'altra.  <br/> |[Contattare il Service Desk PTSN](contact-pstn-service-desk.md) per istruzioni relative all'elenco dei numeri di telefono degli utenti (abbonati) da trasferire insieme al PIN dell'organizzazione di origine da cui trasferire i numeri. Per configurare un PIN, vedere [qui](../phone-number-calling-plans/port-order-overview.md#can-i-port-out-my-numbers-from-teams-to-a-different-phone-service-provider-or-carrier).  <br/> |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

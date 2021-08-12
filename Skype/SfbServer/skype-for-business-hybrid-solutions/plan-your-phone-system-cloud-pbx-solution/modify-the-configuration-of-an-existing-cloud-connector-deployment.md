@@ -15,20 +15,20 @@ ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 90490c65-0e40-4e85-96e1-751f27897e25
-description: Seguire i passaggi descritti in questo argomento per modificare la configurazione di una distribuzione esistente di Skype for Business Cloud Connector Edition 1.4.1 o versione successiva.
-ms.openlocfilehash: 7fdfdd5ac5a76ebbc3ac58e12a69e2e3af1330cd
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Seguire i passaggi descritti in questo argomento per modificare la configurazione di una distribuzione Skype for Business Cloud Connector Edition 1.4.1 o successiva.
+ms.openlocfilehash: 151408d48f7623d72d5af4f8fef605d9dcc7d690a915cc7e8454a91f051dd0f1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324185"
 ---
 # <a name="modify-the-configuration-of-an-existing-cloud-connector-deployment"></a>Modificare la configurazione di una distribuzione di Cloud Connector esistente
 
 > [!Important]
-> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
+> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business Online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
 
-Seguire i passaggi descritti in questo argomento per modificare la configurazione di una distribuzione esistente di Skype for Business Cloud Connector Edition 1.4.1 o versione successiva. 
+Seguire i passaggi descritti in questo argomento per modificare la configurazione di una distribuzione Skype for Business Cloud Connector Edition 1.4.1 o successiva. 
   
 ## <a name="modify-the-configuration-of-a-single-site"></a>Modificare la configurazione di un singolo sito
 <a name="BKMK_SIngleSite"> </a>
@@ -112,12 +112,12 @@ Se nel sito sono presenti più appliance, è necessario eseguire la procedura se
 
 Per modificare la configurazione per più siti in una distribuzione, seguire i passaggi per un singolo sito, aggiornando un sito alla volta.
   
-## <a name="modify-the-configuration-of-your-microsoft-365-or-office-365-organization-to-enable-automatic-updates"></a>Modificare la configurazione dell'organizzazione di Microsoft 365 o Office 365 per abilitare gli aggiornamenti automatici
+## <a name="modify-the-configuration-of-your-microsoft-365-or-office-365-organization-to-enable-automatic-updates"></a>Modificare la configurazione dell'organizzazione Microsoft 365 o Office 365 per abilitare gli aggiornamenti automatici
 <a name="BKMK_MultipleSites"> </a>
 
-Per abilitare gli aggiornamenti automatici del sistema operativo e gli aggiornamenti automatici bit, devi usare l'account di amministratore tenant di Skype for Business per la gestione online e usare PowerShell remoto tenant come indicato di seguito.
+Per abilitare gli aggiornamenti automatici del sistema operativo e gli aggiornamenti automatici bit, è necessario utilizzare l'account di amministratore tenant di Skype for Business per la gestione online e usare PowerShell remoto tenant come indicato di seguito.
   
-Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o gli aggiornamenti automatici di Bits, l'host e la macchina virtuale potrebbero perdere aggiornamenti importanti di Windows e Cloud Connector non verrà aggiornato automaticamente alla nuova versione. È consigliabile abilitare gli aggiornamenti automatici.
+Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o gli aggiornamenti automatici di Bits, l'host e la macchina virtuale potrebbero non essere Windows aggiornamenti importanti e Cloud Connector non verrà aggiornato automaticamente alla nuova versione. È consigliabile abilitare gli aggiornamenti automatici.
   
 1. La proprietà EnableAutoUpdate del sito deve essere impostata su true (valore predefinito). Eseguire il cmdlet seguente per assicurarsi che EnableAutoUpdate sia impostato su true:
     
@@ -164,9 +164,9 @@ Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o 
 ## <a name="update-the-dedicated-tenant-admin-credentials"></a>Aggiornare le credenziali di amministratore tenant dedicato
 <a name="BKMK_MultipleSites"> </a>
 
-Le modifiche amministrative nell'organizzazione di Microsoft 365 o Office 365 per Cloud Connector vengono apportate da un account con le autorizzazioni necessarie. Nelle versioni di Cloud Connector precedenti alla 2.0, tale account è un account amministratore tenant globale dedicato. In Cloud Connector versioni 2.0 e successive, tale account può essere un account di Microsoft 365 o Office 365 con diritti di amministratore di Skype for Business.
+Le modifiche amministrative nell'Microsoft 365 o Office 365 per Cloud Connector vengono apportate da un account con le autorizzazioni necessarie. Nelle versioni di Cloud Connector precedenti alla 2.0, tale account è un account amministratore tenant globale dedicato. In Cloud Connector versioni 2.0 e successive, tale account può essere un account Microsoft 365 o Office 365 con diritti Skype for Business amministratore.
   
-Se le credenziali dell'account amministratore cambiano in Microsoft 365 o Office 365, è inoltre necessario aggiornare le credenziali memorizzate localmente nella cache in Cloud Connector eseguendo il seguente comando di Amministratore PowerShell in ogni appliance del connettore cloud distribuita:
+Se le credenziali dell'account amministratore cambiano in Microsoft 365 o Office 365, è inoltre necessario aggiornare le credenziali memorizzate localmente nella cache in Cloud Connector eseguendo il seguente comando di PowerShell amministratore in ogni appliance cloud connector distribuita:
   
 ```powershell
 Set-CcCredential -AccountType TenantAdmin
@@ -178,7 +178,7 @@ Set-CcCredential -AccountType TenantAdmin
 > [!NOTE]
 > Questa sezione è applicabile a Cloud Connector versione 2.0 e successive. 
   
-Tutte le credenziali del connettore cloud sono archiviate nel file seguente: "%SystemDrive%\Programdata\Cloudconnector\credentials. \<CurrentUser\> xml". Quando la password nel server host cambia, sarà necessario aggiornare le credenziali archiviate localmente.
+Tutte le credenziali del connettore cloud sono archiviate nel file seguente: "%SystemDrive%\Programdata\Cloudconnector\credentials. \<CurrentUser\>.xml". Quando la password nel server host cambia, sarà necessario aggiornare le credenziali archiviate localmente.
   
 Per aggiornare le credenziali archiviate localmente nell'appliance Cloud Connector, utilizzare i cmdlet [Get-CcCredential](get-cccredential.md) e [Set-CcCredential](set-cccredential.md) ed eseguire la procedura seguente:
   
@@ -194,7 +194,7 @@ Per aggiornare le credenziali archiviate localmente nell'appliance Cloud Connect
     
 3. Riavviare il server host.
     
-4. Eliminare il file seguente: "%SystemDrive%\Programdata\Cloudconnector\credentials. \<CurrentUser\> . xml".
+4. Eliminare il file seguente: "%SystemDrive%\Programdata\Cloudconnector\credentials. \<CurrentUser\>.xml".
     
 5. Avviare una console di PowerShell come amministratore, quindi eseguire "Register-CcAppliance -Local" per immettere di nuovo le password dopo la descrizione. Assicurati di immettere la stessa password immessa prima per la distribuzione di Cloud Connector.
     
@@ -218,13 +218,13 @@ Per impostazione predefinita, VmAdmin e DomainAdmin utilizzano la stessa passwor
 > [!NOTE]
 > Questa sezione è applicabile a Cloud Connector versione 2.0.1 e successive. 
   
-Il servizio Cloud Connector esegue il servizio di gestione dei connettori cloud. L'account CceService viene creato durante la distribuzione di Cloud Connector Edition e archiviato nei file seguenti: "%SystemDrive%\Programdata\Cloudconnector\credentials. \<CurrentUser\> xml" e "%SystemDrive%\Programdata\Cloudconnector\credentials..CceService.xml".
+Il servizio Cloud Connector esegue il servizio di gestione dei connettori cloud. L'account CceService viene creato durante la distribuzione di Cloud Connector Edition e archiviato nei file seguenti: "%SystemDrive%\Programdata\Cloudconnector\credentials. \<CurrentUser\>.xml" e "%SystemDrive%\Programdata\Cloudconnector\credentials..CceService.xml".
   
 Per garantire che tutte le appliance possano accedere alla condivisione di directory del sito, la password per l'account CceService deve essere la stessa in tutte le appliance distribuite all'interno del sito. Tenere presente quanto segue:
   
 - Per impostazione predefinita, l'account CceService è configurato come "Password never expires". Quando si aggiorna la password, Microsoft consiglia di mantenere questa configurazione.
     
-- È consigliabile aggiornare la password durante i periodi di utilizzo non di picco e al di fuori delle finestre di tempo di aggiornamento automatico per bit o aggiornamenti di Windows. Quando si aggiorna la password, l'appliance deve essere svuotata e riavviata, il che richiede tempo. Il riavvio dell'appliance interromperà le operazioni di aggiornamento automatico. 
+- È consigliabile aggiornare la password durante i periodi di utilizzo non di picco e al di fuori delle finestre di tempo di aggiornamento automatico per bit o Windows aggiornamenti. Quando si aggiorna la password, l'appliance deve essere svuotata e riavviata, il che richiede tempo. Il riavvio dell'appliance interromperà le operazioni di aggiornamento automatico. 
     
 - Quando si modifica la password dell'account CceService, sarà necessario specificare tutte le credenziali e aggiornarle nel file archiviato localmente. 
     
@@ -285,7 +285,7 @@ Per ogni appliance appartenente allo stesso sito PSTN, è necessario specificare
 
 Per aggiungere un nuovo dominio SIP (o più domini SIP) alla distribuzione esistente di Cloud Connector, eseguire le operazioni seguenti:
   
-1. Assicurarsi di aver completato i passaggi per aggiornare il dominio in Microsoft 365 o Office 365 e avere la possibilità di aggiungere record DNS. Per ulteriori informazioni su come configurare il dominio in Microsoft 365 o Office 365, vedere Aggiungere un dominio [a Microsoft 365 o Office 365.](https://support.office.com/article/Add-a-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
+1. Assicurarsi di aver completato i passaggi per aggiornare il dominio in Microsoft 365 o Office 365 e avere la possibilità di aggiungere record DNS. Per ulteriori informazioni su come configurare il dominio in Microsoft 365 o Office 365, vedere [Add a domain to Microsoft 365 or Office 365](https://support.office.com/article/Add-a-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
     
 2. Aggiornare il file di configurazione del connettore cloud con il nuovo dominio SIP o i nuovi domini.
     
@@ -306,7 +306,7 @@ Per aggiungere un nuovo dominio SIP (o più domini SIP) alla distribuzione esist
 
 Se è necessario modificare il dominio SIP primario nella distribuzione di Cloud Connector, eseguire le operazioni seguenti:
   
-1. Assicurarsi di aver completato i passaggi per aggiornare il dominio in Microsoft 365 o Office 365 e avere la possibilità di aggiungere record DNS. Per ulteriori informazioni su come configurare il dominio in Microsoft 365 o Office 365, vedere Aggiungere un dominio [a Microsoft 365 o Office 365.](https://support.office.com/article/Add-a-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)
+1. Assicurarsi di aver completato i passaggi per aggiornare il dominio in Microsoft 365 o Office 365 e avere la possibilità di aggiungere record DNS. Per ulteriori informazioni su come configurare il dominio in Microsoft 365 o Office 365, vedere [Add a domain to Microsoft 365 or Office 365](https://support.office.com/article/Add-a-domain-to-Office-365-6383f56d-3d09-4dcb-9b41-b5f5a5efd611).
     
 2. Aggiornare il file di configurazione del connettore cloud con il nuovo dominio SIP.
     
@@ -328,7 +328,7 @@ Se è necessario modificare il dominio SIP primario nella distribuzione di Cloud
 
 6. 
     
-    Rimuovere la registrazione del sito per ogni sito eseguendo il cmdlet seguente in PowerShell di Skype for Business online:
+    Rimuovere la registrazione del sito per ogni sito eseguendo il cmdlet seguente in Skype for Business PowerShell online:
     
    ```powershell
    Remove-CsHybridPSTNSite
@@ -365,7 +365,7 @@ Quando è necessario sostituire il certificato edge esterno nelle appliance Clou
   
 1. Impostare l'appliance in modalità manutenzione utilizzando il cmdlet Enter-CcUpdate.
     
-2. Eseguire il comando qui riportato: 
+2. Eseguire il comando seguente: 
     
    ```powershell
    Set-CcExternalCertificateFilePath -Target EdgeServer -Path <Full file path of new certificate including filename> -Import

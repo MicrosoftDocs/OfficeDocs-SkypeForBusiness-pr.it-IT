@@ -18,12 +18,12 @@ description: Informazioni sui diversi modi per assegnare criteri a utenti e grup
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: ce10ead528e2e5615d23bd784131ed04416f1349
-ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
+ms.openlocfilehash: 3b53c887536a3bd033b6c1feaeabae58a609f90e8ecbb0a7197de851173f46cc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52856315"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54314152"
 ---
 # <a name="assign-policies-to-users-and-groups"></a>Assegnare criteri a utenti e gruppi
 
@@ -60,7 +60,7 @@ Ogni tipo di criterio ha un proprio set di cmdlet per gestirlo. Usare il ```Gran
  Scaricare e installare la Teams pubblica di [PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) (se non è già stata eseguita) e quindi eseguire la procedura seguente per connettersi.
 
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente.
+> Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente.
 >
 > Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 

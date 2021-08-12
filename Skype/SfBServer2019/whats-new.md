@@ -12,18 +12,18 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono nuove in Skype for Business Server 2019.'
-ms.openlocfilehash: f20abfa7d48717052c8ee0144e143a21b168286d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cbdfcd92fbb6fbaefb75024dcb1e393ad5049e636e463bc4ad97588279702151
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49812586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295963"
 ---
-# <a name="whats-in-skype-for-business-server-2019"></a>Che cos'è Skype for Business Server 2019
+# <a name="whats-in-skype-for-business-server-2019"></a>Novità di Skype for Business Server 2019
 
-**Riepilogo:** Leggere questo argomento per informazioni sulle nuove funzionalità di Skype for Business Server 2019.  
+**Riepilogo:** Leggere questo argomento per informazioni sulle nuove funzionalità in Skype for Business Server 2019.  
 
-Le nuove funzionalità di Skype for Business Server 2019 includono:
+Le nuove funzionalità di Skype for Business Server 2019 includono le seguenti:
   
 - Cloud Voicemail  
 - Connettore dati chiamate
@@ -31,22 +31,22 @@ Le nuove funzionalità di Skype for Business Server 2019 includono:
 
 ## <a name="unified-messaging-services-cloud-voicemail"></a>Servizi di messaggistica unificata: Cloud Voicemail
 
-La messaggistica unificata di Exchange rimane disponibile in Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa dei cambiamenti nel supporto in Exchange 2019, l'integrazione della messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità cloud voicemail e cloud Operatore automatico.  
+Exchange La messaggistica unificata rimane disponibile Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione di messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità Cloud Voicemail e cloud Operatore automatico.  
 
-Cloud Voicemail consente a tutti gli utenti di Skype for Business 2019&#x2014;che siano ospitati in locale o online&#x2014;di avere accesso allo stesso servizio di segreteria telefonica in Microsoft Cloud. Cloud Voicemail offre i seguenti vantaggi sia per gli utenti locali che per gli utenti online:
+Cloud Voicemail consente a tutti gli utenti di Skype for Business 2019&#x2014;che siano ospitati in locale o online&#x2014;di avere accesso allo stesso servizio di segreteria telefonica in Microsoft Cloud. Cloud Voicemail offre i vantaggi seguenti sia per gli utenti locali che per gli utenti online:
 
-- Accesso alla segreteria telefonica nella propria cassetta postale di Exchange tramite i client Skype for Business online, Teams o Outlook
+- Accesso alla segreteria telefonica nella propria Exchange utilizzando Skype for Business Online, Teams o Outlook client
 - Possibilità di utilizzare il portale basato sul Web per gestire le opzioni della segreteria telefonica
 
-Per [altre informazioni,](../sfbhybrid/hybrid/plan-cloud-voicemail.md) vedere Pianificare il servizio Cloud Voicemail e Pianificare [Skype for Business Server Exchange Server migrazione.](../sfbhybrid/hybrid/plan-um-migration.md)
+Per [ulteriori informazioni, vedere Plan Cloud Voicemail service](../sfbhybrid/hybrid/plan-cloud-voicemail.md) e Plan for Skype for Business Server and Exchange Server [migration.](../sfbhybrid/hybrid/plan-um-migration.md)
   
-## <a name="call-monitoring-call-data-connector"></a>Monitoraggio delle chiamate: Connettore dati chiamata
+## <a name="call-monitoring-call-data-connector"></a>Monitoraggio delle chiamate: Call Data Connector
 
-Call Data Connector semplifica notevolmente il monitoraggio delle chiamate in un ambiente ibrido perché non è più necessario utilizzare set diversi di strumenti online e locali per monitorare la qualità delle chiamate di tutti gli utenti.  Indipendentemente dal fatto che gli utenti siano ospitati in locale o online, è possibile scegliere di visualizzare la qualità delle chiamate per l'intera organizzazione online.
+Call Data Connector semplifica notevolmente il monitoraggio delle chiamate in un ambiente ibrido perché non è più necessario utilizzare set diversi di strumenti locali e online per monitorare la qualità delle chiamate di tutti gli utenti.  Sia che gli utenti siano ospitati in locale o online, è possibile scegliere di visualizzare la qualità delle chiamate per l'intera organizzazione online.
 
-Con Call Data Connector, è possibile eseguire le attività seguenti utilizzando un unico set di strumenti:
+Con Call Data Connector è possibile eseguire le attività seguenti utilizzando un singolo set di strumenti:
 
-- Monitorare l'esperienza utente in Microsoft Teams, Skype for Business online e Skype for Business Server.
+- Monitorare l'esperienza utente Microsoft Teams, Skype for Business Online e Skype for Business Server.
 - Visualizzare e risolvere i problemi nella rete
 - Assegnare ruoli di helpdesk e amministratore per Call Analytics, in modo da consentire ai dipendenti dell'helpdesk di visualizzare e risolvere i problemi relativi alle aree di responsabilità.
 
@@ -54,4 +54,4 @@ Per [ulteriori informazioni, vedere Plan Call Data Connector.](../sfbhybrid/hybr
 
 ### <a name="see-also"></a>Vedere anche
 
-[Funzionalità deprecate di Skype for Business Server 2019](deprecated.md)
+[Cosa è deprecato da Skype for Business Server 2019](deprecated.md)

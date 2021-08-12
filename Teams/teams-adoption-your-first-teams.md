@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5514e550bb8ba259779f390b1a87d74dcb7e3e3f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 175b08fa5121d158ad89740cff096ba8bd1d34fa73e4c65027def7f031e5c349
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54335872"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 
@@ -35,14 +35,14 @@ Il modo migliore per guidare l'adozione di Teams è usare il prodotto. È consig
 | Nome del team | Nomi dei canali proposti |
 | --------- | ---------------------- |
 | Informazioni su Teams | Generale</br> Presentazioni</br> Come si fa?</br>Feedback </br> Idee per i team futuri </br> Supporto |
-| Microsoft Teams Implementazione | Generale <br/> Consapevolezza e adozione <br/> Coinvolgimento aziendale <br/> Programma Early Adopter <br/> Feedback e approfondimenti <br/> Sicurezza e conformità <br/> Strategia e pianificazione <br/> Integrità dei servizi e incidenti <br/> Formazione <br/> Watercooler Chat |
+| Microsoft Teams Implementazione | Generale <br/> Consapevolezza e adozione <br/> Coinvolgimento aziendale <br/> Programma Early Adopter <br/> Feedback e Insights <br/> Sicurezza e conformità <br/> Strategia e pianificazione <br/> Integrità dei servizi e incidenti <br/> Formazione <br/> Watercooler Chat |
 | Campioni del lavoro in team | Generale <br/> Procedure consigliate, formazione e procedure <br/> Angolo dei campioni <br/> Feedback e supporto <br/> Clienti potenziali del programma <br/> Social Hub |
 
 All'Microsoft Teams, la [](/microsoftteams/platform/concepts/tabs/tabs-overview) raccolta schede consente di accedere a tutte le app Microsoft 365 o Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile aggiungere le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
 
 ![Schermata che mostra le schede predefinite e personalizzate](media/teams-adoption-tab-example.png)
 
-Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare riferimento facilmente ai canali del team. Queste risorse sono in aggiunta alle sezioni OneNote blocco appunti. Se stai lavorando con il nostro team FastTrack, ti assisterà nella configurazione di questi primi team. 
+Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare riferimento facilmente ai canali del team. Queste risorse sono in aggiunta alle sezioni OneNote blocco appunti. Se stai lavorando con il nostro team FastTrack team, ti assisterà nella configurazione di questi primi team. 
 
 |Nome team/canale | Scheda Aggiunta |
 |----------------- | ---------- |

@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: È possibile utilizzare il Pannello di controllo per le installazioni legacy per impedire nuove sessioni per tutti i servizi legacy in esecuzione in un computer specifico o per impedire nuove sessioni per un servizio legacy specifico.
-ms.openlocfilehash: c5cc8846febaf690376e01c36b9fa023b8377970
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 6ee7f33e01118297b5a86878ded8a0bb89aadc84524839a41fbacd0c9d699633
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752288"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54313844"
 ---
 # <a name="prevent-sessions-for-services"></a>Impedire le sessioni per i servizi
 
@@ -26,7 +26,7 @@ ms.locfileid: "44752288"
 
 1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server 2019.
     
-2. Aprire il Pannello di controllo di Skype for Business.
+2. Aprire Skype for Business Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
     
@@ -40,7 +40,7 @@ ms.locfileid: "44752288"
 
 1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server 2019.
     
-2. Aprire il Pannello di controllo di Skype for Business.
+2. Aprire Skype for Business Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Topologia** e quindi su **Stato**.
     

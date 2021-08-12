@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in India, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: 3e8dc705b5a8f762899433e0fbd2cc4bfe3aba94
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: dae597170f8ea4a56a908087a85a1b12777341ba277e72e3a1ca599037a393e2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54335886"
 ---
 # <a name="toll-free-dialing-restrictions-in-india"></a>Restrizioni di composizione a numero verde in India
 

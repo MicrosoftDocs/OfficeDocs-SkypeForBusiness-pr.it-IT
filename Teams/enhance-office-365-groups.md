@@ -18,22 +18,21 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: cf53c22895df1ad164ef688ad922c78a9c3ec761a6117ddf24eed633fe8e056a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 232c22c4d96796a983c3c65770f3fbabcce7753e5e6a5ae1daba693fa154a630
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301961"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57850141"
 ---
-<a name="enhance-existing-microsoft-365-groups-with-microsoft-teams"></a>Migliorare i gruppi Microsoft 365 esistenti con Microsoft Teams
-=======================================================
+# <a name="enhance-existing-microsoft-365-groups-with-microsoft-teams"></a>Migliorare i gruppi Microsoft 365 esistenti con Microsoft Teams
 
 Microsoft Teams utenti possono migliorare un gruppo di Microsoft 365 esistente con Teams funzionalità. Quando si cerca di migliorare un gruppo di Microsoft 365 pubblico, gli utenti possono farlo se il numero di membri è uguale o minore di 5.000.
 
 A questo scopo, gli utenti devono eseguire il flusso di creazione di un nuovo team dal client Microsoft Teams team. Selezionare **Crea da Microsoft 365** e quindi scegliere il gruppo esistente da migliorare con  >  Teams. I membri del gruppo esistenti verranno aggiunti automaticamente come membri al team.
 
 > [!IMPORTANT]
-> Solo Microsoft 365 proprietari del gruppo hanno l'autorizzazione per migliorare un gruppo esistente con Teams e tale gruppo deve contenere meno di 5.000 utenti. Teams elementi già migliorati non verranno visualizzati nell'elenco.
+> Solo Microsoft 365 proprietari del gruppo hanno l'autorizzazione per migliorare un gruppo esistente con Teams e tale gruppo deve contenere meno di 5.000 utenti. Teams che sono già stati migliorati non verranno visualizzati nell'elenco.
 >
 >L'opzione per creare un team da un Microsoft 365 gruppo non sarà disponibile a meno che queste condizioni non siano state soddisfatte.
 
@@ -43,10 +42,10 @@ Gli utenti possono anche invitare una lista di distribuzione a un team e i membr
 
 È anche possibile aggiungere gruppi di sicurezza abilitati alla posta elettronica come membri di un team. Tuttavia, se in seguito si aggiungono altri membri al gruppo di sicurezza, tali membri non vengono aggiunti automaticamente al team. È necessario aggiungere i nuovi membri separatamente o aggiungere di nuovo il gruppo di sicurezza al team. Se si aggiunge di nuovo il gruppo di sicurezza, la deduplicazione assicura che i membri siano aggiunti una sola volta.
 
-Esistono due tipi di impostazioni di privacy con Microsoft 365, **pubblico e privato.** Mentre entrambi i tipi di gruppo possono essere abilitati per Teams, c'è una leggera differenza quando si tratta di self-service.
+Esistono due tipi di impostazioni di privacy con Microsoft 365 gruppi, **pubblici e privati.** Mentre entrambi i tipi di gruppo possono essere abilitati per Teams, c'è una leggera differenza quando si tratta di self-service.
 
 -   Gli utenti possono cercare gruppi pubblici e partecipare da soli senza bisogno dell'approvazione del proprietario del team.
 
 -   I gruppi privati non sono disponibili per la ricerca e gli utenti non possono partecipare a meno che non vengano aggiunti come membri dal proprietario del team.
 
-Quando si crea un nuovo team in Teams, un proprietario di un gruppo di Microsoft 365 privato esistente ha la possibilità di usare l'appartenenza al gruppo Microsoft 365 per creare il team. Gli utenti possono aggiungere i file SharePoint e OneNote aggiungendo una scheda per SharePoint e unendo OneNote file.
+Quando si crea un nuovo team in Teams, un proprietario di un gruppo di Microsoft 365 privato esistente ha la possibilità di usare l'appartenenza al gruppo Microsoft 365 per creare il team. Gli utenti possono aggiungere i file SharePoint e OneNote esistenti aggiungendo una scheda per SharePoint e unendo OneNote file.

@@ -19,12 +19,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata di porting per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dfc3141eea8d16a86c0f37221e597feac3bb957e
-ms.sourcegitcommit: 6f7b91f573e2a034f8c5474be2c5cb2971f4b5ab
+ms.openlocfilehash: bb098a13b157a7f95e93ab693ad2a83530571316689803069c696eccfede3929
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421281"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336016"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono Microsoft Teams
 
@@ -97,4 +97,4 @@ Per visualizzare lo stato dell'ordine di trasferimento, nel riquadro di spostame
 - [Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate](../different-kinds-of-phone-numbers-used-for-calling-plans.md)
 - [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 - [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
-- [Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+- [Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
