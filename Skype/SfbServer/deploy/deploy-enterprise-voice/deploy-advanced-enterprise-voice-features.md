@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 286d9c0b-9442-448f-a6e5-95b3034278fe
 description: Distribuire funzionalità VoIP aziendale avanzate in Skype for Business Server.
-ms.openlocfilehash: c3c551e7c0ba7dc8871791141e55d666578a411c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cbbf1fb2bde9de6de050addbbe7365e6f35772cbbec1576debab5ee6713f055a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49836896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54282369"
 ---
 # <a name="deploy-advanced-enterprise-voice-features-in-skype-for-business-server"></a>Distribuire funzionalità VoIP aziendale avanzate in Skype for Business Server
  

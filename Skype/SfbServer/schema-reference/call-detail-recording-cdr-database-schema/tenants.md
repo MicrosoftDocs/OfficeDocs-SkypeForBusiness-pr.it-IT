@@ -1,5 +1,5 @@
 ---
-title: Tabella Tenants
+title: Tabella Tenant
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,14 +13,14 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c1b070c1-2c59-4ca9-910b-43f673f97fda
 description: La tabella Tenants è una tabella di supporto in cui viene archiviato un elenco dei diversi tenant. Ogni record della tabella rappresenta un tenant.
-ms.openlocfilehash: f22837f21bd431c83848d3b055a36930c9db2fd5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 905e8f3be57601f65d3cb5f6bebff7b4af9ef89dc744a53798f6a6932d269558
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281665"
 ---
-# <a name="tenants-table"></a>Tabella Tenants
+# <a name="tenants-table"></a>Tabella Tenant
  
 La tabella Tenants è una tabella di supporto in cui viene archiviato un elenco dei diversi tenant. Ogni record della tabella rappresenta un tenant.
   
@@ -30,6 +30,6 @@ La tabella Tenants è una tabella di supporto in cui viene archiviato un elenco 
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**TenantId** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica questo ID tenant.  <br/> |
-|**TenantKey** <br/> |nvarchar(256)  <br/> || Valori consentiti: <br/>  000000000-0000-0000-0000-000000000000 - Enterprise <br/>  000000000-0000-0000-0000-000000000001 - Federato <br/>  000000000-0000-0000-0000-000000000002 - Anonimo <br/>  00000000-0000-0000-0000-0000000000003 - Connettività per messaggistica istantanea pubblica <br/> |
+|**TenantKey** <br/> |nvarchar(256)  <br/> || Valori consentiti: <br/>  00000000-0000-0000-0000-000000000000 - Enterprise <br/>  00000000-0000-0000-0000-000000000001 - Federato <br/>  000000000-0000-0000-0000-000000000002 - Anonimo <br/>  00000000-0000-0000-0000-000000000003 - Connettività per messaggistica istantanea pubblica <br/> |
    
 

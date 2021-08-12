@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b5b593a6-ac30-461c-8c8c-0041e2c9ab04
 description: 'Riepilogo: informazioni su come distribuire VoIP aziendale per Skype for Business Server in un sito centrale.'
-ms.openlocfilehash: c2aead4d42a02acce6b0db9f92866dba3a6e956d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2a3f614d3d48758c28a8ac6036529db4aa668d2262d34edaee90a3ef4776884c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51104972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54282359"
 ---
 # <a name="deploy-enterprise-voice-in-skype-for-business-server"></a>Distribuire VoIP aziendale in Skype for Business Server
 
@@ -29,7 +29,7 @@ ms.locfileid: "51104972"
 
 Utilizzare questo argomento per distribuire VoIP aziendale in un sito centrale. Per distribuire VoIP aziendale in un sito di succursale, passare a [Distribuzione di siti di succursale](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-branch-sites).
 
-In questa sezione sono incluse le procedure per le distribuzioni in cui un Mediation Server è collocato in ogni Front End Server o server Standard Edition, come consigliato, nonché per le distribuzioni con un pool Mediation Server autonomo. È possibile ignorare il contenuto seguente se è stato utilizzato Generatore di topologie per definire e pubblicare una topologia che colloca un Mediation Server in ogni Front End Server o server Standard Edition, poiché la Distribuzione guidata ha già installato automaticamente i file per Mediation Server durante l'installazione dei file per il pool Front End Server o il server Standard Edition:
+In questa sezione sono incluse le procedure per le distribuzioni in cui un Mediation Server è collocato in ogni Front End Server o server edizione Standard, come consigliato, nonché per le distribuzioni con un pool Mediation Server autonomo. È possibile ignorare il contenuto seguente se è stato utilizzato Generatore di topologie per definire e pubblicare una topologia che colloca un Mediation Server in ogni Front End Server o server edizione Standard, perché la Distribuzione guidata ha già installato automaticamente i file per Mediation Server durante l'installazione dei file per il pool Front End Server o il server edizione Standard:
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server](enterprise-voice-security.md)
@@ -46,7 +46,7 @@ In questa sezione sono incluse le procedure per le distribuzioni in cui un Media
 
 - [Creare o modificare una regola di conversione per la presentazione dell'ID chiamante in Skype for Business Server](caller-id-presentation-rules.md)
 
-- [Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server](called-id-presentation-rules.md)
+- [Creare o modificare una regola di conversione per la presentazione ID denominata in Skype for Business Server](called-id-presentation-rules.md)
 
 - [Creare o modificare una regola di normalizzazione in Skype for Business](normalization-rules.md)
 

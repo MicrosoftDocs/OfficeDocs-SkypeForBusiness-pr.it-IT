@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sugli operatori automatici e sulle code di chiamata e su come usarli per aiutare i chiamanti a spostarsi in un sistema di menu per raggiungere persone o reparti dell'organizzazione.
-ms.openlocfilehash: 51ab11603a957dad9748def3a1508de6e42577f5
-ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
+ms.openlocfilehash: 45617fa683c726cf7f2432fed6008b6626ae30ad1a551db842974ea7a9bc18c2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52739636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54310455"
 ---
 # <a name="plan-for-teams-auto-attendants-and-call-queues"></a>Pianificare Teams operatori automatici e code di chiamata
 

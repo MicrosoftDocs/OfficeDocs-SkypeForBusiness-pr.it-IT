@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Finlandia per Microsoft Teams.
-ms.openlocfilehash: e89d87ecb9010fe42717d2bd3dff8db906580b92
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: efe358fc42ca6c2cb12bb1b55b9e6ddb44fd447385c273eec491f9e6bef284f8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53510167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281579"
 ---
 # <a name="phone-number-management-for-finland"></a>Telefono gestione dei numeri per la Finlandia
 
@@ -37,11 +37,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione.<br/> |In Finlandia è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>Nuova richiesta di numero di telefono per la Finlandia (v.1.0) (en-fi).<br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente per la Finlandia [(v.1.0) (fi-FI)](https://download.microsoft.com/download/6/8/4/6849d27c-d257-4f92-b3b7-cb0d7db8b267/know-your-customer-for-finland-(v1.0)-(fi-FI).pdf) Conoscere il modulo del cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.   |
-|Ricevi i numeri di telefono trasferiti a Noi.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Finlandia (tutti i numeri) (v.1.0) (en-fi)](https://download.microsoft.com/download/a/6/8/a68d6c80-daf5-4d40-ba6e-d0f99db1041b/letter-of-authorization-(loa)-for-finland-(all-numbers)-(v1.0)-(en-fi).pdf) <br/> <br/>Compilarlo e [contattare PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/>Il completamento del trasferimento di numeri in questo mercato può richiedere da due a tre settimane. <br/><br/> Questi numeri non possono essere usati per le conferenze in questo momento.   |
-|Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Contattare PTSN per istruzioni relative](contact-pstn-service-desk.md) all'elenco di numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
-|Modificare il numero di un utente in un numero di servizio.  <br/> |[Contattare PTSN per istruzioni relative](contact-pstn-service-desk.md) all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
-|Eseguire aggiornamenti del servizio directory per i numeri di coda di chiamata o operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.<br/> |In Finlandia è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>Nuova richiesta di numero di telefono per la Finlandia (v.1.0) (en-fi).<br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente per la Finlandia [(v.1.0) (fi-FI)](https://download.microsoft.com/download/6/8/4/6849d27c-d257-4f92-b3b7-cb0d7db8b267/know-your-customer-for-finland-(v1.0)-(fi-FI).pdf) Conoscere il modulo del cliente, compilarlo per intero e inviarlo a Microsoft.<br/><br/>I nuovi ordini possono richiedere da due a tre settimane per compilare questo mercato.   |
+|Fai trasferire a noi i numeri di telefono.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Finlandia (tutti i numeri) (v.1.0) (en-fi)](https://download.microsoft.com/download/a/6/8/a68d6c80-daf5-4d40-ba6e-d0f99db1041b/letter-of-authorization-(loa)-for-finland-(all-numbers)-(v1.0)-(en-fi).pdf) <br/> <br/>Compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). <br/><br/>Il completamento del trasferimento di numeri in questo mercato può richiedere da due a tre settimane. <br/><br/> Questi numeri non possono essere usati per le conferenze in questo momento.   |
+|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri di telefono da pubblicare/inediti. <br/> |
+|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare PTSN per istruzioni](contact-pstn-service-desk.md) relative all’elenco dei numeri utente da convertire in numeri di servizio. <br/> |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
    
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -51,4 +51,4 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

@@ -16,24 +16,24 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 370c4f54-e520-4d77-96a3-84c5e84a9996
 description: Abilitare il bypass multimediale per ignorare sempre il Mediation Server in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 23d3100e355d100e3dea1932639d70f9290e7ea4
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c80b3479546e9154480af8f71417b5ebce43b261510eec19332ecf1cf9287bc4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804216"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54310031"
 ---
 # <a name="configure-media-bypass-in-skype-for-business-server-to-always-bypass-the-mediation-server"></a>Configurare il bypass multimediale in Skype for Business Server per ignorare sempre il Mediation Server
  
 Abilitare il bypass multimediale per ignorare sempre il Mediation Server in Skype for Business Server VoIP aziendale. 
   
- Se si utilizza la procedura descritta in questo argomento per configurare le impostazioni globali per il bypass multimediale, si presuppone che si abbia una buona connettività tra gli endpoint di Skype for Business e qualsiasi peer per cui è stato configurato il bypass multimediale nella connessione trunk.
+ Se si utilizza la procedura descritta in questo argomento per configurare le impostazioni globali per il bypass multimediale, si presuppone una buona connettività tra gli endpoint di Skype for Business e qualsiasi peer per cui è stato configurato il bypass multimediale nella connessione trunk.
   
-Se non si dispone di una buona connettività tra gli endpoint di Skype for Business e tutti i peer al Mediation Server le cui rispettive connessioni trunk sono state abilitate per il bypass multimediale, è necessario configurare le impostazioni di bypass multimediale globali per utilizzare le informazioni sul sito e sull'area quando si utilizza il bypass multimediale. Ciò consente di specificare in modo più preciso quando il contenuto multimediale deve ignorare il Mediation Server. A tale scopo, seguire la procedura descritta in Configurare le impostazioni globali di bypass multimediale [in Skype for Business Server](use-site-and-region-information.md) per usare le informazioni sul sito e sull'area geografica e associare invece una subnet a un sito [di](deploy-network.md#BKMK_AssociateSubnets) rete.
+Se non si dispone di una buona connettività tra gli endpoint di Skype for Business e tutti i peer del Mediation Server le cui rispettive connessioni trunk sono state abilitate per il bypass multimediale, è necessario configurare le impostazioni globali di bypass multimediale per utilizzare le informazioni sul sito e sull'area geografica quando si utilizza il bypass multimediale. Ciò consente di specificare in modo più preciso quando il contenuto multimediale deve ignorare il Mediation Server. A tale scopo, seguire la procedura descritta in [Configure media bypass global settings in Skype for Business Server to use site and region information](use-site-and-region-information.md) e Associare una subnet a un sito [di](deploy-network.md#BKMK_AssociateSubnets) rete.
   
 ### <a name="to-enable-media-bypass-globally-to-always-bypass-the-mediation-server"></a>Per abilitare il bypass multimediale globalmente in modo che il Mediation Server venga ignorato sempre
 
-1. Aprire il Pannello di controllo di Skype for Business Server.
+1. Aprire Skype for Business Server Pannello di controllo.
     
 2. Nella barra di spostamento sinistra fare clic su **Configurazione di rete**.
     

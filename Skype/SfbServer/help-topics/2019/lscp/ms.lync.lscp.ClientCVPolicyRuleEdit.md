@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 6e7e94c2-1475-4334-b8da-716b24a4c255
 ROBOTS: NOINDEX, NOFOLLOW
 description: I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l'accesso con specifici client o versioni client.
-ms.openlocfilehash: a461dad500f0c7d3095ef56483a6b592cec6c20d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f30ddcc69ad8ebc4374bfed67b84de0317c584192b58ccb09bf1842eb311bd5b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54282169"
 ---
 # <a name="client-version-rule"></a>Regola versione client
 
@@ -44,7 +44,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 |:-----|:-----|
 |Lync 2013, Lync 2010, Office Communicator  <br/> |OC  <br/> |
 |Lync Web App, Communicator Web Access  <br/> |CWA  <br/> |
-|Lync Phone Edition, Office Communicator Phone  <br/> |OCPhone  <br/> |
+|Lync Telefono Edition, Office Communicator Telefono  <br/> |OCPhone  <br/> |
 |Piattaforma Communicator Phone Edition  <br/> |CPE  <br/> |
 |Piattaforma Unified Communications  <br/> |UCCP  <br/> |
 |Lync 2010 Attendee  <br/> |AOC  <br/> |
@@ -90,7 +90,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
   - **Consenti e aggiorna** Consente al client di accedere e ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
     > [!NOTE]
-    > Se si seleziona questa azione, verrà visualizzata una notifica al successivo accesso degli utenti a Skype for Business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
+    > Se si seleziona questa azione, verrà visualizzata una notifica al successivo accesso degli utenti Skype for Business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
 
   - **Consenti con URL** Consente al client di eseguire l'accesso e visualizza un messaggio che indica dove scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 

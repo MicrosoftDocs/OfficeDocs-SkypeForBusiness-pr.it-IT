@@ -8,7 +8,7 @@ audience: admin
 ms.service: msteams
 ms.reviewer: ''
 search.appverid: MET150
-description: Informazioni su come gestire le impostazioni utente e a livello di tenant per Teams durante la transizione da Teams nell'interfaccia di amministrazione di Microsoft 365 alla nuova Teams di amministrazione.
+description: Informazioni su come gestire le impostazioni utente e a livello di tenant per Teams durante la transizione da Teams nel interfaccia di amministrazione di Microsoft 365 alla nuova interfaccia Teams di amministrazione.
 localization_priority: Normal
 f1.keywords:
 - CSH
@@ -21,12 +21,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 - Skype for Business Online
-ms.openlocfilehash: 875db7be64e23b32f5f758f9f5a701199c068528
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 036d4ddd2768a531d32eed03d5bc4b35e09a0a229ad98a0d6fd0d17adcf09d5b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281549"
 ---
 <a name="manage-teams-during-the-transition-to-the-new-microsoft-teams-admin-center"></a>Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
 ======================================================
@@ -44,7 +44,7 @@ La nuova esperienza dell'interfaccia di amministrazione offre un'esperienza unif
 
 La tabella seguente identifica le sezioni dell'esperienza Teams di cui è stata eseguita la migrazione e mostra la relazione tra le impostazioni correnti e i criteri nel nuovo portale di amministrazione.
 
-|Sezione di Teams nell'Microsoft 365 di amministrazione  |Nome impostazione (livello tenant)  |Microsoft Teams dell'interfaccia di amministrazione   |Livello: tenant o utente   |
+|Sezione di Teams in interfaccia di amministrazione di Microsoft 365  |Nome impostazione (livello tenant)  |Microsoft Teams dell'interfaccia di amministrazione   |Livello: tenant o utente   |
 |---------|---------|---------|---------|
 |Generale     |Mostra organigramma nel profilo personale        |  [TeamsClientConfiguration](/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)       |  Tenant       |
 |Generale     |Usare Skype for Business per i destinatari che non hanno Teams         |[TeamsClientConfiguration](/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)         |Tenant         |
@@ -78,7 +78,7 @@ La tabella seguente identifica le sezioni dell'esperienza Teams di cui è stata 
 |Messaggistica     |Consentire agli utenti di eliminare i propri messaggi         |[TeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps)         |Utente         |
 |Messaggistica     |Consente agli utenti di chattare privatamente         |[TeamsMessagingPolicy](/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps)         |Utente         |
 
-<sup>1 Deprecato</sup> per guest. L'abilitazione/disabilitazione di Guest ora può essere gestita nell'Microsoft Teams di amministrazione. Abilitazione/disabilitazione Teams per le aziende Enterprise, Edu Student e Edu Faculty saranno presto deprecati. Questa operazione deve essere gestita assegnando licenze nell'Microsoft 365 di amministrazione. Vedere [Gestire l'accesso degli utenti Microsoft Teams](user-access.md).
+<sup>1 Deprecato</sup> per guest. L'abilitazione/disabilitazione di Guest ora può essere gestita nell'Microsoft Teams di amministrazione. Abilitazione/disabilitazione Teams per le aziende Enterprise, Edu Student e Edu Faculty saranno presto deprecati. Questa operazione deve essere gestita assegnando licenze nel interfaccia di amministrazione di Microsoft 365. Vedere [Gestire l'accesso degli utenti Microsoft Teams](user-access.md).
 <br><br>
 <sup>2</sup> Il sideload viene suddiviso nel modo seguente:
 
@@ -88,15 +88,15 @@ La tabella seguente identifica le sezioni dell'esperienza Teams di cui è stata 
 <sup>3</sup> Le app predefinite e le app esterne possono essere abilitate e disabilitate a livello di utente in TeamsAppPermissionPolicy. Inoltre, le app possono essere bloccate a livello di tenant nelle impostazioni dell'app a livello di organizzazione, che sostituiscono qualsiasi impostazione a livello di utente e tenant.
 
 > [!NOTE]
-> Si continuerà a usare il dashboard Gruppi nell'interfaccia Microsoft 365 di amministrazione per la configurazione relativa a Teams e canali. Impostazioni per le app rimarrà nell'area Teams dell'interfaccia Microsoft 365 e verrà eseguita la migrazione in un secondo momento.
+> Si continuerà a usare il dashboard Gruppi nel interfaccia di amministrazione di Microsoft 365 per la configurazione relativa a Teams e canali. Impostazioni per le app rimarrà nell'area Teams del interfaccia di amministrazione di Microsoft 365 e verrà eseguita la migrazione in un secondo momento.
 
 ## <a name="manage-settings-during-the-migration"></a>Gestire le impostazioni durante la migrazione
 
-È possibile continuare a modificare le impostazioni nell'interfaccia di amministrazione di Microsoft 365 e nell'interfaccia di amministrazione di Skype for Business fino al completamento della migrazione per una sezione per il tenant.
+È possibile continuare a modificare le impostazioni nell'interfaccia di amministrazione di Microsoft 365 e nell'interfaccia di amministrazione Skype for Business fino al completamento della migrazione per una sezione per il tenant.
 
 La tabella seguente mostra dove è possibile gestire le caratteristiche durante la migrazione.
 
-|Funzionalità  |Microsoft Teams di amministrazione                      |Skype for Business di amministrazione (legacy)  |Microsoft 365 di amministrazione  |
+|Funzionalità  |Microsoft Teams di amministrazione                      |Skype for Business di amministrazione (legacy)  |interfaccia di amministrazione di Microsoft 365  |
 |---------|:---------:|:---------:|:---------:|
 |Teams Criteri di messaggistica, riunioni ed eventi live     |     X    |         |         |
 |Teams Criteri di aggiornamento     |    X     |         |         |

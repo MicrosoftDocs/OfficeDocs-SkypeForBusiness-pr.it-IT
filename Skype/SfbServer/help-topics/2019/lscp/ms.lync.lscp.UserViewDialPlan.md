@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8780aaad-1318-4e7a-945c-5e1863761034
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 689a09815a7c4f94894fdf374329fe9e9b2ea935
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 1e90c8aa356f1967102e5bb92894941a88addaf9dbab700664e4ffc19f0038e5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122010"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54282029"
 ---
 # <a name="users-view-or-configure-dial-plan"></a>Utenti: visualizzare o configurare un dial plan
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare o modificare un dial plan in Skype for Business Server](../../../deploy/deploy-enterprise-voice/dial-plans.md)
 

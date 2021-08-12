@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2f6e54ef-2ff5-4cac-a3d4-80a101e8d177
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: bcd41554d7c18f4b77abc74eb17f307623df619a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: b85a9b95362d3a9a2122eae02144c8ba959b4b7586420e6225b54ca5a26c1b7a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51099812"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309505"
 ---
 # <a name="file-filter-create-new-or-edit-existing"></a>Filtro file: crearne uno nuovo o modificarne uno esistente
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Modificare il filtro trasferimento file predefinito](/previous-versions/office/lync-server-2013/lync-server-2013-modify-the-default-file-transfer-filter)
 

@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: f3cda686-6301-419c-af68-b49cc785e5fc
 ROBOTS: NOINDEX, NOFOLLOW
 description: A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.
-ms.openlocfilehash: e00399f77ae5cd8a755e6c1205c110a2b5542bcf
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ab54bb380a8f2abf0784b6d9eed1a7d8e3d312690d3c4e3a636b0ad9a01ea7b5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49820396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309905"
 ---
 # <a name="sql-server-reporting-services-intro"></a>SQL Server Reporting Services (Intro)
  

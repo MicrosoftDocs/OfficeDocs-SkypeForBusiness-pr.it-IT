@@ -13,22 +13,22 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: bb7d2abd-d033-4d7d-b588-6d9228c3eccf
 description: 'Riepilogo: distribuire il ruolo del server VIS in Skype for Business Server.'
-ms.openlocfilehash: 7b3ee96b1ff2e6c633efa9e1cc98aa14bb5babc3
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 9a661bf31f3c22866396a46be5d583591674736bb8111d11b71ac257e063a416
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49801956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54282339"
 ---
 # <a name="deploy-video-interop-server-in-skype-for-business-server"></a>Distribuire Video Interop Server in Skype for Business Server
  
 **Riepilogo:** Distribuire il ruolo del server VIS in Skype for Business Server.
   
-Skype for Business Server può ora integrarsi direttamente con i sistemi di teleconferenza Cisco (VTC), ad esempio Cisco C60 o Cisco MX300. Ciò richiede l'introduzione di un nuovo ruolo del server denominato Video Interop Server (VIS) e la corretta configurazione del VIS e delle attrezzature con cui interagisce. Un VTC viene registrato con l'infrastruttura Cisco esistente, ad esempio Cisco Unified Communication Manager (CUCM), e viene utilizzato un trunk SIP video tra LAM e il pool VIS.
+Skype for Business Server possono ora integrarsi direttamente con i sistemi di teleconferenza Cisco (VTC), ad esempio Cisco C60 o Cisco MX300. Ciò richiede l'introduzione di un nuovo ruolo del server denominato Video Interop Server (VIS) e la corretta configurazione sia del VIS che dell'attrezzatura con cui interagisce. Un VTC si registra con l'infrastruttura Cisco esistente, ad esempio Cisco Unified Communication Manager (CUCM), e viene utilizzato un trunk SIP video tra CUCM e il pool VIS.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-La configurazione dell'interoperabilità tra un server o un pool VIS e sistemi VTC richiede l'esecuzione delle cinque procedure seguenti: 
+La configurazione dell'interoperabilità tra un server o un pool VIS e i sistemi VTC richiede l'esecuzione delle cinque procedure seguenti: 
   
 - [Creare un pool VIS in Skype for Business Server](create-a-vis-pool.md)
     

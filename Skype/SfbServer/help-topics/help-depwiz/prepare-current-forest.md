@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 11f5e359-97eb-45f7-a730-9ddbbaa40b83
 description: Per preparare la foresta di Servizi di dominio Active Directory, è necessario estendere correttamente lo schema, come descritto nell'argomento Running Schema Preparation, e verificare che lo schema sia stato replicato.
-ms.openlocfilehash: 94d41a993b2fe976ef7ede885d277c00417ff7dc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 6b02ae0139c4ac813dd8562b237022112f76201d79e82b856e5bfe7e8d6972e7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103462"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309645"
 ---
 # <a name="prepare-current-forest"></a>Preparare la foresta corrente
 

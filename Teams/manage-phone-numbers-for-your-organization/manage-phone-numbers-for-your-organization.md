@@ -27,12 +27,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a numero verde e a numero verde) per Microsoft Teams per l'organizzazione.
-ms.openlocfilehash: 3979604f281a75a5c3062a1a54630f34253788d0
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: 534f0d17413e24f221ce04731e0f617355392fec5f08e04814b85c15eb3369ed
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52129635"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54310634"
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione
 
@@ -117,6 +117,6 @@ Una volta completato il contratto LOA compilato **e** firmato, contatta il [nost
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Termini e condizioni per le chiamate di emergenza](../emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
 
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)

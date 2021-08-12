@@ -14,13 +14,13 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 83697d4c-320b-4797-beb0-dd0bc4f1d0d6
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per creare una richiesta ritardata o offline, selezionare Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea). Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare Invia immediatamente la richiesta a un'autorità di certificazione online.
-ms.openlocfilehash: a132f24ad3066643695e5d9ecdf0f3b257682cb2
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Per creare una richiesta ritardata o offline, selezionare Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea). Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare Invia la richiesta immediatamente a un'autorità di certificazione online.
+ms.openlocfilehash: 96a18d804894bad1b3359d1af33a726b04d3d563724b7b605ae52fbaf5dc5c0b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49836816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309975"
 ---
 # <a name="certificate-request-online-offline"></a>Richiesta di certificato (Online Offline)
  

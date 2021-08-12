@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 79eaaf6c-6928-4925-8220-c7ada6b37205
 description: I gruppi di agenti definiscono quali utenti possono rispondere alle chiamate a un Response Group (anche definito agenti) e le impostazioni che si applicano a tutti gli agenti del gruppo.
-ms.openlocfilehash: 10e7790ae993baf18693cba300c3d2b479624a29
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 86dca2b0db3f0daa58c892f36fc09c7f2ea4869dc0d867a8084a16d626b327f6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309465"
 ---
 # <a name="response-groups-create-new-or-edit-existing-agent-group"></a>Response Group: creare un nuovo gruppo di agenti o modificarne uno esistente
 
@@ -56,7 +56,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Agenti** Selezionare gli utenti che devono essere agenti per il Response Group in uno dei modi seguenti:
 
-  - Selezionare **Usa una lista di distribuzione di posta elettronica esistente** per utilizzare una lista di distribuzione di Exchange. Immettere l'indirizzo di posta elettronica della lista di distribuzione in **Indirizzo lista di distribuzione**.
+  - Selezionare **Usa una lista di distribuzione di posta elettronica esistente** per usare una Exchange di distribuzione. Immettere l'indirizzo di posta elettronica della lista di distribuzione in **Indirizzo lista di distribuzione**.
 
     > [!NOTE]
     > È possibile selezionare solo una lista di distribuzione per ogni gruppo di agenti e, se tale lista include liste di distribuzione nidificate, queste ultime non verranno incluse nel gruppo di agenti.
@@ -65,7 +65,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
     > L'ordine in cui sono elencati gli agenti nella lista di distribuzione determina l'ordine in cui riceveranno le chiamate per il routing di tipo round robin e seriale.
 
     > [!NOTE]
-    > Le appartenenze nascoste o gli elenchi nascosti potrebbero diventare visibili agli amministratori o agli utenti di Response Group. Per informazioni dettagliate, [vedere Creare o modificare un gruppo di agenti in Skype for Business 2015.](../../deploy/deploy-enterprise-voice/create-or-modify-an-agent-group.md)
+    > Le appartenenze nascoste o gli elenchi nascosti potrebbero diventare visibili agli amministratori o agli utenti di Response Group. Per informazioni dettagliate, [vedere Create or modify an agent group in Skype for Business 2015](../../deploy/deploy-enterprise-voice/create-or-modify-an-agent-group.md).
 
   - Selezionare **Definisci un gruppo di agenti personalizzato** per selezionare gli utenti da assegnare come agenti per il Response Group. Fare clic su **Seleziona** per aggiungere un agente all'elenco oppure su **Rimuovi** per eliminare un agente selezionato dall'elenco.
 

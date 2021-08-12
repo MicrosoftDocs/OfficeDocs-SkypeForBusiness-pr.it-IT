@@ -15,14 +15,14 @@ localization_priority: Normal
 ms.assetid: 6f729574-944e-4968-bdb8-eb483ff0ca88
 ROBOTS: NOINDEX, NOFOLLOW
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: ead4b6c8a4124e412c34e2d6dcc3bcf4d20fc10c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 41a54454b28644e46a74318aaec8cae3113a9a1dfb7917e6aaea69e56167dfea
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49829976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309875"
 ---
 # <a name="install-database-create-mirror-database-page"></a>Installa database, pagina Creare database mirror
  
 > [!NOTE]
-> SQL mirroring è disponibile in Skype for Business Server 2015, ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.
+> SQL Il mirroring è disponibile Skype for Business Server 2015, ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.

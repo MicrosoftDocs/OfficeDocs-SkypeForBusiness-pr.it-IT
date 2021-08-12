@@ -1,5 +1,5 @@
 ---
-title: Rapporto riepilogativo diagnostica chiamate in Skype for Business Server
+title: Rapporto riepilogativo diagnostica chiamate Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 9091de56-13e6-440e-9353-f57c10c906fe
-description: 'Riepilogo: informazioni sul Rapporto riepilogativo di diagnostica chiamate utilizzato in Skype for Business Server.'
-ms.openlocfilehash: a0e024abfc083588a755a0d922c0eca23e526058
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni sul Rapporto riepilogativo diagnostica chiamate utilizzato in Skype for Business Server.'
+ms.openlocfilehash: 35b6a9ac84bf504b218200ec2ac49e6f19632e520eba90335e9ab0257f4bcfcc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281839"
 ---
-# <a name="call-diagnostic-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo diagnostica chiamate in Skype for Business Server
+# <a name="call-diagnostic-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo diagnostica chiamate Skype for Business Server
  
-**Riepilogo:** Informazioni sul Rapporto riepilogativo di diagnostica chiamate utilizzato in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto riepilogativo diagnostica chiamate utilizzato in Skype for Business Server.
   
 Il Rapporto riepilogativo di diagnostica chiamate offre un quadro generale delle sessioni di conferenza e peer-to-peer non riuscite. Il rapporto illustra la percentuale generale degli errori per entrambi i tipi di sessioni e ulteriori dettagli sui problemi in base al tipo di modalità della sessione:
   
@@ -37,7 +37,7 @@ Il Rapporto riepilogativo di diagnostica chiamate offre un quadro generale delle
     
 ## <a name="accessing-the-call-diagnostic-summary-report"></a>Accesso al Rapporto riepilogativo di diagnostica chiamate
 
-Il Rapporto riepilogativo di diagnostica chiamate è accessibile dalla home page Rapporti di monitoraggio. Dal Rapporto riepilogativo di diagnostica chiamate è possibile accedere al Rapporto di diagnostica attività [peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) facendo clic sulla metrica Frequenza errori nella sezione Peer-to-Peer Session Summary del rapporto. È anche possibile accedere [al Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md) facendo clic su una delle metriche di conferenza seguenti:
+Il Rapporto riepilogativo di diagnostica chiamate è accessibile dalla home page Rapporti di monitoraggio. Dal Rapporto riepilogativo diagnostica chiamate è possibile accedere al Rapporto di diagnostica attività [peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md) facendo clic sulla metrica Frequenza errori nella sezione Riepilogo sessioni peer-to-peer del report. È inoltre possibile accedere al [Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md) facendo clic su una delle metriche conferenza seguenti:
   
 - Frequenza generale errori sessione
     
@@ -47,7 +47,7 @@ Il Rapporto riepilogativo di diagnostica chiamate è accessibile dalla home page
     
 ## <a name="making-the-best-use-of-the-call-diagnostic-summary-report"></a>Uso ottimale del Rapporto riepilogativo di diagnostica chiamate
 
-Il Rapporto riepilogativo di diagnostica chiamate include grafici che confrontano le percentuali di errore per le varie modalità utilizzate in Skype for Business Server. Le colonne in questi grafici sono in realtà collegamenti a caldo; Ad esempio, se si fa clic sulla colonna Messaggistica istantanea per le sessioni peer-to-peer, si esegue il drill-down a un'istanza del Rapporto di diagnostica attività [peer-to-peer in Skype for Business Server,](peer-to-peer-activity-diagnostic-report.md)un report che fornisce ulteriori dettagli su tutte le sessioni di messaggistica istantanea incluse nel Rapporto riepilogativo diagnostica chiamate.
+Il Rapporto riepilogativo diagnostica chiamate include grafici che confrontano le percentuali di errore per le varie modalità utilizzate in Skype for Business Server. Le colonne in questi grafici sono in realtà collegamenti a caldo; Ad esempio, se si fa clic sulla colonna Messaggistica istantanea per le sessioni peer-to-peer, si eseguirà il drill-down a un'istanza del Rapporto di diagnostica attività [peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md), un report che fornisce ulteriori dettagli su tutte le sessioni di messaggistica istantanea incluse nel Rapporto riepilogativo diagnostica chiamate.
   
 ## <a name="filters"></a>Filtri
 
@@ -61,7 +61,7 @@ Nella tabella seguente sono elencati i filtri applicabili al rapporto riepilogat
 |:-----|:-----|
 |**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con data di inizio 7/7/2015 e data di fine 28/02/2015, i dati verranno visualizzati per i giorni 07/08/2015 12.00 al 7/09/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
+|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo Giornaliero con data di inizio 7/07/2015 e data di fine 28/02/2015, verranno visualizzati i dati per i giorni 7/08/2015 12.00 fino al 7/9/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
 |**Pool** <br/> |Nome di dominio completo del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati per tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record presenti nel database.<br/> |
    
 ## <a name="metrics-for-peer-to-peer-sessions"></a>Metriche per le sessioni peer-to-peer

@@ -16,12 +16,12 @@ appliesto:
 f1.keywords: ''
 ms.custom: ''
 description: Informazioni su come rimuovere i criteri RestrictedAnonymousAccess Teams riunione dagli utenti dell'organizzazione.
-ms.openlocfilehash: aab4b524ee0c9ab5cab3244a0897730fea0361a7
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 347013cff6b704f6eb5f0ac05665b65259e751be645acd16c75c6a0f0cd024a1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121344"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54310425"
 ---
 # <a name="remove-the-restrictedanonymousaccess-teams-meeting-policy-from-users"></a>Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams
 

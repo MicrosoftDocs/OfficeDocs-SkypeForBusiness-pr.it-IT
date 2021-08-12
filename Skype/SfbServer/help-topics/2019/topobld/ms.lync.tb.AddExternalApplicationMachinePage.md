@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: e951328e-d06b-4c9d-af21-305b2357188b
 ROBOTS: NOINDEX, NOFOLLOW
 description: Specificare il nome di dominio completo (FQDN) di ogni computer che si desidera aggiungere come server di applicazioni attendibili in questo pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare l'FQDN del computer o rimuoverlo dal pool in qualsiasi momento prima della pubblicazione della topologia. Dopo aver pubblicato la topologia, per la modifica dell'FQDN è necessario eliminare il server in Generatore di topologie e quindi aggiungere un nuovo server al pool con il nuovo FQDN.
-ms.openlocfilehash: a108987a8a9063e51917d4946f4331d3c838c83e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: cc1a9028e61aa0c179fbe3f88a399af82b951fc638c12625b37d15bb7a9bc9be
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49811836"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281989"
 ---
 # <a name="add-trusted-application-machine"></a>Aggiungere computer con applicazioni attendibili
  

@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 29bde940-6107-494f-9bee-b6ebfa135e41
 ROBOTS: NOINDEX, NOFOLLOW
 description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
-ms.openlocfilehash: a59cab44df89a6091f463d677a5771983166a42b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a04d80d3ecea5d10c85c11cf4705b481daa1b12b3a9b152fd87430f8cb23c355
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118795"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309885"
 ---
 # <a name="response-groups-queue"></a>Coda dei Response Group
 
@@ -56,4 +56,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Descrizione** Descrizione della coda.
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo delle code di Response Group, vedere [Managing Response Group Queues](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-queues) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di [Response Group,](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) vedere Plan for the Response Group application in Skype for Business Server nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo delle code di Response Group, vedere [Managing Response Group Queues](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-queues) nella documentazione relativa alle operazioni.

@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 24eca749-a9f3-40e7-839b-d21c3ef7d533
 description: I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma non assegnati a un utente o un telefono. La tabella dei numeri non assegnati identifica come si desidera gestire le chiamata a numeri non assegnati.
-ms.openlocfilehash: aeb81aef1b2dba23dc3daaa6ec8a788c0b232529
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c3f6bcf9c60b8126416bd330eeb67b2a58cff3d9cf2ce8f905f429936f011a05
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309455"
 ---
 # <a name="unassigned-phone-number"></a>Numero di telefono non assegnato
 
@@ -53,10 +53,10 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 - **Modifica** Apre l'intervallo di numeri non assegnati selezionato per la modifica, seleziona tutti gli intervalli di numeri non assegnati nell'elenco oppure elimina l'intervallo di numeri non assegnati selezionato.
 
-- **Spostarsi verso l'alto** Sposta l'intervallo di numeri non assegnati selezionato verso l'alto nell'elenco in modo che Skype for Business Server lo trovi prima e applii l'azione specificata prima di applicare le azioni specificate per altri intervalli nell'elenco.
+- **Spostarsi verso l'alto** Sposta l'intervallo di numeri non assegnati selezionato verso l'alto nell'elenco in modo che Skype for Business Server lo trovi prima e applii l'azione specificata prima di applicare le azioni specificate per gli altri intervalli dell'elenco.
 
     > [!NOTE]
-    > Skype for Business Server cerca la tabella dei numeri non assegnati dall'alto verso il basso e utilizza il primo intervallo corrispondente al numero non assegnato. Se, ad esempio, per un intervallo è specificata un'azione "ultimo tentativo", assicurarsi che tale intervallo si trovi alla fine dell'elenco.
+    > Skype for Business Server ricerca nella tabella dei numeri non assegnati dall'alto verso il basso e utilizza il primo intervallo corrispondente al numero non assegnato. Se, ad esempio, per un intervallo è specificata un'azione "ultimo tentativo", assicurarsi che tale intervallo si trovi alla fine dell'elenco.
 
 - **Sposta giù** Sposta l'intervallo di numeri non assegnati selezionato verso il basso nell'elenco.
 

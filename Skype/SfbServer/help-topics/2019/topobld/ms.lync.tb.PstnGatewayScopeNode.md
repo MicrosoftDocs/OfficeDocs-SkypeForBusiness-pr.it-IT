@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 85a52bf7-98cb-4dd4-892e-2d1ba5669593
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'In questo nodo vengono mostrati il nome di dominio completo (FQDN), il Mediation Server associato e altre informazioni di base su questo gateway PSTN (Public Switched Telephone Network). È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 9b9a9b54a52a78aa0f1262dc2c045785304b104c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 3d6feb83a76ef1cd1df27e5c03fe7918df0ff7bf8f988e7f2fd1939904e3cc75
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281869"
 ---
 # <a name="pstn-gateway-scope-node"></a>Nodo dell'ambito del gateway PSTN
  
