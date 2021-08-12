@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 9ea090b3-f607-46f7-97dd-2510052524e5
 description: Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata.
-ms.openlocfilehash: 62a3c1605c7a54043539bc94892fdb8e3923f21a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 386272fd2a20d2d780f146c8eb03d75878cdf69cdfa27145d42c0421ba4ba91f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54284705"
 ---
 # <a name="plan-for-media-bypass-in-skype-for-business"></a>Pianificare il bypass multimediale in Skype for Business
 
@@ -41,7 +41,7 @@ Nella figura seguente sono illustrati i percorsi multimediali e di segnalazione 
 
 ![Applicazione della connessione bypass multimediale del controllo di ammissione di chiamata vocale](../../media/Plan_CS_VoiceCAC_enforcementofconnectionstoPSTN.jpg)
 
-La funzionalità bypass multimediale è utile se si desidera ridurre il numero dei Mediation Server distribuiti. Un pool Mediation Server viene in genere distribuito in un sito centrale e controlla i gateway nei siti di succursale. Abilitando il bypass multimediale, gli elementi multimediali per chiamate PSTN da client dei siti di succursale possono attraversare direttamente i gateway di tali siti. Le route delle chiamate in uscita di Skype for Business Server e i criteri di VoIP aziendale devono essere configurati correttamente in modo che le chiamate PSTN provenienti dai client di un sito di succursale siano instradati al gateway appropriato.
+La funzionalità bypass multimediale è utile se si desidera ridurre il numero dei Mediation Server distribuiti. Un pool Mediation Server viene in genere distribuito in un sito centrale e controlla i gateway nei siti di succursale. Abilitando il bypass multimediale, gli elementi multimediali per chiamate PSTN da client dei siti di succursale possono attraversare direttamente i gateway di tali siti. Skype for Business Server le route delle chiamate in uscita e i criteri VoIP aziendale devono essere configurati correttamente in modo che le chiamate PSTN provenienti dai client di un sito di succursale siano instradati al gateway appropriato.
 
 Nelle reti Wi-Fi in genere si verificano più perdite di pacchetti rispetto alle reti cablate. Il recupero da queste perdite di pacchetti non può solitamente essere supportato dai gateway. Pertanto, è consigliabile valutare la qualità di una rete Wi-Fi prima di stabilire se abilitare il bypass per una subnet wireless. È inoltre necessario valutare il compromesso tra la riduzione della latenza e la perdita di pacchetti. RTAudio, un codec non disponibile per le chiamate che non aggirano il Mediation Server, è più indicato per la gestione della perdita di pacchetti.
 
@@ -108,12 +108,12 @@ Il bypass multimediale (o Media Bypass, ovvero la possibilità di ignorare il Me
 
 ## <a name="technical-requirements"></a>Requisiti tecnici
 
-Per ogni chiamata alla rete PSTN, il Mediation Server determina se i contenuti multimediali dall'endpoint skype for business di origine possono essere inviati direttamente a un peer Mediation Server senza attraversare il Mediation Server. Il peer può essere un gateway PSTN, un IP-PBX o un SBC (Session Border Controller) presso un provider di servizi di telefonia Internet (ITSP) associato al trunk tra il Mediation Server in cui viene instradata la chiamata.
+Per ogni chiamata alla rete PSTN, il Mediation Server determina se i supporti dall'endpoint Skype for Business di origine possono essere inviati direttamente a un peer Mediation Server senza attraversare il Mediation Server. Il peer può essere un gateway PSTN, un IP-PBX o un SBC (Session Border Controller) presso un provider di servizi di telefonia Internet (ITSP) associato al trunk tra il Mediation Server in cui viene instradata la chiamata.
 
 Il bypass multimediale può essere utilizzato quando vengono soddisfatti i requisiti seguenti:
 
 - Un peer Mediation Server deve supportare le funzionalità necessarie per il bypass multimediale, la più importante è la capacità di gestire più risposte con forking (note come "finestre di dialogo iniziali"). Rivolgersi al produttore del gateway o del PBX o al provider di servizi di telefonia Internet per ottenere il numero massimo di dialoghi anticipati accettato da gateway, PBX o SBC.
 
-- Il peer Mediation Server deve accettare il traffico multimediale direttamente dagli endpoint di Skype for Business. Molti ITSP consentono al proprio SBC di ricevere traffico solo dal Mediation Server. Contattare il provider ITSP per determinare se il servizio SBC accetta il traffico multimediale direttamente dagli endpoint di Skype for Business.
+- Il peer Mediation Server deve accettare il traffico multimediale direttamente Skype for Business endpoint. Molti ITSP consentono al proprio SBC di ricevere traffico solo dal Mediation Server. Contattare il provider ITSP per determinare se il servizio SBC accetta il traffico multimediale direttamente Skype for Business endpoint.
 
-- I client Skype for Business e un peer Mediation Server devono essere connessi correttamente, ovvero si trovano nella stessa area di rete o nei siti di rete che si connettono all'area tramite collegamenti WAN senza vincoli di larghezza di banda
+- Skype for Business client e un peer Mediation Server devono essere connessi correttamente, ovvero si trovano nella stessa area di rete o nei siti di rete che si connettono all'area tramite collegamenti WAN senza vincoli di larghezza di banda

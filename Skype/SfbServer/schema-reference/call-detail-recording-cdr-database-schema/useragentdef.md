@@ -12,22 +12,22 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 96c49239-d999-4045-8b64-9d1940cce8ff
-description: Nella tabella UserAgentDef gli identificatori degli agenti utente vengono mappati ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: df6f0c15f62d4fbf586861a8a6d8fc80b85df7e1
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: La tabella UserAgentDef mappa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+ms.openlocfilehash: bef3d9755b7475277ed2741541d43ad813a21f14430bf3dc6c939201d011b6dc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54349658"
 ---
 # <a name="useragentdef-table"></a>Tabella UserAgentDef
  
-Nella tabella UserAgentDef gli identificatori degli agenti utente vengono mappati ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+La tabella UserAgentDef mappa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   
 |**UAType**|**UAName**|**UACategory**|
 |:-----|:-----|:-----|
-|1   <br/> |MediationServer  <br/> |MediationServer  <br/> |
-|2   <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
+|1  <br/> |MediationServer  <br/> |MediationServer  <br/> |
+|2  <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
 |4   <br/> |OC  <br/> |OC  <br/> |
 |8   <br/> |OCPhone  <br/> |OCPhone  <br/> |
 |16   <br/> |LMC  <br/> |LMC  <br/> |
@@ -49,7 +49,7 @@ Nella tabella UserAgentDef gli identificatori degli agenti utente vengono mappat
 |16393  <br/> |MSExchangeUM  <br/> |ExUM  <br/> |
 |16395  <br/> |ArchivingAgent  <br/> |ARCHAGENT  <br/> |
 |16396  <br/> |ST  <br/> |ST  <br/> |
-|16397  <br/> |condivisione applicazioni  <br/> |ASMCU  <br/> |
+|16397  <br/> |condivisione delle applicazioni  <br/> |ASMCU  <br/> |
 |16398  <br/> |WPLync  <br/> |WPLync  <br/> |
 |16399  <br/> |iPhoneLync  <br/> |iPhoneLync  <br/> |
 |16400  <br/> |AndroidLync  <br/> |AndroidLync  <br/> |

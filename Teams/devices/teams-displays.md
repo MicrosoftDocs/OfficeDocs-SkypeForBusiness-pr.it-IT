@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo fornisce una panoramica delle funzionalità supportate Microsoft Teams display.
-ms.openlocfilehash: 8b91667265531833920e31a5ab99fca307d151d0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a812aad7b26758ce41052672b20e5031da0729e7d1b1b802513ed2b311353b30
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322678"
 ---
 # <a name="microsoft-teams-displays"></a>Microsoft Teams display
 
@@ -70,4 +70,4 @@ Teams display è l'evoluzione dei Teams telefoni. È possibile aggiornare i Team
 
 [Aggiornare i telefoni IP a Teams display](upgrade-phones-to-displays.md)
 
-[Assistenza vocale di Cortana in Teams](../cortana-in-teams.md)
+[Cortana'assistenza vocale in Teams](../cortana-in-teams.md)

@@ -1,5 +1,5 @@
 ---
-title: Dettagli della tabella CDR in Skype for Business Server
+title: Dettagli tabella CDR in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,74 +13,74 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 896198f5-672b-48ea-852f-0211c0c90857
 description: Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
-ms.openlocfilehash: 5b271d336cfe5dd17a83cf318debf7eb2675d344
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 7b22676a675d70359cf895261f3f0ad3cec13a6835805efefaacb6be7a7416ce
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813376"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54296973"
 ---
-# <a name="cdr-table-details-in-skype-for-business-server-2015"></a>Dettagli della tabella CDR in Skype for Business Server
+# <a name="cdr-table-details-in-skype-for-business-server-2015"></a>Dettagli tabella CDR in Skype for Business Server 2015
  
 Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Tabella Application in Skype for Business Server 2015](application.md)
+- [Tabella delle applicazioni in Skype for Business Server 2015](application.md)
     
-- [Tabella CallPriorities in Skype for Business Server](callpriorities.md)
+- [Tabella CallPriorities in Skype for Business Server 2015](callpriorities.md)
     
-- [Tabella CallType in Skype for Business Server 2015](calltype.md)
+- [Tabella CallType Skype for Business Server 2015](calltype.md)
     
 - [Tabella ClientVersions in Skype for Business Server 2015](clientversions.md)
     
-- [Tabella ConferenceJoinTimeThresholds in Skype for Business Server 2015](conferencejointimethresholds.md)
+- [Tabella ConferenceJoinTimeThresholds Skype for Business Server 2015](conferencejointimethresholds.md)
     
-- [Tabella ConferenceMessageCount in Skype for Business Server](conferencemessagecount.md)
+- [Tabella ConferenceMessageCount in Skype for Business Server 2015](conferencemessagecount.md)
     
-- [Tabella Conferences in Skype for Business Server 2015](conferences.md)
+- [Tabella Conferenze in Skype for Business Server 2015](conferences.md)
     
-- [Tabella ConferenceSessionDetails in Skype for Business Server](conferencesessiondetails-0.md)
+- [Tabella ConferenceSessionDetails in Skype for Business Server 2015](conferencesessiondetails-0.md)
     
-- [Tabella ConferenceUris in Skype for Business Server](conferenceuris.md)
+- [Tabella ConferenceUris in Skype for Business Server 2015](conferenceuris.md)
     
-- [Tabella ContentTypes in Skype for Business Server](contenttypes.md)
+- [Tabella ContentTypes in Skype for Business Server 2015](contenttypes.md)
     
-- [Tabella DeRegisterType in Skype for Business Server](deregistertype.md)
+- [Tabella DeRegisterType Skype for Business Server 2015](deregistertype.md)
     
 - [Tabella Devices in Skype for Business Server 2015](devices.md)
     
-- [Tabella Dialogs in Skype for Business Server](dialogs.md)
+- [Tabella Dialogs in Skype for Business Server 2015](dialogs.md)
     
 - [Tabella EdgeServers in Skype for Business Server 2015](edgeservers.md)
     
-- [Tabella ErrorCategory in Skype for Business Server](errorcategory.md)
+- [Tabella ErrorCategory in Skype for Business Server 2015](errorcategory.md)
     
 - [Tabella ErrorDef in Skype for Business Server 2015](errordef.md)
     
-- [Tabella ErrorReport in Skype for Business Server](errorreport.md)
+- [Tabella ErrorReport in Skype for Business Server 2015](errorreport.md)
     
-- [Tabella FileTransfers in Skype for Business Server](filetransfers-0.md)
+- [Tabella FileTransfers in Skype for Business Server 2015](filetransfers-0.md)
     
-- [Tabella FocusJoinsAndLeaves in Skype for Business Server 2015](focusjoinsandleaves.md)
+- [Tabella FocusJoinsAndLeaves Skype for Business Server 2015](focusjoinsandleaves.md)
     
-- [Tabella FrontEnd in Skype for Business Server 2015](frontend.md)
+- [Tabella FrontEnd Skype for Business Server 2015](frontend.md)
     
 - [Tabella Gateways in Skype for Business Server 2015](gateways.md)
     
-- [Tabella HardwareVersions in Skype for Business Server 2015](hardwareversions.md)
+- [Tabella HardwareVersions Skype for Business Server 2015](hardwareversions.md)
     
-- [Tabella IMReportSummary in Skype for Business Server](imreportsummary.md)
+- [Tabella IMReportSummary Skype for Business Server 2015](imreportsummary.md)
     
 - [Tabella Locations in Skype for Business Server 2015](locations.md)
     
-- [Tabella Manufacturers in Skype for Business Server 2015](manufacturers.md)
+- [Tabella Manufacturers Skype for Business Server 2015](manufacturers.md)
     
-- [Tabella McuJoinsAndLeaves in Skype for Business Server 2015](mcujoinsandleaves.md)
+- [Tabella McuJoinsAndLeaves Skype for Business Server 2015](mcujoinsandleaves.md)
     
 - [Tabella Mcus in Skype for Business Server 2015](mcus.md)
     
-- [Tabella Media](media.md)
+- [Media table](media.md)
     
 - [Tabella MediaList](medialist.md)
     
@@ -88,7 +88,7 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella MSMQProcessing](msmqprocessing.md)
     
-- [Tabella Phones](phones.md)
+- [Tabella Telefoni](phones.md)
     
 - [Tabella Pools](pools.md)
     
@@ -96,11 +96,11 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella PurgeSettings](purgesettings.md)
     
-- [Tabella Registration](registration.md)
+- [Tabella di registrazione](registration.md)
     
-- [Tabella Roles](roles.md)
+- [Tabella Ruoli](roles.md)
     
-- [Tabella Servers](servers.md)
+- [Tabella Server](servers.md)
     
 - [Tabella SessionDetails](sessiondetails.md)
     
@@ -112,11 +112,11 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella Attività](task.md)
     
-- [Tabella Tenants](tenants.md)
+- [Tabella Tenant](tenants.md)
     
 - [Tabella UriTypes](uritypes.md)
     
-- [Tabella Users](users.md)
+- [Tabella Utenti](users.md)
     
 - [Tabella UserAgentDef](useragentdef.md)
     

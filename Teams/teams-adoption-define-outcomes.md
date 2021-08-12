@@ -21,12 +21,12 @@ f1.keywords:
 description: Informazioni su come misurare i risultati e il successo dell'abilitazione su vasta scala di Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6f53c39611e28bde40ccf8bab0f92635383b11e5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 3ef85a84c247c18528b8c13181943d970afe05d1c5c72976739b4b79a77cf8c6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54332428"
 ---
 # <a name="define-outcomes-and-success-for-your-microsoft-teams-adoption"></a>Definire i risultati e il successo per l'adozione Microsoft Teams utenti
 
@@ -81,7 +81,7 @@ Teams è una tecnologia trasformativa, quindi a seconda delle dimensioni dell'or
 | Lead cloud deployment with Teams | Abilitazione dello scenario di collaborazione con i Teams | Tutti i dipendenti di Teams team a livello di organizzazione | Abilitare Teams e Skype for Business | Eseguire la migrazione degli utenti da Skype for Business a Teams |
 | - Applicabile ai clienti nuovi o a basso utilizzo Microsoft 365 o Office 365 clienti <br/>- Cliente potenziale con Teams in uno scenario specifico del cliente <br/>- Evidenziare l'esperienza utente integrata e accelerare il time-to-value per Microsoft 365 o Office 365 <br/>- Eseguire insieme l'abilitazione del carico di lavoro di pianificazione per evitare l'implementazione seriale | - Abilitare Teams insieme a OneDrive e SharePoint Online <br/>- Creare una Intranet aziendale per condividere le risorse e i video delle notizie con Microsoft Stream<br/>**Migliorare insieme:** <br/>Teams<br/>SharePoint<br/>Yammer<br/>Programmazione<br/>PowerApps |- Per i clienti con meno di 5000 postazioni (limitazione corrente)<br/>- Abilitare la collaborazione tra organizzazioni con un unico team per tutti<br/>- Automatizzare le attività comuni (richieste di ferie, sondaggi dei dipendenti, coinvolgimento dei dirigenti) |- Usare le Teams principali per accelerare la collaborazione<br/>- Evidenziare le indicazioni sullo scenario della riunione in base alle dimensioni e al set di caratteristiche richiesto</br>- Usare i Skype for Business per le chiamate aziendali, l'interoperabilità e gli scenari ibridi<br/>- Usare la roadmap pubblica per la pianificazione delle funzionalità. |- Pianificare il passaggio a Teams da Skype for Business creando una roadmap per la strategia di servizio per il cliente<br/>- Allega alla pianificazione del rilascio delle funzionalità<br/>- Consigliare di includere affiancati e Teams core per facilitare la transizione
 
-Di seguito sono riportati i suggerimenti per la maggior parte delle organizzazioni dei clienti. Esistono tuttavia eccezioni. Per ottenere indicazioni su qualsiasi scenario non trattato, porre le proprie domande nella community di Driving Adoption o contattare il team FastTrack o la rete di partner Microsoft.
+Di seguito sono riportati i suggerimenti per la maggior parte delle organizzazioni dei clienti. Esistono tuttavia eccezioni. Per ottenere indicazioni per qualsiasi scenario non trattato, porre le proprie domande nella community di Driving Adoption o contattare il team di FastTrack o la rete di partner Microsoft.
 
 - **Scegliere Teams First o Teams Core:** la maggior parte delle organizzazioni ha un investimento esistente nella tecnologia Microsoft. È possibile abilitare più carichi di lavoro contemporaneamente, ad esempio Exchange Online, OneDrive for Business o SharePoint. In questi casi, selezionare Teams primo o Teams core è una scelta saggia. Permetterà agli utenti di abituarsi all'esperienza di collaborazione avanzata di Teams. Il team del progetto di collaborazione può quindi pianificare l'implementazione di funzionalità aggiuntive e la formazione e il supporto necessari per il successo. 
 

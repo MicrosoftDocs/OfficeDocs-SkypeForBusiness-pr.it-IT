@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9e5f8df087ca7ad999a9756467925be68c60e96f
-ms.sourcegitcommit: 90615674e9703aa5ea32be64ab3638aa30e83127
+ms.openlocfilehash: bf66e1d14ab283839de2b07f584386dbe542a60b20341f129a275a22b75c8e0f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "52718057"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54296703"
 ---
 # <a name="plan-for-office-365-government---gcc-high-deployments"></a>Pianificare distribuzioni Office 365 Government - GCC high
 
@@ -90,4 +90,4 @@ Determinare i requisiti per la governance e come soddisfarli. Passare a [Pianifi
 
 Dopo aver eseguito l'onboarded a Office 365 Government - GCC High, seguire il percorso di distribuzione consigliato descritto [in](./deploy-overview.md)Come implementare Microsoft Teams . Assicurarsi di interagire con il team di adozione e gestione delle modifiche e Teams campioni.
 
-È anche possibile collaborare con [FastTrack](https://www.microsoft.com/fasttrack) o con il partner scelto per l'onboarding del servizio.
+È anche possibile collaborare [con](https://www.microsoft.com/fasttrack) FastTrack o con il partner scelto per l'onboard del servizio.

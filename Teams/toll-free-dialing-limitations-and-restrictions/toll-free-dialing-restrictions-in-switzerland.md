@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostrano i codici di accesso necessari in ogni paese o area geografica per comporre il numero verde.
-ms.openlocfilehash: e88142c4eeb6fa7052e12105fe3191019bc19be4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: d11070337abf16292983b11d8f8f84ac515e26711330e78d75c35ddba2c988ce
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312424"
 ---
 # <a name="toll-free-dialing-restrictions-in-switzerland"></a>Restrizioni di composizione a numero verde in Svizzera
 

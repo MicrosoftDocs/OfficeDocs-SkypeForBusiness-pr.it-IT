@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e della creazione in Call Quality Dashboard (CQD).
-ms.openlocfilehash: 7a1f6de78e01a8988317aa99aae917aa0018e19a
-ms.sourcegitcommit: 7e673b88346e07f7c777710437b19d257ccecb1b
+ms.openlocfilehash: be51f4ec7eb19f56a07413749abf5455856754ed0984d00cd27ed72d9aaa8316
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50067141"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322808"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Upload di tenant e edificio in Call Quality Dashboard (CQD)
 
@@ -86,11 +86,11 @@ Il primo tipo di file di dati del tenant in CQD è il file di dati **Building.**
   | OwnershipType      | Stringa    | Contoso                   | Facoltativo              |
   | BuildingType       | Stringa    | Terminazione IT            | Facoltativo              |
   | BuildingOfficeType | Stringa    | Progettazione               | Facoltativo              |
-  | Città               | Stringa    | Seattle                   | Scelta consigliata           |
-  | ZipCode            | Stringa    | 98001                     | Scelta consigliata           |
-  | Paese            | Stringa    | Stati Uniti                        | Scelta consigliata           |
-  | Stato              | Stringa    | WA                        | Scelta consigliata           |
-  | Area geografica             | Stringa    | MSUS                      | Scelta consigliata           |
+  | Città               | Stringa    | Seattle                   | Consigliata           |
+  | ZipCode            | Stringa    | 98001                     | Consigliata           |
+  | Paese            | Stringa    | Stati Uniti                        | Consigliata           |
+  | Stato              | Stringa    | WA                        | Consigliata           |
+  | Area geografica             | Stringa    | MSUS                      | Consigliata           |
   | InsideCorp<sup>2</sup>         | Bool      | 1             | Obbligatorio              |
   | ExpressRoute<sup>3</sup>       | Bool      | 0             | Obbligatorio              |
   | VPN                | Bool      | 0                         | Facoltativo              |

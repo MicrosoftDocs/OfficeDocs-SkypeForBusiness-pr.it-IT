@@ -17,12 +17,12 @@ ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
 description: Leggere questo argomento per informazioni su come distribuire i Microsoft Teams Rooms in un ambiente ibrido con Exchange locale.
-ms.openlocfilehash: 3931ba89dd4ad0dfd994fdf27a3f209275850116
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 5424e670dcea86aff5f3c8842e2ab3e61cfecf480922ac664ac055ea502dbb09
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117354"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54296653"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire Microsoft Teams Rooms con Exchange locale
 
@@ -69,7 +69,7 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
     > [!NOTE]
     > La **selezione della password non scade** mai è un requisito per Skype for Business Server in Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In questo caso, è necessario creare un'eccezione per ogni account Microsoft Teams Rooms dispositivo.
   
-4. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Al termine, passare alla pagina degli utenti nell'interfaccia di amministrazione di Microsoft 365 e verificare che l'account creato nei passaggi precedenti sia stato unito in online.
+4. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Al termine, passare alla pagina degli utenti del interfaccia di amministrazione di Microsoft 365 e verificare che l'account creato nei passaggi precedenti sia stato unito in online.
 
 ### <a name="enable-the-remote-mailbox-and-set-properties"></a>Abilitare la cassetta postale remota e impostare le proprietà
 
@@ -142,7 +142,7 @@ Skype for Business PowerShell online viene usato per gestire i servizi per Micro
 
 1. Creare una sessione Windows PowerShell remota da un PC come segue:
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente.
+> Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente.
 >
 > Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 
@@ -185,7 +185,7 @@ Skype for Business PowerShell online viene usato per gestire i servizi per Micro
 
 ### <a name="assign-a-license-to-your-microsoft-teams-rooms-account"></a>Assegnare una licenza all'account Microsoft Teams Rooms account
 
-1. Accedere come amministratore tenant, aprire l'Microsoft 365 di amministrazione e fare clic sull'app Amministratore.
+1. Accedere come amministratore tenant, aprire il interfaccia di amministrazione di Microsoft 365 e fare clic sull'app Amministratore.
 2. Fare clic **su Utenti e gruppi** e quindi su Aggiungi **utenti, reimpostazione password e altro ancora.**
 3. Fare clic sull Microsoft Teams Rooms account e quindi fare clic sull'icona della penna per modificare le informazioni dell'account.
 4. Fare clic **su Licenze**.

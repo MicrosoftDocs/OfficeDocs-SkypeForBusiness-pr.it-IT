@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Scopri come viene classificata la qualità dello stream nel Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 400dcd953805595b4457b4ca9443c31b66f7425d
-ms.sourcegitcommit: fdef9b52247097e5cae64f01b6b2b710c5b203cf
+ms.openlocfilehash: 595ed77fd0fa6c2fb3a9bf778ff8b94e837314da1c83acb5a099bb0c795eabe1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49909040"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54341152"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione dei flussi in Call Quality Dashboard (CQD)
 
