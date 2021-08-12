@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 47425ab1-5645-4d6f-b202-64bcce43e3ef
 description: Dopo aver completato le domande iniziali, è possibile modificare il nome di dominio completo (FQDN) e gli indirizzi IP per il sito. A tale scopo, nella pagina Topologia globale fare doppio clic sul sito che si desidera modificare.
-ms.openlocfilehash: 9a345c753195c32907d078d5ee4a267b8b96d6b0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 017b1e9e04851d321c9fd6f08508c8ffeccb4b4b558a3b0668c7e6f0efdd1f15
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51093184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54347911"
 ---
 # <a name="edit-the-topology-in-skype-for-business-server-2015"></a>Modificare la topologia in Skype for Business Server 2015
 
@@ -31,7 +31,7 @@ Lo Strumento di pianificazione visualizza la topologia del sito per il sito sele
 
 - Topologia sito - La pagina attualmente visualizzata con una panoramica visiva della topologia come consigliato.
 
-- Diagramma reticolare perimetrale - La pagina Diagramma reticolare perimetrale è la posizione in cui il progettista esegue la maggior parte delle operazioni nello strumento di pianificazione. Nel diagramma viene visualizzata la configurazione di rete per una topologia consigliata di Skype for Business Server 2015, con voci modificabili per gli indirizzi IP e gli FQDN per server, pool ed hardware e servizi di bilanciamento del carico DNS (Domain Name System).
+- Diagramma reticolare perimetrale - La pagina Diagramma reticolare perimetrale è la posizione in cui il progettista esegue la maggior parte delle operazioni nello strumento di pianificazione. Nel diagramma viene visualizzata la configurazione di rete per una topologia di Skype for Business Server 2015 consigliata, con voci modificabili per gli indirizzi IP e gli FQDN per server, pool ed hardware e servizi di bilanciamento del carico DNS (Domain Name System).
 
 - Edge Admin Report - Il report dell'amministratore di Edge contiene un totale di quattro report:
 
@@ -53,7 +53,7 @@ Lo Strumento di pianificazione visualizza la topologia del sito per il sito sele
 ## <a name="edit-the-network-configuration-diagram"></a>Modificare il diagramma di configurazione di rete
 <a name="Edit_Network_diagram"> </a>
 
-La maggior parte delle attività che un progettista esegue nello strumento di pianificazione di Skype for Business Server 2015 consiste nella definizione delle voci per gli indirizzi IP e i nomi di dominio completi (FQDN) per le voci nel diagramma di rete. Le informazioni immesse in questa pagina vengono riportate nei report e nelle altre informazioni contenute nello Strumento di pianificazione.
+La maggior parte delle operazioni che un progettista esegue nello strumento di pianificazione di Skype for Business Server 2015 consiste nella definizione delle voci per gli indirizzi IP e i nomi di dominio completi (FQDN) per le voci nel diagramma di rete. Le informazioni immesse in questa pagina vengono riportate nei report e nelle altre informazioni contenute nello Strumento di pianificazione.
 
 ![Diagramma di rete dello strumento di pianificazione](../../media/Planning_Tool_Network_Diagram.png)
 

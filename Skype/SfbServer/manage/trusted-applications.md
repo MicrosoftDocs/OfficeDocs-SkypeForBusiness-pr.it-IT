@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server.
-ms.openlocfilehash: b99b1c989437e6f474a97463fc53d4179858346e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2025e8cf51852caeaebd96273c918764c58ce146d87bd4673854514c78b0794f
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103162"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848471"
 ---
 # <a name="manage-trusted-applications-in-skype-for-business-server"></a>Gestire le applicazioni attendibili in Skype for Business Server
 
@@ -30,45 +30,45 @@ Utilizzare questo articolo per informazioni su come configurare un nuovo server 
 
 1.  Accedere al computer in cui è installato Generatore di topologie come membro del gruppo Domain Admins e del gruppo RTCUniversalServerAdmins.
 
-2.  Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server** e quindi Generatore di topologie di Skype for Business **Server.**
+2.  Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server** e quindi fare clic Skype for Business Server Generatore **di topologie.**
 
 3.  Selezionare **Scarica topologia dalla distribuzione esistente** e quindi fare clic su **OK**.
 
-4.  Nella finestra **di dialogo Salva topologia** con nome fare clic sul file del Generatore di topologie che si desidera utilizzare e quindi fare clic su **Salva**.
+4.  Nella finestra **di dialogo Salva topologia** con nome fare clic sul file del Generatore di topologie che si desidera utilizzare e quindi fare clic su **Salva.**
 
 5.  Nel riquadro sinistro fare clic con il pulsante destro del mouse su **Server applicazioni attendibili** e quindi scegliere Nuovo pool di applicazioni **attendibili.**
 
 6.  Immettere il valore di **FQDN pool** per il pool di applicazioni attendibili, specificare se sarà un pool a server singolo o a più server e quindi fare clic su **Avanti**.
 
-7.  Nella pagina **Selezionare l'hop successivo,** nell'elenco, selezionare il pool Front End di Skype for Business Server.
+7.  **Nell'elenco della pagina Selezionare l'hop** successivo selezionare Skype for Business Server pool Front End.
 
 8.  Fare clic su **Fine**.
 
-9.  Selezionare il nodo principale **Skype for Business Server** e quindi scegliere Pubblica topologia dal menu **Azioni.** 
+9.  Selezionare il nodo principale **Skype for Business Server** e quindi scegliere Pubblica topologia dal **menu** **Azioni.**
     
     Il **pool di** applicazioni attendibili dovrebbe essere stato creato correttamente e associato al pool Front End corretto.
 
 
 ## <a name="view-a-list-of-trusted-applications"></a>Visualizzare un elenco di applicazioni attendibili
 
-Puoi usare il Pannello di controllo di Skype for Business Server per visualizzare un elenco delle applicazioni attendibili distribuite nell'ambiente Skype for Business Server. Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server. Questa relazione di trust è riepilogata nell'elenco seguente:
+È possibile utilizzare il Skype for Business Server di controllo per visualizzare un elenco delle applicazioni attendibili distribuite nell'Skype for Business Server locale. Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server. Questa relazione di trust è riepilogata nell'elenco seguente:
 
   - Le applicazioni attendibili non vengono sfidate per l'autenticazione da Skype for Business Server.
 
-  - Le applicazioni attendibili non vengono limitate da Skype for Business Server per le transazioni SIP, le connessioni o le chiamate VoIP (Voice over Internet Protocol) in uscita.
+  - Le applicazioni attendibili non sono limitate da Skype for Business Server per le transazioni SIP, le connessioni o le chiamate VoIP (Voice over Internet Protocol) in uscita.
 
   - Le applicazioni attendibili possono rappresentare qualsiasi utente e possono partecipare a conferenze senza essere inserite negli elenchi dei partecipanti.
 
   - Le applicazioni attendibili sono resilienti e a disponibilità elevata.
 
-Nel Pannello di controllo di Skype for Business Server puoi visualizzare il nome delle applicazioni, il pool in cui vengono eseguite e la porta che usano.
+Nel Pannello Skype for Business Server di controllo è possibile visualizzare il nome delle applicazioni, il pool in cui vengono eseguite e la porta utilizzata.
 
 
 ### <a name="to-view-a-list-of-trusted-applications"></a>Per visualizzare un elenco di applicazioni attendibili
 
 1.  Da un account utente assegnato al ruolo CsServerAdministrator, CsAdministrator, CsHelpDesk o CsViewOnlyAdministrator, accedere a un computer nella distribuzione interna. Per informazioni dettagliate sui ruoli amministrativi predefiniti disponibili in Skype for Business Server, vedere [Role-based access control (RBAC)](../plan-your-deployment/security/role-based-access-control-rbac.md).
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo.
 
 3.  Sulla barra di spostamento sinistra fare clic **su Topologia** e quindi su **Applicazione attendibile.**
 
@@ -84,24 +84,21 @@ Nel Pannello di controllo di Skype for Business Server puoi visualizzare il nome
 
 Per visualizzare tutte le applicazioni attendibili, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     
-        Get-CsConferenceDisclaimer
+   **Get-CsConferenceDisclaimer**
     
    Il comando restituisce informazioni simili a questa, per ciascuna applicazione affidabile:
     
-        Identity               : CN={5dedf4b0-a590-49b3-80cf-f16f914bbef9},CN=Application Contacts,CN=RTC
-                                 Service,CN=Services,CN=Configuration,DC=litware,DC=com
-        RegistrarPool          : 487279971
-        HomeServer             : CN=Lc Services,CN=Microsoft,CN=co1:2,CN=Pools,CN=RTC
-                                 Service,CN=Services,CN=Configuration,DC=litware,DC=com
-        OwnerUrn               : urn:application:helpdesk
-        SipAddress             : sip:RtcApplication-dbf5142f-2bb2-4c4f-9531-b7fea45c5000@litware.com
-        DisplayName            :
-        DisplayNumber          :
-        LineURI                :
-        PrimaryLanguage        : 0
-        SecondaryLanguages     : {}
-        EnterpriseVoiceEnabled : True
-        ExUmEnabled            : False
-        Enabled                : True
+   Identità : CN={5dedf4b0-a590-49b3-80cf-f16f914bbef9},CN=Application Contacts,CN=RTC Service,CN=Services,CN=Configuration,DC=litware,DC=com<br/>
+   RegistrarPool : 487279971<br/>
+   HomeServer : CN=Lc Services,CN=Microsoft,CN=co1:2,CN=Pools,CN=RTC Service,CN=Services,CN=Configuration,DC=litware,DC=com OwnerUrn : urn:application:helpdesk<br/>
+   SipAddress : sip:RtcApplication-dbf5142f-2bb2-4c4f-9531-b7fea45c5000@litware.com<br/>
+   DisplayName :<br/>
+   DisplayNumber :<br/>
+   LineURI :<br/>
+   PrimaryLanguage : 0<br/>
+   SecondaryLanguages : {}<br/>
+   EnterpriseVoiceEnabled : True<br/>
+   ExUmEnabled : False<br/>
+   Enabled : True<br/>
     
    For details, see [Get-CsTrustedApplication](/powershell/module/skype/Get-CsTrustedApplication).

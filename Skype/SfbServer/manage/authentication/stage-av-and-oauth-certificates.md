@@ -1,5 +1,5 @@
 ---
-title: Passaggio dei certificati AV e OAuth in Skype for Business Server con -Roll in Set-CsCertificate
+title: Passaggio dei certificati AV e OAuth in Skype for Business Server usando -Roll in Set-CsCertificate
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,29 +12,29 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 22dec3cc-4b6b-4df2-b269-5b35df4731a7
-description: 'Riepilogo: stage AV e certificati OAuth per Skype for Business Server.'
-ms.openlocfilehash: 87527d4bb51a5c38e0f85f72b299b67f235f2cf8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: stage AV and OAuth certificates for Skype for Business Server.'
+ms.openlocfilehash: f030dfd4a8958fe4efdc20c350b0e3b377da6cf2762604a57eecd3adca3e3430
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54319169"
 ---
-# <a name="stage-av-and-oauth-certificates-in-skype-for-business-server-using--roll-in-set-cscertificate"></a>Passaggio dei certificati AV e OAuth in Skype for Business Server con -Roll in Set-CsCertificate
+# <a name="stage-av-and-oauth-certificates-in-skype-for-business-server-using--roll-in-set-cscertificate"></a>Passaggio dei certificati AV e OAuth in Skype for Business Server usando -Roll in Set-CsCertificate
  
 **Riepilogo:** Stage AV and OAuth certificates for Skype for Business Server.
   
-Le comunicazioni audio/video (A/V) sono un componente chiave di Skype for Business Server. Funzionalità quali la condivisione delle applicazioni e le conferenze audio e video si basano sui certificati assegnati al servizio A/V Edge, in particolare il servizio di autenticazione A/V.
+Le comunicazioni audio/video (A/V) sono un componente chiave della Skype for Business Server. Funzionalità quali la condivisione delle applicazioni e le conferenze audio e video si basano sui certificati assegnati al servizio A/V Edge, in particolare il servizio di autenticazione A/V.
   
 > [!IMPORTANT]
 > Questa nuova funzionalità è progettata per funzionare per il servizio A/V Edge e il certificato OAuthTokenIssuer. È possibile eseguire il provisioning di altri tipi di certificato insieme al servizio A/V Edge e al tipo di certificato OAuth, ma non trarranno vantaggio dal comportamento di coesistenza del certificato del servizio A/V Edge.
   
 I cmdlet di PowerShell di Skype for Business Server Management Shell utilizzati per gestire i certificati di Skype for Business Server fanno riferimento al certificato del servizio A/V Edge come tipo di certificato AudioVideoAuthentication e al certificato OAuthServer come typeOAuthTokenIssuer. Per il resto di questo argomento e per identificare in modo univoco i certificati, verranno indicati dallo stesso tipo di identificatore, AudioVideoAuthentication eOAuthTokenIssuer.
   
-Il servizio di autenticazione A/V è responsabile dell'emissione di token utilizzati dai client e da altri consumer A/V. I token vengono generati dagli attributi nel certificato e, alla scadenza del certificato, si verifica la perdita di connessione e il requisito di ricongiungersi a un nuovo token generato dal nuovo certificato. Una nuova funzionalità di Skype for Business Server allevierà questo problema: la possibilità di impostare un nuovo certificato prima della scadenza del vecchio e consentire a entrambi i certificati di continuare a funzionare per un periodo di tempo. Questa funzionalità usa la funzionalità aggiornata nel cmdlet Set-CsCertificate Skype for Business Server Management Shell. Il nuovo parametro -Roll, con il parametro esistente -EffectiveDate, inserirà il nuovo certificato AudioVideoAuthentication nell'archivio certificati. Il certificato AudioVideoAuthentication precedente rimarrà ancora valido per i token emessi. A partire dall'inserimento del nuovo certificato AudioVideoAuthentication, si verificherà la serie di eventi seguente:
+Il servizio di autenticazione A/V è responsabile dell'emissione di token utilizzati dai client e da altri consumer A/V. I token vengono generati dagli attributi nel certificato e, alla scadenza del certificato, si verifica la perdita di connessione e il requisito di ricongiungersi a un nuovo token generato dal nuovo certificato. Una nuova funzionalità di Skype for Business Server allevierà questo problema: la possibilità di impostare un nuovo certificato prima della scadenza del vecchio e consentire a entrambi i certificati di continuare a funzionare per un periodo di tempo. Questa funzionalità utilizza la funzionalità aggiornata nel cmdlet Set-CsCertificate Skype for Business Server Management Shell. Il nuovo parametro -Roll, con il parametro esistente -EffectiveDate, inserirà il nuovo certificato AudioVideoAuthentication nell'archivio certificati. Il certificato AudioVideoAuthentication precedente rimarrà ancora valido per i token emessi. A partire dall'inserimento del nuovo certificato AudioVideoAuthentication, si verificherà la serie di eventi seguente:
   
 > [!TIP]
-> Utilizzando i cmdlet di Skype for Business Server Management Shell per la gestione dei certificati, è possibile richiedere certificati separati e distinti per ogni scopo nel server perimetrale. L'uso della Configurazione guidata certificati nella Distribuzione guidata di Skype for  Business Server consente di creare certificati, ma in genere è del tipo predefinito che consente di utilizzare tutti i certificati per il server perimetrale in un singolo certificato. Se si intende utilizzare la funzionalità di certificati in sequenza, la procedura consigliata consiste nel disassociare il certificato AudioVideoAuthentication dagli scopi degli altri certificati. È possibile effettuare il provisioning e gestire temporaneamente un certificato di tipo predefinito, ma solo la parte AudioVideoAuthentication del certificato combinato sfrutterà i vantaggi della gestione temporanea. Un utente coinvolto in una conversazione di messaggistica istantanea alla scadenza del certificato dovrà disconnettersi ed eseguire di nuovo l'accesso per utilizzare il nuovo certificato associato al servizio Access Edge. Un comportamento simile si verificherà per un utente coinvolto in una conferenza Web utilizzando il servizio Web Conferencing Edge. Il certificato OAuthTokenIssuer è un tipo specifico condiviso in tutti i server. È possibile creare e gestire il certificato in un'unica posizione e il certificato viene archiviato nell'archivio di gestione centrale per tutti gli altri server.
+> Utilizzando i cmdlet Skype for Business Server Management Shell per la gestione dei certificati, è possibile richiedere certificati separati e distinti per ogni scopo nel server perimetrale. L'utilizzo della Configurazione guidata certificati nella Distribuzione guidata di Skype for Business Server consente  di creare certificati, ma è in genere del tipo predefinito che consente di utilizzare tutti i certificati per il server perimetrale in un singolo certificato. Se si intende utilizzare la funzionalità di certificati in sequenza, la procedura consigliata consiste nel disassociare il certificato AudioVideoAuthentication dagli scopi degli altri certificati. È possibile effettuare il provisioning e gestire temporaneamente un certificato di tipo predefinito, ma solo la parte AudioVideoAuthentication del certificato combinato sfrutterà i vantaggi della gestione temporanea. Un utente coinvolto in una conversazione di messaggistica istantanea alla scadenza del certificato dovrà disconnettersi ed eseguire di nuovo l'accesso per utilizzare il nuovo certificato associato al servizio Access Edge. Un comportamento simile si verificherà per un utente coinvolto in una conferenza Web utilizzando il servizio Web Conferencing Edge. Il certificato OAuthTokenIssuer è un tipo specifico condiviso in tutti i server. È possibile creare e gestire il certificato in un'unica posizione e il certificato viene archiviato nell'archivio di gestione centrale per tutti gli altri server.
   
 Per comprendere appieno le opzioni e i requisiti relativi all'uso del cmdlet Set-CsCertificate e alla gestione temporanea di certificati tramite tale cmdlet prima della scadenza del certificato corrente, sono necessarie altre informazioni. Il parametro -Roll è importante, ma essenzialmente uno scopo singolo. Se lo si definisce come parametro, si sta informando Set-CsCertificate che verranno fornite informazioni sul certificato interessato definito da -Type (ad esempio AudioVideoAuthentication e OAuthTokenIssuer), quando il certificato diventerà effettivo definito da -EffectiveDate.
   
@@ -87,7 +87,7 @@ Per comprendere meglio il processo utilizzato da Set-CsCertificate, -Roll e -Eff
 |**Callout**|**Fase**|
 |:-----|:-----|
 |1  <br/> |Inizio: 22/07/2015 12:00:00  <br/> Il certificato AudioVideoAuthentication corrente scadrà alle 14.00 del 22/07/2015. Questo è determinato dall'indicatore di data e ora di scadenza nel certificato. Pianificare la sostituzione e il rollover del certificato per una sovrapposizione di 8 ore (durata token predefinita) prima che il certificato esistente raggiunga la scadenza. Il lead time 2:00:00 am viene utilizzato in questo esempio per consentire all'amministratore di inserire ed eseguire il provisioning dei nuovi certificati prima del tempo di validità delle 6:00:00.  <br/> |
-|2   <br/> |22/07/2015 2:00:00 - 22/07/2015 5:59:59  <br/> Impostare i certificati nei server perimetrali con tempo effettivo di 6:00:00 (il lead time di 4 ore è per questo esempio, ma può essere più lungo) utilizzando Set-CsCertificate \<certificate usage type\> -Type -Thumbprint \<thumbprint of new certificate\> -Roll -EffectiveDate \<datetime string of the effective time for new certificate\>  <br/> |
+|2  <br/> |22/07/2015 2:00:00 - 22/07/2015 5:59:59  <br/> Impostare i certificati nei server perimetrali con tempo effettivo di 6:00:00 (il lead time di 4 ore è per questo esempio, ma può essere più lungo) utilizzando Set-CsCertificate \<certificate usage type\> -Type -Thumbprint \<thumbprint of new certificate\> -Roll -EffectiveDate \<datetime string of the effective time for new certificate\>  <br/> |
 |3   <br/> |22/07/2015 06.00 - 22/07/2015 14.00  <br/> Per convalidare i token, il nuovo certificato viene tentato per primo e se il nuovo certificato non riesce a convalidare il token, viene tentato il vecchio certificato. Questo processo viene usato per tutti i token durante il periodo di sovrapposizione di 8 ore (durata dei token predefinita).  <br/> |
 |4   <br/> |Fine: 22/07/2015 14:00:01  <br/> Il vecchio certificato è scaduto e il nuovo certificato ha preso il controllo. Il vecchio certificato può essere rimosso in modo sicuro con Remove-CsCertificate -Type \<certificate usage type\> -Previous  <br/> |
    

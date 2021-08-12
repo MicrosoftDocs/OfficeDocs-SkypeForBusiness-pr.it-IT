@@ -1,5 +1,5 @@
 ---
-title: Instradamento diretto di Sistema telefonico
+title: 'Teams routing diretto del sistema telefonico: definizioni e standard RFC'
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -14,17 +14,17 @@ ms.reviewer: nmurav
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Protocolli di routing diretto
+description: Come Telefono Microsoft system direct routing implementa i protocolli standard RFC.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 88fb4459192ad9ff5af8702878d1cbf6a59d8e9d
-ms.sourcegitcommit: 6227667c9941cc3289029099b7b6781581f16ea7
+ms.openlocfilehash: 19e3b459cef954bc432f97c93c90eaa92091d27bb17c77cecc17e8699e83e65b
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "52569204"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848061"
 ---
-# <a name="direct-routing---definitions-and-rfc-standards"></a>Routing diretto - Definizioni e standard RFC
+# <a name="direct-routing---definitions-and-rfc-standards"></a>Routing diretto : definizioni e standard RFC
 
 Questo articolo descrive come Telefono Microsoft system direct routing implementa i protocolli standard RFC. Questo articolo è rivolto agli amministratori vocali responsabili della configurazione della connessione tra il session border controller (SBC) locale e il servizio proxy SIP (Session Initiation Protocol).
 
@@ -35,7 +35,7 @@ Il client SBC si interfaccia con i componenti seguenti nel back-end Microsoft Te
 - **Processori multimediali per** supporti multimediali. Questo è il componente di Routing diretto rivolto a Internet che gestisce il traffico multimediale. Questo componente usa i protocolli SRTP e SRTCP.
 
 
-Per altre informazioni sul routing diretto, vedere Sistema telefonico [Routing diretto](direct-routing-landing-page.md).
+Per altre informazioni sul routing diretto, vedere Sistema telefonico [routing diretto](direct-routing-landing-page.md).
 
 Per altre informazioni sull'implementazione del protocollo SIP da parte di Routing diretto, vedere [Routing diretto - Protocollo SIP.](direct-routing-protocols-sip.md)
 
@@ -48,21 +48,21 @@ Il routing diretto è conforme agli standard RFC.  Anche il servizio SBC conness
 Gli standard seguenti sono applicabili ai dispositivi che supportano solo la modalità di bypass non multimediale:
 
 - [RFC 3261 SIP](https://tools.ietf.org/html/rfc3261): Session Initiation Protocol
-- [RFC 3325](https://www.ietf.org/rfc/rfc3325). Estensione privata al protocollo di avvio sessione per l'identità asserta all'interno di reti attendibili: sezioni sulla gestione dell'intestazione P-Asserted-Identity. Il routing diretto invia P-Asserted-Identity con intestazioni ID privacy. 
+- [RFC 3325](https://www.ietf.org/rfc/rfc3325). Estensione privata del protocollo di avvio sessione per l'identità asserta all'interno di reti attendibili: sezioni sulla gestione dell'intestazione P-Asserted-Identity. Il routing diretto invia P-Asserted-Identity con intestazioni ID privacy. 
 - [RFC 4244](https://www.ietf.org/rfc/rfc4244.txt) Estensione del protocollo SIP (Session Initiation Protocol) per le informazioni sulla cronologia necessarie. Per altre informazioni, vedere anche: Descrizione del protocollo SIP di routing.
 - [RFC 3892](https://www.ietf.org/rfc/rfc3892.txt) Meccanismo di Referred-By Session Initiation Protocol
-- [RFC 3891](https://www.ietf.org/rfc/rfc3891.txt) Intestazione SIP (Session Initiation Protocol) "Sostituisce" 
+- [RFC 3891](https://www.ietf.org/rfc/rfc3891.txt) Intestazione sip (Session Initiation Protocol) "Sostituisce" 
 - [RFC 6337](https://tools.ietf.org/html/rfc6337) Utilizzo sip (Session Initiation Protocol) del modello di offerta/risposta.
   Vedere la sezione "Deviazioni da RFC".
 - [RFC 3711 e](https://tools.ietf.org/html/rfc3711) [RFC 4771](https://tools.ietf.org/html/rfc4771). Proteggere il traffico RTP usando SRTP. SBC deve essere in grado di stabilire le chiavi usando SDES. 
-- [RFC 8035](https://www.ietf.org/rfc/rfc8035.txt) Chiarimenti di offerta/risposta SDP (Session Description Protocol) per RTP/RTCP Multiplexing
+- [RFC 8035](https://www.ietf.org/rfc/rfc8035.txt) Chiarimenti dell'offerta/risposta SDP (Session Description Protocol) per rtp/RTCP Multiplexing
 
 ### <a name="standards-applicable-to-devices-that-support-media-bypass-mode"></a>Standard applicabili ai dispositivi che supportano la modalità bypass multimediale
 
 Oltre agli standard elencati come applicabili alla modalità non bypass, per la modalità di bypass multimediale vengono usati gli standard seguenti:
 
 - [RFC 5245 Interactive Connectivity Establishment (ICE) per bypass multimediale](https://tools.ietf.org/html/rfc5245).  SBC deve supportare quanto segue:
-  - ICE Lite : i clienti Teams clienti ICE completi
+  - ICE Lite : i clienti Teams clienti ICE sono clienti ICE completi
   - [ICE Riavvia](https://tools.ietf.org/html/rfc5245#section-9.1.1.1). Per altre informazioni sul caso di utilizzo dei riavvii ICE, vedere Riavvio ICE: chiamata bypass multimediale trasferita a un endpoint che non supporta il bypass multimediale   
 - [RFC RFC 5589 Session Initiation Protocol (SIP) Call Control – Transfer](https://tools.ietf.org/html/rfc5589). 
 - [RFC 3960 Early Media and Ringing Tone Generation in the Session Initiation Protocol (SIP)](https://tools.ietf.org/html/rfc3960), vedere le sezioni 3.1, Forking e 3.2, Ringing Tone Generation 
@@ -71,7 +71,7 @@ Oltre agli standard elencati come applicabili alla modalità non bypass, per la 
 
 ### <a name="standards-applicable-to-support-conveying-location-information-to-e911-providers"></a>Standard applicabili per supportare la trasmissione di informazioni sulla posizione ai provider E911
 
-- [RFC 6442, Informazioni sulla posizione per il protocollo di avvio della sessione](https://tools.ietf.org/html/rfc6442)
+- [RFC 6442, Comunicazione della posizione per il protocollo di avvio della sessione](https://tools.ietf.org/html/rfc6442)
 
 ### <a name="deviations-from-the-rfcs"></a>Deviazioni dalla RFC
 
@@ -88,7 +88,7 @@ Esistono due modalità operative per il routing diretto:
 
 - **Senza bypass multimediale** in cui tutto il traffico RTP fluisce tra il client Teams, i processori multimediali e sBC.  
 
-- **Con bypass multimediale** in cui tutti i supporti RTP fluire tra gli endpoint Teams e SBC. 
+- **Con bypass multimediale** in cui tutti i supporti RTP fluire tra Teams endpoint e SBC. 
 
 Si noti che il traffico SIP fluisce sempre tramite il proxy SIP. 
 

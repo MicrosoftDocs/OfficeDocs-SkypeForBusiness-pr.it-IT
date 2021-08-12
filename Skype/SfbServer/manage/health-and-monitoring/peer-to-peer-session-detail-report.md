@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6be1d676-68f7-4a53-a72a-de73296c5571
 description: 'Riepilogo: informazioni sul Rapporto dettagli sessione peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: 4dfa2b87b1fbba72282b52fa2ca58ca0f1e70630
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 14df5ae82706a719086c31a3c8582009ed48d85b825057ab49ce6e92fa258116
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54286805"
 ---
 # <a name="peer-to-peer-session-detail-report-in-skype-for-business-server"></a>Rapporto dettagli sessione peer-to-peer in Skype for Business Server
  

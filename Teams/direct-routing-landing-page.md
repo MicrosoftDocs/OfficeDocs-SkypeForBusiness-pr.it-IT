@@ -1,5 +1,5 @@
 ---
-title: Instradamento diretto di Sistema telefonico
+title: Telefono routing diretto del sistema in Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -15,24 +15,24 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 - ms.teamsadmincenter.directrouting.overview
-description: Altre informazioni sul routing diretto, ad esempio la configurazione, le decisioni di base necessarie per la distribuzione e le considerazioni sul routing vocale.
+description: Informazioni sulla configurazione del routing diretto, sulle decisioni di base necessarie per la distribuzione e sulle considerazioni relative al routing vocale.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6cfa0f6aecf2dfeb708d51ff6ebd98f13a36167125f295329f3e37b2e39c0daf
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 55676d855d3e15c3f767203da981a4fae241f3128a270f5656d770a229f00059
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280909"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848071"
 ---
-# <a name="phone-system-direct-routing"></a>Instradamento diretto di Sistema telefonico
+# <a name="phone-system-direct-routing"></a>Telefono routing diretto del sistema
 
-L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). È possibile che sia stata distribuita [una conferenza & riunioni.](deploy-meetings-microsoft-teams-landing-page.md) Ora si è pronti per aggiungere carichi di lavoro vocali nel cloud e si è deciso di usare un gestore di telefonia personalizzato per la connettività PSTN (Public Switched Telephone Network) usando Sistema telefonico Routing diretto. Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+L'[Introduzione](get-started-with-teams-quick-start.md) è stata completata. Si è implementato Teams nell'organizzazione, con [chat, team, canali e app](deploy-chat-teams-channels-microsoft-teams-landing-page.md). È possibile che sia stata distribuita [la funzionalità Riunioni & conferenza](deploy-meetings-microsoft-teams-landing-page.md). Ora si è pronti per aggiungere carichi di lavoro vocali nel cloud e si è deciso di usare il proprio gestore di telefonia per la connettività PSTN (Public Switched Telephone Network) usando Sistema telefonico Routing diretto. Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
 
-Questo articolo descrive le decisioni di base relative alla distribuzione per il routing diretto e altre considerazioni che è possibile prendere in considerazione, in base alle esigenze dell'organizzazione. È anche consigliabile leggere [Cloud Voice in Microsoft Teams](cloud-voice-landing-page.md) per altre informazioni sulle offerte vocali cloud di Microsoft.
+Questo articolo descrive le decisioni di base relative alla distribuzione per il routing diretto e altre considerazioni che è possibile prendere in considerazione, in base alle esigenze dell'organizzazione. È consigliabile leggere [anche Cloud Voice in Microsoft Teams](cloud-voice-landing-page.md) per altre informazioni sulle offerte vocali cloud di Microsoft.
 
 ## <a name="learn-more-about-direct-routing"></a>Altre informazioni sul routing diretto
 
@@ -82,11 +82,11 @@ Si hanno più tenant? | Per altre informazioni, vedere [Configurare un session b
 
 ### <a name="ensure-incoming-calls-land-in-the-teams-client-using-teamsupgradepolicy"></a>Assicurarsi che le chiamate in arrivo atterrano nel client Teams tramite TeamsUpgradePolicy
 
-Il routing diretto è supportato solo con Microsoft Teams. Per ricevere chiamate PSTN tramite routing diretto, è necessario configurare TeamsUpgradePolicy per assicurarsi che le chiamate in arrivo siano ricevute Teams. Gli utenti devono essere in Teams modalità Solo utenti, che è possibile eseguire assegnando loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. 
+Il routing diretto è supportato solo con Microsoft Teams. Per ricevere chiamate PSTN tramite Routing diretto, è necessario configurare TeamsUpgradePolicy per assicurarsi che le chiamate in arrivo siano ricevute Teams. Gli utenti devono essere in Teams modalità Solo utenti, che è possibile eseguire assegnando loro l'istanza "UpgradeToTeams" di TeamsUpgradePolicy. 
 
 |Chiedersi|Azione |
 |:------------|:-------|
-|Cosa significa Teams modalità Solo testo? | Per altre informazioni, vedere Indicazioni sulla migrazione e [l'interoperabilità](./migration-interop-guidance-for-teams-with-skype.md)per le organizzazioni che usano Teams insieme a Skype for Business .|
+|Cosa significa Teams modalità Solo clic? | Per altre informazioni, vedere Indicazioni sulla migrazione e [l'interoperabilità](./migration-interop-guidance-for-teams-with-skype.md)per le organizzazioni che usano Teams insieme a Skype for Business .|
 |||
 
 ## <a name="additional-deployment-considerations"></a>Considerazioni aggiuntive sulla distribuzione
@@ -96,5 +96,5 @@ In base alle esigenze e alla configurazione dell'organizzazione, è consigliabil
 | Chiedersi| Azione |
 | :------------|:-------|
 | Si ha una distribuzione di Skype for Business Server con la connettività ibrida configurata? |  Per informazioni sul provisioning e la gestione degli account utente in un ambiente ibrido, vedere Account utente in un ambiente ibrido [con connettività PSTN.](direct-routing-user-accounts-in-a-hybrid-environment.md)| 
-| Si esegue la migrazione a Routing diretto da un piano per chiamate o da un Skype for Business locale? | Per altre informazioni sulla migrazione a Routing diretto da un ambiente esistente, vedere [Migrazione al routing diretto](direct-routing-migrating.md). |
+| Si esegue la migrazione a Routing diretto da un piano per chiamate o da un Skype for Business locale? | Per altre informazioni sulla migrazione a Routing diretto da un ambiente esistente, vedere [Migrazione al routing diretto.](direct-routing-migrating.md) |
 |||

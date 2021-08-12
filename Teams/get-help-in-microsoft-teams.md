@@ -17,17 +17,16 @@ description: Informazioni su argomenti della Guida, video, note sulla versione e
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3cf562ae3ead64d263681cb29bc97264af1e319bd5be36610468182c721a1b54
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 50026fba70ae817eb8325d52c3bcf1bd0153e2c803ee7d7c76935570c6e45420
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54339654"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848371"
 ---
-<a name="get-help-in-microsoft-teams"></a>Ottenere assistenza in Microsoft Teams
-============================================
+# <a name="get-help-in-microsoft-teams"></a>Ottenere assistenza in Microsoft Teams
 
-Il pulsante ? in Microsoft Teams è dove gli utenti e i campioni possono trovare tutta l'assistenza di cui hanno bisogno durante l'uso di Teams.
+Il pulsante ? in Microsoft Teams è dove gli utenti e i campioni possono trovare tutta l'assistenza necessaria durante l'uso di Teams.
 
 Teams fornisce il supporto della lingua localizzata per il contenuto della Guida. Per l'elenco più attuale delle lingue supportate, vedere Microsoft Teams [lingue supportate per il contenuto della Guida.](https://support.office.com/article/Microsoft-Teams-supported-languages-for-help-content-9c71d10a-0c5c-49d4-b6d7-0c58cdfdf4cf)
 
@@ -38,6 +37,6 @@ Teams fornisce il supporto della lingua localizzata per il contenuto della Guida
  - **Novità** - 
     Note periodiche sulla versione per gli utenti e i proprietari del team sulle caratteristiche Teams aggiornate.
 
- - **Condividi un'idea** - Vogliamo sempre sapere come migliorare Teams. Questa opzione consente di accedere al forum di feedback sui prodotti in cui è possibile inviare nuove richieste di funzionalità o votare quelle esistenti. Queste informazioni vengono costantemente esaminate durante la pianificazione di nuove funzionalità. 
+ - **Condividi un'idea** - Vogliamo sempre sapere come migliorare la Teams. Questa opzione consente di accedere al forum di feedback sui prodotti in cui è possibile inviare nuove richieste di funzionalità o votare quelle esistenti. Queste informazioni vengono costantemente esaminate durante la pianificazione di nuove funzionalità. 
 
 

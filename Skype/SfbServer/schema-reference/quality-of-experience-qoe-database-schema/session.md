@@ -1,5 +1,5 @@
 ---
-title: Tabella Session
+title: Tabella session
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,39 +13,39 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 7f05529c-794d-41ed-bca4-2e85b87b2dec
 description: Ogni record rappresenta una sessione che include audio o audio e video. Contiene informazioni generali sulla sessione. Una sessione è definita come una finestra di dialogo SIP (Session Initiation Protocol) audio o video tra due endpoint.
-ms.openlocfilehash: cdf639e7360248e02378c66eb68a60d49acb9749
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 749f151def046abdb5169b39ccbd81ea5f07f5d4ee3d1c971ac112a2d4b90cce
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49802676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54340032"
 ---
-# <a name="session-table"></a>Tabella Session
+# <a name="session-table"></a>Tabella session
  
 Ogni record rappresenta una sessione che include audio o audio e video. Contiene informazioni generali sulla sessione. Una sessione è definita come una finestra di dialogo SIP (Session Initiation Protocol) audio o video tra due endpoint.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
-|**ConferenceDateTime** <br/> |datetime  <br/> |Principale  <br/> |Riferimento dalla tabella [Dialog.](dialog.md)  <br/> |
-|**SessionSeq** <br/> |int  <br/> |Principale  <br/> |Riferimento dalla tabella [Dialog.](dialog.md)  <br/> |
-|**ConferenceKey** <br/> |int  <br/> |Esterna  <br/> |Chiave conferenza. Riferimento dalla [tabella Conferenze.](conference.md)  <br/> |
-|**CorrelationKey** <br/> |int  <br/> |Esterna  <br/> |Chiave di correlazione. Riferimento dalla [tabella SessionCorrelation.](sessioncorrelation.md)  <br/> |
-|**DialogCategory** <br/> |bit  <br/> | <br/> |Categoria finestra di dialogo; 0 è la versione da Skype for Business Server a Mediation Server; 1 è il numero di gateway da Mediation Server a PSTN.  <br/> |
+|**ConferenceDateTime** <br/> |datetime  <br/> |Principale  <br/> |Riferimento dalla [tabella Dialog](dialog.md).  <br/> |
+|**SessionSeq** <br/> |int  <br/> |Principale  <br/> |Riferimento dalla [tabella Dialog](dialog.md).  <br/> |
+|**ConferenceKey** <br/> |int  <br/> |Foreign  <br/> |Tasto conferenza. Riferimento dalla [tabella Conferenze](conference.md).  <br/> |
+|**CorrelationKey** <br/> |int  <br/> |Foreign  <br/> |Chiave di correlazione. Riferimento dalla [tabella SessionCorrelation](sessioncorrelation.md).  <br/> |
+|**DialogCategory** <br/> |bit  <br/> | <br/> |Categoria finestra di dialogo; 0 è Skype for Business Server a Mediation Server. 1 è il passaggio da Mediation Server a gateway PSTN.  <br/> |
 |**MediationServerBypassFlag** <br/> |bit  <br/> ||Flag che indica se la chiamata è stata o meno ignorata.  <br/> |
-|**MediaBypassWarningFlag** <br/> |int  <br/> ||Questo campo, se presente, indica il motivo per cui una chiamata non è stata ignorata anche in caso di corrispondenza degli ID bypass. Per Skype for Business Server, è definito un solo valore.  <br/> 0x0001 - ID bypass sconosciuto per la scheda di rete predefinita.  <br/> |
+|**MediaBypassWarningFlag** <br/> |int  <br/> ||Questo campo, se presente, indica il motivo per cui una chiamata non è stata ignorata anche in caso di corrispondenza degli ID bypass. Ad Skype for Business Server viene definito un solo valore.  <br/> 0x0001 - ID bypass sconosciuto per la scheda di rete predefinita.  <br/> |
 |**StartTime** <br/> |datetime  <br/> | <br/> |Ora di inizio della chiamata.  <br/> |
 |**EndTime** <br/> |datetime  <br/> | <br/> |Ora di fine della chiamata.  <br/> |
-|**CallerPool** <br/> |int  <br/> |Esterna  <br/> |Pool del chiamante. Riferimento dalla tabella [Pool.](pool.md)  <br/> |
-|**CalleePool** <br/> |int  <br/> |Esterna  <br/> |Pool del destinatario della chiamata. Riferimento dalla tabella [Pool.](pool.md)  <br/> |
-|**CalleePAI** <br/> |int  <br/> |Esterna  <br/> |URI SIP nell'identità p-asserted SIP (PAI) dell'endpoint di ricezione. Riferimento dalla [tabella User.](user-0.md)  <br/> |
-|**CallerURI** <br/> |int  <br/> |Esterna  <br/> |URI del chiamante. Riferimento dalla [tabella User.](user-0.md)  <br/> |
-|**CallerEndpoint** <br/> |int  <br/> |Esterna  <br/> |Endpoint del chiamante. Riferimento dalla [tabella Endpoint.](endpoint.md)  <br/> |
-|**CallerUserAgent** <br/> |bit  <br/> |Esterna  <br/> |Agente utente del chiamante. Riferimento dalla [tabella UserAgent.](useragent.md)  <br/> |
-|**CallPriority** <br/> |smallint  <br/> ||Priorità della chiamata.  <br/> |
-|**ClassifiedPoorCall** <br/> |bit  <br/> ||Questa colonna è deprecata e non viene utilizzata in Skype for Business Server. Queste informazioni vengono invece riportate in base a una linea multimediale di base. Per altre informazioni, fai riferimento alla tabella [MediaLine.](medialine-0.md) <br/> |
-|**CallerPAI** <br/> |int  <br/> |Esterna  <br/> |P-Asserted-Identity dell'utente che ha effettuato la chiamata. La pai (P-Asserted-Identity) viene utilizzata per comunicare la vera identità dell'utente che ha effettuato la chiamata.  <br/> |
-|**CalleeEndpoint** <br/> |int  <br/> |Esterna  <br/> |Endpoint che ha ricevuto la chiamata.  <br/> |
-|**CalleeUserAgent** <br/> |int  <br/> |Esterna  <br/> |Agente utente utilizzato dall'utente che ha ricevuto la chiamata. Gli agenti utente rappresentano il dispositivo endpoint client.  <br/> |
-|**CalleeUri** <br/> |int  <br/> |Esterna  <br/> |URI SIP dell'utente che ha ricevuto la chiamata.  <br/> |
+|**CallerPool** <br/> |int  <br/> |Foreign  <br/> |Pool del chiamante. Riferimento dalla [tabella Pool](pool.md).  <br/> |
+|**CalleePool** <br/> |int  <br/> |Foreign  <br/> |Pool del destinatario della chiamata. Riferimento dalla [tabella Pool](pool.md).  <br/> |
+|**CalleePAI** <br/> |int  <br/> |Foreign  <br/> |URI SIP nell'identità p-asserted SIP (PAI) dell'endpoint di ricezione. Riferimento dalla [tabella User](user-0.md).  <br/> |
+|**CallerURI** <br/> |int  <br/> |Foreign  <br/> |URI del chiamante. Riferimento dalla [tabella User](user-0.md).  <br/> |
+|**CallerEndpoint** <br/> |int  <br/> |Foreign  <br/> |Endpoint del chiamante. Riferimento dalla [tabella Endpoint](endpoint.md).  <br/> |
+|**CallerUserAgent** <br/> |bit  <br/> |Foreign  <br/> |Agente utente del chiamante. Riferimento dalla [tabella UserAgent](useragent.md).  <br/> |
+|**CallPriority** <br/> |smallint  <br/> ||Priorità di questa chiamata.  <br/> |
+|**ClassifiedPoorCall** <br/> |bit  <br/> ||Questa colonna è deprecata e non viene utilizzata in Skype for Business Server. Queste informazioni vengono invece riportate in base a una linea di base multimediale. Per ulteriori informazioni, fare riferimento alla tabella [MediaLine.](medialine-0.md) <br/> |
+|**CallerPAI** <br/> |int  <br/> |Foreign  <br/> |P-Asserted-Identity dell'utente che ha effettuato la chiamata. L'identità P-Asserted-Identity (PAI) viene utilizzata per comunicare la vera identità dell'utente che ha effettuato la chiamata.  <br/> |
+|**CalleeEndpoint** <br/> |int  <br/> |Foreign  <br/> |Endpoint che ha ricevuto la chiamata.  <br/> |
+|**CalleeUserAgent** <br/> |int  <br/> |Foreign  <br/> |Agente utente impiegato dall'utente che ha ricevuto la chiamata. Gli agenti utente rappresentano il dispositivo endpoint client.  <br/> |
+|**CalleeUri** <br/> |int  <br/> |Foreign  <br/> |URI SIP dell'utente che ha ricevuto la chiamata.  <br/> |
    
 

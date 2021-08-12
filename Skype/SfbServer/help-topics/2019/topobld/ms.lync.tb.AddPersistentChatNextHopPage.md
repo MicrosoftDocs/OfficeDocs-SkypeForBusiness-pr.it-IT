@@ -15,14 +15,14 @@ localization_priority: Normal
 ms.assetid: a47c824d-a76a-413b-9335-bfe5ffef15db
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare questa pagina per definire l'hop successivo dal server Chat persistente nella distribuzione. Per ulteriori informazioni su come distribuire il server Chat persistente, vedere Deploy Persistent Chat Server in Skype for Business Server 2015.
-ms.openlocfilehash: 5222c3d1c40680958d8d0a202bb2d03e2c38350e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 581efa9b845e256f41c960d0f86963a2b0815dee343fb2981971dc68ca53c462
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51115396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54340108"
 ---
 # <a name="add-persistent-chat-next-hop-page"></a>Pagina Aggiungere hop successivo di Chat persistente
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](/MicrosoftTeams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.

@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c0f44352-fb4a-45d3-85b0-a4320d4b8339
 description: Informazioni su come abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server.
-ms.openlocfilehash: 510ebe65e60b9ea12d2f368b0e2d33c705b8d0d6
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ba9045f0e161b4056142fc69528a4f1e7c01a11637c1bff42ec7cc14fe7610a3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49801946"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54294863"
 ---
 # <a name="enable-or-disable-offline-instant-messaging-im-in-skype-for-business-server"></a>Abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server
  
@@ -25,16 +25,16 @@ Informazioni su come abilitare o disabilitare la messaggistica istantanea offlin
   
 ## <a name="enable-offline-instant-messaging-im-in-skype-for-business-server"></a>Abilitare la messaggistica istantanea offline in Skype for Business Server
 
-La messaggistica istantanea offline è una funzionalità sul lato client incorporata nel client Skype for Business (2016 C2R build 16.0.6701.1000 o successiva) che sfrutta Servizi Web Exchange (EWS) per inviare messaggi dal client Skype for Business alla cassetta postale di Exchange di un utente. La messaggistica istantanea offline utilizza Servizi Web Exchange (EWS) per inviare messaggi offline dal client Skype for Business alla cassetta postale del destinatario. EWS deve essere disponibile per il client Skype for Business per l'invio dei messaggi offline. Per ulteriori informazioni sulla pianificazione della messaggistica istantanea e della presenza, vedere Pianificare la messaggistica istantanea e [la presenza in Skype for Business Server.](../../plan-your-deployment/instant-messaging-and-presence.md)
+La messaggistica istantanea offline è una funzionalità sul lato client incorporata nel client Skype for Business (2016 C2R build 16.0.6701.1000 o versione successiva) che sfrutta i servizi Web Exchange (EWS) per inviare messaggi dal client Skype for Business alla cassetta postale Exchange di un utente. La messaggistica istantanea offline Exchange Web Services (EWS) per inviare messaggi offline dal client Skype for Business alla cassetta postale del destinatario. EWS deve essere disponibile per il client Skype for Business per l'invio dei messaggi offline. Per ulteriori informazioni sulla pianificazione della messaggistica istantanea e della [presenza,](../../plan-your-deployment/instant-messaging-and-presence.md)vedere Plan for instant messaging and presence in Skype for Business Server .
   
 > [!NOTE]
 > Se la cassetta postale dell'utente è ospitata in Exchange locale, è necessario il client Skype for Business (2016 C2R build 16.0.6920.1000) 
   
 ### <a name="to-enable-or-disable-offline-im-in-skype-for-business-server"></a>Per abilitare o disabilitare la messaggistica istantanea offline in Skype for Business Server
 
-1. Aprire Skype for Business Server Management Shell.
+1. Aprire la Skype for Business Server Management Shell.
     
-2. Eseguire il seguente comando per abilitare la messaggistica istantanea offline.
+2. Eseguire il comando seguente per abilitare la messaggistica istantanea offline.
     
    ```powershell
    Set-CsImConfiguration -EnableOfflineIM $True
@@ -43,7 +43,7 @@ La messaggistica istantanea offline è una funzionalità sul lato client incorpo
     > [!NOTE]
     > In Skype for Business Server 2015 CU3, l'opzione EnableOfflineIM è impostata su $True per impostazione predefinita. Per disabilitare, impostare questo valore su $False. 
   
-3. Eseguire il seguente comando per verificare che sia impostata la possibilità di archiviare messaggi istantanei offline.
+3. Eseguire il comando seguente per verificare che la possibilità di archiviare messaggi istantanei offline sia impostata.
     
    ```powershell
    Get-CsImConfiguration
@@ -53,17 +53,17 @@ La messaggistica istantanea offline è una funzionalità sul lato client incorpo
 
 La messaggistica istantanea offline non sarà disponibile per i mittenti se dispone di un criterio client che disabilita il salvataggio automatico dei messaggi offline nella cartella della cronologia conversazioni (EnableIMAutoArchiving = $false). Non esiste alcun meccanismo per verificare se il destinatario è in grado di ricevere messaggi offline.
   
-Per i messaggi offline inviati all'interno della stessa organizzazione, verranno ricevuti come messaggi di posta elettronica con la classe messaggio IM.Note.MissedConversation e verranno inclusi nella cartella Conversazione senza risposta di **Outlook,** nonché nella cronologia delle conversazioni che verrà selezionata nella scheda della cronologia delle conversazioni e dell'elenco recente nei client Skype for Business.
+Per i messaggi offline inviati all'interno della stessa organizzazione, verranno ricevuti come messaggi di posta elettronica con  la classe messaggio IM.Note.MissedConversation e verranno inclusi nella cartella Conversazione senza risposta Outlook, nonché nella cronologia delle conversazioni che verrà selezionata nella scheda elenco recente/cronologia conversazioni nei client Skype for Business.
   
-Per i messaggi offline inviati dall'organizzazione federata, questi verranno ricevuti come messaggio di posta elettronica senza IM.Note.MisssedConversation e non verranno selezionati nelle cartelle della conversazione o della cronologia conversazioni senza risposta. 
+Per i messaggi offline inviati dall'organizzazione federata, questi verranno ricevuti come messaggio di posta elettronica senza IM.Note.MisssedConversation e non verranno raccolti nelle cartelle della conversazione senza risposta o della cronologia delle conversazioni. 
   
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
-Esiste un timer di due minuti da quando un messaggio offline viene inviato a quando viene raccolto ed elaborato. Se i messaggi offline non possono essere elaborati, verranno visualizzati nella directory seguente: 
+Esiste un timer di due minuti da quando viene inviato un messaggio offline quando viene raccolto ed elaborato. Se i messaggi offline non possono essere elaborati, verranno visualizzati nella directory seguente: 
   
   <pre>  %localappdata%\microsoft\office\16.0\lync\SipUserAddress\History Spooler   </pre>
 
-Il log ETL principale di Skype for Business conterrà informazioni sull'elaborazione dei messaggi offline ed è la migliore fonte per l'indagine/risoluzione dei problemi. 
+Il registro Skype for Business ETL conterrà informazioni sull'elaborazione dei messaggi offline ed è l'origine migliore per l'indagine/risoluzione dei problemi. 
   
 > [!NOTE]
-> È stato segnalato un problema a causa del quale i messaggi offline non sono stati inviati e la cartella "Bozze" era piena di messaggi. Questo problema si è verificato con le cassette postali locali di Exchange. The issue has been fixed in all C2R channels as of 6/14/2016.  
+> È stato segnalato un problema a causa del quale i messaggi offline non sono stati inviati e la cartella "Bozze" era piena di messaggi. Ciò si è verificato Exchange cassette postali locali. Il problema è stato risolto in tutti i canali C2R dal 14/06/2016.  

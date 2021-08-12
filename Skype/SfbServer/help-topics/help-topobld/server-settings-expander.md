@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bef91d55-a75c-495f-a523-4930797192f6
 description: "In questo nodo vengono mostrati il nome di dominio completo (FQDN) del server e la configurazione dell'indirizzo IP del server. È possibile eseguire le azioni seguenti:"
-ms.openlocfilehash: a5f1a8268803e7059593795d207dff10b8de0c4e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 4616f94ec6a09fa79bd4da985289d5bae279466d659a770cea671850c19c37be
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49806596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54303699"
 ---
 # <a name="server-settings-expander"></a>Espansione delle impostazioni del server
  

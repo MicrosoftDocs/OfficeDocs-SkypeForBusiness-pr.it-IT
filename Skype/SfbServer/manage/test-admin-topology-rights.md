@@ -11,20 +11,20 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Come testare i diritti di topologia in Skype for Business Server
-ms.openlocfilehash: d9c0ec5560dcb6f1a6872f0b38f2930e46b2364c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9503476c5c97e692624a8c2535adaeabc14c0e88fc6be583927cdf048cf1ee2f
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122390"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848101"
 ---
 # <a name="testing-admin-topology-rights-in-skype-for-business-server"></a>Test dei diritti di topologia dell'amministratore in Skype for Business Server
 
-| | |
+|&nbsp; |&nbsp; |
 |--|--|
 |Pianificazione della verifica|Dopo la distribuzione iniziale di Skype for Business Server. Se necessario, se si verificano problemi relativi alle autorizzazioni.|
 |Strumento di testing|Windows PowerShell|
-|Autorizzazioni necessarie|Quando vengono eseguiti localmente con Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br/><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsSetupPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, dal prompt dei comandi Windows PowerShell seguente:<br/><br/>Get-CsAdminRole Where-Object \| {$_. Cmdlet -match "Test-CsSetupPermission"}|
+|Autorizzazioni necessarie|Quando vengono eseguiti localmente con Skype for Business Server Management Shell, gli utenti devono essere membri del gruppo di sicurezza RTCUniversalServerAdmins.<br/><br/>Quando viene eseguito utilizzando un'istanza remota di Windows PowerShell, agli utenti deve essere assegnato un ruolo RBAC che dispone dell'autorizzazione per eseguire il cmdlet Test-CsSetupPermission. Per visualizzare un elenco di tutti i ruoli RBAC che possono utilizzare questo cmdlet, eseguire il comando seguente dal prompt Windows PowerShell:<br/><br/>Get-CsAdminRole \| Where-Object {$_. Cmdlet -match "Test-CsSetupPermission"}|
 |||
 
 ## <a name="description"></a>Descrizione
@@ -53,7 +53,7 @@ AVVISO: voce di controllo di accesso (ACE) atl-cs-001\RTCUniversalServerAdmins; 
 
 AVVISO: le voci di controllo di accesso (ACE) sull'oggetto "CN=Computers,DC=litwareinc,DC=com" non sono pronte. 
 
-False 
+Falso 
 
 AVVISO: l'elaborazione "Test-CsSetupPermission" è stata completata con avvisi. Durante questa esecuzione sono stati registrati avvisi di tipo "2". 
 

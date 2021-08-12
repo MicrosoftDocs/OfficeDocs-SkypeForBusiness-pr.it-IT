@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 4a996f35-96e0-4370-ac28-869631611e03
 description: Per definire il primo sito nella distribuzione, specificare il nome del primo sito. Facoltativamente, è possibile specificare una descrizione del primo sito.
-ms.openlocfilehash: 86060db9319a3f0171040bdacf407ea7df97e289
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 7308838192774e82184417cdb892f56180b3f0f1846305c4b978219669d1abc0
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49833316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54348061"
 ---
 # <a name="add-site-name"></a>Aggiungere il nome del sito
  

@@ -13,17 +13,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: edf4a04c-d4c9-4c05-aacc-9e084618bb55
 description: Leggere questo argomento per informazioni su come monitorare la distribuzione di Cloud Connector versione 2.1 e successive tramite Microsoft Operations Management Suite (OMS).
-ms.openlocfilehash: 55685aae01bdcc3c7c979627dbba910bb33203fa
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1e2156ec8cff777b7bbad595b9792972508edbd455d6a1d27a65b95ad01c5def
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098542"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54339992"
 ---
 # <a name="monitor-cloud-connector-using-operations-management-suite-oms"></a>Monitorare Cloud Connector mediante Operations Management Suite (OMS)
 
 > [!Important]
-> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
+> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business Online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
 
 Leggere questo argomento per informazioni su come monitorare la distribuzione di Cloud Connector versione 2.1 e successive tramite Microsoft Operations Management Suite (OMS).
 
@@ -53,7 +53,7 @@ Prima di poter utilizzare OMS per monitorare la distribuzione di Cloud Connector
 
 ## <a name="configure-cloud-connector-to-use-oms"></a>Configurare Cloud Connector per l'utilizzo di OMS
 
-Sarà necessario configurare l'ambiente locale del connettore cloud per l'utilizzo di OMS. A tale scopo, è necessario l'ID e la chiave dell'area di lavoro di OMS, che è possibile trovare utilizzando il portale OMS come segue: Impostazioni - Origini connesse \> - \> Server Windows:
+Sarà necessario configurare l'ambiente locale del connettore cloud per l'utilizzo di OMS. A tale scopo, sono necessari l'ID e la chiave dell'area di lavoro di OMS, che è possibile trovare utilizzando il portale OMS come segue: Impostazioni -- Origini connesse \> -- \> Windows Server:
 
 ![Screenshot per Cloud Connector OMS](../../media/a4bb0a96-c940-435e-a3f5-5ef3062dea83.png)
 
@@ -86,7 +86,7 @@ La modalità di configurazione di Cloud Connector per l'utilizzo di OMS dipende 
 
 - **Per tutti gli scenari, verificare che gli agenti siano connessi come segue:**
 
-    Nel portale OMS passare a Impostazioni - \> Origini connesse - Server \> Windows. Verrà visualizzato un elenco di computer connessi. 
+    Nel portale OMS passare a Impostazioni - \> Origini connesse - Windows \> server. Verrà visualizzato un elenco di computer connessi. 
 
 ## <a name="configure-oms"></a>Configurare OMS
 
@@ -100,7 +100,7 @@ Successivamente, sarà necessario specificare la configurazione OMS utilizzando 
 
 Nel portale OMS è necessario specificare le informazioni sui registri eventi e sui contatori delle prestazioni come indicato di seguito:
 
-1. Vai a Impostazioni- \> Dati- \> Registri eventi di Windows e aggiungi i registri eventi per: 
+1. Passare a Impostazioni- \> Dati- Windows registri eventi e aggiungere i registri eventi \> per: 
 
    - Lync Server
 
@@ -109,13 +109,13 @@ Nel portale OMS è necessario specificare le informazioni sui registri eventi e 
      > [!NOTE]
      > È necessario immettere manualmente Lync Server nella casella di testo. Non viene visualizzata come opzione nell'elenco a discesa. 
 
-     Per ulteriori informazioni, vedere [Origini dati del registro eventi di Windows in Log Analytics](/azure/log-analytics/log-analytics-data-sources-windows-events)
+     Per ulteriori informazioni, vedere [l'Windows di dati del registro eventi in Log Analytics](/azure/log-analytics/log-analytics-data-sources-windows-events)
 
-2. Vai a Impostazioni- \> Dati- Contatori delle prestazioni di Windows e aggiungi \> contatori delle prestazioni per: 
+2. Passare a Impostazioni- Contatori delle prestazioni Windows dati e \> \> aggiungere contatori delle prestazioni per: 
 
    - **Contatori a livello del sistema operativo**. È possibile aggiungere contatori a livello del sistema operativo, ad esempio l'utilizzo del processore, l'utilizzo della memoria, l'utilizzo della rete oppure è possibile utilizzare soluzioni esistenti come Capacità e prestazioni, Network Performance Monitor senza aggiungere contatori in modo esplicito. Indipendentemente da come si decide di monitorarli, Microsoft consiglia di monitorare questi contatori del sistema operativo.
 
-   - **Contatori di Skype for Business**. Sono disponibili numerosi contatori forniti da Skype for Business. È possibile trovare questi contatori accedendo a qualsiasi Mediation Server e aprendo Performance Monitor. Questi contatori iniziano con "LS:". Microsoft consiglia di iniziare almeno con i contatori di capacità seguenti e di aggiungere altri contatori di interesse:
+   - **Skype for Business contatori**. Esistono numerosi contatori forniti da Skype for Business. È possibile trovare questi contatori accedendo a qualsiasi Mediation Server e aprendo Performance Monitor. Questi contatori iniziano con "LS:". Microsoft consiglia di iniziare almeno con i contatori di capacità seguenti e di aggiungere altri contatori di interesse:
 
      Totale chiamate attive:
 
@@ -132,7 +132,7 @@ Nel portale OMS è necessario specificare le informazioni sui registri eventi e 
      > [!NOTE]
      > È necessario immettere manualmente i contatori delle prestazioni nella casella di testo. Non vengono visualizzate come opzioni nell'elenco a discesa. 
 
-     Per altre informazioni, vedi Origini [dati sulle prestazioni di Windows e Linux in Log Analytics](/azure/log-analytics/log-analytics-data-sources-performance-counters)
+     Per altre informazioni, vedi origini [dati Windows e Linux in Log Analytics](/azure/log-analytics/log-analytics-data-sources-performance-counters)
 
 ### <a name="create-alerts"></a>Creare avvisi
 
@@ -256,4 +256,4 @@ Per ulteriori informazioni sull'utilizzo di OMS, vedere:
 
 - [Informazioni sugli avvisi in Log Analytics](/azure/log-analytics/log-analytics-alerts)
 
-- [Connettere computer Windows al servizio Log Analytics in Azure](/azure/log-analytics/log-analytics-windows-agents)
+- [Connessione Windows computer al servizio Log Analytics in Azure](/azure/log-analytics/log-analytics-windows-agents)

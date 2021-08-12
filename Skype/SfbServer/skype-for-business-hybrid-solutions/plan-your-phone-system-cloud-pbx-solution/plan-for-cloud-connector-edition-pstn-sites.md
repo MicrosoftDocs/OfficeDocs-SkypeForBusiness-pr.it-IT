@@ -16,21 +16,21 @@ ms.collection:
 ms.custom: ''
 ms.assetid: cec2d9bf-2deb-482c-841b-0e3599f94b50
 description: Leggere questo argomento per informazioni su come pianificare i siti PSTN di Cloud Connector Edition per garantire un routing delle chiamate efficiente ed economicamente conveniente.
-ms.openlocfilehash: b42f9109a52b5c30996abc3e42ef4ff0aa5f31dc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 51bc6c0b7bf536849ebc9d6b1338faa6db8800fee86c4515db4c5f15bf9115b3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54339962"
 ---
 # <a name="plan-for-cloud-connector-edition-pstn-sites"></a>Pianificare i siti PSTN Cloud Connector Edition
 
 > [!Important]
-> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
+> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business Online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
  
 Leggere questo argomento per informazioni su come pianificare i siti PSTN di Cloud Connector Edition per garantire un routing delle chiamate efficiente ed economicamente conveniente.
   
-In questo argomento vengono descritte le informazioni necessarie su Cloud Connector Edition e il routing delle chiamate in modo da poter pianificare i siti PSTN del connettore cloud. Un sito PSTN è una combinazione di appliance Cloud Connector, distribuite nella stessa posizione e con gateway PSTN comuni connessi. In questo argomento viene illustrato come configurare la topologia del sito Cloud Connector per garantire che i siti Cloud Connector siano in grado di gestire il routing sia in ingresso che in uscita per tutti gli utenti assegnati a un sito nel modo più conveniente ed efficace possibile. Per ulteriori informazioni su Cloud Connector e sui vantaggi dei siti PSTN, leggere [Plan for Skype for Business Cloud Connector Edition.](plan-skype-for-business-cloud-connector-edition.md) 
+In questo argomento vengono descritte le informazioni necessarie su Cloud Connector Edition e il routing delle chiamate in modo da poter pianificare i siti PSTN del connettore cloud. Un sito PSTN è una combinazione di appliance Cloud Connector, distribuite nella stessa posizione e con gateway PSTN comuni connessi. In questo argomento viene illustrato come configurare la topologia del sito Cloud Connector per garantire che i siti Cloud Connector siano in grado di gestire il routing sia in ingresso che in uscita per tutti gli utenti assegnati a un sito nel modo più conveniente ed efficace possibile. Per ulteriori informazioni su Cloud Connector e sui vantaggi dei siti PSTN, vedere [Plan for Skype for Business Cloud Connector Edition](plan-skype-for-business-cloud-connector-edition.md). 
   
 ## <a name="cloud-connector-pstn-sites-and-call-routing"></a>Siti PSTN del connettore cloud e routing delle chiamate
 
@@ -40,7 +40,7 @@ Nell'ambito della pianificazione di Cloud Connector, è essenziale parlare con g
   
 Ogni appliance Cloud Connector può essere connessa a diversi gateway IP, IP-IP-IP o SBC (Session Border Controller). Poiché i gateway e i dispositivi PBX sono connessi a trunk telco (trunk PRI o SIP), le appliance cloud Connector sono connesse logicamente ai trunk PSTN per le chiamate in ingresso e in uscita. Con Cloud Connector e la connettività PSTN locale, ottieni il trunk e i numeri di telefono associati dall'operatore locale. Se la tua azienda è un'azienda di grandi dimensioni, potresti avere più di un operatore, soprattutto se l'azienda si estende su più città, stati o paesi. Poiché l'operatore possiede il numero di telefono, è responsabile della gestione delle chiamate di emergenza.
   
-Skype for Business Online tratta equamente tutte le appliance del connettore cloud in un sito e instraderà le chiamate in uscita su base rotante alle appliance Cloud Connector nello stesso sito. Ogni connettore cloud in un sito è connesso in modo incrociato allo stesso set di trunk PSTN (completamente mesh). Poiché ogni utente è associato a un sito PSTN del connettore cloud, qualsiasi chiamata in uscita da tale utente (normale o di emergenza) verrà assegnata a una delle appliance Cloud Connector nel sito PSTN a cui è associato l'utente. 
+Skype for Business Online tratta equamente tutte le appliance Cloud Connector in un sito e instraderà le chiamate in uscita a rotazione alle appliance Cloud Connector nello stesso sito. Ogni connettore cloud in un sito è connesso in modo incrociato allo stesso set di trunk PSTN (completamente mesh). Poiché ogni utente è associato a un sito PSTN del connettore cloud, qualsiasi chiamata in uscita da tale utente (normale o di emergenza) verrà assegnata a una delle appliance Cloud Connector nel sito PSTN a cui è associato l'utente. 
   
 Cloud Connector esegue il routing delle chiamate statiche ai relativi gateway IP collegati, IP-IP, SBC o trunk PSTN diretti. Cloud Connector non è ancora in grado di instradare dinamicamente un trunk in base alla destinazione (per il routing meno oneroso) o in base all'origine (chiamate di emergenza statiche o dinamiche). Le chiamate in ingresso non sono un problema, poiché la chiamata può derivare solo da un trunk associato al numero. Le chiamate in uscita, tuttavia, possono essere effettuate a qualsiasi dispositivo Cloud Connector di un sito (e per estensione i trunk PSTN collegati a tale appliance Cloud Connector) che possono causare chiamate interurbane indesiderate. Inoltre, le chiamate di emergenza non verranno effettuate se il sito PSTN del connettore cloud è disteso tra datacenter con codici di area o vettori diversi.
   

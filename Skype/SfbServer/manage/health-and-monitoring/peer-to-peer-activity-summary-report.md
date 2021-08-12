@@ -12,30 +12,30 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e829a21e-9dfa-46ba-9b5b-077c175d6586
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo attività peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: b1dddaefc7e824bc7b4387d13c92143e253d69f2
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: da8d23a0a51b23ccfbe0e15b7e2c79f81c88bf3559deb7005dc5d4f75f512ad2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54286795"
 ---
 # <a name="peer-to-peer-activity-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo attività peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto riepilogativo attività peer-to-peer in Skype for Business Server.
   
-Il Rapporto riepilogativo attività peer-to-peer offre informazioni generali sulle sessioni di comunicazione peer-to-peer. Una sessione peer-to-peer in genere coinvolge solo due utenti e non richiede l'uso dei servizi di conferenza di Skype for Business Server. Al contrario, una conferenza coinvolge in genere più di due utenti e richiede l'uso dei servizi di conferenza di Skype for Business Server. Le attività relative alle conferenze sono riepilogate nel Rapporto riepilogativo conferenze.
+Il Rapporto riepilogativo attività peer-to-peer offre informazioni generali sulle sessioni di comunicazione peer-to-peer. Una sessione peer-to-peer in genere coinvolge solo due utenti e non richiede l'utilizzo dei servizi di Skype for Business Server conferencing. Al contrario, una conferenza coinvolge in genere più di due utenti e richiede l'utilizzo di servizi di Skype for Business Server conferenza. Le attività relative alle conferenze sono riepilogate nel Rapporto riepilogativo conferenze.
   
 Nel Rapporto riepilogativo attività peer-to-peer è possibile trovare risposte a domande come le seguenti:
   
 - Quanti messaggi istantanei peer-to-peer si scambiano quotidianamente gli utenti?
     
-- Alcuni utenti sfruttano effettivamente le funzionalità di condivisione applicazioni e trasferimento file di Skype for Business Server?
+- Alcuni utenti sfruttano effettivamente le funzionalità di condivisione Skype for Business Server e trasferimento di file?
     
 - Gli utenti si lamentano della lentezza della rete in periodi specifici del giorno. Quanti minuti sono dedicati alle sessioni audio e video peer-to-peer durante tali periodi?
     
 ## <a name="accessing-the-peer-to-peer-activity-summary-report"></a>Accesso al Rapporto riepilogativo attività peer-to-peer
 
-Il Rapporto riepilogativo attività peer-to-peer è accessibile dalla home page dei rapporti di monitoraggio. Per aprire il rapporto di messaggistica istantanea [peer-to-peer in Skype for Business Server,](im-report.md) fare clic su una delle metriche seguenti:
+Il Rapporto riepilogativo attività peer-to-peer è accessibile dalla home page dei rapporti di monitoraggio. È possibile aprire il rapporto di messaggistica istantanea [peer-to-peer in Skype for Business Server](im-report.md) facendo clic su una delle metriche seguenti:
   
 - Totale sessioni di messaggistica istantanea peer-to-peer
     
@@ -65,9 +65,9 @@ Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**From** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di inizio come segue:  <br/> 17/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**To** <br/> |Data e ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di fine come segue:  <br/> 17/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con data di inizio 17/07/12015 e data di fine 28/02/2015, i dati vengono visualizzati per i giorni 07/08/12015 12.00 al 7/09/12015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
+|**From** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di inizio come segue:  <br/> 17/07/12015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data e ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di fine come segue:  <br/> 17/07/12015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio del 17/07/12015 e una data di fine del 28/02/2015, vengono visualizzati i dati per i giorni 07/08/12015 12.00 alle 07.00.00 del 9/07/12015 (ovvero un totale di 31 giorni di dati). <br/> |
    
 ## <a name="metrics"></a>Metriche
 
@@ -77,7 +77,7 @@ Nella tabella seguente sono indicate le informazioni fornite nel Rapporto riepil
 
 |**Nome**|**Elemento utilizzabile per eseguire l'ordinamento?**|**Descrizione**|
 |:-----|:-----|:-----|
-|**Orario** <br/> **Giornaliero** <br/> **Settimanale** <br/> **Mensile** <br/> |No  <br/> |Indica l'intervallo di tempo selezionato sulla barra degli strumenti dei filtri. Ove applicabile, è possibile fare clic su un determinato intervallo di tempo per visualizzare informazioni dettagliate relative a tale intervallo. Ad esempio, se si utilizza l'intervallo giornaliero e si fa clic su 17/07/12015, verrà visualizzata una suddivisione oraria delle attività di registrazione degli utenti per tale data.  <br/> |
+|**Orario** <br/> **Giornaliero** <br/> **Settimanale** <br/> **Mensile** <br/> |No  <br/> |Indica l'intervallo di tempo selezionato sulla barra degli strumenti dei filtri. Ove applicabile, è possibile fare clic su un determinato intervallo di tempo per visualizzare informazioni dettagliate relative a tale intervallo. Ad esempio, se si utilizza l'intervallo Giornaliero e si fa clic su 17/07/12015, verrà visualizzata una suddivisione oraria dell'attività di registrazione degli utenti per tale data.  <br/> |
 |**Totale sessioni peer-to-peer** <br/> |No  <br/> |Numero totale di sessioni peer-to-peer condotte, indipendentemente dal tipo.  <br/> |
 |**Totale sessioni di messaggistica istantanea peer-to-peer** <br/> |No  <br/> |Numero totale di sessioni di messaggistica istantanea condotte. Se si fa clic su questo elemento, verrà visualizzato il Rapporto di messaggistica istantanea peer-to-peer relativo al periodo di tempo selezionato.  <br/> |
 |**Totale messaggi istantanei peer-to-peer** <br/> |No  <br/> |Numero totale di messaggi istantanei inviati in sessioni peer-to-peer. Se si fa clic su questo elemento, verrà visualizzato il Rapporto di messaggistica istantanea peer-to-peer relativo al periodo di tempo selezionato.  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Ottimizzazione del supporto locale per il routing diretto
+title: Configurare l'ottimizzazione dei supporti multimediali locali per il routing diretto in Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -16,18 +16,18 @@ f1.keywords:
 description: Configurare l'ottimizzazione del supporto locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ecbbb4f01267265f9f1041e7d51652d063ced353
-ms.sourcegitcommit: 2aea6ec07149a3054ee4434c8a0bffabf1a16d25
+ms.openlocfilehash: e53296b54cd55d6444f665476de020be1ee314e807f905d561ee181e50486333
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "46576988"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848641"
 ---
 # <a name="configure-local-media-optimization-for-direct-routing"></a>Configurare l'ottimizzazione del supporto locale per il routing diretto
 
 La configurazione per l'ottimizzazione multimediale locale si basa su impostazioni di rete comuni ad altre funzionalità vocali cloud, ad esempio routing Location-Based e chiamate di emergenza dinamiche. Per altre informazioni sulle aree di rete, i siti di rete, le subnet di rete e gli indirizzi IP attendibili, vedere Impostazioni di rete [per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 
-Prima di configurare l'ottimizzazione del supporto locale, vedere [Ottimizzazione dei supporti locali per il routing diretto.](direct-routing-media-optimization.md)  
+Prima di configurare l'ottimizzazione multimediale locale, vedere [Ottimizzazione dei supporti locali per il routing diretto.](direct-routing-media-optimization.md)  
 
 Per configurare l'ottimizzazione del supporto locale, sono necessari i passaggi seguenti. È possibile usare l'Teams di amministrazione o PowerShell. Per informazioni dettagliate, vedere [Gestire la topologia di rete.](manage-your-network-topology.md)
 
@@ -47,7 +47,7 @@ Per configurare l'utente e i siti SBC, è necessario:
 
 2. [Definire la topologia di rete](#define-the-network-topology) configurando le aree di rete, i siti di rete e le subnet di rete.
 
-3. [Definire la topologia della rete virtuale](#define-the-virtual-network-topology) assegnando SBC ai siti con modalità pertinenti e valori SBC proxy.
+3. [Definire la topologia della rete virtuale](#define-the-virtual-network-topology) assegnando SBC ai siti con le modalità pertinenti e i valori SBC proxy.
 
 
 ## <a name="configure-sbcs-for-local-media-optimization-according-to-the-sbc-vendor-specification"></a>Configurare SBC(s) per l'ottimizzazione dei supporti locali in base alla specifica del fornitore SBC
@@ -111,7 +111,7 @@ Per tutti i parametri viene fatto distinzione tra maiuscole e minuscole, quindi 
 
 ### <a name="define-network-regions"></a>Definire le aree di rete
 
-Per definire le aree di rete, usare il cmdlet New-CsTenantNetworkRegion rete. Il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o restrizioni. Il parametro CentralSite <site ID> è facoltativo.
+Per definire le aree di rete, usare il cmdlet New-CsTenantNetworkRegion rete. Il parametro RegionID è un nome logico che rappresenta la geografia dell'area geografica e non ha dipendenze o restrizioni. Il parametro CentralSite `<site ID>` è facoltativo.
 
 ```
 New-CsTenantNetworkRegion -NetworkRegionID <region ID>  
@@ -180,7 +180,7 @@ Set-CSOnlinePSTNGateway -Identity “VNsbc.contoso.com” -GatewaySiteID “Viet
 Set-CSOnlinePSTNGateway -Identity “IDsbc.contoso.com” -GatewaySiteID “Indonesia” -MediaBypass $true -BypassMode “Always” -ProxySBC “proxysbc.contoso.com”
 ```
 
-Nota: per garantire operazioni ininterrotte quando l'ottimizzazione del supporto locale e il routing di Location-Based (LBR) sono configurati contemporaneamente, gli SBC downstream devono essere abilitati per LBR impostando il parametro GatewaySiteLbrEnabled su $true per ogni SBC downstream. Questa impostazione non è obbligatoria per il proxy SBC.
+Nota: per garantire operazioni ininterrotte quando l'ottimizzazione del supporto locale e il routing Location-Based (LBR) sono configurati contemporaneamente, è necessario abilitare gli SBC downstream per LBR impostando il parametro GatewaySiteLbrEnabled su $true per ogni SBC downstream. Questa impostazione non è obbligatoria per il proxy SBC.
 
 In base alle informazioni precedenti, il routing diretto includerà tre intestazioni SIP proprietarie per gli inviti SIP e i nuovi inviti, come illustrato nella tabella seguente.
 
@@ -189,8 +189,8 @@ Intestazioni X-MS introdotte in Routing diretto su inviti e Re-Invites se è def
 | Nome intestazione | Valori | Commenti | 
 |:------------|:-------|:-------|
 | X-MS-UserLocation | interno/esterno | Indica se l'utente è interno o esterno |
-| Request-URI INVITE sip: +84439263000@VNsbc.contoso.com SIP /2.0 | SBC FQDN | Fqdn destinato alla chiamata anche se il servizio SBC non è connesso direttamente a Direct Routing |
-| X-MS-MediaPath | Esempio: proxysbc.contoso.com, VNsbc.contoso.com | Ordine di SBC da usare per il percorso multimediale tra l'utente e il SBC di destinazione. Il valore SBC finale è sempre l'ultimo |
+| Request-URI INVITE sip: +84439263000@VNsbc.contoso.com SIP /2.0 | SBC FQDN | FQDN destinato alla chiamata anche se il servizio SBC non è connesso direttamente a Direct Routing |
+| X-MS-MediaPath | Esempio: proxysbc.contoso.com, VNsbc.contoso.com | Ordine di SBC da usare per il percorso multimediale tra l'utente e SBC di destinazione. Il valore SBC finale è sempre l'ultimo |
 | X-MS-UserSite | usersiteID | Stringa definita dall'amministratore del tenant |
 
 ## <a name="call-flows"></a>Flussi di chiamata 
@@ -255,14 +255,14 @@ La tabella seguente mostra le intestazioni X-MS inviate da Direct Routing:
 | AlwaysBypass |    Interno | Lo stesso sito di SBC | In ingresso |
 
 
-In una chiamata in ingresso, la posizione dell'utente è sconosciuta e SBC deve indovinare dove si trova l'utente. Se l'ipotesi non è corretta, sarà necessario un nuovo invito. Questo caso presuppone che l'utente sia interno, che i supporti multimediali possano fluire direttamente e che non siano necessarie altre azioni (invito di nuovo).
+In una chiamata in ingresso, la posizione dell'utente è sconosciuta e SBC deve indovinare dove si trova l'utente. Se l'ipotesi non è corretta, sarà necessario un nuovo invito. In questo caso si presuppone che l'utente sia interno, che i supporti multimediali possano fluire direttamente e che non siano necessarie altre azioni (invitare di nuovo).
 Il servizio SBC connesso al servizio di routing diretto segnala la posizione SBC di origine fornendo i campi Record-Route e Contatto. In base a questi campi, il percorso multimediale viene calcolato tramite Routing diretto.
 
 Nota: dato che un utente può avere più endpoint, il supporto di 183 non è possibile. In questo caso l'instradamento diretto userà sempre 180 squilli. 
 
 Il diagramma seguente mostra la scala SIP per le chiamate in ingresso con la modalità AlwaysBypass e l'utente si trova nella stessa posizione di SBC.
 
-![Diagramma che mostra la scala SIP](media/direct-routing-media-op-11.png)
+![Diagramma che mostra la scala SIP.](media/direct-routing-media-op-11.png)
 
 
 #### <a name="outbound-calls-and-the-user-is-external-with-always-bypass"></a>Chiamate in uscita e l'utente è esterno con Bypass sempre
@@ -274,7 +274,7 @@ AlwaysBypass |  Esterno |  N/D | In uscita |
 
 Il diagramma seguente mostra la scala SIP per una chiamata in uscita con modalità AlwaysBypass e l'utente è esterno:
 
-![Diagramma che mostra la scala SIP](media/direct-routing-media-op-12.png)
+![Il diagramma mostra la scala SIP.](media/direct-routing-media-op-12.png)
 
 La tabella seguente mostra le intestazioni X-MS inviate dal servizio Routing diretto:
 
@@ -294,7 +294,7 @@ Per una chiamata in ingresso, la SBC connessa a Direct Routing deve inviare un n
 
 Il diagramma seguente mostra la scala SIP per una chiamata in ingresso con modalità AlwaysBypass e l'utente è esterno.
 
-![Diagramma che mostra la scala SIP](media/direct-routing-media-op-13.png)
+![Diagramma che mostra di nuovo la scala SIP.](media/direct-routing-media-op-13.png)
 
 
 ### <a name="only-for-local-users-mode"></a>Solo per la modalità utenti locali
@@ -322,7 +322,7 @@ La tabella seguente mostra la configurazione e l'azione dell'utente finale:
 
 Il diagramma seguente mostra una chiamata in uscita in modalità OnlyForLocalUsers e l'utente si trova nella stessa posizione del servizio SBC. Questo è lo stesso flusso visualizzato nelle chiamate in uscita quando l'utente si trova nella stessa [posizione di SBC.](#outbound-calls-and-the-user-is-in-the-same-location-as-the-sbc-with-always-bypass)
 
-![Diagramma che mostra la scala SIP](media/direct-routing-media-op-14.png)
+![Il diagramma mostra di nuovo la scala SIP.](media/direct-routing-media-op-14.png)
 
 
 #### <a name="inbound-calls-and-the-user-is-in-the-same-location-as-the-sbc-with-only-for-local-users"></a>Chiamate in ingresso e l'utente si trova nella stessa posizione della SBC con Solo per gli utenti locali
@@ -333,7 +333,7 @@ Il diagramma seguente mostra una chiamata in uscita in modalità OnlyForLocalUse
 
 Il diagramma seguente mostra una chiamata in ingresso in modalità OnlyForLocalUsers e l'utente si trova nella stessa posizione del servizio SBC. Questo è lo stesso flusso mostrato nelle chiamate in ingresso quando l'utente si trova nella stessa posizione [del servizio SBC.](#inbound-calls-and-the-user-is-in-the-same-location-as-the-sbc-with-always-bypass)
 
-![Diagramma che mostra la scala SIP](media/direct-routing-media-op-15.png)
+![Un altro diagramma che mostra la scala SIP.](media/direct-routing-media-op-15.png)
 
 
 #### <a name="user-is-not-at-the-same-location-as-the-sbc-but-is-in-the-corporate-network-with-only-for-local-users"></a>L'utente non si trova nella stessa posizione di SBC, ma si trova nella rete aziendale con Solo per gli utenti locali
@@ -342,12 +342,12 @@ Il diagramma seguente mostra una chiamata in ingresso in modalità OnlyForLocalU
 |:------------|:-------|:-------|:-------|
 | OnlyForLocalUsers  | Interno |   Diverso da SBC | In uscita |
 
-Il routing diretto calcola X-MediaPath in base alla posizione segnalata dell'utente e alla modalità configurata in SBC.
+Il routing diretto calcola X-MediaPath in base alla posizione segnalata dell'utente e alla modalità configurata nell'SBC.
 
 
 Il diagramma seguente mostra una chiamata in uscita con la modalità OnlyForLocalUsers e un utente interno che non si trova nella stessa posizione di SBC.
 
-![Diagramma che mostra la scala SIP](media/direct-routing-media-op-16.png)
+![Un altro diagramma mostra la scala SIP.](media/direct-routing-media-op-16.png)
 
 
 #### <a name="inbound-call-and-the-user-is-internal-but-is-not-at-the-same-location-as-the-sbc-with-only-for-local-users"></a>Chiamata in ingresso e l'utente è interno, ma non si trova nella stessa posizione di SBC con Solo per gli utenti locali
@@ -356,9 +356,9 @@ Il diagramma seguente mostra una chiamata in uscita con la modalità OnlyForLoca
 |:------------|:-------|:-------|:-------|
 | OnlyForLocalUsers | Interno |    Diverso da SBC |    In ingresso |
 
-Il diagramma seguente mostra una chiamata in ingresso con la modalità OnlyForLocalUsers e un utente interno che non si trova nella stessa posizione di SBC.
+Il diagramma seguente mostra una chiamata in ingresso in modalità OnlyForLocalUsers e un utente interno che non si trova nella stessa posizione di SBC.
 
-![Diagramma che mostra la scala SIP](media/direct-routing-media-op-17.png)
+![Ancora un altro diagramma che mostra la scala SIP.](media/direct-routing-media-op-17.png)
 
 
 

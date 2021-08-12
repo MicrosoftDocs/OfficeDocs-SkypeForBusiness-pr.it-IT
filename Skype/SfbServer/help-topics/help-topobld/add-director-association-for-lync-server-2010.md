@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 92631bb6-1bf5-4b0b-a223-ffa22d7f1fce
-description: Definire se al Server Director o al pool di server Director sarà associato un Monitoring Server. Selezionare la casella di controllo per associare un Monitoring Server al server Director o al pool di server Director.
-ms.openlocfilehash: 598ede0a090d4c76ba6698ce92ce4c65c3b60959
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Definire se al server Director o al pool di server Director sarà associato un Monitoring Server. Selezionare la casella di controllo per associare un Monitoring Server al server Director o al pool di server Director.
+ms.openlocfilehash: 69844db8cf43c2f3a3fe11d92683a0dd83cee2503fee27f9344975bed14b1463
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54319219"
 ---
 # <a name="add-director-association-for-lync-server-2010"></a>Aggiungere l'associazione dei director per Lync Server 2010
  
-Definire se al Server Director o al pool di server Director sarà associato un Monitoring Server. Selezionare la casella di controllo per associare un Monitoring Server al server Director o al pool di server Director.
+Definire se al server Director o al pool di server Director sarà associato un Monitoring Server. Selezionare la casella di controllo per associare un Monitoring Server al server Director o al pool di server Director.
   
 > [!TIP]
-> Se non è ancora stato creato un database di Monitoring Server (e un'istanza facoltativa), sarà possibile crearlo in un secondo momento se si seleziona questa casella di controllo per associare un Monitoring Server al Server Director o al pool di server Director. 
+> Se non è ancora stato creato un database di Monitoring Server (e un'istanza facoltativa), sarà possibile crearlo in un secondo momento se si seleziona questa casella di controllo per associare un Monitoring Server al server Director o al pool di server Director. 
   
 

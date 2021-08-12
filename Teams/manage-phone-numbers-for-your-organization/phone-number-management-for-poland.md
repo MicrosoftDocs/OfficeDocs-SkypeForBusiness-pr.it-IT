@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Polonia per Microsoft Teams.
-ms.openlocfilehash: abba192cdb4b94a6e5c6032980923c02d338c27f
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: b49ea2281d507f7b7559f95f6f3c7ade9bb45d1fe65b1a013be997a3ab322e08
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53509967"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54329121"
 ---
 # <a name="phone-number-management-for-poland"></a>Telefono gestione dei numeri per la Polonia
 
@@ -40,11 +40,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione.  |In Polonia è possibile ottenere i numeri di telefono dell'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Polonia (v.1.0) (pl-pl)](https://download.microsoft.com/download/d/f/3/df3648a4-4254-45b8-a9d7-6ba774a7caa7/know-your-customer-for-poland-(v1.0)-(pl-PL).pdf). <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>Telefono i numeri verranno ordinati in blocchi di dieci. Ai clienti verrà addebitato l'addebito solo per le licenze del piano chiamate sottoscritte.<br/><br/>La compilazione di nuovi ordini in questo mercato può richiedere da quattro a sei settimane. |
-|Ricevi i numeri di telefono trasferiti a Noi.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Polonia (tutti i numeri) (v.1.0) (pl-pl)](https://download.microsoft.com/download/e/3/a/e3a60111-9fb6-4df3-9fbf-68a8cb5c401e/letter-of-authorization-(loa)-for-poland-(all-numbers)-(v1.0)-(pl-pl).pdf) <br/> <br/>Compilarlo e [contattare PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/>Il completamento del trasferimento di numeri in questo mercato può richiedere da quattro a sei settimane. <br/><br/> Questi numeri non possono essere usati per le conferenze in questo momento.    |
-|Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Contattare PTSN per istruzioni sull'elenco](contact-pstn-service-desk.md) dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
-|Modificare il numero di un utente in un numero di servizio.  <br/> |[Contattare PTSN per istruzioni relative](contact-pstn-service-desk.md) all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
-|Eseguire aggiornamenti del servizio directory per i numeri di coda di chiamata o operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  |In Polonia è possibile ottenere i numeri di telefono dell'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e [contattando PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Polonia (v.1.0) (pl-pl)](https://download.microsoft.com/download/d/f/3/df3648a4-4254-45b8-a9d7-6ba774a7caa7/know-your-customer-for-poland-(v1.0)-(pl-PL).pdf). <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>Telefono i numeri verranno ordinati in blocchi di dieci. Ai clienti verrà addebitato l'addebito solo per le licenze del piano chiamate sottoscritte.<br/><br/>La compilazione di nuovi ordini in questo mercato può richiedere da quattro a sei settimane. |
+|Fai trasferire a noi i numeri di telefono.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Polonia (tutti i numeri) (v.1.0) (pl-pl)](https://download.microsoft.com/download/e/3/a/e3a60111-9fb6-4df3-9fbf-68a8cb5c401e/letter-of-authorization-(loa)-for-poland-(all-numbers)-(v1.0)-(pl-pl).pdf) <br/> <br/>Compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). <br/><br/>Il completamento del trasferimento di numeri in questo mercato può richiedere da quattro a sei settimane. <br/><br/> Questi numeri non possono essere usati per le conferenze in questo momento.    |
+|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare PTSN per istruzioni sull'elenco](contact-pstn-service-desk.md) dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
+|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare PTSN per istruzioni](contact-pstn-service-desk.md) relative all’elenco dei numeri utente da convertire in numeri di servizio. <br/> |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
 
    
 ## <a name="related-topics"></a>Argomenti correlati
@@ -55,4 +55,4 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip)
