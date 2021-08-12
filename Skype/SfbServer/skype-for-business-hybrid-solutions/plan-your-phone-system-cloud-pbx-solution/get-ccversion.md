@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 7d370abd-0c01-4490-88a1-55b42e51b663
-description: Restituisce la versione dell'applicazione Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.
-ms.openlocfilehash: 706b480c2f8e277b7f41fe28e88cc062fea6603a
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Restituisce la versione dell'appliance Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.
+ms.openlocfilehash: d3da9813fd67228f8e198cd21edce3cc187ac9359617eb660a352b38c51a95ba
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41799846"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54349508"
 ---
 # <a name="get-ccversion"></a>Get-CcVersion
  
-Restituisce la versione dell'applicazione Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.
+Restituisce la versione dell'appliance Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.
   
 ```powershell
 Get-CcVersion [[-VersionType] <String>] [<CommonParameters>]
@@ -30,7 +30,7 @@ Get-CcVersion [[-VersionType] <String>] [<CommonParameters>]
 
 ## <a name="detailed-description"></a>Descrizione dettagliata
 
-Restituisce la versione dell'applicazione Cloud Connector in base agli script di PowerShell installati, ai file nella directory appliance e alle macchine virtuali distribuite nel server host.
+Restituisce la versione dell'appliance Cloud Connector in base agli script di PowerShell installati, ai file nella directory appliance e alle macchine virtuali distribuite nel server host.
   
 ## <a name="parameters"></a>Parametri
 
@@ -43,7 +43,7 @@ Restituisce la versione dell'applicazione Cloud Connector in base agli script di
 
 ### <a name="example-1"></a>Esempio 1
 
-L'esempio seguente mostra la versione Cloud Connector dello script attualmente in esecuzione nella console di PowerShell aperta:
+L'esempio seguente mostra la versione cloud connector dello script attualmente in esecuzione nella console di PowerShell aperta:
   
 ```powershell
 Get-CcVersion
@@ -51,7 +51,7 @@ Get-CcVersion
 
 ### <a name="example-2"></a>Esempio 2
 
-L'esempio seguente mostra la versione Cloud Connector dei file binari attualmente in esecuzione distribuiti alle macchine virtuali. È possibile visualizzare la versione nei nomi delle macchine virtuali in esecuzione nella console di gestione di Hyper-v:
+L'esempio seguente mostra la versione cloud connector dei file binari attualmente in esecuzione distribuiti nelle macchine virtuali. È possibile visualizzare la versione nei nomi delle macchine virtuali in esecuzione in Hyper-v Manager:
   
 ```powershell
 Get-CCVersion -VersionType RunningBits

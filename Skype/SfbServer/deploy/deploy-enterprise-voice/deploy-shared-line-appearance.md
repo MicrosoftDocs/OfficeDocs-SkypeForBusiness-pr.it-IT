@@ -1,5 +1,5 @@
 ---
-title: Distribuire l'aspetto della linea condivisa in Skype for Business Server 2015
+title: Distribuire l'aspetto delle righe condivise in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,25 +16,25 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 474a5e4a-9479-4e86-8607-b9f41a0fa648
-description: Leggere questo argomento per informazioni su come distribuire l'aspetto linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
-ms.openlocfilehash: 7758354b7c4be123cb9b5a482af3304b069931a8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Leggere questo argomento per informazioni su come distribuire l'aspetto della linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
+ms.openlocfilehash: de0b0d54fed0b76c1e20b67b743dfef2c4f784589b2eb3867529201493242e32
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51104912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54314912"
 ---
-# <a name="deploy-shared-line-appearance-in-skype-for-business-server-2015"></a>Distribuire l'aspetto della linea condivisa in Skype for Business Server 2015
+# <a name="deploy-shared-line-appearance-in-skype-for-business-server-2015"></a>Distribuire l'aspetto delle righe condivise in Skype for Business Server 2015
 
-Leggere questo argomento per informazioni su come distribuire l'aspetto linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
+Leggere questo argomento per informazioni su come distribuire l'aspetto della linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
 
 Per ulteriori informazioni su questa funzionalità, vedere [Plan for Shared Line Appearance in Skype for Business Server 2015.](../../plan-your-deployment/enterprise-voice-solution/shared-line-appearance.md)
 
-Shared Line Appearance (SLA) è una nuova funzionalità di Skype for Business Server, aggiornamento cumulativo di novembre 2015. Per abilitare questa funzionalità, è necessario aver prima distribuito questo aggiornamento cumulativo.
+Shared Line Appearance (SLA) è una nuova funzionalità Skype for Business Server, aggiornamento cumulativo di novembre 2015. Per abilitare questa funzionalità, è necessario aver prima distribuito questo aggiornamento cumulativo.
 
 ### <a name="install-shared-line-appearance"></a>Installare l'aspetto linea condivisa
 
-1. Dopo aver distribuito Skype for Business Server, l'aggiornamento cumulativo di novembre 2015, eseguire la patch in ogni  `SkypeServerUpdateInstaller.exe` Front End Server del pool.
+1. Dopo Skype for Business Server, viene distribuito l'aggiornamento cumulativo di novembre 2015, eseguire la patch in ogni `SkypeServerUpdateInstaller.exe` Front End Server del pool.
 
 2. Il programma di installazione distribuirà la versione più recente dell'applicazione sla, tuttavia, l'applicazione non è abilitata per impostazione predefinita. È abilitato seguendo la procedura descritta di seguito:
 
@@ -79,7 +79,7 @@ Shared Line Appearance (SLA) è una nuova funzionalità di Skype for Business Se
     È possibile utilizzare Set-CsSlaConfiguration per creare un nuovo gruppo di contratti di servizio o modificarne uno esistente.
 
     > [!NOTE]
-    > Si noti che ciò per cui si specifica deve essere un  `-Identity` account utente VoIP aziendale esistente.
+    > Si noti che ciò per cui si specifica deve essere un `-Identity` account utente VoIP aziendale esistente.
 
 2. Aggiungere delegati al gruppo utilizzando il cmdlet [Add-CsSlaDelegates:](/powershell/module/skype/add-cssladelegates?view=skype-ps)
 

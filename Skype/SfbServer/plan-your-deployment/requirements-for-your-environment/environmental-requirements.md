@@ -17,22 +17,22 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4812c444-2546-48d7-9ca7-b71fce508ed8
 description: 'Riepilogo: configurare i requisiti non server per Skype for Business Server 2015. Prima di eseguire la distribuzione, è necessario configurare diversi elementi, tra cui Active Directory, DNS, certificati e condivisivi file.'
-ms.openlocfilehash: e8ebb052c1ea53781ec10f2fb4fa8437e017aecd
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a7e71fb74180223f2dec76ac29c5b7c4b8f85f18f953762db383f43812bfd5e7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51104082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54341861"
 ---
 # <a name="environmental-requirements-for-skype-for-business-server-2015"></a>Requisiti ambientali per Skype for Business Server 2015
  
 **Riepilogo:** Configurare i requisiti non server per Skype for Business Server 2015. Prima di eseguire la distribuzione, è necessario configurare diversi elementi, tra cui Active Directory, DNS, certificati e condivisivi file.
   
-Qual è un requisito ambientale per Skype for Business Server 2015? Bene, abbiamo inserito tutto ciò che non è direttamente correlato al server in questo argomento, quindi non è necessario fare tanto clic. Se si cercano prerequisiti del server, è possibile consultare il documento Requisiti del server per [Skype for Business Server 2015.](server-requirements.md) [La](../../plan-your-deployment/network-requirements/network-requirements.md) pianificazione delle reti è inoltre documentata separatamente. In caso contrario, questo è il contenuto di questo articolo:
+Qual è un requisito ambientale per Skype for Business Server 2015? Bene, abbiamo inserito tutto ciò che non è direttamente correlato al server in questo argomento, quindi non è necessario fare tanto clic. Se si cercano prerequisiti del server, è possibile consultare i requisiti del server per [](../../plan-your-deployment/network-requirements/network-requirements.md) Skype for Business Server [2015.](server-requirements.md) La pianificazione delle reti è inoltre documentata separatamente. In caso contrario, questo è il contenuto di questo articolo:
   
 - [Active Directory](environmental-requirements.md#AD)
   
-- [DNS (Domain Name System)](environmental-requirements.md#DNS)
+- [Domain Name System (DNS)](environmental-requirements.md#DNS)
   
 - [Certificati](environmental-requirements.md#Certs)
   
@@ -48,7 +48,7 @@ Sebbene molti dati di configurazione per server e servizi siano archiviati nell'
 |Estensioni dello schema  <br/> |Estensioni degli oggetti utente  <br/> |
 ||Estensioni per Lync Server 2013 e Lync Server 2010, per mantenere la compatibilità con le versioni precedenti supportate.  <br/> |
 |Dati  <br/> |URI SIP utente e altre impostazioni utente  <br/> |
-||Oggetti contatto per le applicazioni,ad esempio l'applicazione Response Group e l'applicazione Operatore conferenza.  <br/> |
+||Oggetti contatto per le applicazioni (ad esempio, l'applicazione Response Group e il applicazione Operatore conferenza).  <br/> |
 ||Dati pubblicati per garantire la compatibilità con le versioni precedenti.  <br/> |
 ||Un punto di controllo del servizio (SCP) per l'archivio di gestione centrale.  <br/> |
 ||Account di autenticazione Kerberos (un oggetto computer facoltativo).  <br/> |
@@ -57,7 +57,7 @@ Sebbene molti dati di configurazione per server e servizi siano archiviati nell'
 
 Quindi, quale sistema operativo controller di dominio può essere utilizzato? Abbiamo l'elenco seguente:
 
-- Windows Server 2019 (è necessario disporre dell'aggiornamento cumulativo 5 o versione successiva di Skype for Business Server 2015)
+- Windows Server 2019 (è necessario Skype for Business Server 2015 aggiornamento cumulativo 5 o versione successiva)
   
 - Windows Server 2016
     
@@ -69,9 +69,9 @@ Quindi, quale sistema operativo controller di dominio può essere utilizzato? Ab
     
 - Windows Server 2008
     
-Ora, il livello di funzionalità del dominio di qualsiasi dominio in cui distribuisci Skype for Business Server 2015 e il livello di funzionalità della foresta di qualsiasi foresta in cui distribuisci Skype for Business Server 2015, devono essere uno dei seguenti:
+Ora, il livello di funzionalità del dominio di qualsiasi dominio in cui si distribuisce Skype for Business Server 2015 e il livello di funzionalità della foresta di qualsiasi foresta Skype for Business Server cui si distribuisce Skype for Business Server 2015, devono essere uno dei seguenti:
 
-- Windows Server 2019 (è necessario disporre dell'aggiornamento cumulativo 5 o versione successiva di Skype for Business Server 2015)
+- Windows Server 2019 (è necessario Skype for Business Server 2015 aggiornamento cumulativo 5 o versione successiva)
   
 - Windows Server 2016
     
@@ -85,17 +85,17 @@ Ora, il livello di funzionalità del dominio di qualsiasi dominio in cui distrib
     
 - Windows Server 2003
     
-È possibile disporre di controller di dominio di sola lettura in questi ambienti? Certo, purché ci siano anche controller di dominio scrivibili disponibili nello stesso sito di Skype for Business Server.
+È possibile disporre di controller di dominio di sola lettura in questi ambienti? Certo, purché ci siano anche controller di dominio scrivibili disponibili nello stesso sito del Skype for Business Server.
   
-A questo punto, è importante sapere che Skype for Business Server 2015 non supporta i domini con etichetta singola. Cosa sono? Se si dispone di un dominio radice denominato contoso.local, andrà bene. Se si dispone di un dominio radice denominato localmente, non funzionerà e di conseguenza non è supportato. Ulteriori informazioni sono state scritte [in questo articolo della Knowledge Base.](https://support.microsoft.com/kb/300684/en-us)
+A questo punto, è importante sapere che Skype for Business Server 2015 non supporta i domini con etichetta singola. Quali? Se si dispone di un dominio radice denominato contoso.local, andrà bene. Se si dispone di un dominio radice denominato localmente, non funzionerà e di conseguenza non è supportato. Ulteriori informazioni sono state scritte [in questo articolo della Knowledge Base.](https://support.microsoft.com/kb/300684/en-us)
   
-Skype for Business Server 2015 inoltre non supporta la ridenominazione dei domini. Se è veramente necessario eseguire questa operazione, è necessario disinstallare Skype for Business Server 2015, eseguire la ridenominazione del dominio e quindi reinstallare Skype for Business Server 2015.
+Skype for Business Server 2015 inoltre non supporta la ridenominazione dei domini. Se è necessario eseguire questa operazione, è necessario disinstallare Skype for Business Server 2015, eseguire la ridenominazione del dominio e quindi reinstallare Skype for Business Server 2015.
   
 Infine, potresti avere a che fare con un dominio con un ambiente di Servizi di dominio Active Directory bloccato e questo è tutto a posto. Abbiamo altre informazioni su come distribuire Skype for Business Server 2015 in questo tipo di ambiente nei documenti di distribuzione.
   
 ### <a name="ad-topologies"></a>Topologie AD
 
-Le topologie supportate di Skype for Business Server 2015 sono:
+Skype for Business Server topologie supportate dalla versione 2015 sono:
   
 - Foresta singola con singolo dominio
     
@@ -107,13 +107,13 @@ Le topologie supportate di Skype for Business Server 2015 sono:
     
 - Più foreste in una topologia di foresta di risorse
     
-- Più foreste in una topologia a foresta di risorse di Skype for Business con Exchange Online
+- Più foreste in una topologia Skype for Business di risorse con Exchange Online
     
-- Più foreste in una topologia a foresta di risorse con Skype for Business Online e Azure Active Directory Connect
+- Più foreste in una topologia a foresta di risorse con Skype for Business Online e Azure Active Directory Connessione
     
 Sono presenti diagrammi e descrizioni che consentono di determinare quale topologia è presente nell'ambiente o cosa potrebbe essere necessario configurare prima di installare Skype for Business Server 2015. Per mantenere la semplicità, è inclusa anche una chiave:
   
-![L'elemento è una chiave per le icone utilizzate per i diagrammi di topologia di Skype for Business](../../media/cc0dbc17-cf81-4b79-bf99-4614cc6828a0.png)
+![L'elemento è una chiave per le icone utilizzate Skype for Business diagrammi di topologia](../../media/cc0dbc17-cf81-4b79-bf99-4614cc6828a0.png)
   
 #### <a name="single-forest-with-single-domain"></a>Foresta singola con singolo dominio
 
@@ -125,9 +125,9 @@ Non è più facile, si tratta di una foresta a dominio singolo, si tratta di una
 
 ![Diagramma di una singola foresta, di un singolo albero e di domini mutiple](../../media/63b9f0dd-6bac-4ba9-ae68-8be032d09dcb.png)
   
-Questo diagramma mostra una singola foresta, ma ha anche uno o più domini figlio (sono presenti tre in questo esempio specifico). Pertanto, il dominio in cui vengono creati gli utenti potrebbe essere diverso dal dominio in cui è distribuito Skype for Business Server 2015. Perché preoccuparsi di questo? È importante ricordare che quando si distribuisce un pool Front End di Skype for Business Server, tutti i server del pool devono essere in un singolo dominio. È possibile eseguire l'amministrazione tra domini tramite il supporto di Skype for Business Server per i gruppi di amministratori universali di Windows.
+Questo diagramma mostra una singola foresta, ma ha anche uno o più domini figlio (sono presenti tre in questo esempio specifico). Pertanto, il dominio in cui vengono creati gli utenti potrebbe essere diverso Skype for Business Server in cui viene distribuito 2015. Perché preoccuparsi di questo? È importante ricordare che quando si distribuisce un pool Front End Skype for Business Server, tutti i server del pool devono essere in un singolo dominio. È possibile eseguire l'amministrazione tra domini Skype for Business Server il supporto di Windows gruppi di amministratori universali.
   
-Tornando al diagramma precedente, è possibile vedere che gli utenti di un dominio sono in grado di accedere ai pool di Skype for Business Server dallo stesso dominio o da domini diversi, anche se tali utenti sono in un dominio figlio.
+Tornando al diagramma precedente, è possibile vedere che gli utenti di un dominio sono in grado di accedere Skype for Business Server pool dallo stesso dominio o da domini diversi, anche se tali utenti sono in un dominio figlio.
   
 #### <a name="single-forest-with-multiple-trees-and-disjoint-namespaces"></a>Foresta singola con più alberi e spazi dei nomi disgiunti
 
@@ -147,58 +147,58 @@ Funzionamento. Un prodotto di sincronizzazione della directory (ad esempio Foref
   
 Chiaramente, se l'infrastruttura di Active Directory sta passando a questa topologia potrebbe non essere facile, ma se si è già presenti o si sta ancora pianificando l'infrastruttura della foresta, questa può essere una buona scelta. È possibile centralizzare la distribuzione di Skype for Business Server 2015 in una singola foresta, mentre gli utenti possono cercare, comunicare e visualizzare la presenza di altri utenti in qualsiasi foresta. Tutti gli aggiornamenti dei contatti utente vengono gestiti automaticamente con il software di sincronizzazione.
   
-#### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology"></a>Più foreste in una topologia di foresta di risorse skype for business
+#### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology"></a>Più foreste in una topologia Skype for Business di risorse locali
 <a name="BKMK_multipleforestopology"> </a>
 
 ![Più foreste in un diagramma della topologia a foresta di risorse](../../media/41efa3b6-d9e6-47df-992b-fefcfc39a80d.png)
   
-È supportata anche una topologia di foresta di risorse. è dove una foresta è dedicata all'esecuzione delle applicazioni server, come Microsoft Exchange Server e Skype for Business Server 2015. Questa foresta di risorse ospita anche una rappresentazione sincronizzata degli oggetti utente attivi, ma nessun account utente abilitato all'accesso. La foresta di risorse è quindi un ambiente di servizi condivisi per altre foreste in cui risiedono gli oggetti utente e hanno una relazione di trust a livello di foresta con la foresta di risorse.
+È supportata anche una topologia di foresta di risorse. è qui che una foresta è dedicata all'esecuzione delle applicazioni server, come Microsoft Exchange Server e Skype for Business Server 2015. Questa foresta di risorse ospita anche una rappresentazione sincronizzata degli oggetti utente attivi, ma nessun account utente abilitato all'accesso. La foresta di risorse è quindi un ambiente di servizi condivisi per altre foreste in cui risiedono gli oggetti utente e hanno una relazione di trust a livello di foresta con la foresta di risorse.
   
-Tenere presente Exchange Server possono essere distribuiti nella stessa foresta di risorse di Skype for Business Server o in una foresta diversa.
+Tenere presente Exchange Server possono essere distribuiti nella stessa foresta di risorse Skype for Business Server o in una foresta diversa.
   
 Per distribuire Skype for Business Server 2015 in questo tipo di topologia, è necessario creare un oggetto utente disabilitato nella foresta di risorse per ogni account utente nelle foreste utente (se Microsoft Exchange Server è già presente nell'ambiente, questa operazione potrebbe essere eseguita automaticamente). Sarà quindi necessario uno strumento di sincronizzazione della directory (ad esempio Forefront Identity Manager o FIM) per gestire gli account utente attraverso il ciclo di vita.
   
-#### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology-with-exchange-online"></a>Più foreste in una topologia a foresta di risorse di Skype for Business con Exchange Online
+#### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology-with-exchange-online"></a>Più foreste in una topologia Skype for Business di risorse con Exchange Online
 <a name="BKMK_multipleforestopology"> </a>
 
-Questa topologia è simile alla topologia descritta in Più foreste in una topologia di foresta di risorse [di Skype for Business.](environmental-requirements.md#BKMK_multipleforestopology)
+Questa topologia è simile alla topologia descritta in Più foreste in una Skype for Business di [foresta di risorse.](environmental-requirements.md#BKMK_multipleforestopology)
   
-In questa topologia sono presenti una o più foreste utente e Skype for Business Server viene distribuito in una foresta di risorse dedicata. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e configurati per la distribuzione ibrida con Exchange Online oppure i servizi di posta elettronica possono essere forniti esclusivamente da Exchange Online per gli account locali. Non è disponibile alcun diagramma per questa topologia.
+In questa topologia sono presenti una o più foreste utente e Skype for Business Server in una foresta di risorse dedicata. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e configurati per la distribuzione ibrida con Exchange Online oppure i servizi di posta elettronica possono essere forniti esclusivamente da Exchange Online per gli account locali. Non è disponibile alcun diagramma per questa topologia.
   
-#### <a name="multiple-forests-in-a-resource-forest-topology-with-skype-for-business-online-and-azure-active-directory-connect"></a>Più foreste in una topologia a foresta di risorse con Skype for Business Online e Azure Active Directory Connect
+#### <a name="multiple-forests-in-a-resource-forest-topology-with-skype-for-business-online-and-azure-active-directory-connect"></a>Più foreste in una topologia a foresta di risorse con Skype for Business Online e Azure Active Directory Connessione
 <a name="BKMK_multipleforestopology"> </a>
 
-![Mostra due foreste di Active Directory, una foresta utente e una foresta di risorse. Le due foreste hanno una relazione di trust. Vengono sincronizzati con Microsoft 365 o Office 365 tramite Azure AD Connect. Tutti gli utenti sono abilitati per Skype for Business tramite Microsoft 365 o Office 365.](../../media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
+![Mostra due foreste di Active Directory, una foresta utente e una foresta di risorse. Le due foreste hanno una relazione di trust. Vengono sincronizzati con Microsoft 365 o Office 365 azure AD Connessione. Tutti gli utenti sono abilitati Skype for Business tramite Microsoft 365 o Office 365.](../../media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
   
-Con questo scenario, sono presenti più foreste in locale, con una topologia a foresta di risorse. Esiste una relazione di trust completo tra le foreste di Active Directory. Lo strumento Azure Active Directory Connect viene utilizzato per sincronizzare gli account tra le foreste utente locali e Microsoft 365 o Office 365.
+Con questo scenario, sono presenti più foreste in locale, con una topologia a foresta di risorse. Esiste una relazione di trust completo tra le foreste di Active Directory. Lo Azure Active Directory Connessione viene utilizzato per sincronizzare gli account tra le foreste utente locali e Microsoft 365 o Office 365.
   
- L'organizzazione ha anche Microsoft 365 o Office 365 e usa [Azure Active Directory Connect](/previous-versions/azure/azure-services/dn832695(v=azure.100)) per sincronizzare i propri account locali con Microsoft 365 o Office 365. Gli utenti abilitati per Skype for Business sono abilitati tramite Microsoft 365 o Office 365 e Skype for Business online. Skype for Business Server non è distribuito in locale.
+ L'organizzazione ha anche Microsoft 365 o Office 365 e [](/previous-versions/azure/azure-services/dn832695(v=azure.100)) usa Azure Active Directory Connessione per sincronizzare i propri account locali con Microsoft 365 o Office 365. Gli utenti abilitati per Skype for Business sono abilitati tramite Microsoft 365 o Office 365 e Skype for Business Online. Skype for Business Server non viene distribuito in locale.
   
 L'autenticazione Single #A0 è fornita da una farm di Active Directory Federation Services che si trova nella foresta utente.
   
-In questo scenario, è supportata la distribuzione di Exchange locale, Exchange Online, una soluzione ibrida di Exchange o per non distribuire affatto Exchange. Il diagramma mostra solo Exchange locale, ma anche le altre soluzioni Exchange sono completamente supportate.
+In questo scenario, è supportato distribuire Exchange locale, Exchange Online, una soluzione Exchange ibrida o per non distribuire Exchange affatto. Il diagramma mostra solo Exchange locale, ma anche le altre soluzioni Exchange sono completamente supportate.
   
-#### <a name="multiple-forests-in-a-resource-forest-topology-with-hybrid-skype-for-business"></a>Più foreste in una topologia a foresta di risorse con Skype for Business ibrido
+#### <a name="multiple-forests-in-a-resource-forest-topology-with-hybrid-skype-for-business"></a>Più foreste in una topologia a foresta di risorse con Skype for Business
 <a name="BKMK_multipleforestopology"> </a>
 
-In questo scenario, sono presenti una o più foreste utente locali e Skype for Business viene distribuito in una foresta di risorse dedicata ed è configurato per la modalità ibrida con Skype for Business online. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e possono essere configurati per la distribuzione ibrida con Exchange Online. In alternativa, i servizi di posta elettronica possono essere forniti esclusivamente da Exchange Online per gli account locali.
+In questo scenario, sono presenti una o più foreste utente locali e Skype for Business viene distribuito in una foresta di risorse dedicata ed è configurato per la modalità ibrida con Skype for Business Online. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e possono essere configurati per la distribuzione ibrida con Exchange Online. In alternativa, i servizi di posta elettronica possono essere forniti esclusivamente da Exchange Online per gli account locali.
   
-Per ulteriori informazioni, vedere [Configure a multi-forest environment for hybrid Skype for Business.](../../../SfbHybrid/hybrid/configure-a-multi-forest-environment-for-hybrid.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
+Per ulteriori informazioni, vedere [Configure a multi-forest environment for hybrid Skype for Business](../../../SfbHybrid/hybrid/configure-a-multi-forest-environment-for-hybrid.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json).
   
-## <a name="domain-name-system-dns"></a>DNS (Domain Name System)
+## <a name="domain-name-system-dns"></a>Domain Name System (DNS)
 <a name="DNS"> </a>
 
-Skype for Business Server 2015 richiede DNS per i motivi seguenti:
+Skype for Business Server 2015 richiede DNS, per i motivi seguenti:
   
-- DNS consente a Skype for Business Server 2015 di individuare server o pool interni, consentendo comunicazioni da server a server.
+- DNS consente Skype for Business Server 2015 di individuare server o pool interni, consentendo comunicazioni da server a server.
     
-- DNS consente ai computer client di individuare il pool Front End o il server Standard Edition utilizzato per le transazioni SIP.
+- DNS consente ai computer client di individuare il pool Front End o edizione Standard server utilizzato per le transazioni SIP.
     
 - Associa URL semplici per conferenze ai server che ospitano tali conferenze.
     
 - DNS consente agli utenti esterni e ai computer client di connettersi ai server perimetrali o al proxy inverso HTTP per la messaggistica istantanea o le conferenze.
     
-- Consente ai dispositivi per comunicazioni unificate che non hanno effettuato l'accesso di individuare il pool Front End o il server Standard Edition che esegue il servizio Web Aggiornamento dispositivi per ottenere gli aggiornamenti e inviare i log.
+- Consente ai dispositivi di comunicazioni unificate che non hanno effettuato l'accesso di individuare il pool Front End o il server edizione Standard che esegue il servizio Web Aggiornamento dispositivi per ottenere aggiornamenti e inviare log.
     
 - L'utilizzo di DNS consente ai client mobili di individuare automaticamente le risorse dei servizi Web senza richiedere agli utenti di immettere manualmente gli URL nelle impostazioni del dispositivo.
     
@@ -208,7 +208,7 @@ Skype for Business Server 2015 richiede DNS per i motivi seguenti:
   
 Ed è estremamente importante ricordare che qualsiasi nome in DNS sia identico al nome del computer configurato su qualsiasi server utilizzato da Skype for Business Server 2015. In particolare, non è possibile avere nomi brevi nell'ambiente e devono disporre di FQDN per Generatore di topologie.
   
-Ciò sembra logico per qualsiasi computer già aggiunto a un dominio, ma se si dispone di un server perimetrale che non fa parte del dominio, potrebbe avere un nome breve predefinito, senza suffisso di dominio. Assicurati che non sia così, in DNS o nel server perimetrale o in qualsiasi server o pool di Skype for Business Server 2015.
+Ciò sembra logico per qualsiasi computer già aggiunto a un dominio, ma se si dispone di un server perimetrale che non fa parte del dominio, potrebbe avere un nome breve predefinito, senza suffisso di dominio. Assicurarsi che non sia così, in DNS o nel server perimetrale o in qualsiasi server o pool Skype for Business Server 2015, a questo riguardo.
   
 E sicuramente non usare caratteri Unicode o caratteri di sottolineatura. I caratteri standard (che sono A-Z, a-z, 0-9 e trattini) sono quelli che saranno supportati dal DNS esterno e dalle autorità di certificazione pubbliche (sarà necessario assegnare fqdn al nome del servizio di dominio completo nel certificato, non dimenticare), quindi, se si specifica questo nome, è necessario risparmiare molto.
   
@@ -217,9 +217,9 @@ Per ulteriori informazioni sui requisiti DNS per Rete, vedere la [sezione Networ
 ## <a name="certificates"></a>Certificati
 <a name="Certs"> </a>
 
-Una delle operazioni più importanti che è possibile eseguire prima della distribuzione è assicurarsi di disporre dei certificati in ordine. Skype for Business Server 2015 necessita di un'infrastruttura a chiave pubblica (PKI) per le connessioni TLS (Transport Layer Security) e MTLS (Mutual Transport Layer Security). Fondamentalmente, per comunicare in modo sicuro in modo standardizzato, Skype for Business Server usa i certificati emessi dalle autorità di certificazione (CA).
+Una delle operazioni più importanti che è possibile eseguire prima della distribuzione è assicurarsi di disporre dei certificati in ordine. Skype for Business Server 2015 richiede un'infrastruttura a chiave pubblica (PKI) per le connessioni TLS (Transport Layer Security) e MTLS (Mutual Transport Layer Security). Fondamentalmente, per comunicare in modo sicuro in modo standardizzato, Skype for Business Server certificati emessi dalle Autorità di certificazione (CA).
   
-Questi sono alcuni degli aspetti utilizzati da Skype for Business Server 2015 per:
+Ecco alcuni degli aspetti che Skype for Business Server 2015 usa i certificati per:
   
 - Connessioni TLS tra client e server
     
@@ -243,12 +243,12 @@ La pianificazione dei certificati è un must. Esamini ora un elenco di alcuni as
     
 - La registrazione automatica è supportata per i server interni che eseguono Skype for Business Server 2015.
     
-- La registrazione automatica non è supportata per i server perimetrali di Skype for Business Server 2015.
+- La registrazione automatica non è supportata per i server perimetrali Skype for Business Server 2015.
     
 - Quando si invia una richiesta di certificato Web a un'autorità di certificazione (CA) di Windows Server 2003, è necessario inviarla da un computer che esegue Windows Server 2003 con SP2 oppure Windows XP.
     
 > [!NOTE]
-> Sebbene KB922706 supporti la risoluzione dei problemi relativi alla registrazione dei certificati Web in una registrazione Web di Servizi certificati di Windows Server 2003, non consente di utilizzare Windows Server 2008, Windows Vista o Windows 7 per richiedere un certificato a una CA di Windows Server 2003. 
+> Sebbene KB922706 supporti la risoluzione dei problemi relativi alla registrazione dei certificati Web in una registrazione Web di Servizi certificati di Windows Server 2003, non consente di utilizzare Windows Server 2008, Windows Vista o Windows 7 per richiedere un certificato da una CA di Windows Server 2003. 
   
 > [!NOTE]
 > L'utilizzo dell'algoritmo di firma RSASSA-PSS non è supportato e può causare errori in caso di problemi di accesso e inoltro di chiamata, tra gli altri problemi. 
@@ -270,7 +270,7 @@ Saranno inoltre necessari certificati quando Skype for Business Server 2015 comu
   
 Skype for Business Server 2015 include anche il supporto per (senza richiedere) certificati firmati utilizzando la funzione hash crittografica SHA-256. Per supportare l'accesso esterno tramite SHA-256, il certificato esterno deve essere emesso da un'autorità di certificazione pubblica utilizzando SHA-256.
   
-Per cercare di mantenere le cose semplici, i requisiti dei certificati per i server Standard Edition, i pool Front End e altri ruoli sono stati inseriti nelle tabelle seguenti, con l'contoso.com fittizio utilizzato per esempi (probabilmente si sta usando qualcos'altro per il proprio ambiente). Si tratta di tutti i certificati server Web standard, con chiavi private non esportabili. Alcuni aspetti aggiuntivi da notare:
+Per cercare di mantenere le cose semplici, i requisiti dei certificati per i server edizione Standard, i pool Front End e altri ruoli sono stati inseriti nelle tabelle seguenti, con il contoso.com fittizio usato per esempi (probabilmente si sta usando altro per l'ambiente). Si tratta di tutti i certificati server Web standard, con chiavi private non esportabili. Alcuni aspetti aggiuntivi da notare:
   
 - L'utilizzo chiavi avanzato del server (EKU) viene configurato automaticamente quando si utilizza la procedura guidata per la richiesta di certificati.
     
@@ -278,7 +278,7 @@ Per cercare di mantenere le cose semplici, i requisiti dei certificati per i ser
     
 - In base ai nomi di esempio riportati di seguito, se è stato configurato sipinternal.contoso.com o sipexternal.contoso.com nel DNS, questi devono essere aggiunti al nome alternativo soggetto (SAN) del certificato.
     
-Certificati per i server Standard Edition:
+Certificati per edizione Standard server:
   
 |**Certificato**|**Nome soggetto/Nome comune**|**Nome alternativo soggetto**|**Esempio**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -286,12 +286,12 @@ Certificati per i server Standard Edition:
 |Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=se01.contoso.com; SAN=se01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=se01.contoso.com; SAN= \* .contoso.com  <br/> |Non è possibile sostituire l'FQDN Web interno in Generatore di topologie.  <br/> Se si dispone di più URL semplici Meet, è necessario includerli tutti come SAN.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
 |Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice per l'accesso esterno  <br/> • Soddisfare GLI URL semplici per dominio SIP  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN= \* .contoso.com  <br/> |Se si dispone di più URL semplici Meet, è necessario includerli tutti come nomi alternativi soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
    
-Certificati per i Front End Server in un pool Enterprise Edition Front End:
+Certificati per i Front End Server in edizione Enterprise pool Front End:
   
 |**Certificato**|**Nome soggetto/Nome comune**|**Nome alternativo soggetto**|**Esempio**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|
 |Predefiniti  <br/> |FQDN del pool  <br/> |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |SN=eepool.contoso.com; SAN=eepool.contoso.com; SAN=ee01.contoso.com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.  <br/> |
-|Interno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che NON corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN del pool Skype for Business  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN= \* .contoso.com  <br/> |Se si dispone di più URL semplici Meet, è necessario includerli tutti come nomi alternativi soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
+|Interno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che NON corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN Skype for Business pool  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=ee01.contoso.com; SAN=ee01.contoso.com; SAN= \* .contoso.com  <br/> |Se si dispone di più URL semplici Meet, è necessario includerli tutti come nomi alternativi soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
 |Esterno Web  <br/> |FQDN del pool  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=ee01.contoso.com; SAN=webcon01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=ee01.contoso.com; SAN=webcon01.contoso.com; SAN= \* .contoso.com  <br/> |Se si dispone di più URL semplici Meet, è necessario includerli tutti come nomi alternativi soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
    
 Certificati per il Director:
@@ -299,7 +299,7 @@ Certificati per il Director:
 |**Certificato**|**Nome soggetto/Nome comune**|**Nome alternativo soggetto**|**Esempio**|
 |:-----|:-----|:-----|:-----|
 |Predefiniti  <br/> |Pool Director  <br/> |FQDN del Director, FQDN del pool di server Director.  <br/> Se questo pool è il server di accesso automatico per i client e la corrispondenza DNS rigida è necessaria nei Criteri di gruppo, sono necessarie anche voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |pool.contoso.com; SAN=dir01.contoso.com  <br/> Se il pool di server Director rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |
-|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN del pool Skype for Business  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=dir01.contoso.com; SAN=dir01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=dir01.contoso.com; SAN=dir01.contoso.com SAN= \* .contoso.com  <br/> |
+|Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> • FQDN server  <br/> • FQDN Skype for Business pool  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=dir01.contoso.com; SAN=dir01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=dir01.contoso.com; SAN=dir01.contoso.com SAN= \* .contoso.com  <br/> |
 |Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • Soddisfare GLI URL semplici per dominio SIP  <br/> • URL semplice per l'accesso esterno  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |L'FQDN Web esterno del Director deve essere diverso dal pool Front End o dal Front End Server.  <br/> SN=dir01.contoso.com; SAN=directorwebcon01.contoso.com SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=dir01.contoso.com; SAN=directorwebcon01.contoso.com SAN= \* .contoso.com  <br/> |
    
 Certificati per Mediation Server autonomo:
@@ -316,11 +316,11 @@ Certificati per Survivable Branch Appliance:
    
 ### <a name="certificates-for-your-persistent-chat-server"></a>Certificati per il server Chat persistente
 
-Quando si installa il server Chat persistente, è necessario un certificato emesso dalla stessa CA di quello utilizzato dai server interni di Skype for Business Server 2015. Questa operazione deve essere eseguita per ogni server che esegue Servizi Web Chat persistente per il caricamento/download di file. È consigliabile disporre dei certificati necessari prima di avviare l'installazione di Persistent Chat e, se l'autorità di certificazione è esterna, ancora di più (l'emissione di queste operazioni può richiedere un po' di tempo).
+Quando si installa il server Chat persistente, sarà necessario un certificato emesso dalla stessa AUTORITÀ di certificazione utilizzata dai server interni di Skype for Business Server 2015. Questa operazione deve essere eseguita per ogni server che esegue Servizi Web Chat persistente per Upload/Download. È consigliabile disporre dei certificati necessari prima di avviare l'installazione di Persistent Chat e, se l'autorità di certificazione è esterna, ancora di più (l'emissione di queste operazioni può richiedere un po' di tempo).
   
 ### <a name="certificates-for-external-user-access-edge"></a>Certificati per l'accesso degli utenti esterni (Edge)
 
-Skype for Business Server 2015 supporta  l'utilizzo di un singolo certificato pubblico per l'accesso e le interfacce esterne di Web Conferencing Edge, oltre al servizio di autenticazione A/V, fornito tramite i server perimetrali. L'interfaccia interna di Edge in genere userà un certificato privato emesso dall'autorità di certificazione interna, ma se si preferisce, è possibile utilizzare anche un certificato pubblico per questo, se è di un'autorità di certificazione attendibile.
+Skype for Business Server 2015 supporta l'utilizzo  di un singolo certificato pubblico per le interfacce esterne di Access e Web Conferencing Edge, oltre al servizio di autenticazione A/V, fornito tramite i server perimetrali. L'interfaccia interna di Edge in genere userà un certificato privato emesso dall'autorità di certificazione interna, ma se si preferisce, è possibile utilizzare anche un certificato pubblico per questo, se è di un'autorità di certificazione attendibile.
   
 Anche il proxy inverso utilizzerà un certificato pubblico e crittografa la comunicazione tra il componente e i client e il componente ai server interni utilizzando HTTP (o più precisamente TLS su HTTP).
   
@@ -338,7 +338,7 @@ Quali certificati? I nomi SAN per l'individuazione automatica dei certificati so
     
 Di seguito verranno elencate le specifiche in ogni tabella.
   
-Questo è il punto in cui un po' di pianificazione preliminare è buona, ma a volte è stato distribuito Skype for Business Server 2015 senza l'intenzione di distribuire dispositivi mobili e questo risulta in linea quando si dispone già di certificati nell'ambiente. La loro riemissione tramite un'autorità di certificazione interna è in genere piuttosto semplice, ma con i certificati pubblici di un'autorità di certificazione pubblica, questo può essere un po' più costoso.
+Questo è il punto in cui un po' di pianificazione preliminare è buona, ma a volte è stato distribuito Skype for Business Server 2015 senza l'intenzione di distribuire dispositivi mobili e ciò risulta in linea quando si dispone già di certificati nell'ambiente. La loro riemissione tramite un'autorità di certificazione interna è in genere piuttosto semplice, ma con i certificati pubblici di un'autorità di certificazione pubblica, questo può essere un po' più costoso.
   
 Se è quello che si sta esaminando e se si dispone di molti domini SIP (il che renderebbe più costosa l'aggiunta di SANS), è possibile configurare il proxy inverso per l'utilizzo di HTTP per la richiesta iniziale del servizio di individuazione automatica, invece di usare HTTPS (che è la configurazione predefinita). L'argomento Pianificazione per dispositivi mobili contiene altre info su questo argomento.
   
@@ -369,7 +369,7 @@ Skype for Business Server 2015 è in grado di usare la stessa condivisione file 
   
 - Una condivisione file deve essere in uno spazio di archiviazione collegato diretto (DAS) o in una rete di archiviazione (SAN) e questo include DFS (Distributed File System) e una matrice ridondante di dischi indipendenti (RAID) per gli archivi file. Per ulteriori informazioni su DFS per Windows Server 2012, vedere [questa pagina DFS.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- È consigliabile un cluster condiviso per la condivisione file. Se ne si usa uno, è consigliabile eseguire il clustering di Windows Server 2012 o Windows Server 2012 R2. Anche Windows Server 2008 R2 è accettabile. Perché l'ultima versione di Windows? Le versioni precedenti potrebbero non disporre delle autorizzazioni appropriate per abilitare tutte le funzionalità. È possibile utilizzare Amministrazione cluster per creare le condivisioni file e questo articolo Come creare condivisioni file in un [cluster](https://support.microsoft.com/help/224967/how-to-create-file-shares-on-a-cluster) consente di ottenere informazioni dettagliate.
+- È consigliabile un cluster condiviso per la condivisione file. Se si usa uno, è consigliabile eseguire il cluster Windows Server 2012 o Windows Server 2012 R2. Windows Anche Server 2008 R2 è accettabile. Perché l'ultima Windows? Le versioni precedenti potrebbero non disporre delle autorizzazioni appropriate per abilitare tutte le funzionalità. È possibile utilizzare Amministrazione cluster per creare le condivisioni file e questo articolo Come creare condivisioni file in un [cluster](https://support.microsoft.com/help/224967/how-to-create-file-shares-on-a-cluster) consente di ottenere informazioni dettagliate.
     
 > [!CAUTION] 
 > È necessario sapere che l'utilizzo di nas (Network Attached Storage) come condivisione file non è supportato, quindi usa una delle opzioni elencate in precedenza. 

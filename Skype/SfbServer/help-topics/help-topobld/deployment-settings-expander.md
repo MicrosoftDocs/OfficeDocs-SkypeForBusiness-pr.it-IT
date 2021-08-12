@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7220ec1f-38cb-4297-870e-591a832cd2f2
 description: 'È possibile modificare le proprietà di una distribuzione esistente con le sezioni seguenti:'
-ms.openlocfilehash: a49fe0872d83011c433d011e1bb5ce7a348f1bd2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 79a2ab248e27037edf62ade9a3e9689d06be50c90a5fff33ab5b61acdaa5c355
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333718"
 ---
 # <a name="deployment-settings-expander"></a>Espansione delle impostazioni di distribuzione
 
@@ -73,7 +73,7 @@ Dopo aver apportato tutte le modifiche desiderate nella pagina Modifica propriet
 > [!IMPORTANT]
 > Dopo aver definito, pubblicato e distribuito l'archivio di gestione centrale per l'infrastruttura, non sarà possibile cambiare la posizione di tale archivio senza spostarlo in un altro Front End tramite un processo esterno.
 
-Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, vedere [Move-CsManagementServer](/powershell/module/skype/move-csmanagementserver?view=skype-ps) in Windows PowerShell cmdlet.
+Per informazioni dettagliate sullo spostamento dell'archivio di gestione centrale, vedere [Move-CsManagementServer](/powershell/module/skype/move-csmanagementserver?view=skype-ps) nel Windows PowerShell cmdlet.
 
 ## <a name="see-also"></a>Vedere anche
 

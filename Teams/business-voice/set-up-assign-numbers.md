@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni su come assegnare Microsoft 365 Business Voice numeri di telefono agli utenti dell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0792b644c97194867c448ed67fb574bfb7735325
-ms.sourcegitcommit: 38fa37d83704200911866cf017566fcb128ea2fe
+ms.openlocfilehash: 6d4b32b6a255ef806e86848d068dc988548988a75fb76c16d2dc4334b0d51d7d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "53105158"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54282849"
 ---
 # <a name="step-5-assign-business-voice-phone-numbers-to-your-users"></a>Passaggio 5: Assegnare numeri di telefono di VoIP aziendale agli utenti
 

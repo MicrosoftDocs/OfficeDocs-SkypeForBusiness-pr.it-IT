@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 67bd625d-f093-4218-a869-768813c54dad
-description: 'Per configurare le proprietà generali del Director o di un pool di server Director:'
-ms.openlocfilehash: e31dcf72297bfcbc9afd4f45e232de71c5620b7b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Per configurare le proprietà generali del Server Director o di un pool di server Director:'
+ms.openlocfilehash: 7f0e7e80f024c3245907750deeb5c7f30bf3fd7b27c5f9283dd2e49544495a3a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333708"
 ---
 # <a name="director-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Director per Lync Server 2010
  
-Per configurare le **proprietà generali** del Director o di un pool di server Director:
+Per configurare le **proprietà generali** del Server Director o di un pool di server Director:
   
- **FQDN:** digitare il nome di dominio completo del Director o di un pool di server Director
+ **FQDN**: digitare il nome di dominio completo del Director o di un pool di server Director
   
  **Associazioni**
   
- **Archivio file:** selezionare nell'elenco l'archivio file per il Director o un pool di server Director
+ **Archivio file:** selezionare dall'elenco l'archivio file per il Server Director o un pool di server Director
   
 Per definire un nuovo archivio file, fare clic su **Nuovo**.
   

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 34e1140fe1551c0e0bc52449735755fc6d6428ca
-ms.sourcegitcommit: 36924dc54fe7b09607b07d7543fe7e39eb4d2483
+ms.openlocfilehash: 749fa9a3a4264f5e4231082dcf097151377fff069bf5b123afa6b1abc5ba017b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52684443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54349468"
 ---
 # <a name="use-financial-team-templates-in-the-admin-center"></a>Usare i modelli di team finanziario nell'interfaccia di amministrazione
 
@@ -44,7 +44,7 @@ Centralizzare la collaborazione per il team di crisi tra le business unit e cont
 
 | Tipologia di modello base|baseTemplateId | Proprietà del modello base |
 | ------------------|-- |----------------------------------------------------- |
-| Collaborare alla crisi globale o all'evento|`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` |Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Continuità aziendale</li><li>Lavorare in remoto</li><li>Messaggi interni</li><li>Comms esterni</li><li>Richiesta di approvazione</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento per dirigenti</li></ul>App: <ul><li>Complimenti</li><li>Wiki</li><li>Sito Web</li><li>Programmazione</li></ul>|
+| Collaborare alla crisi globale o all'evento|`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` |Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Continuità aziendale</li><li>Lavorare in remoto</li><li>Messaggi interni</li><li>Comms esterni</li><li>Approvazioni richiesta</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento per dirigenti</li></ul>App: <ul><li>Complimenti</li><li>Wiki</li><li>Sito Web</li><li>Programmazione</li></ul>|
 ||||
 
 ## <a name="collaborate-within-a-bank-branch"></a>Collaborare all'interno di una filiale bancaria
@@ -53,5 +53,5 @@ Centralizzare la collaborazione per i dipendenti della filiale bancaria in Huddl
 
 | Tipologia di modello base |baseTemplateId| Proprietà del modello base |
 | ------------------ |--|----------------------------------------------------- |
-|Collaborare all'interno di una filiale bancaria|`com.microsoft.teams.template.CollaborateWithinABankBranch` |Canali: <ul><li>Generale<li>Annunci</li><li>Briefing</li><li>Riunioni con i clienti</li><li>Richiesta di approvazione</li><li>Coaching</li><li>Sviluppo di competenze</li><li>Elaborazione dei prestiti</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Cose divertenti</li><li>Conformità</li></ul>App:<ul><li>Complimenti</li></ul>|
+|Collaborare all'interno di una filiale bancaria|`com.microsoft.teams.template.CollaborateWithinABankBranch` |Canali: <ul><li>Generale<li>Annunci</li><li>Briefing</li><li>Riunioni con i clienti</li><li>Approvazioni Richiedi</li><li>Coaching</li><li>Sviluppo di competenze</li><li>Elaborazione dei prestiti</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Cose divertenti</li><li>Conformità</li></ul>App:<ul><li>Complimenti</li></ul>|
 ||||

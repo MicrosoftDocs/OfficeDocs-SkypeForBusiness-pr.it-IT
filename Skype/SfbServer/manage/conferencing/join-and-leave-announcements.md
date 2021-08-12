@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: cb09f9c2-c6dc-4083-b45a-8b6773341373
-description: 'Riepilogo: informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server.'
-ms.openlocfilehash: 796266dd3b571e525f657d5dbe712d1577779cae
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze Skype for Business Server.'
+ms.openlocfilehash: 597bf27f574413364f1d16efc31704abe3c107f143f95d9469234d84d245628b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54290384"
 ---
 # <a name="manage-conference-join-and-leave-announcements-in-skype-for-business-server"></a>Gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire gli annunci di partecipazione e di lasciare conferenze in Skype for Business Server.
   
-Quando gli utenti con accesso esterno aderiscono o escono da una conferenza, l'applicazione Annuncio conferenza può annunciare l'ingresso o l'uscita riproducendo un tono o pronunciando i nomi. È possibile modificare il funzionamento degli annunci utilizzando Skype for Business Server Management Shell e il cmdlet **Set-CsDialinConferencing** con i parametri seguenti:
+Quando gli utenti con accesso remoto aderiscono o escono da una conferenza, il applicazione Annuncio conferenza può annunciare l'ingresso o l'uscita riproducendo un tono o pronunciando i propri nomi. È possibile modificare il funzionamento degli annunci utilizzando Skype for Business Server Management Shell e il cmdlet **Set-CsDialinConferencing** con i parametri seguenti:
   
 - EnableNameRecording - Determina se ai partecipanti anonimi viene richiesto di registrare il proprio nome prima di accedere alla conferenza. Il valore predefinito è "$true" e indica che ai partecipanti anonimi viene richiesto di specificare il proprio nome durante l'accesso a una conferenza. I partecipanti autenticati non registrano il proprio nome perché viene utilizzato il nome visualizzato.
     
@@ -38,7 +38,7 @@ Quando gli utenti con accesso esterno aderiscono o escono da una conferenza, l'a
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo Cs-ServerAdministrator o CsAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Eseguire il comando seguente al prompt:
     
@@ -46,7 +46,7 @@ Quando gli utenti con accesso esterno aderiscono o escono da una conferenza, l'a
    Get-CsDialinConferencingConfiguration
    ```
 
-Questo cmdlet consente di recuperare informazioni sulla necessità o meno ai partecipanti di registrare il proprio nome durante la partecipazione a una conferenza e su come Skype for Business Server risponde quando i partecipanti aderiscono o abbandonano una conferenza telefonica con accesso esterno.
+Questo cmdlet consente di recuperare informazioni sull'eventuale necessità ai partecipanti di registrare il proprio nome quando si partecipa a una conferenza e su come Skype for Business Server risponde quando i partecipanti aderiscono o abbandonano una conferenza telefonica con accesso esterno.
     
 4. Eseguire il comando seguente al prompt:
     

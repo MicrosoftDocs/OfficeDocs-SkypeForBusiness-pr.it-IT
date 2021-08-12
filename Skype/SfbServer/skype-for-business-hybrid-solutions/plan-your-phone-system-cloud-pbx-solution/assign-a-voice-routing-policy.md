@@ -18,26 +18,26 @@ ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: c7f78f23-b74f-402f-bedb-4cc308718f5b
-description: 'Riepilogo: leggere questo argomento per informazioni su come assegnare un criterio vocale agli utenti che usano Sistema telefonico con connettività PSTN locale.'
-ms.openlocfilehash: 43e2b560cc0886bacd6faaec6c113ee1f237eff7
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti Sistema telefonico con connettività PSTN locale.'
+ms.openlocfilehash: f01fcc314cd618150df2c67a2de8b4ea3ee8f9bd7fdb5f4a4c8b3ae24537ee3f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54282998"
 ---
 # <a name="assign-a-voice-routing-policy"></a>Assegnare un criterio di routing vocale
  
 > [!Important]
-> Skype for Business Online verrà ritirato il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale tramite Skype for Business Server o Cloud Connector Edition e Skype for Business online non sarà più supportata.  Informazioni su come connettere la rete di telefonia locale a Teams tramite [routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
+> Skype for Business Online verrà ritirato il 31 luglio 2021 dopo il quale il servizio non sarà più accessibile.  Inoltre, la connettività PSTN tra l'ambiente locale tramite Skype for Business Server o Cloud Connector Edition e Skype for Business Online non sarà più supportata.  Informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
 
-**Riepilogo:** Leggere questo argomento per informazioni su come assegnare un criterio vocale agli utenti che usano Sistema telefonico con connettività PSTN locale. 
+**Riepilogo:** Leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti Sistema telefonico con connettività PSTN locale. 
   
-Una volta che un utente si trova su Skype for Business online e usa Sistema telefonico con connettività PSTN locale, verranno applicati due criteri vocali. Uno è un criterio di routing vocale locale che verrà assegnato in locale. Questo criterio può essere globale o specifico dell'utente e definisce quali record di utilizzo PSTN sono associati all'utente. In questo argomento viene illustrato come assegnare questo criterio.
+Quando un utente si trova Skype for Business Online e usa Sistema telefonico con connettività PSTN locale, verranno applicati due criteri vocali. Uno è un criterio di routing vocale locale che verrà assegnato in locale. Questo criterio può essere globale o specifico dell'utente e definisce quali record di utilizzo PSTN sono associati all'utente. In questo argomento viene illustrato come assegnare questo criterio.
   
-Gli altri criteri vocali definiscono le funzionalità di chiamata disponibili per l'utente. questo criterio vocale è definito da Microsoft ed è identico per tutti i sistemi telefonici con utenti di connettività PSTN locali. Viene assegnato automaticamente agli utenti del sistema telefonico.
+Gli altri criteri vocali definiscono le funzionalità di chiamata disponibili per l'utente. questo criterio vocale è definito da Microsoft ed è identico per tutte le Sistema telefonico con gli utenti di connettività PSTN locali. Viene assegnato automaticamente agli Sistema telefonico utenti.
   
-||**Utente locale**|**Sistema telefonico con utente di connettività PSTN locale**|
+||**Utente locale**|**Sistema telefonico con l'utente di connettività PSTN locale**|
 |:-----|:-----|:-----|
 |Funzionalità di chiamata definite in  <br/> |Criteri vocali  <br/> |Criteri vocali predefiniti, assegnati automaticamente quando l'utente ha una licenza per Sistema telefonico.  <br/> |
 |Record di utilizzo PSTN associati a  <br/> |Criteri vocali  <br/> |Criterio di routing vocale, assegnato mentre l'utente è ancora in locale.  <br/> |
@@ -46,13 +46,13 @@ Eseguire i passaggi seguenti usando la distribuzione locale, mentre l'utente è 
   
 ## <a name="using-a-global-voice-routing-policy"></a>Utilizzo di un criterio di routing vocale globale
 
-Prima di utilizzare un criterio di routing vocale globale per il sistema telefonico con utenti di connettività PSTN locale, è necessario aggiungere i record di utilizzo PSTN al criterio.
+Prima di utilizzare un criterio di routing vocale globale per il Sistema telefonico con gli utenti di connettività PSTN locale, è necessario aggiungere record di utilizzo PSTN al criterio.
   
 ### <a name="to-assign-pstn-usage-records-to-the-global-voice-routing-policy"></a>Per assegnare record di utilizzo PSTN al criterio di routing vocale globale
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Aggiungere i record di utilizzo PSTN al criterio:
     
@@ -72,7 +72,7 @@ Prima di utilizzare un criterio di routing vocale globale per il sistema telefon
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Creare un nuovo criterio di routing vocale:
     
@@ -96,7 +96,7 @@ Indipendentemente dal fatto che si utilizzi il criterio di routing vocale global
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Assegnare un criterio vocale esistente a un utente:
     

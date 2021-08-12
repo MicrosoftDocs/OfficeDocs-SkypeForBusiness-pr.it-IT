@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 461361a0-9aa9-469d-ace0-dc70b95cd4a3
-description: Importa la configurazione di Skype for Business Cloud Connector Edition da un file locale al server host Cloud Connector.
-ms.openlocfilehash: 626ba52d4d67f99dd67d3d1f91d26d6e6d03f95e
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Importa la Skype for Business Cloud Connector Edition da un file locale al server host Cloud Connector.
+ms.openlocfilehash: 4ac32f460c2c493f5d78f1a38adcdd0728763bbbcf57a67470823fb88d407d09
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41799856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54349498"
 ---
 # <a name="import-ccconfiguration"></a>Import-CcConfiguration
  
-Importa la configurazione di Skype for Business Cloud Connector Edition da un file locale al server host Cloud Connector.
+Importa la Skype for Business Cloud Connector Edition da un file locale al server host Cloud Connector.
   
 ```powershell
 Import-CcConfiguration [-Force] [<CommonParameters>]
@@ -33,7 +33,7 @@ Import-CcConfiguration [-Force] [<CommonParameters>]
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente il CloudConnector.ini dalla directory appliance dell'istanza di Cloud Connector alla directory %SystemDrive%\ProgramData\CloudConnector:
+L'esempio seguente copia il CloudConnector.ini dalla directory appliance dell'istanza di Cloud Connector nella directory %SystemDrive%\ProgramData\CloudConnector:
   
 ```powershell
 Import-CcConfiguration
@@ -42,7 +42,7 @@ Import-CcConfiguration
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="Examples"> </a>
 
-Questo cmdlet copia il CloudConnector.ini dalla directory appliance dell'applicazione Cloud Connector alla directory %SystemDrive%\ProgramData\CloudConnector. La directory dell'appliance viene specificata utilizzando il cmdlet Set-CcApplianceDirectory locale. Il cmdlet sovrascriverà qualsiasi file esistente in %SystemDrive%\ProgramData\CloudConnector. Questo comando si applica a Cloud Connector Edition versione 2.0.1 e successive.
+Questo cmdlet copia il CloudConnector.ini dalla directory appliance dell'appliance Cloud Connector alla directory %SystemDrive%\ProgramData\CloudConnector. La directory dell'appliance viene specificata utilizzando il cmdlet Set-CcApplianceDirectory. Il cmdlet sovrascriverà qualsiasi file esistente in %SystemDrive%\ProgramData\CloudConnector. Questo comando si applica a Cloud Connector Edition versione 2.0.1 e successive.
   
 ## <a name="parameters"></a>Parametri
 <a name="Examples"> </a>

@@ -1,5 +1,5 @@
 ---
-title: Fase 6 Passare dalla distribuzione pilota all'ambiente di produzione
+title: Fase 6 Passaggio dalla distribuzione pilota all'ambiente di produzione
 ms.reviewer: ''
 ms.author: serdars
 author: serdarsoysal
@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Negli argomenti di questa sezione vengono descritte le attività che è necessario completare prima di spostare la distribuzione di Skype for Business Server 2019 da una distribuzione pilota a una distribuzione a livello di produzione.
-ms.openlocfilehash: 2af1d78d866a935a975b3baa520f54fc780b0922
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: aaeb1f30f71d802e91e7243ce6ce07c6da57167421d5c4f5ba98ea855c20e240
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752488"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315072"
 ---
 # <a name="phase-6-move-from-pilot-deployment-into-production"></a>Fase 6: passare dalla distribuzione pilota alla produzione
 
@@ -30,6 +30,6 @@ Negli argomenti di questa sezione vengono descritte le attività che è necessar
     
 - [Modificare gli URL semplici dopo la migrazione](change-simple-urls-after-migration.md)
     
-- [Spostare gli utenti rimanenti in Skype for Business Server 2019](move-remaining-users.md)
+- [Spostare gli utenti rimanenti Skype for Business Server 2019](move-remaining-users.md)
     
 

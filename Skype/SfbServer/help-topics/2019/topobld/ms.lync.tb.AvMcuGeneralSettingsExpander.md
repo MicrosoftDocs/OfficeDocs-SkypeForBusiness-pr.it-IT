@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 16449f7c-dd2c-4b51-b428-8fba42f93f83
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le proprietà di un pool A/V Conferencing Server già definito, è possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 8016993620d73a498b4549685e3c985a78e7f3d1
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 61861f81d26e016b335961e773b2d7cf199ce47cbaa939fd6265fbfd7ef7ec60
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49811296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300012"
 ---
 # <a name="av-mcu-general-settings-expander"></a>Espansione delle impostazioni generali di MCU AV
  

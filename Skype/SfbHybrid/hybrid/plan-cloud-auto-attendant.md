@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica dell'uso di un operatore automatico cloud con Skype for Business Server 2019
-ms.openlocfilehash: 61ffefab04dc70167d768332132217ebd6564e31
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: 0a9eaa3498541371314f268f2d4dfaef2200ab457267fe98f631430ce7c2f035
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53509797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315052"
 ---
 # <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici cloud
 

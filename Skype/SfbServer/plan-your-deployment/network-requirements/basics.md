@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 2618cfa1-2e2c-4f1d-a5e5-70a0286591a7
-description: Windows Server 2016 dispone di software incorporato in grado di fornire servizi DNS, pertanto è possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.
-ms.openlocfilehash: 2e8655cb53228fbfe23bc62aaebbdfd5a02ce4f4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.
+ms.openlocfilehash: e9187b5a619a55b4525d32eb20272e32cae514c2533d9c78f32d7ffed77d30ad
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54283088"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
  
-Windows Server 2016 dispone di software incorporato in grado di fornire servizi DNS, pertanto è possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri [DNS.](/windows-server/networking/dns/deploy/dns-policy-scenario-guide) Se si preferisce, è possibile scegliere una soluzione di terze parti.
+Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri [DNS.](/windows-server/networking/dns/deploy/dns-policy-scenario-guide) Se si preferisce, è possibile scegliere una soluzione di terze parti.
   
-Come procedura consigliata, è consigliabile dedicare un server specifico nell'implementazione per fornire DNS. Si potrebbe potenzialmente configurarlo in uno dei server dedicati a uno dei ruoli del server Skype for Business, ma se il server fosse anche parte di un pool e fosse stato disattivato per errore, Skype for Business non funzionarebbe fino a quando i servizi DNS non vengono nuovamente stabiliti.
+Come procedura consigliata, è consigliabile dedicare un server specifico nell'implementazione per fornire DNS. Si potrebbe potenzialmente configurarlo in uno dei server dedicati a uno dei ruoli del server di Skype for Business, ma se il server fosse anche parte di un pool e fosse stato disattivato per errore Skype for Business non funzionarebbe fino a quando i servizi DNS non vengono nuovamente stabiliti.
   
 ## <a name="dns-records"></a>Record DNS
 
@@ -51,7 +51,7 @@ Il nome di dominio SIP di un'organizzazione in genere è allineato agli indirizz
   
 ### <a name="multiple-sip-domains"></a>Più domini SIP
 
- L'organizzazione potrebbe in alcuni casi richiedere diversi domini SIP. Ad esempio, se Fabrikam.com è stato acquisito da contoso.com, potrebbe essere necessario creare un nuovo dominio SIP riconosciuto e accettato da Skype for Business Server. In questo caso, è necessario creare un set aggiuntivo di tutti i record DNS che utilizzano contoso.com, con nuovi FQDN che mostrano dove inviare le richieste per Fabrikam.
+ L'organizzazione potrebbe in alcuni casi richiedere diversi domini SIP. Ad esempio, se Fabrikam.com è stato acquisito da contoso.com, potrebbe essere necessario creare un nuovo dominio SIP che Skype for Business Server riconosce e accetterà la connessione da. In questo caso, è necessario creare un set aggiuntivo di tutti i record DNS che utilizzano contoso.com, con nuovi FQDN che mostrano dove inviare le richieste per Fabrikam.
   
 ## <a name="dns-load-balancing"></a>Bilanciamento del carico DNS
 <a name="BK_NameSIP"> </a>

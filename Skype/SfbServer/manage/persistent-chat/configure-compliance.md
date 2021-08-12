@@ -13,20 +13,20 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 24e36ea3-fb8a-45a4-b6b7-38c2e256b218
 description: 'Riepilogo: informazioni su come configurare il servizio conformità del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: ee7dbc3ad8e7eedcadcc60850e35b753c5fadb43
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: ff49a32009b60447823675b90ee4b633ff8f0cb7cfdf3529a3afc26f3c067f79
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54349308"
 ---
 # <a name="configure-the-compliance-service-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Configurare il servizio di conformità per il server Chat persistente in Skype for Business Server 2015
 
-**Riepilogo:** Informazioni su come configurare il servizio conformità del server Chat persistente in Skype for Business Server 2015.
+**Riepilogo:** Informazioni su come configurare il servizio Conformità server Chat persistente in Skype for Business Server 2015.
 
-La conformità di Persistent Chat consente agli amministratori di gestire un archivio dei messaggi di Persistent Chat e delle attività. Il servizio di conformità registra e archivia i dati relativi a ogni conversazione del server Chat persistente, ad esempio quando un partecipante:
+La conformità di Persistent Chat consente agli amministratori di gestire un archivio dei messaggi di Persistent Chat e delle attività. Il servizio di conformità registra e archivia i dati relativi a ogni conversazione del server Chat persistente, incluso quando un partecipante:
 
-- Partecipa a una chat room di Persistent Chat
+- Partecipa a una chat room persistente
 
 - Lascia una chat room
 
@@ -41,11 +41,11 @@ La conformità di Persistent Chat consente agli amministratori di gestire un arc
 Queste informazioni possono essere recuperate dal database SQL conformità in base alle esigenze. 
 
 > [!NOTE]
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. Le stesse funzionalità sono disponibili in Teams. Per altre informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare Chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
 
-## <a name="configure-the-compliance-service-by-using-windows-powershell"></a>Configurare il servizio di conformità utilizzando Windows PowerShell
+## <a name="configure-the-compliance-service-by-using-windows-powershell"></a>Configurare il servizio di conformità tramite Windows PowerShell
 
-Dopo aver abilitato il servizio di conformità tramite Generatore di topologie, è possibile configurare il servizio utilizzando il cmdlet **Set-CsPersistenChatComplianceConfiguration:**
+Dopo aver abilitato il servizio di conformità utilizzando Generatore di topologie, è possibile configurare il servizio utilizzando il cmdlet **Set-CsPersistenChatComplianceConfiguration:**
 
 ```PowerShell
 Set-CsPersistentChatComplianceConfiguration [-Identity <XdsIdentity>] <COMMON PARAMETERS>
@@ -59,25 +59,25 @@ Set-CsPersistentChatComplianceConfiguration [-Instance <PSObject>] <COMMON PARAM
 
 È possibile impostare i parametri seguenti:
 
-- AdapterType: consente di specificare il tipo di scheda. Un adattatore è un prodotto di terze parti che converte i dati nel database di conformità in un formato specifico. Xml è l'impostazione predefinita.
+- AdapterType - Consente di specificare il tipo di scheda. Un adattatore è un prodotto di terze parti che converte i dati nel database di conformità in un formato specifico. XML è l'impostazione predefinita.
 
-- OneChatRoomPerOutputFile- Questo parametro consente di specificare che devono essere creati rapporti separati per ogni chat room.
+- OneChatRoomPerOutputFile - Questo parametro consente di specificare che devono essere creati report separati per ogni chat room.
 
-- AddChatRoomDetails: se abilitato, questo parametro registra ulteriori dettagli su ogni chat room nel database. Poiché questa impostazione può aumentare notevolmente le dimensioni del database, è disabilitata per impostazione predefinita.
+- AddChatRoomDetails - Se abilitato, questo parametro registra ulteriori dettagli su ogni chat room nel database. Poiché questa impostazione può aumentare notevolmente le dimensioni del database, è disabilitata per impostazione predefinita.
 
 - AddUserDetails: se abilitato, questo parametro registra ulteriori dettagli su ogni utente di chat room nel database. Poiché questa impostazione può aumentare notevolmente le dimensioni del database, è disabilitata per impostazione predefinita.
 
-- Identity: questo parametro consente di impostare le impostazioni di conformità nell'ambito di una raccolta specifica, inclusi i livelli globali, di sito e di servizio. Il valore predefinito è il livello globale. 
+- Identity: questo parametro consente di impostare le impostazioni di conformità per una raccolta specifica, inclusi i livelli globali, di sito e di servizio. Il valore predefinito è il livello globale. 
 
-- RunInterval: questo parametro determina il tempo prima che il server crei il successivo file di output di conformità (il valore predefinito è 15 minuti).
+- RunInterval - Questo parametro determina l'intervallo di tempo prima che il server crei il file di output di conformità successivo (il valore predefinito è 15 minuti).
 
 ## <a name="use-a-customized-compliance-adapter"></a>Usare una scheda di conformità personalizzata
 
-È possibile scrivere un adattatore personalizzato anziché utilizzare l'oggetto XmlAdapter installato con il server Chat persistente. A tale scopo, devi fornire un assembly .NET Framework contenente una classe pubblica che implementa **l'interfaccia IComplianceAdapter.** È necessario inserire questo assembly nella cartella di installazione del server Chat persistente di ogni server nel pool di server Chat persistente. Uno qualsiasi dei compliance server può fornire dati di conformità alla scheda, ma i server di conformità non forniranno dati di conformità duplicati a più istanze della scheda.
+È possibile scrivere un adattatore personalizzato anziché utilizzare l'oggetto XmlAdapter installato con il server Chat persistente. A tale scopo, è necessario fornire un assembly .NET Framework contenente una classe pubblica che implementa **l'interfaccia IComplianceAdapter.** È necessario inserire questo assembly nella cartella di installazione del server Chat persistente di ogni server nel pool di server Chat persistente. Uno qualsiasi dei server di conformità può fornire dati di conformità alla scheda, ma i server di conformità non forniranno dati di conformità duplicati a più istanze della scheda.
 
 L'interfaccia è definita nell'assembly Compliance.dll nello spazio dei nomi  `Microsoft.Rtc.Internal.Chat.Server.Compliance` . L'interfaccia definisce due metodi che devono essere implementati dall'adattatore personalizzato.
 
-Il server Conformità chat persistente chiamerà il metodo seguente al primo caricamento dell'adattatore. Contiene  `AdapterConfig` la configurazione di conformità di Persistent Chat rilevante per la scheda di conformità:
+Il server Conformità Chat persistente chiamerà il metodo seguente al primo caricamento della scheda. Contiene  `AdapterConfig` la configurazione di conformità di Persistent Chat rilevante per la scheda di conformità:
 
 ```cpp
 void SetConfig(AdapterConfig config)
@@ -89,11 +89,11 @@ Il server Di conformità di Persistent Chat chiama il metodo seguente a interval
 void Translate(ConversationCollection conversations)
 ```
 
-Contiene  `ConversationCollection` le informazioni sulla conversazione raccolte dall'ultima chiamata al metodo.
+Contiene  `ConversationCollection` le informazioni sulla conversazione raccolte dall'ultima chiamata a questo metodo.
 
 ## <a name="customize-the-xslt-definition-file"></a>Personalizzare il file di definizione XSLT
 
-I dati di conformità vengono recapitati in formato XML, che è possibile trasformare nel formato più adatto alla propria organizzazione, utilizzando un file di definizione XSLT. Questo argomento descrive il file XML creato dal servizio di conformità. Sono inoltre disponibili esempi dei file di definizione XSLT e dei file di output.
+I dati di conformità vengono recapitati in formato XML, che è possibile trasformare nel formato più adatto all'organizzazione, utilizzando un file di definizione XSLT. Questo argomento descrive il file XML creato dal servizio di conformità. Sono inoltre disponibili esempi dei file di definizione XSLT e dei file di output.
 
 ### <a name="output-format"></a>Formato di output
 
@@ -114,7 +114,7 @@ L'output del servizio di conformità è classificato per conversazione (elemento
 </Conversations>
 ```
 
-Un elemento Conversation contiene quattro elementi (Channel, FirstMessage, StartTimeUTC e EndTimeUTC). L'elemento Channel contiene l'URI (Uniform Resource Identifier) della chat room e l'elemento FirstMessage descrive il primo messaggio nell'elemento Messages. Gli elementi StartTimeUTC ed EndTimeUTC forniscono l'ora di inizio e di fine per la conversazione, come illustrato nell'esempio di codice seguente:
+Un elemento Conversation contiene quattro elementi (Channel, FirstMessage, StartTimeUTC e EndTimeUTC). L'elemento Channel contiene l'URI (Uniform Resource Identifier) della chat room e l'elemento FirstMessage descrive il primo messaggio nell'elemento Messages. Gli elementi StartTimeUTC e EndTimeUTC forniscono l'ora di inizio e di fine per la conversazione, come illustrato nell'esempio di codice seguente:
 
 ```xml
 <FirstMessage type="JOIN" content="" id="0">
@@ -138,7 +138,7 @@ Nella tabella seguente vengono descritti gli attributi del messaggio Type, Conte
 
 |**Attributo**|**Descrizione**|**Facoltativo/Obbligatorio**|
 |:-----|:-----|:-----|
-|Tipo  <br/> |Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella Tipi di messaggio dell'elemento Messages.  <br/> |Obbligatorio  <br/> |
+|Tipo  <br/> |Specifica il tipo di messaggio. I tipi di messaggio sono descritti nella tabella Tipi di messaggio dell'elemento Messages.  <br/> |Obbligatoria  <br/> |
 |Contenuto  <br/> |Contenuto del messaggio. Questo attributo non è utilizzato per i messaggi con Type Join o Part.  <br/> |Facoltativo  <br/> |
 |ID  <br/> |Specifica l'ID univoco del contenuto. Questo attributo è utilizzato solo con i messaggi con Type Chat.  <br/> |Facoltativo  <br/> |
 
@@ -148,13 +148,13 @@ Ogni elemento Sender contiene cinque attributi, ovvero Username, ID, Email, Inte
 
 |**Attributo**|**Descrizione**|**Facoltativo/Obbligatorio**|
 |:-----|:-----|:-----|
-|Nome utente  <br/> |Nome del mittente.  <br/> |Facoltativo  <br/> |
-|ID  <br/> |ID univoco del mittente.  <br/> |Obbligatorio  <br/> |
+|Username  <br/> |Nome del mittente.  <br/> |Facoltativo  <br/> |
+|ID  <br/> |ID univoco del mittente.  <br/> |Obbligatoria  <br/> |
 |Posta elettronica  <br/> |Indirizzo di posta elettronica del mittente.  <br/> |Facoltativo  <br/> |
 |Interno  <br/> |Determina se l'utente è interno o federato. Se il valore è impostato su true, l'utente è interno.  <br/> |Facoltativo  <br/> |
-|URI  <br/> |URI SIP dell'utente.  <br/> |Obbligatorio  <br/> |
+|URI  <br/> |URI SIP dell'utente.  <br/> |Obbligatoria  <br/> |
 
-Negli esempi seguenti vengono illustrati i tipi di messaggio che l'elemento Messages può contenere. Sono inoltre disponibili esempi di utilizzo per ogni elemento.
+Negli esempi seguenti vengono mostrati i tipi di messaggio che l'elemento Messages può contenere. Sono inoltre disponibili esempi di utilizzo per ogni elemento.
 
 Partecipa: un utente partecipa a una chat room.
 
@@ -174,7 +174,7 @@ Parte: un utente lascia una chat room.
 </Message>
 ```
 
-Chat: l'indirizzo di posta elettronica del mittente.
+Chat : indirizzo di posta elettronica del mittente.
 
 ```xml
 <Message type="CHAT" content="hello" id="1">
@@ -183,7 +183,7 @@ Chat: l'indirizzo di posta elettronica del mittente.
 </Message>
 ```
 
-Backchat: un utente richiede il contenuto dalla cronologia delle chat.
+Backchat - Un utente richiede il contenuto dalla cronologia delle chat.
 
 ```xml
 <Message type="BACKCHAT" content="backchatcontent" id="0">
@@ -201,7 +201,7 @@ Caricamento file: un utente carica un file.
 </Message>
 ```
 
-Download di file: un utente scarica un file.
+Download file: un utente scarica un file.
 
 ```xml
 <Message type="FILEDOWNLOAD" content="006074ca-24f0-4b35-8bd8-98006a2d1aa8.txt" id="0">
@@ -212,7 +212,7 @@ Download di file: un utente scarica un file.
 
 ### <a name="default-persistent-chat-output-xsd-and-example-xsl-transform"></a>XSD di output di Persistent Chat predefinito e trasformazione XSL di esempio
 
-L'esempio di codice seguente contiene l'output predefinito del Compliance Server:
+L'esempio di codice seguente contiene l'output predefinito di Compliance Server:
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>

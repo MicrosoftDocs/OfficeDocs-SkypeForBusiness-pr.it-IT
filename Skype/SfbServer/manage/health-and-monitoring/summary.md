@@ -1,5 +1,5 @@
 ---
-title: Rapporto riepilogativo qualità multimediale in Skype for Business Server
+title: Rapporto riepilogativo qualità multimediale Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,20 +12,20 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8bd59ad6-3087-49c8-b692-5573fe2ffcd8
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: 6866c5889671e4ad66c7016dd23e783ee2b786ca
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d8c8bcee2d5869ef0812c9a34ccb1fcc376dcb5b84e41a84110b712713fec4a8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54349368"
 ---
-# <a name="media-quality-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo qualità multimediale in Skype for Business Server
+# <a name="media-quality-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo qualità multimediale Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto riepilogativo qualità multimediale in Skype for Business Server.
   
 Il Rapporto riepilogativo qualità multimediale è probabilmente la risorsa migliore per analizzare la qualità delle chiamate nell'organizzazione: questo rapporto offre metriche QoE (Quality of Experience) dettagliate sulle chiamate, suddivise nelle categorie seguenti:
   
-- Chiamate peer-to-peer uc (ad esempio una chiamata da Skype for Business a Skype for Business)
+- Chiamate peer-to-peer uc (ad esempio, Skype for Business a Skype for Business chiamata)
     
 - Sessioni conferenza UC
     
@@ -39,7 +39,7 @@ Il Rapporto riepilogativo qualità multimediale è probabilmente la risorsa migl
     
 - Altri tipi di chiamata
     
-Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza uscire dal report, è possibile espandere ogni categoria per esaminare le sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for Business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
+Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza uscire dal report, è possibile espandere ogni categoria per esaminare sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for Business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
   
 In Skype for Business Server il Rapporto riepilogativo qualità multimediale suddivide ulteriormente i dati in tre tipi di chiamata: chiamate audio, videochiamate e chiamate di condivisione applicazioni. A ogni tipo di chiamata è associata una sezione del rapporto e un set personalizzato di metriche.
   
@@ -47,7 +47,7 @@ Il Rapporto riepilogativo qualità multimediale consente inoltre di applicare fi
   
 ## <a name="accessing-the-media-quality-summary-report"></a>Accesso al Rapporto riepilogativo qualità multimediale
 
-Il Rapporto riepilogativo qualità multimediale è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al Rapporto Elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
+Il Rapporto riepilogativo qualità multimediale è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al Rapporto elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
   
 - Volume chiamata
     
@@ -138,7 +138,7 @@ Nella tabella seguente sono elencate le informazioni disponibili nel rapporto ri
 |**Volume chiamata (chiamata esterna)** <br/> |No  <br/> |Numero di chiamate eseguite tramite una connessione esterna, ovvero un collegamento fuori dalla rete interna.  <br/> |
 |**Instabilità (ms)** <br/> |No  <br/> |Instabilità media rilevata tra gli arrivi di pacchetti RTP. L'instabilità è una misura dell'inattendibilità di una chiamata. Valori elevati di instabilità sono in genere causati da congestione o da un server di contenuti multimediali sovraccarico e generano audio distorto o perdita di audio.  <br/> |
 |**Media unidirezionale relativa** <br/> |No  <br/> |Media unidirezionale relativa tra due endpoint multimediali. Si tratta di una misurazione della latenza a singolo hop.  <br/> |
-|**Latenza media elaborazione sezioni RDP** <br/> |No  <br/> |Latenza media dell'elaborazione delle sezioni RDP in AS Conferencing Server per la durata della sessione di visualizzazione. Una media elevata riflette un ritardo maggiore nell'esperienza di visualizzazione e include la latenza di rete. In un server per conferenze sovraccaricato possono verificarsi ritardi medi maggiori.  <br/> |
+|**Latenza media elaborazione sezioni RDP** <br/> |No  <br/> |Latenza media dell'elaborazione delle sezioni RDP in AS Conferencing Server per la durata della sessione di visualizzazione. Una media elevata riflette un ritardo più lungo nell'esperienza di visualizzazione e include la latenza di rete. In un server per conferenze sovraccaricato possono verificarsi ritardi medi maggiori.  <br/> |
 |**% totale sezioni danneggiate** <br/> |No  <br/> |Percentuale totale di sezioni RDP danneggiate.  <br/> |
    
 

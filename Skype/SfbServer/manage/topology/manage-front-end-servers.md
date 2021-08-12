@@ -12,19 +12,19 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ab748733-6bad-4c93-8dda-db8d5271653d
 description: 'Riepilogo: informazioni su come aggiungere, rimuovere, applicare patch o aggiornare Front End Server in Skype for Business Server.'
-ms.openlocfilehash: 24527a5f973b21c35e386f0565ac6deb69e15070
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b091f1fd74cfd2c3d93ee14e9ea6f1b584ec4111443b99f881786e94e038d8b2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54290304"
 ---
 # <a name="manage-front-end-servers-in-skype-for-business-server"></a>Gestire i Front End Server in Skype for Business Server
  
 In questo articolo viene illustrato come aggiungere o rimuovere Front End Server e come applicare aggiornamenti o patch ai Front End Server.
 
   > [!NOTE]
-> Skype for Business Server 2019 non supporta pool Enterprise Edition Front End con due Front End Server e non consente la pubblicazione della topologia in tale scenario.
+> Skype for Business Server 2019 non supporta edizione Enterprise pool Front End con due Front End Server e non consente la pubblicazione della topologia in tale scenario.
 
 ## <a name="add-or-remove-front-end-servers"></a>Aggiungere o rimuovere Front End Server
   

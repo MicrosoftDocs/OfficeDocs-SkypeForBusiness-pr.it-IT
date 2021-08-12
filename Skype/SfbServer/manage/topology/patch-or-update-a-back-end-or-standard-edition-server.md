@@ -1,5 +1,5 @@
 ---
-title: Applicare patch o aggiornare un server back-end o standard edition in Skype for Business Server
+title: Applicare patch o aggiornare un server back-end o edizione Standard server in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,30 +12,30 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: f95f8d3a-e039-484e-97bd-d727db21a12b
 description: 'Riepilogo: informazioni su come installare un aggiornamento o una patch in un server back-end in Skype for Business Server.'
-ms.openlocfilehash: 3e5e0cda1604f3144e853cfa3bf7bcc45e7d0c2f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6da04dda24400e8dfa00bcaac5d3620cbf6509a5f4bef2d7d988682597b732f8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49826306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54290284"
 ---
-# <a name="patch-or-update-a-back-end-server-or-standard-edition-server-in-skype-for-business-server"></a>Applicare patch o aggiornare un server back-end o standard edition in Skype for Business Server
+# <a name="patch-or-update-a-back-end-server-or-standard-edition-server-in-skype-for-business-server"></a>Applicare patch o aggiornare un server back-end o edizione Standard server in Skype for Business Server
  
 **Riepilogo:** Informazioni su come installare un aggiornamento o una patch in un server back-end in Skype for Business Server.
   
-In questo argomento viene illustrato come installare un aggiornamento in un server back-end Enterprise Edition o Standard Edition.
+In questo argomento viene illustrato come installare un aggiornamento in edizione Enterprise server back-end o edizione Standard server.
   
-Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiornamento, gli utenti potrebbero passare in modalità resilienza. Al termine dell'aggiornamento e dopo che i server back-end si sono connessi nuovamente ai Front End Server del pool, gli utenti tornano a utilizzare tutte le funzionalità. Se l'aggiornamento richiede meno di 30 minuti, gli utenti non ne saranno interessati.
+Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiornamento, gli utenti possono passare alla modalità resilienza. Al termine dell'aggiornamento e i server back-end si sono nuovamente connessi ai Front End Server nel pool, gli utenti vengono restituiti alla funzionalità completa. Se l'aggiornamento richiede meno di 30 minuti, gli utenti non ne saranno interessati.
   
-### <a name="to-update-a-back-end-server-or-standard-edition-server"></a>Per aggiornare un server back-end o un server Standard Edition
+### <a name="to-update-a-back-end-server-or-standard-edition-server"></a>Per aggiornare un server back-end o un server edizione Standard server
 
 1. Eseguire l'accesso al server da aggiornare come membro del ruolo CsAdministrator.
     
 2. Scaricare l'aggiornamento ed estrarlo nel disco rigido locale.
     
-3. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi Skype for Business Server Management **Shell.**
+3. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell**..
     
-4. Arrestare i servizi di Skype for Business Server. Nella riga di comando digitare il comando seguente:
+4. Arrestare Skype for Business Server servizi. Nella riga di comando digitare il comando seguente:
     
     ```PowerShell
     Stop-CsWindowsService
@@ -47,13 +47,13 @@ Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiorna
     net stop w3svc
    ```
 
-6. Chiudere tutte le finestre di Skype for Business Server Management Shell.
+6. Chiudere tutte le Skype for Business Server Management Shell.
     
 7. Installare l'aggiornamento.
     
-8. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi Skype for Business Server Management **Shell.**
+8. Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell**.
     
-9. Arrestare di nuovo i servizi di Skype for Business Server per intercettare gli assembly -d della Global Assembly Cache (GAC). Nella riga di comando digitare:
+9. Arrestare Skype for Business Server servizi per rilevare gli assembly -d della Global Assembly Cache (GAC). Nella riga di comando digitare:
     
     ```PowerShell
     Stop-CsWindowsService
@@ -67,19 +67,19 @@ Se un server back-end non è disponibile per almeno 30 minuti durante l'aggiorna
 
 11. Applicare le modifiche apportate ai SQL Server database eseguendo una delle operazioni seguenti:
     
-    - Se si tratta di un server back-end Enterprise Edition e non sono presenti database collocati nel server, ad esempio database di archiviazione o di monitoraggio, digitare quanto segue nella riga di comando:
+    - Se si tratta di un edizione Enterprise back-end server e non sono presenti database collocati nel server, ad esempio database di archiviazione o di monitoraggio, digitare quanto segue nella riga di comando:
     
     ```PowerShell
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>
     ```
 
-    - Se si tratta di un server back-end Enterprise Edition e in questo server sono presenti database collocati, digitare quanto segue in una riga di comando:
+    - Se si tratta di un edizione Enterprise back-end server e nel server sono presenti database collocati, digitare quanto segue nella riga di comando:
     
     ```PowerShell
     Install-CsDatabase -Update -ConfiguredDatabases -SqlServerFqdn <SQL Server FQDN>  -ExcludeCollocatedStores
     ```
 
-    - Se si tratta di un server Standard Edition, digitare quanto segue nella riga di comando:
+    - Se si tratta di un server edizione Standard, digitare quanto segue in una riga di comando:
     
     ```PowerShell
     Install-CsDatabase -Update -LocalDatabases

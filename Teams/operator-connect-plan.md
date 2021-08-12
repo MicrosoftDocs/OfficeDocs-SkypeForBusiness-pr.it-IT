@@ -1,5 +1,5 @@
 ---
-title: Operatore Connessione
+title: Connessione con operatore
 author: cazawideh
 ms.author: czawideh
 manager: serdars
@@ -15,31 +15,31 @@ search.appverid: MET150
 f1.keywords:
 - NOCSH
 - ms.teamsadmincenter.directrouting.overview
-description: Altre informazioni sulla gestione Connessione, ad esempio i requisiti e la pianificazione della distribuzione.
+description: Altre informazioni sulle Connessione con operatore, ad esempio i requisiti e la pianificazione della distribuzione.
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 088b36f546cebe67e10d840075e601e96a6df6e2
-ms.sourcegitcommit: 39d26edd43b6066d5a6dee2a5ad1354a1e560a0d
+ms.openlocfilehash: adc229264513d7ec4ca692dca1731d7390b80dc243b4571757607c1c76b7cacb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "52694541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54323948"
 ---
-# <a name="plan-for-operator-connect"></a>Pianificare l'accesso Connessione
+# <a name="plan-for-operator-connect"></a>Pianificare l'Connessione con operatore
 
 >[!NOTE]
->La Connessione operatore è attualmente disponibile solo **nell'anteprima pubblica.** L'anteprima pubblica consente di testare le funzionalità imminenti e fornire feedback. Le funzionalità incluse nell'anteprima pubblica potrebbero non essere complete, potrebbero subire modifiche e non sono supportate in Office 365 Government Cloud.
+>Connessione con operatore è attualmente disponibile solo **nell'anteprima pubblica.** L'anteprima pubblica consente di testare le funzionalità imminenti e fornire feedback. Le funzionalità incluse nell'anteprima pubblica potrebbero non essere complete, potrebbero subire modifiche e non sono supportate in Office 365 Government Cloud.
 
-La Connessione operatore è un'altra opzione per fornire connettività PSTN (Public Switched Telephone Network) con Teams e Sistema telefonico.  
+Connessione con operatore è un'altra opzione per fornire connettività PSTN (Public Switched Telephone Network) con Teams e Sistema telefonico.  
 
-Questo articolo descrive i vantaggi e i requisiti ed elenca gli operatori che partecipano al Programma Connessione operatore.  Se si decide Connessione operatore è la soluzione giusta per l'organizzazione, dopo aver letto questo articolo, vedere Configurare l'operatore [Connessione](operator-connect-configure.md).  
+Questo articolo descrive i vantaggi e i requisiti ed elenca gli operatori che partecipano al Connessione con operatore programma.  Se si decide Connessione con operatore soluzione giusta per l'organizzazione, dopo aver letto questo articolo, vedere Configurare Connessione con operatore [.](operator-connect-configure.md)  
 
 ## <a name="benefits"></a>Vantaggi
 
-Con Operator Connessione, se l'operatore esistente è un partecipante al programma Microsoft Operator Connessione, può gestire il servizio per portare le chiamate PSTN in Teams. Il programma operatore Connessione offre i vantaggi seguenti:
+Con Connessione con operatore, se l'operatore esistente è un partecipante al programma Microsoft Connessione con operatore, può gestire il servizio per portare le chiamate PSTN in Teams. Il Connessione con operatore offre i vantaggi seguenti:
 
 - **Sfruttare i contratti esistenti o trovare un nuovo operatore.** È possibile mantenere l'operatore e i contratti preferiti oppure sceglierne uno nuovo tra una selezione di operatori partecipanti per soddisfare le esigenze aziendali.
 
@@ -51,20 +51,20 @@ Con Operator Connessione, se l'operatore esistente è un partecipante al program
 
 ## <a name="requirements"></a>Requisiti
 
- La Connessione operatore potrebbe essere la soluzione giusta per l'organizzazione se:
+ Connessione con operatore potrebbe essere la soluzione giusta per l'organizzazione se:
 
 - Microsoft Calling Plan non è disponibile nella tua posizione geografica.
-- L'operatore preferito è un partecipante al programma Microsoft Operator Connessione.
+- L'operatore preferito è un partecipante al programma Microsoft Connessione con operatore microsoft.
 - Si vuole trovare un nuovo operatore per abilitare le chiamate in Teams.
 
-Per abilitare le assegnazioni dei numeri di telefono con operatore Connessione, assicurati che gli utenti siano:
+Per abilitare le assegnazioni dei numeri di telefono Connessione con operatore, assicurati che gli utenti siano:
 
 - Teams Telefono concesso in licenza. Per altre informazioni, vedere [Che cos'è Sistema telefonico?](what-is-phone-system-in-office-365.md) e Assegnare Teams [licenze per i componenti aggiuntivi agli utenti.](teams-add-on-licensing/assign-teams-add-on-licenses.md)
 - In modalità TeamsOnly. Per altre informazioni, vedere [Comprendere Microsoft Teams e Skype for Business coesistenza e interoperabilità.](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 
 ## <a name="available-operators"></a>Operatori disponibili
 
-Gli operatori seguenti sono partecipanti al programma Microsoft Operator Connessione:
+Gli operatori seguenti sono partecipanti al programma Microsoft Connessione con operatore:
 
 | Operatore | Funzionalità | Copertura paese |
 | --- | --- | --- |
