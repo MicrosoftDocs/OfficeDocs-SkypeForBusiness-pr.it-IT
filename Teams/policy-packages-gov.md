@@ -17,12 +17,12 @@ ms.custom: ''
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come usare e gestire i Teams dei criteri per l'organizzazione governativa.
-ms.openlocfilehash: 41ae937323b37948c03128efd565f40c02bbd6a2
-ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
+ms.openlocfilehash: d9c229e9795a9e93caed37832baf0b03ef58c47305f41d2961420eea485bc608
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796870"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54316992"
 ---
 # <a name="teams-policy-packages-for-government"></a>Teams di criteri per enti pubblici
 
@@ -74,7 +74,7 @@ Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessa
 Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un criterio e successivamente gli si assegna un criterio diverso, avrà priorità l'assegnazione più recente.
 
 > [!NOTE]
-> Ogni utente richiederà il componente aggiuntivo Advanced Communications per ricevere un'assegnazione di pacchetti di criteri personalizzati. Per altre informazioni, vedere [Componente aggiuntivo Comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
+> Ogni utente richiederà il componente aggiuntivo Comunicazioni avanzate per ricevere un'assegnazione del pacchetto di criteri personalizzata. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
 
 #### <a name="assign-a-policy-package-to-one-or-several-users"></a>Assegnare un pacchetto di criteri a uno o più utenti
 

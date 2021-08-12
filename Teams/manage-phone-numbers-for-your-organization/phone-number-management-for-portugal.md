@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Portogallo per Microsoft Teams.
-ms.openlocfilehash: fad26e785297df115bb283e4f88389c647c0c301
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: 529d96eedeb9e7223a5bde76651a321de68060b31a2facfb57437fb6aa0305c0
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53509957"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849261"
 ---
 # <a name="phone-number-management-for-portugal"></a>Telefono gestione dei numeri per il Portogallo
 
@@ -34,11 +34,11 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
-|Ottenere nuovi numeri di telefono dell'utente o del servizio non elencati nell'Microsoft Teams di amministrazione.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per il Portogallo (v.5.0) (pt-pt)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-portugal-(v.5.0)-(pt-pt).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per il Portogallo (v.5.0) (it-IT)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-portugal-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilarlo e [contattare PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/> È anche necessario compilare un contratto per tre parti, firmarlo e contattare [PTSN per istruzioni.](contact-pstn-service-desk.md) Questo modulo ti verrà inviato dal nostro team di service desk PSTN dopo aver fatto un ordine per ottenere nuovi numeri di telefono. <br/><br/>|
-|Ricevi i numeri di telefono trasferiti a Noi.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per il Portogallo (tutti i numeri) (v.6.0) (pt-pt)](https://download.microsoft.com/download/1/b/d/1bd8641d-cfa5-4028-ba26-62e2430952fb/letter-of-authorization-(loa)-for-portugal-(all-numbers)-(v.6.0)-(pt-pt).pdf) <br/> <br/>Compilarlo e [contattare PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/> È anche necessario compilare un contratto per tre parti, firmarlo e contattare [PTSN per istruzioni.](contact-pstn-service-desk.md) Questo modulo ti verrà inviato dal nostro team di service desk PSTN dopo aver fatto un ordine per trasferire i numeri di telefono.<br/><br/>|
-|Pubblicare/annullare la pubblicazione dei numeri di telefono nell'elenco telefonico nazionale.  <br/> |[Contattare PTSN per istruzioni relative](contact-pstn-service-desk.md) all'elenco di numeri di telefono da pubblicare o annullare la pubblicazione.      <br/> |
-|Modificare il numero di un utente in un numero di servizio.  <br/> |[Contattare PTSN per istruzioni relative](contact-pstn-service-desk.md) all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
-|Eseguire aggiornamenti del servizio directory per i numeri di coda di chiamata o operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per il Portogallo (v.5.0) (pt-pt)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-portugal-(v.5.0)-(pt-pt).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per il Portogallo (v.5.0) (it-IT)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-portugal-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/> È anche necessario compilare un contratto per tre parti, firmarlo e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) Questo modulo ti verrà inviato dal nostro team di service desk PSTN dopo aver fatto un ordine per ottenere nuovi numeri di telefono. <br/><br/>|
+|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per il Portogallo (tutti i numeri) (v.6.0) (pt-pt)](https://download.microsoft.com/download/1/b/d/1bd8641d-cfa5-4028-ba26-62e2430952fb/letter-of-authorization-(loa)-for-portugal-(all-numbers)-(v.6.0)-(pt-pt).pdf) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/> È anche necessario compilare un contratto per tre parti, firmarlo e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) Questo modulo ti verrà inviato dal nostro team di service desk PSTN dopo aver fatto un ordine per trasferire i numeri di telefono.<br/><br/>|
+|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione.      <br/> |
+|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -48,5 +48,5 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 
 [Termini e condizioni per le chiamate al numero di emergenza](../emergency-calling-terms-and-conditions.md)
   
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip) 
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://download.microsoft.com/download/a/8/0/a807c43d-2177-4fe0-8732-86b3784ae6e5/emergency-calling-label-(en-us)-(v.1.0).zip) 
  

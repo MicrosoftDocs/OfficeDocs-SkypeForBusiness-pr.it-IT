@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 127fc2831e58e7ddea152c7754015a9126390ecc
-ms.sourcegitcommit: 5a738cbb96f09edd8c3779f9385bc9ed126e3001
+ms.openlocfilehash: ffcb99684c3f92bcc442c5f732d41643bf549b3f3c1d2aca7e5cb42df4269ebe
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/04/2021
-ms.locfileid: "52212169"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54288424"
 ---
 # <a name="teams-approvals-app-availability"></a>Disponibilità dell'app Approvazioni in Teams
 
@@ -63,7 +63,7 @@ Common Data Model (CDM) è il linguaggio dei dati condiviso usato dalle applicaz
 
 Altre informazioni sui [flussi di lavoro di Approvazioni](/power-automate/modern-approvals).
 
-Le approvazioni create da un modello archiviano comunque i dati in CDS, ad esempio il titolo, i dettagli, l'ID del modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Moduli. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms.](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe)
+Approvazioni creati da un modello archiviano comunque i dati in CDS, ad esempio il titolo, i dettagli, l'ID del modello e altro ancora. Le risposte inviate nella richiesta di approvazione vengono archiviate in Moduli. Altre informazioni  [sull'archiviazione dei dati per Microsoft Forms.](https://support.microsoft.com/office/data-storage-for-microsoft-forms-97a34e2e-98e1-4dc2-b6b4-7a8444cb1dc3#:~:text=Where%20data%20is%20stored%20for%20Microsoft%20Forms.%20Microsoft,European-based%20tenants%20is%20stored%20on%20servers%20in%20Europe)
 
 >[!Note]
 >Se si elimina il modello di modulo nel sito Di Microsoft Forms, il modello Di approvazione verrà eliminato e gli utenti non potranno avviare la richiesta. Gli utenti riceveranno un messaggio di errore "Tabella CDBNonFound" quando si prova ad aprire un modello approvazione eliminato in Microsoft Forms.
@@ -193,18 +193,18 @@ Tramite l'app Approvazioni di Teams, gli utenti hanno accesso alla creazione di 
 > [!Note]
 > L'utente riceve il ruolo di visualizzatore della richiesta se fa parte della chat o del canale in cui è stata creata l'approvazione. Non è possibile intervenire sulla richiesta se al momento della creazione dell'approvazione non è stato assegnato il ruolo specifico.
 
-## <a name="approvals-e-signature-integration"></a>Integrazione delle firme elettroniche per le approvazioni
+## <a name="approvals-e-signature-integration"></a>Approvazioni di e-signature
 
 Le approvazioni delle firme elettroniche create dall'app Approvazioni vengono archiviate nell'ambiente cloud del provider selezionato. Per altre informazioni sull'archiviazione relativa al contratto di firma elettronica, vedere la documentazione di archiviazione del provider selezionato.
 
-Per usare la caratteristica di firma elettronica dell'app Approvazioni, sono necessari gli elementi seguenti:
+Per usare la Approvazioni di firma elettronica dell'app, sono necessari gli elementi seguenti:
 
 - Licenza per lo specifico provider di firme elettroniche che si sceglie di usare. Per ottenere una licenza per l'organizzazione, è necessario accedere al sito del provider.
 
-Per la funzionalità di firma elettronica Approvazioni, i partner delle firme di terze parti verranno visualizzati nell'app Teams approvazioni per impostazione predefinita. È possibile disabilitare specifici provider di firme elettroniche accedendo alle impostazioni dell'app nell'Teams di amministrazione.
+Per la Approvazioni di firma elettronica di terze parti, i partner della firma di terze parti verranno visualizzati nell'app Teams Approvazioni per impostazione predefinita. È possibile disabilitare specifici provider di firme elettroniche accedendo alle impostazioni dell'app nell'Teams di amministrazione.
 
 1. Nell'Teams di amministrazione, in **Gestisci app,** selezionare l'app Approvazioni e scegliere **Impostazioni**. 
 
 2. Per impostazione predefinita, ogni provider di firme elettroniche ha un interruttore accanto alla posizione attiva (a destra). Scorrere l'interruttore verso sinistra per disabilitare uno specifico provider di firme elettroniche. Se un Teams disabilita un provider, gli utenti finali non potranno vedere il provider durante la creazione di un'approvazione. Gli utenti finali non saranno inoltre in grado di visualizzare le richieste di firma elettronica effettuate con il provider.
 
-Le approvazioni delle firme elettroniche create dall'app Approvazioni vengono archiviate nel cloud del provider selezionato. Sarà quindi necessario accedere al sito del provider per esportare i dati relativi alle firme elettroniche. Fare riferimento alla documentazione del provider relativa all'esportazione e alla conservazione di questi contratti.
+Le firme Approvazioni create dall'app Approvazioni vengono archiviate nel cloud del provider selezionato. Sarà quindi necessario accedere al sito del provider per esportare i dati relativi alle firme elettroniche. Fare riferimento alla documentazione del provider relativa all'esportazione e alla conservazione di questi contratti.

@@ -22,12 +22,12 @@ localization_priority: Normal
 appliesto:
 - Microsoft Teams
 description: In questo articolo verrà spiegato come un amministratore può visualizzare le informazioni sugli utenti guest in Microsoft Teams.
-ms.openlocfilehash: 6e079a142fa6b3efcace3d4b246dbbbd16e736dd
-ms.sourcegitcommit: 57fddb045f4a9df14cc421b1f6a228df91f334de
+ms.openlocfilehash: 3fa6ba2f991227bb57cdf9e799084ba1cf84b3c5ec7b78c194d718a4f41b3f09
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49031042"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54327362"
 ---
 # <a name="view-guest-users-in-a-team"></a>Visualizzare gli utenti guest in un team
 
@@ -35,7 +35,7 @@ Tutti i membri di un team possono vedere tutti i membri di un team, inclusi gli 
 
 Per identificare gli utenti guest:
 
-1.  Accedere all'interfaccia [Microsoft 365 di amministrazione .](https://admin.microsoft.com)
+1.  Accedere al interfaccia di amministrazione di Microsoft 365 [.](https://admin.microsoft.com)
 2.  Selezionare **Interfaccia di amministrazione**  >  **Teams**.
 3.  Nell'Teams di amministrazione selezionare **Utenti**. Verrà visualizzato **guest** aggiunto al nome visualizzato di tutti gli utenti guest.
   

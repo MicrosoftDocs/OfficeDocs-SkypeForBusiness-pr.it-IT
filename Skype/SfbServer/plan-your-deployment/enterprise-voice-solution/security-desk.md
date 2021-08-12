@@ -15,23 +15,23 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4b1d9125-7488-419b-85dd-a8dd3ab5add3
-description: Pianificazione di come includere il desk di sicurezza dell'organizzazione in una distribuzione E9-1-1, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 756af940eb327bc4744454e9ed9ef7a7fbfd517d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Pianificazione di come includere il desk di sicurezza dell'organizzazione in una distribuzione di E9-1-1, in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 63c54bb5cec1b81cfd8783a77ea3a685982a1b9e2e6040bf78880d32c9d1ab56
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54290014"
 ---
 # <a name="include-the-security-desk-in-skype-for-business-server"></a>Includere il desk di sicurezza in Skype for Business Server
  
-Pianificazione di come includere il desk di sicurezza dell'organizzazione in una distribuzione E9-1-1, in Skype for Business Server VoIP aziendale.
+Pianificazione di come includere il desk di sicurezza dell'organizzazione in una distribuzione di E9-1-1, in Skype for Business Server VoIP aziendale.
   
 Nella propria azienda potrebbe essere necessario coinvolgere il desk di sicurezza in una chiamata di emergenza. Per decidere come integrare il desk di sicurezza nella distribuzione del servizio per chiamate di emergenza E9-1-1, è consigliabile rispondere alle domande riportate di seguito.
   
 **Si desidera che il desk di sicurezza riceva notifica in caso di una chiamata di emergenza?**
   
-È possibile configurare i criteri percorso in modo che Skype for Business Server invii avvisi di messaggistica istantanea agli indirizzi SIP di Skype for Business di uno o più membri del personale di sicurezza. Questi avvisi contengono il nome, il numero e la posizione della persona che effettua la chiamata di emergenza e consentono al personale della sicurezza di fornire più facilmente assistenza per la situazione di emergenza.
+È possibile configurare il criterio percorso in modo che Skype for Business Server avvisi di messaggistica istantanea agli indirizzi SIP Skype for Business di uno o più membri del personale di sicurezza. Questi avvisi contengono il nome, il numero e la posizione della persona che effettua la chiamata di emergenza e consentono al personale della sicurezza di fornire più facilmente assistenza per la situazione di emergenza.
     
 **Si desidera invitare il desk di sicurezza in conferenza per ogni chiamata di emergenza?**
   

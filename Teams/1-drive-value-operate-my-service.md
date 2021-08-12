@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5684ad62107fa61af7c9f2f22c6f15b4bfe1da30
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 222d983a3fc67323ea3d7942c681a3c2ec3b41f00f597ead360869880881e83b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51112652"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54302120"
 ---
 # <a name="operate-my-service"></a>Gestire il servizio
 
@@ -112,7 +112,7 @@ Le sezioni seguenti descrivono gli strumenti [](/office365/servicedescriptions/o
 
 | Strumento di monitoraggio                       | Vantaggi                                            | Quando usare                                                                                  |
 |---------------------------------------|-----------------------------------------------------|----------------------------------------------------------------------------------------------|
-| Microsoft 365 di amministrazione                     | Disponibile da qualsiasi dispositivo con un browser supportato. | Da usare quando non sono necessarie notifiche in tempo reale.                                          |
+| interfaccia di amministrazione di Microsoft 365                     | Disponibile da qualsiasi dispositivo con un browser supportato. | Da usare quando non sono necessarie notifiche in tempo reale.                                          |
 | Microsoft 365 o Amministrazione di Office 365 app                  | Fornisce notifiche push al dispositivo mobile.  | Da usare quando è necessario ricevere una notifica degli incidenti del servizio mentre si è in viaggio.                  |
 | Microsoft System Center               | Integrazione con Microsoft System Center.           | Da usare quando sono necessarie funzionalità di monitoraggio avanzate e supporto delle notifiche.                       |
 | Microsoft 365 o Office 365 Service Communications API | Accesso a livello di programmazione Microsoft 365 o Office 365 integrità dei servizi.   | Da usare quando è necessaria l'integrazione con uno strumento di monitoraggio di terze parti o si vuole creare una soluzione personalizzata. |
@@ -120,9 +120,9 @@ Le sezioni seguenti descrivono gli strumenti [](/office365/servicedescriptions/o
 > [!NOTE]
 > Solo gli utenti a cui è assegnato **il ruolo di amministratore globale** o amministratore del **servizio** possono visualizzare l'integrità del servizio.
 
-### <a name="monitoring-with-the-microsoft-365-admin-center"></a>Monitoraggio con l'interfaccia Microsoft 365 di amministrazione
+### <a name="monitoring-with-the-microsoft-365-admin-center"></a>Monitoraggio con il interfaccia di amministrazione di Microsoft 365
 
-[L'Microsoft 365 di amministrazione](https://portal.office.com/) offre un [dashboard](https://portal.office.com/adminportal/home#/servicehealth) integrità dei servizi in cui è possibile visualizzare l'integrità corrente del servizio di Teams oltre ai servizi dipendenti.
+Il [interfaccia di amministrazione di Microsoft 365](https://portal.office.com/) fornisce un [dashboard](https://portal.office.com/adminportal/home#/servicehealth) integrità dei servizi in cui è possibile visualizzare l'integrità corrente del servizio di Teams oltre ai servizi dipendenti.
 
 ### <a name="monitoring-with-the-mobile-app"></a>Monitoraggio con l'app per dispositivi mobili
 
@@ -241,7 +241,7 @@ La revisione frequente dell'utilizzo nelle prime fasi della distribuzione offre 
 
 Se l'uso non è quello previsto, il problema potrebbe essere dovuto a un problema di distribuzione o a un'esecuzione non corretta del piano di adozione o a un altro problema. A seconda del motivo effettivo alla base del basso utilizzo, l'amministratore del servizio deve collaborare con i team correlati per rimuovere le barriere di utilizzo.
 
-### <a name="measuring-usage-with-the-microsoft-365-admin-center"></a>Misurazione dell'utilizzo con l'Microsoft 365 di amministrazione
+### <a name="measuring-usage-with-the-microsoft-365-admin-center"></a>Misurazione dell'utilizzo con il interfaccia di amministrazione di Microsoft 365
 
 I dati di utilizzo Teams sono disponibili nel dashboard report. Teams dati sull'utilizzo possono essere trovati in tre report diversi. Il primo report fornisce una visualizzazione inter-prodotto del modo in cui gli utenti comunicano e collaborano usando i vari servizi in Office 365. Questo report è disponibile qui: report Office 365 [utenti attivi](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Active-Users-FC1CF1D0-CD84-43FD-ADB7-A4C4DFA8112D)
 
@@ -281,9 +281,9 @@ Prima di tutto, stabilire se si tratta di un problema tecnico o di adozione. Ini
 
 ### <a name="references"></a>Riferimenti 
 
-[Informazioni sull'Microsoft 365 di amministrazione](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)
+[Informazioni sulla interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)
 
-[Report attività nell'interfaccia Microsoft 365 di amministrazione](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nel interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)
 
 <!--ENDOFSECTION-->
 

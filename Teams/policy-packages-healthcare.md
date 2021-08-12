@@ -21,12 +21,12 @@ searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
 description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione nel settore sanitario.
-ms.openlocfilehash: 19c0fee14138b248c4e25d88a9103df4a5618598
-ms.sourcegitcommit: 8ad05b37c0b714adb069bc2503e88366ab75c57d
+ms.openlocfilehash: 6102d6a2041db445a0a8900bce3a1c60047f33010ab54dc9e0730011c3cdc225
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52796810"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54316962"
 ---
 # <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri di Teams per il settore sanitario
 
@@ -87,7 +87,7 @@ Personalizzare le impostazioni dei criteri nel pacchetto di criteri come necessa
 Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un criterio e successivamente gli si assegna un criterio diverso, avrà priorità l'assegnazione più recente.
 
 > [!NOTE]
-> Ogni utente richiederà il componente aggiuntivo Advanced Communications per ricevere un'assegnazione di pacchetti di criteri personalizzati. Per altre informazioni, vedere [Componente aggiuntivo Comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
+> Ogni utente richiederà il componente aggiuntivo Comunicazioni avanzate per ricevere un'assegnazione del pacchetto di criteri personalizzata. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
 
 #### <a name="assign-a-policy-package-to-one-or-several-users"></a>Assegnare un pacchetto di criteri a uno o più utenti
 

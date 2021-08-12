@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Installare Power BI Connector per usare i modelli di query CQD (Call Quality Dashboard)
-ms.openlocfilehash: 388dddc683340238ccff968261595bd46d4bfc65e323cfd1929f699d3c5eed83
-ms.sourcegitcommit: 02485b5f4bc8de106b064adf5c96dfc041f64e34
+ms.openlocfilehash: 535a1d067dff81c8019a1c08d1a2a617019300989f515f97f89f471e845ca885
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "57799057"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54288504"
 ---
 # <a name="install-microsoft-call-quality-connector-for-power-bi-to-use-call-quality-dashboard-query-templates"></a>Installare il connettore Microsoft Call Quality Power BI usare i modelli di query di Call Quality Dashboard
 
@@ -85,9 +85,6 @@ Al termine dell'installazione, nel riquadro Campi dovrebbero essere visualizzati
 3. Selezionare quindi le dimensioni in base alle quali filtrare e trascinarle nel campo Filtri in questo *campo* visivo *nel riquadro* Filtri. Il connettore Qualità chiamata Microsoft attualmente supporta il filtro di base (selezionare i valori da un elenco di valori di dimensione possibili), Filtro avanzato  (specificare  manualmente valori e operandi in base a cui filtrare, in modo simile a Call Quality Dashboard) e *Filtro* data relativa (disponibile solo per le dimensioni Ora di fine e Ora inizio).   Il filtro in *base a Top N* non è supportato da Call Quality Dashboard.
 
     ![Screenshot: Power BI Connector](media/CQD-power-bi-connector5-resize.png)
-
-    > [!IMPORTANT]
-    > I filtri sono supportati solo se applicati a Dimensioni. Il filtro sui valori delle misure non è supportato in Call Quality Dashboard.
 
 4. Infine, selezionare la *scheda Formato* nel riquadro *Visualizzazioni* per formattare e formattare la query.
 

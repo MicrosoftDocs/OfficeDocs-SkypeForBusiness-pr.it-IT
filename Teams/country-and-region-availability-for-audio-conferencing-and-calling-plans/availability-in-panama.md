@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Panama.
-ms.openlocfilehash: b9ab3a4defd56940f6900fba3e930f4bc6de0cb8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 0a5f8c977c0f238a9ce5541fc9fc5f75868b1df48c281afe002163ee45072bc6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102262"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54347241"
 ---
 # <a name="availability-in-panama"></a>Disponibilità a Panama
 

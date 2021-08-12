@@ -14,26 +14,26 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 39e21ee3-3b4e-4ef3-b977-5abeec63bcff
-description: I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Creare un pool VIS in Skype for Business Server 2015.
-ms.openlocfilehash: 75b22013b7ead174e45d192b9393418337e26618
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server 2015.
+ms.openlocfilehash: 6ee2bceacab34f70d92ce4620e726db2a3b75aed915d95110041f525c69af1d1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338214"
 ---
 # <a name="sip-video-trunk-setting-expander"></a>Espansione delle impostazioni per trunk video SIP
  
-I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Creare un [pool VIS in Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/create-a-vis-pool.md)
+I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in [Create a VIS pool in Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/create-a-vis-pool.md)
   
-I passaggi necessari per assegnare un ruolo Video Interop Server in un server tramite Windows PowerShell sono descritti online in [Deploy the VIS server role in Skype for Business Server 2015](../../deploy/deploy-video-interop-server/deploy-the-vis-server-role.md)
+I passaggi necessari per assegnare un ruolo Video Interop Server in un server Windows PowerShell sono descritti online in [Deploy the VIS server role in Skype for Business Server 2015](../../deploy/deploy-video-interop-server/deploy-the-vis-server-role.md)
   
-I passaggi di configurazione per un nuovo Video Interop Server Windows PowerShell sono descritti online in [Configure the Video Interop Server in Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/configure-the-vis.md)
+I passaggi di configurazione per un nuovo Video Interop Server Windows PowerShell sono descritti online all'indirizzo [Configure the Video Interop Server in Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/configure-the-vis.md)
   
- Le impostazioni per un gateway video che devono essere impostate nella GUI Cisco per l'interoperabilità con un VIS sono descritte online in [Configure CUCM for Interoperation with Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/configure-cucm-for-interoperation.md)
+ Le impostazioni per un gateway video che devono essere impostate nella GUI Cisco per l'interoperabilità con un VIS sono descritte online all'indirizzo [Configure CUCM for Interoperation with Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/configure-cucm-for-interoperation.md)
   
- Le impostazioni per un VTC che devono essere impostate nella GUI Cisco per l'interoperabilità con un gateway video e un VIS sono descritte online in Configurare un VTC per l'interoperabilità con [Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/configure-a-vtc-for-interoperation.md)
+ Le impostazioni per un VTC che devono essere impostate nella GUI Cisco per l'interoperabilità con un gateway video e un VIS sono descritte online all'indirizzo [Configure a VTC for Interoperation with Skype for Business Server 2015.](../../deploy/deploy-video-interop-server/configure-a-vtc-for-interoperation.md)
   
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare Video Interop Server in Skype for Business Server](../../plan-your-deployment/video-interop-server.md)
+[Pianificare Video Interop Server in Skype for Business Server 2015](../../plan-your-deployment/video-interop-server.md)

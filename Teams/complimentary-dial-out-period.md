@@ -23,12 +23,12 @@ ms.custom:
 - Legal
 - seo-marvel-mar2020
 description: Informazioni sul periodo di chiamata in uscita gratuito per Microsoft 365 piano chiamate Office 365 chiamate e Office 365 audioconferenza in Microsoft Teams.
-ms.openlocfilehash: 0f40e35e30de5698ffcb4bf9592868685d8223ed
-ms.sourcegitcommit: 212b2985591ca1109eb3643fbb49d8b18ab07a70
+ms.openlocfilehash: bf82b9ffc24000244a2666dedf2bb3ff8cd280cb476d6550747807411a4b9475
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49918882"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54347390"
 ---
 # <a name="audio-conferencing-complimentary-dial-out-period"></a>Periodo di chiamate gratuite di Audioconferenza
 
@@ -48,7 +48,7 @@ Per i clienti che adottano il servizio di audioconferenza Microsoft 365 o Office
 
 Inoltre, durante il periodo di chiamata in uscita gratuita è previsto un limite di 900 minuti:
 
-Gli utenti con una posizione di utilizzo delle licenze (la località è il paese dell'utente definito nell'area delle licenze dell'interfaccia di amministrazione di Microsoft 365) _in_ qualsiasi _ paese possono effettuare chiamate in uscita da una conferenza a uno dei 44 paesi e aree geografiche dell'area [A.](audio-conferencing-zones.md) Ogni utente riceve 900 minuti per  utente al mese in uno dei paesi e aree geografiche dell'area [A,](audio-conferencing-zones.md)che sono in pool a livello di tenant. Ad esempio, un cliente ha acquistato 115 licenze di abbonamento per audioconferenza e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento per audioconferenza assegnate agli utenti.
+Gli utenti con una posizione di utilizzo delle licenze (la località è il paese dell'utente definito nell'area delle licenze del interfaccia di amministrazione di Microsoft 365) _in_ qualsiasi _ paese possono effettuare chiamate in uscita da una conferenza in uno dei 44 paesi e aree geografiche dell'area [A.](audio-conferencing-zones.md) Ogni utente riceve 900 minuti per  utente al mese in uno dei paesi e aree geografiche dell'area [A,](audio-conferencing-zones.md)che sono in pool a livello di tenant. Ad esempio, un cliente ha acquistato 115 licenze di abbonamento per audioconferenza e ha 10 utenti negli Stati Uniti, 100 utenti nel Regno Unito e 5 utenti in India, tutti con licenze di abbonamento per audioconferenza assegnate agli utenti.
 
 - Tutti i 115 utenti condividono un pool di (115 utenti X 900 min) = 103.500 minuti di chiamata in uscita per ogni mese di calendario, che può essere usato per effettuare chiamate in uscita verso uno dei paesi e delle aree geografiche [dell'area A.](audio-conferencing-zones.md)
 

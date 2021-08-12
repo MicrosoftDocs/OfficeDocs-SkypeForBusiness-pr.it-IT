@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2b030ced-0aae-4023-bb26-544d14bdd2f0
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: c10035729ebb69d101b9a901b7dc427fea9d5f95
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 9997a63ca3d53df1350eca65dba92a098492f6d5aef0b8b33e5cd573822f81f4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49819226"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338374"
 ---
 # <a name="quality-of-experience-qoe-data"></a>Dati QoE
  
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
   
-- [Abilitare la qualità dell'esperienza in Skype for Business Server](../../manage/health-and-monitoring/enable-qoe.md)
+- [Abilitare la qualità dell'esperienza in Skype for Business Server 2015](../../manage/health-and-monitoring/enable-qoe.md)
     
-- [Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server](../../manage/health-and-monitoring/modify-qoe-settings.md)
+- [Modificare le impostazioni di qualità dell'esperienza in Skype for Business Server 2015](../../manage/health-and-monitoring/modify-qoe-settings.md)
     
-- [Creare le impostazioni di configurazione della qualità dell'esperienza in Skype for Business Server](../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
+- [Creare le impostazioni di configurazione della qualità dell'esperienza in Skype for Business Server 2015](../../manage/health-and-monitoring/create-qoe-configuration-settings.md)
     
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
 

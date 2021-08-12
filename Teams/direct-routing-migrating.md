@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su ciò che è necessario per eseguire la migrazione a Routing diretto da un punto di vista Skype for Business online e Teams configurazione.
-ms.openlocfilehash: de211dfae9bf2fc20a2cd367687e0fd7c5779a5f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: bcc31554428c847fc9eb3c45804be42e850b30f943fadcc3ef6e245d07c9d4fb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122200"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54302001"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a Instradamento diretto
 

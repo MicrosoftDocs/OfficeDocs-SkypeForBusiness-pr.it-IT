@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 97441ec2-573a-4ba4-ab4c-df4cf6baf321
 ROBOTS: NOINDEX, NOFOLLOW
 description: Selezionare tutte le funzionalità che si desidera abilitare per il pool Front End. È necessario distribuire come minimo la messaggistica istantanea, che è sempre abilitata e non può essere disabilitata. È inoltre possibile distribuire altre funzionalità, ad esempio le conferenze, VoIP aziendale e il servizio Controllo di ammissione di chiamata. Alcune funzionalità variano a seconda della topologia.
-ms.openlocfilehash: 12fb968a9ed0b1f9c88419158c8774fd0dc9f25c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 82b67016b4e7902e258b73889134f60c59b0cabf59a125d3f1e8bde88011f355
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54291454"
 ---
 # <a name="add-front-end-features"></a>Aggiungere funzionalità di Front End Server
 

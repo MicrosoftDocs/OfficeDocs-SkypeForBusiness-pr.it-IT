@@ -1,5 +1,5 @@
 ---
-title: Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
+title: Gestire Microsoft Teams nell'interfaccia di amministrazione di Microsoft Teams
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 95a9769fad45917515a27b0f3d726d2eb3dbc931efbfa4fd26af19eced92d190
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 86feedbb0212908ebd61f89c6e62e6d468813bd14ed1d86edec3abc00bf1d582
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306348"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848191"
 ---
 # <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -37,7 +37,7 @@ L'amministratore potrebbe dover visualizzare o aggiornare i team che l'organizza
 - Amministratore globale
 - Amministratore di Teams
 
-È possibile ottenere altre informazioni sui ruoli di amministratore in Teams in [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md)e altre informazioni su come usare i cmdlet di PowerShell per la gestione dei team in [Microsoft Teams cmdlet reference](/powershell/teams/?view=teams-ps).
+È possibile ottenere altre informazioni sui ruoli di amministratore in Teams in [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md)e altre informazioni su come usare i cmdlet di PowerShell per la gestione dei team in [Microsoft Teams cmdlet reference](/powershell/teams/).
 
 
 
@@ -121,7 +121,7 @@ Alcuni dei team possono non sono presenti nell'elenco dei team nella griglia di 
 
 **Risoluzione: impostare manualmente la proprietà sul valore corretto tramite MS Graph**
 
-Sostiture **{groupid}** nella query dell'effettivo GroupId, che è possibile ottenere tramite Exchange Online PowerShell, con il cmdlet **"[Get-UnifiedGroup](/powershell/module/exchange/users-and-groups/get-unifiedgroup?view=exchange-ps)"**, con l'attributo "**ExternalDirectoryObjectId**.
+Sostiture **{groupid}** nella query dell'effettivo GroupId, che è possibile ottenere tramite Exchange Online PowerShell, con il cmdlet **"[Get-UnifiedGroup](/powershell/module/exchange/users-and-groups/get-unifiedgroup)"**, con l'attributo "**ExternalDirectoryObjectId**.
 
 1. Accedere a [Graph explorer](https://developer.microsoft.com/graph/graph-explorer).
 
@@ -137,6 +137,6 @@ Sostiture **{groupid}** nella query dell'effettivo GroupId, che è possibile ott
 
 ## <a name="learn-more"></a>Ulteriori informazioni
 
-- [Teams cmdlet reference](/powershell/teams/?view=teams-ps)  
+- [Teams cmdlet reference](/powershell/teams/)  
 - [Usare i ruoli di amministratore di Microsoft Teams per gestire Teams](using-admin-roles.md).
 - [Pianificare la gestione del ciclo di vita in Teams](plan-teams-lifecycle.md)

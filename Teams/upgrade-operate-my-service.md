@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5ccc2d3a346f7b18b64950f2c2b52370ea7ecca8
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 9b2d546465497a18791c0a3e31367622d09b8c6d16e81d5141cf5be338dd33ac
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54327492"
 ---
 # <a name="operate-your-service"></a>Gestire il servizio
 
@@ -116,25 +116,25 @@ Le sezioni seguenti descrivono gli strumenti [](/office365/servicedescriptions/o
 
 | Strumento di monitoraggio | Vantaggi | Quando usare |
 |---|---|---|
-| Microsoft 365 di amministrazione | Disponibile da qualsiasi dispositivo con un browser supportato. | Da usare quando non sono necessarie notifiche in tempo reale. |
-| Microsoft 365 App di amministrazione | Fornisce notifiche push al dispositivo mobile. | Da usare quando è necessario ricevere una notifica degli incidenti del servizio mentre si è in viaggio. |
+| interfaccia di amministrazione di Microsoft 365 | Disponibile da qualsiasi dispositivo con un browser supportato. | Da usare quando non sono necessarie notifiche in tempo reale. |
+| Amministrazione Microsoft 365 app | Fornisce notifiche push al dispositivo mobile. | Da usare quando è necessario ricevere una notifica degli incidenti del servizio mentre si è in viaggio. |
 | Microsoft System Center | Integrazione con Microsoft System Center. | Da usare quando sono necessarie funzionalità di monitoraggio avanzate e supporto delle notifiche. |
 | Microsoft 365 Service Communications API | Accesso a livello di programmazione Microsoft 365 o Office 365 integrità dei servizi. | Da usare quando è necessaria l'integrazione con uno strumento di monitoraggio di terze parti o si vuole creare una soluzione personalizzata. |
 
 > [!NOTE]
 > Solo gli utenti a cui è assegnato **il ruolo di amministratore globale** o amministratore del **servizio** possono visualizzare l'integrità del servizio.
 
-### <a name="monitoring-with-the-microsoft-365-admin-center"></a>Monitoraggio con l'interfaccia Microsoft 365 di amministrazione
+### <a name="monitoring-with-the-microsoft-365-admin-center"></a>Monitoraggio con il interfaccia di amministrazione di Microsoft 365
 
-[L'Microsoft 365 di amministrazione](https://portal.office.com/) offre un [dashboard](https://portal.office.com/adminportal/home#/servicehealth) integrità dei servizi in cui è possibile visualizzare l'integrità corrente del servizio di Teams oltre ai servizi dipendenti.
+Il [interfaccia di amministrazione di Microsoft 365](https://portal.office.com/) fornisce un [dashboard](https://portal.office.com/adminportal/home#/servicehealth) integrità dei servizi in cui è possibile visualizzare l'integrità corrente del servizio di Teams oltre ai servizi dipendenti.
 
 ### <a name="monitoring-with-the-mobile-app"></a>Monitoraggio con l'app per dispositivi mobili
 
-L Microsoft 365 admin app è disponibile in Apple iOS, Android e Windows (PC e dispositivi mobili). L'app fornisce agli amministratori informazioni sull'integrità dei servizi e sulle modifiche imminenti. L'app supporta le notifiche push che possono avvisare l'utente quasi immediatamente dopo che è stato pubblicato un avviso. In questo modo è possibile rimanere sempre al corrente dello stato, dell'integrità e delle eventuali modifiche imminenti al servizio. Il supporto delle notifiche lo rende lo strumento di monitoraggio consigliato per gli amministratori. Per ulteriori informazioni, vedere:
+L Amministrazione Microsoft 365 app è disponibile in Apple iOS, Android e Windows (PC e dispositivi mobili). L'app fornisce agli amministratori informazioni sull'integrità dei servizi e sulle modifiche imminenti. L'app supporta le notifiche push che possono avvisare l'utente quasi immediatamente dopo che è stato pubblicato un avviso. In questo modo è possibile rimanere sempre al corrente dello stato, dell'integrità e delle eventuali modifiche imminenti al servizio. Il supporto delle notifiche lo rende lo strumento di monitoraggio consigliato per gli amministratori. Per ulteriori informazioni, vedere:
 
-[Microsoft 365 App admin per dispositivi mobili](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)
+[Amministrazione Microsoft 365 App per dispositivi mobili](https://support.office.com/article/Office-365-Admin-Mobile-App-e16f6421-2a1a-4142-bf9d-9846600a060a)
 
-[Scaricare l'Microsoft 365 admin per dispositivi mobili](https://products.office.com/business/manage-office-365-admin-app)
+[Scaricare l'app Amministrazione Microsoft 365 per dispositivi mobili](https://products.office.com/business/manage-office-365-admin-app)
 
 ### <a name="monitoring-with-microsoft-system-center"></a>Monitoraggio con Microsoft System Center
 
@@ -245,7 +245,7 @@ La revisione frequente dell'utilizzo nelle prime fasi della distribuzione offre 
 
 Se l'uso non è quello previsto, il problema potrebbe essere dovuto a un problema di distribuzione o a un'esecuzione non corretta del piano di adozione o a un altro problema. A seconda del motivo reale alla base del basso utilizzo, l'amministratore deve collaborare con i team correlati per rimuovere le barriere di utilizzo.
 
-### <a name="measuring-usage-with-the-microsoft-365-admin-center"></a>Misurazione dell'utilizzo con l'Microsoft 365 di amministrazione
+### <a name="measuring-usage-with-the-microsoft-365-admin-center"></a>Misurazione dell'utilizzo con il interfaccia di amministrazione di Microsoft 365
 
 I dati di utilizzo Teams sono disponibili nel dashboard report. Teams dati sull'utilizzo possono essere trovati in tre report diversi. Il primo report fornisce una visualizzazione inter-prodotto del modo in cui gli utenti comunicano e collaborano usando i vari servizi in Microsoft 365 o Office 365. Questo report è disponibile qui: Microsoft 365 [report nell'interfaccia di amministrazione - Utenti attivi](https://support.office.com/article/Office-365-Reports-in-the-Admin-Center-Active-Users-FC1CF1D0-CD84-43FD-ADB7-A4C4DFA8112D)
 
@@ -286,9 +286,9 @@ Prima di tutto, stabilire se si tratta di un problema tecnico o di adozione. Ini
 
 ### <a name="references"></a>Riferimenti
 
-[Informazioni sull'Microsoft 365 di amministrazione](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)
+[Informazioni sulla interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/About-the-Office-365-admin-center-758befc4-0888-4009-9f14-0d147402fd23)
 
-[Report attività nell'interfaccia Microsoft 365 di amministrazione](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)
+[Report attività nel interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/Activity-Reports-in-the-Office-365-admin-center-0d6dfb17-8582-4172-a9a9-aed798150263)
 
 <!--ENDOFSECTION-->
 

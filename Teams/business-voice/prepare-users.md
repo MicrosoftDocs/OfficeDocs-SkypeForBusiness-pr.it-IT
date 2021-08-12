@@ -17,12 +17,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 72cb35b2927dfb8cc1db65018d107bc209fd7ed2
-ms.sourcegitcommit: bfa5b8db4e42e0480542d61fe05716c52016873c
+ms.openlocfilehash: af0d35bf1c7183926607ec2aa6b35d0e74c67133a97fb8eb7de57b5acc45c053
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54301971"
 ---
 # <a name="how-do-i-get-my-users-ready-for-microsoft-365-business-voice"></a>Come si preparano gli utenti per Microsoft 365 Business Voice?
 
@@ -45,9 +45,9 @@ Per usare Teams sul Web, è necessario un [browser supportato](../get-clients.md
 
 Gli utenti di Business Voice devono disporre di microfono e altoparlanti per effettuare e ricevere chiamate telefoniche. Sono disponibili numerose opzioni in base alle esigenze di ogni utente o ambiente. Ecco alcuni spunti di riflessione per la scelta:
 
-* **Utenti di dispositivi mobili o in ambienti rumorosi: ** scegliere cuffie USB o wireless con microfoni. Abbinato a Microsoft Teams, un computer può funzionare come un telefono, purché disponga di una connessione Internet.
+* **Utenti di dispositivi mobili o in ambienti rumorosi:** scegliere cuffie USB o wireless con microfoni. Abbinato a Microsoft Teams, un computer può funzionare come un telefono, purché disponga di una connessione Internet.
 * **Centralinisti e responsabili:** è possibile usare telefoni da tavolo multifunzione, come dei normali telefoni fissi. Composizione automatica, conferenze, viva voce e supporto per gli auricolari rendono questi dispositivi estremamente flessibili.
-* **Sale riunioni: ** i dispositivi per audioconferenza consentono di configurare sale riunioni con funzionalità vivavoce, che è possibile usare con i bridge di conferenza di Teams per ospitare anche grandi riunioni.
+* **Sale riunioni:** i dispositivi per audioconferenza consentono di configurare sale riunioni con funzionalità vivavoce, che è possibile usare con i bridge di conferenza di Teams per ospitare anche grandi riunioni.
 
 Se si usa un dispositivo USB o wireless, collegarlo a un computer che esegue Teams. Può essere necessario accedere alle impostazioni del dispositivo in Teams: selezionare l'immagine del profilo nella parte superiore di Teams, quindi passare a **Impostazioni** > **Dispositivi**. Scegliere il dispositivo da **Dispositivi audio**. Se il dispositivo in uso non è visibile in Teams, seguire le istruzioni del produttore per configurarlo nel computer.
 
