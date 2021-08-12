@@ -15,15 +15,15 @@ localization_priority: Normal
 ms.assetid: c9c43d46-374e-4dc9-858c-54a021b69947
 ROBOTS: NOINDEX, NOFOLLOW
 description: In Indirizzo IPv6 esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, al servizio Web Conferencing Edge e al servizio A/V Edge.
-ms.openlocfilehash: a800d550ec95f363c358e30fcbb2541b8c311c4b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d6c0a5186d49cc9efabdd0bb25b234e6fac3c7c07f78ca678826e4689ddc660d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295673"
 ---
 # <a name="add-edge-server-external-ipv6"></a>Aggiungere Edge Server External IPv6
  
-In **Indirizzo IPv6** esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, al servizio Web Conferencing Edge e al servizio A/V Edge.
+In **Indirizzo IPv6 esterno** immettere l'indirizzo IP esterno che punta al servizio Access Edge, al servizio Web Conferencing Edge e al servizio A/V Edge.
   
 

@@ -16,18 +16,18 @@ ms.custom: ''
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire barre di collaborazione per Microsoft Teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 812fb4704661aa11d3388048fa044030cdb1ce00
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ce5fe8fa0066ea613cdee1dbea6cf7fb2e385e2694ae9b84bbd99901c999f69b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51115604"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54334717"
 ---
 # <a name="create-a-microsoft-365-resource-account-using-the-powershell"></a>Creare un account Microsoft 365 di risorse usando PowerShell
 
 Leggere questo argomento per informazioni su come creare account delle risorse per le barre di collaborazione Microsoft Teams powershell.
 
-Il modo più semplice per creare un account delle risorse è usare l'Microsoft 365 di amministrazione. [Vedere questo articolo su come eseguire questa operazione.](resource-account-ui.md)
+Il modo più semplice per creare un account delle risorse è usare il interfaccia di amministrazione di Microsoft 365. [Vedere questo articolo su come eseguire questa operazione.](resource-account-ui.md)
 
 [!INCLUDE [m365-teams-resource-account-difference](../includes/m365-teams-resource-account-difference.md)]
 

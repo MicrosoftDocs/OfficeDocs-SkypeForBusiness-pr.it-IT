@@ -14,13 +14,13 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9d88f69d-8641-4405-a26d-99414af679a5
-description: "Nel nodo Archivi file vengono elencati gli archivi file della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 9e85ca7477cc9eb81319747211422aaffb707142
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Nel nodo Archivi file vengono elencati gli archivi file della topologia. È possibile eseguire l'operazione seguente:"
+ms.openlocfilehash: 68fdf403b4748808c0b7e390579f274be5399f9dedbee89b8612fcf7aefdb6f8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344885"
 ---
 # <a name="file-stores-scope-node"></a>Nodo di ambito degli archivi file
  
@@ -30,7 +30,7 @@ Nel nodo **Archivi file** vengono elencati gli archivi file della topologia. È 
     
 Oltre alle opzioni per l'archivio file, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
     
 - **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     

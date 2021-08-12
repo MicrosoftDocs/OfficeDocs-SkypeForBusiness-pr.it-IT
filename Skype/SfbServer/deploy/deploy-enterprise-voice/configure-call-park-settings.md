@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3bed9d09-8363-4fff-a220-f0f6d3a81241
 description: Modificare le impostazioni del parcheggio di chiamata in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: c1eecd55dac398752915ccb63886bbf85858fe47
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 09888fd0d22ce182688a2fbd0456ce7e5cc6564e1b33ebb1b957ebb0f23b02df
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54294903"
 ---
 # <a name="configure-call-park-settings-in-skype-for-business"></a>Configurare le impostazioni del parcheggio di chiamata in Skype for Business
 
@@ -44,7 +44,7 @@ Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration*
 
 ### <a name="to-configure-call-park-settings"></a>Per configurare le impostazioni del parcheggio di chiamata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
 
 2. Eseguire: 
 
@@ -53,7 +53,7 @@ Usare il cmdlet **New-CsCpsConfiguration** o il cmdlet **Set-CsCpsConfiguration*
    ```
 
    > [!TIP]
-   > Utilizzare il cmdlet **Get-CsSite** per identificare il sito. Per informazioni dettagliate, vedere la documentazione di Skype for Business Server Management Shell.
+   > Utilizzare il cmdlet **Get-CsSite** per identificare il sito. Per informazioni dettagliate, vedere Skype for Business Server Management Shell.
 
     Ad esempio:
 

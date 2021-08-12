@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2c6b40d5-207a-4ca9-a090-e43350f4968f
-description: Nella pagina Impostazioni nome e sicurezza sono disponibili una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in bit della coppia di chiavi privata e pubblica e una casella di controllo che consente di contrassegnare la chiave privata del certificato come esportabile.
-ms.openlocfilehash: f0d0339a483056276d400654f897b898b002cf03
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: La pagina Nome e sicurezza Impostazioni fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in bit della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come esportabile.
+ms.openlocfilehash: a1460f78af07a81b3c02e673a7e81dec0ef0f344987835e4efaadb5309910072
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49805346"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54323278"
 ---
 # <a name="certificate-request-basic"></a>Richiesta di certificato (Basic)
  
-Nella  pagina Impostazioni nome e sicurezza è disponibile una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in **bit** della coppia di chiavi privata e pubblica e una casella di controllo che consente di contrassegnare la chiave privata del certificato come esportabile. 
+La pagina Nome e **sicurezza Impostazioni** fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in **bit** della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come **esportabile.** 
   
 Il nome descrittivo di un certificato rappresenta un nome facilmente riconoscibile che consente alla persona che visualizza il certificato di identificarlo più facilmente.
   
 La lunghezza in bit della coppia chiave privata e chiave pubblica può essere impostata su 1024, 2048 o 4096.
   
-Se si seleziona la casella **di** controllo Contrassegna la chiave privata del certificato come esportabile, il certificato e la chiave privata possono essere esportati e spostati in un altro computer o server. Questa operazione è necessaria solo quando si crea un pool di server perimetrali per il servizio mras (Media Relay Authentication Service).
+Selezionando la casella di **controllo** Contrassegna la chiave privata del certificato come esportabile, il certificato e la chiave privata possono essere esportati e spostati in un altro computer o server. L'unica volta che ciò è necessario è quando si crea un pool di server perimetrali per il servizio di autenticazione dell'inoltro multimediale (MRAS).
   
 > [!CAUTION]
 > Per mantenere la sicurezza del certificato e della coppia di chiavi, è necessario selezionare l'opzione Contrassegna la chiave privata del certificato come esportabile solo se è assolutamente necessario. 

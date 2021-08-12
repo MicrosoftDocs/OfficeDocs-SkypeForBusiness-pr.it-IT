@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft Teams.
-ms.openlocfilehash: 036b116589db15c5f0f02b75175d5b642f4f1ce730a7860c14f311ef51168934
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 32b930279c11c97180bfc39d295ec7f23e27dd507712b07c7e7009632d036c27
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282649"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849721"
 ---
 # <a name="phone-number-management-for-italy"></a>Gestione dei numeri di telefono per l'Italia
 
@@ -35,9 +35,9 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
 |Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-italy-(v.5.0)-(it-it).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per l'Italia (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-italy-(v.5.0)-(en-us).pdf?raw=true)<br/>  <br/>Compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). |
-|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per l'Italia (tutti i numeri) (v.6.0) (it-it)](https://download.microsoft.com/download/e/8/a/e8a20665-cbea-4f15-a50c-b8e1f6ef352d/letter-of-authorization-(loa)-for-italy-(all-numbers)-(v.6.0)-(it-it).pdf) <br/> <br/>Compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). |
-|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri di telefono da pubblicare/inediti.      <br/> |
-|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare PTSN per istruzioni](contact-pstn-service-desk.md) relative all’elenco dei numeri utente da convertire in numeri di servizio. <br/> |
+|Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per l'Italia (tutti i numeri) (v.6.0) (it-it)](https://download.microsoft.com/download/e/8/a/e8a20665-cbea-4f15-a50c-b8e1f6ef352d/letter-of-authorization-(loa)-for-italy-(all-numbers)-(v.6.0)-(it-it).pdf) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |
+|Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione.      <br/> |
+|Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
 |Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda delle chiamate o dell'operatore automatico, scaricare il modulo servizi directory [per l'Italia (v.1.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/directory-services-form-for-italy-(v.1.0)-(it-it).pdf?raw=true), compilarlo e [contattare PTSN per istruzioni](contact-pstn-service-desk.md). |
 |Esaminare la Carta dei Sevizi| Scaricare e leggere la [Carta dei servizi per l’Italia (v.1.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/charter-of-services-for-italy-(v.1.0)-(it-it).pdf?raw=true). |
 

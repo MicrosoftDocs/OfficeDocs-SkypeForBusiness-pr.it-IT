@@ -22,12 +22,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle lingue che è possibile impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
-ms.openlocfilehash: 70a45100763f7164c9d3d450e560a7c920133ca4
-ms.sourcegitcommit: eca3f5e83e4a07be197936db19f539cbfa2c2bd2
+ms.openlocfilehash: 3e19c01703ac1078bf6913b52aa1ca2dbfee9fc923184ab076791e234278ff0e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52804669"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295763"
 ---
 # <a name="languages-for-voicemail-greetings-and-messages"></a>Lingua per i messaggi e i saluti della segreteria telefonica
 

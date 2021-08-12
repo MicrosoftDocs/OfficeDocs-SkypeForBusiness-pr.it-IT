@@ -14,12 +14,12 @@ ms.collection:
 - M365-collaboration
 description: L'amministratore può ottenere informazioni su un elenco di problemi noti per Microsoft Teams Rooms, tra cui aggiornamento, interfaccia utente, hardware e limitazioni e comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b3656e73226f29f6580a4ae3a1807ee8273731a8
-ms.sourcegitcommit: ad215c120d7e550a7aebf2e1bb620c69039e5d8d
+ms.openlocfilehash: 2fdc4a641c5f507ed52f76779cee77aebe3897188f508f46a54747b4710ba424
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/01/2021
-ms.locfileid: "53679781"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345365"
 ---
 # <a name="known-issues"></a>Problemi noti 
  

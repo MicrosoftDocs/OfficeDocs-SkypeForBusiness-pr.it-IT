@@ -14,16 +14,16 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 607709a0-1617-44f3-bf68-fec1129250a4
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per associare il Survivable Branch Appliance o il Survivable Branch Server a un pool Front End o a un server Standard Edition, nella pagina Selezionare il pool Front End selezionare il pool Front End o un server Standard Edition nell'elenco a discesa Pool Front End. Fare clic su Avanti per continuare.
-ms.openlocfilehash: 768047f5c7bba1b3e0235988e38f11fe19bbd00c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Per associare il Survivable Branch Appliance o il Survivable Branch Server a un pool Front End o a un server edizione Standard, nella pagina Selezionare il pool Front End selezionare il pool Front End o un server edizione Standard dall'elenco a discesa Pool Front End. Fare clic su Avanti per continuare.
+ms.openlocfilehash: e1e27a60655839d57f32eb95280de49b1346f54deef5d457cc4fa9120a2e7acf
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49811496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54323358"
 ---
 # <a name="associate-branch-office-appliance-with-front-end"></a>Associare Branch Office Appliance a Front End Server
  
-Per associare il Survivable Branch Appliance o il Survivable Branch Server a un pool Front End o a un server Standard Edition, nella pagina Selezionare il **pool Front End** selezionare il pool Front End o un server Standard Edition nell'elenco a discesa Pool Front **End.** Fare clic su **Avanti** per continuare.
+Per associare il Survivable Branch Appliance o il Survivable Branch Server a un pool Front End o a un server edizione Standard, nella pagina Selezionare il **pool Front End** selezionare il pool Front End o un server edizione Standard nell'elenco a discesa Pool Front **End.** Fare clic su **Avanti** per continuare.
   
 

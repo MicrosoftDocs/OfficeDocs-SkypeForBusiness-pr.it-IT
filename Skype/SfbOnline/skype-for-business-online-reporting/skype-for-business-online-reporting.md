@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: 'Use this reference guide to learn about Skype for Business Online reporting and what info is available. '
-ms.openlocfilehash: e9ef3d9090ff494afe8595c139bcc9206215435b
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 3eb1228e06dbf5880789ea5a8175d325a5439d9aefc7642c045963884fde70c3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54334438"
 ---
 # <a name="skype-for-business-online-reporting"></a>Creazione di report di Skype for Business Online
 
@@ -32,7 +32,7 @@ ms.locfileid: "52238142"
 
 Gli amministratori dell'organizzazione possono avere a disposizione un elenco completo di tutti i diversi report disponibili in Skype for Business Online. Include tutti i report e le informazioni che è possibile ottenere con ciascun report.
   
-Per accedere ai report Skype for Business Online, accedere all'Microsoft 365 di amministrazione usando l'account utente e la password. Per visualizzare i report, è necessario che all'account utilizzato per l'accesso sia assegnato il ruolo Amministratore globale o Amministratore dei servizi Skype for Business delegato.
+Per accedere ai report Skype for Business Online, accedere al interfaccia di amministrazione di Microsoft 365 usando l'account utente e la password. Per visualizzare i report, è necessario che all'account utilizzato per l'accesso sia assegnato il ruolo Amministratore globale o Amministratore dei servizi Skype for Business delegato.
   
 > [!NOTE]
 > Per verificare le autorizzazioni, nell'interfaccia di amministrazione > **utenti**  >  **attivi**. Fare clic sul nome visualizzato dell'utente e quindi su **Modifica** e nella pagina delle proprietà dell'account fare clic su **Ruoli**

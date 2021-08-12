@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per Antigua e Barbuda.
-ms.openlocfilehash: 31eba4812e0c0d323236663258986663c5390b10
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1ff0c88c2391a69d1bf176fa36c25e77240e331fcfb6a3de244fcb6b87b830e3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54334777"
 ---
 # <a name="availability-in-antigua-and-barbuda"></a>Disponibilità in Antigua e Barbuda
 

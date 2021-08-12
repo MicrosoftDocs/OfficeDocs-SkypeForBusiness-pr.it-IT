@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 8a5f21d0-f6c8-4907-9958-5ca36f702542
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni per un pool Front End o un server Standard Edition esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: 0eff10b89c05980e5b2d425c43266fafd70461e6
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b4dd6cee4c612cf929c1c058001b79dcfad0e9c88c055a78351297e125c40e90
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54323368"
 ---
 # <a name="front-end-general-settings-expander"></a>Espansione delle impostazioni generali di Front End
 
@@ -50,7 +50,7 @@ Per un pool Front End, è possibile configurare impostazioni generali, di resili
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare Servizi di conferenza telefonica con accesso esterno (PSTN). È possibile specificare e definire un gateway PSTN (Public Switched Telephone Network) più avanti nella sottosezione "Impostazioni del Mediation Server" di questa sezione.
 
-  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e ai client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e Skype for Business client. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** modificare o specificare quanto segue:
 
@@ -147,7 +147,7 @@ Per un server Standard Edition, è possibile configurare impostazioni generali, 
 
   - **Servizio di conferenza**. Include audio, video e condivisione applicazioni. Dopo avere selezionato questa opzione, è possibile selezionare **Servizi di conferenza telefonica con accesso esterno (PSTN)**. È possibile specificare e definire un gateway PSTN più avanti nelle impostazioni del Mediation Server.
 
-  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e ai client Skype for Business. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
+  - **VoIP aziendale**. Abilita le chiamate voice over IP interne a telefoni e dispositivi qualificati e Skype for Business client. Per abilitare le funzionalità di chiamata esterna, è necessario includere un Mediation Server. Per informazioni dettagliate, vedere "Mediation Server" più avanti in questo argomento.
 
 - In **Associazioni** è possibile modificare o specificare quanto segue:
 

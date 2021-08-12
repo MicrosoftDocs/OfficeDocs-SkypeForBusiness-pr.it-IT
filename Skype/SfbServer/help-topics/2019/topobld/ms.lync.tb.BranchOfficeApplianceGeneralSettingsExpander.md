@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 86860416-7c9b-49af-b9d2-658c172852de
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni di un Survivable Branch Appliance o Survivable Branch Server esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: be0deea657fa33db300c7aa73c9e3f3304113f0f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 44a85b18b4abc659fb82922b39792ab0427a781b73e6d914136a82c47b5ae24f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118665"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54334348"
 ---
 # <a name="branch-office-appliance-general-settings-expander"></a>Espansione delle impostazioni generali di Branch Office Appliance
 
@@ -56,10 +56,10 @@ In **Associazioni** è possibile modificare o specificare quanto segue:
 
 La resilienza garantisce una disponibilità elevata per il pool di registrazione. Fornendo una funzione di registrazione di backup, in caso di malfunzionamento della funzione di registrazione principale, quella di backup può subentrare, consentendo agli utenti di connettersi e comunicare. Gli utenti possono riscontrare funzionalità ridotte, a seconda di quali sistemi hanno avuto problemi con la funzione di registrazione principale.
 
-Nell'elenco a discesa selezionare il pool Enterprise Edition Front End o il Front End Server Standard Edition che fungerà da registrar di backup per il Survivable Branch Appliance o il Survivable Branch Server. È inoltre possibile scegliere di impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione di registrazione principale sia di nuovo attiva e pronta per riacquisire il controllo del processo di registrazione.
+Nell'elenco a discesa selezionare il pool edizione Enterprise Front End o edizione Standard Front End Server che fungerà da registrar di backup per il Survivable Branch Appliance o il Survivable Branch Server. È inoltre possibile scegliere di impostare intervalli di tempo per il failover e il failback. Abilitando le impostazioni per tali intervalli (specificati in secondi), viene rilevata automaticamente la presenza di una funzione di registrazione con problemi ed è previsto un periodo di tempo per determinare automaticamente se la funzione di registrazione principale sia di nuovo attiva e pronta per riacquisire il controllo del processo di registrazione.
 
 > [!IMPORTANT]
-> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se la funzione di registrazione non risponde per un breve periodo di tempo. È infatti possibile che la funzione di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per un Survivable Branch Appliance o un Survivable Branch Server in un sito in un pool o un Front End Server Standard Edition sono 120 secondi per il failover e 240 secondi per il fallback.
+> Nel definire l'intervallo di rilevamento degli errori e l'intervallo di failback, prestare attenzione a non immettere un intervallo che possa dare luogo al failover e al failback se la funzione di registrazione non risponde per un breve periodo di tempo. È infatti possibile che la funzione di registrazione principale non risponda per brevi periodi a causa del caricamento del pool o dei server. I valori predefiniti per un Survivable Branch Appliance o un Survivable Branch Server in un sito in un pool o edizione Standard Front End Server sono 120 secondi per il failover e 240 secondi per il fallback.
 
 ### <a name="mediation-server"></a>Mediation Server
 

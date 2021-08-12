@@ -17,28 +17,28 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 ms.custom: ''
-description: "Riepilogo: in una distribuzione locale di Skype for Business Server abilitata per la distribuzione ibrida, è possibile spostare gli utenti tra l'ambiente locale e il cloud (da Microsoft Teams a Skype for Business Online prima del ritiro)."
-ms.openlocfilehash: 9a8099d5825eda6820bb8746d543e955524111be
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+description: "Riepilogo: in una distribuzione locale di Skype for Business Server abilitata per la distribuzione ibrida, è possibile spostare gli utenti tra l'ambiente locale e il cloud."
+ms.openlocfilehash: 31695b7fa21f4fc873afa6b94bbefa58bbfbdb7b7d22f6da5c6eb972627c8cb8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53510777"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54334538"
 ---
 # <a name="move-users-between-on-premises-and-cloud"></a>Spostare utenti tra ambiente locale e cloud
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-In una distribuzione locale di Skype for Business Server abilitata per la distribuzione ibrida, è possibile spostare gli utenti tra l'ambiente locale e il cloud (da Microsoft Teams a Skype for Business Online prima del ritiro). A prescindere dal fatto che un utente si trovi in locale o nel cloud, la sua posizione è nota come abitazione Skype for Business dell'utente:
+In una distribuzione locale di Skype for Business Server abilitata per la distribuzione ibrida, è possibile spostare gli utenti tra l'ambiente locale e Teams. A prescindere dal fatto che un utente si trovi in locale o nel cloud, la sua posizione è nota come abitazione Skype for Business dell'utente:
 
 - Gli utenti ospitati in locale interagiscono con i server Skype for Business locali.
-- Gli utenti disponibili online possono interagire con il servizio Skype for Business Online.
+- Gli utenti ospitati online possono interagire con il Teams servizio.
 
-*Gli utenti di Teams hanno a disposizione una abitazione Skype for Business, indipendentemente dal fatto che utilizzino Skype for Business.* Se si dispone di utenti Skype for Business locali che usano anche Teams (affiancati), tali utenti sono ospitati in locale. Teams gli utenti con Skype for Business locale non hanno la possibilità di interagire con gli utenti di Skype for Business dal client Teams, né possono comunicare da Teams con gli utenti di un'organizzazione federata. Tale funzionalità è completamente disponibile solo dopo che l'utente è stato spostato da Skype for Business locale a online e reso TeamsOnly. Quando si sposta un utente in online, è possibile consentirgli di usare Skype for Business Online (e, facoltativamente, Teams) oppure è possibile renderlo Solo Teams. È consigliabile spostare gli utenti in modalità Solo Teams, in modo da garantire che il routing di tutte le chat e le chiamate in arrivo si sposti nel client Teams messaggi. Per ulteriori dettagli, vedere [Teams coesistenza](/microsoftteams/coexistence-chat-calls-presence) con Skype for Business e Guida alla migrazione e all'interoperabilità per le organizzazioni che utilizzano [Teams insieme](/microsoftteams/migration-interop-guidance-for-teams-with-skype)a Skype for Business .
+*Gli utenti di Teams hanno a disposizione una abitazione Skype for Business, indipendentemente dal fatto che utilizzino Skype for Business.* Se si dispone di utenti Skype for Business locali che usano anche Teams (affiancati), tali utenti sono ospitati in locale. Teams gli utenti con Skype for Business locale non hanno la possibilità di interagire con gli utenti di Skype for Business dal client Teams, né possono comunicare da Teams con gli utenti di un'organizzazione federata. Tale funzionalità è completamente disponibile solo dopo che l'utente è stato spostato da Skype for Business locale a online e reso TeamsOnly. È consigliabile spostare gli utenti in modalità TeamsOnly, in modo da garantire che il routing di tutte le chat e le chiamate in arrivo si sposti nel Teams client. Per ulteriori dettagli, vedere [Teams coesistenza](/microsoftteams/coexistence-chat-calls-presence) con Skype for Business e Guida alla migrazione e all'interoperabilità per le organizzazioni che utilizzano [Teams insieme](/microsoftteams/migration-interop-guidance-for-teams-with-skype)a Skype for Business .
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Prerequisiti per spostare un utente nel cloud (se si Teams solo modalità o Skype for Business Online prima del ritiro):
+Prerequisiti per spostare un utente in modalità TeamsOnly:
 
 - L'organizzazione deve avere Azure AD Connessione configurato correttamente e sincronizzare tutti gli attributi rilevanti per l'utente, come descritto in [Configure Azure AD Connessione](configure-azure-ad-connect.md).
 - Skype for Business ibrido deve essere configurato, come descritto in [Configure Skype for Business hybrid](configure-federation-with-skype-for-business-online.md).
@@ -52,14 +52,14 @@ Prerequisiti per spostare un utente nel cloud (se si Teams solo modalità o Skyp
 Se un utente viene spostato da locale al cloud:
 
 - Teams gli utenti diventano abilitati per l'interoperabilità con Skype for Business utenti e, se sono TeamsOnly, possono anche eseguire la federazione con altre organizzazioni.
-- L'utente inizia a usare i servizi di Skype for Business Online nel cloud per qualsiasi funzionalità di Skype for Business.
-- I contatti locali vengono spostati nel cloud (Teams o Skype for Business Online).
+
+- I contatti locali vengono spostati in Teams.
+
 - Le riunioni esistenti organizzate e pianificate in futuro vengono migrate online: se gli utenti vengono spostati direttamente in TeamsOnly (vedere di seguito), le riunioni vengono convertite Teams riunioni, altrimenti le riunioni rimangono Skype for Business ma verranno migrate in modo che siano ospitate online anziché locali.  La migrazione delle riunioni avviene in modo asincrono e inizia circa 90 minuti dopo lo spostamento dell'utente.  Per determinare lo stato della migrazione di una riunione, è possibile usare [Get-csMeetingMigrationStatus](../../SfbOnline/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms.md#managing-mms). Tenere presente che qualsiasi contenuto caricato prima della riunione non viene spostato.
 
-Per spostare gli utenti tra l'ambiente locale e il cloud (da Teams a Skype for Business Online), utilizzare il cmdlet Move-CsUser o il Pannello di controllo di amministrazione di Skype for Business, entrambi strumenti locali. Questi strumenti supportano tre diversi percorsi di spostamento:
+Per spostare gli utenti Teams, utilizzare il cmdlet Move-CsUser o il Pannello di controllo di amministrazione di Skype for Business, entrambi strumenti locali. Questi strumenti supportano i percorsi di spostamento seguenti:
 
 - [Da Skype for Business Server (locale)](move-users-from-on-premises-to-teams.md) direttamente a Teams Only (che li sposta anche in Skype for Business Online).  Il comportamento di spostarsi direttamente da locale a Teams è ora automatico, indipendentemente dalla versione di Skype for Business Server o Lync Server utilizzata. Non è più necessario specificare `-MoveToTeams` l'opzione per ottenere questo comportamento.  
-- [Da Skype for Business Server (locale) a Skype for Business Online](move-users-from-on-premises-to-skype-for-business-online.md). I clienti che devono ancora spostare gli utenti su Skype for Business Online senza diventare TeamsOnly possono ottenere questo risultato spostando prima l'utente nel cloud con la modalità TeamsOnly e quindi aggiornando la modalità dell'utente in modo che sia diversa da TeamsOnly usando o l'interfaccia di amministrazione di `Grant-CsTeamsUpgradePolicy` Teams. Questa opzione non sarà più disponibile dopo Skype for Business online è stato ritirato.
 - [Da online (Teams solo o meno), a locale](move-users-from-the-cloud-to-on-premises.md).
 
 > [!NOTE] 
@@ -102,8 +102,6 @@ I criteri (come quelli relativi al controllo del comportamento della messaggisti
 ## <a name="see-also"></a>Vedere anche
 
 [Spostare utenti da ambiente locale a Teams](move-users-from-on-premises-to-teams.md)
-
-[Spostare utenti da ambiente locale a Skype for Business Online](move-users-from-on-premises-to-skype-for-business-online.md)
 
 [Configurazione del servizio MMS (Meeting Migration Service)](../../SfbOnline/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms.md)
 

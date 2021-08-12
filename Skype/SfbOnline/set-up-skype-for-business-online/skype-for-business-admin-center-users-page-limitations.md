@@ -21,12 +21,12 @@ ms.custom:
 - Setup
 - ms.lync.lac.UsersCountLimitationWarning
 description: "Informazioni su come usare le limitazioni dell'Skype for Business visualizzazione degli utenti da parte dell'amministratore online. "
-ms.openlocfilehash: 00726dd76d59bfd177d6626d97c69ecb259bb2ec
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: d2a5903f2ce5fb5671123e7b8fca090826f39a69a8f98f5c628d0351a4b73bd9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239678"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54334468"
 ---
 # <a name="skype-for-business-online-admin-center-users-page-limitations"></a>Skype for Business Limitazioni della pagina utenti dell'interfaccia di amministrazione online
 

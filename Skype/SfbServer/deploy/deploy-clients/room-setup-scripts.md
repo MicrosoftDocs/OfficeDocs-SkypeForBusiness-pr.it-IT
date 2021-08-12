@@ -1,5 +1,5 @@
 ---
-title: Script di configurazione delle chat room di Skype Room System
+title: Skype Script di configurazione delle chat room del sistema sala
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: a66067d2-22b0-48f1-a5d0-e0cd0ece2e5a
-description: Leggi questo argomento per trovare script di esempio per il provisioning degli account di Skype Room System.
-ms.openlocfilehash: 93a97b42f3b800011030787ea39cfb503767e42c
-ms.sourcegitcommit: 1613e08da482ff142c990c9c9951abeb873ad964
+description: Leggere questo argomento per trovare script di esempio per il provisioning Skype di sistema room.
+ms.openlocfilehash: b485a8d08dc5b121d43545ab89ce9c992b4a5860eb874ba806b57c4ac09cfbe3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50569368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54294933"
 ---
-# <a name="skype-room-system-room-setup-scripts"></a>Script di configurazione delle chat room di Skype Room System
+# <a name="skype-room-system-room-setup-scripts"></a>Skype Script di configurazione delle chat room del sistema sala
  
-Leggi questo argomento per trovare script di esempio per il provisioning degli account di Skype Room System.
+Leggere questo argomento per trovare script di esempio per il provisioning Skype di sistema room.
   
-Questa sezione illustra gli script di esempio che possono essere usati per effettuare il provisioning degli account di Skype Room System. Questi script sono solo a scopo illustrativo. Devono essere utilizzati solo dopo aver consultato l'esperto IT o l'amministratore di dominio.
+In questa sezione vengono illustrati script di esempio che possono essere usati per eseguire il provisioning Skype di sistema room. Questi script sono solo a scopo illustrativo. Devono essere utilizzati solo dopo aver consultato l'esperto IT o l'amministratore di dominio.
   
 ## <a name="example-setup-script-skype-for-business-and-exchange-server-on-premises"></a>Script di installazione di esempio: Skype for Business e Exchange Server (locale)
 
@@ -45,9 +45,9 @@ Prima di eseguire lo script, verificare di aver esaminato i prerequisiti seguent
   
 - Microsoft Online Services Sign-In Assistant for IT Professionals BETA
     
-- Windows Azure Modulo di Active Directory per Windows PowerShell (versione a 64 bit) o (versione a 32 bit)
+- Windows Azure Active Directory module for Windows PowerShell (versione a 64 bit) o (versione a 32 bit)
     
-- Modulo PowerShell di Teams
+- Teams Modulo PowerShell
     
 - Riavvia se necessario
     

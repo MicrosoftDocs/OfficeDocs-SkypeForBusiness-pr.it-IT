@@ -16,20 +16,19 @@ description: Informazioni su come acquistare app di terze parti per Teams nell'M
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: dc46ea58421901a4d11f20160c2e9528a5311794bb084291c3c72e5e006ddc18
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5fa6c57b009ce7a7d6fef7ce1dd353ae32521a690fda254e469159cf0661dcd0
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54285655"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849677"
 ---
-<a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
-======================================================
+# <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
 
 > [!NOTE]
 > Questa funzionalità è attualmente disponibile solo negli Stati Uniti.
 
-Teams le app sono gratuite e alcune potrebbero richiedere abbonamenti al servizio di acquisto per sperimentare tutte le funzionalità e l'ambito dell'app. Questi abbonamenti ai servizi sono denominati offerte Software as a Service (SaaS), che sono disponibili per l'acquisto tramite [AppSource](https://appsource.microsoft.com/) e ora tramite l'interfaccia di amministrazione Microsoft Teams.
+Teams le app sono gratuite e alcune potrebbero richiedere l'acquisto di abbonamenti al servizio per sperimentare tutte le funzionalità e l'ambito dell'app. Questi abbonamenti al servizio sono denominati offerte Software as a Service (SaaS), che sono disponibili per l'acquisto tramite [AppSource](https://appsource.microsoft.com/) e ora tramite l'interfaccia di amministrazione Microsoft Teams di amministrazione.
 
 La [pagina Gestisci app](manage-apps.md) nell'Microsoft Teams di amministrazione consente di visualizzare e gestire tutte le app Teams per l'organizzazione. Ad esempio, è possibile visualizzare lo stato e le proprietà a livello di organizzazione delle app, caricare nuove app personalizzate nell'App Store dell'organizzazione, bloccare o consentire le app a livello di organizzazione e gestire le impostazioni delle app a livello di organizzazione.
 
@@ -40,11 +39,11 @@ Qui è anche possibile acquistare licenze per i servizi offerti da app di terze 
 ## <a name="search-for-and-purchase-services-for-a-third-party-app"></a>Cercare e acquistare servizi per un'app di terze parti
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**. Per accedere alla pagina, è necessario essere un amministratore globale o Teams del servizio.
-2. Cercare l'app desiderata. Per identificare le app con un abbonamento SaaS a pagamento, cercare nella **colonna** Licenze. Ogni app avrà uno dei valori seguenti:
+2. Cercare l'app desiderata. Per identificare le app con un abbonamento SaaS a pagamento, cercare nella **colonna Licenze.** Ogni app avrà uno dei valori seguenti:
     - **Acquista ora:** l'app offre un abbonamento SaaS ed è disponibile per l'acquisto.  
     - **Acquistato:** l'app offre un abbonamento SaaS e sono state acquistate licenze per l'app.
     - **- :** l'app non offre un abbonamento SaaS.
-3. Dopo aver trovato l'app, fare clic **su** Acquista per passare alla scheda Piani e **prezzi** della pagina dei dettagli dell'app. Esaminare i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Per altre informazioni, fare clic sul **collegamento** Altre informazioni per passare alla pagina dell'app in [AppSource.](https://appsource.microsoft.com/)  
+3. Dopo aver trovato l'app, fare clic **su** Acquista ora per passare alla scheda Piani e **prezzi** della pagina dei dettagli dell'app. Esaminare i piani e le informazioni sui prezzi per l'offerta SaaS per l'app. Per altre informazioni, fare clic sul **collegamento** Altre informazioni per passare alla pagina dell'app in [AppSource.](https://appsource.microsoft.com/)  
 4. Per acquistare un piano, fare clic **su Acquista adesso.** Si verrà reindirizzati all'esperienza di acquisto per l'offerta associata all'app Teams app. Qui completerai l'acquisto del servizio o dell'offerta SaaS.
 5. Scegliere il piano desiderato. Se l'offerta SaaS include più piani, fare clic su **Cambia** per visualizzare l'elenco dei piani disponibili.
 6. Selezionare il periodo di fatturazione **(mensile** o **annuale)** e quindi immettere il numero di licenze utente da acquistare.
@@ -63,9 +62,9 @@ Selezionare **Gestisci licenze** per passare al interfaccia di amministrazione d
 
 Gli amministratori globali possono visualizzare gli acquisti effettuati da chiunque nell'organizzazione, mentre Teams gli amministratori dei servizi possono visualizzare solo gli acquisti effettuati da soli.  
 
-## <a name="have-a-saas-offer-for-a-teams-app-that-you-want-to-list-and-sell-in-the-microsoft-teams-admin-center-and-appsource"></a>Hai un'offerta SaaS per un'app Teams che vuoi elencare e vendere nell'interfaccia di amministrazione di Microsoft Teams appSource?
+## <a name="have-a-saas-offer-for-a-teams-app-that-you-want-to-list-and-sell-in-the-microsoft-teams-admin-center-and-appsource"></a>Hai un'offerta SaaS per un'app Teams che vuoi elencare e vendere nell'interfaccia di amministrazione di Microsoft Teams AppSource?
 
-Gli sviluppatori possono creare offerte SaaS associate alle Teams app. Queste offerte vengono pubblicate tramite il [Centro per](https://partner.microsoft.com) i partner e sono disponibili per l'acquisto da parte delle organizzazioni tramite [AppSource](https://appsource.microsoft.com/) e l'Microsoft Teams di amministrazione.
+Gli sviluppatori possono creare offerte SaaS associate alle Teams app. Queste offerte vengono pubblicate tramite il Centro per i [partner](https://partner.microsoft.com) e sono disponibili per l'acquisto da parte delle organizzazioni tramite [AppSource](https://appsource.microsoft.com/) e l'Microsoft Teams di amministrazione.
  
 Gli sviluppatori di app di terze parti possono passare [a Creare un'offerta SaaS](/azure/marketplace/partner-center-portal/create-new-saas-offer) per altre informazioni.
 
