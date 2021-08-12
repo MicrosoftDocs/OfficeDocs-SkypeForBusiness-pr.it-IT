@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7c4b95081be4c7a0e900099dd4c81a1807a30bfb
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c64e4ffc576bea4a68c8eac41d0cb533aad7e9fa55a97dd5f59d9d2fcb54df27
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122160"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54337894"
 ---
 # <a name="upgrade-microsoft-teams-free-to-subscription-version"></a>Aggiornare Microsoft Teams versione gratuita all'abbonamento
 
@@ -44,8 +44,8 @@ Teams gratuito è progettato per le piccole e medie imprese e ha le caratteristi
 - Integrazione con app e servizi, incluse le versioni online di Word, Excel, PowerPoint e OneNote
 - 2 GB di spazio di archiviazione per utente e 10 GB di spazio di archiviazione condiviso
 - 1:1 e chiamate audio e videochiamate online di gruppo
-- Riunioni del canale
-- Condivisione dello schermo
+- Riunioni di canale
+- Condivisione dello schermo.
 
 La versione completa di Teams inclusa in un abbonamento Microsoft 365 o Office 365 offre le caratteristiche seguenti oltre alle funzionalità Teams gratuite:
 

@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: c73780cd-0033-4287-9ecd-ecf65ca61e62
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni per un pool con un solo server perimetrale o di più server perimetrali, sono disponibili queste sezioni:'
-ms.openlocfilehash: c887ffaa16818e377035109632871b7bc7ed25d8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b6f716093556919dab790e0c2258c22ba1e5159529deace41941b75c8802e817
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51108802"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54347072"
 ---
 # <a name="edge-settings-expander"></a>Espansione delle impostazioni del server perimetrale
 
@@ -37,7 +37,7 @@ Per modificare le impostazioni per un pool con un solo server perimetrale o di p
 
 Nome di dominio completo (FQDN) interno del pool di server perimetrali. Modificare l'FQDN del pool per cambiare questa impostazione.
 
-Selezionare la casella di controllo Abilita federazione per questo pool di server perimetrali **(porta 5061)** se si configura la federazione con un server Skype for Business Server 2015.
+Selezionare la casella di controllo Abilita federazione per il pool di server perimetrali **(porta 5061)** se si configura la federazione con un server Skype for Business Server 2015.
 
 Specificare il numero di porta per **Porta di replica configurazione interna (HTTPS)**.
 

@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bd270488-ceb9-4920-bef3-ed9fe8eff36c
-description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:"
-ms.openlocfilehash: 4c152cdcc9fd29f25573749934d7a7197360be9d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Questo nodo mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:"
+ms.openlocfilehash: 1abf5a3cf011d90f8efc81531d5f7fa052a57941ec7484b00435d285364ec134
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818166"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338164"
 ---
 # <a name="sql-instance-scope-node"></a>Nodo dell'ambito dell'istanza SQL
  
-In questo nodo vengono visualizzati il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:
+Questo nodo mostra il nome di dominio completo (FQDN) di questo Microsoft SQL Server e l'istanza di SQL Server in tale server e i pool o i server che utilizzano questo SQL Server. È possibile eseguire le operazioni seguenti:
   
-- **Modifica proprietà**. Consente di **aprire** la pagina Modifica proprietà per il server, in cui è possibile modificare il nome di dominio completo del server (se la topologia non è già stata pubblicata) e l'istanza di SQL Server da utilizzare.
+- **Modifica proprietà**. Apre la **pagina Modifica** proprietà per il server, in cui è possibile modificare il nome di dominio completo del server (se la topologia non è già stata pubblicata) e l'istanza di SQL Server da utilizzare.
     
 - **Elimina**. Consente di eliminare il server dalla topologia.
     

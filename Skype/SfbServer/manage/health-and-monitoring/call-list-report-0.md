@@ -1,5 +1,5 @@
 ---
-title: Rapporto Elenco chiamate in Skype for Business Server
+title: Rapporto elenco chiamate in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,19 +11,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 9739f9f0-7a37-4844-91d5-f089d2011013
-description: 'Riepilogo: informazioni sul Rapporto Elenco chiamate utilizzato in Skype for Business Server.'
-ms.openlocfilehash: 8deb14cc8d2b8ff4b47701502de414d7460a81ef
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni sul Rapporto elenco chiamate utilizzato in Skype for Business Server.'
+ms.openlocfilehash: 301ace0e4d9af8b2635f95f6c3a750c859ca1300f6f3cc277870bdac2c8cc989
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817076"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338124"
 ---
-# <a name="call-list-report-in-skype-for-business-server"></a>Rapporto Elenco chiamate in Skype for Business Server
+# <a name="call-list-report-in-skype-for-business-server"></a>Rapporto elenco chiamate in Skype for Business Server
  
-**Riepilogo:** Informazioni sul Rapporto Elenco chiamate utilizzato in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto elenco chiamate utilizzato in Skype for Business Server.
   
-Il rapporto Elenco chiamate offre metriche QoE (Quality of Experience) per le singole chiamate effettuate e ricevute nell'organizzazione. Tenere presente che le metriche effettive riportate dipendono dalla modalità di accesso al rapporto Elenco chiamate. Ad esempio, se apri il report dal Rapporto dispositivi [in Skype for Business Server,](device-report.md)vedrai metriche come le seguenti, riportate anche nel Rapporto dispositivi:
+Il rapporto Elenco chiamate offre metriche QoE (Quality of Experience) per le singole chiamate effettuate e ricevute nell'organizzazione. Tenere presente che le metriche effettive riportate dipendono dalla modalità di accesso al rapporto Elenco chiamate. Ad esempio, se apri il report dal Rapporto dispositivi [in Skype for Business Server](device-report.md), vedrai metriche come le metriche seguenti, riportate anche nel Rapporto dispositivi:
   
 - Microfono del chiamante
     
@@ -35,7 +35,7 @@ Il rapporto Elenco chiamate offre metriche QoE (Quality of Experience) per le si
     
 - Rapporto di tempo commutazione vocale 
     
-Tuttavia, se si apre il Rapporto elenco chiamate dal Rapporto località [in Skype for Business Server,](location-report.md)non verrà visualizzata alcuna di queste metriche. al contrario, vedrai metriche come queste:
+Tuttavia, se si apre il Rapporto elenco chiamate dal Rapporto località [in Skype for Business Server](location-report.md), non verrà visualizzata alcuna di queste metriche. al contrario, vedrai metriche come queste:
   
 - Roundtrip (ms)
     
@@ -51,15 +51,15 @@ Si tratta delle metriche riportate nel Rapporto percorsi. Tuttavia, nel rapporto
 
 Il rapporto Elenco chiamate è accessibile da qualsiasi dei rapporti seguenti:
   
-- Rapporto [località in Skype for Business Server](location-report.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate di livello insufficiente)
+- Rapporto [località in Skype for Business Server](location-report.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
     
-- Rapporto [dispositivi in Skype for Business Server](device-report.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate di livello insufficiente)
+- Rapporto [dispositivi in Skype for Business Server](device-report.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
     
-- Rapporto [riepilogativo qualità multimediale in Skype for Business Server](summary.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate di livello insufficiente)
+- Rapporto [riepilogativo qualità multimediale in Skype for Business Server](summary.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
     
-- Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate di livello insufficiente)
+- Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate scarsa)
     
-Dal Rapporto Elenco chiamate è possibile accedere al Rapporto dettagli chiamata [in Skype for Business Server](call-detail-report.md) facendo clic sulla metrica Dettagli.
+Dall'interno del Rapporto elenco chiamate è possibile accedere al Rapporto dettagli chiamata [in](call-detail-report.md) Skype for Business Server facendo clic sulla metrica Dettagli.
   
 ## <a name="making-the-best-use-of-the-call-list-report"></a>Uso ottimale del rapporto Elenco chiamate
 
@@ -91,6 +91,6 @@ La tabella seguente elenca le informazioni disponibili nel rapporto Elenco chiam
 |**Rapporto campioni nascosti utilità di ripristino** <br/> |Sì  <br/> |Rapporto medio tra i campioni audio nascosti e il numero totale di campioni. Un campione audio nascosto è una tecnica utilizzata per mitigare le transazioni improvvise generalmente causate dall'eliminazione di pacchetti di rete. Valori elevati indicano l'applicazione di livelli significativi di soppressione della perdita applicata dovuti a perdita di pacchetti o instabilità, con conseguente audio distorto o perdita di audio.  <br/> |
 |**Rapporto campioni estesi utilità di ripristino** <br/> |Sì  <br/> |Rapporto medio tra i campioni audio estesi e il numero totale di campioni. Con audio esteso si intende l'audio che è stato espanso per garantire la qualità delle chiamate quando viene rilevato un pacchetto di rete eliminato. Valori elevati indicano livelli significativi di estensione dei campioni dovuti a instabilità, con conseguente riproduzione di audio robotico o distorto.  <br/> |
 |**Rapporto campioni compressi utilità di ripristino** <br/> |Sì  <br/> |Rapporto medio tra i campioni audio compressi e il numero totale di campioni. I campioni audio vengono compressi per mantenere la qualità della chiamata quando è stato rilevato un pacchetto di rete eliminato. Valori alti indicano livelli significativi di compressione dei campioni dovuti a instabilità con conseguente riproduzione di audio accelerato o distorto.  <br/> |
-|**Connettività** <br/> |Sì  <br/> | Tipo di collegamento di comunicazione wireless. In genere è uno dei seguenti: <br/>  Inoltro <br/>  Diretto <br/> |
+|**Connettività** <br/> |Sì  <br/> | Tipo di collegamento di comunicazione wireless. In genere è uno dei seguenti: <br/>  Inoltro <br/>  Direct <br/> |
    
 

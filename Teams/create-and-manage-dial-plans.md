@@ -21,16 +21,16 @@ ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
 description: Informazioni su come usare l'interfaccia Microsoft Teams di amministrazione o Windows PowerShell per creare e gestire i dial plan (piani di chiamata PSTN).
-ms.openlocfilehash: b578533bfd2b903fd29563897a2f9ed917b369c38955e631b4aba0cefaa025fc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9a1ec745a08848106d6f5c6c55543874703b82d8240608ec144dfcbd888c43c3
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282869"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849201"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare dial plan
 
-Dopo aver programmato i dial plan per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per il routing delle chiamate, è possibile creare i dial plan. Con un account di amministratore con una licenza di Teams valida, è possibile usare l'interfaccia di amministrazione di Microsoft Teams o Windows PowerShell per creare e gestire i dial plan.  
+Dopo aver programmato i piani di chiamata per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per il routing vocale, è possibile creare i piani di chiamata. Con un account di amministratore con una licenza di Teams valida, è possibile usare l'interfaccia di amministrazione di Microsoft Teams o Windows PowerShell per creare e gestire i dial plan.  
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
@@ -39,11 +39,11 @@ Dopo aver programmato i dial plan per l'organizzazione e aver trovato tutte le r
 1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Piano di**  >  **chiamata vocale.**
 2. Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per il piano di chiamata.
     ![Screenshot che mostra la pagina Aggiungi per la creazione di un dial plan](media/create-dial-plan.png)
-3. In **Dettagli piano di** chiamata specificare un prefisso di composizione esterno se gli utenti devono comporre una o più cifre iniziali aggiuntive , ad esempio 9, per ottenere una linea esterna. Procedi come segue.
+3. In **Dettagli piano di chiamata** specificare un prefisso di composizione esterno se gli utenti devono comporre una o più cifre iniziali aggiuntive , ad esempio 9, per ottenere una linea esterna. Procedi come segue.
     1. Nella casella **Prefisso di composizione esterno** immettere un prefisso di composizione esterno. Il prefisso può contenere fino a quattro caratteri (#,*, e 0-9).
     2. Attivare la **composizione ottimizzata del dispositivo**. Se si specifica un prefisso di composizione esterno, è necessario attivare questa impostazione anche per applicare il prefisso in modo che le chiamate possano essere effettuate all'esterno dell'organizzazione.
 4. In **Regole di normalizzazione** configurare e associare una o più regole [di normalizzazione](what-are-dial-plans.md#normalization-rules) per il piano di chiamata. A ogni piano di chiamata deve essere associata almeno una regola di normalizzazione.  A questo scopo, eseguire una o più delle operazioni seguenti:
-    - Per creare una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Aggiungi** e quindi definire la regola.
+    - Per creare una nuova regola di normalizzazione e associarla al dial plan, fare clic **su Aggiungi** e quindi definire la regola.
     - Per modificare una regola di normalizzazione già associata al dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Modifica.** Apportare le modifiche desiderate e quindi fare clic su **Salva.**
     - Per rimuovere una regola di normalizzazione dal dial plan, selezionarla facendo clic a sinistra del nome della regola e quindi su **Rimuovi.**
 5. Disporre le regole di normalizzazione nell'ordine desiderato. Fare **clic su Sposta su** o Sposta **giù** per modificare la posizione delle regole nell'elenco.
@@ -67,7 +67,7 @@ Assegnare un piano di chiamata nello stesso modo in cui si assegnano i criteri. 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
   
 ### <a name="start-powershell"></a>Avviare PowerShell
-- Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti:
+- Aprire un Windows PowerShell comando ed eseguire i comandi seguenti:
 
 ```powershell
   # When using Teams PowerShell Module

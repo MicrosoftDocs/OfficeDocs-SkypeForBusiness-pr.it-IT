@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 79a24502-b4ce-41f0-8979-8caddf535338
 description: La tabella Principal contiene tutte le entità, inclusi gli utenti, le cartelle e i gruppi.
-ms.openlocfilehash: ee9e16d0fcd5d7206bb73ff8b13cdc9d930b6b97
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 50d20aee156a4a919effac26ff29c371ec2cf886c12300ecd07268576730ae49
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338024"
 ---
 # <a name="tblprincipal"></a>tblPrincipal
  
@@ -29,7 +29,7 @@ La tabella Principal contiene tutte le entità, inclusi gli utenti, le cartelle 
 |**Colonna**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|
 |prinID  <br/> |int, not null  <br/> |ID entità.  <br/> |
-|prinGuid  <br/> |GUID, not null  <br/> |GUID dell'entità. Viene ampiamente utilizzata come chiave primaria alternativa perché il suo significato si trova nello spazio di Servizi di dominio Active Directory. Il GUID per un'entità memorizzata nella cache equivale al GUID oggetto Active Directory corrispondente.  <br/> |
+|prinGuid  <br/> |GUID, not null  <br/> |GUID dell'entità. Viene ampiamente utilizzato come chiave primaria alternativa perché il suo significato si trova nello spazio di Servizi di dominio Active Directory. Il GUID per un'entità memorizzata nella cache equivale al GUID oggetto Active Directory corrispondente.  <br/> |
 |prinUri  <br/> |nvarchar (256), non null  <br/> |URI dell'entità. Lo schema SIP viene utilizzato per gli utenti, mentre ma-grp viene utilizzato per quasi tutte le altre entità.  <br/> |
 |prinName  <br/> |nvarchar (256)  <br/> |Nome comune. Valore utilizzato solo dai tipi utente.  <br/> |
 |prinDisplayName  <br/> |Nvarchar (256)  <br/> |Nome visualizzato. Valore utilizzato solo dai tipi utente.  <br/> |
@@ -39,8 +39,8 @@ La tabella Principal contiene tutte le entità, inclusi gli utenti, le cartelle 
 |prinADUserPrincipalName  <br/> |nvarchar (256)  <br/> |Nome dell'entità utente (UPN) dell'utente. Valore utilizzato solo dai tipi utente normali.  <br/> |
 |prinDisabled  <br/> |smallint, non null  <br/> | 0: Principale attivo. <br/>  1: l'entità è disabilitata perché le funzionalità SIP dell'utente sono disabilitate. <br/>  2: Principale è eliminato poiché l'oggetto AD associato è stato eliminato. <br/> |
 |prinTypeID  <br/> |smallint, not null  <br/> |Tipo di entità (dalla tabella PrincipalType).  <br/> |
-|prinPoolID  <br/> |Soglia  <br/> |Assegnazione del pool di client Skype for Business per l'entità.  <br/> |
-|prinPolicyID  <br/> |Soglia  <br/> |Valore dei criteri del server Chat persistente per l'utente, se è presente un criterio del tipo di tag.  <br/> |
+|prinPoolID  <br/> |Soglia  <br/> |Skype for Business'assegnazione del pool client per l'entità.  <br/> |
+|prinPolicyID  <br/> |Soglia  <br/> |Valore dei criteri del server Chat persistente per l'utente, se è presente un criterio tipo di tag.  <br/> |
 |prinAddedBy  <br/> |int  <br/> |ID entità del creatore.  <br/> |
 |prinAddedOn  <br/> |bigint, non null  <br/> |Indicatore di data e ora per il momento della creazione.  <br/> |
 |prinUpdatedBy  <br/> |int  <br/> |ID dell'entità che ha eseguito l'ultimo aggiornamento.  <br/> |

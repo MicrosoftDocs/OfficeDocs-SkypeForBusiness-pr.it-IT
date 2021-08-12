@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 4ea30583-e5bd-4498-9bd8-38604c61e658
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: d622dfa48fa9d59bb9b2c52d8d13995b6004ddd0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: b70755696a0e9ff6901d130192a490a38fd21a29763323f481e806e0032b6dd2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109142"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54337804"
 ---
 # <a name="web-service-security-settings"></a>Impostazioni di sicurezza dei servizi Web
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server](../../../manage/authentication/web-service-configuration-settings.md)
 

@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere un elenco dei problemi noti quando si usa Microsoft come provider di conferenze telefoniche con accesso esterno, lo stato e alcune soluzioni alternative. '
-ms.openlocfilehash: 71d363ff98fc4590fb6d96cc3e8a8cb77b1fa24c
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: ee47417941ae39eff966ab2a2d4eb0e07e7d451e404b95ddb66816c61be42664
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54301842"
 ---
 # <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza
 

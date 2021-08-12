@@ -10,13 +10,13 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Prima di distribuire il pool pilota, è necessario aggiornare le voci A dell'host DNS per il pool pilota. Per eseguire correttamente questa procedura, è necessario connettersi al server o al dominio come membro del gruppo Domain Admins o DnsAdmins.
-ms.openlocfilehash: d934e3bdc46ab9deffa3c588b15ab793111c1a68
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+description: Prima di distribuire il pool pilota, è necessario aggiornare le voci A host DNS per il pool pilota. Per eseguire correttamente questa procedura, è necessario connettersi al server o al dominio come membro del gruppo Domain Admins o DnsAdmins.
+ms.openlocfilehash: 270b0bda7da679cb0c75e9a99e10a898dcee6ac70413ce276abfe19ba1eb2231
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44754056"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54337834"
 ---
 # <a name="configure-dns-records-for-pilot-pool-deployment"></a>Configurare i record DNS per la distribuzione del pool pilota
 
@@ -30,7 +30,7 @@ Prima di distribuire il pool pilota, è necessario aggiornare le voci A dell'hos
     
 3. Scegliere **Nuovo host (A o AAAA)**.
     
-4. Click **Name**, type the host name for the Skype for Business Server 2019 pool (the domain name is assumed from the zone that the record is defined in and does not need to be entered as part of the A record).
+4. Fare clic su Nome , digitare il nome host per il pool di Skype for Business Server 2019 (il nome di dominio viene considerato dalla zona in cui è definito il record e non deve essere immesso come parte del record A).
     
 5. Fare **clic su Indirizzo IP** e quindi digitare l'indirizzo IP per il pool Front End.
     

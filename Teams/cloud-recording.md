@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b66a65f9c3c5bf42911062d1af0a68b975363cfa
-ms.sourcegitcommit: d0fb9035903d9e1ce184417250913db10608b1a9
+ms.openlocfilehash: 9664cbad906149eccfce3f93d366f93b53e77798be0c080c3b57c3e46d3114d6
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53660744"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848971"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -262,6 +262,11 @@ Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di a
 > La funzionalità di scadenza automatica descritta in questo articolo non è ancora stata lanciata. Per altre informazioni sulla data di rilascio, vedere la [roadmap (ID funzionalità: 84580)](https://www.microsoft.com/microsoft-365/roadmap?searchterms=82057&filters=&searchterms=84580). 
 > 
 > Stiamo fornendo informazioni su come funzionerà questa funzionalità in FUTURO, per pianificarla e modificare le impostazioni dei criteri di Teams in anticipo. 
+>
+> Il comando per modificare preventivamente l'impostazione MeetingExpirationDays in Teams non è ancora disponibile. Sarà disponibile per tutti i tenant entro il 1° settembre, prima dell'abilitazione della funzionalità di scadenza.
+>
+> È possibile usare PowerShell per modificare "MeetingRecordingExpirationDays". Questa operazione potrà essere eseguita dopo il 1° settembre, quando l'impostazione sarà presente in PowerShell, anche se la funzionalità non sarà ancora abilitata. Un comando di esempio è: "Set-CsTeamsMeetingPolicy -Identity Global -MeetingRecordingExpirationDays 50".
+>
 
 Vedere le domande frequenti per gli amministratori e gli utenti finali per raccogliere informazioni su come funzionerà la scadenza automatica delle registrazioni delle riunioni di Teams, quali azioni è possibile intraprendere ora e quali azioni sarà possibile eseguire dopo il lancio della funzionalità. 
   
@@ -287,16 +292,40 @@ I nostri clienti, grazie ai loro feedback, ci hanno fatto sapere che desiderano 
   
 Riteniamo che quasi tutti i clienti trarranno vantaggio dalla riduzione del carico di archiviazione nel tenant rimuovendo le registrazioni che probabilmente non verranno mai riguardate dopo 60 giorni. Il nostro obiettivo è offrire un'esperienza più pulita possibile per tutti i clienti per impostazione predefinita. 
   
+**L'eliminazione avverrà automaticamente dopo 30 giorni, anche se i dati vengono consultati o scaricati?**
+  
+L'accesso al file non modifica la data di scadenza. 
+  
+**La data di scadenza è visibile come colonna nell'elenco?**
+
+Gli utenti con accesso in visualizzazione alla registrazione vedranno un'icona rossa accanto al file nella cartella OneDrive o SharePoint 14 giorni prima della scadenza del file. Attualmente non è possibile aggiungere una colonna a un elenco con la data di scadenza.
+  
 **Come viene calcolata la data di scadenza?**
   
 La data di scadenza viene calcolata a partire dal giorno in cui viene creata la registrazione della riunione più il numero predefinito di giorni impostato nell'impostazione di Teams dall'amministratore. 
   
+**È possibile modificare la data di scadenza per ogni registrazione, ad esempio in modo che la data di scadenza dei dati A sia di 30 giorni e la data di scadenza dei dati B sia di 60 giorni?**
+
+Sì, la data di scadenza è impostata per ogni file. Gli utenti possono modificare la data di scadenza nel riquadro dei dettagli di un file selezionato in OneDrive o SharePoint.
+
 **In che modo un amministratore può modificare la data di scadenza?**
   
 Gli amministratori possono modificare l'impostazione di scadenza predefinita in PowerShell oggi stesso. All'avvio della funzionalità, gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data. 
 
 I giorni di scadenza massimi che possono essere applicati da un amministratore sono 99.999 giorni o 273 anni. Gli amministratori non possono modificare la data di scadenza per registrazioni delle riunioni di Teams esistenti già caricate in OneDrive o SharePoint prima del rilascio di questa funzionalità. Ciò protegge l'intento dell'utente proprietario della registrazione di Teams. 
+  
+**La riproduzione della registrazione modifica la data di scadenza?**
 
+No, la riproduzione non influisce sulla data di scadenza.
+  
+**Cosa accade alla data di scadenza se la registrazione viene scaricata e ricaricata?**
+
+La data di scadenza verrà cancellata se il file viene ricaricato, indipendentemente dallo SKU dell'utente.
+  
+**Cosa succede se si copia o si sposta la registrazione in un percorso o un sito diverso?**
+
+La data viene conservata solo per i file delle registrazioni di Teams spostati. Un file copiato non avrà data di scadenza, così come una registrazione ricaricata.
+  
   Esempio di comando di PowerShell: 
   
   ```powershell
@@ -323,7 +352,7 @@ No, i file non verranno conservati a causa di questa funzionalità o delle relat
  
 **I criteri di conservazione e/o eliminazione impostati nel Centro sicurezza e conformità sostituiranno l'impostazione di scadenza delle registrazioni delle riunioni di Teams?**
   
-Sì, tutti i criteri impostati nel centro sicurezza e conformità avranno la precedenza completa. Ad esempio: 
+Sì, tutti i criteri impostati nel Centro sicurezza e conformità avranno la precedenza completa. Ad esempio: 
   
 - Se si dispone di un criterio che indica che tutti i file in un sito devono essere conservati per 100 giorni e l'impostazione di scadenza è di 30 giorni, il file di registrazione verrà conservato per l'intero periodo di 100 giorni.  
 - Se si dispone di un criterio di eliminazione che indica che tutte le registrazioni verranno eliminate dopo 5 giorni e si ha un'impostazione di scadenza per un file di registrazione di 30 giorni, il file verrà eliminato dopo 5 giorni. 
@@ -342,7 +371,7 @@ Il proprietario del file riceverà una notifica tramite e-mail alla scadenza del
   
 **Quali SKU sono necessari per questa funzionalità?**
   
-Per impostazione predefinita, tutti gli SKU avranno questa funzionalità. Per impostazione predefinita, gli utenti A1 avranno un periodo di scadenza di 30 giorni e non potranno modificare la data di scadenza
+Per impostazione predefinita, tutti gli SKU avranno questa funzionalità e gli utenti A1 avranno un periodo di scadenza di 30 giorni, non modificabile.
   
 **La scadenza del file è un evento controllato e sarà possibile visualizzarlo nei log di audit?**
   
