@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: dfd21945-331a-4058-97b6-d17690353702
 description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN) del pool, l'impostazione di replica e il pool di hop successivi per questo pool di applicazioni attendibili. È possibile eseguire queste azioni:"
-ms.openlocfilehash: 7520b70515c6134555652d0314c44ea05b1671f9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c55311345fadc2598d83aa1d3c3ace9242192c77903e39a70d891c2329dc9b4a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823926"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54329720"
 ---
 # <a name="external-application-scope-node"></a>Nodo dell'ambito dell'applicazione esterna
  

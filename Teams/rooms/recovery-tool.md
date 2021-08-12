@@ -1,5 +1,5 @@
 ---
-title: Usare lo strumento Microsoft Teams Rooms ripristino
+title: Utilizza lo strumento di ripristino di Microsoft Teams Rooms
 ms.author: dstrome
 author: dstrome
 manager: serdars
@@ -13,14 +13,14 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Questo articolo illustra come usare lo strumento di ripristino per Microsoft Teams Rooms, che è possibile usare per portare un sistema non aggiornato in uno stato supportato.
-ms.openlocfilehash: 9a856312229ae326b4adbfd039ee0553213ca09c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 65cb123de9284d4b65b461390a325ce413d069f381b2c075a137cedfb0121aca
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117494"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280691"
 ---
-# <a name="use-the-microsoft-teams-rooms-recovery-tool"></a>Usare lo strumento Microsoft Teams Rooms ripristino
+# <a name="use-the-microsoft-teams-rooms-recovery-tool"></a>Utilizza lo strumento di ripristino di Microsoft Teams Rooms
 
 Questo articolo illustra come usare lo strumento di ripristino per Microsoft Teams Rooms, che è possibile usare per portare un sistema non aggiornato in uno stato supportato. Questo strumento deve essere applicato quando nella console di Microsoft Teams Rooms viene visualizzato un errore "Configurazione di sistema non aggiornata" o prima di eseguire un ripristino factory con un [pulsante di comando.](./rooms-operations.md#microsoft-teams-rooms-reset-factory-restore)
 
@@ -38,7 +38,7 @@ Scaricare il pacchetto [Microsoft Teams Rooms di installazione](https://go.micro
 3) Eseguire `powershell.exe -ExecutionPolicy Unrestricted -File "<path to RecoveryTool.ps1>"` .
 4) Per eseguire un ripristino in fabbrica:
    1. Quando richiesto dallo script, selezionare l'opzione 2: **Reimposta**.
-   2. Se BitLocker è attivata, seguire le istruzioni fornite alla fine dell'output dello script per disabilitarlo.
+   2. Se BitLocker è attivato, seguire le istruzioni fornite alla fine dell'output dello script per disabilitarlo.
    3. Eseguire il ripristino in fabbrica.
       1. Aprire **l'app Impostazioni** e selezionare **Aggiorna & sicurezza**
       2. Passare alla **scheda** Ripristino.
@@ -52,6 +52,6 @@ Scaricare il pacchetto [Microsoft Teams Rooms di installazione](https://go.micro
 
 ## <a name="see-also"></a>Vedere anche
 
-[Microsoft Teams Rooms guida](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
+[Guida Microsoft Teams Rooms](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2)
 
 [Gestire Microsoft Teams Rooms](rooms-manage.md).

@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a01dff6c-50cc-463d-ac08-9f22e044bdc8
 description: 'È possibile abilitare il supporto per funzionalità specifiche che richiedono la distribuzione di altri server associando i ruoli del server al pool Front End in questo momento. È inoltre possibile associare ruoli del server con il pool Front End in un secondo momento. I ruoli del server che possono essere associati a un pool Front End includono quanto segue:'
-ms.openlocfilehash: 36f115cf39714a70245e9acfa7a37770890456ce
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c431ed232d3be1532ac4d1598dbe352ef714c7ab0fce43ea1536b731d34ef548
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106922"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54290784"
 ---
 # <a name="add-front-end-associations-2010"></a>Aggiungere associazioni di Front End Server 2010
 

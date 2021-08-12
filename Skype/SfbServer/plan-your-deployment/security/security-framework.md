@@ -12,25 +12,25 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 01131e28-b38e-40d9-8524-06725b9c6608
-description: Questa sezione fornisce una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. Comprendere come questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione di Skype for Business Server.
-ms.openlocfilehash: 94d2ffac30e029ab6631557a69d6da3ec108657f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. La comprensione del modo in cui questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione Skype for Business Server particolare.
+ms.openlocfilehash: a0f6513f86d7416f546c6a744fc1b40df7c7137a18dae5d76fcf18166a4f2eb1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832096"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54337714"
 ---
 # <a name="security-framework-for-skype-for-business-server"></a>Framework di sicurezza per Skype for Business Server
  
-Questa sezione fornisce una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. Comprendere come questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione di Skype for Business Server.
+In questa sezione viene fornita una panoramica degli elementi fondamentali che formano il framework di sicurezza per Skype for Business Server. La comprensione del modo in cui questi elementi funzionano insieme è essenziale per prendere decisioni informate sulla protezione della distribuzione Skype for Business Server particolare.
   
 Gli elementi sono i seguenti:
   
 - Servizi di dominio Active Directory (AD-DS) fornisce un singolo archivio back-end attendibile per gli account utente e le risorse di rete.
     
-- Role-Based controllo di accesso (RBAC, Access Control) consente di delegare le attività amministrative mantenendo al tempo stesso standard elevati per la sicurezza.
+- Role-Based controllo di accesso (RBAC) consente di delegare le attività amministrative mantenendo standard elevati per la sicurezza.
     
-- L'infrastruttura a chiave pubblica (PKI, Public Key Infrastructure) utilizza i certificati emessi da autorità di certificazione (CA) attendibili per autenticare i server e garantire l'integrità dei dati.
+- L'infrastruttura a chiave pubblica (PKI) utilizza i certificati emessi da autorità di certificazione attendibili (CA) per autenticare i server e garantire l'integrità dei dati.
     
 - Transport Layer Security (TLS), HTTPS su SSL (HTTPS) e Mutual TLS (MTLS) consentono l'autenticazione degli endpoint e la crittografia della messaggistica istantanea. I flussi di condivisione di audio, video e applicazioni punto a punto sono crittografati mediante Secure Real-Time Transport Protocol (SRTP).
     
@@ -42,7 +42,7 @@ Questi elementi di sicurezza fondamentali lavorano insieme per definire utenti, 
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-Gli argomenti di questa sezione descrivono il funzionamento di ognuno di questi elementi fondamentali per migliorare la sicurezza dell'infrastruttura di Skype for Business Server.
+Negli argomenti di questa sezione viene descritto il funzionamento di ognuno di questi elementi fondamentali per migliorare la sicurezza dell'Skype for Business Server aziendale.
   
 - [Servizi di dominio Active Directory per Skype for Business Server](active-directory-domain-services.md)
     
@@ -56,6 +56,6 @@ Gli argomenti di questa sezione descrivono il funzionamento di ognuno di questi 
     
 - [Autenticazione utente e client per Skype for Business Server](user-and-client-authentication.md)
     
-- [Windows PowerShell strumenti di gestione di Skype for Business Server](management-tools.md)
+- [Windows PowerShell e Skype for Business Server di gestione](management-tools.md)
     
 

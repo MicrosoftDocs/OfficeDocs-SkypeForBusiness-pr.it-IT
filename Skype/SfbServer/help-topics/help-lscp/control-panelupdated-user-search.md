@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 50feb75f-92a1-4916-b92e-c039e1290c52
 description: È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell'account SAM (Security Accounts Manager), all'indirizzo SIP o all'URI (Uniform Resource Identifier) della linea. È inoltre possibile cercare utenti utilizzando il Pannello di controllo di Lync Server o lo snap-in Utenti e computer di Active Directory.
-ms.openlocfilehash: 117f1c6a5a697cb1cf9e8e1f5c6cbf8363c517bf
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 75e5a3ddf063477351946ad1d5efa1e5877f38d1a6b8d2109fc2b91869bc6cde
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119935"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320648"
 ---
 # <a name="control-panel---updated-user-search"></a>Pannello di controllo (aggiornato): ricerca utenti
 
@@ -76,7 +76,7 @@ Aggiungere ulteriore testo descrittivo in base alle necessità.
 
 ### <a name="search-results-menus"></a>Menu dei risultati della ricerca
 
-- **Abilitare gli utenti** Fare clic per aprire [la finestra di dialogo Utenti: Nuovo](users-new-lync-server-user.md) utente di Lync Server, in cui è possibile aggiungere un nuovo utente a Skype for Business Server.
+- **Abilitare gli utenti** Fare clic per aprire [la finestra di dialogo Utenti: Nuovo](users-new-lync-server-user.md) utente di Lync Server, in cui è possibile aggiungere un nuovo utente Skype for Business Server.
 
     Per aggiungere un nuovo contatto, fare clic sulla freccia verso il basso e selezionare **Abilita contatti** per aprire la finestra di dialogo [Users: New Contact Objects](users-new-contact-objects.md).
 
@@ -86,7 +86,7 @@ Aggiungere ulteriore testo descrittivo in base alle necessità.
 
   - **Ri-abilitazione per Lync Server** Abilita l'account utente selezionato dopo che è stato temporaneamente disabilitato.
 
-  - **Disabilitazione temporanea per Lync Server** Disabilita l'account utente in Skype for Business Server fino a quando non viene riattivato, senza rimuovere l'account utente.
+  - **Disabilitazione temporanea per Lync Server** Disabilita l'account utente in Skype for Business Server finché non viene riattivato, senza rimuovere l'account utente.
 
   - **Assegnare criteri** Apre la [finestra di dialogo Utenti:](users-assign-policies.md) Assegna criteri, in cui è possibile configurare i criteri assegnati all'utente.
 

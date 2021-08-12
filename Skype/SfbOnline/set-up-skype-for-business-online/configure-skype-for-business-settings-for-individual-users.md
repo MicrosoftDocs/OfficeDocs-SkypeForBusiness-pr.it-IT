@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.UsersGeneralOptions
 - ms.lync.lac.UsersLyncToPhoneMoreInfo
 description: 'Informazioni su come modificare le impostazioni Skype for Business per singoli utenti, ad esempio audio e videoconferenze, registrazione di chiamate e riunioni. '
-ms.openlocfilehash: 0123f285101b8d7190dd7450ddb876a136de13ce
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 54dc4e1ee649fff28ac1c7d0729bfbddae521622d76d07e1723ddcc7fd0bdbf1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237532"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312300"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 

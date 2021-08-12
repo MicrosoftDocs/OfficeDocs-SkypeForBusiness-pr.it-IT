@@ -15,28 +15,28 @@ localization_priority: Normal
 ms.assetid: a4f948e7-e8f6-449a-8907-f61c5b143c05
 ROBOTS: NOINDEX, NOFOLLOW
 description: "I criteri di archiviazione consentono di controllare l'archiviazione delle comunicazioni interne ed esterne nella distribuzione per gli utenti ospitati in Skype for Business Server. I criteri di archiviazione includono il criterio globale e, facoltativamente, uno o più criteri per sito e utente:"
-ms.openlocfilehash: 71ffa03d0d3af8ea98fcc9ded17d4e3498e1705e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 93cd0f65c9ecfb2667b9c66a99baff974d01166cab4e7fd9880af5d00ededac2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49820316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279274"
 ---
 # <a name="archiving-policy-create-new-or-edit-existing"></a>Criteri di archiviazione: crearne di nuovi o modificare quelli esistenti
  
 I criteri di archiviazione consentono di controllare l'archiviazione delle comunicazioni interne ed esterne nella distribuzione per gli utenti ospitati in Skype for Business Server. I criteri di archiviazione includono il criterio globale e, facoltativamente, uno o più criteri per sito e utente:
   
-- **Criteri globali** Il criterio globale viene creato per impostazione predefinita in tutte le distribuzioni di Skype for Business Server. È possibile modificare il criterio globale, ma non eliminarlo. Se si tenta di eliminarlo, tutte le opzioni verranno ripristinate ai valori predefiniti.
+- **Criteri globali** Il criterio globale viene creato per impostazione predefinita in tutte Skype for Business Server distribuzione. È possibile modificare il criterio globale, ma non eliminarlo. Se si tenta di eliminarlo, tutte le opzioni verranno ripristinate ai valori predefiniti.
     
 - **Criteri sito (facoltativo)** È possibile specificare uno o più criteri di archiviazione del sito, ognuno dei quali può essere configurato per abilitare e disabilitare l'archiviazione delle comunicazioni interne o esterne per un sito specifico. Un criterio sito ha la precedenza sui criteri globali, ma solo per il sito specificato nei criteri di archiviazione. È possibile modificare o eliminare i criteri sito.
     
 - **Criteri utente (facoltativo)** È possibile specificare uno o più criteri di archiviazione utente, ognuno dei quali può essere configurato per abilitare e disabilitare l'archiviazione per le comunicazioni interne o esterne per un utente specifico. Un criterio utente ha la precedenza sui criteri globali e i criteri sito, ma solo per gli utenti a cui si assegna un criterio utente. È possibile modificare o eliminare i criteri utente.
     
 > [!NOTE]
-> Se si utilizza l'integrazione di Exchange per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange controllano l'archiviazione per gli utenti ospitati in Exchange. Per abilitare l'archiviazione per tali utenti, la cassetta postale dell'utente deve essere In-Place blocco. 
+> Se si utilizza l'Exchange per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange controllano l'archiviazione per gli utenti ospitati in Exchange. Per abilitare l'archiviazione per tali utenti, è necessario che la cassetta postale dell'utente sia In-Place blocco. 
   
 Per configurare le impostazioni per un criterio di archiviazione nuovo o esistente, è necessario specificare le opzioni seguenti:
-- **Name** Ogni criterio di archiviazione richiede un nome. Il nome è determinato dal tipo di criterio che si sta aggiungendo o modificando:
+- **Nome** Ogni criterio di archiviazione richiede un nome. Il nome è determinato dal tipo di criterio che si sta aggiungendo o modificando:
     
   - **Criteri globali** Il nome predefinito è Global. È possibile modificarlo con un nome più descrittivo. Ad esempio, Contoso North American Organization.
     
@@ -44,11 +44,11 @@ Per configurare le impostazioni per un criterio di archiviazione nuovo o esisten
     
   - **Criteri utente** Specificare un nome appropriato, ad esempio il nome di un utente specifico o il nome di un gruppo di utenti o di un team dell'organizzazione. Ad esempio, Ufficio legale.
     
-- **Descrizione** Questo è facoltativo. Utilizzarlo per fornire ulteriori dettagli, ad esempio l'ambito o l'uso del criterio. Coordinarsi, ad esempio, con i reparti legali di altri siti.
+- **Descrizione** Questo è facoltativo. Usalo per fornire ulteriori dettagli, ad esempio l'ambito o l'uso del criterio. Ad esempio, Coordinarsi con i reparti legali di altri siti.
     
 - **Archiviare le comunicazioni interne** Selezionare questa casella di controllo per abilitare l'archiviazione delle comunicazioni nella rete interna. Per impostazione predefinita, questa opzione non è abilitata in alcun criterio.
     
-- **Archiviare le comunicazioni esterne** Selezionare questa casella di controllo per abilitare l'archiviazione delle comunicazioni che includono utenti esterni, ad esempio utenti remoti (inclusi utenti anonimi e con impostazione PIC) e partner federati. Per impostazione predefinita, questa opzione non è abilitata in alcun criterio.
+- **Archiviare le comunicazioni esterne** Selezionare questa casella di controllo per abilitare l'archiviazione delle comunicazioni che includono utenti esterni, ad esempio utenti remoti (inclusi utenti anonimi e di impostazione PIC) e partner federati. Per impostazione predefinita, questa opzione non è abilitata in alcun criterio.
     
-Per informazioni dettagliate sulla funzionalità e sulle funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere Pianificare l'archiviazione [in Skype for Business Server,](../../../plan-your-deployment/archiving/archiving.md)Distribuire l'archiviazione per Skype for Business [Server](../../../deploy/deploy-archiving/deploy-archiving.md)e Gestire l'archiviazione in Skype for [Business Server.](../../../manage/archiving/archiving.md)
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di archiviazione, inclusa l'integrazione di Exchange, vedere [Plan for archiving in Skype for Business Server,](../../../plan-your-deployment/archiving/archiving.md)Deploy archiving for [Skype for Business Server](../../../deploy/deploy-archiving/deploy-archiving.md)e Manage archiving [in Skype for Business Server](../../../manage/archiving/archiving.md).
 

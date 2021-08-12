@@ -1,5 +1,5 @@
 ---
-title: Impostazioni messaggistica unificata di Exchange (strumento di pianificazione)
+title: Exchange Messaggistica unificata Impostazioni (strumento di pianificazione)
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,20 +15,20 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d4c4a5d9-1523-49ff-b994-882b037ed46f
 ROBOTS: NOINDEX, NOFOLLOW
-description: Skype for Business Server 2015 supporta l'integrazione con la messaggistica unificata di Exchange per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
-ms.openlocfilehash: e23c1e44dc0724651c9072fd0a9d93e06d12cd4d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per la combinazione di messaggistica vocale e messaggistica elettronica in un'unica infrastruttura di messaggistica.
+ms.openlocfilehash: 272c3d51085f9bac2491835bd44317e31784c4729393010f857d5f147fa6bd0c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54311864"
 ---
-# <a name="exchange-unified-messaging-settings-planning-tool-in-skype-for-business-2015"></a>Impostazioni della messaggistica unificata di Exchange (strumento di pianificazione) in Skype for Business 2015
+# <a name="exchange-unified-messaging-settings-planning-tool-in-skype-for-business-2015"></a>Exchange Unified Messaging Impostazioni (Planning Tool) in Skype for Business 2015
 
 > [!NOTE]
-> La messaggistica unificata di Exchange nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi vocali e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+> Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
 
-Skype for Business Server 2015 supporta l'integrazione con la messaggistica unificata di Exchange per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
+Skype for Business Server 2015 supporta l'integrazione con Exchange messaggistica unificata per la combinazione di messaggistica vocale e messaggistica elettronica in un'unica infrastruttura di messaggistica.
 
 Per dettagli, vedere:
 

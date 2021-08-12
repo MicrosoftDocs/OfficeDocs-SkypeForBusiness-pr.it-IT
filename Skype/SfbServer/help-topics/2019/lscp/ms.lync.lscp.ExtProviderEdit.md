@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: bf967ad7-c36b-4a8b-8e78-eb11f9365a47
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 58559c74fa8d39ac2e3417904d541eb3aba7af07
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 669ae27ef5fa6dc6e902c458ed3a8bcc6a1014146231f2d499808e55f1220789
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51095830"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300162"
 ---
 # <a name="sip-federated-providers-create-new-or-edit-existing"></a>Provider federati SIP: crearne uno nuovo o modificarne uno esistente
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Gestire i provider federati SIP per l'organizzazione](/previous-versions/office/lync-server-2013/lync-server-2013-manage-sip-federated-providers-for-your-organization)

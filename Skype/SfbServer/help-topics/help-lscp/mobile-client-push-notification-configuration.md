@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: b7a85d75-9d36-4980-b669-2a009799d905
 description: Per configurare le Notifiche Push di Microsoft e le Notifiche Push di Apple, è necessario creare un criterio per definire quali tipi di notifiche push sono necessari.
-ms.openlocfilehash: 493c8138e7c5dcaeab154ce1a44054cc082d1672
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2b018a6274d3e6a446a8bace17259ecf515423733c972b702c6413adec67167a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320598"
 ---
 # <a name="mobile-client-push-notification-configuration"></a>Client dispositivo mobile: configurazione di notifiche push
  
@@ -29,7 +29,7 @@ Per configurare le **Notifiche Push di Microsoft** e le **Notifiche Push di Appl
 Nella schermata di configurazione principale è possibile fare clic su **Aggiorna** per aggiornare e popolare di nuovo l'elenco di criteri. È disponibile una casella di ricerca per limitare l'elenco di criteri visualizzati. Man mano che si digita il nome da cercare, l'elenco di criteri si restringe automaticamente.
   
 > [!IMPORTANT]
-> Le impostazioni criteri applicate a un determinato livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri è: i criteri utente (maggiore influenza) sostituiscono i criteri sito, quindi i criteri sito sostituiscono i criteri globali (meno influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto. 
+> Le impostazioni criteri applicate a un determinato livello di criteri possono sostituire le impostazioni applicate a un altro livello di criteri. La precedenza dei criteri è: i criteri utente (più influenza) hanno la precedenza su un criterio sito e quindi un criterio sito sostituisce un criterio globale (meno influenza). Ciò significa che maggiore è la prossimità dell'impostazione criteri all'oggetto su cui influiscono i criteri, maggiore è l'influenza su tale oggetto. 
   
 Sono disponibili due selezioni per la creazione e la modifica dei criteri:
   
@@ -50,7 +50,7 @@ La creazione di un nuovo criterio o la modifica di un criterio esistente sono as
   
 - **Commit** L'azione di commit crea o aggiorna il criterio e salva le modifiche
     
-- **Annulla** L'azione di annullamento elimina le modifiche apportate dopo l'ultima azione di commit. Se si sceglie di annullare, tutte le modifiche eseguite andranno perse.
+- **Annulla** L'azione annulla elimina tutte le modifiche apportate dopo l'ultima azione di commit. Se si sceglie di annullare, tutte le modifiche eseguite andranno perse.
     
 Sono possibili due impostazioni per **Configurazione notifica Push** che sono associate ai servizi di notifica Push per Microsoft e per Apple. Per abilitare la notifica Push per questi servizi, selezionare la casella di controllo accanto al nome del servizio. È possibile deselezionare la casella di controllo facendo clic su di essa. Dopo aver eseguito le selezioni, eseguire il commit o annullare. Facendo clic su Commit si salveranno le modifiche al criterio.
   

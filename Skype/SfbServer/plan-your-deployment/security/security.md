@@ -1,5 +1,5 @@
 ---
-title: Pianificare la sicurezza in Skype for Business Server
+title: Pianificare la sicurezza in Skype For Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,23 +12,23 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: cbc800db-35f6-45c0-b9f6-d8cee0c7e922
-description: Contenuto sulla sicurezza di Skype for Business Server.
-ms.openlocfilehash: fc0b8591702f34c43c3658616a9658a8006755f5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Skype for Business Server contenuto di sicurezza.
+ms.openlocfilehash: ff8756b54d023f64e6cb6507f9033d4268c994ed6cdc4ec00c220448cd26d57e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832026"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54337664"
 ---
-# <a name="plan-for-security-in-skype-for-business-server"></a>Pianificare la sicurezza in Skype for Business Server 
+# <a name="plan-for-security-in-skype-for-business-server"></a>Pianificare la sicurezza in Skype For Business Server 
  
-Contenuto sulla sicurezza di Skype for Business Server. 
+Skype for Business Server contenuto di sicurezza. 
   
-Questo contenuto si riferisce alla sicurezza di Skype for Business Server. La sicurezza è un argomento molto ampio. La sicurezza raggiunge tutte le funzionalità di Skype for Business Server, nonché database, servizi e hardware che costituiscono l'ecosistema. Questo contenuto è un supplemento per argomenti di sicurezza specifici relativi a Skype for Business Server.
+Questo contenuto si riferisce alla Skype for Business Server sicurezza. La sicurezza è un argomento molto ampio. La sicurezza raggiunge tutte le funzionalità di Skype for Business Server database, servizi e hardware che costituiscono l'ecosistema. Questo contenuto è un supplemento per argomenti di sicurezza specifici relativi Skype for Business Server.
   
 ## <a name="in-this-section"></a>Argomenti della sezione
 
-- [Esclusioni dell'analisi antivirus per Skype for Business Server](antivirus.md)
+- [Esclusioni di analisi antivirus per Skype for Business Server](antivirus.md)
     
 - [Funzionalità di sicurezza chiave in Skype for Business Server](key-security.md)
     

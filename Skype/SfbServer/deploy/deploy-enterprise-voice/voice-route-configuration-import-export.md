@@ -1,5 +1,5 @@
 ---
-title: Esportare o importare un file di configurazione della route vocale in Skype for Business
+title: Esportare o importare un file di configurazione delle route vocali in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,21 +15,21 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 02ce922d-9ca8-4513-b09f-9de51f5c5bdc
-description: 'Riepilogo: informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: df5ca58ebc7b92fea5236b957f4819ed3602d896
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni su come esportare o importare un file di configurazione del routing vocale Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.'
+ms.openlocfilehash: bef3e1caf80ecc2dc065949dcec684ad6e342902cfabf0e9daebab237d09c7ca
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320818"
 ---
-# <a name="export-or-import-a-voice-route-configuration-file-in-skype-for-business"></a>Esportare o importare un file di configurazione della route vocale in Skype for Business
+# <a name="export-or-import-a-voice-route-configuration-file-in-skype-for-business"></a>Esportare o importare un file di configurazione delle route vocali in Skype for Business
  
-**Riepilogo:** Informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Pannello di controllo di Skype for Business Server.
+**Riepilogo:** Informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.
   
 Se si desidera salvare la configurazione del routing vocale senza pubblicarla, eseguire la procedura seguente per salvare e recuperare uno snapshot della configurazione del routing vocale. 
   
-Quando si importa un file di configurazione del routing vocale (con estensione vcfg), ma nel frattempo  sono state apportate modifiche alla configurazione del routing vocale sul server, le pagine del gruppo di routing vocale nel Pannello di controllo di Skype for Business Server indicheranno che sono state apportate modifiche di cui non è stato eseguito ilcommitted al routing vocale. Tali modifiche costituiscono le differenze tra le due configurazioni di cui deve essere eseguita la riconciliazione.
+Quando si importa un file di configurazione del routing vocale (con estensione vcfg), ma nel frattempo  sono state apportate modifiche alla configurazione del routing vocale sul server, le pagine del gruppo Routing vocale nel Pannello di controllo di Skype for Business Server indicheranno che sono state apportate modifiche non salvate al routing vocale. Tali modifiche costituiscono le differenze tra le due configurazioni di cui deve essere eseguita la riconciliazione.
   
 Se sono state apportate modifiche non salvate alle impostazioni in qualsiasi pagina del gruppo, le modifiche vengono salvate nel file di configurazione vocale esportato (con estensione vcfg). In questo modo è possibile apportare modifiche alla configurazione del routing vocale durante più sessioni prima di pubblicare le modifiche. 
   
@@ -37,7 +37,7 @@ Se sono state apportate modifiche non salvate alle impostazioni in qualsiasi pag
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo amministrativo **CsVoiceAdministrator,** **CsServerAdministrator** o **CsAdministrator.**
     
-2. Aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire Skype for Business Server Pannello di controllo.
     
 3. Nella barra di spostamento sinistra fare clic su **Routing vocale**.
     
@@ -49,7 +49,7 @@ Se sono state apportate modifiche non salvate alle impostazioni in qualsiasi pag
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo amministrativo **CsVoiceAdministrator,** **CsServerAdministrator** o **CsAdministrator.**
     
-2. Aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
     

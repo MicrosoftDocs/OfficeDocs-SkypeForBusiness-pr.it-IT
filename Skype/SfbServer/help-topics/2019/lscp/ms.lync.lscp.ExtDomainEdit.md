@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 90979ccd-7439-4a66-b82d-222df1554d66
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: d93cf0fa3d47a91c46fb8a3883e9a90d579ec371
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 1063b8ff57c1b431a65c4dcdfaca00ccc0b9877b7bc1858a161f25ebdf2d03cc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300192"
 ---
 # <a name="federated-domains-create-new-or-edit-existing"></a>Domini federati: crearne di nuovi o modificare quelli esistenti
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Configurare l'accesso per i partner federati](/previous-versions/office/lync-server-2013/lync-server-2013-configure-policies-to-control-federated-user-access)
 

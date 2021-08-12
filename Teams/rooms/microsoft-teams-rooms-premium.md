@@ -17,12 +17,12 @@ localization_priority: Normal
 search.appverid: MET150
 description: Informazioni sul servizio Microsoft Teams Rooms gestito.
 f1keywords: ''
-ms.openlocfilehash: beb8c0a7cf4a2a78364b145da1da83e2ae04bd0b
-ms.sourcegitcommit: 2ce82f301f2d59da57f579a23038b2cab5e31360
+ms.openlocfilehash: c6ec09b889272b7efb02e6e2f0223f8fc3bf6da3f4332c4bfb50b58895c90bee
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51858019"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280701"
 ---
 # <a name="microsoft-teams-rooms-managed-service"></a>Microsoft Teams Rooms servizio gestito
 
@@ -41,7 +41,7 @@ Ecco una panoramica delle funzionalità del servizio Microsoft Teams Rooms gesti
 |**Pianificazione e implementazione delle chat room**   |Funzionalità di pianificazione delle chat room che consentono di comprendere l'inventario delle apparecchiature della sala e di prendere decisioni sugli standard delle apparecchiature per le nuove distribuzioni di chat room.         |
 |**Monitoraggio e risoluzione dei problemi**  |Monitoraggio dell'integrità delle chat room che rileva i problemi con il sistema e le periferiche della sala e fornisce una risposta proattiva alla gestione degli incidenti guidata da Microsoft.         |
 |**Gestione degli aggiornamenti**    |Gestione e distribuzione degli aggiornamenti delle applicazioni e del firmware per i sistemi delle chat room e le relative periferiche eseguite da Microsoft.         |
-|**Approfondimenti e consigli**     |Approfondimenti sull'integrità dei clienti, l'utilizzo, l'utilizzo e l'affidabilità delle apparecchiature.         |
+|**Insights e consigli**     |Insights l'integrità dei clienti, l'utilizzo, l'utilizzo e l'affidabilità delle apparecchiature.         |
 |**Conformità e certificazioni**   |Soddisfa tutti gli standard applicabili per Microsoft Online Services.         |
 |**Supporto tecnico**   |Supporto dei ticket 24x7x365 tramite Microsoft Teams Rooms service operation center (SOC) dedicato. Escalation per conto dell'utente ad altri fornitori primari, se applicabile. Per altre informazioni, vedere [Supporto tecnico.](#customer-support)|
 |**Dispositivi supportati**    |Sistemi Microsoft Teams Rooms certificati e relative periferiche.<br>*Surface Hub supporto nella seconda metà del 2021*        |
@@ -60,7 +60,7 @@ Ecco un riepilogo delle funzionalità importanti fornite dal servizio Microsoft 
 |**Monitoraggio**    |Monitoraggio dell'integrità di applicazioni, sistemi operativi, periferiche e firmware. Rilevamento automatico degli eventi imprevisti per problemi che interessano le esperienze di riunione a causa di problemi come l'integrità periferica. Panoramica dell'integrità dell'intero spazio immobiliare e degli incidenti tramite il portale Microsoft Teams Rooms servizi gestiti.|
 |**Risoluzione dei problemi e correzione**     |Diagnostica automatizzata e correzione automatica, se applicabile. Microsoft Teams Rooms degli incidenti assistiti da SOC del servizio gestito per i casi non automatizzati. Integrazione service now per il coordinamento degli incidenti.         |
 |**Gestione degli aggiornamenti**   |Orchestrazione automatizzata dell'aggiornamento firmware e dell'applicazione per le riunioni in base a anelli di distribuzione configurabili dal cliente         |
-|**Approfondimenti e consigli**   |Utilizzo, eventi imprevisti, integrità e report complessivi (visualizzazioni cronologiche)         |
+|**Insights e consigli**   |Utilizzo, eventi imprevisti, integrità e report complessivi (visualizzazioni cronologiche)         |
 
 ## <a name="service-prerequisites"></a>Prerequisiti del servizio
 

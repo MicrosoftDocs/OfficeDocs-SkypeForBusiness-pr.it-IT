@@ -15,14 +15,14 @@ localization_priority: Normal
 ms.assetid: 15bc1c8f-71bd-4d66-bba1-cac0f2fe90bf
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile attivare o disattivare un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati nelle impostazioni dello stato del computer. Selezionare un server o pool dall'elenco e fare clic sul pulsante Rendi attivo per impostare un server o pool come attivo.
-ms.openlocfilehash: 78e07d75cb53fafa425e53e027903d3c811bddfd
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 194555bd15b1142adb7035382d2cb57fc1b3e61f585a870a2ba2384353342ff1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121634"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320738"
 ---
 # <a name="persistent-chat-machines-expander"></a>Espansione dei computer Persistent Chat
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](/MicrosoftTeams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.

@@ -11,18 +11,18 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Una procedura consigliata per le migrazioni prevede in genere la creazione di diversi utenti di test e il relativo utilizzo per eseguire test di sistema. Dopo aver spostato e testato correttamente tali account, è consigliabile identificare un gruppo di utenti di produzione pilota, spostare i relativi account ed eseguire i test di convalida. Quando si ottengono risultati soddisfacenti, è possibile spostare gli utenti rimanenti nella nuova distribuzione.
-ms.openlocfilehash: 98b9395da8341dab99b48d4f97da7332b8ed8102
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: bea6509768ed99f96f4c16df9736d4da4993eee196b4f16ad5aa9575cc1eee08
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44753278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280371"
 ---
 # <a name="user-migration"></a>Migrazione utente
 
 Una procedura consigliata per le migrazioni prevede in genere la creazione di diversi utenti di test e il relativo utilizzo per eseguire test di sistema. Dopo aver spostato e testato correttamente tali account, è consigliabile identificare un gruppo di utenti di produzione pilota, spostare i relativi account ed eseguire i test di convalida. Quando si ottengono risultati soddisfacenti, è possibile spostare gli utenti rimanenti nella nuova distribuzione.
   
-Per ulteriori informazioni sull'abilitazione degli utenti per Skype for Business Server 2019, vedere la documentazione relativa alla distribuzione di Skype for Business Server 2019. 
+Per ulteriori informazioni sull'abilitazione degli utenti Skype for Business Server 2019, vedere la documentazione relativa alla Skype for Business Server 2019. 
   
   <!-- the topic [Disable or re-enable user account for Skype for Business Server 2019](../../operations/managing-users-in-lync-server-2013/disable-or-re-enable-user-account-for-lync-server.md) in  -->
 

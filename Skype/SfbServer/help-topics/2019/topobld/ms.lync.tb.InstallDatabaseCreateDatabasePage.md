@@ -14,24 +14,24 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 515754ad-1344-42dc-8219-ee973de2e4c4
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e verrà distribuito e configurato automaticamente i file di database in base al SQL Server in cui vengono posizionati i database.
-ms.openlocfilehash: 160b42e510fc54b3f03375a0c86bc9f6bdf83f5f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e verrà distribuito e configurato automaticamente i file di database in base al SQL Server in cui si stanno posizionando i database.
+ms.openlocfilehash: 68848c644140d4bea4ec23bbf356da62d85eb6291cab4c7001e66879fe6e6088
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100052"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279034"
 ---
 # <a name="install-and-create-databases"></a>Installare e creare un database
 
-È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e verrà distribuito e configurato automaticamente i file di database in base al SQL Server in cui vengono posizionati i database.
+È possibile selezionare i database da creare per la distribuzione. Per impostazione predefinita, il database verrà creato nel SQL Server definito nel sito definito e verrà distribuito e configurato automaticamente i file di database in base al SQL Server in cui si stanno posizionando i database.
 
  **Selezionare i database da creare**: selezionare la casella di controllo di ogni database che si intende distribuire e configurare. Selezionare la casella di controllo relativa a tutti i database da distribuire.
 
 > [!CAUTION]
 > Il SQL Server deve essere già stato configurato per l'istanza (se presente) e le porte del firewall devono essere aperte per supportare l'istanza in cui si distribuiscono i database. Per informazioni dettagliate, vedere [Configure SQL Server](/previous-versions/office/lync-server-2013/lync-server-2013-configure-sql-server-for-lync-server)
 
- **Avanzate**: fare clic sul SQL Server  e fare clic sul pulsante Avanzate per scegliere le opzioni per i percorsi dei file di database nel SQL Server. Per informazioni dettagliate sul posizionamento avanzato dei file di database, vedere [Database Installation Using Lync Server Management Shell](/previous-versions/office/lync-server-2013/lync-server-2013-database-installation-using-lync-server-management-shell)
+ **Avanzate**: fare clic sul SQL Server  e fare clic sul pulsante Avanzate per scegliere le opzioni per i percorsi dei file di database SQL Server. Per informazioni dettagliate sul posizionamento avanzato dei file di database, vedere [Database Installation Using Lync Server Management Shell](/previous-versions/office/lync-server-2013/lync-server-2013-database-installation-using-lync-server-management-shell)
 
  **Indietro**: fare clic su questo pulsante per tornare alla schermata precedente. Il pulsante potrebbe non essere sempre disponibile, a seconda di come si è arrivati a questa finestra di dialogo.
 

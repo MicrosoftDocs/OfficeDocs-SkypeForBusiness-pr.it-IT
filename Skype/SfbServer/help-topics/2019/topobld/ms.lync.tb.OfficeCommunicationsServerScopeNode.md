@@ -15,18 +15,18 @@ localization_priority: Normal
 ms.assetid: ec5088ec-71b5-42cb-9f04-242716877178
 ROBOTS: NOINDEX, NOFOLLOW
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: fddbca47630eeab6c923f12fbaf210cba3bca766
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 85802576f982cca31d201b8f87ab3b585a99bf85df5ed47aa697d49c45c84b1d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279015"
 ---
 # <a name="office-communications-server-scope-node"></a>Nodo dell'ambito di Office Communications Server
 
 Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
 
-Si fa **clic su Office Communications Server 2007 R2** per espandere  le sezioni sotto il nodo oppure si fa clic con il pulsante destro del mouse per accedere alle opzioni della topologia o per accedere a questa **pagina della** Guida.
+Fare clic **Office Communications Server 2007 R2** per espandere le sezioni del  nodo oppure fare clic con il pulsante destro del mouse per accedere alle opzioni della topologia o per accedere a questa **pagina della** Guida.
 
 ## <a name="see-also"></a>Vedere anche
 

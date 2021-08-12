@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: cbdde536-8668-4a08-9862-8615e8691fd7
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
-ms.openlocfilehash: ee99ac8cb4f3ea9c2f0e1804914eaf30c909a2b0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1754e2c3634bf2b37341e0b73608dd5aa23f5bc8b070bc9075fe1b583055ec67
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118805"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279254"
 ---
 # <a name="response-groups-queue-create-new-or-edit-existing"></a>Coda dei Response Group: crearne una nuova o modificarne una esistente
 
@@ -36,7 +36,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Gruppi** Selezionare i gruppi di agenti che si desidera assegnare alla coda. Fare clic su **Seleziona** per aggiungere gruppi di agenti all'elenco. Fare clic su **Rimuovi** per eliminare il gruppo di agenti selezionato dall'elenco.
 
-    Le frecce rivolte verso l'alto e verso il basso spostano un gruppo di agenti selezionato verso l'alto e verso il basso nell'elenco. L'ordine dei gruppi di agenti influisce sull'ordine in cui Skype for Business Server cerca un agente disponibile. In altre parole, viene prima cercato un agente disponibile nel primo gruppo nell'elenco, quindi nel secondo gruppo e così via.
+    Le frecce rivolte verso l'alto e verso il basso spostano un gruppo di agenti selezionato verso l'alto e verso il basso nell'elenco. L'ordine dei gruppi di agenti influisce sull'ordine in Skype for Business Server ricerca di un agente disponibile. In altre parole, viene prima cercato un agente disponibile nel primo gruppo nell'elenco, quindi nel secondo gruppo e così via.
 
 - **Abilitare il timeout della coda** Selezionare questa casella di controllo per specificare un periodo di tempo massimo per cui un chiamante deve attendere il blocco prima che un agente risponde alla chiamata. Se si seleziona questa opzione, è anche necessario specificare quanto segue:
 
@@ -72,4 +72,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Inoltra a un'altra coda** Se si seleziona questa opzione, passare alla coda che deve ricevere le chiamate quando viene raggiunta la soglia di overflow della coda.
 
-Per informazioni dettagliate sulle funzionalità e sulle funzionalità di Response Group, vedere [Plan for the Response Group application in Skype for Business Server](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle code, vedere [Managing Response Group Queues](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-queues) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sulle funzionalità e sulle funzionalità di [Response Group,](../../../plan-your-deployment/enterprise-voice-solution/response-group.md) vedere Plan for the Response Group application in Skype for Business Server nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle code, vedere [Managing Response Group Queues](/previous-versions/office/lync-server-2013/lync-server-2013-managing-response-group-queues) nella documentazione relativa alle operazioni.

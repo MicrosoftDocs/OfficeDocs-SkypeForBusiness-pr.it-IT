@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3d723fd8-9c83-4b96-abb6-15b3dc7ce30a
-description: 'In questo nodo vengono visualizzati il nome di dominio completo (FQDN) e i pool dipendenti per questo archivio file. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 4fd675b972e1bcbd4e6543773bb2c142a018d560
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Questo nodo mostra il nome di dominio completo (FQDN) e i pool dipendenti per questo archivio file. È possibile eseguire le operazioni seguenti:'
+ms.openlocfilehash: 0d37bb084f4c25a95b4739e0dd19372b1a20905b2c9430fd360117279a8f9f4f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54329700"
 ---
 # <a name="file-store-scope-node"></a>Nodo dell'ambito dell'archivio file
  
-In questo nodo vengono visualizzati il nome di dominio completo (FQDN) e i pool dipendenti per questo archivio file. È possibile eseguire le operazioni seguenti:
+Questo nodo mostra il nome di dominio completo (FQDN) e i pool dipendenti per questo archivio file. È possibile eseguire le operazioni seguenti:
   
 - **Modifica proprietà**. Consente di aprire la pagina **Modifica proprietà** del server, in cui è possibile modificare l'FQDN e il nome dell'archivio file.
     

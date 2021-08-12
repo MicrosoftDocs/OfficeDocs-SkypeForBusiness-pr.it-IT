@@ -16,16 +16,16 @@ localization_priority: Normal
 ms.assetid: d7f85abf-2045-4b08-ba29-c6211a3f6ff6
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari di server perimetrali in Skype for Business Server e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:'
-ms.openlocfilehash: 73f908905980a03ece98725fad480d33e775d06c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: f3f9f3bbdbfb385229ffc221de38462b0dccd182654f8625784531796a2efc0b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49819896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54311904"
 ---
-# <a name="edge-network-planning-tool-in-skype-for-business"></a>Rete perimetrale (strumento di pianificazione) in Skype for Business 
+# <a name="edge-network-planning-tool-in-skype-for-business"></a>Edge Network (Strumento di pianificazione) in Skype for Business 
  
-La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari [di server perimetrali in Skype for Business Server](../../../plan-your-deployment/edge-server-deployments/scenarios.md) e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:
+La maggior parte dei componenti perimetrali viene distribuita in una rete perimetrale. I componenti seguenti costituiscono la topologia perimetrale della rete perimetrale. Tranne dove specificato, i componenti fanno parte degli scenari di server perimetrali [in Skype for Business Server](../../../plan-your-deployment/edge-server-deployments/scenarios.md) e si trova nella rete perimetrale. I componenti perimetrali includono quanto segue:
   
 - Server perimetrali
     

@@ -14,21 +14,21 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 7a14552e-96b0-4a3d-bb9b-4813c97dd8e1
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 58148b1901071ee3579b7c183712e141357cb1d7
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: d7e1eb26fb32c99ce9effda4cd0ea5be7c53aefd1d238e15dc8ea5da1514ab10
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300122"
 ---
 # <a name="xmpp-federated-partners-create-new-or-edit-existing"></a>Partner federati XMPP: creare nuovi partner o modificare quelli esistenti
 
 > [!NOTE]
-> I gateway e i proxy XMPP sono disponibili in Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../../SfBServer2019/migration/migrating-xmpp-federation.md)
+> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../../SfBServer2019/migration/migrating-xmpp-federation.md)
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare o modificare la configurazione dei partner XMPP](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-edit-xmpp-partner-configuration)
 
-- [Tabella delle impostazioni di negoziazione per i partner federati XMPP](/previous-versions/office/lync-server-2013/lync-server-2013-negotiation-settings-for-xmpp-federated-partners)
+- [Tabella Impostazioni negoziazione per i partner federati XMPP](/previous-versions/office/lync-server-2013/lync-server-2013-negotiation-settings-for-xmpp-federated-partners)

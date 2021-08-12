@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 1406c7c5-eb55-4b6a-8d74-d625ea9e9922
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: deaa2d6ac12172ea4ea31a65ca9398073a02ed73
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: ac9248b801e17be0ec085c8a85a0464829ae3e80c2a144a3a54b3caaaefddd7e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320588"
 ---
 # <a name="url-filter-create-new-or-edit-existing"></a>Filtro URL: crearne uno nuovo o modificarne uno esistente
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Modificare il filtro URL predefinito](/previous-versions/office/lync-server-2013/lync-server-2013-modify-the-default-url-filter)
 

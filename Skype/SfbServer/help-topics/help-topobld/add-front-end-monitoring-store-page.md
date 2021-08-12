@@ -15,30 +15,30 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 48e8587d-a9d2-4fc5-acc5-2bf0abf133c6
 description: "È possibile definire l'archivio SQL Server per il monitoraggio configurando le proprietà seguenti:"
-ms.openlocfilehash: 5f8a3ccb22aea1efde0b214b9afa61c140e63014
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: db0956b14f7fa4f594c752bfe16a366b166ac7274abc303d947e2511b334378d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49803546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54290764"
 ---
 # <a name="add-front-end-monitoring-store-page"></a>Pagina per l'aggiunta dell'archivio di monitoraggio di Front End Server
  
 È possibile **definire l'archivio SQL Server per il monitoraggio** configurando le proprietà seguenti:
   
-- **Monitoraggio SQL Server archivio:** selezionare un SQL Server di dominio completo (e, facoltativamente, un'istanza) dall'elenco.
+- **Monitoraggio SQL Server archivio**: selezionare un SQL Server di dominio completo (e, facoltativamente, un'istanza) dall'elenco.
     
     Fare **clic su** Nuovo per creare una nuova SQL Server FQDN e facoltativamente un nome di istanza per l'archivio Monitoring Server.
     
-- Selezionare la **casella SQL Server il mirroring dell'archivio** se si desidera aggiungere il mirroring del database per il Monitoring Server.
+- Selezionare la **casella di controllo SQL Server mirroring dell'archivio** se si desidera aggiungere il mirroring del database per Monitoring Server.
     
     Selezionare un mirror archivio nell'elenco **Mirror archivio SQL Server monitoraggio**.
     
     Fare **clic su** Nuovo per creare una nuova SQL Server FQDN e facoltativamente un nome di istanza per l'archivio mirror.
     
-- Se è stata selezionata l'opzione **Abilita mirroring** SQL Server store, facoltativamente selezionare Usa controllo del mirroring SQL Server per abilitare il **failover** automatico per selezionare un archivio di controllo del mirroring SQL Server nell'elenco.
+- Se è stato selezionato Abilita **mirroring** SQL Server archivio , facoltativamente selezionare Usa controllo del mirroring di SQL Server per abilitare il **failover** automatico per selezionare un archivio di controllo del mirroring SQL Server dall'elenco.
     
-    Fare **clic su Nuovo** per creare una nuova SQL Server fqdn e facoltativamente un nome di istanza per l'archivio di controllo del mirroring.
+    Fare **clic su Nuovo** per creare una nuova SQL Server FQDN e facoltativamente un nome di istanza per l'archivio di controllo del mirroring.
     
 Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   
@@ -50,4 +50,4 @@ Fare clic su **?** per accedere alla Guida sensibile al contesto, come questa pa
   
 ## <a name="see-also"></a>Vedere anche
 
-[Associare un archivio di monitoraggio a un pool Front End in Skype for Business Server 2015](../../deploy/deploy-monitoring/associate-a-monitoring-store.md)
+[Associare un archivio di monitoraggio a un pool Front End Skype for Business Server 2015](../../deploy/deploy-monitoring/associate-a-monitoring-store.md)
