@@ -12,26 +12,26 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 58d7d94f-42f5-4c3e-8fe5-901fbe92152e
-description: Questo documento documenta lo schema del database di Persistent Chat in Skype for Business Server.
-ms.openlocfilehash: ba50f4391ce35d8a938318e96e1483bbfe0e3dfa
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: In questo modo viene documentato lo schema del database di Persistent Chat in Skype for Business Server.
+ms.openlocfilehash: bc314413d2bb7a3d5916396f1e8f281d2217e9058d087dcec8bcc486ee7f172f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280929"
 ---
 # <a name="persistent-chat-database-schema"></a>Schema del database Chat persistente
  
-Questo documento documenta lo schema del database di Persistent Chat in Skype for Business Server.
+In questo modo viene documentato lo schema del database di Persistent Chat in Skype for Business Server.
   
-Il database di Persistent Chat fa riferimento al database corrispondente ai ruoli **PersistentChatStore** (corrispondente al database mgc) e **PersistentChatComplianceStore** (corrispondente al database mgccomp) di Skype for Business Server. L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.
+Il database di Persistent Chat fa riferimento al database corrispondente ai ruoli del server back-end di Skype for Business Server **PersistentChatStore** (corrispondente al database mgc) e **PersistentChatComplianceStore** (corrispondente al database mgccomp). L'obiettivo della pubblicazione di questo schema è di consentire la creazione di query per comprendere meglio come generare rapporti efficaci relativi all'uso della chat, alle chat attive, agli autori di post più attivi e così via.
   
 > [!IMPORTANT]
 > Ci riserviamo il diritto di modificare questo schema. Microsoft non garantisce di poter mantenere la completa compatibilità di questo schema pubblicato con le versioni precedenti. 
   
 Tenere presenti queste procedure consigliate:
   
-- L'istruzione SELECT \* // non è supportata perché l'elenco di colonne può aumentare.
+- Non è supportata \* l'opzione SELECT // perché l'elenco di colonne può aumentare.
     
 - Non sono supportate modifiche allo schema generate dall'utente.
     

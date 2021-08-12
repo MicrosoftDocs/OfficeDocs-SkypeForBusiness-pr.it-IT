@@ -15,21 +15,21 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: d2fef3d0-7e78-4591-b712-d62ac71d71a5
-description: 'Riepilogo: informazioni su come creare o modificare un dial plan utilizzando il Pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 718d0733aa5fabc072991708d09983ce8cb4267d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: informazioni su come creare o modificare un dial plan utilizzando il Pannello Skype for Business Server di controllo.'
+ms.openlocfilehash: 3b2a1e9189f2e54eff0db79ea11732ba5175f4fc6825bb7a71615422b2f9f4dc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51104902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281269"
 ---
 # <a name="create-or-modify-a-dial-plan-in-skype-for-business-server"></a>Creare o modificare un dial plan in Skype for Business Server
 
-**Riepilogo:** Informazioni su come creare o modificare un dial plan utilizzando il Pannello di controllo di Skype for Business Server.
+**Riepilogo:** Informazioni su come creare o modificare un dial plan utilizzando il Skype for Business Server pannello di controllo.
 
 ### <a name="to-create-a-dial-plan"></a>Per creare un dial plan
 
-1. Aprire il Pannello di controllo di Skype for Business Server.
+1. Aprire Skype for Business Server Pannello di controllo.
 
 2. Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Dial plan**.
 
@@ -70,7 +70,7 @@ ms.locfileid: "51104902"
 
     - Per scegliere una o più regole da un elenco di tutte le regole di normalizzazione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di normalizzazione** evidenziare le regole da associare al dial plan e fare clic su **OK**.
 
-   - Per definire una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Nuova**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere Creare o modificare una regola [di normalizzazione in Skype for Business.](normalization-rules.md)
+   - Per definire una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Nuova**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [Create or modify a normalization rule in Skype for Business](normalization-rules.md).
 
    - Per modificare una regola di normalizzazione già associata al dial plan, evidenziare il nome della regola e fare clic su **Mostra dettagli**.
 
@@ -84,7 +84,7 @@ ms.locfileid: "51104902"
 10. Verificare che le regole di normalizzazione del dial plan siano disposte nell'ordine corretto. Per modificare la posizione di una regola nell'elenco, evidenziare il nome della regola e quindi fare clic sulla freccia su o giù.
 
     > [!IMPORTANT]
-    > Skype for Business Server attraversa l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano elencate prima di quelle meno restrittive. > La regola **di** normalizzazione predefinita Mantieni tutto^(\d {11} )$ corrisponde a qualsiasi numero a 11 cifre. Ad esempio, se si aggiunge una regola di normalizzazione che corrisponde a numeri a 11 cifre che iniziano con 1425, assicurarsi che **l'opzione** Mantieni tutto sia ordinata al di sotto della regola più restrittiva^(1425\d {7} )$.
+    > Skype for Business Server l'elenco delle regole di normalizzazione dall'alto verso il basso e utilizza la prima regola corrispondente al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano elencate prima di quelle meno restrittive. > La regola **di** normalizzazione predefinita Mantieni tutto^(\d {11} )$ corrisponde a qualsiasi numero a 11 cifre. Ad esempio, se si aggiunge una regola di normalizzazione che corrisponde a numeri a 11 cifre che iniziano con 1425, assicurarsi che **l'opzione** Mantieni tutto sia ordinata al di sotto della regola più restrittiva^(1425\d {7} )$.
 
 11. (Facoltativo) Immettere un numero per testare il dial plan e quindi fare clic su **Vai**. I risultati del test vengono visualizzati in **Numero composto da testare**.
 
@@ -99,7 +99,7 @@ ms.locfileid: "51104902"
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere **Delegate Setup Permissions**.
 
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.
 
 3. Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Dial plan**.
 
@@ -129,7 +129,7 @@ ms.locfileid: "51104902"
 
    - Per scegliere una o più regole da un elenco di tutte le regole di normalizzazione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. Nella finestra di dialogo **Seleziona regole di normalizzazione** evidenziare le regole da associare al dial plan e fare clic su **OK**.
 
-   - Per definire una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Nuova**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere Creare o modificare una regola [di normalizzazione in Skype for Business.](normalization-rules.md)
+   - Per definire una nuova regola di normalizzazione e associarla al dial plan, fare clic su **Nuova**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [Create or modify a normalization rule in Skype for Business](normalization-rules.md).
 
    - Per modificare una regola di normalizzazione già associata al dial plan, evidenziare il nome della regola e fare clic su **Mostra dettagli**.
 
@@ -143,7 +143,7 @@ ms.locfileid: "51104902"
 10. Verificare che le regole di normalizzazione del dial plan siano disposte nell'ordine corretto. Per modificare la posizione di una regola nell'elenco, evidenziare il nome della regola e quindi fare clic sulla freccia su o giù.
 
     > [!IMPORTANT]
-    > Skype for Business Server attraversa l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano elencate prima di quelle meno restrittive. > La regola **di** normalizzazione predefinita Mantieni tutto^(\d {11} )$ corrisponde a qualsiasi numero a 11 cifre. Se, ad esempio, si aggiunge una regola di normalizzazione che corrisponde a numeri a 11 cifre che iniziano con 1425, assicurarsi che **l'opzione** Mantieni tutto sia ordinata al di sotto della regola più restrittiva^(1425\d {7} )$.
+    > Skype for Business Server l'elenco delle regole di normalizzazione dall'alto verso il basso e utilizza la prima regola corrispondente al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano elencate prima di quelle meno restrittive. > La regola **di** normalizzazione predefinita Mantieni tutto^(\d {11} )$ corrisponde a qualsiasi numero a 11 cifre. Se, ad esempio, si aggiunge una regola di normalizzazione che corrisponde a numeri a 11 cifre che iniziano con 1425, assicurarsi che **l'opzione** Mantieni tutto sia ordinata al di sotto della regola più restrittiva^(1425\d {7} )$.
 
 11. (Facoltativo) Immettere un numero per testare il dial plan e quindi fare clic su **Vai**. I risultati del test vengono visualizzati in **Numero composto da testare**.
 
@@ -159,4 +159,4 @@ ms.locfileid: "51104902"
 
 ## <a name="see-also"></a>Vedere anche
 
-[Pubblicare modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)
+[Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)

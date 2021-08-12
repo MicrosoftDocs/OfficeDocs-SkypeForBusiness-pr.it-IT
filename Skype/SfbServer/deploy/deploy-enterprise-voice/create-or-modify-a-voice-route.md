@@ -15,23 +15,23 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: d189057d-cc9d-4622-9d10-f5385d703faf
-description: 'Riepilogo: informazioni su come creare o modificare una route vocale in Skype for Business Server utilizzando il Pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: c6f1e50971551866cfa6cb12eb6a259ac2f932f8
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: informazioni su come creare o modificare una route vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.'
+ms.openlocfilehash: a9ae7d0e1cff6f4fa49346b67c08253c108e026ec352606cf4f73fc0dc6a7640
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51105842"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279344"
 ---
 # <a name="create-or-modify-a-voice-route-in-skype-for-business"></a>Creare o modificare una route vocale in Skype for Business
  
-**Riepilogo:** Informazioni su come creare o modificare una route vocale in Skype for Business Server usando il Pannello di controllo di Skype for Business Server.
+**Riepilogo:** Informazioni su come creare o modificare una route vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.
   
-### <a name="to-create-a-voice-route-by-using-the-skype-for-business-server-control-panel"></a>Per creare una route vocale tramite il Pannello di controllo di Skype for Business Server
+### <a name="to-create-a-voice-route-by-using-the-skype-for-business-server-control-panel"></a>Per creare una route vocale tramite il Pannello Skype for Business Server comandi
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo amministrativo **CsVoiceAdministrator,** **CsServerAdministrator** o **CsAdministrator.**
     
-2. Aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
     
@@ -49,34 +49,34 @@ ms.locfileid: "51105842"
     
    - **Cifre iniziali per i numeri da consentire**: immettere i valori di prefisso che la route deve includere, incluso il segno + iniziale, se necessario. Digitare ad esempio +425 e quindi fare clic su **Aggiungi.** Ripetere questa operazione per ogni valore di prefisso da includere nella route.
     
-   - **Eccezioni**: se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **Eccezioni**. Digitare uno o più valori per i modelli di corrispondenza che non  *si desidera*  che questa route supporti. Ad esempio, per escludere i numeri che iniziano con +425237 dalla route,  immettere il valore +425237 nel campo Eccezioni e quindi fare clic su **OK.**
+   - **Eccezioni**: se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **Eccezioni**. Digitare uno o più valori per i modelli di corrispondenza che non  *si desidera*  che questa route supporti. Ad esempio, per escludere dalla route i numeri che iniziano con +425237,  immettere il valore +425237 nel campo Eccezioni e quindi fare clic su **OK.**
     
-   - Per definire manualmente il formato di corrispondenza, fare clic su **Modifica** nello strumento **Formato per corrispondenza** e quindi digitare un'espressione regolare .NET Framework per specificare il formato di corrispondenza per i numeri di telefono di destinazione ai quali viene applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere [".NET Framework regular expressions".](/dotnet/standard/base-types/regular-expressions) 
+   - Per definire manualmente il formato di corrispondenza, fare clic su **Modifica** nello strumento **Formato per corrispondenza** e quindi digitare un'espressione regolare .NET Framework per specificare il formato di corrispondenza per i numeri di telefono di destinazione ai quali viene applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere [".NET Framework regolari".](/dotnet/standard/base-types/regular-expressions) 
     
 9. Selezionare **Ometti ID chiamante** se non si desidera che l'ID del telefono che effettua la chiamata in uscita venga visualizzato al destinatario della chiamata. Se si seleziona questa opzione, è necessario specificare un **ID** chiamante alternativo che verrà visualizzato nella visualizzazione dell'ID chiamante del destinatario.
     
 10. Per associare uno o più trunk alla route vocale, fare clic su **Aggiungi** e quindi selezionare un trunk nell'elenco.
     
-11. Per associare uno o più utilizzi PSTN (Public Switched  Telephone Network) alla route vocale, fare clic su Seleziona e scegliere un record dall'elenco dei record di utilizzo PSTN definiti per la distribuzione di VoIP aziendale.
+11. Per associare uno o più utilizzi PSTN (Public Switched  Telephone Network) alla route vocale, fare clic su Seleziona e scegliere un record nell'elenco dei record di utilizzo PSTN definiti per la distribuzione di VoIP aziendale.
     
     > [!NOTE]
-    > Per visualizzare le proprietà di ognuno dei record di utilizzo PSTN disponibili, vedere [View PSTN usage records in Skype for Business.](view-pstn-usage-records.md) > Per creare o modificare i record di utilizzo PSTN, vedere Creare o modificare un criterio vocale e configurare i record di utilizzo [PSTN in Skype for Business](voice-policy-and-pstn-usage-records.md)
+    > Per visualizzare le proprietà di ognuno dei record di utilizzo PSTN disponibili, vedere [View PSTN usage records in Skype for Business](view-pstn-usage-records.md). > Per creare o modificare i record di utilizzo PSTN, vedere [Create or modify a voice policy and configure PSTN usage records in Skype for Business](voice-policy-and-pstn-usage-records.md)
   
 12. Organizzare i record utilizzo PSTN in modo da ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, evidenziare il nome del record e fare clic sulla freccia su o giù.
     
     > [!NOTE]
-    > A differenza di un criterio vocale, in cui l'ordine in cui sono elencati i record di utilizzo PSTN è importante, l'ordine in cui i record di utilizzo PSTN sono elencati nella route vocale è irrilevante. È tuttavia consigliabile organizzare l'elenco in base alla frequenza di utilizzo. Ad esempio: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup. Skype for Business Server attraversa l'elenco dall'alto verso il basso. 
+    > A differenza di un criterio vocale, in cui l'ordine in cui sono elencati i record di utilizzo PSTN è importante, l'ordine in cui i record di utilizzo PSTN sono elencati nella route vocale è irrilevante. È tuttavia consigliabile organizzare l'elenco in base alla frequenza di utilizzo. Ad esempio: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup. (Skype for Business Server attraversa l'elenco dall'alto verso il basso. 
   
 13. Digitare un valore nel campo **Numero convertito da testare** e fare clic su **Vai**. I risultati del test vengono visualizzati nel campo (facoltativo).
     
 14. Fare **clic su OK** per salvare la route vocale.
     
     > [!IMPORTANT]
-    > Ogni volta che si crea una route vocale, è necessario eseguire il **comando Commit tutto** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business.](voice-route-config-changes.md) 
+    > Ogni volta che si crea una route vocale, è necessario eseguire il **comando Commit tutto** per pubblicare la modifica della configurazione. Per informazioni dettagliate, vedere [Publish pending changes to the voice routing configuration in Skype for Business](voice-route-config-changes.md). 
   
 ### <a name="to-modify-a-voice-route"></a>Per modificare una route vocale
 
-1. Aprire il Pannello di controllo di Skype for Business Server.
+1. Aprire Skype for Business Server Pannello di controllo.
     
 2. Sulla barra di spostamento sinistra fare clic su **Routing vocale** e quindi su **Route**.
     
@@ -96,9 +96,9 @@ ms.locfileid: "51105842"
     
    - **Cifre iniziali per i numeri da consentire**: immettere i valori di prefisso che la route deve includere, incluso il segno + iniziale, se necessario. Digitare, ad esempio, +425 e quindi fare clic su **Aggiungi**. Ripetere questa operazione per ogni valore di prefisso da includere nella route.
     
-   - **Eccezioni**: se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **Eccezioni**. Digitare uno o più valori per i modelli di corrispondenza che non  *si desidera*  che questa route supporti. Ad esempio, per escludere i numeri che iniziano con +425237 dalla route,  immettere il valore +425237 nel campo Eccezioni e quindi fare clic su **OK.**
+   - **Eccezioni**: se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **Eccezioni**. Digitare uno o più valori per i modelli di corrispondenza che non  *si desidera*  che questa route supporti. Ad esempio, per escludere dalla route i numeri che iniziano con +425237,  immettere il valore +425237 nel campo Eccezioni e quindi fare clic su **OK.**
     
-   - Per definire manualmente il  criterio di  corrispondenza, fare clic su Modifica nello strumento Crea un modello per la corrispondenza e quindi digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui viene applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere [".NET Framework regular expressions".](/dotnet/standard/base-types/regular-expressions) 
+   - Per definire manualmente il  criterio di  corrispondenza, fare clic su Modifica nello strumento Crea un modello per la corrispondenza e quindi digitare un'espressione regolare di .NET Framework per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui viene applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere [".NET Framework regolari".](/dotnet/standard/base-types/regular-expressions) 
     
 7. Selezionare **Elimina ID chiamante** se non si desidera che l'ID del telefono che effettua la chiamata in uscita venga visualizzato al destinatario della chiamata. Se si seleziona questa opzione, è necessario specificare un **ID** chiamante alternativo che verrà visualizzato nella visualizzazione dell'ID chiamante del destinatario.
     
@@ -107,12 +107,12 @@ ms.locfileid: "51105842"
 9. Per associare uno o più utilizzi PSTN  alla route vocale, fare clic su Seleziona e scegliere un record dall'elenco dei record di utilizzo PSTN definiti per la distribuzione VoIP aziendale locale.
     
     > [!NOTE]
-    > Per visualizzare le proprietà di ognuno dei record di utilizzo PSTN disponibili, vedere [View PSTN usage records in Skype for Business.](view-pstn-usage-records.md) > Per creare o modificare i record di utilizzo PSTN, vedere Creare o modificare un criterio vocale e configurare i record di utilizzo [PSTN in Skype for Business.](voice-policy-and-pstn-usage-records.md) 
+    > Per visualizzare le proprietà di ognuno dei record di utilizzo PSTN disponibili, vedere [View PSTN usage records in Skype for Business](view-pstn-usage-records.md). > Per creare o modificare i record di utilizzo PSTN, vedere [Create or modify a voice policy and configure PSTN usage records in Skype for Business](voice-policy-and-pstn-usage-records.md). 
   
 10. Organizzare i record utilizzo PSTN in modo da ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, evidenziare il nome del record e fare clic sulla freccia su o giù.
     
     > [!NOTE]
-    > A differenza di un criterio vocale in cui l'ordine in cui sono elencati i record di utilizzo PSTN è importante, l'ordine dei record di utilizzo PSTN in una route vocale è irrilevante. È tuttavia consigliabile organizzare l'elenco per frequenza di utilizzo, ad esempio: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup. Skype for Business Server attraversa l'elenco dall'alto verso il basso. 
+    > A differenza di un criterio vocale in cui l'ordine in cui sono elencati i record di utilizzo PSTN è importante, l'ordine dei record di utilizzo PSTN in una route vocale è irrilevante. È tuttavia consigliabile organizzare l'elenco per frequenza di utilizzo, ad esempio: RedmondLocal, RedmondLongDist, RedmondInternational, RedmondBackup. (Skype for Business Server attraversa l'elenco dall'alto verso il basso. 
   
 11. Digitare un valore nel campo **Numero convertito da testare** e fare clic su **Vai**. I risultati del test vengono visualizzati nel campo (facoltativo).
     
@@ -129,4 +129,4 @@ ms.locfileid: "51105842"
   
 [Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business](voice-policy-and-pstn-usage-records.md)
   
-[Pubblicare modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)
+[Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)

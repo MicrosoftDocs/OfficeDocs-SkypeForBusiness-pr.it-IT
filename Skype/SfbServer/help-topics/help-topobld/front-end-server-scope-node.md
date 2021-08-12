@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 16f6382d-1cbd-4656-b9cb-1adda13b97ae
 description: 'In questo nodo vengono visualizzate le informazioni di configurazione per il pool Front End o per il Server Standard. È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 6068588800765ac3f1352655cbdb8d342d07aa85
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 45115749bdff31ecb4077559741a277037cd07d9c794e36a632e85ded328672e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807006"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281089"
 ---
 # <a name="front-end-server-scope-node"></a>Nodo dell'ambito di Front End Server
  

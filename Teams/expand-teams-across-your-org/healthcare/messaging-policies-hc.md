@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni su come personalizzare i criteri di messaggistica protetta per Microsoft Teams che possono includere conferme di lettura e notifiche di priorità.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 77a2024184cb003d5d0ccb0f2b4715b3a3239955
-ms.sourcegitcommit: 62d5ccf10202a50755166e3b8de0bd31d1f94fef
-ms.translationtype: HT
+ms.openlocfilehash: b05a753873901d3faa4ae3446947c0b791b55c0b4531d9d03adf039a421c2f5a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "48790628"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54308755"
 ---
 # <a name="secure-messaging-for-healthcare-organizations"></a>Messaggistica protetta per le organizzazioni del settore sanitario
 

@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: È possibile consentire agli utenti Skype for Business utenti di usare lo strumento di feedback dell'app Skype for Business incorporato per consentire agli utenti di segnalare i problemi e fornire feedback direttamente a Microsoft sulla loro esperienza.
-ms.openlocfilehash: 151ba9ee82c95f088f5c7fc87de3a06ce609ab01
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: e480f9446f3418b2c68d2c74388b60009b81bc13f76e47c15c1f4e8e3f882984
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239099"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54281339"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
@@ -48,7 +48,7 @@ Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo c
 ## <a name="start-windows-powershell"></a>Avviare Windows PowerShell
 
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente. Se si usa la versione pubblica più recente Teams PowerShell, non è necessario installare Skype for Business Online Connector.
+> Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
 1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
     
 2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
@@ -76,7 +76,7 @@ Per abilitare la segnalazione di feedback per gli utenti dell'organizzazione e c
     
   - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Microsoft 365 o Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     

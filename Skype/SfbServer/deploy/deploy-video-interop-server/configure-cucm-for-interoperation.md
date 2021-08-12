@@ -12,38 +12,38 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: eab3d9f6-ec40-49bf-9162-1a7f5a59451f
-description: "Riepilogo: configurare LA GESTIONE risorse per l'utilizzo con Skype for Business Server."
-ms.openlocfilehash: 82fa48a185b22973d35bc19484e733e6436ba43e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: configurare CUCM per l'utilizzo con Skype for Business Server."
+ms.openlocfilehash: c414e14feb29dc834ebcd6a62221e3ae5e6706e5ee5c265f155d6ea512a91423
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49837116"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54307757"
 ---
 # <a name="configure-cucm-for-interoperation-with-skype-for-business-server"></a>Configurare CUCM per l'interoperabilità con Skype for Business Server
  
-**Riepilogo:** Configurare la modalità DISA per l'utilizzo con Skype for Business Server.
+**Riepilogo:** Configurare CUCM per l'utilizzo con Skype for Business Server.
   
 > [!CAUTION]
-> Questa funzionalità viene testata con Cisco Unified Communications Manager (CallManager, o CUCM) versione 10.5 utilizzando la configurazione trunk solo su TCP. Verificare che l'ambiente CUCM soddisfi questi criteri prima di procedere. 
+> Questa funzionalità viene testata con Cisco Unified Communications Manager (CallManager o CUCM) versione 10.5 utilizzando la configurazione trunk solo su TCP. Verificare che l'ambiente CUCM soddisfi questi criteri prima di procedere. 
   
-Le impostazioni descritte di seguito sono solo esempi di come è possibile configurare la modalità di configurazione di CUCM per l'utilizzo con un VIS. Per ottenere lo stesso risultato, è possibile utilizzare anche altre impostazioni e/o utilizzi di funzionalità DISAS alternative. Non è consigliabile utilizzare la configurazione ottimale per uno scenario specifico.
+Le impostazioni descritte qui sono solo esempi di come è possibile configurare CUCM per l'utilizzo con un VIS. Per ottenere lo stesso risultato, è possibile utilizzare anche altre impostazioni e/o utilizzi della funzionalità CUCM alternativa. Non è consigliabile utilizzare la configurazione ottimale per uno scenario specifico.
   
-Per l'interoperabilità con il VIS, è necessario confermare o modificare diverse impostazioni DIS. Seguire le procedure riportate di seguito per evitare la mancanza di impostazioni necessarie.
+È necessario confermare o modificare diverse impostazioni CUCM per l'interoperabilità con il VIS. Seguire le procedure seguenti per evitare di perdere le impostazioni necessarie.
   
-### <a name="configure-the-cucm"></a>Configurare il file CUCM
+### <a name="configure-the-cucm"></a>Configurare cucino
 
 1. Accedere a CUCM e passare a Cisco Unified CM Administration- \> Call Routing- \> Class of Control- \> Partition.
     
-2. Nella schermata Configurazione partizione immettere il nome e la descrizione della partizione e fare clic **su Aggiungi nuovo.**
+2. Nella schermata Configurazione partizione immettere il nome e la descrizione della partizione e fare clic **su Aggiungi nuovo**.
     
 3. Passare a Cisco Unified CM Administration- \> Call Routing- \> Class of Control- Calling Search \> Space.
     
-4. Nella schermata Configurazione spazio di ricerca chiamante immettere il nome dello spazio di ricerca chiamante e in Partizioni selezionate immettere il nome della partizione appena creata. Al **termine,** fare clic su Salva.
+4. Nella schermata Configurazione spazio di ricerca chiamante immettere il nome dello spazio di ricerca chiamante e in Partizioni selezionate immettere il nome della partizione appena creata. Al **termine, fare clic** su Salva.
     
-5. Passare a Amministrazione cm unificato Cisco- Sistema- Sicurezza- Profilo di sicurezza \> \> trunk \> SIP.
+5. Passare a Cisco Unified CM Administration- \> System- \> Security- \> SIP Trunk Security Profile.
     
-6. Nella schermata Configurazione profilo di sicurezza trunk SIP impostare le opzioni relative alle informazioni del profilo di sicurezza trunk SIP come mostrato e fare clic su **Aggiungi nuovo.**
+6. Nella schermata Configurazione profilo di sicurezza trunk SIP impostare le opzioni Informazioni profilo di sicurezza trunk SIP come mostrato e fare clic **su Aggiungi nuovo**.
     
    |**Parametro**|**Impostazione consigliata**|
    |:-----|:-----|
@@ -53,30 +53,30 @@ Per l'interoperabilità con il VIS, è necessario confermare o modificare divers
    |Tipo di trasporto in uscita  <br/> |TCP  <br/> |
    |Porta in ingresso  <br/> |5060  <br/> |
    
-7. Passare a Amministrazione CM unificato Cisco- \> Impostazioni dispositivo- \> Profilo \> SIP.
+7. Passare a Cisco Unified CM Administration- \> Device- \> Device Impostazioni- \> SIP Profile.
     
-8. Nella schermata Configurazione profilo SIP impostare le opzioni relative alle informazioni sul profilo SIP come illustrato. 
+8. Nella schermata Configurazione profilo SIP impostare le opzioni Informazioni profilo SIP come illustrato. 
     
    |**Parametro**|**Impostazione consigliata**|
    |:-----|:-----|
    |Nome  <br/> |SfBVideoInterop_SIPProfile  <br/> |
    |Descrizione  <br/> |SfBVideoInterop_SIPProfile  <br/> |
    
-9. Nella stessa schermata, scorrere verso il basso fino alla sezione SDP Profile Information. L'opzione Modifica larghezza di banda a livello di sessione **SDP** per le offerte anticipate e i nuovi inviti è impostata per impostazione predefinita su TIAS e AS. Modificare questa opzione solo in TIAS. Se si lascia questa opzione all'impostazione predefinita, Skype for Business Server non comprenderà le informazioni sul modificatore della larghezza di banda nel messaggio SIP. TIAS means Transport Independent Application Specific while AS means Application Specific. Queste sono le opzioni SIP specificate in RFC3890.
+9. Nella stessa schermata scorrere verso il basso fino alla sezione Informazioni profilo SDP. L'opzione Modifica larghezza di banda a livello di sessione **SDP** per le offerte anticipate e i nuovi inviti è impostata per impostazione predefinita su TIAS e AS. Modificare questa opzione solo in TIAS. Se si lascia questa opzione all'impostazione predefinita, Skype for Business Server non sarà possibile comprendere le informazioni sul modificatore della larghezza di banda nel messaggio SIP. TIAS significa Transport Independent Application Specific mentre AS significa Application Specific. Si tratta di opzioni SIP specificate in RFC3890.
     
-10. Nella stessa schermata, scorrere ulteriormente verso il basso. Nella configurazione specifica del trunk del profilo SIP selezionare Supporto dell'offerta anticipata per le chiamate vocali e **video** e impostarlo sull'opzione Obbligatoria **(inserire MTP se necessario).** Ciò consentirà a CUCM di configurare una chiamata SIP in uscita con l'offerta anticipata. Una nuova funzionalità di CUCM 8.5 e oltre è che supporta la configurazione delle chiamate in uscita con l'offerta anticipata senza richiedere il punto di terminazione multimediale (MTP).
+10. Nella stessa schermata, scorrere ulteriormente verso il basso. In Configurazione specifica trunk del profilo SIP selezionare Supporto offerta anticipata per le chiamate vocali e **video** e impostarlo sull'opzione Obbligatoria **(inserire MTP se necessario).** Ciò consentirà a CUCM di configurare una chiamata SIP in uscita con l'offerta anticipata. Una nuova funzionalità di CUCM 8.5 e oltre è che supporta la configurazione delle chiamate in uscita con l'offerta anticipata senza richiedere Media Termination Point (MTP).
     
-11. Verificare che nella sezione SIP Options ping la casella sia selezionata accanto a "Enable OPTIONS Ping to monitor destination status for Trunks with Service Type 'None (Default)'".
+11. Verificare che nella sezione Opzioni SIP ping la casella sia selezionata accanto a "Abilita OPZIONI Ping per monitorare lo stato di destinazione per i trunk con tipo di servizio "Nessuno (predefinito)".
     
-12. Al termine, fare clic su **Aggiungi nuovo.**
+12. Al termine, fare clic su **Aggiungi nuovo**.
     
 13. Passare a Cisco Unified CM Administration- \> \> Device-Trunk. 
     
-14. Impostare il protocollo del dispositivo su SIP e premere **Avanti.**
+14. Impostare Protocollo dispositivo su SIP e premere **Avanti**.
     
 15. In Informazioni dispositivo imposta il nome e la descrizione del dispositivo (probabilmente su qualcosa come SfBVideoInterop_SIPTrunk) e imposta l'elenco dei gruppi di risorse multimediali su un MRGL che contiene le risorse multimediali giuste. 
     
-16. Scorrere ulteriormente verso il basso. Il punto di terminazione multimediale (MTP) non è necessario per le videochiamate, se non è già deselezionato, deselezionalo. Seleziona l'opzione Esegui **su tutti i nodi CM unificati attivi.** Si noti che è necessario aggiungere tutti i nodi CUCM alla configurazione di Skype for Business Server.
+16. Scorrere ulteriormente verso il basso. Il punto di terminazione multimediale (MTP) non è necessario per le videochiamate, se non è già deselezionato, deselezionalo. Selezionare l'opzione **Esegui su tutti i nodi CM unificati attivi.** Tieni presente che devi aggiungere tutti i nodi CUCM alla Skype for Business Server configurazione.
     
 17. Scorrere ulteriormente verso il basso. Impostare le opzioni Chiamate in ingresso e Impostazioni parte connessa come illustrato.
     
@@ -86,60 +86,60 @@ Per l'interoperabilità con il VIS, è necessario confermare o modificare divers
     |Spazio di ricerca chiamate AAR  <br/> |CSS_SfBVideoInterop  <br/> |
     |CSS trasformazione parte connessa  <br/> |CSS_SfBVideoInterop  <br/> |
    
-18. Scorrere ulteriormente verso il basso. Nella sezione Sip Information Destination della configurazione del trunk SIP specificare l'FQDN del pool VIS o l'indirizzo IP dei singoli server VIS nel pool (aggiungendo più voci). Nella porta di destinazione specificare la porta su cui VIS è in ascolto per le connessioni da CUCM (il valore predefinito è 6001). Specificare inoltre il profilo di sicurezza del trunk SIP e il profilo SIP creati in precedenza, come illustrato.
+18. Scorrere ulteriormente verso il basso. Nella sezione Destinazione informazioni SIP della configurazione trunk SIP specificare il nome di dominio completo del pool VIS o l'indirizzo IP dei singoli server VIS nel pool (aggiungendo più voci). In Porta di destinazione specificare la porta su cui VIS è in attesa per le connessioni da CUCM (il valore predefinito è 6001). Specificare inoltre il profilo di sicurezza trunk SIP e il profilo SIP creati in precedenza, come illustrato.
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
     |Profilo di sicurezza trunk SIP  <br/> |SfBVideoInterop_SecurityProfile  <br/> |
     |Rerouting Calling Search Space  <br/> |CSS_SfBVideoInterop  <br/> |
-    |Out-of-Dialog Refer Calling Search Space  <br/> |CSS_SfBVideoInterop  <br/> |
+    |Out-of-Dialog Fare riferimento allo spazio di ricerca  <br/> |CSS_SfBVideoInterop  <br/> |
     |Subscribe Calling Search Space  <br/> |CSS_SfBVideoInterop  <br/> |
     |Profilo SIP  <br/> |SfBVideoInterop_SIPProfile  <br/> |
     |Metodo di segnalazione DTMF  <br/> |RFC 2833  <br/> |
    
-19.  Scorrere ulteriormente verso il basso. Impostare le informazioni di registrazione in base alle esigenze del sistema. È possibile lasciarlo impostato su **Nessuno.** 
+19.  Scorrere ulteriormente verso il basso. Impostare le informazioni di registrazione nel modo appropriato per il sistema. È possibile lasciarlo impostato su **None.** 
     
-20. Al termine, fare clic su **Aggiungi nuovo.**
+20. Al termine, fare clic su **Aggiungi nuovo**.
     
 21. Passare a Cisco Unified CM Administration- \> Call Routing- \> Route/Hunt- \> Route pattern.
     
-22. Nella schermata Configurazione motivo percorso immetti i parametri di definizione del modello mostrati di seguito. Scorrere verso il basso fino alla sezione Trasformazioni parti chiamate e impostare la maschera come mostrato, quindi fare clic **su Aggiungi nuovo** al termine dell'operazione.
+22. Nella schermata Configurazione modello di percorso immetti i parametri di definizione del modello mostrati di seguito. Scorri verso il basso fino alla sezione Trasformazioni parti chiamate e imposta la maschera come mostrato e quindi fai clic **su Aggiungi nuovo** al termine.
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
-    |Motivo percorso  <br/> |7779999  <br/> |
+    |Route Pattern  <br/> |7779999  <br/> |
     |Partizione route  <br/> |SfBVideoInterop_RoutePartition  <br/> |
     |Descrizione  <br/> |Partizione per SfBVideoInterop  <br/> |
-    |Elenco gateway/route  <br/> |SfBVideoInterop_SIPTrunk  <br/> |
+    |Gateway/Elenco route  <br/> |SfBVideoInterop_SIPTrunk  <br/> |
     |Maschera di trasformazione parte chiamata  <br/> |+14257779999  <br/> |
    
 23. Passare a Cisco Unified CM Administration- \> Call Routing- \> SIP Route Pattern.
     
-24. Nella schermata Configurazione pattern route SIP impostare le opzioni di definizione del modello come mostrato e fare clic **su Aggiungi nuovo.**
+24. Nella schermata Configurazione pattern route SIP, impostare le opzioni Di definizione del modello come mostrato e fare clic **su Aggiungi nuovo**.
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
-    | Utilizzo dei modelli <br/> |Routing del dominio  <br/> |
+    | Utilizzo modello <br/> |Routing del dominio  <br/> |
     |Modello IPv4  <br/> |contoso.com (lasciare vuoto se si utilizza IPv6)  <br/> |
     |Modello IPv6  <br/> |contoso.com (lasciare vuoto se si utilizza IPv4)  <br/> |
-    |Descrizione  <br/> |Modello SIPRoute su mediarv  <br/> |
+    |Descrizione  <br/> |Pattern SIPRoute su mediarv  <br/> |
     |Partizione route  <br/> |SfBVideoInterop_RoutePartition  <br/> |
     |Elenco trunk/route SIP  <br/> |SfBVideoInterop_SIPTrunk  <br/> |
     |Casella di controllo Motivo blocco  <br/> |lasciare deselezionata  <br/> |
    
-25. Se sono state modificate le velocità in bit audio o video rispetto alle impostazioni predefinite, sarà necessario ripristinare le impostazioni predefinite. Per impostare la velocità in bit per le chiamate audio/video, passare ad Amministrazione CM unificato Cisco- \> System- \> Region Information- \> Region. Le impostazioni predefinite sono illustrate di seguito per riferimento:
+25. Se sono state modificate le velocità in bit audio o video rispetto alle impostazioni predefinite, sarà necessario ripristinare le impostazioni predefinite. Per impostare la velocità in bit per le chiamate audio/video, passare a Cisco Unified CM Administration- \> System- \> Region Information- \> Region. Le impostazioni predefinite sono illustrate di seguito per riferimento:
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
     |Area geografica  <br/> |Predefiniti  <br/> |
     |Elenco preferenze codec audio  <br/> |Impostazione predefinita di sistema  <br/> |
     |Velocità in bit audio massima  <br/> |64 kbps (G.722, G.711)  <br/> |
-    |Velocità in bit massima sessione per videochiamate  <br/> |200000 kbps  <br/> |
+    |Velocità in bit sessione massima per le videochiamate  <br/> |200000 kbps  <br/> |
     |Velocità in bit massima sessione  <br/> |2000000000 kbps  <br/> |
    
-A questo punto il gateway video CUCM è configurato per l'utilizzo con vis. La configurazione corrispondente dovrà essere eseguita su ogni VTC che vuoi integrare.
+A questo punto il gateway video CUCM è configurato per l'utilizzo con vis. Sarà necessario eseguire la configurazione corrispondente per ogni VTC che si desidera integrare.
 > [!NOTE]
-> Per migliorare la resilienza, è possibile configurare questo gateway CUCM per l'utilizzo con un secondo pool VIDEO Interop Server o VIS. Per [ulteriori informazioni, vedere Meccanismi](../../plan-your-deployment/video-interop-server.md#resiliency) di resilienza.
+> Per migliorare la resilienza, è possibile configurare questo gateway CUCM per l'utilizzo con un secondo video interop server o pool VIS. Per [ulteriori informazioni, vedere Meccanismi](../../plan-your-deployment/video-interop-server.md#resiliency) di resilienza.
   
 ## <a name="see-also"></a>Vedere anche
 

@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 20ac1e6c120e1602a39e61d00798f8a796975603
-ms.sourcegitcommit: d3883b3d9de7251e60033bece53a2bab17d7b1b8
+ms.openlocfilehash: 7ce51b1768422a5780dbeae5b89f1285d26f18e524d3aae8bc710c127ee5af33
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51450613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280919"
 ---
 # <a name="set-up-microsoft-teams-in-your-enterprise"></a>Configurare Microsoft Teams nell'azienda
 
@@ -72,13 +72,13 @@ Chat, team e canali sono gli elementi essenziali di Teams. La **chat** consente 
 | Decisione | Descrizione |
 |--|--|
 | Quali criteri di messaggistica devono essere applicati? | I criteri di messaggistica controllano le funzionalità di messaggistica disponibili nelle chat e nei canali per gli utenti di Teams, ad esempio chi può usare la chat, chi può modificare ed eliminare i messaggi inviati e così via. Teams ha un criterio globale che si applica a tutti gli utenti. Tutte le funzionalità nel criterio globale sono **abilitate** per impostazione predefinita.<p>Se si vuole applicare a tutti lo stesso criterio, è sufficiente modificare questo criterio globale, ad esempio disattivare il supporto dei meme nelle conversazioni.<p>Se si vogliono usare criteri diversi per gruppi di utenti diversi, ad esempio, un criterio per gli impiegati d'ufficio e un altro per gli impiegati di produzione, è possibile creare e assegnare nuovi criteri. Quando si assegna un criterio a un utente, il criterio globale non si applica più a questo utente.<p>[Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md) |
-| Quali impostazioni di Teams occorre applicare? | Le impostazioni di Teams consentono di configurare i team per funzionalità come l'integrazione della posta elettronica, le opzioni di archiviazione nel cloud, la scheda Organizzazione, la configurazione dei dispositivi della sala riunioni e l'ambito di ricerca. Le modifiche apportate a queste impostazioni si applicano a tutti i team dell'organizzazione. <p>[Impostazioni di Teams](enable-features-office-365.md#teams-settings)  |
+| Quali impostazioni di Teams occorre applicare? | Le impostazioni di Teams consentono di configurare i team per funzionalità come l'integrazione della posta elettronica, le opzioni di archiviazione nel cloud, la scheda Organizzazione, la configurazione dei dispositivi della sala riunioni e l'ambito di ricerca. Le modifiche apportate a queste impostazioni si applicano a tutti i team dell'organizzazione.<p>[Impostazioni di Teams](enable-features-office-365.md#teams-settings)  |
 
 ### <a name="external-and-guest-access"></a>Accesso esterno e accesso guest
 
 | Decisione | Descrizione |
 |--|--|
-| L'accesso esterno andrebbe abilitato? | L'accesso esterno consente a tutte le persone di un'altra organizzazione di comunicare con gli utenti della propria. Questa funzionalità è utile quando si ha una stretta relazione con un'altra organizzazione, ad esempio un fornitore, e si vuole che le persone di entrambe le aziende possano con la massima semplicità chattare, organizzare riunioni e così via. <p>L'accesso esterno è diverso dall'accesso guest. L'accesso esterno consente a tutte le persone di un'organizzazione di accedere e interagire con le persone di un'altra organizzazione. Con l'accesso guest si invitano persone specifiche ad accedere per interagire con le persone della propria organizzazione.<p>L'accesso esterno è **disattivato** per impostazione predefinita.<p>[Gestire l'accesso esterno in Microsoft Teams](manage-external-access.md)  |
+| L'accesso esterno andrebbe abilitato? | L'accesso esterno consente a tutte le persone di un'altra organizzazione di comunicare con gli utenti della propria. Questa funzionalità è utile quando si ha una stretta relazione con un'altra organizzazione, ad esempio un fornitore, e si vuole che le persone di entrambe le aziende possano con la massima semplicità chattare, organizzare riunioni e così via.<p>L'accesso esterno è diverso dall'accesso guest. L'accesso esterno consente a tutte le persone di un'organizzazione di accedere e interagire con le persone di un'altra organizzazione. Con l'accesso guest si invitano persone specifiche ad accedere per interagire con le persone della propria organizzazione.<p>L'accesso esterno è **disattivato** per impostazione predefinita.<p>[Gestire l'accesso esterno in Microsoft Teams](manage-external-access.md)  |
 | L'accesso guest deve essere abilitato? |L'accesso guest consente agli utenti dell'organizzazione di invitare persone esterne all'organizzazione ad accedere ai team e ai canali interni. L'accesso guest viene spesso usato per collaborare con persone esterne all'organizzazione che non hanno una relazione formale con la propria. Ad esempio, è possibile invitare un progettista a lavorare temporaneamente su un progetto.<p>L'accesso guest è diverso dall'accesso esterno. L'accesso guest invita persone specifiche ad accedere per interagire con le persone dell'organizzazione. L'accesso esterno consente a tutte le persone di un'altra organizzazione di accedere e interagire con le persone dell'organizzazione. <p>L'accesso guest è **disattivato** per impostazione predefinita. <p>[Attivare o disattivare l'accesso guest in Microsoft Teams.](set-up-guests.md)  |
 
 #### <a name="meetings-and-audio-conferencing"></a>[Riunioni e audioconferenza](#tab/MeetingsAudioConferencing)

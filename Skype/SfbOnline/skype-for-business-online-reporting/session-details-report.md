@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: Il dashboard Report mostra la panoramica delle attività in Microsoft 365 o Office 365 prodotti dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.
-ms.openlocfilehash: 8b861cc863603a8ab51451e9906cd62313bd9cf9
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 522a82bf9b93a590f8f319d59e805b23ba34d4665b34eb05541aa18d1b9ba89e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54308017"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 
@@ -37,7 +37,7 @@ Per altri [report disponibili,](https://support.office.com/article/0d6dfb17-8582
 Questo report, insieme agli altri report Skype for Business, consente di visualizzare dettagli sull'attività, inclusi i dettagli della sessione all'interno dell'organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni.](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
-> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore all'Microsoft 365 di amministrazione. 
+> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore al interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-session-details-report"></a>Come accedere al report dettagli Skype for Business sessione
 

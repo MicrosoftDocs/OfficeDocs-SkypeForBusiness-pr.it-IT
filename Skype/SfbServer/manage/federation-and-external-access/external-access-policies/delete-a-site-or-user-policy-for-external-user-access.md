@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella pagina Criteri di accesso esterno.
-ms.openlocfilehash: 407e90af201055f371dc92485ab258bac851a258
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 154fb4434e074a3585a817994cb6b919a2b755eef8d5a8e6a082cacad4e25aae
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51099022"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309255"
 ---
 # <a name="delete-a-site-or-user-policy-for-external-user-access"></a>Eliminare criteri sito o utente per l'accesso degli utenti esterni
 
@@ -38,7 +38,7 @@ Se sono stati creati o configurati criteri di accesso per gli utenti esterni che
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Fare clic su **Accesso utente esterno** e quindi su **Criteri di accesso esterno**.
 

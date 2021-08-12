@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 49ccbbc3-2f73-45fc-80a6-e612535cbc10
 description: Ogni record rappresenta un flusso audio. Una linea multimediale audio contiene in genere due flussi audio.
-ms.openlocfilehash: e24a5c8611c3f6bf7b56edf342aa2595f6794a90
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 28111f9c97efdc729d13fda824f4236caad97eee1f08ff31eea0b751dda1cb88
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831366"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54309195"
 ---
 # <a name="audiostream-table"></a>Tabella AudioStream
  
@@ -26,9 +26,9 @@ Ogni record rappresenta un flusso audio. Una linea multimediale audio contiene i
   
 |Colonna|Tipo di dati|Chiave/indice|Dettagli|
 |:-----|:-----|:-----|:-----|
-|**ConferenceDateTime** <br/> |datetime  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine.](medialine-0.md)  <br/> |
-|**SessionSeq** <br/> |int  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine.](medialine-0.md)  <br/> |
-|**MediaLineLabel** <br/> |tinyint  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine.](medialine-0.md)  <br/> |
+|**ConferenceDateTime** <br/> |datetime  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
+|**SessionSeq** <br/> |int  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
+|**MediaLineLabel** <br/> |tinyint  <br/> |Principale  <br/> |Riferimento dalla [tabella MediaLine](medialine-0.md).  <br/> |
 |**StreamID** <br/> |int  <br/> |Principale  <br/> |ID univoco in una linea multimediale.  <br/> |
 |**JitterInterArrival** <br/> |int  <br/> | <br/> |Instabilità di rete media dalle statistiche RTCP (Real Time Control Protocol).  <br/> |
 |**JitterInterArrivalMax** <br/> |int  <br/> | <br/> |Instabilità di rete massima durante la chiamata.  <br/> |
@@ -44,32 +44,32 @@ Ogni record rappresenta un flusso audio. Una linea multimediale audio contiene i
 |**DegradationMax** <br/> |decimal(3,2)  <br/> | <br/> |Degradazione MOS di rete massima durante la chiamata.  <br/> |
 |**DegradationJitterAvg** <br/> |decimal(3,2)  <br/> | <br/> |Degradazione MOS di rete causata dall'instabilità.  <br/> |
 |**DegradationPacketLossAvg** <br/> |decimal(3,2)  <br/> | <br/> |Degradazione MOS di rete causata dalla perdita di pacchetti.  <br/> |
-|**AudioPayloadDescription** <br/> |int  <br/> |Esterna  <br/> |Codec audio usato per la chiamata, a cui si fa riferimento dalla tabella PayloadDescription.  <br/> |
+|**AudioPayloadDescription** <br/> |int  <br/> |Foreign  <br/> |Codec audio usato per la chiamata, a cui viene fatto riferimento da PayloadDescription Table.  <br/> |
 |**AudioSampleRate** <br/> |int  <br/> | <br/> |Frequenza di campionamento per il flusso audio.  <br/> |
-|**RoundTrip** <br/> |int  <br/> | <br/> |Tempo di round trip dalle statistiche RTCP. Per una qualità accettabile, il valore deve essere inferiore a 100 ms.  <br/> |
+|**RoundTrip** <br/> |int  <br/> | <br/> |Tempo di round trip dalle statistiche RTCP. Per una qualità accettabile, questo valore deve essere inferiore a 100 ms.  <br/> |
 |**RoundTripMax** <br/> |int  <br/> | <br/> |Tempo di round trip massimo per il flusso audio.  <br/> |
-|**OverallAvgNetworkMOS** <br/> |decimal(3,2)  <br/> | <br/> |MOS di rete a banda larga medio per la chiamata. Questa metrica dipende dalla perdita di pacchetti, dall'instabilità e dal codec utilizzato. L'intervallo è compreso tra [1,0 e 5,0].  <br/> |
-|**OverallMinNetworkMOS** <br/> |decimal(3,2)  <br/> | <br/> |Mos di rete a banda larga minimo per la chiamata.  <br/> |
+|**OverallAvgNetworkMOS** <br/> |decimal(3,2)  <br/> | <br/> |MOS di rete a banda larga medio per la chiamata. Questa metrica dipende dalla perdita di pacchetti, dall'instabilità e dal codec utilizzato. Range è [da 1,0 a 5,0].  <br/> |
+|**OverallMinNetworkMOS** <br/> |decimal(3,2)  <br/> | <br/> |Mos di rete a banda larga minima per la chiamata.  <br/> |
 |**SendListenMOS** <br/> |decimal(3,2)  <br/> | <br/> |Punteggio MOS di ascolto a banda larga previsto medio per l'audio inviato, inclusi il livello vocale, il livello di rumore e le caratteristiche del dispositivo di acquisizione.  <br/> |
 |**SendListenMOSMin** <br/> |decimal(3,2)  <br/> | <br/> |Valore SendListenMOS minimo per la chiamata.  <br/> |
 |**RecvListenMOS** <br/> |decimal(3,2)  <br/> | <br/> |Punteggio MOS di ascolto a banda larga previsto medio per l'audio ricevuto dalla rete, inclusi il livello vocale, il livello di rumore, il codec, le condizioni di rete e le caratteristiche del dispositivo di acquisizione.  <br/> |
 |**RecvListenMOSMin** <br/> |decimal(3,2)  <br/> | <br/> |Valore RecvListenMOS minimo per la chiamata.  <br/> |
-|**AudioFECUsed** <br/> |bit  <br/> ||Flag che indica se per la chiamata è stato utilizzato l'audio FEC.  <br/> |
+|**AudioFECUsed** <br/> |bit  <br/> ||Flag che indica se per la chiamata è stato utilizzato FEC audio.  <br/> |
 |**RatioConcealedSamplesAvg** <br/> |decimal(5,2)  <br/> ||Rapporto medio tra i campioni nascosti risultanti dalla correzione audio e i campioni tipici.  <br/> |
 |**RatioStretchedSamplesAvg** <br/> |decimal(5,2)  <br/> ||Rapporto medio tra i campioni estesi risultanti dalla correzione audio e i campioni tipici.  <br/> |
 |**RatioCompressedSamplesAvg** <br/> |decimal(5,2)  <br/> ||Rapporto medio tra i campioni compressi risultanti dalla correzione audio e i campioni tipici.  <br/> |
-|**In ingresso** <br/> |bit  <br/> | <br/> |I dati del flusso sul lato del ricevitore vengono ricevuti.  <br/> |
+|**In ingresso** <br/> |bit  <br/> | <br/> |Vengono ricevuti i dati di flusso sul lato ricevitore.  <br/> |
 |**In uscita** <br/> |bit  <br/> | <br/> |I dati di flusso sul lato mittente vengono ricevuti.  <br/> |
 |**SenderIsCallerPAI** <br/> |bit  <br/> | <br/> |1 indica che la direzione del flusso è dal chiamante al chiamato.  <br/> 0 indica che la direzione del flusso va dal destinatario della chiamata al chiamante.  <br/> |
-|**JitterInterArrivalSD** <br/> |float  <br/> ||Deviazione standard per i tempi di arrivo dell'instabilità.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**ConcealRatioMax** <br/> |float  <br/> ||Rapporto massimo di pacchetti nascosti dal correttore.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**ConcealRatioSD** <br/> |float  <br/> ||Deviazione standard per il rapporto di pacchetti nascosti dal correttore.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**HealerPacketDropRatio** <br/> |float  <br/> ||Rapporto tra i pacchetti ignorati dal sistema di rigenerazione e il numero totale di pacchetti ricevuti.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**HealerFECPacketUsedRatio** <br/> |float  <br/> ||Rapporto tra i pacchetti di correzione degli errori di inoltro utilizzati e il numero totale di pacchetti ricevuti.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**JitterInterArrivalSD** <br/> |float  <br/> ||Deviazione standard per gli orari di arrivo instabilità.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**ConcealRatioMax** <br/> |float  <br/> ||Rapporto massimo di pacchetti nascosti dal healer.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**ConcealRatioSD** <br/> |float  <br/> ||Deviazione standard per il rapporto di pacchetti nascosti dal healer.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**HealerPacketDropRatio** <br/> |float  <br/> ||Rapporto tra i pacchetti rilasciati dal healer rispetto al numero totale di pacchetti ricevuti.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**HealerFECPacketUsedRatio** <br/> |float  <br/> ||Rapporto tra i pacchetti di correzione degli errori di inoltro usati rispetto al numero totale di pacchetti ricevuti.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**MaxCompressedSamples** <br/> |float  <br/> ||Numero massimo di pacchetti audio compressi dal healer.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**LossCongestionPercent** <br/> |float  <br/> ||Indica la percentuale di tempo in cui la chiamata si è verificata in uno stato di congestione della perdita.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**DelayCongestionPercent** <br/> |float  <br/> ||Indica la percentuale della chiamata durante la quale la congestione è stata causata dall'arrivo ritardato dei pacchetti di rete.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**ContentionDetectedPercent** <br/> |float  <br/> ||Indica la percentuale del tempo durante il quale la chiamata era in competizione per le risorse di rete.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**ContentionDetectedPercent** <br/> |float  <br/> ||Indica la percentuale di tempo in cui la chiamata era in competizione per le risorse di rete.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**BandwidthEstMin** <br/> |int  <br/> ||Quantità minima di stima della larghezza di banda misurata durante la chiamata.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**BandwidthEstMax** <br/> |int  <br/> ||Quantità massima di stima della larghezza di banda misurata durante la chiamata.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**BandwidthEstStdDev** <br/> |int  <br/> ||Deviazione standard della stima della larghezza di banda misurata durante la chiamata.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
@@ -77,12 +77,12 @@ Ogni record rappresenta un flusso audio. Una linea multimediale audio contiene i
 |**RelativeOneWayTotal** <br/> |float  <br/> ||Quantità complessiva di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**RelativeOneWayAverage** <br/> |float  <br/> ||Quantità complessiva di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**RelativeOneWayMax** <br/> |float  <br/> ||Quantità massima di latenza unidirezionale. La latenza unidirezionale relativa misura il ritardo tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RelativeOneWayBurstOccurrences** <br/> |int  <br/> ||Occorrenze burst unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RelativeOneWayBurstDensity** <br/> |float  <br/> ||Densità burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RelativeOneWayBurstDuration** <br/> |float  <br/> ||Durata burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RelativeOneWayGapOccurrences** <br/> |int  <br/> ||Occorrenze gap unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile; le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RelativeOneWayGapDensity** <br/> |float  <br/> ||Densità gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile; le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RelativeOneWayGapDuration** <br/> |float  <br/> ||Durata gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati fluivano in burst imprevedibili anziché in un flusso stabile; le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RelativeOneWayBurstOccurrences** <br/> |int  <br/> ||Occorrenze burst unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RelativeOneWayBurstDensity** <br/> |float  <br/> ||Densità burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RelativeOneWayBurstDuration** <br/> |float  <br/> ||Durata burst unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RelativeOneWayGapOccurrences** <br/> |int  <br/> ||Occorrenze gap unidirezionali totali. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RelativeOneWayGapDensity** <br/> |float  <br/> ||Densità di gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RelativeOneWayGapDuration** <br/> |float  <br/> ||Durata del gap unidirezionale totale. Una trasmissione "bursty" è una trasmissione in cui i dati sfociano in burst imprevedibili anziché in un flusso costante. le lacune indicano ritardi tra questi burst. Questa metrica misura il flusso di dati tra il client e il server.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**DecodeStereoPercent** <br/> |float  <br/> ||Percentuale della chiamata decodificata come stereo.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**AecRenderStereoPercent** <br/> |float  <br/> ||Percentuale della chiamata sottoposta a rendering come stereo dall'eco cancellatore acustico.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**AudioPostFECPLR** <br/> |float  <br/> ||Frequenza di perdita dei pacchetti dopo l'applicazione della correzione degli errori di inoltro.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |

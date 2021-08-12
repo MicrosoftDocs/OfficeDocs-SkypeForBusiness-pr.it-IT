@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 1e5a15f9-6f42-4dc6-baaa-24daf54afc4d
 description: 'Riepilogo: informazioni su come configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business Server.'
-ms.openlocfilehash: f8c9f75f24a06b210a1c17ed11a1485ab5158f3d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 586aad64ae7585a275b0cce0e91497e0dea183d200693bbbf84e95e123bb392d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830446"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54279334"
 ---
 # <a name="configure-voice-policies-pstn-usage-records-and-voice-routes-in-skype-for-business"></a>Configurare criteri vocali, record di utilizzo PSTN e route vocali in Skype for Business
  
@@ -40,14 +40,14 @@ Per i passaggi dettagliati per l'esecuzione di ognuna di queste attività, veder
 
 - [Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business](voice-policy-and-pstn-usage-records.md)
     
-- [Configurare l'escape del sistema di caselle vocali in Skype for Business](configure-voice-mail-escape.md)
+- [Configurare l'escape della segreteria telefonica in Skype for Business](configure-voice-mail-escape.md)
     
 - [Visualizzare i record di utilizzo PSTN in Skype for Business](view-pstn-usage-records.md)
     
 - [Creare o modificare una route vocale in Skype for Business](create-or-modify-a-voice-route.md)
     
-- [Esportare o importare un file di configurazione della route vocale in Skype for Business](voice-route-configuration-import-export.md)
+- [Esportare o importare un file di configurazione delle route vocali in Skype for Business](voice-route-configuration-import-export.md)
     
-- [Pubblicare modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)
+- [Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for Business](voice-route-config-changes.md)
     
 

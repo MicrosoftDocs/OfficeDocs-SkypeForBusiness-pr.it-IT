@@ -17,12 +17,12 @@ description: Informazioni su come usare il report sull'Teams di utilizzo dei dis
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1d47888884ce86bfa56546a9df600ce958380e0d
-ms.sourcegitcommit: 66e7b28ba1c0433535eb6a3e7d883851c27d9d1f
+ms.openlocfilehash: 15dfe1fe7e79e909b11093c019ac38c6cb5d967e46146d4ce0262499ca880018
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51478356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54308377"
 ---
 # <a name="microsoft-teams-device-usage-report"></a>Microsoft Teams utilizzo dei dispositivi
 
@@ -51,9 +51,9 @@ Il report Teams utilizzo dei dispositivi nell'interfaccia Microsoft Teams di amm
 
 Per rendere anonimi i Teams di utilizzo dei dispositivi, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nel report e la relativa esportazione.
 
-1. Nell Microsoft 365 di amministrazione passare  all'Impostazioni org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
+1. In interfaccia di amministrazione di Microsoft 365 passare alla scheda  Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
-2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo nell'interfaccia Microsoft 365 di amministrazione sia all'Teams di amministrazione.
+2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo in interfaccia di amministrazione di Microsoft 365 che all'Teams di amministrazione.
   
 3. Selezionare **Salva modifiche**.
 

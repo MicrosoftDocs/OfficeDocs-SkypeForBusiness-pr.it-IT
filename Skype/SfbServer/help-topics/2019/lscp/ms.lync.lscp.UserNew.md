@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 23408002-f83c-4b8a-ac65-6fb0e6bc414e
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: c5b35d54147b3858e48b9e76dee30ab41f29ae65
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 4def26fd4e2e52c5b9871627f6612998343500bd355be0822f0d3f5f516fee15
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120065"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280181"
 ---
 # <a name="users-new-user"></a>Utenti: Nuovo utente
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Aggiungere un nuovo utente](/previous-versions/office/lync-server-2013/lync-server-2013-add-and-enable-user-account-for-lync-server)
 
@@ -34,7 +34,7 @@ Operazione desiderata Fare clic sul collegamento all'attività che si desidera e
 
 - [Specificare le versioni client supportate per l'accesso da un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-client-version-policy)
 
-- [Assegnare criteri PIN per utente in Skype for Business Server](../../../manage/authentication/assign-a-per-user-pin-policy.md)
+- [Assegnare un criterio PIN per utente in Skype for Business Server](../../../manage/authentication/assign-a-per-user-pin-policy.md)
 
 - [Configurare la federazione, l'accesso utente remoto e la connettività di messaggistica istantanea pubblica per gli utenti](/previous-versions/office/lync-server-2013/lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user)
 

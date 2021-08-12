@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 26c9e271-3516-4d90-b930-70fec4e359ea
 description: Lo schema del database di Persistent Chat è costituito dalle tabelle seguenti.
-ms.openlocfilehash: fc87faee92856f35c1ebd54dae4db1f01cfe646b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: bc7189eac8e8fbd42cdaa5786b82d5652c616a69ae3fc4fc180c189416a94468
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54280939"
 ---
 # <a name="list-of-persistent-chat-server-tables"></a>Elenco di tabelle del server Chat persistente
  
@@ -29,8 +29,8 @@ Lo schema del database di Persistent Chat è costituito dalle tabelle seguenti.
 |**tavolo**|**Descrizione**|
 |:-----|:-----|
 |[tblADCookie](tbladcookie.md) <br/> |Include i cookie di sincronizzazione LDAP (Lightweight Directory Access Protocol) correnti. Ogni riga corrisponde a un dominio di Servizi di dominio Active Directory che il server Chat persistente sta monitorando attivamente per le modifiche. In questa tabella sono rappresentati solo i domini di Active Directory rilevanti per il server Chat persistente.  <br/> |
-|[tblPrincipalMemberDifference](tblprincipalmemberdifference.md) <br/> |Contiene le modifiche di appartenenza ai gruppi (membri aggiunti e rimossi) che non sono state ancora elaborate dai passaggi successivi di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblADUpdates) utilizzate nel primo passaggio della sincronizzazione di Active Directory.  <br/> Le modifiche delle appartenenza sono archiviate e/o elaborate solo per i gruppi che sono elencati nella tabella tblPrincipal o che includono membri già elencati in tale tabella.  <br/> |
-|[tblADUpdates](tbladupdates.md) <br/> |Contiene le modifiche a Servizi di dominio Active Directory che non sono state ancora elaborate dai passaggi successivi di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblPrincipalMemberDifference) utilizzate nel primo passaggio della sincronizzazione di Active Directory.  <br/> Le modifiche ad Active Directory vengono archiviate, elaborate o entrambe solo per le entità già elencate nella tabella tblPrincipal.  <br/> |
+|[tblPrincipalMemberDifference](tblprincipalmemberdifference.md) <br/> |Contiene le modifiche di appartenenza ai gruppi (sia membri aggiunti che rimossi) che non sono ancora state elaborate dai passaggi successivi di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblADUpdates) utilizzate nel primo passaggio di sincronizzazione di Active Directory.  <br/> Le modifiche delle appartenenza sono archiviate e/o elaborate solo per i gruppi che sono elencati nella tabella tblPrincipal o che includono membri già elencati in tale tabella.  <br/> |
+|[tblADUpdates](tbladupdates.md) <br/> |Contiene le modifiche apportate a Servizi di dominio Active Directory che non sono state ancora elaborate dai passaggi successivi di sincronizzazione di Active Directory ed è una delle tabelle temporanee (insieme alla tabella tblPrincipalMemberDifference) utilizzate nel primo passaggio di sincronizzazione di Active Directory.  <br/> Le modifiche ad Active Directory vengono archiviate, elaborate o entrambe solo per le entità già elencate nella tabella tblPrincipal.  <br/> |
 |[tblPrincipalMembers](tblprincipalmembers.md) <br/> |Include le appartenenze delle entità.  <br/> |
 |[tblPrincipalMeta](tblprincipalmeta.md) <br/> |Contiene le entità che devono essere aggiornate da Active Directory.  <br/> |
 |[tblSkippedAffiliations](tblskippedaffiliations.md) <br/> |Contiene affiliazioni che non è stato possibile aggiornare per qualche motivo, in genere a causa di errori di accesso ad Active Directory.  <br/> Questa tabella è esclusivamente per scopi informativi. Il relativo contenuto non viene utilizzato.  <br/> Le entità di cui non è stato possibile aggiornare correttamente le affiliazioni sono contenute nella tabella tblPrincipalMeta e dispongono di un'altra possibilità di aggiornamento.  <br/> |
@@ -41,8 +41,8 @@ Lo schema del database di Persistent Chat è costituito dalle tabelle seguenti.
 |:-----|:-----|
 |[tblPrincipalType](tblprincipaltype.md) <br/> |Include i tipi di entità per classificare il contenuto della tabella tblPrincipal. Questa tabella è statica, viene configurata durante la creazione del database e non è soggetta a modifiche.  <br/> |
 |[tblPrincipal](tblprincipal.md) <br/> |Include tutte le entità, ovvero utenti, cartelle, gruppi e così via. Il server Chat persistente gestisce questa operazione come un elenco eterogeneo semplice. Diverse colonne sono basate sul tipo di ogni entità.  <br/> La maggior parte di queste entità sono copie memorizzate nella cache di oggetti archiviati in Active Directory. La creazione della copia memorizzata nella cache nella tabella Principal di questi oggetti di Active Directory viene definita provisioning.  <br/> Alcune entità vengono create in modo più aggressivo rispetto ad altre e alcuni oggetti di Active Directory vengono ignorati del tutto.  <br/> |
-|[tblPrincipalAffiliations](tblprincipalaffiliations.md) <br/> |Contiene affiliazioni di entità che descrivono le appartenenze ai gruppi di sicurezza di Active Directory, ai contenitori di Active Directory e così via.  <br/> |
-|[tblNode](tblnode.md) <br/> |Contiene il nodo di categoria, gestito nel Pannello di controllo.  <br/> |
+|[tblPrincipalAffiliations](tblprincipalaffiliations.md) <br/> |Contiene affiliazioni principali che descrivono le appartenenze ai gruppi di sicurezza di Active Directory, ai contenitori di Active Directory e così via.  <br/> |
+|[tblNode](tblnode.md) <br/> |Contiene il nodo di categoria, come gestito nel pannello di controllo.  <br/> |
 |[tblRoleType](tblroletype.md) <br/> |Include i tipi di ruolo e gli insiemi di autorizzazioni associati. Questa tabella di ricerca è statica.  <br/> |
 |[tblScopePrincipal](tblscopeprincipal.md) <br/> |Include gli ambiti assegnati ai nodi.  <br/> |
 |[tblPrincipalRole](tblprincipalrole.md) <br/> |Include i ruoli assegnati ai nodi.  <br/> |
@@ -68,7 +68,7 @@ Lo schema del database di Persistent Chat è costituito dalle tabelle seguenti.
 |[tblServerIdentity](tblserveridentity.md) <br/> |Contiene i server attivi nel pool di server Chat persistente.  <br/> |
 |[tblAdminLock](tbladminlock.md) <br/> |Include il blocco amministratore per l'esecuzione di alcuni comandi dell'amministratore. La voce di revisione di sistema nella tabella tblSystemRevision viene incrementata dopo ogni rilascio del blocco.  <br/> |
 |[tblSystemRevision](tblsystemrevision.md) <br/> |Include il numero di revisione usato insieme alla tabella tblAdminLock per garantire la coerenza tra più client.  <br/> |
-|[tblActivePeers](tblactivepeers.md) <br/> |Contiene le connessioni peer-to-peer correnti tra i servizi chat persistente.  <br/> |
+|[tblActivePeers](tblactivepeers.md) <br/> |Contiene le connessioni peer-to-peer correnti tra i servizi Chat persistente.  <br/> |
 |[tblConfig](tblconfig.md) <br/> |Contiene la configurazione del server Chat persistente non supportata.  <br/> |
    
 

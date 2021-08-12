@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 1667cfe4-76fa-4e10-91bb-b3efbedbf759
 description: Distribuzione delle funzionalità di gestione delle chiamate in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 02c6669b9cadb952f7ccc71d785416db7414d8a8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 61452c8b9f5a072e78d4b85dd17e65ef63c27a0e3daab4f71b0e04d9d13c5a1f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49836856"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54307807"
 ---
 # <a name="deploy-call-management-features-in-skype-for-business"></a>Distribuire le funzionalità di gestione delle chiamate in Skype for Business
  
@@ -31,9 +31,9 @@ Le funzionalità di gestione delle chiamate di VoIP aziendale controllano la mod
   
 - **Parcheggio di chiamata:** consente agli utenti vocali di parcheggiare temporaneamente una chiamata e quindi di riprenderla dallo stesso telefono o da un altro telefono.
     
-- **Risposta alle chiamate di** gruppo : consente agli utenti di rispondere alle chiamate effettuate a un altro utente assegnato a un gruppo di prelievo componendo il numero del gruppo di prelievo della chiamata.
+- **Prelievo chiamata di** gruppo : Consente agli utenti di rispondere alle chiamate effettuate a un altro utente assegnato a un gruppo di prelievo componendo il numero del gruppo di prelievo della chiamata.
     
-- **Response Group:** instrada le chiamate in arrivo a gruppi di agenti utilizzando gruppi di risposta o domande e risposte IVR (Interactive Voice Response).
+- **Response Group**: instrada le chiamate in arrivo a gruppi di agenti utilizzando gruppi di risposta o domande e risposte IVR (Interactive Voice Response).
     
 - **Annuncio**: riproduce un messaggio per le chiamate effettuate a un numero non assegnato o instrada diversamente le chiamate oppure esegue entrambe le operazioni.
     
@@ -41,7 +41,7 @@ In questa sezione viene descritto come configurare queste funzionalità di gesti
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
-- [Processo di distribuzione per il parcheggio di chiamata in Skype for Business](deployment-process-for-call-park.md)
+- [Processo di distribuzione per parcheggio di chiamata in Skype for Business](deployment-process-for-call-park.md)
     
 - [Processo di distribuzione per la risposta alle chiamate di gruppo in Skype for Business](deployment-process-for-group-call-pickup.md)
     
