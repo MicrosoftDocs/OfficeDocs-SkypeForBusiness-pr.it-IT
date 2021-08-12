@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 92ded8fd-d0ad-4f8a-9e6f-2e8a690fda3a
 description: La tabella Pool è una tabella di supporto in cui vengono archiviate informazioni sui diversi pool Front End. Ogni record della tabella rappresenta un pool.
-ms.openlocfilehash: e90b9b2a34a184e1d8cdb23dc3d33b1c41367584
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: e9ad0f0661bbd38a2d1175ab38113585c306baf234bc97e98bf40fca949d0cd9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54312974"
 ---
 # <a name="pool-table"></a>Tabella Pool
  

@@ -23,12 +23,12 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: Informazioni su come configurare Microsoft Teams e Skype for Business usare un'altra lingua per il messaggio di saluto della segreteria telefonica predefinito dell'organizzazione.
-ms.openlocfilehash: f211a5e160ce05707a454e5100409840e4c781ac
-ms.sourcegitcommit: eca3f5e83e4a07be197936db19f539cbfa2c2bd2
+ms.openlocfilehash: 92f767a366ac6c3250f529ec022f9b12414bd2f542c00c8f267596c7e276ee0b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "52804523"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54339882"
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 
@@ -53,7 +53,7 @@ Se si è un [amministratore](https://support.office.com/article/da585eea-f576-4f
 
 1. Accedere con l'account [di amministratore globale](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) all'indirizzo [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) .
 
-2. Nell'Microsoft 365 di amministrazione scegliere **Impostazioni**  >    >  **Impostazioni'organizzazione.**
+2. Nella finestra interfaccia di amministrazione di Microsoft 365 **scegliere** Impostazioni  >  **Impostazioni**  >  **profilo organizzazione.**
 
      ![Screenshot che mostra la scelta Impostazioni e quindi profilo organizzazione.](media/9d9de520-bb84-409f-9417-96bd8ec86c48.png)
   

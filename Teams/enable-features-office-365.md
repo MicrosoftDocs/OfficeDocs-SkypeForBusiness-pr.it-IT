@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3368fde246e61c7e006d9223a37283f2953945f
-ms.sourcegitcommit: 50111653f72f6758a3491a4dc3e91160ab75022c
+ms.openlocfilehash: 1e08ad6cb5962c447b3fb42e3ab4aa3c02f50fa1fa6f07e0348714f380b670cc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51506663"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322578"
 ---
 # <a name="manage-microsoft-teams-settings-for-your-organization"></a>Gestire le impostazioni di Microsoft Teams per l'organizzazione
 
@@ -91,7 +91,7 @@ Queste impostazioni controllano il comportamento dell'account di risorsa per i d
 
 #### <a name="search-by-name"></a>Cerca per nome
 
-La ricerca nella directory con ambito di Microsoft Teams usa i criteri rubrica di Exchange per consentire alle organizzazioni di creare confini virtuali che controllano il modo in cui gli utenti possono trovare e comunicare con altri utenti dell'organizzazione. Può essere utile usare la ricerca nella directory con ambito in situazioni come queste:
+La ricerca nella directory con ambito di Microsoft Teams usa i criteri rubrica di Exchange per consentire alle organizzazioni di creare confini virtuali che controllano il modo in cui gli utenti possono trovare e comunicare con altri utenti dell'organizzazione. Può essere utile utilizzare una ricerca nella directory con ambito in situazioni quali:
 
 - L'organizzazione ha più società all'interno del tenant che si vogliono mantenere separate. 
 - L'istituto di istruzione vuole limitare le chat tra docenti e studenti.

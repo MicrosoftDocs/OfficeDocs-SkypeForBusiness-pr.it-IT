@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 6b2a3f7d-760f-4f09-8432-312c98a7e6b7
 description: Informazioni sul trunking SIP e sui gateway PSTN per VoIP aziendale in Skype for Business Server.
-ms.openlocfilehash: 402aa365556ef52d135c3ee6c0a2e36e9bd2e780
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 3ac0a2afba49da52b909bf8b4c040f1124c510ba1818e37100f0c0ebdae941c4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51114622"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54286345"
 ---
 # <a name="pstn-connectivity-components-in-skype-for-business-server"></a>Componenti di connettività PSTN in Skype for Business Server
  
@@ -43,7 +43,7 @@ Per l'utilizzo di questa soluzione di distribuzione è necessario un provider di
   
 ## <a name="pstn-gateways"></a>Gateway PSTN
 
-I gateway PSTN sono dispositivi di terze parti che convertono i segnali e i contenuti multimediali tra l'infrastruttura VoIP aziendale e una rete PSTN o un PBX. I gateway PSTN operano con Mediation Server per presentare una chiamata PSTN o PBX a un client VoIP aziendale. Mediation Server presenta inoltre le chiamate da client VoIP aziendale al gateway PSTN per il routing alla rete PSTN o al PBX. Per un elenco dei partner che collaborano con Microsoft per fornire dispositivi che funzionano con Skype for Business Server, vedere il sito  [Web Microsoft Unified Communications Partners](https://go.microsoft.com/fwlink/p/?linkId=202836). 
+I gateway PSTN sono dispositivi di terze parti che convertono i segnali e i contenuti multimediali tra l'infrastruttura VoIP aziendale e una rete PSTN o un PBX. I gateway PSTN operano con Mediation Server per presentare una chiamata PSTN o PBX a un client VoIP aziendale. Mediation Server presenta inoltre le chiamate da client VoIP aziendale al gateway PSTN per il routing alla rete PSTN o al PBX. Per un elenco dei partner che collaborano con Microsoft per fornire dispositivi che funzionano con Skype for Business Server, vedere il sito [Web Microsoft Unified Communications Partners](https://go.microsoft.com/fwlink/p/?linkId=202836). 
   
 ## <a name="private-branch-exchanges"></a>Centralini
 

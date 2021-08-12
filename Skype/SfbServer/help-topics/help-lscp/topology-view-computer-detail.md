@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 482d8d7b-d674-46b5-b8b7-19bc0f20e9b2
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: c0c7c4cda6bb0b20d2dd0ab4b85537d14bf8b896
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: a9e4cf348091b27ac3ae645c94a53dbc06e790f465d426497e264b240e47e661
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54331318"
 ---
 # <a name="topology-view-computer-detail"></a>Topologia: visualizzare dettagli computer
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Visualizzare un elenco di computer che eseguono Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-view-a-list-of-computers-running-lync-server-2013)
 

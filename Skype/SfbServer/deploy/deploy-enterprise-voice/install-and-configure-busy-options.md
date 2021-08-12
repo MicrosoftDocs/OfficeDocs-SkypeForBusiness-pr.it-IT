@@ -1,5 +1,5 @@
 ---
-title: Installare e configurare le opzioni di disponibilità per Skype for Business Server
+title: Installare e configurare opzioni di disponibilità per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,20 +15,20 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fb0faac8-ca1c-4abb-9959-d19def294c64
 description: Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
-ms.openlocfilehash: 04690e9f2c7fbf16b67432526fe5c8fd6e5b95af
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: aa7dc18d2c535b96cfca06a28aff85f8ab5bc738c4eef94babd9048450bfb897
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51106312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322398"
 ---
-# <a name="install-and-configure-busy-options-for-skype-for-business-server"></a>Installare e configurare le opzioni di disponibilità per Skype for Business Server
+# <a name="install-and-configure-busy-options-for-skype-for-business-server"></a>Installare e configurare opzioni di disponibilità per Skype for Business Server
 
 Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
 
 Opzioni occupato è un nuovo criterio vocale introdotto nell'aggiornamento cumulativo di luglio 2016 che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o inoltrate alla segreteria telefonica.
 
-Se per l'organizzazione è abilitata l'opzione Opzioni occupato, tutti gli utenti dell'organizzazione, sia VoIP aziendale che non VoIP aziendale, possono utilizzare le opzioni di configurazione seguenti:
+Se per l'organizzazione è abilitata l'opzione Opzioni occupato, tutti gli utenti del Enterprise, sia VoIP aziendale che non VoIP aziendale, possono utilizzare le opzioni di configurazione seguenti:
 
 - Occupato su occupato - In cui le nuove chiamate in arrivo verranno rifiutate con un segnale di occupato se l'utente è occupato.
 
@@ -36,11 +36,11 @@ Se per l'organizzazione è abilitata l'opzione Opzioni occupato, tutti gli utent
 
 Indipendentemente dalla configurazione delle opzioni di disponibilità, agli utenti di una chiamata o di una conferenza o a quelli con una chiamata in attesa non viene impedito di avviare nuove chiamate o conferenze.
 
-Per ulteriori informazioni sulla funzionalità Opzioni occupato, vedere [Plan for Busy Options for Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/busy-options.md)
+Per ulteriori informazioni sulla funzionalità Opzioni occupato, vedere [Plan for Busy Options for Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/busy-options.md).
 
 ## <a name="install"></a>Installare
 
-Assicurati di avere installato la versione più recente di Skype for Business Server e di aver installato la patch più recente. A tale scopo, arrestare prima tutti i servizi ed eseguire il programma di installazione dell'aggiornamento di Skype for Business Server come indicato di seguito:
+Assicurarsi di avere installato la versione più recente di Skype for Business Server e di aver installato la patch più recente. A tale scopo, arrestare prima tutti i servizi ed eseguire il programma di Skype for Business Server di aggiornamento nel modo seguente:
 
 1. Eseguire il Stop-CsWindowsService comando.
 
@@ -91,7 +91,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
    Update-CsAdminRole
    ```
 
-5. Infine, avviare i servizi di Windows di Skype for Business Server in tutti i Front End Server in tutti i pool in cui è stato installato e abilitato Opzioni occupato eseguendo il [comando Start-CsWindowsService:](/powershell/module/skype/start-cswindowsservice?view=skype-ps)
+5. Infine, avviare i Skype for Business Server Windows in tutti i Front End Server in tutti i pool in cui è stato installato e abilitato Opzioni occupato eseguendo il [comando Start-CsWindowsService:](/powershell/module/skype/start-cswindowsservice?view=skype-ps)
 
    ```powershell
    Start-CsWindowsService
@@ -154,4 +154,4 @@ ScriptName :
 Script     :
 </pre>
 
-È inoltre possibile utilizzare il Visualizzatore eventi di Windows per verificare che l'installazione delle opzioni occupato sia stata eseguita correttamente e che Skype for Business Server sia stato caricato correttamente. Per verificare le opzioni occupato, aprire Visualizzatore eventi - Registri applicazioni e servizi **\> - Skype \> (o Lync) Server** e cercare ID evento = 30253.
+È inoltre possibile utilizzare Windows visualizzatore eventi per verificare che l'installazione delle opzioni occupato sia stata eseguita correttamente e che Skype for Business Server le opzioni occupato siano state caricate correttamente. Per verificare le opzioni di occupato, aprire Visualizzatore eventi - Registri applicazioni e servizi **\> - Skype \> (o Lync) Server** e cercare ID evento = 30253.

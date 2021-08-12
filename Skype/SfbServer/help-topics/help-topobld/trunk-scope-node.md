@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6561236d-fe30-451d-ac74-7545eb98267a
 description: 'Fare clic con il pulsante destro del mouse su un trunk SIP esistente in Generatore di topologie per eseguire le operazioni seguenti:'
-ms.openlocfilehash: 05e64f5903f46c3f103ebbea88d17d2248e6db3d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6762b0e0b5d9d1ad983382b285c6a3f2a832261fafa22e3ade51a01f5f139486
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818046"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54346522"
 ---
 # <a name="trunk-scope-node"></a>Nodo dell'ambito del trunk
  
@@ -30,7 +30,7 @@ Fare clic con il pulsante destro del mouse su un trunk SIP esistente in Generato
     
 Oltre all'opzione Modifica proprietà, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti di Lync Server o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti di Lync Server o rimuovere la distribuzione.
     
 - **Elimina**. È possibile usare questa opzione per rimuovere l'elemento attualmente selezionato. Altre dipendenze possono impedire l'eliminazione. Una finestra di dialogo indicherà i servizi e le dipendenze che devono essere risolte per poter rimuovere l'elemento.
     

@@ -17,12 +17,12 @@ search.appverid: MET150
 description: ''
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 37bd749e44c2020d35a927491553662c74bff01f
-ms.sourcegitcommit: fa567451f8f7af6d915e33809d88f26b415db54c
+ms.openlocfilehash: 0b5aed539e7d32db7650bb1b9778c912d0065b411832337438c251177d88e809
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/08/2020
-ms.locfileid: "44610975"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54286065"
 ---
 # <a name="check-your-internet-connection-for-business-voice"></a>Controllare la connessione Internet per Business Voice
 
@@ -106,7 +106,7 @@ Il modo più semplice per verificare se il firewall consente la comunicazione tr
 
    * Se la chiamata si connette e si sente il messaggio, il firewall è configurato correttamente.
    * Se la chiamata si connette, ma non si sentono le istruzioni o il messaggio, verificare che gli altoparlanti e il microfono siano configurati correttamente e riprovare.
-   * Se la chiamata non si connette o se si connette ma non si sente il messaggio, potrebbe essere necessario aggiornare il firewall per autorizzare le porte di rete richieste. Consultare la documentazione del firewall o rivolgersi a un esperto IT per ricevere assistenza.
+   * Se la chiamata non si connette o se si connette ma non si sente il messaggio, potrebbe essere necessario aggiornare il firewall per autorizzare le porte di rete richieste. Verificare la documentazione firewall o contattare uno specialista IT per assistenza.
 
  Se si è un professionista IT e si vogliono ottenere altre informazioni su come preparare reti più grandi o complesse per supportare VoIP aziendale, vedere [Valutare l'ambiente](../3-envision-evaluate-my-environment.md). Questo articolo fornisce informazioni sui requisiti di larghezza di banda, proxy e firewall e su come usare lo [Strumento di valutazione della rete](../3-envision-evaluate-my-environment.md#test-the-network) per testare la rete.
 

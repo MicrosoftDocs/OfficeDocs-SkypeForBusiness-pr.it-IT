@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 5fb5b189-56c1-49cf-92c8-e4fd6e2fdd5c
 description: Informazioni su come configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015.
-ms.openlocfilehash: 02eda20ae9db1a623fd17534cce4fb9ef7963b05
+ms.openlocfilehash: 6579d9b6dfa8a2c9bed237cf98685137f229860a7fe4f338f3d994230516d353
 ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/05/2021
-ms.locfileid: "53772437"
+ms.locfileid: "54298586"
 ---
 # <a name="business-server-2015-configure-high-availability-and-disaster-recovery-for-persistent-chat-server"></a>Business Server 2015: Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente
  
