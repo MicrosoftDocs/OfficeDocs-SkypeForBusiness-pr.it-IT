@@ -1,5 +1,5 @@
 ---
-title: Numero di telefono non assegnato Crea nuovo o Modifica esistente
+title: Numero di Telefono non assegnato Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 58903e40-6b93-40d6-88f8-1201743cd9be
 description: I numeri non assegnati sono numeri di telefono validi per l'organizzazione ma non assegnati a un utente o un telefono. La tabella dei numeri non assegnati identifica come si desidera gestire le chiamata a numeri non assegnati.
-ms.openlocfilehash: c757be0b49638c39a9f20f83baf680508a907b20
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 13b2caaa8e7b364fa60ab32e6c62f982612121c4861197cd2b76597975c0ba50
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116184"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54313394"
 ---
 # <a name="unassigned-phone-number-create-new-or-edit-existing"></a>Numero di telefono non assegnato: crearne uno nuovo o modificarne uno esistente
 
@@ -43,7 +43,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - Il numero deve corrispondere all'espressione regolare `(tel:)?(\+)?[1-9]\d{0,17}(;ext=[1-9]\d{0,9})?` . Questo significa che il numero può iniziare con la stringa (se non si specifica tale stringa verrà aggiunta automaticamente), un segno più (+) e una cifra `tel:` da 1 a 9. Il numero di telefono può contenere fino a 17 cifre e può essere seguito da un interno nel formato ;ext= seguito dal numero dell'interno.
 
-- **Servizio annunci** Selezionare **Annuncio** per fare in modo che l'applicazione Annuncio gestirà la chiamata in arrivo o la messaggistica unificata di **Exchange** in modo che un Operatore automatico di messaggistica unificata di Exchange gestirà la chiamata in arrivo.
+- **Servizio annunci** Selezionare **Annuncio** per fare in modo  che l'applicazione Annuncio gestirà la chiamata Exchange messaggistica unificata per fare in modo che Exchange messaggistica unificata Operatore automatico gestire la chiamata in arrivo.
 
 - Se è stato selezionato **Annuncio** per **Servizio Annuncio**:
 
@@ -53,6 +53,6 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - Se è stata selezionata **Messaggistica unificata di Exchange** per **Servizio Annuncio**:
 
-  - **Operatore automatico numero di telefono** Selezionare il numero di telefono per il servizio di messaggistica unificata di Exchange Operatore automatico.
+  - **Operatore automatico numero di telefono** Selezionare il numero di telefono per il Exchange messaggistica unificata Operatore automatico.
 
 Per informazioni dettagliate sulle funzionalità e sulle funzionalità degli annunci, vedere [Plan for the Announcement application in Skype for Business 2015](../../plan-your-deployment/enterprise-voice-solution/announcement.md) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di intervalli di numeri non assegnati, vedere [Configure Routing of Unassigned Phone Numbers](/previous-versions/office/lync-server-2013/lync-server-2013-configure-unassigned-phone-numbers) nella documentazione relativa alle operazioni.

@@ -12,34 +12,34 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 946189fa-521f-455c-9762-904e7e41b791
-description: 'Riepilogo: leggere questo argomento per risolvere i problemi relativi alla distribuzione di Statistics Manager per Skype for Business Server.'
-ms.openlocfilehash: ea3d6f66003841e893ebe2dcc5d3fe02d0da125b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: leggere questo argomento per risolvere i problemi relativi alla distribuzione di Gestione statistiche per Skype for Business Server.'
+ms.openlocfilehash: 457790514cb769edce6deafc23857a59749b1102cf4c33206eac836d11c75c6a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49821776"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333208"
 ---
 # <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
  
-**Riepilogo:** Leggere questo argomento per risolvere i problemi relativi alla distribuzione di Statistics Manager per Skype for Business Server.
+**Riepilogo:** Leggere questo argomento per risolvere i problemi relativi alla distribuzione di Gestione statistiche per Skype for Business Server.
   
-In questo argomento viene descritto come risolvere i problemi relativi alla distribuzione di Gestione statistiche descrivendo gli eventi che potrebbero essere visualizzati nel registro eventi dell'applicazione e le azioni appropriate che è possibile intraprendere per rettificare l'evento. In questa sezione sono contenute le seguenti sezioni:
+In questo argomento viene descritto come risolvere i problemi relativi alla distribuzione di Gestione statistiche descrivendo gli eventi che potrebbero essere visualizzati nel registro eventi dell'applicazione e le azioni appropriate da eseguire per correggere l'evento. In questa sezione sono contenute le seguenti sezioni:
   
 - [Eventi agente](troubleshoot.md#BKMK_Agent)
     
 - [Eventi listener](troubleshoot.md#BKMK_Listener)
     
-- [Problemi relativi ai siti Web](troubleshoot.md#BKMK_Website)
+- [Problemi relativi al sito Web](troubleshoot.md#BKMK_Website)
     
 ## <a name="agent-events"></a>Eventi agente
 <a name="BKMK_Agent"> </a>
 
 - **1000** - Impossibile impostare il limitatore del processore (oggetto processo) - Motivo sconosciuto
     
-- **1001-** La limitazione dei processi non è consentita nel processo (probabilmente già all'interno di un oggetto processo)
+- **1001** - La limitazione dei processi non è consentita nel processo (probabilmente già all'interno di un oggetto processo)
     
-    L'agente viene eseguito all'interno di un oggetto processo Windows per limitare automaticamente il footprint di memoria. Se l'agente non viene avviato e queste voci di evento sono presenti nel registro eventi, non è possibile creare un'istanza dell'oggetto processo nel server. Per risolvere questo problema, è possibile rimuovere il limite di memoria superiore modificando un valore nel file di configurazione:
+    L'agente viene eseguito all'interno di un Windows processo per limitare automaticamente il footprint di memoria. Se l'agente non viene avviato e queste voci di evento sono presenti nel registro eventi, non è possibile creare un'istanza dell'oggetto processo nel server. Per risolvere questo problema, è possibile rimuovere il limite di memoria superiore modificando un valore nel file di configurazione:
     
   ```console
   C:\Program Files\Skype for Business Server StatsMan Agent\PerfAgent.exe.config
@@ -52,15 +52,15 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
   ```
 
     > [!NOTE]
-    > Se viene apportata questa modifica, l'agente in genere continuerà a utilizzare 100 MB di memoria, ma non sarà forzatamente limitato a \< 300 MB come predefinito. Se viene apportata questa modifica, è consigliabile monitorare attentamente l'utilizzo della memoria per assicurarsi che l'agente non utilizzi una grande quantità di memoria nel computer host. 
+    > Se questa modifica viene apportata, l'agente in genere continuerà a utilizzare 100 MB di memoria, ma non sarà forzatamente limitata a 300 MB come è \< l'impostazione predefinita. Se viene apportata questa modifica, è consigliabile monitorare attentamente l'utilizzo della memoria per garantire che l'agente non utilizzi una grande quantità di memoria nel computer host. 
   
 - **2000** - Errore di inizializzazione del client
     
-- **2001**- Non è stato possibile stabilire alcuna connessione al servizio in qualsiasi IP di origine
+- **2001-** Non è stato possibile stabilire alcuna connessione al servizio in un IP di origine
     
-    Se l'agente non riesce a connettersi al computer listener, controllare quanto segue:
+    Se l'agente non è in grado di connettersi al computer listener, verificare quanto segue:
     
-    1. Verificare che il servizio listener sia in esecuzione nel computer listener. In caso contrario, verificare che Redis sia in esecuzione su tale server e quindi riavviare il servizio listener.
+    1. Verificare che il servizio Listener sia in esecuzione nel computer listener. In caso contrario, verificare che Redis sia in esecuzione sul server e quindi riavviare il servizio Listener.
         
         Controllare il registro eventi di Gestione statistiche nel computer listener per verificare che non vi siano problemi con il servizio Listener di Gestione statistiche stesso.
         
@@ -74,34 +74,34 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
     Questo errore si verifica se il server si connette correttamente al listener, ma il server non è stato aggiunto alla topologia nella cache del listener. Opzioni di risoluzione:
     
-  - Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Importare la topologia.](deploy.md#BKMK_ImportTopology) 
+  - Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology). 
     
-  - Se l'agente si trova in un server non elencato nella topologia (ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere l'agente manualmente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia.
+  - Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere l'agente manualmente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
     
   - **4002** - Password listener non valida
     
     La password crittografata che l'agente sta tentando di utilizzare non corrisponde alla password del servizio nel listener stesso. Disinstallare l'agente e reinstallarlo utilizzando la password del servizio corretta.
     
-  - **4003** - Certificate Thumbprint Mismatch
+  - **4003** - Identificazione personale certificato non corrispondente
     
-    L'identificazione personale del certificato data all'agente al momento dell'installazione non corrisponde all'identificazione personale nel certificato attualmente utilizzato dal listener e pertanto la connessione verrà rifiutata. Disinstallare l'agente e reinstallarlo utilizzando l'identificazione personale del certificato corretta.
+    L'identificazione personale del certificato assegnato all'agente al momento dell'installazione non corrisponde all'identificazione personale nel certificato attualmente utilizzato dal listener e pertanto la connessione verrà rifiutata. Disinstallare l'agente e reinstallarlo utilizzando l'identificazione personale del certificato corretta.
     
   - **4004** - Risposta non valida o HttpStatusCode
     
     Il listener non risponde con uno stato previsto. 
     
-  - Se la connessione è proxy, controlla la configurazione del proxy.
+  - Se la connessione è proxy, controllare la configurazione del proxy.
     
-  - Controllare il registro StatsMan del computer listener per verificare la presenza di problemi di configurazione.
+  - Controllare il registro StatsMan del computer listener per eventuali problemi di configurazione.
     
   - **4005** - Impossibile de-serializzare il codice XML
     
-    Le informazioni sul server nel server listener sono danneggiate o potrebbe esserci una mancata corrispondenza di versione tra l'agente e i computer listener. Verificare che le versioni corrispondano e controllare la presenza di problemi nel registro eventi del listener.
+    Le informazioni sul server nel server Listener sono danneggiate o potrebbe esserci una mancata corrispondenza di versione tra l'agente e i computer listener. Verificare che le versioni corrispondano e controllare se nel registro eventi listener sono disponibili problemi.
     
 ## <a name="listener-events"></a>Eventi listener
 <a name="BKMK_Listener"> </a>
 
-- **10000** - Errore di avvio Motivo sconosciuto (irreversibile e il servizio si arresta/arresta in modo anomalo di conseguenza)
+- **10000** - Errore di avvio Motivo sconosciuto (irreversibile e il servizio si arresterà/arresterà in modo anomalo di conseguenza)
     
   - **10001** - Problema di configurazione
     
@@ -109,35 +109,35 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - **10002** - Errore di inizializzazione del listener HTTP
     
-    Questo evento viene in genere registrato quando l'elenco di controllo di accesso url non è stato impostato correttamente durante l'installazione o il certificato SSL non è valido. Verificare che il certificato nella configurazione sia valido. In caso contrario, reinstallare il listener in base alle istruzioni in [Deploy Statistics Manager.](deploy.md#BKMK_Deploy)
+    Questo evento viene in genere registrato quando l'elenco di controllo di accesso url non è stato impostato correttamente durante l'installazione o il certificato SSL non è valido. Verificare che il certificato nella configurazione sia valido. In caso contrario, reinstallare il listener in base alle istruzioni riportate in [Deploy Statistics Manager.](deploy.md#BKMK_Deploy)
     
-  - **10003** - Errore Redis
+  - **10003** - Errore redis
     
-  - **10004** - Errore dell'infrastruttura di memorizzazione nella cache
+  - **10004** : errore Caching'infrastruttura
     
-  - **10007** - Impostazioni (archiviate in redis)
+  - **10007** — Impostazioni (archiviato in redis)
     
     Il listener non è stato in grado di contattare Redis o recuperare dati ben formati dalla cache e non è stato possibile avviarsi. Verificare che il servizio Redis sia avviato e configurato correttamente nel server.
     
   - **10005** - Recupero/analisi delle informazioni sul server
     
-    Le informazioni sulla topologia nella cache Redis non sono valide. Prima di tutto, tenta di riavviare Redis e il listener. Se l'errore persiste, vedere [Importare la topologia per](deploy.md#BKMK_ImportTopology) ricreare i dati della topologia.
+    Le informazioni sulla topologia nella cache di Redis non sono valide. Prima di tutto, tenta di riavviare Redis e listener. Se l'errore persiste, vedere [Import the topology](deploy.md#BKMK_ImportTopology) to recreate the topology data.
     
-- **10100** - Interruzione del PING di Redis
+- **10100** - Interruzione ping redis
     
   - **10101** - Interruzione continuata di Redis PING (ogni 60 secondi)
     
-  - **30100** - Redis PING outage restored
+  - **30100** - Ripristino dell'interruzione del PING di Redis
     
-    Questi verranno registrati quando il listener non è in grado di connettersi a Redis. Assicurati che Redis sia avviato e che la connettività di rete tra Listener e Redis sia disponibile.
+    Questi verranno registrati quando il listener non è in grado di connettersi a Redis. Verificare che Redis sia avviato e che sia disponibile la connettività di rete tra Listener e Redis.
     
-- **10200** - Interruzione della scrittura di Redis
+- **10200** - Redis Write outage
     
-  - **10201** - Interruzione di Redis Write continua (ogni 60 secondi)
+  - **10201** - Continua l'interruzione di Redis Write (ogni 60 secondi)
     
-  - **30100** - Risoluzione dell'interruzione della scrittura di Redis
+  - **30100** - Risoluzione dell'interruzione di Redis Write
     
-    Questi verranno registrati quando il listener non è in grado di scrivere nella cache Redis. Assicurati che Redis sia avviato e che la connettività di rete tra Listener e Redis sia disponibile.
+    Questi verranno registrati quando il listener non è in grado di scrivere nella cache di Redis. Verificare che Redis sia avviato e che sia disponibile la connettività di rete tra Listener e Redis.
     
 - **30000** - Avviato correttamente
     
@@ -145,28 +145,28 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
 - **22000-** Inizializzazione dell'agente di gestione delle statistiche completata.
     
-- **23000** - Inizializzazione di EventLogQueryManager completata (prima volta o dopo un errore)
+- **23000** - Inizializzazione di EventLogQueryManager riuscita (prima volta o dopo un errore)
     
 - **24000** - Inizializzazione di serverinfo completata (prima volta o dopo un errore)
     
-- **25000** - Listener è di nuovo online dopo la mancata pubblicazione (o il primo post riuscito)
+- **25000** - Listener tornato online dopo la mancata pubblicazione (o il primo post riuscito)
     
-- **5000** - Inizio del listener offline per l'inserimento di dati
+- **5000** - Inizio del listener offline per la pubblicazione dei dati
     
 - **5001** - Listener ancora offline per un periodo prolungato
     
-    Questi eventi possono essere utili per il monitoraggio,l'avviso/la cancellazione dei problemi.
+    Questi eventi possono essere utili per i problemi di monitoraggio/avviso/cancellazione.
     
-## <a name="website-issues"></a>Problemi relativi ai siti Web
+## <a name="website-issues"></a>Problemi relativi al sito Web
 <a name="BKMK_Website"> </a>
 
-- Richieste di accesso ripetitive in Chrome: si tratta di un bug risolto nella versione 1.1. Assicurarsi di aver eseguito l'aggiornamento all'ultima versione di Gestione statistiche se vengono visualizzate richieste di accesso ripetute nel browser Chrome. Per verificare la versione del sito Web in esecuzione:
+- Richieste di accesso ripetitive in Chrome: si tratta di un bug risolto nella versione 1.1. Assicurati di aver eseguito l'aggiornamento alla versione più recente di Gestione statistiche se nel browser Chrome vengono visualizzate richieste di accesso ripetute. Per verificare la versione del sito Web in esecuzione:
     
   - In Esplora file apri (directory predefinita)
     
-  - Fai clic con il StatsManHubWebSite.dll clic con il pulsante destro del mouse e visualizzane le proprietà.
+  - Fai clic con il pulsante destro del StatsManHubWebSite.dll e visualizzane le proprietà.
     
-  - Se non è possibile trovare un computer nella visualizzazione KHI Orizzontale o Dettagli contatore, verificare che sia membro di un sito e di un pool. In caso contrario, non verrà visualizzato in tali visualizzazioni. Per informazioni sulla definizione di un sito e di un pool per un server nella topologia, vedere [Import the topology.](deploy.md#BKMK_ImportTopology)
+  - Se non è possibile trovare un computer nella visualizzazione KHI Orizzontale o Dettagli contatore, verificare che sia membro di un sito e di un pool. In caso contrario, non verrà visualizzato in tali visualizzazioni. Per informazioni sulla definizione di un sito e di un pool per un server nella topologia, vedere [Import the topology](deploy.md#BKMK_ImportTopology).
     
   - La versione del prodotto verrà visualizzata nei dettagli della descrizione.
     

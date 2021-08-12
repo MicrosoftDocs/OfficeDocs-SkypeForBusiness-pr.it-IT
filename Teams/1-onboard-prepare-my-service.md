@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 42ded974ba5f4400bdcb5796410a8277fbed4488
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a8aa2818cb2b4be85054f8804fa6a11112c4e8a68cc171e9b9f7191e3f3a5bfd
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322918"
 ---
 # <a name="prepare-my-service"></a>Preparare il servizio
 
@@ -56,7 +56,7 @@ Anche se è consigliabile seguire gli elenchi di controllo nell'ordine indicato,
 Quando si esegue l'onboarding degli utenti in base al sito, è consigliabile usare il Playbook di abilitazione del sito per la voce [(Playbook)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/site-enablement-playbook-for-voice-(playbook).xlsx?raw=true) come guida supplementare a questi elenchi di controllo.
 
 >[!NOTE]
->La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business Online. Usare l'interfaccia Microsoft 365 e l'Microsoft Teams di amministrazione per configurare queste impostazioni.
+>La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business Online. Usare l'interfaccia Amministrazione Microsoft 365 e Microsoft Teams di amministrazione per configurare queste impostazioni.
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Who sarà responsabile della supervisione del completamento degli elenchi di controllo per l'onboarding?</li></ul></td></tr>

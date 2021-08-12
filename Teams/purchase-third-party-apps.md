@@ -16,12 +16,12 @@ description: Informazioni su come acquistare app di terze parti per Teams nell'M
 appliesto:
 - Microsoft Teams
 localization_priority: Normal
-ms.openlocfilehash: 57530ec952b6bbe806e685d0980fcee3a21d1887
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: dc46ea58421901a4d11f20160c2e9528a5311794bb084291c3c72e5e006ddc18
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117684"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285655"
 ---
 <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
 ======================================================
@@ -59,7 +59,7 @@ Dopo aver acquistato l'offerta SaaS associata all'app Teams, è possibile  visua
 
 :::image type="content" source="media/purchase-third-party-apps-details-page.png" alt-text="Screenshot della scheda Piani e prezzi della pagina dei dettagli dell'app":::
 
-Selezionare **Gestisci licenze** per passare all'Microsoft 365 di amministrazione per visualizzare e gestire le licenze acquistate e per gestire le assegnazioni di licenze per gli utenti.
+Selezionare **Gestisci licenze** per passare al interfaccia di amministrazione di Microsoft 365 per visualizzare e gestire le licenze acquistate e per gestire le assegnazioni delle licenze per gli utenti.
 
 Gli amministratori globali possono visualizzare gli acquisti effettuati da chiunque nell'organizzazione, mentre Teams gli amministratori dei servizi possono visualizzare solo gli acquisti effettuati da soli.  
 

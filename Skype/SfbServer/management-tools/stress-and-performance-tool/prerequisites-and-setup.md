@@ -1,5 +1,5 @@
 ---
-title: Prerequisiti e configurazione dello strumento Skype for Busines Stress and Performance
+title: Prerequisiti e configurazione per lo strumento Skype per Busines Stress and Performance Tool
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,18 +14,18 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 948c176c-75ce-418d-891a-a68427d61e40
 description: Requisiti o prerequisiti per lo strumento Skype for Business Server 2015 Stress and Performance. Come installare o configurare lo strumento Stress and Performance.
-ms.openlocfilehash: a58eb5e291878bea74365cd1b9519983c7a77a84
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 947cc43f68fc4d3140f664fbeb554096fcbb5cfb8c13d7354bc937af93812e93
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49814956"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333148"
 ---
-# <a name="prerequisites-and-setup-for-the-skype-for-busines-stress-and-performance-tool"></a>Prerequisiti e configurazione dello strumento Skype for Busines Stress and Performance
+# <a name="prerequisites-and-setup-for-the-skype-for-busines-stress-and-performance-tool"></a>Prerequisiti e configurazione per lo strumento Skype per Busines Stress and Performance Tool
  
 Requisiti o prerequisiti per lo strumento Skype for Business Server 2015 Stress and Performance. Come installare o configurare lo strumento Stress and Performance.
   
-Sono disponibili le sezioni seguenti dei requisiti hardware, software e di configurazione del sistema di cui è necessario essere a conoscenza prima di eseguire lo strumento Stress and Performance:
+Sono disponibili le sezioni seguenti dei requisiti di configurazione hardware, software e di sistema di cui è necessario tenere conto prima di eseguire lo strumento Stress and Performance:
   
 - [Requisiti hardware client](prerequisites-and-setup.md#ClientHardwareReqs)
     
@@ -33,18 +33,18 @@ Sono disponibili le sezioni seguenti dei requisiti hardware, software e di confi
     
 - [Requisiti di configurazione](prerequisites-and-setup.md#ConfigReqs)
     
-Inoltre, di seguito è disponibile una sezione per l'installazione dello strumento [Skype for Business Server 2015 Stress and Performance](prerequisites-and-setup.md#Installing)
+Inoltre, abbiamo anche una sezione seguente per l'installazione dello strumento [Skype for Business Server 2015 Stress and Performance Tool](prerequisites-and-setup.md#Installing)
   
 ## <a name="client-hardware-requirements"></a>Requisiti hardware client
 <a name="ClientHardwareReqs"> </a>
 
-Quando si esegue lo strumento Stress and Performance sulla distribuzione di Skype for Business Server 2015, è necessario soddisfare almeno questi requisiti hardware ogni 4500 utenti nel test:
+Quando si esegue lo Strumento stress e prestazioni nella distribuzione di Skype for Business Server 2015, è necessario soddisfare almeno questi requisiti hardware per ogni 4500 utenti nel test:
   
-- Scheda di rete a 1 gigabit
+- Scheda di rete da 1 gigabit
     
 - 8 GB di RAM
     
-- 2 CPU dual core
+- 2 CPU dual-core
     
 ## <a name="client-software-requirements"></a>Requisiti software client
 <a name="ClientSoftwareReqs"> </a>
@@ -57,11 +57,11 @@ I sistemi operativi supportati per lo strumento Stress and Performance Sono:
     
 Inoltre, i computer devono soddisfare i requisiti software seguenti:
   
-- È necessario che sia installato Microsoft .NET 4.5 Framework. [Scaricare .Net 4.5 Framework qui.](https://www.microsoft.com/download/details.aspx?id=30653)
+- È necessario che sia installato Microsoft .NET 4.5 Framework. [Scarica .Net 4.5 Framework qui.](https://www.microsoft.com/download/details.aspx?id=30653)
     
 - È necessario che la funzionalità Esperienza desktop sia abilitata in Windows.
     
-- È necessario che sia installato Microsoft Visual C++ 2013 (x64). [Scarica Visual C++ 2013 qui](https://www.microsoft.com/download/details.aspx?id=40784)
+- Sarà necessario installare Microsoft Visual C++ 2013 (x64). [Scaricare Visual C++ 2013 qui](https://www.microsoft.com/download/details.aspx?id=40784)
     
 - You're going to need Skype for Business Server 2015 successfully deployed.
     
@@ -70,19 +70,19 @@ Inoltre, i computer devono soddisfare i requisiti software seguenti:
 
 Per eseguire correttamente lo strumento Stress and Performance, sono necessarie queste configurazioni aggiuntive:
   
-- È necessario accedere al server come membro del gruppo Domain o Local Administrator.
+- È necessario accedere al server come membro del gruppo Domain o Local Administrator.You need to log into the server as a member of the Domain or Local Administrator's group.
     
-- Non è possibile installare lo strumento di creazione utenti di Skype for Business Server 2015 (UserProvisioningTool.exe) in alcun Front End Server o server Standard Edition in cui risiederanno gli account utente.
+- Non è possibile installare lo strumento Skype for Business Server 2015 User Creation (UserProvisioningTool.exe) in un Front End Server o in un server edizione Standard in cui risiederanno gli account utente.
     
 - Quando lo strumento creazione utenti viene eseguito più volte, ogni utente abilitato per le comunicazioni unificate Microsoft deve disporre di un numero di telefono univoco.
     
-- Le dimensioni del file di pagina devono essere gestite dal sistema o in altro modo devono essere almeno 1,5 volte la quantità di RAM nel sistema del computer.
+- Le dimensioni del file di pagina devono essere gestite dal sistema o in caso contrario devono essere almeno 1,5 volte la quantità di RAM nel sistema computer.
     
 ## <a name="installing-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Installazione dello strumento Skype for Business Server 2015 Stress and Performance
 <a name="Installing"> </a>
 
-L'installazione non può essere più semplice. È necessario eseguire il file di Windows **Installer,CapacityPlanningTool.msi,** in ogni computer client che si userà per simulare il traffico degli utenti e in un Front End Server in ogni pool in cui verranno creati utenti e contatti.
+L'installazione non potrebbe essere più semplice. È necessario eseguire il file del programma di installazione **di Windows,CapacityPlanningTool.msi**, in ogni computer client che si utilizzerà per simulare il traffico degli utenti e in un Front End Server in ogni pool in cui verranno creati utenti e contatti.
   
-To download the .msi, along with the sample scripts mentioned in our other articles, go to the Download Center link: [Skype for Business Server 2015, Stress and Performance Tool.](https://www.microsoft.com/download/details.aspx?id=50367)
+Per scaricare il .msi, insieme agli script di esempio menzionati negli altri articoli, passare al collegamento Area download: [Skype for Business Server 2015, Stress and Performance Tool](https://www.microsoft.com/download/details.aspx?id=50367).
   
 

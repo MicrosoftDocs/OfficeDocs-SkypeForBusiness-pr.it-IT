@@ -15,18 +15,18 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0357f230-6d0c-41f1-942c-e14f76e55d31
 description: "Per verificare che l'estensione dello schema sia stata replicata correttamente nella foresta di Servizi di dominio Active Directory, eseguire le operazioni seguenti:"
-ms.openlocfilehash: db30087e6b996b70fe97e3249c1bf2eaa97a694c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 315a37267b2bdcae89c098858aa9419eff262c46b7cd37c39799dd5642d2a295
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49800546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54284996"
 ---
 # <a name="verify-replication-of-schema-partition"></a>Verificare la replica della partizione dello schema
  
 Per verificare che l'estensione dello schema sia stata replicata correttamente nella foresta di Servizi di dominio Active Directory, eseguire le operazioni seguenti:
   
-1. Accedere a un controller di dominio (diverso dal controller di dominio che contiene il ruolo master schema) nella foresta di Servizi di dominio Active Directory, in cui le estensioni dello schema sono state applicate come membri del gruppo Enterprise Admins.
+1. Accedere a un controller di dominio (diverso dal controller di dominio che contiene il ruolo di master schema) nella foresta di Servizi di dominio Active Directory, in cui le estensioni dello schema sono state applicate come membri del gruppo Enterprise Admins.
     
 2. Aprire ADSI Edit: fare clic sul pulsante **Start**, scegliere **Strumenti di amministrazione**, quindi **ADSI Edit**.
     
@@ -42,6 +42,6 @@ Per verificare che l'estensione dello schema sia stata replicata correttamente n
 6. Nel contenitore Schema individuare la voce CN=ms-RTC-SIP-SchemaVersion. Se questo oggetto è presente e il valore dell'attributo **rangeUpper** è 1150 e il valore dell'attributo **rangeLower** è 3, lo schema è stato aggiornato e replicato correttamente. Se l'oggetto non è presente o i valori degli attributi **rangeUpper** e **rangeLower** sono diversi da quelli specificati, lo schema non è stato modificato né replicato.
     
 > [!NOTE]
-> Se dalla verifica della replica dello schema ancora non risulta un esito positivo, attendere circa 15 minuti e quindi ripetere la verifica. La replica di Active Directory si basa su un modello di coerenza e può verificarsi una certa latenza di replica, in base a una serie di fattori nel server e nell'infrastruttura. 
+> Se dalla verifica della replica dello schema ancora non risulta un esito positivo, attendere circa 15 minuti e quindi ripetere la verifica. La replica di Active Directory si basa su un modello di coerenza lento e può verificarsi una certa latenza di replica, in base a una serie di fattori nel server e nell'infrastruttura. 
   
 

@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 48fedc9050b397e3c14f76a240e34f192b9d7565
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b7801e2a80f65e90a26cd99124047f229c04222a8b4d846acf53bd46a9d8510f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116890"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285665"
 ---
 # <a name="optimize-feedback-and-reporting-for-your-microsoft-teams-adoption"></a>Ottimizzare il feedback e la creazione di report per l'adozione Microsoft Teams utenti
 
-Assicurarsi di ricevere segnali dal servizio e dai dipendenti seguendo le procedure consigliate per il feedback degli utenti e la segnalazione dell'integrità dei servizi.  In alcuni casi, potrebbero essere necessari diritti di amministratore per accedere a determinati report sull'utilizzo e l'integrità dei servizi. Se non si è l'amministratore Microsoft 365 o Office 365 dell'organizzazione, collaborare con tale persona per ottenere il ruolo di lettore di report nell'interfaccia di amministrazione di Microsoft 365 per accedere ad alcuni di questi dati.
+Assicurarsi di ricevere segnali dal servizio e dai dipendenti seguendo le procedure consigliate per il feedback degli utenti e la segnalazione dell'integrità dei servizi.  In alcuni casi, potrebbero essere necessari diritti di amministratore per accedere a determinati report sull'utilizzo e l'integrità dei servizi. Se non si è l'amministratore Microsoft 365 o Office 365 dell'organizzazione, collaborare con tale persona per ottenere il ruolo di lettore di report nel interfaccia di amministrazione di Microsoft 365 per accedere ad alcuni di questi dati.
 
 ## <a name="incorporating-feedback"></a>Incorporare feedback 
 

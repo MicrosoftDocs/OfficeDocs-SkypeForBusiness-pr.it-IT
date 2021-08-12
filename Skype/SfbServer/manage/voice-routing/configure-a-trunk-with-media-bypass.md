@@ -1,5 +1,5 @@
 ---
-title: Configurare un trunk con bypass multimediale in Skype for Business Server
+title: Skype for Business Server - Configurare un trunk con bypass multimediale
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,25 +10,25 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: 'Seguire questa procedura per configurare un trunk con bypass multimediale abilitato. '
-ms.openlocfilehash: 861a57c50aa7092bf654fb626d4f1e94e3b3449539d33ead72b4925f8b102f4f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Come configurare un trunk con bypass multimediale abilitato. "
+ms.openlocfilehash: 51456576091c1d9dba88aceec7835fb2a86e53cb8983631341c5ab8b8f4c3c23
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349248"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849961"
 ---
-# <a name="configure-a-trunk-with-media-bypass-in-skype-for-business-server"></a>Configurare un trunk con bypass multimediale in Skype for Business Server
+# <a name="skype-for-business-server---configure-a-trunk-with-media-bypass"></a>Skype for Business Server - Configurare un trunk con bypass multimediale 
 
 Seguire questa procedura per configurare un trunk con bypass multimediale abilitato. Per configurare un trunk con bypass multimediale disabilitato, vedere [Configure a trunk without media bypass in Skype for Business Server](configure-a-trunk-without-media-bypass.md). La funzionalità bypass multimediale è utile se si desidera ridurre il numero dei Mediation Server distribuiti. Un pool Mediation Server viene in genere distribuito in un sito centrale e controlla i gateway nei siti di succursale. Abilitando il bypass multimediale, gli elementi multimediali per chiamate PSTN da client dei siti di succursale possono attraversare direttamente i gateway di tali siti. Skype for Business Server le route delle chiamate in uscita e i criteri VoIP aziendale devono essere configurati correttamente in modo che le chiamate PSTN provenienti dai client di un sito di succursale siano instradati al gateway appropriato.
 
-Ti consigliamo vivamente di abilitare il bypass multimediale. Tuttavia, prima di abilitare il bypass multimediale in un trunk SIP, verificare che il provider trunk SIP qualificato supporti il bypass multimediale e sia in grado di soddisfare i requisiti per la corretta abilitazione dello scenario. In particolare, il provider deve disporre degli indirizzi IP dei server nella rete interna dell'organizzazione. Se il provider non è in grado di supportare questo scenario, non sarà possibile utilizzare il bypass multimediale. Per informazioni dettagliate, vedere [Plan for media bypass in Skype for Business](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).
+Ti consigliamo vivamente di abilitare il bypass multimediale. Tuttavia, prima di abilitare il bypass multimediale in un trunk SIP, verificare che il provider di trunk SIP qualificato supporti il bypass multimediale e sia in grado di soddisfare i requisiti per la corretta abilitazione dello scenario. In particolare, il provider deve disporre degli indirizzi IP dei server nella rete interna dell'organizzazione. Se il provider non è in grado di supportare questo scenario, non sarà possibile utilizzare il bypass multimediale. Per informazioni dettagliate, vedere [Plan for media bypass in Skype for Business](../../plan-your-deployment/enterprise-voice-solution/media-bypass.md).
 
 > [!NOTE]
-> Il bypass multimediale non interagisce con ogni gateway PSTN (Public Switched Telephone Network), IP-PBX e Session Border Controller (SBC). Microsoft ha testato un set di gateway PSTN e SBC con partner certificati ed ha eseguito alcuni test con IP-PBC Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati nella pagina [Infrastruttura di telefonia per Skype for Business Server.](../../../SfbPartnerCertification/certification/infra-gateways.md) 
+> Il bypass multimediale non interagisce con ogni gateway PSTN (Public Switched Telephone Network), IP-PBX e Session Border Controller (SBC). Microsoft ha testato un set di gateway PSTN e SBC con partner certificati ed ha eseguito alcuni test con IP-PBC Cisco. Il bypass multimediale è supportato solo con i prodotti e le versioni elencati nella pagina [Infrastruttura di telefonia Skype for Business Server.](../../../SfbPartnerCertification/certification/infra-gateways.md) 
 
 
-Una configurazione trunk come descritto di seguito raggruppa un set di parametri che vengono applicati ai trunk assegnati a questa configurazione trunk. Per una determinata configurazione trunk è possibile specificare un ambito globale (corrispondente a tutti i trunk che non presentano una configurazione di sito o di pool più specifica) o un ambito di sito o di pool. La configurazione trunk a livello di pool viene usata per definire un singolo trunk come ambito di una determinata configurazione trunk.
+Una configurazione trunk come descritto di seguito raggruppa un set di parametri che vengono applicati ai trunk a cui è assegnata questa configurazione trunk. Per una determinata configurazione trunk è possibile specificare un ambito globale (corrispondente a tutti i trunk che non presentano una configurazione di sito o di pool più specifica) o un ambito di sito o di pool. La configurazione trunk a livello di pool viene usata per definire un singolo trunk come ambito di una determinata configurazione trunk.
 
 **Per configurare un trunk con bypass multimediale**
 
@@ -92,14 +92,14 @@ Una configurazione trunk come descritto di seguito raggruppa un set di parametri
 11. Organizzare i record utilizzo PSTN in modo da ottenere prestazioni ottimali. Per modificare la posizione di un record nell'elenco, selezionare il record utilizzo PSTN e fare clic sulle frecce verso l'alto o verso il basso.
 
     > [!Important]
-    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server attraversa l'elenco dall'alto verso il basso. 
+    > L'ordine in cui i record utilizzo PSTN sono elencati nella configurazione trunk è significativo. Skype for Business Server l'elenco dall'alto verso il basso. 
 
-12. **Abilita latch RTP** deve essere selezionato per abilitare i supporti di bypass per i client dietro un NAT (Network Address Translation) o un firewall e un SBC che supporta latching.
+12. È necessario selezionare Abilita **latch RTP** per abilitare i supporti di bypass per i client dietro un NAT (Network Address Translation) o un firewall e un SBC che supporta il latching.
 13. **Per abilitare l'invio** delle informazioni sulla cronologia delle chiamate al peer gateway del Mediation Server, è necessario selezionare Abilita cronologia chiamate di inoltro.
 14. Abilitare l'inoltro dei dati **P-Asserted-Identity** per consentire l'inoltro delle informazioni sull'autore delle chiamate PAI (P-Asserted-Identity) tra il lato Mediation Server e il lato gateway (e viceversa), se presenti.
 15. Per abilitare il failover rapido, selezionare **Abilita timer di failover del routing in uscita**. Il gateway associato a questo trunk può inviare una notifica entro 10 secondi dall'inizio dell'elaborazione di una chiamata in uscita. Se questa notifica non viene ricevuta dal Mediation Server, si verificherà il reindirizzamento a un altro trunk. Nelle reti in cui la latenza potrebbe ritardare il tempo di risposta o il gateway impiega più di 10 secondi per rispondere, è consigliabile disabilitare il failover rapido.
 16. (Facoltativo) Associare e configurare le **Regole di conversione per il numero del chiamante** per il trunk. Queste regole di conversione si applicano al numero chiamante per le chiamate in uscita.
-    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona.** In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
     - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
     - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
@@ -108,7 +108,7 @@ Una configurazione trunk come descritto di seguito raggruppa un set di parametri
     > Non associare regole di conversione a un trunk se nel peer trunk associato sono già configurate regole di conversione, poiché potrebbe verificarsi un conflitto tra le due regole. 
 
 17. (Facoltativo) Associare e configurare le **Regole di conversione per il numero chiamato** per il trunk. Tali regole sono applicabili al numero chiamato in una chiamata in uscita.
-    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona.** In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulla definizione di una nuova regola, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
     - Per modificare una regola di conversione già associata al trunk, fare clic sul nome della regola e quindi su **Mostra dettagli**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).
     - Per copiare una regola di conversione esistente in modo da usarla come punto di partenza per definire una nuova regola, fare clic sul nome della regola, su **Copia** e quindi su **Incolla**. Per informazioni dettagliate, vedere [Defining translation rules in Skype for Business Server](defining-translation-rules.md).

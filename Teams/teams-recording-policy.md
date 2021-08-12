@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: df8a0f5b33bbea100b0303d224d7ba50946c6e5b
-ms.sourcegitcommit: 56bebf42f545af57fdf387faa90e555abc8acd40
+ms.openlocfilehash: 2b0f5fb378287d820762b66375d86903b9e89cebdd74378b302f62bf121fc1c5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/18/2021
-ms.locfileid: "52513879"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285635"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione Teams basata su criteri per le chiamate & riunioni
 
@@ -40,7 +40,7 @@ Teams è stato migliorato per supportare l'integrazione di soluzioni di registra
 
 - Nuovi criteri amministrativi per la registrazione della conformità, inclusa l'integrazione con le Teams per le chiamate amministrative e gli strumenti e i criteri per le riunioni
 
-La registrazione della conformità può essere abilitata Microsoft 365 utenti A3/A5/E3/E5/Business Premium e Office 365 A3/A5/E3/E5. 
+La registrazione della conformità può essere abilitata per gli utenti Microsoft 365 A3/A5/E3/E5/Business Premium e Office 365 A3/A5/E3/E5. 
 
 Le funzionalità di integrazione della soluzione di registrazione della conformità sono state esaminate anche in Ignite 2019 nella sessione registrazione e Microsoft Teams [conformità.](https://myignite.microsoft.com/archives/IG19-VCE40)
 

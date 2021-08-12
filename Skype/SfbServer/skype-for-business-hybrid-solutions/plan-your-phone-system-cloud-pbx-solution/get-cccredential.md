@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b2b5aefb-a08d-4bec-9204-76597d413849
-description: Il cmdlet Get-CcCredential restituisce le credenziali della distribuzione corrente di Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: c4e2d47ffc31eb7afef76c710fc93024ce2c593e
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Get-CcCredential restituisce le credenziali della distribuzione Skype for Business Cloud Connector Edition corrente.
+ms.openlocfilehash: 277062068c6e5e630fd22cd1bd4c6dbfb873db1cb90b915424aa6e3a3eb6ce50
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41800396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322888"
 ---
 # <a name="get-cccredential"></a>Get-CcCredential
  
-Il cmdlet Get-CcCredential restituisce le credenziali della distribuzione corrente di Skype for Business Cloud Connector Edition. 
+Il cmdlet Get-CcCredential restituisce le credenziali della distribuzione Skype for Business Cloud Connector Edition corrente. 
   
 Con la versione 2.0 e successive, è anche possibile utilizzare il parametro -DisplayPassword per visualizzare le password per TenantAdmin, DomainAdmin e VMAdmin.
   
@@ -44,7 +44,7 @@ Get-CcCredential -AccountType DomainAdmin
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il Get-CcCredential cmdlet restituisce le informazioni sulle credenziali relative al tipo di account specificato. Queste credenziali vengono specificate dall'amministratore che esegue i cmdlet Register-CcAppliance e Install-CcAppliance durante la distribuzione dell'appliance corrente. 
+Il cmdlet Get-CcCredential restituisce le informazioni sulle credenziali relative al tipo di account specificato. Queste credenziali vengono specificate dall'amministratore che esegue i cmdlet Register-CcAppliance e Install-CcAppliance durante la distribuzione dell'appliance corrente. 
   
 Il cmdlet Get-CcCredential restituisce un'istanza dell'oggetto System.Management.Automation.PSCredential. La proprietà password dell'oggetto restituito è System.Security.SecureString.
   

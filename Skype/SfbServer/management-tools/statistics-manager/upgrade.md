@@ -12,21 +12,21 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 71f5d0a0-ca81-4ac1-b590-8f854504f21f
-description: "Riepilogo: leggere questo argomento per informazioni sull'aggiornamento di Statistics Manager per Skype for Business Server."
-ms.openlocfilehash: 6f2f0b885faad7bd650b3ff90650b64af98e9eee
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: leggere questo argomento per informazioni su come aggiornare Gestione statistiche per Skype for Business Server.'
+ms.openlocfilehash: f3ce2a6f92ee1d3bd12994f2fe490b0acd5987e4801a98fa57a3527b9fa47dd8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49821766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333198"
 ---
 # <a name="upgrade-statistics-manager-for-skype-for-business-server"></a>Aggiornare il gestore delle statistiche per Skype for Business Server
  
-**Riepilogo:** Leggere questo argomento per informazioni sull'aggiornamento di Statistics Manager per Skype for Business Server.
+**Riepilogo:** Leggere questo argomento per informazioni su come aggiornare Gestione statistiche per Skype for Business Server.
   
-In questo argomento viene descritto come aggiornare un'installazione esistente di Statistics Manager per Skype for Business Server, uno strumento potente che consente di visualizzare i dati sulle prestazioni e sull'integrità di Skype for Business Server in tempo reale. È possibile eseguire il polling dei dati sulle prestazioni in centinaia di server ogni pochi secondi e visualizzare immediatamente i risultati nel sito Web di Gestione statistiche. 
+In questo argomento viene descritto come aggiornare un'installazione esistente di Gestione statistiche per Skype for Business Server, uno strumento potente che consente di visualizzare Skype for Business Server dati sull'integrità e sulle prestazioni in tempo reale. È possibile eseguire il polling dei dati sulle prestazioni in centinaia di server ogni pochi secondi e visualizzare immediatamente i risultati nel sito Web Gestione statistiche. 
   
-Per ulteriori informazioni su Gestione statistiche e sulle nuove funzionalità della versione 2.0, vedere [Plan for Statistics Manager for Skype for Business Server](plan.md) e Deploy Statistics Manager for Skype for Business [Server.](deploy.md)
+Per ulteriori informazioni su Gestione statistiche e sulle nuove funzionalità della versione 2.0, vedere [Plan for Statistics Manager for Skype for Business Server](plan.md) e Deploy Statistics Manager for [Skype for Business Server](deploy.md).
   
 Esistono due metodi per l'aggiornamento:
   
@@ -48,20 +48,20 @@ Prima di eseguire l'aggiornamento, assicurarsi di disporre delle informazioni se
 
 Lo script raccoglierà le informazioni sul certificato corrente e la password del listener, disinstalla la versione precedente del prodotto e quindi installerà la nuova versione del prodotto. L'istanza di Redis installata nel server non verrà toccata, quindi tutti i dati archiviati nella cache verranno conservati tramite il processo di aggiornamento.
   
-1. Inserire i file MSI per la nuova versione dell'agente, del listener e del sito Web insieme allo script Update-StatsMan.ps1 in una singola cartella nel computer listener.
+1. Inserire i file MSI per la nuova versione dell'agente, del listener e del sito Web insieme allo script di Update-StatsMan.ps1 in una singola cartella nel computer listener.
     
-2. Aprire una finestra di PowerShell amministrativa. Aggiornare il componente listener:
+2. Aprire una finestra di PowerShell amministrativa. Aggiornare il componente Listener:
     
    ```PowerShell
    .\Update-StatsMan.ps1 -Service Listener
    ```
 
 > [!NOTE]
-> La password del servizio Gestione statistiche verrà visualizzata come testo non crittografato nella riga di comando quando viene passata al programma di installazione. Assicurati di proteggere il monitor in base alle esigenze. 
+> La password del servizio Gestione statistiche verrà visualizzata in testo non crittografato nella riga di comando quando viene passata al programma di installazione. Assicurati di proteggere il monitor in base alle esigenze. 
   
-1. Quando si esegue lo script, dovrebbe essere richiesto di disinstallare la versione precedente del prodotto. Risposta Sì.
+1. Durante l'esecuzione dello script, dovrebbe essere richiesto di disinstallare la versione precedente del prodotto. Risposta Sì.
     
-2. Se il servizio listener è in esecuzione, verrà richiesto di chiudere l'applicazione prima di continuare. Consentire la chiusura dell'applicazione (il servizio listener di Gestione statistiche verrà arrestato).
+2. Se il servizio Listener è in esecuzione, verrà richiesto di chiudere l'applicazione prima di continuare. Consentire la chiusura dell'applicazione (il servizio Listener di Gestione statistiche verrà arrestato).
     
 3. Continuare il processo di installazione. Si noti che la password del servizio e l'identificazione personale del certificato sono precompilato. In caso contrario, aggiungere i valori salvati prima di continuare.
     
@@ -71,9 +71,9 @@ Lo script raccoglierà le informazioni sul certificato corrente e la password de
    .\Update-StatsMan.ps1 -Service Website
    ```
 
-5. Quando si esegue lo script, dovrebbe essere richiesto di disinstallare la versione precedente del prodotto. Risposta Sì.
+5. Durante l'esecuzione dello script, dovrebbe essere richiesto di disinstallare la versione precedente del prodotto. Risposta Sì.
     
-6. Se il servizio agente è in esecuzione, verrà richiesto di chiudere l'applicazione prima di continuare. Consentire la chiusura dell'applicazione (il servizio Agente StatsMan verrà arrestato).
+6. Se il servizio Agente è in esecuzione, verrà richiesto di chiudere l'applicazione prima di continuare. Consentire la chiusura dell'applicazione (il servizio Agente StatsMan verrà arrestato).
     
 7. Continuare il processo di installazione. Si noti che la password del servizio e l'identificazione personale del certificato sono precompilato. In caso contrario, aggiungere i valori salvati prima di continuare.
     
@@ -83,7 +83,7 @@ Lo script raccoglierà le informazioni sul certificato corrente e la password de
    .\Update-StatsMan.ps1 -Service Agent
    ```
 
-9. Quando si esegue lo script, dovrebbe essere richiesto di disinstallare la versione precedente del prodotto. Risposta Sì.
+9. Durante l'esecuzione dello script, dovrebbe essere richiesto di disinstallare la versione precedente del prodotto. Risposta Sì.
     
 10. Continuare il processo di installazione. Si noti che la porta del sito Web è precompilato. In caso contrario, aggiungere il valore salvato prima di continuare.
     
@@ -94,14 +94,14 @@ Lo script raccoglierà le informazioni sul certificato corrente e la password de
   
 ### <a name="manual-upgrade"></a>Aggiornamento manuale
 
-Se per qualche motivo l'aggiornamento automatico non riesce, è sempre possibile eseguire un aggiornamento manuale nel modo seguente:
+Se per qualche motivo, l'aggiornamento automatico ha esito negativo, è sempre possibile eseguire un aggiornamento manuale nel modo seguente:
   
-1. Nel computer listener disinstallare listener, sito Web e agente (se installato nel server) tramite il Pannello di controllo Programmi e funzionalità. 
+1. Nel computer listener disinstalla listener, sito Web e agente (se installato nel server) tramite il Pannello di controllo Programmi e funzionalità. 
     
     > [!NOTE]
-    >  Mantenere Installato Redis in modo che i dati nella cache siano mantenuti tramite il processo di aggiornamento.
+    >  Mantenere Redis installato in modo che i dati nella cache siano mantenuti attraverso il processo di aggiornamento.
   
-2. Installare le nuove versioni dei componenti, inclusi i valori salvati in precedenza quando vengono richiesti. Per ulteriori informazioni sull'installazione dei componenti, vedere [Deploy Statistics Manager](deploy.md#BKMK_Deploy)
+2. Installare le nuove versioni dei componenti, inclusi i valori salvati in precedenza quando richiesto. Per ulteriori informazioni sull'installazione dei componenti, vedere [Deploy Statistics Manager](deploy.md#BKMK_Deploy)
 
     
 ## <a name="for-more-information"></a>Ulteriori informazioni

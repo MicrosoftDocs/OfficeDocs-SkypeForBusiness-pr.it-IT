@@ -12,19 +12,19 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 16611a55-79fb-487a-a936-20caca829f87
-description: "Riepilogo: informazioni sull'operazione Get User Setting, che fa parte del servizio impostazioni utente. Il servizio impostazioni utente fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 82632f5de7ae215d6f34d9f0b39e500fb713a1be
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: informazioni sull'operazione Get User Setting, che fa parte del servizio di Impostazioni utente. Il servizio di Impostazioni utente fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 5ea18a5ae5307bbf392796f95f7dcce8393371bdb8ddcfc192cb32d819494aa3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298156"
 ---
 # <a name="get-user-setting"></a>Ottenere impostazione utente
  
-**Riepilogo:** Informazioni sull'operazione Ottieni impostazione utente, che fa parte del servizio impostazioni utente. Il servizio impostazioni utente fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Ottieni impostazione utente, che fa parte del servizio Impostazioni utente. Il servizio di Impostazioni utente fa parte dell'API repository per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
-L'operazione Get User Setting fa parte del servizio impostazioni utente nell'API repository per call quality dashboard.
+L'operazione Get User Setting fa parte del servizio di Impostazioni utente nell'API repository per il dashboard qualità delle chiamate.
   
 ## <a name="get-user-setting"></a>Ottenere impostazione utente
 
@@ -45,9 +45,9 @@ Get User Setting restituisce un'impostazione utente singola.
   
  **Codice di stato:** un'operazione riuscita restituisce il codice di stato 200 (OK).
   
- **Intestazioni risposta** - Nessuna intestazione aggiuntiva.
+ **Intestazioni di risposta** - Nessuna intestazione aggiuntiva.
   
- **Contenuto della risposta:** di seguito è riportato un payload di risposta di esempio in JSON.
+ **Response Body:** di seguito è riportato un payload di risposta di esempio in JSON.
   
 ```json
 {

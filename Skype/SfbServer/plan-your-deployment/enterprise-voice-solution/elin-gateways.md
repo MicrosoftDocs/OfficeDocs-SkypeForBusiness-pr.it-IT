@@ -16,18 +16,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: ced79c13-4e7e-4034-95cd-6fc913f4f222
 description: Decisioni necessarie per la pianificazione di un database delle informazioni sulla posizione o di un database esterno simile per una distribuzione E9-1-1 tramite gateway ELIN, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: dd16270aa5a41e3ca50e92859bd1a789426e647b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e3843735006460792f414e685c15552c54a64e1c7896b02b1b0922b31a84e106
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54323078"
 ---
 # <a name="manage-locations-for-elin-gateways-in-skype-for-business-server"></a>Gestire le posizioni per i gateway ELIN in Skype for Business Server
 
 Decisioni necessarie per la pianificazione di un database delle informazioni sulla posizione o di un database esterno simile per una distribuzione E9-1-1 tramite gateway ELIN, in Skype for Business Server VoIP aziendale.
 
-Per consentire a Skype for Business Server di fornire automaticamente posizioni per i client all'interno di una rete, è necessario eseguire le attività seguenti:
+Per fare in Skype for Business Server di fornire automaticamente posizioni per i client all'interno di una rete, è necessario eseguire le attività seguenti:
 
 - Popolare il database del servizio informazioni percorso con una wiremap di rete e includere i numeri ELAN (Emergency Location Identification Numbers) nel campo CompanyName.
 
@@ -38,7 +38,7 @@ Per consentire a Skype for Business Server di fornire automaticamente posizioni 
 Per informazioni dettagliate su come eseguire queste attività, vedere [Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) nella documentazione relativa alla distribuzione.
 
 > [!NOTE]
-> Le posizioni aggiunte al database delle posizioni centrali non sono disponibili per il client fino a quando non sono state pubblicate utilizzando un comando di Skype for Business Server Management Shell e vengono replicate agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) nella documentazione relativa alla distribuzione.
+> Le posizioni aggiunte al database delle posizioni centrali non sono disponibili per il client finché non sono state pubblicate utilizzando un comando di Skype for Business Server Management Shell e vengono replicate agli archivi locali del pool. Per informazioni dettagliate, vedere [Publishing the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-location-database) nella documentazione relativa alla distribuzione.
 
 In questa sezione vengono descritti gli aspetti da prendere in considerazione quando si pianificano l'aggiornamento e la gestione del database delle posizioni.
 
@@ -52,7 +52,7 @@ Il campo Posizione del servizio **informazioni** percorso, che contiene la posiz
 
 - Un nome di facile comprensione che identifichi la posizione del chiamante del servizio di emergenza (911), per consentire agli addetti del servizio di emergenza di trovare immediatamente la posizione specifica quando si recano all'indirizzo civico. Questo nome di posizione può includere il numero di edificio, l'indicazione della scala, il numero del piano, il numero di porta e così via. Evitare nomi alternativi noti solo ai dipendenti, altrimenti si rischia che gli addetti del servizio di emergenza si rechino nel luogo sbagliato.
 
-- Identificatore di posizione che consente agli utenti di vedere facilmente che il client ha selezionato la posizione corretta. Il client Skype for Business concatena automaticamente e visualizza i campi **Location** e **City** individuati nell'intestazione. È consigliabile aggiungere l'indirizzo dell'edificio a ogni identificatore di posizione , ad esempio "1° piano <street number> ". Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
+- Identificatore di posizione che consente agli utenti di vedere facilmente che il client ha selezionato la posizione corretta. Il Skype for Business client concatena automaticamente e visualizza i campi **Location** e **City** individuati nell'intestazione. È consigliabile aggiungere l'indirizzo dell'edificio a ogni identificatore di posizione , ad esempio "1° piano <street number> ". Se non viene specificato l'indirizzo, un identificatore di posizione generico come "1° piano" potrebbe riferirsi a qualsiasi edificio della città.
 
 - Se la posizione è approssimativa perché è determinata da un punto di accesso wireless, è possibile aggiungere la parola **[Near]** (ad esempio, "Near 1st Floor 1234").
 
@@ -65,7 +65,7 @@ Dopo aver stabilito come suddividere lo spazio dell'edificio in posizioni, è ne
 |**Area dell'edificio**|**Posizione**|**ELIN**|
 |:-----|:-----|:-----|
 |Primo piano  <br/> |1  <br/> |425-555-0100  <br/> |
-|Secondo piano  <br/> |2   <br/> |425-555-0111  <br/> |
+|Secondo piano  <br/> |2  <br/> |425-555-0111  <br/> |
 |Terzo piano  <br/> |3   <br/> |425-555-0123  <br/> |
 
 Le posizioni definite devono soddisfare i requisiti seguenti:
@@ -84,9 +84,9 @@ Esaminare dove si trovano i dati e quali operazioni è necessario eseguire per c
 
  **Valutare se si dispone di un database di terze parti contenente già un mapping di posizioni.**
 
-Utilizzando l'opzione Secondary Location Information service per connettersi a un database di terze parti, è possibile raggruppare e gestire le posizioni utilizzando una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Ciò significa che il servizio informazioni sulla posizione può restituire più indirizzi, provenienti dal servizio informazioni sulla posizione secondaria, a un client Skype for Business. L'utente può quindi scegliere la posizione più appropriata.
+Utilizzando l'opzione Secondary Location Information service per connettersi a un database di terze parti, è possibile raggruppare e gestire le posizioni utilizzando una piattaforma offline. Uno dei vantaggi di questo approccio è che le posizioni possono essere associate non solo a identificatori di rete, ma anche a un utente. Ciò significa che il servizio informazioni sulla posizione può restituire più indirizzi, provenienti dal servizio informazioni sulla posizione secondario, a un client Skype for Business secondario. L'utente può quindi scegliere la posizione più appropriata.
 
-Per l'integrazione con il servizio informazioni percorso, il database di terze parti deve seguire lo schema di richiesta/risposta percorso di Skype for Business Server. Per informazioni dettagliate, vedere [Web Service for E911 Support Protocol](/openspecs/office_protocols/ms-e911ws/ab5d7449-2c15-434b-bf65-fdf38b8ffabd). Per informazioni dettagliate sulla distribuzione di un servizio di informazioni sulla posizione secondario, vedere [Configure a secondary Location Information service in Skype for Business Server](../../deploy/deploy-enterprise-voice/secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
+Per l'integrazione con il servizio informazioni percorso, il database di terze parti deve seguire lo schema di richiesta/risposta Skype for Business Server percorso. Per informazioni dettagliate, vedere [Web Service for E911 Support Protocol](/openspecs/office_protocols/ms-e911ws/ab5d7449-2c15-434b-bf65-fdf38b8ffabd). Per informazioni dettagliate sulla distribuzione di un servizio informazioni percorso secondario, vedere [Configure a secondary Location Information service in Skype for Business Server](../../deploy/deploy-enterprise-voice/secondary-location-information-service.md) nella documentazione relativa alla distribuzione.
 
 Per informazioni dettagliate su come popolare il database delle posizioni, vedere [Configure the Location Database](/previous-versions/office/lync-server-2013/lync-server-2013-configure-the-location-database) nella documentazione relativa alla distribuzione.
 
@@ -98,6 +98,6 @@ Dopo aver popolato il database delle posizioni, è necessario sviluppare una str
 
 Esistono diversi scenari che richiedono un aggiornamento del database delle posizioni, tra cui l'aggiunta di punti di accesso wireless, il ricablaggio degli uffici (con assegnazioni diverse dei commutatori) e l'espansione delle subnet. Considerare se si prevede di aggiornare direttamente ogni singola posizione o di eseguire un aggiornamento in blocco delle posizioni mediante un file CSV.
 
- **Userai un'applicazione SNMP per associare gli indirizzi MAC del client Skype for Business agli identificatori di porta e commutazione?**
+ **Si userà un'applicazione SNMP per associare Skype for Business indirizzi MAC client agli identificatori di porta e commutatore?**
 
 Se si utilizza un'applicazione SNMP, è necessario sviluppare un processo manuale per mantenere la coerenza a livello di informazioni su porte e chassis dei commutatori tra l'applicazione SNMP e il database delle posizioni. Se l'applicazione SNMP restituisce un indirizzo IP dello chassis o un ID di porta non incluso nel database, il servizio informazioni percorso non sarà in grado di restituire una posizione al client.

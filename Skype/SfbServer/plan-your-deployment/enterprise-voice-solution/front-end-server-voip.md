@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 310e81a7-da45-47d4-95d0-92837e386502
 description: Informazioni sui componenti VoIP aziendale che si trovano nei Front End Server in Skype for Business Server, tra cui il servizio di traduzione e vari componenti di routing.
-ms.openlocfilehash: 830f54e59e0d2135e3748fd03474b19e22741136
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 5df2937d0329796f634c5b4fac21b6921001d65bf3795589ce718ba08ecd9c36
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101492"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333118"
 ---
 # <a name="front-end-server-voip-components-for-skype-for-business-server"></a>Componenti VoIP di Front End Server per Skype for Business Server
 
@@ -47,19 +47,19 @@ Il servizio di conversione è il componente server responsabile della conversion
 
 ## <a name="inbound-routing-component"></a>Componente di routing in ingresso
 
-Il componente di routing in ingresso gestisce le chiamate in ingresso tenendo generalmente conto delle preferenze specificate dagli utenti nei client di Enterprise Voice. Consente inoltre di utilizzare le funzionalità di chiamata ai delegati e di squillo simultaneo, se configurate dall'utente. Gli utenti possono ad esempio specificare se le chiamate senza risposta devono essere inoltrate o semplicemente registrate a scopo di notifica. Se l'inoltro di chiamata è abilitato, gli utenti possono specificare se le chiamate senza risposta devono essere inoltrate a un altro numero o a un server Messaggistica unificata di Exchange configurato per fornire il risponditore automatico. Il componente routing in ingresso viene installato per impostazione predefinita in tutti i server Standard Edition e i Front End Server.
+Il componente di routing in ingresso gestisce le chiamate in ingresso tenendo generalmente conto delle preferenze specificate dagli utenti nei client di Enterprise Voice. Consente inoltre di utilizzare le funzionalità di chiamata ai delegati e di squillo simultaneo, se configurate dall'utente. Gli utenti possono ad esempio specificare se le chiamate senza risposta devono essere inoltrate o semplicemente registrate a scopo di notifica. Se l'inoltro di chiamata è abilitato, gli utenti possono specificare se le chiamate senza risposta devono essere inoltrate a un altro numero o a un server Messaggistica unificata di Exchange configurato per fornire il risponditore automatico. Il componente di routing in ingresso viene installato per impostazione predefinita in edizione Standard server e Front End Server.
 
 ## <a name="outbound-routing-component"></a>Componente di routing in uscita
 
-Il componente di routing in uscita instrada le chiamate a destinazioni PBX o PSTN. Applica le regole di autorizzazione delle chiamate, come definito dal criterio vocale dell'utente, ai chiamanti e determina il gateway PSTN ottimale per il routing di ogni chiamata. Il componente Routing in uscita viene installato per impostazione predefinita in tutti i server Standard Edition e Front End Server.
+Il componente di routing in uscita instrada le chiamate a destinazioni PBX o PSTN. Applica le regole di autorizzazione delle chiamate, come definito dal criterio vocale dell'utente, ai chiamanti e determina il gateway PSTN ottimale per il routing di ogni chiamata. Il componente routing in uscita viene installato per impostazione predefinita in edizione Standard server e Front End Server.
 
 La logica di routing utilizzata dal componente di routing in uscita viene in buona parte configurata dagli amministratori di rete o di telefonia in base ai requisiti dell'organizzazione.
 
 ## <a name="exchange-um-routing-component"></a>Componente di routing per Messaggistica unificata di Exchange
 
-Il componente di routing della messaggistica unificata di Exchange gestisce il routing tra Skype for Business Server e i server che eseguono la messaggistica unificata di Exchange per integrare Skype for Business Server con le funzionalità di messaggistica unificata.
+Il Exchange di routing di messaggistica unificata gestisce il routing tra Skype for Business Server e i server che eseguono la messaggistica unificata di Exchange per integrare Skype for Business Server con le funzionalità di messaggistica unificata.
 
-Il componente di routing di messaggistica unificata di Exchange gestisce anche il reindirizzamento della posta vocale sulla rete PSTN se i server Messaggistica unificata di Exchange non sono disponibili. Se si dispone di utenti VoIP aziendale nei siti di succursale che non dispongono di un collegamento WAN resiliente a un sito centrale, il Survivable Branch Appliance distribuito nel sito di succursale garantisce la sopravvivenza della segreteria telefonica per gli utenti di succursale durante un'interruzione della rete WAN. Quando il collegamento WAN non è disponibile, Survivable Branch Appliance effettua le operazioni seguenti:
+Il Exchange di routing di messaggistica unificata gestisce anche il reindirizzamento della posta vocale sulla rete PSTN se i Exchange messaggistica unificata non sono disponibili. Se sono disponibili utenti VoIP aziendale nei siti di succursale che non dispongono di un collegamento WAN resiliente a un sito centrale, il Survivable Branch Appliance distribuito nel sito di succursale garantisce la sopravvivenza della segreteria telefonica per gli utenti di succursale durante un'interruzione della rete WAN. Quando il collegamento WAN non è disponibile, Survivable Branch Appliance effettua le operazioni seguenti:
 
 - Reinstrada le chiamate senza risposta sulla rete PSTN verso il server di Messaggistica unificata di Exchange nel sito centrale
 
@@ -67,7 +67,7 @@ Il componente di routing di messaggistica unificata di Exchange gestisce anche i
 
 - Accoda le notifiche di chiamate senza risposta e quindi le carica nel server di Messaggistica unificata di Exchange quando viene ripristinato il collegamento WAN
 
-Per abilitare il reindirizzamento della segreteria telefonica, è consigliabile che l'amministratore di Exchange configurerà l'Operatore automatico (AA) di Messaggistica unificata di Exchange in modo che accetti solo i messaggi.
+Per abilitare il reindirizzamento della segreteria telefonica, è consigliabile che l'amministratore Exchange configurare Exchange messaggistica unificata Operatore automatico (AA) in modo che accetti solo i messaggi.
 
 Per informazioni dettagliate su queste funzionalità, vedere rispettivamente [On-Premises Exchange Unified Messaging Integration](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-exchange-unified-messaging-integration) e [Planning for Enterprise Voice Resiliency](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-enterprise-voice-resiliency).
 
@@ -83,4 +83,4 @@ Altri componenti che risiedono nel Front End Server o nel Director che forniscon
 
 - **User Replicator.** Estrae i numeri di telefono degli utenti da Servizi di dominio Active Directory e li scrive nelle tabelle del database RTC, dove sono disponibili per Servizi utente e il server della Rubrica. User Replicator è un componente di base in tutti i Front End Server.
 
-- **Server della Rubrica.** Fornisce informazioni sull'elenco indirizzi globale da Servizi di dominio Active Directory ai client Skype for Business Server. Recupera inoltre le informazioni sugli utenti e sui contatti dal database RTC, scrive le informazioni nei file della Rubrica e quindi archivia i file in una cartella condivisa in cui vengono scaricati dai client Skype for Business. Il server della Rubrica scrive le informazioni nel database RTCAb, utilizzato dal servizio Address Book Web Query per rispondere alle query di ricerca degli utenti da Skype for Business mobile. Facoltativamente, normalizza i numeri di telefono degli utenti aziendali scritti nel database RTC allo scopo di effettuare il provisioning dei contatti utente in Skype for Business. Il servizio Rubrica viene installato per impostazione predefinita in tutti i Front End Server. Il servizio Query Web rubrica viene installato per impostazione predefinita con i servizi Web in ogni Front End Server.
+- **Server della Rubrica.** Fornisce informazioni sull'elenco indirizzi globale da Servizi di dominio Active Directory Skype for Business Server client. Recupera inoltre le informazioni relative a utenti e contatti dal database RTC, le scrive nei file della Rubrica e quindi archivia i file in una cartella condivisa in cui vengono scaricati dai Skype for Business client. Il server della Rubrica scrive le informazioni nel database RTCAb, utilizzato dal servizio Address Book Web Query per rispondere alle query di ricerca degli utenti da Skype for Business mobile. Facoltativamente, normalizza i numeri di telefono degli utenti aziendali scritti nel database RTC allo scopo di effettuare il provisioning dei contatti utente in Skype for Business. Il servizio Rubrica viene installato per impostazione predefinita in tutti i Front End Server. Il servizio Query Web rubrica viene installato per impostazione predefinita con i servizi Web in ogni Front End Server.

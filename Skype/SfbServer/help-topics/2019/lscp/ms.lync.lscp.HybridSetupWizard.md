@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c8600c4e-dc54-4af2-a72e-c1b997d83443
 ROBOTS: NOINDEX, NOFOLLOW
-description: È possibile utilizzare la procedura guidata di gestione ibrida per eseguire alcune delle attività di configurazione necessarie per configurare una distribuzione ibrida con Skype for Business online. Per ulteriori informazioni su come configurare la distribuzione per la distribuzione ibrida, vedere Configurare l'ambiente con la procedura guidata di gestione ibrida.
-ms.openlocfilehash: f930bba3a8e8de1a31f9947c54a949cc8bb58b41
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: È possibile utilizzare la procedura guidata di gestione ibrida per eseguire alcune delle attività di configurazione necessarie per configurare una distribuzione ibrida con Skype for Business Online. Per ulteriori informazioni su come configurare la distribuzione per la distribuzione ibrida, vedere Configure your environment with the Hybrid Manageability wizard.
+ms.openlocfilehash: dee80f6cd5dc5c668d525a8440b39c31ccbb103f5029f33e7d5f525ef4c09a68
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49836556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285336"
 ---
 # <a name="hybrid-manageability-wizard"></a>Configurazione ibrida guidata di gestibilità
 
-È possibile utilizzare la procedura guidata di gestione ibrida per eseguire alcune delle attività di configurazione necessarie per configurare una distribuzione ibrida con Skype for Business online. Per ulteriori informazioni su come configurare la distribuzione per la distribuzione ibrida, vedere [Configurare l'ambiente con la procedura guidata di gestione ibrida.](https://technet.microsoft.com/library/d777f79b-a740-4aba-a9e2-c91f0315b6f8.aspx)
+È possibile utilizzare la procedura guidata di gestione ibrida per eseguire alcune delle attività di configurazione necessarie per configurare una distribuzione ibrida con Skype for Business Online. Per ulteriori informazioni su come configurare la distribuzione per la distribuzione ibrida, vedere [Configure your environment with the Hybrid Manageability wizard](https://technet.microsoft.com/library/d777f79b-a740-4aba-a9e2-c91f0315b6f8.aspx).
 
 

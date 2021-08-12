@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ada92509adc0f066bf957ddaa8f5de8dd0c47653
-ms.sourcegitcommit: 8906fc384cd13255972df53d2a07d12589154d42
+ms.openlocfilehash: 1859286fd14e3820a75615adc5da82fea863e74101e5a7911e888490e5799db3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/29/2021
-ms.locfileid: "52085848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285805"
 ---
 # <a name="microsoft-education-governance-faq-for-admins"></a>Domande frequenti sulla governance di Microsoft Education per amministratori
 
@@ -38,7 +38,7 @@ Per evitare nomi inappropriati o fuorvianti o semplicemente per fornire una magg
 -   **Classificazione** È possibile creare classificazioni che gli utenti dell'organizzazione possono impostare quando creano un Microsoft 365 gruppo. 
 
 > [!IMPORTANT]
-> L'uso Microsoft 365 criteri di denominazione dei gruppi di Azure Active Directory Premium richiede licenze P1 o licenze EDU di Azure AD Basic per ogni utente univoco membro di uno o più gruppi Microsoft 365 utenti.
+> L'uso Microsoft 365 criteri di denominazione dei gruppi di Azure Active Directory Premium P1 richiede licenze di azure AD Basic EDU per ogni utente univoco membro di uno o più Microsoft 365 gruppi.
 
 Per istruzioni dettagliate, vedere criteri di denominazione [Office gruppi.](https://support.office.com/article/office-365-groups-naming-policy-6ceca4d3-cad1-4532-9f0f-d469dfbbb552)
 
@@ -78,7 +78,7 @@ All'inizio di ogni semestre o trimestre, sono necessari diversi nuovi team. Può
 -   **Team di archiviazione:** Questa impostazione attiva la modalità di sola lettura per i team. Possono comunque essere esplorati e cercati, ma nessuno può aggiungere nuovi post. [L'opzione Archivia o ripristina un team](https://support.office.com/article/archive-or-restore-a-team-dc161cfd-b328-440f-974b-5da5bd98b5a7) descrive in che modo i proprietari del team possono archiviare un team. I proprietari del team possono anche usare [l'API Graph (beta)](/graph/api/resources/teams-api-overview) per archiviare o ripristinare un team.
  
 > [!IMPORTANT]
-> L'uso Microsoft 365 criteri di scadenza di Azure Active Directory Premium P1 richiede licenze P1 per ogni utente univoco membro di uno o più gruppi Microsoft 365 utenti.
+> L'Microsoft 365 criteri di scadenza di Azure Active Directory Premium P1 richiede licenze per ogni utente univoco membro di uno o più gruppi Microsoft 365 utenti.
 
 ## <a name="are-there-team-templates-for-my-faculty-members-to-use-when-creating-a-team"></a>Sono disponibili modelli di team da usare per i docenti durante la creazione di un team?
 

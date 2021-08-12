@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b9493cef-6ece-4f13-bf68-dbf132aab4f4
 description: Nella tabella TraceRoute sono incluse le informazioni di routing provenienti dalle chiamate. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 7ecad93cca80a9b7cea73f64158b3c0008a1d6e7
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: f08b3cf1e007d9ba2258db1d4db86e9af160a8c9286bc75e27ab9c0ea8ece441
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322928"
 ---
 # <a name="traceroute-table"></a>Tabella TraceRoute
  
@@ -31,7 +31,7 @@ Nella tabella TraceRoute sono incluse le informazioni di routing provenienti dal
 |**MediaLineLabel** <br/> |tinyint  <br/> |Primaria, esterna  <br/> |Rappresenta il tipo di linea video utilizzato nella chiamata. I valori consentiti sono:  <br/> 0 - Audio  <br/> 1 - Video  <br/> 2 - Video panoramico  <br/> 3 - Condivisione applicazioni/desktop  <br/> |
 |**FromCaller** <br/> |bit  <br/> |Principale  <br/> |Endpoint che ha effettuato la chiamata.  <br/> |
 |**Hop** <br/> |int  <br/> ||Hop di rete.  <br/> |
-|**IPAddressKey** <br/> |int  <br/> |Esterna  <br/> |Identificatore univoco dell'indirizzo IP. Le informazioni sull'indirizzo IP vengono archiviate nella [tabella IPAddress.](ipaddress.md)  <br/> |
+|**IPAddressKey** <br/> |int  <br/> |Foreign  <br/> |Identificatore univoco dell'indirizzo IP. Le informazioni sull'indirizzo IP vengono archiviate nella [tabella IPAddress](ipaddress.md).  <br/> |
 |**RTT** <br/> |int  <br/> ||Tempo di roundtrip, ovvero la quantità di tempo necessaria a un pacchetto voce per raggiungere la relativa destinazione e quindi inviare di nuovo la notifica ricevuta.  <br/> |
    
 

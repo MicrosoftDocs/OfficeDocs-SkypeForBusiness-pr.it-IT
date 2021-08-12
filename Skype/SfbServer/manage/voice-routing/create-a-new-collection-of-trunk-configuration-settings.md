@@ -1,5 +1,5 @@
 ---
-title: Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
+title: 'Skype for Business Server: creare una nuova raccolta di impostazioni di configurazione trunk'
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,15 +10,15 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi.
-ms.openlocfilehash: a1be9ff54da001b1d59cdc2bda47c8bd3611418a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Le impostazioni di configurazione trunk SIP definiscono la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Ip-Public Branch Exchange) o un Session Border Controller (SBC) presso il provider di servizi.
+ms.openlocfilehash: 4e9e6164b7776181b85478c5d420f0bf5e296ac4c02fc23494c5af8808474566
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51104362"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849941"
 ---
-# <a name="create-a-new-collection-of-trunk-configuration-settings-in-skype-for-business-server"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
+# <a name="skype-for-business-server-create-a-new-collection-of-trunk-configuration-settings"></a>Skype for Business Server: creare una nuova raccolta di impostazioni di configurazione trunk
 
 Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi. Queste impostazioni consentono di specificare quanto segue:
 - Se abilitare il bypass multimediale nei trunk.
@@ -52,14 +52,14 @@ Quando si creano le impostazioni di configurazione dei trunk SIP utilizzando il 
 ||||
 
 > [!Note]
-> I cmdlet CsTrunkConfiguration di Skype for Business Server supportano proprietà aggiuntive non visualizzate nel Pannello di controllo di Skype for Business Server. Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsTrunkConfiguration.](/powershell/module/skype/New-CsTrunkConfiguration) 
+> I cmdlet Skype for Business Server CsTrunkConfiguration supportano proprietà aggiuntive non visualizzate Skype for Business Server Pannello di controllo. Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [New-CsTrunkConfiguration.](/powershell/module/skype/New-CsTrunkConfiguration) 
 
-**Per creare nuove impostazioni di configurazione trunk tramite il Pannello di controllo di Skype for Business Server**
+**Per creare nuove impostazioni di configurazione trunk tramite Skype for Business Server pannello di controllo**
 
-1. Nel Pannello di controllo di Skype for Business Server fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
+1. Nel Pannello Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
 2. Nella scheda Configurazione **trunk** fare clic  su **Nuovo** e quindi su Trunk sito per creare le nuove impostazioni nell'ambito del sito oppure trunk del **pool** per creare le nuove impostazioni nell'ambito del servizio.
 3. Nella finestra **di** dialogo  Seleziona un sito o Seleziona un servizio , a seconda che si creino impostazioni con ambito sito o servizio, selezionare il percorso per le nuove impostazioni di configurazione e quindi fare clic su **OK.** Se la finestra di dialogo è vuota, significa che non è possibile creare le nuove impostazioni. Ad esempio,  se la finestra di dialogo Seleziona un sito è vuota, significa che a tutti i siti è già stata assegnata una raccolta di siti di configurazione trunk e ogni sito (e ogni servizio) può ospitare solo una di queste raccolte. In tal caso, è possibile eliminare la raccolta esistente e crearne una nuova oppure modificare semplicemente la raccolta esistente.
 4. Nella finestra **di dialogo Nuova configurazione trunk** effettuare le selezioni appropriate e quindi fare clic su **OK.**
 5. La proprietà **Stato** per la raccolta verrà aggiornata a **Commit non eseguito**. Per eseguire il commit delle modifiche e per eliminare la raccolta, fare clic su **Commit**, quindi su **Salva tutto**.
 6. Nella finestra di dialogo **Impostazioni di configurazione vocale di cui non è stato eseguito il commit** fare clic su **OK**.
-7. Nella finestra **di dialogo Pannello di controllo** di Skype for Business fare clic su **OK.**
+7. Nella finestra **Skype for Business pannello** di controllo fare clic su **OK.**

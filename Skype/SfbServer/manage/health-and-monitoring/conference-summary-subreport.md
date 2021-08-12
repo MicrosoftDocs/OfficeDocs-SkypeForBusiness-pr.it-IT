@@ -1,5 +1,5 @@
 ---
-title: Sottorapporto riepilogativo conferenze in Skype for Business Server
+title: Sottoreport Riepilogo conferenze in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 2fc1d2bf-34f5-4093-a6e2-250ec1f1b004
-description: 'Riepilogo: informazioni sul sottoreport riepilogativo conferenze in Skype for Business Server.'
-ms.openlocfilehash: 9a42e16bc22f01f196274f1e25396d8516e26af2
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni sul sottoreport Riepilogo conferenze in Skype for Business Server.'
+ms.openlocfilehash: ec72c499a7a523dfcac3adaad43728c8e623526a5ff7264e12a7d6eb77df75cb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49826476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298166"
 ---
-# <a name="conference-summary-subreport-in-skype-for-business-server"></a>Sottorapporto riepilogativo conferenze in Skype for Business Server
+# <a name="conference-summary-subreport-in-skype-for-business-server"></a>Sottoreport Riepilogo conferenze in Skype for Business Server
  
-**Riepilogo:** Informazioni sul sottoreport riepilogativo conferenze in Skype for Business Server.
+**Riepilogo:** Informazioni sul sottoreport Riepilogo conferenze in Skype for Business Server.
   
 Il sottorapporto riepilogativo conferenze offre una visualizzazione generale delle sessioni di conferenza non riuscite. Tali sessioni vengono ulteriormente suddivise per tipo: sessioni Focus e sessioni MCU.
   

@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8ee3ee95-fb78-4d4e-bcdd-6ce5a0a23b44
 description: La vista ConferenceMessageCount archivia informazioni sul numero di messaggi inviati da un utente a una conferenza. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 8394ed37d4b85e8ec5fcda4234b4c28f4276fb17
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: f3ec657147967a783cbe27a7a78acd6dd0fbfbb9b260d3673bcda0bdf353e5fc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54322968"
 ---
 # <a name="conferencemessagecount-view"></a>Visualizzazione ConferenceMessageCount
  
@@ -30,7 +30,7 @@ La vista ConferenceMessageCount archivia informazioni sul numero di messaggi inv
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
 |**UserUri** <br/> |nvarchar(450)  <br/> |URI dell'utente che ha inviato il messaggio.  <br/> |
-|**UserUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha inviato il messaggio. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
+|**UserUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha inviato il messaggio. Per ulteriori informazioni, vedere la tabella [UriTypes.](uritypes.md) <br/> |
 |**UserTenant** <br/> |uniqueidentifier  <br/> |Tenant dell'utente che ha inviato i messaggi. Per ulteriori [informazioni, vedere](tenants.md) la tabella Tenants. <br/> |
 |**UserMessageCount** <br/> |smallint  <br/> |Numero di messaggi inviati dall'utente durante la sessione di conferenza.  <br/> |
    

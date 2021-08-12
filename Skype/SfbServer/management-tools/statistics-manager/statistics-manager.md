@@ -13,17 +13,17 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 3b945656-8241-40ed-a34d-0910bd9d3529
-description: "Riepilogo: leggere questo argomento per informazioni su Statistics Manager per Skype for Business Server, un potente strumento che consente di visualizzare i dati sulle prestazioni e sull'integrità di Skype for Business Server in tempo reale."
-ms.openlocfilehash: 68a16b76e68bc745a33b91b117c545b45057df55
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: leggere questo argomento per informazioni su Gestione statistiche per Skype for Business Server, un potente strumento che consente di visualizzare Skype for Business Server dati sull'integrità e sulle prestazioni in tempo reale."
+ms.openlocfilehash: 3fb8c9a27d061a5735b7ebc0d54b3e0a23597dae7b5fab830f74b46063f59227
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49821796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333218"
 ---
 # <a name="statistics-manager-for-skype-for-business-server"></a>Gestore delle statistiche per Skype for Business Server
  
-**Riepilogo:** Leggere questo argomento per informazioni su Statistics Manager per Skype for Business Server, uno strumento potente che consente di visualizzare i dati sulle prestazioni e sull'integrità di Skype for Business Server in tempo reale.
+**Riepilogo:** Leggere questo argomento per informazioni su Gestione statistiche per Skype for Business Server, un potente strumento che consente di visualizzare i dati di integrità e prestazioni Skype for Business Server in tempo reale.
   
 In questa sezione sono inclusi i seguenti argomenti:
   

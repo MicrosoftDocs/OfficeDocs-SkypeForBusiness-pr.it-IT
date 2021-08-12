@@ -10,25 +10,25 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Prima di apprendere i diversi modi in cui è possibile spostare gli utenti tra pool, è necessario determinare quali utenti esistono nel pool legacy. La colonna del pool di registrazione identifica gli utenti configurati per il pool legacy. Questi sono gli utenti di test che verranno spostati nel pool di Skype for Business Server 2019.
-ms.openlocfilehash: 15bce6156c8c97246f7e2ffd648ae45b674bd6c9
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+description: Prima di apprendere i vari modi in cui è possibile spostare gli utenti tra i pool, è necessario determinare quali utenti esistono nel pool legacy. La colonna Pool di registrazione identifica gli utenti configurati per il pool legacy. Questi sono gli utenti di test che verranno spostati nel pool Skype for Business Server 2019.
+ms.openlocfilehash: 16d8796099356b927482a7e0d7eb395ebb4f03e76f9de83a386cfc2f8d5bd9a1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44751638"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54285506"
 ---
 # <a name="view-current-users-in-legacy-pool"></a>Visualizzare gli utenti correnti nel pool legacy
 
-Prima di apprendere i diversi modi in cui è possibile spostare gli utenti tra pool, è necessario determinare quali utenti esistono nel pool legacy. La **colonna del pool** di registrazione identifica gli utenti configurati per il pool legacy. Questi sono gli utenti di test che verranno spostati nel pool di Skype for Business Server 2019.
+Prima di apprendere i vari modi in cui è possibile spostare gli utenti tra pool, è necessario determinare quali utenti esistono nel pool legacy. La **colonna Pool di** registrazione identifica gli utenti configurati per il pool legacy. Questi sono gli utenti di test che verranno spostati nel pool Skype for Business Server 2019.
   
 ### <a name="to-see-the-list-of-users-in-the-legacy-pool"></a>Per visualizzare l'elenco degli utenti nel pool legacy
 
 1. Accedere al Front End Server legacy con un account membro del gruppo RTCUniversalServerAdmins o membro del ruolo amministrativo CsAdministrator o CsUserAdministrator.
     
-2. Aprire **il Pannello di controllo di Skype for Business Server.**
+2. Aprire **Skype for Business Server Pannello di controllo.**
     
-3. Fare **clic su** Utenti, **ricerca** e quindi su **Trova.**
+3. Fare **clic su** Utenti, su **Cerca** e quindi su **Trova.**
 
   
 

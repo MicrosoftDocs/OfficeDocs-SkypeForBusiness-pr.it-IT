@@ -15,16 +15,16 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Il supporto della federazione è necessario per consentire agli utenti che dispongono di un account con un'organizzazione cliente o partner attendibile, inclusi i domini partner e gli utenti di provider di messaggistica istantanea pubblica supportati, di collaborare con gli utenti all'interno dell'organizzazione.
-ms.openlocfilehash: 34991040e6eed9cfec8d2e3abd3fd3d944057d868f0ca9b83cd4131d3fd13ad0
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f9c7b4ee7a861bc395c8599283f8d993b25ef4774d9487263e334207e9e277c8
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54276841"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849971"
 ---
 # <a name="enable-or-disable-federation-and-public-im-connectivity-in-skype-for-business-server"></a>Abilitare o disabilitare la federazione e la connettività di messaggistica istantanea pubblica in Skype for Business Server
 
-Il supporto della federazione è necessario per consentire agli utenti che dispongono di un account con un'organizzazione cliente o partner attendibile, inclusi i domini partner e gli utenti di provider di messaggistica istantanea pubblica supportati, di collaborare con gli utenti all'interno dell'organizzazione. La federazione è anche necessaria per poter utilizzare un provider di servizi di Exchange ospitato in modo da offrire il servizio di segreteria telefonica agli utenti di VoIP aziendale le cui cassette postali si trovano su un servizio di Exchange ospitato quale Microsoft Exchange Online. Dopo aver stabilito una relazione di trust con questi domini esterni, è possibile autorizzare gli utenti di tali domini ad accedere alla distribuzione e a partecipare alle Skype for Business Server comunicazioni. La relazione di trust è denominata federazione e non è correlata a una relazione di trust di Active Directory né dipende da essa.
+Il supporto della federazione è necessario per consentire agli utenti che dispongono di un account con un'organizzazione cliente o partner attendibile, inclusi i domini partner e gli utenti di provider di messaggistica istantanea pubblica supportati, di collaborare con gli utenti all'interno dell'organizzazione. La federazione è anche necessaria per poter utilizzare un provider di servizi di Exchange ospitato in modo da offrire il servizio di segreteria telefonica agli utenti di VoIP aziendale le cui cassette postali si trovano su un servizio di Exchange ospitato quale Microsoft Exchange Online. Dopo aver stabilito una relazione di trust con questi domini esterni, è possibile autorizzare gli utenti di tali domini ad accedere alla distribuzione e a partecipare alle Skype for Business Server esterne. La relazione di trust è denominata federazione e non è correlata a una relazione di trust di Active Directory né dipende da essa.
 
 Per supportare l'accesso da parte degli utenti dei domini federati, è necessario abilitare la federazione. Se si abilita la federazione per la propria organizzazione, è anche necessario specificare se si desidera implementare le opzioni seguenti:
 
@@ -35,14 +35,14 @@ Per supportare l'accesso da parte degli utenti dei domini federati, è necessari
 Se successivamente si desidera impedire, in modo temporaneo o permanente, l'accesso degli utenti dei domini federati, è possibile disabilitare la federazione per l'organizzazione. Attenersi alla procedura descritta in questa sezione per abilitare o disabilitare l'accesso degli utenti federati per l'organizzazione, nonché per specificare le opzioni di federazione appropriate da supportare per l'organizzazione.
 
 > [!NOTE]  
-> L'abilitazione della federazione per l'organizzazione consente di specificare solo che i server che eseguono il servizio Access Edge supportano il routing ai domini federati. Gli utenti dei domini federati non possono partecipare alle conferenze o alla messaggistica istantanea all'interno dell'organizzazione finché non si procede anche alla configurazione di almeno un criterio per il supporto dell'accesso degli utenti federati. Gli utenti dei provider di servizi di messaggistica istantanea pubblica non possono partecipare alle conferenze o alla messaggistica istantanea nell'organizzazione finché non si procede anche alla configurazione di almeno un criterio per il supporto della connettività di messaggistica istantanea pubblica. Skype for Business Server non può utilizzare un servizio Exchange ospitato per fornire servizi di segreteria telefonica, Outlook Voice Access (inclusa la segreteria telefonica) o operatore automatico per gli utenti le cui cassette postali si trovano in un servizio Exchange ospitato fino a quando non si configura un criterio di segreteria telefonica ospitata che fornisce informazioni di routing. Per informazioni dettagliate sulla configurazione dei criteri per la comunicazione con gli utenti di domini federati in altre organizzazioni, vedere [Manage SIP federated domains for your organization](../sip-domains/manage-sip-federated-domains-for-your-organization.md). Se, inoltre, si desidera supportare le comunicazioni con gli utenti dei provider di servizi di messaggistica istantanea, è necessario configurare i criteri per il relativo supporto nonché configurare il supporto per i singoli provider di servizi desiderati. Per informazioni dettagliate, vedere   [Manage SIP federated providers for your organization](../sip-providers/manage-sip-federated-providers-for-your-organization.md).
+> L'abilitazione della federazione per l'organizzazione consente di specificare solo che i server che eseguono il servizio Access Edge supportano il routing ai domini federati. Gli utenti dei domini federati non possono partecipare alle conferenze o alla messaggistica istantanea all'interno dell'organizzazione finché non si procede anche alla configurazione di almeno un criterio per il supporto dell'accesso degli utenti federati. Gli utenti dei provider di servizi di messaggistica istantanea pubblica non possono partecipare alle conferenze o alla messaggistica istantanea nell'organizzazione finché non si procede anche alla configurazione di almeno un criterio per il supporto della connettività di messaggistica istantanea pubblica. Skype for Business Server non può utilizzare un servizio Exchange ospitato per fornire servizi di risposta alle chiamate, Outlook Voice Access (inclusa la segreteria telefonica) o operatore automatico per gli utenti le cui cassette postali si trovano in un servizio Exchange ospitato fino a quando non si configura un criterio di segreteria telefonica ospitata che fornisce informazioni di routing. Per informazioni dettagliate sulla configurazione dei criteri per la comunicazione con gli utenti di domini federati in altre organizzazioni, vedere [Manage SIP federated domains for your organization](../sip-domains/manage-sip-federated-domains-for-your-organization.md). Se, inoltre, si desidera supportare le comunicazioni con gli utenti dei provider di servizi di messaggistica istantanea, è necessario configurare i criteri per il relativo supporto nonché configurare il supporto per i singoli provider di servizi desiderati. Per informazioni dettagliate, vedere   [Manage SIP federated providers for your organization](../sip-providers/manage-sip-federated-providers-for-your-organization.md).
 
 
 ## <a name="to-enable-or-disable-federated-user-access-for-your-organization"></a>Per abilitare o disabilitare l'accesso degli utenti federati per l'organizzazione
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Accesso utente esterno** e quindi su **Configurazione Access Edge**.
 
@@ -71,15 +71,11 @@ La federazione e la connettività di messaggistica istantanea pubblica possono e
 
 ## <a name="to-enable-federation-and-public-im-connectivity"></a>Per abilitare la federazione e la connettività di messaggistica istantanea pubblica
 
-  - Per abilitare la federazione e la connettività IM pubblica, impostare il valore della proprietà **AllowFederatedUsers** su True ($True):
-    
-        Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
+  - Per abilitare la federazione e la connettività IM pubblica, impostare il valore della proprietà **AllowFederatedUsers** su True ($True):<br/><br/>Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
 
 
 
 ## <a name="to-disable-federation-and-public-im-connectivity"></a>Per disabilitare la federazione e la connettività di messaggistica istantanea pubblica
 
-  - Per disabilitare la federazione e la connettività IM pubblica, impostare il valore della proprietà **AllowFederatedUsers** su False ($False):
-    
-        Set-CsAccessEdgeConfiguration -AllowFederatedUsers $False
+  - Per disabilitare la federazione e la connettività IM pubblica, impostare il valore della proprietà **AllowFederatedUsers** su False ($False):<br/><br/>Set-CsAccessEdgeConfiguration -AllowFederatedUsers $False
 
