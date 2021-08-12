@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderDetailPanelWhois
 description: 'Scopri cosa fare se il tuo gestore non è elencato in Skype for Business. '
-ms.openlocfilehash: 4354cb05aa28b09931f8f2524de2f01c6ef57f3f
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 263e8584179a523934ab76083b601854527bb995bc9f0297bf9bab34a012dd41
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237972"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320971"
 ---
 # <a name="what-if-my-phone-carrier-isnt-listed-as-the-source-carrier"></a>Cosa succede se il gestore telefonico non è elencato come gestore di origine?
 

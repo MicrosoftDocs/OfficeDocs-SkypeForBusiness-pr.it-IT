@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Bahrain.
-ms.openlocfilehash: 0cdc1839d4d88b9679ab6a4f551a905bdf1cf871
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2e3584b6ae4d941b0309b8725b0c4d2d5dc1fa26cb2daa4c6014766e41183634
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118405"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295243"
 ---
 # <a name="availability-in-bahrain"></a>Disponibilità in Bahrain
 

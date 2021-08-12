@@ -12,21 +12,21 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: bebd45d1-93c3-4e80-8933-755b699b2209
 description: 'Riepilogo: informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.'
-ms.openlocfilehash: 1fce0dbd0cc7b0595dcf3cd91baeba9ed364e28a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b7dbd8a4222065c2bc53029b75672d6905dcd73b3a79e0d35ebfc6ce980f9865
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51095490"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54311094"
 ---
 # <a name="apply-an-archiving-policy-to-users-in-skype-for-business-server"></a>Applicare un criterio di archiviazione agli utenti in Skype for Business Server
 
 **Riepilogo:** Informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.
   
-Se sono stati creati uno o più criteri utente per l'archiviazione per gli utenti ospitati in Skype for Business Server, è possibile implementare il supporto di archiviazione per utenti specifici applicando i criteri appropriati a tali utenti o gruppi di utenti. Ad esempio, se si crea un criterio per supportare l'archiviazione delle comunicazioni interne, è possibile applicarlo ad almeno un utente o gruppo di utenti per supportare l'archiviazione delle comunicazioni Skype for Business Server dell'utente.
+Se sono stati creati uno o più criteri utente per l'archiviazione per gli utenti ospitati in Skype for Business Server, è possibile implementare il supporto di archiviazione per utenti specifici applicando i criteri appropriati a tali utenti o gruppi di utenti. Ad esempio, se si crea un criterio per supportare l'archiviazione delle comunicazioni interne, è possibile applicarlo ad almeno un utente o a un gruppo di utenti per supportare l'archiviazione delle comunicazioni Skype for Business Server'utente.
   
 > [!NOTE]
-> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco di Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e Configure integration with Exchange storage for Skype for Business [Server.](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md) 
+> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco del Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place conservazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) and Configure integration with Exchange storage for [Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
   
 ## <a name="apply-a-user-policy-by-using-the-control-panel"></a>Applicare criteri utente tramite il Pannello di controllo
 
@@ -34,7 +34,7 @@ Per applicare un criterio utente tramite il Pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti** e quindi cercare l'account utente che si desidera configurare. 
     
@@ -47,9 +47,9 @@ Per applicare un criterio utente tramite il Pannello di controllo:
   
 6. Fare clic su **Commit**.
     
-## <a name="apply-a-user-policy-by-using-windows-powershell"></a>Applicare un criterio utente tramite Windows PowerShell
+## <a name="apply-a-user-policy-by-using-windows-powershell"></a>Applicare criteri utente tramite Windows PowerShell
 
-È inoltre possibile applicare un criterio utente utilizzando il cmdlet **Grant-CsArchivingPolicy Windows PowerShell.CsArchivingPolicy.**
+È inoltre possibile applicare un criterio utente utilizzando il cmdlet **Windows PowerShell Grant-CsArchivingPolicy.**
   
 Il comando seguente assegna il criterio di archiviazione per utente RedmondArchivingPolicy all'utente Ken Myer:
   

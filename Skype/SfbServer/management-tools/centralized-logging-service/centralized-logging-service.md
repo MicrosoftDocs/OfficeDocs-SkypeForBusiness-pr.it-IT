@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 975718a0-f3e3-404d-9453-6224e73bfdd0
 description: 'Riepilogo: informazioni sui componenti del servizio e sulle impostazioni di configurazione per il servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: 7cc49d258011334d7c72bca3f55d5f83ae5d06af
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 112a8d59637048729afcdf142fc891863365943593ac6ed7b0cd8f8cc84947d2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098872"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295403"
 ---
 # <a name="centralized-logging-service-in-skype-for-business-2015"></a>Servizio di registrazione centralizzato in Skype for Business 2015
  
@@ -44,15 +44,15 @@ Il servizio di registrazione centralizzata può:
     
   - Definire l'ambito per la sessione di registrazione dalle opzioni **Sito** (per eseguire le acquisizioni di registrazione solo nei computer in tale sito) o **Globale** (per eseguire acquisizioni di registrazione in tutti i computer della distribuzione).
     
-Il servizio di registrazione centralizzata è un potente strumento di risoluzione dei problemi di grandi o piccole dimensioni, dall'analisi delle cause radice ai problemi di prestazioni. Tutti gli esempi vengono visualizzati tramite Skype for Business Server Management Shell. La Guida viene fornita per lo strumento da riga di comando tramite lo strumento stesso, ma esiste un set limitato di funzioni che è possibile eseguire dalla riga di comando. Utilizzando Skype for Business Server Management Shell, si ha accesso a un set di funzionalità molto più grande e molto più configurabile, quindi dovrebbe essere sempre la prima scelta. 
+Il servizio di registrazione centralizzata è un potente strumento di risoluzione dei problemi di grandi o piccole dimensioni, dall'analisi delle cause radice ai problemi di prestazioni. Tutti gli esempi vengono visualizzati utilizzando Skype for Business Server Management Shell. La Guida viene fornita per lo strumento da riga di comando tramite lo strumento stesso, ma esiste un set limitato di funzioni che è possibile eseguire dalla riga di comando. Utilizzando Skype for Business Server Management Shell, è possibile accedere a un set di funzionalità molto più grande e molto più configurabile, quindi dovrebbe essere sempre la prima scelta. 
   
 ## <a name="logging-service-components"></a>Componenti del servizio di registrazione
 
  Il servizio di registrazione centralizzata viene eseguito in tutti i server della distribuzione ed è costituito dagli agenti e servizi seguenti:
   
-- L'agente del servizio di registrazione centralizzata ClsAgent viene eseguito in ogni computer in cui è distribuito Skype for Business Server. Ascolta ( sulle porte **TCP 50001-50003**) i comandi da ClsController su WCF e invia le risposte al controller. Gestisce le sessioni di registro (start/stop/update) e cerca i registri. Esegue inoltre operazioni di pulizia come l'archiviazione e l'eliminazione dei log. 
+- L'agente clsAgent del servizio di registrazione centralizzato viene eseguito in ogni computer Skype for Business Server distribuito. Ascolta ( sulle porte **TCP 50001-50003**) i comandi da ClsController su WCF e invia le risposte al controller. Gestisce le sessioni di registro (start/stop/update) e cerca i registri. Esegue inoltre operazioni di pulizia come l'archiviazione e l'eliminazione dei log. 
     
-- Cmdlet del controller del servizio di registrazione centralizzata Skype for Business Server Management Shell invia i comandi Start, Stop, Flush e Search a ClsAgent. Quando vengono inviati comandi di ricerca, i log risultanti vengono restituiti al ClsControllerLib.dll e aggregati. Il controller invia comandi all'agente, riceve lo stato di tali comandi e gestisce i dati del file di registro di ricerca così come vengono restituiti da tutti gli agenti in qualsiasi computer nell'ambito di ricerca e aggrega i dati di log in un set di output significativo e ordinato. Le informazioni negli argomenti seguenti sono incentrate sull'utilizzo di Skype for Business Server Management Shell.
+- Cmdlet del controller del servizio di registrazione centralizzata L'Skype for Business Server Management Shell invia i comandi Start, Stop, Flush e Search a ClsAgent. Quando vengono inviati comandi di ricerca, i log risultanti vengono restituiti al ClsControllerLib.dll e aggregati. Il controller invia comandi all'agente, riceve lo stato di tali comandi e gestisce i dati del file di registro di ricerca così come vengono restituiti da tutti gli agenti in qualsiasi computer nell'ambito di ricerca e aggrega i dati di log in un set di output significativo e ordinato. Le informazioni negli argomenti seguenti sono incentrate sull'utilizzo di Skype for Business Server Management Shell.
     
 **Comunicazioni di ClsController a ClsAgent**
 
@@ -65,11 +65,11 @@ ClsAgent mantiene un file di indice di tutti i file CACHE che si trova nel compu
 > [!NOTE]
 > I file che vengono spostati nella condivisione di file dal computer locale possono essere ricercati da ClsAgent. Dopo che ClsAgent sposta i file nella condivisione, la scadenza e la rimozione dei file non vengono gestite da ClsAgent. È necessario definire un'attività amministrativa per monitorare le dimensioni dei file nella condivisione ed eliminarli o archiviarli. 
   
-I file di log risultanti possono essere letti e analizzati mediante diversi strumenti, tra cui **Snooper.exe** e qualsiasi strumento in grado di leggere file di testo, come **Notepad.exe**. Snooper.exe fa parte degli strumenti di debug di Skype for Business Server 2015 ed è disponibile come [download Web.](https://go.microsoft.com/fwlink/p/?LinkId=285257)
+I file di log risultanti possono essere letti e analizzati mediante diversi strumenti, tra cui **Snooper.exe** e qualsiasi strumento in grado di leggere file di testo, come **Notepad.exe**. Snooper.exe fa parte degli strumenti di debug Skype for Business Server 2015 ed è disponibile come [download Web.](https://go.microsoft.com/fwlink/p/?LinkId=285257)
   
 Come OCSLogger, il servizio di registrazione centralizzata dispone di diversi componenti di cui eseguire la traccia e offre opzioni per selezionare i flag, ad esempio TF_COMPONENT e TF_DIAG. Il servizio di registrazione centralizzata mantiene inoltre le opzioni del livello di registrazione di OCSLogger.
   
-Il vantaggio più importante dell'utilizzo di Skype for Business Server Management Shell sulla riga di comando ClsController è che è possibile configurare e definire nuovi scenari utilizzando provider selezionati che hanno come destinazione lo spazio del problema, i flag personalizzati e i livelli di registrazione. Gli scenari disponibili in ClsController sono limitati a quelli definiti per l'eseguibile.
+Il vantaggio più importante dell'utilizzo di Skype for Business Server Management Shell sulla riga di comando clsController è che è possibile configurare e definire nuovi scenari utilizzando provider selezionati che hanno come destinazione lo spazio del problema, i flag personalizzati e i livelli di registrazione. Gli scenari disponibili in ClsController sono limitati a quelli definiti per l'eseguibile.
   
 Nelle versioni precedenti, OCSLogger.exe consente agli amministratori e al personale di supporto di raccogliere file di traccia dai computer nella distribuzione. OCSLogger, nonostante tutti i punti di forza, ha una lacuna. È possibile collegare i log a un solo computer alla volta. È possibile accedere a più computer usando copie separate di OCSLogger, tuttavia ciò produce più log e nessun modo semplice per aggregare i risultati.
   
@@ -85,7 +85,7 @@ Quando si verifica un problema, avviare un secondo scenario correlato al problem
 > [!TIP]
 > Quando viene presentato uno scenario di problema in Skype for Business Server, iniziare chiedendosi "Cosa si sa già del problema?" Se si quantificano i limiti del problema, è possibile eliminare gran parte delle entità operative in Skype for Business Server. 
   
-Considerare ad esempio uno scenario in cui si sa che gli utenti non ricevono risultati aggiornati quando cercano un contatto. Non ha senso cercare problemi nei componenti multimediali, nelle VoIP aziendale, nelle conferenze e in un certo numero di altri componenti. Ciò che potrebbe non essere noto è la posizione effettiva da cui trae origine il problema: lato client o lato server? I contatti vengono raccolti da Active Directory da User Replicator e recapitati al client tramite il server della Rubrica (ABServer). AbServer ottiene gli aggiornamenti dal database RTC (dove User Replicator li ha scritti) e li raccoglie nei file della rubrica, per impostazione predefinita - 1:30 AM. I client di Skype for Business Server recuperano la nuova rubrica in base a una pianificazione casuale. Poiché si conosce il funzionamento del processo, è possibile ridurre la ricerca della potenziale causa a un problema relativo ai dati raccolti da Active Directory da User Replicator, al server ABServer che non recupera e crea i file della rubrica o ai client che non scaricano il file della rubrica.
+Considerare ad esempio uno scenario in cui si sa che gli utenti non ricevono risultati aggiornati quando cercano un contatto. Non ha senso cercare problemi nei componenti multimediali, nelle VoIP aziendale, nelle conferenze e in un certo numero di altri componenti. Ciò che potrebbe non essere noto è la posizione effettiva da cui trae origine il problema: lato client o lato server? I contatti vengono raccolti da Active Directory da User Replicator e recapitati al client tramite il server della Rubrica (ABServer). AbServer ottiene gli aggiornamenti dal database RTC (dove User Replicator li ha scritti) e li raccoglie nei file della rubrica, per impostazione predefinita - 1:30 AM. I Skype for Business Server client recuperano la nuova rubrica in base a una pianificazione casuale. Poiché si conosce il funzionamento del processo, è possibile ridurre la ricerca della potenziale causa a un problema relativo ai dati raccolti da Active Directory da User Replicator, al server ABServer che non recupera e crea i file della rubrica o ai client che non scaricano il file della rubrica.
   
 ## <a name="current-configuration"></a>Configurazione corrente
 
@@ -93,7 +93,7 @@ Il servizio di registrazione centralizzata è configurato per definire l'obietti
   
 ### <a name="to-display-the-current-centralized-logging-service-configuration"></a>Per visualizzare la configurazione corrente del servizio di registrazione centralizzata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Digitare quanto segue al prompt della riga di comando:
     
@@ -112,7 +112,7 @@ Il servizio di registrazione centralizzata è configurato per definire l'obietti
 |:-----|:-----|
 |**Identity** <br/> |Identifica l'ambito e il nome della configurazione corrente. Esistono una sola configurazione a livello globale e una sola per sito.  <br/> |
 |**Scenari** <br/> |Elenco di tutti gli scenari definiti per questa configurazione.  <br/> |
-|**SearchTerms** <br/> |Termini di ricerca definiti per la configurazione. Microsoft 365 o Office 365, non distribuzioni locali.  <br/> |
+|**SearchTerms** <br/> |Termini di ricerca definiti per la configurazione. Microsoft 365 o Office 365, non le distribuzioni locali.  <br/> |
 |**SecurityGroups** <br/> |Gruppi di sicurezza definiti che controllano gli utenti, ovvero i membri dei gruppi di sicurezza, che possono vedere i computer in base al sito in cui si trovano. Il sito, in questo contesto, è il sito definito in Generatore di topologie.  <br/> |
 |**Aree geografiche** <br/> |Le aree definite vengono utilizzate per raccogliere i SecurityGroups in un'area, ad esempio EMEA.  <br/> |
 |**EtlFileRolloverSizeMB** <br/> |Il parametro indica le dimensioni massime del file di log prima che venga creato un nuovo file di log traccia eventi (.etl). Viene creato un nuovo file di log quando si raggiungono le dimensioni definite anche se non è stato ancora esaurito il tempo massimo impostato in EtlFileRolloverMinutes.  <br/> |

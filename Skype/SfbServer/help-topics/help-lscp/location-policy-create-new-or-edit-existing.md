@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d9b30b3b-570b-49a6-b2b4-46b0cf490153
 description: È possibile configurare i criteri percorso per determinare se enhanced 9-1-1 (E9-1-1) è abilitato e come viene utilizzato, nonché come vengono utilizzate le informazioni sulla posizione per utenti e contatti.
-ms.openlocfilehash: 587d239551111c028026aef463c853a1ac93714f
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: adb3129adbcee49ed20e6f7d7191d075487ea221c06c2db9c1d5e6003555675a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51099712"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54331588"
 ---
 # <a name="location-policy-create-new-or-edit-existing"></a>Criteri percorso: crearne di nuovi o modificare quelli esistenti
 
@@ -68,4 +68,4 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Bidiredirei** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore PSAP.
 
-Per informazioni dettagliate VoIP aziendale funzionalità e funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate VoIP aziendale funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.

@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come conversazioni, file, mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f98024b10cf6fc191e9225a447903ff6dc25d6ff
-ms.sourcegitcommit: 3db7c450d3afbc1049e1016d51016442e5764634
+ms.openlocfilehash: f78d4950f6c85910bb5b6c155c63a1048d73022d00ea9447fff3521c3b617fd6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203719"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295233"
 ---
 <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare schede predefinite e personalizzate in Microsoft Teams
 ==================================================

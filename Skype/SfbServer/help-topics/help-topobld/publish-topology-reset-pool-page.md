@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: de13aab5-ac3c-44ac-9484-f97cafcf203a
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: a7463a3089b3944817f266e0e279501c607d6569
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6e942fbfdc1ea17c6c59a2aa7bf9595736afe193579a1dd134d00a5150daa8f2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54341931"
 ---
 # <a name="publish-topology-reset-pool-page"></a>Pubblicare topologia, pagina Reimposta pool
  
@@ -30,4 +30,4 @@ Per aggiungere nuovi computer a un pool esistente, è necessario reimpostare il 
   
 ## <a name="see-also"></a>Vedere anche
 
-[Creare e pubblicare una nuova topologia in Skype for Business Server](../../deploy/install/create-and-publish-new-topology.md)
+[Creare e pubblicare una nuova topologia in Skype for Business Server 2015](../../deploy/install/create-and-publish-new-topology.md)

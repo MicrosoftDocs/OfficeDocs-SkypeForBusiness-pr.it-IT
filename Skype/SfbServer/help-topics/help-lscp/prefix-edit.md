@@ -15,17 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: a6e63c33-7927-4813-81cc-9624c2098177
 description: Per definire i prefissi o le cifre iniziali, aggiungere i prefissi numerici che devono essere gestiti da questa route, includendo il segno + se necessario. È ad esempio possibile creare una corrispondenza per tutti i numeri che iniziano con +123.
-ms.openlocfilehash: 12db5f6f7dfb92769f5c904c2ed412c2de606399
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 67a6598281267c6a36028b6030e0f1b2dd8b9c1adb5b3130ac986cf89e07d82c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49829336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54311274"
 ---
 # <a name="prefix-edit"></a>Modifica prefisso
  
 Per definire i prefissi o le cifre iniziali, aggiungere i prefissi numerici che devono essere gestiti da questa route, includendo il segno + se necessario. È ad esempio possibile creare una corrispondenza per tutti i numeri che iniziano con +123.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
   
 

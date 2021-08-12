@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Microsoft Teams e visite virtuali con l’app Bookings
-ms.openlocfilehash: e65e0b8c4af7397ebe0b152d2f977b2bf8cbb667
-ms.sourcegitcommit: f0e5da6136656261567ffe0fa3f2fedd901209a8
-ms.translationtype: HT
+ms.openlocfilehash: 9d2c2fe9fd1852d030d512d95bf5c944b8b1e1ed119b97a2bac23569cbb83f69
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "51891263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295203"
 ---
 # <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft Teams e l’app Bookings
 
@@ -53,7 +53,7 @@ L'app Microsoft Bookings per Teams è disponibile sul desktop e sul Web. L'app s
 
 ### <a name="control-access-to-bookings-within-your-organization"></a>Controllare l'accesso a Bookings all'interno dell'organizzazione
 
-Esistono diversi modi per controllare chi ha accesso all'app Bookings e a specifiche funzionalità dell'app. Per informazioni su come attivare o disattivare Microsoft Bookings nell'interfaccia di amministrazione di Microsoft 365 e su come creare criteri per l'app Bookings per consentire agli utenti selezionati di creare calendari di Bookings, vedere [Accedere a Microsoft Bookings](https://support.microsoft.com/it-IT/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce). Vedere anche come [Creare criteri per l'app Teams per aggiungere l'app Bookings per utenti selezionati](teams-app-setup-policies.md).
+Esistono diversi modi per controllare chi ha accesso all'app Bookings e a specifiche funzionalità dell'app. Per informazioni su come attivare o disattivare Microsoft Bookings nell'interfaccia di amministrazione di Microsoft 365 e su come creare criteri per l'app Bookings per consentire agli utenti selezionati di creare calendari di Bookings, vedere [Accedere a Microsoft Bookings](https://support.microsoft.com/en-us/office/get-access-to-microsoft-bookings-5382dc07-aaa5-45c9-8767-502333b214ce). Vedere anche come [Creare criteri per l'app Teams per aggiungere l'app Bookings per utenti selezionati](teams-app-setup-policies.md).
 
 ## <a name="recommended-meeting-policy-settings"></a>Impostazioni consigliate per i criteri di riunione
 

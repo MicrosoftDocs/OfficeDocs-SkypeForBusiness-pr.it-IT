@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e8547d7b-f74d-4a73-9a7d-df20d7a87fcd
 description: 'Riepilogo: informazioni su come definire, creare e modificare una regola di normalizzazione in Skype for Business Server.'
-ms.openlocfilehash: 3550e27884d125f065c4688fec2ace797f9e8ce2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e491c58951be9c5341927a4edc949f7d119145533d77b9f2cb65d9e6a1a3cc4f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320848"
 ---
 # <a name="create-or-modify-a-normalization-rule-in-skype-for-business"></a>Creare o modificare una regola di normalizzazione in Skype for Business
 
@@ -31,9 +31,9 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
 ### <a name="to-define-a-normalization-rule-by-using-build-a-normalization-rule"></a>Per definire una regola di normalizzazione tramite La creazione di una regola di normalizzazione
 
-1. Aprire il Pannello di controllo di Skype for Business Server
+1. Aprire Skype for Business Server pannello di controllo
 
-2. (Facoltativo) Seguire i passaggi descritti in Creare o modificare un [dial plan in Skype for Business Server](dial-plans.md) fino al passaggio 11 o Modificare un dial [plan](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-dial-plan) fino al passaggio 10.
+2. (Facoltativo) Seguire i passaggi descritti in [Create or modify a dial plan in Skype for Business Server](dial-plans.md) through step 11 or Modify a Dial [Plan](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-dial-plan) through step 10.
 
 3. In **Nuova regola di normalizzazione** o Modifica regola di **normalizzazione** digitare un nome che descriva il modello di numero normalizzato in **Nome,** ad esempio 5DigitExtension.
 
@@ -51,7 +51,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
      I valori immessi in questi campi vengono riportati nei campi **Formato per corrispondenza** e **Regola di conversione**. Se ad esempio  si lascia vuota l'opzione Cifre iniziale, digitare 7 nel campo Lunghezza e selezionare Esattamente **e** specificare 0 in  **Cifre** da rimuovere, l'espressione regolare risultante nel campo **Motivo** da trovare corrisponderà alla seguente:
 
-     ^(\d {7} )$
+     ^(\d{7})$
 
 6. In **Regola di conversione** specificare un modello per il formato dei numeri di telefono E.164 convertiti, come indicato di seguito:
 
@@ -79,9 +79,9 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
 ### <a name="to-define-a-normalization-rule-manually"></a>Per definire manualmente una regola di normalizzazione
 
-1. Aprire il Pannello di controllo di Skype for Business Server
+1. Aprire Skype for Business Server pannello di controllo
 
-2. (Facoltativo) Seguire i passaggi descritti in [Creare o modificare un dial plan in Skype for Business Server.](dial-plans.md)
+2. (Facoltativo) Seguire i passaggi descritti in [Creare o modificare un dial plan in Skype for Business Server](dial-plans.md).
 
 3. In Nuova regola  **di normalizzazione** o Modifica regola di normalizzazione digitare un nome che descriva il modello di numero normalizzato in **Nome** , ad esempio Nome5DigitExtension.
 
@@ -95,7 +95,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
    - In **Regola di conversione** specificare un modello per il formato dei numeri di telefono E.164 convertiti.
 
-     Ad esempio, se si immette ^(\d )$ in Corrispondenza questo modello e {7} +1425$1 in Regola di conversione, la regola normalizza da 5550100 a +14255550100.  
+     Ad esempio, se si immette ^(\d )$ in Corrispondenza questo modello e {7} +1425$1 in **Regola** di conversione, la regola normalizza da 5550100 a +14255550100. 
 
 7. (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 

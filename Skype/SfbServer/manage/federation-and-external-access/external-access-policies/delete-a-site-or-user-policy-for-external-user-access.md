@@ -15,30 +15,30 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella pagina Criteri di accesso esterno.
-ms.openlocfilehash: 154fb4434e074a3585a817994cb6b919a2b755eef8d5a8e6a082cacad4e25aae
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 79858592b8ba7dbcee692807bba3d2a472a8579cbc843ddeb96c25c811cc6df7
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309255"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57848681"
 ---
 # <a name="delete-a-site-or-user-policy-for-external-user-access"></a>Eliminare criteri sito o utente per l'accesso degli utenti esterni
 
-Se sono stati creati o configurati criteri di accesso per gli utenti esterni che non si desidera più utilizzare, è possibile eseguire le operazioni seguenti:
+Se sono stati creati o configurati criteri di accesso utente esterno che non si desidera più utilizzare, è possibile eseguire il metodo seguente:
 
   - Eliminare gli eventuali criteri a livello di sito o utente creati.
 
   - Ripristinare le impostazioni predefinite per i criteri globali che negano qualsiasi tipo di accesso agli utenti esterni. I criteri globali non possono essere eliminati.
 
 
-È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella **pagina Criteri di accesso** esterno. L'eliminazione di criteri globali non ne implica l'effettiva rimozione, ma solo il ripristino delle impostazioni predefinite, che non includono il supporto per alcuna opzione di accesso utente esterno. Per informazioni dettagliate sulla reimpostazione del criterio globale, vedere [Reset the global policy for external user access](reset-the-global-policy-for-external-user-access.md).
+È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella **pagina Criteri di accesso** esterno. L'eliminazione del criterio globale non lo elimina effettivamente, ma lo reimposta solo alle impostazioni predefinite, che non includono il supporto per le opzioni di accesso degli utenti esterni. Per informazioni dettagliate sulla reimpostazione del criterio globale, vedere [Reset the global policy for external user access](reset-the-global-policy-for-external-user-access.md).
 
 
 ## <a name="to-delete-a-site-or-user-policy-for-external-user-access"></a>Per eliminare criteri sito o utente per l'accesso utente esterno
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo. 
 
 3.  Fare clic su **Accesso utente esterno** e quindi su **Criteri di accesso esterno**.
 
@@ -54,23 +54,17 @@ I criteri di accesso esterno possono essere eliminati utilizzando Windows PowerS
 
 ## <a name="to-remove-a-specific-external-access-policy"></a>Per rimuovere un criterio di accesso esterno specifico
 
-  - Questo comando rimuove i criteri di accesso esterno applicati al sito Redmond:
-    
-        Remove-CsExternalAccessPolicy -Identity "site:Redmond"
+  - Questo comando rimuove i criteri di accesso esterno applicati al sito Redmond:<br/><br/>Remove-CsExternalAccessPolicy -Identity "site:Redmond"
 
 
 ## <a name="to-remove-all-the-external-access-policies-applied-to-the-per-user-scope"></a>Per rimuovere tutti i criteri di accesso esterno applicati all'ambito per utente
 
-  - Questo comando rimuove tutti i criteri di accesso esterno configurati nell'ambito "per utente":
-    
-        Get-CsExternalAccessPolicy -Filter "tag:*" | Remove-CsExternalAccessPolicy
+  - Questo comando rimuove tutti i criteri di accesso esterno configurati nell'ambito "per utente":<br/><br/>Get-CsExternalAccessPolicy -Filter "tag:*" | Remove-CsExternalAccessPolicy
 
 
 ## <a name="to-remove-all-the-external-access-policies-where-outside-user-access-is-disabled"></a>Per rimuovere tutti i criteri di accesso esterno in cui l'accesso utente esterno è disabilitato
 
-  - Questo comando elimina tutti i criteri di accesso esterno dove l'accesso esterno dell'utente è stato disattivato:
-    
-        Get-CsExternalAccessPolicy | Where-Object {$_.EnableOutsideAccess -eq $False} | Remove-CsExternalAccessPolicy
+  - Questo comando elimina tutti i criteri di accesso esterno dove l'accesso esterno dell'utente è stato disattivato:<br/><br/>Get-CsExternalAccessPolicy | Where-Object {$_. EnableOutsideAccess -eq $False} | Remove-CsExternalAccessPolicy
 
 
 Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [Remove-CsExternalAccessPolicy.](/powershell/module/skype/Remove-CsExternalAccessPolicy)

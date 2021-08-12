@@ -14,13 +14,13 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0d49587e-5079-4fe0-a9b9-fb0853811fca
-description: "Nel nodo Pool Edge Server vengono elencati i pool Edge Server della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: eb7c71e95364087f094e22fa4d9337ed93f69f5e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Nel nodo Pool Edge Server vengono elencati i pool Edge Server della topologia. È possibile eseguire l'operazione seguente:"
+ms.openlocfilehash: 490d24a99c64d5fe0263bd8e8eabe8074ff2d2af3cb162482252bf86f356ffeb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54286895"
 ---
 # <a name="edge-servers-scope-node"></a>Nodo dell'ambito dei server perimetrali
  
@@ -30,7 +30,7 @@ Nel nodo **Pool Edge Server** vengono elencati i pool Edge Server della topologi
     
 Oltre alle opzioni per il pool di server perimetrali, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
     
 - **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     

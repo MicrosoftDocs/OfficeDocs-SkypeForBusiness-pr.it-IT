@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ca873f7e-b18b-4eaf-8db0-5f9d5a9b60a1
 description: Nella visualizzazione ErrorReport vengono archiviate informazioni sugli errori segnalati. Ogni record corrisponde a un'occorrenza di un errore. Gli errori vengono acquisiti dall'agente registrazione dettagli chiamata in esecuzione nel Front End Server o inviati dal client. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: e00e2bddaea34be6b09bc211991539ad6123603e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 324c22f58883207d49c0224043b8672560f1cf6e64551ca93b9ac43540d46ceb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49821716"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54295383"
 ---
 # <a name="errorreport-view"></a>Visualizzazione ErrorReport
  
@@ -30,31 +30,31 @@ Nella visualizzazione ErrorReport vengono archiviate informazioni sugli errori s
 |**ErrorReportSeq** <br/> |int  <br/> |Numero ID per identificare l'errore. Valore utilizzato con ErrorTime per identificare in modo univoco un errore.  <br/> |
 |**MsDiagId** <br/> |int  <br/> |ID diagnostica della segnalazione errori.  <br/> |
 |**FromUri** <br/> |nvarchar(450)  <br/> |URI dell'utente che ha dato origine all'errore.  <br/> |
-|**FromUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha dato origine all'errore. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
+|**FromUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha dato origine all'errore. Per ulteriori informazioni, vedere la tabella [UriTypes.](uritypes.md) <br/> |
 |**FromTenant** <br/> |nvarchar(256)  <br/> |Tenant dell'utente che ha dato origine all'errore. Per ulteriori [informazioni, vedere](tenants.md) la tabella Tenants. <br/> |
 |**ToUri** <br/> |nvarchar(450)  <br/> |URI dell'utente di destinazione della segnalazioni errori.  <br/> |
 |**ToUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente di destinazione della segnalazione errori. Per ulteriori informazioni, vedere la tabella UriTypes.  <br/> |
 |**ToTenant** <br/> |nvarchar(256)  <br/> |Tenant dell'utente di destinazione della segnalazione errori. Per ulteriori [informazioni, vedere](tenants.md) la tabella Tenants. <br/> |
 |**ConferenceUri** <br/> |nvarchar(450)  <br/> |URI della conferenza di destinazione della segnalazioni errori.  <br/> |
-|**ConferenceUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI della conferenza di destinazione della segnalazioni errori. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
-|**SessionIdTime** <br/> |datetime  <br/> |Data/ora della richiesta di sessione che ha dato origine alla segnalazione errori. Valore utilizzato con SessionIDSeq per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs in Skype for Business Server 2015.](dialogs.md) <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare la richiesta di sessione che ha dato origine alla segnalazione errori. Valore utilizzato con SessionIDTime per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs in Skype for Business Server 2015.](dialogs.md) <br/> |
+|**ConferenceUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI della conferenza di destinazione della segnalazioni errori. Per ulteriori informazioni, vedere la tabella [UriTypes.](uritypes.md) <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Data/ora della richiesta di sessione che ha dato origine alla segnalazione errori. Valore utilizzato con SessionIDSeq per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare la richiesta di sessione che ha dato origine alla segnalazione errori. Valore utilizzato con SessionIDTime per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**DialogId** <br/> |varstring(775)  <br/> |ID dialogo SIP della sessione che ha dato origine all'errore. Il formato è il seguente:  <br/> dialog;from-tag;to-tag  <br/> Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:  <br/> cast(cast(ExternalId as varbinary(max)) as varchar(max))  <br/> |
 |**ClientVersion** <br/> |nvarchar(256)  <br/> |Versione del client utilizzato dall'utente che ha dato origine all'errore.  <br/> |
-|**ClientType** <br/> |int  <br/> |Client utilizzato dall'utente che ha dato origine all'errore. Per ulteriori dettagli, vedere la tabella [UserAgentDef.](useragentdef.md) <br/> |
+|**ClientType** <br/> |int  <br/> |Client utilizzato dall'utente che ha dato origine all'errore. Per ulteriori dettagli, vedere la [tabella UserAgentDef.](useragentdef.md) <br/> |
 |**ClientCategory** <br/> |nvarchar(64)  <br/> |Nome della categoria del client utilizzato dall'utente che ha dato origine all'errore.  <br/> |
 |**Source** <br/> |nvarchar(256)  <br/> |Nome del server che ha dato origine all'errore (se il rapporto è stato inviato da un componente del server).  <br/> |
 |**Applicazione** <br/> |nvarchar(256)  <br/> |Nome dell'applicazione che ha dato origine all'errore (se il rapporto è stato inviato da un componente del server).  <br/> |
 |**ResponseCode** <br/> |int  <br/> |Codice di risposta SIP per la sessione del messaggio SIP contenente la segnalazione errori.  <br/> |
 |**RequestType** <br/> |varchar(max)  <br/> |Tipo della richiesta non riuscita.  <br/> |
 |**ContentType** <br/> |varchar(max)  <br/> |Tipo di contenuto della richiesta non riuscita.  <br/> |
-|**CallType** <br/> |nvarchar(256)  <br/> |Tipo di sessione. Per ulteriori informazioni, vedere la tabella [CallType in Skype for Business Server 2015.](calltype.md) <br/> |
+|**CallType** <br/> |nvarchar(256)  <br/> |Tipo di sessione. Per ulteriori informazioni, vedere la tabella [CallType Skype for Business Server 2015.](calltype.md) <br/> |
 |**TelemetryId** <br/> |uniqueidentifier  <br/> |Identificatore univoco di correlazione delle informazioni sul tempo di partecipazione per i diversi componenti coinvolti in una conferenza.  <br/> |
 |**SetupTime** <br/> |int  <br/> |Tempo (in millisecondi) richiesto da un componente specifico per partecipare a una conferenza.  <br/> |
 |**IsCapturedByServer** <br/> |bit  <br/> |Indica se la segnalazione errori è stata acquisita dall'agente registrazione dettagli chiamata in esecuzione nel Front End Server o è stata inviata dal client.  <br/> |
-|**Flag** <br/> |smallint  <br/> |Riservato per utilizzi futuri.  <br/> |
+|**Contrassegno** <br/> |smallint  <br/> |Riservato per utilizzi futuri.  <br/> |
 |**MsDiagHeader** <br/> |varchar(max)  <br/> |Informazioni aggiuntive sull'errore.  <br/> |
-|**FrontEnd** <br/> |nvarchar  <br/> |Nome di dominio completo del Front End Server che ha inviato il rapporto.  <br/> |
+|**FrontEnd** <br/> |nvarchar  <br/> |Nome di dominio completo del server Front End che ha inviato il report.  <br/> |
 |**Pool** <br/> |nvarchar  <br/> |Nome di dominio completo del pool contenente il Front End Server che ha inviato il report.  <br/> |
    
 

@@ -14,23 +14,23 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9591e691-63de-4c19-96a4-3bb394d1d4e2
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: c789a1e745b1f00c4d6757cc30415e4107c67486
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 1cd113fe26b440f07dcd2921d6d020e8fc6cdaf9c4c05d243f075eebf0a8e91a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116384"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54342141"
 ---
 # <a name="trunk-configuration-create-new-or-edit-existing"></a>Configurazione trunk: crearne una nuova o modificarne una esistente
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Configurare un trunk con bypass multimediale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/configure-trunk-with-media-bypass.md)
 
 - [Configurare un trunk senza bypass multimediale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/configure-trunk-without-media-bypass.md)
 
-- [Creare o modificare una regola di conversione per la presentazione ID chiamata in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
+- [Creare o modificare una regola di conversione per la presentazione ID denominata in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/called-id-presentation-rules.md)
 
 - [Creare o modificare manualmente una regola di conversione](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually)
 
