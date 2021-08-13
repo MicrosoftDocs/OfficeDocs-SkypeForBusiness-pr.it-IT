@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni su come preparare l'infrastruttura per la distribuzione di Microsoft Teams Rooms in modo da poter sfruttare tutte le funzionalità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 81aa41895f11b65c9406bd30311f2fcb974949a7
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 46f44d9a07aadc06598495a765bedcd67d1ed03b395c4d9cf4e6696023227c0a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117424"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54346173"
 ---
 # <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
@@ -129,7 +129,7 @@ I pacchetti di provisioning verranno utilizzati per eseguire l'autenticazione Ex
 Dopo l'aggiunta al dominio, è possibile usare Criteri di gruppo o Gestione computer locale per impostare un gruppo di sicurezza come amministratore locale come per un PC Windows nel dominio. Chiunque sia membro di quel gruppo di sicurezza può immettere le proprie credenziali e sbloccare Impostazioni.
   
 > [!NOTE]
-> Se il dispositivo Microsoft Teams Rooms perde la relazione di trust con il dominio, ad esempio se si rimuove il Microsoft Teams Rooms dal dominio dopo che è stato aggiunto al dominio, non sarà possibile eseguire l'autenticazione nel dispositivo e aprire Impostazioni. La soluzione alternativa consiste nell'accedere con l'account di amministratore locale. 
+> Se il dispositivo Microsoft Teams Rooms perde la relazione di trust con il dominio, ad esempio se si rimuove il Microsoft Teams Rooms dal dominio dopo che è stato aggiunto al dominio, non sarà possibile eseguire l'autenticazione nel dispositivo e aprire Impostazioni. La soluzione alternativa consiste nell'accedere con l'account amministratore locale. 
   
 ## <a name="local-accounts"></a>Account locali
 

@@ -15,19 +15,19 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 678689e4-d547-499b-be64-7d8f16dd8668
 description: Leggere questo articolo per informazioni sulla distribuzione di Microsoft Teams Rooms in Android.
-ms.openlocfilehash: 3da0192ee3676f5ff7294ba719c778ea7b1cc7b2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 3ea15b8d242c9aa4685b91cdffb13c7c3a55a752f8a1c9d387f7c858f04845ca
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120798"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54321498"
 ---
 # <a name="deploy-microsoft-teams-rooms-on-android"></a>Distribuire Microsoft Teams Rooms in Android
 
 La distribuzione Microsoft Teams Rooms in Android può essere suddivisa nelle fasi seguenti:
 
 - **Conformità del sito** Verificare che le posizioni di distribuzione (sale) soddisfino i requisiti di distribuzione.
-- **Conformità del servizio** Creare account delle risorse e assegnarli ai dispositivi ([vedere Creare un account delle risorse usando](resource-account-ui.md)l'interfaccia Microsoft 365 di amministrazione ). Anche se è consigliabile usare una licenza sala dedicata, un account utente finale con licenza appropriata può anche accedere a Teams Rooms su Android.
+- **Conformità del servizio** Creare account delle risorse e assegnarli ai dispositivi ([vedere Creare un account delle risorse usando](resource-account-ui.md)il interfaccia di amministrazione di Microsoft 365 ). Anche se è consigliabile usare una licenza sala dedicata, un account utente finale con licenza appropriata può anche accedere a Teams Rooms su Android.
 - **Configurazione e distribuzione** Configurare Teams Rooms e collegare le periferiche necessarie (vedere la documentazione del produttore per informazioni dettagliate).
 
 Per gestire Teams Rooms, è necessario essere un amministratore globale, un amministratore Teams Service o un amministratore Teams dispositivo. Per altre informazioni sui ruoli di amministratore, vedere Usare Microsoft Teams [di amministratore per gestire Teams](../using-admin-roles.md).
@@ -70,7 +70,7 @@ Quando si crea un account delle risorse, è possibile scegliere se consentire al
 
 [!INCLUDE [m365-teams-resource-account-difference](../includes/m365-teams-resource-account-difference.md)]
 
-Per altre informazioni sugli account Microsoft 365 risorse, vedere Creare un account delle risorse usando l'interfaccia Microsoft 365 [di amministrazione.](resource-account-ui.md)
+Per altre informazioni sugli account Microsoft 365 risorse, vedere [Creare un account delle risorse usando](resource-account-ui.md)il interfaccia di amministrazione di Microsoft 365 .
 
 |    |     |
 |-----------|------------|
@@ -89,7 +89,7 @@ La pianificazione della configurazione e della distribuzione riguarda le aree ch
 
 ### <a name="account-provisioning"></a>Provisioning dell'account
 
-Se si prevede di usare gli account delle risorse di Microsoft 365 per consentire agli utenti di prenotare barre di collaborazione, seguire le istruzioni in Creare un account delle risorse usando l'interfaccia di amministrazione di [Microsoft 365](resource-account-ui.md) per creare un account delle risorse di Microsoft 365 per ogni barra di collaborazione che ne richiede uno. Qui è anche necessario aggiungere una licenza Sala riunioni all'account della risorsa e, se si vogliono effettuare o ricevere chiamate da o verso numeri di telefono esterni, una licenza Piano per chiamate o Voce aziendale se l'organizzazione non usa Il routing diretto.
+Se si prevede di usare gli account delle risorse Microsoft 365 per consentire agli utenti di prenotare barre di collaborazione, seguire le istruzioni in Creare un account delle risorse usando il [interfaccia di amministrazione di Microsoft 365](resource-account-ui.md) per creare un account delle risorse di Microsoft 365 per ogni barra di collaborazione che ne ha bisogno. Qui è anche necessario aggiungere una licenza Sala riunioni all'account della risorsa e, se si vogliono effettuare o ricevere chiamate da o verso numeri di telefono esterni, una licenza Piano per chiamate o Voce aziendale se l'organizzazione non usa Il routing diretto.
 
 Se si vuole assegnare Teams Rooms a singoli utenti per l'uso privato, non è necessario configurare altri account. Gli utenti possono accedere alle barre di collaborazione usando gli account personali.
 

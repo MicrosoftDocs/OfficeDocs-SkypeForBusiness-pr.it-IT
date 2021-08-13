@@ -17,12 +17,12 @@ f1.keywords:
 description: Protocolli di routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 04e9507595ef721ced5d47eb58646559601c5cab
-ms.sourcegitcommit: 8750f98d59e74e3835d762d510fb0e038c8f17eb
+ms.openlocfilehash: 3a6bafcc7aade115684bce8621877f6fa6f196435b69c4b8388af731997b5dab
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51899127"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54321448"
 ---
 # <a name="direct-routing---sip-protocol"></a>Routing diretto - Protocollo SIP
 

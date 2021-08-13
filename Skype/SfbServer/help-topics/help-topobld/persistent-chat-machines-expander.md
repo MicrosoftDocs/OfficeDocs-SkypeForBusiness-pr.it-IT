@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 15bc1c8f-71bd-4d66-bba1-cac0f2fe90bf
-description: È possibile attivare o disattivare un server Chat persistente o un pool di server Chat persistente distribuito utilizzando i server o i pool elencati nelle impostazioni dello stato del computer. Selezionare un server o pool dall'elenco e fare clic sul pulsante Rendi attivo per impostare un server o pool come attivo.
-ms.openlocfilehash: f60b45fc764ac5620a33fe7bf012880f7cc89971
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: È possibile attivare o disattivare un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati nelle impostazioni dello stato del computer. Selezionare un server o pool dall'elenco e fare clic sul pulsante Rendi attivo per impostare un server o pool come attivo.
+ms.openlocfilehash: 4086a5732d9bbb047d45d28295de272fc7649df5808bb4b18d8db9392a934ae3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54335156"
 ---
 # <a name="persistent-chat-machines-expander"></a>Espansione dei computer Persistent Chat
  
-È possibile attivare o disattivare un server Chat persistente o un pool di server Chat persistente distribuito utilizzando i server o i pool elencati nelle impostazioni **dello stato del computer.** Selezionare un server o pool dall'elenco e fare clic sul pulsante **Rendi attivo** per impostare un server o pool come attivo.
+È possibile attivare o disattivare un server Chat persistente distribuito o un pool di server Chat persistente utilizzando i server o i pool elencati in **Impostazioni stato computer**. Selezionare un server o pool dall'elenco e fare clic sul pulsante **Rendi attivo** per impostare un server o pool come attivo.
   
-Per impostare un server Chat persistente distribuito o un pool di server Chat persistente come inattivo, selezionare il server o il pool nell'elenco e fare clic su **Rendi inattivo.** Almeno un server deve essere impostato su attivo.
+Per impostare un server Chat persistente distribuito o un pool di server Chat persistente su inattivo, selezionare il server o il pool nell'elenco e fare clic su **Rendi inattivo**. Almeno un server deve essere impostato su attivo.
   
  **OK** Accetta le modifiche apportate nella finestra di dialogo e ne esegue il commit.
   
@@ -36,6 +36,6 @@ Per impostare un server Chat persistente distribuito o un pool di server Chat pe
   
 ## <a name="see-also"></a>Vedere anche
 
-[Pianificare il server Chat persistente in Skype for Business Server](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
+[Pianificare il server Chat persistente in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
   
-[Aggiungere il server Chat persistente alla topologia di Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)
+[Aggiungere un server Chat persistente alla topologia Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)

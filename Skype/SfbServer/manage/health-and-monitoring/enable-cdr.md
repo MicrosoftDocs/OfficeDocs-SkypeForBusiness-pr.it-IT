@@ -11,13 +11,13 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 3b28e432-596f-45a5-a070-577d6fa748d9
-description: 'Riepilogo: informazioni su come abilitare i record di registrazione dettagli chiamata in Skype for Business Server.'
-ms.openlocfilehash: e2f652eeef77c336fb34be07c123f1ef026d458c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: informazioni su come abilitare i record di registrazione dettagli chiamata (CDR) in Skype for Business Server.'
+ms.openlocfilehash: 1d09e637d75b9617abf669f75e96076333380a075010bd3d641f4c5189be9d89
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51095230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54301382"
 ---
 # <a name="enable-call-detail-recording-in-skype-for-business-server"></a>Abilitare la registrazione dettagli chiamata in Skype for Business Server
 
@@ -30,11 +30,11 @@ Utilizzare la procedura seguente per abilitare la registrazione dettagli chiamat
 > [!NOTE]
 > Per abilitare la registrazione dettagli chiamata, è necessario configurare il monitoraggio e un database di monitoraggio. Per informazioni dettagliate, vedere [Deploying Monitoring](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-monitoring).
 
-### <a name="to-enable-cdr-with-skype-for-business-server-control-panel"></a>Per abilitare la registrazione cdR con il Pannello di controllo di Skype for Business Server
+### <a name="to-enable-cdr-with-skype-for-business-server-control-panel"></a>Per abilitare la registrazione cdR con Skype for Business Server pannello di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
 
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.
 
 3. Nella barra di spostamento sinistra fare clic su **Monitoraggio e archiviazione** e quindi su **Registrazione dettagli chiamata**.
 
@@ -45,7 +45,7 @@ Utilizzare la procedura seguente per abilitare la registrazione dettagli chiamat
 
 ## <a name="enabling-cdr-by-using-windows-powershell-cmdlets"></a>Abilitazione della registrazione cdR tramite Windows PowerShell cmdlet
 
-È possibile abilitare la registrazione cdR utilizzando Windows PowerShell e il cmdlet **Set-CsCdrConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo di blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile abilitare la registrazione cdR utilizzando Windows PowerShell e il cmdlet **Set-CsCdrConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
 
 ### <a name="to-enable-cdr-for-a-single-location"></a>Per abilitare la funzionalità CR per una sola postazione
 

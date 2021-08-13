@@ -22,12 +22,12 @@ ms.reviewer: islubin
 description: Informazioni su come usare i ruoli amministrativi per designare amministratori che hanno bisogno di diversi livelli di accesso per gestire i Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c8ede97c91254c2dfeace83302c20e310e62be12
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 7032a27c5d6686d282d3b73f7d08edf0dac0d29a52c1e219cda908c412d42bd2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54321058"
 ---
 # <a name="use-microsoft-teams-administrator-roles-to-manage-teams"></a>Usare i ruoli di amministratore di Microsoft Teams per gestire Teams.
 

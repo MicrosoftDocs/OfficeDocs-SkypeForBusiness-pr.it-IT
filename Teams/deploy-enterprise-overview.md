@@ -16,19 +16,19 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bd3e60fafecd3cf025187935a9dc28b492c39d1b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f8521de23466f0551d9c09e072aa0b10b487bbedd6ed473e4ff2a9997f456d28
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121414"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54346312"
 ---
 # <a name="teams-enterprise-deployment-overview"></a>Panoramica della distribuzione aziendale di Teams
 
-Per le aziende di medie e grandi dimensioni, è necessario determinare come verrà distribuito il servizio agli utenti, come distribuire il client Microsoft Teams agli utenti, in che modo la progettazione della rete potrebbe influire sulla qualità delle comunicazioni in tempo reale e così via. Vedere le sezioni seguenti per trovare suggerimenti ad articoli utili per pianificare Teams nell'organizzazione.
+Per le aziende di medie e grandi dimensioni, è necessario determinare come verrà distribuito il servizio agli utenti, come distribuire il client Microsoft Teams agli utenti, in che modo la progettazione della rete potrebbe influire sulla qualità delle comunicazioni in tempo reale e così via. Consultare le sezioni seguenti per riferimenti ad articoli utili alla pianificazione di Teams all’interno dell’organizzazione.
 
 > [!NOTE]
-> Se tutto ciò è già stato fatto, è consigliabile iniziare la distribuzione di Teams attraverso una distribuzione pilota. Una distribuzione pilota consentirà all’utente e agli early adopter di acquisire familiarità con Teams e le sue funzionalità prima della pianificazione e della distribuzione finale. Per altre informazioni su come avviare la distribuzione pilota, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md).
+> Se è già stato fatto, è consigliabile iniziare la distribuzione di Teams con una distribuzione pilota. Una distribuzione pilota consentirà all’utente e agli early adopter di acquisire familiarità con Teams e le sue funzionalità prima della pianificazione e della distribuzione finale. Per altre informazioni su come avviare la distribuzione pilota, vedere [Introduzione a Microsoft Teams](get-started-with-teams-quick-start.md).
 
 Quando si sono lette le sezioni seguenti e ci si appresta a distribuire Teams nell'organizzazione, vedere [Configurare Microsoft Teams nell'organizzazione](deploy-enterprise-setup.md).
 

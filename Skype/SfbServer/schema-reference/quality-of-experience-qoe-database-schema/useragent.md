@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: d6bda1c0-b053-457a-9ffa-2ae859788775
 description: La tabella UserAgent è una tabella di supporto in cui è archiviato un elenco dei vari agenti utente che hanno partecipato alle sessioni registrate nel database. Ogni record nella tabella rappresenta un agente utente
-ms.openlocfilehash: a1d0e647ff78d409555988a27592228fac2643be
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: a2480131b224dfe0469b39e34296b7848461bb33bd71c39c313016f8203f6266
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54301252"
 ---
 # <a name="useragent-table"></a>Tabella UserAgent
  
@@ -28,6 +28,6 @@ La tabella UserAgent è una tabella di supporto in cui è archiviato un elenco d
 |:-----|:-----|:-----|:-----|
 |**UserAgentKey** <br/> |int  <br/> |Principale  <br/> |Numero univoco che identifica l'agente utente.  <br/> |
 |**UserAgent** <br/> |nvarchar(256)  <br/> |Univoco  <br/> |Stringa agente utente.  <br/> |
-|**UAType** <br/> |smallint  <br/> | <br/> |1 è Mediation Server.  <br/> 2 è A/V Conferencing Server.  <br/> 4 è Skype for Business.  <br/> 8 è telefono IP.  <br/> 16 è live meeting console.  <br/> 32 è lo strumento di convalida della distribuzione (DVT).  <br/> 64 è Skype for Business Server su computer Macintosh.  <br/> 128 è Skype for Business Server Attendant.  <br/> 256 è il servizio Annuncio conferenza.  <br/> 512 è il numero di Operatore automatico.  <br/> 1024 è l'applicazione Response Group.  <br/> Il 2048 è esterno al controllo vocale.  <br/> |
+|**UAType** <br/> |smallint  <br/> | <br/> |1 è Mediation Server.  <br/> 2 è A/V Conferencing Server.  <br/> 4 è Skype for Business.  <br/> 8 è ip Telefono.  <br/> 16 è Live Meeting Console.  <br/> 32 è lo strumento di convalida della distribuzione (DVT).  <br/> 64 è Skype for Business Server computer Macintosh.  <br/> 128 è Skype for Business Server Attendant.  <br/> 256 è Annuncio conferenza servizio.  <br/> 512 è Conferencing Operatore automatico.  <br/> 1024 è l'applicazione Response Group.  <br/> 2048 è Outside Voice Control.  <br/> |
    
 

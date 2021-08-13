@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: d9aa622a-95a3-4d8e-8d49-cbfe183f25bf
 description: 'Riepilogo: leggere questo argomento per informazioni su come pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: d29271b314981f3de0eb7bd0b963637c554fb26f
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 18e5a3e87dae7f65cb8b58788bd1b1b1be02ccc9c6b1f14492cd7da629e5c790
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54301342"
 ---
 # <a name="plan-for-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
  
@@ -30,49 +30,49 @@ La disponibilità elevata e il ripristino di emergenza per il server Chat persis
 > L'SQL gruppi di disponibilità AlwaysOn non è supportato con i database del server Chat persistente. 
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. Le stesse funzionalità sono disponibili in Teams. Per altre informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare Chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="resource-requirements"></a>Requisiti in termini di risorse
 
-Prima di configurare il server Chat persistente per la disponibilità elevata e il ripristino di emergenza, verificare di disporre delle risorse aggiuntive seguenti. 
+Prima di configurare il server Chat persistente per la disponibilità elevata e il ripristino di emergenza, assicurarsi di disporre delle risorse aggiuntive seguenti. 
   
-- Un'istanza di database dedicata che si trova nello stesso data center fisico in cui si trova il front-end principale del servizio del server Chat persistente. Questo database fungerà da SQL Server mirror per il database di Persistent Chat primario. Facoltativamente, designare un SQL Server aggiuntivo da utilizzare come controllo del mirroring se si desidera un failover automatico nel database mirror.
+- Un'istanza di database dedicata che si trova nello stesso data center fisico in cui si trova il front-end principale del servizio server Chat persistente. Questo database fungerà da SQL Server mirror per il database di Persistent Chat primario. Facoltativamente, designare un SQL Server aggiuntivo da utilizzare come controllo del mirroring se si desidera un failover automatico nel database mirror.
     
-- Un'istanza di database dedicata nell'altro data center fisico. Questo database fungerà da SQL Server database secondario di log shipping per il database nel data center principale.
+- Un'istanza di database dedicata nell'altro data center fisico. Questo database verrà utilizzato come database secondario SQL Server log shipping per il database nel data center principale.
     
-- Un'istanza di database dedicata da utilizzare come SQL Server mirror per il database secondario. Facoltativamente, designare un'SQL Server server come server di controllo del mirroring. Entrambi devono trovarsi nello stesso data center fisico del database secondario.
+- Un'istanza di database dedicata da utilizzare come SQL Server mirror per il database secondario. Facoltativamente, designare un'SQL Server al server come server di controllo del mirroring. Entrambi devono trovarsi nello stesso data center fisico del database secondario.
     
-- Se la conformità del server Chat persistente è abilitata, sono necessarie altre tre istanze di database dedicate. La distribuzione è la stessa di quelle descritte in precedenza per il database di Persistent Chat. Sebbene sia possibile per il database di conformità condividere la stessa istanza di SQL Server del database di Persistent Chat, sono consigliate istanze autonome per la disponibilità elevata e il ripristino di emergenza.
+- Se la conformità del server Chat persistente è abilitata, sono necessarie altre tre istanze di database dedicate. La distribuzione è identica a quella descritta in precedenza per il database di Persistent Chat. Sebbene sia possibile per il database di conformità condividere la stessa istanza SQL Server del database di Persistent Chat, sono consigliate istanze autonome per la disponibilità elevata e il ripristino di emergenza.
     
-- È necessario creare e designare una condivisione file per i SQL Server log shipping. Tutti SQL server in entrambi i data center che eseguono database di Persistent Chat devono disporre dell'accesso in lettura/scrittura a questa condivisione file. Tale condivisione non è definita come parte di un ruolo FileStore.
+- Una condivisione file deve essere creata e designata per i registri delle transazioni SQL Server log shipping. Tutti SQL server in entrambi i data center che eseguono database di Persistent Chat devono disporre dell'accesso in lettura/scrittura a questa condivisione file. Tale condivisione non è definita come parte di un ruolo FileStore.
     
-- Una condivisione file nel server di database secondario da utilizzare come cartella di destinazione per i registri delle transazioni SQL Server copiati dalla condivisione file del server principale.
+- Una condivisione file nel server database secondario da utilizzare come cartella di destinazione per i registri delle transazioni SQL Server copiati dalla condivisione file del server principale.
     
 ## <a name="disaster-recovery-and-high-availability-solutions"></a>Soluzioni di ripristino di emergenza e disponibilità elevata
 
-Skype for Business Server supporta più modalità di disponibilità elevata per i server back-end, incluso il mirroring dei database. Per ulteriori informazioni, vedere Pianificare la disponibilità elevata e il ripristino di [emergenza in Skype for Business Server 2015.](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) 
+Skype for Business Server supporta più modalità di disponibilità elevata per i server back-end, incluso il mirroring del database. Per ulteriori informazioni, vedere [Plan for high availability and disaster recovery in Skype for Business Server 2015.](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) 
   
-La soluzione di ripristino di emergenza per il server Chat persistente descritta in questo argomento si basa su un pool di server Chat persistente estesa. Non è necessario utilizzare una VLAN (Virtual Local Area Network) estesa. Estendendo un pool di server Chat persistente, si configura logicamente un pool nella topologia, ma si posizionano fisicamente i server nel pool in due data center diversi. Configurare il SQL Server del database nello stesso modo e distribuire il database e il mirror nello stesso data center. È necessario configurare un database di backup nel data center secondario (con un mirror facoltativo per fornire disponibilità elevata durante il ripristino di emergenza). Si tratta del database di backup utilizzato per il failover durante il ripristino di emergenza. 
+La soluzione di ripristino di emergenza per il server Chat persistente descritta in questo argomento si basa su un pool di server Chat persistente estesa. Non è necessario utilizzare una VLAN (Virtual Local Area Network) estesa. Estendendo un pool di server Chat persistente, si configura logicamente un pool nella topologia, ma si posizionano fisicamente i server nel pool in due data center diversi. È possibile SQL Server il mirroring per il database nello stesso modo e distribuire il database e il mirror nello stesso data center. È necessario configurare un database di backup nel data center secondario (con un mirror facoltativo per garantire la disponibilità elevata durante il ripristino di emergenza). Si tratta del database di backup utilizzato per il failover durante il ripristino di emergenza. 
   
-Per informazioni dettagliate su come configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente, vedere Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente [in Skype for Business Server 2015.](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md) 
+Per informazioni dettagliate su come configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente, vedere [Configure high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../deploy/deploy-persistent-chat-server/configure-hadr-for-persistent-chat.md) 
   
-Nelle figure seguenti viene illustrato come configurare il pool di server Chat persistente in due diverse topologie di pool estesa:
+Nelle figure seguenti viene illustrato come configurare il pool di server Chat persistente in due diverse topologie di pool stretch:
   
 - Pool di server Persistent Chat esteso quando i data center sono georilevati con un'elevata larghezza di banda e una bassa latenza.
     
 - Pool di server Persistent Chat esteso quando i data center sono georilevati con una bassa larghezza di banda e un'elevata latenza.
     
-Nella figura 1 viene illustrata una topologia di pool di server Chat persistente estesa in cui i data center sono georilevati con larghezza di banda elevata/bassa latenza. Si supponga che per le topologie logiche e fisiche si presupponga quanto segue:
+La figura 1 mostra una topologia estesa del pool di server Chat persistente in cui i data center sono geolocali con larghezza di banda elevata/bassa latenza. Si supponga che per le topologie logiche e fisiche si presupponga quanto segue:
   
 - La topologia logica è costituita dai seguenti elementi:
     
-  - Un pool di Persistent Chat tra i siti 1 e 2 che contiene i server da 1 a 8.
+  - Pool di Persistent Chat tra i siti 1 e 2 contenenti server da 1 a 8.
     
   - Un pool Front End Server, un database di Persistent Chat, un database con mirroring e, facoltativamente, un database di controllo (non mostrato nel diagramma) che risiede fisicamente nel sito 1. 
     
   - Un secondo pool Front End Server e un database di backup che risiedono fisicamente nel sito 2.
     
-- La topologia fisica è costituita dai siti 1 e 2 nel modo seguente:
+- La topologia fisica è costituita dai siti 1 e 2 come segue:
     
   - Un pool di Persistent Chat, contenente i server da 1 a 4, due attivi, due inattivi nel sito 1.
     
@@ -86,17 +86,17 @@ Nella figura 1 viene illustrata una topologia di pool di server Chat persistente
 
 ![Pool di persistent Chat estesa con larghezza di banda elevata/bassa latenza](../../media/55cf3d4b-5f51-4d2f-84ca-b4a13dc5eba3.png)
   
-Nella figura 2 viene illustrata una topologia di pool di server Chat persistente estesa in cui i data center sono georilevati con larghezza di banda bassa/latenza elevata.
+Nella figura 2 è illustrata una topologia di pool di server Chat persistente estesa in cui i data center sono geolocali con larghezza di banda bassa/latenza elevata.
   
 - La topologia logica è costituita dai seguenti elementi:
     
-  - Un pool di Persistent Chat tra i siti 1 e 2 che contiene i server da 1 a 8.
+  - Pool di Persistent Chat tra i siti 1 e 2 contenenti server da 1 a 8.
     
   - Un pool Front End Server, un database di Persistent Chat, un database con mirroring e, facoltativamente, un database di controllo (non mostrato nel diagramma) che risiede fisicamente nel sito 1. 
     
   - Un secondo pool Front End Server e un database di backup che risiedono fisicamente nel sito 2.
     
-- La topologia fisica è costituita dai siti 1 e 2 nel modo seguente:
+- La topologia fisica è costituita dai siti 1 e 2 come segue:
     
   - Un pool di Persistent Chat, contenente i server da 1 a 4, tutti attivi, nel sito 1.
     
@@ -104,7 +104,7 @@ Nella figura 2 viene illustrata una topologia di pool di server Chat persistente
     
   - Un pool Front End Server, un database di Persistent Chat, un database con mirroring e, facoltativamente, un database di controllo (non illustrato nel diagramma) nel sito 1.
     
-  - Un pool Front End Server e un database di backup, ovvero la destinazione SQL log shipping, nel sito 2.
+  - Un pool Front End Server e un database di backup, che è la destinazione SQL log shipping, nel sito 2.
     
 **Pool di server Chat persistente estesa quando i data center si trovano in una posizione geografica con larghezza di banda bassa/latenza elevata**
 

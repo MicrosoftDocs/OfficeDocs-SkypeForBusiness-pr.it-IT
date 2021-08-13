@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: È possibile spostare più utenti dal pool legacy al pool pilota di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 o Skype for Business Server 2019 Management Shell.
-ms.openlocfilehash: d1b003c5630a0917fbecbd9b04196675657fef83
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 689886060f14a47e82865a2ed66bfc3ff495dfdc3b1f44e6c5674294b4d21eb9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44753428"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300652"
 ---
 # <a name="move-multiple-users-to-the-pilot-pool"></a>Spostare più utenti nel pool pilota
 
@@ -24,46 +24,46 @@ ms.locfileid: "44753428"
 
  **In questo articolo**
   
-[Per spostare più utenti utilizzando il Pannello di controllo di Skype for Business Server 2019](#sectionSection0)
+[Per spostare più utenti tramite il Pannello di controllo Skype for Business Server 2019](#sectionSection0)
   
 [Per spostare più utenti tramite Skype for Business Server 2019 Management Shell](#sectionSection1)
   
 [Per spostare tutti gli utenti contemporaneamente utilizzando Skype for Business Server 2019 Management Shell](#sectionSection2)
   
   
-## <a name="to-move-multiple-users-by-using-the-skype-for-business-server-2019-control-panel"></a>Per spostare più utenti utilizzando il Pannello di controllo di Skype for Business Server 2019
+## <a name="to-move-multiple-users-by-using-the-skype-for-business-server-2019-control-panel"></a>Per spostare più utenti tramite il Pannello di controllo Skype for Business Server 2019
 <a name="sectionSection0"> </a>
 
-1. Aprire il Pannello di controllo di Skype for Business Server.
+1. Aprire Skype for Business Server Pannello di controllo.
     
-2. Fare **clic su** Utenti, **ricerca** e quindi su **Trova.**
+2. Fare **clic su** Utenti, su **Cerca** e quindi su **Trova.**
     
-3. Selezionare due utenti da spostare nel pool di Skype for Business Server 2019. In questo esempio spostiamo gli utenti Chen Yang e Claus Hansen.
+3. Selezionare due utenti che si desidera spostare nel pool Skype for Business Server 2019. In questo esempio spostiamo gli utenti Chen Yang e Claus Hansen.
     
      ![Spostare gli utenti in un pool di registrazione specifico](../media/Migration_LyncServer_CPanel_fromLyncServer2010_MoveMultipleUsersList.JPG)
   
 4. Scegliere **Sposta utenti selezionati nel pool** dal menu **Azione**.
     
-5. Nell'elenco a discesa, selezionare il pool di Skype for Business Server 2019.
+5. Nell'elenco a discesa selezionare il pool Skype for Business Server 2019.
     
 6. Fare clic su **Azione** e quindi su **Sposta utenti selezionati nel pool**. Fare clic su **OK**.
     
      ![Finestra di dialogo Sposta utenti, pool di registrazione di destinazione](../media/Migration_LyncServer_from_LyncServer2010_CPanelMoveUserSelectPoolDialog.png)
   
-7. Verificare che la **colonna del pool** di registrazione per gli utenti contenga ora il pool di Skype for Business Server 2019, che indica che gli utenti sono stati spostati correttamente. 
+7. Verificare che la colonna **Pool** di registrazione per gli utenti contenga ora il pool Skype for Business Server 2019, che indica che gli utenti sono stati spostati correttamente. 
     
 ## <a name="to-move-multiple-users-by-using-the-skype-for-business-server-2019-management-shell"></a>Per spostare più utenti tramite Skype for Business Server 2019 Management Shell
 <a name="sectionSection1"> </a>
 
-1. Aprire Skype for Business Server 2019 Management Shell. 
+1. Aprire la Skype for Business Server 2019 Management Shell. 
     
-2. Nella riga di comando digitare quanto segue e sostituire **User1** e **User2** con nomi utente specifici che si desidera spostare e sostituire **pool_FQDN** con il nome del pool di destinazione. In questo esempio spostiamo gli utenti Hao Chen e Katie Jordan. 
+2. Nella riga di comando digitare il comando seguente e sostituire **User1** e **User2** con nomi utente specifici che si desidera spostare e sostituire **pool_FQDN** con il nome del pool di destinazione. In questo esempio spostiamo gli utenti Hao Chen e Katie Jordan. 
     
    ```PowerShell
    Get-CsUser -Filter {DisplayName -eq "User1" -or DisplayName - eq "User2"} | Move-CsUser -Target "pool_FQDN"
    ```
 
-    ![Esempio di cmdlet Get-CsUser PowerShell](../media/Migration_LyncServer_from_LyncServer2010_move2users.jpg)
+    ![Esempio di cmdlet powershell Get-CsUser](../media/Migration_LyncServer_from_LyncServer2010_move2users.jpg)
   
 3. Nella riga di comando digitare quanto segue: 
     
@@ -80,7 +80,7 @@ ms.locfileid: "44753428"
 
 In questo esempio, tutti gli utenti sono stati restituiti al pool legacy (pool01.contoso.net). Utilizzando Skype for Business Server 2019 Management Shell, tutti gli utenti verranno spostati contemporaneamente nel pool di Skype for Business Server 2019 (pool02.contoso.net).
   
-1. Aprire Skype for Business Server 2019 Management Shell.
+1. Aprire la Skype for Business Server 2019 Management Shell.
     
 2. Nella riga di comando digitare quanto segue: 
     
@@ -96,10 +96,10 @@ In questo esempio, tutti gli utenti sono stati restituiti al pool legacy (pool01
    Get-CsUser -Identity "Hao Chen"
    ```
 
-4. **L'identità del pool** di registrazione per ogni utente ora punta al pool specificato come pool_FQDN nel passaggio precedente.  La presenza di questa identità conferma che l'utente è stato spostato correttamente. 
+4. **L'identità del pool** di registrazione per ogni utente ora punta al pool specificato come **pool_FQDN** nel passaggio precedente. La presenza di questa identità conferma che l'utente è stato spostato correttamente. 
     
 5. Inoltre, è possibile visualizzare l'elenco degli utenti nel Pannello di controllo di Skype for Business Server 2019 e verificare che il valore del pool di registrazione punti ora al pool di Skype for Business Server 2019.
     
-     ![Elenco utenti del Pannello di controllo di Skype for Business Server 2019](../media/Migration_LyncServer_CPanel_fromLyncServer2010_Move-CSUserVerifyHao.JPG)
+     ![Skype for Business Server utente del Pannello di controllo 2019](../media/Migration_LyncServer_CPanel_fromLyncServer2010_Move-CSUserVerifyHao.JPG)
   
 

@@ -10,23 +10,23 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Questa sezione illustra gli argomenti relativi alla pianificazione per la migrazione a Skype for Business Server 2019.
-ms.openlocfilehash: 312a8ef1dcf5beb1a0d23fe0df58a3916d66981f
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+description: In questa sezione vengono illustrati gli argomenti relativi alla pianificazione per la Skype for Business Server 2019.
+ms.openlocfilehash: b7e6b72de69dafbf6218196c23eec82cbb7ad33c2996185e6cbbc70cd16fd0d1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752458"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300592"
 ---
 # <a name="phase-1-plan-your-migration"></a>Fase 1: pianificare la migrazione
 
-Questa sezione illustra gli argomenti relativi alla pianificazione per la migrazione a Skype for Business Server 2019. 
+In questa sezione vengono illustrati gli argomenti relativi alla pianificazione per la Skype for Business Server 2019. 
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Migrazione degli utenti](user-migration.md)
     
-- [Migrazione dei server di archiviazione e monitoring server](migrating-archiving-and-monitoring-servers.md)
+- [Migrazione dei server di archiviazione e di monitoraggio](migrating-archiving-and-monitoring-servers.md)
     
 - [Amministrazione dei server dopo la migrazione](administering-servers-after-migration.md)
     

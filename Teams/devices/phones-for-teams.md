@@ -17,12 +17,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo illustra l'elenco dei telefoni certificati per Microsoft Teams e le funzionalità supportate nei telefoni certificati per Microsoft Teams.
-ms.openlocfilehash: 2299c16bb3849119b93eb5e3e7d03f5ef6744430
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ab205a8a23b2cc83461cfcab047458fa4027db7e4257f95891caa0a5a6998ec9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102212"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54321458"
 ---
 # <a name="phones-for-microsoft-teams"></a>Telefoni per Microsoft Teams
 

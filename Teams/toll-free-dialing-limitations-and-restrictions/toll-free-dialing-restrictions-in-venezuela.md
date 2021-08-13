@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in Venezuela, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: afe84adf4329163567359894a23baeda87a256a4
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 1239c2352c729a66538f97de22ef0257f196598e8b2784a0c175f0d45e644c6f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51097572"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54346053"
 ---
 # <a name="toll-free-dialing-restrictions-in-venezuela"></a>Restrizioni di composizione a numero verde in Venezuela
 

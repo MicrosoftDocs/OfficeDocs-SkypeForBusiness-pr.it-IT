@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri di routing vocale di emergenza per il routing diretto
+title: Gestire i criteri di routing delle chiamate di emergenza per il routing diretto
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -17,35 +17,35 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 search.appverid: MET150
-description: Informazioni su come usare e gestire i criteri di routing vocale di emergenza in Microsoft Teams per configurare i numeri di emergenza e specificare la modalità di instradamento delle chiamate di emergenza.
+description: Informazioni su come usare e gestire i criteri di routing delle chiamate di emergenza in Microsoft Teams per configurare i numeri di emergenza e specificare la modalità di instradamento delle chiamate di emergenza.
 ms.custom:
 - seo-marvel-apr2020
 - ms.teamsadmincenter.voice.emergencycallroutingpolicies.overview
-ms.openlocfilehash: e83b33d7e6b9c13b178a7481f5061615836d0c94c4bfcc7c97ec42a3b8250777
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: 7ca49362e1261c0a89889e219d9acdbdfded86032ed54c4bd48ccae306658b66
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848901"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54321298"
 ---
-# <a name="manage-emergency-voice-routing-policies-for-direct-routing"></a>Gestire i criteri di routing vocale di emergenza per il routing diretto
+# <a name="manage-emergency-call-routing-policies-for-direct-routing"></a>Gestire i criteri di routing delle chiamate di emergenza per il routing diretto
 
-Se nell'organizzazione è stato distribuito [Sistema telefonico routing](direct-routing-landing-page.md) diretto, è possibile usare i criteri di routing vocale di emergenza in Microsoft Teams per configurare i numeri di emergenza e specificare la modalità di instradamento delle chiamate di emergenza. Un criterio di routing vocale di emergenza determina se i servizi di emergenza migliorati sono abilitati per gli utenti a cui è assegnato il criterio, i numeri usati per chiamare i servizi di emergenza (ad esempio, il 911 negli Stati Uniti) e la modalità di routing delle chiamate ai servizi di emergenza.
+Se nell'organizzazione è stato distribuito [Sistema telefonico Routing](direct-routing-landing-page.md) diretto, è possibile usare i criteri di routing delle chiamate di emergenza in Microsoft Teams per configurare i numeri di emergenza e specificare la modalità di instradamento delle chiamate di emergenza. Un criterio di routing delle chiamate di emergenza determina se i servizi di emergenza migliorati sono abilitati per gli utenti a cui è assegnato il criterio, i numeri usati per chiamare i servizi di emergenza (ad esempio, il 911 negli Stati Uniti) e la modalità di instradamento delle chiamate ai servizi di emergenza.
 
-Per gestire i criteri di routing vocale di emergenza, è possibile accedere ai criteri di emergenza vocali nell'interfaccia di amministrazione di Microsoft Teams o usando  >   Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete.](cloud-voice-network-settings.md)
+Per gestire i criteri di routing delle chiamate di emergenza, è possibile accedere ai criteri di emergenza vocali nell'interfaccia di amministrazione di Microsoft Teams o usando  >   Windows PowerShell. I criteri possono essere assegnati a utenti e [siti di rete.](cloud-voice-network-settings.md)
 
 Per gli utenti, è possibile usare i criteri globali (impostazione predefinita a livello di organizzazione) oppure creare e assegnare criteri personalizzati. Gli utenti riceveranno automaticamente i criteri globali a meno che non si creino e assegnino criteri personalizzati. Tenere presente che è possibile modificare le impostazioni nel criterio globale, ma non è possibile rinominarlo o eliminarlo. Per i siti di rete, è possibile creare e assegnare criteri personalizzati.
 
-Se è stato assegnato un criterio di routing vocale di emergenza a un sito di rete e a un utente e l'utente si trova in tale sito di rete, i criteri assegnati al sito di rete sostituiscono i criteri assegnati all'utente.
+Se è stato assegnato un criterio di routing delle chiamate di emergenza a un sito di rete e a un utente e tale utente si trova in tale sito di rete, il criterio assegnato al sito di rete sostituisce il criterio assegnato all'utente.
 
-## <a name="create-a-custom-emergency-voice-routing-policy"></a>Creare un criterio di routing vocale di emergenza personalizzato
+## <a name="create-a-custom-emergency-call-routing-policy"></a>Creare un criterio di routing delle chiamate di emergenza personalizzato
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione, passare a Criteri per gli interventi di emergenza vocali e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione, passare a Criteri di emergenza vocale e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
 2. Fare clic su **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
-4. Per abilitare le chiamate di emergenza dinamiche, attiva **Chiamate di emergenza dinamiche.** Quando le chiamate di emergenza dinamiche sono abilitate, Teams le informazioni sui criteri e sulla posizione dal servizio e le include come parte della chiamata di emergenza.
+4. Per abilitare le chiamate di emergenza dinamiche, attiva **Chiamate di emergenza dinamiche.** Quando le chiamate di emergenza dinamiche sono abilitate, Teams recupera le informazioni sui criteri e sulla posizione dal servizio e le include come parte della chiamata di emergenza.
 5. Definire uno o più numeri di emergenza. A questo scopo, in **Numeri di emergenza** fare clic su **Aggiungi** e quindi eseguire le operazioni seguenti:
     1. **Stringa di chiamata di emergenza:** immettere la stringa di chiamata di emergenza. Questa stringa di chiamata indica che una chiamata è una chiamata di emergenza.
         > [!NOTE]
@@ -62,13 +62,13 @@ Se è stato assegnato un criterio di routing vocale di emergenza a un sito di re
 
 Vedere [New-CsTeamsEmergencyCallRoutingPolicy](/powershell/module/skype/new-csteamsemergencycallroutingpolicy).
 
-## <a name="edit-an-emergency-voice-routing-policy"></a>Modificare un criterio di routing vocale per gli interventi di emergenza
+## <a name="edit-an-emergency-call-routing-policy"></a>Modificare un criterio di routing delle chiamate di emergenza
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 È possibile modificare i criteri globali o i criteri personalizzati creati dall'utente.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione, passare a Criteri per gli interventi di emergenza vocali e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione, passare a Criteri di emergenza vocale e quindi fare  >  clic sulla scheda Criteri **routing chiamate.**
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
@@ -76,13 +76,13 @@ Vedere [New-CsTeamsEmergencyCallRoutingPolicy](/powershell/module/skype/new-cste
 
 Vedere [Set-CsTeamsEmergencyCallRoutingPolicy](/powershell/module/skype/set-csteamsemergencycallroutingpolicy).
 
-## <a name="assign-a-custom-emergency-voice-routing-policy-to-users"></a>Assegnare un criterio di routing vocale di emergenza personalizzato agli utenti
+## <a name="assign-a-custom-emergency-call-routing-policy-to-users"></a>Assegnare un criterio di routing delle chiamate di emergenza personalizzato agli utenti
 
 [!INCLUDE [assign-policy](includes/assign-policy.md)]
 
 Vedere anche [Grant-CsTeamsEmergencyCallRoutingPolicy](/powershell/module/skype/grant-csteamsemergencycallroutingpolicy).
 
-## <a name="assign-a-custom-emergency-voice-routing-policy-to-a-network-site"></a>Assegnare un criterio di routing vocale di emergenza personalizzato a un sito di rete
+## <a name="assign-a-custom-emergency-call-routing-policy-to-a-network-site"></a>Assegnare un criterio di routing delle chiamate di emergenza personalizzato a un sito di rete
 
 Usare il cmdlet [Set-CsTenantNetworkSite](/powershell/module/skype/set-cstenantnetworksite) per assegnare un criterio di routing delle chiamate di emergenza a un sito di rete.
 
