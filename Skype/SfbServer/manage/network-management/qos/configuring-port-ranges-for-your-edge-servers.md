@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: In questo articolo viene descritto come configurare gli intervalli di porte per i server perimetrali e come configurare un criterio qualità del servizio per i server A/V Edge.
-ms.openlocfilehash: f21a5612889e0368a93bc8a55e5f023a28b226a9aa8843275faa696675b94d7e
-ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
+ms.openlocfilehash: 076f7bd6f3118155eeed6a03268326247394e2b7
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54591130"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58232641"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-edge-servers-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i server perimetrali in Skype for Business Server
 
@@ -80,13 +80,13 @@ Alternativamente, è possibile utilizzare il comando seguente per configurare si
 
   **Get-CsService -EdgeServer | Select-Object Identity, MediaCommunicationPortStart, MediaCommunicationPortCount**
 
-Anche in questo caso, mentre forniamo queste opzioni, ti consigliamo vivamente di lasciare le cose come sono per la configurazione delle porte.
+Anche in questo caso, mentre forniamo queste opzioni, ti consigliamo vivamente di lasciare le cose così come sono per la configurazione delle porte.
 
 ## <a name="configure-a-qos-policy-for-your-av-edge-servers"></a>Configurare un criterio QoS per i server A/V Edge
 
-Oltre alla creazione di criteri QoS per i Conferencing Server, server applicazioni e Mediation Server, è necessario anche creare criteri audio e video per il sito interno degli A/V Edge Server. I criteri utilizzati nei server perimetrali, tuttavia, sono diversi da quelli utilizzati nei Conferencing Server, server applicazioni e Mediation Server. Per i server Di conferenza, Applicazione e Mediation Server è stato specificato un intervallo di porte di origine. con i server perimetrali, è necessario specificare un intervallo di porte di destinazione. Per questo, non è possibile applicare semplicemente i criteri QoS per conferenze, applicazioni e Mediation Server ai server perimetrali: questi criteri semplicemente non funzionano. È necessario invece creare nuovi criteri e applicarli solo ai server perimetrali.
+Oltre alla creazione di criteri QoS per i Conferencing Server, server applicazioni e Mediation Server, è necessario anche creare criteri audio e video per il sito interno degli A/V Edge Server. I criteri utilizzati nei server perimetrali, tuttavia, sono diversi da quelli utilizzati nei Conferencing Server, server applicazioni e Mediation Server. Per i Server di conferenza, applicazione e Mediation Server è stato specificato un intervallo di porte di origine. con i server perimetrali, è necessario specificare un intervallo di porte di destinazione. Per questo, non è possibile applicare semplicemente i criteri QoS per conferenze, applicazioni e Mediation Server ai server perimetrali: questi criteri semplicemente non funzionano. È necessario invece creare nuovi criteri e applicarli solo ai server perimetrali.
 
-Nella procedura seguente viene descritto il processo di creazione di oggetti Criteri di gruppo di Active Directory che possono essere utilizzati per gestire la qualità del servizio nei server perimetrali. Naturalmente, è possibile che i server perimetrali siano server autonomi che non dispongono di account di Active Directory. In questo caso, è possibile utilizzare Criteri di gruppo locali anziché Criteri di gruppo di Active Directory: l'unica differenza consiste nel fatto che è necessario creare questi criteri locali utilizzando l'Editor Criteri di gruppo locali e creare singolarmente lo stesso set di criteri in ogni server perimetrale. Per avviare l'Editor Criteri di gruppo locali in un server perimetrale, eseguire le operazioni seguenti:
+Nella procedura seguente viene descritto il processo di creazione di oggetti Criteri di gruppo di Active Directory che possono essere utilizzati per gestire la qualità del servizio nei server perimetrali. Naturalmente, è possibile che i server perimetrali siano server autonomi che non dispongono di account di Active Directory. In questo caso, è possibile utilizzare Criteri di gruppo locali anziché Criteri di gruppo di Active Directory: l'unica differenza consiste nel fatto che è necessario creare questi criteri locali utilizzando l'Editor Criteri di gruppo locali e creare singolarmente lo stesso insieme di criteri in ogni server perimetrale. Per avviare l'Editor Criteri di gruppo locali in un server perimetrale, eseguire le operazioni seguenti:
 
 1.  Fare clic su **Start** quindi scegliere **Esegui**.
 
@@ -96,7 +96,7 @@ Se si creano criteri basati su Active Directory, è necessario accedere a un com
 
 1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer Skype for Business Server si trovano in un'unità organizzativa denominata Skype for Business Server, il nuovo criterio deve essere creato nell'unità organizzativa Skype for Business Server.
 
-2.  Fai clic con il pulsante destro del mouse sul contenitore appropriato e quindi fai clic su Crea un oggetto Criteri di gruppo in questo dominio **e collegalo qui.**
+2.  Fai clic con il pulsante destro del mouse sul contenitore appropriato, quindi fai clic su Crea un oggetto Criteri di gruppo in questo dominio **e collegalo qui.**
 
 3.  Nella finestra **di** dialogo Nuovo oggetto Criteri di gruppo digitare un nome per il nuovo oggetto Criteri di gruppo nella casella **Nome,** ad esempio **Skype for Business Server Audio,** e quindi fare clic su **OK.**
 
@@ -114,7 +114,7 @@ Da questo punto in avanti il processo è identico sia per la creazione di un cri
 
 5.  Nella quarta pagina selezionare **TCP e UDP** dall'elenco a discesa **Seleziona il protocollo a cui si applica questo criterio QoS**. TCP (Transmission Control Protocol) e UDP (User Datagram Protocol) sono i due protocolli di rete più comunemente utilizzati da Skype for Business Server e dalle relative applicazioni client.
 
-6.  In **Specifica il numero della porta di destinazione** selezionare **Verso questo numero di porta o intervallo di porte di destinazione**. Nella casella di testo associata, immettere l'intervallo di porte riservato per le trasmissioni audio. Ad esempio, se sono riservate le porte da 49152 a 57500 per il traffico audio, immettere l'intervallo di porte nel formato **seguente: 49152:57500**. Fare clic su **Fine**.
+6.  In **Specifica il numero della porta di destinazione** selezionare **Verso questo numero di porta o intervallo di porte di destinazione**. Nella casella di testo associata, immettere l'intervallo di porte riservato per le trasmissioni audio. Ad esempio, se sono riservate le porte da 49152 a 57500 per il traffico audio, immettere l'intervallo di porte utilizzando il formato **seguente: 49152:57500**. Fare clic su **Fine**.
 
 Dopo aver creato i criteri QoS per il traffico audio, devi creare un secondo criterio per il traffico video. Per creare un criterio per il traffico video, seguire la stessa procedura di base usata per la creazione del criterio audio, con le distinzioni seguenti:
 

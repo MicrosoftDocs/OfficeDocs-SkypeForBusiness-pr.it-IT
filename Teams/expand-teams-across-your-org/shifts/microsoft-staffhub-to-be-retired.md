@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 78737ec26d0aabfedcefa01abc3fb14c4bf118c7
-ms.sourcegitcommit: a731226d62d8b23fe73bd7bf61654e16367fbd90
+ms.openlocfilehash: b6483ad432eb066e5f3a62e839704b33f65ed8e14ac2f32dedb227ba0c98d1ab
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "51948702"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336236"
 ---
 # <a name="microsoft-staffhub-has-been-retired"></a>Microsoft StaffHub è stato ritirato
 
@@ -163,7 +163,7 @@ Se si è interessati, inviare una richiesta tramite il portale di feedback Teams
 
 #### <a name="is-reporting-available-to-view-shifts-usage-across-my-organization"></a>I report sono disponibili per visualizzare l'utilizzo dei turni nell'intera organizzazione?
 
-Poiché Shifts è un'app in Teams, è possibile visualizzare l'utilizzo tramite Teams report. Per altre informazioni, vedere i report Teams [nell'interfaccia](../../teams-analytics-and-reports/teams-reporting-reference.md) di amministrazione di Microsoft Teams e Teams report attività nell'Microsoft 365 [di amministrazione.](../../teams-activity-reports.md)
+Poiché Shifts è un'app in Teams, è possibile visualizzare l'utilizzo tramite Teams report. Per altre informazioni, vedere la Teams [report nell'interfaccia](../../teams-analytics-and-reports/teams-reporting-reference.md) di amministrazione di Microsoft Teams e Teams report attività nel [interfaccia di amministrazione di Microsoft 365](../../teams-activity-reports.md).
 
 #### <a name="where-can-i-provide-feedback"></a>Dove è possibile inviare commenti e suggerimenti?
   

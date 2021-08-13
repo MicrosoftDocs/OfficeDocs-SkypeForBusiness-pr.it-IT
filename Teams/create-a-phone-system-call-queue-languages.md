@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams delle code di chiamata supportate
+title: Microsoft Teams lingue supportate per la coda di chiamata
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -11,7 +11,6 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
-- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -21,17 +20,17 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: Microsoft Teams delle code di chiamata supportate
-ms.openlocfilehash: 59f65a6ef2e1ab92f234ab9ebb9a717b5ae5ebc7fa2b380522f0f34cab1e3956
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Microsoft Teams lingue supportate per la coda di chiamata
+ms.openlocfilehash: dd16ef64facfca51d8d2a456d1e5bba877e1e1c0
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54305078"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58233081"
 ---
-# <a name="microsoft-teams-call-queue-supported-languages"></a>Microsoft Teams delle code di chiamata supportate
+# <a name="microsoft-teams-call-queue-supported-languages"></a>Microsoft Teams lingue supportate per la coda di chiamata
 
-La coda di chiamata supporta le lingue seguenti per la sintesi vocale (TTS):
+La coda di chiamata supporta le lingue seguenti per la sintesi vocale :The call queue supports the following languages for Text to Speech (TTS):
 
 |Lingua                                |
 |:---------------------------------------|
@@ -41,7 +40,7 @@ La coda di chiamata supporta le lingue seguenti per la sintesi vocale (TTS):
 |Cinese (tradizionale, Hong Kong)        |
 |Cinese (tradizionale, Taiwan)           |
 |Croato (Croazia)                      |
-|Ceco (Repubblica di Czeck)                  |
+|Ceco (Repubblica Ceca)                  |
 |Danese (Danimarca)                        |
 |Olandese (Paesi Bassi)                     |
 |Inglese (Australia)                     |

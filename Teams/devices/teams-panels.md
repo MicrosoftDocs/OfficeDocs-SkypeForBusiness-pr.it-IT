@@ -16,12 +16,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo fornisce una panoramica delle funzionalità supportate dai Microsoft Teams di lavoro.
-ms.openlocfilehash: 6970aaf1df6a318cd529840c9ea01d1de7cc24bfa81a6654d516ea3fc19afe9c
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: fe9d482cdce9cce9aa7f31735267b57f2e675c1c
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57849781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58233061"
 ---
 # <a name="microsoft-teams-panels"></a>Microsoft Teams di lavoro
 
@@ -59,7 +59,7 @@ I requisiti hardware, software e di rete per distribuire i dispositivi a pannell
 Per usare Teams, è necessario Microsoft Teams Rooms [Licenza Standard.](../rooms/rooms-licensing.md)
 
 > [!Note]
-> Se sono già stati distribuiti Microsoft Teams Rooms nell'area riunioni in cui si installano i pannelli di Teams, non è necessaria una licenza aggiuntiva per usare Teams pannelli.
+> Se l'Microsoft Teams Rooms è già stata distribuita nell'area riunioni in cui si installano i pannelli di Teams, non è necessaria una licenza aggiuntiva per usare Teams pannelli.
 
 ## <a name="deploy-teams-panels-devices"></a>Distribuire Teams dei pannelli
 
@@ -117,7 +117,7 @@ Per configurare un account Microsoft 365 per i Teams, è consigliabile acquistar
 
 > [!TIP]
 > È consigliabile creare l'account della risorsa con largo anticipo prima dell'installazione Teams pannelli.
-> È consigliabile usare le convenzioni di denominazione per l Teams account della risorsa panelli. Rendere descrittivi e facili da comprendere i nomi visualizzati Microsoft 365 degli account delle risorse. Questi sono i nomi che gli utenti potranno visualizzare quando esereranno ricerche negli spazi delle riunioni durante la pianificazione delle riunioni in Outlook o Teams calendario.
+> È consigliabile usare le convenzioni di denominazione per l'account Teams pannello comandi. Rendere descrittivi e facili da comprendere i nomi visualizzati Microsoft 365 degli account delle risorse. Questi sono i nomi che gli utenti potranno visualizzare quando esereranno ricerche negli spazi delle riunioni durante la pianificazione delle riunioni in Outlook o Teams calendario.
 
 ### <a name="testing"></a> Test
 
@@ -129,7 +129,7 @@ Per gestire i dispositivi Teams, nel riquadro di spostamento sinistro dell'inter
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-[Come usare i Microsoft Teams mobili](use-teams-panels.md)
+[Come usare i Microsoft Teams dispositivi](use-teams-panels.md)
 
 ## <a name="see-also"></a>Vedere anche
 

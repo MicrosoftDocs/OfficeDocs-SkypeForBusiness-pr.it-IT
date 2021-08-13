@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 2fe7e3a7-bc75-4d4b-94af-a8818722b0d3
 description: Nelle sezioni di questo articolo viene descritto come abilitare, disabilitare temporaneamente o rimuovere gli utenti di Active Directory Skype for Business Server.
-ms.openlocfilehash: 43b48daf7a3ad7242076c29a1372e608130763e8e7add95ac86e97ed9c3a9e97
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: 27871597674724126369bd8f90fd6c2a67c2a8ea
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57850181"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58232691"
 ---
 # <a name="manage-user-accounts-for-skype-for-business-server"></a>Gestire gli account utente per Skype for Business Server
 
@@ -44,7 +44,7 @@ In questo articolo sono contenute le procedure seguenti:
 
 È possibile utilizzare i risultati di una query di ricerca per configurare gli utenti di Active Directory per Skype for Business Server. È possibile ricercare utenti in base al nome visualizzato, al nome, al cognome, al nome dell'account SAM (Security Accounts Manager), all'indirizzo SIP o all'URI (Uniform Resource Identifier) della linea.
 
-È possibile cercare gli utenti utilizzando il Skype for Business Server o lo snap-in Utenti e computer di Active Directory. Nella procedura seguente viene descritto come utilizzare Skype for Business Server pannello di controllo per cercare utenti.
+È possibile cercare utenti utilizzando il Skype for Business Server o lo snap-in Utenti e computer di Active Directory. Nella procedura seguente viene descritto come utilizzare Skype for Business Server pannello di controllo per cercare utenti.
 
 > [!NOTE]
 > In un ambiente con una topologia a foresta centrale, i risultati della ricerca potrebbero non essere accurati quando si cerca un utente in base all'indirizzo di posta elettronica dell'utente. È invece possibile cercare utenti specificando un prefisso di indirizzo SIP, ad esempio sip:name, aggiungere un filtro di ricerca e selezionare un indirizzo SIP contenente un indirizzo di posta elettronica parziale oppure utilizzare il cmdlet **Get-CSUser.**
@@ -111,7 +111,7 @@ Dopo aver abilitato un account utente in Utenti e computer di Active Directory, 
 
    - Per disabilitare temporaneamente l'account utente per Skype for Business Server, fare clic su **Disabilita temporaneamente per Lync Server.**
 
-   - Per abilitare l'account utente per Skype for Business Server, fare clic su **Ri-abilita per Lync Server.**
+   - Per abilitare l'account utente per Skype for Business Server, fare clic **su Ri-abilita per Lync Server.**
 
 ### <a name="use-windows-powershell-to-disable-or-re-enable-user-accounts"></a>Utilizzare Windows PowerShell per disabilitare o riattivare gli account utente
 

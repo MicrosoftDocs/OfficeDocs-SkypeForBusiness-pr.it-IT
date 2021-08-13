@@ -1,5 +1,5 @@
 ---
-title: Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
+title: 'Skype for Business Server: creare una nuova raccolta di impostazioni di configurazione trunk'
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,15 +10,15 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi.
-ms.openlocfilehash: 174b1ac2d47b491bb927ca1e55a0a02d4ca0b1087bb9adc597cc7393d9c36618
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Le impostazioni di configurazione trunk SIP definiscono la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Ip-Public Branch Exchange) o un Session Border Controller (SBC) presso il provider di servizi.
+ms.openlocfilehash: 41cfc9e4c9c20eee43352b4cf62e32c3305c534d
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58232651"
 ---
-# <a name="create-a-new-collection-of-trunk-configuration-settings-in-skype-for-business-server"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server
+# <a name="skype-for-business-server-create-a-new-collection-of-trunk-configuration-settings"></a>Skype for Business Server: creare una nuova raccolta di impostazioni di configurazione trunk
 
 Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi. Queste impostazioni consentono di specificare quanto segue:
 - Se abilitare il bypass multimediale nei trunk.

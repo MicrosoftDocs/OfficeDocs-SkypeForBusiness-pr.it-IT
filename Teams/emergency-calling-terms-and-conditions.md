@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: 'Scopri in che modo i Servizi di emergenza (911) differiscono dai servizi telefonici tradizionali e come effettuare una chiamata. '
-ms.openlocfilehash: 3fd78707fc822b008eaca4046ff1d974b1ad1e06
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 3bceef7d98cb2598422bb30a827bd9a0608a515887f6f3963291c06f6e8505a6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336286"
 ---
 # <a name="emergency-calling-terms-and-conditions"></a>Termini e condizioni per le chiamate al numero di emergenza
 
@@ -44,6 +44,6 @@ Le differenze nelle funzionalità di chiamata dei Servizi di emergenza includono
 
 [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
   

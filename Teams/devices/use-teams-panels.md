@@ -16,16 +16,16 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Normal
 description: Questo articolo fornisce indicazioni su come usare i Teams dei pannelli.
-ms.openlocfilehash: d7f7e34bec83d8d1debeed39eeed162e98d011ac3656517025005ce31db24b65
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: f00136f5ef7b448531c16d388ac879a26b53c2cc
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58233051"
 ---
 # <a name="how-to-use-microsoft-teams-panels"></a>Come usare i Microsoft Teams di lavoro
 
-Microsoft Teams sono dispositivi di visualizzazione digitali compatti che vengono installati all'esterno degli spazi riunioni, in genere accanto agli ingressi. Questi pannelli touchscreen sono Microsoft Teams dispositivi che offrono una visualizzazione a colpo d'occhio dell'area della riunione e della riunione pianificata. Con gli indicatori della schermata HOME e LED codificati a colori vivaci, è possibile determinare se lo spazio è disponibile o riservato a distanza. È possibile usare Teams per prenotare uno spazio riunioni disponibile per una riunione ad hoc, sul posto.
+Microsoft Teams sono dispositivi di visualizzazione digitali compatti che vengono installati all'esterno degli spazi riunioni, in genere accanto agli ingressi. Questi pannelli touchscreen sono Microsoft Teams dispositivi che offrono una visualizzazione a colpo d'occhio dell'area della riunione e della riunione pianificata. Con gli indicatori della schermata HOME e LED codificati a colori vivaci, è possibile determinare se lo spazio è disponibile o riservato a distanza. È possibile usare Teams per prenotare un'area riunioni disponibile per una riunione ad hoc, sul posto.
 
 Teams i dispositivi dei pannelli vengono preinstallati con Microsoft Teams e visualizzano i dettagli della riunione pianificati tramite Outlook o Teams calendario.
 
@@ -152,11 +152,11 @@ Sono disponibili diverse impostazioni del dispositivo, ad esempio informazioni s
 Per visualizzare o aggiornare un'impostazione del dispositivo:
 
 1. Toccare **l'Impostazioni** nella schermata Home.
-2. Nella schermata **Impostazioni** toccare **Impostazioni dispositivo**.
+2. Nella schermata **Impostazioni,** toccare **Impostazioni dispositivo**.
 3. Nella schermata **Impostazioni** dispositivo toccare l'impostazione che si vuole visualizzare o aggiornare.
 4. Seguire la richiesta visualizzata per visualizzare o aggiornare l'impostazione.
 
-## <a name="teams-panels-admin-experience"></a>Teams di amministrazione dei pannelli di lavoro
+## <a name="teams-panels-admin-experience"></a>Teams di amministrazione dei pannelli di controllo
 
 Se si è l'amministratore [dell Teams dell'account](teams-panels.md\#resource-account-provisioning)delle risorse del pannello, si è anche l'amministratore **dell'app Panels** nel dispositivo. **L'amministratore dell'app Panels** può eseguire tutte le [](#teams-panels-end-user-experience) funzioni menzionate nella sezione dell'esperienza utente finale, oltre a gestire le impostazioni dell'app **Panels** nel dispositivo.
 
@@ -170,7 +170,7 @@ I dispositivi dei pannelli forniscono due tipi di impostazioni di amministratore
 
 ### <a name="access-panels-app-settings"></a>Impostazioni dell'app Pannelli di accesso
 
-È possibile accedere **alle impostazioni specifiche dell'app Panels** usando l'opzione **Impostazioni'app Panels** sotto le impostazioni di amministrazione. La procedura per accedere **all'app Panels Impostazioni** può variare in base all'OEM del dispositivo.
+È possibile accedere **alle impostazioni specifiche dell'app** Panels usando l'opzione Impostazioni'app **Panels** sotto le impostazioni di amministrazione. La procedura per accedere **all'app Impostazioni** pannello può variare in base all'OEM del dispositivo.
 
 Per accedere **all'opzione Impostazioni** pannello:
 

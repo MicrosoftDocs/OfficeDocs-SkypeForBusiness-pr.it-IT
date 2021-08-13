@@ -10,13 +10,13 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Area di rete* sono gli hub di rete o i backbone utilizzati nella configurazione di Controllo di ammissione di chiamata, E9-1-1 e bypass multimediale.
-ms.openlocfilehash: cf71a4e92245417fe23ba998bd9ba6e0357eda618601504838c4944d09ef01b1
-ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
+description: Area di rete* sono gli hub di rete o le backbone utilizzati nella configurazione di Controllo di ammissione di chiamata, E9-1-1 e bypass multimediale.
+ms.openlocfilehash: 9e38528dd34f25fa2b70b51485657168868d6628
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54590950"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58232801"
 ---
 # <a name="managing-network-regions-in-skype-for-business-server"></a>Gestione delle aree di rete in Skype for Business Server
 
@@ -27,13 +27,13 @@ Utilizzare le procedure descritte in questo articolo per visualizzare informazio
 ## <a name="view-network-region-information"></a>Visualizzare informazioni sull'area di rete 
 
 
-Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. Puoi usare il Skype for Business Server di controllo per visualizzare le aree di rete. Per le aree di rete sono disponibili impostazioni che determinano se sono consentiti percorsi alternativi attraverso Internet per le connessioni audio e video. Le informazioni in questo argomento descrivono come visualizzare le aree di rete esistenti. 
+Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. Puoi usare il Pannello Skype for Business Server di controllo per visualizzare le aree di rete. Per le aree di rete sono disponibili impostazioni che determinano se sono consentiti percorsi alternativi attraverso Internet per le connessioni audio e video. Le informazioni in questo argomento descrivono come visualizzare le aree di rete esistenti. 
 
 ### <a name="to-view-information-about-a-network-region-with-skype-for-business-server-control-panel"></a>Per visualizzare informazioni su un'area di rete con Skype for Business Server pannello di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Area.**
 
@@ -45,7 +45,7 @@ Un'area di rete interconnette diverse parti di una rete dislocate su più aree g
 5.  Scegliere **Mostra dettagli** dal menu **Modifica**.
 
 
-### <a name="viewing-network-region-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sull'area di rete tramite i cmdlet Windows PowerShell rete
+### <a name="viewing-network-region-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sull'area di rete tramite Windows PowerShell cmdlet
 
 È possibile visualizzare le informazioni sull'area di rete utilizzando Windows PowerShell e il cmdlet **Get-CsNetworkRegion.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. 
 
@@ -70,13 +70,13 @@ Per ulteriori informazioni, vedere l'argomento della Guida relativo al cmdlet [G
 
 ## <a name="create-or-modify-network-regions"></a>Creare o modificare aree di rete 
 
-Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. Puoi usare il Pannello di controllo Skype for Business Server per configurare le aree di rete. Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video. Dal Pannello Skype for Business Server di controllo puoi creare, modificare o eliminare un'area di rete. Utilizzare questo argomento per creare e modificare le aree di rete. 
+Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. Puoi usare il Pannello di controllo Skype for Business Server per configurare le aree di rete. Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare o eliminare un'area di rete. Utilizzare questo argomento per creare e modificare le aree di rete. 
 
 ### <a name="to-create-a-network-region"></a>Per creare un'area di rete
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Area.**
 
@@ -100,7 +100,7 @@ La tabella **Siti associati** non viene utilizzata per la creazione di un'area d
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Area.**
 
@@ -117,13 +117,13 @@ Non è possibile modificare i **Siti associati** in questa pagina. L'elenco dei 
 
 ## <a name="delete-existing-network-regions"></a>Eliminare aree di rete esistenti 
 
-Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. Puoi usare il Pannello di controllo Skype for Business Server per configurare le aree di rete. Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video. Dal Pannello Skype for Business Server di controllo puoi creare, modificare o eliminare un'area di rete. Utilizzare questo argomento per eliminare aree di rete esistenti. 
+Un'area di rete interconnette diverse parti di una rete dislocate su più aree geografiche. Ogni area di rete deve essere associata a un sito centrale. Il sito centrale è il sito del data center in cui è in esecuzione il servizio dei criteri di larghezza di banda del controllo di ammissione di chiamata. Puoi usare il Pannello di controllo Skype for Business Server per configurare le aree di rete. Queste includono impostazioni che determinano se consentire percorsi alternativi Internet per le connessioni audio e video. Dal Pannello Skype for Business Server di controllo è possibile creare, modificare o eliminare un'area di rete. Utilizzare questo argomento per eliminare aree di rete esistenti. 
 
 ### <a name="to-delete-a-network-region"></a>Per eliminare un'area di rete
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
+2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Configurazione di rete** e quindi su **Area.**
 

@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: .
-ms.openlocfilehash: 547a71f44fa81f9ba12a1c661465c7b8604b3fa1
-ms.sourcegitcommit: 414d077b16a0ae4ea6a49e3b3d0082858174cacb
+ms.openlocfilehash: 55dd80e5c71dd52dacd82f3fb12e1141a8bff470000280b582eccde7581231b1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50278676"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336666"
 ---
 # <a name="failing-over-and-failing-back-a-pool-in-skype-for-business-server"></a>Failover e failback di un pool in Skype for Business Server
 
-Utilizzare le procedure seguenti se un singolo pool di Front-End ha avuto esito negativo ed è necessario eseguire il backup oppure se il pool in cui si è verificata l'emergenza è di nuovo online ed è necessario ripristinare lo stato di lavoro normale della distribuzione. Informazioni su come eseguire il failover e il fail back del pool di server perimetrali utilizzato per la federazione di Skype for Business o la federazione XMPP oppure modificare il pool di server perimetrali associato a un pool Front-End server.
+Utilizzare le procedure seguenti se un singolo pool di Front-End ha avuto esito negativo ed è necessario eseguire il backup oppure se il pool in cui si è verificata l'emergenza è di nuovo online ed è necessario ripristinare lo stato normale della distribuzione. Informazioni su come eseguire il failover e il fail back del pool di server perimetrali utilizzato per la federazione di Skype for Business o XMPP oppure modificare il pool di server perimetrali associato a un pool Front-End server.
 
 - [Eseguire il failover di un pool Front End](#fail-over-a-front-end-pool)
-- [Fail back di un pool](#fail-back-a-pool)
-- [Eseguire il failover del pool di server perimetrali utilizzato per la federazione di Skype for Business Server](#fail-over-the-edge-pool-used-for-skype-for-business-server-federation)
+- [Eseguire il fail back di un pool](#fail-back-a-pool)
+- [Eseguire il failover del pool di server perimetrali utilizzato per Skype for Business Server federazione](#fail-over-the-edge-pool-used-for-skype-for-business-server-federation)
 - [Eseguire il failover del pool di server perimetrali utilizzato per la federazione XMPP in Skype for Business Server](#fail-over-the-edge-pool-used-for-xmpp-federation-in-skype-for-business-server)
-- [Fail back del pool di server perimetrali utilizzato per la federazione di Skype for Business Server o la federazione XMPP](#fail-back-the-edge-pool-used-for-skype-for-business-server-federation-or-xmpp-federation)
+- [Fail back del pool di server perimetrali utilizzato per Skype for Business Server o federazione XMPP](#fail-back-the-edge-pool-used-for-skype-for-business-server-federation-or-xmpp-federation)
 - [Modificare il pool di server perimetrali associato a un pool Front End](#change-the-edge-pool-associated-with-a-front-end-pool)
 
 ## <a name="fail-over-a-front-end-pool"></a>Eseguire il failover di Front-End pool
@@ -35,19 +35,19 @@ Datacenter1 contiene Pool1 e Pool1 non riuscito. Si sta per eseguire il failover
 
 La maggior parte del lavoro per il failover del pool implica il failover dell'archivio di gestione centrale, se necessario. L'archivio di gestione centrale deve essere funzionante quando si esegue il failed over degli utenti del pool.
 
-Se un pool di Front-End ha esito negativo, ma il pool di server perimetrali in tale sito è ancora in esecuzione, è necessario sapere se il pool di server perimetrali utilizza il pool con errori come pool hop successivo. In caso contrario, è necessario modificare il pool di server perimetrali in modo che utilizzi un pool di Front-End diverso prima di eseguire il failover del pool di Front-End non riuscito. La modifica dell'impostazione relativa all'hop successivo varia a seconda che sia utilizzato un pool che si trova nello stesso sito o in un sito diverso.
+Se un pool Front-End ha esito negativo, ma il pool di server perimetrali in tale sito è ancora in esecuzione, è necessario sapere se il pool di server perimetrali utilizza il pool con errori come pool hop successivo. In caso contrario, è necessario modificare il pool di server perimetrali per usare un pool di Front-End diverso prima di eseguire il failover del pool Front-End non riuscito. La modifica dell'impostazione relativa all'hop successivo varia a seconda che sia utilizzato un pool che si trova nello stesso sito o in un sito diverso.
 
 **Per impostare un pool di server perimetrali per l'utilizzo di un pool di hop successivo nello stesso sito**
 
-1. Aprire Generatore di topologie, fare clic con il pulsante destro del mouse sul pool di server perimetrali da modificare e scegliere **Modifica proprietà.**
+1. Aprire Generatore di topologie, fare clic con il pulsante destro del mouse sul pool di server perimetrali da modificare e scegliere **Modifica proprietà**.
 
-2. Selezionare **Hop successivo.** **Nell'elenco Pool hop successivo selezionare** il pool che verrà ora utilizzato come pool hop successivo.
+2. Selezionare **Hop successivo**. **Nell'elenco Pool hop successivo:** selezionare il pool che verrà ora utilizzato come pool hop successivo.
 
 3. Selezionare **OK** e quindi pubblicare le modifiche.
 
 **Per impostare un pool di server perimetrali per l'utilizzo di un pool di hop successivo in un sito diverso**
 
-1. Aprire una finestra di Skype for Business Server Management Shell e digitare il cmdlet seguente:
+1. Aprire una Skype for Business Server Management Shell e digitare il cmdlet seguente:
 
         Set-CsEdgeServer -Identity EdgeServer:<Edge Server pool FQDN> -Registrar Registrar:<NextHopPoolFQDN>
 
@@ -57,13 +57,13 @@ Se un pool di Front-End ha esito negativo, ma il pool di server perimetrali in t
 
         Invoke-CsManagementServerFailover -Whatif
 
-    I risultati di questo cmdlet mostrano quale pool ospita attualmente il server di gestione centrale. Nella parte restante di questa procedura, questo pool è noto come \_ pool CMS.
+    I risultati di questo cmdlet mostrano quale pool ospita attualmente il server di gestione centrale. Nel resto di questa procedura, questo pool è noto come pool \_ CMS.
 
-2. Utilizzare Generatore di topologie per trovare la versione di Skype for Business Server in esecuzione nel \_ pool CMS. Se è in esecuzione Skype for Business Server, utilizzare il cmdlet seguente per trovare il pool di backup del pool 1.
+2. Utilizzare Generatore di topologie per trovare la versione di Skype for Business Server in esecuzione nel \_ pool cms. Se è in esecuzione Skype for Business Server, utilizzare il cmdlet seguente per trovare il pool di backup del pool 1.
 
         Get-CsPoolBackupRelationship -PoolFQDN <CMS_Pool FQDN>
 
-    Consentire al \_ pool di backup di essere il pool di backup.
+    Consenti pool \_ di backup come pool di backup.
 
 3. Controllare lo stato dell'archivio di gestione centrale con il cmdlet seguente:
 
@@ -71,11 +71,11 @@ Se un pool di Front-End ha esito negativo, ma il pool di server perimetrali in t
 
     Questo cmdlet dovrebbe mostrare che sia ActiveMasterFQDN che ActiveFileTransferAgents puntano al nome di dominio completo del \_ pool CMS. Se sono vuoti, il server di gestione centrale non è disponibile ed è necessario eseguire il failover.
 
-4.  Se l'archivio di gestione centrale non è disponibile o se l'archivio di gestione centrale era in esecuzione in Pool1, ovvero il pool che ha avuto esito negativo, è necessario eseguire il failover del server di gestione centrale prima di eseguire il failover del pool. Se è necessario eseguire il failover del server di gestione centrale ospitato in un pool che esegue Skype for Business Server, utilizzare il cmdlet nel passaggio 5 di questa procedura. Se non è necessario eseguire il failover del server di gestione centrale, andare al passaggio 7 di questa procedura.
+4.  Se l'archivio di gestione centrale non è disponibile o se l'archivio di gestione centrale era in esecuzione su Pool1 (ovvero il pool che ha avuto esito negativo), è necessario eseguire il failover del server di gestione centrale prima di eseguire il failover del pool. Se è necessario eseguire il failover del server di gestione centrale ospitato in un pool che esegue Skype for Business Server, utilizzare il cmdlet nel passaggio 5 di questa procedura. Se non è necessario eseguire il failover del server di gestione centrale, andare al passaggio 7 di questa procedura.
 
-5.  Per eseguire il failover dell'archivio di gestione centrale in un pool che esegue Skype for Business Server, eseguire le operazioni seguenti:
+5.  Per eseguire il failover dell'archivio di gestione centrale in un pool Skype for Business Server, eseguire le operazioni seguenti:
 
-      - Verificare innanzitutto quale Back-End server nel pool di backup esegue l'istanza principale dell'archivio di gestione \_ centrale digitando quanto segue:
+      - Verificare innanzitutto quale Back-End Server nel pool di backup esegue l'istanza principale dell'archivio di gestione \_ centrale digitando quanto segue:
 
             Get-CsDatabaseMirrorState -DatabaseType Centralmgmt -PoolFqdn <Backup_Pool Fqdn>
     
@@ -83,7 +83,7 @@ Se un pool di Front-End ha esito negativo, ma il pool di server perimetrali in t
         
             Invoke-CSManagementServerFailover -BackupSQLServerFqdn <Backup_Pool Primary BackEnd Server FQDN> -BackupSQLInstanceName <Backup_Pool Primary SQL Instance Name>
         
-        Se il server Back-End mirror nel pool di backup \_ è l'entità, digitare:
+        Se il server mirror Back-End server nel pool di backup \_ è l'entità, digitare:
         
             Invoke-CSManagementServerFailover -MirrorSQLServerFqdn <Backup_Pool Mirror BackEnd Server FQDN> -MirrorSQLInstanceName <Backup_Pool Mirror SQL Instance Name>
     
@@ -93,7 +93,7 @@ Se un pool di Front-End ha esito negativo, ma il pool di server perimetrali in t
         
         Verificare che ActiveMasterFQDN e ActiveFileTransferAgents puntino al nome di dominio completo del pool di \_ backup.
     
-      - Infine, controllare lo stato della replica per Front-End server digitando quanto segue:
+      - Infine, controllare lo stato della replica per tutti Front-End server digitando quanto segue:
         
             Get-CsManagementStoreReplicationStatus 
         
@@ -129,7 +129,7 @@ Se un pool di Front-End ha esito negativo, ma il pool di server perimetrali in t
         
             Bootstrapper /Setup 
 
-7.  Eseguire il failover degli utenti da Pool1 a Pool2 eseguendo il cmdlet seguente in una finestra di Skype for Business Server Management Shell:
+7.  Eseguire il failover degli utenti da Pool1 a Pool2 eseguendo il cmdlet seguente in una finestra Skype for Business Server Management Shell:
     
         Invoke-CsPoolFailover -PoolFQDN <Pool1 FQDN> -DisasterMode -Verbose
     
@@ -144,7 +144,7 @@ Se un pool di Front-End ha esito negativo, ma il pool di server perimetrali in t
         proceed.
 
 
-## <a name="fail-back-a-pool"></a>Fail back di un pool
+## <a name="fail-back-a-pool"></a>Eseguire il fail back di un pool
 
 Dopo aver riportato online il pool in cui si è verificata la situazione di emergenza (ovvero Pool1 in questo esempio), eseguire le operazioni seguenti per ripristinare uno stato di funzionamento regolare per la distribuzione.
 
@@ -156,9 +156,9 @@ Eseguire il failback degli utenti ospitati in origine in Pool1 e di cui è stato
 
 Non sono necessari altri passaggi. Se è stato superato il server di gestione centrale, è possibile lasciarlo in Pool2.
 
-## <a name="fail-over-the-edge-pool-used-for-skype-for-business-server-federation"></a>Eseguire il failover del pool di server perimetrali utilizzato per la federazione di Skype for Business Server 
+## <a name="fail-over-the-edge-pool-used-for-skype-for-business-server-federation"></a>Eseguire il failover del pool di server perimetrali utilizzato per Skype for Business Server federazione 
 
-Se il pool di server perimetrali in cui è configurata la federazione di Skype for Business Server non funziona, è necessario modificare la federazione per utilizzare un pool di server perimetrali diverso per il funzionamento della federazione.
+Se il pool di server perimetrali in cui è stata configurata Skype for Business Server federazione non funziona, è necessario modificare la federazione per utilizzare un pool di server perimetrali diverso per il corretto funzionamento della federazione.
 
 1.  In un server Front End aprire il Generatore di topologie. Espandere **Pool di server** perimetrali e quindi fare clic con il pulsante destro del mouse sul server perimetrale o sul pool di server perimetrali attualmente configurato per la federazione. Scegliere **Modifica proprietà**.
 
@@ -168,13 +168,13 @@ Se il pool di server perimetrali in cui è configurata la federazione di Skype f
 
 4.  In **Modifica proprietà** in **Generale** selezionare **Abilita federazione per pool di server perimetrali (porta 5061)**. Selezionare **OK**.
 
-5.  Selezionare **Azione**, **Topologia e** Pubblica.  Quando viene richiesto di **pubblicare la topologia,** selezionare **Avanti.** Al termine della pubblicazione, selezionare **Fine.**
+5.  Selezionare **Azione,** selezionare **Topologia,** quindi **Pubblica.** Quando viene richiesto di **pubblicare la topologia,** selezionare **Avanti**. Al termine della pubblicazione, selezionare **Fine.**
 
-6.  Nel server perimetrale, aprire la distribuzione guidata di Skype for Business Server. Selezionare **Installa o aggiorna il sistema Skype for Business Server** e quindi selezionare Installazione o Rimozione componenti di Skype for Business **Server.** Selezionare **Esegui di nuovo.**
+6.  Nel server perimetrale aprire la procedura guidata Skype for Business Server distribuzione. Selezionare **Install or Update Skype for Business Server System** e quindi selezionare Setup o Remove Skype for Business Server **Components**. Selezionare **Esegui di nuovo**.
 
 7.  Selezionare **Avanti**. Nella schermata di riepilogo sono mostrate le azioni che vengono eseguite. Al termine della distribuzione, selezionare **Visualizza registro per** visualizzare i file di registro disponibili. Selezionare **Fine** per completare la distribuzione.
     
-    Se il sito contenente il pool di server perimetrali con problemi contiene Front End Server ancora in esecuzione, è necessario aggiornare il servizio Web Conferencing e il servizio A/V Conferencing in questi pool di Front-End per utilizzare un pool di server perimetrali in un sito remoto ancora in esecuzione. 
+    Se il sito contenente il pool di server perimetrali con problemi contiene Front End Server ancora in esecuzione, è necessario aggiornare il Servizio Web Conferencing e il Servizio A/V Conferencing in questi pool di Front-End per utilizzare un pool di server perimetrali in un sito remoto ancora in esecuzione. 
 
  ## <a name="fail-over-the-edge-pool-used-for-xmpp-federation-in-skype-for-business-server"></a>Eseguire il failover del pool di server perimetrali utilizzato per la federazione XMPP in Skype for Business Server 
 
@@ -209,13 +209,13 @@ Nella procedura seguente EdgePool1 è il pool, che originariamente ospitava la f
     
         Start-CsWindowsService
 
-## <a name="fail-back-the-edge-pool-used-for-skype-for-business-server-federation-or-xmpp-federation"></a>Fail back del pool di server perimetrali utilizzato per la federazione di Skype for Business Server o la federazione XMPP 
+## <a name="fail-back-the-edge-pool-used-for-skype-for-business-server-federation-or-xmpp-federation"></a>Fail back del pool di server perimetrali utilizzato per Skype for Business Server o federazione XMPP 
 
-Dopo che un pool di server perimetrali non riuscito utilizzato per ospitare la federazione è stato riportato online, utilizzare questa procedura per eseguire il fail back della route di federazione di Skype for Business Server e/o la route di federazione XMPP per utilizzare di nuovo questo pool di server perimetrali ripristinato.
+Dopo che un pool di server perimetrali non riuscito utilizzato per ospitare la federazione è stato riportato online, utilizzare questa procedura per eseguire il fail back della route di federazione di Skype for Business Server e/o della route di federazione XMPP per utilizzare di nuovo questo pool di server perimetrali ripristinato.
 
 1.  Avviare i servizi Edge nel pool di server perimetrali che è nuovamente disponibile.
 
-2.  Se si desidera eseguire il fail back della route di federazione di Skype for Business Server per utilizzare il server perimetrale ripristinato, eseguire le operazioni seguenti:
+2.  Se si desidera eseguire il fail back della route Skype for Business Server federazione per utilizzare il server perimetrale ripristinato, eseguire le operazioni seguenti:
     
       - In un server Front End aprire il Generatore di topologie. Espandere **Pool di server** perimetrali, quindi fare clic con il pulsante destro del mouse sul server perimetrale o sul pool di server perimetrali attualmente configurato per la federazione. Scegliere **Modifica proprietà**.
     
@@ -225,9 +225,9 @@ Dopo che un pool di server perimetrali non riuscito utilizzato per ospitare la f
     
       - In **Modifica proprietà** in **Generale** selezionare **Abilita federazione per pool di server perimetrali (porta 5061)**. Selezionare **OK**.
     
-      - Selezionare **Azione**, **Topologia e** Pubblica.  Quando viene richiesto di **pubblicare la topologia,** selezionare **Avanti.** Al termine della pubblicazione, selezionare **Fine.**
+      - Selezionare **Azione,** selezionare **Topologia,** quindi **Pubblica.** Quando viene richiesto di **pubblicare la topologia,** selezionare **Avanti**. Al termine della pubblicazione, selezionare **Fine.**
     
-      - Nel server perimetrale, aprire la distribuzione guidata di Skype for Business Server. Seleziona **Installa o aggiorna il sistema Skype for Business Server,** quindi seleziona Installazione o Rimuovi componenti di Skype for Business **Server.** Selezionare **Esegui di nuovo.**
+      - Nel server perimetrale aprire la procedura guidata Skype for Business Server distribuzione. Seleziona **Installa o Aggiorna Skype for Business Server sistema**, quindi seleziona Installazione o Rimuovi Skype for Business Server **componenti**. Selezionare **Esegui di nuovo**.
     
       - Selezionare **Avanti**. Nella schermata di riepilogo sono mostrate le azioni che vengono eseguite. Al termine della distribuzione, selezionare **Visualizza registro per** visualizzare i file di registro disponibili. Selezionare **Fine** per completare la distribuzione.
 

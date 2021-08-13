@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 790396f1-9821-45cd-906d-80c1f170f5ef
 ROBOTS: NOINDEX, NOFOLLOW
 description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN), le porte e l'archivio file associato per questo pool di server Director. È possibile eseguire le operazioni seguenti:"
-ms.openlocfilehash: 20a806a22d941f1cc6e2f2199e9198fbddeb450c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 784c8893da62873657840f4ae4f09616e21e1ae2e6982f2fa87b0da9fb70eb83
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49822636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54335436"
 ---
 # <a name="director-scope-node"></a>Nodo dell'ambito di Director
  

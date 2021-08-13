@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 033906cd-385f-4b04-9607-376888ec414d
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per specificare le credenziali di SQL Server Reporting Services (SSRS) per l'accesso al database di monitoraggio, eseguire le operazioni seguenti:"
-ms.openlocfilehash: 1f373eff9748adc3e52eef24dfecb026a71f48ed
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9f01b2a6526186d934949593d124f269a0cb491eed11d27988de96c46dcd16d4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324485"
 ---
 # <a name="sql-server-reporting-services-credentials"></a>SQL Server Reporting Services (credenziali)
  
@@ -31,4 +31,4 @@ Nella pagina **Specifica credenziali** specificare le credenziali utente che si 
 > [!NOTE]
 > Per informazioni dettagliate, vedere "Specifying Credential and Connection Information for Report Data Sources (SSRS)" all'indirizzo [https://go.microsoft.com/fwlink/p/?LinkId=263431](/sql/reporting-services/report-data/specify-credential-and-connection-information-for-report-data-sources) . 
   
-Per informazioni dettagliate sulla distribuzione dei report di Reporting Services per il server che esegue Monitoring, vedere [Install Monitoring Reports in Skype for Business Server.](../../../deploy/deploy-monitoring/install-monitoring-reports.md)
+Per informazioni dettagliate sulla distribuzione dei report di Reporting Services per il server che esegue Monitoring, vedere [Install Monitoring Reports in Skype for Business Server](../../../deploy/deploy-monitoring/install-monitoring-reports.md).

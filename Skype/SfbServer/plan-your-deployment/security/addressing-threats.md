@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: bf90ecc3-f9ea-45db-93e2-9aecec06f0d8
-description: Oltre a seguire le procedure consigliate per la distribuzione di Skype for Business Server, è possibile garantire la sicurezza rivedendo, comprendendo e affrontando eventuali esigenze in aree specifiche della distribuzione.
-ms.openlocfilehash: d959b20bed51e5c496f70cb107f5bd32670b8449
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Oltre a seguire le procedure consigliate per la distribuzione di Skype for Business Server, è possibile garantire la sicurezza esaminando, comprendendo e affrontando eventuali esigenze in aree specifiche della distribuzione.
+ms.openlocfilehash: c022bf950f21384c188ce2df05027281ff2f23ff8de89180b913f75b43124e39
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49832276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336418"
 ---
 # <a name="addressing-threats-to-your-core-infrastructure-for-skype-for-business-server"></a>Affrontare le minacce all'infrastruttura di base per Skype for Business Server
  
-Oltre a seguire le procedure consigliate per la distribuzione di Skype for Business Server, è possibile garantire la sicurezza rivedendo, comprendendo e affrontando eventuali esigenze in aree specifiche della distribuzione.
+Oltre a seguire le procedure consigliate per la distribuzione di Skype for Business Server, è possibile garantire la sicurezza esaminando, comprendendo e affrontando eventuali esigenze in aree specifiche della distribuzione.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 

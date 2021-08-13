@@ -11,27 +11,27 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: ea4b0c9f-7f93-4b8a-b901-01e1636c44fb
-description: 'Riepilogo: informazioni sui rapporti di controllo di ammissione di chiamata utilizzati in Skype for Business Server.'
-ms.openlocfilehash: ce7f8e622ece066d58cbc2c23a6423e19b084622
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni sui rapporti di controllo di ammissione di chiamata utilizzati Skype for Business Server.'
+ms.openlocfilehash: 36dfe7c15948ea8405558d9e97fa4de4ac4a8081a22aa7e6bd83256a40c8c9f5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49826526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336626"
 ---
 # <a name="call-admission-control-report-in-skype-for-business-server"></a>Rapporto controllo di ammissione di chiamata in Skype for Business Server
  
-**Riepilogo:** Informazioni sui rapporti di controllo di ammissione di chiamata utilizzati in Skype for Business Server.
+**Riepilogo:** Informazioni sui Rapporti di controllo di ammissione di chiamata utilizzati Skype for Business Server.
   
-Il Rapporto controllo di ammissione di chiamata fornisce informazioni sulle sessioni peer-to-peer e di conferenza sottoposte alle limitazioni imposte dal servizio Controllo di ammissione di chiamata. Il servizio Controllo di ammissione di chiamata consente agli amministratori di consentire o meno le sessioni di comunicazione in base ai vincoli di larghezza di banda. Gli amministratori possono ad esempio creare criteri che limitano la larghezza di banda disponibile per le chiamate vocali e video. Se il limite di larghezza di banda viene raggiunto, non è possibile avviare ulteriori chiamate vocali o video se prima non termina una delle chiamate in corso liberando le risorse di rete necessarie.
+Il Rapporto controllo di ammissione di chiamata fornisce informazioni sulle sessioni peer-to-peer e di conferenza sottoposte alle limitazioni imposte dal servizio Controllo di ammissione di chiamata. Controllo di ammissione di chiamata consente agli amministratori di consentire o meno le sessioni di comunicazione in base ai vincoli di larghezza di banda. Gli amministratori possono ad esempio creare criteri che limitano la larghezza di banda disponibile per le chiamate vocali e video. Se il limite di larghezza di banda viene raggiunto, non è possibile avviare ulteriori chiamate vocali o video se prima non termina una delle chiamate in corso liberando le risorse di rete necessarie.
   
 ## <a name="accessing-the-call-admission-control-report"></a>Accesso al Rapporto controllo di ammissione di chiamata
 
 È possibile accedere al Rapporto controllo di ammissione di chiamata dalla home page di Relazioni monitoraggio. Dal Rapporto controllo di ammissione di chiamata è possibile eseguire il drill-down nei report seguenti:
   
-- Rapporto dettagli conferenza: per accedere a questo report, fare clic sulla metrica Dettagli di una sessione di conferenza. 
+- Rapporto dettagli conferenza: per accedere a questo report, fare clic sulla metrica Dettagli da una sessione di conferenza. 
     
-- Rapporto dettagli sessione peer-to-peer: per accedere a questo report, fare clic sulla metrica Dettagli per una sessione peer-to-peer.
+- Rapporto dettagli sessione peer-to-peer - Per accedere a questo report, fare clic sulla metrica Dettagli per una sessione peer-to-peer.
     
 ## <a name="making-the-best-use-of-the-call-admission-control-report"></a>Utilizzare al meglio il Rapporto controllo di ammissione di chiamata
 
@@ -51,8 +51,8 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto controllo 
 
 |**Nome**|**Descrizione**|
 |:-----|:-----|
-|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 17/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 17/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 17/07/12015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
+|**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 17/07/12015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[Tutti]** per visualizzare dati per tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record del database.<br/> |
 |**Tipo di attività** <br/> | Selezionare una delle attività seguenti: <br/>  [All] <br/>  Peer-to-Peer <br/>  Conferenza <br/> |
 |**Categoria chiamata** <br/> | Indica il motivo per cui è stato utilizzato il controllo di ammissione chiamata. Selezionare una delle opzioni seguenti: <br/>  [All] <br/>  Chiamate rifiutate a causa del controllo di ammissione di chiamata <br/>  Chiamate reinstradate tramite PSTN a causa del controllo di ammissione di chiamata <br/> |
@@ -99,7 +99,7 @@ Nella tabella seguente sono elencate le informazioni riportate nel Rapporto di c
 |**Ruolo** <br/> |No  <br/> |Ruolo, ad esempio Relatore, ricoperto dal partecipante alla conferenza.  <br/> |
 |**Partecipante** <br/> |No  <br/> |Indirizzo SIP del partecipante alla conferenza.  <br/> |
 |**Connettività** <br/> |No  <br/> |Connettività di rete, solitamente Dall'interno o Dall'esterno, per il partecipante.  <br/> |
-|**Modality** <br/> |No  <br/> |Tipo di conferenza, ad esempio audio/video.  <br/> |
+|**Modalità** <br/> |No  <br/> |Tipo di conferenza, ad esempio audio/video.  <br/> |
 |**Ora partecipazione** <br/> |No  <br/> |Data e ora in cui il partecipante si è unito alla conferenza.  <br/> |
 |**Ora uscita** <br/> |No  <br/> |Data e ora in cui il partecipante è uscito dalla conferenza.  <br/> |
 |**ID diagnostica** <br/> |No  <br/> |Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.  <br/> |

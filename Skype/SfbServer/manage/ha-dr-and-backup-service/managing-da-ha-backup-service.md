@@ -10,25 +10,25 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: Informazioni sulle procedure per le operazioni di ripristino di emergenza e sulla gestione del servizio di backup, che sincronizza i dati in pool Front End abbinati.
-ms.openlocfilehash: e486a71203b64b4fc351888869ac64a24689ba7b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Informazioni sulle procedure per le operazioni di ripristino di emergenza, nonché sulla manutenzione del servizio di backup, che sincronizza i dati in pool Front End abbinati.
+ms.openlocfilehash: a6740f5ebc0cc05982a5ad14efb5b2c10a8e06c22124aae331725d4c74a5aac2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336656"
 ---
-# <a name="managing-skype-for-business-server-disaster-recovery-high-availability-and-backup-service"></a>Gestione del ripristino di emergenza, della disponibilità elevata e del servizio di backup di Skype for Business Server
+# <a name="managing-skype-for-business-server-disaster-recovery-high-availability-and-backup-service"></a>Gestione Skype for Business Server ripristino di emergenza, disponibilità elevata e servizio di backup
 
-In questa sezione sono contenute le procedure per le operazioni di ripristino di emergenza e per la gestione del servizio di backup, che sincronizza i dati in pool Front End abbinati.
+In questa sezione sono contenute le procedure per le operazioni di ripristino di emergenza, nonché per la manutenzione del servizio di backup, che sincronizza i dati in pool Front End abbinati.
 
 Le procedure di ripristino di emergenza, sia di failover che di failback, sono manuali. In caso di emergenza, è necessario che l'amministratore richiami manualmente le procedure di failover. La stessa procedura si applica al failback dopo che il pool è stato ripristinato.
 
 Le procedure di ripristino di emergenza descritte in questa sezione presuppongono quanto segue:
 
-  - Si dispone di una distribuzione con pool Front End abbinati, che si trovano in siti diversi, come descritto in Pianificare la disponibilità elevata [e il ripristino di emergenza.](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) Il servizio di backup è stato eseguito nei pool abbinati per mantenerli sincronizzati.
+  - Si dispone di una distribuzione con pool Front End abbinati, che si trovano in siti diversi, come descritto in [Plan for high availability and disaster recovery.](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md) Il servizio di backup è stato eseguito nei pool abbinati per mantenerli sincronizzati.
 
-  - Se l'archivio di gestione centrale è ospitato in uno dei pool, viene installato ed eseguito in entrambi i pool associati, con uno di questi pool che ospita il master attivo e l'altro pool che ospita lo standby.
+  - Se l'archivio di gestione centrale è ospitato in uno dei due pool, viene installato e in esecuzione in entrambi i pool associati, con uno di questi pool che ospita il master attivo e l'altro pool che ospita lo standby.
 
 > [!IMPORTANT]
 > Nelle procedure seguenti il parametro *PoolFQDN* si riferisce al nome di dominio completo (FQDN) del pool interessato dall'emergenza, non al pool da cui gli utenti interessati dal problema vengono reindirizzati. Per lo stesso gruppo di utenti interessati dal problema, si riferisce allo stesso pool nei cmdlet di failover e failback (il pool che ospitava gli utenti prima del failover).<BR><br>Si supponga ad esempio un caso in cui per tutti gli utenti ospitati in un pool P1 sia stato eseguito il failover nel pool di backup, P2. Se l'amministratore desidera spostare tutti gli utenti serviti da P2 in modo che siano serviti da P1, è necessario che esegua le procedure seguenti: 

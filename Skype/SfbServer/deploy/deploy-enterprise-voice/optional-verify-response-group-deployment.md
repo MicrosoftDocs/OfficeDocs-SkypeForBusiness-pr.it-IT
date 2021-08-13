@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 202ca4ab-8e6d-44a4-b7c8-071133074feb
 description: Verificare l'esito positivo della distribuzione di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: e593b46d260e8cabb8a4cbb311a7a79852a93c18
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 130ec066682f246a13df32835cb1ed1e3bb40428b3c80ef820ab5ede1dc5c00f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830886"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324535"
 ---
 # <a name="optional-verify-response-group-deployment-in-skype-for-business"></a>(Facoltativo) Verificare la distribuzione di Response Group in Skype for Business
  
@@ -32,11 +32,11 @@ Dopo aver configurato Response Group, è necessario verificare la configurazione
     
 - Utente esterno che usa la rete PSTN (switched telephone network) pubblica
     
-- Un agente che si trova su Skype for Business
+- Un agente che si trova in Skype for Business
     
   **Scenari**
   
-- L'utente di Skype for Business chiama il Response Group.
+- L Skype for Business'utente chiama il Response Group.
     
 - L'utente esterno chiama il gruppo di risposta.
     

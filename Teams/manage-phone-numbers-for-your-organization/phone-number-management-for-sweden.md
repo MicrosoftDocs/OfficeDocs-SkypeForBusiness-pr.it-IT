@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svezia per Microsoft Teams.
-ms.openlocfilehash: 8f71651e78e31fdb7c049cf9f6ed058a5c6ee15913c769412af8476907c24988
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: f15b918536ff20f8baeeccbb5a11364346a173d3
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848511"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58233031"
 ---
 # <a name="phone-number-management-for-sweden"></a>Telefono gestione dei numeri per la Svezia
 

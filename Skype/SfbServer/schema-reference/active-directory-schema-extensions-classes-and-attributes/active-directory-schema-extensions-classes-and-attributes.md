@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 579bfa5a-9443-46dd-9a8e-07d00ba2824d
 description: 'In questa sezione di riferimento sono incluse le informazioni seguenti:'
-ms.openlocfilehash: 5c8a1ceb6b623466219cbd3df46ff2b39ccceb2c
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 25532271f7a34b6861d0817de9e5e7526c1165d255f9a17a2b8a79414bc2ba05
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49831936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54352125"
 ---
 # <a name="active-directory-schema-extensions-classes-and-attributes"></a>Estensioni dello schema, classi e attributi di Active Directory
  
@@ -26,13 +26,13 @@ In questa sezione di riferimento sono incluse le informazioni seguenti:
   
 - Estensioni dello schema di Active Directory nuove o modificate per Skype for Business Server
     
-    Lo schema di Active Directory contiene le definizioni formali di ogni classe di oggetti che è possibile creare in una foresta di Active Directory. Lo schema include inoltre le definizioni formali di ogni attributo che è possibile definire per un oggetto Active Directory. Il catalogo globale di Active Directory contiene le repliche di tutti gli oggetti relativi alla foresta, insieme a un sottoinsieme degli attributi relativi a ogni oggetto. Questa sezione descrive le classi e gli attributi nuovi o modificati in Skype for Business Server.
+    Lo schema di Active Directory contiene le definizioni formali di ogni classe di oggetti che è possibile creare in una foresta di Active Directory. Lo schema include inoltre le definizioni formali di ogni attributo che è possibile definire per un oggetto Active Directory. Il catalogo globale di Active Directory contiene le repliche di tutti gli oggetti relativi alla foresta, insieme a un sottoinsieme degli attributi relativi a ogni oggetto. In questa sezione vengono descritte le classi e gli attributi nuovi o modificati in Skype for Business Server.
     
-- Tutte le classi usate da Skype for Business Server, con una descrizione di ognuna
+- Tutte le classi utilizzate da Skype for Business Server, con una descrizione di ogni
     
-- Tutti gli attributi utilizzati da Skype for Business Server, con una descrizione di ognuno
+- Tutti gli attributi utilizzati da Skype for Business Server, con una descrizione di ogni
     
-- Un elenco delle classi usate da Skype for Business Server, con gli attributi che ognuna può contenere
+- Elenco delle classi utilizzate da Skype for Business Server, con gli attributi che possono contenere
     
 - Impostazioni globali e oggetti, nonché i gruppi amministrativi e di servizi universali creati durante la preparazione della foresta
     

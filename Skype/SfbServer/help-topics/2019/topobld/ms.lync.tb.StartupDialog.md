@@ -15,18 +15,18 @@ localization_priority: Normal
 ms.assetid: 8761008f-b239-4b95-bcd8-1011198dd070
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Avviare Generatore di topologie per configurare le proprietà e la configurazione della distribuzione. All'avvio, in Generatore di topologie viene visualizzata una finestra di dialogo in cui viene chiesto quale sarà l'origine del documento della topologia. È possibile selezionare una delle tre opzioni seguenti:"
-ms.openlocfilehash: a4d86e42ad40f4e6e25d3f7d55cd673187a3c8bb
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 8259d8f552f0706d83f809c17802f54229d455910bf6da54eb14373e21f49a02
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807556"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54335406"
 ---
 # <a name="topology-builder-startup-dialog"></a>Finestra di dialogo di avvio di Generatore di topologie
  
 Avviare Generatore di topologie per configurare le proprietà e la configurazione della distribuzione. All'avvio, in Generatore di topologie viene visualizzata una finestra di dialogo in cui viene chiesto quale sarà l'origine del documento della topologia. È possibile selezionare una delle tre opzioni seguenti:
   
-- **Scaricare la topologia dalla distribuzione esistente** Selezionare questa opzione se generatore di topologie è stato eseguito e la topologia è stata pubblicata correttamente nel server di gestione centrale. Questa opzione richiede e scarica una copia locale della configurazione corrente, consentendo di modificare e configurare la distribuzione esistente.
+- **Scaricare la topologia dalla distribuzione esistente** Selezionare questa opzione se è stato eseguito Generatore di topologie e la topologia è stata pubblicata correttamente nel server di gestione centrale. Questa opzione richiede e scarica una copia locale della configurazione corrente, consentendo di modificare e configurare la distribuzione esistente.
     
 - **Aprire la topologia da un file locale** Selezionare questa opzione se si sta configurando una distribuzione ma non si è ancora pubblicata la configurazione. Questa opzione consente di salvare una copia locale del lavoro di configurazione in Generatore di topologie e di tornarvi in un secondo momento.
     

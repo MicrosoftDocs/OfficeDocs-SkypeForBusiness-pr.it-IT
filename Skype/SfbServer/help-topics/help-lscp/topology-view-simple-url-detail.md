@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bf357591-6efd-41a7-8d19-014b684b84f4
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 5d00e622a76d605eec28c54e00ca2c335de0d447
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 9165395f84aff0c95b38efc959c692018a10eaeb18a88f640e5d86b3bb5fe7f9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119885"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54331278"
 ---
 # <a name="topology-view-simple-url-detail"></a>Topologia: visualizzare i dettagli degli URL semplici
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Modificare o configurare URL semplici](/previous-versions/office/lync-server-2013/lync-server-2013-edit-or-configure-simple-urls)
 
