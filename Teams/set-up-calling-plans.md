@@ -25,12 +25,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Scopri come configurare i Piani per le chiamate, inclusi i piani di visualizzazione disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & località.
-ms.openlocfilehash: a06ec3b71933e8e6ea640b6377581243140ef672
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 0eedd72947c4969fc7f42d75d5241ca38c69e0c2e22172444a0d349b6a77b611
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54348661"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
@@ -104,7 +104,7 @@ Per altre informazioni, vedere Teams [panoramica di PowerShell.](teams-powershel
 
 [Aggiungere, modificare o rimuovere una posizione di emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md)
 
-[Termini e condizioni per le chiamate di emergenza](emergency-calling-terms-and-conditions.md)
+[Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
 [Teams: etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 

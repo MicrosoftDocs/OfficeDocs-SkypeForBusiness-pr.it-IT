@@ -17,18 +17,18 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c665b96c0c44c2ea763c343bb2857d4c2b9dbb26
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9e33e31c5fc6b005459e8b216a2cfec984b80e73dc821d4e13fcaac0d02acf86
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117274"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54319679"
 ---
 # <a name="powershell-script-sample---create-and-assign-a-messaging-policy"></a>Esempio di script di PowerShell - Creare e assegnare criteri di messaggistica
 
 Usare questo script di PowerShell per creare un criterio di messaggistica in Microsoft Teams e assegnarlo agli utenti. 
 
-Per altre informazioni sull'uso di questo script di PowerShell, vedere Guida [introduttiva - Teams per l'istruzione.](../teams-quick-start-edu.yml)
+Per altre informazioni sull'uso di questo script di PowerShell, vedere [Guida introduttiva - Teams per l'istruzione](../teams-quick-start-edu.yml).
 
 Questo script usa il cmdlet [Grant-CsTeamsMessagingPolicy](/powershell/module/skype/grant-csteamsmessagingpolicy) nel modulo di PowerShell Skype for Business Online. Vedere [Teams panoramica di PowerShell](../teams-powershell-overview.md) per altre informazioni sulla gestione Teams con PowerShell.
 

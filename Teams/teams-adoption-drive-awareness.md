@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 04c9dbeaecd5c1ed15dff5e5a0e2ae3823216a1a
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 7ea6dbf8dbf7e1f50164348095e673d086ffbcaadcf18866e9e1248ff35bfa0e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49834156"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54348611"
 ---
 # <a name="drive-awareness-and-implement-training-for-microsoft-teams"></a>Aumentare la consapevolezza e implementare la formazione per Microsoft Teams
 
@@ -69,6 +69,6 @@ Come per qualsiasi campagna di comunicazione e adozione, è importante identific
 
 Condividi le informazioni che ricevi dai tuoi canali di feedback con l'hashtag #TeamsStories per un facile recupero. Condividere un #TeamsStory al mese nella intranet per evidenziare i dipendenti che stanno abbracciando il cambiamento per aumentare la produttività e la collaborazione nell'ambiente. È anche possibile condividerle con noi nel forum Driving Adoption sul sito Web microsoft technical Community. Condividere questi esempi reali dall'interno della propria azienda è estremamente utile per realizzare cambiamenti sostenuti nel tempo con la community degli utenti.
 
-[Altre informazioni sui report di Microsoft Teams sull'utilizzo dei dati nell'Microsoft 365 di amministrazione.](teams-activity-reports.md)
+[Altre informazioni sui report di Microsoft Teams sull'utilizzo di interfaccia di amministrazione di Microsoft 365.](teams-activity-reports.md)
 
 ![Icona che illustra i passaggi ](media/teams-adoption-next-icon.png) successivi: Pianificare [le revisioni dell'integrità dei servizi](teams-adoption-schedule-service-health-reviews.md)

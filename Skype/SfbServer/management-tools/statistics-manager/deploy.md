@@ -13,23 +13,23 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 37b2bb9c-c5d4-4fb0-a976-670b7594b82f
 description: 'Riepilogo: leggere questo argomento per informazioni su come distribuire Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 406f4188347d32111bea4952815237b7f1015574
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e5ace82602ef6443331470a3fd3deda69e3fc797f0446749780436b14b4a7b82
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51105382"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333258"
 ---
 # <a name="deploy-statistics-manager-for-skype-for-business-server"></a>Distribuire il gestore delle statistiche per Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come distribuire Gestione statistiche per Skype for Business Server.
   
- Gestione statistiche per Skype for Business Server è un potente strumento che consente di visualizzare i dati sulle prestazioni e sull'integrità di Skype for Business Server in tempo reale. È possibile eseguire il polling dei dati sulle prestazioni in centinaia di server ogni pochi secondi e visualizzare immediatamente i risultati nel sito Web Gestione statistiche.
+ Gestione statistiche per Skype for Business Server è un potente strumento che consente di visualizzare Skype for Business Server dati sull'integrità e sulle prestazioni in tempo reale. È possibile eseguire il polling dei dati sulle prestazioni in centinaia di server ogni pochi secondi e visualizzare immediatamente i risultati nel sito Web Gestione statistiche.
   
-Prima di tentare di installare Gestione statistiche, assicurarsi di avere familiarità con i requisiti software, di rete e hardware. Per ulteriori informazioni, vedere [Plan for Statistics Manager for Skype for Business Server.](plan.md)
+Prima di tentare di installare Gestione statistiche, assicurarsi di avere familiarità con i requisiti software, di rete e hardware. Per ulteriori informazioni, vedere [Plan for Statistics Manager for Skype for Business Server](plan.md).
   
 > [!NOTE]
-> Se si esegue l'aggiornamento da una versione precedente di Gestione statistiche, vedere [Upgrade Statistics Manager for Skype for Business Server](upgrade.md). 
+> Se si esegue l'aggiornamento da una versione precedente di Gestione statistiche, vedere Gestione statistiche [di aggiornamento per Skype for Business Server](upgrade.md). 
   
 > [!NOTE]
 > Il sito Web Gestione statistiche è stato testato e funziona correttamente in Internet Explorer 11+, Edge 20.10240+ e Chrome 46+ (versione sempreverde corrente). 
@@ -55,12 +55,12 @@ Per distribuire Gestione statistiche, attenersi alla seguente procedura:
     
 3. Installare il sito Web nel computer host.
     
-4. Installare un agente in ogni computer Skype for Business Server che si desidera monitorare.
+4. Installare un agente in Skype for Business Server computer che si desidera monitorare.
     
 5. Importare la topologia per i server da monitorare.
     
 > [!NOTE]
-> Redis, il servizio Listener e il sito Web devono essere tutti installati nello stesso computer host. Assicurati che nel computer host non sia installato Skype for Business Server. 
+> Redis, il servizio Listener e il sito Web devono essere tutti installati nello stesso computer host. Assicurarsi che il computer host non abbia Skype for Business Server installato. 
   
 ### <a name="prepare-the-listener-host-machine"></a>Preparare il computer host listener
 
@@ -179,13 +179,13 @@ msiexec /l install.log /i StatsManPerfAgent.msi SERVICE_THUMBPRINT=<thumbprint> 
 ### <a name="import-the-topology"></a>Importare la topologia
 <a name="BKMK_ImportTopology"> </a>
 
-Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia di Skype for Business Server, si utilizzerà il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare informazioni su ogni pool in uso nell'organizzazione, quindi importare tali informazioni in Gestione statistiche.
+Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia di Skype for Business Server, utilizzare il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare informazioni su ogni pool in uso nell'organizzazione, quindi importare tali informazioni in Gestione statistiche.
   
-Per importare la topologia di Skype for Business Server, attenersi alla seguente procedura:
+Per importare la Skype for Business Server, attenersi alla seguente procedura:
   
-1. In un host con i cmdlet di PowerShell di Skype for Business Server:
+1. In un host con i cmdlet Skype for Business Server PowerShell:
     
-    a. Eseguire il comando qui riportato: 
+    a. Eseguire il comando seguente: 
     
    ```PowerShell
    Get-CsPool | Export-Clixml -Path mypoolinfo.xml
@@ -228,7 +228,7 @@ Se si desidera monitorare i server non presenti nella topologia di Skype for Bus
    cd C:\Program Files\Skype for Business Server StatsMan Listener
    ```
 
-2. Eseguire il comando qui riportato:
+2. Eseguire il comando seguente:
     
    ```powershell
     .\Update-StatsManServerInfo.ps1 -HostName <hostname> -SiteName <name of site> -PoolName <poolName> -Roles <role1>[,<role2>,<roleN>]
@@ -243,7 +243,7 @@ Se l'avvio di un agente non riesce, verificare quanto segue:
     
     1. Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology).
         
-    2. Se l'agente si trova in un server non elencato nella topologia, ad esempio i nodi in un cluster AlwaysOn di SQL, sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in Importare la [topologia.](deploy.md#BKMK_ImportTopology)
+    2. Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere l'agente manualmente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
     
 - L'agente può contattare il listener?
     
@@ -267,7 +267,7 @@ Se l'avvio di un agente non riesce, verificare quanto segue:
   .\PerfAgentStorageManager.exe -redis=localhost -a=getcountervalues  -counter="\\*\Processor Information\% Processor Time_Mean_Mean\_Total" -file:all-processor.csv
   ```
 
-Per informazioni su tutti gli eventi che potrebbero essere visualizzati nel registro eventi dell'applicazione, vedere [Troubleshoot Statistics Manager for Skype for Business Server.](troubleshoot.md)
+Per informazioni su tutti gli eventi che potrebbero essere visualizzati nel registro eventi dell'applicazione, vedere [Troubleshoot Statistics Manager for Skype for Business Server](troubleshoot.md).
   
 ## <a name="create-a-self-signed-certificate"></a>Creare un certificato autofirmato
 <a name="BKMK_SelfCert"> </a>

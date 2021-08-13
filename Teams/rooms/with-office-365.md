@@ -15,12 +15,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365, dove Teams o Skype for Business e Exchange sono entrambi online.
-ms.openlocfilehash: 64567cd9925a0a11d9e9b896c522a2c4bfe13f40
-ms.sourcegitcommit: 3840d72f9ad1c0c7803dc3662a0318f558fe92ab
+ms.openlocfilehash: 5f700dfd839515cd34a1fec864994867055b11ec184bc0f70b4ea2107ddd16f0
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "52739646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54318270"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-microsoft-365-or-office-365"></a>Distribuire Microsoft Teams Rooms con Microsoft 365 o Office 365
 
@@ -189,7 +189,7 @@ Per informazioni dettagliate Skype for Business piani online, vedere la [Skype f
    Avviare una sessione [Windows PowerShell remota](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell) come indicato di seguito (assicurarsi di installare Skype for Business componenti [di PowerShell online):](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/download-and-install-the-skype-for-business-online-connector)
 
    > [!NOTE]
-   > Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente.
+   > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente.
    >
    > Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 

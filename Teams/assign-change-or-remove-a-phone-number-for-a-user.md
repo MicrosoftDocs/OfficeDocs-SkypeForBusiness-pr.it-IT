@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono dell'ufficio per gli utenti Teams in modo che le aziende e i clienti esterni possano chiamare.
-ms.openlocfilehash: 4f40049b3856f24d3ae5ddd3999be7213817bcdc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 443fdb5833e657c3f45c0f53d1d4ce6744bd67b0b83247e72084e3d29f6c1bc7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120818"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320029"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user-calling-plans"></a>Assegnare, modificare o rimuovere un numero di telefono per un utente (Piani per chiamate)
 
@@ -38,7 +38,7 @@ Quando si configurano gli utenti in modo che possano effettuare e ricevere chiam
 Per informazioni su come ottenere piani per chiamate in Teams e quanto costano, vedere Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   
 > [!NOTE]
-> Un modo per verificare se a un utente è assegnata una licenza è accedere all'Microsoft Teams di amministrazione > **utenti**. Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare l'interfaccia Microsoft 365 di amministrazione.
+> Un modo per verificare se a un utente è assegnata una licenza è accedere all'Microsoft Teams di amministrazione > **utenti**. Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare il interfaccia di amministrazione di Microsoft 365.
   
 ## <a name="assign-a-phone-number-to-a-user"></a>Assegnare un numero di telefono a un utente
  
@@ -93,7 +93,7 @@ Per un esempio di PowerShell, vedere [Set-CsOnlineVoiceUser](/powershell/module/
 
 [Termini e condizioni per le chiamate al numero di emergenza](./emergency-calling-terms-and-conditions.md)
 
-[Etichetta di esclusione di responsabilità per chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
+[Dichiarazione di esonero da responsabilità per le chiamate di emergenza](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/emergency-calling/emergency-calling-label-(en-us)-(v.1.0).zip?raw=true)
 
 [Set-CsOnlineVoiceUser](/powershell/module/skype/set-csonlinevoiceuser?view=skype-ps)
 

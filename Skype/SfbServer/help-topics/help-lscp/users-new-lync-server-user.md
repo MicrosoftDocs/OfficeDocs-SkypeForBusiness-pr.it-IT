@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 23408002-f83c-4b8a-ac65-6fb0e6bc414e
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 988640963eb6028cb85eee5afc243f6060a99950
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 36022fe928769e4e5113a48723143036dbbaf87914584964164a439e5b9015e6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51115194"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54348241"
 ---
 # <a name="users-new-lync-server-user"></a>Utenti: nuovo utente di Lync Server
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Aggiungere un nuovo utente a Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-add-and-enable-user-account-for-lync-server)
 

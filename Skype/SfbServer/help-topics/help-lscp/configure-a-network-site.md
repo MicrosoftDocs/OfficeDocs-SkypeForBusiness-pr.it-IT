@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 9d65238a-d255-4b13-abe8-e4301b44c21c
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 1acdebd7b6357b6d4497fdcd9463467973dcfa82
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 224493e188ef09d364e6f2dccacd4d2e33495e5b280ad46d2c41072d7f6c48bd
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119945"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54348301"
 ---
 # <a name="configure-a-network-site"></a>Configurare un sito di rete
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Configurazione di siti di rete](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-sites)
 

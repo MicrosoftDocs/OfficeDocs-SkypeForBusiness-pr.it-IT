@@ -23,12 +23,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
-ms.openlocfilehash: 6f4c27ed9794a24c2038a97f5ae10545035ba1e0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 95e39926af9684b1bbc93bda3ff25ebcc72d2cdd6e6ed776856a984f565d2eff
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116814"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54348421"
 ---
 # <a name="toll-free-dialing-restrictions-in-bulgaria"></a>Restrizioni di composizione a numero verde in Bulgaria
 

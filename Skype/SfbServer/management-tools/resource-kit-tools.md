@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: b1c341f1-86fa-479d-ba4d-28df5a4c1622
 description: In questo articolo vengono descritti gli strumenti inclusi nel Resource Kit di Skype for Business Server 2015, incluso lo scopo di ogni strumento ed esempi del relativo utilizzo. Il Skype for Business Server Resource Kit 2015 consente di semplificare le attività di routine per gli amministratori IT che distribuiscono e gestiscono Skype for Business Server 2015. Ad esempio, lo strumento Web Conf Data può essere utilizzato per controllare facilmente i dati caricati dagli utenti durante una riunione online. Lo strumento SEFAUtil può essere utilizzato per configurare l'inoltro di chiamata delegato e la risposta per gli utenti. Incoraggiamo gli amministratori IT a usare questi strumenti per gestire in modo più efficace Skype for Business Server 2015.
-ms.openlocfilehash: 6c68a94d331f2ad5f9ffaa169228aa9d64e41293
-ms.sourcegitcommit: 330e60ff3549cd5cff5b52ad95dc4259e4e8de13
+ms.openlocfilehash: 421b0cbe3ec7644122d73365159714281a8e425e23392dab96d5b8923f5a8e89
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "52629045"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333278"
 ---
 # <a name="skype-for-business-server-2015-resource-kit-tools-documentation"></a>Skype for Business Server strumenti del Resource Kit 2015
 

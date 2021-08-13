@@ -15,28 +15,28 @@ localization_priority: Normal
 ms.assetid: dc8238a0-24aa-47a0-b871-4465ada1761e
 ROBOTS: NOINDEX, NOFOLLOW
 description: Fare clic con il pulsante destro del mouse su Componenti condivisi nell'albero della gerarchia di Generatore di topologie per creare nuovi componenti condivisi o per accedere alle opzioni a livello di topologia.
-ms.openlocfilehash: 1f03a498f92f72b9546be2eb0703e8b7022770b4
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 638f05c42aa08c172bbd7669d3876c0184b228fdbc2ca13767a5fdd99ebd5c26
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49800736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54348371"
 ---
 # <a name="shared-components-scope-node"></a>Nodo di ambito per componenti condivisi
  
-Fare clic con il pulsante **destro del** mouse su Componenti condivisi nell'albero della gerarchia di Generatore di topologie per creare nuovi componenti condivisi o per accedere alle opzioni a livello di topologia.
+Fare clic con il pulsante **destro del mouse** su Componenti condivisi nell'albero della gerarchia di Generatore di topologie per creare nuovi componenti condivisi o per accedere alle opzioni a livello di topologia.
   
 ![Nodo di ambito per componenti condivisi](../../../media/Shared_Components_Scope_Node.jpg)
   
-Selezionare **Nuovo** per creare un nuovo archivio file, un nuovo gateway IP/PSTN, un nuovo server Office Web Apps, un nuovo SQL Server store o un nuovo trunk.
+Selezionare **Nuovo** per creare un nuovo archivio file, un nuovo gateway IP/PSTN, un nuovo server app Web Office, un nuovo archivio SQL Server o un nuovo trunk.
   
 > [!NOTE]
 > Per ognuna di queste opzioni, vedere gli argomenti della Guida. 
   
 ![Nodo di ambito per componenti condivisi](../../../media/Shared_Components_Scope_NodeB.jpg)
   
-Selezionare Topologia **per fare** clic sulle opzioni per aprire un documento Nuova topologia. Aprire un documento di topologia esistente, scaricare la topologia corrente dall'archivio di gestione centrale, salvare una copia del documento della topologia corrente, pubblicare il documento della topologia corrente, installare il database per creare le configurazioni del database attualmente configurate, unire Office Communications Server 2007 R2 nella distribuzione corrente o rimuovere la distribuzione.
+Selezionare **Topologia per fare** clic sulle opzioni per aprire un documento Nuova topologia. Aprire un documento di topologia esistente, scaricare la topologia corrente dall'archivio di gestione centrale, salvare una copia del documento della topologia corrente, pubblicare il documento della topologia corrente, installare il database per creare le configurazioni del database attualmente configurate, unire Office Communications Server 2007 R2 nella distribuzione corrente o rimuovere la distribuzione.
   
-![Nodo dell'ambito dei componenti condivisi C](../../../media/Shared_Components_Scope_NodeC.jpg)
+![Nodo di ambito C dei componenti condivisi](../../../media/Shared_Components_Scope_NodeC.jpg)
   
 

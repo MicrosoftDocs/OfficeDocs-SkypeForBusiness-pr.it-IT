@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 95e37b13-525b-4690-be32-839312e4ffe3
-description: Il Switch-CcVersion disconnette l'applicazione in esecuzione e passa a un'appliance appena distribuita o di backup.
-ms.openlocfilehash: 31dbb841caae51de0accedf081fa576ec378044b
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Switch-CcVersion disconnette l'appliance in esecuzione e passa a un'appliance appena distribuita o di backup.
+ms.openlocfilehash: 1558f34d2388dc75bf4398ba15fc09cd36c439e2d70a39588ee697bc0ef04341
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824150"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320039"
 ---
 # <a name="switch-ccversion"></a>Switch-CcVersion
  
-Il Switch-CcVersion disconnette l'applicazione in esecuzione e passa a un'appliance appena distribuita o di backup. 
+Il cmdlet Switch-CcVersion disconnette l'appliance in esecuzione e passa a un'appliance appena distribuita o di backup. 
   
 ```powershell
 Switch-CcVersion [-Force]
@@ -33,7 +33,7 @@ Switch-CcVersion [-Force]
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente vengono scaricati i servizi dell'applicazione in esecuzione corrente e quindi si passa a un'appliance appena distribuita o di backup:
+Nell'esempio seguente vengono svuotati i servizi dell'appliance in esecuzione corrente e quindi si passa a un'appliance appena distribuita o di backup:
   
 ```powershell
 Switch-CcVersion
@@ -41,7 +41,7 @@ Switch-CcVersion
 
 ### <a name="example-2"></a>Esempio 2
 
-Nell'esempio seguente vengono scaricati i servizi dell'applicazione in esecuzione corrente e i servizi vengono arrestati forzatamente in caso di errore di svuotamento dei servizi. Il comando passa quindi a un'appliance appena distribuita o di backup:
+Nell'esempio seguente vengono svuotati i servizi dell'appliance in esecuzione corrente e i servizi vengono arrestati forzatamente se l'svuotamento dei servizi ha esito negativo. Il comando passa quindi a un'appliance appena distribuita o di backup:
   
 ```powershell
 Switch-CcVersion -Force
@@ -50,24 +50,24 @@ Switch-CcVersion -Force
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il Switch-CcVersion cmdlet svuota i servizi del connettore cloud nel Mediation Server e nel server perimetrale. Tutte le chiamate in esecuzione verranno completate, ma l'applicazione rifiuterà tutte le nuove chiamate. Dopo lo svuotamento, il cmdlet disconnette l'applicazione in esecuzione dalle reti aziendali e Internet, disattiva tutte le macchine virtuali appartenenti all'appliance e quindi connette l'appliance di backup alle reti aziendali e Internet.
+Il cmdlet Switch-CcVersion svuota i servizi del connettore cloud nel Mediation Server e nel server perimetrale. Tutte le chiamate in esecuzione verranno completate, ma l'appliance rifiuterà tutte le nuove chiamate. Dopo l'svuotamento, il cmdlet disconnette l'appliance in esecuzione dalle reti aziendali e Internet, spegne tutte le macchine virtuali appartenenti all'appliance e quindi connette l'appliance di backup alle reti aziendali e Internet.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>
 
 |**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-| Force <br/> | Facoltativo <br/> |System.Management.Automation.SwitchParameter  <br/> | Arresta forzatamente i servizi in caso di errore di svuotamento dei servizi. <br/> |
+| Force <br/> | Facoltativo <br/> |System.Management.Automation.SwitchParameter  <br/> | Arresta i servizi forzatamente se l'svuotamento dei servizi ha esito negativo. <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

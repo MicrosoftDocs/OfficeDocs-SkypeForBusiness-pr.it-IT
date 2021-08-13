@@ -23,12 +23,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
-ms.openlocfilehash: afc9a69a6e8f065ecfbd6b1b672d56e87d5b4dce
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 6203aa8a46a1c3940a542bf60a7ffb3833d8aa14a94aba1bbd5b2acd3271646b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51097772"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54318230"
 ---
 # <a name="toll-free-dialing-restrictions-in-qatar"></a>Restrizioni di composizione a numero verde in Qatar
 

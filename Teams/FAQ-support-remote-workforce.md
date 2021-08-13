@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Usare questa guida per aiutare il personale remoto a essere produttivo quando lavora da casa in risposta all'epidemia di COVID-19 (coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4f0177437f992bf7fce9a94eb09e5dc3861aeb00
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 0bb2924eddd957e2a56548df4426b74e782af56dc9e727142b17869e6630e273
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121564"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54318629"
 ---
 # <a name="faq-support-your-remote-workforce"></a>Domande frequenti: Supporto del personale remoto
 

@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire le impostazioni per le riunioni di Teams che gli utenti pianificano nell'organizzazione.
-ms.openlocfilehash: a8fe3f0c2375e7322397fabfeb1d3f5456d7c55b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c859cfe3b062bcf8ad379544078684624a6586cc6d528ac0dce6493de8004a0d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117894"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54319869"
 ---
 # <a name="manage-meeting-settings-in-microsoft-teams"></a>Gestire le impostazioni di riunione in Microsoft Teams
 
@@ -74,7 +74,7 @@ Per accedere a questa impostazione è necessario essere un amministratore del se
 
 ## <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
-È possibile personalizzare gli inviti alle riunioni di Teams per soddisfare le necessità dell’organizzazione. È possibile aggiungere il logo di dell'organizzazione e includere informazioni utili, come i collegamenti al sito Web dell’assistenza e il dichiarazione legale di non responsabilità, oltre a un piè di pagina di solo testo.
+È possibile personalizzare gli inviti alle riunioni di Teams per soddisfare le esigenze dell’organizzazione. È possibile aggiungere il logo dell'organizzazione e includere informazioni utili, come i collegamenti al sito Web dell’assistenza e il dichiarazione legale di non responsabilità, oltre a un piè di pagina di solo testo.
 
 ### <a name="tips-for-creating-a-logo-for-meeting-invitations"></a>Suggerimenti per la creazione di un logo per gli inviti alle riunioni  
 

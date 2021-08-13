@@ -15,12 +15,12 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 77afc1cbb71fff9cb54decbbf6e5cfd10d6c4e59
-ms.sourcegitcommit: 2bb8556650120b4f7cf509d8ff93d7e4d058829b
+ms.openlocfilehash: 75a2da0b4b949195f5660991eca130249bc1e75ae52e95ef7c221449a8e72821
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51574185"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54319949"
 ---
 # <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
@@ -52,9 +52,9 @@ Inoltre, i criteri di riunione possono essere usati per controllare le impostazi
 
 ### <a name="teams-for-education"></a>Teams per l'istruzione
 
-È anche possibile usare la procedura [guidata dei criteri di Teams per l'istruzione](easy-policy-setup-edu.md) per configurare e gestire facilmente i criteri per l'ambiente di apprendimento.
+È anche possibile usare la procedura [guidata Teams per l'istruzione criteri di](easy-policy-setup-edu.md) apprendimento per configurare e gestire facilmente i criteri per l'ambiente di apprendimento.
 
-![Screenshot della procedura guidata Teams criteri per l'istruzione.](media/easy-policy-setup-quick-setup.png)
+![Screenshot della procedura guidata Teams per l'istruzione criteri di gruppo.](media/easy-policy-setup-quick-setup.png)
 
 ## <a name="types-of-policies"></a>Tipi di criteri
 
@@ -74,4 +74,4 @@ Tipo di criterio | Descrizione
 * [Gestire i criteri di feedback in Microsoft Teams](manage-feedback-policies-in-teams.md)
 * [Gestire i criteri dei team in Microsoft Teams](teams-policies.md)
 * [Configurare gli eventi live in Microsoft Teams](teams-live-events/set-up-for-teams-live-events.md)
-* [Teams per i criteri e i pacchetti di criteri per l'istruzione](policy-packages-edu.md)
+* [Teams per l'istruzione criteri e pacchetti di criteri](policy-packages-edu.md)

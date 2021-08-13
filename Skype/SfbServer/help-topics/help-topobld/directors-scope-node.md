@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 0c725237-2e43-4ba2-a7ad-dce0057d265f
 description: "Nel nodo Pool Director sono elencati i pool Director della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: f63d37df66f0c439138fc578d412374053a88a6d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: b3adafa86270b027b08f9108a793624a3305bbda6e32675d5cc211573baa9bee
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49810316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54333648"
 ---
 # <a name="directors-scope-node"></a>Nodo dell'ambito delle Director
  
@@ -30,7 +30,7 @@ Nel nodo **Pool Director** sono elencati i pool Director della topologia. È pos
     
 Oltre alle opzioni per il pool di server Director, è possibile eseguire le attività generiche seguenti:
   
-- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti di versioni precedenti o rimuovere la distribuzione.
+- **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
     
 - **Visualizza**. È possibile utilizzare questa opzione per personalizzare la visualizzazione in Generatore di topologie selezionando gli elementi da mostrare e nascondere nelle visualizzazioni dell'albero della console.
     
