@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Negli argomenti di questa sezione vengono descritte le attività che sarà necessario eseguire dopo aver completato la migrazione a Skype for Business Server 2019.
-ms.openlocfilehash: c0c5c73212ab6f5ecb85383032ea9bdc97703eee
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: 8a27bbe42f64088833eb4349dde2e2249343dd8ef6ffad0577e3f405fbc6358c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44752298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298906"
 ---
 # <a name="phase-7-complete-post-migration-tasks"></a>Fase 7: completare le attività successive alla migrazione
 
@@ -40,7 +40,7 @@ Negli argomenti di questa sezione vengono descritte le attività che sarà neces
     
 - [Configurare i server applicazioni attendibili](configure-trusted-application-servers.md)
     
-- [Distribuire client Skype for Business Server 2019](deploy-clients.md)
+- [Distribuire Skype for Business Server 2019 client](deploy-clients.md)
     
 - [Connettere un Survivable Branch Appliance](connect-a-survivable-branch-appliance.md)
     

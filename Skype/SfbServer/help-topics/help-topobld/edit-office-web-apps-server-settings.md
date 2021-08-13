@@ -14,25 +14,25 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7a4b91ff-ca11-4dde-852d-ec51d143968a
-description: 'Modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:'
-ms.openlocfilehash: e9f4a188c5cb58be685db4ea44157f2897ebe5ba
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'È possibile modificare le proprietà del Office Web Apps Server configurato. È possibile modificare le proprietà seguenti:'
+ms.openlocfilehash: 2810d18878c1f9796f3e95653cdae4324f0921496abe2b72584511db6352f9f3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51095540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54329790"
 ---
 # <a name="edit-office-web-apps-server-settings"></a>Modificare le impostazioni di Office Web Apps Server
 
-Modificare le proprietà del server Office Web Apps configurato. È possibile modificare le proprietà seguenti:
+È possibile modificare le proprietà del Office Web Apps Server configurato. È possibile modificare le proprietà seguenti:
 
- FQDN **del server Office Web Apps:** questa proprietà definisce il nome di dominio completo del server Office Web Apps e deve corrispondere a un record A o AAAA (se viene utilizzato IPv6) host DNS (Domain Name System).
+ **Office** FQDN server Web Apps : questa proprietà definisce il nome di dominio completo del server web apps di Office e deve corrispondere a un record A o AAAA (se viene utilizzato IPv6) host DNS (Domain Name System).
 
- **URL** di individuazione del server Office Web Apps : URL (Uniform Resource Locator) per l'accesso client al server Office Web Apps, potrebbe essere necessario modificare questo indirizzo dal valore predefinito se il server viene posizionato in un'altra area di rete diversa dalla rete interna per la distribuzione.
+ **Office URL** di individuazione del server Web Apps : URL (Uniform Resource Locator) per l'accesso client al server app Web Office, potrebbe essere necessario modificare questo indirizzo dal valore predefinito se il server viene posizionato in un'altra area di rete diversa dalla rete interna per la distribuzione.
 
 Selezionare la casella di controllo **Il server Office Web Apps è distribuito in una rete esterna** se il server è distribuito nella rete perimetrale o in un'altra area della rete esterna al firewall interno che separa la rete perimetrale, le reti meno attendibili e Internet dalla distribuzione interna.
 
-![Espansione delle impostazioni di Office Web Apps](../../media/OfficeWebApps_Settings_Expander.jpg)
+![Office Espansione Impostazioni web app](../../media/OfficeWebApps_Settings_Expander.jpg)
 
 ## <a name="see-also"></a>Vedere anche
 

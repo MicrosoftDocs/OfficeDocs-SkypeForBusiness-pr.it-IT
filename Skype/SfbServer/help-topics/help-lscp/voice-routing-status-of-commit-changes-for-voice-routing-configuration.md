@@ -15,17 +15,17 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 2e5086fb-3c3b-432a-9eab-a9b12cb79d76
 description: In caso di mancato completamento delle modifiche, esaminare i messaggi in questa finestra di dialogo, modificare la configurazione del routing vocale e ritentare.
-ms.openlocfilehash: e38fc9bf131bc66e46efbad5692d828da1e6cefb
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 041a7a2ff9b9e13f93c392fbeaa18b055dd7db247c3647d4de269a5454f26b10
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315892"
 ---
 # <a name="voice-routing-status-of-commit-changes-for-voice-routing-configuration"></a>Routing vocale: stato delle modifiche apportate alla configurazione del routing vocale
  
 In caso di mancato completamento delle modifiche, esaminare i messaggi in questa finestra di dialogo, modificare la configurazione del routing vocale e ritentare.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
   
 

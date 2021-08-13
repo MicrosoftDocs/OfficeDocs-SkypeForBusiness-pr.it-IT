@@ -16,12 +16,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 7b9d0779-436f-4965-8110-a41ff4d0302d
 description: Per informazioni dettagliate sulla resilienza dei siti di succursale, vedere Planning for Branch-Site Voice Resiliency.
-ms.openlocfilehash: af049e151b8067242fcd9bfe08fba40962d57aa1
+ms.openlocfilehash: e450f0ddafd9ad309a5946f84d04e0deee84b3ab5f0faf4a5e8aa00484b5b2a6
 ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/05/2021
-ms.locfileid: "53772597"
+ms.locfileid: "54315912"
 ---
 # <a name="lync-server-branch-sites-planning-tool"></a>Strumento di pianificazione dei siti di succursale di Lync Server
 

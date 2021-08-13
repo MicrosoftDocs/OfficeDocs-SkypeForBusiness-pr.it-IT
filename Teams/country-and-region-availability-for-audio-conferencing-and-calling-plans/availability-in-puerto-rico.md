@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per PortoRico.
-ms.openlocfilehash: 3f4933b1b6ea0ca85a7b6235e77b5eb7c50e40fc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: cff19fdfe3379b510997a771ee7ff0d77abe2bf3660724c884715563bfed93d9
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51092654"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344345"
 ---
 # <a name="availability-in-puerto-rico"></a>Disponibilità a Portorico
 

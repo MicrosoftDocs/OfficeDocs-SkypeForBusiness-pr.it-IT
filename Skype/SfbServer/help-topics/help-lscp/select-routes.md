@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d136adcd-6659-4113-941c-cca75033318e
 description: Utilizzare la finestra di dialogo Seleziona route per trovare le route vocali esistenti che è possibile utilizzare.
-ms.openlocfilehash: 76a7927ec4e73ab8462f307e42477ab53030e399
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 0c4e0b867d82a7a7b112ce5ad1e0551876a05106f74d0b91a65e5bf1031d9a69
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49803736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54299743"
 ---
 # <a name="select-routes"></a>Selezionare route
  
@@ -29,6 +29,6 @@ Utilizzare la **finestra di dialogo** Seleziona route per trovare le route vocal
 > [!NOTE]
 > Per recuperare tutte le route vocali disponibili, non digitare nulla nella casella di ricerca e quindi fare clic sull'icona di ricerca. 
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
   
 

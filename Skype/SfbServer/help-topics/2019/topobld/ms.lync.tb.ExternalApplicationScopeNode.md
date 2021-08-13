@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: dfd21945-331a-4058-97b6-d17690353702
 ROBOTS: NOINDEX, NOFOLLOW
 description: "In questo nodo vengono visualizzati il nome di dominio completo (FQDN) del pool, l'impostazione di replica e il pool di hop successivi per questo pool di applicazioni attendibili. È possibile eseguire queste azioni:"
-ms.openlocfilehash: e28aab7db916615b1c5a07125f37c33ea0ba52d7
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 62c837aef82c9063d3df3ffc8a0e6920909f52c3e2b3bccfd31309373097a052
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54330300"
 ---
 # <a name="external-application-scope-node"></a>Nodo dell'ambito dell'applicazione esterna
  

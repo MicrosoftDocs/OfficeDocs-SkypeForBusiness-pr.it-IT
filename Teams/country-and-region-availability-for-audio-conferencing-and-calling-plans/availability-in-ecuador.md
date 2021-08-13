@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Ecuador.
-ms.openlocfilehash: f48dca13ecfb3af4364f6c888c94e01781edcf9d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 965856014c4e9ca25b2e5dd4de18b99ab1d7f496e7e81608fd31aa87d9a7e9cd
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344365"
 ---
 # <a name="availability-in-ecuador"></a>Disponibilità in Ecuador
 

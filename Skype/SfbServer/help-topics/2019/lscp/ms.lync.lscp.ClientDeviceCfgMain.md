@@ -15,19 +15,19 @@ localization_priority: Normal
 ms.assetid: c9b81f20-ce8c-40f1-8bed-50775cc35e58
 ROBOTS: NOINDEX, NOFOLLOW
 description: Il servizio Web aggiornamento dispositivi crea automaticamente file di log in cui viene registrata l'attività di aggiornamento dei dispositivi. Come parte della strategia di gestione dei dati dell'organizzazione, è possibile impostare soglie per le dimensioni della cache dei dati di registro, le dimensioni del file di registro o il periodo di tempo in cui un file di registro viene mantenuto prima che venga eliminato. È possibile modificare queste impostazioni in base alle esigenze dell'organizzazione. Se non si desidera che il servizio Web di aggiornamenti dispositivi elimini automaticamente i file di log, è possibile eliminarli manualmente, se necessario. Le impostazioni dei log possono essere modificate a livello globale o per singoli siti.
-ms.openlocfilehash: c9bd2c3077325540e6151fabd7bc4127b909a12a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 8ef84325709a6648bec8eb9ff14c8433510f1bf6cabafb8b39dfb86a6f54d238
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120275"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54330440"
 ---
 # <a name="device-log-configuration"></a>Configurazione dei log del dispositivo
 
 Il servizio Web aggiornamento dispositivi crea automaticamente file di log in cui viene registrata l'attività di aggiornamento dei dispositivi. Come parte della strategia di gestione dei dati dell'organizzazione, è possibile impostare soglie per le dimensioni della cache dei dati di registro, le dimensioni del file di registro o il periodo di tempo in cui un file di registro viene mantenuto prima che venga eliminato. È possibile modificare queste impostazioni in base alle esigenze dell'organizzazione. Se non si desidera che il servizio Web di aggiornamenti dispositivi elimini automaticamente i file di log, è possibile eliminarli manualmente, se necessario. Le impostazioni dei log possono essere modificate a livello globale o per singoli siti.
 
 > [!NOTE]
-> È inoltre possibile configurare un'ora del giorno in cui si desidera che il servizio Web Aggiornamento dispositivi elimini automaticamente i file di registro precedenti al numero di giorni in cui il servizio è stato configurato per mantenere i file di registro (per impostazione predefinita, si tratta di file di registro che hanno più di 10 giorni). Questa impostazione non può essere modificata utilizzando il Pannello di controllo di Skype for Business Server. È invece necessario utilizzare Skype for Business Server Management Shell. Per specificare l'ora del giorno in cui eliminare i file di registro scaduti, utilizzare il cmdlet **New-CsDeviceUpdateConfiguration** con il parametro -LogCleanUpTimeOfDay. Per informazioni dettagliate, [vedere New-CsDeviceUpdateConfiguration.](/powershell/module/skype/new-csdeviceupdateconfiguration?view=skype-ps)
+> È inoltre possibile configurare un'ora del giorno in cui si desidera che il servizio Web Aggiornamento dispositivi elimini automaticamente i file di registro precedenti al numero di giorni in cui il servizio è stato configurato per mantenere i file di registro (per impostazione predefinita, si tratta di file di registro che hanno più di 10 giorni). Questa impostazione non può essere modificata Skype for Business Server Pannello di controllo. È invece necessario utilizzare Skype for Business Server Management Shell. Per specificare l'ora del giorno in cui eliminare i file di registro scaduti, utilizzare il cmdlet **New-CsDeviceUpdateConfiguration** con il parametro -LogCleanUpTimeOfDay. Per informazioni dettagliate, [vedere New-CsDeviceUpdateConfiguration.](/powershell/module/skype/new-csdeviceupdateconfiguration?view=skype-ps)
 
 > [!CAUTION]
 > L'eliminazione dei file comporta la rimozione permanente dal file system. Dopo l'eliminazione di un file non sarà possibile recuperarlo.
@@ -62,4 +62,4 @@ Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà
 
 ## <a name="see-also"></a>Vedere anche
 
-[Modificare le impostazioni per i file di registro dell'attività di aggiornamento dei dispositivi](/previous-versions/office/lync-server-2013/lync-server-2013-modify-settings-for-device-update-log-files)
+[Modificare Impostazioni file di registro dell'attività di aggiornamento dei dispositivi](/previous-versions/office/lync-server-2013/lync-server-2013-modify-settings-for-device-update-log-files)

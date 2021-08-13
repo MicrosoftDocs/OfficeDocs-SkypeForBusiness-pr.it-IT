@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 782cfab9-01a6-4843-aea1-28f47b0b51f7
 description: La tabella AppSharingMetricsThreshold contiene i valori ottimali e accettabili delle metriche QoE utilizzate con la condivisione delle applicazioni. Questi valori soglia sono utilizzati per determinare se l'esperienza di condivisione deve essere classificata come insufficiente.
-ms.openlocfilehash: 747497affbf561976bc6dd626bdce060efc1eca8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: c3ee6c9742935cf7fc076c809a7aa3e09706391a58a6b1cc8025f5c5044dc5d5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49809696"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344595"
 ---
 # <a name="appsharingmetricsthreshold-table"></a>Tabella AppSharingMetricsThreshold
  
@@ -41,7 +41,7 @@ Questa tabella è stata introdotta in Microsoft Lync Server 2013.
 |**RDPTileProcessingLatencyBurstDensityAcceptable** <br/> |float  <br/> ||Questa colonna non viene utilizzata in Microsoft Lync Server 2013.  <br/> |
 |**RelativeOneWayAverageOptimal** <br/> |float  <br/> ||Valore ottimale per il ritardo unidirezionale relativo tra i due endpoint multimediali coinvolti nella condivisione delle applicazioni. È una misura della latenza a hop singolo. Il valore predefinito è 1,0 secondi.  <br/> La colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**RelativeOneWayAverageAcceptable** <br/> |float  <br/> ||Valore ottimale per il ritardo unidirezionale relativo tra i due endpoint multimediali coinvolti nella condivisione delle applicazioni. È una misura della latenza a hop singolo. Il valore predefinito è 1,75 secondi.  <br/> La colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RDPTileProcessingLatencyAverageOptimal** <br/> |float  <br/> ||Latenza ottimale di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione. La latenza è la differenza di tempo tra quando il fotogramma iniziale viene codificato nel server (condivisore o MCU a seconda dello scenario) e lo stesso frame di avvio viene decodificato nel visualizzatore.  <br/> Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.  <br/> La colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
-|**RDPTileProcessingLatencyAverageAcceptable** <br/> |float  <br/> ||Latenza accettabile di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione. La latenza è la differenza di tempo tra quando il fotogramma iniziale viene codificato nel server (condivisore o MCU a seconda dello scenario) e lo stesso frame di avvio viene decodificato nel visualizzatore.  <br/> Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.  <br/> La colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RDPTileProcessingLatencyAverageOptimal** <br/> |float  <br/> ||Latenza ottimale di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione. La latenza è la differenza di tempo tra la codifica del fotogramma iniziale nel server (condivisore o MCU a seconda dello scenario) e la decodifica dello stesso fotogramma iniziale nel visualizzatore.  <br/> Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.  <br/> La colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
+|**RDPTileProcessingLatencyAverageAcceptable** <br/> |float  <br/> ||Latenza accettabile di elaborazione delle sezioni RDP nel server per conferenze di Condivisione applicazioni per tutta la durata della sessione di visualizzazione. La latenza è la differenza di tempo tra la codifica del fotogramma iniziale nel server (condivisore o MCU a seconda dello scenario) e la decodifica dello stesso fotogramma iniziale nel visualizzatore.  <br/> Una media elevata è sintomo di un ritardo superiore nell'esperienza di visualizzazione. In un server per conferenze sovraccarico possono verificarsi ritardi medi superiori. Il valore predefinito è 200 ms.  <br/> La colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
    
 

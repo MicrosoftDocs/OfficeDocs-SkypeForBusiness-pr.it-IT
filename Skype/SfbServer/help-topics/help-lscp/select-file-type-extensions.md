@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3638cdc8-71dd-4a22-8613-83859af97387
 description: Utilizzare la finestra di dialogo Seleziona estensioni tipo di file per specificare le estensioni dei tipi di file che si desidera bloccare o consentire rispettivamente selezionando o deselezionando le caselle di controllo accanto alle singole estensioni in Estensioni tipo di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le relative estensioni. Per selezionare tutte le estensioni di una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: fdf495ae2f8de1a4951b5388bc2000f7a63ad76a
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 337016f01b3fc9aea0559572d3d21c8cbbaa76f49cae6b17faf8010a97f5265a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49814546"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54330050"
 ---
 # <a name="select-file-type-extensions"></a>Selezionare estensioni del tipo di file
  
@@ -30,6 +30,6 @@ Se l'estensione di un tipo di file che si desidera selezionare non è visualizza
   
 Dopo aver aggiunto all'elenco **Estensioni di file selezionate** tutte le estensioni di file desiderate, fare clic su **OK**.
   
-Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Gestire Skype for Business Server 2015.](../../manage/manage.md)
+Per informazioni dettagliate sulle diverse procedure che è possibile eseguire utilizzando il Pannello di controllo di Skype for Business Server, vedere [Manage Skype for Business Server 2015.](../../manage/manage.md)
   
 

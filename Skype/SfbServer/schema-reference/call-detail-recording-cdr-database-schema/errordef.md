@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6acf3b86-da61-4923-9812-300db6f66dec
 description: Nella tabella ErrorDef sono archiviate informazioni su ogni tipo di errore che può verificarsi. Ogni record è un tipo di errore.
-ms.openlocfilehash: 50d7b76e1fc7edb53fbe0b299673b7281a394463
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 428ce365de65be4d0bcd3776bfc069ffc9246fd869c54d819c6468f926c64351
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49821726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344605"
 ---
 # <a name="errordef-table-in-skype-for-business-server-2015"></a>Tabella ErrorDef in Skype for Business Server 2015
  
@@ -29,7 +29,7 @@ Nella tabella ErrorDef sono archiviate informazioni su ogni tipo di errore che p
 |**ErrorId** <br/> |int  <br/> |Principale  <br/> |Numero ID univoco che identifica questo tipo di errore.  <br/> |
 |**ResponseCode** <br/> |int  <br/> | <br/> |Codice di risposta SIP standard associato a questo errore.  <br/> |
 |**MsDiagId** <br/> |int  <br/> | <br/> |ID diagnostica Microsoft.  <br/> |
-|**CallTypeId** <br/> |Soglia  <br/> |Esterna  <br/> |Tipo di chiamata. Per ulteriori informazioni, vedere la tabella [CallType in Skype for Business Server 2015.](calltype.md) <br/> |
+|**CallTypeId** <br/> |Soglia  <br/> |Foreign  <br/> |Tipo di chiamata. Per ulteriori informazioni, vedere la tabella [CallType Skype for Business Server 2015.](calltype.md) <br/> |
 |**RequestType** <br/> |varbinary(33)  <br/> | <br/> |Tipo della richiesta non riuscita.  <br/> Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:  <br/>  `cast(cast(RequestType as varbinary(max)) as varchar(max))` <br/> |
 |**ContentType** <br/> |varbinary(257)  <br/> | <br/> |Tipo di contenuto della richiesta non riuscita.  <br/> Questi dati possono essere convertiti in formato testo utilizzando la sintassi seguente:  <br/>  `cast(cast(ContentType as varbinary(max)) as varchar(max))` <br/> |
    

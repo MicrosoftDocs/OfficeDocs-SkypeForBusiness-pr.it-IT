@@ -12,19 +12,19 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c2b8aadb-cffb-49f0-ba7a-e8541a1ff475
 description: 'Riepilogo: informazioni sul servizio per dispositivi mobili in Skype for Business Server.'
-ms.openlocfilehash: 83d8d6dc7a32b05a58c738deddc8c92e43bd5557
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 3029877aa6f252ada9bbb38bca0148b8a96908ad5cf4deded7cf48e6451ec833
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817036"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298136"
 ---
 # <a name="configure-mobility-service-for-high-performance-in-skype-for-business-server"></a>Configurare il servizio per dispositivi mobili per prestazioni elevate in Skype for Business Server
  
 **Riepilogo:** Informazioni sul servizio per dispositivi mobili in Skype for Business Server.
   
 > [!IMPORTANT]
-> Questo argomento si applica solo al servizio Per dispositivi mobili di Skype for Business Server (Mcx) e non a UCWA (Unified Communications Web API), come fornito negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013. 
+> Questo argomento si applica solo al servizio per dispositivi mobili di Skype for Business Server (Mcx) e non si applica a UCWA (Unified Communications Web API), come fornito negli aggiornamenti cumulativi per Lync Server 2013: febbraio 2013. 
   
 Quando si installa il servizio per dispositivi mobili (Mcx) in Internet Information Services (IIS) 7.5, il programma di installazione del servizio per dispositivi mobili configura alcune impostazioni delle prestazioni nel Front End Server. È consigliabile utilizzare IIS 7.5 per la mobilità. Le impostazioni influiscono sul numero massimo di richieste utente simultanee e il numero massimo di thread consentiti per il servizio di mobilità.
   

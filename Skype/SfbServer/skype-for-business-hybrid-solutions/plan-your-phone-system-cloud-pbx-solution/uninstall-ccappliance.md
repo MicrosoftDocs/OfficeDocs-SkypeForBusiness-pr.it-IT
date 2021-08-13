@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: e1b3cdd7-08e9-41a6-843a-3b4baf886cd0
-description: Il Uninstall-CcAppliance cmdlet disinstalla l'applicazione Skype for Business Cloud Connector Edition in esecuzione dal server host.
-ms.openlocfilehash: c92ad5c31e2e254e4f10511835b6cc9f60c7c43c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Uninstall-CcAppliance consente di disinstallare l'Skype for Business Cloud Connector Edition appliance in esecuzione dal server host.
+ms.openlocfilehash: f82459e71ee3c7eea88030a2f265f0076a633a280ee3182920e599402f69a96c
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824140"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344555"
 ---
 # <a name="uninstall-ccappliance"></a>Uninstall-CcAppliance
  
-Il Uninstall-CcAppliance cmdlet disinstalla l'applicazione Skype for Business Cloud Connector Edition in esecuzione dal server host. 
+Il cmdlet Uninstall-CcAppliance consente di disinstallare l'Skype for Business Cloud Connector Edition appliance in esecuzione dal server host. 
   
 ```powershell
 Uninstall-CcAppliance [-Version <string>] [-Force] [-Confirm <bool>] [<CommonParameters>]
@@ -33,7 +33,7 @@ Uninstall-CcAppliance [-Version <string>] [-Force] [-Confirm <bool>] [<CommonPar
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente l'applicazione Cloud Connector viene scaricata e disinstallata dal server host:
+L'esempio seguente scarica e disinstalla l'appliance Cloud Connector dal server host:
   
 ```powershell
 Uninstall-CcAppliance
@@ -41,7 +41,7 @@ Uninstall-CcAppliance
 
 ### <a name="example-2"></a>Esempio 2
 
-Nell'esempio seguente viene svuotato e disinstallato forzatamente l'applicazione Cloud Connector in esecuzione nel server host anche se il processo di svuotamento non è riuscito:
+L'esempio seguente scarica e disinstalla forzatamente l'appliance Cloud Connector in esecuzione nel server host anche se il processo di svuotamento non è riuscito:
   
 ```powershell
 Uninstall-CcAppliance -Force
@@ -67,7 +67,7 @@ Se si disinstalla la versione corrente in esecuzione di Cloud Connector, i servi
 |:-----|:-----|:-----|:-----|
 | Versione <br/> | Facoltativo <br/> |System.String  <br/> | Versione di Cloud Connector che verrà disinstallata dal server host. Se non specificato, disinstallare la versione in esecuzione corrente. <br/> |
 |Force  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Se si disinstalla la versione in esecuzione corrente, tentare di svuotare i server nel Mediation Server e nel server perimetrale prima di disinstallare le macchine virtuali. Se si specifica l'opzione "Force", anche in caso di errore dei servizi di svuotamento, le macchine virtuali verranno disinstallate. Questo parametro viene utilizzato solo per disinstallare la versione in esecuzione corrente.  <br/> |
-|Conferma  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Chiedere all'utente di confermare la disinstallazione delle macchine virtuali. Il valore predefinito è VERO.  <br/> |
+|Conferma  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Chiedere la conferma dell'utente per disinstallare le macchine virtuali. Il valore predefinito è TRUE.  <br/> |
    
 ## <a name="input-types"></a>Tipi di input
 <a name="InputTypes"> </a>
@@ -77,7 +77,7 @@ Nessuna. Il cmdlet Uninstall-CcAppliance non accetta input da pipeline.
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

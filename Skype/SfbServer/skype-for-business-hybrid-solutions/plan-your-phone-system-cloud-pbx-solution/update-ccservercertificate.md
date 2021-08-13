@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: cd2889c4-0eb1-4752-9274-93a5a68a8080
-description: Il Update-CcServerCertificate consente di rinnovare i certificati per Skype for Business Cloud Connector Edition quando sono prossimi alla scadenza o sono già scaduti.
-ms.openlocfilehash: da52efcd3fdf6a0793e085098bf6f72725115e9c
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Update-CcServerCertificate consente di rinnovare i certificati per Skype for Business Cloud Connector Edition quando sono prossimi alla scadenza o sono già scaduti.
+ms.openlocfilehash: 0545f4923a4f1abd654674024313c6f22665cb7123d87d9d21c3676452bd8fcf
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824110"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344525"
 ---
 # <a name="update-ccservercertificate"></a>Update-CcServerCertificate
  
-Il Update-CcServerCertificate consente di rinnovare i certificati per Skype for Business Cloud Connector Edition quando sono prossimi alla scadenza o sono già scaduti. 
+Il cmdlet Update-CcServerCertificate consente di rinnovare i certificati per Skype for Business Cloud Connector Edition quando sono prossimi alla scadenza o sono già scaduti. 
   
 ```powershell
 Update-CcServerCertificate [[-Roles] <array> {Cms | MS | Edge}]
@@ -41,7 +41,7 @@ Update-CcServerCertificate
 
 ### <a name="example-2"></a>Esempio 2
 
-Nell'esempio seguente vengono rinnovati i certificati per Mediation Server ed Edge Server quando sono prossimi alla scadenza o sono già scaduti:
+Nell'esempio seguente vengono rinnovati i certificati per Mediation Server e Server perimetrale quando sono prossimi alla scadenza o sono già scaduti:
   
 ```powershell
 Update-CcServerCertificate-Roles @("MS", "Edge")
@@ -50,7 +50,7 @@ Update-CcServerCertificate-Roles @("MS", "Edge")
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-I certificati interni del connettore cloud emessi per l'archivio di gestione centrale, il Mediation Server e il server perimetrale sono validi per due anni dopo l'emissione da un servizio autorità di certificazione. Se i certificati sono prossimi alla scadenza o sono già scaduti, eseguire il cmdlet Update-CcServerCertificate per rinnovare i certificati. 
+I certificati interni del connettore cloud rilasciati all'archivio di gestione centrale, al Mediation Server e al server perimetrale sono validi per due anni dopo l'emissione da un servizio Autorità di certificazione. Se i certificati sono prossimi alla scadenza o sono già scaduti, eseguire il cmdlet Update-CcServerCertificate per rinnovare i certificati. 
   
 Questo comando sostituisce il cmdlet Renew-CcServerCertificate in Cloud Connector 2.0 e versioni successive.
   
@@ -69,7 +69,7 @@ Nessuna. Il cmdlet Update-CcServerCertificate non accetta input da pipeline.
 ## <a name="return-types"></a>Tipi restituiti
 <a name="ReturnTypes"> </a>
 
-None
+Nessuno
   
 ## <a name="see-also"></a>Vedere anche
 <a name="ReturnTypes"> </a>

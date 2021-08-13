@@ -20,12 +20,12 @@ ms.custom:
 - Setup
 - O365P_RecordingDesc
 description: 'Come attivare la registrazione per conferenze audio e video e scoprire cosa è e non è incluso nelle registrazioni. '
-ms.openlocfilehash: 4740c3d090115934f6bb493eec3be74b67ff6754
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: c321ac300e9bdf39a727c419e447da88f3cccb5b403b0361361e7e1b59155dab
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52239862"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54316472"
 ---
 # <a name="let-people-record-their-audio-and-video-conferences"></a>Permettere alle persone di registrare le proprie audio e videoconferenze
 

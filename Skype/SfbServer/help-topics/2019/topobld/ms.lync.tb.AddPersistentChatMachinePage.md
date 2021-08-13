@@ -15,14 +15,14 @@ localization_priority: Normal
 ms.assetid: f87c3abb-d8b4-4e51-af84-9b579e3807c5
 ROBOTS: NOINDEX, NOFOLLOW
 description: È possibile definire i computer che saranno parte di un pool di server Chat persistente digitando il nome di dominio completo (FQDN) in FQDN computer. Questo nome deve essere quello del computer così com'è definito nei record host DNS (A o AAAA).
-ms.openlocfilehash: 97a7d3eed07527faa869ad73320cb50f0cf050a5
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 5310f7f11871f184719f8581b9090a1f469a822098331ad59f8782077d8e3342
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120025"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54316022"
 ---
 # <a name="define-computers-in-persistent-chat-pool"></a>Definire computer nel pool di Chat persistente
 
 > [!NOTE] 
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](/MicrosoftTeams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.

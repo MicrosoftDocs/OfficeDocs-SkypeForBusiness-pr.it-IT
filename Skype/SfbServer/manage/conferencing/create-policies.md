@@ -1,5 +1,5 @@
 ---
-title: Creare criteri conferenza in Skype for Business Server
+title: Creare criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8c685326-8356-4075-bf95-32324b16ef81
 description: 'Riepilogo: informazioni su come creare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 81fcaa15c7b12b499c833ac012ef6d999da683ad
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2cce451135c82894d9d82c89e6a62682d95526d31082d209bcaf8144752426b1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344745"
 ---
-# <a name="create-conferencing-policies-in-skype-for-business-server"></a>Creare criteri conferenza in Skype for Business Server
+# <a name="create-conferencing-policies-in-skype-for-business-server"></a>Creare criteri di conferenza in Skype for Business Server
  
-**Riepilogo:** Scopri come creare criteri di conferenza in Skype for Business Server.
+**Riepilogo:** Informazioni su come creare criteri di conferenza in Skype for Business Server.
   
-È possibile creare criteri di conferenza utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+È possibile creare criteri di conferenza Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
   
-## <a name="create-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Creare criteri di conferenza tramite il Pannello di controllo di Skype for Business Server
+## <a name="create-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Creare criteri di conferenza tramite Skype for Business Server pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     
@@ -84,7 +84,7 @@ ms.locfileid: "51119525"
     
     - Per impedire i trasferimenti di file, deselezionare la casella di controllo **Consenti ai partecipanti di trasferire file**. Per impostazione predefinita, gli utenti possono trasferire file.
     
-    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni nelle presentazioni di PowerPoint condivise, deselezionare la casella di controllo **Abilita annotazioni di PowerPoint.** Per impostazione predefinita, le annotazioni sono consentite.
+    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni nelle presentazioni PowerPoint condivise, deselezionare la casella di controllo Abilita PowerPoint **annotazioni.** Per impostazione predefinita, le annotazioni sono consentite.
     
     - Per impedire l'utilizzo dei sondaggi, deselezionare la casella di controllo **Consenti sondaggi**. Per impostazione predefinita, i sondaggi sono consentiti.
     

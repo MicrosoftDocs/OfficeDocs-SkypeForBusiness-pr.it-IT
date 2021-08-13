@@ -16,23 +16,23 @@ ms.collection:
 ms.custom: ''
 ms.assetid: fa8aa499-1188-447e-bc30-89d1f5b198a7
 description: Informazioni sulla distribuzione di un singolo sito PSTN in Cloud Connector Edition.
-ms.openlocfilehash: 32c981b0f7de3d596dc25c3336000871db9fee65
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 52c10b8c5e386f72415ce5a379b68b0b469f825f5cf52be9b225f28dcf8232b6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298126"
 ---
 # <a name="deploy-a-single-site-in-cloud-connector"></a>Distribuire un sito singolo in Cloud Connector
  
 > [!Important]
-> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](/MicrosoftTeams/direct-routing-landing-page)
+> Cloud Connector Edition andrà in pensione il 31 luglio 2021 insieme a Skype for Business Online. Dopo l'aggiornamento dell'organizzazione a Teams, informazioni su come connettere la rete di telefonia locale a Teams tramite [Routing diretto](/MicrosoftTeams/direct-routing-landing-page).
 
 Informazioni sulla distribuzione di un singolo sito PSTN in Cloud Connector Edition.
   
-È possibile distribuire Skype for Business Cloud Connector Edition con o senza il supporto della disponibilità elevata. Se si desidera abilitare l'ha, è necessario distribuire due o più appliance all'interno di un sito. È inoltre possibile convertire un'appliance esistente per supportare l'ha dopo la distribuzione.
+È possibile distribuire Skype for Business Cloud Connector Edition con o senza supporto disponibilità elevata. Se si desidera abilitare l'ha, è necessario distribuire due o più appliance all'interno di un sito. È inoltre possibile convertire un'appliance esistente per supportare l'ha dopo la distribuzione.
   
-## <a name="deploy-the-first-skype-for-business-cloud-connector-edition-appliance"></a>Distribuire il primo appliance Skype for Business Cloud Connector Edition
+## <a name="deploy-the-first-skype-for-business-cloud-connector-edition-appliance"></a>Distribuire il primo Skype for Business Cloud Connector Edition appliance
 
 Per distribuire la prima appliance in un sito, aprire una console di PowerShell come amministratore ed eseguire il cmdlet seguente per registrare l'appliance:
   
@@ -58,7 +58,7 @@ Install-CcAppliance
   
 1. Seguire i passaggi per preparare l'appliance Cloud Connector come descritto in [Prepare your Cloud Connector appliance](prepare-your-cloud-connector-appliance.md). Tenere presente che alcuni passaggi sono necessari solo per la prima appliance della distribuzione. Verificare che la directory del sito esista e che sia configurata correttamente per il supporto dell'ha.
     
-2. Eseguire il cmdlet seguente solo nel server host appena aggiunto per aggiornare le informazioni sulla topologia nella configurazione dell'organizzazione di Microsoft 365 o Office 365. Se si desidera aggiungere più appliance contemporaneamente, eseguire il cmdlet in ogni server host appena aggiunto uno alla volta:
+2. Eseguire il cmdlet seguente solo nel server host appena aggiunto per aggiornare le informazioni sulla topologia nella configurazione Microsoft 365 o Office 365'organizzazione. Se si desidera aggiungere più appliance contemporaneamente, eseguire il cmdlet in ogni server host appena aggiunto uno alla volta:
     
    ```powershell
    Register-CcAppliance
@@ -83,7 +83,7 @@ Install-CcAppliance
 
 Se si desidera rimuovere un'appliance da un sito esistente:
   
-1. Eseguire il cmdlet seguente solo sui server host che si desidera rimuovere dal sito per aggiornare le informazioni sulla topologia nella configurazione dell'organizzazione di Microsoft 365 o Office 365.
+1. Eseguire il cmdlet seguente solo sui server host che si desidera rimuovere dal sito per aggiornare le informazioni sulla topologia nella configurazione Microsoft 365 o Office 365'organizzazione.
     
    ```powershell
    Unregister-CcAppliance

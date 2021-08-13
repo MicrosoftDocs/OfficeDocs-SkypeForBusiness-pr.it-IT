@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su Call Quality Dashboard (CQD) e su come usarlo per visualizzare report sulla qualità delle riunioni e delle chiamate in Microsoft Teams.
-ms.openlocfilehash: d262449394d9ad880d13897988e40e26dd98578c
-ms.sourcegitcommit: f223b5f3735f165d46bb611a52fcdfb0f4b88f66
+ms.openlocfilehash: 097a12c0e2a7104abe9a6214a24c958b5c3f6b6e2430f78b05aeef6e0f79736f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51593834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344485"
 ---
 # <a name="what-is-call-quality-dashboard-cqd"></a>Che cos'è Call Quality Dashboard (CQD)?
 

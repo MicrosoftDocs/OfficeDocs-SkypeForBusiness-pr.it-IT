@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'India.
-ms.openlocfilehash: a5bb42531cc2dc3fc7688bfeb014b82b30513502
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: c7675f2625de4e7e18167e6982f16a3d6721710554906ee0d0a7a71d9b5598c8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344355"
 ---
 # <a name="availability-in-india"></a>Disponibilità in India
 

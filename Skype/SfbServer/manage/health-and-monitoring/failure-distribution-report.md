@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 365c7beb-24d4-40f5-92e7-4978b9688916
 description: 'Riepilogo: informazioni sul Rapporto distribuzione errori in Skype for Business Server.'
-ms.openlocfilehash: 251cf8e2017312d9e42e0d1aebcfe5d1d9bd3568
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 6b6bedff59f73befbaa70dbc0eb4bf1b04b100022a7ca20c41245a07a082d4e3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49823526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54344725"
 ---
 # <a name="failure-distribution-report-in-skype-for-business-server"></a>Rapporto distribuzione errori in Skype for Business Server
  
@@ -49,11 +49,11 @@ Queste categorie possono essere utilizzate per localizzare con precisione il pro
   
 - [Rapporto errori principali in Skype for Business Server](top-failures-report.md)
     
-- [Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md)
+- [Rapporto di diagnostica conferenze Skype for Business Server](conference-diagnostic-report.md)
     
 - [Rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md)
     
-Dal Rapporto distribuzione errori, è possibile fare clic su una delle metriche seguenti per visualizzare il Rapporto elenco errori [in Skype for Business Server:](failure-list-report.md)
+Nel Rapporto distribuzione errori è possibile fare clic su una delle metriche seguenti per visualizzare il Rapporto elenco errori [in Skype for Business Server:](failure-list-report.md)
   
 - Motivi diagnostica principali (sessioni)
     
@@ -132,7 +132,7 @@ Nella tabella riportata di seguito vengono elencate le informazioni fornite nel 
 |:-----|:-----|:-----|
 |**Classificazione** <br/> |No  <br/> |Classificazione relativa delle sessioni non riuscite in base al pool di registrazione o al server perimetrale in cui è stata eseguita la sessione.  <br/> |
 |**Pool** <br/> |No  <br/> |Nome del pool di registrazione o del server perimetrale.  <br/> |
-|**Sessioni** <br/> |No  <br/> |Numero totale di sessioni non riuscite per pool di registrazione o server perimetrale.  <br/> |
+|**Sessioni** <br/> |No  <br/> |Numero totale di sessioni non riuscite per pool di registrazione o server perimetrali.  <br/> |
    
 ## <a name="metrics-for-top-sources"></a>Metrica delle origini principali
 

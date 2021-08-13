@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 description: Informazioni su come usare il report Dashboard qualità Power BI per visualizzare i Operatore automatico della coda di chiamata.
-ms.openlocfilehash: 994e135cfd579d473da02879adde0d3603ab0ed2
-ms.sourcegitcommit: 0122be629450e203e7143705ac2b395bf3792fd3
+ms.openlocfilehash: 04b18e8f1767f7c32818e53305aead863e1ed753bec23a6c6f86a43464b03d5b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "53129336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298096"
 ---
 # <a name="auto-attendant--call-queue-historical-report"></a>Operatore automatico & cronologia della coda di chiamata
 

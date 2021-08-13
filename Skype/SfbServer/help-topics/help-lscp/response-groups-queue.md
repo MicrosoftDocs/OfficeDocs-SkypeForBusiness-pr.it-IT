@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 29bde940-6107-494f-9bee-b6ebfa135e41
 description: I Response Group sono costituiti da gruppi di agenti, code e flussi di lavoro. Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
-ms.openlocfilehash: 4b0b4e4f34c8297702b110fea2c8aae55bb39d2a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 875a76febbee305e8e2f25c6efee087575fac8d0736bd4405557795bff38e04a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122540"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54298366"
 ---
 # <a name="response-groups-queue"></a>Coda dei Response Group
 

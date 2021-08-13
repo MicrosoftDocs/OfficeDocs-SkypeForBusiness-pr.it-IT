@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 6f6b7f73-f8f5-41dc-9e2a-727baaaa828b
 ROBOTS: NOINDEX, NOFOLLOW
-description: Microsoft rilascia periodicamente un nuovo set di aggiornamenti del firmware del dispositivo per Skype for Business Phone Edition, che puoi importare nei server e distribuire agli utenti. Per ottenere il set più recente di regole di aggiornamento dei dispositivi, accedere alla pagina Guida e supporto tecnico del sito Web Microsoft e cercarePhone Edition.Scaricare il pacchetto di aggiornamento più recente ed estrarre i file in una cartella nel computer in cui devono essere caricati gli aggiornamenti. Dopo aver estratto i file, è possibile usare il cmdlet Import-CsDeviceUpdate per importare le regole di aggiornamento dei dispositivi presenti nel file CAB estratto, che sarà denominato UCUpdates.cab. Per informazioni dettagliate, vedere Import-CsDeviceUpdate.
-ms.openlocfilehash: f62ece38e33bfdc02a6110bb7cc4e53210c9b500
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Microsoft rilascia periodicamente un nuovo set di aggiornamenti del firmware del dispositivo per Skype for Business Telefono Edition, che è possibile importare nei server e distribuire agli utenti. Per ottenere il set più recente di regole di aggiornamento dei dispositivi, accedere alla pagina Guida e supporto tecnico del sito Web Microsoft e cercarePhone Edition.Scaricare il pacchetto di aggiornamento più recente ed estrarre i file in una cartella nel computer in cui devono essere caricati gli aggiornamenti. Dopo aver estratto i file, è possibile usare il cmdlet Import-CsDeviceUpdate per importare le regole di aggiornamento dei dispositivi presenti nel file CAB estratto, che sarà denominato UCUpdates.cab. Per informazioni dettagliate, vedere Import-CsDeviceUpdate.
+ms.openlocfilehash: da5ef8e529a7f70757dd2b17772fbd1bff15cb06dc497857e0f72a1c3ca63574
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51120255"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54330410"
 ---
 # <a name="device-update"></a>Aggiornamento dispositivi
 
-Microsoft rilascia periodicamente un nuovo set di aggiornamenti del firmware del dispositivo per Skype for Business Phone Edition, che puoi importare nei server e distribuire agli utenti. Per ottenere il set più recente di regole di aggiornamento dei dispositivi, aprire la pagina del supporto tecnico del sito Web Microsoft e cercare "Phone Edition". Scaricare il pacchetto di aggiornamento più recente ed estrarre i file in una cartella nel computer dove devono essere caricati gli aggiornamenti. Dopo aver estratto i file, è possibile usare il cmdlet **Import-CsDeviceUpdate** per importare le regole di aggiornamento dei dispositivi presenti nel file CAB estratto, che sarà denominato UCUpdates.cab. Per informazioni dettagliate, [vedere Import-CsDeviceUpdate.](/powershell/module/skype/import-csdeviceupdate?view=skype-ps)
+Microsoft rilascia periodicamente un nuovo set di aggiornamenti del firmware del dispositivo per Skype for Business Telefono Edition, che è possibile importare nei server e distribuire agli utenti. Per ottenere il set più recente di regole di aggiornamento dei dispositivi, aprire la pagina del supporto tecnico del sito Web Microsoft e cercare "Phone Edition". Scaricare il pacchetto di aggiornamento più recente ed estrarre i file in una cartella nel computer dove devono essere caricati gli aggiornamenti. Dopo aver estratto i file, è possibile usare il cmdlet **Import-CsDeviceUpdate** per importare le regole di aggiornamento dei dispositivi presenti nel file CAB estratto, che sarà denominato UCUpdates.cab. Per informazioni dettagliate, [vedere Import-CsDeviceUpdate.](/powershell/module/skype/import-csdeviceupdate?view=skype-ps)
 
 Dopo aver importato le regole di aggiornamento dei dispositivi, puoi usare la pagina **Aggiornamento** dispositivi per visualizzare e gestire queste regole per i dispositivi dell'organizzazione.
 
