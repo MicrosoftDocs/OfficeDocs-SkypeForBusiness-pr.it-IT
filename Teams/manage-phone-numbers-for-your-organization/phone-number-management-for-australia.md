@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Australia per Microsoft Teams.
-ms.openlocfilehash: 15d98740dee93176e08efcf4fcdeafa13c73c8010c7e36deaf00e474b501cff5
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: d0cfc6b96b659c132736e5edfedd6f00c6209a2b3034cc3e79ffc293a2fa357e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57849891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54310644"
 ---
 # <a name="phone-number-management-for-australia"></a>Gestione dei numeri di telefono per l'Australia
 
@@ -39,13 +39,13 @@ Per altre informazioni, vedere [Gestire i numeri di telefono per l'organizzazion
 |**Cosa vuoi fare?**|**Segui queste istruzioni e scarica i moduli corretti**|
 |:-----|:-----|
 |Ottenere nuovi numeri di telefono per piani di chiamata in Australia.   <br/> |Contatta [Telstra Calling](https://aka.ms/TelstraVoicePlan) per nuovi numeri di telefono per gli utenti. Questi numeri verranno quindi aggiunti all'organizzazione in modo da poterli assegnare agli utenti. <br/>
-|Se si usa Telstra Calling, è possibile ottenere nuovi numeri di telefono di servizio che possono essere usati con gli operatori automatici cloud e le code di chiamata per l'Australia da Telstra. <br/> |Contatta [Telstra Calling per](https://aka.ms/TelstraVoicePlan) nuovi numeri di telefono. Questi numeri verranno quindi aggiunti all'organizzazione in modo da poterli assegnare agli operatori automatici e alle code di chiamata. Se non **si usa** Telstra Calling, è possibile contattare microsoft Number Management Service desk per ottenere numeri di servizio da Microsoft. [Contatta il Service Desk PSTN per istruzioni](contact-pstn-service-desk.md) e ti assisteremo il più presto possibile. <br/>|
+|Se si usa Telstra Calling, è possibile ottenere nuovi numeri di telefono di servizio che possono essere usati con gli operatori automatici cloud e le code di chiamata per l'Australia da Telstra. <br/> |Contatta [Telstra Calling per](https://aka.ms/TelstraVoicePlan) nuovi numeri di telefono. Questi numeri verranno quindi aggiunti all'organizzazione in modo da poterli assegnare agli operatori automatici e alle code di chiamata. Se non **si usa** Telstra Calling, è possibile contattare microsoft Number Management Service desk per ottenere numeri di servizio da Microsoft. [Contatta il Service Desk PSTN](contact-pstn-service-desk.md) e ti assisteremo il più presto possibile. <br/>|
 |Ottenere nuovi numeri di telefono di servizio per Audioconferenza in Australia.   <br/> |[Contattare Il Service Desk PSTN](contact-pstn-service-desk.md).|
 |Trasferire i numeri di telefono in Microsoft 365 o Office 365 per utenti, operatori automatici e code di chiamata.  <br/> | Contatta [Telstra Calling per](https://aka.ms/TelstraVoicePlan) trasferire i numeri di telefono. Questi numeri verranno quindi aggiunti all'organizzazione.  <br/> |
-|Trasferire i numeri di telefono in Microsoft 365 o Office 365 per l'uso con le audioconferenze.  |[Per istruzioni, contattare il Service Desk PSTN](contact-pstn-service-desk.md) |
+|Trasferire i numeri di telefono in Microsoft 365 o Office 365 per l'uso con le audioconferenze.  |[Contatta PSTN Service Desk](contact-pstn-service-desk.md) |
 |Cambiare l'indirizzamento di emergenza assegnato a utenti che hanno un numero di telefono con un Piano per chiamate. |Contatta [Telstra Calling per](https://aka.ms/TelstraVoicePlan) apportare modifiche all'indirizzo di emergenza. Loro aggiorneranno le informazioni per te.|
 |Modificare un numero utente in un numero di servizio. |Supportata quando si usa Telstra Calling.|
-|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PSTN per istruzioni.](contact-pstn-service-desk.md) |
+|Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il service desk PSTN.](contact-pstn-service-desk.md) |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

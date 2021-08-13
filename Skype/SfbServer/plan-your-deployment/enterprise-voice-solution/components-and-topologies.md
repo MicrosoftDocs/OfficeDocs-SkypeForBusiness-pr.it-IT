@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 0beec6be-2431-4255-a3d2-512dd030e66a
-description: Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica a Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 771b98e10c28248bc917bff2b8128b6258c140c5
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 33e13853e4c2ed9ab9cab328092f7bc44147607187c8f221993d88cb4114a6d5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315548"
 ---
 # <a name="components-and-topologies-for-call-admission-control-in-skype-for-business"></a>Componenti e topologie per il controllo di ammissione di chiamata in Skype for Business
 
-Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica a Skype for Business Server VoIP aziendale.
+Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica Skype for Business Server VoIP aziendale.
 
 Negli argomenti di questa sezione vengono fornite informazioni sulle considerazioni speciali di cui tenere conto per la distribuzione del servizio Controllo di ammissione di chiamata con diversi tipi di topologie di rete.
 
@@ -76,9 +76,9 @@ Il controllo di ammissione di chiamata può essere distribuito sul collegamento 
 
 ![Caso 1: controllo di ammissione di chiamata tra il gateway PSTN di Mediation Server](../../media/CAC_gateways_1.jpg)
 
-In questo esempio, il controllo di ammissione di chiamata viene applicato tra Mediation Server e un gateway PSTN. Se un utente del client Skype for Business nel sito di rete 1 chiama PSTN tramite il gateway PSTN in Sito di rete 2, il contenuto multimediale passa attraverso il collegamento WAN. Di conseguenza, vengono eseguiti due controlli del controllo di ammissione di chiamata per ogni sessione PSTN:
+In questo esempio, il controllo di ammissione di chiamata viene applicato tra Mediation Server e un gateway PSTN. Se un Skype for Business client di rete nel sito di rete 1 ese verifica una chiamata PSTN tramite il gateway PSTN in Sito di rete 2, il contenuto multimediale passa attraverso il collegamento WAN. Di conseguenza, vengono eseguiti due controlli del controllo di ammissione di chiamata per ogni sessione PSTN:
 
-- Tra l'applicazione client Skype for Business e il Mediation Server
+- Tra l Skype for Business appalto client e Mediation Server
 
 - Tra Mediation Server e il gateway PSTN
 
@@ -101,9 +101,9 @@ Questa configurazione è simile al caso 1. In entrambi i casi, mediation server 
 
 ![Caso 2: CAC tra Mediation Server PBX con MTP](../../media/CAC_gateways_2.jpg)
 
-In questo esempio, il controllo di ammissione di chiamata viene applicato tra Mediation Server e PBX/MTP. Se un utente client Skype for Business presso il sito di rete 1 invia una chiamata PSTN tramite il PBX/MTP che si trova in Sito di rete 2, il contenuto multimediale passa attraverso il collegamento WAN. Pertanto, per ogni sessione PSTN vengono eseguiti due controlli CAC:
+In questo esempio, il controllo di ammissione di chiamata viene applicato tra Mediation Server e PBX/MTP. Se un Skype for Business client di rete presso il sito di rete 1 invia una chiamata PSTN tramite IL PBX/MTP che si trova in Sito di rete 2, i supporti passano attraverso il collegamento WAN. Pertanto, per ogni sessione PSTN vengono eseguiti due controlli CAC:
 
-- Tra l'applicazione client Skype for Business e il Mediation Server
+- Tra l Skype for Business appalto client e Mediation Server
 
 - Tra Mediation Server e PBX/MTP
 
@@ -126,7 +126,7 @@ Il caso 3 è leggermente diverso dai primi due casi. Se nel SISTEMA PBX di terze
 
 ![Caso 3: CAC tra Mediation Server PBX senza MTP](../../media/CAC_gateways_3.jpg)
 
-In questo esempio, se un utente del client Skype for Business nel sito di rete 1 effettua una chiamata a un utente tramite IL PBX, il Mediation Server è in grado di eseguire controlli CAC solo sul lato proxy (tra l'applicazione client Skype for Business e Mediation Server). Poiché il Mediation Server non dispone di informazioni sul dispositivo endpoint durante la richiesta della sessione, i controlli CAC non possono essere eseguiti sul collegamento WAN (tra Mediation Server e l'endpoint di terze parti) prima della creazione della chiamata. Una volta stabilita la sessione, tuttavia, il Mediation Server facilita la contabilizzazione della larghezza di banda utilizzata nel trunk.
+In questo esempio, se un utente client di Skype for Business nel sito di rete 1 effettua una chiamata a un utente tramite IL PBX, il Mediation Server è in grado di eseguire controlli CAC solo sul lato proxy (tra l'applicazione client di Skype for Business e Mediation Server). Poiché il Mediation Server non dispone di informazioni sul dispositivo endpoint durante la richiesta della sessione, i controlli CAC non possono essere eseguiti sul collegamento WAN (tra Mediation Server e l'endpoint di terze parti) prima della creazione della chiamata. Una volta stabilita la sessione, tuttavia, il Mediation Server facilita la contabilizzazione della larghezza di banda utilizzata nel trunk.
 
 Per le chiamate che hanno origine dall'endpoint di terze parti, le informazioni sul dispositivo endpoint sono disponibili al momento della richiesta di sessione e il controllo CAC può essere eseguito su entrambi i lati del Mediation Server.
 

@@ -1,5 +1,5 @@
 ---
-title: Specificare la conservazione dei dati cdR in Skype for Business Server
+title: Specificare la conservazione dei dati di registrazione dei dati in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,14 +12,14 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c0fd6056-87bc-4136-902a-f1b37cd3a1ca
 description: 'Riepilogo: informazioni su come gestire i dati di registrazione dettagli chiamata (CDR) per Skype for Business Server.'
-ms.openlocfilehash: abf6461a76ced9d3ba07e4c5157dd4d14bab60a3
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 3c911de717175ed825bead34ced8a73938b87ea208fe89f856b29f51e1e90872
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51104392"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54317591"
 ---
-# <a name="specify-retention-of-cdr-data-in-skype-for-business-server"></a>Specificare la conservazione dei dati cdR in Skype for Business Server
+# <a name="specify-retention-of-cdr-data-in-skype-for-business-server"></a>Specificare la conservazione dei dati di registrazione dei dati in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire i dati di registrazione dettagli chiamata (CDR) per Skype for Business Server.
   
@@ -34,7 +34,7 @@ Nelle procedure seguenti viene descritto come configurare le impostazioni per l'
 
 1. Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Monitoraggio e archiviazione** e quindi su **Registrazione dettagli chiamata**.
     
@@ -50,7 +50,7 @@ Nelle procedure seguenti viene descritto come configurare le impostazioni per l'
     
 ## <a name="specifying-cdr-retention-by-using-windows-powershell-cmdlets"></a>Specifica della conservazione della registrazione cdR tramite Windows PowerShell cmdlet
 
-È possibile creare le impostazioni di mantenimento delle registrazioni dettagli chiamata utilizzando Windows PowerShell e il cmdlet Set-CsCdrConfiguration. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo di blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile creare le impostazioni di mantenimento delle registrazioni dettagli chiamata utilizzando Windows PowerShell e il cmdlet Set-CsCdrConfiguration. È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-specify-cdr-retention-for-a-specific-location"></a>Per specificare il mantenimento delle registrazioni dettagli chiamata per una posizione specifica
 

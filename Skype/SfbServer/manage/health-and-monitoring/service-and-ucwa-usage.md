@@ -1,5 +1,5 @@
 ---
-title: Monitorare il servizio per dispositivi mobili e l'utilizzo di UCWA in Skype for Business Server
+title: Monitorare l'utilizzo del servizio per dispositivi mobili e UCWA in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,22 +11,22 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 8389b37a-ca3e-4047-8b51-85bc07da87e8
-description: 'Riepilogo: gestire il servizio per dispositivi mobili (Mcx) e Unified Communications Web API (UCWA) in Skype for Business Server.'
-ms.openlocfilehash: 76bcf8727d3abbb417595f033ce9a59ec00a39ff
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: gestire il servizio per dispositivi mobili (Mcx) e l'API Web per comunicazioni unificate (UCWA) in Skype for Business Server."
+ms.openlocfilehash: 6f97e8ec6199fe4665d3d7532f0cb03e21204fafc4764cf36c89dcbeacc4321d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49814246"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54317601"
 ---
-# <a name="monitor-mobility-service-and-ucwa-usage-in-skype-for-business-server"></a>Monitorare il servizio per dispositivi mobili e l'utilizzo di UCWA in Skype for Business Server
+# <a name="monitor-mobility-service-and-ucwa-usage-in-skype-for-business-server"></a>Monitorare l'utilizzo del servizio per dispositivi mobili e UCWA in Skype for Business Server
  
-**Riepilogo:** Gestire il servizio per dispositivi mobili (Mcx) e Unified Communications Web API (UCWA) in Skype for Business Server.
+**Riepilogo:** Gestire il servizio per dispositivi mobili (Mcx) e l'API Unified Communications Web (UCWA) in Skype for Business Server.
 
 > [!NOTE]
-> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client mobili Skype for Business correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che utilizzano MCX dovranno eseguire l'aggiornamento a un client corrente.
+> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
-Su base continuativa, è consigliabile monitorare la CPU e la memoria utilizzata dal servizio Per dispositivi mobili di Skype for Business Server (Mcx) e da Unified Communications Web API (UCWA). Per monitorare l'utilizzo, è possibile utilizzare quanto segue:
+Su base continuativa, è consigliabile monitorare la CPU e la memoria utilizzata dal servizio per dispositivi mobili di Skype for Business Server (Mcx) e dall'API Web per comunicazioni unificate (UCWA). Per monitorare l'utilizzo, è possibile utilizzare quanto segue:
   
  **Per UCWA (Unified Communications Web API):**
   
@@ -34,16 +34,16 @@ Su base continuativa, è consigliabile monitorare la CPU e la memoria utilizzata
     
 - Contatori delle prestazioni relativi a **CPU** e **Processore**.
     
-Per la maggior parte delle distribuzioni, l'utilizzo medio della CPU di UCWA deve essere inferiore al 15%. L'utilizzo della memoria deve rientrare nei limiti descritti in Monitorare i limiti di capacità della memoria del [server in Skype for Business Server.](server-memory-capacity-limits.md)
+Per la maggior parte delle distribuzioni, l'utilizzo della CPU UCWA deve essere in media inferiore al 15%. L'utilizzo della memoria deve rientrare nei limiti descritti in [Monitor for server memory capacity limits in Skype for Business Server](server-memory-capacity-limits.md).
   
 Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzare i contatori delle prestazioni seguenti per determinare quando un server è sovraccarico di richieste:
   
-- **LS:WEB - Throttling and Authentication\WEB - Total Requests in Processing**, che indica il numero di richieste Web in sospeso nel server. Quando questo contatore raggiunge 10.000, le richieste successive avranno esito negativo, con il messaggio di errore "503 - Servizio non disponibile".
+- **LS:WEB - Limitazione e autenticazione\WEB - Totale** richieste in elaborazione, che indica il numero di richieste Web in sospeso nel server. Quando questo contatore raggiunge 10.000, le richieste successive avranno esito negativo, con il messaggio di errore "503 - Servizio non disponibile".
     
 - **ASP.NET\Requests Queued** (deve essere sempre zero).
     
 > [!NOTE]
-> Se si soddisfano o si superano questi valori, è necessario rivedere e ricalcolare la pianificazione della capacità per il dimensionamento corretto della CPU, il numero di core e la memoria per i computer che ospitano i servizi Web. 
+> Se si soddisfano o si superano questi valori, è consigliabile rivisitare e ricalcolare la pianificazione della capacità per il dimensionamento corretto della CPU, del numero di core e della memoria per i computer che ospitano i servizi Web. 
   
  **Per il servizio per dispositivi mobili (Mcx):**
   
@@ -51,7 +51,7 @@ Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzar
     
 - Contatori delle prestazioni relativi a **CPU** e **Processore**.
     
-Per la maggior parte delle distribuzioni, l'utilizzo medio della CPU del servizio per dispositivi mobili deve essere inferiore al 15%. L'utilizzo della memoria deve rientrare nei limiti descritti in Monitorare i limiti di capacità della memoria del [server in Skype for Business Server.](server-memory-capacity-limits.md)
+Per la maggior parte delle distribuzioni, l'utilizzo della CPU del servizio per dispositivi mobili deve essere in media inferiore al 15%. L'utilizzo della memoria deve rientrare nei limiti descritti in [Monitor for server memory capacity limits in Skype for Business Server](server-memory-capacity-limits.md).
   
 Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzare il contatori delle prestazioni ASP.NET seguenti per determinare quando un server è sovraccarico di richieste:
   
@@ -60,10 +60,10 @@ Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzar
 - **ASP.NET\Requests Queued** (deve essere sempre zero).
     
 > [!NOTE]
-> Se si soddisfano o si superano questi valori, è consigliabile rivedere e ricalcolare la pianificazione della capacità per il dimensionamento corretto della CPU, del numero di core e della memoria per i computer che ospitano i servizi Web. 
+> Se si soddisfano o si superano questi valori, è consigliabile rivedere e ricalcolare la pianificazione della capacità per il ridimensionamento corretto della CPU, del numero di core e della memoria per i computer che ospitano i servizi Web. 
 
 > [!NOTE]
-> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile in Skype for Business Server 2019. Tutti i client mobili Skype for Business correnti usano già Unified Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che utilizzano MCX dovranno eseguire l'aggiornamento a un client corrente.
+> Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
   
 ## <a name="see-also"></a>Vedere anche
 

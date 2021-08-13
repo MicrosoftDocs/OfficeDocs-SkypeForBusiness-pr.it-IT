@@ -14,12 +14,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8749fc54-4cd1-4c25-9a64-60e4bdab9767
 description: Con VoIP aziendale, Skype for Business Server 2015 offre un'offerta VoIP (Voice over Internet Protocol) autonoma per migliorare o sostituire i sistemi PBX tradizionali. Gli utenti possono chiamare i colleghi nella rete VoIP o PBX dell'organizzazione e possono chiamare numeri di telefono all'esterno dell'organizzazione. La soluzione VoIP aziendale include funzionalità di chiamata comuni quali risposta, inoltro, trasferimento, blocco, dirotta, rilascio e parcheggio e chiamate enhanced 9-1-1 (E9-1-1) (E9-1-1 è disponibile solo negli Stati Uniti). VoIP aziendale supporta anche un'ampia gamma di dispositivi IP e USB correnti e precedenti.
-ms.openlocfilehash: b846e87aa4697c1a8f251ae569d2407dd367284a
-ms.sourcegitcommit: 5c59f9bf5a9477607b378c23fa3c8670930dc428
+ms.openlocfilehash: 385547cc541c2169606afd0c6d7de939c1611a44f8ad2fc762c69f60e847e016
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "53647007"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315522"
 ---
 # <a name="enterprise-voice-planning-tool"></a>VoIP aziendale di pianificazione
  

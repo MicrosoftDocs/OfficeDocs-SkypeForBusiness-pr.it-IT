@@ -1,5 +1,5 @@
 ---
-title: Configurare la distribuzione locale per Skype Meeting Broadcast
+title: Configurare la distribuzione locale per Riunione Skype Broadcast
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -16,33 +16,33 @@ ms.collection:
 - IT_Skype16
 - IT_Skype4B_Hybrid
 ms.assetid: 2979802e-fc6b-4555-bc43-7cd48f6a1d88
-description: 'Riepilogo: informazioni sui passaggi da eseguire per configurare Skype Meeting Broadcast per la distribuzione ibrida di Skype for Business Server locale.'
-ms.openlocfilehash: b70272ee90146bdac87264acf0c7673b8def05c2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: 'Riepilogo: informazioni sui passaggi da eseguire per configurare Riunione Skype Broadcast per la distribuzione ibrida Skype for Business Server locale.'
+ms.openlocfilehash: 6cab2ed4fbb5cb2992b970d5a960bbc0ad2e10af2184588aa6c938e9811d2a50
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54304488"
 ---
-# <a name="configure-your-on-premises-deployment-for-skype-meeting-broadcast"></a>Configurare la distribuzione locale per Skype Meeting Broadcast
+# <a name="configure-your-on-premises-deployment-for-skype-meeting-broadcast"></a>Configurare la distribuzione locale per Riunione Skype Broadcast
  
-**Riepilogo:** Informazioni sui passaggi da eseguire per configurare Skype Meeting Broadcast per la distribuzione ibrida di Skype for Business Server locale.
+**Riepilogo:** Informazioni sui passaggi da eseguire per configurare Riunione Skype broadcast per la distribuzione ibrida Skype for Business Server locale.
   
-Skype Meeting Broadcast è un servizio online che fa parte di Office 365. Se si esegue Skype for Business Server in locale e si desidera utilizzare Skype Meeting Broadcast nel proprio ambiente, è necessario seguire i passaggi di configurazione descritti in questo argomento. Prima di iniziare, l'ambiente deve essere configurato per la distribuzione ibrida con Skype for Business online. Per ulteriori informazioni, vedere Pianificare la connettività ibrida tra [Skype for Business Server](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) e Skype for Business online e Distribuire la connettività ibrida tra Skype for Business Server e Skype for Business [online.](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
+Riunione Skype Broadcast è un servizio online che fa parte di Office 365. Se si esegue Skype for Business Server locale e si desidera usare Riunione Skype Broadcast nell'ambiente, è necessario seguire i passaggi di configurazione descritti in questo argomento. Prima di iniziare, l'ambiente deve essere configurato per la distribuzione ibrida con Skype for Business Online. Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Skype for Business Online](../../SfbHybrid/hybrid/plan-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json) e Deploy hybrid connectivity between Skype for Business Server and Skype for Business [Online.](../../SfbHybrid/hybrid/configure-hybrid-connectivity.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
   
-## <a name="configure-your-hybrid-environment-for-skype-meeting-broadcast"></a>Configurare l'ambiente ibrido per Skype Meeting Broadcast
+## <a name="configure-your-hybrid-environment-for-skype-meeting-broadcast"></a>Configurare l'ambiente ibrido per Riunione Skype Broadcast
 
-Dovrai eseguire le operazioni seguenti per preparare l'ambiente per Skype Meeting Broadcast:
+Dovrai eseguire le operazioni seguenti per preparare l'ambiente per Riunione Skype Broadcast:
   
-- Configurare la federazione con le risorse di Skype for Business Online
+- Configurare la federazione con Skype for Business online
     
 - Configurare i domini federati SIP
     
-### <a name="configure-federation-with-skype-for-business-online-resources"></a>Configurare la federazione con le risorse di Skype for Business Online
+### <a name="configure-federation-with-skype-for-business-online-resources"></a>Configurare la federazione con Skype for Business online
 
-Per abilitare la federazione con le risorse di Skype for Business Online, è necessario configurare l'accesso esterno per un provider federato SIP. Per eseguire questa operazione utilizzando il Pannello di controllo di Skype for Business Server, attenersi alla seguente procedura:
+Per abilitare la federazione con Skype for Business online, è necessario configurare l'accesso esterno per un provider federato SIP. Per eseguire questa operazione utilizzando il Pannello Skype for Business Server di controllo, attenersi alla seguente procedura:
   
-1. Avviare il Pannello di controllo di Skype for Business Server e selezionare **Accesso esterno** a sinistra.
+1. Avviare il Skype for Business Server di controllo e selezionare **Accesso esterno** a sinistra.
     
 2. Selezionare **Provider federati SIP e** fare clic su **Nuovo.**
     
@@ -50,12 +50,12 @@ Per abilitare la federazione con le risorse di Skype for Business Online, è nec
     
 |||
 |:-----|:-----|
-|**Abilita comunicazioni con questo provider:** <br/> |Opzione selezionata  <br/> |
+|**Abilita comunicazioni con questo provider:** <br/> |Selezionato  <br/> |
 |**Nome provider:** <br/> |LyncOnlineResources  <br/> |
 |**Servizio Access Edge (FQDN):** <br/> |sipfed.resources.lync.com  <br/> |
 |**Livello di verifica predefinito** <br/> |Consenti agli utenti di comunicare con tutti gli utenti che usano questo provider.  <br/> |
    
-È inoltre possibile abilitare la federazione con le risorse di Skype for Business Online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
+È inoltre possibile abilitare la federazione con Skype for Business online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
   
 ```powershell
 New-CsHostingProvider -Identity LyncOnlineResources -ProxyFqdn sipfed.resources.lync.com -VerificationLevel AlwaysVerifiable -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $True -IsLocal $False
@@ -63,9 +63,9 @@ New-CsHostingProvider -Identity LyncOnlineResources -ProxyFqdn sipfed.resources.
 
 ### <a name="configure-sip-federated-domains"></a>Configurare i domini federati SIP
 
-Successivamente, è necessario aggiungere domini federati SIP all'elenco dei domini consentiti. Ripetere questi passaggi per ognuno dei domini elencati, creando 4 nuovi domini federati SIP. Questi domini includono i data center regionali usati in Skype for Business online.
+Successivamente, è necessario aggiungere domini federati SIP all'elenco dei domini consentiti. Ripetere questi passaggi per ognuno dei domini elencati, creando 4 nuovi domini federati SIP. Questi domini includono i data center regionali utilizzati in Skype for Business Online.
   
-1. Avviare il Pannello di controllo di Skype for Business Server e selezionare **Accesso esterno** a sinistra.
+1. Avviare il Skype for Business Server di controllo e selezionare **Accesso esterno** a sinistra.
     
 2. Selezionare **Domini federati SIP e** fare clic su **Nuovo.**
     
@@ -88,4 +88,4 @@ New-CsAllowedDomain -Identity "apacmeetings.lync.com"
 New-CsAllowedDomain -Identity "resources.lync.com"
 ```
 
-Dopo aver completato questi passaggi di configurazione, puoi iniziare a usare Skype Meeting Broadcast nella distribuzione. Per altre informazioni su Skype Meeting Broadcast, vedi [Che cos'è Skype Meeting Broadcast?](https://go.microsoft.com/fwlink/?LinkId=617071) e Guida all'amministratore [di Skype Meeting Broadcast.](../../SfbOnline/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md)
+Dopo aver completato questi passaggi di configurazione, puoi iniziare a usare Riunione Skype Broadcast nella distribuzione. Per ulteriori informazioni su Riunione Skype Broadcast, vedere [What is a Riunione Skype Broadcast?](https://go.microsoft.com/fwlink/?LinkId=617071) e Riunione Skype Broadcast Admin [Guide](../../SfbOnline/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast.md).

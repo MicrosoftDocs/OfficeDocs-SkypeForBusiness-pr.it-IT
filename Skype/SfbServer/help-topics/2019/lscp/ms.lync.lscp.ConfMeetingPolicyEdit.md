@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: ebd2f120-b57a-4c94-9509-20e098f4b0f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Un criterio di conferenza definisce le funzionalità e le funzionalità che gli utenti hanno a disposizione durante una conferenza (nota anche come riunione).
-ms.openlocfilehash: 0599411cd8e0832b1d5d09fc2f8ac6bc676d931d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: af3769f1a5dd7b1025ea7add7fc8b83ae956a56f7ebc490cc7370e24cf0707e1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118895"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54314872"
 ---
 # <a name="conferencing-policy-create-new-or-edit-existing"></a>Criteri conferenza: crearne di nuovi o modificare quelli esistenti
 
@@ -80,7 +80,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
   - **Abilitare le annotazioni** Se si consente la collaborazione dati, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni su schermo sul contenuto condiviso durante la conferenza.
 
-  - **Abilitare le annotazioni di PowerPoint** Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni nelle diapositive di PowerPoint condivise durante la conferenza.
+  - **Abilitare PowerPoint annotazioni** Se si consente l'annotazione, selezionare questa casella di controllo per consentire ai partecipanti di creare annotazioni nelle diapositive PowerPoint condivise durante la conferenza.
 
   - **Abilitare i polling** Se si consente la collaborazione dati, selezionare questa casella di controllo per consentire ai partecipanti di tenere un sondaggio durante una conferenza.
 

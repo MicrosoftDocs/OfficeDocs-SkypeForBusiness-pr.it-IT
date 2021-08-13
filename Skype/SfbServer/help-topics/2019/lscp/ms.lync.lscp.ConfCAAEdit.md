@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 97a2b794-77da-40c0-9f9a-3c5fe6cc683d
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 065e240b777957d737fe031a23de30cb85d897e0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 74f683fabeccfd1bbc89ad6da21914e71e4b5cdc024c8d1d105b18f3e26a8845
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100552"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54304288"
 ---
 # <a name="dial-in-access-number-create-new-or-edit-existing"></a>Numero di accesso esterno: crearne uno nuovo o modificarne uno esistente
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare o modificare un numero di accesso per una conferenza telefonica con accesso esterno](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-dial-in-conferencing-access-number)
 

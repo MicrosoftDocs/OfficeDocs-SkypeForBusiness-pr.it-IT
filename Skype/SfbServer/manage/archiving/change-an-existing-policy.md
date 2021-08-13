@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 4cf600be-ba3d-4bce-aa22-e158b9ccf8a9
 description: 'Riepilogo: informazioni su come modificare i criteri di archiviazione degli utenti per Skype for Business Server.'
-ms.openlocfilehash: 47c9d5938c22b93db48c96265831cbf24ecc24d7
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 571f32a4cf5fb0bddd006719f3a9886c852df3f7196adf774f554cda216ea0a2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49817706"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315712"
 ---
 # <a name="change-an-existing-archiving-policy-in-skype-for-business-server"></a>Modificare un criterio di archiviazione esistente in Skype for Business Server
  
 **Riepilogo:** Informazioni su come modificare i criteri di archiviazione degli utenti per Skype for Business Server.
   
-Quando si distribuisce per la prima volta Skype for Business Server, si impostano i criteri di archiviazione iniziali che determinano la modalità di implementazione dell'archiviazione per gli utenti nella distribuzione. In questo argomento viene descritto come gestire e modificare i criteri. 
+Quando si distribuisce per la Skype for Business Server, si impostano i criteri di archiviazione iniziali che determinano la modalità di implementazione dell'archiviazione per gli utenti nella distribuzione. In questo argomento viene descritto come gestire e modificare i criteri. 
   
-## <a name="change-archiving-policies-by-using-the-control-panel"></a>Modificare i criteri di archiviazione utilizzando il Pannello di controllo
+## <a name="change-archiving-policies-by-using-the-control-panel"></a>Modificare i criteri di archiviazione tramite il Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Criteri di archiviazione**.
     
@@ -50,9 +50,9 @@ Quando si distribuisce per la prima volta Skype for Business Server, si impostan
 6. Fare clic su **Commit**.
     
     > [!IMPORTANT]
-    > Le impostazioni dei criteri utente sono valide solo per gli utenti e i gruppi di utenti specifici a cui vengono applicati i criteri. Per informazioni dettagliate, vedere [Applicare un criterio di archiviazione agli utenti in Skype for Business Server.](apply-a-policy-to-users.md) 
+    > Le impostazioni dei criteri utente sono valide solo per gli utenti e i gruppi di utenti specifici a cui vengono applicati i criteri. Per informazioni dettagliate, vedere [Apply an archiving policy to users in Skype for Business Server](apply-a-policy-to-users.md). 
   
-## <a name="change-archiving-policies-by-using-windows-powershell"></a>Modificare i criteri di archiviazione utilizzando Windows PowerShell
+## <a name="change-archiving-policies-by-using-windows-powershell"></a>Modificare i criteri di archiviazione tramite Windows PowerShell
 
 È inoltre possibile modificare i criteri di archiviazione utilizzando Windows PowerShell **cmdlet Set-CsArchivingPolicy.**
   

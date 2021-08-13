@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: e534e6a5-fb3e-40b1-a189-fce64c42f512
 description: Nella pagina di modifica delle impostazioni del log è possibile aggiungere una configurazione del log del dispositivo che determina la dimensione massima della cache del log, la dimensione massima del file di log o l'intervallo di tempo per cui un file di log viene conservato prima di essere eliminato. È possibile modificare queste impostazioni in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: 694729b74209715bd87bed0c3bd59d80f31fff59
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: a2900d452dd0342ddd60813e35d4611b6ea6ccca6cad114237d87bd915243191
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49807316"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54304048"
 ---
 # <a name="device-log-configuration-edit"></a>Configurazione dei log del dispositivo: modifica
  
@@ -41,17 +41,17 @@ Nella pagina di **** modifica delle impostazioni del log è possibile eseguire l
 
 Negli elenchi seguenti sono descritti i menu, i comandi, i campi e le proprietà della pagina.
   
-- **Ambito** Identifica l'ambito (globale o sito) della configurazione del registro del dispositivo.
+- **Ambito** Identifica l'ambito (Globale o Sito) della configurazione del registro del dispositivo.
     
-- **Name** Puoi aggiungere o modificare il nome della configurazione del log del dispositivo.
+- **Nome** Puoi aggiungere o modificare il nome della configurazione del registro del dispositivo.
     
-- **Dimensioni massime file (byte)** È possibile specificare la dimensione massima che un file di registro può diventare prima che venga eliminato. Il valore predefinito è 1.024.000 byte (1 MB).
+- **Dimensioni massime file (byte)** È possibile specificare le dimensioni massime che un file di registro può diventare prima che venga eliminato. Il valore predefinito è 1.024.000 byte (1 MB).
     
-- **Dimensioni massime cache (byte)** È possibile specificare la quantità massima di informazioni (in byte) che è possibile memorizzare nella cache dei file di registro prima che tale cache venga cancellata e che i dati siano scritti in un file di registro. Il valore predefinito è 512.000 byte (0,5 MB).
+- **Dimensione massima cache (byte)** È possibile specificare la quantità massima di informazioni, in byte, che è possibile memorizzare nella cache dei file di registro prima che tale cache venga cancellata e che i dati siano scritti in un file di registro. Il valore predefinito è 512.000 byte (0,5 MB).
     
 - **Minuti per lo scaricamento della cache (1-60)** È possibile specificare la frequenza con cui le informazioni archiviate nella cache dei file di registro vengono scritte nel file di registro effettivo. Dopo la registrazione dei dati, la cache viene svuotata. Il valore predefinito è 5 minuti.
     
-- **Giorni per conservare i file di registro (1-365)** È possibile specificare il numero di giorni per cui i file di registro vengono conservati prima che siano eliminati. Il valore predefinito è 10 giorni.
+- **Giorni per mantenere i file di registro (1-365)** È possibile specificare il numero di giorni in cui i file di registro vengono conservati prima di essere eliminati. Il valore predefinito è 10 giorni.
     
 ## <a name="see-also"></a>Vedere anche
 

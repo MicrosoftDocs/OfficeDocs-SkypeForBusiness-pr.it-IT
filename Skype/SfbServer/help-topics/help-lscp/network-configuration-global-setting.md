@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 93a17c91-816e-4de0-8065-7dec45203355
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: fedfef4b8e9c40a2dfcd98f762d8cd50a1a0041b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 5247323c9d194ef3d2a301334976ec5c70d2d52a9f58dbb9803d279c26d51fe8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51099562"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54303978"
 ---
 # <a name="network-configuration-global-setting"></a>Configurazione di rete: impostazione globale
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Abilitazione del controllo di ammissione di chiamata](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-call-admission-control)
 

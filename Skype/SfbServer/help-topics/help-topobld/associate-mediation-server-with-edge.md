@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 65c5d93c-9f0d-4a60-8bd1-d05eb6bc2088
 description: 'Per definire un Mediation Server, specificare le impostazioni di associazione del Mediation Server a un Front End Server e a un server o pool di server perimetrali. Per associare il Mediation Server o il pool Mediation Server a un server o pool di server perimetrali, eseguire le operazioni seguenti:'
-ms.openlocfilehash: ffd369c76db96185e76665728a88ed8d8419a03d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 20a6e3de81bae13fd14683af62a6c79627a148cf00d50d7584c15ca27d8da0ee
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835476"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315812"
 ---
 # <a name="associate-mediation-server-with-edge"></a>Associare Mediation Server con Edge
  
@@ -33,6 +33,6 @@ Per definire un Mediation Server, specificare le impostazioni di associazione de
 > [!NOTE]
 > Se nella distribuzione non è stato ancora definito un server perimetrale o un pool di server perimetrali, l'elenco a discesa non conterrà voci. È possibile fare clic su **Avanti** per continuare e modificare le impostazioni per il Mediation Server dopo aver aggiunto alla distribuzione un server perimetrale o un pool di server perimetrali.
   
-Per ulteriori dettagli, vedere [Distribuire un Mediation Server in Generatore di topologie in Skype for Business Server 2015.](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md)
+Per ulteriori dettagli, vedere [Deploy a Mediation Server in Topology Builder in Skype for Business Server 2015.](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md)
   
 

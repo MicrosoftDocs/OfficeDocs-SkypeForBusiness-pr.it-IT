@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 438942e2-580a-4b67-9d42-f116111fb26a
 description: 'Riepilogo: informazioni sul Rapporto errori principali in Skype for Business Server.'
-ms.openlocfilehash: bd03dc921e8df122f4e1ac3ca5cf15195a84b13e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 04088bce640ec19675afb1513645639a59ed4351ab581280bbec4904d57f835e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816686"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54317556"
 ---
 # <a name="top-failures-report-in-skype-for-business-server"></a>Rapporto errori principali in Skype for Business Server
  
@@ -27,17 +27,17 @@ Nel Rapporto errori principali vengono esaminati gli errori rilevati più di fre
   
 - **ID diagnostica**. Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi relativi alle chiamate.
     
-- **Codice di risposta**. I codici di risposta vengono utilizzati nelle sessioni di comunicazione SIP per rispondere alle richieste SIP. Si supponga, ad esempio, che Ken invii la richiesta INVITE a Pilar Ackerman,ovvero che Ken Myer chiami Pilar Ackerman. Se Pilar risponde, il suo telefono invierà il codice di risposta 200 (OK), informando il telefono di Ken che Pilar ha risposto. Il Rapporto errori principali include solo i codici di risposta inviati in risposta a un errore di chiamata. Skype for Business Server non tiene traccia di tutti i codici di risposta emessi durante il corso di una chiamata.
+- **Codice di risposta**. I codici di risposta vengono utilizzati nelle sessioni di comunicazione SIP per rispondere alle richieste SIP. Si supponga, ad esempio, che Ken invii la richiesta INVITE a Pilar Ackerman(ovvero, si supponga che Ken Myer chiami Pilar Ackerman). Se Pilar risponde, il suo telefono invierà il codice di risposta 200 (OK), informando il telefono di Ken che Pilar ha risposto. Il Rapporto errori principali include solo i codici di risposta inviati in risposta a un errore di chiamata. Skype for Business Server non tiene traccia di tutti i codici di risposta emessi durante il corso di una chiamata.
     
 Le informazioni vengono registrate nel rapporto non solo per il numero totale di sessioni in cui si è verificato un errore, ma anche per il numero totale di utenti che hanno subito l'errore.
   
 ## <a name="accessing-the-top-failures-report"></a>Accesso al Rapporto errori principali
 
-È possibile accedere al Rapporto errori principali dalla home page Relazioni monitoraggio. Facendo clic sulla metrica Sessioni segnalate si visualizza il [Rapporto distribuzione errori in Skype for Business Server.](failure-distribution-report.md)
+È possibile accedere al Rapporto errori principali dalla home page Relazioni monitoraggio. Facendo clic sulla metrica Sessioni segnalate si visualizza il Rapporto distribuzione errori [in Skype for Business Server](failure-distribution-report.md).
   
 ## <a name="making-the-best-use-of-the-top-failures-report"></a>Utilizzo ottimale del Rapporto errori principali
 
-Il Rapporto errori principali è insolito da un punto di vista: consente di filtrare fino a 5 ID di diagnostica contemporaneamente. In genere è possibile filtrare in base a un solo elemento, ad esempio un indirizzo SIP utente, alla volta. Per filtrare in base a più ID di diagnostica, è sufficiente immettere ogni ID nella casella ID di diagnostica, separandoli con una virgola. Se lo si desidera, è possibile lasciare uno spazio dopo ogni virgola. Per esempio:
+Il Rapporto errori principali è insolito per un punto di vista: consente di filtrare fino a 5 ID di diagnostica contemporaneamente. In genere è possibile filtrare solo un elemento, ad esempio un indirizzo SIP utente, alla volta. Per filtrare in base a più ID di diagnostica, è sufficiente immettere ogni ID nella casella ID di diagnostica, separando gli ID tramite virgole. Se lo si desidera, è possibile lasciare uno spazio dopo ogni virgola. Per esempio:
   
 1011, 2412, 1033, 52116, 1008
   
@@ -60,7 +60,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 |**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vengono calcolate sempre dal lunedì alla domenica.  <br/> |
 |**Tipo di attività** <br/> | Tipo di attività. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Peer-to-peer <br/>  Conferenza <br/> |
-|**Modality** <br/> |L'unica opzione disponibile attualmente è **[Tutto]**.  <br/> |
+|**Modalità** <br/> |L'unica opzione disponibile attualmente è **[Tutto]**.  <br/> |
 |**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati relativi a tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record del database.<br/> |
 |**Categoria** <br/> | Tipo di errore. Selezionare uno dei tipi seguenti: <br/>  Errore sia previsto che imprevisto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
 |**Codice di risposta** <br/> |Codice di risposta SIP inviato quando si è verificato l'errore di conferenza. Immettere l'intero codice di risposta, ad esempio:  <br/> 400  <br/> |

@@ -1,5 +1,5 @@
 ---
-title: Eliminare i criteri conferenza in Skype for Business Server
+title: Eliminare i criteri di conferenza in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 497e6ca0-7a49-4f3e-9804-14414cf87b57
 description: 'Riepilogo: informazioni su come eliminare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 9aadaf82aea7f057cf1969f06d4257992b64a86a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 76648fed55f01790e2e81f8683dedde4c24ac0cdfcff956f7813735872c801eb
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315622"
 ---
-# <a name="delete-conferencing-policies-in-skype-for-business-server"></a>Eliminare i criteri conferenza in Skype for Business Server
+# <a name="delete-conferencing-policies-in-skype-for-business-server"></a>Eliminare i criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come eliminare i criteri di conferenza in Skype for Business Server.
   
-È possibile eliminare i criteri di conferenza utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
+È possibile eliminare i criteri di conferenza Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
   
-## <a name="delete-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Eliminare i criteri conferenza tramite il Pannello di controllo di Skype for Business Server
+## <a name="delete-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Eliminare i criteri conferenza tramite il Skype for Business Server Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Aprire il Pannello di controllo di Skype for Business Server.
+2.  Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     

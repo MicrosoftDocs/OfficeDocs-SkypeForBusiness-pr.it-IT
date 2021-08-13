@@ -12,18 +12,18 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 942bb39a-1790-498e-9d99-8f6ce2d155c3
 description: 'Riepilogo: informazioni sul Rapporto prestazioni server in Skype for Business Server.'
-ms.openlocfilehash: 75927ec23ec7a004e70733d9371462def3731fb8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d635e1bd3cc76c9e1d2218c142b58b588a35330c4b132998060d31e40424ea48
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49814276"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54317611"
 ---
 # <a name="server-performance-report-in-skype-for-business-server"></a>Rapporto prestazioni server in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto prestazioni server in Skype for Business Server.
   
-Il Rapporto prestazioni server fornisce un elenco dei server Skype for Business Server che hanno registrato la percentuale più alta di chiamate di livello scadente. Nel rapporto i server sono suddivisi in base al tipo in modo da riportare statistiche distinte per quelli seguenti:
+Il Rapporto prestazioni server fornisce un elenco Skype for Business Server server che hanno riscontrato la percentuale più alta di chiamate di qualità scarsa. Nel rapporto i server sono suddivisi in base al tipo in modo da riportare statistiche distinte per quelli seguenti:
   
 - Mediation Server
     
@@ -39,11 +39,11 @@ Il Rapporto prestazioni server fornisce un elenco dei server Skype for Business 
     
 - Condivisione applicazioni (incluse le metriche di condivisione applicazioni per A/V Conferencing Server e A/V Edge Server)
     
-È importante notare che la classificazione mostrata in questo report è relativa. Supponiamo ad esempio che il server con le prestazioni peggiori presenti una chiamata di livello insufficiente su 1.000 chiamate effettuate. Si tratta della più che accettabile percentuale dello 0,1%. Se questo è il server con le prestazioni peggiori (ovvero se tutti gli altri server presentano percentuali di chiamate di livello insufficiente inferiori a 0,1%), tale server verrà comunque incluso nel Rapporto prestazioni dei server.
+È importante notare che la classificazione mostrata in questo report come classificazioni relative. Supponiamo ad esempio che il server con le prestazioni peggiori presenti una chiamata di livello insufficiente su 1.000 chiamate effettuate. Si tratta della più che accettabile percentuale dello 0,1%. Se questo è il server con le prestazioni peggiori (ovvero se tutti gli altri server presentano percentuali di chiamate di livello insufficiente inferiori a 0,1%), tale server verrà comunque incluso nel Rapporto prestazioni dei server.
   
 ## <a name="accessing-the-server-performance-report"></a>Accesso al Rapporto prestazioni dei server
 
-Il Rapporto prestazioni dei server è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al Rapporto Elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
+Il Rapporto prestazioni dei server è accessibile dalla home page Rapporti di monitoraggio. È possibile eseguire il drill-down al Rapporto elenco chiamate [in Skype for Business Server](call-list-report-0.md) facendo clic su una delle metriche seguenti:
   
 - Volume chiamata
     
@@ -71,7 +71,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto prestazion
 |**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**Tipo di server** <br/> |Indica il tipo di server di cui eseguire il rapporto sulle prestazioni. Selezionare uno dei seguenti:  <br/> [All] Mediation Server A/V Conferencing Server A/V Edge Server |
 |**Primi N elementi** <br/> |Indica il numero di server, in base alla percentuale di chiamate di livello insufficiente, da visualizzare in ogni categoria. Se ad esempio si seleziona **5** verranno visualizzati i cinque server con le prestazioni peggiori. Selezionare uno dei seguenti:<br/> [All] 5 10 |
-|**Tipo di accesso** <br/> |Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:  <br/> [All] Esterno interno |
+|**Tipo di accesso** <br/> |Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:  <br/> [All] Internal External |
 |**Tipo di rete** <br/> |Indica il tipo di rete alla quale era connesso il client quando è stata effettuata la chiamata. Selezionare una delle opzioni seguenti:  <br/> [All] Wireless cablata |
 |**VPN** <br/> |Indica se un client esterno stava utilizzando una connessione VPN (Virtual Private Network) al momento della chiamata. Selezionare una delle opzioni seguenti:  <br/> [All] VPN non VPN |
    
@@ -87,7 +87,7 @@ La tabella seguente elenca le informazioni disponibili nel Rapporto prestazioni 
 |**Volume chiamata** <br/> |No  <br/> |Numero totale di chiamate effettuate.  <br/> |
 |**Percentuale chiamate di livello insufficiente** <br/> |No  <br/> |Numero totale di chiamate classificate come di livello insufficiente. In una chiama di livello insufficiente almeno una delle metriche misurate supera il valore consentito, ad esempio viene rilevato un livello di instabilità eccessivo.  <br/> |
 |**Roundtrip (ms)** <br/> |Sì  <br/> |Tempo medio di roundtrip, in millisecondi, necessario per un pacchetto RTP (Real-Time Transport Protocol) per viaggiare fino a un altro endpoint e tornare indietro. Un roundtrip di 100 millisecondi o meno è considerato di qualità accettabile.  <br/> Valori alti di tempo di roundtrip possono essere dovuti a routing delle chiamate internazionali, errata configurazione del routing o sovraccarico del server dei contenuti multimediali con conseguenti difficoltà nelle conversazioni audio bidirezionali in tempo reale.  <br/> |
-|**Degradazione (MOS)** <br/> |Sì  <br/> |Valore medio di degradazione MOS (Mean Opinion Score) osservata durante una chiamata. I valori di degradazione possono essere compresi tra un minimo di 0 e un massimo di 5. Il valore 0,5 o inferiore rappresenta una degradazione accettabile. In passato, i valori MOS venivano calcolati chiedendo agli utenti di valutare la qualità di una chiamata su una scala da 1 a 5. In Skype for Business Server, il Monitoring Server usa un set di algoritmi per prevedere come gli utenti avrebbero valutato una chiamata.  <br/> Valori di degradazione elevati possono essere causati da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un endpoint o un server di contenuti multimediali sovraccarico. Una degradazione elevata genera audio distorto o perdita di audio.  <br/> |
+|**Degradazione (MOS)** <br/> |Sì  <br/> |Valore medio di degradazione MOS (Mean Opinion Score) osservata durante una chiamata. I valori di degradazione possono essere compresi tra un minimo di 0 e un massimo di 5. Il valore 0,5 o inferiore rappresenta una degradazione accettabile. In passato, i valori MOS venivano calcolati chiedendo agli utenti di valutare la qualità di una chiamata su una scala da 1 a 5. In Skype for Business Server monitoring server viene utilizzato un set di algoritmi per prevedere come gli utenti avrebbero valutato una chiamata.  <br/> Valori di degradazione elevati possono essere causati da congestione, mancanza di larghezza di banda, interferenze o congestione della rete wireless o da un endpoint o un server di contenuti multimediali sovraccarico. Una degradazione elevata genera audio distorto o perdita di audio.  <br/> |
 |**Perdita di pacchetti** <br/> |Sì  <br/> |Frequenza media di perdita di pacchetti RTP (Real-Time Transport Protocol). La perdita di pacchetti si verifica quando i pacchetti RTP, un protocollo utilizzato per la trasmissione di audio e video su Internet, non raggiungono la destinazione. Valori alti di perdita sono in genere dovuti a congestione, superamento della larghezza di banda disponibile, congestione/interferenze wireless o sovraccarico del server dei contenuti multimediali con conseguente audio distorto o perdita di audio.  <br/> |
 |**Instabilità (ms)** <br/> |Sì  <br/> |Instabilità media rilevata tra gli arrivi di pacchetti RTP. L'instabilità è una misura dell'inattendibilità di una chiamata. Valori elevati di instabilità sono in genere causati da congestione o da un server di contenuti multimediali sovraccarico e generano audio distorto o perdita di audio.  <br/> |
 |**Rapporto campioni nascosti utilità di ripristino** <br/> |Sì  <br/> |Rapporto medio tra i campioni audio nascosti e il numero totale di campioni. Un campione audio nascosto è una tecnica utilizzata per mitigare le transazioni improvvise generalmente causate dall'eliminazione di pacchetti di rete. Valori elevati indicano l'applicazione di livelli significativi di soppressione della perdita applicata dovuti a perdita di pacchetti o instabilità, con conseguente audio distorto o perdita di audio.  <br/> |

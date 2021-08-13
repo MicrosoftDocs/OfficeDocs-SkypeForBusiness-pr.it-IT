@@ -1,5 +1,5 @@
 ---
-title: Distribuzione guidata di Windows Update
+title: Distribuzione guidata Windows aggiornamento
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c6a280cb-1428-40b6-b761-cb649b9ff7df
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server, vedere Installare Skype for Business Server.
-ms.openlocfilehash: b31023d6a96938433d10040d7e795004113cba24
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Per informazioni dettagliate sull'utilizzo della Distribuzione guidata per installare Skype for Business Server, vedere Install Skype for Business Server.
+ms.openlocfilehash: bbc68bada622c3bebf43c3c002d7f387b884b9758b07dbfdf462dd493474bade
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49801536"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54317821"
 ---
 # <a name="deployment-wizard-windows-update"></a>Distribuzione guidata: Windows Update
  
-Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server, vedere [Installare Skype for Business Server.](../../../deploy/install/install.md)
+Per informazioni dettagliate sull'utilizzo della Distribuzione guidata per installare Skype for Business Server, vedere [Install Skype for Business Server](../../../deploy/install/install.md).
   
 

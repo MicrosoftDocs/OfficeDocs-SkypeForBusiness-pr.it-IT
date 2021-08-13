@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 74974f7b94a5d1bcadb340e132dae9e3b39a7704
-ms.sourcegitcommit: 36bc47b2b9ee0e738fa814c31accacfe816da4a3
+ms.openlocfilehash: 2bec8b60385185cf1e7417fb5396ef164eb585bad03d003eb174d0bb9cf30c4e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "52856325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315302"
 ---
 # <a name="overview-of-dynamic-membership-for-teams"></a>Panoramica sull'appartenenza dinamica per i team
 
@@ -33,7 +33,7 @@ Con l'appartenenza dinamica è possibile configurare i team per determinate coor
 - Un'università può creare un team per tutti i docenti all'interno di un determinato istituto di istruzione, incluso un istituto di istruzione aggiunto che cambia di frequente.
 - Una compagnia aerea vuole creare un team per ogni volo (ad esempio un non-stop di martedì pomeriggio da Chicago ad Atlanta) e assegnare o rimuovere automaticamente un membro del personale di volo che cambia spesso in base alle esigenze.
 
-Usando questa funzionalità, i membri di un determinato team vengono aggiornati automaticamente in base a un set specifico di criteri, invece di gestire manualmente l'appartenenza. Per eseguire questa operazione, è necessario che le licenze di Azure AD Premium P1 e l'appartenenza al team possano essere assegnate da un amministratore [tenant](/azure/active-directory/users-groups-roles/groups-dynamic-membership) alle proprietà di Azure AD di qualsiasi utente, purché si abbia un tenant e un account di amministratore.
+Usando questa funzionalità, i membri di un determinato team vengono aggiornati automaticamente in base a un set specifico di criteri, invece di gestire manualmente l'appartenenza. In questo modo è Azure AD Premium P1 licenze e l'appartenenza al team può essere assegnata da un amministratore [tenant](/azure/active-directory/users-groups-roles/groups-dynamic-membership) alle proprietà di Azure AD di qualsiasi utente, purché si abbia un tenant e un account di amministratore.
 
 Microsoft Teams può richiedere da pochi minuti a un massimo di 2 ore per riflettere le modifiche dinamiche dell'appartenenza dopo che sono state applicate nel gruppo Microsoft 365 per un team.
 

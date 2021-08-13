@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: ec62b70f-885e-4272-b9d2-a574ea434b64
 description: 'Riepilogo: informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: d4787671955159d2bef0144872c50caccbbbb8eb
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: a2f5cbe503f914fe32b42119397be44ab82617cddd9951ab7064a2d08c0289f4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51098962"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54317581"
 ---
 # <a name="use-call-quality-dashboard-for-skype-for-business-server"></a>Usare il dashboard qualità delle chiamate per Skype for Business Server
 
@@ -28,7 +28,7 @@ Call Quality Dashboard (CQD) consente ai professionisti IT di utilizzare dati ag
 
 ## <a name="call-quality-dashboard-user-guide"></a>Guida per l'utente del dashboard di qualità delle chiamate
 
-CQD è un portale Web per la creazione e l'organizzazione rapida di report basati su dati QoE (Quality of Experience). CQD distribuisce un cubo SSAS per aggregare i dati nel database delle metriche QoE e consente agli amministratori di creare e modificare report o di eseguire indagini in tempo reale. Sebbene sia possibile utilizzare Excel per connettersi direttamente al cubo, il portale è ottimizzato per diversi flussi di lavoro che coinvolgono dati QoE. I dati includono:
+CQD è un portale Web per la creazione e l'organizzazione rapida di report basati su dati QoE (Quality of Experience). CQD distribuisce un cubo SSAS per aggregare i dati nel database delle metriche QoE e consente agli amministratori di creare e modificare report o di eseguire indagini in tempo reale. Anche se è possibile utilizzare Excel per connettersi direttamente al cubo, il portale è ottimizzato per diversi flussi di lavoro che coinvolgono dati QoE. I dati includono:
 
 - Dati dei report memorizzati nella cache per un accesso rapido
 - Collegamenti diretti alle pagine dei report per la condivisione e la pubblicazione delle informazioni
@@ -53,9 +53,9 @@ Spostare il mouse sui grafici a barre e sulle linee di tendenza per visualizzare
 
 Quando si accede per la prima volta al portale call quality dashboard, viene creato automaticamente un set predefinito di report. Questi report vengono talvolta definiti report di sistema. È possibile modificare o eliminare liberamente questi report o estenderli creando nuovi report figlio e di pari livello.
 
-Al livello superiore, il report "Tendenza mensile flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del rapporto Tendenze mensili flussi audio per passare al report "Flussi audio gestiti e non gestiti", in cui i rapporti vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
+Al livello superiore, il report "Tendenza mensile Flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del report Tendenze mensili Flussi audio per passare al report "Managed vs Unmanaged Audio Flussi", in cui i report vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
 
-L'altro report di primo livello è denominato "Istogramma della qualità delle chiamate segnalato dall'utente". Le valutazioni di qualità delle chiamate sono i numeri dati dagli utenti di Skype for Business al termine di una chiamata per indicare la qualità della chiamata. I numeri di valutazione sono da 1 a 5, 1 è il peggiore e 5 è il migliore. L'istogramma mostra il numero di chiamate audio con la valutazione indicata in un mese.
+L'altro report di primo livello è denominato "Istogramma della qualità delle chiamate segnalato dall'utente". Classificazioni qualità chiamata sono i numeri Skype for Business utenti al termine di una chiamata per indicare la qualità della chiamata. I numeri di valutazione sono da 1 a 5, 1 è il peggiore e 5 è il migliore. L'istogramma mostra il numero di chiamate audio con la valutazione indicata in un mese.
 
 Fare clic sul titolo di uno dei report per passare ai report con più filtri sui dati. Nei report di sistema, ogni report figlio visualizza un sottoinsieme dei dati disponibili nel report padre. Il modello di risoluzione dei problemi è semplice: analizzare a quale sottoreport sono limitati i dati o la tendenza che suggerisce un problema e ridurre gradualmente lo spazio del problema. La possibilità di creare sottoreport consente di analizzare le proprie ipotesi sulla causa di tendenze specifiche dei dati.
 
@@ -167,14 +167,14 @@ Per impostazione predefinita, la tabella successiva include una voce (0, "Unknow
 |Building |nvarchar(500) |Sì |Nome dell'edificio in cui si trova il punto di accesso WiFi. |
 ||||
 
-## <a name="cqd-streams"></a>Flussi CQD
+## <a name="cqd-streams"></a>CQD Flussi
 
 Un flusso CQD è considerato buono, scadente o non classificato. CQM 1.5 ora usa la definizione CQD seguente:
 
 - Un flusso scadente è una qualsiasi combinazione delle metriche delle chiamate scadenti oltre la soglia.
 - Quando un flusso di una chiamata è scadente, entrambi i flussi della chiamata sono contrassegnati di qualità scarsa. Nelle conferenze, ogni partecipante viene conteggiato come una chiamata univoca e riportato indipendentemente da tutti gli altri.
 - I flussi non classificati sono flussi senza metriche qualitative ,ovvero transazioni sintetiche o chiamate brevi.
-- Flussi validi = client non mobili
+- Valid Flussi = client non mobili
 - Non è possibile modificare il classificatore
 
 **Definizione/classificatore di chiamata scadente**
@@ -224,7 +224,7 @@ Una query ben formata contiene tutti e tre i parametri seguenti:
 - Dimensione
 - Filtro
 
-Un esempio di query ben formata è "Show me Poor Streams [Measurement] by Subnet [Dimension] for Building 6 [Filter]."
+Un esempio di query ben formata è "Show me Poor Flussi [Measurement] by Subnet [Dimension] for Building 6 [Filter]."
 
 ## <a name="what-does-union-do"></a>Cosa fa UNION?
 
@@ -240,9 +240,9 @@ Se wireless viene gestito internamente, è possibile ricreare i report wireless 
 
 ## <a name="operational-processes"></a>Processi operativi
 
-Esaminare e correggere prima i flussi gestiti. La qualità in quest'area dovrebbe essere al 100% all'interno del controllo e quindi più facile da correggere.
+Esaminare e correggere prima l'Flussi gestito. La qualità in quest'area dovrebbe essere al 100% all'interno del controllo e quindi più facile da correggere.
 
-### <a name="managed-streams"></a>Flussi gestiti
+### <a name="managed-streams"></a>Gestione Flussi
 
 Esaminare e correggere i flussi gestiti nell'ordine seguente:
 
@@ -250,7 +250,7 @@ Esaminare e correggere i flussi gestiti nell'ordine seguente:
 2. Server-Wired-Inside
 3. Wired-Wired-Inside
 
-### <a name="unmanaged-streams"></a>Flussi non gestiti
+### <a name="unmanaged-streams"></a>Non Flussi
 
 Esaminare e correggere i flussi non gestiti nell'ordine seguente:
 

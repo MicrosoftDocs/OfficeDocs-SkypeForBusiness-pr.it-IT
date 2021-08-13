@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: cc4d0de8fd1d6c643f23b6e8215f0f7a343b2a8f
-ms.sourcegitcommit: 17d0108fb4d36a3f56144460683f53d77a8a0a7f
+ms.openlocfilehash: b25a3126e697b30093f38148c43cf29e55ba776a4b2adca14a75779dcd4dc8c8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "52777803"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54315392"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -139,11 +139,11 @@ Il formato necessario per immettere l'interno nel campo del numero di telefono d
 - *+\<phone number>x\<extension>*
 - *x\<extension>*
 
-- Esempio 1: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+1555555678;ext=5678"
+- Esempio 1: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678;ext=5678"
 - Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678x5678"
 - Esempio 3: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "x5678"
 
-È possibile impostare l'estensione [nell'interfaccia Microsoft 365 o](https://admin.microsoft.com/) nell'Azure Active Directory di [amministrazione.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
+È possibile impostare l'estensione [nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o [nell'Azure Active Directory di amministrazione.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.
 
 > [!NOTE]
 > Se si vogliono usare  sia le  funzionalità Chiama per nome che Chiama per interno, è possibile assegnare un tasto di composizione all'operatore automatico principale per raggiungere un operatore automatico abilitato per Chiama **per nome.** All'interno di tale operatore automatico, è possibile assegnare il tasto 1 (a cui non sono associate lettere) per raggiungere l'operatore automatico Chiama **per** interno.

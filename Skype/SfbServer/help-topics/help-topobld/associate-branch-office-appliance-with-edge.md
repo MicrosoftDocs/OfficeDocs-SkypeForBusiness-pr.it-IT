@@ -14,19 +14,19 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 3f02e4bd-f86f-4a84-9c04-28d2a53b10b1
-description: Se sono stati distribuiti server perimetrali ed è necessario fornire servizi multimediali per l'utilizzo esterno, scegliere il server perimetrale o il pool che verrà associato al Survivable Branch Appliance o al Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su Avanti per continuare.
-ms.openlocfilehash: e38671792bca1b2dba5ccc1ce6540ae468445647
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Se sono stati distribuiti server perimetrali e è necessario fornire servizi multimediali per l'utilizzo esterno, scegliere il server perimetrale o il pool che verrà associato al Survivable Branch Appliance o al Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su Avanti per continuare.
+ms.openlocfilehash: 075d05c97e8e9a4a1fccc69562fe390cc0e8ade15e00e515f0e6e4fd4706b5c6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49803326"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54303818"
 ---
 # <a name="associate-branch-office-appliance-with-edge"></a>Associare Survivable Branch Appliance al server perimetrale
  
-Se sono stati distribuiti server perimetrali ed è necessario fornire servizi multimediali per l'utilizzo esterno, scegliere il server perimetrale o il pool che verrà associato al Survivable Branch Appliance o al Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su **Avanti** per continuare.
+Se sono stati distribuiti server perimetrali e è necessario fornire servizi multimediali per l'utilizzo esterno, scegliere il server perimetrale o il pool che verrà associato al Survivable Branch Appliance o al Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su **Avanti** per continuare.
   
 > [!NOTE]
-> Se nella topologia non è definito un server perimetrale o un pool di server perimetrali, è possibile saltare questo passaggio. Sarà possibile associare il Survivable Branch Appliance o il Survivable Branch Server a un server perimetrale o a un pool di server perimetrali quando si definisce un nuovo server perimetrale o un pool di server perimetrali oppure quando si modificano le pagine delle proprietà del Survivable Branch Appliance o del Survivable Branch Server dopo aver definito un server perimetrale o un pool di server perimetrali nella topologia. 
+> Se nella topologia non è definito un server perimetrale o un pool di server perimetrali, è possibile saltare questo passaggio. Sarà possibile associare il Survivable Branch Appliance o il Survivable Branch Server a un server perimetrale o a un pool di server perimetrali quando si definisce un nuovo server perimetrale o un pool di server perimetrali oppure quando si modificano le pagine delle proprietà del Survivable Branch Appliance o del Survivable Branch Server dopo la definizione di un server perimetrale o di un pool di server perimetrali nella topologia. 
   
 
