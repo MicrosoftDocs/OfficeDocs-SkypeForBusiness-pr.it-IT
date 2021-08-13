@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 35c1511f-8143-4893-a91c-5bc7c18ec0bf
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: b199c16d20321c67f287f62008df478fb5f5ec7a
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 465a0bdd89382d4f243a5164b42de4a6bbb859bdc0b461836c804a39395e5274
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122060"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54319419"
 ---
 # <a name="configure-a-network-region-route"></a>Configurare una route area di reti
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Configurazione delle route dell'area di rete](/previous-versions/office/lync-server-2013/lync-server-2013-creating-or-modifying-network-region-routes)

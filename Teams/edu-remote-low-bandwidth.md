@@ -18,16 +18,16 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 17520645f23500550c6bc991c9d25ad2f72b2b6e
-ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
+ms.openlocfilehash: 87f1be3a538d708c62aef46dd673e7fd3ed5c1156c3e50c986fc9ec0753cad39
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51598425"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54299245"
 ---
 # <a name="help-for-low-bandwidth-situations-for-teams-for-edu"></a>Indicazioni per le situazioni di larghezza di banda ridotta per Teams per l'istruzione
 
-Quando si lavora in Microsoft Teams, molti elementi di rete possono incidere sulle prestazioni e la larghezza di banda ridotta è uno dei fattori che possono sembrare totalmente al di fuori del proprio controllo. Prendere in considerazione le situazioni seguenti:
+Quando si lavora in Microsoft Teams, molti elementi di rete possono incidere sulle prestazioni. La larghezza di banda ridotta è uno dei fattori che possono sembrare totalmente al di fuori del proprio controllo. Considera le situazioni seguenti:
 
 - Connessione Internet a bassa velocità per l'istituto di istruzione.
 - Connessione Internet a bassa velocità per uno o più studenti.
@@ -42,7 +42,7 @@ Questo articolo illustra le procedure consigliate da seguire per svariate attivi
 
 ## <a name="resolving-low-bandwidth-issues-for-admins"></a>Risoluzione dei problemi di larghezza di banda ridotta per amministratori
 
-La cosa importante da ricordare, come amministratore IT, è che sebbene ci siano soluzioni per problemi di larghezza di banda ridotta ampiamente diffuse che risolvono rapidamente i problemi, le soluzioni devono essere valutate con attenzione. Alcuni problemi possono essere risolti con una particolare attenzione da parte degli educatori o persino a livello di studente/genitore.
+Per gli amministratori IT, l'aspetto più importante da ricordare è che, sebbene esistano soluzioni rapide ai problemi di larghezza di banda che sono estesi, è consigliabile valutare i casi con attenzione, perché alcuni problemi possono essere risolti a livello di singolo docente o anche di singolo studente o genitore.
 
 In breve, agire come amministratore IT ha senso se i problemi di larghezza di banda riguardano un ampio gruppo di studenti e anche se le azioni intraprese a livello di studente o docente non sono state utili.
 
@@ -51,7 +51,7 @@ In breve, agire come amministratore IT ha senso se i problemi di larghezza di ba
 
 ### <a name="meetings-and-video"></a>Riunioni e video
 
-Una delle aree di attenzione principali per quanto riguarda i problemi di larghezza di banda sono le riunioni e in particolare il video nelle riunioni. Di seguito sono riportate alcune azioni che un amministratore IT può considerare per gestire i problemi segnalati da studenti o docenti e migliorare l'esperienza di riunione in un ambiente didattico.
+Un approccio principale per i problemi di larghezza di banda ridotta sono le riunioni; in particolare, il video nelle riunioni. Un amministratore IT deve prendere in considerazione le azioni seguenti quando si tratta di problemi segnalati da studenti o docenti per quanto riguarda la migliore esperienza di riunione in un ambiente didattico.
 
 #### <a name="meeting-policies"></a>Criteri di riunione
 
@@ -91,6 +91,6 @@ Per altre informazioni, vedere come [Usare Teams per la didattica quando la larg
 
 Ci sono anche situazioni, di cui è necessario discutere in modo proattivo con i docenti, in cui il problema della larghezza di banda può essere sul versante dello studente. Ad esempio, un numero elevato di studenti riesce a guardare le lezioni video senza problemi, mentre un numero limitato di studenti ha difficoltà.
 
-Non è ragionevole aspettarsi che molti genitori siano in grado di risolvere questi problemi. I problemi di larghezza di banda ridotta possono essere al di fuori del controllo di uno studente o di un genitore. L'abitazione potrebbe non avere accesso alla banda larga, possono esserci molte persone nell'area immediatamente limitrofa che consumano larghezza di banda, potrebbe esserci instabilità della rete Internet e così via.
+Non è ragionevole aspettarsi che tutti i genitori siano in grado di risolvere questi problemi. I problemi di larghezza di banda ridotta possono essere al di fuori del controllo di uno studente o di un genitore (potrebbero non avere accesso alla banda larga, possono esserci molte persone nell'area immediatamente limitrofa che consumano larghezza di banda e condizionano ciò che possono fare, potrebbe esserci instabilità della rete Internet e così via).
 
 L'articolo [Usare Teams per la didattica quando la larghezza di banda è ridotta](https://support.office.com/article/use-teams-for-schoolwork-when-bandwidth-is-low-5c5675f7-1b55-471a-9daa-ec1e6df38262) raccoglie consigli utili per genitori e studenti, in caso di problemi.

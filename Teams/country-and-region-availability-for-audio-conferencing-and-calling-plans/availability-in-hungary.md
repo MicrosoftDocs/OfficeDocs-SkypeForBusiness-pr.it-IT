@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Ungheria.
-ms.openlocfilehash: fa90a2f7b3a0d3e8add48b17b27d1f17f171a8ea
-ms.sourcegitcommit: 49cdcf344c63c805bcb6365804c6f5d1393e926a
+ms.openlocfilehash: c4eb0a2a750f2f197ef06d2af6f50e14d415027efd9087b104ab443bd9a3e692
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/03/2021
-ms.locfileid: "52129775"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54299423"
 ---
 # <a name="availability-in-hungary"></a>Disponibilità in Ungheria
 

@@ -14,21 +14,21 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 05867db5-ad62-41e3-b1ac-f21f43d1e90b
 ROBOTS: NOINDEX, NOFOLLOW
-description: "In Generatore di topologie è possibile eseguire attività relative a un singolo server che esegue il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoring Server:"
-ms.openlocfilehash: 6e0d26c38e865ae4e2b7b5622c5cddd5c6803cbe
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "In Generatore di topologie è possibile eseguire attività correlate a un singolo server che esegue Il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoraggio:"
+ms.openlocfilehash: da1c88215191bfb52d768183a6f187e2064932766498403db1c6a30b26637b8a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804146"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54331788"
 ---
 # <a name="monitoring-scope-node"></a>Nodo dell'ambito di monitoraggio
  
-In Generatore di topologie è possibile eseguire attività relative a un singolo server che esegue il  monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoring Server:
+In Generatore di topologie è possibile eseguire attività correlate a un singolo server che esegue Il  monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoraggio:
   
-- **Modifica proprietà**. Consente di **aprire** la pagina Modifica proprietà per il server che esegue Monitoring Server, in cui è possibile modificare il nome di dominio completo (FQDN) del server che esegue Monitoring Server o il database SQL Server monitoraggio.
+- **Modifica proprietà**. Apre la **pagina Modifica** proprietà per il server che esegue Monitoring, in cui è possibile modificare il nome di dominio completo (FQDN) del server che esegue Monitoring o il database SQL Server monitoraggio.
     
-- **Eliminazione**. Elimina il server che esegue Monitoring Server dalla topologia e il database SQL Server monitoraggio.
+- **Eliminazione**. Elimina il server che esegue Monitoring dalla topologia e dal database SQL Server monitoraggio.
     
 Oltre alle opzioni per il server che esegue Monitoring Server descritte in precedenza in questo argomento, dal nodo Monitoring Server sono presenti opzioni generiche, disponibili anche da altri nodi dell'albero della console. Sono incluse le opzioni seguenti:
   

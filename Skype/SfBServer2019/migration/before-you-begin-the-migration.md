@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'Prima di iniziare, è consigliabile leggere questo documento e le guide seguenti per acquisire familiarità con la distribuzione dei ruoli corrispondenti:'
-ms.openlocfilehash: 89249622af6285943de40eed643e2ca7bbed392d
-ms.sourcegitcommit: 62946d7515ccaa7a622d44b736e9e919a2e102d0
+ms.openlocfilehash: d450ba89936e9b61f862d59072849fbe5d21e6b66c79ba351f5f275d2a4ff4e8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/16/2020
-ms.locfileid: "44753068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54319549"
 ---
 # <a name="before-you-begin-the-migration"></a>Operazioni preliminari alla migrazione
 

@@ -20,12 +20,12 @@ ms.custom:
 - Reporting
 - O365E_ReportsS4BActivity
 description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
-ms.openlocfilehash: 094d947088b1a1fea4a8585e09bdedfa6ffe2a2b
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 559e29abc72600df1a13e2cf8077796d505d726557370e406894fba8c00d6b6e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54332098"
 ---
 # <a name="activity-report"></a>Report attività
 
@@ -38,7 +38,7 @@ Per altre informazioni, [vedere La](https://support.office.com/article/0d6dfb17-
 Questo report, insieme agli altri report Skype for Business, fornisce informazioni dettagliate sulle attività in tutta l'organizzazione. Questi dettagli sono molto utili per indagare, pianificare e prendere altre decisioni aziendali per l'organizzazione.
   
 > [!NOTE]
-> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore nell'Microsoft 365 di amministrazione. 
+> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore nel interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-activity-report"></a>Come ottenere il report attività in Skype for Business
 

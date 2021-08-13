@@ -1,5 +1,5 @@
 ---
-title: Configurare l'integrazione tra Skype for Business Server locale e Outlook Web App
+title: Configurare l'integrazione tra i Skype for Business Server locali e Outlook Web App
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,18 +14,18 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 95a20117-2064-43c4-94fe-cac892cadb6f
 description: 'Riepilogo: integrare Skype for Business Server e Outlook Web App.'
-ms.openlocfilehash: daa9430034d82a3a8dee980a9b075b2fc5656c86
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e3bee7a66ec054e316f50ce86839b86d4ecb16ea2333302b12dedb408580c4f1
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51109692"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54331858"
 ---
-# <a name="configure-integration-between-on-premises-skype-for-business-server-and-outlook-web-app"></a>Configurare l'integrazione tra Skype for Business Server locale e Outlook Web App
+# <a name="configure-integration-between-on-premises-skype-for-business-server-and-outlook-web-app"></a>Configurare l'integrazione tra i Skype for Business Server locali e Outlook Web App
 
 **Riepilogo:** Integrare Skype for Business Server e Outlook Web App.
 
-I clienti che usano distribuzioni di Skype for Business Server locali possono configurare l'interoperabilità con Microsoft Outlook Web App in Microsoft Exchange Online in modalità di distribuzione ibrida. Le funzionalità di interoperabilità includono l'accesso Single #A0 e la messaggistica istantanea e l'integrazione della presenza con l'interfaccia di Outlook Web App. Per abilitare questa integrazione, è necessario configurare il server perimetrale nella distribuzione di Skype for Business Server locale completando le attività seguenti:
+I clienti che usano distribuzioni di Skype for Business Server locali possono configurare l'interoperabilità con Microsoft Outlook Web App in Microsoft Exchange Online in modalità di distribuzione ibrida. Le funzionalità di interoperabilità includono l'accesso Single #A0 e la messaggistica istantanea e l'integrazione della presenza con l Outlook Web App interno. Per abilitare questa integrazione, è necessario configurare il server perimetrale nella distribuzione di Skype for Business Server locale completando le attività seguenti:
 
 - Configurare uno spazio indirizzi SIP condiviso
 
@@ -35,7 +35,7 @@ I clienti che usano distribuzioni di Skype for Business Server locali possono co
 
 ## <a name="configure-a-shared-sip-address-space"></a>Configurare uno spazio di indirizzi SIP condiviso
 
-Per integrare Skype for Business Server locale con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi del dominio SIP è supportato sia da Skype for Business Server che dal servizio Exchange Online.
+Per integrare gli indirizzi locali Skype for Business Server con Exchange Online, è necessario configurare uno spazio di indirizzi SIP condiviso. Lo stesso spazio di indirizzi di dominio SIP è supportato sia dal Skype for Business Server che dal Exchange Online servizio.
 
 Utilizzando Skype for Business Server Management Shell, configurare il server perimetrale per la federazione eseguendo il cmdlet **Set-CSAccessEdgeConfiguration,** utilizzando i parametri visualizzati nell'esempio seguente:
 
@@ -43,9 +43,9 @@ Utilizzando Skype for Business Server Management Shell, configurare il server pe
 Set-CsAccessEdgeConfiguration -AllowFederatedUsers $True
 ```
 
-- **Il parametro AllowFederatedUsers** consente di specificare se agli utenti interni è consentito comunicare con utenti provenienti da domini federati. Questa proprietà determina anche se gli utenti interni possono comunicare con gli utenti in uno scenario di spazio di indirizzi SIP condiviso con Skype for Business Server ed Exchange Online.
+- **Il parametro AllowFederatedUsers** consente di specificare se agli utenti interni è consentito comunicare con utenti provenienti da domini federati. Questa proprietà determina inoltre se gli utenti interni possono comunicare con gli utenti in uno scenario di spazio di indirizzi SIP condiviso con Skype for Business Server e Exchange Online.
 
-Per informazioni dettagliate sull'utilizzo di Skype for Business Server Management Shell, vedere [Skype for Business Server Management Shell.](../../manage/management-shell.md)
+Per informazioni dettagliate sull'utilizzo di Skype for Business Server Management Shell, [vedere Skype for Business Server Management Shell](../../manage/management-shell.md).
 
 ## <a name="configure-a-hosting-provider-on-the-edge-server"></a>Configurare un provider di hosting nel server perimetrale
 
@@ -58,7 +58,7 @@ New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedA
 > [!NOTE]
 > Se si utilizza Microsoft 365 o Office 365 gestito da 21Vianet in Cina, sostituire il valore del parametro ProxyFqdn in questo esempio ("exap.um.outlook.com") con il nome di dominio completo per il servizio gestito da 21Vianet: "exap.um.partner.outlook.cn". Se si utilizza Microsoft 365 o Office 365 GCC High, sostituire il valore per il parametro ProxyFqdn in questo esempio ("exap.um.outlook.com") con il nome di dominio completo per GCC High: "exap.um.office365.us".
 
-- **Identity** specifica un identificatore di valore stringa univoco per il provider di hosting che si sta creando, ad esempio "Exchange Online". I valori che contengono spazi devono essere racchiusi tra virgolette doppie.
+- **Identity** specifica un identificatore di valore stringa univoco per il provider di hosting che si sta creando( ad esempio, "Exchange Online"). I valori che contengono spazi devono essere racchiusi tra virgolette doppie.
 
 - **Enabled** indica se la connessione di rete tra il dominio dell'organizzazione e il provider di hosting è abilitata. Deve essere impostata su True.
 
@@ -66,9 +66,9 @@ New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedA
 
 - **HostsOCSUsers** indica se il provider di hosting viene utilizzato per ospitare Office Communications Server o Skype for Business Server. Deve essere impostata su False.
 
-- **ProxyFQDN** specifica il nome di dominio completo (FQDN) del server proxy utilizzato dal provider di hosting. Per Exchange Online, il nome di dominio completo è exap.um.outlook.com.
+- **ProxyFQDN** specifica il nome di dominio completo (FQDN) del server proxy utilizzato dal provider di hosting. Ad Exchange Online, il nome di dominio completo è exap.um.outlook.com.
 
-- **IsLocal** indica se il server proxy utilizzato dal provider di hosting è contenuto nella topologia di Skype for Business Server. Deve essere impostata su False.
+- **IsLocal** indica se il server proxy utilizzato dal provider di hosting è contenuto nella topologia Skype for Business Server locale. Deve essere impostata su False.
 
 - **VerificationLevel** Indica il livello di verifica consentito per i messaggi inviati da e verso il provider ospitato. Specificare **UseSourceVerification**, che si basa sul livello di verifica incluso nei messaggi inviati dal provider di hosting. Se questo livello non viene specificato, il messaggio verrà rifiutato come non verificabile.
 
@@ -76,7 +76,7 @@ New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedA
 
 Le modifiche apportate utilizzando i cmdlet nelle sezioni precedenti vengono applicate automaticamente al server perimetrale e in genere la replica richiede meno di un minuto. È possibile convalidare lo stato della replica e quindi verificare che le modifiche sono state applicate al server perimetrale utilizzando i cmdlet seguenti.
 
-Per verificare gli aggiornamenti della replica, in un server interno nella distribuzione di Skype for Business Server, eseguire il cmdlet seguente:
+Per verificare gli aggiornamenti della replica, in un server interno nella distribuzione Skype for Business Server, eseguire il cmdlet seguente:
 
 ```powershell
 Get-CsManagementStoreReplicationStatus
@@ -92,6 +92,6 @@ Verificare se le informazioni visualizzate corrispondono alle modifiche apportat
 
 ## <a name="see-also"></a>Vedere anche
 
-[Fornire agli utenti di Skype for Business Server la segreteria telefonica nella messaggistica unificata di Exchange ospitata](/previous-versions/office/lync-server-2013/lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um)
+[Fornire Skype for Business Server di segreteria telefonica agli utenti nella messaggistica unificata Exchange ospitata](/previous-versions/office/lync-server-2013/lync-server-2013-providing-lync-server-users-voice-mail-on-hosted-exchange-um)
 
-[Integrazione della messaggistica unificata di Exchange ospitata in Skype for Business Server](/previous-versions/office/lync-server-2013/lync-server-2013-hosted-exchange-unified-messaging-integration)
+[Integrazione della Exchange messaggistica unificata ospitata in Skype for Business Server](/previous-versions/office/lync-server-2013/lync-server-2013-hosted-exchange-unified-messaging-integration)

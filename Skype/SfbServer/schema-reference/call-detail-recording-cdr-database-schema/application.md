@@ -1,5 +1,5 @@
 ---
-title: Tabella Application in Skype for Business Server 2015
+title: Tabella delle applicazioni in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 30938426-e2f9-4735-a7f4-59baf7a7d7e6
-description: In questa tabella sono archiviate informazioni sui diversi processi all'interno di Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.
-ms.openlocfilehash: 4f387ca5be7f376d5056b40050ce1c49218e02c5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: In questa tabella vengono archiviate informazioni sui vari processi Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.
+ms.openlocfilehash: 2fc9eeeba91749495ea977db22c28c0db8b56ce08728023c57860f8b68275c72
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813506"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54297063"
 ---
-# <a name="application-table-in-skype-for-business-server-2015"></a>Tabella Application in Skype for Business Server 2015
+# <a name="application-table-in-skype-for-business-server-2015"></a>Tabella delle applicazioni in Skype for Business Server 2015
  
-In questa tabella sono archiviate informazioni sui diversi processi all'interno di Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.
+In questa tabella vengono archiviate informazioni sui vari processi Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|

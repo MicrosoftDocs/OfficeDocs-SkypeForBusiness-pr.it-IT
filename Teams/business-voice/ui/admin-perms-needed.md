@@ -16,12 +16,12 @@ description: ''
 appliesto:
 - Microsoft Teams
 ROBOTS: NOINDEX, NOFO
-ms.openlocfilehash: 236b3444d78950ea4f84fb28187d6d4d3046205c
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 23fdfe702d4ae776893368838332ce4747463e0bfc15938c418f076279d8bf74
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102852"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54299433"
 ---
 # <a name="admin-permissions-needed-to-buy-microsoft-365-business-voice"></a>Autorizzazioni di amministratore necessarie per acquistare Microsoft 365 Business Voice
 
@@ -31,11 +31,11 @@ Prima di tutto, se si è fatto clic su un collegamento per errore e non si inten
 
 ## <a name="how-can-i-buy-business-voice"></a>Come si acquista Business Voice?
 
-Business Voice è un componente aggiuntivo per Microsoft 365 e Office 365. Prima di acquistare Business Voice, è necessario iscriversi per Microsoft 365 o Office 365. Dopo l'iscrizione o se si ha già un abbonamento a Microsoft 365 o Office 365, è possibile acquistare licenze per i componenti aggiuntivi VoIP aziendale accedendo all'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com)Componenti aggiuntivi Servizi di acquisto fatturazione (scorrere fino alla parte inferiore della  >    >    >   pagina) > **Microsoft 365 Business Voice**.
+Business Voice è un componente aggiuntivo per Microsoft 365 e Office 365. Prima di acquistare Business Voice, è necessario iscriversi per Microsoft 365 o Office 365. Dopo l'iscrizione o se si ha già un abbonamento a Microsoft 365 o Office 365, è possibile acquistare licenze per i componenti aggiuntivi VoIP aziendale accedendo ai componenti aggiuntivi Servizi di acquisto fatturazione [di interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com)(scorrere fino in fondo alla  >    >    >   pagina) > **Microsoft 365 Business Voice**.
 
 ## <a name="why-dont-i-see-an-option-to-buy-business-voice"></a>Perché non viene visualizzata un'opzione per acquistare VoIP aziendale?
 
-Se non è possibile accedere all'interfaccia di amministrazione di Microsoft 365, se non è visualizzata l'opzione per acquistare VoIP aziendale o se viene visualizzato un messaggio di errore, potrebbe essere per uno dei motivi seguenti:
+Se non è possibile accedere al interfaccia di amministrazione di Microsoft 365, se non è visualizzata un'opzione per acquistare VoIP aziendale o se viene visualizzato un messaggio di errore, potrebbe essere per uno dei motivi seguenti:
 
 - **Autorizzazioni** insufficienti: per aggiungere licenze, tra cui VoIP aziendale, all'organizzazione di Microsoft 365 o Office 365, l'account deve essere un amministratore globale o avere il ruolo di amministratore fatturazione. Contattare l'Microsoft 365 o Office 365 per ottenere le autorizzazioni appropriate o per aggiungere le licenze di Business Voice.
 - Accesso a un **account non** amministratore: se si è l'amministratore globale o l'amministratore della fatturazione per l'organizzazione di Microsoft 365 o Office 365 e seguire la procedura consigliata per avere un account utente "normale" separato dall'account di amministratore, disconnettersi dal normale account utente e accedere all'account di amministratore.

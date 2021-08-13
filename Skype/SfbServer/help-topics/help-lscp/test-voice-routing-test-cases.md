@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d683c9e6-a2e4-4c6c-89d3-b60ed26de592
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: a3dc3e6beb0eabe6f2fa48001b61fe81ba269ad1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 7a7c61d5a135a3a0c844c9efaa72e705dc5a6bc31abe356f427399b595c35cc2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51099312"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54299693"
 ---
 # <a name="test-voice-routing-test-cases"></a>Test routing vocale: test case
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare un test case di routing vocale](/previous-versions/office/lync-server-2013/lync-server-2013-create-a-voice-routing-test-case)
 
