@@ -1,5 +1,5 @@
 ---
-title: Risorse di Microsoft Teams per l'istruzione per amministratori
+title: Introduzione a Microsoft Teams per l'apprendimento a distanza
 author: MicrosoftHeidi
 ms.author: heidip
 manager: serdars
@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b69e7567ac68ada95261894ffe3aa8d219e95367
-ms.sourcegitcommit: 2d725b9925696e61e3e7338f890f086e009c28f2
+ms.openlocfilehash: 5b811ca1dfbbe763fd2b5b31c762356951838ca77913319ca473883635b4d27b
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51598575"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57849121"
 ---
 # <a name="get-started-with-microsoft-teams-for-remote-learning"></a>Introduzione a Microsoft Teams per l'apprendimento a distanza
 
@@ -230,7 +230,7 @@ Gli studenti e gli insegnanti otterranno il massimo da Teams quando potranno usa
 
 #### <a name="recommended-best-practices"></a>Buone pratiche consigliate
 
-- Distribuisci subito! Si consiglia effettuare prontamente la distribuzione per garantire che tutto funzioni correttamente e sia pronto per il primo giorno di scuola.
+- Implementazione immediata consigliata! Si consiglia effettuare prontamente la distribuzione per garantire che tutto funzioni correttamente e sia pronto per il primo giorno di scuola.
 - Se si hanno più di 500.000 team, è consigliabile usare il [metodo di creazione dei team con docente](#educator-led-team-creation-from-office-365-class-groups). Riduce i team inutilizzati e gli ingombri creando solo team di classe rilevanti e necessari.  
 - Se si verificano problemi con la creazione automatica di team con SDS (ad esempio, corsi mancanti) e ai docenti servono subito, è possibile usare il [metodo di creazione dei team con docente](#educator-led-team-creation-from-office-365-class-groups). La [Creazione manuale del team](#manual-team-creation) è un'altra soluzione, ma non tiene aggiornata l'iscrizione del proprio team.  
 - Il tenant prevede un limite di 500.000 team. Di conseguenza, gli amministratori devono cercare in modo proattivo di ridurre il numero di team inutilizzati per evitare di superare questi limiti ed estendere il tempo di configurazione. Per altre informazioni sui limiti, vedere [Limiti e specifiche di Microsoft Teams](limits-specifications-teams.md).  

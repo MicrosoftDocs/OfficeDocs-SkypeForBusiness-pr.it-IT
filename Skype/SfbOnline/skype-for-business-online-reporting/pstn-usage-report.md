@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area Skype for Business report dell'interfaccia di amministrazione mostra le attività di chiamata e audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo PSTN per i servizi di audioconferenza, incluso il costo della chiamata, in modo da comprendere i dettagli di utilizzo e di fatturazione delle chiamate per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: 2c6a0410611919662f5eaf37a03bfcca11b543be
-ms.sourcegitcommit: 3704577b1424c063fd925a58a6f6d0b3ff2c8148
+ms.openlocfilehash: 511065a4371ae4f9521022a27c2fdf6804736d48ccc807ee1d3aa0d0148fe3a8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "53278449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300442"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 

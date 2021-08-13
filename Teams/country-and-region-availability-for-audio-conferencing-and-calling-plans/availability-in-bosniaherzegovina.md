@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Bosnia Erzegovina.
-ms.openlocfilehash: 7415b8c387b325f370f02e296f45dee4de7e8c6e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 9c483f4670d3fdfc201f61269bf64fe5e3e9c779b7f9c7fac6b0a5875cb4846f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118325"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54326172"
 ---
 # <a name="availability-in-bosnia-amp-herzegovina"></a>Disponibilità in Bosnia &amp; Erzegovina
 

@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: ad792bb2-aee0-4986-a070-116ff3c10fe7
 description: 'Riepilogo: informazioni sui passaggi di distribuzione per la messaggistica istantanea e la presenza in Skype for Business Server.'
-ms.openlocfilehash: 730cedcea9b4635f0352a18afca2193f065b89b8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d0f90f017bbd246b198df31d2c33bf97bcdea887c608457b0b267bae79f0b8d8
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49801936"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300312"
 ---
 # <a name="deploy-instant-messaging-and-presence-in-skype-for-business-server"></a>Distribuire la messaggistica istantanea e la presenza in Skype for Business Server
  
@@ -25,7 +25,7 @@ ms.locfileid: "49801936"
   
 ## <a name="deployment-steps-for-instant-messaging-and-presence"></a>Passaggi di distribuzione per la messaggistica istantanea e la presenza
 
-Nell'articolo sulla pianificazione della messaggistica istantanea e della presenza vengono fornite informazioni per pianificare la distribuzione. La messaggistica istantanea e la presenza vengono abilitate quando si installa Skype for Business Server. Per ulteriori informazioni sulla pianificazione della messaggistica istantanea e della presenza, vedere Pianificare la messaggistica istantanea [e la presenza in Skype for Business Server.](../../plan-your-deployment/instant-messaging-and-presence.md)
+L'articolo sulla pianificazione della messaggistica istantanea e della presenza illustra le informazioni necessarie per pianificare la distribuzione. La messaggistica istantanea e la presenza vengono abilitate quando si installa Skype for Business Server. Per ulteriori informazioni sulla pianificazione della messaggistica istantanea e della [presenza,](../../plan-your-deployment/instant-messaging-and-presence.md)vedere Plan for instant messaging and presence in Skype for Business Server .
   
 In questa sezione vengono descritti alcuni dei passaggi di distribuzione che è possibile personalizzare per ottimizzare gli scenari di messaggistica istantanea e presenza.
   

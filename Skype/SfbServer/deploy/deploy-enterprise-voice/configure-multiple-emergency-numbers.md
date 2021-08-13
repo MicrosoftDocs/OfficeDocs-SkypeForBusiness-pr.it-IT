@@ -15,18 +15,18 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 2e869df0-5fdb-4e70-bd81-cb012556eb1a
 description: Leggere questo argomento per informazioni su come configurare più numeri di emergenza in Skype for Business Server.
-ms.openlocfilehash: dc05e94e88b371bb9ee22568eff567e758311233
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e0a12bb63578e5070a079b6ab4561d67255f7199a0042066467fb40eafb54637
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51111892"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300342"
 ---
 # <a name="configure-multiple-emergency-numbers-in-skype-for-business"></a>Configurare più numeri di emergenza in Skype for Business
 
 Leggere questo argomento per informazioni su come configurare più numeri di emergenza in Skype for Business Server.
 
-Skype for Business Server ora supporta più numeri di emergenza per un client. Più numeri di emergenza è una nuova funzionalità introdotta nell'aggiornamento cumulativo di giugno 2016. Prima di configurare l'ambiente in modo da supportare più numeri di emergenza, leggere Pianificare più numeri di emergenza [in Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md)
+Skype for Business Server ora supporta più numeri di emergenza per un client. Più numeri di emergenza è una nuova funzionalità introdotta nell'aggiornamento cumulativo di giugno 2016. Prima di configurare l'ambiente per supportare più numeri di emergenza, leggere Pianificare più numeri di emergenza [in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/multiple-emergency-numbers.md).
 
 > [!NOTE]
 > Se non è stato ancora eseguito l'aggiornamento cumulativo di novembre 2016, vedere [Updates to Skype for Business Server 2015](https://support.microsoft.com/help/3061064/updates-for-skype-for-business-server-2015). Con l'aggiornamento cumulativo di novembre 2016, il numero di numeri di emergenza di supporto aumenta da 5 a 100.

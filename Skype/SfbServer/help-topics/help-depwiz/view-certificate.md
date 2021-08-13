@@ -14,13 +14,13 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: bfc6db2d-141e-4395-819a-65ba4629ccca
-description: Nella pagina Visualizza certificato viene visualizzato un riquadro che consente di selezionare un certificato valido nell'archivio certificati locale. È possibile selezionare un certificato e quindi fare clic su Visualizza dettagli certificato. Il certificato verrà visualizzato in un nuovo riquadro. Nel riquadro Certificato è possibile visualizzare informazioni sul certificato Generale. Fare clic sulla scheda Dettagli per visualizzare informazioni dettagliate sul certificato, ad esempio il nome soggetto e il nome alternativo soggetto. Nel percorso di certificazione verrà visualizzato il percorso del certificato attendibile per il certificato. Dopo aver esaminato le informazioni del certificato, fare clic su OK.
-ms.openlocfilehash: 249fa56d2653a9c3b7a0e39019f7c2fcc6feff93
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Nella pagina Visualizza certificato viene visualizzato un riquadro che consente di selezionare un certificato valido nell'archivio certificati locale. È possibile selezionare un certificato e quindi fare clic su Visualizza dettagli certificato. Il certificato verrà visualizzato in un nuovo riquadro. Nel riquadro Certificato è possibile visualizzare informazioni sul certificato Generale. Fare clic sulla scheda Dettagli per visualizzare informazioni dettagliate sul certificato, ad esempio il nome soggetto e il nome alternativo soggetto. Nel percorso di certificazione verrà visualizzato il percorso del certificato di trust per il certificato. Dopo aver esaminato le informazioni del certificato, fare clic su OK.
+ms.openlocfilehash: 07a276c40cc115b9fabe8b457762db44da22ef1bc6335b93ecf9503768cffcfe
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49800526"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54311474"
 ---
 # <a name="view-certificate"></a>Visualizzare un certificato
  

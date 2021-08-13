@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 985077a4-c8e1-4d5a-9fcf-fef41cf6d61d
 description: "Riepilogo: informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 99eb376dd9a47c5b4e342627592186f94c5e80cc
+ms.openlocfilehash: 40225e6efdf848c34d2b7184e4d8863182ef78494e179e27c4fa8ca322f7349d
 ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/05/2021
-ms.locfileid: "53772787"
+ms.locfileid: "54300292"
 ---
 # <a name="skype-for-business-server-prepare-active-directory"></a>Skype for Business Server: Preparare Active Directory
  

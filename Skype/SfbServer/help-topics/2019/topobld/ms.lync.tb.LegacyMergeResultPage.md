@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 0ef58717-a7ce-4451-a6f3-1fe5a850ab31
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per iniziare l'unione di una distribuzione legacy con Skype for Business Server, fare clic su Avanti. Per informazioni dettagliate sull'esecuzione dell'unione guidata di Generatore di topologie, vedere Merge Using Topology Builder Merge Wizard nella documentazione sulla migrazione.
-ms.openlocfilehash: 1547ef69b09cc72c0841732385ceabf3c20af113
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: e5fd679b1028e4fc74def6db7ece92534a63dc5238ebd623238193af67ad9198
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119985"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54299952"
 ---
 # <a name="legacy-merge-results"></a>Risultati dell'unione legacy
 

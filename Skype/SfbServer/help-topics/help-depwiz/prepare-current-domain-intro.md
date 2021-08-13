@@ -14,16 +14,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 25f2e262-d6ed-4081-bbfd-5f8be5997e6b
-description: La pagina Preparazione dominio inizia il processo di preparazione del dominio per Skype for Business Server 2015. Fare clic su Avanti per iniziare la preparazione del dominio.
-ms.openlocfilehash: 774dd61a5a5d3dab22b29a12b42c2bd9ec162cb5
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: La pagina Prepara dominio inizia il processo di preparazione del dominio per Skype for Business Server 2015. Fare clic su Avanti per iniziare la preparazione del dominio.
+ms.openlocfilehash: 4fa8850a9f4c17ebe40d2634efca38e79792201a014c350b73fa411dbd487ad2
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49804976"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54311504"
 ---
 # <a name="prepare-current-domain-intro"></a>Preparare il dominio corrente (Intro)
  
-La **pagina Preparazione** dominio inizia il processo di preparazione del dominio per Skype for Business Server 2015. Fare clic su **Avanti** per iniziare la preparazione del dominio.
+La **pagina Prepara** dominio inizia il processo di preparazione del dominio per Skype for Business Server 2015. Fare clic su **Avanti** per iniziare la preparazione del dominio.
   
 

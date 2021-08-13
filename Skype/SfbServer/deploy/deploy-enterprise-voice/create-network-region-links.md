@@ -15,25 +15,25 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: f8163910-8935-475d-88a2-3aa44feb9dbe
-description: Creare o modificare collegamenti di area di rete, che vengono utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
-ms.openlocfilehash: 5fd9657b3919e80552a82912550e7314297182cc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Creare o modificare collegamenti di area di rete, utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
+ms.openlocfilehash: a332d3cb966247118d951626ac305c4a9f85e21d4b90b6011a07a1220f01170a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51093104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54325464"
 ---
 # <a name="create-network-region-links-in-skype-for-business-server"></a>Creare collegamenti di area di rete in Skype for Business Server
  
-Creare o modificare collegamenti di area di rete, che vengono utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server. 
+Creare o modificare collegamenti di area di rete, utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server. 
   
 Le aree all'interno di una rete sono collegate tramite connettività fisica WAN. Un collegamento di area di rete crea un collegamento tra due aree configurate per il servizio Controllo di ammissione di chiamata e imposta le limitazioni di larghezza di banda per il traffico audio e video tra queste aree.
   
-Nella topologia di esempio è presente un collegamento tra il Nord America e le aree APAC e un collegamento tra le aree EMEA e APAC. Ognuno di questi collegamenti di area è vincolato dalla larghezza di banda WAN, come descritto nella tabella Informazioni sulla larghezza di banda del collegamento area in Esempio: Raccolta dei requisiti per il controllo di ammissione di chiamata [in Skype for Business Server.](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md)
+Nella topologia di esempio è presente un collegamento tra il Nord America e le aree APAC e un collegamento tra le aree EMEA e APAC. Ognuno di questi collegamenti di area è vincolato dalla larghezza di banda WAN, come descritto nella tabella Region Link Bandwidth Information in [Example: Gathering requirements for call admission control in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/example-gathering-requirements.md).
   
 ### <a name="to-create-network-region-links-by-using-skype-for-business-server-management-shell"></a>Per creare collegamenti di area di rete tramite Skype for Business Server Management Shell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet New-CsNetworkRegionLink per creare i collegamenti area di rete e applicare i profili di criteri di larghezza di banda appropriati. Ad esempio, eseguire:
     
@@ -45,9 +45,9 @@ Nella topologia di esempio è presente un collegamento tra il Nord America e le 
    New-CsNetworkRegionLink -NetworkRegionLinkID EMEA-APAC-LINK -NetworkRegionID1 EMEA -NetworkRegionID2 APAC -BWPolicyProfileID 25Mb_Link
    ```
 
-### <a name="to-create-network-region-links-by-using-skype-for-business-server-control-panel"></a>Per creare collegamenti di area di rete tramite il Pannello di controllo di Skype for Business Server
+### <a name="to-create-network-region-links-by-using-skype-for-business-server-control-panel"></a>Per creare collegamenti di area di rete tramite il Skype for Business Server Pannello di controllo
 
-1. Aprire il Pannello di controllo di Skype for Business Server.
+1. Aprire Skype for Business Server Pannello di controllo.
     
 2. Sulla barra di spostamento sinistra fare clic su **Configurazione di rete**.
     

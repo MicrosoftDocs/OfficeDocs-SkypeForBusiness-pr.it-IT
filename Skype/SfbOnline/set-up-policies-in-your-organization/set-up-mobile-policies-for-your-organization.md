@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: È possibile configurare la modalità di connessione degli utenti a Skype for Business Online usando l'app Skype for Business nei dispositivi mobili, ad esempio una funzionalità che consente agli utenti di effettuare e ricevere chiamate sul cellulare usando il numero di telefono dell'ufficio invece del numero di cellulare. I criteri di mobilità possono essere utilizzati anche per richiedere la presenza di connessioni Wi-Fi quando si effettuano o ricevono chiamate.
-ms.openlocfilehash: e29a02bddcb9ace29ebd059f8cbc42c5a85c3f12
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 3bb723c3ca1a9b867c37abf8e638436b4492ae2a7d40d16c22980c7873c70f98
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52240068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54325603"
 ---
 # <a name="set-up-mobile-policies-for-your-organization"></a>Impostazione dei criteri per dispositivi mobili per la propria organizzazione
 
@@ -42,7 +42,7 @@ Le impostazioni dei criteri per dispositivi mobili possono essere configurate al
 ### <a name="start-windows-powershell"></a>Avviare Windows PowerShell
 
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte dell'Teams di PowerShell più recente. Se si usa la versione pubblica più recente Teams PowerShell, non è necessario installare Skype for Business Online Connector.
+> Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
 1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
     
 2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
@@ -118,7 +118,7 @@ Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsMobilit
     
   - [Sei motivi per cui è consigliabile usare Windows PowerShell per gestire Microsoft 365 o Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     

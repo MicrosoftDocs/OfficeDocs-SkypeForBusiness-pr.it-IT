@@ -21,12 +21,12 @@ ms.custom:
 - Setup
 - ms.lync.lac.TenantInMigration
 description: "Informazioni su cosa è possibile e non si può usare nell'interfaccia di amministrazione di Skype for Business e su altre funzionalità durante la migrazione del servizio a un altro data center Microsoft. "
-ms.openlocfilehash: 725a60be96a2d61bcec6367e1a0a33f2bc5dcee6
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: f00f349a42ddea2de1019d206cc2097f1e7b29eaca78e5e0e19c1996f3782f43
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238917"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54300422"
 ---
 # <a name="why-cant-i-use-the-skype-for-business-online-admin-center-right-now"></a>Perché non è possibile usare l'interfaccia di amministrazione di Skype for Business Online in questo momento?
 
@@ -48,7 +48,7 @@ Prima di tutto, diamo un'interruzione di alcuni termini.
     
 - **Migrazione** Questo è più o meno lo stesso di "spostamento". In questo caso, significa che stiamo spostando gli utenti e le impostazioni di Skype for Business Online da un data center a un altro più vicino all'utente per migliorare il servizio.
     
-- **Latenza** Questo è il tempo necessario per accedere all'interfaccia Microsoft 365 di amministrazione, apportare una modifica alle impostazioni e quindi salvare le modifiche.
+- **Latenza** Questo è il tempo necessario per accedere al interfaccia di amministrazione di Microsoft 365, apportare una modifica alle impostazioni e quindi salvare le modifiche.
     
 - **ID correlazione** È possibile che sia stato visualizzato nell'elenco del messaggio da cui si è appena arrivati. Queste informazioni vengono usate dai tecnici del supporto tecnico Microsoft per facilitare la risoluzione di un errore. Se si contatta il supporto Tecnico Microsoft, potrebbe essere richiesto l'ID di correlazione.
     

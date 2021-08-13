@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri di riunione
+title: 'Teams: gestire i criteri delle riunioni'
 author: tonysmit
 ms.author: tonysmit
 manager: serdars
@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare tali impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 09d821eb4a0ae6f1315ff5ff817c4b702512a974
-ms.sourcegitcommit: 32e3bb588abcbeded2d885483384c06706b280eb
+ms.openlocfilehash: 02dd4cdca98f021230aed937317070ba1202d2969b185e624b6910a9dc19e298
+ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2021
-ms.locfileid: "52282793"
+ms.lasthandoff: 08/11/2021
+ms.locfileid: "57850101"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestione dei criteri riunione in Teams
 
@@ -472,7 +472,7 @@ Questo è un criterio per organizzatore. Questa impostazione controlla se gli ut
 |**Utenti dell'organizzazione, organizzazioni attendibili e guest**     |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest e gli utenti di organizzazioni attendibili, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti anonimi attendono nella sala di attesa.   |
 |**Utenti dell’organizzazione e guest**    |Gli utenti autenticati all'interno dell'organizzazione, inclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa. Questa è l'impostazione predefinita.           |
 |**Solo organizzatore**    |Solo gli organizzatori possono accedere direttamente alla riunione senza passare dalla sala di attesa. Tutti gli altri utenti, inclusi quelli autenticati all'interno dell'organizzazione, gli utenti guest, gli utenti di organizzazioni attendibili e gli utenti anonimi devono attendere nella sala di attesa.           |
-|**Utenti dell’organizzazione**  |Gli utenti autenticati all'interno dell'organizzazione, esclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti guest e di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa.|
+|**Utenti dell’organizzazione**  |Gli utenti autenticati all'interno dell'organizzazione, esclusi gli utenti guest, accedono direttamente alla riunione senza passare dalla sala di attesa. Gli utenti guest e gli utenti di organizzazioni attendibili e gli utenti anonimi attendono nella sala di attesa.|
 
 ### <a name="allow-dial-in-users-to-bypass-the-lobby"></a>Consenti agli utenti che chiamano di ignorare la sala di attesa
 

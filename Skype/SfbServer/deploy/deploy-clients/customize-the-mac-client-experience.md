@@ -1,5 +1,5 @@
 ---
-title: Personalizzare l'esperienza client Mac in Skype for Business
+title: Personalizzare l'esperienza del client Mac in Skype for Business
 ms.author: v-cichur
 author: cichur
 manager: serdars
@@ -11,51 +11,51 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: d1d9cfec-e923-4d02-a306-ee40a9114cb8
-description: Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il client Skype for Business su Mac e come modificarle dall'esterno dell'App.
-ms.openlocfilehash: cdbd1c109fffddf6d922657285f60d9b4f06924a
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il Skype for Business sul client Mac e come modificarle dall'esterno dell'app.
+ms.openlocfilehash: bf93b08686ed245fab38364cf9aff4fee0526a8bd496231865640aeb2c6e67f0
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49805756"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54325493"
 ---
-# <a name="customize-the-mac-client-experience-in-skype-for-business"></a>Personalizzare l'esperienza client Mac in Skype for Business
+# <a name="customize-the-mac-client-experience-in-skype-for-business"></a>Personalizzare l'esperienza del client Mac in Skype for Business
  
-Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il client Skype for Business su Mac e come modificarle dall'esterno dell'App.
+Questo articolo descrive le preferenze client e le impostazioni predefinite disponibili per il Skype for Business sul client Mac e come modificarle dall'esterno dell'app.
   
-## <a name="skype-for-business-on-mac-client-preference-settings"></a>Impostazioni delle preferenze del client Skype for Business su Mac
+## <a name="skype-for-business-on-mac-client-preference-settings"></a>Skype for Business delle preferenze del client Mac
 
-Alcune funzionalità e comportamenti disponibili per i client Skype for Business su Mac sono determinati dalle impostazioni delle preferenze nel client. Le preferenze di Skype for Business su Mac si trovano in un file che si trova nei Mac in cui è installato il client Skype for Business che si trova nel percorso seguente: 
+Alcune funzionalità e comportamenti disponibili per l Skype for Business nei client Mac sono determinati dalle impostazioni di preferenza nel client. Le Skype for Business preferenze del Mac si trovano in un file che si trova nei Mac in cui è installato il client Skype for Business nel percorso seguente: 
   
  **~/Library/Containers/com.microsoft.SkypeForBusiness/Data/Library/Preferences/com.microsoft.SkypeForBusiness.plist**
   
-To set these preferences, get to a terminal prompt on the client's Mac and as needed enter defaults write com.microsoft.SkypeForBusiness key commands using the preference keys described in the following table.
+Per impostare queste preferenze, accedere a un prompt del terminale sul Mac del client e, se necessario, immettere valori predefiniti scrivere i comandi dei tasti com.microsoft.SkypeForBusiness usando i tasti di preferenza descritti nella tabella seguente.
   
 **Chiavi di preferenza client**
 
 
 | Chiave | Tipo | Valore | Descrizione |
 |:-----|:-----|:-----|:-----|
-|autoDetectAutoDicoveryURLs    |Bool    |0 = configurazione manuale del server  <br/> 1 = rilevamento automatico del server (impostazione predefinita)    |Specificare in che modo Skype for Business identifica il trasporto e il server da usare durante l'accesso. Se si abilita questa impostazione di criteri, è necessario specificare **internalAutoDiscoveryURL** e **externalAutoDiscoveryURL.**   |
+|autoDetectAutoDicoveryURLs    |Bool    |0 = configurazione manuale del server  <br/> 1 = rilevamento automatico del server (impostazione predefinita)    |Specificare come Skype for Business il trasporto e il server da utilizzare durante l'accesso. Se si abilita questa impostazione dei criteri, è necessario specificare **internalAutoDiscoveryURL** e **externalAutoDiscoveryURL**.   |
 |internalAutoDiscoveryURL    |Stringa    |URL di individuazione automatica completo    |URL di individuazione automatica interno    |
 |externalAutoDiscoveryURL    |Stringa    |URL di individuazione automatica completo    |URL di individuazione automatica esterno    |
 |httpProxyDomain    |Stringa    ||Dominio proxy HTTP    |
 |httpProxyUserName    |Stringa    ||Nome utente proxy HTTP    |
 |httpProxyPassword    |Stringa    ||HTTP Proxy Password    |
-|trustedDomainList    |Matrice    ||Elenco dei domini attendibili per i reindirizzamenti HTTP.    |
-|autoAcceptTimeout    |Numero    |300 (impostazione predefinita)    |Timeout di accettazione automatica per gli utenti senza Cronologia conversazioni sul lato server.    |
+|trustedDomainList    |Array    ||Elenco dei domini attendibili per i reindirizzamenti HTTP.    |
+|autoAcceptTimeout    |Numero    |300 (impostazione predefinita)    |Timeout di accettazione automatica per gli utenti senza cronologia conversazioni sul lato server.    |
 |warnWhenUnknownLocationForE911    |Bool    |0 = Disabilitato  <br/> 1 = Abilitato    |Avvisa l'utente quando compone un numero di emergenza da una posizione sconosciuta.    |
-|sipAddress    |Stringa    ||L'indirizzo SIP (e-mail) usato per accedere a Skype for Business.    |
-|userName    |Stringa    ||UPN (UserName) usato per accedere a Skype for Business.    |
-|userNameInAdvancedOnly    |Bool    |0 = visualizzare il campo Nome utente nella schermata di accesso principale e nella finestra di dialogo Proprietà avanzate  <br/> 1 = visualizzare il campo Nome utente solo nella finestra di dialogo Proprietà avanzate (impostazione predefinita)    |Specificare dove viene visualizzato il campo Nome utente durante l'accesso.    |
+|sipAddress    |Stringa    ||L'indirizzo SIP (Email) utilizzato per accedere a Skype for Business.    |
+|userName    |Stringa    ||UPN (UserName) utilizzato per accedere a Skype for Business.    |
+|userNameInAdvancedOnly    |Bool    |0 = visualizzare il campo Nome utente nella schermata di accesso principale e nella finestra di dialogo Proprietà avanzate  <br/> 1 = visualizzare il campo Nome utente solo nella finestra di dialogo Proprietà avanzate (impostazione predefinita)    |Specificare la posizione in cui viene visualizzato il campo Nome utente durante l'accesso.    |
    
 ### <a name="usage-examples"></a>Esempi di utilizzo
 
-Per aggiungere un singolo dominio (Contoso.com) all'elenco di domini trusted, utilizzare la chiave trustedDomainList come illustrato:
+Per aggiungere un singolo dominio (Contoso.com) all'elenco di domini trusted, è necessario utilizzare la chiave trustedDomainList come illustrato:
   
 defaults write com.microsoft.SkypeForBusiness trustedDomainList -array-add "Contoso.com"
   
-Per aggiungere diversi domini all'elenco di domini trusted, utilizzare la chiave trustedDomainList come illustrato di seguito:
+Per aggiungere diversi domini all'elenco di domini trusted, è necessario utilizzare la chiave trustedDomainList come illustrato di seguito:
   
 defaults write com.microsoft.SkypeForBusiness trustedDomainList -array-add "sfb.com" "abc.com" "test.org"
   

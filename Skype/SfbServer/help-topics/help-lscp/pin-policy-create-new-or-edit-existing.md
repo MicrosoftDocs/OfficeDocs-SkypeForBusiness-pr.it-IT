@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 344b9be6-dd37-46bc-bfa4-5c06f6666aa7
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 7755abf1c8bf6bc6f02664317c112d85936e6e37
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 4fbbb396733733b2bc44a3665f50f32cf9ea52df5494d8e2f2782b6548206d5a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54311424"
 ---
 # <a name="pin-policy-create-new-or-edit-existing"></a>Criteri PIN: crearne di nuovi o modificare quelli esistenti
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare un nuovo criterio PIN in Skype for Business Server 2015](../../manage/authentication/create-a-new-pin-policy.md)
 

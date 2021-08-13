@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 6e7e94c2-1475-4334-b8da-716b24a4c255
 description: I criteri versione client sono composti da una serie di regole versione client, che definiscono le azioni che dovrebbero essere eseguite quando gli utenti tentano di eseguire l'accesso con specifici client o versioni client.
-ms.openlocfilehash: 4c46a93e46e1e07865a466a666a450a766c6897e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: dd35979ce67f33f053e89ea941f5e911733d6f16efa2b6b6a2a10c49d2e63884
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103452"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54314632"
 ---
 # <a name="client-version-rule"></a>Regola versione client
 
@@ -44,7 +44,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 |:-----|:-----|
 |Lync 2013, Lync 2010, Office Communicator  <br/> |OC  <br/> |
 |Lync Web App, Communicator Web Access  <br/> |CWA  <br/> |
-|Lync Phone Edition, Office Communicator Phone  <br/> |OCPhone  <br/> |
+|Lync Telefono Edition, Office Communicator Telefono  <br/> |OCPhone  <br/> |
 |Piattaforma Communicator Phone Edition  <br/> |CPE  <br/> |
 |Piattaforma Unified Communications  <br/> |UCCP  <br/> |
 |Lync 2010 Attendee  <br/> |AOC  <br/> |
@@ -90,7 +90,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
   - **Consenti e aggiorna** Consente al client di accedere e ricevere aggiornamenti da Windows Server Update Service o Microsoft Update. Questa azione è disponibile solo se si seleziona l'agente utente **OC**.
 
     > [!NOTE]
-    > Se si seleziona questa azione, verrà visualizzata una notifica al successivo accesso degli utenti a Skype for Business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
+    > Se si seleziona questa azione, verrà visualizzata una notifica al successivo accesso degli utenti Skype for Business. La notifica indica che è disponibile un aggiornamento, anche se non sono stati ancora rilasciati aggiornamenti per Windows Server Update Service o Microsoft Update. Per evitare confusione, è consigliabile scegliere questa azione solo quando vengono resi disponibili gli aggiornamenti.
 
   - **Consenti con URL** Consente al client di eseguire l'accesso e visualizza un messaggio che indica dove scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 
@@ -100,4 +100,4 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
   - **Blocca con URL** Impedisce al client di eseguire l'accesso e visualizza un messaggio sulla posizione da cui scaricare un'altra versione client. L'URL viene specificato nel campo **URL**.
 
-Per informazioni dettagliate su interoperabilità tra client e versioni client, vedere [Client Interoperability in Lync 2013 Preview](/previous-versions/office/lync-server-2013/lync-server-2013-client-interoperability-in-lync-2013) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'uso delle configurazioni delle versioni client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](/previous-versions/office/lync-server-2013/lync-server-2013-modify-the-default-action-for-clients-not-explicitly-supported-or-restricted) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate sull'interoperabilità tra client e versioni client, vedere [Client Interoperability in Lync 2013 Preview](/previous-versions/office/lync-server-2013/lync-server-2013-client-interoperability-in-lync-2013) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di configurazioni della versione client, vedere [Modify the Default Action for Clients Not Explicitly Supported or Restricted](/previous-versions/office/lync-server-2013/lync-server-2013-modify-the-default-action-for-clients-not-explicitly-supported-or-restricted) nella documentazione relativa alle operazioni.

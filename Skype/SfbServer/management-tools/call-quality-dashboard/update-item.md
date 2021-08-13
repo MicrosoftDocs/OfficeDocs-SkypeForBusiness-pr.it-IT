@@ -11,17 +11,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: b1c15c56-cdae-4f3e-838a-52f0940cf729
-description: "Riepilogo: informazioni sull'operazione Update Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 78da2fa414b4ba266f9e6aba4feac5ff73150062
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Riepilogo: informazioni sull'operazione Update Item, che fa parte di Item Service. Item Service fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: ad615e5b6c6187a51293e86bcf3b1e2ee20c820f8c8c7a48b013d95befd03d87
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49803086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54340802"
 ---
 # <a name="update-item"></a>Update Item
  
-**Riepilogo:** Informazioni sull'operazione Update Item, che fa parte di Item Service. Item Service fa parte dell'API repository per call quality dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server.
+**Riepilogo:** Informazioni sull'operazione Update Item, che fa parte di Item Service. Item Service fa parte dell'API repository per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
   
 L'operazione Update Item fa parte di Item Service nell'API repository per call quality dashboard.
   
@@ -38,9 +38,9 @@ Update Item aggiorna un elemento specifico nel repository.
   
  **Request Headers** -Content-Type: application/json.
   
- **Corpo della richiesta** - JSON.
+ **Request Body** - JSON.
   
-Payload della richiesta di esempio:
+Payload di richiesta di esempio:
   
 ```json
 {
@@ -49,17 +49,17 @@ Payload della richiesta di esempio:
 }
 ```
 
- *content*  Dati in formato JSON da archiviare come nuovo contenuto di un elemento secondario esistente. Tecnicamente, un repository può archiviare qualsiasi contenuto di qualsiasi schema, ma se usato per Call Quality Dashboard, deve essere un report o una query. *type*  Specificare sempre "application/json" per call quality dashboard.
+ *contenuto*  Dati in formato JSON da archiviare come nuovo contenuto di un elemento secondario esistente. Tecnicamente, un repository può archiviare qualsiasi contenuto di qualsiasi schema, ma quando viene utilizzato per call quality dashboard, deve essere un report o una query. *type*  Specifica sempre "application/json" per Call Quality Dashboard.
   
  **Risposta:** la risposta include un codice di stato HTTP e un set di intestazioni di risposta.
   
  **Codice di stato:** un'operazione riuscita restituisce il codice di stato 204 (Nessun contenuto). Se non viene trovato un ID elemento specificato, viene restituito il codice di stato 404 (Non trovato).
   
 > [!IMPORTANT]
-> Lo stato "Nessun contenuto" non è uno stato di errore. Significa che una risposta non ha restituito nulla nel corpo (al contrario, 200 OK restituisce il contenuto nel corpo). Indica che l'elemento è stato aggiornato correttamente. 
+> "Nessun contenuto" non è uno stato di errore. Significa che una risposta non ha restituito nulla nel corpo (al contrario, 200 OK restituisce il contenuto in Body). Indica che l'elemento è stato aggiornato correttamente. 
   
  **Intestazioni risposta** - Nessuna.
   
- **Corpo della risposta** - Nessuno.
+ **Corpo risposta** - Nessuno.
   
 
