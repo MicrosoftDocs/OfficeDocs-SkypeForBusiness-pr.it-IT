@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: f0541273-92b4-41d6-aa24-34ee5c549db8
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per creare una richiesta offline, è necessario innanzitutto creare una richiesta di firma del certificato. Digitare il percorso e il nome del file per la richiesta di firma del certificato nella casella di testo Nome file. È possibile fare clic su Sfoglia per selezionare un percorso in cui creare la richiesta di firma del certificato. Fare clic su Avanti per continuare.
-ms.openlocfilehash: b100737e230a5ea627cfbe1759d010da88fb3eca
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 7883380ecf17c5fdb514c249f598fa231110fac4773af179b4c908ca8a70b8ea
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49801896"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338684"
 ---
 # <a name="certificate-request-certificate-signing-request"></a>Richiesta di certificato (richiesta di firma del certificato)
  

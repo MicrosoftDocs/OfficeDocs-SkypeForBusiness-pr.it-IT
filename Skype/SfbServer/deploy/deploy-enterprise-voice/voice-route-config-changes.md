@@ -1,5 +1,5 @@
 ---
-title: Pubblicare modifiche in sospeso nella configurazione del routing vocale in Skype for Business
+title: Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -15,17 +15,17 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: ff941d0b-fb4b-47d2-b866-6d990ac66b81
-description: 'Riepilogo: informazioni su come rivedere, pubblicare o annullare le modifiche alla configurazione del routing vocale in Skype for Business Server utilizzando il Pannello di controllo di Skype for Business Server.'
-ms.openlocfilehash: 6b75b6a1135cf9abde9551112fc9c29579862a8b
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: 'Riepilogo: informazioni su come rivedere, pubblicare o annullare le modifiche alla configurazione del routing vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.'
+ms.openlocfilehash: 9c9cfd1cfdf1cf58f58cfcbf77abb54f9068609414a3b141b4fb643abcf4ac83
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49830396"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338694"
 ---
-# <a name="publish-pending-changes-to-the-voice-routing-configuration-in-skype-for-business"></a>Pubblicare modifiche in sospeso nella configurazione del routing vocale in Skype for Business
+# <a name="publish-pending-changes-to-the-voice-routing-configuration-in-skype-for-business"></a>Pubblicare le modifiche in sospeso nella configurazione del routing vocale in Skype for Business
  
-**Riepilogo:** Informazioni su come rivedere, pubblicare o annullare le modifiche alla configurazione del routing vocale in Skype for Business Server utilizzando il Pannello di controllo di Skype for Business Server.
+**Riepilogo:** Informazioni su come rivedere, pubblicare o annullare le modifiche alla configurazione del routing vocale in Skype for Business Server utilizzando il Pannello di controllo Skype for Business Server di controllo.
   
 Dopo aver apportato modifiche alle impostazioni di configurazione nelle pagine del gruppo **Routing vocale**, eseguire questa procedura per esaminare, pubblicare o annullare le modifiche in sospeso.
   
@@ -36,13 +36,13 @@ Dopo aver apportato modifiche alle impostazioni di configurazione nelle pagine d
 > Tutte le modifiche in sospeso devono essere pubblicate contemporaneamente eseguendo il comando **Salva tutto**. Non è possibile pubblicare selettivamente le modifiche in sospeso. Prima di pubblicare le modifiche in sospeso, eseguire il comando **Rivedi modifiche di cui non è stato eseguito il commit** e annullare qualsiasi modifica di configurazione che non si desidera pubblicare.
   
 > [!NOTE]
-> Se si esce dalle pagine del gruppo **Routing vocale** prima di eseguire il commit delle modifiche in sospeso, tutte le modifiche in sospeso andranno perse. Tuttavia, è possibile esportare la configurazione corrente (incluse le modifiche in sospeso) in un file di configurazione vocale e quindi importare e pubblicare la configurazione aggiornata. Per informazioni dettagliate, vedere [Esportare o importare un file di](voice-route-configuration-import-export.md)configurazione della route vocale in Skype for Business. 
+> Se si esce dalle pagine del gruppo **Routing vocale** prima di eseguire il commit delle modifiche in sospeso, tutte le modifiche in sospeso andranno perse. Tuttavia, è possibile esportare la configurazione corrente (incluse le modifiche in sospeso) in un file di configurazione vocale e quindi importare e pubblicare la configurazione aggiornata. Per informazioni dettagliate, vedere [Export or import a voice route configuration file in Skype for Business](voice-route-configuration-import-export.md). 
   
 ### <a name="to-review-publish-or-cancel-voice-routing-configuration-changes"></a>Per rivedere, pubblicare o annullare le modifiche di configurazione del routing vocale
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo amministrativo **CsVoiceAdministrator,** **CsServerAdministrator** o **CsAdministrator.**
     
-2. Aprire il Pannello di controllo di Skype for Business Server.
+2. Aprire Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Routing vocale**.
     
@@ -60,6 +60,6 @@ Dopo aver apportato modifiche alle impostazioni di configurazione nelle pagine d
     
 8. Nella finestra di dialogo **Impostazioni di configurazione vocale di cui non è stato eseguito il commit** in cui è visualizzato un elenco delle modifiche in sospeso fare clic su **OK**. 
     
-    Quando il Pannello di controllo di Skype for Business Server ha eseguito il commit delle modifiche, viene visualizzato il messaggio **Configurazione routing vocale** pubblicato correttamente.
+    Quando Skype for Business Server di controllo ha eseguito il commit delle modifiche, viene visualizzato il **messaggio Configurazione routing vocale** pubblicato correttamente.
     
 

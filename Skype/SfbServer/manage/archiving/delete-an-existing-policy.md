@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 8b88bed9-2b37-4caf-b119-48688076e06a
 description: 'Riepilogo: informazioni su come eliminare un criterio di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 2baad7d862b1b6739019a4459492bfb3b67e04cc
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: bee5cb3d48c079f0c918e15c607c163f3f67aea9e1dfed92309700b1795c699d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51095390"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320248"
 ---
 # <a name="delete-an-existing-archiving-policy-in-skype-for-business-server"></a>Eliminare un criterio di archiviazione esistente in Skype for Business Server
 
 **Riepilogo:** Informazioni su come eliminare un criterio di archiviazione per Skype for Business Server.
   
-È possibile eliminare un criterio utente o un criterio sito, ma non il criterio globale. Se si elimina il criterio globale, Skype for Business Server reimposta automaticamente il criterio ai valori predefiniti.
+È possibile eliminare un criterio utente o un criterio sito, ma non il criterio globale. Se si elimina il criterio globale, Skype for Business Server automaticamente il criterio ai valori predefiniti.
   
 ## <a name="delete-a-policy-by-using-the-control-panel"></a>Eliminare un criterio tramite il Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsArchivingAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna. 
     
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Nella barra di navigazione di sinistra fare clic su **Monitoraggio e archiviazione**, quindi scegliere **Criteri di archiviazione**.
     

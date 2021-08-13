@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: d62551b2-1847-4e1b-abe8-683b72aa94d5
-description: Creare o modificare l'orario di ufficio di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: d4a8101749e7fde06fc4c3d88ab343eb6e4d0f1d
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Creare o modificare l'orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 37195633064ab04f3d24f56b09760fb44b2ddd473da316898d1106cc13ef4bc3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103672"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338704"
 ---
 # <a name="optional-define-response-group-business-hours-in-skype-for-business"></a>(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business 
  
-Creare o modificare l'orario di ufficio di Response Group in Skype for Business Server VoIP aziendale.
+Creare o modificare l'orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.
   
 ## <a name="defining-business-hours"></a>Definizione dell'orario di ufficio
 
 Le impostazioni dell'orario di ufficio definiscono quando il flusso di lavoro è disponibile per rispondere alle chiamate e specificano le azioni da eseguire per le chiamate al di fuori dell'orario di ufficio. Gli amministratori Response Group possono utilizzare il cmdlet **New-CsRgsHoursOfBusiness** per creare programmazioni predefinite da utilizzare con qualsiasi numero di Response Group.
   
 > [!TIP]
-> Quando si crea o si modifica un flusso di lavoro, è possibile specificare una pianificazione personalizzata che si applica solo a tale flusso di lavoro. Per informazioni dettagliate, vedere [Progettazione e creazione di flussi di lavoro di Response Group in Skype for Business.](designing-and-creating-response-group-workflows.md) 
+> Quando si crea o si modifica un flusso di lavoro, è possibile specificare una pianificazione personalizzata che si applica solo a tale flusso di lavoro. Per informazioni dettagliate, vedere [Designing and creating response group workflows in Skype for Business](designing-and-creating-response-group-workflows.md). 
   
 > [!NOTE]
 > Se un flusso di lavoro è definito come flusso di lavoro gestito, qualsiasi utente a cui è assegnato il ruolo CsResponseGroupManager può impostare e modificare l'orario di ufficio personalizzato per i flussi di lavoro gestiti. 
@@ -41,7 +41,7 @@ Le impostazioni dell'orario di ufficio definiscono quando il flusso di lavoro è
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Per ogni intervallo univoco di ore che si desidera definire, eseguire:
     

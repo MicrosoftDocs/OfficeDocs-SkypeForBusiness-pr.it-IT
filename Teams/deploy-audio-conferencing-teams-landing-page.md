@@ -21,12 +21,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 92a103262c0d6f997ace41fa0f1d6240452bb8d1
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: de08e353a64d2b82c5d13baaeac54fcb7b2c70e0ca7a94eff31c22f01d1fb93a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54340462"
 ---
 # <a name="learn-how-to-deploy-audio-conferencing-in-microsoft-teams"></a>Scopri come distribuire i servizi di audioconferenza in Microsoft Teams
 
@@ -69,7 +69,7 @@ Teams include un set di ruoli di amministratore personalizzati che è possibile 
 
 ### <a name="conferencing-bridges-and-phone-numbers"></a>Bridge di conferenza e numeri di telefono
 
-I bridge di conferenza consentono agli utenti di comporre accedere alle riunioni tramite un telefono. È possibile usare le impostazioni predefinite per un bridge di conferenza o modificare i numeri di telefono (numeri verdi e a pagamento) e altre impostazioni, come il PIN o le lingue usate.
+I bridge di conferenza consentono alle persone di partecipare alle riunioni tramite chiamata usando un telefono. È possibile usare le impostazioni predefinite per un bridge di conferenza o modificare i numeri di telefono (numeri verdi e a pagamento) e altre impostazioni, come il PIN o le lingue usate.
 
 Per altre informazioni, vedere [Audioconferenza](audio-conferencing-in-office-365.md).
 

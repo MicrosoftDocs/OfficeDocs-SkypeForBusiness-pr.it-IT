@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - PowerShell
 description: Usare il cmdlet Get-CsOnlineUser in Windows PowerShell per ottenere informazioni sugli utenti di Skype for Business online dell'organizzazione.
-ms.openlocfilehash: aec79f589f6b1fb0c9d38fd4bc70421b30f66a56
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 59259a498cdfd08a56d62526631fb3b7b6d38e4a7e03841e939abf5985484f3f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238722"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54323568"
 ---
 # <a name="manage-user-accounts"></a>Gestione degli account utente
 

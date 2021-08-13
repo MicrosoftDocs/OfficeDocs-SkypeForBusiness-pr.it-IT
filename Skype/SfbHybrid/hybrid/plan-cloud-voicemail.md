@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: In questo articolo vengono descritti i vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione del Microsoft Cloud Voicemail servizio. Per informazioni sulla configurazione Cloud Voicemail, vedere Configuring Cloud Voicemail.
-ms.openlocfilehash: cfde9867bcdd4c2b7492f8b50df782a5ca6fe34b
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: f12bd29c51b2ce08c0b4d29a6bce56e3dc22dddca7188cb046e59daaba7cf329
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53509837"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54323678"
 ---
 # <a name="plan-cloud-voicemail-service-for-on-premises-users"></a>Pianificare Cloud Voicemail per gli utenti locali
 
@@ -76,7 +76,7 @@ I requisiti seguenti presuppongono che sia già Skype for Business Server distri
 
 Oltre ai requisiti indicati in precedenza, è necessario configurare i requisiti seguenti per connettersi al servizio Microsoft Cloud Voicemail servizio:
 
-- Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare Cloud Voicemail per gli utenti locali, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
+- Connettività ibrida Se è già stato distribuito Skype for Business Server e si desidera abilitare Cloud Voicemail per gli utenti locali, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
 
    Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) and Configure hybrid connectivity between Skype for Business Server and [Office 365](configure-hybrid-connectivity.md).
 
@@ -86,7 +86,7 @@ Oltre ai requisiti indicati in precedenza, è necessario configurare i requisiti
 
 - Se si dispone di un server Exchange locale, configurare Cloud Voicemail utilizzando la procedura descritta in [Set up Cloud Voicemail for Exchange Server Mailbox Users](/microsoftteams/set-up-phone-system-voicemail#set-up-cloud-voicemail-for-exchange-server-mailbox-users).
 
-## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
+## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità con Skype for Business
 
 Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 2019, è necessario pianificare attentamente la migrazione per garantire un servizio continuo per la messaggistica vocale. Tenere presente quanto segue:
 

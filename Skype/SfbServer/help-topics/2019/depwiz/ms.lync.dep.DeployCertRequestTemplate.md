@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: d00ed98f-46f2-4367-b34c-513e5eafdd06
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina Specifica modello di certificato alternativo consente di definire un modello di certificato diverso dal modello WebServer utilizzato per impostazione predefinita. Selezionare la casella di controllo Usa il modello di certificato alternativo per l'Autorità di certificazione selezionata e quindi specificare il nome del modello di certificato alternativo nella casella di testo Nome modello del certificato. È necessario utilizzare il nome del modello così com'è definito nell'Autorità di certificazione (CA). Fare clic su Indietro per tornare alla pagina precedente. Fare clic su Annulla per terminare il processo di richiesta del certificato.
-ms.openlocfilehash: e030882f44d4010049b12b69cc10d180225bf523
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: b68053a167e74cb9396f2005edd5c5137cca03e0329a30b8e320cae05d4c8b40
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49801736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338664"
 ---
 # <a name="certificate-request-specify-termplate"></a>Richiesta di certificato (specificare modello)
  

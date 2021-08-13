@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c21e8861-bb75-45e8-8485-38daa3b8121c
 description: "Riepilogo: informazioni su come configurare l'opzione di partecipazione alle riunioni senza PIN in Skype for Business Server."
-ms.openlocfilehash: 76a2fb401c684e0eb685b733cb1b0a63ecbd9907
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: b6e31c3befbabacac26595ea0cd73d8ca575816013d30f17ae4b2ea785934f28
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51119395"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54320208"
 ---
 # <a name="configure-pin-less-meeting-join-in-skype-for-business-server"></a>Configurare la partecipazione alle riunioni senza PIN in Skype for Business Server
  

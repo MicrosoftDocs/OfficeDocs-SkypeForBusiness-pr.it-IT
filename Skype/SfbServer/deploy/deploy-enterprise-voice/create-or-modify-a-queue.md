@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: b9d6366a-839f-4651-a01d-9254546cadeb
 description: Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: b355cde0d8a99938538488152276a6c8eb4c6d4b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: d8b875063d37d38ece7a6ec59c9b0bffbb16ee091e31f67087eb2cc0b52616e6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51103582"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54338744"
 ---
 # <a name="create-or-modify-a-queue-in-skype-for-business"></a>Creare o modificare una coda in Skype for Business
  
@@ -31,14 +31,14 @@ Le code contengono i chiamanti fino a quando un agente non risponde alla chiamat
   
 Per creare o modificare una coda, utilizzare una delle procedure illustrate di seguito.
   
-### <a name="to-use-skype-for-business-server-control-panel-to-create-or-modify-a-queue"></a>Per utilizzare il Pannello di controllo di Skype for Business Server per creare o modificare una coda
+### <a name="to-use-skype-for-business-server-control-panel-to-create-or-modify-a-queue"></a>Per utilizzare Skype for Business Server pannello di controllo per creare o modificare una coda
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins oppure come membro di uno dei ruoli amministrativi predefiniti che supportano Response Group.
     
     > [!NOTE]
     > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare o modificare le code di Response Group e assegnarle ai flussi di lavoro gestiti personalmente. 
   
-2. Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server.  
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo.  
     
 3. Sulla barra di spostamento sinistra fare clic su **Response Group** e quindi su **Coda**.
     
@@ -106,7 +106,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     > [!NOTE]
     > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare gruppi di agenti e code, nonché assegnare i gruppi di agenti alle code. 
   
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Creare la richiesta da riprodurre quando viene raggiunta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     
@@ -168,7 +168,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
    $action = New-CsRgsCallAction -Prompt $promptOV -Action Terminate
    ```
 
-7. Recuperare il nome del servizio Response Group e assegnarlo a una variabile. Nella riga di comando digitare il comando seguente:
+7. Recuperare il nome del servizio Response Group Service e assegnarlo a una variabile. Nella riga di comando digitare il comando seguente:
     
    ```powershell
    $serviceId="service:"+(Get-CSService | ?{$_.Applications -Like "*RGS*"}).ServiceId;

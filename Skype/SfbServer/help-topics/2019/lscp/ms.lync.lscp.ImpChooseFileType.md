@@ -15,12 +15,12 @@ localization_priority: Normal
 ms.assetid: 3638cdc8-71dd-4a22-8613-83859af97387
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la finestra di dialogo Seleziona estensioni tipo di file per specificare le estensioni dei tipi di file che si desidera bloccare o consentire rispettivamente selezionando o deselezionando le caselle di controllo accanto alle singole estensioni in Estensioni tipo di file. Fare clic sulla freccia per espandere una categoria e visualizzare tutte le relative estensioni. Per selezionare tutte le estensioni di una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: 08709a2ff2504081ccf0172d3c6d559d6e2693b8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 161b56adf12386d4510d91a83404af68058d3e590a1193c290813f89918c1f65
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49801486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54324405"
 ---
 # <a name="select-file-type-extensions"></a>Selezionare estensioni del tipo di file
  

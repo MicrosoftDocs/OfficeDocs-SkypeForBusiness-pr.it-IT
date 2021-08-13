@@ -16,12 +16,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come gestire l'uso dei tag nell'organizzazione in Microsoft Teams.
-ms.openlocfilehash: ab57fe5a0528ad5e33b20929bd224cb33273197e
-ms.sourcegitcommit: 745b37921a878f1b524a274bfb2fd0732716a5c8
+ms.openlocfilehash: d64b730549a98b597de0f28c53fbe45f793e9f77b5270aa464a722692f59aaae
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/15/2021
-ms.locfileid: "52498781"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54340442"
 ---
 # <a name="manage-tags-in-microsoft-teams"></a>Gestire i tag in Microsoft Teams
 

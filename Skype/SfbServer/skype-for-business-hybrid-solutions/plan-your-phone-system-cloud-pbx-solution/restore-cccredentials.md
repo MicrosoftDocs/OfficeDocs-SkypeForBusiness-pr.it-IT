@@ -12,19 +12,19 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: aeca610b-db0a-45cf-95b9-ae9a6bbccb45
-description: Il cmdlet Restore Cc-Credentials ripristina tutte le credenziali della distribuzione corrente di Skype for Business Cloud Connector Edition.
-ms.openlocfilehash: b2cd35b284bcd7e49aabbaa3055c397915565d09
-ms.sourcegitcommit: e64c50818cac37f3d6f0f96d0d4ff0f4bba24aef
+description: Il cmdlet Restore Cc-Credentials consente di ripristinare tutte le credenziali della distribuzione Skype for Business Cloud Connector Edition corrente.
+ms.openlocfilehash: 95b93e28bb109c26927a940324edef20479bed8c193efea6923c74058995a5bd
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "41824242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54340672"
 ---
 # <a name="restore-cccredentials"></a>Restore-CcCredentials
  
-Il cmdlet Restore Cc-Credentials ripristina tutte le credenziali della distribuzione corrente di Skype for Business Cloud Connector Edition. 
+Il cmdlet Restore Cc-Credentials consente di ripristinare tutte le credenziali della distribuzione Skype for Business Cloud Connector Edition corrente. 
   
-Questo cmdlet si applica a Skype for Business Cloud Connector Edition 2.1.
+Questo cmdlet si applica Skype for Business Cloud Connector Edition 2.1.
   
 ```powershell
 Restore-CcCredentials 
@@ -32,11 +32,11 @@ Restore-CcCredentials
 
 ## <a name="detailed-description"></a>Descrizione dettagliata
 
-Il cmdlet Restore-CcCredentials pulisce tutte le credenziali e richiede di immettere nuovamente tutte le credenziali utilizzate per la distribuzione corrente di Skype for Business Cloud Connector.
+Il cmdlet Restore-CcCredentials pulisce tutte le credenziali e richiede di immettere di nuovo tutte le credenziali utilizzate per la distribuzione corrente Skype for Business Cloud Connector.
   
 ## <a name="parameters"></a>Parametri
 
-None
+Nessuno
   
 ## <a name="input-types"></a>Tipi di input
 
