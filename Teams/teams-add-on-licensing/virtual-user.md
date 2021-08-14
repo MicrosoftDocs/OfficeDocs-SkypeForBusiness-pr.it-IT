@@ -20,12 +20,12 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su come assegnare una licenza Sistema telefonico utente virtuale o una licenza utente Sistema telefonico a pagamento agli account delle risorse dell'organizzazione.
-ms.openlocfilehash: 8e5322ccf7e3e7ad05c499b3dbcfdac65d0dfedb
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 2481d119bd1f053f0836c57d237d34edfbf6e260d9b8be9b9f7d40033dc6282a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51116924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54328941"
 ---
 # <a name="microsoft-365-phone-system--virtual-user-license"></a>Microsoft 365 Sistema telefonico - Licenza utente virtuale
 
@@ -41,7 +41,7 @@ Le organizzazioni con Sistema telefonico con licenza possono assegnare una licen
 L'organizzazione è assegnata Microsoft 365 Sistema telefonico licenze utente virtuale a seconda delle dimensioni complessive. Qualsiasi organizzazione che abbia almeno una licenza Sistema telefonico o abbia aggiunto Sistema telefonico ha 25 licenze utente virtuale disponibili senza costi aggiuntivi. Quando si aggiungono 10 Sistema telefonico licenze utente all'interno dell'organizzazione, viene Microsoft 365 Sistema telefonico: la licenza per l'utente virtuale diventa disponibile.
 
 > [!NOTE]
-> Sistema telefonico è una licenza per componenti aggiuntivi disponibile con Microsoft 365 e Office 365 E1 ed E3. Sistema telefonico è incluso anche nell'ambito delle Microsoft 365 E5, Office 365 E5 e Microsoft 365 Business Voice licenze.
+> Sistema telefonico è una licenza per componenti aggiuntivi disponibile con Microsoft 365 e Office 365 E1 ed E3. Sistema telefonico è incluso anche come parte delle Microsoft 365 E5, Office 365 E5 e Microsoft 365 Business Voice licenze.
 
 Se l'organizzazione usa le licenze Microsoft 365 Sistema telefonico - Virtual User disponibili per la creazione di nodi dell'operatore automatico o della coda di chiamata, è comunque possibile usare le licenze di sistema Telefono a pagamento con un account delle risorse. La maggior parte delle organizzazioni avrà un numero di licenze utente virtuale sufficiente in base al piano di scalabilità. 
 
@@ -65,7 +65,7 @@ Contoso dovrebbe prendere in considerazione la riprogettazione dell'operatore au
 Se si decide di cambiare la licenza dell'account della risorsa da una licenza Sistema telefonico a una licenza Microsoft 365 Sistema telefonico - Utente virtuale:
 
 1. Ottenere la nuova licenza Microsoft 365 Sistema telefonico - Utente virtuale.
-2. Seguire i passaggi collegati nell'Microsoft 365 di amministrazione per [spostare gli utenti in un abbonamento diverso.](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription)
+2. Seguire i passaggi collegati nel centro Amministrazione Microsoft 365 per [spostare gli utenti in un abbonamento diverso.](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription)
 
 > [!WARNING]
 > Rimuovere sempre una licenza Sistema telefonico completa e assegnare la licenza Microsoft 365 Sistema telefonico - Utente virtuale nella stessa attività di licenza. Se si rimuove la vecchia licenza, si salvano le modifiche all'account, si aggiunge la nuova licenza e quindi si salvano di nuovo le impostazioni dell'account, l'account della risorsa potrebbe non funzionare più come previsto. In questo caso, è consigliabile creare un nuovo account delle risorse per la licenza Microsoft 365 Sistema telefonico - Utente virtuale e rimuovere l'account delle risorse danneggiato. 

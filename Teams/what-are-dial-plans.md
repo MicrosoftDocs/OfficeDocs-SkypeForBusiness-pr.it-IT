@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.dialplans.overview
 - Calling Plans
 description: "Informazioni sul tipo di piani di chiamata (piani di chiamata PSTN) disponibili con Teams e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 7d5c004a8ea7d4ce851cfa6717abc2483102ed26b5526b49bcbf69f6d495f2b7
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: cfe90a65fb7e1bbc0aae30cd5d0a0dc052f86cb4
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234411"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
@@ -41,7 +41,7 @@ Vedere [Creare e gestire i dial plan per](create-and-manage-dial-plans.md) crear
 
 L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. I client ottengono il piano di chiamata appropriato tramite le impostazioni di provisioning che vengono fornite automaticamente quando gli utenti a Teams. Gli amministratori possono gestire e assegnare livelli di ambito del piano di chiamata usando l'interfaccia di amministrazione Microsoft Teams o Remote PowerShell.
 
-In Teams esistono due tipi di piani di chiamata: con ambito di servizio e con ambito tenant (per l'organizzazione). Un piano di chiamata con ambito di servizio è definito per ogni paese o area geografica in cui Sistema telefonico disponibile. A ogni utente viene assegnato automaticamente il piano di chiamata del paese di servizio corrispondente alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il piano di chiamata del paese di servizio, ma è possibile creare piani di chiamata con ambito tenant, che aumentano il piano di chiamata del paese di servizio. Quando viene eseguito il provisioning dei client, ottengono un "piano di chiamata efficace", ovvero una combinazione del piano di chiamata del paese di servizio e del piano di chiamata tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
+In Teams esistono due tipi di piani di chiamata: con ambito di servizio e con ambito tenant (per l'organizzazione). Un piano di chiamata con ambito di servizio è definito per ogni paese o area geografica in cui Sistema telefonico è disponibile. A ogni utente viene assegnato automaticamente il piano di chiamata del paese di servizio corrispondente alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il piano di chiamata del paese di servizio, ma è possibile creare piani di chiamata con ambito tenant, che aumentano il piano di chiamata del paese di servizio. Quando viene eseguito il provisioning dei client, ottengono un "piano di chiamata efficace", ovvero una combinazione del piano di chiamata del paese di servizio e del piano di chiamata tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
 
 I piani di chiamata tenant possono essere suddivisi ulteriormente in due ambiti: ambito tenant o ambito utente. Se un tenant definisce e assegna un piano di chiamata con ambito di utente, verrà eseguito il provisioning dell'utente con un piano di chiamata effettivo del piano di chiamata del paese di servizio dell'utente e del piano di chiamata utente assegnato. Se un tenant definisce un piano di chiamata con ambito tenant ma non assegna un piano di chiamata con ambito di utente, verrà eseguito il provisioning dell'utente con un piano di chiamata efficace del piano di chiamata del paese di servizio dell'utente e del piano di chiamata tenant.
 
@@ -115,7 +115,7 @@ Le regole di normalizzazione .NET Framework espressioni regolari per specificare
 
 Per informazioni dettagliate sull'.NET Framework espressioni regolari, vedere .NET Framework [espressioni regolari](/dotnet/standard/base-types/regular-expressions).
 
-Vedere [Creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per creare e gestire regole di normalizzazione per i piani di chiamata del tenant.
+Vedere [Creare e gestire piani di chiamata](create-and-manage-dial-plans.md) per creare e gestire regole di normalizzazione per i piani di chiamata tenant.
 
 > [!NOTE]
 > Le regole di normalizzazione con il primo token come facoltativo non sono attualmente supportate nei dispositivi a 3pip, ad esempio il modello Polycom VVX 601. Se si vogliono applicare regole di normalizzazione con facoltatività su dispositivi a 3pip, è consigliabile creare due regole di normalizzazione invece di una. Ad esempio, la regola ^0? (999)$ deve essere sostituito dalle due regole seguenti: (999)$ (Traduzione:$1) e ^0(999)$ (Traduzione:$1).

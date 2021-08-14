@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.NumberActivationStatePending
 description: La convalida dell'indirizzo è una parte importante della configurazione dei piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: aaf94d1c2536fd96c7162eb29b9cf4b7c7e1a1b3
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: 8e80d272c08aada8020ab39caab0290ef45199f00663c73b1c269318e9b3518b
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52237912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54330590"
 ---
 # <a name="why-is-number-activation-just-pending"></a>Perché l'attivazione dei numeri è in sospeso?
 
@@ -96,7 +96,7 @@ La convalida dell'indirizzo è una parte importante della configurazione dei pia
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
-> Il numero di riferimento verrà elencato nella pagina **Richieste di** servizio nell'Microsoft 365 di amministrazione.
+> Il numero di riferimento verrà elencato nella pagina **Richieste di** servizio nel interfaccia di amministrazione di Microsoft 365.
 
 
 > [!NOTE]

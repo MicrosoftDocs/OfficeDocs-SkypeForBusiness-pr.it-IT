@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 14c19ac6-f91d-41cb-b6a2-e54ed06b9596
 description: L'FQDN hop successivo identifica il server dell'hop successivo a cui l'Edge Server legacy instrada il traffico interno. Digitare il nome di dominio completo (FQDN) del server dell'hop successivo a cui Edge Server indirizza il traffico interno, quindi specificare se si tratta di un Pool Front End o a un Server Director.
-ms.openlocfilehash: 741ad8b959868179af86b7f66d9807941c7cc758
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 2f3578a8e8aa8554931a89842cb97adc7552a30e519c9e1eaa7a769a912e8116
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49835296"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336916"
 ---
 # <a name="legacy-merge-next-hop"></a>Hop successivo per l'unione legacy
  

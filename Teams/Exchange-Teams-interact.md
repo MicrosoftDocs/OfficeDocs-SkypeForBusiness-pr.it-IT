@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2088272756886b210ae99b32f8c3148d237b10ccb367702745f0327cc4e2896
-ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
+ms.openlocfilehash: 167c6534fbb8cade9c45b0d4d44441c3a385fd19
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54590780"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235391"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -64,11 +64,11 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 <sup>6</sup> Solo i contatti nella cartella dei contatti predefinita. L'accesso ad altre cartelle o sottocartelle dei contatti non è supportato.
 
-<sup>7</sup> Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul web](/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nel criterio, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo, quindi l'immagine del profilo non verrà sincronizzata con i team se l'amministratore modifica la foto.
+<sup>7</sup> Teams rispetta l'impostazione del [criterio per la cassetta postale di Outlook sul web](/powershell/module/exchange/client-access/set-owamailboxpolicy), che è configurata dagli amministratori del tenant per controllare se gli utenti possono modificare la propria immagine del profilo. Se l'impostazione **-SetPhotoEnabled** è disattivata nei criteri, gli utenti non possono aggiungere, modificare o rimuovere l'immagine del profilo, quindi l'immagine del profilo non verrà sincronizzata con i team se l'amministratore modifica la foto.
 
 <sup>8</sup> È necessario soddisfare i requisiti elencati nella sezione [Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises).
 
-<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere Cercare Teams chat per gli [utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
+<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere [Cercare Teams dati della chat per gli utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
 
 <sup>10</sup> Gli utenti locali possono usare Teams per aggiornare l'immagine del profilo anche se il Outlook sul criterio cassetta postale `SetPhotoEnabled` Web è impostato su `false` .
 
@@ -110,7 +110,7 @@ Se le cassette postali sono ospitate in locale, per creare e visualizzare riunio
 
 Per abilitare la delega del calendario per questi utenti:
 
-- È inoltre necessario completare i passaggi descritti in Configurare l'integrazione e [OAuth tra Skype for Business Online e Exchange Server;](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises) questi passaggi forniranno all'Teams di pianificazione le autorizzazioni necessarie per confermare le autorizzazioni delegato.
+- È anche necessario completare i passaggi come descritto in [Configurare l'integrazione e OAuth tra Skype for Business Online e Exchange Server;](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises) questi passaggi forniranno all'Teams di pianificazione le autorizzazioni necessarie per confermare le autorizzazioni per i delegati.
  
   > [!NOTE]
   > Il passaggio 2 include l'assegnazione del ruolo ArchiveApplication, che non è obbligatorio per la delega.

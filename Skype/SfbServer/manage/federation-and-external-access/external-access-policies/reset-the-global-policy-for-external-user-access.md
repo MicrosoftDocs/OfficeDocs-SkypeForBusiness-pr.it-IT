@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Non è possibile eliminare completamente un criterio globale. Se si **utilizza l'opzione** Elimina nel criterio globale, vengono ripristinate solo le impostazioni predefinite del criterio globale, che non includono il supporto per le opzioni di accesso degli utenti esterni.
-ms.openlocfilehash: ebdd18d85570156a00cb4b31d36ec5660365223318ed748b799e9100c1deaaa5
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: a60516ce3eef125eb754d8d9635b3112d91d51dd
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848671"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234821"
 ---
 # <a name="reset-the-global-policy-for-external-user-access-in-skype-for-business-server"></a>Reimpostare i criteri globali per l'accesso degli utenti esterni in Skype for Business Server 
 

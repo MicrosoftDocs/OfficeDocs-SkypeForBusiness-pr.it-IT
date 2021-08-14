@@ -14,20 +14,20 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 557c8b5ca5ad4f48a25f20fe717d40635eb53e43dc7e26b29291d37afeb21645
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: c8f0da7d992e0e6da27d3f6a3cf88d012ec29002
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57850131"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235331"
 ---
 # <a name="teams-for-government"></a>Teams per enti pubblici
 
-Usare queste risorse per informazioni su considerazioni specifiche per la distribuzione di Teams in Microsoft 365 per enti pubblici. Quando si è pronti, seguire lo stesso percorso di distribuzione consigliato per Teams descritto [in](../deploy-overview.md)Come implementare Microsoft Teams .
+Usare queste risorse per informazioni su considerazioni specifiche per la distribuzione di Teams in Microsoft 365 per enti pubblici. Quando si è pronti, seguire lo stesso percorso di distribuzione consigliato per Teams descritto in Come [implementare](../deploy-overview.md)Microsoft Teams .
 
 | &nbsp; |&nbsp; |
 | ------------- | ------------- |
-| ![Screenshot dell'icona dell'elenco numerato](../media/list-123-teams.svg)  |  [Pianificare le distribuzioni Microsoft 365 government - GCC pubblica](../plan-for-government-gcc.md) |
+| ![Screenshot dell'icona dell'elenco numerato](../media/list-123-teams.svg)  |  [Pianificare le Microsoft 365 government - GCC di distribuzione](../plan-for-government-gcc.md) |
 | ![Screenshot degli Appunti con l'icona di un elenco di attività](../media/tasks-teams.svg) | [Pianificare Microsoft 365 Government - GCC High](../plan-for-government-gcc-high.md) |
 | ![Screenshot dell'icona degli elementi dell'elenco puntato](../media/task-list-planning-teams.svg)  |  [Pianificare le distribuzioni Microsoft 365 government - DOD](../plan-for-government-dod.md) |
 | ![Screenshot dell'icona della freccia destra](../media/arrow-right-2-teams.svg)  |  [Audioconferenza con Instradamento diretto per GCC High e DoD](../audio-conferencing-with-direct-routing-for-gcch-and-dod.md) |

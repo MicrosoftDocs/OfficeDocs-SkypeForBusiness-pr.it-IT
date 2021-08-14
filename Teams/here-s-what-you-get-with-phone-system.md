@@ -23,21 +23,25 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare Telefono Microsoft sistema per l'azienda. "
-ms.openlocfilehash: ce4be849a1cf57dc47b6d41b84548b1e0e3591cdd2d963e60d5816c833579648
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f1bd1ff71a0f8eec818e005e430618a1ef69b340
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349049"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235021"
 ---
 # <a name="heres-what-you-get-with-phone-system"></a>Vantaggi offerti dal Sistema telefonico
 
 Questo articolo descrive le Sistema telefonico caratteristiche. Per altre informazioni sull'uso di Sistema telefonico come sostituzione pbx (Private Branch Exchange) e sulle opzioni per la connessione alla rete PSTN (Public Switched Telephone Network), vedere Che cos'è [Sistema telefonico](what-is-phone-system-in-office-365.md).
 
-I client sono disponibili per PC, Mac e dispositivi mobili, che offre funzionalità su dispositivi da tablet e telefoni cellulari a PC e telefoni IP desktop. Per altre informazioni, vedere [Ottenere client per Microsoft Teams](get-clients.md).
+I client sono disponibili per PC, Mac e dispositivi mobili, che offre funzionalità su dispositivi da tablet e telefoni cellulari a PC e telefoni IP desktop. Per altre informazioni, vedere [Ottenere i client per Microsoft Teams](get-clients.md).
 
  > [!Note]
 > Per informazioni dettagliate Teams sistemi telefonici su piattaforme diverse, vedere Teams [funzionalità per piattaforma.](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3)
+
+Per usare le Sistema telefonico, l'organizzazione deve avere una Sistema telefonico licenza. Per altre informazioni sulle licenze, vedere [Licenze per i componenti aggiuntivi di Microsoft Teams](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md).
+
+Tenere presente che per la maggior parte delle funzionalità è necessario assegnare la licenza Sistema telefonico e assicurarsi che gli utenti siano "abilitati per la voce". Per assegnare la licenza, usare il [cmdlet Set-CsUser](https://docs.microsoft.com/powershell/module/skype/set-csuser?view=skype-ps) e impostare il **parametro enterprisevoiceenabled** su $true. Alcune funzionalità, ad esempio l'operatore automatico cloud, non richiedono che un utente sia abilitato per la voce. Le eccezioni sono indicate nella tabella seguente.
   
 ## <a name="phone-system-features"></a>Sistema telefonico caratteristiche
 
@@ -48,10 +52,10 @@ Sistema telefonico fornisce le caratteristiche seguenti. Se non diversamente spe
 |**Sistema telefonico funzionalità** <br/> |**Descrizione** <br/> |
 |[Operatori automatici cloud](what-are-phone-system-auto-attendants.md) <br/> |Consente di creare un sistema di menu che consente ai chiamanti esterni e interni di individuare e effettuare o trasferire chiamate a utenti o reparti aziendali dell'organizzazione.  <br/> Si noti che *gli utenti non devono* essere abilitati alla voce per ricevere chiamate dall'operatore automatico. |
 |[Code di chiamata cloud](create-a-phone-system-call-queue.md) <br> |Consente di configurare la modalità di gestione delle code di chiamata per l'organizzazione, ad esempio configurare i messaggi di saluto e la musica in attesa, cercare il successivo agente di chiamata disponibile per gestire la chiamata e così via.  <br/> Si noti che *gli utenti devono* essere abilitati alla voce per ricevere chiamate da una coda di chiamata.|
-|Musica blocco | Riproduce la musica predefinita definita dal servizio quando viene messa in attesa una chiamata esterna dalla rete PSTN (Public Switched Telephone Network). Questa funzionalità funziona per chiamate PSTN-to-Teams uno-a-uno oltre alle chiamate effettuate a una coda di chiamata. Questa funzionalità offre la parità delle notifiche di blocco con altre piattaforme. Questa funzionalità è configurabile dall'amministratore, [ma attualmente solo tramite PowerShell.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) Il blocco musicale non è supportato anche nel trasferimento consultivo di una chiamata PSTN.|
+|Musica blocco | Riproduce la musica predefinita definita dal servizio quando viene messa in attesa una chiamata esterna dalla rete PSTN (Public Switched Telephone Network). Questa funzionalità funziona per le chiamate PSTN-to-Teams chiamate uno-a-uno oltre alle chiamate effettuate a una coda di chiamata. Questa funzionalità offre la parità delle notifiche di blocco con altre piattaforme. Questa funzionalità è configurabile dall'amministratore, [ma attualmente solo tramite PowerShell.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) Il blocco musicale non è supportato anche nel trasferimento consultivo di una chiamata PSTN.|
 |Risposta/avvio della chiamata (per nome e numero)  <br/> |Consente agli utenti di rispondere alle chiamate in ingresso con un tocco e di effettuare chiamate in uscita componendo il numero di telefono completo o facendo clic su un nome nel client.  <br/> |
 |[Opzioni di inoltro di chiamata e squillo simultaneo](https://support.office.com/article/call-forwarding-call-groups-and-simultaneous-ring-in-teams-a88da9e8-1343-4d3c-9bda-4b9615e4183e) <br/> |Consente agli utenti di configurare le regole di inoltro in modo che le chiamate possano essere inoltrate ovunque o che le chiamate possano essere inoltrate ai colleghi o alla segreteria telefonica.  <br/> |
-|[Ritiro della chiamata di gruppo e inoltro al gruppo](call-sharing-and-group-call-pickup.md) <br/> | Consente agli utenti di condividere le chiamate in arrivo con i colleghi in modo che i colleghi possano rispondere alle chiamate che si verificano quando l'utente non è disponibile. Meno disturbante per i destinatari rispetto ad altre forme di condivisione delle chiamate ,ad esempio inoltro di chiamata o squillo simultaneo, perché gli utenti possono configurare la modalità di notifica di una chiamata condivisa in arrivo. |
+|[Ritiro della chiamata di gruppo e inoltro al gruppo](call-sharing-and-group-call-pickup.md) <br/> | Consente agli utenti di condividere le chiamate in arrivo con i colleghi in modo che i colleghi possano rispondere alle chiamate che si verificano quando l'utente non è disponibile. Meno disturbante per i destinatari rispetto ad altre forme di condivisione delle chiamate (ad esempio inoltro di chiamata o squillo simultaneo), perché gli utenti possono configurare la modalità di notifica di una chiamata condivisa in arrivo. |
 |[Trasferire una chiamata e un trasferimento consultivo](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0) <br/> |Consente agli utenti di trasferire le chiamate a un'altra persona. Oppure, se devono uscire dall'ufficio ma vogliono continuare la conversazione, possono trasferire le chiamate dal pc o dal telefono IP al cellulare.  <br/> Si noti che *gli utenti non devono* essere abilitati alla voce per ricevere chiamate trasferite da un altro utente. |
 |[Trasferisci alla segreteria telefonica a metà chiamata*](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0) <br/> | Consente agli utenti di eseguire il trasferimento alla segreteria telefonica durante una chiamata. |
 |[Parcheggio di chiamata e recupero](call-park-and-retrieve.md)  <br/> | Consente agli utenti di mettere una chiamata in attesa nel servizio Teams nel cloud. Quando una chiamata è parcheggiata, il servizio genera un codice univoco per il recupero delle chiamate. L'utente che ha parcheggiato la chiamata o un altro utente può quindi usare il codice e un'app o un dispositivo supportato per recuperare la chiamata. <br/> |
@@ -70,7 +74,7 @@ Sistema telefonico fornisce le caratteristiche seguenti. Se non diversamente spe
 |[Occupato (solo](teams-calling-policy.md) Teams occupato) <br/> | Criteri di chiamata che consentono di configurare la modalità di gestione delle chiamate in arrivo quando un utente è: <ul><li>in una chiamata </li><li>in una conferenza</li><li>ha una chiamata messa in attesa. </li></ul> Il chiamante riceverà una delle risposte seguenti: <ul><li>sentire un segnale di occupato quando il chiamato è sul telefono</li> <li>verrà instradato di conseguenza alle impostazioni senza risposta dell'utente. Un'opzione consente al chiamante di lasciare una segreteria telefonica per l'utente che è già in una chiamata.</li></ul> Il destinatario riceve una notifica di chiamata senza risposta, ma non è in grado di rispondere alle chiamate in arrivo. Questa caratteristica è disabilitata per impostazione predefinita, ma può essere attivata dall'amministratore del tenant.|
 |[Blocco delle chiamate](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f?ui=en-US&rs=en-US&ad=US) <br/> | Consente agli utenti di aggiungere numeri di telefono (PSTN) a un elenco bloccato in modo che la chiamata successiva da tale numero non squilli all'utente.|
 |[Telefoni dell'area comune](set-up-common-area-phones.md) <br/> | Un telefono dell'area comune viene in genere inserito in un'area come una sala d'attesa o una sala riunioni, rendendolo disponibile per più persone. I telefoni dell'area comune sono impostati come dispositivi anziché come utenti e possono accedere automaticamente a una rete.|
-|[Supporto del bypass multimediale](direct-routing-plan-media-bypass.md) (solo Teams direct routing) <br/> | Per migliorare le prestazioni, i supporti multimediali vengono mantenuti tra il Session Border Controller (SBC) e il client invece di inviarlo tramite Telefono Microsoft System. |
+|[Supporto del bypass multimediale](direct-routing-plan-media-bypass.md) (solo per Teams Direct Routing) <br/> | Per migliorare le prestazioni, i supporti multimediali vengono mantenuti tra il Session Border Controller (SBC) e il client invece di inviarlo tramite Telefono Microsoft System. |
 
 
 \* Non è necessario che gli utenti siano abilitati alla segreteria telefonica per usare le funzionalità della segreteria telefonica.

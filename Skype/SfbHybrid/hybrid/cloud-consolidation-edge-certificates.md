@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Questa appendice include la procedura dettagliata per l'aggiornamento del certificato perimetrale nell'ambito del consolidamento cloud per Teams e Skype for Business.
-ms.openlocfilehash: aa360d1c481b2a05b1282ca7538e5cf7b8f8de71
-ms.sourcegitcommit: 9879bc587382755d9a5cd63a75b0e7dc4e15574c
+ms.openlocfilehash: 7370fe6949c471a6aad9b45ee246f1565b43bdb465eba2110a03f53afa69fe28
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/21/2021
-ms.locfileid: "53510417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54330630"
 ---
 # <a name="update-the-edge-certificate"></a>Aggiornare il certificato perimetrale
 

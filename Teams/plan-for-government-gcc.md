@@ -20,12 +20,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9ecc733c181e268dd6092f169e91d2f9acb4ee47
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 989d1cbd469edac8a4d69c9b5ac18f2965ddf21e3d273411f740a82d4ab220f5
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51117834"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54330900"
 ---
 # <a name="plan-for-microsoft-365-government---gcc-deployments"></a>Pianificare distribuzioni Microsoft 365 government - GCC
 
@@ -110,7 +110,7 @@ Determinare i requisiti per la governance e come soddisfarli. Passare a [Pianifi
 
 Dopo aver eseguito l'onboarded a Microsoft 365 Government - GCC, seguire il percorso di distribuzione consigliato descritto [in](./deploy-overview.md)Come implementare Microsoft Teams . Assicurarsi di interagire con il team di adozione e gestione delle modifiche e Teams campioni.
 
-È anche possibile collaborare con [FastTrack](https://www.microsoft.com/fasttrack) o con il partner scelto per l'onboarding del servizio.
+È anche possibile collaborare [con](https://www.microsoft.com/fasttrack) FastTrack o con il partner scelto per l'onboard del servizio.
 
 ## <a name="step-7-deploy-teams-for-meetings-and-voice"></a>Passaggio 7. Distribuire Teams per le riunioni e la voce
 

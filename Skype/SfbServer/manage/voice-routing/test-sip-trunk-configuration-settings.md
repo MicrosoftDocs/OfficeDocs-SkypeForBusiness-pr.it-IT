@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PST), un PBX o un SBC presso il provider di servizi. '
-ms.openlocfilehash: b6154c1f6a608d0cac0084b3c49caf2b7aa630229464d922926f0eeb4ad20f7f
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: d3e327271db0426415137123e58426b18d185403
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848991"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234891"
 ---
 # <a name="skype-for-business-server---test-sip-trunk-configuration-settings"></a>Skype for Business Server - Testare le impostazioni di configurazione dei trunk SIP
 

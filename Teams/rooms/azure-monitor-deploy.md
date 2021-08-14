@@ -15,18 +15,18 @@ ms.collection:
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
 description: Questo articolo illustra come distribuire la gestione dei Microsoft Teams Rooms dispositivi in modo integrato end-to-end con Monitor di Azure.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 6fe149f2d2cb0e6e68ad50c0c9cf1d2328439ff8dc0f43f56646e8a0152da7b8
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: 0031b94f988cb300803617ce75df2d3afebf74e1
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57850311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234241"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con :::no-loc text="Azure Monitor":::
 
 Questo articolo illustra come configurare e distribuire la gestione integrata e end-to-end dei dispositivi :::no-loc text="Microsoft Teams Rooms"::: tramite :::no-loc text="Azure Monitor"::: .
 
-È possibile configurare :::no-loc text="Log Analytics"::: :::no-loc text="Azure Monitor"::: all'interno per fornire telemetria di base e avvisi che consentono di gestire i :::no-loc text="Microsoft Teams Rooms"::: dispositivi delle sale riunioni. Con il maturamento della soluzione di gestione, è possibile decidere di distribuire altri dati e funzionalità di gestione per creare una visualizzazione più dettagliata della disponibilità e delle prestazioni dei dispositivi.
+È possibile configurare :::no-loc text="Log Analytics"::: :::no-loc text="Azure Monitor"::: all'interno per fornire telemetria di base e avvisi che consentono di gestire i :::no-loc text="Microsoft Teams Rooms"::: dispositivi delle sale riunioni. Con il maturare della soluzione di gestione, è possibile decidere di distribuire altri dati e funzionalità di gestione per creare una visualizzazione più dettagliata della disponibilità e delle prestazioni dei dispositivi.
 
 Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report dettagliati sullo stato per la disponibilità dei dispositivi, l'integrità dell'applicazione e dell'hardware e la distribuzione delle versioni delle applicazioni :::no-loc text="Microsoft Teams Rooms"::: e del sistema operativo.
 
@@ -77,7 +77,7 @@ Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc te
 
 ### <a name="install-no-loc-textmicrosoft-monitoring-agents-to-test-devices"></a>Installare :::no-loc text="Microsoft Monitoring"::: agenti per testare i dispositivi
 
-Distribuire l'agente ai dispositivi di test usando le istruzioni fornite :::no-loc text="Microsoft Monitoring"::: Connessione computer al servizio [ :::no-loc text="Windows"::: :::no-loc text="Log Analytics"::: in :::no-loc text="Azure"::: ](/azure/azure-monitor/platform/agent-windows). Questo articolo fornisce informazioni dettagliate sui passaggi per la distribuzione dell'agente per , le istruzioni per ottenere l'ID area di lavoro _ e la chiave primaria * per ottenere i dispositivi connessi alla distribuzione e i passaggi per verificare la connettività dell'agente :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Windows"::: all'istanza. :::no-loc text="Log Analytics":::  * ** :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Azure Monitor"::: :::no-loc text="Log Analytics":::
+Distribuire l'agente ai dispositivi di test usando le istruzioni fornite :::no-loc text="Microsoft Monitoring"::: Connessione computer al servizio [ :::no-loc text="Windows"::: :::no-loc text="Log Analytics"::: in :::no-loc text="Azure"::: ](/azure/azure-monitor/platform/agent-windows). Questo articolo fornisce informazioni dettagliate sui passaggi per la distribuzione dell'agente per , le istruzioni per ottenere l'ID area di lavoro _ e la chiave primaria * per ottenere i dispositivi connessi alla distribuzione e la procedura per verificare la connettività dell'agente :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Windows"::: all'istanza. :::no-loc text="Log Analytics":::  * ** :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Azure Monitor"::: :::no-loc text="Log Analytics":::
 
 ### <a name="generate-sample-no-loc-textmicrosoft-teams-rooms-events"></a>Generare eventi di :::no-loc text="Microsoft Teams Rooms"::: esempio
 
@@ -92,7 +92,7 @@ Dopo la :::no-loc text="Microsoft Monitoring"::: distribuzione dell'agente nei d
     1.  Selezionare l'area di lavoro e passare a **Log** e usare una query per recuperare i record heartbeat che avranno i campi personalizzati per :::no-loc text="Microsoft Teams Rooms"::: .
     2.  Query di esempio: `Event | where Source == "SRS-App" and EventID == 2000`
 
-3.  Assicurarsi che la query restituisca record di log che includono eventi generati :::no-loc text="Microsoft Teams Rooms"::: dall'app riunioni.
+3.  Assicurarsi che la query restituisca i record di log che includono gli eventi generati :::no-loc text="Microsoft Teams Rooms"::: dall'app riunioni.
 
 4.  Generare un problema hardware e verificare che gli eventi necessari siano :::no-loc text="Azure Log Analytics"::: connessi.
     1.  Scollegare uno dei dispositivi periferici nel sistema di :::no-loc text="Microsoft Teams Rooms"::: test. Potrebbe trattarsi della fotocamera, dell'vivavoce, del microfono o dello schermo della sala anteriore
@@ -191,7 +191,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 ### <a name="create-a-tile-that-displays-active-devices"></a>Creare un riquadro che visualizza i dispositivi attivi
 
 1.  Selezionare **Visualizza dashboard** per iniziare ad aggiungere i riquadri.
-2.  Selezionare **Elenco & numeri** dalla raccolta
+2.  Selezionare **Elenco & numero** dalla raccolta
 3.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** Stato heartbeat<br>
     **Nuovo gruppo:** Selezionato
@@ -245,7 +245,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 ### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-operating-system-versions"></a>Creare un riquadro che visualizza le :::no-loc text="Microsoft Teams Rooms"::: versioni del sistema operativo
 
-1.  Selezionare **Donut & list** from the gallery, and then add a new tile.
+1.  Selezionare **Donut & nella** raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** Dettagli del sistema operativo<br>
     **Nuovo gruppo:** Selezionato
@@ -269,7 +269,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 ### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-application-versions"></a>Creare un riquadro che visualizza le versioni :::no-loc text="Microsoft Teams Rooms"::: dell'applicazione
 
-1.  Selezionare **Donut & list** from the gallery, and then add a new tile.
+1.  Selezionare **Donut & nella** raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** :::no-loc text="Microsoft Teams Rooms"::: dettagli dell'applicazione<br>
     **Nuovo gruppo:** Selezionato
@@ -408,7 +408,7 @@ La definizione degli avvisi è stata completata. È possibile definire avvisi ag
 
 Quando viene generato un avviso, viene visualizzato un messaggio di posta elettronica che elenca i dispositivi che hanno riscontrato un problema nell'ultima ora.
 
-! [Messaggio di :::no-loc text="Azure Monitor"::: posta elettronica di avviso di esempio](.. /media/Deploy-Azure-Monitor-6.png "Messaggio di posta elettronica :::no-loc text="Azure Monitor"::: di avviso di esempio")
+! [Messaggio di :::no-loc text="Azure Monitor"::: posta elettronica di avviso di esempio](.. /media/Deploy-Azure-Monitor-6.png "Messaggio di avviso :::no-loc text="Azure Monitor"::: di esempio")
 
 ## <a name="configure-all-devices-for-no-loc-textazure-monitoring"></a>Configurare tutti i dispositivi per :::no-loc text="Azure Monitoring":::
 <a name="configure_all_devices"></a> Dopo aver configurato i dashboard e gli avvisi, è possibile configurare l'agente in tutti i :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Microsoft Teams Rooms"::: dispositivi per completare la distribuzione di monitoraggio.
@@ -489,7 +489,7 @@ Stop-Transcript
 ```
 
 > [!NOTE]
-> È possibile fare [ :::no-loc text="Log Analytics"::: ](/azure/azure-monitor/platform/agent-manage) riferimento all'articolo Gestione e gestione dell'agente quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
+> È possibile fare [ :::no-loc text="Log Analytics"::: ](/azure/azure-monitor/platform/agent-manage) riferimento all'articolo Gestione e manutenzione dell'agente quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
 
 ## <a name="additional-solutions"></a>Altre soluzioni
 <a name="Solutions"> </a>

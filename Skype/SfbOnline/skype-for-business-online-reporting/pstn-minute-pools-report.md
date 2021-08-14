@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: La nuova area Skype for Business report dell'interfaccia di amministrazione mostra le chiamate e le attività di audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report Skype for Business pool di minuti PSTN per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: dae86688a5fb0204802f62d28504c3454613bb3d7f7d23f17d09972b94303390
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: 8c69a0555c95a7cb700b31db04103a0f7f502729
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57850251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234041"
 ---
 # <a name="pstn-minute-pools-report"></a>Report pool minuti PSTN
 
@@ -33,11 +33,11 @@ ms.locfileid: "57850251"
 >[!NOTE]
 >Questo report è disponibile solo per i clienti in anteprima.
 
-La nuova area Skype for Business report dell'interfaccia **di** amministrazione mostra le chiamate e le attività di audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report Skype for Business pool di minuti **PSTN** per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
+La nuova area Skype for Business **report** dell'interfaccia di amministrazione mostra le attività di chiamata e audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report Skype for Business pool di minuti **PSTN** per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
   
 Vedere la [panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
-Questo report, insieme agli altri report Skype for Business, fornisce dettagli sull'attività in tutta l'organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni](/microsoftteams/what-are-communications-credits)
+Questo report, insieme agli altri report Skype for Business, fornisce informazioni dettagliate sulle attività in tutta l'organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
 > È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore al interfaccia di amministrazione di Microsoft 365. 
@@ -49,7 +49,7 @@ Questo report, insieme agli altri report Skype for Business, fornisce dettagli s
 - Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business** di amministrazione Report pool di minuti  >    >    >  **PSTN**.
     
 > [!NOTE]
-> A seconda dell'Microsoft 365 o Office 365 abbonamento, è possibile che non venga visualizzato lo stesso dettaglio illustrato di seguito. 
+> A seconda dell'Microsoft 365 o Office 365 abbonamento, è possibile che non venga visualizzato lo stesso dettaglio illustrato qui. 
   
 ## <a name="interpret-the-skype-for-business-pstn-minute-pools-report"></a>Interpretare il report Skype for Business pool di minuti PSTN
 

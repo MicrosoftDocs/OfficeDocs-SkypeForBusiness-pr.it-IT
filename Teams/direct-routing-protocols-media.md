@@ -17,18 +17,18 @@ f1.keywords:
 description: hHw Direct Routing supporta il bypass multimediale con un Session Border Controller abilitato per ICE Lite.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 15ec422b59cfb19e63acb0c8b2768792d0e4387dc3200db720ec9c0d8d00f67b
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: c32838d282d6f5fff5eb1e85c36d78eee8828d41
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57849531"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234571"
 ---
 # <a name="overview"></a>Panoramica
 
 Questo articolo descrive in che modo il routing diretto supporta il bypass multimediale con un session border controller (SBC) abilitato per ICE Lite, come descritto in [RFC 5245.](https://tools.ietf.org/html/rfc5245) Questo articolo è rivolto agli amministratori vocali responsabili della configurazione della connessione tra il servizio SBC locale e il servizio proxy SIP.
 
-Questo articolo fornisce una panoramica degli scenari e dei requisiti ice Lite per l'interoperabilità. L'articolo descrive i formati dei messaggi e le transizioni della macchina a stati necessarie per garantire un flusso affidabile di chiamate e supporti.
+Questo articolo fornisce una panoramica degli scenari e dei requisiti ice Lite per l'interoperabilità. L'articolo descrive i formati dei messaggi e le transizioni richieste della macchina a stati per garantire un flusso affidabile di chiamate e supporti.
 
 ## <a name="terminology"></a>Terminologia
 
@@ -38,13 +38,13 @@ Questo articolo fornisce una panoramica degli scenari e dei requisiti ice Lite p
 
 - Risposta provvisoria (183) - Gli endpoint del chiamato per una configurazione più rapida della chiamata inviano una risposta con i candidati e i tasti necessari per stabilire il flusso multimediale. Questa operazione viene eseguita in previsione che l'utente risponda potenzialmente alla chiamata(200OK) da quella specifica istanza del chiamato. Con il forking, il chiamante dovrebbe essere pronto a ricevere più risposte provvisorie.
 
-- Re-Invite: offerta con i candidati finali selezionati dall'endpoint di controllo ICE. Questo avrà l'attributo a=remote-candidate per risolvere eventuali condizioni di gara dalla gestione di più forche.
+- Re-Invite: offerta con candidati finali selezionati dall'endpoint di controllo ICE. Questo avrà l'attributo a=remote-candidate per risolvere eventuali condizioni di gara dalla gestione di più forche.
 
 - Teams Endpoint: può trattarsi di un server (Processore multimediale, Inoltro di trasporto) o Teams client.
 
 ## <a name="message-format"></a>Formato del messaggio
 
-L Teams dell'infrastruttura segue l'RFC 5245 per ICE-Lite. Questo implica che tutti i messaggi STUN saranno conformi a [RFC 5389.](https://tools.ietf.org/html/rfc5389)
+L Teams in infrastruttura è conforme allo standard RFC 5245 per ICE-Lite. Questo implica che tutti i messaggi STUN saranno conformi a [RFC 5389.](https://tools.ietf.org/html/rfc5389)
 
 Gli SBC come richiesto da RFC 5389 devono ignorare gli attributi STUN che non riconoscono e continuare a elaborare i messaggi con gli attributi noti. 
 
@@ -91,7 +91,7 @@ SBC deve rispondere a tutte le richieste di controllo della connettività valide
 
 ###  <a name="early-media"></a>Elementi multimediali iniziali
 
-Se è presente un flusso multimediale iniziale, il dispositivo SBC deve eseguire il latch al primo endpoint che avvia lo streaming multimediale. il flusso multimediale può iniziare prima della nomina dei candidati. L'SBC dovrebbe avere il supporto per l'invio di DTMF durante questa fase per abilitare gli scenari IVR/segreteria telefonica. Il SBC deve usare il percorso con la priorità più alta in cui ha ricevuto i controlli se le nomine non sono state completate.
+Se è presente un flusso multimediale iniziale, il dispositivo SBC deve eseguire il latch al primo endpoint che avvia lo streaming multimediale. il flusso multimediale può iniziare prima della nomina dei candidati. L'SBC dovrebbe avere il supporto per l'invio di DTMF durante questa fase per abilitare gli scenari IVR/segreteria telefonica. L'SBC deve usare il percorso con la priorità più alta in cui ha ricevuto i controlli se le nomine non sono state completate.
 
 ### <a name="outbound-call-to-sbc"></a>Chiamata in uscita a SBC
 
@@ -103,7 +103,7 @@ Per supportare i primi media, la SBC può iniziare a trasmettere i contenuti mul
 
 ## <a name="srtp-support-requirements"></a>Requisiti di supporto SRTP
 
-La crittografia SBC deve supportare i AES_CM_128_HMAC_SHA1_80 crittografia SRTP per offrire e rispondere nel formato seguente:
+L'SBC deve supportare i AES_CM_128_HMAC_SHA1_80 crittografia SRTP per offrire e rispondere nel formato seguente:
 
 ```console
 "inline:" <key||salt> ["|" lifetime]

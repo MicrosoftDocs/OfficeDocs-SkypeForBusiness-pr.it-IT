@@ -15,12 +15,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella pagina Criteri di accesso esterno.
-ms.openlocfilehash: 79858592b8ba7dbcee692807bba3d2a472a8579cbc843ddeb96c25c811cc6df7
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: 99daff71590c6296a7f3a68405726c2854afae1c
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235501"
 ---
 # <a name="delete-a-site-or-user-policy-for-external-user-access"></a>Eliminare criteri sito o utente per l'accesso degli utenti esterni
 
@@ -31,7 +31,7 @@ Se sono stati creati o configurati criteri di accesso utente esterno che non si 
   - Ripristinare le impostazioni predefinite per i criteri globali che negano qualsiasi tipo di accesso agli utenti esterni. I criteri globali non possono essere eliminati.
 
 
-È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di controllo di Skype for Business Server nella **pagina Criteri di accesso** esterno. L'eliminazione del criterio globale non lo elimina effettivamente, ma lo reimposta solo alle impostazioni predefinite, che non includono il supporto per le opzioni di accesso degli utenti esterni. Per informazioni dettagliate sulla reimpostazione del criterio globale, vedere [Reset the global policy for external user access](reset-the-global-policy-for-external-user-access.md).
+È possibile eliminare qualsiasi criterio sito o utente elencato nel Pannello di Skype for Business Server nella **pagina Criteri di accesso** esterno. L'eliminazione del criterio globale non lo elimina effettivamente, ma lo reimposta solo alle impostazioni predefinite, che non includono il supporto per le opzioni di accesso degli utenti esterni. Per informazioni dettagliate sulla reimpostazione del criterio globale, vedere [Reset the global policy for external user access](reset-the-global-policy-for-external-user-access.md).
 
 
 ## <a name="to-delete-a-site-or-user-policy-for-external-user-access"></a>Per eliminare criteri sito o utente per l'accesso utente esterno

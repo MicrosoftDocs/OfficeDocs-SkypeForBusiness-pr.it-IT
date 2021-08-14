@@ -26,12 +26,12 @@ description: Scopri le funzionalità di assistenza sanitaria come la telemedicin
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 110eaed40d3e1821ef78c4494238be81be4a382dd08286607af76ba9517eb4cb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: be5f75af292000b108b665391c3b5398ed79bb2c
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344045"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235031"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -63,7 +63,7 @@ I seguenti scenari sono disponibili per le organizzazioni sanitarie:
 | [Modelli di Teams](#teams-templates-for-healthcare-organizations) | Crea team che includano un modello predefinito di impostazioni, canali e app preinstallate per la comunicazione e la collaborazione all'interno di un reparto o tra più reparti in un ospedale. | L'utente deve disporre di una licenza appropriata*.  |
 | [Coordinamento sanitario e collaborazione](#care-coordination-and-collaboration) | I medici e il personale possono collaborare internamente su programmi, documenti, attività e così via.| L'utente deve disporre di una licenza appropriata*. |
 
-*Office 365 A3, A5, E3, e E5, come anche Microsoft 365 Business Standard, A3, A5, E3, e E5 sono supportati. Per altre informazioni sull'assegnazione di una licenza generale di Teams, vedere [Gestire l'accesso degli utenti a Teams](../../user-access.md).
+*Office 365 A3, A5, E3, E5, F1, F3, Microsoft 365 A3, A5, E3 ed E5, Business Standard sono supportati. Per altre informazioni sull'assegnazione di una licenza generale di Teams, vedere [Gestire l'accesso degli utenti a Teams](../../user-access.md).
 
 ## <a name="virtual-visits-and-electronic-healthcare-record-ehr-integration"></a>Integrazione di visite virtuali e cartelle cliniche elettroniche (CCE)
 

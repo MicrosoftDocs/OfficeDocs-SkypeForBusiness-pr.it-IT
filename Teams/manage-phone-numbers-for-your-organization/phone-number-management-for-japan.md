@@ -1,5 +1,5 @@
 ---
-title: Gestione dei numeri di telefono per il Giappone
+title: Telefono gestione dei numeri per il Giappone
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -19,16 +19,16 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Giappone per Microsoft Teams.
-ms.openlocfilehash: 6a5922c866113523a54f55aee823c7529da3d4ac6cb45034354292524a8d9582
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: 713897cbaf38e2e411db67e7b28358a4bd11d9d4
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57849711"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234981"
 ---
-# <a name="phone-number-management-for-japan"></a>Gestione dei numeri di telefono per il Giappone
+# <a name="phone-number-management-for-japan"></a>Telefono gestione dei numeri per il Giappone
 
-In Giappone abbiamo collaborato con SoftBank per l'acquisto e il provisioning di Piani per chiamate per i clienti con un indirizzo di fatturazione in Giappone. SoftBank venderà i piani per le chiamate, fornirà i numeri utente per il Giappone e fornirà il supporto per la gestione dei numeri di telefono. Tuttavia, i numeri di servizio e le licenze per audioconferenze, operatori automatici e code di chiamata verranno comunque venduti e gestiti da Microsoft 365 e Office 365.
+In Giappone abbiamo collaborato con SoftBank per l'acquisto e il provisioning di Piani per chiamate per i clienti con un indirizzo di fatturazione in Giappone. SoftBank venderà i piani per le chiamate, fornirà i numeri utente per il Giappone e fornirà il supporto per la gestione dei numeri di telefono. Tuttavia, i numeri di servizio e le licenze per audioconferenza, operatori automatici e code di chiamata verranno comunque venduti e gestiti da Microsoft 365 e Office 365.
 
 Per altre informazioni sulle [chiamate SoftBank.](https://aka.ms/SoftBankVoicePlan)
 
@@ -40,8 +40,8 @@ Per altre informazioni, vedere [Gestire i numeri di telefono per l'organizzazion
 |:-----|:-----|
 |Ottieni nuovi numeri di telefono per i Piani per chiamate in Giappone.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) nuovi numeri di telefono per gli utenti. Questi numeri saranno aggiunti all'organizzazione in modo che potrai assegnarli ai tuoi utenti. <br/>
 |Ottieni nuovi numeri di telefono di servizio per audioconferenze, operatori automatici e code di chiamata in Giappone.|[Per istruzioni, contattare il Service Desk PTSN.](contact-pstn-service-desk.md)|
-|Trasferire i numeri di telefono a Microsoft 365 o Office 365 per **gli utenti** in Giappone.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) trasferire i numeri di telefono degli utenti. Questi numeri saranno aggiunti all'organizzazione.  <br/> |
-|Trasferire i numeri di telefono a Microsoft 365 o Office 365 per le **code di chiamata** in Giappone.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) trasferire i numeri di telefono del servizio. Questi numeri saranno aggiunti all'organizzazione.|
+|Trasferire i numeri di telefono in Microsoft 365 o Office 365 **per gli utenti** in Giappone.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) trasferire i numeri di telefono degli utenti. Questi numeri saranno aggiunti all'organizzazione.  <br/> |
+|Trasferire i numeri di telefono in Microsoft 365 o Office 365 per le **code di chiamata** in Giappone.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) trasferire i numeri di telefono del servizio. Questi numeri saranno aggiunti all'organizzazione.|
 |Modificare l'indirizzo di emergenza assegnato agli utenti che hanno un numero di telefono del Piano per chiamate.|Contatta [SoftBank Calling per](https://aka.ms/SoftBankVoicePlan) apportare modifiche all'indirizzo di emergenza. Loro aggiorneranno le informazioni per te.|
 |Modificare un numero utente in un numero di servizio. |Attualmente non è supportato quando si usa SoftBank Calling.|
 |Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |

@@ -8,17 +8,16 @@ ms.service: msteams
 audience: admin
 ms.collection:
 - M365-collaboration
-- m365initiative-externalcollab
 ms.reviewer: vinbel
 search.appverid: MET150
 description: Informazioni sulle funzionalità di interoperabilità tra Teams utenti dell'organizzazione e Skype utenti (consumer).
 localization_priority: Normal
-ms.openlocfilehash: 42a6631a70156cf150e175b7c5dd1cd661a84c77f0523e61c9d7b9313e4f81e7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3cef040ac9c4ff399b0a663ae25b29f070eb5300
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235181"
 ---
 # <a name="teams-and-skype-interoperability"></a>Teams e Skype interoperabilità
 
@@ -40,13 +39,13 @@ Ecco una panoramica dell'esperienza di chat e chiamate.
 
 ### <a name="teams-user-starts-a-chat-or-call-with-a-skype-user"></a>Teams utente avvia una chat o una chiamata con un Skype utente
 
-Teams utenti possono cercare un Skype digitando il proprio indirizzo di posta elettronica in una nuova chat o nella barra di ricerca.  L Teams utente può quindi selezionare il Skype nei risultati della ricerca per avviare una chat o una chiamata con loro.
+Teams utenti possono cercare un utente Skype digitando il proprio indirizzo di posta elettronica in una nuova chat o nella barra di ricerca.  L Teams utente può quindi selezionare il Skype nei risultati della ricerca per avviare una chat o una chiamata con loro.
 
 Un Skype può scegliere di non comparire nei risultati della ricerca. In questo caso, non verranno visualizzati nei risultati della ricerca in Teams e Teams gli utenti non saranno in grado di trovarli.
 
 ### <a name="skype-user-starts-a-chat-or-call-with-a-teams-user"></a>Skype utente avvia una chat o una chiamata con un Teams utente
 
-Skype gli utenti possono cercare e avviare una chat con un Teams utente usando il proprio indirizzo di posta elettronica. L Teams utente viene avvisato di avere un nuovo messaggio da un utente di Skype e deve prima accettare il messaggio prima di poter rispondere.
+Skype utenti possono cercare e avviare una chat con un Teams utente usando il proprio indirizzo di posta elettronica. L Teams utente viene avvisato di avere un nuovo messaggio da un utente di Skype e deve prima accettare il messaggio prima di poter rispondere.
 
 - Se l Teams'utente seleziona **Accetta**, la conversazione viene accettata ed entrambi gli utenti possono chattare e chiamarsi.
 - Se l Teams'utente seleziona Blocca **,** la conversazione viene bloccata e i messaggi e le chiamate successivi da quell'Skype utente vengono bloccati.
@@ -57,24 +56,24 @@ Skype gli utenti possono cercare e avviare una chat con un Teams utente usando i
 
 ### <a name="teams-user-blocks-or-unblocks-a-skype-user"></a>Teams utente blocca o sblocca un Skype utente
 
-Dopo che Teams un utente accetta o blocca la richiesta di conversazione iniziale da un utente di Skype, può scegliere di bloccare o sbloccare la persona in qualsiasi momento. Possono farlo nella conversazione o nelle impostazioni di privacy in Teams. Skype gli utenti non sapranno che sono stati bloccati.
+Dopo che un Teams accetta o blocca la richiesta di conversazione iniziale da un utente di Skype, può scegliere di bloccare o sbloccare la persona in qualsiasi momento. Possono farlo nella conversazione o nelle impostazioni di privacy in Teams. Skype gli utenti non sapranno che sono stati bloccati.
 
 Gli utenti Skype bloccati, insieme ad altre persone e ai numeri di telefono PSTN (Public Switched Telephone Network) bloccati da un utente di Teams, sono elencati nell'elenco dei contatti bloccati dell'utente in Teams.
 
 ## <a name="limitations"></a>Limitazioni
 
-- Le conversazioni sono solo testo. Questo significa che non è disponibile una formattazione completa, @mentions, emoji o altre funzionalità di chat disponibili in un'esperienza Teams [chat nativa.](native-chat-for-external-users.md)
+- Le conversazioni sono solo testo. Questo significa che non esiste una formattazione completa, @mentions, emoji o altre funzionalità di chat disponibili in un'esperienza di chat Teams [nativa.](native-chat-for-external-users.md)
 - Le conversazioni sono solo uno-a-uno. Le chat di gruppo non sono supportate.
-- Teams utenti e Skype non possono vedere la presenza degli altri utenti.
+- Teams utenti e Skype non possono vedere la presenza reciproca.
 - La ricerca Skype utenti usando l'ID Skype o il numero di telefono non è supportato.
-- Skype utenti non possono chiamare Teams utenti che configurano l'inoltro di chiamata al numero di un altro utente, a un numero di delegato o a un numero PSTN (Public Switched Telephone Network).  È supportata solo la segreteria telefonica.
+- Skype gli utenti non possono chiamare Teams utenti che configurano l'inoltro di chiamata al numero di un altro utente, a un numero delegato o a un numero PSTN (Public Switched Telephone Network).  È supportata solo la segreteria telefonica.
 - L'escalation di interoperabilità, le chiamate di gruppo e le riunioni non sono supportate.
-- La possibilità per un delegato di chiamare un Skype utente per conto di un Teams non è supportata.
+- La possibilità per un delegato di chiamare un Skype utente per conto di un Teams utente non è supportata.
 - La condivisione dello schermo con la chat non è supportata.
 
-## <a name="set-whether-teams-users-can-communicate-with-skype-users"></a>Impostare se gli Teams utenti possono comunicare con Skype utenti
+## <a name="set-whether-teams-users-can-communicate-with-skype-users"></a>Impostare se Teams utenti possono comunicare con Skype utenti
 
-Gli amministratori usano l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare le impostazioni di accesso esterno per controllare se gli utenti Teams dell'organizzazione possono comunicare con Skype utenti. Per impostazione predefinita, questa funzionalità è attivata per i nuovi tenant. Tuttavia, esiste un prerequisito che il record SRV DNS seguente deve essere configurato dall'amministratore IT se non è già disponibile per il dominio, ad esempio _sipfederationtls.contoso.com.  
+Gli amministratori usano l'interfaccia di amministrazione di Microsoft Teams o PowerShell per configurare le impostazioni di accesso esterno per controllare se gli utenti Teams dell'organizzazione possono comunicare con Skype utenti. Per impostazione predefinita, questa funzionalità è attivata per i nuovi tenant. Tuttavia, esiste un prerequisito che il record SRV DNS seguente deve essere configurato dall'amministratore IT se non è già disponibile per il dominio, ad esempio _sipfederationtls.contoso.com.  
 
 **Servizio**: sipfederationtls<br/>
 **Protocollo**: TCP<br/>
@@ -87,7 +86,7 @@ Se è stato eseguito l'aggiornamento da Skype for Business a Teams, le impostazi
 
 ### <a name="in-the-microsoft-teams-admin-center"></a>Nell'interfaccia di amministrazione di Microsoft Teams
 
-Nell'Microsoft Teams di amministrazione passare a Impostazioni a livello di organizzazione Accesso esterno e quindi attivare Gli utenti possono comunicare con Skype  >   **utenti.** Per istruzioni dettagliate su come configurare questa e altre impostazioni di accesso esterno, vedere Gestire l'accesso esterno [in Teams](./manage-external-access.md#allow-or-block-domains).
+Nell'Microsoft Teams di amministrazione passare a Impostazioni a livello di organizzazione Accesso esterno e quindi attivare Gli utenti possono comunicare con Skype  >   **utenti**. Per istruzioni dettagliate su come configurare questa e altre impostazioni di accesso esterno, vedere Gestire l'accesso esterno [in Teams](./manage-external-access.md#allow-or-block-domains).
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 

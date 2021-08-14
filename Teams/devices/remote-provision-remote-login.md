@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Normal
 search.appverid: MET150
 description: Informazioni su come eseguire il provisioning remoto e accedere per Teams dispositivi Android
-ms.openlocfilehash: b0c2658bac556febb9a4289fc5053c38feec32c343901ee679a744641f9f1144
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4bfc7485ae208a31c59051811d9271323fbf798e
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58235381"
 ---
 # <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per Teams dispositivi Android
 
@@ -43,6 +43,8 @@ L'elenco seguente mostra i requisiti del firmware del dispositivo Android.
 |Teams telefoni|  Poly Trio C60|  7.0.2.1071|
 |Teams telefoni|  CCX400/CCX500/CCX600    |7.0.2.1072|
 |Teams telefoni|  Codici audio C448HD/C450HD/C470HD|   1.10.120|
+|Teams di lavoro|  Crestron 770/1070|  1.004.0115|
+
 
 ## <a name="add-a-device-mac-address"></a>Aggiungere un indirizzo MAC del dispositivo
 
@@ -64,7 +66,7 @@ Nella finestra **Provisioning nuovi dispositivi** è possibile aggiungere manual
 1. Immettere una posizione che consente ai tecnici di identificare la posizione in cui installare i dispositivi.
 1. Al **termine, selezionare** Applica.
 
-### <a name="upload-a-file-to-add-a-device-mac-address"></a>Upload file per aggiungere un indirizzo MAC del dispositivo
+### <a name="upload-a-file-to-add-a-device-mac-address"></a>Upload un file per aggiungere un indirizzo MAC del dispositivo
 
 1. Nella scheda **In attesa di attivazione** selezionare Upload ID **MAC**.
 2. Scaricare il modello di file.
@@ -84,7 +86,7 @@ Nella finestra **Provisioning nuovi dispositivi** è possibile aggiungere manual
 
 Quando il dispositivo è acceso e connesso alla rete, il tecnico esegue il provisioning del dispositivo. Questi passaggi vengono completati nel Teams dispositivo.
 
-1. Il tecnico seleziona **Provisioning del dispositivo** nell'Impostazioni .   
+1. Il tecnico seleziona **Provisioning dispositivo** **nell'Impostazioni**.  
 
    ![Opzione Effettua il provisioning di un nuovo dispositivo dalla scheda Azioni](../media/provision-device1.png)
   
@@ -104,7 +106,7 @@ Il dispositivo di cui è stato eseguito il provisioning viene visualizzato nella
 
    ![Finestra con un elenco di dispositivi pronti per l'accesso.](../media/remote-device1.png)
 
-2. Seguire le istruzioni in **Accedere a un utente** e quindi selezionare **Chiudi.**
+2. Seguire le istruzioni in **Accedi a un utente** e quindi selezionare **Chiudi.**
 
    ![Finestra Accedi a un utente per un singolo dispositivo](../media/sign-in-user.png)
 
