@@ -1,5 +1,5 @@
 ---
-title: Skype for Business Server - Testare le impostazioni di configurazione dei trunk SIP
+title: Testare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,15 +10,15 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: 'Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PST), un PBX o un SBC presso il provider di servizi. '
-ms.openlocfilehash: d3e327271db0426415137123e58426b18d185403
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+description: 'Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi. '
+ms.openlocfilehash: 15e417a03da634efc79aab048eccf4dc64296c309c2d13db0a35d8276dc24ecc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234891"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54351466"
 ---
-# <a name="skype-for-business-server---test-sip-trunk-configuration-settings"></a>Skype for Business Server - Testare le impostazioni di configurazione dei trunk SIP
+# <a name="test-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Testare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
 
 Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi. Queste impostazioni consentono di specificare quanto segue:
 

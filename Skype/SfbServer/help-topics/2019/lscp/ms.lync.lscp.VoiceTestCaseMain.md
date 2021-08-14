@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: d683c9e6-a2e4-4c6c-89d3-b60ed26de592
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 8aa2e01e24648cfa6e924b9124fdf20387e28145
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 18d4cc25bd099a3b6b450f7e1c7da23456c4e66b163735259efbb83f400a8ecf
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51100252"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345903"
 ---
 # <a name="test-voice-routing-test-cases"></a>Test routing vocale: test case
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare un test case di routing vocale](/previous-versions/office/lync-server-2013/lync-server-2013-create-a-voice-routing-test-case)
 

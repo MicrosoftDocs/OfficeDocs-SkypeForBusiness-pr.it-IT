@@ -1,5 +1,5 @@
 ---
-title: Skype for Business Server - Visualizzare informazioni sui singoli trunk SIP
+title: Visualizzare informazioni sui singoli trunk SIP in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,15 +10,15 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 localization_priority: Normal
-description: In Skype for Business Server, è possibile assegnare più trunk a un singolo gateway PSTN. I gateway e i trunk non sono uguali e gli amministratori devono utilizzare il cmdlet Get-CsTrunk per visualizzare le informazioni su un singolo trunk SIP.
-ms.openlocfilehash: 7fe18b07215749e829cfdbd0de08b21c7d6495f0
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+description: In Skype for Business Server, è possibile assegnare più trunk a un singolo gateway PSTN. ciò significa che i gateway e i trunk non sono uguali e gli amministratori devono utilizzare il cmdlet Get-CsTrunk per visualizzare le informazioni su un singolo trunk SIP.
+ms.openlocfilehash: 1fd465bcbf547471f9ca5ead562d8b77976be79621bd4246be85341126577936
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58232671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54351456"
 ---
-# <a name="skype-for-business-server---view-information-about-individual-sip-trunks"></a>Skype for Business Server - Visualizzare informazioni sui singoli trunk SIP
+# <a name="view-information-about-individual-sip-trunks-in-skype-for-business-server"></a>Visualizzare informazioni sui singoli trunk SIP in Skype for Business Server
 
 In Skype for Business Server, è possibile assegnare più trunk a un singolo gateway PSTN. ciò significa che i gateway e i trunk non sono uguali e che gli amministratori devono utilizzare il cmdlet [Get-CsTrunk](/powershell/module/skype/Get-CsTrunk) per visualizzare le informazioni su un singolo trunk SIP.
 

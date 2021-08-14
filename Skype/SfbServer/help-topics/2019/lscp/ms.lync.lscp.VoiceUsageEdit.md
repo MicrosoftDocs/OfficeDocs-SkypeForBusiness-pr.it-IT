@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: db7da46e-60ec-4f5b-b07a-f79284ad12b8
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 00ad7893d7bddca6a08b85390d59b1a0553363e2
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 679ead0e7f919364e1930d001d38b0bbfef9928207fa9aac16b92067a44014cc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51121786"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345843"
 ---
 # <a name="pstn-usage-create-new-or-edit-existing"></a>Utilizzo PSTN: crearne uno nuovo o modificarne uno esistente
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Visualizzare i record di utilizzo PSTN in Skype for Business](../../../deploy/deploy-enterprise-voice/view-pstn-usage-records.md)
 

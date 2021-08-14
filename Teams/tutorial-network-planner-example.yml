@@ -14,37 +14,112 @@ metadata:
   ms.topic: tutorial
   localization_priority: Normal
   ms.collection:
-  - M365-collaboration
+    - M365-collaboration
   ms.custom: seo-marvel-apr2020
-  ms.openlocfilehash: 4b7a7628e80c01f9b173310bc88cd6a9f58a40cb
-  ms.sourcegitcommit: 24ae0c223e9d915c505146d422ad049c88a4ed51
-  ms.translationtype: MT
-  ms.contentlocale: it-IT
-  ms.lasthandoff: 06/19/2021
-  ms.locfileid: "53023257"
 items:
-- durationInMinutes: 2
-  content: "Lo strumento Network Planner è disponibile nell'interfaccia di amministrazione di Teams. Consente di determinare i requisiti di rete per l'organizzazione. Questo scenario di esempio mostra come usare lo strumento per creare siti, persone ed eseguire report per una società denominata Contoso. \n\n## <a name=\"before-you-begin\"></a>Prima di iniziare\n\nSi presuppone che si conosca già l'interfaccia di amministrazione di Teams e che si abbia familiarità con le attività da eseguire per preparare la rete per Teams. Se questo è il primo articolo visualizzato in Network Planner, è consigliabile seguire prima gli articoli seguenti.\n\n- [Preparare la rete dell'organizzazione per Teams](prepare-network.md)\n- [Usare Network Planner per Microsoft Teams](network-planner.md) \n\n## <a name=\"overview-of-contoso-network\"></a>Panoramica della rete Contoso\n\nContoso ha tre posizioni:\n\n- **Sede centrale di Seattle:** Questa è la posizione principale per Contoso. Ha 1000 dipendenti e 25 di loro chiamano solo. Il sito è connesso a Internet e c'è una connessione telefonica locale (PSTN). Contoso ha configurato Il routing diretto per poter usare la connessione telefonica locale con Teams. \n- **Ufficio di Kirkland:** Questa filiale ha 400 dipendenti e 10 chiamano solo. Il sito usa la connessione alla sede centrale sia per il traffico Internet che per quello telefonico (PSTN). Questo ufficio è connesso alla sede centrale di Seattle tramite una connessione WAN.\n- **Denver Office:** Questo ufficio ha 250 dipendenti e 50 solo chiamate. Il sito ha una propria connessione Internet locale, ma non ha una connessione PSTN (Direct Telephone Connection).\n\nIniziamo!\n"
-- title: Aggiungere un piano di rete
-  durationInMinutes: 2
-  content: "Nell'interfaccia di amministrazione di Teams espandere **Impostazioni a livello di organizzazione** e quindi selezionare Pianificazione **reti.** La prima cosa da fare è creare un piano di rete. \n\n1. Fare clic **su Aggiungi piano di rete** \n2. Nel riquadro **Nuovo piano di rete** aggiungere un nome e una descrizione per il piano di rete. Per questo esempio si userà *Contoso1* come nome del piano e il piano *di rete Contoso* come descrizione.\n3. Fare clic **su Salva**\n\n![Aggiungere un nuovo piano di rete](media/network-planner-new-network-plan.png)\n\nDopo aver salvato il piano di rete, questo verrà visualizzato nell'elenco dei piani di rete. \n\n![Elenco dei piani di rete](media/network-planner-network-plans.png)\n"
-- title: Creare persone personalizzate
-  durationInMinutes: 2
-  content: "È quindi necessario creare le persone necessarie per rappresentare gli utenti. Poiché ogni località ha utenti specializzati che effettuano solo chiamate telefoniche, è necessario creare tale persona.\n\n1. Nella pagina Network planner fare clic sulla scheda **Persona e** quindi su + **Persona personalizzata.** \n2. Aggiungere un nome e una descrizione per questa persona, per questo esempio si chiamerà solo *Chiamata.*\n3. Attivare **l'audio** e disattivare tutto il resto in modo che la chiamata sia l'unica autorizzazione attivata.\n4. Fare **clic su** Salva per aggiungere la persona all'elenco.\n\n![Aggiunta di una persona in Pianificazione reti](media/network-planner-add-persona.png)\n"
-- title: Aggiungere siti al piano di rete
-  durationInMinutes: 5
-  content: "A questo punto, è necessario aggiungere i tre siti al piano di rete. La tabella seguente riepiloga le caratteristiche dei percorsi di rete di Contoso.\n\n|Posizione       |Numero totale di dipendenti|Chiamare solo i dipendenti|Connessione Internet       |Connessione PSTN                |Capacità del collegamento WAN   | Capacità del collegamento Internet   |\n|---------------|-------------------------|----------------------|--------------------------|-------------------------------|--------------------|--------------------------|\n|Sede centrale di Seattle     |1000                     |25                    |Internet locale            |PSTN locale con Routing diretto| 200 Mbps           | 500 Mbps                 |\n|Ufficio di Kirkland|400                      |10                    |Internet remoto tramite sede centrale|PSTN remoto tramite sede centrale         | 200 Mbps           | N/D                      |\n|Denver Office  |250                      |50                    |Internet locale            |Nessuna connessione PSTN             | N/D                | 150 Mbps                 |\n\n1. Fare clic sul piano di rete in Network Planner.\n2. Selezionare la **scheda Siti di rete** e fare clic su Aggiungi sito di **rete.**\n\n![Aggiunta di un sito di rete](media/network-planner-add-network-site.png)\n\n3. Usando la tabella precedente, compilare i dettagli per il sito della sede centrale di Seattle. Attivare gli interruttori **ExpressRoute** e **Connesso a WAN.** \n\n![Dettagli del nuovo sito](media/network-planner-add-network-site-2.png)\n\n4. Poiché il sito della sede centrale di Seattle ha connessioni PSTN locali e Internet, è necessario specificare correttamente queste caratteristiche.\n\n![Nuove impostazioni di uscita del sito](media/network-planner-add-network-site-link-capacity.png)\n\n5. Fare **clic su** Salva per completare l'aggiunta del sito della sede centrale di Seattle.\n6. Creare il sito di Denver usando lo stesso processo. La wan non deve essere abilitata. \n7. Poiché il sito di Kirkland sfrutta la connessione alla sede centrale di Seattle sia per la connettività Internet che per la connettività PSTN, è considerato un sito remoto. Quando si crea il sito di Kirkland, è necessario  specificare che è connesso alla WAN e selezionare Remoto sia per l'uscita **Internet** che per l'uscita **PSTN.**\n\n![Impostazioni di uscita del sito remoto](media/network-planner-add-remote-site-egress-kirkland.png)\n"
-- title: Creare un report
-  durationInMinutes: 3
-  content: "Dopo aver aggiunto i siti, è possibile creare un report. La distribuzione degli utenti verrà definita durante la creazione del report.\n\n1. Selezionare la **scheda Report** e quindi fare clic su Avvia **un report.** Verrà aperta la pagina di distribuzione dell'utente. Per iniziare, aggiungere un nome e una descrizione per il report.\n\n![Creazione di un report di Network Planner](media/network-planner-add-report.png)  \n\n2. Quando si avvia un report per la prima volta, il conteggio degli utenti per ogni sito verrà distribuito automaticamente, ad esempio l'80% agli impiegati, il 20% ai lavoratori remoti. Qui è possibile modificare il numero di utenti per ogni persona in modo che corrisponda alla popolazione degli utenti. Si supponga che Contoso abbia la stessa divisione 80/20 tra gli impiegati e i lavoratori remoti per ogni sito. Assicurarsi di fare in modo che le persone che effettuano chiamate esercitino solo il numero di utenti in ufficio. La distribuzione risultante dovrebbe essere simile all'immagine seguente.\n\n![Distribuzione degli utenti tra persone diverse per ogni sito](media/network-planner-persona-distribution-2.png)\n"
-- title: Analizzare l'output del report
-  durationInMinutes: 5
-  content: "Dopo aver generato il report, verrà visualizzata una schermata che mostra i requisiti di larghezza di banda sia come valori complessivi che come valori specifici della modalità. Per impostazione predefinita, la larghezza di banda consentita è impostata su 30%. Modificando questo valore e facendo clic **su Esegui report,** è possibile vedere il diverso impatto sulla larghezza di banda per la rete. Tutte le aree che necessitano di una maggiore larghezza di banda verranno evidenziate in rosso.\n\n![Analisi dei report](media/network-planner-contoso-report-output.png)\n\nNetwork Planner offre anche consigli basati sull'impatto Teams sulla rete. Fare clic sull'icona della visualizzazione suggerimenti per visualizzare i suggerimenti per ogni sito, se disponibili. L'immagine seguente mostra una visualizzazione consigliata di esempio.\n\n![Visualizzazione Suggerimenti](media/network-planner-recommendation-view.png)\n\nQui, si può vedere che attualmente la larghezza di banda del sito di Kirkland deve essere aumentata per ottenere le migliori prestazioni da Teams. \n"
-- title: Risorse aggiuntive
-  durationInMinutes: 1
-  content: >-
-    In questo modo viene completato lo scenario di esempio per Network Planner. È possibile [tornare all'articolo di Network Planner](network-planner.md)oppure consultare le risorse seguenti per altre informazioni su come prepararsi per l'organizzazione per Teams:
+  - durationInMinutes: 2
+    content: |
+      Lo strumento Network Planner è disponibile nell'Teams di amministrazione. Consente di determinare i requisiti di rete per l'organizzazione. Questo scenario di esempio mostra come usare lo strumento per creare siti, persone ed eseguire report per una società denominata Contoso. 
 
-     - [Preparare la rete dell'organizzazione per Microsoft Teams](prepare-network.md)
-     - [Migliorare e monitorare la qualità delle chiamate per Teams](monitor-call-quality-qos.md)
-     - [URL e intervalli di indirizzi IP per Office 365](/office365/enterprise/urls-and-ip-address-ranges)
+      ## <a name="before-you-begin"></a>Prima di iniziare
+
+      Si presuppone che si conosca già l'interfaccia di amministrazione di Teams e che si abbia familiarità con le attività da eseguire per preparare la rete per Teams. Se questo è il primo articolo visualizzato in Network Planner, è consigliabile seguire prima gli articoli seguenti.
+
+      - [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
+      - [Usare Network Planner per Microsoft Teams](network-planner.md) 
+
+      ## <a name="overview-of-contoso-network"></a>Panoramica della rete Contoso
+
+      Contoso ha tre posizioni:
+
+      - **Sede centrale di Seattle:** Questa è la posizione principale per Contoso. Ha 1000 dipendenti e 25 di loro chiamano solo. Il sito è connesso a Internet e c'è una connessione telefonica locale (PSTN). Contoso ha configurato Routing diretto per poter usare la connessione telefonica locale con Teams. 
+      - **Kirkland Office:** Questa filiale ha 400 dipendenti e 10 chiamano solo. Il sito usa la connessione alla sede centrale sia per il traffico Internet che per quello telefonico (PSTN). Questo ufficio è connesso alla sede centrale di Seattle tramite una connessione WAN.
+      - **Denver Office:** Questo ufficio ha 250 dipendenti e 50 solo chiamate. Il sito ha una propria connessione Internet locale, ma non ha una connessione PSTN (Direct Telephone Connection).
+
+      Iniziamo!
+  - title: Aggiungere un piano di rete
+    durationInMinutes: 2
+    content: |
+      Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi selezionare **Pianificazione reti**. La prima cosa da fare è creare un piano di rete. 
+
+      1. Fare clic **su Aggiungi piano di rete** 
+      2. Nel riquadro **Nuovo piano di rete** aggiungere un nome e una descrizione per il piano di rete. Per questo esempio si userà *Contoso1* come nome del piano e il piano *di rete Contoso* come descrizione.
+      3. Fare clic **su Salva**
+
+      ![Aggiungere un nuovo piano di rete](media/network-planner-new-network-plan.png)
+
+      Dopo aver salvato il piano di rete, questo verrà visualizzato nell'elenco dei piani di rete. 
+
+      ![Elenco dei piani di rete](media/network-planner-network-plans.png)
+  - title: Creare persone personalizzate
+    durationInMinutes: 2
+    content: |
+      È quindi necessario creare le persone necessarie per rappresentare gli utenti. Poiché ogni località ha utenti specializzati che effettuano solo chiamate telefoniche, è necessario creare tale persona.
+
+      1. Nella pagina Network planner fare clic sulla scheda **Persona e** quindi su + **Persona personalizzata.** 
+      2. Aggiungere un nome e una descrizione per questa persona, per questo esempio si chiamerà solo *Chiamata.*
+      3. Attivare **l'audio** e disattivare tutto il resto in modo che la chiamata sia l'unica autorizzazione attivata.
+      4. Fare **clic su** Salva per aggiungere la persona all'elenco.
+
+      ![Aggiunta di una persona in Pianificazione reti](media/network-planner-add-persona.png)
+  - title: Aggiungere siti al piano di rete
+    durationInMinutes: 5
+    content: |
+      A questo punto, è necessario aggiungere i tre siti al piano di rete. La tabella seguente riepiloga le caratteristiche dei percorsi di rete di Contoso.
+
+      |Posizione       |Numero totale di dipendenti|Chiamare solo i dipendenti|Connessione Internet       |Connessione PSTN                |Capacità del collegamento WAN   | Capacità del collegamento Internet   |
+      |---------------|-------------------------|----------------------|--------------------------|-------------------------------|--------------------|--------------------------|
+      |Sede centrale di Seattle     |1000                     |25                    |Internet locale            |PSTN locale con Routing diretto| 200 Mbps           | 500 Mbps                 |
+      |Kirkland Office|400                      |10                    |Internet remoto tramite sede centrale|PSTN remoto tramite sede centrale         | 200 Mbps           | N/D                      |
+      |Denver Office  |250                      |50                    |Internet locale            |Nessuna connessione PSTN             | N/D                | 150 Mbps                 |
+
+      1. Fare clic sul piano di rete in Network Planner.
+      2. Selezionare la **scheda Siti di rete** e fare clic su Aggiungi sito di **rete.**
+
+      ![Aggiunta di un sito di rete](media/network-planner-add-network-site.png)
+
+      3. Usando la tabella precedente, compilare i dettagli per il sito della sede centrale di Seattle. Attivare gli interruttori **ExpressRoute** e **Connesso a WAN.** 
+
+      ![Dettagli del nuovo sito](media/network-planner-add-network-site-2.png)
+
+      4. Poiché il sito della sede centrale di Seattle ha connessioni PSTN locali e Internet, è necessario specificare correttamente queste caratteristiche.
+
+      ![Nuove impostazioni di uscita del sito](media/network-planner-add-network-site-link-capacity.png)
+
+      5. Fare **clic su** Salva per completare l'aggiunta del sito della sede centrale di Seattle.
+      6. Creare il sito di Denver usando lo stesso processo. La wan non deve essere abilitata. 
+      7. Poiché il sito di Kirkland sfrutta la connessione alla sede centrale di Seattle sia per la connettività Internet che per la connettività PSTN, è considerato un sito remoto. Quando si crea il sito di Kirkland, è necessario  specificare che è connesso alla WAN e selezionare Remoto sia per l'uscita **Internet** che per l'uscita **PSTN.**
+
+      ![Impostazioni di uscita del sito remoto](media/network-planner-add-remote-site-egress-kirkland.png)
+  - title: Creare un report
+    durationInMinutes: 3
+    content: |
+      Dopo aver aggiunto i siti, è possibile creare un report. La distribuzione degli utenti verrà definita durante la creazione del report.
+
+      1. Selezionare la **scheda Report** e quindi fare clic su Avvia **un report.** Verrà aperta la pagina di distribuzione dell'utente. Per iniziare, aggiungere un nome e una descrizione per il report.
+
+      ![Creazione di un report di Network Planner](media/network-planner-add-report.png)  
+
+      2. Quando si avvia un report per la prima volta, il conteggio degli utenti per ogni sito verrà distribuito automaticamente, ad esempio l'80% agli impiegati, il 20% ai lavoratori remoti. Qui è possibile modificare il numero di utenti per ogni persona in modo che corrisponda alla popolazione degli utenti. Si supponga che Contoso abbia la stessa divisione 80/20 tra gli impiegati e i lavoratori remoti per ogni sito. Assicurarsi di fare in modo che le persone che effettuano chiamate esercitino solo il numero di utenti in ufficio. La distribuzione risultante dovrebbe essere simile all'immagine seguente.
+
+      ![Distribuzione degli utenti tra persone diverse per ogni sito](media/network-planner-persona-distribution-2.png)
+  - title: Analizzare l'output del report
+    durationInMinutes: 5
+    content: |
+      Dopo aver generato il report, verrà visualizzata una schermata che mostra i requisiti di larghezza di banda sia come valori complessivi che come valori specifici della modalità. Per impostazione predefinita, la larghezza di banda consentita è impostata su 30%. Modificando questo valore e facendo clic **su Esegui report,** è possibile vedere il diverso impatto sulla larghezza di banda per la rete. Tutte le aree che necessitano di una maggiore larghezza di banda verranno evidenziate in rosso.
+
+      ![Analisi dei report](media/network-planner-contoso-report-output.png)
+
+      Network Planner offre anche consigli basati sull'impatto Teams sulla rete. Fare clic sull'icona della visualizzazione suggerimenti per visualizzare i suggerimenti per ogni sito, se disponibili. L'immagine seguente mostra una visualizzazione consigliata di esempio.
+
+      ![Visualizzazione Suggerimenti](media/network-planner-recommendation-view.png)
+
+      Qui, si può vedere che attualmente la larghezza di banda del sito di Kirkland deve essere aumentata per ottenere le migliori prestazioni da Teams. 
+  - title: Risorse aggiuntive
+    durationInMinutes: 1
+    content: |
+      In questo modo viene completato lo scenario di esempio per Network Planner. È possibile [tornare all'articolo di Network Planner](network-planner.md)oppure consultare le risorse seguenti per altre informazioni su come prepararsi per l'organizzazione per Teams:
+
+       - [Preparare la rete dell'organizzazione per Microsoft Teams](prepare-network.md)
+       - [Migliorare e monitorare la qualità delle chiamate per Teams](monitor-call-quality-qos.md)
+       - [URL e intervalli di indirizzi IP per Office 365](/office365/enterprise/urls-and-ip-address-ranges)

@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.orgwidesettings.holidays.overview
 - seo-marvel-apr2020
 description: Informazioni su come configurare le festività in Microsoft Teams da usare con gli operatori automatici.
-ms.openlocfilehash: ff87a3888bc98e1794f8074052aae4c0bbe3545d
-ms.sourcegitcommit: 247b2587a60b1609947310ec82d51f47cf829703
+ms.openlocfilehash: c7fa5d44f836e35022acab24c2d4b7ad6c60536295bba7adba8fc568b1560443
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "48993472"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54351746"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 

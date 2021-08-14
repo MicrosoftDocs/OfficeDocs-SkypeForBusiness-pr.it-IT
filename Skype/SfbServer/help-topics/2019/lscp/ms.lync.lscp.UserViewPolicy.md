@@ -14,17 +14,17 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: f259a753-cfdc-4fa7-ba35-6fb812e1552a
 ROBOTS: NOINDEX, NOFOLLOW
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 9465dd6d20a23446594e74ce235bd65da84b2219
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 6d5dd173e722467e055f8b58e921d128609fbe220b33edecc9cb5e3e4d57ff7a
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51097172"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345953"
 ---
 # <a name="users-view-voice-policy"></a>Utenti: visualizzare i criteri vocali
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Creare o modificare un criterio vocale e configurare i record di utilizzo PSTN in Skype for Business](../../../deploy/deploy-enterprise-voice/voice-policy-and-pstn-usage-records.md)
 
