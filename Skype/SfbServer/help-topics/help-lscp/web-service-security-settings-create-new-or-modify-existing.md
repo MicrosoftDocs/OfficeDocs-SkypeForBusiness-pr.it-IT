@@ -1,5 +1,5 @@
 ---
-title: Impostazioni di sicurezza del servizio Web Crea nuovo o Modifica esistente
+title: Sicurezza del servizio Web Impostazioni crearne una nuova o modificarne una esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,17 +14,17 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: eddda5af-ddee-4ded-9c70-a07af0f8d14d
-description: Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
-ms.openlocfilehash: 4364a907f5a0d533cdf0606f3d07632460c25ce9
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
+ms.openlocfilehash: 0835a3a2d1f883e3a91b489e44fd181cb8bc144ff41060c27435fab2817adef4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51099242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54343640"
 ---
 # <a name="web-service-security-settings-create-new-or-modify-existing"></a>Impostazioni di sicurezza dei servizi Web: crearne di nuove o modificare quelle esistenti
 
-Operazione desiderata Fare clic sul collegamento all'attività che si desidera eseguire.
+Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
 - [Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server 2015](../../manage/authentication/web-service-configuration-settings.md)
 

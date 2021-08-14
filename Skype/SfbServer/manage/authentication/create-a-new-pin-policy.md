@@ -13,18 +13,18 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: 8bdf0478-fe9f-4371-93ff-db39381a25db
 description: 'Riepilogo: creare un nuovo criterio PIN in Skype for Business Server.'
-ms.openlocfilehash: b0d1be74e509fbaddfc59250f4f5ce05a2021260
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: a4bacce5d6a3bcaae2d2c114b6b4dd7dfda5bf6147da4ba51c14abd4d10ed1d4
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49828406"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345703"
 ---
 # <a name="create-a-new-pin-policy-in-skype-for-business-server"></a>Creare un nuovo criterio PIN in Skype for Business Server
  
 **Riepilogo:** Creare un nuovo criterio PIN in Skype for Business Server.
   
-È possibile utilizzare la pagina Criteri **PIN** per fornire l'autenticazione pin agli utenti che si connettono a Skype for Business con telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
+È possibile utilizzare la pagina **Criteri PIN** per fornire l'autenticazione PIN (Personal Identification Number) agli utenti che si connettono a Skype for Business telefoni IP. Per utilizzare l'autenticazione tramite PIN, verificare che sia selezionata l'opzione **Abilita autenticazione PIN** nelle impostazioni relative ai servizi Web.
   
 Per creare criteri PIN a livello di utente o di sito, eseguire la procedura seguente. 
   
@@ -32,7 +32,7 @@ Per creare criteri PIN a livello di utente o di sito, eseguire la procedura segu
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello di controllo di Skype for Business Server. 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
     
 3. Sulla barra di spostamento sinistra fare clic su **Sicurezza** e quindi su **Criteri PIN**.
     
@@ -56,7 +56,7 @@ Per creare criteri PIN a livello di utente o di sito, eseguire la procedura segu
     
 11. In **Conteggio cronologia PIN** digitare il numero di PIN che deve creare un utente prima che possa riutilizzare un PIN. Per impostazione predefinita, gli utenti possono riutilizzare i loro PIN.
     
-12. Per consentire modelli comuni di cifre nei PIN, ad esempio "1234" e  "8888", selezionare la casella di controllo Consenti modelli comuni. Se non si seleziona questa opzione, saranno consentiti solo formati complessi di cifre. Per impostazione predefinita, sono consentiti solo formati complessi di cifre.
+12. Per consentire modelli comuni di cifre nei PIN, ad esempio "1234" e "8888", selezionare la **casella** di controllo Consenti modelli comuni. Se non si seleziona questa opzione, saranno consentiti solo formati complessi di cifre. Per impostazione predefinita, sono consentiti solo formati complessi di cifre.
     
     > [!IMPORTANT]
     > È consigliabile evitare di consentire i formati comuni. 

@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Spagna.
-ms.openlocfilehash: bdb2037e68abd64b32faf102e80586f43d8d6f2e
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 5cda42a058e8cf21c5799b70881d5cf52e16f0c70c9cc462e538da0a437a5013
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51101332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54343000"
 ---
 # <a name="availability-in-spain"></a>Disponibilità in Spagna
 

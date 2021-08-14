@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 8659fefa-97f1-4d4a-9628-5c6dae86b244
 description: Eseguire la Rimozione guidata distribuzione solo se si desidera non rendere disponibile l'intera distribuzione. Questa procedura guidata consente di creare una topologia vuota costituita da un singolo Front End Server. Dopo aver eseguito questa procedura guidata e aver pubblicato la topologia vuota, non è possibile ripristinare la topologia originale.
-ms.openlocfilehash: a74209c643c4ff1aaac68e88e58fe015aaff6090
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 63bc45f10f42afc9537f172bf9dcf658617ae8f2ba5666f871b1e7461daeb925
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49818306"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54343550"
 ---
 # <a name="remove-deployment-introduction"></a>Introduzione a Rimuovi distribuzione
  

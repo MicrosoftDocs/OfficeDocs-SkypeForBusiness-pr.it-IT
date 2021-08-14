@@ -1,5 +1,5 @@
 ---
-title: Uso del dashboard di monitoraggio in Skype for Business Server
+title: Utilizzo del dashboard di monitoraggio in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,18 +12,18 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: e00e5783-116f-481f-ad17-3af847d6769a
 description: 'Riepilogo: informazioni sul dashboard di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: 83a04a60e63deb39666ee4d042f74973b7d16d0b
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: f731030d3534af9494a4d70d29b27cc8b3ec95bcd5eede97d3ab3c65c2a54b9f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51118605"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345573"
 ---
-# <a name="using-the-monitoring-dashboard-in-skype-for-business-server"></a>Uso del dashboard di monitoraggio in Skype for Business Server
+# <a name="using-the-monitoring-dashboard-in-skype-for-business-server"></a>Utilizzo del dashboard di monitoraggio in Skype for Business Server
  
 **Riepilogo:** Informazioni sul dashboard di monitoraggio in Skype for Business Server.
   
-Il dashboard di monitoraggio offre agli amministratori una breve panoramica dell'integrità e dell'utilizzo del sistema di Skype for Business Server. Il dashboard è progettato per mostrare una visualizzazione aggregata delle metriche chiave del sistema e per farlo visualizzando:
+Il dashboard di monitoraggio offre agli amministratori una breve panoramica dell'Skype for Business Server dell'integrità del sistema e dell'utilizzo del sistema. Il dashboard è progettato per mostrare una visualizzazione aggregata delle metriche chiave del sistema e per farlo visualizzando:
   
 - Totali per il giorno corrente. Si noti che i valori visualizzati per il giorno corrente rappresentano i dati registrati dalla mezzanotte fino all'ora corrente (in base all'ora locale del server di report). Ciò significa che in genere verranno visualizzati i dati per un giorno parziale e non per un periodo di 24 ore. Se, ad esempio, l'ora locale del server è 8:00, i dati verranno visualizzati in otto ore perché sono presenti otto ore tra la mezzanotte e l'ora corrente delle 8.00.
     
@@ -31,7 +31,7 @@ Il dashboard di monitoraggio offre agli amministratori una breve panoramica dell
     
 - Totali del mese e totali tendenziale degli ultimi sei mesi (solo per l'utilizzo del sistema).
     
-Si noti che è possibile utilizzare il cmdlet [Get-CsReportingConfiguration](/powershell/module/skype/get-csreportingconfiguration?view=skype-ps) per restituire l'URL utilizzato per accedere ai report di monitoraggio di Skype for Business Server:
+Si noti che è possibile utilizzare il cmdlet [Get-CsReportingConfiguration](/powershell/module/skype/get-csreportingconfiguration?view=skype-ps) per restituire l'URL utilizzato per accedere Skype for Business Server report di monitoraggio:
   
 ```PowerShell
 Get-CsReportingConfiguration
@@ -179,7 +179,7 @@ Il dashboard di monitoraggio offre diversi modi per esportare la visualizzazione
     
 - Word
     
-Per esportare la visualizzazione dashboard corrente e i relativi valori, fare clic sull'opzione di esportazione desiderata. Skype for Business Server genera un report nel formato specificato e quindi consente di aprirlo o salvarlo. Nota che, per impostazione predefinita, Skype for Business Server titoli il report **Monitoring Dashboard** e lo salva nella cartella Download. Per assegnare al report un nome diverso o archiviarlo in  una cartella diversa, fare clic sulla freccia accanto al pulsante Salva e quindi su **Salva con nome.** Se stai bene con nome **Monitoring Dashboard** e con il report salvato nella cartella Download puoi semplicemente fare clic sul **pulsante** Salva.
+Per esportare la visualizzazione dashboard corrente e i relativi valori, fare clic sull'opzione di esportazione desiderata. Skype for Business Server viene generato un report nel formato specificato e quindi è possibile aprirlo o salvarlo. Nota che, per impostazione predefinita, Skype for Business Server il report **Monitoring Dashboard** e lo salva nella cartella Download. Per assegnare al report un nome diverso o archiviarlo in  una cartella diversa, fare clic sulla freccia accanto al pulsante Salva e quindi su **Salva con nome.** Se stai bene con nome **Monitoring Dashboard** e con il report salvato nella cartella Download puoi semplicemente fare clic sul **pulsante** Salva.
   
 È possibile che, quando si tenta di  esportare i dati del dashboard, venga visualizzata una finestra di dialogo Avviso di sicurezza insieme al messaggio "Le impostazioni correnti non consentono il download di questo file". In questo caso, eseguire le operazioni seguenti:
   
@@ -187,12 +187,12 @@ Per esportare la visualizzazione dashboard corrente e i relativi valori, fare cl
     
 - Nella scheda **Protezione della** finestra di dialogo Opzioni Internet **fare** clic su **Siti attendibili** e quindi su **Siti.**
     
-- Nella finestra **di dialogo**  Siti attendibili fare clic su Aggiungi per aggiungere Skype for Business Server che esegue i report di Skype for Business Server alle raccolte di siti Web attendibili.
+- Nella finestra **di dialogo**  Siti attendibili fare clic su Aggiungi per aggiungere il Skype for Business Server che esegue Skype for Business Server report alle raccolte di siti Web attendibili.
     
 - Fare **clic su** Chiudi e quindi su **OK.**
     
 Sarà quindi necessario aggiornare il dashboard di monitoraggio prima che le modifiche avranno effetto. A tale scopo, premere F5 o fare clic **sull'icona** Aggiorna nella barra degli strumenti del dashboard. **L'icona** Aggiorna è un cerchio con una coppia di frecce verdi al suo interno.
   
-È inoltre possibile creare un foglio di calcolo di Excel che include feed di dati in tempo reale, che include collegamenti ai dati più recenti del dashboard di monitoraggio. Per creare un file di feed di dati in tempo reale, fare clic sull'icona **arancione** Esporta in feed di dati sulla barra degli strumenti.
+È inoltre possibile creare un foglio Excel che include feed di dati in tempo reale, che include collegamenti ai dati più recenti del dashboard di monitoraggio. Per creare un file di feed di dati in tempo reale, fare clic sull'icona **arancione** Esporta in feed di dati sulla barra degli strumenti.
   
 Se si preferisce stampare il dashboard corrente, fare clic sull'icona della stampante sulla barra degli strumenti.

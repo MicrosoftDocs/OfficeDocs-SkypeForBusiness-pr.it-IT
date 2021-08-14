@@ -1,5 +1,5 @@
 ---
-title: Richiesta di un certificato da parte della Distribuzione guidata
+title: Deployment Wizard Request a Certificate
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -14,16 +14,16 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 68c2046d-c988-4411-bd8b-b3096b4f4f3e
 ROBOTS: NOINDEX, NOFOLLOW
-description: Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server, vedere Installare Skype for Business Server.
-ms.openlocfilehash: fc4ed9685f2048c84f87082c090bd38852174d81
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Per informazioni dettagliate sull'utilizzo della Distribuzione guidata per installare Skype for Business Server, vedere Install Skype for Business Server.
+ms.openlocfilehash: 443a9c581f2fc5bb4ffcd0e88c5444d914408b291c1778b5dda169353e873d88
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49836876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54343790"
 ---
 # <a name="deployment-wizard-request-a-certificate"></a>Distribuzione guidata: richiedere un certificato
  
-Per informazioni dettagliate sull'uso della Distribuzione guidata per installare Skype for Business Server, vedere [Installare Skype for Business Server.](../../../deploy/install/install.md)
+Per informazioni dettagliate sull'utilizzo della Distribuzione guidata per installare Skype for Business Server, vedere [Install Skype for Business Server](../../../deploy/install/install.md).
   
 

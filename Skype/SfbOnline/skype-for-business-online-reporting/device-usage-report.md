@@ -20,12 +20,12 @@ ms.custom:
 - Reporting
 - O365E_ReportsS4BClients
 description: Il dashboard Report mostra la panoramica delle attività in Microsoft 365 o Office 365 prodotti dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile usare il report sull'utilizzo dei dispositivi Skype for Business per visualizzare i dispositivi, inclusi i sistemi operativi e i dispositivi mobili basati su Windows, in cui è installata l'app Skype for Business e che la usano per messaggistica istantanea e riunioni. Per altre informazioni, vedere Report attività nell'interfaccia di amministrazione.
-ms.openlocfilehash: d093e13a4f5895de2b31d00669e3aff3d28eee49
-ms.sourcegitcommit: 7ebcff93ecbdc064414d7110e182b29371ca4f1f
+ms.openlocfilehash: f7a3269b19b2a051bfc6739b1c453bf33c7df1acf2976658a019e75c772d9223
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "52238241"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54342681"
 ---
 # <a name="device-usage-report"></a>Report utilizzo dispositivo
 
@@ -38,7 +38,7 @@ Per altre informazioni, [vedere La](https://support.office.com/article/0d6dfb17-
 Questo report, insieme agli altri report Skype for Business, fornisce dettagli sui tipi di client/dispositivi usati nell'organizzazione. Questi dettagli sono molto utili per indagare, pianificare e prendere altre decisioni aziendali per l'organizzazione.
   
 > [!NOTE]
-> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore all'Microsoft 365 di amministrazione. 
+> È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore al interfaccia di amministrazione di Microsoft 365. 
   
 ## <a name="how-to-get-to-the-skype-for-business-device-usage-report"></a>Come accedere al report sull'utilizzo Skype for Business dispositivo
 

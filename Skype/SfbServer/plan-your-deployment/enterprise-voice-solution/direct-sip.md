@@ -15,19 +15,19 @@ ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 0a37737d-9628-4e36-b27b-c134fa5a3882
-description: Le connessioni SIP dirette sono supportate tra Skype for Business Server ed entrambi i gateway PSTN e IP-PBX in VoIP aziendale.
-ms.openlocfilehash: 7a70a6f3afd303ef5847993240b26b47d1b4ceac
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Le connessioni SIP dirette Skype for Business Server gateway PSTN e IP-PBX in VoIP aziendale.
+ms.openlocfilehash: cac0cf06843ed3bf623bd2d3bbe9e92cf6b32a091fd434ac4d422812cc59e60f
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51096416"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54343370"
 ---
 # <a name="direct-sip-connections-in-skype-for-business-server"></a>Connessioni SIP dirette in Skype for Business Server
 
-Le connessioni SIP dirette sono supportate tra Skype for Business Server ed entrambi i gateway PSTN e IP-PBX in VoIP aziendale.
+Le connessioni SIP dirette Skype for Business Server gateway PSTN e IP-PBX in VoIP aziendale.
 
-È possibile utilizzare connessioni SIP dirette per connettere Skype for Business Server a uno dei seguenti:
+È possibile utilizzare connessioni SIP dirette per connettersi Skype for Business Server a una delle opzioni seguenti:
 
 - IP-PBX
 
@@ -40,7 +40,7 @@ Per implementare una connessione SIP diretta, è fondamentalmente necessario ese
 ### <a name="skype-for-business-server-stand-alone"></a>Skype for Business Server Stand-Alone
 <a name="BKMK_CommunicationsServerStand-Alone"> </a>
 
-Se l'organizzazione usa una delle distribuzioni descritte in questa sezione, è possibile utilizzare Skype for Business Server come unica soluzione di telefonia per parte o per tutta l'organizzazione. In questa sezione vengono descritte in dettaglio le distribuzioni seguenti:
+Se l'organizzazione utilizza una delle distribuzioni descritte in questa sezione, è possibile utilizzare Skype for Business Server come unica soluzione di telefonia per parte o per tutta l'organizzazione. In questa sezione vengono descritte in dettaglio le distribuzioni seguenti:
 
 - **Distribuzione incrementale:** Questa opzione presuppone che tu abbia un'infrastruttura PBX (Private Branch Exchange) esistente e che intendi introdurre VoIP aziendale in modo incrementale a gruppi o team più piccoli all'interno dell'organizzazione.
 
@@ -48,7 +48,7 @@ Se l'organizzazione usa una delle distribuzioni descritte in questa sezione, è 
 
 #### <a name="incremental-deployment"></a>Distribuzione incrementale
 
-Nella distribuzione incrementale, Skype for Business Server è l'unica soluzione di telefonia per singoli team o reparti, mentre il resto degli utenti di un'organizzazione continua a utilizzare un SISTEMA PBX. Questa strategia di distribuzione incrementale consente di introdurre la telefonia IP nell'organizzazione tramite programmi pilota controllati. I gruppi di lavoro le cui esigenze di comunicazione sono meglio servite da Microsoft Unified Communications vengono spostati in VoIP aziendale, mentre altri utenti rimangono nel PBX esistente. È possibile eseguire la migrazione di gruppi di lavoro aggiuntivi VoIP aziendale, in base alle esigenze.
+Nella distribuzione incrementale, Skype for Business Server è l'unica soluzione di telefonia per singoli team o reparti, mentre il resto degli utenti di un'organizzazione continua a utilizzare un SISTEMA PBX. Questa strategia di distribuzione incrementale consente di introdurre la telefonia IP nell'organizzazione tramite programmi pilota controllati. I gruppi di lavoro le cui esigenze di comunicazione sono meglio servite da Microsoft Unified Communications vengono spostati in VoIP aziendale, mentre altri utenti rimangono nel SISTEMA PBX esistente. È possibile eseguire la migrazione di gruppi di lavoro aggiuntivi VoIP aziendale, in base alle esigenze.
 
 L'opzione incrementale è consigliata se si dispone di gruppi di utenti chiaramente definiti che hanno requisiti di comunicazione in comune e che si prestano alla gestione centralizzata. Questa opzione è efficace anche se si dispone di team o reparti distribuiti in aree geografiche ampie, in cui il risparmio in costi a lunga distanza può essere significativo. In realtà, questa opzione è utile per creare team virtuali i cui membri potrebbero essere sparsi in tutto il mondo. È possibile creare, modificare o eliminare tali team in rapida risposta ai cambiamenti dei requisiti aziendali.
 
@@ -68,27 +68,27 @@ In questa topologia, i reparti o i gruppi di lavoro selezionati sono abilitati p
 
 Esistono due configurazioni consigliate per la VoIP aziendale a un'infrastruttura PBX esistente per l'interoperabilità: VoIP aziendale dietro il PBX e VoIP aziendale davanti al PBX.
 
-#### <a name="enterprise-voice-behind-the-pbx"></a>VoIP aziendale dietro il PBX
+#### <a name="enterprise-voice-behind-the-pbx"></a>VoIP aziendale Dietro il PBX
 
 Quando VoIP aziendale viene distribuito dietro il SISTEMA PBX, tutte le chiamate dalla rete PSTN arrivano al SISTEMA PBX, che instrada le chiamate agli utenti di VoIP aziendale a un gateway PSTN e le chiamate agli utenti PBX al PBX.
 
-#### <a name="enterprise-voice-in-front-of-the-pbx"></a>VoIP aziendale davanti al PBX
+#### <a name="enterprise-voice-in-front-of-the-pbx"></a>VoIP aziendale front-of-the-PBX
 
-Quando VoIP aziendale viene distribuito davanti al PBX, tutte le chiamate arrivano al gateway PSTN, che instrada le chiamate per gli utenti di VoIP aziendale a Skype for Business Server e le chiamate per gli utenti PBX al PBX. Le chiamate alla rete PSTN da utenti VoIP aziendale e PBX vengono instradati attraverso la rete IP al gateway PSTN più efficiente in termini di costi. Nella tabella seguente vengono illustrati i vantaggi e gli svantaggi di questa configurazione.
+Quando VoIP aziendale viene distribuito davanti al SISTEMA PBX, tutte le chiamate arrivano al gateway PSTN, che instrada le chiamate degli utenti di VoIP aziendale a Skype for Business Server e le chiamate per gli utenti PBX al PBX. Le chiamate alla rete PSTN da utenti VoIP aziendale e PBX vengono instradati attraverso la rete IP al gateway PSTN più efficiente. Nella tabella seguente vengono illustrati i vantaggi e gli svantaggi di questa configurazione.
 
 **Vantaggi e svantaggi della distribuzione di VoIP aziendale front-of-PBX**
 
 |**Vantaggi**|**Svantaggi**|
 |:-----|:-----|
-|Pbx serve ancora gli utenti non abilitati per VoIP aziendale.  <br/> |I gateway esistenti potrebbero non supportare le funzionalità o la capacità desiderate.  <br/> |
+|PBX continua a servire gli utenti non abilitati per VoIP aziendale.  <br/> |I gateway esistenti potrebbero non supportare le funzionalità o la capacità desiderate.  <br/> |
 |Pbx gestisce tutti i dispositivi precedenti.  <br/> |Richiede un trunk dal gateway al PBX e dal gateway al Mediation Server. Potrebbero essere necessari più trunk dal provider di servizi.  <br/> |
 |VoIP aziendale utenti mantengono gli stessi numeri di telefono.  <br/> | <br/> |
 
 #### <a name="voip-only-deployment"></a>VoIP-Only distribuzione
 
-VoIP aziendale offre alle nuove aziende, e anche ai nuovi siti di ufficio per le aziende esistenti, l'opportunità di implementare una soluzione VoIP completa senza doversi preoccupare dell'integrazione PBX o sostenere i costi sostanziali di distribuzione e manutenzione di un'infrastruttura IP-PBX. Questa soluzione supporta sia i lavoratori locali che i lavoratori remoti.
+VoIP aziendale offre alle nuove aziende, e anche ai nuovi siti di ufficio per le aziende esistenti, l'opportunità di implementare una soluzione VoIP completa senza doversi preoccupare dell'integrazione PBX o sostenere i costi di distribuzione e manutenzione sostanziali di un'infrastruttura IP-PBX. Questa soluzione supporta sia i lavoratori locali che i lavoratori remoti.
 
-In questa distribuzione tutte le chiamate vengono instradati sulla rete IP. Le chiamate alla rete PSTN vengono instradati al gateway PSTN appropriato. Skype for Business o Lync Phone Edition funge da softphone. Il controllo delle chiamate remote non è disponibile e non è necessario perché non sono disponibili telefoni PBX che gli utenti possono controllare. I servizi di segreteria telefonica e operatore automatico sono disponibili tramite la distribuzione facoltativa della messaggistica unificata di Exchange.
+In questa distribuzione tutte le chiamate vengono instradati sulla rete IP. Le chiamate alla rete PSTN vengono instradati al gateway PSTN appropriato. Skype for Business o Lync Telefono Edition funge da softphone. Il controllo delle chiamate remote non è disponibile e non è necessario perché non sono disponibili telefoni PBX che gli utenti possono controllare. I servizi di segreteria telefonica e operatore automatico sono disponibili tramite la distribuzione facoltativa Exchange messaggistica unificata.
 
 > [!NOTE]
 > Oltre all'infrastruttura di rete necessaria per supportare Skype for Business Server, una distribuzione solo VoIP può utilizzare un gateway qualificato di piccole dimensioni per supportare i fax e i dispositivi analogici.
@@ -126,7 +126,7 @@ Ecco le principali domande da considerare. Tenere presente che le risposte a que
 
 I Mediation Server possono instradare le chiamate attraverso più gateway, session border controller (SBC) forniti dai provider di servizi di telefonia Internet o una combinazione dei due. Inoltre, più Mediation Server nel pool possono interagire con più gateway. La route logica definita tra un Mediation Server e un gateway è denominata trunk. Quando un utente interno esegue una chiamata PSTN, la logica di routing in uscita nel pool Front End sceglie il trunk da instradare al di fuori di tutte le possibili combinazioni disponibili per il routing di quella particolare chiamata. Con il bilanciamento del carico DNS, se una chiamata non riesce a raggiungere un gateway a causa di un problema con un Mediation Server specifico nel pool, la chiamata verrà ritentata a un Mediation Server alternativo nel pool.
 
-Per informazioni dettagliate sulla pianificazione di più gateway, vedere [Trunk M:N in Skype for Business Server.](m-n-trunk.md)
+Per informazioni dettagliate sulla pianificazione di più gateway, vedere [Trunk M:N in Skype for Business Server](m-n-trunk.md).
 
 Per informazioni dettagliate su altri miglioramenti del routing in uscita, vedere [Call Routes.](/previous-versions/office/lync-server-2013/lync-server-2013-voice-routes)
 

@@ -14,26 +14,26 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 84bbd899-4ce1-4b3b-9bdb-a08cefb626d3
-description: Definire le proprietà degli archivi SQL Server per il nuovo pool Front End che si sta configurando.
-ms.openlocfilehash: 4a7dca6a9cb3d33a63d65e82459fb5cdab86703d
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: Definire le proprietà dei SQL Server per il nuovo pool Front End che si sta configurando.
+ms.openlocfilehash: 06f48b4f515db23980fb5aedbd701a43cb8c5854bff630586f059bc52e9de6f3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49824066"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54343590"
 ---
 # <a name="add-front-end-sql-store-page-for-lync-server-2010"></a>Pagina per l'aggiunta dell'archivio SQL per Front End Server per Lync Server 2010
  
-Definire le proprietà degli archivi SQL Server per il nuovo pool Front End che si sta configurando.
+Definire le proprietà dei SQL Server per il nuovo pool Front End che si sta configurando.
   
 > [!IMPORTANT]
-> Se si sta configurando un server Standard Edition, questa finestra di dialogo verrà visualizzata ma non sarà possibile configurare le impostazioni. Fare clic su **Avanti** per continuare.
+> Se si sta configurando un server edizione Standard, questa finestra di dialogo verrà visualizzata ma non sarà possibile configurare le impostazioni. Fare clic su **Avanti** per continuare.
   
 Impostazioni che è possibile configurare:
   
-- **Utilizzare un archivio SQL Server** definito in precedenza: selezionare un archivio SQL Server esistente nell'elenco per l'archivio pool Front End.
+- **Use a previously defined SQL Server store**: Select an existing SQL Server store from the list for the Front End pool store.
     
-- Selezionare **Definisci un nuovo SQL Server di archiviazione per** creare un nuovo SQL Server store.
+- Seleziona **Definisci un nuovo SQL Server store** per creare un nuovo SQL Server store.
     
     Digitare il nome di dominio completo della SQL Server in **SQL Server FQDN**
     

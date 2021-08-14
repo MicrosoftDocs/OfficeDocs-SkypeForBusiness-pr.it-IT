@@ -1,5 +1,5 @@
 ---
-title: Rapporto Elenco chiamate Response Group in Skype for Business Server
+title: Rapporto elenco chiamate di Response Group in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,24 +12,24 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: a2d3e08b-511b-4507-abba-8ff71aa27c8e
 description: "Riepilogo: informazioni sull'applicazione Response Group in Skype for Business Server."
-ms.openlocfilehash: 416a0e7b7a7aebaeae84a00c04a7ab5c4e1a5bf8
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 0761e58027260a4528f7764858ba54d00b4a9c146f32945222a4ed6763912b0e
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49826496"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345693"
 ---
-# <a name="response-group-call-list-report-in-skype-for-business-server"></a>Rapporto Elenco chiamate Response Group in Skype for Business Server
+# <a name="response-group-call-list-report-in-skype-for-business-server"></a>Rapporto elenco chiamate di Response Group in Skype for Business Server
 
 **Riepilogo:** Informazioni sull'applicazione Response Group in Skype for Business Server.
 
-L'applicazione Response Group consente a Skype for Business Server di rispondere e instradare le chiamate telefoniche in base al numero composto e, facoltativamente, alle risposte del chiamante a una serie di domande. In genere, le chiamate a Response Group non vengono instradate a una singola persona ma piuttosto a un team di persone definito gruppo di agenti. Ad esempio, se qualcuno chiama il numero di telefono dell'help desk, Skype for Business Server può instradare automaticamente la chiamata al primo agente dell'help desk disponibile. In alternativa, Skype for Business Server potrebbe porre una serie di domande ("Premere 1 se si verificano problemi hardware. Premere 2 in caso di problemi software. Premere 3 se si verificano problemi di rete.") e quindi instradare la chiamata all'agente del supporto tecnico più appropriato in base alla risposta a tali domande.
+L'applicazione Response Group consente a Skype for Business Server di rispondere e instradare le chiamate telefoniche in base al numero composto e, facoltativamente, alle risposte del chiamante a una serie di domande. In genere, le chiamate a Response Group non vengono instradate a una singola persona ma piuttosto a un team di persone definito gruppo di agenti. Ad esempio, se qualcuno chiama il numero di telefono dell'help desk, Skype for Business Server instradare automaticamente la chiamata al primo agente dell'help desk disponibile. In alternativa, Skype for Business Server può porre una serie di domande ("Premere 1 se si verificano problemi hardware. Premere 2 in caso di problemi software. Premere 3 se si verificano problemi di rete.") e quindi instradare la chiamata all'agente dell'help desk più appropriato in base alla risposta a tali domande.
 
 Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un determinato tipo effettuate per un determinato periodo di tempo. Il Rapporto di utilizzo di Response Group, che deve essere aperto prima di poter aprire il Rapporto Elemento chiamate Response Group, riconosce i tipi di chiamate seguenti:
 
 - **Chiamate ricevute**. Numero totale di chiamate ricevute da tutte le istanze dell'applicazione Response Group.
 
-- **Chiamate riuscite**. Numero totale di chiamate che sono state prese dall'applicazione Response Group.
+- **Chiamate riuscite**. Numero totale di chiamate prese dall'applicazione Response Group.
 
 - **Chiamate offerte**. Numero totale di chiamate trasferite a un agente Response Group.
 
@@ -41,7 +41,7 @@ Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un det
 
 ## <a name="accessing-the-response-group-call-list-report"></a>Accesso al Rapporto Elenco chiamate Response Group
 
-È possibile accedere al Rapporto Elenco chiamate Response Group solo facendo clic su una delle metriche seguenti disponibili nel [Rapporto utilizzo Response Group in Skype for Business Server:](response-group-usage-report.md)
+È possibile accedere al Rapporto elenco chiamate di Response Group solo facendo clic su una delle metriche seguenti disponibili nel [Rapporto utilizzo Response Group in Skype for Business Server](response-group-usage-report.md):
 
 - Chiamate ricevute
 
@@ -57,7 +57,7 @@ Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un det
 
 Il Rapporto Elenco chiamate Response Group consente di limitare i dati visualizzati alle chiamate che interessano un particolare flusso di lavoro di Response Group. A tale scopo, è necessario immettere l'URI del flusso di lavoro, ovvero l'indirizzo SIP del flusso di lavoro, nella casella URI flusso di lavoro. Prima di poter immettere tali informazioni, è tuttavia necessario che la casella URI flusso di lavoro sia visibile. Per visualizzare le opzioni di filtro per il Rapporto Elenco chiamate Response Group, fare clic sul pulsante Mostra/Nascondi parametri nella parte superiore sinistra della finestra del rapporto.
 
-Si noti che nell'elenco chiamate Response Group non vengono visualizzate informazioni relative al codice di risposta o all'ID diagnostica posizionando il puntatore del mouse su una di queste metriche. Se sono necessarie ulteriori informazioni, è possibile prendere nota del codice di risposta e/o dell'ID diagnostica e quindi cercare tali valori nel Rapporto errori principali [in Skype for Business Server.](top-failures-report.md)
+Si noti che nell'elenco chiamate Response Group non vengono visualizzate informazioni relative al codice di risposta o all'ID diagnostica posizionando il puntatore del mouse su una di queste metriche. Se sono necessarie ulteriori informazioni, è possibile prendere nota del codice di risposta e/o dell'ID diagnostica e quindi cercare tali valori nel Rapporto errori principali [in Skype for Business Server](top-failures-report.md).
 
 Per sapere ad esempio quale singolo flusso di lavoro ha ricevuto il maggior numero di chiamate, è possibile eseguire le operazioni seguenti:
 

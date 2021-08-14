@@ -18,12 +18,12 @@ description: Informazioni sui diversi modelli di identità per Microsoft Teams, 
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: dff34a6a56294c8c62295e143f753777875bfbda
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: cea02bf51c474e9be7aca205aa73fd9558f03ad104e5e1a1bde8f5ddc39e95ff
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51112362"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54342980"
 ---
 # <a name="identity-models-and-authentication-for-microsoft-teams"></a>Modelli di identità e autenticazione per Microsoft Teams
 
@@ -44,7 +44,7 @@ Se non è ancora stato distribuito un Microsoft 365 o Office 365 e un modello di
 |Modello di identità |Elenco di controllo per la distribuzione  |Informazioni aggiuntive  |
 |---------|---------|---------|
 |All     |<ol type="1"><li>Confrontare Microsoft 365 e Office 365 piano e ottenere un abbonamento e un tenant.</li><li>Creare una Microsoft 365 o Office 365 per il tenant.</li><li>Acquistare Microsoft 365 o Office 365 licenze per il tenant</li><li>Configurare domini e account utente di amministratore.</li></ol>  |<ul><li>[Office 365 del piano](/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)</li><li>[Confronto Microsoft 365 piani per le aziende](https://go.microsoft.com/fwlink/?linkid=854617)</li><li>[Acquistare o rimuovere licenze di abbonamento](https://support.office.com/article/Buy-licenses-for-your-Office-365-for-business-subscription-36081d8d-b3fa-4948-8c34-e217bba825e1)</li><li>[Aggiungere licenze a un abbonamento](https://support.office.com/article/Add-licenses-to-a-subscription-paid-for-using-a-product-key-4fb4bd7e-3920-4ce0-98fb-0c06e3fedf53)</li><li>[Configurare Microsoft 365 per le aziende](https://support.office.com/Article/set-up-Office-365-for-business-6a3a29a0-e616-4713-99d1-15eda62d04fa)</li><li>[Aggiungere un dominio con la configurazione guidata](https://support.office.com/article/Add-users-and-domain-with-the-setup-wizard-6383f56d-3d09-4dcb-9b41-b5f5a5efd611)</li></ul><br>[Microsoft FastTrack](https://www.microsoft.com/fasttrack/microsoft-365) è disponibile per aiutarti.  |
-|Identità cloud     |<ul><li>Creare account utente con l'interfaccia Microsoft 365 di amministrazione</li></ul> |<ul style="list-style-type:none"><li>[Aggiungere utenti e assegnare licenze](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)</li></ul> |
+|Identità cloud     |<ul><li>Creare account utente con il interfaccia di amministrazione di Microsoft 365</li></ul> |<ul style="list-style-type:none"><li>[Aggiungere utenti e assegnare licenze](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec)</li></ul> |
 |Identità ibrida     |<ol type="1"><li>Installare Azure AD Connessione.</li><li>Configurare la sincronizzazione della directory.</li><li>Gestire utenti e gruppi con gli strumenti di Servizi di dominio Active Directory.</li></ol> |<ul style="list-style-type:none"><li>[Configurare la sincronizzazione della directory](/microsoft-365/enterprise/set-up-directory-synchronization)</li></ul> |
 |Identità ibrida con autenticazione federata    |<ol type="1"><li>Installare e configurare un provider di identità federate, ad esempio AD FS.</li><li>Installare Azure AD Connessione e configurare la sincronizzazione della directory e l'autenticazione federata.</li><li>Gestire utenti e gruppi con gli strumenti di Servizi di dominio Active Directory.</li></ol> |<ul><li>[Pianificare la distribuzione di AD FS](/previous-versions/azure/azure-services/dn151324(v=azure.100))</li><li>[Elenco di controllo: Distribuire la server farm federativa](/previous-versions/azure/azure-services/dn528856(v=azure.100))</li><li>[Configurare l'accesso Extranet per AD FS](/previous-versions/azure/azure-services/dn528859(v=azure.100))</li><li>[Configurare un trust tra ADFS e Azure AD](/previous-versions/azure/azure-services/jj205461(v=azure.100))</li><li>[Verificare e gestire Single Sign-On con ADFS](/previous-versions/azure/azure-services/jj151809(v=azure.100))</li><li>[Configurare la sincronizzazione della directory](/microsoft-365/enterprise/set-up-directory-synchronization)</li></ul> |
 ||||

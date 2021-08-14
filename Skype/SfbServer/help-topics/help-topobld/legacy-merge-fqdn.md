@@ -14,18 +14,18 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: d72841ff-3c4d-4233-a933-f3a95d75d89b
-description: L'FQDN interno del pool Access Edge Server viene utilizzato per diversi scenari in cui gli utenti interni comunicano con utenti esterni per la federazione, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica. Se nell'ambiente legacy è stato distribuito un Edge Server con bilanciamento del carico, immettere il nome di dominio completo (FQDN) del servizio di bilanciamento del carico interno.
-ms.openlocfilehash: 42771899ca4eb06b195db7365636dbef9c3d70d9
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: L'FQDN interno del pool di accessi perimetrali viene utilizzato per diversi scenari in cui gli utenti interni comunicano con utenti esterni per la federazione, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica. Se nell'ambiente legacy è stato distribuito un Edge Server con bilanciamento del carico, immettere il nome di dominio completo (FQDN) del servizio di bilanciamento del carico interno.
+ms.openlocfilehash: b9c2e2977f2cfb579bc4c96d76d49883198a80a6901ba3e0fb0200b6c4704f6d
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49803286"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54336926"
 ---
 # <a name="legacy-merge-fqdn"></a>Nome di dominio completo (FQDN) per unione legacy
  
-**L'FQDN interno del pool** Access Edge Server viene utilizzato per diversi scenari in cui gli utenti interni comunicano con utenti esterni per la federazione, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica. Se nell'ambiente legacy è stato distribuito un Edge Server con bilanciamento del carico, immettere il nome di dominio completo (FQDN) del servizio di bilanciamento del carico interno.
+L'FQDN interno del pool di **accessi** perimetrali viene utilizzato per diversi scenari in cui gli utenti interni comunicano con utenti esterni per la federazione, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica. Se nell'ambiente legacy è stato distribuito un Edge Server con bilanciamento del carico, immettere il nome di dominio completo (FQDN) del servizio di bilanciamento del carico interno.
   
-Il **valore della** porta di accesso SIP interna **5061** è la porta SIP TCP (Transmission Control Protocol) predefinita per la comunicazione con client, pool Front End legacy e server. Se non è stato utilizzato il valore predefinito, aggiornare il valore del campo **Porta di accesso SIP interna**.
+Il **valore della porta di** accesso SIP interna **5061** è la porta SIP TCP (Transmission Control Protocol) predefinita per la comunicazione con client, pool Front End legacy e server. Se non è stato utilizzato il valore predefinito, aggiornare il valore del campo **Porta di accesso SIP interna**.
   
 

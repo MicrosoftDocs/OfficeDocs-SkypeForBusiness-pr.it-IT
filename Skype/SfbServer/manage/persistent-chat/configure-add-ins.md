@@ -1,5 +1,5 @@
 ---
-title: Configurare i componenti aggiuntivi per le chat room di Persistent Chat in Skype for Business Server 2015
+title: Configurare i componenti aggiuntivi per le chat room di Persistent Chat Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,31 +13,31 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c1037909-0750-411a-98c1-3a327eed4ae8
 description: 'Riepilogo: informazioni su come configurare i componenti aggiuntivi per le chat room del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 1aca54f3db1229527256d1e2801cb057f4f79387
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 0c5b32d01c4464c367cb6c7332ca279fa23c8b4b1fc80e36bc12dd2161812dcd
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49815082"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345543"
 ---
-# <a name="configure-add-ins-for-persistent-chat-rooms-in-skype-for-business-server-2015"></a>Configurare i componenti aggiuntivi per le chat room di Persistent Chat in Skype for Business Server 2015
+# <a name="configure-add-ins-for-persistent-chat-rooms-in-skype-for-business-server-2015"></a>Configurare i componenti aggiuntivi per le chat room di Persistent Chat Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come configurare i componenti aggiuntivi per le chat room del server Chat persistente in Skype for Business Server 2015.
   
-I componenti aggiuntivi vengono utilizzati per estendere l'esperienza in-room associando gli URL alle chat room. Questi URL vengono visualizzati nel riquadro di estendibilità della conversazione client. Un componente aggiuntivo tipico può includere un URL che punta a un'applicazione Silverlight che intercetta quando un titolo azionario viene pubblicato in una chat room e mostra la cronologia delle azioni nel riquadro di estendibilità. Tra gli altri esempi c'è l'integrazione di un URL OneNote 2013 nella chat room in forma di componente aggiuntivo, per includere un contesto condiviso, ad esempio "Di facile riconoscibilità" o "Argomento del giorno".
+I componenti aggiuntivi vengono utilizzati per estendere l'esperienza in sala associando gli URL alle chat room. Questi URL vengono visualizzati nel riquadro di estendibilità della conversazione client. Un componente aggiuntivo tipico può includere un URL che punta a un'applicazione Silverlight che intercetta quando un ticker di azioni viene pubblicato in una chat room e mostra la cronologia delle azioni nel riquadro di estendibilità. Tra gli altri esempi c'è l'integrazione di un URL OneNote 2013 nella chat room in forma di componente aggiuntivo, per includere un contesto condiviso, ad esempio "Di facile riconoscibilità" o "Argomento del giorno".
   
- Prima che gli utenti possano visualizzare un componente aggiuntivo nel client, è necessario aggiungerlo all'elenco dei componenti aggiuntivi registrati e i responsabili o i creatori di chat room devono associare le chat room al componente aggiuntivo.
+ Prima che gli utenti possano visualizzare un componente aggiuntivo nel client, è necessario aggiungerlo all'elenco dei componenti aggiuntivi registrati e i responsabili o i creatori delle chat room devono associare le chat room al componente aggiuntivo.
   
 > [!NOTE]
-> La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. Le stesse funzionalità sono disponibili in Teams. Per altre informazioni, vedere [Introduzione all'aggiornamento di Microsoft Teams.](/microsoftteams/upgrade-start-here) Se è necessario usare Chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
 
-## <a name="configure-add-ins-for-chat-rooms-by-using-the-control-panel"></a>Configurare i componenti aggiuntivi per le chat room utilizzando il Pannello di controllo
+## <a name="configure-add-ins-for-chat-rooms-by-using-the-control-panel"></a>Configurare i componenti aggiuntivi per le chat room tramite il Pannello di controllo
 
-Per configurare i componenti aggiuntivi per le chat room utilizzando il Pannello di controllo:
+Per configurare i componenti aggiuntivi per le chat room tramite il Pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il Pannello di controllo di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministrazione.
+2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Componente aggiuntivo**.
     
@@ -55,9 +55,9 @@ Per configurare i componenti aggiuntivi per le chat room utilizzando il Pannello
     
 7. Fare clic su **Commit**.
     
-## <a name="configure-add-ins-by-using-windows-powershell"></a>Configurare i componenti aggiuntivi utilizzando Windows PowerShell
+## <a name="configure-add-ins-by-using-windows-powershell"></a>Configurare i componenti aggiuntivi tramite Windows PowerShell
 
-È possibile configurare i componenti aggiuntivi per le chat room utilizzando i cmdlet Windows PowerShell seguenti. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, vedere [Skype for Business Server 2015 Management Shell.](../management-shell.md)
+È possibile configurare i componenti aggiuntivi per le chat room utilizzando i cmdlet Windows PowerShell seguenti. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server 2015 Management Shell](../management-shell.md).
   
 
 |**Cmdlet**|**Descrizione**|
@@ -71,7 +71,7 @@ Per configurare i componenti aggiuntivi per le chat room utilizzando il Pannello
 
 È possibile creare un nuovo componente aggiuntivo utilizzando il cmdlet **New-CsPersistentChatAddin.**
   
-Ad esempio, il comando seguente crea un nuovo componente aggiuntivo (con il nome ITPersistentChatAddin) per il pool atl-cs-001.contoso.com. Il parametro URL e il valore del parametro http://atl-cs-001.contoso.com/itchat specificano il percorso della pagina Web del componente aggiuntivo:
+Ad esempio, il comando seguente crea un nuovo componente aggiuntivo (con il nome ITPersistentChatAddin) per il pool atl-cs-001.contoso.com. Il parametro URL e il valore del parametro specificano il percorso della pagina Web http://atl-cs-001.contoso.com/itchat del componente aggiuntivo:
   
 ```PowerShell
 New-CsPersistentChatAddin -Name "ITPersistentChatAddin" -PersistentChatPoolFqdn "atl-cs-001.contoso.com" -Url "http://atl-cs-001.contoso.com/itchat"

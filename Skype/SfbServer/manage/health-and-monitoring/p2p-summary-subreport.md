@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: fc36185a-3cc5-4167-8c93-8a755fa75ac7
 description: 'Riepilogo: informazioni sul sottoreport riepilogativo P2P in Skype for Business Server.'
-ms.openlocfilehash: 518047fbca3c46cdc9b99299b8222d4f4fbd48ff
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 07d354ba14c8503571459081aaaf3445ec540fdb9a5caecc4b40576f6662f038
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49816816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54345553"
 ---
 # <a name="p2p-summary-subreport-in-skype-for-business-server"></a>Sottoreport riepilogativo P2P in Skype for Business Server
  

@@ -14,12 +14,12 @@ localization_priority: Normal
 ms.collection: IT_Skype16
 ms.assetid: b95b3301-fa1e-4b96-9af4-05b43d39db8d
 description: Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
-ms.openlocfilehash: 29a3bd35191cf326cafd1f4ad4f14fab50e47ea3
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: ffa1bceca3e59e42276718b5f139ac6525d36f85face94c762ceebe3013c7487
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51122380"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54343410"
 ---
 # <a name="install-the-planning-tool-in-skype-for-business-server-2015"></a>Installare lo strumento di pianificazione in Skype for Business Server 2015
 
@@ -56,15 +56,15 @@ Dopo aver soddisfatto i requisiti di preinstallazione, è possibile installare l
 
 1. Accedere al computer locale come membro del gruppo Administrators.
 
-2. Utilizzando Esplora risorse o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello strumento di pianificazione.
+2. Utilizzando Windows Explorer o una finestra di comando, individuare la directory in cui sono stati scaricati i file di installazione dello strumento di pianificazione.
 
-3. Individuare il SkypeForBusinessPlanningTool.msi. In Esplora risorse fare doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **INVIO** per eseguire il file.
+3. Individuare il SkypeForBusinessPlanningTool.msi. In Windows Explorer fai doppio clic sul file. Nella finestra di comando digitare il nome del file e quindi premere **INVIO** per eseguire il file.
 
-4. Nella pagina iniziale di **Skype for Business Server 2015, Configurazione** guidata strumento di pianificazione, fare clic su **Avanti.**
+4. Nella pagina iniziale dell'installazione guidata **Skype for Business Server 2015, Planning Tool Setup Wizard,** fare clic su **Avanti.**
 
 5. Leggere il **Contratto di Licenza con l'utente finale**, selezionare **Accetto i termini del Contratto di Licenza** se si sceglie di accettare le condizioni per l'utilizzo riportate nel contratto e quindi fare clic su **Avanti**.
 
-6. Scegliere dove installare i file dello strumento di pianificazione. Il percorso predefinito è C:\Programmi (x86)\Skype for Business Server 2015\Planning Tool. Se si desidera cambiarlo, fare clic su **Cambia**. In **Modifica cartella di destinazione**, individuare o digitare il percorso in cui installare i file, fare clic su **OK** e quindi su **Avanti**.
+6. Scegliere dove installare i file dello strumento di pianificazione. Il percorso predefinito è C:\Programmi (x86)\Skype for Business Server 2015\Strumento di pianificazione. Se si desidera cambiarlo, fare clic su **Cambia**. In **Modifica cartella di destinazione**, individuare o digitare il percorso in cui installare i file, fare clic su **OK** e quindi su **Avanti**.
 
 7. Il programma di installazione è ora pronto per installare lo strumento di pianificazione. Fare clic su **Installa** per avviare il processo di installazione.
 
@@ -75,11 +75,11 @@ Dopo aver soddisfatto i requisiti di preinstallazione, è possibile installare l
 ## <a name="optional-software"></a>Software facoltativo
 <a name="Optional_Software"> </a>
 
-Lo strumento di pianificazione di Skype for Business Server 2015 è progettato per l'esportazione in Microsoft Excel e Microsoft Visio. Anche se queste applicazioni non sono necessarie per il funzionamento dello strumento di pianificazione, aggiungono un valore significativo alla distribuzione e alla documentazione della progettazione.
+Lo Skype for Business Server 2015 Planning Tool è progettato per l'esportazione in Microsoft Excel e Microsoft Visio. Anche se queste applicazioni non sono necessarie per il funzionamento dello strumento di pianificazione, aggiungono un valore significativo alla distribuzione e alla documentazione della progettazione.
 
 ### <a name="microsoft-excel"></a>Microsoft Excel
 
-L'esportazione della struttura in Microsoft Excel crea un report che visualizza sette schede nel foglio di calcolo:
+Esportando la struttura in Microsoft Excel viene creato un report che visualizza sette schede nel foglio di calcolo:
 
 - Riepilogo: visualizza informazioni sulla configurazione del sito, tra cui il numero di utenti, le impostazioni di capacità e le informazioni sul profilo del server.
 
@@ -102,9 +102,9 @@ L'esportazione del progetto in Microsoft Visio consente di creare un diagramma d
 > [!NOTE]
 > Se la struttura è sufficientemente grande da richiedere più di tre Front End Server, verrà creata una pagina aggiuntiva per il pool Front End, i Front End Server, il computer che esegue SQL Server, gli indirizzi IP e gli FQDN.
 
-- Topologia globale - Diagramma dei siti di Skype for Business Server 2015 configurati.
+- Topologia globale - Diagramma dei siti Skype for Business Server 2015.
 
-- Scheda Nome sito - Visualizza la topologia di configurazione del sito con server perimetrali, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi pool Front End, server basati su SQL Server, Servizi di dominio Active Directory, Director, server Messaggistica unificata di Exchange, server Cassette postali di Exchange, server Office Web Apps, Mediation Server e server Chat persistente.
+- Scheda Nome sito - Visualizza la topologia di configurazione del sito con server perimetrali, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front End, i server basati su SQL Server, Servizi di dominio Active Directory, Director, server messaggistica unificata di Exchange, server Cassette postali Exchange, server Web Apps Office, Mediation Server e server Chat persistente.
 
 - Edge Network Diagram - Diagramma che illustra in dettaglio la configurazione del server perimetrale con indirizzi IP e FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i Director e il Front End Server o il pool Front End, con LB DNS o HLB associati e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e fqdn.
 
