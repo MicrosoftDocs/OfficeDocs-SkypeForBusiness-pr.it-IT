@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: a32e68c5-3f95-4217-aff4-cb3d1cc70505
 description: La tabella MacAddress è una tabella di supporto. Ogni record rappresenta un'origine.
-ms.openlocfilehash: 466c115c47263085a2a7228560a7db8cb188277e
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 8110899d9dd64f34c3d3d4043859c9df8e9eff8d96a3d6c8336bc0d742da4580
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49806336"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54351266"
 ---
 # <a name="macaddress-table"></a>Tabella MacAddress
  

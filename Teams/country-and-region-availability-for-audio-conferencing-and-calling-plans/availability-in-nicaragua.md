@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Nicaragua.
-ms.openlocfilehash: 4cea202f4a908040fd09ef9d259710ccd538ef17
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 7506493f6aa4d59fa6b5647210674c720e9938d84a347f2997d3bde7bf785ab3
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51102412"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54351086"
 ---
 # <a name="availability-in-nicaragua"></a>Disponibilità in Nicaragua
 

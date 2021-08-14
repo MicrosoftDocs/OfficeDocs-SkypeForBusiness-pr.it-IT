@@ -15,19 +15,19 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 ROBOTS: NOINDEX, NOFOLLOW
-description: Strumento di pianificazione di Skype for Business Server
-ms.openlocfilehash: 4084d263a693a064e06a814d2fab4542ca3142c0
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+description: Skype for Business Server Strumento di pianificazione
+ms.openlocfilehash: 2bff4f6eb8774b9660f27cf2217eccd7b1b3c3dce469cab70ac7c96c9489b234
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51093324"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54325123"
 ---
 # <a name="feature-overview-planning-tool"></a>Panoramica delle funzionalità (Strumento di pianificazione)
  
-Strumento di pianificazione di Skype for Business Server
+Skype for Business Server Strumento di pianificazione
   
-È possibile utilizzare la **pagina Siti** centrali dello Strumento di pianificazione per progettare la distribuzione di Skype for Business Server. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata ha un solo sito centrale, che include tutti gli utenti Skype for Business dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuisce Skype for Business Server in più siti centrali, si immetterà il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
+È possibile utilizzare la **pagina Siti** centrali dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuisce Skype for Business Server in più siti centrali, si immetterà il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
   
 Per completare la definizione del sito centrale, è innanzitutto necessario fornire le informazioni seguenti:
   
@@ -35,11 +35,11 @@ Per completare la definizione del sito centrale, è innanzitutto necessario forn
     
 - **Numero di utenti** Immettere il numero di utenti, inclusi gli utenti dei siti di succursale ospitati nel sito centrale.
     
-- **Utenti ospitati nel cloud** Immettere il numero di utenti ospitati nel sito centrale da Skype for Business online.
+- **Utenti ospitati nel cloud** Immettere il numero di utenti ospitati nel sito centrale da Skype for Business Online.
     
 ## <a name="ui-elements"></a>Elementi dell'interfaccia utente
 
-Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande presentate nella procedura guidata Per iniziare oppure, se la procedura guidata è stata ignorata, vengono popolate automaticamente dallo strumento di pianificazione.
+Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande presentate nella procedura guidata **di Informazioni di base** oppure, se la procedura guidata è stata ignorata, vengono popolate automaticamente dallo strumento di pianificazione.
   
 ### <a name="online-collaboration"></a>Collaborazione online
 
@@ -55,7 +55,7 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
 - **Chiamate in conferenza**
     
-    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Servizio annuncio conferenza.
+    Le conferenze telefoniche con accesso esterno consentono agli utenti di partecipare a un A/V da un telefono sulla rete PSTN. Per le conferenze telefoniche con accesso esterno è necessario distribuire le applicazioni Operatore conferenza e Annuncio conferenza Service.
     
 - **Conferenze Web**
     
@@ -66,7 +66,7 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     Persistent Chat consente a più utenti di partecipare a conversazioni in cui pubblicano e accedono a contenuto su argomenti specifici, tra cui testo, collegamenti e file. Nonostante gli utenti possano comunicare in tempo reale durante una sessione, il contenuto di ogni sessione può essere salvato in modo permanente e quindi restare disponibile anche al termine di una sessione.
 
     > [!NOTE] 
-    > La chat persistente è disponibile in Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Aggiornamento da Skype for Business a Microsoft Teams.](/MicrosoftTeams/upgrade-start-here) Se è necessario usare la chat persistente, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015.
+    > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
     
 ### <a name="users"></a>Utenti
 
@@ -86,14 +86,14 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili Skype for Business Server, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
-- **Cassetta postale di Exchange W15**
+- **Cassetta postale Exchange W15**
     
-    Skype for Business Server consente di archiviare i messaggi della segreteria telefonica nella messaggistica unificata di Exchange. tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
+    Skype for Business Server consente di archiviare i messaggi della segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
 
     > [!NOTE]
-    > La messaggistica unificata di Exchange nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi vocali e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="voice"></a>Voce
 
@@ -101,14 +101,14 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
   
 - **VoIP aziendale**
     
-    VoIP aziendale è la soluzione VoIP basata su software di Microsft. VoIP aziendale consente agli utenti di usare Skype for Business per eseguire una chiamata telefonica dal computer.
+    Enterprise voice è la soluzione VoIP basata su software di Microsft. Enterprise vocale consente agli utenti di Skype for Business di eseguire una chiamata telefonica dal computer.
     
 - **Messaggistica unificata di Exchange**
     
-    La messaggistica unificata di Exchange combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la messaggistica unificata di Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica di chiamata e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare la messaggistica unificata di Exchange e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
 
     > [!NOTE]
-    > La messaggistica unificata di Exchange nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi vocali e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -130,9 +130,9 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
     L'archiviazione archivia conversazioni e conferenze di messaggistica istantanea.
     
-- **Integrazione dell'archiviazione di Exchange**
+- **Exchange Integrazione dell'archiviazione**
     
-    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place blocco, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server con l'archiviazione di Exchange.
+    Se si dispone di utenti ospitati Exchange e le relative cassette postali sono state messe In-Place archiviazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
     
 - **IPv4**
     
@@ -144,7 +144,7 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
 - **Servizio Web di aggiornamento del dispositivo**
     
-    Il servizio Web Aggiornamento dispositivi offre un modo automatico per aggiornare tutti i dispositivi, ad esempio Skype for Business per Windows Phone, distribuiti all'esterno dell'organizzazione.
+    Il servizio Web Aggiornamento dispositivi consente di aggiornare automaticamente tutti i dispositivi, ad esempio Skype for Business per Windows Phone, distribuiti all'esterno dell'organizzazione.
     
 ### <a name="server-applications"></a>Applicazioni server
 
@@ -160,15 +160,15 @@ Gli elementi rimanenti sono stati popolati con le  risposte fornite alle domande
     
 - **Parcheggio di chiamata**
     
-    L'applicazione Parcheggio di chiamata consente a un utente VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
+    L'applicazione Parcheggio di chiamata consente a un utente di VoIP aziendale di mettere in attesa una chiamata da un telefono e quindi di ricevere la chiamata da un altro telefono senza creare un collegamento tra le risorse del telefono che ha ricevuto la chiamata. L'applicazione Parcheggio di chiamata è utile quando un utente deve trasferire una chiamata, ma il destinatario specifico è sconosciuto. 
     
 - **Operatore conferenza**
     
-    L'applicazione Operatore conferenza offre funzionalità di audioconferenza agli utenti di telefonia senza il servizio di un provider di servizi di audioconferenza di terze parti.
+    applicazione Operatore conferenza offre funzionalità di audioconferenza agli utenti di telefonia senza il servizio di un provider di servizi di audioconferenza di terze parti.
     
 - **Annuncio conferenza**
     
-    L'applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
+    applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     

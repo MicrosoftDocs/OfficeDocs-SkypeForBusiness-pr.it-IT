@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: c0e5c4db-c135-401f-9296-e9a49f6499a1
 description: Nella visualizzazione Conferenze sono archiviate informazioni sulle conferenze. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: b31b0baa7a33b28ab9df8d78d2b49e569dfef831
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: b7cf9300ca574773b4ffb08a8c32108155a18786d8fec3ae80ddc77398d41ccc
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54351306"
 ---
 # <a name="conferences-view"></a>Visualizzazione Conferenze
  
@@ -26,17 +26,17 @@ Nella visualizzazione Conferenze sono archiviate informazioni sulle conferenze. 
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Ora della richiesta di sessione. Valore usato in combinazione con SessionIdSeq per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs in Skype for Business Server 2015.](dialogs.md) <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare la sessione. Valore usato in combinazione con SessionIdTime per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs in Skype for Business Server 2015.](dialogs.md) <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Ora della richiesta di sessione. Valore usato in combinazione con SessionIdSeq per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare la sessione. Valore usato in combinazione con SessionIdTime per identificare in modo univoco una sessione. Per ulteriori informazioni, vedere la tabella [Dialogs Skype for Business Server 2015.](dialogs.md) <br/> |
 |**ConferenceUri** <br/> |nvarchar(450)  <br/> |URI per la conferenza.  <br/> |
-|**ConferenceUriType** <br/> |nvarchar(256)  <br/> |Tipo dell'URI conferenza. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
+|**ConferenceUriType** <br/> |nvarchar(256)  <br/> |Tipo dell'URI conferenza. Per ulteriori informazioni, vedere la tabella [UriTypes.](uritypes.md) <br/> |
 |**ConfInstance** <br/> |uniqueidentifier  <br/> |Utilizzato per conferenze ricorrenti. Ogni istanza di una conferenza ricorrente ha lo stesso ConferenceUri, ma una ConfInstance diversa.  <br/> |
 |**ConferenceStartTime** <br/> |datetime  <br/> |Ora di inizio della conferenza.  <br/> |
 |**ConferenceEndTime** <br/> |datetime  <br/> |Ora di fine della conferenza.  <br/> |
 |**OrganizerUri** <br/> |nvarchar(450)  <br/> |URI dell'utente che ha organizzato la conferenza.  <br/> |
-|**OrganizerType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha organizzato la conferenza. Per altre [informazioni, vedi la tabella UriTypes.](uritypes.md) <br/> |
+|**OrganizerType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente che ha organizzato la conferenza. Per ulteriori informazioni, vedere la tabella [UriTypes.](uritypes.md) <br/> |
 |**OrganizerTenant** <br/> |nvarchar(256)  <br/> |Tenant dell'utente che ha organizzato la conferenza. Per ulteriori [informazioni, vedere](tenants.md) la tabella Tenants. <br/> |
 |**Pool** <br/> |nvarchar(256)  <br/> |Nome di dominio completo del pool che ha ospitato la conferenza.  <br/> |
-|**Flag** <br/> |smallint  <br/> |Maschera di bit che contiene gli attributi della conferenza. I valori possibili sono:  <br/> 0X01 - Transazione sintetica  <br/> |
+|**Contrassegno** <br/> |smallint  <br/> |Maschera di bit che contiene attributi conferenza. I valori possibili sono:  <br/> 0X01 - Transazione sintetica  <br/> |
    
 

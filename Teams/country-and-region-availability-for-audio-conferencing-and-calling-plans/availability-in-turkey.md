@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Turchia.
-ms.openlocfilehash: edec9e66c303a3d4ee8487f5a3b34e2e9135e778
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: d99ecea4d87bf45c3cf603ef92465afe6ba54bcf5af3cfe77d257d0ae105eeaa
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54327791"
 ---
 # <a name="availability-in-turkey"></a>Disponibilità in Turchia
 

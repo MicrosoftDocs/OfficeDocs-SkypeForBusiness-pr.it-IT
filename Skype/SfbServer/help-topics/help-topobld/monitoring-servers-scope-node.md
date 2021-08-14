@@ -14,13 +14,13 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.assetid: 16fa839b-8eb5-4b81-82c5-65fe9a00614b
-description: "Nel nodo Monitoring Server vengono elencati i Monitoring Server della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 7c09c86c15a5b398463a2c1995c462c890849dfa
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: "Nel nodo Monitoring Server vengono elencati i Monitoring Server della topologia. È possibile eseguire l'operazione seguente:"
+ms.openlocfilehash: 763fe3f877b4a32708e278684d961208ba1fac9e1053d99f675e1b48ff7478ab
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49803196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54328281"
 ---
 # <a name="monitoring-servers-scope-node"></a>Nodo dell'ambito dei server Monitoring Server
  

@@ -13,12 +13,12 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 1f440590-c1bc-483e-b7bc-6cc763847768
 description: La tabella MediaList è una tabella statica in cui è archiviato l'elenco di diversi tipi di elementi multimediali.
-ms.openlocfilehash: 6f593876a1b42163b6f2e75dbe44c1eb26b2ff16
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: 9242f20b3c2192fb1f5cd48c84784a3e8d283f6e91587aee408a9286d291add7
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813136"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54326272"
 ---
 # <a name="medialist-table"></a>Tabella MediaList
  
@@ -27,7 +27,7 @@ La tabella MediaList è una tabella statica in cui è archiviato l'elenco di div
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**MediaId** <br/> |tinyint  <br/> |Principale  <br/> |Valori: 1-7  <br/> |
-|**Contenuti multimediali** <br/> |nvarchar(256)  <br/> || Mapping statico dei valori MediaID e Media: <br/>  1 -- Messaggistica istantanea <br/>  2 - Trasferimento file <br/>  3 - Assistenza remota <br/>  4 - Condivisione applicazioni <br/>  5 -- Audio <br/>  6 -- Video <br/>  7 - Invito all'app <br/> |
+|**Contenuti multimediali** <br/> |nvarchar(256)  <br/> || Mapping statico dei valori MediaID e Media: <br/>  1 -- Messaggistica istantanea <br/>  2 - Trasferimento file <br/>  3 - Assistenza remota <br/>  4 - Condivisione applicazioni <br/>  5 -- Audio <br/>  6 -- Video <br/>  7 - Invito app <br/> |
    
 Se si sta tentando di determinare il tipo di modalità per i valori in LcsCDR.SessionDetailsView.MediaTypes, è necessario utilizzare il frammento join seguente: 
   

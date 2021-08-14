@@ -12,17 +12,17 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 ms.assetid: 72726b43-f1ea-458c-9304-a26e8a12128c
-description: Questa sezione elenca gli attributi dello schema che possono essere contenuti in ogni classe di Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e delle relative descrizioni, vedi Le classi e le descrizioni dello schema in Skype for Business Server. Per un elenco di tutti gli attributi e delle relative descrizioni, vedere Attributi e descrizioni dello schema in Skype for Business Server.
-ms.openlocfilehash: 00f524fce7e786c9d30c9442eb964c5356db5e16
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+description: In questa sezione sono elencati gli attributi dello schema che possono essere contenuti in ogni classe Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e le relative descrizioni, vedere Classi e descrizioni dello schema in Skype for Business Server. Per un elenco di tutti gli attributi e le relative descrizioni, vedere Attributi e descrizioni dello schema in Skype for Business Server.
+ms.openlocfilehash: 75ca1dea65462d97cdef8053ab24274646408dd135890592a7c93e2654638685
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49813586"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54326292"
 ---
 # <a name="schema-attributes-by-class-in-skype-for-business-server"></a>Attributi dello schema per classe in Skype for Business Server
  
-Questa sezione elenca gli attributi dello schema che possono essere contenuti in ogni classe di Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e delle relative descrizioni, vedi Le classi e le descrizioni dello [schema in Skype for Business Server.](schema-classes-and-descriptions.md) Per un elenco di tutti gli attributi e delle relative descrizioni, vedere Attributi e descrizioni dello [schema in Skype for Business Server.](schema-attributes-and-descriptions.md)
+In questa sezione sono elencati gli attributi dello schema che possono essere contenuti in ogni classe Skype for Business Server e le classi che possono essere contenute in altre classi. Per un elenco di tutte le classi e le relative descrizioni, vedere Classi e [descrizioni](schema-classes-and-descriptions.md)dello schema in Skype for Business Server . Per un elenco di tutti gli attributi e le relative descrizioni, vedere Attributi e descrizioni dello [schema in Skype for Business Server](schema-attributes-and-descriptions.md).
   
 ## <a name="attributes-by-class"></a>Attributi per classe
 

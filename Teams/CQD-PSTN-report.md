@@ -15,12 +15,12 @@ appliesto:
 - Microsoft Teams
 localization_priority: Normal
 description: Usare il report Microsoft Teams Routing diretto PSTN (Call Quality Dashboard) per monitorare e risolvere i problemi relativi alle chiamate PSTN in Microsoft Teams.
-ms.openlocfilehash: f2b63f991f42aa4de9e0e4474137f7f992f95c53
-ms.sourcegitcommit: 01087be29daa3abce7d3b03a55ba5ef8db4ca161
+ms.openlocfilehash: 692247e79a951b775bdca0f13811e3480dcb8cfbb0a5e78a8f8f7b4b69f97add
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51094980"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54351256"
 ---
 # <a name="using-the-cqd-pstn-direct-routing-report"></a>Uso del report CQD PSTN Direct Routing
 
@@ -101,7 +101,7 @@ Ad esempio:
 
 Si tratta della stessa metrica visualizzata nel dashboard Integrità generale. È possibile controllare il numero NER orario con i dettagli delle chiamate interessate per entrambe le direzioni di chiamata (in ingresso/uscita) nel grafico rapporto di efficacia della rete oraria e motivo finale della chiamata riportato di seguito.
 
-  - **NER** - La capacità (%) di una rete per il recapito delle chiamate misurando il numero di chiamate inviate rispetto al numero di chiamate recapitate a un destinatario.
+  - **NER** - La possibilità (%) di una rete di effettuare chiamate misurando il numero di chiamate inviate rispetto al numero di chiamate recapitate a un destinatario.
 
   - **Codice di risposta SIP:** un codice di risposta intero a tre cifre mostra lo stato della chiamata.
 

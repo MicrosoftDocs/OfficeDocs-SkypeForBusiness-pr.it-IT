@@ -15,14 +15,14 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: Informazioni su come abilitare QoS per i dispositivi usati nell'organizzazione che usano un sistema operativo diverso da Windows.
-ms.openlocfilehash: 81350ae252252a85bd3f88a000d6cd78d85408e43ca56335517de7b50bb6fd49
-ms.sourcegitcommit: 0e9516c51105e4d89c550d2ea2bd8e7649a1163b
+ms.openlocfilehash: 85e63df1ba96ff77d586d3c4e71130509a869d51
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/06/2021
-ms.locfileid: "54590930"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234001"
 ---
-# <a name="enabling-qos-in-skype-for-business-server-for-devices-that-are-not-based-on-windows"></a>Abilitazione di QoS in Skype for Business Server per i dispositivi non basati su Windows
+# <a name="enabling-qos-in-skype-for-business-server-for-devices-that-are-not-based-on-windows"></a>Abilitazione di QoS Skype for Business Server per i dispositivi non basati su Windows
 
 
 Quando si installa Skype for Business Server, la qualità del servizio (QoS) non verrà abilitata per i dispositivi utilizzati nell'organizzazione che utilizzano un sistema operativo diverso da Windows. È possibile verificarlo eseguendo il comando seguente dall'Skype for Business ServerManagement Shell:
@@ -52,10 +52,10 @@ Il comando precedente abilita QoS nell'ambito globale, tuttavia è importante os
 
 
 > [!NOTE]
-> È necessario abilitare QoS nell'ambito del sito? Dipende. Impostazioni assegnati all'ambito del sito hanno la precedenza sulle impostazioni assegnate all'ambito globale. Si supponga di avere QoS abilitato nell'ambito globale ma disabilitato nell'ambito del sito (per il sito Redmond). In tal caso, la qualità del servizio verrebbe disabilitata per il sito Redmond. ciò è dovuto al fatto che le impostazioni del sito hanno la precedenza. Per abilitare QoS per il sito Redmond, è necessario utilizzare le impostazioni di configurazione dei supporti applicate a tale sito.
+> È necessario abilitare QoS nell'ambito del sito? Dipende. Impostazioni assegnato all'ambito del sito ha la precedenza sulle impostazioni assegnate all'ambito globale. Si supponga di avere QoS abilitato nell'ambito globale ma disabilitato nell'ambito del sito (per il sito Redmond). In tal caso, la qualità del servizio verrebbe disabilitata per il sito Redmond. ciò è dovuto al fatto che le impostazioni del sito hanno la precedenza. Per abilitare QoS per il sito Redmond, è necessario utilizzare le impostazioni di configurazione dei supporti applicate a tale sito.
 
 
-Se si desidera abilitare contemporaneamente QoS per tutte le impostazioni di configurazione dei supporti (indipendentemente dall'ambito), eseguire questo comando dall'interno di LSkype for Business Server Management Shell:
+Se si desidera abilitare contemporaneamente QoS per tutte le impostazioni di configurazione multimediale (indipendentemente dall'ambito), eseguire questo comando dall'interno di LSkype for Business Server Management Shell:
 
 **Get-CsMediaConfiguration | Set-CsMediaConfiguration -EnableQoS $True**
 
@@ -68,4 +68,4 @@ Questo consente di implementare QoS su alcune parti della rete, ad esempio nel s
 QoS può essere abilitato e disabilitato solo tramite Windows PowerShell. Queste opzioni non sono disponibili nel Pannello Skype for Business Server controllo.
 
 > [!NOTE]
-> Skype for Business client per iOS versione 6.17 e successive ora supportano QoS.  Questa funzionalità QoS è applicabile solo ai client Skype for Business e ai dispositivi telefonici IP registrati direttamente in un server Skype for Business o lync pool interno su reti gestite. QoS non è applicabile per il traffico instradato su Internet.
+> Skype for Business client per iOS versione 6.17 e successive ora supportano QoS.  Questa funzionalità QoS è applicabile solo ai client Skype for Business e ai dispositivi telefonici IP registrati direttamente in un Skype for Business o in un pool di Lync Server nelle reti gestite. QoS non è applicabile per il traffico instradato su Internet.

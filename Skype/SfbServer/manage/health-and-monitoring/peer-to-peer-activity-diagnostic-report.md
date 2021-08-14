@@ -12,22 +12,22 @@ f1.keywords:
 localization_priority: Normal
 ms.assetid: 025e8ab4-2e64-4a6b-8f52-caf756a5cac3
 description: 'Riepilogo: informazioni sul Rapporto di diagnostica attività peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: 1988dbbc6cf1e2bc54eeafee95756e7633d0ffde
-ms.sourcegitcommit: c528fad9db719f3fa96dc3fa99332a349cd9d317
+ms.openlocfilehash: d303bd820a7494be2061eb4e36c5413787b83ffcd4fc794f8e98ac3a8d806261
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49827736"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54325103"
 ---
 # <a name="peer-to-peer-activity-diagnostic-report-in-skype-for-business-server"></a>Rapporto di diagnostica attività peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto di diagnostica attività peer-to-peer in Skype for Business Server.
   
-Il Rapporto di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo o negativo delle sessioni di comunicazione peer-to-peer. Skype for Business Server distingue tra diversi tipi di errore:
+Il Rapporto di diagnostica attività peer-to-peer fornisce informazioni sull'esito positivo o negativo delle sessioni di comunicazione peer-to-peer. Si noti Skype for Business Server distingue tra diversi tipi di errore:
   
 - **Errore previsto**. Un errore previsto è in genere un errore solo nel senso più tecnico del termine. Si supponga ad esempio di chiamare un utente, che però non è in ufficio e dunque non può rispondere al telefono. Poiché la chiamata non ha ricevuto risposta, tecnicamente viene considerata un errore. D'altra parte, si è verificato un errore previsto: Skype for Business Server non prevede che tu risponda al telefono se non sei disponibile a rispondere al telefono. Analogamente, si verificherà un errore previsto se si tenta di inviare un messaggio istantaneo a un utente offline, oppure connesso a un telefono che non supporta la messaggistica istantanea.
     
-- **Errore imprevisto**. Un errore imprevisto è esattamente tale, ovvero un errore che, in determinate circostanze, non ci si aspetterebbe. Si supponga, ad esempio, di chiamare qualcuno e che sia disponibile a rispondere alla chiamata. Tuttavia, quando Skype for Business Server tenta di instradare la chiamata alla segreteria telefonica, la chiamata non riesce perché la connettività alla messaggistica unificata di Exchange è stata persa. Si tratta di un errore imprevisto: ci si aspetterebbe che le chiamate siano sempre instradati alla segreteria telefonica. Come regola generale, gli errori imprevisti sono errori veri: si tratta di problemi che probabilmente non possono essere corretti tramite l'istruzione degli utenti o misure simili.
+- **Errore imprevisto**. Un errore imprevisto è esattamente tale, ovvero un errore che, in determinate circostanze, non ci si aspetterebbe. Si supponga, ad esempio, di chiamare qualcuno e che tale persona sia disponibile per rispondere alla chiamata. Tuttavia, quando Skype for Business Server tenta di instradare la chiamata alla segreteria telefonica, la chiamata non riesce perché la connettività Exchange messaggistica unificata è stata persa. Si tratta di un errore imprevisto: si prevede che le chiamate potrebbero sempre essere instradati alla segreteria telefonica. Come regola generale, gli errori imprevisti sono errori veri e proprio: si tratta di problemi che probabilmente non possono essere corretti tramite l'istruzione degli utenti o misure simili.
     
 Tenere presente che la somma delle metriche relative a esiti positivi, errori previsti ed errori imprevisti potrebbe non corrispondere al valore della metrica Totale sessioni. Ad esempio, nell'illustrazione precedente sono presenti i valori seguenti:
   
@@ -35,11 +35,11 @@ Tenere presente che la somma delle metriche relative a esiti positivi, errori pr
 |:-----|:-----|:-----|:-----|
 |2024  <br/> |469  <br/> |16   <br/> |2521  <br/> |
    
-Sommando 2024 + 469 + 16 si ottiene un totale di 2.509 sessioni, ma la colonna Totale sessioni mostra un totale di 2.521 sessioni. Le 12 sessioni "mancanti" sono quelle che il sistema non è riuscito a classificare come riuscite o non riuscite. Questo può capitare quando un prodotto di terze parti introduce un nuovo codice di diagnostica che non ha familiarità con Skype for Business Server. Quando ciò accade, le chiamate effettuate usando tale prodotto e contrassegnate da tale codice diagnostico non sempre possono essere correttamente classificate come un esito positivo, un errore previsto o un errore imprevisto.
+Sommando 2024 + 469 + 16 si ottiene un totale di 2.509 sessioni, ma la colonna Totale sessioni mostra un totale di 2.521 sessioni. Le 12 sessioni "mancanti" sono quelle che il sistema non è riuscito a classificare come riuscite o non riuscite. Questo a volte si verifica quando un prodotto di terze parti introduce un nuovo codice di diagnostica che non ha familiarità con Skype for Business Server. Quando ciò accade, le chiamate effettuate usando tale prodotto e contrassegnate da tale codice diagnostico non sempre possono essere correttamente classificate come un esito positivo, un errore previsto o un errore imprevisto.
   
 ## <a name="accessing-the-peer-to-peer-activity-diagnostic-report"></a>Accesso al Rapporto di diagnostica attività peer-to-peer
 
-Il rapporto di diagnostica peer-to-peer è accessibile dalla home page dei rapporti di monitoraggio. È possibile accedere al [Rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md) facendo clic su una delle metriche seguenti:
+Il rapporto di diagnostica peer-to-peer è accessibile dalla home page dei rapporti di monitoraggio. Puoi accedere al [Rapporto distribuzione errori in Skype for Business Server](failure-distribution-report.md) facendo clic su una delle metriche seguenti:
   
 - Quantità di errori imprevisti
     
@@ -61,9 +61,9 @@ Nella tabella seguente sono riportati i filtri che è possibile utilizzare con i
 |:-----|:-----|
 |**From** <br/> |Data/ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di inizio come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con data di inizio 7/7/2015 e data di fine 28/02/2015, i dati verranno visualizzati per i giorni 07/08/2015 12.00 al 7/09/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
+|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Se ad esempio si seleziona l'intervallo Giornaliero con data di inizio 7/07/2015 e data di fine 28/02/2015, verranno visualizzati i dati per i giorni 7/08/2015 12.00 fino al 7/9/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
 |**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool oppure fare clic su **[Tutto]** per visualizzare i dati di tutti i pool. Le voci disponibili in questo elenco a discesa vengono inserite automaticamente in base ai record presenti nel database.<br/> |
-|**Modality** <br/> | Indica il tipo di attività di comunicazione verificatasi. Selezionare una delle impostazioni seguenti: <br/>  [All] <br/>  Messaggistica istantanea <br/>  Trasferimento di file <br/>  Condivisione applicazioni <br/>  Audio <br/>  Video <br/> |
+|**Modalità** <br/> | Indica il tipo di attività di comunicazione verificatasi. Selezionare una delle impostazioni seguenti: <br/>  [All] <br/>  Messaggistica istantanea <br/>  Trasferimento di file <br/>  Condivisione applicazioni <br/>  Audio <br/>  Video <br/> |
    
 ## <a name="metrics-per-modality"></a>Metrica (per modalità)
 

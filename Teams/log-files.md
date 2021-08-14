@@ -16,16 +16,16 @@ search.appverid: MET150
 description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove possono essere trovati e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 24ea9d4b3b7b6a5c1927b344bddb450ca3607cfd778595565bb29dbc5091d7cc
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: eba1acc94f87e59991230a85054cad14678efc9c92b8efa96567b81ef4e65ed6
+ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57848831"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "54350898"
 ---
 # <a name="use-log-files-to-monitor-and-troubleshoot-microsoft-teams"></a>Usare i file di log per monitorare e risolvere i Microsoft Teams
 
-Esistono tre tipi di file di log prodotti automaticamente dal client, che possono essere utilizzati per facilitare il monitoraggio e la risoluzione dei Teams:
+Esistono tre tipi di file di log prodotti automaticamente dal client, che possono essere utilizzati per agevolare il monitoraggio e la risoluzione dei Teams:
 
 -   [Log di debug](#debug-logs)
 
@@ -33,14 +33,14 @@ Esistono tre tipi di file di log prodotti automaticamente dal client, che posson
 
 -   [Log del desktop](#desktop-logs)
 
-Questo articolo descrive questi log e come vengono usati. Per informazioni sulla risoluzione di problemi specifici, vedere: Teams [risoluzione dei problemi](/MicrosoftTeams/troubleshoot/teams). Per informazioni su come contattare il supporto, vedere [Ottenere supporto.](/microsoft-365/business-video/get-help-support) Quando si crea una richiesta di supporto con il supporto tecnico Microsoft, il tecnico del supporto richiederà i log di debug. Avere a disposizione i log di debug prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente a risolvere il problema. **I** registri multimediali **o desktop** sono necessari solo se richiesti da Microsoft.
+Questo articolo descrive questi log e come vengono usati. Per informazioni sulla risoluzione di problemi specifici, vedere: Teams [risoluzione dei problemi](/MicrosoftTeams/troubleshoot/teams). Per informazioni su come contattare il supporto, vedere [Ottenere supporto.](/microsoft-365/business-video/get-help-support) Quando si crea una richiesta di supporto con il supporto tecnico Microsoft, il tecnico del supporto richiederà i log di debug. Avere a disposizione i log di debug prima di creare la richiesta di supporto consentirà a Microsoft di iniziare rapidamente a risolvere il problema. **I** registri multimediali **o** desktop sono necessari solo se richiesti da Microsoft.
 
 > [!NOTE]
 > In questo articolo il termine **Log di debug** fa riferimento ai log usati per la risoluzione dei problemi. Tuttavia, i file generati per questi log conterranno il termine **log di diagnostica** nei nomi.  
 
 ## <a name="collect-and-enable-logging"></a>Raccogliere e abilitare la registrazione
 
-È importante raccogliere i log non appena si verifica un problema. I log possono essere raccolti insieme con un paio di clic.
+È importante raccogliere i log non appena si verifica un problema. I log possono essere raccolti insieme a un paio di clic.
 
 Windows: fare clic con il pulsante destro del mouse sull'icona Teams sulla barra delle applicazioni e scegliere **Raccolta file di supporto.** 
 
@@ -52,7 +52,7 @@ Windows: CTRL + ALT + MAIUSC + 1
 
 Mac: OPZIONE+ COMANDO + MAIUSC + 1
 
-La registrazione multimediale è disattivata per impostazione predefinita. Per abilitare la registrazione multimediale, gli utenti devono attivare l'opzione nel client Teams client. Passare a **Impostazioni** Generale e selezionare Abilita registrazione per diagnostica riunione  >   **(è necessario riavviare Teams).** Il Teams client deve essere riavviato per avviare la registrazione.
+La registrazione multimediale è disattivata per impostazione predefinita. Per abilitare la registrazione multimediale, gli utenti devono attivare l'opzione nel client Teams dati. Passare a **Impostazioni** Generale e selezionare Abilita registrazione per diagnostica riunione  >   **(è necessario riavviare Teams).** Il Teams client deve essere riavviato per avviare la registrazione.
 
 > [!NOTE]
 > Se la registrazione multimediale è abilitata, nella cartella Riunione saranno inclusi altri file necessari per analizzare i problemi audio e video. Se la registrazione multimediale non è abilitata, sarà disponibile un numero limitato di log.
@@ -69,11 +69,11 @@ La tabella seguente descrive i vari client e i log associati. I file di log veng
 |iOS     |-         |-         |-         |
 |Android     |-         |-         |-         |
 
-Per un elenco completo dei sistemi operativi e dei browser supportati, vedere [Ottenere i client per Microsoft Teams](get-clients.md).
+Per un elenco completo dei sistemi operativi e dei browser supportati, vedere Ottenere [i client per Microsoft Teams](get-clients.md).
 
 ## <a name="debug-logs"></a>Log di debug
 
-Vedere la _sezione Raccogliere e abilitare la registrazione_ per Windows istruzioni per Mac. I log di debug vengono prodotti dai client desktop Windows Mac e mac, oltre che dai client basati su browser. I log sono basati su testo e vengono letti dal basso verso l'alto. Possono essere letti con qualsiasi editor basato su testo e i nuovi log vengono creati quando si accede al client.
+Vedere la _sezione Raccogliere e abilitare la registrazione_ per Windows istruzioni per Mac. I log di debug vengono prodotti dai client desktop Windows e Mac, oltre che dai client basati su browser. I log sono basati su testo e vengono letti dal basso verso l'alto. Possono essere letti con qualsiasi editor basato su testo e i nuovi log vengono creati quando si accede al client.
 
 I log di debug mostrano i flussi di dati seguenti:
 
@@ -114,9 +114,10 @@ Vedere la _sezione Raccogliere e abilitare la registrazione_ per Windows istruzi
 Per raccogliere i log per Linux: fare clic sull'icona Microsoft Teams sulla barra delle applicazioni e selezionare **Recupera registri**.
 I file saranno disponibili in ~/.config/Microsoft/Microsoft Teams/logs.txt.  
 
+
 ## <a name="browser-trace"></a>Traccia del browser
 
-Per alcune categorie di errori, il supporto Tecnico Microsoft potrebbe richiedere la raccolta di una traccia del browser. Queste informazioni possono fornire dettagli importanti sullo stato del client Teams quando si verifica l'errore.
+Per alcune categorie di errori, il supporto Tecnico Microsoft potrebbe richiedere la raccolta di una traccia del browser. Queste informazioni possono fornire dettagli importanti sullo stato del client Teams client quando si verifica l'errore.
 
 Prima di avviare la traccia del browser, assicurarsi di aver eseguito l'accesso a Teams. È importante eseguire questa operazione prima di avviare la traccia in modo che la traccia non contenga informazioni di accesso riservate.
 
@@ -131,22 +132,7 @@ Dopo aver eseguito l'accesso, selezionare uno dei collegamenti seguenti, in base
 -   [Firefox](/azure/azure-portal/capture-browser-trace#firefox?preserve-view=true#resolution)
 
 > [!NOTE]
-> Nei passaggi sostituire tutti i riferimenti al portale di Azure con il Teams client.
-  
-## <a name="webrtc-logs-in-browsers"></a>Log WebRTC nei browser
-I log WebRTC possono aiutare il supporto Microsoft fornendo i dettagli della connessione per le chiamate audio e video. Seguire la procedura per accedere ai log di WebRTC in Edge (Chromium) o Chrome: 
-  
-1.  Aprire una nuova scheda e passare a uno degli URL seguenti:
-    -   Edge (Chromium): "edge://webrtc-internals/"
-    -   Chrome: "chrome://webrtc-internals/"
-  
-2.  Aprire l'Teams Web e riprodurre il problema.
-  
-3.  Tornare alla scheda a cui è stato eseguito l'accesso nel passaggio 1 e verranno visualizzate almeno due schede:
-    -   Richieste GetUserMedia
-    -   https://teams.microsoft.com/url
-
-4.  Scegliere la scheda con il nome dell'applicazione Teams e salvare il contenuto della pagina.
+> Nei passaggi sostituire tutti i riferimenti al portale di Azure con il Teams client. 
 
 ## <a name="related-topics"></a>Argomenti correlati
 

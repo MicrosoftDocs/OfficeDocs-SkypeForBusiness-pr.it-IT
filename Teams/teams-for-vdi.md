@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: adb6e4a75c3405a2d1b2240d101327795fa3a2d1ad6626f4bd692d1fc4851277
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f635e3b5e292d6b9eeb62fc8cbbf9552e2d0b2e2
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58233631"
 ---
 # <a name="teams-for-virtualized-desktop-infrastructure"></a>Teams per Virtualized Desktop Infrastructure (VDI)
 
@@ -30,13 +30,13 @@ Questo articolo descrive i requisiti e le limitazioni per l'uso di Microsoft Tea
 
 ## <a name="what-is-vdi"></a>Che cos'è VDI?
 
-Virtual Desktop Infrastructure (VDI) è una tecnologia di virtualizzazione che ospita un sistema operativo desktop e applicazioni in un server centralizzato in un data center. Questo consente un'esperienza desktop completamente personalizzata per gli utenti con una fonte centralizzata completamente protetta e conforme.
+Virtual Desktop Infrastructure (VDI) è una tecnologia di virtualizzazione che ospita un sistema operativo desktop e le applicazioni in un server centralizzato in un data center. Questo consente un'esperienza desktop completamente personalizzata per gli utenti con una fonte centralizzata completamente protetta e conforme.
 
 Microsoft Teams in un ambiente virtualizzato supporta la chat e la collaborazione. Inoltre, con le piattaforme Azure Virtual Desktop, Citrix e VMware, sono supportate anche le funzionalità di chiamata e riunione.
 
 Teams in un ambiente virtualizzato supporta più configurazioni. Sono incluse le modalità VDI, dedicate, condivise, persistenti e non persistenti. Le funzionalità sono in continuo sviluppo e vengono aggiunte regolarmente e le funzionalità verranno espanse nei prossimi mesi e anni.
 
-L Teams in un ambiente virtualizzato potrebbe essere leggermente diverso dall'Teams in un ambiente non virtualizzato. Ad esempio, alcune funzionalità avanzate potrebbero non essere disponibili in un ambiente virtualizzato e la risoluzione video potrebbe essere diversa.
+L Teams in un ambiente virtualizzato potrebbe essere leggermente diverso dall'uso Teams in un ambiente non virtualizzato. Ad esempio, alcune funzionalità avanzate potrebbero non essere disponibili in un ambiente virtualizzato e la risoluzione video potrebbe essere diversa.
 
 Per garantire un'esperienza utente ottimale, seguire le indicazioni di questo articolo.
 
@@ -76,7 +76,7 @@ Azure Virtual Desktop offre l'ottimizzazione AV Teams in VDI. Per altre informaz
 
 ### <a name="citrix-virtual-apps-and-desktops-requirements"></a>Requisiti per app virtuali e desktop Citrix
 
-Citrix Virtual Apps and Desktops (in precedenza noto come XenApp e XenDesktop) fornisce l'ottimizzazione AV per Teams in VDI. Con Le app virtuali e i desktop Citrix, Teams su VDI supporta le funzionalità di chiamata e riunione oltre alla chat e alla collaborazione.
+Citrix Virtual Apps and Desktops (in precedenza noto come XenApp e XenDesktop) fornisce l'ottimizzazione AV per Teams su VDI. Con Le app virtuali e i desktop Citrix, Teams su VDI supporta le funzionalità di chiamata e riunione, oltre alla chat e alla collaborazione.
 
 È possibile scaricare l'ultima versione di Citrix Virtual Apps and Desktops [nel sito di download di Citrix.](https://www.citrix.com/downloads/citrix-virtual-apps-and-desktops/) È necessario eseguire prima l'accesso. Per impostazione predefinita, i componenti necessari vengono raggruppati [nell'app Citrix Workspace (CWA)](https://www.citrix.com/downloads/workspace-app/) e nell'agente di recapito virtuale (VDA). Non è necessario installare altri componenti o plug-in in CWA o VDA.
 
@@ -84,7 +84,7 @@ Per i requisiti più recenti per il server e il client, vedere [questo sito Web 
 
 ### <a name="vmware-horizon-workspace-and-desktop-requirements"></a>Requisiti di VMware Horizon Workspace e desktop
 
-VMware Horizon è una piattaforma moderna per la distribuzione sicura di desktop virtuali e app nel cloud ibrido. Per offrire un'esperienza utente ottimale, VMware Horizon offre l'ottimizzazione dei supporti multimediali Teams. Questa ottimizzazione migliora la produttività complessiva di desktop e app virtuali e migliora l'esperienza utente durante le chiamate e le riunioni con Teams.
+VMware Horizon è una piattaforma moderna per la distribuzione sicura di desktop virtuali e app nel cloud ibrido. Per offrire un'esperienza utente ottimale, VMware Horizon offre l'ottimizzazione dei supporti multimediali per Teams. Questa ottimizzazione migliora la produttività complessiva di desktop e app virtuali e migliora l'esperienza utente durante le chiamate e le riunioni con Teams.
 
 È possibile scaricare l'ultima versione di VMware Horizon dalla [pagina download di VMware.](https://my.vmware.com/web/vmware/downloads/#all_products) I componenti di ottimizzazione dei supporti necessari fanno parte di Horizon Agent e Horizon Client per impostazione predefinita e non è necessario installare alcun plug-in aggiuntivo per usare la funzionalità di ottimizzazione per Teams.
 
@@ -118,9 +118,9 @@ Di seguito è riportata la configurazione minima consigliata della macchina virt
 
 In una configurazione non persistente, le modifiche al sistema operativo locale degli utenti non vengono mantenute dopo la disconnessione degli utenti. Queste configurazioni sono in genere sessioni multi-utente condivise. La configurazione della macchina virtuale varia in base al numero di utenti e alle risorse fisiche disponibili.
 
-Per una configurazione non persistente, Teams'app desktop deve essere installata per computer nell'immagine dorata. Per altre informazioni, vedere la sezione Installare o [aggiornare Teams'app desktop in VDI.](#install-or-update-the-teams-desktop-app-on-vdi) In questo modo si garantisce un avvio efficiente dell'app Teams durante una sessione utente.
+Per una configurazione non persistente, Teams'app desktop deve essere installata per computer nell'immagine dorata. Per altre informazioni, vedere la sezione Installare [o aggiornare Teams'app desktop in VDI.](#install-or-update-the-teams-desktop-app-on-vdi) In questo modo si garantisce un avvio efficiente dell'app Teams durante una sessione utente.
 
-L Teams in una configurazione non persistente richiede anche un gestore della memorizzazione nella cache del profilo, per una sincronizzazione Teams dati di runtime efficiente. Una sincronizzazione efficiente dei dati assicura che le informazioni appropriate specifiche dell'utente, ad esempio i dati, il profilo o le impostazioni di un utente, siano memorizzate nella cache durante la sessione dell'utente. Assicurarsi che i dati in queste due cartelle siano sincronizzati:<br>
+L Teams in una configurazione non persistente richiede anche un gestore della memorizzazione nella cache del profilo, per una sincronizzazione efficiente Teams dati di runtime. Una sincronizzazione efficiente dei dati assicura che le informazioni appropriate specifiche dell'utente, ad esempio i dati, il profilo o le impostazioni di un utente, siano memorizzate nella cache durante la sessione dell'utente. Assicurarsi che i dati in queste due cartelle siano sincronizzati:<br>
 
 - C:\Utenti\nomeutente\AppData\Local\Microsoft\IdentityCache (%localAppdata%\Microsoft\IdentityCache)
 - C:\Utenti\nomeutente\AppData\Roaming\Microsoft\Teams (%appdata%\Microsoft\Teams)
@@ -146,7 +146,7 @@ Tenere presente quanto segue quando si distribuiscono Teams con Microsoft 365 Ap
 
 Prima di distribuire Teams tramite Microsoft 365 Apps for enterprise, è necessario disinstallare le app Teams esistenti se sono state distribuite usando l'installazione per computer.
 
-Teams tramite Microsoft 365 Apps for enterprise viene installato per utente. Per altre informazioni, vedere la sezione [Installare o aggiornare l Teams app desktop in VDI.](#install-or-update-the-teams-desktop-app-on-vdi)
+Teams tramite Microsoft 365 Apps for enterprise viene installato per utente. Per altre informazioni, vedere la sezione [Installare o aggiornare Teams'app desktop in VDI.](#install-or-update-the-teams-desktop-app-on-vdi)
 
 #### <a name="teams-deployments-through-microsoft-365-apps-for-enterprise-updates"></a>Teams distribuzioni con Microsoft 365 Apps for enterprise aggiornamenti
 
@@ -154,7 +154,7 @@ Teams viene aggiunto anche alle installazioni esistenti di Microsoft 365 Apps fo
 
 #### <a name="using-teams-with-per-machine-installation-and-microsoft-365-apps-for-enterprise"></a>Uso Teams con l'installazione e la Microsoft 365 Apps for enterprise
 
-Microsoft 365 Apps for enterprise non supporta le installazioni per computer di Teams. Per usare l'installazione per computer, è necessario escludere Teams da Microsoft 365 Apps for enterprise. Vedere le [sezioni Distribuire l Teams app desktop](#deploy-the-teams-desktop-app-to-the-vm) nella macchina virtuale e Come escludere la distribuzione Teams tramite [Microsoft 365 Apps for enterprise](#how-to-exclude-teams-deployment-through-microsoft-365-apps-for-enterprise) distribuzione.
+Microsoft 365 Apps for enterprise non supporta le installazioni per computer di Teams. Per usare l'installazione per computer, è necessario escludere Teams da Microsoft 365 Apps for enterprise. Vedere le [sezioni Distribuire Teams'app desktop](#deploy-the-teams-desktop-app-to-the-vm) nella macchina virtuale e Come escludere Teams distribuzione [tramite](#how-to-exclude-teams-deployment-through-microsoft-365-apps-for-enterprise) Microsoft 365 Apps for enterprise.
 
 #### <a name="how-to-exclude-teams-deployment-through-microsoft-365-apps-for-enterprise"></a>Come escludere la Teams distribuzione tramite Microsoft 365 Apps for enterprise
 
@@ -194,7 +194,7 @@ Per altre informazioni su Teams e Microsoft 365 Apps for enterprise, vedere Come
         msiexec /i <path_to_msi> /l*v <install_logfile_name> ALLUSER=1 ALLUSERS=1
         ```
 
-        Questo processo Teams nella cartella Programmi (x86) in un sistema operativo a 64 bit e nella cartella Programmi in un sistema operativo a 32 bit. A questo punto, la configurazione dell'immagine dorata è completata. L'Teams per computer è necessario per le configurazioni non persistenti.
+        Questo processo Teams nella cartella Programmi (x86) in un sistema operativo a 64 bit e nella cartella Programmi in un sistema operativo a 32 bit. A questo punto, la configurazione dell'immagine dorata è completata. L'Teams per ogni computer è necessario per le configurazioni non persistenti.
 
         La sessione di accesso interattiva successiva inizia Teams e chiede le credenziali.
 
@@ -215,7 +215,7 @@ Per altre informazioni su Teams e Microsoft 365 Apps for enterprise, vedere Come
 
 ## <a name="teams-on-vdi-performance-considerations"></a>Teams sulle prestazioni VDI
 
-Sono disponibili diverse configurazioni di configurazione virtualizzate, ognuna con uno stato attivo diverso per l'ottimizzazione. Ad esempio, una configurazione potrebbe concentrarsi sulla densità degli utenti. Durante la pianificazione, considerare quanto segue per ottimizzare la configurazione in base alle esigenze del carico di lavoro dell'organizzazione.
+Sono disponibili diverse configurazioni di configurazione virtualizzate, ognuna con uno stato attivo diverso per l'ottimizzazione. Ad esempio, una configurazione potrebbe concentrarsi sulla densità degli utenti. Durante la pianificazione, tenere presente quanto segue per ottimizzare la configurazione in base alle esigenze del carico di lavoro dell'organizzazione.
 
 - Requisito minimo: alcuni carichi di lavoro potrebbero richiedere una configurazione con risorse superiori ai requisiti minimi. Ad esempio, carichi di lavoro per sviluppatori che usano applicazioni che richiedono più risorse di elaborazione.
 - Dipendenze: includono le dipendenze dall'infrastruttura, dal carico di lavoro e da altre considerazioni ambientali all'esterno dell'app desktop Teams desktop.
@@ -230,7 +230,7 @@ Oltre alla chat e alla collaborazione, Teams su VDI con chiamate e riunioni è d
 ![Diagramma che mostra Teams'architettura VDI](media/teams-on-vdi-architecture.png)
 
 > [!IMPORTANT]
-> Se attualmente si esegue Teams senza ottimizzazione AV in VDI e si usano funzionalità non ancora supportate per l'ottimizzazione, ad esempio Assegnare e assumere il controllo durante la condivisione delle app, è necessario impostare i criteri del provider di virtualizzazione per disattivare il reindirizzamento Teams. Questo significa che Teams le sessioni multimediali non verranno ottimizzate. Per istruzioni su come impostare i criteri per disattivare il reindirizzamento Teams, contattare il provider di virtualizzazione.
+> Se attualmente si esegue Teams senza ottimizzazione AV in VDI e si usano funzionalità non ancora supportate per l'ottimizzazione, ad esempio Assegnare e assumere il controllo durante la condivisione delle app, è necessario impostare i criteri del provider di virtualizzazione per disattivare il reindirizzamento Teams. Questo significa che Teams le sessioni multimediali non verranno ottimizzate. Per istruzioni su come impostare criteri per disattivare il reindirizzamento Teams, contattare il provider di virtualizzazione.
 
 ### <a name="network-requirements"></a>Requisiti di rete
 
@@ -247,7 +247,7 @@ Se si esegue la migrazione da Skype for Business in VDI a Teams in VDI, oltre al
 - Condivisione dello schermo dalla chat senza audio
 - Invio e ricezione simultanee di video e condivisione dello schermo
 
-### <a name="teams-on-chrome-browser-versus-teams-desktop-app-for-vdi"></a>Teams nel browser Chrome e Teams'app desktop per VDI
+### <a name="teams-on-chrome-browser-versus-teams-desktop-app-for-vdi"></a>Teams browser Chrome rispetto all'app desktop Teams per VDI
 
 Teams nel browser Chrome non fornisce una sostituzione dell'app desktop Teams per VDI con l'ottimizzazione AV. L'esperienza di chat e collaborazione funziona come previsto. Quando sono necessari elementi multimediali, ci sono alcune esperienze che potrebbero non soddisfare le aspettative degli utenti nel browser Chrome:
 
@@ -262,7 +262,7 @@ Se l'organizzazione vuole usare solo le funzionalità di chat e collaborazione i
 
 ### <a name="set-policies-to-turn-off-calling-and-meeting-functionality"></a>Impostare i criteri per disattivare la funzionalità di chiamata e riunione
 
-È possibile impostare i criteri usando l'interfaccia Microsoft Teams o PowerShell. La propagazione delle modifiche ai criteri potrebbe richiedere del tempo (alcune ore). Se le modifiche per un determinato account non sono immediatamente disponibili, riprovare tra qualche ora.
+È possibile impostare criteri usando l'interfaccia Microsoft Teams o PowerShell. La propagazione delle modifiche ai criteri potrebbe richiedere del tempo (alcune ore). Se le modifiche per un determinato account non sono immediatamente disponibili, riprovare tra qualche ora.
 
 [**Criteri di chiamata:**](teams-calling-policy.md)Teams include il criterio di chiamata Predefinito DisallowCalling, in cui tutte le funzionalità di chiamata sono disattivate. Assegnare il criterio DisallowCalling a tutti gli utenti dell'organizzazione che usano Teams in un ambiente virtualizzato.
 
@@ -314,13 +314,13 @@ Per altre informazioni sull'uso di PowerShell per gestire i criteri delle riunio
 
 ## <a name="migrate-teams-on-vdi-with-chat-and-collaboration-to-optimize-teams-with-calling-and-meetings"></a>Eseguire la Teams su VDI con chat e collaborazione per ottimizzare Teams con chiamate e riunioni
 
-Se si ha un'implementazione esistente di Teams in VDI con chat e collaborazione in cui sono stati impostati criteri a livello di utente per disattivare le funzionalità di chiamata e riunione e si esegue la migrazione a Teams con l'ottimizzazione AV, è necessario impostare i criteri per attivare la funzionalità di chiamata e riunione per gli utenti di Teams per gli utenti VDI.
+Se si ha un'implementazione esistente di Teams in VDI con chat e collaborazione in cui sono stati impostati criteri a livello di utente per disattivare le funzionalità di chiamata e riunione e si esegue la migrazione a Teams con l'ottimizzazione AV, è necessario impostare i criteri per attivare le funzionalità di chiamata e riunione per gli utenti di Teams in VDI.
 
 ### <a name="set-policies-to-turn-on-calling-and-meeting-functionality"></a>Impostare i criteri per attivare la funzionalità di chiamata e riunione
 
-È possibile usare l'interfaccia Microsoft Teams o PowerShell per impostare e assegnare criteri di chiamata e riunione agli utenti. La propagazione delle modifiche ai criteri può richiedere del tempo (alcune ore). Se le modifiche per un determinato account non sono immediatamente disponibili, riprovare dopo alcune ore.
+È possibile usare l'Microsoft Teams di amministrazione o PowerShell per impostare e assegnare criteri di chiamata e riunione agli utenti. La propagazione delle modifiche ai criteri può richiedere del tempo (alcune ore). Se le modifiche per un determinato account non sono immediatamente disponibili, riprovare dopo alcune ore.
 
-[**Criteri di chiamata:**](teams-calling-policy.md)i criteri di chiamata Teams le funzionalità di chiamata disponibili per gli utenti. Teams include il criterio di chiamata AllowCalling predefinito, in cui tutte le funzionalità di chiamata sono attivate. Per attivare tutte le funzionalità di chiamata, assegnare il criterio AllowCalling. In caso contrario, creare un criterio di chiamata personalizzato per attivare le funzionalità di chiamata desiderate e assegnarle agli utenti.
+[**Criteri di chiamata:**](teams-calling-policy.md)i criteri di chiamata in Teams le funzionalità di chiamata disponibili per gli utenti. Teams include il criterio di chiamata AllowCalling predefinito, in cui tutte le funzionalità di chiamata sono attivate. Per attivare tutte le funzionalità di chiamata, assegnare il criterio AllowCalling. In caso contrario, creare un criterio di chiamata personalizzato per attivare le funzionalità di chiamata desiderate e assegnarle agli utenti.
 
 [**Criteri riunione:**](meeting-policies-in-teams.md)i criteri riunione in Teams i tipi di riunioni che gli utenti possono creare e le caratteristiche disponibili per i partecipanti alla riunione pianificati dagli utenti dell'organizzazione. Teams include i criteri predefiniti per le riunioni AllOn, in cui tutte le funzionalità della riunione sono attivate. Per attivare tutte le caratteristiche della riunione, assegnare il criterio AllOn. In caso contrario, è possibile creare criteri di riunione personalizzati per attivare le caratteristiche della riunione desiderate e assegnarle gli utenti.
 
@@ -344,7 +344,7 @@ Per assegnare un criterio a più utenti contemporaneamente:
 Si può anche procedere nel modo seguente:
 
 1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare al criterio da assegnare. Ad esempio:
-    - Passare a **Criteri**  >  **chiamate vocali** e quindi fare clic su **ConsentiChiamazione**.
+    - Passare a **Criteri**  >  **chiamate vocali** e quindi fare clic su **ConsentiChiamazione.**
     - Passare a **Criteri**  >  **riunione riunioni** e quindi fare clic su **AllOn.**
 2. Scegliere **Gestisci utenti**.
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi fare clic su **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
@@ -352,7 +352,7 @@ Si può anche procedere nel modo seguente:
 
 #### <a name="assign-policies-using-powershell"></a>Assegnare criteri tramite PowerShell
 
-L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](/powershell/module/skype/grant-csteamscallingpolicy) per assegnare i criteri di chiamata AllowCalling a un utente.
+L'esempio seguente mostra come usare [Grant-CsTeamsCallingPolicy](/powershell/module/skype/grant-csteamscallingpolicy) per assegnare il criterio di chiamata AllowCalling a un utente.
 
 ```PowerShell
 Grant-CsTeamsCallingPolicy -PolicyName AllowCalling -Identity "user email id"
@@ -389,7 +389,7 @@ Teams I criteri VDI sono disponibili nel Microsoft Teams modulo. Questi criteri 
 - Set-CsTeamsVdiPolicy
 
 > [!NOTE]
-> Si tratta solo di ambienti non ottimizzati.
+> Questo è solo per gli ambienti non ottimizzati.
 
 ### <a name="update-a-module-name"></a>Aggiornare il nome di un modulo
 
@@ -418,7 +418,7 @@ Quando gli utenti con questa impostazione dei criteri VDI -DisableCallsAndMeetin
 Tutti i tipi di chiamata devono essere disabilitati.
 
 > [!NOTE]
-> Si tratta solo di ambienti non ottimizzati.
+> Questo è solo per gli ambienti non ottimizzati.
 
 ```PowerShell
 #>
@@ -442,7 +442,7 @@ Quando gli utenti con l'impostazione dei criteri VDI -DisableAudioVideoInCallsAn
 - Gli utenti non dovrebbero essere in grado di effettuare una chiamata audio e video da persona a persona da VDI.
 
 > [!NOTE]
-> Si tratta solo di ambienti non ottimizzati.
+> Questo è solo per gli ambienti non ottimizzati.
 
 ```powershell
 #>
@@ -467,10 +467,11 @@ if($cleanup){
 
 ### <a name="client-deployment-installation-and-setup"></a>Distribuzione, installazione e configurazione del client
 
-- Con l'installazione per computer, Teams in VDI non viene aggiornato automaticamente come lo sono i client Teams non VDI. È necessario aggiornare l'immagine della macchina virtuale installando un nuovo file MSI come descritto nella sezione Installare o aggiornare l'app desktop Teams in [VDI.](#install-or-update-the-teams-desktop-app-on-vdi) È necessario disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente.
+- Con l'installazione per computer, Teams in VDI non viene aggiornato automaticamente come nei client non VDI Teams client. È necessario aggiornare l'immagine della macchina virtuale installando un nuovo file MSI come descritto nella sezione Installare o aggiornare l'app desktop Teams in [VDI.](#install-or-update-the-teams-desktop-app-on-vdi) È necessario disinstallare la versione corrente per eseguire l'aggiornamento a una versione più recente.
 - Negli ambienti Citrix, se l'utente si disconnette dalla macchina virtuale mentre Teams è in esecuzione, gli aggiornamenti di Teams possono comportare che l'utente sia in uno stato non ottimizzato per av quando si riconnette. È consigliabile che gli utenti Teams prima di disconnettersi da Citrix Virtual Machine per evitare questo scenario.
 - Teams deve essere distribuito per utente o per computer. La distribuzione di Teams per utenti simultanei e per computer non è supportata. Per eseguire la migrazione da un computer o un utente a una di queste modalità, seguire la procedura di disinstallazione e ridistribuire in entrambe le modalità.
 - Azure Virtual Desktop non supporta al momento i client basati su macOS e Linux.
+- L'opzione tenant veloce può causare problemi relativi alle chiamate in VDI. Il riavvio del client ridurrà questi problemi.
 
 ### <a name="calling-and-meetings"></a>Chiamate e riunioni
 
@@ -489,7 +490,7 @@ Le funzionalità di chiamata e riunione seguenti non sono supportate:
 - Controllo zoom
 
 > [!NOTE]
-> Stiamo lavorando per aggiungere funzionalità di chiamata e riunione attualmente disponibili solo in ambienti non VDI. Questi potrebbero includere un maggiore controllo dell'amministratore sulla qualità, altri scenari di condivisione dello schermo e funzionalità avanzate aggiunte di recente a Teams. Contatta il tuo Teams per altre informazioni sulle funzionalità imminenti.
+> Stiamo lavorando per aggiungere funzionalità di chiamata e riunione attualmente disponibili solo in ambienti non VDI. Questi potrebbero includere un maggiore controllo dell'amministratore sulla qualità, altri scenari di condivisione dello schermo e funzionalità avanzate aggiunte di recente Teams. Contatta il tuo Teams per saperne di più sulle funzionalità imminenti.
 
 Di seguito sono riportati i problemi noti e le limitazioni per le chiamate e le riunioni:
 
@@ -512,7 +513,7 @@ Per Teams problemi noti non correlati a VDI, vedere Supporto Teams [nell'organiz
 
 ### <a name="troubleshoot-citrix-components"></a>Risolvere i problemi relativi ai componenti Citrix
 
-#### <a name="teams-crashes-or-the-teams-sign-in-screen-is-blank"></a>Teams si arresta in modo anomalo o la Teams di accesso è vuota
+#### <a name="teams-crashes-or-the-teams-sign-in-screen-is-blank"></a>Teams si arresta in modo anomalo o Teams schermata di accesso è vuota
 
 Si tratta di un problema noto con le versioni 1906 e 1909 di Citrix VDA. Per risolvere questo problema, aggiungere il valore DWORD del Registro di sistema seguente e impostarlo su 204 (esadecimale).
 

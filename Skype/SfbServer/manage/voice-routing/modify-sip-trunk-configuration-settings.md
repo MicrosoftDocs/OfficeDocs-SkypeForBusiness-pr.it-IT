@@ -11,12 +11,12 @@ f1.keywords:
 - NOCSH
 localization_priority: Normal
 description: 'Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway di rete telefonica a commutazione pubblica, un PBX (Ip-Public Branch Exchange) o un Session Border Controller (SBC) presso il provider di servizi. '
-ms.openlocfilehash: 7f6a0d0bd39ff466b279bbef3b5727e1d3ea17e3285e71f646b26ff2689fa760
-ms.sourcegitcommit: 2a76435beaac1e5daa647e93f693ea8672ec0135
+ms.openlocfilehash: befb9aac46d815cd89b25104c11a08ef2653a7ab
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/11/2021
-ms.locfileid: "57849921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58233431"
 ---
 # <a name="skype-for-business-servermodify-sip-trunk-configuration-settings"></a>Skype for Business ServerModify SIP trunk configuration settings
 
@@ -57,7 +57,7 @@ Quando si modificano le impostazioni di configurazione dei trunk SIP utilizzando
 
 **Per modificare le impostazioni di configurazione dei trunk SIP tramite il Skype for Business Server pannello di controllo**
 
-1. Nel Pannello Skype for Business Server, fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
+1. Nel Pannello Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
 2. Nella scheda **Configurazione trunk** fare doppio clic sulle impostazioni di configurazione del trunk che si desidera modificare. È possibile modificare una sola raccolta di impostazioni per volta. Per apportare le stesse modifiche a più raccolte, utilizzare Windows PowerShell.
 3. Nella finestra **di dialogo Modifica configurazione** trunk effettuare le selezioni appropriate e quindi fare clic su **OK.**
 4. La proprietà Stato per la raccolta verrà aggiornata a Commit non eseguito. Per confermare le modifiche ed eliminare la raccolta, fare clic su **Commit** e quindi su **Commit tutto.**
