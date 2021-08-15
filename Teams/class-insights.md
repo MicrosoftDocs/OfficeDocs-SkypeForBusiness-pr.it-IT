@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0048b4b4b7c58f5a967cca40122b424d0af42b8d6229c3e50f326be2804ca5ff
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2c55733e6175efb4adb02a621210ddc5d78ac9f6
+ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58234191"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -210,14 +210,22 @@ Distribuire ai **docenti** il materiale seguente:
 Materiale per i **responsabili dell'istruzione**:
 *   [Pagina di supporto di Insights per le organizzazioni nel settore dell'istruzione](https://support.microsoft.com/office/8738d1b1-4e1c-49bd-9e8d-b5292474c347).
 
-## <a name="turn-insights-on-or-off"></a>Disattivare o attivare Insights
-Per impostazione predefinita, Insights è attivato. Quando si sceglie di non usare il servizio, *tutti i dati raccolti per Insights verranno eliminati*. Se si riattiva Insights, la raccolta dei dati inizierà dal momento in cui il servizio viene riattivato.
+### <a name="turn-insights-on-or-off"></a>Disattivare o attivare Insights
+
+Per impostazione predefinita, Insights è attivato, consentendo di raccogliere dati analitici sulle attività degli studenti all'interno di Teams per usarli in Insights. È possibile decidere di rifiutare esplicitamente Insights, nel qual caso *tutti i dati raccolti per Insights vengono eliminati* e la raccolta dei dati viene interrotta. Se si riattiva Insights, la raccolta dei dati inizierà dal momento in cui il servizio viene riattivato.
+
+* Per attivare o disattivare Insights nello stesso posto, aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com/) e passare a **Impostazioni** > **Gestisci Insights per l'istruzione**. Attivare/disattivare **Raccogli dati attività per Insights** per abilitare/disabilitare Insights.
+
+:::image type="content" source="media/insights-settings.png" alt-text="Screenshot della pagina dell'interfaccia di amministrazione di SDS in cui è disponibile un'opzione di impostazioni per attivare o disattivare Insights.":::
+
+> [!NOTE]
+> Se Insights è stato disattivato, i dati raccolti vengono eliminati. I dati eliminati in seguito al rifiuto esplicito non possono essere ripristinati in un secondo momento, anche se Insights viene riabilitato.
+
+### <a name="turn-sds-for-insights-on-or-off"></a>Disattivare o attivare SDS
 
 School Data Sync (SDS) consente di automatizzare il processo di importazione e sincronizzazione dei dati del sistema informativo degli studenti (SIS) con Teams.
 
 L'uso di Insights *non* richiede l'uso di SDS. Tuttavia, è possibile scegliere di non usare Insights in qualsiasi momento. 
-
-* Per attivare/disattivare Insights nello stesso posto, aprire l'[interfaccia di amministrazione di SDS](https://sds.microsoft.com/) e passare a **Impostazioni** > **Gestisci Insights per l’istruzione**. Attivare/isattivare '**Raccogli dati attività per Insights**' per abilitare/disabilitare Insights.
 
 * Per disattivare l'uso di Insights di School Data Sync seguire le istruzioni in [Disabilitazione di SDS for Insights](/schooldatasync/how-to-deploy-sds-for-insights#disabling-sds-for-insights).
 
