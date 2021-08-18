@@ -217,6 +217,8 @@ items:
                 href: /SkypeForBusiness/hybrid/move-users-between-on-premises-and-cloud
               - name: Spostare utenti da ambiente locale a Teams
                 href: /SkypeForBusiness/hybrid/move-users-from-on-premises-to-teams
+              - name: Spostare utenti da ambiente locale a Skype for Business Online
+                href: /SkypeForBusiness/hybrid/move-users-from-on-premises-to-skype-for-business-online
               - name: Spostare utenti dal cloud all'ambiente locale
                 href: /SkypeForBusiness/hybrid/move-users-from-the-cloud-to-on-premises
               - name: Gestire la migrazione delle riunioni
@@ -227,16 +229,10 @@ items:
                 href: /SkypeForBusiness/hybrid/decommission-on-prem-overview
               - name: Spostare gli utenti nel cloud
                 href: /SkypeForBusiness/hybrid/decommission-move-on-prem-users
-              - name: Disabilitare la soluzione ibrida per completare la migrazione a solo Team
-                items:
-                  - name: Disabilitare la soluzione ibrida per completare la migrazione a solo Team
-                    href: /SkypeForBusiness//hybrid/cloud-consolidation-disabling-hybrid
-                  - name: Aggiornare le voci DNS
-                    ref: /SkypeForBusiness//hybrid/decommission-manage-dns-entries.md
-                  - name: Decidere come gestire gli attributi dopo la rimozione delle autorizzazioni
-                    href: /SkypeForBusiness//hybrid/cloud-consolidation-managing-attributes
+              - name: Disabilitare la soluzione ibrida per completare la migrazione al cloud
+                href: /SkypeForBusiness/hybrid/cloud-consolidation-disabling-hybrid
               - name: Spostare gli endpoint applicazione nel cloud
-                href: /SkypeForBusiness/hybrid/decommission-move-on-prem-endpoints
+                href: /SkypeForBusiness/hybrid/decommission-move-on-prem-endpoints.md
               - name: Rimuovere la distribuzione di Skype for Business
                 href: /SkypeForBusiness/hybrid/decommission-remove-on-prem
           - name: Distribuire una topologia di foresta di risorse
@@ -291,8 +287,6 @@ items:
             href: legal-hold.md
           - name: Ricerca contenuto
             href: content-search.md
-          - name: Flusso di lavoro di Teams in Advanced eDiscovery
-            href: /microsoft-365/compliance/teams-workflow-in-advanced-ediscovery
           - name: Controllo
             href: audit-log-events.md
           - name: Customer Key
@@ -303,8 +297,6 @@ items:
             href: teams-privacy.md
           - name: Posizione dei dati in Teams
             href: location-of-data-in-teams.md
-          - name: Privacy dei feedback di Microsoft Teams
-            href: teams-privacy-feedback.md
           - name: Bloccare l'accesso a SharePoint Online per utenti specifici
             href: block-access-sharepoint.md
           - name: Panoramica controllo criteri
@@ -365,7 +357,7 @@ items:
                 href: guest-experience.md
               - name: Attivare o disattivare l'accesso guest
                 href: set-up-guests.md
-              - name: Visualizzare gli utenti guest in un team
+              - name: Aggiungere un utente guest a un team
                 href: view-guests.md
               - name: Modificare le informazioni relative agli utenti guest
                 href: edit-guests-information.md
@@ -453,8 +445,6 @@ items:
                 href: teams-analytics-and-reports/pstn-usage-report.md
               - name: Report sull'uso degli eventi live di Teams
                 href: teams-analytics-and-reports/teams-live-event-usage-report.md
-              - name: Report sulla licenza di Teams Information Protection
-                href: teams-analytics-and-reports/information-protection-license-report.md
       - name: 'File di log, integrità dei servizi e supporto'
         items:
           - name: Usare i file di log per monitorare e risolvere i problemi di Teams
@@ -491,8 +481,8 @@ items:
         href: teams-policies.md
       - name: Configurare la moderazione dei canali in Teams
         href: manage-channel-moderation-in-teams.md
-      - name: Gestire i componenti live
-        href: live-components-in-teams.md
+      - name: Condividere file in Teams
+        href: sharing-files-in-teams.md
       - name: Integrazione della posta elettronica di Outlook e Teams
         href: teams-outlook-email-integration.md
       - name: Condividere in Teams da Outlook
@@ -567,16 +557,14 @@ items:
         href: cortana-in-teams.md
       - name: Configurare la gerarchia di destinazione del team
         href: set-up-your-team-hierarchy.md
-      - name: Chat con supervisione per tenant non didattici
-        href: supervised-chat-non-edu.md
-  - name: Panoramica su riunioni e conferenze
+  - name: 'Riunioni, conferenze ed eventi live'
     items:
+      - name: 'Avvio veloce: riunioni ed eventi live'
+        href: quick-start-meetings-live-events.md
       - name: Pianificare la distribuzione
         href: deploy-meetings-microsoft-teams-landing-page.md
-      - name: 'Riunioni, conferenze ed eventi live'
+      - name: Riunioni
         items:
-          - name: Guida introduttiva
-            href: quick-start-meetings-live-events.md
           - name: Gestire i criteri di riunione
             items:
               - name: Panoramica
@@ -597,64 +585,46 @@ items:
                     href: meeting-policies-participants-and-guests.md
                   - name: Rimuovere criterio riunione RestrictedAnonymousAccess da utenti
                     href: meeting-policies-restricted-anonymous-access.md
-          - name: Criteri riunione e scadenza delle riunioni
-            href: meeting-expiration.md
           - name: Gestire le impostazioni delle riunioni
             href: meeting-settings-in-teams.md
           - name: Messaggi di posta elettronica inviati automaticamente agli utenti in caso di modifica delle impostazioni
             href: emails-sent-to-users-when-their-settings-change-in-teams.md
-          - name: Gestire le riunioni e le funzionalità per le riunioni
-            items:
-              - name: Consentire agli utenti di registrare il loro nome quando partecipano a una riunione
-                href: enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md
-              - name: Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
-                href: turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md
-              - name: Usare la tecnologia NDI® in Teams
-                href: use-NDI-in-meetings.md
-              - name: Riunioni di Teams in browser non supportati
-                href: unsupported-browsers.md
-              - name: Configurare la condivisione desktop in Teams
-                href: configure-desktop-sharing.md
-              - name: Registrazione delle riunioni di Teams nel cloud
-                href: cloud-recording.md
-              - name: Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni
-                href: tmr-meeting-recording-change.md
-              - name: Integrazioni del Centro contatti
-                href: teams-contact-center.md
-              - name: Usare il componente aggiuntivo Riunione di Teams in Outlook
-                href: teams-add-in-for-outlook.md
-              - name: Configurare l'app Riunioni Skype per Teams
-                href: configure-skype-meetings-app-to-work-with-teams.md
-              - name: Configurare la funzionalità Chiamami per gli utenti
-                href: set-up-the-call-me-feature-for-your-users.md
-              - name: Ottenere un report di partecipazione alle riunioni
-                href: teams-analytics-and-reports/meeting-attendance-report.md
-              - name: Gestire la Lavagna in Teams
-                href: manage-whiteboard.md
-              - name: Configurare il componente aggiuntivo delle riunioni di Teams per Google Workspace
-                href: google-workspace-addon-teams.md
-              - name: Interoperabilità video nel cloud
-                href: cloud-video-interop.md
-              - name: Esperienza di solo visualizzazione nelle riunioni
-                href: view-only-meeting-experience.md
+          - name: Consentire agli utenti di registrare il loro nome quando partecipano a una riunione
+            href: enable-users-to-record-their-name-when-they-join-a-meeting-in-teams.md
+          - name: Attivare o disattivare gli annunci di tipo Entrata o Uscita per le riunioni
+            href: turn-on-or-off-entry-and-exit-announcements-for-meetings-in-teams.md
+          - name: Usare la tecnologia NDI® in Teams
+            href: use-NDI-in-meetings.md
+          - name: Opzione Alza la mano nelle riunioni di Teams
+            href: raise-hand-meetings.md
+          - name: Riunioni di Teams in browser non supportati
+            href: unsupported-browsers.md
+          - name: Configurare la condivisione desktop in Teams
+            href: configure-desktop-sharing.md
+          - name: Registrazione delle riunioni di Teams nel cloud
+            href: cloud-recording.md
+          - name: Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni
+            href: tmr-meeting-recording-change.md
+          - name: Integrazioni del Centro contatti
+            href: teams-contact-center.md
+          - name: Usare il componente aggiuntivo Riunione di Teams in Outlook
+            href: teams-add-in-for-outlook.md
+          - name: Configurare l'app Riunioni Skype per Teams
+            href: configure-skype-meetings-app-to-work-with-teams.md
+          - name: Configurare la funzionalità Chiamami per gli utenti
+            href: set-up-the-call-me-feature-for-your-users.md
+          - name: Ottenere un report di partecipazione alle riunioni
+            href: teams-analytics-and-reports/meeting-attendance-report.md
           - name: Configurazione del servizio MMS (Meeting Migration Service)
             href: /SkypeForBusiness/audio-conferencing-in-office-365/setting-up-the-meeting-migration-service-mms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
-          - name: Configurare i webinar in Microsoft Teams
+          - name: Gestire la Lavagna in Teams
+            href: manage-whiteboard.md
+          - name: Configurare il componente aggiuntivo delle riunioni di Teams per Google Workspace
+            href: google-workspace-addon-teams.md
+          - name: Interoperabilità video nel cloud
+            href: cloud-video-interop.md
+          - name: Configurare webinar in Microsoft Teams
             href: set-up-webinars.md
-          - name: Eventi live
-            items:
-              - name: Cosa sono gli eventi live di Teams?
-                href: teams-live-events/what-are-teams-live-events.md
-              - name: Pianificare gli eventi live di Teams
-                href: teams-live-events/plan-for-teams-live-events.md
-              - name: Configurare gli eventi live di Teams
-                href: teams-live-events/set-up-for-teams-live-events.md
-              - name: Usare PowerShell per impostare i criteri degli eventi live di Teams
-                href: teams-live-events/set-teams-live-events-policies-using-powershell.md
-              - name: Configurare le impostazioni degli eventi live di Teams
-                href: teams-live-events/configure-teams-live-events.md
-              - name: Criteri di registrazione degli eventi live
-                href: teams-live-events/live-events-recording-policies.md
       - name: Audioconferenza
         items:
           - name: Pianificare la distribuzione
@@ -745,6 +715,20 @@ items:
                 href: audio-conferencing-zones.md
               - name: 'Video: audioconferenza in Teams'
                 href: ./audio-conferencing-in-office-365.md
+      - name: Eventi live
+        items:
+          - name: Cosa sono gli eventi live di Teams?
+            href: teams-live-events/what-are-teams-live-events.md
+          - name: Pianificare gli eventi live di Teams
+            href: teams-live-events/plan-for-teams-live-events.md
+          - name: Configurare gli eventi live di Teams
+            href: teams-live-events/set-up-for-teams-live-events.md
+          - name: Usare PowerShell per impostare i criteri degli eventi live di Teams
+            href: teams-live-events/set-teams-live-events-policies-using-powershell.md
+          - name: Configurare le impostazioni degli eventi live di Teams
+            href: teams-live-events/configure-teams-live-events.md
+          - name: Criteri di registrazione degli eventi live
+            href: teams-live-events/live-events-recording-policies.md
       - name: Microsoft Teams Rooms
         items:
           - name: Panoramica
@@ -809,15 +793,13 @@ items:
                 href: rooms/lrs-migration.md
               - name: Videocamere di contenuto
                 href: rooms/content-camera.md
-              - name: Controlli di riconoscimento vocale per altoparlanti intelligenti
-                href: rooms/voice-recognition.md
           - name: Gestire
             items:
               - name: Panoramica della gestione
                 href: rooms/rooms-manage.md
               - name: Manutenzione e operazioni
                 href: rooms/rooms-operations.md
-              - name: Problemi noti
+              - name: Supportare Teams nell'organizzazione
                 href: rooms/known-issues.md
               - name: Dispositivi con Monitoraggio di Azure
                 href: rooms/azure-monitor-manage.md
@@ -829,6 +811,8 @@ items:
     items:
       - name: Pianificare la soluzione vocale di Teams
         href: cloud-voice-landing-page.md
+      - name: Gestisci i criteri vocali e di chiamata in Teams
+        href: voice-and-calling-policies.md
       - name: Sistema telefonico
         items:
           - name: Che cos'è Sistema telefonico
@@ -843,8 +827,6 @@ items:
             items:
               - name: Configurare Cloud Voicemail
                 href: set-up-phone-system-voicemail.md
-              - name: Gestire i criteri per la segreteria telefonica
-                href: manage-voicemail-policies.md
               - name: Modificare la lingua predefinita per la segreteria telefonica
                 href: change-the-default-language-for-greetings-and-emails.md
               - name: Lingue per messaggi e messaggi di saluto della segreteria telefonica
@@ -889,102 +871,100 @@ items:
             href: shared-line-appearance.md
           - name: Configurazione del tastierino
             href: dial-pad-configuration.md
-      - name: Opzioni di connettività PSTN
+      - name: Piani di chiamata
+        items:
+          - name: Qual è il piano di chiamata adatto alle proprie esigenze?
+            href: calling-plan-landing-page.md
+          - name: Come acquistare un piano di chiamata
+            href: calling-plans-for-office-365.md
+          - name: Configurare i piani di chiamata per l'organizzazione
+            href: set-up-calling-plans.md
+          - name: 'Guida introduttiva: configurazione dei piani di chiamata'
+            href: configuring-teams-calling-quickstartguide.md
+          - name: Disponibilità di Piano di chiamata per Paesi e aree geografiche
+            href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
+      - name: Instradamento diretto di Sistema telefonico
         items:
           - name: Panoramica
-            href: pstn-connectivity.md
-          - name: Piani di chiamata
-            items:
-              - name: Qual è il piano di chiamata adatto alle proprie esigenze?
-                href: calling-plan-landing-page.md
-              - name: Configurare i piani di chiamata per l'organizzazione
-                href: set-up-calling-plans.md
-              - name: 'Guida introduttiva: configurazione dei piani di chiamata'
-                href: configuring-teams-calling-quickstartguide.md
-              - name: Disponibilità di Piano di chiamata per Paesi e aree geografiche
-                href: country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md
-          - name: Connessione con operatore
-            items:
-              - name: Piano per la connessione con operatore
-                href: operator-connect-plan.md
-              - name: Configurare la connessione con operatore
-                href: operator-connect-configure.md
-          - name: Instradamento diretto
+            href: direct-routing-landing-page.md
+          - name: Pianificare Instradamento diretto
+            href: direct-routing-plan.md
+          - name: Elenco di Session Border Controller certificati per Instradamento diretto
+            href: direct-routing-border-controllers.md
+          - name: Configurare l'instradamento diretto
             items:
               - name: Panoramica
-                href: direct-routing-landing-page.md
-              - name: Pianificare Instradamento diretto
-                href: direct-routing-plan.md
-              - name: Session Border Controller certificati per l'instradamento diretto
-                href: direct-routing-border-controllers.md
-              - name: Configurare l'instradamento diretto
+                href: direct-routing-configure.md
+              - name: 'Passaggio 1: Connettere un controller SBC'
+                href: direct-routing-connect-the-sbc.md
+              - name: 'Passaggio 2: Abilitare gli utenti'
+                href: direct-routing-enable-users.md
+              - name: 'Passaggio 3: Configurare il routing vocale'
+                href: direct-routing-voice-routing.md
+              - name: 'Passaggio 4: Tradurre i numeri di telefono'
+                href: direct-routing-translate-numbers.md
+              - name: Configurare un SBC per più tenant
+                href: direct-routing-sbc-multiple-tenants.md
+              - name: Come usare i dispositivi analogici con l'instradamento diretto
+                href: direct-routing-analog-devices.md
+          - name: Routing basato sulla posizione
+            items:
+              - name: Pianificare l'instradamento basato sulla posizione per Instradamento diretto
+                href: location-based-routing-plan.md
+              - name: Configurare le impostazioni di rete per l'instradamento basato sulla posizione
+                href: location-based-routing-configure-network-settings.md
+              - name: Abilitare l'instradamento basato sulla posizione per Instradamento diretto
+                href: location-based-routing-enable.md
+          - name: Bypass multimediale per Instradamento diretto
+            items:
+              - name: Pianificare il bypass multimediale con Instradamento diretto
+                href: direct-routing-plan-media-bypass.md
+              - name: Configurare il bypass multimediale con Instradamento diretto
+                href: direct-routing-configure-media-bypass.md
+          - name: Ottimizzazione degli elementi multimediali locali per Instradamento diretto
+            items:
+              - name: Pianificare l'ottimizzazione degli elementi multimediali locali
+                href: direct-routing-media-optimization.md
+              - name: Configurare l'ottimizzazione degli elementi multimediali locali
+                href: direct-routing-media-optimization-configure.md
+          - name: Account utente in un ambiente ibrido con connettività PSTN
+            href: direct-routing-user-accounts-in-a-hybrid-environment.md
+          - name: Eseguire la migrazione a Instradamento diretto
+            href: direct-routing-migrating.md
+          - name: Monitorare e risolvere i problemi di Instradamento diretto
+            items:
+              - name: Panoramica
+                href: direct-routing-monitor-and-troubleshoot.md
+              - name: Dashboard sull'integrità
+                href: direct-routing-health-dashboard.md
+          - name: Informazioni di riferimento tecniche per Instradamento diretto
+            items:
+              - name: Failover trunk sulle chiamate in uscita
+                href: direct-routing-trunk-failover-on-outbound-call.md
+              - name: Prefisso internazionale per percorso multimediale
+                href: direct-routing-country-codes.md
+              - name: Script di PowerShell per testare le connessioni dei Session Border Controller
+                href: sip-tester-powershell-script.md
+              - name: Gestire le notifiche di chiamata
+                href: direct-routing-call-notifications.md
+              - name: Protocolli
                 items:
-                  - name: Panoramica
-                    href: direct-routing-configure.md
-                  - name: 'Passaggio 1: Connettere un controller SBC'
-                    href: direct-routing-connect-the-sbc.md
-                  - name: 'Passaggio 2: Abilitare gli utenti'
-                    href: direct-routing-enable-users.md
-                  - name: 'Passaggio 3: Configurare il routing vocale'
-                    href: direct-routing-voice-routing.md
-                  - name: 'Passaggio 4: Tradurre i numeri di telefono'
-                    href: direct-routing-translate-numbers.md
-                  - name: Configurare un SBC per più tenant
-                    href: direct-routing-sbc-multiple-tenants.md
-                  - name: Come usare i dispositivi analogici con l'instradamento diretto
-                    href: direct-routing-analog-devices.md
-                  - name: Gestire i criteri di routing vocale
-                    href: manage-voice-routing-policies.md
-                  - name: Gestire le notifiche di chiamata
-                    href: direct-routing-call-notifications.md
-              - name: Routing basato sulla posizione
-                items:
-                  - name: Pianificare l'instradamento basato sulla posizione per Instradamento diretto
-                    href: location-based-routing-plan.md
-                  - name: Configurare le impostazioni di rete per l'instradamento basato sulla posizione
-                    href: location-based-routing-configure-network-settings.md
-                  - name: Abilitare l'instradamento basato sulla posizione per Instradamento diretto
-                    href: location-based-routing-enable.md
-              - name: Bypass multimediale per Instradamento diretto
-                items:
-                  - name: Pianificare il bypass multimediale con Instradamento diretto
-                    href: direct-routing-plan-media-bypass.md
-                  - name: Configurare il bypass multimediale con Instradamento diretto
-                    href: direct-routing-configure-media-bypass.md
-              - name: Ottimizzazione degli elementi multimediali locali per Instradamento diretto
-                items:
-                  - name: Pianificare l'ottimizzazione degli elementi multimediali locali
-                    href: direct-routing-media-optimization.md
-                  - name: Configurare l'ottimizzazione degli elementi multimediali locali
-                    href: direct-routing-media-optimization-configure.md
-              - name: Account utente in un ambiente ibrido con connettività PSTN
-                href: direct-routing-user-accounts-in-a-hybrid-environment.md
-              - name: Eseguire la migrazione a Instradamento diretto
-                href: direct-routing-migrating.md
-              - name: Monitorare e risolvere i problemi di Instradamento diretto
-                items:
-                  - name: Panoramica
-                    href: direct-routing-monitor-and-troubleshoot.md
-                  - name: Dashboard sull'integrità
-                    href: direct-routing-health-dashboard.md
-              - name: Informazioni di riferimento tecniche per Instradamento diretto
-                items:
-                  - name: Failover trunk sulle chiamate in uscita
-                    href: direct-routing-trunk-failover-on-outbound-call.md
-                  - name: Prefisso internazionale per percorso multimediale
-                    href: direct-routing-country-codes.md
-                  - name: Script di PowerShell per testare le connessioni dei Session Border Controller
-                    href: sip-tester-powershell-script.md
-                  - name: Protocolli
-                    items:
-                      - name: Definizioni e standard RFC
-                        href: direct-routing-protocols.md
-                      - name: Protocollo SIP
-                        href: direct-routing-protocols-SIP.md
-                      - name: Protocolli multimediali
-                        href: direct-routing-protocols-media.md
-                  - name: Instradamento diretto di Survivable Branch Appliance
-                    href: direct-routing-survivable-branch-appliance.md
+                  - name: Definizioni e standard RFC
+                    href: direct-routing-protocols.md
+                  - name: Protocollo SIP
+                    href: direct-routing-protocols-SIP.md
+                  - name: Protocolli multimediali
+                    href: direct-routing-protocols-media.md
+              - name: Gestire i criteri di routing vocale
+                href: manage-voice-routing-policies.md
+              - name: Instradamento diretto di Survivable Branch Appliance
+                href: direct-routing-survivable-branch-appliance.md
+      - name: Connessione con operatore
+        items:
+          - name: Piano per la connessione con operatore
+            href: operator-connect-plan.md
+          - name: Configurare la connessione con operatore
+            href: operator-connect-configure.md
       - name: Numeri di telefono
         items:
           - name: Gestire i numeri di telefono per la propria organizzazione
@@ -1015,7 +995,7 @@ items:
                 href: phone-number-calling-plans/port-order-status.md
           - name: Centri tariffa e copertura supportati
             href: phone-number-calling-plans/supported-rate-centers-coverage-matrix.md
-      - name: Routing vocale
+      - name: Routing chiamate
         items:
           - name: Che cosa sono i piani di chiamata?
             href: what-are-dial-plans.md
@@ -1049,10 +1029,8 @@ items:
                 href: emergency-calling-labels.md
           - name: Gestire i criteri delle chiamate di emergenza
             href: manage-emergency-calling-policies.md
-          - name: Gestire i criteri del routing vocale di emergenza per l'instradamento diretto
+          - name: Gestire i criteri del routing delle chiamate di emergenza
             href: manage-emergency-call-routing-policies.md
-      - name: Gestire i criteri vocali e di chiamata in Teams
-        href: voice-and-calling-policies.md
       - name: Caso studio sulla migrazione della funzionalità vocale di Contoso
         items:
           - name: Panoramica
@@ -1420,8 +1398,6 @@ items:
             items:
               - name: Visite virtuali con Teams - integrazione in CCE
                 href: expand-teams-across-your-org/healthcare/ehr-admin.md
-              - name: Sincronizzare report di amministrazione EHR
-                href: expand-teams-across-your-org/healthcare/ehr-admin-reports.md
               - name: Visite virtuali con Bookings e Teams
                 href: bookings-app-admin.md
           - name: Visualizzare e assegnare pacchetti di criteri
@@ -1473,8 +1449,6 @@ items:
                 href: class-insights.md
               - name: Sincronizza i dati SIS con Insights
                 href: education-insights-sis-data-sync.md
-              - name: Gestire l'accesso degli utenti a Insights
-                href: education-insights-manage-access.md
               - name: Introduzione a Reflect
                 href: reflect.md
           - name: Assegnare attività in Teams per l'istruzione
@@ -1493,14 +1467,10 @@ items:
         items:
           - name: Guida introduttiva per gli operatori sul campo
             href: flw-quickstart.yml
-          - name: Procedura guidata per l'onboarding degli operatori in prima linea
-            href: flw-onboarding-wizard.md
           - name: Distribuzione con script per gli operatori sul campo
             href: flw-scripted-deployment.md
           - name: Gestire l'accesso basato su turni per gli operatori sul campo
             href: expand-teams-across-your-org/shifts/manage-shift-based-access-flw.md
-          - name: Gestire i proprietari pianificazione per la gestione dei turni
-            href: expand-teams-across-your-org/shifts/schedule-owner-for-shift-management.md
           - name: RealWear per Microsoft Teams
             href: flw-realwear.md
           - name: Walkie-talkie
@@ -1547,8 +1517,6 @@ items:
             href: g1-trial-license.md
           - name: Gestire l'esperienza Teams Exploratory
             href: teams-exploratory.md
-          - name: Aggiornare gli utenti da Teams Exploratory
-            href: upgrade-from-teams-exploratory.md
           - name: Gestire la versione gratuita di Teams
             href: manage-freemium.md
           - name: Aggiornare Teams gratuitamente alla versione in abbonamento
@@ -1576,8 +1544,8 @@ items:
                 href: /microsoft-365/security/office-365-security/create-safe-sender-lists-in-office-365
           - name: Modalità di interazione di SharePoint Online e OneDrive for Business con Teams
             href: sharepoint-onedrive-interact.md
-      - name: Dispositivi di Teams per l'istruzione
-        href: devices-for-education.md
+          - name: Esperienza di Teams in un tenant con Microsoft 365 o Office 365 Multi-Geo
+            href: teams-experience-o365odb-spo-multi-geo.md
       - name: Dispositivi supportati
         items:
           - name: Gestire i dispositivi in Teams
@@ -1593,23 +1561,17 @@ items:
           - name: Schermi Teams
             href: devices/teams-displays.md
           - name: Pannelli Teams
-            items:
-              - name: Pannelli Teams
-                href: devices/teams-panels.md
-              - name: Usare i pannelli Teams
-                href: devices/use-teams-panels.md
-              - name: Supporto app nei pannelli Teams
-                href: app-support-on-Teams-panels.md
+            href: devices/teams-panels.md
+          - name: Usare i pannelli Teams
+            href: devices/use-teams-panels.md
           - name: Aggiornare i telefoni Teams agli schermi Teams
             href: devices/upgrade-phones-to-displays.md
           - name: Implementare telefoni e schermi Teams con Intune
             href: devices/phones-displays-deploy.md
           - name: Dispositivi video e audio USB
             href: devices/usb-devices.md
-          - name: Distribuire Microsoft Teams Rooms su Android
+          - name: Distribuire barre di collaborazione per Microsoft Teams
             href: devices/collab-bar-deploy.md
-          - name: Impostare l'interfaccia utente di Microsoft Teams sui dispositivi Android
-            href: devices/Teams-Android-devices-user-interface.md
           - name: Soluzioni e dispositivi per sala riunioni
             href: /skypeforbusiness/certification/devices-meeting-rooms?toc=/MicrosoftTeams/toc.json&bc=/microsoftteams/breadcrumb/toc.json
           - name: Dispositivi certificati Teams
@@ -1881,4 +1843,4 @@ items:
       - name: Modulo di individuazione aggiornamenti
         href: upgrade-plan-journey-discovery-questionnaire.md
       - name: Note sulla versione per le funzionalità di amministratore di Teams
-        href: /OfficeUpdates/teams-admin
+        href: release-notes/release-notes.md
