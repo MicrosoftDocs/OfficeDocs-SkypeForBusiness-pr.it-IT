@@ -269,7 +269,7 @@ items:
             href: /microsoft-365/security/office-365-security/atp-safe-links-for-teams?bc=%2fmicrosoftteams%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoftteams%2ftoc.json
           - name: Criteri di controllo dell'applicazione AppLocker
             href: applocker-in-teams.md
-          - name: Bloccare l'accesso a Sharepoint
+          - name: Bloccare l'accesso a SharePoint
             href: block-access-sharepoint.md
       - name: Conformità
         items:
