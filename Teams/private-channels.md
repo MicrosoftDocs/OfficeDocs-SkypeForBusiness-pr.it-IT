@@ -18,12 +18,12 @@ appliesto:
 localization_priority: Priority
 search.appverid: MET150
 description: Informazioni su come usare e gestire i canali privati in Microsoft Teams.
-ms.openlocfilehash: a8235f5a4ffe509de748a39254f38acf99e71f27a66286264392f71322fb0a67
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 047ff506a2d9ebccda96ecadedb4a30222ba59bf
+ms.sourcegitcommit: 3884bd3a849e92cde5980c3185d53bd4287fe764
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54341252"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58455961"
 ---
 # <a name="private-channels-in-microsoft-teams"></a>Canali privati in Microsoft Teams
 
@@ -92,14 +92,21 @@ Per informazioni su come gestire il ciclo di vita dei canali privati nell'organi
 Ogni canale privato include una siti di SharePoint. La raccolta siti separata consente di garantire l'accesso ai file del canale privato solo ai membri del canale privato. Questi siti vengono creati con una raccolta documenti per impostazione predefinita e possono essere facilmente migliorate per ottenere siti completi tramite l'[interfaccia di gestione dei siti](https://support.office.com/article/A2F2A5C2-093D-4897-8B7F-37F86D83DF04). Ogni sito viene creato nella stessa area geografica del sito del team padre. Questi siti semplificati hanno un ID modello personalizzato, "TEAMCHANNEL#0", per semplificare la gestione con PowerShell e API Graph. 
 
 >[!NOTE]
+>Solo gli utenti con autorizzazioni di proprietario o membro concesse in Microsoft Teams avranno accesso al contenuto nel sito del canale privato.
 >I siti di SharePoint del canale privato non sono inclusi nella pagina Siti attivi della nuova interfaccia di amministrazione di SharePoint.
 >I siti di SharePoint del canale privato creati dopo il 28 giugno 2021 avranno l'ID modello personalizzato TEAMCHANNEL#1.
 
-Un sito di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dal sito del team padre. L'appartenenza ai gruppi dei membri e di proprietari al sito viene mantenuta sincronizzata con quella ai canali privati in Teams. Le modifiche apportate all'appartenenza ai gruppi di membri o di proprietari in SharePoint verranno trasferite automaticamente all'appartenenza ai canali privati entro quattro ore. Negli scenari in cui alcuni utenti hanno l'esigenza di accedere ai documenti senza bisogno di accedere ai messaggi del canale privato, è possibile aggiungerli al gruppo Visitatori nel documento e nella raccolta o a un nuovo gruppo distinto da quelli di Proprietari e Membri.
+
+Un sito di un canale privato sincronizza la classificazione dei dati ed eredita le autorizzazioni di accesso guest dal sito del team padre. L'appartenenza ai gruppi dei membri e di proprietari al sito viene mantenuta sincronizzata con quella ai canali privati in Teams. Le modifiche apportate all'appartenenza ai gruppi di membri o di proprietari in SharePoint verranno trasferite automaticamente all'appartenenza ai canali privati entro quattro ore. 
 
 Teams gestisce il ciclo di vita della raccolta siti del canale privato. Se il sito viene eliminato all'esterno di Teams, un processo in background ripristina il sito entro quattro ore, a condizione che il canale privato sia ancora attivo. Se il sito viene eliminato permanentemente, viene eseguito il provisioning del sito per il canale privato.
 
 Se un canale privato o un team che contiene un canale privato viene ripristinato, i siti vengono ripristinate con esso. Se un sito del canale privato viene ripristinato al di là del periodo di eliminazione temporanea di 30 giorni per il canale privato, il sito funzionerà come un sito autonomo.
+
+> [!NOTE]
+> Quando si crea un nuovo team o canale privato in Microsoft Teams, viene creato automaticamente un sito del team in SharePoint. Per modificare la descrizione o la classificazione del sito per questo sito del team, passare alle [impostazioni in Microsoft Teams](https://support.microsoft.com/office/change-a-team-s-data-security-classification-in-teams-bf39798f-90d2-44fb-a750-55fa05a56f1d)del canale corrispondente.
+>
+> Altre informazioni sulla gestione dei [siti dei team connessi a Microsoft Teams](/SharePoint/teams-connected-sites).
 
 ## <a name="private-channel-message-compliance-records"></a>Record di conformità dei messaggi del canale privato
 

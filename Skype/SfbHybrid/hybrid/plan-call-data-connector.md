@@ -1,5 +1,5 @@
 ---
-title: Pianificare il connettore dati delle chiamate | Monitoraggio dell'analisi ibrida del dashboard di qualità delle chiamate
+title: Pianificare il connettore dati di chiamata | Monitoraggio dell'analisi ibrida del dashboard di qualità delle chiamate
 ms.reviewer: ''
 ms.author: crowe
 author: CarolynRowe
@@ -12,12 +12,12 @@ ms.prod: skype-for-business-itpro
 localization_priority: Normal
 ms.collection: ''
 description: Panoramica dell'Skype for Business strumenti di telemetria online per monitorare un'implementazione locale in uno scenario ibrido.
-ms.openlocfilehash: 803c8051087eff5c2101ce554bda948c829402c56f874a2a7c823be2ba323d67
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a0288f07c942f003cfece5aceaddf4139af84569
+ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318071"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58407175"
 ---
 # <a name="plan-call-data-connector"></a>Pianificare connettore dati chiamate
 
@@ -40,31 +40,31 @@ Con Call Data Connector è possibile eseguire le attività seguenti utilizzando 
 
 Con Call Data Connector, il Skype for Business Server invia i dati delle chiamate al servizio cloud in modo da poter sfruttare gli strumenti di analisi delle chiamate online (CA) e CQD (Call Quality Dashboard) di Skype for Business, come illustrato nel diagramma seguente:
 
-![SfB Cloud Voicemail](../../sfbserver2019/media/call-data-connector-plan-1.png)
+![SfB Cloud Voicemail diagramma.](../../sfbserver2019/media/call-data-connector-plan-1.png)
 
 Il server invia sia i dati QoE (Quality of Experience) che la registrazione dettagli chiamata (CDR) al servizio online.
 
-Gli strumenti di analisi delle chiamate e CQD consentono di monitorare la qualità delle chiamate e di risolvere i problemi di connessione con Microsoft Teams e Skype for Business come indicato di seguito:
+Gli strumenti di analisi delle chiamate e CQD consentono di monitorare la qualità delle chiamate e risolvere i problemi di connessione con Microsoft Teams e Skype for Business come indicato di seguito:
 
-- Call Analytics si concentra sui problemi di qualità con chiamate specifiche. Vengono visualizzate informazioni dettagliate sulle chiamate e le riunioni per ogni utente in un Skype for Business account.  Con Call Analytics, puoi assegnare le autorizzazioni a un operatore del supporto tecnico che può quindi monitorare le chiamate senza avere accesso al resto dell Skype for Business intervallo di amministrazione.
+- Call Analytics si concentra sui problemi di qualità con chiamate specifiche. Vengono visualizzate informazioni dettagliate sulle chiamate e le riunioni per ogni utente in un Skype for Business account.  Con Call Analytics puoi assegnare le autorizzazioni a un operatore del supporto tecnico che può quindi monitorare le chiamate senza avere accesso al resto dell Skype for Business admin center.
 
-- Call Quality Dashboard si concentra sulle prestazioni della rete e sui problemi di un'organizzazione. Skype for Business amministratori e tecnici di rete usano questo strumento per risolvere i problemi e ottimizzare le prestazioni di rete.
+- Il dashboard qualità delle chiamate si concentra sulle prestazioni della rete e sui problemi di un'organizzazione. Skype for Business amministratori e tecnici di rete usano questo strumento per risolvere i problemi e ottimizzare le prestazioni di rete.
 
-Per ulteriori informazioni, vedere [Call Analytics and Call Quality Dashboard.](/SkypeForBusiness/using-call-quality-in-your-organization/difference-between-call-analytics-and-call-quality-dashboard)
+Per ulteriori informazioni, vedere [Call Analytics and Call Quality Dashboard diagram with Monitoring Server details.](/SkypeForBusiness/using-call-quality-in-your-organization/difference-between-call-analytics-and-call-quality-dashboard)
 
-Naturalmente, potresti voler mantenere alcuni dati sulla qualità delle chiamate in locale. Questo potrebbe essere il caso, ad esempio, se si utilizza una soluzione di terze parti con report e flussi di lavoro personalizzati.  Call Data Connector consente di configurare l'invio di dati al servizio online mantenendo anche una copia dei dati nel server locale, come illustrato nel diagramma seguente:
+Naturalmente, potresti voler mantenere alcuni dati sulla qualità delle chiamate in locale. Ciò potrebbe verificarsi, ad esempio, se si utilizza una soluzione di terze parti con report e flussi di lavoro personalizzati.  Call Data Connector consente di configurare l'invio di dati al servizio online mantenendo anche una copia dei dati nel server locale, come illustrato nel diagramma seguente:
 
 ![SfB Cloud Voicemail](../../sfbserver2019/media/call-data-connector-plan-2.png)
 
 ## <a name="requirements"></a>Requisiti
 
-I requisiti seguenti presuppongono che sia già Skype for Business Server distribuiti in una topologia supportata.  Per ulteriori informazioni sulla distribuzione di Skype for Business Server e topologie supportate, vedere [Topology Basics.](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md) Per configurare Call Data Connector, è necessario:
+I requisiti seguenti presuppongono che sia già stata Skype for Business Server distribuita in una topologia supportata.  Per ulteriori informazioni sulla distribuzione di Skype for Business Server e topologie supportate, vedere [Topology Basics.](../../SfbServer/plan-your-deployment/topology-basics/topology-basics.md) Per configurare Call Data Connector, è necessario:
 
-- Abilitare la connettività ibrida. Se è già stata Skype for Business Server e si desidera abilitare Il connettore dati di chiamata, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
+- Abilitare la connettività ibrida. Se è già stata Skype for Business Server e si desidera abilitare Il connettore dati di chiamata, è necessario verificare di avere configurato la connettività ibrida tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
 
    Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) e Configure hybrid connectivity between Skype for Business Server and Microsoft 365 or [Office 365](configure-hybrid-connectivity.md).
 
-- Eseguire l'Microsoft 365 o Office 365 e verificare di avere abilitato i ruoli seguenti:
+- Eseguire l'autenticazione Microsoft 365 o Office 365'organizzazione e assicurarsi di avere abilitato i ruoli seguenti:
 
   - Skype for Business Server Amministratore
   - Microsoft 365 o Office 365 amministratore globale
@@ -74,7 +74,7 @@ I requisiti seguenti presuppongono che sia già Skype for Business Server distri
 - Abilitare il pool front end per il monitoraggio, con database LCSCdr e QoEMetrics locali. Senza questo, Call Data Connector non dispone di dati di metrica da utilizzare.
 
 > [!IMPORTANT]
-> Il connettore dati di chiamata non funzionerà se il monitoraggio non è abilitato nel pool front-end.
+> Call Data Connector non funzionerà se il monitoraggio non è abilitato nel pool front-end.
 
 - Autenticazione da server a [server configurata correttamente.](../../SfbServer/manage/authentication/server-to-server-and-partner-applications.md) 
 

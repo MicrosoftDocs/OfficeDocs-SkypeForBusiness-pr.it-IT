@@ -11,7 +11,6 @@ ms.service: msteams
 search.appverid: MET150
 ms.collection:
 - M365-voice
-- m365initiative-voice
 audience: Admin
 appliesto:
 - Skype for Business
@@ -22,16 +21,16 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Microsoft Teams lingue supportate dall'operatore automatico
-ms.openlocfilehash: 85b472a274789b4358afebf0293b303e8f49b4efe9176e010e25faeca673fbae
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 18a2f54eea4fb0f4090b76bddd92da40263c6db0
+ms.sourcegitcommit: 942e09c70840582f0cc1e433d4b0261298b1c66d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54276551"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58339844"
 ---
 # <a name="microsoft-teams-auto-attendant-supported-languages"></a>Microsoft Teams lingue supportate dall'operatore automatico
 
-L'operatore automatico supporta le lingue seguenti per sintesi vocale (TTS) e Riconoscimento vocale:
+L'operatore automatico supporta le lingue seguenti per sintesi vocale (TTS) e riconoscimento vocale:
 
 |Lingua                                |Sintesi vocale (TTS)     |Riconoscimento vocale                     |
 |:---------------------------------------|:-----------------------:|:-------------------------------------:|
@@ -41,7 +40,7 @@ L'operatore automatico supporta le lingue seguenti per sintesi vocale (TTS) e Ri
 |Cinese (tradizionale, Hong Kong)        |S                        |                                       |
 |Cinese (tradizionale, Taiwan)           |S                        |                                       |    
 |Croato (Croazia)                      |S                        |                                       |    
-|Ceco (Repubblica di Czeck)                  |S                        |                                       |    
+|Ceco (Repubblica Ceca)                  |S                        |                                       |    
 |Danese (Danimarca)                        |S                        |                                       |    
 |Olandese (Paesi Bassi)                     |S                        |                                       |    
 |Inglese (Australia)                     |S                        |S                                      |
@@ -75,7 +74,7 @@ L'operatore automatico supporta le lingue seguenti per sintesi vocale (TTS) e Ri
 |Vietnamita (Vietnam)                    |S                        |                                       |    
 
 > [!NOTE]
-> Se si sceglie una lingua che non supporta riconoscimento vocale, l'opzione di input vocale nel menu verrà disabilitata e la composizione per nome sarà limitata all'uso solo della tastiera (DTMF). Per altre informazioni, fare riferimento alla voce Chiamata per nome [- Tastiera (DTMF).](dial-voice-reference.md#dial-by-name---keypad-dtmf-entry)
+> Se si sceglie una lingua che non supporta il riconoscimento vocale, l'opzione di input vocale verrà disabilitata all'interno del menu e la composizione per nome sarà limitata all'uso solo della tastiera (DTMF). Per altre informazioni, fare riferimento alla voce Chiamata per nome [- Tastiera (DTMF).](dial-voice-reference.md#dial-by-name---keypad-dtmf-entry)
 
 > [!NOTE]
 > Quando si usa La sintesi vocale, il testo deve essere immesso nella lingua selezionata perché il sistema non esegue la traduzione.

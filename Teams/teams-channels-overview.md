@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b257b8e2e12c4b6408f43e21b92e0904971ddc4032da075bac7cae93659ad8f7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 190204ac352567458e1e19c5d06179950c1188be
+ms.sourcegitcommit: 3884bd3a849e92cde5980c3185d53bd4287fe764
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321258"
+ms.lasthandoff: 08/21/2021
+ms.locfileid: "58455951"
 ---
 # <a name="overview-of-teams-and-channels-in-microsoft-teams"></a>Panoramica dei team e i canali in Microsoft Teams
 
@@ -79,7 +79,12 @@ Gli amministratori di Teams in Microsoft 365 hanno accesso alle impostazioni a l
 
 Per impostazione predefinita, tutti gli utenti hanno le autorizzazioni per creare un team. Per modificare questa impostazione, vedere [Assegnare ruoli e autorizzazioni in Teams](assign-roles-permissions.md).
 
-Un'attività essenziale della pianificazione iniziale per incoraggiare gli utenti a collaborare con Teams consiste nell'aiutare gli utenti a comprendere come Teams può migliorare la collaborazione nella vita quotidiana. Parlare con gli utenti e invitarli a considerare gli scenari aziendali in cui collaborano in modo frammentato. Riunirli in un canale con le schede pertinenti che consentiranno loro di portare a termine le attività. Uno dei casi più significativi di utilizzo di Teams è all'interno dei processi interorganizzativi. 
+Un'attività essenziale della pianificazione iniziale per incoraggiare gli utenti a collaborare con Teams consiste nell'aiutare gli utenti a comprendere come Teams può migliorare la collaborazione nella vita quotidiana. Parlare con gli utenti e invitarli a considerare gli scenari aziendali in cui collaborano in modo frammentato. Riunirli in un canale con le schede pertinenti che consentiranno loro di portare a termine le attività. Uno dei casi più significativi di utilizzo di Teams è all'interno dei processi interorganizzativi.
+
+> [!NOTE]
+> Quando si crea un nuovo team o canale privato in Microsoft Teams, viene creato automaticamente un sito del team in SharePoint. Per modificare la descrizione o la classificazione del sito per questo sito del team, passare alle [impostazioni in Microsoft Teams](https://support.microsoft.com/office/change-a-team-s-data-security-classification-in-teams-bf39798f-90d2-44fb-a750-55fa05a56f1d)del canale corrispondente.
+>
+> Altre informazioni sulla gestione dei [siti dei team connessi a Microsoft Teams](/SharePoint/teams-connected-sites).
 
 ## <a name="example-teams"></a>Team di esempio
 

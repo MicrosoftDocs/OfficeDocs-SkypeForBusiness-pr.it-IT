@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Eseguire la migrazione degli endpoint dell'applicazione hyrid prima di rimuovere le autorizzazioni Skype for Business'ambiente locale.
-ms.openlocfilehash: e06411bfdbd5b74c2b9663ad1eb0441cfc0e2a42411b6bbc8e2c24700dee4993
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f655c232e8502e6309f57ce88af6ca0eebce9a43
+ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312284"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58406975"
 ---
 # <a name="migrate-hybrid-application-endpoints-before-decommissioning-your-on-premises-environment"></a>Eseguire la migrazione degli endpoint dell'applicazione ibrida prima di rimuovere le autorizzazioni dell'ambiente locale
 
@@ -36,12 +36,12 @@ In questo articolo viene descritto come spostare gli endpoint dell'applicazione 
 
 - **Passaggio 3. Eseguire la migrazione degli endpoint dell'applicazione ibrida da locale a online.** (Questo articolo)
 
-- Passaggio 4. [Rimuovere la distribuzione locale Skype for Business .](decommission-remove-on-prem.md)
+- Passaggio 4. [Rimuovere la distribuzione di Skype for Business locale.](decommission-remove-on-prem.md)
 
 
 ## <a name="migrate-all-required-hybrid-application-endpoints-from-on-premises-to-online"></a>Eseguire la migrazione di tutti gli endpoint dell'applicazione ibrida necessari da locale a online
 
-Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di aver aggiornato i record DNS in modo che puntino a Microsoft 365 per tutti i domini sip utilizzati dagli endpoint. Tenere presente che una volta aggiornato IL DNS in modo che punti a Microsoft 365, tutti gli endpoint dell'applicazione ibrida esistenti non saranno più individuabili fino al completamento di questo passaggio. Poiché questo passaggio (creazione di account delle risorse online) non è possibile se i record DNS puntano a locali, è consigliabile pianificare entrambi i passaggi 2 e 3 nella stessa finestra di manutenzione. Per ulteriori informazioni, vedere [Disable your hybrid configuration](cloud-consolidation-disabling-hybrid.md).
+Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di aver aggiornato i record DNS in modo che puntino a Microsoft 365 per tutti i domini sip utilizzati dagli endpoint. Tenere presente che una volta aggiornato IL DNS in modo che punti a Microsoft 365, tutti gli endpoint dell'applicazione ibrida esistenti non saranno più individuabili finché non si completa questo passaggio. Poiché questo passaggio (creazione di account delle risorse online) non è possibile se i record DNS puntano a locali, è consigliabile pianificare entrambi i passaggi 2 e 3 nella stessa finestra di manutenzione. Per ulteriori informazioni, vedere [Disable your hybrid configuration](cloud-consolidation-disabling-hybrid.md).
 
 1. Recuperare ed esportare le impostazioni degli endpoint dell'applicazione ibrida locale eseguendo il comando di PowerShell Skype for Business Server locale seguente:
 
@@ -52,7 +52,7 @@ Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di a
 
 3. Associare i nuovi account delle risorse agli endpoint dell'applicazione ibrida esistenti.
 
-4. Rimuovere i numeri di telefono definiti negli endpoint dell'applicazione ibrida locale eseguendo il comando di PowerShell Skype for Business Server locale seguente:
+4. Rimuovere i numeri di telefono definiti negli endpoint dell'applicazione ibrida locale eseguendo il comando di PowerShell Skype for Business Server locale seguente:Remove phone numbers defined in the on-premises hybrid application endpoints by executing the following on-premises Skype for Business Server PowerShell command:
 
    ```PowerShell
    Get-CsHybridApplicationEndpoint -Filter {LineURI -ne $null} | Set-CsHybridApplicationEndpoint -LineURI ""
@@ -72,14 +72,14 @@ Prima di poter spostare questi endpoint in linea, è necessario assicurarsi di a
    }
    ```
 
-6. Assegnare numeri di telefono ai nuovi account delle risorse creati nel passaggio 2. Per ulteriori informazioni su come assegnare un numero di telefono a un account della risorsa, vedere l'articolo seguente: [Assegnare un numero di servizio](/microsoftteams/manage-resource-accounts#assign-a-service-number).
+6. Assegnare numeri di telefono ai nuovi account delle risorse creati nel passaggio 2. Per ulteriori informazioni su come assegnare un numero di telefono a un account della risorsa, vedere l'articolo seguente: [Assegnare un numero di servizio](/microsoftteams/manage-resource-accounts).
 
 7. Eliminare gli endpoint locali eseguendo il comando di PowerShell Skype for Business Server locale seguente:
 
    ```PowerShell
    Get-CsHybridApplicationEndpoint | Remove-CsHybridApplicationEndpoint
    ```
-A questo punto è possibile rimuovere la distribuzione locale [Skype for Business distribuzione](decommission-remove-on-prem.md).
+A questo punto è possibile rimuovere la distribuzione Skype for Business [locale.](decommission-remove-on-prem.md)
 
 ## <a name="see-also"></a>Vedere anche
 
