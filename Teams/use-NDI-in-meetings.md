@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eebbea6ce5d632d38e94465f05fd9f60a3300a4e060106e7ba2f6218433c5e8b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2a9eed33ba105584379f207697c27e8d6bd6cde5
+ms.sourcegitcommit: 85017cf88789c750836780dad2ef707c1c6c39b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54335816"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359183"
 ---
 # <a name="use-ndi-technology-in-microsoft-teams"></a>Usare la tecnologia NDI® in Microsoft Teams
 
@@ -37,33 +37,29 @@ La tecnologia NDI® è limitata a una rete locale e deve essere considerata solo
 
 La tecnologia NDI® richiede due passaggi per essere attivata per un utente.
 
-1. L'amministratore del tenant deve abilitare la proprietà 'AllowNDIStreaming' in CsTeamsMeetingPolicy.
+1. L'amministratore tenant deve consentire all'utente finale di attivare NDI per i criteri di riunione. Questa operazione può essere eseguita singolarmente nel portale di amministrazione di Teams o tramite powershell di Teams dalla proprietà _AllowNDIStreaming_ in CsTeamsMeetingPolicy.
 
-```PowerShell
-Set-CsTeamsMeetingPolicy -Identity MEETING_POLICY -AllowNDIStreaming $true
-```
+    ```PowerShell
+    Set-CsTeamsMeetingPolicy -Identity MEETING_POLICY -AllowNDIStreaming $true
+    ```
 
 2. Dopo aver popolato questa modifica, l'utente finale deve attivare la tecnologia NDI® per il proprio client specifico da  >  **Impostazioni Autorizzazioni**.
 
-Quando un utente partecipa a una riunione, viene visualizzato un messaggio che informa che la riunione è in fase di trasmissione. Se gli utenti non vogliono essere inclusi nella trasmissione, dovranno rilasciare dalla riunione.
+Dopo essere stato attivato per un utente e il suo client specifico, l'utente può attivare NDI tramite il menu di overflow e selezionare "Broadcast su NDI".
 
-L'immagine seguente mostra il messaggio banner visualizzato da un utente in una Teams riunione.
+Dopo l'avvio dell'NDI e la sottoscrizione di un endpoint a un feed NDI, verrà visualizzato un messaggio che informa che la riunione è in fase di trasmissione. Se gli utenti non vogliono essere inclusi nella trasmissione, dovranno rilasciare dalla riunione.
+
+L'immagine seguente mostra il messaggio banner visualizzato da un utente in una riunione Teams riunione.
 
 ![striscione ® tecnologia NDI che viene visualizzato in una Teams riunione.](media/NDI-disclosure.png)
 
 Il banner contiene un collegamento [all'informativa sulla privacy Microsoft.](https://aka.ms/teamsprivacy)
 
 > [!NOTE]
-> NDI® viene attivato solo per sessione. All'accesso successivo, l'utente deve attivarlo prima di usare NDI®.
+> NDI® viene attivato solo per sessione. Nella riunione successiva, l'utente deve attivarla prima di usare NDI®.
 
 ## <a name="supported-locales-and-user-types"></a>Impostazioni locali e tipi di utente supportati
 
-La ® NDI è supportata in tutte le impostazioni locali. Gli utenti seguenti sono inclusi in uno stream di tecnologia NDI®, ma non tutti gli utenti possono accedere al flusso della tecnologia NDI®:
+La ® NDI è supportata in tutte le impostazioni locali.
 
-- In-tenant: supporto completo, fornito in base a ring/tenantId/userId (controllato dai criteri riunioni)
-- Federato: nessun accesso al flusso (anche se ha la tecnologia NDI® su)<sup>1</sup>
-- Premium - nessun accesso al flusso
-- Anonimo: nessun accesso al flusso
-- Guest: nessun accesso in streaming  
-
-<sup>1</sup> I dispositivi hanno un'® NDI attivata per impostazione predefinita. Se un partecipante alla riunione usa un dispositivo con tecnologia NDI®, dovrà attivare la tecnologia NDI® NDI.
+L'accesso all'uso di NDI è determinato dai criteri di riunione per l'utente che tenta di attivare la caratteristica. Per la soluzione più sicura, non attivare i criteri NDI come impostazione globale.

@@ -20,12 +20,12 @@ localization_priority: Priority
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0c4e9b4e3133927aaea883fb64d4798b6761b65ebe83f6a887bf9b50ba589e70
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e9f97065a6bf7dd8be3d3a417b7482b3b5f50935
+ms.sourcegitcommit: b17e5acadcca0261eaccc64e1b4ee457348f975c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54285685"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365673"
 ---
 # <a name="quick-start---meetings-webinars-and-live-events"></a>Guida introduttiva: riunioni, webinar ed eventi live 
 
@@ -83,7 +83,7 @@ La tabella seguente evidenzia gli articoli principali da esaminare:
 | Articolo | Descrizione | 
 |----------|--------|
 | [Impostazioni riunione](meeting-settings-in-teams.md) |  Descrive come configurare le impostazioni delle riunioni per gli utenti anonimi, gli inviti alle riunioni e il traffico multimediale.  |
-| [Criteri riunione](meeting-policies-in-teams.md)  | Descrive come creare e gestire i criteri che determinano quali funzionalità sono disponibili per i partecipanti alla riunione. | 
+| [Criteri riunione](meeting-policies-overview.md)  | Descrive come creare e gestire i criteri che determinano quali funzionalità sono disponibili per i partecipanti alla riunione. | 
 | [Gestire la registrazione delle riunioni di Teams nel cloud](cloud-recording.md) | Descrive come gestire le registrazioni delle riunioni. |
 | [Gestire i dispositivi dell'organizzazione](device-management.md)| Descrive come gestire i dispositivi dell'organizzazione, ad esempio telefoni e Teams Rooms. |
 ||

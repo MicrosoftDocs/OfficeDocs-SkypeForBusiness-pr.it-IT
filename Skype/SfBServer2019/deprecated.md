@@ -12,12 +12,12 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono state rimosse Skype for Business Server 2019.'
-ms.openlocfilehash: 43fa8bae64e65fcba1aaf21c75e06d396d3c47eee8df40cec0db0eb1d5d646eb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c6ba9d9945ae5dde2a9898fe5adfd44192faceb5
+ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282469"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372056"
 ---
 # <a name="whats-deprecated-from-skype-for-business-server-2019"></a>Cosa è deprecato da Skype for Business Server 2019
 
@@ -27,7 +27,7 @@ Alcune funzionalità non evidenziate sono incluse in Skype for Business Server 2
 
 ## <a name="features-deprecated-in-skype-for-business-server-2019"></a>Funzionalità deprecate in Skype for Business Server 2019 
 
-    The following features and functionality have been deprecated in Skype for Business Server 2019.
+Le funzionalità e le funzionalità seguenti sono state deprecate Skype for Business Server 2019.
 
 ### <a name="xmpp-gateways-for-skype-for-business-server"></a>Gateway XMPP per Skype for Business Server
 
@@ -45,11 +45,9 @@ SQL Il mirroring non può essere distribuito con Skype for Business Server 2019.
 
 ### <a name="in-place-upgrades"></a>Aggiornamenti sul posto 
 
-Gli aggiornamenti sul posto sono disponibili Skype for Business Server 2015, ma non sono più supportati Skype for Business Server 2019. L'aggiornamento affiancato e la coesistenza sono supportati, vedere [Migrazione a Skype for Business Server 2019](migration/migration-to-skype-for-business-server-2019.md) per ulteriori informazioni.
+Gli aggiornamenti sul posto erano disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Sono supportati l'aggiornamento affiancato e la coesistenza. Per ulteriori informazioni, vedere [Migration to Skype for Business Server 2019](migration/migration-to-skype-for-business-server-2019.md).
 
 ### <a name="mobility-service-mcx"></a>Servizio per dispositivi mobili (Mcx)
-
-Il supporto del servizio per dispositivi mobili utilizzato dai client mobili legacy non è più disponibile Skype for Business Server 2019. Questo è stato annunciato in Skype for Business Server 2015.
 
 Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano Mcx dovranno eseguire l'aggiornamento a un client corrente.
 

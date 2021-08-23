@@ -1,5 +1,5 @@
 ---
-title: Configurare l'ottimizzazione dei supporti multimediali locali per il routing diretto in Teams
+title: Configurare l'ottimizzazione del supporto locale per il routing diretto
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -16,12 +16,12 @@ f1.keywords:
 description: Configurare l'ottimizzazione del supporto locale per il routing diretto
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cf370087d109ebd12da150af44d2f13b455f4f6e
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 004f4ba43bda1502041ba2ec9e34194fd8be93fb
+ms.sourcegitcommit: b17e5acadcca0261eaccc64e1b4ee457348f975c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235361"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58365633"
 ---
 # <a name="configure-local-media-optimization-for-direct-routing"></a>Configurare l'ottimizzazione del supporto locale per il routing diretto
 
@@ -52,36 +52,7 @@ Per configurare l'utente e i siti SBC, è necessario:
 
 ## <a name="configure-sbcs-for-local-media-optimization-according-to-the-sbc-vendor-specification"></a>Configurare SBC(s) per l'ottimizzazione dei supporti locali in base alla specifica del fornitore SBC
 
-Questo articolo descrive la configurazione per i componenti Microsoft. Per informazioni sulla configurazione SBC, vedere la documentazione del fornitore SBC.
-
-L'ottimizzazione multimediale locale è supportata dai fornitori SBC seguenti:
-
-| Fornitore | Prodotto |    Versione software |
-|:------------|:-------|:-------|
-| [Audiocodice](https://www.audiocodes.com/media/13253/connecting-audiocodes-sbc-to-microsoft-teams-direct-routing-enterprise-model-configuration-note.pdf) |    Mediant 500 SBC |   7.20A.256 | 
-|            |  Mediant 800 SBC |   7.20A.256 | 
-|            |  Mediant 2600 SBC |  7.20A.256 | 
-|            |  Mediant 4000 SBC |  7.20A.256 | 
-|            |  Mediant 1000B SBC | 7.20A.256 | 
-|            |  Mediant 9000 SBC |  7.20A.256 | 
-|            |  Mediant Virtual Edition SBC |   7.20A.256 | 
-|            |  Mediant Cloud Edition SBC | 7.20A.256 |
-| [Componente di base SBC della barra multifunzione](https://support.sonus.net/display/ALLDOC/SBC+8.2+-+Configure+Local+Media+Optimization)  |  SBC 5110         | 8.2  |
-|            |  SBC 5210         | 8.2  |
-|            |  SBC 5400         | 8.2  |
-|            |  SBC 7000         | 8.2  |
-|            |  SBC SWe          | 8.2  |
-| [Bordo SBC della barra multifunzione](https://support.sonus.net/display/UXDOC81/Best+Practice+-+Configuring+Microsoft+Teams+Local+Media+Optimization)  |  SBC SWe Lite | 8.1.5 |
-|               | SBC 1000 | 8.1.5  |
-|               | SBC 2000 | 8.1.5  |
-| [TE-SYSTEMS](https://www.anynode.de/local_media_optimization/) |  anynode          | 4.0.1+ |
-| [Oracle](https://www.oracle.com/industries/communications/enterprise-communications/session-border-controller/microsoft.html) | AP 1100 | 8.4.0.0.0 |
-|        | AP 3900 | 8.4.0.0.0 |
-|        | AP 4600 | 8.4.0.0.0 | 
-|        | AP 6300 | 8.4.0.0.0 |
-|        | AP 6350 | 8.4.0.0.0 | 
-|        | VME     | 8.4.0.0.0 |
-
+Questo articolo descrive la configurazione per i componenti Microsoft. Per informazioni sulla configurazione SBC, vedere la documentazione del fornitore SBC. Per informazioni sui fornitori SBC che supportano l'ottimizzazione dei supporti locali, vedere [Session Border Controllers Certified for Direct Routing](direct-routing-border-controllers.md).
 
 ## <a name="manage-external-trusted-ip-addresses"></a>Gestire indirizzi IP attendibili esterni
 
@@ -166,7 +137,7 @@ PS C:\> Set-CsOnlinePSTNGateway -Identity <Identity> -GatewaySiteID <site ID> -M
 
 Tenere presente quanto segue: 
    - Se il cliente ha un singolo SBC, il parametro -ProxySBC deve essere obbligatorio $null o valore FQDN SBC (scenario SBC centrale con trunk centralizzati).
-   - Il parametro -MediaBypass deve essere impostato su $true per supportare l'ottimizzazione del supporto multimediale locale.
+   - Il parametro -MediaBypass deve essere impostato su $true per supportare l'ottimizzazione multimediale locale.
    - Se per SBC non è impostato il parametro -BypassMode, le intestazioni X-MS non verranno inviate. 
    - Tutti i parametri usano la distinzione tra maiuscole e minuscole, quindi è necessario assicurarsi di usare lo stesso caso usato durante l'installazione.  Ad esempio, i valori gatewaySiteID "Vietnam" e "vietnam" verranno trattati come siti diversi.
 
@@ -180,7 +151,7 @@ Set-CSOnlinePSTNGateway -Identity “VNsbc.contoso.com” -GatewaySiteID “Viet
 Set-CSOnlinePSTNGateway -Identity “IDsbc.contoso.com” -GatewaySiteID “Indonesia” -MediaBypass $true -BypassMode “Always” -ProxySBC “proxysbc.contoso.com”
 ```
 
-Nota: per garantire operazioni ininterrotte quando l'ottimizzazione del supporto locale e il routing di Location-Based (LBR) sono configurati contemporaneamente, gli SBC downstream devono essere abilitati per LBR impostando il parametro GatewaySiteLbrEnabled su $true per ogni SBC downstream. Questa impostazione non è obbligatoria per il proxy SBC.
+Nota: per garantire operazioni ininterrotte quando l'ottimizzazione del supporto locale e il routing Location-Based (LBR) sono configurati contemporaneamente, è necessario abilitare gli SBC downstream per LBR impostando il parametro GatewaySiteLbrEnabled su $true per ogni SBC downstream. Questa impostazione non è obbligatoria per il proxy SBC.
 
 In base alle informazioni precedenti, il routing diretto includerà tre intestazioni SIP proprietarie per gli inviti SIP e i nuovi inviti, come illustrato nella tabella seguente.
 
@@ -231,7 +202,7 @@ La tabella seguente mostra la configurazione e l'azione dell'utente finale:
 
 | Posizione fisica dell'utente| L'utente effettua o riceve una chiamata a/da numero | Numero di telefono dell'utente  | Criteri di routing vocale online | Modalità configurata per SBC |
 |:------------|:-------|:-------|:-------|:-------|
-| Vietnam | +84 4 3926 3000 | +84 4 5555 5555   | Priorità 1: ^ \+ 84(\d {9} )$ -VNsbc.contoso.com <br> Priorità 2: .* - proxysbc.contoso.com   | VNsbc.contoso.com – Ignora sempre <br> proxysbc.contoso.com – Ignora sempre
+| Vietnam | +84 4 3926 3000 | +84 4 5555 5555   | Priorità 1: ^ \+ 84(\d {9} )$ -VNsbc.contoso.com <br> Priorità 2: .* - proxysbc.contoso.com   | VNsbc.contoso.com - Ignora sempre <br> proxysbc.contoso.com – Ignora sempre
 
 
 Il diagramma seguente mostra la scala SIP per una chiamata in uscita con modalità ignora sempre e l'utente nella stessa posizione del SBC.
@@ -342,7 +313,7 @@ Il diagramma seguente mostra una chiamata in ingresso in modalità OnlyForLocalU
 |:------------|:-------|:-------|:-------|
 | OnlyForLocalUsers  | Interno |   Diverso da SBC | In uscita |
 
-Il routing diretto calcola X-MediaPath in base alla posizione segnalata dell'utente e alla modalità configurata nell'SBC.
+Il routing diretto calcola X-MediaPath in base alla posizione segnalata dell'utente e alla modalità configurata in SBC.
 
 
 Il diagramma seguente mostra una chiamata in uscita con la modalità OnlyForLocalUsers e un utente interno che non si trova nella stessa posizione di SBC.

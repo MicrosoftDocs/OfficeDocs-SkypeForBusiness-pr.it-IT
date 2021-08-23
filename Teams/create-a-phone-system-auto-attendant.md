@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: b25a3126e697b30093f38148c43cf29e55ba776a4b2adca14a75779dcd4dc8c8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6db2dd5b63e26c74de09b8d4b563fe48393a3a37
+ms.sourcegitcommit: 9062b2c81c582ddc878c825ba1b22a6c23ca4b64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315392"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58398905"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
@@ -50,7 +50,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
 
-Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori automatici** e quindi **selezionare Aggiungi**.
+Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori** automatici e quindi **selezionare Aggiungi**.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -95,13 +95,13 @@ Se si seleziona **Disconnetti**, l'operatore automatico riaggancia la chiamata.
 
 Se si seleziona **Reindirizza chiamata,** è possibile scegliere una delle destinazioni di routing delle chiamate.
 
-Se si seleziona **Opzioni di menu** Riproduci , è possibile scegliere Riproduci un file **audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
+Se si seleziona **Opzioni menu** Riproduci , è possibile scegliere Riproduci un **file audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
 
 ### <a name="menu-options"></a>Opzioni di menu
 
 ![Screenshot delle opzioni dei tasti di scelta](media/auto-attendant-call-flow-menu-options-complete.png)
 
-Per le opzioni di composizione, assegnare i tasti da 0 a 9 sul tastierino del telefono a una delle destinazioni di routing delle chiamate. (I tasti \* (Ripeti) e (Indietro) sono riservati dal sistema e non possono \# essere riassegnati.
+Per le opzioni di composizione, assegnare i tasti da 0 a 9 sul tastierino del telefono a una delle destinazioni di routing delle chiamate. (I tasti \* (Ripeti) e (Indietro) sono riservati dal sistema e non possono essere \# riassegnati.
 
 Non è necessario che i mapping dei tasti siano continui. È possibile creare un menu con i tasti 0, 1 e 3 mappati alle opzioni, mentre il tasto numero 2 non viene usato.
 
@@ -123,7 +123,7 @@ Se non sono stati assegnati tasti di chiamata, scegliere un'opzione per **La ric
 
 **Chiama per nome:** se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sul tastierino del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiama per nome. È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con **Chiamata per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
+**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiamata **per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
 Gli utenti che si vogliono rendere disponibili per l'estensione Chiamata per interno devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
 
@@ -198,7 +198,7 @@ Dopo aver aggiunto tutte le festività, selezionare **Avanti.**
 
 *L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli** utenti online include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale usando Skype for Business Server.
 
-È possibile includere o escludere utenti specifici  selezionando  Gruppo di utenti personalizzato in Includi o Escludi e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza.  Ad esempio, è consigliabile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
+È possibile includere o escludere utenti specifici  selezionando  Gruppo di utenti personalizzato in Includi o Escludi e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza.  Ad esempio, è possibile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
 
 > [!NOTE]
 > L'elenco del nome di un nuovo utente nella directory potrebbe richiedere fino a 36 ore.
@@ -215,7 +215,9 @@ Per aggiungere un account della risorsa, selezionare **Aggiungi account** e cerc
 
 ![Screenshot dell'elenco degli account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato](media/auto-attendant-resource-account-assigned.png)
 
-Dopo aver aggiunto gli account del servizio, **selezionare** Invia per completare la configurazione dell'operatore automatico.
+Dopo aver aggiunto gli account delle risorse, **selezionare** Invia per completare la configurazione dell'operatore automatico.
+
+Per [altre informazioni, vedere Gestire Teams account](manage-resource-accounts.md) delle risorse.
 
 ## <a name="external-phone-number-transfers---technical-details"></a>Trasferimenti di numeri di telefono esterni - dettagli tecnici
 
@@ -223,16 +225,16 @@ Fare riferimento ai [Prerequisiti per](plan-auto-attendant-call-queue.md#prerequ
 
 - Per un account della risorsa con una licenza piano per [chiamate,](calling-plans-for-office-365.md)il numero di telefono per il trasferimento esterno deve essere immesso nel formato E.164 (+[codice paese][codice area][numero di telefono]).
 
-- Per un account della risorsa con criteri di routing vocale Sistema telefonico License e Direct Routing online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
+- Per un account delle risorse con criteri di routing vocale Sistema telefonico License e Direct Routing online, il formato del numero di telefono per il trasferimento esterno dipende dalle impostazioni [SBC (Session Border Controller).](direct-routing-connect-the-sbc.md)
 
 Il numero di telefono in uscita visualizzato viene determinato nel modo seguente:
 
   - Per i numeri del piano di chiamata, viene visualizzato il numero di telefono del chiamante originale.
-  - Per i numeri di instradamento diretto, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) del SBC, come indicato di seguito:
+  - Per i numeri di instradamento diretto, il numero inviato si basa sull'impostazione P-Asserted-Identity (PAI) nel SBC, come indicato di seguito:
     - Se è impostato su Disabilitato, viene visualizzato il numero di telefono del chiamante originale. Questa è l'impostazione predefinita e consigliata.
     - Se è impostato su Abilitato, viene visualizzato il numero di telefono dell'account della risorsa.
 
-In un Skype for Business ibrido, per trasferire una chiamata dell'operatore automatico alla rete PSTN, creare un nuovo utente locale con l'inoltro di chiamata impostato sul numero PSTN. L'utente deve essere abilitato per VoIP aziendale e avere assegnato un criterio vocale. Per altre informazioni, vedere [Trasferimento di chiamata dell'operatore automatico a PSTN.](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn)
+In un Skype for Business ibrido, per trasferire una chiamata dell'operatore automatico alla rete PSTN, creare un nuovo utente locale con l'inoltro di chiamata impostato sul numero PSTN. L'utente deve essere abilitato per VoIP aziendale e assegnare un criterio vocale. Per altre informazioni, vedere [Trasferimento di chiamata dell'operatore automatico a PSTN.](/SkypeForBusiness/plan/exchange-unified-messaging-online-migration-support#auto-attendant-call-transfer-to-pstn)
 
 ### <a name="create-an-auto-attendant-with-powershell"></a>Creare un operatore automatico con PowerShell
 

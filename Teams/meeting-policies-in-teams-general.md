@@ -18,19 +18,19 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.general
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni generali dei criteri riunione in Teams.
-ms.openlocfilehash: 944f909dcbc3e1eb0592a73ad299358294958721
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+description: Informazioni su come gestire le impostazioni generali dei criteri delle riunioni in Teams.
+ms.openlocfilehash: e9e38f724d5327ed54bad8098c1f7fae0c300e34
+ms.sourcegitcommit: 3650579196d5f340ef32b31ba975285e08ab1848
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235211"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58392923"
 ---
 # <a name="meeting-policy-settings---general"></a>Impostazioni dei criteri di riunione - Generale
 
 <a name="bkgeneral"> </a>
 
-Questo articolo descrive le impostazioni generali dei criteri per le Teams riunioni:
+Questo articolo descrive le impostazioni dei criteri generali seguenti per Teams riunioni:
 
 - [Consenti l'uso di Riunione immediata nei canali](#allow-meet-now-in-channels)
 - [Consenti il componente aggiuntivo per Outlook](#allow-the-outlook-add-in)
@@ -38,7 +38,9 @@ Questo articolo descrive le impostazioni generali dei criteri per le Teams riuni
 - [Consenti la pianificazione di riunioni private](#allow-scheduling-private-meetings)
 - [Consenti l'uso di Riunione immediata nelle riunioni private](#allow-meet-now-in-private-meetings)
 - [Modalità ruolo relatore designato](#designated-presenter-role-mode)
-- [Report sulla partecipazione alla riunione](#meeting-attendance-report)
+- [Consenti report impegno](#allow-engagement-report)
+- [Consentire la registrazione alla riunione](#allow-meeting-registration)
+- [Who possibile registrare](#who-can-register)
 - [Provider di riunioni per la modalità Isole](#meeting-provider-for-islands-mode)
 
 ## <a name="allow-meet-now-in-channels"></a>Consenti l'uso di Riunione immediata nei canali
@@ -108,7 +110,7 @@ Questo è un criterio per utente. Questa impostazione consente di modificare il 
 
 L'impostazione **Chi può essere un relatore?** consente agli organizzatori di scegliere chi può essere un relatore in una riunione. Per altre informazioni, vedere [Modificare le impostazioni dei partecipanti per una riunione Teams](https://support.microsoft.com/article/change-participant-settings-for-a-teams-meeting-53261366-dbd5-45f9-aae9-a70e6354f88e) e [Ruoli in una riunione di Teams](https://support.microsoft.com/article/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019).
 
-Attualmente, è possibile usare solo PowerShell per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+Attualmente, è possibile usare solo PowerShell per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
 Per specificare il valore predefinito dell'impostazione **Chi può essere un relatore?** in Teams, impostare il parametro **DesignatedPresenterRoleMode** su uno dei parametri seguenti:
 
@@ -118,15 +120,44 @@ Per specificare il valore predefinito dell'impostazione **Chi può essere un rel
 
 Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni possono ancora modificare questa impostazione in Teams e scegliere chi può essere un relatore nelle riunioni pianificate.
 
-## <a name="meeting-attendance-report"></a>Report sulla partecipazione alla riunione
+## <a name="allow-engagement-report"></a>Consenti report impegno
 
 Questo è un criterio per utente. Questa impostazione controlla se gli organizzatori delle riunioni possono scaricare il [Rapporto partecipazione a riunione](teams-analytics-and-reports/meeting-attendance-report.md).
 
-Attualmente, è possibile usare solo PowerShell per configurare questa impostazione di criteri. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+Questo criterio è disattivato per impostazione predefinita e consente agli organizzatori di vedere chi ha registrato e partecipato alle riunioni e ai webinar che hanno configurato. Per attivare questa opzione nell'interfaccia Teams di amministrazione, passare a Criteri riunione riunioni e impostare  >  il criterio su **Abilitato.**
 
-Per consentire a un organizzatore della riunione di scaricare il report sulla partecipazione alla riunione, impostare il **parametro AllowEngagementReport** su **Enabled**. Se abilitata, l'opzione per scaricare il rapporto viene visualizzata nel riquadro **Partecipanti**. Per impostazione predefinita, questa impostazione è abilitata.
+È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+
+Per consentire a un organizzatore della riunione di scaricare il report sulla partecipazione alla riunione, impostare il **parametro AllowEngagementReport** su **Enabled**. Se abilitata, l'opzione per scaricare il rapporto viene visualizzata nel riquadro **Partecipanti**. Per impostazione predefinita, questa impostazione non è abilitata.
 
 Per evitare che un organizzatore della riunione scarichi il rapporto, impostare il parametro su **Disabilitato**.
+
+## <a name="allow-meeting-registration"></a>Consentire la registrazione alla riunione
+
+Questo è un criterio per utente. Se si attiva questa opzione, gli utenti dell'organizzazione possono configurare webinar. Questo criterio è abilitato per impostazione predefinita.
+
+Per modificare questo criterio nell'interfaccia Teams di amministrazione, passare **a Criteri riunione**  >  **riunioni**. Per disattivare la registrazione alla riunione, impostare il criterio su **Disattivato.**
+
+È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+
+Per attivare la registrazione della riunione, impostare il  **parametro AllowMeetingRegistration** su **True**. Questa opzione è impostata **su True** per impostazione predefinita.
+
+Per disattivare la registrazione della riunione e impedire agli utenti di pianificare webinar, impostare il parametro su **False**.
+
+## <a name="who-can-register"></a>Who possibile registrare
+
+Questo criterio controlla quali utenti possono registrarsi e partecipare ai webinar. Questo criterio include due opzioni, disponibili solo se l'opzione Consenti **registrazione riunione** è attivata.
+
+- Impostare **Who** registrarsi su **Tutti** se si vuole consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare ai webinar impostati dagli utenti dell'organizzazione.
+- Impostare **Who** possibile registrarsi a **Tutti** nell'organizzazione se si vuole consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar.
+
+Per impostazione predefinita, **Who registrazione è** impostato su **Tutti**. Per modificare questo criterio nell'interfaccia Teams di amministrazione, passare **a Criteri riunione**  >  **riunioni**.
+
+È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+
+Per consentire a tutti, inclusi gli utenti anonimi, di registrarsi e partecipare ai webinar, impostare il **parametro WhoCanRegister** su **Everyone**. Questa opzione è impostata **su Tutti** per impostazione predefinita.
+
+Per consentire solo agli utenti dell'organizzazione di registrarsi e partecipare ai webinar, impostare il parametro su **EveryoneInCompany**.
 
 ## <a name="meeting-provider-for-islands-mode"></a>Provider di riunioni per la modalità Isole
 
@@ -134,7 +165,7 @@ Questo è un criterio per utente. Questa impostazione controlla se il componente
 
 È possibile applicare questo criterio agli utenti in modalità Isole e che hanno impostato il parametro **AllowOutlookAddIn** su **True** nel loro criterio per le riunioni di Teams.
 
-Attualmente, è possibile usare solo PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](https://docs.microsoft.com/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
+Attualmente, è possibile usare solo PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e assegnarlo agli utenti.
 
 Per specificare il componente aggiuntivo per le riunioni da rendere disponibile per gli utenti, impostare il parametro **PreferredMeetingProviderForIslandsMode** come indicato di seguito:
 
@@ -153,5 +184,5 @@ Le reazioni nelle riunioni sono disattivate per impostazione predefinita. Se si 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
-- [Assegnare i criteri agli utenti in Teams](assign-policies.md)
+- [Assegnare criteri in Teams](policy-assignment-overview.md)
 - [Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams](meeting-policies-restricted-anonymous-access.md)

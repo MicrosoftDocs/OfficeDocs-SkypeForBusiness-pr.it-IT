@@ -15,16 +15,16 @@ MS.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7cff5f74d5ece9cf28887783ed07b9bfc8e5cd32287a96aeb2efbfaf29bce515
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9c1a08bfe63db87332035dd51b93281cc8ac0f25
+ms.sourcegitcommit: 9062b2c81c582ddc878c825ba1b22a6c23ca4b64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350448"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58398955"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
-La configurazione di una gerarchia di targeting del team consentirà all'organizzazione di pubblicare contenuto in un set di team di grandi dimensioni. La gerarchia di destinazione del team definisce il modo in cui tutti i team della gerarchia sono correlati tra loro, quali utenti possono pubblicare attività e in quali team gli utenti hanno le autorizzazioni per la pubblicazione. Le caratteristiche di pubblicazione sono disabilitate per tutti gli utenti, a meno che non sia stata impostata una gerarchia di destinazione del team per l'organizzazione. Per configurare una gerarchia di destinazione del team, è necessario creare un file che definisce la gerarchia e quindi caricarlo in Teams per applicarla all'organizzazione. Dopo il caricamento dello schema, le app all Teams possono usarlo.
+La configurazione di una gerarchia di targeting del team consentirà all'organizzazione di pubblicare contenuto in un set di team di grandi dimensioni. La gerarchia di destinazione del team definisce il modo in cui tutti i team della gerarchia sono correlati tra loro, quali utenti possono pubblicare attività e in quali team gli utenti hanno le autorizzazioni per la pubblicazione. Le caratteristiche di pubblicazione sono disabilitate per tutti gli utenti, a meno che non sia stata impostata una gerarchia di destinazione del team per l'organizzazione. Per configurare una gerarchia di destinazione del team, è necessario creare un file che definisce la gerarchia e quindi caricarlo in Teams per applicarla all'organizzazione. Dopo il caricamento dello schema, le app all'interno Teams possono usarlo.
 
 > [!IMPORTANT]
 > Per la versione iniziale, solo l'app Attività supporta i team gerarchici.  L'applicazione di una gerarchia di destinazione del team all'organizzazione consentirà [la pubblicazione delle attività](https://support.microsoft.com/office/publish-task-lists-to-create-and-track-work-in-your-organization-095409b3-f5af-40aa-9f9e-339b54e705df) nell'app Attività. Non verrà visualizzata una gerarchia di team in altre aree di Microsoft Teams.
@@ -54,20 +54,20 @@ L'autorizzazione per la pubblicazione dipende dal fatto che un utente sia membro
 > [!NOTE]
 > Al proprietario di un team vengono concesse anche le autorizzazioni di pubblicazione.
 
-* Se un utente è membro di almeno un team che ha discendenti nella gerarchia, può pubblicare in tali discendenti senza essere membro di tutti i team in cui vuole pubblicare.
-* Se un utente è membro di almeno un team nella gerarchia ma non è membro di un team con discendenti nella gerarchia, può visualizzare e ricevere contenuto pubblicato dall'organizzazione.
+* Se un utente è membro di almeno un team con discendenti nella gerarchia, può pubblicare in tali discendenti senza essere membro di tutti i team in cui vuole pubblicare.
+* Se un utente è membro di almeno un team nella gerarchia ma non è membro di un team con discendenti nella gerarchia, può visualizzare e ricevere contenuto pubblicato dalla propria organizzazione.
 * Se un utente non è un membro di un team nella gerarchia, l'utente non visualizza alcuna funzionalità correlata alla pubblicazione.
 
 ### <a name="guidelines"></a>Linee guida
 
-* Per ogni organizzazione può essere applicato un solo file di gerarchia. È tuttavia possibile includere parti diverse dell'organizzazione come gerarchie distinte di nodi all'interno di un file CSV. Ad esempio, Contoso Pharmaceuticals ha un nodo radice Farmacia e un nodo radice Di vendita al dettaglio. Entrambi i nodi radice hanno più righe di discendenti e non ci sono sovrapposizioni tra di essi.
+* Per ogni organizzazione può essere applicato un solo file di gerarchia. È tuttavia possibile includere parti diverse dell'organizzazione come gerarchie distinte di nodi all'interno di un file. Ad esempio, Contoso Pharmaceuticals ha un nodo radice Farmacia e un nodo radice Di vendita al dettaglio. Entrambi i nodi radice hanno più righe di discendenti e non ci sono sovrapposizioni tra di essi.
 * Solo i nodi foglia possono essere destinatari di una pubblicazione. Gli altri nodi della gerarchia sono utili per selezionare i destinatari di una pubblicazione.
 * Un team può essere rappresentato una sola volta in una gerarchia.
 * Una gerarchia può contenere fino a 15.000 nodi. Microsoft prevede di collaborare con i clienti per aumentare questo limite per le organizzazioni più grandi.
 
 ### <a name="example-hierarchy"></a>Gerarchia di esempio
 
-Ad esempio, nella gerarchia seguente, richiamo, comunicazioni e risorse umane possono pubblicare attività in ogni nodo inferiore (team) della gerarchia, ma l'area nord-orientale può pubblicare le attività solo nei team di New York Store e Boston Store. La gerarchia di esempio consente ai gruppi Di richiamo, Comunicazioni e Risorse umane di pubblicare attività che si applicano all'intera società, ad esempio informazioni sui vantaggi o messaggi del CEO. L'area nord-est può pubblicare attività come la pianificazione del personale, le informazioni meteo e così via, solo ai team di New York Store e Boston Store.
+Ad esempio, nella gerarchia seguente, Richiamo, Comunicazioni e Risorse umane possono pubblicare attività in ogni nodo inferiore (team) della gerarchia, ma l'area nord-orientale può pubblicare le attività solo nei team di New York Store e Boston Store. La gerarchia di esempio consente ai gruppi Di richiamo, Comunicazioni e Risorse umane di pubblicare attività che si applicano all'intera società, ad esempio informazioni sui vantaggi o messaggi del CEO. L'area nord-orientale può pubblicare attività come la pianificazione del personale, le informazioni meteo e così via, solo ai team di New York Store e Boston Store.
 
 ![Esempio gerarchico del team](media/team-targeting-schema-example-new.png)
 
@@ -76,7 +76,7 @@ Ad esempio, nella gerarchia seguente, richiamo, comunicazioni e risorse umane po
 > [!NOTE]
 > Nella parte restante di questo articolo viene illustrata la configurazione di una gerarchia di team nel contesto della pubblicazione di attività nei team dei destinatari. Vedere Gestire [l'app Attività per l'organizzazione in Teams](./manage-tasks-app.md) per una panoramica dell'app Attività, in cui la pubblicazione delle attività viene visualizzata quando è abilitata.
 
-Lo schema che definisce la gerarchia è basato su un file csv (comma-separated values). Ogni riga del file CSV corrisponde a un nodo all'interno della gerarchia dei team. Ogni riga contiene informazioni che nominano il nodo all'interno della gerarchia, facoltativamente lo collegano a un team e includono attributi che possono essere usati per filtrare i team nelle app che lo supportano.
+Lo schema che definisce la gerarchia si basa su un file csv (comma-separated values). Il file deve essere in formato UTF-8. Ogni riga del file CSV corrisponde a un nodo all'interno della gerarchia dei team. Ogni riga contiene informazioni che nominano il nodo all'interno della gerarchia, facoltativamente lo collegano a un team e includono attributi che possono essere usati per filtrare i team nelle app che lo supportano.
 
 È anche possibile definire **contenitori,** ovvero categorie che il team di pubblicazione può usare per organizzare il contenuto inviato ai team dei destinatari per semplificare la visualizzazione, l'ordinamento e l'attenzione sul contenuto pertinente.
 
@@ -99,8 +99,8 @@ Dopo aver aggiunto le tre colonne obbligatorie, è possibile aggiungere colonne 
 
 |Modi per aggiungere attributi|Descrizione |Esempio  |
 |---|---------|---------|
-|Se i valori di un attributo si escludono a vicenda, il nome della colonna specificato diventa il nome dell'attributo.|Ogni riga può contenere un valore per l'attributo e ogni colonna dell'attributo può contenere fino a 50 valori univoci. Ogni valore può contenere fino a 100 caratteri. Il set di valori di attributo specificato nella colonna dell'attributo verrà visualizzato come valori di filtro per tale attributo quando si selezionano i team dei destinatari usando la gerarchia di destinazione del team.|Si vuole consentire agli utenti di filtrare gli archivi in base al layout. I valori di questo attributo si escludono a vicenda perché un archivio può avere un solo layout. <br><br>Per aggiungere un attributo per filtrare gli archivi in base al layout, aggiungere una colonna denominata Layout negozio. In questo esempio, i valori per l'attributo di layout Store sono Compact, Standard e Large.
-|Se è necessario indicare più valori per un attributo e i valori non si escludono a vicenda, usare il formato **AttributeName:UniqueValue** per i nomi di colonna. <br><br>**IMPORTANTE** Assicurarsi di usare i due punti solo in inglese (:) poiché unicode non è supportato come delimitatore di colonna attributo. |Stringa di testo prima dei due punti (:) diventa il nome dell'attributo. Tutte le colonne che contengono la stessa stringa di testo prima dei due punti (:) sono raggruppati in una sezione del menu di filtro. Ognuna delle stringhe dopo i due punti diventa il valore della sezione.<br><br>Ogni riga può avere un valore pari a 0 (zero) o 1 per l'attributo. Il valore 0 indica che l'attributo non è applicabile al nodo e il valore 1 indica che l'attributo si applica a tale nodo.|Si vuole consentire agli utenti di filtrare gli archivi in base al reparto. Un negozio può avere più reparti e quindi i valori per questo attributo non si escludono a vicenda.<br><br>In questo esempio vengono aggiunti Reparti:Abbigliamento, Reparti:Elettronica, Reparti:Alimenti, Reparti:Casa e Giardino, Reparti:Articoli sportivi come colonne di attributi. I reparti diventano il nome dell'attributo e gli utenti possono filtrare in base ai reparti Abbigliamento, Elettronica, Alimenti, Casa e Giardino e Articoli sportivi.|
+|Se i valori di un attributo si escludono a vicenda, il nome della colonna specificato diventa il nome dell'attributo.|Ogni riga può contenere un valore per l'attributo e ogni colonna dell'attributo può contenere fino a 50 valori univoci. Ogni valore può contenere fino a 100 caratteri. Il set di valori di attributo specificato nella colonna dell'attributo verrà visualizzato come valori di filtro per tale attributo quando si selezionano i team dei destinatari usando la gerarchia di destinazione del team.|Si vuole consentire agli utenti di filtrare gli archivi in base al layout. I valori di questo attributo si escludono a vicenda perché un archivio può avere un solo layout. <br><br>Per aggiungere un attributo per filtrare gli archivi in base al layout, aggiungere una colonna denominata Layout negozio. In questo esempio i valori per l'attributo di layout Store sono Compact, Standard e Large.
+|Se è necessario indicare più valori per un attributo e i valori non si escludono a vicenda, usare il formato **AttributeName:UniqueValue** per i nomi di colonna. <br><br>**IMPORTANTE** Assicurarsi di usare i due punti (due punti) solo in :) poiché unicode non è supportato come delimitatore di colonna attributo. |Stringa di testo prima dei due punti (:) diventa il nome dell'attributo. Tutte le colonne che contengono la stessa stringa di testo prima dei due punti (:) sono raggruppati in una sezione del menu di filtro. Ognuna delle stringhe dopo i due punti diventa il valore della sezione.<br><br>Ogni riga può avere un valore pari a 0 (zero) o 1 per l'attributo. Il valore 0 indica che l'attributo non è applicabile al nodo e il valore 1 indica che l'attributo si applica a tale nodo.|Si vuole consentire agli utenti di filtrare gli archivi in base al reparto. Un negozio può avere più reparti e quindi i valori per questo attributo non si escludono a vicenda.<br><br>In questo esempio vengono aggiunti Reparti:Abbigliamento, Reparti:Elettronica, Reparti:Alimenti, Reparti:Casa e Giardino, Reparti:Articoli sportivi come colonne di attributo. I reparti diventano il nome dell'attributo e gli utenti possono filtrare in base ai reparti Abbigliamento, Elettronica, Alimenti, Casa e Giardino e Articoli sportivi.|
 
 Quando si aggiunge una colonna attributo, tenere presente quanto segue:
 
@@ -116,8 +116,8 @@ Categorizzando gli elementi di lavoro una sola volta centralmente, il team di pu
 
 Quando si aggiunge una colonna bucket, tenere presente quanto segue:
 
-* Il nome della colonna diventa il nome del contenitore. Ogni contenitore specificato verrà visualizzato nell'elenco Contenitori Teams app che usano la gerarchia.
-* È consigliabile non includere informazioni riservate nei nomi dei bucket. Al momento, i team di pubblicazione non possono rimuovere un bucket tramite la pubblicazione dopo che è stato creato.
+* Il nome della colonna diventa il nome del contenitore. Ogni contenitore specificato verrà visualizzato nell'elenco Bucket nelle app Teams che usano la gerarchia.
+* È consigliabile non includere informazioni riservate nei nomi dei bucket. Al momento, i team di pubblicazione non possono rimuovere un bucket tramite la pubblicazione dopo la creazione.
 * Il nome della colonna deve essere preceduto da un hashtag (#). Può contenere fino a 100 caratteri e contenere solo i caratteri A-Z, a-z e 0-9. Ad esempio, #Operations e #Frozen beni.
 * Una gerarchia può contenere fino a 25 colonne di bucket. Microsoft prevede di collaborare con i clienti per aumentare questo limite per le organizzazioni più grandi.
 
@@ -154,7 +154,7 @@ Los Angeles Store,West Regional Zone,204a1287-2efb-4a8a-88e0-56fbaf5a2389,Large,
 > Per eseguire questo passaggio, è necessario installare e usare il Teams di anteprima pubblica di PowerShell dalla raccolta di PowerShell. Per la procedura di installazione del modulo, vedere Installare Teams PowerShell.
 
 > [!NOTE]
-> Government Community Cloud (GCC) i clienti devono usare l'anteprima dei [cmdlet versione 2.4.0 o](https://www.powershellgallery.com/packages/MicrosoftTeams/2.4.0-preview) successiva per assicurarsi che i dati siano instradati all'ambiente GCC, invece che all'ambiente cloud pubblico.
+> Government Community Cloud (GCC) i clienti devono usare l'anteprima del [cmdlet versione 2.4.0 o](https://www.powershellgallery.com/packages/MicrosoftTeams/2.4.0-preview) successiva per assicurarsi che i dati siano instradati all'ambiente GCC, invece che all'ambiente cloud pubblico.
 
 Dopo aver definito la gerarchia nel file CSV dello schema, è possibile caricarla in Teams. A questo scopo, eseguire il comando seguente. Per eseguire questo passaggio, è necessario essere un amministratore globale o Teams del servizio.
 
@@ -202,7 +202,7 @@ Quando si conferma l'eliminazione, il messaggio di stato continuerà a visualizz
 ### <a name="install-the-teams-powershell-module"></a>Installare il modulo Teams PowerShell
 
 > [!IMPORTANT]
-> Per eseguire questo passaggio, è necessario installare e usare il Teams di anteprima pubblica di PowerShell dalla [raccolta di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/) Per la procedura di installazione del modulo, vedere Installare [Teams PowerShell.](teams-powershell-install.md)
+> Per eseguire questo passaggio, è necessario installare e usare il modulo Teams anteprima pubblica di PowerShell dalla [raccolta di PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams/) Per la procedura di installazione del modulo, vedere Installare [Teams PowerShell.](teams-powershell-install.md)
 
 ### <a name="sample-script"></a>Script di esempio
 
@@ -270,9 +270,9 @@ Error: InvalidTeamId
 Description: TeamID in row # doesn't match a valid Group ID. Please view our documentation to learn how to get the proper GroupID for each team.
 ```
 
-Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID Team deve essere uguale all'ID gruppo del gruppo Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'Microsoft Teams di amministrazione.
+Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID team deve essere uguale all'ID gruppo del gruppo Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'Microsoft Teams di amministrazione.
 
-1. Nel riquadro di spostamento sinistro [dell'interfaccia Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/)passare Teams Gestisci   >  **team.**
+1. Nel riquadro di spostamento sinistro [dell'Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/)passare a Teams Gestisci   >  **team.**
 2. Se la **colonna ID** gruppo non è visualizzata nella tabella, selezionare Modifica colonne nell'angolo **in** alto a destra della tabella e quindi attivare **ID gruppo.**
 3. Trovare il team nell'elenco e quindi individuare l'ID gruppo.
 

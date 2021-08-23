@@ -1,2 +1,2 @@
 > [!NOTE]
-> Microsoft si trasferirà da UserVoice alla soluzione di feedback dei clienti per prodotto per prodotto nel corso del 2021. [Altre informazioni](https://support.microsoft.com/topic/-pages-430e1a78-e016-472a-a10f-dc2a3df3450a).
+> Microsoft si trasferirà da UserVoice alla nostra soluzione feedback dei clienti prodotto per prodotto durante il 2021. [Altre informazioni](https://support.microsoft.com/topic/-pages-430e1a78-e016-472a-a10f-dc2a3df3450a).

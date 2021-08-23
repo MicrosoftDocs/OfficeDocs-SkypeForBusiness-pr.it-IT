@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Svizzera per Microsoft Teams.
-ms.openlocfilehash: 92cdc40c2a71d07d8ecac94d1daebebe073c013d
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 65c9b6d1464a802a20653f806cfd08607aabdd6e
+ms.sourcegitcommit: 7251b92c9913ca1e43b3cc24fad73e8997303731
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58233011"
+ms.locfileid: "58348318"
 ---
 # <a name="phone-number-management-for-switzerland"></a>Telefono gestione dei numeri per la Svizzera
 
@@ -34,7 +34,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti e inviaceli**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (de-de)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(de-de).pdf?raw=true) <br/>[Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (fr-fr)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(fr-fr).pdf?raw=true) <br/>[Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (it-it)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(it-it).pdf?raw=true)<br/>  [Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (en-us)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-switzerland-(v.5.0)-(en-us).pdf?raw=true)<br/><br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)|
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.   <br/> |Scarica uno di questi moduli. <br/>  [Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (de-de)](https://download.microsoft.com/download/6/f/0/6f01dfb0-3e32-410f-8b54-aa1403c41959/new-phone-number-request-for-switzerland-(v.5.0)-(de-de).pdf) <br/>[Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (fr-fr)](https://download.microsoft.com/download/a/b/5/ab5f89d5-7dd4-4d74-ac71-ee48815b9eb1/new-phone-number-request-for-switzerland-(v.5.0)-(fr-fr).pdf) <br/>[Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (it-it)](https://download.microsoft.com/download/f/0/6/f0602963-745e-4e1c-87fa-bbdb2dc6395b/new-phone-number-request-for-switzerland-(v.5.0)-(it-it).pdf)<br/>  [Nuova richiesta di numero di telefono per la Svizzera (v.5.0) (en-us)](https://download.microsoft.com/download/2/1/d/21d9d44d-43dc-481c-aed8-c9a0a85b372e/new-phone-number-request-for-switzerland-(v.5.0)-(en-us).pdf)<br/><br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)|
 |Fai trasferire a noi i numeri di telefono.  <br/> | Scarica uno di questi moduli. <br/>[Lettera di autorizzazione (LOA) per la Svizzera (tutti i numeri) (v.5.0) (de-ch)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/LOA-forms/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.5.0)-(de-ch).pdf?raw=true)<br/>[Lettera di autorizzazione (LOA) per la Svizzera (tutti i numeri) (v.6.0) (fr-ch)](https://download.microsoft.com/download/c/c/c/cccf5c0b-a838-4d2a-a476-430e4ad79a17/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.6.0)-(fr-ch).pdf)<br/>[Lettera di autorizzazione (LOA) per la Svizzera (tutti i numeri) (v.6.0) (it-ch)](https://download.microsoft.com/download/c/a/0/ca098e50-9e77-4dd6-9a79-9074421c7652/letter-of-authorization-(loa)-for-switzerland-(all-numbers)-(v.6.0)-(it-ch).pdf) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/> |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione.      <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |

@@ -20,14 +20,14 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 description: "Microsoft Teams est l'outil de chat collaboratif d'Office 365 qui intègre toutes les personnes, contenus et outils don't votre équipe a besoin pour être plus impliquée et efficace. "
-ms.openlocfilehash: aeb76f4dca50fe3aad3ab5fb77b66d160102eeff02fcbdafbf48661e47f6766f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 92a982857f3530a5f03c2efafb2efbce83bfd23a
+ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286195"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372226"
 ---
-# <a name="en-301-549-dclaration-de-conformit-en-matire-daccessibilit"></a>EN 301 549 Déclaration de conformité en matière d'accessibilité
+#  <a name="en-301-549-dclaration-de-conformit-en-matire-daccessibilit"></a>EN 301 549 Déclaration de conformité en matière d'accessibilité
 
 
 ### <a name="section-1-champ-dapplication"></a>Sezione 1 Campione d'applicazione
@@ -105,7 +105,7 @@ Définitions et abréviations [EN 301 549](http://mandate376.standards.eu/standa
 </tr>
 <tr class="even">
 <td><h3 id="mode-de-fonctionnement">5.5.1 Modalità de fonctionnement</h3>
-<p>Dans le cas où la TIC présente des éléments actionnables qui doivent être actionnés en les prenant, en les pinçant ou en exerçant une torsion du poignet, un autre mode de fonctionnement accessible qui ne ne nécessite pas ces gestes est proposé.</p></td>
+<p>Dans le cas où la TIC présente des éléments actionnables qui doivent être actionnés en les prenant, en les pinçant ou en exerçant une torsion du poignet, un autre mode de fonctionnement accessible qui ne nécessite pas ces gestes est proposé.</p></td>
 <td>Non applicabile</td>
 <td></td>
 </tr>
@@ -143,7 +143,7 @@ Définitions et abréviations [EN 301 549](http://mandate376.standards.eu/standa
 </tr>
 <tr class="even">
 <td><h3 id="actions-simultanées-de-lutilisateur">5.9 Azioni simultanées de l'utilisateur</h3>
-<p>Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner.</p></td>
+<p>Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner.</p></td>
 <td>Pris en charge</td>
 <td></td>
 </tr>
@@ -242,7 +242,7 @@ Définitions et abréviations [EN 301 549](http://mandate376.standards.eu/standa
 </tr>
 <tr class="even">
 <td><h3 id="alternatives-aux-services-vidéo">6.6 Alternatives aux services vidéo</h3>
-<p>Dans le cas où la TIC propose la communication vidéo en temps réel et propose également des fonctions de répondeur, de réception automatique ou de réponse interactive, la TIC doit proposer aux utilisateurs un moyen d'accéder aux informations et d'accomplir les tâches associées à ces fononctions :</p>
+<p>Dans le cas où la TIC propose la communication vidéo en temps réel et propose également des fonctions de répondeur, de réception automatique ou de réponse interactive, la TIC doit proposer aux utilisateurs un moyen d'accéder aux informations et d'accomplir les tâches associées à ces fonctions :</p>
 <p>a) pour les informations audibles, sans utilisation de l'audition ;</p>
 <p>b) pour les commandes vocales, sans utilisation de la voix ;</p>
 <p>c) pour les informations visuelles, sans utilisation de la vision.</p></td>
@@ -279,7 +279,7 @@ Cette section ne s'applique pas à Skype Entreprise 2016.
 <td><strong>Remarques et explications</strong></td>
 </tr>
 <tr class="even">
-<td><h3 id="contenu-non-textuel-lecture-décran-prise-en-charge">11.2.1.1 Contenu non textuel (lezione d'écran prise en charge)</h3>
+<td><h3 id="contenu-non-textuel-lecture-décran-prise-en-charge">11.2.1.1 Contenu non textuel (lecture d'écran prise en charge)</h3>
 <p>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur et qui prend en charge l'accès aux technologies d'assistance pour la lecture d'écran, elle remplit les Critères de Succès indiqués dans le Tableau 11.1 : Contenu non textuel :</p>
 <p>Tout le contenu non textuel qui est présenté à l'utilisateur est doté d'un équivalent textuel qui a la même fonction, sauf dans les situations suivantes :</p>
 <p>Commandes, saisie : Si le contenu non textuel est une commande ou s'il permet la saisie d'informations par l'utilisateur, alors il a un nom qui décrit sa fonction.</p>
@@ -659,7 +659,7 @@ Cette section ne s'applique pas à Skype Entreprise 2016.
 <td></td>
 </tr>
 <tr class="odd">
-<td><p><strong>11.6.2 Création de contenu accessible</strong></p>
+<td><p><strong>11.6.2 Création de contenu accessibile</strong></p>
 <p>Les systèmes auteurs permettent et guident la production de contenu conforme aux clauses 9 (Contenu Web) ou 10 (Contenu non-web) telles qu'applicables.</p></td>
 <td>Non applicabile</td>
 <td></td>
@@ -736,7 +736,6 @@ Cette section ne s'applique pas à Skype Entreprise 2016.
 
 Cette section ne s'applique pas à Skype Entreprise2016.
 
-## 
 
 © 2017 Microsoft Corporation. Tous droits réservés. Les noms des sociétés et des produits mentionnés dans le présent document peuvent être les marques de leurs propriétaires respectifs. Les informations qui figurent dans le présent document constituent l'opinion actuelle de Microsoft Corporation sur les thèmes concernés à la date de publication.
 Microsoft ne peut garantir l'exactitude d'une information présentée après la date de publication. Microsoft ha incontrato régulièrement à jour ses sites Internet et publie de nouvelles informations sur l'accessibilité de ses produits dès qu'elles sont disponibles.

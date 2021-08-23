@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Questo articolo illustra i principi di base del flusso delle chiamate per Skype for Business online ed ExpressRoute, e fornisce alcuni esempi dettagliati di flussi delle chiamate per una maggiore comprensione e per eseguire una corretta programmazione.
-ms.openlocfilehash: 098949c41430bc939197a21373489b1aaa10c1678943d0ee695cd7ade02be142
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 35936e1e33f2914345aa5443ca745dc2c5260ad7
+ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304638"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58407205"
 ---
 # <a name="call-flow-using-expressroute"></a>Flusso delle chiamate con ExpressRoute
 
@@ -33,7 +33,7 @@ ms.locfileid: "54304638"
 
 Questo articolo illustra i principi di base del flusso delle chiamate per Skype for Business online ed ExpressRoute, e fornisce alcuni esempi dettagliati di flussi delle chiamate per una maggiore comprensione e per eseguire una corretta programmazione.
 
-Se si distribuisce Skype for Business Online come parte di Microsoft 365 o Office 365, Skype for Business Server ibrido o Skype for Business Cloud Connector Edition, è necessario comprendere la comunicazione tra il client e i server di Skype for Business e il flusso delle chiamate in modo da poter pianificare, distribuire, gestire e risolvere i problemi dei servizi di Skype for Business Online.
+Se si distribuisce Skype for Business Online come parte di Microsoft 365 o Office 365, Skype for Business Server Hybrid o Skype for Business Cloud Connector Edition, sarà necessario comprendere la comunicazione tra il client e i server di Skype for Business e il flusso delle chiamate in modo da poter pianificare, distribuire, gestire e risolvere i problemi dei servizi di Skype for Business Online.
 
 ## <a name="call-flow-overview"></a>Panoramica sul flusso delle chiamate
 
@@ -49,7 +49,7 @@ Sui flussi delle chiamate qui descritti può influire una serie di fattori che p
 
 - [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/)
 
-La configurazione e le configurazioni che non hanno seguito i passaggi di configurazione descritti nella documentazione precedente possono avere flussi di chiamata diversi da quelli documentati in questa pagina. Inoltre, potrebbero verificarsi problemi di configurazione, ad esempio route di rete asimmetriche e non ottimali o protocolli di trasporto non ottimali. Il routing asimmetrico è una considerazione importante ogni volta che expressRoute è coinvolto, perché ExpressRoute introduce un secondo percorso a Office 365, che crea la possibilità per una route che usa Internet in una direzione e un'altra che usa ExpressRoute nell'altra direzione. Ciò può causare il blocco del traffico nella direzione di ritorno se attraversa un firewall con stato.
+La configurazione e le configurazioni che non hanno seguito i passaggi di configurazione descritti nella documentazione precedente possono avere flussi di chiamata diversi da quelli documentati in questa pagina. Inoltre, potrebbero verificarsi problemi di configurazione, ad esempio route di rete asimmetriche e non ottimali o protocolli di trasporto non ottimali. Il routing asimmetrico è una considerazione importante ogni volta che viene coinvolto ExpressRoute, perché ExpressRoute introduce un secondo percorso a Office 365, che crea la possibilità per una route che usa Internet in una direzione e un'altra che usa ExpressRoute nell'altra direzione. Ciò può causare il blocco del traffico nella direzione di ritorno se attraversa un firewall con stato.
 
 ## <a name="network-segments-and-traffic-types"></a>Segmenti di rete e tipi di traffico
 
@@ -65,13 +65,13 @@ Di seguito puoi vedere ciascun segmento di rete di cui parleremo.
 
  **La tua rete** Si tratta del segmento di rete che fa parte della rete complessiva da te controllata e gestita. Sono incluse tutte le connessioni all'interno degli uffici, sia cablate che wireless, tra gli edifici degli uffici, i data center locali e le connessioni a provider Internet o partner ExpressRoute.
 
-In genere, il perimetro della rete include uno o più dmz con firewall e/o server proxy, che applicano i criteri di sicurezza dell'organizzazione e consentono solo il traffico di rete configurato e configurato. Poiché si gestisce questa rete, si ha il controllo diretto sulle prestazioni della rete ed è consigliabile completare le valutazioni della rete per convalidare le prestazioni sia all'interno dei siti della rete che dalla rete a Skype for Business Online. Per vedere i requisiti delle prestazioni, consulta [Qualità multimediale e prestazioni della connettività di rete in Skype for Business online](media-quality-and-network-connectivity-performance.md).
+In genere, il perimetro della rete include uno o più dmz con firewall e/o server proxy, che applicano i criteri di sicurezza dell'organizzazione e consentono solo il traffico di rete configurato e configurato dall'utente. Poiché si gestisce questa rete, si ha il controllo diretto sulle prestazioni della rete ed è consigliabile completare le valutazioni della rete per convalidare le prestazioni sia all'interno dei siti della rete che dalla rete a Skype for Business Online. Per vedere i requisiti delle prestazioni, consulta [Qualità multimediale e prestazioni della connettività di rete in Skype for Business online](media-quality-and-network-connectivity-performance.md).
 
- **Internet** Si tratta del segmento di rete che fa parte della tua rete complessiva, utilizzato da utenti che si connettono a Skype for Business online dall'esterno della rete, e per tutte le connessioni quando non è stato configurato ExpressRoute. Internet e tutte le connessioni non sono gestite dall'utente o da Microsoft, quindi non è possibile determinare le prestazioni e i percorsi di routing e questo avrà l'impatto maggiore sul flusso complessivo delle chiamate e sulla qualità.
+ **Internet** Si tratta del segmento di rete che fa parte della tua rete complessiva, utilizzato da utenti che si connettono a Skype for Business online dall'esterno della rete, e per tutte le connessioni quando non è stato configurato ExpressRoute. Internet e tutte le connessioni non sono gestite dall'utente o da Microsoft, quindi non è possibile determinare le prestazioni e i percorsi di routing, con un impatto maggiore sul flusso e sulla qualità complessive delle chiamate.
 
- **ExpressRoute** Si tratta del segmento di rete che fa parte della tua rete complessiva e che ti garantirà una connessione dedicata e privata alla rete Microsoft. Questa è l'opzione consigliata per connettere la rete alla rete Microsoft (data center Microsoft 365 o Office 365) per tutti i carichi di lavoro che dipendono dalla velocità e dalle prestazioni della rete, ad esempio le comunicazioni in tempo reale di Skype for Business Online. Le connessioni ExpressRoute vengono effettuate tra la rete e la rete Microsoft usano i provider di connettività [ExpressRoute](/azure/expressroute/expressroute-locations) per fornire una rete privata e gestita, con il 99,9% di tempo di attività e supporto per la qualità del servizio (QoS) che può migliorare le prestazioni per i supporti multimediali in tempo reale durante i periodi di congestione della rete.
+ **ExpressRoute** Si tratta del segmento di rete che fa parte della tua rete complessiva e che ti garantirà una connessione dedicata e privata alla rete Microsoft. Questa è l'opzione consigliata per connettere la rete alla rete Microsoft (data center Microsoft 365 o Office 365) per tutti i carichi di lavoro che dipendono dalla velocità e dalle prestazioni della rete, ad esempio le comunicazioni in tempo reale di Skype for Business Online. Le connessioni ExpressRoute vengono effettuate tra la rete e la rete Microsoft usano i provider di connettività [ExpressRoute](/azure/expressroute/expressroute-locations) per fornire una rete privata e gestita, con il 99,9% di tempo di attività e supporto per la qualità del servizio (QoS) che può migliorare le prestazioni dei supporti multimediali in tempo reale durante i periodi di congestione della rete.
 
- **Rete Microsoft** Questo è il segmento di rete che fa parte della rete generale che supporta i servizi Microsoft 365 e Office 365 rete. Sono incluse tutte le comunicazioni tra i server online per Microsoft 365 o Office 365. Questo può includere il traffico che attraversa la dorsale di rete Microsoft e viene trasmesso tra aree geografiche.
+ **Rete Microsoft** Questo è il segmento di rete che fa parte della rete generale che supporta i servizi Microsoft 365 e Office 365 rete. Sono incluse tutte le comunicazioni tra server online per Microsoft 365 o Office 365. Questo può includere il traffico che attraversa la dorsale di rete Microsoft e viene trasmesso tra aree geografiche.
 
 ### <a name="types-of-traffic"></a>Tipi di traffico
 
@@ -81,9 +81,9 @@ Il traffico di rete per Skype for Business Online è suddiviso in due ampie cate
 
  **La segnalazione** è il collegamento di comunicazione tra il client e il server o altri client usati per controllare le attività (ad esempio, quando viene avviata una chiamata) e recapitare messaggistica elettronica. La maggior parte del traffico di segnalazione utilizza il protocollo SIP, anche se alcuni client utilizzano interfacce REST basate su HTTP. Per semplificare, stiamo valutando un'ampia gamma di segnalazioni che possono viaggiare su connessioni HTTP e HTTPS o TLS in questo tipo di traffico. È importante comprendere che questo tipo di traffico è molto meno sensibile alla latenza, ma può causare interruzioni di servizio o timeout delle chiamate se la latenza tra gli endpoint supera diversi secondi.
 
-Le destinazioni per questo traffico si trovano negli URL Office 365 indirizzi [IP](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) per tutti i servizi Microsoft 365 o Office 365 ip. Per ogni URL, indica se tale parte di traffico può attraversare ExpressRoute per Microsoft 365 o Office 365. Per i diagrammi che indicano che Internet è ancora usato per un certo traffico quando ExpressRoute è abilitato, vedere [Azure ExpressRoute per](https://support.office.com/article/6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)Office 365 . È importante tenere presente che anche gli URL elencati come instradabili su ExpressRoute sono instradabili su Internet. Questo significa che in alcuni scenari, la determinazione dell'uso di Internet o ExpressRoute dipende dalla posizione del client e dalla configurazione dei server proxy e dei firewall. È anche importante comprendere che, poiché non tutti gli URL associati a Microsoft 365 o Office 365 sono in grado di usare ExpressRoute, è necessaria una connessione Internet anche se si acquista ExpressRoute da un partner ExpressRoute.
+Le destinazioni per questo traffico si trovano negli URL Office 365 e negli intervalli di indirizzi [IP](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) per tutti i servizi Microsoft 365 o Office 365 ip. Per ogni URL, indica se tale parte di traffico può attraversare ExpressRoute per Microsoft 365 o Office 365. Per i diagrammi che mostrano che Internet è ancora usato per un certo traffico quando ExpressRoute è abilitato, vedere [Azure ExpressRoute per](https://support.office.com/article/6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)Office 365 . È importante tenere presente che anche gli URL elencati come instradabili su ExpressRoute sono instradabili su Internet. Questo significa che in alcuni scenari la determinazione dell'uso di Internet o ExpressRoute dipende dalla posizione del client e dalla configurazione dei server proxy e dei firewall. È anche importante comprendere che, poiché non tutti gli URL associati a Microsoft 365 o Office 365 sono in grado di usare ExpressRoute, è necessaria una connessione Internet anche se si acquista ExpressRoute da un partner ExpressRoute.
 
-Il traffico che può essere inviato solo tramite Internet include dipendenze Internet comuni, ad esempio elenchi di revoche di certificati (CRL), ricerche DNS e risoluzione dei nomi, URL per servizi Microsoft 365 o Office 365 condivisi, ad esempio per il interfaccia di amministrazione di Microsoft 365, e alcune funzionalità di comunicazione non in tempo reale di Skype for Business Online, ad esempio telemetria e federazione per l'interoperabilità con gli utenti Skype consumer, nonché i supporti multimediali trasmessi per Riunione Skype Broadcast. Per aiutarti a decidere, consulta [Routing con ExpressRoute per Office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) per ulteriori considerazioni quando pianifichi il routing della rete.
+Il traffico che può essere inviato solo tramite Internet include dipendenze Internet comuni, ad esempio elenchi di revoche di certificati (CRL), ricerche DNS e risoluzione dei nomi, URL per i servizi Microsoft 365 o Office 365 condivisi, ad esempio per il interfaccia di amministrazione di Microsoft 365, e alcune funzionalità di comunicazione non in tempo reale di Skype for Business Online, ad esempio telemetria e federazione per l'interoperabilità con gli utenti Skype consumer, nonché elementi multimediali trasmessi per Riunione Skype Broadcast. Per aiutarti a decidere, consulta [Routing con ExpressRoute per Office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) per ulteriori considerazioni quando pianifichi il routing della rete.
 
 ## <a name="principles-for-call-flows-with-skype-for-business"></a>Principi dei flussi delle chiamate con Skype for Business
 
@@ -109,7 +109,7 @@ Dopo aver compreso i quattro diversi segmenti di rete e alcuni principi guida ge
 
 In generale, il traffico di rete attraverserà la connessione ExpressRoute se un endpoint si trova nella rete e l'altro endpoint si trova nel data center Microsoft 365 o Office 365 dati. Ciò includerà il traffico di segnalazione tra client e server, il traffico multimediale utilizzato durante le conferenze telefoniche, o le chiamate peer-to-peer che utilizzano un server perimetrale online.
 
-Il traffico non attraverserà la connessione ExpressRoute se entrambi gli endpoint sono in grado di comunicare direttamente attraverso Internet o si trovano all'interno della tua rete. Questo includerà i supporti per le chiamate peer-to-peer, il traffico da Internet destinato a una distribuzione locale o il traffico tra Internet e i server perimetrali Microsoft 365 o Office 365 server perimetrali. Un esempio di ciò potrebbe essere un utente che partecipa a una conferenza online da un hotel.
+Il traffico non attraverserà la connessione ExpressRoute se entrambi gli endpoint sono in grado di comunicare direttamente attraverso Internet o si trovano all'interno della tua rete. Questo includerà i supporti per le chiamate peer-to-peer, il traffico da Internet destinato a una distribuzione locale o il traffico tra Internet e i server perimetrali Microsoft 365 o Office 365 edge. Un esempio di ciò potrebbe essere un utente che partecipa a una conferenza online da un hotel.
 
 ## <a name="basic-skype-for-business-call-flow"></a>Flusso delle chiamate di base di Skype for Business
 
@@ -130,9 +130,9 @@ Per le chiamate peer-to-peer, il traffico multimediale effettua il percorso più
 ### <a name="online-user-on-your-network-joining-a-conference-that-is-hosted-online"></a>Utente online sulla tua rete che partecipa a una conferenza ospitata online
 <a name="bk_Figure3"> </a>
 
-Nell'esempio peer-to-peer, il traffico multimediale prende sempre il percorso più diretto verso la destinazione. Tuttavia, per una conferenza online, la destinazione è nel cloud. Questo significa che il traffico multimediale per tutti gli utenti che partecipano alla conferenza dall'interno della rete attraverserà la connessione ExpressRoute e il traffico di segnalazione verrà recato nel cloud. L'immagine seguente mostra che sia gli elementi multimediali che la segnalazione attraverseranno la connessione ExpressRoute per un utente all'interno della rete e attraverseranno direttamente Internet per gli utenti connessi a Internet dall'esterno della rete, ad esempio da un bar o un hotel.
+Nell'esempio peer-to-peer, il traffico multimediale prende sempre il percorso più diretto verso la destinazione. Tuttavia, per una conferenza online, la destinazione è nel cloud. Questo significa che il traffico multimediale per tutti gli utenti che partecipano alla conferenza dall'interno della rete attraverserà la connessione ExpressRoute e il traffico di segnalazione verrà recato nel cloud. L'immagine seguente mostra che sia gli elementi multimediali che la segnalazione attraversano la connessione ExpressRoute per un utente all'interno della rete e attraversano direttamente Internet per gli utenti connessi a Internet dall'esterno della rete, ad esempio da un bar o un hotel.
 
-Ricorda che la posizione della conferenza viene definita dall'organizzatore della riunione e non dai partecipanti. Questo significa che se la riunione è stata pianificata da un cliente locale, il traffico multimediale non fluirà nel cloud tramite ExpressRoute, ma attraverserebbe Invece Internet verso il data center locale dell'organizzatore della riunione.
+Ricorda che la posizione della conferenza viene definita dall'organizzatore della riunione e non dai partecipanti. Questo significa che se la riunione è stata pianificata da un cliente locale, il traffico multimediale non fluirà nel cloud tramite ExpressRoute, ma attraverserebbe Invece Internet al data center locale dell'organizzatore della riunione.
 
 La destinazione per i contenuti multimediali per le conferenze online sarà un data center all'interno del cloud Microsoft 365 o Office 365, ma il data center potrebbe essere in un'area geografica diversa rispetto agli utenti che stanno partecipando alla conferenza. Ciò è possibile in uno dei due casi riportati di seguito:
 
@@ -140,7 +140,7 @@ La destinazione per i contenuti multimediali per le conferenze online sarà un d
 
 - Se un utente partecipa da un paese o una regione diversa rispetto alla posizione dell'organizzazione dell'azienda, sia per il fatto che l'azienda è una multinazionale o che l'utente è in viaggio.
 
-La buona notizia sull'uso di ExpressRoute in questo scenario è che con il componente aggiuntivo ExpressRoute Premium, i dati che seguono il percorso ExpressRoute passeranno automaticamente attraverso la spina dorsale di Microsoft, indipendentemente dall'area geografica dell'organizzatore del data center dell'organizzazione della riunione.
+La buona notizia sull'uso di ExpressRoute in questo scenario è che con il componente aggiuntivo ExpressRoute Premium, i dati che seguono il percorso ExpressRoute passeranno automaticamente nella spina dorsale di Microsoft, indipendentemente dall'area geografica dell'organizzatore del data center dell'organizzazione della riunione.
 
  **Flusso delle chiamate di un utente online con riunione online**
 
@@ -149,7 +149,7 @@ La buona notizia sull'uso di ExpressRoute in questo scenario è che con il compo
 ### <a name="joining-a-conference-hosted-by-on-premises-user-in-hybrid-deployment"></a>Partecipare a una conferenza ospitata da un utente locale in una distribuzione Business Server Hybrid
 <a name="bk_Figure3"> </a>
 
-Ricorda che i server delle conferenze che supportano le conferenze ospitate sono determinati dalla posizione dell'organizzatore della riunione. In questo scenario, il flusso degli elementi multimediali per tutti gli utenti che partecipano a una conferenza pianificata da un utente locale in una distribuzione Business Server Hybrid avverrà verso un centro dati locale. La segnalazione per gli utenti ospitati online verrà stabilita tramite l'organizzazione nel cloud, mentre gli elementi multimediali tenteranno una connessione diretta. In questo scenario, poiché entrambi gli utenti si connettono dall'interno della rete, è possibile una connessione multimediale diretta, quindi ExpressRoute viene usato solo per segnalare il traffico per l'utente ospitato online. Se un utente ospitato online si connette da Internet, il supporto multimediale potrebbe attraversare ExpressRoute se per la connessione viene usato un server perimetrale online.
+Ricorda che i server delle conferenze che supportano le conferenze ospitate sono determinati dalla posizione dell'organizzatore della riunione. In questo scenario, il flusso degli elementi multimediali per tutti gli utenti che partecipano a una conferenza pianificata da un utente locale in una distribuzione Business Server Hybrid avverrà verso un centro dati locale. La segnalazione per gli utenti ospitati online verrà stabilita tramite l'organizzazione nel cloud, mentre gli elementi multimediali tenteranno una connessione diretta. In questo scenario, poiché entrambi gli utenti si connettono dall'interno della rete, è possibile una connessione multimediale diretta, quindi ExpressRoute viene usato solo per segnalare il traffico per l'utente homed online. Se un utente ospitato online si connette da Internet, il supporto multimediale potrebbe attraversare ExpressRoute se per la connessione viene usato un server perimetrale online.
 
  **Flusso delle chiamate per una conferenza ospitata da un utente Business Server Hybrid**
 
@@ -158,7 +158,7 @@ Ricorda che i server delle conferenze che supportano le conferenze ospitate sono
 ### <a name="on-premises-edge-server-with-microsoft-365-or-office-365-hosted-conferences"></a>Server perimetrale locale con conferenze Microsoft 365 o Office 365 ospitate
 <a name="bk_Figure5"> </a>
 
-Quando un utente ibrido partecipa a una conferenza ospitata online, sappiamo che la segnalazione e i supporti multimediali saranno destinati al cloud Microsoft 365 o Office 365 e, poiché l'utente partecipa da Internet, in genere viene intrapreso un percorso Internet diretto. Tuttavia, in alcuni casi, ad esempio a causa di restrizioni del firewall, non è disponibile un percorso Internet diretto. In questo caso, un server perimetrale locale può inoltrare il traffico multimediale, causando il ritorno del traffico multimediale alla rete locale prima di attraversare il circuito ExpressRoute nel cloud.
+Quando un utente ibrido partecipa a una conferenza ospitata online, sappiamo che la segnalazione e gli elementi multimediali saranno destinati al cloud Microsoft 365 o Office 365 e, poiché l'utente partecipa da Internet, in genere verrebbe intrapreso un percorso Internet diretto. Tuttavia, in alcuni casi, ad esempio a causa di restrizioni del firewall, non è disponibile un percorso Internet diretto. In questo caso, un server perimetrale locale può inoltrare il traffico multimediale, causando il ritorno del traffico multimediale alla rete locale prima di attraversare il circuito ExpressRoute nel cloud.
 
  **Utente locale che partecipa a una conferenza telefonica online utilizzando un server perimetrale locale**
 
@@ -192,13 +192,13 @@ I dati vengono trasmessi ed elencati come locali per l'organizzazione. non lasci
 
 ### <a name="call-flows-for-skype-for-business-online"></a>Flussi delle chiamate per Skype for Business online
 
-Skype for Business Gli scenari di utilizzo online coinvolgono utenti ospitati online e che potrebbero chiamare dalla rete interna o da Internet. I server locali non fanno parte di questi scenari, quindi tutti i servizi di conferenza o i supporti multimediali correlati a PSTN fluiranno nel cloud e anche il server perimetrale degli utenti online sarà nel cloud.
+Skype for Business Gli scenari di utilizzo online coinvolgono utenti ospitati online e che potrebbero chiamare dalla rete interna o da Internet. I server locali non fanno parte di questi scenari, quindi tutti i supporti di conferenza o pstn correlati fluiranno nel cloud e anche il server perimetrale degli utenti online sarà nel cloud.
 
  **Riepilogo dei flussi delle chiamate per Skype for Business online**
 
-|||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|
+
 |**Scenario di utilizzo** <br/> |**Endpoint** <br/> |**Percorso del traffico di segnalazione** <br/> |**Percorso degli elementi multimediali** <br/> |**Flusso di esempio** <br/> |**Note** <br/> |
+|:-----|:-----|:-----|:-----|:-----|:-----|
 |Chiamate peer-to-peer  <br/> |Due client, entrambi sulla tua rete.  <br/> |ExpressRoute  <br/> |locale  <br/> |[Chiamata peer-to-peer per Microsoft 365 o Office 365 utente dall'interno della rete del cliente](call-flow-using-expressroute.md#bk_Figure2) <br/> ||
 |Chiamate peer-to-peer  <br/> |Due client, uno sulla rete (interno) e l'altro su Internet (esterno).  <br/> |Utente interno: ExpressRoute  <br/> Utente esterno: Internet  <br/> |Utente interno: ExpressRoute  <br/> Utente esterno: da Internet a Microsoft 365 o Office 365 edge server.  <br/> |[Chiamata peer-to-peer per Microsoft 365 o Office 365 utenti dall'interno della rete del cliente](call-flow-using-expressroute.md#bk_Figure2) <br/> |Presuppone che il firewall blocchi le connessioni dirette tra client, il che richiede un server perimetrale online. Il traffico dall'utente interno al server perimetrale online segue un percorso simile a quello del server delle conferenze per conferenza telefonica.  <br/> |
 |Chiamata peer-to-peer a un utente di un'organizzazione federata  <br/> |Due client, uno sulla tua rete (interno) e uno presso l'utente online sulla rete dell'organizzazione federata (federato).  <br/> |ExpressRoute  <br/> |ExpressRoute  <br/> |[Utente online sulla tua rete che partecipa a una conferenza ospitata online](call-flow-using-expressroute.md#bk_Figure3) <br/> |Presuppone un firewall che blocchi le connessioni dirette tra client, il che richiede un server perimetrale online. Il traffico dall'utente interno al server perimetrale online segue un percorso simile a quello del server delle conferenze per la conferenza telefonica.  <br/> |
@@ -215,9 +215,10 @@ Skype for Business Gli scenari di utilizzo online coinvolgono utenti ospitati on
 
 I flussi delle chiamate di Skype for Business Hybrid si applicano quando è presente una distribuzione Skype for Business che include almeno alcuni utenti ospitati localmente. I flussi di chiamata in questa sezione includono sia le conferenze locali che le chiamate peer-to-peer o PSTN con almeno un utente ospitato locale.
 
-|||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|
+
+
 |**Scenario di utilizzo** <br/> |**Endpoint** <br/> |**Percorso del traffico di segnalazione** <br/> |**Percorso degli elementi multimediali** <br/> |**Flusso di esempio** <br/> |**Note** <br/> |
+|:-----|:-----|:-----|:-----|:-----|:-----|
 |Chiamate peer-to-peer  <br/> |Due client, entrambi sulla rete del cliente e ospitati localmente  <br/> |Locale  <br/> |locale  <br/> |[Chiamata peer-to-peer per Microsoft 365 o Office 365 utente dall'interno della rete del cliente](call-flow-using-expressroute.md#bk_Figure2) <br/> |Poiché gli utenti sono ospitati in locale, la segnalazione passa localmente al data center locale invece che al cloud.  <br/> |
 |Chiamate peer-to-peer  <br/> |Due client, che si connettono entrambi dalla rete del cliente. Uno è ospitato online, mentre l'altro è ospitato localmente.  <br/> |Utente online: ExpressRoute  <br/> Utente locale: locale  <br/> |locale  <br/> |[Chiamata peer-to-peer per Microsoft 365 o Office 365 utenti dall'interno della rete del cliente](call-flow-using-expressroute.md#bk_Figure2) <br/> |Solo l'utente homed online invia il traffico di segnalazione al cloud.  <br/> |
 |Chiamata peer-to-peer a un utente di un'organizzazione federata  <br/> |Due client, un utente locale sulla rete del cliente (interno) e un utente online presso la rete dell'azienda federata (federato).  <br/> |Utente interno: locale  <br/> Utente federato: ExpressRoute  <br/> |Internet o ExpressRoute (dipende se viene utilizzato un server perimetrale online o locale)  <br/> |[Utente online della](call-flow-using-expressroute.md#bk_Figure3) rete che partecipa a una conferenza ospitata online e che fa parte del server perimetrale locale con conferenze ospitate Microsoft 365 [o Office 365](call-flow-using-expressroute.md#bk_Figure5) (per il traffico multimediale). <br/> |Presuppone un firewall che blocchi le connessioni dirette tra client, il che richiede un server perimetrale online. La negoziazione ICE fornirà per la connettività sia server online (da parte dell'utente online), sia server perimetrali locali (da parte dell'utente locale).  <br/> |
@@ -228,9 +229,10 @@ I flussi delle chiamate di Skype for Business Hybrid si applicano quando è pres
 
 Gli utenti che effettuano la connessione a Cloud Connector Edition sono tutti ospitati online. Ciò significa che la conferenza sarà online, e il traffico di segnalazione segue gli stessi modelli degli utenti online. Per gli scenari diversi da quelli delle chiamate PSTN, il flusso delle chiamate sarà esattamente quello descritto in precedenza per Skype for Business online.
 
-|||||||
-|:-----|:-----|:-----|:-----|:-----|:-----|
+
+
 |**Scenario di utilizzo** <br/> |**Endpoint** <br/> |**Percorso del traffico di segnalazione** <br/> |**Percorso degli elementi multimediali** <br/> |**Flusso di esempio** <br/> |**Note** <br/> |
+|:-----|:-----|:-----|:-----|:-----|:-----|
 |Chiamata PSTN  <br/> |Utente online sulla tua rete che utilizza Cloud Connector Edition.  <br/> |locale  <br/> |locale  <br/> |[Chiamata PSTN utilizzando Skype for Business Cloud Connector Edition](call-flow-using-expressroute.md#bk_Figure6) <br/> ||
 |Chiamata PSTN  <br/> |Utente online che utilizza Internet con Cloud Connector Edition.  <br/> |Internet  <br/> |Internet  <br/> |Combinazione [di server](call-flow-using-expressroute.md#bk_Figure5) perimetrale locale con Microsoft 365 o Office 365 conferenze ospitate e chiamate [PSTN con Skype for Business Cloud Connector Edition](call-flow-using-expressroute.md#bk_Figure6).  <br/> |Gli utenti Internet effettueranno la connessione attraverso il server perimetrale incluso in Cloud Connector, mentre Cloud Connector effettuerà la connessione alla rete PSTN.  <br/> |
 

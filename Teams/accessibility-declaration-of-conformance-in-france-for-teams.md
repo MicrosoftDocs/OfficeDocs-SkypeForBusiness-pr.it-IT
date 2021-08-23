@@ -1,5 +1,5 @@
 ---
-title: Dichiarazione di conformità sull'accessibilità - Francia
+title: "Microsoft Teams: Dichiarazione di conformità sull'accessibilità - Francia"
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -20,14 +20,14 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 description: "Microsoft Teams est l'outil de chat collaboratif d'Office 365 qui intègre toutes les personnes, contenus et outils don't votre équipe a besoin pour être plus impliquée et efficace. "
-ms.openlocfilehash: 269e53cf75938c789e3b51177ae02dcdbf40f14e1b24da96f327051a93433e5a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 24bb3c5e278ec2b046400308d0342fe4acfae687
+ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333018"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372086"
 ---
-# <a name="en-301-549-dclaration-de-conformit-en-matire-daccessibilit"></a>EN 301 549 Déclaration de conformité en matière d'accessibilité
+# <a name="microsoft-teams-en-301-549-dclaration-de-conformit-en-matire-daccessibilit"></a>Microsoft Teams: EN 301 549 Déclaration de conformité en matière d'accessibilité
 
 Data : 2 ottobre 2018
 
@@ -64,13 +64,13 @@ La présente attestation de conformité à la norme [EN 301 549 v2.1.2](http://w
 |**5.2 Attivazione di fonctionnalités d'accessibilité** <br/> Dans le cas où la TIC présente des fonctionnalités d'accessibilité documentées, il est possible d'activer les fonctionnalités qui sont requises pour répondre à un besoin spécifique sans faire appel à une méthode qui ne prend pas en charge ce besoin besoin.<br/>| Pris en charge <br/> | |
 |**5.3 Biométrie**<br/> Dans le cas où la TIC fait appel à des caractéristiques biologiques, elle ne fait pas de l'utilisation d'une caractéristique biologique le seul moyen d'identification de l'utilisateur ou de contrôle de la TIC.<br/> |Non applicabile <br/> | |
 |**5.4 Préservation des informations d'accessibilité pendant la conversion**<br/> Dans le cas où la TIC convertit des informations ou une communication, elle préserve toutes les informations non exclusives documentées qui sont fournies pour l'accessibilité dans la mesure où ces informations peuvent être contenues dans le format de destination ou prises en charge par ce dernier.<br/> |Non applicabile <br/> | |
-|**5.5.1 Modalità de fonctionnement**<br/> Dans le cas où la TIC présente des éléments actionnables qui doivent être actionnés en les prenant, en les pinçant ou en exerçant une torsion du poignet, un autre mode de fonctionnement accessible qui ne ne nécessite pas ces gestes est proposé.<br/> |Non applicabile <br/> | |
+|**5.5.1 Modalità de fonctionnement**<br/> Dans le cas où la TIC présente des éléments actionnables qui doivent être actionnés en les prenant, en les pinçant ou en exerçant une torsion du poignet, un autre mode de fonctionnement accessible qui ne nécessite pas ces gestes est proposé.<br/> |Non applicabile <br/> | |
 |**5.5.2 Discernabilité des éléments actionnables**<br/> Dans le cas où la TIC a des éléments actionnables, elle propose un moyen de discerner chaque élément actionnable sans que la vision ne soit nécessaire et sans accomplir le geste associé à cet élément actionnable.<br/> |Non applicabile <br/> | |
 |**5.6.1 Statut tattile ou auditif**<br/> DDans le cas où la TIC est dotée d'une commande de verrouillage et où cette commande est présentée visuellement à l'utilisateur, la TIC propose au moins un mode de fonctionnement avec lequel il est possible de déterminer le statut de la commande par le son ou par le toucher sans actionner la commande.<br/> |Non applicabile <br/> | |
 |**5.6.2 Statut visuel**<br/> Dans le cas où la TIC est dotée d'une commande de verrouillage et où cette commande n'est pas présentée visuellement à l'utilisateur, la TIC propose au moins un mode de fonctionnement avec lequel il est possible de déterminer visuellement le statut de la commande lorsque la commande est présentée.<br/> |Non applicabile <br/> | |
 |**5.7 Répétition automatique des touches**<br/> Dans le cas où la TIC est dotée de la fonction répétition automatique des touches et où cette fonction ne peut être désactivée :<br/> a) le délai avant la répétition automatique est réglable jusqu'à au moins 2 secondes ; et<br/> b) la vitesse de répétition peut être réduite jusqu'à un caractère par intervalle de 2 secondes.<br/>|Non applicabile <br/> | |
 |**5.8 Acceptation des doubles frappes sur le clavier**<br/> Dans le cas où un clavier est fourni, le délai, après une frappe sur le clavier, pendant lequel une autre frappe ne sera pas acceptée si elle est identique à la frappe précédente est réglable jusqu'à au moins 0,5 seconde.<br/> |Non applicabile <br/> | |
-|**5.9 Azioni simultanées de l'utilisateur**<br/> Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner.<br/> |Pris en charge <br/> | |
+|**5.9 Azioni simultanées de l'utilisateur**<br/> Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner.<br/> |Pris en charge <br/> | |
 
 ## <a name="section-6-tic-avec-communication-voix-bidirectionnelle"></a>Sezione 6 TIC avec communication voix bidirectionnelle
 
@@ -88,7 +88,7 @@ La présente attestation de conformité à la norme [EN 301 549 v2.1.2](http://w
 |**6.5.2 Résolution**<br/> Lorsqu'une TIC qui permet la communication voix bidirectionnelle est également dotée d'une fonctionnalité vidéo en temps réel, cette TIC :<br/>a) est compatible au moins avec la résolution « QCIF » ;<br/>b) doit de préférence être compatible avec au moins la résolution « CIF ». <br/>|Pris en charge <br/> | |
 |**6.5.3 Taux de trame (vitesse d'images)**<br/>Lorsqu'une TIC qui propose la communication voix bidirectionnelle est dotée d'une fonctionnalité de vidéo en temps réel, cette TIC :<br/>a) prend en charge un taux de trame d'au moins 12 images par seconde (IPS) ;<br/> b) doit de préférence prendre en charge un taux de trame d'au moins 20 images par seconde (IPS) avec ou sans langue des signes dans le flux de données vidéo.<br/>|Pris en charge <br/> | |
 |**6.5.4 Synchronisation entre le signal audio et le signal vidéo**<br/> Lorsqu'une TIC qui permet la communication voix bidirectionnelle est dotée d'une fonctionnalité de vidéo en temps réel, cette TIC doit garantir un écart de temps de 100 ms maximum entre la voix et les images présentées à l'utilisateur.<br/> |Pris en charge <br/> | |
-|**6.6 Alternatives aux services vidéo**<br/>Dans le cas où la TIC propose la communication vidéo en temps réel et propose également des fonctions de répondeur, de réception automatique ou de réponse interactive, la TIC doit proposer aux utilisateurs un moyen d'accéder aux informations et d'accomplir les tâches associées à ces fononctions :<br/>a) pour les informations audibles, sans utilisation de l'audition ;<br/> b) pour les commandes vocales, sans utilisation de la voix ;<br/> c) pour les informations visuelles, sans utilisation de la vision.<br/>|Pris en charge <br/> | |
+|**6.6 Alternatives aux services vidéo**<br/>Dans le cas où la TIC propose la communication vidéo en temps réel et propose également des fonctions de répondeur, de réception automatique ou de réponse interactive, la TIC doit proposer aux utilisateurs un moyen d'accéder aux informations et d'accomplir les tâches associées à ces fonctions :<br/>a) pour les informations audibles, sans utilisation de l'audition ;<br/> b) pour les commandes vocales, sans utilisation de la voix ;<br/> c) pour les informations visuelles, sans utilisation de la vision.<br/>|Pris en charge <br/> | |
 
 ## <a name="section-7-tic-avec-fonctions-vido"></a>Sezione 7 TIC avec fonctions vidéo
 
@@ -109,7 +109,7 @@ Cette section ne s'applique pas à Microsoft Teams.
 
 ## <a name="section-11-logiciel"></a>Sezione 11 Logiciel
 
-| **Critères** <br/>| **Fonctionnalités prises en charge** <br/>| **Remarques et explications** <br/> |
+| **Critères** | **Fonctionnalités prises en charge** | **Remarques et explications** |
 | --- | --- | --- |
 |**11.1.1.1.1 Contenu non textuel (lezione d'écran prise en charge)**<br/>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur et qui prend en charge l'accès aux technologies d'assistance pour la lecture d'écran, elle remplit les Critères de Succès WCAG 2.1 indiqués dans le Tableau 1.1.1 Contenu non textueluel<br/>|Pris en charge <br/> | |
 |**11.1.2.1.1 Seulement audio et vidéo seulement (préenregistré)**<br/>Dans le cas où la TIC est un logiciel non-web qui est doté d'une interface utilisateur et qui prend en charge l'accès aux technologies d'assistance pour la lecture d'écran et où aucune information sonore préenregistrée n'est nécessaire pour permettre l'utilisation des fonctions fermées de la TIC, elle remplit les Critères de Succès WCAG 2.1 indiqués dans le Tableau 1.2.1 Audio seulement et vidéo seulement (préenregistré).<br/>|Non applicabile<br/>| |

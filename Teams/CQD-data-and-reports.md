@@ -22,16 +22,16 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni sui dati e i report disponibili in Microsoft Call Quality Dashboard (CQD).
-ms.openlocfilehash: 9d13823981ced4d631ed50fe9fd964765c761a029831d630de103bdc5c43e206
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 04330069f04c948ad82b953bee20e5d20c9ab964
+ms.sourcegitcommit: 942e09c70840582f0cc1e433d4b0261298b1c66d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331118"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "58339864"
 ---
 # <a name="data-and-reports-in-call-quality-dashboard-cqd"></a>Dati e report in Call Quality Dashboard (CQD)
 
-Microsoft Call Quality Dashboard (CQD) usa un feed di dati in tempo quasi reale (NRT). I record delle chiamate sono disponibili in CQD entro 30 minuti dalla fine di una chiamata. I record delle chiamate dalla pipeline NRT sono disponibili solo per alcuni mesi prima di essere rimossi dal set di dati. 
+Microsoft Call Quality Dashboard (CQD) usa un feed di dati in tempo quasi reale (NRT). I record delle chiamate sono disponibili in CQD entro 30 minuti dalla fine di una chiamata. I record di chiamata dalla pipeline NRT sono disponibili solo per alcuni mesi prima di essere rimossi dal set di dati. 
 
 
 ## <a name="many-ways-to-access-cqd-data"></a>Molti modi per accedere ai dati CQD
@@ -41,9 +41,9 @@ Microsoft Call Quality Dashboard (CQD) usa un feed di dati in tempo quasi reale 
 |  |  |
 |---------|---------|
 |Teams di amministrazione [( https://admin.teams.microsoft.com) ](https://admin.teams.microsoft.com)    | I dati CQD  sono inclusi nella pagina Utenti dell'interfaccia di amministrazione di Teams, che mostra i dati più comuni necessari in un formato di facile lettura. Non è possibile personalizzare i dati CQD trovati in **Utenti**.  |
-|Portale CQD [( https://cqd.teams.microsoft.com) ](https://cqd.teams.microsoft.com)     | Riepilogo efficace e report dettagliati che soddisfano la maggior parte delle esigenze, con il filtro drill-through. È anche possibile personalizzare i report nel portale CQD. <br><br>È possibile [ottenere due modelli di report CQD](#import-the-cqd-report-templates) che consentono di analizzare i dati nel portale CQD.       |
-|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli Power BI [personalizzati.](CQD-Power-BI-query-templates.md) [Scaricare Power BI di query per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. Il vantaggio dell'uso di questo metodo è un miglioramento delle prestazioni, particolarmente utile per set di dati di grandi dimensioni che Power BI quando si è online.       |
-|API di Microsoft Graph     | Accedere ai dati sulla qualità delle chiamate usando [l'API Graph chiamata](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta). Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirsi ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
+|Portale CQD [( https://cqd.teams.microsoft.com) ](https://cqd.teams.microsoft.com)     | Riepilogo efficace e report dettagliati che soddisfano la maggior parte delle esigenze, con filtri drill-through. È anche possibile personalizzare i report nel portale CQD. <br><br>È possibile [ottenere due modelli di report CQD](#import-the-cqd-report-templates) che consentono di analizzare i dati nel portale CQD.       |
+|Power BI     | Usare query dirette per visualizzare i dati CQD in Power BI usando modelli Power BI [personalizzati.](CQD-Power-BI-query-templates.md) [Scaricare Power BI di query per CQD](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true).<br><br>È anche possibile [usare l'API REST per accedere ai dati CQD](/skypeforbusiness/management-tools/call-quality-dashboard/data-api) tramite Power BI. Usare questo metodo se si vogliono scaricare i dati CQD in modo da poterlo usare offline. Il vantaggio dell'uso di questo metodo è una migliore prestazione, particolarmente utile per set di dati di grandi dimensioni che Power BI quando si è online.       |
+|API di Microsoft Graph     | Accedere manualmente ai dati sulla qualità delle chiamate [usando l'API Graph chiamata](/graph/api/resources/callrecords-api-overview?view=graph-rest-beta). Si tratta del metodo più complesso, ma offre il maggior controllo e flessibilità nell'analisi dei dati sulla qualità delle chiamate. Ad esempio, se è necessario unirsi ad altri dati per l'organizzazione, è possibile usare l'API Graph per creare un modello di dati e incorporare i dati sulla qualità delle chiamate.        |
 
 ## <a name="import-the-cqd-report-templates"></a>Importare i modelli di report CQD
 
@@ -71,7 +71,7 @@ Per motivi di conformità, i dati relativi alle informazioni identificabili dell
 - Indirizzo IP completo
 - Indirizzo MAC (Media Access Control)
 - Identificatore del set di servizi di base (BSSID)
-- URI SIP (Session Initiation Protocol) (solo Skype for Business sessione)
+- URI SIP (Session Initiation Protocol) (Skype for Business)
 - Nome entità utente (UPN)
 - Nome endpoint computer
 - Feedback verbale dell'utente
@@ -118,14 +118,14 @@ Per impostazione predefinita, il giorno corrente del mese viene usato come ultim
 
 Il riepilogo predefinito e i report CQD dettagliati possono essere tutti necessari per gestire la qualità delle chiamate per l'organizzazione. Se necessario, è possibile [creare report personalizzati.](#create-custom-detailed-reports) 
 
-Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [CQD per](CQD-Power-BI-query-templates.md)Teams .
+Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per analizzare i dati [di CQD](CQD-Power-BI-query-templates.md)per Teams .
 
 |Funzionalità|Report di riepilogo|Report dettagliati|
 |:--- |:--- |:--- |
 |Metrica di condivisione delle applicazioni | No | Sì |
 |Supporto per le informazioni sull'edificio del cliente | Sì | Sì |
 |Supporto per le informazioni sull'endpoint del cliente | Solo in <span> cqd.teams.microsoft.com<span/> | Solo in <span> cqd.teams.microsoft.com<span/> |
-|Supporto dell'analisi drill-down   | No   | Sì   |
+|Supporto per l'analisi drill-down   | No   | Sì   |
 |Metriche sull'affidabilità dei supporti multimediali   | No   | Sì   |
 |Report predefiniti   | Sì   | Sì   |
 |Report di panoramica   | Sì   | Sì   |
@@ -141,12 +141,12 @@ Se si vuole usare Power BI per analizzare i dati CQD, vedere Usare Power BI per 
  
 ### <a name="select-product-data-to-see-in-reports"></a>Selezionare i dati di prodotto da visualizzare nei report
 
-Nei report riepilogo e Location-Enhanced, è  possibile usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo Microsoft Teams dati o solo i Skype for Business online.
+Nei report riepilogo e Location-Enhanced, è possibile  usare l'elenco a discesa Filtro prodotti per visualizzare tutti i dati di prodotto, solo Microsoft Teams dati o solo Skype for Business online.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot: mostra le opzioni del controllo Filtro prodotti](media/206ad818-0f72-4c8e-b25e-3cc8fcfbef05.png)
   
-Nei report dettagliati è  possibile usare la dimensione Teams per filtrare i dati Microsoft Teams o Skype for Business online.
+Nei report dettagliati è  possibile usare la dimensione Teams per filtrare i dati in modo da Microsoft Teams o Skype for Business online.
 
 ## <a name="summary-reports"></a>Report di riepilogo
 
@@ -155,7 +155,7 @@ Questi sono i report che verranno visualizzati nel dashboard CQD quando si acced
 | SCHEDA | Descrizione |
 |---------|---------|
 |Qualità complessiva delle chiamate     | Aggregazione delle altre 3 schede.       |
-|Server- Client     |Dettagli dei flussi tra endpoint server ed endpoint client.        |
+|Server- Client     |Dettagli dei flussi tra endpoint server e client.        |
 |Client- Client     |Dettagli dei flussi tra due endpoint client.        |
 |Contratto di servizio sulla qualità vocale     |Informazioni sulle chiamate incluse nel contratto Skype for Business qualità [vocale.](https://go.microsoft.com/fwlink/p/?linkid=846252)        |
 
@@ -166,7 +166,7 @@ Usare i dati in questa scheda per valutare lo stato della qualità delle chiamat
 > [!div class="mx-imgBorder"]
 > ![Screenshot: mostra la scheda Qualità chiamata](media/c8d183b1-6592-49b0-a81d-35cc0568d5f0.png)
   
-Flussi sono classificati in tre gruppi: Buono, Medio e Non classificato. Sono inoltre disponibili valori  *poor %*  calcolati che forniscono il rapporto tra i flussi classificati *come Poor*  e il conteggio totale dei flussi classificati. Poiché *Poor % = Poor streams/ (Poor streams+ Good streams) * 100*, poor *%*  non è interessato dalla presenza di più flussi *non*  classificati. Per vedere cosa classifica uno stream come scadente o buono, vedere Classificazione dei flussi [in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md)
+Flussi sono classificati in tre gruppi: Buono, Medio e Non classificato. Sono inoltre disponibili valori  *poor %*  calcolati che forniscono il rapporto tra i flussi classificati *come Poor*  e il conteggio totale dei flussi classificati. Poiché *Poor % = Poor streams/ (Poor streams+ Good streams) * 100*, poor *%*  non è interessato dalla presenza di più flussi *non*  classificati. Per vedere cosa classifica uno stream come scadente o buono, vedere Classificazione [di flusso in Call Quality Dashboard.](stream-classification-in-call-quality-dashboard.md)
   
 Usare la scala a sinistra per misurare i valori del conteggio dei flussi.
 
@@ -188,7 +188,7 @@ Usare la scala a destra per misurare i valori di % scarsa.
   
 Il volume complessivo dello stream consente di determinare quanto sono rilevanti le percentuali di scarsa qualità calcolate. Minore è il volume dei flussi complessivi, meno affidabili sono i valori percentuali di scarsa qualità riportati.
   
-### <a name="server-client-tab-and-client-client-tabs"></a>Server-Client e Client-Client schede
+### <a name="server-client-tab-and-client-client-tabs"></a>Server-Client schede e Client-Client testo
 
 Queste due schede forniscono dettagli per i flussi che hanno avuto luogo nei loro scenari da endpoint a endpoint. La Server-Client contiene quattro sezioni comprimibile che rappresentano quattro scenari in cui i flussi multimediali fluirebbero.
   
@@ -221,7 +221,7 @@ Come indicano i nomi, i criteri di classificazione si basano sul tipo di conness
   
 ## <a name="tenant-data-information"></a>Informazioni sui dati del tenant
 
-Il dashboard Report di riepilogo CQD include una pagina Upload **Tenant Data,** accessibile selezionando Tenant **Data Upload** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
+Il dashboard Report di riepilogo CQD include una pagina Upload Tenant **Data,** accessibile selezionando Tenant **Data Upload** dal menu delle impostazioni nell'angolo in alto a destra. Questa pagina viene usata per gli amministratori per caricare le proprie informazioni, ad esempio:
 
 - Mappa dell'indirizzo IP e delle informazioni geografiche.
 - Mappa di ogni punto di accesso wireless e del relativo indirizzo MAC.
@@ -236,11 +236,11 @@ Il dashboard Report di riepilogo CQD include una pagina Upload **Tenant Data,** 
 |---------|---------|
 |Location-Enhanced report     |Mostra le tendenze qualitative in base alle informazioni sulla posizione. Questo report viene visualizzato solo se sono stati [caricati i dati del tenant.](CQD-upload-tenant-building-data.md)        |
 |Report sull'affidabilità     |Include report audio, video, condivisione dello schermo basata su video (VBSS) e condivisione di app.        |
-|Report sulla qualità dell'esperienza     |Qualità audio e affidabilità per tutti i client e i dispositivi, incluse le sale riunioni. Questi report sono una versione "slimmed-down" dei modelli [CQD](https://aka.ms/QERtemplates)scaricabili, incentrata sulle aree chiave per l'analisi della qualità e dell'affidabilità dell'audio.         |
+|Report sulla qualità dell'esperienza     |Qualità audio e affidabilità per tutti i client e i dispositivi, incluse le sale riunioni. Questi report sono una versione "slimmed-down" dei modelli [CQD](https://aka.ms/QERtemplates)scaricabili, incentrata sulle aree chiave per l'analisi della qualità e dell'affidabilità audio.         |
 |Report drill-down qualitativo     | Drill-down: data per area geografica, località, subnet, ora e utenti.        |
 |Report drill-down degli errori     | Drill-down: data per area geografica, località, subnet, ora e utenti.        |
 |Valutare i report delle chiamate     |Analizzare le classificazioni delle chiamate degli utenti per area geografica, località o per utente. Include feedback dettagliato.         |
-|Report dell'Help Desk     |I report dell'Help Desk osservano i dati delle chiamate e delle riunioni per singoli utenti, gruppi di utenti o tutti. Incorporando dati di edificio e EUII, questi report consentono di identificare i possibili problemi di sistema in base alla posizione di rete, ai dettagli della conferenza, ai dispositivi o al firmware.         |
+|Report dell'Help Desk     |I report dell'Help Desk osservano i dati delle chiamate e delle riunioni per singoli utenti, gruppi di utenti o tutti. Incorporando i dati di edificio e EUII, questi report consentono di identificare i possibili problemi di sistema in base alla posizione di rete, ai dettagli della conferenza, ai dispositivi o al firmware.         |
 |Report versione client     |Riepilogo versione client: visualizzare il conteggio sessioni e utenti per ogni versione dell'app client<br><br>Versione client per utente: visualizzare i nomi utente per ogni versione dell'app client <br><br>I filtri predefiniti per tipo di prodotto e client consentono di concentrare le versioni su client specifici.         |
 |Report degli endpoint     |Mostra la qualità delle chiamate in base agli endpoint del computer (computer make and model). Questi report includono i dati di creazione, se sono stati caricati.         |
 
@@ -249,10 +249,10 @@ Il dashboard Report di riepilogo CQD include una pagina Upload **Tenant Data,** 
 
 Se i report CQD predefiniti non soddisfano le proprie esigenze, usare queste istruzioni per creare un report personalizzato. Oppure (a partire da gennaio 2020) Usare [Power BI per i report CQD. ](cqd-power-bi-query-templates.md)
 
-Nell'elenco a discesa dei report nella parte superiore della schermata visualizzata all'accesso nella schermata Report di riepilogo selezionare Report \(  \) **dettagliati** e quindi **Nuovo**. Fare **clic su** Modifica in un report per visualizzare l'editor di query. Ogni report è supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report.
+Nell'elenco a discesa dei report nella parte superiore della schermata visualizzata all'accesso nella schermata Report di riepilogo \( selezionare Report  \) **dettagliati** e quindi **Nuovo**. Fare **clic su** Modifica in un report per visualizzare l'editor di query. Ogni report è supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'editor di query consente di modificare queste query e le opzioni di visualizzazione del report.
 
 > [!IMPORTANT]
-> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. Quando si aggiunge una subnet VPN al file di edificio, invece di una voce per la subnet, è consigliabile aggiungere voci separate per ogni indirizzo della subnet VPN come rete a 32 bit separata. Ogni riga può avere gli stessi metadati di compilazione. Ad esempio, invece di una riga per 172.16.18.0/24, è necessario avere 256 righe, con una riga per ogni indirizzo compreso tra 172.16.18.0/32 e 172.16.18.255/32 inclusi.
+> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. Quando si aggiunge una subnet VPN al file di edificio, invece di una voce per la subnet, è consigliabile aggiungere voci separate per ogni indirizzo nella subnet VPN come rete a 32 bit separata. Ogni riga può avere gli stessi metadati di compilazione. Ad esempio, invece di una riga per 172.16.18.0/24, è necessario avere 256 righe, con una riga per ogni indirizzo compreso tra 172.16.18.0/32 e 172.16.18.255/32 inclusi.
 >
 > La colonna VPN è facoltativa e il valore predefinito è 0.  Se il valore della colonna VPN è impostato su 1, la subnet rappresentata da tale riga verrà completamente espansa in modo che corrisponda a tutti gli indirizzi IP all'interno della subnet.  Usare questa opzione con parsimonio e solo per le subnet VPN, in quanto l'espansione completa di queste subnet avrà un impatto negativo sui tempi delle query per le query che implicano la creazione di dati.
 
@@ -268,8 +268,8 @@ I filtri di query vengono implementati usando l'editor di query in CQD. Questi f
 | Filter         | Descrizione          | Esempio di filtro di query CQD      |
 |----------------|----------------------|-------------------------------|
 | Nessun valore vuoto   | Alcuni filtri non hanno l'opzione di filtrare i valori vuoti. Per filtrare manualmente i valori vuoti, usare l'espressione vuota e impostare il filtro su Uguale o Diverso da, a seconda delle esigenze.      | Second Building Name \<\> \^ \\ s\*\$                       |
-| Escludere subnet comuni | Senza un file di edificio valido per separare le reti gestite da quelle non gestite, le reti domestiche verranno incluse nei report. Queste subnet domestiche sono esterne all'ambito del controllo dell'IT e possono essere rapidamente escluse da un report. Le subnet comuni, come definito in questa guida, sono 10.0.0.0, 192.168.1.0 e 192.168.0.0. | Seconda subnet \<\> 10.0.0.0 \| 192.168.0.0 \| 192.168.1.0 |
-| Visualizza solo all'interno  | Consente di filtrare un report in modo che sia gestito (all'interno) o non gestito (all'esterno). Il modello CQD gestito è già preconfigurato con questi filtri.       | Second Inside Corp = Inside        |
+| Escludere subnet comuni | Senza un file di edificio valido per separare le reti gestite da quelle non gestite, le reti domestiche verranno incluse nei report. Queste subnet domestiche sono esterne all'ambito di controllo dell'IT e possono essere rapidamente escluse da un report. Le subnet comuni, come definito in questa guida, sono 10.0.0.0, 192.168.1.0 e 192.168.0.0. | Seconda subnet \<\> 10.0.0.0 \| 192.168.0.0 \| 192.168.1.0 |
+| Visualizza solo all'interno  | Consente di filtrare un report in modo che sia gestito (all'interno) o non gestito (esterno). Il modello CQD gestito è già preconfigurato con questi filtri.       | Second Inside Corp = Inside        |
 
 ## <a name="report-filters"></a>Filtri per i report
 
@@ -299,7 +299,7 @@ Per iniziare, fare clic **su ...** per il report che si vuole modificare, quindi
 
 ![Screenshot della modifica di un campo drill-down](media/qerguide-image-addeditdrilldownfields.png)
 
-Selezionare una dimensione nell'elenco sul lato sinistro dell'editor di query. Fare quindi clic sull'elenco a discesa sotto l'etichetta Passa a e selezionare la scheda e il gruppo di espansione a cui eseguire il drill-through per la dimensione.  Nota: attualmente, la funzionalità di drill-down funziona solo passando a schede diverse. Il supporto per il drill-through a uno specifico espansore verrà aggiunto in un secondo momento. Infine, fare **clic su Chiudi** per salvare le modifiche apportate alla dimensione, quindi fare clic su **Salva** per salvare e chiudere l'editor di query.
+Selezionare una dimensione nell'elenco sul lato sinistro dell'editor di query. Fare quindi clic sull'elenco a discesa sotto l'etichetta Passa a e selezionare la scheda e il gruppo di espansione a cui eseguire il drill-through per la dimensione.  Nota: attualmente, la funzionalità di drill-down funziona solo passando a schede diverse. Il supporto per il drill-through a uno specifico espansore verrà aggiunto in un secondo momento. Infine, fare clic **su** Chiudi per salvare le modifiche apportate alla dimensione, quindi fare clic su **Salva** per salvare e chiudere l'editor di query.
 
 ![Screenshot della selezione di una dimensione nell'editor di query](media/qerguide-image-selectquerydimension.png)
 
@@ -311,7 +311,7 @@ Per selezionare più valori di filtro, iniziare aggiungendo un nuovo filtro al r
 
 ![Screenshot dell'aggiunta di un filtro a selezione multipla](media/qerguide-image-addmultiselectfilter.png)
 
-Fare quindi clic **su Cerca** (icona a forma di lente di ingrandimento accanto al nuovo filtro). Verranno visualizzati un campo di testo e diverse opzioni, tra cui **Seleziona tutto** e **Inverti.** Immettere un valore e fare clic **su Cerca** accanto al campo per eseguire la ricerca. In alternativa, lasciare vuoto il campo di testo e fare clic **su Cerca** per visualizzare fino alle prime 100 opzioni.
+Quindi, fare **clic su Cerca** (un'icona a forma di lente di ingrandimento accanto al nuovo filtro). Verranno visualizzati un campo di testo e diverse opzioni, tra cui **Seleziona tutto** e **Inverti.** Immettere un valore e fare clic **su Cerca** accanto al campo per eseguire la ricerca. In alternativa, lasciare vuoto il campo di testo e fare clic **su Cerca** per visualizzare fino alle prime 100 opzioni.
 
 ```powershell
 /filter/[AllStreams].[Second Tenant Id]\|[YOUR TENANT ID HERE]
@@ -356,7 +356,7 @@ L'intero URL sarà simile al seguente:
 
 `https://cqd.teams.microsoft.com/spd/#/Dashboard/2624085/2018-9/filter/[AllStreams].[Is%20Teams]|[True]`
 
-Per applicare filtri URL con valori a selezione multipla, separare ogni valore con un carattere pipe ( | ). Ad esempio:
+Per applicare filtri URL con valori a selezione multipla, separare ogni valore con un carattere barra verticale ( | ). Ad esempio:
 
 `filter/[AllStreams].[Media%20Type]|[Video]|[Audio]|[VBSS]`
 
@@ -368,8 +368,8 @@ Se si specifica un nome o un valore non valido, il filtro URL non verrà applica
 | Filter         | Descrizione          | Esempio di filtro di query CQD      |
 |----------------|----------------------|-------------------------------|
 | Nessun valore vuoto   | Alcuni filtri non hanno l'opzione di filtrare i valori vuoti. Per filtrare manualmente i valori vuoti, usare l'espressione vuota e impostare il filtro su Uguale o Diverso da, a seconda delle esigenze.      | Second Building Name \<\> \^ \\ s\*\$                       |
-| Escludere subnet comuni | Senza un file di edificio valido per separare le reti gestite da quelle non gestite, le reti domestiche verranno incluse nei report. Queste subnet domestiche sono esterne all'ambito del controllo dell'IT e possono essere rapidamente escluse da un report. Le subnet comuni, come definito in questo articolo, sono 10.0.0.0, 192.168.1.0 e 192.168.0.0. | Seconda subnet \<\> 10.0.0.0 \| 192.168.0.0 \| 192.168.1.0 |
-| Visualizza solo all'interno  | Consente di filtrare un report in modo che sia gestito (all'interno) o non gestito (all'esterno). Il modello CQD gestito è già preconfigurato con questi filtri.       | Second Inside Corp = Inside        |
+| Escludere subnet comuni | Senza un file di edificio valido per separare le reti gestite da quelle non gestite, le reti domestiche verranno incluse nei report. Queste subnet domestiche sono esterne all'ambito di controllo dell'IT e possono essere rapidamente escluse da un report. Le subnet comuni, come definito in questo articolo, sono 10.0.0.0, 192.168.1.0 e 192.168.0.0. | Seconda subnet \<\> 10.0.0.0 \| 192.168.0.0 \| 192.168.1.0 |
+| Visualizza solo all'interno  | Consente di filtrare un report in modo che sia gestito (all'interno) o non gestito (esterno). Il modello CQD gestito è già preconfigurato con questi filtri.       | Second Inside Corp = Inside        |
 
 
 #### <a name="how-to-find-your-tenant-id"></a>Come trovare l'ID tenant
@@ -396,8 +396,6 @@ Durante la revisione dei dati, potrebbero verificarsi differenze tra Teams e Sky
   - Teams gestione dinamica della larghezza di banda. Skype for Business non lo fa.
 - Differenze negli [intervalli di indirizzi IP](Office-365-URLs-IP-address-ranges.md) tra Teams e Skype for Business. Gli Teams IP sono più nuovi, il che potrebbe causare problemi di connettività nel firewall.
 
-> [!IMPORTANT]
-> A partire dal 1° luglio 2020, la versione legacy di CQD (cqd.lync.com) accede ai dati dal nuovo CQD ( e non è più possibile esportare i dati di compilazione e https://CQD.teams.microsoft.com) report). A partire dal 31 luglio 2021, in conciso con il ritiro di Skype for Business Online, il CQD legacy verrà disattivato e non sarà più possibile accedervi.
 
 
 ## <a name="related-topics"></a>Argomenti correlati

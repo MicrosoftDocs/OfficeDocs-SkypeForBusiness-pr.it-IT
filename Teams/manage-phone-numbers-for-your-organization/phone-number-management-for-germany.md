@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Germania per Microsoft Teams.
-ms.openlocfilehash: 5df4949bd69967173ec9cc20bae7af77c6d02fdc
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 38d8f6d746e68340afd019666fac072054ef44c3
+ms.sourcegitcommit: 7251b92c9913ca1e43b3cc24fad73e8997303731
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/13/2021
-ms.locfileid: "58232661"
+ms.locfileid: "58348488"
 ---
 # <a name="phone-number-management-for-germany"></a>Gestione dei numeri di telefono per la Germania
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  <br/> | In Germania non è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Devi inviare una richiesta di nuovo numero di telefono. <br/><br/>Scarica uno di questi moduli. <br/>[Nuova richiesta di numero di telefono per la Germania (v.5.0) (de-de)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-germany-(v.5.0)-(de-de).pdf?raw=true) <br/>  [Nuova richiesta di numero di telefono per la Germania (v.5.0) (it-IT)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/new-number-request-forms/new-phone-number-request-for-germany-(v.5.0)-(en-us).pdf?raw=true)<br/><br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  <br/> | In Germania non è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. Devi inviare una richiesta di nuovo numero di telefono. <br/><br/>Scarica uno di questi moduli. <br/>[Nuova richiesta di numero di telefono per la Germania (v.5.0) (de-de)](https://download.microsoft.com/download/3/d/0/3d08f249-93a6-4bec-8c89-a2614ee0b84d/new-phone-number-request-for-germany-(v.5.0)-(de-de).pdf) <br/>  [Nuova richiesta di numero di telefono per la Germania (v.5.0) (it-IT)](https://download.microsoft.com/download/e/0/4/e043635c-f275-40dc-a45e-3120dfe0d748/new-phone-number-request-for-germany-(v.5.0)-(en-us).pdf)<br/><br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
 |Fai trasferire a noi i numeri di telefono.  <br/> | Scarica uno di questi moduli. <br/><br/> Per i numeri di telefono degli utenti:<br/>[Lettera di autorizzazione (LOA) per la Germania (numeri geografici) (v.5.0) (de-de)](https://download.microsoft.com/download/c/6/7/c67575bb-22ca-4a0a-836f-e411094b9067/letter-of-authorization-(loa)-for-germany-(geographic-numbers)-(v.5.0)-(de-de).pdf)<br/><br/>  Per i numeri verde:<br/>[Lettera di autorizzazione (LOA) per la Germania (numeri verde) (v.5.0) (de-de)](https://download.microsoft.com/download/4/b/6/4b6d2f70-dd3b-4936-b3d6-fba19051d4d0/letter-of-authorization-(loa)-for-germany-(toll-free-numbers)-(v.5.0)-(de-de)%20(1).pdf)<br/><br/> Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |

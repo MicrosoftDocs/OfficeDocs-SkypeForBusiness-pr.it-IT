@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d12f09fe5043093b55e57d32bb70d9c332157511
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: ba2a2a404c71aba007d667e5276d789b05890a8b
+ms.sourcegitcommit: 2e1d97a3181fe12be43a0641039dca6077863f44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234431"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380470"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "58234431"
 > Le trasmissioni nella modalità di sola visualizzazione sono disponibili in Microsoft 365 E3/E5 e Microsoft 365 A3/A5. Questa caratteristica sarà abilitata come predefinita l'1 marzo 2021. La distribuzione di questa funzionalità in Microsoft 365 Government Community Cloud (GCC) inizierà alla fine di marzo 2021. Government Community Cloud High (GCCH) e Department of Defense (DoD) saranno distribuiti in seguito. È necessario modificare i criteri predefiniti dopo tale data se si attivare la funzionalità. Usare PowerShell per abilitare i criteri `Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Enabled`.
 
 > [!Note]
-> Se la riunione raggiunge la capacità, Teams scalabilità uniforme per supportare un'esperienza di trasmissione solo visualizzazione di 10.000 persone. Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno. Attualmente i webinar non supportano un'esperienza di trasmissione di sola visualizzazione.
+> Se la riunione raggiunge la capacità, Teams scalabilità uniforme per supportare un'esperienza di trasmissione di 10.000 persone in sola visualizzazione. Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno. Attualmente i webinar non supportano un'esperienza di trasmissione di sola visualizzazione.
 
 Microsoft Teams consente fino a 10.000 partecipanti alle riunioni. Dopo aver raggiunto la capacità della riunione principale, ovvero quando 1000 utenti aderiscono a una riunione, altri partecipanti si uniranno con un'esperienza di sola visualizzazione.
 
@@ -42,7 +42,7 @@ I partecipanti potranno partecipare all'esperienza di sola visualizzazione trami
 > [!Note]
 > La capacità limite corrente della "riunione principale", o in altre parole, il numero di utenti completamente interattivi è 1000 e include GCC webinar.
 
-## <a name="teams-view-only-experience-controls"></a>Teams di sola visualizzazione
+## <a name="teams-view-only-experience-controls"></a>Teams di esperienza di sola visualizzazione
 
 È possibile abilitare l'esperienza di sola visualizzazione usando il cmdlet dal modulo [`Set-CsTeamsMeetingPolicy`](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) [di PowerShell SkypeForBusiness](/powershell/module/skype/?view=skype-ps) o almeno dalla versione 2.0.0 del modulo [MicrosoftTeams.](https://www.powershellgallery.com/packages/MicrosoftTeams)
 
@@ -65,7 +65,7 @@ Per disabilitare l'esperienza di sola visualizzazione, è anche possibile usare 
 Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Disabled
 ```
 
-In futuro sarà possibile abilitare o disabilitare l'esperienza di sola visualizzazione nell'interfaccia Teams di amministrazione.
+In futuro sarà possibile abilitare o disabilitare l'esperienza di sola visualizzazione nell'Teams di amministrazione.
 
 ## <a name="impact-to-users"></a>Impatto sugli utenti
 
@@ -105,7 +105,7 @@ L'esperienza di sola visualizzazione consente ai partecipanti di:
 
 - Ascoltare i partecipanti alla riunione principale di Teams.
 - Vedere il feed video del relatore attivo (se il relatore sta condividendo il video).
-- Visualizzare il contenuto condiviso con la funzionalità condividi desktop o schermo.
+- Visualizzare il contenuto condiviso usando la funzionalità condividi desktop o schermo.
 
 I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti opzioni delle riunioni:
 
@@ -123,10 +123,12 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 ## <a name="view-only-feature-limitations"></a>Limitazioni della funzionalità di sola visualizzazione
 
 - I partecipanti di sola visualizzazione potranno vedere solo i sottotitoli in tempo reale sul desktop e sul Web. Al momento sono supportati solo i sottotitoli in inglese.
+- I partecipanti di sola visualizzazione non possono registrarsi per i Webinar.
 - I partecipanti nella sala di sola visualizzazione saranno supportati dalla tecnologia di streaming.
 - I partecipanti nella sala di sola visualizzazione non vengono inclusi nel report sui partecipanti.
 - I partecipanti nella sala di sola visualizzazione hanno un'esperienza video singola. Possono accedere l'altoparlante attivo o i contenuti che vengono condivisi, ma non entrambi.
-- Al momento non supportiamo i layout **Galleria**, **Galleria estesa**, o **Modalità Insieme** per gli utenti nella sala di sola visualizzazione.  
+- Al momento non supportiamo i layout **Galleria**, **Galleria estesa**, o **Modalità Insieme** per gli utenti nella sala di sola visualizzazione.
+- I partecipanti di sola visualizzazione sono supportati solo dai criteri di lobby seguenti: "Solo tu", "Persone dell'organizzazione e guest", "Persone dell'organizzazione, organizzazioni attendibili e guest" e "Tutti". Se si usano criteri di sala d'attesa che non supportano i partecipanti di sola visualizzazione, i partecipanti di sola visualizzazione verranno rifiutati dalla riunione. 
 - Gli utenti nella sala di sola visualizzazione non avranno la stessa latenza degli utenti regolari. <sup>1</sup>
 
   <sup>1</sup> I partecipanti nella sala di sola visualizzazione avrannno un ritardo audio e video di 30 secondi durante la riunione.  

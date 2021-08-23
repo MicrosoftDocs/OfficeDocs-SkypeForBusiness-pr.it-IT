@@ -21,18 +21,18 @@ f1.keywords:
 ms.custom:
 - Security
 description: Guida alla sicurezza per Skype for Business online <add description>
-ms.openlocfilehash: 0100eaab0a06cdbc618f39bd02ae832dca71abd5ac0498143fd51e8da9ea0e3e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6dca69d4ced66543845990f88e9c389936281c7a
+ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295943"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "58407025"
 ---
 # <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business Online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Skype for Business Online (SfBO), nell'ambito dei servizi Microsoft 365 e Office 365, segue tutte le procedure e le procedure consigliate per la sicurezza, ad esempio la sicurezza a livello di servizio, tramite controlli dei clienti approfonditi all'interno del servizio, protezione avanzata della sicurezza e procedure consigliate operative. Per informazioni dettagliate, vedere il Centro protezione Microsoft ( https://microsoft.com/trustcenter) .
+Skype for Business Online (SfBO), nell'ambito dei servizi Microsoft 365 e Office 365, segue tutte le procedure consigliate per la sicurezza, ad esempio la sicurezza a livello di servizio, tramite controlli dei clienti approfonditi all'interno del servizio, protezione avanzata della sicurezza e procedure consigliate operative. Per informazioni dettagliate, vedere il Centro protezione Microsoft ( https://microsoft.com/trustcenter) .
 
 ## <a name="trustworthy-by-design"></a>Affidabile per progettazione
 Skype for Business Online è progettato e sviluppato in conformità con MIcrosoft Trustworthy Computing Security Development Lifecycle (SDL) descritto in https://www.microsoft.com/sdl/default.aspx. Il primo passo verso la creazione di un sistema di comunicazioni unificato più sicuro è stato quello di progettare modelli di minacce e testare ciascuna funzionalità così come era stata progettata. Ulteriori miglioramenti relativi alla protezione venivano apportati durante il processo e le procedure di codifica. Gli strumenti della fase di compilazione rilevano sovraccarichi del buffer e altre potenziali minacce alla sicurezza prima che il codice venga archiviato nel prodotto finale. Naturalmente, è impossibile progettare un prodotto che sia al sicuro da tutte le possibili minacce alla protezione. Nessun sistema può garantire una protezione completa. Tuttavia, poiché lo sviluppo del prodotto ha accolto principi di progettazione sicuri fin dall'inizio, Skype for Business Online incorpora tecnologie di protezione standard del settore come parte fondamentale della sua architettura. 
@@ -60,7 +60,7 @@ SfBO attenua questi attacchi eseguendo la protezione di rete di Azure DDOS e lim
 ### <a name="eavesdropping"></a>Intercettazione
 L'intercettazione può verificarsi quando un utente malintenzionato accede al percorso dei dati in una rete e ha la capacità di monitorare e leggere il traffico. Si chiama anche sniffing o snooping. Se il traffico è in testo normale, l'utente malintenzionato può leggerlo quando accede al percorso. Un esempio è un attacco eseguito controllando un router sul percorso dei dati. 
 
-SfBO usa MUTUAL TLS (MTLS) per le comunicazioni server all'interno di Microsoft 365 o Office 365 e TLS dai client al servizio, rendendo questo attacco molto difficile da raggiungere entro il periodo di tempo in cui una determinata conversazione potrebbe essere attaccata. TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. Ciò non impedisce l'intercettazione, ma l'utente malintenzionato non può leggere il traffico a meno che la crittografia non sia interrotta.
+SfBO usa MTLS (Mutual Tls) per le comunicazioni server all'interno di Microsoft 365 o Office 365 e TLS dai client al servizio, rendendo questo attacco molto difficile da raggiungere entro il periodo di tempo in cui una determinata conversazione potrebbe essere attaccata. TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. Ciò non impedisce l'intercettazione, ma l'utente malintenzionato non può leggere il traffico a meno che la crittografia non sia interrotta.
 
 Il protocollo TURN viene utilizzato per scopi multimediali in tempo reale. Il protocollo TURN non impone la crittografia del traffico e le informazioni che invia sono protette dall'integrità del messaggio. Sebbene sia aperto alle intercettazioni, le informazioni che invia (cioè gli indirizzi IP e la porta) possono essere estratte direttamente, guardando semplicemente gli indirizzi di origine e destinazione dei pacchetti. Il servizio SfBO garantisce che i dati siano validi controllando l'Integrità del Messaggio tramite la chiave derivata da alcune voci, inclusa una password TURN, che non viene mai inviata in chiaro. SRTP viene utilizzato per il traffico multimediale ed è inoltre crittografato.
 
@@ -96,14 +96,14 @@ Le seguenti tabelle elencano i dati richiesti per il funzionamento di SfBO.
 <!--start table here -->
 
 
-|                      |                                                                                            |   |
-|:---------------------|:-------------------------------------------------------------------------------------------|:--|
-| **Dati**             | **Possibili** **impostazioni**                                                                  |   |
-| Dati Personali        | Nome, titolo, società, indirizzo di posta elettronica, fuso orario                                             |   |
-| Numeri di telefono    | Lavoro, mobile, casa                                                                         |   |
-| Informazioni di calendario | Libero/occupato, avviso fuori città, dettagli della riunione (per chi ha accesso al tuo calendario) |   |
-| Stato presenza      | Assente, Disponibile, Occupato, Non disturbare, Offline                                             |   |
-|                      |                                                                                            |   |
+
+| **Dati**             | **Possibili** **impostazioni**                                                                  |
+|:---------------------|:-------------------------------------------------------------------------------------------|
+| Dati Personali        | Nome, titolo, società, indirizzo di posta elettronica, fuso orario                                             |
+| Numeri di telefono    | Lavoro, mobile, casa                                                                         |
+| Informazioni di calendario | Libero/occupato, avviso fuori città, dettagli della riunione (per chi ha accesso al tuo calendario) |
+| Stato presenza      | Assente, Disponibile, Occupato, Non disturbare, Offline                                             |
+|                      |                                                                                            |
 
 <!-- end of table -->
 
@@ -112,13 +112,12 @@ Le seguenti tabelle elencano i dati richiesti per il funzionamento di SfBO.
 <!--start table here -->
 
 
-|              |                                                                 |   |
-|:-------------|:----------------------------------------------------------------|:--|
-| **Categoria** | **Impostazioni possibili**                                           |   |
-| Indirizzo IP   | Indirizzo effettivo del computer o indirizzo NAT                     |   |
-| URI SIP      | <u>david.campbell@contoso.com</u>                               |   |
-| Nome         | David Campbell (come definito in Servizi di dominio Active Directory) |   |
-|              |                                                                 |   |
+| **Dati**             | **Possibili** **impostazioni**                                                                  |
+|:---------------------|:-------------------------------------------------------------------------------------------|
+| Indirizzo IP   | Indirizzo effettivo del computer o indirizzo NAT                     |
+| URI SIP      | <u>david.campbell@contoso.com</u>                               |
+| Nome         | David Campbell (come definito in Servizi di dominio Active Directory) |
+|              |                                                                 |
 
 <!-- end of table -->
 
@@ -166,9 +165,10 @@ La seguente tabella riassume il protocollo utilizzato da SfBO.
 <!--start table here with header -->
 
 
-|||
-|:-----|:-----|
+
+
 |**Tipologia di traffico**|**Protetto da**|
+|:-----|:-----|
 |Da server a server|MTLS|
 |Da client a server|TLS|
 |Messaggistica istantanea e presenza|TLS (se configurato per TLS)|
@@ -244,7 +244,7 @@ L'abilitazione di utenti esterni e utenti interni per lo scambio di file multime
 5. Un utente riceve un messaggio di posta elettronica contenente un invito a partecipare a una riunione SfBO. L'e-mail contiene una chiave di conferenza e un collegamento URL basato su HTTP alla conferenza. Sia la chiave, sia l'URL sono unici per una determinata riunione.
 
 ### <a name="federation-safeguards-for-sfbo"></a>Misure di protezione della federazione per SfBO
-La federazione offre all'organizzazione la capacità di comunicare con altre organizzazioni per condividere messaggi istantanei e presenza. Nella federazione SfBO è attiva per impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllare questa funzionalità tramite Microsoft 365 o Amministrazione di Office 365 portale. Vedi altro.
+La federazione offre all'organizzazione la capacità di comunicare con altre organizzazioni per condividere messaggi istantanei e presenza. Nella federazione SfBO è attiva per impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllare questa funzionalità tramite il portale Microsoft 365 o Amministrazione di Office 365 tenant. Vedi altro.
 
 ## <a name="addressing-threats-to-sfbo-conferences"></a>Affrontare le minacce alle Conferenze SfBO
 
@@ -281,7 +281,7 @@ Per impostazione predefinita, i partecipanti che si collegano dalla PSTN vanno d
 Gli organizzatori della riunione controllano se i partecipanti possono partecipare a una riunione senza attendere nella lobby. Ogni riunione può essere configurata in modo da consentire l'accesso utilizzando uno dei seguenti metodi:
 - **Solo io, l'organizzatore della riunione**&nbsp;&nbsp; Tutti, tranne l'organizzatore, devono attendere nella lobby fino all'ammissione.
 - **Persone che invito della mia società**&nbsp;&nbsp; Chiunque appartenga alla società può partecipare direttamente alla riunione, anche se non invitato.
-- **Tutti gli utenti dell'organizzazione** &nbsp; &nbsp; Tutti gli utenti sfBO del tenant Microsoft 365 o Office 365 possono partecipare alla riunione senza aspettare nella sala d'attesa, anche se non sono presenti nella lista di distribuzione. Tutti gli altri, inclusi tutti gli utenti esterni e anonimi, devono attendere nella lobby fino all'ammissione.
+- **Tutti gli utenti dell'organizzazione** &nbsp; &nbsp; Tutti gli utenti SfBO del tenant Microsoft 365 o Office 365 possono partecipare alla riunione senza aspettare nella sala d'attesa, anche se non sono presenti nella lista di distribuzione. Tutti gli altri, inclusi tutti gli utenti esterni e anonimi, devono attendere nella lobby fino all'ammissione.
 -  &nbsp; Chiunque &nbsp; Chiunque (senza restrizioni) che abbia accesso al collegamento alla riunione accede direttamente alla riunione.
 Quando è specificato qualsiasi metodo, tranne Solo l'organizzatore (bloccato), l'organizzatore della riunione può anche specificare che le persone che si collegano per telefono bypassino la lobby. 
 

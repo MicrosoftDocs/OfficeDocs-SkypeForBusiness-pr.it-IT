@@ -16,12 +16,12 @@ ms.collection:
 ms.reviewer: anach
 description: Informazioni sul controllo dell'app Pazienti per Teams amministratori
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 288877032c662ee03e0fd575a1f9ce2e96d1b4336c290899e98eeef92a11fecf
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dcd72dbe4c9b83b5f23faa0e01b4133e770822d5
+ms.sourcegitcommit: 2e1d97a3181fe12be43a0641039dca6077863f44
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308735"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "58380610"
 ---
 # <a name="audit-logs-for-patients-app"></a>Log di controllo per l'app Pazienti
 
@@ -30,7 +30,7 @@ ms.locfileid: "54308735"
 >
 >Con Elenchi, i team di assistenza della tua organizzazione sanitaria possono creare elenchi di pazienti per scenari che vanno da turni e riunioni di team interdisciplinari al monitoraggio generale dei pazienti. Estrai il modello Coordinamento pazienti in Elenchi per iniziare. Per ulteriori informazioni su come gestire l'app Elenchi nella tua organizzazione, vedere [Gestire l’app Elenchi](../../manage-lists-app.md).
 
-Un log di controllo per l'attività dell'app Pazienti consente ai team di risposta dopo gli incidenti di rivedere le modifiche apportate alle cartelle cliniche elettroniche (EMR) o alle informazioni sull'assistenza sanitaria dei pazienti (PHI) di un paziente e determinare se sono necessarie modifiche o miglioramenti ai criteri o alle procedure per l'accesso al phI negli strumenti di produttività. Gli eventi del log di controllo riguardano le azioni eseguite tramite l'interfaccia utente dell'app Pazienti.
+Un log di controllo per l'attività dell'app Pazienti consente ai team di risposta dopo gli incidenti di rivedere le modifiche apportate alle cartelle cliniche elettroniche (EMR) o alle informazioni sull'assistenza sanitaria dei pazienti (PHI) di un paziente e determinare se sono necessarie modifiche o miglioramenti ai criteri o alle procedure per l'accesso phI agli strumenti di produttività. Gli eventi del log di controllo riguardano le azioni eseguite tramite l'interfaccia utente dell'app Pazienti.
 
 ## <a name="meet-hipaa-requirements"></a>Soddisfare i requisiti HIPAA
 
@@ -46,8 +46,8 @@ In base alle linee guida HIPAA, i provider di servizi sanitari sono tenuti a ten
 Un controllo dipende da diverse configurazioni precedenti:
 
 1. L'amministratore dovrebbe collaborare con il provider di servizi FHIR per avere EMR in un formato usato dall'app Patients. 
-2. Un amministratore del provider di assistenza sanitaria dovrebbe abilitare l'app pazienti nell Teams di amministrazione. Per [altre informazioni,](../../teams-app-setup-policies.md) vedere Gestire i criteri di configurazione delle app Microsoft Teams e gli articoli correlati.
-3. L'amministratore dovrebbe abilitare i controlli attività, nello stesso modo [in](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-begin) cui abilita qualsiasi controllo del log attività, come descritto in Prima di iniziare e Attivare o disattivare la ricerca nel log [di controllo.](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search) Se la registrazione di controllo è già attivata, non è necessario alcun valore speciale per l'app Pazienti. Ogni volta che un provider di servizi sanitari installa ed esegue l'app all'interno di un team, i log di controllo registrano l'attività phI.
+2. Un amministratore del provider di assistenza sanitaria dovrebbe abilitare l'app pazienti nell Teams di amministrazione. Per [altre informazioni, vedere](../../teams-app-setup-policies.md) Gestire i criteri di configurazione delle app Microsoft Teams e gli articoli correlati.
+3. L'amministratore dovrebbe abilitare i controlli attività, nello stesso modo [in](/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance#before-you-begin) cui abilita qualsiasi controllo del log attività, come descritto in Prima di iniziare e Attivare o disattivare la ricerca nel log [di controllo.](/office365/securitycompliance/turn-audit-log-search-on-or-off#turn-on-audit-log-search) Se la registrazione di controllo è già attivata, per l'app Pazienti non è necessario nulla di speciale. Ogni volta che un provider di servizi sanitari installa ed esegue l'app all'interno di un team, i log di controllo registrano l'attività phI.
 4. L'amministratore dovrà quindi annunciare la disponibilità dell'app Pazienti e gli operatori sanitari dovranno iniziare a generare attività da includere in un controllo.
 
 <!-- add link out to client doc when available -->
@@ -67,7 +67,7 @@ L'app Pazienti ha le proprie attività registrate, elencate nella tabella seguen
 | Aggiunto paziente all'elenco | PatientListAddPatient | Un paziente è stato aggiunto a un elenco di pazienti. |
 | Aggiunta di una nota per il paziente | PatientNoteAdd | È stata aggiunta una nota a un record del paziente. |
 | Schema del paziente creato | PatientSchemaCreate | È stato creato un set di colonne usate nel record del paziente. |
-| L'utente ha avviato un'esportazione | ExportInitiation | I dati dei pazienti sono stati esportati dall'app Pazienti in un file Excel pazienti. Il file verrà salvato nel sito di SharePoint del team. |
+| L'utente ha avviato un'esportazione | ExportInitiation | I dati dei pazienti sono stati esportati dall'app Pazienti in un file Excel pazienti. Il file verrà salvato nel sito SharePoint team. |
 | Elenco di pazienti creato | PatientListCreate | Un utente ha creato un elenco di pazienti.|
 | Impostare l'elenco dei pazienti predefinito| PatientListDefaultSet| Un utente imposta un determinato elenco come elenco predefinito.|
 | Paziente rimosso dall'elenco| PatientListRemovePatient | Un paziente è stato rimosso da un elenco di pazienti. |
@@ -81,7 +81,7 @@ L'app Pazienti ha le proprie attività registrate, elencate nella tabella seguen
 
 È possibile personalizzare il controllo in base alle esigenze per cercare o filtrare in base a una di queste attività registrate.
 
-Le attività registrate per Microsoft Teams in generale sono descritte in [Microsoft Teams attività](/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#microsoft-teams-activities).
+Le attività registrate per Microsoft Teams in generale sono descritte in [Microsoft Teams attività .](/office365/securitycompliance/search-the-audit-log-in-security-and-compliance#microsoft-teams-activities)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

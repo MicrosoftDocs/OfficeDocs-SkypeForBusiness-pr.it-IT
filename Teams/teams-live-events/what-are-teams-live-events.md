@@ -22,12 +22,12 @@ ms.custom:
 appliesto:
 - Microsoft Teams
 localization_priority: Priority
-ms.openlocfilehash: d4a4e57acf5987d670ebb75385bdcfc4406ba505
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 2b445c44fa7517c7ffbc6bdefdb0505cff88c999
+ms.sourcegitcommit: 85017cf88789c750836780dad2ef707c1c6c39b4
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58233241"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359213"
 ---
 # <a name="what-are-microsoft-teams-live-events"></a>Cosa sono gli eventi live di Microsoft Teams
 
@@ -43,7 +43,7 @@ Gli eventi live di Teams sono considerati la versione futura di Skype Meeting Br
 
 È ora di iniziare. Esaminare prima di tutto il seguente diagramma, che mostra i componenti generali coinvolti negli eventi live di Microsoft 365 e il modo in cui sono connessi.
 
-![Componenti principali degli eventi live](../media/live-event-flow-diagram1.png  "Componenti chiave di eventi live, programmazione, produzione, piattaforma Stream, provider eCDN di terze parti certificati")
+![Componenti principali degli eventi live](../media/live-events-flow-diagram.png  "Componenti chiave di eventi live, programmazione, produzione, piattaforma Stream, provider eCDN di terze parti certificati")
 
 > [!Note]
 > È opportuno sottolineare il fatto che gli eventi live di Teams, considerando la natura della tecnologia di trasmissione, spesso superano gli insiemi di dati (interni) standard delle riunioni.

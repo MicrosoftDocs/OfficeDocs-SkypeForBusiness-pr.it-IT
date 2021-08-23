@@ -13,18 +13,18 @@ f1.keywords:
 localization_priority: Normal
 ms.collection: IT_Skype16
 description: "Riepilogo: installare i file dell'agente Operations Manager nel computer Skype for Business Server 2019 da monitorare e configurare il computer in modo che funzioni come proxy System Center locale."
-ms.openlocfilehash: 2c049edf37395197abd46744d67eced8781b3c15cf56e4308cafffb63435083c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1d723ba13e7db91a8f6b22a48c5f0eeb87333e1e
+ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54277581"
+ms.lasthandoff: 08/17/2021
+ms.locfileid: "58372036"
 ---
-# <a name="configure-the-skype-for-business-server-computers-that-will-be-monitored"></a>Configurare i Skype for Business Server computer che verranno monitorati
+# <a name="configure-the-skype-for-business-server-computers-to-monitore"></a>Configurare i Skype for Business Server computer da monitorare
 
 **Riepilogo:** Installare i file dell'agente Operations Manager nel computer Skype for Business Server 2019 da monitorare e configurare il computer in modo che agirà come proxy System Center locale.
 
-Ogni Skype for Business Server 2019 che si desidera monitorare deve essere in grado di segnalare autonomamente l'esistenza al server di gestione. Per abilitare questo processo, è necessario installare i file dell'agente Operations Manager in ognuno dei computer da monitorare. Dopo aver installato i file dell'agente, è necessario configurare il computer in modo che agirà come proxy System Center locale. Prima di eseguire queste procedure, assicurarsi di aver installato e Skype for Business Server in questi computer.
+Ogni Skype for Business Server 2019 che si desidera monitorare deve essere in grado di segnalare autonomamente la propria esistenza al server di gestione. Per abilitare questo processo, è necessario installare i file dell'agente Operations Manager in ognuno dei computer da monitorare. Dopo aver installato i file dell'agente, è necessario configurare il computer in modo che agirà come proxy System Center locale. Prima di eseguire queste procedure, assicurarsi di aver installato e configurato Skype for Business Server in questi computer.
 
 ## <a name="installing-a-certificate-on-a-watcher-node-located-outside-the-perimeter-network"></a>Installazione di un certificato in un nodo Watcher posizionato all'esterno del perimetro della rete
 <a name="watcher_node_outside"> </a>
@@ -39,11 +39,11 @@ Se si distribuisce un agente in una di queste posizioni, sarà inoltre necessari
 
 2. Nell'System Center guidata di Operation Manager fare clic su **Installa agente Operations Manager** da Installa agente in Installazioni facoltative
 
-3. Nella pagina System Center System Center installazione guidata di Operations Manager fare clic su **Avanti.**
+3. Nella pagina System Center installazione guidata di System Center Operations Manager fare clic su **Avanti**.
 
 4. Nella pagina Cartella di destinazione selezionare la cartella in cui verranno installati i file dell'agente Operations Manager e fare clic su **Avanti.**
 
-5. Nella pagina Configurazione gruppo di gestione selezionare Specifica **informazioni gruppo di gestione e** fare clic su **Avanti.**
+5. Nella pagina Configurazione gruppo di gestione selezionare Specifica **informazioni gruppo di gestione** e fare clic su **Avanti.**
 
 6. Nella pagina Configurazione gruppo di gestione digitare il nome del gruppo di gestione di Operations Manager nella casella **Nome gruppo di gestione** e quindi digitare il nome host del server Operations Manager (ad esempio, atl-scom-001) nella casella **Server di gestione**. Se è stato modificato il numero di porta utilizzato da Operations Manager, immettere il nuovo numero di porta nella casella **Porta server di** gestione. In caso contrario, lasciare la porta sul valore predefinito 5723 e quindi fare clic su **Avanti.**
 
@@ -66,13 +66,13 @@ Verrà visualizzato un elenco di tutti gli agenti di Operations Manager.
 ## <a name="configuring-the-skype-for-business-server-computer-to-participate-in-system-center-discovery"></a>Configurazione del computer Skype for Business Server per partecipare all'System Center individuazione
 <a name="watcher_node_outside"> </a>
 
-Per assicurarsi che il nuovo agente di Skype for Business Server partecipi al processo di individuazione per System Center Operations Manager, è necessario completare la procedura seguente in ogni computer in cui è stata installata la console di System Center Operations Manager:
+Per assicurarsi che il nuovo agente di Skype for Business Server partecipi al processo di individuazione di System Center Operations Manager, è necessario completare la procedura seguente in ogni computer in cui è stata installata la console di System Center Operations Manager:
 
 1. Nella scheda Amministrazione fare clic su **Gestito tramite agente**.
 
 2. Fare clic **su Individuazione guidata** e completare la procedura guidata per il computer da individuare.
 
-3. Riavviare il servizio Agente integrità. Il riavvio del servizio forza l'individuazione del nuovo computer. Se non si riavvia il servizio, potrebbero essere necessario fino a 4 ore prima che il nuovo computer venga individuato da System Center Operations Manager.
+3. Riavviare il servizio Agente integrità. Il riavvio del servizio forza l'individuazione del nuovo computer. Se non si riavvia il servizio, potrebbero essere necessario 4 ore prima che il nuovo computer venga individuato da System Center Operations Manager.
 
 4. Verificare che nel registro eventi di Operations Manager non siano stati registrati eventi di errore.
 

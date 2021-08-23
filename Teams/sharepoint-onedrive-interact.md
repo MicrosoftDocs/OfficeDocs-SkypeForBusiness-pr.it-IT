@@ -18,27 +18,27 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e550acd5d47c0199318c820f595253eb8f2477421f62d90e3a7d16ced2336d05
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b47ca7c1c0a9a5154f681a8e09d175ba17ad8013
+ms.sourcegitcommit: 85017cf88789c750836780dad2ef707c1c6c39b4
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308487"
+ms.lasthandoff: 08/16/2021
+ms.locfileid: "58359193"
 ---
 # <a name="how-sharepoint-and-onedrive-interact-with-microsoft-teams"></a>Come SharePoint e OneDrive con Microsoft Teams
 
 > [!Tip]
-> Guardare la sessione seguente per informazioni su come Teams interagisce con Azure Active Directory (AAD), Microsoft 365 Groups, Exchange, SharePoint e OneDrive: [Foundations of Microsoft Teams](https://aka.ms/teams-foundations)
+> Guardare la sessione seguente per informazioni su come Teams interagisce con Azure Active Directory (AAD), gruppi di Microsoft 365, Exchange, SharePoint e OneDrive: fondamenta di [Microsoft Teams](https://aka.ms/teams-foundations)
 
-Ogni team di Microsoft Teams ha un sito del team in SharePoint e ogni canale standard di un team ottiene una cartella all'interno della raccolta documenti del sito del team predefinita. Ogni [canale privato](private-channels.md) ottiene un sito SharePoint privato. Per altre informazioni su questi siti del team e dei canali, vedere Gestire Teams [siti connessi e siti di canale.](/sharepoint/teams-connected-sites)
+Ogni team in Microsoft Teams ha un sito del team in SharePoint e ogni canale standard di un team ottiene una cartella all'interno della raccolta documenti del sito del team predefinita. Ogni [canale privato](private-channels.md) ottiene un sito SharePoint privato. Per altre informazioni su questi siti del team e i siti dei canali, vedere Gestire Teams [siti connessi e siti di canale.](/sharepoint/teams-connected-sites)
 
 I file condivisi in una conversazione vengono aggiunti automaticamente alla raccolta documenti e le autorizzazioni e opzioni di sicurezza per i file impostate in SharePoint vengono applicate automaticamente all'interno di Teams. Per vedere l'impatto della modifica dell'indirizzo di un sito in SharePoint, vedere [Modificare l'indirizzo di un sito.](/sharepoint/change-site-address)
 
 I file di chat privati vengono archiviati nella cartella OneDrive del mittente e le autorizzazioni vengono concesse automaticamente a tutti i partecipanti nell'ambito del processo di condivisione file.
 
-Se agli utenti non sono assegnate SharePoint licenze, non hanno OneDrive di archiviazione in Microsoft 365. La condivisione di file funziona nei canali standard, ma gli utenti non saranno in grado di condividere file nelle chat senza OneDrive archiviazione in Microsoft 365.
+Se agli utenti non sono assegnate SharePoint licenze, non hanno OneDrive di archiviazione in Microsoft 365. La condivisione di file funziona nei canali standard, ma gli utenti non potranno condividere file nelle chat senza OneDrive archiviazione in Microsoft 365.
 
-Archiviando i file nella raccolta SharePoint documenti OneDrive, verranno seguite tutte le regole di conformità configurate a livello di organizzazione. 
+Archiviando i file nella raccolta SharePoint documenti e OneDrive, verranno seguite tutte le regole di conformità configurate a livello di organizzazione. 
 
 > [!NOTE]
 > L'integrazione con SharePoint Server non è supportata per Teams.
@@ -51,7 +51,7 @@ Per ogni team viene creato SharePoint sito di lavoro e la cartella Documenti **c
 
 Il sito SharePoint e la raccolta documenti predefiniti non possono essere sostituiti con uno diverso.
 
-Per ogni utente, la cartella OneDrive **Microsoft Teams File chat** viene usata per archiviare tutti i file condivisi nelle chat private con altri utenti (1:1 o 1:molti), con le autorizzazioni configurate automaticamente per limitare l'accesso solo all'utente previsto.
+Per ogni utente, la cartella OneDrive **Microsoft Teams File chat** viene usata per archiviare tutti i file condivisi all'interno di chat private con altri utenti (1:1 o 1:molti), con autorizzazioni configurate automaticamente per limitare l'accesso solo all'utente previsto.
 
 ![Diagramma della cartella OneDrive denominata Microsoft Teams chat](media/Understand_how_SharePoint_Online_and_OneDrive_for_Business_interact_with_Microsoft_Teams_image2.png)
 
@@ -63,7 +63,7 @@ La **scheda File** in Teams simile alla visualizzazione SharePoint documenti. Ne
 
 - Vedere altre opzioni **nel** menu Nuovo file.
 - Sincronizzare i file con l'unità locale.
-- Nel menu **Tutti i documenti** passare dalla visualizzazione **Elenco** alla visualizzazione **Elenco compatto** alla **visualizzazione** Riquadri.
+- Nel menu **Tutti i documenti** passare dalla visualizzazione Elenco **alla** visualizzazione **Elenco compatto** alla **visualizzazione** Riquadri.
 - Identificare i file che necessitano di attenzione o che hanno malware.
 - Verificare immediatamente se un file è di sola lettura o estratto.
 - Estrarre e archiviare i file.
@@ -79,6 +79,8 @@ Tipo di collegamento di condivisione visualizzato per impostazione predefinita q
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[SharePoint e Teams: meglio insieme.](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/SharePoint-and-Teams-Better-Together/ba-p/189593)
+[Gestire Teams siti connessi e siti di canale](/SharePoint/teams-connected-sites)
+
+[SharePoint e Teams: meglio insieme](https://techcommunity.microsoft.com/t5/Microsoft-SharePoint-Blog/SharePoint-and-Teams-Better-Together/ba-p/189593).
 
 [Com'è l'esperienza guest](guest-experience.md)
