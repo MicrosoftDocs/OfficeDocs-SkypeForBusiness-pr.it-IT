@@ -17,24 +17,24 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ec7796d27f6606c4738d3ce415a32a6f966af6cead1a090dd053df293fcfadfb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d8f77e1050e90821f8d99996022b4c97042a5f63
+ms.sourcegitcommit: 3cc2da11aac1a3a7d620810c6f22a7192e4ab993
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332498"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "58483133"
 ---
 # <a name="sign-in-to-microsoft-teams"></a>Accedere a Microsoft Teams
 
 ## <a name="windows-users"></a>Utenti di Windows
 
-Microsoft consiglia alle organizzazioni di usare le versioni recenti di Windows 10 con configurazione di aggiunta a dominio ibrido o aggiunta ad Azure AD. Con le versioni recenti, gli account degli utenti vengono inseriti in Gestione account Web di Windows, il che a sua volta abilita l'accesso Single Sign-On a Teams e ad altre applicazioni Microsoft. Il Single Sign-On offre un'esperienza utente migliore, grazie all'accesso automatico, e un livello di sicurezza superiore.
+Microsoft consiglia alle organizzazioni di usare le versioni recenti di Windows 10 con configurazione Hybrid Domain Join o Azure AD Join. Usando le versioni recenti, gli account degli utenti vengono inseriti in Gestione account Web di Windows, il che a sua volta abilita l'accesso Single Sign-On a Teams e ad altre applicazioni Microsoft. Il Single Sign-On offre un'esperienza utente migliore, grazie all'accesso automatico, e un livello di sicurezza superiore.
 
 Microsoft Teams usa l'autenticazione moderna per mantenere l'esperienza di accesso più semplice e sicura. Per scoprire in che modo gli utenti accedono a Teams, leggere [Accedere a Teams](https://support.office.com/article/sign-in-to-teams-ea4b1443-d11b-4791-8ae1-9977e7723055).
 
 ### <a name="how-modern-authentication-works"></a>Funzionamento dell'autenticazione moderna
 
-L'autenticazione moderna è un processo che informa Teams che gli utenti hanno già immesso le loro credenziali, come l'indirizzo di posta elettronica aziendale e la password, e che non è necessario immetterle di nuovo per avviare l'app. L'esperienza varia in base a un paio di fattori, ad esempio se gli utenti lavorano in Windows o in Mac. Inoltre, varia anche a seconda che l’organizzazione abbia abilitato l'autenticazione a fattore singolo o l'autenticazione a più fattori. L'autenticazione a più fattori implica in genere la verifica delle credenziali tramite telefono, la creazione di un codice univoco, l'immissione di un PIN o la presentazione di un'identificazione personale. Ecco una panoramica di ogni scenario di autenticazione moderna.
+L'autenticazione moderna è un processo che informa Teams che gli utenti hanno già immesso le loro credenziali, come l'indirizzo di posta elettronica aziendale e la password, e che non è necessario immetterle di nuovo per avviare l'app. L'esperienza varia in base a un paio di fattori, ad esempio se gli utenti lavorano in Windows o in Mac. Inoltre, varia anche a seconda che l’organizzazione abbia abilitato l'autenticazione a fattore singolo o multifattore. L'autenticazione multifattore implica in genere la verifica delle credenziali tramite telefono, la creazione di un codice univoco, l'immissione di un PIN o dell’impronta digitale. Ecco una panoramica di ogni scenario di autenticazione moderna.
 
 L'autenticazione moderna è disponibile per tutte le organizzazioni che usano Teams. Se gli utenti non riescono a completare il processo, può essere presente un problema sottostante relativo alla configurazione di Azure AD dell'organizzazione. Per altre informazioni, vedere [Perché non riesco ad accedere a Microsoft Teams?](https://support.office.com/article/why-am-i-having-trouble-signing-in-to-microsoft-teams-a02f683b-61a3-4008-9447-ee60c5593b0f)
 
@@ -42,7 +42,7 @@ L'autenticazione moderna è disponibile per tutte le organizzazioni che usano Te
 
 - Microsoft consiglia di usare Windows 10 versione 1903 o successiva per ottenere un'esperienza di Single Sign-On ottimale.
 
-- Se gli utenti non hanno eseguito l'accesso al proprio account Microsoft aziendale o dell'istituto di istruzione, all'avvio di Teams viene loro chiesto di fornire l'autenticazione a uno o a più fattori (SFA o MFA). Questo processo dipende dalla scelta dei requisiti per la procedura di accesso da parte dell'organizzazione.
+- Se gli utenti non hanno già eseguito l'accesso al proprio account Microsoft aziendale o scolastico, all'avvio di Teams viene loro chiesto di fornire l'autenticazione a fattore singolo o multifattore (SFA o MFA). Questo processo dipende dalla scelta dei requisiti per la procedura di accesso da parte dell'organizzazione.
 
 - Se gli utenti hanno eseguito l'accesso a un computer aggiunto a un dominio, all'avvio di Teams potrebbero dover eseguire un ulteriore passaggio di autenticazione, a seconda che l'organizzazione abbia scelto di richiedere l'autenticazione MFA o che il computer in uso richieda già l'autenticazione MFA per accedere. Se il computer in uso richiede già l'autenticazione MFA per accedere, aprendo Teams l'app viene avviata automaticamente.
 
@@ -55,17 +55,13 @@ L'autenticazione moderna è disponibile per tutte le organizzazioni che usano Te
     > [!NOTE]
     > La precompilazione del nome utente per i nomi che terminano in ".local" o ".corp" è disattivata per impostazione predefinita, non è necessario impostare una chiave del Registro di sistema allo scopo.
 
-### <a name="signing-out-of-teams-after-completing-modern-authentication"></a>Disconnessione da Teams dopo aver completato l'autenticazione moderna
-
-Per disconnettersi da Teams, gli utenti possono selezionare l'immagine del profilo nella parte superiore dell'app e quindi selezionare **Disconnetti**. Possono anche fare clic con il pulsante destro del mouse sull'icona dell'app nella barra delle applicazioni e scegliere **Disconnetti**. Dopo la disconnessione da Teams, per avviare l'app è necessario immettere di nuovo le credenziali.
-
 ### <a name="signing-in-to-another-account-on-a-domain-joined-computer"></a>Accesso a un altro account in un computer aggiunto a un dominio
 
 Gli utenti su un computer aggiunto a un dominio potrebbero non riuscire ad accedere a Teams con un altro account nello stesso dominio di Active Directory.
 
 ## <a name="macos-users"></a>Utenti di macOS
 
-In macOS, Teams richiederà agli utenti di immettere il nome utente e le credenziali e potrebbe richiedere l'autenticazione a più fattori, in base alle impostazioni dell'organizzazione. Una volta immesse le credenziali, gli utenti non dovranno fornirle di nuovo. Da quel momento in poi, Teams si avvierà automaticamente ogni volta che lavorano con lo stesso computer.
+In macOS, Teams richiederà agli utenti di immettere il nome utente e le credenziali e potrebbe richiedere l'autenticazione multifattore, in base alle impostazioni dell'organizzazione. Una volta immesse le credenziali, gli utenti non dovranno fornirle di nuovo. Da quel momento in poi, Teams si avvierà automaticamente ogni volta che lavorano con lo stesso computer.
 
 ## <a name="teams-on-ios-and-android-users"></a>Utenti di Teams per iOS e Android
 
@@ -73,7 +69,7 @@ Dopo l'accesso, gli utenti dei dispositivi mobili visualizzano un elenco di tutt
 
 1. Se l'account selezionato è attualmente connesso ad altre app Office 365 o Microsoft 365, l'utente viene indirizzato direttamente a Teams, senza dover immettere le credenziali.
 
-2. Se l'utente non ha effettuato l'accesso al proprio account di Microsoft 365 in nessun'altra posizione, verrà chiesto di effettuare un'autenticazione a uno o più fattori (SFA o MFA), a seconda di come l'organizzazione ha configurato i criteri di accesso per i dispositivi mobili.
+2. Se l'utente non ha già effettuato l'accesso al proprio account di Microsoft 365, verrà chiesto di effettuare un'autenticazione a fattore singolo o multifattore (SFA o MFA), a seconda di come l'organizzazione ha configurato i criteri di accesso per i dispositivi mobili.
 
 > [!NOTE]
 > Per consentire agli utenti di provare l'esperienza di accesso descritta in questa sezione, sui dispositivi deve essere installata la versione 2.0.13 (Build 2020061704) o successiva di Teams per iOS, oppure la versione 1416/1.0.0.2020061702 o successiva di Teams per Android.
@@ -88,7 +84,7 @@ Le immagini seguenti mostrano il modo in cui gli utenti possono aggiungere più 
 
 ## <a name="restrict-sign-in-to-teams"></a>Limitare l'accesso a Teams
 
-L'organizzazione può voler limitare l'uso delle app approvate dall'azienda nei dispositivi gestiti, ad esempio per limitare la capacità degli studenti o dei dipendenti di accedere ai dati di altre organizzazioni oppure di usare app approvate dall'azienda per scenari personali. Queste restrizioni possono essere applicate impostando criteri per i dispositivi riconosciuti dalle applicazioni Teams.   
+L'organizzazione può voler limitare l'uso delle app approvate dall'azienda nei dispositivi gestiti, ad esempio per limitare la capacità degli studenti o dei dipendenti di accedere ai dati di altre organizzazioni oppure di usare app approvate dall'azienda per scenari personali. Queste restrizioni possono essere applicate impostando criteri per i dispositivi riconosciuti dalle applicazioni Teams.
 
 ### <a name="how-to-restrict-sign-in-on-mobile-devices"></a>Come limitare l'accesso nei dispositivi mobili
 
@@ -113,11 +109,13 @@ Per creare un criterio di configurazione dell'app per i dispositivi iOS/iPadOS g
 Per creare un criterio di configurazione dell'app per i dispositivi Android gestiti, vedere [Aggiungere criteri di configurazione delle app per i dispositivi Android gestiti](/mem/intune/apps/app-configuration-policies-use-android).
 
 ### <a name="how-to-restrict-sign-in-on-desktop-devices"></a>Come limitare l'accesso nei dispositivi desktop
+
 Le app Teams in Windows e macOS supportano ora l'uso di criteri per i dispositivi che limitano l'accesso all'organizzazione. I criteri possono essere impostati mediante le normali soluzioni di gestione dei dispositivi, ad esempio MDM o GPO (oggetto Criteri di gruppo). 
 
 Quando in un dispositivo è configurato questo criterio, gli utenti possono accedere solo con account ospitati in un tenant di Azure AD incluso nell'elenco dei tenant consentiti definito nel criterio. Il criterio si applica a tutti gli accessi, inclusi il primo e gli altri account. Se l'organizzazione si estende su più tenant di Azure AD, è possibile includere più ID tenant nell'elenco dei consentiti. I collegamenti per l'aggiunta di un altro account potrebbero continuare a essere visibili nell'app Teams, ma non saranno utilizzabili.
 
 > [!NOTE]
+> 
 >1. Il criterio limita solo gli accessi, ma non la possibilità per gli utenti di essere invitati come guest in altri tenant di Azure AD o di passare ad altri tenant (in cui gli utenti sono stati invitati come guest).
 >2. Il criterio richiede Teams per Windows versione 1.3.00.30866 o successiva e Teams per macOS versione 1.3.00.30882 (rilasciati a metà novembre 2020).
 
@@ -139,21 +137,11 @@ Esempio: SOFTWARE\Policies\Microsoft\Office\16.0\Teams\RestrictTeamsSignInToAcco
 - Tipo di dati: stringa
 - Commenti: immettere un elenco delimitato da virgole di ID tenant di Azure AD
 
+### <a name="global-sign-in"></a>Accesso globale
 
-## <a name="sign-out-on-mobile-devices"></a>Disconnessione su dispositivi mobili
+L'app Teams per Android ora supporta l'accesso globale, in modo da fornire un'esperienza di accesso senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Per maggiori informazioni, consultare la sezione [Disconnettersi da Teams](sign-out-of-teams.md). Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
 
-Gli utenti di dispositivi mobili possono disconnettersi da Teams passando al menu, selezionando **Altro** e poi **Disconnetti**. Una volta disconnessi, dovranno reimmettere le credenziali per avviare l'app la volta successiva.
-
-> [!NOTE]
-> Teams per Android usa Single Sign-on (SSO) per facilitare l'esperienza di accesso. Gli utenti devono disconnettersi da **Tutte** le app Microsoft, oltre a Teams, per completare l'uscita dalla piattaforma Android.
-
-### <a name="global-sign-in-and-sign-out"></a>Accesso e disconnessione globali
-
-L'app Teams per Android ora supporta l'accesso e la disconnessione globali, in modo da fornire un'esperienza di accesso e disconnessione senza problemi per gli operatori sul campo. I dipendenti possono selezionare un dispositivo dal pool di dispositivi condivisi ed eseguire un singolo accesso per "renderlo loro" per tutta la durata del turno. Al termine del turno, potranno eseguire la disconnessione globale da tutti gli account nel dispositivo. Questa operazione consente di rimuovere tutte le informazioni personali e aziendali dal dispositivo, in modo che possa essere ripristinato nel pool di dispositivi. Per ottenere questa funzionalità, è necessario che il dispositivo sia in modalità condivisa. Per informazioni su come configurare un dispositivo condiviso, vedere [Come usare la modalità dispositivo condiviso in Android](/azure/active-directory/develop/tutorial-v2-shared-device-mode#set-up-an-android-device-in-shared-mode).
-
-L'esperienza di accesso sarà simile a quella standard di Teams, mentre la disconnessione sarà simile alle due immagini seguenti:
-
-![il telefono cellulare con la dimostrazione della disconnessione](media/global-SignOut.png)  
+L'esperienza di accesso sarà simile a quella standard di Teams.
 
 ## <a name="urls-and-ip-address-ranges"></a>URL e intervalli di indirizzi IP
 
