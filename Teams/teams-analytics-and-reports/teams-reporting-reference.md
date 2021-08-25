@@ -18,12 +18,12 @@ description: In questo articolo sono disponibili informazioni sui report Teams d
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 61e40646318105d633b14d44a2eb8bfe41f13fa8
-ms.sourcegitcommit: 9062b2c81c582ddc878c825ba1b22a6c23ca4b64
+ms.openlocfilehash: 362dce90521cb5fe948735f7e8a435e5f158ed3e
+ms.sourcegitcommit: a8965ff7b05ff600e3c426a4fff5fdba8b4c8b0b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399105"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58523827"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Microsoft Teams analisi e creazione di report
 
@@ -54,7 +54,7 @@ Stiamo continuamente migliorando l'esperienza Teams creazione di report e l'aggi
 |[Teams Report pool di minuti PSTN](pstn-minute-pools-report.md) |  Paese o area geografica<br>Capability (licenza) <br>Totale minuti<br>Minuti usati<br>Minuti disponibili|
 |[Teams Report sull'utilizzo PSTN - Piani per chiamate](pstn-usage-report.md#calling-plans)|  Indicatore data e ora<br>Nome utente<br>Telefono numero<br>Tipo di chiamata <br>Chiamato a<br>A paese o area geografica <br>Chiamata da <br>Da paese o area geografica<br>Addebito<br>Valuta<br>Durata<br>Nazionale/Internazionale<br>ID chiamata<br>Tipo di numero<br>Paese o area geografica<br>ID conferenza<br>Capability (licenza)|
 |[Teams Report utilizzo PSTN - Routing diretto](pstn-usage-report.md#direct-routing)  |  Indicatore data e ora<br>Nome visualizzato<br>Indirizzo SIP<br>Telefono numero <br>Tipo di chiamata<br>Chiamato a<br>Ora di inizio<br>Ora di invito<br>Tempo di errore<br>Ora di fine<br>Durata<br>Tipo di numero<br>Bypass multimediale<br>SBC FQDN<br>Area geografica di Azure<br>Tipo di evento<br>Codice SIP finale<br>Sottocodice Microsoft finale<br>Frase SIP finale<br>ID correlazione  |
-|[Teams report sulle licenze di protezione delle informazioni - Routing diretto](information-protection-license-report.md)  | <br>Se gli utenti hanno licenze valide per inviare i messaggi tramite notifiche di modifica</br><br>Numero totale di eventi di notifica delle modifiche attivati da un utente</br><br>Quali app ascoltano gli eventi di notifica delle modifiche a livello di organizzazione</br>|
+|[Teams di licenza per la protezione delle informazioni](information-protection-license-report.md)  | <br>Se gli utenti hanno licenze valide per inviare i messaggi tramite notifiche di modifica</br><br>Numero totale di eventi di notifica delle modifiche attivati da un utente</br><br>Quali app ascoltano gli eventi di notifica delle modifiche a livello di organizzazione</br>|
 
 
 [!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
@@ -63,11 +63,11 @@ Stiamo continuamente migliorando l'esperienza Teams creazione di report e l'aggi
 
 Per rendere anonimi i dati Teams'attività degli utenti e Teams di utilizzo dei dispositivi, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nei report e nelle relative esportazioni.
 
-1. In interfaccia di amministrazione di Microsoft 365 passare alla  scheda Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
+1. In interfaccia di amministrazione di Microsoft 365, passare alla  scheda Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
 2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo in interfaccia di amministrazione di Microsoft 365 che all'Teams di amministrazione.
   
 3. Selezionare **Salva modifiche**.
 
 > [!NOTE]
-> Se si abilita questa impostazione, le informazioni verranno de-identificate Teams [report attività utente](user-activity-report.md) e Teams report [sull'utilizzo dei](device-usage-report.md) dispositivi. Non influisce sugli altri report di utilizzo disponibili nell'Teams di amministrazione.
+> Se si abilita questa impostazione, le informazioni verranno de-identificate nel [report attività](user-activity-report.md) Teams utente e Teams [report sull'utilizzo dei](device-usage-report.md) dispositivi. Non influirà sugli altri report di utilizzo disponibili nell'Teams di amministrazione.
