@@ -20,16 +20,16 @@ f1.keywords:
 ms.custom:
 - Optimization
 description: Scopri come viene classificata la qualità dello stream nel Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: 595ed77fd0fa6c2fb3a9bf778ff8b94e837314da1c83acb5a099bb0c795eabe1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a717597151f0d933a8bbea49e6e71d070b063885
+ms.sourcegitcommit: 81f1a113a33c7ea8d2256144544d0e34cd64d576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54341152"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58505424"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione dei flussi in Call Quality Dashboard (CQD)
 
-Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online consente di ottenere informazioni approfondite sulla qualità delle chiamate effettuate usando Microsoft Teams e Skype for Business servizi. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per altre informazioni su CQD e su come configurarlo, vedere [Configurare call quality dashboard](turning-on-and-using-call-quality-dashboard.md).
+Il call quality dashboard (CQD) per Microsoft Teams e Skype for Business Online consente di ottenere informazioni approfondite sulla qualità delle chiamate effettuate usando Microsoft Teams e Skype for Business servizi. Questo argomento fornisce informazioni dettagliate sulla classificazione di qualità delle trasmissione multimediali. Per altre informazioni su CQD e su come configurarlo, vedere [Configurare call quality dashboard](turning-on-and-using-call-quality-dashboard.md).
 
 ## <a name="classifier-definitions"></a>Definizioni di classificatore
 
@@ -41,11 +41,9 @@ Se vengono soddisfatte una o più delle condizioni seguenti, un flusso audio vie
 
 |Metrica|Scenario|Condizione|Spiegazione|
 |:-----|:-----|:-----|:-----|
-|Audio Degradation Avg|La descrizione del payload non è SATIN|> 1,0|Media del Mean Opinion Score di rete per la degradazione dello stream. Quantità di instabilità e perdita di rete che hanno intasato la qualità dell'audio ricevuto.|
 |Round Trip|TUTTI|> 500|Tempo medio di propagazione della rete round trip, calcolato in millisecondi. Dettagli disponibili in [RFC3550](https://tools.ietf.org/html/rfc3550).|
 |Packet Loss Rate|TUTTI|> 0,1|Percentuale media di perdita pacchetti dello stream.|
 |Jitter|TUTTI|> 30|Jitter medio dello stream in millisecondi.|
-|Ratio Concealed Samples Avg|La descrizione del payload non è SATIN|> 0,07|Rapporto medio tra il numero di frame audio con campioni nascosti generati dalla perdita di pacchetti e il numero totale di frame audio.|
 ||||
 
 ### <a name="video-classifier-due-to-freeze"></a>Video Classifier due to Freeze
@@ -109,7 +107,7 @@ Se la connettività ICE ha avuto esito positivo per uno stream _non_ classificat
   > Le dimensioni "Durata (secondi)", "Durata (minuti)", "Durata 5 secondi o meno" e "Durata 60 secondi o più" possono essere utilizzate per determinare la durata di una trasmissione. La misura "Durata chiamata media" può anche essere utilizzata per calcolare la durata media di un insieme di trasmissioni.
 
 - **Basso utilizzo dei pacchetti: come** nello scenario di "chiamata breve", è necessario un utilizzo sufficiente dei pacchetti per il calcolo delle metriche del flusso chiave. Senza queste metriche, CQD non è in grado di classificare la trasmissione.
-  - Uno scenario comune di basso utilizzo dei pacchetti si verifica quando un partecipante partecipa a una riunione per ascoltare il relatore, ma non parla mai (il microfono è disattivato per la maggior parte della chiamata). In questo caso, il flusso audio in ingresso al client ha un utilizzo elevato dei pacchetti, mentre il flusso audio in uscita dal client ha un utilizzo dei pacchetti poco o nessun valore. La durata dello stream può essere di un'ora o più, ma l'utilizzo dei pacchetti nel flusso  dal client al server è basso perché il microfono è stato disattivato e viene restituito uno stream non classificato.
+  - Uno scenario comune di utilizzo basso dei pacchetti si verifica quando un partecipante partecipa a una riunione per ascoltare il relatore, ma non parla mai (il microfono è disattivato per la maggior parte della chiamata). In questo caso, il flusso audio in ingresso al client ha un utilizzo elevato dei pacchetti, mentre il flusso audio in uscita dal client ha un utilizzo dei pacchetti poco o nessun valore. La durata dello stream può essere di un'ora o più, ma l'utilizzo dei pacchetti nel flusso  dal client al server è basso perché il microfono è stato disattivato e viene restituito uno stream non classificato.
 
   > [!TIP]
   > La dimensione "Utilizzo pacchetto" e la misura "Utilizzo medio del pacchetto" possono essere utilizzate per determinare l'attività del pacchetto di una trasmissione.

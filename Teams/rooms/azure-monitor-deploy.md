@@ -13,14 +13,14 @@ localization_priority: Normal
 ms.collection:
 - M365-collaboration
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
-description: Questo articolo illustra come distribuire la gestione dei Microsoft Teams Rooms dispositivi in modo integrato end-to-end con Monitor di Azure.
+description: Questo articolo illustra come distribuire la gestione dei Microsoft Teams Rooms dispositivi in modo integrato e end-to-end con Monitor di Azure.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 0031b94f988cb300803617ce75df2d3afebf74e1
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 84251e329645c6722125f21b4fe3cd146a1e3701
+ms.sourcegitcommit: 81f1a113a33c7ea8d2256144544d0e34cd64d576
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234241"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "58505404"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con :::no-loc text="Azure Monitor":::
 
@@ -30,7 +30,7 @@ Questo articolo illustra come configurare e distribuire la gestione integrata e 
 
 Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report dettagliati sullo stato per la disponibilità dei dispositivi, l'integrità dell'applicazione e dell'hardware e la distribuzione delle versioni delle applicazioni :::no-loc text="Microsoft Teams Rooms"::: e del sistema operativo.
 
-![Screenshot della visualizzazione Log Analytics di esempio per Microsoft Teams Rooms](../media/Deploy-Azure-Monitor-1.png "Visualizzazione di esempio di Log Analytics per Microsoft Teams Rooms")
+![Screenshot della visualizzazione Log Analytics di esempio per Microsoft Teams Rooms](../media/Deploy-Azure-Monitor-1.png "Visualizzazione di log analytics di esempio per Microsoft Teams Rooms")
 
 A un livello elevato, è necessario eseguire le attività seguenti:
 
@@ -95,7 +95,7 @@ Dopo la :::no-loc text="Microsoft Monitoring"::: distribuzione dell'agente nei d
 3.  Assicurarsi che la query restituisca i record di log che includono gli eventi generati :::no-loc text="Microsoft Teams Rooms"::: dall'app riunioni.
 
 4.  Generare un problema hardware e verificare che gli eventi necessari siano :::no-loc text="Azure Log Analytics"::: connessi.
-    1.  Scollegare uno dei dispositivi periferici nel sistema di :::no-loc text="Microsoft Teams Rooms"::: test. Potrebbe trattarsi della fotocamera, dell'vivavoce, del microfono o dello schermo della sala anteriore
+    1.  Scollegare uno dei dispositivi periferici nel sistema di :::no-loc text="Microsoft Teams Rooms"::: test. Potrebbe trattarsi della fotocamera, dell'vivavoce, del microfono o dello schermo della sala frontale
     2.  Attendere 10 minuti prima che il log eventi sia popolato in :::no-loc text="Azure Log Analytics"::: .
     3.  Usare una query per elencare gli eventi di errore hardware: `Event | where Source == "SRS-App" and EventID == 3001`
 
@@ -160,16 +160,9 @@ Dopo la raccolta dei dati e il mapping dei campi personalizzati, è possibile us
 
 > [!NOTE]
 > I passaggi precedenti di questa guida dovrebbero essere stati completati per il corretto funzionamento dei riquadri del dashboard.
-
-### <a name="create-a-microsoft-teams-rooms-dashboard-by-using-the-import-method"></a>Creare una Microsoft Teams Rooms dashboard usando il metodo di importazione
-
-È possibile importare un :::no-loc text="Microsoft Teams Rooms"::: dashboard e iniziare a monitorare rapidamente i dispositivi. Eseguire la procedura seguente per importare il dashboard:
-
-1.  Ottenere il [file SkypeRoomSystems_v2.omsview](https://go.microsoft.com/fwlink/?linkid=835675) dashboard.
-2.  Accedere al portale e [ :::no-loc text="Microsoft Azure"::: passare](https://portal.azure.com) all'area di :::no-loc text="Log Analytics"::: lavoro e selezionarla.
-3.  Aprire **Progettazione visualizzazioni**.
-4.  Selezionare **Importa** e quindi selezionare il **file SkypeRoomSystems_v2.omsview.**
-5.  Selezionare **Salva**.
+>
+> [!IMPORTANT]
+> View Designer in Azure Monitor è in ritiro il [31 agosto 2023](https://azure.microsoft.com/updates/view-designer-in-azure-monitor-is-retiring-on-31-august-2023/) e le funzionalità di creazione e clonazione sono state disabilitate il 30 novembre 2020. È invece possibile usare le cartelle di lavoro. Per altre informazioni sulla guida alla transizione di Progettazione visualizzazioni alle cartelle di lavoro, vedere Guida [introduttiva con modelli predefiniti di Progettazione visualizzazioni.](/azure/azure-monitor/visualize/view-designer-conversion-tasks#quickstart-with-preset-view-designer-templates)
 
 ### <a name="create-a-microsoft-teams-rooms-dashboard-manually"></a>Creare manualmente Microsoft Teams Rooms dashboard
 
@@ -191,7 +184,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 ### <a name="create-a-tile-that-displays-active-devices"></a>Creare un riquadro che visualizza i dispositivi attivi
 
 1.  Selezionare **Visualizza dashboard** per iniziare ad aggiungere i riquadri.
-2.  Selezionare **Elenco & numero** dalla raccolta
+2.  Selezionare **Elenco & numeri** dalla raccolta
 3.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** Stato heartbeat<br>
     **Nuovo gruppo:** Selezionato
@@ -245,7 +238,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 ### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-operating-system-versions"></a>Creare un riquadro che visualizza le :::no-loc text="Microsoft Teams Rooms"::: versioni del sistema operativo
 
-1.  Selezionare **Donut & nella** raccolta e quindi aggiungere un nuovo riquadro.
+1.  Selezionare **Donut & elenco** dalla raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** Dettagli del sistema operativo<br>
     **Nuovo gruppo:** Selezionato
@@ -269,7 +262,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 ### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-application-versions"></a>Creare un riquadro che visualizza le versioni :::no-loc text="Microsoft Teams Rooms"::: dell'applicazione
 
-1.  Selezionare **Donut & nella** raccolta e quindi aggiungere un nuovo riquadro.
+1.  Selezionare **Donut & elenco** dalla raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** :::no-loc text="Microsoft Teams Rooms"::: dettagli dell'applicazione<br>
     **Nuovo gruppo:** Selezionato
@@ -489,7 +482,7 @@ Stop-Transcript
 ```
 
 > [!NOTE]
-> È possibile fare [ :::no-loc text="Log Analytics"::: ](/azure/azure-monitor/platform/agent-manage) riferimento all'articolo Gestione e manutenzione dell'agente quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
+> È possibile fare [ :::no-loc text="Log Analytics"::: ](/azure/azure-monitor/platform/agent-manage) riferimento all'articolo Gestione e gestione dell'agente quando è necessario riconfigurare un agente, spostarlo in un'area di lavoro diversa o modificare le impostazioni del proxy dopo l'installazione iniziale.
 
 ## <a name="additional-solutions"></a>Altre soluzioni
 <a name="Solutions"> </a>
