@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2c3aff476b997bb7d032fa9a2e636aa739f36c7daf86f4516098006278f11617
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b52261b7a1474dcc62bd774da826a12f797490f6
+ms.sourcegitcommit: a8965ff7b05ff600e3c426a4fff5fdba8b4c8b0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312594"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58523857"
 ---
 # <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 
@@ -45,7 +45,7 @@ I piani di servizio che un amministratore visualizzerà nell'ambito dell'esperie
 - Gestione di dispositivi mobili per Microsoft 365 o Office 365
 - App di Office Mobile per Office 365
 - Office Online
-- PowerApps per Microsoft 365 o Office 365
+- Power Apps per Microsoft 365 o Office 365
 - SharePoint Online (Piano 1)
 - Sway
 - To-Do (Piano 1)

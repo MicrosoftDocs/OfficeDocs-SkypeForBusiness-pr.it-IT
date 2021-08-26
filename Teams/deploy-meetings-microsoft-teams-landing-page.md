@@ -20,12 +20,12 @@ search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5464e84526e466bdfaa643e912ecf90ccc252b2070fcffc810374dc6f03b52bb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e17efec2d363083ac2169623b8b561ea6fbed333
+ms.sourcegitcommit: a8965ff7b05ff600e3c426a4fff5fdba8b4c8b0b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295173"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "58523977"
 ---
 # <a name="meetings-and-conferencing-in-microsoft-teams"></a>Riunioni e conferenze in Microsoft Teams
 
@@ -99,7 +99,7 @@ Le impostazioni delle riunioni consentono di controllare se gli utenti anonimi p
 
 ### <a name="meeting-policies"></a>Criteri riunione
 
-I criteri di riunione consentono di controllare quali funzionalità sono disponibili per gli utenti quando partecipano alle riunioni di Teams. È possibile usare il criterio predefinito o creare uno o più criteri di riunione personalizzati per gli utenti dell'organizzazione che ospitano riunioni. Per altre informazioni, vedere l'[esercitazione sulle riunioni in Microsoft Teams](tutorial-meetings-in-teams.yml).
+I criteri di riunione consentono di controllare quali funzionalità sono disponibili per gli utenti quando partecipano alle riunioni di Teams. È possibile usare il criterio predefinito o creare uno o più criteri di riunione personalizzati per gli utenti dell'organizzazione che ospitano riunioni. Per altre informazioni, vedere le [Riunioni nell’esercitazione di Microsoft Teams](tutorial-meetings-in-teams.yml).
 
 | Chiedersi | Azione |
 |--------------|--------|
