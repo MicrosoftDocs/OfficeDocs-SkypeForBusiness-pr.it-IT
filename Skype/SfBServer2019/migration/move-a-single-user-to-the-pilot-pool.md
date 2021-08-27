@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: È possibile spostare un utente dal pool legacy al pool pilota di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 o Skype for Business Server 2019 Management Shell. Nell'esempio seguente, nella colonna Pool di registrazione, pool01.contoso.net è il pool legacy e tutti e sei questi utenti sono connessi a questo pool. Utilizzare le procedure seguenti per spostare un utente nel pool di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 e Skype for Business Server Management Shell.
-ms.openlocfilehash: 98fd1ce168cf5b44a85c1b0a93ee90634a84f885ced3cb3ffaaca8cee836a620
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 987eeec96d28257b995b5e27ce02e282df019980
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303390"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596160"
 ---
 # <a name="move-a-single-user-to-the-pilot-pool"></a>Spostare un singolo utente nel pool pilota
 
-È possibile spostare un utente dal pool legacy al pool pilota di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 o Skype for Business Server 2019 Management Shell. Nell'esempio seguente, nella colonna **Pool** di registrazione, **pool01.contoso.net** è il pool legacy e tutti e sei questi utenti sono connessi a questo pool. Utilizzare le procedure seguenti per spostare un utente nel pool di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 e Skype for Business Server Management Shell. 
+È possibile spostare un utente dal pool legacy al pool pilota di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 o Skype for Business Server 2019 Management Shell. Nell'esempio seguente, nella colonna Pool di **registrazione,** **pool01.contoso.net** è il pool legacy e tutti e sei questi utenti sono connessi a questo pool. Utilizzare le procedure seguenti per spostare un utente nel pool di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 e Skype for Business Server Management Shell. 
   
 ## <a name="to-move-a-user-by-using-the-skype-for-business-server-2019-control-panel"></a>Per spostare un utente tramite il Pannello di controllo Skype for Business Server 2019
   
@@ -38,7 +38,7 @@ ms.locfileid: "54303390"
     
 7. Fare clic su **Azione** e quindi su **Sposta utenti selezionati nel pool**. Fare clic su **OK**.
   
-8. Verificare che la **colonna Pool di registrazione** per l'utente contenga ora il pool Skype for Business Server 2019, che indica che l'utente è stato spostato correttamente. 
+8. Verificare che la colonna **Pool di registrazione** per l'utente contenga ora il pool Skype for Business Server 2019, che indica che l'utente è stato spostato correttamente. 
     
 ## <a name="to-move-a-user-by-using-the-skype-for-business-server-2019-management-shell"></a>Per spostare un utente tramite Skype for Business Server 2019 Management Shell
 

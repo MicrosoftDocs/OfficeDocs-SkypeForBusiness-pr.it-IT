@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6a658318-a317-4546-a44c-a9c473d8e86a
 description: Le viste disponibili soddisfano gli scenari più comuni per la restituzione di dati dal database di SQL Server QoE. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati anziché accedere direttamente alle tabelle di database. questo perché è più probabile che le visualizzazioni mantengano la compatibilità con le versioni future.
-ms.openlocfilehash: f8d6536522a04623f150ab03ba448af8c55bd401adc8e4484ac47d1cf48ccffa
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7bed72ae4fe5a9468d6ac2b18148f62fe9aa0196
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347721"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578590"
 ---
 # <a name="qoe-view-details"></a>Dettagli della visualizzazione QoE
  

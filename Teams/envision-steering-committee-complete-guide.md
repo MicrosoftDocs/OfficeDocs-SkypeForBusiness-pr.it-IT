@@ -11,17 +11,17 @@ audience: admin
 description: Identificare un gruppo direttivo di stakeholder e project leader chiave per identificare gli obiettivi di distribuzione, tenere traccia dello stato di avanzamento e rimuovere i blocchi.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: e064548e1a4879fda88d41584de9ada096a61feb18126d9d73b67a5aea928ef4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2cd8234e1ee86ffb5f14952d0aad6f9640ecf26f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284127"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624648"
 ---
 # <a name="steering-committee"></a>Comitato direttivo
 
@@ -29,7 +29,7 @@ ms.locfileid: "54284127"
 
 Un comitato direttivo è un gruppo direttivo di stakeholder e project leader chiave che sono stati riuniti per guidare un progetto o un programma verso i risultati aziendali definiti. Il comitato direttivo non è  direttamente responsabile del modo  in cui viene consegnato il progetto, ma piuttosto di ciò che il progetto fornisce all'azienda.
 
-Ogni progetto richiede una visione e una carta concordate. Per ottenere i risultati desiderati, la visione deve essere definita in modo chiaro, deve essere monitorata e mantenuta. Questo diventa responsabilità del comitato direttivo: guidare le decisioni, consigliare, fornire supervisione strategica, fungere da sostenitori dell'organizzazione per le iniziative del progetto e, se necessario, rimuovere i blocchi.
+Ogni progetto richiede una visione e una carta concordate. Per ottenere i risultati desiderati, la visione deve essere definita in modo chiaro, deve essere monitorata e mantenuta. Questo diventa responsabilità del comitato direttivo: guidare le decisioni, consigliare, fornire una supervisione strategica, fungere da sostenitori dell'organizzazione per le iniziative del progetto e, se necessario, rimuovere i blocchi.
 
 L'organizzazione dovrebbe prendere in considerazione in modo significativo la formazione del comitato direttivo. Il comitato deve assicurarsi che il progetto raggiunga gli obiettivi aziendali definiti per guidare il cambiamento in tutta l'organizzazione, incontrarsi periodicamente per discutere dell'attuale polso del progetto e contribuire a rimuovere eventuali ostacoli che si verificano durante il viaggio.
 
@@ -39,13 +39,13 @@ Il comitato dovrebbe definire la propria carta per includere alcuni obiettivi ch
 
 -   Fornire informazioni approfondite sullo stato del progetto allo sponsor esecutivo o ai dirigenti.
 
--   Consentire agli sponsor o ai dirigenti del team dirigenziale di fornire direzione e input al progetto e assicurarsi che sia allineato agli obiettivi aziendali generali, modificando i piani di progetto, i risultati chiave obiettivi (OKR) e altre attività del progetto.
+-   Consentire agli sponsor dirigenti o ai dirigenti di fornire orientamento e input al progetto e assicurarsi che sia allineato agli obiettivi aziendali generali, modificando i piani di progetto, i risultati chiave obiettivi (OKR) e altre attività del progetto.
 
 Il comitato direttivo si riunirà a intervalli ricorrenti per tutta la durata di un progetto per garantire l'allineamento tra la leadership dell'organizzazione e il team di progetto. Questa riunione critica assicura che la direzione del progetto abbia il supporto completo della leadership e incorpora nel progetto qualsiasi feedback fornito dalla leadership per guidare il successo. Il comitato usa queste riunioni per ottenere informazioni approfondite sullo stato del progetto e anche per:
 
--   Concordare i risultati aziendali che si allineano al caso aziendale e per assicurarsi che il progetto guidi verso la distribuzione di questi risultati.
+-   Concordare i risultati aziendali che si allineano al caso aziendale e per assicurarsi che il progetto sia in grado di garantire la distribuzione di questi risultati.
 
--   Verificare e approvare il progetto per l'accuratezza e la conformità al caso aziendale.
+-   Verificare e approvare il progetto per l'accuratezza e la conformità con il caso aziendale.
 
 -   Esaminare e verificare le modifiche apportate al caso aziendale che potrebbero influire sui risultati definiti.
 
@@ -79,12 +79,12 @@ Ogni comitato direttivo ha bisogno di una leadership forte e di ruoli e responsa
 
 ## <a name="schedule-steering-committee-meetings"></a>Pianificare riunioni del comitato direttivo 
 
-Anche se ogni organizzazione e ogni team di progetto sono strutturati in modi leggermente diversi, la riunione del comitato direttivo non dovrebbe mai diventare solo un'altra riunione di supporto del progetto. Prendere in considerazione gli obiettivi della riunione del comitato direttivo: è la tua opportunità per mantenere il progetto in linea con il progetto raccogliendo il supporto e la direzione dello sponsor esecutivo o della direzione. Assicurarsi che tutti partecipino a questa riunione in modo che ci siano messaggi diretti tra l'intero team di progetto e lo sponsor esecutivo o i dirigenti e che non ci siano comunicazioni erre quando il messaggio viene inoltrato.
+Anche se ogni organizzazione e ogni team di progetto è strutturato in modi leggermente diversi, la riunione del comitato direttivo non dovrebbe mai diventare solo un'altra riunione di supporto del progetto. Prendere in considerazione gli obiettivi della riunione del comitato direttivo: è l'opportunità di mantenere il progetto in linea con il progetto raccogliendo il supporto e la direzione dello sponsor esecutivo o della direzione. Assicurarsi che tutti partecipino a questa riunione in modo che ci siano messaggi diretti tra l'intero team di progetto e lo sponsor esecutivo o i dirigenti e che non ci siano comunicazioni erre quando il messaggio viene inoltrato.
 
-Quando si pianifica una riunione del comitato, prendere in considerazione il progetto e la cadenza organizzativa. Provare a pianificarlo settimanalmente o ogni due settimane, in base alle preferenze degli sponsor dirigenti e al ritmo dell'organizzazione.
+Quando si pianifica una riunione del comitato, prendere in considerazione il progetto e la cadenza dell'organizzazione. Provare a pianificarlo settimanalmente o ogni due settimane, in base alle preferenze degli sponsor dirigenti e al ritmo dell'organizzazione.
 
 > [!TIP]
-> Se il proprio è un ambiente in rapido movimento, non lasciare passare troppo tempo tra una riunione e l'altra, il che può portare a problemi che potrebbero essere stati evitati con una riunione più frequente. Tuttavia, in un ambiente con un ritmo più lento, tenere una riunione ogni settimana può comportare affaticamento delle riunioni, che potrebbe ridurre l'efficacia del comitato direttivo. Usare l'esperienza e il giudizio per determinare la cadenza appropriata e tenere sempre presente che è possibile modificare la pianificazione. Non incontrarti solo per il bene della riunione.
+> Se il proprio è un ambiente in rapido movimento, non lasciare passare troppo tempo tra una riunione e l'altra, che può portare a problemi che potrebbero essere stati evitati con una riunione più frequente. Tuttavia, in un ambiente più lento, tenere una riunione ogni settimana può comportare affaticamento delle riunioni, che potrebbe ridurre l'efficacia del comitato direttivo. Usare l'esperienza e il giudizio per determinare la cadenza appropriata e tenere sempre presente che è possibile modificare la pianificazione. Non incontrarti solo per il bene della riunione.
 
 ### <a name="prepare-for-the-meeting"></a>Preparare la riunione
 
@@ -106,7 +106,7 @@ Le risorse seguenti devono essere completate e incluse nella presentazione per l
 
     -   Call out project execution dates and high-impact activities.
 
-    -   Report sugli OKR che sono stati identificati come importanti per il comitato; assicurarsi di includere le metriche di utilizzo, valutazione degli utenti, qualità e affidabilità.
+    -   Report sugli OKR identificati come importanti per il comitato; assicurarsi di includere le metriche di utilizzo, valutazione degli utenti, qualità e affidabilità.
 
 -   Relazione sullo stato settimanale del PowerPoint del comitato direttivo
 
@@ -152,7 +152,7 @@ La riunione stessa dovrebbe essere una naturale continuazione del lavoro di prep
 
 1.  Pianificare la riunione faccia a faccia. Identificare una sala riunioni con un tavolo abbastanza grande da potersi sedersi intorno a tutti. Assicurarsi che la sala riunioni abbia funzionalità video. Anche se sarebbe ideale avere tutti nella sala, non è sempre possibile, quindi assicurati che l'invito alla riunione includa la sala riunioni e le informazioni sulla riunione online con almeno l'audio, ma idealmente audio, video e condivisione. Incoraggiare tutti i partecipanti remoti a usare il video quando aderiscono alla riunione.
 
-2.  Cercare di mantenere l'ordine del giorno, anche se non c'è dubbio che sorgeranno distrazioni che devono essere affrontate. Se possibile (a seconda della loro importanza), aggiungere questi elementi a una sezione "parcheggio" e indirizzarli in un secondo momento. Se l'argomento è troppo importante per posticipare, ottenere un accordo per continuare a discuterne, ma tenere presente che è necessario spostare altri elementi dell'agenda in riunioni future. Accetta di riservare un po' di tempo (da cinque a dieci minuti) per affrontare qualsiasi elemento urgente che ha bisogno dell'attenzione immediata del comitato.
+2.  Cercare di mantenere l'ordine del giorno, anche se non c'è dubbio che sorgeranno distrazioni che devono essere affrontate. Se possibile (a seconda della loro importanza), aggiungere questi elementi a una sezione "parcheggio" e indirizzarli in un secondo momento. Se l'argomento è troppo importante per posticipare, ottenere un accordo per continuare a discuterne, ma tenere presente che è necessario spostare altri elementi dell'agenda in riunioni future. Accetta di riservare un po' di tempo (da cinque a dieci minuti) per affrontare qualsiasi elemento urgente che necessiti dell'attenzione immediata del comitato.
 
 3.  Prepararsi a discutere di eventuali casi di supporto aperti. Prova a mantenere la discussione il più alto livello possibile per questa riunione: numero di biglietti, tipi di biglietti, principali elementi aperti. È consigliabile essere preparati ad affrontare tutti i problemi, anche se minori, comprendere l'impatto per l'azienda e gli effetti sul progetto
 
@@ -168,13 +168,13 @@ La riunione stessa dovrebbe essere una naturale continuazione del lavoro di prep
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver esaminato la panoramica del comitato direttivo, è ora il momento di agire. Il team del progetto deve iniziare il lavoro per implementare il comitato direttivo nella sequenza temporale del progetto e preparare una cadenza regolare della riunione del comitato direttivo. Idealmente, il comitato verrà formato prima dell'inizio del progetto e fornirà indicazioni in tutte le fasi, ma se non può essere così, formare il comitato per guidare il team di progetto verso un risultato positivo.
+Dopo aver esaminato la panoramica del comitato direttivo, è ora il momento di agire. Il team del progetto deve iniziare il lavoro per implementare il comitato direttivo nella sequenza temporale del progetto e preparare una cadenza regolare della riunione del comitato direttivo. Idealmente, il comitato verrà formato prima dell'inizio del progetto e fornirà indicazioni per tutte le fasi, ma se non può essere così, formare il comitato per guidare il team di progetto verso un risultato positivo.
 
 1.  Identificare i membri del comitato direttivo. Chiediti:
 
     -   Abbiamo la rappresentanza giusta dell'azienda e della leadership?
 
-    -   I membri identificati sono in grado di influenzare le loro business unit o colleghi in altre unità?
+    -   I membri identificati sono in grado di influenzare le business unit o i colleghi in altre unità?
 
 2.  Creare una comunicazione da inviare a ogni membro del comitato direttivo:
 
@@ -198,7 +198,7 @@ Dopo aver esaminato la panoramica del comitato direttivo, è ora il momento di a
 
 Il successo del comitato direttivo non avviene per fortuna. La scelta dei membri corretti, con le migliori intenzioni, può comunque produrre risultati scadenti. Per contribuire al successo del comitato direttivo, è necessario assicurarsi di avere quanto segue:
 
--   Una visione e un ambito concordati per il progetto con risultati aziendali ben definiti e misurabili che il comitato promuoverà.
+-   Una visione concordata e un ambito per il progetto con risultati aziendali ben definiti e misurabili che il comitato promuoverà.
 
 -   Un'agenda ben organizzata che guida riunioni di scopo.
 
@@ -214,12 +214,12 @@ Il successo del comitato direttivo non avviene per fortuna. La scelta dei membri
 
         -   Coinvolgere i project manager e i responsabili del team nelle discussioni e nelle deliberazioni dei comitati. Essere pronti a invitare altri membri del team di base a dare chiarezza a discussioni approfondite che potrebbero essere necessarie in aree specifiche.
 
-Nel corso del ciclo di vita della soluzione il ruolo del comitato cambierà. Mentre l'implementazione e l'onboarding si spostano nella fase del valore dell'unità, potrebbero essere necessarie diverse modifiche al comitato:
+Nel corso del ciclo di vita della soluzione il ruolo del comitato cambierà. Mentre l'implementazione e l'onboarding si spostano nella fase del valore dell'unità, possono essere necessarie diverse modifiche al comitato:
 
--   Modificare la cadenza della riunione. Esaminare la dinamica dell'organizzazione e determinare se la riunione deve essere con meno frequenza. Quando il cambiamento organizzativo inizia a diminuire la frequenza delle comunicazioni di livello superiore, è probabile che diminuisca. Esaminare la modifica della cadenza mensile o trimestrale della riunione, se appropriato
+-   Modificare la cadenza della riunione. Esaminare la dinamica dell'organizzazione e determinare se la riunione deve essere con meno frequenza. Quando il cambiamento organizzativo inizia a ridurre la frequenza delle comunicazioni di livello superiore, è probabile che diminuisca. Esaminare la modifica della cadenza mensile o trimestrale della riunione, se appropriato
 
 -   Modificare i rappresentanti nella riunione. Quando la soluzione passa alla fase del valore dell'unità, è probabile che il team di progetto di base verrà riassegnato ai nuovi progetti. Sarà necessario aggiornare il team che segnala come supporto e le operazioni diventeranno i clienti potenziali sullo stato della soluzione.
 
--   Definizione e segnalazione di okR operativi. I risultati chiave e gli indicatori di successo cambieranno nel corso del ciclo di vita della soluzione. I risultati aziendali desiderati devono continuare a essere monitorati e riportati. Continuare a segnalare la qualità e l'affidabilità della soluzione vocale nel contesto di un risultato aziendale. Metriche aggiuntive e risultati chiave, ad esempio il sentiment degli utenti, l'adozione degli utenti e le metriche di supporto diventeranno i principali indicatori di successo.
+-   Definizione e segnalazione di okR operativi. I risultati chiave e gli indicatori di successo cambieranno nel corso del ciclo di vita della soluzione. I risultati aziendali desiderati devono continuare a essere monitorati e riportati. Continuare a segnalare la qualità e l'affidabilità della soluzione vocale nel contesto di un risultato aziendale. Altre metriche e risultati chiave, ad esempio il sentiment degli utenti, l'adozione degli utenti e le metriche di supporto diventeranno i principali indicatori di successo.
 
 -   Usare un ombrello del comitato di sterzo più grande per coprire le fasi del valore dell'unità di più soluzioni. Cercare opportunità per usare in modo più efficiente il comitato direttivo. Usare il comitato per fornire indicazioni su una sfera più ampia di soluzioni.

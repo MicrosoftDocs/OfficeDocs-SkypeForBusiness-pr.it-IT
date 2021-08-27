@@ -11,24 +11,24 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali dispositivi e periferiche USB (ad esempio cuffie, vivavoci, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: a79cb575d6b55be691b0c51a127d4ba4cfafdc88
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 3512ea4dd830a3fcd8469c86061c2b1d641b96a6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234601"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624668"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
 Il programma di certificazione delle periferiche assicura che le periferiche USB (ad esempio cuffie, vivavoci, webcam e monitor) offrono una qualità audio o video elevata. I dispositivi certificati funzionano (plug & play) senza alcuna configurazione aggiuntiva e offrono il controllo delle chiamate con Microsoft Teams e Skype for Business. I prodotti offrono un'esperienza ottimale per gli utenti finali e gli amministratori.
 
-Per esplorare i dispositivi testati e certificati per Microsoft Teams, visita il [Teams Store.](https://products.office.com/microsoft-teams/across-devices/devices)
+Per esplorare i dispositivi testati e certificati per Microsoft Teams, visita il [Teams store.](https://products.office.com/microsoft-teams/across-devices/devices)
 
-Per altre informazioni sul supporto del controllo delle chiamate con Teams, vedere Controllare le chiamate con un auricolare [in Teams](https://support.office.com/article/Control-calls-using-a-headset-in-Teams-65d6e104-444d-4013-b8c2-f11317dd69a8).
+Per altre informazioni sul supporto del controllo delle chiamate Teams chiamate, vedere Controllare le chiamate con un auricolare [in Teams](https://support.office.com/article/Control-calls-using-a-headset-in-Teams-65d6e104-444d-4013-b8c2-f11317dd69a8).
 
 > [!TIP]
 > Stai cercando dispositivi certificati per Skype for Business? Vai ai dispositivi [audio e video USB certificati per](/skypeforbusiness/certification/devices-usb-devices)Skype for Business .
@@ -53,13 +53,13 @@ Sfogliare [i dispositivi certificati per Microsoft Teams](https://products.offic
 
 - Pulsante Teams e indicatore LED dedicato.
 - Notifica utente di eventi e avvisi dal client Teams (ad esempio, avvio della riunione, segreteria telefonica o chiamata persa).
-- Possibilità di attivare il client Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
+- Possibilità di attivare il Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
 - Certificazione progettata per l'estendibilità (nuove funzionalità del dispositivo/client da distribuire tramite aggiornamento firmware).
 
 ### <a name="core-certification-benefits"></a>Vantaggi principali della certificazione
 
 - Selezione automatica del dispositivo audio predefinito e definizione della priorità se sono presenti più periferiche audio.
-- I dispositivi si registrano automaticamente con Teams client e sono pronti per l'uso.
+- I dispositivi si registrano automaticamente Teams client e sono pronti per l'uso.
 - I dispositivi audio ,ad esempio cuffie e vivavoci, offrono:
   - Controllo delle chiamate di base quando viene usato con un PC o un dispositivo Mac. I controlli di base includono answer/hang-up, mute/unmute e controllo del volume.
   - Audio a banda larga senza eco, distorsione o problemi eccessivi. L'annullamento dell'eco è supportato anche su tutti i dispositivi.

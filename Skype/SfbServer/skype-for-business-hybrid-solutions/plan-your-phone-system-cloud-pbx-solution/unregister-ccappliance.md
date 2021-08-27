@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3d516e65-fb9b-4a0b-8296-969fc9eda334
 description: Il cmdlet Unregister-CcAppliance annulla la registrazione dell'appliance Skype for Business Cloud Connector Edition corrente da un sito PSTN nella configurazione tenant online.
-ms.openlocfilehash: de872082f6a025a736b871a76d41061c888acb1f401739229ba7ad670a0c19ce
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c48a7b53d757dab446a8939a3e3203d8e66fccab
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344545"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603655"
 ---
 # <a name="unregister-ccappliance"></a>Unregister-CcAppliance
  
@@ -49,7 +49,7 @@ Unregister-CcAppliance -Local
 
 ### <a name="example-3"></a>Esempio 3
 
-Nell'esempio seguente viene annullata la registrazione dell'appliance corrente con nome "Appliance1" al sito PSTN "Site1":
+Nell'esempio seguente viene annullata la registrazione dell'appliance corrente con il nome "Appliance1" al sito PSTN "Site1":
   
 ```powershell
 Unregister-CcAppliance -SiteName Site1 -ApplianceName Appliance1
@@ -58,7 +58,7 @@ Unregister-CcAppliance -SiteName Site1 -ApplianceName Appliance1
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Analogamente al cmdlet Register-CcAppliance, SiteName combinato con l'FQDN esterno del server perimetrale nel file CloudConnector.ini viene considerato un'identità del sito PSTN. Analogamente, ApplianceName combinato con il nome di dominio completo di Mediation Server nel file CloudConnector.ini viene considerato un'identità dell'appliance.
+Analogamente al cmdlet Register-CcAppliance, SiteName combinato con l'FQDN esterno del server perimetrale nel file CloudConnector.ini viene considerato un'identità del sito PSTN. Analogamente, ApplianceName combinato con il nome di dominio completo di Mediation Server nel file CloudConnector.ini è considerato un'identità dell'appliance.
   
 Dopo l'annullamento della registrazione dell'appliance, riavviare il servizio di gestione del connettore cloud e accedere come account NetworkService.
   
@@ -67,7 +67,7 @@ Dopo l'annullamento della registrazione dell'appliance, riavviare il servizio di
 
 |**Parametro**|**Obbligatorio**|**Tipo**|**Descrizione**|
 |:-----|:-----|:-----|:-----|
-| SiteName <br/> |Facoltativo  <br/> |System.String  <br/> |Nome del sito PSTN in cui è registrato il dispositivo. Il valore predefinito è SiteName in CloudConnector.ini file.  <br/> |
+| SiteName <br/> |Facoltativo  <br/> |System.String  <br/> |Nome del sito PSTN in cui è registrato il dispositivo. Il valore predefinito è SiteName nel file CloudConnector.ini.  <br/> |
 |ApplianceName  <br/> |Facoltativo  <br/> |System.String  <br/> |Nome dell'appliance corrente. Il valore predefinito è il nome computer del server host.  <br/> |
 |Locale  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Controllare la configurazione per la registrazione in locale senza connettersi a una configurazione tenant online.  <br/> |
    

@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: È possibile spostare più utenti dal pool legacy al pool pilota di Skype for Business Server 2019 utilizzando il Pannello di controllo di Skype for Business Server 2019 o Skype for Business Server 2019 Management Shell.
-ms.openlocfilehash: 689886060f14a47e82865a2ed66bfc3ff495dfdc3b1f44e6c5674294b4d21eb9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 50525ce139cb324d71ebcdce54ef96463dc933b5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300652"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624578"
 ---
 # <a name="move-multiple-users-to-the-pilot-pool"></a>Spostare più utenti nel pool pilota
 
@@ -75,7 +75,7 @@ ms.locfileid: "54300652"
     
      ![Output del cmdlet PowerShell Get-UsUser -Identity](../media/Migration_LyncServer_from_LyncServer2010_showuser.jpg)
   
-## <a name="to-move-all-users-at-the-same-time-by-using-the-skype-for-business-server-2019-management-shell"></a>Per spostare tutti gli utenti contemporaneamente utilizzando Skype for Business Server 2019 Management Shell
+## <a name="to-move-all-users-at-the-same-time-by-using-the-skype-for-business-server-2019-management-shell"></a>Per spostare tutti gli utenti contemporaneamente tramite Skype for Business Server 2019 Management Shell
 <a name="sectionSection2"> </a>
 
 In questo esempio, tutti gli utenti sono stati restituiti al pool legacy (pool01.contoso.net). Utilizzando Skype for Business Server 2019 Management Shell, tutti gli utenti verranno spostati contemporaneamente nel pool di Skype for Business Server 2019 (pool02.contoso.net).

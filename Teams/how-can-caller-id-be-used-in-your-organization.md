@@ -15,27 +15,27 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.callerid.overview
 description: L'ID chiamante può essere controllato sia per le chiamate in ingresso che per quelle in uscita per gli utenti di Sistema telefonico utilizzando un criterio denominato CallingLineIdentity.
-ms.openlocfilehash: ddd01d899597a96b5085c92ac9e20681b0a5c92b18ca342008b499e44892743a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 97070be995d56451a7b6b1969c8d3751ebaaffe5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54293823"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624608"
 ---
 # <a name="how-can-caller-id-be-used-in-your-organization"></a>Come usare l'ID chiamante nella tua organizzazione
 
 L'ID chiamante è costituito da due informazioni identificabili dall'utente:
 
-- Un numero di telefono (in genere definito CLID o ID della linea telefonica). Si tratta del numero pstn (Public Switched Telephone Number) presentato come identificativo del chiamante.
+- Un numero di telefono (in genere definito CLID o ID linea telefonica). Si tratta del numero pstn (Public Switched Telephone Number) presentato come identificativo del chiamante.
 
-- Nome di una parte chiamante(in genere denominata CNAM). 
+- Nome di una parte chiamante(in genere denominato CNAM). 
   
 La funzionalità ID chiamante è disponibile per tutti Sistema telefonico utenti indipendentemente dall'opzione di connettività PSTN:
 
@@ -86,11 +86,11 @@ Tenere presente quanto segue:
 
 - L'uso della sostituzione del numero di telefono dell'account della risorsa funziona solo per Teams utenti. La sostituzione del numero di telefono del servizio funziona sia per Skype for Business online che per Teams utenti.
 
-- Il nome della parte chiamante viene inviato solo sulle chiamate in cui l'ID chiamante viene sostituito con LineUri, un numero di telefono dell'account di servizio o della risorsa e quando il chiamante è un Teams utente.
+- Il nome della parte chiamante viene inviato solo nelle chiamate in cui l'ID chiamante viene sostituito con LineUri, un numero di telefono dell'account di servizio o della risorsa e quando il chiamante è un Teams utente.
 
 - Nome parte chiamante può contenere un massimo di 200 caratteri, ma i sistemi a valle potrebbero supportare un numero inferiore di caratteri.
 
-- Per l'instradamento diretto, la sostituzione del numero di telefono e il nome della parte chiamante vengono inviati nell'intestazione SIP FROM. Se il corrispondente OnlinePstnGateway è configurato con ForwardPai = True, l'intestazione SIP P-ASSERTED-IDENTITY conterrà l'utente chiamante reale.
+- Per l'instradamento diretto, la sostituzione del numero di telefono e il nome della parte chiamante vengono inviati nell'intestazione SIP FROM. Se onlinePstnGateway corrispondente è configurato con ForwardPai = True, l'intestazione SIP P-ASSERTED-IDENTITY conterrà l'utente chiamante reale.
 
 - EnableUserOverride ha la precedenza sulle altre impostazioni del criterio, a meno che la sostituzione non sia impostata su Anonimo. Si supponga, ad esempio, che l'istanza dei criteri abbia la sostituzione con un account di risorsa e che EnableUserOverride sia impostato e abilitato dall'utente. In questo caso, l'ID chiamante in uscita verrà bloccato e verrà usato Anonimo. Se un'istanza dei criteri ha la sostituzione impostata su Anonimo e EnableUserOverride è impostato, l'ID chiamante in uscita sarà sempre Anonimo, indipendentemente dall'impostazione dell'utente finale.
 

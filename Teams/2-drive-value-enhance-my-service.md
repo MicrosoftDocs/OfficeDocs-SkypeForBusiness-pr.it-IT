@@ -1,5 +1,5 @@
 ---
-title: Migliorare il servizio Microsoft Teams assistenza
+title: Migliorare il servizio Microsoft Teams servizio
 author: rmw2890
 ms.author: Rowille
 manager: serdars
@@ -12,18 +12,18 @@ audience: admin
 description: Valutare regolarmente le opportunità per migliorare il servizio Teams, monitorare la roadmap Teams per ottenere miglioramenti interessanti delle funzionalità.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aa5102934cdeadf6b2418ab437bc0be28764307cda075139bfc6435c9d61948e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8c74a59336dea5aa91ffd3b9b04206943df95bc4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54278244"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578540"
 ---
 # <a name="enhance-my-service"></a>Migliorare il servizio
 

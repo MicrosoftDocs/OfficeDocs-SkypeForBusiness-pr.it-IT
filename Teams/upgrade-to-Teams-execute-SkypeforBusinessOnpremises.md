@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: landerl
 description: Informazioni su come eseguire la transizione dell'organizzazione a Microsoft Teams da una distribuzione Skype for Business locale.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 1bf5529cf37ca3217c5af0411a1d12f0e752c583cb869273f9ba5b068d5633da
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 690595338cbf8f6f2689a6bd4d75842b00afaf28
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54298996"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582126"
 ---
 # <a name="upgrade-from-a-skype-for-business-on-premises-deployment-to-teams"></a>Eseguire l'aggiornamento da Skype for Business distribuzione locale a Teams
 
@@ -41,7 +41,7 @@ Questo articolo fa parte della fase di distribuzione e implementazione del perco
 - [Preparare l'organizzazione](./upgrade-prepare-organization.md)
 - [Ha condotto un progetto pilota](./pilot-essentials.md)
 
-Seguire le indicazioni di questo articolo se è stato distribuito Skype for Business o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a Microsoft Teams in modo selettivo, usando più modalità di coesistenza o all-in. 
+Seguire le istruzioni di questo articolo se è stato distribuito Skype for Business o Microsoft Lync locale e l'organizzazione vuole eseguire l'aggiornamento a Microsoft Teams in modo selettivo, usando più modalità di coesistenza o all-in. 
 
 > [!IMPORTANT]
 > [!INCLUDE [upgrade-disclaimer](includes/upgrade-disclaimer.md)]
@@ -64,8 +64,8 @@ Per ulteriori informazioni, vedere:
 
 ## <a name="phone-system-and-teams-upgrade"></a>Sistema telefonico e Teams aggiornamento
 
-La transizione dai sistemi telefonici locali a Teams consente di sfruttare Sistema telefonico Direct Routing ("Direct Routing") o i Piani per le chiamate forniti da Microsoft per Microsoft 365 o Office 365.
+La transizione dai sistemi telefonici locali a Teams consente di sfruttare Sistema telefonico Direct Routing ("Direct Routing") o i Piani per chiamate forniti da Microsoft per Microsoft 365 o Office 365.
 
-Se non si usa Piani per chiamate, è necessario eseguire la transizione della distribuzione voIP aziendale a Sistema telefonico Routing diretto nell'ambito dell'aggiornamento a Teams.
+Se non si usa Piani per chiamate, è necessario eseguire la transizione della distribuzione voIP aziendale a Sistema telefonico Direct Routing nell'ambito dell'aggiornamento a Teams.
 
-Per altre informazioni, vedere [considerazioni aggiuntive per Sistema telefonico routing diretto](./direct-routing-landing-page.md). Se stai pianificando di usare Piani per chiamate, consulta le nostre indicazioni per trasferire i tuoi numeri di telefono a [Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+Per altre informazioni, vedere [considerazioni aggiuntive per Sistema telefonico routing diretto.](./direct-routing-landing-page.md) Se hai intenzione di usare Piani per chiamate, consulta le nostre indicazioni per trasferire i tuoi numeri di telefono a [Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md).

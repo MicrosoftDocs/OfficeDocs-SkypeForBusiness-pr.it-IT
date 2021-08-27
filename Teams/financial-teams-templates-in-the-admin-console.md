@@ -9,9 +9,9 @@ ms.service: msteams
 ms.reviewer: phecda louie
 ms.collection:
 - M365-collaboration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare i modelli Teams per creare strutture del team progettate per le esigenze finanziarie, fornendo impostazioni predefinite, canali e app preinstallato tramite l'interfaccia di amministrazione.
+description: Informazioni su come usare i modelli Teams per creare strutture del team progettate per le esigenze finanziarie fornendo impostazioni, canali e app preinstallato predefinite tramite l'interfaccia di amministrazione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 749fa9a3a4264f5e4231082dcf097151377fff069bf5b123afa6b1abc5ba017b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 291c9e28dec5f779c8a23888b28d78c79919f1f0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349468"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603435"
 ---
 # <a name="use-financial-team-templates-in-the-admin-center"></a>Usare i modelli di team finanziario nell'interfaccia di amministrazione
 

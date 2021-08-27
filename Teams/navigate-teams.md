@@ -9,16 +9,16 @@ audience: admin
 ms.reviewer: ''
 description: Questo articolo descrive come spostarsi tra le Teams.
 f1.keywords: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: ''
 ms.collection: ''
 ms.custom: ''
-ms.openlocfilehash: 7790714434dfa3fb6de6bf5808ec7f8f3097a50fdd79c540e0ef7ee70fc0861b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9b8b3c057ae5748f135d9085a5a3caf8b26e7f72
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350558"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617222"
 ---
 # <a name="navigate-microsoft-teams"></a>Spostarsi Microsoft Teams
 
@@ -26,7 +26,7 @@ Ora che si ha una chiara comprensione del percorso e delle esigenze specifiche d
 
 ## <a name="getting-started"></a>Guida introduttiva
 
-Iniziare a spostarti da Kaizala a Teams è più facile che mai con la nostra guida introduttiva. Per altre informazioni sull'avvio del percorso Microsoft Teams, vedere Guida [introduttiva Teams](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams&ui=en-us&rs=en-us&ad=us).
+Iniziare a spostarsi da Kaizala a Teams è più facile che mai con la nostra guida introduttiva. Per altre informazioni sull'avvio del Microsoft Teams, vedere Guida [introduttiva a Teams.](https://support.microsoft.com/office/start-and-pin-chats-a864b052-5e4b-4ccf-b046-2e26f40e21b5?wt.mc_id=otc_microsoft_teams&ui=en-us&rs=en-us&ad=us)
 
 ## <a name="starting-new-chats-11-audio-and-video-calls"></a>Avvio di nuove chat, chiamate audio e videochiamate 1:1
 
@@ -48,7 +48,7 @@ Creare e inviare messaggi destinati a più team o a un numero elevato di dipende
 
 Usare la Teams fotocamera intelligente per acquisire e condividere un'immagine con annotazioni con il team. Condividi facilmente la tua posizione con precisione per tenere il tuo team al corrente. È necessario avere altre informazioni per comunicare come vengono mappate Kaizala caratteristiche di Teams. Sicuramente abbiamo il maggior numero di informazioni dalla presentazione che possiamo nel documento.
 
-[Usare il modello di](/microsoftteams/platform/samples/app-templates#staff-check-ins) app Verifica personale per consentire al personale in prima linea di fornire facilmente informazioni e aggiornamenti di stato critici per il tempo, sia pianificati che ad hoc, direttamente da Teams. L'app supporta la posizione in tempo reale, le foto, le note, le notifiche dei promemoria e i flussi di lavoro automatizzati.
+[Usare il modello di](/microsoftteams/platform/samples/app-templates#staff-check-ins) app Verifica personale per consentire al personale in prima linea di fornire facilmente informazioni critiche e aggiornamenti di stato su base pianificata o ad hoc direttamente da Teams. L'app supporta la posizione in tempo reale, le foto, le note, le notifiche dei promemoria e i flussi di lavoro automatizzati.
 
 ### <a name="training"></a>Formazione
 
@@ -58,7 +58,7 @@ Usare Teams per semplificare la formazione per l'organizzazione. È possibile se
 
 ### <a name="it-professionals"></a>Professionisti IT
 
-Eseguire la transizione amministrativa dal portale di Kaizala Management all'Microsoft Teams di amministrazione. L Teams di amministrazione è principalmente per l'uso dei ruoli di amministratore.
+Eseguire la transizione amministrativa dal portale di Kaizala management all'Microsoft Teams di amministrazione. L Teams di amministrazione è principalmente per l'uso dei ruoli di amministratore.
 
 Gli amministratori possono gestire l'intero Teams di lavoro oppure possono avere autorizzazioni delegate per la risoluzione dei problemi di qualità delle chiamate o per la gestione delle esigenze di telefonia dell'organizzazione.
 
@@ -66,15 +66,15 @@ Per esplorare l'interfaccia di amministrazione, [visitare Microsoft Teams di amm
 
 È possibile monitorare la sicurezza e la conformità dell'organizzazione in [](/microsoft-365/compliance/microsoft-365-compliance-center) Microsoft 365 con il Centro conformità e il Centro sicurezza Microsoft 365 [sicurezza.](/microsoft-365/security/defender/overview-security-center)
 
-Proteggi la tua azienda e consenti agli utenti di [accedere all'Azure Active Directory](https://aad.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/c7736064-7b28-4f3d-b366-2740a8d48020) di amministrazione, dove puoi rivedere gruppi, identità, licenze e accesso in Microsoft 365.
+Proteggi la tua azienda e consenti agli utenti di accedere [all'Azure Active Directory](https://aad.portal.azure.com/#@microsoft.onmicrosoft.com/dashboard/private/c7736064-7b28-4f3d-b366-2740a8d48020) di amministrazione di Azure Active Directory, dove puoi rivedere gruppi, identità, licenze e accesso in Microsoft 365.
 
 ### <a name="end-users"></a>Utenti finali
 
-Gli utenti possono creare team tramite l'app desktop o per dispositivi mobili. Per aggiungere utenti in blocco al team: è consigliabile creare un team tramite gruppi Office 365, Office 365 di distribuzione o gruppi di sicurezza.
+Gli utenti possono creare team tramite l'app desktop o per dispositivi mobili. Per aggiungere utenti in blocco al team, è consigliabile creare un team Office 365 gruppi, Office 365 di distribuzione o gruppi di sicurezza.
 
 Cercare chiunque nell'organizzazione tramite la barra di ricerca nei team. È anche possibile usare i risultati della barra di ricerca per visualizzare file, messaggi e post.
 
-È possibile usufruire di analisi avanzate con l'aiuto di sondaggi, [sondaggi](https://www.office.com/launch/forms?auth=2)ed [elenchi](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) di controllo con report predefiniti e dati scaricabili. I processi possono essere assegnati anche con l'aiuto [di Attività](https://support.microsoft.com/office/manage-tasks-in-planner-ee61ecb0-a0bb-4c39-8682-f47fe7674f05) in Planner.
+È possibile usufruire di analisi avanzate con [](https://support.microsoft.com/office/get-started-with-lists-in-teams-c971e46b-b36c-491b-9c35-efeddd0297db) l'aiuto di sondaggi, [sondaggi](https://www.office.com/launch/forms?auth=2)ed elenchi di controllo con report predefiniti e dati scaricabili. I processi possono essere assegnati anche con l'aiuto [di Attività](https://support.microsoft.com/office/manage-tasks-in-planner-ee61ecb0-a0bb-4c39-8682-f47fe7674f05) in Planner.
 
 Per abilitare [le estensioni](/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions) all'interno di un team, usare l'opzione Connettori del menu (...) per qualsiasi canale per cui è necessario il connettore.
 
@@ -82,7 +82,7 @@ Per visualizzare i report sull'utilizzo, le attività e l'adozione generale, i p
 
 ## <a name="kaizala-group-dissolution"></a>Kaizala Dissoluzione del gruppo
 
-Durante la transizione a Teams canali e chat, è consigliabile Kaizala dissoluzione del gruppo per assicurarsi che l'organizzazione abbia un'unica posizione centrale per la comunicazione.  Se si elimina Kaizala gruppo, il gruppo viene rimosso dall'elenco Chat. Se si è l'unico amministratore del gruppo, sarà necessario assegnare il ruolo di amministratore ad almeno una persona del gruppo prima di eliminarla.
+Durante la transizione a Teams canali e chat, è consigliabile Kaizala dissoluzione del gruppo per assicurarsi che l'organizzazione abbia un'unica posizione centrale per la comunicazione.  Se si elimina Kaizala gruppo, il gruppo viene rimosso dall'elenco Chat. Se si è l'unico amministratore del gruppo, è necessario assegnare il ruolo di amministratore ad almeno una persona del gruppo prima di eliminarla.
 
 Per eliminare un gruppo:
 

@@ -14,18 +14,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Polonia per Microsoft Teams.
-ms.openlocfilehash: fcfcc032e32a62d8e982c0ee37d93636b063960b
-ms.sourcegitcommit: 7251b92c9913ca1e43b3cc24fad73e8997303731
+ms.openlocfilehash: fe109eb7823ca969bb4bf1fdf73d837f68ac4d7d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58348478"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617282"
 ---
 # <a name="phone-number-management-for-poland"></a>Telefono gestione dei numeri per la Polonia
 

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d18ed85a-673d-4695-aa3f-ac83a38ab90a
 description: 'Riepilogo: informazioni sui contatori delle prestazioni che è possibile utilizzare per monitorare i server che eseguono UCWA (Unified Communications Web API) e il Skype for Business Server Mcx Mobility Service.'
-ms.openlocfilehash: 83097ed6e1503fafa8b82815ef36a3411fa09f8af1c8f83470d9e8ee02ae6b88
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4ea7ba3f7c4d9685fe01c64157324a64f823c5bc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286785"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578780"
 ---
 # <a name="mobility-performance-counters-in-skype-for-business-server"></a>Contatori delle prestazioni per dispositivi mobili in Skype for Business Server
  
@@ -54,7 +54,7 @@ Il nome della categoria per i contatori nella tabella Mcx Mobility Service è **
 |Tempo medio di avvio applicazione (ms)  <br/> |Tempo medio di avvio dell'applicazione in millisecondi  <br/> |
 |Durata media per sessione (ms)  <br/> |Durata media di una sessione in millisecondi  <br/> |
 |Errori di join MCU dati  <br/> |Numero di errori di join MCU dati  <br/> |
-|Exchange Latenza ricerca contatti (ms)  <br/> |Questo contatore indica il tempo medio, in millisecondi, per la ricerca del contatto in Exchange  <br/> |
+|Exchange Latenza ricerca contatti (ms)  <br/> |Questo contatore indica il tempo medio in millisecondi per la ricerca del contatto in Exchange  <br/> |
 |Exchange Latenza get foto HD (ms)  <br/> |Questo contatore indica il tempo medio in millisecondi per recuperare una foto da Exchange  <br/> |
 |Risposte HTTP 4xx/secondo  <br/> |Frequenza al secondo di risposte con codice HTTP 4xx  <br/> |
 |Risposte HTTP 5xx/secondo  <br/> |Frequenza al secondo di risposte con codice HTTP 5xx  <br/> |
@@ -62,7 +62,7 @@ Il nome della categoria per i contatori nella tabella Mcx Mobility Service è **
 |Numero di errori di get di foto di Active Directory  <br/> |Numero totale di errori durante il recupero delle foto da Active Directory  <br/> |
 |Numero di errori di ricerca contatti  <br/> |Numero totale di errori di ricerca dei contatti in Exchange  <br/> |
 |Numero di errori di deserializzazione  <br/> |Numero totale di errori di deserializzazione  <br/> |
-|Numero di errori di hd photo get  <br/> |Numero totale di errori nel recupero delle foto HD da Exchange  <br/> |
+|Numero di errori di hd photo get  <br/> |Numero totale di errori durante il recupero delle foto HD da Exchange  <br/> |
 |Oltre il numero massimo di sottoscrizioni per applicazione  <br/> |Numero di richieste di sottoscrizione oltre il numero massimo consentito per ogni applicazione  <br/> |
 |Oltre il numero massimo di sottoscrizioni per batch  <br/> |Numero di richieste di sottoscrizione oltre il numero massimo consentito per batch  <br/> |
 |Errori sottoscrizione presenza  <br/> |Numero di errori durante la sottoscrizione della presenza  <br/> |
@@ -85,7 +85,7 @@ Il nome della categoria per i contatori nella tabella Mcx Mobility Service è **
 |**Contatore**|**Descrizione**|
 |:-----|:-----|
 |Durata media di una sessione in millisecondi  <br/> |Durata media di una sessione in millisecondi  <br/> |
-|Sottoscrizioni alle notifiche Push correnti  <br/> |Numero corrente di sottoscrizioni di notifica push. Questo numero, in combinazione con Conteggio sessioni attualmente attive, rappresenta il sottoinsieme di sessioni attualmente attive registrate per Windows Dispositivi mobili o iPhone dispositivi mobili.  <br/> |
+|Sottoscrizioni alle notifiche Push correnti  <br/> |Numero corrente di sottoscrizioni di notifica push. Questo numero, in combinazione con Conteggio sessioni attualmente attive, rappresenta il sottoinsieme di sessioni attualmente attive registrate per Windows dispositivi mobili o iPhone mobili.  <br/> |
 |Conteggio polling timeout rete attualmente attivo  <br/> |Il numero di polling di rete che si sono timeout  <br/> |
 |Conteggio polling attualmente attivo  <br/> |Numero di polling attualmente attivi (connessioni di lunga durata al server)  <br/> |
 |Conteggio sessioni attualmente attive  <br/> |Numero corrente di endpoint registrati nel servizio per dispositivi mobili  <br/> |
@@ -98,7 +98,7 @@ Il nome della categoria per i contatori nella tabella Mcx Mobility Service è **
 |Richieste ricevute/secondo  <br/> |Frequenza al secondo di richieste ricevute  <br/> |
 |Richieste rifiutate al secondo  <br/> |Frequenza al secondo di richieste rifiutate  <br/> |
 |Richieste riuscite/secondo  <br/> |Frequenza al secondo di richieste riuscite  <br/> |
-|Richieste di sessione di avvio riuscite al secondo  <br/> |Frequenza al secondo di richieste Get Location riuscite. Le richieste di avvio di una sessione utilizzano la maggior parte della CPU nel server. Il carico supportato di picco è 12/secondo. La sustainability dipende da altri carichi nel server. Avviare una sessione in genere significa un accesso per un utente che è stato disconnesso per un lungo periodo di tempo.  <br/> |
+|Richieste di sessione al secondo avviate con esito positivo  <br/> |Frequenza al secondo di richieste Get Location riuscite. Le richieste di avvio di una sessione utilizzano la maggior parte della CPU nel server. Il carico supportato di picco è 12/secondo. La sustainability dipende da altri carichi sul server. Avviare una sessione in genere significa un accesso per un utente che è stato disconnesso per un lungo periodo di tempo.  <br/> |
 |Totale chiamate vocali in ingresso rifiutate  <br/> |Numero totale di chiamate vocali in ingresso rifiutate  <br/> |
 |Totale chiamate vocali in ingresso non riuscite  <br/> |Numero totale di chiamate vocali in ingresso non riuscite  <br/> |
 |Totale chiamate vocali in uscita non riuscite  <br/> |Numero totale di chiamate vocali in uscita non riuscite  <br/> |

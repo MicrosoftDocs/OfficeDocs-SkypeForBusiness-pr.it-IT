@@ -1,5 +1,5 @@
 ---
-title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server utilizzare le informazioni sul sito e sull'area geografica
+title: Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per l'utilizzo di informazioni su siti e aree
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -9,30 +9,30 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 0a21cdf1-f350-49da-b346-70806f256bea
-description: Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 38fa42374b4b5dd8c8f304de04c9beeb59f2635d955b2e9ee5afb1fb16de7789
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: d90393c19dffaac425025379258a0ceae24da9cf
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322338"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588988"
 ---
-# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server utilizzare le informazioni sul sito e sull'area geografica
+# <a name="configure-media-bypass-global-settings-in-skype-for-business-server-to-use-site-and-region-information"></a>Configurare le impostazioni globali di bypass multimediale in Skype for Business Server per l'utilizzo di informazioni su siti e aree
  
-Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche Skype for Business Server VoIP aziendale. 
+Configurare il bypass multimediale da utilizzare solo per determinati siti e aree geografiche in Skype for Business Server VoIP aziendale. 
   
  Se si utilizza la procedura descritta in questo argomento per configurare le impostazioni globali per il bypass multimediale, si presuppone che non sia disponibile una buona connettività tra tutti gli endpoint Skype for Business e qualsiasi peer per cui è stato configurato il bypass multimediale nella connessione trunk.
   
 > [!NOTE]
 > Le informazioni relative alle aree di rete e ai siti di rete vengono condivise tra le caratteristiche di VoIP aziendale avanzate del controllo di ammissione di chiamata e del bypass multimediale, quando entrambi sono abilitati. Se il controllo di ammissione di chiamata è già configurato, non sarà pertanto necessario eseguire la procedura seguente per modificare le informazioni sui siti e sulle aree in modo specifico per il bypass multimediale. Eseguire questa procedura se le aree e i siti di rete non sono stati ancora configurati per il controllo di ammissione di chiamata e si desidera modificare le impostazioni per il bypass multimediale. 
   
-Per il corretto funzionamento del bypass multimediale, è necessario che sia presente una coerenza tra un sito come definito in Generatore di topologie e quello definito quando si configurano aree di rete e siti di rete. Se ad esempio si dispone di un sito di succursale definito in Generatore di topologie come se fosse distribuito solo un gateway PSTN, tale sito di succursale deve essere configurato con un criterio di VoIP aziendale che consenta agli utenti dei siti di succursale di instradare le proprie chiamate PSTN attraverso il gateway PSTN nel sito di succursale.
+Per il corretto funzionamento del bypass multimediale, è necessario che sia presente una coerenza tra un sito come definito in Generatore di topologie e quello definito quando si configurano aree di rete e siti di rete. Se ad esempio si dispone di un sito di succursale definito in Generatore di topologie come se fosse distribuito solo un gateway PSTN, tale sito di succursale deve essere configurato con un criterio di VoIP aziendale che consenta agli utenti dei siti di succursale di instradare le chiamate PSTN attraverso il gateway PSTN nel sito di succursale.
   
 ### <a name="to-configure-site-and-region-information-for-media-bypass"></a>Per configurare le informazioni relative ai siti e alle aree per il bypass multimediale
 

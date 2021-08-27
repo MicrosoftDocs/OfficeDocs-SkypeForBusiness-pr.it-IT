@@ -9,7 +9,7 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - Ent_O365_Hybrid_Top
@@ -17,12 +17,12 @@ ms.collection:
 - IT_Skype4B_Hybrid
 ms.assetid: 2979802e-fc6b-4555-bc43-7cd48f6a1d88
 description: 'Riepilogo: informazioni sui passaggi da eseguire per configurare Riunione Skype Broadcast per la distribuzione ibrida Skype for Business Server locale.'
-ms.openlocfilehash: 6cab2ed4fbb5cb2992b970d5a960bbc0ad2e10af2184588aa6c938e9811d2a50
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 92e09820d5c2634041ac91a84e97c90dec243a93
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304488"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596030"
 ---
 # <a name="configure-your-on-premises-deployment-for-skype-meeting-broadcast"></a>Configurare la distribuzione locale per Riunione Skype Broadcast
  
@@ -55,7 +55,7 @@ Per abilitare la federazione con Skype for Business online, è necessario config
 |**Servizio Access Edge (FQDN):** <br/> |sipfed.resources.lync.com  <br/> |
 |**Livello di verifica predefinito** <br/> |Consenti agli utenti di comunicare con tutti gli utenti che usano questo provider.  <br/> |
    
-È inoltre possibile abilitare la federazione con Skype for Business online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
+È inoltre possibile abilitare la federazione con Skype for Business Online eseguendo il cmdlet seguente in Skype for Business Server Management Shell:
   
 ```powershell
 New-CsHostingProvider -Identity LyncOnlineResources -ProxyFqdn sipfed.resources.lync.com -VerificationLevel AlwaysVerifiable -Enabled $True -EnabledSharedAddressSpace $True -HostsOCSUsers $True -IsLocal $False

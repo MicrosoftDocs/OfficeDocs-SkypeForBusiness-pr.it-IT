@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Se il server di archiviazione e il Monitoring Server sono stati distribuiti nell'ambiente legacy, è possibile distribuire questi server nell'ambiente Skype for Business Server 2019 dopo aver eseguito la migrazione dei pool Front End. Se tuttavia le funzionalità di archiviazione e monitoraggio sono fondamentali per l'organizzazione, è consigliabile aggiungere l'archiviazione e il monitoraggio al pool pilota di Skype for Business Server 2019 prima di eseguire la migrazione in modo che la funzionalità sia disponibile durante il processo di migrazione.
-ms.openlocfilehash: b1f497019d2043a7ea43c1134af615ae4db6183cd3d16593bfab6e835fa4db32
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a5b839a1eb7d460a57d6adf36901c50479f203ad
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303550"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596170"
 ---
 # <a name="migrating-archiving-and-monitoring-servers"></a>Migrazione di server di archiviazione e Monitoring Server
 
@@ -28,7 +28,7 @@ Se si desidera usufruire delle funzionalità di archiviazione e monitoraggio dur
     
 - La versione legacy del server di archiviazione e del Monitoring Server può essere associata solo a un pool Front End legacy. In Skype for Business Server 2019, Archiviazione e monitoraggio non sono più ruoli del server, ma servizi integrati nel pool front-end Skype for Business Server 2019.
     
-- Durante la coesistenza delle distribuzioni legacy e Skype for Business Server 2019, la versione legacy di Server di archiviazione e Monitoring Server raccoglie i dati per gli utenti ospitati in pool legacy. L'archiviazione e il monitoraggio Skype for Business Server 2019 raccolgono i dati per gli utenti ospitati Skype for Business Server pool 2019.
+- Durante il periodo di coesistenza delle distribuzioni legacy e Skype for Business Server 2019, la versione legacy del server di archiviazione e monitoring server raccoglie i dati per gli utenti ospitati in pool legacy. L'archiviazione e il monitoraggio Skype for Business Server 2019 raccolgono i dati per gli utenti ospitati Skype for Business Server pool 2019.
     
     > [!NOTE]
     > Durante la fase di migrazione quando si utilizza ancora il server perimetrale legacy con il nuovo pool pilota di Skype for Business Server 2019, la versione legacy del server di archiviazione continua a raccogliere i dati per gli utenti ospitati nei pool legacy e l'archiviazione in Skype for Business Server 2019 raccoglie i dati per gli utenti ospitati nei pool di Skype for Business Server 2019. 

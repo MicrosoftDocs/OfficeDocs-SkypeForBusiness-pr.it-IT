@@ -10,18 +10,18 @@ ms.reviewer: dstrome
 description: Informazioni sulle funzionalità che coinvolgono Microsoft Teams e le diverse configurazioni di Exchange, ad esempio la creazione e l'aggiunta di team, la creazione di canali e altro ancora.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 167c6534fbb8cade9c45b0d4d44441c3a385fd19
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 01335cce21a4550158f3c87da12c8a23166a39de
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235391"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624808"
 ---
 # <a name="how-exchange-and-microsoft-teams-interact"></a>Interazione tra Exchange e Microsoft Teams
 
@@ -68,7 +68,7 @@ La tabella seguente costituisce un riferimento utile e rapido sulla disponibilit
 
 <sup>8</sup> È necessario soddisfare i requisiti elencati nella sezione [Requisiti per creare e visualizzare riunioni per le cassette postali ospitate in locale](#requirements-to-create-and-view-meetings-for-mailboxes-hosted-on-premises).
 
-<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere [Cercare Teams dati della chat per gli utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
+<sup>9</sup> È necessario almeno una licenza Exchange Online piano 1. Per altre informazioni, vedere [Cercare Teams di chat per gli utenti locali.](/microsoft-365/compliance/search-cloud-based-mailboxes-for-on-premises-users)
 
 <sup>10</sup> Gli utenti locali possono usare Teams per aggiornare l'immagine del profilo anche se il Outlook sul criterio cassetta postale `SetPhotoEnabled` Web è impostato su `false` .
 
@@ -110,7 +110,7 @@ Se le cassette postali sono ospitate in locale, per creare e visualizzare riunio
 
 Per abilitare la delega del calendario per questi utenti:
 
-- È anche necessario completare i passaggi come descritto in [Configurare l'integrazione e OAuth tra Skype for Business Online e Exchange Server;](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises) questi passaggi forniranno all'Teams di pianificazione le autorizzazioni necessarie per confermare le autorizzazioni per i delegati.
+- È anche necessario completare i passaggi come descritto in [Configurare l'integrazione e OAuth tra Skype for Business Online e Exchange Server;](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises) questi passaggi forniranno all'Teams di pianificazione le autorizzazioni necessarie per confermare le autorizzazioni delegato.
  
   > [!NOTE]
   > Il passaggio 2 include l'assegnazione del ruolo ArchiveApplication, che non è obbligatorio per la delega.

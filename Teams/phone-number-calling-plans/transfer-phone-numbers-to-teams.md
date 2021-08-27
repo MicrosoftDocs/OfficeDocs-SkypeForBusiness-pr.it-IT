@@ -15,16 +15,16 @@ ms.collection:
 - m365initiative-voice
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata di porting per trasferire il numero di telefono dal provider di servizi corrente a Microsoft Teams.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bb098a13b157a7f95e93ab693ad2a83530571316689803069c696eccfede3929
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3d39c580c2eb17c9555c2cb6ad335a19c48f6677
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54336016"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617212"
 ---
 # <a name="transfer-phone-numbers-to-microsoft-teams"></a>Trasferire i numeri di telefono Microsoft Teams
 
@@ -40,7 +40,7 @@ Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un 
 > [!NOTE]
 > **Attualmente, è possibile usare questa procedura guidata per ottenere** i numeri di telefono per Regno Unito, Stati Uniti e Canada. Per ottenere numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md) Per ottenere il modulo necessario per inviare manualmente un ordine di trasferimento, selezionare il proprio paese o area geografica nell'elenco a discesa in Gestire i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Numeri**  >  **Telefono vocali**. Fare **clic su** Numeri e quindi su **Porta** per avviare la procedura guidata di porting.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Numeri**  >  **Telefono vocali**. Fare **clic su** Numeri e quindi su **Porta** per avviare la procedura guidata di porting.
 2. Esaminare le informazioni nella **pagina Introduzione** e quindi, quando si è pronti, fare clic su **Avanti.**
 3. Nella pagina **Selezione località e tipo di numero** specificare quanto segue e quindi fare clic su **Avanti:**
 
@@ -77,7 +77,7 @@ Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un 
     1. Fare **clic su Scarica il modello** per scaricare la loa per il proprio paese o area geografica. 
     2. Stampare il file LOA.
     3. Impostare la firma LOA da parte della persona autorizzata a apportare modifiche all'account.
-    4. Analizzare la firma LOA e quindi fare clic Upload **una lettera** di autorizzazione firmata per caricarla.
+    4. Analizzare il file LOA firmato e quindi fare clic Upload **una lettera** di autorizzazione firmata per caricarla.
 
     > [!NOTE]
     > Dopo aver caricato il tuo LOA, invia l'ordine. Il caricamento della loa non è sufficiente. Devi anche inviare l'ordine per poterlo elaborare.
@@ -87,7 +87,7 @@ Prima di iniziare, è consigliabile esaminare le informazioni in [Che cos'è un 
 
 ## <a name="what-happens-next"></a>Cosa succede dopo?
 
-Quando riceviamo il tuo ordine di trasferimento, riceverai un messaggio di posta elettronica che verifica la tua richiesta. La richiesta viene controllata e aggiornata quotidianamente e si verrà informati dello stato e dello stato dell'utente tramite posta elettronica. Se la richiesta di portabilità viene rifiutata dal gestore in perdita, contattare il [service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
+Quando riceviamo l'ordine di trasferimento, riceverai un messaggio di posta elettronica che verifica la tua richiesta. La richiesta viene controllata e aggiornata quotidianamente e si verrà informati dello stato e dello stato dell'utente tramite posta elettronica. Se la richiesta di portabilità viene rifiutata dal gestore in perdita, contattare il [service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
 
 Per visualizzare lo stato dell'ordine di trasferimento, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare > **Ordini** di trasferimento vocale e quindi fare clic su Cronologia  >   **ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato. Per altre informazioni, vedere Qual è lo stato [degli ordini di trasferimento?](port-order-status.md)
 

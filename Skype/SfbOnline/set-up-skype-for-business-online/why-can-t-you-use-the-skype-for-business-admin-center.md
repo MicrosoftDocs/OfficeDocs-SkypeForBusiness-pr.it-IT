@@ -13,20 +13,20 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
 ms.custom:
 - Setup
 - ms.lync.lac.TenantInMigration
-description: "Informazioni su cosa è possibile e non si può usare nell'interfaccia di amministrazione di Skype for Business e su altre funzionalità durante la migrazione del servizio a un altro data center Microsoft. "
-ms.openlocfilehash: f00f349a42ddea2de1019d206cc2097f1e7b29eaca78e5e0e19c1996f3782f43
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Informazioni su cosa è possibile e non si può usare nell'interfaccia di amministrazione Skype for Business e su altre funzionalità durante la migrazione del servizio a un altro data center Microsoft. "
+ms.openlocfilehash: e131e3c1013b496a6e3ad8581832c628ee2057ce
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300422"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581960"
 ---
 # <a name="why-cant-i-use-the-skype-for-business-online-admin-center-right-now"></a>Perché non è possibile usare l'interfaccia di amministrazione di Skype for Business Online in questo momento?
 
@@ -58,7 +58,7 @@ Questo significa che stiamo spostando tutti gli utenti e le impostazioni dei ser
   
 ## <a name="what-skype-for-business-online-features-will-still-work"></a>Quali Skype for Business funzionalità online saranno ancora disponibili?
 
-Anche se non sarà possibile accedere all'interfaccia di amministrazione di Skype for Business Online, le funzionalità di Skype for Business Online seguenti funzionano ancora durante la migrazione:
+Anche se non sarà possibile accedere all'interfaccia di amministrazione di Skype for Business Online, le caratteristiche di Skype for Business Online seguenti funzionano ancora durante la migrazione:
   
 - Riunioni online
     
@@ -66,7 +66,7 @@ Anche se non sarà possibile accedere all'interfaccia di amministrazione di Skyp
     
 ## <a name="can-i-get-other-work-done"></a>È possibile eseguire altre operazioni?
 
-Certo. Durante la migrazione del servizio Skype for Business Online, è comunque possibile usare le altre interfaccia di amministrazione in Microsoft 365, ad esempio le Microsoft 365 e le Exchange di amministrazione. Tuttavia, insieme all'interfaccia di amministrazione di Skype for Business Online, non sarà possibile usare i cmdlet remoti di PowerShell di Skype for Business Online durante la migrazione. 
+Certo. Durante la migrazione del servizio Skype for Business Online, è comunque possibile usare le altre centri di amministrazione in Microsoft 365, ad esempio le Microsoft 365 e le Exchange di amministrazione. Tuttavia, insieme all'interfaccia di amministrazione di Skype for Business Online, non sarà possibile usare i cmdlet remoti di PowerShell di Skype for Business Online durante la migrazione. 
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

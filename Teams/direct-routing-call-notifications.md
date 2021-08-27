@@ -17,31 +17,31 @@ f1.keywords:
 description: Notifica di chiamata instradamento diretto
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
-ms.openlocfilehash: 8326a9eb1f7a6ad9fb13c622c4f03d0f9af40af8
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.localizationpriority: medium
+ms.openlocfilehash: 27e06a45cef49f2291fdf75a8375026b9a930953
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58233041"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617412"
 ---
 # <a name="manage-call-notifications"></a>Gestire le notifiche di chiamata
 
-Questo articolo descrive come gestire le notifiche di chiamata per gli utenti. È possibile configurare gli endpoint di chiamata sia per Teams che per un PBX (Private Branch Exchange) o SBC (Session Border Controller) di terze parti.  Questa configurazione è utile, ad esempio, se si vuole inviare una chiamata ai telefoni cellulari e da tavolo di un utente contemporaneamente.   
+Questo articolo descrive come gestire le notifiche di chiamata per gli utenti. È possibile configurare gli endpoint di chiamata sia Teams che a un PBX (Private Branch Exchange) o SBC (Session Border Controller) di terze parti.  Questa configurazione è utile, ad esempio, se si vuole inviare una chiamata ai telefoni cellulari e da tavolo di un utente contemporaneamente.   
 
 Nel diagramma seguente l'utente Irena ha due endpoint:
 
 - Un endpoint Teams
 - Un telefono SIP connesso a un SBC di terze parti
 
-Quando arriva una chiamata, la SBC forizza la chiamata tra Sistema telefonico Direct Routing e SBC di terze parti.
+Quando arriva una chiamata, la SBC la forierà tra Sistema telefonico Direct Routing e SBC di terze parti.
 
 
 ![Diagramma che mostra gli endpoint Teams forked](media/direct-routing-call-notification-1.png)
 
 Se la chiamata viene accettata su Fork 2 (da parte di SBC di terze parti), Teams genererà una notifica "Chiamata persa".  
 
-È possibile impedire la notifica "Chiamata persa" configurando SBC in modo che invii un messaggio Annulla al fork 1 nel modo seguente:
+È possibile impedire la notifica "Chiamata persa" configurando SBC in modo che invii un messaggio Annulla al fork 1 come indicato di seguito:
 
 MOTIVO: SIP; causa=200;testo"Chiamata completata altrove" 
 

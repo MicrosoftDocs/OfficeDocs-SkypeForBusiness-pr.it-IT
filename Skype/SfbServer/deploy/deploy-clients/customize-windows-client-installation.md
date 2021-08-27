@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5c1a85f1-5ebb-48fb-acb7-3bf46decbf80
 description: 'Riepilogo: panoramica dei metodi e degli strumenti di installazione per Skype for Business.'
-ms.openlocfilehash: 9679dbf9b5673cc1393f62ba55bcafaeb6423c9d23df6a21d31d57d52017292a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 710d040bbdb29f91e76ef276595464c2cfccc876
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312084"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581810"
 ---
 # <a name="customize-windows-client-installation-in-skype-for-business-server"></a>Personalizzare Windows'installazione client in Skype for Business Server
  
@@ -32,7 +32,7 @@ Enterprise amministratori possono personalizzare l'installazione basata su Windo
     
 - [Utilizzare Config.xml per eseguire attività di](use-config-xml-to-perform-installation-tasks.md) installazione in Skype for Business Server specificare il percorso del punto di installazione di rete ed eseguire l'installazione invisibile all'utente.
     
-- [Utilizzare le opzioni della riga di comando del programma](use-setup-command-line-options.md) di Skype for Business Server per specificare il file Config.xml da utilizzare durante l'installazione.
+- [Utilizzare le opzioni della riga di](use-setup-command-line-options.md) comando del programma di Skype for Business Server per specificare il file Config.xml da utilizzare durante l'installazione.
     
 - [Configurare i criteri di avvio automatico dei client Skype for Business Server](configure-client-bootstrapping-policies.md) utilizzando lo snap-in MMC Editor oggetti Criteri di gruppo.
     

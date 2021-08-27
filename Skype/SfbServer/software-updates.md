@@ -10,19 +10,19 @@ ms.topic: overview
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: Trovare e gestire gli aggiornamenti per Skype for Business Server o Lync 2013. Utilizzare i collegamenti per ottenere ulteriori informazioni e quindi scaricare gli aggiornamenti.
-ms.openlocfilehash: 7358bf9c35ca516de84ca81ab91564946e13a754d6816c8e6378ccb9cf85d3c0
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2da27f65f9468c164e706da05692919017ce5ea9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279852"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578550"
 ---
 # <a name="skype-for-business-downloads-and-updates"></a>Download e aggiornamenti per Skype for Business
 
-La _Skype for Business web download e aggiornamenti_ che una volta era in Technet è stata ritirata. Il contenuto è stato riorganizzato in pagine client e server. Seguire questi collegamenti al contenuto necessario:
+La _Skype for Business web download e aggiornamenti_ disponibile una volta su Technet è stata ritirata. Il contenuto è stato riorganizzato in pagine client e server. Seguire questi collegamenti al contenuto necessario:
 
 - [Aggiornamenti per Skype for Business client che](sfb-client-updates.md) contengono le sezioni:
     - [Skype for Business client 2016](sfb-client-updates.md#skype-for-business-2016-client-updates)
@@ -31,7 +31,7 @@ La _Skype for Business web download e aggiornamenti_ che una volta era in Techne
     - [Aggiornamenti del client Lync 2013](sfb-client-updates.md)
         - [Aggiornamenti di Lync Telefono Edition](sfb-client-updates.md#lync-phone-edition-updates)
         - [Client Lync Telefono Edition nell'Area download](sfb-client-updates.md#lync-phone-edition-clients-on-download-center)
-        - [Lync Basic 2013 Trial Software](sfb-client-updates.md)
+        - [Software di valutazione di Lync Basic 2013](sfb-client-updates.md)
     - [Aggiornamenti del client Lync per Mac 2011](sfb-client-updates.md#lync-for-mac-2011-client-updates)
     - [Aggiornamenti client Lync 2010](sfb-client-updates.md#lync-2010-client-updates)
         - [Aggiornamenti di Lync 2010 Attendant](sfb-client-updates.md#lync-2010-attendant-updates)
