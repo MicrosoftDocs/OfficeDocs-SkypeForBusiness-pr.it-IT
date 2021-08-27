@@ -1,5 +1,5 @@
 ---
-title: Inviare messaggi di benvenuto agli utenti con accesso in Skype for Business Server
+title: Inviare messaggi di benvenuto agli utenti con accesso Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -9,17 +9,17 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5507827b-6f8d-4ea4-94e6-1cf72c1d38eb
 description: 'Riepilogo: informazioni su come accogliere gli utenti alle conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 1b585d4e0ff05bdb1faca0aa9c8b0863dd26f10f7d06bb1140211a2f1663e6b3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4304952bbede0f35183a80f789783bbfc4a8cfbd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54313194"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578800"
 ---
-# <a name="send-welcome-email-to-dial-in-users-in-skype-for-business-server"></a>Inviare messaggi di benvenuto agli utenti con accesso in Skype for Business Server
+# <a name="send-welcome-email-to-dial-in-users-in-skype-for-business-server"></a>Inviare messaggi di benvenuto agli utenti con accesso Skype for Business Server
  
 **Riepilogo:** Informazioni su come accogliere gli utenti alle conferenze telefoniche con accesso esterno in Skype for Business Server.
   
@@ -37,7 +37,7 @@ Lo script **Set-CsPinSendCAWelcomeMail** consente di impostare il PIN e inviare 
 
 1. Accedere come membro del gruppo RTCUniversalServerAdmins.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Eseguire il comando seguente al prompt:
     
@@ -65,7 +65,7 @@ Set-CsPinSendCAWelcomeMail -UserUri "bob@contoso.com"
 -From "marco@contoso.com"
 ```
 
-L'esempio seguente forza un nuovo PIN con il valore "383042650" per Bob, anche se Bob aveva un PIN esistente, e quindi invia un messaggio di benvenuto da Marco a Bob. Poiché il parametro Credential è specificato, all'utente che esegue il comando viene richiesto di immettere una password. Il messaggio di posta elettronica viene inviato utilizzando SSL (Secure Sockets Layer):
+L'esempio seguente forza un nuovo PIN con il valore "383042650" per Bob, anche se Bob aveva un PIN esistente, e quindi invia un messaggio di posta elettronica di benvenuto da Marco a Bob. Poiché il parametro Credential è specificato, all'utente che esegue il comando viene richiesto di immettere una password. Il messaggio di posta elettronica viene inviato utilizzando SSL (Secure Sockets Layer):
   
 ```PowerShell
 Set-CsPinSendCAWelcomeMail -UserUri "bob@contoso.com"

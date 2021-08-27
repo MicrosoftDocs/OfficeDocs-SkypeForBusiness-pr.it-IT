@@ -9,19 +9,19 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni sulla privacy specifiche relative al trasferimento di dati o informazioni tra corrieri e Microsoft, in particolare in relazione Connessione con operatore.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5849ccb07217766e39052376b5b0cb67500f56e91db7b034ca62e0a605954ffa
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 851d04b3e0d24af7a31b820c812046c55fad21f1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324825"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582190"
 ---
 # <a name="data-transfers-between-carriers-and-microsoft-for-operator-connect"></a>Trasferimenti di dati tra corrieri e Microsoft per Connessione con operatore
 
@@ -35,6 +35,6 @@ Microsoft fornirà i record dei dettagli delle chiamate e i dati qualitativi a o
 
 ## <a name="call-duration-data"></a>Dati sulla durata delle chiamate
 
-Ogni gestore fornirà a Microsoft, tramite un'API, la durata delle chiamate effettuate dai clienti usando Microsoft Teams. Microsoft userà questi record per fornire ai clienti informazioni sull'utilizzo e per garantire che i record siano coerenti con quello del gestore. Microsoft archivierà ed elaverà questi record in conformità alle leggi e alle normative vigenti, nonché all'Informativa sulla privacy Microsoft.
+Ogni gestore fornirà a Microsoft, tramite un'API, la durata delle chiamate effettuate dai clienti tramite Microsoft Teams. Microsoft userà questi record per fornire ai clienti informazioni sull'utilizzo e per garantire che i record siano coerenti con quello del gestore. Microsoft archivierà ed elaverà questi record in conformità alle leggi e alle normative vigenti, nonché all'Informativa sulla privacy Microsoft.
 
 Per altre informazioni: [Acquistare, configurare e abilitare](career-coach.md) Assistente alla carriera per Microsoft Teams

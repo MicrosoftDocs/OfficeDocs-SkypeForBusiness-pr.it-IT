@@ -14,15 +14,15 @@ appliesto:
 - Microsoft Teams
 f1.keywords: ''
 ms.custom: ''
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare e gestire i Teams dei criteri per l'organizzazione governativa.
-ms.openlocfilehash: d9c229e9795a9e93caed37832baf0b03ef58c47305f41d2961420eea485bc608
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come usare e gestire i pacchetti Teams criteri per l'organizzazione governativa.
+ms.openlocfilehash: 4f796a2fc3c7e359f311f2a709f058e172f8f454
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316992"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582170"
 ---
 # <a name="teams-policy-packages-for-government"></a>Teams di criteri per enti pubblici
 

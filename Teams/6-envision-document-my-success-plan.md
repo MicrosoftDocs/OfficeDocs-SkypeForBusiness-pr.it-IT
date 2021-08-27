@@ -12,18 +12,18 @@ ms.reviewer: rowille
 description: Scegliere un modello di distribuzione, sviluppare una matrice RACI (responsible-accountable-consulted-informed), creare piani di esecuzione e governance.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 847c5d1017739a403c064b26b106c88164f79e68800fdc772f99ccfaaa9b6432
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b891db54d7202eb24df969e3d510a4cc5d7c8be3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314322"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624818"
 ---
 # <a name="document-my-success-plan"></a>Documentare il piano di successo
 
@@ -31,7 +31,7 @@ Questo articolo offre una panoramica dei requisiti per documentare correttamente
 
 ## <a name="execution-planning"></a>Pianificazione dell'esecuzione 
 
-Dopo aver definito come implementare la soluzione audioconferenza o Sistema telefonico con piano per chiamate nell'organizzazione, è necessario pianificare l'esecuzione del progetto di implementazione.
+Dopo aver definito la modalità di implementazione della soluzione audioconferenza o Sistema telefonico con piano chiamate nell'organizzazione, è necessario pianificare l'esecuzione del progetto di implementazione.
 
 Se l'organizzazione ha solo uno o due siti, potrebbe non essere necessario completare tutti i dettagli forniti in questo articolo, ma è consigliabile leggerlo per guidare l'approccio.
 
@@ -58,7 +58,7 @@ I modelli di distribuzione potenziali includono quanto segue:
 
 Per avere chiarezza su chi è responsabile del progetto, usare una matrice di assegnazione delle responsabilità (nota anche come matrice RACI, responsabile, responsabile, consultata e informata). Elencare la persona o il gruppo responsabile e responsabile di ogni attività, insieme agli stakeholder da consultare nel processo decisionale e agli stakeholder per essere informati di ogni decisione e azione durante l'esecuzione del progetto.
 
-Di seguito è riportato un esempio di matrice RACI per un'implementazione di cloud voice.
+Di seguito è riportato un esempio di matrice RACI per un'implementazione cloud voice.
 
 | Attività/ruolo                                         | Project Cliente potenziale | Cliente potenziale/architetto della collaborazione | Consulente | Change Management/Adoption Specialist | Rappresentanti delle business unit |
 |-------------------------------------------------------|--------------|------------------------------|------------|---------------------------------------|-------------------------------|
@@ -82,11 +82,11 @@ Di seguito è riportato un esempio di matrice RACI per un'implementazione di clo
 
 Per eseguire la distribuzione vocale nel cloud in blocchi di lavoro gestibili, è consigliabile creare un piano di esecuzione trimestrale in base ai risultati obiettivi, al modello di distribuzione scelto e alla capacità di esecuzione del progetto dell'organizzazione.
 
-In questo modo è possibile tenere traccia dello stato di avanzamento su base trimestrale, rivedere il piano, se necessario, e distribuire funzionalità vocali cloud in base alla capacità di esecuzione dell'organizzazione.
+In questo modo è possibile tenere traccia dello stato di avanzamento su base trimestrale, rivedere il piano se necessario e distribuire funzionalità vocali cloud in base alla capacità di esecuzione dell'organizzazione.
 
 Se l'organizzazione ha solo uno o due siti, potrebbe non essere necessario un piano di esecuzione trimestrale perché si prevede di essere completamente distribuiti in un breve periodo di tempo.
 
-Di seguito è riportato un esempio di piano di esecuzione trimestrale per la fase envision di un'implementazione vocale cloud.
+Di seguito è riportato un esempio di piano di esecuzione trimestrale per la fase Divisione di un'implementazione vocale cloud.
 
 | Sito/divisione                            | Numero di dipendenti | Audioconferenza | Sistema telefonico                    | Trimestre da eseguire |
 |------------------------------------------|---------------------|--------------------|---------------------------------|--------------------|
@@ -155,7 +155,7 @@ I casi d'uso aziendali, l'elenco di stakeholder, OKR e KPI, i registri dei risch
 
 ### <a name="service-readiness"></a>Prontezza del servizio
 
-La valutazione dell'ambiente fornisce le informazioni iniziali necessarie per determinare la preparazione tecnica dell'organizzazione per l'implementazione di audioconferenze e/o Sistema telefonico piano chiamate.
+La valutazione dell'ambiente fornisce le informazioni iniziali necessarie per determinare la preparazione tecnica dell'organizzazione all'implementazione delle audioconferenze e/o Sistema telefonico piano per chiamate.
 
 Qui è inclusa la valutazione della conformità del servizio e il piano per affrontare le aree che devono essere corretti individuate tramite la valutazione dell'ambiente.
 
@@ -169,9 +169,9 @@ Documentare come è stata pianificata l'esecuzione del progetto per implementare
 
 ### <a name="adoption-plan"></a>Piano di adozione
 
-Dopo aver eseguito la valutazione della conformità all'adozione, il team di progetto deve creare un set completo di piani di comunicazione, un piano di formazione e piani per le attività di adozione prima del lancio, del lancio e del post-lancio.
+Dopo aver eseguito la valutazione della conformità all'adozione, il team di progetto deve creare un set completo di piani di comunicazione, un piano di formazione e piani per le attività di adozione pre-lancio, lancio e post-lancio.
 
-Identificare le risorse per supportare le attività di adozione, ad esempio volantini, messaggi di posta elettronica di benvenuto e materiali di formazione, oltre alle personalizzazioni necessarie per soddisfare i requisiti dell'organizzazione.
+Identificare le risorse per supportare le attività di adozione, ad esempio volantini, messaggi di posta elettronica di benvenuto e materiali di formazione, oltre a tutte le personalizzazioni necessarie per soddisfare i requisiti dell'organizzazione.
 
 Scaricare i modelli per le attività di adozione [dal Microsoft Teams Customer Success Kit](https://aka.ms/TeamsCustomerSuccess).
 

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c21e8861-bb75-45e8-8485-38daa3b8121c
 description: "Riepilogo: informazioni su come configurare l'opzione di partecipazione alle riunioni senza PIN in Skype for Business Server."
-ms.openlocfilehash: b6e31c3befbabacac26595ea0cd73d8ca575816013d30f17ae4b2ea785934f28
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5e11a727e42ce4d65e21d3e001404a421fc52541
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320208"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617892"
 ---
 # <a name="configure-pin-less-meeting-join-in-skype-for-business-server"></a>Configurare la partecipazione alle riunioni senza PIN in Skype for Business Server
  
@@ -41,7 +41,7 @@ Quando si configura questa funzionalità, tenere presente quanto segue:
     
   - **Chiunque (senza restrizioni) con chiamanti ottiene direttamente** (questa è l'impostazione predefinita).
     
-- Se configurato per abilitare l'aggiunta senza PIN, il servizio CAA richiede comunque un PIN di leader. Gli utenti possono partecipare alla riunione indipendentemente dal fatto che sia stato immesso o meno un PIN. Tuttavia, mantenendo la possibilità di immettere un PIN di leader, un chiamante esterno può autenticarsi come leader e gestire la riunione, se necessario.
+- Se configurato per abilitare l'aggiunta senza PIN, il servizio CAA richiede comunque un PIN leader. Gli utenti possono partecipare alla riunione indipendentemente dal fatto che sia stato immesso o meno un PIN. Tuttavia, mantenendo la possibilità di immettere un PIN di leader, un chiamante esterno può autenticarsi come leader e gestire la riunione, se necessario.
     
 ## <a name="configure-pin-less-meeting-join"></a>Configurare la partecipazione alle riunioni senza PIN
 
@@ -57,7 +57,7 @@ Ad esempio, il comando seguente abilita la partecipazione alle riunioni senza PI
 Set-CsDialInConferencingConfiguration -Identity site:Redmond -AllowAnonymousPstnActivation $True
 ```
 
-Per motivi di sicurezza, quando la partecipazione alle riunioni senza PIN è attivata, è consigliabile impedire agli utenti anonimi di effettuare chiamate in uscita verificando che ConferencingPolicy sia impostato come segue:
+Per motivi di sicurezza, quando l'accesso alle riunioni senza PIN è attivato, è possibile limitare la composizione degli utenti anonimi assicurandosi che ConferencingPolicy sia impostato come segue:
   
 ```PowerShell
 Set-CsConferencingPolicy [-Identity <XdsIdentity>] -AllowAnonymousUsersToDialOut $False

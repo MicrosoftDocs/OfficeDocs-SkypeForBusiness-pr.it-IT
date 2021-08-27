@@ -12,18 +12,18 @@ ms.reviewer: rowille
 description: Offrire e mantenere una distribuzione di alta qualità pianificando i ruoli operativi e assegnando un campione di qualità.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e3335d47917dcb14536c4edd19c3cbbe54bd24f1b9f0b6fb0e735d7e6c325e7c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: df7d051f6ea140ab74532904994ea3ed5914d066
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54329361"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624868"
 ---
 # <a name="plan-my-service-management"></a>Pianificare la gestione dei servizi
 
@@ -31,12 +31,12 @@ Questo articolo offre una panoramica dei requisiti necessari per offrire e mante
 
 ## <a name="service-management-for-teams"></a>Gestione dei servizi per Teams
 
-La gestione dei servizi è un argomento generale che illustra le operazioni quotidiane del servizio Microsoft Teams dopo che è stato distribuito e abilitato per gli utenti. Il Teams include Microsoft 365 o Office 365 e i componenti dell'infrastruttura distribuiti in locale, ad esempio la rete.
+La gestione dei servizi è un argomento generale che illustra le operazioni quotidiane del servizio Microsoft Teams dopo che è stato distribuito e abilitato per gli utenti. Il servizio Teams include Microsoft 365 o Office 365 e i componenti dell'infrastruttura distribuiti in locale, ad esempio la rete.
 
-La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la maggior parte delle organizzazioni. Probabilmente sono già stati implementati processi e attività associati ai servizi esistenti. Detto questo, è probabile che sia possibile aumentare ciò che si ha in essere quando si pianifica oggi la gestione dei servizi per supportare Microsoft Teams in futuro.
+La nozione di gestione dei servizi non è probabilmente un nuovo concetto per la maggior parte delle organizzazioni. È probabile che siano già stati implementati processi e attività associati a servizi esistenti. Detto questo, è probabile che sia possibile aumentare le risorse in essere quando si pianifica oggi la gestione dei servizi per supportare Microsoft Teams in futuro.
 
-La gestione dei servizi include tutte le attività e i processi coinvolti nella gestione dei Microsoft Teams end-to-end. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura di cui fa parte il servizio Microsoft 365 o Office 365 stesso, sono responsabilità di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti di Teams, della rete e degli endpoint che forniscono.
-Per una discussione completa sulla responsabilità del cliente per la gestione dei servizi di Teams e su come è correlata ai componenti chiave che sono alla base della qualità dell'esperienza utente, vedere Pianificare la gestione e la qualità dei [servizi.](./prepare-network.md)
+La gestione dei servizi include tutte le attività e i processi coinvolti nella gestione dei Microsoft Teams end-to-end. Alcuni componenti della gestione dei servizi, ovvero i componenti dell'infrastruttura di cui fa parte il servizio Microsoft 365 o Office 365 stesso, sono responsabilità di Microsoft, mentre il cliente è responsabile per gli utenti di gestire i vari aspetti di Teams, della rete e degli endpoint forniti.
+Per una discussione completa sulla responsabilità del cliente per la gestione dei servizi Teams e su come è correlata ai componenti chiave che sono alla base della qualità dell'esperienza utente, vedere Pianificare la gestione dei servizi e la [qualità.](./prepare-network.md)
 
 ![Diagramma dei tre componenti della qualità](media/plan-my-service-management-image1.png "Diagramma dei tre componenti di qualità, Microsoft 365 o Office 365 servizio, rete ed endpoint, e il modo in cui la gestione dei servizi si sovrappone a tutti e tre.")
 
@@ -44,7 +44,7 @@ Per una discussione completa sulla responsabilità del cliente per la gestione d
 
 ## <a name="introduction-to-the-operations-guide"></a>Introduzione alla Guida operativa 
 
-**Quali**, **Who** e **Quali** sono le tre domande importanti a cui è necessario rispondere quando si tratta di gestione dei servizi.
+**Quali**, **Who** e **Come** sono tre domande importanti a cui è necessario rispondere quando si tratta di gestione dei servizi.
 
 È possibile usare la [Guida operativa per](./1-drive-value-operate-my-service.md) risolvere tutte e tre queste domande. La guida fornisce un elenco delle attività da eseguire quotidianamente, settimanalmente, mensilmente e in base alle esigenze. Queste attività e attività sono fondamentali per mantenere una distribuzione di qualità Teams alta qualità. Determinare chi sarà responsabile dell'esecuzione di attività specifiche nella gestione dei servizi è un aspetto fondamentale della pianificazione che è necessario eseguire all'inizio della fase di Envision per garantire una distribuzione corretta. Dopo aver compreso le attività e le attività, è necessario comprenderle e seguirle con i gruppi o gli utenti assegnati. La Guida operativa fornisce informazioni e indicazioni su come eseguire ognuna delle attività e/o riferimenti a contenuto esterno.
 
@@ -109,7 +109,7 @@ Valutando e correggere continuamente le aree descritte in questo documento, è p
 
 -   Subnet o dispositivi di rete problematici
 
-Le indicazioni fornite nella Guida alla revisione dell'esperienza qualitativa sono incentrate sull'uso di Call Quality Dashboard (CQD) Online come strumento principale per segnalare e analizzare ogni area descritta, concentrando l'attenzione sull'audio per massimizzare l'adozione e l'impatto. Tutte le ottimizzazioni apportate alla rete per migliorare l'esperienza audio si tradurranno anche direttamente in miglioramenti nella condivisione di video e desktop.
+Le indicazioni fornite nella Guida alla revisione dell'esperienza qualitativa sono incentrate sull'uso di Call Quality Dashboard (CQD) Online come strumento principale per segnalare e analizzare ogni area descritta, con particolare attenzione all'audio per massimizzare l'adozione e l'impatto. Tutte le ottimizzazioni apportate alla rete per migliorare l'esperienza audio si tradurranno anche direttamente in miglioramenti nella condivisione di video e desktop.
 
 È consigliabile nominare il campione di qualità in anticipo. Dopo essere stati nominati, dovrebbero iniziare a familiarizzare con il contenuto della Guida alla revisione dell'esperienza [qualitativa.](./quality-of-experience-review-guide.md)
 

@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - PowerShell
-description: Usare il cmdlet Get-CsOnlineUser in Windows PowerShell per ottenere informazioni sugli utenti di Skype for Business online dell'organizzazione.
-ms.openlocfilehash: 59259a498cdfd08a56d62526631fb3b7b6d38e4a7e03841e939abf5985484f3f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Usare il cmdlet Get-CsOnlineUser in Windows PowerShell per ottenere informazioni sugli utenti Skype for Business online dell'organizzazione.
+ms.openlocfilehash: 5dc6a138b9d948c0ca85112a8032fb4bed6354d4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579390"
 ---
 # <a name="manage-user-accounts"></a>Gestione degli account utente
 
@@ -43,7 +43,7 @@ Questo argomento contiene le sezioni seguenti:
 - [Restituire un elenco filtrato di utenti in Skype for Business Online](manage-user-accounts.md#BKMKReturnFilteredListofUsers)
 
 > [!NOTE]
-> Il cmdlet **Set-CsUser** è incluso anche nel set di cmdlet disponibili per gli amministratori Skype for Business online. Tuttavia, Non è attualmente possibile usare **Set-CsUser** per gestire Skype for Business Online, ad eccezione dell'impostazione del parametro _AudioVideoDisabled._ Se si prova a eseguire il cmdlet con qualsiasi altro parametro, non riuscirà con un messaggio di errore simile al seguente: Impossibile impostare "SipAddress". Questo parametro è limitato in PowerShell tenant remoto.
+> Il cmdlet **Set-CsUser** è incluso anche nel set di cmdlet disponibili per gli amministratori Skype for Business online. Tuttavia, **Set-CsUser** non può attualmente essere usato per gestire Skype for Business Online, ad eccezione dell'impostazione del parametro _AudioVideoDisabled._ Se si prova a eseguire il cmdlet con qualsiasi altro parametro, non riuscirà con un messaggio di errore simile al seguente: Impossibile impostare "SipAddress". Questo parametro è limitato in PowerShell tenant remoto.
 
 ### <a name="return-information-about-all-your-skype-for-business-online-users"></a>Ottenere informazioni su tutti gli utenti di Lync Online
 <a name="BKMKReturnInfoAboutAllUsers"> </a>

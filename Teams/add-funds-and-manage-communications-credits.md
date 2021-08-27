@@ -16,7 +16,7 @@ ms.collection:
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -30,12 +30,12 @@ ms.custom:
 - O365P_SFBVoiceCreditAether
 - Licensing
 description: 'Informazioni su come pagare i crediti di comunicazione (Consumo PSTN) per i servizi Skype for Business e vedere i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
-ms.openlocfilehash: 6f96b56400e3186a6d4df3276204359c6943d10113f3967eef59322e461f1092
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fe3b80e41c6fdc411304ec43eebb0ab560063033
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344415"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617612"
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere fondi e gestire Credito per la comunicazione
 
@@ -63,7 +63,7 @@ Puoi aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **Abb
 I fondi verranno applicati solo ai Crediti comunicazioni alle tariffe pubblicate da Microsoft quando vengono usati i servizi. I fondi non utilizzati entro dodici (12) mesi dalla data di acquisto scadranno e verranno persi.
   
 > [!TIP]
-> Ti invieremo notifiche tramite e-mail quando i fondi vengono aggiunti tramite l'auto-ricarica, quando l'ricarica automatica non riesce (ad esempio, quando scade una carta di credito) e quando il saldo scende sotto lo zero.
+> Ti invieremo notifiche tramite e-mail quando i fondi vengono aggiunti tramite ricarica automatica, quando l'ricarica automatica non riesce (ad esempio, quando scade una carta di credito) e quando il saldo scende sotto lo zero.
   
 Per altre informazioni, vedere [Che cosa sono i crediti comunicazioni?](what-are-communications-credits.md)
   
@@ -77,7 +77,7 @@ Per consultare piani e prezzi, consultare uno di questi link:
 
 - [Sistema telefonico piani](https://go.microsoft.com/fwlink/?LinkId=799763)
 
-È anche possibile visualizzare le informazioni accedendo al interfaccia di amministrazione di Microsoft 365 e andando su **Abbonamenti**  >  **fatturazione**  >  **Aggiungi abbonamenti**.
+È anche possibile visualizzare le informazioni accedendo al interfaccia di amministrazione di Microsoft 365 e selezionando Abbonamenti  >  **fatturazione**  >  **Aggiungi abbonamenti**.
   
 Per visualizzare una tabella con la licenza o le licenze necessarie per ogni funzionalità, vedere Microsoft Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   

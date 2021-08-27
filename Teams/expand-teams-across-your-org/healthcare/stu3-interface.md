@@ -9,7 +9,7 @@ ms.service: msteams
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Healthcare
@@ -19,12 +19,12 @@ ms.reviewer: anach
 description: Informazioni sull'integrazione di Electronic Health Records nell'app Microsoft Teams Patients e nella specifica dell'interfaccia STU3.
 ms.custom: seo-marvel-apr2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e51372f2c44bdd5bdeea8e4a7699d3f46881564e0c98f3049b95dcbd21eb66c2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 64fc61072510942b67d51542095a927e7e67c697
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344043"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582330"
 ---
 # <a name="stu3-interface-specification"></a>Specifica dell'interfaccia STU3
 
@@ -398,7 +398,7 @@ Vedere [https://hl7.org/fhir/stu3/encounter.html](https://hl7.org/fhir/stu3/enco
 
 ## <a name="allergyintolerance"></a>AllergyIntolerance
 
-Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo [Disarginamentoargia Argonaut:](https://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-allergyintolerance.html)
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo [Disargiscita di Argonaut:](https://www.fhir.org/guides/argonaut/r2/StructureDefinition-argo-allergyintolerance.html)
 
  - Code.Text
  - Code.Coding[0]. Visualizzazione

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38862e35-3fec-41b9-a035-0b301942d446
 description: 'Riepilogo: informazioni sul Rapporto dettagli chiamata utilizzato in Skype for Business Server.'
-ms.openlocfilehash: 42a0dd40bb32005fcae49464f5ebfc6570055f7078c22b6a8b5be6004793158b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 173df324b61fc719ee989a6102ccfbb9cf850f92
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54336586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617862"
 ---
 # <a name="call-detail-report-in-skype-for-business-server"></a>Rapporto dettagli chiamata in Skype for Business Server
  
@@ -53,11 +53,11 @@ Si può accedere al Rapporto dettagli chiamata da uno dei rapporti seguenti:
   
 - [Rapporto località in Skype for Business Server (location-report.md) (facendo clic sulla metrica Volume chiamata o Percentuale scarsa chiamata)
     
-- [Media Quality Summary Report in Skype for Business Server (summary.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
+- [Rapporto riepilogativo qualità multimediale in Skype for Business Server (summary.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
     
-- Il [Rapporto di confronto qualità multimediale Skype for Business Server](comparison.md) (facendo clic sul Rapporto elenco chiamate in [Skype for Business Server](call-list-report-0.md) e quindi facendo clic sulla metrica Dettagli).
+- Il [Rapporto di confronto qualità multimediale in Skype for Business Server](comparison.md) (facendo clic sul Rapporto elenco chiamate in [Skype for Business Server](call-list-report-0.md) e quindi facendo clic sulla metrica Dettagli).
     
-- Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamata scarsa)
+- Rapporto [prestazioni server in Skype for Business Server](server-performance.md) (facendo clic sulla metrica Volume chiamata o Percentuale di chiamate scarsa)
     
 - Rapporto [elenco chiamate in Skype for Business Server](call-list-report-0.md) (facendo clic sulla metrica Dettagli)
     

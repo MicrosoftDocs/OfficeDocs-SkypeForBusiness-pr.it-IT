@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 784ff94a-4b33-4dbd-ba74-27acc3eb6954
 description: Il cmdlet Set-CcCredential consente di impostare le credenziali della distribuzione Skype for Business Cloud Connector Edition corrente.
-ms.openlocfilehash: 330326790f20add51dcaeb4468b17438c302c353c08076402e15f4d32985c117
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fa0d5f69e3263d273fabe17ae74ea46e0af40908
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324136"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617662"
 ---
 # <a name="set-cccredential"></a>Set-CcCredential
  
@@ -44,7 +44,7 @@ Set-CcCredential -AccountType "TenantAdmin"
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Il cmdlet Set-CcCredential consente di impostare il nome account e la password per l'amministratore tenant. Per le versioni precedenti alla 2.0, questo amministratore deve essere un amministratore globale. Cloud Connector usa questo account per ottenere informazioni sulla configurazione, impostare i parametri di configurazione e aggiornare lo stato dell'appliance Microsoft 365 o Office 365'organizzazione. Con la versione 2.0 e successive, è anche possibile utilizzare questo cmdlet per aggiornare le password per gli account VmAdmin e DomainAdmin.
+Il cmdlet Set-CcCredential consente di impostare il nome account e la password per l'amministratore tenant. Per le versioni precedenti alla 2.0, questo amministratore deve essere un amministratore globale. Cloud Connector usa questo account per ottenere informazioni di configurazione, impostare i parametri di configurazione e aggiornare lo stato dell'appliance Microsoft 365 o Office 365'organizzazione. Con la versione 2.0 e successive, è anche possibile utilizzare questo cmdlet per aggiornare le password per gli account VmAdmin e DomainAdmin.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>

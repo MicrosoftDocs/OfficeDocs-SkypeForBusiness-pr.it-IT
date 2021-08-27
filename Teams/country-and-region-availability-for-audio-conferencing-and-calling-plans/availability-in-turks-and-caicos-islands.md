@@ -15,7 +15,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per le isole Turks e Caicos.
-ms.openlocfilehash: d581113c242174483a36b3637bbe7fde01fde1c1f4459c1215bd1974fba05746
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6686a0a8b3207307fc8f905ae009786d68f89049
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322718"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582371"
 ---
 # <a name="availability-in-turks-and-caicos-islands"></a>Disponibilità nelle isole Turks e Caicos
 

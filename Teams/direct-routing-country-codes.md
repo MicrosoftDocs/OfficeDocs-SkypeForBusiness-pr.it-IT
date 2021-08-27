@@ -1,5 +1,5 @@
 ---
-title: Codici paese routing diretto
+title: Codici paese di routing diretto
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -7,7 +7,7 @@ audience: ITPro
 ms.reviewer: NMuravlyannikov
 ms.topic: reference
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -17,16 +17,16 @@ f1.keywords:
 - NOCSH
 description: Leggere questo articolo per individuare i codici paese del percorso multimediale per Direct Routing, in modo da poter selezionare il percorso multimediale ottimale.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0d51a3a5d6b878a607d9e5ee6b71d75319c9802fa48b3192f2023df179db3b49
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 36124a8aadc94bfd73ffd195ec8ee0a2acf0c2a6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54327741"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582350"
 ---
 # <a name="direct-routing-media-path-country-codes"></a>Codici del paese del percorso multimediale per il routing diretto
 
-Quando si sceglie un percorso di routing per i supporti multimediali, per impostazione predefinita, Il routing diretto assegna sempre un data center in base all'indirizzo IP pubblico del session border controller (SBC) e seleziona sempre il percorso più vicino al data center SBC.
+Quando si sceglie un percorso di routing per i supporti multimediali, per impostazione predefinita, Direct Routing assegna sempre un data center in base all'indirizzo IP pubblico del Session Border Controller (SBC) e seleziona sempre il percorso più vicino al data center SBC.
 
 Tuttavia, in alcuni casi il percorso multimediale predefinito potrebbe non essere quello ottimale. ad esempio, a un indirizzo IP pubblico di un intervallo degli Stati Uniti potrebbe essere assegnato un indirizzo SBC situato in Europa. 
 
@@ -213,7 +213,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Corea del Nord     | KP |
 | Macedonia del Nord | MK |
 | Isole Marianne settentrionali | NP |
-| Norvegia          | No |
+| Norvegia          | NO |
 | Oman            | OM |
 | Pakistan        | PK |
 | Palau           | PW |
@@ -253,7 +253,7 @@ La tabella seguente mostra i valori dei codici paese per il parametro -MediaRela
 | Slovacchia        | SK |
 | Slovenia        | SL |
 | Isole Salomone | SB |
-| Somalia         | Allora |
+| Somalia         | ALLORA |
 | Sudafrica    | Immagine dell'icona |
 | Georgia del Sud e Isole Sandwich del Sud | GS |
 | Sud Sudan     | SS |
