@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Phone System
-description: Informazioni sui passaggi di distribuzione per ottenere il firmware corretto, aggiornarlo se necessario, assegnare licenze e configurare le impostazioni per Skype for Business telefoni online
-ms.openlocfilehash: 072a7caa6d5b9caa1827f5f93973a12e77c1823063fad8706469a4fabfa87ff2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni sulla procedura di distribuzione per ottenere il firmware corretto, aggiornarlo se necessario, assegnare licenze e configurare le impostazioni per Skype for Business telefoni online
+ms.openlocfilehash: a053928a242be3d7798a5d9c3cc608e3176807c4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295803"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607443"
 ---
 # <a name="deploying-skype-for-business-online-phones"></a>Distribuzione dei telefoni per Skype for Business Online
 
@@ -44,13 +44,13 @@ Prima di iniziare, è una buona idea quella di scaricare le guide per l'amminist
   
 - Per i telefoni Polycom, vedere [la Libreria di documentazione Poly.](https://documents.polycom.com/category/voice)
     
-- Per i telefoni Yealink, vedere [Yealink Skype for Business hd SIP Phones Solution](http://www.yealink.com/products_top_2.html).
+- Per i telefoni Yealink, vedere [Yealink Skype for Business Hd SIP Phones Solution](http://www.yealink.com/products_top_2.html).
     
 - Per i telefoni AudioCodes, consulta la [Guida alla gestione del provisioning Audiocodes](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/ip-phones-room-solutions).
     
 ### <a name="step-2---make-sure-youre-purchasing-or-migrating-a-skype-for-business-supported-ip-phone-and-firmware"></a>Fase 2 - Assicurati di stare acquistando o migrando un telefono IP e firmware supportati da Skype for Business.
 
-Un telefono e firmware supportati da Skype for Business Online sono compatibili anche con Skype for Business Server, ma non è sempre vero il contrario. Per assicurarsi di acquistare o eseguire il provisioning di un telefono e firmware supportati, vedere Ottenere telefoni per Skype for Business [Online](getting-phones-for-skype-for-business-online.md).
+Un telefono e firmware supportati da Skype for Business Online sono compatibili anche con Skype for Business Server, ma non è sempre vero il contrario. Per assicurarsi di acquistare o eseguire il provisioning di un telefono e firmware supportati, vedere Ottenere telefoni per Skype for Business [Online.](getting-phones-for-skype-for-business-online.md)
   
 ### <a name="step-3---checking-that-the-right-firmware-is-installed-and-update-the-firmware-if-required"></a>Fase 3 - Verifica che sia installato il firmware giusto e aggiorna il firmware, se necessario
 
@@ -99,7 +99,7 @@ Per la pianificazione dell'infrastruttura di rete, [vedere Skype Operations Fram
 
 Per consentire agli utenti di accedere correttamente a un telefono Skype for Business Online ed effettuare chiamate, è necessario assicurarsi che agli utenti siano assegnate le licenze corrette. Come minimo, dovrai assegnare una licenza Sistema telefonico e un piano per le chiamate. Per altre informazioni, è possibile vedere Skype for Business e [Microsoft Teams licenze](../../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md) per i componenti aggiuntivi e [Assegnare](../../skype-for-business-and-microsoft-teams-add-on-licensing/assign-skype-for-business-and-microsoft-teams-licenses.md)Skype for Business e Microsoft Teams licenze .
   
-Per saperne di più sui Piani per chiamate, leggere Sistema telefonico [e Piani per chiamate](/microsoftteams/calling-plan-landing-page)
+Per saperne di più sui Piani per [chiamate, Sistema telefonico e Piani per chiamate](/microsoftteams/calling-plan-landing-page)
   
 - Le **opzioni di accesso** disponibili per gli utenti online son le seguenti.
     
@@ -111,7 +111,7 @@ Per saperne di più sui Piani per chiamate, leggere Sistema telefonico [e Piani 
     
      ![Schermata che mostra l'accesso ai telefoni Yealink.](../../images/2a2892ae-850d-4781-8be0-4ffb8af068c9.png)
   
-    Per informazioni dettagliate sulle opzioni di accesso supportate dal produttore, vedere Ottenere telefoni [per Skype for Business Online.](getting-phones-for-skype-for-business-online.md)
+    Per informazioni dettagliate sulle opzioni di accesso supportate dal produttore, vedere Ottenere telefoni [Skype for Business Online.](getting-phones-for-skype-for-business-online.md)
     
 - **ID utente** Utilizzando la tastiera del telefono o la tastiera a schermo (se disponibile), gli utenti possono utilizzare il nome utente e la password della propria organizzazione per accedere al telefono. Ad esempio, possono utilizzare il formato UPN come <em>amosm@contoso.com</em>  per il nome utente.
     
@@ -120,7 +120,7 @@ Per saperne di più sui Piani per chiamate, leggere Sistema telefonico [e Piani 
     > [!NOTE]
     > L'autenticazione PIN non è supportata per Skype for Business online per i telefoni IP LPE e Partner. 
   
-- **Uso di un PC** Quando il software Better Together over Ethernet (BToE) è installato nel PC dell'utente e abilitato, gli utenti possono accedere ai loro telefoni usando la finestra di autenticazione nell'app Windows Skype for Business. Per altre informazioni, vedere Passaggio 7 (facoltativo) - Se si ha l'associazione di dispositivi e [Better Together over Ethernet (BToE).](deploying-skype-for-business-online-phones.md#BK_BTOE)
+- **Uso di un PC** Quando il software Better Together over Ethernet (BToE) è installato nel PC dell'utente e abilitato, gli utenti possono accedere ai propri telefoni usando la finestra di autenticazione nell'app Windows Skype for Business. Per altre informazioni, vedere Passaggio 7 (facoltativo) - Se si ha l'associazione di dispositivi e [Better Together over Ethernet (BToE).](deploying-skype-for-business-online-phones.md#BK_BTOE)
     
   > [!NOTE]
   > Gli utenti devono utilizzare il nome utente e la password della propria organizzazione per accedere al telefono. Ad esempio, possono utilizzare il formato UPN come  <em>amosm@contoso.com</em>  per il nome utente.
@@ -155,7 +155,7 @@ Per saperne di più sui Piani per chiamate, leggere Sistema telefonico [e Piani 
     
      ![Schermata che mostra l'immissione di codice nella schermata di accesso](../../images/d6b88016-35d2-41d1-a0da-81fef34521d4.png)
   
-    Verificare che nel sito sia visualizzato "[Telefono Nome produttore] **Skype for Business certificato Telefono**", quindi fare clic su **Continua**.
+    Verificare che nel sito sia visualizzato "[Telefono Nome produttore] **Skype for Business certificato Telefono**", quindi fare clic su **Continua.**
     
      ![Schermata che mostra la verifica del nome](../../images/a8252b37-4ff5-4ece-9e2a-3e05bf928299.png)
   

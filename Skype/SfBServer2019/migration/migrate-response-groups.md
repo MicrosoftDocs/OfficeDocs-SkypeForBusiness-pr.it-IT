@@ -9,26 +9,26 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: Dopo aver spostato gli utenti nei Skype for Business Server 2019, è possibile eseguire la migrazione dei Response Group. La migrazione di Response Group include la copia di gruppi di agenti, code, flussi di lavoro, file audio e lo spostamento di oggetti contatto di Response Group dalla distribuzione legacy al pool Skype for Business Server 2019. Dopo aver eseguito la migrazione dei Response Group legacy, le chiamate ai Response Group vengono gestite dall'applicazione Response Group nel pool Skype for Business Server 2019. Le chiamate ai Response Group non sono più gestite dal pool legacy.
-ms.openlocfilehash: 83edbfd97fac08aded66ce042adecda9fee7b539588e717323eeaeda36003041
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Dopo aver spostato gli utenti in Skype for Business Server 2019, è possibile eseguire la migrazione dei Response Group. La migrazione di Response Group include la copia di gruppi di agenti, code, flussi di lavoro, file audio e lo spostamento di oggetti contatto di Response Group dalla distribuzione legacy al pool di Skype for Business Server 2019. Dopo aver eseguito la migrazione dei Response Group legacy, le chiamate ai Response Group vengono gestite dall'applicazione Response Group nel pool Skype for Business Server 2019. Le chiamate ai Response Group non sono più gestite dal pool legacy.
+ms.openlocfilehash: 96eecb0ad10a900a9d00d26383e149ceec4cbfe8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303560"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588028"
 ---
 # <a name="migrate-response-groups"></a>Eseguire la migrazione di Response Group
 
-Dopo aver spostato gli utenti nei Skype for Business Server 2019, è possibile eseguire la migrazione dei Response Group. La migrazione di Response Group include la copia di gruppi di agenti, code, flussi di lavoro, file audio e lo spostamento di oggetti contatto di Response Group dalla distribuzione legacy al pool Skype for Business Server 2019. Dopo aver eseguito la migrazione dei Response Group legacy, le chiamate ai Response Group vengono gestite dall'applicazione Response Group nel pool Skype for Business Server 2019. Le chiamate ai Response Group non sono più gestite dal pool legacy.
+Dopo aver spostato gli utenti in Skype for Business Server 2019, è possibile eseguire la migrazione dei Response Group. La migrazione di Response Group include la copia di gruppi di agenti, code, flussi di lavoro, file audio e lo spostamento di oggetti contatto di Response Group dalla distribuzione legacy al pool di Skype for Business Server 2019. Dopo aver eseguito la migrazione dei Response Group legacy, le chiamate ai Response Group vengono gestite dall'applicazione Response Group nel pool Skype for Business Server 2019. Le chiamate ai Response Group non sono più gestite dal pool legacy.
   
 > [!NOTE]
-> Sebbene sia possibile eseguire la migrazione dei Response Group prima di spostare tutti gli utenti nel pool Skype for Business Server 2019, è consigliabile spostare prima tutti gli utenti. In particolare, gli utenti che sono agenti di Response Group non avranno tutte le funzionalità delle nuove funzionalità finché non vengono spostati nel pool Skype for Business Server 2019. 
+> Sebbene sia possibile eseguire la migrazione di Response Group prima di spostare tutti gli utenti nel pool Skype for Business Server 2019, è consigliabile spostare prima tutti gli utenti. In particolare, gli utenti che sono agenti di Response Group non avranno tutte le funzionalità delle nuove funzionalità fino a quando non vengono spostati nel pool Skype for Business Server 2019. 
   
 Prima di eseguire la migrazione dei Response Group, è necessario aver distribuito un pool Skype for Business Server 2019 che includa l'applicazione Response Group. L'applicazione Response Group viene installata e attivata per impostazione predefinita quando si distribuisce VoIP aziendale. È possibile verificare che l'applicazione Response Group sia installata eseguendo il cmdlet **Get-CsService -ApplicationServer.** 
   
 > [!NOTE]
-> È possibile creare nuovi Response Skype for Business Server 2019 nel pool Skype for Business Server 2019 prima di eseguire la migrazione dei Response Group legacy. 
+> È possibile creare nuovi Response Group Skype for Business Server 2019 nel pool Skype for Business Server 2019 prima di eseguire la migrazione dei Response Group legacy. 
   
 Per eseguire la migrazione di Response Group da un pool legacy Skype for Business Server 2019, eseguire il cmdlet **Move-CsRgsConfiguration.** 
   
@@ -40,7 +40,7 @@ Dopo aver eseguito la migrazione dei Response Group, è necessario utilizzare il
 Quando si esegue la migrazione dei Response Group, i Response Group legacy non vengono rimossi. Quando si gestiscono Response Group dopo la migrazione utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell, è possibile visualizzare sia i Response Group legacy che i Response Group Skype for Business Server 2019. È consigliabile applicare gli aggiornamenti solo ai Response Group Skype for Business Server 2019. I Response Group legacy vengono conservati solo a scopo di rollback. 
   
 > [!CAUTION]
-> Dopo aver completato la migrazione e creato i nuovi Response Group, nel Pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell verranno visualizzate le versioni legacy e Skype for Business Server 2019 di ogni Response Group. Non utilizzare il Skype for Business Server di controllo o Skype for Business Server Management Shell per rimuovere i Response Group legacy. Se ne viene rimosso uno, il Response Group corrispondente creato durante la migrazione smetterà di funzionare. I Response Group legacy verranno rimossi quando si decommissiona il pool legacy. 
+> Dopo aver completato la migrazione e aver creato i nuovi Response Group, nel Pannello di controllo di Skype for Business Server e Skype for Business Server Management Shell verranno visualizzate le versioni legacy e Skype for Business Server 2019 di ogni Response Group. Non utilizzare Skype for Business Server pannello di controllo o Skype for Business Server Management Shell per rimuovere i Response Group legacy. Se ne viene rimosso uno, il Response Group corrispondente creato durante la migrazione smetterà di funzionare. I Response Group legacy verranno rimossi quando si decommissiona il pool legacy. 
   
 > [!IMPORTANT]
 > È consigliabile rimuovere i dati dalla distribuzione precedente solo dopo la rimozione del pool. È inoltre consigliabile esportare i Response Group subito dopo la migrazione. Se un Response Group legacy deve essere rimosso, è possibile ripristinare i Response Group dal backup per Skype for Business Server 2019 response group in esecuzione di nuovo. 
@@ -55,7 +55,7 @@ La procedura seguente per la migrazione delle configurazioni di Response Group p
 
 1. Accedere al computer con un account membro del gruppo RTCUniversalServerAdmins o con le autorizzazioni e i diritti di amministratore equivalenti.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic su **Skype for Business Server Management Shell.**
     
 3. Eseguire: 
     
@@ -71,11 +71,11 @@ La procedura seguente per la migrazione delle configurazioni di Response Group p
 
 4. Dopo aver eseguito la migrazione di Response Group e agenti nel pool di Skype for Business Server 2019, l'URL utilizzato dagli agenti per accedere e disconnettersi è un URL di Skype for Business Server 2019 ed è disponibile dal **menu** Strumenti. Ricordare agli agenti di aggiornare eventuali riferimenti, come segnalibri, al nuovo URL. 
     
-## <a name="to-verify-response-group-migration-by-using-skype-for-business-server-control-panel"></a>Per verificare la migrazione di Response Group tramite il Skype for Business Server Pannello di controllo
+## <a name="to-verify-response-group-migration-by-using-skype-for-business-server-control-panel"></a>Per verificare la migrazione di Response Group tramite Skype for Business Server pannello di controllo
 
 1. Eseguire l'accesso al computer con un account membro del gruppo RTCUniversalReadOnlyAdmins o come minimo membro del ruolo CsViewOnlyAdministrator.
     
-2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare Skype for Business Server pannello di controllo, vedere [Open Skype for Business Server 2019 administrative tools](/previous-versions/office/lync-server-2013/lync-server-2013-open-lync-server-administrative-tools). 
+2. Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business Server di controllo, vedere [Open Skype for Business Server 2019 administrative tools](/previous-versions/office/lync-server-2013/lync-server-2013-open-lync-server-administrative-tools). 
     <!-- The above link points to un-rebranded 2013 content we will need to discuss rebrand or bring forward -->
 3. Nel riquadro di spostamento sinistro fare clic su **Response Group**.
     
@@ -89,7 +89,7 @@ La procedura seguente per la migrazione delle configurazioni di Response Group p
 
 1. Eseguire l'accesso al computer con un account membro del gruppo RTCUniversalReadOnlyAdmins o come minimo membro del ruolo CsViewOnlyAdministrator.
     
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic **su Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic su **Skype for Business Server Management Shell.**
     
     Per informazioni dettagliate sui cmdlet seguenti, eseguire:
     

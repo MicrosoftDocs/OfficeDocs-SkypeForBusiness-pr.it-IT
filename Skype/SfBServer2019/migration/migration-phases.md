@@ -9,20 +9,20 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In Skype for Business Server 2019, si definiscono i siti nella rete che contengono Skype for Business Server 2019. Un sito è un insieme di computer connessi tramite una rete ad alta velocità e a bassa latenza, ad esempio una singola rete locale (LAN) o due reti connesse tramite una rete in fibra ottica ad alta velocità.
-ms.openlocfilehash: 0e79dca32a0e3c377eea8e60e0e19514dcb7f4dfb459922b68c9913f4bd3c363
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8066e9ed7e46c54e6a6eac89bcf65dca1447aa57
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303420"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58587988"
 ---
 # <a name="migration-phases"></a>Fasi della migrazione
 
 In Skype for Business Server 2019, si definiscono i siti nella rete che contengono Skype for Business Server 2019. Un sito è un insieme di computer connessi tramite una rete ad alta velocità e a bassa latenza, ad esempio una singola rete locale (LAN) o due reti connesse tramite una rete in fibra ottica ad alta velocità. 
   
-Un pool Front End è un gruppo di Front End Server configurati in modo identico che collaborano per offrire servizi a un gruppo comune di utenti. Un pool garantisce scalabilità e funzionalità di failover per gli utenti. Ogni server in un pool deve eseguire uno o più ruoli del server identici. Un edizione Standard server, progettato per organizzazioni di piccole dimensioni, definisce anche un pool ed è in esecuzione su un singolo server. In questo modo è possibile Skype for Business Server 2019 a costi inferiori, ma non offre una vera soluzione a disponibilità elevata. 
+Un pool Front End è un gruppo di Front End Server configurati in modo identico che collaborano per offrire servizi a un gruppo comune di utenti. Un pool garantisce scalabilità e funzionalità di failover per gli utenti. Ogni server in un pool deve eseguire uno o più ruoli del server identici. Un edizione Standard server, progettato per organizzazioni di piccole dimensioni, definisce anche un pool e viene eseguito in un singolo server. In questo modo è possibile Skype for Business Server 2019 a costi inferiori, ma non offre una vera soluzione a disponibilità elevata. 
   
 Nelle fasi seguenti viene descritto il processo di migrazione di un pool a Skype for Business Server 2019. Nel caso di più siti che includono più pool, per ogni singolo pool sarà necessario adottare questo approccio in più fasi.
   
@@ -30,7 +30,7 @@ Nelle fasi seguenti viene descritto il processo di migrazione di un pool a Skype
     
 2. [Fase 2: preparare la migrazione](phase-2-prepare-for-migration.md)
     
-3. [Fase 3: distribuire Skype for Business Server 2019 pilota](phase-3-deploy-pilot-pool.md)
+3. [Fase 3: distribuire Skype for Business Server pool pilota 2019](phase-3-deploy-pilot-pool.md)
     
 4. [Fase 4: spostare gli utenti di test nel pool pilota](phase-4-move-test-users-to-the-pilot-pool.md)
     

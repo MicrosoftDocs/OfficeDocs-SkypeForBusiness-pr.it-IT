@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0357f230-6d0c-41f1-942c-e14f76e55d31
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Per verificare che l'estensione dello schema sia stata replicata correttamente nella foresta di Servizi di dominio Active Directory, eseguire le operazioni seguenti:"
-ms.openlocfilehash: 9da233460dd20548acd36bd90ef699359c77e4144eaea80576e1209df6a5c7fb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: eb0239df900547158cd670a43cdb6fc9e82dc377
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300222"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621578"
 ---
 # <a name="verify-replication-of-schema-partition"></a>Verificare la replica della partizione dello schema
  

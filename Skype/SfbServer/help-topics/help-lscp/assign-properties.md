@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.NcsSelProperty
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 50c799a3-90a0-4d58-8f8b-17eea56144dc
 description: Utilizzare la finestra di dialogo Assegna proprietà per specificare una descrizione e un ID sito di rete per più subnet alla volta. In Descrizione digitare la descrizione che si desidera utilizzare per le subnet selezionate. In ID sito di rete selezionare l'ID sito di rete che si desidera assegnare alle subnet selezionate. Per assegnare tali proprietà alle subnet selezionate, fare clic su OK.
-ms.openlocfilehash: 2a1e3ffb89c31be7538efb891a2f99d9dc0bcc4133189a085356aa08c6670997
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9d85d90f861c1f177a9af1874428378f465ba760
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307407"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581580"
 ---
 # <a name="assign-properties"></a>Assegnare proprietà
  

@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-localization_priority: Priority
+ms.localizationpriority: high
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
@@ -25,12 +25,12 @@ no-loc:
 - Teams
 - Microsoft Teams
 - Office 365
-ms.openlocfilehash: 207f133f58098b95d7f00102a0be72a44ff9f1584975bae3af2cb936d708c1dc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 69164e8c840fab59f61c79931fb6b01ef94326cb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54352444"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578400"
 ---
 # <a name="what-do-i-need-to-buy-to-use-microsoft-365-business-voice"></a>Cosa serve per acquistare e usare Microsoft 365 Business Voice?
 
@@ -57,7 +57,7 @@ Per informazioni sulle funzionalità di Business Voice, vedere [Descrizione del 
 
 ## <a name="business-voice-with-calling-plan"></a>Business Voice con Piano di chiamata
 
-Business Voice con Piano di chiamata include un piano per chiamate nazionali, che offre ogni mese una certa quantità di minuti per effettuare chiamate all'interno del paese o dell'area geografica. Se si desidera effettuare chiamate verso altri Paesi o aree geografiche, è possibile acquistare un Piano per chiamate internazionali. Utilizzando il *Credito per la comunicazione*, è possibile pagare un Piano per chiamate internazionali, dei minuti extra mensili per il Piano per chiamate nazionali e i propri numeri verdi. Più avanti, questo articolo include altre informazioni su Piani per chiamate e Credito per la comunicazione.
+Business Voice con Piano di chiamata include un piano per chiamate nazionali, che offre ogni mese una certa quantità di minuti per effettuare chiamate all'interno del Paese o dell'area geografica. Se si desidera effettuare chiamate verso altri Paesi o aree geografiche, è possibile acquistare un Piano per chiamate internazionali. Utilizzando il *Credito per la comunicazione*, è possibile pagare un Piano per chiamate internazionali, dei minuti extra mensili per il Piano per chiamate nazionali e i propri numeri verdi. Più avanti, questo articolo include altre informazioni su Piani per chiamate e Credito per la comunicazione.
 
 Per acquistare licenze di Microsoft 365 Business Voice con Piano di chiamata, accedere all'[interfaccia di amministrazione](https://admin.microsoft.com/Adminportal/Home#/homepage), quindi fare clic su **Fatturazione** > **Acquisto di servizi**.
 

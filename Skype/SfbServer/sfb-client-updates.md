@@ -9,15 +9,15 @@ ms.topic: reference
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: Fornisce ai professionisti IT collegamenti alle informazioni sugli aggiornamenti più recenti per le versioni perpetue di Skype for Business 2016, Skype for Business 2015 e client Lync 2013
-ms.openlocfilehash: 93691e0bccf48e6f1be8a37f817ae3617a4a9301cf12c6e462bb1d66f57a7a84
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bff52ddfd2a037af9bac9d79d36a2a7acd156baa
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349678"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581340"
 ---
 # <a name="latest-updates-for-versions-of-skype-for-business-that-use-windows-installer-msi"></a>Aggiornamenti più recenti per le versioni di Skype for Business che utilizzano Windows Installer (MSI)
 
@@ -27,7 +27,7 @@ Utilizzare i collegamenti in questa pagina per ottenere ulteriori informazioni e
 > - Le informazioni contenute in questo articolo si applicano solo alle versioni perpetue di Skype for Business che utilizzano la tecnologia di installazione Windows Installer (MSI). Ad esempio, se è stata installata una versione con contratto multilicenza di Skype for Business, ad esempio Skype for Business incluso con Office Professional Plus 2016.
 > - Le informazioni contenute in questo articolo non si applicano alle Microsoft 365 o Office 365 di Skype for Business, ad esempio Skype for Business incluse in Microsoft 365 Apps for enterprise.
 > - Per gli aggiornamenti più recenti dei client per dispositivi mobili, vai all'App Store per il tuo client mobile (iTunes, Google Play o Microsoft Store) per visualizzare i dettagli e installare gli aggiornamenti.
-> - Per sapere quale versione di Skype for Business si sta usando, vedere Quale versione di [Skype for Business è disponibile?](https://support.microsoft.com/help/3195481/how-to-check-the-version-of-skype-for-business-2016)
+> - Per sapere quale versione di Skype for Business in uso, vedere Quale versione di [Skype for Business è disponibile?](https://support.microsoft.com/help/3195481/how-to-check-the-version-of-skype-for-business-2016)
 > - Per ulteriori informazioni sull'installazione degli aggiornamenti di Office, vedere [Installare gli aggiornamenti di Office](https://support.office.com/article/2ab296f3-7f03-43a2-8e50-46de917611c5).
 
 Skype for Business compatibilità con Microsoft 365 o Office 365 e l'ambiente locale dipende dai requisiti di sistema per la distribuzione:
@@ -295,7 +295,7 @@ Nome pacchetto|Numero KB|Data di rilascio|
 |Aggiornamento della sicurezza per Lync 2010 Attendee (installazione a livello di amministratore) |[KB 4025866](https://support.microsoft.com/kb/4025866) |Settembre 2017|
 |Aggiornamento della sicurezza per Lync 2010 Attendee (installazione a livello di amministratore) |[KB 4025866](https://support.microsoft.com/kb/4025866) |Giugno 2017|
 |Aggiornamento della sicurezza per Lync 2010 Attendee (installazione a livello utente) |[KB 4020734](https://support.microsoft.com/kb/4020734) |Giugno 2017|
-|Aggiornamento della sicurezza per Microsoft Graphics Component in Lync 2010 Attendee (installazione a livello di amministratore) |[KB 4010301](https://support.microsoft.com/kb/4010301) |Marzo 2017|
+|Aggiornamento della sicurezza per Microsoft Graphics Component on Lync 2010 Attendee (installazione a livello di amministratore) |[KB 4010301](https://support.microsoft.com/kb/4010301) |Marzo 2017|
 |Aggiornamento della sicurezza per Lync 2010 Attendee (installazione a livello di amministratore) |[KB 3188400](https://support.microsoft.com/kb/3188400) |Ottobre 2016|
 |Descrizione dell'aggiornamento cumulativo per Lync 2010 Attendee - Installazione a livello di amministratore |[KB 3171502](https://support.microsoft.com/kb/3171502)|Giugno 2016 |
 |Descrizione dell'aggiornamento cumulativo per Lync 2010 Attendee - Installazione a livello utente |[KB 3171496](https://support.microsoft.com/kb/3171496) |Giugno 2016 |

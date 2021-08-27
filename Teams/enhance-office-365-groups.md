@@ -11,19 +11,19 @@ audience: admin
 description: Informazioni su come migliorare Microsoft 365 gruppi con Microsoft Teams invitando una lista di distribuzione a un team, aggiungere gruppi di sicurezza abilitati alla posta elettronica e altro ancora.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 206b289a8d241b09c0aeb02eb5f211c30bf697f2
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 74a108ba78b26c94045c0fdcb917a71d584b7c05
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58232631"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578370"
 ---
 # <a name="enhance-existing-microsoft-365-groups-with-microsoft-teams"></a>Migliorare i gruppi Microsoft 365 esistenti con Microsoft Teams
 
@@ -32,11 +32,11 @@ Microsoft Teams utenti possono migliorare un gruppo di Microsoft 365 esistente c
 A questo scopo, gli utenti devono eseguire il flusso di creazione di un nuovo team dal client Microsoft Teams team. Selezionare **Crea da Microsoft 365** e quindi scegliere il gruppo esistente da migliorare con  >  Teams. I membri del gruppo esistenti verranno aggiunti automaticamente come membri al team.
 
 > [!IMPORTANT]
-> Solo Microsoft 365 proprietari del gruppo hanno l'autorizzazione per migliorare un gruppo esistente con Teams e tale gruppo deve contenere meno di 5.000 utenti. Teams che sono già stati migliorati non verranno visualizzati nell'elenco.
+> Solo Microsoft 365 proprietari del gruppo hanno l'autorizzazione per migliorare un gruppo esistente con Teams e tale gruppo deve contenere meno di 5.000 utenti. Teams elementi già migliorati non verranno visualizzati nell'elenco.
 >
->L'opzione per creare un team da un Microsoft 365 gruppo non sarà disponibile a meno che queste condizioni non siano state soddisfatte.
+>L'opzione per creare un team da Microsoft 365 gruppo non sarà disponibile a meno che queste condizioni non siano state soddisfatte.
 
-Gli utenti possono anche invitare una lista di distribuzione a un team e i membri della lista di distribuzione verranno aggiunti al team. Si tratta di una copia unica e le modifiche successive apportate all'appartenenza ai gruppi nella lista di distribuzione non verranno replicate o sincronizzate con Teams.
+Gli utenti possono anche invitare una lista di distribuzione a un team e i membri della lista di distribuzione verranno aggiunti al team. Si tratta di un'aggiunta unica e le modifiche successive apportate all'appartenenza ai gruppi nella lista di distribuzione non verranno replicate o sincronizzate con Teams.
 
 ![Screenshot dell'opzione per creare un team da un Microsoft 365 gruppo.](media/Enhance_Existing_Office_365_groups_with_Microsoft_Teams_image2.png)
 

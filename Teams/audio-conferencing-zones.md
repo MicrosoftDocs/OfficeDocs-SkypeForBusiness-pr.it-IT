@@ -14,18 +14,18 @@ search.appverid: MET150
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - seo-marvel-mar2020
 description: Elenca le aree per le audioconferenze e il paese e le aree geografiche in ogni area.
-ms.openlocfilehash: 8f09956b2d5a2e0e874926c50b78f79f5357117ce76ba47126842c266777ceca
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4723ca8cd6a0f9dc1488f2e587fa1929db8cc2a9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279783"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578420"
 ---
 # <a name="country-and-region-zones-for-audio-conferencing"></a>Aree del paese e dell'area geografica per le audioconferenze
 
@@ -84,6 +84,6 @@ Questo articolo elenca le aree del paese e dell'area geografica per le audioconf
 
 - [Disponibilità di Audioconferenza e Piani per chiamate per Paese e area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 - [Periodo di chiamate gratuite di Audioconferenza](complimentary-dial-out-period.md)
-- [Vantaggio minuti per l'abbonamento ai servizi di audioconferenza "Chiamata in uscita"/"Chiamami a"](audio-conferencing-subscription-dial-out.md)
+- [Abbonamento ai servizi di audioconferenza "Chiamata in uscita"/"Chiamami al" minuti di vantaggio](audio-conferencing-subscription-dial-out.md)
 - [Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente](outbound-calling-restriction-policies.md)
 - [Cosa sono i Crediti comunicazioni?](what-are-communications-credits.md)

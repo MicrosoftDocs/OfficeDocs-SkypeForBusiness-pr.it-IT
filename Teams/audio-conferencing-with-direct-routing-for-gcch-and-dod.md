@@ -17,36 +17,36 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: L'amministratore può imparare a usare le audioconferenze con il routing diretto in ambienti GCCH e DoD.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 941d9b18944b0e521fdd3b8c2a830a123eb9c1d30d06aa8f9be21990f9e84f5e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4137aaa3157d680d7758e425db1e9d09dcf9e612
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344375"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578430"
 ---
 # <a name="audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Audioconferenza con Instradamento diretto per GCC High e DoD
 
 Le audioconferenze con routing diretto per GCC High e DoD consentono ai partecipanti di partecipare alle riunioni di Teams nell'organizzazione GCC High o DoD usando un dispositivo telefonico. I partecipanti alla riunione potrebbero scegliere di usare un dispositivo telefonico per partecipare Teams riunioni in scenari come quando la connettività Internet è limitata o quando gli utenti sono in viaggio e non hanno accesso Teams. I partecipanti possono scegliere di partecipare alle riunioni componendo l'accesso a un numero di telefono esterno per l'organizzazione o facendo in modo che la riunione sia con accesso esterno al dispositivo telefonico.
 
-Con le audioconferenze con routing diretto per GCC High e DoD, l'organizzazione usa i propri numeri come numeri di telefono per l'accesso esterno e tutte le chiamate in uscita delle riunioni verso i dispositivi telefonici vengono instradati tramite Routing diretto. Per abilitare il servizio, le organizzazioni devono configurare Il routing diretto e configurare i numeri di telefono che possono essere usati come numeri di telefono per l'accesso esterno. Il requisito per l'uso del routing diretto è diverso dal servizio di audioconferenza offerto alle organizzazioni non GCC High e non DoD in cui i numeri di telefono per l'accesso esterno sono forniti da Microsoft.
+Con le audioconferenze con routing diretto per GCC High e DoD, l'organizzazione usa i propri numeri come numeri di telefono per l'accesso esterno e tutte le chiamate in uscita per le riunioni verso i dispositivi telefonici vengono instradati tramite Routing diretto. Per abilitare il servizio, le organizzazioni devono configurare Il routing diretto e configurare i numeri di telefono che possono essere usati come numeri di telefono per l'accesso esterno. Il requisito per l'uso del routing diretto è diverso dal servizio di audioconferenza offerto alle organizzazioni non GCC High e non DoD in cui i numeri di telefono per l'accesso esterno sono forniti da Microsoft.
 
 ## <a name="deploy-audio-conferencing-with-direct-routing-for-gcc-high-and-dod"></a>Distribuire audioconferenze con routing diretto per GCC High e DoD
 
-### <a name="step-1-get-audio-conferencing-with-direct-routing-for-gcc-high-or-dod-licenses"></a>Passaggio 1: Ottenere audioconferenze con routing diretto per le GCC High o DoD 
+### <a name="step-1-get-audio-conferencing-with-direct-routing-for-gcc-high-or-dod-licenses"></a>Passaggio 1: Ottenere audioconferenze con routing diretto GCC licenze High o DoD 
 
 Per usare le audioconferenze in GCC High o DoD, l'organizzazione e gli utenti dell'organizzazione devono avere una audioconferenza con la licenza Di routing diretto assegnata. Ecco le licenze necessarie per abilitare le audioconferenze con routing diretto GCC High o DoD.
 
-- GCC Alta: una licenza per audioconferenza , GCC High Tenant per l'organizzazione e Audioconferenza, GCC licenze High per gli utenti.
+- GCC Alta: una licenza per audioconferenza , GCC High Tenant per l'organizzazione e audioconferenza, GCC licenze High per gli utenti.
 
 - DoD: Audioconferenza - Licenza DoD Tenant per l'organizzazione e Audioconferenza - Licenze DoD per gli utenti.
 
 Per abilitare il servizio sono necessarie una licenza tenant e almeno una licenza utente. Non è possibile abilitare il servizio solo con la licenza tenant o con solo licenze utente. Per ottenere licenze di servizio per il tenant e gli utenti dell'organizzazione, contattare il team dell'account.
 
 > [!IMPORTANT]
-> Gli utenti non possono essere abilitati per le audioconferenze con routing diretto finché non vengono impostati i numeri di telefono con accesso esterno. È consigliabile non assegnare audioconferenze con routing diretto per le licenze GCC High o DoD agli utenti fino a quando non si configurano i numeri di telefono per l'accesso esterno come descritto in questo articolo.  Se non si seguono queste indicazioni, la tastiera del telefono potrebbe risultare completamente mancante nel client Teams telefono.
+> Gli utenti non possono essere abilitati per le audioconferenze con routing diretto finché non vengono impostati i numeri di telefono con accesso esterno. È consigliabile non assegnare agli utenti audioconferenza con routing diretto per le licenze GCC High o DoD fino a quando non si configurano i numeri di telefono per l'accesso esterno come descritto in questo articolo.  Se non si seguono queste indicazioni, la tastiera del telefono potrebbe risultare completamente mancante nel client Teams telefono.
 
 ### <a name="step-2-set-up-direct-routing"></a>Passaggio 2: Configurare il routing diretto
 
@@ -65,7 +65,7 @@ I numeri di telefono per l'accesso esterno sono i numeri di telefono associati a
 
 #### <a name="define-service-phone-numbers-in-your-tenant"></a>Definire i numeri di telefono del servizio nel tenant
 
-È possibile usare il cmdlet di PowerShell New-csHybridTelephoneNumber per definire i numeri di telefono del servizio nel tenant che possono essere usati per instradare le chiamate al servizio di audioconferenza tramite routing diretto. 
+È possibile usare il cmdlet di PowerShell New-csHybridTelephoneNumber per definire i numeri di telefono del servizio nel tenant che possono essere usati per instradare le chiamate al servizio di audioconferenza tramite Routing diretto. 
 
   ```PowerShell
   New-csHybridTelephoneNumber -TelephoneNumber <Phone number in E.164 format>
@@ -94,10 +94,10 @@ Ad esempio:
 
 ### <a name="step-4-define-a-global-voice-routing-policy-to-enable-the-routing-of-outbound-calls-from-meetings"></a>Passaggio 4: Definire un criterio di routing vocale globale per abilitare il routing delle chiamate in uscita dalle riunioni
 
-Il routing delle chiamate in uscita effettuate alla rete PSTN dalle riunioni organizzate dagli utenti dell'organizzazione è definito dal criterio di routing vocale globale dell'organizzazione. Se l'organizzazione ha definito un criterio di routing vocale globale, verificare che il criterio di routing vocale globale consenta le chiamate in uscita verso la rete PSTN che dovrebbero essere avviate da riunioni organizzate dagli utenti dell'organizzazione. Se nell'organizzazione non è definito un criterio di routing vocale globale, è necessario definirne uno per abilitare il routing delle chiamate in uscita alla rete PSTN dalle riunioni organizzate dagli utenti dell'organizzazione. Tenere presente che il criterio di routing vocale globale dell'organizzazione si applica anche alle chiamate uno-a-uno effettuate alla rete PSTN dagli utenti dell'organizzazione. Se le chiamate uno-a-uno alla rete PSTN sono abilitate per gli utenti dell'organizzazione, assicurarsi che il criterio di routing vocale globale soddisfi le esigenze dell'organizzazione per entrambi i tipi di chiamata. 
+Il routing delle chiamate in uscita effettuate alla rete PSTN dalle riunioni organizzate dagli utenti dell'organizzazione è definito dal criterio di routing vocale globale dell'organizzazione. Se l'organizzazione ha definito un criterio di routing vocale globale, verificare che il criterio di routing vocale globale consenta le chiamate in uscita verso la rete PSTN che dovrebbero essere avviate da riunioni organizzate da utenti dell'organizzazione. Se nell'organizzazione non è definito un criterio di routing vocale globale, è necessario definirne uno per abilitare il routing delle chiamate in uscita alla rete PSTN dalle riunioni organizzate dagli utenti dell'organizzazione. Tenere presente che il criterio di routing vocale globale dell'organizzazione si applica anche alle chiamate uno-a-uno effettuate alla rete PSTN dagli utenti dell'organizzazione. Se le chiamate uno-a-uno alla rete PSTN sono abilitate per gli utenti dell'organizzazione, assicurarsi che il criterio di routing vocale globale soddisfi le esigenze dell'organizzazione per entrambi i tipi di chiamate. 
 
 > [!NOTE]
-> Location-Based routing non è disponibile nelle distribuzioni high Microsoft 365 Government Community Cloud (GCC) High o DoD. Quando si abilitano le audioconferenze, verificare che non siano abilitati gli utenti di audioconferenza negli ambienti GCC High o DoD per Location-Based Routing.
+> Location-Based routing non è disponibile nelle distribuzioni high Microsoft 365 Government Community Cloud (GCC) High o DoD. Quando si abilitano le audioconferenze, verificare che nessun utente di servizi di audioconferenza negli ambienti GCC High o DoD sia abilitato per Location-Based routing.
 
 #### <a name="defining-a-global-voice-routing-policy"></a>Definizione di un criterio di routing vocale globale
 
@@ -131,7 +131,7 @@ Per creare un nuovo criterio di routing vocale, usare il comando seguente:
   New-CsOnlineVoiceRoutingPolicy "InternationalVoiceRoutingPolicy" -OnlinePstnUsages "International"
   ```
 
-Se nel criterio di routing vocale vengono definiti più utilizzi PSTN, questi verranno valutati nell'ordine in cui sono definiti. È consigliabile che gli utilizzi PSTN siano definiti nell'ordine più specifico di quello più generico in termini di modelli di numero delle route vocali associate agli utilizzi PSTN. Ad esempio, se è stato definito un utilizzo PSTN per instradare le chiamate verso gli Stati Uniti e un altro utilizzo PSTN è stato definito per instradare le chiamate a qualsiasi altra località del mondo, l'utilizzo PSTN per le chiamate verso gli Stati Uniti dovrebbe essere elencato nei criteri di routing vocale prima dell'utilizzo pstn per instradare le chiamate a qualsiasi altra posizione nel mondo.
+Se nel criterio di routing vocale vengono definiti più utilizzi PSTN, questi verranno valutati nell'ordine in cui sono definiti. È consigliabile che gli utilizzi PSTN siano definiti nell'ordine più specifico di quello più generico in termini di modelli di numero delle route vocali associate agli utilizzi PSTN. Ad esempio, se è stato definito un utilizzo PSTN per instradare le chiamate verso gli Stati Uniti e un altro utilizzo PSTN è stato definito per instradare le chiamate a qualsiasi altra località del mondo, l'utilizzo PSTN per le chiamate verso gli Stati Uniti dovrebbe essere elencato nei criteri di routing vocale prima dell'utilizzo pstn per instradare le chiamate a qualsiasi altra posizione del mondo.
 
 Per altre informazioni, vedere [New-CsOnlineVoiceRoutingPolicy.](/powershell/module/skype/new-csonlinevoiceroutingpolicy)
 
@@ -147,7 +147,7 @@ Dopo aver definito il criterio di routing vocale globale, le chiamate in uscita 
 
 ### <a name="step-5-assign-audio-conferencing-with-direct-routing-for-gcc-high-or-dod-licenses-to-your-users"></a>Passaggio 5: Assegnare audioconferenze con routing diretto GCC licenze High o DoD agli utenti
 
-Per assegnare audioconferenze con routing diretto GCC licenze High o DoD all'utente, vedere [Assegnare licenze agli utenti](/microsoft-365/admin/manage/assign-licenses-to-users).
+Per assegnare audioconferenze con routing diretto GCC licenze High o DoD all'utente, vedere [Assegnare licenze agli utenti.](/microsoft-365/admin/manage/assign-licenses-to-users)
 
 ### <a name="step-6-optional-see-a-list-of-audio-conferencing-numbers-in-teams"></a>Passaggio 6: (Facoltativo) Vedere un elenco di numeri di audioconferenza in Teams
 
@@ -173,4 +173,4 @@ Di seguito sono riportate le funzionalità di audioconferenza non supportate nel
 
 - Disabilitare l'uso di numeri verde per l'organizzatore specifico delle riunioni. I controlli a livello utente per limitare l'uso di numeri verde per partecipare alle riunioni dell'organizzazione non sono applicabili alle chiamate instradati tramite Routing diretto.
 
-- Invio di messaggi di posta elettronica di notifica agli utenti quando le impostazioni cambiano. I messaggi di posta elettronica di notifica delle audioconferenze non sono supportati per le audioconferenze con routing diretto GCC High e DoD.
+- Invio di messaggi di posta elettronica di notifica agli utenti quando le impostazioni cambiano. I messaggi di posta elettronica di notifica di audioconferenza non sono supportati per le audioconferenze con routing diretto per GCC High e DoD.

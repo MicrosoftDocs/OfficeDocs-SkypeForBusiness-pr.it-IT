@@ -9,25 +9,25 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4ebd710c-38cd-4cff-9a45-df029d424580
 description: 'Riepilogo: informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server di controllo.'
-ms.openlocfilehash: 2fc0a939a5f321254378ae93afe56015135d4f9873482d8489e06568651913e2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 74a1b9b88adcce3164cd8bebc761d9868e8b0f1f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54297562"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594094"
 ---
 # <a name="create-a-new-collection-of-trunk-configuration-settings-in-skype-for-business-server"></a>Creare una nuova raccolta di impostazioni di configurazione trunk in Skype for Business Server 
 
 **Riepilogo:** Informazioni su come creare una nuova raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server controllo.
   
-Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Branch eXchange) di IP-Public o un session border controller (SBC) presso il provider di servizi. Queste impostazioni consentono di specificare quanto segue:
+Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Branch eXchange) di IP-Public o un session border controller (SBC) presso il provider di servizi. Queste impostazioni consentono di specificare quanto segue:
   
 - Se abilitare il bypass multimediale nei trunk.
     
@@ -65,7 +65,7 @@ Quando si creano le impostazioni di configurazione dei trunk SIP Skype for Busin
   
 ### <a name="to-create-new-trunk-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Per creare nuove impostazioni di configurazione trunk tramite Skype for Business Server pannello di controllo
 
-1. Nel Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
+1. Nel Skype for Business Server di controllo fare clic **su Routing vocale** e quindi su Configurazione **trunk.**
     
 2. Nella scheda Configurazione **trunk** fare clic  su **Nuovo** e quindi su Trunk sito per creare le nuove impostazioni nell'ambito del sito oppure trunk del **pool** per creare le nuove impostazioni nell'ambito del servizio.
     

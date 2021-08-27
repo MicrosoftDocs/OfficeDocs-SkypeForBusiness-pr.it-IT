@@ -9,7 +9,7 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-voice
@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: "Riepilogo: informazioni su come configurare l'interoperabilità tra la distribuzione locale e Teams."
-ms.openlocfilehash: 8a5d40ea56ca4cfdce6f748bea1d276bbb2727eb2669390e6ee6fb006bfd22ed
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 98248452151f03cec803568c93549188f9cf8e5d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319569"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58587968"
 ---
 # <a name="configure-skype-for-business-hybrid"></a>Configurare Skype for Business ibrido
 
@@ -45,7 +45,7 @@ La federazione consente agli utenti della distribuzione locale di comunicare con
 Set-CSAccessEdgeConfiguration -AllowOutsideUsers $True -AllowFederatedUsers $True -EnablePartnerDiscovery $True -UseDnsSrvRouting
 ```
 
-Se il valore '-EnablePartnerDiscovery' è impostato su $True, Skype for Business Server utilizzerà i record DNS per cercare di individuare i domini partner non elencati nell'elenco AllowedDomains. Se il valore è impostato su $False , Skype for Business Server solo i domini trovati nell'elenco AllowedDomains. Questo parametro è obbligatorio se si utilizza il routing del servizio DNS.
+Se il valore "-EnablePartnerDiscovery" è impostato su $True, Skype for Business Server utilizzerà i record DNS per cercare di individuare i domini partner non elencati nell'elenco AllowedDomains. Se il valore è impostato su $False , Skype for Business Server solo federati con i domini trovati nell'elenco AllowedDomains. Questo parametro è obbligatorio se si utilizza il routing del servizio DNS.
 
 > [!NOTE]
 > Per ulteriori informazioni sull'abilitazione della federazione tra gli utenti della distribuzione di Skype for Business locale e gli utenti di un'organizzazione di Microsoft 365, vedere [Configuring federation support for a Microsoft 365 customer in Skype for Business Server](../../SfbServer/manage/federation-and-external-access/federation-support/configuring-federation-support.md).
@@ -53,7 +53,7 @@ Se il valore '-EnablePartnerDiscovery' è impostato su $True, Skype for Business
 
 ## <a name="configure-your-on-premises-environment-to-enable-shared-sip-address-space-with-teams"></a>Configurare l'ambiente locale per abilitare lo spazio di indirizzi SIP condiviso con Teams
 
-È inoltre necessario configurare l'ambiente locale in modo che ritieni attendibile Teams e abilitare lo spazio di indirizzi SIP condiviso. Questa configurazione significa Teams possono ospitare account utente per lo stesso set di domini SIP dell'ambiente locale e i messaggi possono essere instradati tra gli utenti ospitati in locale e online. Configurare un provider di hosting con ProxyFqdn=sipfed.online.lync.com come descritto di seguito.
+È inoltre necessario configurare l'ambiente locale in modo che ritieni attendibile Teams e abilitare lo spazio di indirizzi SIP condiviso. Questa configurazione Teams può ospitare account utente per lo stesso set di domini SIP dell'ambiente locale e i messaggi possono essere instradati tra gli utenti ospitati in locale e online. Configurare un provider di hosting con ProxyFqdn=sipfed.online.lync.com come descritto di seguito.
 
 Verificare innanzitutto se si dispone già di un provider di hosting con ProxyFqdn=sipfed.online.lync.com. Se ne esiste uno, rimuoverlo utilizzando il comando seguente in Skype for Business Server Management Shell:
 
@@ -71,7 +71,7 @@ New-CsHostingProvider -Identity Office365 -ProxyFqdn "sipfed.online.lync.com" -E
   
 Oltre alla modifica apportata nella distribuzione locale, è necessario apportare la modifica corrispondente nell'organizzazione di Teams per l'attivazione dello spazio di indirizzi SIP condiviso con la distribuzione locale.  
 
-Per abilitare lo spazio di indirizzi SIP condiviso nell'organizzazione, stabilire una sessione remota di PowerShell con Teams ed eseguire il cmdlet seguente:
+Per abilitare lo spazio di indirizzi SIP condiviso nell'organizzazione, stabilire una sessione remota di PowerShell con Teams, quindi eseguire il cmdlet seguente:
   
 ```PowerShell
 Set-CsTenantFederationConfiguration -SharedSipAddressSpace $true
@@ -91,7 +91,7 @@ Dopo aver installato il modulo, è possibile stabilire una sessione remota con i
    Connect-MicrosoftTeams -Credential $credential
    ```
 
-Per ulteriori informazioni su come stabilire una sessione remota di PowerShell con Teams e su come usare il modulo powershell di Teams, vedere [Set up your computer for Windows PowerShell](../../SfbOnline/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
+Per ulteriori informazioni su come stabilire una sessione remota di PowerShell con Teams e su come usare il modulo powershell di Teams, vedere [Set up your computer for Windows PowerShell.](../../SfbOnline/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
   
 
 

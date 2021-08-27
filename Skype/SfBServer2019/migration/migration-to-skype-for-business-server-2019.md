@@ -9,24 +9,24 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: Negli argomenti di questa sezione viene guidato il processo di migrazione a Skype for Business Server 2019.
-ms.openlocfilehash: 1014fe5d491823c427eb588aac86757afb997578b519abf2249f481c91a3d4aa
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Gli argomenti di questa sezione guidano l'utente nel processo di migrazione a Skype for Business Server 2019.
+ms.openlocfilehash: 6eb192c11ec8d1f44539e3bd5180249d85180d2b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303400"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58587978"
 ---
 # <a name="migration-to-skype-for-business-server-2019"></a>Migrazione a Skype for Business Server 2019
 
-Negli argomenti di questa sezione viene guidato il processo di migrazione a Skype for Business Server 2019. In questo articolo viene illustrata la migrazione di Lync Server 2013 o Skype for Business Server 2015 a Skype for Business Server 2019.
+Gli argomenti di questa sezione guidano l'utente nel processo di migrazione a Skype for Business Server 2019. In questo articolo viene illustrata la migrazione di Lync Server 2013 o Skype for Business Server 2015 a Skype for Business Server 2019.
 
 > [!IMPORTANT]
 > In tutto il contenuto viene utilizzato il termine *legacy* per fare riferimento all'legacy di Lync Server 2013 o Skype for Business Server 2015 di cui si esegue la migrazione a Skype for Business Server 2019.
   
 > [!IMPORTANT]
-> In questa guida vengono descritti i passaggi generalmente necessari per eseguire ogni fase della migrazione. Non tratta tutte le possibili topologie di distribuzione legacy o ogni possibile scenario di migrazione. Pertanto, potrebbe non essere necessario eseguire tutti i passaggi descritti oppure eseguire passaggi aggiuntivi, a seconda della distribuzione. Questa guida fornisce anche esempi di passaggi di verifica. Questi passaggi di verifica vengono forniti per comprendere cosa è necessario cercare per assicurarsi che ogni fase sia completata correttamente man mano che si procede con la migrazione. Adattare questi passaggi di verifica al processo di migrazione specifico. 
+> In questa guida vengono descritti i passaggi generalmente necessari per eseguire ogni fase della migrazione. Non tratta tutte le possibili topologie di distribuzione legacy o ogni possibile scenario di migrazione. Di conseguenza, potrebbe non essere necessario eseguire ogni passaggio descritto oppure potrebbe essere necessario eseguire passaggi aggiuntivi, a seconda della distribuzione. Questa guida fornisce anche esempi di passaggi di verifica. Questi passaggi di verifica vengono forniti per comprendere cosa è necessario cercare per assicurarsi che ogni fase sia completata correttamente man mano che si procede con la migrazione. Adattare questi passaggi di verifica al processo di migrazione specifico. 
   
 In questa guida vengono fornite informazioni specifiche per l'aggiornamento della distribuzione esistente. Non viene spiegato come modificare la topologia esistente. In questa guida non viene illustrata l'implementazione di nuove funzionalità. Quando una procedura dettagliata viene documentata altrove, questa guida indirizza l'utente all'articolo o alla sezione dell'articolo. 
   

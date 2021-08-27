@@ -12,21 +12,21 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.SecPinPolicyMain
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 16e5b03c-c313-4792-9353-65f33b5e775a
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: db229077d658b9efee902270fc0a294ec3cce40558f6a2509379d09c1e5ba009
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8a1947f36513be55f037a30758b19c5941e213fd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321908"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581570"
 ---
 # <a name="pin-policy"></a>Criteri PIN
 
 Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire.
 
- **Usare i criteri PIN per i telefoni IP** Questo criterio PIN supporta l'autenticazione per gli utenti che si connettono a Skype for Business Server tramite un telefono IP.
+ **Usare i criteri PIN per i telefoni IP** Questo criterio PIN (Personal Identification Number) supporta l'autenticazione per gli utenti che si connettono a Skype for Business Server tramite un telefono IP.
 - [Creare un nuovo criterio PIN in Skype for Business Server 2015](../../manage/authentication/create-a-new-pin-policy.md)
 
 - [Modificare un criterio PIN esistente in Skype for Business Server 2015](../../manage/authentication/modify-an-existing-pin-policy.md)

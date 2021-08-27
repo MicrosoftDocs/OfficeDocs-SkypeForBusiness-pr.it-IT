@@ -15,19 +15,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come cercare i numeri di conferenza telefonica con accesso esterno disponibili per le audioconferenze dall'interno Microsoft Teams.
-ms.openlocfilehash: bc10e9d5d7ffe3dd46ec9e0c541c3663190a339675b540e0109140661f37c32d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3e4e1c80d04cdb07b9d2d7ce993f4cab28de2155
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54293013"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58601111"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri di audioconferenza in Microsoft Teams
 
@@ -51,7 +51,7 @@ Se è disponibile un solo numero di telefono all'interno dell'organizzazione, qu
 
 - È anche possibile visualizzare la posizione e la lingua principale che verranno usate dall'operatore automatico di audioconferenza.
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

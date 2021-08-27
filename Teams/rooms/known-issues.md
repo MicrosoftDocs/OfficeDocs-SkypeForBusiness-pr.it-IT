@@ -9,17 +9,17 @@ ms.topic: article
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 description: L'amministratore può ottenere informazioni su un elenco di problemi noti per Microsoft Teams Rooms, tra cui aggiornamento, interfaccia utente, hardware e limitazioni e comportamenti previsti.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2fdc4a641c5f507ed52f76779cee77aebe3897188f508f46a54747b4710ba424
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: adf3b0fb7642b4a9774459527af304fe33167352
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345365"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578320"
 ---
 # <a name="known-issues"></a>Problemi noti 
  
@@ -61,7 +61,9 @@ Microsoft Teams Rooms non supporta l'input HDCP, che è stato osservato per caus
 
 ***
 
-Se desideri che un display frontale passi automaticamente a un’origine video attiva (come una console MTR) quando l’origine si sveglia dalla modalità standby, devono essere soddisfatte alcune condizioni. Questa funzionalità è facoltativa ma supportata dal software Microsoft Teams Rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore utente usato come display frontale della sala deve supportare la funzionalità Consumer Electronics Control (CEC) di HDMI.  A seconda del dock o della console selezionati (che potrebbe non supportare CEC, fare riferimento alla documentazione di supporto del produttore), potrebbe essere necessario un controller come un [HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato. 
+Se desideri che un display frontale passi automaticamente a un’origine video attiva (come una console MTR) quando l’origine si sveglia dalla modalità standby, devono essere soddisfatte alcune condizioni. Questa funzionalità è facoltativa ma supportata dal software Microsoft Teams Rooms, purché l'hardware sottostante supporti la funzionalità. Un televisore utente usato come display frontale della sala deve supportare la funzionalità Consumer Electronics Control (CEC) di HDMI.  A seconda del dock o della console selezionati (che potrebbe non supportare CEC, fare riferimento alla documentazione di supporto del produttore), potrebbe essere necessario un controller come un [HD-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [Extron HD CTL 100](https://www.extron.com/article/hdctl100ad) da Extron per abilitare il comportamento desiderato.
+
+Inoltre, una TV consumer usata come schermo anteriore della sala può causare problemi di stabilità con Microsoft Teams Rooms software. Ciò è dovuto all'implementazione incoerente delle modalità di standby, alla selezione dell'origine video attiva e alla comunicazione di informazioni edID difettose al Microsoft Teams Rooms dispositivo. I sintomi noti sono uno schermo nero/grigio nella parte anteriore dello schermo della stanza o la console Microsoft Teams Rooms non risponde dopo il risveglio dalla modalità standby.  Se si verificano problemi durante l'uso di televisori consumer, è consigliabile installare un controller EDID configurabile o un emulatore EDID, ad esempio [hd-RX-201-C-E](https://www.crestron.com/Products/Video/HDMI-Solutions/HDMI-Extenders/HD-RX-201-C-E) da Crestron o [DR-EDID Emulator](https://fsrinc.com/fsr-products/product/dr-edid-manager-learner/category_pathway-143) dal gruppo fsr Video Products Group.
 
 ***
 
