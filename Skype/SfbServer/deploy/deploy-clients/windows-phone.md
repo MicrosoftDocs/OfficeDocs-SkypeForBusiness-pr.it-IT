@@ -9,21 +9,21 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 54289bbe-97e7-44bf-8611-4e740fc5b998
 description: 'Riepilogo: informazioni su come installare e testare Skype for Business nel Windows Phone.'
-ms.openlocfilehash: bbb1947ac1982b54ab8cd2e0005cdf4c7aec62ff69e88f8f32df881616c7d11f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f912c1f5bd3c0bd5f8c3cc553c64ee3b7850f63e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338864"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618152"
 ---
 # <a name="install-and-test-skype-for-business-for-windows-phone"></a>Installare e testare Skype for Business per Windows Phone
  
 **Riepilogo:** Informazioni su come installare e testare Skype for Business nel Windows Phone.
   
-L Skype for Business per Windows Phone app porta Skype for Business presenza, messaggistica istantanea e chiamate vocali e video Windows dispositivi mobili. Gli utenti con Lync 2013 o riceveranno automaticamente l'app aggiornata o verrà richiesto di aggiornarla manualmente, a seconda delle impostazioni utente. I nuovi utenti possono scaricarlo da [Windows Phone Marketplace.](https://go.microsoft.com/fwlink/p/?linkid=231901) L Skype for Business per Windows Phone app è disponibile solo in Windows Phone 8.1 e versioni successive.
+L Skype for Business per Windows Phone app offre Skype for Business, messaggistica istantanea e chiamate vocali e video Windows dispositivi mobili. Gli utenti con Lync 2013 o riceveranno automaticamente l'app aggiornata o verrà richiesto di aggiornarla manualmente, a seconda delle impostazioni utente. I nuovi utenti possono scaricarlo [da Windows Phone Marketplace.](https://go.microsoft.com/fwlink/p/?linkid=231901) L Skype for Business per Windows Phone app è disponibile solo in Windows Phone 8.1 e versioni successive.
   
 Prima di indirizzare gli utenti dell'organizzazione a scaricare l'app, è necessario eseguire i test seguenti per verificare che sia correttamente integrata nell'ambiente. 
   
@@ -45,16 +45,16 @@ Prima di indirizzare gli utenti dell'organizzazione a scaricare l'app, è necess
     
 3. Nella schermata **Analisi** utilizzo software  toccare Partecipa per inviare a Microsoft  dati anonimi relativi a problemi e utilizzo dell'app oppure No grazie se si preferisce non partecipare.
     
-4. Nella schermata **Non perdere mai le chiamate di lavoro** immetti il tuo numero di cellulare con i codici paese e area geografica. Quando Skype for Business per Windows Phone non è possibile usare una rete dati Wi-Fi o cellulare per effettuare una chiamata audio o video, verrà chiamato automaticamente a questo numero e connesso alla parte audio della chiamata.
+4. Nella schermata **Non perdere mai le chiamate di lavoro** immetti il numero di cellulare con i codici paese e area geografica. Quando Skype for Business per Windows Phone non è possibile usare una rete dati Wi-Fi o cellulare per effettuare una chiamata audio o video, verrà chiamato automaticamente a questo numero e connesso alla parte audio della chiamata.
     
 5. Toccare **Avanti ed** esaminare le impostazioni di accesso alle notifiche e alla rubrica:
     
    - **Notifiche push** Ricevere un avviso quando si riceve una nuova messaggistica istantanea o una nuova chiamata. Normalmente **on** (scelta consigliata).
     
      > [!IMPORTANT]
-     > Se dissegni questa impostazione, non ti verrà notificato di messaggistica unificata, chiamate o altri avvisi Skype for Business per Windows Phone a meno che l'app non sia attiva. 
+     > Se dissegni questa impostazione, non ti verranno notificati messaggistica unificata, chiamate o altri avvisi Skype for Business per Windows Phone a meno che l'app non sia attiva. 
   
-   - **Consentire l'accesso alla rubrica** Cercare i contatti nel telefono cellulare quando si ricercano i contatti in Skype for Business per Windows Phone.
+   - **Consentire l'accesso alla rubrica** Cercare i contatti sul cellulare quando si ricercano i contatti in Skype for Business per Windows Phone.
     
 6. Toccare **Avanti** per iniziare a usare Skype for Business per Windows Phone.
     
@@ -98,7 +98,7 @@ Dopo aver configurato il client e aver eseguito correttamente l'accesso, usa i t
     
 3. Apri un'altra applicazione nel dispositivo.
     
-4. In un altro client, ad esempio il client desktop, accedi a Skype for Business con l'account dell'utente B.
+4. In un client diverso, ad esempio il client desktop, accedere a Skype for Business con l'account dell'utente B.
     
 5. Inviare un messaggio istantaneo dall'utente B all'utente A.
     

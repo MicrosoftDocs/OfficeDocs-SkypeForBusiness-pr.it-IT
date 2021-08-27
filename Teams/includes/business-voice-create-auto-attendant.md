@@ -8,7 +8,7 @@ Questo video mostra un esempio di base di come creare un operatore automatico in
 
 Ottenere i numeri di servizio (i numeri di servizio sono un tipo speciale di numero di telefono usato dagli operatori automatici) necessari per gli operatori automatici a cui si vuole essere accessibili componendo direttamente dall'esterno dell'organizzazione. Questo può includere [il trasferimento di numeri da un altro provider o](../phone-number-calling-plans/transfer-phone-numbers-to-teams.md) la richiesta di nuovi numeri di [servizio.](../getting-service-phone-numbers.md)
 
-A ogni operatore automatico deve essere assegnata una licenza Sistema telefonico - Utente virtuale. Quando hai acquistato Business Voice, hai ricevuto anche un certo numero di licenze Sistema telefonico - Utente virtuale, quindi probabilmente non devi richiedere altro. Tuttavia, se ne servono di più in futuro, è possibile [ottenerli](../teams-add-on-licensing/virtual-user.md)seguendo le istruzioni in Sistema telefonico - Licenza utente virtuale .
+A ogni operatore automatico deve essere assegnata una licenza Sistema telefonico - Utente virtuale. Quando hai acquistato Business Voice, hai ricevuto anche una serie di licenze Sistema telefonico - Virtual User, quindi probabilmente non è necessario richiedere altro. Tuttavia, se ne servono di più in futuro, è possibile ottenerli seguendo le istruzioni in [Sistema telefonico - Licenza utente virtuale](../teams-add-on-licensing/virtual-user.md).
 
 Se si vuole che l'operatore automatico instradi le chiamate in modo diverso durante le festività, creare le festività da usare prima di creare l'operatore automatico. [](../set-up-holidays-in-teams.md)
 
@@ -25,7 +25,7 @@ Ogni operatore automatico creato richiede un account della risorsa. È simile a 
 
 ### <a name="create-a-resource-account"></a>Creare un account della risorsa
 
-È possibile creare un account della risorsa nell'Teams di amministrazione.
+È possibile creare un account delle risorse nell'Teams di amministrazione.
 
 1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su **Account risorse.**
 
@@ -45,19 +45,19 @@ Ogni operatore automatico creato richiede un account della risorsa. È simile a 
 
 È necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale all'account della risorsa.
 
-1. Nell'Microsoft 365 di amministrazione fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
+1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
 
 2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 
-3. Fare clic **su Salva modifiche**.
+3. Fare clic su **Salva modifiche**.
 
-    ![Screenshot dell'interfaccia utente per l'assegnazione di licenze nell'interfaccia Microsoft 365 di amministrazione](../media/resource-account-assign-virtual-user-license.png)
+    ![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
 
 ### <a name="assign-a-service-number"></a>Assegnare un numero di servizio
 
 Se è necessario che questo operatore automatico sia raggiungibile da un numero di telefono, assegnare tale numero all'account della risorsa.
 
-1. Nella pagina Account risorse dell'interfaccia  di amministrazione di Teams selezionare l'account della risorsa a cui si vuole assegnare un numero di servizio e quindi fare clic su **Assegna/annulla assegnazione.**
+1. Nella pagina Account risorse dell'interfaccia di amministrazione di Teams selezionare l'account della risorsa a cui si vuole assegnare un numero di servizio e quindi fare clic su **Assegna/annulla assegnazione.** 
 
 2. **Nell'Telefono tipo di** numero selezionare il tipo di numero da usare.
 
@@ -111,7 +111,7 @@ Scegliere le opzioni del flusso di chiamata
 
     Se si seleziona **Reindirizza chiamata,** è possibile scegliere una delle destinazioni di routing delle chiamate.
 
-    Se si seleziona **Opzioni di menu** Riproduci , è possibile scegliere Riproduci un file **audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
+    Se si seleziona **Opzioni menu** Riproduci , è possibile scegliere Riproduci un **file audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
 
     ![Screenshot delle impostazioni di routing delle chiamate](../media/auto-attendant-call-flow-route-call-message.png)
 
@@ -137,14 +137,14 @@ Scegliere le opzioni del flusso di chiamata
 
     ![Screenshot delle opzioni dei tasti di scelta](../media/auto-attendant-call-flow-menu-options-complete.png)
 
-4. Se si vuole usare questo operatore automatico come directory aziendale, in **Ricerca directory** selezionare Chiama **per nome.** Quando si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Qualsiasi utente online con una Sistema telefonico licenza è un utente idoneo e può essere trovato con Chiama per nome. 
+4. Se si vuole usare questo operatore automatico come directory aziendale, in **Ricerca directory** selezionare Chiama **per nome.** Quando si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Qualsiasi utente online con una licenza Sistema telefonico è un utente idoneo e può essere trovato con Chiama per nome. 
 
     È possibile scegliere Chiama **per interno,** tuttavia l'interno deve essere configurato in Azure Active Directory.
 
 5. Dopo aver selezionato **un'opzione di ricerca nella directory,** fare clic su **Avanti.**
 
 > [!div class="nextstepaction"]
-> [Passaggio 4 - Flusso di chiamate dopo l'>](?tabs=after-hours#steps)
+> [Passaggio 4 - Flusso di chiamate dopo le ore >](?tabs=after-hours#steps)
 
 # <a name="step-4brafter-hours"></a>[Passaggio 4 <br> Dopo ore](#tab/after-hours)
 
@@ -165,7 +165,7 @@ Al **termine,** fare clic su Avanti.
 
 # <a name="step-5brholidays"></a>[Passaggio 5 <br> Festività](#tab/holidays)
 
-Le chiamate all'operatore automatico possono essere instradati in modo diverso nei giorni festivi rispetto agli altri giorni. Se non si vuole avere un flusso di chiamate diverso per le festività, è possibile saltare questo passaggio.
+Le chiamate all'operatore automatico possono essere instradati in modo diverso nei giorni festivi rispetto ad altri giorni. Se non si vuole avere un flusso di chiamate diverso per le festività, è possibile saltare questo passaggio.
 
 L'operatore automatico può avere un flusso di chiamate per ogni festività impostata. È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
@@ -194,13 +194,13 @@ L'operatore automatico può avere un flusso di chiamate per ogni festività impo
     Dopo aver aggiunto tutte le festività, fare clic su **Avanti.**
 
 > [!div class="nextstepaction"]
-> [Passaggio 6 - Scegliere chi è nella directory >](?tabs=dial-scope#steps)
+> [Passaggio 6 - Scegliere gli utenti presenti nella directory >](?tabs=dial-scope#steps)
 
 # <a name="step-6brdirectory-members"></a>[Passaggio 6 <br> Membri della directory](#tab/dial-scope)
 
-*L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli** utenti online include tutti gli utenti dell'organizzazione che hanno una licenza Sistema telefonico online.
+*L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli utenti online** include tutti gli utenti dell'organizzazione che hanno una licenza Sistema telefonico online.
 
-È possibile includere o escludere utenti specifici  selezionando  Gruppo di utenti personalizzato in Includi o Escludi e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza.  Ad esempio, è consigliabile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
+È possibile includere o escludere utenti specifici  selezionando  Gruppo di utenti personalizzato in Includi o Escludi e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza.  Ad esempio, è possibile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
 
 ![Screenshot delle opzioni di inclusione ed esclusione dell'ambito di chiamata](../media/auto-attendant-dial-scope.png)
 
@@ -224,7 +224,7 @@ Per aggiungere un account della risorsa
 
 2. Dopo aver aggiunto gli account del servizio, fare clic su **Invia.**
 
-    ![Screenshot dell'elenco degli account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato](../media/auto-attendant-resource-account-assigned.png)
+    ![Screenshot dell'elenco di account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato](../media/auto-attendant-resource-account-assigned.png)
 
     La configurazione dell'operatore automatico viene completata.
 

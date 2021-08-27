@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddFrontEndMachinePage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e7fe2522-1bd2-416a-9dbb-51cacea9c6e0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Specificare il nome di dominio completo (FQDN) di ogni computer che si desidera aggiungere come Front End Server nel pool. Dopo aver aggiunto un computer all'elenco, è possibile aggiornare l'FQDN del computer o rimuoverlo dal pool in qualsiasi momento prima di pubblicare la topologia. Dopo la pubblicazione della topologia, per poter modificare l'FQDN, è necessario eliminare il server in Generatore di topologie e quindi aggiungere al pool un nuovo server con il nuovo FQDN. Per informazioni dettagliate sull'aggiunta di un pool Front End alla topologia, vedere Define and Configure a Front End Pool nella documentazione relativa alla distribuzione.
-ms.openlocfilehash: 2105f316edc6a73d2758a5824028b4cc9b177a2be283e0665a836872656b7e17
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f1624a2e8abbba455abf0982c33730d95235e1f4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54311874"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625408"
 ---
 # <a name="add-front-end-machine"></a>Aggiungere un computer front-end
 

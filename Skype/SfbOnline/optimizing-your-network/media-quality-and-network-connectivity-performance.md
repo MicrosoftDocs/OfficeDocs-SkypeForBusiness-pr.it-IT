@@ -14,48 +14,48 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Optimization
-description: Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Microsoft Teams e come scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Microsoft Teams in base alla valutazione della connettività di rete. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Microsoft 365 o Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni ExpressRoute in diversi scenari di distribuzione Microsoft Teams distribuzione.
-ms.openlocfilehash: c73922af3befc9070127d9b9937a82f8b8d94e0b
-ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
+description: Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Microsoft Teams e come è possibile scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Microsoft Teams in base alla valutazione della connettività di rete. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Microsoft 365 o Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni ExpressRoute in diversi scenari Microsoft Teams distribuzione.
+ms.openlocfilehash: 3699e225f69deda5fd69b2308dc50337a1d0b228
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58407035"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618242"
 ---
 # <a name="media-quality-and-network-connectivity-performance-in-microsoft-teams"></a>Qualità multimediale e prestazioni della connettività di rete in Microsoft Teams
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Microsoft Teams e come scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Microsoft Teams in base alla valutazione della connettività di rete. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Microsoft 365 o Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni ExpressRoute in diversi scenari di distribuzione Microsoft Teams distribuzione.
+Questo argomento definisce il set di requisiti di prestazioni di rete per i servizi Microsoft Teams e come è possibile scegliere di usare Internet o ExpressRoute per la connettività tra la rete e Microsoft Teams in base alla valutazione della connettività di rete. Se si è deciso di distribuire Azure ExpressRoute per la connettività dedicata a Microsoft 365 o Office 365, questo documento fornisce anche indicazioni su come pianificare le connessioni ExpressRoute in diversi scenari Microsoft Teams distribuzione.
   
 La qualità dei Real-Time multimediali (audio, video e condivisione di applicazioni) su IP è notevolmente influenzata dalla qualità della connettività di rete end-to-end. Per garantire Microsoft Teams qualità ottimale dei supporti multimediali, è importante assicurarsi che ci sia una connessione di alta qualità tra la rete aziendale e Microsoft Teams. Il modo migliore per eseguire questa operazione è configurare la rete interna e la connettività cloud in base alla capacità della rete di gestire il volume di traffico di punta per Microsoft Teams su tutte le connessioni.
   
-Azure ExpressRoute non è un requisito per i servizi Microsoft 365 e Office 365, tra cui Microsoft Teams. Tuttavia, Azure ExpressRoute è una delle opzioni di distribuzione disponibili che consentono di verificare che la connettività a Microsoft 365 o Office 365 soddisfi i requisiti di prestazioni di rete di Microsoft Teams e garantisca l'esperienza di qualità multimediale Microsoft Teams ottimale.
+Azure ExpressRoute non è un requisito per Microsoft 365 e Office 365 servizi, inclusi Microsoft Teams. Tuttavia, Azure ExpressRoute è una delle opzioni di distribuzione disponibili che consentono di verificare che la connettività a Microsoft 365 o Office 365 soddisfi i requisiti di prestazioni di rete di Microsoft Teams e garantisca l'esperienza di qualità multimediale Microsoft Teams ottimale.
   
 > [!TIP]
-> Anche se in questo argomento sono disponibili indicazioni generali sulle prestazioni di rete, le istruzioni complete per la valutazione della rete non rientra nell'ambito di questo documento. Per trovare un elenco di Microsoft Teams partner che possono aiutarti con le misurazioni delle prestazioni di rete nell'ambito di una valutazione completa e completa della rete, visita Skype for Business [Partner Solutions](http://partnersolutions.skypeforbusiness.com/). 
+> Anche se in questo argomento sono disponibili indicazioni generali sulle prestazioni di rete, le istruzioni complete per la valutazione della rete non rientra nell'ambito di questo documento. Per trovare un elenco di Microsoft Teams partner che possono aiutarti con le misurazioni delle prestazioni di rete nell'ambito di una valutazione approfondita e completa della rete, visita Skype for Business [Partner Solutions](http://partnersolutions.skypeforbusiness.com/). 
   
 ## <a name="network-connectivity-requirements-to-microsoft-teams"></a>Requisiti di connettività di rete per Microsoft Teams
 
-### <a name="factors-that-impact-microsoft-teams-media-quality"></a>Fattori che influiscono sulla qualità Microsoft Teams dei supporti multimediali
+### <a name="factors-that-impact-microsoft-teams-media-quality"></a>Fattori che influiscono sulla qualità Microsoft Teams media
 
 Esistono molti fattori diversi che contribuiscono alla qualità Microsoft Teams Real-Time multimediale (audio, video e condivisione di applicazioni) che include i dispositivi usati, l'ambiente e la connettività di rete. 
   
 #### <a name="devices"></a>Dispositivi
 
-In una Real-Time multimediale, i dispositivi di acquisizione e rendering multimediali usati da tutti i partecipanti, ad esempio cuffie e web cam, hanno un impatto notevole sulla qualità audio e video complessiva. I dispositivi di bassa qualità o dotati di driver non adeguati produrranno suoni audio o immagini video di qualità inferiore. I dispositivi certificati o i dispositivi di buona qualità consentono l'annullamento dell'eco, il filtro del rumore, la risoluzione video e la riduzione della latenza.
+In una Real-Time multimediale, i dispositivi di acquisizione e rendering multimediali usati da tutti i partecipanti, ad esempio cuffie e webcam, hanno un impatto notevole sulla qualità audio e video complessiva. I dispositivi di bassa qualità o dotati di driver non adeguati produrranno suoni audio o immagini video di qualità inferiore. I dispositivi certificati o i dispositivi di buona qualità consentono l'annullamento dell'eco, il filtro del rumore, la risoluzione video e la riduzione della latenza.
   
-Anche se i dispositivi multimediali audio e video certificati non sono necessari, si tratta di dispositivi altamente consigliati certificati per Microsoft Teams per un'esperienza multimediale ottimale. Per un elenco di tutti i Microsoft Teams certificati, vedere Telefoni e dispositivi [per Skype for Business](../../SfbPartnerCertification/certification/devices-ip-phones.md). È possibile usare il [dashboard](/microsoftteams/turning-on-and-using-call-quality-dashboard)Microsoft Teams qualità delle chiamate, disponibile nell'interfaccia di amministrazione di **Skype for Business**, per verificare che i dispositivi in uso funzionino correttamente e monitorare la qualità dei supporti audio e video.
+Anche se i dispositivi multimediali audio e video certificati non sono necessari, si tratta di dispositivi altamente consigliati certificati per Microsoft Teams per un'esperienza multimediale ottimale. Per un elenco di tutti i Microsoft Teams certificati, vedere Telefoni e dispositivi [per](../../SfbPartnerCertification/certification/devices-ip-phones.md)Skype for Business . È possibile usare il [dashboard](/microsoftteams/turning-on-and-using-call-quality-dashboard)Microsoft Teams qualità delle chiamate, disponibile nell'interfaccia di amministrazione di **Skype for Business**, per verificare che i dispositivi in uso funzionino correttamente e monitorare la qualità dei supporti audio e video.
   
 > [!TIP]
-> **È necessario un dispositivo certificato per l'esperienza Skype for Business qualità multimediale ottimale.**
+> **È necessario un dispositivo certificato per un'esperienza Skype for Business qualità multimediale ottimale.**
   
-È importante ricordare che tutti i dispositivi multimediali, i client Microsoft Teams e i server Skype for Business attraverso cui Real-Time flussi multimediali, introducono una certa latenza. La latenza di elaborazione del dispositivo e del software, insieme alla latenza di rete, hanno un impatto notevole e contribuiscono alla latenza globale end-to-end e all'esperienza dell'utente finale.
+È importante ricordare che qualsiasi dispositivo multimediale, client Microsoft Teams e server Skype for Business server attraverso cui Real-Time flussi multimediali, introducono una certa latenza. La latenza di elaborazione del dispositivo e del software, insieme alla latenza di rete, hanno un impatto notevole e contribuiscono alla latenza globale end-to-end e all'esperienza dell'utente finale.
   
 #### <a name="environment"></a>Ambiente
 
@@ -65,18 +65,18 @@ Per ottenere un'immagine più chiara dell'esperienza audio e video di un utente,
 
 #### <a name="network"></a>Rete
 
-La qualità dei supporti multimediali Real-Time rete IP è notevolmente influenzata dalla qualità della connettività di rete, ma soprattutto dalla quantità di:
+La qualità dei supporti multimediali Real-Time rete IP è notevolmente influenzata dalla qualità della connettività di rete, ma in particolare dalla quantità di:
   
 - **Latenza** Questo è il tempo necessario per ottenere un pacchetto IP dal punto A al punto B della rete. Questo ritardo di propagazione della rete è legato alla distanza fisica tra i due punti e alla velocità della luce, incluso il sovraccarico aggiuntivo dei vari router in mezzo. La latenza viene misurata come tempo unidirebile o di andata e ritorno (RTT).
     
 - **Perdita di pacchetti** Questa opzione viene spesso definita come percentuale di pacchetti persi in un determinato intervallo di tempo. La perdita di pacchetti influisce direttamente sulla qualità audio, da piccoli pacchetti persi individuali che non hanno quasi alcun impatto, a perdite di burst back-to-back che causano il cut-out audio completo.
     
-- **Instabilità di arrivo tra** pacchetti o semplicemente instabilità Questa è la variazione media del ritardo tra pacchetti successivi. La maggior parte del software VoIP moderno, Microsoft Teams può adattarsi ad alcuni livelli di instabilità attraverso il buffering. È solo quando l'instabilità supera il buffering che un partecipante noterà gli effetti di instabilità.
+- **Instabilità di arrivo tra** pacchetti o semplicemente instabilità Questa è la variazione media del ritardo tra pacchetti successivi. La maggior parte del software VoIP moderno Microsoft Teams può adattarsi ad alcuni livelli di instabilità attraverso il buffering. È solo quando l'instabilità supera il buffering che un partecipante noterà gli effetti di instabilità.
     
 > [!NOTE]
 >  Il buffering per instabilità aumenterà la latenza end-to-end.
   
-Con molte sessioni multimediali Microsoft Teams Real-Time simultanee e altro traffico di rete generato da altri servizi Microsoft 365 o Office 365 e altre applicazioni aziendali, assicurarsi che nell'intero percorso di rete sia disponibile una larghezza di banda sufficiente per connettere la rete al servizio Microsoft Teams è fondamentale per evitare la congestione della rete e garantire una qualità eccellente dei supporti multimediali Real-Time (audio, video e condivisione di applicazioni). 
+Con molte sessioni multimediali Microsoft Teams Real-Time simultanee e altro traffico di rete generato da altri servizi Microsoft 365 o Office 365 e altre applicazioni aziendali, assicurarsi che nell'intero percorso di rete sia disponibile larghezza di banda sufficiente per connettere la rete al servizio Microsoft Teams è fondamentale per evitare la congestione della rete e garantire una qualità eccellente dei supporti multimediali Real-Time (audio, video e condivisione applicazioni). 
   
 #### <a name="implementing-quality-of-service-qos-across-congested-networks"></a>Implementazione della qualità del servizio (QoS) nelle reti congestionate
 
@@ -84,7 +84,7 @@ Inoltre, la congestione del traffico in una rete influisce notevolmente sulla qu
   
 QoS consente di assegnare priorità più elevate ai pacchetti di rete che trasportano dati audio o video. Assegnando una priorità più alta a questi pacchetti, è probabile che le comunicazioni audio e video viaggino sulla rete più velocemente e con meno interruzioni rispetto alle sessioni di rete che implicano operazioni come trasferimenti di file, esplorazione Web o backup di database. Questo perché ai pacchetti di rete usati per i trasferimenti di file o per i backup del database per impostazione predefinita viene assegnato il "massimo sforzo" come priorità e la congestione di rete non ha un impatto così grande. Se non si assegna una priorità più alta ai pacchetti multimediali (audio, video e condivisione di applicazioni) e non li si lascia assegnati come "sforzo migliore", anche questi verranno elaborati insieme a tutto il traffico di rete. A seconda della quantità di congestione di rete, questa operazione potrebbe terminare con un'esperienza di qualità audio e video complessiva inferiore per gli utenti.
   
-È consigliabile implementare QoS nella rete per assicurarsi che la congestione di rete all'interno della rete non abbia alcun impatto. Tuttavia, per ottenere il massimo impatto, tutti gli endpoint di rete devono supportare QoS, il che significa che tutti gli endpoint devono rispettare il contrassegno QoS e la priorità dei pacchetti. Microsoft Teams i servizi di assistenza rispettano il contrassegno QoS e la priorità all'interno della rete Microsoft. Tuttavia, il traffico instradato attraverso una connessione pubblica come Internet dalla rete aziendale alla rete Microsoft non mantiene i contrassegni QoS e la priorità dei pacchetti. Le connessioni private dalla rete a Microsoft 365 o Office 365 usando [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) offrono una soluzione di distribuzione che mantiene i contrassegni QoS e la priorità dei pacchetti che a loro volta aumentano la qualità audio e video complessiva per gli utenti finali.
+È consigliabile implementare QoS nella rete per assicurarsi che la congestione di rete all'interno della rete non abbia alcun impatto. Tuttavia, per ottenere il massimo impatto, tutti gli endpoint di rete devono supportare QoS, il che significa che tutti gli endpoint devono rispettare il contrassegno QoS e la priorità dei pacchetti. Microsoft Teams servizi rispettano il contrassegno QoS e la priorità all'interno della rete Microsoft. Tuttavia, il traffico instradato attraverso una connessione pubblica come Internet dalla rete aziendale alla rete Microsoft non mantiene i contrassegni QoS e la priorità dei pacchetti. Le connessioni private dalla rete a Microsoft 365 o Office 365 usando [Azure ExpressRoute](https://azure.microsoft.com/services/expressroute/) offrono una soluzione di distribuzione che mantiene i contrassegni QoS e la priorità dei pacchetti che a loro volta aumentano la qualità audio e video complessiva per gli utenti finali.
   
 ## <a name="network-performance-requirements-to-connect-to-microsoft-teams"></a>Requisiti di prestazioni di rete per connettersi a Microsoft Teams
 <a name="bkNetworkPerf"> </a>
@@ -142,7 +142,7 @@ Per ottenere Skype for Business qualità ottimale dei supporti multimediali, per
     
 - Il sito o i siti aziendali alla connessione Edge di rete Microsoft includono l'accesso alla rete first hop, che può essere WiFi o un'altra tecnologia wireless. 
     
-- L'obiettivo delle prestazioni di rete presuppone la corretta pianificazione della larghezza di banda e/o della qualità del servizio. In altre parole, questo vale direttamente per Skype for Business Real-Time traffico multimediale quando la connessione di rete è sotto un carico di picco.
+- L'obiettivo delle prestazioni di rete presuppone la corretta pianificazione della larghezza di banda e/o della qualità del servizio. In altre parole, si applica direttamente al traffico Skype for Business Real-Time multimediale quando la connessione di rete è sotto un carico di punta.
     
 ### <a name="network-performance-requirements-from-your-network-edge-to-microsoft-network-edge"></a>Requisiti di prestazioni di rete dalla rete Perimetrale a Microsoft Network Edge
 <a name="bkYourNetworkEdge"> </a>
@@ -165,7 +165,7 @@ Di seguito sono riportati gli obiettivi o le soglie delle prestazioni di rete ne
   
 - L'obiettivo delle prestazioni richiede la connessione tra una rete perimetrale della tua azienda e la rete Microsoft Edge più vicina, per essere nello stesso continente.
     
-- L'obiettivo delle prestazioni di rete presuppone la corretta pianificazione della larghezza di banda e/o della qualità del servizio. Questo vale anche per Skype for Business Real-Time traffico multimediale quando la connessione di rete è sotto un carico di punta. Per una corretta pianificazione della larghezza di banda e della QoS, vedere [ExpressRoute e QoS in Microsoft Teams](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d).
+- L'obiettivo delle prestazioni di rete presuppone la corretta pianificazione della larghezza di banda e/o della qualità del servizio. Questo vale anche per Skype for Business Real-Time traffico multimediale quando la connessione di rete è sotto un carico di punta. Per una corretta pianificazione della larghezza di banda e della QoS, vedere ExpressRoute e [QoS in Microsoft Teams](https://support.office.com/article/ExpressRoute-and-QoS-in-Skype-for-Business-Online-20c654da-30ee-4e4f-a764-8b7d8844431d).
     
 ## <a name="measuring-network-performance"></a>Misurazione delle prestazioni di rete
 <a name="bkNetworkPerf"> </a>
@@ -195,7 +195,7 @@ Per testare le connessioni Internet alla rete Microsoft, è consigliabile testar
 ## <a name="measuring-network-performance-using-azure-vms"></a>Misurazione delle prestazioni di rete con le vm di Azure
 <a name="bkNetworkPerf"> </a>
 
-Invece di eseguire test sui siti Edge della rete Microsoft, sono disponibili soluzioni di valutazione della rete di clienti e partner di Skype for Business che usano la configurazione di test per i servizi nel cloud Microsoft Azure rete. In queste soluzioni, gli strumenti di valutazione della rete testano la latenza, la perdita di pacchetti e l'instabilità rispetto agli endpoint personalizzati impostati come servizio nel cloud di Azure. Di conseguenza, il traffico di rete di prova attraversa un altro segmento di rete, ovvero la connessione all'interno della rete Microsoft tra i bordi della rete e i data center di Azure che ospita il servizio di valutazione della rete.
+Invece di testare i siti Edge della rete Microsoft, sono disponibili soluzioni di valutazione di rete di clienti e partner di Skype for Business che usano la configurazione di test per i servizi nel cloud Microsoft Azure rete. In queste soluzioni, gli strumenti di valutazione della rete testano la latenza, la perdita di pacchetti e l'instabilità rispetto agli endpoint personalizzati impostati come servizio nel cloud di Azure. Di conseguenza, il traffico di rete di prova attraversa un altro segmento di rete, ovvero la connessione all'interno della rete Microsoft tra i bordi della rete e i data center di Azure che ospita il servizio di valutazione della rete.
   
 Per queste soluzioni di valutazione della rete basate sui servizi di test ospitati in Azure. È consigliabile eseguire la valutazione della rete all'interno del paese e/o dell'area geografica. Ad esempio, per i siti dei clienti negli Stati Uniti orientali, la valutazione deve essere eseguita su un'istanza del servizio di test ospitata nell'area del data center degli Stati Uniti orientali di Azure. 
   
@@ -303,7 +303,7 @@ Se l'azienda usa i servizi Microsoft Teams di più uffici nella stessa area geog
   
 Nell'esempio seguente Contoso è una società di servizi di viaggio statunitense con sede a New York ma con altri uffici negli Stati Uniti. I loro uffici sono interconnessi tramite una WAN che usa MPLS per la connessione a Microsoft 365 o Office 365. Inizialmente configurano una connessione ExpressRoute dal router Internet di Hoboken, nel New Jersey, al sito MeetMe di New York. 
   
-Con questa configurazione, il traffico di rete dalla maggior parte dei siti al sito Microsoft Network (New York Edge) può soddisfare gli obiettivi di prestazioni della rete di connessione client di Skype for Business descritti in Requisiti di prestazioni di rete da un client di Skype for Business a Microsoft [Network Edge.](media-quality-and-network-connectivity-performance.md#bkSfBClienttoEdge) Tuttavia, la latenza tra gli uffici della costa occidentale di Contoso e New York è superiore a 50 ms a senso unico. Inoltre, Honolulu è il secondo ufficio più grande per Contoso, la latenza da Honolulu a New York supera gli 80 ms a senso unico. Per garantire una buona qualità dei supporti multimediali per gli utenti di questi uffici, Contoso ha deciso di aggiungere una connessione ExpressRoute sulla costa occidentale tra il sito di San Jose e il sito MeetMe di Silicon Valley ExpressRoute.
+Con questa configurazione, il traffico di rete dalla maggior parte dei siti al sito Microsoft Network (New York Edge) può soddisfare gli obiettivi di prestazioni della connessione client di Skype for Business descritti in Requisiti di prestazioni di rete da un client di Skype for Business a [Microsoft Network Edge.](media-quality-and-network-connectivity-performance.md#bkSfBClienttoEdge) Tuttavia, la latenza tra gli uffici della costa occidentale di Contoso e New York è superiore a 50 ms a senso unico. Inoltre, Honolulu è il secondo ufficio più grande per Contoso, la latenza da Honolulu a New York supera gli 80 ms a senso unico. Per garantire una buona qualità dei supporti multimediali per gli utenti di questi uffici, Contoso ha deciso di aggiungere una connessione ExpressRoute sulla costa occidentale tra il sito di San Jose e il sito MeetMe di Silicon Valley ExpressRoute.
   
 ![Express Router Multi-site nello stesso continente.](../images/bf57a473-01e1-4271-9675-385767bc58e1.png)
   
@@ -317,11 +317,11 @@ Nell'esempio seguente Contoso è un grande studio legale aziendale con uffici ne
   
 ### <a name="hybrid-deployment"></a>Distribuzione ibrida
 
-Se si ha una distribuzione di Lync o Microsoft Teams locale e si sceglie di implementare un'integrazione ibrida di Microsoft Teams, è consigliabile che se si decide di distribuire Azure ExpressRoute, è necessario avere almeno una connessione ExpressRoute per ogni sito Edge di Lync o Microsoft Teams locale e almeno una connessione ExpressRoute per ogni continente con uffici. A seconda dei costi e dei vantaggi, per ogni continente è possibile scegliere di distribuire altre connessioni ExpressRoute da uffici in cui gli obiettivi di prestazioni di rete non vengono soddisfatti.
+Se si ha una distribuzione di Lync o Microsoft Teams locale e si sceglie di implementare un'integrazione ibrida di Microsoft Teams, è consigliabile che se si decide di distribuire Azure ExpressRoute, è necessario avere almeno una connessione ExpressRoute per ogni sito Lync o edge di Microsoft Teams locale e almeno una connessione ExpressRoute per ogni continente con uffici. A seconda dei costi e dei vantaggi, per ogni continente è possibile scegliere di distribuire altre connessioni ExpressRoute da uffici in cui gli obiettivi di prestazioni di rete non vengono soddisfatti.
   
 Se si ha una distribuzione locale Microsoft Teams distribuzione, è necessario seguire la Guida alla pianificazione e alla distribuzione dei [server perimetrali.](../../SfbServer/plan-your-deployment/edge-server-deployments/edge-server-deployments.md) In particolare, i server perimetrali devono essere raggiungibili dall'esterno della rete. Questa operazione viene in genere ottenuta assegnando un indirizzo IP pubblico instradabile al server perimetrale o usando nat (Network Address Translation).
   
-Nell'esempio seguente Contoso ha una distribuzione locale Microsoft Teams VoIP aziendale locale. Vogliono eseguire la migrazione degli utenti locali ai servizi online Microsoft 365 o Office 365 online. Hanno anche deciso di usare una distribuzione ibrida in modo che possano continuare a usare l'infrastruttura PSTN esistente per tutti gli utenti locali e online. I data center e i server perimetrali locali di Contoso sono Skype for Business a Chicago.Contoso's on-premises data center and Skype for Business Edge Servers are in Chicago. Per la distribuzione, Contoso ha deciso di configurare una connessione ExpressRoute tra il data center di Chicago e Chicago ExpressRoute. Hanno anche aggiunto una connessione ExpressRoute sulla costa occidentale per servire meglio il loro ufficio di Honolulu.
+Nell'esempio seguente Contoso ha una distribuzione locale Microsoft Teams VoIP aziendale locale. Vogliono eseguire la migrazione degli utenti locali a Microsoft 365 o Office 365 online. Hanno anche deciso di usare una distribuzione ibrida in modo che possano continuare a usare l'infrastruttura PSTN esistente per tutti gli utenti locali e online. Il data center e i server perimetrali locali di Contoso Skype for Business server perimetrali sono a Chicago. Per la distribuzione, Contoso ha deciso di configurare una connessione ExpressRoute tra il data center di Chicago e Chicago ExpressRoute. Hanno anche aggiunto una connessione ExpressRoute sulla costa occidentale per servire meglio il loro ufficio di Honolulu.
   
 ![ExpressRoute Ibrido.](../images/a7467c56-642f-44e5-adfb-ecca91ba2dd3.png)
   
@@ -333,7 +333,7 @@ Se si decide di distribuire Azure ExpressRoute e Cloud Connector Edition, è con
   
 Se si ha una distribuzione locale Microsoft Teams, è necessario seguire la Guida alla pianificazione [per](../../SfbServer/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition.md)Skype for Business Cloud Connector Edition . In particolare, ai servizi Access Edge e A/V Edge devono essere assegnati indirizzi IP pubblici e Microsoft 365 o Office 365 data center.
   
-Nell'esempio seguente Contoso è una società di contabilità europea con presenza in alcuni dei principali paesi e città europei. Quando si indosseranno a Microsoft Teams per tutte le loro esigenze di collaborazione, hanno deciso di creare un Connettore Cloud per ogni paese in cui hanno una posizione fisica in cui continuare a usare l'infrastruttura PSTN e i contratti del gestore già esistenti. In base ai test emersi da tutti i siti e dall'edge della rete Microsoft, hanno stabilito che una singola connessione ExpressRoute a Londra aiuterà a soddisfare gli obiettivi di prestazioni della rete di connessione client di Microsoft Teams descritti in Requisiti di prestazioni di rete da un [client Skype for Business a Microsoft Network Edge.](media-quality-and-network-connectivity-performance.md#bkSfBClienttoEdge)
+Nell'esempio seguente Contoso è una società di contabilità europea con presenza in alcuni dei principali paesi e città europei. Quando si indosseranno a Microsoft Teams per tutte le loro esigenze di collaborazione, hanno deciso di creare un Connettore Cloud per ogni paese in cui hanno una posizione fisica in cui continuare a usare l'infrastruttura PSTN e i contratti del gestore già esistenti. In base ai test emersi da tutti i siti e dall'Edge della rete Microsoft, hanno stabilito che una singola connessione ExpressRoute a Londra aiuterà a soddisfare gli obiettivi di prestazioni della rete di connessione client di Microsoft Teams descritti in Requisiti di prestazioni di rete da un [client Skype for Business a Microsoft Network Edge.](media-quality-and-network-connectivity-performance.md#bkSfBClienttoEdge)
   
 ![ExpressRoute Cloud Connector One.](../images/ebdc96e5-b22a-4bf2-b668-062460b4b890.png)
   

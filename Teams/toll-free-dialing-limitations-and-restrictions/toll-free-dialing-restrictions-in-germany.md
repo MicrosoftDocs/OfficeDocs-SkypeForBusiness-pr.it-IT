@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in Germania, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: fb90c07a487905b06e7ad1e66f8b3357d65ac641dd5d0454fff1c6b755bd372d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6a2328c34d38825432783f76a36a204a0b6dc1aa
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54297742"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597550"
 ---
 # <a name="toll-free-dialing-restrictions-in-germany"></a>Restrizioni di composizione a numero verde in Germania
 

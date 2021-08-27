@@ -9,18 +9,18 @@ ms.reviewer: ''
 search.appverid: ''
 description: Informazioni sui criteri Teams vocali e chiamate.
 audience: admin
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0b3cea712fee971ce441e5406bc32c1304c4a53374baf290046945595d3bea1f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2c5207f9bbfc7212d09394f5b507559c715e561b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54335806"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58577740"
 ---
 # <a name="manage-voice-and-calling-policies-in-microsoft-teams"></a>Gestire i criteri vocali e delle chiamate in Microsoft Teams
 
@@ -28,7 +28,7 @@ I criteri vocali e di chiamata vengono usati per controllare la voce e le chiama
 
 ## <a name="emergency-calling-policies"></a>Criteri per le chiamate di emergenza
 
-I criteri per [le chiamate di emergenza](manage-emergency-calling-policies.md) vengono utilizzati per configurare ciò che accade quando un utente dell'organizzazione effettua una chiamata di emergenza. Questi criteri vengono gestiti nell'interfaccia Teams di amministrazione o usando Windows PowerShell.
+I criteri per [le chiamate di emergenza](manage-emergency-calling-policies.md) vengono utilizzati per configurare ciò che accade quando un utente dell'organizzazione effettua una chiamata di emergenza. Questi criteri vengono gestiti nell'interfaccia Teams o usando Windows PowerShell.
 
 ![Screenshot dei criteri per le chiamate di emergenza.](media/emergency-calling-policy2.png)
 

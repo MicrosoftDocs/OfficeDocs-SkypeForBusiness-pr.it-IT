@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4dd8be28-5156-411b-8ccd-eff7f75cb897
 description: Leggere questo argomento per informazioni su come assegnare criteri di conferenza per Skype di sistema room.
-ms.openlocfilehash: 7f9d1e349563e20d29736d33900b4afce99f39c10b9222b23d291f5a9fa417b7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 202440953aedaa54ac69a7bd4549bf7dcbd8d865
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306018"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618202"
 ---
 # <a name="conferencing-policy-for-skype-room-system-accounts"></a>Criteri di conferenza per Skype di sistema room
  
@@ -25,18 +25,18 @@ Leggere questo argomento per informazioni su come assegnare criteri di conferenz
   
 ## <a name="conferencing-policy-features"></a>Funzionalità dei criteri di conferenza
 
-Il criterio di conferenza assegnato all'account Skype Room System deve avere determinate caratteristiche. La maggior parte delle volte, il client Skype Room System partecipa a una riunione pianificata e pertanto i criteri di conferenza dell'organizzatore della riunione influiranno sulla conferenza. Tuttavia, in Skype for Business Server alcune funzionalità dipendono dalla configurazione del partecipante. Ad esempio, se i criteri del partecipante consentono una risoluzione video massima di 1080p, i partecipanti sperimenteranno questa funzionalità video con risoluzione superiore nella conferenza anche se i criteri dell'organizzatore non lo consentono. Nella tabella seguente vengono descritte diverse impostazioni di questo tipo che è necessario tenere presenti quando si impostano i criteri di conferenza per Skype di sistema room nell'organizzazione. 
+Il criterio di conferenza assegnato all'account Skype Room System deve avere determinate caratteristiche. Nella maggior parte dei casi, il client Skype Room System partecipa a una riunione pianificata e pertanto i criteri di conferenza dell'organizzatore della riunione influiranno sulla conferenza. Tuttavia, in Skype for Business Server alcune funzionalità dipendono dalla configurazione del partecipante. Ad esempio, se i criteri del partecipante consentono una risoluzione video massima di 1080p, i partecipanti sperimenteranno questa funzionalità video con risoluzione superiore nella conferenza anche se i criteri dell'organizzatore non lo consentono. Nella tabella seguente vengono descritte diverse impostazioni di questo tipo che è necessario tenere presenti quando si impostano i criteri di conferenza per gli account di Skype Room System nell'organizzazione. 
   
-|Funzionalità  <br/> |Valore  <br/> |Commento  <br/> |
+|Funzionalità  <br/> |Valore  <br/> |Aggiungere commenti  <br/> |
 |:-----|:-----|:-----|
 |AllowIPAudio  <br/> |TRUE  <br/> |Deve essere true per l'audio Skype Room System  <br/> |
 |AllowIPVideo  <br/> |TRUE  <br/> |Deve essere true perché Skype audio del sistema room funzioni nelle sessioni della lavagna Riunione ora (ad hoc) in Skype Room System  <br/> |
-|AllowMultiView  <br/> |TRUE  <br/> |Consente Skype Room System di eseguire il rendering di più flussi video multi-visualizzazione  <br/> |
+|AllowMultiView  <br/> |TRUE  <br/> |Consente Skype Room System di eseguire il rendering di flussi video multipli e multi-visualizzazione  <br/> |
 |AllowParticipantControl  <br/> |TRUE  <br/> |Influisce sulle sessioni della lavagna meet now (ad hoc) in Skype Room System  <br/> |
 |AllowAnnotations  <br/> |TRUE  <br/> |Influisce sulle sessioni della lavagna meet now (ad hoc) in Skype Room System  <br/> |
 |DisablePowerPointAnnotations  <br/> |FALSE  <br/> |Influisce sulle sessioni della lavagna meet now (ad hoc) in Skype Room System  <br/> |
 |AllowUserToScheduleMeetingsWithAppSharing  <br/> |TRUE  <br/> |Influisce sulle sessioni della lavagna meet now (ad hoc) in Skype Room System  <br/> |
-|AllowNonEnterpriseVoiceUsersToDialOut  <br/> |FALSE  <br/> |Dipende dal fatto che l'account sia abilitato VoIP aziendale (EV) (vedere la sezione Abilitazione degli account di sistema Skype Room per Skype for Business)  <br/> |
+|AllowNonEnterpriseVoiceUsersToDialOut  <br/> |FALSE  <br/> |Dipende dal fatto che l'account sia abilitato VoIP aziendale (EV) (vedere la sezione Abilitazione degli account di sistema Skype room per Skype for Business)  <br/> |
 |AllowAnonymousUsersToDialOut  <br/> |FALSE  <br/> |Dipende se l'account è VoIP aziendale (EV) abilitato  <br/> |
 |AllowAnonymousParticipantsInMeetings  <br/> |TRUE  <br/> |Influisce sulle sessioni della lavagna meet now (ad hoc) in Skype Room System  <br/> |
 |AllowExternalUsersToSaveContent  <br/> |TRUE  <br/> |Influisce sulle sessioni della lavagna meet now (ad hoc) in Skype Room System  <br/> |
@@ -69,7 +69,7 @@ Il criterio di conferenza assegnato all'account Skype Room System deve avere det
   
 ## <a name="meeting-authentication"></a>Autenticazione riunione
 
-Skype Il sistema sala richiede agli utenti l'autenticazione quando usano il collegamento per partecipare a una riunione con restrizioni; ad esempio, una riunione per la quale sono state configurate le opzioni di sala di attesa della riunione in Outlook. Questa impostazione è sempre attiva per le riunioni personalizzate e agli utenti viene sempre richiesto. Tuttavia, per le riunioni senza restrizioni, gli utenti possono partecipare alla riunione senza autenticazione. 
+Skype Il sistema sala richiede agli utenti l'autenticazione quando utilizzano il collegamento per partecipare a una riunione con restrizioni; ad esempio, una riunione per la quale sono state configurate le opzioni di sala di attesa della riunione in Outlook. Questa impostazione è sempre attiva per le riunioni personalizzate e agli utenti viene sempre richiesto. Tuttavia, per le riunioni senza restrizioni, gli utenti possono partecipare alla riunione senza autenticazione. 
   
 Il comando seguente consente agli amministratori di richiedere l'autenticazione per tutte le riunioni, incluse le riunioni senza restrizioni: 
   

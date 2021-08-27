@@ -10,24 +10,24 @@ audience: admin
 description: Usare questo script di PowerShell per esportare un elenco di responsabili e le relative dirette per l'organizzazione, in preparazione per la creazione di un team per ogni responsabile con i propri diretti come membri del team.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 120ee0fe4b0211d929722685700b3bbdbc4df2231b0bf5c9e3f53c5d423c2f75
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a25e743f1f8191db8323b29bf33c3fed75261fa1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345335"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58577820"
 ---
 # <a name="powershell-script-sample---export-managers-and-their-directs"></a>Esempio di script di PowerShell - Esportare i responsabili e i relativi diretti
 
 Usare questo script di PowerShell per esportare un elenco di responsabili e le relative dirette per l'organizzazione, in preparazione per la creazione di un team di responsabili di persone per ogni responsabile con i propri diretti come membri del team.
 
-Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone.](../create-manager-directs-teams.md)
+Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone](../create-manager-directs-teams.md).
 
 Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell.](/powershell/azure/overview?view=azurermps-5.1.1)
 

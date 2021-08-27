@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Dopo la migrazione a Microsoft Skype for Business Server 2019, è necessario completare alcune attività per configurare Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager.
-ms.openlocfilehash: 477fbd3c405328ffac4aa70a722120d375e95b295bf5a23d19882248d1ece54e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 756e83ad0a8c964954f43518dc8603802d45c40d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279614"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590660"
 ---
 # <a name="configure-scom-monitoring"></a>Configurare il monitoraggio di SCOM
 
@@ -26,7 +26,7 @@ Dopo la migrazione a Skype for Business Server 2019, è necessario completare al
     
 - Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.
     
-- Configurare il server di gestione System Center Operations Manager in modo che sostituisca il nodo di individuazione centrale candidato.
+- Configurare il server di gestione System Center Operations Manager per sostituire il nodo di individuazione centrale candidato.
     
 Di seguito sono riportate le istruzioni per l'esecuzione di ognuna di tali attività.
   
@@ -38,7 +38,7 @@ Di seguito sono riportate le istruzioni per l'esecuzione di ognuna di tali attiv
     
 ### <a name="update-the-central-discovery-candidate-server-registry-key"></a>Aggiornare la chiave del Registro di sistema del server candidato all'individuazione centrale.
 
-1. Nel server scelto per gestire la logica di individuazione centrale, aprire una finestra Windows PowerShell comandi. 
+1. Nel server scelto per gestire la logica di individuazione centrale, aprire una finestra Windows PowerShell comando. 
     
 2. Digitare quanto segue alla riga di comando:
     

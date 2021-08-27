@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: "La migrazione dell'applicazione Parcheggio di chiamata include il provisioning del pool di Skype for Business Server 2019 con tutti i file di musica di attesa personalizzati caricati nell'installazione legacy, il ripristino delle impostazioni del livello di servizio e il retargeting di tutti i orbit del parcheggio di chiamata al pool di Skype for Business Server 2019. Se nel pool sono stati configurati file di musica di attesa personalizzati, questi file devono essere copiati nel nuovo pool Skype for Business Server 2019. È inoltre consigliabile eseguire il backup di tutti i file di musica di attesa personalizzati di Parcheggio di chiamata da un'altra destinazione per conservare una copia di backup separata di tutti i file di musica di attesa personalizzati caricati per parcheggio di chiamata. I file di musica di attesa personalizzati per l'applicazione Parcheggio chiamata sono archiviati nell'archivio file del pool. Per copiare i file audio da un archivio file del pool Skype for Business Server 2019, utilizzare il comando Xcopy con i parametri seguenti:"
-ms.openlocfilehash: f83e1095361ddd272a35bf9100171c0d06caf003dfae84f19c01b2aa53de7977
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b8d2c5a898ca9ce4c2c1e8be4b9cbf3e7355a8cc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312324"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597540"
 ---
 # <a name="migrate-call-park-application-settings"></a>Eseguire la migrazione delle impostazioni dell'applicazione Parcheggio di chiamata
 
-La migrazione dell'applicazione Parcheggio di chiamata include il provisioning del pool di Skype for Business Server 2019 con tutti i file di musica di attesa personalizzati caricati nell'installazione legacy, il ripristino delle impostazioni a livello di servizio e la nuova destinazione di tutti i orbit del parcheggio di chiamata al pool di Skype for Business Server 2019. Se nel pool sono stati configurati file di musica di attesa personalizzati, questi file devono essere copiati nel nuovo pool Skype for Business Server 2019. Inoltre, è consigliabile eseguire il backup di tutti i file di musica di attesa personalizzati di Parcheggio di chiamata in un'altra destinazione per conservare una copia di backup separata di tutti i file di musica di attesa personalizzati che sono stati caricati per parcheggio di chiamata. I file di musica di attesa personalizzati per l'applicazione Parcheggio chiamata sono archiviati nell'archivio file del pool. Per copiare i file audio da un archivio file del pool Skype for Business Server 2019, utilizzare il comando **Xcopy** con i parametri seguenti: 
+La migrazione dell'applicazione Parcheggio di chiamata include il provisioning del pool di Skype for Business Server 2019 con tutti i file di musica di attesa personalizzati caricati nell'installazione legacy, il ripristino delle impostazioni a livello di servizio e la nuova destinazione di tutti i orbit del parcheggio di chiamata nel pool di Skype for Business Server 2019. Se nel pool sono stati configurati file di musica di attesa personalizzati, questi file devono essere copiati nel nuovo pool Skype for Business Server 2019. Inoltre, è consigliabile eseguire il backup di tutti i file di musica di attesa personalizzati di Parcheggio di chiamata in un'altra destinazione per conservare una copia di backup separata di tutti i file di musica di attesa personalizzati che sono stati caricati per parcheggio di chiamata. I file di musica di attesa personalizzati per l'applicazione Parcheggio chiamata sono archiviati nell'archivio file del pool. Per copiare i file audio da un archivio file del pool Skype for Business Server 2019, utilizzare il comando **Xcopy** con i parametri seguenti: 
 
 ```console
 Xcopy <Source: legacy Pool CPS File Store Path> <Destination: Skype for Business Server 2019 Pool CPS File Store Path>

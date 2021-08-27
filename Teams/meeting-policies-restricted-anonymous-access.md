@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: cebulnes, anyada
 audience: admin
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
@@ -15,13 +15,13 @@ appliesto:
 - Microsoft Teams
 f1.keywords: ''
 ms.custom: ''
-description: Informazioni su come rimuovere i criteri RestrictedAnonymousAccess Teams riunione dagli utenti dell'organizzazione.
-ms.openlocfilehash: 347013cff6b704f6eb5f0ac05665b65259e751be645acd16c75c6a0f0cd024a1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come rimuovere il criterio RestrictedAnonymousAccess Teams riunione dagli utenti dell'organizzazione.
+ms.openlocfilehash: fbb34974c435db12880ab68b7af4372a17a6b63b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310425"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590780"
 ---
 # <a name="remove-the-restrictedanonymousaccess-teams-meeting-policy-from-users"></a>Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams
 
@@ -33,7 +33,7 @@ Questo articolo illustra come usare PowerShell per rimuovere i criteri di riunio
 
 ## <a name="before-you-start"></a>Prima di iniziare
 
-Installare e connettersi al [modulo Skype for Business PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell). Per istruzioni dettagliate, vedere Installare [Microsoft Teams PowerShell.](teams-powershell-install.md)
+Installare e connettersi al modulo [Skype for Business PowerShell](/microsoft-365/enterprise/manage-skype-for-business-online-with-microsoft-365-powershell). Per istruzioni dettagliate, vedere Installare [Microsoft Teams PowerShell.](teams-powershell-install.md)
 
 ## <a name="get-the-teams-meeting-policy-assignments-for-your-organization"></a>Ottenere le assegnazioni Teams criteri riunione per l'organizzazione
 
@@ -57,7 +57,7 @@ Count  Name                               Group
 
 Per rimuovere i criteri riunione RestrictedAnonymous dagli utenti, è possibile usare il cmdlet [Grant-CSTeamsMeetingPolicy](/powershell/module/skype/grant-csteamsmeetingpolicy) se si ha un numero limitato di utenti, ad esempio meno di 100 utenti. Se si ha un numero elevato di utenti, ad esempio più di 100 utenti, è più efficiente usare il cmdlet  [New-CsBatchPolicyAssignmentOperation](/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps) per inviare un'operazione batch.
 
-### <a name="use-the-grant-csteamsmeeting-policy-cmdlet"></a>Usare il cmdlet Grant-CsTeamsMeeting Policy
+### <a name="use-the-grant-csteamsmeeting-policy-cmdlet"></a>Usare il cmdlet Grant-CsTeamsMeeting Criteri di gruppo
 
 Eseguire le operazioni seguenti per rimuovere i criteri riunione RestrictedAnonymous dagli utenti.
 
@@ -67,7 +67,7 @@ Get-CsOnlineUser |? TeamsMeetingPolicy -eq "RestrictedAnonymousAccess" | Select-
 
 ### <a name="use-the-new-csbatchpolicyassignmentoperation-cmdlet"></a>Usare il cmdlet New-CsBatchPolicyAssignmentOperation
 
-Con [l'assegnazione di](assign-policies.md#assign-a-policy-to-a-batch-of-users)criteri batch, il numero massimo di utenti per cui è possibile rimuovere o aggiornare i criteri è 5.000 alla volta. Ad esempio, se si hanno più di 5.000 utenti, sarà necessario inviare più batch. Per risultati ottimali, non inviare più batch contemporaneamente. Consentire ai batch di completare l'elaborazione prima di inviare altri batch.
+Con [l'assegnazione di](assign-policies.md#assign-a-policy-to-a-batch-of-users)criteri batch, il numero massimo di utenti per cui è possibile rimuovere o aggiornare i criteri è 5.000 alla volta. Ad esempio, se si hanno più di 5.000 utenti, è necessario inviare più batch. Per risultati ottimali, non inviare più batch contemporaneamente. Consentire ai batch di completare l'elaborazione prima di inviare altri batch.
 
 > [!NOTE]
 > Il cmdlet [New-CsBatchPolicyAssignmentOperation](/powershell/module/teams/new-csbatchpolicyassignmentoperation?view=teams-ps) si trova nel Teams PowerShell. Prima di eseguire questa procedura, installare e connettersi al [modulo Teams PowerShell.](https://www.powershellgallery.com/packages/MicrosoftTeams) Per istruzioni dettagliate, vedere Installare [Microsoft Teams PowerShell.](teams-powershell-install.md)

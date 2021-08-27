@@ -10,26 +10,26 @@ audience: admin
 description: Usare questo script di PowerShell per creare un team per ogni responsabile con i propri diretti come membri del team.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 939b18a5f3dc137fb3953f48d9289a007933baca6c1975c91764bcfe999c833a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f30bab1e96fc16b135b178a1933bbfd08289e861
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54341202"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58577797"
 ---
 # <a name="powershell-script-sample---create-new-people-manager-teams"></a>Esempio di script di PowerShell - Creare nuovi team di gestione delle persone
 
 Usare questo script di PowerShell per creare un team per ogni responsabile con i propri diretti come membri del team. Prima di eseguire questo script, eseguire lo script Export [managers](powershell-script-create-teams-from-managers-export-managers.md) per esportare (da Active Directory) un elenco di responsabili e i relativi indirizzi per l'organizzazione.
 
-Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone.](../create-manager-directs-teams.md)
+Per informazioni su questo script di PowerShell, vedere [Creare team di gestione persone](../create-manager-directs-teams.md).
 
-Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell.](/powershell/azure/overview?view=azurermps-5.1.1)
+Se non si ha di nuovo PowerShell e serve aiuto per iniziare, vedere [Panoramica di Azure PowerShell](/powershell/azure/overview?view=azurermps-5.1.1).
 
 
 ## <a name="create-new-people-manager-teams"></a>Creare nuovi team di gestione delle persone 

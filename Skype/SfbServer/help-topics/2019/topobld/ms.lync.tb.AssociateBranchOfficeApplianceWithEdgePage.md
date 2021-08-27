@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AssociateBranchOfficeApplianceWithEdgePage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3f02e4bd-f86f-4a84-9c04-28d2a53b10b1
 ROBOTS: NOINDEX, NOFOLLOW
 description: Se sono stati distribuiti server perimetrali e è necessario fornire servizi multimediali per l'utilizzo esterno, scegliere il server perimetrale o il pool che verrà associato al Survivable Branch Appliance o al Survivable Branch Server selezionandolo nell'elenco a discesa. Fare clic su Avanti per continuare.
-ms.openlocfilehash: eaaebf18bcee74dc822df4972df5d63cfb3d3954684765e1a365b555092b5be4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2082e7bed462ab1c527d0ffce3190c79d70085be
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309835"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58584140"
 ---
 # <a name="associate-branch-office-appliance-with-edge"></a>Associare Survivable Branch Appliance al server perimetrale
  

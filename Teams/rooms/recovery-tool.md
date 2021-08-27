@@ -11,14 +11,14 @@ ms.collection:
 - M365-collaboration
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Questo articolo illustra come usare lo strumento di ripristino per Microsoft Teams Rooms, che è possibile usare per portare un sistema non aggiornato in uno stato supportato.
-ms.openlocfilehash: 65cb123de9284d4b65b461390a325ce413d069f381b2c075a137cedfb0121aca
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8b5f61ef3ebfc1ef08a1db6667159ff97c2cdd78
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280691"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597580"
 ---
 # <a name="use-the-microsoft-teams-rooms-recovery-tool"></a>Utilizza lo strumento di ripristino di Microsoft Teams Rooms
 
@@ -26,7 +26,7 @@ Questo articolo illustra come usare lo strumento di ripristino per Microsoft Tea
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Scaricare il pacchetto [Microsoft Teams Rooms di installazione](https://go.microsoft.com/fwlink/?linkid=851168) più recente ed estrarlo in una memory stick USB o in una condivisione di rete accessibile al Microsoft Teams Rooms dispositivo.
+Scaricare il pacchetto [Microsoft Teams Rooms di](https://go.microsoft.com/fwlink/?linkid=851168) installazione più recente ed estrarlo in una memory stick USB o in una condivisione di rete accessibile Microsoft Teams Rooms dispositivo.
 
 > [!NOTE]
 > L'estrazione dei file dal file MSI può essere eseguita in molti modi. Qualsiasi meccanismo che estrae tutti i file e mantiene la struttura della directory è accettabile. Uno di questi modi è usare il comando dove rappresenta il percorso completo del pacchetto di installazione di Microsoft Teams Room e rappresenta il percorso completo della cartella in cui si desidera estrarre i `msiexec /a PathToMsi /qb TARGETDIR=PathToTarget` `PathToMsi` `PathToTarget` file.
@@ -34,7 +34,7 @@ Scaricare il pacchetto [Microsoft Teams Rooms di installazione](https://go.micro
 ## <a name="running-the-tool"></a>Esecuzione dello strumento
 
 1) Accedere all'account di amministratore nel dispositivo Microsoft Teams Rooms e avviare un prompt dei comandi con privilegi elevati.
-2) Verificare dal dispositivo Microsoft Teams Rooms che sia possibile accedere a , che è incluso nei file estratti dal pacchetto `RecoveryTool.ps1 file` Microsoft Teams Rooms di installazione. Il kit è disponibile nella condivisione di rete o nell'unità USB usata per la preparazione dei prerequisiti.
+2) Verificare dal dispositivo Microsoft Teams Rooms che sia possibile accedere a , che è incluso nei file estratti dal pacchetto Microsoft Teams Rooms `RecoveryTool.ps1 file` di installazione. Il kit è disponibile nella condivisione di rete o nell'unità USB usata durante la preparazione dei prerequisiti.
 3) Eseguire `powershell.exe -ExecutionPolicy Unrestricted -File "<path to RecoveryTool.ps1>"` .
 4) Per eseguire un ripristino in fabbrica:
    1. Quando richiesto dallo script, selezionare l'opzione 2: **Reimposta**.
@@ -46,7 +46,7 @@ Scaricare il pacchetto [Microsoft Teams Rooms di installazione](https://go.micro
       4. Seleziona **Rimuovi tutto,** quindi **Avanti e** **Reimposta**
         > [!WARNING]
         > Il Microsoft Teams Rooms può diventare inutilizzabile se l'opzione Mantieni i file personali - Rimuove app e **impostazioni,** ma mantiene i file personali è selezionata durante il processo di Windows reimpostazione. Non selezionare questa opzione.
-      5. Il sistema verrà riavviato più volte. Al termine del ripristino, il sistema si trova nella schermata Windows "Esperienza fuori campo" (OOBE).
+      5. Il sistema verrà riavviato più volte. Una volta completato il ripristino, il sistema si trova nella schermata Windows "Esperienza fuori campo" (OOBE).
 
 
 

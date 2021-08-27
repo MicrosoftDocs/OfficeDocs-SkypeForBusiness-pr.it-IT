@@ -14,19 +14,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni sulle lingue che è possibile impostare in Skype for Business per i messaggi di sistema predefiniti e i messaggi di saluto della segreteria telefonica.
-ms.openlocfilehash: f8e16be05b5c6001be8a9c37b6e0e23dac0525a16938c8c378450439f57aee88
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 78c3bd30da636bb9a38d413275e2d5b1ae59f0c5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54348999"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590800"
 ---
 # <a name="teams-languages-for-voicemail-greetings-and-messages"></a>Teams lingue per i messaggi di saluto e i messaggi della segreteria telefonica
 

@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.VoiceTrunkSelCallingRule
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b9009c02-6628-4038-bc80-650c7a2b8741
 description: 'Nella finestra di dialogo Seleziona regole di conversione numeri chiamanti vengono visualizzate le regole di conversione configurate per la distribuzione. Per informazioni dettagliate sulle regole di conversione, vedere gli argomenti seguenti:'
-ms.openlocfilehash: 44559b33519c38ba85946b604bc880f9779ab8b182ae3e8694f20b01a4e0aa69
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 29abcdfb2f707c607035b71c7861f72969b1acfd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338344"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625338"
 ---
 # <a name="select-calling-number-rules-translation"></a>Selezionare le regole di conversione per il numero del chiamante
 

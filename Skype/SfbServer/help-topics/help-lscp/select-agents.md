@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.RgsSelAgent
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b5cf912b-8273-4c2c-a1e5-f25530b264d0
 description: Gli agenti sono utenti designati per rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati Skype for Business Server e VoIP aziendale.
-ms.openlocfilehash: 59575537fd95a08fc457fedc39bf95b42f8890bd39d651735f0030658b37f8cd
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8d05669cca0b9f00f7d50a435f4e3a81fb0720be
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54313404"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625358"
 ---
 # <a name="select-agents"></a>Selezionare agenti
 
@@ -32,7 +32,7 @@ Gli agenti sono utenti designati per rispondere alle chiamate di Response Group.
 
 Nell'elenco seguente sono descritti i controlli presenti nella finestra di dialogo **Seleziona agenti**.
 
-- **Trova** Cerca l'indirizzo SIP o il nome visualizzato di un utente. Immettere il nome o l'indirizzo per intero o in parte. Lasciare vuota la casella di ricerca per visualizzare tutti gli utenti abilitati per Skype for Business Server e VoIP aziendale.
+- **Trova** Cerca l'indirizzo SIP o il nome visualizzato di un utente. Immettere il nome o l'indirizzo per intero o in parte. Lasciare vuota la casella di ricerca per visualizzare tutti gli utenti abilitati Skype for Business Server e VoIP aziendale.
 
 - **Numero massimo di utenti da visualizzare** Modifica il numero di risultati restituiti visualizzati. Usare questo contatore per limitare la ricerca se si prevede di ottenere molti risultati.
 

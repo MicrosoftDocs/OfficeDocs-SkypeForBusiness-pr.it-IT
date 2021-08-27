@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 3422e93e-7bd2-4470-968c-dc38345b18ca
 description: 'Riepilogo: configurare un trunk senza bypass multimediale abilitato per Skype for Business Server.'
-ms.openlocfilehash: 737fbc850583513b6782878fbd75484716364bcf258db2e5183e0800700d3891
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2f6edcf34f7da82da53ca10b523468b4ba794209
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312074"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590580"
 ---
 # <a name="skype-for-business-server-configure-a-trunk-without-media-bypass"></a>Skype for Business Server: Configurare un trunk senza bypass multimediale
 
@@ -60,11 +60,11 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
 5. Verificare che la casella di controllo **Abilita bypass multimediale** sia deselezionata.
 
-6. Selezionare  la casella di controllo Elaborazione multimediale centralizzata se è presente un punto di terminazione multimediale noto(ad esempio, un gateway PSTN (Public Switched Telephone Network) in cui la terminazione multimediale ha lo stesso IP della terminazione della segnalazione. Deselezionare questa casella di controllo se il trunk non dispone di un media termination point noto.
+6. Selezionare  la casella di controllo Elaborazione multimediale centralizzata se è presente un punto di terminazione multimediale noto, ad esempio un gateway PSTN (Public Switched Telephone Network) in cui la terminazione multimediale ha lo stesso IP della terminazione della segnalazione. Deselezionare questa casella di controllo se il trunk non dispone di un media termination point noto.
 
 7. Se il trunk peer supporta la ricezione di richieste SIP REFER dal Mediation Server, selezionare la casella di controllo Abilita invio **riferimento al gateway.**
 
-8. (Facoltativo) Per abilitare il routing tra trunk, associare e configurare i record utilizzo PSTN a questa configurazione trunk. Gli utilizzi PSTN associati a questa configurazione trunk verranno applicati a tutte le chiamate in arrivo tramite il trunk che non proviene da un endpoint Skype for Business Server remoto. Per gestire i record utilizzo PSTN associati a una configurazione trunk, usare uno di questi metodi:
+8. (Facoltativo) Per abilitare il routing tra trunk, associare e configurare i record utilizzo PSTN a questa configurazione trunk. Gli utilizzi PSTN associati a questa configurazione trunk verranno applicati per tutte le chiamate in arrivo tramite il trunk che non proviene da un endpoint Skype for Business Server remoto. Per gestire i record utilizzo PSTN associati a una configurazione trunk, usare uno di questi metodi:
 
    - Per selezionare uno o più record da un elenco di tutti i record di utilizzo PSTN disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. Evidenziare i record da associare a questa configurazione trunk e quindi fare clic su **OK**.
 
@@ -125,7 +125,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
 14. (Facoltativo) Associare e configurare le **Regole di conversione per il numero del chiamante** per il trunk. Tali regole sono applicabili al numero del chiamante per le chiamate in uscita.
 
-    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona.** In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
 
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulle regole di conversione, vedere [Translation rules in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
 
@@ -140,7 +140,7 @@ Una configurazione trunk, come quella descritta di seguito, raggruppa un set di 
 
 15. (Facoltativo) Associare e configurare le **Regole di conversione per il numero chiamato** per il trunk. Tali regole sono applicabili al numero chiamato in una chiamata in uscita.
 
-    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona.** In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
+    - Per scegliere una o più regole da un elenco di tutte le regole di conversione disponibili nella distribuzione VoIP aziendale, fare clic su **Seleziona**. In **Seleziona regole di conversione** fare clic sulle regole da associare al trunk e quindi su **OK**.
 
     - Per definire una nuova regola di conversione e associarla al trunk, fare clic su **Nuovo**. Per informazioni dettagliate sulle regole di conversione, vedere [Translation rules in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/translation-rules.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Creare la topologia perimetrale per Skype for Business Server
+title: Creare la topologia Perimetrale per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -9,24 +9,24 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 5ea18841-afdc-4ccb-8d86-30584c1f5aca
 description: 'Riepilogo: informazioni su come creare, pubblicare ed esportare la topologia di server perimetrali in Skype for Business Server.'
-ms.openlocfilehash: da0ec9709f53e22122a911015e94484fc673c6741ba5122fa796e7dded0105b5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: db5c4c2f9c68803d0e6823070c83c654df542035
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322468"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58584350"
 ---
-# <a name="create-your-edge-topology-for-skype-for-business-server"></a>Creare la topologia perimetrale per Skype for Business Server
+# <a name="create-your-edge-topology-for-skype-for-business-server"></a>Creare la topologia Perimetrale per Skype for Business Server
  
 **Riepilogo:** Informazioni su come creare, pubblicare ed esportare la topologia di server perimetrali in Skype for Business Server.
   
-Generatore di topologie è lo strumento che è necessario utilizzare per creare la topologia di server perimetrali, così come viene utilizzato per qualsiasi componente della topologia per Skype for Business Server. Prima di eseguire la procedura seguente, è necessario configurare almeno un pool Front End o un server edizione Standard server.
+Generatore di topologie è lo strumento che è necessario utilizzare per creare la topologia di server perimetrali, proprio come viene utilizzato per qualsiasi componente della topologia per Skype for Business Server. Prima di eseguire la procedura seguente, è necessario configurare almeno un pool Front End o un server edizione Standard server.
   
 In questo articolo vengono trattati i seguenti argomenti:
   
@@ -53,13 +53,13 @@ Il primo passaggio di distribuzione consiste nella creazione Skype for Business 
     
 - Un pool di server perimetrali con bilanciamento del carico hardware (uno o più server)
     
-Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire questi passaggi, è il momento di consultare la documentazione relativa alla pianificazione. In caso contrario, iniziamo.
+Se non si è certi di ciò che è necessario, prima di iniziare a seguire questi passaggi, è il momento di consultare la documentazione relativa alla pianificazione. In caso contrario, iniziamo.
   
 ### <a name="defining-the-topology-for-a-single-edge-server"></a>Definizione della topologia per un singolo server perimetrale
 
-1. Accedere al Skype for Business Server edizione Standard server o a Skype for Business Server pool Front End.
+1. Accedere al server Skype for Business Server edizione Standard o a un pool Front End Skype for Business Server locale.
     
-2. Una volta presente, aprire **Skype for Business Server Generatore di topologie**.
+2. Una volta presente, **aprire Skype for Business Server Generatore di topologie.**
     
 3. Nell'albero della console espandere il sito in cui si desidera distribuire il server perimetrale.
     
@@ -67,11 +67,11 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
     
 5. Fare clic su **Avanti** nella schermata Definisci nuovo pool di server perimetrali. 
     
-6. Nella schermata Definire l'FQDN del **pool** di server perimetrali digitare il nome di dominio completo  (FQDN) interno che verrà utilizzato dal server perimetrale e selezionare Pool di **computer** singolo e fare clic su Avanti al termine.
+6. Nella schermata **Definire l'FQDN** del pool di server perimetrali digitare il nome di dominio completo  (FQDN) interno che verrà utilizzato dal server perimetrale e selezionare Pool di **computer** singolo e fare clic su Avanti al termine.
     
 7. Nella schermata **Seleziona funzionalità** è possibile scegliere:
     
-   - È possibile che si intenda utilizzare lo stesso FQDN e lo stesso indirizzo IP per il servizio Accesso SIP, il servizio Web Conferencing Skype for Business Server e il servizio A/V Edge. In tal caso, è necessario scegliere la **casella di** controllo Usa un singolo FQDN e indirizzo IP (tenere presente questo passaggio per il passaggio 9 di seguito)
+   - È possibile che si intenda utilizzare lo stesso FQDN e lo stesso indirizzo IP per il servizio Accesso SIP, il Skype for Business Server Web Conferencing e il servizio A/V Edge. In tal caso, è necessario scegliere la **casella di** controllo Usa un singolo FQDN e indirizzo IP (tenere presente questo passaggio per il passaggio 9 di seguito)
     
    - Se si prevede di abilitare la federazione, selezionare la casella di controllo Abilita federazione per il pool di server perimetrali **(porta 5061).**
     
@@ -108,7 +108,7 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
     
 13. La schermata successiva è **Definire l'hop successivo.** Nella casella **Pool hop successivo** selezionare il nome del pool interno, che potrebbe essere un pool Front End o un pool autonomo. Se si dispone di un Director nell'ambiente, è consigliabile scegliere il Director. Fare clic su **Avanti**.
     
-14. Nella schermata **Associa pool Front End** è necessario specificare uno o più pool interni, inclusi pool Front End e server edizione Standard, da associare a questo server perimetrale. Basta scegliere i nomi dei pool interni che si desidera utilizzare questo server perimetrale per comunicare con gli utenti esterni supportati. Scegliere **Avanti**.
+14. Nella schermata Associa pool **Front End** è necessario specificare uno o più pool interni, inclusi pool Front End e server edizione Standard, da associare a questo server perimetrale. Basta scegliere i nomi dei pool interni che si desidera utilizzare questo server perimetrale per comunicare con gli utenti esterni supportati. Fare clic su **Avanti**.
     
     > [!NOTE]
     > È importante tenere presente che, se i pool interni o i server autonomi usano già un server perimetrale Skype for Business Server diverso, non possono avere più associazioni. Se si sceglie un pool interno o un server autonomo in tale situazione, verrà visualizzato un avviso relativo all'altro server perimetrale e sarà possibile decidere se continuare o meno. Se si continua con questa nuova associazione, la connessione all'altro server perimetrale verrà interrotta. 
@@ -121,7 +121,7 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
 
 1. Accedere al Skype for Business Server edizione Standard server o a Skype for Business Server Front End Server.
     
-2. Una volta presente, aprire **Skype for Business Server Generatore di topologie**.
+2. Una volta presente, **aprire Skype for Business Server Generatore di topologie.**
     
 3. Nell'albero della console espandere il sito in cui si desidera distribuire il server perimetrale.
     
@@ -133,7 +133,7 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
     
 7. Nella schermata **Seleziona funzionalità** è possibile scegliere:
     
-    - È possibile che si intenda utilizzare lo stesso FQDN e lo stesso indirizzo IP per il servizio Accesso SIP, il servizio web conferencing Skype for Business Server e il servizio A/V Edge. In tal caso, è necessario scegliere la **casella di** controllo Usa un singolo FQDN e indirizzo IP (tenere presente questo passaggio per il passaggio 9 di seguito)
+    - È possibile che si intenda utilizzare lo stesso FQDN e lo stesso indirizzo IP per il servizio Accesso SIP, il Skype for Business Server Web Conferencing e il servizio A/V Edge. In tal caso, è necessario scegliere la **casella di** controllo Usa un singolo FQDN e indirizzo IP (tenere presente questo passaggio per il passaggio 9 di seguito)
     
     - Se si prevede di abilitare la federazione, selezionare la casella di controllo Abilita federazione per il pool di server perimetrali **(porta 5061).**
     
@@ -147,7 +147,7 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
     
    - Abilitare IPv6 sull'interfaccia esterna
     
-     Si tratta di una procedura piuttosto autoesplicativa, sia che si utilizzino indirizzi IPv4 o IPv6, sia che si applicino tali indirizzi al server perimetrale internamente o esternamente (è necessario tenere presente questo passaggio per il passaggio 11). È inoltre possibile configurare il server perimetrale o il pool di server perimetrali per l'utilizzo di un indirizzo NAT (Network Address Translation) per l'indirizzo IP esterno. A tale scopo, selezionare la casella di controllo L'indirizzo IP esterno del pool di server perimetrali viene **convertito tramite NAT.** Fai **clic su Avanti** quando sei pronto.
+     Questi indirizzi sono piuttosto autoesplicativi, sia che si utilizzino indirizzi IPv4 o IPv6, sia che si applicino tali indirizzi al server perimetrale internamente o esternamente (è necessario tenere presente questo passaggio per il passaggio 11). È inoltre possibile configurare il server perimetrale o il pool di server perimetrali per l'utilizzo di un indirizzo NAT (Network Address Translation) per l'indirizzo IP esterno. A tale scopo, selezionare la casella di controllo L'indirizzo IP esterno del pool di server perimetrali viene **convertito tramite NAT.** Fai **clic su Avanti** quando sei pronto.
     
 9. Nella schermata FQDN esterni, le scelte effettuate dipendono dalla selezione effettuata nel passaggio 7 precedente.
     
@@ -170,13 +170,13 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
   
 13. Fare clic su **Fine**. Il server perimetrale appena creato dovrebbe essere elencato nella finestra di dialogo **Definisci i computer nel pool.**
     
-14. Sempre nella schermata Definisci i computer nel  **pool,** fare di nuovo clic sul pulsante Aggiungi e ripetere i passaggi da 11 a 13 fino a quando non sono stati aggiunti tutti i server perimetrali che si intende avere in questo pool. Al termine, fare clic su **Avanti.**
+14. Sempre nella schermata Definisci i computer nel  **pool,** fare di nuovo clic sul pulsante Aggiungi e ripetere i passaggi da 11 a 13 fino a quando non sono stati aggiunti tutti i server perimetrali che si intende avere nel pool. Al termine, fare clic su **Avanti.**
     
 15. Se si è scelto di usare NAT nel passaggio 8, verrà visualizzata una schermata con una casella di testo **Indirizzo IP** pubblico. Dovrai immettere l'indirizzo IPv4 pubblico e/o IPv6 impostato per il servizio A/V Edge, per la traduzione tramite NAT. Fare clic su **Avanti**.
     
 16. La schermata successiva è **Definire l'hop successivo.** Nella casella **Pool hop successivo** selezionare il nome del pool interno, che potrebbe essere un pool Front End o un pool autonomo. Se si dispone di un Director nell'ambiente, è consigliabile scegliere il Director. Fare clic su **Avanti**.
     
-17. Nella schermata Associa pool **Front End** è necessario specificare uno o più pool interni, inclusi i pool Front End e i pool edizione Standard, da associare a questo server perimetrale. Basta scegliere i nomi dei pool interni che si desidera utilizzare questo server perimetrale per comunicare con gli utenti esterni supportati. Scegliere **Avanti**.
+17. Nella schermata Associa pool **Front End** è necessario specificare uno o più pool interni, inclusi i pool Front End e i pool edizione Standard, da associare a questo server perimetrale. Basta scegliere i nomi dei pool interni che si desidera utilizzare questo server perimetrale per comunicare con gli utenti esterni supportati. Fare clic su **Avanti**.
     
     > [!NOTE]
     > È importante tenere presente che, se i pool interni o i server autonomi usano già un server perimetrale Skype for Business Server diverso, non possono avere più associazioni. Se si sceglie un pool interno o un server autonomo in tale situazione, verrà visualizzato un avviso relativo all'altro server perimetrale e sarà possibile decidere se continuare o meno. Se si continua con questa nuova associazione, la connessione all'altro server perimetrale verrà interrotta. 
@@ -187,9 +187,9 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
     
 ### <a name="defining-the-topology-for-a-hardware-load-balanced-edge-server-pool"></a>Definizione della topologia per un pool di server perimetrali con bilanciamento del carico hardware
 
-1. Accedere al Skype for Business Server edizione Standard server o a Skype for Business Server Front End Server.
+1. Accedere al server Skype for Business Server edizione Standard o a Skype for Business Server Front End Server.
     
-2. Una volta presente, aprire **Skype for Business Server Generatore di topologie**.
+2. Una volta presente, **aprire Skype for Business Server Generatore di topologie.**
     
 3. Nell'albero della console espandere il sito in cui si desidera distribuire il server perimetrale.
     
@@ -215,7 +215,7 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
     
    - Abilitare IPv6 sull'interfaccia esterna
     
-     Si tratta di una procedura piuttosto autoesplicativa, sia che si utilizzino indirizzi IPv4 o IPv6, sia che si applicino tali indirizzi al server perimetrale internamente o esternamente (è necessario tenere presente questo passaggio per il passaggio 11).
+     Questi indirizzi sono piuttosto autoesplicativi, sia che si utilizzino indirizzi IPv4 o IPv6, sia che si applicino tali indirizzi al server perimetrale internamente o esternamente (è necessario tenere presente questo passaggio per il passaggio 11).
     
      > [!NOTE]
      > A differenza delle altre due opzioni di topologia,  quando si utilizza un servizio di bilanciamento del carico hardware, NON È NECESSARIO selezionare l'opzione L'indirizzo IP esterno del pool di server perimetrali viene **convertito da NAT.** Questa operazione **non è supportata.**
@@ -241,11 +241,11 @@ Se non si è certi di ciò di cui si ha bisogno, prima di iniziare a seguire que
   
 13. Fare clic su **Fine**. Il server perimetrale appena creato dovrebbe essere elencato nella finestra di dialogo **Definisci i computer nel pool.**
     
-14. Sempre nella schermata Definisci i computer nel  **pool,** fare di nuovo clic sul pulsante Aggiungi e ripetere i passaggi da 11 a 13 fino a quando non sono stati aggiunti tutti i server perimetrali che si intende avere in questo pool. Al termine, fare clic su **Avanti.**
+14. Sempre nella schermata Definisci i computer nel  **pool,** fare di nuovo clic sul pulsante Aggiungi e ripetere i passaggi da 11 a 13 fino a quando non sono stati aggiunti tutti i server perimetrali che si intende avere nel pool. Al termine, fare clic su **Avanti.**
     
 15. La schermata successiva è **Definire l'hop successivo.** Nella casella **Pool hop successivo** selezionare il nome del pool interno, che potrebbe essere un pool Front End o un pool autonomo. Se si dispone di un Director nell'ambiente, è consigliabile scegliere il Director. Fare clic su **Avanti**.
     
-16. Nella schermata Associa pool **Front End** è necessario specificare uno o più pool interni, inclusi i pool Front End e i pool edizione Standard, da associare a questo server perimetrale. Basta scegliere i nomi dei pool interni che si desidera utilizzare questo server perimetrale per comunicare con gli utenti esterni supportati. Scegliere **Avanti**.
+16. Nella schermata Associa pool **Front End** è necessario specificare uno o più pool interni, inclusi i pool Front End e i pool edizione Standard, da associare a questo server perimetrale. Basta scegliere i nomi dei pool interni che si desidera utilizzare questo server perimetrale per comunicare con gli utenti esterni supportati. Fare clic su **Avanti**.
     
     > [!NOTE]
     > È importante tenere presente che, se i pool interni o i server autonomi usano già un server perimetrale Skype for Business Server diverso, non possono avere più associazioni. Se si sceglie un pool interno o un server autonomo in tale situazione, verrà visualizzato un avviso relativo all'altro server perimetrale e sarà possibile decidere se continuare o meno. Se si continua con questa nuova associazione, la connessione all'altro server perimetrale verrà interrotta. 
@@ -276,7 +276,7 @@ Dopo aver completato i passaggi precedenti, è il momento di pubblicare questa n
 
 Per eseguire correttamente la distribuzione, Skype for Business Server distribuzione guidata deve accedere ai dati dell'archivio di gestione centrale. Per i server interni nel dominio o nella foresta, questo in genere è semplice. I server perimetrali si trovano all'esterno del dominio e pertanto è necessario esportare manualmente il file della topologia nel percorso del server perimetrale, in genere su un supporto fisico. Questa esportazione viene eseguita tramite PowerShell:
   
-1. Avviare **Skype for Business Server Management Shell**.
+1. Avviare Skype for Business Server **Management Shell**.
     
 2. In Skype for Business Server **Management Shell** eseguire quanto segue:
     

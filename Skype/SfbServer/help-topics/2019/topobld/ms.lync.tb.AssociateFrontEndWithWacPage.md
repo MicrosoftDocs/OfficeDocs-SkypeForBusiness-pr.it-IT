@@ -11,22 +11,22 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AssociateFrontEndWithWacPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49dc1a92-970b-4372-a3a2-2c714a52b1c3
 ROBOTS: NOINDEX, NOFOLLOW
-description: Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma abilita funzionalità aggiuntive non supportate nelle versioni precedenti.
-ms.openlocfilehash: 73637639988d80ece99cdc7519b2e50abce4b354929ded1f3b9e78cdf4591e97
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma consente funzionalità aggiuntive non supportate nelle versioni precedenti.
+ms.openlocfilehash: 2a9ae984f30e582c89294f8f2bef51a07cbc0862
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304138"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625388"
 ---
 # <a name="associate-front-end-with-office-web-apps-server-page"></a>Pagina per l'associazione di Front End Server a Office Web Apps Server
 
-Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma abilita funzionalità aggiuntive non supportate nelle versioni precedenti.
+Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma consente funzionalità aggiuntive non supportate nelle versioni precedenti.
 
-È possibile selezionare un Office web apps server per la distribuzione se si è scelto Conferenza come una delle opzioni di funzionalità per la configurazione Skype for Business Server locale.
+È possibile selezionare Office web apps server per la distribuzione se si è scelto Conferenza come una delle opzioni di funzionalità per la configurazione Skype for Business Server locale.
 
 Questa finestra di dialogo contiene le opzioni seguenti:
 

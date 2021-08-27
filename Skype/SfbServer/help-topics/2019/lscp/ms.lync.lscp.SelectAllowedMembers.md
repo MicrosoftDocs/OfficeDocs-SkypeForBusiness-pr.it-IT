@@ -11,18 +11,18 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e9e6df4a-e58a-4104-9f72-2f5c818353e1
 ROBOTS: NOINDEX, NOFOLLOW
-description: La creazione e la gestione delle chat room persistenti è molto più semplice con l'uso corretto delle categorie. Un amministratore di Persistent Chat può definire AllowedMembers e Creators per ogni categoria e può anche definire le impostazioni e i comportamenti predefiniti delle chat room che verranno applicati a tutte le chat room create nella categoria. Gli amministratori di Persistent Chat creano e gestiscono categorie utilizzando il Pannello di controllo o Windows PowerShell cmdlet.
-ms.openlocfilehash: 43d4ca2860b1eda591e0582c1aa5d432c7cb4b59d0eda4f5c65eaa554b2e2117
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: La creazione e la gestione delle chat room persistenti è molto più semplice con l'uso corretto delle categorie. Un amministratore di Persistent Chat può definire AllowedMembers e Creators per ogni categoria e può anche definire le impostazioni e i comportamenti predefiniti delle chat room che verranno applicati a tutte le chat room create nella categoria. Gli amministratori di Persistent Chat creano e gestiscono categorie utilizzando il pannello di controllo o Windows PowerShell cmdlet.
+ms.openlocfilehash: 112a84a816c15e88b8fbdc3a3df163ec29749904
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331848"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611059"
 ---
 # <a name="select-allowed-members"></a>Selezionare membri consentiti
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.

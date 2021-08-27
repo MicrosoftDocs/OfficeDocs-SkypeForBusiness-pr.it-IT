@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: bf7a3dc4-71a2-4559-a547-d90305d4f904
 description: 'Creare o modificare aree di rete, siti di rete e associare subnet di rete in Skype for Business Server. Tutte queste funzionalità vengono utilizzate per le funzionalità VoIP aziendale avanzate: bypass multimediale, controllo di ammissione di chiamata e routing basato sulla posizione.'
-ms.openlocfilehash: e031936fe8f8411f5527812326b751da59c2a05f77b7162a40901588bbc6138e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5c9105dd49afaaeeba1925859357b801cb252cb4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320888"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58604255"
 ---
 # <a name="deploy-network-regions-sites-and-subnets-in-skype-for-business"></a>Distribuire aree di rete, siti e subnet in Skype for Business
 
@@ -41,7 +41,7 @@ Se sono già state create aree di rete per una di queste funzionalità, non è n
 
 Potrebbe tuttavia essere necessario modificare una definizione di area di rete esistente per applicare impostazioni specifiche della caratteristica. Ad esempio, se sono state create aree di rete per E9-1-1 (che non richiedono un sito centrale associato) e quindi si distribuisce il controllo di ammissione di chiamata, è necessario modificare le definizioni delle aree di rete per specificare un sito centrale.
 
-### <a name="to-create-a-network-region-using-skype-for-business-server-management-shell"></a>Per creare un'area di rete tramite Skype for Business Server Management Shell
+### <a name="to-create-a-network-region-using-skype-for-business-server-management-shell"></a>Per creare un'area di rete Skype for Business Server Management Shell
 
 1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
 
@@ -146,7 +146,7 @@ Se sono già stati creati siti di rete per una di queste funzionalità, non è n
 
 3. Per completare la creazione dei siti di rete per la propria topologia, ripetere il passaggio 2 con le impostazioni relative agli altri siti.
 
-### <a name="to-create-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per creare un sito di rete tramite il Skype for Business Server di controllo
+### <a name="to-create-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per creare un sito di rete tramite Skype for Business Server pannello di controllo
 
 1. Aprire Skype for Business Server Pannello di controllo.
 
@@ -199,7 +199,7 @@ Se sono già stati creati siti di rete per una di queste funzionalità, non è n
 
 3. Per completare la modifica dei siti di rete per la propria topologia, ripetere il passaggio 2 con le impostazioni relative agli altri siti.
 
-### <a name="to-modify-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per modificare un sito di rete utilizzando il Skype for Business Server di controllo
+### <a name="to-modify-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per modificare un sito di rete tramite il Skype for Business Server di controllo
 
 1. Aprire Skype for Business Server Pannello di controllo.
 
@@ -220,7 +220,7 @@ Se sono già stati creati siti di rete per una di queste funzionalità, non è n
 ## <a name="associate-a-subnet-with-a-network-site"></a>Associare una subnet a un sito di rete
 <a name="BKMK_AssociateSubnets"> </a>
 
-Ogni subnet della rete deve essere associata a un sito di rete specifico, poiché le informazioni sulle subnet vengono utilizzate per determinare il sito di rete in cui si trova un endpoint durante l'avvio di una nuova sessione. Quando la posizione di ogni parte in una sessione è nota, le funzionalità VoIP aziendale avanzate possono applicare queste informazioni per determinare come gestire la configurazione o l'instradamento delle chiamate.
+Ogni subnet della rete deve essere associata a un sito di rete specifico, perché le informazioni sulle subnet vengono utilizzate per determinare il sito di rete in cui si trova un endpoint durante l'avvio di una nuova sessione. Quando la posizione di ogni parte in una sessione è nota, le funzionalità VoIP aziendale avanzate possono applicare queste informazioni per determinare come gestire la configurazione o l'instradamento delle chiamate.
 
 Tutti gli indirizzi IP pubblici configurati dei server perimetrali audio/video nella distribuzione devono essere aggiunti alle impostazioni di configurazione di rete. Questi indirizzi IP vengono aggiunti come subnet con una maschera di 32. Il sito di rete associato deve corrispondere al sito di rete configurato appropriato. Ad esempio, l'indirizzo IP pubblico corrispondente al servizio A/V Edge nel sito centrale Chicago sarà NetworkSiteID Chicago.
 
@@ -266,7 +266,7 @@ Tutti gli indirizzi IP pubblici configurati dei server perimetrali audio/video n
    import-csv subnet.csv | foreach {New-CsNetworkSubnet -Identity $_.IPAddress -MaskBits $_.mask -Description $_.description -NetworkSiteID $_.NetworkSiteID}
    ```
 
-### <a name="to-associate-a-subnet-with-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per associare una subnet a un sito di rete tramite Skype for Business Server Pannello di controllo
+### <a name="to-associate-a-subnet-with-a-network-site-by-using-skype-for-business-server-control-panel"></a>Per associare una subnet a un sito di rete tramite Skype for Business Server pannello di controllo
 
 1. Aprire Skype for Business Server Pannello di controllo.
 

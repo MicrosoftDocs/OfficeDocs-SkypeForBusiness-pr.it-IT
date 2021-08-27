@@ -7,8 +7,8 @@ ms.topic: reference
 ms.service: msteams
 audience: admin
 ms.reviewer: olbesede
-description: Gli amministratori dell'istruzione possono conoscere le risorse disponibili in Microsoft Teams per abilitare l'apprendimento remoto.
-localization_priority: Normal
+description: Gli amministratori dell'istruzione possono ottenere informazioni sulle risorse disponibili in Microsoft Teams per abilitare l'apprendimento remoto.
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 0960d48ab493b36067b8640cf1da3d0659865314
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 9ff0509cf38851ac38e20a13cc6c1016bba1b738
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58233231"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597640"
 ---
 # <a name="microsoft-teams-resources-for-education-admins"></a>Risorse di Microsoft Teams per l'istruzione per amministratori
 
@@ -32,7 +32,7 @@ L'istituto di istruzione o l'università deve abilitare Microsoft Teams per l'ap
 
 ## <a name="adoption-content"></a>Contenuti per l'adozione
 
-Entusiasma il tuo istituto di istruzione Microsoft Teams messaggi di posta elettronica, poster, stampati e altre risorse che puoi usare gratuitamente. È anche possibile raggiungere gli studenti online e in tutto il campus con il nuovo toolkit digitale pieno di banner, GIF e video. Inizia subito!
+Entusiasma il tuo istituto di Microsoft Teams messaggi di posta elettronica, poster, stampati e altre risorse che puoi usare gratuitamente. È anche possibile raggiungere gli studenti online e in tutto il campus con il nuovo toolkit digitale pieno di banner, GIF e video. Inizia subito!
 
 Leggere i termini [e le condizioni prima](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/license_agreement_teams_for_education.pdf?raw=true) di usare questi materiali.
 
@@ -46,7 +46,7 @@ Leggere i termini [e le condizioni prima](https://github.com/MicrosoftDocs/Offic
 
 ### <a name="digital-assets"></a>Risorse digitali
 
-Assicurati di consultare la Guida Toolkit [digital per](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/digital-toolkit-guidance.zip?raw=true) massimizzare il tuo Teams lancio! 
+Assicurati di consultare la Guida ai Toolkit [digitali](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/edu-resources/digital-toolkit-guidance.zip?raw=true) per massimizzare il tuo Teams lancio! 
 
 | &nbsp; |&nbsp;  |
 |---------|---------|
@@ -57,8 +57,8 @@ Assicurati di consultare la Guida Toolkit [digital per](https://github.com/Micro
 ## <a name="call-to-action"></a>Invito all'azione
 
 - Visita la [Teams per l'istruzione per](https://www.microsoft.com/en-us/education/products/teams/default.aspx) corsi di formazione, video e demo interattive
-- Attivare Teams nel [interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) (accedere come amministratore Office 365 amministratore)
-- Scarica Teams client: [ottieni Teams su tutti i tuoi dispositivi](https://teams.microsoft.com/downloads)
+- Attivare Teams nella [interfaccia di amministrazione di Microsoft 365](https://portal.office.com/adminportal/home#/Settings/ServicesAndAddIns) (accedere come amministratore Office 365 amministratore)
+- Scaricare Teams client: [scarica Teams su tutti i tuoi dispositivi](https://teams.microsoft.com/downloads)
 - Altre informazioni su Office 365 per l'istruzione nel centro assistenza [per l'istruzione](https://support.office.com/education)
 
 ## <a name="additional-resources"></a>Risorse aggiuntive

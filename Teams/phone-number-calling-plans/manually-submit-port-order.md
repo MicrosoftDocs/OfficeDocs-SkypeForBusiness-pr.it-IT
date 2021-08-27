@@ -12,24 +12,24 @@ ms.collection: M365-voice
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 description: Informazioni su come inviare manualmente una richiesta di ordine di trasferimento.
-ms.openlocfilehash: 13732092921951ee60749e91f4963942f31cb9c45211a0d66cbd9b6f688d220a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5313e7f19554c3c4a82514a247b1bb81b589b5a0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54276142"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58577940"
 ---
 # <a name="manually-submit-a-port-order"></a>Inviare manualmente un ordine di portabilità
 
 In alcuni paesi e aree geografiche potrebbe essere necessario inviare manualmente una richiesta di servizio per ottenere numeri di telefono, trasferire numeri di telefono, rilasciare numeri di telefono o cambiare indirizzo. Per vedere cosa è necessario per ogni paese e area geografica o per altre informazioni sulla portabilità dei numeri, vedere Gestire i numeri di telefono [per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
 
-Usare i passaggi descritti in questo articolo per inviare manualmente un ordine di trasferimento se il proprio paese o area geografica non è elencato nella procedura guidata di [porting nell'interfaccia](transfer-phone-numbers-to-teams.md)di amministrazione di Microsoft Teams.
+Usare la procedura descritta in questo articolo per inviare manualmente un ordine di trasferimento se il proprio paese o area geografica non è elencato nella procedura guidata di [porting nell'interfaccia](transfer-phone-numbers-to-teams.md)di amministrazione di Microsoft Teams.
 
 ## <a name="manually-submit-a-new-port-order-request"></a>Inviare manualmente una nuova richiesta di ordine di trasferimento
 

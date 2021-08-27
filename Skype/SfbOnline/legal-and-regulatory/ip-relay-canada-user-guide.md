@@ -12,19 +12,19 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom:
 - Legal
 hideEdit: true
 description: Come usare un account Ip Relay per il Canada.
-ms.openlocfilehash: ac3ac8b480f1759437fa74572544d85f17542e9288c925ebd07bfaea9a25e0de
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: cf8d63dddea1d26e6fcdf6ffd8701745d50d7385
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316512"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618262"
 ---
 # <a name="ip-relay-in-canada---user-guide"></a>IP Relay in Canada - guida utente
 
@@ -35,19 +35,19 @@ Descrizione del servizio Inoltro messaggi IP da Microsoft:
 ## <a name="scenario-a"></a>Scenario A
 Se una persona ipoudente o ipovedenti vuole contattare un utente non ipovedenti, "chatta" tramite uno speciale client basato sul Web con un agente chiamato Call Taker.
 
-Il call taker comunica quindi con la persona ipoudente o ipovedenti tramite la sessione di chat e contatta la persona non udita tramite la rete telefonica ovunque in Canada o negli Stati Uniti, come richiesto.
+Call Taker comunica quindi con la persona ipoudente o ipovedenti tramite la sessione di chat e contatta la persona non udita tramite la rete telefonica ovunque in Canada o negli Stati Uniti, come richiesto.
 
 ## <a name="scenario-b"></a>Scenario B
-Se una persona non udita vuole parlare con un utente ipoudente o ipovedenti registrato, chiama il numero verde come fornito da Microsoft.
+Se una persona non udente vuole parlare con un utente registrato con problemi di udito o voce, chiama il numero verde come fornito da Microsoft.
 
 Call Taker comunica quindi con la persona non udente e contatta la persona ipoudente o ipovedenti tramite chat e comunica avanti e indietro.
 
-Se la persona ipoudente o ipovedenti non è online nel programma di chat, se è disponibile un indirizzo e-mail, il mittente della chiamata invierà un messaggio di posta elettronica alla persona ipoudente o con problemi di voce, se richiesto dal chiamante.
+Se la persona ipoudente o ipovedenti non è online nel programma di chat, se è disponibile un indirizzo e-mail, il mittente della chiamata invierà un'e-mail alla persona ipoudente o ipovedenti, se richiesto dal chiamante.
 
 ## <a name="scenario-c"></a>Scenario C
 Se una persona ipoudente o ipovedenti richiede assistenza di emergenza, può selezionare il pulsante appropriato: 911 – Polizia / 911 – Fuoco / 911 - Ambulanze.
 
-In questo modo si invierà una notifica di emergenza agli operatori northern IP Relay, che accederanno quindi all'account 911 progettato per questo scopo. Dopo che l'utente che ha chiamato ha confermato il suo indirizzo, contatta il PSAP appropriato e rimane in linea per tutto il tempo necessario.
+In questo modo si invierà una notifica di emergenza agli operatori northern IP Relay, che accederanno quindi all'account 911 progettato per questo scopo. Una volta che l'utente che ha chiamato avrà confermato il suo indirizzo, contatta il PSAP appropriato e rimarrà in linea per tutto il tempo necessario.
 
 ## <a name="how-to-place-a-text-chat-to-voice-call"></a>Come inserire una chat di testo in una chiamata vocale
 
@@ -75,7 +75,7 @@ Se si verifica un'emergenza, è possibile selezionare il pulsante di emergenza a
 L'operatore di inoltro dei messaggi IP contatta il 911, conferma il tuo indirizzo e traduci con diversi centri di emergenza finché non è più necessario, e il reparto appropriato è stato inviato alla tua posizione.
 
 > [!WARNING]
-> Non testare questo servizio, perché l'agenzia appropriata verrà contattata e eventualmente inviata anche se indichi che si tratta semplicemente di un test e potrebbe essere addebitato un costo di spedizione falso da parte dell'agenzia di emergenza.
+> Non testare questo servizio, in quanto l'agenzia appropriata verrà contattata e eventualmente inviata anche se indichi che si tratta semplicemente di un test e potrebbe essere addebitato un costo di spedizione falso da parte dell'agenzia di emergenza.
 
 #### <a name="customer-support"></a>Supporto tecnico:
 Contatta Progetti speciali al numero [specialprojects@northern911.com](mailto:specialprojects@northern911.com) o (705) 222-1733.

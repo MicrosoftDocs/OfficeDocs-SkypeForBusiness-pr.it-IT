@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Norvegia.
-ms.openlocfilehash: fb414917908f5a70b040ea113eb83801026b42c7dcc29f99930c7d028761161d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 44fb8a292acbbbaa263ca3f8822c3df1e0fe3108
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351066"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590790"
 ---
 # <a name="availability-in-norway"></a>Disponibilità in Norvegia
 
