@@ -15,15 +15,15 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i modelli di team nell'interfaccia di amministrazione
-ms.openlocfilehash: a8fa2833f00c1d943bfa1b935492a80bd98444d1780eff1382b0952781aa471e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8acff1891c112ef9db8fbc9d652949786a524550
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310405"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578190"
 ---
 # <a name="manage-team-templates-in-the-admin-center"></a>Gestire i modelli di team nell'interfaccia di amministrazione
 
@@ -38,7 +38,7 @@ Questo breve video illustra come gestire i criteri dei modelli.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Espandere criteri **Teams**  >  **modelli.**
+2. Espandere i **Teams**  >  **modelli.**
 
 3. Selezionare **Aggiungi**.
 
@@ -90,7 +90,7 @@ Gli utenti assegnati a un criterio potranno visualizzare solo i modelli visualiz
 
 **D: È possibile assegnare utenti in batch ai criteri dei modelli di team?**
   
-A: Sì, l'assegnazione in batch per i criteri di modello è in PowerShell. Il tipo di criterio per questa azione è TeamsTemplatePermissionPolicy. [Ulteriori informazioni](/powershell/module/teams/new-csbatchpolicyassignmentoperation)
+A: Sì, l'assegnazione batch per i criteri di modello in PowerShell. Il tipo di criterio per questa azione è TeamsTemplatePermissionPolicy. [Ulteriori informazioni](/powershell/module/teams/new-csbatchpolicyassignmentoperation)
 
 **D: I gruppi possono essere assegnati ai criteri dei modelli di team?**
 

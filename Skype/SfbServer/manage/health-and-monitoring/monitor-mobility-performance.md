@@ -9,21 +9,21 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9c831c63-9a7d-48ec-9118-f8a7e80ddd04
-description: "Riepilogo: informazioni sul servizio per dispositivi mobili (Mcx) e sull'API Web per comunicazioni unificate (UCWA) in Skype for Business Server."
-ms.openlocfilehash: 3e7d64a4dbefed7132206186069ef9646deb802ac0eb9de02d39b602c2dc4ffe
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: informazioni sul servizio per dispositivi mobili (Mcx) e sull'API Web per le comunicazioni unificate (UCWA) in Skype for Business Server."
+ms.openlocfilehash: 556e50a162e455b1d0805c55fa34cb8f4de1603e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345593"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598890"
 ---
 # <a name="monitor-mobility-for-performance-in-skype-for-business-server"></a>Monitorare la mobilità per le prestazioni in Skype for Business Server
  
 **Riepilogo:** Informazioni su Mobility Service (Mcx) e Unified Communications Web API (UCWA) in Skype for Business Server.
   
-Il Skype for Business Server Mobility Service (Mcx) e UCWA (Unified Communications Web API) aumentano il carico nei Front End Server e nei pool Front End. I dispositivi mobili che mantengono una connessione al server anche quando l'applicazione mobile è ridotta al minimo, ad esempio i dispositivi Android e Nokia che eseguono Lync 2010 Mobile, nonché i dispositivi Android e Apple che eseguono Lync 2013 Mobile, impongono un carico maggiore rispetto ai dispositivi che terminano la connessione al server quando l'applicazione mobile viene ridotta a icona. Con l'aumentare dell'utilizzo della mobilità, è necessario monitorare le prestazioni della mobilità per determinare quando è necessario aumentare la capacità.
+Il Skype for Business Server Mobility Service (Mcx) e UCWA (Unified Communications Web API) aumentano il carico nei Front End Server e nei pool Front End. I dispositivi mobili che mantengono una connessione al server anche quando l'applicazione mobile è ridotta al minimo, ad esempio i dispositivi Android e Nokia che eseguono Lync 2010 Mobile, nonché i dispositivi Android e Apple che eseguono Lync 2013 Mobile, impongono un carico maggiore rispetto ai dispositivi che terminano la connessione al server quando l'applicazione mobile viene ridotta a icona. Con l'aumentare dell'utilizzo della mobilità, è necessario monitorare le prestazioni dei dispositivi mobili per determinare quando è necessario aumentare la capacità.
 
 > [!NOTE]
 > Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.
@@ -38,13 +38,13 @@ Diversi limiti influiscono sulle prestazioni di mobilità:
     
 - Lunghezza coda IIS
     
-Altri limiti per i server che possono influire sulle prestazioni dei dispositivi mobili sono un massimo di 12 accessi simultanei, autenticazioni, rinnovi di sessioni e terminazioni. Questi valori massimi non devono essere modificati per la maggior parte delle distribuzioni.
+Altri limiti sui server che possono influire sulle prestazioni dei dispositivi mobili sono un massimo di 12 accessi simultanei, autenticazioni, rinnovi di sessioni e terminazioni. Questi valori massimi non devono essere modificati per la maggior parte delle distribuzioni.
   
 ## <a name="in-this-section"></a>Contenuto della sezione
 
 - [Monitorare i limiti di capacità della memoria del server in Skype for Business Server](server-memory-capacity-limits.md)
     
-- [Monitorare l'utilizzo del servizio per dispositivi mobili e UCWA in Skype for Business Server](service-and-ucwa-usage.md)
+- [Monitorare l'utilizzo di Servizi per dispositivi mobili e UCWA in Skype for Business Server](service-and-ucwa-usage.md)
     
 - [Configurare il servizio per dispositivi mobili per prestazioni elevate in Skype for Business Server](configure-service.md)
     

@@ -10,24 +10,24 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6a0a14a0-baad-44e9-b26e-4d192c0a0e70
 description: 'Riepilogo: leggere questo argomento per informazioni sui componenti e le topologie del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 7aadfd9f899fd2f28e9ae628e9f2c7221cfdd61b545fa393379c370d5d3b59dd
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 67b1e322bd8b367dafdee32f331e597471ba2189
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54289544"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598740"
 ---
 # <a name="plan-persistent-chat-server-topology"></a>Pianificare la topologia del server Chat persistente
  
 **Riepilogo:** Leggere questo argomento per informazioni sui componenti e le topologie del server Chat persistente in Skype for Business Server 2015.
   
-Il server Chat persistente supporta configurazioni a server singolo e a più server. È possibile installare il server Chat persistente in Skype for Business Server 2015 edizione Enterprise o edizione Standard Server. 
+Il server Chat persistente supporta configurazioni sia a server singolo che a server multiplo. È possibile installare il server Chat persistente in un Skype for Business Server 2015 edizione Enterprise o edizione Standard Server. 
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="persistent-chat-server-components"></a>Componenti del server Chat persistente
 
@@ -62,13 +62,13 @@ Per informazioni dettagliate sui requisiti hardware e software per il server Cha
     
 Anche se è possibile distribuire il server Chat persistente in un edizione Standard Server, tenere presente che le prestazioni e la scalabilità saranno influenzate e la disponibilità elevata non è un'opzione. È pertanto consigliabile distribuire Persistent Chat in un edizione Standard Server principalmente a scopo di prova e valutazione. 
   
-Skype for Business Server 2015 supporta una vasta gamma di scenari di collocazione, offrendo la flessibilità necessaria per risparmiare sui costi hardware eseguendo più componenti in un server (se si dispone di un'organizzazione di piccole dimensioni) o per eseguire singoli componenti in server diversi (se si dispone di un'organizzazione più grande che necessita di scalabilità e prestazioni). È consigliabile considerare i fattori di scalabilità prima di decidere se collocare i componenti. Gli scenari di collocazione differiscono Skype for Business Server server edizione Enterprise 2015 edizione Standard 2015. 
+Skype for Business Server 2015 supporta un'ampia gamma di scenari di collocazione, offrendo la flessibilità necessaria per risparmiare sui costi hardware eseguendo più componenti in un server (se si dispone di un'organizzazione di piccole dimensioni) o per eseguire singoli componenti in server diversi (se si dispone di un'organizzazione più grande che necessita di scalabilità e prestazioni). È consigliabile considerare i fattori di scalabilità prima di decidere se collocare i componenti. Gli scenari di collocazione sono diversi Skype for Business Server server edizione Enterprise 2015 e edizione Standard 2015. 
   
-Nelle sezioni seguenti vengono descritte in modo più dettagliato le topologie, inclusi gli scenari di collocazione e le opzioni per i server di database back-end. Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere [Topology Basics for Skype for Business Server 2015.](../../plan-your-deployment/topology-basics/topology-basics.md)
+Nelle sezioni seguenti vengono descritte in modo più dettagliato le topologie, inclusi gli scenari di collocazione e le opzioni per i server di database back-end. Per informazioni dettagliate sulla collocazione di tutti i ruoli e i database del server, vedere [Topology Basics for Skype for Business Server 2015](../../plan-your-deployment/topology-basics/topology-basics.md).
   
 ### <a name="standard-edition-server-with-persistent-chat-server-collocated-on-the-front-end-server"></a>edizione Standard Server con server Chat persistente collocato nel Front End Server
 
-Con edizione Standard, è possibile collocare Persistent Chat nel Front End Server. Questa è la configurazione più semplice e di base. È necessario verificare che il Front End Server esistente abbia capacità sufficiente in termini di risorse fisiche: CPU, memoria, spazio su disco e così via.
+Con edizione Standard, è possibile collocare Persistent Chat nel Front End Server. Questa è la configurazione più semplice e di base. È necessario verificare che il Front End Server esistente abbia una capacità sufficiente in termini di risorse fisiche: CPU, memoria, spazio su disco e così via.
   
 È inoltre possibile collocare il server back-end del server Chat persistente e il database di conformità di Persistent Chat (se abilitato) nel server back-end SQL Server Express locale. Puoi anche scegliere di usare un'SQL Server separata con un'istanza dedicata. 
   
@@ -85,7 +85,7 @@ Con edizione Standard, è possibile installare il server Chat persistente come i
 
 Con edizione Enterprise, è necessario installare il server Chat persistente in un computer separato. Ciò significa che non è possibile collocare il server Chat persistente edizione Enterprise Front End Server. Questa distribuzione richiede un server separato che esegue il server Chat persistente e il servizio di conformità (se abilitato).
   
-È tuttavia possibile collocare il database SQL Server per il server Chat persistente nel database back-end di edizione Enterprise pool Front End.
+È tuttavia possibile collocare il database SQL Server per il server Chat persistente nel database back-end di un pool Front End edizione Enterprise server.
   
 > [!NOTE]
 > Se si prevede di utilizzare SQL disponibilità AlwaysOn per il ripristino di emergenza, tenere presente che non è supportato per i database del server Chat persistente. 
@@ -103,9 +103,9 @@ Nella figura seguente vengono illustrati tutti i componenti di una topologia per
   
 ### <a name="enterprise-edition-server-with-multiple-persistent-chat-servers"></a>edizione Enterprise Server con più server Chat persistente
 
-Con edizione Enterprise, è possibile distribuire una topologia a più server per una maggiore capacità e affidabilità. Una topologia a più server è la stessa della topologia a server singolo, ad eccezione del fatto che più server ospitano il server Chat persistente e possono essere scalati più in alto. La topologia a più server può includere fino a quattro computer attivi che eseguono il server Chat persistente (le configurazioni di disponibilità elevata e ripristino di emergenza ne consentono fino a otto, ma solo quattro possono essere attive e le restanti quattro in standby). Ogni server può supportare fino a 20.000 utenti simultanei, per un totale di 80.000 utenti simultanei connessi a un pool di server Chat persistente con 4 server. Più computer che eseguono il server Chat persistente devono risiedere nello stesso dominio di Servizi di dominio Active Directory Skype for Business Server e del servizio conformità.
+Con edizione Enterprise, è possibile distribuire una topologia a più server per una maggiore capacità e affidabilità. Una topologia a più server è la stessa della topologia a server singolo, ad eccezione del fatto che più server ospitano il server Chat persistente e possono essere scalati più in alto. La topologia a più server può includere fino a quattro computer attivi che eseguono il server Chat persistente (le configurazioni di disponibilità elevata e ripristino di emergenza ne consentono fino a otto, ma solo quattro possono essere attive e le restanti quattro in standby). Ogni server può supportare fino a 20.000 utenti simultanei, per un totale di 80.000 utenti simultanei connessi a un pool di server Chat persistente con 4 server. Più computer che eseguono il server Chat persistente devono risiedere nello stesso dominio di Servizi di dominio Active Directory Skype for Business Server servizio di conformità.
   
-Nella figura seguente vengono illustrati tutti i componenti di una topologia a più server con più computer che eseguono il server Chat persistente, il servizio di conformità facoltativo e un database di conformità separato.
+Nella figura seguente vengono mostrati tutti i componenti di una topologia a più server con più computer che eseguono il server Chat persistente, il servizio di conformità facoltativo e un database di conformità separato.
   
 **Topologia a più server**
 

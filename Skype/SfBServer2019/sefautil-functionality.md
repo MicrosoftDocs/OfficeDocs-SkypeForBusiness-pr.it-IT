@@ -10,19 +10,19 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come usare PowerShell per ottenere la funzionalità SEFAUtil in Skype for Business Server 2019 dopo l'installazione dell'aggiornamento cumulativo 1."
-ms.openlocfilehash: afb0c34afedde91bac40ee90b155809ed3c2b557d88608028b77e0835eb9661d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 88e62543f41d9a497b9b0ca28c55322fbe5f5be7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54277621"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578180"
 ---
-# <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Utilizzo della funzionalità SEFAUtil tramite PowerShell Skype for Business Server 2019
+# <a name="using-sefautil-functionality-via-powershell-in-skype-for-business-server-2019"></a>Utilizzo della funzionalità SEFAUtil tramite PowerShell in Skype for Business Server 2019
 
-SEFAUtil (Secondary Extension Feature Activation) consente agli amministratori di Skype for Business Server e agli agenti dell'helpdesk di configurare le impostazioni di squillo delegato, inoltro di chiamata e prelievo chiamata di gruppo per conto di un Skype for Business Server utente. Questo strumento consente inoltre agli amministratori di eseguire query nelle impostazioni di routing delle chiamate pubblicate per un determinato utente. Dopo aver installato l'aggiornamento cumulativo Skype for Business Server luglio 2019, le funzionalità seguenti attualmente gestibili solo tramite SEFAUtil saranno gestibili anche tramite PowerShell:
+SEFAUtil (Secondary Extension Feature Activation) consente agli amministratori di Skype for Business Server e agli agenti helpdesk di configurare le impostazioni di squillo delegato, inoltro di chiamata e prelievo chiamata di gruppo per conto di un Skype for Business Server utente. Questo strumento consente inoltre agli amministratori di eseguire query nelle impostazioni di routing delle chiamate pubblicate per un determinato utente. Dopo aver installato l'aggiornamento cumulativo Skype for Business Server luglio 2019, le funzionalità seguenti attualmente gestibili solo tramite SEFAUtil saranno gestibili anche tramite PowerShell:
 
 - [Impostazioni di inoltro di chiamata](#call-forwarding-settings)
 - [Impostazioni di delega](#delegation-settings)
@@ -94,7 +94,7 @@ Questo cmdlet aggiunge o rimuove i membri del team.
 
 Questo cmdlet imposta un elenco di team su membri specifici.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 Per le distribuzioni locali, i cmdlet introdotti in questa funzionalità possono essere eseguiti solo dai membri dei gruppi seguenti, in base al livello di accesso specificato di seguito:
 

@@ -7,7 +7,7 @@ audience: ITPro
 ms.topic: conceptual
 ms.service: msteams
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 f1.keywords:
@@ -15,14 +15,14 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.reviewer: lavenkat
-description: Usare Microsoft Teams predefiniti predefiniti di Microsoft Graph creare rapidamente e facilmente team per piccole e medie imprese.
+description: Usare Microsoft Teams predefiniti predefiniti di Microsoft Graph creare rapidamente e facilmente team per le piccole e medie imprese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 971b7b0d3be009938a05b7b8fd38105cc273d6158309c69c30cb7c22c51d3fce
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 80ebae188ce6b6f00186a9e97a25eb4c006930da
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323938"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625948"
 ---
 # <a name="teams-templates-built-in-microsoft-graph-for-small-and-medium-businesses"></a>Teams modelli predefiniti di Microsoft Graph per le piccole e medie imprese
 
@@ -41,7 +41,7 @@ Il modello Company-Wide è destinato alla comunicazione e alla collaborazione ri
 
 *Canali preferiti automaticamente 
 
-Per creare il team Company-Wide predefinito dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire modelli Teams, vedere l'articolo microsoft Graph sulla creazione [di un team.](/graph/api/team-post?view=graph-rest-beta)
+Per creare il team Company-Wide predefinito dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire modelli Teams, vedere l'articolo microsoft Graph [sulla creazione di un team.](/graph/api/team-post?view=graph-rest-beta)
 
 #### <a name="request"></a>Richiesta 
 ```http 
@@ -65,7 +65,7 @@ Il modello Executive Team è ideale per creare un team in cui i dirigenti aziend
 
 *Canali preferiti automaticamente<br>
 
-Per creare il team dirigenti prendendo le impostazioni predefinite dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire modelli Teams, vedere l'articolo microsoft Graph sulla creazione [di un team.](/graph/api/team-post?view=graph-rest-beta)
+Per creare il team dirigenti prendendo le impostazioni predefinite dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire modelli Teams, vedere l'articolo microsoft Graph [sulla creazione di un team.](/graph/api/team-post?view=graph-rest-beta)
 
 #### <a name="request"></a>Richiesta 
 ```http 
@@ -81,7 +81,7 @@ Content-Type: application/json
 
 ## <a name="departmental-team-template"></a>Modello Team di reparto
 
-Il modello team reparto può essere usato per creare un team per singoli reparti o per progetti. Il modello di team Finance è ideale per tutti i post, gli annunci e la collaborazione e la comunicazione giornaliera all'interno dei membri del team Finance e dei membri del team di dirigenti, se appropriato. Il modello viene fornito con un *canale privato* per invitare utenti selezionati per argomenti specifici. Forniamo anche lo script seguente per il team Finanziario che può essere usato per estendere il modello ad altri reparti o progetti specifici aggiungendo, eliminando o modificando a proprio piacimento. Ad esempio, se si ha un reparto *Marketing,* lo script può essere adattato rinominando il team da *Finanze* a *Marketing* per creare un nuovo team di marketing
+Il modello team reparto può essere usato per creare un team per singoli reparti o per progetti. Il modello di team Finance è ideale per tutti i post, gli annunci e la collaborazione e le comunicazioni quotidiane all'interno dei membri del team Finance e dei membri del team di dirigenti, se appropriato. Il modello viene fornito con un *canale privato* per invitare utenti selezionati per argomenti specifici. Forniamo anche lo script seguente per il team Finance che può essere usato per estendere il modello ad altri reparti o progetti specifici aggiungendo, eliminando o modificando a proprio piacimento. Ad esempio, se si ha un reparto *Marketing,* lo script può essere adattato rinominando il team da *Finanze* a *Marketing* per creare un nuovo team di marketing
 
 | Tipologia di modello base | baseTemplateId | Proprietà del modello base |
 |:------------------ | :-------------- | :----------------------------------------------------- | 
@@ -89,7 +89,7 @@ Il modello team reparto può essere usato per creare un team per singoli reparti
 
 *Canali preferiti automaticamente
 
-Per creare il team Finance prendendo le impostazioni predefinite dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire modelli Teams, vedere l'articolo microsoft Graph sulla creazione [di un team.](/graph/api/team-post?view=graph-rest-beta)
+Per creare il team Finance prendendo le impostazioni predefinite dal modello predefinito, specificare la rappresentazione JSON dell'oggetto team nel corpo della richiesta. Per altre informazioni su come distribuire modelli Teams, vedere l'articolo microsoft Graph [sulla creazione di un team.](/graph/api/team-post?view=graph-rest-beta)
 
 #### <a name="request"></a>Richiesta 
 ```http 

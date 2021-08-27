@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere un elenco dei problemi noti quando si usa Microsoft come provider di conferenze telefoniche con accesso esterno, lo stato e alcune soluzioni alternative. '
-ms.openlocfilehash: ee47417941ae39eff966ab2a2d4eb0e07e7d451e404b95ddb66816c61be42664
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6304de40d7c7cd9f3d798af2050276ee6fe2b104
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301842"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578160"
 ---
 # <a name="audio-conferencing-troubleshooting-and-known-issues"></a>Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza
 
@@ -46,7 +46,7 @@ Per il momento, usare questa opzione come riferimento per la risoluzione di pote
 |Se, durante il provisioning iniziale, a un utente viene assegnata una licenza E5, è possibile che l'e-mail di benvenuto ai servizi di audioconferenza non sia stata recapitata in caso di mancata attivazione della cassetta postale.  <br/> |In tale evenienza è possibile inviare nuovamente le informazioni sui servizi di audioconferenza dell'utente utilizzando l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o mediante PowerShell. Vedere [Abilitare o disabilitare l'invio di messaggi di posta elettronica quando vengono modificate le impostazioni di audioconferenza.](enable-or-disable-sending-emails-when-their-settings-change.md)  <br/> **Nota:** Per inviare di nuovo il PIN di audioconferenza all'utente, è necessario reimpostarlo. L'operazione può essere eseguita tramite l'opzione **Servizi di audioconferenza** nell'UNRESOLVED_TOKEN_VAL(Skype for Business admin center) o tramite PowerShell.          |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |La visualizzazione delle chiamate per i servizi di audioconferenza nei rapporti sull'utilizzo può richiedere fino a 24 ore.  <br/> |Nei prossimi aggiornamenti del servizio, ci impegniamo a introdurre miglioramenti in proposito.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
 |Quando un chiamante accede a un bridge di conferenza tramite telefono dopo che la riunione è stata bloccata da un utente Skype for Business, nell'app Skype for Business non è presente alcuna notifica che indica che l'utente è in sala di attesa.  <br/> |Si tratta di un'impostazione inerente alla progettazione; tuttavia, alla luce dei feedback raccolti, abbiamo deciso di introdurre un supporto per questa funzionalità nei prossimi aggiornamenti del servizio.  <br/> |Non ci sono soluzioni alternative.  <br/> |30/8/2017  <br/> |
-|Un Skype for Business Server utente (prem) a cui è stata assegnata la licenza di audioconferenza prima del 1° marzo 2019 potrebbe non vedere le coordinate di accesso esterno negli inviti alla riunione.  <br/> |Il provisioning Skype for Business Server utenti per Teams audioconferenze non era supportato fino a quella data. Ora è supportato ed è un componente di [Meetings First.](/microsoftteams/meetings-first) L'utente deve avere una Teams licenza.  <br/> |La pipeline di provisioning deve essere riattivata. Rimuovere la licenza di audioconferenza dell'utente, attendere un paio d'ore e riassegnare la licenza.  <br/> |3/1/2019  <br/> |
+|Un Skype for Business Server utente (prem) a cui è stata assegnata la licenza di audioconferenza prima dell'1 marzo 2019 potrebbe non vedere le coordinate di accesso esterno negli inviti alla riunione.  <br/> |Il provisioning Skype for Business Server utenti per Teams audioconferenze non era supportato fino a quella data. Ora è supportato ed è un componente di [Meetings First.](/microsoftteams/meetings-first) L'utente deve avere una Teams licenza.  <br/> |La pipeline di provisioning deve essere riattivata. Rimuovere la licenza di audioconferenza dell'utente, attendere un paio d'ore e riassegnare la licenza.  <br/> |3/1/2019  <br/> |
    
 ## <a name="related-topics"></a>Argomenti correlati
 

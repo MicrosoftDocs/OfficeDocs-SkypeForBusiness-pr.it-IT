@@ -9,15 +9,15 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
-description: Panoramica dell'uso di un operatore automatico cloud con Skype for Business Server 2019.
-ms.openlocfilehash: fa1807c272c8d9bba8ae406a87dc55589560d870da5b59fc093c2d9d1a2933e6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Panoramica dell'uso di un operatore automatico cloud Skype for Business Server 2019.
+ms.openlocfilehash: 1dffa2e0b92f9888fc9b24323c7fa638468c8b1b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300512"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58578170"
 ---
 # <a name="plan-cloud-call-queues"></a>Pianificare le code delle chiamate cloud
 
@@ -43,11 +43,11 @@ I requisiti seguenti presuppongono che Skype for Business Server 2019 sia già s
 
 Oltre ai requisiti indicati in precedenza, è necessario configurare i requisiti seguenti per la connessione al servizio di coda delle chiamate di Microsoft Cloud:
 
-- Connettività ibrida. Se sono già state distribuite Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
+- Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare le code di chiamata cloud per gli utenti locali, è necessario assicurarsi di disporre della connettività ibrida impostata tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
 
    Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) e Configure hybrid connectivity between Skype for Business Server and Microsoft 365 or [Office 365](configure-hybrid-connectivity.md).
 
-- Se stai assegnando un numero di telefono a un account di risorsa, ora puoi usare la licenza Sistema telefonico virtual user gratuita. In questo modo Sistema telefonico ai numeri di telefono a livello dell'organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
+- Se stai assegnando un numero di telefono a un account di risorsa, ora puoi usare la licenza Sistema telefonico utente virtuale a costo zero. In questo modo Sistema telefonico ai numeri di telefono a livello dell'organizzazione e consente di creare funzionalità di operatore automatico e coda di chiamata.
 
 - Creare un account di risorsa [locale](configure-onprem-ra.md) per ogni coda di chiamata e assegnare una licenza e un numero di telefono, se necessario.  
 

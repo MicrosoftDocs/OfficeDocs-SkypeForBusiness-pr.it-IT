@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 26cb409d-f4e4-43c7-873f-b694702d491d
 description: 'Riepilogo: informazioni su UNIFIED Communications Web API (UCWA) in Skype for Business Server.'
-ms.openlocfilehash: 41e5f2543fa7a29a4fde96d09977e0b8d4b7b2755f7224c4fb9bfceef246ab09
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9fb052e1494354bc62f097152704bec1888e6523
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317557"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598816"
 ---
 # <a name="ucwa-events-in-skype-for-business-server"></a>Eventi UCWA in Skype for Business Server
  
@@ -34,7 +34,7 @@ UCWA scriverà i record del comportamento operativo come tipi di evento Informat
 |20003  <br/> |Error  <br/> |UCWA ha rilevato un'eccezione non gestita  <br/> |Si è verificata un'eccezione non gestita  <br/> Riavviare il server. Se il problema persiste, contattare il supporto tecnico  <br/> |
 |20004  <br/> |Error  <br/> |Impossibile accedere Exchange foto HD  <br/> |Connessione a Exchange non disponibile  <br/> Verificare che la connessione a Exchange sia disponibile  <br/> |
 |20005  <br/> |Informativa  <br/> |È stato ripristinato dall'errore di accesso Exchange foto HD  <br/> |N/D  <br/> |
-|20006  <br/> |Error  <br/> |Impossibile accedere a Exchange per la ricerca di contatti  <br/> |Connessione a Exchange non disponibile  <br/> Verificare che la connessione a Exchange sia disponibile  <br/> |
+|20006  <br/> |Error  <br/> |Impossibile accedere Exchange ricerca contatti  <br/> |Connessione a Exchange non disponibile  <br/> Verificare che la connessione a Exchange sia disponibile  <br/> |
 |20007  <br/> |Informativa  <br/> |È stato ripristinato dall'errore di ricerca del contatto in Exchange  <br/> |N/D  <br/> |
 |20008  <br/> |Avviso  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per ogni applicazione  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per ogni applicazione  <br/> Verificare la presenza di sottoscrizioni non necessarie nei client  <br/> |
 |20009  <br/> |Avviso  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per batch  <br/> |Tentare di sottoscrivere più sottoscrizioni di presenza consentite per batch  <br/> Verificare la presenza di sottoscrizioni non necessarie nei client  <br/> |
@@ -48,7 +48,7 @@ UCWA scriverà i record del comportamento operativo come tipi di evento Informat
 |20017  <br/> |Error  <br/> |AS MCU is unavailable  <br/> |AS MCU is unavailable  <br/> Vedere se AS MCU è in esecuzione  <br/> |
 |20018  <br/> |Informativa  <br/> |Impossibile connettersi a AS MCU  <br/> |N/D  <br/> |
 |20019  <br/> |Error  <br/> |MCU dati non disponibile  <br/> |MCU dati non disponibile  <br/> Verificare se MCU dati è in esecuzione  <br/> |
-|20020  <br/> |Informativa  <br/> |Impossibile connettersi a MCU di dati  <br/> |N/D  <br/> |
+|20020  <br/> |Informativa  <br/> |Impossibile connettersi a MCU dati  <br/> |N/D  <br/> |
 |20021  <br/> |Error  <br/> |Impossibile partecipare a MCU di messaggistica istantanea  <br/> |Impossibile partecipare a MCU di messaggistica istantanea  <br/> Verificare se la MCU di messaggistica istantanea è in esecuzione  <br/> |
 |20022  <br/> |Error  <br/> |Impossibile partecipare a AV MCU  <br/> |Impossibile partecipare a AV MCU  <br/> Verificare se AV MCU è in esecuzione  <br/> |
 |20023  <br/> |Error  <br/> |Impossibile aggiungere AS MCU  <br/> |Impossibile aggiungere AS MCU  <br/> Vedere se AS MCU è in esecuzione  <br/> |

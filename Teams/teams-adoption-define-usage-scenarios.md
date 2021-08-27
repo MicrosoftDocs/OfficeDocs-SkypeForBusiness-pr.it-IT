@@ -8,9 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: karuanag
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come scegliere gli scenari di utilizzo più applicabili per la fase di sperimentazione dell Teams in adozione.
+description: Informazioni su come scegliere gli scenari di utilizzo più applicabili per la fase di esperimento della Teams adozione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c3578b855745bde964825e265e871a27e4dacc4246b17cfe27f2892d26d7ecea
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 189ceea1b1b3450968610bef5034a97114b40085
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318260"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625918"
 ---
 # <a name="define-usage-scenarios-for-microsoft-teams"></a>Definire scenari di utilizzo per Microsoft Teams
 
@@ -45,9 +45,9 @@ Altri scenari da considerare sono:
 - Aumentare la produttività delle vendite e aumentare i ricavi
 - Semplificare le revisioni aziendali
 
-![Illustrazione dei casi Teams per ogni scenario](media/teams-adoption-use-cases.png)
+![Illustrazione dei casi Teams di utilizzo per ogni scenario](media/teams-adoption-use-cases.png)
 
-Il movimento di modernizzazione di questo scenario è un processo cumulativo: è possibile creare scenari più semplici per creare entusiasmo, familiarità e credibilità con questo nuovo modo di lavorare. Passare quindi ad aree di impatto più ambiziose. Più l'impatto con Microsoft Teams è dimostrato ai colleghi aziendali, più di essi si impegheranno e si baserà lo stato di forza. Per molti dei nostri clienti, una volta ottenuto questo processo, gli stakeholder aziendali si avvicinano a loro dopo aver appreso come i colleghi hanno ottenuto valore da Microsoft Teams.
+Il movimento di modernizzazione di questo scenario è un processo cumulativo: è possibile creare scenari più semplici per creare entusiasmo, familiarità e credibilità con questo nuovo modo di lavorare. Passare quindi ad aree di impatto più ambiziose. Più l'impatto con Microsoft Teams è dimostrato ai colleghi aziendali, più di loro si impegheranno e si crea un momento di forza. Per molti dei nostri clienti, una volta ottenuto questo processo, gli stakeholder aziendali si avvicinano a loro dopo aver appreso come i colleghi hanno ottenuto valore da Microsoft Teams.
 
 ## <a name="interview-business-stakeholders"></a>Intervistare gli stakeholder aziendali
 

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8bd59ad6-3087-49c8-b692-5573fe2ffcd8
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: d8c8bcee2d5869ef0812c9a34ccb1fcc376dcb5b84e41a84110b712713fec4a8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8478ed9d4ba3bc35451c140346bec4e407c25596
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598850"
 ---
 # <a name="media-quality-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo qualità multimediale Skype for Business Server
  
@@ -39,7 +39,7 @@ Il Rapporto riepilogativo qualità multimediale è probabilmente la risorsa migl
     
 - Altri tipi di chiamata
     
-Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza uscire dal report, è possibile espandere ogni categoria per esaminare sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for Business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
+Quando si apre per la prima volta il rapporto, vengono visualizzate informazioni di riepilogo per ognuna delle categorie. Senza uscire dal report, è possibile espandere ogni categoria per esaminare le sottocategorie, ad esempio le chiamate effettuate da Office Communicator 2007 R2 a Skype for Business. È quindi possibile eseguire il drill-down in queste sottocategorie per visualizzare dettagli su ogni chiamata effettuata.
   
 In Skype for Business Server il Rapporto riepilogativo qualità multimediale suddivide ulteriormente i dati in tre tipi di chiamata: chiamate audio, videochiamate e chiamate di condivisione applicazioni. A ogni tipo di chiamata è associata una sezione del rapporto e un set personalizzato di metriche.
   

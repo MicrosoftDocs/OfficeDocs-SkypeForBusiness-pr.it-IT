@@ -13,26 +13,26 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
 ms.custom:
 - Setup
 - ms.lync.lac.UsersCountLimitationWarning
-description: "Informazioni su come usare le limitazioni dell'Skype for Business visualizzazione degli utenti da parte dell'amministratore online. "
-ms.openlocfilehash: d2a5903f2ce5fb5671123e7b8fca090826f39a69a8f98f5c628d0351a4b73bd9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Informazioni su come usare le limitazioni di Skype for Business visualizzazione degli utenti da parte dell'amministratore online. "
+ms.openlocfilehash: e05a07bbf4cca57a8f5c983dedec159956250cc0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54334468"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592080"
 ---
 # <a name="skype-for-business-online-admin-center-users-page-limitations"></a>Skype for Business Limitazioni della pagina utenti dell'interfaccia di amministrazione online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Per motivi di **prestazioni, Skype for Business'interfaccia di amministrazione** visualizza i primi 1.000 utenti nell'elenco degli utenti. Se si hanno più di 1.000 utenti, usare Filtro filtro e Cerca per trovare le persone  ![ specifiche che si stanno ](../images/d360528a-a05a-4f0d-a7fd-25a6c696206a.png)  ![ ](../images/5cc29d50-4eec-48a4-bdad-bbeae230f9ae.png) cercando.
+Per motivi di **prestazioni, Skype for Business'interfaccia di** amministrazione visualizza i primi 1.000 utenti nell'elenco degli utenti. Se si hanno più di 1.000 utenti, usare Filtro filtro e Cerca per trovare le persone  ![ specifiche che si stanno ](../images/d360528a-a05a-4f0d-a7fd-25a6c696206a.png)  ![ ](../images/5cc29d50-4eec-48a4-bdad-bbeae230f9ae.png) cercando.
   
 ## <a name="bulk-editing"></a>Modifica in blocco
 <a name="__top"> </a>

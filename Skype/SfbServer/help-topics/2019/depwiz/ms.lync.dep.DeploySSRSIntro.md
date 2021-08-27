@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f3cda686-6301-419c-af68-b49cc785e5fc
 ROBOTS: NOINDEX, NOFOLLOW
 description: A ogni pool Front End e a ogni Survivable Branch Appliance può essere associato un solo Monitoring Server. Quando il monitoraggio è abilitato per il sito, il Monitoring Server garantisce la raccolta dei dati relativi alla registrazione dettagli chiamata e alla qualità percepita dagli utenti (QoE), nonché la generazione di rapporti su tali dati.
-ms.openlocfilehash: ab54bb380a8f2abf0784b6d9eed1a7d8e3d312690d3c4e3a636b0ad9a01ea7b5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ba33da6b04d8c1bdd9e124ee7670fd1f806fbbd1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309905"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605415"
 ---
 # <a name="sql-server-reporting-services-intro"></a>SQL Server Reporting Services (Intro)
  

@@ -9,27 +9,27 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 02ce922d-9ca8-4513-b09f-9de51f5c5bdc
-description: 'Riepilogo: informazioni su come esportare o importare un file di configurazione del routing vocale Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.'
-ms.openlocfilehash: bef3e1caf80ecc2dc065949dcec684ad6e342902cfabf0e9daebab237d09c7ca
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Skype for Business Server di controllo.'
+ms.openlocfilehash: bbad8ca1a9d11074bb99fcd9655b8a8281953344
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320818"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626148"
 ---
 # <a name="export-or-import-a-voice-route-configuration-file-in-skype-for-business"></a>Esportare o importare un file di configurazione delle route vocali in Skype for Business
  
-**Riepilogo:** Informazioni su come esportare o importare un file di configurazione del routing vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.
+**Riepilogo:** Informazioni su come esportare o importare un file di configurazione del routing vocale Skype for Business Server utilizzando il Pannello Skype for Business Server controllo.
   
 Se si desidera salvare la configurazione del routing vocale senza pubblicarla, eseguire la procedura seguente per salvare e recuperare uno snapshot della configurazione del routing vocale. 
   
-Quando si importa un file di configurazione del routing vocale (con estensione vcfg), ma nel frattempo  sono state apportate modifiche alla configurazione del routing vocale sul server, le pagine del gruppo Routing vocale nel Pannello di controllo di Skype for Business Server indicheranno che sono state apportate modifiche non salvate al routing vocale. Tali modifiche costituiscono le differenze tra le due configurazioni di cui deve essere eseguita la riconciliazione.
+Quando si importa un file di configurazione del routing vocale (con estensione vcfg), ma nel frattempo  sono state apportate modifiche alla configurazione del routing vocale nel server, le pagine del gruppo Routing vocale nel Pannello di controllo di Skype for Business Server indicheranno che sono state apportate modifiche non salvate al routing vocale. Tali modifiche costituiscono le differenze tra le due configurazioni di cui deve essere eseguita la riconciliazione.
   
 Se sono state apportate modifiche non salvate alle impostazioni in qualsiasi pagina del gruppo, le modifiche vengono salvate nel file di configurazione vocale esportato (con estensione vcfg). In questo modo è possibile apportare modifiche alla configurazione del routing vocale durante più sessioni prima di pubblicare le modifiche. 
   

@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: Informazioni sulle procedure per le operazioni di ripristino di emergenza, nonché sulla manutenzione del servizio di backup, che sincronizza i dati in pool Front End abbinati.
-ms.openlocfilehash: a6740f5ebc0cc05982a5ad14efb5b2c10a8e06c22124aae331725d4c74a5aac2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Informazioni sulle procedure per le operazioni di ripristino di emergenza e sulla manutenzione del servizio di backup, che sincronizza i dati in pool Front End abbinati.
+ms.openlocfilehash: b8635728710efbd2c820b6ca57333f77b56d04e5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54336656"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612265"
 ---
 # <a name="managing-skype-for-business-server-disaster-recovery-high-availability-and-backup-service"></a>Gestione Skype for Business Server ripristino di emergenza, disponibilità elevata e servizio di backup
 

@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: abgupta
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
@@ -16,12 +16,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5b2b6b346e9ffed5a9f4d3e6b03519db2f716b3ed584e0fccdfcbcfd3326d32c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0e8f123bf7a351689747649b75f429588445a5d6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54339404"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625928"
 ---
 # <a name="team-expiration-and-renewal-in-microsoft-teams"></a>Scadenza e rinnovo del team in Microsoft Teams
 
@@ -45,4 +45,4 @@ Per impedire l'eliminazione accidentale, il rinnovo automatico viene abilitato a
 
 **La data di scadenza del team e del gruppo sottostante non corrispondono**
 
-Prima che un team venga rinnovato, il gruppo che lo contiene viene rinnovato per primo. Durante il rinnovo, nel gruppo viene impostata una nuova data di scadenza per una data futura. Questa nuova data potrebbe non essere immediatamente visibile in Teams. La sincronizzazione può richiedere fino a 24 ore. Se viene visualizzata una discrepanza tra la data di scadenza di un team e il relativo gruppo sottostante, attendere 24 ore prima di richiedere ulteriore supporto.
+Prima che un team venga rinnovato, il gruppo che lo contiene viene rinnovato per primo. Durante il rinnovo, nel gruppo viene impostata una nuova data di scadenza per una data futura. Questa nuova data potrebbe non essere immediatamente visibile in Teams. La sincronizzazione può richiedere fino a 24 ore. Se viene visualizzata una discrepanza tra la data di scadenza di un team e il gruppo sottostante, attendere 24 ore prima di richiedere ulteriore supporto.

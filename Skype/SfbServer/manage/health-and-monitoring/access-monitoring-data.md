@@ -1,5 +1,5 @@
 ---
-title: Accedere ai dati di monitoraggio Skype for Business Server
+title: Accedere ai dati di monitoraggio in Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -9,17 +9,17 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 845385ca-5532-4fa2-91b9-51c6de6fec91
 description: 'Riepilogo: informazioni sui dati di monitoraggio utilizzati in Skype for Business Server.'
-ms.openlocfilehash: 56b27a372eaef71ee02569a418721e9d2e4b28859a99c20489713a859439217a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2df5bf8bd1e1536b4de046ff4b6a4290e276039d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54336646"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612245"
 ---
-# <a name="access-monitoring-data-in-skype-for-business-server"></a>Accedere ai dati di monitoraggio Skype for Business Server
+# <a name="access-monitoring-data-in-skype-for-business-server"></a>Accedere ai dati di monitoraggio in Skype for Business Server
  
 **Riepilogo:** Informazioni sui dati di monitoraggio usati in Skype for Business Server.
   

@@ -13,19 +13,19 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 ms.appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOIDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
-description: "Questo riepilogo delle impostazioni Skype for Business dell'organizzazione e degli utenti può essere utile per saperne di più sulla connettività per la messaggistica istantanea pubblica, gli inviti alle riunioni, la registrazione di chiamate e riunioni e altro ancora.  "
-ms.openlocfilehash: 7c7bb451411b8aa865f94679f70c07df1efdc2bf0b2df0c0ee0da5b92438f63a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Questo riepilogo delle impostazioni Skype for Business dell'organizzazione e degli utenti può essere utile per altre informazioni sulla connettività per messaggistica istantanea pubblica, gli inviti alle riunioni, la registrazione di chiamate e riunioni e altro ancora.  "
+ms.openlocfilehash: 9a1320951049e5558574c36e4bde4feea46d8ff6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295103"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592030"
 ---
 # <a name="skype-for-business-online-settings-summary"></a>Riepilogo delle impostazioni di Skype for Business online
 
