@@ -12,16 +12,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Elenca i piani di licenza per istituti di istruzione e studenti e gli ID SKU.
 f1keywords: ''
-ms.openlocfilehash: 38bfcfc39179253a30b45f2ce2c52be1b605a4b65832a5565521209c308a6205
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b0fd67dd27a497712e48cb0664712963a61d678c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54297772"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627078"
 ---
 # <a name="education-sku-reference"></a>Informazioni di riferimento su SKU education
 
@@ -64,7 +64,7 @@ Questo articolo elenca i piani di licenza per istituti di istruzione e studenti 
 |Office 365 A3 per studenti     |ENTERPRISEPACKPLUS_STUDENT         |98b6e773-24d4-4c0d-a968-6e787a1f8204         |
 |Office 365 A3 Vantaggio per l'uso degli studenti     |ENTERPRISEPACKPLUS_STUUSEBNFT         |476aad1e-7a7f-473c-9d20-35665a5cbd4f         |
 |Office 365 A5 Vantaggio per l'uso degli studenti    |ENTERPRISEPREMIUM_STUUSEBNFT         |f6e603f1-1a6d-4d32-a730-34b809cb9731         |
-|Office 365 A5 senza servizi di audioconferenza per gli studenti  |ENTERPRISEPREMIUM_NOPSTNCONF_STUUSEBNFT         |bc86c9cd-3058-43ba-9972-141678675ac1         |
+|Office 365 A5 senza audioconferenze per studenti  |ENTERPRISEPREMIUM_NOPSTNCONF_STUUSEBNFT         |bc86c9cd-3058-43ba-9972-141678675ac1         |
 |Office 365 Education homeschool per studenti     |STANDARDWOFFPACK_HOMESCHOOL_STU         |afbb89a7-db5f-45fb-8af0-1bc5c5015709         |
 |Office 365 A1 per studenti (per dispositivo)     |STANDARDWOFFPACK_STUDENT_DEVICE         |160d609e-ab08-4fce-bc1c-ea13321942ac         |
 |Office 365 A1 Plus per gli studenti     |STANDARDWOFFPACK_IW_STUDENT         |e82ae690-a2d5-4d76-8d30-7c6e01e6022e         |

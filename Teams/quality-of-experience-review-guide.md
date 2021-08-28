@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: vkorlep, siunies, gageames
 audience: admin
 description: Informazioni su come analizzare e gestire le prestazioni multimediali in tempo reale in Microsoft Teams tramite call quality dashboard (CQD).
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
@@ -18,12 +18,12 @@ appliesto:
 - Microsoft Teams
 ms.custom:
 - seo-marvel-mar2020
-ms.openlocfilehash: 45fe1737aec2fca951ab71e0925961ada57873ab289abcafd33b2588f189e259
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 275d1c9b3b60a5a1cd25c0991e35f40712fa332e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627318"
 ---
 #  <a name="use-cqd-to-manage-call-and-meeting-quality-in-microsoft-teams"></a>Usare CQD per gestire la qualità delle chiamate e delle riunioni in Microsoft Teams 
 
@@ -36,7 +36,7 @@ Questo articolo presuppone che sia già [stato configurato CQD.](turning-on-and-
 
 ## <a name="categories-to-monitor-and-maintain"></a>Categorie da monitorare e gestire
 
-Dopo aver eseguito l'implementazione di riunioni e voce in Teams, è necessario un piano per il monitoraggio e la manutenzione in corso. In questo modo si garantisce Teams sempre in esecuzione in modo ottimale. Questo piano deve includere le aree principali elencate di seguito. È inoltre consigliabile definire obiettivi per le metriche di qualità e un piano per la risoluzione dei problemi e isolare i problemi quando si verificano.
+Dopo aver eseguito l'implementazione di riunioni e voce in Teams, è necessario un piano per il monitoraggio e la manutenzione in corso. In questo modo si garantisce che Teams sempre in modo ottimale. Questo piano deve includere le aree principali elencate di seguito. È inoltre consigliabile definire obiettivi per le metriche di qualità e un piano per la risoluzione dei problemi e isolare i problemi quando si verificano.
 
 <table>
 <thead>
@@ -103,7 +103,7 @@ Per accelerare la valutazione, sono disponibili due modelli [CQD](https://aka.ms
 
 ### <a name="intended-audience"></a>Gruppo di destinatari previsto
 
-Questo articolo è destinato a essere usato dagli stakeholder dei partner e dei clienti con ruoli come Capo collaborazione/Architetto, Consulente, Change Management/Adoption Specialist, Support/Help Desk Lead, Network Lead, Desktop Lead e IT Admin.
+Questo articolo è destinato a essere usato dagli stakeholder dei partner e dei clienti con ruoli come Lead/Architect di collaborazione, Consulente, Change Management/Adoption Specialist, Support/Help Desk Lead, Network Lead, Desktop Lead e IT Admin.
 
 Questo articolo è destinato anche a essere usato dai campioni di qualità designati. Per altre informazioni, vedere [il ruolo Campione qualità](4-envision-plan-my-service-management.md#the-quality-champion-role).
 
@@ -139,12 +139,12 @@ La misurazione effettiva in CQD varia in base al carico di lavoro, ma ai fini di
 | Instabilità \> 30 ms        | Questa è la variazione media del ritardo tra pacchetti successivi. Teams e Skype for Business possono adattarsi ad alcuni livelli di instabilità attraverso il buffering. È solo quando l'instabilità supera il buffering che un partecipante nota gli effetti di instabilità.      | I pacchetti che arrivano a velocità diverse causano un suono robotico della voce dell'altoparlante.   |
 | Tasso di perdita pacchetti \> 10% o 0,1        | Questa opzione viene spesso definita come percentuale di pacchetti persi. La perdita di pacchetti influisce direttamente sulla qualità audio, da piccoli pacchetti persi individuali che non hanno quasi alcun impatto sulle perdite di burst back-to-back che causano il completo taglio dell'audio.     | I pacchetti che vengono scartati e non arrivano alla destinazione prevista causano lacune nei supporti multimediali, causando sillabe e parole perse e video e condivisione non consentiti. |
 | Tempo di andata e ritorno \> 500 ms        | Questo è il tempo necessario per ottenere un pacchetto IP dal punto A al punto B e tornare al punto A. Questo ritardo di propagazione della rete è legato alla distanza fisica tra i due punti e alla velocità della luce e include un sovraccarico aggiuntivo dovuto ai vari dispositivi nel percorso di rete.      | I pacchetti che durano troppo tempo per arrivare a destinazione causano un effetto walkie-talkie.   |
-| Media di degradazione NMOS \> 1.0         | Degradazione [media del punteggio nmos (Network Mean Opinion Score)](/previous-versions/office/communications-server/bb894481(v=office.12)#network-mos) per lo stream. Rappresenta l'instabilità e la perdita di rete che hanno influenzato la qualità dell'audio ricevuto che ha causato il calo di nmOS di più di un punto. | Si tratta di una combinazione di instabilità, perdita di pacchetti e, in misura minore, aumento del tempo di andata e ritorno. L'utente potrebbe riscontrare una combinazione di questi sintomi.   |
-| Rapporto medio dei campioni nascosti \> 7% o 0,07 | Rapporto medio tra il numero di frame audio con campioni nascosti generati dalla perdita di pacchetti e il numero totale di frame audio. Un campione audio nascosto è una tecnica usata per smussare la transizione improvvisa che in genere sarebbe causata da pacchetti di rete eliminati.      | I valori alti indicano che sono stati applicati livelli significativi di perdita e che l'audio è stato distorto o perso.     |
+| Media degradazione NMOS \> 1.0         | Degradazione [media del punteggio nmos (Network Mean Opinion Score)](/previous-versions/office/communications-server/bb894481(v=office.12)#network-mos) per lo stream. Rappresenta la quantità di perdita e instabilità di rete che ha influenzato la qualità dell'audio ricevuto che ha causato il calo di NMOS di più di un punto. | Si tratta di una combinazione di instabilità, perdita di pacchetti e, in misura minore, aumento del tempo di andata e ritorno. L'utente potrebbe riscontrare una combinazione di questi sintomi.   |
+| Rapporto medio dei campioni nascosti \> 7% o 0,07 | Rapporto medio tra il numero di frame audio con campioni nascosti generati dalla perdita di pacchetti e il numero totale di frame audio. Un campione audio nascosto è una tecnica usata per smussare la transizione improvvisa che in genere sarebbe causata da pacchetti di rete eliminati.      | I valori alti indicano che sono stati applicati livelli significativi di mascheramento della perdita e che l'audio risulta distorto o perso.     |
 
 ##### <a name="why-do-we-prefer-to-use-streams-instead-of-calls"></a>Perché preferiamo usare i flussi invece delle chiamate?
 
-Flussi facci sapere quale particolare parte della chiamata era scarsa- in uscita o in arrivo. Quando si sta esaminando l'analisi delle chiamate per una chiamata scadente, determinare se la chiamata scadente è dovuta allo stream (in uscita) o al flusso del chiamato (in ingresso). Determinare quale stream influisce sulla qualità delle chiamate è ancora più importante per le conferenze. Se si guardano solo i dati delle chiamate, si può vedere il numero di conferenze a cui partecipa una persona, ma non si vede quali persone sono gli altoparlanti attivi, con la maggior parte della condivisione dello schermo.
+Flussi facci sapere quale particolare parte della chiamata era scarsa- in uscita o in arrivo. Quando si sta esaminando l'analisi delle chiamate per una chiamata di qualità scarsa, determinare se la chiamata scadente è dovuta allo stream (in uscita) del chiamante o al flusso del chiamato (in ingresso). Determinare quale stream influisce sulla qualità delle chiamate è ancora più importante per le conferenze. Se si guardano solo i dati delle chiamate, si può vedere il numero di conferenze a cui partecipa una persona, ma non si vede quali persone sono gli altoparlanti attivi, effettuando la maggior parte della condivisione dello schermo.
 
 I dati delle chiamate ti danno metriche di utilizzo, ma non ti porteranno necessariamente alla causa principale per la scarsa qualità delle chiamate. Esaminando la direzione del flusso, è possibile identificare fattori come una chiamata non in una rete gestita, una chiamata da parte di un non dipendente (ad esempio, un fornitore o una persona su una rete diversa). In questi casi, se la connessione di rete dell'altra persona era scarsa, l'intera chiamata verrà contrassegnata come scarsa. Non è possibile eseguire alcun'operazione su fattori esterni, quindi questi dati non sono utili.
 
@@ -154,7 +154,7 @@ La direzione del flusso consente anche di identificare i dispositivi o i client 
 
   - Un altro esempio riguarda la condivisione dello schermo. Se un cliente usa un vecchio client Teams, le prestazioni di condivisione dello schermo potrebbero essere interessate. È possibile risolvere il problema assegnando priorità all'aggiornamento dei client per le persone che eservitino molte attività di condivisione dello schermo.
 
- - Identificando la direzione di uno stream che causa una scarsa qualità delle chiamate, è possibile determinare se si ha un problema di QoS o relativo alla larghezza di banda. Se la QoS non è stata completamente implementata o se si contrassegnano solo i pacchetti nel client e non nel flusso in ingresso, la qualità delle chiamate potrebbe risultare inferiore. Osservando la direzione dello stream, è possibile ottenere una visualizzazione più granulare di perdita di pacchetti, latenza o instabilità in una direzione specifica. 
+ - Identificando la direzione di uno stream che causa una scarsa qualità delle chiamate, è possibile determinare se si ha un problema di QoS o relativo alla larghezza di banda. Se la QoS non è stata completamente implementata o se si contrassegnano solo i pacchetti nel client e non nel flusso in ingresso, la qualità delle chiamate potrebbe risultare inferiore. Esaminando la direzione dello stream, è possibile ottenere una visualizzazione più granulare di perdita di pacchetti, latenza o instabilità in una direzione specifica. 
 
    - Si supponga, ad esempio, che un utente si lamenti dell'audio robotico durante una connessione cablata (jitter). Esaminando lo stream e la direzione, è possibile determinare che il problema si verifica nel flusso in ingresso, solo per un set specifico di subnet. Dopo aver dato queste informazioni al team di rete, possono tenerne traccia fino a un acceleratore WAN non configurato correttamente che non ignorava il traffico multimediale. Dopo che il team di rete ha riconfigurato l'acceleratore WAN, il jitter scompare e la qualità delle chiamate migliora. 
 
@@ -173,7 +173,7 @@ Questa metrica viene calcolata prendendo il numero totale di flussi che non è s
 
 La percentuale di errori di  eliminazione, nota anche come misura Percentuale totale errori chiamate interrotte in CQD, è la percentuale di flussi stabiliti correttamente in cui il percorso multimediale non è terminato normalmente.
 
-Rappresenta qualsiasi flusso multimediale terminato in modo imprevisto. Anche se l'impatto di questa operazione non è grave come uno stream che non è riuscito a configurare, influisce comunque negativamente sull'esperienza utente. La perdita di contenuti multimediali improvvisi e frequenti non solo può avere un impatto grave sull'esperienza utente, ma anche la necessità di riconnettere gli utenti, con conseguente perdita di produttività (per non parlare della frustrazione).
+Rappresenta qualsiasi flusso multimediale terminato in modo imprevisto. Anche se l'impatto di questa operazione non è grave come uno stream che non è riuscito a configurare, influisce comunque negativamente sull'esperienza utente. Le improvvise e frequenti perdite di contenuti multimediali non solo possono avere un impatto grave sull'esperienza utente, ma anche la necessità di riconnettere gli utenti, con conseguente perdita di produttività (per non parlare della frustrazione).
 
 La metrica viene calcolata prendendo il numero totale di flussi eliminati diviso per il numero totale di flussi che sono stati impostati correttamente:
 
@@ -196,7 +196,7 @@ Questa sezione illustra alcune metriche dei servizi di base usate per valutare l
 <tr><td>Nel complesso</td><td>2.0%</td><td>0.5%</td><td>3.0%</td></tr>
 <tr><td rowspan="4"><strong>P2P</strong></td><td>Interno</td><td>2.0%</td><td>0.5%</td><td>2.0%</td></tr>
 <tr><td>Cablata/Wi-Fi interna a 5 GHz</td><td>1.0%</td><td>0.5%</td><td>1.0%</td></tr>
-<tr><td>Cablata/Wi-Fi complessivamente a 5 GHz</td><td>2.0%</td><td>1.0%</td><td>1.0%</td></tr>
+<tr><td>Cablata/Wi-Fi complessivamente 5 GHz</td><td>2.0%</td><td>1.0%</td><td>1.0%</td></tr>
 <tr><td>Nel complesso</td><td>2.0%</td><td>1.0%</td><td>3.0%</td></tr>
 </table>
 
@@ -216,7 +216,7 @@ L'analisi dell'esperienza utente è più grafica che scientifica, perché le met
 Rate My Call (RMC) è integrato in Teams e Skype for Business. Viene visualizzato automaticamente dopo una chiamata ogni 10 o il 10%. Questo breve sondaggio chiede all'utente di valutare la chiamata e fornire un po' di contesto per il motivo per cui la qualità della chiamata potrebbe essere stata scarsa. Una valutazione di uno o due è considerata scarsa, da tre a quattro è buona e cinque è eccellente. Anche se si tratta di un indicatore in ritardo, si tratta di una metrica utile per individuare i problemi che le metriche dei servizi possono perdere.
 
 > [!Note]
-> Il fattore umano: gli utenti spesso ignorano il sondaggio quando la qualità delle chiamate è buona e lo compilano quando la qualità della chiamata è negativa. Di conseguenza, i report RMC potrebbero essere avallati sul lato mediocre anche se le metriche dei servizi sono buone.
+> Il fattore umano: gli utenti spesso ignorano il sondaggio quando la qualità delle chiamate è buona e lo compilano quando la qualità della chiamata è negativa. Di conseguenza, i report RMC potrebbero essere astrali verso il lato mediocre anche se le metriche dei servizi sono buone.
 
 È possibile usare CQD per creare report sulle risposte degli utenti RMC e i report di esempio sono inclusi nel modello CQD. Tuttavia, non vengono discusse in dettaglio in questo articolo. 
 
@@ -226,12 +226,12 @@ Rate My Call (RMC) è integrato in Teams e Skype for Business. Viene visualizzat
 
 ##### <a name="client-readiness"></a>Conformità del client
 
-Mantenere aggiornato Teams client garantisce che gli utenti osercitino sempre la migliore esperienza possibile. Microsoft rilascia aggiornamenti frequenti per [il client Teams](teams-client-update.md) (l'aggiornamento viene installato in background a meno che non sia stata disattivata questa funzionalità, operazione sconsigliata). È anche importante ricordare di applicare patch ai driver di rete, video, USB e audio, perché spesso vengono trascurati e possono influire sulla qualità delle chiamate e delle riunioni. È consigliabile aggiungere driver di rete, Wi-Fi, video, USB e audio al processo di gestione delle patch corrente.
+Mantenere aggiornato Teams client garantisce che gli utenti osercitino sempre la migliore esperienza possibile. Microsoft rilascia aggiornamenti frequenti al [client Teams](teams-client-update.md) (l'aggiornamento viene installato in background a meno che questa funzionalità non sia stata disattivata, cosa che non è consigliabile). È anche importante ricordare di applicare patch ai driver di rete, video, USB e audio, perché spesso vengono trascurati e possono influire sulla qualità delle chiamate e delle riunioni. È consigliabile aggiungere driver di rete, Wi-Fi, video, USB e audio al processo di gestione delle patch corrente.
 
 
 ##### <a name="device-readiness"></a>Conformità del dispositivo
 
-Nessuna strategia può influire sull'esperienza utente più della strategia di conformità del dispositivo. Ad esempio, gli utenti che si affidano agli altoparlanti e al microfono del portatile sperimenteranno molti rumori di fondo nelle chiamate e nelle riunioni. Teams è progettato per funzionare con quasi tutti i dispositivi, ma in caso di problemi relativi al dispositivo, vedere Telefono [per](./devices/phones-for-teams.md)Teams .
+Nessuna strategia può influire sull'esperienza utente più della strategia di conformità del dispositivo. Ad esempio, gli utenti che si affidano agli altoparlanti e al microfono del portatile sperimenteranno molti rumori di fondo nelle chiamate e nelle riunioni. Teams è progettato per funzionare con quasi tutti i dispositivi, ma in caso di problemi relativi al dispositivo, vedere Telefono [per Teams](./devices/phones-for-teams.md).
 
 
 ### <a name="categories-of-quality"></a>Categorie di qualità
@@ -246,7 +246,7 @@ Nessuna strategia può influire sull'esperienza utente più della strategia di c
 
     -   Prima di tutto è responsabilità di Microsoft gestire e gestire i Teams e Skype for Business online.
 
-    -   In secondo piano, le attività che l'organizzazione gestisce per garantire un accesso affidabile al servizio, ad esempio l'aggiornamento delle informazioni sull'edificio e la gestione dei firewall per i nuovi indirizzi IP di Office 365 quando l'infrastruttura viene aggiunta al servizio.
+    -   In secondo piano, le attività che l'organizzazione gestisce per garantire un accesso affidabile al servizio, ad esempio l'aggiornamento delle informazioni sull'edificio e la gestione dei firewall per i nuovi indirizzi IP Office 365 quando l'infrastruttura viene aggiunta al servizio.
 
 ![Graph delle categorie di qualità in un'organizzazione](media/qerguide-image-categories.png "Categorie di qualità in un'organizzazione: gestione dei servizi, endpoint e rete.")
 
@@ -264,7 +264,7 @@ Dato l'impatto critico dell'affidabilità sull'esperienza utente, è consigliabi
 
 #### <a name="endpoints-tasks"></a>Attività endpoint
 
-L'attività principale in questa categoria rimuove gli eventuali ostacoli agli aggiornamenti Teams [client.](teams-client-update.md) Per impostazione predefinita, Teams automaticamente gli aggiornamenti , a meno che non si dissegni questa impostazione, scelta sconsigliata. 
+L'attività principale in questa categoria rimuove gli eventuali ostacoli agli aggiornamenti Teams [client.](teams-client-update.md) Per impostazione predefinita, Teams aggiornamenti automatici( a meno che non si dissegni questa impostazione, cosa che non è consigliabile). 
 
 È inoltre consigliabile monitorare i dispositivi e fornire aggiornamenti ogni volta che si identificano i problemi relativi a un dispositivo.
 
@@ -282,7 +282,7 @@ La maggior parte dei Teams delle prestazioni rientrano nelle categorie seguenti:
 -   Dispositivi audio non supportati o incorporati
 -   Subnet o dispositivi di rete problematici
 
-Se si prende del tempo prima di implementare Teams per valutare queste aree e correggere eventuali carenze, si ridurrà la quantità di lavoro necessaria per mantenere un'esperienza di Teams di alta qualità per tutti gli utenti. Per informazioni su come valutare la rete in preparazione per l'implementazione Teams, vedere [Advisor per](use-advisor-teams-roll-out.md) Teams e [Preparare](prepare-network.md)la rete per Teams .
+Se si prende il tempo prima di implementare Teams per valutare queste aree e correggere eventuali carenze, si ridurrà la quantità di lavoro necessaria per mantenere un'esperienza di Teams di alta qualità per tutti gli utenti. Per informazioni su come valutare la rete in preparazione per l'implementazione Teams, vedere [Advisor per](use-advisor-teams-roll-out.md) Teams e Preparare la rete [per](prepare-network.md)Teams .
 
 ### <a name="expectations-using-cqd"></a>Aspettative con CQD
 
@@ -291,7 +291,7 @@ Usare call quality dashboard (CQD) per ottenere informazioni approfondite sulla 
 CQD, anche se utile per analizzare le tendenze e le subnet, non sempre fornisce una causa specifica per un determinato scenario. È importante comprenderlo e impostare le aspettative corrette quando si usa CQD:
 
 -   CQD non fornirà la causa radice per ogni scenario
--   CQD non conterrà flussi Sistema telefonico audioconferenza
+-   CQD non conterrà flussi Sistema telefonico audioconferenze o audioconferenze
 -   CQD chiamerà le aree per ulteriori indagini in base alle tendenze
 
 ### <a name="cqd-reports-overview"></a>Panoramica dei report CQD
@@ -352,7 +352,7 @@ Un esempio di query ben formata è **Show me Poor Flussi [Measure] by Subnet [Di
 
 ### <a name="first-vs-second"></a>Primo e secondo 
 
-Molte dimensioni e misure in CQD sono classificate come prime o seconde. CQD non usa i campi chiamante/chiamato, che  sono  stati rinominati per primo e secondo perché ci sono passaggi interviene tra il chiamante e il chiamato. La logica seguente determina quale endpoint coinvolto viene etichettato come primo:
+Molte dimensioni e misure in CQD sono classificate come prime o seconde. CQD non usa campi chiamante/chiamato, che sono  stati  rinominati per primo e secondo perché ci sono passaggi interviene tra il chiamante e il chiamato. La logica seguente determina quale endpoint coinvolto viene etichettato come primo:
 
 -   **First** sarà sempre un endpoint del server (Conference Server, Mediation Server e così via) se un server è coinvolto nello stream o nella chiamata.
 
@@ -368,7 +368,7 @@ Per altre informazioni su come determinare il primo o il secondo endpoint quando
 
 -   **Flusso:** Esiste _un flusso_ tra due soli endpoint. Per ogni direzione è presente un solo flusso e per la comunicazione sono necessari due flussi. Flussi sono utili per analizzare edifici, reti o subnet. In alcuni casi, sia la chiamata che lo stream vengono usati nel nome della misura, ad esempio Call Setup Stream o Call Dropped Stream. Questi sono ancora classificati come flussi.
 
--   **Chiama:** Una _chiamata_ è un raggruppamento di tutti i flussi di tutti i partecipanti. Una chiamata è costituita da almeno due flussi. Una singola chiamata avrà almeno due endpoint, ognuno con un minimo di uno stream.
+-   **Chiama:** Una _chiamata_ è un raggruppamento di tutti i flussi di tutti i partecipanti. Una chiamata è costituita almeno da due flussi. Una singola chiamata avrà almeno due endpoint, ognuno con un minimo di uno stream.
 
 Per altre indicazioni sul fatto che la dimensione o la misura si riferisca a una chiamata o a uno stream, vedere Dimensioni e misure [disponibili in CQD](./dimensions-and-measures-available-in-call-quality-dashboard.md)
 
@@ -378,7 +378,7 @@ Una chiamata è classificata come buona, scarsa o non classificata. Diamo un po'
 
 -   **Buono o scarso:** Una chiamata buona o scarsa è costituita da una chiamata che contiene un set completo di metriche del servizio, per cui il servizio ha generato e ricevuto un report QoE completo. Determinare se uno stream è buono o scadente è descritto più [indietro in questo articolo.](#poor-stream-rate)
 
--   **Non classificati:** Uno stream non classificato non contiene un set completo di metriche del servizio. Possono trattarsi di chiamate brevi, in genere inferiori a 60 secondi, in cui non è stato possibile calcolare le medie e non è stato generato un report QoE. Il motivo più comune per cui le chiamate non devono essere classificate è che l'utilizzo dei pacchetti è stato scarso o inevaso. Un esempio di questo potrebbe essere un partecipante che partecipa a una riunione con l'audio e non parla mai. Il partecipante riceve, ma non trasmette, elementi multimediali. Senza la trasmissione di elementi multimediali, non saranno disponibili metriche da usare per CQD per classificare il flusso multimediale in uscita dell'endpoint.
+-   **Non classificati:** Uno stream non classificato non contiene un set completo di metriche del servizio. Possono trattarsi di chiamate brevi, in genere inferiori a 60 secondi, in cui non è stato possibile calcolare le medie e non è stato generato un report QoE. Il motivo più comune per cui le chiamate non devono essere classificate è che l'utilizzo dei pacchetti è stato poco o nessun. Un esempio di questo potrebbe essere un partecipante che partecipa a una riunione con l'audio e non parla mai. Il partecipante riceve, ma non trasmette, elementi multimediali. Senza la trasmissione di elementi multimediali, non saranno disponibili metriche da usare per CQD per classificare il flusso multimediale in uscita dell'endpoint.
 
 Per altre informazioni, vedere [Classificazione dei flussi in CQD.](stream-classification-in-call-quality-dashboard.md)
 
@@ -443,7 +443,7 @@ Questo report di riepilogo viene usato per individuare e isolare gli edifici o l
 
 ##### <a name="remediation"></a>Correzione 
 
-Concentrare le prime attività di correzione su edifici o subnet con il maggior volume di errori. In questo modo si massimizza l'impatto sull'esperienza utente e si riduce rapidamente la frequenza degli errori di configurazione delle chiamate dell'organizzazione. La tabella seguente elenca i due motivi per cui gli errori di configurazione sono riportati da CQD.
+Concentrare le prime attività di correzione su edifici o subnet con il maggior volume di errori. In questo modo si massimizza l'impatto sull'esperienza utente e si riduce rapidamente la frequenza degli errori di configurazione delle chiamate dell'organizzazione. La tabella seguente elenca i due motivi per cui gli errori di installazione sono riportati da CQD.
 
 | Motivo errori di configurazione delle chiamate       | Causa tipica                    |
 |----------------------------------|----------------------------------|
@@ -454,11 +454,11 @@ Quando si inizia la correzione, è possibile concentrare le attività su un dete
 
 |      Correzione      |Linee guida  |
 |-----------------------|----------|
-| Configurare i firewall | Collaborare con il team di rete e verificare la configurazione dei firewall rispetto all Office 365 [di indirizzi IP.](/microsoft-365/enterprise/urls-and-ip-address-ranges)<br><br>Verificare che le [subnet e](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams) le porte multimediali siano incluse nelle regole del firewall. <br><br>Verificare che le [porte necessarie](prepare-network.md) siano aperte nel firewall. Udp deve avere la priorità perché TCP è considerato un protocollo di failback per la condivisione dello schermo basata su audio, video e video e il suo utilizzo influirà sulla qualità della chiamata. La condivisione di applicazioni RDP legacy usa solo TCP.|
+| Configurare i firewall | Collaborare con il team di rete e verificare la configurazione dei firewall [rispetto all'Office 365 di indirizzi IP.](/microsoft-365/enterprise/urls-and-ip-address-ranges)<br><br>Verificare che le [subnet e](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2#bkmk_teams) le porte multimediali siano incluse nelle regole del firewall. <br><br>Verificare che le [porte necessarie](prepare-network.md) siano aperte nel firewall. Udp deve avere la priorità perché TCP è considerato un protocollo di failback per la condivisione dello schermo basata su audio, video e video e il suo utilizzo influirà sulla qualità della chiamata. La condivisione di applicazioni RDP legacy usa solo TCP.|
 
 ### <a name="drop-failures"></a>Errori di eliminazione
 
-A differenza dei codici di errore di configurazione, CQD non ha codice di errore di eliminazione per indicare il motivo per cui si verificano errori di eliminazione, il che rende difficile isolare una causa radice specifica. Per migliorare gli errori di eliminazione del triage, usare un approccio dedotto. Con la correzione di eventuali aree di interesse per i supporti multimediali, l'applicazione di patch a client e driver e l'utilizzo di dispositivi certificati per Teams e Skype for Business, è possibile prevedere un calo degli errori.
+A differenza dei codici di errore di configurazione, CQD non ha codice di errore di eliminazione per indicare il motivo per cui si verificano errori di eliminazione, il che rende difficile isolare una causa radice specifica. Per migliorare gli errori di eliminazione del triage, usare un approccio dedotto. Con la correzione di eventuali aree di interesse per i supporti multimediali, l'applicazione di patch ai client e ai driver e l'utilizzo di dispositivi certificati per Teams e Skype for Business, è possibile prevedere un calo degli errori.
 
 #### <a name="drop-failure-trend-analysis"></a>Analisi della tendenza a errori di rilascio
 
@@ -483,12 +483,12 @@ Gli errori riportati qui indicano che la chiamata è stata interrotta in modo im
 
 ##### <a name="remediation"></a>Correzione
 
-Usando i report della tabella inclusa, è possibile isolare le aree di problemi nella rete in cui la velocità di rilascio è superiore alla metrica di destinazione definita. Concentrare le prime attività di correzione sugli edifici o sulle subnet con il numero totale di flussi più elevato, per ottenere l'impatto più grande.
+Usando i report della tabella inclusa, è possibile isolare le aree di problemi nella rete in cui la velocità di rilascio è superiore alla metrica di destinazione definita. Concentrare i primi interventi di correzione su edifici o subnet con il numero totale di flussi più alto, per ottenere il maggior impatto.
 
 Cause comuni dei drop delle chiamate:
 
 -   Uscita di rete o Internet con provisioning non eseguito
--   Nessun QoS configurato nelle reti vincolate
+-   Nessun QoS configurato in reti vincolate
 -   Versioni client precedenti
 -   Comportamento dell'utente
 
@@ -500,21 +500,21 @@ La tabella seguente elenca alcuni metodi comuni per gestire e correggere gli err
 
 | Correzione                              | Linee guida                      |
 |------------------------------------------|-------------------------------|
-| **Rete/Internet**                         | **Congestione:** collaborare con il team di rete per monitorare la larghezza di banda in specifici edifici/subnet per verificare che ci siano problemi di sovrautilizzazione. Se si conferma che esiste una congestione di rete, è consigliabile aumentare la larghezza di banda dell'edificio o applicare QoS. Usare i report di riepilogo di [Quality Poor Stream](#quality-investigations) inclusi per esaminare le subnet problematiche per i problemi di instabilità, latenza e perdita di pacchetti, perché spesso precedono uno stream eliminato.<br><br>**QoS:** se l'aumento della larghezza di banda è poco pratico o a costo proibitivo, valutare l'implementazione di QoS. Questo strumento è molto efficace nella gestione del traffico congestionato e garantisce che i pacchetti multimediali nella rete gestita siano prioritari sopra il traffico non multimediale. In alternativa, se non ci sono prove chiare che la larghezza di banda sia il responsabile, considerare queste soluzioni:<ul><li>[Microsoft Teams Guida alla QoS](qos-in-teams.md)</li></ul><br>**Eseguire una valutazione della** conformità della rete: una valutazione della rete fornisce informazioni dettagliate sull'utilizzo previsto della larghezza di banda, su come gestire le modifiche alla larghezza di banda e alla rete e sulle procedure di rete consigliate per Teams e Skype for Business. Usando la tabella precedente come origine, si ha un elenco di edifici o subnet che sono ottimi candidati per una valutazione.<ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li></ul> |
-| **Client (solo Skype for Business Online)** | Alcuni client Skype for Business precedenti hanno conosciuto problemi documentati con l'affidabilità dei supporti multimediali. Esaminare i report di Analisi delle chiamate di più utenti interessati oppure creare un report della tabella versione client personalizzato in CQD filtrato in base a specifici edifici o subnet con la misura % totale errori di chiamata. Queste informazioni consentono di capire se esiste una relazione tra l'eliminazione delle chiamate nell'edificio specifico e una versione specifica del client.     |
+| **Rete/Internet**                         | **Congestione:** collaborare con il team di rete per monitorare la larghezza di banda in specifici edifici/subnet per verificare che ci siano problemi di sovrautilizzazione. Se si conferma che esiste una congestione di rete, è consigliabile aumentare la larghezza di banda dell'edificio o applicare QoS. Usare i report di riepilogo di [Qualità Poor Stream](#quality-investigations) inclusi per esaminare le subnet problematiche per i problemi di instabilità, latenza e perdita di pacchetti, perché spesso precedono uno stream eliminato.<br><br>**QoS:** se l'aumento della larghezza di banda è poco pratico o a costo proibitivo, valutare l'implementazione di QoS. Questo strumento è molto efficace nella gestione del traffico congestionato e garantisce che i pacchetti multimediali nella rete gestita siano prioritari sopra il traffico non multimediale. In alternativa, se non ci sono prove chiare che la larghezza di banda sia il responsabile, considerare queste soluzioni:<ul><li>[Microsoft Teams Guida alla QoS](qos-in-teams.md)</li></ul><br>**Eseguire una valutazione della** conformità della rete: una valutazione della rete fornisce informazioni dettagliate sull'utilizzo previsto della larghezza di banda, su come gestire le modifiche alla larghezza di banda e alla rete e sulle procedure di rete consigliate per Teams e Skype for Business. Usando la tabella precedente come origine, si ha un elenco di edifici o subnet che sono ottimi candidati per una valutazione.<ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li></ul> |
+| **Client (solo Skype for Business Online)** | Alcuni client Skype for Business precedenti hanno conosciuto problemi documentati con l'affidabilità dei supporti multimediali. Esaminare i report di Analisi delle chiamate di più utenti interessati oppure creare un report della tabella versione client personalizzato in CQD filtrato in base a specifici edifici o subnet con la misura % totale errori di chiamata. Queste informazioni consentono di capire se esiste una relazione tra il rilascio delle chiamate nell'edificio specifico e una versione specifica del client.     |
 | **Dispositivi**                                  |Se i dispositivi sono il responsabile dei problemi di qualità delle chiamate, è consigliabile aggiornare i dispositivi offensivi. Leggi [Telefoni per Teams](./devices/phones-for-teams.md) per saperne di più. |
-| **Comportamento dell'utente**                            | Se si stabilisce che il problema non è la rete, i dispositivi o i client, è consigliabile sviluppare una strategia di adozione degli utenti per informare gli utenti su come partecipare e uscire al meglio da una riunione. Un utente più intelligente Teams e Skype for Business un'esperienza utente migliore per tutti i partecipanti alla riunione. Ad esempio, un utente che mette il portatile in stato di sospensione (chiudendo il coperchio) senza uscire dalla riunione verrà classificato come un calo di chiamata imprevisto.   |
+| **Comportamento dell'utente**                            | Se si stabilisce che il problema non è la rete, i dispositivi o i client, è consigliabile sviluppare una strategia di adozione degli utenti per informare gli utenti su come partecipare e uscire al meglio da una riunione. Un utente Teams e Skype for Business un'esperienza utente migliore per tutti i partecipanti alla riunione. Ad esempio, un utente che mette il portatile in stato di sospensione (chiudendo il coperchio) senza uscire dalla riunione verrà classificato come un calo di chiamata imprevisto.   |
 
 ## <a name="quality-investigations"></a>Indagini sulla qualità
 
-Il passaggio successivo per valutare lo stato della qualità audio in tutta l'organizzazione consiste nell'analizzare la scarsa frequenza di flusso (PSR), TCP e l'utilizzo del proxy. È importante ricordare che i dati CQD non forniscono una causa radice specifica, ma forniscono aree di problemi probabili per avviare una conversazione collaborativa con i team appropriati per le attività di correzione. 
+Il passaggio successivo per valutare lo stato della qualità audio in tutta l'organizzazione consiste nell'esaminare la scarsa frequenza di flusso (PSR), TCP e l'utilizzo del proxy. È importante ricordare che i dati CQD non forniscono una causa radice specifica, ma forniscono aree di problemi probabili per avviare una conversazione collaborativa con i team appropriati per le attività di correzione. 
 
 > [!NOTE]
 > Non tutti i report inclusi nei modelli sono trattati in questo articolo. Tuttavia, i metodi di indagine descritti di seguito verranno comunque applicati a tali report. Per altre informazioni, vedere la descrizione del singolo report. 
 
 ### <a name="quality"></a>Qualità
 
-Le percentuali PSR vengono usate per indicare se l'organizzazione sta incontrando obiettivi metrici definiti per una determinata area di stato attivo. È importante notare che, anche se le percentuali di alto livello si trova all'interno della destinazione definita, le singole subnet o edifici potrebbero non soddisfare gli obiettivi definiti e, di conseguenza, richiedere ulteriori indagini. Ad esempio, se la percentuale psR audio complessiva è del 2% in aprile, che soddisfa l'obiettivo del campione, i singoli edifici e subnet potrebbero comunque avere esperienze scadenti, a seconda della distribuzione complessiva di quel 2%. 
+Le percentuali PSR vengono usate per indicare se l'organizzazione sta incontrando obiettivi metrici definiti per una determinata area di stato attivo. È importante notare che, anche se le percentuali di alto livello si trova all'interno della destinazione definita, le singole subnet o edifici potrebbero non soddisfare gli obiettivi definiti e, di conseguenza, richiedere ulteriori indagini. Ad esempio, se la percentuale complessiva di PSR audio è del 2% in aprile, che soddisfa l'obiettivo del campione, i singoli edifici e subnet potrebbero comunque avere esperienze scadenti, a seconda della distribuzione complessiva di quel 2%. 
 
 Per valutare la percentuale di flussi scadenti, usare i report sulla qualità. Sono disponibili diversi report sulla qualità per esaminare le metriche relative a generale, conferenze, chiamate PSTN, VPN e sale riunioni. A questo scopo, vengono forniti report mensili, settimanali e giornalieri. I report settimanali e giornalieri sono limitati al modello Reti gestite per aumentare l'efficacia e ridurre il rumore. 
 
@@ -543,7 +543,7 @@ Indipendentemente dalle risposte alle domande precedenti, è consigliabile usare
 
 I report di riepilogo qualitativo offrono informazioni più approfondite su ciò che ha contribuito alla classificazione dei flussi come di qualità scarsa e consentono di isolare le aree di problemi nella rete gestita.
 
-Anche se le dimensioni usate potrebbero differire leggermente tra i report, ogni report includerà misure per i flussi totali, i flussi totali di qualità scarsa, il PSR e la qualità scarsa a causa di. Sono stati creati report per ogni area di interesse: conferenze, due parti, chiamate PSTN, VPN e sale riunioni. Il modello Rete gestita include report aggiuntivi per sfruttare le informazioni sulla posizione caricate tramite il file di edificio.
+Anche se le dimensioni usate potrebbero differire leggermente tra i report, ogni report includerà misure per i flussi totali, i flussi totali di qualità scarsa, il psr e la qualità scarsa a causa di. Sono stati creati report per ogni area di interesse: conferenze, due parti, chiamate PSTN, VPN e sale riunioni. Il modello Rete gestita include report aggiuntivi per sfruttare le informazioni sulla posizione caricate tramite il file di edificio.
 
 
 > [!Note]
@@ -557,7 +557,7 @@ Anche se le dimensioni usate potrebbero differire leggermente tra i report, ogni
 Concentrare le attività di correzione su edifici o subnet con il maggior volume di flussi, perché in questo modo si massimizza l'impatto e si migliora rapidamente l'esperienza utente. Usare le misure jitter, packet loss e round trip time (RTT) per capire cosa contribuisce alla qualità scarsa (è possibile che ci siano più problemi):
 
 -   **Instabilità:** i pacchetti multimediali arrivano a velocità diverse, il che fa sembrare robotico un altoparlante.
--   **Perdita di pacchetti:** i pacchetti multimediali vengono eliminati, il che crea l'effetto delle sillabe o delle parole mancanti.
+-   **Perdita di pacchetti:** i pacchetti multimediali vengono eliminati, il che crea l'effetto di parole o sillabe mancanti.
 -   **RTT:** i pacchetti multimediali stanno occupando molto tempo per raggiungere la destinazione, il che crea un effetto walkie-talkie.
 
 Per facilitare l'analisi dei problemi di qualità, usare [l'analisi delle chiamate per utente.](use-call-analytics-to-troubleshoot-poor-call-quality.md) Con Call Analytics è possibile esaminare una conferenza specifica o il report delle chiamate dell'utente. Questo report conterrà i dati EUII/PII ed è utile quando si cerca la causa di un errore. Dopo aver notato quale edificio è interessato, dovrebbe essere semplice tenere traccia degli utenti dell'edificio. 
@@ -567,21 +567,21 @@ Non dimenticare di far sapere all'helpdesk che queste reti stanno riscontrando p
 | Correzione                              | Linee guida                         |
 |------------------------------------------|----------------------------------|
 | **Reti**                                 | **Congestione:** una rete inutilizzata o con un provisioning inferiore può causare problemi con la qualità dei supporti multimediali. Collaborare con il team di rete per determinare se le connessioni di rete dall'utente al punto di uscita Internet hanno larghezza di banda sufficiente per supportare i supporti multimediali. <br><br>**Eseguire una valutazione della** conformità della rete: una valutazione della rete fornisce informazioni dettagliate sull'utilizzo previsto della larghezza di banda, su come gestire le modifiche alla larghezza di banda e alla rete e sulle procedure di rete consigliate per Teams e Skype for Business. Usando la tabella precedente come origine, si ha un elenco di edifici o subnet che sono ottimi candidati per una valutazione.<ul><li>[Preparare la rete dell'organizzazione per Teams](prepare-network.md)</li></ul>|
-| **QoS (Quality of Service)**  | QoS è uno strumento comprovato che consente di assegnare priorità ai pacchetti in una rete congestionata per assicurarsi che arrivino a destinazione intatti e in tempo. Valutare l'implementazione di QoS all'interno dell'organizzazione per ottimizzare la qualità dell'esperienza utente in cui la larghezza di banda è limitata. QoS consente di risolvere i problemi in genere associati a alti livelli di perdita di pacchetti e, in misura minore, a tempi di instabilità e di andata e ritorno.<ul><li>[Teams Guida alla QoS](qos-in-teams.md)</li></ul> |
-| **Wi-Fi**               | Wi-Fi può avere un impatto significativo sulla qualità delle chiamate. Wi-Fi le distribuzioni non prendono in genere in considerazione i requisiti di rete per i servizi VoIP e spesso sono fonte di scarsa qualità. Per altre informazioni sull'ottimizzazione dell'infrastruttura Wi-Fi, vedere questo articolo sulla Wi-Fi [pianificazione.](/skypeforbusiness/certification/plan-wifi)<br><br>**Driver wireless:** verificare che i driver wireless siano aggiornati. In questo modo si ridurrà l'esperienza utente scarsa relativa a un driver obsoleto. Molte organizzazioni non includono driver wireless nei cicli di patch e questi driver possono passare senza patch per anni. Molti problemi wireless vengono risolti assicurando che i driver wireless siano aggiornati.<br><br>**WMM**: Wireless Multimedia Extensions (WMM), noto anche come Wi-Fi Multimedia, fornisce funzionalità QoS di base alle reti wireless. Le reti wireless moderne devono supportare molti dispositivi. Questi dispositivi competono per la larghezza di banda e possono causare problemi di qualità per i servizi VoIP, dove la velocità e la latenza sono essenziali. Consultare il fornitore della rete wireless per informazioni specifiche e valutare l'implementazione di WMM nella rete wireless per assegnare la priorità Skype for Business e Teams multimediali.<br><br>**Densità dei punti di accesso:** i punti di accesso potrebbero essere troppo distanti o non essere presenti in una posizione ideale. Per ridurre al minimo le potenziali interferenze, posizionare punti di accesso aggiuntivi nelle sale riunioni e in posizioni non ostruito da muri o altri oggetti in cui il segnale Wi-Fi è debole.<br><br>**2,4 GHz** rispetto a 5 GHz: 5 GHz fornisce meno interferenze in background e velocità più elevate e dovrebbe essere prioritario quando si distribuisce VoIP tramite Wi-Fi. Tuttavia, i 5 GHz non sono così forti come 2,4 GHz e non penetrano facilmente nelle pareti. Esaminare il layout dell'edificio per determinare la frequenza su cui è possibile fare affidamento per la connessione ottimale. |
+| **QoS (Quality of Service)**  | QoS è uno strumento comprovato che consente di assegnare priorità ai pacchetti in una rete congestionata per assicurarsi che arrivino a destinazione intatti e in tempo. Valutare l'implementazione di QoS all'interno dell'organizzazione per ottimizzare la qualità dell'esperienza utente in cui la larghezza di banda è limitata. La QoS consente di risolvere i problemi in genere associati a alti livelli di perdita di pacchetti e, in misura minore, a tempi di instabilità e di andata e ritorno.<ul><li>[Teams Guida alla QoS](qos-in-teams.md)</li></ul> |
+| **Wi-Fi**               | Wi-Fi può avere un impatto significativo sulla qualità delle chiamate. Wi-Fi le distribuzioni non prendono in genere in considerazione i requisiti di rete per i servizi VoIP e spesso sono fonte di scarsa qualità. Per altre informazioni sull'ottimizzazione dell'infrastruttura Wi-Fi, vedere questo articolo sulla Wi-Fi [pianificazione.](/skypeforbusiness/certification/plan-wifi)<br><br>**Driver wireless:** verificare che i driver wireless siano aggiornati. In questo modo si ridurrà l'esperienza utente scarsa relativa a un driver obsoleto. Molte organizzazioni non includono driver wireless nei cicli di patch e questi driver possono passare senza patch per anni. Molti problemi wireless vengono risolti assicurando che i driver wireless siano aggiornati.<br><br>**WMM**: Wireless Multimedia Extensions (WMM), noto anche come Wi-Fi Multimedia, fornisce funzionalità QoS di base alle reti wireless. Le reti wireless moderne devono supportare molti dispositivi. Questi dispositivi competono per la larghezza di banda e possono causare problemi di qualità per i servizi VoIP, dove la velocità e la latenza sono essenziali. Consultare il fornitore della rete wireless per informazioni specifiche e valutare l'implementazione di WMM nella rete wireless per assegnare priorità Skype for Business e Teams multimediali.<br><br>**Densità dei punti di accesso:** i punti di accesso potrebbero essere troppo distanti o non essere presenti in una posizione ideale. Per ridurre al minimo le potenziali interferenze, posizionare punti di accesso aggiuntivi nelle sale riunioni e in posizioni non ostruito da muri o altri oggetti in cui il segnale Wi-Fi è debole.<br><br>**2,4 GHz** rispetto a 5 GHz: 5 GHz fornisce meno interferenze in background e velocità più elevate e dovrebbe essere prioritario quando si distribuisce VoIP tramite Wi-Fi. Tuttavia, i 5 GHz non sono così forti come 2,4 GHz e non penetrano facilmente nelle pareti. Esaminare il layout dell'edificio per determinare la frequenza su cui è possibile fare affidamento per la connessione ottimale. |
 |**Dispositivo di rete** | Le organizzazioni più grandi potrebbero avere centinaia di dispositivi distribuiti in tutta la rete. Collaborare con il team di rete per assicurarsi che i dispositivi di rete dall'utente a Internet siano mantenuti e aggiornati. |
 | **VPN**  | Gli appliance VPN non sono tradizionalmente progettati per gestire carichi di lavoro multimediali in tempo reale. Alcune configurazioni VPN proibiscono l'uso di UDP (che è il protocollo preferito per i supporti multimediali) e si basano solo su TCP. Valutare l'implementazione di una soluzione VPN a tunnel diviso per ridurre la VPN come fonte di scarsa qualità. |
-| **Client** <br>(Skype for Business Online) | Assicurarsi che tutti i client vengano aggiornati regolarmente. |
+| **Client** <br>(Skype for Business online) | Assicurarsi che tutti i client vengano aggiornati regolarmente. |
 | **Dispositivi** | Se i dispositivi sono il responsabile dei problemi di qualità delle chiamate, è consigliabile aggiornare i dispositivi offensivi. Leggi [Telefoni per Teams](./devices/phones-for-teams.md) per saperne di più. |
 | **Driver** | La rete di gestione delle patch (Ethernet e Wi-Fi), i driver audio, video e USB dovrebbero far parte della strategia generale di gestione delle patch. Molti problemi di qualità vengono risolti aggiornando i driver. |
-| **Sale riunioni su Wi-Fi** | È consigliabile che i dispositivi delle sale riunioni siano connessi alla rete usando almeno una connessione Ethernet da 1 Gbps. I dispositivi delle sale riunioni includono in genere più flussi audio e video, oltre al contenuto della riunione, ad esempio la condivisione dello schermo, e hanno requisiti di rete più elevati rispetto ad altri endpoint Teams o Skype for Business video. Le sale riunioni sono, per definizione, dispositivi stazionari in cui Wi-Fi offre un vantaggio solo durante l'installazione.<br><br>Le sale riunioni devono essere trattate con maggiore attenzione e attenzione per garantire che l'esperienza di utilizzo di questi dispositivi sia in grado di soddisfare o superare le aspettative. I problemi di qualità con le sale riunioni vengono in genere riassegnato rapidamente, perché vengono spesso usati dal personale di livello superiore.<br><br>Con tutte le cose uguali (a parte la convenienza), le Wi-Fi prestazioni sono spesso inferiori a una connessione cablata. Con l'aumento dei criteri "porta il tuo dispositivo" e la proliferazione dei portatili, i punti di Wi-Fi di accesso sono spesso sovra-utilizzati. I supporti multimediali in tempo reale potrebbero non essere prioritari nelle reti Wi-Fi, il che può causare problemi di qualità durante i periodi di punta. Questo utilizzo elevato può coincidere con una riunione in cui potrebbero essere presenti una decina di persone, ognuna con il proprio portatile e smartphone, tutte connesse allo stesso punto di accesso Wi-Fi del dispositivo della sala riunioni.<br><br>Wi-Fi deve essere considerato solo come soluzione temporanea, per un'installazione per dispositivi mobili o quando è stato eseguito correttamente il provisioning di Wi-Fi per supportare supporti basati su business class e in tempo reale. |
+| **Sale riunioni su Wi-Fi** | È consigliabile che i dispositivi delle sale riunioni siano connessi alla rete usando almeno una connessione Ethernet da 1 Gbps. I dispositivi delle sale riunioni includono in genere più flussi audio e video, oltre al contenuto della riunione, ad esempio la condivisione dello schermo, e hanno requisiti di rete più elevati rispetto ad altri endpoint Teams o Skype for Business video. Le sale riunioni sono, per definizione, dispositivi stazionari in cui Wi-Fi offre un vantaggio solo durante l'installazione.<br><br>Le sale riunioni devono essere trattate con maggiore attenzione e attenzione per garantire che l'esperienza di utilizzo di questi dispositivi sia in grado di soddisfare o superare le aspettative. I problemi di qualità con le sale riunioni vengono in genere riassegnato rapidamente, perché vengono spesso usati dal personale di livello superiore.<br><br>Con tutte le cose uguali (a parte la convenienza), Wi-Fi prestazioni sono spesso inferiori a una connessione cablata. Con l'aumento dei criteri "porta il tuo dispositivo" e la proliferazione dei portatili, i punti Wi-Fi di accesso sono spesso sovra-utilizzati. I supporti multimediali in tempo reale potrebbero non essere prioritari nelle reti Wi-Fi, il che può causare problemi di qualità durante i periodi di punta. Questo utilizzo elevato può coincidere con una riunione in cui potrebbero essere presenti una decina di persone, ognuna con il proprio portatile e smartphone, tutte connesse allo stesso punto di accesso Wi-Fi del dispositivo della sala riunioni.<br><br>Wi-Fi deve essere considerato solo come soluzione temporanea, per un'installazione per dispositivi mobili o quando è stato eseguito correttamente il provisioning di Wi-Fi per supportare supporti basati su business class e in tempo reale. |
 
 
 ### <a name="tcp"></a>TCP 
 
-Il protocollo TCP (Transmission Control Protocol) è considerato un trasporto failback e non il trasporto principale desiderato per i supporti multimediali in tempo reale. Il motivo per cui si tratta di un trasporto failback è dovuto alla natura stateful di TCP. Ad esempio, se una chiamata viene effettuata su una rete latente e i pacchetti multimediali vengono ritardati, i pacchetti di pochi secondi fa, che non sono più utili, competono per la larghezza di banda per raggiungere il destinatario, il che può peggiorare la situazione. In questo modo l'audio viene ricucito e allungato, con conseguenti artefatti udibili, spesso sotto forma di instabilità.
+Il protocollo TCP (Transmission Control Protocol) è considerato un trasporto failback e non il trasporto principale desiderato per i supporti multimediali in tempo reale. Il motivo per cui si tratta di un trasporto failback è dovuto alla natura stateful di TCP. Ad esempio, se una chiamata viene effettuata su una rete latente e i pacchetti multimediali vengono ritardati, i pacchetti di pochi secondi fa, che non sono più utili, competono per la larghezza di banda per raggiungere il destinatario, il che può peggiorare la situazione. In questo modo l'audio viene ricucito e allungato, producendo artefatti udibili, spesso sotto forma di instabilità.
 
-I report di questa sezione non fanno distinzione tra flussi buoni e di qualità scarsa. Dato che UDP è preferibile, i report cercano l'uso di TCP per la condivisione dello schermo basata su audio, video e video (VBSS). Vengono fornite tariffe di flusso scadenti per confrontare la qualità UDP e la qualità TCP, in modo da concentrare le attività nei casi in cui l'impatto è maggiore. L'utilizzo di TCP è causato principalmente da regole del firewall incomplete. Per altre informazioni sulle regole del firewall per Teams e Skype for Business Online, vedere URL Microsoft 365 e Office 365 e [intervalli di indirizzi IP.](/microsoft-365/enterprise/urls-and-ip-address-ranges)
+I report di questa sezione non fanno distinzione tra flussi buoni e di qualità scarsa. Dato che UDP è preferibile, i report cercano l'uso di TCP per la condivisione dello schermo basata su audio, video e video (VBSS). Vengono fornite tariffe di flusso scadenti per confrontare la qualità UDP e la qualità TCP, in modo da concentrare le attività nei casi in cui l'impatto è maggiore. L'utilizzo di TCP è causato principalmente da regole del firewall incomplete. Per altre informazioni sulle regole del firewall per Teams e Skype for Business Online, vedere url Microsoft 365 e Office 365 e [intervalli di indirizzi IP.](/microsoft-365/enterprise/urls-and-ip-address-ranges)
 
 > [!Note]
 > Audio, video e VBSS preferiscono tutti UDP come trasporto principale. Il carico di lavoro legacy condivisione applicazioni RDP usa solo TCP.
@@ -598,7 +598,7 @@ Usando questo report è possibile rispondere alle domande seguenti:
 
 -   Qual è il volume totale di flussi TCP per il mese corrente?
 -   È peggio o migliore del mese precedente?
--   La tendenza di utilizzo tcp è in aumento, costante o decrescente?
+-   La tendenza all'utilizzo di TCP è in aumento, costante o decrescente?
 -   Tcp PSR è uguale al PSR complessivo?
 
 Se si nota che la tendenza di utilizzo tcp è in aumento o superiore al normale utilizzo mensile, è consigliabile usare i report secondari per cercare eventuali edifici o reti che potrebbero richiedere la correzione. Idealmente, si vogliono il numero di sessioni audio basate su TCP possibile nella rete gestita.
@@ -615,7 +615,7 @@ Anche se si vuole che l'utilizzo tcp sia il più basso possibile, potrebbe verif
 
 #### <a name="tcp-investigations"></a>Indagini TCP
 
-Nei modelli CQD forniti passare al Flussi TCP tramite i report Edificio e Subnet usando il modello Reti gestite o Tutte le reti. Allo scopo di analizzare l'utilizzo di TCP, il processo è lo stesso, quindi la discussione verrà incentrata qui sulle conferenze.
+Nei modelli CQD forniti passare al Flussi TCP di Creazione e subnet usando il modello Reti gestite o Tutte le reti. Allo scopo di analizzare l'utilizzo di TCP, il processo è lo stesso, quindi la discussione verrà incentrata qui sulle conferenze.
 
 
 ##### <a name="remediation"></a>Correzione
@@ -627,7 +627,7 @@ La causa più comune dell'utilizzo di TCP è la mancanza di regole di eccezione 
 | Correzione        | Linee guida     |
 |--------------------|--------------------------------------|
 | Configurare il firewall | Verificare che [le Microsoft 365 o Office 365 IP](/microsoft-365/enterprise/urls-and-ip-address-ranges) e gli indirizzi IP siano esclusi dal firewall. Per i problemi TCP correlati ai supporti multimediali, concentrare le attività iniziali su quanto segue:<ul><li>Verificare che le subnet multimediali client 13.107.64.0/18 e 52.112.0.0/14 siano nelle regole del firewall.</li><li>Le porte UDP 3478-3481 sono le porte multimediali necessarie e devono essere aperte, altrimenti il client non riuscirà alla porta TCP 443.</li></ul> |
-| Verifica             | Usare lo [Strumento di](https://www.microsoft.com/download/details.aspx?id=53885) valutazione della rete Microsoft per verificare la presenza di problemi di connettività a indirizzi IP Microsoft 365 o Office 365 ip e porte dall'edificio o dalla subnet interessata.    |
+| Verifica             | Usare lo [Strumento di](https://www.microsoft.com/download/details.aspx?id=53885) valutazione della rete Microsoft per verificare la presenza di problemi di connettività a Microsoft 365 o Office 365 IP e porte dall'edificio o dalla subnet interessata.    |
 
 ### <a name="http-proxy"></a>Proxy HTTP
 
@@ -637,7 +637,7 @@ I proxy HTTP non sono il percorso preferito per stabilire sessioni multimediali,
 
 
 > [!IMPORTANT]
-> È consigliabile caricare un file di [edificio](CQD-upload-tenant-building-data.md) valido in modo da poter distinguere all'interno da flussi audio esterni durante l'analisi dell'utilizzo del proxy. 
+> È consigliabile caricare un file di [edificio](CQD-upload-tenant-building-data.md) valido in modo da poter distinguere i flussi audio dall'esterno durante l'analisi dell'utilizzo del proxy. 
 
 
 #### <a name="http-proxy-usage"></a>Utilizzo del proxy HTTP
@@ -648,7 +648,7 @@ Il report flusso proxy HTTP in questa sezione del modello è molto simile ai rep
 
 ##### <a name="analysis"></a>Analisi
 
-Si vuole visualizzare il numero di flussi multimediali HTTP possibile. Se i flussi attraversano il proxy, rivolgersi al team di rete per assicurarsi che siano presenti le esclusioni appropriate in modo che i client esercitino direttamente il routing alle subnet multimediali di Teams o Skype for Business Online.
+Si vuole visualizzare il numero di flussi multimediali HTTP possibile. Se sono presenti flussi che attraversano il proxy, rivolgersi al team di rete per assicurarsi che siano presenti le esclusioni appropriate in modo che i client instradino direttamente alle subnet multimediali di Teams o Skype for Business Online.
 
 Se nell'organizzazione è presente un solo proxy Internet, verificare gli URL Microsoft 365 o Office 365 url e le esclusioni degli intervalli di indirizzi [IP.](/microsoft-365/enterprise/urls-and-ip-address-ranges) Se nell'organizzazione sono configurati più proxy Internet, usare il report secondario HTTP per isolare l'edificio o la subnet interessata.
 
@@ -666,7 +666,7 @@ Questo report identifica edifici e subnet specifici che contribuiscono all'utili
 
 La causa più comune dell'utilizzo di HTTP è la mancanza di regole di eccezione nei proxy. Usando l'edificio o la subnet fornita, è possibile determinare rapidamente quale proxy deve essere configurato per il bypass multimediale.
 
-Verificare che i nomi fqdn [Microsoft 365 o Office 365](/microsoft-365/enterprise/urls-and-ip-address-ranges) richiesti siano aggiunti a un elenco di indirizzi consentiti nel proxy.
+Verificare che i nomi Microsoft 365 [o Office 365 fqdn](/microsoft-365/enterprise/urls-and-ip-address-ranges) necessari siano aggiunti a un elenco di indirizzi consentiti nel proxy.
 
 ## <a name="endpoint-investigations"></a>Indagini sull'endpoint
 
@@ -682,13 +682,13 @@ Questi report sono incentrati sull'identificazione Skype for Business versioni c
 > [!IMPORTANT]
 > Attualmente, Teams client vengono distribuiti e aggiornati automaticamente tramite il rete per la distribuzione di contenuti Azure e verranno mantenuti aggiornati dal servizio. Di conseguenza, non è necessario monitorare le versioni client Teams, a meno che non si dissegni l'aggiornamento automatico, cosa che non è consigliabile.
 
-A meno che non si escludono i dati dei partecipanti federati, questi report includeranno la telemetria del client dagli endpoint federati. Per escludere gli endpoint federati, è necessario aggiungere un filtro di query per il secondo ID tenant impostato [sull'ID tenant dell'organizzazione.](CQD-data-and-reports.md#how-to-find-your-tenant-id) In alternativa, è possibile usare un filtro [URL](CQD-data-and-reports.md#url-filters) per escludere la telemetria dei partecipanti federati.
+A meno che non si escludono i dati dei partecipanti federati, questi report includeranno la telemetria del client dagli endpoint federati. Per escludere gli endpoint federati, è necessario aggiungere un filtro di query per il secondo ID tenant impostato [sull'ID tenant dell'organizzazione.](CQD-data-and-reports.md#how-to-find-your-tenant-id) In alternativa, è possibile usare un filtro [URL per](CQD-data-and-reports.md#url-filters) escludere la telemetria dei partecipanti federati.
 
 
 
 #### <a name="remediation"></a>Correzione
 
-Una parte fondamentale dell'esperienza utente di alta qualità è garantire che i client gestiti eseereno versioni aggiornate di Skype for Business, oltre a garantire che i driver audio, video, di rete e USB di supporto siano aggiornati. Ciò offre diversi vantaggi, tra cui: 
+Una parte fondamentale di un'esperienza utente di alta qualità è garantire che i client gestiti eseereno versioni aggiornate di Skype for Business, oltre a garantire che i driver audio, video, di rete e USB di supporto siano aggiornati. Ciò offre diversi vantaggi, tra cui: 
 
 -   È più facile gestire alcune versioni rispetto a molte versioni.
 -   Fornisce un livello di coerenza dell'esperienza.
@@ -699,7 +699,7 @@ Limitando la distribuzione alle versioni client meno di sei mesi prima, si migli
 
 Se si usa solo Office A portata di clic, si verrà automaticamente entro la finestra di sei mesi. Non sono necessarie altre azioni.
 
-Se si ha una combinazione di pacchetti di installazione e pacchetti di installazione a scelta (MSI), è possibile usare il report per verificare che i client MSI vengano aggiornati regolarmente. Se si nota che i client sono in ritardo, collaborare con il team responsabile della gestione degli aggiornamenti di Office e assicurarsi che approvino e distribuiscano regolarmente le patch client.
+Se si dispone di una combinazione di pacchetti di installazione e pacchetti di installazione a livello di clic (MSI), è possibile usare il report per verificare che i client MSI vengano aggiornati regolarmente. Se si nota che i client sono in ritardo, collaborare con il team responsabile della gestione degli aggiornamenti di Office e assicurarsi che approvino e distribuiscano regolarmente le patch client.
 
 È anche importante considerare e verificare che anche i driver di rete, video, USB e audio vengano aggiornati. È facile ignorare questi driver e non includerli nella strategia di gestione delle patch.
 
@@ -715,11 +715,11 @@ Per usare il report del dispositivo microfono, è necessario comprendere il conc
 
 La base di tutte le misure della qualità vocale è il modo in cui una persona percepisce la qualità della voce. Poiché è influenzata dalla percezione umana, è intrinsecamente soggettiva. Esistono diverse metodologie per i test soggettivi. La maggior parte delle misure di qualità vocale si basa su una scala ACR (Absolute Categorization Rating).
 
-In un test soggettivo ACR, un numero statisticamente significativo di persone valuta la qualità dell'esperienza su una scala da 1 (cattiva) a 5 (eccellente). La media dei punteggi è il MOS. Il MOS risultante dipende dalla gamma di esperienze esposte al gruppo e dal tipo di esperienza valutata.
+In un test soggettivo ACR, un numero statisticamente significativo di persone valuta la qualità dell'esperienza su una scala da 1 (cattiva) a 5 (eccellente). La media dei punteggi è mos. Il MOS risultante dipende dalla gamma di esperienze esposte al gruppo e dal tipo di esperienza valutata.
 
 Poiché non è pratico condurre test soggettivi della qualità vocale per un sistema di comunicazione in tempo reale, Microsoft Teams e Skype for Business generano valori MOS usando algoritmi avanzati per prevedere oggettivamente i risultati di un test soggettivo.
 
-Il set disponibile di MOS e le metriche associate forniscono una visualizzazione della qualità dell'esperienza che viene recapitata agli utenti da un dispositivo audio. 
+Il set di mos disponibile e le metriche associate forniscono una visualizzazione della qualità dell'esperienza che viene consegnata agli utenti da un dispositivo audio. 
 
 Fornendo agli utenti dispositivi certificati per Teams e Skype for Business, si riduce la probabilità di riscontrare esperienze negative a causa del dispositivo stesso ,che è più probabile, ad esempio, con altoparlanti e microfoni predefiniti per i portatili. Per altre informazioni, vedere questi articoli sul programma [di certificazione](/SkypeForBusiness/certification/overview) e sul catalogo delle soluzioni per [i partner.](https://partnersolutions.skypeforbusiness.com/solutionscatalog/personal-peripherals-pcs)
 
@@ -738,7 +738,7 @@ In genere, è necessario individuare e sfasare gradualmente i dispositivi non ce
 
 -   I dispositivi in uso sono certificati per Teams e Skype for Business? 
 -   È possibile identificare gli utenti di un dispositivo specifico usando [l'analisi delle chiamate per utente.](use-call-analytics-to-troubleshoot-poor-call-quality.md) Verificare che siano disponibili i driver di dispositivo più recenti e che il dispositivo non sia connesso tramite un hub USB o un'alloggiamento di espansione. 
--   Quante versioni diverse di vari driver sono in uso? Vengono regolarmente patchate? Assicurarsi che i driver audio, video e Wi-Fi vengano aggiornati regolarmente aiuterà a eliminarli come fonte di problemi di qualità e rendere l'esperienza utente più prevedibile e coerente.
+-   Quante versioni diverse di vari driver sono in uso? Vengono regolarmente patchate? Assicurarsi che i driver audio, video e Wi-Fi vengano regolarmente patchati aiuterà a eliminarli come fonte di problemi di qualità e rendere l'esperienza utente più prevedibile e coerente.
 
 ##### <a name="audio"></a>Audio
 

@@ -9,28 +9,28 @@ ms.topic: quickstart
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - Strat_SB_Admin
 - seo-marvel-apr2020
 ms.assetid: 24860c05-40a4-436b-a44e-f5fcb9129e98
 ms.collection:
 - M365-collaboration
-description: Leggere questo argomento per informazioni su come distribuire i Microsoft Teams Rooms in un ambiente ibrido con Exchange locale.
-ms.openlocfilehash: 5424e670dcea86aff5f3c8842e2ab3e61cfecf480922ac664ac055ea502dbb09
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms in un ambiente ibrido con Exchange locale.
+ms.openlocfilehash: 35b69e12c38991ecf8ac4d9c0f6f335a097da334
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296653"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612985"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-exchange-on-premises"></a>Distribuire Microsoft Teams Rooms con Exchange locale
 
 Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms in un ambiente ibrido con Exchange locale e Microsoft Teams o Skype for Business Online.
   
-Se l'organizzazione ha una combinazione di servizi, con alcuni ospitati in locale e alcuni ospitati online, la configurazione dipenderà da dove è ospitato ogni servizio. Questo argomento riguarda le distribuzioni ibride Microsoft Teams Rooms con Exchange ospitate in locale. Poiché questo tipo di distribuzione offre molte varianti diverse, non è possibile fornire istruzioni dettagliate per tutte. Il processo seguente funziona per molte configurazioni. Se il processo non è giusto per la configurazione, è consigliabile usare Windows PowerShell per ottenere lo stesso risultato finale documentato qui e per altre opzioni di distribuzione.
+Se l'organizzazione ha una combinazione di servizi, con alcuni ospitati in locale e alcuni ospitati online, la configurazione dipenderà da dove è ospitato ogni servizio. Questo argomento riguarda le distribuzioni ibride per Microsoft Teams Rooms con Exchange ospitate in locale. Poiché questo tipo di distribuzione offre moltissime varianti diverse, non è possibile fornire istruzioni dettagliate per tutte. Il processo seguente funziona per molte configurazioni. Se il processo non è giusto per la configurazione, è consigliabile usare Windows PowerShell per ottenere lo stesso risultato finale documentato qui e per altre opzioni di distribuzione.
 
-Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account utente o convalidare gli account delle risorse esistenti in modo da trasformarli in account utente Microsoft Teams Rooms compatibili. Se si preferisce, è possibile seguire la procedura seguente per configurare gli account che Microsoft Teams Rooms dispositivo.
+Microsoft fornisce [SkypeRoomProvisioningScript.ps1](https://go.microsoft.com/fwlink/?linkid=870105), uno script che consente di creare nuovi account utente o convalidare gli account delle risorse esistenti in modo da trasformarli in account utente Microsoft Teams Rooms compatibili. Se si preferisce, è possibile seguire la procedura seguente per configurare gli account che verranno Microsoft Teams Rooms dispositivo.
   
 ## <a name="requirements"></a>Requisiti
 
@@ -46,7 +46,7 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
 
 - Abilitare l'account del dispositivo con Skype for Business Server. Per abilitare l'account del dispositivo, l'ambiente dovrà soddisfare i prerequisiti seguenti:
 
-  - È necessario avere Skype for Business Online (Piano 2) o versione successiva nel piano Microsoft 365 o Office 365 piano. Il piano deve supportare la funzionalità di conferenza.
+  - È necessario disporre di Skype for Business Online (Piano 2) o versione successiva nel piano Microsoft 365 o Office 365 piano. Il piano deve supportare la funzionalità di conferenza.
   
   - Se è necessario VoIP aziendale (telefonia PSTN) con provider di servizi di telefonia per Microsoft Teams Rooms è necessario Skype for Business Online (piano 3).
 
@@ -54,20 +54,20 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
   
   - Gli utenti del tenant devono avere Exchange cassette postali.
   
-  - L'account Microsoft Teams Rooms richiede una licenza di Skype for Business Online (Piano 2) o Skype for Business Online (Piano 3), ma non richiede una licenza Exchange Online.
+  - L'account Microsoft Teams Rooms richiede una licenza Skype for Business Online (Piano 2) o Skype for Business Online (Piano 3), ma non richiede una licenza Exchange Online.
 
-- Assegnare una Skype for Business Server licenza all'account Microsoft Teams Rooms account.
+- Assegnare una Skype for Business Server licenza al proprio account Microsoft Teams Rooms account.
 
 ### <a name="create-an-account-and-synchronize-with-active-directory"></a>Creare un account e sincronizzare con Active Directory
 
-1. Nello strumento Utenti e computer di **Active Directory** fare clic con il pulsante destro del mouse sulla cartella o sull'unità organizzativa in cui verranno creati gli account Microsoft Teams Rooms, fare clic su Nuovo **e** quindi su **Utente.**
+1. Nello strumento Utenti e computer di **Active Directory** fare clic con il pulsante destro del mouse sulla cartella o sull'unità organizzativa in cui verranno creati gli account Microsoft Teams Rooms, fare clic su **Nuovo** e quindi su **Utente.**
 
 2. Digitare il nome visualizzato del cmdlet precedente nella **casella Nome completo** e l'alias nella casella Nome **accesso** utente. Fare clic su **Avanti**.
 
 3. Digitare la password per l'account. Sarà necessario digitare di nuovo per la verifica. Verificare che la **casella di controllo Password non scada** mai sia l'unica opzione selezionata.
 
     > [!NOTE]
-    > La **selezione della password non scade** mai è un requisito per Skype for Business Server in Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In questo caso, è necessario creare un'eccezione per ogni account Microsoft Teams Rooms dispositivo.
+    > La **selezione della password non scade** mai è un requisito per Skype for Business Server in Microsoft Teams Rooms. Le regole di dominio potrebbero proibire le password che non scadono. In tal caso, è necessario creare un'eccezione per ogni account Microsoft Teams Rooms dispositivo.
   
 4. Dopo aver creato l'account, eseguire una sincronizzazione della directory. Al termine, passare alla pagina degli utenti del interfaccia di amministrazione di Microsoft 365 e verificare che l'account creato nei passaggi precedenti sia stato unito in online.
 
@@ -114,7 +114,7 @@ Se si distribuiscono Microsoft Teams Rooms con Exchange locale, si usano gli str
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 
 
-2. L'account del dispositivo deve avere una licenza Microsoft 365 o Office 365, oppure Exchange e Microsoft Teams non funzionerà. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili.
+2. L'account del dispositivo deve avere una licenza di Microsoft 365 o Office 365 valida oppure Exchange e Microsoft Teams non funzionano. Se si ha la licenza, è necessario assegnare una posizione di utilizzo all'account del dispositivo, in modo da determinare quali SKU di licenza sono disponibili per l'account. È possibile usare `Get-MsolAccountSku` <!-- Get-AzureADSubscribedSku --> per recuperare un elenco di SKU disponibili.
 
 <!--   ``` Powershell
    Get-AzureADSubscribedSku | Select -Property Sku*,ConsumedUnits -ExpandProperty PrepaidUnits
@@ -187,9 +187,9 @@ Skype for Business PowerShell online viene usato per gestire i servizi per Micro
 
 1. Accedere come amministratore tenant, aprire il interfaccia di amministrazione di Microsoft 365 e fare clic sull'app Amministratore.
 2. Fare clic **su Utenti e gruppi** e quindi su Aggiungi **utenti, reimpostazione password e altro ancora.**
-3. Fare clic sull Microsoft Teams Rooms account e quindi fare clic sull'icona della penna per modificare le informazioni dell'account.
+3. Fare clic Microsoft Teams Rooms account e quindi fare clic sull'icona della penna per modificare le informazioni dell'account.
 4. Fare clic **su Licenze**.
-5. In **Assegna licenze** selezionare Skype for Business (Piano 2) o Skype for Business (Piano 3), a seconda delle licenze e VoIP aziendale requisiti. È necessario usare una licenza di Piano 3 se si vuole usare VoIP aziendale nel Microsoft Teams Rooms.
+5. In **Assegna licenze** selezionare Skype for Business (Piano 2) o Skype for Business (Piano 3), a seconda dei requisiti VoIP aziendale licenze. È necessario usare una licenza di Piano 3 se si vuole usare VoIP aziendale nel Microsoft Teams Rooms.
 6. Fare clic su **Salva**.
 
 Per la convalida, dovrebbe essere possibile usare qualsiasi client per accedere a questo account.

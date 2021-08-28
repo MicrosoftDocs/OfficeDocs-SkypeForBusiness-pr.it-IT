@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'India.
-ms.openlocfilehash: c7675f2625de4e7e18167e6982f16a3d6721710554906ee0d0a7a71d9b5598c8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5a61ded32ca4563a3825d893f671332fa30bb996
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344355"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611735"
 ---
 # <a name="availability-in-india"></a>Disponibilità in India
 
@@ -73,7 +73,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì  <br/> |
 
- Si noti che in India i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se si vogliono ottenere numeri a numero verde e a numero verde per le audioconferenze, vedere Ottenere numeri di telefono di servizio per Skype for Business [e Microsoft Teams](../getting-service-phone-numbers.md).
+ Si noti che in India i numeri di servizio possono essere usati solo per le audioconferenze. Quindi, se si vogliono ottenere numeri a numero verde e a numero verde per le audioconferenze, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

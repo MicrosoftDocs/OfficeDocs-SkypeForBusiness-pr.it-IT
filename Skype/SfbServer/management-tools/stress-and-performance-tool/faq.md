@@ -10,20 +10,20 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ce18db60-5f6b-423d-bc41-91e7c80fb7e3
-description: Skype for Business domande frequenti su Stress and Performance Tool 2015, utili per individuare le configurazioni degli strumenti supportate, risolvere i problemi relativi agli strumenti e chiarire i comportamenti che possono verificarsi quando si eseguono gli strumenti Stress and Performance.
-ms.openlocfilehash: 401377560183b598311ed58b1a60291ba84f00b06fb8c4a6bd8b7ec792405084
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Skype for Business domande frequenti su Stress and Performance Tool 2015, utili per individuare le configurazioni degli strumenti supportate, risolvere i problemi relativi agli strumenti e chiarire i comportamenti che possono essere visualizzati quando si eseguono gli strumenti Stress and Performance.
+ms.openlocfilehash: 42fdf53965e190e98e716df0780eac04565d0767
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333168"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611935"
 ---
 # <a name="faq-for-the-skype-for-business-server-2015-stress-and-performance-tool"></a>Domande frequenti per lo Skype for Business Server 2015 Stress and Performance Tool
  
-Skype for Business domande frequenti su Stress and Performance Tool 2015, utili per individuare le configurazioni degli strumenti supportate, risolvere i problemi relativi agli strumenti e chiarire i comportamenti che possono verificarsi quando si eseguono gli strumenti Stress and Performance.
+Skype for Business domande frequenti su Stress and Performance Tool 2015, utili per individuare le configurazioni degli strumenti supportate, risolvere i problemi relativi agli strumenti e chiarire i comportamenti che possono essere visualizzati quando si eseguono gli strumenti Stress and Performance.
   
  Queste domande frequenti riguardano alcune delle domande più frequenti sullo strumento stress e prestazioni di Skype for Business Server 2015 e possono essere utili per la risoluzione dei problemi e le scelte di configurazione degli strumenti.
   
@@ -41,9 +41,9 @@ Se la memoria dei client è insufficiente, è consigliabile ridurre il numero di
   
 ## <a name="can-i-run-this-tool-on-a-skype-for-business-server-itself"></a>È possibile eseguire questo strumento in un server Skype for Business, se stesso?
 
-Non dovresti farlo. Questo scenario non è supportato perché potrebbe non riuscire a causa di una mancata corrispondenza binaria e anche perché l'obiettivo è misurare l'utilizzo delle risorse nel server. L'esecuzione dello strumento in realtà influisce sulle prestazioni del server e invalida i dati e le misurazioni.
+Non dovresti farlo. Questo scenario non è supportato perché potrebbe non riuscire a causa di una mancata corrispondenza binaria e anche perché l'obiettivo è misurare l'utilizzo delle risorse nel server. L'esecuzione dello strumento in realtà inciderebbe sulle prestazioni del server e invaliderebbe i dati e le misurazioni.
   
-## <a name="can-i-run-lyncperftoolexe-on-a-virtual-server-or-on-microsoft-hyper-v-server-20082012"></a>È possibile eseguire LyncPerfTool.exe in un server virtuale o Microsoft Hyper-V Server 2008/2012?
+## <a name="can-i-run-lyncperftoolexe-on-a-virtual-server-or-on-microsoft-hyper-v-server-20082012"></a>È possibile eseguire LyncPerfTool.exe su un server virtuale o Microsoft Hyper-V Server 2008/2012?
 
 Sì, è possibile.
   
@@ -65,7 +65,7 @@ Esistono contatori delle prestazioni di LyncPerfTool che indicano se gli utenti 
   
 ## <a name="will-the-stress-and-performance-tools-set-up-the-caa-call-information-server-topology"></a>Gli strumenti stress e prestazioni configurano la topologia del server informazioni sulle chiamate CAA?
 
-No, gli strumenti non consentono di eseguire questa operazione. Gli strumenti creano solo utenti, contatti e liste di distribuzione per simulare il carico degli utenti.
+No, gli strumenti non consentono di eseguire questa operazione. Gli strumenti consentono di creare solo utenti, contatti e liste di distribuzione per simulare il carico degli utenti.
   
 ## <a name="what-is-the-maximum-number-of-users-that-the-tools-support"></a>Qual è il numero massimo di utenti supportati dagli strumenti?
 

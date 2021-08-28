@@ -13,19 +13,19 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Reporting
 - O365E_ReportsS4BClients
 description: Il dashboard Report mostra la panoramica delle attività in Microsoft 365 o Office 365 prodotti dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile usare il report sull'utilizzo dei dispositivi Skype for Business per visualizzare i dispositivi, inclusi i sistemi operativi e i dispositivi mobili basati su Windows, in cui è installata l'app Skype for Business e che la usano per messaggistica istantanea e riunioni. Per altre informazioni, vedere Report attività nell'interfaccia di amministrazione.
-ms.openlocfilehash: f7a3269b19b2a051bfc6739b1c453bf33c7df1acf2976658a019e75c772d9223
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 73f0558a295e6a11988331c48255a102dcc9d6eb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342681"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612825"
 ---
 # <a name="device-usage-report"></a>Report utilizzo dispositivo
 
@@ -44,7 +44,7 @@ Questo report, insieme agli altri report Skype for Business, fornisce dettagli s
 
 1. Passare all'interfaccia di amministrazione > **utilizzo dei**  >  **report.**
     
-2. Nella pagina **Utilizzo** fare clic su Skype for Business **utilizzo del** dispositivo nell'elenco Selezionare un **report a** sinistra. In caso contrario, fare **clic Skype for Business** widget Attività Skype for Business **dispositivo** nell'elenco Skype for Business **attività.**
+2. Nella pagina **Utilizzo** fare clic su Skype for Business **utilizzo del** dispositivo nell'elenco Selezionare un **report a** sinistra. In caso contrario, fare **clic sul** widget Skype for Business attività e quindi fare clic su Skype for Business **utilizzo del** dispositivo nell'Skype for Business **attività.**
     
      ![Skype for Business report sull'utilizzo dei dispositivi](../images/13e7a51c-f680-4164-9a18-67de10fceb7f.png)
   
@@ -66,14 +66,14 @@ Questo report, insieme agli altri report Skype for Business, fornisce dettagli s
 ![Numero 2](../images/sfbcallout2.png)<br/>
 Ogni report riporta la data in cui è stato generato. I report in genere riflettono una latenza da 24 a 48 ore dal momento dell'attività. 
 ***
-![Numero 3](../images/sfbcallout3.png)<br/>Usare i dati interattivi del grafico Utenti per comprendere le tendenze di utilizzo e vedere il numero di utenti connessi con l'app Skype for Business usata nell'organizzazione.  Mostra il numero totale di utenti e tipi di dispositivi **Windows,** **Windows Phone,** telefono **Android,** **iPhone** e **iPad** in cui è installata l'app Skype for Business e che vengono usati in tutta l'organizzazione.
+![Numero 3](../images/sfbcallout3.png)<br/>Usare i dati interattivi del grafico Utenti per comprendere le tendenze di utilizzo e vedere il numero di utenti connessi con l'app Skype for Business usata nell'organizzazione.  Mostra il numero totale di utenti e tipi di dispositivi **Windows,** **Windows Phone,** telefono **Android,** **iPhone** e **iPad in** cui è installata l'app Skype for Business e che vengono usati nell'intera organizzazione.
 ***
-![Numero 4](../images/sfbcallout4.png)<br/>Usare i dati interattivi del grafico a barre **di** distribuzione per comprendere l'utilizzo per visualizzare il numero di utenti che usano dispositivi univoci nell'organizzazione. Ti mostrerà il numero totale di Windows,  **Windows Phone,** telefono **Android,** **iPhone**  e iPad utenti con un dispositivo in uso. 
+![Numero 4](../images/sfbcallout4.png)<br/>Usare i dati interattivi del grafico **a** barre di distribuzione per comprendere l'utilizzo per visualizzare il numero di utenti che usano dispositivi univoci nell'organizzazione. Ti mostrerà il numero totale  di Windows, **Windows Phone,** telefono **Android,** **iPhone** e iPad utenti con un dispositivo in uso.  
 ***
 ![Numero 5](../images/sfbcallout5.png)<br/>È possibile filtrare la serie visualizzata nel grafico facendo clic su un elemento nella legenda. Ad esempio,  nel grafico Utenti toccare o fare clic su **Windows**, **Windows Phone**, telefono **Android**, **iPhone** o **iPad** per visualizzare solo le informazioni correlate a ognuno di essi. La modifica di questa selezione non modifica le informazioni nella tabella della griglia. 
 ***
 ![Numero 6](../images/sfbcallout6.png)<br/>Ciascun grafico ha un asse X (orizzontale) e un asse Y (verticale).
-*    Nel grafico **Utenti** l'asse Y è il numero totale di utenti connessi a un dispositivo in cui è installata l Skype for Business app.
+*    Nel grafico **Utenti,** l'asse Y è il numero totale di utenti connessi a un dispositivo in cui è installata l Skype for Business app.
 *    Nel grafico **Attività** di distribuzione l'asse Y è il numero di utenti connessi a un determinato tipo di dispositivo con l'app Skype for Business installata. 
 
 L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per il report specifico.
@@ -81,13 +81,13 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 ![Numero 7](../images/sfbcallout7.png)<br/>La tabella illustra tutte le attività di conferenza per utente. Mostra tutti gli utenti a cui è assegnato Skype for Business e le loro attività di conferenza. È possibile aggiungere ulteriori colonne dalla tabella.
 *    **Nome utente** è il nome dell'utente. 
 *    **Data di ultima attività (UTC)** indica l'ultima volta in cui l'utente ha avviato una sessione peer to peer o ha organizzato o partecipato a una conferenza.
-*    **Windows** è selezionato se l'utente ha l'app client Skype for Business installata in un sistema operativo Windows basato su Windows e la usa. 
-*    **Windows Phone** è selezionato se l'utente ha installato l'app client Skype for Business in un dispositivo Windows Phone e lo usa.
+*    **Windows** è selezionato se l'utente ha l'app client Skype for Business installata in un sistema operativo basato su Windows e la usa. 
+*    **Windows Phone** è selezionato se l'utente ha l'app client Skype for Business installata in un dispositivo Windows Phone e la usa.
 *    **Il telefono Android** è selezionato se l'utente ha l'app client Skype for Business installata in un telefono Android e la usa.
 *    **iPhone** è selezionato se l'utente ha l'app client Skype for Business installata in un iPhone e la usa. 
 *    **iPad** è selezionato se l'utente ha l'app client Skype for Business installata in un iPad e la usa. 
 
-Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la **sezione Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
 ***
 ![Numero 8](../images/sfbcallout8.png)<br/>Toccare o fare clic **sull'icona** Colonne in una delle colonne per aggiungere o rimuovere colonne dal report.           <br/> ![Skype for Business Online Reporting Manage Button.](../images/4c8f5387-cebb-4d6c-b7d3-05c954a2c234.png)
 ***
@@ -99,7 +99,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenze telefoniche con accesso esterno/esterno a cui si partecipa.
+- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenza telefonica con accesso esterno/esterno a cui si partecipa.
     
 - [Report attività peer-to-peer in Skype for Business](peer-to-peer-activity-report.md) - Permette di vedere quanto gli utenti usano messaggistica istantanea, audio/video, condivisione applicazioni e trasferimento di file.
     

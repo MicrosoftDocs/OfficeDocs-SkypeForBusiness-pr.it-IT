@@ -16,20 +16,20 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
-description: Informazioni sulla composizione di numeri verde negli Emirati Arabi Uniti, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: 324b4e68efdffafa99d678e362d91def535736ab2f89f72edd0a91d8fdf74910
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni sulla composizione di numeri verde negli Emirati Arabi Uniti, tra cui disponibilità, disponibilità di rete cablata/fissa e di rete mobile e restrizioni.
+ms.openlocfilehash: ddca6e6cb9cf65867adf9c79e0d5dae36f0f3ab3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308217"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612875"
 ---
 # <a name="toll-free-dialing-restrictions-in-the-united-arab-emirates"></a>Restrizioni di composizione a numero verde negli Emirati Arabi Uniti
 

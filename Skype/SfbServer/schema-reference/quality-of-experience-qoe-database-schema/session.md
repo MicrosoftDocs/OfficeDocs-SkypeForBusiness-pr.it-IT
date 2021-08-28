@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7f05529c-794d-41ed-bca4-2e85b87b2dec
 description: Ogni record rappresenta una sessione che include audio o audio e video. Contiene informazioni generali sulla sessione. Una sessione è definita come una finestra di dialogo SIP (Session Initiation Protocol) audio o video tra due endpoint.
-ms.openlocfilehash: 749f151def046abdb5169b39ccbd81ea5f07f5d4ee3d1c971ac112a2d4b90cce
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bc88a924d16e8e2193b0cce5c487004ab66f47a7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340032"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611845"
 ---
 # <a name="session-table"></a>Tabella session
  
@@ -42,7 +42,7 @@ Ogni record rappresenta una sessione che include audio o audio e video. Contiene
 |**CallerEndpoint** <br/> |int  <br/> |Foreign  <br/> |Endpoint del chiamante. Riferimento dalla [tabella Endpoint](endpoint.md).  <br/> |
 |**CallerUserAgent** <br/> |bit  <br/> |Foreign  <br/> |Agente utente del chiamante. Riferimento dalla [tabella UserAgent](useragent.md).  <br/> |
 |**CallPriority** <br/> |smallint  <br/> ||Priorità di questa chiamata.  <br/> |
-|**ClassifiedPoorCall** <br/> |bit  <br/> ||Questa colonna è deprecata e non viene utilizzata in Skype for Business Server. Queste informazioni vengono invece riportate in base a una linea di base multimediale. Per ulteriori informazioni, fare riferimento alla tabella [MediaLine.](medialine-0.md) <br/> |
+|**ClassifiedPoorCall** <br/> |bit  <br/> ||Questa colonna è deprecata e non viene utilizzata in Skype for Business Server. Al contrario, queste informazioni vengono riportate in base a una linea di base multimediale. Per ulteriori informazioni, fare riferimento alla tabella [MediaLine.](medialine-0.md) <br/> |
 |**CallerPAI** <br/> |int  <br/> |Foreign  <br/> |P-Asserted-Identity dell'utente che ha effettuato la chiamata. L'identità P-Asserted-Identity (PAI) viene utilizzata per comunicare la vera identità dell'utente che ha effettuato la chiamata.  <br/> |
 |**CalleeEndpoint** <br/> |int  <br/> |Foreign  <br/> |Endpoint che ha ricevuto la chiamata.  <br/> |
 |**CalleeUserAgent** <br/> |int  <br/> |Foreign  <br/> |Agente utente impiegato dall'utente che ha ricevuto la chiamata. Gli agenti utente rappresentano il dispositivo endpoint client.  <br/> |

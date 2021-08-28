@@ -15,7 +15,7 @@ metadata:
   audience: admin
   f1.keywords:
     - NOCSH
-  localization_priority: Priority
+  ms.localizationpriority: high
   ms.collection:
     - Teams_ITAdmin_JourneyFromSfB
     - M365-collaboration
@@ -28,17 +28,17 @@ productDirectory:
   items:
     - title: Pianificare l'aggiornamento (iniziare da qui)
       imageSrc: 'https://docs.microsoft.com/office/media/icons/get-started-teams.svg'
-      summary: 'Sia che si eserciti l''aggiornamento a Teams prima del ritiro di Skype for Business Online (31 luglio 2021) o lo spostamento di scenari dall''ambiente locale di Skype for Business a Teams, una transizione riuscita risolve la preparazione tecnica e dell''utente. Scopri il nostro framework comprovato, le procedure consigliate e le risorse progettate per facilitare la transizione a Teams da Skype for Business Online, Skype for Business Server o un ambiente ibrido. Gruppo di destinatari: tutti (sponsor aziendali, amministratori IT, responsabile della preparazione/modifica dell''utente, responsabile del progetto)'
+      summary: 'Sia che si eserciti l''aggiornamento a Teams prima del ritiro di Skype for Business Online (31 luglio 2021) o lo spostamento di scenari dall''ambiente locale di Skype for Business a Teams, una transizione riuscita risolve la conformità sia tecnica che degli utenti. Scopri il framework comprovato, le procedure consigliate e le risorse progettate per facilitare una transizione efficace a Teams da Skype for Business Online, Skype for Business Server o un ambiente ibrido. Gruppo di destinatari: tutti (sponsor aziendali, amministratori IT, responsabile della preparazione/modifica dell''utente, responsabile del progetto)'
       url: 'https://aka.ms/SfBtoTeamsPlan'
     - title: Implementare l'Teams aggiornamento
       imageSrc: 'https://docs.microsoft.com/office/media/icons/hybrid-teams.svg'
-      summary: 'Unisciti a noi per identificare e preparare l''esecuzione dell''approccio tecnico migliore per spostare tutti i carichi di lavoro in Teams, in base agli obiettivi e all''ambiente Skype for Business corrente. La maggior parte dei clienti che hanno completato correttamente le transizioni Teams l''implementazione Skype for Business online, Skype for Business Server o ibrida. Questa sessione condividerà considerazioni chiave e risorse utili per definire la strategia di migrazione migliore per l''organizzazione. Gruppo di destinatari - Amministratori IT'
+      summary: 'Unisciti a noi per identificare e preparare l''esecuzione del miglior approccio tecnico per spostare tutti i carichi di lavoro in Teams, in base agli obiettivi e all''ambiente Skype for Business attuale. La maggior parte dei clienti che hanno completato correttamente le transizioni Teams l''implementazione Skype for Business online, Skype for Business Server o ibrida. Questa sessione condividerà considerazioni chiave e risorse utili per definire la strategia di migrazione migliore per l''organizzazione. Gruppo di destinatari - Amministratori IT'
       url: 'https://aka.ms/SfBtoTeamsImplement'
 additionalContent:
   sections:
     - items:
         - title: Espandere gli scenari Teams?
-          summary: Dai un'Teams a Chalk Talk per i professionisti IT.
+          summary: Dai un'Teams a Chalk Talk per professionisti IT.
           url: ./chalk-talks-landing-page.yml
         - title: Nuovo utente Teams?
           summary: Altre informazioni su come iniziare a usare Teams.

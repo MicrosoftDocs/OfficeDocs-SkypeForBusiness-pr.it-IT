@@ -1,5 +1,5 @@
 ---
-title: Crea il tuo programma campioni per Microsoft Teams
+title: Crea il tuo programma di campioni per Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -14,23 +14,23 @@ ms.collection:
 - Teams_ITAdmin_Adopt
 - M365-collaboration
 ms.reviewer: karuanag
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Scopri come formare un team di campioni per promuovere Teams'adozione promuovendo la consapevolezza, l'adozione e l'istruzione nell'organizzazione.
+description: Scopri come formare un team di campioni per promuovere l'adozione Teams promuovendo la consapevolezza, l'adozione e l'istruzione nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a29e99a85e0759ca67cb94bd690dac3e690b07fd1269b33aa76e4ca315207d0c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 216323b34d2f0f2778844b901964d56a85d25716
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296623"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612915"
 ---
-# <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma campioni per Microsoft Teams
+# <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma di campioni per Microsoft Teams
 
-I campioni sono essenziali per aumentare la consapevolezza, l'adozione e l'istruzione nell'organizzazione. Un campione è una persona, principalmente motivata dall'aiutare gli altri, che è interessato alle nuove tecnologie (in particolare Teams) e ad aiutare altri dipendenti a usarla in linea con le procedure consigliate. A seconda delle dimensioni dell'organizzazione, questa può essere una parte formale del ruolo della persona, ma spesso i dipendenti si assalino da soli a causa della motivazione principale per aiutare gli altri.
+I campioni sono essenziali per aumentare la consapevolezza, l'adozione e l'istruzione nell'organizzazione. Un campione è una persona, principalmente motivata dall'aiutare gli altri, che è interessato alle nuove tecnologie (in particolare Teams) e aiutare altri dipendenti a usarla in linea con le procedure consigliate. A seconda delle dimensioni dell'organizzazione, questa può essere una parte formale del ruolo della persona, ma spesso i dipendenti si assalino da soli a causa della motivazione principale per aiutare gli altri.
 
 I campioni si adattano alla pianificazione generale del lancio in vari modi, come illustrato di seguito.
 

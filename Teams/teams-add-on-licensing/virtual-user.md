@@ -14,18 +14,18 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom:
 - Licensing
 - LIL_Placement
 - seo-marvel-apr2020
 description: Informazioni su come assegnare una licenza Sistema telefonico utente virtuale o una licenza utente Sistema telefonico a pagamento agli account delle risorse dell'organizzazione.
-ms.openlocfilehash: 2481d119bd1f053f0836c57d237d34edfbf6e260d9b8be9b9f7d40033dc6282a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0b45bc0c44ae8d3719636b85409c669dcadf07db
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54328941"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627084"
 ---
 # <a name="microsoft-365-phone-system--virtual-user-license"></a>Microsoft 365 Sistema telefonico - Licenza utente virtuale
 
@@ -38,12 +38,12 @@ Le organizzazioni con Sistema telefonico con licenza possono assegnare una licen
 
 ## <a name="virtual-user-license-allocation"></a>Assegnazione licenze utente virtuale
 
-L'organizzazione è assegnata Microsoft 365 Sistema telefonico licenze utente virtuale a seconda delle dimensioni complessive. Qualsiasi organizzazione che abbia almeno una licenza Sistema telefonico o abbia aggiunto Sistema telefonico ha 25 licenze utente virtuale disponibili senza costi aggiuntivi. Quando si aggiungono 10 Sistema telefonico licenze utente all'interno dell'organizzazione, viene Microsoft 365 Sistema telefonico: la licenza per l'utente virtuale diventa disponibile.
+L'organizzazione è assegnata Microsoft 365 Sistema telefonico licenze utente virtuale a seconda delle dimensioni complessive. Qualsiasi organizzazione che abbia almeno una licenza Sistema telefonico o che Sistema telefonico ha aggiunto 25 licenze utente virtuale disponibili senza costi aggiuntivi. Quando si aggiungono 10 Sistema telefonico licenze utente nell'organizzazione, viene Microsoft 365 Sistema telefonico disponibile una licenza utente virtuale.
 
 > [!NOTE]
 > Sistema telefonico è una licenza per componenti aggiuntivi disponibile con Microsoft 365 e Office 365 E1 ed E3. Sistema telefonico è incluso anche come parte delle Microsoft 365 E5, Office 365 E5 e Microsoft 365 Business Voice licenze.
 
-Se l'organizzazione usa le licenze Microsoft 365 Sistema telefonico - Virtual User disponibili per la creazione di nodi dell'operatore automatico o della coda di chiamata, è comunque possibile usare le licenze di sistema Telefono a pagamento con un account delle risorse. La maggior parte delle organizzazioni avrà un numero di licenze utente virtuale sufficiente in base al piano di scalabilità. 
+Se l'organizzazione usa le licenze Microsoft 365 Sistema telefonico - Virtual User disponibili per la creazione di nodi dell'operatore automatico o della coda di chiamata, è comunque possibile usare le licenze di sistema Telefono pagamento con un account delle risorse. La maggior parte delle organizzazioni avrà un numero di licenze utente virtuale sufficiente in base al piano di scalabilità. 
 
 ### <a name="license-allocation-example"></a>Esempio di assegnazione delle licenze
 
@@ -62,7 +62,7 @@ Contoso dovrebbe prendere in considerazione la riprogettazione dell'operatore au
 
 ## <a name="change-an-existing-resource-account-to-use-a-microsoft-365-phone-system--virtual-user-license"></a>Modificare un account delle risorse esistente per usare una licenza Microsoft 365 Sistema telefonico - Utente virtuale
 
-Se si decide di cambiare la licenza dell'account della risorsa da una licenza Sistema telefonico a una licenza Microsoft 365 Sistema telefonico - Utente virtuale:
+Se si decide di cambiare la licenza dell'account delle risorse da una licenza Sistema telefonico a una licenza Microsoft 365 Sistema telefonico - Utente virtuale:
 
 1. Ottenere la nuova licenza Microsoft 365 Sistema telefonico - Utente virtuale.
 2. Seguire i passaggi collegati nel centro Amministrazione Microsoft 365 per [spostare gli utenti in un abbonamento diverso.](/microsoft-365/admin/manage/assign-licenses-to-users#move-users-to-a-different-subscription)

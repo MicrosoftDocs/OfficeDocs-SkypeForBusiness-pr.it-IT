@@ -14,17 +14,17 @@ search.appverid: MET150
 ms.reviewer: rafarhi
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
 description: Gli amministratori possono imparare ad aggiungere nuovi guest a un'organizzazione in Microsoft Teams client desktop e Web Azure Active Directory portale di collaborazione B2B.
-ms.openlocfilehash: 1525a389b5299491dc7d0de2adfd744d0d3437aff7fbeb5832cd37790ab24ffb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e70b32face0948446ba084f0150dc4da7c9a69b6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344395"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611775"
 ---
 # <a name="add-a-guest-to-a-team"></a>Aggiungere un utente guest a un team
 
@@ -40,7 +40,7 @@ Gli amministratori possono anche delegare le autorizzazioni per aggiungere guest
 
 Con Collaborazione B2B di Azure AD, le organizzazioni possono applicare criteri di accesso condizionale e autenticazione a più fattori (MFA) per gli utenti B2B. Questi criteri possono essere applicati a livello di tenant, di app o di singolo utente, così come vengono abilitati per dipendenti a tempo pieno e membri dell'organizzazione. Tali criteri vengono applicati all'organizzazione delle risorse. Per altre informazioni, vedere [Accesso condizionale per gli utenti di Collaborazione B2B](/azure/active-directory/external-identities/conditional-access). I singoli guest non possono essere bloccati.
 
-Gli utenti guest già aggiunti tramite Azure AD B2B, Microsoft 365 gruppi o SharePoint sono pronti per iniziare. L Microsoft 365 o il proprietario del team può aggiungere tali guest ai rispettivi team. Se si aggiunge un guest direttamente al gruppo Microsoft 365 associato a un team, il guest avrà accesso al team, ma il gruppo di Microsoft 365 non genera un messaggio di posta elettronica di invito al guest, quindi un membro del team dovrebbe informare il guest.
+Gli utenti guest già aggiunti tramite Azure AD B2B, Microsoft 365 gruppi o SharePoint sono pronti per l'accesso. L Microsoft 365 o il proprietario del team può aggiungere tali guest ai rispettivi team. Se si aggiunge un guest direttamente al gruppo Microsoft 365 associato a un team, il guest otterrà l'accesso al team, ma il gruppo Microsoft 365 non genera un messaggio di posta elettronica di invito al guest, quindi un membro del team dovrebbe informare il guest.
 
 > [!NOTE]
 > Gli utenti guest sono soggetti ai limiti del servizio di [Microsoft 365 o Office 365](/office365/servicedescriptions/office-365-service-descriptions-technet-library) e [Azure Active Directory](/azure/active-directory/external-identities/current-limitations).

@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9c2fd164-a9b8-40e6-a1c4-423a7fe34aba
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Le configurazioni di archiviazione consentono di controllare le opzioni di archiviazione per la distribuzione Skype for Business Server, inclusa l'abilitazione e la disabilitazione delle opzioni seguenti:"
-ms.openlocfilehash: f59d096ac00d2247b36aae4f3395f78d16ed0bc366e8e60da6a1dc31a3797641
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 08849f41248d78d28f2feb972bcedcde7a2cc768
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54325253"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622858"
 ---
 # <a name="archiving-configuration"></a>Configurazione archiviazione
  
@@ -58,7 +58,7 @@ Nella **pagina Configurazione archiviazione** sono elencati i criteri di archivi
     
   - **Elimina** Questa opzione consente di eliminare tutte le configurazioni di archiviazione selezionate.
     
-- **Azione** È possibile utilizzare questa opzione per abilitare o disabilitare rapidamente l'archiviazione di sessioni di messaggistica istantanea o di conferenze Web in qualsiasi configurazione elencata nella pagina, anziché modificare la configurazione. Le opzioni disponibili in **Azione** dipendono dall'opzione attualmente specificata nella configurazione di archiviazione. Tutte le opzioni sono disponibili, ad eccezione dell'opzione attualmente in vigore per la configurazione di archiviazione. Tra le opzioni sono incluse le seguenti:
+- **Azione** È possibile utilizzare questa opzione per abilitare o disabilitare rapidamente l'archiviazione di sessioni di messaggistica istantanea o di conferenze Web in qualsiasi configurazione elencata nella pagina, anziché modificare la configurazione. Le opzioni disponibili in **Azione** dipendono dall'opzione attualmente specificata nella configurazione di archiviazione. Sono disponibili tutte le opzioni, ad eccezione dell'opzione attualmente in vigore per la configurazione di archiviazione. Tra le opzioni sono incluse le seguenti:
     
   - **Archivia sessioni di messaggistica istantanea**
     

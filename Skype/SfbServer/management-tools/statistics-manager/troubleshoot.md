@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 946189fa-521f-455c-9762-904e7e41b791
 description: 'Riepilogo: leggere questo argomento per risolvere i problemi relativi alla distribuzione di Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 457790514cb769edce6deafc23857a59749b1102cf4c33206eac836d11c75c6a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 622e3fdecc9cbe0def1f87a623692cb93889bb00
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333208"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612055"
 ---
 # <a name="troubleshoot-statistics-manager-for-skype-for-business-server"></a>Risoluzione dei problemi del gestore delle statistiche per Skype for Business Server
  
@@ -52,7 +52,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
   ```
 
     > [!NOTE]
-    > Se questa modifica viene apportata, l'agente in genere continuerà a utilizzare 100 MB di memoria, ma non sarà forzatamente limitata a 300 MB come è \< l'impostazione predefinita. Se viene apportata questa modifica, è consigliabile monitorare attentamente l'utilizzo della memoria per garantire che l'agente non utilizzi una grande quantità di memoria nel computer host. 
+    > Se questa modifica viene apportata, l'agente in genere continuerà a utilizzare 100 MB di memoria, ma non sarà forzatamente limitata a 300 MB come è \< l'impostazione predefinita. Se questa modifica viene apportata, è consigliabile monitorare attentamente l'utilizzo della memoria per assicurarsi che l'agente non utilizzi una grande quantità di memoria nel computer host. 
   
 - **2000** - Errore di inizializzazione del client
     
@@ -76,7 +76,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology). 
     
-  - Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere l'agente manualmente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
+  - Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
     
   - **4002** - Password listener non valida
     
@@ -127,7 +127,7 @@ In questo argomento viene descritto come risolvere i problemi relativi alla dist
     
   - **10101** - Interruzione continuata di Redis PING (ogni 60 secondi)
     
-  - **30100** - Ripristino dell'interruzione del PING di Redis
+  - **30100** - Ripristino dell'interruzione del ping di Redis
     
     Questi verranno registrati quando il listener non è in grado di connettersi a Redis. Verificare che Redis sia avviato e che sia disponibile la connettività di rete tra Listener e Redis.
     

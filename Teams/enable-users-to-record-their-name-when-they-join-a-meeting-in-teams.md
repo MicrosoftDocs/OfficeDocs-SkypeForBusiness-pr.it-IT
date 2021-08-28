@@ -15,19 +15,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Informazioni su come abilitare o disabilitare se gli utenti possono registrare i loro nomi quando aderiscono a una riunione in Microsoft Teams.
-ms.openlocfilehash: 6be6dda125ed10df894d5040563e5316fc4cef06229a5043b66010576aba682b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b670c6acb32902da56f76ad1cb2e1fd1a47edbf7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337404"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627578"
 ---
 # <a name="enable-users-to-record-their-name-when-they-join-a-meeting-in-microsoft-teams"></a>Consentire agli utenti di registrare il proprio nome quando aderiscono a una riunione in Microsoft Teams
 
@@ -46,14 +46,14 @@ Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'
 
 3. Abilitare o disabilitare **le notifiche di entrata e uscita dalla riunione**.
 
-4. Se si abilitano le notifiche, scegliere Nomi o numeri di telefono **in** Tipo di annuncio di **entrata/uscita** e quindi attivare Chiedi ai chiamanti di registrare il proprio nome prima di partecipare **a una riunione.**
+4. Se si abilitano le notifiche, scegliere Nomi o numeri di telefono **in** Tipo di annuncio di **entrata/uscita** e quindi attivare Chiedi ai chiamanti di registrare il nome prima di partecipare **a una riunione.**
 
 6. Fare clic su **Salva**.
     
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

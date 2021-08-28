@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e74f0ef5-4ced-489e-9509-e0464dad5c24
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per avviare l'attività per estendere lo schema per Skype for Business Server, iniziare nella pagina Prepara schema. Fare clic su Avanti per proseguire con la preparazione dello schema.
-ms.openlocfilehash: f5a98b05ed2ead2bdcbf954d003111f5a4d0fff61eaa09eba024beed20b710a6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bfb9afe67109fde21afd6e785bc0c18810541716
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324465"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622848"
 ---
 # <a name="prepare-schema-intro"></a>Preparare uno schema (Intro)
  

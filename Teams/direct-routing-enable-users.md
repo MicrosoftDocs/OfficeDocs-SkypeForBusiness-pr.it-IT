@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -15,13 +15,13 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Informazioni su come abilitare gli utenti Telefono Microsoft Routing diretto di sistema.
-ms.openlocfilehash: e15e73c74b6597f754287077480316a8da98178985ef49603cf0fb3b8dc02bbe
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come abilitare gli utenti Telefono Microsoft routing diretto di sistema.
+ms.openlocfilehash: b6eb9bf0930b9b8f78d13deca95349afd78ec5af
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54327681"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627588"
 ---
 # <a name="enable-users-for-direct-routing-voice-and-voicemail"></a>Abilitare gli utenti per routing diretto, segreteria telefonica e segreteria telefonica
 
@@ -44,12 +44,12 @@ Quando si è pronti per abilitare gli utenti per il routing diretto, seguire que
 
 ## <a name="create-a-user-and-assign-the-license"></a>Creare un utente e assegnare la licenza
 
-Sono disponibili due opzioni per creare un nuovo utente in Microsoft 365 o Office 365. Tuttavia, Microsoft consiglia all'organizzazione di scegliere un'opzione per evitare problemi di routing: 
+Esistono due opzioni per creare un nuovo utente in Microsoft 365 o Office 365. Tuttavia, Microsoft consiglia all'organizzazione di scegliere un'opzione per evitare problemi di routing: 
 
-- Creare l'utente in Active Directory locale e sincronizzare l'utente con il cloud. Vedere [Integrare le directory locali](/azure/active-directory/connect/active-directory-aadconnect)con Azure Active Directory .
+- Creare l'utente in Active Directory locale e sincronizzare l'utente con il cloud. Vedere [Integrare le directory locali con Azure Active Directory.](/azure/active-directory/connect/active-directory-aadconnect)
 - Creare l'utente direttamente nel interfaccia di amministrazione di Microsoft 365. Vedere Aggiungere utenti singolarmente o in blocco a Microsoft 365 [o Office 365 - Guida per gli amministratori.](https://support.office.com/article/Add-users-individually-or-in-bulk-to-Office-365-Admin-Help-1970f7d6-03b5-442f-b385-5880b9c256ec) 
 
-Se la distribuzione di Skype for Business Online coesiste con Skype for Business 2015 o Lync 2010 o 2013 locale, l'unica opzione supportata è creare l'utente in Active Directory locale e sincronizzare l'utente con il cloud (opzione 1). 
+Se la distribuzione di Skype for Business Online coesiste con Skype for Business 2015 o Lync 2010 o 2013 locale, l'unica opzione supportata è creare l'utente in Active Directory locale e sincronizzare l'utente nel cloud (opzione 1). 
 
 Per informazioni sui requisiti di licenza, vedere [licenze e altri requisiti](direct-routing-plan.md#licensing-and-other-requirements) in Pianificare il routing [diretto.](direct-routing-plan.md)
 
@@ -57,7 +57,7 @@ Per informazioni sui requisiti di licenza, vedere [licenze e altri requisiti](di
 
 Questo passaggio è applicabile Skype for Business Server VoIP aziendale utenti abilitati per la migrazione a Teams routing diretto.
 
-Il routing diretto richiede che l'utente sia ospitato online. È possibile verificare esaminando il parametro RegistrarPool, che deve avere un valore nel infra.lync.com dominio. È anche consigliabile, ma non obbligatorio, modificare la gestione di LineURI da locale a online durante la migrazione degli utenti a Teams Direct Routing. 
+Il routing diretto richiede che l'utente sia ospitata online. È possibile verificare esaminando il parametro RegistrarPool, che deve avere un valore nel infra.lync.com dominio. È anche consigliabile, ma non obbligatorio, modificare la gestione di LineURI da locale a online durante la migrazione degli utenti a Teams Direct Routing. 
 
 1. Connessione una Skype for Business di PowerShell online.
 
@@ -74,7 +74,7 @@ Il routing diretto richiede che l'utente sia ospitato online. È possibile verif
    Set-CsUser -Identity "<User name>" -LineUri $null
     ``` 
  > [!NOTE]
- > Non impostare EnterpriseVoiceEnabled su False perché non è necessario farlo e questo può causare problemi di normalizzazione del piano di chiamata se sono in uso telefoni legacy Skype for Business e la configurazione ibrida tenant è impostata con UseOnPremDialPlan $True. 
+ > Non impostare EnterpriseVoiceEnabled su False perché non è necessario farlo e questo può causare problemi di normalizzazione del piano di chiamata se sono in uso telefoni Skype for Business legacy e la configurazione ibrida tenant è impostata con UseOnPremDialPlan $True. 
     
    Dopo la sincronizzazione delle modifiche con Office 365 l'output previsto di `Get-CsOnlineUser -Identity "<User name>" | fl RegistrarPool,OnPremLineUriManuallySet,OnPremLineUri,LineUri` sarebbe:
 
@@ -117,18 +117,18 @@ Dopo aver creato l'utente e aver assegnato una licenza, il passaggio successivo 
     Set-CsUser -Identity "stacy.quinn@contoso.com" -OnPremLineURI "tel:+14255388701;ext=1002" -EnterpriseVoiceEnabled $true -HostedVoiceMail $true
     ```
 
-    È consigliabile, ma non obbligatorio, che il numero di telefono usato sia configurato come numero di telefono E.164 completo con codice paese. È supportato per configurare i numeri di telefono con estensioni che verranno usate per cercare gli utenti quando la ricerca rispetto al numero di base restituisce più di un risultato. In questo modo le aziende possono configurare i numeri di telefono con lo stesso numero di base ed estensioni univoche. Per eseguire correttamente la ricerca, l'invito deve includere il numero completo con l'interno nel modo seguente:
+    È consigliabile, ma non obbligatorio, che il numero di telefono usato sia configurato come numero di telefono E.164 completo con codice paese. È supportato per configurare i numeri di telefono con estensioni che verranno usate per cercare gli utenti quando la ricerca rispetto al numero di base restituisce più di un risultato. In questo modo le aziende possono configurare i numeri di telefono con lo stesso numero di base ed estensioni univoche. Per eseguire correttamente la ricerca, l'invito deve includere il numero completo con estensione come segue:
     ```PowerShell
     To: <sip:+14255388701;ext=1001@sbc1.adatum.biz
     ```
     
     > [!NOTE]
-    > Se il numero di telefono dell'utente è gestito in locale, usare in locale Skype for Business Management Shell o il Pannello di controllo per configurare il numero di telefono dell'utente. 
+    > Se il numero di telefono dell'utente è gestito in locale, usare Skype for Business Management Shell o il Pannello di controllo locale per configurare il numero di telefono dell'utente. 
 
 
 ## <a name="configure-sending-calls-directly-to-voicemail"></a>Configurare l'invio di chiamate direttamente alla segreteria telefonica
 
-Instradamento diretto consente di terminare la chiamata a un utente e inviarla direttamente alla segreteria telefonica dell'utente. Se si vuole inviare la chiamata direttamente alla segreteria telefonica, allegare opaque=app:voicemail all'intestazione Request URI. Ad esempio, "sip:user@yourdomain.com;opaque=app:voicemail". In questo caso, l Teams'utente non riceverà la notifica di chiamata, la chiamata verrà connessa direttamente alla segreteria telefonica dell'utente.
+Instradamento diretto consente di terminare la chiamata a un utente e inviarla direttamente alla segreteria telefonica dell'utente. Se si vuole inviare la chiamata direttamente alla segreteria telefonica, allegare opaque=app:voicemail all'intestazione Request URI. Ad esempio, "sip:user@yourdomain.com;opaque=app:voicemail". In questo caso, Teams l'utente non riceverà la notifica di chiamata, la chiamata verrà connessa direttamente alla segreteria telefonica dell'utente.
 
 ## <a name="assign-teams-only-mode-to-users-to-ensure-calls-land-in-microsoft-teams"></a>Assegnare Teams solo agli utenti per garantire che le chiamate siano Microsoft Teams
 

@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 37b2bb9c-c5d4-4fb0-a976-670b7594b82f
 description: 'Riepilogo: leggere questo argomento per informazioni su come distribuire Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: e5ace82602ef6443331470a3fd3deda69e3fc797f0446749780436b14b4a7b82
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 966d6aa71eff93f616ae0eb1a7443aebab600016
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333258"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612095"
 ---
 # <a name="deploy-statistics-manager-for-skype-for-business-server"></a>Distribuire il gestore delle statistiche per Skype for Business Server
  
@@ -94,7 +94,7 @@ Installare il servizio Listener nel computer host eseguendo il StatsManPerfAgent
     
    - **Porta servizio:** Questo è il numero di porta HTTPS che il listener utilizzerà per comunicare con gli agenti. Durante l'installazione, questa porta verrà consentita attraverso il firewall locale, verrà creato un elenco di controllo di accesso URL e verrà associato un certificato SSL a questa porta. Il valore predefinito è 8443.
     
-   - **Identificazione personale certificato:** Si tratta dell'identificazione personale del certificato che verrà utilizzata dal listener per crittografare il protocollo HTTPS. Il servizio di rete deve disporre dell'accesso in lettura alla chiave privata.
+   - **Identificazione personale certificato:** Questa è l'identificazione personale del certificato che verrà utilizzata dal listener per crittografare il protocollo HTTPS. Il servizio di rete deve disporre dell'accesso in lettura alla chiave privata.
     
      Fare clic **sul pulsante Seleziona...** per scegliere l'identificazione personale.
     
@@ -166,7 +166,7 @@ Installare un agente in ogni Skype for Business Server che si desidera monitorar
     
    - **Installa Dir:** Questa è la directory in cui verranno installati i file binari. È possibile modificarla rispetto all'impostazione predefinita utilizzando il **pulsante Sfoglia.**
     
-   - **AppData Dir:** Questa è la directory in cui verranno archiviati la cartella Logs e il file password.txt crittografato. È possibile modificare l'impostazione predefinita. Non verrà eliminato durante la disinstallazione.
+   - **AppData Dir:** Si tratta della directory in cui verranno archiviati la cartella Logs e il file password.txt crittografato. È possibile modificare l'impostazione predefinita. Non verrà eliminato durante la disinstallazione.
     
 3. Fare clic su **Installa**.
     
@@ -179,7 +179,7 @@ msiexec /l install.log /i StatsManPerfAgent.msi SERVICE_THUMBPRINT=<thumbprint> 
 ### <a name="import-the-topology"></a>Importare la topologia
 <a name="BKMK_ImportTopology"> </a>
 
-Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia di Skype for Business Server, utilizzare il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare informazioni su ogni pool in uso nell'organizzazione, quindi importare tali informazioni in Gestione statistiche.
+Dopo l'installazione e l'esecuzione di Gestione statistiche, è necessario importare la topologia di Skype for Business Server in modo che Gestione statistiche conosca il sito, il pool e il ruolo di ogni server. Per importare la topologia Skype for Business Server, utilizzare il cmdlet [Get-CsPool](/powershell/module/skype/get-cspool?view=skype-ps) per recuperare informazioni su ogni pool in uso nell'organizzazione, quindi importare tali informazioni in Gestione statistiche.
   
 Per importare la Skype for Business Server, attenersi alla seguente procedura:
   
@@ -243,7 +243,7 @@ Se l'avvio di un agente non riesce, verificare quanto segue:
     
     1. Assicurarsi di aver seguito le istruzioni per l'importazione della topologia. Vedere [Import the topology](deploy.md#BKMK_ImportTopology).
         
-    2. Se l'agente si trova in un server non elencato nella topologia( ad esempio, i nodi in un cluster AlwaysOn di SQL), sarà necessario aggiungere l'agente manualmente seguendo le istruzioni in [Importare](deploy.md#BKMK_ImportTopology)la topologia .
+    2. Se l'agente si trova in un server non elencato nella topologia, ad esempio i nodi in un cluster AlwaysOn di SQL, sarà necessario aggiungere manualmente l'agente seguendo le istruzioni in Importare la [topologia.](deploy.md#BKMK_ImportTopology)
     
 - L'agente può contattare il listener?
     

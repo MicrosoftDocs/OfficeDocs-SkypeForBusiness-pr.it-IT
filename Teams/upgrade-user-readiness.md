@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Pianificare la comunicazione, la formazione e il supporto degli utenti durante la fase di pilota, a bordo e l'aggiornamento a Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: af098209bf61ed26b90b1b109215ba13ad9a681205ebd8fcc6339f72cdaa588b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 61dd52a83620b0d4d20547e0da14cafa11ce30dc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318140"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627388"
 ---
 # <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di idoneità degli utenti
 
@@ -38,14 +38,14 @@ Questo articolo fa parte della fase di preparazione dell'utente del percorso di 
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Un piano di conformità ottimale per gli utenti incorpora le modalità di comunicazione, formazione e supporto degli utenti durante la fase pilota, di bordo e di aggiornamento a Teams. Come si è scoperto in [Valutare la conformità alle](./upgrade-org-change-readiness.md)modifiche dell'organizzazione, la conformità non è adatta a tutti. Per garantire un livello di ricettività ottimale per la nuova tecnologia, usare una combinazione di messaggistica a vasta portata (che incorpora la messaggistica vision/value e casi di utilizzo universali) e messaggistica, formazione e supporto personalizzati per le persone e le coorti definite e anche per i propri utenti, se appropriato. Questo piano personalizzato agevola l'adozione degli utenti, consentendo agli utenti di relazionarsi più rapidamente con i Teams, dimostrando al tempo stesso di comprenderne le esigenze.
+Un piano ottimale per la conformità degli utenti incorpora le modalità di comunicazione, formazione e supporto degli utenti durante la fase pilota, a bordo e l'aggiornamento a Teams. Come si è scoperto in [Valutare la conformità alle](./upgrade-org-change-readiness.md)modifiche dell'organizzazione, la conformità non è adatta a tutti. Per garantire un livello di ricettività ottimale per la nuova tecnologia, usare una combinazione di messaggistica a vasta portata (che incorpora la messaggistica vision/value e casi di utilizzo universali) e messaggistica, formazione e supporto personalizzati in base alle persone e alle coorti definite e anche ai propri utenti, se appropriato. Questo piano personalizzato agevola l'adozione degli utenti, consentendo agli utenti di relazionarsi più rapidamente con i Teams, dimostrando al contempo di comprenderne le esigenze.
 
 > [!Tip]
 > Scaricare [l'Upgrade Success Kit per](https://aka.ms/UpgradeSuccessKit) i materiali di conformità degli utenti dei modelli, ad esempio le comunicazioni e i sondaggi degli utenti, oltre a un piano di progetto di aggiornamento di esempio e un piano di test pilota.
 
 |&nbsp; |&nbsp; |
 |---|---|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Come si può creare un piano di conformità per facilitare e accelerare l'adozione della nuova soluzione da parte degli utenti?</li><li>Si hanno le risorse giuste per la consapevolezza, la formazione e il supporto in linea con la capacità degli utenti di gestire il cambiamento e le persone definite dall'utente?</li></ul> |
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Come si può creare un piano di conformità per facilitare e accelerare l'adozione della nuova soluzione da parte degli utenti?</li><li>Si hanno le giuste risorse di consapevolezza, formazione e supporto in linea con la capacità degli utenti di gestire il cambiamento e le persone definite dall'utente?</li></ul> |
 | ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Usare l'elenco seguente per generare idee per il piano di conformità. Selezionare le attività più pertinenti o aggiungene di personalizzate per progettare un piano di conformità ottimizzato per l'organizzazione. Ricordarsi di usare una combinazione di campagne a vasta portata (per l'intera organizzazione) e campagne mirate (per gruppi di ritardo o persone specifiche) per ottenere risultati massimi.</li></ul>|
 
 <div class="mx-tableFixed">

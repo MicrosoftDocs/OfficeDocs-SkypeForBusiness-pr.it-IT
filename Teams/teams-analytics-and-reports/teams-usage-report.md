@@ -9,20 +9,20 @@ ms.service: msteams
 ms.reviewer: kojika
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare il report sull Teams di utilizzo dei dati nell'interfaccia Microsoft Teams per ottenere una panoramica delle Teams attività nell'organizzazione.
+description: Informazioni su come usare il report sull Teams di utilizzo dei dati nell'interfaccia di amministrazione di Microsoft Teams per ottenere una panoramica delle Teams attività nell'organizzazione.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 344a263d2512914571877f7761843f0cf85810335a234e154e9a7f3c021d0644
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e2913093cfa45bb7e242dbe5452657cd74f9e187
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282539"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627248"
 ---
 # <a name="microsoft-teams-usage-report"></a>Microsoft Teams utilizzo
 
@@ -42,7 +42,7 @@ Il report sull'utilizzo di Teams nell'interfaccia di amministrazione di Microsof
 |**1**   |Il Teams attività di utilizzo può essere visualizzato per le tendenze degli ultimi 7, 30 o 90 giorni. |
 |**2**   |Ogni report riporta la data in cui è stato generato. In genere, i report presentano una latenza di 24-48 ore dal momento dell'attività. |
 |**3**   |<ul><li>L'asse X del grafico è l'intervallo di date selezionato per il report.</li> <li> L'asse Y è il conteggio degli elementi attivi o delle attività.</li> </ul>Posizionare il puntatore del mouse sul punto che rappresenta un elemento o un'attività in una data specifica per visualizzare il numero di istanze dell'elemento o dell'attività in tale data.|
-|**4**   |È possibile filtrare gli elementi visualizzati nel grafico facendo clic su un elemento nella legenda. Ad esempio, **fare** clic su Totale utenti attivi **,** Teams &  canali utenti attivi **,** Canali attivi o Messaggi per visualizzare solo le informazioni correlate a ognuno di essi. La modifica di questa selezione non modifica le informazioni nella tabella. |
+|**4**   |È possibile filtrare gli elementi visualizzati nel grafico facendo clic su un elemento nella legenda. Ad esempio, **fare** clic su Totale utenti **attivi,** Teams &  canali utenti attivi, Canali **attivi** o Messaggi per visualizzare solo le informazioni correlate a ognuno di essi. La modifica di questa selezione non modifica le informazioni nella tabella. |
 |**5**   |La tabella fornisce una suddivisione dell'utilizzo in base al team. <ul><li>**Il nome del** team è il nome visualizzato del team. È possibile fare clic sul nome del team per passare alla pagina delle impostazioni del team nell'Microsoft Teams di amministrazione. </li> <li>**Per privacy** si intende se il team è un team privato o un team pubblico.</li> <li>**Utenti attivi** è il numero di utenti attivi nel team nel periodo di tempo specificato.</li><li>**Guest** è il numero di guest nel team nel periodo di tempo specificato.</li> <li>**Canali attivi** è il numero di canali che hanno almeno un utente attivo nel periodo di tempo specificato.</li> <li>**Pubblica messaggi** è il numero di tutti i messaggi dei post nei canali nel periodo di tempo specificato.</li> <li>**Messaggi di** risposta è il numero di tutti i messaggi di risposta nei canali nel periodo di tempo specificato.</li> <li>**Riunioni organizzate** è il numero di riunioni pianificate e ad hoc organizzate da un utente durante il periodo di tempo specificato. </li><li>**Messaggi urgenti** è il numero di tutti i messaggi urgenti nel periodo di tempo specificato.</li><li>**Reazioni** è il numero di tutte le reazioni ai messaggi nel periodo di tempo specificato.</li><li>**Menzioni** è il numero di tutte le menzioni usate nei messaggi nel periodo di tempo specificato.</li><li>**Messaggi del** canale è il numero di messaggi univoci che gli utenti del team hanno pubblicato in una chat del team durante il periodo di tempo specificato.</li> </li> </ul>Si noti che se un account utente non esiste più in Azure AD, il nome utente viene visualizzato come "--" nella tabella. <br><br>Per visualizzare le informazioni desiderate nella tabella, assicurarsi di aggiungere le colonne alla tabella. |
 |**6**   |Selezionare **Modifica colonne** per aggiungere o rimuovere colonne nella tabella.|
 |**7**   |È possibile esportare il report in un file CSV per l'analisi offline. Fare **clic su Esporta in Excel** e quindi nella scheda **Download** fare clic su **Scarica** per scaricare il report quando è pronto.<br><br>![Screenshot della scheda Download che mostra i report esportati da scaricare](../media/teams-reports-export-to-csv.png)|

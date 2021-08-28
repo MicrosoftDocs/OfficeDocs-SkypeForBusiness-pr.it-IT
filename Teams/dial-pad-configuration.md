@@ -13,16 +13,16 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare la tastiera del telefono nel client Teams in modo che gli utenti possano accedere alla funzionalità PSTN (Public Switched Telephone Network).
-ms.openlocfilehash: 848e52859be3b2339e1e1968631c6d55fc7a8df79dc3a691fd47e9613f7f583d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6f67aeda059505ec5c1e78d117407f0e9703f732
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344315"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627618"
 ---
 # <a name="dial-pad-configuration"></a>Configurazione della tastiera del telefono
 
@@ -32,7 +32,7 @@ Nel client Teams, la tastiera del telefono consente agli utenti di accedere alla
 - L'utente ha un piano per chiamate Microsoft o è abilitato per il routing diretto
 - L'utente VoIP aziendale abilitato
 - L'utente è disponibile online e non Skype for Business locale
-- L'utente ha Teams dei criteri di chiamata abilitati
+- L'utente ha Teams di chiamata abilitato
 
 Le sezioni seguenti descrivono come usare PowerShell per controllare i criteri. Nella maggior parte dei casi, è necessario esaminare varie proprietà nell'output del cmdlet Get-CsOnlineUser. Gli esempi presuppongono $user sia l'indirizzo UPN o sip dell'utente.
 
@@ -136,7 +136,7 @@ RegistrarPool                 HostingProvider
 sippoolbn10M02.infra.lync.com sipfed.online.lync.com
 ```
 
-## <a name="user-has-teams-calling-policy-enabled"></a>L'utente ha Teams dei criteri di chiamata abilitati
+## <a name="user-has-teams-calling-policy-enabled"></a>L'utente ha Teams di chiamata abilitato
 
 TeamsCallingPolicy effettivo dell'utente deve avere AllowPrivateCalling impostato su true.  Per impostazione predefinita, gli utenti ereditano i criteri globali, che hanno AllowPrivateCallingPolicy impostato su true per impostazione predefinita.
 

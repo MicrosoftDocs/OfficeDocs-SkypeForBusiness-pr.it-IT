@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: ''
 description: Consigli e suggerimenti per la sicurezza per amministratori IT sull'uso di Sentinel per monitorare e cercare possibili minacce in Teams.
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -19,12 +19,12 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 39d4e1db8ddec05c524860c46156abcb9fc26619fbfcbbffc22ba7a4ee74da27
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 745500dd0ac30d717e37ec9287618342554b26c9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627028"
 ---
 # <a name="azure-sentinel-and-microsoft-teams"></a>Azure Sentinel e Microsoft Teams
 

@@ -14,7 +14,7 @@ searchScope:
 description: Informazioni su come gestire i proprietari dei turni per la gestione della pianificazione. È possibile impostare un criterio per elevare l'autorizzazione di un membro del team a un proprietario della pianificazione.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_FLW
@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 9c0bc75e15439cf5fa7c3989bb0854521a1c45b8
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 702ca0fd5b392755b1966d16024d5ecf10cdacab
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235752"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627538"
 ---
 # <a name="schedule-owner-for-shift-management"></a>Proprietario pianificazione per la gestione dei turni
 
@@ -52,7 +52,7 @@ Ecco un esempio di come l'organizzazione può usare la caratteristica Pianifica 
 
 Si lavora in un'organizzazione di grandi dimensioni in cui i responsabili dei reparti segnalano direttamente al responsabile del negozio. Il responsabile del negozio ha più autorità all'interno dell'azienda ed è il proprietario del team in Turni. I responsabili di reparto, invece, vengono aggiunti ai turni solo come membri del team. Anche se i responsabili dei negozi hanno più anzianità rispetto ai responsabili di reparto, è più logico che i responsabili di reparto gestino la pianificazione quotidiana dei dipendenti del team.
 
-*Senza Il proprietario della pianificazione,* i responsabili di reparto devono avere gli stessi privilegi del proprietario del team. Di recente, i responsabili di reparto spostano le informazioni e modificano il nome dei canali, causando complicazioni con il lavoro del responsabile del negozio. Il responsabile del negozio vuole che i responsabili del reparto siano in grado di organizzare le pianificazioni, ma non vuole che possano modificare altri elementi del team, all'esterno dei turni.
+*Senza Proprietario pianificazione,* i responsabili di reparto devono avere gli stessi privilegi del proprietario del team. Di recente, i responsabili di reparto spostano le informazioni e modificano il nome dei canali, causando complicazioni con il lavoro del responsabile del negozio. Il responsabile del negozio vuole che i responsabili del reparto siano in grado di organizzare le pianificazioni, ma non vuole che possano modificare altri elementi del team, all'esterno dei turni.
 
 *Con Schedule Owner*, i responsabili di reparto possono avere privilegi di pianificazione, senza altri privilegi di proprietario del team.
 

@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: karuanag
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Altre informazioni sulla strutturazione di team e canali in Microsoft Teams e su come usare Teams per guidare la collaborazione tra organizzazioni.
 f1.keywords:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 289f684054d3acd8a3801a816286c365ad3a3cced3319ed54845824cb47a5934
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e999bb144a16ffb8963a7a03458fefb98311423b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345305"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627278"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
@@ -36,7 +36,7 @@ I concetti di team e canali sono fondamentali per un'implementazione sana e prod
 
 - I canali sono gli spazi di collaborazione all'interno di un team in cui viene eseguito il lavoro effettivo. 
 
-Per altre informazioni su team e canali, vedere Panoramica di team e canali [in Microsoft Teams](teams-channels-overview.md). Per indicazioni Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni [su Microsoft 365 gruppi](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2).
+Per altre informazioni su team e canali, vedere Panoramica di team e canali [in Microsoft Teams](teams-channels-overview.md). Per indicazioni complete Teams sull'adozione dei Teams [sull'adozione.](https://aka.ms/teamstoolkit) Per altre informazioni sui gruppi Teams e Microsoft 365, vedere Microsoft 365 [Gruppi](office-365-groups.md) e Microsoft Teams e Altre informazioni [su Microsoft 365 gruppi.](https://support.office.com/article/Learn-about-Office-365-groups-b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 
 | &nbsp; |&nbsp;  |
@@ -53,12 +53,12 @@ I tipi di accesso al team determinano chi può partecipare a un team:
 
 ## <a name="use-teams-to-drive-cross-organization-collaboration"></a>Usare Teams per guidare la collaborazione tra organizzazioni
 
-È consigliabile usare i team per migliorare la collaborazione tra organizzazioni e molti progetti si prestano a questo modello. Inoltre, i responsabili o le divisioni all'interno di un'organizzazione potrebbero volere un team dedicato per le proprie persone. Si considerino i modelli organizzativi e di progetto illustrati nella figura seguente.
+È consigliabile usare i team per migliorare la collaborazione tra organizzazioni e molti progetti si prestano a questo modello. Inoltre, i responsabili o le divisioni all'interno di un'organizzazione potrebbero volere un team dedicato per le proprie persone. Si considerino i modelli di organizzazione e di progetto illustrati nella figura seguente.
 
 ![Modelli di organizzazione e di progetto](media/teams-adoption-organization-project.png)
 
 In un team dell'organizzazione (visualizzato a sinistra), potrebbero essere condivise informazioni chiave sul modo in cui l'organizzazione gestisce l'azienda, gli eventi del team, le strategie principali e altre informazioni operative, ad esempio le revisioni aziendali. Per il team visualizzato a destra, le informazioni del distretto sono suddivise in canali che rappresentano le categorie di lavoro che vengono completate da quel team. I membri di questo team possono o meno segnalare alla stessa persona, ma sono tutti impegnati a guidare i risultati per il distretto.
   
-Nella fase [2](teams-adoption-phase2-experiment.md) dell'implementazione si lavora in modo più efficace alla struttura dei team.
+Nella fase [2](teams-adoption-phase2-experiment.md) dell'implementazione si lavora più alla struttura dei team.
 
 ![Icona che illustra il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Creare i primi team](teams-adoption-your-first-teams.md)

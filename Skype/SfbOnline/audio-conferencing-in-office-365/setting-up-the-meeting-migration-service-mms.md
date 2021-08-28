@@ -16,18 +16,18 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: Servizio di migrazione delle riunioni (MMS) è un servizio che viene eseguito in background e aggiorna automaticamente Skype for Business e Microsoft Teams riunioni per gli utenti. MMS è progettato per eliminare la necessità per gli utenti di eseguire lo strumento di migrazione delle riunioni per aggiornare le riunioni Skype for Business e Microsoft Teams riunioni.
-ms.openlocfilehash: 68a3ef384c67835b25ff5db7ee6dfccf8b2ca1a7
-ms.sourcegitcommit: a8965ff7b05ff600e3c426a4fff5fdba8b4c8b0b
+ms.openlocfilehash: 3fefc7aa45df3323f8c96801bde1cb301ff40572
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58523867"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58613265"
 ---
 # <a name="using-the-meeting-migration-service-mms"></a>Uso del servizio di migrazione delle riunioni (MMS)
 
@@ -122,13 +122,13 @@ Oltre alle migrazioni automatiche delle riunioni, gli amministratori possono att
 
 **TargetMeetingType:**
 
-- L'uso specifica che Skype for Business riunioni rimangono Skype for Business e Teams `TargetMeetingType Current` riunioni rimangono Teams riunioni. Tuttavia, le coordinate delle audioconferenze potrebbero essere cambiate e le riunioni locali Skype for Business in Skype for Business Online. Questo è il valore predefinito per TargetMeetingType.
+- L'uso specifica che Skype for Business riunioni rimangono Skype for Business e Teams `TargetMeetingType Current` riunioni rimangono Teams riunioni. Tuttavia, le coordinate dei servizi di audioconferenza potrebbero essere cambiate e le riunioni locali Skype for Business in Skype for Business Online. Questo è il valore predefinito per TargetMeetingType.
 - Usando specifica che è necessario eseguire la migrazione di qualsiasi riunione esistente a Teams, indipendentemente dal fatto che la riunione sia ospitata in Skype for Business online o locale e indipendentemente dal fatto che siano necessari aggiornamenti per le `TargetMeetingType Teams` audioconferenze. 
 
 **SourceMeetingType:**
-- L'uso indica che Skype for Business le riunioni , sia locali che `SourceMeetingType SfB` online, devono essere aggiornate.
-- Usando `SourceMeetingType Teams` indica che è necessario aggiornare solo Teams riunioni.
-- `SourceMeetingType All`L'uso indica che le Skype for Business e le Teams devono essere aggiornate. Questo è il valore predefinito per SourceMeetingType.
+- L'uso indica che Skype for Business le riunioni , sia locali che online, devono `SourceMeetingType SfB` essere aggiornate.
+- `SourceMeetingType Teams`L'uso indica che Teams le riunioni devono essere aggiornate.
+- L'uso indica che è necessario aggiornare Skype for Business riunioni Teams `SourceMeetingType All` riunioni. Questo è il valore predefinito per SourceMeetingType.
     
 
 L'esempio seguente mostra come avviare la migrazione delle riunioni per gli utenti ashaw@contoso.com in modo che tutte le riunioni siano migrate in Teams:

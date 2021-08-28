@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a2d3e08b-511b-4507-abba-8ff71aa27c8e
 description: "Riepilogo: informazioni sull'applicazione Response Group in Skype for Business Server."
-ms.openlocfilehash: 0761e58027260a4528f7764858ba54d00b4a9c146f32945222a4ed6763912b0e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8d801b15dbcd9c040f2f1bb3d5e3dfb7fa5d198f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345693"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612195"
 ---
 # <a name="response-group-call-list-report-in-skype-for-business-server"></a>Rapporto elenco chiamate di Response Group in Skype for Business Server
 
@@ -41,7 +41,7 @@ Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un det
 
 ## <a name="accessing-the-response-group-call-list-report"></a>Accesso al Rapporto Elenco chiamate Response Group
 
-È possibile accedere al Rapporto elenco chiamate di Response Group solo facendo clic su una delle metriche seguenti disponibili nel [Rapporto utilizzo Response Group in Skype for Business Server](response-group-usage-report.md):
+È possibile accedere al Rapporto elenco chiamate di Response Group solo facendo clic su una delle seguenti metriche disponibili nel Rapporto utilizzo [Response Group in Skype for Business Server](response-group-usage-report.md):
 
 - Chiamate ricevute
 
@@ -57,7 +57,7 @@ Il Rapporto Elenco chiamate Response Group è una raccolta di chiamate di un det
 
 Il Rapporto Elenco chiamate Response Group consente di limitare i dati visualizzati alle chiamate che interessano un particolare flusso di lavoro di Response Group. A tale scopo, è necessario immettere l'URI del flusso di lavoro, ovvero l'indirizzo SIP del flusso di lavoro, nella casella URI flusso di lavoro. Prima di poter immettere tali informazioni, è tuttavia necessario che la casella URI flusso di lavoro sia visibile. Per visualizzare le opzioni di filtro per il Rapporto Elenco chiamate Response Group, fare clic sul pulsante Mostra/Nascondi parametri nella parte superiore sinistra della finestra del rapporto.
 
-Si noti che nell'elenco chiamate Response Group non vengono visualizzate informazioni relative al codice di risposta o all'ID diagnostica posizionando il puntatore del mouse su una di queste metriche. Se sono necessarie ulteriori informazioni, è possibile prendere nota del codice di risposta e/o dell'ID diagnostica e quindi cercare tali valori nel Rapporto errori principali [in Skype for Business Server](top-failures-report.md).
+Si noti che nell'elenco chiamate Response Group non vengono visualizzate informazioni relative al codice di risposta o all'ID diagnostica posizionando il puntatore del mouse su una di queste metriche. Se sono necessarie ulteriori informazioni, è possibile prendere nota del codice di risposta e/o dell'ID diagnostica e quindi cercare tali valori nel Rapporto errori [principali in Skype for Business Server](top-failures-report.md).
 
 Per sapere ad esempio quale singolo flusso di lavoro ha ricevuto il maggior numero di chiamate, è possibile eseguire le operazioni seguenti:
 

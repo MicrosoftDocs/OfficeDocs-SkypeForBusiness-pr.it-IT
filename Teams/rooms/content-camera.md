@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 ms.custom:
 - seo-marvel-mar2020
-description: Usare una fotocamera contenuto in una Microsoft Teams room, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
-ms.openlocfilehash: 36c37872fa705876921b9278e51a2434ebb4aa0e76ed93f45199ccb5760798bd
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Usare una fotocamera del contenuto in una Microsoft Teams room, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
+ms.openlocfilehash: e24a90e65a5d844a5431951283153a5de2406498
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316952"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58613005"
 ---
 # <a name="content-cameras"></a>Videocamere di contenuto
 
@@ -69,7 +69,7 @@ La distanza della fotocamera dalla lavagna si combina con la risoluzione della f
 
 La distanza tra la fotocamera del contenuto e il muro su cui è montata la lavagna dipende dall'HFoV del modello di fotocamera, che varia. Installare fotocamere con un HFoV più grande (ad esempio 120 gradi) più vicino al muro e fotocamere con un HFoV più stretto più lontano dal muro. Controllare l'HFoV prima di iniziare a installare la fotocamera scelta.
 
-Se si hanno lavagne di dimensioni superiori a 3,65 metri o senza angoli (come le lavagne a parete), è possibile posizionare la fotocamera in qualsiasi punto al centro. Il software di miglioramento seleziona un'area al centro se non riesce a trovare gli angoli della lavagna.
+Se si hanno lavagne di dimensioni superiori a 3,65 m o senza angoli (come le lavagne a parete), è possibile posizionare la fotocamera in qualsiasi punto al centro. Il software di miglioramento seleziona un'area al centro se non riesce a trovare gli angoli della lavagna.
 
 > [!NOTE]
 > È possibile usare un nastro di colore scuro o altri elementi per creare un'area della fotocamera del contenuto definita su una lavagna bianca a parete intera.
@@ -80,15 +80,15 @@ Se si hanno lavagne di dimensioni superiori a 3,65 metri o senza angoli (come le
 
 ## <a name="supported-cameras"></a>Fotocamere supportate
 
-Per determinare se è possibile usare una fotocamera come fotocamera contenuto, vedere Versioni del firmware certificate per le periferiche [audio e video USB.](requirements.md#certified-firmware-versions-for-usb-audio-and-video-peripherals)
+Per determinare se è possibile usare una fotocamera come videocamera contenuto, vedere Versioni del firmware certificate per le periferiche [audio e video USB.](requirements.md#certified-firmware-versions-for-usb-audio-and-video-peripherals)
 
 In caso contrario, fare riferimento al marketplace Microsoft Teams dispositivi per i kit di fotocamera contenuto supportati [all'indirizzo aka.ms/teamsdevices](https://aka.ms/teamsdevices).
 
 ## <a name="camera-settings"></a>Impostazioni fotocamera
 
-Dopo aver installato la fotocamera nella sala, configurarla nella console di Microsoft Teams Rooms chat room:
+Dopo aver installato la fotocamera nella sala, configurarla nella console Microsoft Teams Rooms chat room:
 
-1. Selezionare **Impostazioni** ![ ](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) Impostazioni, accedere come amministratore e selezionare **Dispositivo Impostazioni**.
+1. Selezionare **Impostazioni** ![ ](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) Impostazioni, accedere come amministratore e selezionare Dispositivo **Impostazioni**.
 2. Nella sezione **Impostazioni predefinite fotocamera** selezionare la fotocamera  del contenuto e verificare che sia selezionata l'opzione Miglioramenti al contenuto.
 3. (Facoltativo) Se la fotocamera è stata installata capovolta perché è stata montata dal soffitto, selezionare l'opzione Ruota fotocamera contenuto **di 180°.**
 4. Selezionare **Salva e esci.**

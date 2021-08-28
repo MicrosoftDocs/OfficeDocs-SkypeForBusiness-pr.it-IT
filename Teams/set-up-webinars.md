@@ -1,5 +1,5 @@
 ---
-title: Configurare per webinar in Microsoft Teams
+title: Configurare i webinar in Microsoft Teams
 author: KarliStites
 ms.author: kastites
 manager: serdars
@@ -10,7 +10,7 @@ ms.service: msteams
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -19,14 +19,14 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire i criteri webinar per Teams riunioni.
-ms.openlocfilehash: 23c637c1b4192f02ab3e95aa75bf434ae6453afd
-ms.sourcegitcommit: 3650579196d5f340ef32b31ba975285e08ab1848
+ms.openlocfilehash: 1ab4f082a270e4d9b3107c0b6ffbb27bd7c70110
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58392913"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612975"
 ---
-# <a name="set-up-for-webinars-in-microsoft-teams"></a>Configurare per webinar in Microsoft Teams
+# <a name="set-up-for-webinars-in-microsoft-teams"></a>Configurare i webinar in Microsoft Teams
 
 Questo articolo illustra come configurare l'organizzazione per ospitare webinar.
 
@@ -38,7 +38,7 @@ Dopo aver impostato webinar nell'organizzazione, gli utenti possono pianificare 
 
 ## <a name="allow-users-to-schedule-webinars-in-the-teams-admin-center"></a>Consentire agli utenti di pianificare webinar nell'Teams di amministrazione
 
-È possibile usare l'Teams di amministrazione per configurare webinar per l'organizzazione. I criteri per configurare i webinar sono presenti nell'interfaccia di amministrazione di Teams riunioni in **Criteri**  >  **riunione**.
+È possibile usare l'Teams di amministrazione per configurare webinar per l'organizzazione. I criteri per configurare i webinar sono presenti nell'interfaccia di amministrazione Teams riunioni in **Criteri**  >  **riunione**.
 
 ### <a name="allow-meeting-registration"></a>Consentire la registrazione alla riunione
 
@@ -52,7 +52,7 @@ Se si attiva questa opzione, gli utenti possono pianificare webinar. Per imposta
 Se si seleziona **Tutti**, tutti gli utenti, inclusi gli utenti anonimi, possono registrarsi e partecipare ai webinar. Se si seleziona **Tutti nell'organizzazione,** solo gli utenti dell'organizzazione possono registrarsi per i webinar. Se la registrazione alla riunione è disattivata, questa opzione non sarà disponibile e nessuno potrà registrarsi per i webinar.
 
 > [!NOTE]
-> Il valore predefinito per Who **può registrarsi** è **Tutti gli utenti dell'organizzazione** nei tenant dell'istruzione. Per altre informazioni, vedere Teams per l'istruzione [guidata Criteri.](easy-policy-setup-edu.md)
+> Il valore predefinito per Who **può essere registrato** è Tutti gli utenti **dell'organizzazione** nei tenant dell'istruzione. Per altre informazioni, vedere Teams per l'istruzione [guidata Criteri.](easy-policy-setup-edu.md)
 
 ### <a name="allow-engagement-report"></a>Consenti report impegno
 

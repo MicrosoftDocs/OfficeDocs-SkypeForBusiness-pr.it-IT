@@ -14,19 +14,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: Informazioni sulla procedura per reimpostare l'ID conferenza di una riunione in Microsoft Teams e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni.
-ms.openlocfilehash: 3c266b59bab4c51293d429d4698b3c79fe8b84232d519499f8a1bfa27a0c0d94
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni sulla procedura per reimpostare l'ID conferenza di un utente in Microsoft Teams e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni.
+ms.openlocfilehash: a4a57fb2f52ce2541e4e30794d78c05eb376a853
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319779"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627198"
 ---
 # <a name="reset-a-conference-id-for-a-user-in-microsoft-teams"></a>Reimpostare un ID conferenza per un utente in Microsoft Teams
 
@@ -56,7 +56,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
-- È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio  di posta elettronica che include l'ID conferenza e i numeri di telefono per l'accesso esterno facendo clic su Invia info conferenza tramite posta elettronica per l'utente nella sezione **Audioconferenza.** Il PIN non è incluso.
+- È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio  di posta elettronica che include l'ID conferenza e i numeri di telefono di accesso esterno facendo clic su Invia informazioni conferenza tramite posta elettronica per l'utente nella sezione **Audioconferenza.** Il PIN non è incluso.
     
 - Un ID conferenza da 7 a 9 cifre viene creato dal Teams servizio. Non è possibile modificarne la lunghezza.
     
@@ -64,7 +64,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
     
 - Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. 
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

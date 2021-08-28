@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f2f7d19b-18c8-4a41-9b17-80d35b73d742
 description: Lo Skype for Business Server 2015 Stress and Performance Tool viene utilizzato durante la pianificazione della capacità e l'ottimizzazione delle prestazioni in ambienti non di produzione o di test.
-ms.openlocfilehash: 1dff13905145752c57b02795e9aab07737d51b33d94d6355ce5f8c55fa62e7ea
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 381e6178994ce8d4ce2f3558bd075cf6fc3b6d43
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54328021"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611895"
 ---
 # <a name="skype-for-business-server-2015-stress-and-performance-tool"></a>Skype for Business Server 2015 Stress and Performance Tool
  
@@ -33,7 +33,7 @@ Lo Skype for Business Server 2015 Stress and Performance Tool include strumenti 
     
 - Misurare le prestazioni delle Skype for Business Server distribuzione
     
-Questo strumento viene in genere utilizzato dopo aver utilizzato lo strumento di pianificazione di [Skype for Business Server 2015](../../management-tools/planning-tool/planning-tool.md) per progettare la topologia e aver perfezionato la topologia con lo strumento di calcolo della pianificazione della capacità di [Skype for Business Server 2015.](../../management-tools/capacity-planning-calculator.md) 
+Questo strumento viene in genere utilizzato dopo aver utilizzato lo strumento di pianificazione di [Skype for Business Server 2015](../../management-tools/planning-tool/planning-tool.md) per progettare la topologia e perfezionando la topologia con lo strumento di calcolo della pianificazione della capacità di [Skype for Business Server 2015.](../../management-tools/capacity-planning-calculator.md) 
 
 > [!NOTE]
 > Questo strumento non verrà aggiornato per Skype for Business Server 2019.
@@ -48,7 +48,7 @@ Lo strumento Stress and Performance può simulare questi tipi di carico utente:
 |Condivisione applicazioni  <br/> |Voice over IP (VoIP), inclusa la simulazione PTSN (Public Switched Telephone Network)  <br/> |
 |Web Access Client Conferencing  <br/> |Operatore automatico conferenza  <br/> |
 |Response Group  <br/> |Espansione delle liste di distribuzione  <br/> |
-|Download della rubrica e query della rubrica  <br/> |Chiamate enhanced 911 (E911) e profilo località (dial plan)  <br/> |
+|Download della rubrica e query della rubrica  <br/> |Chiamate 911 (E911) avanzate e profilo località (dial plan)  <br/> |
 |MultiView  <br/> |Collaborazione dati  <br/> |
 |Mobilità  <br/> ||
    
@@ -76,7 +76,7 @@ Per saperne di più, consultare gli articoli seguenti:
     
   - [Configurazione dei criteri per lo strumento Skype for Business Server 2015 Stress and Performance](configuring-policies.md)
     
-- [Utilizzo dello Skype for Business Server 2015 Stress and Performance Tool](using-the-tool.md)
+- [Utilizzo dello strumento Skype for Business Server 2015 Stress and Performance](using-the-tool.md)
     
 - [Domande frequenti per lo Skype for Business Server 2015 Stress and Performance Tool](faq.md)
     

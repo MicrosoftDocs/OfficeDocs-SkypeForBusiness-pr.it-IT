@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f0ec68e1-de01-4a92-b67d-703149b05caf
 description: 'Riepilogo: leggere questo argomento per informazioni su Gestione statistiche per Skype for Business Server.'
-ms.openlocfilehash: 045586a1fd6c53ff1985602b20e390416142fd3dc9d3ddc3f6b9384d8d9955ec
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 17b01924db7522e2fefc9fbdf399d223429b6c4a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333268"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612075"
 ---
 # <a name="plan-for-statistics-manager-for-skype-for-business-server"></a>Pianificare il gestore delle statistiche per Skype for Business Server
 
@@ -73,7 +73,7 @@ Gestione statistiche consente di:
 
 - Visualizzare gli KHI in tempo reale, inclusi gli aggiornamenti. Se la visualizzazione cronologia è abilitata, vengono visualizzati solo i nuovi errori.
 
-  - Visualizzare tutti gli elementi KHI contemporaneamente
+  - Visualizzare tutti gli KHI contemporaneamente
 
   - Visualizzare gli KHI per server (visualizzazione orizzontale)
 
@@ -88,7 +88,7 @@ Di seguito vengono descritte le novità della versione 2.0. Se si dispone di una
 
 - Sono stati aggiunti molti nuovi contatori per SQL server, più Skype for Business contatori di utilizzo e così via.
 
-- Integrazione del nodo Watcher per l'agente gestione statistiche: se l'agente è installato in un nodo Watcher, le statistiche delle transazioni sintetiche verranno segnalate come contatori a Gestione statistiche.
+- Integrazione del nodo Watcher per l'agente di gestione statistiche: se l'agente è installato in un nodo Watcher, le statistiche delle transazioni sintetiche verranno segnalate come contatori a Gestione statistiche.
 
 - Numerosi miglioramenti di affidabilità e prestazioni.
 
@@ -141,8 +141,8 @@ Prima di distribuire Gestione statistiche, è necessario considerare i requisiti
 
 - PSExec - Necessaria per eseguire la distribuzione degli agenti remoti
 
-- .NET 4.5 (incluso in 2012 R2) - Obbligatorio per agenti e componenti sul lato server
-- Scaricare il [Skype for Business Server, Real-Time Statistics Manager (64 bit)](https://www.microsoft.com/en-in/download/details.aspx?id=57518)
+- .NET 4.5 (incluso nella versione 2012 R2) - Obbligatorio per agenti e componenti sul lato server
+- Scaricare gestione [Skype for Business Server, Real-Time statistiche (64 bit)](https://www.microsoft.com/en-in/download/details.aspx?id=57518)
 
 ### <a name="networking-requirements"></a>Requisiti di rete
 
