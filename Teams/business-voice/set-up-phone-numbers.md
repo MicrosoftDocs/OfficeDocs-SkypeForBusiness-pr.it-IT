@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni su come configurare i numeri Microsoft 365 Business Voice di telefono per gli utenti e i servizi dell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b8c4201930866c844a967c1f236222f7e9611602e5f9990c986a9700b5191d19
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3c57e459d3ad502b9e361e5fa7e4eb4b8b45c29e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306577"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599811"
 ---
 # <a name="step-2-set-up-business-voice-phone-numbers"></a>Passaggio 2: Configurare i numeri di telefono di VoIP aziendale
 
@@ -45,14 +45,14 @@ Il video seguente mostra come completare questi passaggi nell'interfaccia Teams 
 
 Il numero di servizio configurato ora verrà usato in un passaggio successivo per il numero di telefono principale dell'azienda.
 
-1. Aprire l Microsoft Teams di amministrazione di Microsoft Teams e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
+1. Aprire l'Microsoft Teams di amministrazione e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
 2. Nel riquadro di spostamento sinistro passare a <a href="https://admin.teams.microsoft.com/phone-numbers" target="_blank"> **Numeri**  >  **Telefono**</a>vocali e quindi fare clic su **Aggiungi.**
 3. Immettere un nome per l'ordine e aggiungere una descrizione.
 4. Nella pagina Ubicazione e quantità eseguire le operazioni seguenti:
     1. In **Paese o area geografica** selezionare un paese o un'area geografica.
     2. In **Tipo di numero** selezionare una delle opzioni seguenti:
 
-        - **Operatore automatico (pedaggio)** Numero di telefono normale, senza numero verde. Le tariffe interurbane vengono addebitate al chiamante.
+        - **Operatore automatico (pedaggio)** Numero di telefono normale, non a numero verde. Le tariffe interurbane vengono addebitate al chiamante.
         - **Operatore automatico (numero verde)** Numero verde (Stati Uniti e Canada) o numero verde (Regno Unito). Le tariffe per le lunghe distanze vengono addebitate all'azienda. Prima di selezionare questa opzione, è necessario acquistare Crediti comunicazioni. Per altre informazioni, vedere Cosa è necessario acquistare per usare [Microsoft 365 Business Voice?](what-to-buy.md).
 
     3. In **Quantità** selezionare **1.**
@@ -61,7 +61,7 @@ Il numero di servizio configurato ora verrà usato in un passaggio successivo pe
     4. Scegliere Località **o** **Codice** area, a seconda che si vogliano cercare numeri di telefono usando la città di una località o se si vogliono cercare numeri in un codice di area specifico.
     5. Se si seleziona **Posizione**:
 
-        1. Digitare la città in cui si [](set-up-emergency-locations.md) trova l'indirizzo per gli interventi di emergenza nel passaggio Configurare le posizioni per gli interventi di emergenza oppure, se è necessario creare una nuova posizione per un altro ufficio o un home office, fare clic su Aggiungi **una posizione.**
+        1. Digitare la città in cui si [](set-up-emergency-locations.md) trova l'indirizzo di emergenza nel passaggio Configurare le posizioni per gli interventi di emergenza oppure, se è necessario creare una nuova posizione per un altro ufficio o un home office, fare clic su Aggiungi **una posizione.**
         2. In **Codice area** selezionare un codice di area e quindi selezionare **Avanti** per prenotare il numero.
 
     6. Se si seleziona **Codice area,** digitare il codice area da cercare e quindi selezionare **Avanti** per prenotare il numero.
@@ -71,7 +71,7 @@ Il numero di servizio configurato ora verrà usato in un passaggio successivo pe
 
 ## <a name="set-up-phone-numbers-for-your-users"></a>Configurare i numeri di telefono per gli utenti
 
-1. Aprire l Microsoft Teams di amministrazione di Microsoft Teams e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
+1. Aprire l'Microsoft Teams di amministrazione e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
 2. Nel riquadro di spostamento sinistro passare a <a href="https://admin.teams.microsoft.com/phone-numbers" target="_blank"> **Numeri**  >  **Telefono**</a>vocali e quindi fare clic su **Aggiungi.**
 3. Immettere un nome per l'ordine e aggiungere una descrizione.
 4. Nella pagina Ubicazione e quantità eseguire le operazioni seguenti:
@@ -82,7 +82,7 @@ Il numero di servizio configurato ora verrà usato in un passaggio successivo pe
     4. Scegliere Località **o** **Codice** area, a seconda che si vogliano cercare numeri di telefono usando la città di una località o se si vogliono cercare numeri in un codice di area specifico.
     5. Se si seleziona **Posizione**:
 
-        1. Digitare la città in cui si [](set-up-emergency-locations.md) trova l'indirizzo per gli interventi di emergenza nel passaggio Configurare le posizioni per gli interventi di emergenza oppure, se è necessario creare una nuova posizione per un altro ufficio o un home office, fare clic su Aggiungi **una posizione.**
+        1. Digitare la città in cui si [](set-up-emergency-locations.md) trova l'indirizzo di emergenza nel passaggio Configurare le posizioni per gli interventi di emergenza oppure, se è necessario creare una nuova posizione per un altro ufficio o un home office, fare clic su Aggiungi **una posizione.**
         2. In **Codice area** selezionare un codice di area e quindi selezionare **Avanti** per prenotare il numero.
 
     6. Se si seleziona **Codice area,** digitare il codice area da cercare e quindi selezionare **Avanti** per prenotare il numero.

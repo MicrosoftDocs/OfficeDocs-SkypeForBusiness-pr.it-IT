@@ -13,19 +13,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.orgwidesettings.holidays.overview
 - seo-marvel-apr2020
-description: Informazioni su come configurare le festività in Microsoft Teams da usare con gli operatori automatici.
-ms.openlocfilehash: c7fa5d44f836e35022acab24c2d4b7ad6c60536295bba7adba8fc568b1560443
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come configurare le festività in Microsoft Teams per l'uso con gli operatori automatici.
+ms.openlocfilehash: 3f914243984c9fef70b1217cce504ffd983263e2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351746"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623228"
 ---
 # <a name="set-up-holidays-in-microsoft-teams"></a>Configurare le festività in Microsoft Teams
 
@@ -82,4 +82,4 @@ Per modificare una festività
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Pianificare l'Teams operatori automatici e le code di chiamata?](plan-auto-attendant-call-queue.md)
+[Pianificare l Teams operatori automatici e le code di chiamata?](plan-auto-attendant-call-queue.md)

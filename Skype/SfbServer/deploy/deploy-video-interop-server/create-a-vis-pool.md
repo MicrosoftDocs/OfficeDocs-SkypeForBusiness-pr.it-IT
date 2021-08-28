@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: abd8c4f7-057f-4360-8e3e-ec29b58f16a8
-description: 'Riepilogo: creare un pool di Video Interop Server in Skype for Business Server generatore di topologie.'
-ms.openlocfilehash: 91a1ed8b5b8d5ce728a666be507a1c1026b0c88460d9ba33b519f1f3d3825aa8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: creare un pool di Video Interop Server in Skype for Business Server tramite Generatore di topologie.'
+ms.openlocfilehash: 9a417c48ca52b04d12361e39ed10a6ea39ec3795
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54283578"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624388"
 ---
 # <a name="create-a-vis-pool-in-skype-for-business-server"></a>Creare un pool VIS in Skype for Business Server
  
@@ -48,7 +48,7 @@ ms.locfileid: "54283578"
     
 6. Aggiungere un gateway video. A tale scopo, espandere Componenti condivisi, fare clic con il pulsante destro del mouse su **Gateway video** e selezionare Nuovo **gateway video.**
     
-7. Fornire l'FQDN o l'indirizzo IP del gateway video. Il gateway video potrebbe essere in un sottodominio o in un dominio diverso. Il CUCM utilizzato dai VTC del sistema funge da gateway video.
+7. Fornire l'FQDN o l'indirizzo IP del gateway video. Il gateway video potrebbe essere in un sottodominio o in un dominio diverso. Il cucm utilizzato dai VTC del sistema funge da gateway video.
     
 8. Selezionare IPv4 o IPv6 in base alle esigenze. È possibile utilizzare tutti gli indirizzi IP configurati o limitare l'utilizzo del servizio agli indirizzi IP selezionati.
     
@@ -57,7 +57,7 @@ ms.locfileid: "54283578"
 10. Al termine del passaggio precedente viene aggiunto un trunk SIP Video corrispondente. Fare clic con il pulsante destro del mouse sul trunk video SIP e selezionare il trunk appena aggiunto. Il nome del trunk SIP video, il server di interoperabilità video associato, il protocollo di trasporto SIP e la porta possono essere tutti modificati. 
     
     > [!NOTE]
-    >  Un server di interoperabilità video supporta trunk 1:N. Di conseguenza, è possibile aggiungere più trunk, associati a un singolo Video Interop Server, in cui ogni trunk termina su un gateway video diverso. La limitazione è che un determinato gateway video dispone di un solo trunk che può essere definito per la Skype for Business Server distribuzione.
+    >  Un server di interoperabilità video supporta trunk 1:N. È quindi possibile aggiungere più trunk, associati a un singolo Video Interop Server, in cui ogni trunk termina su un gateway video diverso. La limitazione è che un determinato gateway video dispone di un solo trunk che può essere definito per la Skype for Business Server distribuzione.
   
 11. Pubblicare il documento della topologia come descritto in [Create and publish new topology in Skype for Business Server 2015.](../../deploy/install/create-and-publish-new-topology.md)
     

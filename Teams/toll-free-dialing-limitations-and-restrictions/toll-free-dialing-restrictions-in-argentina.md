@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in Argentina, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: d6c57b3b8eabfd25ef77a795aa353d1764dcd32beda712220d9fa3d6f17c14ef
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 47b4a7f1e89a7b26068051df0624b9ebe65f01a8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308347"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623198"
 ---
 # <a name="toll-free-dialing-restrictions-in-argentina"></a>Restrizioni di composizione a numero verde in Argentina
 
@@ -42,7 +42,7 @@ ms.locfileid: "54308347"
 |Codice ISO del paese/area geografica  <br/> |AR  <br/> |
 |Isola/territorio coperto  <br/> |Non applicabile  <br/> |
 |Isola/territorio non coperto  <br/> |Non applicabile  <br/> |
-|Disponibilità linea cablata/fissa  <br/> |Nessun accesso da Telmex (e filiali)  <br/> |
+|Disponibilità linea cablata/fissa  <br/> |Nessun accesso da Telmex (e società affiliate)  <br/> |
 |Disponibilità rete mobile  <br/> |Sì  <br/> |
 |Commenti, restrizioni e problemi di accesso  <br/> |Accesso da mobile: tariffa a tempo.  <br/> |
    

@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 83697d4c-320b-4797-beb0-dd0bc4f1d0d6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per creare una richiesta ritardata o offline, selezionare Prepara la richiesta per l'invio posticipato (richiesta di certificato non in linea). Per creare una richiesta immediata a un'autorità di certificazione online (in genere un sistema interno nell'infrastruttura a chiave pubblica dell'organizzazione), selezionare Invia la richiesta immediatamente a un'autorità di certificazione online.
-ms.openlocfilehash: 96a18d804894bad1b3359d1af33a726b04d3d563724b7b605ae52fbaf5dc5c0b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 25cd965e58fc18f0aa62e6483f76cbb0aec1826f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309975"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597190"
 ---
 # <a name="certificate-request-online-offline"></a>Richiesta di certificato (Online Offline)
  

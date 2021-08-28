@@ -9,24 +9,24 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 63c7251c-080a-4175-99a6-f86d0266d6bc
-description: "Riepilogo: informazioni su come distribuire i server perimetrali nell'Skype for Business Server locale."
-ms.openlocfilehash: 6d098a78fe0fbb005bc023790e59416601eeab8c3c4d8b1378a71bfcf3d59a02
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: informazioni su come distribuire i server perimetrali nell'ambiente Skype for Business Server locale."
+ms.openlocfilehash: 611e2e6b4bbc3ef8f1d140b02d8dc3f2bc719953
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54305948"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623028"
 ---
 # <a name="deploy-edge-servers-in-skype-for-business-server"></a>Distribuire server perimetrali in Skype for Business Server
  
 **Riepilogo:** Informazioni su come distribuire i server perimetrali nell'Skype for Business Server locale.
   
-Le sezioni seguenti contengono i passaggi che devono essere seguiti dopo la revisione del piano di Skype for Business Server per le distribuzioni di server perimetrali [nella](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) documentazione Skype for Business Server informazioni. I passaggi di distribuzione sono i seguenti:
+Le sezioni seguenti contengono i passaggi che devono essere seguiti dopo la revisione del piano Skype for Business Server per le distribuzioni di server perimetrali [nella](../../plan-your-deployment/edge-server-deployments/edge-server-deployments.md) Skype for Business Server documentazione. I passaggi di distribuzione sono i seguenti:
   
 - Interfacce di rete
     
@@ -51,9 +51,9 @@ Come illustrato in Pianificazione, l'interfaccia di rete verrà configurata con 
     
    a. Tre indirizzi IP statici nella subnet della rete perimetrale esterna e puntano il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in modo che puntino a una coppia di server DNS perimetrali.
     
-   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna e puntare il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in modo che puntino a una coppia di server DNS perimetrali. Questa configurazione è accettabile SOLO se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo [Create your Edge topology for Skype for Business Server.](create-your-edge-topology.md)
+   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna e puntare il gateway predefinito all'interfaccia interna del firewall esterno. Configurare le impostazioni DNS della scheda in modo che puntino a una coppia di server DNS perimetrali. Questa configurazione è accettabile solo se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo Creare la topologia Perimetrale per [Skype for Business Server.](create-your-edge-topology.md)
     
-3. Nell'interfaccia interna configurare un ip statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino ad almeno un server DNS, ma preferibilmente a una coppia di server DNS perimetrali.
+3. Nell'interfaccia interna configurare un IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino ad almeno un server DNS, ma preferibilmente a una coppia di server DNS perimetrali.
     
 4. Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono client, Skype for Business Server e Exchange messaggistica unificata.
     
@@ -68,9 +68,9 @@ Come illustrato in Pianificazione, l'interfaccia di rete verrà configurata con 
     
    a. Tre indirizzi IP statici nella subnet della rete perimetrale esterna. Sarà inoltre necessario configurare il gateway predefinito nell'interfaccia esterna, ad esempio definendo il router con connessione Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino a un server DNS esterno, idealmente una coppia di server DNS esterni.
     
-   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna. Sarà inoltre necessario configurare il gateway predefinito nell'interfaccia esterna, ad esempio definendo il router con connessione Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino a un server DNS esterno o idealmente a una coppia di server DNS esterni. Questa configurazione è accettabile SOLO se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo [Create your Edge topology for Skype for Business Server.](create-your-edge-topology.md)
+   b. Un indirizzo IP statico nella subnet della rete perimetrale esterna. Sarà inoltre necessario configurare il gateway predefinito nell'interfaccia esterna, ad esempio definendo il router con connessione Internet o il firewall esterno come gateway predefinito. Configurare le impostazioni DNS della scheda in modo che puntino a un server DNS esterno o idealmente a una coppia di server DNS esterni. Questa configurazione è accettabile solo se in precedenza la topologia è stata configurata in modo da avere valori non standard nelle assegnazioni delle porte, come illustrato nell'articolo Creare la topologia Perimetrale per [Skype for Business Server.](create-your-edge-topology.md)
     
-3. Nell'interfaccia interna configurare un ip statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Lasciare vuote anche le impostazioni DNS della scheda.
+3. Nell'interfaccia interna configurare un IP statico nella subnet della rete perimetrale interna e non impostare un gateway predefinito. Lasciare vuote anche le impostazioni DNS della scheda.
     
 4. Creare route statiche persistenti nell'interfaccia interna a tutte le reti interne in cui risiedono client, Skype for Business Server e Exchange messaggistica unificata.
     
@@ -78,11 +78,11 @@ Come illustrato in Pianificazione, l'interfaccia di rete verrà configurata con 
     
 ## <a name="installation"></a>Installazione
 
-Per completare correttamente questi passaggi, è necessario aver seguito i passaggi descritti nell'articolo Creare la topologia [Edge per Skype for Business Server.](create-your-edge-topology.md)
+Per completare correttamente questi passaggi, è necessario aver seguito i passaggi descritti nell'articolo Creare la topologia [edge per Skype for Business Server.](create-your-edge-topology.md)
   
-1. Accedere al server configurato per il ruolo Server perimetrale con un account nel gruppo dell'amministratore locale.
+1. Accedere al server configurato per il ruolo Server perimetrale con un account presente nel gruppo dell'amministratore locale.
     
-2. Sarà necessario il file di configurazione della topologia copiato alla fine della documentazione relativa alla topologia di server perimetrali nel computer. Accedi al supporto esterno in cui hai inserito il file di configurazione (ad esempio un'unità USB o una condivisione).
+2. You'll need the topology configuration file you copied out at the end of the Edge Server Topology documentation on this machine. Accedi al supporto esterno in cui hai inserito il file di configurazione (ad esempio un'unità USB o una condivisione).
     
 3. Avviare la **Distribuzione guidata**.
     
@@ -133,7 +133,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iii. Nella pagina Web certsrv della CA emittente, **in** Selezionare un'attività, fare clic su Scarica un certificato CA, una catena di certificati **o un CRL.**
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iv. In **Download a CA certificate, certificate chain o CRL** fare clic su Download CA certificate **chain**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iv. In **Scarica un certificato CA, una catena di certificati o un CRL** fare clic su Scarica catena di certificati **CA.**
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v. Nella casella **Download file** fare clic su **Salva.**
     
@@ -151,9 +151,9 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;v. Fare clic sul certificato radice emesso dalla CA. Fare clic con il pulsante destro del mouse sul **certificato,** scegliere Tutte le attività dal menu e **quindi** esporta .
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vi. Verrà **visualizzata l'Esportazione guidata** certificati. Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vi. Verrà **visualizzata l'Esportazione guidata** certificati. Fare clic su **Avanti**.
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vii. Nella finestra **di dialogo Esporta formato file** scegliere il formato in cui si desidera eseguire l'esportazione. Il nostro consiglio è **Cryptographic Message Syntax Standard - PKCS #7 Certificates (P7b)**. Se anche questa è la scelta giusta, ricordarsi di selezionare anche la casella di controllo Includi tutti i certificati nel percorso di certificazione, se possibile, **in** quanto verrà esportata anche la catena di certificati, incluso il certificato CA radice e gli eventuali certificati intermedi. Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vii. Nella finestra **di dialogo Esporta formato file** scegliere il formato in cui si desidera eseguire l'esportazione. Il nostro consiglio è **Cryptographic Message Syntax Standard - PKCS #7 Certificates (P7b)**. Se anche questa è la scelta giusta, ricordarsi di selezionare anche la casella di controllo Includi tutti i certificati nel percorso di certificazione, se possibile, **in** quanto verrà esportata anche la catena di certificati, incluso il certificato CA radice e gli eventuali certificati intermedi. Fare clic su **Avanti**.
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;viii. Nella finestra **di dialogo** File da esportare digitare un percorso e un nome di file (l'estensione predefinita è p7b) per il certificato esportato. Se è più facile, scegliere  il pulsante Sfoglia per passare al percorso in cui si desidera salvare il certificato esportato e assegnare un nome al certificato esportato qui. Fare **clic** su Salva e **quindi** su Avanti quando si è pronti.
     
@@ -177,9 +177,9 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;g. Nell'albero della console espandere **Certificati (computer locale),** fare clic con il pulsante destro del mouse su Autorità di certificazione radice **attendibili,** passare a **Tutte** le attività e quindi fare clic su **Importa.**
     
-&nbsp;&nbsp;&nbsp;h. Nella casella di testo **File da** importare della procedura guidata visualizzata specificare il nome file del certificato, ovvero il nome del file p7b nella sezione precedente. Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;h. Nella casella di testo **File da** importare della procedura guidata visualizzata specificare il nome file del certificato, ovvero il nome del file p7b nella sezione precedente. Fare clic su **Avanti**.
     
-&nbsp;&nbsp;&nbsp;i. Lasciare il pulsante di opzione **Inseriamo tutti i certificati** nel seguente archivio, in quanto è necessario selezionare Autorità di certificazione radice attendibili. Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;i. Lasciare il pulsante di opzione **Inseriamo tutti i certificati** nel seguente archivio, in quanto è necessario selezionare Autorità di certificazione radice attendibili. Fare clic su **Avanti**.
     
 &nbsp;&nbsp;&nbsp;j. Esaminare il riepilogo e fare clic su **Fine** per completare l'importazione.
     
@@ -193,7 +193,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;c. Nella pagina **Richieste** ritardate o immediate scegliere Invia la richiesta immediatamente a un'autorità di certificazione **online** se si ha accesso a una richiesta dall'ambiente Edge oppure Preparare la richiesta **ora,** ma inviarla in un secondo momento in caso contrario.
     
-&nbsp;&nbsp;&nbsp;d. Nella pagina **File di richiesta** di certificato immetti la parte completa e il nome del file per il quale verrà salvato il file (ad esempio c:\SkypeInternalEdgeCert.cer). Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;d. Nella pagina **File richiesta** certificato immettere la parte completa e il nome del file per il quale verrà salvato il file (ad esempio c:\SkypeInternalEdgeCert.cer). Fare clic su **Avanti**.
     
 &nbsp;&nbsp;&nbsp;e. Nella pagina **Specifica modello di certificato** alternativo, per utilizzare un modello diverso dal modello WebServer predefinito, selezionare la casella di controllo Usa modello di certificato alternativo per l'autorità di **certificazione** selezionata. In caso contrario, non eseguire alcuna operazione.
     
@@ -205,7 +205,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  iii. Se è necessario un certificato esportabile, è necessario selezionare la casella di controllo Contrassegna la chiave privata del certificato come **esportabile.**
     
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  iv. Scegliere **Avanti**.
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  iv. Fare clic su **Avanti**.
     
 &nbsp;&nbsp;&nbsp;g. Nella pagina **Informazioni organizzazione** immettere il nome dell'organizzazione e dell'unità organizzativa. È possibile immettere la divisione o il reparto ,ad esempio IT.
     
@@ -243,13 +243,13 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;b. Fare **clic sul pulsante Start,** scegliere Esegui (o aprire **Ricerca)** e digitare  **MMC.**
     
-&nbsp;&nbsp;&nbsp;c. Nella console MMC fare clic su **File** e quindi su **Aggiungi/Rimuovi snap-in.**
+&nbsp;&nbsp;&nbsp;c. Nella console MMC fare clic su **File** e **quindi su Aggiungi/Rimuovi snap-in.**
     
 &nbsp;&nbsp;&nbsp;d. Nella casella **Aggiungi o rimuovi snap-in fare** clic su **Certificati** e quindi su **Aggiungi.**
     
-&nbsp;&nbsp;&nbsp;e. Nella finestra **di dialogo** Snap-in Certificati scegliere **Account computer**. Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;e. Nella finestra **di dialogo** Snap-in Certificati scegliere **Account computer**. Fare clic su **Avanti**.
     
-&nbsp;&nbsp;&nbsp;f. Nella finestra **di dialogo Seleziona computer** selezionare Computer **locale: (il computer** in cui è in esecuzione la console) . Fare clic su **Fine**. Fare **clic su OK** e la configurazione della console MMC è stata completata.
+&nbsp;&nbsp;&nbsp;f. Nella finestra **di dialogo Seleziona computer** selezionare Computer **locale: (computer** in cui è in esecuzione la console) . Fare clic su **Fine**. Fare **clic su OK** e la configurazione della console MMC è stata completata.
     
 &nbsp;&nbsp;&nbsp;g. Fare doppio clic su **Certificati (computer locale)** per espandere gli archivi certificati. Fare doppio clic **su Personale** e quindi su **Certificati.**
     
@@ -307,7 +307,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;d. Nella pagina **Richieste immediate o ritardate** fare clic su **Prepara la richiesta per l'invio posticipato**.
     
-&nbsp;&nbsp;&nbsp;e. Nella pagina **File di richiesta** di certificato immetti la parte completa e il nome del file per il quale verrà salvato il file (ad esempio c:\SkypeInternalEdgeCert.cer). Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;e. Nella pagina **File richiesta** certificato immettere la parte completa e il nome del file per il quale verrà salvato il file (ad esempio c:\SkypeInternalEdgeCert.cer). Fare clic su **Avanti**.
     
 &nbsp;&nbsp;&nbsp;f. Nella pagina **Specifica modello di certificato** alternativo, per utilizzare un modello diverso dal modello WebServer predefinito, selezionare la casella di controllo Usa modello di certificato alternativo per l'autorità di **certificazione** selezionata.
     
@@ -319,7 +319,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  iii. Se è necessario un certificato esportabile, è necessario selezionare la casella di controllo Contrassegna la chiave privata del certificato come **esportabile.**
     
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iv. Scegliere **Avanti**.
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; iv. Fare clic su **Avanti**.
     
 &nbsp;&nbsp;&nbsp;h. Nella pagina **Informazioni organizzazione** immettere il nome dell'organizzazione e dell'unità organizzativa. È possibile immettere la divisione o il reparto ,ad esempio IT.
     
@@ -337,7 +337,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;o. Dopo aver generato la richiesta, è possibile fare clic **su** Visualizza per esaminare il certificato e **su Fine** per chiudere la finestra. Il contenuto del file CSR deve essere assegnato all'autorità di certificazione, in modo che possa generare un certificato da importare nel computer nella sezione successiva.
     
-&nbsp;&nbsp;&nbsp;p. (FACOLTATIVO) Quando invii il contenuto della csr, potresti richiedere alcune informazioni, come indicato di seguito (le CA variano notevolmente, quindi potrebbe non essere necessario):
+&nbsp;&nbsp;&nbsp;p. (FACOLTATIVO) Quando invii il contenuto della RSI, potresti richiedere alcune informazioni, come indicato di seguito (le CA variano notevolmente, quindi potrebbe non essere necessario):
     
   - **Microsoft** come piattaforma server
     
@@ -375,9 +375,9 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;d. Nella casella **Aggiungi o rimuovi snap-in fare** clic su **Certificati** e quindi su **Aggiungi.**
     
-&nbsp;&nbsp;&nbsp;e. Nella finestra **di dialogo** Snap-in Certificati scegliere **Account computer**. Scegliere **Avanti**.
+&nbsp;&nbsp;&nbsp;e. Nella finestra **di dialogo** Snap-in Certificati scegliere **Account computer**. Fare clic su **Avanti**.
     
-&nbsp;&nbsp;&nbsp;f. Nella finestra **di dialogo Seleziona computer** selezionare Computer **locale: (il computer** in cui è in esecuzione la console) . Fare clic su **Fine**. Fare **clic su OK** e la configurazione della console MMC è stata completata.
+&nbsp;&nbsp;&nbsp;f. Nella finestra **di dialogo Seleziona computer** selezionare Computer **locale: (computer** in cui è in esecuzione la console) . Fare clic su **Fine**. Fare **clic su OK** e la configurazione della console MMC è stata completata.
     
 &nbsp;&nbsp;&nbsp;g. Fare doppio clic su **Certificati (computer locale)** per espandere gli archivi certificati. **Fare doppio clic su Personale** e quindi su **Certificati.**
     
@@ -391,7 +391,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
    > [!NOTE]
    > Se **sì, l'esportazione della** chiave privata non è disponibile, la chiave privata per questo certificato non è stata contrassegnata per l'esportazione prima di averla. È necessario richiedere di nuovo il certificato al provider, con la chiave privata impostata per l'esportazione, prima di procedere correttamente.
   
-&nbsp;&nbsp;&nbsp;j. Nella finestra di dialogo Esporta formati di file selezionare Informazioni personali Exchange - PKCS#12 (. PFX) e quindi selezionare quanto segue:
+&nbsp;&nbsp;&nbsp;j. Nella finestra di dialogo Esporta formati file selezionare Informazioni personali Exchange - PKCS#12 (. PFX) e quindi selezionare quanto segue:
     
  &nbsp;&nbsp;&nbsp;  i. Includere tutti i certificati nel percorso di certificazione, se possibile.
     
@@ -408,7 +408,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
     
 &nbsp;&nbsp;&nbsp;n. Fare clic su **OK** nella finestra di dialogo di conclusione dell'esportazione.
     
-&nbsp;&nbsp;&nbsp;o. Sarà ora necessario tornare alla sezione Importa il certificato prima di questo e importare il certificato in tutti i server perimetrali rimanenti, quindi procedere con l'assegnazione, di seguito.
+&nbsp;&nbsp;&nbsp;o. È ora necessario tornare alla sezione Importare il certificato prima di questo e importare il certificato in tutti i server perimetrali rimanenti, quindi procedere con l'assegnazione, di seguito.
     
  
 ### <a name="4-assign-the-certificate"></a>4. Assegnare il certificato
@@ -432,7 +432,7 @@ I requisiti dei certificati per il server perimetrale sono disponibili nella doc
   
 ## <a name="starting-the-edge-servers"></a>Avvio dei server perimetrali
 
-Al termine dell'installazione, è necessario avviare i servizi in ogni server perimetrale della distribuzione:
+Al termine dell'installazione, sarà necessario avviare i servizi in ogni server perimetrale della distribuzione:
   
 1. In ogni server perimetrale, nella Distribuzione **guidata,** accanto a **Passaggio 4: Avviare i servizi,** fare clic su **Esegui.**
     

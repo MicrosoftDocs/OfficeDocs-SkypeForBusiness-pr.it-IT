@@ -9,29 +9,29 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: ba112df8-3bb4-48e4-a353-4bf9110ccd71
-description: 'Riepilogo: informazioni su come definire una regola di conversione utilizzando lo strumento Crea regola di conversione in Skype for Business Server.'
-ms.openlocfilehash: 0f8f511996c8d3a578087c9f4252492fa03ef4237688bcaf68a04f09ed944116
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: informazioni su come definire una regola di conversione utilizzando lo strumento Crea una regola di conversione in Skype for Business Server.'
+ms.openlocfilehash: 2d920f7706514df56c1814b5a61f40e0182412d5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281289"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597280"
 ---
 # <a name="create-or-modify-a-translation-rule-for-called-id-presentation-in-skype-for-business-server"></a>Creare o modificare una regola di conversione per la presentazione ID denominata in Skype for Business Server
 
 **Riepilogo:** Scopri come definire una regola di conversione usando lo strumento Crea una regola di conversione in Skype for Business Server.
 
-Seguire questa procedura se si desidera definire una regola di  conversione immettendo un set di valori nello strumento Crea una regola di conversione e abilitando il Pannello di controllo di Skype for Business Server per generare automaticamente il modello di corrispondenza e la regola di conversione corrispondenti. In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per informazioni dettagliate, vedere [Create or Modify a Translation Rule Manually](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually).
+Seguire questa procedura se si desidera definire una regola di  conversione immettendo un set di valori nello strumento Crea regola di conversione e abilitando il Pannello di controllo di Skype for Business Server per generare automaticamente il modello di corrispondenza e la regola di conversione corrispondenti. In alternativa, è possibile scrivere manualmente un'espressione regolare per definire il formato e la regola di conversione corrispondenti. Per informazioni dettagliate, vedere [Create or Modify a Translation Rule Manually](/previous-versions/office/lync-server-2013/lync-server-2013-create-or-modify-a-translation-rule-manually).
 
 ### <a name="to-define-a-rule-by-using-the-build-a-translation-rule-tool"></a>Per definire una regola tramite lo strumento Crea regola di conversione
 
-1. Aprire Skype for Business Server Pannello di controllo.
+1. Apri Skype for Business Server Pannello di controllo.
 
 2. Per iniziare a definire una regola di conversione, seguire i passaggi descritti in Configure a trunk with media bypass in Skype for Business Server through step 10 o Configure a trunk without media bypass in Skype for Business Server through step 9.To begin defining a translation rule, follow the steps in [Configure a trunk with media bypass in Skype for Business Server](configure-trunk-with-media-bypass.md) through step 10 or Configure a trunk without media bypass in [Skype for Business Server](configure-trunk-without-media-bypass.md) through step 9.
 

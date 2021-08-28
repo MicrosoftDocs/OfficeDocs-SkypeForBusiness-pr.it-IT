@@ -10,15 +10,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e5862480-95f8-4d76-a2b5-940cd995e93c
 description: "Riepilogo: leggere questo argomento per informazioni su come creare criteri utente iniziali per il server Chat persistente in Skype for Business Server 2015. I criteri utente di Persistent Chat determinano se agli utenti è consentito o meno l'accesso alle chat room."
-ms.openlocfilehash: fc0033eee8886ddccbe00ff3b3a7014a22eca2a9d19359c18cea46b9c9bdf6af
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0cf0bb4f241e6186dcf63c3678e36e11e65b0956
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54283618"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624398"
 ---
 # <a name="configure-persistent-chat-user-policies-in-skype-for-business-server-2015"></a>Configurare i criteri utente di Persistent Chat in Skype for Business Server 2015
  
@@ -37,7 +37,7 @@ In questa sezione sono contenute le seguenti sezioni:
 - Applicare un criterio a un utente o a un gruppo di utenti
     
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
 
 ## <a name="configure-the-global-policy"></a>Configurare il criterio globale
 
@@ -87,7 +87,7 @@ Per ogni sito distribuito, è possibile creare criteri di Persistent Chat specif
     
 ## <a name="create-a-user-policy"></a>Creare criteri utente
 
-È possibile creare criteri specifici dell'utente che sostituiscono i criteri globali e gli eventuali criteri del sito a cui appartiene l'utente. Per creare un criterio utente:
+È possibile creare criteri specifici dell'utente che sostituiscono i criteri globali e gli eventuali criteri sito a cui appartiene l'utente. Per creare un criterio utente:
   
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator, CsAdministrator o CsUserAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     

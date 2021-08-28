@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: "In generale, viene eseguita la migrazione della Rubrica insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi successivi alla migrazione se nell'ambiente legacy sono stati personalizzati i passaggi seguenti:"
-ms.openlocfilehash: 19ff3b0ca389832cfb2b1739aeb85738c30238576143d3542388fd1ef97a6498
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: "In generale, viene eseguita la migrazione della Rubrica insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi successivi alla migrazione se nell'ambiente legacy sono stati personalizzati gli elementi seguenti:"
+ms.openlocfilehash: 0ef965ef67393604e257049681a64ffb3c5b8fb1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306219"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599721"
 ---
 # <a name="migrate-address-book"></a>Eseguire la migrazione della rubrica
 
-In generale, viene eseguita la migrazione della Rubrica insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi successivi alla migrazione se nell'ambiente legacy sono stati personalizzati i passaggi seguenti: 
+In generale, viene eseguita la migrazione della Rubrica insieme al resto della topologia. Tuttavia, potrebbe essere necessario eseguire alcuni passaggi successivi alla migrazione se nell'ambiente legacy sono stati personalizzati gli elementi seguenti: 
 
 - Personalizzazione delle regole di normalizzazione della Rubrica.
 
@@ -29,7 +29,7 @@ In generale, viene eseguita la migrazione della Rubrica insieme al resto della t
 
  **Regole di normalizzazione della Rubrica**
 
-Se le regole di normalizzazione della Rubrica sono personalizzate nell'ambiente legacy, è necessario eseguire la migrazione delle regole personalizzate nel pool pilota. Se non è stata personalizzata alcuna regola di normalizzazione della Rubrica, non sarà necessario effettuare alcuna migrazione per il servizio Rubrica. Le regole di normalizzazione predefinite per Skype for Business Server 2019 sono le stesse delle regole predefinite per l'installazione legacy. Eseguire la procedura descritta più avanti in questa sezione per eseguire la migrazione delle regole di normalizzazione personalizzate.
+Se le regole di normalizzazione della Rubrica sono personalizzate nell'ambiente legacy, è necessario eseguire la migrazione delle regole personalizzate nel pool pilota. Se non è stata personalizzata alcuna regola di normalizzazione della Rubrica, non sarà necessario effettuare alcuna migrazione per il servizio Rubrica. Le regole di normalizzazione predefinite per Skype for Business Server 2019 sono le stesse per l'installazione legacy. Eseguire la procedura descritta più avanti in questa sezione per eseguire la migrazione delle regole di normalizzazione personalizzate.
 
 > [!NOTE]
 > Se nell'organizzazione viene utilizzato il controllo delle chiamate remote e le regole di normalizzazione della Rubrica sono state personalizzate, prima di utilizzare il controllo delle chiamate remote è necessario eseguire la procedura descritta in questo argomento. L'esecuzione della procedura richiede l'appartenenza al gruppo RTCUniversalServerAdmins o diritti equivalenti. 
@@ -63,7 +63,7 @@ Se si imposta il valore di **UseNormalizationRules** su False in modo che gli ut
 
 ## <a name="to-set-usenormalizationrules-and-ignoregenericrules-to-true"></a>Per impostare UseNormalizationRules e IgnoreGenericRules su True
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic **su Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic su **Skype for Business Server Management Shell.**
 
 2. Eseguire una delle operazioni seguenti:
 

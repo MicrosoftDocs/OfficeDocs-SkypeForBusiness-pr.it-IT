@@ -15,19 +15,19 @@ audience: Admin
 appliesto:
 - Skype for Business Online
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sul numero Microsoft 365 e Office 365 l'ID chiamante predefinito (il numero di telefono assegnato dall'utente), noto anche come ID linea chiamante. È possibile modificare o bloccare l'ID chiamante di un utente.
-ms.openlocfilehash: ea3d9676caf0984c19137abe286f792aacfcceca393fd4ccfeff9117edef9011
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9a69cf864cbf57d7ebf82ae079f88a888d3fc9f0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54275952"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58613585"
 ---
 # <a name="set-the-caller-id-for-a-user"></a>Impostare l'ID chiamante per un utente
 
@@ -35,7 +35,7 @@ Sistema telefonico in Microsoft 365 fornisce un ID chiamante predefinito che è 
   
 Per impostazione predefinita, le impostazioni dell'ID chiamante seguenti **sono disattivate.** Questo significa che il Teams di telefono dell'utente può essere visualizzato quando l'utente effettua una chiamata a un telefono PSTN. È possibile modificare queste impostazioni nel modo seguente:
   
-- **ID chiamante in uscita** È possibile sostituire l'ID chiamante di un utente, che per impostazione predefinita è il numero di telefono, con un altro numero di telefono. Ad esempio, è possibile modificare l'ID chiamante dell'utente dal suo numero di telefono a un numero di telefono principale per l'azienda o a un numero di telefono principale per il reparto legale. Inoltre, è possibile impostare il numero ID chiamata su qualsiasi numero di servizio online (a pagamento o numero verde) o su un numero di telefono locale tramite Instradamento diretto assegnato a un account della risorsa usato da un Operatore automatico o da una coda di chiamata.
+- **ID chiamante in uscita** È possibile sostituire l'ID chiamante di un utente, che per impostazione predefinita è il numero di telefono, con un altro numero di telefono. Ad esempio, è possibile modificare l'ID chiamante dell'utente dal suo numero di telefono a un numero di telefono principale per l'azienda o a un numero di telefono principale per il reparto legale. Inoltre, è possibile impostare il numero ID chiamante su qualsiasi numero di servizio online (a pagamento o numero verde) o su un numero di telefono locale tramite Instradamento diretto assegnato a un account della risorsa usato da un Operatore automatico o da una coda di chiamata.
     
   > [!NOTE]
   > Se si vuole usare il parametro *Service,* è necessario specificare un numero di servizio valido.
@@ -131,7 +131,7 @@ Per rimuovere un criterio da un utente, esegui:
 ```PowerShell
 Grant-CsCallingLineIdentity -Identity "amos.marble@contoso.com" -PolicyName $null
 ```
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire i Microsoft 365 con un unico punto di amministrazione che semplifica il lavoro quotidiano. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

@@ -9,21 +9,21 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 70d2151e-9382-485d-ab14-758597571a74
 description: 'Riepilogo: informazioni su come pianificare la messaggistica istantanea e la presenza in Skype for Business Server.'
-ms.openlocfilehash: c58cfbfdc7fbfbdff01b1a122ad5cd94ee6a991ab90b52bf86bb62894e4b72a5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8498526c97794dce29d791318b025321e932081b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284636"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599891"
 ---
 # <a name="plan-for-instant-messaging-and-presence-in-skype-for-business-server"></a>Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come pianificare la messaggistica istantanea e la presenza in Skype for Business Server.
   
-Pianificare la messaggistica istantanea e la presenza in Skype for Business Server. Per informazioni su opzioni di distribuzione specifiche, ad esempio l'abilitazione o la disabilitazione della messaggistica istantanea offline, vedere [Deploy instant messaging and presence in Skype for Business Server](../deploy/im-and-presence/im-and-presence.md).
+Pianificare la messaggistica istantanea e la presenza in Skype for Business Server. Per informazioni sulle opzioni di distribuzione specifiche, ad esempio l'abilitazione o la disabilitazione della messaggistica istantanea offline, vedere [Deploy instant messaging and presence in Skype for Business Server](../deploy/im-and-presence/im-and-presence.md).
   
 ## <a name="plan-for-instant-messaging-and-presence-in-skype-for-business-server"></a>Pianificare la messaggistica istantanea e la presenza in Skype for Business Server
 
@@ -31,7 +31,7 @@ I Front End Server forniscono funzionalità di Skype for Business Server quali l
   
 La messaggistica istantanea consente agli utenti di comunicare tra loro in tempo reale mediante i loro computer con messaggi di testo. Sono supportate le sessioni di messaggistica istantanea sia tra due che tra più parti. Un partecipante a una conversazione di messaggistica istantanea tra due parti può aggiungere un terzo partecipante in qualsiasi momento. In tal caso, la finestra relativa alla conversazione cambia in modo da supportare le funzionalità di conferenza.
   
-La presenza fornisce agli utenti informazioni sullo stato di altri utenti nella rete. Lo stato di presenza di un utente fornisce informazioni che consentono agli altri utenti di decidere se tentare di contattare l'utente e se utilizzare la messaggistica istantanea, il telefono o la posta elettronica. La presenza induce a scegliere la comunicazione istantanea ma, segnalando anche se un utente è in riunione o fuori ufficio, consente di capire quando la comunicazione istantanea non può essere utilizzata. Questo stato di presenza viene visualizzato come icona di presenza in Skype for Business e in altre applicazioni in grado di riconoscere la presenza, tra cui il client di messaggistica e collaborazione di Microsoft Outlook, le tecnologie Microsoft SharePoint e Microsoft Office. L'icona di presenza rappresenta la disponibilità e la disponibilità correnti dell'utente a comunicare. 
+La presenza fornisce agli utenti informazioni sullo stato di altri utenti nella rete. Lo stato di presenza di un utente fornisce informazioni per aiutare gli altri a decidere se tentare di contattare l'utente e se usare la messaggistica istantanea, il telefono o la posta elettronica. La presenza induce a scegliere la comunicazione istantanea ma, segnalando anche se un utente è in riunione o fuori ufficio, consente di capire quando la comunicazione istantanea non può essere utilizzata. Questo stato di presenza viene visualizzato come icona di presenza in Skype for Business e in altre applicazioni in grado di riconoscere la presenza, tra cui il client di messaggistica e collaborazione di Microsoft Outlook, le tecnologie Microsoft SharePoint e Microsoft Office. L'icona di presenza rappresenta la disponibilità e la disponibilità correnti dell'utente a comunicare. 
   
 ### <a name="technical-requirements"></a>Requisiti tecnici
 
@@ -56,7 +56,7 @@ La messaggistica istantanea e la presenza vengono sempre eseguite edizione Enter
 > [!NOTE]
 > Il protocollo XMPP (Extensible Messaging and Presence Protocol) è supportato solo per gli scenari di certificazione JITC (Joint Interoperability Test Command) UCCP (Unified Capabilities Collaboration Platform). 
   
-### <a name="archiving-im-content"></a>Archiviazione del contenuto della messaggistica istantanea
+### <a name="archiving-im-content"></a>Archiviazione del contenuto di messaggistica istantanea
 
 Skype for Business Server offre funzionalità che è possibile utilizzare se l'organizzazione deve rispettare le normative di conformità. È possibile utilizzare l'archiviazione per archiviare il contenuto dei messaggi istantanei per tutti gli utenti dell'organizzazione o solo per determinati utenti specificati. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](archiving/archiving.md). 
   

@@ -15,19 +15,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
-description: Gli organizzatori della riunione possono imparare a effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i loro telefoni.
-ms.openlocfilehash: 95370afe0c9c0a4d03f8296ada4f7438e2abc4e6a746a5d21d63f3ee9551ee08
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Gli organizzatori della riunione possono imparare a effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i telefoni.
+ms.openlocfilehash: db6d900a5892753eee60c3a150579cffb4dbd258
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282699"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623318"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Microsoft Teams in modo che altre persone possano parteciparvi
 
@@ -57,7 +57,7 @@ Dial-out is only available to some countries/regions. Per l'elenco completo, ved
 
 ## <a name="allow-users-to-dial-in"></a>Consenti agli utenti di effettuare l'accesso
 
-Per istruzioni su come consentire agli utenti di accedere a una riunione di Teams, vedere i numeri Telefono per le audioconferenze [in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md).
+Se si cercano istruzioni su come consentire agli utenti di accedere a una riunione Teams, vedere i numeri Telefono per le audioconferenze [in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md).
 
 ## <a name="want-to-know-more-about-audio-conferencing"></a>Per saperne di più sui servizi di conferenza telefonica con accesso esterno
 

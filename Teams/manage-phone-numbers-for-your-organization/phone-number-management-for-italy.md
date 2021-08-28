@@ -13,18 +13,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 description: Usa questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Italia per Microsoft Teams.
-ms.openlocfilehash: 05f25f7cc4de7438d02c4b5a5ff8c353eb379e92
-ms.sourcegitcommit: 7251b92c9913ca1e43b3cc24fad73e8997303731
+ms.openlocfilehash: d98347f98fc6251be0e1586ad3649d517c636686
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58348278"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599731"
 ---
 # <a name="phone-number-management-for-italy"></a>Gestione dei numeri di telefono per l'Italia
 

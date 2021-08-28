@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 142abc98-608d-40c7-ab4d-66acc010426b
 description: "Riepilogo: come installare e testare l'app Skype for Business per iOS."
-ms.openlocfilehash: 28f91bccd32421c2442bfedb12eb5181311ed0ed990ebf4f3174898ddefff610
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ff2e2789f733a77ab0d332225a85aca33eb69bc1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332018"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623018"
 ---
 # <a name="install-and-test-skype-for-business-for-ios"></a>Installare e testare Skype for Business per iOS
  
@@ -35,7 +35,7 @@ L Skype for Business app per iOS consente Skype for Business presenza, messaggis
     
 ## <a name="verifying-mobile-client-installation"></a>Verifica dell'installazione del client per dispositivi mobili
 
-Dopo aver eseguito correttamente l'accesso, usa i test seguenti per verificare che l'Skype for Business di installazione funzioni correttamente nel dispositivo iOS. 
+Dopo aver eseguito correttamente l'accesso, usa i test seguenti per verificare che l Skype for Business installazione funzioni correttamente nel dispositivo iOS. 
   
 ### <a name="search-for-a-contact-in-the-corporate-directory"></a>Cercare un contatto nella directory aziendale
 
@@ -61,7 +61,7 @@ Dopo aver eseguito correttamente l'accesso, usa i test seguenti per verificare c
     
 ### <a name="test-push-notifications"></a>Verificare le notifiche push
 
-1. Nel dispositivo mobile dell'utente A, accedere a Skype for Business con l'account dell'utente A. 
+1. Nel dispositivo mobile dell'utente A, accedi a Skype for Business con l'account dell'utente A. 
     
 2. Aprire un'altra applicazione nel dispositivo mobile. 
     

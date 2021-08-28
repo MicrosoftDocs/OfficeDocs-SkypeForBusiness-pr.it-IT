@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ebd2f120-b57a-4c94-9509-20e098f4b0f4
 ROBOTS: NOINDEX, NOFOLLOW
 description: Un criterio di conferenza definisce le funzionalità e le funzionalità che gli utenti hanno a disposizione durante una conferenza (nota anche come riunione).
-ms.openlocfilehash: af3769f1a5dd7b1025ea7add7fc8b83ae956a56f7ebc490cc7370e24cf0707e1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f06ae9e2a23e83ec00fa77acf46d30a0b78fbeab
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314872"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624358"
 ---
 # <a name="conferencing-policy-create-new-or-edit-existing"></a>Criteri conferenza: crearne di nuovi o modificare quelli esistenti
 
@@ -47,7 +47,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Consentire ai partecipanti di invitare utenti anonimi** Selezionare questa casella di controllo per consentire agli utenti di invitare utenti anonimi alle conferenze. Gli utenti anonimi sono utenti che non dispongono di credenziali in Servizi di dominio Active Directory dell'organizzazione e che pertanto non sono autenticati.
 
-- **Registrazione** Specificare se i partecipanti possono registrare o meno le conferenze. Le opzioni sono **Nessuno** o **Abilita registrazione**.
+- **Registrazione** Specificare se i partecipanti possono registrare le conferenze. Le opzioni sono **Nessuno** o **Abilita registrazione**.
 
 - **Consentire ai partecipanti federati e anonimi di registrare** Selezionare questa casella di controllo per consentire ai partecipanti esterni e non autenticati di registrare le conferenze.
 
@@ -63,7 +63,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Consentire ai partecipanti anonimi di effettuare chiamate in uscita** Selezionare questa casella di controllo se si consente agli utenti di accedere alle conferenze e si desidera consentire agli utenti non autenticati (anonimi) di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
 
-- **Consenti ai partecipanti non abilitati VoIP aziendale chiamate in uscita** Se è stato abilitato l'audio in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti non abilitati per VoIP aziendale di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
+- **Consentire ai partecipanti non abilitati VoIP aziendale chiamate in uscita** Se è stato abilitato l'audio in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti non abilitati per VoIP aziendale di partecipare a una conferenza tramite chiamate in uscita. Con le chiamate in uscita, il server per conferenze chiama l'utente, il quale accede alla conferenza rispondendo al telefono.
 
 - **Consentire più flussi video** Se è stato abilitato il video in **Audio/video,** selezionare questa casella di controllo per consentire agli utenti di organizzare conferenze con video visualizzazione Raccolta. Quando questa casella di controllo è selezionata, questa impostazione consente agli utenti di organizzare conferenze che inviano più flussi video. Quando questa casella di controllo non è selezionata, gli utenti possono organizzare solo conferenze che inviano un singolo flusso video.
 

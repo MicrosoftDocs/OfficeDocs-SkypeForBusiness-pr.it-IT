@@ -14,18 +14,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Irlanda per Microsoft Teams.
-ms.openlocfilehash: 76524c7ea2e064753186efb30a42e92684ad052d
-ms.sourcegitcommit: b17e5acadcca0261eaccc64e1b4ee457348f975c
+ms.openlocfilehash: 428df08a1427bc0b2948fb353e6f030b32742f96
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365643"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623268"
 ---
 # <a name="phone-number-management-for-ireland"></a>Gestione dei numeri di telefono per l’Irlanda
 
@@ -35,7 +35,7 @@ Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propri
   
 |**Cosa vuoi fare?**|**Scarica i moduli corretti**|
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams. <br/> |In Irlanda non è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. Devi inviare una richiesta di nuovo numero di telefono. <br/><br/>Scarica questo modulo.<br/>[Nuova richiesta di numero di telefono per l'Irlanda (v.5.0) (en-us)](https://download.microsoft.com/download/9/e/5/9e5634d7-ce23-489f-b867-6f5120645fb1/new-phone-number-request-for-ireland-(v.5.0)-(en-us).pdf). <br/><br/> Compilarlo e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams. <br/> |In Irlanda, non è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. Devi inviare una richiesta di nuovo numero di telefono. <br/><br/>Scarica questo modulo.<br/>[Nuova richiesta di numero di telefono per l'Irlanda (v.5.0) (en-us)](https://download.microsoft.com/download/9/e/5/9e5634d7-ce23-489f-b867-6f5120645fb1/new-phone-number-request-for-ireland-(v.5.0)-(en-us).pdf). <br/><br/> Compilarlo e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)  <br/> |
 |Fai trasferire a noi i numeri di telefono.  <br/> | Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per l'Irlanda (tutti i numeri) (v.6.0) (en-us)](https://download.microsoft.com/download/d/a/f/daf4edb9-69c7-4d3d-a483-e0c4427abb50/letter-of-authorization-(loa)-for-ireland-(all-numbers)-(v.6.0)-(en-us).pdf) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/> |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) sull'elenco dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |

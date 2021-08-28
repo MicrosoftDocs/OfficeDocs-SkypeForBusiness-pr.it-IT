@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - IT_Skype16
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 4598565a-c228-4265-ad03-d2aef95b31a0
 description: Per consentire a un utente di usare Sistema telefonico (Cloud PBX), è necessario prima abilitarlo per VoIP aziendale e assegnargli un numero di telefono. A tale scopo, è possibile utilizzare la distribuzione locale mentre l'utente è ancora presente nella distribuzione locale.
-ms.openlocfilehash: aef74877d1a12d136bddc7eedc2a414dfad100830a88bb9a21695004be91d1a3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 28943670a0919d80c96c97b7574cdc82ac68cfde
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54289084"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58613695"
 ---
 # <a name="enable-the-users-for-enterprise-voice-on-premises"></a>Abilitare gli utenti per VoIP aziendale locale
  
@@ -37,9 +37,9 @@ Per consentire a un utente di usare Sistema telefonico (Cloud PBX), è necessari
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Usa il menu Start o il collegamento sul desktop per aprire il Skype for Business Server Pannello di controllo.
+2. Usa il menu Start o il desktop per aprire il Pannello Skype for Business Server pannello di controllo.
     
-    È inoltre possibile aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Skype for Business Server Di controllo.
+    È inoltre possibile aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -57,7 +57,7 @@ Per consentire a un utente di usare Sistema telefonico (Cloud PBX), è necessari
 
 In alcuni casi, potrebbe essere necessario modificare il modo in cui si abilitano gli utenti per VoIP aziendale per assicurarsi che possano effettuare e ricevere correttamente le chiamate. Se nella distribuzione sono presenti utenti che soddisfano le condizioni seguenti, eseguire i passaggi inclusi per abilitare l'utente per VoIP aziendale.
   
-- Se un utente viene creato nell'ad locale e quindi sincronizzato con Skype for Business Online senza essere abilitato per Skype for Business o per VoIP aziendale e non dispone di un set LineURI, eseguire i cmdlet seguenti per ogni utente interessato, sostituendo i valori in con i valori effettivi per \< \> l'ambiente:
+- Se un utente viene creato nell'ad locale e quindi sincronizzato con Skype for Business Online senza essere abilitato per Skype for Business o per VoIP aziendale e non dispone di un valore LineURI impostato, eseguire i cmdlet seguenti per ogni utente interessato, sostituendo i valori in con i valori effettivi per \< \> l'ambiente:
     
   ```powershell
   Enable-CsUser $username -HostingProvider sipfed.online.lync.com -SipAddress sip:<UserName>@<SIP Domain>
@@ -67,7 +67,7 @@ In alcuni casi, potrebbe essere necessario modificare il modo in cui si abilitan
   Set-CsUser $username -EnterpriseVoiceEnabled $true -LineUri "tel:+<Telephone Number>"
   ```
 
-- Se un utente è già abilitato per Skype for Business locale, ma non è stato abilitato per VoIP aziendale o ha assegnato un LineURI prima di essere spostato in Skype for Business Online, eseguire il cmdlet seguente per ogni utente:
+- Se un utente è già abilitato per Skype for Business locale, ma non è stato abilitato per VoIP aziendale o è stato assegnato un LineURI prima di essere spostato in Skype for Business Online, eseguire il cmdlet seguente per ogni utente:
     
   ```powershell
   Set-CsUser $username -EnterpriseVoiceEnabled $true -LineUri "tel:+<Telephone Number>"

@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
@@ -22,24 +22,24 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderDetailPanelWhois
 description: 'Scopri cosa fare se il tuo gestore non è elencato in Skype for Business. '
-ms.openlocfilehash: 263e8584179a523934ab76083b601854527bb995bc9f0297bf9bab34a012dd41
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c9916c38496365884e75e8777f42958c45bb0e59
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320971"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599621"
 ---
 # <a name="what-if-my-phone-carrier-isnt-listed-as-the-source-carrier"></a>Cosa succede se il gestore telefonico non è elencato come gestore di origine?
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]?
 
-È un po' confuso quando vedi che il nome del tuo gestore non è elencato. Nella maggior parte dei casi, se il provider di servizi o il gestore è diverso, è probabile che i numeri di telefono trasferiti siano di proprietà di un altro provider di servizi o gestore. In alcuni casi, il provider di servizi o il gestore elencato potrebbe essere diverso dal provider di servizi corrente perché il provider di servizi corrente potrebbe lavorare con un provider di servizi di terze parti. 
+È un po' confuso quando vedi che il nome del tuo gestore non è elencato. Nella maggior parte dei casi, se il provider di servizi o il gestore è diverso, è probabile che i numeri di telefono trasferiti siano di proprietà di un altro provider o gestore di servizi. In alcuni casi, il provider di servizi o il gestore elencato potrebbe essere diverso dal provider di servizi corrente perché il provider di servizi corrente potrebbe lavorare con un provider di servizi di terze parti. 
   
 Esempio:
   
 - Se stai portando il numero da Skype for Business come gestore, potresti vedere Level3 elencato.
     
-  **Per istruzioni dettagliate, vedere Trasferire i numeri di telefono Teams [.](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams)**
+  **Per istruzioni dettagliate, vedere Trasferire i numeri di telefono [in](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams)Teams.**
 
     > [!NOTE]
     > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: karuanag
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Valutare gli stakeholder, identificare i primi utenti e valutare se l'organizzazione è pronta per la transizione a Teams.
 f1.keywords:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e59018f458d3d88f015b10207a74ed5941b3d562a433893bdf2f2e0707b6d2a7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e2bd70c0b46d48333552a862ab26a763cfe5473d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301032"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58613565"
 ---
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>Quanto è pronta l'organizzazione per Microsoft Teams?
 
@@ -48,7 +48,7 @@ Elencare gli stakeholder principali e i responsabili aziendali dell'organizzazio
 6. Questo responsabile ha una relazione positiva con i membri chiave del team di progetto esistente?
 7. A questo leader piace essere visto come un "agente del cambiamento" all'interno dell'organizzazione?  
 
-È possibile aggiungere altre domande rilevanti per l'organizzazione. Per le due fasi iniziali (avvio e esperimento), verranno visualizzati i leader che sono disponibili per il cambiamento, un po' insoddisfatti della tecnologia corrente e con cui si ha una buona relazione. Questi responsabili devono essere inseriti nel team di progetto principale come consulenti aziendali e potrebbero avere progetti che saranno essenziali per la fase di sperimentazione. È importante selezionare situazioni reali di impatto con cui sperimentare ed evitare progetti ad alto rischio per gli esperimenti iniziali.
+È possibile aggiungere altre domande rilevanti per l'organizzazione. Per le due fasi iniziali (avvio e esperimento), verranno visualizzati i leader che sono disponibili per il cambiamento, un po' insoddisfatti della tecnologia corrente e con cui si ha una buona relazione. Questi responsabili devono essere inseriti nel team di progetto di base come consulenti aziendali e potrebbero avere progetti che saranno essenziali per la fase di sperimentazione. È importante selezionare situazioni reali di impatto con cui sperimentare ed evitare progetti ad alto rischio per gli esperimenti iniziali.
    
 > [!NOTE]
 > Anche se è possibile assegnare un punteggio a questo tipo di questionario che ridurrebbe al minimo l'impatto dell'elemento umano delle relazioni all'interno dell'organizzazione, il cambiamento dipende dalla chimica del team tanto quanto dalle loro competenze tecniche o dal loro acume aziendale. Esaminare l'elenco con i membri del team per discutere della "forma" dei vari responsabili con questo progetto mentre si selezionano i progetti e il personale per le fasi successive. 
@@ -64,7 +64,7 @@ I primi utenti condividono determinati tratti, indipendentemente dalle dimension
 - Disposti a condividere le loro osservazioni e le loro apprendimenti con il gruppo
 - Sono persone a rischio; in altri, sono disposti a provare qualcosa per vedere se funziona
 
-Usare una forma semplice in Microsoft 365 o Office 365 per consentire a questi utenti di acconsentire esplicitamente al programma di adozione iniziale per Teams. A seconda delle dimensioni e della complessità dell'organizzazione, è possibile scegliere di abilitare alcuni o tutti questi utenti per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di fornire regolarmente feedback al team di progetto. Evitare di avere persone che vogliono semplicemente testare le nuove tecnologie. Fagli sapere che, fornendo questo feedback attivo, contribuisce a creare il risultato del progetto. Si userà questo elenco di persone nella [Fase 2 - esperimento.](teams-adoption-phase2-experiment.md)
+Usare un modulo semplice in Microsoft 365 o Office 365 per consentire a questi utenti di acconsentire esplicitamente al programma di Teams. A seconda delle dimensioni e della complessità dell'organizzazione, è possibile scegliere di abilitare alcuni o tutti questi utenti per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di fornire regolarmente feedback al team di progetto. Evitare di avere persone che vogliono semplicemente testare le nuove tecnologie. Fagli sapere che, fornendo questo feedback attivo, contribuisce a creare il risultato del progetto. Si userà questo elenco di persone nella [fase 2 - esperimento.](teams-adoption-phase2-experiment.md)
 
 La nostra Guida al programma Early Adopter è una risorsa utile per dare il via a questo programma nel tuo ambiente.  
  
@@ -77,7 +77,7 @@ Il cambiamento è un processo umano che non ha nulla a che fare con la tecnologi
 Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area geografica, dello stile di lavoro, del profilo professionale e di altri elementi dell'organizzazione. Per valutare la conformità dell'organizzazione, vedere Valutare la conformità [alle modifiche dell'organizzazione.](upgrade-org-change-readiness.md) Usare le linee guida per rispondere alle domande seguenti:
 
 1. Quale percentuale di utenti rientra in ogni contenitore? (*Resistenza alla modifica*)
-    - **Early adopters**: richiedere la soluzione prima che sia disponibile.
+    - **Early adopters:** richiedere la soluzione prima che sia disponibile.
     - **Utenti informati:** usare la soluzione una volta dimostrato il suo valore.
     - **Dissidenti:** consente di tornare indietro su qualsiasi modifica.
     
@@ -90,7 +90,7 @@ Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area g
     - **Gli studenti uno-a-uno** richiedono il supporto personale.
 
     > [!TIP]
-    > Personalizzare il tipo e l'importo della formazione in base alle competenze e alle persone. Mantenete aggiornati i corsi di formazione man appena vengono online le nuove funzionalità.
+    > Personalizzare il tipo e l'importo della formazione in base alle competenze e alle persone. Mantenete aggiornati i corsi di formazione non appena verranno online le nuove funzionalità.
 
 3. Oltre a questa distribuzione del servizio, quante altre modifiche sono in corso? (*Adattabilità*) <br/>Le modifiche potrebbero includere Office/Windows, spostamenti in ufficio, fusioni, rielivi e così via.
     - Nessuno
@@ -102,6 +102,6 @@ Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area g
 
 Combinare questi dati con i profili degli stakeholder e i dipendenti che vogliono acconsentire esplicitamente al programma early adopter. In questo modo sarà possibile identificare i gruppi pronti e in grado di assorbire il cambiamento insieme ai compiti esistenti. Questo metodo consente di creare partner nella modifica.
 
-È possibile usare campioni interni per risolvere il problema della presenza di tipi di modifica diversi. In questo caso, il feedback è la chiave per il successo: incoraggiare le persone a condividere le proprie sfide e le proprie esigenze. Abbracciare dissidenti e dissidenti offrendo a questi individui o gruppi un posto a tavola durante la sperimentazione. Questa procedura consigliata aprirà la strada a una distribuzione più fluida e ampia dei miglioramenti alla collaborazione.  
+È possibile usare campioni interni per risolvere il problema della presenza di tipi di modifica diversi. In questo caso, il feedback è la chiave per il successo: incoraggiare le persone a condividere le proprie sfide e le proprie esigenze. Abbracciare dissidenti e dissidenti dando a questi individui o gruppi un posto a tavola durante la sperimentazione. Questa procedura consigliata aprirà la strada a una distribuzione più fluida e ampia dei miglioramenti alla collaborazione.  
 
 ![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: Microsoft Teams [fase di adozione 2: Esperimento](teams-adoption-phase2-experiment.md) 

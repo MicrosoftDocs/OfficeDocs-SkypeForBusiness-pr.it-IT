@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Informazioni su come pianificare l'aggiornamento coinvolgendo gli stakeholder e quindi l'ambito del progetto.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,18 +20,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 186f7f2e3e4d6c07714925162b7aa492873824dd30bef23f4f64c68273b60c15
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 33b6e23a5259c81612a392b6befd7b7e6d256287
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323738"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623158"
 ---
 # <a name="plan-for-your-upgrade"></a>Pianificare l'aggiornamento
 
 ![Diagramma del percorso di Teams di aggiornamento](media/upgrade-banner-main.png "Assicurarsi che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare la conformità tecnica e dell'utente. Eseguire il piano di implementazione. Mantenere lo stato di forza per massimizzare i risultati.")
 
-Un ambiente tecnico sano, un'adozione sostenuta degli utenti e la realizzazione degli obiettivi aziendali iniziano tutti con una pianificazione appropriata. Un piano solido offre un framework per il progetto di aggiornamento e assicura che tutti gli stakeholder lavorino verso gli stessi obiettivi. Con il tempo necessario per definire correttamente il successo, è possibile misurare i risultati durante l'avanzamento della distribuzione e verificare che si stanno ottenendo i risultati desiderati. La pianificazione del viaggio include:
+Un ambiente tecnico sano, un'adozione sostenuta degli utenti e la realizzazione degli obiettivi aziendali iniziano tutti con una pianificazione appropriata. Un piano solido offre una struttura per il progetto di aggiornamento e assicura che tutti gli stakeholder lavorino verso gli stessi obiettivi. Con il tempo necessario per definire correttamente il successo, è possibile misurare i risultati durante l'avanzamento della distribuzione e verificare che si stanno ottenendo i risultati desiderati. La pianificazione del viaggio include:
 
 - [Integrare gli stakeholder del progetto](upgrade-enlist-stakeholders.md)
 - [Definizione dell'ambito del progetto](./upgrade-define-project-scope.md)

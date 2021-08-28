@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -15,17 +15,17 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Informazioni su ciò che è necessario per eseguire la migrazione a Routing diretto da un punto di vista Skype for Business online e Teams configurazione.
-ms.openlocfilehash: bcc31554428c847fc9eb3c45804be42e850b30f943fadcc3ef6e245d07c9d4fb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su cosa è necessario eseguire la migrazione a Routing diretto da un punto di vista Skype for Business online e Teams configurazione.
+ms.openlocfilehash: 71776c18dc6ec802c19f9dfc94c51b2b714bc210
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302001"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599751"
 ---
 # <a name="migrate-to-direct-routing"></a>Eseguire la migrazione a Instradamento diretto
 
-Questo articolo descrive cosa è necessario per eseguire la migrazione a Routing diretto da una prospettiva Skype for Business online e Microsoft Teams configurazione. Questo articolo illustra la migrazione da quanto segue: 
+Questo articolo descrive cosa è necessario per eseguire la migrazione a Routing diretto da un punto di vista Skype for Business online e Microsoft Teams configurazione. Questo articolo illustra la migrazione da quanto segue: 
  
 - Sistema telefonico piani per chiamate (per Teams e Skype for Business Online) 
 - Sistema telefonico connettività PSTN locale in Skype for Business Server (per Skype for Business Online)  
@@ -38,7 +38,7 @@ Oltre a questi passaggi di configurazione, è necessaria anche la configurazione
 
 La tabella seguente mostra lo stato finale per un utente di cui è stato eseguito il provisioning per le opzioni di connettività PSTN selezionate con Sistema telefonico. Vengono visualizzati solo gli attributi pertinenti per la voce.
 
-|Attributi degli oggetti utente |Phone System e Piani di Chiamata|Sistema telefonico connettività PSTN locale tramite Skype for Business Server|Sistema telefonico connettività PSTN locale tramite Cloud Connector|Sistema telefonico connettività PSTN locale tramite routing diretto|
+|Attributi degli oggetti utente |Phone System e Piani di Chiamata|Sistema telefonico connettività PSTN locale tramite Skype for Business Server|Sistema telefonico con connettività PSTN locale tramite Cloud Connector|Sistema telefonico con connettività PSTN locale tramite routing diretto|
 |---|---|---|---|---|
 |Client|Skype for Business o Teams |Skype for Business |Skype for Business |Teams|
 |Licenze|Skype Business Online</br>Piano 2</br></br>MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)</br></br></br>Piani di chiamata</br>Teams|Skype Business Online Piano 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype Business Online Piano 2 (MCOProfessional o MCOSTANDARD)</br></br></br>Sistema telefonico (MCOEV)|Skype Business Online Piano 2 (MCOProfessional o MCOSTANDARD</br></br></br>Sistema telefonico (MCOEV)</br></br>Teams|
@@ -99,7 +99,7 @@ Grant-CsVoiceRoutingPolicy -PolicyName $NULL -Identity <UPN>
 > [!Important]
 > Cloud Connector Edition andrà in ritiro il 31 luglio 2021 insieme a Skype for Business Online. Dopo che l'organizzazione ha eseguito l'aggiornamento a Teams, vedere come connettere la rete di telefonia locale a Teams tramite [Routing diretto.](direct-routing-landing-page.md)
 
-Per altre informazioni sulla migrazione da Sistema telefonico con connettività PSTN locale tramite Cloud Connector, vedere quanto segue:
+Per altre informazioni sulla migrazione da Sistema telefonico con la connettività PSTN locale tramite Cloud Connector, vedere quanto segue:
 
 - [Pianificazione](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-skype-for-business-cloud-connector-edition)  
 - [Distribuzione](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/enable-users-for-phone-system)
@@ -115,7 +115,7 @@ Set-CsUserPstnSettings -Identity <UPN> -AllowInternationalCalls $false -HybridPS
 
 ## <a name="related-links"></a>Collegamenti correlati
 
-[Indicazioni sulla migrazione e l'interoperabilità per le organizzazioni che usano Teams insieme a Skype for Business](migration-interop-guidance-for-teams-with-skype.md)
+[Indicazioni sulla migrazione e l'interoperabilità per le organizzazioni che usano Teams con Skype for Business](migration-interop-guidance-for-teams-with-skype.md)
 
 [Grant-CsTeamsUpgradePolicy](/powershell/module/skype/grant-csteamsupgradepolicy)
 

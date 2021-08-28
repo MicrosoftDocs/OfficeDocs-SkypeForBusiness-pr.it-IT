@@ -13,28 +13,28 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - PowerShell
 description: Usare Windows PowerShell e i cmdlet Get-CsTenant e Get-CsTenantLicensingConfiguration per ottenere informazioni sul tenant di Skype for Business Online.
-ms.openlocfilehash: 733d7e30bc25f15bcf05c2746ef1eb2cb8aa5cfd8e7e780356c4a972ef97a183
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e45f1bdd2c14aea34e07183dde86031a8c503476
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54298746"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623088"
 ---
 # <a name="manage-skype-for-business-online-organizations"></a>Gestire Skype for Business online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 > [!NOTE]
-> L'ultima Teams di anteprima pubblica di [PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) è integrata con Skype for Business Online Connector, che fornisce un singolo modulo per la gestione Teams PowerShell.
+> La versione Teams anteprima pubblica di [PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) più recente è integrata con Skype for Business Online Connector, che fornisce un singolo modulo per la gestione Teams PowerShell.
 
 Per trovare informazioni sul tenant di Skype for Business Online, usare i cmdlet **Get-CsTenant** e **Get-CsTenantLicensingConfiguration.**
   
-## <a name="manage-skype-for-business-online-tenants"></a>Gestire Skype for Business tenant online
+## <a name="manage-skype-for-business-online-tenants"></a>Gestire i tenant Skype for Business Online
 
 Per restituire informazioni sul tenant Skype for Business Online, chiamare il cmdlet [Get-CsTenant](/powershell/module/skype/Get-CsTenant) senza parametri aggiuntivi.
   

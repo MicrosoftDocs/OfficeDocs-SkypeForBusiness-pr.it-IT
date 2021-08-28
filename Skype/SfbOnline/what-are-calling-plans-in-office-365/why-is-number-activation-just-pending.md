@@ -14,26 +14,26 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 - ms.lync.lac.NumberActivationStatePending
-description: La convalida dell'indirizzo è una parte importante della configurazione dei piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 8e80d272c08aada8020ab39caab0290ef45199f00663c73b1c269318e9b3518b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: 62558171dc8f6fb93d140995d3ce7cff56227519
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54330590"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599571"
 ---
 # <a name="why-is-number-activation-just-pending"></a>Perché l'attivazione dei numeri è in sospeso?
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]?
 
-La convalida dell'indirizzo è una parte importante della configurazione dei piani per chiamate. Se per qualche motivo un numero di telefono  non è attivato ed è elencato come in sospeso a causa della convalida dell'indirizzo, sarà necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Se per qualche motivo un numero di telefono  non è attivato ed è elencato come in sospeso a causa della convalida dell'indirizzo, sarà necessario creare e inviare una richiesta di servizio. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
   
 ## <a name="for-organizations-150-or-less-follow-these-steps"></a>Per le organizzazioni da 150 persone o meno segui questi passaggi
 1. Nell'interfaccia di amministrazione scegliere **Serve aiuto?**
@@ -71,7 +71,7 @@ La convalida dell'indirizzo è una parte importante della configurazione dei pia
       - Paese o area geografica
     
      > [!IMPORTANT]
-     > **Inserisci il paese/area geografica in cui offriamo Piani per chiamate in cui stai cercando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
+     > **Inserisci il paese/area geografica in cui offriamo piani per chiamate in cui stai cercando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
   
       - Codice postale
     
@@ -96,7 +96,7 @@ La convalida dell'indirizzo è una parte importante della configurazione dei pia
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
-> Il numero di riferimento verrà elencato nella pagina **Richieste di** servizio nel interfaccia di amministrazione di Microsoft 365.
+> Il numero di riferimento verrà elencato nella pagina **Richieste di** assistenza nella interfaccia di amministrazione di Microsoft 365.
 
 
 > [!NOTE]
