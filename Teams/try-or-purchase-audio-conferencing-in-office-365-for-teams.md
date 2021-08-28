@@ -16,7 +16,7 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -24,12 +24,12 @@ ms.custom:
 - ms.lync.lac.CpcGettingStarted
 - seo-marvel-mar2020
 description: "Scopri come provare o acquistare licenze di audioconferenza per Microsoft 365 o Office 365 per configurare le conferenze telefoniche a cui gli utenti possono effettuare l'accesso. "
-ms.openlocfilehash: bcf67443b395e5951d9499124d360061c4ea9a21c130eef5e9efe4187caa7088
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: af031e26cceb920811c3b4f349fda44fd7e3a387
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323768"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611535"
 ---
 # <a name="try-or-purchase-audio-conferencing-in-microsoft-365-for-microsoft-teams"></a>Provare o acquistare audioconferenze in Microsoft 365 per Microsoft Teams
 
@@ -61,7 +61,7 @@ Per eseguire questa [procedura, è](https://support.office.com/article/da585eea-
 
 Se si è un cliente di licenze a volume, è possibile ottenere le licenze di Audioconferenza con tariffa al minuto. Per ulteriori informazioni sulle licenze di Audioconferenza con tariffa al minuto, consulta [Audioconferenza con tariffa al minuto](audio-conferencing-pay-per-minute.md).
   
-1. Scopri se le **audioconferenze** sono disponibili nel tuo paese/area geografica. [Disponibilità di paesi e aree geografica per audioconferenze e piani per chiamate](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md).
+1. Scopri se le **audioconferenze** sono disponibili nel tuo paese/area geografica. [Disponibilità di paesi e aree geografica per audioconferenze e piani per chiamate.](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
 
 2. Ottenere le licenze di **Audioconferenza**. Per acquistare le licenze di tariffa al minuto, contattare il proprio rappresentante dell'account.
 

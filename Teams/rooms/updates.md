@@ -9,18 +9,18 @@ ms.topic: article
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 ms.assetid: ''
 description: Gli amministratori possono informazioni su come gestire gli aggiornamenti Windows e Windows delle funzionalità per Microsoft Teams Rooms.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 67144ff29077a3dec6be79b9b68efb1162d31a9069b3436b29f9ac50a4857914
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 28f5d9def3a5217d1d34343e27cbaddb6a3433b9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54275962"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602121"
 ---
 # <a name="manage-windows-updates"></a>Gestire Windows aggiornamenti
 
@@ -37,7 +37,7 @@ Windows Gli aggiornamenti possono essere gestiti come descritto nelle sezioni se
 
 ## <a name="windows-updates-for-business-gpo-or-intune"></a>Windows Aggiornamenti per le aziende (oggetto Criteri di gruppo o Intune)  
 
-- [Windows aggiornamenti per le aziende](/windows/deployment/update/waas-manage-updates-wufb)
+- [download Windows aggiornamenti per le](/windows/deployment/update/waas-manage-updates-wufb) aziende
 - Gli aggiornamenti vengono scaricati Windows update o WSUS, ma con ritardi configurati oltre la data di rilascio originale.
 - È possibile usare più unità organizzative o criteri filtrati per creare "anelli" di distribuzione in cui gli amministratori possono specificare quali dispositivi installare prima gli aggiornamenti qualitativi e quali installare in un secondo momento. L'affidabilità e le prestazioni possono essere testate in un sottoinsieme di sistemi prima di eseguire la distribuzione degli aggiornamenti nell'intera distribuzione senza l'overhead della gestione Windows aggiornamenti in Configuration Manager.
 - Wsus e Windows aggiornamenti per le [](/windows/deployment/update/waas-integrate-wufb) aziende possono essere configurati contemporaneamente se si vuole che la gestione della larghezza di banda e il controllo Windows aggiornamenti per le aziende.
@@ -51,8 +51,8 @@ Windows Gli aggiornamenti possono essere gestiti come descritto nelle sezioni se
 
 ### <a name="feature-updates"></a>Aggiornamenti delle funzionalità
 
-A differenza degli aggiornamenti qualitativi e non rinviabili, Windows 10 "Aggiornamenti delle funzionalità" (rilasci principali del sistema operativo) verranno installati solo dopo i test Microsoft e la convalida di una determinata funzionalità di aggiornamento con Microsoft Teams Rooms. Anche se l'aggiornamento viene rilasciato nel canale Semi-Annual (o Mirato se si hanno sistemi impostati su tale canale per i test) o inseriti manualmente, un dispositivo Microsoft Room Systems non consente l'installazione dell'aggiornamento non testato.
+A differenza degli aggiornamenti qualitativi e non rinviabili, Windows 10 "Aggiornamenti delle funzionalità" (rilasci principali del sistema operativo) verrà installato solo dopo i test microsoft e la convalida di una determinata funzionalità di aggiornamento con Microsoft Teams Rooms. Anche se l'aggiornamento viene rilasciato nel canale Semi-Annual (o Mirato se si hanno sistemi impostati su tale canale per i test) o inseriti manualmente, un dispositivo Microsoft Room Systems non consente l'installazione dell'aggiornamento non testato.
 
-Microsoft Teams Rooms funzioni "out-of-box" con un approccio hands-off e non installa un Windows Update o riavvia automaticamente un dispositivo per un Windows Update. I sistemi scaricano un aggiornamento e attendino il prossimo riavvio per installarlo. A meno che qualcuno non lo riavvii manualmente, l'installazione viene eseguita solo al riavvio automatico notturno. Windows Gli aggiornamenti devono essere trasparenti nella sala e il normale funzionamento non deve mai essere interrotto Windows aggiornamenti.
+Microsoft Teams Rooms funzioni "out-of-box" con un approccio hands-off e non installa un Windows Update o riavvia automaticamente un dispositivo per un Windows Update. I sistemi scaricano un aggiornamento e aspettano il prossimo riavvio per installarlo. A meno che qualcuno non lo riavvii manualmente, l'installazione viene eseguita solo al riavvio automatico notturno. Windows Gli aggiornamenti devono essere trasparenti nella chat room e il normale funzionamento non deve mai essere interrotto Windows aggiornamenti.
 
-Se si sceglie di aggiungere un dominio ai dispositivi, usare Microsoft Endpoint Configuration Manager o WSUS. Prestare particolare attenzione ai criteri o alle azioni che causano un aggiornamento del dispositivo o un riavvio forzato durante l'orario di ufficio. I sistemi nella distribuzione non devono essere riavviati durante l'uso o devono essere avvisati Windows aggiornamenti sull'interfaccia utente durante le ore di utilizzo, controllare la configurazione in caso di questo comportamento.
+Se si sceglie di aggiungere un dominio ai dispositivi, usare Microsoft Endpoint Configuration Manager o WSUS. Prestare particolare attenzione ai criteri o alle azioni che causano un aggiornamento del dispositivo o un riavvio forzato durante l'orario di ufficio. I sistemi nella distribuzione non devono essere riavviati durante l'uso o devono essere avvisati degli aggiornamenti Windows durante l'interfaccia utente durante le ore di utilizzo, esaminare la configurazione in caso di questo comportamento.

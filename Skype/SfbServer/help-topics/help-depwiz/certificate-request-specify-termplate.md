@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployCertRequestTemplate
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d00ed98f-46f2-4367-b34c-513e5eafdd06
 description: La pagina Specifica modello di certificato alternativo consente di definire un modello di certificato diverso dal modello WebServer utilizzato per impostazione predefinita. Selezionare la casella di controllo Usa il modello di certificato alternativo per l'Autorità di certificazione selezionata e quindi specificare il nome del modello di certificato alternativo nella casella di testo Nome modello del certificato. È necessario utilizzare il nome del modello così com'è definito nell'Autorità di certificazione (CA). Fare clic su Indietro per tornare alla pagina precedente. Fare clic su Annulla per terminare il processo di richiesta del certificato.
-ms.openlocfilehash: 5f57efe3d04949f6f22c0f63cd26b037fb5d66f02560f577d2820bd62b85d53d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2a4665b8dd1f051c620f74480ba807ac43f00043
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342291"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602851"
 ---
 # <a name="certificate-request-specify-termplate"></a>Richiesta di certificato (specificare modello)
  

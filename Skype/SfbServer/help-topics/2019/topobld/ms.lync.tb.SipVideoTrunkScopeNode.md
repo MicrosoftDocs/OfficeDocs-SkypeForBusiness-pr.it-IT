@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.SipVideoTrunkScopeNode
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1dc894e5-e2db-4c4d-9946-1d5f92090113
 ROBOTS: NOINDEX, NOFOLLOW
-description: I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
-ms.openlocfilehash: 79173959bfb1e9bf4bd60d0db7207c4cb260bca2212cae8b260704f8e3ce4580
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
+ms.openlocfilehash: eb979c16121e50e79fda02400d2b88631e32a6e3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54311744"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622658"
 ---
 # <a name="sip-video-trunk-scope-node"></a>Nodo di ambito per trunk video SIP
  

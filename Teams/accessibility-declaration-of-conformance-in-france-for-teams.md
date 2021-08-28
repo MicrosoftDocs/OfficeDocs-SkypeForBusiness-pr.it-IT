@@ -12,7 +12,7 @@ ms.collection:
 search.appverid: MET150
 appliesto:
 - Microsoft Teams
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-mar2020
 hideEdit: true
 description: "Microsoft Teams est l'outil de chat collaboratif d'Office 365 qui intègre toutes les personnes, contenus et outils don't votre équipe a besoin pour être plus impliquée et efficace. "
-ms.openlocfilehash: 24bb3c5e278ec2b046400308d0342fe4acfae687
-ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
+ms.openlocfilehash: 356cab2bd8585e4ace3e71c02dbd6722f0332a7d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372086"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610453"
 ---
 # <a name="microsoft-teams-en-301-549-dclaration-de-conformit-en-matire-daccessibilit"></a>Microsoft Teams: EN 301 549 Déclaration de conformité en matière d'accessibilité
 
@@ -70,7 +70,7 @@ La présente attestation de conformité à la norme [EN 301 549 v2.1.2](http://w
 |**5.6.2 Statut visuel**<br/> Dans le cas où la TIC est dotée d'une commande de verrouillage et où cette commande n'est pas présentée visuellement à l'utilisateur, la TIC propose au moins un mode de fonctionnement avec lequel il est possible de déterminer visuellement le statut de la commande lorsque la commande est présentée.<br/> |Non applicabile <br/> | |
 |**5.7 Répétition automatique des touches**<br/> Dans le cas où la TIC est dotée de la fonction répétition automatique des touches et où cette fonction ne peut être désactivée :<br/> a) le délai avant la répétition automatique est réglable jusqu'à au moins 2 secondes ; et<br/> b) la vitesse de répétition peut être réduite jusqu'à un caractère par intervalle de 2 secondes.<br/>|Non applicabile <br/> | |
 |**5.8 Acceptation des doubles frappes sur le clavier**<br/> Dans le cas où un clavier est fourni, le délai, après une frappe sur le clavier, pendant lequel une autre frappe ne sera pas acceptée si elle est identique à la frappe précédente est réglable jusqu'à au moins 0,5 seconde.<br/> |Non applicabile <br/> | |
-|**5.9 Azioni simultanées de l'utilisateur**<br/> Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner.<br/> |Pris en charge <br/> | |
+|**5.9 Azioni simultanées de l'utilisateur**<br/> Dans le cas où la TIC nécessite, pour fonctionner, plusieurs actions simultanées de l'utilisateur, cette TIC propose au moins un mode de fonctionnement qui ne ne nécessite pas plusieurs actions simultanées de la part de l'utilisateur pour fonctionner.<br/> |Pris en charge <br/> | |
 
 ## <a name="section-6-tic-avec-communication-voix-bidirectionnelle"></a>Sezione 6 TIC avec communication voix bidirectionnelle
 

@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b1cd89fd-6968-4ace-a4aa-c4105231cf7b
 description: Il cmdlet Set-CcSiteDirectory consente di impostare la directory in cui verranno archiviati i file di configurazione Skype for Business Cloud Connector Edition sito. La cartella conterrà il disco rigido virtuale di base e i file di configurazione del connettore cloud.
-ms.openlocfilehash: 9642c91e811e62b08f2b0e219b5eaa7b9ac7359fcdb6114c028735851280da59
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e5685ac8c203338365141a4a7ba59daa82a06ef0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286245"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610533"
 ---
 # <a name="set-ccsitedirectory"></a>Set-CcSiteDirectory
  

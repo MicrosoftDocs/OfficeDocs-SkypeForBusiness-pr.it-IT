@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: ''
 description: Come configurare l'app Walkie Talkie in Microsoft Teams, dal punto di vista dell'ITAdmin.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -18,18 +18,18 @@ ms.custom:
 - Security
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 042973f245341c0e4badd221075b81023474b6124f55eeb021bd61d32dcc4bfa
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 80aedfd0c1bb4f4a20ecdfcd977ce74d667cad43
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342701"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602071"
 ---
 # <a name="walkie-talkie-app-in-microsoft-teams"></a>App Walkie Talkie in Microsoft Teams
 
 L'app Walkie Talkie in Teams fornisce comunicazioni push-to-talk istantanee (PTT) per il team ed è ora disponibile su Android. Walkie Talkie consente agli utenti di connettersi con il team usando gli stessi canali sottostanti di cui sono membri. Solo gli utenti che si connettono a Walkie Talkie in un canale diventano partecipanti e possono comunicare tra loro usando push-to-talk, uno alla volta.
 
-Con Walkie Talkie in Teams, i lavoratori in prima linea ora possono comunicare in modo sicuro con un'esperienza PTT familiare senza dover portare radio ingombrante e Walkie Talkie funziona ovunque con la connessione WiFi o cellulare a Internet.
+Con Walkie Talkie in Teams, i lavoratori in prima linea possono ora comunicare in modo sicuro con un'esperienza PTT familiare senza dover portare radio ingombrante e Walkie Talkie funziona ovunque con wifi o connettività Internet cellulare.
 
 ## <a name="getting-started"></a>Introduzione
 
@@ -43,7 +43,7 @@ Nell'Microsoft Teams di amministrazione, in Teams criteri di configurazione **de
 
 :::image type="content" source="media/deploy-walkie-talkie-1.png" alt-text="Mostra la sezione App aggiunte e il pulsante Aggiungi app da selezionare.":::
 
-Nel riquadro **Aggiungi app** aggiunte visualizzato a destra  usare la casella di testo Cerca per cercare Walkie Talkie. Una volta visualizzato come risultato della ricerca, selezionare il **pulsante Aggiungi** a destra del nome per aggiungerlo all'elenco.
+Nel riquadro **Aggiungi app** aggiunte visualizzato a destra  usare la casella di testo Cerca per cercare Walkie Talkie. Se il risultato è un risultato della ricerca, selezionare il **pulsante Aggiungi** a destra del nome per aggiungerlo all'elenco.
 
 :::image type="content" source="media/deploy-walkie-talkie-2.png" alt-text="Mostra la barra laterale Aggiungi app aggiunte con Walkie immesso nel riquadro di ricerca e l'app Walkie Talkie nei risultati della ricerca, con il pulsante Aggiungi accanto.":::
 
@@ -63,7 +63,7 @@ Walkie Talkie in Teams la connettività Internet e al di sotto delle condizioni 
 
 Come indicato in precedenza, la qualità dei supporti multimediali in tempo reale su una rete IP è notevolmente influenzata dalla qualità della connettività di rete, ma in particolare dalla quantità di:
 
-- **Latenza:** il tempo necessario per ottenere un pacchetto IP dal punto A al punto B della rete. Questo ritardo di propagazione della rete è essenzialmente legato alla distanza fisica tra i due punti e alla velocità della luce, incluso il sovraccarico dei vari router in mezzo. La latenza viene misurata come tempo di round trip (RTT).
+- **Latenza:** tempo necessario per ottenere un pacchetto IP dal punto A al punto B della rete. Questo ritardo di propagazione della rete è essenzialmente legato alla distanza fisica tra i due punti e alla velocità della luce, incluso il sovraccarico dei vari router in mezzo. La latenza viene misurata come tempo di round trip (RTT).
 - **Instabilità tra gli arrivi:** questa è la variazione media del ritardo tra pacchetti successivi.
 - **Perdita di pacchetti:** spesso viene definita come percentuale di pacchetti persi in un determinato intervallo di tempo. La perdita di pacchetti influisce direttamente sulla qualità audio, da piccoli pacchetti persi individuali che non hanno quasi alcun impatto, a perdite di burst back-to-back che causano il cut-out audio completo.
 
@@ -80,7 +80,7 @@ I lavoratori in prima linea spesso devono parlare e ricevere chiamate Walkie Tal
     - [Klein Electronics](https://www.kleinelectronics.com/poc-accessories/mtwt/)
 - **Telefoni robusti**
   - Samsung [Galaxy XCover Pro](https://www.samsung.com/us/business/products/mobile/phones/galaxy-xcover-pro/), Galaxy [XCover 5](https://www.samsung.com/de/smartphones/others/galaxy-xcover-5-black-64gb-sm-g525fzkdeeb/buy), [Galaxy Tab Active 3](https://www.samsung.com/us/business/tablets/galaxy-tab-active/buy/)
-    -  Configurazione manuale: con Teams installato, passare Impostazioni > funzionalità avanzate > XCover/Active key. Attivare "Ctrl XCover key with app" e selezionare "Teams"
+    -  Configurazione manuale: con Teams installato, passare Impostazioni > funzionalità avanzate > XCover/Active. Attiva "Controlla il tasto XCover con l'app" e seleziona "Teams"
     -  [Configurazione MDM](https://docs.samsungknox.com/admin/knox-service-plugin/intune-teams.htm)
 
 > [!NOTE]
@@ -88,7 +88,7 @@ I lavoratori in prima linea spesso devono parlare e ricevere chiamate Walkie Tal
 
 ### <a name="license-requirements"></a>Requisiti di licenza
 
-L'app Walkie Talkie è inclusa in tutte le licenze a pagamento Teams in [Office 365 abbonamenti.](/office365/servicedescriptions/teams-service-description) Per altre informazioni su come ottenere Teams, vedere [Come si ottiene l'accesso a Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
+L'app Walkie Talkie è inclusa in tutte le licenze a pagamento Teams in [Office 365 abbonamenti.](/office365/servicedescriptions/teams-service-description) Per altre informazioni su come ottenere Teams, vedere Come si ottiene l'accesso a [Microsoft Teams?](https://support.office.com/article/fc7f1634-abd3-4f26-a597-9df16e4ca65b)
 
 > [!NOTE]
 > Alcune funzionalità avanzate possono richiedere licenze aggiuntive. Ad esempio, l'integrazione con Samsung Galaxy XCover Pro richiede una licenza Knox.

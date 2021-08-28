@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployCertRequestIntro
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e1d0844b-168e-4474-a432-ce83925a4fe1
 description: Per continuare con il processo di richiesta di un certificato, fare clic su Avanti. Per uscire dal processo senza apportare modifiche al sistema, fare clic su Annulla.
-ms.openlocfilehash: cd6a58fb524bc407e52175e206f9303c923598911a0c1d6e7a2317fff611a33c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fa333d5da9fd9397601b3485e9bb829cf46688a5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54285136"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622618"
 ---
 # <a name="certificate-request-intro"></a>Richiesta di certificato (intro)
  

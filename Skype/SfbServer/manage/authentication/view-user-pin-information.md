@@ -9,27 +9,27 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 59e38117-8112-4851-82ac-a746ffa0f89d
 description: "Riepilogo: visualizzare le informazioni sul PIN dell'utente Skype for Business Server."
-ms.openlocfilehash: 1b280f4e00bacab5c7def0d6ff6c274f64d9ef8651b6d2b0d328867260e77449
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: eb30ae22f5a80835e73962f0e2441633fdc1d46e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315642"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622378"
 ---
 # <a name="view-user-pin-information-in-skype-for-business-server"></a>Visualizzare le informazioni sul PIN dell'utente in Skype for Business Server
  
 **Riepilogo:** Visualizzare le informazioni sul PIN dell'utente Skype for Business Server.
   
-Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Skype for Business Server con credenziali di Servizi di dominio Active Directory richiede un PIN. Puoi visualizzare le informazioni sul PIN di un utente Skype for Business Server Pannello di controllo.
+Per partecipare a una conferenza telefonica con accesso esterno come utente autenticato, un utente di Skype for Business Server con credenziali di Servizi di dominio Active Directory richiede un PIN. È possibile visualizzare le informazioni sul PIN di un utente Skype for Business Server Pannello di controllo.
   
 > [!NOTE]
 > È possibile visualizzare informazioni sullo stato del PIN, ad esempio per scoprire se il PIN è stato impostato o quando è stato modificato l'ultima volta, ma non è possibile vedere il PIN corrente controllandone lo stato. Se un utente ha perso il PIN, è possibile reimpostarlo seguendo le procedure descritte in [Set a user's dial-in conferencing PIN in Skype for Business Server](set-a-user-s-dial-in-conferencing-pin.md)
   
-### <a name="to-view-a-users-pin-in-skype-for-business-server-control-panel"></a>Per visualizzare il PIN di un utente nel Skype for Business Server Pannello di controllo
+### <a name="to-view-a-users-pin-in-skype-for-business-server-control-panel"></a>Per visualizzare il PIN di un utente nel Skype for Business Server Di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
@@ -65,7 +65,7 @@ Per partecipare a una conferenza telefonica con accesso esterno come utente aute
     
 ## <a name="viewing-user-pin-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni sul PIN dell'utente tramite Windows PowerShell cmdlet
 
-È possibile visualizzare le informazioni sul PIN dell'utente utilizzando il cmdlet Get-CsClientPinInfo utente. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile visualizzare le informazioni sul PIN dell'utente utilizzando il cmdlet Get-CsClientPinInfo utente. Questo cmdlet può essere eseguito da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-view-user-pin-information"></a>Per visualizzazione informazioni sul PIN di un utente
 

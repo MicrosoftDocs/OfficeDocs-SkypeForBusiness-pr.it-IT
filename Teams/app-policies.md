@@ -7,20 +7,20 @@ ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: ''
 search.appverid: ''
-description: Informazioni sui criteri Teams applicazione.
+description: Informazioni sui criteri Teams'applicazione.
 audience: admin
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 09a85edf34f77fb48b998371de3f6bbe2fd4678665c0037358bd32e7c26f2516
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 52fffd29519ea97bf95bc98c1b3de8140667e0b6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54288454"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610393"
 ---
 # <a name="manage-app-policies-in-microsoft-teams"></a>Gestire i criteri delle app in Microsoft Teams
 
@@ -28,7 +28,7 @@ I criteri delle app vengono usati per controllare le applicazioni in Microsoft T
 
 ## <a name="app-permission-policies"></a>Criteri di autorizzazione app
 
-**I criteri di autorizzazione** delle app vengono usati per controllare quali app sono disponibili per gli utenti. Gli amministratori possono consentire o bloccare app specifiche installate dagli utenti dall'app store Teams app store. [I criteri di autorizzazione delle](teams-app-permission-policies.md) app vengono gestiti tramite l'Microsoft Teams di amministrazione.
+**I criteri di autorizzazione** delle app vengono usati per controllare quali app sono disponibili per gli utenti. Gli amministratori possono consentire o bloccare app specifiche installate dagli utenti dall'app store Teams app store. [I criteri di autorizzazione delle](teams-app-permission-policies.md) app vengono gestiti tramite l Microsoft Teams di amministrazione.
 
 ![Screenshot dei criteri di autorizzazione delle app.](media/app-permission-policy.png)
 
@@ -40,7 +40,7 @@ I criteri delle app vengono usati per controllare le applicazioni in Microsoft T
 
 ## <a name="custom-app-policies"></a>Criteri delle app personalizzati
 
-È possibile controllare chi può caricare app personalizzate in Teams **con i criteri delle app personalizzati.** [Le impostazioni e i criteri delle app](teams-custom-app-policies-and-settings.md) personalizzati vengono gestiti tramite l'Microsoft Teams di amministrazione.
+È possibile controllare chi può caricare app personalizzate in Teams **criteri delle app personalizzati.** [Le impostazioni e i criteri delle app personalizzati](teams-custom-app-policies-and-settings.md) vengono gestiti tramite l'Microsoft Teams di amministrazione.
 
 ![Screenshot dei criteri dell'app personalizzati.](media/custom-app-policy.png)
 

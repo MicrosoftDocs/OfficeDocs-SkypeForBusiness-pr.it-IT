@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e00e5783-116f-481f-ad17-3af847d6769a
 description: 'Riepilogo: informazioni sul dashboard di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: f731030d3534af9494a4d70d29b27cc8b3ec95bcd5eede97d3ab3c65c2a54b9f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 544dfdc37f25fe60418dc190a76467c044a58d65
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345573"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622348"
 ---
 # <a name="using-the-monitoring-dashboard-in-skype-for-business-server"></a>Utilizzo del dashboard di monitoraggio in Skype for Business Server
  
@@ -85,7 +85,7 @@ Per impostazione predefinita, il dashboard di monitoraggio mostra i dati per le 
     
 - Totale minuti partecipante PSTN
     
-Oltre alle metriche di utilizzo del sistema, le metriche seguenti visualizzano il totale per il giorno corrente e i sei giorni precedenti (se si seleziona **Visualizzazione** settimanale ) o per la settimana corrente e le ultime sei settimane se si seleziona Visualizzazione **mensile**.
+Oltre alle metriche utilizzo sistema, le metriche seguenti visualizzano il totale per il giorno corrente e i sei giorni precedenti (se si seleziona **Visualizzazione** settimanale ) o per la settimana corrente e le ultime sei settimane se si seleziona Visualizzazione mensile **.**
   
 ## <a name="per-user-call-diagnostics"></a>Per-User diagnostica delle chiamate
 
@@ -154,7 +154,7 @@ Come indicato, per impostazione predefinita vengono visualizzati i totali per la
 > [!TIP]
 > Il dashboard di monitoraggio consente di visualizzare i totali per la settimana (o il mese) corrente e i valori di tendenza per le ultime sei settimane (o mesi). Non è possibile modificare queste date e ore. Ad esempio, non è possibile utilizzare il dashboard per visualizzare i totali dei report per il periodo di tempo che inizia nove mesi fa. 
   
-I valori visualizzati nelle **colonne This week**, This **month** o **Today** collegano l'utente a informazioni più dettagliate sull'elemento. Tenere presente che il nome della colonna e i valori visualizzati in tale colonna spesso variano a seconda della metrica scelta e a seconda che sia stata selezionata la visualizzazione settimanale o mensile. Ad esempio, se si fa clic sui totali visualizzati per la metrica **Accessi** utente univoci, verrà visualizzato il **Rapporto** registrazione utenti per il periodo di tempo specificato. È possibile tornare al dashboard di monitoraggio in qualsiasi momento facendo clic su **Dashboard.**
+I valori visualizzati nelle **colonne This week**, This **month** o **Today** collegano l'utente a informazioni più dettagliate sull'elemento. Tenere presente che il nome della colonna e i valori visualizzati in tale colonna spesso variano a seconda della metrica scelta e a seconda che sia stata selezionata la visualizzazione settimanale o mensile. Ad esempio, se si fa clic  sui totali visualizzati per la metrica Accessi utente univoci, verrà visualizzato il **Rapporto** registrazione utenti per il periodo di tempo specificato. È possibile tornare al dashboard di monitoraggio in qualsiasi momento facendo clic su **Dashboard.**
   
 > [!TIP]
 > È inoltre possibile accedere alla home page dei report di Monitoring Server facendo clic sul **collegamento Report** nell'angolo superiore destro del dashboard.

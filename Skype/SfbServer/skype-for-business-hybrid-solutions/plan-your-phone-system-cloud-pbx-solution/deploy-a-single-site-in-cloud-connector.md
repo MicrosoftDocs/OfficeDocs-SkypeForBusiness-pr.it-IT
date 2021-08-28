@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: fa8aa499-1188-447e-bc30-89d1f5b198a7
 description: Informazioni sulla distribuzione di un singolo sito PSTN in Cloud Connector Edition.
-ms.openlocfilehash: 52c10b8c5e386f72415ce5a379b68b0b469f825f5cf52be9b225f28dcf8232b6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 07262f88f85602b6213dc287babbd05ddec25ed9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54298126"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610543"
 ---
 # <a name="deploy-a-single-site-in-cloud-connector"></a>Distribuire un sito singolo in Cloud Connector
  
@@ -56,7 +56,7 @@ Install-CcAppliance
 
 È possibile estendere un sito Cloud Connector esistente per supportare l'ha aggiungendo ulteriori appliance al sito. 
   
-1. Seguire i passaggi per preparare l'appliance Cloud Connector come descritto in [Prepare your Cloud Connector appliance](prepare-your-cloud-connector-appliance.md). Tenere presente che alcuni passaggi sono necessari solo per la prima appliance della distribuzione. Verificare che la directory del sito esista e che sia configurata correttamente per il supporto dell'ha.
+1. Seguire la procedura per preparare l'appliance Cloud Connector come descritto in [Prepare your Cloud Connector appliance](prepare-your-cloud-connector-appliance.md). Tenere presente che alcuni passaggi sono necessari solo per la prima appliance della distribuzione. Verificare che la directory del sito esista e che sia configurata correttamente per il supporto dell'ha.
     
 2. Eseguire il cmdlet seguente solo nel server host appena aggiunto per aggiornare le informazioni sulla topologia nella configurazione Microsoft 365 o Office 365'organizzazione. Se si desidera aggiungere più appliance contemporaneamente, eseguire il cmdlet in ogni server host appena aggiunto uno alla volta:
     
@@ -77,7 +77,7 @@ Install-CcAppliance
    ```
 
 > [!NOTE]
-> Se la directory del sito è stata impostata su un percorso di cartella locale, è necessario definire una condivisione file per questa cartella e utilizzare un percorso UNC per la directory dei siti nel nuovo dispositivo. È possibile lasciare la prima directory del sito dell'appliance con il percorso locale o modificarla per utilizzare il percorso UNC per la condivisione nella stessa cartella. Se il percorso della directory del sito condiviso cambia, tutte le appliance installate in precedenza devono essere disinstallate e quindi reinstallate. > Importante: la password sia per l'account CceService che per l'account CABackupFile deve essere la stessa in tutte le appliance distribuite all'interno del sito, in modo che le appliance possano accedere alla condivisione della directory del sito e al file di backup della CA crittografato nella directory dei siti. 
+> Se la directory del sito è stata impostata su un percorso di cartella locale, è necessario definire una condivisione file per questa cartella e utilizzare un percorso UNC per la directory dei siti nel nuovo dispositivo. È possibile lasciare la prima directory del sito dell'appliance con il percorso locale o modificarla per utilizzare il percorso UNC per la condivisione nella stessa cartella. Se il percorso della directory del sito condiviso cambia, tutte le appliance installate in precedenza devono essere disinstallate e quindi reinstallate. > Importante: la password sia per l'account CceService che per l'account CABackupFile deve essere la stessa in tutte le appliance distribuite all'interno del sito, in modo che le appliance possano accedere alla condivisione della directory del sito e al file di backup della CA crittografato nella directory del sito. 
   
 ## <a name="remove-an-appliance-from-an-existing-site"></a>Rimuovere un'appliance da un sito esistente
 

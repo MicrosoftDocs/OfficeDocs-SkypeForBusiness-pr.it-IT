@@ -10,24 +10,24 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4f2b689b-7f15-48dc-a069-da7bc8527def
 description: 'Riepilogo: informazioni su come eseguire il backup e il ripristino dei database del server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: eb6b7e005691abda351993e716ba43a137ffa28c17f7fc9e6297a7e1373f9ad7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: aba6ead1d666f9f257e9cd7bfa1e7d2343049b9d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281709"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622248"
 ---
 # <a name="back-up-and-restore-persistent-chat-databases-in-skype-for-business-server-2015"></a>Eseguire il backup e il ripristino dei database di Persistent Chat in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come eseguire il backup e il ripristino dei database del server Chat persistente in Skype for Business Server 2015.
   
-Il server Chat persistente richiede SQL Server software di database per archiviare i dati delle chat room, ad esempio la cronologia e il contenuto, la configurazione, il provisioning degli utenti e altri metadati rilevanti. Inoltre, se l'organizzazione dispone di normative che richiedono l'archiviazione dell'attività di Persistent Chat e il servizio di conformità facoltativo è abilitato, il software di database di SQL Server viene utilizzato per archiviare i dati di conformità, inclusi il contenuto e gli eventi della chat, ad esempio l'aggiunta e l'uscita da sale. Il contenuto delle chat room viene archiviato nel database di Persistent Chat (mgc). I dati di conformità vengono archiviati nel database di conformità (mgccomp). Si tratta di dati business-critical di cui eseguire regolarmente il backup. 
+Il server Chat persistente richiede SQL Server software di database per archiviare i dati delle chat room, ad esempio la cronologia e il contenuto, la configurazione, il provisioning degli utenti e altri metadati pertinenti. Inoltre, se l'organizzazione dispone di normative che richiedono l'archiviazione dell'attività di Persistent Chat e il servizio di conformità facoltativo è abilitato, il software di database di SQL Server viene utilizzato per archiviare i dati di conformità, inclusi il contenuto e gli eventi della chat, ad esempio l'aggiunta e l'uscita da sale. Il contenuto delle chat room viene archiviato nel database di Persistent Chat (mgc). I dati di conformità vengono archiviati nel database di conformità (mgccomp). Si tratta di dati business-critical di cui eseguire regolarmente il backup. 
   
 > [!NOTE]
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
 
 ## <a name="back-up-the-databases"></a>Eseguire il backup dei database
 
@@ -37,7 +37,7 @@ Esistono due modi per eseguire il backup dei dati di Persistent Chat.
     
 - Il cmdlet **Export-CsPersistentChatData,** che esporta i dati di Persistent Chat come file
     
-I dati creati utilizzando il backup di SQL Server richiedono molto più spazio su disco, probabilmente 20 volte superiore a quelli creati dal cmdlet **Export-CsPersistentChatData,** ma è probabile che il backup di SQL Server sia una procedura familiare.
+I dati creati utilizzando il backup di SQL Server richiedono molto più spazio su disco, probabilmente 20 volte superiore a quello creato dal cmdlet **Export-CsPersistentChatData,** ma è probabile che il backup di SQL Server sia una procedura familiare.
   
 Se si desidera utilizzare le SQL Server di backup, vedere la documentazione SQL per ulteriori informazioni. 
   

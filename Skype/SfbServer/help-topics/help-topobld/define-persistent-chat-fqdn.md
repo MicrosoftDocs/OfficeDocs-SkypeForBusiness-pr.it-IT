@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddPersistentChatFqdnPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e0123fa6-008b-430e-a68b-61f0cc3fb12e
 description: È possibile creare un nuovo server Chat persistente o un nuovo pool di server Chat persistente utilizzando la procedura guidata Definisci nuovo pool di Chat persistente. Selezionare l'opzione desiderata tra Pool di più computer o Pool computer singolo. Se si seleziona un pool di computer singolo e successivamente è necessario un pool di più computer, sarà necessario rimuovere il pool di computer singolo e quindi definire un pool di più computer.
-ms.openlocfilehash: 8c900574b84f2780bc3556242949bf7dce4e72b499acc53e514b1924b99ecabb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2136d740a451670fe01d3123c48c63f3d7de0cc1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54305458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622458"
 ---
 # <a name="define-persistent-chat-fqdn"></a>Definire il nome di dominio completo (FQDN) di Chat persistente
  
@@ -32,4 +32,4 @@ ms.locfileid: "54305458"
 
 [Pianificare il server Chat persistente in Skype for Business Server 2015](../../plan-your-deployment/persistent-chat-server/persistent-chat-server.md)
   
-[Aggiungere un server Chat persistente alla topologia Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)
+[Aggiungere il server Chat persistente alla topologia Skype for Business Server 2015](../../deploy/deploy-persistent-chat-server/add-persistent-chat-server.md)

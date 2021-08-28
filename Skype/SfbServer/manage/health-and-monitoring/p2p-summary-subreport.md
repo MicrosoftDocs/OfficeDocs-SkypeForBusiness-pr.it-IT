@@ -9,19 +9,19 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc36185a-3cc5-4167-8c93-8a755fa75ac7
 description: 'Riepilogo: informazioni sul sottoreport riepilogativo P2P in Skype for Business Server.'
-ms.openlocfilehash: 07d354ba14c8503571459081aaaf3445ec540fdb9a5caecc4b40576f6662f038
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8304399106e17654ad350bc0a2e5eff1ecc90ace
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345553"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622328"
 ---
 # <a name="p2p-summary-subreport-in-skype-for-business-server"></a>Sottoreport riepilogativo P2P in Skype for Business Server
  
-**Riepilogo:** Informazioni sul sottoreport riepilogativo P2P in Skype for Business Server.
+**Riepilogo:** Informazioni sul sottoreport di riepilogo P2P in Skype for Business Server.
   
 Nel sottoreport riepilogativo P2P viene fornita una panoramica delle sessioni di comunicazione peer-to-peer non riuscite.
   

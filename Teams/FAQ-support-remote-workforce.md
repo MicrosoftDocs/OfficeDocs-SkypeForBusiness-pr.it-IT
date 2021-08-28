@@ -11,17 +11,17 @@ ms.collection:
 - Teams_ITAdmin_RemoteWorkers
 - remotework
 ms.reviewer: nichrose
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: MET150
 description: Usare questa guida per aiutare il personale remoto a essere produttivo quando lavora da casa in risposta all'epidemia di COVID-19 (coronavirus).
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0bb2924eddd957e2a56548df4426b74e782af56dc9e727142b17869e6630e273
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 06be01aad7a8bea73c608cd4709149042daec9e2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318629"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610523"
 ---
 # <a name="faq-support-your-remote-workforce"></a>Domande frequenti: Supporto del personale remoto
 
@@ -36,7 +36,7 @@ Con i recenti annunci riguardanti l'epidemia di COVID-19 (coronavirus), Microsof
 > [!NOTE]
 > Se si è già configurato Microsoft 365 e si vogliono ottenere altre informazioni sulle azioni intraprese da Microsoft, visitare il Centro messaggi e consultare il post **MC205458**.
 
-Leggere in proposito il post di blog del 5 marzo 2020 di Jared Spataro, vicepresidente aziendale di Microsoft 365: [Il nostro impegno nei confronti dei clienti durante l'epidemia di COVID-19](https://www.microsoft.com/it-IT/microsoft-365/blog/2020/03/05/our-commitment-to-customers-during-covid-19/).
+Leggere in proposito il post di blog del 5 marzo 2020 di Jared Spataro, vicepresidente aziendale di Microsoft 365: [Il nostro impegno nei confronti dei clienti durante l'epidemia di COVID-19](https://www.microsoft.com/en-us/microsoft-365/blog/2020/03/05/our-commitment-to-customers-during-covid-19/).
 
 
 ### <a name="with-the-actions-that-microsoft-is-taking-do-we-anticipate-problems"></a>Le azioni intraprese da Microsoft consentiranno di evitare problemi?
@@ -45,7 +45,7 @@ Anche se Microsoft sta facendo il possibile per evitare problemi, un picco inatt
 
 ### <a name="what-can-admins-do-if-attendees-are-having-trouble-joining-meetings-by-dialing-in-such-as-if-calls-arent-getting-through"></a>Cosa possono fare gli amministratori se i partecipanti hanno problemi a partecipare alle riunioni componendo il numero, ad esempio se le chiamate non vengono inoltrate?
 
-Nel corso dell'epidemia di COVID-19, si consiglia agli utenti di partecipare alle riunioni facendo clic sul pulsante **Partecipa alla riunione di Teams** anziché chiamare utilizzando i numeri della conferenza PSTN o utilizzando **Chiamami a**</strong>. Ciò è principalmente dovuto alla congestione delle infrastrutture telefoniche dei paesi colpiti da COVID-19. Evitando le chiamate PSTN, la qualità audio sarà probabilmente migliore. 
+Nel corso dell'epidemia di COVID-19, si consiglia agli utenti di partecipare alle riunioni facendo clic sul pulsante **Partecipa alla riunione di Teams** anziché chiamare utilizzando i numeri della conferenza PSTN o utilizzando **Chiamami a**</strong>. Ciò è principalmente dovuto alla congestione delle infrastrutture telefoniche dei Paesi colpiti da COVID-19. Evitando le chiamate PSTN, la qualità audio sarà probabilmente migliore. 
 
 ### <a name="what-are-the-general-microsoft-guidelines-regarding-network-optimization-for-microsoft-365-some-of-my-users-in-china-are-having-a-bad-experience-what-should-i-do-to-optimize-our-network"></a>Quali sono le linee guida generali di Microsoft relative all'ottimizzazione della rete per Microsoft 365? Alcuni miei utenti in Cina stanno avendo un'esperienza negativa, cosa occorre fare per ottimizzare la rete?
 

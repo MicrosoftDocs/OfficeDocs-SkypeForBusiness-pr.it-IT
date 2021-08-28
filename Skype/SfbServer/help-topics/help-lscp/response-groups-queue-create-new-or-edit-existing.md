@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.RgsQueueEdit
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cbdde536-8668-4a08-9862-8615e8691fd7
-description: Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
-ms.openlocfilehash: 3029911d6b2290dc6d117f829d084d71a4bd5ed0f9dca652498088a87afcb643
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Le code di Response Group contengono le chiamate a un Response Group finché un agente non risponde alla chiamata.
+ms.openlocfilehash: fe8486ae94df3d7532f2a672cbd272000ff06f2f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319229"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602741"
 ---
 # <a name="response-groups-queue-create-new-or-edit-existing"></a>Coda dei Response Group: crearne una nuova o modificarne una esistente
 
-Le code di Response Group contengono le chiamate a un Response Group fino a quando un agente non risponde alla chiamata.
+Le code di Response Group contengono le chiamate a un Response Group finché un agente non risponde alla chiamata.
 
 ## <a name="ui-reference"></a>Riferimenti UI
 

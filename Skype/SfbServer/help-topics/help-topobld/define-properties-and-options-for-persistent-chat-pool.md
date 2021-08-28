@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddPersistentChatOptionsPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f4914a44-2113-48f1-8299-4645fc7011b6
 description: 'È possibile configurare le opzioni per il server Chat persistente o il pool di server Chat persistente definendo le proprietà seguenti:'
-ms.openlocfilehash: 76556335f87a673c5ae6d8df576bd6fd47d140ae9338c27183d58971ebe4a439
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 242490ebe6be0f68e8c25e0c01b77088c15836d8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281109"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622438"
 ---
 # <a name="define-properties-and-options-for-persistent-chat-pool"></a>Definire le proprietà e le opzioni per il pool di Chat persistente
  

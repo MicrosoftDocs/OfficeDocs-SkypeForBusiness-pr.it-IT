@@ -15,23 +15,23 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come reimpostare il PIN di audioconferenza di un utente in Microsoft Teams informazioni importanti sui PIN.
-ms.openlocfilehash: 689962a3d849fa5d50f87f2cacfdfc7caec687e2e92227ea52e5c0e2bb9bd0bc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: cb83c68c4cf6bb6e9acdf3b36678741c2f3a15dc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319719"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611655"
 ---
 # <a name="reset-the-audio-conferencing-pin-in-microsoft-teams"></a>Reimpostare il PIN di audioconferenza in Microsoft Teams
 
-Un PIN è un codice costituito da numeri creati per ogni utente Microsoft Teams abilitato per le audioconferenze. I PIN di audioconferenza vengono usati dagli organizzatori della riunione per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se usano l'app Microsoft Teams per avviare la riunione, non è necessario un PIN. Se gli utenti dimenticano il PIN e non lo trovano nel messaggio di posta elettronica inviato quando sono stati abilitati per le audioconferenze, un amministratore può reimpostare il PIN oppure reimpostare il PROPRIO PIN.
+Un PIN è un codice costituito da numeri creati per ogni Microsoft Teams utente abilitato per le audioconferenze. I PIN di audioconferenza vengono usati dagli organizzatori della riunione per identificare che sono l'organizzatore della riunione e consentire loro di avviare una riunione tramite telefono. Se usano l'app Microsoft Teams per avviare la riunione, non è necessario un PIN. Se gli utenti dimenticano il PIN e non lo trovano nel messaggio di posta elettronica inviato quando sono stati abilitati per le audioconferenze, un amministratore può reimpostare il PIN oppure reimpostare il PROPRIO PIN.
   
 Le riunioni possono essere avviate quando un utente autenticato partecipa usando l'app Microsoft Teams o quando l'organizzatore partecipa con il PIN tramite telefono. Quando una riunione richiede l'avvio di un PIN, gli utenti che aderiscono al telefono vengono inseriti nella sala d'attesa e ascoltano la musica in attesa finché l'organizzatore non lo ammette. Se l'organizzatore di una riunione non richiede il PIN per avviare la riunione tramite telefono, quando un chiamante tenta di partecipare alla riunione, non dovrà specificare un PIN.
 
@@ -62,7 +62,7 @@ Le riunioni possono essere avviate quando un utente autenticato partecipa usando
 
 - Per motivi di sicurezza, il PIN viene visualizzato una sola volta all'amministratore, quando il PIN viene reimpostato. Dopo la reimpostazione del PIN da parte di un amministratore, il PIN verrà elencato come ***********.
     
-- L'invio automatico di messaggi di posta elettronica agli utenti è abilitato per impostazione predefinita e gli utenti riceveranno un messaggio di posta elettronica con il PIN quando sono abilitati per le audioconferenze o quando il PIN viene reimpostato. Se tuttavia l'invio automatico dei messaggi di posta elettronica è stato disabilitato, non verrà inviato un messaggio di posta elettronica di reimpostazione del PIN a un utente e sarà necessario inviare manualmente le informazioni sul PIN all'utente.
+- L'invio automatico di messaggi di posta elettronica agli utenti è abilitato per impostazione predefinita e gli utenti riceveranno un messaggio di posta elettronica con il PIN quando sono abilitati per le audioconferenze o quando il PIN viene reimpostato. Se però l'invio automatico dei messaggi di posta elettronica è stato disabilitato, non verrà inviato un messaggio di posta elettronica di reimpostazione del PIN a un utente e sarà necessario inviare manualmente le informazioni sul PIN all'utente.
     
 - All'avvio di una riunione, l'organizzatore deve ammettere tutti gli utenti PSTN nella sala d'attesa per partecipare alla riunione. Ad esempio, se due partecipanti PSTN provano a partecipare a una riunione prima dell'inizio, vengono messi nella sala d'attesa e ascoltano la musica in attesa e quando l'organizzatore della riunione partecipa usando il PIN tramite telefono, la riunione verrà avviata e l'organizzatore potrà usare il comando in riunione (premere *21) per ammettere tutti gli utenti PSTN nella sala d'attesa.
     
@@ -76,9 +76,9 @@ Le riunioni possono essere avviate quando un utente autenticato partecipa usando
 
     
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
-Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che può semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
   - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     

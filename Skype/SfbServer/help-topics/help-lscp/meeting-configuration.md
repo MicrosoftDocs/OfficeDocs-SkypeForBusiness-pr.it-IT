@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.ConfMeetingSettingMain
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 24e8f749-d54c-4315-a8fe-bb9303b356ef
 description: Le impostazioni di configurazione delle riunioni definiscono il tipo di conferenze (denominate anche riunioni) che gli utenti possono creare e controllano in che modo (o se) gli utenti anonimi e gli utenti delle conferenze telefoniche con accesso esterno possono partecipare a queste conferenze. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano alle riunioni ad hoc create facendo clic sull'opzione Riunione ora nel client.
-ms.openlocfilehash: acf91f927a9bace0e943dd657f3b2c3b000af5716d984d37add60dfe7f8fcb17
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a0b5f10cbf76e90e58723be3ec05a918a2e2e6fc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319239"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610933"
 ---
 # <a name="meeting-configuration"></a>Configurazione riunione
 
@@ -52,7 +52,7 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 - **Nuovo** Avvia una nuova configurazione di riunione del sito o di riunione del pool.
 
-- **Modifica** Apre la configurazione di riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco o elimina la configurazione del sito o del pool selezionata.
+- **Modifica** Apre la configurazione della riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco oppure elimina la configurazione del sito o del pool selezionata.
 
     > [!NOTE]
     > Per la configurazione riunione globale, l'opzione **Elimina** consente di riportare le impostazioni ai valori predefiniti.

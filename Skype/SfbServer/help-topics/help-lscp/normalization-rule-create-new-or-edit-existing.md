@@ -1,5 +1,5 @@
 ---
-title: Regola di normalizzazione Crea nuova o Modifica esistente
+title: Regola di normalizzazione Crea nuovo o Modifica esistente
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.VoiceDialPlanRuleEdit
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4e4a96c5-200a-41ac-8b55-5155eacafb82
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: d12f34ba05175d7aaa0a5b2eb41b0276e6337f0545217c00eb083b41353178f9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a819f4de7bde1fab726dfc310dc703f06e875c58
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307377"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602761"
 ---
 # <a name="normalization-rule-create-new-or-edit-existing"></a>Regola di normalizzazione: crearne una nuova o modificarne una esistente
 

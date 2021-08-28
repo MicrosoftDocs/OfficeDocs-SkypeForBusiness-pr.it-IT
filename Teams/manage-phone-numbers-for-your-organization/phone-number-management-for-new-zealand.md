@@ -14,18 +14,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Nuova Zelanda per Microsoft Teams.
-ms.openlocfilehash: 8bec06f0d95cd18708957747c4db5d81335fbb16
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 4f1cf46a88fe095352016aed0c2f833ca5b9c30c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58233441"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602201"
 ---
 # <a name="phone-number-management-for-new-zealand"></a>Telefono gestione dei numeri per la Nuova Zelanda
 

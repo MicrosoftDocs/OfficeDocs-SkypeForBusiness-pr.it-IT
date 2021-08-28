@@ -12,18 +12,18 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.ExternalApplicationNextHopSettingsExpander
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: be7857e4-9a75-4de5-91b0-bcb241930a0c
-description: È possibile specificare il server hop successivo del pool di server applicazioni attendibili selezionando il pool edizione Enterprise Front End o edizione Standard Front End Server nell'elenco a discesa. Un Director o un pool di Director non è un'opzione valida per l'hop successivo del server applicazioni attendibili e non verrà visualizzato nell'elenco. Fare clic su OK per accettare e salvare le modifiche. Fare clic su Annulla per rimuovere le modifiche e uscire dalla pagina delle proprietà.
-ms.openlocfilehash: 95b24d90f8cf66777258f67eff216e51b4a3bfc017d6ea91757505d3ddc7da87
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: È possibile specificare il server hop successivo del pool di server applicazioni attendibili selezionando il pool front-end edizione Enterprise definito o edizione Standard Front End Server nell'elenco a discesa. Un Director o un pool di Director non è un'opzione valida per l'hop successivo del server applicazioni attendibili e non verrà visualizzato nell'elenco. Fare clic su OK per accettare e salvare le modifiche. Fare clic su Annulla per rimuovere le modifiche e uscire dalla pagina delle proprietà.
+ms.openlocfilehash: ad2d6b0dece52ee6c7c241ed8239c97113502e09
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54329760"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622428"
 ---
 # <a name="external-application-next-hop-settings-expander"></a>Espansione delle impostazioni dell'hop successivo dell'applicazione esterna
  
-È possibile specificare il server hop successivo del pool di server applicazioni attendibili selezionando il pool edizione Enterprise Front End o edizione Standard Front End Server nell'elenco a discesa. Un Director o un pool di Director non è un'opzione valida per l'hop successivo del server applicazioni attendibili e non verrà visualizzato nell'elenco. Fare **clic su OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
+È possibile specificare il server hop successivo del pool di server applicazioni attendibili selezionando il pool front-end edizione Enterprise definito o edizione Standard Front End Server nell'elenco a discesa. Un Director o un pool di Director non è un'opzione valida per l'hop successivo del server applicazioni attendibili e non verrà visualizzato nell'elenco. Fare **clic su OK** per accettare e salvare le modifiche. Fare clic su **Annulla** per rimuovere le modifiche e uscire dalla pagina delle proprietà.
   
 

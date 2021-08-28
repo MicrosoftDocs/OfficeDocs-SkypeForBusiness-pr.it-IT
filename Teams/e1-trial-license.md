@@ -8,19 +8,19 @@ audience: Admin
 ms.reviewer: aytange
 ms.service: msteams
 search.appverid: MET150
-localization_priority: Priority
+ms.localizationpriority: high
 description: Se non si ha Microsoft Teams ma serve in fretta, distribuire la versione di valutazione di Office 365 E1 agli utenti che hanno l'esigenza di lavorare in remoto o da casa (WFH) a seguito dell'epidemia di COVID-19 (coronavirus).
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_RemoteWorkers
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 46984365e574ed7f55ad92117750385d02942747
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 875693e23b5e13f48a031a21f0037f1576dbd1ce
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234771"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611695"
 ---
 # <a name="manage-the-office-365-e1-trial"></a>Gestire la versione di valutazione di Office 365 E1
 

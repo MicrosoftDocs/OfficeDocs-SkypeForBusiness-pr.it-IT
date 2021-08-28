@@ -9,21 +9,21 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e829a21e-9dfa-46ba-9b5b-077c175d6586
 description: 'Riepilogo: informazioni sul Rapporto riepilogativo attività peer-to-peer in Skype for Business Server.'
-ms.openlocfilehash: da8d23a0a51b23ccfbe0e15b7e2c79f81c88bf3559deb7005dc5d4f75f512ad2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: cd228175d0b254e70d4df0019566ee7e8784b2de
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286795"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622258"
 ---
 # <a name="peer-to-peer-activity-summary-report-in-skype-for-business-server"></a>Rapporto riepilogativo attività peer-to-peer in Skype for Business Server
  
 **Riepilogo:** Informazioni sul Rapporto riepilogativo attività peer-to-peer in Skype for Business Server.
   
-Il Rapporto riepilogativo attività peer-to-peer offre informazioni generali sulle sessioni di comunicazione peer-to-peer. Una sessione peer-to-peer in genere coinvolge solo due utenti e non richiede l'utilizzo dei servizi di Skype for Business Server conferencing. Al contrario, una conferenza coinvolge in genere più di due utenti e richiede l'utilizzo di servizi di Skype for Business Server conferenza. Le attività relative alle conferenze sono riepilogate nel Rapporto riepilogativo conferenze.
+Il Rapporto riepilogativo attività peer-to-peer offre informazioni generali sulle sessioni di comunicazione peer-to-peer. Una sessione peer-to-peer in genere coinvolge solo due utenti e non richiede l'utilizzo dei servizi Skype for Business Server conferencing. Al contrario, una conferenza coinvolge in genere più di due utenti e richiede l'utilizzo di servizi di Skype for Business Server conferenza. Le attività relative alle conferenze sono riepilogate nel Rapporto riepilogativo conferenze.
   
 Nel Rapporto riepilogativo attività peer-to-peer è possibile trovare risposte a domande come le seguenti:
   
@@ -67,7 +67,7 @@ Nella tabella seguente sono elencati i filtri che è possibile utilizzare con il
 |:-----|:-----|
 |**From** <br/> |Data e ora di inizio per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di inizio come segue:  <br/> 17/07/12015 13.00  <br/> Se non si immette una data/ora di inizio, il rapporto inizia automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**To** <br/> |Data e ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, inserire sia la data che l'ora di fine come segue:  <br/> 17/07/12015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
-|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio del 17/07/12015 e una data di fine del 28/02/2015, vengono visualizzati i dati per i giorni 07/08/12015 12.00 alle 07.00.00 del 9/07/12015 (ovvero un totale di 31 giorni di dati). <br/> |
+|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Mensile (è possibile visualizzare un massimo di 12 mesi) <br/>  Se le date di inizio e fine superano il numero massimo di valori consentiti per l'intervallo specificato, verrà visualizzato solo il numero massimo di valori a partire dalla data di inizio. Ad esempio, se si seleziona l'intervallo giornaliero con una data di inizio del 17/07/12015 e una data di fine del 28/02/2015, i dati vengono visualizzati per i giorni 07/08/12015 12.00 alle 07.00.00 del 9/07/12015 (ovvero un totale di 31 giorni di dati). <br/> |
    
 ## <a name="metrics"></a>Metriche
 

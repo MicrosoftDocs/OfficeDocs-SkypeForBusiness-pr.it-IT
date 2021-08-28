@@ -15,16 +15,16 @@ ms.reviewer: rowille
 description: L'amministratore può scoprire quali dati e autorizzazioni Microsoft Teams app richiedono all'organizzazione.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4f72dadc6fae9ce77de0f892b89c0c5627779cd8849d5f4c14c8b2d7cc6716e8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e2766da88fee53124d43b4e2b66c9c104ea41b8e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54288494"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610423"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Microsoft Teams e considerazioni sulle app
 
@@ -37,13 +37,13 @@ Microsoft Teams sono un modo per aggregare una o più funzionalità in un pacche
 
 Le app sono autorizzate dagli utenti e gestite dall'IT dal punto di vista dei criteri. Tuttavia, per la maggior parte, le autorizzazioni e il profilo di rischio di un'app sono definiti dalle autorizzazioni e dai profili di rischio delle funzionalità contenute nell'app. Di conseguenza, questo articolo si concentra sulle autorizzazioni e sulle considerazioni a livello di funzionalità.
 
-Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate nella documentazione per sviluppatori di [Microsoft Teams](/microsoftteams/platform/overview) o nelle autorizzazioni per [Microsoft Graph](/graph/permissions-reference). Si tratta semplicemente di una abbreviazione descrittiva ai fini di questo articolo.
+Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_MESSAGE e REPLYTO_MESSAGE, non vengono visualizzate nella documentazione per sviluppatori [di Microsoft Teams](/microsoftteams/platform/overview) o nelle autorizzazioni per [Microsoft Graph](/graph/permissions-reference). Si tratta semplicemente di una abbreviazione descrittiva ai fini di questo articolo.
 
 
 | Titolo   | Descrizione    |
 |-----------|------------|
-| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Usare le tabelle seguenti come guida per comprendere le autorizzazioni richieste dall'app che si sta esaminando.</li></ul> |
-| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se consentire l'accesso all'app o al servizio stesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, ad eccezione dei bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Pertanto, qualsiasi app che include un bot richiede queste autorizzazioni e ha almeno quel profilo di rischio. </li></ul>|
+| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Usare le tabelle seguenti come guida per capire quali autorizzazioni sono richieste dall'app che si sta esaminando.</li></ul> |
+| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se consentire l'accesso all'app o al servizio stesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, ad eccezione dei bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Di conseguenza, qualsiasi app che include un bot richiede queste autorizzazioni e ha almeno quel profilo di rischio. </li></ul>|
 
 Vedere anche [Richiedere autorizzazioni per i dispositivi per la Microsoft Teams scheda .](/microsoftteams/platform/concepts/device-capabilities/native-device-permissions)
 
@@ -61,9 +61,9 @@ Nessuno
 
 - Un'app deve divulgare i dati usati e i relativi collegamenti alle condizioni d'uso e all'informativa sulla privacy.
 
-- [Il consenso specifico delle](resource-specific-consent.md) risorse fornisce un set di autorizzazioni che le app possono richiedere, che vengono visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni di consenso specifiche delle risorse, vedere informazioni di [Graph sulle autorizzazioni.](/graph/permissions-reference#teams-resource-specific-consent-permissions)
+- [Il consenso specifico delle](resource-specific-consent.md) risorse fornisce un set di autorizzazioni che le app possono richiedere, che vengono visualizzate nella schermata di installazione dell'app. Per altre informazioni sulle autorizzazioni di consenso specifiche delle risorse, vedere informazioni di Graph [sulle autorizzazioni.](/graph/permissions-reference#teams-resource-specific-consent-permissions)
 
-- Le app potrebbero anche avere bisogno di autorizzazioni diverse da quelle specifiche per le risorse. Dopo l'installazione di un'app, l'app può richiedere Graph autorizzazioni tramite una richiesta di consenso. Per altre informazioni, vedere Informazioni sulle esperienze [di consenso delle applicazioni di Azure AD.](/azure/active-directory/develop/application-consent-experience) È possibile configurare le autorizzazioni API e il consenso nel portale di Azure. Per altre informazioni, vedere Azure Active Directory [framework di consenso.](/azure/active-directory/develop/consent-framework)
+- Le app possono anche avere bisogno di autorizzazioni diverse da quelle specifiche per le risorse. Dopo l'installazione di un'app, l'app può richiedere Graph autorizzazioni tramite una richiesta di consenso. Per altre informazioni, vedere Informazioni sulle esperienze [di consenso delle applicazioni di Azure AD.](/azure/active-directory/develop/application-consent-experience) È possibile configurare le autorizzazioni API e il consenso nel portale di Azure. Per altre informazioni, vedere Azure Active Directory [framework di consenso.](/azure/active-directory/develop/consent-framework)
 
 ## <a name="bots-and-messaging-extensions"></a>Bot ed estensioni di messaggistica
 
@@ -93,7 +93,7 @@ Nessuno
 
 - I bot hanno accesso solo ai team a cui sono stati aggiunti o agli utenti che li hanno installati.
 
-- I bot ricevono solo messaggi in cui vengono menzionati esplicitamente dagli utenti. Questi dati lasciano la rete aziendale.
+- I bot ricevono solo i messaggi in cui vengono menzionati esplicitamente dagli utenti. Questi dati lasciano la rete aziendale.
 
 - I bot possono rispondere solo alle conversazioni in cui sono menzionati.
 
@@ -115,7 +115,7 @@ Nessuno
 
 - Le estensioni di messaggistica, invece, visualizzano gli indirizzi IP degli utenti e le informazioni sul referrer.
 
-- Le linee guida per le app (e il processo di revisione di AppSource) richiedono la discrezione di pubblicare messaggi di chat personali agli utenti (tramite l'autorizzazione POST_MESSAGE_TEAM) per scopi validi. In caso di abuso, gli utenti possono bloccare il bot, gli amministratori del tenant possono bloccare l'app e Microsoft può bloccare i bot centralmente, se necessario.
+- Le linee guida dell'app (e il processo di revisione di AppSource) richiedono la discrezione di pubblicare messaggi di chat personali agli utenti (tramite l'autorizzazione POST_MESSAGE_TEAM) per scopi validi. In caso di abuso, gli utenti possono bloccare il bot, gli amministratori del tenant possono bloccare l'app e Microsoft può bloccare i bot centralmente, se necessario.
 
 <sup>1</sup> Alcuni bot inviano solo messaggi (POST_MESSAGE_USER). Si chiamano bot "solo notifiche", ma il termine non fa riferimento a ciò che un bot è consentito o non può eseguire, significa che il bot non vuole esporre un'esperienza di conversazione. Teams usa questo campo per disabilitare la funzionalità nell'interfaccia utente che normalmente verrebbe abilitata; il bot non è limitato alle attività consentite rispetto ai bot che espongono un'esperienza di conversazione.
 
@@ -170,7 +170,7 @@ REPLYTO_CONNECTOR_MESSAGE. Alcuni connettori supportano messaggi utilizzabili, c
 
 - L'URL dell'istanza del connettore deve essere considerato segreto/riservato: chiunque abbia tale URL può pubblicarlo, ad esempio un indirizzo di posta elettronica. Di conseguenza, esiste un rischio di posta indesiderata o collegamenti a siti di phishing o malware. In questo caso, i proprietari del team possono eliminare l'istanza del connettore.
 
-- Se il servizio che invia i messaggi del connettore viene compromesso e inizia a inviare collegamenti di posta indesiderata/phishing/malware, un amministratore del tenant può impedire la creazione di nuove istanze del connettore e Microsoft può bloccarle centralmente.
+- Se il servizio che invia messaggi del connettore viene compromesso e inizia a inviare collegamenti di posta indesiderata/phishing/malware, un amministratore del tenant può impedire la creazione di nuove istanze del connettore e Microsoft può bloccarle centralmente.
 
 > [!NOTE]
 > Al momento non è possibile sapere quali connettori supportano i messaggi REPLYTO_CONNECTOR_MESSAGE messaggi.
@@ -191,7 +191,7 @@ Nessuno
 
 - I webhook in uscita sono simili ai bot, ma hanno meno privilegi. Devono essere menzionati esplicitamente, proprio come i bot.
 
-- Quando viene registrato un webhook in uscita, viene generato un segreto, che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams invece di un utente malintenzionato. Questo segreto deve rimanere segreto; chiunque abbia accesso ad esso può impersonare Microsoft Teams. Se il segreto viene compromesso, il webhook in uscita può essere eliminato e ri-creato e verrà generato un nuovo segreto.
+- Quando viene registrato un webhook in uscita, viene generato un segreto, che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams invece di un utente malintenzionato. Questo segreto deve rimanere segreto; chiunque abbia accesso ad essa può impersonare Microsoft Teams. Se il segreto viene compromesso, il webhook in uscita può essere eliminato e ri-creato e verrà generato un nuovo segreto.
 
 - Anche se è possibile creare un webhook in uscita che non convalida il segreto, è consigliabile non farlo.
 
