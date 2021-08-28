@@ -1,5 +1,5 @@
 ---
-title: Uso del report Power BI CQD per visualizzare il report Operatore automatico & coda di chiamata
+title: Uso del report Power BI CQD per visualizzare Operatore automatico & cronologia coda di chiamata
 ms.author: colongma
 author: clyvr
 manager: roykuntz
@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,13 +22,13 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
-description: Informazioni su come usare il report Dashboard qualità Power BI per visualizzare i Operatore automatico della coda di chiamata.
-ms.openlocfilehash: 844ab5caee23cb504420925c9f13bc261d4d839cce19f7ae557d4637562a963e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come usare il report Dashboard qualità Power BI chiamata per visualizzare i Operatore automatico e la cronologia della coda di chiamata.
+ms.openlocfilehash: 57cd28fef4a1e24ecc4f29344a6ec91af5e2dbec
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331088"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593290"
 ---
 # <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
 È necessario avere installato Power BI Desktop. È possibile installarlo da [Microsoft Windows Store.](https://aka.ms/pbidesktopstore)
@@ -36,7 +36,7 @@ ms.locfileid: "54331088"
 È possibile usare la versione gratuita di Power BI Desktop. La versione minima compatibile è 2.85.681.0 (settembre 2020).
 
 ## <a name="permissions-to-access-the-cqd-pipeline"></a>Autorizzazioni per accedere alla pipeline CQD
-L'account che si usa per visualizzare il report cronologico di AA & CQ Analytics deve avere le autorizzazioni per accedere alla pipeline di dati CQD. Per altre informazioni, vedere il ruolo di [accesso CQD.](./turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd)
+L'account che si usa per visualizzare il report cronologico AA & CQ Analytics deve avere le autorizzazioni per accedere alla pipeline di dati CQD. Per altre informazioni, vedere il ruolo [di accesso CQD.](./turning-on-and-using-call-quality-dashboard.md#assign-admin-roles-for-access-to-cqd)
 
 ## <a name="installation"></a>Installazione 
 I passaggi seguenti presuppongono che Power BI Desktop nel computer e che l'account abbia le autorizzazioni necessarie per accedere alla pipeline di dati CQD.
@@ -94,12 +94,12 @@ Eseguire questa procedura:
 
 |Nome                                    |Tipo di dati                |Descrizione                            |
 |:---------------------------------------|:------------------------|:--------------------------------------|
-|Operatore automatico Identity                 |stringa                   |Nome dell'account della risorsa allegato a AA<br>Esempio: aa_test@microsoft.com|
-|Operatore automatico'ora di inizio della catena         |datetime                 |Ora di inizio della catena AA                    |
+|Operatore automatico identity                 |stringa                   |Nome dell'account della risorsa allegato a AA<br>Esempio: aa_test@microsoft.com|
+|Operatore automatico inizio catena         |datetime                 |Ora di inizio della catena AA                    |
 |Operatore automatico ricerca nella directory  |stringa                   |Ultimo metodo di ricerca rubrica        |
 |Operatore automatico trasferimento          |stringa                   |Tipo di destinazione trasferimento chiamata<br>Valori possibili:<br>§ sconosciuto: il tipo di entità non è stato specificato<br>§ utente - entità utente<br>§ orgaa - Entità Operatore automatico organizzativa<br>§ hunt_group - Entità Coda di chiamata<br>§ application - voice application entity<br>§ external_pstn - entità PSTN esterna<br>§ shared_voicemail - entità segreteria telefonica condivisa|
-|Operatore automatico risultato della chiamata              |stringa                   |Risultato della chiamata:<br>§ sconosciuto: la chiamata non è riuscita a configurare o trasferire e il servizio non ha ricevuto alcun motivo di errore significativo <br>§ transferred_to_user - Chiamata trasferita a un utente tramite chiamata per nome/interno o opzione di menu configurata <br>§ transferred_to_operator - La chiamata è stata trasferita a un operatore configurato, ad esempio se AA è configurato con un operatore per le ore successive <br>§ failover_to_operator - Fallback all'operatore quando il trasferimento non riesce o il riconoscimento del nome non funziona dopo tre tentativi<br>§ user_terminated - Il chiamante ha terminato la chiamata <br>§ service_declined - Chiamata rifiutata dal servizio, ciò potrebbe verificarsi se il servizio non riesce a recuperare Operatore automatico configurazione <br>§ service_terminated - Il servizio back-end ha terminato la chiamata, se un trasferimento a destinazione non è riuscito e nessun operatore è configurato come fallback <br>§ failed_to_establish_media - Media establishment failed between caller and service <br>§ terminated_no_operator - Riconoscimento del nome non riuscito dopo tre tentativi e non è configurato alcun operatore <br>§ terminated_transfer_failed - Trasferimento alla destinazione non riuscito e nessun operatore è configurato <br>§ terminated_automatic_selection- Se non è configurata alcuna azione durante o dopo l'orario, la chiamata terminerà per impostazione predefinita <br>§ transferred_to_shared_voicemail - Chiamata trasferita alla segreteria telefonica condivisa se configurata come destinazione <br>§ oaa_chain_too_long- Quando una catena di Operatore automatico supera cinque operatori automatici in successione, la chiamata termina per evitare possibili cicli di chiamata <br>§ oaa_session_too_long - La chiamata ha superato la durata massima consentita della sessione ed è scaduto |
-|Operatore automatico chiamata Flow                |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>§ annuncio|
+|Operatore automatico risultato della chiamata              |stringa                   |Risultato della chiamata:<br>§ sconosciuto: la chiamata non è riuscita a configurare o trasferire e il servizio non ha ricevuto alcun motivo di errore significativo <br>§ transferred_to_user - Chiamata trasferita a un utente tramite Chiamata per nome/interno o opzione di menu configurata <br>§ transferred_to_operator - La chiamata è stata trasferita a un operatore configurato, ad esempio se AA è configurato con un operatore per le ore successive <br>§ failover_to_operator - Fallback all'operatore quando il trasferimento non riesce o il riconoscimento del nome non funziona dopo tre tentativi<br>§ user_terminated - Il chiamante ha terminato la chiamata <br>§ service_declined - Chiamata rifiutata dal servizio, ciò potrebbe verificarsi se il servizio non riesce a recuperare Operatore automatico configurazione <br>§ service_terminated - Il servizio back-end ha terminato la chiamata, se un trasferimento a destinazione non è riuscito e nessun operatore è configurato come fallback <br>§ failed_to_establish_media - Media establishment failed between caller and service <br>§ terminated_no_operator - Riconoscimento del nome non riuscito dopo tre tentativi e nessun operatore è configurato <br>§ terminated_transfer_failed - Trasferimento alla destinazione non riuscito e nessun operatore è configurato <br>§ terminated_automatic_selection- Se non è configurata alcuna azione durante o dopo l'orario, la chiamata terminerà per impostazione predefinita <br>§ transferred_to_shared_voicemail - Chiamata trasferita alla segreteria telefonica condivisa se configurata come destinazione <br>§ oaa_chain_too_long- Quando una catena di Operatore automatico supera cinque operatori automatici in successione, la chiamata termina per evitare possibili cicli di chiamata <br>§ oaa_session_too_long - La chiamata ha superato la durata massima consentita della sessione ed è scaduto |
+|Operatore automatico chiama Flow                |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>§ annuncio|
 |È Operatore automatico coinvolta              |Boolean                  |Indicato se AA è coinvolto nella chiamata |
 |Operatore automatico numero di azioni chiamanti      |int                      |Numero di azioni usate dal chiamante         |
 |Operatore automatico Durata catena secondi   |int                      |Durata della chiamata in AA                 |
@@ -120,7 +120,7 @@ Eseguire questa procedura:
 |:---------------------------------------|:------------------------|:--------------------------------------|
 |Nome AA                                   |stringa                   |Operatore automatico (ID account risorsa) |
 |AACallFlow                              |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>annuncio |
-|AACallResult                            |stringa                   |Risultato della Operatore automatico chiamata:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined - errore di configurazione AA<br>§ service_terminated - Errori AA interni<br>§ failed_to_establish_media<br> terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long          |
+|AACallResult                            |stringa                   |Risultato della Operatore automatico chiamata:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined – errore di configurazione AA<br>§ service_terminated - Errori AA interni<br>§ failed_to_establish_media<br> terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long          |
 |AAChainDuration                         |stringa                   |Durata della Operatore automatico chiamata in secondi  |
 |AACount                                 |stringa                   |# di Operatore automatico implicano nella chiamata         |
 |AADirectorySearchMethod                 |stringa                   |Metodo di ricerca usato nella chiamata:<br>§ abs_search_dtmf<br>§ abs_search_extension<br>§ abs_search_name|

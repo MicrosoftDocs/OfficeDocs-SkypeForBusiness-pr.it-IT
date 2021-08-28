@@ -16,19 +16,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Licensing
 - seo-marvel-mar2020
 description: Informazioni sull'opzione pay-per-minute per abilitare le funzionalità di audioconferenza per le organizzazioni che usano i contratti multilicenza Microsoft.
-ms.openlocfilehash: d3aea84ec5686c5ed91dbcd5dbda0d4c9ca8649c2eef7dd3c3a62b4def46688e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ef741bfba6667711c03bd90d2018d7da2093eac8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593160"
 ---
 # <a name="audio-conferencing-pay-per-minute"></a>Audioconferenze con tariffe al minuto
 
@@ -43,7 +43,7 @@ Puoi scoprire se il tuo [paese/area geografica è supportato per](country-and-re
   
 ## <a name="need-some-details"></a>Servono alcuni dettagli?
 
-Mentre l'offerta di licenza audioconferenza per utente include l'utilizzo dell'accesso esterno e l'uso della chiamata in uscita, l'audioconferenza paga al minuto per tutto l'utilizzo delle audioconferenze al minuto senza pagare una licenza mensile per **utente.** In questo modo, tutte le chiamate in ingresso e in uscita verranno addebitate al minuto, tra cui:
+Mentre l'offerta di licenza per utente per audioconferenza include l'utilizzo dell'accesso esterno e l'uso della chiamata in uscita, l'audioconferenza paga al minuto per tutto l'utilizzo delle audioconferenze al minuto senza pagare una licenza mensile per **utente.** In questo modo, tutte le chiamate in ingresso e in uscita verranno addebitate al minuto, tra cui:
   
 - Chiamate in ingresso ai numeri a pedaggio delle audioconferenze dell'organizzazione.
     

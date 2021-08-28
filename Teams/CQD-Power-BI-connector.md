@@ -13,16 +13,16 @@ search.appverid: MET150
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Installare Power BI Connector per usare i modelli di query CQD (Call Quality Dashboard)
-ms.openlocfilehash: 7c82cfbb2279e680d6f088840302a6027d5bdd18
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 258d3be034bd956c518f1ed7a67273f064b383b6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234341"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593320"
 ---
-# <a name="install-microsoft-call-quality-connector-for-power-bi-to-use-call-quality-dashboard-query-templates"></a>Installare il connettore Microsoft Call Quality per Power BI usare i modelli di query di Call Quality Dashboard
+# <a name="install-microsoft-call-quality-connector-for-power-bi-to-use-call-quality-dashboard-query-templates"></a>Installare il connettore Microsoft Call Quality Power BI usare i modelli di query di Call Quality Dashboard
 
 Prima di poter usare i modelli di query di Power BI (file PBIX) per Microsoft Teams Call Quality Dashboard (CQD), è necessario installare il connettore Microsoft Call Quality per Power BI, usando il file *MicrosoftCallQuality.pqx* incluso nel [download.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true)
 
@@ -35,7 +35,7 @@ Assicurarsi di avere il ruolo [di accesso CQD](./turning-on-and-using-call-quali
 
 ## <a name="installation"></a>Installazione
 
-Il processo per l'installazione di un connettore personalizzato e la modifica della sicurezza per abilitare l'uso del connettore è descritto in dettaglio nella Power BI [documentazione.](/power-bi/desktop-connector-extensibility) Per semplicità, ecco una rapida spiegazione:
+Il processo per l'installazione di un connettore personalizzato e la modifica della sicurezza per abilitare l'uso del connettore è descritto in dettaglio nella documentazione Power BI [informazioni.](/power-bi/desktop-connector-extensibility) Per semplicità, ecco una rapida spiegazione:
 
 1. Verificare se nel computer è già presente una *\[ cartella Power BI Desktop \] \\ \\ connettori* personalizzati. In caso contrario, creare questa cartella. <sup>1</sup>
 
@@ -53,7 +53,7 @@ Per creare un report ed eseguire query, è prima necessario connettersi all'orig
 
     ![Screenshot: Power BI Connector](media/CQD-power-bi-connector1-resize.png)
 
-2. A *questo punto dovrebbe* essere visualizzata la finestra Ottieni dati. Passa a *Servizi online,* quindi seleziona *Microsoft Call Quality (Beta)* e premi *Connessione*.
+2. A *questo punto dovrebbe* essere visualizzata la finestra Ottieni dati. Passa a *Servizi online,* quindi seleziona *Qualità chiamata Microsoft (beta)* e premi *Connessione*.
 
     ![Screenshot: Power BI Connector](media/CQD-power-bi-connector2-resize.png)
 
@@ -63,7 +63,7 @@ Per creare un report ed eseguire query, è prima necessario connettersi all'orig
 
 5. Infine, verrà visualizzato un prompt finale che mostra l'intero modello di dati per Call Quality Dashboard. A questo punto non saranno visibili dati, ma solo il modello di dati per CQD. Selezionare *Carica* per completare il processo di configurazione.
 
-6. A questo punto, Power BI il modello di dati sul lato destro della finestra. La pagina rimarrà altrimenti vuota e non verrà caricata alcuna query per impostazione predefinita. Procedere alla **creazione di query** di seguito per creare una query e restituire dati.
+6. A questo punto, Power BI il modello di dati verrà caricato sul lato destro della finestra. La pagina rimarrà altrimenti vuota e non verrà caricata alcuna query per impostazione predefinita. Procedere alla **creazione di query** di seguito per creare una query e restituire dati.
 
 Se uno dei passaggi durante il processo di configurazione non è stato chiaro, una spiegazione più dettagliata del processo è disponibile in Guida introduttiva: Connessione ai dati [in Power BI Desktop](/power-bi/desktop-quickstart-connect-to-data).
 
@@ -82,7 +82,7 @@ Al termine dell'installazione, nel riquadro Campi dovrebbero essere visualizzati
     > [!IMPORTANT]
     > Call Quality Dashboard richiede una misura per l'esecuzione di qualsiasi query. Se non si aggiunge una misura a una query, la query avrà esito negativo.
 
-3. Selezionare quindi le dimensioni in base alle quali filtrare e trascinarle nel campo Filtri in questo *campo* visivo *nel riquadro* Filtri. Il connettore Qualità chiamata Microsoft attualmente supporta il filtro di base (selezionare i valori da un elenco di valori di dimensione possibili), Filtro avanzato  (specificare  manualmente valori e operandi in base a cui filtrare, in modo simile a Call Quality Dashboard) e *Filtro* data relativa (disponibile solo per le dimensioni Ora di fine e Ora inizio).   Il filtro in base *a Top N* non è supportato da Call Quality Dashboard.
+3. Selezionare quindi le dimensioni in base alle quali filtrare e trascinarle nel campo Filtri in questo *campo* visivo *nel riquadro* Filtri. Il connettore Qualità chiamata Microsoft attualmente supporta il filtro di base (selezionare i valori da un elenco di valori di dimensione possibili), Filtro avanzato  (specificare  manualmente valori e operandi in base a cui filtrare, in modo simile a Call Quality Dashboard) e *Filtro* data relativa (disponibile solo per le dimensioni Ora di fine e Ora inizio).   Il filtro in *base a Top N* non è supportato da Call Quality Dashboard.
 
     ![Screenshot: Power BI Connector](media/CQD-power-bi-connector5-resize.png)
 
@@ -116,7 +116,7 @@ Le query del connettore Microsoft Call Quality devono essere progettate con la f
 
 ## <a name="limitations"></a>Limitazioni
 
-Nonostante l'uso di Power BI, non tutte le funzionalità Power BI sono supportate dal connettore Microsoft Call Quality, a causa di limitazioni nel modello di dati di Call Quality Dashboard o nei connettori DirectQuery in generale. L'elenco seguente annota alcune delle limitazioni più degne di nota del connettore, ma questo elenco non deve essere considerato esaustivo:
+Nonostante l'uso di Power BI, non tutte le funzionalità di Power BI sono supportate dal connettore Microsoft Call Quality, a causa di limitazioni sul modello di dati di Call Quality Dashboard o sui connettori DirectQuery in generale. L'elenco seguente annota alcune delle limitazioni più degne di nota del connettore, ma questo elenco non deve essere considerato esaustivo:
 
 1. **Colonne calcolate :** I connettori DirectQuery in generale hanno un supporto limitato per le colonne calcolate in Power BI. Alcune colonne calcolate potrebbero funzionare con il connettore, che queste colonne sono eccezioni. Come regola generale, le colonne calcolate non funzionano.
 
@@ -124,15 +124,15 @@ Nonostante l'uso di Power BI, non tutte le funzionalità Power BI sono supportat
 
 3. **Oggetti visivi personalizzati :** Anche se il connettore Microsoft Call Quality funziona con un'ampia gamma di oggetti visivi personalizzati, non siamo in grado di garantire la compatibilità con tutti gli oggetti visivi personalizzati. Molti oggetti visivi personalizzati si basano sull'uso di colonne calcolate o dati importati, nessuno dei quali è supportato dai connettori DirectQuery.
 
-4. **Riferimento a dati memorizzati nella cache:** Power BI attualmente non supporta il riferimento ai dati memorizzati nella cache da un connettore DirectQuery in alcun modo. Qualsiasi tentativo di fare riferimento ai risultati di una query comporta la creazione di una nuova query.
+4. **Riferimento a dati memorizzati** nella cache: Power BI attualmente non supporta il riferimento ai dati memorizzati nella cache da un connettore DirectQuery in alcun modo. Qualsiasi tentativo di fare riferimento ai risultati di una query comporta la creazione di una nuova query.
 
 5. **Filtro dei dati relativi:** È supportato nel connettore Qualità chiamata Microsoft, ma solo con *le* dimensioni Ora inizio *e Ora* fine. Anche se la *dimensione Data* può essere la scelta più ovvia per il filtro della data *relativa,* La data non viene archiviata come oggetto data e quindi non supporta il filtro della data relativa in Power BI.
 
 6. **Query di solo misurazione -** Al momento non sono supportati nel connettore Microsoft Call Quality. Quando si crea una visualizzazione con tre o più misure senza dimensioni, i dati della colonna verranno trasposti. Per evitare questo problema, includere sempre nelle visualizzazioni almeno una dimensione, ad esempio Mese Anno. Questa soluzione dovrebbe essere risolta in un rilascio imminente del connettore Microsoft Call Quality per Power BI.
 
-7. **Government Community Cloud (GCC) -** Per i clienti dell'GCC, il connettore Microsoft Call Quality funzionerà solo con Power BI Desktop clienti. Il connettore Microsoft Call Quality non è attualmente compatibile con il servizio Power BI per GCC clienti.
+7. **Government Community Cloud (GCC) -** Per i clienti dell'GCC, il connettore Qualità chiamata Microsoft funzionerà solo quando si usa Power BI Desktop. Il connettore Microsoft Call Quality non è attualmente compatibile con il servizio Power BI per GCC clienti.
 
-La maggior parte di questi problemi sono restrizioni alla progettazione del connettore DirectQuery in Power BI o fondamentali per la progettazione del modello di dati CQD.
+La maggior parte di questi problemi è una restrizione alla progettazione del connettore DirectQuery in Power BI fondamentale per la progettazione del modello di dati CQD.
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
@@ -140,7 +140,7 @@ La maggior parte di questi problemi sono restrizioni alla progettazione del conn
 
 > **Non è stato possibile caricare** i dati per questo oggetto visivo: errore OLE DB o ODBC: [Espressione.Errore] Non è stato possibile piegare l'espressione all'origine dati. Provare un'espressione più semplice.
 
-I filtri dei dati data non sono supportati con il connettore Microsoft Call Quality. Per specificare un intervallo di date, applicare due filtri al report, specificando un valore minore di e maggiore di data.
+I filtri dei dati data non sono supportati con il connettore Microsoft Call Quality. Per specificare un intervallo di date, applicare due filtri al report, specificando una data minore di e maggiore di.
 
 In alternativa, se le date da visualizzare sono recenti, applicare un filtro data relativo per visualizzare solo i dati relativi agli ultimi N giorni/settimane/mesi.
 
@@ -160,19 +160,19 @@ Se si verificano altri errori al di fuori di questo ambito, informare il team di
 
 ## <a name="footnotes"></a>Note a piè di pagina
 
-**<sup>1</sup>** Alcuni processi e app (ad esempio, OneDrive) possono causare la modifica della cartella radice Documenti. assicurarsi che la *directory Power BI Desktop \\ Connettori* personalizzati sia inserita all'interno della cartella radice corrente Documenti.
+**<sup>1</sup>** Alcuni processi e app (ad esempio, OneDrive) possono causare la modifica della cartella radice Documenti; assicurarsi che la *directory Power BI Desktop \\ connettori* personalizzati sia inserita all'interno della cartella radice corrente Documenti.
 
-**<sup>2</sup>** Le credenziali di accesso usate per Call Quality *Dashboard* non devono essere le stesse usate per accedere all'app Power BI Desktop stessa.
+**<sup>2</sup>** Le credenziali di accesso usate per Call Quality *Dashboard* non devono essere le stesse usate per accedere all'app Power BI Desktop chiamata stessa.
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 ### <a name="when-will-the-power-bi-connector-be-updated-from-beta-status"></a>Quando il connettore Power BI verrà aggiornato dallo stato "Beta"?
 
-Nonostante il tag Beta, il connettore Microsoft Call Quality (Beta) per Power BI è la prima versione "release" del connettore ed è stato ufficialmente firmato dal team di Power BI per riflettere questo. Al momento del rilascio iniziale del connettore, il team di Power BI non era in grado di fornire supporto e certificazione più ampia, ma era ancora pronto a attestare la sicurezza, l'autenticità e la funzionalità generale del connettore Microsoft Call Quality. In futuro, stiamo pianificando di investire nel connettore Microsoft Call Quality per Power BI nel prossimo futuro.
+Nonostante il tag Beta, il connettore Microsoft Call Quality (Beta) per Power BI è la prima versione "release" del connettore ed è stato ufficialmente firmato dal team di Power BI per riflettere questo problema. Al momento del rilascio iniziale del connettore, il team di Power BI non era in grado di fornire supporto e certificazione più ampia, ma era ancora pronto a attestare la sicurezza, l'autenticità e la funzionalità generale del connettore Microsoft Call Quality. In prospettiva, stiamo pianificando di investire nel connettore Microsoft Call Quality per Power BI nel prossimo futuro.
 
 ### <a name="why-does-the-connector-seem-slower-compared-to-call-quality-dashboard-in-the-browser-what-can-i-do-to-improve-performance"></a>Perché il connettore sembra più lento rispetto a Call Quality Dashboard nel browser? Cosa si può fare per migliorare le prestazioni?
 
-Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel browser che nel connettore.  Come qualsiasi altra app autonoma, Power BI il tempo di autenticazione e rendering alle prestazioni. Inoltre, la differenza riguarda il numero di query simultanee eseguite. Poiché la versione nel browser di Call Quality Dashboard aveva opzioni di visualizzazione meno sviluppate e con un'elevata densità di informazioni, la maggior parte dei report era limitata al caricamento di 2-3 query alla volta. D'altra parte, i modelli di connettore spesso visualizzano più di 20 query simultanee. Se si vogliono creare report reattivi come quelli precedenti, provare a creare report con non più di 2-3 query per scheda.
+Le prestazioni delle query per i vari modelli sono in realtà le stesse sia nel browser che nel connettore.  Come qualsiasi altra app autonoma, Power BI l'autenticazione e il tempo di rendering alle prestazioni. Inoltre, la differenza riguarda il numero di query simultanee eseguite. Poiché la versione nel browser di Call Quality Dashboard aveva opzioni di visualizzazione meno sviluppate e con un'elevata densità di informazioni, la maggior parte dei report era limitata al caricamento di 2-3 query alla volta. D'altra parte, i modelli di connettore spesso visualizzano più di 20 query simultanee. Se si vogliono creare report reattivi come quelli precedenti, provare a creare report con non più di 2-3 query per scheda.
 
 Per altre informazioni, vedere gli articoli seguenti:
 
@@ -183,7 +183,7 @@ Per altre informazioni, vedere gli articoli seguenti:
 
 Il limite di 10.000 righe è in realtà specificato alla fine dell'API ed è progettato per migliorare significativamente le prestazioni e ridurre il rischio di errori di esecuzione delle query derivanti da condizioni di memoria insufficiente.
 
-Invece di provare ad aumentare il numero di righe dei risultati, è meglio ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare queste procedure consigliate. Se possibile, iniziare esaminando gli indicatori KPI usando dimensioni di cardinalità più ampie e inferiori, ad esempio Mese, Anno, Data, Area geografica, Paese e così via. Da qui è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. L'Helpdesk e i Location-Enhanced report forniscono entrambi esempi di questo flusso di lavoro di drill-down.
+Invece di provare ad aumentare il numero di righe dei risultati, è meglio ristrutturare i report in base alle procedure consigliate per i connettori. I modelli inclusi sono progettati per illustrare queste procedure consigliate. Se possibile, iniziare esaminando gli indicatori KPI usando dimensioni di cardinalità più ampie e inferiori, ad esempio Mese, Anno, Data, Area geografica, Paese e così via. Da qui è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. L'Helpdesk e Location-Enhanced report forniscono entrambi esempi di questo flusso di lavoro di drill-down.
 
 
 

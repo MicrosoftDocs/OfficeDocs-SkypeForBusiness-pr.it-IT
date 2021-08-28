@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Canada.
-ms.openlocfilehash: b1b28b9caa3479de81d64639a0d638e3d5eada59967e1328f806b55993363472
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 034a9655afad69b90c9195dad5f7f7bceeac4cba
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279773"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593140"
 ---
 # <a name="availability-in-canada"></a>Disponibilità in Canada
 
@@ -65,7 +65,7 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 | Chiamate in uscita possibili verso...?  <br/>                 | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/>                                                                                                                                                                  |
 
 > [!Note]
-> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente solo a "nazionali", un utente degli Stati Uniti non sarà in grado di chiamare il Canada e, allo stesso modo, un utente canadese non sarà in grado di chiamare un utente statunitense.
+> Quando un utente del Piano per chiamate (nazionale o nazionale e internazionale) negli Stati Uniti compone un numero di telefono in Canada, verrà trattato come una chiamata nazionale. Questo è anche il caso in cui un utente in Canada compone un numero di telefono negli Stati Uniti. Tuttavia, se si usano anche i criteri del piano di chiamata per limitare la chiamata in uscita dell'utente solo "nazionale", un utente statunitense non sarà in grado di chiamare il Canada e, allo stesso modo, un utente canadese non sarà in grado di chiamare un utente statunitense.
 
 > [!Note]
 > Le chiamate verso gli Stati Uniti vengono trattate come chiamate nazionali.

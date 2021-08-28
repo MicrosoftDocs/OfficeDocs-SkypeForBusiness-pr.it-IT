@@ -14,22 +14,22 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
-description: Scopri come configurare i canali per la moderazione in Microsoft Teams, incluso come aggiungere membri del team come moderatori del canale.
+description: Informazioni su come configurare canali per la moderazione in Microsoft Teams, incluso come aggiungere membri del team come moderatori del canale.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: c0aa2035a23a82d0a73009c379b99d34e9ccf7ff1b1b3dd0806dd7d6d0afcdf7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bb709d8e618b68fad2bc87dc658eb6f67853e891
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304848"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593030"
 ---
 # <a name="set-up-and-manage-channel-moderation-in-microsoft-teams"></a>Configurare e gestire la moderazione dei canali in Microsoft Teams
 
 In Microsoft Teams, i proprietari del team possono attivare la moderazione per un canale standard per controllare chi può avviare nuovi post e rispondere ai post in quel canale.
 
-I proprietari del team possono anche aggiungere membri del team come moderatori. Un proprietario del team potrebbe non avere le competenze in materia a livello di canale per supportare al meglio la moderazione dei canali. Consentendo a membri specifici del team di moderare un canale, la responsabilità di gestire contenuto e contesto all'interno di un canale viene condivisa tra i proprietari del team e i moderatori del canale. Ad esempio, un proprietario del team può aggiungere i proprietari di attività o i proprietari di contenuto come moderatori, in modo da controllare la condivisione delle informazioni in quel canale.
+I proprietari del team possono anche aggiungere membri del team come moderatori. Un proprietario del team potrebbe non avere le competenze in materia a livello di canale per supportare al meglio la moderazione dei canali. Consentendo a membri specifici del team di moderare un canale, la responsabilità di gestire contenuto e contesto all'interno di un canale viene condivisa tra i proprietari del team e i moderatori del canale. Ad esempio, il proprietario di un team può aggiungere i proprietari di attività o i proprietari di contenuto come moderatori, in modo da controllare la condivisione delle informazioni in quel canale.
 
 > [!NOTE]
 > La moderazione dei canali è disponibile per i canali standard. Non è disponibile per il canale Generale o per i canali privati.
@@ -54,7 +54,7 @@ In questo scenario, il proprietario del team aggiunge i clienti potenziali di ma
 
 ### <a name="use-a-channel-for-class-discussions-in-teams-for-education"></a>Usare un canale per le discussioni di classe in Teams per l'istruzione
 
-In Teams per l'istruzione, un docente di scienze vuole usare un canale per coinvolgere gli studenti in discussioni mirate su specifici argomenti della classe.
+In Teams per l'istruzione, un docente di scienze vuole usare un canale per coinvolgere gli studenti in discussioni mirate su argomenti specifici della classe.
 
 In questo scenario, il docente consente agli assistenti didattici di moderare il canale. Gli assistenti didattici possono quindi creare nuovi post per avviare e avviare discussioni con gli studenti.
 
@@ -76,7 +76,7 @@ Per attivare la moderazione per un canale, in **Moderazione canale** fare clic s
 
 ### <a name="add-or-remove-channel-moderators"></a>Aggiungere o rimuovere moderatori del canale
 
-In **Who i moderatori?**, fare clic su **Gestisci** e quindi aggiungere o rimuovere i membri del team come moderatori. I proprietari e i moderatori del team possono aggiungere e rimuovere altri moderatori.  
+In **Who sono i moderatori?**, fare clic su **Gestisci** e quindi aggiungere o rimuovere i membri del team come moderatori. I proprietari e i moderatori del team possono aggiungere e rimuovere altri moderatori.  
 
 ### <a name="set-team-member-permissions"></a>Impostare le autorizzazioni per i membri del team
 

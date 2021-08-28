@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49e33f5b-45d0-4146-a5a4-76954d895a98
 description: Nella visualizzazione Session sono archiviate informazioni sulle sessioni per le quali sono presenti record nel database. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 9f8fc3b22677da6794aeaaecdd180ade454fc36fbf9659c5f8196880c42c907b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e39f6c744280e96a6f0fd33c28125196f90ed7cc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593350"
 ---
 # <a name="session-view"></a>Visualizzazione sessione
  
