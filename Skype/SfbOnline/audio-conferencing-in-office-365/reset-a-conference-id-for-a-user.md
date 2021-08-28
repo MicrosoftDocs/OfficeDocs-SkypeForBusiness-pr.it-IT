@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
-description: "Informazioni sulla procedura per reimpostare l'ID conferenza di un utente in Skype for Business Online e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni. "
-ms.openlocfilehash: 57523cfc0186120c42fffe01961cd71f623bfa964ecf0c8251a26e518a31abd4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Informazioni sulla procedura per reimpostare l'ID conferenza di una riunione di un utente in Skype for Business Online e ottenere collegamenti agli strumenti di aggiornamento e migrazione delle riunioni. "
+ms.openlocfilehash: b2f816cf423a25016a67176d6b1479f585ee14e9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310265"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586134"
 ---
 # <a name="reset-a-conference-id-for-a-user-in-skype-for-business-online"></a>Reimpostare un ID conferenza per un utente in Skype for Business Online
 
@@ -54,7 +54,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
 
 ## <a name="what-else-should-i-know"></a>Quali altre informazioni sono necessarie?
 
-- È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio  di posta elettronica che include l'ID conferenza e i numeri di telefono per l'accesso esterno facendo clic su Invia informazioni conferenza tramite posta elettronica per l'utente nel riquadro Azioni. Il PIN non è incluso.
+- È possibile inviare tutte le informazioni di conferenza all'utente in un messaggio  di posta elettronica che include l'ID conferenza e i numeri di telefono di accesso esterno facendo clic su Invia informazioni conferenza tramite posta elettronica per l'utente nel riquadro Azioni. Il PIN non è incluso.
     
 - Un ID conferenza conterrà 7 cifre e non è possibile modificarne la lunghezza nell'interfaccia di amministrazione di Skype for Business o usando Windows PowerShell.
     
@@ -62,7 +62,7 @@ Un ID conferenza dinamico è incluso nella parte inferiore degli inviti alle riu
     
 - L'ID conferenza di un utente per le audioconferenze può essere visualizzato nella parte inferiore del riquadro Azioni in **Audioconferenza** quando si seleziona l'utente nella **pagina** Utenti.
     
-- Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo Skype for Business per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento di aggiornamento Skype for Business riunione, vedere:
+- Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo Skype for Business riunione per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento di aggiornamento Skype for Business riunione, vedere:
     
   - [Meeting Update Tool per Skype for Business e Lync](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4)
     

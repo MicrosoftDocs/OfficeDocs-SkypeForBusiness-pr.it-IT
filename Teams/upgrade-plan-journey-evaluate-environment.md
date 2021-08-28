@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: landerl
 description: Informazioni sui requisiti per valutare correttamente l'ambiente corrente per l'aggiornamento a Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 57bf9c10638fa9d037927eb38e604ab75a17ee1f989f5114b4e1c27606b71cfe
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d5fdbf1d81383dc00ca6e6d39db72446ca6a3012
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323758"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586310"
 ---
 # <a name="evaluate-your-environment-before-upgrading-to-teams"></a>Valutare l'ambiente prima di eseguire l'aggiornamento a Teams
 
@@ -36,7 +36,7 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Questo articolo offre una panoramica dei requisiti per valutare correttamente l'ambiente corrente per le attività Teams. Valutando l'ambiente, si identificano i rischi e i requisiti che influiranno sulla distribuzione generale. Identificando questi elementi in anticipo, è possibile modificare la pianificazione in modo da ottenere il successo.
+Questo articolo fornisce una panoramica dei requisiti per valutare correttamente l'ambiente corrente per le attività Teams. Valutando l'ambiente, si identificano i rischi e i requisiti che influiranno sulla distribuzione generale. Identificando questi elementi in anticipo, è possibile modificare la pianificazione in modo da ottenere il successo.
 
 ## <a name="introduction-to-the-discovery-questionnaire"></a>Introduzione al questionario di individuazione
 
@@ -44,7 +44,7 @@ Per ottenere i risultati chiave obiettivi (OKR), in precedenza sono state prese 
 
 È possibile identificare i rischi tecnici come parte di una valutazione dell'ambiente e della conformità all'adozione e sviluppare un piano di attenuazione per ogni rischio identificato. È consigliabile incorporare queste informazioni nel registro dei rischi.
 
-Tutte le questioni relative all'infrastruttura di collaborazione esistente e all'organizzazione di Microsoft 365 o Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla preparazione sono incluse nel questionario sulla scoperta dell'ambiente. Collaborare con il team di progetto per fornire le informazioni richieste con il maggior numero di dettagli possibile per facilitare le attività di pianificazione.
+Tutte le questioni relative all'infrastruttura di collaborazione esistente e all'organizzazione di Microsoft 365 o Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla preparazione sono incluse nel questionario sull'individuazione dell'ambiente. Collaborare con il team di progetto per fornire le informazioni richieste con il maggior numero di dettagli possibile per facilitare le attività di pianificazione.
 
 [Il questionario](upgrade-plan-journey-discovery-questionnaire.md) è suddiviso nelle sezioni seguenti per confermare la conformità dell'organizzazione per la distribuzione Teams in diverse aree principali:
 

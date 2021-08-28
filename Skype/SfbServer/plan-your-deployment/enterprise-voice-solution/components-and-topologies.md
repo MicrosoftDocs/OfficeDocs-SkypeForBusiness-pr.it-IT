@@ -9,23 +9,23 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 0beec6be-2431-4255-a3d2-512dd030e66a
-description: Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 33e13853e4c2ed9ab9cab328092f7bc44147607187c8f221993d88cb4114a6d5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica a Skype for Business Server VoIP aziendale.
+ms.openlocfilehash: 42fa61908ff13b6323215f2760b113e5d104553d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631640"
 ---
 # <a name="components-and-topologies-for-call-admission-control-in-skype-for-business"></a>Componenti e topologie per il controllo di ammissione di chiamata in Skype for Business
 
-Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica Skype for Business Server VoIP aziendale.
+Pianificazione del servizio Controllo di ammissione di chiamata (CAC) se si dispone di una rete MPLS, di un trunk SIP o di un gateway PSTN o PBX di terze parti. Si applica a Skype for Business Server VoIP aziendale.
 
 Negli argomenti di questa sezione vengono fornite informazioni sulle considerazioni speciali di cui tenere conto per la distribuzione del servizio Controllo di ammissione di chiamata con diversi tipi di topologie di rete.
 
@@ -76,7 +76,7 @@ Il controllo di ammissione di chiamata può essere distribuito sul collegamento 
 
 ![Caso 1: controllo di ammissione di chiamata tra il gateway PSTN di Mediation Server](../../media/CAC_gateways_1.jpg)
 
-In questo esempio, il controllo di ammissione di chiamata viene applicato tra Mediation Server e un gateway PSTN. Se un Skype for Business client di rete nel sito di rete 1 ese verifica una chiamata PSTN tramite il gateway PSTN in Sito di rete 2, il contenuto multimediale passa attraverso il collegamento WAN. Di conseguenza, vengono eseguiti due controlli del controllo di ammissione di chiamata per ogni sessione PSTN:
+In questo esempio, il controllo di ammissione di chiamata viene applicato tra Mediation Server e un gateway PSTN. Se un Skype for Business client del sito di rete 1 chiama PSTN tramite il gateway PSTN in Sito di rete 2, il contenuto multimediale passa attraverso il collegamento WAN. Di conseguenza, vengono eseguiti due controlli del controllo di ammissione di chiamata per ogni sessione PSTN:
 
 - Tra l Skype for Business appalto client e Mediation Server
 
@@ -120,15 +120,15 @@ Ciò funziona sia per le chiamate PSTN in arrivo a un client in Sito di rete 1 c
 
 ### <a name="case-3-cac-between-the-mediation-server-and-a-third-party-pbx-without-a-media-termination-point"></a>Caso 3: controllo di ammissione di chiamata tra Mediation Server e un PBX di terze parti senza un punto di terminazione multimediale
 
-Il caso 3 è leggermente diverso dai primi due casi. Se nel SISTEMA PBX di terze parti non è presente alcun MTP, per una richiesta di sessione in uscita al PBX di terze parti il Mediation Server non sa dove verrà terminato il contenuto multimediale nel limite PBX. In questo caso, il contenuto multimediale scorre direttamente tra Mediation Server e il dispositivo endpoint di terze parti.
+Il caso 3 è leggermente diverso dai primi due casi. Se nel SISTEMA PBX di terze parti non è presente alcun MTP, per una richiesta di sessione in uscita al SISTEMA PBX di terze parti il Mediation Server non sa dove verrà terminato il contenuto multimediale nel limite PBX. In questo caso, il contenuto multimediale scorre direttamente tra Mediation Server e il dispositivo endpoint di terze parti.
 
 **Caso 3: controllo di ammissione di chiamata tra Mediation Server e un PBX di terze parti senza MTP**
 
 ![Caso 3: CAC tra Mediation Server PBX senza MTP](../../media/CAC_gateways_3.jpg)
 
-In questo esempio, se un utente client di Skype for Business nel sito di rete 1 effettua una chiamata a un utente tramite IL PBX, il Mediation Server è in grado di eseguire controlli CAC solo sul lato proxy (tra l'applicazione client di Skype for Business e Mediation Server). Poiché il Mediation Server non dispone di informazioni sul dispositivo endpoint durante la richiesta della sessione, i controlli CAC non possono essere eseguiti sul collegamento WAN (tra Mediation Server e l'endpoint di terze parti) prima della creazione della chiamata. Una volta stabilita la sessione, tuttavia, il Mediation Server facilita la contabilizzazione della larghezza di banda utilizzata nel trunk.
+In questo esempio, se un utente client di Skype for Business nel sito di rete 1 effettua una chiamata a un utente tramite IL PBX, il Mediation Server è in grado di eseguire controlli CAC solo sul lato proxy (tra l'applicazione client Skype for Business e Mediation Server). Poiché il Mediation Server non dispone di informazioni sul dispositivo endpoint durante la richiesta della sessione, i controlli CAC non possono essere eseguiti sul collegamento WAN (tra Mediation Server e l'endpoint di terze parti) prima della creazione della chiamata. Una volta stabilita la sessione, tuttavia, il Mediation Server facilita la contabilizzazione della larghezza di banda utilizzata nel trunk.
 
-Per le chiamate che hanno origine dall'endpoint di terze parti, le informazioni sul dispositivo endpoint sono disponibili al momento della richiesta di sessione e il controllo CAC può essere eseguito su entrambi i lati del Mediation Server.
+Per le chiamate provenienti dall'endpoint di terze parti, le informazioni sul dispositivo endpoint sono disponibili al momento della richiesta di sessione e il controllo CAC può essere eseguito su entrambi i lati del Mediation Server.
 
 > [!NOTE]
 > Verificare che la subnet IP a cui appartengono i dispositivi endpoint sia configurata e associata a Sito di rete 2.

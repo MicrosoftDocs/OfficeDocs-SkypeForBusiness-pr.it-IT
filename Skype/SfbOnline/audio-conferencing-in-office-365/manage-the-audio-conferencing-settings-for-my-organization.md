@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: 'Vedere Skype for Business procedura online per assegnare una licenza di conferenza telefonica con accesso esterno e un ID conferenza a un utente e molte altre impostazioni per i servizi di conferenza telefonica con accesso esterno. '
-ms.openlocfilehash: 0bed95f9f5b8429dce52333046cd8c732c4bc0e9d94539d92c1e96f2d3284172
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f011dc05f027ad8ec6ef33665050505432a3547e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306239"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586176"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-my-organization-in-skype-for-business-online"></a>Gestire le impostazioni di Audioconferenza per l'organizzazione in Skype for Business Online
 
@@ -121,7 +121,7 @@ Vedere [Messaggi di posta elettronica inviati automaticamente agli utenti quando
 4. Nella finestra **Reimposta ID conferenza?** fare clic su **Sì.** Un ID conferenza verrà creato automaticamente e un messaggio di posta elettronica verrà inviato all'utente con il nuovo ID conferenza se i messaggi di posta elettronica ai tuoi utenti sono abilitati. Questa impostazione è abilitata in modo predefinito
 
     > [!IMPORTANT]
-    >  Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo strumento Skype for Business migrazione delle riunioni per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento di aggiornamento delle riunioni di Skype for Business, vedere: Strumento di aggiornamento delle riunioni per [Skype for Business e Lync](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4), Skype for Business Online, Strumento di migrazione delle riunioni [(64 bit)](https://go.microsoft.com/fwlink/?LinkID=626047)e strumento di migrazione delle riunioni [(32 bit) di Skype for Business Online.](https://www.microsoft.com/download/details.aspx?id=54079)
+    >  Una volta creato un nuovo ID conferenza, il vecchio ID conferenza non potrà più essere utilizzato dai chiamanti. You should notify users to reschedule their existing meeting invites to make sure the new conference ID is added to the invitations. Gli utenti possono usare lo strumento Skype for Business di migrazione delle riunioni per aggiornare le riunioni esistenti. Per informazioni su come scaricare, installare ed eseguire lo strumento di aggiornamento delle riunioni di Skype for Business, vedere: Strumento di aggiornamento delle riunioni per [Skype for Business e Lync,](https://support.office.com/article/2b525fe6-ed0f-4331-b533-c31546fcf4d4)Skype for Business Online, Strumento di migrazione delle riunioni [(64 bit)](https://go.microsoft.com/fwlink/?LinkID=626047)e Skype for Business Online, Strumento di migrazione delle riunioni [(32 bit).](https://www.microsoft.com/download/details.aspx?id=54079)
 
 See [Reset a conference ID for a user](reset-a-conference-id-for-a-user.md).
 
@@ -185,9 +185,9 @@ Vedere [Impostare i numeri di telefono inclusi per gli inviti.](set-the-phone-nu
 
 4. In **Esperienza di partecipazione alla riunione** selezionare le azioni seguenti:
 
-   - **Enable meeting entry and exit notifications to be turned on** This is selected by default. Se si deseleziona questa casella di controllo, gli utenti che hanno già partecipato alla riunione per impostazione predefinita non verranno avvisati quando qualcuno entra o esce dalla riunione.
+   - **Enable meeting entry and exit notifications to be turned on** This is selected by default. Se si deseleziona questa casella di controllo, gli utenti che hanno già partecipato alla riunione per impostazione predefinita non verranno avvisati quando un utente entra o esce dalla riunione.
 
-     Questa impostazione può essere impostata per riunione per riunione quando un utente partecipa a una  riunione con un'app Skype for Business e modifica l'impostazione Annuncia quando le persone entrano o abbandonano nel **menu** Opzioni Riunione Skype della riunione.
+     Questa impostazione può essere impostata su base riunione per riunione quando un utente partecipa a  una riunione usando un'app Skype for Business e modifica l'impostazione Annuncia quando le persone entrano o abbandonano nel **menu** Opzioni Riunione Skype della riunione.
 
    - **Chiedere ai chiamanti di registrare il proprio nome prima di partecipare alla riunione** Questa opzione è selezionata per impostazione predefinita. Se si deseleziona la casella di controllo, ai chiamanti non verrà richiesto di registrare il proprio nome prima che partecipino a una riunione.
 
@@ -264,7 +264,7 @@ Vedere [Visualizzare un elenco di numeri di audioconferenza.](see-a-list-of-audi
 
 2. Passare all'interfaccia di amministrazione > **Skype for Business**.
 
-3. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a Audioconferenza **>** **utenti**.
+3. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a Audioconferenza **>** e quindi **Utenti**.
 
 See [See a list of users that are enabled for Audio Conferencing](see-a-list-of-users-that-are-enabled-for-audio-conferencing.md).
 

@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.SqlStoreSettingsExpander
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bd269d52-6f87-4433-b9b0-2b543fea845d
 description: Per modificare le proprietà di un SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo Modifica proprietà per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra di dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'archivio di gestione centrale.
-ms.openlocfilehash: bb89251ac2f29ee15aa10caadf942a9d0896156aedf39394a763b44d6ce9e8d2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 83bf11af40e8c51693b2b1768f1d71c9bc2f37f9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54341921"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609373"
 ---
 # <a name="sql-store-settings-expander"></a>Espansione delle impostazioni dell'archivio SQL
  
-Per modificare le proprietà di un SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo **Modifica proprietà** per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra **di** dialogo Modifica proprietà per modificare l'istanza SQL Server che ospita l'archivio di gestione centrale.
+Per modificare le proprietà di un SQL Server database, è necessario modificare l'istanza SQL Server database. Non è possibile usare la finestra di dialogo **Modifica proprietà** per azioni come lo spostamento del database del server di archiviazione da un computer all'altro. Inoltre, non è possibile utilizzare la finestra **di** dialogo Modifica proprietà per modificare l'istanza di SQL Server che ospita l'archivio di gestione centrale.
   
 ## <a name="editing-the-properties-of-a-sql-server-database"></a>Modifica delle proprietà di un SQL Server database
 
@@ -38,8 +38,8 @@ Per modificare l'istanza SQL Server utilizzata da qualsiasi database diverso dal
     
    - Per utilizzare l'istanza SQL Server predefinita, selezionare **Istanza predefinita** e quindi fare clic su **OK.**
     
-   - Per utilizzare un'istanza di database denominata, selezionare **Istanza denominata**, immettere il nome dell'istanza nella casella di testo e quindi fare clic su **OK**. È necessario immettere solo il nome dell'istanza,ad esempio ArchivingInstance, e non l'intero SQL Server percorso.
+   - Per utilizzare un'istanza di database denominata, selezionare **Istanza denominata**, immettere il nome dell'istanza nella casella di testo e quindi fare clic su **OK**. È necessario immettere solo il nome dell'istanza ,ad esempio ArchivingInstance, e non l'SQL Server percorso completo.
     
-Quando si utilizza  la finestra di dialogo Modifica proprietà, Generatore di topologie non verificherà che l'istanza di database immessa sia valida. Ad esempio, se si digita inavvertitamenteArchivingInstanec come nome dell'istanza e quindi si fa clic su **OK,** Generatore di topologie accetterà tale istanza non valida. Prima di pubblicare questa topologia, è necessario correggere questo errore: se non è possibile trovare un'istanza di SQL Server, Generatore di topologie non creerà automaticamente tale istanza.
+Quando si utilizza  la finestra di dialogo Modifica proprietà, Generatore di topologie non verificherà che l'istanza di database immessa sia valida. Ad esempio, se si digita inavvertitamenteArchivingInstanec come nome dell'istanza e quindi si fa clic su **OK,** Generatore di topologie accetterà tale istanza non valida. Prima di pubblicare questa topologia, è necessario correggere questo errore: se non è possibile trovare un'istanza di SQL Server, Generatore di topologie non creerà tale istanza automaticamente.
   
 

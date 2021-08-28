@@ -11,20 +11,20 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4d0c7306-e87e-464a-82ad-a5537f141500
 ROBOTS: NOINDEX, NOFOLLOW
-description: Benvenuto nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
-ms.openlocfilehash: 3fd383a13e9248c1c6cf5d4f272e58a74fa59f956b7fc7bdb494a789d1028ba6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Benvenuti nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
+ms.openlocfilehash: 05f2882622325ed9b4bdb837811941ccb34b0401
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307637"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609775"
 ---
 # <a name="first-run-checklist-for-skype-for-business-server-control-panel"></a>Elenco di controllo prima esecuzione per il Pannello di controllo di Skype for Business Server
 
-Benvenuto nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
+Benvenuti nel Pannello Skype for Business Server, l'interfaccia utente basata sul Web per l'amministrazione e la gestione di Skype for Business Server. È possibile utilizzare il Pannello di controllo per eseguire i tipi di attività amministrative eseguite tramite Microsoft Management Console nelle versioni precedenti.
 
 È consigliabile eseguire una serie di attività importanti dopo aver distribuito Skype for Business Server. Alcune di queste attività sono passaggi di configurazione iniziale che potrebbero essere già stati eseguiti durante la distribuzione, mentre altre sono miglioramenti o modifiche di impostazioni configurate durante la distribuzione o impostazioni predefinite. Altre attività descritte in questo argomento consentono di convalidare le configurazioni effettuate durante il processo di distribuzione.
 

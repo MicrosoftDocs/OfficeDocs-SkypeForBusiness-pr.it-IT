@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 700639ec-5264-4449-a8a6-d7386fad8719
 description: "Riepilogo: configurare l'autenticazione da server a server per un Skype for Business Server ibrido."
-ms.openlocfilehash: 0a5060f9f40b7887de0b9afefa0b8f43f65f76120d430db01eaf32095af66f84
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1da99f335e5d26523bb29ef6e11251019e2020c8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315722"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58587198"
 ---
 # <a name="configure-server-to-server-authentication-for-a-skype-for-business-server-hybrid-environment"></a>Configurare l'autenticazione da server a server per un Skype for Business Server ibrido.
 
@@ -75,7 +75,7 @@ $TenantID = (Get-CsTenant -Filter {DisplayName -eq "Fabrikam.com"}).TenantId
 Per eseguire questo script, è necessario aver installato Skype for Business PowerShell online e connettersi al tenant con questo modulo. Se non sono stati installati questi cmdlet, lo script avrà esito negativo perché il cmdlet Get-CsTenant non sarà disponibile. Al termine dello script, è necessario configurare una relazione di trust tra Skype for Business Server e il server di autorizzazione e una seconda relazione di trust tra Exchange 2013/2016 e il server di autorizzazione. È possibile farlo soltanto attraverso i cmdlet di Microsoft Online Services.
 
 > [!NOTE]
-> Se i cmdlet di Microsoft Online Services non sono stati installati, sarà necessario installarlo dal repository powershell con il cmdlet `install-module MSOnline` . Informazioni dettagliate per l'installazione e l'Microsoft Online Services modulo sono disponibili nel Microsoft 365 web. Queste istruzioni illustrano anche come configurare single sign-on, federazione e sincronizzazione tra Microsoft 365 o Office 365 e Active Directory. 
+> Se i cmdlet di Microsoft Online Services non sono stati installati, sarà necessario installarlo dal repository di PowerShell con il cmdlet `install-module MSOnline` . Informazioni dettagliate per l'installazione e l'Microsoft Online Services modulo sono disponibili nel Microsoft 365 web. Queste istruzioni illustrano anche come configurare single sign-on, federazione e sincronizzazione tra Microsoft 365 o Office 365 e Active Directory. 
 
 
 
@@ -114,7 +114,7 @@ ServicePrincipalName : SkypeForBusinessServer/litwareinc.com
 TrustedForDelegation : True
 </pre>
 
-Il passaggio successivo consiste nell'importazione, codifica e assegnazione del certificato X.509. Per importare e codificare il certificato, utilizzare i comandi Windows PowerShell seguenti, assicurandoti di specificare il percorso completo del file . File CER quando si chiama il metodo Import:
+Il passaggio successivo consiste nell'importazione, codifica e assegnazione del certificato X.509. Per importare e codificare il certificato, utilizzare i Windows PowerShell seguenti, assicurandoti di specificare il percorso completo del file . File CER quando si chiama il metodo Import:
 
 ```PowerShell
 $certificate = New-Object System.Security.Cryptography.X509Certificates.X509Certificate
@@ -154,7 +154,7 @@ Usage     : Verify
 Remove-MsolServicePrincipalCredential -AppPrincipalId 00000004-0000-0ff1-ce00-000000000000 -KeyId bc2795f3-2387-4543-a95d-f92c85c7a1b0
 ```
 
-Oltre ad assegnare un certificato, è inoltre necessario configurare l'entità servizio di Exchange Online e configurare la versione locale degli URL dei servizi Web esterni di Skype for Business Server come entità servizio Microsoft 365 o Office 365. Questa operazione può essere eseguita eseguendo i due comandi seguenti. 
+Oltre ad assegnare un certificato, è inoltre necessario configurare l'entità servizio Exchange Online e configurare la versione locale degli URL dei servizi Web esterni di Skype for Business Server come entità servizio Microsoft 365 o Office 365. Questa operazione può essere eseguita eseguendo i due comandi seguenti. 
 
 Nell'esempio seguente, Pool1ExternalWebFQDN.contoso.com è l'URL dei servizi Web esterni per il pool Skype for Business Server pool. Ripetere questi passaggi per aggiungere tutti gli URL dei servizi Web esterni nella distribuzione.
 

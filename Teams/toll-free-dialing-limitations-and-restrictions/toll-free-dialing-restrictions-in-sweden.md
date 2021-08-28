@@ -15,19 +15,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
-ms.openlocfilehash: 27ffa841bbe7020da8c0d920ae3558d34633268017281e1c3ae3aec78c232a9a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a0a6cd375c06fa352ac351daf11de54d91f6625f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308297"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631920"
 ---
 # <a name="toll-free-dialing-restrictions-in-sweden"></a>Restrizioni di composizione a numero verde in Svezia
 

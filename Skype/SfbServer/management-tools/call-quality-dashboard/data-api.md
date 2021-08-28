@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 25c2450a-f7b3-4dd2-987d-64f4246dd019
 description: "Riepilogo: informazioni sull'API dei dati per il dashboard di qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: cadb726714816f80fa818d9a706640fa52bd75529e6fc58d39ab63fe907b3bb8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2497b978944ec860d7188560ecaf72091df3f626
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333328"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586918"
 ---
 # <a name="data-api-for-call-quality-dashboard-cqd-in-skype-for-business-server"></a>API dati per call quality dashboard (CQD) in Skype for Business Server
  
@@ -37,7 +37,7 @@ Le operazioni REST sono incluse nella tabella seguente.
 |:-----|:-----|
 |[Get Cube](get-cube.md) <br/> |Ottenere l'elenco delle dimensioni e delle misurazioni disponibili.  <br/> |
 |[Get Dimension Members](get-dimension-members.md) <br/> |L'operazione Get Dimension Members restituisce l'elenco dei membri di una dimensione specifica. Offre anche la possibilità di filtrare l'elenco dei membri e ottenere un sottoinsieme, per ridurre il costo di trasferimento dei fili.  <br/> |
-|[Run Query](run-query.md) <br/> |L'operazione Esegui query consente di eseguire una query sul cubo in base a dimensioni, misure e filtri specificati e restituire i dati.  <br/> |
+|[Run Query](run-query.md) <br/> |L'operazione Esegui query consente di eseguire una query sul cubo in base a dimensioni, misure e filtri specificati e di restituire i dati.  <br/> |
 |[Clear Cache](clear-cache.md) <br/> |L'operazione Cancella cache elimina la cache sul server per query e dati. In questo modo verrà reimpostata la cache e verranno successivamente ripristinati i dati dal cubo QoE per le nuove richieste.  <br/> |
 |[Get Integration Log](get-integration-log.md) <br/> |L'operazione Get Integration Log restituisce un elenco di voci di registro che descrivono le attività nell'elaborazione del cubo QoE.  <br/> |
 |[Get Last Integration Data](get-last-integration-data.md) <br/> |Recuperare gli ultimi dati di integrazione dal cubo.  <br/> |
@@ -48,7 +48,7 @@ L'API dei dati supporta cors (Cross-Origin Resource Sharing). CORS è una funzio
   
  **Abilitazione di CORS per l'API dei dati**
   
- Di seguito è riportato un estratto di Data API web.config, che mostra due domini elencati nelle impostazioni dell'applicazione corsTrustedOrigin. Tutte le richieste effettuate dagli script caricati da questi server sono attendibili dall'API dati.
+ Di seguito è riportato un estratto di Data API web.config, che mostra due domini elencati nelle impostazioni dell'applicazione corsTrustedOrigin. Tutte le richieste effettuate dagli script caricati da questi server sono attendibili dall'API dei dati.
   
 Ricordarsi di includere il protocollo esatto, il nome host e la porta (se presente). Non inserire alcun carattere barra (/) alla fine. È possibile specificare più voci separando con virgole.
   

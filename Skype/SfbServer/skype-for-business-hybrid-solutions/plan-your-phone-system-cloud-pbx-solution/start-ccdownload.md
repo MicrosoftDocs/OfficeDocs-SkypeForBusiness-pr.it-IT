@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 19338a34-1bfb-4787-b057-5e34a333711d
-description: Il cmdlet Start-CcDownload consente di scaricare Skype for Business Cloud Connector Edition bit e il file msi in modo sincrono.
-ms.openlocfilehash: 0447c75ac3e6df79a20d2c87b664bfb92cf7124fc7253c839a88fad1b335eaec
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Il cmdlet Start-CcDownload scarica i Skype for Business Cloud Connector Edition e il file msi in modo sincrono.
+ms.openlocfilehash: 0d5974bb4d4fb5bc16f467410865fb571073246e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351915"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631570"
 ---
 # <a name="start-ccdownload"></a>Start-CcDownload
  
-Il cmdlet Start-CcDownload consente di scaricare Skype for Business Cloud Connector Edition bit e il file msi in modo sincrono.
+Il cmdlet Start-CcDownload scarica i Skype for Business Cloud Connector Edition e il file msi in modo sincrono.
   
 Con Cloud Connector versione 2.0 e successive, puoi anche specificare il parametro DownloadBitsOnly.
   
@@ -35,7 +35,7 @@ Start-CcDownload [[-DownloadUrlRoot] <string>] [-DownloadBitsOnly]  [<CommonPara
 
 ### <a name="example-1"></a>Esempio 1
 
-Nell'esempio seguente i bit del connettore cloud e il file msi vengono scaricati in modo sincrono dal sito di download pubblico del connettore cloud:
+L'esempio seguente scarica i bit del connettore cloud e il file msi in modo sincrono dal sito di download pubblico cloud Connector:
   
 ```powershell
 Start-CcDownload
@@ -43,7 +43,7 @@ Start-CcDownload
 
 ### <a name="example-2"></a>Esempio 2
 
-Nell'esempio seguente i bit del connettore cloud e il file msi vengono scaricati in modo sincrono da un sito di download privato:
+L'esempio seguente scarica i bit del connettore cloud e il file msi in modo sincrono da un sito di download privato:
   
 ```powershell
 Start-CcDownload -DownloadUrlRoot "http://downloadserver/cloudconnector/latest"

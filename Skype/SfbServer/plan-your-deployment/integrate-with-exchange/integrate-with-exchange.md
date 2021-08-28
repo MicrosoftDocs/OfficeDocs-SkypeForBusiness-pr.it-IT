@@ -9,16 +9,16 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ea22beb9-c02e-47cb-836d-97a556969052
 description: 'Riepilogo: esaminare questo argomento per informazioni su come integrare Skype for Business Server con Exchange Server 2016 o Exchange Server 2013.'
-ms.openlocfilehash: 81217886028db9e8cb04296e5d665aada3a3337683f4b8276fb13d454cdc4b76
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6c830636b8db5b2a4fba02a1a5f34489e691459c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284646"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609223"
 ---
 # <a name="plan-to-integrate-skype-for-business-and-exchange"></a>Pianificare l'integrazione di Skype for Business ed Exchange
  
@@ -66,7 +66,7 @@ Get-ClientAccessServer | Set-ClientAccessServer -AutoDiscoverServiceInternalUri 
 
 Per informazioni dettagliate sul servizio di individuazione automatica, vedere [Autodiscover Service](/Exchange/architecture/client-access/autodiscover).
   
-Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le Skype for Business Server di configurazione OAuth. in questo modo si Skype for Business Server sapere dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio anziché **aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
+Dopo aver configurato il servizio di individuazione automatica, è necessario modificare le Skype for Business Server di configurazione OAuth. in questo modo si Skype for Business Server sapere dove trovare il servizio di individuazione automatica. Per modificare le impostazioni di configurazione di OAuth in Skype for Business Server, eseguire il comando seguente da Skype for Business Server Management Shell. Quando si esegue questo comando, assicurarsi di specificare l'URI per il servizio di individuazione automatica in esecuzione sul Exchange Server e di utilizzare **autodiscover.svc** per puntare al percorso del servizio **anziché aautodiscover.xml** (che punta al file XML utilizzato dal servizio):
   
 ```PowerShell
 Set-CsOAuthConfiguration -Identity global -ExchangeAutodiscoverUrl "https://autodiscover.litwareinc.com/autodiscover/autodiscover.svc" 
@@ -93,14 +93,14 @@ Se si sta integrando Skype for Business Server con Exchange Online, i passaggi s
 
 Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionalità supportate in varie combinazioni di funzionalità online o locali per Exchange e Skype for Business.
   
-||**Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)**|**Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online**|**Exchange 2016/2013(locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online**|
+||**Exchange 2016/2013/2010 (locale) + Skype for Business Server (locale)**|**Exchange Online + Skype for Business Server (locale)**|**Exchange 2010 (locale) + Skype for Business Online**|**Exchange 2016/2013 (locale) + Skype for Business Online**|**Exchange Online + Skype for Business Online**|
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Presenza in Outlook  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
 |Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un Outlook posta elettronica  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
 |Pianificare e partecipare a riunioni online tramite Outlook  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
 |Presenza in Outlook Web App  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
 |Rispondere tramite messaggistica istantanea, chiamata PSTN, Skype chiamata o videochiamata da un OWA posta elettronica  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
-|Pianificare e partecipare alle riunioni online tramite Outlook Web App  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
+|Pianificare e partecipare a riunioni online tramite Outlook Web App  <br/> |Y  <br/> |Y  <br/> |N  <br/> |N  <br/> |Y  <br/> |
 |Messaggistica istantanea/Presenza nei client mobili  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
 |Partecipare a riunioni online nei client mobili  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
 |Pubblicare lo stato in base Outlook informazioni sulla disponibilità del calendario  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |Y  <br/> |
@@ -120,7 +120,7 @@ Nella tabella seguente vengono fornite informazioni dettagliate sulle funzionali
 ## <a name="see-also"></a>Vedere anche
 <a name="feature_support"> </a>
 
-[Configurare l'integrazione tra i Skype for Business Server locali e Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md)
+[Configurare l'integrazione tra Skype for Business Server locale e Outlook Web App](../../deploy/integrate-with-exchange-server/outlook-web-app.md)
   
 [Configurare OAuth tra Skype for Business Online e Exchange locale](../../deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises.md)
 

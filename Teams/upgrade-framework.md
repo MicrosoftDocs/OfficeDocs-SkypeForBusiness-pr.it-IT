@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Usare un framework di successo comprovato per aiutare il percorso di aggiornamento dell'organizzazione da Skype for Business a Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,18 +20,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ca14aaf3e0d61977abf0d03735fa2d5ec0f6995375e773931088f0979cba395c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 327a2ed1105439e88d1ad4a4a743cd3636f3ec0b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300722"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586458"
 ---
 # <a name="about-the-upgrade-framework"></a>Informazioni sul framework di aggiornamento
 
 Per risolvere i problemi del percorso di aggiornamento, è stato impiegato un framework comprovato per l'implementazione delle modifiche. Come illustrato di seguito, ogni passaggio del framework si basa sul passaggio precedente e, per risultati ottimali, è consigliabile seguire i passaggi nell'ordine indicato.  
 
-Per iniziare, riunire le parti interessate giuste e definire il piano di aggiornamento (ad esempio ambito, obiettivi e sequenza temporale). Con un piano in atto, verificare che l'ambiente tecnico e gli utenti finali siano pronti per Teams. Quindi, implementare l'aggiornamento in fasi, passando da un aggiornamento pilota a un aggiornamento a livello di organizzazione quando è pronto. Una volta che l'organizzazione è Teams, stabilire un piano operativo che monitori la qualità e acceleri l'adozione degli utenti.
+Per iniziare, riunire le parti interessate giuste e definire il piano di aggiornamento (ad esempio ambito, obiettivi e sequenza temporale). Con un piano in atto, verificare l'ambiente tecnico e che gli utenti finali siano pronti per Teams. Quindi, implementare l'aggiornamento in fasi, passando da un aggiornamento pilota a un aggiornamento a livello di organizzazione quando è pronto. Una volta che l'organizzazione è Teams, stabilire un piano operativo che monitori la qualità e acceleri l'adozione degli utenti.
 
 ![Illustrazione del framework del percorso di aggiornamento](media/upgrade-banner-main.png "Assicurarsi che il progetto sia configurato per il successo con il team di progetto giusto. Definire l'ambito, gli obiettivi e la sequenza temporale del progetto. Confermare la conformità tecnica e dell'utente. Eseguire il piano di implementazione. Mantenere lo stato di forza per massimizzare i risultati.")
 
@@ -42,13 +42,13 @@ Cercare questo elemento grafico del framework nelle pagine correlate per identif
 Il percorso di aggiornamento inizia quando si inizia a pianificare la modifica. Sfruttando il framework di successo come linea guida, di seguito è riportata una sequenza temporale di esempio che illustra la fase pre-aggiornamento in cui è possibile pianificare e preparare l'aggiornamento, attraverso l'aggiornamento e la fase operativa successiva all'aggiornamento, progettata per sostenere e amplificare i risultati. 
 
 > [!NOTE]
-> Sappiamo che il tuo percorso verso Teams potrebbe [](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)implicare l'uso di più modalità e l'aggiornamento di gruppi di utenti in momenti diversi, che ti permetteranno di controllare l'esperienza di aggiornamento degli utenti mantenendo al contempo lo stato di   Teams.  
+> Sappiamo che il tuo percorso verso Teams potrebbe [](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)implicare l'uso di più modalità e l'aggiornamento di gruppi di utenti in momenti diversi, che ti permetteranno di controllare l'esperienza di aggiornamento degli utenti mantenendo lo stato di   Teams.  
 
-Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito è stato fornito un piano di esempio che definisce un percorso che va dalla modalità Skype for Business Online alle isole fino a Teams solo. Inoltre, il piano di esempio delinea un'organizzazione che ha diviso gli utenti in quattro gruppi di aggiornamento o coorti. Usando questo modello, personalizzare il piano in modo da includere il percorso [](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)specifico verso Teams, includendo le varie modalità da usare e il numero di gruppi di aggiornamento in cui segmentare gli   utenti. 
+Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito è stato fornito un piano di esempio che definisce un percorso che va dalla modalità Skype for Business Online alle isole fino a Teams solo. Inoltre, il piano di esempio delinea un'organizzazione che ha diviso gli utenti in quattro gruppi di aggiornamento o coorti. Usando questo modello, personalizzare il piano in modo da includere il [](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)percorso specifico verso Teams, includendo le varie modalità da usare e il numero di gruppi di aggiornamento in cui segmentare gli   utenti. 
 
 ## <a name="pre-upgrade"></a>Pre-aggiornamento
 
-**Preparare l'organizzazione per Teams**. Per garantire il successo dell'aggiornamento a Teams, è importante assegnare tempo adeguato per la preparazione. Non solo l'organizzazione sarà in grado di iniziare rapidamente a rendersi conto del valore di Teams, ma sarà in grado di accelerare l'aggiornamento da Skype for Business non appena Teams sarà pronto per l'utente. Se è già stato abilitato Teams insieme a Skype for Business, usare queste attività pre-aggiornamento come punto di controllo per convalidare la conformità dell'organizzazione prima di aggiornare gli utenti a Teams. 
+**Preparare l'organizzazione per Teams**. Per garantire il successo dell'aggiornamento a Teams, è importante assegnare tempo adeguato per la preparazione. Non solo l'organizzazione sarà in grado di iniziare rapidamente a realizzare il valore di Teams, ma sarà possibile accelerare l'aggiornamento da Skype for Business non appena Teams sarà pronto per l'utente. Se sono già state abilitate le Teams insieme a Skype for Business, usare queste attività pre-aggiornamento come punto di controllo per convalidare la conformità dell'organizzazione prima di aggiornare gli utenti a Teams. 
 
 > [!TIP]
 > Scaricare [l'Upgrade Success Kit per](https://aka.ms/UpgradeSuccessKit)i materiali di conformità degli utenti dei modelli, ad esempio le comunicazioni e i sondaggi degli utenti, oltre a un piano di progetto di aggiornamento di esempio e un piano   di test pilota. Gli elementi disponibili nel kit sono contrassegnati con un asterisco (*) negli elenchi seguenti.
@@ -62,7 +62,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 | **3** | **Definire gli obiettivi del progetto** | Impostare obiettivi mirati che consentono di misurare lo stato di avanzamento e il successo del progetto. | [Project obiettivi](upgrade-define-project-scope.md#project-goals) |
 | **4** | **Identificare i rischi e i piani di attenuazione** | Definire un piano di attenuazione per garantire che il progetto possa essere rapidamente monitorato in caso di problemi. | [Rischi e attenuazione](upgrade-define-project-scope.md#risks-and-mitigation) |
 | **5** | **Definire la sequenza temporale** | Impostare una sequenza temporale e le attività cardine chiave per aiutare il progetto a rimanere nel tempo e nel preventivo. | [Sequenza temporale](upgrade-define-project-scope.md#timeline) <br><br> [Kit di successo dell'aggiornamento](https://aka.ms/UpgradeSuccessKit) |
-| **6** | **Definire la strategia di Skype for Business e Teams di aggiornamento e coesistenza appropriata** | Mappa il tuo percorso per assicurarti il percorso migliore da Skype for Business a Teams per l'organizzazione. | [Comprendere Microsoft Teams e Skype for Business coesistenza e interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) <br><br>[Informazioni Sistema telefonico di connettività PSTN e pstn](cloud-voice-landing-page.md)<br><br>  [Scegliere il percorso verso l'aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md) |
+| **6** | **Definire la strategia di Skype for Business e Teams di aggiornamento e coesistenza appropriata** | Mappare il percorso per garantire il percorso migliore da Skype for Business a Teams per l'organizzazione. | [Comprendere Microsoft Teams e Skype for Business coesistenza e interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md) <br><br>[Informazioni Sistema telefonico di connettività pstn e di rete PSTN](cloud-voice-landing-page.md)<br><br>  [Scegliere il percorso verso l'aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md) |
 
 
 ### <a name="prepare-evaluate-your-organizations-readiness-for-teams"></a>Preparare: valutare la conformità dell'organizzazione per Teams
@@ -84,7 +84,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 | **2** | **Selezionare i partecipanti pilota e gli scenari di test** | Identificare gli utenti che possono convalidare gli scenari di lavoro in team e verificare Teams conformità. | [Selezionare i partecipanti pilota e gli scenari di test](pilot-essentials.md#2-select-your-pilot-participants-and-test-scenarios) |
 | **3** | **Progettare il piano di test e il sondaggio di feedback** | Identificare le attività definite in modo chiaro per il completamento dei partecipanti e un modo per condividere il proprio feedback. | [Progettare il piano di test e il sondaggio di feedback](pilot-essentials.md#3-design-your-test-plan-and-feedback-survey) |
 | **4** | **Creare il piano di comunicazione pilota** | Informare i partecipanti pilota su cosa succede, quando e perché e cosa ci si aspetta da loro. | [Creare il piano di comunicazione](pilot-essentials.md#4-create-your-communications-plan)<br><br>[Kit di successo dell'aggiornamento](https://aka.ms/UpgradeSuccessKit) |
-| **5** | **Condurre il progetto pilota** | Avviare il progetto pilota, tenere traccia dello stato di avanzamento e scorrere in base alle esigenze per ottimizzare i risultati pilota. | [Condurre il progetto pilota](pilot-essentials.md#5-conduct-your-pilot) |
+| **5** | **Condurre il progetto pilota** | Avviare il progetto pilota, tenere traccia dello stato di avanzamento e scorrere in base alle esigenze per ottimizzare i risultati del progetto pilota. | [Condurre il progetto pilota](pilot-essentials.md#5-conduct-your-pilot) |
 | **6** | **Valutare gli apprendimenti e valutare il piano di avanzamento** | Raccogliere il feedback degli utenti, le statistiche di rete e i ticket di supporto per l'analisi in base ai propri obiettivi e determinare il piano di avanzamento. | [Valutare gli apprendimenti e valutare il piano di avanzamento](pilot-essentials.md#6-assess-learnings-and-evaluate-your-go-forward-plan)
 
 ### <a name="deploy-run-teams-in-coexistence-with-skype-for-business"></a>Distribuire: eseguire Teams in coesistenza con Skype for Business
@@ -93,7 +93,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 |------|--|---------|----------|
 | **1** | **Annunciare il lancio ufficiale di Teams** | Genera entusiasmo e entusiasmo inviando un annuncio di lancio ufficiale quando Teams è pronto. | [Kit di successo dell'aggiornamento](https://aka.ms/UpgradeSuccessKit) |
 | **2** | **Implementare l'aggiornamento** | I passaggi da eseguire dipendono dalla distribuzione corrente di Skype for Business. | [Implementare l'aggiornamento](upgrade-to-teams.md) |
-| **3** | **Restare informati sulla roadmap Teams di lavoro** | Monitorare la roadmap Teams per identificare il momento giusto in cui l'organizzazione può passare a Teams. | [Teams roadmap](https://aka.ms/teamsroadmap) |
+| **3** | **Rimanere informati sulla roadmap Teams** | Monitorare la roadmap Teams per identificare il momento giusto in cui l'organizzazione può passare a Teams. | [Teams roadmap](https://aka.ms/teamsroadmap) |
 | **4** | **Invia altre comunicazioni e coinvolgi Teams campioni per guidare l'entusiasmo e l'adozione di Teams** | Incoraggiare l'adozione degli utenti e mantenere l'entusiasmo per Teams comunicazioni e campioni in corso. | [Microsoft 365 Programma Campioni](https://aka.ms/O365Champions) |
 
 ## <a name="upgrade"></a>Upgrade 
@@ -112,7 +112,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 ## <a name="post-upgrade"></a>Post-aggiornamento
 
-**Massimizzare il valore aziendale con Teams**. Dopo che l'organizzazione è stata completamente aggiornata a Teams, è necessario valutare il successo rispetto agli obiettivi e implementare un piano per continuare a progredire. 
+**Massimizzare il valore aziendale con Teams**. Dopo l'aggiornamento completo dell'organizzazione a Teams, valutare il successo in base agli obiettivi e implementare un piano per continuare a dare impulso. 
 
 ### <a name="operate-measure-the-success-of-your-upgrade"></a>Operare: misurare il successo dell'aggiornamento
 
@@ -126,7 +126,7 @@ Per dimostrare come potrebbe svolgersi il percorso di aggiornamento, di seguito 
 
 
 > [!Note]
-> Il contenuto dell'aggiornamento è in continua evoluzione. Assicurati di controllare di nuovo le indicazioni più recenti e leggi il [blog Teams blog.](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/bg-p/MicrosoftTeamsBlog) 
+> Il contenuto dell'aggiornamento è in continua evoluzione. Assicurarsi di controllare di nuovo le indicazioni più recenti e leggere il [blog Teams.](https://techcommunity.microsoft.com/t5/Microsoft-Teams-Blog/bg-p/MicrosoftTeamsBlog) 
 
 > [!Important]
-> Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per ottimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, è importante iniziare il viaggio verso Microsoft Teams oggi. Tenere presente che un aggiornamento riuscito allinea la preparazione tecnica e quella dell'utente, quindi assicurarsi di usare le indicazioni riportate di seguito mentre ci si sposta verso Microsoft Teams.
+> Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per ottimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, è importante iniziare il viaggio verso Microsoft Teams oggi. Tenere presente che un aggiornamento riuscito allinea la conformità tecnica e quella dell'utente, quindi assicurarsi di usare le indicazioni riportate di seguito mentre si esplora il percorso verso Microsoft Teams.

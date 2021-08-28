@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Prima di distribuire Skype for Business Server 2019 in uno stato di coesistenza, è necessario verificare che i servizi legacy siano stati configurati e avviati. È importante identificare i servizi e le funzionalità chiave presenti nell'ambiente legacy prima di distribuire un pool pilota Skype for Business Server 2019. Prima di distribuire Microsoft Skype for Business Server 2019 XMPP in uno stato di coesistenza con una distribuzione XMPP legacy, è necessario verificare che i servizi XMPP legacy siano stati configurati e avviati e identificare il partner federato che supporta la configurazione XMPP legacy.
-ms.openlocfilehash: 67583f875a8da0e58cc2c380352a0e1a96415003a9f493ee4f3172f8942972ec
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c81686f77d42f855f61699d3f141ffcaa463bc9a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54277651"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586240"
 ---
 # <a name="verify-the-legacy-environment"></a>Verificare l'ambiente legacy
 
@@ -42,15 +42,15 @@ Prima di distribuire Skype for Business Server 2019 in uno stato di coesistenza,
 
 1. Eseguire l'accesso al Front End Server con un account membro del gruppo RTCUniversalServerAdmins oppure membro del ruolo amministrativo CsAdministrator o CsUserAdministrator.
     
-2. Aprire il Skype for Business Server pannello di controllo.
+2. Apri il Skype for Business Server pannello di controllo.
     
 3. Selezionare **Topologia**. Verificare che i vari server della distribuzione legacy siano elencati.
     
      ![Pagina Topologia del Pannello di controllo](../media/migration_lyncserver_2010_topology.JPG)
   
-## <a name="review-legacy-users-in-skype-for-business-server-control-panel"></a>Esaminare gli utenti legacy nel Skype for Business Server Pannello di controllo
+## <a name="review-legacy-users-in-skype-for-business-server-control-panel"></a>Esaminare gli utenti legacy nel Skype for Business Server Di controllo
 
-1. Aprire il Skype for Business Server pannello di controllo.
+1. Apri il Skype for Business Server pannello di controllo.
     
 2. Selezionare **Utenti** e quindi fare clic su **Trova.**
     

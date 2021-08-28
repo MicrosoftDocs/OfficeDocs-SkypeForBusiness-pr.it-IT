@@ -11,24 +11,24 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - IT_Skype16
 - IT_Skype4B_Hybrid
 ms.assetid: 791026d0-730f-4225-872e-74c9b5c166d7
 ROBOTS: NOINDEX, NOFOLLOW
-description: Usare la Skype for Business Server guidata per la gestibilità ibrida per configurare l'ambiente per la distribuzione ibrida con Skype for Business Online.
-ms.openlocfilehash: e77fbb172e947c7381d7655ac9253f768c9719614dafd5ddb4c0f766b0b2b3bb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Usare la procedura guidata Skype for Business Server gestione ibrida per configurare l'ambiente ibrido con Skype for Business Online.
+ms.openlocfilehash: fa7299fc612974e5f1f79e815284d68403527b49
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302970"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609733"
 ---
 # <a name="hybrid-wizard-sign-in-to-microsoft-365-or-office-365"></a>Procedura guidata ibrida: accedere a Microsoft 365 o Office 365
 
-Usare la Skype for Business Server guidata per la gestibilità ibrida per configurare l'ambiente per la distribuzione ibrida con Skype for Business Online.
+Usare la procedura guidata Skype for Business Server gestione ibrida per configurare l'ambiente ibrido con Skype for Business Online.
 
 ## <a name="sign-in-to-microsoft-365-or-office-365"></a>Accedere a Microsoft 365 o Office 365
 

@@ -12,14 +12,14 @@ audience: Admin
 ms.reviewer: roykuntz
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: Learn how to use PowerShell to manage inbound call blocking.
-ms.openlocfilehash: 971235754c88d082a43c152867dee9d1b60d0da9adfb1fda9659c53aec71b829
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6388c65e5f2c8600c263153b1a943bf485670fe4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295213"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631430"
 ---
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
@@ -28,7 +28,7 @@ Piani per chiamate Microsoft, routing diretto e Connessione con operatore suppor
 Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le chiamate in ingresso che provengono dalla rete PSTN e funzionano solo a livello globale del tenant. I singoli Teams utenti non possono modificare l'elenco. Il client Teams consente ai singoli utenti di bloccare le chiamate PSTN. Per informazioni su come gli utenti finali possono implementare il blocco delle chiamate, vedere [Gestire le impostazioni delle chiamate in Teams](https://support.microsoft.com/office/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f).
 
 >[!NOTE]
-> I chiamanti bloccati potrebbero avere comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non è consentita per il completamento. Alcuni esempi possono includere un messaggio dell'operatore che indica che la chiamata non può essere completata come chiamata o semplicemente la chiamata.
+> I chiamanti bloccati potrebbero avere comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non può essere completata correttamente. Alcuni esempi possono includere un messaggio dell'operatore che indica che la chiamata non può essere completata come chiamata o semplicemente la chiamata.
 
 ## <a name="call-blocking-admin-controls-and-information"></a>Informazioni e controlli di amministrazione del blocco delle chiamate
 
@@ -144,7 +144,7 @@ Set-CsInboundExemptNumberPattern -Identity "AllowContoso1" -Enabled $False
 
 Il cmdlet **Remove-CsInboundExemptNumberPattern** rimuove il modello di numero specificato dall'elenco tenant. In questo esempio il **parametro Identity** è obbligatorio. 
 
-Se l'identità non è nota, usare il cmdlet **Get-CsInboundExemptNumberPattern** per individuare prima il criterio appropriato e prendere nota dell'identità. Eseguire quindi il cmdlet **Remove-CsInboundExemptNumberPattern** e passare il valore identity appropriato.Concedere tempo per la replica prima di testare e convalidare.  
+Se l'identità non è nota, usare il cmdlet **Get-CsInboundExemptNumberPattern** per individuare prima il modello corretto e prendere nota dell'identità. Eseguire quindi il cmdlet **Remove-CsInboundExemptNumberPattern** e passare il valore identity appropriato.Concedere tempo per la replica prima di testare e convalidare.  
 
 ```powershell
 Remove-CsInboundExemptNumberPattern -Identity <String>
@@ -166,7 +166,7 @@ Test-CsInboundBlockedNumberPattern –Tenant <GUID> -PhoneNumber <String>
 
 ### <a name="examples"></a>Esempi
 
-In questi esempi si può vedere che il numero di telefono 1 (312) 555-8884 è bloccato perché dovrebbe essere nell'intervallo bloccato sopra, mentre il numero di telefono 1 (312) 555-8883 è autorizzato a chiamare come dovrebbe essere basato sull'esenzione creata in precedenza.
+In questi esempi è possibile vedere che il numero di telefono 1 (312) 555-8884 è bloccato perché dovrebbe essere compreso nell'intervallo bloccato precedente, mentre il numero di telefono 1 (312) 555-8883 è autorizzato a chiamare in base all'esenzione creata in precedenza.
 
 ```PowerShell
 Test-CsInboundBlockedNumberPattern -PhoneNumber 13125558884

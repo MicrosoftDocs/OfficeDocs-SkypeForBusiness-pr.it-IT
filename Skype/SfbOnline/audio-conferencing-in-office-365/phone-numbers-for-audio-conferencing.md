@@ -15,19 +15,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: Informazioni su quali paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: a0984a4bab89724f0dd00a50a1dbe0161ad837555180086f807f099396c9445e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9ad8f10a35ff712d8ee80822343c5098f0b2a907
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306229"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586144"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-skype-for-business-online"></a>Numeri di telefono per Audioconferenza su Skype for Business online
 

@@ -9,22 +9,22 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 696f2b26-e5d0-42b5-9785-a26c2ce25bb7
 description: "Riepilogo: configurare un'applicazione partner locale per Skype for Business Server."
-ms.openlocfilehash: 794960a454d1028845820218d04b85e7faef17296417118217628d725e4dc815
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4bc1461f01c60ba1f151cfca28c979b69e08a761
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315692"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58587178"
 ---
 # <a name="configure-an-on-premises-partner-application-for-skype-for-business-server"></a>Configurare un'applicazione partner locale per Skype for Business Server
  
 **Riepilogo:** Configurare un'applicazione partner locale per Skype for Business Server.
   
-Dopo aver assegnato il certificato OAuthTokenIssuer, devi configurare le applicazioni Skype for Business Server partner. La procedura che sta per essere illustrata configura sia Microsoft Exchange Server 2013 che SharePoint di agire come applicazioni partner, che è facoltativa. Per configurare un'applicazione partner locale, è necessario innanzitutto copiare lo script di Windows PowerShell seguente e incollare il codice in Blocco note (o in qualsiasi altro editor di testo):
+Dopo aver assegnato il certificato OAuthTokenIssuer, devi configurare le applicazioni Skype for Business Server partner. La procedura che sta per essere illustrata configura sia Microsoft Exchange Server 2013 che SharePoint agire come applicazioni partner, che è facoltativa. Per configurare un'applicazione partner locale, è necessario innanzitutto copiare lo script di Windows PowerShell seguente e incollare il codice in Blocco note (o in qualsiasi altro editor di testo):
   
 ```PowerShell
 if ((Get-CsPartnerApplication -ErrorAction SilentlyContinue) -ne $Null)
@@ -74,7 +74,7 @@ else
 Set-CsOAuthConfiguration -ServiceName 00000004-0000-0ff1-ce00-000000000000
 ```
 
-Dopo aver copiato il codice, salvare lo script con estensione di file PS1 (ad esempio, C:\Script\AutServer-ServerAuth.ps1). Si noti che, prima di eseguire questo script, è necessario sostituire gli URL dei metadati e con gli URL dei metadati utilizzati rispettivamente dai server https://atl-exchange-001.litwareinc.com/autodiscover/metadata/json/1 http://atl-sharepoint-001.litwareinc.com/_layouts/15/metadata/json/1 Exchange 2013 e SharePoint. Vedi la documentazione del prodotto per Exchange 2013 e SharePoint per informazioni su come identificare l'URL dei metadati del rispettivo prodotto.
+Dopo aver copiato il codice, salvare lo script con estensione di file PS1 (ad esempio, C:\Script\AutServer-ServerAuth.ps1). Si noti che, prima di eseguire questo script, è necessario sostituire gli URL dei metadati e con gli URL dei metadati utilizzati rispettivamente dai server https://atl-exchange-001.litwareinc.com/autodiscover/metadata/json/1 http://atl-sharepoint-001.litwareinc.com/_layouts/15/metadata/json/1 Exchange 2013 e SharePoint. Vedere la documentazione del prodotto per Exchange 2013 e SharePoint per informazioni su come identificare l'URL dei metadati del rispettivo prodotto.
   
 Nell'ultima riga dello script si potrà notare che il cmdlet di Set-CsOAuthConfiguration viene chiamato con questa sintassi:
   

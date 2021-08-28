@@ -13,14 +13,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Se un utente è stato abilitato per Skype for Business Server, è possibile configurare la federazione SIP, l'accesso degli utenti remoti e la connettività di messaggistica istantanea pubblica nel Pannello di controllo di Skype for Business Server applicando i criteri appropriati a utenti specifici.
-ms.openlocfilehash: 32c97e38da6887e5caf078394e784f835458911a
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 4a5f6bfe13c27360c535957cefcfd4093b6a1bad
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234631"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58587020"
 ---
 # <a name="assign-an-external-user-access-policy-to-a-skype-for-business-enabled-user"></a>Assegnare un criterio di accesso utente esterno a un Skype for Business abilitato
 
@@ -38,7 +38,7 @@ Utilizzare la procedura contenuta in questo argomento per applicare criteri di a
 
 1.  Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server di controllo. 
+2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Nella barra di spostamento sinistra fare clic su **Utenti** e quindi cercare l'account utente da configurare.
 

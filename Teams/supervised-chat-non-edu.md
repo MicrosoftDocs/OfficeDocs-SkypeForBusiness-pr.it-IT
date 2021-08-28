@@ -12,15 +12,15 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sulle chat supervisionate per i tenant non didattici nelle Microsoft Teams riunioni.
-ms.openlocfilehash: 7876267b7c107c0be3fa920d4807408342e36a9944eca13a6ced70d5eb7210ae
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f7e0ad99f50e8d0089aa6edf122458f429792aba
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337904"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586498"
 ---
 # <a name="supervised-chats-for-non-educational-tenants"></a>Chat supervisionate per tenant non didattici
 
@@ -36,7 +36,7 @@ La chat supervisionata è personalizzata per le esigenze degli istituti di istru
 ## <a name="enable-supervised-chat"></a>Abilitare la chat con supervisione
 
 > [!NOTE]
-> Assicurarsi di configurare i ruoli di autorizzazione della chat e i criteri di autorizzazione chat basati sui ruoli prima di abilitare la chat per l'istituto per evitare l'accesso degli utenti con restrizioni indesiderate alle chat non supervisionate.
+> Assicurarsi di configurare i ruoli di autorizzazione della chat e i criteri di autorizzazione della chat basati sui ruoli prima di abilitare la chat per l'istituto per evitare l'accesso degli utenti con restrizioni indesiderate alle chat non supervisionate.
 
 **Definire i ruoli di autorizzazione chat per ogni utente dell'ambiente**
 
@@ -48,13 +48,13 @@ Perché la chat supervisionata funzioni come previsto, a ogni utente all'interno
 
 - Autorizzazioni limitate: questo ruolo è ideale per gli utenti che devono essere supervisionati. Possono avviare chat solo con utenti con autorizzazioni complete. Possono partecipare a qualsiasi conversazione a cui un utente con autorizzazioni complete lo invita. Nei casi di chat federate, gli utenti con restrizioni possono essere aggiunti alle chat solo da un utente con autorizzazioni complete provenienti dal tenant dell'utente con restrizioni.
 
-Per impostare il ruolo di autorizzazione chat degli utenti, usare il criterio del ruolo Autorizzazioni **chat** disponibile nelle opzioni dei criteri di messaggistica nel portale Teams di amministrazione. È possibile usare PowerShell per definire i ruoli usando il criterio ChatPermissionRole con i valori Full, Limited o Restricted. Questo criterio si trova in [CsTeamsMessagingPolicy.](/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps)
+Per impostare il ruolo di autorizzazione chat degli utenti, usare il criterio di ruolo Autorizzazioni **chat** disponibile nelle opzioni dei criteri di messaggistica nel portale di amministrazione Teams chat. È possibile usare PowerShell per definire i ruoli usando il criterio ChatPermissionRole con i valori Full, Limited o Restricted. Questo criterio si trova in [CsTeamsMessagingPolicy.](/powershell/module/skype/set-csteamsmessagingpolicy?view=skype-ps)
 
 I ruoli non possono essere assegnati ai guest nel tenant. Ai guest viene assegnato il ruolo limitato.
 
 ## <a name="allow-supervised-chat"></a>Consenti chat con supervisione
 
-La chat con supervisione è disabilitata per impostazione predefinita per il tenant. Dopo aver impostato i ruoli per le autorizzazioni di chat per gli utenti, è possibile abilitare la chat supervisionata all'interno del tenant selezionando Impostazioni a livello di organizzazione Teams Impostazioni e impostando il criterio autorizzazioni chat basate sui ruoli su  >   **Attivato.**  È anche possibile usare PowerShell per abilitare la chat supervisionata impostando AllowRoleBasedChatPermissions su True. Questo cmdlet si trova in [CsTeamsClientConfiguration.](/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)
+La chat con supervisione è disabilitata per impostazione predefinita per il tenant. Dopo aver impostato i ruoli di autorizzazione chat per gli utenti, è possibile abilitare la chat con supervisione all'interno del tenant selezionando Impostazioni a livello di organizzazione Teams Impostazioni e impostando criteri di autorizzazioni chat basate sui ruoli su  >   **Attivato**.  È anche possibile usare PowerShell per abilitare la chat supervisionata impostando AllowRoleBasedChatPermissions su True. Questo cmdlet si trova in [CsTeamsClientConfiguration.](/powershell/module/skype/set-csteamsclientconfiguration?view=skype-ps)
 
 La chat supervisionata deve essere abilitata per tutti gli utenti del tenant e non può essere abilitata solo per una parte degli utenti.
 
@@ -64,8 +64,8 @@ Abilitare la chat per tutti gli utenti usando i criteri chat esistenti disponibi
 
 **Gestire le chat supervisionate**
 
-Dopo aver inizialmente abilitato la chat supervisionata, è necessario eseguire alcune operazioni per assicurarsi che le chat nell'ambiente rimangano supervisionate:
+Dopo aver inizialmente abilitato la chat supervisionata, è necessario eseguire alcune operazioni per assicurarsi che le chat nell'ambiente rimangano sotto controllo:
 
 - Assegnare i ruoli appropriati a tutti i nuovi utenti che aderiscono al tenant. Per impostazione predefinita, agli utenti verrà assegnato un ruolo con restrizioni.
 
-- Se un utente con autorizzazioni complete lascia o viene rimosso da un tenant, le chat a cui supervisionavano verranno lasciati incustoditi. Prima di rimuovere l'utente originale, assicurarsi che a queste conversazioni sia aggiunto un altro utente con autorizzazioni complete, in modo che la chat possa rimanere sotto controllo. Dopo la rimozione del supervisore originale, i nuovi partecipanti non possono essere aggiunti alla conversazione, ma i partecipanti correnti possono continuare a comunicare.
+- Se un utente con autorizzazioni complete lascia o viene rimosso da un tenant, le chat a cui supervisionavano vengono lasciati incustoditi. Prima di rimuovere l'utente originale, assicurarsi che a queste conversazioni sia aggiunto un altro utente con autorizzazioni complete, in modo che la chat possa rimanere sotto controllo. Dopo la rimozione del supervisore originale, i nuovi partecipanti non possono essere aggiunti alla conversazione, ma i partecipanti correnti possono continuare a comunicare.

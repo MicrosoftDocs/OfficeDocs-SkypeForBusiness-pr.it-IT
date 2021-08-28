@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c4e0c905-33a1-49d8-9276-1b338f94d085
 description: 'Riepilogo: informazioni sulla funzionalità Tariffa chiamata in Skype for Business Server.'
-ms.openlocfilehash: 6623729dced8128e010ac0a61dfd2fccd95f1c558deda1342b0db92936f0b31f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0d084e80c94928fc11af099dbef5ad6cca6537b7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54326432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586980"
 ---
 # <a name="rate-my-call-in-skype-for-business-server"></a>Valutare la chiamata in Skype for Business Server
 
@@ -39,7 +39,7 @@ Prima che gli utenti della distribuzione Skype for Business Server possano acced
 
 - Gli utenti devono essere ospitati Skype for Business Server pool Front End.
 
-- È necessario disporre di un database Skype for Business Server di monitoraggio dei dati distribuito e associato ai Skype for Business Server pool.
+- È necessario disporre di un database Skype for Business Server di monitoraggio dei dati distribuito e associato ai pool Skype for Business Server database.
 
 - È consigliabile distribuire Call Quality Dashboard (CQD).
 
@@ -69,8 +69,8 @@ Le definizioni dei token sono codificate come segue:
 
 |||
 |:-----|:-----|
-|1  <br/> |DistortedSpeech  <br/> |
-|2  <br/> | ElectronicFeedback <br/> |
+|1   <br/> |DistortedSpeech  <br/> |
+|2   <br/> | ElectronicFeedback <br/> |
 |3   <br/> | BackgroundNoise <br/> |
 |4   <br/> |MuffledSpeech  <br/> |
 |5   <br/> |Echo  <br/> |

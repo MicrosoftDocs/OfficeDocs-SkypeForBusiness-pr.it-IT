@@ -7,7 +7,7 @@ manager: serdars
 ms.topic: conceptual
 audience: admin
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come Microsoft 365 e l'appartenenza ai gruppi con Microsoft Teams.
-ms.openlocfilehash: 37668b4315f2a46a99f5d9409e395b70f5446ac0f9b0ab5fb86fdbbe644246d6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e74e2e8c11753fbf97ef1161e8443f57dbb6146d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282899"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631560"
 ---
 # <a name="microsoft-365-groups-and-microsoft-teams"></a>Microsoft 365 Gruppi e Microsoft Teams
 
@@ -36,7 +36,7 @@ Per impostazione predefinita, gli utenti Microsoft 365 creare e gestire gruppi. 
 
 Quando si crea un team, viene creato un Microsoft 365 per gestire l'appartenenza al team. I servizi correlati al gruppo, ad esempio un sito SharePoint, un'Power BI di lavoro e così via, vengono creati contemporaneamente.
 
-Le persone che creano team possono scegliere di usare un gruppo Microsoft 365 se sono proprietari del gruppo. Ogni canale del team ha una cartella separata nella raccolta documenti. La creazione di cartelle direttamente nella raccolta documenti non crea canali nel team.
+Le persone che creano team possono scegliere di usare un gruppo di Microsoft 365 se sono proprietari del gruppo. Ogni canale del team ha una cartella separata nella raccolta documenti. La creazione di cartelle direttamente nella raccolta documenti non crea canali nel team.
 
 Quando si crea un Microsoft 365 gruppo Outlook o SharePoint, la cassetta postale del gruppo è visibile in Outlook. Quando si crea un team in Teams, la cassetta postale del gruppo è nascosta per impostazione predefinita. È possibile usare il cmdlet [Set-UnifiedGroup](/powershell/module/exchange/users-and-groups/set-unifiedgroup) con il **parametro HiddenFromExchangeClientsEnabled** per rendere visibile una cassetta postale.
 
@@ -48,9 +48,9 @@ Come procedura consigliata per la gestione dei membri del team, aggiungerli e ri
 
 ## <a name="deleting-groups-and-teams"></a>Eliminazione di gruppi e team
 
-L'eliminazione di un gruppo Microsoft 365 rimuove l'alias della cassetta postale per le conversazioni Outlook/OWA persistenti e gli inviti alle riunioni Teams e contrassegna il sito SharePoint per l'eliminazione. Sono necessari circa 20 minuti tra la rimozione di un team e il suo effetto Outlook. L'eliminazione di un team dal client Teams verrà rimosso immediatamente dalla visualizzazione per tutti i membri del team. Se si rimuovono i membri di un gruppo di Microsoft 365 in cui è abilitata la funzionalità Teams, potrebbe verificarsi un ritardo di circa due ore prima che il team venga rimosso dalla visualizzazione nel client di Teams per le persone interessate che sono state rimosse.
+L'eliminazione di un gruppo Microsoft 365 rimuove l'alias della cassetta postale per le conversazioni Outlook/OWA persistenti e gli inviti alle riunioni Teams e contrassegna il sito SharePoint per l'eliminazione. Sono necessari circa 20 minuti tra la rimozione di un team e il suo effetto Outlook. L'eliminazione di un team dal client Teams verrà rimosso immediatamente dalla visualizzazione per tutti i membri del team. Se si rimuovono membri di un gruppo di Microsoft 365 in cui è abilitata la funzionalità Teams, potrebbe verificarsi un ritardo di circa due ore prima che il team venga rimosso dalla visualizzazione nel client di Teams per le persone interessate che sono state rimosse.
 
-Per informazioni dettagliate sulle opzioni di fine del ciclo di vita di gruppi e team, vedere Opzioni di fine ciclo di vita per [gruppi,](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer) team e Yammer e Archiviare o eliminare un [team in Microsoft Teams](./archive-or-delete-a-team.md).
+Per informazioni dettagliate sulle opzioni di fine del ciclo di vita di gruppi e team, vedere Opzioni di fine ciclo di vita per [gruppi, team e Yammer](/microsoft-365/solutions/end-life-cycle-groups-teams-sites-yammer) e Archiviare o eliminare un [team in Microsoft Teams](./archive-or-delete-a-team.md).
 
 ## <a name="related-topics"></a>Argomenti correlati
 

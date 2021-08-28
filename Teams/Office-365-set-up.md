@@ -1,5 +1,5 @@
 ---
-title: Attivare Teams in Microsoft 365 o Office 365
+title: Attivare Teams nella Microsoft 365 o Office 365
 author: SerdarSoysal
 ms.author: serdars
 manager: serdars
@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: ritikag
 audience: admin
 description: Informazioni su come attivare le Microsoft Teams per l'organizzazione Microsoft 365 o Office 365, assegnare licenze utente per controllare l'accesso individuale e consentire o bloccare le origini contenuto.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c0879c4ff2af21ec91856eddd0afcc94a2de9edd083b30ed98285fca040b0522
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d9341ad677ba3a8d6d866959f8a3afa7520f1de1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318559"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631550"
 ---
 # <a name="turn-on-teams-in-your-organization"></a>Attivare Teams nell'organizzazione
 
@@ -39,7 +39,7 @@ Gli amministratori dell'organizzazione possono assegnare agli utenti le licenze 
 
 
  
-Per altre informazioni sulla gestione di singole licenze, leggere la [Microsoft Teams del servizio.](/office365/servicedescriptions/teams-service-description) 
+Per altre informazioni sulla gestione di singole licenze, vedere Microsoft Teams [Descrizione del servizio.](/office365/servicedescriptions/teams-service-description) 
 
  
 ## <a name="turn-teams-on-or-off-for-your-entire-organization"></a>Attivare o disattivare Teams per l'intera organizzazione 

@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d4136e61-c3ab-4b26-85c8-c1b2c24f5ee3
 description: "Riepilogo: utilizzare l'autenticazione a due fattori con Skype for Business Server e Skype for Business."
-ms.openlocfilehash: deb5e3333c3138138a7bb3889ff515cfc1092576c1174082ef6b5553a1ec7540
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5b1003c78020e1181112a0ccadaf66a7d1dd4da4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315682"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58587124"
 ---
 # <a name="use-two-factor-authentication-with-skype-for-business-client-and-skype-for-business-server"></a>Usare l'autenticazione a due fattori con Skype for Business client e Skype for Business Server
  
@@ -51,12 +51,12 @@ Al termine dell'Skype for Business, è possibile chiudere lo schermo, disconnett
 |**Opzione**|**Funzione**|**Come eseguirlo**|
 |:-----|:-----|:-----|
 |Chiudi  <br/> |Chiude lo schermo, ma consente Skype for Business sessione identificata con l'ID utente continui a essere eseguita. In questo modo puoi continuare a ricevere notifiche e interagire con altri utenti. <br/> <br/> Puoi recuperare lo schermo in qualsiasi momento facendo clic sull'icona Skype for Business sulla barra delle applicazioni o nell'area di notifica nella parte inferiore dello schermo.  <br/> | Nella finestra Skype for Business principale eseguire una delle operazioni seguenti: <br/> 1. Selezionare il **pulsante Opzioni,** quindi selezionare **Chiudi**  >  **file.**  <br/> 2. Fare clic **sul** pulsante Chiudi (X) nell'angolo superiore destro della finestra. <br/> |
-|Disconnettersi  <br/> |Termina la sessione associata all'ID utente, ma Skype for Business continua a essere eseguita in background. Quando ci si disconnette, viene visualizzata la finestra di accesso.  <br/> **Suggerimento:** Selezionare **Elimina le informazioni di accesso quando** ci si disconnette per rimuovere il record dell'ID di accesso e della password dal computer. Questa operazione potrebbe semplificare la risoluzione dei problemi di accesso per gli utenti del supporto. Può anche contribuire a garantire che le informazioni di accesso siano più sicure rendendo difficile per gli utenti non autorizzati accedere con le credenziali. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **Disconnennei**  >  **file.**  <br/> |
-|Esci  <br/> |Termina la Skype for Business sessione e arresta il Skype for Business sul computer. Dopo aver chiuso, se si desidera riavviare, selezionare **Avvia**  >  **tutti i programmi** > Skype for Business. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **File**  >  **Esci.**  <br/> |
+|Disconnettersi  <br/> |Termina la sessione associata all'ID utente, ma Skype for Business continua a essere eseguita in background. Quando ci si disconnette, viene visualizzata la finestra di accesso.  <br/> **Suggerimento:** Selezionare **Elimina le informazioni di accesso quando** ci si disconnette per rimuovere il record dell'ID di accesso e della password dal computer. Questa operazione potrebbe semplificare la risoluzione dei problemi di accesso per gli utenti del supporto. Può anche contribuire a garantire che le informazioni di accesso siano più sicure rendendo difficile per gli utenti non autorizzati accedere con le credenziali. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **Disconnei**  >  **file**.  <br/> |
+|Esci  <br/> |Termina la Skype for Business e arresta il Skype for Business sul computer. Dopo la chiusura, se si desidera riavviare, selezionare **Avvia**  >  **tutti i programmi** > Skype for Business. <br/> |Nella finestra Skype for Business principale, selezionare il **pulsante Opzioni,** quindi selezionare **File**  >  **Esci.**  <br/> |
    
-## <a name="sign-in-to-skype-for-business-with-a-smart-card"></a>Accedere a un Skype for Business con una smart card
+## <a name="sign-in-to-skype-for-business-with-a-smart-card"></a>Accedere a Skype for Business con una smart card
 
-Alcune organizzazioni ora utilizzano un processo di accesso a più passaggi, denominato autenticazione a due fattori, per aumentare la sicurezza per gli utenti. Se si prevede di utilizzare questa opzione, è necessaria una "smart card" per accedere a Skype for Business. Le smart card possono essere fisiche o virtuali:
+Alcune organizzazioni ora usano un processo di accesso a più passaggi, denominato autenticazione a due fattori, per aumentare la sicurezza per gli utenti. Se si prevede di utilizzare questa opzione, è necessaria una "smart card" per accedere a Skype for Business. Le smart card possono essere fisiche o virtuali:
   
 - **Fisico** Circa le dimensioni di una carta di credito. È possibile inserirla in un lettore di smart card quando si accede.
     
@@ -64,7 +64,7 @@ Alcune organizzazioni ora utilizzano un processo di accesso a più passaggi, den
     
 ### <a name="enroll-your-smart-card"></a>Registrare la smart card
 
-Prima di poter accedere con una smart card, è necessario "registrare" la scheda, ovvero le credenziali utente devono essere identificate con la scheda. Questo è il caso se la scheda è fisica o virtuale. Questo processo potrebbe essere già stato eseguito dall'Skype for Business Server amministratore. Verifica con loro se non sei sicuro che sia stato fatto.
+Prima di poter accedere con una smart card, la scheda deve essere "registrato", ovvero le credenziali utente devono essere identificate con la scheda. Questo è il caso se la scheda è fisica o virtuale. Questo processo potrebbe essere già stato eseguito dall'Skype for Business Server amministratore. Verifica con loro se non sei sicuro che sia stato fatto.
   
 > [!NOTE]
 > Poiché ogni smart card virtuale è associata solo al dispositivo in cui è installata, sarà necessario registrare una scheda separata per ogni computer Windows 8 in uso. 
@@ -73,7 +73,7 @@ Prima di poter accedere con una smart card, è necessario "registrare" la scheda
 
 1. Accedere al computer in cui verrà eseguito Skype for Business computer.
     
-2. Usando Internet Explorer, passare alla pagina Registrazione Web Autorità di certificazione dell'organizzazione. 
+2. Utilizzando Internet Explorer, passare alla pagina Registrazione Web Autorità di certificazione dell'organizzazione. 
     
     Chiedere all Skype for Business Server amministratore dell'organizzazione l'indirizzo Web di questa risorsa, se non è già presente. L'URL avrà un aspetto simile al seguente: https://MyCA .[ nomeazienda].com/certsrv.
     
@@ -88,7 +88,7 @@ Prima di poter accedere con una smart card, è necessario "registrare" la scheda
     
 6. Selezionare **Crea e invia una richiesta a questa CA,** quindi fare clic su **Avanti.**
     
-7. A questo punto verrà visualizzata una pagina denominata Smart Card Enrollment Station. Approvare la richiesta di installazione ActiveX controllo e quindi completare il modulo Richiesta avanzata di certificati come segue:
+7. A questo punto verrà visualizzata una pagina denominata Smart Card Enrollment Station. Approvare la richiesta di installazione del ActiveX e quindi completare il modulo Richiesta avanzata di certificato come segue:
     
     a. Selezionare **Utente smart card** nell'elenco a discesa Modello **di** certificato.
     
