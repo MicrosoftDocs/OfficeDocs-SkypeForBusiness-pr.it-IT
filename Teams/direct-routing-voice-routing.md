@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare il routing vocale con Telefono Microsoft routing diretto di sistema.
-ms.openlocfilehash: 80a182e4dfb01225fcbb172931dea0f9ccd5af308f0d894a913c9485ad9f68da
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b5f3cc1cec5928a423e2dfb74d4c5921047e7330
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337424"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632170"
 ---
 # <a name="configure-voice-routing-for-direct-routing"></a>Configurare il routing vocale per il routing diretto
 
@@ -51,7 +51,7 @@ Il routing vocale è costituito da elementi seguenti:
 
 - **Route vocali:** uno schema di numeri e un set di gateway PSTN online da usare per le chiamate in cui il numero di chiamata corrisponde al modello.
 
-- **Gateway PSTN online:** puntatore a un SBC in cui viene archiviata anche la configurazione applicata quando una chiamata viene inoltrata tramite SBC, ad esempio l'inoltro P-Asserted-Identity (PAI) o i codec preferiti. può essere aggiunto alle route vocali.
+- **Gateway PSTN online:** puntatore a un SBC in cui è archiviata anche la configurazione applicata quando una chiamata viene inoltrata tramite SBC, ad esempio l'inoltro P-Asserted-Identity (PAI) o i codec preferiti. può essere aggiunto alle route vocali.
 
 ## <a name="voice-routing-policy-considerations"></a>Considerazioni sui criteri di routing vocale
 
@@ -73,7 +73,7 @@ Il diagramma seguente mostra due esempi di criteri di routing vocale in un fluss
 In entrambi gli esempi, mentre alla route vocale sono assegnate priorità, i SBC nelle route vengono provati in ordine casuale.
 
   > [!NOTE]
-  > A meno che l'utente non abbia anche una licenza per il piano per chiamate Microsoft, le chiamate a qualsiasi numero tranne i numeri che corrispondono ai modelli +1 425 XXX XX XX o +1 206 XXX XX XX nella configurazione di esempio vengono eliminate. Se l'utente ha una licenza per il piano di chiamata, la chiamata viene instradata automaticamente in base ai criteri del Piano chiamate Microsoft. Il Piano chiamate Microsoft si applica automaticamente come ultimo percorso a tutti gli utenti con la licenza Microsoft Calling Plan e non richiede una configurazione aggiuntiva del routing delle chiamate.
+  > A meno che l'utente non abbia anche una licenza per il Piano chiamate Microsoft, le chiamate a qualsiasi numero tranne i numeri corrispondenti ai modelli +1 425 XXX XX XX o +1 206 XXX XX XX nella configurazione di esempio vengono eliminate. Se l'utente ha una licenza per il piano di chiamata, la chiamata viene instradata automaticamente in base ai criteri del Piano chiamate Microsoft. Il Piano chiamate Microsoft si applica automaticamente come ultimo percorso a tutti gli utenti con la licenza Microsoft Calling Plan e non richiede una configurazione aggiuntiva del routing delle chiamate.
 
 Nell'esempio illustrato nel diagramma seguente viene aggiunta una route vocale per inviare chiamate a tutti gli altri numeri statunitensi e canadesi (chiamate che vengono chiamate con schema di numeri +1 XXX XX XX).
 
@@ -102,7 +102,7 @@ L'esempio seguente mostra come:
 3. Creare un criterio di routing vocale.
 4. Assegnare il criterio a un utente denominato Spencer Low.
 
-È possibile usare [l'Microsoft Teams di amministrazione o](#admincenterexample1) [PowerShell](#powershellexample1) per eseguire questa procedura.
+È possibile usare [l'interfaccia Microsoft Teams o](#admincenterexample1) [PowerShell](#powershellexample1) per eseguire questa procedura.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 <a name="admincenterexample1"></a>
@@ -116,7 +116,7 @@ L'esempio seguente mostra come:
 
 La procedura seguente descrive come creare una route vocale. Usare questa procedura per creare le tre route vocali denominate Redmond 1, Redmond 2 e Other +1 per questo esempio usando le impostazioni descritte nella tabella precedente.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Routing** vocale diretto e quindi  >  selezionare la **scheda Route** vocali.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Routing**  >  **vocale diretto** e quindi selezionare la scheda **Route** vocali.
 2. Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per la route vocale.
 3. Impostare la priorità e specificare il modello di numero composto.
 4. Per registrare un SBC con la route vocale, in SBC registrati **(facoltativo)** fare clic su Aggiungi **SBC,** selezionare gli SBC da registrare e quindi fare clic su **Applica.**
@@ -304,7 +304,7 @@ Il criterio di routing vocale creato nell'esempio 1 consente solo le chiamate a 
 
 Nell'esempio seguente è possibile creare il criterio di routing vocale "Nessuna restrizione". Il criterio riutilizza l'utilizzo PSTN "Stati Uniti e Canada" creato nell'esempio 1, oltre al nuovo utilizzo PSTN "internazionale". Questo criterio indirizza tutte le altre chiamate agli SBC sbc2.contoso.biz e sbc5.contoso.biz.
 
-Gli esempi illustrati assegnano il criterio Solo stati Uniti all'utente Spencer Low e il criterio Nessuna restrizione all'utente John Woods in modo che il routing si verifichi come segue:
+Gli esempi illustrati assegnano il criterio Solo stati Uniti all'utente Spencer Low e il criterio Nessuna restrizione all'utente John Woods in modo che il routing si verifichi nel modo seguente:
 
 - Politica di Spencer Low - Solo stati Uniti.  Le chiamate sono consentite solo a numeri statunitensi e canadesi. Quando si chiama l'intervallo di numeri di Redmond, è necessario usare il set specifico di SBC. I numeri non statunitensi non verranno instradati a meno che all'utente non sia assegnata la licenza per il piano di chiamata.
 
@@ -312,7 +312,7 @@ Gli esempi illustrati assegnano il criterio Solo stati Uniti all'utente Spencer 
 
 ![Mostra i criteri di routing vocale assegnati all'utente Spencer Low](media/ConfigDirectRouting-VoiceRoutingPolicyAssignedtoSpencerLow.png)
 
-Per tutte le altre chiamate, se un utente ha entrambe le licenze (Telefono Microsoft Sistema e Piano chiamate Microsoft), viene usato il percorso automatico. Se nulla corrisponde ai modelli di numero nelle route vocali online create dall'amministratore, la chiamata viene instradata usando il Piano chiamate Microsoft.  Se l'utente ha Telefono Microsoft sistema, la chiamata viene interrotta perché non sono disponibili regole di corrispondenza.
+Per tutte le altre chiamate, se un utente ha entrambe le licenze (Telefono Microsoft Sistema e Piano chiamate Microsoft), viene usato il percorso automatico. Se nulla corrisponde ai modelli di numero nelle route vocali online create dall'amministratore, la chiamata viene instradata usando il Piano chiamate Microsoft.  Se l'utente ha solo Telefono Microsoft sistema, la chiamata viene interrotta perché non sono disponibili regole di corrispondenza.
 
 ![Mostra i criteri di routing vocale assegnati all'utente John Woods](media/ConfigDirectRouting-VoiceRoutingPolicyAssignedtoJohnWoods.png)
 
@@ -322,7 +322,7 @@ La tabella seguente riepiloga le designazioni di utilizzo e le route vocali dei 
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Stati Uniti e Canada|"Redmond 1"|^\\+1(425 \| 206)(\d {7} )$|1|sbc1.contoso.biz<br/>sbc2.contoso.biz|Percorso attivo per i numeri dei callee +1 425 XXX XX XX o +1 206 XXX XX XX|
 |Stati Uniti e Canada|"Redmond 2"|^\\+1(425 \| 206)(\d {7} )$|2|sbc3.contoso.biz<br/>sbc4.contoso.biz|Percorso di backup per i numeri dei callee +1 425 XXX XX XX o +1 206 XXX XX XX|
-|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri dei callee +1 XXX XXX XX XX (ad eccezione di +1 425 XXX XX XX o +1 206 XXX XX XX)|
+|Stati Uniti e Canada|"Altro +1"|^\\+1(\d {10} )$|3|sbc5.contoso.biz<br/>sbc6.contoso.biz|Percorso per i numeri dei callee +1 XXX XXX XX XX (tranne +1 425 XXX XX XX o +1 206 XXX XX XX)|
 |Internazionale|Internazionale|\d+|4|sbc2.contoso.biz<br/>sbc5.contoso.biz|Percorso per qualsiasi schema di numeri |
 
   > [!NOTE]
@@ -338,7 +338,7 @@ L'esempio seguente mostra come:
 3. Creare un criterio di routing vocale denominato Nessuna restrizione.
 4. Assegnare il criterio all'utente John Woods.
 
-È possibile usare [l'Microsoft Teams di amministrazione o](#admincenterexample2) [PowerShell](#powershellexample2) per eseguire questa procedura.
+È possibile usare [l'interfaccia Microsoft Teams o](#admincenterexample2) [PowerShell](#powershellexample2) per eseguire questa procedura.
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 <a name="admincenterexample2"></a>
@@ -350,7 +350,7 @@ L'esempio seguente mostra come:
 
 #### <a name="step-2-create-the-international-voice-route"></a>Passaggio 2: Creare la route vocale "Internazionale"
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Routing** vocale diretto e quindi  >  selezionare la **scheda Route** vocali.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Routing**  >  **vocale diretto** e quindi selezionare la scheda **Route** vocali.
 2. Fare **clic su** Aggiungi, immettere "Internazionale" come nome e quindi aggiungere la descrizione.
 3. Impostare la priorità su 4 e quindi impostare lo schema di numeri composto su \d+.
 4. In **SBC registrati (facoltativo)** fare clic su **Aggiungi SBC,** selezionare sbc2.contoso.biz e sbc5.contoso.biz e quindi fare clic su **Applica**.
@@ -381,7 +381,7 @@ Per altre informazioni, vedere [Gestire i criteri di routing vocale.](manage-voi
 2. Fare **clic su** Criteri e quindi accanto a Criteri **assegnati** fare clic su **Modifica.**
 3. In **Criteri routing vocale** selezionare il criterio "Nessuna restrizione" e quindi fare clic su **Salva.**
 
-Il risultato è che i criteri vocali applicati alle chiamate di John Woods sono senza restrizioni e seguiranno la logica del routing delle chiamate disponibile per le chiamate usa, canada e internazionali.
+Il risultato è che i criteri vocali applicati alle chiamate di John Woods sono senza restrizioni e seguiranno la logica del routing delle chiamate disponibile per le chiamate usa, Canada e Internazionale.
 
 ### <a name="using-powershell"></a>Utilizzo di PowerShell
 <a name="powershellexample2"></a>
@@ -414,7 +414,7 @@ Name                      : International
 
 #### <a name="step-3-create-a-voice-routing-policy-named-no-restrictions"></a>Passaggio 3: Creare un criterio di routing vocale denominato "Nessuna restrizione"
 
-L'utilizzo PSTN "Redmond 1" e "Redmond" vengono riutilizzati in questo criterio di routing vocale per mantenere una gestione speciale per le chiamate ai numeri "+1 425 XXX XX XX" e "+1 206 XXX XX XX" come chiamate locali o locali.
+L'utilizzo PSTN "Redmond 1" e "Redmond" vengono riutilizzati in questo criterio di routing vocale per mantenere una gestione speciale per le chiamate al numero "+1 425 XXX XX XX" e "+1 206 XXX XX XX" come chiamate locali o locali.
 
   ```PowerShell
   New-CsOnlineVoiceRoutingPolicy "No Restrictions" -OnlinePstnUsages "US and Canada", "International"
@@ -422,7 +422,7 @@ L'utilizzo PSTN "Redmond 1" e "Redmond" vengono riutilizzati in questo criterio 
 
 Prendere nota dell'ordine di utilizzo pstn:
 
-  - Se una chiamata effettuata al numero "+1 425 XXX XX XX" con gli utilizzi configurati come nell'esempio seguente, la chiamata segue la route impostata nell'utilizzo "Stati Uniti e Canada" e viene applicata la logica di routing speciale. In altre informazioni, la chiamata viene instradata sbc1.contoso.biz e sbc2.contoso.biz e quindi sbc3.contoso.biz e sbc4.contoso.biz come route di backup.
+  - Se una chiamata effettuata al numero "+1 425 XXX XX XX" con gli utilizzi configurati come nell'esempio seguente, la chiamata segue il percorso impostato nell'utilizzo "Stati Uniti e Canada" e viene applicata la logica di routing speciale. In altre informazioni, la chiamata viene instradata sbc1.contoso.biz e sbc2.contoso.biz e quindi sbc3.contoso.biz e sbc4.contoso.biz come route di backup.
 
   - Se l'utilizzo PSTN "internazionale" è precedente a "Stati Uniti e Canada", le chiamate a +1 425 XXX XX XX vengono instradati a sbc2.contoso.biz e sbc5.contoso.biz come parte della logica di routing. Immettere il comando:
 

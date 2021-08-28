@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d1c9ebd8-af42-42a0-87d9-fc899fbd7c42
 description: "Riepilogo: abilitare l'archivio contatti unificato in Skype for Business Server."
-ms.openlocfilehash: 6311b760daf2c397cfc5c75ddeb5e28fd2fb6503c0c2db11ef9ed6de71a7562e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 181c23b9dc7ab1c4361e3406a9f1f61b4bcf5057
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310015"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609933"
 ---
 # <a name="deploy-unified-contact-store-in-skype-for-business-server"></a>Distribuire l'archivio contatti unificato in Skype for Business Server
  
@@ -40,11 +40,11 @@ Quando si distribuisce Skype for Business Server e si pubblica la topologia, l'a
   
 ### <a name="to-enable-users-for-unified-contact-store"></a>Per abilitare gli utenti all'archivio unificato contatti
 
-1. Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell**.
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell.**
     
 2. Eseguire una delle operazioni seguenti:
     
-   - Per abilitare globalmente l'archivio contatti unificato per tutti Skype for Business Server utenti, eseguire il cmdlet seguente nell'interfaccia della Windows PowerShell della riga di comando:
+   - Per abilitare globalmente l'archivio contatti unificato per tutti Skype for Business Server utenti, utilizzare il cmdlet seguente nell'interfaccia della Windows PowerShell della riga di comando:
     
    ```powershell
    Set-CsUserServicesPolicy -Identity global -UcsAllowed $True
@@ -100,17 +100,17 @@ I contatti di un utente vengono migrati automaticamente nel server Exchange 2013
   
 - All'utente sono stati assegnati servizi utente per cui UcsAllowed è impostato su True.
     
-- È stato effettuato il provisioning con una Exchange 2013 e ha eseguito l'accesso alla cassetta postale almeno una volta.
+- È stato effettuato il provisioning con una Exchange 2013 e ha effettuato l'accesso alla cassetta postale almeno una volta.
     
 - L'utente effettua l'accesso utilizzando un rich-client Skype for Business.
     
-Se l'utente accede con un client Lync o versioni precedenti o se l'utente non è connesso a un server Exchange 2013, i criteri dei servizi utente vengono ignorati e i contatti dell'utente rimangono in Skype for Business Server.
+Se l'utente accede con un client Lync o precedente o se l'utente non è connesso a un server Exchange 2013, i criteri dei servizi utente vengono ignorati e i contatti dell'utente rimangono in Skype for Business Server.
   
 È possibile stabilire se i contatti di un utente sono stati migrati usando uno dei metodi seguenti: 
   
 - Verificare la chiave del Registro di sistema seguente nel computer client:
     
-    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync<\\ URL SIP \> \UCS
+    HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync\\<URL SIP \> \UCS
     
     Se i contatti dell'utente sono archiviati in Exchange 2013, questa chiave contiene il valore InUCSMode con un valore pari a 2165.
     
@@ -124,11 +124,11 @@ Se l'utente accede con un client Lync o versioni precedenti o se l'utente non è
     
 ## <a name="roll-back-migrated-users"></a>Eseguire il rollback degli utenti migrati
 
-Se è necessario eseguire il rollback della funzionalità di archivio contatti unificato, eseguire il rollback dei contatti solo se l'utente viene spostato nuovamente Exchange 2010 o Lync Server 2010. Per eseguire il rollback, disabilitare il criterio per l'utente e quindi eseguire il cmdlet **Invoke-CsUcsRollback**. La sola esecuzione di **Invoke-CsUcsRollback** non è sufficiente ad assicurare un rollback permanente, in quanto la migrazione dell'archivio contatti unificato verrà avviata di nuovo se il criterio non viene disabilitato. Ad esempio, se viene eseguito il rollback di un utente perché Exchange 2013 viene eseguito il rollback a Exchange 2010 e quindi la cassetta postale dell'utente viene spostata in Exchange 2013, la migrazione dell'archivio contatti unificato verrà avviata di nuovo sette giorni dopo il rollback, purché l'archivio contatti unificato sia ancora abilitato per l'utente nei criteri dei servizi utente.
+Se è necessario eseguire il rollback della funzionalità dell'archivio contatti unificato, eseguire il rollback dei contatti solo se si sposta di nuovo l'utente Exchange 2010 o Lync Server 2010. Per eseguire il rollback, disabilitare il criterio per l'utente e quindi eseguire il cmdlet **Invoke-CsUcsRollback**. La sola esecuzione di **Invoke-CsUcsRollback** non è sufficiente ad assicurare un rollback permanente, in quanto la migrazione dell'archivio contatti unificato verrà avviata di nuovo se il criterio non viene disabilitato. Ad esempio, se viene eseguito il rollback di un utente perché Exchange 2013 viene eseguito il rollback a Exchange 2010 e quindi la cassetta postale dell'utente viene spostata Exchange 2013, la migrazione dell'archivio contatti unificato verrà avviata di nuovo sette giorni dopo il rollback, purché l'archivio contatti unificato sia ancora abilitato per l'utente nei criteri dei servizi utente.
   
 Il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti dell'utente da Exchange 2013 a Skype for Business Server nelle situazioni seguenti:
   
-- Quando gli utenti vengono spostati da Skype for Business Server a Microsoft Lync Server 2013 o Lync Server 2010. 
+- Quando gli utenti vengono spostati Skype for Business Server a Microsoft Lync Server 2013 o Lync Server 2010. 
     
 - Quando gli utenti vengono migrati in locale, ad esempio quando un utente viene spostato da Skype for Business Online a Skype for Business Server locale o viceversa.
     
@@ -136,11 +136,11 @@ L'importazione dei dati dell'archivio contatti unificato da un database di backu
   
 - Se si esportano gli elenchi contatti prima della migrazione dei contatti degli utenti Exchange Exchange 2013 e quindi, dopo la migrazione, importare gli stessi dati, i dati dell'archivio contatti unificato e gli elenchi contatti saranno danneggiati.
     
-- Se si esportano i dati utente dopo aver eseguito la migrazione degli utenti Exchange Exchange 2013, eseguire il rollback della migrazione e quindi per qualche motivo si importano i dati dopo la migrazione, i dati dell'archivio contatti unificato e gli elenchi contatti verranno danneggiati.
+- Se si esportano i dati degli utenti dopo aver eseguito la migrazione degli utenti Exchange 2013, eseguire il rollback della migrazione e quindi, per qualche motivo, si importano i dati dopo la migrazione, i dati dell'archivio contatti unificato e gli elenchi contatti saranno danneggiati.
     
 > [!IMPORTANT]
-> Prima di spostare una cassetta postale di Exchange da Exchange 2013 a Exchange 2010, l'amministratore di Exchange deve assicurarsi che l'amministratore di Skype for Business Server abbia prima eseguito il rollback dei contatti utente di Skype for Business Server da Exchange 2013 a Skype for Business Server. Per eseguire il rollback dei contatti dell'archivio contatti unificato in Skype for Business Server, vedere la procedura "Per ripristinare i contatti dell'archivio contatti unificato da Exchange 2013 a Skype for Business Server" più avanti in questa sezione. 
+> Prima di spostare una cassetta postale di Exchange da Exchange 2013 a Exchange 2010, l'amministratore di Exchange deve assicurarsi che l'amministratore di Skype for Business Server abbia prima eseguito il rollback dei contatti utente di Skype for Business Server da Exchange 2013 a Skype for Business Server. Per eseguire il rollback dei contatti dell'archivio contatti unificato in Skype for Business Server, vedere la procedura "Per ripristinare i contatti dell'archivio contatti unificato da Exchange 2013 a Skype for Business Server", più avanti in questa sezione. 
   
- **Come eseguire il rollback dei contatti utente:** Se si utilizza il cmdlet **Move-CsUser** per spostare gli utenti tra Skype for Business Server 2015 e Lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti unificato quando sposta gli utenti da Skype for Business Server 2015 a Lync Server 2010. **Move-CsUser** non disabilita i criteri dell'archivio contatti unificato, quindi la migrazione all'archivio contatti unificato si ripeterà se l'utente viene spostato di nuovo Skype for Business Server 2015.
+ **Come eseguire il rollback dei contatti utente:** Se si utilizza il cmdlet **Move-CsUser** per spostare gli utenti tra Skype for Business Server 2015 e Lync Server 2010, è possibile ignorare questi passaggi perché il cmdlet **Move-CsUser** esegue automaticamente il rollback dell'archivio contatti unificato quando sposta gli utenti da Skype for Business Server 2015 a Lync Server 2010. **Move-CsUser** non disabilita i criteri dell'archivio contatti unificato, pertanto la migrazione all'archivio contatti unificato si ripeterà se l'utente viene spostato di nuovo Skype for Business Server 2015.
   
 

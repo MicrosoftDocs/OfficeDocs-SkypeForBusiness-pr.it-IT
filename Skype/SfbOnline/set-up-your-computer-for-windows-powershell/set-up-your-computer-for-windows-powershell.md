@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - PowerShell
 description: Informazioni sui requisiti per la gestione remota di Skype for Business Online con Windows PowerShell, inclusi i sistemi operativi supportati.
-ms.openlocfilehash: 4995ea09f9d53669a026d456468fc032d5ff37bbdb91b6a2eaf0eb535f7fabe4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 31a24aa2bddd2fa56c4628bd74fb16487a5aa3d2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295823"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610163"
 ---
 # <a name="set-up-your-computer-for-windows-powershell"></a>Configurare il computer per Windows PowerShell
 

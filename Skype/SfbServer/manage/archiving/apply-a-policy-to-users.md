@@ -9,24 +9,24 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bebd45d1-93c3-4e80-8933-755b699b2209
 description: 'Riepilogo: informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.'
-ms.openlocfilehash: b7dbd8a4222065c2bc53029b75672d6905dcd73b3a79e0d35ebfc6ce980f9865
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e9bd351b30ed31092420722a956e57578e100642
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54311094"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632990"
 ---
 # <a name="apply-an-archiving-policy-to-users-in-skype-for-business-server"></a>Applicare un criterio di archiviazione agli utenti in Skype for Business Server
 
 **Riepilogo:** Informazioni su come assegnare un criterio di archiviazione agli utenti in Skype for Business Server.
   
-Se sono stati creati uno o più criteri utente per l'archiviazione per gli utenti ospitati in Skype for Business Server, è possibile implementare il supporto di archiviazione per utenti specifici applicando i criteri appropriati a tali utenti o gruppi di utenti. Ad esempio, se si crea un criterio per supportare l'archiviazione delle comunicazioni interne, è possibile applicarlo ad almeno un utente o a un gruppo di utenti per supportare l'archiviazione delle comunicazioni Skype for Business Server'utente.
+Se sono stati creati uno o più criteri utente per l'archiviazione per gli utenti ospitati in Skype for Business Server, è possibile implementare il supporto dell'archiviazione per utenti specifici applicando i criteri appropriati a tali utenti o gruppi di utenti. Ad esempio, se si crea un criterio per supportare l'archiviazione delle comunicazioni interne, è possibile applicarlo ad almeno un utente o gruppo di utenti per supportare l'archiviazione delle comunicazioni Skype for Business Server'utente.
   
 > [!NOTE]
-> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco del Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place conservazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) and Configure integration with Exchange storage for [Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
+> Se è stata abilitata l'integrazione di Microsoft Exchange per la distribuzione, i criteri di blocco di Exchange In-Place controllano se l'archiviazione è abilitata per gli utenti ospitati in Exchange e che le cassette postali vengono In-Place archiviazione. Per informazioni dettagliate, vedere [Plan for archiving in Skype for Business Server](../../plan-your-deployment/archiving/archiving.md) e Configure integration with Exchange storage for [Skype for Business Server](../../deploy/deploy-archiving/configure-integration-with-exchange-storage.md). 
   
 ## <a name="apply-a-user-policy-by-using-the-control-panel"></a>Applicare criteri utente tramite il Pannello di controllo
 
@@ -49,7 +49,7 @@ Per applicare un criterio utente tramite il Pannello di controllo:
     
 ## <a name="apply-a-user-policy-by-using-windows-powershell"></a>Applicare criteri utente tramite Windows PowerShell
 
-È inoltre possibile applicare un criterio utente utilizzando il cmdlet **Windows PowerShell Grant-CsArchivingPolicy.**
+È inoltre possibile applicare un criterio utente utilizzando il cmdlet **Grant-CsArchivingPolicy Windows PowerShell grant-CsArchivingPolicy.**
   
 Il comando seguente assegna il criterio di archiviazione per utente RedmondArchivingPolicy all'utente Ken Myer:
   

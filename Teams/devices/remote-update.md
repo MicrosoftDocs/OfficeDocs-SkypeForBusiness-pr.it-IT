@@ -11,20 +11,20 @@ ms.collection:
 - M365-collaboration
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Aggiornare Microsoft Teams telefoni, Teams e barre di collaborazione in remoto usando l'interfaccia Teams di amministrazione
-ms.openlocfilehash: 8ff925756e91c72c42d1557a1c735e5323691272a82405d5e4047ab4ff9828b5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4166d8543c0c0e847e4463ecf3cf0760876a7b37
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322688"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632180"
 ---
 # <a name="update-microsoft-teams-devices-remotely"></a>Aggiornare Microsoft Teams dispositivi in remoto
 
-Usando l'interfaccia di amministrazione di Microsoft Teams, è possibile aggiornare i dispositivi Teams, ad esempio telefoni Teams, pannelli Teams e barre di collaborazione, in remoto e scegliere il comportamento di aggiornamento automatico del firmware del dispositivo. È possibile aggiornare quanto segue nei dispositivi usando l'interfaccia Teams di amministrazione:
+Usando l'interfaccia di amministrazione di Microsoft Teams, è possibile aggiornare i dispositivi Teams, ad esempio telefoni Teams, pannelli Teams e barre di collaborazione, in remoto ed è possibile scegliere il comportamento di aggiornamento automatico del firmware del dispositivo. È possibile aggiornare quanto segue nei dispositivi usando l'interfaccia Teams di amministrazione:
 
-- Teams di amministrazione dell'app e dei team
+- Teams'app e l'agente di amministrazione di Teams
 - App portale aziendale
 - App agente OEM
 - Firmware del dispositivo
@@ -32,9 +32,9 @@ Usando l'interfaccia di amministrazione di Microsoft Teams, è possibile aggiorn
 Gli aggiornamenti del firmware del dispositivo possono essere applicati automaticamente o pianificati per una data e un'ora future. Gli altri aggiornamenti disponibili per i dispositivi non vengono applicati automaticamente, ma possono essere applicati manualmente o pianificati per una data e un'ora future.
 
 > [!NOTE]
-> Anche se è possibile programmare gli aggiornamenti del firmware del dispositivo, se la data e l'ora pianificate rientrano dopo il ritardo massimo di 30 o 90 giorni configurato, l'aggiornamento del firmware viene applicato quando viene raggiunto il ritardo massimo. La data e l'ora pianificate vengono ignorate. Inoltre, l'aggiornamento Microsoft Teams dispositivi in remoto è una funzionalità non ancora disponibile nei tenant government cloud (GCC-High).
+> Anche se è possibile programmare gli aggiornamenti del firmware del dispositivo, se la data e l'ora pianificate rientrano dopo il ritardo massimo di 30 o 90 giorni configurato, l'aggiornamento del firmware viene applicato quando viene raggiunto il ritardo massimo. La data e l'ora pianificate vengono ignorate. Inoltre, l'aggiornamento Microsoft Teams dispositivi in remoto è una funzionalità non ancora disponibile nei tenant government cloud degli Stati Uniti (GCC-High).
 
-Per gestire i dispositivi, è necessario essere un amministratore globale, un amministratore Teams Servizio o un amministratore Teams dispositivo. Per altre informazioni sui ruoli di amministratore, vedere Usare Microsoft Teams [di amministratore per gestire Teams](../using-admin-roles.md).
+Per gestire i dispositivi, è necessario essere un amministratore globale, un amministratore Teams Servizio o un amministratore Teams dispositivo. Per altre informazioni sui ruoli di amministratore, vedere Usare [Microsoft Teams di amministratore per gestire Teams](../using-admin-roles.md).
 
 ## <a name="choose-automatic-device-firmware-update-behavior"></a>Scegliere il comportamento di aggiornamento automatico del firmware del dispositivo
 
@@ -49,7 +49,7 @@ Gli aggiornamenti del firmware del dispositivo vengono applicati automaticamente
 Per scegliere il comportamento di aggiornamento automatico per i dispositivi, eseguire le operazioni seguenti:
 
 1. Accedere all'Microsoft Teams di amministrazione https://admin.teams.microsoft.com visitando .
-2. Esplorare **i telefoni** IP dei dispositivi o le barre di collaborazione o Teams  >   **pannelli.** 
+2. Esplorare **i dispositivi** telefoni  >  **IP** o barre di **collaborazione** o **Teams pannelli.**
 3. Selezionare uno o più dispositivi e quindi selezionare **Aggiorna**.
 4. In **Aggiornamento automatico firmware** selezionare una delle opzioni seguenti:
     - **Non appena disponibile** Il secondo aggiornamento del firmware del dispositivo più recente viene applicato il primo fine settimana dopo il rilascio dell'ultimo aggiornamento.
@@ -61,12 +61,12 @@ Se, per qualsiasi motivo, è necessario ripristinare un aggiornamento del firmwa
 
 ## <a name="manually-update-remote-devices"></a>Aggiornare manualmente i dispositivi remoti
 
-Quando si aggiornano uno o più dispositivi con l'interfaccia di amministrazione, è possibile decidere se aggiornare immediatamente i dispositivi o pianificare un aggiornamento per una data e un'ora future.
+Quando si aggiornano uno o più dispositivi tramite l'interfaccia di amministrazione, è possibile decidere se aggiornare immediatamente i dispositivi o pianificare un aggiornamento per una data e un'ora future.
 
 Per aggiornare manualmente i dispositivi remoti, eseguire le operazioni seguenti:
 
 1. Accedere all'Microsoft Teams di amministrazione https://admin.teams.microsoft.com visitando .
-2. Esplorare **i telefoni** IP dei dispositivi o le barre di collaborazione o Teams  >   **pannelli.** 
+2. Esplorare **i telefoni** IP dei  >  **dispositivi** o barre di **collaborazione** **o Teams pannelli.**
 3. Selezionare uno o più dispositivi e quindi selezionare **Aggiorna**.
 4. In **Aggiornamenti manuali** selezionare **Pianifica** se si vuole pianificare l'aggiornamento per una data e un'ora future. Gli aggiornamenti vengono applicati alla data e all'ora del fuso orario selezionato in **Fuso orario.**
 

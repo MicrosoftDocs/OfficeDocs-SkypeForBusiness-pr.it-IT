@@ -9,19 +9,19 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come usare un team esistente per creare un nuovo modello in Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 40eae307d4ec98f37f9ee88e986194ffe99600ae2d6b74430a7b3edfcee66b53
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 05fd28f19b5733ad34bcd12efa21be675cecfd31
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282689"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588228"
 ---
 # <a name="create-a-team-template-from-an-existing-team-in-microsoft-teams"></a>Creare un modello di team da un team esistente in Microsoft Teams
 
@@ -33,7 +33,7 @@ Microsoft Teams consente di creare un modello da un team esistente che può esse
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
+2. Nel riquadro di spostamento sinistro espandere **Teams**  >  **Team**.
 
 3. Selezionare **Aggiungi**.
 
@@ -50,13 +50,13 @@ Microsoft Teams consente di creare un modello da un team esistente che può esse
     - Descrizione breve e lunga del modello
     - Visibilità delle impostazioni locali  
   
-7. Nella sezione **canali, schede e app** aggiungere i canali e le app di cui il team ha bisogno.
+7. Nella sezione **canali, schede e app** aggiungere tutti i canali e le app di cui il team ha bisogno.
 
     1. Nella sezione **Canali** selezionare **Aggiungi**.
     2. Nella finestra **di dialogo** Aggiungi assegnare un nome al canale.
     3. Aggiungere una descrizione.
     4. Decidere se il canale deve essere visualizzato per impostazione predefinita.
-    5. Cercare il nome di un'app da aggiungere al canale.
+    5. Cercare un nome di app da aggiungere al canale.
     6. Al **termine, selezionare** Applica.
 
 8. Selezionare **Invia** per salvare le modifiche.

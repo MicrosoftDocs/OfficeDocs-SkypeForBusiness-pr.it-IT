@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: efbe25f2-faf5-41c7-8c95-dbc4a835a4a8
 description: Informazioni su come aggiornare la distribuzione di Cloud Connector Edition.
-ms.openlocfilehash: 2670557f3f5ab44545c511b759971a457bd37e333d01b323ad6cc35d82526858
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3398fcdf9437a496cf5f4fb94f0fb92dc6a1da42
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279972"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588428"
 ---
 # <a name="upgrade-to-a-new-version-of-cloud-connector"></a>Eseguire l'aggiornamento a una nuova versione di Cloud Connector
 
@@ -42,7 +42,7 @@ L'aggiornamento automatico richiede che il servizio Cloud Connector sia in esecu
     
   - Controllare e scaricare gli aggiornamenti del sistema operativo per tutte le macchine virtuali cloud Connector. 
     
-  - Installare e aggiornare tutte le macchine virtuali del connettore cloud una alla volta e riavviare.
+  - Installare e aggiornare tutte le macchine virtuali di Cloud Connector una alla volta e riavviare.
     
   - Dopo il riavvio delle macchine virtuali del connettore cloud, verificare se è necessario un altro riavvio.
     
@@ -78,7 +78,7 @@ Se nel sito è presente un solo dispositivo che si desidera aggiornare, eseguire
     
 2. Installare la nuova versione di CloudConnector.msi da [https://aka.ms/CloudConnectorInstaller](https://aka.ms/CloudConnectorInstaller) .
     
-3. Verificare di disporre del file CloudConnector.ini per la versione che si sta installando e di aver aggiornato tutti i valori necessari per l'ambiente. Non è possibile utilizzare il file .ini di una versione precedente. Se si esegue l'aggiornamento di Cloud Connector, fare riferimento all'argomento [Prepare your Cloud Connector appliance](prepare-your-cloud-connector-appliance.md) e assicurarsi che SiteName e EnableReferSupport siano impostati sul valore corretto nel file CloudConnector.ini.
+3. Verificare di disporre del file CloudConnector.ini per la versione che si sta installando e di aver aggiornato tutti i valori necessari per l'ambiente. Non è possibile utilizzare il file .ini di una versione precedente. Se si sta aggiornando Cloud Connector, fare riferimento all'argomento [Prepare your Cloud Connector appliance](prepare-your-cloud-connector-appliance.md) e assicurarsi che SiteName e EnableReferSupport siano impostati sul valore corretto nel file CloudConnector.ini.
     
 4. Avviare una console di PowerShell come amministratore ed eseguire il cmdlet seguente per registrare l'appliance corrente:
     
@@ -123,4 +123,4 @@ Set-CcCredential -AccountType TenantAdmin
 ## <a name="upgrade-multiple-sites-to-a-new-version"></a>Aggiornare più siti a una nuova versione
 <a name="BKMK_Upgrade"> </a>
 
-Seguire i passaggi per l'aggiornamento di un singolo sito, aggiornando un sito alla volta per ogni sito della distribuzione. Verificare e [convalidare la distribuzione del connettore cloud](validate-your-cloud-connector-deployment.md) dopo l'aggiornamento di ogni sito.
+Seguire la procedura per aggiornare un singolo sito, aggiornando un sito alla volta per ogni sito della distribuzione. Verificare e [convalidare la distribuzione del connettore cloud](validate-your-cloud-connector-deployment.md) dopo l'aggiornamento di ogni sito.

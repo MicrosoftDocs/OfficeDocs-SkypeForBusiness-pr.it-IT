@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
 description: Informazioni su come risolvere i problemi per amministratori e utenti di Skype for Business in Microsoft 365 e Office 365.
-ms.openlocfilehash: da0668c8ead3dee48e1829a0871fe2a175bddc5b722f036c61bc3abc5027cb6a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 99c50759cea77e98f239adf8cea265941ce7f704
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310105"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609973"
 ---
 # <a name="troubleshoot-problems-with-skype-for-business-online"></a>Risolvere i problemi di Skype for Business online
 
@@ -34,7 +34,7 @@ ms.locfileid: "54310105"
 
 ## <a name="troubleshoot-admin-issues-for-skype-for-business-online"></a>Risolvere i problemi di amministrazione relativi a Skype for Business online
 
-È possibile ottenere risposte per la maggior parte delle domande Skype for Business online nell'articolo Verificare la presenza di cause comuni di Skype for Business [di](troubleshooting-sign-in-errors-for-admins.md#toc323194094)accesso online. L'articolo della Knowledge Base seguente include anche molte risorse per la risoluzione dei problemi e riferimenti ai codici di errore: Risoluzione dei Skype for Business di accesso [online per gli amministratori.](./troubleshooting-sign-in-errors-for-admins.md)
+È possibile ottenere risposte per la maggior parte delle domande Skype for Business online nell'articolo Verificare la presenza di cause comuni degli errori di Skype for Business [di accesso online.](troubleshooting-sign-in-errors-for-admins.md#toc323194094) L'articolo della Knowledge Base seguente include anche molte risorse per la risoluzione dei problemi e riferimenti ai codici di errore: Risoluzione dei Skype for Business di accesso [online per gli amministratori.](./troubleshooting-sign-in-errors-for-admins.md)
 
 Per i problemi dei servizi di conferenza telefonica, vedere [Risoluzione dei problemi e problemi noti relativi ai servizi di audioconferenza](../audio-conferencing-in-office-365/audio-conferencing-troubleshooting-and-known-issues.md).
 
@@ -77,7 +77,7 @@ La maggior parte dei problemi che devono affrontare gli utenti di Skype for Busi
 ## <a name="still-need-help-contact-support"></a>Serve ulteriore assistenza? Contattare il supporto.
 <a name="BK_SupportBridge_1"> </a>
 
-Gli amministratori di Microsoft 365 Apps for business possono accedere gratuitamente ai nostri agenti di supporto esperti per il supporto pre-vendita, l'account e la fatturazione, oltre che per assistenza nella risoluzione dei problemi tecnici. È anche possibile [contattare il supporto](/microsoft-365/Admin/contact-support-for-business-products) per conto Microsoft 365 e Office 365 utenti dell'organizzazione.
+Gli amministratori di Microsoft 365 Apps for business possono accedere gratuitamente ai nostri agenti di supporto esperti per il supporto pre-vendita, l'account e la fatturazione, nonché per assistenza nella risoluzione dei problemi tecnici. È anche possibile [contattare il supporto](/microsoft-365/Admin/contact-support-for-business-products) per conto Microsoft 365 e Office 365 utenti dell'organizzazione.
 
 - [Ottenere assistenza dai forum Microsoft 365 e Office 365 community](https://go.microsoft.com/fwlink/p/?LinkId=518605)
 

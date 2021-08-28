@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d780f676-c2c5-4f57-90dd-df5fcd204d76
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le code di Response Group contengono le chiamate ai Response Group fino a quando un agente non risponde alla chiamata. Alle code sono assegnati gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
-ms.openlocfilehash: 91bf7c6f7175b088f71d6ac79b13a80f6d1d4a57c2ec0e7dd44c798731460630
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 73c52e37624dc2468ea25aa7d892e8ebaa21ba04
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322328"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610023"
 ---
 # <a name="select-groups"></a>Selezionare gruppi
 

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f42e4d60-699b-4870-8bb5-13b51bb6eb2b
 description: 'Riepilogo: informazioni sul Rapporto dispositivi in Skype for Business Server.'
-ms.openlocfilehash: 129511daf296018bda5f727d4cdb567bdc93dddfafa6b7c48f7a20a5bcf14567
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f8c3368132dc1924ababfa6fe71b36daa412afee
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344735"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632910"
 ---
 # <a name="device-report-in-skype-for-business-server"></a>Device Report in Skype for Business Server
  
@@ -138,7 +138,7 @@ Nella tabella seguente sono elencati i filtri applicabili al Rapporto dispositiv
 |**Tipo di accesso** <br/> |Indica se al momento dell'esecuzione della chiamata il client era connesso alla rete interna o alla rete esterna. Selezionare una delle opzioni seguenti:  <br/> [All] Internal External |
 |**Tipo di rete** <br/> |Indica il tipo di rete alla quale era connesso il client quando è stata effettuata la chiamata. Selezionare una delle opzioni seguenti:  <br/> [All] Wireless cablata |
 |**VPN** <br/> |Indica se un client esterno stava utilizzando una connessione VPN (Virtual Private Network) al momento della chiamata. Selezionare una delle opzioni seguenti:  <br/> [All] VPN non VPN |
-|**Tipo di dispositivo** <br/> |Indica il tipo di dispositivo. Selezionare una delle opzioni seguenti:  <br/> Coppia dispositivo di acquisizione/rendering del dispositivo di rendering |
+|**Tipo di dispositivo** <br/> |Indica il tipo di dispositivo. Selezionare una delle opzioni seguenti:  <br/> Coppia dispositivo di acquisizione/rendering dispositivo di rendering |
 |**Nome dispositivo** <br/> |Nome del dispositivo di acquisizione o di rendering. È possibile immettere il nome completo del dispositivo o una parte di esso. Ad esempio, per trovare il dispositivo Microfono (Microsoft LifeCam VX-1000.), è possibile immettere il nome del dispositivo completo come segue:  <br/> Microfono (Microsoft LifeCam VX-1000.)  <br/> In alternativa, è possibile immettere solo una parte del nome, ad esempio:  <br/> LifeCam  <br/> Si noti che il filtro precedente restituisce qualsiasi dispositivo il cui nome contenga la stringa "LifeCam" in qualsiasi punto.  <br/> |
    
 ## <a name="metrics"></a>Metriche

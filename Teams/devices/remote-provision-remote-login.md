@@ -1,5 +1,5 @@
 ---
-title: Provisioning remoto e accesso per Teams dispositivi Android
+title: Provisioning remoto e accesso per i Teams Android
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -15,17 +15,17 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come eseguire il provisioning remoto e accedere per Teams dispositivi Android
-ms.openlocfilehash: 8866079fa02edb8dabbfe36d724194858d16553d
-ms.sourcegitcommit: 3cc2da11aac1a3a7d620810c6f22a7192e4ab993
+ms.openlocfilehash: 31a247f7716d1e97ed3ed1e4b9b7f8d20d0881f8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/23/2021
-ms.locfileid: "58483113"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632200"
 ---
-# <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per Teams dispositivi Android
+# <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per i Teams Android
 
 Gli amministratori IT possono eseguire il provisioning in remoto e accedere a un dispositivo Teams Android. Per eseguire il provisioning di un dispositivo in remoto, l'amministratore deve caricare gli ID MAC dei dispositivi di cui viene eseguito il provisioning e creare un codice di verifica. L'intero processo può essere completato in remoto dall'Teams di amministrazione.
 

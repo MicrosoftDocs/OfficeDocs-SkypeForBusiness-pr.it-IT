@@ -9,18 +9,18 @@ ms.reviewer: ''
 search.appverid: ''
 description: È possibile utilizzare Teams criteri.
 audience: admin
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 75a2da0b4b949195f5660991eca130249bc1e75ae52e95ef7c221449a8e72821
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 307eccf1d6e919593cdfadaf2b902a7a15c7b4cc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319949"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588148"
 ---
 # <a name="manage-teams-with-policies"></a>Gestire Teams con i criteri
 
@@ -52,7 +52,7 @@ Inoltre, i criteri di riunione possono essere usati per controllare le impostazi
 
 ### <a name="teams-for-education"></a>Teams per l'istruzione
 
-È anche possibile usare la procedura [guidata Teams per l'istruzione criteri di](easy-policy-setup-edu.md) apprendimento per configurare e gestire facilmente i criteri per l'ambiente di apprendimento.
+È anche possibile usare la procedura [guidata Teams per l'istruzione criteri per](easy-policy-setup-edu.md) configurare e gestire facilmente i criteri per l'ambiente di apprendimento.
 
 ![Screenshot della procedura guidata Teams per l'istruzione criteri di gruppo.](media/easy-policy-setup-quick-setup.png)
 
@@ -63,9 +63,9 @@ I criteri seguenti possono essere gestiti con Microsoft Teams.
 Tipo di criterio | Descrizione
 ------------|------------
 [Pacchetti di criteri](manage-policy-packages.md) | Un pacchetto di criteri in Microsoft Teams è una raccolta di criteri e impostazioni predefiniti che è possibile assegnare agli utenti con ruoli simili nell'organizzazione.
-[Criteri riunione](meeting-policies-in-teams.md) | I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alla riunione per le riunioni pianificate dagli utenti dell'organizzazione. I criteri delle riunioni includono gli argomenti seguenti.<br> - Criteri audio e video<br> - Criteri di condivisione del contenuto e dello schermo<br> - Partecipanti, guest e criteri di accesso<br> - Criteri generali
+[Criteri riunione](meeting-policies-in-teams.md) | I criteri riunione vengono usati per controllare le funzionalità disponibili per i partecipanti alle riunioni pianificate dagli utenti dell'organizzazione. I criteri delle riunioni includono gli argomenti seguenti.<br> - Criteri audio e video<br> - Criteri di condivisione del contenuto e dello schermo<br> - Partecipanti, guest e criteri di accesso<br> - Criteri generali
 [Criteri vocali e chiamate](voice-and-calling-policies.md)| I criteri vocali e chiamate gestiscono queste impostazioni tramite team come chiamate di emergenza, routing delle chiamate e ID chiamante.
-[Criteri delle app](app-policies.md)| I criteri delle app vengono usati per controllare le applicazioni in Microsoft Teams. Gli amministratori possono consentire o bloccare le app che gli utenti possono installare, aggiungere applicazioni alla barra delle app Teams di un utente e installare l'applicazione per conto degli utenti.
+[Criteri delle app](app-policies.md)| I criteri delle app vengono usati per controllare le applicazioni in Microsoft Teams. Gli amministratori possono consentire o bloccare le app che gli utenti possono installare, aggiungere le applicazioni alla barra delle app Teams di un utente e installare l'applicazione per conto degli utenti.
 [Criteri di messaggistica](messaging-policies-in-teams.md)| I criteri di messaggistica controllano la disponibilità delle funzionalità di chat e canali.
 
 ## <a name="related-topics"></a>Argomenti correlati

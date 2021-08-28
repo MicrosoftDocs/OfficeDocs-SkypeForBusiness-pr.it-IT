@@ -9,22 +9,22 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6793fca0-3970-44e4-8703-1925428c1967
 description: Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente locale a più foreste.
-ms.openlocfilehash: dc1d7fa3a3ca7cbcf62f7c038fb8fd6b4fcedc84319452ec8eaf02781f311bf3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 944042777174539b9b9f0a1d49754d9234a1d255
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310065"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609943"
 ---
 # <a name="skype-room-system-multiple-forest-on-premises-deployments"></a>Skype Sistema sala distribuzioni locali a più foreste
  
 Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente locale a più foreste.
   
 > [!NOTE]
-> Per la distribuzione in più foreste, Skype Room System richiede Exchange Server 2013 CU6 rilasciato il 26 agosto 2014. Evitare di utilizzare nuovamente una cassetta postale esistente per Skype Room System. Utilizzare una nuova cassetta postale (eliminare la cassetta postale precedente e ri-creare) per Skype Room System. Per ripristinare le riunioni perse eliminando la cassetta postale, vedere Connessione [o ripristinare una cassetta postale eliminata.](/exchange/connect-or-restore-a-deleted-mailbox-exchange-2013-help) 
+> Per la distribuzione in più foreste, Skype Room System richiede Exchange Server 2013 CU6 rilasciato il 26 agosto 2014. Evitare di utilizzare di nuovo una cassetta postale esistente per Skype Room System. Utilizzare una nuova cassetta postale (eliminare la cassetta postale precedente e ri-creare) per Skype room system. Per ripristinare le riunioni perse eliminando la cassetta postale, vedere Connessione [o ripristinare una cassetta postale eliminata.](/exchange/connect-or-restore-a-deleted-mailbox-exchange-2013-help) 
   
 Dopo aver creato la cassetta postale, è possibile utilizzare Set-CalendarProcessing per configurare la cassetta postale. Per ulteriori dettagli, vedere i passaggi da 3 a 6 in Distribuzioni locali a foresta singola. Dopo aver creato una cassetta postale risorsa Exchange per Skype Room System, abilitare l'account per Skype for Business seguendo la procedura descritta in Enabling Skype Room System Accounts for Skype for Business in Single forest on-premises deployments.
   

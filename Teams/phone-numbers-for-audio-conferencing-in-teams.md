@@ -15,7 +15,7 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,16 +23,16 @@ ms.custom:
 - LIL_Placement
 - seo-marvel-mar2020
 description: Informazioni su quali paesi e aree possiedono numeri telefonici di accesso esterno e come vengono assegnati automaticamente.
-ms.openlocfilehash: f72a8929ae9d685642857764e7c0d4541f762ce875adafdd0a46a6de1b471483
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 30cbc91f4f9a5fd47c9e8469781abb3ac67b0c1e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54276132"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632030"
 ---
 # <a name="phone-numbers-for-audio-conferencing-in-microsoft-teams"></a>Numeri di telefono per le audioconferenze in Microsoft Teams
 
-Quando si configurano le **audioconferenze** per Microsoft Teams, i numeri di telefono di accesso esterno vengono assegnati automaticamente all'organizzazione. Per visualizzare i numeri di telefono assegnati al bridge di audioconferenza, nell'interfaccia di amministrazione Microsoft Teams riunioni passare a Bridge di conferenza  >  **riunioni.** Per altre informazioni, vedere Visualizzare [un elenco di numeri di audioconferenza.](see-a-list-of-audio-conferencing-numbers-in-teams.md)
+Quando si configurano le audioconferenze per Microsoft Teams, i numeri di telefono di accesso esterno vengono assegnati automaticamente all'organizzazione.  Per visualizzare i numeri di telefono assegnati al bridge di audioconferenza, nell'interfaccia di amministrazione Microsoft Teams riunioni passare a Bridge di conferenza  >  **riunioni**. Per altre informazioni, vedere Visualizzare [un elenco di numeri di audioconferenza.](see-a-list-of-audio-conferencing-numbers-in-teams.md)
   
   
 ## <a name="audio-conferencing-coverage-and-pricing"></a>Copertura e prezzi per Audioconferenza

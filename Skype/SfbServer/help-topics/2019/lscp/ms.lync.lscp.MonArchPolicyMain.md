@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9b69f1fa-8f3b-450e-aa89-91fd462f198d
 ROBOTS: NOINDEX, NOFOLLOW
 description: "I criteri di archiviazione consentono di abilitare e disabilitare l'archiviazione per gli utenti ospitati Skype for Business Server. In ogni criterio di archiviazione è possibile abilitare o disabilitare l'archiviazione per una o entrambe le opzioni seguenti:"
-ms.openlocfilehash: 2ad43ab7f80a84d471797690f1b7b79870a3342caf3b02d9e1902419c6ec6674
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dca1ec888a63297f89da062d22983d3d05182127
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54325273"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610063"
 ---
 # <a name="archiving-policy"></a>Criteri archiviazione
  
@@ -39,7 +39,7 @@ I criteri di archiviazione includono i criteri globali e, facoltativamente, uno 
 - **Criteri utente (facoltativo)** È possibile specificare uno o più criteri di archiviazione utente, ognuno dei quali può essere configurato per abilitare e disabilitare l'archiviazione delle comunicazioni interne o esterne per un utente o un gruppo di utenti specifico. Un criterio utente sostituisce i criteri globali e i criteri del sito, ma solo per gli utenti e i gruppi di utenti a cui si assegnano criteri di archiviazione a livello di utente. È possibile modificare o eliminare i criteri utente.
     
 > [!NOTE]
-> I criteri di archiviazione si applicano solo agli utenti ospitati Skype for Business Server. Se si utilizza l'Exchange per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange controllano l'archiviazione per gli utenti ospitati in Exchange. Per abilitare l'archiviazione per tali utenti, è necessario che la cassetta postale dell'utente sia In-Place blocco. 
+> I criteri di archiviazione si applicano solo agli utenti ospitati Skype for Business Server. Se si utilizza l'Exchange di archiviazione per archiviare i dati di archiviazione in Microsoft Exchange, i criteri di Exchange controllano l'archiviazione per gli utenti ospitati in Exchange. Per abilitare l'archiviazione per tali utenti, è necessario che la cassetta postale dell'utente sia In-Place blocco. 
   
 Nella **pagina Criteri di** archiviazione sono elencati i criteri di archiviazione configurati per la distribuzione. Vengono inoltre visualizzati il nome del criterio, l'ambito (globale, sito o utente) e le opzioni di archiviazione abilitate per ogni criterio di archiviazione. Nella pagina **Criteri di** archiviazione sono disponibili le opzioni seguenti:
 - **Nuovo** È possibile aggiungere uno o più criteri di archiviazione facoltativi seguenti:

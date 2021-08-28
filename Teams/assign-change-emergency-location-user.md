@@ -13,31 +13,31 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
-description: In questo articolo viene spiegato come assegnare o modificare una posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
+description: Questo articolo illustra come assegnare o modificare una posizione per gli interventi di emergenza per gli utenti dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8045120f6a74a536b3fcbe420278ad847b3108f38161d6e23f3eecfd5788224c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 36be65ef14cfe0fc97ce49dfa9227fe50daa18f1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309145"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588378"
 ---
 # <a name="assign-or-change-an-emergency-location-for-a-user"></a>Assegnare o modificare una posizione di emergenza per un utente
 
-Durante la configurazione dei Piani per le chiamate, è necessario assegnare una posizione di emergenza a ogni numero di telefono o utente. Nei paesi europei, la posizione di emergenza è associata al numero di telefono quando lo ricevi da Microsoft 365 o Office 365 o quando trasferisci un numero di telefono a Microsoft 365 o Office 365. Negli Stati Uniti, la posizione di emergenza è associata al numero di telefono quando viene assegnato all'utente. L'indirizzo per gli interventi di emergenza può essere modificato se l'utente a cui è assegnato si sposta in una nuova posizione. Per altre informazioni sugli indirizzi e le posizioni per gli interventi di emergenza, vedere Che cosa sono le località di emergenza, i [luoghi e il routing delle chiamate?](./what-are-emergency-locations-addresses-and-call-routing.md).
+Durante la configurazione dei Piani per le chiamate, è necessario assegnare una posizione di emergenza a ogni numero di telefono o utente. Nei paesi europei, la posizione di emergenza è associata al numero di telefono quando lo ricevi da Microsoft 365 o Office 365 o quando trasferisci un numero di telefono a Microsoft 365 o Office 365. Negli Stati Uniti, la posizione di emergenza è associata al numero di telefono quando viene assegnato all'utente. L'indirizzo per gli interventi di emergenza può essere modificato se l'utente a cui è assegnato si sposta in una nuova posizione. Per altre informazioni sugli indirizzi e le posizioni per gli interventi di emergenza, vedere Che cosa sono le località [di emergenza, i luoghi e il routing delle chiamate?](./what-are-emergency-locations-addresses-and-call-routing.md).
   
 Per informazioni su come ottenere un Piano per chiamate e sul costo, vedere Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   
-È possibile assegnare o modificare una posizione per gli interventi di emergenza per un utente nell'Microsoft Teams di amministrazione o usando PowerShell.
+È possibile assegnare o modificare una posizione per gli interventi di emergenza per un utente nell'interfaccia di amministrazione Microsoft Teams o usando PowerShell.
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Numeri**  >  **Telefono vocali**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic **su** Numeri Telefono  >  **vocali**.
 
-2. Nella pagina **Telefono numeri** fare clic sulla scheda **Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
+2. Nella pagina **Telefono numeri** fare clic sulla **scheda Numeri,** selezionare un numero utente nell'elenco e quindi fare clic su **Modifica.**
 
 3. Nel riquadro **Modifica,** in **Posizione emergenza,** eseguire una delle operazioni seguenti:
 

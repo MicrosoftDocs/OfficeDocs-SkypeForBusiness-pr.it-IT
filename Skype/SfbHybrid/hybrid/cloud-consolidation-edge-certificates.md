@@ -19,21 +19,21 @@ f1.keywords:
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Questa appendice include la procedura dettagliata per l'aggiornamento del certificato perimetrale nell'ambito del consolidamento cloud per Teams e Skype for Business.
-ms.openlocfilehash: 7370fe6949c471a6aad9b45ee246f1565b43bdb465eba2110a03f53afa69fe28
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1c4708f593b1a9bd8fbc2a427e2f0c5df9feab5c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54330630"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610203"
 ---
 # <a name="update-the-edge-certificate"></a>Aggiornare il certificato perimetrale
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 
-L'aggiornamento del certificato perimetrale è il passaggio chiave per garantire che un ambiente locale con SipDomain1 possa aggiungersi a un ambiente cloud con SipDomain2 e garantire il routing corretto in un ambiente con spazio di indirizzi condiviso tra i due domini SIP. Vedere il passaggio 14 in [Consolidamento cloud per](cloud-consolidation.md) Teams e Skype for Business per il contesto in cui è possibile eseguire questo passaggio. In questo esempio SipDomain1 è AcquiredCompany. <span> com e SipDomain2 sono OriginalCompany. <span> com.
+L'aggiornamento del certificato perimetrale è il passaggio chiave per garantire che un ambiente locale con SipDomain1 possa aggiungersi a un ambiente cloud con SipDomain2 e garantire il routing corretto in un ambiente con spazio di indirizzi condiviso tra i due domini SIP. Vedere il passaggio 14 in [Consolidamento](cloud-consolidation.md) cloud per Teams e Skype for Business per il contesto in cui è possibile eseguire questo passaggio. In questo esempio SipDomain1 è AcquiredCompany. <span> com e SipDomain2 sono OriginalCompany. <span> com.
 
 Il nome soggetto alternativo (SAN) del certificato in tutti i server perimetrali nell'ambiente locale deve essere aggiornato in modo da includere tutti i domini SIP presenti nel tenant online puro (escluso qualsiasi onmicrosoft). <span> com domains), nel formato "sip. \<domain> ".  In questo esempio, si tratta di sip. OriginalCompany. <span> com. Questo passaggio è fondamentale prima di eseguire la migrazione degli utenti nel cloud.
 

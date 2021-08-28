@@ -15,15 +15,15 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come mascherare i numeri di telefono nelle Microsoft Teams riunioni
-ms.openlocfilehash: f5b2e6066b41d21e4f3761223fd97ff2fd7ac4c72d4a61356115ea212b0409b9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1a006450c1d98e6db0b02ceb953682efdbe3fd6a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54285785"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631990"
 ---
 # <a name="mask-phone-numbers-in-microsoft-teams-meetings"></a>Mascherare i numeri di telefono nelle Microsoft Teams riunioni
 
@@ -31,10 +31,10 @@ Per una maggior privacy, i numeri di telefono dei partecipanti che a una riunion
 
 ![esempio di numero di telefono mascherato](media/hiddenPhoneNum.png)
 
-Per specifici casi d'uso del settore, gli amministratori possono scegliere come visualizzare i numeri di telefono dei partecipanti ai servizi di audioconferenza nelle riunioni organizzate nel tenant. Gli amministratori possono scegliere tra tre opzioni:
+Per casi d'uso specifici del settore, gli amministratori possono scegliere come visualizzare i numeri di telefono dei partecipanti ai servizi di audioconferenza nelle riunioni organizzate nel tenant. Gli amministratori possono scegliere tra tre opzioni:
 
-- Telefono numeri sono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
-- Telefono numeri sono mascherati da tutti i partecipanti alla riunione, ad eccezione dell'organizzatore.
+- Telefono i numeri sono mascherati solo da partecipanti esterni. I partecipanti che appartengono al tenant dell'organizzatore della riunione continuano a visualizzare il numero di telefono completo.
+- Telefono i numeri sono mascherati da tutti i partecipanti alla riunione, ad eccezione dell'organizzatore.
 - Telefono i numeri vengono smascherati, che li rende visibili a tutti i partecipanti alla riunione.
 
 Questa impostazione viene applicata a tutte le superfici della riunione in cui sono esposti i numeri di telefono.

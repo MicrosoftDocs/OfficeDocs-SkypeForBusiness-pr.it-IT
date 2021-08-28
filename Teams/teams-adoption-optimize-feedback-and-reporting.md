@@ -8,9 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: karuanag
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come ottenere il feedback degli utenti e usare la creazione di report sull'integrità dei servizi in Teams'adozione.
+description: Informazioni su come ottenere il feedback degli utenti e usare la creazione di report sull'integrità dei servizi nell'adozione Teams utenti.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,32 +21,32 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b7801e2a80f65e90a26cd99124047f229c04222a8b4d846acf53bd46a9d8510f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4023a5bf998b4cc53ad0651d7af1e9146c05a110
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54285665"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631970"
 ---
-# <a name="optimize-feedback-and-reporting-for-your-microsoft-teams-adoption"></a>Ottimizzare il feedback e la creazione di report per l'adozione Microsoft Teams utenti
+# <a name="optimize-feedback-and-reporting-for-your-microsoft-teams-adoption"></a>Ottimizzare il feedback e la creazione di report Microsoft Teams'adozione
 
 Assicurarsi di ricevere segnali dal servizio e dai dipendenti seguendo le procedure consigliate per il feedback degli utenti e la segnalazione dell'integrità dei servizi.  In alcuni casi, potrebbero essere necessari diritti di amministratore per accedere a determinati report sull'utilizzo e l'integrità dei servizi. Se non si è l'amministratore Microsoft 365 o Office 365 dell'organizzazione, collaborare con tale persona per ottenere il ruolo di lettore di report nel interfaccia di amministrazione di Microsoft 365 per accedere ad alcuni di questi dati.
 
 ## <a name="incorporating-feedback"></a>Incorporare feedback 
 
-Durante tutta la fase dell'esperimento si acquisiranno informazioni su come le persone hanno usato il prodotto e la loro esperienza. Usare queste informazioni ora per modificare i programmi di consapevolezza e formazione mentre si prevede di espanderne l'uso nelle business unit. Alcune domande di esempio comuni potrebbero essere:
+Durante tutta la fase dell'esperimento si acquisiranno informazioni su come le persone hanno usato il prodotto e la loro esperienza. Usare queste informazioni ora per modificare i programmi di consapevolezza e formazione mentre si prevede di espanderne l'uso in tutte le business unit. Alcune domande di esempio comuni potrebbero essere:
 
 - Quando si usa questo nuovo strumento insieme alla tecnologia esistente?
-- Who approvato per l'uso di questo strumento con me?
+- Who è approvato per l'uso di questo strumento con me?
 - È sicuro per informazioni altamente riservate? 
-- Who posso parlare con te per saperne di più su Microsoft Teams?
+- Who posso parlare per saperne di più su Microsoft Teams?
 - Qualcosa non funziona. Come si ottiene assistenza?
 
 ## <a name="invest-in-your-champions"></a>Investi nei tuoi campioni
 
 Mentre ti prepari a scalare l'uso delle Microsoft Teams, recluta altri campioni in ogni business unit o gruppo a cui stai espandendo. Iscrivere queste persone entusiastie al programma di formazione sul servizio e standardizzare come e quando ci si incontra con loro.
  
-Nella progettazione del programma campioni è chiaro cosa riceveranno i tuoi dipendenti e cosa dovrebbero dare se diventano campioni. I requisiti comuni per i programmi sono gli orari di ufficio pianificati, la partecipazione alle chiamate mensili della community e la partecipazione a community online interne per supportare la transizione a queste nuove esperienze.  
+È chiaro nella progettazione del programma campioni cosa riceveranno i dipendenti e cosa dovrebbero dare se diventano campioni. I requisiti comuni per i programmi sono gli orari di ufficio pianificati, la partecipazione alle chiamate mensili della community e la partecipazione alle community online interne per supportare la transizione a queste nuove esperienze.  
 
 Procedura consigliata: tenere una riunione Teams per i campioni interni. Suddividere l'agenda tra l'insegnamento di nuove funzionalità, l'indirizzamento del feedback e la fornitura di strumenti self-service per la community dei dipendenti.
 
@@ -54,10 +54,10 @@ Procedure consigliate: fare in modo che i rappresentanti del reparto di supporto
 
 ## <a name="service-reporting"></a>Creazione di report sui servizi
 
-Esistono tre tipi di report che è consigliabile esaminare durante la distribuzione e l'adozione Microsoft Teams:
+Durante la distribuzione e l'adozione di Microsoft Teams sono disponibili tre tipi di Microsoft Teams:
 
 - [Integrità dei](https://status.office365.com/) servizi: da Microsoft 365, Office 365 e dal reparto di supporto IT interno.
-- [Microsoft 365 report nell'interfaccia](/microsoft-365/admin/activity-reports/activity-reports) di amministrazione, da Microsoft 365 o Office 365 report Microsoft 365 report nell'interfaccia di amministrazione, Microsoft Teams [utente.](/microsoft-365/admin/activity-reports/microsoft-teams-user-activity) È anche possibile usare le informazioni di altri sistemi all'interno dell'organizzazione.
-- Soddisfazione del servizio: raccolte da forum della community interni e sondaggi su esperienze specifiche
+- [Microsoft 365 report nell'interfaccia](/microsoft-365/admin/activity-reports/activity-reports) di amministrazione, da Microsoft 365 o Office 365 report Microsoft 365 nell'interfaccia di [amministrazione, Microsoft Teams'attività degli utenti.](/microsoft-365/admin/activity-reports/microsoft-teams-user-activity) È anche possibile usare le informazioni di altri sistemi all'interno dell'organizzazione.
+- Soddisfazione del servizio: raccolta da forum della community interni e sondaggi su esperienze specifiche
 
 ![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: Aumentare [la consapevolezza e implementare la formazione](teams-adoption-drive-awareness.md)

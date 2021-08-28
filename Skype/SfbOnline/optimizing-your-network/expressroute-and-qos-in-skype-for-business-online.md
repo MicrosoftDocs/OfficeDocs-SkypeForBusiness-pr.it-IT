@@ -14,37 +14,37 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Optimization
 description: "Informazioni sull'uso di Azure ExpressRoute per avere una rete con requisiti di larghezza di banda e funzionalità di qualità del servizio per un'esperienza utente di business class. "
-ms.openlocfilehash: 6854c1a515fc5aa22a2766944366d6b644e14483
-ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
+ms.openlocfilehash: ddf90000de18f1fafd60896134eee21574605c8b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58407225"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610193"
 ---
 # <a name="expressroute-and-qos-in-skype-for-business-online"></a>ExpressRoute e QoS in Skype for Business Online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Connessione per Microsoft 365 o Office 365 tramite una connessione di rete dedicata usando Azure ExpressRoute per Microsoft 365 o Office 365 e Skype for Business Online. La connessione dedicata per le app Skype for Business ti offrirà prestazioni affidabili e prevedibili e privacy lontano da Internet pubblico. Ora è possibile acquistare una connessione di rete migliore a Microsoft 365 o Office 365 e Skype for Business Online che aggiunge prevedibilità, affidabilità in classe aziendale e viene fornito con un contratto di servizio per i tempi di attività.
+Connessione a Microsoft 365 o Office 365 tramite una connessione di rete dedicata usando Azure ExpressRoute per Microsoft 365 o Office 365 e Skype for Business Online. La connessione dedicata per le app Skype for Business ti offrirà prestazioni affidabili e prevedibili e privacy lontano da Internet pubblico. Ora è possibile acquistare una connessione di rete migliore a Microsoft 365 o Office 365 e Skype for Business Online che aggiunge prevedibilità, affidabilità di classe aziendale e viene fornito con un contratto di servizio per i tempi di attività.
   
 > [!NOTE]
 > È disponibile una nuova versione della calcolatrice della larghezza di banda: [Skype for Business, Bandwidth Calculator](https://go.microsoft.com/fwlink/?LinkId=715766). Tuttavia, le istruzioni in questo documento usano la calcolatrice della larghezza di banda di Lync 2010 e 2013. 
   
 ## <a name="skype-for-business-online-and-expressroute"></a>Skype for Business Online ed ExpressRoute
 
-Collaborando con un partner ExpressRoute di Microsoft, è possibile connettere un'ampia gamma di applicazioni Microsoft 365 e Office 365, tra cui Skype for Business Online nel cloud tramite una connessione dedicata. Tuttavia, le funzionalità di comunicazione vocale e video in tempo reale per Skype for Business richiedono servizi di rete specificamente configurati per supportare questi carichi di lavoro Microsoft 365 o Office 365 in tempo reale. Ciò comprende una rete che abbia una larghezza di banda sufficiente per supportare il volume di traffico richiesto e che sia in grado di supportare la qualità del servizio (QoS, Quality of Service) per offrire agli utenti un'esperienza di livello aziendale.
+Lavorando con un partner ExpressRoute di Microsoft, è possibile connettere un'ampia gamma di applicazioni Microsoft 365 e Office 365, tra cui Skype for Business Online nel cloud tramite una connessione dedicata. Tuttavia, le funzionalità di comunicazione vocale e video in tempo reale per Skype for Business richiedono servizi di rete specificamente configurati per supportare questi carichi di lavoro Microsoft 365 o Office 365 in tempo reale. Ciò comprende una rete che abbia una larghezza di banda sufficiente per supportare il volume di traffico richiesto e che sia in grado di supportare la qualità del servizio (QoS, Quality of Service) per offrire agli utenti un'esperienza di livello aziendale.
   
 Questo documento è progettato per aiutare gli amministratori e i progettisti di rete a comprendere le sfide speciali necessarie per supportare le comunicazioni in tempo reale, gli strumenti forniti da Microsoft per agevolare la progettazione di una rete in grado di supportare tali requisiti e per illustrare il processo di progettazione usando un case study. 
   
-La prima parte di questo documento illustra un case study che illustra come progettare la rete usando la calcolatrice della larghezza di banda di [Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkId=690282) per stimare i requisiti di rete per una distribuzione di Skype for Business ExpressRoute Skype for Business più siti. La seconda parte di questo documento offre i concetti fondamentali di Qualità del servizio (QoS), un approfondimento sui dettagli tecnici specifici per il supporto delle comunicazioni Skype for Business tempo reale e sui tipi specifici di servizi di rete necessari.
+La prima parte di questo documento illustra un case study che illustra come progettare la rete usando la calcolatrice della larghezza di banda di [Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkId=690282) per stimare i requisiti di rete per una distribuzione di Skype for Business ExpressRoute Skype for Business multisociestra. La seconda parte di questo documento fornisce i concetti fondamentali di Qualità del servizio (QoS), un approfondimento sui dettagli tecnici specifici per il supporto delle comunicazioni Skype for Business tempo reale e sui tipi specifici di servizi di rete necessari.
   
-Tutte le informazioni qui fornite forniscono i dettagli tecnici e la comprensione per QoS ed ExpressRoute, una comprensione delle sfide specifiche che si affronteranno e una conoscenza funzionante degli strumenti e delle tecniche che consentono di distribuire correttamente un ExpressRoute nella rete Skype for Business. 
+Tutte le informazioni qui fornite forniscono i dettagli tecnici e la comprensione per QoS ed ExpressRoute, una comprensione delle sfide specifiche che si affronteranno e una conoscenza funzionante degli strumenti e delle tecniche che consentono di distribuire correttamente expressRoute nella rete Skype for Business. 
   
 ## <a name="getting-started"></a>Introduzione
 
@@ -85,16 +85,16 @@ Per offrire servizi in tempo reale coerenti e di alta qualità per Dewey Law LLC
     
 - Gli switch e i router di rete devono anche usare fonti di alimentazione ininterrotta (UPS) in modo che possano continuare a operare durante un'interruzione dell'alimentazione.
     
-    Hanno una connessione Wi-Fi con i loro uffici LAN, quindi è consigliabile usare un partner dell'infrastruttura Skype for Business Wi-Fi certificato di [Skype for Business Solutions.](https://go.microsoft.com/fwlink/?LinkId=690281)
+    Hanno una connessione Wi-Fi con i loro uffici LAN, quindi è consigliabile usare un partner certificato per l'infrastruttura di Skype for Business Wi-Fi di [Skype for Business Solutions.](https://go.microsoft.com/fwlink/?LinkId=690281)
     
     > [!TIP]
     >  Sono consigliati i punti di accesso wireless 802.11n e 802.11ac.
   
 - E, soprattutto, tutte le reti LAN in tutti gli uffici devono essere impostate per fornire la qualità del servizio (QoS). Sono inclusi PC, portatili e qualsiasi hardware di rete, ad esempio switch e router.
     
-Ora che sono state trattate le nozioni di base, per fornire servizi vocali di livello aziendale per Dewey Law LLC,è consigliabile usare il servizio IP MPLS (Multi-Protocol Label Switching) da un partner del servizio di rete che si connetterà al servizio Azure ExpressRoute. MPLS fornisce un servizio IP con garanzie di prestazioni per ritardi, instabilità e perdita di pacchetti. Tuttavia, se MPLS non è disponibile, è possibile usare anche Ethernet connesso a uno dei partner di scambio dati ExpressRoute.
+Ora che sono state trattate le nozioni di base, per fornire servizi vocali di livello aziendale per Dewey Law LLC., è consigliabile usare il servizio IP MPLS (Multi-Protocol Label Switching) da un partner del servizio di rete che si connetterà al servizio Azure ExpressRoute. MPLS fornisce un servizio IP con garanzie di prestazioni per ritardi, instabilità e perdita di pacchetti. Tuttavia, se MPLS non è disponibile, è possibile usare anche Ethernet connesso a uno dei partner di scambio dati ExpressRoute.
   
-I provider MPLS offrono diverse classi di livelli di servizio, ma ognuno usa termini diversi per identificarli. È necessario collaborare a stretto contatto con il provider per assicurarsi che comprenda i dati immessi nella calcolatrice larghezza di banda di [Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) e le opzioni disponibili e consigliate per le diverse applicazioni di carico di lavoro Microsoft 365 e Office 365 in tempo reale.
+I provider MPLS offrono diverse classi di livelli di servizio, ma ognuno usa termini diversi per identificarli. È necessario collaborare a stretto contatto con il provider per assicurarsi che comprenda i dati immessi nella Calcolatrice larghezza di banda di [Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) e le opzioni disponibili e consigliate per le diverse applicazioni di carico di lavoro Microsoft 365 e Office 365 in tempo reale.
   
 Esistono due opzioni per il mapping dei dati Skype for Business applicazioni alle classi di servizio MPLS appropriate:
   
@@ -104,7 +104,7 @@ Esistono due opzioni per il mapping dei dati Skype for Business applicazioni all
     
 Per implementare il contrassegno endpoint, è necessario configurare tutti i computer Windows dominio per Dewey Law LLC. per contrassegnare ogni pacchetto con il contrassegno DSCP (DiffServ Control Point) appropriato e quindi implementare la QoS su tutti gli switch e i router di rete in tutti i siti dell'ufficio per assicurarsi che i contrassegni QoS siano mantenuti e non rimossi. I contrassegni DSCP nei pacchetti di rete indicano al provider di servizi la priorità del pacchetto di rete. **Altre informazioni su DSCP sono disponibili nella sezione QoS della parte 2.**
   
-Per l'assegnazione basata su ACL di rete, i contrassegni di priorità DSCP vengono implementati presso un router upstream e si basano sulla porta di origine UDP. Gli intervalli di porte consigliati per ogni applicazione sono elencati nella Sezione 2.6.1.1 di Pianificazione della rete, monitoraggio e risoluzione dei problemi [con Lync Server.](https://go.microsoft.com/fwlink/?LinkId=690286) È importante coordinare questa operazione con l'implementazione e la progettazione QoS generale di Dewey Law LLC e tenere presente i diversi criteri QoS e il potenziale di mancata corrispondenza dei contrassegni dei pacchetti.
+Per l'assegnazione basata su ACL di rete, i contrassegni di priorità DSCP vengono implementati presso un router upstream e si basano sulla porta di origine UDP. Gli intervalli di porta consigliati per ogni applicazione sono elencati nella Sezione 2.6.1.1 di Pianificazione, monitoraggio e risoluzione dei problemi di rete [con Lync Server.](https://go.microsoft.com/fwlink/?LinkId=690286) È importante coordinare questa operazione con l'implementazione e la progettazione QoS generale di Dewey Law LLC e tenere presente i diversi criteri QoS e il potenziale di mancata corrispondenza dei contrassegni dei pacchetti.
   
 Ogni provider di servizi di rete ExpressRoute avrà una classe di servizio (QoS) appropriata per voce e video in tempo reale. Questo COS è chiamato "Inoltro accelerato" (EF) per la voce e "Inoltro sicuro" (AF) per il video. È necessario prestare particolare attenzione nel ridimensionare la quantità di larghezza di banda acquistata per il traffico EF vocale. Il motivo è che la classe di servizio vocale è molto imperdonante nel caso in cui si invii più traffico vocale di quello per cui viene eseguito il provisioning della classe di servizio.
   
@@ -144,7 +144,7 @@ Per facilitare l'esecuzione del foglio di calcolo, le varie celle del foglio di 
     
 - **Grigio** Si tratta di aree di sola visualizzazione. Si tratta dei risultati o dei dati provenienti dalle aree di input generali.
     
-Processo di progettazione per Dewey Law LLC. inizia caratterizzando gli utenti in diversi "Persona". Per ogni persona definita, è possibile specificare l'uso previsto delle varie applicazioni Skype for Business ('Nessuno', 'Basso', 'Medio', 'Alto' o una delle tre impostazioni 'Personalizzate' definite). Queste selezioni si trovano nel foglio di lavoro "Persona". Viene fornito l'utilizzo specifico per ogni scelta ('Bassa', 'Media' o 'Alta'), ma è possibile modificare le impostazioni predefinite per ogni scelta. Identificando il numero di utenti per ogni persona che si trova in ogni sito, la calcolatrice può calcolare la larghezza di banda totale necessaria per ogni posizione.
+Processo di progettazione per Dewey Law LLC. inizia caratterizzando gli utenti in "Persona" diversi. Per ogni persona definita, è possibile specificare l'uso previsto delle varie applicazioni Skype for Business ('Nessuno', 'Basso', 'Medio', 'Alto' o una delle tre impostazioni 'Personalizzate' definite). Queste selezioni si trovano nel foglio di lavoro "Persona". Viene fornito l'utilizzo specifico per ogni scelta ('Bassa', 'Media' o 'Alta'), ma è possibile modificare le impostazioni predefinite per ogni scelta. Identificando il numero di utenti per ogni persona che si trova in ogni sito, la calcolatrice può calcolare la larghezza di banda totale necessaria per ogni posizione.
   
 È anche possibile specificare i codec audio e video usati, se viene usata la correzione degli errori di inoltro e altri parametri di sistema che influiranno sui requisiti di larghezza di banda. È possibile usare le impostazioni predefinite in Bandwidth Calculator di Lync 2010 e 2013 oppure selezionare codec e altri parametri di sistema diversi. Per la progettazione del sito di Dewey Law LLC, è possibile usare le impostazioni predefinite. Tuttavia, per passare da una delle impostazioni predefinite è disponibile un menu a discesa con tutte le opzioni disponibili. Le larghezze di banda usate per ogni scelta sono incluse nel foglio di lavoro "Codec". Quando si modifica qualsiasi impostazione, la modifica della larghezza di banda e della combinazione di classe di servizio (CoS) in ogni sito viene aggiornata. Questa funzionalità consente di testare diverse configurazioni potenziali e di verificare l'impatto delle modifiche sui requisiti di larghezza di banda.
   
@@ -224,7 +224,7 @@ I test di stress assicurano che la rete sia in grado di supportare il volume di 
   
 ## <a name="part-2-expressroute-skype-for-business-qos"></a>Parte 2: ExpressRoute Skype for Business QoS
 
-Il servizio ExpressRoute di Microsoft fornisce una connessione dedicata al cloud di Azure, ma i servizi di comunicazione dei carichi di lavoro in tempo reale di Office 365 richiederanno servizi di rete con larghezza di banda sufficiente per supportare il volume di traffico e sono in grado di supportare la qualità del servizio (QoS) per offrire un'esperienza utente di livello aziendale. Una connessione che supporta la QoS deve essere configurata end-to-end (PC, switch di rete e router nel cloud) in quanto qualsiasi parte del percorso che non supporta QoS potrebbe compromettere la qualità dell'intera chiamata.
+Il servizio ExpressRoute di Microsoft fornisce una connessione dedicata al cloud Azure, ma i servizi di comunicazione dei carichi di lavoro in tempo reale di Office 365 richiederanno servizi di rete con larghezza di banda sufficiente per supportare il volume di traffico e saranno in grado di supportare la qualità del servizio (QoS) per offrire un'esperienza utente di livello aziendale. Una connessione che supporta la QoS deve essere configurata end-to-end (PC, switch di rete e router nel cloud) in quanto qualsiasi parte del percorso che non supporta QoS potrebbe compromettere la qualità dell'intera chiamata.
   
 Lo scopo di questa sezione è aiutare a comprendere le sfide che si verificano quando si supporta il traffico in tempo reale in una rete IP e si configura e si supporta una distribuzione expressRoute di carichi di lavoro Microsoft 365 o Office 365 in tempo reale usando un provider di servizi di Exchange ExpressRoute di Microsoft o un partner del provider di servizi di rete.
   
@@ -232,7 +232,7 @@ La QoS viene accettata dalle reti esclusivamente su circuiti di rete ExpressRout
   
 ### <a name="the-real-time-problem"></a>Il problema in tempo reale
 
-La fornitura di servizi vocali e video di qualità aziendale pone esigenze speciali in una rete IP. Il traffico in tempo reale usa il protocollo RTP (Real-time Transport Protocol) che viene trasportato tramite UDP (User Datagram Protocol). A differenza del protocollo TCP (Transmission Control Protocol) che numeri e verifica la presenza di errori in ogni messaggio e include altri meccanismi per rilevare e ritrasmettere messaggi persi o con errori, UDP non fornisce l'affidabilità di questo tipo. Se i messaggi sono danneggiati da errori o vengono persi a causa dell'overflow del buffer, vengono persi. UDP è stato scelto per l'uso con RTP perché la natura del traffico in tempo reale è che, anche se i messaggi persi erano risentiti, sarebbero arrivati troppo tardi per avere un impatto positivo sul flusso dei messaggi vocali.
+La fornitura di servizi vocali e video di qualità aziendale pone esigenze speciali in una rete IP. Il traffico in tempo reale usa il protocollo RTP (Real-time Transport Protocol) che viene trasportato tramite UDP (User Datagram Protocol). A differenza del protocollo TCP (Transmission Control Protocol), che numeri e verifica la presenza di errori in ogni messaggio e include altri meccanismi per rilevare e ritrasmettere messaggi persi o con errori, UDP non fornisce l'affidabilità di questo tipo. Se i messaggi sono danneggiati da errori o vengono persi a causa dell'overflow del buffer, vengono persi. UDP è stato scelto per l'uso con RTP perché la natura del traffico in tempo reale è che, anche se i messaggi persi erano risentiti, sarebbero arrivati troppo tardi per avere un impatto positivo sul flusso dei messaggi vocali.
   
 Conoscendo l'impatto dei pacchetti vocali persi, i progettisti hanno evoluta due approcci per migliorare le prestazioni di voce e video su IP:
   
@@ -251,7 +251,7 @@ Quando il ritardo è superiore a 150 msec. unidirettivo, ha un effetto strano su
 |**Parametro**|**Valore consigliato**|
 |:-----|:-----|
 |Instabilità tra pacchetti in arrivo (media)  <br/> |≤ 5 ms  <br/> |
-|Instabilità pacchetti tra arrivi (massimo)  <br/> |≤ 40ms  <br/> |
+|Instabilità pacchetti tra arrivi (massimo)  <br/> |≤ 40 ms  <br/> |
 |Tasso di perdita pacchetti (media)  <br/> |0% in avvicinamento  <br/> |
 |Latenza di rete unidiret  <br/> |≤ 100ms (dovrebbe includere i controlli sul ritardo rispetto alla distanza geografica)  <br/> |
    
@@ -273,7 +273,7 @@ Questo offre i vantaggi della disponibilità elevata (contratto di servizio per 
 
 Potrebbe non essere possibile connettere tutti i siti a ExpressRoute, a causa dei costi, dell'impossibilità di soddisfare i prerequisiti di ExpressRoute o delle limitazioni del provider di servizi di rete corrente. Se non si può usare ExpressRoute, è comunque consigliabile seguire le indicazioni seguenti per contrassegnare QoS all'interno della rete e pianificare i contratti con il provider di servizi di rete per garantire larghezza di banda e supporto sufficienti per la definizione delle priorità del traffico in base a QoS.
   
-Inoltre, se si hanno uffici in più aree geografiche, ma non si hanno circuiti ExpressRoute in tutte le aree geografiche, è consigliabile usare i tag della community BGP dell'area quando si configura il routing per il traffico da/verso gli uffici satellitari in modo da evitare inutili transiti a lungo raggio. Si consideri ad esempio una società con un'organizzazione di Skype for Business Online ospitata negli Stati Uniti, ma con filiali in Europa, e l'azienda ha un solo circuito ExpressRoute nella Silicon Valley. La maggior parte del traffico di Skype for Business Online verrà instradato a un data center in cui è ospitata l'organizzazione (ad esempio, conferenze telefoniche con altri utenti all'interno dell'azienda), l'uso del circuito ExpressRoute può essere preferito per la maggior parte del traffico. Tuttavia, se un utente in Europa partecipasse a una conferenza telefonica ospitata da un'altra società la cui organizzazione si trova in Europa, la destinazione per i media in quella chiamata sarebbe il data center europeo in cui si trova la seconda società. Il routing del traffico attraverso il circuito ExpressRoute nella Silicon Valley sarebbe un percorso meno diretto di quanto sarebbe possibile tramite Internet. In questo caso, è possibile configurare i router all'interno della rete,ad esempio presso gli uffici europei, in modo da controllare i tag della community quando si effettuano le regole di routing e il routing tramite Internet anziché tramite il circuito ExpressRoute della Silicon Valley per il traffico con tag dell'area geografica europea.
+Inoltre, se si hanno uffici in più aree geografiche, ma non si hanno circuiti ExpressRoute in tutte le aree geografiche, è consigliabile usare i tag della community BGP dell'area quando si configura il routing per il traffico da/verso gli uffici satellitari in modo da evitare inutili transiti a lungo raggio. Ad esempio, si consideri una società con un'organizzazione di Skype for Business Online ospitata negli Stati Uniti, ma con filiali in Europa, e l'azienda ha un solo circuito ExpressRoute nella Silicon Valley. La maggior parte del traffico di Skype for Business Online verrà instradato a un data center in cui è ospitata l'organizzazione (ad esempio, conferenze telefoniche con altri utenti all'interno dell'azienda), l'uso del circuito ExpressRoute può essere preferito per la maggior parte del traffico. Tuttavia, se un utente in Europa partecipasse a una conferenza telefonica ospitata da un'altra società la cui organizzazione si trova in Europa, la destinazione per i media in quella chiamata sarebbe il data center europeo in cui si trova la seconda società. Il routing del traffico attraverso il circuito ExpressRoute nella Silicon Valley sarebbe un percorso meno diretto di quanto sarebbe possibile tramite Internet. In questo caso, è possibile configurare i router all'interno della rete,ad esempio presso gli uffici europei, in modo da controllare i tag della community quando si effettuano le regole di routing e il routing tramite Internet anziché tramite il circuito ExpressRoute della Silicon Valley per il traffico con tag dell'area geografica europea.
   
 ### <a name="basic-concepts-of-quality-of-service-qosclass-of-service-cos"></a>Concetti di base di QoS (Quality of Service)/Class of Service (CoS)
 
@@ -287,7 +287,7 @@ La fornitura di QoS in una rete IP richiede due componenti principali:
     
 Quando un pacchetto viene ricevuto presso uno switch o un router, viene spostato in una coda di output per il passaggio o l'hop successivo. Esistono code di output diverse per i diversi livelli di priorità. Un commutatore o un router usa un algoritmo che consente di utilizzare la coda con priorità alta più frequentemente rispetto alle code con priorità inferiore.
   
-La sfida consiste nel fatto che esistono diverse tecniche di QoS implementate al livello 2 (ad esempio il livello Ethernet o Wi-Fi) e al livello 3 (ad esempio il livello IP). Queste diverse implementazioni QoS possono essere configurate in ogni switch e router della rete, oltre che nell'interfaccia tra la rete e la rete del provider di servizi di rete.
+La sfida è che esistono diverse tecniche di QoS implementate a livello 2 (ad esempio il livello Ethernet o Wi-Fi) e livello 3 (ad esempio il livello IP). Queste diverse implementazioni QoS possono essere configurate in ogni switch e router della rete, oltre che nell'interfaccia tra la rete e la rete del provider di servizi di rete.
   
 Esistono due opzioni per il mapping dei dati delle varie applicazioni Skype for Business alle classi di servizio appropriate:
   
@@ -374,7 +374,7 @@ L'associazione consigliata delle priorità di livello 3 a livello 2 è illustrat
 |Attività ottimali  <br/> |Comportamento per hop (PHB) - 0  <br/> |0  <br/> |4 (AC_BK)  <br/> |
 |Valore DSCP - 0  <br/> |
    
-È importante notare che la codifica prioritaria per IEEE 802.1p e WMM non corrisponde. Il valore PCP 802.1p per la voce è 5, tuttavia, nel mapping di equivalenza standard a WMM, PCP 5 viene convertito nella categoria di accesso di Access 2, la categoria di accesso WMM per il video (AC_VI). Se possibile, è consigliabile ignorare il mapping in modo che PCP 5 si traduca nella categoria 1 di Access o semplicemente evitare di usare voce e video nella stessa rete Wi-Fi finché Wi-Fi Alliance non risolve il problema. Per altre informazioni su Wi-Fi, vedere [Elementi del catalogo Wi-Fi.]( https://go.microsoft.com/fwlink/?LinkId=690322)
+È importante notare che la codifica prioritaria per IEEE 802.1p e WMM non corrisponde. Il valore PCP 802.1p per la voce è 5, tuttavia, nel mapping di equivalenza standard a WMM, PCP 5 viene convertito in Access Category 2, la categoria di accesso WMM per il video (AC_VI). Se possibile, è consigliabile ignorare il mapping in modo che PCP 5 si traduca nella categoria 1 di Access o semplicemente evitare di usare voce e video nella stessa rete Wi-Fi finché Wi-Fi Alliance non risolve il problema. Per altre informazioni su Wi-Fi, vedere [Elementi del catalogo Wi-Fi.]( https://go.microsoft.com/fwlink/?LinkId=690322)
   
 ### <a name="implementing-qos-using-network-access-control-list-acl"></a>Implementazione di QoS con l'elenco di controllo di accesso di rete (ACL)
 
@@ -400,7 +400,7 @@ I provider MPLS offrono diverse sfumature di classe di servizio che purtroppo us
 
 Skype for Business migliora il modo in cui vengono condotte le comunicazioni aziendali. Invece di avere un telefono connesso a un PBX, un sistema di videoconferenza autonomo, una piattaforma separata per la posta elettronica, un servizio esterno per le audioconferenze e alcuni strumenti per la messaggistica istantanea e la presenza, Skype for Business può riunire tutte queste funzionalità in un'unica interfaccia utente.
   
-La distribuzione coerente di servizi vocali e video in tempo reale richiede un'infrastruttura di rete end-to-end in grado di fornire QoS. Sono inclusi sia i servizi LAN che WAN. Microsoft fornisce strumenti come La calcolatrice della larghezza di banda di [Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) per stimare la capacità di rete necessaria per i vari servizi. Inoltre, ci sono partner nel programma IT Pro Tools [Skype for Business Solutions: IT Pro Tools](https://go.microsoft.com/fwlink/?LinkID=690307) che offrono strumenti per pre-valutare l'infrastruttura di rete e supportare il monitoraggio, la creazione di report e la risoluzione dei problemi. Senza un'infrastruttura di rete configurata e di dimensioni corrette, si rischia di avere una distribuzione di ExpressRoute Skype of Business che non soddisfi le aspettative degli utenti in fatto di qualità e coerenza.
+La distribuzione coerente di servizi vocali e video in tempo reale richiede un'infrastruttura di rete end-to-end in grado di fornire QoS. Sono inclusi sia i servizi LAN che WAN. Microsoft fornisce strumenti come La calcolatrice della larghezza di banda di [Lync 2010 e 2013](https://go.microsoft.com/fwlink/?LinkID=690282) per stimare la capacità di rete necessaria per i vari servizi. Inoltre, ci sono partner nel programma IT Pro Tools [Skype for Business Solutions: IT Pro Tools](https://go.microsoft.com/fwlink/?LinkID=690307) che offrono strumenti per valutare in modo preliminare l'infrastruttura di rete e supportare il monitoraggio, la creazione di report e la risoluzione dei problemi. Senza un'infrastruttura di rete configurata correttamente, si rischia di avere una distribuzione expressroute Skype of Business che non soddisfi le aspettative degli utenti in fatto di qualità e coerenza.
   
 Gli strumenti aziendali efficaci devono offrire prestazioni affidabili, coerenti e offrire un'esperienza utente che favorisca l'adozione degli utenti. Da un punto di vista di rete, questo significa avere un'infrastruttura di rete, sia locale che larga, fissa e mobile, che può consentire che ciò accada. Pianificare, progettare, implementare e mantenere tale infrastruttura non è sempre un'impresa facile. L'hardware, gli strumenti e i servizi di rete da realizzare oggi sono disponibili, ma è responsabilità del Pro IT vedere che sono progettati, implementati e gestiti in modo da garantire agli utenti un set di servizi di comunicazione e collaborazione che consentano loro di lavorare in modo efficiente ed efficace e che l'organizzazione possa trarre il massimo vantaggio da questa tecnologia. 
   

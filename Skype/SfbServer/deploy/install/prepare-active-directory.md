@@ -10,25 +10,25 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 985077a4-c8e1-4d5a-9fcf-fef41cf6d61d
-description: "Riepilogo: informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 40225e6efdf848c34d2b7184e4d8863182ef78494e179e27c4fa8ca322f7349d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: a4a224da84d1e6b4b001e9c561529b1c64b0e995
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300292"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609813"
 ---
 # <a name="skype-for-business-server-prepare-active-directory"></a>Skype for Business Server: Preparare Active Directory
  
 **Riepilogo:** Informazioni su come preparare il dominio di Active Directory per un'installazione di Skype for Business Server. Scarica una versione di valutazione gratuita di Skype for Business Server dal [Microsoft Evaluation Center.](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server)
   
-Skype for Business Server funziona a stretto contatto con Active Directory. È necessario preparare il dominio di Active Directory per l'utilizzo Skype for Business Server. Questo processo viene eseguito nella Distribuzione guidata e viene eseguito una sola volta per il dominio. Questo perché il processo crea gruppi e modifica il dominio ed è necessario farlo una sola volta. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. La preparazione di Active Directory è il passaggio 4 di 8. Per ulteriori informazioni sulla pianificazione di Active Directory, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019](../../../SfBServer2019/plan/system-requirements.md).
+Skype for Business Server funziona a stretto contatto con Active Directory. È necessario preparare il dominio di Active Directory per l'utilizzo con Skype for Business Server. Questo processo viene eseguito nella Distribuzione guidata e viene eseguito una sola volta per il dominio. Questo perché il processo crea gruppi e modifica il dominio ed è necessario farlo una sola volta. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. La preparazione di Active Directory è il passaggio 4 di 8. Per ulteriori informazioni sulla pianificazione di Active Directory, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019](../../../SfBServer2019/plan/system-requirements.md).
   
 ![diagramma di panoramica](../../media/2c52d307-7859-4009-9489-024b2e130bb3.png)
   
@@ -37,7 +37,7 @@ Skype for Business Server funziona a stretto contatto con Active Directory. È n
 Skype for Business Server è strettamente integrato con Servizi di dominio Active Directory. Prima Skype for Business Server può essere installato per la prima volta, è necessario preparare Active Directory. La sezione della Distribuzione guidata intitolata **Prepare Active Directory** prepara l'ambiente Active Directory per l'utilizzo con Skype for Business Server.
   
 > [!NOTE]
-> Skype for Business Server utilizza (AD DS) per tenere traccia e comunicare con tutti i server di una topologia. La maggior parte di questi server deve essere unita al dominio in modo che Skype for Business Server possa funzionare correttamente. Tenere presente che i server come Edge e Proxy inverso non devono essere aggiunti a un dominio.
+> Skype for Business Server (AD DS) per tenere traccia e comunicare con tutti i server di una topologia. La maggior parte di questi server deve essere unita al dominio in modo che Skype for Business Server possa funzionare correttamente. Tenere presente che i server come Edge e Proxy inverso non devono essere aggiunti a un dominio.
   
 > [!IMPORTANT]
 > La procedura Prepara Active Directory deve essere eseguita una sola volta per ogni dominio della distribuzione. 
@@ -87,7 +87,7 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     b. Fare **clic su** Esegui nel passaggio 3 per avviare la procedura guidata Prepara foresta corrente.
     
-    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni distribuzione e quindi fare clic su **Avanti**.
+    c. Tenere presente che la procedura deve essere eseguita una sola volta per ogni distribuzione e quindi fare clic su **Avanti.**
     
     d. Specificare il dominio in cui verranno creati i gruppi universali. Se il server fa parte del dominio, è possibile scegliere **Dominio locale** e fare clic su **Avanti.**
     
@@ -111,7 +111,7 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     c. Fare clic **sul** contenitore Utenti nel riquadro sinistro e cercare il gruppo universale **CsAdministrator** nel riquadro a destra. Se CsAdministrator (tra gli altri nuovi gruppi universali che iniziano con Cs), la replica di Active Directory ha avuto esito positivo.
     
-    d. Se i gruppi non sono ancora presenti, è possibile forzare la replica o attendere 15 minuti e aggiornare il riquadro laterale destro. La replica è completata quando i gruppi risultano presenti.
+    d. Se i gruppi non sono ancora presenti, è possibile forzare la replica oppure attendere 15 minuti e aggiornare il riquadro laterale destro. La replica è completata quando i gruppi risultano presenti.
     
 8. **Passaggio 5: Preparare il dominio corrente**
     
@@ -125,7 +125,7 @@ Guarda la procedura video per **Preparare Active Directory:**
     
     e. Fare **clic su** Fine per chiudere la procedura guidata Prepara dominio corrente e tornare alla procedura Prepara Active Directory.
     
-    Questi passaggi devono essere completati in ogni dominio in cui Skype for Business Server vengono trovati oggetti, altrimenti i servizi potrebbero non essere avviati. Sono inclusi qualsiasi tipo di oggetto Active Directory, ad esempio utenti, oggetti contatto, gruppi amministrativi o qualsiasi altro tipo di oggetto. È possibile utilizzare Set-CsUserReplicatorConfiguration -ADDomainNamingContextList per aggiungere solo i domini con Skype for Business Server oggetti, se necessario.
+    Questi passaggi devono essere completati in ogni dominio in cui Skype for Business Server vengono trovati oggetti, altrimenti i servizi potrebbero non essere avviati. Sono inclusi qualsiasi tipo di oggetto Active Directory, ad esempio utenti, oggetti contatto, gruppi amministrativi o qualsiasi altro tipo di oggetto. Puoi usare Set-CsUserReplicatorConfiguration -ADDomainNamingContextList per aggiungere solo i domini con Skype for Business Server oggetti, se necessario.
     
 9. **Passaggio 6: Verificare la replica nel dominio**
     
@@ -164,7 +164,7 @@ Guarda la procedura video per **Preparare Active Directory:**
     e. Nella **scheda Membri** verificare che gli utenti o i gruppi selezionati siano presenti. Fare clic su **OK**.
     
     > [!CAUTION]
-    > Il Skype for Business Server pannello di controllo è uno strumento di controllo di accesso basato sui ruoli. L'appartenenza al gruppo CsAdministrator consente a un utente che utilizza il Pannello di controllo di Skype for Business Server controllo completo per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Per informazioni dettagliate sui ruoli disponibili, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019](../../../SfBServer2019/plan/system-requirements.md). Si noti che non è necessario che gli utenti siano abilitati Skype for Business Server per essere membri dei gruppi di gestione. 
+    > Il Skype for Business Server pannello di controllo è uno strumento di controllo di accesso basato sui ruoli. L'appartenenza al gruppo CsAdministrator consente a un utente che utilizza il Pannello di controllo di Skype for Business Server controllo completo per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Per informazioni dettagliate sui ruoli disponibili, vedere [Environmental requirements for Skype for Business Server](../../plan-your-deployment/requirements-for-your-environment/environmental-requirements.md) or Server requirements for Skype for Business Server [2019.](../../../SfBServer2019/plan/system-requirements.md) Non è necessario che gli utenti siano abilitati Skype for Business Server per essere membri dei gruppi di gestione. 
   
     > [!CAUTION]
     > Per mantenere l'integrità del controllo di accesso basato sui ruoli e della sicurezza, aggiungere utenti ai gruppi che definiscono il ruolo che l'utente svolge nella gestione della distribuzione Skype for Business Server ruoli. 

@@ -9,19 +9,19 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come usare un modello di team esistente per creare un nuovo modello di team in Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 80450257158a3a65da5f0fffe05d48239e42cd33d538544a6363befffce842bf
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 56af8756282a4d2cc40ebf33a620855785c67306
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282679"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588218"
 ---
 # <a name="create-a-new-team-template-from-an-existing-team-template-in-microsoft-teams"></a>Creare un nuovo modello di team da un modello di team esistente in Microsoft Teams
 
@@ -31,7 +31,7 @@ Microsoft Teams sono disponibili modelli predefiniti che possono essere salvati 
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
+2. Nel riquadro di spostamento sinistro espandere **Teams**  >  **Team**.
 
 3. Nella sezione **Modelli team** selezionare accanto a un modello di team da duplicare per evidenziarlo.
 
@@ -63,7 +63,7 @@ In alternativa, è possibile selezionare **Aggiungi**  >  **Iniziare con un mode
     2. Nella finestra **di dialogo** Aggiungi assegnare un nome al canale.
     3. Aggiungere una descrizione.
     4. Decidere se il canale deve essere visualizzato per impostazione predefinita.
-    5. Cercare il nome di un'app da aggiungere al canale.
+    5. Cercare un nome di app da aggiungere al canale.
     6. Al **termine, selezionare** Applica.
 
 7. Selezionare **Invia** al termine dell'aggiunta di canali e app.

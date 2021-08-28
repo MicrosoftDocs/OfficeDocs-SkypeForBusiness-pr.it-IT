@@ -9,21 +9,21 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 description: Panoramica dell'uso di un operatore automatico cloud con Skype for Business Server 2019
-ms.openlocfilehash: 0a9eaa3498541371314f268f2d4dfaef2200ab457267fe98f631430ce7c2f035
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5d28618efc2b02240cdfe3e4c05945f9a6e4b575
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315052"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58610173"
 ---
 # <a name="plan-cloud-auto-attendants"></a>Pianificare gli operatori automatici cloud
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-L'operatore automatico utilizzato con Exchange Messaggistica unificata (Exchange Server 2013 o Exchange Server 2016) non è più disponibile in Exchange Server 2019 o Exchange Online. Se l'implementazione di Skype for Business Server 2019 si integra con una di queste versioni di Exchange, dovrai usare le funzionalità cloud voice online associate a Sistema telefonico. Vedere [Plan for Skype for Business Server and Exchange Server migration](plan-um-migration.md) for information about moving Exchange UM services homed on Exchange server 2013 and 2016 to the cloud.
+L'operatore automatico utilizzato con Exchange Messaggistica unificata (Exchange Server 2013 o Exchange Server 2016) non è più disponibile Exchange Server 2019 o Exchange Online. Se l'implementazione di Skype for Business Server 2019 si integra con una di queste versioni di Exchange, dovrai usare le funzionalità cloud voice online associate a Sistema telefonico. Vedere [Plan for Skype for Business Server and Exchange Server migration](plan-um-migration.md) for information about moving Exchange UM services homed on Exchange server 2013 and 2016 to the cloud.
 
 Ciò significa intrinsecamente che si avrà un'implementazione ibrida di Skype for Business Server 2019 se si desidera utilizzare le funzionalità di messaggistica unificata come gli operatori automatici. Per [informazioni dettagliate, vedere Configure hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365.](configure-hybrid-connectivity.md)
 
@@ -49,26 +49,26 @@ Vedere anche:
 
 I requisiti seguenti presuppongono che Skype for Business Server 2019 sia già stato distribuito in una topologia supportata.  I requisiti dipendono dal proprio scenario:
 
-- Se si utilizza già la messaggistica unificata di Exchange online o locale e si esegue l'aggiornamento a Skype for Business 2019, sarà necessario acquisire la struttura degli operatori automatici e crearli di nuovo nel cloud utilizzando gli operatori automatici cloud. Per ulteriori informazioni, vedere [Moving an Exchange UM auto attendant or call queue to Sistema telefonico](configure-onprem-ra.md#moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system).
+- Se si utilizza già la messaggistica unificata di Exchange online o locale e si esegue l'aggiornamento a Skype for Business 2019, sarà necessario acquisire la struttura degli operatori automatici e crearli di nuovo nel cloud utilizzando gli operatori automatici cloud. Per ulteriori informazioni, vedere [Moving an Exchange um auto attendant or call queue to Sistema telefonico](configure-onprem-ra.md#moving-an-exchange-um-auto-attendant-or-call-queue-to-phone-system).
 
 - Per una nuova configurazione degli operatori automatici cloud, seguire i passaggi descritti in  [Configure resource accounts](configure-onprem-ra.md).
 
-Oltre ai requisiti precedenti, è necessario configurare i requisiti seguenti per la connessione al servizio operatore automatico Microsoft Cloud:
+Oltre ai requisiti precedenti, è necessario configurare i requisiti seguenti per connettersi al servizio operatore automatico Microsoft Cloud:
 
 - Connettività ibrida. Se è già stato distribuito Skype for Business Server e si desidera abilitare l'operatore automatico cloud per gli utenti locali, è necessario assicurarsi di avere configurato la connettività ibrida tra gli ambienti locali e online. Questa operazione viene talvolta definita configurazione di dominio diviso.
 
    Per ulteriori informazioni, vedere [Plan hybrid connectivity between Skype for Business Server and Microsoft 365 or Office 365](plan-hybrid-connectivity.md) e Configure hybrid connectivity between Skype for Business Server and Microsoft 365 or [Office 365](configure-hybrid-connectivity.md).
 
-- Se si sta assegnando un numero di telefono all'operatore automatico, è necessaria una licenza [Office 365 Enterprise E5.](../../SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing.md)
+- Se stai assegnando un numero di telefono all'operatore automatico, dovrai disporre di una licenza [Office 365 Enterprise E5.](../../SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/office-365-enterprise-e5-with-audio-conferencing.md)
 - Creare un [account di risorsa](/MicrosoftTeams/manage-resource-accounts.md) online o un [account](configure-onprem-ra.md) di risorsa locale per ogni operatore automatico e assegnare numeri di telefono e licenze. 
 
 ## <a name="migration-and-interoperability"></a>Migrazione e interoperabilità
 
 Se si prevede di distribuire Skype for Business Server 2019 e/o Exchange Server 2019, è necessario pianificare attentamente la migrazione per garantire il supporto continuo per gli operatori automatici. Tenere presente quanto segue:
 
-- Exchange Server 2019 non fornisce più Exchange di messaggistica unificata
+- Exchange Server 2019 non fornisce più la funzionalità Exchange messaggistica unificata
 - Exchange La messaggistica unificata è in modalità ritiro
-- Skype for Business Server 2019 non si integra più con la Exchange Online messaggistica unificata
+- Skype for Business Server 2019 non si integra più con Exchange Online messaggistica unificata
 
 Gli operatori automatici cloud possono essere configurati Skype for Business Server 2019, 2015 e 2013.
 
@@ -82,11 +82,11 @@ Per ulteriori informazioni sulla pianificazione della migrazione, vedere [Plan f
 
 ### <a name="migrating-a-previously-implemented-exchange-um-auto-attendant-system"></a>Migrazione di un operatore automatico di Exchange di messaggistica unificata implementato in precedenza
 
-Attualmente non è possibile eseguire la migrazione automatica nel cloud di un sistema di operatore automatico di messaggistica unificata creato Exchange 2013 o 2016. Per creare di nuovo manualmente un sistema di operatore automatico, è necessario:
+Attualmente non supportiamo la migrazione automatica nel cloud di un sistema di operatore automatico di messaggistica unificata creato in Exchange 2013 o 2016. Per creare di nuovo manualmente un sistema di operatore automatico, è necessario:
 
 1. Utilizzare Exchange comandi di PowerShell di amministrazione per esaminare la struttura del vecchio sistema di operatori automatici, inclusi eventuali operatori automatici annidati e code di chiamata.  
 2. Creare copie di script di sintesi vocale o messaggi registrati associati a ogni nodo dell'operatore automatico di messaggistica unificata.
-3. Creare endpoint locali per ogni nodo dell'operatore automatico, inclusa l'assegnazione di numeri di telefono di prova e licenze agli oggetti. Tieni presente che ora hai la possibilità di assegnare licenze per i numeri di telefono locali usati dai servizi online come Sistema telefonico.
+3. Creare endpoint locali per ogni nodo dell'operatore automatico, inclusa l'assegnazione di numeri di telefono di prova e licenze agli oggetti. Tieni presente che ora hai la possibilità di assegnare licenze per i numeri di telefono locali usate dai servizi online come Sistema telefonico.
 4. Implementare un nuovo servizio operatore automatico cloud con Microsoft Teams e Sistema telefonico. Per [informazioni dettagliate sull'implementazione, vedere Configure resource accounts.](configure-onprem-ra.md) In questo modo, caricare gli script di sintesi vocale o i messaggi registrati associati a ogni nodo dell'operatore automatico di messaggistica unificata.
 5. Testare la funzionalità dell'operatore automatico Cloud.
 6. Riassegnare il numero di telefono assegnato al vecchio operatore Exchange di messaggistica unificata all'operatore automatico cloud principale appena creato.
@@ -96,7 +96,7 @@ Per [informazioni dettagliate su Exchange, vedere Moving an Exchange um auto att
 Quando si dispone di una struttura solida che soddisfa le proprie esigenze e di uno script che guida i clienti in modo efficiente, passare a [Configurare gli account delle risorse.](configure-onprem-ra.md)
 
 > [!CAUTION]
-> Come accennato in [KB4480742,](https://support.microsoft.com/help/4480742/call-failures-and-500-server-internal-error-after-migration-to-2019)è sconsigliato spostare Exchange operatori automatici di messaggistica unificata creati in Server 2015 nei server che eseguono Server 2019. Per il momento, è necessario mantenerli in un pool Skype for Business Server 2015 in esecuzione in modalità coesistenza.
+> Come accennato in [KB4480742,](https://support.microsoft.com/help/4480742/call-failures-and-500-server-internal-error-after-migration-to-2019)lo spostamento Exchange operatori automatici di messaggistica unificata creati in Server 2015 nei server che eseguono Server 2019 è sconsigliato. Per il momento, è necessario mantenerli in un pool Skype for Business Server 2015 in esecuzione in modalità coesistenza.
 
 ## <a name="see-also"></a>Vedere anche
 

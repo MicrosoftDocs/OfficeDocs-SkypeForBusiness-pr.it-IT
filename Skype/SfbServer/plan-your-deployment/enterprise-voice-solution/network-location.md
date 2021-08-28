@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 7538779d-055d-44ed-8dd7-11c45fc1b9f5
 description: Decisioni necessarie per la pianificazione dei componenti di rete che verranno utilizzati per mappare i chiamanti alle posizioni per la distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: fba8617643ac730d56f24e318a48cdb218b523cdceaa0cb810cc01c6c9d8a753
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e3a1ef0c5f500327d97a263b4dad206624617ffa
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281679"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632700"
 ---
 # <a name="define-the-network-elements-used-to-determine-location-in-skype-for-business-server"></a>Definire gli elementi di rete utilizzati per determinare la posizione in Skype for Business Server
  
@@ -57,7 +57,7 @@ Questo metodo presuppone che l'indirizzo BSSID di ogni punto di accesso wireless
 Switch Ethernet gestiti che supportano LLDP-MED (Link Layer Discovery Protocol-Media Endpoint Discover) possono comunicare informazioni su porta e identità a client compatibili con LLDP-MED, che possono quindi essere soggetti a query sul database delle località per fornire la posizione del dispositivo. È possibile associare ERL unicamente a ID chassis di commutazione oppure è possibile eseguirne il mapping a livello di porta.
   
 > [!NOTE]
-> Skype for Business Server supporta l'utilizzo di LLDP-MED per determinare le posizioni solo dei dispositivi Lync Telefono Edition e dei client Skype for Business in esecuzione Windows 8. Se devi usare dati di livello 2 a livello di commutazione per determinare la posizione di altri client Skype for Business Server basati su PC cablati, devi usare il metodo dell'indirizzo MAC client. 
+> Skype for Business Server supporta l'utilizzo di LLDP-MED per determinare le posizioni solo dei dispositivi Lync Telefono Edition e dei Skype for Business client in esecuzione Windows 8. Se devi usare dati di livello 2 a livello di commutazione per determinare la posizione di altri client di Skype for Business Server basati su PC cablati, devi usare il metodo dell'indirizzo MAC client. 
   
 ## <a name="subnet"></a>Subnet
 
@@ -73,7 +73,7 @@ Se la subnet occupa un'area troppo ampia, può essere necessario utilizzare un a
   
 ## <a name="client-mac-address"></a>Indirizzo MAC del client
 
-Per utilizzare l'indirizzo MAC di un computer client per individuare un chiamante, sono necessari commutatori Ethernet gestiti ed è necessario distribuire una soluzione SNMP di terze parti in grado di individuare gli indirizzi MAC dei client Skype for Business connessi a o tramite tali commutatori. La soluzione SNMP esegue continuamente il polling degli switch gestiti per ottenere i mapping correnti degli indirizzi MAC degli endpoint connessi a ogni porta e ottiene gli ID porta corrispondenti. Durante la richiesta di un client di Skype for Business al servizio informazioni percorso, il servizio informazioni percorso esegue una query sull'applicazione di terze parti utilizzando l'indirizzo MAC del client e quindi restituisce gli eventuali indirizzi IP del commutatore e gli ID di porta corrispondenti. Il servizio informazioni percorso utilizza queste informazioni per eseguire una query sulla relativa wiremap di livello 2 pubblicata per un record corrispondente e restituisce la posizione al client. Se si utilizza questa opzione, assicurarsi che gli identificatori di porta degli switch siano coerenti tra l'applicazione SNMP e i record del database delle località pubblicati.
+Per utilizzare l'indirizzo MAC di un computer client per individuare un chiamante, sono necessari commutatori Ethernet gestiti ed è necessario distribuire una soluzione SNMP di terze parti in grado di individuare gli indirizzi MAC dei client Skype for Business connessi o tramite tali commutatori. La soluzione SNMP esegue continuamente il polling degli switch gestiti per ottenere i mapping correnti degli indirizzi MAC degli endpoint connessi a ogni porta e ottiene gli ID porta corrispondenti. Durante la richiesta di un client di Skype for Business al servizio informazioni percorso, il servizio informazioni percorso esegue una query sull'applicazione di terze parti utilizzando l'indirizzo MAC del client e quindi restituisce gli eventuali indirizzi IP del commutatore e gli ID di porta corrispondenti. Il servizio informazioni percorso utilizza queste informazioni per eseguire una query sulla relativa wiremap di livello 2 pubblicata per un record corrispondente e restituisce la posizione al client. Se si utilizza questa opzione, assicurarsi che gli identificatori di porta degli switch siano coerenti tra l'applicazione SNMP e i record del database delle località pubblicati.
   
 > [!NOTE]
 > Alcune soluzioni SNMP di terze parti possono supportare commutatori di accesso non gestiti. se il commutatore che servizi il client Skype for Business non è gestito ma dispone di un uplink a un commutatore di distribuzione gestito, il commutatore gestito può segnalare all'applicazione SNMP gli indirizzi MAC dei client connessi al commutatore di accesso. Queste informazioni consentono al servizio informazioni percorso di identificare la posizione dell'utente. Tuttavia, è possibile assegnare un solo ERL a tutte le porte sullo switch non gestito, quindi la specificità della posizione è disponibile solo a livello di chassis del commutatore di accesso, non a livello di porta. 

@@ -9,27 +9,27 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 38d9f168-80b8-46f2-a1c0-becd84e58e73
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 5e6540b926d3b632fdff21f8fb645667068ca2e362260131dcd2b6379d5ef0b4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a9d48b5232a446f81de1acf14cddfa054f74d488
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303130"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609953"
 ---
 # <a name="configure-dial-in-conferencing-in-skype-for-business-server"></a>Configurare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare le conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Plan [for dial-in conferencing in Skype for Business Server,](../../plan-your-deployment/conferencing/dial-in-conferencing.md) [Hardware and software requirements for conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e il [diagramma](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing)di flusso e l'elenco di controllo per le conferenze telefoniche con accesso esterno. 
+Dopo aver creato una topologia che include il carico di lavoro per le conferenze telefoniche e le conferenze telefoniche con accesso esterno selezionate, è necessario eseguire passaggi aggiuntivi per configurare le conferenze telefoniche con accesso esterno. Prima di leggere questo argomento, leggere Pianificare le conferenze telefoniche con accesso esterno [in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md), Requisiti hardware e software per le conferenze [in Skype for Business Server](../../plan-your-deployment/conferencing/hardware-and-software-requirements.md)e Diagramma di flusso di distribuzione ed elenco di controllo per le conferenze telefoniche con accesso esterno [.](deploy-conferencing.md#deployment-flowchart-and-checklist-for-dial-in-conferencing) 
   
 Per configurare le conferenze telefoniche con accesso esterno, è necessario eseguire le attività seguenti:
   
 - [Configurare i dial plan](dial-in-conferencing.md#BKMK_ConfigureDialPlans)
     
-- [Configurare aree di conferenza telefonica con accesso esterno](dial-in-conferencing.md#BKMK_ConfigureDialInRegions)
+- [Configurare le aree di conferenza telefonica con accesso esterno](dial-in-conferencing.md#BKMK_ConfigureDialInRegions)
     
 - [Configurare i numeri di accesso esterno](dial-in-conferencing.md#BKMK_ConfigureDialInAccessNumbers)
     
@@ -54,7 +54,7 @@ Per configurare le conferenze telefoniche con accesso esterno, è necessario ese
 ## <a name="configure-dial-plans"></a>Configurare i dial plan
 <a name="BKMK_ConfigureDialPlans"> </a>
 
-Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario creare o modificare uno o più dial plan per il routing dei numeri di telefono di accesso esterno. È inoltre necessario assicurarsi che ogni dial plan contenga almeno una regola di normalizzazione, una regola che converte i numeri di telefono in numeri di telefono completi in formato E.164. 
+Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario creare o modificare uno o più dial plan per il routing dei numeri di telefono di accesso esterno. È inoltre necessario verificare che ogni dial plan contenga almeno una regola di normalizzazione, una regola che converte i numeri di telefono in numeri di telefono completi in formato E.164. 
   
 Gli utenti delle conferenze telefoniche con accesso esterno aderiscono alle conferenze come utenti aziendali autenticati immettendo il pin e il numero di telefono. È necessaria una regola di normalizzazione per convertire le estensioni in numeri di telefono completi in modo che gli utenti possano essere autenticati quando immettono solo un interno telefonico.
   
@@ -68,14 +68,14 @@ Per configurare i dial plan per le conferenze telefoniche con accesso esterno:
     
 Per informazioni dettagliate sulla creazione di regole di normalizzazione, vedere [Create or modify a normalization rule in Skype for Business](../../deploy/deploy-enterprise-voice/normalization-rules.md).
   
-## <a name="configure-dial-in-conferencing-regions"></a>Configurare aree di conferenza telefonica con accesso esterno
+## <a name="configure-dial-in-conferencing-regions"></a>Configurare le aree di conferenza telefonica con accesso esterno
 <a name="BKMK_ConfigureDialInRegions"> </a>
 
 Quando si imposta un dial plan, si specifica l'area per conferenze telefoniche con accesso esterno applicabile. L'area di conferenza telefonica con accesso esterno associa i numeri di accesso alle conferenze telefoniche con accesso esterno al dial plan appropriato. Quando si crea il numero di accesso remoto, si selezionano le aree geografiche che associano il numero di accesso ai dial plan appropriati. 
   
-Poiché è importante specificare un'area per tutti i dial plan, è consigliabile verificare che tutti i dial plan siano aree di conferenza. 
+Poiché è importante specificare un'area per tutti i dial plan, è consigliabile verificare che tutti i dial plan dispongono di aree di conferenza. 
   
-Per verificare se l'area geografica è impostata per tutti i dial plan di conferenza telefonica con accesso esterno, utilizzare il cmdlet **Get-CsDialPlan.** Se l'area non è inclusa nei dial plan, è possibile utilizzare il cmdlet **Set-CsDialPlan** per impostarla. È inoltre possibile utilizzare il Skype for Business Server di controllo per aggiornare l'area geografica nei dial plan esistenti. Per informazioni dettagliate sull'Skype for Business Server di controllo, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
+Per verificare se l'area geografica è impostata per tutti i dial plan di conferenza telefonica con accesso esterno, utilizzare il cmdlet **Get-CsDialPlan.** Se l'area non è inclusa nei dial plan, è possibile utilizzare il cmdlet **Set-CsDialPlan** per impostarla. È inoltre possibile utilizzare il Skype for Business Server di controllo per aggiornare l'area geografica nei dial plan esistenti. Per informazioni dettagliate sull'Skype for Business Server pannello di controllo, vedere [Create or modify a dial plan in Skype for Business Server](../../deploy/deploy-enterprise-voice/dial-plans.md).
   
 ### <a name="to-verify-whether-dial-plans-have-the-region-property-set"></a>Per verificare se nei dial plan è impostata la proprietà relativa all'area
 
@@ -126,7 +126,7 @@ Per ulteriori informazioni, vedere [Set-CsDialPlan.](/powershell/module/skype/se
 ## <a name="configure-dial-in-access-numbers"></a>Configurare i numeri di accesso esterno
 <a name="BKMK_ConfigureDialInAccessNumbers"> </a>
 
-Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web Conferenza telefonica Impostazioni accesso esterno.
+Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web Conferenze telefoniche con accesso esterno Impostazioni.
   
 Prima di creare numeri di accesso esterno, è necessario pianificare le aree di conferenza telefonica con accesso esterno e quindi configurare i dial plan con le aree geografiche. Per informazioni dettagliate sulle aree geografiche, vedere [Plan for dial-in conferencing in Skype for Business Server](../../plan-your-deployment/conferencing/dial-in-conferencing.md). Per informazioni dettagliate sulla configurazione dei dial plan per le conferenze telefoniche con accesso [esterno,](../../deploy/deploy-enterprise-voice/dial-plans.md)vedere Create or modify a dial plan in Skype for Business Server .
   
@@ -169,7 +169,7 @@ Prima di creare numeri di accesso esterno, è necessario pianificare le aree di 
      > [!NOTE]
      > Non è possibile riutilizzare lo stesso URI SIP per un altro numero di accesso per conferenze con accesso esterno. L'URI SIP non può essere modificato dopo che il numero di accesso è stato creato. L'unico modo per modificare l'URI SIP è quello di eliminare e ricreare il numero di accesso. 
   
-   - Nella casella di riepilogo a discesa fare clic sul dominio dell'applicazione Operatore conferenza che supporta questo numero di accesso esterno.
+   - Nella casella di riepilogo a discesa fare clic sul dominio della applicazione Operatore conferenza che supporta questo numero di accesso esterno.
     
 9. In **Pool** fare clic sul pool che esegue l'istanza di Operatore Conferenza che supporta il numero di accesso esterno.
     
@@ -193,7 +193,7 @@ Prima di creare numeri di accesso esterno, è necessario pianificare le aree di 
 ## <a name="configure-conferencing-policies"></a>Configurare i criteri conferenza
 <a name="BKMK_ConfigureConferencingPolicies"> </a>
 
-I criteri conferenza sono un'impostazione dell'account utente che specifica l'esperienza di conferenza per i partecipanti. È possibile creare criteri di conferenza con un ambito sito o un ambito utente. Le impostazioni dei criteri di conferenza comprendono molti aspetti della pianificazione e della partecipazione delle conferenze. Diverse impostazioni dei criteri di conferenza supportano le conferenze telefoniche con accesso esterno per i partecipanti. Quando si configurano le conferenze telefoniche con accesso esterno, è necessario verificare che questi campi siano impostati in modo appropriato per l'organizzazione e modificarli in base alle esigenze. 
+I criteri conferenza sono un'impostazione dell'account utente che specifica l'esperienza di conferenza per i partecipanti. È possibile creare criteri di conferenza con un ambito sito o un ambito utente. Le impostazioni dei criteri di conferenza comprendono molti aspetti della pianificazione e della partecipazione alle conferenze. Diverse impostazioni dei criteri di conferenza supportano le conferenze telefoniche con accesso esterno per i partecipanti. Quando si configurano le conferenze telefoniche con accesso esterno, è necessario verificare che questi campi siano impostati in modo appropriato per l'organizzazione e modificarli in base alle esigenze. 
   
 Per ulteriori informazioni sulla configurazione dei criteri di conferenza, vedere [Manage conferencing policies in Skype for Business Server](../../manage/conferencing/conferencing-policies.md).
   
@@ -206,7 +206,7 @@ Nella procedura illustrata in questo argomento viene descritto come assegnare un
   
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins o come membro del ruolo **Cs-UserAdministrator** o **CsAdministrator**.
     
-2.  Aprire Skype for Business Server Pannello di controllo.
+2.  Apri Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -217,6 +217,6 @@ Nella procedura illustrata in questo argomento viene descritto come assegnare un
 6. In **Telefonia**, nel campo **URI linea** digitare un numero di telefono normalizzato univoco, ad esempio tel:+14255550200).
     
     > [!NOTE]
-    > È possibile specificare **l'URI** di linea solo se **Telefonia** è impostata su Solo da PC a **PC**, **VoIP aziendale** **,** Controllo chiamate remote o Controllo chiamate remote **solo**. 
+    > È  possibile specificare **l'URI** di linea solo se **Telefonia** è impostata su Solo da PC a **PC,** **VoIP aziendale,** Controllo chiamate remote o Controllo chiamate **remote.** 
   
 7. Fare clic su **Commit**.

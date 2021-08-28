@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: bc4d93b1-0c38-4bf8-8b65-692ff3e2446d
 description: 'Riepilogo: come usare lo strumento calcolatrice capacità.'
-ms.openlocfilehash: 5dc9376e9bfae238370d690eede975b8bf834baf1bd96cdd0265d6f09b7bc6d0
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d7e7a5f59017ad87df894dbc294b60a01a8ff5bf
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54325093"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58632830"
 ---
 # <a name="skype-for-business-server-capacity-planning-calculator"></a>Calcolatore di pianificazione della capacità di Skype for Business Server
  
@@ -30,11 +30,11 @@ ms.locfileid: "54325093"
 > - Skype for Business Server 2019.
 > - Skype for Business Server 2015.
   
-La calcolatrice della capacità di [Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=51196) e la calcolatrice della capacità di [Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57509) aumentano lo strumento di pianificazione [di Skype for Business](https://www.microsoft.com/download/details.aspx?id=50357) e la documentazione relativa alla distribuzione ( Pianificare la distribuzione di[Skype for Business Server 2015](../plan-your-deployment/plan-your-deployment.md) e Pianificare la distribuzione di [Skype for Business Server 2019](../../SfBServer2019/plan/plan-your-deployment-2019.md) rispettivamente). Utilizzare il calcolatore dopo aver esaminato la guida e aver creato una topologia consigliata utilizzando lo strumento di pianificazione.
+La calcolatrice della capacità di [Skype for Business Server 2015](https://www.microsoft.com/download/details.aspx?id=51196) e la calcolatrice della capacità di [Skype for Business Server 2019](https://www.microsoft.com/download/details.aspx?id=57509) aumentano lo strumento di pianificazione di [Skype for Business](https://www.microsoft.com/download/details.aspx?id=50357) e la documentazione relativa alla distribuzione ( Rispettivamente Plan for your[Skype for Business Server 2015 deployment](../plan-your-deployment/plan-your-deployment.md) e Plan for your Skype for Business Server [2019](../../SfBServer2019/plan/plan-your-deployment-2019.md) deployment). Utilizzare il calcolatore dopo aver esaminato la guida e aver creato una topologia consigliata utilizzando lo strumento di pianificazione.
   
 Il Skype for Business Server capacity calculator consente di determinare i requisiti del server in base al numero di utenti e agli strumenti di comunicazione utilizzati dall'organizzazione. Dopo aver determinato il profilo utente e le funzioni che si desidera abilitare per gli utenti, utilizzare il calcolatore per determinare il numero di server, memoria e larghezza di banda necessari. Questa versione dello strumento di calcolo non fornisce indicazioni per i requisiti di I/O su disco.
   
-Se si dispone di informazioni accurate e dettagliate sul proprio profilo utente specifico, è possibile trarre vantaggio dalla calcolatrice. Ad esempio, la percentuale di utenti abilitati alla voce, la media delle chiamate per utente all'ora, la durata delle chiamate e la percentuale di utenti simultanei nelle conferenze possono fare una grande differenza nei requisiti del server. L'accuratezza dei suggerimenti creati dal calcolatore dipende dall'accuratezza delle informazioni fornite.
+Se si dispone di informazioni accurate e dettagliate sul proprio profilo utente specifico, è possibile trarre vantaggio dalla calcolatrice. Ad esempio, la percentuale di utenti abilitati alla voce, la media delle chiamate per utente all'ora, la durata delle chiamate e la percentuale di utenti simultanei nelle conferenze possono fare una differenza enorme nei requisiti del server. L'accuratezza dei suggerimenti creati dal calcolatore dipende dall'accuratezza delle informazioni fornite.
   
 Dopo aver utilizzato lo strumento di pianificazione e lo strumento di calcolo della pianificazione della capacità, è consigliabile simulare il carico proposto e pianificato per assicurarsi che Skype for Business Server verrà eseguito il provisioning adeguato. Per eseguire test di stress in un carico simulato, utilizzare lo strumento [Skype for Business Server Stress and Performance](https://www.microsoft.com/download/details.aspx?id=50367) documentato in Skype for Business Server Stress and Performance [Tool](./stress-and-performance-tool/stress-and-performance-tool.md).
   
@@ -78,13 +78,13 @@ Il modello di utilizzo contiene le sezioni seguenti. Per calcolare i requisiti d
     
   - Se il 50% delle conferenze vocali includerà anche la condivisione applicazioni, selezionare la **casella di** controllo Condivisione applicazioni inclusa.
     
-  - Se il 20% delle conferenze vocali include caricamenti di dati, ad esempio PowerPoint presentazioni, selezionare la casella di controllo Inclusione **di conferenze** Web.
+  - Se il 20% delle conferenze vocali include caricamenti di dati, ad esempio presentazioni PowerPoint, selezionare la casella di controllo Inclusione **di conferenze** Web.
     
   **Mobilità**
   
 - In **Percentuale di utenti abilitati per** dispositivi mobili digitare la percentuale di utenti che saranno abilitati a connettersi Skype for Business Server dispositivi mobili. Il valore predefinito è 40%. 
     
-Dopo aver immesso tutte le informazioni necessarie, il calcolatore della capacità stima i requisiti. Le celle gialle mostrano i valori calcolati per i requisiti di CPU, memoria e larghezza di banda in base ai test eseguiti nei laboratori Skype for Business Server prestazioni. I numeri vengono forniti come linea guida, non tutte le singole varianti vengono testate e convalidate. Vengono calcolati i valori seguenti: 
+Dopo aver immesso tutte le informazioni necessarie, il calcolatore della capacità stima i requisiti. Le celle gialle mostrano i valori calcolati per i requisiti di CPU, memoria e larghezza di banda in base ai test eseguiti nei laboratori Skype for Business Server prestazioni. I numeri vengono forniti come linee guida, non tutte le singole varianti vengono testate e convalidate. Vengono calcolati i valori seguenti: 
   
 - **CPU front-end**: percentuale di utilizzo della CPU se l'intero carico viene gestito da un Front End Server delle stesse specifiche del server utilizzato per i test (vedere la descrizione alla fine di questo articolo).
     
@@ -100,13 +100,13 @@ Le celle verdi mostrano i suggerimenti per il modello di utilizzo immesso.
     
 - **Server perimetrali**: numero di server perimetrali necessari, in base al 30% di tutti gli utenti simultanei che comunicano attraverso i server perimetrali. Questa percentuale non può essere modificata nella calcolatrice. 
     
-- **Archiviazione/Registrazione dettagli chiamata/Archivio** servizi di qualità dell'esperienza : numero di archivi necessari per le funzionalità di archiviazione o monitoraggio, se abilitati nell'organizzazione.
+- **Archiviazione/Registrazione dettagli chiamata/Archivio** servizi di qualità dell'esperienza: numero di archivi necessari per le funzionalità di archiviazione o monitoraggio, se abilitati nell'organizzazione.
     
 - **Server database back-end necessario (pool necessari):** numero di server database back-end necessari per supportare il carico di lavoro selezionato.
     
 Inoltre, nella riga accanto a Total Front End Server vengono fornite ulteriori informazioni sul carico sui server e sulla rete per tutti i carichi di lavoro pianificati combinati.
   
-- **Carico medio CPU**: utilizzo medio della CPU per front-end server.
+- **Carico medio CPU**: Utilizzo medio della CPU per server Front End.
     
 - **Rete in Mbps:** allocazione della larghezza di banda necessaria per supportare il modello di utilizzo immesso.
     

@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployMainCreateCSCPAdmin
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3312926a-4671-4030-bb92-90ac24c778dd
 description: "Per concedere l'accesso Skype for Business Server 2015, eseguire le operazioni seguenti:"
-ms.openlocfilehash: 84be74295a4c6f345fcfb0b852f10d5897974d22219476e583085a0794a6c379
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: adb56c801ef270ff50378d8594e879afc8724afa
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301642"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58633120"
 ---
 # <a name="create-skype-for-business-server-control-panel-administrators"></a>Creare amministratori del pannello di controllo di Skype for Business Server
  
@@ -37,7 +37,7 @@ Per concedere l'accesso Skype for Business Server 2015, eseguire le operazioni s
 5. Nella scheda Membri verificare che siano presenti gli utenti o i gruppi selezionati. Fare clic su **OK**.
     
 > [!TIP]
-> Il Skype for Business Server pannello di controllo è uno strumento di controllo di accesso basato sui ruoli. L'appartenenza al gruppo CsAdministrator consente a un utente che utilizza il Pannello di controllo di Skype for Business Server controllo completo per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Non è necessario che gli utenti siano abilitati Skype for Business Server per essere membri dei gruppi di gestione. 
+> Il Skype for Business Server pannello di controllo è uno strumento di controllo di accesso basato sui ruoli. L'appartenenza al gruppo CsAdministrator consente a un utente che utilizza il Pannello di controllo di Skype for Business Server controllo completo per tutte le funzioni di configurazione disponibili. Vi sono inoltre altri ruoli per funzioni specifiche. Gli utenti non devono essere abilitati per Skype for Business Server per essere resi membri dei gruppi di gestione. 
   
 Altri ruoli includono:
   
