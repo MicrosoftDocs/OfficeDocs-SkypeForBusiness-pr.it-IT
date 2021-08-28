@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b6a435b3-103c-41c4-96ed-33c3784534c0
 description: Nella visualizzazione AudioStreamDetail vengono archiviate le informazioni relative a ogni flusso audio nel database. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 88300d4117a26dd033897d955ae82fb99f7d7b4878cb484caf4bae1fad3f965d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fa3d65c5c4f42bb0ecfe32447b9d8dcab5a10c55
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309185"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583750"
 ---
 # <a name="audiostreamdetail-view"></a>Visualizzazione AudioStreamDetail
  
@@ -113,12 +113,12 @@ Nella visualizzazione AudioStreamDetail vengono archiviate le informazioni relat
 |CallerSendNoiseLevel  <br/> |int  <br/> |Livello di disturbo audio dopo il controllo guadagno analogico per l'audio inviato dal chiamante. L'unità di misura per questa metrica è dBmo. Per una qualità accettabile, il valore deve essere inferiore a 35 dBmo. Questa metrica non è riportata da telefoni IP o A/V Conferencing Server.  <br/> |
 |CallerRecvNoiseLevel  <br/> |int  <br/> |Livello di disturbo audio dopo il controllo guadagno analogico per l'audio ricevuto dal chiamante. L'unità di misura per questa metrica è dBmo. Per una qualità accettabile, il valore deve essere inferiore a 35 dBmo. Questa metrica non è riportata da telefoni IP o A/V Conferencing Server.  <br/> |
 |CallerEchoReturn  <br/> |int  <br/> |ERLE (Echo Return Loss Enhancement) per il chiamante. L'unità di misura per questa metrica è dB. I valori più bassi rappresentano un'eco minore. Questa metrica non è riportata da telefoni IP o A/V Conferencing Server.  <br/> |
-|CallerSpeakerGlitchRate  <br/> |int  <br/> |Numero medio di problemi per cinque minuti per il rendering dell'altoparlante del chiamante. Per una buona qualità, il valore deve essere inferiore a 1 ogni 5 minuti. Questa metrica non è riportata da A/V Conferencing Server, Mediation Server o telefoni IP.  <br/> |
-|CallerMicGlitchRate  <br/> |int  <br/> |Numero medio di problemi ogni cinque minuti per l'acquisizione del microfono del chiamante. Per una buona qualità, il valore deve essere inferiore a 1 ogni 5 minuti. Questa metrica non è riportata da A/V Conferencing Server, Mediation Server o telefoni IP.  <br/> |
+|CallerSpeakerGlitchRate  <br/> |int  <br/> |Media di problemi ogni cinque minuti per il rendering dell'altoparlante del chiamante. Per una buona qualità, il valore deve essere inferiore a 1 ogni 5 minuti. Questa metrica non è riportata da A/V Conferencing Server, Mediation Server o telefoni IP.  <br/> |
+|CallerMicGlitchRate  <br/> |int  <br/> |Numero medio di problemi per cinque minuti per l'acquisizione del microfono del chiamante. Per una buona qualità, il valore deve essere inferiore a 1 ogni 5 minuti. Questa metrica non è riportata da A/V Conferencing Server, Mediation Server o telefoni IP.  <br/> |
 |CallerTimestampDriftRateMic  <br/> |decimal(9,2)  <br/> |Frequenza di deriva del clock del dispositivo microfono del chiamante, rispetto al clock della CPU.  <br/> |
 |CallerTimestampDriftRateSpk  <br/> |decimal(9,2)  <br/> |Frequenza di deriva del clock del dispositivo altoparlante del chiamante, rispetto al clock della CPU.  <br/> |
 |CallerTimestampErrorMicMs  <br/> |decimal(9,2)  <br/> |Media di errore del timestamp, in millisecondi, del flusso di acquisizione del microfono negli ultimi 20 secondi della chiamata.  <br/> |
-|CallerTimestampErrorSpkMs  <br/> |decimal(9,2)  <br/> |Media dell'errore timestamp del flusso di rendering dell'altoparlante del chiamante, in millisecondi, negli ultimi 20 secondi della chiamata.  <br/> |
+|CallerTimestampErrorSpkMs  <br/> |decimal(9,2)  <br/> |Media dell'errore di timestamp del flusso di rendering dell'altoparlante del chiamante, in millisecondi, negli ultimi 20 secondi della chiamata.  <br/> |
 |CallerVsEntryCauses  <br/> |smallint  <br/> |La commutazione vocale è una modalità half-duplex con possibilità di interruzione ridotta. Per ulteriori informazioni, vedi la tabella [MediaLine.](medialine-0.md) <br/> |
 |CallerEchoEventCauses  <br/> |tinyint  <br/> |Cause di un evento di eco per il chiamante. Per ulteriori informazioni, vedi la tabella [MediaLine.](medialine-0.md) <br/> |
 |CallerEchoPercentMicIn  <br/> |decimal(5,2)  <br/> |Percentuale di tempo in cui viene rilevata l'eco nel flusso di acquisizione del microfono del chiamante. Se viene utilizzato un auricolare, il valore deve essere basso.  <br/> |
@@ -142,7 +142,7 @@ Nella visualizzazione AudioStreamDetail vengono archiviate le informazioni relat
 |CalleeEchoEventCauses  <br/> |tinyint  <br/> |Cause di un evento di eco per il destinatario della chiamata. Per ulteriori informazioni, vedi la tabella [MediaLine.](medialine-0.md) <br/> |
 |CalleeEchoPercentMicIn  <br/> |decimal(5,2)  <br/> |Percentuale di tempo in cui viene rilevata l'eco nel flusso di acquisizione del microfono del chiamato. Se viene utilizzato un auricolare, il valore deve essere basso.  <br/> |
 |CalleeEchoPercentSend  <br/> |decimal(5,2)  <br/> |Percentuale di tempo in cui viene rilevato l'eco nel flusso inviato del chiamato. Un'elevata percentuale di eco nei flussi di invio è un'indicazione della perdita di eco.  <br/> |
-|CalleeRxAGCSignalLevel  <br/> |int  <br/> |Livello del segnale ricevuto nel Mediation Server dal gateway per l'audio del chiamato; ciò si applica solo al Mediation Server. L'unità di misura per questa metrica è dBoV. Per una buona qualità, l'intervallo accettabile deve essere [-30 a -18] dBoV.  <br/> |
+|CalleeRxAGCSignalLevel  <br/> |int  <br/> |Livello del segnale ricevuto nel Mediation Server dal gateway per l'audio del chiamato; ciò si applica solo al Mediation Server. L'unità di misura per questa metrica è dBoV. Per una buona qualità, l'intervallo accettabile deve essere compreso tra [-30 e -18] dBoV.  <br/> |
 |CalleeRxAGCNoiseLevel  <br/> |int  <br/> |Livello di segnale ricevuto nel Mediation Server dal gateway per l'audio del chiamato. Si applica solo al Mediation Server. L'unità di misura per questa metrica è dBoV. Per una buona qualità, il valore accettabile deve essere inferiore a -50 dBoV.  <br/> |
 |CalleeRxAGCGain  <br/> |int  <br/> |Controllo automatico del guadagno (AGC) sul lato Mediation Server applicato all'audio del chiamato.  <br/> |
 |CalleeInitialSignalLevelRMS  <br/> |float  <br/> |Radice della media dei quadrati del segnale in ingresso per il destinatario della chiamata fino ai primi 30 secondi della chiamata.  <br/> |

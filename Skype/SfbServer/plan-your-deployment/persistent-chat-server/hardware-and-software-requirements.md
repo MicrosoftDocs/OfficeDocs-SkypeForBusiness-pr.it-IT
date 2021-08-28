@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 692b7d99-1bc9-4c99-a050-2bc2be8688b2
 description: 'Riepilogo: leggere questo argomento per informazioni sui requisiti hardware e software per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 354ea7042cce2e413995dff242da21ce0cb5cc7aaacc35394110aab89a146383
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a8ee506d9bee1e99727dab2da18f70f3c6278664
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302290"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630430"
 ---
 # <a name="hardware-and-software-requirements-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Requisiti hardware e software per il server Chat persistente in Skype for Business Server 2015
  
@@ -41,7 +41,7 @@ Prima di distribuire il server Chat persistente, è necessario verificare che si
 Nelle sezioni seguenti vengono descritti i requisiti specifici per il server Chat persistente e il database in cui sono archiviati i dati di Persistent Chat.
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="front-end-server-requirements"></a>Requisiti del Front End Server
 
@@ -49,7 +49,7 @@ I requisiti del Front End Server dipendono dalla distribuzione del server Chat p
   
 - Se si distribuisce il server Chat persistente con Skype for Business Server 2015 edizione Enterprise, è possibile distribuire il Front End Server del server Chat persistente in uno o più computer autonomi nel pool di edizione Enterprise. Non è possibile collocare i Front End Server di Persistent Chat Skype for Business Server 2015 Front End Server. 
     
-    Un singolo Front End Server del server Chat persistente può supportare 20.000 utenti attivi. È possibile disporre di un pool di server Chat persistente con fino a 4 front end attivi che supportano un totale di 80.000 utenti simultanei. 
+    Un singolo Front End Server del server Chat persistente può supportare 20.000 utenti attivi. È possibile disporre di un pool di server Chat persistente con un massimo di 4 front end attivi che supportano un totale di 80.000 utenti simultanei. 
     
 - Se si distribuisce il server Chat persistente con Skype for Business Server 2015 edizione Standard, è possibile collocare Persistent Chat con il Front End Server. Questa distribuzione a server singolo può supportare fino a 20.000 utenti. 
     
@@ -59,7 +59,7 @@ Il server Chat persistente richiede SQL Server software di database per archivia
   
 - Se si installa il server Chat persistente con Skype for Business Server 2015 edizione Enterprise, per garantire prestazioni ottimali, è consigliabile installare l'archivio file di Persistent Chat.
     
-- Se si installa il server Chat persistente con Skype for Business Server Edizione Standard 2015, è possibile distribuire il server back-end dell'archivio Chat persistente nell'istanza SQL Server Express locale.
+- Se si sta installando il server Chat persistente con Skype for Business Server edizione Standard 2015, è possibile distribuire il server back-end dell'archivio Chat persistente nell'istanza SQL Server Express locale.
     
 - Il database di Persistent Chat (mgc) e il database di conformità (mgccomp) possono trovarsi nella stessa istanza di SQL Server o in server SQL diversi.
     

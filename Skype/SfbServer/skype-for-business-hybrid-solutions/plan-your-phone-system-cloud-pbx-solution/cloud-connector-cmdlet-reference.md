@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 072b4bdc-0f1e-4fce-a41e-5c60d24556d5
 description: Nella tabella seguente sono elencati Skype for Business Cloud Connector Edition cmdlet con una breve descrizione e collegamenti a ulteriori informazioni.
-ms.openlocfilehash: a5a29003db50f79440b6bd0393bce63b8597d90df35cded4b7b6c0114b165b97
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 19fc33912075e7737a4fa7fc242e74dd1de92289
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54341491"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583730"
 ---
 # <a name="cloud-connector-cmdlet-reference"></a>Informazioni di riferimento sui cmdlet di Cloud Connector
  
@@ -37,18 +37,18 @@ Nella tabella seguente sono elencati Skype for Business Cloud Connector Edition 
 |[Enter-CcUpdate](enter-ccupdate.md) <br/> |Prepara il server host Cloud Connector per il processo di aggiornamento mettendolo in modalità manutenzione. L'appliance è "svuotata"; in altri, tutte le chiamate esistenti verranno completate, ma le nuove chiamate verranno rifiutate.  <br/> |
 |[Exit-CcUpdate](exit-ccupdate.md) <br/> |Esce dalla modalità di manutenzione degli aggiornamenti nel server host cloud Connector.  <br/> |
 |[Export-CcConfiguration](export-ccconfiguration.md) <br/> | Esporta una Skype for Business Cloud Connector Edition in un file locale nel server host Skype for Business Cloud Connector Edition locale. <br/> |
-|[Export-CcConfigurationSampleFile](export-ccconfigurationsamplefile.md) <br/> |Esporta un file di configurazione di esempio del connettore cloud (.ini) nella directory dell'appliance di un dispositivo Cloud Connector. È possibile modificare e rinominare il file da utilizzare per la distribuzione.  <br/> |
+|[Export-CcConfigurationSampleFile](export-ccconfigurationsamplefile.md) <br/> |Esporta un file di configurazione di esempio del connettore cloud (.ini) nella directory appliance di un dispositivo Cloud Connector. È possibile modificare e rinominare il file da utilizzare per la distribuzione.  <br/> |
 |[Export-CcRootCertificate](export-ccrootcertificate.md) <br/> Versione 1.4.2 e successive  <br/> |Esporta il certificato della CA radice in un file locale nel server host Cloud Connector.  <br/> |
 |[Get-CcApplianceDirectory](get-ccappliancedirectory.md) <br/> |Recupera la directory di lavoro nel server host Cloud Connector. Tutti i file di distribuzione vengono archiviati in questa directory.  <br/> |
-|[Get-CcApplianceLogDirectory](get-ccappliancelogdirectory.md) <br/> |Visualizza la directory corrente in cui sono archiviati i registri per un'appliance Cloud Connector.  <br/> |
+|[Get-CcApplianceLogDirectory](get-ccappliancelogdirectory.md) <br/> |Mostra la directory corrente in cui sono archiviati i registri per un'appliance Cloud Connector.  <br/> |
 |[Get-CcApplianceStatus](get-ccappliancestatus.md) <br/> Versione 2.1 e successive  <br/> |Fornisce informazioni di diagnostica per l'appliance Cloud Connector.  <br/> |
 |[Get-CcCredential](get-cccredential.md) <br/> |Restituisce le credenziali della distribuzione corrente di Cloud Connector.  <br/> |
 |[Get-CcExternalCertificateFilePath](get-ccexternalcertificatefilepath.md) <br/> |Restituisce il percorso del file di certificato esterno per la distribuzione del connettore cloud. L'utente prepara il certificato.  <br/> |
 |[Get-CcSiteDirectory](get-ccsitedirectory.md) <br/> |Visualizza la directory corrente in cui sono archiviati i file di configurazione a livello di sito. La cartella contiene i file di installazione del disco rigido virtuale e del connettore cloud di base. Questa cartella deve essere condivisa con tutte le altre appliance di un sito Cloud Connector.  <br/> |
-|[Get-CcSiteLogDirectory](get-ccsitelogdirectory.md) <br/> |Mostra la directory corrente in cui sono archiviati i registri a livello di sito per Cloud Connector.  <br/> |
+|[Get-CcSiteLogDirectory](get-ccsitelogdirectory.md) <br/> |Visualizza la directory corrente in cui sono archiviati i registri a livello di sito per Cloud Connector.  <br/> |
 |[Get-CcVersion](get-ccversion.md) <br/> Versione 2.0 e successive  <br/> |Restituisce la versione nell'istanza di Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.  <br/> |
-|[Import-CcConfiguration](import-ccconfiguration.md) <br/> Versione 2.0 e successive  <br/> |Importa la Skype for Business Cloud Connector Edition da un file locale al server host Cloud Connector.  <br/> |
-|[Install-CcAppliance](install-ccappliance.md) <br/> |Installa l'appliance Cloud Connector, incluse le macchine virtuali AD, Archivio di gestione centrale, Mediation Server e Server perimetrale, nel server host.  <br/> |
+|[Import-CcConfiguration](import-ccconfiguration.md) <br/> Versione 2.0 e successive  <br/> |Importa la Skype for Business Cloud Connector Edition configurazione da un file locale al server host Cloud Connector.  <br/> |
+|[Install-CcAppliance](install-ccappliance.md) <br/> |Installa l'appliance Cloud Connector, incluse le macchine virtuali AD, Central Management Store, Mediation Server e Edge Server, nel server host.  <br/> |
 |[Publish-CcAppliance](publish-ccappliance.md) <br/> | Ottiene informazioni sulla disponibilità elevata dalla configurazione tenant online e le pubblica nell'appliance Cloud Connector nel server host. <br/> |
 |[Register-CcAppliance](register-ccappliance.md) <br/> | Registra le informazioni sull'appliance in un sito PSTN in una configurazione tenant online. Un'appliance deve essere registrata prima di poter essere distribuita e gestita dal servizio di gestione del connettore cloud. <br/> |
 |[Remove-CcCertificationAuthorityFile](remove-cccertificationauthorityfile.md) <br/> Versione 1.4.2 e successive  <br/> |Rimuove il file di backup del servizio autorità di certificazione " \<SiteRootDirectory\> \CA\SfB CCE Root.p12" nella cartella CA nella directory della condivisione del sito per Cloud Connector.  <br/> |

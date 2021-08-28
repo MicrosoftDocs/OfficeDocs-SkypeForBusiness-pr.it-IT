@@ -10,28 +10,28 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: c62b5f6a-bdbe-4ac1-aabf-89e560e64a26
-description: "Riepilogo: informazioni sugli aspetti da considerare quando si pianifica un aggiornamento a Skype for Business Server 2015. Scaricare una versione di valutazione gratuita di Skype for Business Server 2015 dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 1857194dd0b10b2e7c137e1cf098e99b0ca31d04637992aa168b081980c0df90
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: informazioni sugli aspetti da considerare quando si pianifica un aggiornamento a Skype for Business Server 2015. Scaricare una versione di valutazione gratuita Skype for Business Server 2015 dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: a3a36bb7c1acbf5334c108429076aa8126860041
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349838"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630410"
 ---
 # <a name="plan-to-upgrade-to-skype-for-business-server-2015"></a>Pianificare l'aggiornamento a Skype for Business Server 2015
  
-Riepilogo: informazioni sugli aspetti da considerare quando si pianifica un aggiornamento a Skype for Business Server 2015. Scaricare una versione di valutazione gratuita di Skype for Business Server 2015 dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
+Riepilogo: informazioni sugli aspetti da considerare quando si pianifica un aggiornamento a Skype for Business Server 2015. Scaricare una versione di valutazione gratuita Skype for Business Server 2015 dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
   
 Nell'ambito del piano di aggiornamento a Skype for Business Server 2015, utilizzare questo argomento per comprendere i percorsi di aggiornamento consigliati a Skype for Business Server 2015, il funzionamento dell'aggiornamento di In-Place, gli scenari di coesistenza supportati e l'aspetto del processo di aggiornamento.
 
 > [!NOTE]
-> Gli aggiornamenti sul posto sono disponibili Skype for Business Server 2015, ma non sono più supportati Skype for Business Server 2019. La coesistenza affiancata è supportata, vedere [Migration to Skype for Business Server 2019](../../SfBServer2019/migration/migration-to-skype-for-business-server-2019.md) per ulteriori informazioni.
+> Gli aggiornamenti sul posto erano disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. La coesistenza affiancata è supportata, vedere [Migration to Skype for Business Server 2019](../../SfBServer2019/migration/migration-to-skype-for-business-server-2019.md) per ulteriori informazioni.
   
 ## <a name="recommended-upgrade-paths-to-skype-for-business-server-2015"></a>Percorsi di aggiornamento consigliati Skype for Business Server 2015
 
@@ -43,7 +43,7 @@ Nell'ambito del piano di aggiornamento a Skype for Business Server 2015, utilizz
 |**Versione**|**Raccomandazioni**|
 |:-----|:-----|
 |Lync Server 2013  <br/> | Per eseguire l'aggiornamento, utilizzare Skype for Business Server Generatore di topologie e la nuova funzionalità di aggiornamento In-Place in ognuno dei server associati al pool. per la procedura dettagliata, vedere Plan [to upgrade from Lync Server 2013 to Skype for Business Server 2015](upgrade.md#BKMK_PlanUpgradeFromLync2013) e Upgrade to Skype for Business Server [2015.](../deploy/upgrade-to-skype-for-business-server.md) <br/> |
-|Lync Server 2010 + Lync Server 2013 (modalità doppia)  <br/> |Prima di tutto, eseguire l'aggiornamento a Lync Server 2013 e quindi a Skype for Business Server 2015 utilizzando la nuova In-Place di aggiornamento. Tuttavia, se la topologia è Lync Server 2010 principale, è anche possibile eseguire il rollback dei componenti di Lync Server 2013 in Lync Server 2010 e quindi eseguire l'aggiornamento direttamente a Skype for Business Server 2015. In questo caso, non sarebbe possibile sfruttare In-Place Upgrade e utilizzare una coesistenza diretta tra Lync Server 2010 e Skype for Business Server 2015. La triesistenza non è supportata, ma è supportata la coesistenza.  <br/> |
+|Lync Server 2010 + Lync Server 2013 (modalità doppia)  <br/> |Prima di tutto, eseguire l'aggiornamento a Lync Server 2013 e quindi a Skype for Business Server 2015 utilizzando la nuova In-Place di aggiornamento. Tuttavia, se la topologia è lync server 2010 principale, è anche possibile eseguire il rollback dei componenti di Lync Server 2013 in Lync Server 2010 e quindi eseguire l'aggiornamento direttamente a Skype for Business Server 2015. In questo caso non sarebbe possibile sfruttare In-Place Upgrade e utilizzare una coesistenza diretta tra Lync Server 2010 e Skype for Business Server 2015. La triesistenza non è supportata, ma è supportata la coesistenza.  <br/> |
 |Lync Server 2010  <br/> |Visualizzare un nuovo pool Skype for Business Server 2015 e quindi eseguire la migrazione degli utenti a questo nuovo pool. È quindi possibile rimuovere le autorizzazioni del pool di Lync Server 2010 precedente. L'aggiornamento da Lync Server 2010 a Skype for Business Server 2015 è simile all'aggiornamento da Lync Server 2010 a Lync Server 2013. Vedere [Migrazione da Lync Server 2010 a Lync Server 2013.](/previous-versions/office/lync-server-2013/migration-from-lync-server-2010-to-lync-server-2013)  <br/> |
 |Office Communications Server 2007 R2  <br/> | Scegliere una delle due opzioni seguenti: <br/>  Configurare un nuovo Skype for Business Server 2015. <br/>  In caso contrario, se l'hardware e il software soddisfano i requisiti per Skype for Business Server 2015, eseguire l'aggiornamento a Lync Server 2013 e quindi eseguire l'aggiornamento a Skype for Business Server 2015 utilizzando la nuova funzionalità di aggiornamento di In-Place. Per ulteriori informazioni, vedere [Server requirements for Skype for Business Server 2015](requirements-for-your-environment/server-requirements.md) e Migration from Office Communications Server [2007 R2 to Lync Server 2013.](/previous-versions/office/lync-server-2013/migration-from-office-communications-server-2007-r2-to-lync-server-2013)  <br/> |
    
@@ -53,10 +53,10 @@ Nell'ambito del piano di aggiornamento a Skype for Business Server 2015, utilizz
 ## <a name="plan-to-upgrade-from-lync-server-2013-to-skype-for-business-server-2015"></a>Pianificare l'aggiornamento da Lync Server 2013 a Skype for Business Server 2015
 <a name="BKMK_PlanUpgradeFromLync2013"> </a>
 
-È possibile aggiornare i sistemi Lync Server 2013 a Skype for Business Server 2015 utilizzando la nuova In-Place di aggiornamento. L'aggiornamento sul posto offre una soluzione con un solo clic che esegue il backup dei certificati, disinstalla i componenti server, aggiorna i database locali e installa i ruoli Skype for Business Server 2015. L'aggiornamento sul posto mira a preservare gli investimenti di hardware e server esistenti, riducendo il costo complessivo per la Skype for Business Server 2015.
+È possibile aggiornare i sistemi Lync Server 2013 a Skype for Business Server 2015 utilizzando la nuova In-Place di aggiornamento. L'aggiornamento sul posto offre una soluzione con un solo clic che esegue il backup dei certificati, disinstalla i componenti server, aggiorna i database locali e installa i ruoli Skype for Business Server 2015. L'aggiornamento sul posto mira a mantenere gli investimenti di hardware e server esistenti, riducendo il costo complessivo per la Skype for Business Server 2015.
   
 > [!NOTE]
-> In-Place l'aggiornamento consente di utilizzare lo stesso hardware durante l'aggiornamento a Skype for Business Server. Tuttavia, il riutilizzo dello stesso hardware non si traduce nella stessa capacità di prestazioni. Non è consigliabile prevedere carichi di prestazioni identici per Lync Server 2013 e Skype for Business Server 2015. 
+> In-Place l'aggiornamento consente di utilizzare lo stesso hardware durante l'aggiornamento a Skype for Business Server. Tuttavia, il riutilizzo dello stesso hardware non si traduce nella stessa capacità di prestazioni. Non è consigliabile prevedere che i carichi di prestazioni per Lync Server 2013 e Skype for Business Server 2015 siano identici. 
   
 > [!NOTE]
 > In-Place non supporta la disponibilità elevata o il ripristino di emergenza per Skype for Business Server. 
@@ -70,13 +70,13 @@ Creare un piano che includa:
 1. Informazioni sulla topologia corrente.
     
     > [!NOTE]
-    > Assicurarsi di disinstallare lo strumento di amministrazione di LRS per Lync Server 2013 prima di eseguire In-Place Upgrade. Lo strumento di amministrazione di LRS per Lync Server 2013 non può coesistere con Skype for Business Server 2015. Dopo aver eseguito In-Place upgrade, installare il nuovo strumento di amministrazione di LRS. Per ulteriori informazioni, vedere [Microsoft Lync Room System Administrative Web Portal per Skype for Business Server 2015.](https://go.microsoft.com/fwlink/?LinkID=544807)
+    > Assicurarsi di disinstallare lo strumento di amministrazione di LRS per Lync Server 2013 prima di eseguire In-Place Aggiornamento. Lo strumento di amministrazione di LRS per Lync Server 2013 non può coesistere con Skype for Business Server 2015. Dopo aver eseguito In-Place upgrade, installare il nuovo strumento di amministrazione di LRS. Per ulteriori informazioni, vedere [Microsoft Lync Room System Administrative Web Portal for Skype for Business Server 2015.](https://go.microsoft.com/fwlink/?LinkID=544807)
   
 2. Pool principale per l'aggiornamento.
     
 3. Sia che si a upgradeno i database di archiviazione e monitoraggio o si creino nuovi database.
     
-4. Il In-Place di aggiornamento che userai: Offline o Sposta utenti. Nell'ambito di Move Users sarà inoltre necessario eseguire la migrazione delle directory conferenze globali associate al pool principale. 
+4. Il In-Place di aggiornamento da usare: Offline o Sposta utenti. Nell'ambito di Move Users sarà inoltre necessario eseguire la migrazione delle directory conferenze globali associate al pool principale. 
     
 5. Un piano di comunicazione per gli utenti che hanno un impatto.
     
@@ -86,7 +86,7 @@ Gli utenti che si trova nel pool principale durante l'aggiornamento non potranno
   
 ### <a name="in-place-upgrade-methods"></a>Metodi di aggiornamento sul posto
 
-Esistono due scenari per In-Place aggiornamento: 
+Esistono due scenari per l'In-Place aggiornamento: 
   
 - Il metodo Move User, che non richiede tempi di inattività per gli utenti. 
     
@@ -125,11 +125,11 @@ Per utilizzare questo metodo, spostare gli utenti in un altro pool prima di avvi
 
  Se l'hardware non soddisfa i requisiti del server per [Skype for Business Server 2015,](requirements-for-your-environment/server-requirements.md)configurare un nuovo ambiente Skype for Business Server 2015 e spostarne gli utenti. Nel diagramma seguente viene illustrata una panoramica di questo processo per l'aggiornamento da Lync Server 2010. 
   
-![Diagramma corsia di corsia che mostra gli utenti del pool Front End primario di Lync Server da spostare Skype for Business Server 2015 e il pool Lync Server in fase di rimozione.](../media/5e97ced8-72f4-4925-b09d-bda28a69d448.png)
+![Diagramma corsia di corsia che mostra gli utenti nel pool Front End primario di Lync Server spostato Skype for Business Server 2015 e il pool di Lync Server in fase di rimozione.](../media/5e97ced8-72f4-4925-b09d-bda28a69d448.png)
   
 ### <a name="in-place-upgrade-process"></a>Processo di aggiornamento sul posto
 
- Eseguire l'aggiornamento da Lync Server 2013 a Skype for Business Server 2015 seguendo la procedura seguente:
+ Eseguire l'aggiornamento da Lync Server 2013 a Skype for Business Server 2015 utilizzando la procedura seguente:
   
 1. Eseguire il backup di tutti i database prima dell'aggiornamento.
     
@@ -141,7 +141,7 @@ Per utilizzare questo metodo, spostare gli utenti in un altro pool prima di avvi
     
 5. Installare i nuovi prerequisiti necessari per Skype for Business Server.
     
-6. In ogni Front End Server avviare il In-Place aggiornamento.
+6. In ogni Front End Server avviare l'In-Place aggiornamento.
     
 7. Al termine dell'aggiornamento, riavviare tutti i servizi.
     
@@ -150,7 +150,7 @@ Per utilizzare questo metodo, spostare gli utenti in un altro pool prima di avvi
    - Per i server non Front End, utilizzare Start-CSWindowsService.
     
 > [!NOTE]
->  Se non si desidera aggiornare i database di archiviazione e monitoraggio esistenti, rimuovere la dipendenza prima di aggiornare la topologia. Se si desidera creare nuovi database di archiviazione e monitoraggio, durante l'aggiornamento è possibile creare un nuovo archivio SQL e associarlo al pool. Per informazioni su come eseguire questa operazione, vedere[Upgrade to Skype for Business Server 2015.](../deploy/upgrade-to-skype-for-business-server.md) >'aggiornamento sul posto non supporta la disponibilità elevata o il ripristino di emergenza per Skype for Business Server. Per evitare di interrompere i servizi degli utenti, utilizzare il metodo [Move Users (nessun](upgrade.md#bkmk_MoveUsersMethod) tempo di inattività dell'utente) per eseguire l'aggiornamento.> Durante il processo di aggiornamento la replica xds viene inserita nella cartella condivisa locale nell'unità disco con la maggior parte dello spazio disponibile. Se il disco viene rimosso in un secondo momento, è possibile che si verificano problemi quali l'avvio dei servizi.
+>  Se non si desidera aggiornare i database di archiviazione e monitoraggio esistenti, rimuovere la dipendenza prima di aggiornare la topologia. Se si desidera creare nuovi database di archiviazione e monitoraggio, durante l'aggiornamento è possibile creare un nuovo archivio SQL e associarlo al pool. Per informazioni su come eseguire questa operazione, vedere[Upgrade to Skype for Business Server 2015.](../deploy/upgrade-to-skype-for-business-server.md) >'aggiornamento sul posto non supporta la disponibilità elevata o il ripristino di emergenza per Skype for Business Server. Per evitare di interrompere i servizi degli utenti, utilizzare il metodo [Move Users (nessun](upgrade.md#bkmk_MoveUsersMethod) tempo di inattività dell'utente) per eseguire l'aggiornamento.> Durante il processo di aggiornamento la replica xds viene inserita nella cartella condivisa locale nell'unità disco con la maggior parte dello spazio disponibile. Se il disco viene rimosso in un secondo momento, è possibile che si possano verificare problemi quali l'avvio dei servizi.
   
 ### <a name="upgrade-order"></a>Ordine di aggiornamento
 
@@ -178,11 +178,11 @@ Nel diagramma seguente viene illustrato il supporto della coesistenza Skype for 
 
 Skype for Business Server 2015 non supporta un aggiornamento In-Place di un Survivable Branch Appliance (SBA) o di un Survivable Branch Server (SBS).
   
-È tuttavia possibile supportare la coesistenza Skype for Business Server datacenter con Lync Server 2010 o Lync Server 2013 SBA/SBS. 
+Tuttavia, è possibile supportare la coesistenza di datacenter Skype for Business Server con Lync Server 2010 o Lync Server 2013 SBA/SBS. 
   
 Quando si pianifica un aggiornamento In-Place di un pool Front End (FE) di Lync Server 2013 con un ramo associato, è possibile lasciare gli utenti esistenti in Lync Server 2013 SBA/SBS. Durante l'aggiornamento, gli utenti SBA/SBS passano in modalità resilienza e tornano alla normale funzionalità al termine dell'aggiornamento. Per ulteriori informazioni sull'esperienza degli utenti durante la modalità di resilienza, vedere Funzionalità di resilienza dei siti di succursale [in Lync Server 2013.](/previous-versions/office/lync-server-2013/lync-server-2013-branch-site-resiliency-features)
   
-Quando si esegue la migrazione di una topologia di Lync Server 2010 a Skype for Business Server 2015, SBA/SBS deve essere aggiunto di nuovo alla topologia, in modo analogo alla migrazione a Lync Server 2013. Per i passaggi necessari, vedere [Connecting Survivable Branch Appliance to Lync Server 2013 Front End pool](/previous-versions/office/lync-server-2013/lync-server-2013-connecting-survivable-branch-appliance-to-lync-server-2013-front-end-pool).
+Quando si esegue la migrazione di una topologia di Lync Server 2010 a Skype for Business Server 2015, È necessario aggiungere di nuovo SBA/SBS alla topologia, in modo analogo alla migrazione a Lync Server 2013. Per i passaggi necessari, vedere [Connecting Survivable Branch Appliance to Lync Server 2013 Front End pool](/previous-versions/office/lync-server-2013/lync-server-2013-connecting-survivable-branch-appliance-to-lync-server-2013-front-end-pool).
   
 Per le topologie di coesistenza di Lync Server 2010 e Lync Server 2013, allinearsi innanzitutto alle indicazioni fornite nella sezione "Supporto per la coesistenza con Lync Server 2013 e Lync Server 2010".
   

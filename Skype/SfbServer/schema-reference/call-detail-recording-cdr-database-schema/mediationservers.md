@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9f757377-ab79-4795-aaa9-1163cb9c8a59
 description: La tabella MediationServers è una tabella di supporto. In ogni record vengono archiviate informazioni su un Mediation Server coinvolto nelle chiamate con record nel database.
-ms.openlocfilehash: ef980b18aece83b26619efc375f232040745a7b20d3dca4745e0ffcd60d6e57b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 946b5750f90ed753f137e0b249af8164e3619f08
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286255"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583800"
 ---
 # <a name="mediationservers-table"></a>Tabella MediationServers
  

@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 896198f5-672b-48ea-852f-0211c0c90857
 description: Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello schema di database di registrazione dettagli chiamata.
-ms.openlocfilehash: 7b22676a675d70359cf895261f3f0ad3cec13a6835805efefaacb6be7a7416ce
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 17450a04cee6463cf5ae9a04f8f4976f59421e80
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296973"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583810"
 ---
 # <a name="cdr-table-details-in-skype-for-business-server-2015"></a>Dettagli tabella CDR in Skype for Business Server 2015
  
@@ -28,9 +28,9 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
 
 - [Tabella delle applicazioni in Skype for Business Server 2015](application.md)
     
-- [Tabella CallPriorities in Skype for Business Server 2015](callpriorities.md)
+- [Tabella CallPriorities Skype for Business Server 2015](callpriorities.md)
     
-- [Tabella CallType Skype for Business Server 2015](calltype.md)
+- [Tabella CallType in Skype for Business Server 2015](calltype.md)
     
 - [Tabella ClientVersions in Skype for Business Server 2015](clientversions.md)
     
@@ -42,11 +42,11 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella ConferenceSessionDetails in Skype for Business Server 2015](conferencesessiondetails-0.md)
     
-- [Tabella ConferenceUris in Skype for Business Server 2015](conferenceuris.md)
+- [Tabella ConferenceUris Skype for Business Server 2015](conferenceuris.md)
     
 - [Tabella ContentTypes in Skype for Business Server 2015](contenttypes.md)
     
-- [Tabella DeRegisterType Skype for Business Server 2015](deregistertype.md)
+- [Tabella DeRegisterType in Skype for Business Server 2015](deregistertype.md)
     
 - [Tabella Devices in Skype for Business Server 2015](devices.md)
     
@@ -60,15 +60,15 @@ Negli argomenti seguenti vengono descritte le colonne di ogni tabella dello sche
     
 - [Tabella ErrorReport in Skype for Business Server 2015](errorreport.md)
     
-- [Tabella FileTransfers in Skype for Business Server 2015](filetransfers-0.md)
+- [Tabella FileTransfers Skype for Business Server 2015](filetransfers-0.md)
     
 - [Tabella FocusJoinsAndLeaves Skype for Business Server 2015](focusjoinsandleaves.md)
     
-- [Tabella FrontEnd Skype for Business Server 2015](frontend.md)
+- [Tabella FrontEnd in Skype for Business Server 2015](frontend.md)
     
 - [Tabella Gateways in Skype for Business Server 2015](gateways.md)
     
-- [Tabella HardwareVersions Skype for Business Server 2015](hardwareversions.md)
+- [Tabella HardwareVersions in Skype for Business Server 2015](hardwareversions.md)
     
 - [Tabella IMReportSummary Skype for Business Server 2015](imreportsummary.md)
     

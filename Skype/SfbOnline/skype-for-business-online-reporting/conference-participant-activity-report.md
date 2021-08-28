@@ -13,25 +13,25 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Reporting
 - O365E_ReportsS4BPartActivity
 description: 'Learn how to get the Skype for Business Conference Participant Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: 75e19e665cef14c2b06202368948b0ab19e2836a987552634d72e84bf6e6527a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fddc5508897349b43bf434b1cd8cb977e1c6cb8e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342691"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58584390"
 ---
 # <a name="conference-participant-activity-report"></a>Report attività partecipante di conferenze
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Il **dashboard Report** mostra i dati sull'uso dei prodotti Microsoft 365 o Office 365 all'interno dell'organizzazione. È possibile usare il report attività dei partecipanti alla conferenza di **Skype for Business** per vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e accesso esterno a cui partecipano gli utenti dell'organizzazione.
+Il **dashboard Report** mostra i dati sull'uso dei prodotti Microsoft 365 o Office 365 all'interno dell'organizzazione. È possibile usare il report attività dei partecipanti alla conferenza di **Skype for Business** per vedere quante conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e accesso esterno/uscita vengono partecipate dagli utenti dell'organizzazione.
 
 Per altre informazioni, [vedere La](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) panoramica dei report.
   
@@ -44,7 +44,7 @@ Questo report, insieme agli altri report Skype for Business, fornisce dettagli s
 
 1. Passare all'interfaccia di amministrazione > **utilizzo dei**  >  **report.**
     
-2. Nella pagina **Utilizzo** selezionare l'attività **Skype for Business**  >  **partecipante** alla conferenza **nell'elenco Selezionare un report a** sinistra. In caso contrario, fare clic **sul** widget Skype for Business attività e quindi fare clic su Skype for Business partecipante alla conferenza  **nell'Skype for Business attività.**
+2. Nella pagina **Utilizzo** selezionare **l'Skype for Business**  >  **partecipante** alla conferenza **nell'elenco Selezionare un report a** sinistra. In caso contrario, fare clic **Skype for Business** widget Attività Skype for Business partecipanti alla conferenza nell'elenco Skype for Business **attività.** 
     
   
 ## <a name="interpret-the-skype-for-business-conference-participant-activity-report"></a>Interpretazione del report Attività partecipante di conferenze in Skype for Business
@@ -86,7 +86,7 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 *    **Accesso esterno - terze parti** mostra il numero totale di conferenze in accesso esterno organizzate che usano un provider di servizi di audioconferenza di terza parte. 
 *    **Minuti audio/video** mostra il numero totale di minuti usati quando l'utente ha partecipato a conferenze che utilizzano audio/video. 
 
-Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la **sezione Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 ***
 ![Numero 9](../images/sfbcallout9.png)<br/>È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic o toccando **Esporta**.           <br/> ![Skype for Business Pulsante Esporta report.](../images/de7e2ab7-d70c-422f-a0ec-178b10f7dd51.png)<br/>Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.
 ***

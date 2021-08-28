@@ -10,24 +10,24 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 0512b9ce-7f5b-48eb-a79e-f3498bacf2de
 description: 'Riepilogo: informazioni su come avviare o arrestare una sessione di acquisizione dei registri del servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: 9979af3724a245fb71f14f3db07dba7899269d904d5dfcc1d548dae3a2890559
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8f21b4b63c4261443cf6749f1daf0b905b1adb11
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324116"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608054"
 ---
 # <a name="start-or-stop-cls-log-capture-in-skype-for-business-server-2015"></a>Avviare o arrestare l'acquisizione del registro CLS Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come avviare o arrestare una sessione di acquisizione dei registri del servizio di registrazione centralizzata in Skype for Business Server 2015.
   
-Per acquisire i registri di traccia utilizzando il servizio di registrazione centralizzata, è necessario eseguire un comando per avviare la registrazione in uno o più computer e pool. Vengono inoltre emersi parametri che definiscono i computer o i pool, gli scenari da eseguire (ad esempio, AlwaysOn, un altro scenario predefinito o uno scenario creato), i componenti di Skype for Business Server (ad esempio, S4, SipStack) da tracciare.
+Per acquisire i registri di traccia utilizzando il servizio di registrazione centralizzata, è necessario eseguire un comando per avviare la registrazione in uno o più computer e pool. Vengono inoltre emersi parametri che definiscono quali computer o pool, quali scenari eseguire (ad esempio, AlwaysOn, un altro scenario predefinito o uno scenario creato), quali componenti di Skype for Business Server (ad esempio, S4, SipStack) da tracciare.
   
-Per acquisire le informazioni giuste è necessario assicurarsi di usare lo scenario corretto per la raccolta di informazioni pertinenti al problema. Nel servizio di registrazione centralizzata, uno scenario è il concetto di attivazione della registrazione in base a una raccolta di componenti server, livelli di registrazione e flag, che è molto più efficiente e utile rispetto alla necessità di definire questi elementi in base al singolo server. Si definisce e specifica uno scenario da eseguire, e questo viene eseguito in modo coerente in tutti i server e i pool nell'ambito dell'infrastruttura.
+Per acquisire le informazioni giuste è necessario assicurarsi di usare lo scenario corretto per la raccolta di informazioni pertinenti al problema. Nel servizio di registrazione centralizzata, uno scenario è il concetto di attivazione della registrazione in base a una raccolta di componenti server, livelli di registrazione e flag, che è molto più efficiente e utile rispetto alla necessità di definire questi elementi in base al server. Si definisce e specifica uno scenario da eseguire, e questo viene eseguito in modo coerente in tutti i server e i pool nell'ambito dell'infrastruttura.
   
 Lo scenario predefinito è denominato **AlwaysOn**. Lo scopo di AlwaysOn, come indicato dal nome, è l'esecuzione costante dello scenario. Lo scenario AlwaysOn raccoglie informazioni a livello Info su molti dei più comuni componenti server. Tenere presente che questo livello di registrazione include, in aggiunta ai messaggi di informazioni, i messaggi di tipo Fatal, Error e Warning, ovvero relativi ad avvisi, errori ed errori irreversibili. AlwaysOn raccoglie informazioni prima, durante e dopo il verificarsi di un problema. Questo comportamento è radicalmente diverso rispetto a quello degli strumenti di registrazione precedenti, ad esempio OCSLogger. L'esecuzione di OCSLogger avveniva quando il problema si era già verificato, rendendone più difficoltosa la risoluzione poiché i dati raccolti erano di tipo reattivo e non proattivo. Se AlwaysOn non contiene le informazioni cercate per individuare il componente che causa il problema e indicare le azioni per la risoluzione (evento improbabile, data l'estensione e il livello di dettaglio dei provider in AlwaysOn), indicherà un livello di informazioni ragionevole per determinare le altre operazioni da eseguire, ad esempio creare un nuovo scenario, raccogliere altre informazioni, eseguire una ricerca diversa per raccogliere dettagli più specifici e così via.
   
@@ -72,7 +72,7 @@ Il servizio di registrazione centralizzata offre due modi per emettere comandi. 
 
 1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
-2. Sono disponibili ulteriori parametri per la gestione dei comandi di registrazione. È possibile utilizzare -Duration per modificare il periodo di tempo per l'esecuzione dello scenario. È inoltre possibile definire -Computers, un elenco di nomi di dominio completi (FQDN) del computer separati da una virgola oppure -Pools, un elenco separato da virgole di FQDN per i pool su cui si desidera eseguire l'accesso.
+2. Sono disponibili ulteriori parametri per la gestione dei comandi di registrazione. È possibile utilizzare -Duration per modificare il periodo di tempo per l'esecuzione dello scenario. È inoltre possibile definire -Computers, un elenco di nomi di dominio completi (FQDN) dei computer separati da una virgola oppure -Pools, un elenco separato da virgole di FQDN per i pool su cui si desidera eseguire l'accesso.
     
     Si avvia una sessione di registrazione per lo scenario UserReplicator nel pool "pool01.contoso.net". La durata della sessione di registrazione deve essere di 8 ore. A questo scopo, digitare:
     

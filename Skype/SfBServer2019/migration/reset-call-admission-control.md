@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: Se un pool Front End legacy ospita il servizio Controllo di ammissione di chiamata, è necessario spostare l'hosting CAC in un pool di Skype for Business Server 2019 prima di poter rimuovere il pool Front End legacy.
-ms.openlocfilehash: c3ebb748d877e88060b699b1599c39038124565df361c5032533260e4c5643e2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Se un pool Front End legacy ospita il servizio Controllo di ammissione di chiamata( CAC), è necessario spostare l'hosting CAC in un pool di Skype for Business Server 2019 prima di poter rimuovere il pool Front End legacy.
+ms.openlocfilehash: f660f14adfcdee64d9fa4c79e08393d4f0a0af2d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54334568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583450"
 ---
 # <a name="reset-call-admission-control"></a>Reimpostare il controllo di ammissione di chiamata
 
-Se un pool Front End legacy ospita il servizio Controllo di ammissione di chiamata, è necessario spostare l'hosting CAC in un pool di Skype for Business Server 2019 prima di poter rimuovere il pool Front End legacy.
+Se un pool Front End legacy ospita il servizio Controllo di ammissione di chiamata( CAC), è necessario spostare l'hosting CAC in un pool di Skype for Business Server 2019 prima di poter rimuovere il pool Front End legacy.
   
 ### <a name="to-reset-cac"></a>Per reimpostare il servizio Controllo di ammissione di chiamata
 

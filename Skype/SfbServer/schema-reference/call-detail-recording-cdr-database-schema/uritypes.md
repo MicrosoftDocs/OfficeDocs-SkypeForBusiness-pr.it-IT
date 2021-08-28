@@ -10,23 +10,23 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 77c4dfae-1b29-4e81-ba05-609e61643998
-description: UriTypes Table contiene i diversi tipi di URI (Uniform Resource Identifier) monitorati Skype for Business Server 2015.
-ms.openlocfilehash: 1e98bc879e7ddb6e2ca92d4f226284e604d22d312f9e2db8c0ff80cad89c33e5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: La tabella UriTypes contiene i diversi tipi di URI (Uniform Resource Identifier) monitorati Skype for Business Server 2015.
+ms.openlocfilehash: e6be4abb02fc29fb5becd9da8a1b45c4d8c6271f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295363"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583770"
 ---
 # <a name="uritypes-table"></a>Tabella UriTypes
  
-UriTypes Table contiene i diversi tipi di URI (Uniform Resource Identifier) monitorati Skype for Business Server 2015.
+La tabella UriTypes contiene i diversi tipi di URI (Uniform Resource Identifier) monitorati Skype for Business Server 2015.
 
-Quando viene creato il database di registrazione dei dati, vengono creati due record per rappresentare PhoneUri e UserUri e i record creati successivamente a cui viene assegnato in modo dinamico UriTypeId. 
+Quando viene creato il database di registrazione chiamata, vengono creati due record per rappresentare PhoneUri e UserUri e i record creati successivamente a cui viene assegnato in modo dinamico UriTypeId. 
   
 |**Colonna**|**Tipo di dati**|**Chiave/indice**|**Dettagli**|
 |:-----|:-----|:-----|:-----|
 |**UriTypeId** <br/> |tinyint  <br/> |Principale  <br/> |Identificatore univoco assegnato a un tipo di URI.  <br/> Valori possibili - da 0 a 255 |
-|**UriType** <br/> |nvarchar(256)  <br/> || Descrizione dei diversi tipi di URI. I valori seguenti sono pre-assegnati: <br/>  1 - Uri Telefono <br/>  0 - URI utente <br/> <br/>  Altri tipi possibili includono: <br/>conf:applicationsharing <br/> conf:audio-video<br/> conf:chat<br/>    conf:focus<br/>   mras<br/>
+|**UriType** <br/> |nvarchar(256)  <br/> || Descrizione dei diversi tipi di URI. I valori seguenti sono pre-assegnati: <br/>  1 - URI Telefono <br/>  0 - URI utente <br/> <br/>  Altri tipi possibili includono: <br/>conf:applicationsharing <br/> conf:audio-video<br/> conf:chat<br/>    conf:focus<br/>   mras<br/>

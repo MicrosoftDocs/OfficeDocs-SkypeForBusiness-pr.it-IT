@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: Vedere come selezionare le lingue dell'operatore automatico per un numero di Audioconferenza in Skype for Business online.
-ms.openlocfilehash: 044d05ec8b67f1e7732140a90c47b0666568fafe241fe3a45f2d02c46824e903
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 15eca114c4f3d108a078642e6af23923fe817f66
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54326992"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58584430"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-skype-for-business-online"></a>Impostare le lingue dell'operatore automatico per Audioconferenza in Skype for Business online
 
@@ -47,7 +47,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
   
 ## <a name="set-the-conferencing-auto-attendant-languages"></a>Impostare le lingue dell'operatore automatico per i servizi di conferenza
 
-Per eseguire questo [passaggio,](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) è necessario essere un amministratore globale [o Skype for Business](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) amministratore globale.
+Per eseguire questo [passaggio,](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) è necessario essere un amministratore [globale Skype for Business amministratore](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) globale.
     
 1. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a **Portale legacy.** Una volta nel portale legacy, selezionare **Audioconferenza** e quindi fare clic su **Bridge Microsoft.**
     
@@ -66,7 +66,7 @@ Per eseguire questo [passaggio,](https://support.office.com/article/da585eea-f57
     
 - Le lingue possono essere impostate per numeri specifici, ma non per i numeri di telefono condivisi.
     
-- Per visualizzare un elenco di paesi/aree geografiche in cui è disponibile l'audioconferenza in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere numeri di Telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing.md)
+- Per visualizzare un elenco di paesi/aree geografiche in cui è disponibile l'audioconferenza in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere i numeri Telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing.md)
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 

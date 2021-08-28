@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
@@ -17,16 +17,16 @@ search.appverid: MET150
 description: Informazioni sulle risorse utili per l'adozione di VoIP aziendale al termine della configurazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bdf412c2279b0cb0740511534b7a839ad5434c12141d2cf225fdbf9d5e1b5924
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c803c5d8bf77810c90550ed321de8aaf4add04dd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309005"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583610"
 ---
 # <a name="finished-business-voice-setup"></a>Configurazione di Business Voice completata
 
-**Congratulazioni!** Hai completato la configurazione di Microsoft 365 Business Voice. Di seguito sono riportate alcune risorse utili per la gestione di VoIP aziendale e per aiutare gli utenti a ottenere il massimo dalla nuova esperienza di telefono, riunione e audioconferenza.
+**Congratulazioni!** Hai completato la configurazione di Microsoft 365 Business Voice. Di seguito sono riportate alcune risorse utili per gestire La voce aziendale e aiutare gli utenti a ottenere il massimo dalla nuova esperienza di telefono, riunione e audioconferenza.
 
 Le tabelle seguenti elencano le risorse che ti aiuteranno a utilizzare al meglio Teams e Business Voice.
 
@@ -49,7 +49,7 @@ Usare le risorse seguenti per personalizzare VoIP aziendale in base ai requisiti
 | [Criteri di chiamata in Microsoft Teams](set-up-policies.md)    | Controlla se gli utenti possono effettuare chiamate private, inoltrare chiamate o configurare squilli simultanei, instradare le chiamate alla segreteria telefonica e così via.        |
 | [Gestire i pacchetti di criteri in Microsoft Teams](policy-packages.md)    | Creare gruppi di criteri che possono essere assegnati a utenti con ruoli simili.        |
 | [Creare utenti e assegnare loro licenze di Business Voice e numeri di telefono](create-users.md)    | Aggiungere altri utenti a Business Voice e configurarli con i numeri di telefono.        |
-| [Creare una coda di chiamata - Esercitazione sulle piccole imprese](create-a-phone-system-call-queue-smb.md)    | Creare una coda di chiamata per supportare ambienti di call center come vendite, servizio clienti, supporto tecnico e così via.        |
+| [Creare una coda di chiamata - Esercitazione sulle piccole imprese](create-a-phone-system-call-queue-smb.md)    | Creare una coda di chiamata per supportare ambienti call center come vendite, servizio clienti, supporto tecnico e così via.        |
 | [Configurare un operatore automatico - Esercitazione sulle piccole imprese](create-a-phone-system-auto-attendant-smb.md)   | Creare un operatore automatico aggiuntivo (menu delle chiamate) per un instradamento delle chiamate più flessibile.        |
 | [Configurare call quality dashboard (CQD)](analytics-dashboard.md)| Configurare l'utilizzo delle chiamate e il monitoraggio della qualità per garantire agli utenti la migliore esperienza di Business Voice.|
 

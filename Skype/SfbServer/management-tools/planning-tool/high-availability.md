@@ -11,19 +11,19 @@ f1.keywords:
 - ms.lync.plan.HighAvailability
 - ms.lync.plan.HighAvailability
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 14a897b3-2406-46c7-b08f-490085b3d048
-description: Lo schema principale di disponibilità elevata per la maggior parte dei ruoli del server in Skype for Business Server 2015 si basa sulla ridondanza del server tramite pooling. Se un server che esegue un determinato ruolo del server ha esito negativo, gli altri server del pool che eseguono lo stesso ruolo prenderanno il carico da tale server.
-ms.openlocfilehash: 954fc2be48a17daa11099a5bca179d416ed4d9380689558a9214362ed904568c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Lo schema principale di disponibilità elevata per la maggior parte dei ruoli del server in Skype for Business Server 2015 si basa sulla ridondanza dei server tramite pooling. Se un server che esegue un determinato ruolo del server ha esito negativo, gli altri server del pool che eseguono lo stesso ruolo prenderanno il carico da tale server.
+ms.openlocfilehash: e39a49b5cef508b5858c564636b575c20f48ac75
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280959"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630450"
 ---
 # <a name="high-availability-planning-tool"></a>Strumento di pianificazione a disponibilità elevata
  
-Lo schema principale di disponibilità elevata per la maggior parte dei ruoli del server in Skype for Business Server 2015 si basa sulla ridondanza del server tramite pooling. In caso di errore di un server che esegue un determinato ruolo, gli altri server del pool che eseguono lo stesso ruolo sopportano il carico del server in errore.
+Lo schema principale di disponibilità elevata per la maggior parte dei ruoli del server in Skype for Business Server 2015 si basa sulla ridondanza dei server tramite pooling. In caso di errore di un server che esegue un determinato ruolo, gli altri server del pool che eseguono lo stesso ruolo sopportano il carico del server in errore.
   
 Skype for Business Server 2015 richiede almeno due Front End Server per abilitare la disponibilità elevata. Lo strumento di pianificazione utilizza i criteri seguenti per determinare se aggiungerà ulteriori server per supportare la disponibilità elevata:
   
@@ -33,7 +33,7 @@ Skype for Business Server 2015 richiede almeno due Front End Server per abilitar
     
 - Se la distribuzione contiene Persistent Chat, lo strumento di pianificazione aggiungerà un server aggiuntivo, ma non aumenterà il numero di pool. Ad esempio, se la distribuzione contiene già quattro server, lo strumento di pianificazione suggerirà di aggiungere un altro server (per un totale di cinque server) ma manterrà un singolo pool. 
     
-Lo strumento di pianificazione aggiunge inoltre un database SQL mirror per tutti i database. Ad esempio, se è presente un database front-end SQL Server, lo strumento di pianificazione aggiungerà l'altro database come database mirror per questo database e lo deno namerà come "Database SQL mirror front-end.
+Lo strumento di pianificazione aggiunge inoltre un database SQL mirror per tutti i database. Ad esempio, se è presente un database front-end SQL Server, lo strumento di pianificazione aggiungerà l'altro database come database mirror per questo database e lo denono come "database SQL mirror front-end.
   
 Per ulteriori informazioni sulla preparazione dell'ambiente per la disponibilità elevata, vedere [Plan for high availability and disaster recovery in Skype for Business Server 2015.](../../plan-your-deployment/high-availability-and-disaster-recovery/high-availability-and-disaster-recovery.md)
   

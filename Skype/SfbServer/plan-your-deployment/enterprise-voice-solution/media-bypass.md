@@ -9,29 +9,29 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 9ea090b3-f607-46f7-97dd-2510052524e5
-description: Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata.
-ms.openlocfilehash: 386272fd2a20d2d780f146c8eb03d75878cdf69cdfa27145d42c0421ba4ba91f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata( CAC).
+ms.openlocfilehash: 7bf6be9a279d5b5f90da0274b8d271767be87f36
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284705"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630440"
 ---
 # <a name="plan-for-media-bypass-in-skype-for-business"></a>Pianificare il bypass multimediale in Skype for Business
 
-Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata.
+Decisioni necessarie per la pianificazione del bypass multimediale in Skype for Business Server VoIP aziendale. Include l'interoperabilità con il servizio Controllo di ammissione di chiamata( CAC).
 
 Il termine bypass multimediale indica la rimozione del Mediation Server dal percorso multimediale in tutti i casi possibili per le chiamate con segnale che attraversa il Mediation Server.
 
 Media Bypass consente di migliorare la qualità vocale riducendo la latenza, le conversioni inutili, la possibilità di perdita di pacchetti e il numero di potenziali punti di errore. Può inoltre essere migliorata la scalabilità, in quanto l'eliminazione dell'elaborazione multimediale per le chiamate ignorate consente di ridurre il carico di Mediation Server. Questa riduzione del carico integra la capacità del Mediation Server di controllare più gateway.
 
- Se un sito di succursale senza Mediation Server è connesso a un sito centrale tramite uno o più collegamenti WAN con larghezza di banda limitata, il bypass multimediale riduce il requisito di larghezza di banda consentendo ai supporti di un client di un sito di succursale di fluire direttamente al gateway locale senza dover prima passare attraverso il collegamento WAN a un Mediation Server nel sito centrale e di nuovo.
+ Se un sito di succursale senza Mediation Server è connesso a un sito centrale da uno o più collegamenti WAN con larghezza di banda limitata, il bypass multimediale riduce il requisito di larghezza di banda consentendo ai supporti di un client di un sito di succursale di fluire direttamente al gateway locale senza dover prima passare attraverso il collegamento WAN a un Mediation Server nel sito centrale e di nuovo.
 
 Grazie all'esclusione del Mediation Server dall'elaborazione multimediale, il bypass multimediale può anche ridurre il numero di Mediation Server necessari VoIP aziendale'infrastruttura. In generale, è consigliabile abilitare Media Bypass quando possibile.
 
@@ -92,7 +92,7 @@ Il bypass multimediale (o Media Bypass, ovvero la possibilità di ignorare il Me
 
 - Il controllo di ammissione di chiamata e il bypass multimediale sono entrambi abilitati. Il secondo deve essere impostato su **Utilizza configurazione siti e aree**. Tali informazioni sui siti e sulle aree sono le stesse utilizzate per il controllo di ammissione di chiamata.
 
-    Se si abilita il controllo di ammissione di chiamata, non sarà possibile selezionare **Ignora sempre** e viceversa perché le due configurazioni si escludono reciprocamente. In altri termini, solo una delle due funzionalità verrà applicata a una determinata chiamata PSTN. Viene innanzitutto effettuata una verifica per determinare se il bypass multimediale sia applicabile alla chiamata. In caso affermativo, non viene utilizzato il controllo di ammissione di chiamata. Questo comportamento è logico in quanto, se una chiamata è idonea per il bypass, utilizza per definizione una connessione su cui il controllo di ammissione di chiamata non è necessario. Se non è possibile applicare il bypass alla chiamata, ovvero se gli ID bypass del client e del gateway non corrispondono, il controllo di ammissione di chiamata viene applicato alla chiamata.
+    Se si abilita il controllo di ammissione di chiamata, non sarà possibile selezionare **Ignora sempre** e viceversa perché le due configurazioni si escludono reciprocamente. In altri termini, solo una delle due funzionalità verrà applicata a una determinata chiamata PSTN. Viene innanzitutto effettuata una verifica per determinare se il bypass multimediale sia applicabile alla chiamata. In caso affermativo, non viene utilizzato il controllo di ammissione di chiamata. Questo comportamento è logico in quanto, se una chiamata è idonea per il bypass, utilizza per definizione una connessione su cui il controllo di ammissione di chiamata non è necessario. Se non è possibile applicare il bypass alla chiamata, ovvero se gli ID di bypass del client e del gateway non corrispondono, il controllo di ammissione di chiamata viene applicato alla chiamata.
 
 - Il controllo di ammissione di chiamata non è abilitato e il bypass multimediale è impostato su **Ignora sempre**.
 

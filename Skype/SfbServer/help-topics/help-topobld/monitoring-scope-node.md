@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.MonitoringServerScopeNode
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 05867db5-ad62-41e3-b1ac-f21f43d1e90b
 description: "In Generatore di topologie di Lync Server 2013 è possibile eseguire attività correlate a un singolo server che esegue Il monitoraggio facendo clic con il pulsante destro del mouse sul server che esegue Monitoraggio nell'albero della console, scegliendo Azione sulla barra degli strumenti oppure facendo clic su un'attività nel riquadro Azioni e quindi scegliendo una delle opzioni seguenti per il server che esegue Monitoraggio:"
-ms.openlocfilehash: 39197d9d926cecd7a1acf3834b0fff8ea7f71d92af82921f161f0502e00c415a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4513a0ea5c28d465cd1fc8d8cf949cb09499a7af
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54299533"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630720"
 ---
 # <a name="monitoring-scope-node"></a>Nodo dell'ambito di monitoraggio
  

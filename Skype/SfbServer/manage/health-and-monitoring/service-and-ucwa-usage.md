@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8389b37a-ca3e-4047-8b51-85bc07da87e8
 description: "Riepilogo: gestire il servizio per dispositivi mobili (Mcx) e l'API Web per comunicazioni unificate (UCWA) in Skype for Business Server."
-ms.openlocfilehash: 6f97e8ec6199fe4665d3d7532f0cb03e21204fafc4764cf36c89dcbeacc4321d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a9cc79e523c3ba6671df302d844dc5e05d3bae28
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317601"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608163"
 ---
 # <a name="monitor-mobility-service-and-ucwa-usage-in-skype-for-business-server"></a>Monitorare l'utilizzo del servizio per dispositivi mobili e UCWA in Skype for Business Server
  
@@ -60,7 +60,7 @@ Oltre ai contatori di utilizzo della CPU e della memoria, è possibile utilizzar
 - **ASP.NET\Requests Queued** (deve essere sempre zero).
     
 > [!NOTE]
-> Se si soddisfano o si superano questi valori, è consigliabile rivedere e ricalcolare la pianificazione della capacità per il ridimensionamento corretto della CPU, del numero di core e della memoria per i computer che ospitano i servizi Web. 
+> Se si soddisfano o si superano questi valori, è consigliabile rivisitare e ricalcolare la pianificazione della capacità per il ridimensionamento corretto della CPU, del numero di core e della memoria per i computer che ospitano i servizi Web. 
 
 > [!NOTE]
 > Il supporto MCX (Mobility Service) per i client mobili legacy non è più disponibile Skype for Business Server 2019. Tutti i client Skype for Business mobili utilizzano già UNIFIED Communications Web API (UCWA) per supportare la messaggistica istantanea, la presenza e i contatti. Gli utenti con client legacy che usano MCX dovranno eseguire l'aggiornamento a un client corrente.

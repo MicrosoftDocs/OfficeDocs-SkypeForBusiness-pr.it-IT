@@ -10,35 +10,35 @@ ms.reviewer: svemu
 f1.keywords:
 - NOCSH
 - ms.teamsadmincenter.analyticsandreports.overview
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: In questo articolo sono disponibili informazioni sui report Teams disponibili nell'interfaccia Microsoft Teams amministrazione.
+description: In questo articolo sono disponibili informazioni sui report Teams disponibili nell'interfaccia Microsoft Teams di amministrazione.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 362dce90521cb5fe948735f7e8a435e5f158ed3e
-ms.sourcegitcommit: a8965ff7b05ff600e3c426a4fff5fdba8b4c8b0b
+ms.openlocfilehash: 02353f540a3739f46e8e693ab4e83141b0bdfd3b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "58523827"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583550"
 ---
 # <a name="microsoft-teams-analytics-and-reporting"></a>Microsoft Teams analisi e creazione di report
 
-Una nuova esperienza di analisi e creazione di report per Microsoft Teams è disponibile nell'interfaccia Microsoft Teams di amministrazione. È possibile eseguire report diversi per ottenere informazioni dettagliate sul modo in cui gli utenti dell'organizzazione usano Teams. Ad esempio, è possibile vedere quanti utenti comunicano tramite i messaggi di canale e chat e i tipi di dispositivi che usano per connettersi a Teams. L'organizzazione può usare le informazioni dei report per comprendere meglio i modelli di utilizzo, prendere decisioni aziendali e informare gli sforzi di formazione e comunicazione.
+Una nuova esperienza di analisi e creazione di report per Microsoft Teams è disponibile nell'interfaccia Microsoft Teams di amministrazione. È possibile eseguire report diversi per ottenere informazioni dettagliate sul modo in cui gli utenti dell'organizzazione usano Teams. Ad esempio, è possibile vedere quanti utenti comunicano tramite messaggi di canale e chat e i tipi di dispositivi che usano per connettersi a Teams. L'organizzazione può usare le informazioni dei report per comprendere meglio i modelli di utilizzo, prendere decisioni aziendali e informare gli sforzi di formazione e comunicazione.
 
 ## <a name="how-to-access-the-reports"></a>Come accedere ai report
 
-Per accedere ai report, è necessario essere un amministratore globale di Microsoft 365 o Office 365, un lettore globale in Microsoft 365 o Office 365, un amministratore del servizio Teams o un Skype for Business amministratore. Per altre informazioni sui Teams di amministratore e sui report a cui ogni ruolo di amministratore può accedere, vedere Usare i ruoli di amministratore di Teams per [gestire](../using-admin-roles.md)Teams .
+Per accedere ai report, è necessario essere un amministratore globale di Microsoft 365 o Office 365, un lettore globale in Microsoft 365 o Office 365, un amministratore del servizio Teams o un Skype for Business amministratore. Per altre informazioni sui Teams di amministratore e sui report a cui ogni ruolo di amministratore può accedere, vedere Usare i ruoli di amministratore di Teams per gestire Teams [.](../using-admin-roles.md)
 
-Passare all'interfaccia Microsoft Teams, nel riquadro di spostamento sinistro, selezionare Report di analisi & e **quindi in** **Report** scegliere il report da eseguire.
+Passare all'interfaccia Microsoft Teams, nel riquadro di spostamento sinistro, selezionare Analisi & report e quindi **in** **Report** scegliere il report da eseguire.
 
 > [!NOTE]
-> I report nell'interfaccia di amministrazione di Microsoft Teams sono separati dai report attività per Teams che fanno parte dei report Microsoft 365 nel interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nel interfaccia di amministrazione di Microsoft 365, vedere Teams [report attività nel interfaccia di amministrazione di Microsoft 365](../teams-activity-reports.md)
+> I report nell'interfaccia Microsoft Teams di amministrazione sono separati dai report attività per Teams che fanno parte dei report Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365. Per altre informazioni sui report attività nel interfaccia di amministrazione di Microsoft 365, vedere Teams [report attività nel interfaccia di amministrazione di Microsoft 365](../teams-activity-reports.md)
 
-## <a name="teams-reporting-reference"></a>Teams di riferimento per la creazione di report
+## <a name="teams-reporting-reference"></a>Teams riferimento alla creazione di report
 
 Ecco un elenco dei report Teams disponibili nell'interfaccia di amministrazione di Microsoft Teams e una panoramica di alcune informazioni disponibili in ogni report.
 
@@ -54,7 +54,7 @@ Stiamo continuamente migliorando l'esperienza Teams creazione di report e l'aggi
 |[Teams Report pool di minuti PSTN](pstn-minute-pools-report.md) |  Paese o area geografica<br>Capability (licenza) <br>Totale minuti<br>Minuti usati<br>Minuti disponibili|
 |[Teams Report sull'utilizzo PSTN - Piani per chiamate](pstn-usage-report.md#calling-plans)|  Indicatore data e ora<br>Nome utente<br>Telefono numero<br>Tipo di chiamata <br>Chiamato a<br>A paese o area geografica <br>Chiamata da <br>Da paese o area geografica<br>Addebito<br>Valuta<br>Durata<br>Nazionale/Internazionale<br>ID chiamata<br>Tipo di numero<br>Paese o area geografica<br>ID conferenza<br>Capability (licenza)|
 |[Teams Report utilizzo PSTN - Routing diretto](pstn-usage-report.md#direct-routing)  |  Indicatore data e ora<br>Nome visualizzato<br>Indirizzo SIP<br>Telefono numero <br>Tipo di chiamata<br>Chiamato a<br>Ora di inizio<br>Ora di invito<br>Tempo di errore<br>Ora di fine<br>Durata<br>Tipo di numero<br>Bypass multimediale<br>SBC FQDN<br>Area geografica di Azure<br>Tipo di evento<br>Codice SIP finale<br>Sottocodice Microsoft finale<br>Frase SIP finale<br>ID correlazione  |
-|[Teams di licenza per la protezione delle informazioni](information-protection-license-report.md)  | <br>Se gli utenti hanno licenze valide per inviare i messaggi tramite notifiche di modifica</br><br>Numero totale di eventi di notifica delle modifiche attivati da un utente</br><br>Quali app ascoltano gli eventi di notifica delle modifiche a livello di organizzazione</br>|
+|[Teams sulla licenza di protezione delle informazioni](information-protection-license-report.md)  | <br>Se gli utenti hanno licenze valide per inviare i messaggi tramite notifiche di modifica</br><br>Numero totale di eventi di notifica delle modifiche attivati da un utente</br><br>Quali app ascoltano gli eventi di notifica delle modifiche a livello di organizzazione</br>|
 
 
 [!INCLUDE [teams-reports-definitions](../includes/teams-reports-definitions.md)]
@@ -63,11 +63,11 @@ Stiamo continuamente migliorando l'esperienza Teams creazione di report e l'aggi
 
 Per rendere anonimi i dati Teams'attività degli utenti e Teams di utilizzo dei dispositivi, è necessario essere un amministratore globale. In questo modo si nasconderanno informazioni identificabili come il nome visualizzato, la posta elettronica e l'ID AAD nei report e nelle relative esportazioni.
 
-1. In interfaccia di amministrazione di Microsoft 365, passare alla  scheda Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
+1. In interfaccia di amministrazione di Microsoft 365 passare alla scheda  Impostazioni Org Impostazioni e nella scheda Servizi \> scegliere **Report.** 
     
 2. Selezionare **Report** e quindi scegliere **Visualizza identificatori anonimi**. Questa impostazione viene applicata sia ai report di utilizzo in interfaccia di amministrazione di Microsoft 365 che all'Teams di amministrazione.
   
 3. Selezionare **Salva modifiche**.
 
 > [!NOTE]
-> Se si abilita questa impostazione, le informazioni verranno de-identificate nel [report attività](user-activity-report.md) Teams utente e Teams [report sull'utilizzo dei](device-usage-report.md) dispositivi. Non influirà sugli altri report di utilizzo disponibili nell'Teams di amministrazione.
+> Se si abilita questa impostazione, le informazioni verranno de-identificate nel report attività Teams [utente](user-activity-report.md) e Teams [report sull'utilizzo dei](device-usage-report.md) dispositivi. Non influirà sugli altri report di utilizzo disponibili nell'Teams di amministrazione.

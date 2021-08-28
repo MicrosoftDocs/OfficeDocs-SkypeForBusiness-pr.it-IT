@@ -14,19 +14,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e della creazione in Call Quality Dashboard (CQD).
-ms.openlocfilehash: be51f4ec7eb19f56a07413749abf5455856754ed0984d00cd27ed72d9aaa8316
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 847abe5aeb18f7cb19bdad9213334f119c101e20
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322808"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583700"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Upload di tenant e edificio in Call Quality Dashboard (CQD)
 
@@ -41,7 +41,7 @@ Nel dashboard Report di riepilogo CQD selezionare Tenant **Data Upload** dal men
 
    ![Screenshot della finestra di dialogo visualizzata durante il caricamento dei dati](media/qerguide-image-tenantdataupload.png)
     
-2. In alternativa, se è la prima volta che visiti CQD, ti verrà chiesto di caricare i dati dell'edificio. È possibile selezionare **Upload ora** per passare rapidamente alla **pagina** Upload tenant.
+2. In alternativa, se è la prima volta che visiti CQD, ti verrà chiesto di caricare i dati dell'edificio. È possibile selezionare **Upload ora** per passare rapidamente alla pagina Upload **tenant.**
 
    ![Screenshot del banner che notifica a un utente di caricare i dati dell'edificio](media/qerguide-image-buildingdatauploadbanner.png)
 
@@ -106,7 +106,7 @@ Il primo tipo di file di dati del tenant in CQD è il file di dati **Building.**
   `192.168.1.0,USA/Seattle/SEATTLE-SEA-1,26,SEATTLE-SEA-1,Contoso,IT Termination,Engineering,Seattle,98001,US,WA,MSUS,1,0,0`
 
 > [!IMPORTANT]
-> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. 
+> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non riportano in modo accurato le informazioni sulla subnet. 
 >
 > La colonna VPN è facoltativa e il valore predefinito è 0. Se il valore della colonna VPN è impostato su 1, la subnet rappresentata da tale riga verrà completamente espansa in modo che corrisponda a tutti gli indirizzi IP all'interno della subnet. Usare questa opzione con parsimonio e solo per le subnet VPN, in quanto l'espansione completa di queste subnet avrà un impatto negativo sui tempi delle query per le query che implicano la creazione di dati. Se l'espansione della subnet comporta il superamento del limite di 1.000.000 righe di espansione, il file di edificio non verrà accettato.
 
@@ -129,9 +129,9 @@ Invece di aggiungere una voce per ogni subnet, è possibile usare l'indirizzo so
 
 Ecco alcuni aspetti da considerare prima di implementare la supernetting:
 
--   La supernetting può essere usata solo in un mapping di subnet con una maschera da 8 a 28 bit.
+-   La supernetting può essere usata solo in un mapping di subnet con una maschera da 8 bit a 28 bit.
 
--   Il supernetting richiede meno tempo, ma ha il costo di ridurre la ricchezza dei dati. Supponiamo che ci sia un problema di qualità che riguarda la subnet 10.1.2.0. Se è stata implementata la supernetting, non si saprà dove si trova la subnet dell'edificio o quale tipo di rete si trovi, ad esempio un laboratorio. Se si sono definite tutte le subnet per un edificio e sono stati caricati i dati sulla posizione del piano, sarà possibile vedere questa distinzione.
+-   Il supernetting richiede meno tempo, ma ha il costo di ridurre la ricchezza dei dati. Supponiamo che ci sia un problema di qualità che riguarda la subnet 10.1.2.0. Se è stata implementata la supernetting, non si saprà dove si trova la subnet dell'edificio o quale tipo di rete si trovi, ad esempio un lab. Se si sono definite tutte le subnet per un edificio e sono stati caricati i dati sulla posizione del piano, sarà possibile vedere questa distinzione.
 
 -   È importante assicurarsi che l'indirizzo supernetto sia corretto e che non rileva subnet indesiderate.
 
@@ -142,7 +142,7 @@ Ecco alcuni aspetti da considerare prima di implementare la supernetting:
 
 ### <a name="vpn"></a>VPN
 
-I dati di qualità dell'esperienza (QoE) che i client inviano a Microsoft 365 o Office 365, da cui vengono provenienti i dati CQD, include un contrassegno VPN. CQD lo vede come la prima VPN e la seconda dimensione VPN. Tuttavia, questo flag si basa sulla segnalazione dei fornitori di VPN Windows che la scheda di rete VPN registrata è una scheda di accesso remoto. Non tutti i fornitori vpn registrano correttamente gli adattatori di accesso remoto. Per questo, potrebbe non essere possibile usare i filtri di query VPN predefiniti. Usare la colonna VPN descritta sopra per contrassegnare e identificare con precisione le subnet VPN. È anche buona norma etichettare le reti VPN per una facile identificazione nei report. Di seguito sono riportati due esempi di come etichettare le subnet VPN:
+I dati di qualità dell'esperienza (QoE) inviati dai client a Microsoft 365 o Office 365, ovvero da cui vengono provenienti i dati CQD, includono un flag VPN. CQD lo vede come la prima VPN e la seconda dimensione VPN. Tuttavia, questo flag si basa sulla segnalazione dei fornitori vpn Windows che la scheda di rete VPN registrata è una scheda di accesso remoto. Non tutti i fornitori vpn registrano correttamente gli adattatori di accesso remoto. Per questo, potrebbe non essere possibile usare i filtri di query VPN predefiniti. Usare la colonna VPN descritta sopra per contrassegnare e identificare con precisione le subnet VPN. È anche buona norma etichettare le reti VPN per identificarsi facilmente nei report. Di seguito sono riportati due esempi di come etichettare le subnet VPN:
 
 - Definire un **nome di** rete immettendo "VPN" in questo campo per le subnet VPN.
 
@@ -159,7 +159,7 @@ I dati di qualità dell'esperienza (QoE) che i client inviano a Microsoft 365 o 
 
 L'altro tipo di file di dati del tenant CQD è il file di dati **endpoint.** I valori di colonna vengono usati nella colonna First Client Endpoint Name o Second Client Endpoint Name del record di chiamata per visualizzare le informazioni su Endpoint Make, Model o Type. Il formato del file di dati caricato deve soddisfare i criteri seguenti per superare il controllo di convalida prima del caricamento:
 
-- Il file deve essere un file TSV (le colonne sono separate da tab) o un file .csv (le colonne sono separate da una virgola).
+- Il file deve essere un file con estensione tsv (le colonne sono separate da tab) o un file .csv (le colonne sono separate da una virgola).
 
 - Il contenuto del file di dati non include intestazioni di tabella. La prima riga del file di dati dovrebbe essere dati reali, non un'etichetta di intestazione come "EndpointName".
 
@@ -214,11 +214,11 @@ Dopo aver caricato le informazioni sull'edificio per le reti gestite, ogni rete 
 
 1. Accodare le nuove subnet al file originale.
 
-1. Upload file di compilazione. Assicurarsi di impostare la data di inizio su almeno otto mesi prima, in modo che CQD eelaborare i dati cronologici.
+1. Upload file di edificio. Assicurarsi di impostare la data di inizio su almeno otto mesi prima, in modo che CQD eelaborare i dati cronologici.
 
 
 > [!IMPORTANT]
-> È necessario aggiungere l'ID tenant come filtro di query per **Second Tenant ID** a questo report per filtrare il report in modo da visualizzare solo i dati del tenant dell'organizzazione. In caso contrario, il report mostrerà subnet federate.
+> È necessario aggiungere l'ID tenant come filtro di query per il secondo **ID tenant** a questo report per filtrare il report in modo da visualizzare solo i dati del tenant dell'organizzazione. In caso contrario, il report mostrerà subnet federate.
 
 > [!NOTE] 
 > Assicurarsi di modificare il filtro del report Anno mese sul mese corrente. Selezionare **Modifica** e modificare il filtro del report **Anno** mese per salvare il nuovo mese predefinito.

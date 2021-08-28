@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Messaggi di posta elettronica e sondaggi di esempio da usare in congiuntivi con il piano d'azione in dieci passaggi accelerato per l'aggiornamento da Skype for Business a Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7c94094720a68bf14c0c6b3f66d8b45c4a7a3251cd1159645b1226a711d562a2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0c23c2818c791915aa2a8e6c772510c6a50094c1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323778"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583470"
 ---
 # <a name="sample-emails-and-surveys-for-upgrade-basic-communications"></a>Messaggi di posta elettronica e sondaggi di esempio per le comunicazioni di base sull'aggiornamento
 
@@ -201,7 +201,7 @@ Should you have questions, contact <<insert alias or contact info>>.
 
 ## <a name="sample-surveys"></a>Sondaggi di esempio
 
-Indicare quanto sei esperto nell'eseguire le attività seguenti in Teams e se ci sono una o più attività su cui vuoi saperne di più.
+Indicare quanto sei esperto nell'eseguire le attività seguenti in Teams e se ci sono una o più attività di cui vuoi saperne di più.
 
 | &nbsp; | Molto abile | Un po' esperto | Non è affatto esperto | Per saperne di più | N/D | Incerto/non familiare |&nbsp; | &nbsp;|&nbsp; |&nbsp; |
 |---|---|---|---|---|---|---|---|---|---|---|
@@ -223,7 +223,7 @@ Indicare quanto sei esperto nell'eseguire le attività seguenti in Teams e se ci
 | Niente, attualmente lo uso | &#9744; |
 | Altro (specificare) | &#9744; |
 
-**È probabile che consiglii di Microsoft Teams a un amico/collega? (0=Non è affatto probabile... 10=Estremamente probabile)**
+**È probabile che consiglii Microsoft Teams a un amico/collega? (0=Non è affatto probabile... 10=Estremamente probabile)**
 
 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
 | ---| --- | ---|---|---|---|---|---|---|---|---|

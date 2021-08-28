@@ -8,9 +8,9 @@ audience: Admin
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: karuanag
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
-description: Usare risorse di formazione online per portare il personale di supporto a bordo per la fase di sperimentazione della Teams adozione.
+description: Usare risorse di formazione online per portare il personale di supporto a bordo per la fase di sperimentazione Teams adozione.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,16 +21,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: afc949e71292f88bbd5d955349782938b724bdae94806339d05ddb404aafaf76
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0f45a3a8e1538032ffffe3fbee6bc94d093889a1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583570"
 ---
 # <a name="onboard-support-for-microsoft-teams"></a>Supporto onboard per Microsoft Teams
 
-Per assicurarsi che i team di primi utenti e campioni avranno il supporto appropriato quando inizieranno a usare Teams, incontrare il personale di supporto ed esaminare le funzionalità di Teams. I membri chiave dell'organizzazione di supporto potrebbero voler partecipare al programma di adozione iniziale. Incoraggiare l'uso di Teams nei propri scenari. È possibile eseguire l'onboarding di base del prodotto usando le risorse di formazione online.  
+Per assicurarsi che i team di primi utenti e campioni avranno il supporto appropriato quando inizieranno a usare Teams, incontrare il personale di supporto ed esaminare le funzionalità di Teams. I membri chiave dell'organizzazione di supporto potrebbero voler partecipare al programma di adozione iniziale. Incoraggiare l'uso delle Teams nei propri scenari. È possibile eseguire l'onboarding di base del prodotto usando le risorse di formazione online.  
 
 - [Fondazioni - Componenti di base di Microsoft Teams](https://youtu.be/V6B4KraD-FM)
 - [Risoluzione dei Teams](https://youtu.be/0KNh9KNpXcA)

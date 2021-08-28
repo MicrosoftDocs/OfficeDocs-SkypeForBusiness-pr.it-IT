@@ -9,19 +9,19 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ab748733-6bad-4c93-8dda-db8d5271653d
 description: Preparare e implementare la disabilitazione di TLS 1.0 e 1.1 negli ambienti.
-ms.openlocfilehash: 9bb737466595420770c4374d7d1b76bcc0319e38d188f550fb284b686df7e19f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f10aae3e85e7bcc00aceaf7acf9f22d57e921aa2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337774"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608083"
 ---
 # <a name="disable-tls-1011-in-skype-for-business-server-2015"></a>Disabilitare TLS 1.0/1.1 in Skype for Business Server 2015
 
-Questo articolo consente di preparare e implementare la disabilitazione di TLS 1.0 e 1.1 negli ambienti. Questo processo richiede una pianificazione e una preparazione approfondite. Esaminare attentamente tutte le informazioni contenute in questo articolo durante la pianificazione della disabilitazione di TLS 1.0 e 1.1 per l'organizzazione. Esistono molte dipendenze esterne e condizioni di connettività che potrebbero essere influenzate dalla disabilitazione di TLS 1.0/1.1, pertanto è garantita una pianificazione e un testing approfonditi.
+Questo articolo consente di preparare e implementare la disabilitazione di TLS 1.0 e 1.1 negli ambienti. Questo processo richiede una pianificazione e una preparazione approfondite. Esaminare attentamente tutte le informazioni contenute in questo articolo durante la pianificazione della disabilitazione di TLS 1.0 e 1.1 per l'organizzazione. Esistono molte dipendenze esterne e condizioni di connettività che potrebbero essere influenzate dalla disabilitazione di TLS 1.0/1.1, quindi è garantita una pianificazione e un testing approfonditi.
 
 - [Background e ambito](#background-and-scope)
 - [Prerequisiti e processo](#prerequisites-and-process)
@@ -31,21 +31,21 @@ Questo articolo consente di preparare e implementare la disabilitazione di TLS 1
 
 I driver principali per fornire TLS 1.0 e 1.1 disabilitano il supporto per Skype for Business Server in locale sono i requisiti del Consiglio degli standard di sicurezza PCI (Payment Card Industry) e degli standard federali per l'elaborazione delle informazioni. Altre informazioni sui requisiti PCI sono disponibili [qui.](https://blog.pcisecuritystandards.org/are-you-ready-for-30-june-2018-sayin-goodbye-to-ssl-early-tls)  Microsoft non può fornire indicazioni sul fatto che l'organizzazione sia o meno necessaria per soddisfare questi o altri requisiti. È necessario determinare se è necessario disabilitare TLS 1.0 e/o 1.1 negli ambienti.
 
-Microsoft ha prodotto un white paper su TLS disponibile qui [e](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)si consiglia anche la lettura in background disponibile in questo blog [Exchange .](https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/)
+Microsoft ha prodotto un white paper su TLS disponibile qui [e](https://cloudblogs.microsoft.com/microsoftsecure/2017/06/20/tls-1-2-support-at-microsoft/)consigliamo anche la lettura in background disponibile in questo blog [Exchange .](https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/)
 
 ## <a name="supportability-scope"></a>Ambito di supporto
 
-*Ambito* si riferisce ai limiti di supportabilità. *Completamente testato e supportato* significa che supportiamo e abbiamo testato la disabilitazione di TLS 1.0 e 1.1 per le versioni del prodotto elencate. *Attualmente in fase di* indagine significa solo questo; stiamo attivamente esaminando l'applicazione di questi prodotti nell'ambito del supporto della disabilitazione TLS. *Fuori ambito* significa che queste versioni del prodotto non supportano la disabilitazione di TLS 1.0 o 1.1 e non funzioneranno, con le eccezioni notate.
+*Ambito* si riferisce ai limiti di supportabilità. *Completamente testato e supportato* significa che supportiamo e abbiamo testato la disabilitazione di TLS 1.0 e 1.1 per le versioni del prodotto elencate. *Attualmente in fase di* indagine significa solo questo; stiamo attivamente esaminando l'applicazione di questi prodotti nell'ambito del supporto della disabilitazione TLS. *Fuori ambito significa* che queste versioni del prodotto non supportano la disabilitazione di TLS 1.0 o 1.1 e non funzioneranno, con le eccezioni notate.
 
 ### <a name="fully-tested-and-supported-servers"></a>Server completamente testati e supportati
 
 - Skype for Business Server 2019 CU1 17.0.2046.123 (giugno 2019) o versione successiva
-- Skype for Business Server 2015 CU9 6.0.9319.548 (maggio 2019) o versione successiva su Windows Server 2012 (con aggiornamento [3140245](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) KB o sostituito), 2012 R2 o 2016.
+- Skype for Business Server 2015 CU9 6.0.9319.548 (maggio 2019) o versione successiva su Windows Server 2012 (con aggiornamento [3140245](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) KB o di superamento), 2012 R2 o 2016.
 - Aggiornamento sul posto Skype for Business Server 2015, con CU9 6.0.9319.548 (maggio 2019) o versione successiva in Windows Server 2008 R2, 2012 (con aggiornamento [3140245](https://support.microsoft.com/help/3140245/update-to-enable-tls-1-1-and-tls-1-2-as-a-default-secure-protocols-in) KB o sostituito) o 2012 R2.
 - Exchange Connettività e Outlook Web App con Exchange Server 2010 SP3 RU19 o versione successiva, indicazioni [qui](https://blogs.technet.microsoft.com/exchange/2018/01/26/exchange-server-tls-guidance-part-1-getting-ready-for-tls-1-2/)
 - Survivable Branch Appliance (SBA) con Skype for Business Server 2015 CU6 HF2 o versione successiva (confermare al fornitore di aver creato il pacchetto degli aggiornamenti appropriati e di essere stati resi disponibili per il dispositivo)
 - Survivable Branch Server (SBS) con Skype for Business Server 2015 CU6 HF2 o versione successiva
-- Solo ruolo **Edge** di Lync Server 2013, perché il ruolo Edge non ha una dipendenza da Windows Fabric 1.0.
+- Solo ruolo **Edge** di Lync Server 2013, perché il ruolo Edge non dipende da Windows Fabric 1.0.
 
 ### <a name="fully-tested-and-supported-clients"></a>Client completamente testati e supportati
 
@@ -55,9 +55,9 @@ Microsoft ha prodotto un white paper su TLS disponibile qui [e](https://cloudblo
     - Mensile e Semi-Annual mirato, 16 \. 0 \. 9126 \. 2152 o superiore
     - Semi-Annual e Deferred Channel, 16 \. 0 \. 8431 \. 2242 o versione successiva
 - Skype for Business mac 16.15 o versione successiva
-- Skype for Business per iOS e Android 6.19 o versioni successive
+- Skype for Business per iOS e Android 6.19 o versione successiva
 - Microsoft Teams Rooms (precedentemente noto come Skype Room System V2 SRS V2) 4.0.64.0 (dicembre 2018) o versione successiva
-- Surface Hub per l'edizione del team basata su KB4499162 (maggio 2019, OS Build 15063.1835) o versione successiva
+- Surface Hub aggiornamento per l'edizione del team basata su KB4499162 (maggio 2019, OS Build 15063.1835) o versione successiva
 - Skype Web App 2015 CU6 HF2 o versione successiva (fornito con server)
 
 ### <a name="currently-being-investigated"></a>Attualmente in fase di analisi
@@ -89,7 +89,7 @@ Lync Server 2013 dipende dalla Windows Fabric versione 1.0.  Nella fase di proge
 
 Purtroppo, Windows Fabric 1.0 **non supporta TLS 1.2.  Tuttavia, verrà aggiornato Lync Server 2013 per l'utilizzo con TLS 1.2.** Questo sarà disponibile nel prossimo aggiornamento cumulativo per Lync Server 2013.  Microsoft fornisce il supporto di TLS 1.2 per consentire la coesistenza, la migrazione, la federazione e gli scenari ibridi.
 
-Se l'organizzazione deve disabilitare TLS 1.0 e 1.1 e attualmente si utilizza Lync Server 2013, è consigliabile iniziare il processo di pianificazione, con la possibilità di eseguire l'aggiornamento sul posto o la migrazione side-by-side (nuovi pool, spostare utenti) a Skype for Business Server 2015 o versioni successive.  In caso di problemi, è possibile accelerare la migrazione Skype for Business Online.
+Se l'organizzazione deve disabilitare TLS 1.0 e 1.1 e attualmente si utilizza Lync Server 2013, è consigliabile iniziare il processo di pianificazione, con la possibilità di eseguire l'aggiornamento sul posto o la migrazione side-by-side (nuovi pool, spostare utenti) a Skype for Business Server 2015 o versioni successive.  In caso di problemi, è possibile accelerare la migrazione a Skype for Business Online.
 
 #### <a name="call-quality-dashboard"></a>Dashboard Qualità della chiamata
 
@@ -97,7 +97,7 @@ Il dashboard di qualità delle chiamate locali attualmente dipende da TLS 1.0 du
 
 #### <a name="skype-for-business-sdn-manager"></a>Skype for Business SDN Manager
 
-Skype for Business SDN Manager usando SQL database ha una dipendenza da TLS 1.0 durante la nuova installazione. Se si prevede di installare Skype for Business SDN Manager utilizzando SQL un database e disabilitare anche TLS 1.0, è consigliabile completare prima Skype for Business SDN Manager e quindi procedere con la disabilitazione di TLS 1.0. Se TLS 1.0 è stato disabilitato prima dell'installazione, è consigliabile attivare temporaneamente TLS 1.0 nel Skype for Business server back-end SQL Server che verrà utilizzato per ospitare il database di SQL SDN Manager.
+Skype for Business SDN Manager usando SQL database ha una dipendenza da TLS 1.0 durante la nuova installazione. Se si prevede di installare Skype for Business SDN Manager usando SQL un database e disabilitare anche TLS 1.0, è consigliabile completare prima Skype for Business SDN Manager e quindi procedere con la disabilitazione di TLS 1.0. Se TLS 1.0 è stato disabilitato prima dell'installazione, è necessario attivare temporaneamente TLS 1.0 nel server back-end SQL Server che verrà utilizzato per ospitare il database di Skype for Business SDN Manager SQL.
 
 #### <a name="third-party-devices"></a>Dispositivi di terze parti
 
@@ -107,19 +107,19 @@ Nei dispositivi di terze parti, ad esempio telefoni 3PIP, videoconferenze, proxy
 
 È necessario pianificare attentamente e considerare l'impatto della disabilitazione di TLS 1.0/1.1 sui server perimetrali.  Dopo aver disabilitato TLS 1.0 e 1.1, è possibile che altre organizzazioni non siano più in grado di eseguire la federazione con l'organizzazione.
 
-È possibile scegliere di mantenere TLS 1.0/1.1 abilitato nei server Perimetrali per mantenere la compatibilità con le versioni precedenti con sistemi esterni non patch (SfB 2015, Lync 2013) o versioni precedenti (2010).
+È possibile scegliere di mantenere TLS 1.0/1.1 abilitato nei server perimetrali per mantenere la compatibilità con le versioni precedenti con sistemi esterni non patch (SfB 2015, Lync 2013) o versioni precedenti (2010).
 
-Microsoft non può fornire consigli o consigli sul fatto che la rete perimetrale (o qualsiasi rete) sia o meno in base agli standard PCI; che deve essere determinato dalla singola società.
+Microsoft non può fornire consigli o suggerimenti sul fatto che la rete perimetrale (o qualsiasi rete) sia o meno in base agli standard PCI; che deve essere determinato dalla singola società.
 
 Skype for Business Online è in grado di tls 1.2 oggi, quindi non è previsto alcun impatto sulla federazione/ibrida con Online.
 
-PIC (Public IM Connectivity) per Skype consumer: non ci si aspetta che la disabilitazione di TLS 1.0/1.1 influisca sulla [Skype;](../../deploy/deploy-skype-connectivity.md) Microsoft PIC Gateways are already TLS 1.2 capable.
+PIC (Public IM Connectivity) per Skype consumer: non ci si aspetta che la disabilitazione di TLS 1.0/1.1 influisca sulla connettività [Skype ;](../../deploy/deploy-skype-connectivity.md) Microsoft PIC Gateways are already TLS 1.2 capable.
 
 ## <a name="prerequisites-and-process"></a>Prerequisiti e processo
 
-Tranne dove indicato in precedenza, una volta che TLS 1.0 e 1.1 sono disabilitati i server fuori ambito, i client e i dispositivi funzioneranno più a lungo correttamente o affatto. Ciò potrebbe significare che è necessario sospendere e attendere le indicazioni aggiornate da Microsoft. Dopo aver soddisfatto tutti i requisiti e avere un piano per risolvere le lacune, procedere.
+Tranne dove indicato in precedenza, una volta che TLS 1.0 e 1.1 sono disabilitati i server fuori ambito, i client e i dispositivi funzioneranno più a lungo correttamente o affatto. Ciò potrebbe significare che è necessario sospendere e attendere le indicazioni aggiornate da Microsoft. Una volta soddisfatti di soddisfare tutti i requisiti e avere un piano per risolvere le lacune, procedere.
 
-A un livello elevato, mentre Skype for Business Server 2019 è pronto per la procedura di installazione, Skype for Business Server 2015 richiederà l'installazione di CU9, l'applicazione di aggiornamenti prerequisiti a .NET e SQL, la distribuzione delle chiavi del Registro di sistema prerequisiti e infine un round separato di aggiornamenti della configurazione del sistema operativo (ad esempio, disabilitando TLS 1.0 e 1.1 tramite l'importazione di file del Registro di sistema). È fondamentale completare l'installazione di tutti i prerequisiti, incluso Skype for Business Server 2015 CU6 HF2, prima di disabilitare TLS 1.0 e 1.1 in qualsiasi server dell'ambiente. Ogni Skype for Business server, inclusi i ruoli Edge e SQL back-end, richiede gli aggiornamenti. Assicurarsi inoltre che tutti i client supportati (nell'ambito) siano stati aggiornati alle versioni minime richieste. Non dimenticare di aggiornare anche le workstation di gestione.
+A un livello elevato, mentre Skype for Business Server 2019 è pronto per la procedura di installazione, Skype for Business Server 2015 richiederà l'installazione di CU9, l'applicazione di aggiornamenti prerequisiti a .NET e SQL, la distribuzione delle chiavi del Registro di sistema prerequisiti e infine un round separato di aggiornamenti della configurazione del sistema operativo (ad esempio, disabilitando TLS 1.0 e 1.1 tramite l'importazione di file del Registro di sistema). È fondamentale completare l'installazione di tutti i prerequisiti, incluso Skype for Business Server 2015 CU6 HF2, prima di disabilitare TLS 1.0 e 1.1 in qualsiasi server dell'ambiente. Ogni Skype for Business server, inclusi i ruoli Edge e SQL back-end, richiede gli aggiornamenti. Assicurarsi inoltre che tutti i client supportati (nell'ambito) siano stati aggiornati alle versioni minime necessarie. Non dimenticare di aggiornare anche le workstation di gestione.
 
 Vogliamo seguire il consueto ordine di operazioni di "inside out" per l'aggiornamento Skype for Business server. Trattare i pool di server Director, chat persistente e pool associati come si farebbe normalmente. L'ordine e i metodi per [l'aggiornamento sono descritti qui](topology.md) e [qui](https://support.microsoft.com/help/3061064/updates-for-skype-for-business-server-2015).
 
@@ -143,7 +143,7 @@ Prima di iniziare a disabilitare TLS 1.0 e 1.1 a livello di sistema operativo ne
 
 - Skype for Business Server 2015 CU9 6.0.9319.548 (maggio 2019) o versione successiva
 - [.NET Framework 4.7](https://www.microsoft.com/download/details.aspx?id=55167) o versione successiva con SchUseStrongCrypto abilitato nel Registro di sistema (fornito di seguito)
-- SQL deve essere aggiornato in tutti i server Skype for Business 2015 e back-end. Aggiornare edizione Enterprise pool SQL back-end, quindi le rispettive FE. 
+- SQL deve essere aggiornato in tutti i server Skype for Business 2015 e back-end. Aggiornare edizione Enterprise pool SQL back-end, quindi le rispettive FE.Update edizione Enterprise Pool SQL first backends, then their respective FEs. 
     - [SQL Server 2014 SP1 + CU5](https://support.microsoft.com/help/3130926)o versione successiva / SQL Server 2012 SP2 + CU16 o versione successiva / [SQL Server 2014 RTM + CU12](https://support.microsoft.com/help/3130923/cumulative-update-12-for-sql-server-2014)o versione successiva / SQL Server 2014 SP2
      - [SQL Server Native Client per SQL Server 2012](https://www.microsoft.com/download/details.aspx?id=50402)
      - [Driver Microsoft ODBC 11 per SQL Server](https://www.microsoft.com/download/details.aspx?id=36434)o versione successiva
@@ -158,7 +158,7 @@ Prima di iniziare a disabilitare TLS 1.0 e 1.1 a livello di sistema operativo ne
     3. Convalidare le funzionalità del prodotto nella distribuzione prima di procedere con altre modifiche.
 2. Scaricare il programma di installazione offline di .NET 4.7. 
     1. Riferimenti: [https://www.microsoft.com/download/details.aspx?id=55167](https://www.microsoft.com/download/details.aspx?id=55167)
-    2. Verificare che Skype for Business Server 2015 siano arrestati nel Front End Server.
+    2. Verificare che Skype for Business Server 2015 i servizi siano arrestati nel front-end server.
     3. Riferimenti: [https://support.microsoft.com/help/3061064/updates-for-skype-for-business-server-2015](https://support.microsoft.com/help/3061064/updates-for-skype-for-business-server-2015)
     4. Ex (edizione Standard):```Stop-CsWindowsService```
     5. Ex (edizione Enterprise):```Invoke-CsComputerFailover```
@@ -168,8 +168,8 @@ Prima di iniziare a disabilitare TLS 1.0 e 1.1 a livello di sistema operativo ne
     1. Riferimenti: [https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server)
     2. Scaricare SQL 2014 SP2 
         - Riferimenti: [https://www.microsoft.com/download/details.aspx?id=53168](https://www.microsoft.com/download/details.aspx?id=53168)
-    3. Copiare il supporto di installazione in una cartella sul server (Ad esempio: C:\01_2014SqlSp2)
-    4. Verificare Skype for Business Server servizi 2015 siano arrestati nel Front End Server 
+    3. Copiare il supporto di installazione in una cartella nel server (Ad esempio: C:\01_2014SqlSp2)
+    4. Verificare che Skype for Business Server 2015 i servizi siano arrestati nel Front End Server 
         - Ex (edizione Standard):```Stop-CsWindowsService```
         - Ex (edizione Enterprise):```Invoke-CsComputerFailover```
     5. Aprire un prompt dei comandi di amministrazione e aggiornare tutti i componenti e le istanze installati 
@@ -177,17 +177,17 @@ Prima di iniziare a disabilitare TLS 1.0 e 1.1 a livello di sistema operativo ne
 4. Aggiorna SQL Native Client. 
     1. Riferimento: [https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server) .
     2. Scarica da [https://www.microsoft.com/download/details.aspx?id=50402](https://www.microsoft.com/download/details.aspx?id=50402)
-    3. Verificare Skype for Business Server 2015 i servizi siano arrestati nel Front End Server. 
+    3. Verificare Skype for Business Server i servizi 2015 siano arrestati nel front-end server. 
         - Ex (edizione Standard):```Stop-CsWindowsServices```
         - Ex (edizione Enterprise):```Invoke-CsComputerFailover```
-    4. Arrestare l'SQL delle istanze installate 
+    4. Arrestare l SQL esezione delle istanze installate 
         - Ex: ```Get-Service 'MSSQL$RTCLOCAL' | Stop-Service```
         - Ex: ```Get-Service 'MSSQL$LYNCLOCAL' | Stop-Service```
         - Ex (solo edizione Standard):```Get-Service 'MSSQL$RTC' | Stop-Service```
     5. Installare l'aggiornamento.
 5. Aggiornare odbc Driver 11 per SQL Server includere il supporto per TLS 1.2 (KB [3135244](https://support.microsoft.com/help/3135244/tls-1-2-support-for-microsoft-sql-server)).
-    1. Scaricare [odbc Driver 11 per SQL Server - Windows](https://www.microsoft.com/download/confirmation.aspx?id=36434).
-    2. Verificare che Skype for Business Server 2015 siano arrestati nel Front End Server.
+    1. Scaricare [ODBC Driver 11 per SQL Server - Windows](https://www.microsoft.com/download/confirmation.aspx?id=36434).
+    2. Verificare che Skype for Business Server 2015 i servizi siano arrestati nel front-end server.
         - Esempio (edizione Standard):```Stop-CsWindowsService```
         - Esempio (edizione Enterprise):```Invoke-CsComputerFailover```
     3. Installare l'aggiornamento.
@@ -195,7 +195,7 @@ Prima di iniziare a disabilitare TLS 1.0 e 1.1 a livello di sistema operativo ne
 
 ### <a name="pre-requisite-registry-keys"></a>Chiavi del Registro di sistema prerequisiti
 
-Copiare/incollare il test seguente Blocco note e rinominare TLSPreReq.reg o un nome di propria scelta, quindi importare:
+Copiare/incollare il test seguente in Blocco note e rinominare TLSPreReq.reg o un nome di propria scelta, quindi importare:
 
 ```console
 Windows Registry Editor Version 5.00
@@ -441,7 +441,7 @@ Windows Registry Editor Version 5.00
 
 Importare il file reg in ogni server in cui si desidera disabilitare TLS 1.0 e 1.1. Riavviare il server. Una volta che i servizi sono tornati online, passare al server successivo. L'approccio per edizione Enterprise pool è lo stesso da adottare per qualsiasi aggiornamento del sistema operativo.
 
-You may have noticed we are doing more than just disabling TLS 1.0 and 1.1 here. Stiamo supportando il riordinamento di Cipher Suite (come mostrato sopra) e la disabilitazione di alcune vecchie crittografia deboli. Questa è la prima volta che sono state supportate ufficialmente queste modifiche a SCHANNEL e Crypto API su Skype for Business Server ed è importante notare che queste modifiche sono le uniche supportate e testate in questo momento. Potremmo considerare configurazioni aggiuntive in futuro, ma per il momento, non modificare il file di importazione del Registro di sistema nell'implementazione.
+You may have noticed we are doing more than just disabling TLS 1.0 and 1.1 here. Stiamo supportando il riordinamento di Cipher Suite (come mostrato in precedenza) e la disabilitazione di alcune vecchie crittografia deboli. Questa è la prima volta che abbiamo supportato ufficialmente queste modifiche a SCHANNEL e Crypto API su Skype for Business Server ed è importante notare che queste modifiche sono le uniche supportate e testate in questo momento. Potremmo considerare configurazioni aggiuntive in futuro, ma per il momento, non modificare il file di importazione del Registro di sistema nell'implementazione.
 
 ### <a name="validate-that-workloads-are-functioning-as-expected"></a>Verificare che i carichi di lavoro funzionino come previsto
 
@@ -470,13 +470,13 @@ Poiché alcuni prerequisiti di dipendenza sono necessari per supportare TLS 1.2 
 
 **Distribuzione di nuovi edizione Standard Server o pool edizione Enterprise dopo che TLS 1.0 e 1.1 sono stati disabilitati nell'ambiente.**
 
-**Opzione 1:** Utilizzare [SmartSetup](../../deploy/install/install-skype-for-business-server.md). Tieni presente che microsoft sta aggiornando SmartSetup per supportare i file binari SQL aggiornati in un aggiornamento cumulativo futuro e aggiornerà questo articolo in futuro.
+**Opzione 1:** Utilizzare [SmartSetup](../../deploy/install/install-skype-for-business-server.md). Tieni presente che microsoft sta aggiornando SmartSetup per supportare i file SQL binari aggiornati in un aggiornamento cumulativo futuro e aggiornerà questo articolo in futuro.
 
 **Opzione 2:** Preinstallare istanze SQL locale (RTCLOCAL e LYNCLOCAL)
 
 1. Scaricare e copiare SQL Express 2014 SP2 (SQLEXPR_x64.exe) nella cartella locale in FE. Supponiamo che il percorso della cartella <SQL_FOLDER_PATH>.
 2. Avviare PowerShell o il prompt dei comandi e passare a <SQL_FOLDER_PATH>.
-3. Creare l'istanza SQL RTCLOCAL eseguendo il comando seguente. Attendere il SQLEXPR_x64.exe termine prima di procedere:Wait until SQLEXPR_x64.exe finishes before proceeding:
+3. Creare l'istanza SQL RTCLOCAL eseguendo il comando seguente. Attendere il SQLEXPR_x64.exe termine prima di procedere:
 
     SQLEXPR_x64.exe /Q /IACCEPTSQLSERVERLICENSETERMS /UPDATEENABLED=0 /HIDECONSOLE /ACTION=Install /FEATURES=SQLEngine,Tools /INSTANCENAME=RTCLOCAL /TCPENABLED=1 /SQLSVCACCOUNT="NT AUTHORITY\NetworkService" /SQLSYSADMINACCOUNTS="Builtin\Administrators" /BROWSERSVCSTARTUPTYPE="Automatic" /AGTSVCACCOUNT="NTAUTHORITY\NetworkService" /SQLSVCSTARTUPTYPE=Automati
 1. Creare l'istanza SQL LYNCLOCAL eseguendo il comando seguente. Attendere il SQLEXPR_x64.exe termine prima di procedere al passaggio successivo:
@@ -493,7 +493,7 @@ Poiché alcuni prerequisiti di dipendenza sono necessari per supportare TLS 1.2 
       - Download: https://www.microsoft.com/download/details.aspx?id=55167 . 
       - Riferimento: [Software che deve essere installato prima di una Skype for Business Server 2015](../../plan-your-deployment/requirements-for-your-environment/server-requirements.md#software-that-should-be-installed-before-a-skype-for-business-server-2015-deployment)
 3. Copia file/cartelle ISO: 
-    - Con l Skype for Business Server ISO 2015 collegato, aprire la directory radice dell'unità collegata come (Ad esempio: D: \) in Esplora file.
+    - Con il Skype for Business Server ISO 2015 collegato, aprire la directory radice dell'unità collegata come (Ad esempio: D: \) in Esplora file.
     - Copiare tutte le cartelle e i file in una cartella su un disco locale (ad esempio: C:\SkypeForBusiness2015ISO).
     - **Nota:** Prima di installare i componenti, alcuni file dovranno essere aggiornati per il supporto di TLS 1.2.
 4. Sostituisci pacchetti MSI/EXE: 
@@ -526,7 +526,7 @@ Poiché alcuni prerequisiti di dipendenza sono necessari per supportare TLS 1.2 
      ![Lo stato dell'attività viene visualizzato come Completato](../../media/local-configuration-task-completed.png)
      - Fare clic su **Fine**.
 9. Configurare o rimuovere Skype for Business Server componenti aggiuntivi (Passaggio 2):
-    - Aprire la Distribuzione guidata, fare clic su Installa  o **aggiorna Skype for Business Server Sistema** e fare clic su Esegui al passaggio 2: configurare o rimuovere Skype for Business Server componenti
+    - Aprire la Distribuzione guidata, fare clic su Installa  o **aggiorna Skype for Business Server Sistema** e fare clic su Esegui al passaggio 2: Configurare o rimuovere Skype for Business Server componenti
     - Fare **clic su** Avanti nella finestra di dialogo Skype for Business Server componenti aggiuntivi.
     ![la finestra Configura Skype for Business Server componenti](../../media/set-up-skype-for-business-server-components-window.png)
     - Esaminare il registro utilizzando Visualizza registro e verificare che l'installazione sia stata completata senza problemi. 
