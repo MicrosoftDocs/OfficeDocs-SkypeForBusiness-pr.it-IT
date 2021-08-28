@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: svemu
 audience: admin
 description: L'amministratore può imparare a usare Network Planner per determinare i requisiti di rete per Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 13cccda1c51e1706cc83b83667dff6e2f00e535e4afd1fd50ea869633199c4d3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 55fc461a2dd005d454a2b964bb3774c5ac17dbc1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332608"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594610"
 ---
 # <a name="use-the-network-planner-for-microsoft-teams"></a>Usare Pianificazione reti per Microsoft Teams
 
@@ -37,14 +37,14 @@ Network Planner è un nuovo strumento disponibile nell'Teams di amministrazione.
 
 Network Planner consente di:
 
-- Creare rappresentazioni dell'organizzazione usando i siti e le persone consigliate da Microsoft (office worker, remote worker e Teams room system).
+- Creare rappresentazioni dell'organizzazione usando i siti e le persone consigliate da Microsoft (office worker, lavoratori remoti e Teams room system).
 
     > [!NOTE]
-    > Le persone consigliate sono state sviluppate in base ai dati Teams scenari di utilizzo ottimali e ai modelli di utilizzo tipici. È tuttavia possibile creare fino a tre persone personalizzate oltre alle tre persone consigliate.
+    > Le persone consigliate sono state sviluppate in base ai dati Teams scenari di utilizzo ottimali e ai modelli di utilizzo tipici. Tuttavia, è possibile creare fino a tre persone personalizzate oltre alle tre persone consigliate.
 
-- Generare report e calcolare i requisiti di larghezza di banda Teams utilizzo.
+- Generare report e calcolare i requisiti di larghezza di banda per Teams utilizzo.
 
-Per usare Pianificazione reti, è necessario essere un amministratore globale, Teams amministratore o Teams Communications Administrator.
+Per usare Pianificazione reti, è necessario essere un amministratore globale, un Teams amministratore o un Teams Communications Administrator.
 
 ## <a name="create-a-custom-persona"></a>Creare una persona personalizzata
 

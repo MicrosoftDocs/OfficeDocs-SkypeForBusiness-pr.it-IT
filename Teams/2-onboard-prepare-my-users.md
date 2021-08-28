@@ -12,18 +12,18 @@ ms.reviewer: rowille
 description: Creare un piano per guidare l'adozione degli utenti definendo gli obiettivi, comprendendo l'aspetto dell'accettazione e fornendo formazione e supporto.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2a98c2b847844de38608782c8feabf754ed25187d5cf4f041bcdf14a8dda8d56
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 30a844f0ecd619e609a61500ac1b845cfbbad553
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322878"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623388"
 ---
 # <a name="prepare-my-users"></a>Preparare gli utenti
 
@@ -48,11 +48,11 @@ L'impostazione della visione del progetto consente ai principali stakeholder di 
 
 L'immagine seguente è un esempio di rendiconto visivo-valore per un cliente che esegue l'aggiornamento da Skype for Business a Teams.
 
-![Tabella a due colonne con vision e valore](media/prepare-my-users-new-image1.png "Tabella a due colonne con Vision: perché lo stiamo facendo? (livello dell'organizzazione) a sinistra e Valore : cosa c'è in esso? (livello utente) a destra")
+![Tabella a due colonne con vision e valore](media/prepare-my-users-new-image1.png "Tabella a due colonne con Vision: perché lo stiamo facendo? (livello dell'organizzazione) a sinistra e Valore: cosa c'è in esso? (livello utente) a destra")
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Hai articolato il vantaggio e il valore per gli utenti in modo da ottenere il loro buy-in per questa nuova soluzione?</li></ul></td></tr>
-<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Creare le dichiarazioni di visione e valore per l'ambito del progetto corrente, assicurando che siano allineate con gli obiettivi.</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Creare le dichiarazioni di visione e valore per l'ambito del progetto corrente, assicurando che siano allineate ai propri obiettivi.</li></ul></td></tr>
 </table>
 
 <!--ENDOFSECTION-->
@@ -80,7 +80,7 @@ La conformità dell'organizzazione consente di determinare quanto gli utenti pot
 
 
 > [!TIP]
-> I primi utenti sono ottimi candidati per la distribuzione pilota e anche per le iniziative dei campioni. Se si ha una percentuale elevata di ritardo, è necessario concentrarsi sulla messaggistica di valore per tali utenti e sulla gestione delle mani per aiutarli a salire a bordo con la modifica.
+> I primi utenti sono ottimi candidati per la distribuzione pilota e anche per le iniziative dei campioni. Se si ha una grande percentuale di ritardo, è necessario concentrarsi sulla messaggistica di valore per tali utenti e sulla gestione delle mani per aiutarli a salire a bordo con la modifica.
 
 ### <a name="what-percent-of-users-fall-into-each-competency"></a>Quale percentuale di utenti rientra in ogni competenza?
 
@@ -92,7 +92,7 @@ La conformità dell'organizzazione consente di determinare quanto gli utenti pot
 
  
 > [!TIP]
-> Learning non è adatta a tutte le dimensioni. Comprendendo come gli utenti apprendono al meglio, è possibile creare un programma di formazione efficace per accelerarne l'apprendimento. Se molti utenti sono motivati da se stessi, il collegamento a video e guide utente potrebbe essere sufficiente. Per coloro che hanno bisogno di un'attenzione specializzata, assicurati di pianificare una volta sola o di arruolare i tuoi campioni per aiutare questi utenti a migliorare &mdash; la curva di apprendimento.
+> Learning non è adatta a tutti. Comprendendo come gli utenti apprendono al meglio, è possibile creare un programma di formazione efficace per accelerarne l'apprendimento. Se molti utenti sono motivati da se stessi, il collegamento a video e guide utente potrebbe essere sufficiente. Per coloro che hanno bisogno di un'attenzione specializzata, assicurati di pianificare una volta sola o di arruolare i tuoi campioni per aiutare questi utenti a migliorare &mdash; la curva di apprendimento.
 
 <!--ENDOFSECTION-->
 
@@ -130,7 +130,7 @@ L'immagine seguente è un esempio di tabella persona.
 
 ![Tabella Dei valori che elenca i dettagli della persona](media/prepare-my-users-image2.png "Tabella che elenca le persone con i ruoli comuni e le dipendenze delle soluzioni di comunicazione e collaborazione. La persona dirigente è evidenziata con dettagli sul profilo (giorno della vita) e sulle caratteristiche, i dispositivi e la formazione di cui un dirigente ha bisogno.")
 
-Per ogni caso di utilizzo, discutere quanto segue con il team di progetto:
+Per ogni caso d'uso, discutere quanto segue con il team di progetto:
 
 -   Quali sono le caratteristiche principali per questo caso/scenario di utilizzo?
 
@@ -148,7 +148,7 @@ Per esempi di casi d'uso, visitare la [FastTrack Productivity Library.](https://
 Dopo aver compreso chi sono gli utenti e come funzionano all'interno della nuova soluzione, è possibile progettare il piano di conformità. Il piano di conformità degli utenti include il modo in cui comunicare, formare e supportare gli utenti mentre si pilota, si a bordo e si gestisce la nuova soluzione. Come si è scoperto nei passaggi precedenti di questo articolo, la conformità non è adatta a tutte le dimensioni. Iniziare con un piano di consapevolezza e formazione a vasta portata, che incorpora il valore definito all'inizio di questo processo. È quindi possibile personalizzare la messaggistica, la formazione e il supporto in base alle persone o alle coorti definite, in base alle esigenze. Il piano personalizzato consentirà agli utenti di relazionarsi più rapidamente con la nuova soluzione, dimostrando al contempo di comprenderne le esigenze, facilitando la transizione.
 
 <table>
-<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Quale piano di conformità è possibile offrire per facilitare e accelerare l'adozione della nuova soluzione?</li><li>Si hanno le risorse giuste per la consapevolezza, la formazione e il supporto in linea con la capacità degli utenti di gestire il cambiamento e le persone definite dall'utente?</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Quale piano di conformità è possibile offrire per facilitare e accelerare l'adozione della nuova soluzione?</li><li>Si hanno le giuste risorse di consapevolezza, formazione e supporto in linea con la capacità degli utenti di gestire il cambiamento e le persone definite dall'utente?</li></ul></td></tr>
 <tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Usare l'elenco nella sezione seguente per generare idee per il piano di conformità. Selezionare quelli più pertinenti o aggiungene uno personalizzato per progettare un piano &mdash; &mdash; di conformità ottimizzato per l'organizzazione.</li></ul></td></tr>
 </table>
 

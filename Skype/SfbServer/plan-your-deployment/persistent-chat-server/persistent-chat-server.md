@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9e652487-a123-40c0-ae61-47fb8ecc4a20
 description: 'Riepilogo: leggere questo argomento per informazioni su come pianificare il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: db641945fe9dd75e7ec55241c4dc8cb7fac2279fa26fa9396f7b537ac7876c66
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e4bce3145c3f2e3974c2f57d75afbe297ce8d304
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351326"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623558"
 ---
 # <a name="plan-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificare il server Chat persistente in Skype for Business Server 2015
  
@@ -36,10 +36,10 @@ Il server Chat persistente può contribuire a migliorare le comunicazioni all'in
     
 - Riduzione del sovraccarico delle informazioni
     
-- Seguire le normative di conformità distribuendo facoltativamente il servizio conformità chat persistente
+- Seguire le normative di conformità distribuendo facoltativamente il servizio conformità di Persistent Chat
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
     
 ## <a name="persistent-chat-server-high-level-architecture"></a>Architettura di alto livello del server Chat persistente
 
@@ -47,11 +47,11 @@ Nel diagramma seguente viene mostrata una visualizzazione di alto livello dell'a
   
 ![Architettura di alto livello del server Persistent Chat](../../media/0344f6e2-0c6d-4391-b4b3-ec31062b1576.png)
   
-Persistent Chat è costituito da un ruolo del server front-end che fornisce i servizi di Persistent Chat e da un componente SQL database back-end. Sia i componenti front-end che back-end sono inclusi in un pool di Persistent Chat dedicato. Ogni computer che ospita il server Chat persistente deve avere accesso a una topologia Skype for Business Server 2015 esistente. In questo diagramma è presente un pool di server Chat persistente (A), che dipende dal pool A Skype for Business Server per il routing dei messaggi.
+Persistent Chat è costituito da un ruolo del server front-end che fornisce i servizi di Persistent Chat e da un componente di database SQL back-end. Sia i componenti front-end che back-end sono inclusi in un pool di Persistent Chat dedicato. Ogni computer che ospita il server Chat persistente deve avere accesso a una topologia Skype for Business Server 2015 esistente. In questo diagramma è presente un pool di server Chat persistente (A), che dipende dal pool Skype for Business Server A per il routing dei messaggi.
   
 È possibile distribuire uno o più pool di server Chat persistente, ognuno con un massimo di quattro server Chat persistente attivi che supportano fino a 80.000 utenti simultanei.
   
-Skype for Business Server 2015 comunica con il servizio Persistent Chat utilizzando il protocollo SIP (Session Initiation Protocol) per la registrazione e il protocollo XCCOS (Extensible Chat Communication Over SIP) per le chat. 
+Skype for Business Server 2015 comunica con il servizio Persistent Chat utilizzando il protocollo SIP (Session Initiation Protocol) per la registrazione e il protocollo XCCOS (Extensible Chat Communication Over SIP) per la chat. 
   
 ## <a name="persistent-chat-services"></a>Servizi Chat persistente
 
@@ -108,7 +108,7 @@ Se si decide di distribuire il server Chat persistente, sarà necessario determi
 - Ci sono requisiti normativi da rispettare? Se la società si trova in un paese o un'area geografica in cui i dati devono essere conservati all'interno del paese, potrebbe essere necessario distribuire più pool di server Chat persistente, ognuno locale in una specifica area geografica. Una chat room, una categoria o un componente aggiuntivo non si estende su pool, ma appartiene a un solo pool di server Chat persistente. 
     
     > [!NOTE]
-    > La presenza di più pool di server Chat persistente non consente una scalabilità maggiore( è comunque possibile avere solo 80.000 utenti simultanei in tutti i pool di server Chat persistente). Il motivo principale per il supporto di più pool di server Chat persistente è quello di supportare i problemi normativi. 
+    > La presenza di più pool di server Chat persistente non consente una scalabilità maggiore, ovvero è comunque possibile avere solo 80.000 utenti simultanei in tutti i pool di server Chat persistente. Il motivo principale per il supporto di più pool di server Chat persistente è quello di supportare i problemi normativi. 
   
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

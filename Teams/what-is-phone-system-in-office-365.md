@@ -15,31 +15,31 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
 - seo-marvel-apr2020
-description: Questo articolo illustra la tecnologia di Sistema telefonico in Microsoft 365 e Office 365.
-ms.openlocfilehash: e7dd305596468edc224db0f4bff679a7233762e8261164b328c4674df660414d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: In questo articolo verranno trattate le tecnologie Sistema telefonico in Microsoft 365 e Office 365.
+ms.openlocfilehash: c247186cb35a3621bb1a8545cd735f6fac7ce07c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324775"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594348"
 ---
 # <a name="what-is-phone-system"></a>Che cos'è Sistema telefonico?
 
-Un PBX (Private Branch Exchange) è un sistema telefonico all'interno di un'azienda. Sistema telefonico offre funzionalità PBX, ma senza le apparecchiature complesse e costose. 
+Un pbx (Private Branch Exchange) è un sistema telefonico all'interno di un'azienda. Sistema telefonico offre funzionalità PBX, ma senza le apparecchiature complesse e costose. 
 
-Sistema telefonico consente di sostituire il sistema PBX locale esistente con un set di funzionalità disponibili da Microsoft 365 o Office 365 strettamente integrato nell'esperienza cloud. Per altre informazioni sulle funzionalità, vedere Ecco cosa si ottiene con [Sistema telefonico.](here-s-what-you-get-with-phone-system.md)
+Sistema telefonico consente di sostituire il sistema PBX locale esistente con un set di funzionalità fornito da Microsoft 365 o Office 365 strettamente integrato nell'esperienza cloud. Per altre informazioni sulle funzionalità, vedere Ecco cosa si ottiene con [Sistema telefonico.](here-s-what-you-get-with-phone-system.md)
 
 ## <a name="phone-system-technology"></a>Sistema telefonico tecnologia
 
-Sistema telefonico abilita le funzionalità di controllo delle chiamate e PBX nel cloud con Microsoft Teams e Skype for Business Online. 
+Sistema telefonico abilita il controllo delle chiamate e le funzionalità PBX nel cloud con Microsoft Teams e Skype for Business Online. 
   
-Con Sistema telefonico, gli utenti possono usare Teams o Skype for Business Online per effettuare e ricevere chiamate, trasferire chiamate e disattivare o riattivare l'audio delle chiamate. Sistema telefonico utenti possono fare clic su un nome nella rubrica e effettuare Teams o Skype for Business chiamate online a tale persona. Per effettuare e ricevere chiamate, Sistema telefonico utenti possono usare i propri dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Teams e Skype for Business Online. Sistema telefonico amministratori possono gestire le opzioni e le impostazioni delle chiamate dalla stessa console usata per la messaggistica, la collaborazione e così via.
+Con Sistema telefonico, gli utenti possono usare Teams o Skype for Business Online per effettuare e ricevere chiamate, trasferire chiamate e disattivare o riattivare l'audio delle chiamate. Sistema telefonico gli utenti possono fare clic su un nome nella rubrica e effettuare Teams o Skype for Business chiamate online a tale persona. Per effettuare e ricevere chiamate, Sistema telefonico utenti possono usare i propri dispositivi mobili, un auricolare con un portatile o un PC o uno dei molti telefoni IP che funzionano con Teams e Skype for Business Online. Sistema telefonico amministratori possono gestire le opzioni e le impostazioni delle chiamate dalla stessa console usata per la messaggistica, la collaborazione e così via.
   
 Le chiamate tra utenti dell'organizzazione vengono gestite internamente all'interno Sistema telefonico e non passano mai alla rete PSTN (Public Switched Telephone Network). Questo vale per le chiamate tra utenti dell'organizzazione che si trovano in aree geografiche diverse, rimuovendo i costi a lunga distanza per queste chiamate interne.
 
@@ -68,7 +68,7 @@ Sistema telefonico può essere connesso alla rete PSTN in due modi:
 
 - **Segreteria telefonica:** quando si ottiene una licenza Sistema telefonico per un utente, tale utente è in grado di ottenere la segreteria telefonica lasciata dai chiamanti. Cloud Voicemail viene automaticamente configurato ed eseguito il provisioning per gli utenti dopo aver assegnato una licenza Sistema telefonico e un numero di telefono. Vedere [Configurare Cloud Voicemail](set-up-phone-system-voicemail.md).
 
-Per altre informazioni sulle funzionalità, vedere Ecco cosa si ottiene con [Sistema telefonico.](here-s-what-you-get-with-phone-system.md) Se si è pronti per iniziare, vedere Configurare Sistema telefonico [nell'organizzazione.](setting-up-your-phone-system.md)
+Per altre informazioni sulle caratteristiche, vedere Ecco cosa si ottiene con [Sistema telefonico.](here-s-what-you-get-with-phone-system.md) Se si è pronti per iniziare, vedere Configurare Sistema telefonico [nell'organizzazione.](setting-up-your-phone-system.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

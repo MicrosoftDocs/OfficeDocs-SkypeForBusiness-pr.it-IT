@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: v-rifer
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 MS.collection:
 - M365-voice
@@ -17,12 +17,12 @@ description: Usare il report Utenti bloccati PSTN nell'interfaccia di amministra
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 18c68579a4bc3886f19e73198c576590f06180dbc2d83e1b847da51e9df93411
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: da60a0005fbccd04e3257f3dd7466d5b1a32a544
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350408"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594468"
 ---
 # <a name="microsoft-teams-pstn-blocked-users-report"></a>Microsoft Teams Report utenti bloccati PSTN
 
@@ -32,7 +32,7 @@ Il report Utenti bloccati PSTN nell'interfaccia di amministrazione di Microsoft 
 
 Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su Analisi & **report**  >  **utilizzo**. Nella scheda **Visualizza report,** in **Report,** selezionare **Utenti bloccati PSTN** e quindi fare clic su **Esegui report.**
 
-![Screenshot del report degli utenti bloccati PSTN nell'interfaccia di amministrazione](../media/teams-reports-pstn-blocked-users-with-callouts.png "Screenshot del report Degli utenti bloccati PSTN nell'interfaccia di amministrazione Microsoft Teams con callout numerati")
+![Screenshot del report degli utenti bloccati PSTN nell'interfaccia di amministrazione](../media/teams-reports-pstn-blocked-users-with-callouts.png "Screenshot del report degli utenti bloccati PSTN nell'interfaccia Microsoft Teams di amministrazione con callout numerati")
 
 ## <a name="interpret-the-report"></a>Interpretare il report
 

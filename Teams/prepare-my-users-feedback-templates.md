@@ -9,19 +9,19 @@ ms.service: msteams
 ms.reviewer: rowille
 audience: admin
 description: Raccogliere il feedback degli utenti per migliorare l'implementazione vocale nel cloud in Microsoft Teams o Skype for Business.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 1d12d859f2d6d828db0ad5cfb9aa474143d89c94ddfa4a0b6ccc0d9233fb256c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f08760e7af5b40a063f0dd43c1b728444884bb9d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312714"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594518"
 ---
 # <a name="user-feedback-surveys"></a>Sondaggi di feedback degli utenti 
 
@@ -31,7 +31,7 @@ Personalizzare le domande seguenti e quindi trasferirle in uno strumento di sond
 
 Ai fini di questi *sondaggi,* il nuovo sistema telefonico si riferisce all'uso delle funzionalità di chiamata in Microsoft Teams o Skype for Business, oltre a dispositivi come un telefono multimediale o un cellulare. Tutti i riferimenti a Microsoft Teams in questi sondaggi si applicano anche ai Skype for Business.
 
-Indicare il livello di accordo con le istruzioni seguenti, in relazione all'uso di Teams come telefono. 
+Indicare il livello di accordo con le affermazioni seguenti, in relazione all'uso di Teams come telefono. 
 
 |     &nbsp;                              | Completamente d'accordo | Un po' d'accordo | Neutro | Un po' in disaccordo | Completamente in disaccordo | N/D o non è stato utilizzato |
 |--------------------------------------------------------------------------------------------------------------------------|----------------------|--------------------|-------------|-----------------------|-------------------------|------------------------|
@@ -44,7 +44,7 @@ Indicare il livello di accordo con le istruzioni seguenti, in relazione all'uso 
 | Usare Teams telefono mi rende più facile fare il mio lavoro.                                          |                      |                    |             |                       |                         |                        |
 | La mia esperienza audio con Teams è buona o migliore di quanto non lo fosse con il nostro vecchio sistema telefonico.                   |                      |                    |             |                       |                         |                        |
 
-Se si è scelto **In parte in disaccordo** o **Completamente** in disaccordo per una delle suddette affermazioni, spiegare. (Testo aperto)
+Se si è scelto **Un po' di disaccordo** o **Completamente** in disaccordo per una delle affermazioni precedenti, spiegare. (Testo aperto)
 
 Indicare il livello di accordo con le istruzioni seguenti, in relazione all'esperienza di onboarding con il nuovo telefono.  
 
@@ -54,7 +54,7 @@ Indicare il livello di accordo con le istruzioni seguenti, in relazione all'espe
 | Avevo risorse di formazione adeguate per accedere rapidamente al nuovo sistema telefonico.                                                          |                      |                    |             |                       |                         |                        |
 | Il nostro helpdesk potrebbe rispondere a tutte le mie domande sul nuovo sistema telefonico.                                                           |                      |                    |             |                       |                         |                        |
 
-Se si è scelto **In parte in disaccordo** o **Completamente** in disaccordo per una delle suddette affermazioni, spiegare. (Testo aperto)
+Se si è scelto **Un po' di disaccordo** o **Completamente** in disaccordo per una delle affermazioni precedenti, spiegare. (Testo aperto)
 
 È probabile che consiglii di usare Teams telefono a un amico o un collega? (0=Non è affatto probabile... 10=Estremamente probabile)
 

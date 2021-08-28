@@ -12,25 +12,25 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddPersistentChatBackupComplianceStorePage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 358b74bd-a97d-4f28-9bed-af633ea0099e
-description: È possibile configurare gli archivi di SQL Server di backup che forniranno database di backup per il server Chat persistente o il server Chat persistente SQL Server archiviati.
-ms.openlocfilehash: edcb80d798e6039560db4149b17ce7c2d2d61b9d92a4450199dcad29b12093dc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Configurare gli archivi di conformità di SQL Server backup che forniranno database di backup per gli archivi di conformità del server Chat persistente o del server Chat SQL Server persistente.
+ms.openlocfilehash: b15cfb3ed23147bb6a6c9e2ea816350343cadf72
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344925"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615772"
 ---
 # <a name="add-persistent-chat-compliance-backup-sql-server-store"></a>Aggiungere l'archivio SQL Server di conformità di backup per Chat persistente
  
-È possibile configurare gli archivi di SQL Server di backup che forniranno database di backup per il server Chat persistente o il server Chat persistente SQL Server archiviati.
+Configurare gli archivi di conformità di SQL Server backup che forniranno database di backup per gli archivi di conformità del server Chat persistente o del server Chat SQL Server persistente.
   
  **SQL Server archivio:** selezionare un SQL Server esistente e facoltativamente un'istanza per Persistent Chat.
   
 Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una nuova istanza per i dati di conformità del backup di Persistent Chat.
   
-Selezionare la **casella di controllo Abilita mirroring** SQL Server store per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di conformità del backup di Persistent Chat.
+Selezionare la **casella di controllo Abilita mirroring** SQL Server archivio per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di conformità del backup di Persistent Chat.
   
 Selezionare nell'elenco **Mirroring SQL Server archiviare** un'SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per la conformità di backup di Persistent Chat SQL Server.
   
@@ -42,7 +42,7 @@ Fare **clic su** Nuovo per definire un nuovo SQL Server di controllo facoltativa
   
 Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   
-Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell'archivio di SQL Server di backup del pool e per procedere con la definizione del pool di server Chat persistente.
+Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell'archivio SQL Server backup del pool e per procedere con la definizione del pool di server Chat persistente.
   
 Fare clic su **Annulla** per eliminare tutte le modifiche e chiudere la procedura guidata **Definisci nuovo pool Persistent Chat**.
   

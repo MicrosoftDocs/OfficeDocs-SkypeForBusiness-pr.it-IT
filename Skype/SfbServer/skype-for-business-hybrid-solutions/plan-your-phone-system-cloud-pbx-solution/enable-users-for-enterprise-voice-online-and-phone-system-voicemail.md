@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - IT_Skype16
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 28daebcb-c2dc-4338-b2d1-04345ece9c19
 description: Informazioni su come abilitare i Sistema telefonico vocali per gli Skype for Business utenti.
-ms.openlocfilehash: fea5da3bb82281c05edd73ce8e69c7164440513080b7aa804b31abc5d4c65ba7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b82121dff3c7a82827d6e19fdb0b78bfeee263f2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54289074"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602311"
 ---
 # <a name="enable-users-for-enterprise-voice-online-and-phone-system-voicemail"></a>Abilitare gli utenti per VoIP aziendale online e Sistema telefonico nella segreteria telefonica
  
@@ -33,7 +33,7 @@ ms.locfileid: "54289074"
 
 Informazioni su come abilitare i Sistema telefonico vocali per gli Skype for Business utenti.
   
-Il passaggio finale per la Sistema telefonico con connettività PSTN locale consiste nell'abilitare gli utenti per Sistema telefonico e segreteria telefonica. Per abilitare queste funzionalità, è necessario essere un utente con il ruolo Amministratore globale ed essere in grado di eseguire PowerShell remoto. È necessario seguire i passaggi descritti in questo argomento per tutti gli account utente che non hanno VoIP aziendale abilitati per Skype for Business Online.
+Il passaggio finale per la Sistema telefonico con connettività PSTN locale consiste nell'abilitare gli utenti per la Sistema telefonico e la segreteria telefonica. Per abilitare queste funzionalità, è necessario essere un utente con il ruolo Amministratore globale ed essere in grado di eseguire PowerShell remoto. È necessario seguire i passaggi descritti in questo argomento per tutti gli account utente che non VoIP aziendale abilitati per Skype for Business Online.
   
 ## <a name="enable-phone-system-voice-services"></a>Abilitare Sistema telefonico servizi vocali
 
@@ -43,7 +43,7 @@ Per abilitare un utente per Sistema telefonico Voice e segreteria telefonica, è
 
 > [!NOTE]
 > Skype for Business Online Connector fa attualmente parte dell'Teams PowerShell più recente.
-> Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare il connettore Skype for Business Online.
+> Se si usa la versione pubblica Teams [PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/)più recente, non è necessario installare il connettore Skype for Business Online.
 
 1. Prima di iniziare, verificare che il Teams PowerShell sia installato nei Front End Server. In caso contrario, eseguire l'installazione usando le istruzioni in [Teams PowerShell Module Installation](/microsoftteams/teams-powershell-install).
     
@@ -83,10 +83,10 @@ In questa sezione viene descritto come aggiornare l'URI linea e il dial plan per
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Usa il menu Start o il collegamento sul desktop per aprire il Skype for Business Server Pannello di controllo.
+2. Usa il menu Start o il desktop per aprire il pannello Skype for Business Server pannello di controllo.
     
     > [!NOTE]
-    > È inoltre possibile aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il Skype for Business Server Di controllo. 
+    > È inoltre possibile aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Skype for Business Server di controllo. 
   
 3. Sulla barra di spostamento sinistra fare clic su **Utenti**.
     
@@ -131,7 +131,7 @@ In questa sezione viene descritto come aggiornare l'URI linea e il dial plan per
 
 In questa sezione viene descritto come aggiornare i criteri di routing vocale per gli utenti abilitati per Sistema telefonico.
   
-Sistema telefonico agli utenti deve essere assegnato un criterio di routing vocale per consentire il corretto instradamento delle chiamate. Questo comportamento è diverso dagli utenti di voIP aziendale locali che richiedono l'assegnazione di un criterio vocale per consentire il corretto routing delle chiamate. I criteri di routing vocale devono contenere utilizzi PSTN che definiscono le chiamate e le route autorizzate per Sistema telefonico utenti. È possibile copiare questi utilizzi PSTN dai criteri vocali esistenti ai nuovi criteri di routing vocale. Per ulteriori informazioni, vedere [New-CsVoiceRoutingPolicy.](/powershell/module/skype/new-csvoiceroutingpolicy?view=skype-ps)
+Sistema telefonico gli utenti devono disporre di un criterio di routing vocale assegnato per consentire il corretto instradamento delle chiamate. Questo comportamento è diverso dagli utenti di voIP aziendale locali che richiedono l'assegnazione di un criterio vocale per consentire il corretto routing delle chiamate. I criteri di routing vocale devono contenere utilizzi PSTN che definiscono le chiamate e le route autorizzate per Sistema telefonico utenti. È possibile copiare questi utilizzi PSTN dai criteri vocali esistenti ai nuovi criteri di routing vocale. Per ulteriori informazioni, vedere [New-CsVoiceRoutingPolicy.](/powershell/module/skype/new-csvoiceroutingpolicy?view=skype-ps)
   
 > [!NOTE]
 > A Sistema telefonico utenti viene assegnato lo stesso criterio vocale online denominato BusinessVoice che definisce le funzionalità di chiamata consentite; ad esempio, Consenti anello simultaneo. 

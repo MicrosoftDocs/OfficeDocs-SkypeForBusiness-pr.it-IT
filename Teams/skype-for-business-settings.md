@@ -19,15 +19,15 @@ ms.custom: ''
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire le impostazioni per Skype for Business funzionalità nell'interfaccia Microsoft Teams di amministrazione.
-ms.openlocfilehash: f05bdd7dfb53e75d5cc83945985dd6b511635d5ab5792afc0291b5349433ae22
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e3679f80057349b60af9bc11b2aa43c3ceb6a431
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280561"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636440"
 ---
 # <a name="manage-skype-for-business-settings-in-the-microsoft-teams-admin-center"></a>Gestire Skype for Business impostazioni nell'Microsoft Teams di amministrazione
 
@@ -35,14 +35,14 @@ ms.locfileid: "54280561"
 <a name="sfb-settings"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-L'interfaccia di amministrazione Microsoft Teams è la posizione in cui è possibile gestire le Skype for Business per Skype for Business utenti dell'organizzazione. È possibile gestire le [impostazioni per l'organizzazione](#manage-skype-for-business-settings-for-your-organization) [](#manage-skype-for-business-settings-for-individual-users) **nella** pagina Skype for Business e le impostazioni per i singoli utenti nella scheda Skype for Business **delle** pagine dei dettagli utente.
+L'interfaccia di amministrazione Microsoft Teams è la posizione in cui è possibile gestire le Skype for Business per Skype for Business utenti dell'organizzazione. È possibile gestire le [impostazioni per l'organizzazione](#manage-skype-for-business-settings-for-your-organization) [](#manage-skype-for-business-settings-for-individual-users) **nella** pagina Skype for Business e le impostazioni per i singoli utenti **nella** scheda Skype for Business delle pagine dei dettagli utente.
 
-Verrà visualizzata la  pagina Skype for Business solo se la modalità di coesistenza per l'organizzazione non è impostata su **solo Teams .** Allo stesso modo, verrà visualizzata la scheda Skype for Business **per** un utente solo se la modalità di coesistenza dell'utente non è Teams **solo**. Per altre informazioni sulle modalità di coesistenza, vedere Comprendere Teams e [Skype for Business e](teams-and-skypeforbusiness-coexistence-and-interoperability.md) l'interoperabilità e Impostare le impostazioni di [coesistenza e aggiornamento.](setting-your-coexistence-and-upgrade-settings.md)
+Verrà visualizzata la pagina Skype for Business **solo** se la modalità di coesistenza per l'organizzazione non è impostata su **Teams .** Allo stesso modo, verrà visualizzata la scheda Skype for Business **per** un utente solo se la modalità di coesistenza dell'utente non è Teams **solo**. Per altre informazioni sulle modalità di coesistenza, vedere Comprendere Teams e [Skype for Business e](teams-and-skypeforbusiness-coexistence-and-interoperability.md) l'interoperabilità e Impostare le impostazioni di [coesistenza e aggiornamento.](setting-your-coexistence-and-upgrade-settings.md)
 
 > [!NOTE]
-> Skype for Business impostazioni precedenti erano nel **portale legacy** nell'Microsoft Teams di amministrazione. Con il ritiro del portale legacy, è stata eseguita la migrazione delle impostazioni in queste nuove posizioni nell'interfaccia di amministrazione di Teams per Skype for Business gestione.
+> Skype for Business impostazioni erano in precedenza nel **portale legacy** nell'Microsoft Teams di amministrazione. Con il ritiro del portale legacy, è stata eseguita la migrazione delle impostazioni in queste nuove posizioni nell'interfaccia di amministrazione di Teams per Skype for Business gestione.
 
-È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire le funzionalità di Skype for Business nell'Microsoft Teams di amministrazione.
+È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Microsoft Teams di amministrazione.
 
 ## <a name="manage-skype-for-business-settings-for-your-organization"></a>Gestire Skype for Business per l'organizzazione
 
@@ -56,13 +56,13 @@ Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amminis
 
 Usare le impostazioni seguenti per gestire Riunione Skype [broadcast nell'organizzazione.](https://support.microsoft.com/office/what-is-a-skype-meeting-broadcast-c472c76b-21f1-4e4b-ab58-329a6c33757d)
 
-:::image type="content" source="media/skype-for-business-settings-meeting-broadcast.png" alt-text="Screenshot delle impostazioni Riunione Skype broadcast nell'interfaccia di amministrazione":::
+:::image type="content" source="media/skype-for-business-settings-meeting-broadcast.png" alt-text="Screenshot delle Riunione Skype broadcast nell'interfaccia di amministrazione":::
 
-- **Riunione Skype broadcast:** attiva questa opzione per abilitare Riunione Skype broadcast per l'organizzazione. Dopo aver abilitato questa funzionalità, è necessario [configurare la rete](/skypeforbusiness/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast)per Riunione Skype Broadcast .
+- **Riunione Skype broadcast:** attiva questa opzione per abilitare Riunione Skype broadcast per l'organizzazione. Dopo aver abilitato questa funzionalità, è necessario configurare la rete per [Riunione Skype Broadcast.](/skypeforbusiness/set-up-your-network-for-skype-meeting-broadcast/set-up-your-network-for-skype-meeting-broadcast)
 - **Vedere funzionalità di anteprima:** attivare questa opzione per ottenere l'accesso anticipato alle nuove funzionalità.
 - **Gli organizzatori possono pianificare riunioni** anonime: attivare questa opzione se si vuole consentire agli organizzatori di creare eventi di trasmissione che consentano a chiunque all'esterno dell'organizzazione di partecipare senza dover accedere. 
-- **Registrare Riunione Skype riunioni broadcast:** attivare questa opzione per consentire a organizzatori e relatori di registrare le riunioni.  
-- **URL supporto helpdesk** per i partecipanti: immettere l'URL di supporto dell'organizzazione che i partecipanti alla riunione possono usare se hanno bisogno di assistenza durante una riunione.
+- **Registrare Riunione Skype di trasmissione:** attivare questa opzione per consentire a organizzatori e relatori di registrare le riunioni.  
+- **URL supporto helpdesk per i partecipanti:** immettere l'URL di supporto dell'organizzazione che i partecipanti alla riunione possono usare se hanno bisogno di assistenza durante una riunione.
 
 ### <a name="presence-and-mobile-notifications"></a>Notifiche di presenza e dispositivi mobili
 
@@ -71,7 +71,7 @@ Usare le impostazioni seguenti per gestire Riunione Skype [broadcast nell'organi
 <!-- Do not remove the bookmark link above. -->
 
 
-Usare le impostazioni seguenti per gestire la privacy Skype for Business sulla presenza e le notifiche per dispositivi mobili nell'organizzazione.
+Usare le impostazioni seguenti per gestire la privacy Skype for Business e le notifiche per dispositivi mobili nell'organizzazione.
 
 :::image type="content" source="media/skype-for-business-settings-presence-mobile.png" alt-text="Screenshot delle impostazioni di presenza nell'interfaccia di amministrazione":::
 
@@ -80,7 +80,7 @@ Usare le impostazioni seguenti per gestire la privacy Skype for Business sulla p
 Per impostazione predefinita, Skype for Business utenti dell'organizzazione possono vedere lo stato presenza (ad esempio Disponibile, Occupato o Non al computer) di altri Skype for Business utenti. Scegliere una delle opzioni seguenti per impostare gli utenti che possono vedere la presenza Skype for Business utenti.
 
 - **Visualizzare automaticamente** le informazioni sulla presenza: qualsiasi utente Skype for Business dell'organizzazione che  non  è stato aggiunto all'elenco Esterno o Bloccato dell'utente può vedere la presenza dell'utente.
-- **Visualizzare le** informazioni sulla presenza solo per i contatti di un utente: qualsiasi utente Skype for Business  nell'elenco Contatti dell'utente che non viene aggiunto all'elenco Esterno o Bloccato può vedere la presenza dell'utente.  Gli utenti possono ignorare questa impostazione in Skype for Business selezionando **Impostazioni**  >  **Strumenti**  >  **.**
+- **Visualizzare le** informazioni sulla presenza solo per i contatti di un utente: qualsiasi utente di  Skype for Business  nell'elenco Contatti dell'utente che non viene aggiunto all'elenco Esterno o Bloccato può vedere la presenza dell'utente. Gli utenti possono ignorare questa impostazione in Skype for Business selezionando **Impostazioni**  >  **Opzioni**  >  **di Strumenti**.
 
 #### <a name="mobile-notifications"></a>Notifiche per dispositivi mobili
 
@@ -89,7 +89,7 @@ Per impostazione predefinita, Skype for Business utenti dell'organizzazione poss
 Tenere presente quanto segue:
 
 - Se si disattivano le notifiche push, gli utenti riceveranno tutti gli avvisi al successivo avvio Skype for Business sul dispositivo mobile.
-- Per impostazione predefinita, le notifiche push sono attivate. I singoli utenti possono disattivarli Skype for Business sul dispositivo mobile.
+- Per impostazione predefinita, le notifiche push sono attivate. I singoli utenti possono disattivarli in Skype for Business sul dispositivo mobile.
 - Quando si disattivano le notifiche push, gli utenti non possono riattivarle. 
 
 > [!IMPORTANT]
@@ -101,9 +101,9 @@ Tenere presente quanto segue:
 <a name="sfb-user-settings"> </a>
 <!-- Do not remove the bookmark link above. -->
 
-Per gestire le impostazioni di Skype for Business per i singoli utenti, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams passare a **Utenti,** fare clic sul nome visualizzato dell'utente per aprire la pagina dei dettagli utente e quindi selezionare la scheda **Impostazioni** Skype for Business utente. Da qui è possibile configurare le impostazioni di accesso esterno e riunione per l'utente.
+Per gestire le impostazioni di Skype for Business per i singoli utenti, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams passare a  Utenti **,** fare clic sul nome visualizzato dell'utente per aprire la pagina dei dettagli utente e quindi selezionare la scheda impostazioni Skype for Business. Da qui è possibile configurare le impostazioni di accesso esterno e riunione per l'utente.
 
-:::image type="content" source="media/skype-for-business-settings-user.png" alt-text="Screenshot della scheda Skype for Business nella pagina dei dettagli utente":::
+:::image type="content" source="media/skype-for-business-settings-user.png" alt-text="Screenshot della Skype for Business nella pagina dei dettagli dell'utente":::
 
 ### <a name="external-access-settings"></a>Impostazioni di accesso esterno
 
@@ -123,5 +123,5 @@ Per gestire le impostazioni di Skype for Business per i singoli utenti, nel riqu
     - **Audio e video:** l'utente può usare audio e video.
     - **Audio e video (HD): l'utente** può usare audio e video ad alta definizione.
     
-- **Registrare conversazioni & riunioni:** attivare questa opzione per consentire all'utente di registrare conversazioni e riunioni.
+- **Registrare conversazioni & riunioni:** attiva questa opzione per consentire all'utente di registrare conversazioni e riunioni.
 - **Conformità:** attivare questa opzione se si è legalmente tenuti a conservare le informazioni archiviate elettronicamente.

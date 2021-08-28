@@ -9,16 +9,16 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni sulle impostazioni che è necessario configurare per controllare se i proprietari dei team dell'organizzazione possono fornire il consenso alle app.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: de17dcf2d070bb2cde5d8b56ddd706140714e9dac37b38ef6d6156c480add3b6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4587c17f1c6f0a6ad95f493876b456f6192f3aa0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319699"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636460"
 ---
 # <a name="resource-specific-consent-in-microsoft-teams"></a>Consenso specifico delle risorse in Microsoft Teams
 
@@ -43,8 +43,8 @@ Le due impostazioni seguenti determinano se i proprietari del team possono forni
 
 Questa impostazione controlla se gli utenti dell'organizzazione possono acconsentire alle app per loro conto. Per consentire ai proprietari del team di fornire il consenso, questa impostazione deve essere impostata su **Sì.** Per gestire questa impostazione, eseguire le operazioni seguenti:
 
-1. Nel portale di Azure passare a Enterprise **applicazioni**  >  **utente**.
-2. In **Enterprise ,** impostare Gli utenti possono acconsentire alle **app** che accedono ai dati aziendali per loro conto su **No** o **Sì.**
+1. Nel portale di Azure passare a Impostazioni utente **Enterprise**  >  **applicazioni.**
+2. In **Enterprise,** impostare Gli utenti possono acconsentire alle **app** che accedono ai dati aziendali per loro conto su **No** o **Sì.**
 
 È anche possibile gestire questa impostazione usando PowerShell. Per altre informazioni, vedere [Configurare il contenuto degli utenti per le applicazioni.](/azure/active-directory/manage-apps/configure-user-consent#configure-user-consent-to-applications)
 
@@ -72,7 +72,7 @@ Possono essere necessarie fino a 24 ore prima che le modifiche diventino effetti
 
 #### <a name="allow-or-block-the-app-at-the-org-level"></a>Consentire o bloccare l'app a livello di organizzazione
 
-Quando si blocca o si consente un'app nella pagina Gestisci [app,](manage-apps.md#allow-and-block-apps) l'app viene bloccata o consentita per tutti gli utenti dell'organizzazione. I proprietari del team possono fornire il consenso a un'app solo se l'app è consentita. Per consentire o bloccare un'app a livello di organizzazione, eseguire le operazioni seguenti:
+Quando si blocca o si consente un'app nella pagina [Gestisci app,](manage-apps.md#allow-and-block-apps) l'app viene bloccata o consentita per tutti gli utenti dell'organizzazione. I proprietari del team possono fornire il consenso a un'app solo se l'app è consentita. Per consentire o bloccare un'app a livello di organizzazione, eseguire le operazioni seguenti:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
 2. Nella pagina Gestisci app selezionare l'app e quindi fare clic su **Blocca** per bloccarla o **su** Consenti per consentirla.
@@ -81,7 +81,7 @@ Quando si blocca o si consente un'app nella pagina Gestisci [app,](manage-apps.m
 
 #### <a name="app-permission-policy-assigned-to-the-team-owner"></a>Criteri di autorizzazione dell'app assegnati al proprietario del team
 
-I proprietari del team possono fornire il consenso solo alle app che i criteri di autorizzazione dell'app gli consentono di eseguire. Per visualizzare e gestire i criteri di autorizzazione dell'app assegnati a un proprietario del team, eseguire le operazioni seguenti:
+I proprietari del team possono fornire il consenso solo alle app che i criteri di autorizzazione dell'app consentono loro di eseguire. Per visualizzare e gestire i criteri di autorizzazione dell'app assegnati a un proprietario del team, eseguire le operazioni seguenti:
 
 1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Utenti**.
 2. Fare doppio clic sul nome visualizzato del proprietario del team e quindi fare clic su **Criteri.**

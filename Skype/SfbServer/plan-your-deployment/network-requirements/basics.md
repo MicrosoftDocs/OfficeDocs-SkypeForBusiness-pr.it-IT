@@ -9,25 +9,25 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2618cfa1-2e2c-4f1d-a5e5-70a0286591a7
 description: Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri DNS. Se si preferisce, è possibile scegliere una soluzione di terze parti.
-ms.openlocfilehash: e9187b5a619a55b4525d32eb20272e32cae514c2533d9c78f32d7ffed77d30ad
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2ee4ee73a6cb85ac51785a47e4f0ec86d581b809
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54283088"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602341"
 ---
 # <a name="dns-basics"></a>Informazioni di base sul DNS
  
-Windows Server 2016 software incorporato in grado di fornire servizi DNS, è quindi possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri [DNS.](/windows-server/networking/dns/deploy/dns-policy-scenario-guide) Se si preferisce, è possibile scegliere una soluzione di terze parti.
+Windows Server 2016 software incorporato in grado di fornire servizi DNS, è pertanto possibile consultare la documentazione disponibile, ad esempio la Guida allo scenario dei criteri [DNS.](/windows-server/networking/dns/deploy/dns-policy-scenario-guide) Se si preferisce, è possibile scegliere una soluzione di terze parti.
   
 Come procedura consigliata, è consigliabile dedicare un server specifico nell'implementazione per fornire DNS. Si potrebbe potenzialmente configurarlo in uno dei server dedicati a uno dei ruoli del server di Skype for Business, ma se il server fosse anche parte di un pool e fosse stato disattivato per errore Skype for Business non funzionarebbe fino a quando i servizi DNS non vengono nuovamente stabiliti.
   
 ## <a name="dns-records"></a>Record DNS
 
-Ogni mapping di un nome a un indirizzo IP (e che potrebbe essere un indirizzo IPv4 o IPv6) viene archiviato in un record DNS sul server DNS. Il nome è descritto nel rapporto DNS in modo specifico come FQDN, ovvero un nome di dominio completo. Anche *contoso.com* è un nome di dominio valido, è abbreviazione di *\* .contoso.com,* quindi è ambiguo e potrebbe fare riferimento a qualsiasi server nel dominio. Un esempio di fqdn che fa riferimento a un singolo server nel dominio potrebbe **essere meeting01.contoso.com**.
+Ogni mapping di un nome a un indirizzo IP (e che potrebbe essere un indirizzo IPv4 o IPv6) viene archiviato in un record DNS sul server DNS. Il nome è descritto nel rapporto DNS in modo specifico come FQDN, ovvero un nome di dominio completo. Sebbene *contoso.com* sia un nome di dominio valido, è abbreviato per *\* .contoso.com, quindi* è ambiguo e potrebbe fare riferimento a qualsiasi server nel dominio. Un esempio di fqdn che fa riferimento a un singolo server nel dominio potrebbe **essere meeting01.contoso.com**.
   
 > [!IMPORTANT]
 > Per impostazione predefinita, il nome computer di un computer che non fa parte di un dominio è un nome host e non un nome di dominio completo (FQDN). In Generatore di topologie vengono utilizzati fqdn e non nomi host. Pertanto, è necessario configurare un suffisso DNS sul nome del computer da distribuire come server perimetrale che non fa parte di un dominio. **Utilizzare solo caratteri standard** (inclusi A-Z, a-z, 0-9 e trattini) quando si assegnano FQDN ai server che eseguono Skype for Business Server. Non utilizzare caratteri Unicode o di sottolineatura. I caratteri non standard in un nome di dominio completo spesso non sono supportati da AUTORITÀ di certificazione pubbliche e DNS esterne, ovvero quando il nome di dominio completo deve essere assegnato al nome di dominio completo nel certificato.
@@ -38,7 +38,7 @@ Esistono diversi tipi di record DNS, quelli più rilevanti per questa discussion
   
 - **A:** un record address o un record Host, restituisce un indirizzo IPv4 a 32 bit. Più comunemente usato per mappare i nomi host a un indirizzo IP dell'host.
     
-- **AAAA ,** un record di indirizzo IPv6. Restituisce un indirizzo IPv6 a 128 bit. Più comunemente usato per mappare i nomi host a un indirizzo IP dell'host.
+- **AAAA ,** un record di indirizzi IPv6. Restituisce un indirizzo IPv6 a 128 bit. Più comunemente usato per mappare i nomi host a un indirizzo IP dell'host.
     
 - **CNAME** : record di nome canonico. In questo modo viene risolto un nome in un altro: la ricerca DNS ritenterà la ricerca con il nuovo nome.
     
@@ -51,7 +51,7 @@ Il nome di dominio SIP di un'organizzazione in genere è allineato agli indirizz
   
 ### <a name="multiple-sip-domains"></a>Più domini SIP
 
- L'organizzazione potrebbe in alcuni casi richiedere diversi domini SIP. Ad esempio, se Fabrikam.com è stato acquisito da contoso.com, potrebbe essere necessario creare un nuovo dominio SIP che Skype for Business Server riconosce e accetterà la connessione da. In questo caso, è necessario creare un set aggiuntivo di tutti i record DNS che utilizzano contoso.com, con nuovi FQDN che mostrano dove inviare le richieste per Fabrikam.
+ L'organizzazione potrebbe in alcuni casi richiedere diversi domini SIP. Ad esempio, se Fabrikam.com è stato acquisito da contoso.com, potrebbe essere necessario creare un nuovo dominio SIP che Skype for Business Server riconosca e accetti la connessione da. In questo caso, è necessario creare un set aggiuntivo di tutti i record DNS che utilizzano contoso.com, con nuovi FQDN che mostrano dove inviare le richieste per Fabrikam.
   
 ## <a name="dns-load-balancing"></a>Bilanciamento del carico DNS
 <a name="BK_NameSIP"> </a>

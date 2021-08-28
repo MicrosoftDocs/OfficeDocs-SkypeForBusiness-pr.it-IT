@@ -9,25 +9,25 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: fde45195-6eb4-403c-9094-57df7fc0bd2a
 description: Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
-ms.openlocfilehash: 75fcefae34cfcb100a095dd83a162fec1baac1d4b17f5077611cf88635ce9ed5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 233556993c5feb3eac9a6b773161a2491361e35e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349958"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593550"
 ---
 # <a name="plan-for-outbound-voice-routing-in-skype-for-business-server"></a>Pianificare il routing vocale in uscita in Skype for Business Server
  
 Informazioni sul routing vocale in uscita in Skype for Business Server VoIP aziendale, incluse le impostazioni di routing delle chiamate, i dial plan, le regole di normalizzazione, i criteri vocali, i record di utilizzo PSTN e le route vocali.
   
-Il routing delle chiamate in uscita si applica VoIP aziendale chiamate destinate a un gateway PSTN (Public Switched Telephone Network), un trunk o un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
+Il routing delle chiamate in uscita si applica VoIP aziendale chiamate in uscita destinate a un gateway PSTN (Public Switched Telephone Network), un trunk o un PBX (Private Branch Exchange). Quando un Skype for Business esegue una chiamata, il server normalizza il numero di telefono nel formato E.164, se necessario, e tenta di associarlo a un URI SIP. Se il server non riesce a trovare una corrispondenza, applica la logica di routing delle chiamate in uscita in base alla stringa di composizione fornita. È possibile definire tale logica configurando le impostazioni del server descritte nella tabella seguente.
   
 **Skype for Business Server Routing delle chiamate in uscita Impostazioni**
 
@@ -47,9 +47,9 @@ Le regole di normalizzazione definiscono il modo in cui i numeri di telefono esp
   
 ### <a name="dial-plan-scope"></a>Ambito del dial plan
 
-L'ambito di un dial plan determina il livello gerarchico a cui è possibile applicare il dial plan. In Skype for Business Server, a un utente può essere assegnato un dial plan specifico per utente. Se non viene assegnato un dial plan utente, viene applicato il dial plan del pool Front End. Se non è presente alcun dial plan del pool Front End, viene applicato il dial plan del sito. Infine, se non è presente alcun altro dial plan applicabile all'utente, viene applicato il dial plan globale.
+L'ambito di un dial plan determina il livello gerarchico a cui è possibile applicare il dial plan. In Skype for Business Server, a un utente può essere assegnato un dial plan specifico per utente. Se non viene assegnato un dial plan utente, viene applicato il dial plan del pool Front End. Se non esiste alcun dial plan del pool Front End, viene applicato il dial plan del sito. Infine, se non è presente alcun altro dial plan applicabile all'utente, viene applicato il dial plan globale.
   
-I client ottengono livelli di ambito del dial plan tramite le impostazioni di provisioning in banda fornite quando gli utenti a questo Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando il Skype for Business Server Di controllo.
+I client ottengono i livelli di ambito del dial plan tramite le impostazioni di provisioning in banda fornite quando gli utenti a questo Skype for Business. L'amministratore può gestire e assegnare livelli di ambito del dial plan utilizzando il Skype for Business Server di controllo.
   
 > [!NOTE]
 > Il dial plan del gateway PSTN (Public Switched Telephone Network) a livello di servizio viene applicato alle chiamate in arrivo da un determinato gateway. 
@@ -200,12 +200,12 @@ I passaggi seguenti consentono di pianificare i criteri vocali necessari per la 
     
 ### <a name="voice-policy-scope"></a>Ambito dei criteri vocali
 
-L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dai più specifici ai più generici).
+L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile applicare il criterio. In Skype for Business Server, è possibile configurare i criteri vocali con i livelli di ambito seguenti (elencati dal più specifico al più generale).
   
 - Il **criterio vocale utente** può essere assegnato a singoli utenti, gruppi o oggetti contatto. Questo è il criterio di livello più basso. È possibile distribuire criteri vocali utente per abilitare le funzionalità per determinati utenti o gruppi in un sito, ma non per altri nello stesso sito. Si potrebbe decidere ad esempio di disabilitare le chiamate interurbane per alcuni dipendenti. Ai fini dell'assegnazione di un criterio vocale, un oggetto contatto viene considerato un singolo utente.
     
     > [!NOTE]
-    > È consigliabile distribuire criteri vocali utente per gli utenti del sito di succursale VoIP aziendale registrati nella distribuzione del sito centrale o per gli utenti registrati in un Survivable Branch Appliance. 
+    > È consigliabile distribuire criteri vocali utente per gli utenti VoIP aziendale del sito di succursale registrati nella distribuzione del sito centrale o per gli utenti registrati in un Survivable Branch Appliance. 
   
 - Il **criterio vocale di sito** si applica a un intero sito, con l'eccezione degli utenti, gruppi o oggetti contatto a cui è stato assegnato un criterio vocale utente. Per definire un criterio vocale di sito, è necessario specificare il sito a cui si applica il criterio. Se non viene assegnato un criterio vocale utente, viene utilizzato il criterio vocale di sito.
     
@@ -233,7 +233,7 @@ L'ambito dei criteri vocali determina il livello gerarchico a cui è possibile a
     
 - **L'analisi delle chiamate** dannose consente agli utenti di segnalare chiamate dannose utilizzando il client Skype for Business e quindi contrassegna tali chiamate nei record dettagli chiamata. Questa funzionalità è disabilitata per impostazione predefinita.
     
-- **L'escape** della segreteria telefonica impedisce che le chiamate vengano instradati immediatamente al sistema di segreteria telefonica del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, fuori batteria o fuori portata ed è basato su un valore timer. Questa impostazione abilita e disabilita il timer e imposta il valore del timer. Può essere configurato solo utilizzando Skype for Business Server Management Shell. Questa funzionalità è disabilitata per impostazione predefinita.
+- **L'escape** della segreteria telefonica impedisce che le chiamate vengano instradati immediatamente al sistema di segreteria telefonica del telefono cellulare dell'utente quando è configurato lo squillo simultaneo e il telefono è spento, fuori batteria o fuori intervallo e si basa su un valore timer. Questa impostazione abilita e disabilita il timer e imposta il valore del timer. Può essere configurato solo utilizzando Skype for Business Server Management Shell. Questa funzionalità è disabilitata per impostazione predefinita.
     
 - L'inoltro di chiamata e gli utilizzi **PSTN** di squillo simultaneo consentono agli amministratori di specificare lo stesso utilizzo PSTN del criterio vocale per l'inoltro di chiamata e lo squillo simultaneo, limitare l'inoltro di chiamata e lo squillo simultaneo solo agli utenti Skype for Business interni oppure specificare un utilizzo PSTN personalizzato diverso dall'utilizzo PSTN del criterio vocale. Il comportamento predefinito prevede l'applicazione di un utilizzo PSTN uguale al criterio vocale per l'inoltro di chiamata e lo squillo simultaneo.
     
@@ -298,7 +298,7 @@ Per ogni route, è necessario specificare:
   
 ### <a name="mn-trunk-support"></a>Supporto dei trunk M:N
 
-Skype for Business Server offre flessibilità nel modo in cui le chiamate vengono instradati alla rete PSTN. Una route vocale specifica un insieme di trunk alla rete PSTN che possono essere utilizzati per una determinata chiamata vocale. Un trunk associa un Mediation Server e un numero di porta a un gateway PSTN e a un numero di porta di attesa. Questa associazione logica consente a un Mediation Server di essere associato a più gateway e di avere più connessioni allo stesso gateway. Quando si definisce una route di chiamata, si specificano i trunk associati a tale route, ma non si specificano quali Mediation Server sono associati alla route. Per creare trunk definendo le relazioni tra Mediation Server e gateway PSTN, IP-PBX e session border controller (SBC), utilizzare il Generatore di topologie.
+Skype for Business Server offre flessibilità nel modo in cui le chiamate vengono instradati alla rete PSTN. Una route vocale specifica un insieme di trunk alla rete PSTN che possono essere utilizzati per una determinata chiamata vocale. Un trunk associa un Mediation Server e un numero di porta a un gateway PSTN e a un numero di porta di attesa. Questa associazione logica consente a un Mediation Server di essere associato a più gateway e di avere più connessioni allo stesso gateway. Quando si definisce una route di chiamata, si specificano i trunk associati a tale route, ma non si specifica quali Mediation Server sono associati alla route. Per creare trunk definendo le relazioni tra Mediation Server e gateway PSTN, IP-PBX e session border controller (SBC), utilizzare il Generatore di topologie.
   
 ### <a name="least-cost-routing"></a>Least Cost Routing
 
@@ -308,7 +308,7 @@ Per un esempio dell'utilizzo del routing meno costose, tenere presente quanto se
   
 ### <a name="translating-outbound-dial-strings"></a>Conversione delle stringhe di composizione in uscita
 
-Skype for Business Server tutte le stringhe di composizione devono essere normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Per i trunk con gateway o IX (Private Branch Exchange) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio, URI di richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
+Skype for Business Server tutte le stringhe di composizione devono essere normalizzate nel formato E.164 allo scopo di eseguire la ricerca di numeri inversa (RNL). Per i trunk con gateway o IX (Private Branch Exchange) che richiedono numeri convertiti in formati di composizione locali, Skype for Business Server consente di creare una o più regole che consentono di modificare il numero chiamato (ad esempio URI di richiesta) prima di instradarlo al trunk. È ad esempio possibile scrivere una regola per rimuovere il prefisso +44 all'inizio di una stringa di composizione e sostituirlo con 0144.
   
 Con Skype for Business Server, è possibile creare una o più regole che assistono nella modifica del numero chiamante prima di instradarlo al trunk.
   
@@ -316,7 +316,7 @@ Nella pianificazione dei trunk che associano coppie gateway:porta a coppie Media
   
 ### <a name="configuring-caller-id"></a>Configurazione dell'ID chiamante
 
-Skype for Business Server consente di modificare l'ID chiamante per le chiamate in uscita. Ad esempio, se un'organizzazione desidera mascherare gli interni di chiamata diretta dei dipendenti e sostituirli con il numero aziendale o di reparto generico, un amministratore può farlo utilizzando il Pannello di controllo di Skype for Business Server per eliminare l'ID chiamante e sostituirlo con un ID chiamante alternativo specificato. Nella pianificazione della logica di instradamento, prendere in considerazione i singoli utenti, i gruppi e i siti per i quali si desidera utilizzare questa opzione, ad esempio anche per tutti i dipendenti.
+Skype for Business Server consente di modificare l'ID chiamante per le chiamate in uscita. Ad esempio, se un'organizzazione desidera mascherare gli interni di chiamata diretta dei dipendenti e sostituirli con il numero aziendale o di reparto generico, un amministratore può farlo utilizzando il Pannello di controllo di Skype for Business Server per eliminare l'ID chiamante e sostituirlo con un ID chiamante alternativo specificato. Nella pianificazione della logica di instradamento, prendere in considerazione i singoli utenti, i gruppi e i siti per i quali si desidera utilizzare questa opzione, ad esempio per tutti i dipendenti.
   
 > [!NOTE]
 > Per le chiamate reinoltrate tramite PSTN, verrà visualizzato l'ID chiamante generico anziché quello originario. La chiamata potrebbe quindi ignorare eventuali impostazioni Non disturbare o di privacy configurate dal destinatario. 

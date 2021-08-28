@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: b0714aae-55dc-4587-b718-34a03f596b22
 description: Creare criteri tra siti di rete, che vengono utilizzati VoIP aziendale controllo di ammissione di chiamata in Skype for Business Server.
-ms.openlocfilehash: 8e5fb020ece1762868f9d943eb2aad955903b91329d636a981e644b2e9892b67
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fd20da8170e7258aab699001de4b8c821a668d46
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338754"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594690"
 ---
 # <a name="create-network-intersite-policies-in-skype-for-business-server"></a>Creare criteri tra siti di rete in Skype for Business Server
  
@@ -36,7 +36,7 @@ Nell'area Nord America della topologia di esempio esiste un collegamento diretto
   
 ### <a name="to-create-a-network-inter-site-policy"></a>Per creare un criterio tra siti di rete
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet New-CsNetworkInterSitePolicy per creare criteri tra siti di rete e applicare un profilo di criteri di larghezza di banda appropriato per due siti con un collegamento incrociato diretto. Ad esempio, eseguire:
     
@@ -44,7 +44,7 @@ Nell'area Nord America della topologia di esempio esiste un collegamento diretto
    New-CsNetworkInterSitePolicy -InterNetworkSitePolicyID Reno_Albuquerque -NetworkSiteID1 Reno -NetworkSiteID2 Albuquerque -BWPolicyProfileID 20Mb_Link
    ```
 
-3. Ripetere il passaggio 2 in base alle esigenze per creare criteri tra siti di rete per tutte le coppie di siti di rete che hanno un collegamento incrociato diretto.
+3. Ripetere il passaggio 2 in base alle esigenze per creare criteri tra siti di rete per tutte le coppie di siti di rete con un collegamento incrociato diretto.
     
 ## <a name="see-also"></a>Vedere anche
 

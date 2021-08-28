@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 01f77196-38f4-4292-9480-2e2fbd57eabe
 description: 'Riepilogo: implementare IPv6 prima di installare Skype for Business Server.'
-ms.openlocfilehash: 02753ad0e2fee00e548dd2f709dc451373283cae2fe0fe2e30dbae62e77f12f1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ff58da4a4064c91949446e9107d0f3ff07b720e1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54289674"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593510"
 ---
 # <a name="plan-for-ipv6-in-skype-for-business"></a>Pianificare IPv6 in Skype for Business
  
@@ -52,9 +52,9 @@ Sono disponibili tre opzioni per la configurazione degli indirizzi IP in Skype f
     
 - **Solo IPv6** Al contrario, un'implementazione IPv6 completa escluderà la comunicazione con molti dispositivi esistenti.
     
-- **Dual Stack** Dual stack è una rete in cui sono abilitati sia gli indirizzi IPv4 che gli indirizzi IPv6. Questa configurazione è supportata in Skype for Business Server perché nella maggior parte dei casi la transizione da full-IPv4 a full-IPv6 avrà diversi anni.
+- **Dual Stack** Dual stack è una rete in cui sono abilitati sia gli indirizzi IPv4 che gli indirizzi IPv6. Questa configurazione è supportata in Skype for Business Server perché nella maggior parte dei casi la transizione da full-IPv4 a full-IPv6 può richiedere diversi anni.
     
-Nelle sezioni seguenti viene illustrata la compatibilità tra queste tre configurazioni per Skype for Business Server funzionalità.
+Nelle sezioni seguenti viene illustrata la compatibilità tra queste tre configurazioni per varie Skype for Business Server funzionalità.
   
 > [!NOTE]
 > La configurazione client o server con il solo protocollo IPv6 è supportata solo per fini di ricerca e di convalida. La configurazione Solo IPv6 non è supportata nella distribuzione di produzione. 
@@ -103,7 +103,7 @@ Le conferenze includono applicazioni audio/video, condivisione applicazioni e co
 ### <a name="mediation-serverpstn"></a>Mediation Server/PSTN
 <a name="med"> </a>
 
-Skype for Business Server non supporta il bypass multimediale per le chiamate PSTN (Public Switched Telephone Network) se il traffico è attraverso un'interfaccia IPv6. Se il bypass multimediale è necessario, è consigliabile configurare il gateway PSTN su IPv4. 
+Skype for Business Server non supporta il bypass multimediale per le chiamate PSTN (Public Switched Telephone Network) se il traffico passa attraverso un'interfaccia IPv6. Se il bypass multimediale è necessario, è consigliabile configurare il gateway PSTN su IPv4. 
   
 |**Interfaccia principale 1**|**Interfaccia PSTN (in Mediation Server)**|**Impostazioni del gateway PSTN**|
 |:-----|:-----|:-----|
@@ -199,7 +199,7 @@ IP versione 6 (IPv6) non è supportato in Lync Server 2010 o Office Communicatio
   
 Durante la migrazione e in caso di coesistenza sono supportati gli scenari seguenti:
   
-- Skype for Business Server, Lync Server 2013 e Lync Server 2010 in modalità IPv4, coesistono con Skype for Business Server in modalità dual stack.
+- Skype for Business Server pool di Lync Server 2013 e Lync Server 2010 in modalità IPv4, coesistenti con Skype for Business Server in modalità dual stack.
     
 - Skype for Business Server pool in modalità solo IPv6, se il pool solo IPv6 è in silo.
     

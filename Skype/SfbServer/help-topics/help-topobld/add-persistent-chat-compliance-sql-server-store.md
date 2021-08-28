@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddPersistentChatComplianceStorePage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b9771b53-e19a-4a12-bf01-24bae6f7e482
 description: Configurare i criteri di SQL Server che forniranno i database per la funzionalità di conformità del server Chat persistente o del server Chat persistente.
-ms.openlocfilehash: c3a045e8a8489bce7c333ade7a133afbc80016a7db81239c5df5292854a76870
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 09138c2e6a5fb23b6745a5594c231d29c13b911b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309415"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615762"
 ---
 # <a name="add-persistent-chat-compliance-sql-server-store"></a>Aggiungere l'archivio SQL Server di conformità per Chat persistente
  
@@ -38,7 +38,7 @@ Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una 
   
 Nell'elenco **Usa controllo del mirroring di SQL Server per abilitare il failover automatico** selezionare un server SQL Server che fungerà da server di controllo negli scenari di failover. Il server di controllo non esegue il mirroring o ospita i dati per i server Chat persistente, ma garantisce che solo un SQL Server in una configurazione con mirroring sia il SQL Server attivo in qualsiasi momento.
   
-Fare **clic su** Nuovo per definire un nuovo controllo SQL Server facoltativamente un'istanza per il controllo di conformità di Persistent Chat SQL Server mirroring.
+Fare **clic su** Nuovo per definire un nuovo SQL Server un'istanza per il controllo di conformità di Persistent Chat SQL Server mirroring.
   
 Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   

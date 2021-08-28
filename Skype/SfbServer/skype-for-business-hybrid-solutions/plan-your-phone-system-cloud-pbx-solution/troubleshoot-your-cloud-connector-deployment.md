@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: e6cf58cc-dbd9-4f35-a51a-3e2fea71b5a5
 description: Risolvere i problemi relativi alla distribuzione di Cloud Connector Edition.
-ms.openlocfilehash: 7982cd153dcd9cc615201044c080479e9693550a0446b12c9a8a73c4366a9d57
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 95a3a89e4ae593ffa972f7b5de3891ee94aaeff6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344575"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623404"
 ---
 # <a name="troubleshoot-your-cloud-connector-deployment"></a>Risolvere i problemi relativi alla distribuzione di Cloud Connector
 
@@ -32,7 +32,7 @@ Risolvere i problemi relativi alla distribuzione di Cloud Connector Edition.
   
 In questo argomento vengono descritte le soluzioni ai problemi comuni relativi alle distribuzioni di Cloud Connector Edition. Se si verificano problemi con le chiamate da e verso la rete PSTN (Public Switched Telephone Network), è possibile analizzare seguendo le soluzioni descritte in questo argomento.
   
-Cloud Connector fornisce meccanismi incorporati per la risoluzione automatica di alcuni problemi. Un processo di rilevamento automatico cerca potenziali problemi con le appliance cloud Connector e, se possibile, adotta azioni correttive per risolvere tali problemi senza l'intervento dell'amministratore. Il processo di rilevamento funziona come segue:
+Cloud Connector fornisce meccanismi incorporati per la risoluzione automatica di alcuni problemi. Un processo di rilevamento automatico cerca potenziali problemi con le appliance Cloud Connector e, se possibile, adotta azioni correttive per risolvere tali problemi senza l'intervento dell'amministratore. Il processo di rilevamento funziona come segue:
   
 - **Sequenza di rilevamento:** Il servizio di gestione dei connettori cloud esegue un processo ogni 60 secondi per rilevare se un'appliance è in stato di inossamento. In Cloud Connector versione 2.0 e successive, il processo di rilevamento usa l'opzione Skype for Business Corpnet per effettuare connessioni PowerShell ai computer Cloud Connector; per le versioni precedenti alla 2.0, il processo di rilevamento utilizza l'opzione di gestione Cloud Connector.
     
@@ -99,7 +99,7 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
     
   - Accedere a CMS/Mediation Server e verificare che nella scheda NIC corpnet sia assegnato un indirizzo IP valido e che l'IP statico e il DNS validi siano configurati come indirizzo IP del server AD.
     
-  - Accedere a CMS/Mediation Server e aprire un prompt dei comandi. Assicurarsi di poter eseguire il ping dell'FQDN e dell'indirizzo IP del server Active Directory. Se non è possibile, potrebbe verificarsi un conflitto di indirizzi IP. Provare ad assegnare un nuovo INDIRIZZO IP per Active Directory e aggiornare il DNS nel server CMS/Mediation Server di conseguenza.
+  - Accedere a CMS/Mediation Server e aprire un prompt dei comandi. Assicurarsi di poter eseguire il ping dell'FQDN e dell'indirizzo IP del server Active Directory. Se non è possibile, potrebbe verificarsi un conflitto di indirizzi IP. Provare ad assegnare un nuovo IP per Active Directory e aggiornare il DNS nel server CMS/Mediation Server di conseguenza.
     
 - **Problema: viene visualizzato il seguente messaggio di errore, "Remove-VMSwitch : Operazione non riuscita durante la rimozione del commutatore Ethernet virtuale. Il commutatore virtuale 'Cloud Connector Management Switch' non può essere eliminato perché viene utilizzato da macchine virtuali in esecuzione o assegnato a pool figlio."**
     
@@ -110,9 +110,9 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
     > [!NOTE]
     > Questo problema si applica solo alle versioni di Cloud Connector precedenti alla 1.4.2. 
   
-    L'errore di avvio potrebbe anche essere dovuto al fatto che in precedenza è stato eseguito il failover del server Front End (utilizzando il failover del computer). In questo caso, richiamare il fail back (utilizzando il fail back del computer).
+    L'avvio potrebbe non riuscire anche perché in precedenza è stato eseguito il failover del server Front End (utilizzando il failover del computer). In questo caso, richiamare il fail back (utilizzando il fail back del computer).
     
-    **Risoluzione:** Questo problema si verifica in un server perimetrale quando il certificato CA radice o il certificato CA intermedio non è considerato attendibile dal server perimetrale. Anche se il certificato esterno può essere importato ma la catena di certificati è interrotta. In questa condizione, non è possibile avviare il servizio RTCMRAUTH e/o RTCSRV.
+    **Risoluzione:** Questo problema si verifica in un server perimetrale quando il certificato CA radice o il certificato CA intermedio non è considerato attendibile dal server perimetrale. Anche se il certificato esterno può essere importato ma la catena di certificati è interrotta. In questa condizione, il servizio RTCMRAUTH e/o RTCSRV non può essere avviato.
     
     Importare manualmente il certificato della CA radice e tutti i certificati CA intermedi del certificato esterno nel server perimetrale e quindi riavviare il server perimetrale. Dopo aver visualizzato i servizi RTCMRAUTH e RTCSRV avviati nel server perimetrale, tornare al server host, avviare una console di PowerShell come amministratore ed eseguire il cmdlet seguente per passare alla nuova distribuzione:
     
@@ -146,7 +146,7 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
     
     **Risoluzione:** Per risolvere questo problema, vedere [Configure online hybrid Mediation Server Impostazioni](configure-cloud-connector-integration-with-your-office-365-tenant.md#BKMK_ConfigureMediationServer).
     
-- **Problema: viene visualizzato un messaggio di avviso relativo Windows aggiornamento durante l'installazione del server Active Directory: "Windows l'aggiornamento automatico non è abilitato. Per assicurarsi che il ruolo o la funzionalità appena installata sia aggiornata automaticamente, attivare Windows Update."**
+- **Problema: viene visualizzato un messaggio di avviso relativo Windows aggiornamento durante l'installazione del server Active Directory: "Windows l'aggiornamento automatico non è abilitato. Per assicurarti che il ruolo o la funzionalità appena installata sia aggiornata automaticamente, attiva Windows Update."**
     
     **Risoluzione:** Avviare una sessione di Tenant Remote PowerShell Skype for Business credenziali di amministratore tenant, quindi eseguire il cmdlet seguente per controllare la configurazione _EnableAutoUpdate_ del sito:
     
@@ -162,21 +162,21 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
 
     In alternativa, è possibile controllare e installare manualmente gli aggiornamenti. Vedere la sezione successiva.
     
-- **Problema: viene visualizzato un messaggio di errore: Impossibile registrare l'appliance perché l'input/configurazione corrente o \<SiteName\> o è in conflitto con le appliance \<ApplianceName\> \<Mediation Server FQDN\> \<Mediation Server IP Address\> esistenti. Rimuovi l'appliance in conflitto o aggiorna le informazioni di input/configurazione e quindi registra di nuovo. ' quando viene eseguito Register-CcAppliance per registrare l'appliance corrente online.**
+- **Problema: viene visualizzato un messaggio di errore: Impossibile registrare l'appliance perché l'input/configurazione corrente o \<SiteName\> o è in conflitto con le appliance \<ApplianceName\> \<Mediation Server FQDN\> \<Mediation Server IP Address\> esistenti. Rimuovi l'appliance in conflitto o aggiorna le informazioni di input/configurazione e quindi registra di nuovo. ' quando viene eseguito Register-CcAppliance per registrare l'appliance corrente in linea.**
     
     **Risoluzione:** I valori per \<ApplianceName\> e \<Mediation Server FQDN\> devono essere \<Mediation Server IP Address\> univoci e utilizzati solo per la registrazione di un dispositivo. Per impostazione predefinita, \<ApplianceName\> proviene dal nome host. \<Mediation Server FQDN\> e \<Mediation Server IP Address\> definito nel file ini di configurazione.
     
     Ad esempio, utilizzando (ApplianceName= MyserverNew, Mediation Server FQDN=ms.contoso.com, Mediation Server IP Address=10.10.10.10) per eseguire la registrazione in SiteName=MySite, ma se è presente un'appliance registrata (ApplianceName= Myserver, Mediation Server FQDN=ms.contoso.com, Mediation Server IP Address=10.10.10.10), si avrà il conflitto.
     
-    Prima di tutto, controllare il file CloudConnector.ini nella sezione Directory ApplianceRoot. Si otterrà \<SiteName\> e i valori nel \<Mediation Server FQDN\> \<Mediation Server IP Address\> file. \<ApplianceName\> è il nome del server host.
+    Innanzitutto, controllare il file CloudConnector.ini nella sezione Directory ApplianceRoot. Si otterrà \<SiteName\> e i valori nel \<Mediation Server FQDN\> \<Mediation Server IP Address\> file. \<ApplianceName\> è il nome del server host.
     
-    In secondo momento, avviare Remote PowerShell tenant usando le credenziali di amministratore del tenant Skype for Business, quindi eseguire il cmdlet seguente per controllare le appliance registrate.
+    In secondo momento, avvia Remote PowerShell tenant usando le credenziali di amministratore del tenant Skype for Business, quindi esegui il cmdlet seguente per controllare le appliance registrate.
     
   ```powershell
   Get-CsHybridPSTNAppliance
   ```
 
-    Dopo aver identificato eventuali conflitti, è possibile aggiornare il file CloudConnector.ini con le informazioni corrispondenti all'appliance registrata oppure annullare la registrazione dell'appliance esistente per risolvere i conflitti.
+    Dopo aver identificato eventuali conflitti, è possibile aggiornare il file di CloudConnector.ini con le informazioni corrispondenti all'appliance registrata oppure annullare la registrazione dell'appliance esistente per risolvere i conflitti.
     
   ```powershell
   Unregister-CsHybridPSTNAppliance -Force
@@ -187,11 +187,11 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
     
   **Risoluzione:** Ciò può verificarsi quando si esegue l'aggiornamento da 1.3.4 o 1.3.8 a 1.4.1. Dopo aver installato la versione 1.4.1 con il .msi, è necessario eseguire `Register-CcAppliance` prima di eseguire qualsiasi altro cmdlet. `Register-CcAppliance` eseguirà la migrazione module.ini file da %UserProfile%\CloudConnector a %ProgramData%\CloudConnector. Se si è perso, verrà creato un nuovo module.ini nella cartella %ProgramData%\CloudConnector e verranno sostituite le informazioni sulla versione di esecuzione/backup per 1.3.4 o 1.3.8.
     
-  Confronta module.ini file nella cartella %UserProfile%\CloudConnector e %ProgramData%\CloudConnector. In caso di differenze, eliminare il file module.ini in %ProgramData%\CloudConnector ed eseguire di nuovo  `Register-CcAppliance` . È inoltre possibile modificare manualmente il file con la versione di esecuzione e di backup corretta.
+  Confronta module.ini file nella cartella %UserProfile%\CloudConnector e %ProgramData%\CloudConnector. In caso di differenze, eliminare il file module.ini in %ProgramData%\CloudConnector ed eseguire di nuovo  `Register-CcAppliance` . È inoltre possibile modificare manualmente il file con la versione corretta in esecuzione e di backup.
     
 - **Problema: dopo aver eseguito il cmdlet Switch-CcVersion per passare a una versione precedente diversa dalla versione corrente dello script, non è disponibile alcun supporto disponibilità elevata per questa versione precedente.**
     
-    **Risoluzione:** Ad esempio, è stato eseguito l'aggiornamento da 1.4.1 a 1.4.2. La versione corrente dello script, che può essere determinata dall'esecuzione, e la versione in esecuzione, che può essere determinata dall'esecuzione, sono `Get-CcVersion`  `Get-CcRunningVersion` entrambe 1.4.2. Al momento, se si esegue per tornare alla versione in esecuzione alla versione 1.4.1, non sarà disponibile alcun supporto per la `Switch-CcVersion` disponibilità elevata per questa versione precedente.
+    **Risoluzione:** Ad esempio, è stato eseguito l'aggiornamento da 1.4.1 a 1.4.2. La versione corrente dello script, che può essere determinata eseguendo , e la versione in esecuzione, che può essere determinata eseguendo sono `Get-CcVersion`  `Get-CcRunningVersion` entrambe 1.4.2. Al momento, se si esegue per tornare alla versione in esecuzione alla versione 1.4.1, non sarà disponibile alcun supporto per la `Switch-CcVersion` disponibilità elevata per questa versione precedente.
     
     Per ottenere il supporto completo della disponibilità elevata, tornare alla versione 1.4.2, in modo che la versione in esecuzione e la versione dello script siano uguali. Se si verificano problemi con la distribuzione 1.4.2, disinstallarla e reinstallarla il prima possibile.
     
@@ -200,7 +200,7 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
     **Soluzione: Skype for Business** certificati dell'Autorità di certificazione sono validi per cinque anni. I certificati interni rilasciati all'archivio di gestione centrale, al Mediation Server e al server perimetrale sono validi per due anni.
     
     > [!NOTE]
-    > In Cloud Connector versione 2.0 e successive, il cmdlet Renew-CcServerCertificate è cambiato in Update-CcServerCertificate e il cmdlet Renew-CcCACertificate è cambiato in Update-CcCACertificate. 
+    > In Cloud Connector versione 2.0 e successive, il cmdlet Renew-CcServerCertificate è cambiato in Update-CcServerCertificate e il cmdlet Renew-CcCACertificate è stato modificato in Update-CcCACertificate. 
   
     Se i certificati interni rilasciati all'archivio di gestione centrale, al Mediation Server e al server perimetrale sono quasi scaduti o compromessi, eseguire il cmdlet Renew-CcServerCertificate o Update-CcServerCertificate per rinnovare i certificati.
     
@@ -293,7 +293,7 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
      Remove-CcLegacyServerCertificate 
      ```
      
-6. Se viene utilizzato TLS tra il gateway e il Mediation Server, eseguire il cmdlet Export-CcRootCertificate da qualsiasi appliance del sito e quindi installare il certificato esportato nei gateway PSTN. Potrebbe anche essere necessario riemettere il certificato nel gateway.
+6. Se si utilizza TLS tra il gateway e Mediation Server, eseguire il cmdlet Export-CcRootCertificate da qualsiasi appliance del sito e quindi installare il certificato esportato nei gateway PSTN. Potrebbe anche essere necessario riemettere il certificato nel gateway.
   
      ```powershell
      Export-CcRootCertificate
@@ -364,23 +364,23 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
 
 - **Problema: con Cloud Connector Edition 2.1, quando si esegue Install-CcAppliance, viene visualizzato un messaggio di errore simile al seguente: "Impossibile installare una nuova istanza con errore: Impossibile impostare "State" perché solo le stringhe possono essere utilizzate come valori per impostare le proprietà XmlNode"**
 
-   **Risoluzione:** In Cloudconnector.ini, nella sezione [Common], aggiungi la configurazione "State" come segue: CountryCode=US State=WA City=Redmond
+   **Risoluzione:** In Cloudconnector.ini, nella sezione [Common], aggiungi la configurazione "State" come indicato di seguito: CountryCode=US State=WA City=Redmond
 
-   Non è obbligatorio che la riga "State" abbia valore, tuttavia la riga "State" non può essere rimossa dal file Cloudconnector.ini file.
+   Non è obbligatorio che la riga "State" abbia valore, ma la riga "State" non può essere rimossa dal file Cloudconnector.ini file.
 
 - **Problema: viene visualizzato il seguente messaggio di errore "Dismount-WindowsImage : Dismount-WindowsImage non riuscito. Codice di errore = 0xc1550115" durante l'installazione o l'aggiornamento di Cloud Connector Edition.**
     
-    **Risoluzione:** Avviare una console di PowerShell come amministratore, eseguire "DISM -Cleanup-Wim'". In questo modo verranno ripulite tutte le immagini con problemi. Eseguire Install-CcAppliance o attendere l'aggiornamento automatico dei bit.
+    **Risoluzione:** Avviare una console di PowerShell come amministratore, eseguire "Gestione e manutenzione immagini distribuzione -Cleanup-Wim'". In questo modo verranno ripulite tutte le immagini con problemi. Eseguire Install-CcAppliance o attendere l'aggiornamento automatico dei bit.
     
-- **Problema: la distribuzione della prima appliance Cloud Connector in un ambiente ha esito negativo**
+- **Problema: la distribuzione della prima appliance cloud connector in un ambiente ha esito negativo**
     
     **Risoluzione:** I passaggi da eseguire dipendono dal motivo per cui la distribuzione non è riuscita:
     
   - Se il primo dispositivo Cloud Connector non riesce e non è possibile determinare il motivo dell'errore, è necessario installare di nuovo l'appliance fino a quando la distribuzione non riesce e quindi installare le altre appliance.
     
-  - Se il primo dispositivo Cloud Connector ha esito negativo con un problema secondario, ad esempio un problema di certificato esterno, potrebbe essere possibile risolvere il problema senza installare di nuovo l'appliance. È quindi possibile utilizzare PowerShell remoto tenant per contrassegnare la distribuzione come completata come segue. È inoltre possibile eseguire la procedura seguente se la prima distribuzione ha avuto esito positivo, ma, per qualche motivo, Cloud Connector non riesce a segnalare la distribuzione come completata.
+  - Se il primo dispositivo Cloud Connector ha esito negativo con un problema secondario, ad esempio un problema di certificato esterno, potrebbe essere possibile risolvere il problema senza installare di nuovo l'appliance. È quindi possibile utilizzare PowerShell remoto tenant per contrassegnare la distribuzione come completata come segue. È inoltre possibile eseguire la procedura seguente se la prima distribuzione ha avuto esito positivo, ma, per qualche motivo, Cloud Connector non è in grado di segnalare la distribuzione come completata.
     
-  - Per ottenere l'identità (GUID) della prima appliance Cloud Connector, eseguire il cmdlet Get-CsHybridPSTNAppliance cloud.
+  - Per ottenere l'identità (GUID) della prima appliance Cloud Connector, eseguire il cmdlet Get-CsHybridPSTNAppliance.
     
   - Per contrassegnare l'appliance come distribuito correttamente, eseguire il Set-CsCceApplianceDeploymentStatus come segue:
     
@@ -390,9 +390,9 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
 
 - **Problema: è necessario verificare e installare manualmente gli Windows nel server host o nelle macchine virtuali.**
     
-   **Risoluzione:** Ti consigliamo di sfruttare gli aggiornamenti automatici del sistema operativo forniti da Skype for Business Cloud Connector Edition. Dopo la registrazione di un'appliance per la gestione online e l'aggiornamento automatico del sistema operativo è abilitato, il server host e le macchine virtuali controllano e installano automaticamente gli aggiornamenti Windows in base alle impostazioni dell'intervallo di tempo di aggiornamento del sistema operativo.
+   **Risoluzione:** Ti consigliamo di sfruttare gli aggiornamenti automatici del sistema operativo forniti da Skype for Business Cloud Connector Edition. Dopo la registrazione di un'appliance per la gestione online e l'aggiornamento automatico del sistema operativo, il server host e le macchine virtuali controllano e installano automaticamente gli aggiornamenti Windows in base alle impostazioni dell'intervallo di tempo di aggiornamento del sistema operativo.
     
-   Se è necessario verificare e installare manualmente Windows aggiornamenti, seguire i passaggi di questa sezione applicabili al tipo di distribuzione. È consigliabile pianificare l'aggiornamento contemporaneamente sia del server host che delle macchine virtuali in esecuzione su di esso per ridurre al minimo la quantità di tempo di in down time necessario per gli aggiornamenti.
+   Se è necessario verificare e installare manualmente Windows aggiornamenti, seguire i passaggi di questa sezione applicabili al tipo di distribuzione. È consigliabile pianificare l'aggiornamento contemporaneamente sia del server host che delle macchine virtuali in esecuzione su di esso per ridurre al minimo la quantità di tempo di inerte necessario per gli aggiornamenti.
     
    Se si preferisce, è possibile utilizzare un server Windows Server Update Services (WSUS) per fornire aggiornamenti ai server Cloud Connector. Assicurati solo di configurare l'Windows update in modo che **non si installi** automaticamente.
     
@@ -406,21 +406,21 @@ Di seguito sono riportate le soluzioni ai problemi più comuni:
     
      - In caso contrario, puoi eseguire Import-Module CloudConnector -Force. 
  
--   **Problema: "Il termine "Stop-CsWindowsService" non viene riconosciuto come nome di un cmdlet, di una funzione, di un file di script o di un programma funzionante." quando si tenta di eseguire un cmdlet Enter-CcUpdate.**
+-   **Problema: "Il termine "Stop-CsWindowsService" non viene riconosciuto come nome di un cmdlet, una funzione, un file script o un programma funzionante." quando si tenta di eseguire un cmdlet Enter-CcUpdate.**
 
     **Risoluzione:** Eliminare il file $HOME\AppData\Local\Microsoft\Windows\PowerShell\ModuleAnalysisCache.
-PowerShell crea questo file come cache di cmdlet dai moduli trovati in modo che non sia necessario analizzare di nuovo tutti i moduli ogni volta perché ciò renderebbe le cose molto lente. Molto probabilmente, c'è stato un danneggiamento dei file che ha fornito risultati fuorvianti a PowerShell durante la lettura dalla cache.
+PowerShell crea questo file come cache di cmdlet dai moduli trovati in modo che non sia necessario analizzare di nuovo tutti i moduli ogni volta in quanto ciò renderebbe le cose molto lente. Molto probabilmente, c'è stato un danneggiamento dei file che ha fornito risultati fuorvianti a PowerShell durante la lettura dalla cache.
 
 -   **Problema: "Import-Module CloudConnector" genera l'errore "Import-Module: Il modulo specificato "CloudConnector" non è stato caricato perché non è stato trovato alcun file di modulo valido in alcuna directory dei moduli"**
 
     **Risoluzione:**
     - Verificare che il modulo CloudConnector esista effettivamente in c:\Programmi\WindowsPowerShell\Modules
     
-    - Dopo aver convalidato l'esistenza del modulo CloudConnector in questo percorso, è possibile modificare la variabile di ambiente PSModulePath che archivia il percorso dei percorsi dei moduli:
+    - Dopo aver convalidato l'esistenza del modulo CloudConnector in questo percorso, la variabile di ambiente PSModulePath che archivia il percorso dei percorsi dei moduli può essere modificata:
     
      a. Modifica temporanea: avviare Powershell come amministratore ed eseguire il comando seguente: $env:PSModulePath = $env:PSModulePath + "; C:\Programmi\WindowsPowerShell\Modules\"
         
-     b. Per la modifica persistente, avviare PowerShell come amministratore ed eseguire i comandi seguenti, uno alla volta: $CurrentValue = [Environment]::GetEnvironmentVariable("PSModulePath", "Machine") SetEnvironmentVariable("PSModulePath", $CurrentValue + "; C:\Programmi\WindowsPowerShell\Modules", "Machine")
+     b. Per una modifica persistente, avviare PowerShell come amministratore ed eseguire i comandi seguenti, uno alla volta: $CurrentValue = [Environment]::GetEnvironmentVariable("PSModulePath", "Machine") SetEnvironmentVariable("PSModulePath", $CurrentValue + "; C:\Programmi\WindowsPowerShell\Modules", "Machine")
 
     
 ## <a name="install-windows-updates-manually"></a>Installare Windows aggiornamenti manualmente
@@ -431,7 +431,7 @@ Per verificare manualmente la disponibilità di aggiornamenti, connettersi a ogn
   
 - Se nel sito è presente un solo dispositivo, connettersi a ogni macchina virtuale e aprire il **Pannello di controllo.** Selezionare **System and Security Windows \> Update** e quindi configurare gli aggiornamenti e i riavvii del server in base alle esigenze.
     
-- Se nel sito sono presenti più appliance, gli utenti non potranno accedere all'istanza da aggiornare e riavviare durante gli aggiornamenti. Gli utenti si connettono ad altre istanze della distribuzione fino a quando tutte le macchine virtuali e tutti i servizi Skype for Business non vengono avviati nelle macchine virtuali dopo il completamento degli aggiornamenti. Per evitare potenziali interruzioni del servizio, è possibile rimuovere l'istanza dall'ha mentre si applicano gli aggiornamenti e quindi ripristinarla al termine. A questo scopo:
+- Se nel sito sono presenti più appliance, gli utenti non potranno accedere all'istanza aggiornata e riavviata durante gli aggiornamenti. Gli utenti si connettono ad altre istanze della distribuzione finché tutte le macchine virtuali e tutti i servizi Skype for Business non vengono avviati nelle macchine virtuali dopo il completamento degli aggiornamenti. Per evitare potenziali interruzioni del servizio, è possibile rimuovere l'istanza dall'ha mentre si applicano gli aggiornamenti e quindi ripristinarla al termine. A questo scopo:
     
 1. In ogni server host, aprire una console di PowerShell come amministratore.
     
@@ -455,7 +455,7 @@ Per le distribuzioni multisnode, seguire la procedura per un singolo sito per og
   
 ## <a name="tips-when-installing-anti-virus-software-on-the-cloud-connector-host-machine"></a>Suggerimenti durante l'installazione di software antivirus nel computer host cloud Connector
 
-Se è necessario installare software antivirus nel computer host Cloud Connector, è necessario aggiungere le esclusioni seguenti:
+Se è necessario installare software antivirus nel computer host Cloud Connector, è necessario aggiungere le seguenti esclusioni:
   
 - Directory appliance locale in ogni computer.
     

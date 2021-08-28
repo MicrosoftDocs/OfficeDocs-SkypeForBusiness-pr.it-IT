@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ea024a26-37b3-410e-961b-83ab85c07540
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione delle conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 963f8dd29cce1e086fd797b2872000ab5cb7b1c80e7c9884675f8a89c43cbebc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 04d0202e9d5187e33172e8bb4c4f1e51f5563d19
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349978"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58593560"
 ---
 # <a name="plan-for-dial-in-conferencing-in-skype-for-business-server"></a>Pianificare le conferenze telefoniche con accesso esterno in Skype for Business Server
  
@@ -25,7 +25,7 @@ ms.locfileid: "54349978"
   
 Le conferenze telefoniche con accesso esterno sono una funzionalità facoltativa di Skype for Business Server che consente ai partecipanti alla riunione di partecipare alla parte audio di una riunione chiamandoli da un telefono. Le conferenze telefoniche con accesso esterno sono un sottoinsieme delle funzionalità di audioconferenza e richiedono interventi di configurazione aggiuntive. In questo argomento vengono descritte le informazioni necessarie prima di distribuire le conferenze telefoniche con accesso esterno per l'organizzazione. 
   
-Alcuni dei componenti necessari per le conferenze telefoniche con accesso esterno sono specifici per le conferenze telefoniche con accesso esterno e altri sono VoIP aziendale conferenza telefonica. Sebbene le conferenze telefoniche con accesso esterno utilizzino alcuni degli stessi componenti utilizzati da VoIP aziendale, è possibile distribuire le conferenze telefoniche con accesso esterno anche se non si distribuiscono VoIP aziendale. In questa sezione vengono descritti i componenti necessari per le conferenze telefoniche con accesso esterno. Per ulteriori informazioni sulla pianificazione di una soluzione VoIP aziendale completa, vedere [Plan your VoIP aziendale solution in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution.md).
+Alcuni dei componenti necessari per le conferenze telefoniche con accesso esterno sono specifici per le conferenze telefoniche con accesso esterno e altri sono VoIP aziendale componenti. Sebbene le conferenze telefoniche con accesso esterno utilizzino alcuni degli stessi componenti utilizzati VoIP aziendale, è possibile distribuire le conferenze telefoniche con accesso esterno anche se non si distribuiscono VoIP aziendale. In questa sezione vengono descritti i componenti necessari per le conferenze telefoniche con accesso esterno. Per ulteriori informazioni sulla pianificazione di una soluzione VoIP aziendale completa, vedere [Plan your VoIP aziendale solution in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/enterprise-voice-solution.md).
   
 Per le conferenze telefoniche con accesso esterno è necessario fornire connettività alla rete PSTN (Public Switched Telephone Network) distribuendo un Mediation Server. Oltre a distribuire un Mediation Server, è necessario considerare quanto segue per consentire le conferenze telefoniche con accesso esterno per l'organizzazione:
   
@@ -40,7 +40,7 @@ Per le conferenze telefoniche con accesso esterno è necessario fornire connetti
 - Supporto per utenti aziendali e anonimi
     
 > [!NOTE]
-> Se si distribuiscono conferenze telefoniche con accesso esterno, è necessario distribuirla in ogni pool in cui si distribuisce Skype for Business Server conferenza telefonica. Non è necessario assegnare numeri di accesso, i numeri che i partecipanti chiamano per partecipare a una conferenza, in ogni pool, ma è necessario distribuire la funzionalità di accesso esterno in ogni pool. Questo requisito supporta la funzionalità dei nomi registrati quando un utente chiama un numero di accesso da un pool per partecipare a una Skype for Business Server conferenza in un pool diverso. 
+> Se si distribuiscono conferenze telefoniche con accesso esterno, è necessario distribuirla in ogni pool in cui si distribuiscono Skype for Business Server conferenza telefonica. Non è necessario assegnare numeri di accesso, i numeri che i partecipanti chiamano per partecipare a una conferenza, in ogni pool, ma è necessario distribuire la funzionalità di accesso esterno in ogni pool. Questo requisito supporta la funzionalità dei nomi registrati quando un utente chiama un numero di accesso da un pool per partecipare a Skype for Business Server conferenza in un pool diverso. 
   
 ## <a name="plan-for-pstn-connectivity"></a>Pianificare la connettività PSTN
 
@@ -52,7 +52,7 @@ Per le conferenze telefoniche con accesso esterno sono necessari almeno un Media
   
 Per informazioni dettagliate sui requisiti di Mediation Server e gateway PSTN, vedere [Mediation Server component in Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/mediation-server.md), Deploy a Mediation Server in [Topology Builder in Skype for Business Server e](../../deploy/deploy-enterprise-voice/deploy-a-mediation-server.md)Define a gateway in [Topology Builder in Skype for Business Server](../../deploy/deploy-enterprise-voice/define-a-gateway.md).
   
-## <a name="plan-for-dial-plans-access-numbers-and-conferencing-regions"></a>Pianificare dial plan, numeri di accesso e aree conferenza
+## <a name="plan-for-dial-plans-access-numbers-and-conferencing-regions"></a>Pianificare dial plan, numeri di accesso e aree di conferenza
 
 Per configurare le conferenze telefoniche con accesso esterno, è necessario creare dial plan e numeri di accesso alle conferenze telefoniche con accesso esterno. È inoltre possibile specificare le aree di accesso esterno che associano un numero di accesso alle conferenze telefoniche con accesso esterno ai relativi dial plan. Più precisamente:
   
@@ -72,7 +72,7 @@ Prima di configurare i dial plan, è importante pianificare come si desidera ass
   
 - Un'area geografica è in genere un'area geografica associata a un ufficio o a un gruppo di uffici.
     
-- Le lingue sono associate ai numeri di accesso esterno. Se si supportano aree geografiche con più lingue, è necessario decidere come definire le aree geografiche per supportare più lingue. Ad esempio, è possibile definire più aree geografiche in base a una combinazione di area geografica e lingua oppure definire una singola area in base all'area geografica e disporre di numeri di accesso esterno diversi per ogni lingua.
+- Le lingue sono associate ai numeri di accesso esterno. Se si supportano aree geografiche con più lingue, è necessario decidere come definire le aree geografiche per supportare più lingue. Ad esempio, è possibile definire più aree geografiche in base a una combinazione di area geografica e lingua oppure definire una singola area geografica in base all'area geografica e disporre di numeri di accesso esterno diversi per ogni lingua.
     
 - Quando un utente pianifica una riunione, per impostazione predefinita la riunione utilizza l'area specificata dal dial plan dell'utente.
     
@@ -117,7 +117,7 @@ Le conferenze telefoniche con accesso esterno supportano utenti sia aziendali si
 Gli utenti aziendali o i coordinatori delle conferenze che partecipano a una conferenza abilitata per l'accesso esterno compongono uno dei numeri di accesso alla conferenza e devono immettere l'ID conferenza. Se un coordinatore non ha ancora eseguito l'accesso alla riunione, gli utenti possono immettere il proprio interno (o il numero di telefono completo) per le comunicazioni unificate e il PIN o attendere di essere ammessi da un coordinatore. Gli organizzatori della riunione possono partecipare alla riunione come coordinatori semplicemente immettendo il proprio PIN. Il Front End Server utilizza la combinazione di numero di telefono completo o interno e PIN per mappare in modo univoco gli utenti aziendali alle proprie credenziali di Active Directory. Di conseguenza, gli utenti aziendali vengono autenticati e identificati in base al nome nella conferenza. Gli utenti aziendali possono anche assumere un ruolo della conferenza predefinito dall'organizzatore.
   
 > [!NOTE]
-> Enterprise utenti che eseguono l'accesso da un telefono IP di office o da Skype for Business Server Attendant non viene richiesto di immettere il proprio numero di telefono perché sono già autenticati. 
+> Enterprise utenti che eseguono l'accesso da un telefono IP di office o da Skype for Business Server Attendant non viene richiesto il numero di telefono perché sono già autenticati. 
   
 Gli utenti anonimi che desiderano partecipare a una conferenza telefonica con accesso esterno compongono uno dei numeri di accesso alla conferenza e devono quindi immettere il proprio ID conferenza. Gli utenti anonimi non autenticati devono inoltre registrare il proprio nome. Il nome registrato identifica gli utenti non autenticati nella conferenza. Gli utenti anonimi non vengono ammessi alla conferenza fino a quando un responsabile o un utente autenticato non accede, e non possono ricevere un ruolo predefinito.
   
@@ -136,7 +136,7 @@ Durante la pianificazione di una riunione, l'organizzatore della riunione può s
     
 - Tutti i partecipanti all'accesso esterno possono esercitare comandi DTMF per ascoltare la Guida, ascoltare l'elenco conferenze e disattivare l'audio.
     
-- I partecipanti con accesso esterno, ovvero se si tratta o meno di comporre dalla rete PSTN, ascoltano gli annunci personali durante la conferenza, ad esempio se sono stati disattivati o disattivati, se la riunione è stata registrata o se qualcuno è in attesa nella sala di attesa.
+- I partecipanti con accesso esterno, ovvero se estendono o meno la chiamata dalla rete PSTN, ascoltano gli annunci personali durante la conferenza, ad esempio se sono stati disattivati o disattivati, se la riunione è stata registrata o se qualcuno è in attesa nella sala di attesa.
     
     > [!NOTE]
     > I partecipanti che accedono alla conferenza facendo clic su un collegamento invece di comporre un numero non possono ascoltare gli annunci personali. 

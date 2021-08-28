@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Skype for Business Server regole di normalizzazione usano .NET Framework espressioni regolari per convertire i numeri di telefono composto nel formato E.164; in altre parole, le regole di normalizzazione prendono il numero di telefono composto da un utente e lo convertono nel formato utilizzato internamente da Skype for Business Server. A ogni dial plan deve essere assegnata una o più regole di normalizzazione.
-ms.openlocfilehash: bb229760bd8f41086211245e8e7090453fa8985abb72dc721b249c5c5df81238
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4b78207f90bb013b8be4161b7319cb605ad148e5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333438"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58602491"
 ---
 # <a name="defining-normalization-rules-in-skype-for-business-server"></a>Definizione delle regole di normalizzazione in Skype for Business Server
 
@@ -32,12 +32,12 @@ Per informazioni dettagliate su come scrivere espressioni regolari, [vedere .NET
 
 ## <a name="create-or-modify-a-normalization-rule-by-using-build-a-normalization-rule"></a>Creare o modificare una regola di normalizzazione utilizzando Crea una regola di normalizzazione
 
-Completare la procedura seguente se si desidera creare o modificare una regola di normalizzazione nel Skype for Business Server Di controllo. 
+Completare i passaggi seguenti se si desidera creare o modificare una regola di normalizzazione nel Skype for Business Server Di controllo. 
 
 **Per definire una regola mediante Crea regola di normalizzazione**
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [Delegate setup permissions](/previous-versions/office/lync-server-2013/lync-server-2013-delegate-setup-permissions).
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Install and open administrative tools](../../management-tools/install-and-open-administrative-tools.md).
 3. (Facoltativo) Seguire i passaggi descritti in [Create a dial plan](../../deploy/deploy-enterprise-voice/dial-plans.md#to-create-a-dial-plan) through step 11 o Modify a dial [plan](../../deploy/deploy-enterprise-voice/dial-plans.md#to-modify-a-dial-plan) through step 10. 
 4. In **Nuova regola di normalizzazione** o **Modifica regola di normalizzazione** digitare un nome descrittivo del formato del numero da normalizzare in **Nome**, ad esempio **Prefisso5Cifre**.
 5. (Facoltativo) In **Descrizione** digitare una descrizione della regola di normalizzazione, ad esempio "Converte prefissi a 5 cifre".
@@ -47,7 +47,7 @@ Completare la procedura seguente se si desidera creare o modificare una regola d
     - **Cifre da rimuovere**: (Facoltativo) Specificare il numero di cifre iniziale da rimuovere dai numeri composto a cui si desidera che il formato corrisponda.
     - **Cifre da aggiungere**: (Facoltativo) Specificare le cifre da aggiungere ai numeri composto a cui si desidera che il formato corrisponda.
     
-    I valori immessi in questi campi vengono riportati nei campi **Formato per corrispondenza** e **Regola di conversione**. Se, ad esempio, si lascia vuota l'opzione Cifre iniziale, digitare **7** nel campo Lunghezza selezionare Esattamente e specificare **0** in  **Cifre** da rimuovere, l'espressione regolare risultante nel campo **Motivo** da trovare corrisponderà alla seguente: 
+    I valori immessi in questi campi vengono riportati nei campi **Formato per corrispondenza** e **Regola di conversione**. Ad esempio, se  si lasciano vuote le  cifre di inizio, digitare **7** nel campo Lunghezza selezionare Esattamente e **specificare 0** in **Cifre** da rimuovere , l'espressione regolare risultante nel campo **Motivo** da trovare corrisponderà alla seguente:
 
     **^(\d {7} )$**
 
@@ -75,16 +75,16 @@ Completare i passaggi seguenti se si desidera creare o modificare manualmente un
 **Per definire manualmente una regola di normalizzazione**
 
 1. Accedere al computer come membro del gruppo RTCUniversalServerAdmins oppure come membro del ruolo CsVoiceAdministrator, CsServerAdministrator o CsAdministrator. Per informazioni dettagliate, vedere [Delegate setup permissions](/previous-versions/office/lync-server-2013/lync-server-2013-delegate-setup-permissions).
-2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)
+2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business di controllo, vedere [Install and open administrative tools](../../management-tools/install-and-open-administrative-tools.md).
 3. (Facoltativo) Seguire i passaggi descritti in [Create a dial plan](GET LINK AFTER MIGRATION) through step 11 o Modify a dial [plan](GET LINK AFTER MIGRATION) through step 10.  
-4. In Nuova regola  **di normalizzazione** o Modifica regola di normalizzazione digitare un nome che descriva il modello di numero normalizzato in **Nome** ( ad esempio, assegnare alla regola di normalizzazione il nome **5DigitExtension**).
+4. In Nuova regola  **di normalizzazione** o Modifica regola di normalizzazione digitare un nome che descriva il modello di numero normalizzato in **Nome** , ad esempio nome regola di normalizzazione **5DigitExtension**.
 5. (Facoltativo) In **Descrizione** digitare una descrizione della regola di normalizzazione, ad esempio "Converte prefissi a 5 cifre".
 6. In **Crea una regola di normalizzazione fare** clic su **Modifica.**
 7. Immettere quanto segue in Digita espressione regolare:
     - In **Corrispondenza questo modello** specificare il modello che si desidera utilizzare per la corrispondenza con il numero di telefono composto.
     - In **Regola di conversione** specificare un modello per il formato dei numeri di telefono E.164 convertiti.
 
-    Ad esempio, se si immette **^(\d {7} )$** **in** Corrispondenza questo modello e **+1425$1** **in** Regola di conversione, la regola normalizza da 5550100 a +14255550100.
+    Ad esempio, se si immette **^(\d {7} )$** **in** Corrispondenza questo modello e **+1425$1** in **Regola** di conversione, la regola normalizza da 5550100 a +14255550100.
 
 8. (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 9. (Facoltativo) Immettere un numero per testare la regola di normalizzazione e quindi fare clic su **Vai**. I risultati del test vengono visualizzati in **Immetti numero di telefono da testare**.
