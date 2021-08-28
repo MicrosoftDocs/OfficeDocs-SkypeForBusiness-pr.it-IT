@@ -13,19 +13,19 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Reporting
 - O365E_ReportsS4BActivity
 description: 'Learn how to get the Skype for Business Activity reports, what it contains, and how to interpret the data. '
-ms.openlocfilehash: 559e29abc72600df1a13e2cf8077796d505d726557370e406894fba8c00d6b6e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bdb7f0df8148b89b90eac073a1d709aa658f06d6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332098"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605655"
 ---
 # <a name="activity-report"></a>Report attività
 
@@ -75,7 +75,7 @@ Usa i dati del grafico interattivo **Utenti** per comprendere le tendenze di uti
 ![Numero 6](../images/sfbcallout6.png)<br/>
 Ciascun grafico ha un asse X (orizzontale) e un asse Y (verticale).
 *    Nel grafico **Attività** l'asse Y è il numero totale di sessioni di conferenza peer-to-peer, organizzate e partecipate.
-*    Nel grafico **attività** Utenti, l'asse Y è il numero di utenti univoci che partecipano a ogni tipo di conferenza peer-to-peer, organizzata e partecipata.
+*    Nel grafico **attività Utenti,** l'asse Y è il numero di utenti univoci che partecipano a ogni tipo di conferenza peer-to-peer, organizzata e partecipata.
 
 L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per il report specifico. 
 ***
@@ -103,7 +103,7 @@ Toccare o fare clic **sull'icona** Colonne in una delle colonne per aggiungere o
    
 ## <a name="want-to-see-other-skype-for-business-reports"></a>Per consultare altri report di Skype for Business
 
-- [Skype for Business utilizzo dei dispositivi](device-usage-report.md) È possibile visualizzare i dispositivi, inclusi i Windows basati su Windows e i dispositivi mobili, in cui è installata l'app Skype for Business e che la usano per messaggistica istantanea e riunioni.
+- [Skype for Business utilizzo dei dispositivi](device-usage-report.md) È possibile visualizzare i dispositivi, inclusi i Windows e i dispositivi mobili basati su Windows, in cui è installata l'app Skype for Business e che la usano per messaggistica istantanea e riunioni.
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
@@ -113,7 +113,7 @@ Toccare o fare clic **sull'icona** Colonne in una delle colonne per aggiungere o
     
 - [Skype for Business utilizzo PSTN](pstn-usage-report.md) È possibile visualizzare il numero di minuti trascorsi nelle chiamate in ingresso/in uscita e il costo per queste chiamate.
 
-- Skype for Business pool di minuti [PSTN](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
+- [Skype for Business pool di minuti PSTN](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
 
 - [Skype for Business dei dettagli della sessione](session-details-report.md) Puoi visualizzare i dettagli sulle esperienze di chiamata dei singoli utenti.
 

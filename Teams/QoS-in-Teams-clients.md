@@ -7,8 +7,8 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: vkorlep, siunies
 audience: admin
-description: Informazioni su come usare la qualità del servizio (QoS) per ottimizzare il traffico di rete per il client Microsoft Teams desktop.
-localization_priority: Normal
+description: Informazioni su come usare la qualità del servizio (QoS) per ottimizzare il traffico di rete per Microsoft Teams client desktop.
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -19,12 +19,12 @@ appliesto:
 ms.custom:
 - seo-marvel-mar2020
 - seo-marvel-apr2020
-ms.openlocfilehash: efe36f1ada9e8c98a82d8d5ece0cee2d9058aa318ef174f6d1b704f1c7f1e178
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c283a66db274bc8723d429631bf265fdb0f5206b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282889"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606015"
 ---
 # <a name="implement-quality-of-service-qos-in-microsoft-teams-clients"></a>Implementare la qualità del servizio (QoS) nei Microsoft Teams client
 
@@ -41,7 +41,7 @@ ms.locfileid: "54282889"
 
 Se possibile, configurare le impostazioni QoS basate su criteri all'interno di un oggetto Criteri di gruppo. La procedura seguente è molto simile alla configurazione degli intervalli di porte e ai criteri di qualità del servizio per i client in [Skype for Business Server](/SkypeForBusiness/manage/network-management/qos/configuring-port-ranges-for-your-skype-clients#configure-quality-of-service-policies-for-clients-running-on-windows-10), che include alcuni dettagli aggiuntivi che potrebbero non essere necessari.
 
-Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, accedere prima di tutto a un computer in cui è stato installato Gestione Criteri di gruppo. Aprire Gestione Criteri di gruppo (fare clic sul pulsante Start, scegliere Strumenti di amministrazione e quindi fare clic su Gestione Criteri di gruppo) e quindi completare i passaggi seguenti:
+Per creare criteri audio QoS per i computer Windows 10 di dominio, accedere prima di tutto a un computer in cui è installato Gestione Criteri di gruppo. Aprire Gestione Criteri di gruppo (fare clic sul pulsante Start, scegliere Strumenti di amministrazione e quindi fare clic su Gestione Criteri di gruppo) e quindi completare la procedura seguente:
 
 1. In Gestione Criteri di gruppo individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer client si trovano in un'unità organizzativa denominata **Client,** il nuovo criterio deve essere creato nell'unità organizzativa Client.
 
@@ -55,7 +55,7 @@ Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, acce
 
 1. Nella pagina di apertura della finestra di dialogo **QoS** basata su criteri digitare un nome per il nuovo criterio nella **casella** Nome. Selezionare **Specifica valore DSCP** e impostare il valore su **46.** Lasciare **deselezionata l'opzione Specifica** velocità in uscita e quindi fare clic su **Avanti.**
 
-1. Nella pagina successiva selezionare Solo le applicazioni con questo nome **eseguibile** **e** immettere il nomeTeams.exee quindi fare clic su **Avanti.** Questa impostazione indica al criterio di assegnare priorità solo al traffico corrispondente Teams client.
+1. Nella pagina successiva selezionare **Solo** le applicazioni con questo nome eseguibile **e** immettere il nomeTeams.exee quindi fare clic su **Avanti.** Questa impostazione indica ai criteri di assegnare la priorità solo al traffico corrispondente dal client Teams client.
 
 1. Nella terza pagina verificare che siano selezionate le opzioni Qualsiasi indirizzo **IP** di origine e Qualsiasi indirizzo **IP** di destinazione e quindi fare clic su **Avanti.** Queste due impostazioni assicurano che i pacchetti siano gestiti indipendentemente dal computer (indirizzo IP) che ha inviato i pacchetti e dal computer (indirizzo IP) che riceverà i pacchetti.
 
@@ -65,11 +65,11 @@ Per creare criteri audio QoS per i computer Windows 10 aggiunti al dominio, acce
 
 1. Ripetere i passaggi da 5 a 10 per creare criteri per Condivisione video e applicazioni/desktop, sostituendo i valori appropriati nei passaggi 6 e 10.
 
-I nuovi criteri creati non saranno applicati fino all'aggiornamento di Criteri di gruppo nei computer client. Anche se i Criteri di gruppo vengono aggiornati periodicamente da soli, è possibile forzare un aggiornamento immediato seguendo questa procedura:
+I nuovi criteri creati non saranno applicati fino a quando i Criteri di gruppo non saranno stati aggiornati nei computer client. Anche se i Criteri di gruppo vengono aggiornati periodicamente da soli, è possibile forzare un aggiornamento immediato seguendo questa procedura:
 
 1. In ogni computer per cui si desidera aggiornare Criteri di gruppo aprire un prompt dei comandi come amministratore (*Esegui come amministratore*).
 
-1. Al prompt dei comandi, immetti
+1. Al prompt dei comandi immettere
 
    ```console
    gpupdate /force
@@ -81,7 +81,7 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
 
 1. Aprire un prompt dei comandi come amministratore (*Esegui come amministratore*).
 
-1. Al prompt dei comandi, immetti
+1. Al prompt dei comandi immettere
 
    ```console
    gpresult /R > gp.txt
@@ -112,7 +112,7 @@ Per verificare che i valori dell'oggetto Criteri di gruppo siano stati impostati
    |        IP locale        | REG_SZ |     \*      |
    | Lunghezza prefisso IP locale | REG_SZ |     \*      |
    |       Porta locale       | REG_SZ | 50000-50019 |
-   |        Protocol        | REG_SZ |     \*      |
+   |        Protocollo        | REG_SZ |     \*      |
    |       IP remoto        | REG_SZ |     \*      |
    |    Prefisso IP remoto    | REG_SZ |     \*      |
    |      Porta remota       | REG_SZ |     \*      |

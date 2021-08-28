@@ -1,5 +1,5 @@
 ---
-title: Amministratori Configurare le Skype for Business per singoli utenti
+title: Amministratori Configurare le Skype for Business per i singoli utenti
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -13,7 +13,7 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,27 +23,27 @@ ms.custom:
 - ms.lync.lac.UsersGeneralOptions
 - ms.lync.lac.UsersLyncToPhoneMoreInfo
 description: 'Informazioni su come modificare le impostazioni Skype for Business per singoli utenti, ad esempio audio e videoconferenze, registrazione di chiamate e riunioni. '
-ms.openlocfilehash: 54dc4e1ee649fff28ac1c7d0729bfbddae521622d76d07e1723ddcc7fd0bdbf1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 89fce818a73455aeca9a9ba668554d59daf85248
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312300"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579400"
 ---
 # <a name="admins-configure-skype-for-business-settings-for-individual-users"></a>Amministratori: Configurare le impostazioni di Skype for Business online per singoli utenti
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!IMPORTANT]
-> L Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la Skype for Business sono ora disponibili nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+> L Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la gestione Skype for Business ora si Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
 
-Questo articolo spiega come gli amministratori configurano Skype for Business per un numero limitato di utenti. Per eseguire questa procedura in blocco, sono stati inclusi collegamenti ai Windows PowerShell cmdlet che è possibile usare.
+Questo articolo spiega come gli amministratori configurano Skype for Business per un numero limitato di utenti. Per eseguire questa procedura in blocco, sono stati inclusi collegamenti ai cmdlet Windows PowerShell che è possibile usare.
   
 Per consentire (o bloccare) a tutti gli utenti dell'azienda di comunicare con persone esterne, vedere:
   
-- Consentire agli utenti di contattare utenti Skype for Business [esterni:](allow-users-to-contact-external-skype-for-business-users.md)è possibile consentire all'organizzazione di usare funzionalità avanzate di Skype for Business (condividere desktop, cercare utenti online e così via) per comunicare con persone in una specifica azienda attendibile (federata). L'articolo spiega anche come bloccare la comunicazione con domini specifici.
+- Consentire agli utenti di contattare utenti [Skype for Business](allow-users-to-contact-external-skype-for-business-users.md)esterni: è possibile consentire all'organizzazione di usare funzionalità Skype for Business avanzate (condividere desktop, cercare utenti online e così via) per comunicare con persone in una specifica azienda attendibile (federata). L'articolo spiega anche come bloccare la comunicazione con domini specifici.
     
-- [Consentire Skype for Business utenti di aggiungere Skype contatti](let-skype-for-business-users-add-skype-contacts.md). È possibile consentire all'organizzazione di usare Skype for Business per la ricerca e la messaggistica istantanea di persone che usano Skype, l'app gratuita.
+- [Consentire Skype for Business utenti di aggiungere Skype contatti](let-skype-for-business-users-add-skype-contacts.md). È possibile consentire all'organizzazione di usare Skype for Business per cercare e istantanee persone che usano Skype, l'app gratuita.
     
 ## <a name="configure-general-settings-for-one-user"></a>Configurare le impostazioni generali per un utente
 <a name="__toc325019204"> </a>
@@ -72,14 +72,14 @@ Per eseguire questa [procedura, è](https://support.office.com/article/da585eea-
 |:-----|:-----|
 |Audio e video HD  <br/> |Consentire a questa persona di registrare riunioni audio, riunioni audio e video o non consentire loro di pianificare riunioni (nessuna).  <br/> |
 |Registrare conversazioni e riunioni  <br/> |Scegli cosa può registrare questa persona.  <br/> Questa opzione non è disponibile con Skype for Business Basic.  <br/> |
-|Per la conformità, disattivare le caratteristiche non archiviate  <br/> | Scegliere questa opzione se si è tenuti per legge a conservare le informazioni archiviate elettronicamente. <br/>  Se si seleziona questa opzione, le funzionalità [](/exchange/security-and-compliance/in-place-and-litigation-holds) che non vengono acquisite quando è configurato un blocco sul posto nell'interfaccia di amministrazione Exchange locale. Disattiva le caratteristiche seguenti: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/> |
+|Per la conformità, disattivare le caratteristiche non archiviate  <br/> | Scegliere questa opzione se si è tenuti per legge a conservare le informazioni archiviate elettronicamente. <br/>  Se si seleziona questa opzione, vengono disattivate [](/exchange/security-and-compliance/in-place-and-litigation-holds) le funzionalità che non vengono acquisite quando è configurato un blocco sul posto nell'interfaccia di amministrazione Exchange locale. Disattiva le caratteristiche seguenti: <br/>  Trasferimento di file tramite messaggistica istantanea <br/>  Pagine condivise di OneNote <br/>  Annotazioni di PowerPoint <br/> |
    
 Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [Configurare il computer per Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
   
 ## <a name="block-external-communications"></a>Bloccare le comunicazioni esterne
 <a name="__toc325019206"> </a>
 
-Dopo aver [Skype for Business](let-skype-for-business-users-add-skype-contacts.md) utenti di aggiungere Skype contatti per tutti gli utenti dell'azienda, è possibile bloccare in modo selettivo le comunicazioni esterne per utenti specifici usando questa procedura.
+Dopo aver [lasciato Skype for Business utenti](let-skype-for-business-users-add-skype-contacts.md) Skype contatti per tutti gli utenti dell'azienda, è possibile bloccare in modo selettivo le comunicazioni esterne per utenti specifici usando questa procedura.
   
 1. Scegliere **Utenti**, selezionare gli utenti di cui si vogliono disabilitare le impostazioni e quindi scegliere **Modifica** ![ modifica ](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png) .
     
@@ -105,7 +105,7 @@ Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [Configu
 |**Nome del provider** <br/> |Scegliere il provider nell'elenco.  <br/> |
 |**Numero a pagamento** (obbligatorio) <br/> |Per un provider di servizi di audioconferenza di terze parti, questi numeri di telefono sono quelli ricevuti dal provider di servizi di audioconferenza. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formattare i numeri come si vuole che vengano visualizzati nelle convocazioni di riunione Skype for Business e Microsoft Teams riunione.  <br/> |
 |**Numero verde** <br/> |Per un provider di servizi di audioconferenza di terze parti, questi numeri di telefono sono quelli ricevuti dal provider di servizi di audioconferenza. Se l'utente sta utilizzando Microsoft come provider di servizi di audioconferenza, questi saranno i numeri impostati sul ponte per audioconferenza. Formattare i numeri come si vuole che vengano visualizzati nelle convocazioni di riunione Skype for Business e Microsoft Teams riunione.  <br/> |
-|**ID conferenza e PIN** (obbligatorio) <br/> |Il PIN del partecipante, o codice conferenza, usato per partecipare alle riunioni pianificate da questo utente e fornite da un provider di servizi di audioconferenza di terze parti. Se l'utente usa Microsoft come provider di servizi di audioconferenza, non sarà necessario.  <br/> |
+|**ID conferenza e PIN** (obbligatorio) <br/> |Il PIN del partecipante, o codice conferenza, usato per partecipare alle riunioni pianificate da questo utente e fornite da un provider di servizi di audioconferenza di terze parti. Se l'utente usa Microsoft come provider di servizi di audioconferenza, questa operazione non sarà obbligatoria.  <br/> |
    
 Per configurare queste impostazioni in blocco, usare PowerShell. Vedere [Impostare i numeri di telefono inclusi in Inviti](../audio-conferencing-in-office-365/set-the-phone-numbers-included-on-invites.md) Configurare il computer per [Windows PowerShell](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md).
 

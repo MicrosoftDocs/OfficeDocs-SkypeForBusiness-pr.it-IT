@@ -15,19 +15,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
-ms.openlocfilehash: 7c374819fd142d86d53c92b32f2799b861833006371ee4038a4769eaeb396f0a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7267d2d7116f40d29405510a924b5ec560037d0e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286185"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605985"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -51,9 +51,9 @@ Questo video illustra come creare una coda di chiamata in Teams.
 
 #### <a name="before-you-begin"></a>Prima di iniziare
 
-Ottenere alcune [Sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere un po' di più se decidi di apportare modifiche alla configurazione in futuro.
+Ottenere alcune [Sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere qualche ulteriore prodotto nel caso decidi di apportare modifiche alla configurazione in futuro.
 
-Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i [criteri id chiamante in Microsoft Teams](../caller-id-policies.md) chiamate.
+Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i criteri [id chiamante Microsoft Teams](../caller-id-policies.md) informazioni.
 
 <a name="steps"></a>
 
@@ -61,11 +61,11 @@ Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita
 
 # <a name="step-1brcreate-a-team"></a>[Passaggio 1 <br> Creare un team](#tab/create-team)
 
-Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza, un gruppo di Microsoft 365 o un team Microsoft Teams esistente. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
+Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza, un gruppo di Microsoft 365 o un team Microsoft Teams servizio. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
 
 Per creare un team
 
-1. Prima di tutto, **Teams** sul lato sinistro dell'app, quindi fare clic su Partecipa o crea un **team** nella parte inferiore dell'elenco dei team.
+1. Prima di **tutto, Teams** sul lato sinistro dell'app, quindi fare clic su Partecipa o crea un **team** nella parte inferiore dell'elenco dei team.
 
 2. Quindi fare clic **su Crea team** (prima scheda, angolo in alto a sinistra).
 
@@ -96,11 +96,11 @@ Per aggiungere un canale
 
 # <a name="step-2brresource-accounts"></a>[Passaggio 2 <br> Account delle risorse](#tab/resource-account)
 
-Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio creeremo l'account, gli assegniamo una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale e quindi lo useremo per iniziare a creare la coda di chiamata.
+Per ogni coda di chiamata creata è necessario un account della risorsa. È simile a un account utente, ad eccezione del fatto che l'account è associato a un operatore automatico o a una coda di chiamata invece che a una persona. In questo passaggio verrà creato l'account, gli verrà assegnata una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale e quindi verrà utilizzata per iniziare a creare la coda di chiamata.
 
 ### <a name="create-a-resource-account"></a>Creare un account della risorsa
 
-È possibile creare un account della risorsa nell'Teams di amministrazione.
+È possibile creare un account delle risorse nell'Teams di amministrazione.
 
 1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su **Account risorse.**
 
@@ -120,13 +120,13 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 È necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale all'account della risorsa.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 utenti attivi **nell'elenco** Utenti attivi fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
+1. Nell'interfaccia di amministrazione di Microsoft 365 utenti attivi nell'elenco Utenti attivi fare clic sull'account della risorsa a cui si vuole assegnare una licenza. 
 
 2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 
 3. Fare clic su **Salva modifiche**.
 
-    ![Screenshot dell'interfaccia utente per l'assegnazione di licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
+    ![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
 
 ### <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -138,7 +138,7 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 2. Fare **clic su Aggiungi account,** cercare l'account della risorsa che si vuole usare con questa coda di chiamata, fare clic su Aggiungi e quindi su **Aggiungi.** 
 
-3. (Facoltativo) In **Assegna ID chiamata** fare clic su **Aggiungi**, cercare gli account delle risorse creati per l'operatore automatico, fare clic su Aggiungi **e** quindi su **Aggiungi**. In questo modo gli agenti di chiamata riceveranno l'ID chiamante della linea principale al momento della chiamata.
+3. (Facoltativo) In **Assegna ID chiamata** fare clic su **Aggiungi**, cercare gli account delle risorse creati per l'operatore automatico, fare clic su Aggiungi **e** quindi su **Aggiungi**. In questo modo gli agenti di chiamata riceveranno l'ID chiamante della linea principale quando chiamano.
 
     ![Screenshot delle impostazioni dell'ID chiamata](../media/call-queue-assign-calling-id.png)
 
@@ -148,7 +148,7 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 4. Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre.
 
-5. Teams musica predefinita ai chiamanti mentre sono in attesa in una coda. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
+5. Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
    > [!NOTE]
    > La registrazione caricata non può essere superiore a 5 MB.
@@ -180,9 +180,9 @@ Scegliere il metodo di routing delle chiamate da usare.
 
 1. Impostare **la modalità conferenza** su **Automatico**.
 
-2. Scegliere il **metodo di** instradamento da usare. Questo determina l'ordine in cui gli agenti ricevono le chiamate dalla coda. È consigliabile **instradamento seriale** **o Round robin.** Scegliere una delle opzioni seguenti:
+2. Scegliere il **metodo di** instradamento da usare. Questo determina l'ordine in cui gli agenti ricevono le chiamate dalla coda. È **consigliabile instradamento seriale** **o round robin.** Scegliere una delle opzioni seguenti:
 
-    - **Il routing** dell'operatore chiama tutti gli agenti nella coda contemporaneamente. Il primo agente di chiamata a prendere la chiamata riceve la chiamata.
+    - **Il routing** dell'operatore chiama tutti gli agenti nella coda contemporaneamente. Il primo agente di chiamata a ritirare la chiamata riceve la chiamata.
 
     - **Il routing seriale** chiama tutti gli agenti di chiamata uno alla volta. Se un agente licenzia o non riceve una chiamata, la chiamata squillerà all'agente successivo e proverà tutti gli agenti fino a quando non viene ritirata o non si verifica il timeout.
 
@@ -196,7 +196,7 @@ Scegliere il metodo di routing delle chiamate da usare.
 
 4. Scegliere se consentire agli agenti di rifiutare esplicitamente le chiamate.
 
-5. Impostare un **tempo di avviso per** l'agente per specificare per quanto tempo il telefono di un agente squillerà prima che la coda reindirizza la chiamata all'agente successivo.
+5. Impostare un **tempo di avviso agente** per specificare per quanto tempo il telefono di un agente squillerà prima che la coda reindirizza la chiamata all'agente successivo.
 
     ![Screenshot delle impostazioni relative a routing, rifiuto esplicito e tempo di avviso](../media/call-queue-presence-agents-time.png)
 

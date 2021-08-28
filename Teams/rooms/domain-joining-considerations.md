@@ -9,33 +9,33 @@ ms.topic: quickstart
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3034fdcb-7c89-42c4-9c5e-13400e82d88f
 ms.collection:
 - M365-collaboration
-description: L'amministratore può scoprire come aggiungere un PC Skype Appliance Room System a un dominio active directory, insieme alle considerazioni per farlo.
+description: L'amministratore può scoprire come aggiungere un PC Skype Appliance room System a un dominio active directory, insieme alle considerazioni per farlo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: caab82c853eb584ba304569daa49963eea847143b59a8413f77455ee9800c8fe
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7956160f57971e48f1f979a7c0a905d760b767bd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54346163"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579600"
 ---
 <!-- This asset missed in the rebrand, and honestly not sure if it's worth keeping.   -->
 
 # <a name="skype-room-system-domain-joining-considerations"></a>Skype Considerazioni sull'aggiunta a un dominio di Room System
  
-Leggere questo argomento per informazioni su come aggiungere un PC Skype appliance Room System al dominio.
+Leggere questo argomento per informazioni su come aggiungere un PC Skype pc dell'appliance Room System al dominio.
   
 ## <a name="domain-joining-considerations"></a>Considerazioni sull'aggiunta di domini
 
-È possibile aggiungere il PC dell Skype Room System appliance al dominio di Active Directory o lasciarlo in un gruppo di lavoro. Prima di prendere questa decisione, considerare i punti seguenti:
+È possibile aggiungere il PC Skype appliance Room System al dominio Active Directory o lasciarlo in un gruppo di lavoro. Prima di prendere questa decisione, considerare i punti seguenti:
   
 - L'aggiunta a un dominio Skype PC dell'appliance Room System consente di importare automaticamente la catena di certificati radice privata dell'organizzazione.
 - L'aggiunta a un dominio Skype pc dell'appliance Room System consente di concedere a utenti e gruppi di dominio i diritti amministrativi. In questo modo, non sarà necessario ricordare la password dell'account di amministratore a livello di computer locale.
-- Quando si aggiunge un PC dell'appliance Skype Room System al dominio, è necessario creare un'unità organizzativa separata, in modo da poter fornire esclusioni di oggetti Criteri di gruppo all'unità organizzativa in cui si trovano tutti gli oggetti computer di sistema room Skype. In questo caso, creare oggetti computer nell'unità organizzativa prima di aggiungere il PC dell'appliance Skype Room System al dominio.
-- Molte organizzazioni hanno gli oggetti Criteri di gruppo seguenti, che influiscono sulle Skype pc dell'appliance Room System. Assicurarsi di ignorare o bloccare l'ereditarietà di questi oggetti Criteri di gruppo nell'Skype di sistema room:
+- Quando si aggiunge un PC dell'appliance Skype Room System al dominio, è necessario creare un'unità organizzativa separata, in modo da poter fornire esclusioni di oggetti Criteri di gruppo all'unità organizzativa in cui si trovano tutti gli oggetti computer di Skype Room System. In questo caso, creare oggetti computer nell'unità organizzativa prima di aggiungere il PC dell'appliance Skype Room System al dominio.
+- Molte organizzazioni hanno gli oggetti Criteri di gruppo seguenti, che influiscono sulle Skype pc dell'appliance Room System. Assicurarsi di ignorare o bloccare l'ereditarietà di questi oggetti Criteri di gruppo nell'Skype room system:
 
   - Timeout delle sessioni di accesso (blocco automatico)
   - Criteri correlati alla gestione del risparmio energia
@@ -59,7 +59,7 @@ Add-Computer -DomainName contoso.local -Credential $mycred -OUPath "OU=LyncRoomS
 
 Anche se si crea un'unità organizzativa separata e si blocca l'ereditarietà, esistono alcuni criteri che potrebbero causare problemi a un livello superiore. Un'impostazione di Criteri di gruppo senza override supera un'unità organizzativa con un'impostazione Blocca ereditarietà dei criteri. Per altre informazioni, vedere [Nessun override rispetto](/previous-versions/windows/it-pro/windows-2000-server/cc978255(v=technet.10)) al blocco dell'ereditarietà dei criteri nella documentazione di Criteri di gruppo.
   
-Potrebbero essere disponibili più approcci per risolvere questi problemi. Si consiglia di consultare gli esperti di Active Directory per assicurarsi di avere a disposizione un'unità organizzativa con le impostazioni appropriate dell'oggetto Criteri di gruppo o almeno un'unità organizzativa in cui i criteri descritti in precedenza non esistono. Consigliamo di abilitare la qualità del servizio (QoS) per i Skype room system.
+Potrebbero essere disponibili più approcci per risolvere questi problemi. Si consiglia di consultare gli esperti di Active Directory per assicurarsi di avere a disposizione un'unità organizzativa con le impostazioni appropriate dell'oggetto Criteri di gruppo o almeno un'unità organizzativa in cui i criteri descritti in precedenza non esistono. Si consiglia di abilitare la qualità del servizio (QoS) per i Skype room system.
 
 ## <a name="related-topics"></a>Argomenti correlati
   

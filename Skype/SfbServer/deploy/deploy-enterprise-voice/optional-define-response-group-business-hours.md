@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d62551b2-1847-4e1b-abe8-683b72aa94d5
 description: Creare o modificare l'orario di ufficio di Response Group, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 37195633064ab04f3d24f56b09760fb44b2ddd473da316898d1106cc13ef4bc3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8cceee13e18e8b4a44ba1cffcca68be7c5fd3bf7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338704"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579980"
 ---
 # <a name="optional-define-response-group-business-hours-in-skype-for-business"></a>(Facoltativo) Definire l'orario di ufficio di Response Group in Skype for Business 
  
@@ -29,7 +29,7 @@ Creare o modificare l'orario di ufficio di Response Group, in Skype for Business
 Le impostazioni dell'orario di ufficio definiscono quando il flusso di lavoro è disponibile per rispondere alle chiamate e specificano le azioni da eseguire per le chiamate al di fuori dell'orario di ufficio. Gli amministratori Response Group possono utilizzare il cmdlet **New-CsRgsHoursOfBusiness** per creare programmazioni predefinite da utilizzare con qualsiasi numero di Response Group.
   
 > [!TIP]
-> Quando si crea o si modifica un flusso di lavoro, è possibile specificare una pianificazione personalizzata che si applica solo a tale flusso di lavoro. Per informazioni dettagliate, vedere [Designing and creating response group workflows in Skype for Business](designing-and-creating-response-group-workflows.md). 
+> Quando si crea o si modifica un flusso di lavoro, è possibile specificare una pianificazione personalizzata che si applica solo a tale flusso di lavoro. Per informazioni dettagliate, vedere [Designing and creating response group workflows in Skype for Business.](designing-and-creating-response-group-workflows.md) 
   
 > [!NOTE]
 > Se un flusso di lavoro è definito come flusso di lavoro gestito, qualsiasi utente a cui è assegnato il ruolo CsResponseGroupManager può impostare e modificare l'orario di ufficio personalizzato per i flussi di lavoro gestiti. 

@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1af294a0-5aa1-40a4-b460-231dd4b2f3dc
 ROBOTS: NOINDEX, NOFOLLOW
 description: Nella pagina Impostazione dominio SIP in nomi soggetti alternativi selezionare la casella di controllo per il dominio SIP (Session Initiation Protocol) primario ed eventuali altri domini SIP qualora l'infrastruttura e la distribuzione soddisfino i criteri elencati.
-ms.openlocfilehash: f2eed7e7c0c886647bd8d85b37997474abfbecfaa5f6bec7de85b2d8a5dac5ea
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 49d125baa2bfbf5c2363473ebfd6c60cd497474d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340142"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579930"
 ---
 # <a name="certificate-request-sip-domains"></a>Richiesta di certificato (domini SIP)
  

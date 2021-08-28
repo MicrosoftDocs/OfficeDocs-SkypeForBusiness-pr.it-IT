@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde a Hong Kong, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: 8638547b7d9eae45d74a678e66b00dd9e2e75f6f420baa472afaae13fb0a1a56
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 11de48238ba2d4660f2e9db6d2de1c93e123ff7a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579570"
 ---
 # <a name="toll-free-dialing-restrictions-in-hong-kong"></a>Restrizioni di composizione a numero verde a Hong Kong
 

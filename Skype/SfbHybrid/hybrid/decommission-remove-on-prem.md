@@ -9,7 +9,7 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-voice
@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni per la rimozione delle autorizzazioni Skype for Business Server.
-ms.openlocfilehash: fd2ba8543745760e900e52c2c1f9b3c3f65b0e70
-ms.sourcegitcommit: b17e5acadcca0261eaccc64e1b4ee457348f975c
+ms.openlocfilehash: 349427994a2643fb0a4e5533cc12bc74b2848467
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365623"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605725"
 ---
 # <a name="remove-your-on-premises-skype-for-business-deployment"></a>Rimuovere la distribuzione locale di Skype for Business
 
@@ -120,7 +120,7 @@ Dopo aver completato tutti i passaggi preliminari, è possibile rimuovere la Sky
    Remove-CsConfigurationStoreLocation
    ``` 
 
-5. Annullare Skype for Business Server modifiche a livello di dominio di Active Directory eseguendo il cmdlet di PowerShell Skype for Business Server seguente:
+5. Annullare Skype for Business Server modifiche a livello di dominio di Active Directory eseguendo il cmdlet Skype for Business Server PowerShell seguente:
 
    ```PowerShell
    Disable-CsAdDomain

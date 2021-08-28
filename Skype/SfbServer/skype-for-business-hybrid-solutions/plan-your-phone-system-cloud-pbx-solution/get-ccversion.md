@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7d370abd-0c01-4490-88a1-55b42e51b663
-description: Restituisce la versione dell'appliance Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.
-ms.openlocfilehash: d3da9813fd67228f8e198cd21edce3cc187ac9359617eb660a352b38c51a95ba
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Restituisce la versione dell'appliance Cloud Connector. Get-CCVersion può essere utilizzato solo nel computer host di Cloud Connector.
+ms.openlocfilehash: a94c15516ff07f908ee8094f7f76347da8c32156
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349508"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605995"
 ---
 # <a name="get-ccversion"></a>Get-CcVersion
  
-Restituisce la versione dell'appliance Cloud Connector. Get-CCVersion può essere usato solo nel computer host di Cloud Connector.
+Restituisce la versione dell'appliance Cloud Connector. Get-CCVersion può essere utilizzato solo nel computer host di Cloud Connector.
   
 ```powershell
 Get-CcVersion [[-VersionType] <String>] [<CommonParameters>]

@@ -14,23 +14,23 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
-description: Informazioni su come usare l'interfaccia Microsoft Teams di amministrazione o Windows PowerShell per creare e gestire i dial plan (piani di chiamata PSTN).
-ms.openlocfilehash: bb5574893ec940129a0669608d2bb89d474fb0b6
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+description: Informazioni su come usare l'Microsoft Teams di amministrazione o Windows PowerShell per creare e gestire i dial plan (piani di chiamata PSTN).
+ms.openlocfilehash: e6cc5e751efa412c24eb13f182ab5967360c677e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58233301"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628378"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare dial plan
 
-Dopo aver programmato i piani di chiamata per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per il routing vocale, è possibile creare i piani di chiamata. Con un account di amministratore con una licenza di Teams valida, è possibile usare l'interfaccia di amministrazione di Microsoft Teams o Windows PowerShell per creare e gestire i dial plan.  
+Dopo aver programmato i piani di chiamata per l'organizzazione e aver trovato tutte le regole di normalizzazione che devono essere create per il routing vocale, è possibile creare i piani di chiamata. Con un account di amministratore con una licenza di Teams valida, è possibile usare l'interfaccia di amministrazione di Microsoft Teams o Windows PowerShell per creare e gestire i piani di chiamata.  
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
@@ -52,7 +52,7 @@ Dopo aver programmato i piani di chiamata per l'organizzazione e aver trovato tu
     > Teams scorre l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano ordinate al di sopra di quelle meno restrittive. Se si configura un piano di chiamata che normalizza un numero composto senza un "+", il servizio di chiamata tenterà di normalizzare di nuovo il numero usando le regole del piano di chiamata tenant e regionale. Per evitare la doppia normalizzazione, è consigliabile che tutte le regole di normalizzazione dia origine a numeri che iniziano con "+". I clienti di Direct Routing possono usare [le regole di traduzione trunk](direct-routing-translate-numbers.md) per rimuovere il "+" se necessario. 
 
 6. Fare clic su **Salva**.
-7. Se si vuole testare il piano di chiamata, in **Test piano di chiamata** immettere un numero di telefono e quindi fare clic su **Test**.
+7. Se si vuole testare il piano di chiamata, in **Test piano di** chiamata immettere un numero di telefono e quindi fare clic su **Test**.
 
 ### <a name="edit-a-dial-plan"></a>Modificare un piano di chiamata
 
@@ -67,7 +67,7 @@ Assegnare un piano di chiamata nello stesso modo in cui si assegnano i criteri. 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
   
 ### <a name="start-powershell"></a>Avviare PowerShell
-- Aprire un Windows PowerShell comando ed eseguire i comandi seguenti:
+- Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti:
 
 ```powershell
   # When using Teams PowerShell Module

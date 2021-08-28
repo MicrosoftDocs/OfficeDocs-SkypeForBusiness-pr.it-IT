@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: I telefoni delle aree comuni sono telefoni IP che molto spesso risiedono in un'area di lavoro condivisa o area comune, ad esempio una sala di attesa, una cucina o un reparto produzione. Non è necessario che i telefoni delle aree comuni siano connessi a un computer per fornire Skype for Business Server comunicazioni unificate. Dopo aver eseguito la migrazione di una distribuzione Skype for Business Server 2019, è inoltre necessario eseguire la migrazione degli oggetti contatto associati all'area comune legacy Telefono. Utilizzando Skype for Business Server Management Shell, verranno innanzitutto recuperati tutti gli oggetti contatto associati ai telefoni di area comune legacy e quindi spostati nel pool di Skype for Business Server 2019.
-ms.openlocfilehash: 808e874216fac97b01face6efa7aae00e269b74ee0f009b106f872a33a6d6261
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dabb91925b2d5271ba2760f62dd962ed7fa7a24c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340432"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579530"
 ---
 # <a name="migrate-common-area-phones"></a>Migrare i telefoni delle aree comuni
 
-I telefoni delle aree comuni sono telefoni IP che molto spesso risiedono in un'area di lavoro condivisa o area comune, ad esempio una sala di attesa, una cucina o un reparto produzione. Non è necessario che i telefoni delle aree comuni siano connessi a un computer per fornire Skype for Business Server comunicazioni unificate. Dopo aver eseguito la migrazione di una distribuzione Skype for Business Server 2019, è inoltre necessario eseguire la migrazione degli oggetti contatto associati all'area comune legacy Telefono. Utilizzando Skype for Business Server Management Shell, verranno innanzitutto recuperati tutti gli oggetti contatto associati ai telefoni di area comune legacy e quindi spostati nel pool di Skype for Business Server 2019.
+I telefoni delle aree comuni sono telefoni IP che molto spesso risiedono in un'area di lavoro condivisa o area comune, ad esempio una sala di attesa, una cucina o un reparto produzione. Non è necessario che i telefoni delle aree comuni siano connessi a un computer per fornire Skype for Business Server comunicazioni unificate. Dopo aver eseguito la migrazione di una distribuzione Skype for Business Server 2019, è inoltre necessario eseguire la migrazione degli oggetti contatto associati all'area comune legacy Telefono. Utilizzando Skype for Business Server Management Shell, verranno innanzitutto recuperati tutti gli oggetti contatto associati ai telefoni dell'area comune legacy e quindi spostati nel pool di Skype for Business Server 2019.
   
 ### <a name="migrate-common-area-phones"></a>Migrare i telefoni delle aree comuni
 

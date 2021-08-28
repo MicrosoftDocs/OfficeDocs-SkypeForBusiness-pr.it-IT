@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
-description: Script helper per configurare l'autenticazione del Pannello di controllo sfB 2019 Microsoft 365 o Office 365 tramite il protocollo OAuth.
-ms.openlocfilehash: c52e799740188e85e41af46339f40f4c29b61c037bc1c28b8257b1001a5b43c9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Script helper per configurare l'autenticazione del Pannello di controllo sfB 2019 con Microsoft 365 o Office 365 tramite il protocollo OAuth.
+ms.openlocfilehash: 8d4bf598799d23ebc150561333794aa0e04a1179
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281499"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579540"
 ---
 # <a name="skype-for-business-server-2019-control-panel-authentication-script"></a>Skype for Business Server di autenticazione del Pannello di controllo 2019
 
@@ -26,7 +26,7 @@ Di seguito sono riportati gli script helper correlati all'autenticazione per mac
 
 ## <a name="configure-macp-authentication-with-microsoft-365-or-office-365"></a>Configurare l'autenticazione MACP con Microsoft 365 o Office 365
 
-Questo script deve essere eseguito dopo l'Skype for Business Server 2019 cumulativo 1 o versione successiva, come parte della configurazione del nuovo Pannello di controllo. 
+Questo script deve essere eseguito dopo l'Skype for Business Server 2019 Cumulativo 1 o versione successiva, come parte della configurazione del nuovo Pannello di controllo. 
 
 ```powershell
 <#
@@ -133,7 +133,7 @@ Set-CsHybridConfiguration -ClientId $azureADApplication.AppId
 ```
 ## <a name="configure-macp-application-in-adfs-farm"></a>Configurare l'applicazione MACP nella farm ADFS
 
-Questo script deve essere eseguito dopo l'Skype for Business Server 2019 dell'aggiornamento cumulativo più recente, come parte della configurazione del nuovo Pannello di controllo.
+Questo script deve essere eseguito dopo l Skype for Business Server'aggiornamento cumulativo più recente del 2019, come parte della configurazione del nuovo Pannello di controllo.
 
 ```powershell
 <#
@@ -311,7 +311,7 @@ Get-AdfsNativeClientApplication -Identifier $clientIdentifier
 ```
 ## <a name="configure-oauth-for-macp"></a>Configurare OAuth per MACP
 
-Questo script deve essere eseguito dopo l'Skype for Business Server 2019 dell'aggiornamento cumulativo più recente, come parte della configurazione del nuovo Pannello di controllo.
+Questo script deve essere eseguito dopo l Skype for Business Server'aggiornamento cumulativo più recente del 2019, come parte della configurazione del nuovo Pannello di controllo.
 
 ```powershell
 <#

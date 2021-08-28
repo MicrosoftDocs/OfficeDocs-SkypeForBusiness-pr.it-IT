@@ -9,21 +9,21 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4eecb5f7-3ef7-4582-a6cb-9f4aa068338d
 description: 'Riepilogo: informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business smart.'
-ms.openlocfilehash: 99658b9f4460970f00da829327c85227637ffbab9d5ffeb0a5c3f071a889d91d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d7e2957b6b8622ea8c3ce3dc2974e7dbb7ff51d4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303150"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58580000"
 ---
 # <a name="configure-smart-contacts-list-in-skype-for-business-clients"></a>Configurare l'elenco contatti smart nei Skype for Business client
 
 **Riepilogo:** Informazioni su come attivare la funzionalità Elenco contatti smart nel client Skype for Business smart.
 
-La funzionalità Elenco contatti smart consente la popolamento automatico degli elenchi di contatti per gli utenti finali. Dopo l'Skype for Business, gli utenti visualizzano automaticamente il manager e altre persone del team. Questa funzionalità è attivata per impostazione predefinita per gli utenti di Microsoft 365 e Office 365, ma è necessario abilitare esplicitamente questa funzionalità per gli utenti locali configurando l'impostazione dei criteri client.
+La funzionalità Elenco contatti smart consente la popolamento automatico degli elenchi di contatti per gli utenti finali. Al primo utilizzo Skype for Business, gli utenti visualizzano automaticamente il manager e altre persone nel team. Questa funzionalità è attivata per impostazione predefinita per gli utenti Microsoft 365 e Office 365, ma è necessario abilitare esplicitamente questa funzionalità per gli utenti locali configurando l'impostazione dei criteri client.
 
 Quando si configura questa funzionalità, tenere presente quanto segue:
 

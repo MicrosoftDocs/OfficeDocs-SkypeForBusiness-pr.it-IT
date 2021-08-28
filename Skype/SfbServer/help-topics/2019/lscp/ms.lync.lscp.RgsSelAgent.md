@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b5cf912b-8273-4c2c-a1e5-f25530b264d0
 ROBOTS: NOINDEX, NOFOLLOW
 description: Gli agenti sono utenti designati per rispondere alle chiamate di Response Group. Ai Response Group deve essere assegnato un gruppo di agenti che identifichi quali agenti possono ricevere le chiamate da tale gruppo. Un modo per creare un gruppo di agenti consiste nel definire un gruppo personalizzato selezionando gli utenti idonei. Gli utenti idonei sono abilitati Skype for Business Server e VoIP aziendale.
-ms.openlocfilehash: f98f82f6820c08bf306579344a8323e63529be9e2bed74cd6ddd47e5bb1c4f53
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0751bfc3e5b4c836a2be52f45844a0ce38cd5019
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279264"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579780"
 ---
 # <a name="select-agents"></a>Selezionare agenti
 
@@ -32,7 +32,7 @@ Gli agenti sono utenti designati per rispondere alle chiamate di Response Group.
 
 Nell'elenco seguente sono descritti i controlli presenti nella finestra di dialogo **Seleziona agenti**.
 
-- **Trova** Cerca l'indirizzo SIP o il nome visualizzato di un utente. Immettere il nome o l'indirizzo per intero o in parte. Lasciare vuota la casella di ricerca per visualizzare tutti gli utenti abilitati per Skype for Business Server e VoIP aziendale.
+- **Trova** Cerca l'indirizzo SIP o il nome visualizzato di un utente. Immettere il nome o l'indirizzo per intero o in parte. Lasciare vuota la casella di ricerca per visualizzare tutti gli utenti abilitati Skype for Business Server e VoIP aziendale.
 
 - **Numero massimo di utenti da visualizzare** Modifica il numero di risultati restituiti visualizzati. Usare questo contatore per limitare la ricerca se si prevede di ottenere molti risultati.
 

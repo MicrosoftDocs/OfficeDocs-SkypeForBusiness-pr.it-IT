@@ -7,8 +7,8 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: fafan
 audience: admin
-description: Informazioni su come Office 365 audioconferenza estesa per Stati Uniti e Canada.
-localization_priority: Normal
+description: Informazioni su Office 365 minuti di chiamata in uscita estesa per audioconferenza negli Stati Uniti e in Canada.
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -17,16 +17,16 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cfbc9687c6fa55f809a40e74b0013371e6ad9a64453498af416cdee0f741e205
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 39b8bc2aee158ea5992c4255932606cf4f5f81ac
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344325"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605805"
 ---
 # <a name="office-365-audio-conferencing-extended-dial-out-minutes-to-us-and-canada"></a>Office 365 Audioconferenza estesa Minuti di chiamata in uscita per Stati Uniti e Canada
 
-Per i clienti che adottano il servizio di audioconferenza e hanno un'elevata esigenza aziendale di effettuare chiamate in uscita verso Stati Uniti e Canada, Microsoft offre ora un'offerta di componenti aggiuntivi che consente un numero praticamente illimitato di minuti di chiamata in uscita per qualsiasi utente di servizi di audioconferenza negli Stati Uniti e in Canada. Gli organizzatori delle riunioni con questo SKU per i componenti aggiuntivi possono effettuare chiamate esterne con criteri di fair use per gli Stati Uniti e il Canada senza detrarre il pool di utilizzo per chiamate in uscita di zona A o i crediti per le comunicazioni del proprio tenant. <sup>1</sup>
+Per i clienti che adottano il servizio di audioconferenza e hanno un'elevata esigenza aziendale di effettuare chiamate in uscita verso Stati Uniti e Canada, Microsoft offre ora un'offerta di componenti aggiuntivi che consente un numero praticamente illimitato di minuti di chiamata in uscita per qualsiasi utente di servizi di audioconferenza negli Stati Uniti e in Canada. Gli organizzatori delle riunioni con questo SKU per i componenti aggiuntivi possono effettuare chiamate esterne con criteri di fair use per gli Stati Uniti e il Canada senza detrarre il pool di utilizzo della chiamata in uscita di zona A del proprio tenant o i crediti per le comunicazioni. <sup>1</sup>
 
 |Nome offerta | Minuti di chiamata in uscita illimitati per il Canada degli Stati Uniti |
 |-----|------|
@@ -37,7 +37,7 @@ Per i clienti che adottano il servizio di audioconferenza e hanno un'elevata esi
 | I minuti sono in pool?  |No. Un organizzatore della riunione avrà un numero praticamente illimitato di minuti di chiamata in uscita per gli Stati Uniti e il Canada al mese. |
 | Questo nuovo SKU del componente aggiuntivo sostituirà i 60 minuti inclusi nelle audioconferenze? | No. I 60 minuti di audioconferenza esistenti per utente al mese, in pool a livello di tenant, continueranno a essere applicati a tutti i paesi dei servizi di conferenza telefonica con accesso esterno dell'area A.|
 | Che cos'è la disponibilità del canale?  | È disponibile in EA/EAS, EES, CSP e Web Direct.  |
-| Qual è la disponibilità del segmento? | È disponibile per i settori commerciali (inclusi i settori pubblici commerciali wwe), per l'istruzione, per le organizzazioni no profit e per gli Stati Uniti GCC |
+| Qual è la disponibilità del segmento? | È disponibile per i settori commerciale (inclusi i settori pubblici commerciali wwe), per l'istruzione, per le organizzazioni no profit e per gli Stati Uniti GCC |
 | Cosa succede se un utente con Extended Dial-out Minutes to USA/CAN si trova negli Stati Uniti e si reca in un altro paese al di fuori di un Audio-Conferencing di vendita al mercato? Il servizio di accesso remoto funzionerà? | Sì. Se un utente con sede negli Stati Uniti (ovvero la licenza di Office 365 è assegnata negli Stati Uniti) si è recato in Zimbabwe (un mercato attualmente non in vendita per le audioconferenze), tutti i minuti di chiamata in uscita effettuati negli Stati Uniti o in Canada continueranno a essere applicati ai loro Minuti estesi di chiamata in uscita verso STATI UNITI/CAN, indipendentemente da dove viene effettuata la chiamata. |
 |||
 

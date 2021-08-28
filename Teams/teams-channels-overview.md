@@ -9,7 +9,7 @@ ms.service: msteams
 audience: admin
 search.appverid: MET150
 description: Informazioni sui team, canali e app disponibili per una vasta gamma di esigenze, ad esempio amministrazione, pianificazione di eventi, vendite e altro ancora.
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 190204ac352567458e1e19c5d06179950c1188be
-ms.sourcegitcommit: 3884bd3a849e92cde5980c3185d53bd4287fe764
+ms.openlocfilehash: b760d5fad3a694fd0dd41c34116d09297d25dd22
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/21/2021
-ms.locfileid: "58455951"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58579580"
 ---
 # <a name="overview-of-teams-and-channels-in-microsoft-teams"></a>Panoramica dei team e i canali in Microsoft Teams
 

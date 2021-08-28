@@ -9,21 +9,21 @@ ms.topic: quickstart
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 ms.custom: ''
 ms.assetid: f09f4c2a-2608-473a-9a27-f94017d6e9dd
 description: Leggere questo argomento per informazioni su come distribuire barre di collaborazione per Microsoft Teams.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce5fe8fa0066ea613cdee1dbea6cf7fb2e385e2694ae9b84bbd99901c999f69b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3388e2eb1e086cd347769a50bb9603f4a0832402
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54334717"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605815"
 ---
-# <a name="create-a-microsoft-365-resource-account-using-the-powershell"></a>Creare un account Microsoft 365 di risorse usando PowerShell
+# <a name="create-a-microsoft-365-resource-account-using-the-powershell"></a>Creare un Microsoft 365 di risorse usando PowerShell
 
 Leggere questo argomento per informazioni su come creare account delle risorse per le barre di collaborazione Microsoft Teams powershell.
 
@@ -37,14 +37,14 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
 
 - Se sono necessarie funzionalità PSTN per la barra di collaborazione, è necessario Sistema telefonico licenza.
 
-- Gli account delle risorse devono avere Exchange cassette postali. Poiché si tratta di account delle risorse, non Exchange necessaria una licenza. È consigliabile usare la licenza Sale riunioni per gli account delle risorse.
+- Gli account delle risorse devono avere Exchange cassette postali. Poiché si tratta di account delle risorse, non è richiesta Exchange licenza. È consigliabile usare la licenza Sale riunioni per gli account delle risorse.
 
 
 ### <a name="add-a-resource-account"></a>Aggiungere un account della risorsa
 
 1. Connessione per Exchange Online PowerShell. Per istruzioni, vedere [Connessione per Exchange Online PowerShell.](/powershell/exchange/exchange-online/exchange-online-powershell-v2/exchange-online-powershell-v2?view=exchange-ps#install-and-maintain-the-exchange-online-powershell-v2-module)
 
-2. In Exchange Online PowerShell creare una nuova cassetta postale della chat room o modificare una cassetta postale della chat room esistente.
+2. In Exchange Online PowerShell creare una nuova cassetta postale sala o modificare una cassetta postale della chat room esistente.
 
    - Per creare una nuova cassetta postale della chat room, usare la sintassi seguente:
 
@@ -105,7 +105,7 @@ Prima di distribuire Microsoft Teams Rooms con Office 365, assicurarsi di aver s
 
    Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-CalendarProcessing](/powershell/module/exchange/mailboxes/set-calendarprocessing).
 
-4. Connessione a PowerShell di MS Online per impostare Active Directory eseguendo il `Connect-MsolService -Credential $cred` cmdlet powershell.   Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0) 
+4. Connessione a PowerShell di MS Online per impostare Active Directory eseguendo il `Connect-MsolService -Credential $cred` cmdlet di powershell.   Per informazioni dettagliate su Active Directory, vedere [Azure ActiveDirectory (MSOnline) 1.0.](/powershell/azure/active-directory/overview?view=azureadps-1.0) 
 
    > [!NOTE]
    > [Azure Active Directory PowerShell 2.0](/powershell/azure/active-directory/overview?view=azureadps-2.0) non è supportato. 

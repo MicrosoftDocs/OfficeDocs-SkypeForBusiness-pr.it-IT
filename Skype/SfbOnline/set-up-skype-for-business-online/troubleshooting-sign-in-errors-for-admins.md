@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Priority
+ms.localizationpriority: high
 f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
 description: 'Scopri le cause più comuni per Skype di errori di accesso Business online e il lavoro e risolvere questi problemi. '
-ms.openlocfilehash: 1fdb764f9557e9c5b759b50cadf2650a6af75dc1dc262ff45648360807436881
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c8cef553946dbe19a4a986e3ccaf714ad0a689de
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303350"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58580010"
 ---
 # <a name="troubleshooting-skype-for-business-online-sign-in-errors-for-administrators"></a>Risoluzione dei problemi di accesso a Skype for Business online (amministratori)
 

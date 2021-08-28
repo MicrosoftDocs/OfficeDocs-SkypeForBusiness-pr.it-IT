@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: Dopo aver rimosso un Monitoring Server, è possibile rimuovere SQL Server database che ospitavano i dati del server. Utilizzare le procedure seguenti per rimuovere le definizioni da Generatore di topologie e quindi rimuovere i file di database e di registro dal server di database.
-ms.openlocfilehash: cadb24e2dcbe88e643c234dd8559d07406e5566e3e7eea0e33eec796cd98cf52
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Dopo aver rimosso un Monitoring Server, è possibile rimuovere i SQL Server database che ospitavano i dati del server. Utilizzare le procedure seguenti per rimuovere le definizioni da Generatore di topologie e quindi rimuovere i file di database e di registro dal server di database.
+ms.openlocfilehash: 23f58166c6a24680772d50c6bc484ba1bd02d754
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280391"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58605755"
 ---
 # <a name="remove-the-sql-server-database-for-a-monitoring-server"></a>Rimuovere il database di SQL Server per un server di monitoraggio
 
-Dopo aver rimosso un Monitoring Server, è possibile rimuovere SQL Server database che ospitavano i dati del server. Utilizzare le procedure seguenti per rimuovere le definizioni da Generatore di topologie e quindi rimuovere i file di database e di registro dal server di database.
+Dopo aver rimosso un Monitoring Server, è possibile rimuovere i SQL Server database che ospitavano i dati del server. Utilizzare le procedure seguenti per rimuovere le definizioni da Generatore di topologie e quindi rimuovere i file di database e di registro dal server di database.
   
 ## <a name="to-remove-the-sql-server-database-using-topology-builder"></a>Per rimuovere il database SQL Server utilizzando Generatore di topologie
 
