@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 3dc0eca8-c773-463c-96bb-9cd6afa2a840
 description: Pianificazione della risposta alle chiamate di gruppo in Skype for Business Server VoIP aziendale, che consente agli utenti di rispondere alle chiamate originariamente destinate ad altri utenti.
-ms.openlocfilehash: 8a4d057a2c668590a90e951000a39f40f7ae55e62a7c70fe7f670661acd5474c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1127c1bb01e39d784f82dd7d451f3445f4210510
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345523"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590120"
 ---
 # <a name="plan-for-group-call-pickup-in-skype-for-business"></a>Pianificare la risposta alle chiamate di gruppo in Skype for Business
  
@@ -31,14 +31,14 @@ La risposta alle chiamate di gruppo consente agli utenti di rispondere alle chia
   
 La funzionalità di prelievo delle chiamate di gruppo è progettata in particolare per le unità aziendali in ambienti open office. Le chiamate in arrivo non sono dirompenti perché squillano solo alla destinazione prevista. Altri utenti che ascoltano l'anello, tuttavia, possono comunque riprendere la chiamata semplicemente componendo il numero di gruppo. 
   
-In ambienti in cui gli utenti non si trovano in un layout di ufficio aperto o in cui gli utenti che condividono una responsabilità comune sono distribuiti geograficamente, la chiamata al team presenta la soluzione più adatta. La differenza principale tra la risposta alle chiamate di gruppo e quella del team consiste nel fatto che, con la risposta alle chiamate di gruppo, una chiamata in arrivo squilla solo alla destinazione prevista, ma chiunque può comunque scegliere di rispondere componendo un numero di gruppo. Con la chiamata del team, la chiamata squilla a tutti i telefoni dei membri del team e qualsiasi utente del team può prendere il telefono per rispondere alla chiamata. Un'ulteriore differenza tra la risposta alle chiamate di gruppo e la chiamata al team consiste nel fatto che la risposta alle chiamate di gruppo è gestita da un amministratore, tramite Skype for Business Server. Con la chiamata del team, gli utenti finali gestiscono la funzionalità utilizzando il client Skype for Business client. Con la risposta alle chiamate di gruppo, pertanto, questo aspetto della gestione delle chiamate può essere centralizzato.
+In ambienti in cui gli utenti non si trovano in un layout di ufficio aperto o in cui gli utenti che condividono una responsabilità comune sono distribuiti geograficamente, la chiamata al team presenta la soluzione più adatta. La differenza principale tra la risposta alle chiamate di gruppo e quella del team consiste nel fatto che, con la risposta alle chiamate di gruppo, una chiamata in arrivo squilla solo alla destinazione prevista, ma chiunque può comunque scegliere di rispondere componendo un numero di gruppo. Con la chiamata del team, la chiamata squilla a tutti i telefoni dei membri del team e qualsiasi utente del team può prendere il telefono per rispondere alla chiamata. Un'ulteriore differenza tra la risposta alle chiamate di gruppo e quella del team consiste nel fatto che la risposta alle chiamate di gruppo è gestita da un amministratore, tramite Skype for Business Server. Con la chiamata del team, gli utenti finali gestiscono la funzionalità utilizzando il client Skype for Business client. Con la risposta alle chiamate di gruppo, pertanto, questo aspetto della gestione delle chiamate può essere centralizzato.
   
 La risposta alle chiamate di gruppo si basa sull'applicazione Parcheggio di chiamata. Quando si distribuisce la risposta alle chiamate di gruppo, si configura la tabella orbit del parcheggio di chiamata con intervalli separati di numeri di interno designati come numeri di gruppo di prelievo chiamata. Come i numeri orbit del parcheggio di chiamata, i numeri di gruppo di prelievo delle chiamate devono essere interni virtuali a cui non è assegnato alcun utente o telefono. Ogni pool Front End in cui si distribuisce la risposta alle chiamate di gruppo può avere uno o più intervalli di numeri di gruppo di prelievo chiamata. Gli intervalli di numeri di gruppo devono essere univoci a livello globale nella Skype for Business Server distribuzione. 
   
 > [!NOTE]
 > Gli intervalli di numeri designati come numeri di risposta alle chiamate di gruppo nella tabella orbit del parcheggio di chiamata non possono essere gestiti o visualizzati utilizzando il Pannello Skype for Business Server di controllo. L'unico modo per visualizzare tutti gli intervalli di numeri nella tabella orbit del parcheggio di chiamata è utilizzare Skype for Business Server Management Shell. Analogamente, l'unico modo per aggiungere, modificare o rimuovere i numeri di risposta alle chiamate di gruppo è utilizzare Skype for Business Server Management Shell. 
   
-Dopo aver configurato i numeri del gruppo di prelievo chiamata, assegnare gli utenti a un gruppo di prelievo chiamata. Qualsiasi utente assegnato a un gruppo di prelievo delle chiamate può rispondere alle proprie chiamate da altri utenti. Quando una chiamata arriva a un utente assegnato a un gruppo di prelievo chiamata, qualsiasi altro utente che nota la chiamata può rispondere componendo manualmente il numero del gruppo di prelievo chiamata. L'utente che preleva la chiamata non deve essere un membro del gruppo. Quando una chiamata viene ritirata da un altro utente, viene inviata una notifica al numero originariamente chiamato.
+Dopo aver configurato i numeri del gruppo di prelievo delle chiamate, assegnare gli utenti a un gruppo di prelievo chiamata. Qualsiasi utente assegnato a un gruppo di prelievo delle chiamate può rispondere alle proprie chiamate da altri utenti. Quando una chiamata arriva a un utente assegnato a un gruppo di prelievo chiamata, qualsiasi altro utente che nota la chiamata può rispondere componendo manualmente il numero del gruppo di prelievo chiamata. L'utente che preleva la chiamata non deve essere un membro del gruppo. Quando una chiamata viene ritirata da un altro utente, viene inviata una notifica al numero originariamente chiamato.
   
 > [!NOTE]
 > Un utente può essere membro di un solo gruppo di prelievo chiamata. 
@@ -48,13 +48,13 @@ Dopo aver configurato i numeri del gruppo di prelievo chiamata, assegnare gli ut
   
 Se un utente compone un numero di gruppo di prelievo chiamata per rispondere a una chiamata quando squillano più telefoni del gruppo, l'utente risponde alla chiamata che squilla più a lungo.
   
-Le impostazioni di squillo simultaneo funzionano per gli utenti che hanno la risposta alle chiamate di gruppo. In altre informazioni, una chiamata effettuata a un utente che dispone di prelievo chiamata di gruppo squillerà per tutte le destinazioni configurate e un altro utente può rispondere alla chiamata. L'eccezione a questa regola è quando l'utente configura lo squillo simultaneo per chiamare tutti i membri del team.
+Le impostazioni di squillo simultaneo funzionano per gli utenti che hanno la risposta alle chiamate di gruppo. In altre informazioni, una chiamata effettuata a un utente che dispone di risposta alle chiamate di gruppo squillerà per tutte le destinazioni configurate e un altro utente può rispondere alla chiamata. L'eccezione a questa regola è quando l'utente configura lo squillo simultaneo per chiamare tutti i membri del team.
   
 La risposta alle chiamate di gruppo non può essere utilizzata per rispondere ai seguenti tipi di chiamate:
   
 - Chiamate a una linea privata
     
-- Chiamate da un contatto a cui è stata assegnata la relazione di privacy Amici e familiari
+- Chiamate da un contatto a cui è stata assegnata la relazione di privacy amici e familiari
     
     > [!TIP]
     > Un utente membro di un gruppo di prelievo delle chiamate può impedire il recupero di determinate chiamate tramite la risposta alle chiamate di gruppo contrassegnando il contatto come contatto personale nel client Skype for Business gruppo. Per contrassegnare un contatto come contatto personale, impostare la relazione di privacy per il contatto su Amici e familiari. Qualsiasi chiamata in arrivo dai contatti con la relazione di privacy impostata su Amici e famiglia non può essere recuperata utilizzando La risposta alle chiamate di gruppo. 
@@ -95,7 +95,7 @@ La risposta alle chiamate di gruppo viene distribuita automaticamente quando si 
 - Lync Phone Edition
     
 > [!NOTE]
-> Gli utenti possono utilizzare uno di questi client per rispondere alle chiamate ai membri di Group Call Pickup, ma gli utenti devono essere ospitati in un pool di Skype for Business Server o in un pool di Lync Server 2013 con aggiornamenti cumulativi per Lync Server 2013: febbraio 2013. 
+> Gli utenti possono utilizzare uno di questi client per rispondere alle chiamate ai membri di Prelievo chiamata di gruppo, ma gli utenti devono essere ospitati in un pool di Skype for Business Server o in un pool di Lync Server 2013 con aggiornamenti cumulativi per Lync Server 2013: febbraio 2013. 
   
 I client e i dispositivi seguenti non sono supportati per la raccolta delle chiamate ai membri di Group Call Pickup:
   
@@ -130,6 +130,6 @@ Nella tabella seguente viene descritto il modello utente Di prelievo chiamata di
 > Per i pool Front End con meno di otto Front End Server, calcolare le metriche in modo lineare. Se ad esempio il pool Front End dispone di un Front End Server, calcolare il carico massimo come 1/8 dei valori riportati nella tabella. 
   
 > [!NOTE]
-> È possibile aumentare o ridurre il numero consigliato di utenti per gruppo e il numero di gruppi purché non si superi il numero massimo di utenti per pool. Ad esempio, il server edizione Standard può avere 120 gruppi con 25 utenti per gruppo perché il numero di utenti abilitati per la risposta alle chiamate di gruppo è ancora all'interno del modello utente massimo (ovvero, 120 gruppi per 25 utenti è 3.000 utenti abilitati per la risposta alle chiamate di gruppo). 
+> È possibile aumentare o ridurre il numero consigliato di utenti per gruppo e il numero di gruppi purché non si superi il numero massimo di utenti per pool. Ad esempio, il server edizione Standard può avere 120 gruppi con 25 utenti per gruppo perché il numero di utenti abilitati per la risposta alle chiamate di gruppo è ancora all'interno del modello di utente massimo (ovvero, 120 gruppi per 25 utenti è 3.000 utenti abilitati per la risposta alle chiamate di gruppo). 
   
 

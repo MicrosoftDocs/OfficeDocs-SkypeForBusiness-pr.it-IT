@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Reporting
-description: La nuova area Skype for Business report dell'interfaccia di amministrazione mostra le attività di chiamata e audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report Skype for Business pool di minuti PSTN per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
-ms.openlocfilehash: 02f2d2bad1bbf948dfe9b39c49c389423437fd05877811c647220df41502c558
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: La nuova area Skype for Business report dell'interfaccia di amministrazione mostra le chiamate e le attività di audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, è possibile usare il report Skype for Business pool di minuti PSTN per visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
+ms.openlocfilehash: 3c9999a642480442f25dddad9daca503ade7851a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342571"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592900"
 ---
 # <a name="pstn-minute-pools-report"></a>Report pool minuti PSTN
 
@@ -42,22 +42,20 @@ Questo report, insieme agli altri report Skype for Business, fornisce informazio
 > [!NOTE]
 > È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore al interfaccia di amministrazione di Microsoft 365. 
   
-## <a name="how-to-get-to-the-skype-for-business-pstn-minute-pools-report"></a>Come accedere al report dei Skype for Business minuti PSTN
+## <a name="how-to-get-to-the-skype-for-business-pstn-minute-pools-report"></a>Come accedere al report Skype for Business pool di minuti PSTN
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-- Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business** di amministrazione Report pool di minuti  >    >    >  **PSTN**.
+- Passare all'interfaccia di amministrazione > **di amministrazione**  >  **Skype for Business'interfaccia di amministrazione Report** pool di minuti  >    >  **PSTN**.
     
 > [!NOTE]
-> A seconda dell'Microsoft 365 o Office 365 abbonamento, è possibile che non venga visualizzato lo stesso dettaglio qui. 
+> A seconda dell'Microsoft 365 o Office 365 abbonamento, è possibile che non venga visualizzato lo stesso dettaglio illustrato di seguito. 
   
 ## <a name="interpret-the-skype-for-business-pstn-minute-pools-report"></a>Interpretare il report Skype for Business pool di minuti PSTN
 
-È possibile ottenere una visualizzazione nel pool di Skype for Business minuti dell'utente esaminando ognuna delle colonne visualizzate.
+È possibile ottenere una visualizzazione nel pool di minuti Skype for Business'utente esaminando ognuna delle colonne visualizzate.
   
 Questo è l'aspetto del report.
-  
-## 
 
 ![Skype for Business Report pool di minuti PSTN](../images/f5da5ca9-3466-4234-8f33-ab50ac5eb781.png)
   

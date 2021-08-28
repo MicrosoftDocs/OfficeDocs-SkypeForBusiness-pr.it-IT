@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 6eacfa99-9759-4c13-aca3-8992c2ff2710
 description: Informazioni su come preparare l'appliance Cloud Connector per la distribuzione e l'uso con Sistema telefonico (Cloud PBX).
-ms.openlocfilehash: 58f9765f211a3961db8baf5929956feecf1eb4fd7e7744490cb21f1967dcb46f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 255b276ebb0d192f876d07e318cf94ccf3698a1f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340812"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590000"
 ---
 # <a name="prepare-your-cloud-connector-appliance"></a>Predisporre l'appliance di Cloud Connector
 
@@ -44,7 +44,7 @@ In questa sezione viene descritto come ottenere i Skype for Business Cloud Conne
 > [!NOTE]
 > Esistono alcuni passaggi da eseguire solo per la prima appliance della distribuzione: la creazione di una condivisione per la directory dei siti, il download dei bit e la preparazione di un file del disco rigido virtuale (VHDX) dall'immagine ISO di Windows Server. 
 
-## <a name="download-the-skype-for-business-cloud-connector-edition-installer"></a>Scaricare il programma Skype for Business Cloud Connector Edition di installazione
+## <a name="download-the-skype-for-business-cloud-connector-edition-installer"></a>Scaricare il programma di Skype for Business Cloud Connector Edition di installazione
 
 1. Nel server host in cui verranno eseguite le macchine virtuali del connettore cloud, scaricare i file di installazione: [https://aka.ms/CloudConnectorInstaller](https://aka.ms/CloudConnectorInstaller) . 
 
@@ -91,7 +91,7 @@ In questa sezione viene descritto come ottenere i Skype for Business Cloud Conne
 
     Quando si accede e si distribuisce ogni appliance nel sito, verificare che l'account di accesso corrente abbia il diritto di accesso alla **directory del sito.**
 
-3. La **directory appliance è** la directory radice di lavoro locale per Skype for Business Cloud Connector Edition e il percorso in cui vengono salvati i certificati, le istanze e i registri esterni. Il percorso predefinito è: %USERPROFILE%\CloudConnector\ApplianceRoot.
+3. La **directory appliance è** la directory radice di lavoro locale per Skype for Business Cloud Connector Edition e il percorso in cui vengono salvati i certificati, le istanze e i log esterni. Il percorso predefinito è: %USERPROFILE%\CloudConnector\ApplianceRoot.
 
     Per trovare il percorso della **directory appliance,** eseguire il cmdlet seguente:
 
@@ -165,16 +165,16 @@ Export-CcConfigurationSampleFile
 
 Il modello di esempio è archiviato nella **directory appliance**.
 
-Dopo l'aggiornamento con i valori per l'ambiente, salvare il file CloudConnector.ini nella **directory appliance**. È possibile eseguire **Get-CcApplianceDirectory** per determinare il percorso della **directory dell'appliance.**
+Dopo l'aggiornamento con i valori per l'ambiente, salvare il file CloudConnector.ini file nella **directory appliance**. È possibile eseguire **Get-CcApplianceDirectory** per determinare il percorso della **directory dell'appliance.**
 
 Quando si aggiorna il file .ini, tenere presente quanto segue:
 
 > [!NOTE]
-> Non tutti i valori per il file .ini vengono illustrati in questa sezione, solo quelli con una considerazione speciale sono trattati qui. Per un elenco completo, vedere la [sezione Determinare](plan-skype-for-business-cloud-connector-edition.md#BKMK_SiteParams) i parametri di distribuzione dell'argomento [Plan for Skype for Business Cloud Connector Edition.](plan-skype-for-business-cloud-connector-edition.md) Per ulteriori informazioni sui valori da modificare per ulteriori appliance o nuovi siti, vedere [Single site with High Availability (HA) rispetto](deploy-multiple-sites-in-cloud-connector.md#BKMK_SingleSitecomparedtomulti-site) alle distribuzioni multisnome nell'argomento Deploy multiple sites in Cloud [Connector.](deploy-multiple-sites-in-cloud-connector.md) 
+> Non tutti i valori per il file .ini vengono illustrati in questa sezione, ma solo quelli con una considerazione speciale sono trattati qui. Per un elenco completo, vedere la [sezione Determinare](plan-skype-for-business-cloud-connector-edition.md#BKMK_SiteParams) i parametri di distribuzione dell'argomento [Plan for Skype for Business Cloud Connector Edition.](plan-skype-for-business-cloud-connector-edition.md) Per ulteriori informazioni sui valori da modificare per ulteriori appliance o nuovi siti, vedere [Single site with High Availability (HA) rispetto](deploy-multiple-sites-in-cloud-connector.md#BKMK_SingleSitecomparedtomulti-site) alle distribuzioni multisnome nell'argomento Deploy multiple sites in Cloud [Connector.](deploy-multiple-sites-in-cloud-connector.md) 
 
 - **SiteName:** Il valore predefinito è **Site1.** È necessario aggiornarlo prima di distribuire Cloud Connector, perché quando si esegue **Register-CcAppliance** per registrare un'appliance in un sito esistente o nuovo, il cmdlet utilizzerà **SiteName** per determinare quale sito registrare.
 
-     Se si desidera registrare l'appliance in un nuovo sito, il valore **di SiteName** deve essere univoco e diverso dai siti esistenti. Se si desidera registrare l'appliance in un sito esistente, il valore di **SiteName** nel file .ini deve corrispondere al nome definito nella configurazione dell'organizzazione di Microsoft 365 o Office 365. Se si copia un file di configurazione da un sito a un altro, assicurarsi di aggiornare il valore **di SiteName** per ogni sito di conseguenza.
+     Se si desidera registrare l'appliance in un nuovo sito, il valore **di SiteName** deve essere univoco e diverso dai siti esistenti. Se si desidera registrare l'appliance in un sito esistente, il valore di **SiteName** nel file .ini deve corrispondere al nome definito nella configurazione dell'organizzazione Microsoft 365 o Office 365 locale. Se si copia un file di configurazione da un sito a un altro, assicurarsi di aggiornare il valore **di SiteName** per ogni sito di conseguenza.
 
 - **ServerName:** Il nome del server non deve contenere il nome di dominio e deve contenere un massimo di 15 caratteri.
 
@@ -196,9 +196,9 @@ Quando si aggiorna il file .ini, tenere presente quanto segue:
 
   - [Rete] CorpnetDNSIPAddress: l'indirizzo IP DNS da assegnare alla macchina virtuale di base.
 
-  - [Rete] WSUSServer: l'indirizzo IP di Windows Server Update Service.
+  - [Rete] WSUSServer: l'indirizzo IP del Windows Server Update Service.
 
-  - [Rete] WSUSStatusServer: l'indirizzo IP Windows server di stato del servizio aggiornamento server.
+  - [Rete] WSUSStatusServer: l'indirizzo IP del Windows server di stato del servizio aggiornamento server.
 
   - [Rete] EnableReferSupport: in questo modo verrà definito se il supporto SIP REFER è abilitato o disabilitato nella configurazione trunk per l'IP/PBX.
 
@@ -241,7 +241,7 @@ Start-CcDownload
 
 ## <a name="prepare-base-virtual-disk-vhdx-from-the-downloaded-iso-file"></a>Preparare il disco virtuale di base (VHDX) dal file ISO scaricato
 
-Questo passaggio prepara un file del disco rigido virtuale (VHDX) dall'Windows Server 2012'immagine ISO. Il disco rigido virtuale verrà utilizzato per creare macchine virtuali durante la distribuzione. Verrà creata una macchina virtuale temporanea (macchina virtuale di base) Windows Server 2012 verrà installata dal file ISO. Dopo la creazione della macchina virtuale, verranno installati alcuni componenti necessari e verrà applicato Windows'aggiornamento più recente. Alla fine, la macchina virtuale di base verrà generalizzata (sysprep) e pulita, lasciando solo il file del disco virtuale generato.
+Questo passaggio prepara un file del disco rigido virtuale (VHDX) dall'Windows Server 2012'immagine ISO. Il disco rigido virtuale verrà utilizzato per creare macchine virtuali durante la distribuzione. Verrà creata una macchina virtuale temporanea (macchina virtuale di base) Windows Server 2012 verrà installata dal file ISO. Dopo aver creato la macchina virtuale, verranno installati alcuni componenti necessari e verrà applicato Windows'aggiornamento più recente. Alla fine, la macchina virtuale di base verrà generalizzata (sysprep) e pulita, lasciando solo il file del disco virtuale generato.
 
 > [!NOTE]
 > È necessario eseguire questo passaggio solo per il primo dispositivo. 
@@ -264,12 +264,12 @@ Avviare una console di PowerShell come amministratore ed eseguire il cmdlet segu
 Convert-CcIsoToVhdx -IsoFilePath <Windows ISO File Path, including file name>
 ```
 
-Specificare il percorso completo, incluso il nome del file, per l'immagine ISO. Ad esempio: C:\ISO\WindowsServer2012R2.iso.
+Specificare il percorso completo, incluso il nome del file, dell'immagine ISO. Ad esempio: C:\ISO\WindowsServer2012R2.iso.
 
 Il file VHD creato viene archiviato nella **cartella Directory** siti \Bits\VHD. È possibile ottenere il percorso della **directory siti** eseguendo **Get-CcSiteDirectory**.
 
 > [!IMPORTANT]
-> Per impostazione predefinita, le impostazioni proxy non sono configurate nella macchina virtuale di base. Se nell'ambiente di rete è necessario un proxy per aggiornare la macchina virtuale tramite Windows Update, è necessario aggiungere l'opzione -PauseBeforeUpdate quando si esegue "Convert-CcIsoToVhdx". Lo script verrà sospeso prima Windows Update e si avrà la possibilità di configurare manualmente il proxy nella macchina virtuale. Dopo l'installazione del proxy e la macchina virtuale può accedere a Internet, è possibile riprendere lo script per completare i passaggi rimanenti. 
+> Per impostazione predefinita, le impostazioni proxy non sono configurate nella macchina virtuale di base. Se nell'ambiente di rete è necessario un proxy per aggiornare la macchina virtuale tramite Windows Update, è necessario aggiungere l'opzione -PauseBeforeUpdate quando si esegue "Convert-CcIsoToVhdx". Lo script verrà sospeso prima Windows Update e avrai la possibilità di configurare manualmente il proxy nella macchina virtuale. Dopo l'installazione del proxy e la macchina virtuale può accedere a Internet, è possibile riprendere lo script per completare i passaggi rimanenti. 
 
 ### <a name="create-vhds-for-a-multi-site-deployment"></a>Creare dischi rigidi virtuali per una distribuzione multis sito
 

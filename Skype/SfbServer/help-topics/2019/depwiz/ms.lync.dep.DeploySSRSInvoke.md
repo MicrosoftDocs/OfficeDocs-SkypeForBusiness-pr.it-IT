@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a4ba8d6-ba43-45b3-b834-372d092561e7
 ROBOTS: NOINDEX, NOFOLLOW
-description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Execute Commands viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
-ms.openlocfilehash: 5836ca77ecc7687f0301b6f34766fed4d8bb6630f1a8ac69618310bbb7fdf732
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Esecuzione comandi viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
+ms.openlocfilehash: 7db18c7ed3917d3710340445dea8ce5552335d6c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319429"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592800"
 ---
 # <a name="sql-server-reporting-services-invoke"></a>SQL Server Reporting Services (Invoke)
  

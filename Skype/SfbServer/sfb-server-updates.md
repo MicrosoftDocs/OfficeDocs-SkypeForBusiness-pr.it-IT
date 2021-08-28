@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 4b32dfba-1af6-4077-9a92-7cec8f220f20
 description: Trovare e gestire gli aggiornamenti Skype for Business Server 2015/2019 e Lync 2013 in un'unica posizione. Utilizzare i collegamenti riportati in questa pagina per visualizzare ulteriori informazioni sugli aggiornamenti e per scaricarli.
-ms.openlocfilehash: 2101e8ca02d227837aef0b9c49ce0d2e8d1144bb
-ms.sourcegitcommit: 25fd720c008dcf1573344e50d736131a20c3ac7d
+ms.openlocfilehash: 6071dabddebcce05c3dffee7578a432217a0f6cd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "58683320"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590950"
 ---
 # <a name="skype-for-business-server-updates"></a>Aggiornamenti di Skype for Business Server
 
@@ -56,7 +56,6 @@ KB 4470124 è la KB principale per Skype for Business Server 2019 che include tu
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
-|Skype for Business Server 2015 aggiornamento cumulativo 11|[KB 3061064](https://support.microsoft.com/kb/3061064)| Agosto, 2021 |
 |Skype for Business Server 2015 Aggiornamento cumulativo 11 Hotfix 1|[KB 3061064](https://support.microsoft.com/kb/3061064)| Luglio 2020 |
 |Skype for Business Server 2015 aggiornamento cumulativo 11|[KB 3061064](https://support.microsoft.com/kb/3061064)| 13 maggio 2020 |
 |Skype for Business Server 2015 Aggiornamento cumulativo 10 Hotfix 1|[KB 3061064](https://support.microsoft.com/kb/3061064)| Agosto 2019 |
@@ -137,7 +136,7 @@ KB 4470124 è la KB principale per Skype for Business Server 2019 che include tu
 
 #### <a name="pre-configured-vhds"></a>Dischi rigidi virtuali preconfigurato
 
-La topologia completa è costituita da 7 macchine virtuali che consentono di valutare completamente le API della piattaforma per sviluppatori microsoft Lync 2013, Microsoft Exchange 2013, SharePoint 2013 e UC (tra cui Microsoft Lync 2013 SDK, Exchange Web Services Managed API 2.0, Microsoft Lync Server 2013 SDK e Microsoft Unified Communications Managed API 4.0).
+La topologia completa è costituita da 7 macchine virtuali che consentono di valutare completamente microsoft Lync 2013, Microsoft Exchange 2013, SharePoint 2013 e LE API della piattaforma per sviluppatori UC (tra cui Microsoft Lync 2013 SDK, Exchange Web Services Managed API 2.0, Microsoft Lync Server 2013 SDK e Microsoft Unified Communications Managed API 4.0).
 
 Nome del Pacchetto |Data di rilascio|
 |:--- |:--- |
@@ -174,7 +173,7 @@ Nome del Pacchetto |Data di rilascio|
 
 ## <a name="lync-server-2010-update-history"></a>Cronologia degli aggiornamenti di Lync Server 2010
 
-[Kb 2493736](https://support.microsoft.com/kb/2493736) contiene tutti gli aggiornamenti cumulativi che sono stati rilasciati.
+[Kb 2493736](https://support.microsoft.com/kb/2493736) contiene tutti gli aggiornamenti cumulativi rilasciati.
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
@@ -215,7 +214,7 @@ Nome del Pacchetto |Data di rilascio|
 | Lync Server 2010 Group Chat SDK|Giugno 2012 |
 | Unified Communications Managed API 3.0 SDK |Maggio 2016 |
 | Piattaforma vocale - Lingue di runtime del server (versione 10.2) |Settembre 2010 |
-| Schemi di presenza avanzata per le comunicazioni unificate per Microsoft Lync Server 2010 |Novembre 2010 |
+| Schemi di presenza avanzata delle comunicazioni unificate per Microsoft Lync Server 2010 |Novembre 2010 |
 
 ### <a name="lync-2010-tools"></a>Strumenti di Lync 2010
 
@@ -272,4 +271,3 @@ Gli aggiornamenti software includono qualsiasi aggiornamento, aggiornamento cumu
 - [Installare Skype for Business Server 2015](./deploy/install/install.md)
 - [Aggiornamento a Skype for Business Server 2015](./deploy/upgrade-to-skype-for-business-server.md)
 - [Aggiornamenti più recenti per le versioni di Skype for Business che utilizzano Windows Installer (MSI)](sfb-client-updates.md)
-- 

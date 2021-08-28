@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 90490c65-0e40-4e85-96e1-751f27897e25
 description: Seguire i passaggi descritti in questo argomento per modificare la configurazione di una distribuzione Skype for Business Cloud Connector Edition 1.4.1 o successiva.
-ms.openlocfilehash: 151408d48f7623d72d5af4f8fef605d9dcc7d690a915cc7e8454a91f051dd0f1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5d0771e1f6a62015cf040a899c88696016366e47
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324185"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590010"
 ---
 # <a name="modify-the-configuration-of-an-existing-cloud-connector-deployment"></a>Modificare la configurazione di una distribuzione di Cloud Connector esistente
 
@@ -95,7 +95,7 @@ Se nel sito sono presenti più appliance, è necessario eseguire la procedura se
    Register-CcAppliance
    ```
 
-6. Eseguire il cmdlet seguente in tutte le altre appliance del sito per prelevare la configurazione più recente:
+6. Eseguire il cmdlet seguente in tutte le altre appliance del sito per recuperare la configurazione più recente:
     
    ```powershell
    Publish-CcAppliance
@@ -117,7 +117,7 @@ Per modificare la configurazione per più siti in una distribuzione, seguire i p
 
 Per abilitare gli aggiornamenti automatici del sistema operativo e gli aggiornamenti automatici bit, è necessario utilizzare l'account di amministratore tenant di Skype for Business per la gestione online e usare PowerShell remoto tenant come indicato di seguito.
   
-Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o gli aggiornamenti automatici di Bits, l'host e la macchina virtuale potrebbero non essere Windows aggiornamenti importanti e Cloud Connector non verrà aggiornato automaticamente alla nuova versione. È consigliabile abilitare gli aggiornamenti automatici.
+Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o gli aggiornamenti automatici di Bits, l'host e la macchina virtuale potrebbero perdere aggiornamenti importanti Windows e Cloud Connector non verrà aggiornato automaticamente alla nuova versione. È consigliabile abilitare gli aggiornamenti automatici.
   
 1. La proprietà EnableAutoUpdate del sito deve essere impostata su true (valore predefinito). Eseguire il cmdlet seguente per assicurarsi che EnableAutoUpdate sia impostato su true:
     
@@ -133,7 +133,7 @@ Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o 
     
    - Per un intervallo di tempo settimanale, sono necessari giorni della settimana, che possono essere un solo giorno o più giorni.
     
-   - Per un intervallo di tempo mensile, possono essere disponibili due tipi. Il primo tipo è specificare il giorno del mese, che può essere un singolo giorno. Il secondo tipo è specificare le settimane del mese, insieme ai giorni della settimana, che possono essere entrambi un singolo elemento o più elementi.
+   - Per un intervallo di tempo mensile, possono essere disponibili due tipi. Il primo tipo è specificare il giorno del mese, che può essere un singolo giorno. Il secondo tipo è quello di specificare le settimane del mese, insieme ai giorni della settimana, che possono essere entrambi un singolo elemento o più elementi.
     
    - Ogni tenant può avere 20 finestre di tempo definite. L'intervallo di tempo predefinito verrà creato per un nuovo tenant come intervallo di tempo predefinito per l'aggiornamento del sistema operativo e l'aggiornamento dei bit. Eseguire i cmdlet seguenti per impostare l'intervallo di tempo giornaliero, settimanale o mensile:
     
@@ -166,7 +166,7 @@ Se sono stati disabilitati gli aggiornamenti automatici del sistema operativo o 
 
 Le modifiche amministrative nell'Microsoft 365 o Office 365 per Cloud Connector vengono apportate da un account con le autorizzazioni necessarie. Nelle versioni di Cloud Connector precedenti alla 2.0, tale account è un account amministratore tenant globale dedicato. In Cloud Connector versioni 2.0 e successive, tale account può essere un account Microsoft 365 o Office 365 con diritti Skype for Business amministratore.
   
-Se le credenziali dell'account amministratore cambiano in Microsoft 365 o Office 365, è inoltre necessario aggiornare le credenziali memorizzate localmente nella cache in Cloud Connector eseguendo il seguente comando di PowerShell amministratore in ogni appliance cloud connector distribuita:
+Se le credenziali dell'account amministratore cambiano in Microsoft 365 o Office 365, è inoltre necessario aggiornare le credenziali memorizzate localmente nella cache in Cloud Connector eseguendo il seguente comando di PowerShell di amministratore in ogni appliance del connettore cloud distribuita:
   
 ```powershell
 Set-CcCredential -AccountType TenantAdmin

@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.InstallMirrorDatabaseOptionPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7500896a-14ea-4b11-aaee-be3d81314536
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'È possibile configurare la sezione Impostazioni database mirror definendo le impostazioni seguenti:'
-ms.openlocfilehash: ae2c32201b2d8f3e594469cd84a41ce307897ac7bd214cdd7951feb02bc42646
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3df4f9b5e2f11127249c597671152c2f1a6e9f78
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323318"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58591630"
 ---
 # <a name="install-mirror-database-option-page"></a>Pagina delle opzioni Installa database mirror
  

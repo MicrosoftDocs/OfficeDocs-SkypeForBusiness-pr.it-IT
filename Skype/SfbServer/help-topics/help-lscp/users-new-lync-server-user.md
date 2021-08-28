@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.UserNew
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 23408002-f83c-4b8a-ac65-6fb0e6bc414e
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 36022fe928769e4e5113a48723143036dbbaf87914584964164a439e5b9015e6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ed921dffecf43f5248136a026e74495d061c6a1c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54348241"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58591550"
 ---
 # <a name="users-new-lync-server-user"></a>Utenti: nuovo utente di Lync Server
 
@@ -30,7 +30,7 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Abilitare o disabilitare gli utenti per Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-disable-or-re-enable-user-account-for-lync-server)
 
-- [Assegnare criteri di conferenza per modificare l'esperienza di riunione predefinita di un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-conferencing-policy)
+- [Assegnare un criterio di conferenza per modificare l'esperienza di riunione predefinita di un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-conferencing-policy)
 
 - [Specificare le versioni client supportate per l'accesso da un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-client-version-policy)
 
@@ -42,7 +42,7 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Assegnare un criterio percorso a un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-location-policy)
 
-- [Abilitare gli utenti VoIP aziendale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)
+- [Abilitare gli utenti per VoIP aziendale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)
 
 - [Configurare la federazione, l'accesso utente remoto e la connettività di messaggistica istantanea pubblica per gli utenti](/previous-versions/office/lync-server-2013/lync-server-2013-assign-an-external-user-access-policy-to-a-lync-enabled-user)
 

@@ -9,25 +9,25 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 3b25f14d-884b-42dd-a866-460d276d3e43
-description: 'Riepilogo: informazioni su come eliminare una raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server controllo.'
-ms.openlocfilehash: 8927b06c3945be48685f13f33dcee83ff08ae653ade5b2d51228407a3554ef70
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: informazioni su come eliminare una raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server di controllo.'
+ms.openlocfilehash: ffc9a5cf91c9cdc19c47e3558ace3a040e7fb33e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307847"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592840"
 ---
 # <a name="skype-for-business-server-delete-an-existing-collection-of-sip-trunk-configuration-settings"></a>Skype for Business Server: eliminare una raccolta esistente di impostazioni di configurazione trunk SIP 
  
 **Riepilogo:** Informazioni su come eliminare una raccolta di impostazioni di configurazione trunk tramite il Pannello Skype for Business Server controllo.
   
-Le impostazioni di configurazione trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Branch eXchange) di IP-Public o un session border controller (SBC) presso il provider di servizi. Queste impostazioni consentono di specificare quanto segue:
+Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un PBX (Branch eXchange) di IP-Public o un session border controller (SBC) presso il provider di servizi. Queste impostazioni consentono di specificare quanto segue:
   
 - Se il bypass multimediale deve essere abilitato nei trunk
     
@@ -55,7 +55,7 @@ Gli amministratori possono inoltre creare impostazioni di configurazione persona
     
 5. Nella finestra **Skype for Business Server pannello** di controllo fare clic su **OK.**
     
-6. Se si decide di non eliminare più la raccolta, fare clic su **Commit**, quindi su **Annulla tutte le modifiche di cui non è stato eseguito il commit**. Quando viene visualizzata Skype for Business Server finestra di **dialogo** Pannello di controllo, fare clic su **OK.**
+6. Se si decide di non eliminare più la raccolta, fare clic su **Commit**, quindi su **Annulla tutte le modifiche di cui non è stato eseguito il commit**. Quando viene visualizzata Skype for Business Server finestra **di dialogo** Pannello di controllo, fare clic su **OK.**
     
 ## <a name="removing-trunk-configuration-settings-by-using-skype-for-business-server-management-shell-cmdlets"></a>Rimozione della configurazione trunk Impostazioni tramite i cmdlet di Skype for Business Server Management Shell
 

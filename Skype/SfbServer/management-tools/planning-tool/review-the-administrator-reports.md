@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 22d480ea-cd64-4d09-99fe-96e997570844
 description: Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in Siti di progettazione. Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.
-ms.openlocfilehash: c74237f5d92d54a1a421ede7707565bba59582141e00d1a944a88c2e8c096c88
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 31639b124826368a1da11d359249bc6d08f64c8d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54293973"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58591010"
 ---
 # <a name="review-the-administrator-reports-in-skype-for-business-server-2015"></a>Esaminare i report dell'amministratore in Skype for Business Server 2015
 
@@ -44,7 +44,7 @@ Il Skype for Business amministratore è il primo di quattro report importanti ch
 
 Nel rapporto riepilogativo vengono elencate informazioni di configurazione generali associate alla rete perimetrale. Vengono documentati il percorso, il nome di dominio completo (FQDN) e l'indirizzo IP, il tipo di rete e i commenti specifici di un determinato ruolo.
 
-Il progettista e tutti i team che distribuiranno, gestiranno e gestiranno l'infrastruttura devono esaminare il rapporto riepilogativo per l'accuratezza e assicurarsi che gli errori siano almeno.
+Il progettista e ognuno dei team che distribuiranno, gestiranno e gestiranno l'infrastruttura deve esaminare il rapporto riepilogativo per l'accuratezza e per assicurarsi che gli errori siano al minimo.
 
 È inoltre possibile visualizzare report più dettagliati:
 

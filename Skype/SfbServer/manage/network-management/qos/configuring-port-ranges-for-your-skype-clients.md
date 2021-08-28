@@ -13,14 +13,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In questo articolo viene descritto come configurare gli intervalli di porte per i client e configurare i criteri qualità del servizio in Skype for Business Server per i client in esecuzione in Windows 10.
-ms.openlocfilehash: 4d8736c9249bbef25438be7232d7802f3ddb3e9a
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: d43b79d82e3099cbc471b12fba5ad7155de43e77
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234021"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58591160"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-clients-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i client in Skype for Business Server
 
@@ -38,7 +38,7 @@ Per impostazione predefinita, Skype for Business applicazioni client possono uti
 
 **Get-CsConferencingConfiguration**
 
-Presupponendo che non siano state apportate modifiche alle impostazioni di conferenza dopo l'installazione Skype for Business Server, è consigliabile ottenere informazioni che includono i valori delle proprietà seguenti:
+Presupponendo che non siano state apportate modifiche alle impostazioni di conferenza dopo l'installazione Skype for Business Server, è consigliabile ottenere informazioni che includono questi valori di proprietà:
 
 ClientMediaPortRangeEnabled : False<br/>
 ClientAudioPort : 5350<br/>
@@ -54,7 +54,7 @@ Se si osserva attentamente l'output precedente, si noteranno due aspetti importa
 
 **ClientMediaPortRangeEnabled : False**
 
-Questo è importante perché, quando questa proprietà è impostata su False, i client Skype for Business utilizzeranno qualsiasi porta disponibile tra le porte 1024 e 65535 quando partecipano a una sessione di comunicazione. ciò è vero indipendentemente da qualsiasi altra impostazione di porta (ad esempio, ClientMediaPort o ClientVideoPort). Se si desidera limitare l'utilizzo a un set di porte specificato (operazione che si desidera eseguire se si prevede di implementare la qualità del servizio), è innanzitutto necessario abilitare gli intervalli di porte multimediali client. Questa operazione può essere eseguita utilizzando il comando Windows PowerShell seguente:
+Questo è importante perché, quando questa proprietà è impostata su False, i client Skype for Business utilizzeranno qualsiasi porta disponibile tra le porte 1024 e 65535 quando partecipano a una sessione di comunicazione. ciò vale indipendentemente da qualsiasi altra impostazione di porta, ad esempio ClientMediaPort o ClientVideoPort. Se si desidera limitare l'utilizzo a un set di porte specificato (operazione che si desidera eseguire se si prevede di implementare la qualità del servizio), è innanzitutto necessario abilitare gli intervalli di porte multimediali client. Questa operazione può essere eseguita utilizzando il comando Windows PowerShell seguente:
 
 **Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True**
 
@@ -128,7 +128,7 @@ I singoli utenti devono disconnettersi da Skype for Business e quindi eseguire d
 > [!NOTE]  
 > È anche possibile abilitare gli intervalli di porte multimediali dei client e quindi assegnarli con un singolo comando. Ad esempio:<BR><CODE>Set-CsConferencingConfiguration -ClientMediaPortRangeEnabled $True -ClientAudioPort 50020 -ClientAudioPortRange 20 -ClientVideoPort 58000 -ClientVideoPortRange 20 -ClientAppSharingPort 42000 -ClientAppSharingPortRange 20 -ClientFileTransferPort 42020 -ClientFileTransferPortRange 20</CODE>
 
-## <a name="configure-quality-of-service-policies-for-clients-running-on-windows-10"></a>Configurare i criteri di qualità del servizio per i client in Windows 10
+## <a name="configure-quality-of-service-policies-for-clients-running-on-windows-10"></a>Configurare i criteri di qualità del servizio per i client in esecuzione Windows 10
 
 Oltre a specificare gli intervalli di porte per l'utilizzo da parte dei client Skype for Business, è inoltre necessario creare criteri di qualità del servizio separati che verranno applicati ai computer client. I criteri di qualità del servizio creati per i server per conferenze, applicazioni e Mediation Server non devono essere applicati ai computer client. Queste informazioni si applicano solo ai computer che eseguono Skype for Business client e Windows 10.
 

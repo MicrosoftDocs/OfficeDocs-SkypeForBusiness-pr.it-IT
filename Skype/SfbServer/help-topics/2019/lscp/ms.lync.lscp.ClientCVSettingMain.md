@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: cb17314e-b89e-4821-8855-12f8fd2edc9b
 ROBOTS: NOINDEX, NOFOLLOW
 description: Oltre a specificare la versione dei client che si desidera supportare nell'ambiente, è possibile specificare un'azione predefinita per i client per i quali non sono già stati definiti criteri delle versioni. In questo modo, è possibile limitare le versioni client usate nell'ambiente e ciò può contribuire a tenere sotto controllo i costi associati al supporto di più versioni client.
-ms.openlocfilehash: 3daf09f47ce289a91505404b7600dd5c4b9c11ffdf131f33089c22470f648b10
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e60e9a0225da3dbb2379f31eba3043a00c4e9144
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317691"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592780"
 ---
 # <a name="client-version-configuration"></a>Configurazione versione client
 
@@ -51,7 +51,7 @@ Gli elenchi seguenti descrivono i menu, i comandi, i campi e le proprietà della
 
   - **Seleziona tutto** Questa opzione consente di selezionare tutte le configurazioni delle versioni client nell'elenco.
 
-  - **Elimina** Questa opzione consente di eliminare tutte le configurazioni di versione client selezionate.
+  - **Elimina** Questa opzione consente di eliminare tutte le configurazioni delle versioni client selezionate.
 
 - **Aggiorna** È possibile aggiornare l'elenco di configurazione delle versioni client per verificare lo stato delle opzioni di tutte le configurazioni delle versioni client.
 

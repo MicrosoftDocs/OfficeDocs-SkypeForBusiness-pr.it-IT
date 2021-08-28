@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddBranchOfficeAppliancePstnPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7c55a43d-2589-48f9-972b-1e48a3dca52a
 description: 'Per definire il gateway PSTN (Public Switched Telephone Network) per un Survivable Branch Appliance in un sito di succursale, specificare quanto segue:'
-ms.openlocfilehash: 65731fe7227f0aaba485ecf27c1493df120379e2ae8224eaf471c2f557e61479
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b79d4959baca97628ce3e712ae91cb3879b617c4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307217"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58591540"
 ---
 # <a name="add-survivable-branch-appliance-pstn"></a>Aggiungere indirizzo PSTN di Survivable Branch Appliance
  

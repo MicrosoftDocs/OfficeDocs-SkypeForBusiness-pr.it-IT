@@ -13,22 +13,22 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: È possibile abilitare e configurare l'accesso degli utenti esterni per controllare se gli utenti esterni supportati possono collaborare con utenti Skype for Business Server interni.
-ms.openlocfilehash: f783e0744443a7efb4f59c218789fb05241aa158eaa9fbf6de673a0cd959ff90
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: aab0a4c5a3613f285b47a886819d524e37480341
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54336836"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590140"
 ---
 # <a name="managing-federation-and-external-access-to-skype-for-business-server"></a>Gestione della federazione e dell'accesso esterno Skype for Business Server
 
-La distribuzione di un server perimetrale o di un pool di server perimetrali è il primo passaggio per il supporto degli utenti esterni. Per informazioni dettagliate sulla distribuzione dei server perimetrali, vedere [Deploy Edge Server in Skype for Business Server](../../deploy/deploy-edge-server/deploy-edge-server.md).
+La distribuzione di un server perimetrale o di un pool di server perimetrali è il primo passaggio per il supporto degli utenti esterni. Per informazioni dettagliate sulla distribuzione dei server perimetrali, vedere [Deploy Edge Server in Skype for Business Server.](../../deploy/deploy-edge-server/deploy-edge-server.md)
 
 Dopo aver installato e configurato la distribuzione interna di Skype for Business Server, gli utenti interni dell'organizzazione possono collaborare con altri utenti interni che dispongono di account SIP in Servizi di dominio Active Directory. La collaborazione può includere l'invio e la ricezione di messaggi istantanei, l'aggiornamento delle informazioni sulla presenza e la partecipazione a conferenze, anche note come "riunioni". È possibile abilitare e configurare l'accesso degli utenti esterni per controllare se gli utenti esterni supportati possono collaborare con utenti Skype for Business Server interni. Gli utenti esterni possono includere utenti remoti della distribuzione, utenti federati (inclusi gli utenti supportati di provider di servizi di messaggistica istantanea pubblici) e partecipanti anonimi alle conferenze.
 
-Se la distribuzione includeva l'installazione di un server perimetrale di Skype for Business Server o di un pool di server perimetrali, l'ambito dei possibili tipi di comunicazione è notevolmente ampliato con una serie di opzioni per l'accesso degli utenti esterni, la comunicazione con i membri di altri domini federati SIP e provider federati SIP. Dopo aver configurato il server perimetrale o il pool di server perimetrali, è possibile abilitare i tipi di accesso utente esterno che si desidera fornire e configurare i criteri da controllare per l'accesso esterno. In Skype for Business Server, è possibile abilitare e configurare l'accesso utente esterno e i criteri utilizzando il Pannello di controllo di Skype for Business Server, [Skype for Business Server Management Shell](../management-shell.md)o entrambi, in base ai requisiti delle attività. 
+Se la distribuzione includeva l'installazione di un server perimetrale di Skype for Business Server o di un pool di server perimetrali, l'ambito dei possibili tipi di comunicazione è notevolmente ampliato con una serie di opzioni per l'accesso degli utenti esterni, la comunicazione con i membri di altri domini federati SIP e provider federati SIP. Dopo aver configurato il server perimetrale o il pool di server perimetrali, è possibile abilitare i tipi di accesso utente esterno che si desidera fornire e configurare i criteri da controllare per l'accesso esterno. In Skype for Business Server, si abilitano e configurano l'accesso utente esterno e i criteri utilizzando il Pannello di controllo di Skype for Business Server, [Skype for Business Server Management Shell](../management-shell.md)o entrambi, in base ai requisiti dell'attività. 
 
 
 

@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare Health Dashboard per monitorare la connessione tra Session Border Controller e Direct Routing.
-ms.openlocfilehash: 2b5888ed6e8545eff64929ef24da7fd768c4d60b6bb0e4df5f4760dfd215c08d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: aec8a0bb37af02f6103714a26c9d35e18879985c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54327671"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592340"
 ---
 # <a name="health-dashboard-for-direct-routing"></a>Dashboard integrità per il routing diretto
 
@@ -40,7 +40,7 @@ Dashboard integrità fornisce le informazioni seguenti relative all'integrità g
 
  ![Mostra le statistiche del dashboard integrità](media/direct-routing-dashboard-stats1.png)
 
-- **Riepilogo routing diretto:** mostra il numero totale di SBC registrati nel sistema. La registrazione significa che l'amministratore del tenant ha aggiunto un SBC usando il comando New-CsOnlinePSTNGateway database. Se il controller SBC è stato aggiunto in PowerShell, ma non è mai stato connesso, il dashboard integrità lo mostra in uno stato non integro.
+- **Riepilogo routing diretto:** mostra il numero totale di SBC registrati nel sistema. La registrazione significa che l'amministratore del tenant ha aggiunto un SBC usando il comando New-CsOnlinePSTNGateway database. Se il valore SBC è stato aggiunto in PowerShell, ma non è mai stato connesso, il dashboard integrità lo mostra in uno stato non integro.
 
 - **SBC:** FQDN dell'SBC associato.
 
@@ -62,7 +62,7 @@ Dashboard integrità fornisce le informazioni seguenti relative all'integrità g
 
 - **Stato connettività TLS** : la connettività TLS (Transport Layer Security) mostra lo stato delle connessioni TLS tra Routing diretto e SBC. Dashboard integrità analizza anche la data di scadenza del certificato e avvisa se un certificato è impostato per scadere entro 30 giorni, in modo che gli amministratori possano rinnovare il certificato prima dell'interruzione del servizio.
 
-   Facendo clic sul messaggio Di avviso, è possibile visualizzare una descrizione dettagliata del problema in una finestra popup a destra e suggerimenti su come risolvere il problema.
+   Facendo clic sul messaggio Avviso, è possibile visualizzare una descrizione dettagliata del problema in una finestra popup a destra e suggerimenti su come risolvere il problema.
 
 - **Stato delle opzioni SIP:** per impostazione predefinita, SBC invia messaggi di opzioni ogni minuto. Questa configurazione può variare per i diversi fornitori SBC. Routing diretto avvisa se le opzioni SIP non vengono inviate o non sono configurate. Per altre informazioni sul monitoraggio delle opzioni SIP e sulle condizioni in cui un SBC può essere contrassegnato come non funzionante, vedere Monitorare e risolvere [i problemi relativi al routing diretto.](direct-routing-monitor-and-troubleshoot.md)
 
@@ -74,7 +74,7 @@ Dashboard integrità fornisce le informazioni seguenti relative all'integrità g
 
     - Avviso, nessuna opzione SIP: il session border controller è presente nel database (l'amministratore l'ha creato usando il comando New-CsOnlinePSTNGateway). È configurato per l'invio di opzioni SIP, ma il servizio Routing diretto non ha mai visto le opzioni SIP che tornavano da questo SBC.
 
-    - Avviso: i messaggi SIP non sono configurati: il monitoraggio trunk con le opzioni SIP non è attivato. Microsoft Calling System usa le opzioni SIP e il monitoraggio dell'handshake Transport Layer Security (TLS) per rilevare l'integrità dei session border controller (SBC) connessi a livello di applicazione. Si verificano problemi se questo trunk può essere raggiunto a livello di rete (tramite ping), ma il certificato è scaduto o lo stack SIP non funziona. Per identificare in anticipo questi problemi, Microsoft consiglia di abilitare l'invio di opzioni SIP. Consultare la documentazione del produttore SBC per configurare le opzioni SIP di invio.
+    - Avviso: i messaggi SIP non sono configurati: il monitoraggio trunk con le opzioni SIP non è attivato. Microsoft Calling System usa le opzioni SIP e il monitoraggio dell'handshake Transport Layer Security (TLS) per rilevare l'integrità dei session border controller (SBC) connessi a livello di applicazione. Si verificano problemi se questo trunk può essere raggiunto a livello di rete (tramite ping), ma il certificato è scaduto o lo stack SIP non funziona. Per identificare in anticipo questi problemi, Microsoft consiglia di abilitare le opzioni SIP di invio. Consultare la documentazione del produttore SBC per configurare le opzioni SIP di invio.
 
 - **Capacità chiamate simultanee:** è possibile specificare il limite di chiamate simultanee che un SBC può gestire usando il comando New o Set-CsOnlinePSTNGateway con il parametro -MaxConcurrentSessions. Questo parametro calcola il numero di chiamate inviate o ricevute da Direct Routing usando uno specifico SBC e le confronta con il limite impostato. Nota: se SBC gestisce anche le chiamate a diversi PBX, questo numero non mostrerà le chiamate simultanee effettive.
 

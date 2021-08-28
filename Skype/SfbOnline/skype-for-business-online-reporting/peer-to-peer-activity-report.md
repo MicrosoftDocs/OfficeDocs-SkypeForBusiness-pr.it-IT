@@ -13,7 +13,7 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,12 +22,12 @@ ms.custom:
 - O365M_ReportsS4BPeerActivity
 - O365P_ReportsS4BPeerActivity
 description: 'Get a Skype for Business Peer-to-peer activity report, and learn how to interpret and customize it for your needs. '
-ms.openlocfilehash: 29fad24fd9e6f3ea018b9e96f3390141c5281e3b72de91076495031a7e3486ff
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7616e13f81b2b8ec204409f7a90e275dab795742
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342631"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592940"
 ---
 # <a name="peer-to-peer-activity-report"></a>Report attività peer-to-peer
 
@@ -46,7 +46,7 @@ Questo report, insieme agli altri report Skype for Business, fornisce informazio
 
 1. Passare all'interfaccia di amministrazione > **utilizzo dei**  >  **report.**
     
-2. Nella pagina **Utilizzo** selezionare  >  **Skype for Business'attività peer-to-peer** **nell'elenco Selezionare un report a** sinistra. In caso contrario, **fare clic Skype for Business** widget attività Skype for Business attività **peer-to-peer** nell'elenco Skype for Business **attività.**
+2. Nella pagina **Utilizzo** selezionare  >  **Skype for Business'attività peer-to-peer** **nell'elenco Selezionare un report a** sinistra. In caso contrario, fare **clic Skype for Business** widget Attività peer-to-peer e quindi fare clic su Skype for Business **attività peer-to-peer** nell'Skype for Business **attività.**
 
 ## <a name="interpret-the-skype-for-business-peer-to-peer-activity-report"></a>Interpretare il report Attività peer-to-peer Skype for Business
 
@@ -65,7 +65,7 @@ Questo report, insieme agli altri report Skype for Business, fornisce informazio
 ***
 ![Numero 3](../images/sfbcallout3.png)<br/>Usare i dati del grafico interattivo **Attività** per comprendere le tendenze di utilizzo e vedere il numero totale di sessioni, per tipo di sessione, nella propria organizzazione. Mostra il numero totale e i tipi di sessioni di messaggistica **istantanea,** **audio,** **video,** condivisione applicazioni e trasferimento **di file** nell'intera organizzazione. 
 ***
-![Numero 4](../images/sfbcallout4.png)<br/>Usare i dati del grafico interattivo **Utenti** per comprendere le tendenze di utilizzo e vedere il numero totale di utenti unici che hanno partecipato ad attività peer-to-peer tenute nella propria organizzazione. Mostra il numero totale di utenti insieme ai tipi di messaggistica **istantanea,** **audio,** **video,** condivisione applicazioni e trasferimento **di file** nelle sessioni peer-to-peer.
+![Numero 4](../images/sfbcallout4.png)<br/>Usare i dati del grafico interattivo **Utenti** per comprendere le tendenze di utilizzo e vedere il numero totale di utenti unici che hanno partecipato ad attività peer-to-peer tenute nella propria organizzazione. Mostra il numero totale di utenti insieme ai tipi di messaggistica **istantanea,** **audio,** **video,** condivisione applicazioni e trasferimento **di file** in sessioni peer-to-peer.
 ***
 ![Numero 5](../images/sfbcallout5.png)<br/>Usare i dati del grafico interattivo **Minuti** per comprendere le tendenze di utilizzo e vedere il numero totale di minuti utilizzati dagli utenti quando eseguono attività peer-to-peer con audio e video. Mostra il numero totale di minuti di **Audio** e **Video** utilizzati nelle sessioni peer-to-peer. 
 ***
@@ -91,7 +91,7 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 *    **Minuti audio** mostra il numero totale di minuti audio utilizzati in tutta l'organizzazione. 
 *    **Minuti video** mostra il numero totale di minuti video utilizzati in tutta l'organizzazione. 
 
-Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la **sezione Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
+Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
 ***
 ![Numero 9](../images/sfbcallout9.png)<br/>È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic o toccando **Esporta**.           <br/> ![Skype for Business Pulsante Esporta report.](../images/de7e2ab7-d70c-422f-a0ec-178b10f7dd51.png)<br/>Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.
 ***
@@ -105,7 +105,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenze telefoniche con accesso esterno/esterno a cui si partecipa.
+- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenza telefonica con accesso esterno/esterno a cui si partecipa.
     
 - [Skype per gli utenti aziendali bloccati report](users-blocked-report.md) - Permette di consultare gli utenti dell'organizzazione a cui è impedito effettuare chiamate.
     

@@ -9,19 +9,19 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come creare un modello di team personalizzato in Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: abbfd257297475ee059ca80ca854fc1372cf51b26cc6afdf96a00b1abce9fde4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e8733dde289cfc595d8db7b56652cb28dcc646b8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54346322"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589770"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -38,7 +38,7 @@ Per iniziare:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
+2. Nel riquadro di spostamento sinistro espandere **Teams**  >  **Team**.
 
 3. Selezionare **Aggiungi**.
 
@@ -53,13 +53,13 @@ Per iniziare:
 
     ![Immagine della finestra di dialogo di denominazione delle impostazioni dei modelli di team.](media/template-add-a-name.png)
 
-6. Nella sezione **canali, schede e app** aggiungere i canali e le app di cui il team ha bisogno.
+6. Nella sezione **canali, schede e app** aggiungere tutti i canali e le app di cui il team ha bisogno.
 
     1. Nella sezione **Canali** selezionare **Aggiungi**.
     2. Nella finestra **di dialogo** Aggiungi assegnare un nome al canale.
     3. Aggiungere una descrizione.
     4. Decidere se il canale deve essere visualizzato per impostazione predefinita.
-    5. Cercare il nome di un'app da aggiungere al canale.
+    5. Cercare un nome di app da aggiungere al canale.
     6. Al **termine, selezionare** Applica.
 
     ![Immagine della schermata Modelli di team canali, schede e app.](media/template-channels-tabs-apps.png)
@@ -96,13 +96,13 @@ Per iniziare:
 
 ## <a name="known-issues"></a>Problemi noti
 
-**Problema:** se è stato creato un team da un modello personalizzato che conteneva altre schede personalizzate, al posto delle app per schede personalizzate potrebbero essere visualizzate schede vuote. Le schede predefinite, ad esempio **Post,** **File** e **Wiki,** verranno visualizzate come previsto.
+**Problema:** se è stato creato un team da un modello personalizzato che conteneva altre schede personalizzate, è possibile che al posto delle app per schede personalizzate venga visualizzata una scheda vuota. Le schede predefinite, ad esempio **Post,** **File** e **Wiki,** verranno visualizzate come previsto.
 
 **Soluzione:** per risolvere il problema, rimuovere la scheda personalizzata e aggiungere una nuova scheda con la stessa app. Se non si hanno le autorizzazioni per rimuovere la scheda personalizzata e aggiungere una nuova scheda, contattare il proprietario del team per assistenza.
 
 Stiamo lavorando a una correzione per i futuri team creati da modelli personalizzati.
 
-**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di una Teams pagina.
+**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di Teams pagina.
 
 ![messaggio di errore del browser](media/browser-error-message.png)
 

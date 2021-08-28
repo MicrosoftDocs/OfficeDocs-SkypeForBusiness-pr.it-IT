@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0013c8c6-cdf9-4d70-bc2a-cddd1560f66b
 description: Ogni record rappresenta le metriche del segnale audio per un endpoint. In genere, ogni chiamata ha due record, uno per il chiamante e uno per il chiamato.
-ms.openlocfilehash: 36ece4a9481400c3fae9e248d00cc59f3ec161b21aa03d8e824fc4d21931d04f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0f021b438fe31bf180ee06ce83dad86e01c04070
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58592400"
 ---
 # <a name="audiosignal-table"></a>Tabella AudioSignal
  
@@ -45,7 +45,7 @@ Ogni record rappresenta le metriche del segnale audio per un endpoint. In genere
 |**EchoEventCauses** <br/> |tinyint  <br/> | <br/> |Cause di un evento eco:  <br/> ECHO_EVENT_BAD_TIMESTAMP 0x01  <br/> ECHO_EVENT_POSTAEC_ECHO 0x02  <br/> ECHO_EVENT_ANLP 0x04  <br/> ECHO_EVENT_DNLP 0x08  <br/> ECHO_EVENT_MIC_CLIPPING 0x10  <br/> ECHO_EVENT_BAD_STATE 0x20  <br/> La causa può essere una combinazione di queste singole cause.  <br/> |
 |**EchoPercentMicIn** <br/> |decimal(5,2)  <br/> | <br/> |Percentuale di tempo in cui è stata rilevata l'eco nel flusso di acquisizione del microfono. In genere, i valori sono bassi per cuffie o ricevitori e superiori per i telefoni degli altoparlanti o gli altoparlanti autonomi. Per i dispositivi che supportano l'annullamento dell'eco acustico a bordo, valori elevati indicano una perdita di eco. Per altri dispositivi, questa metrica non deve essere usata per valutare la qualità del dispositivo.  <br/> |
 |**EchoPercentSend** <br/> |decimal(5,2)  <br/> ||Percentuale di tempo in cui viene rilevato l'eco nel flusso inviato. Un'elevata percentuale di eco nei flussi di invio è un'indicazione della perdita di eco.  <br/> |
-|**RxAGCSignalLevel** <br/> |int  <br/> | <br/> |Livello del segnale ricevuto nel Mediation Server dal gateway. ciò si applica solo al Mediation Server. L'unità di misura per questa metrica è dBoV. Per una buona qualità, l'intervallo accettabile deve essere [-30 a -18] dBoV.  <br/> |
+|**RxAGCSignalLevel** <br/> |int  <br/> | <br/> |Livello del segnale ricevuto nel Mediation Server dal gateway. ciò si applica solo al Mediation Server. L'unità di misura per questa metrica è dBoV. Per una buona qualità, l'intervallo accettabile deve essere compreso tra [-30 e -18] dBoV.  <br/> |
 |**RxAGCNoiseLevel** <br/> |int  <br/> | <br/> |Livello di segnale ricevuto nel Mediation Server dal gateway. Si applica solo al Mediation Server. L'unità di misura per questa metrica è dBoV. Per una buona qualità, il valore accettabile deve essere inferiore a -50 dBoV.  <br/> |
 |**RxAvgAGCGain** <br/> |int  <br/> | <br/> |Controllo automatico del guadagno (AGC) sul lato Mediation Server.  <br/> |
 |**InitialSignalLevelRMS** <br/> |float  <br/> | <br/> |Il quadrato della media radice (RMS) del segnale in arrivo fino ai primi 30 secondi della chiamata.  <br/> |
