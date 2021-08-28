@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 15354abe-733e-466b-bcd4-a6cfbf58caf8
 description: 'Riepilogo: informazioni sui prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 86c7432ea32f4809d2b69d79583caca578c661950a217f7c1e3977925d524d3b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0f46de6fa8b8c2027a3828df67a0330212392e45
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340192"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617022"
 ---
 # <a name="security-and-configuration-prerequisites-for-enterprise-voice-in-skype-for-business-server"></a>Prerequisiti di sicurezza e configurazione per VoIP aziendale in Skype for Business Server
  
@@ -61,7 +61,7 @@ Se si sta procedendo ora alla distribuzione del carico di lavoro di VoIP azienda
 
 Dopo aver verificato i prerequisiti software e ambientali per VoIP aziendale è possibile:
   
-- Installare il Mediation Server, come descritto in Deploy [a Mediation Server in Topology Builder in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si desidera distribuire un Mediation Server autonomo o un pool perché i Mediation Server vengono installati come parte del processo di distribuzione del pool Front End o del server edizione Standard quando collocati.
+- Installare il Mediation Server, come descritto in Deploy [a Mediation Server in Topology Builder in Skype for Business Server](deploy-a-mediation-server.md), ma solo se si desidera distribuire un Mediation Server autonomo o un pool perché i Mediation Server vengono installati come parte del processo di distribuzione del pool Front End o del server edizione Standard quando sono collocati.
     
 - In caso contrario, iniziare a configurare le impostazioni per instradare le chiamate VoIP aziendale utenti, come descritto [in Configure trunks in Skype for Business Server](configure-trunks.md).
     

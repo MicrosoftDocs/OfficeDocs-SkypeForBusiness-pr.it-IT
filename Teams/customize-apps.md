@@ -15,15 +15,15 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
-description: Scopri come personalizzare le app in Microsoft Teams.
-ms.openlocfilehash: bd598bed231c0d9d6ab2a58d87f04ab2eecfad8df64d0446ee3c63a884b25e67
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come personalizzare le app in Microsoft Teams.
+ms.openlocfilehash: 0a3a6b21b34fba7c45ca272f5eefd3eb047a1f7c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281629"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634060"
 ---
 # <a name="customize-apps-in-microsoft-teams"></a>Personalizzare le app in Microsoft Teams
 
@@ -43,14 +43,14 @@ Vedere lo [schema Teams manifesto](/microsoftteams/platform/resources/schema/man
 
 > [!NOTE]
 > Al momento, la personalizzazione delle app non è supportata in Government Community Cloud High (GCCH) o Department of Defense (DoD).
-> Attualmente, questa funzionalità non è disponibile per le app Microsoft Teams affiancate.
+> Attualmente, questa funzionalità non è disponibile per le app Microsoft Teams sideloaded.
 
 ## <a name="customize-the-apps-details"></a>Personalizzare i dettagli dell'app
 
 Per iniziare a personalizzare un'app, completare la procedura seguente:
 
 1. Passare all'interfaccia di amministrazione di Teams.
-2. Espandere **Teams app e** selezionare Gestisci **app.**
+2. Espandere **Teams app e** selezionare Gestisci **app**.
 3. Controllare la **colonna Personalizzabile** dell'elenco delle app e ordinare in base alle app personalizzabili.
 
    ![La colonna di personalizzazione ordinata](media/customize-column.png)
@@ -61,7 +61,7 @@ Per iniziare a personalizzare un'app, completare la procedura seguente:
 
      ![Opzione di personalizzazione della selezione 1](media/select-app-to-customize1.png)
 
-   - Selezionare il nome dell'app e quindi **Personalizzabile.**
+   - Selezionare il nome dell'app e quindi **Personalizzabile**.
 
      ![Opzione di personalizzazione della selezione 2](media/app-details-customizable.png)
 
@@ -112,7 +112,7 @@ La nota seguente include dettagli importanti sulla personalizzazione di un'app.
 > - I dati di personalizzazione forniti dall'amministratore vengono archiviati nell'area geografica più vicina.
 > - L'utente è responsabile della validità dei collegamenti alle condizioni d'uso o all'informativa sulla privacy.
 > - Nel caso in cui l'autore dell'app non consenta più la personalizzazione di un campo, nella pagina dei dettagli dell'app viene visualizzato un messaggio che informa l'amministratore dei campi che non possono più essere personalizzati. Tutte le modifiche apportate al campo verranno ripristinate ai valori originali.
-> - È consigliabile testare le modifiche alla personalizzazione delle app in un tenant di test Teams prima di apportare queste modifiche nell'ambiente di produzione.
+> - È consigliabile testare le modifiche di personalizzazione delle app in un tenant di test Teams prima di apportare queste modifiche nell'ambiente di produzione.
 > - Le modifiche alla personalizzazione potrebbero richiedere fino a 24 ore per consentire agli utenti di visualizzare le modifiche.
 
 ## <a name="review-app-details"></a>Esaminare i dettagli dell'app
@@ -137,7 +137,7 @@ In qualsiasi momento, è possibile reimpostare i dettagli dell'app sulle imposta
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Espandere **Teams app e** selezionare Gestisci **app.**
+2. Espandere **Teams app e** selezionare Gestisci **app**.
 
 3. Selezionare il nome dell'app.
 
@@ -169,7 +169,7 @@ No, gli amministratori del tenant doranno rimuovere manualmente qualsiasi app pe
 
 **Le proprietà personalizzate verranno visualizzate nella schermata di consenso all'autorizzazione del grafico?**
 
-No, la schermata di consenso all'autorizzazione mostrerà comunque il valore originale inviato dall'autore.
+No, la schermata di consenso delle autorizzazioni mostrerà comunque il valore originale inviato dall'autore.
 
 ## <a name="related-article"></a>Articolo correlato
 

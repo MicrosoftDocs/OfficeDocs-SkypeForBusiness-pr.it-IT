@@ -1,5 +1,5 @@
 ---
-title: Pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015
+title: Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,28 +10,28 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7a850cd5-c789-4795-a8ff-083be21ae784
 description: 'Riepilogo: leggere questo argomento per informazioni sulla pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: 3b21ce2fdcb05101fb5a3fe1641e766003733fb7675331dbb12c273b1c44d7e6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 430bceb547be9208348d61dc919ddb463f2d5ca2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54334837"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615572"
 ---
-# <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015
+# <a name="capacity-planning-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificazione della capacità per il server Chat persistente Skype for Business Server 2015
  
 **Riepilogo:** Leggere questo argomento per informazioni sulla pianificazione della capacità per il server Chat persistente in Skype for Business Server 2015.
   
 Il server Chat persistente può eseguire chat multi-utente in tempo reale che possono persistere per il recupero e la ricerca futuri. A differenza della messaggistica istantanea di gruppo salvata nella cassetta postale di un utente se è configurata la cronologia delle conversazioni, una sessione del server Chat persistente rimane aperta più a lungo e il contenuto viene salvato su un server, insieme ai messaggi, ai file, agli URL e ad altri dati che fanno parte di una conversazione in corso.
   
-La pianificazione della capacità è una parte importante della preparazione alla distribuzione del server Chat persistente. In questo argomento vengono fornite tabelle di pianificazione della capacità che è possibile utilizzare per determinare la configurazione migliore per la distribuzione. Viene inoltre descritto come gestire al meglio le distribuzioni del server Chat persistente che richiedono una maggiore capacità nelle ore di punta.
+La pianificazione della capacità è una parte importante della preparazione alla distribuzione del server Chat persistente. In questo argomento vengono fornite tabelle di pianificazione della capacità che è possibile utilizzare per determinare la configurazione ottimale per la distribuzione. Viene inoltre descritto come gestire al meglio le distribuzioni del server Chat persistente che richiedono una maggiore capacità nelle ore di punta.
   
 Prima di leggere questa sezione, è necessario avere familiarità con le topologie di Persistent Chat. Per ulteriori informazioni, vedere [Plan Persistent Chat Server topology](topology.md).
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
   
 ## <a name="persistent-chat-server-capacity-planning"></a>Pianificazione della capacità del server Chat persistente
 
@@ -88,8 +88,8 @@ La tabella di esempio seguente consente di pianificare la gestione dell'accesso 
 |Entità basate su utenti e gruppi di utenti in tutte le chat room auditorium  <br/> |0  <br/> |192  <br/> |50  <br/> ||
 |Entità manager basate su utenti e gruppi di utenti in tutti gli elenchi dei manager delle chat room  <br/> |192,000  <br/> |6,400  <br/> |60  <br/> ||
 |Utenti attivi per chat  <br/> |30  <br/> |150  <br/> |16,000  <br/> ||
-|Chat per utente  <br/> |12   <br/> |2  <br/> |2  <br/> |16   <br/> |
-|Gruppi di utenti nell'elenco di appartenenze di ogni chat room  <br/> |10   <br/> |10   <br/> |15  <br/> ||
+|Chat per utente  <br/> |12   <br/> |2   <br/> |2   <br/> |16   <br/> |
+|Gruppi di utenti nell'elenco di appartenenze di ogni chat room  <br/> |10   <br/> |10   <br/> |15   <br/> ||
 |Chat gestite per gruppi di utenti  <br/> |50%  <br/> |50%  <br/> |50%  <br/> ||
 |Entità di appartenenza basata sui gruppi di utenti in tutte le chat  <br/> |155,200  <br/> |5173  <br/> |68  <br/> ||
 |Entità di appartenenza basata sugli utenti in tutte le chat  <br/> |465,600  <br/> |77,600  <br/> |72,000  <br/> ||
@@ -120,7 +120,7 @@ Per ogni chat room, la tabella di pianificazione della capacità precedente spec
 I dati di esempio nella tabella seguente presuppongono che nella pagina **Impostazioni**  chat room per il 50% di tutte le chat room l'opzione Inviti sia impostata su **Sì.**
   
 > [!IMPORTANT]
-> Se il valore calcolato per il numero di inviti generati dal server supera 1 milione, le prestazioni del server potrebbero peggiorare in modo significativo. Per evitare questo problema, assicurarsi di ridurre al minimo il numero di chat configurate per inviare inviti o limitare il numero di utenti che possono partecipare alle chat room configurate per l'invio di inviti. 
+> Se il valore calcolato per il numero di inviti generati dal server supera 1 milione, le prestazioni del server potrebbero peggiorare in modo significativo. Per evitare questo problema, assicurarsi di ridurre al minimo il numero di chat room configurate per inviare inviti o limitare il numero di utenti che possono partecipare alle chat room configurate per l'invio di inviti. 
   
 **Esempio di accesso alle chat room tramite invito**
 
@@ -136,7 +136,7 @@ I dati di esempio nella tabella seguente presuppongono che nella pagina **Impost
 |Frequenza chat per sala (al giorno)  <br/> |50  <br/> |500  <br/> |100  <br/> |650  <br/> |
 |Frequenza chat (al secondo) in tutte le chat room  <br/> |55.56  <br/> |18.52  <br/> |0.03  <br/> |74  <br/> |
 |Modello 2 - Iniziare con il numero di messaggi pubblicati per utente al giorno  <br/> |||||
-|Frequenza chat per utente al giorno  <br/> |15  <br/> |5   <br/> |0.1  <br/> |20  <br/> |
+|Frequenza chat per utente al giorno  <br/> |15   <br/> |5   <br/> |0.1  <br/> |20  <br/> |
 |Frequenza chat per sala (al giorno)  <br/> |38  <br/> |375  <br/> |800  <br/> |1,213  <br/> |
 |Frequenza chat (al secondo) in tutte le chat room  <br/> |41.67  <br/> |13.89  <br/> |0.28  <br/> |56  <br/> |
    
@@ -159,8 +159,8 @@ Nella tabella seguente viene descritto il modello utente per il server Chat pers
 |Numero di chat di grandi dimensioni  <br/> |10   <br/> |
 |Numero totale di chat per utente  <br/> |16   <br/> |
 |Numero di chat di piccole dimensioni per utente  <br/> |12   <br/> |
-|Numero di chat di medie dimensioni per utente  <br/> |2  <br/> |
-|Numero di chat di grandi dimensioni per utente  <br/> |2  <br/> |
+|Numero di chat di medie dimensioni per utente  <br/> |2   <br/> |
+|Numero di chat di grandi dimensioni per utente  <br/> |2   <br/> |
 |Numero di chat room unite per utente  <br/> |24  <br/> |
 |Frequenza di partecipazione di punta  <br/> |10/secondo  <br/> |
 |Frequenza di chat totale  <br/> |24/secondo  <br/> |

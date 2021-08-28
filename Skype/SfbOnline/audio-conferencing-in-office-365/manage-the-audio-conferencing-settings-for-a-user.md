@@ -15,25 +15,25 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: "Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni di audioconferenza online di Skype for Business, ad esempio il provider, il numero verde o il numero verde predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. "
-ms.openlocfilehash: 648bb27ce8e6745d765b8fc400494188fd43b5e866ecf0cf927f36fd4d7ca676
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7f25df3c9f395583273a4bf8ce68f3c93699a41d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54335716"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614948"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di audioconferenza per un utente in Skype for Business Online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
-> Per gestire le impostazioni utente in Microsoft Teams, vedere Gestire le impostazioni di audioconferenza per un utente [in Microsoft Teams](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
+> Se si vogliono gestire le impostazioni utente in Microsoft Teams, vedere Gestire le impostazioni di audioconferenza per un utente [in Microsoft Teams](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
 
 Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni di audioconferenza, ad esempio il provider, il numero verde o il numero verde predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. Per modificare le impostazioni per l'organizzazione, vedere [Gestire le impostazioni di audioconferenza per l'organizzazione.](manage-the-audio-conferencing-settings-for-my-organization.md)
 

@@ -13,28 +13,28 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Reporting
-description: La nuova area Skype for Business report dell'interfaccia di amministrazione mostra le attività di chiamata e audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo PSTN per i servizi di audioconferenza, incluso il costo della chiamata, in modo da comprendere i dettagli di utilizzo e di fatturazione delle chiamate per determinare l'utilizzo all'interno dell'organizzazione.
-ms.openlocfilehash: 511065a4371ae4f9521022a27c2fdf6804736d48ccc807ee1d3aa0d0148fe3a8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: La nuova area Skype for Business report dell'interfaccia di amministrazione mostra le chiamate e le attività di audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report Dettagli di utilizzo PSTN Skype for Business è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo pstN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere i dettagli di utilizzo e di fatturazione delle chiamate per determinare l'utilizzo all'interno dell'organizzazione.
+ms.openlocfilehash: 313b6e7528604cfca3b7d7b4a66986337617afa0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300442"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614906"
 ---
 # <a name="pstn-usage-report"></a>Report di utilizzo PSTN
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-La nuova area Skype for Business **report** dell'interfaccia di amministrazione mostra le attività di chiamata e audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report **Dettagli di utilizzo PSTN Skype for Business** è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo PSTN per i servizi di audioconferenza, incluso il costo della chiamata, in modo da comprendere i dettagli di utilizzo e di fatturazione delle chiamate per determinare l'utilizzo all'interno dell'organizzazione.
+La nuova area Skype for Business report dell'interfaccia **di** amministrazione mostra le attività di chiamata e audioconferenza nell'organizzazione. Permette di approfondire le analisi fino al livello dei report per un panorama più dettagliato delle attività di ciascun utente. Ad esempio, con il report **Dettagli di utilizzo PSTN Skype for Business** è possibile consultare il numero di minuti delle chiamate in entrata e in uscita e i costi di quelle chiamate. È possibile visualizzare i dettagli sull'utilizzo pstN dei servizi di audioconferenza, incluso il costo della chiamata, in modo da poter comprendere i dettagli di utilizzo e di fatturazione delle chiamate per determinare l'utilizzo all'interno dell'organizzazione.
   
 Vedere la [panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
-Questo report, insieme agli altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo delle chiamate all'interno dell'organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni.](/microsoftteams/what-are-communications-credits)
+Questo report, insieme agli altri report Skype for Business, fornisce dettagli sull'attività, tra cui l'utilizzo delle chiamate all'interno dell'organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni.](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
 > È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore al interfaccia di amministrazione di Microsoft 365. 
@@ -43,10 +43,10 @@ Questo report, insieme agli altri report Skype for Business, fornisce dettagli s
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-- Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business**  >  **l'interfaccia di amministrazione** Riporta  >  **i**  >  **dettagli sull'utilizzo pstn.**
+- Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business**  >  **l'interfaccia di amministrazione** Segnala  >  **i**  >  **dettagli sull'utilizzo di PSTN.**
     
     > [!NOTE]
-    > A seconda dell'Microsoft 365 o Office 365 abbonamento, è possibile che non siano visualizzati tutti i prodotti e i report visualizzati qui.
+    > A seconda dell'Microsoft 365 o Office 365 abbonamento, è possibile che non siano visualizzati tutti i prodotti e i report visualizzati.
   
 ## <a name="interpret-the-skype-for-business-pstn-usage-report"></a>Interpretare il report di utilizzo PSTN di Skype for Business
 
@@ -74,13 +74,13 @@ Questo è l'aspetto del report.
 
      **Tipi di chiamate Audioconferenze**
      *    **conf_in** (chiamata in ingresso al bridge di audioconferenza). Per i record di questo tipo di chiamata, l'utente specificato nella colonna **ID** utente corrisponde all'organizzatore della riunione.
-     *    **conf_out** (chiamata in uscita dal bridge di audioconferenza, in genere per aggiungere un numero PSTN alla conferenza). Per i record di questo tipo di chiamata, l'utente specificato nella colonna **ID** utente corrisponde all'organizzatore della riunione.
+     *    **conf_out** (una chiamata in uscita dal bridge di audioconferenza, in genere per aggiungere un numero PSTN alla conferenza). Per i record di questo tipo di chiamata, l'utente specificato nella colonna **ID** utente corrisponde all'organizzatore della riunione.
 
      **UCAP (Unified Communication Applications)** 
      *    **ucap_in** (una chiamata PSTN in ingresso all'applicazione UC, ad esempio l'operatore automatico o la coda di chiamata) 
      *    **ucap_out** (una chiamata PSTN in uscita dall'applicazione UC, ad esempio l'operatore automatico o la coda di chiamata)
          > [!NOTE]
-         > Le chiamate trasferite a un utente dall'applicazione UC, ad esempio un operatore automatico o una coda di chiamata, non verranno visualizzate nel report sull'utilizzo pstn, in quanto queste chiamate sono chiamate audio peer-to-peer (P2P). È possibile accedere alle chiamate P2P nell'interfaccia di amministrazione di Skype for Business in "Strumenti > Skype for Business Call Analytics" e cercare in base al nome utente o all'indirizzo SIP che correla la chiamata in base alla data/ora e/o al CLID di origine (ID linea chiamante). 
+         > Le chiamate trasferite a un utente dall'applicazione UC, ad esempio un operatore automatico o una coda di chiamata, non verranno visualizzate nel report sull'utilizzo pstn, in quanto queste chiamate sono chiamate audio peer-to-peer (P2P). È possibile accedere alle chiamate P2P nell'interfaccia di amministrazione di Skype for Business in "Strumenti > Skype for Business Call Analytics" e cercare in base al nome utente o all'indirizzo SIP che correla la chiamata per data/ora e/o CLID di origine (ID linea chiamante). 
 
      **Nazionale/internazionale** indica se la chiamata effettuata è considerata nazionale (entro un Paese/area geografica) o internazionale (al di fuori di un Paese/area geografica) a seconda della posizione dell'utente. 
 *    **Destinazione chiamata è** il nome del paese o dell'area geografica di destinazione chiamata, ad esempio Francia, Germania o Stati Uniti (Stati Uniti). 
@@ -118,7 +118,7 @@ Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e 
 
 Il completamento del processo di esportazione può richiedere da alcuni secondi a diversi minuti, a seconda della quantità di dati. Quando il server completa l'esportazione, si riceverà un file ZIP denominato "**Calls.Export.[ `identifier` ] .zip**", con l'identificatore come ID univoco per l'esportazione, che può essere usato per la risoluzione dei problemi.
 
-Se si hanno piani per chiamate e instradamento diretto, il file esportato può contenere dati per entrambi i prodotti. Il file di report sull'utilizzo PSTN avrà il nome del file "**PSTN.calls.[ `UTC date` ] .csv**". Oltre ai file PSTN e Direct Routing, l'archivio contiene il file "**parameters.jssu**", con l'intervallo di tempo di esportazione selezionato e le funzionalità (se presenti).
+Se si hanno piani per chiamate e instradamento diretto, il file esportato potrebbe contenere dati per entrambi i prodotti. Il file di report sull'utilizzo PSTN avrà il nome del file "**PSTN.calls.[ `UTC date` ] .csv**". Oltre ai file PSTN e Direct Routing, l'archivio contiene il file "**parameters.jssu**", con l'intervallo di tempo di esportazione selezionato e le funzionalità (se presenti).
 
 Il file esportato è un file CSV (Comma Separated Values), conforme allo standard [RFC 4180.](https://tools.ietf.org/html/rfc4180) Il file può essere aperto in Excel o in qualsiasi altro editor conforme agli standard senza richiedere alcuna trasformazione.
 

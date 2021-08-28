@@ -16,19 +16,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 description: Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese/area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina specifica del paese che contiene dettagli specifici, restrizioni e limiti per la disponibilità di servizi gratuiti in cui è disponibile il servizio a pagamento. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
-ms.openlocfilehash: 7bdc0594076f4eddbd3e35e71d57e324047522de15e1f423f8ca3ccda06c76bb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a13e1adabc3a587e8e107e83f6f26dad31849e1c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350318"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615162"
 ---
 # <a name="toll-free-dialing-restrictions-in-cyprus"></a>Restrizioni di composizione a numero verde a Cipro
 

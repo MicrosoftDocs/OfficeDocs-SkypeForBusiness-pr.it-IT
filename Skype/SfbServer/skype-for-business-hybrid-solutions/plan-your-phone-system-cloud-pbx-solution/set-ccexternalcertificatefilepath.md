@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 443d071e-633e-4337-b20b-f30cdfbd4aaf
 description: Il cmdlet Set-CcExternalCertificateFilePath consente di specificare il percorso in cui è archiviato il certificato per mediation server o server perimetrale.
-ms.openlocfilehash: 7b9b494b27f3ed05dd1ef1cdb91bd583abf2d2b391f1a49c0b2615fd3485187c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b8555d3a3c6770481e1a66f79fd4a1060d3d9936
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344565"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615522"
 ---
 # <a name="set-ccexternalcertificatefilepath"></a>Set-CcExternalCertificateFilePath
  
@@ -53,7 +53,7 @@ Set-CcExternalCertificateFilePath -Target MediationServer -Path C:\CloudConnecto
 
 ### <a name="example-3"></a>Esempio 3
 
-Nell'esempio seguente viene aggiornato il certificato per il Mediation Server:
+Nell'esempio seguente viene aggiornato il certificato per mediation server:
   
 ```powershell
 Set-CcExternalCertificateFilePath -Target MediationServer -Path C:\CloudConnector\Certificates\AdatumPublicMediation.pfx -Import
@@ -64,7 +64,7 @@ Set-CcExternalCertificateFilePath -Target MediationServer -Path C:\CloudConnecto
 
 Durante la distribuzione o durante la modifica della topologia, è necessario specificare il percorso per il certificato del server perimetrale e facoltativamente per il certificato mediation server. 
   
-Il certificato per mediation server è obbligatorio se verrà utilizzato TLS tra il gateway (s) e il Mediation Server. Quando si distribuisce un dispositivo Cloud Connector e si desidera distribuire TLS, è possibile specificare solo il percorso del certificato che verrà distribuito nel Mediation Server. Tuttavia, se si desidera aggiornare il certificato Mediation Server in un'appliance già distribuita, è necessario specificare il percorso e il parametro -Import. Per visualizzare il percorso, utilizzare il cmdlet Get-CCExternalCertificateFilePath.
+Il certificato per Mediation Server è obbligatorio se verrà utilizzato TLS tra il gateway (s) e il Mediation Server. Quando si distribuisce un dispositivo Cloud Connector e si desidera distribuire TLS, è possibile specificare solo il percorso del certificato che verrà distribuito nel Mediation Server. Tuttavia, se si desidera aggiornare il certificato Mediation Server in un'appliance già distribuita, è necessario specificare il percorso e il parametro -Import. Per visualizzare il percorso, utilizzare il cmdlet Get-CCExternalCertificateFilePath.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>

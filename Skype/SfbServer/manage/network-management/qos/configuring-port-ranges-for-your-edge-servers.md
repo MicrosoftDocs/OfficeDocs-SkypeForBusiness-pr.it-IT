@@ -13,14 +13,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In questo articolo viene descritto come configurare gli intervalli di porte per i server perimetrali e come configurare un criterio qualità del servizio per i server A/V Edge.
-ms.openlocfilehash: 076f7bd6f3118155eeed6a03268326247394e2b7
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 9e9ec2e3f6aff938866655f3534b2a45ab77f726
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58232641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634280"
 ---
 # <a name="configuring-port-ranges-and-a-quality-of-service-policy-for-your-edge-servers-in-skype-for-business-server"></a>Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i server perimetrali in Skype for Business Server
 
@@ -94,11 +94,11 @@ Nella procedura seguente viene descritto il processo di creazione di oggetti Cri
 
 Se si creano criteri basati su Active Directory, è necessario accedere a un computer in cui sia installato Gestione Criteri di gruppo. In tal caso, aprire Gestione Criteri di gruppo (fare clic sul pulsante **Start**, scegliere Strumenti di amministrazione **e** quindi Gestione Criteri di **gruppo**), quindi eseguire la procedura seguente:
 
-1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer Skype for Business Server si trovano in un'unità organizzativa denominata Skype for Business Server, il nuovo criterio deve essere creato nell'unità organizzativa Skype for Business Server.
+1.  In Gestione Criteri di gruppo, individuare il contenitore in cui creare il nuovo criterio. Ad esempio, se tutti i computer Skype for Business Server si trovano in un'unità organizzativa denominata Skype for Business Server, il nuovo criterio deve essere creato nell'Skype for Business Server organizzativa.
 
 2.  Fai clic con il pulsante destro del mouse sul contenitore appropriato, quindi fai clic su Crea un oggetto Criteri di gruppo in questo dominio **e collegalo qui.**
 
-3.  Nella finestra **di** dialogo Nuovo oggetto Criteri di gruppo digitare un nome per il nuovo oggetto Criteri di gruppo nella casella **Nome,** ad esempio **Skype for Business Server Audio,** e quindi fare clic su **OK.**
+3.  Nella finestra **di dialogo** Nuovo oggetto Criteri di gruppo digitare un nome per il nuovo oggetto Criteri di gruppo nella casella **Nome,** ad esempio **Skype for Business Server Audio,** e quindi fare clic su **OK.**
 
 4.  Fare clic con il pulsante destro del mouse sul criterio appena creato e quindi scegliere **Modifica**.
 

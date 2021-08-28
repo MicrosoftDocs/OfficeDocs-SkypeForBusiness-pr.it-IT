@@ -8,8 +8,8 @@ ms.service: msteams
 audience: admin
 ms.date: 05/16/2019
 ms.reviewer: LolaJ
-description: Questo argomento è un elenco Microsoft Teams argomenti della Guida aggiornati di recente, inclusi i collegamenti agli argomenti aggiornati.
-localization_priority: Normal
+description: Questo argomento è un elenco di Microsoft Teams della Guida aggiornati di recente, inclusi i collegamenti agli argomenti aggiornati.
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
@@ -18,15 +18,15 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: eb0ed3ad4e01cf0ffab4483799cebd03b749e0a3e0f28aa925175c716b4a490b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6bc80d24c275188fb0b81a21c655aea4d7635a87
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54346093"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616172"
 ---
 # <a name="microsoft-teams-content-updates"></a>Microsoft Teams del contenuto
 
-Questo argomento elenca Microsoft Teams argomenti modificati di recente.
+Questo argomento elenca Microsoft Teams che sono stati modificati di recente.
 
 > [!INCLUDE [teams-content-updates](includes/teams-content-updates.md)]

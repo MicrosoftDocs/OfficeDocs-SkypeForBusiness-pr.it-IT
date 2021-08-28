@@ -13,7 +13,7 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.custom:
 - ms.lync.lac.MeetingInvitation
 - ms.teamsadmincenter.meetingsettings.invitationurls
 description: 'Personalizzare Skype convocazioni di riunione con logo grafici, URL della Guida e legali e testo del piè di pagina. '
-ms.openlocfilehash: c7c642d13eb2e0ac76d4565a977faebe08c52b378f50e1e5193486002056c4ea
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 14a544d5a28fc9a0b64cda573245f2e232e0d901
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306179"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614938"
 ---
 # <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
@@ -71,7 +71,7 @@ Gli amministratori possono assicurarsi che tutti gli inviti alle riunioni di Sky
    
 5. Scegliere **Save**.
     
-6. Attendere circa un'ora prima che le modifiche si popolino in Microsoft 365 o Office 365 servizi. Passare quindi a Outlook e pianificare una riunione Skype per vedere l'aspetto delle modifiche. 
+6. Attendere circa un'ora prima che le modifiche si popolino in Microsoft 365 o Office 365 servizi. Quindi, passare a Outlook e pianificare una riunione Skype per vedere l'aspetto delle modifiche. 
     
     ![Ecco l'aspetto di un invito personalizzato, senza l'elemento grafico](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
   

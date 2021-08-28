@@ -1,5 +1,5 @@
 ---
-title: Visualizzare Microsoft Teams utilizzo Power BI dati CQD
+title: Visualizzare Microsoft Teams'utilizzo Power BI dati CQD
 ms.author: serdars
 author: SerdarSoysal
 manager: serdars
@@ -14,20 +14,20 @@ search.appverid: MET150
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
-description: Usare i report Teams utilizzo Power BI per accedere ai Microsoft Teams Call Quality Dashboard (CQD) per tenere traccia Microsoft Teams utilizzo dei dati nell'organizzazione.
-ms.openlocfilehash: e32d321383621b4a961856ad091ba0497e41d7b27fa32925987a8bb093c7fc91
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Usare i report Teams utilizzo Power BI per accedere ai Microsoft Teams Call Quality Dashboard (CQD) per tenere traccia Microsoft Teams'utilizzo dei dati nell'organizzazione.
+ms.openlocfilehash: e026f2b6b2b5e04d98dbf14582e5ce1ffc7f5007
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54352504"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616292"
 ---
-# <a name="view-microsoft-teams-utilization-in-power-bi-using-cqd-data"></a>Visualizzare Microsoft Teams utilizzo Power BI dati CQD
+# <a name="view-microsoft-teams-utilization-in-power-bi-using-cqd-data"></a>Visualizzare Microsoft Teams'utilizzo Power BI dati CQD
 
-A marzo 2020 è stato aggiunto un report sull'Teams utilizzo dei dati ai modelli di query Power BI scaricabili [per CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) 
+A marzo 2020 è stato aggiunto un report sull'Teams utilizzo dei dati ai modelli di query Power BI per [CQD scaricabili.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) 
 
-Questo nuovo Teams di utilizzo consente di vedere come (e quanto) gli utenti usano Microsoft Teams accedendo ai dati del Teams Call Quality Dashboard (CQD). Questi report sono pensati per essere una posizione centralizzata a cui sia gli amministratori che i responsabili aziendali possono accedere rapidamente per questi dati.
+Questo nuovo Teams di utilizzo consente di vedere in che modo (e quanto) gli utenti usano Microsoft Teams accedendo ai dati Teams Call Quality Dashboard (CQD). Questi report sono pensati per essere una posizione centralizzata a cui sia gli amministratori che i responsabili aziendali possono accedere rapidamente per questi dati.
 
 Il report Teams utilizzo Power BI è costituito da due report principali: **[Riepilogo](#call-count-summary-report)** conteggio chiamate **[e Riepilogo minuti audio.](#audio-minutes-summary-report)** I [report](#daily-usage)Uso giornaliero, Dettagli [](#user-list) [audio](#regional-audio-details) [locali,](#conference-details) Dettagli conferenza ed Elenco utenti vengono riprodotti quando un utente sfrutta i report di drill-down, come indicato nelle descrizioni seguenti.
 
@@ -43,11 +43,11 @@ La pagina principale (Riepilogo conteggio chiamate) fornisce immediatamente il n
 1. A destra degli elenchi a discesa del filtro dei dati, il numero di chiamate per tipo di supporto è suddiviso in una visualizzazione interna/esterna negli ultimi trenta giorni. È possibile vedere attraverso lo screenshot precedente che ci sono più chiamate provenienti da posizioni esterne all'organizzazione, il che ha senso considerando l'ambiente globale corrente.
   ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report2.png)
 
-1. A destra della casella Conteggio tipi di supporti, è stato selezionato Il numero di chiamate mensili per tipo di supporto per gli ultimi 90 giorni. È possibile passare il puntatore del mouse su ogni colonna e tipo di elemento multimediale per visualizzare il conteggio di un mese precedente o del mese corrente fino alla data corrente, fornendo informazioni sulla tendenza di utilizzo.
+1. A destra della casella Conteggio tipi di supporto, è stato selezionato Il numero di chiamate mensili per tipo di supporto per gli ultimi 90 giorni. È possibile passare il puntatore del mouse su ogni colonna e tipo di elemento multimediale per visualizzare il conteggio di un mese precedente o del mese corrente fino alla data corrente, fornendo informazioni sulla tendenza di utilizzo.
   ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report3.png)
  
 
-1. Il grafico centrale funziona come il grafico di 90 giorni, tuttavia offre una visualizzazione di utilizzo giornaliero per gli ultimi 30 giorni e consente a un utente di fare clic con il pulsante destro del mouse ed eseguire il drill-down nei dettagli per un giorno specifico.
+1. Il grafico centrale funziona come nel grafico di 90 giorni, tuttavia offre una visualizzazione di utilizzo giornaliero per gli ultimi 30 giorni e consente a un utente di fare clic con il pulsante destro del mouse ed eseguire il drill-down nei dettagli per un giorno specifico.
   ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report4.png)
 
 Nella sezione in basso a sinistra della pagina è presente una tabella che fornisce i valori totali per ogni tipo di supporto nell'ultimo anno. 
@@ -88,7 +88,7 @@ Il report Utilizzo giornaliero consente a un amministratore di identificare i pe
 
 ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report12.png)
 
-Il report Utilizzo giornaliero visualizza il numero di condivisioni audio, video e dello schermo per il giorno selezionato, con la possibilità di distinguere tra connettività interna ed esterna. Una suddivisione tra conferenze e peer-to-peer è a destra immediata della casella Totale modalità. Nell'angolo in alto a destra del report è disponibile un elenco di conferenze con l'ID associato e i partecipanti per la giornata. L'elenco delle conferenze fornisce anche un ulteriore drill-down per il report Dettagli conferenza. SOSTITUISCI ELEMENTO GRAFICO
+Il report Utilizzo giornaliero visualizza il numero di condivisioni audio, video e dello schermo per il giorno selezionato, con la possibilità di distinguere tra connettività interna ed esterna. Una suddivisione tra conferenze e peer-to-peer si trova a destra immediata della casella Totale modalità. Nell'angolo in alto a destra del report è disponibile un elenco di conferenze con l'ID associato e i partecipanti per la giornata. L'elenco delle conferenze fornisce anche un ulteriore drill-down per il report Dettagli conferenza. SOSTITUISCI ELEMENTO GRAFICO
 
 ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report13.png)
 
@@ -127,18 +127,18 @@ Possiamo vedere i partecipanti alla conferenza, oltre a tutte le informazioni pe
 
 ### <a name="regional-audio-details"></a>Dettagli audio locali
 
-Il drill-down Dettagli audio locali mostra in modo specifico l'utilizzo dei minuti audio per l'area selezionata. Gli utenti che hanno accesso a CQD possono vedere le tendenze di utilizzo sia per l'audio P2P che per la conferenza all'interno dell'area selezionata.
+Il drill-down Dettagli audio locali mostra in modo specifico l'utilizzo dei minuti audio per l'area selezionata. Gli utenti con accesso a CQD possono vedere le tendenze di utilizzo sia per l'audio P2P che per la conferenza all'interno dell'area selezionata.
 
 1.  Nella pagina Riepilogo conteggio chiamate eseguire il drill-through come area specifica della tabella.
   ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report16.png)
 
-2.  Selezionare la riga per cui sono necessarie informazioni aggiuntive sull'area geografica.
+2.  Selezionare la riga con l'area per cui sono necessarie altre informazioni.
   ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report17.png)
 
-3.  Le tendenze dei dati mostrano un numero significativo di minuti usati nella rete interna, con conferenze che superano di gran lunga l'uso P2P.
+3.  Le tendenze dei dati mostrano un numero significativo di minuti usati nella rete interna, con le conferenze che superano di gran lunga l'uso P2P.
   ![Screenshot: report Teams utilizzo dei dati](media/CQD-teams-utilization-report18.png)
 
-La tendenza audio regionale può essere usata per mostrare in che modo gli utenti sono influenzati da influenze esterne nel mondo. In particolare, in questo momento, l'utilizzo esterno per le aree EMEA e APAC dovrebbe aumentare con la richiesta di lavorare in remoto.
+La tendenza audio regionale può essere usata per mostrare in che modo gli utenti sono influenzati da influenze esterne nel mondo. In particolare, in questo momento, l'utilizzo esterno per le aree EMEA e APAC dovrebbe aumentare, con le persone a cui viene chiesto di lavorare in remoto.
 
 
 ### <a name="user-list"></a>Elenco utenti

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 505d9619-adab-4cc4-b054-89286e18a19b
 description: È possibile utilizzare le procedure descritte in questa sezione per modificare le proprietà dei singoli account utente.
-ms.openlocfilehash: b1c3bc75a59834c63f97c9425a775d902f246b299f76318ed890d060caf7e01b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9f145b1d1c0abd584a3771950d9960ccea30b85e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351526"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634250"
 ---
 # <a name="customize-user-account-properties-for-skype-for-business-server"></a>Personalizzare le proprietà dell'account utente per Skype for Business Server
  
@@ -40,7 +40,7 @@ Skype for Business Server telefonia degli utenti sono le seguenti:
     
 - **Solo da PC a PC** L'utente può effettuare solo chiamate audio o video da PC a PC.
     
-- **VoIP aziendale** L'utente può utilizzare l'infrastruttura Skype for Business Server per instradare tutte le chiamate in ingresso e in uscita. Può inoltre effettuare chiamate da PC a PC.
+- **VoIP aziendale** L'utente può utilizzare l'Skype for Business Server per instradare tutte le chiamate in ingresso e in uscita. Può inoltre effettuare chiamate da PC a PC.
     
 - **Controllo delle chiamate remote** L'utente può Skype for Business Server per controllare il telefono desktop e può anche effettuare chiamate da PC a PC.
     
@@ -74,7 +74,7 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
 È possibile utilizzare il Skype for Business Server di controllo per assegnare utenti a un server o a un pool specifico.
   
 > [!TIP]
-> Lo spostamento di tutti gli utenti esistenti da un pool di origine che esegue Lync Server 2010 o versioni precedenti a un pool di destinazione Skype for Business Server in un ambiente Active Directory complesso potrebbe rallentare la replica di Active Directory. Per evitare questo problema, è possibile utilizzare i filtri di ricerca per spostare gli utenti dai pool che eseguono Lync Server 2010 o versioni precedenti separatamente oppure è possibile utilizzare Skype for Business Server Management Shell per spostare gli utenti con i cmdlet. Inoltre, la funzionalità di filtro funziona con Skype for Business Server utenti. 
+> Lo spostamento di tutti gli utenti esistenti da un pool di origine che esegue Lync Server 2010 o versioni precedenti a un pool di destinazione di Skype for Business Server in un ambiente Active Directory complesso potrebbe rallentare la replica di Active Directory. Per evitare questo problema, è possibile utilizzare i filtri di ricerca per spostare gli utenti dai pool che eseguono Lync Server 2010 o versioni precedenti separatamente oppure è possibile utilizzare Skype for Business Server Management Shell per spostare gli utenti con i cmdlet. Inoltre, la funzionalità di filtro funziona con Skype for Business Server utenti. 
   
 ### <a name="to-move-selected-users-to-a-different-server-or-pool"></a>Per spostare un gruppo selezionato di utenti in un server o un pool diverso
 
@@ -142,15 +142,15 @@ Per informazioni dettagliate sulla configurazione della telefonia per un'organiz
     > [!CAUTION]
     > Se si seleziona **Forza**, l'account utente viene spostato, ma i dati utente associati vengono eliminati, ad esempio le conferenze pianificate dall'utente e i contatti. Se non si seleziona questa casella di controllo, vengono spostati sia l'account sia i dati associati. 
   
-### <a name="to-move-users-from-one-pool-to-another-using-windows-powershell-cmdlets"></a>Per spostare gli utenti da un pool a un altro utilizzando Windows powershell
+### <a name="to-move-users-from-one-pool-to-another-using-windows-powershell-cmdlets"></a>Per spostare gli utenti da un pool a un altro Windows cmdlet di PowerShell
 
-1. A seconda di come si eseguono Windows PowerShell comandi, ovvero in locale o in remoto, è necessario eseguire l'accesso come membro dei ruoli amministrativi di Skype for Business Server corretti, come indicato di seguito:
+1. A seconda di come si eseguono Windows PowerShell comandi, ovvero in locale o in remoto, è necessario eseguire l'accesso come membro dei ruoli amministrativi di Skype for Business Server come indicato di seguito:
     
    a. Se si eseguono i comandi nel computer locale (ad esempio, si accede direttamente a un Front End Server): accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo RTCUniversalServerAdmins o con i diritti utente necessari, come descritto in **Delegate Setup Permissions**.
     
-   b. Se si eseguono i comandi in remoto in un altro computer, ad esempio si accede al computer ed eseguire i comandi in remoto in un Front End Server di edizione Standard: da un account utente assegnato al ruolo CsUserAdministrator o csAdministrator, accedere a qualsiasi computer nella distribuzione interna.
+   b. Se i comandi vengono eseguiti in remoto in un altro computer,ad esempio si accede al computer ed eseguire i comandi in remoto in un Front End Server di edizione Standard): da un account utente assegnato al ruolo CsUserAdministrator o csAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Avviare la Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell**.
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business** e quindi fare clic su Skype for Business Server **Management Shell.**
     
 3. Per spostare singoli utenti, utilizzare il cmdlet Move-CsUser come indicato di seguito:
     

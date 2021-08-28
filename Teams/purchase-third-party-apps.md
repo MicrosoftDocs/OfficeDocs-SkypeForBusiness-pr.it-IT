@@ -15,20 +15,20 @@ f1keywords: ''
 description: Informazioni su come acquistare app di terze parti per Teams nell'Microsoft Teams di amministrazione.
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
-ms.openlocfilehash: c87b81fecd1e6624f8c36b1eebbe74a79994b7db
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.localizationpriority: medium
+ms.openlocfilehash: da917d2c58282554e3e2a68464cea1f2249bd324
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235191"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616182"
 ---
 # <a name="purchase-third-party-apps-for-teams"></a>Acquistare app di terze parti per Teams
 
 > [!NOTE]
 > Questa funzionalità è attualmente disponibile solo negli Stati Uniti.
 
-Teams le app sono gratuite e alcune potrebbero richiedere abbonamenti al servizio di acquisto per sperimentare tutte le funzionalità e l'ambito dell'app. Questi abbonamenti al servizio sono denominati offerte Software as a Service (SaaS), che sono disponibili per l'acquisto tramite [AppSource](https://appsource.microsoft.com/) e ora tramite l'interfaccia di amministrazione Microsoft Teams di amministrazione.
+Teams le app sono gratuite e alcune potrebbero richiedere l'acquisto di abbonamenti al servizio per sperimentare tutte le funzionalità e l'ambito dell'app. Questi abbonamenti al servizio sono denominati offerte Software as a Service (SaaS), che sono disponibili per l'acquisto tramite [AppSource](https://appsource.microsoft.com/) e ora tramite l'interfaccia di amministrazione Microsoft Teams di amministrazione.
 
 La [pagina Gestisci app](manage-apps.md) nell'Microsoft Teams di amministrazione consente di visualizzare e gestire tutte le app Teams per l'organizzazione. Ad esempio, è possibile visualizzare lo stato e le proprietà a livello di organizzazione delle app, caricare nuove app personalizzate nell'App Store dell'organizzazione, bloccare o consentire le app a livello di organizzazione e gestire le impostazioni delle app a livello di organizzazione.
 
@@ -62,9 +62,9 @@ Selezionare **Gestisci licenze** per passare al interfaccia di amministrazione d
 
 Gli amministratori globali possono visualizzare gli acquisti effettuati da chiunque nell'organizzazione, mentre Teams gli amministratori dei servizi possono visualizzare solo gli acquisti effettuati da soli.  
 
-## <a name="have-a-saas-offer-for-a-teams-app-that-you-want-to-list-and-sell-in-the-microsoft-teams-admin-center-and-appsource"></a>Hai un'offerta SaaS per un'app Teams che vuoi elencare e vendere nell'interfaccia di amministrazione di Microsoft Teams AppSource?
+## <a name="have-a-saas-offer-for-a-teams-app-that-you-want-to-list-and-sell-in-the-microsoft-teams-admin-center-and-appsource"></a>Hai un'offerta SaaS per un'app Teams che vuoi elencare e vendere nell'interfaccia di amministrazione di Microsoft Teams e in AppSource?
 
-Gli sviluppatori possono creare offerte SaaS associate alle Teams app. Queste offerte vengono pubblicate tramite il [Centro per](https://partner.microsoft.com) i partner e sono disponibili per l'acquisto da parte delle organizzazioni tramite [AppSource](https://appsource.microsoft.com/) e l'Microsoft Teams di amministrazione.
+Gli sviluppatori possono creare offerte SaaS associate alle Teams app. Queste offerte vengono pubblicate tramite il Centro per i [partner](https://partner.microsoft.com) e sono disponibili per l'acquisto da parte delle organizzazioni tramite [AppSource](https://appsource.microsoft.com/) e l'Microsoft Teams di amministrazione.
  
 Gli sviluppatori di app di terze parti possono passare [a Creare un'offerta SaaS](/azure/marketplace/partner-center-portal/create-new-saas-offer) per altre informazioni.
 

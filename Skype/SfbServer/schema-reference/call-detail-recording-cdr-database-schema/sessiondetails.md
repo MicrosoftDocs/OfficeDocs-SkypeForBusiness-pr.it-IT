@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 783d2508-e31f-4b54-be0c-63aa5ec21c04
 description: Ogni record rappresenta una sessione peer-to-peer, ovvero una chiamata telefonica VoIP-VoIP, una sessione di messaggistica istantanea con due partecipanti o un altro tipo di sessione. È possibile eseguire un table join con la tabella Media per trovare i dettagli di ogni supporto coinvolto in questa sessione.
-ms.openlocfilehash: eb47c87be69bfc9308c8c641c54a2173ba2ed03eeae7f7543ce6a5cbb97f7092
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 830e6e2266d77487848c4e49daeaa8462460c2dc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284486"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615512"
 ---
 # <a name="sessiondetails-table"></a>Tabella SessionDetails
  
@@ -44,8 +44,8 @@ Si noti che i campi IsUser1IntegratedWithDeskPhone e IsUser2IntegratedWithDeskPh
 |**ServerId** <br/> |int  <br/> |Foreign  <br/> |ID del Front End Server utilizzato per questa sessione. Per ulteriori [informazioni, vedere](servers.md) la tabella Servers. <br/> |
 |**PoolId** <br/> |int  <br/> |Foreign  <br/> |ID del pool in cui è stata acquisita la sessione. Per ulteriori [informazioni, vedere](pools.md) la tabella Pools. <br/> |
 |**ContentTypeID** <br/> |int  <br/> |Foreign  <br/> |Tipo di contenuto utilizzato nella sessione. Per ulteriori informazioni, vedere [la tabella ContentTypes Skype for Business Server 2015.](contenttypes.md) <br/> |
-|**User1ClientVerId** <br/> |int  <br/> |Foreign  <br/> |Versione del client utilizzata da User1. Per ulteriori informazioni, vedere la tabella [ClientVersions Skype for Business Server 2015.](clientversions.md) <br/> |
-|**User2ClientVerId** <br/> |int  <br/> |Foreign  <br/> |Versione del client utilizzata da User2. Per ulteriori informazioni, vedere la tabella [ClientVersions Skype for Business Server 2015.](clientversions.md) <br/> |
+|**User1ClientVerId** <br/> |int  <br/> |Foreign  <br/> |Versione del client utilizzata da User1. Per ulteriori informazioni, vedere [la tabella ClientVersions Skype for Business Server 2015.](clientversions.md) <br/> |
+|**User2ClientVerId** <br/> |int  <br/> |Foreign  <br/> |Versione del client utilizzata da User2. Per ulteriori informazioni, vedere [la tabella ClientVersions Skype for Business Server 2015.](clientversions.md) <br/> |
 |**User1EdgeServerid** <br/> |int  <br/> |Foreign  <br/> |Server perimetrale utilizzato da User1. Per ulteriori informazioni, vedere la tabella [EdgeServers Skype for Business Server 2015.](edgeservers.md) <br/> |
 |**User2EdgeServerid** <br/> |int  <br/> |Foreign  <br/> |Server perimetrale utilizzato da User2. Per ulteriori informazioni, vedere la tabella [EdgeServers Skype for Business Server 2015.](edgeservers.md) <br/> |
 |**IsUser1Internal** <br/> |bit  <br/> ||Indica se User1 è connesso o meno dall'interno.  <br/> |

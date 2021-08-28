@@ -14,19 +14,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Leggere le domande frequenti (FAQ) e le risposte su Microsoft Teams Call Quality Dashboard (CQD).
-ms.openlocfilehash: a733abb5f1fb41e149dd0801b5e25dd1bf948bf6
-ms.sourcegitcommit: 942e09c70840582f0cc1e433d4b0261298b1c66d
+ms.openlocfilehash: 11b7691596192dbc96cd9deb7a0b64e363f6af4b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58339854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616302"
 ---
 # <a name="call-quality-dashboard-cqd-frequently-asked-questions-faq"></a>Domande frequenti su Call Quality Dashboard (CQD)
 
@@ -52,7 +52,7 @@ Per i flussi audio, uno dei cinque classificatori, che vengono calcolati per la 
 
 Per determinare se si è verificato un problema di rete, esaminare il delta tra i valori medi per la sessione e i valori massimi. I valori massimi sono i valori massimi rilevati e riportati durante la sessione.
  
-Ecco un esempio di come risolvere questa situazione. Supponiamo di prendere una traccia di rete durante una chiamata e che nei primi 20 minuti non ci siano pacchetti persi, ma quindi si ha una distanza di 1,5 secondi di pacchetti e quindi buona per il resto della chiamata. La media sarà <10% (0,1) Perdita di pacchetti anche in un'analisi RTP di Wireshark Trace. Qual è stata la perdita massima di pacchetti? 1,5 secondi in un periodo di 5 secondi sarebbe il 30% (0,3). Si è verificata entro il periodo di campionamento di 5 secondi (forse o potrebbe essere suddiviso nel periodo di campionamento)?
+Ecco un esempio di come risolvere questa situazione. Supponiamo di prendere una traccia di rete durante una chiamata e che nei primi 20 minuti non ci siano pacchetti persi, ma poi si ha una distanza di 1,5 secondi di pacchetti e quindi buona per il resto della chiamata. La media sta per essere <10% (0,1) Perdita di pacchetti anche in un'analisi RTP traccia wireshark. Qual è stata la perdita massima di pacchetti? 1,5 secondi in un periodo di 5 secondi sarebbe il 30% (0,3). Si è verificata entro il periodo di campionamento di 5 secondi (forse o potrebbe essere suddiviso nel periodo di campionamento)?
  
 Se le metriche di rete hanno un aspetto positivo nelle medie e nei valori massimi, esaminare altri dati di telemetria: 
 - Controllare il rapporto di eventi CPU insufficienti per verificare se le risorse della CPU rilevate disponibili erano insufficienti e hanno causato una qualità scarsa. 
@@ -98,7 +98,7 @@ Per determinare se sono presenti differenze impreviste, è necessario esaminare 
 
 ### <a name="why-do-my-custom-reports-only-return-a-maximum-of-10000-rows-when-i-know-there-should-be-more-entries"></a>Perché i report personalizzati restituiscono un massimo di 10.000 righe quando si sa che dovrebbero essere presenti altre voci?
 
-CQD è progettato per le query di dati riepilogate e non è progettato per l'esportazione dei dati. Se possibile, è consigliabile ristrutturare i report per evitare che venga superato il limite di 10.000 righe. Iniziare esaminando gli indicatori KPI usando dimensioni di cardinalità più ampie e inferiori, ad esempio Mese, Anno, Data, Area geografica, Paese e così via. Da qui è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. L'Helpdesk e i Location-Enhanced report forniscono entrambi buoni esempi di questo flusso di lavoro di drill-down.
+CQD è progettato per le query di dati riepilogate e non è progettato per l'esportazione dei dati. Se possibile, è consigliabile ristrutturare i report per evitare che venga superato il limite di 10.000 righe. Iniziare esaminando gli indicatori KPI usando dimensioni di cardinalità più ampie e inferiori, ad esempio Mese, Anno, Data, Area geografica, Paese e così via. Da qui è possibile eseguire il drill-down in dimensioni di cardinalità sempre più elevate. L'Helpdesk e i Location-Enhanced report forniscono entrambi esempi di questo flusso di lavoro di drill-down.
 
 ### <a name="why-do-wi-fi-vpn-connections-show-as-wired-instead-of-wi-fi"></a>Perché le Wi-Fi VPN vengono mostrate come Cablate anziché Wi-Fi?
 

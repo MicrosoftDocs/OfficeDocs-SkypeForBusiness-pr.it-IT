@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Portogallo.
-ms.openlocfilehash: 8f67fe2e9b6a86d9a4d3e1ce954d6afb91e095ed372c9d698d82a25416be3202
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: cc169d70453ff94d389d156515c6c73c7c0dfabe
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347231"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615382"
 ---
 # <a name="availability-in-portugal"></a>Disponibilità in Portogallo
 

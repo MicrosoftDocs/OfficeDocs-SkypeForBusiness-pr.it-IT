@@ -15,19 +15,19 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come gestire i canali privati nell'organizzazione usando Graph API.
-ms.openlocfilehash: 82a9f865099be4012456a1c3a854e08b79d15db432e965a60e32d44c36147b9c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a2cb9b45afb005c837b260ac3da22c250d16c758
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350508"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615322"
 ---
 # <a name="manage-the-life-cycle-of-private-channels-in-microsoft-teams"></a>Gestire il ciclo di vita dei canali privati in Microsoft Teams
 
-Ecco le indicazioni necessarie per gestire l'uso dell'API Graph per gestire Teams [canali privati](./private-channels.md) dell'organizzazione.
+Ecco le indicazioni necessarie per gestire l'uso dell'API Graph per gestire Teams [canali privati](./private-channels.md) nell'organizzazione.
 
 ## <a name="set-whether-team-members-can-create-private-channels"></a>Specificare se i membri del team possono creare canali privati
 

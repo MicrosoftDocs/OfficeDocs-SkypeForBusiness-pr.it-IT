@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In questo argomento vengono evidenziate le impostazioni di configurazione da tenere presenti prima di distribuire il server perimetrale Skype for Business Server 2019. I processi di distribuzione e configurazione Skype for Business Server 2019 sono molto simili Skype for Business Server 2015. In questa sezione vengono evidenziati solo i punti chiave di cui è consigliabile tenere conto nell'ambito della distribuzione del pool pilota. Per la procedura dettagliata, vedere Deploying external user access in Skype for Business Server 2019 nella documentazione relativa alla distribuzione, che descrive il processo di distribuzione e fornisce informazioni di configurazione per l'accesso degli utenti esterni.
-ms.openlocfilehash: 24202bc84be67453eeff321b268f44769d5b11a8eafcd6d93098db7c7b8537fc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c76d517bd5130c2babc41e0072ae7450b9838a64
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315082"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615010"
 ---
 # <a name="deploy-pilot-edge-server"></a>Distribuire Edge Server pilota
 
@@ -46,7 +46,7 @@ Man mano che si va avanti nella procedura guidata **Definisci pool di server per
     
      ![Finestra di dialogo Definisci hop successivo](../media/migration_ocs_topo_edgepool_page7.JPG)
   
-7. Nella pagina **Associa pool Front End o Mediation** Server non associare un pool a questo pool di server perimetrali in questo momento. Il traffico multimediale esterno è attualmente instradato attraverso il server perimetrale legacy. Questa impostazione verrà configurata in una fase successiva della migrazione. 
+7. Nella pagina **Associa pool Front End** o Mediation Server non associare un pool a questo pool di server perimetrali in questo momento. Il traffico multimediale esterno è attualmente instradato attraverso il server perimetrale legacy. Questa impostazione verrà configurata in una fase successiva della migrazione. 
     
      ![Finestra di dialogo Associa pool Front End](../media/migration_ocs_topo_edgepool_page8.JPG)
   
@@ -58,6 +58,6 @@ Man mano che si va avanti nella procedura guidata **Definisci pool di server per
 È molto importante seguire le linee guida negli argomenti della documentazione relativa alla distribuzione. In questa sezione vengono fornite solo indicazioni sulle impostazioni di configurazione durante la fase di installazione di questi ruoli server. 
 <!-- [Deploying external user access in Skype for Business Server 2019](../deployment/deploying-external-user-access/deploying-external-user-access.md) -->
   
-A questo punto dovrebbe essere distribuito un server perimetrale legacy in parallelo a una Skype for Business Server server perimetrale 2019. Prima di passare alla fase successiva, verificare che entrambe le distribuzioni funzionino correttamente, che i servizi siano stati avviati e che sia possibile amministrare ogni distribuzione. 
+A questo punto dovrebbe essere distribuito un server perimetrale legacy in parallelo con una Skype for Business Server server perimetrale 2019. Prima di passare alla fase successiva, verificare che entrambe le distribuzioni funzionino correttamente, che i servizi siano stati avviati e che sia possibile amministrare ogni distribuzione. 
   
 

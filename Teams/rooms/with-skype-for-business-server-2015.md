@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 ms.assetid: a038e34d-8bc8-4a59-8ed2-3fc00ec33dd7
 description: Leggere questo argomento per informazioni su come distribuire Microsoft Teams Rooms con Skype for Business Server.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 14d942e041d11cfd95b38f4cdcc18ad614c135df9d88b3a3e55261236144bffd
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2990e1314ee851156bc11430ecf933fe31552117
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296643"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615192"
 ---
 # <a name="deploy-microsoft-teams-rooms-with-skype-for-business-server"></a>Distribuire Microsoft Teams Rooms con Skype for Business Server
   
@@ -43,7 +43,7 @@ Prima di iniziare a distribuire Microsoft Teams Rooms, assicurarsi di avere le a
    Import-PSSession $sessLync
    ```
 
-   Si noti che $strExchangeServer è il nome di dominio completo (FQDN) del server Exchange e $strLyncFQDN è il nome di dominio completo della distribuzione Skype for Business Server.
+   Si noti che $strExchangeServer è il nome di dominio completo (FQDN) del server Exchange e $strLyncFQDN è il nome di dominio completo della distribuzione Skype for Business Server distribuzione.
 
 2. Dopo aver stabilito una sessione, si creerà una nuova cassetta postale e la si abiliterà come RoomMailboxAccount oppure si modificheranno le impostazioni per una cassetta postale della chat room esistente. In questo modo l'account verrà autenticato per Microsoft Teams Rooms.
 
@@ -61,7 +61,7 @@ Prima di iniziare a distribuire Microsoft Teams Rooms, assicurarsi di avere le a
    -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String <password> -AsPlainText -Force)
    ```
 
-3. È possibile impostare varie proprietà Exchange nell'account del dispositivo per migliorare l'esperienza di riunione per gli utenti. È possibile vedere quali proprietà devono essere impostate nella Exchange delle proprietà.
+3. È possibile impostare varie proprietà Exchange sull'account del dispositivo per migliorare l'esperienza di riunione per gli utenti. È possibile vedere quali proprietà devono essere impostate nella Exchange delle proprietà.
 
    ``` Powershell
    Set-CalendarProcessing -Identity $acctUpn -AutomateProcessing AutoAccept -AddOrganizerToSubject $false -AllowConflicts $false -DeleteComments
@@ -101,7 +101,7 @@ Prima di iniziare a distribuire Microsoft Teams Rooms, assicurarsi di avere le a
 
    Anche in questo caso, è necessario sostituire il controller di dominio e gli esempi di numeri di telefono forniti con le proprie informazioni. Il valore del $true rimane lo stesso.
 
-## <a name="sample-room-account-setup-in-exchange-and-skype-for-business-server-on-premises"></a>Esempio: configurazione dell'account della sala in Exchange e Skype for Business Server locale
+## <a name="sample-room-account-setup-in-exchange-and-skype-for-business-server-on-premises"></a>Esempio: configurazione dell'account della chat room in Exchange e Skype for Business Server locale
 
 ``` Powershell
 New-Mailbox -Alias rigel1 -Name "Rigel 1" -Room -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString -String "" -AsPlainText -Force)

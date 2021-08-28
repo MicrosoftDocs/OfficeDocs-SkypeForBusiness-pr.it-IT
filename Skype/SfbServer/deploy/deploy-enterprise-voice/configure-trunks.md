@@ -9,23 +9,23 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: a1309c09-ad9a-4c54-9650-4e3f5b2a4a00
 description: 'Riepilogo: informazioni su come configurare un trunk tra un Mediation Server e i peer per VoIP aziendale in Skype for Business Server.'
-ms.openlocfilehash: 757f7d4d32dfd73cb88952156f13a40c9c0fa580778d5cfe7019f7c0c3bddcdc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0b3846a79d05d6b3eaea664f919dfbca61b036b7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320898"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617042"
 ---
 # <a name="configure-trunks-in-skype-for-business-server"></a>Configurare i trunk in Skype for Business Server
  
-**Riepilogo:** Informazioni su come configurare un trunk tra un Mediation Server e peer per VoIP aziendale in Skype for Business Server.
+**Riepilogo:** Informazioni su come configurare un trunk tra un Mediation Server e i peer per VoIP aziendale in Skype for Business Server.
   
 Nell'ambito della distribuzione di VoIP aziendale, è possibile configurare un trunk tra un Mediation Server e uno o più dei peer seguenti per fornire connettività PSTN (Public Switched Telephone Network) per i client e i dispositivi VoIP aziendale nell'organizzazione:
   
@@ -41,9 +41,9 @@ Skype for Business Server supporta più associazioni tra gateway e Mediation Ser
   
 - Per assegnare o rimuovere un trunk in Skype for Business Server, è innanzitutto necessario definire un trunk in Generatore di topologie. Un trunk è costituito dalla seguente associazione: nome di dominio completo (FQDN) di Mediation Server, porta di attesa mediation server, FQDN gateway e porta di attesa del gateway.
     
-- Per configurare più trunk, è possibile creare più associazioni tra lo stesso gateway e il Mediation Server. In questo modo si garantisce una resilienza aggiuntiva all'infrastruttura VoIP aziendale, particolarmente utile in scenari di interoperabilità PBX (Private Branch Exchange). 
+- Per configurare più trunk, è possibile creare più associazioni tra lo stesso gateway e il Mediation Server. Ciò garantisce ulteriore resilienza all'infrastruttura VoIP aziendale, particolarmente utile in scenari di interoperabilità PBX (Private Branch Exchange). 
     
-Dopo essere stato definito, il trunk deve essere associato a una route. Per associare un trunk a una route, è necessario definire un nome semplice per il trunk in Generatore di topologie. Questo nome semplice viene utilizzato come nome trunk nel Pannello di controllo di Skype for Business Server, dove i trunk possono essere associati alle route. Il nome del trunk semplice viene utilizzato come nome del gateway da Skype for Business Server Management Shell. 
+Dopo essere stato definito, il trunk deve essere associato a una route. Per associare un trunk a una route, è necessario definire un nome semplice per il trunk in Generatore di topologie. Questo nome semplice viene utilizzato come nome trunk nel Pannello Skype for Business Server, dove i trunk possono essere associati alle route. Il nome del trunk semplice viene utilizzato come nome del gateway da Skype for Business Server Management Shell. 
   
 ```powershell
 New-CsVoiceRoute -Identity <RouteId> -NumberPattern <String> -PstnUsages @{add="<UsageString>"} -PstnGatewayList @{add="<TrunkSimpleName>"}

@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: phecda louie
 ms.collection:
 - M365-collaboration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare i modelli di team generali per creare strutture del team fornendo impostazioni predefinite, canali e app preinstallato tramite l'interfaccia di amministrazione.
 f1.keywords:
@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c68e3efd00e0f9204f507b4c63977837076bb3beb75a958a0629f1e5da64f69e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3427a14da3d994b10bf8d83f5d03f76769401670
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344029"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634050"
 ---
 # <a name="use-general-team-templates-in-the-admin-center"></a>Usare modelli di team generali nell'interfaccia di amministrazione
 
@@ -45,7 +45,7 @@ Centralizzare la collaborazione per il team di crisi tra le business unit e cont
 > [!div class="mx-tdBreakAll"]
 > | Tipologia di modello base |baseTemplateId| Proprietà del modello base |
 > | ------------------ |--|----------------------------------------------------------|
-> | Collaborare alla crisi globale o all'evento |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` | Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Continuità aziendale</li><li>Comms esterni</li><li>Approvazioni richiesta</li><li>Lavorare in remoto</li><li>Messaggi interni</li><li>Comms esterni</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento per dirigenti</li></ul>App: <ul><li>Complimenti</li><li>Wiki</li><li>Sito Web</li><li>Programmazione</li></ul>|
+> | Collaborare alla crisi globale o all'evento |`com.microsoft.teams.template.CollaborateOnAGlobalCrisisOrEvent` | Canali: <ul><li>Generale<li>Annunci</li><li>Notizie del mondo</li><li>Continuità aziendale</li><li>Comms esterni</li><li>Approvazioni richiesta</li><li>Lavorare in remoto</li><li>Messaggi interni</li><li>Comms esterni</li><li>Reclami dei clienti</li><li>Complimenti</li><li>Aggiornamento per dirigenti</li></ul>App: <ul><li>Complimenti</li><li>Wiki</li><li>Sito Web</li><li>Planner</li></ul>|
 > ||||
 
 ## <a name="adopt-office-365"></a>Adottare Office 365
@@ -77,7 +77,7 @@ Gestire attività, documenti e collaborare su tutto ciò che serve per offrire u
 > [!div class="mx-tdBreakAll"]
 > | Tipologia di modello base | baseTemplateId| Proprietà del modello base |
 > | ------------------ |--|-----------------------------------------------------------|
-> | Gestire un evento| `com.microsoft.teams.template.ManageAnEvent` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e pubbliche relazioni</li></ul> App:<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Programmazione</li> <li>OneNote</li></ul> |
+> | Gestire un evento| `com.microsoft.teams.template.ManageAnEvent` | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Budget</li> <li>Contenuto</li><li>Logistica</li> <li>Pianificazione</li> <li> Marketing e pubbliche relazioni</li></ul> App:<ul><li>Wiki</li><li>Sito Web</li> <li>YouTube</li> <li>Planner</li> <li>OneNote</li></ul> |
 > ||||
 
 ## <a name="onboard-employees"></a>Dipendenti a bordo
@@ -87,7 +87,7 @@ Migliorare la cultura e semplificare l'onboarding dei dipendenti con questo team
 > [!div class="mx-tdBreakAll"]
 > | Tipologia di modello base |baseTemplateId| Proprietà del modello base |
 > | ------------------|--|-----------------------------------------------------------|
-> | Dipendenti a bordo|`com.microsoft.teams.template.OnboardEmployees`  | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Chat dei dipendenti</li> <li>Formazione</li></ul>App:<ul><li>Wiki</li><li>Community</li><li>Programmazione</li></ul>|
+> | Dipendenti a bordo|`com.microsoft.teams.template.OnboardEmployees`  | Canali: <ul><li>Generale</li> <li>Annunci</li> <li>Chat dei dipendenti</li> <li>Formazione</li></ul>App:<ul><li>Wiki</li><li>Community</li><li>Planner</li></ul>|
 > ||||
 
 ## <a name="organize-a-help-desk"></a>Organizzare un help desk

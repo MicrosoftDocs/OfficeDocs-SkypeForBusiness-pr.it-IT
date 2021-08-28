@@ -11,18 +11,18 @@ ms.reviewer: srividhc
 f1.keywords:
 - NOCSH
 description: Questo articolo spiega come pianificare e configurare Cloud Video Interop per gli utenti dell'organizzazione.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-voice
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bea2f250e91b8a02cefea70db0b80fcd8cc35cce6ecb079c6417c0a6c31bc55c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a433a7a372c89a2d22bac7991effdd5081ac298d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322758"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616252"
 ---
 # <a name="set-up-cloud-video-interop-for-microsoft-teams"></a>Configurare Cloud Video Interop per Microsoft Teams
 
@@ -36,7 +36,7 @@ Vedere [Cloud Video Interop per Microsoft Teams](cloud-video-interop.md) informa
 
 Per pianificare l'abilitazione basata su utenti/simultanei/a livello di sito: 
 
-- Scegliere un modello di distribuzione/modello ospitato per l'uso
+- Selezionare un modello di distribuzione/modello ospitato per l'uso
 - Selezionare il piano di licenza ideale per l'organizzazione. 
 - Pianificare la capacità delle macchine virtuali è ospitare l'infrastruttura video.
 
@@ -78,7 +78,7 @@ Per eseguire il provisioning della chiave del tenant, è necessario eseguire i c
  
 ## <a name="consent"></a>Consenso
 
-Sarà necessario fornire il consenso per l'autorizzazione per i dispositivi di teleconferenza video (VTC) per partecipare alle riunioni delle organizzazioni tramite il servizio partner. Questo collegamento di consenso verrà fornito anche dal partner.  
+Sarà necessario fornire il consenso per l'autorizzazione per i dispositivi di teleconferenza video (VTC) per partecipare alle riunioni dell'organizzazione tramite il servizio partner. Questo collegamento di consenso verrà fornito anche dal partner.  
  
 Al termine di questi passaggi, gli utenti abilitati singolarmente tramite il cmdlet Grant precedente o tutti gli utenti dell'organizzazione, se il tenant è abilitato, avranno le coordinate VTC in tutte le riunioni Teams pianificate. Qualsiasi VTC può partecipare a queste riunioni tramite queste coordinate.
 
@@ -92,9 +92,9 @@ Al termine di questi passaggi, gli utenti abilitati singolarmente tramite il cmd
 
 ## <a name="schedule"></a>Pianificazione
 
-Pianificare quindi una Teams riunione con coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
+Pianificare quindi una riunione Teams con coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
 - [Teams Componente aggiuntivo Riunione per Outlook](teams-add-in-for-outlook.md)
-- Teams client desktop e mobile
+- Teams client desktop e per dispositivi mobili
 
 
 ## <a name="join"></a>Partecipa
@@ -103,10 +103,10 @@ Pianificare quindi una Teams riunione con coordinate di interoperabilità video.
  
 - IVR (Risposta vocale interattiva)
     - È possibile accedere all'IVR del partner usando il tenantkey@domain. 
-    - Una volta che sei nell'IVR del partner, ti verrà chiesto di immettere l'ID conferenza VTC, che ti connetterà alla riunione Teams riunione.
+    - Una volta che sei nell'IVR partner, ti verrà chiesto di immettere l'ID conferenza VTC, che ti connetterà alla riunione Teams riunione.
 - Chiamata diretta
     - È possibile accedere direttamente alla riunione Teams senza interagire con l'IVR del partner usando la funzione di chiamata diretta usando la stringa completa di tenantkey. VTC ConferenceId@domain.
 - Chiamata con un solo tocco
-    - Se si ha una sala Teams integrata, è possibile usare le funzionalità di composizione con un solo tocco offerte dal partner (senza bisogno di digitare alcuna stringa di chiamata).
+    - Se si ha una sala Teams integrata, è possibile usare le funzionalità di composizione con un solo tocco offerte dal partner (senza dover digitare alcuna stringa di chiamata).
 
 Infine, è possibile coinvolgere Teams utenti nelle riunioni usando audio, video e condivisione di contenuti.

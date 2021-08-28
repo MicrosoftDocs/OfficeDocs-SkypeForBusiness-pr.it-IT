@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in Canada, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: c3b39e327780e2a949a51eb85473714a1875a39a4e80f636bb234140bfedd710
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f9e81f30454d81126dd5db79b8793fda2bc00c14
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54339344"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58633950"
 ---
 # <a name="toll-free-dialing-restrictions-in-canada"></a>Restrizioni di composizione a numero verde in Canada
 
@@ -51,12 +51,12 @@ ms.locfileid: "54339344"
 > - 800-389 sono speciali e per le Bahamas
 > - 800-534 sono speciali e per Le Barbados
 > - 800-623 sono speciali e per le Bermuda
-> - 800-415 o 907 o 751 sono per la Repubblica Dom
+> - 800-415 o 907 o 751 sono per la Repubblica dom
 > - 800-271 sono speciali e per Trinidad
 > - 800-555 è l'intervallo di linee non udenti
 
 > [!IMPORTANT]
-> **Numeri gratuiti del** piano per la numerazione del Nord America: le tariffe al minuto per i numeri gratuiti del piano di numerazione nordamericana sono determinate dal paese di origine. La tariffa gratuita al minuto per le chiamate provenienti dagli Stati Uniti è mappata alla tariffa definita "America del Nord". Tuttavia, le chiamate provenienti da altri paesi nordamericani, come Canada, PortoRico e così via, hanno tariffe gratuite specifiche.
+> **Numeri gratuiti del** piano per la numerazione del Nord America: le tariffe al minuto per i numeri verde del piano di numerazione nordamericana sono determinate dal paese di origine. La tariffa gratuita al minuto per le chiamate provenienti dagli Stati Uniti è mappata alla tariffa definita "America del Nord". Tuttavia, le chiamate provenienti da altri paesi nordamericani, come Canada, PortoRico e così via, hanno tariffe gratuite specifiche.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

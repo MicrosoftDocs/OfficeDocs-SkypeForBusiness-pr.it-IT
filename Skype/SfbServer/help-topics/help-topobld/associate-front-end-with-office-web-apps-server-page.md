@@ -12,25 +12,25 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AssociateFrontEndWithWacPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49dc1a92-970b-4372-a3a2-2c714a52b1c3
-description: Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma abilita funzionalità aggiuntive non supportate nelle versioni precedenti.
-ms.openlocfilehash: 32716f1dab5cbde7eed222a3178fa2db01748c14a579aa6866d1ce125c1cd7fb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma abilita funzionalità aggiuntive che non sono disponibili nelle versioni precedenti.
+ms.openlocfilehash: 7b45a29e1e65e786492b890050cfa894001989e2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303729"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634400"
 ---
 # <a name="associate-front-end-with-office-web-apps-server-page"></a>Pagina per l'associazione di Front End Server a Office Web Apps Server
 
-Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma abilita funzionalità aggiuntive non supportate nelle versioni precedenti.
+Il Office Web Apps Server offre servizi simili a quelli di un relatore che carica un documento per l'utilizzo in una riunione, ma abilita funzionalità aggiuntive che non sono disponibili nelle versioni precedenti.
 
-Selezionare un server Office Web Apps per la distribuzione se si è scelto Conferenza come una delle opzioni di funzionalità per la configurazione Skype for Business Server 2015.
+Selezionare un server Office Web Apps per la distribuzione se si è scelto Conferenza come una delle opzioni di funzionalità per la configurazione di Skype for Business Server 2015.
 
 Questa finestra di dialogo contiene le opzioni seguenti:
 
-1. **Associa pool a un server Office Web Apps-** Selezionare questa casella di controllo se si fornirà e distribuirà un server app Web Office per gli utenti delle conferenze.
+1. **Associa pool a un server Office Web Apps-** Selezionare questa casella di controllo se si fornirà e distribuirà un server web apps Office per gli utenti delle conferenze.
 
 2. Se si è selezionata la casella di controllo, usare l'elenco per selezionare un server Office Web Apps già definito.
 

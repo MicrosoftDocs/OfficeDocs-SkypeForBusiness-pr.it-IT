@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 7c586401-d0e5-4017-b3e1-fe5e7f8fc6db
 description: Informazioni sul trunking SIP in Skype for Business Server VoIP aziendale
-ms.openlocfilehash: 8254df8366fdbfd03dd5ad0aa2f3253e5f4284b8248d26b131f056d28714bd77
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a27967f322db816285db100696fa061f339e9f71
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54289734"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634200"
 ---
 # <a name="sip-trunking-in-skype-for-business-server"></a>Trunking SIP in Skype for Business Server
 
@@ -53,7 +53,7 @@ Poiché i trunk SIP si connettono direttamente al provider di servizi, è possib
 
 Le funzionalità vocali sono spesso la motivazione principale per la distribuzione del trunking SIP, ma il supporto vocale è solo il primo passaggio. Con il trunking SIP, è possibile estendere le funzionalità VoIP e Skype for Business Server offrire un set di servizi più ricco. Ad esempio:
 
-- Il rilevamento della presenza avanzato per i dispositivi che non eseguono Skype for Business Server può fornire una migliore integrazione con i telefoni cellulari, consentendoti di vedere quando un utente è in una chiamata tramite cellulare.
+- Il rilevamento della presenza avanzato per i dispositivi che non eseguono Skype for Business Server può offrire una migliore integrazione con i telefoni cellulari, consentendoti di vedere quando un utente è in una chiamata tramite cellulare.
 
 - Le chiamate di emergenza E9-1-1 consentono alle autorità che rispondono alle chiamate 911 di determinare la posizione del chiamante dal suo numero di telefono.
 
@@ -68,7 +68,7 @@ Le connessioni SIP dirette sono invece connessioni SIP che non oltrepassano il c
 
 ## <a name="how-do-i-implement-sip-trunking"></a>Come si implementa il trunking SIP?
 
-Per implementare il trunking SIP, è necessario instradare la connessione attraverso un Mediation Server, che funge da proxy per le sessioni di comunicazione tra i client Skype for Business Server e il provider di servizi e transcodifica i supporti, se necessario.
+Per implementare il trunking SIP, è necessario instradare la connessione tramite un Mediation Server, che funge da proxy per le sessioni di comunicazione tra i client Skype for Business Server e il provider di servizi e transcodifica i supporti, se necessario.
 
 Ogni Mediation Server dispone di un'interfaccia di rete interna e di un'interfaccia di rete esterna. L'interfaccia interna si connette ai Front End Server. L'interfaccia esterna è comunemente chiamata interfaccia gateway perché è tradizionalmente utilizzata per connettere il Mediation Server a un gateway PSTN (Public Switched Telephone Network) o a un IP-PBX. Per implementare un trunk SIP, connettere l'interfaccia esterna del Mediation Server al componente perimetrale esterno del provider ITSP. Il componente perimetrale esterno dell'ITSP potrebbe essere un servizio Session Border Controller (SBC), un router o un gateway.
 
@@ -101,7 +101,7 @@ Per scegliere se distribuire il trunking SIP centralizzato o distribuito, è nec
 
 ### <a name="supported-sip-trunking-connection-types"></a>Tipi di connessione supportati per il trunking SIP
 
-Skype for Business Server supporta i tipi di connessione seguenti per il trunking SIP:
+Skype for Business Server supporta i seguenti tipi di connessione per il trunking SIP:
 
 - MPLS (Multiprotocol Label Switching) è una rete privata che indirizza e trasferisce i dati da un nodo di rete al successivo. La larghezza di banda in una rete MPLS viene condivisa con altri sottoscrittori e a ogni pacchetto di dati viene assegnata un'etichetta per distinguere i dati di un sottoscrittore da quello di un altro. Questo tipo di connessione non richiede una rete privata virtuale (VPN). Un potenziale svantaggio è che il traffico IP eccessivo può interferire con l'operazione VoIP a meno che non abbai priorità.
 
@@ -172,7 +172,7 @@ Per motivi di sicurezza è opportuno configurare una LAN virtuale (VLAN) per ogn
 
 - Non consentire il trasferimento di pacchetti broadcast o multicast dal router alla VLAN.
 
-- Bloccare eventuali regole di routing che instradino il traffico dal router a qualsiasi posizione, ad esempio mediation server.
+- Bloccare tutte le regole di routing che instradino il traffico dal router a qualsiasi posizione, ad esempio il Mediation Server.
 
 Se si utilizza un server VPN, è consigliabile attenersi alle linee guida seguenti:
 
@@ -180,7 +180,7 @@ Se si utilizza un server VPN, è consigliabile attenersi alle linee guida seguen
 
 - Non consentire la trasmissione di pacchetti broadcast o multicast dal server VPN alla VLAN.
 
-- Bloccare qualsiasi regola di routing che instrada il traffico del server VPN a qualsiasi posizione, ad esempio il Mediation Server.
+- Bloccare qualsiasi regola di routing che instrada il traffico del server VPN verso qualsiasi posizione, ad esempio il Mediation Server.
 
 - Crittografare i dati sulla VPN utilizzando Generic Routing Encapsulation (GRE).
 

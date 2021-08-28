@@ -17,18 +17,18 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare Telefono Microsoft sistema per l'azienda. "
-ms.openlocfilehash: eb39ea455ef298e00982a5ee414415ddbf66207a
-ms.sourcegitcommit: df6ad1b0f0caebebad87f1b5536fba85c3c0d26e
+description: "Informazioni sulle caratteristiche, la disponibilità e su come pianificare e configurare Telefono Microsoft system per l'azienda. "
+ms.openlocfilehash: 73f093fa7e8a029ee282a3b4d7cd236553cbc86a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 08/26/2021
-ms.locfileid: "58548291"
+ms.locfileid: "58615352"
 ---
 # <a name="heres-what-you-get-with-phone-system"></a>Vantaggi offerti dal Sistema telefonico
 
@@ -51,10 +51,10 @@ Sistema telefonico fornisce le caratteristiche seguenti. Se non diversamente spe
 |:-----|:-----|
 |**Sistema telefonico funzionalità** <br/> |**Descrizione** <br/> |
 |[Operatori automatici cloud](what-are-phone-system-auto-attendants.md) <br/> |Consente di creare un sistema di menu che consente ai chiamanti esterni e interni di individuare e effettuare o trasferire chiamate a utenti o reparti aziendali dell'organizzazione.  <br/> Si noti che *gli utenti non devono* essere abilitati alla voce per ricevere chiamate dall'operatore automatico. |
-|[Code di chiamata cloud](create-a-phone-system-call-queue.md) <br> |Consente di configurare la modalità di gestione delle code di chiamata per l'organizzazione, ad esempio configurare i messaggi di saluto e la musica in attesa, cercare il successivo agente di chiamata disponibile per gestire la chiamata e così via.  <br/> Si noti che *gli utenti devono* essere abilitati per la voce per ricevere chiamate da una coda di chiamata.|
+|[Code di chiamata cloud](create-a-phone-system-call-queue.md) <br> |Consente di configurare la modalità di gestione delle code di chiamata per l'organizzazione, ad esempio configurare i messaggi di saluto e la musica in attesa, cercare il successivo agente di chiamata disponibile per gestire la chiamata e così via.  <br/> Si noti che *gli utenti devono* essere abilitati alla voce per ricevere chiamate da una coda di chiamata.|
 |Musica blocco | Riproduce la musica predefinita definita dal servizio quando viene messa in attesa una chiamata esterna dalla rete PSTN (Public Switched Telephone Network). Questa funzionalità funziona per le chiamate PSTN-to-Teams uno-a-uno oltre alle chiamate effettuate a una coda di chiamata. Questa funzionalità offre la parità delle notifiche di blocco con altre piattaforme. Questa funzionalità è configurabile dall'amministratore, [ma attualmente solo tramite PowerShell.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) Il blocco musicale non è supportato anche nel trasferimento consultivo di una chiamata PSTN.|
 |Risposta/avvio della chiamata (per nome e numero)  <br/> |Consente agli utenti di rispondere alle chiamate in ingresso con un tocco e di effettuare chiamate in uscita componendo il numero di telefono completo o facendo clic su un nome nel client.  <br/> |
-|[Opzioni di inoltro di chiamata e squillo simultaneo](https://support.office.com/article/call-forwarding-call-groups-and-simultaneous-ring-in-teams-a88da9e8-1343-4d3c-9bda-4b9615e4183e) <br/> |Consente agli utenti di configurare regole di inoltro in modo che le chiamate possano essere inoltrate ovunque o che le chiamate possano essere inoltrate ai colleghi o alla segreteria telefonica.  <br/> |
+|[Opzioni di inoltro di chiamata e squillo simultaneo](https://support.office.com/article/call-forwarding-call-groups-and-simultaneous-ring-in-teams-a88da9e8-1343-4d3c-9bda-4b9615e4183e) <br/> |Consente agli utenti di configurare le regole di inoltro in modo che le chiamate possano essere inoltrate ovunque o che le chiamate possano essere inoltrate ai colleghi o alla segreteria telefonica.  <br/> |
 |[Ritiro della chiamata di gruppo e inoltro al gruppo](call-sharing-and-group-call-pickup.md) <br/> | Consente agli utenti di condividere le chiamate in arrivo con i colleghi in modo che i colleghi possano rispondere alle chiamate che si verificano quando l'utente non è disponibile. Meno disturbante per i destinatari rispetto ad altre forme di condivisione delle chiamate (ad esempio inoltro di chiamata o squillo simultaneo), perché gli utenti possono configurare la modalità di notifica di una chiamata condivisa in arrivo. |
 |[Trasferire una chiamata e un trasferimento consultivo](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0) <br/> |Consente agli utenti di trasferire le chiamate a un'altra persona. Oppure, se devono uscire dall'ufficio ma vogliono continuare la conversazione, possono trasferire le chiamate dal pc o dal telefono IP al cellulare.  <br/> Si noti che *gli utenti non devono* essere abilitati alla voce per ricevere chiamate trasferite da un altro utente. |
 |[Trasferisci alla segreteria telefonica a metà chiamata*](https://support.office.com/article/Transfer-a-call-in-Teams-b7f40f14-e083-46b9-b739-68038c8f73a0) <br/> | Consente agli utenti di eseguire il trasferimento alla segreteria telefonica durante una chiamata. |

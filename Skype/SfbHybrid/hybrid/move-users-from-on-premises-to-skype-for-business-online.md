@@ -9,7 +9,7 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-voice
@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: Informazioni su come spostare gli utenti in Skype for Business Online.
-ms.openlocfilehash: dd0d154194de79716665a16e8a156c8bf825a0838e91a43ef15246970c48b48e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a865b5ece2802f11bbbd103b10e52ff82f1ef804
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54298916"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614980"
 ---
 # <a name="move-users-from-on-premises-to-skype-for-business-online"></a>Spostare utenti da ambiente locale a Skype for Business Online
 
@@ -31,10 +31,10 @@ ms.locfileid: "54298916"
 
 Dopo aver spostato un utente da locale a Skype for Business Online, l'utente interagisce con Skype for Business Online per le sue funzionalità. Tutti i contatti esistenti in locale saranno disponibili in Skype for Business Online e tutte le riunioni esistenti organizzate dall'utente per il futuro verranno aggiornate in modo che i collegamenti puntino a Skype for Business Online. Se l'utente è abilitato per l'audioconferenza, le riunioni includeranno anche le coordinate di accesso esterno.  Per spostare gli utenti da un ambiente locale a Skype for Business Online, utilizzare il cmdlet Move-CsUser o il Pannello di controllo di Skype for Business Server, entrambi strumenti locali. 
 
-Prima di spostare gli utenti, verificare i [prerequisiti](move-users-between-on-premises-and-cloud.md#prerequisites) per spostare gli utenti nel cloud.
+Prima di spostare gli utenti, verificare i [prerequisiti per](move-users-between-on-premises-and-cloud.md#prerequisites) spostare gli utenti nel cloud.
 
 > [!NOTE]
-> In preparazione del prossimo ritiro di Skype for Business Online, Microsoft ha semplificato il modo in cui le organizzazioni passano a Teams. Quando si spostano gli utenti dall'ambiente locale al cloud, agli utenti viene automaticamente assegnata la modalità TeamsOnly e le riunioni dall'ambiente locale vengono convertite automaticamente in riunioni Teams, come se fosse stato specificato il commutatore, indipendentemente dal fatto che il commutatore sia stato effettivamente `-MoveToTeams` specificato.  Prima del ritiro di Skype for Business Online, le organizzazioni che richiedono lo spostamento degli utenti da locale a Skype for Business Online possono ottenere questo risultato in due passaggi aggiornando la modalità dell'utente dopo che l'utente è stato spostato in *TeamsOnly.* Tuttavia, nel prossimo futuro, non sarà più possibile assegnare una modalità diversa da TeamsOnly agli utenti ospitati nel cloud.  
+> In preparazione del prossimo ritiro di Skype for Business Online, Microsoft ha semplificato il modo in cui le organizzazioni passano a Teams. Quando si spostano gli utenti dall'ambiente locale al cloud, agli utenti viene automaticamente assegnata la modalità TeamsOnly e le riunioni dall'ambiente locale vengono convertite automaticamente Teams riunioni, come se fosse stato specificato il commutatore, indipendentemente dal fatto che il commutatore sia stato effettivamente `-MoveToTeams` specificato.  Prima del ritiro di Skype for Business Online, le organizzazioni che richiedono lo spostamento degli utenti da locale a Skype for Business Online possono ottenere questo risultato in due passaggi aggiornando la modalità dell'utente dopo che l'utente è stato spostato in *TeamsOnly.* Tuttavia, nel prossimo futuro, non sarà più possibile assegnare una modalità diversa da TeamsOnly agli utenti ospitati nel cloud.  
  
 ## <a name="move-users-with-move-csuser"></a>Spostare gli utenti con Move-CsUser 
 
@@ -47,7 +47,7 @@ Per spostare un utente online tramite Move-CsUser:
 - Se non si dispone di un account con autorizzazioni sufficienti sia in locale che in Microsoft 365, utilizzare il parametro -credential per fornire a un account autorizzazioni sufficienti in Microsoft 365.
 - Se l'account con autorizzazioni in Microsoft 365 non termina con ".onmicrosoft. <span> com", è quindi necessario specificare il parametro -HostedMigrationOverrideUrl, con il valore corretto come descritto in [Credenziali amministrative obbligatorie.](move-users-between-on-premises-and-cloud.md#required-administrative-credentials)
 
-La sequenza di cmdlet seguente può essere utilizzata per spostare un utente in Skype for Business Online e assegnare la modalità predefinita tenant all'utente. Presuppone che la credenziale Microsoft 365 sia un account separato e fornita come input per il prompt Get-Credential richiesta.
+È possibile utilizzare la sequenza di cmdlet seguente per spostare un utente in Skype for Business Online e assegnare la modalità predefinita tenant all'utente. Presuppone che la credenziale Microsoft 365 sia un account separato e fornita come input per il prompt Get-Credential richiesta.
 
 ```PowerShell
 # From an on-premises Skype for Business Server or Lync Server 2013 management shell window, run:
@@ -62,7 +62,7 @@ Grant-CsTeamsUpgradePolicy -Identity username@contoso.com -PolicyName $null
 
 Se l'account amministratore è abilitato per L'autenticazione a più fattori( Multi-Factor Authentication), non specificare il parametro -Credential. All'amministratore verranno richieste le credenziali.
 
-## <a name="move-users-with-skype-for-business-server-control-panel-and-teams-admin-center"></a>Spostare gli utenti con Skype for Business Server pannello di controllo e Teams di amministrazione
+## <a name="move-users-with-skype-for-business-server-control-panel-and-teams-admin-center"></a>Spostare gli utenti con Skype for Business Server Pannello di controllo e Teams Admin Center
 
 1. Apri l'Skype for Business Server del Pannello di controllo.
 2. Nel riquadro di spostamento sinistro scegliere **Utenti**.
