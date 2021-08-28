@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployMainBootstrap
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f8813f25-eafa-4006-a186-94e4ebcc5ac7
-description: "Per installare e attivare o disattivare o disinstallare Skype for Business Server 2015, utilizzare Passaggio 2: Installazione o rimozione di Skype Server. È necessario essere connessi come amministratore locale nel computer che si sta installando o modificando ed essere in grado di leggere utenti e gruppi di Servizi di dominio Active Directory nel dominio corrente. Per iniziare, fare clic su Esegui. In questo modo verrà letta la definizione della topologia basata sull'archivio di gestione centrale. I componenti software necessari vengono installati e configurati in base al ruolo secondo quanto definito nell'archivio di gestione centrale. Al termine dell'installazione, leggere il riepilogo e fare clic su Fine."
-ms.openlocfilehash: 0bff3c99ada173ddb617f67ab68a8b776936124bf89f82cbaa9c6a273da7acae
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Per installare e attivare o disattivare o disinstallare Skype for Business Server 2015, utilizzare Passaggio 2: Installazione o rimozione di componenti Skype Server. È necessario essere connessi come amministratore locale nel computer che si sta installando o modificando ed essere in grado di leggere utenti e gruppi di Servizi di dominio Active Directory nel dominio corrente. Per iniziare, fare clic su Esegui. In questo modo verrà letta la definizione della topologia basata sull'archivio di gestione centrale. I componenti software necessari vengono installati e configurati in base al ruolo secondo quanto definito nell'archivio di gestione centrale. Al termine dell'installazione, leggere il riepilogo e fare clic su Fine."
+ms.openlocfilehash: 267a4be0f2077d9cfd1d422d87c5916ab7486ac9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54285076"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628928"
 ---
 # <a name="setup-or-remove-skype-for-business-server-components"></a>Installare o rimuovere componenti di Skype for Business Server
  

@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.FrontEndGeneralSettingsExpander
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8a5f21d0-f6c8-4907-9958-5ca36f702542
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per modificare le impostazioni per un pool Front End o un server Standard Edition esistente, sono disponibili le sezioni seguenti:'
-ms.openlocfilehash: b4dd6cee4c612cf929c1c058001b79dcfad0e9c88c055a78351297e125c40e90
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2501ad035950582b67167089972c7d84f25be052
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628998"
 ---
 # <a name="front-end-general-settings-expander"></a>Espansione delle impostazioni generali di Front End
 
@@ -103,7 +103,7 @@ Per modificare o specificare ulteriori impostazioni per i servizi Web nel pool F
 In **Servizi Web interni** specificare quanto segue:
 
 > [!CAUTION]
-> Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server **come pool01.contoso.com**, non è possibile **utilizzare** pool01.contoso.com per un altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
+> Se si dispone di più pool Front End o Front End Server, il nome di dominio completo dei servizi Web esterni deve essere univoco. Se ad esempio si definisce l'FQDN dei servizi Web esterni di un Front End Server **come pool01.contoso.com**, non è possibile utilizzare pool01.contoso.com **per** un altro pool Front End o Front End Server. Se si distribuiscono anche Director, il nome di dominio completo dei servizi Web esterni definito per qualsiasi server Director o pool di server Director deve essere univoco da qualsiasi altro server Director o pool di server Director, nonché da qualsiasi pool Front End o Front End Server. Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director.
 
 - Se si seleziona **Sostituisci FQDN**, sarà possibile specificare un FQDN diverso per l'identità dei **Servizi Web interni** nel pool. Per impostazione predefinita, l'impostazione corrisponde al nome corrente definito per il pool Front End.
 
@@ -113,7 +113,7 @@ In **Servizi Web esterni** specificare quanto segue:
 
 - L'FQDN dei servizi Web esterni. L'FQDN specificato qui in genere dipenderà dai requisiti della connessione esterna, ad esempio del proxy inverso.
 
-- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. Queste impostazioni vengono modificate per le porte di attesa in base ai requisiti del proxy inverso e della rete esterna. Le porte pubblicate sono impostate sul valore predefinito della porta 80 per HTTP e della porta 443 per HTTPS. Questi valori determinano le porte che il pool ascolterà per le richieste in arrivo. In genere, non è necessario modificare queste impostazioni, a meno che non si sia verificata una conflitto di requisiti di porta nel pool. Sono previste porte pubblicate interne ed esterne che utilizzano gli stessi valori di porta. Non si tratta di un conflitto.
+- Le porte di attesa e pubblicate per HTTP e HTTPS richieste dalla distribuzione. Le impostazioni predefinite della porta 8080 per HTTP e della porta 4443 per HTTPS sono definite inizialmente. Queste impostazioni vengono modificate per le porte di attesa in base ai requisiti del proxy inverso e della rete esterna. Le porte pubblicate sono impostate sul valore predefinito della porta 80 per HTTP e della porta 443 per HTTPS. Questi valori determinano le porte che il pool ascolterà per le richieste in arrivo. In genere, non è necessario modificare queste impostazioni, a meno che non vi sia un conflitto di requisiti di porta nel pool. Sono previste porte pubblicate interne ed esterne che utilizzano gli stessi valori di porta. Non si tratta di un conflitto.
 
 ### <a name="mediation-server"></a>Mediation Server
 

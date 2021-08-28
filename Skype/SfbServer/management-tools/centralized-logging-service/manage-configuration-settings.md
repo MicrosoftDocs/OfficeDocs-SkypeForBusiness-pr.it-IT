@@ -10,25 +10,25 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 93b9a354-9aea-4b3a-a4fe-68a89f436196
-description: 'Riepilogo: informazioni su come recuperare, aggiornare e creare impostazioni di configurazione per il servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: 627106900dbb3b174fc0105c6e61bb5a3c20f8028f45985a591d479c9962f49b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: informazioni su come recuperare, aggiornare e creare le impostazioni di configurazione per il servizio di registrazione centralizzata in Skype for Business Server 2015.'
+ms.openlocfilehash: 8b2809fd9b91859d0e32e9dfaf0ddb8cbebe7a53
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350148"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628598"
 ---
 # <a name="manage-centralized-logging-service-configuration-settings-in-skype-for-business-server-2015"></a>Gestire le impostazioni di configurazione del servizio di registrazione centralizzata in Skype for Business Server 2015
 
-**Riepilogo:** Informazioni su come recuperare, aggiornare e creare impostazioni di configurazione per il servizio di registrazione centralizzata in Skype for Business Server 2015.
+**Riepilogo:** Informazioni su come recuperare, aggiornare e creare le impostazioni di configurazione per il servizio di registrazione centralizzata in Skype for Business Server 2015.
 
 Il servizio di registrazione centralizzata è controllato e configurato da impostazioni e parametri creati e utilizzati da CLSController (Centralized Logging Service Controller) per inviare comandi all'agente del servizio di registrazione centralizzata (CLSAgent) del singolo computer. L'agente elabora i comandi inviati e, nel caso di un comando Start, utilizza la configurazione degli scenari, dei provider, della durata della traccia e dei flag per iniziare a raccogliere i log di traccia in base alle informazioni di configurazione fornite.
 
 > [!IMPORTANT]
->  Non tutti Windows PowerShell cmdlet elencati per il servizio di registrazione centralizzata sono destinati all'utilizzo con Skype for Business Server 2015 locali. Sebbene possano sembrare funzionare, i cmdlet seguenti non sono progettati per funzionare con le distribuzioni locali Skype for Business Server 2015:
+>  Non tutti Windows PowerShell cmdlet elencati per il servizio di registrazione centralizzata sono destinati all'utilizzo con Skype for Business Server 2015 locali. Sebbene possano sembrare funzionare, i cmdlet seguenti non sono progettati per funzionare con Skype for Business Server 2015 in locale:
 
 -  **Cmdlet CsClsRegion:** [Get-CsClsRegion,](/powershell/module/skype/get-csclsregion?view=skype-ps) [Set-CsClsRegion,](/powershell/module/skype/set-csclsregion?view=skype-ps) [New-CsClsRegion](/powershell/module/skype/new-csclsregion?view=skype-ps)e [Remove-CsClsRegion.](/powershell/module/skype/remove-csclsregion?view=skype-ps)
 -  **Cmdlet CsClsSearchTerm:** [Get-CsClsSearchTerm](/powershell/module/skype/get-csclssearchterm?view=skype-ps) e [Set-CsClsSearchTerm](/powershell/module/skype/set-csclssearchterm?view=skype-ps).
@@ -36,9 +36,9 @@ Il servizio di registrazione centralizzata è controllato e configurato da impos
 
 Le impostazioni definite in questi cmdlet non impediranno o causeranno comportamenti negativi, ma sono progettate per l'utilizzo con Microsoft 365 o Office 365 e non producono i risultati previsti nelle distribuzioni locali. Questo non significa che non si possono utilizzare nelle distribuzioni locali, ma il loro utilizzo è descritto in un argomento più avanzato che non è incluso in questa documentazione.
 
-Il servizio di registrazione centralizzata può essere eseguito in un ambito che include un singolo computer o un pool di computer, in un ambito sito ,ovvero in un sito definito, ad esempio il sito Redmond contenente una raccolta di computer e pool nella distribuzione, oppure in un ambito globale, ovvero in tutti i computer e i pool della distribuzione.
+Il servizio di registrazione centralizzata può essere eseguito in un ambito che include un singolo computer o un pool di computer, in un ambito sito ,ovvero in un sito definito, ad esempio il sito Redmond che contiene una raccolta di computer e pool nella distribuzione, oppure in un ambito globale, ovvero in tutti i computer e i pool della distribuzione.
 
-Per configurare l'ambito del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza RBAC (Role-Based Access Control) CsAdministrator o CsServerAdministrator oppure un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
+Per configurare l'ambito del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basati sul ruolo (RBAC) oppure di un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet (inclusi eventuali ruoli RBAC personalizzati creati dall'utente), eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
 
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "<Skype for Business cmdlet>"}
@@ -53,7 +53,7 @@ Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Set-CsClsConfiguration"}
 > [!NOTE]
 > Esistono differenze fondamentali tra i comandi della riga di comando che è possibile eseguire in Windows PowerShell o CLSController. Windows PowerShell offre un metodo efficace per configurare e definire scenari e riutilizzarli in modo significativo per gli scenari di risoluzione dei problemi. Mentre CLSController non offre un modo rapido ed efficiente per eseguire comandi e ottenere risultati, il set di comandi di CLSController è limitato dal numero finito di comandi disponibili dalla riga di comando. A differenza dei cmdlet Windows PowerShell, CLSController non può definire nuovi scenari, gestire l'ambito a livello di sito o globale e molte altre limitazioni di un set di comandi finito che non può essere configurato in modo dinamico. Anche se CLSController fornisce un mezzo per l'esecuzione rapida, Windows PowerShell consente di estendere la funzionalità del servizio di registrazione centralizzata oltre a quanto possibile con CLSController.
 
-È possibile definire un singolo ambito computer durante l'esecuzione di un comando [Search-CsClsLogging,](/powershell/module/skype/search-csclslogging?view=skype-ps) [Show-CsClsLogging,](/powershell/module/skype/show-csclslogging?view=skype-ps) [Start-CsClsLogging,](/powershell/module/skype/start-csclslogging?view=skype-ps) [Stop-CsClsLogging,](/powershell/module/skype/stop-csclslogging?view=skype-ps) [Sync-CsClsLogging](/powershell/module/skype/sync-csclslogging?view=skype-ps) e [Update-CsClsLogging](/powershell/module/skype/update-csclslogging?view=skype-ps) utilizzando il parametro -Computers. Il parametro -Computers accetta un elenco delimitato da virgole di nomi di dominio completi (FQDN) per il computer di destinazione.
+È possibile definire un ambito computer singolo durante l'esecuzione di un comando [Search-CsClsLogging,](/powershell/module/skype/search-csclslogging?view=skype-ps) [Show-CsClsLogging,](/powershell/module/skype/show-csclslogging?view=skype-ps) [Start-CsClsLogging,](/powershell/module/skype/start-csclslogging?view=skype-ps) [Stop-CsClsLogging,](/powershell/module/skype/stop-csclslogging?view=skype-ps) [Sync-CsClsLogging](/powershell/module/skype/sync-csclslogging?view=skype-ps) e [Update-CsClsLogging](/powershell/module/skype/update-csclslogging?view=skype-ps) utilizzando il parametro -Computers. Il parametro -Computers accetta un elenco delimitato da virgole di nomi di dominio completi (FQDN) per il computer di destinazione.
 
 > [!TIP]
 > È inoltre possibile definire -Pools e un elenco delimitato da virgole di pool in cui si desidera eseguire i comandi di registrazione.
@@ -65,7 +65,7 @@ Gli ambiti siti e globali sono definiti nei cmdlet **New-**, **Set-** e **Remove
 
 ### <a name="to-retrieve-the-current-centralized-logging-service-configuration"></a>Per recuperare la configurazione corrente del servizio di registrazione centralizzata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Digitare quanto segue al prompt dei comandi:
 
@@ -79,7 +79,7 @@ Utilizzare i cmdlet **New-CsClsConfiguration** e **Set-CsClsConfiguration** per 
 
 ### <a name="to-retrieve-the-current-centralized-logging-service-configuration-from-the-computer-local-store"></a>Per recuperare la configurazione corrente del servizio di registrazione centralizzata dall'archivio locale del computer
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Digitare quanto segue al prompt dei comandi:
 
@@ -90,7 +90,7 @@ Utilizzare i cmdlet **New-CsClsConfiguration** e **Set-CsClsConfiguration** per 
 Quando si utilizza il primo esempio in cui **Get-CsClsConfiguration** non specifica alcun parametro, il comando fa riferimento all'archivio di gestione centrale per i dati. Se si specifica il parametro -LocalStore, il comando fa riferimento al computer LocalStore anziché all'archivio di gestione centrale.
 ### <a name="to-retrieve-a-listing-of-scenarios-currently-defined"></a>Per recuperare un elenco di scenari attualmente definiti
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Digitare quanto segue al prompt dei comandi:
 
@@ -107,7 +107,7 @@ Quando si utilizza il primo esempio in cui **Get-CsClsConfiguration** non specif
 Il cmdlet **Get-CsClsConfiguration** visualizza sempre gli scenari che fanno parte della configurazione di un determinato ambito. Nella maggior parte dei casi, non sono visualizzati tutti gli scenari e sono presenti troncamenti. Il comando usato in questo caso elenca tutti gli scenari e informazioni parziali sui provider, le impostazioni e i flag in uso.
 ### <a name="to-update-a-global-scope-for-the-centralized-logging-service-by-using-windows-powershell"></a>Per aggiornare un ambito globale per il servizio di registrazione centralizzata tramite Windows PowerShell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Digitare quanto segue al prompt dei comandi:
 
@@ -124,7 +124,7 @@ Il cmdlet **Get-CsClsConfiguration** visualizza sempre gli scenari che fanno par
 Il comando indica al CLSAgent in ogni computer e pool della distribuzione di impostare le dimensioni del valore di rollover per il file di traccia su 40 megabyte. Il comando si applica a tutti i computer e i pool in tutti i siti e imposta il valore di rollover del log di traccia configurato su 40 megabyte.
 ### <a name="to-update-a-site-scope-for-the-centralized-logging-service-by-using-windows-powershell"></a>Per aggiornare un ambito sito per il servizio di registrazione centralizzata tramite Windows PowerShell
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Digitare quanto segue al prompt dei comandi:
 
@@ -144,7 +144,7 @@ Il comando indica al CLSAgent in ogni computer e pool della distribuzione di imp
 Il comando indica al CLSAgent in ogni computer e pool del sito Redmond di impostare le dimensioni del valore di rollover per il file di traccia su 40 megabyte. I computer e i pool in altri siti non verranno modificati dal comando e continueranno a usare il valore di rollover del log di traccia definito per impostazione predefinita (20 megabyte) o durante l'avvio della sessione di registrazione.
 ### <a name="to-create-a-new-centralized-logging-service-configuration"></a>Per creare una nuova configurazione del servizio di registrazione centralizzata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Digitare quanto segue al prompt dei comandi:
 
@@ -164,7 +164,7 @@ Ad esempio, per creare una nuova configurazione che definisce una cartella di re
 È consigliabile pianificare con attenzione la creazione di nuove configurazioni e come definire nuove proprietà per il servizio di registrazione centralizzata. È anche opportuno prestare attenzione alle modifiche che vi si apportano accertandosi di comprenderne l'impatto sulla capacità di registrare correttamente gli scenari dei problemi. È consigliabile apportare alla configurazione modifiche in grado di migliorare la gestione dei log con dimensioni e periodi di rollover che consentano di risolvere i problemi quando si verificano.
 ### <a name="to-remove-an-existing-centralized-logging-service-configuration"></a>Per rimuovere una configurazione esistente del servizio di registrazione centralizzata
 
-1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
 
 2. Digitare quanto segue al prompt dei comandi:
 

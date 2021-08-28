@@ -15,7 +15,7 @@ ms.collection:
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,18 +23,18 @@ ms.custom:
 - seo-marvel-jul2020
 hideEdit: true
 description: Fournir des expériences accessibles à tous est au cœur de la mission de Microsoft, qui consiste à permettre à chaque personne et à chaque organisation de la planète d'accomplir davantage. Microsoft offre un certo nombre de fonctionnalités d'accessibilité pour Skype Entreprise et Microsoft Teams qui s'inscrivent dans son engagement fort en faveur de l'accessibilité et de l'inclusion.
-ms.openlocfilehash: e8e05e8eeb8a5af889507e7111cbdd478aaab2894cc92f0c5bea5f8bb58e79b8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 58b90c5b20fcbb38848e04337b218425da9d346e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333008"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58580320"
 ---
 # <a name="accessibility-solutions-for-skype-for-business-online-and-microsoft-teams-in-france"></a>Soluzioni di accessibilità per Skype for Business Online e Microsoft Teams in Francia
 
 <span class="underline">Rapport sur les actions engagées par Microsoft pour favoriser l'accès des personnes en situation de handicap aux communications électroniques</span>
 
-Fournir des expériences accessibles à tous est au cœur de la mission de Microsoft, qui consiste à permettre à chaque personne et à chaque organisation de la planète d'accomplir davantage. Microsoft offre un certo nombre de fonctionnalités d'accessibilité pour Skype Entreprise et Microsoft Teams qui s'inscrivent dans son engagement fort en faveur de l'accessibilité et de l'inclusion.
+Fournir des expériences accessibles à tous est au cœur de la mission de Microsoft, qui consiste à permettre à chaque personne et à chaque organisation de la planète d'accomplir davantage. Microsoft offre un certain nombre de fonctionnalités d'accessibilité pour Skype Entreprise et Microsoft Teams qui's inscrivent dans son engagement fort en faveur de l'accessibilité et de l'inclusion.
 
 ## <a name="accessibilit-pour-microsoft-teams-et-skype-entreprise"></a>Accessibilité pour Microsoft Teams et Skype Entreprise
 
@@ -53,12 +53,12 @@ Microsoft Teams fournit des pages d'aide avec des raccourcis clavier et des inst
 
 - Inviato di commenti des messages privés ou chatter dans Microsoft Teams à l'aide d'un lecteur d'écran[https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-envoyer-un-message-ou-discuter-en-priv%C3%A9-dans-microsoft-teams-c99901c9-00dc-44d4-8921-4aa120bf298b?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-envoyer-un-message-ou-discuter-en-priv%C3%A9-dans-microsoft-teams-c99901c9-00dc-44d4-8921-4aa120bf298b?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
 
-- Uso d'un lecteur d'écran pour trouver et répondre aux alertes dans Microsoft Teams[https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-rechercher-des-alertes-et-y-r%C3%A9pondre-dans-microsoft-teams-8290757e-789d-4e5a-a2ac-9ae4a07d55c2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-rechercher-des-alertes-et-y-r%C3%A9pondre-dans-microsoft-teams-8290757e-789d-4e5a-a2ac-9ae4a07d55c2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
+- Utilizzo d'un lecteur d'écran pour trouver et répondre aux alertes dans Microsoft Teams[https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-rechercher-des-alertes-et-y-r%C3%A9pondre-dans-microsoft-teams-8290757e-789d-4e5a-a2ac-9ae4a07d55c2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/utiliser-un-lecteur-d-%C3%A9cran-pour-rechercher-des-alertes-et-y-r%C3%A9pondre-dans-microsoft-teams-8290757e-789d-4e5a-a2ac-9ae4a07d55c2?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR)
 
-Microsoft Teams permet désormais aux utilisateurs de brouiller leur arrière-plan ou d'utiliser une image de fond pendant les réunions, ce qui peut être utile aux personnes malentendantes qui ont du mal à lire sur les lèvres et à celles qui peuvent être facilement distraites par un environnement actif: [ https://support.office.com/fr-fr/article/rendre-votre-arri ère-plan-flou-dans-une-réunion-en-équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/rendre-votre-arrière-plan-flou-dans-une-réunion-en-équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR).
+Microsoft Teams permet désormais aux utilisateurs de brouiller leur arrière-plan ou d'utiliser une image de fond pendant les réunions, ce qui peut être utile aux personnes malentendantes qui ont du mal à lire sur les lèvres et à celles qui peuvent être facilement distraites par un environnement actif: [ https://support.office.com/fr-fr/article/rendre-votre-arri ère-plan-flou-dans-une-réunion -en-équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR](https://support.office.com/fr-fr/article/rendre-votre-arrière-plan-flou-dans-une-réunion-en-équipe-f77a2381-443a-499d-825e-509a140f4780?omkt=fr-FR&ui=fr-FR&rs=fr-FR&ad=FR).
 Les utilisateurs de Microsoft Teams peuvent gérer les notifications par le biais des paramètres, désactiver entièrement les notifications en activant le mode "Ne pas déranger", et masquer, mettre en sourdine et épingler les discussions, tout cela contribuant à minimiser les distractions et à aider l'utilisateur à se concentrer dans un environnement très actif. La possibilité d'activer la suppression du bruit en temps réel pour réduire le bruit de fond pendant les réunions sera ajoutée.
 
-Microsoft Teams une introduit une fonction "lever la main" qui permettra à toute personne participant à une réunion Microsoft Teams d'envoyer un signal visuel indiquant qu'elle a quelque chose à dire, utile à tous les utilisateurs qui souhaitent participer pleinement aux discussions de la réunion, y compris les personnes souffrant de troubles de la parole.
+Microsoft Teams introduit une fonction "lever la main" qui permettra à toute personne participant à une réunion Microsoft Teams d'envoyer un signal visuel indiquant qu'elle a quelque chose à dire, utile à tous les utilisateurs qui souhaitent participer pleinement aux discussions de la réunion, y compris les personnes souffrant de troubles de la parole.
 
 Microsoft Teams permet aux utilisateurs d'épingler et de recadrer les vidéos et de passer de la visualisation du contenu partagé pendant une réunion à celle des personnes qui y participent, ce qui peut être utile aux personnes malentendantes qui lisent sur les lèvres ou utilisent un interprète en langue des signes. Les utilisateurs peuvent également envoyer des messages audio et utiliser la technologie de dictée assistée par Microsoft Windows pour convertir la parole en texte, ce qui peut aider les personnes malvoyantes et malentendantes à communiquer avec les autres participants à la réunion.
 
@@ -82,7 +82,7 @@ Skype Entreprise dans Office 365 prend également en charge diverses fonctionnal
 
 Lorsque vous utilisez Skype Entreprise, les menus interactifs de réponse vocale peuvent être ralentis, accélérés et redémarrés, et les utilisateurs peuvent choisir de sauter des messages, et Microsoft Teams prend en charge le réglage de la vitesse de la boîte vocale. Microsoft Teams et Skype Entreprise prennent en charge les appels textes (TTY).
 Les utilisateurs de Skype Entreprise utilisant Outlook 2010 ou des versions plus récentes peuvent choisir de recevoir leurs messages vocaux au format texte, ce qui peut être bénéfique pour les personnes malentendantes ou sourdes : [https://support.microsoft.com/fr-fr/office/consultation-de-la-messagerie-vocale-et-des-options-de-skype-entreprise-2deea7f8-831f-4e85-a0d4-b34da55945a8?ui=fr-fr&rs=fr-fr&ad=fr](https://support.microsoft.com/fr-fr/office/consultation-de-la-messagerie-vocale-et-des-options-de-skype-entreprise-2deea7f8-831f-4e85-a0d4-b34da55945a8?ui=fr-fr&rs=fr-fr&ad=fr) .
-Les administrateurs informatiques de Microsoft Teams peuvent gérer la transcription pour leurs clients. Versa une lecture plus facile, Microsoft Teams prend en charge le zoom et Skype Entreprise permet d'ajuster la taille du texte des messages instantanés.
+Les administrateurs informatiques de Microsoft Teams peuvent gérer la transcription pour leurs clients. Pour une lecture plus facile, Microsoft Teams prend en charge le zoom et Skype Entreprise permet d'ajuster la taille du texte des messages instantanés.
 
 Les pages consacrées à chacune de ces plates-formes décrivent comment se présentent généralement Skype Entreprise et Microsoft Teams sur les appareils qui prennent en charge ces plates-formes, telles que Windows, Mac, iOS et Android. Les descriptions de des agencements de Skype Entreprise peuvent être particulièrement utiles aux utilisateurs aveugles, malvoyants ou à mobilité réduite pour les aider à construire une représentation mentale des points de repère des interfaces utilisateur (IU) afin de faciliter la navigation dans l'IU.
 

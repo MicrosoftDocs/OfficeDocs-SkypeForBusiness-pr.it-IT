@@ -9,26 +9,26 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d07996e6-b0a5-4ff8-9512-ab707762b4e2
 description: 'Riepilogo: informazioni sul Rapporto distribuzione metriche qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: b90b54ede899d8eb085ad65392280e3910498128e5a43c927260b20e501e2292
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0ba1bfadee22d731a6ef6c523ba22261a8f22202
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54290314"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606185"
 ---
 # <a name="the-media-quality-metrics-distribution-report-in-skype-for-business-server"></a>Rapporto distribuzione metriche qualità multimediale in Skype for Business Server 
  
-**Riepilogo:** Informazioni sul Rapporto distribuzione metriche di qualità multimediale in Skype for Business Server.
+**Riepilogo:** Informazioni sul Rapporto distribuzione metriche qualità multimediale in Skype for Business Server.
   
 Il Rapporto distribuzione metriche di qualità multimediale consente di visualizzare un grafico che mostra i valori di distribuzione per una metrica Qualità dell'esperienza, ad esempio instabilità o perdita di pacchetti. Si supponga, ad esempio, che gli utenti esemplino un totale di 10 chiamate telefoniche. queste 10 chiamate segnalano i seguenti tempi di roundtrip:
   
 |**Numero chiamata**|**Round trip Time (millisecondi)**|
 |:-----|:-----|
-|1  <br/> |50  <br/> |
-|2  <br/> |50  <br/> |
+|1   <br/> |50  <br/> |
+|2   <br/> |50  <br/> |
 |3   <br/> |50  <br/> |
 |4   <br/> |50  <br/> |
 |5   <br/> |50  <br/> |
@@ -38,7 +38,7 @@ Il Rapporto distribuzione metriche di qualità multimediale consente di visualiz
 |9   <br/> |50  <br/> |
 |10   <br/> |50  <br/> |
    
-La media per questi tempi di andata e ritorno è di 500 millisecondi (5000 diviso per 10). Cinquecento millisecondi è un tempo di round trip estremamente grande; di conseguenza, si potrebbe pensare di avere un problema grave con la congestione della rete. I lunghi tempi di andata e ritorno sono in genere il risultato di reti sovraccariche.
+La media per questi tempi di round trip è di 500 millisecondi (5000 diviso per 10). Cinquecento millisecondi è un tempo di round trip estremamente grande; di conseguenza, si potrebbe pensare di avere un problema grave con la congestione della rete. I lunghi tempi di andata e ritorno sono in genere il risultato di reti sovraccariche.
   
 In realtà, naturalmente, il 90% delle chiamate ha avuto tempi di andata e ritorno eccellenti; si è semplicemente avuto una chiamata negativa che ha avariato i risultati complessivi. Se si osserva solo il tempo medio di round trip, è possibile passare a una conclusione molto errata.
   

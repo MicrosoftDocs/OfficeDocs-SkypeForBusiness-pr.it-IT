@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: ae1f6ed7-08da-41e1-b327-50e4a22992e6
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la finestra di dialogo Seleziona da Active Directory per trovare gli utenti che si desidera abilitare per Skype for Business Server. Nella casella di ricerca digitare l'indirizzo SIP o il nome visualizzato dell'utente che si desidera trovare. Per recuperare tutti gli utenti disponibili, non digitare nulla nella casella di ricerca.
-ms.openlocfilehash: 2348d8e72101aec4cde4263fbe4f3d28b5e37c83db975fc368b257dbe8f0c0b3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 331a5e8d51b0724a4225c63aadb0820ffb92a50f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54283548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606515"
 ---
 # <a name="select-from-active-directory"></a>Selezione da Active Directory
  

@@ -9,27 +9,27 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b40ba905-e74a-4456-ac94-65471bc2d66d
 description: 'Riepilogo: informazioni su come modificare i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 5676a6bc0970a98fa76357deb1403c6b2337920273262c0a76a465b33d5d18c4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e9be0172f2c7df445a6637be173912d30844c4f2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54290354"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628718"
 ---
 # <a name="modify-conferencing-policies-in-skype-for-business-server"></a>Modificare i criteri di conferenza in Skype for Business Server
  
 **Riepilogo:** Informazioni su come modificare i criteri di conferenza in Skype for Business Server.
   
-È possibile modificare i criteri di conferenza Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile modificare i criteri di conferenza Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell.
   
 ## <a name="modify-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Modificare i criteri di conferenza tramite Skype for Business Server Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2.  Aprire Skype for Business Server Pannello di controllo.
+2.  Apri Skype for Business Server Pannello di controllo.
     
 3. Sulla barra di spostamento sinistra fare clic su **Conferenza** e quindi su **Criteri conferenza.**
     

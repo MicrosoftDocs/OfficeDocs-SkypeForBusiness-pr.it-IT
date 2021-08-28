@@ -11,23 +11,23 @@ audience: admin
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
-description: Esempi di come usare PowerShell per impostare criteri in Teams per controllare chi può tenere eventi in tempo reale nell'organizzazione e le funzionalità disponibili negli eventi.
+description: Esempi di come usare PowerShell per impostare criteri in Teams per controllare chi può tenere eventi live nell'organizzazione e le funzionalità disponibili negli eventi.
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 2b55589a3cabf1b696c1034ce4e20cd7a56af3444f7fa51e0f81f44430ead6bb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dd408ab17d91a826b0d85a6c2515e8f21013242a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54328931"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58629178"
 ---
-# <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri degli eventi live in Microsoft Teams
+# <a name="use-powershell-to-set-live-events-policies-in-microsoft-teams"></a>Usare PowerShell per impostare i criteri per gli eventi live in Microsoft Teams
 
-È possibile usare i cmdlet Windows PowerShell per impostare e assegnare le impostazioni dei criteri per gli eventi live in Teams: 
+È possibile usare i cmdlet di Windows PowerShell per impostare e assegnare le impostazioni dei criteri per gli eventi live in Teams: 
 - [Get-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/get-csteamsmeetingbroadcastpolicy?view=skype-ps)
 - [Set-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/set-csteamsmeetingbroadcastpolicy?view=skype-ps)
 - [New-CsTeamsMeetingBroadcastPolicy](/powershell/module/skype/new-csteamsmeetingbroadcastpolicy?view=skype-ps)
@@ -42,7 +42,7 @@ Ecco alcuni esempi.
 ## <a name="allow-users-to-schedule-live-events"></a>Consentire agli utenti di pianificare eventi live 
 
 > [!NOTE]
-> Questi esempi sono relativi a eventi prodotti in Teams. Per gli eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire altre operazioni. Per altre informazioni, vedere Consentire agli utenti di pianificare eventi prodotti [con un'app o un dispositivo esterno.](set-up-for-teams-live-events.md#enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device)
+> Questi esempi sono relativi a eventi prodotti in Teams. Per gli eventi prodotti con un'app o un dispositivo esterno, è necessario eseguire altri passaggi. Per altre informazioni, vedere Consentire agli utenti di pianificare eventi prodotti [con un'app o un dispositivo esterno.](set-up-for-teams-live-events.md#enable-users-to-schedule-events-that-were-produced-with-an-external-app-or-device)
 
 **Consentire a un utente di pianificare eventi live**
 
@@ -58,7 +58,7 @@ Grant-CsTeamsMeetingBroadcastPolicy -Identity {user} -PolicyName $null -Verbose
 ### <a name="user-scenarios"></a>Scenari utente
 **Si vuole che tutti gli utenti dell'organizzazione siano in grado di pianificare eventi live**
 
-Se agli utenti sono assegnati i criteri globali, eseguire e verificare che *AllowBroadcastScheduling* *sia impostato su *True:*
+Se agli utenti sono assegnati i criteri globali, eseguire e verificare che *AllowBroadcastScheduling* *sia impostato su *True*:
 ```PowerShell
 Get-CsTeamsMeetingBroadcastPolicy -identity Global
 ```

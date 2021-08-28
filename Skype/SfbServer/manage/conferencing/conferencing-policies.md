@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 34ec5e41-6fe6-450b-81b0-0d17b9989839
 description: 'Riepilogo: informazioni su come gestire i criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: e3d1e9c3ef3ef50cadd5f1cce03508896cbb3950a03a889092e9fbf7d2d5b93b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1dd9c13735d08826316c8b9f80c5274759363040
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301402"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606215"
 ---
 # <a name="manage-conferencing-policies-in-skype-for-business-server"></a>Gestire i criteri di conferenza in Skype for Business Server
  
@@ -31,9 +31,9 @@ I criteri di conferenza consentono di definire un'ampia gamma di opzioni di pian
   
 Poiché esiste un criterio globale per impostazione predefinita, non è possibile crearne uno nuovo. Non è possibile inoltre eliminare il criterio globale esistente, ma è possibile modificarlo per personalizzare le impostazioni predefinite.
   
-## <a name="manage-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Gestire i criteri di conferenza tramite il Skype for Business Server Pannello di controllo
+## <a name="manage-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Gestire i criteri di conferenza tramite Skype for Business Server Pannello di controllo
 
-Per gestire i criteri di conferenza tramite Skype for Business Server Pannello di controllo:
+Per gestire i criteri di conferenza tramite Skype for Business Server pannello di controllo:
   
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     

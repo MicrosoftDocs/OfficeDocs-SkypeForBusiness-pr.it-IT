@@ -12,23 +12,23 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sulle chat supervisionate nelle riunioni Microsoft Teams riunioni.
-ms.openlocfilehash: 6962d38eb30a8f94893667d269f35ebe8e251a3df8896d574b2236ca29c91a09
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 439c62b4993b68ba0c17f83857ad74034fdcd0c3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318250"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58629198"
 ---
 # <a name="supervised-chats-in-microsoft-teams"></a>Chat supervisionate in Microsoft Teams
 
-Gli istituti di istruzione offrono uno spazio digitale sicuro e sano per gli studenti. Lo spazio digitale include messaggi di posta elettronica, riunioni e chiamate online e messaggi di Teams. Per evitare comportamenti di messaggistica inappropriati, molte scuole disabilitano la chat privata Teams. Purtroppo, la disabilitazione della chat blocca anche l'opportunità per gli insegnanti di contattare gli studenti privatamente per l'apprendimento personalizzato. Con la chat disabilitata, gli studenti non possono contattare gli insegnanti quando preferiscono non pubblicare i messaggi nei team di classe.
+Gli istituti di istruzione offrono uno spazio digitale sicuro e sano per gli studenti. Lo spazio digitale include messaggi di posta elettronica, riunioni e chiamate online e messaggistica Teams. Per evitare comportamenti di messaggistica inappropriati, molte scuole disabilitano la chat privata Teams. Purtroppo, la disabilitazione della chat blocca anche l'opportunità per gli insegnanti di contattare gli studenti privatamente per l'apprendimento personalizzato. Con la chat disabilitata, gli studenti non possono contattare gli insegnanti quando preferiscono non pubblicare i messaggi nei team di classe.
 
-La chat supervisionata consente ai docenti designati di avviare chat con gli studenti e impedisce agli studenti di avviare nuove chat a meno che non sia presente un docente appropriato. Quando la supervisione della chat è abilitata, i supervisori non possono uscire dalla chat e gli altri partecipanti non sono autorizzati a rimuoverli, assicurando che le chat che coinvolgono studenti siano correttamente supervisionate.
+La chat supervisionata consente ai docenti designati di avviare chat con gli studenti e impedisce agli studenti di avviare nuove chat, a meno che non sia presente un docente appropriato. Quando la supervisione della chat è abilitata, i supervisori non possono uscire dalla chat e gli altri partecipanti non sono autorizzati a rimuoverli, assicurando che le chat che coinvolgono studenti siano correttamente supervisionate.
 
-Queste limitazioni vengono applicate solo alle nuove chat private create dopo che la chat supervisionata è stata completamente abilitata. Non si applicano a chat private, chat di riunioni o canali esistenti. Per altre informazioni sulle procedure consigliate per la chat delle riunioni, la sicurezza dei canali e la sicurezza degli studenti, vedere Tenere gli studenti al sicuro durante [l'Teams.](https://support.microsoft.com/topic/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8?ui=en-us&rs=en-us&ad=us#ID0EBBAAA=For_educators&ID0EDD=For_educators)
+Queste limitazioni vengono applicate solo alle nuove chat private create dopo che la chat supervisionata è stata completamente abilitata. Non si applicano a chat private, chat di riunioni o canali esistenti. Per altre informazioni sulle procedure consigliate per la chat delle riunioni, la sicurezza dei canali e la sicurezza degli studenti, vedere Tenere gli studenti al sicuro durante [l'Teams](https://support.microsoft.com/topic/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8?ui=en-us&rs=en-us&ad=us#ID0EBBAAA=For_educators&ID0EDD=For_educators).
 
 > [!Note]
 > La chat con supervisione protegge le nuove chat create dopo l'applicazione della funzionalità.  Non protegge le chat esistenti.
@@ -39,7 +39,7 @@ Gli esempi seguenti illustrano quando è necessaria una chat supervisionata.
 
 - Un follow-up 1.1 con un docente quando gli studenti non sono a proprio agio a condividere o porre domande pubblicamente.
 
-- Docenti che raggiungono 1,1 a uno studente su un'attività, l'interazione recente in classe (o la mancanza di) o un altro argomento.
+- Docenti che contattano uno studente 1.1 su un'attività, sulle interazioni recenti in classe (o sulla mancanza) o su un altro argomento.
 
 - Discussioni di gruppo degli studenti monitorate da un docente.
 
@@ -48,7 +48,7 @@ Gli esempi seguenti illustrano quando è necessaria una chat supervisionata.
 ## <a name="enable-supervised-chat"></a>Abilitare la chat con supervisione
 
 > [!Note]
-> Assicurarsi di configurare i ruoli di autorizzazione della chat e i criteri di autorizzazione chat basati sui ruoli prima di abilitare la chat per l'istituto per evitare l'accesso indesiderato degli studenti alle chat senza supervisione.
+> Assicurarsi di configurare i ruoli di autorizzazione chat e i criteri di autorizzazione chat basati sui ruoli prima di abilitare la chat per l'istituto per evitare l'accesso indesiderato degli studenti alle chat senza supervisione.
 
 ### <a name="define-chat-permission-roles-for-each-user-in-your-environment"></a>Definire i ruoli di autorizzazione chat per ogni utente dell'ambiente
 
@@ -60,7 +60,7 @@ Perché la chat supervisionata funzioni come previsto, a ogni utente all'interno
 
 - *Autorizzazioni limitate:* questo ruolo è ideale per gli studenti che devono essere supervisionati. Possono avviare chat solo con utenti con autorizzazioni complete. Possono partecipare a qualsiasi conversazione a cui un utente con autorizzazioni complete lo invita. Nei casi di chat federate, gli utenti con restrizioni possono essere aggiunti alle chat solo da un utente con autorizzazioni complete provenienti dal tenant dell'utente con restrizioni.
 
-Per impostare il ruolo di autorizzazione   chat degli utenti, usare il criterio di ruolo Autorizzazioni chat disponibile nelle opzioni dei criteri di messaggistica nel portale di amministrazione Teams chat. È possibile usare PowerShell per definire i ruoli usando il criterio ChatPermissionRole con i valori Full, Limited o Restricted. Questo criterio si trova in CsTeamsMessagingPolicy.
+Per impostare il ruolo di autorizzazione chat degli utenti, usare il criterio di ruolo Autorizzazioni **chat**  disponibile nelle opzioni dei criteri di messaggistica nel portale di amministrazione Teams chat. È possibile usare PowerShell per definire i ruoli usando il criterio ChatPermissionRole con i valori Full, Limited o Restricted. Questo criterio si trova in CsTeamsMessagingPolicy.
 
 Per altre informazioni sull'impostazione. Teams per i criteri di Teams e i pacchetti di criteri per l'istruzione e Assegnare criteri a set di utenti di grandi dimensioni.
 
@@ -68,7 +68,7 @@ I ruoli non possono essere assegnati ai guest nel tenant. Ai guest viene assegna
 
 ### <a name="allow-supervised-chat"></a>Consenti chat con supervisione
 
-La chat con supervisione è disabilitata per impostazione predefinita per il tenant. Dopo aver impostato i ruoli per le autorizzazioni di chat per gli utenti, è possibile abilitare la chat supervisionata all'interno del tenant selezionando Impostazioni a livello di  organizzazione Teams Impostazioni e impostando il criterio autorizzazioni chat basate sui ruoli su &gt;  *Attivato.*  È anche possibile usare PowerShell per abilitare la chat supervisionata impostando AllowRoleBasedChatPermissions su True. Questo cmdlet si trova in CsTeamsClientConfiguration.
+La chat con supervisione è disabilitata per impostazione predefinita per il tenant. Dopo aver impostato i ruoli delle autorizzazioni di chat per gli utenti,  è possibile abilitare la chat supervisionata all'interno del tenant selezionando Impostazioni a livello di organizzazione Teams Impostazioni e impostando criteri di autorizzazione chat basati sui ruoli su &gt;  *Attivato.*  È anche possibile usare PowerShell per abilitare la chat supervisionata impostando AllowRoleBasedChatPermissions su True. Questo cmdlet si trova in CsTeamsClientConfiguration.
 
 La chat supervisionata deve essere abilitata per tutti gli utenti del tenant e non può essere abilitata solo per una parte degli utenti.
 
@@ -78,7 +78,7 @@ Abilitare la chat per tutti gli utenti usando i criteri chat esistenti disponibi
 
 ## <a name="maintain-supervised-chats"></a>Gestire le chat supervisionate
 
-Dopo aver inizialmente abilitato la chat supervisionata, è necessario eseguire alcune operazioni per assicurarsi che le chat nell'ambiente rimangano supervisionate:
+Dopo aver inizialmente abilitato la chat supervisionata, è necessario eseguire alcune operazioni per assicurarsi che le chat nell'ambiente rimangano sotto controllo:
 
 - Assegnare i ruoli appropriati a tutti i nuovi utenti che aderiscono al tenant. Per impostazione predefinita, agli utenti verrà assegnato un ruolo con restrizioni.
 
@@ -86,4 +86,4 @@ Dopo aver inizialmente abilitato la chat supervisionata, è necessario eseguire 
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Chat supervisionate per i Teams per l'istruzione](https://support.microsoft.com/topic/supervised-chats-in-microsoft-teams-for-education-ad3aaafc-c85a-416f-95f9-d691f419cbb8?storagetype=live)
+[Chat supervisionate per Teams per l'istruzione](https://support.microsoft.com/topic/supervised-chats-in-microsoft-teams-for-education-ad3aaafc-c85a-416f-95f9-d691f419cbb8?storagetype=live)

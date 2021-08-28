@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 438942e2-580a-4b67-9d42-f116111fb26a
 description: 'Riepilogo: informazioni sul Rapporto errori principali in Skype for Business Server.'
-ms.openlocfilehash: 04088bce640ec19675afb1513645639a59ed4351ab581280bbec4904d57f835e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5b932833aa80d11134133b7b3ed13cdfd2a57e29
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317556"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606155"
 ---
 # <a name="top-failures-report-in-skype-for-business-server"></a>Rapporto errori principali in Skype for Business Server
  
@@ -27,7 +27,7 @@ Nel Rapporto errori principali vengono esaminati gli errori rilevati più di fre
   
 - **ID diagnostica**. Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi relativi alle chiamate.
     
-- **Codice di risposta**. I codici di risposta vengono utilizzati nelle sessioni di comunicazione SIP per rispondere alle richieste SIP. Si supponga, ad esempio, che Ken invii la richiesta INVITE a Pilar Ackerman(ovvero, si supponga che Ken Myer chiami Pilar Ackerman). Se Pilar risponde, il suo telefono invierà il codice di risposta 200 (OK), informando il telefono di Ken che Pilar ha risposto. Il Rapporto errori principali include solo i codici di risposta inviati in risposta a un errore di chiamata. Skype for Business Server non tiene traccia di tutti i codici di risposta emessi durante il corso di una chiamata.
+- **Codice di risposta**. I codici di risposta vengono utilizzati nelle sessioni di comunicazione SIP per rispondere alle richieste SIP. Si supponga, ad esempio, che Ken invii la richiesta INVITE a Pilar Ackerman (ovvero, si supponga che Ken Myer chiami Pilar Ackerman). Se Pilar risponde, il suo telefono invierà il codice di risposta 200 (OK), informando il telefono di Ken che Pilar ha risposto. Il Rapporto errori principali include solo i codici di risposta inviati in risposta a un errore di chiamata. Skype for Business Server non tiene traccia di tutti i codici di risposta emessi durante il corso di una chiamata.
     
 Le informazioni vengono registrate nel rapporto non solo per il numero totale di sessioni in cui si è verificato un errore, ma anche per il numero totale di utenti che hanno subito l'errore.
   

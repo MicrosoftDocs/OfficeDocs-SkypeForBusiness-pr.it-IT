@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddEdgeServerNatIpPage2010
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: aacc1166-0f3b-4593-9747-85bb42ee4599
 description: Se l'indirizzo IP pubblico di questo pool di server perimetrali viene convertito con Network Address Translation (NAT), è necessario specificare l'indirizzo IP pubblico da convertire, che deve essere l'indirizzo IP esterno del servizio A/V Edge.
-ms.openlocfilehash: e889242cedbcc9092f196944ec4d824a5bcc80a79f40677c5e5a684c0dab914c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 10fef7be044a0dca70e8692dd0e0000c3c4cc703
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284846"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628748"
 ---
 # <a name="add-edge-server-nat-ip-2010"></a>Aggiungere Edge Server NAT IP 2010
  

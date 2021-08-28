@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 226460ef-766f-4d61-80cb-f332b65a210d
 description: La visualizzazione FocusJoinsAndLeaves contiene informazioni sulle partecipazioni e le uscite per una conferenza. In questa visualizzazione ogni conferenza è rappresentata da un record scritto ogni volta che un utente partecipa o esce da una conferenza. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: 12bfac794378a27c612a5afa06d63c57ba23bbcdce3ea1bd7e928a663d99fd3b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 102e520c9bfdb9988061db64dec621a8683b1b5e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54278364"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628558"
 ---
 # <a name="focusjoinsandleaves-view"></a>Visualizzazione FocusJoinsAndLeaves
  
@@ -26,8 +26,8 @@ La visualizzazione FocusJoinsAndLeaves contiene informazioni sulle partecipazion
   
 |**Colonna**|**Tipo di dati**|**Dettagli**|
 |:-----|:-----|:-----|
-|**SessionIdTime** <br/> |datetime  <br/> |Data e ora dell'istanza di conferenza. Valore utilizzato insieme a SessionIdSeq per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella [Conferenze Skype for Business Server 2015.](conferences.md) <br/> |
-|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare l'istanza di conferenza. Valore utilizzato insieme a SessionIdTime per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella [Conferenze Skype for Business Server 2015.](conferences.md) <br/> |
+|**SessionIdTime** <br/> |datetime  <br/> |Data e ora dell'istanza di conferenza. Valore utilizzato insieme a SessionIdSeq per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015.](conferences.md) <br/> |
+|**SessionIdSeq** <br/> |int  <br/> |Numero ID per identificare l'istanza di conferenza. Valore utilizzato insieme a SessionIdTime per identificare in modo univoco un'istanza di conferenza. Per ulteriori informazioni, vedere la tabella Conferenze [Skype for Business Server 2015.](conferences.md) <br/> |
 |**UserUri** <br/> |nvarchar(450)  <br/> |URI dell'utente le cui informazioni di partecipazione o uscita da una conferenza sono state acquisite.  <br/> |
 |**UserUriType** <br/> |nvarchar(256)  <br/> |Tipo di URI dell'utente le cui informazioni di partecipazione o uscita da una conferenza sono state acquisite. Per ulteriori informazioni, vedere la tabella [UriTypes.](uritypes.md) <br/> |
 |**UserTenant** <br/> |nvarchar(256)  <br/> |Tenant dell'utente le cui informazioni di partecipazione o uscita da una conferenza sono state acquisite. Per ulteriori [informazioni, vedere](tenants.md) la tabella Tenants. <br/> |

@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1eaf8cdf-3dcd-4d6e-ae68-b6f6f9431ad8
-description: 'Riepilogo: informazioni su come utilizzare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.'
-ms.openlocfilehash: 38cc7007476fbdfa6a02cf4d244fa0173e958d6bfe055d042be8ba4cf2d049e4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: informazioni su come usare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.'
+ms.openlocfilehash: d811fb1f331cb680f1c9645dec669bd7c81db192
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317491"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58628618"
 ---
 # <a name="cls-logger-for-skype-for-business-server-2015"></a>CLS Logger per Skype for Business Server 2015
  
@@ -79,7 +79,7 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
   
 > **Cartella file di registro** Cartella in cui salvare i risultati della ricerca nei log. (Obbligatorio)
 > 
-> **Livello di registrazione** Questo determina il livello più basso che verrà visualizzato nei risultati. Ad esempio, se è selezionata l'opzione Avviso, verranno visualizzati solo Avviso, Errore e Errore irreversibile. Il valore predefinito è Debug.
+> **Livello di registrazione** Questo determina il livello più basso che verrà visualizzato nei risultati. Ad esempio, se l'opzione Avviso è selezionata, verranno visualizzati solo Avviso, Errore e Errore irreversibile. Il valore predefinito è Debug.
 > 
 > **Pool** Pool di computer su cui eseguire la ricerca nei log, questi sono i nodi padre della visualizzazione albero. (Obbligatorio)
 > 
@@ -89,21 +89,21 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
 > 
 > **Ora fine** Periodo di tempo in cui CLS interromperà l'esecuzione di query nei log. (Obbligatorio)
 > 
-> **Componenti** Consente di selezionare i componenti da aggiungere alla query. (Facoltativa)
+> **Componenti** Consente di selezionare i componenti da aggiungere alla query. (Facoltativo)
 > 
-> **ID chiamata** ID chiamata di tutte le finestre di dialogo SIP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativa)
+> **ID chiamata** ID chiamata di tutte le finestre di dialogo SIP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativo)
 > 
-> **ID conferenza** ID conferenza di tutte le conferenze in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativa)
+> **ID conferenza** ID conferenza di tutte le conferenze in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativo)
 > 
-> **Indirizzo IP** L'indirizzo IP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativa)
+> **Indirizzo IP** L'indirizzo IP in base a cui filtrare. Si noti che questo campo utilizza la corrispondenza esatta. (Facoltativo)
 > 
-> **ID correlazione** Istruzioni di traccia collegate logicamente tra loro da questo ID. (Facoltativa)
+> **ID correlazione** Istruzioni di traccia collegate logicamente tra loro da questo ID. (Facoltativo)
 > 
-> **Telefono numero** Filtra per numero di telefono. (Facoltativa)
+> **Telefono Number** Filtra per numero di telefono. (Facoltativo)
 > 
-> **URI SIP** Filtra in base all'URI SIP. (Facoltativa)
+> **URI SIP** Filtra in base all'URI SIP. (Facoltativo)
 > 
-> **Contenuto del messaggio SIP contiene** Filtra in base al contenuto del messaggio SIP, in questo campo verrà ricercata sottostringa. (Facoltativa)
+> **Contenuto del messaggio SIP contiene** Filtra in base al contenuto del messaggio SIP, in questo campo verrà ricercata sottostringa. (Facoltativo)
 > 
 > **Match Any** Esegue la ricerca utilizzando un or logico, se selezionato. Il valore predefinito è Corrispondenza esatta di tutti i parametri.
 > 
@@ -116,7 +116,7 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
 1. Nella scheda **Modifica scenari** fare clic sul **pulsante Crea** scenario.
     
     > [!NOTE]
-    > La creazione di un nuovo scenario clona la configurazione dello scenario attualmente selezionato. Se si fa **clic su Impostazioni** prima di creare un nuovo scenario, verrà avviato senza alcun componente e contrassegni selezionati.
+    > La creazione di un nuovo scenario clona la configurazione dello scenario attualmente selezionato. Se si fa **clic su Impostazioni** prima di creare un nuovo scenario, verrà avviato senza componenti e Contrassegni selezionati.
   
 2. Immettere il nome dello scenario che si desidera creare e premere INVIO oppure fare clic sul pulsante OK.
     

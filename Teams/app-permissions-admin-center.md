@@ -9,16 +9,16 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come visualizzare le autorizzazioni richieste dalle app e concedere il consenso dell'amministratore alle app nella pagina Gestisci app dell'Microsoft Teams di amministrazione.
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a5dadf59457813f1bd25b43c13d361ca4302aaa7891003f09dd231aced7441f5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5e4875eca0c7a9848d7676be77e4677de45cf8db
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314162"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58580240"
 ---
 # <a name="view-app-permissions-and-grant-admin-consent-in-the-microsoft-teams-admin-center"></a>Visualizzare le autorizzazioni per le app e concedere il consenso dell'amministratore nell'Microsoft Teams di amministrazione
 
@@ -61,10 +61,10 @@ Dopo aver accettato le autorizzazioni, verrà visualizzato un messaggio **in** A
 
 :::image type="content" source="media/app-perm-admin-center-org-wide-accepted.png" alt-text="Screenshot del messaggio visualizzato quando viene concesso il consenso":::
 
-Se gli utenti dell'organizzazione sono autorizzati a concedere il consenso e se uno o più utenti hanno concesso il consenso a una determinata app, verrà visualizzato anche lo stesso messaggio per insoddirne il consenso e il collegamento Azure Active Directory alla pagina dell'app nel portale di Azure AD.
+Se gli utenti dell'organizzazione sono autorizzati a concedere il consenso e se uno o più utenti hanno concesso il consenso a una determinata app, verrà visualizzato lo stesso messaggio per insoddirne il consenso e il collegamento Azure Active Directory alla pagina dell'app nel portale di Azure AD.
 
 > [!NOTE]
-> Anche se  l'opzione Rivedi autorizzazioni e consenso non è disponibile per gli amministratori del servizio Teams e non può concedere il consenso  dell'amministratore a livello di organizzazione alle app, gli amministratori del servizio Teams possono visualizzare il contenuto nella scheda Autorizzazioni per un'app. Ad esempio, un amministratore del Teams  può fare clic sul collegamento Azure Active Directory per visualizzare i dettagli delle autorizzazioni per le app nel portale di Azure AD. 
+> Anche se  l'opzione Rivedi autorizzazioni e consenso non è disponibile per gli amministratori del servizio Teams e non può concedere il consenso  dell'amministratore a livello di organizzazione alle app, gli amministratori del servizio Teams possono visualizzare il contenuto nella scheda Autorizzazioni per un'app. Ad esempio, un amministratore Teams servizio  può fare clic sul collegamento Azure Active Directory per visualizzare i dettagli delle autorizzazioni per le app nel portale di Azure AD. 
 
 ## <a name="view-resource-specific-consent-permissions-of-an-app"></a>Visualizzare le autorizzazioni di consenso specifiche delle risorse di un'app
 
@@ -91,7 +91,7 @@ Attualmente, la possibilità di rivedere le autorizzazioni e concedere il consen
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire le app nell'interfaccia Microsoft Teams di amministrazione](manage-apps.md)
-- [Autorizzazioni e consenso nell Microsoft Identity Platform endpoint](/azure/active-directory/develop/v2-permissions-and-consent)
+- [Autorizzazioni e consenso nell'endpoint Microsoft Identity Platform utente](/azure/active-directory/develop/v2-permissions-and-consent)
 - [Consenso specifico delle risorse in Teams](resource-specific-consent.md)
 - [Consenso specifico delle risorse (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
-- [Spostamento nel ciclo di Teams dell'app](https://aka.ms/PR132) (sessione Ignite 2020)
+- [Spostamento nel ciclo Teams dell'app](https://aka.ms/PR132) (sessione di Ignite 2020)
