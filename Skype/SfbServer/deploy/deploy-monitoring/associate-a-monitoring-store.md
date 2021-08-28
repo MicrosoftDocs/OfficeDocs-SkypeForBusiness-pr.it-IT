@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d3a20d5e-3f24-4cff-bc9b-4f84fea30e6b
 description: 'Riepilogo: informazioni su come associare pool Front End a un archivio di monitoraggio utilizzato da Skype for Business Server.'
-ms.openlocfilehash: 92713d8b6940011c97507a7138e05e80e1d119b302f9f58843b90bb9861005e9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: cff7c2d7bc85916e7e79f4f78005c81f798bcbf7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307797"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58601891"
 ---
 # <a name="associate-a-monitoring-store-with-a-front-end-pool-in-skype-for-business-server"></a>Associare un archivio di monitoraggio a un pool Front End in Skype for Business Server 
 **Riepilogo:** Informazioni su come associare pool Front End a un archivio di monitoraggio utilizzato da Skype for Business Server.
@@ -42,7 +42,7 @@ In alternativa, è possibile associare un pool Front End esistente a un archivio
     
 6. Nella finestra di dialogo **Modifica proprietà** nella scheda **Generale** selezionare l'opzione **Monitoraggio (registrazione dettagli chiamata e registrazione metrica QoE** e quindi selezionare un database di SQL Server esistente nell'elenco a discesa **Archivio SQL Server monitoraggio**. In alternativa, fare clic su **Nuovo** per associare il pool a un nuovo archivio database. Se si sceglie di utilizzare il nuovo archivio database, nella finestra di dialogo **Definisci nuovo archivio SQL** immettere il nome di dominio completo del computer SQL Server nella casella **FQDN SQL Server**. Se si desidera utilizzare l'istanza di SQL Server predefinita per l'archivio, selezionare **Istanza predefinita**, altrimenti selezionare **Istanza denominata** e immettere il nome dell'istanza nella casella **Istanza denominata**.
     
-    La  finestra di dialogo Modifica proprietà consente inoltre di creare un mirror di SQL per il database di monitoraggio(un mirror SQL consente di mantenere due copie del database di monitoraggio, una archiviata nel computer dell'archivio di monitoraggio e l'altra nel computer mirror di SQL). Per abilitare il mirroring, selezionare T la sua SQL è in relazione **di mirroring** e immettere il numero di porta per il server mirror nella casella Numero porta **mirroring.**
+    La  finestra di dialogo Modifica proprietà consente inoltre di creare un mirror di SQL per il database di monitoraggio(un mirror SQL consente di gestire due copie del database di monitoraggio, una archiviata nel computer dell'archivio di monitoraggio e l'altra nel computer mirror di SQL). Per abilitare il mirroring, selezionare T la sua SQL è in relazione **di mirroring** e immettere il numero di porta per il server mirror nella casella Numero porta **mirroring.**
     
 7. Nella finestra di dialogo **Modifica proprietà** fare clic su **OK**.
     
@@ -78,12 +78,12 @@ In alternativa, è possibile installare il database di monitoraggio eseguendo la
     
 3. Nella pagina **Distribuisci,** in **Passaggio 2:** Installazione o rimozione Skype for Business Server componenti , fare clic su **Esegui di nuovo**.
     
-4. Nella pagina Installazione Skype for Business Server componenti di installazione fare clic su **Avanti** nella pagina Installazione Skype for Business Server **componenti.**
+4. Nella pagina Installazione Skype for Business Server componenti fare clic su Avanti nella pagina Installazione **Skype for Business Server componenti.** 
     
 5. Nella pagina Specificare il percorso degli elementi **MSI digitare** il percorso del file Ocscore.msi (un file incluso nel supporto di installazione Skype for Business Server) e quindi fare clic su **Avanti.**
     
 6. Nella pagina **Esecuzione comandi in corso** fare clic su **Fine**.
     
-Per verificare che tutti i servizi Skype for Business Server necessari siano stati avviati, fare clic su **Esegui** sotto l'intestazione **Passaggio 4: Avviare i** servizi nella **pagina** Distribuisci
+Per verificare che tutti i servizi Skype for Business Server necessari siano stati avviati, fare clic su **Esegui** sotto l'intestazione **Passaggio 4: Avviare** i servizi nella **pagina** Distribuisci
   
 

@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: bjwhalen
 description: L'articolo è per gli amministratori IT e descrive le strategie per implementare l'aggiornamento da Skype for Business a Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3247ff29d99769a94314f2bff42699ba071bdce8976b2332b38232bdd7bfc0b2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6c44d988bdcfbd08f462a99c76b4095bb01ac60c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54292863"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619342"
 ---
 # <a name="upgrade-strategies-for-it-administrators"></a>Strategie di aggiornamento per gli amministratori IT
 
@@ -52,7 +52,7 @@ Per l'opzione di aggiornamento delle funzionalità sovrapposte:
 
 - Considerare questa opzione se è possibile eseguire un aggiornamento rapido per l'intera organizzazione.  Poiché esiste un potenziale rischio di confusione per gli utenti finali che eseguono entrambi i client, è meglio ridurre al minimo il periodo di tempo durante il quale gli utenti devono eseguire entrambi i client. È consigliabile assicurarsi che gli utenti sappiano di eseguire entrambi i client.
 
-- Questa opzione è il modello predefinito e non richiede l'azione dell'amministratore per iniziare a usare Teams se non per assegnare la licenza Microsoft 365 o Office 365 licenza. Se gli utenti hanno già Skype for Business Online, è possibile che si sia già in questo modello.
+- Questa opzione è il modello predefinito e non richiede l'azione dell'amministratore per iniziare a usare Teams se non per assegnare la licenza Microsoft 365 o Office 365. Se gli utenti hanno già Skype for Business Online, è possibile che si sia già in questo modello.
 
 - Può essere difficile uscire dalla modalità di sovrapposizione delle funzionalità e passare a TeamsOnly. Poiché gli utenti aggiornati comunicano solo tramite Teams, qualsiasi altro utente dell'organizzazione che comunica con tale utente deve usare Teams.  Se si hanno utenti che non hanno iniziato a Teams, questi verranno esposti ai messaggi mancanti. Inoltre, non potranno vedere gli utenti di TeamsOnly online in Skype for Business. Alcune organizzazioni scelgono di eseguire un aggiornamento a livello di tenant usando i criteri globali tenant per evitare questo problema, tuttavia ciò richiede una pianificazione iniziale e attende che tutti gli utenti siano pronti per l'aggiornamento.
 
@@ -89,24 +89,24 @@ Note
 - Per impostazione predefinita, Skype for Business le riunioni vengono migrate in Teams durante l'aggiornamento alla modalità TeamsOnly o quando si assegna la modalità SfbWithTeamsCollabAndMeetings.  
 
 > [!NOTE]
-> In preparazione del prossimo ritiro di Skype for Business Online, Microsoft ha semplificato il modo in cui le organizzazioni si spostano Teams. Non è più necessario specificare il passaggio per spostare gli utenti direttamente `-MoveToTeams` dall'ambiente locale direttamente a `Move-CsUser` TeamsOnly. In precedenza, se questo parametro non è stato specificato, gli utenti passavano dall'abitazione Skype for Business Server locale a Skype for Business Online e la loro modalità rimaneva invariata. Ora, quando si sposta un utente dall'ambiente locale al cloud con , agli utenti viene assegnata automaticamente la modalità TeamsOnly e le riunioni da locale vengono convertite automaticamente in riunioni Teams, come se fosse , indipendentemente dal fatto che l'opzione sia `Move-CsUser` effettivamente `-MoveToTeams switch had been specified` specificata. Questo comportamento è disponibile in tutte le versioni di Skype For Business Server e Lync Server 2013 (che non hanno mai avuto il supporto per `-MoveToTeams` ).
+> In preparazione del prossimo ritiro di Skype for Business Online, Microsoft ha semplificato il modo in cui le organizzazioni si spostano in Teams. Non è più necessario specificare il passaggio per spostare gli utenti direttamente `-MoveToTeams` dall'ambiente locale direttamente a `Move-CsUser` TeamsOnly. In precedenza, se questo parametro non è stato specificato, gli utenti passavano dall'abitazione Skype for Business Server locale a Skype for Business Online e la modalità rimaneva invariata. Ora quando si sposta un utente dall'ambiente locale al cloud con , agli utenti viene assegnata automaticamente la modalità TeamsOnly e le riunioni da locale vengono convertite automaticamente in riunioni Teams, come se fosse , indipendentemente dal fatto che l'opzione sia effettivamente `Move-CsUser` `-MoveToTeams switch had been specified` specificata. Questo comportamento è disponibile in tutte le versioni di Skype For Business Server e Lync Server 2013 (che non hanno mai avuto il supporto per `-MoveToTeams` ).
 
-Il diagramma seguente mostra le fasi concettuali dell'aggiornamento delle funzionalità di selezione per un'organizzazione senza l'uso preventivo di Teams. L'altezza delle barre rappresenta il numero di utenti. Durante qualsiasi fase dell'aggiornamento, tutti gli utenti possono comunicare tra loro.  Skype for Business gli utenti comunicano con TeamsSolo gli utenti che usano Interoperabilità e viceversa. Gli utenti in modalità Isole devono essere sicuri di eseguire entrambi i client.
+Il diagramma seguente mostra le fasi concettuali dell'aggiornamento delle funzionalità di selezione per un'organizzazione senza l'uso preventivo di Teams. L'altezza delle barre rappresenta il numero di utenti. Durante qualsiasi fase dell'aggiornamento, tutti gli utenti possono comunicare tra loro.  Skype for Business gli utenti comunicano con TeamsSolo gli utenti che usano l'interoperabilità e viceversa. Gli utenti in modalità Isole devono essere sicuri di eseguire entrambi i client.
 
 ![Diagramma che mostra l'aggiornamento delle funzionalità di selezione senza l'uso preventivo di Teams](media/teams-upgrade-1.png)
 
 
 ## <a name="a-select-capabilities-upgrade-for-an-organization-that-is-already-using-teams-in-islands-mode"></a>Aggiornamento delle funzionalità di selezione per un'organizzazione che usa già Teams in modalità Isole
 
-Se alcuni utenti dell'organizzazione usano attivamente Teams in modalità Isole, è probabile che non si voglia rimuovere funzionalità dagli utenti esistenti. Pertanto, prima di modificare i criteri a livello di tenant è necessario un passaggio aggiuntivo. La soluzione consiste nel "nonno" di questi utenti attivi Teams in modalità Isole, prima di impostare i criteri a livello di tenant su SfbWithTeamsCollab.  Dopo aver eseguito questa operazione, è possibile procedere con la distribuzione come sopra, tuttavia, si avranno due gruppi di utenti che si spostano in TeamsOnly: gli utenti che erano attivi in Teams saranno in modalità Isole e gli utenti rimanenti saranno in modalità SfbWithTeamsCollab. È possibile spostare progressivamente questi utenti in modalità TeamsOnly.
+Se alcuni utenti dell'organizzazione usano attivamente Teams in modalità Isole, è probabile che non si voglia rimuovere la funzionalità dagli utenti esistenti. Pertanto, prima di modificare i criteri a livello di tenant è necessario un passaggio aggiuntivo. La soluzione consiste nel "nonno" di questi utenti attivi Teams in modalità Isole, prima di impostare i criteri a livello di tenant su SfbWithTeamsCollab.  Dopo aver eseguito questa operazione, è possibile procedere con la distribuzione come descritto sopra, tuttavia, si avranno due gruppi di utenti che si spostano in TeamsOnly: gli utenti che erano attivi in Teams saranno in modalità Isole e gli utenti rimanenti saranno in modalità SfbWithTeamsCollab. È possibile spostare progressivamente questi utenti in modalità TeamsOnly.
 
 1. Trovare gli utenti attivi in Teams nel modo seguente:
 
-   1. Dal riquadro interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, passare a Report e quindi a Uso. 
+   1. Nel riquadro interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, passare a Report e quindi a Uso. 
    2. Nell'elenco a discesa "Seleziona un report" scegliere Microsoft Teams e quindi Attività utente. In questo modo verrà mostrata una tabella esportabile degli utenti che sono stati attivi in Teams. 
    3. Fare clic su Esporta, Excel e filtrare per visualizzare solo gli utenti attivi in Teams.
 
-2. Per ogni utente Teams attivo trovato nel passaggio 1, assegnare loro la modalità Isole in una sessione remota di PowerShell. In questo modo è possibile andare al passaggio successivo e assicurarsi di non modificare l'esperienza utente.  
+2. Per ogni utente Teams attivo trovato nel passaggio 1, assegnargli la modalità Isole in una sessione remota di PowerShell. In questo modo è possibile andare al passaggio successivo e assicurarsi di non modificare l'esperienza utente.  
 
    ```PowerShell
    $users=get-content “C:\MyPath\users.txt” 

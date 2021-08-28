@@ -9,7 +9,7 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni sul comportamento delle app Microsoft Teams per gli utenti non standard.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 97431dae774569c60ddc3299ca1dc637a9c571239082dac3a8c9449ff0124e51
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 882fda0be339c8f9869c5b83fbeff3e97d5892ee
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342881"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619402"
 ---
 # <a name="microsoft-teams-apps-behavior-for-non-standard-users"></a>Microsoft Teams delle app per gli utenti non standard
 
@@ -33,7 +33,7 @@ Questo articolo descrive il comportamento delle app in Teams quando gli utenti g
 - Un **utente esterno (federato)** appartiene a un altro dominio e non ha accesso ai team o alle risorse del team dell'organizzazione.
 
   > [!Note]
-  > Per un confronto più dettagliato tra utenti guest e utenti esterni, vedere Comunicare [con utenti di altre organizzazioni.](./communicate-with-users-from-other-organizations.md)
+  > Per un confronto più dettagliato tra utenti guest e utenti esterni, vedere Comunicare con [utenti di altre organizzazioni.](./communicate-with-users-from-other-organizations.md)
 
 - Un **utente anonimo** è un concetto in Teams riunioni in cui l'utente ha partecipato alla riunione tramite un collegamento. L'utente non ha eseguito l'accesso con l'account Microsoft o dell'organizzazione.
 

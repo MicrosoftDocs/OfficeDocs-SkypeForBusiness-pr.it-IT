@@ -14,25 +14,25 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Licensing
 - LIL_Placement
 description: Informazioni sulle licenze dei componenti aggiuntivi, sulle funzionalità e su come acquistare per Microsoft 365 Apps for enterprise o Skype for Business online autonomo Piano 2.
-ms.openlocfilehash: a873a35c9550d218fac56294d7b65006602cc5887b5ebba43535beb6bf2570e6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 09f925201ea2d4d3d0248d57476b3b625349aa7d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316392"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619222"
 ---
 # <a name="microsoft-365-apps-for-enterprise-or-skype-for-business-online-standalone-plan-2"></a>Microsoft 365 Apps for enterprise o Skype for Business online autonomo Piano 2
 
 [!INCLUDE [sfbo-retirement](../../../Hub/includes/sfbo-retirement.md)]
 
-Se è già stato acquistato [Microsoft 365 Apps for enterprise](https://products.office.com/en/business/office-365-proplus-business-software) o [Skype for Business Online Piano autonomo 2,](https://products.office.com/skype-for-business/online)ecco le licenze per i componenti aggiuntivi che è necessario acquistare per ottenere più Skype for Business funzionalità.
+Se è già stato acquistato [Microsoft 365 Apps for enterprise](https://products.office.com/en/business/office-365-proplus-business-software) o [Skype for Business Online Autonomo Piano 2,](https://products.office.com/skype-for-business/online)ecco le licenze per i componenti aggiuntivi che è necessario acquistare per ottenere più Skype for Business funzionalità.
 
 > [!IMPORTANT]
 > Sebbene Audioconferenza, Sistema telefonico e Piani di chiamata possono essere acquistati con Skype per Business Online Plan 2 per abilitare funzionalità di chiamata vocale, è consigliabile valutare un piano aziendale E5 per verificare se è più economico.

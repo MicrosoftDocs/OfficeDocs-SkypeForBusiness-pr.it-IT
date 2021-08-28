@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 2c572dfd-e901-471d-b5a0-18bc8d1d5328
 description: Decisioni necessarie per la pianificazione di una distribuzione di E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 0fb334f612c2e63a7c2e47779ee4f02ee0e543741a460933cb632bdd8e54d279
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f5ca67f86d9e8ee5a3a26dde86ff9cd25a3c94e4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54290064"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635230"
 ---
 # <a name="define-the-scope-of-the-e9-1-1-deployment-in-skype-for-business-server"></a>Definire l'ambito della distribuzione di E9-1-1 in Skype for Business Server
 
@@ -31,7 +31,7 @@ Prima di configurare Skype for Business per E9-1-1, è necessario pianificare la
 
  **Quali sono i criteri e gli obblighi legali dell'organizzazione per quanto riguarda E9-1-1?**
 
- Le disposizioni legali del servizio E9-1-1 per i PBX (denominati sistemi telefonici multilinea, o MLTS, nella terminologia relativa a E9-1-1) variano a seconda delle località. È consigliabile consultare il team legale per comprendere gli obblighi che possono essere applicati alla distribuzione di Skype for Business nelle aree geografiche pertinenti.
+ Le disposizioni legali del servizio E9-1-1 per i PBX (denominati sistemi telefonici multilinea, o MLTS, nella terminologia relativa a E9-1-1) variano a seconda delle località. È consigliabile consultare il team legale per comprendere gli obblighi che possono applicarsi alla distribuzione di Skype for Business nelle aree geografiche pertinenti.
 
  **Aree dell'organizzazione che devono essere abilitate per il servizio E9-1-1**
 
@@ -39,7 +39,7 @@ Prima di configurare Skype for Business per E9-1-1, è necessario pianificare la
 
  **Modalità di distribuzione del servizio E9-1-1 nei siti di succursale**
 
- La resilienza vocale è un concetto importante di cui tenere conto quando si distribuisce il servizio E9-1-1 in un sito di succursale. Se si dispone di trunk SIP E-9-1-1 centralizzati e si verifica un'interruzione della rete WAN, i client che accodati potrebbero non essere in grado di ottenere una posizione dal servizio informazioni sulla posizione o di connettersi al provider di servizi di emergenza. Skype for Business offre diverse strategie per gestire la resilienza vocale nelle succursali, tra cui: avere reti di dati resilienti, distribuire un trunk SIP in ogni succursale o distribuire chiamate di emergenza al gateway locale durante le interruzioni. Per informazioni dettagliate, vedere [Planning for Branch-Site Voice Resiliency](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-branch-site-voice-resiliency).
+ La resilienza vocale è un concetto importante di cui tenere conto quando si distribuisce il servizio E9-1-1 in un sito di succursale. Se si dispone di trunk SIP E-9-1-1 centralizzati e si verifica un'interruzione della rete WAN, i client che effettuano l'accesso potrebbero non essere in grado di ottenere una posizione dal servizio informazioni sulla posizione o di connettersi al provider di servizi di emergenza. Skype for Business offre diverse strategie per gestire la resilienza vocale nelle succursali, tra cui: avere reti di dati resilienti, distribuire un trunk SIP in ogni succursale o distribuire chiamate di emergenza al gateway locale durante le interruzioni. Per informazioni dettagliate, vedere [Planning for Branch-Site Voice Resiliency](/previous-versions/office/lync-server-2013/lync-server-2013-planning-for-branch-site-voice-resiliency).
 
  **Possibilità di abilitare il servizio E9-1-1 per gli utenti che lavorano all'esterno della rete**
 

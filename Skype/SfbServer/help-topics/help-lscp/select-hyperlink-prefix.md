@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.ImpChooseImSchema
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bfa55f83-70b4-4790-9b9f-8d849dd94909
 description: Utilizzare la finestra di dialogo Seleziona prefisso collegamento ipertestuale per selezionare i tipi di collegamenti ipertestuali che si desidera bloccare, inviare un messaggio di avviso o consentire selezionando (per bloccare o inviare un messaggio di avviso) o deselezionando (per consentire) le caselle di controllo per le relative estensioni dalle categorie in Prefissi collegamento ipertestuale. Fare clic sulla freccia per espandere una categoria e visualizzare tutti i prefissi dei collegamenti ipertestuali per tale categoria. Se si desidera selezionare tutti i prefissi dei collegamenti ipertestuali per una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: ba1301bc8c659b4be4a4e8a8a0c2cf8c2c4df2d66aa337dd8853e2d2b7eaf501
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1cdbaad047fbac4f18509ec035bd2ffb2f1d15fd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54330000"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619062"
 ---
 # <a name="select-hyperlink-prefix"></a>Selezionare il prefisso di collegamento ipertestuale
  

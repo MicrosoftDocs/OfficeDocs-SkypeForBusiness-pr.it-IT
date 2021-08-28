@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 459e80bf-5791-49f8-878d-4a5178b3a210
 description: 'Riepilogo: informazioni su come gestire i criteri PIN per le conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: d803e7d21be9743704402e2d9532fcfee413d804296cade2e56cbb875c965361
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 03f18a74045c7ea2af4ec3a80b25e65b3c2c5cb6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54343440"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618842"
 ---
 # <a name="manage-pin-policies-for-dial-in-conferencing-in-skype-for-business-server"></a>Gestire i criteri PIN per le conferenze telefoniche con accesso esterno in Skype for Business Server
  
@@ -59,7 +59,7 @@ Per ulteriori informazioni, inclusa una descrizione completa della sintassi e un
 
 È possibile modificare il criterio PIN globale utilizzando Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
   
-### <a name="modify-the-global-dial-in-conferencing-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare il criterio PIN per le conferenze telefoniche con accesso esterno globale utilizzando il Skype for Business Server Di controllo
+### <a name="modify-the-global-dial-in-conferencing-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare il criterio PIN per le conferenze telefoniche con accesso esterno globale utilizzando il Skype for Business Server di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
@@ -153,9 +153,9 @@ New-CsPinPolicy -Identity "site:Redmond" -MinPasswordLength 7
   
 ## <a name="modify-a-user-or-site-pin-policy"></a>Modificare un criterio PIN utente o sito
 
-È possibile modificare un criterio PIN utente o sito utilizzando Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
+È possibile modificare un criterio PIN utente o sito utilizzando il Skype for Business Server di controllo o Skype for Business Server Management Shell.
   
-### <a name="modify-a-user-or-site-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare un criterio PIN di un utente o di un sito tramite il Skype for Business Server di controllo
+### <a name="modify-a-user-or-site-pin-policy-by-using-skype-for-business-server-control-panel"></a>Modificare i criteri PIN di un utente o di un sito tramite il Skype for Business Server di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     

@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.EdgeSettingsExpander2010
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 74a66817-7092-4b2f-a2af-bc1a2c9e5fed
 description: 'È possibile modificare le impostazioni per il server perimetrale o il pool di server perimetrali configurando le proprietà seguenti:'
-ms.openlocfilehash: 5b4f9e2f6b4c5b74b0c1eadb8d48bc5a4ade0375e48dfdf1ecf399032db5693e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b7784e15d7446a51dfa9aed03dd1154bba157485
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54335176"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635330"
 ---
 # <a name="edit-edge-settings-expander-for-lync-server-2010"></a>Modificare l'espansione delle impostazioni del server perimetrale per Lync Server 2010
  
@@ -33,9 +33,9 @@ ms.locfileid: "54335176"
 - Selezionare Abilita federazione per questo pool di server perimetrali **(porta 5061)** se si desidera abilitare il server perimetrale o il pool di server perimetrali per la federazione con altri partner del protocollo di avvio sessione.
     
     > [!IMPORTANT]
-    > È possibile definire attivamente un solo server perimetrale o un pool di server perimetrali per la federazione. La configurazione mostrata nella schermata associata indica che un altro server perimetrale o un pool di server perimetrali è già configurato per la federazione. Il record DNS SRV esterno per la federazione (_sipfederationtls._tcp. ) punta al server perimetrale o al pool di server perimetrali \<external domain name\> per la federazione. 
+    > È possibile definire attivamente un solo server perimetrale o un pool di server perimetrali per la federazione. La configurazione mostrata nella schermata associata indica che un altro server perimetrale o un pool di server perimetrali è già configurato per la federazione. Il record SRV DNS esterno per la federazione (_sipfederationtls._tcp. ) punta al server perimetrale o al pool di server perimetrali \<external domain name\> per la federazione. 
   
-- La porta di replica della configurazione interna **(HTTPS),** per impostazione predefinita alla porta TCP 4443, è la porta su cui viene replicata la copia locale (ovvero locale dei server perimetrali) dell'archivio di gestione centrale. La copia locale dell'archivio di gestione centrale si trova nel database **RTCLOCAL** nella SQL Server in ogni computer. La replica è unidirezionale, avviata dal server di gestione centrale (o dal Front End Server o dal pool Front End che detiene il ruolo server di gestione centrale) ai server perimetrali ed è una porta di interfaccia interna.
+- La porta di replica della configurazione interna **(HTTPS),** per impostazione predefinita alla porta TCP 4443, è la porta su cui viene replicata la copia locale (ovvero locale dei server perimetrali) dell'archivio di gestione centrale. La copia locale dell'archivio di gestione centrale si trova nel database **RTCLOCAL** nell'SQL Server in ogni computer. La replica è unidirezionale, avviata dal server di gestione centrale (o dal Front End Server o dal pool Front End che detiene il ruolo server di gestione centrale) ai server perimetrali ed è una porta di interfaccia interna.
     
   **Selezione hop successivo**
   
@@ -53,7 +53,7 @@ Questa sezione delle proprietà consente di modificare le proprietà per le impo
     > [!NOTE]
     > Se non si seleziona la casella di controllo, è necessario usare porte distinte per ogni servizio Edge. Ogni servizio Edge condividerà il nome di dominio completo definito per il servizio Access Edge e utilizzerà quindi lo stesso indirizzo IP. Ogni servizio Edge deve essere identificato in modo univoco da un indirizzo IP distinto e dalla stessa porta oppure dallo stesso indirizzo IP e da valori di porta univoci. 
   
-- Selezionare **Il servizio A/V Edge** è abilitato per NAT se si desidera configurare il servizio A/V Edge per l'utilizzo di un indirizzo privato o di un altro indirizzo che verrà nascosto dietro un dispositivo NAT (Network Address Translation).
+- Selezionare **Il servizio A/V Edge** è abilitato per NAT se si desidera configurare il servizio A/V Edge in modo che utilizzi un indirizzo privato o un altro indirizzo che verrà nascosto dietro un dispositivo NAT (Network Address Translation).
     
 - Per modificare il servizio **Access Edge,** è necessario definire l'FQDN del pool per il servizio Access Edge come definito in DNS per host (A e AAAA se viene utilizzato IPv6) e un valore di porta 
     

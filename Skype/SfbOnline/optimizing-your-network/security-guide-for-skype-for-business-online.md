@@ -15,18 +15,18 @@ appliesto:
 - Skype for Business
 - Skype for Business Online
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Security
 description: Guida alla sicurezza per Skype for Business online <add description>
-ms.openlocfilehash: 6dca69d4ced66543845990f88e9c389936281c7a
-ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
+ms.openlocfilehash: 9eeaa4aec19a3113013ca93c76dfc686eb85b270
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58407025"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619292"
 ---
 # <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business Online
 
@@ -60,7 +60,7 @@ SfBO attenua questi attacchi eseguendo la protezione di rete di Azure DDOS e lim
 ### <a name="eavesdropping"></a>Intercettazione
 L'intercettazione può verificarsi quando un utente malintenzionato accede al percorso dei dati in una rete e ha la capacità di monitorare e leggere il traffico. Si chiama anche sniffing o snooping. Se il traffico è in testo normale, l'utente malintenzionato può leggerlo quando accede al percorso. Un esempio è un attacco eseguito controllando un router sul percorso dei dati. 
 
-SfBO usa MTLS (Mutual Tls) per le comunicazioni server all'interno di Microsoft 365 o Office 365 e TLS dai client al servizio, rendendo questo attacco molto difficile da raggiungere entro il periodo di tempo in cui una determinata conversazione potrebbe essere attaccata. TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. Ciò non impedisce l'intercettazione, ma l'utente malintenzionato non può leggere il traffico a meno che la crittografia non sia interrotta.
+SfBO usa MUTUAL TLS (MTLS) per le comunicazioni server all'interno di Microsoft 365 o Office 365 e TLS dai client al servizio, rendendo questo attacco molto difficile da raggiungere entro il periodo di tempo in cui una determinata conversazione potrebbe essere attaccata. TLS autentica tutte le parti ed esegue la crittografia di tutto il traffico. Ciò non impedisce l'intercettazione, ma l'utente malintenzionato non può leggere il traffico a meno che la crittografia non sia interrotta.
 
 Il protocollo TURN viene utilizzato per scopi multimediali in tempo reale. Il protocollo TURN non impone la crittografia del traffico e le informazioni che invia sono protette dall'integrità del messaggio. Sebbene sia aperto alle intercettazioni, le informazioni che invia (cioè gli indirizzi IP e la porta) possono essere estratte direttamente, guardando semplicemente gli indirizzi di origine e destinazione dei pacchetti. Il servizio SfBO garantisce che i dati siano validi controllando l'Integrità del Messaggio tramite la chiave derivata da alcune voci, inclusa una password TURN, che non viene mai inviata in chiaro. SRTP viene utilizzato per il traffico multimediale ed è inoltre crittografato.
 
@@ -244,7 +244,7 @@ L'abilitazione di utenti esterni e utenti interni per lo scambio di file multime
 5. Un utente riceve un messaggio di posta elettronica contenente un invito a partecipare a una riunione SfBO. L'e-mail contiene una chiave di conferenza e un collegamento URL basato su HTTP alla conferenza. Sia la chiave, sia l'URL sono unici per una determinata riunione.
 
 ### <a name="federation-safeguards-for-sfbo"></a>Misure di protezione della federazione per SfBO
-La federazione offre all'organizzazione la capacità di comunicare con altre organizzazioni per condividere messaggi istantanei e presenza. Nella federazione SfBO è attiva per impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllare questa funzionalità tramite il portale Microsoft 365 o Amministrazione di Office 365 tenant. Vedi altro.
+La federazione offre all'organizzazione la capacità di comunicare con altre organizzazioni per condividere messaggi istantanei e presenza. Nella federazione SfBO è attiva per impostazione predefinita. Tuttavia, gli amministratori del tenant hanno la possibilità di controllare questa funzionalità tramite Microsoft 365 o Amministrazione di Office 365 portale. Vedi altro.
 
 ## <a name="addressing-threats-to-sfbo-conferences"></a>Affrontare le minacce alle Conferenze SfBO
 
@@ -281,7 +281,7 @@ Per impostazione predefinita, i partecipanti che si collegano dalla PSTN vanno d
 Gli organizzatori della riunione controllano se i partecipanti possono partecipare a una riunione senza attendere nella lobby. Ogni riunione può essere configurata in modo da consentire l'accesso utilizzando uno dei seguenti metodi:
 - **Solo io, l'organizzatore della riunione**&nbsp;&nbsp; Tutti, tranne l'organizzatore, devono attendere nella lobby fino all'ammissione.
 - **Persone che invito della mia società**&nbsp;&nbsp; Chiunque appartenga alla società può partecipare direttamente alla riunione, anche se non invitato.
-- **Tutti gli utenti dell'organizzazione** &nbsp; &nbsp; Tutti gli utenti SfBO del tenant Microsoft 365 o Office 365 possono partecipare alla riunione senza aspettare nella sala d'attesa, anche se non sono presenti nella lista di distribuzione. Tutti gli altri, inclusi tutti gli utenti esterni e anonimi, devono attendere nella lobby fino all'ammissione.
+- **Tutti gli utenti dell'organizzazione** &nbsp; &nbsp; Tutti gli utenti SfBO nel tenant Microsoft 365 o Office 365 possono partecipare alla riunione senza aspettare nella sala d'attesa, anche se non sono presenti nella lista di distribuzione. Tutti gli altri, inclusi tutti gli utenti esterni e anonimi, devono attendere nella lobby fino all'ammissione.
 -  &nbsp; Chiunque &nbsp; Chiunque (senza restrizioni) che abbia accesso al collegamento alla riunione accede direttamente alla riunione.
 Quando è specificato qualsiasi metodo, tranne Solo l'organizzatore (bloccato), l'organizzatore della riunione può anche specificare che le persone che si collegano per telefono bypassino la lobby. 
 

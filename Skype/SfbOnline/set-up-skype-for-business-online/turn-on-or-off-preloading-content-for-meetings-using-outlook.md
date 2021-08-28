@@ -13,24 +13,24 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
 description: 'See how to turn preloaded content on or off for Skype for Business meetings using files or attachments on an Outlook meeting invitation. '
-ms.openlocfilehash: 212491b6a21cb2586237bc3ba8d5bf48382e23d888af044f40908b73ff0fbc9c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 456b6a0a94aa2daf3a61b7ade00dcafdbcf3d371
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304618"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619242"
 ---
 # <a name="turn-on-or-off-allowing-content-to-be-preloaded-for-meetings-using-outlook"></a>Attivare o disattivare il precaricamento dei contenuti delle riunioni tramite Outlook
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Gli utenti possono precaricare contenuto, file o allegati Outlook una convocazione di riunione a una riunione di Skype for Business Online, ma è possibile attivarla o disattivarla. È attivata per impostazione predefinita per tutte le organizzazioni che usano Skype for Business Online. Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).
+Gli utenti possono precaricare contenuto, file o allegati a una convocazione di riunione di Outlook a una riunione di Skype for Business Online, ma è possibile attivarla o disattivarla. È attivata per impostazione predefinita per tutte le organizzazioni che usano Skype for Business Online. Vedere come [Precaricare gli allegati per una riunione Skype for Business](https://support.office.com/article/fd3d9f9d-b448-4754-b813-02e49393f251).
   
 > [!NOTE]
 > Attualmente non sono disponibili cmdlet in Skype for Business Online per l'impostazione o la visualizzazione dei valori online per _MaxContentStorageMB_ _e MaxUploadFileMB._ Sono disponibili solo per le distribuzioni locali. È importante sapere che il contenuto non verrà caricato in una riunione se il contenuto allegato supera _maxUploadFileSizeMB_ o se viene raggiunto il limite _MaxContentStorageMB._
@@ -41,7 +41,7 @@ Gli utenti possono precaricare contenuto, file o allegati Outlook una convocazio
 
 > [!NOTE]
 > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
-1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
+1. Installare il [Teams di PowerShell.](/microsoftteams/teams-powershell-install)
     
 2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
 
@@ -57,7 +57,7 @@ Per altre informazioni sull'avvio di Windows PowerShell, vedere Connessione a tu
   
 ## <a name="turning-it-on-or-off"></a>Attivazione o disattivazione del precaricamento
 
-La possibilità di precaricare il contenuto allegato Outlook una convocazione riunione Skype for Business riunioni online è attivata per impostazione predefinita, ma potrebbe essere necessario impedire agli utenti dell'organizzazione di precaricare il contenuto nelle riunioni.
+La possibilità di precaricare il contenuto allegato Outlook una convocazione di riunione a riunioni Skype for Business Online è attivata per impostazione predefinita, ma potrebbe essere necessario impedire agli utenti dell'organizzazione di precaricare il contenuto nelle riunioni.
   
 > [!IMPORTANT]
 > Questa impostazione può essere attivata o disattivata solo per l'intera organizzazione. non è possibile attivarla o disattivarla per un singolo utente. 
@@ -74,7 +74,7 @@ Grant-CsGraphPolicy -PolicyName GraphDisabled
 Grant-CsGraphPolicy -PolicyName GraphEnabled 
 ```
 
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     

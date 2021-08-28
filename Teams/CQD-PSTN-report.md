@@ -13,21 +13,21 @@ search.appverid: MET150
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
-description: Usare il report Microsoft Teams Routing diretto PSTN (Call Quality Dashboard) per monitorare e risolvere i problemi relativi alle chiamate PSTN in Microsoft Teams.
-ms.openlocfilehash: 692247e79a951b775bdca0f13811e3480dcb8cfbb0a5e78a8f8f7b4b69f97add
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Usare il report Microsoft Teams Routing diretto PSTN (Call Quality Dashboard)) per monitorare e risolvere i problemi relativi alle chiamate PSTN in Microsoft Teams.
+ms.openlocfilehash: 18e24690fe86bf7efd511bea674c3d3d7eba3e43
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351256"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635060"
 ---
 # <a name="using-the-cqd-pstn-direct-routing-report"></a>Uso del report CQD PSTN Direct Routing
 
-A marzo 2020 è stato aggiunto un report Microsoft Teams Call Quality Dashboard (CQD) PSTN Direct Routing ai modelli di query Power BI scaricabili per [CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) 
+A marzo 2020 è stato aggiunto un report Microsoft Teams Call Quality Dashboard (CQD) PstN Direct Routing ai modelli di query Power BI scaricabili per [CQD.](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/CQD-Power-BI-query-templates.zip?raw=true) 
 
 
-Il report CQD PSTN Direct Routing Report (CQD PSTN Direct Routing Report.pbit) consente di comprendere i modelli di utilizzo e la qualità dei servizi PSTN. Usare questo report per monitorare l'utilizzo del servizio, informazioni sul session border controller (SBC), sul servizio di telefonia, sui parametri di rete e sui dettagli sul rapporto di efficacia della rete. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui le chiamate sono in uscita. Ad esempio, sarà possibile vedere quando il volume scende o quante chiamate vengono interessate e per quale motivo.
+Il report CQD PSTN Direct Routing Report (CQD PSTN Direct Routing Report.pbit) consente di comprendere i modelli di utilizzo e la qualità dei servizi PSTN. Usare questo report per monitorare l'utilizzo del servizio, informazioni sul session border controller (SBC), sul servizio di telefonia, sui parametri di rete e sui dettagli del network effectiveness ratio. Queste informazioni consentono di identificare i problemi, incluso il motivo delle chiamate perse. Ad esempio, potrai vedere quando il volume scende o quante chiamate vengono interessate e per quale motivo.
 
 
 Il report di routing diretto PSTN CQD include quattro sezioni:
@@ -52,7 +52,7 @@ Il report di routing diretto PSTN CQD include quattro sezioni:
     L'analisi delle tendenze è essenziale quando si cerca di comprendere l'utilizzo e l'affidabilità dei servizi. Le tendenze orarie offrono un'analisi ravvicinata delle prestazioni quotidiane, che consente di identificare gli incidenti in tempo reale. Le tendenze quotidiane consentono di vedere l'integrità dei servizi da una prospettiva a lungo termine. È importante poter passare da una modalità all'altra con una granularità dei dati appropriata. Il report CQD PSTN Direct Routing fornisce una panoramica delle tendenze di 6 mesi, tendenze giornaliere di 7 e 30 giorni e tendenze orarie per poter analizzare le prestazioni a ogni livello.
     :::image type="content" source="media/CQD-PSTN-report9.png" alt-text="Screenshot dei grafici delle tendenze nel report CQD PSTN Direct Routing":::
 
-3. Eseguire il drill-through fino a SBC o a livello utente
+3. Drill-through fino a SBC o a livello di utente
 
    Abbiamo creato funzionalità di drill-through su molte categorie di dati in CQD, che consente di comprendere rapidamente l'utilizzo o la distribuzione dell'affidabilità a livello di SBC o utente. Usando il drill-through, è possibile individuare rapidamente i problemi e comprendere l'impatto reale degli utenti. Il report CQD PSTN Direct Routing include funzionalità di drill-through nelle metriche Service Detail e Network Effectiveness Ratio. Fare clic sul punto dati a cui si è interessati per eseguire il drill-through fino ai dettagli ABC o a livello di utente.
    :::image type="content" source="media/CQD-PSTN-report10.png" alt-text="Screenshot che mostra la funzionalità drill-through in un punto dati":::
@@ -63,7 +63,7 @@ Il report di routing diretto PSTN CQD include quattro sezioni:
 Il report di routing diretto PSTN CQD fornisce le informazioni seguenti relative all'integrità generale del servizio per gli ultimi 180 giorni.
 ![Screenshot: report CQD PSTN](media/CQD-PSTN-report1.png)
 
-Ad esempio, se si è interessati all'utilizzo generale e all'integrità di tutte le chiamate in ingresso che attraversano SBC abc.bca.adatum.biz con gli Stati Uniti come paese interno:
+Ad esempio, se si è interessati all'utilizzo generale e all'integrità di tutte le chiamate in ingresso che attraversano SBC abc.bca.adatum.biz gli Stati Uniti come paese interno:
 
 | **Call Out** | **Descrizione**                                                                                                                                                 |
 | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -77,11 +77,11 @@ Ad esempio, se si è interessati all'utilizzo generale e all'integrità di tutte
 
 Questa pagina fornisce le tendenze di utilizzo dei servizi al giorno e la suddivisione del feedback degli utenti in base all'area geografica.
 
-  - **Totale chiamate di tentativo -** Numero totale di chiamate di tentativo nell'intervallo di tempo specificato, incluse sia le chiamate riuscite che quelle non riuscite
+  - **Totale chiamate di tentativo -** Totale chiamate di tentativo in tale intervallo di tempo, incluse sia le chiamate riuscite che quelle non riuscite
 
   - **Totale chiamate connesse -** Totale chiamate connesse in tale intervallo di tempo
 
-  - **Totale minuti :** Utilizzo totale dei minuti in tale intervallo di tempo
+  - **Totale minuti :** Utilizzo totale dei minuti nell'intervallo di tempo
 
   - **Utenti attivi giornalieri (DAU) –** Numero di utenti attivi giornalieri che hanno effettuato almeno una chiamata connessa in quel giorno
 
@@ -121,7 +121,7 @@ Se NER giornaliero ha un tuffo il 05/02/2020, è possibile fare clic sulla data 
 
 ![Screenshot: report CQD PSTN](media/CQD-PSTN-report5.png)
 
-Dalla tendenza oraria NER Good Percentage, è possibile trovare che il tuffo si verifica intorno alle 21:00. Quindi fare di nuovo clic per fare zoom sull'ora 21 e selezionare Dettagli chiamata effettive per vedere quante chiamate non sono riuscite in quell'ora e quali sono i motivi di fine chiamata. È possibile iniziare con la risoluzione dei problemi relativi a SBC o segnalare a Service Desk se il problema non è correlato a SBC.
+Dalla tendenza oraria NER Good Percentage, è possibile trovare che il tuffo si verifica intorno alle 21:00. Quindi fare di nuovo clic per fare zoom sull'ora 21 e selezionare Dettagli chiamata effettive per vedere quante chiamate non sono riuscite in quell'ora e quali sono i motivi di fine della chiamata. È possibile iniziare con la risoluzione dei problemi relativi a SBC o segnalare a Service Desk se il problema non è correlato a SBC.
 
 ## <a name="network-parameters"></a>Parametri di rete
 

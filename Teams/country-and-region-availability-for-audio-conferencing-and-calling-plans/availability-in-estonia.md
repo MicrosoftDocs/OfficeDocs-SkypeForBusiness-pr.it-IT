@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,19 +24,19 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Estonia.
-ms.openlocfilehash: ac26a6bf9d9fa20f7e2fe2b81a7bea3164e67688bbb9a74a0e666a55be1506b6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams per l'Estonia.
+ms.openlocfilehash: d1e6b2caa54b2782e30b7e2d845469ce8eb0eb62
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284456"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635000"
 ---
 # <a name="availability-in-estonia"></a>Disponibilità in Estonia
 
 [Trova un altro paese o area geografica](country-and-region-availability-for-audio-conferencing-and-calling-plans.md) o scopri la disponibilità di Audioconferenza e Piani di chiamata per paese e aree geografica.
 
-Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per l'Estonia.
+Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams per l'Estonia.
   
 ## <a name="audio-conferencing"></a>Audioconferenza
 

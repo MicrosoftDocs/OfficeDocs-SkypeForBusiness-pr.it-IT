@@ -10,7 +10,7 @@ ms.reviewer: landerl
 description: Come eseguire una scoperta ambientale dettagliata durante la pianificazione del viaggio da Skype for Business a Microsoft Teams.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - Teams_ITAdmin_JourneyFromSfB
@@ -18,24 +18,24 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: d0c5339fd2782ffaa268705aee161256c9aa04e4
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: fdaafeb9042f8b76b40c797109740af5c93ef077
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234311"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635050"
 ---
-# <a name="environmental-discovery-for-a-microsoft-teams-rollout"></a>Individuazione dell'ambiente per un'implementazione Microsoft Teams ambiente
+# <a name="environmental-discovery-for-a-microsoft-teams-rollout"></a>Individuazione dell'ambiente per un'Microsoft Teams di lavoro
 
 L'individuazione è uno dei primi passaggi chiave da eseguire durante la pianificazione del viaggio verso Microsoft Teams.
 
-È possibile eseguire un'individuazione dettagliata dell'ambiente per comprenderne meglio lo stato corrente e per rivelare eventuali difficoltà o, ancora più ancora, possibili blocchi all'esecuzione dell'Teams aziendale.
+È possibile eseguire un'individuazione dettagliata dell'ambiente per comprenderne meglio lo stato corrente e per rivelare eventuali difficoltà o, ancora di più, possibili blocchi all'esecuzione dell'Teams aziendale.
 
 ## <a name="discovery-questionnaire"></a>Questionario di individuazione
 
 Il questionario di esempio seguente illustra una serie di domande per confermare che l'organizzazione è pronta per l'implementazione di audioconferenza e Sistema telefonico con funzionalità Piani per chiamate in Teams.
 
-Tutte le questioni relative all'infrastruttura di collaborazione esistente e all'organizzazione di Microsoft 365 o Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla preparazione sono incluse nel questionario sulla scoperta dell'ambiente.
+Tutte le questioni relative all'infrastruttura di collaborazione esistente e all'organizzazione di Microsoft 365 o Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla preparazione sono incluse nel questionario sull'individuazione dell'ambiente.
 
 Il questionario è suddiviso in più sezioni per confermare la conformità dell'organizzazione per la distribuzione Teams in diverse aree principali. Collaborare con il team di progetto per fornire le informazioni richieste con il maggior numero di dettagli possibile per facilitare le attività di pianificazione.
 
@@ -67,13 +67,13 @@ Acquisire informazioni dettagliate sui principali stakeholder del Teams di imple
 
 ## <a name="microsoft-365-or-office-365-organization-details"></a>Microsoft 365 o Office 365'organizzazione
 
-È consigliabile avere un'organizzazione Microsoft 365 o Office 365 mentre si lavora a questo questionario. Se non è ancora stata attivata o configurata una Microsoft 365 o Office 365, vedere Pianificare la configurazione di [Microsoft 365 per le aziende.](https://support.office.com/article/plan-your-setup-of-office-365-for-business-eb926624-018b-4486-bf11-5fba6ee4d645)
+È consigliabile avere un'organizzazione Microsoft 365 o Office 365 mentre si lavora a questo questionario. Se non è ancora stata attivata o configurata un'organizzazione Microsoft 365 o Office 365, vedere Pianificare la configurazione di [Microsoft 365 per le aziende.](https://support.office.com/article/plan-your-setup-of-office-365-for-business-eb926624-018b-4486-bf11-5fba6ee4d645)
 
 Usare la tabella seguente per acquisire informazioni sulla Microsoft 365 o Office 365 organizzazione.
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
-> | Annotare le informazioni di Microsoft 365<br/>o Office 365 e ID dell'organizzazione<br/>nella colonna Risposta. Se hai più<br/>più di un tenant associato a<br/>annotare tutti gli ID dell'organizzazione. | Nome tenant: <br/>ID tenant:| |
+> | Annotare i dati di Microsoft 365<br/>o Office 365 e ID dell'organizzazione<br/>nella colonna Risposta. Se hai più<br/>più di un tenant associato a<br/>annotare tutti gli ID dell'organizzazione. | Nome tenant: <br/>ID tenant:| |
 > | In quali aree sono distribuiti i tenant?| | |
 > | Prendere nota del tipo di Microsoft 365 o <br/>Office 365 tenant. Sono multitenant <br/>o Dedicato? | <input type="checkbox"> Multitenant<br/> <input type="checkbox"> Dedicato | |
 > | Quali prodotti Microsoft Online sono attualmente in uso? <br/>Annotare il numero di utenti abilitati per ogni <br/>nella colonna Commenti. | <input type="checkbox">Microsoft Teams <br/> <input type="checkbox">Skype for Business <br/>&nbsp; &nbsp; &nbsp;Online <br/> <input type="checkbox">Exchange Online <br/> <input type="checkbox">SharePoint Online <br/> <input type="checkbox">OneDrive for Business <br/> <input type="checkbox">Yammer <br/> <input type="checkbox"> Altro| |
@@ -91,7 +91,7 @@ Usare la tabella seguente per acquisire informazioni sulla distribuzione della p
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
-> | Le Microsoft Teams distribuite? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
+> | È Microsoft Teams distribuito? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | È Skype for Business distribuito? <br/>Per le distribuzioni locali e ibride, verificare che <br/>annotare la versione e l'aggiornamento cumulativo (CU) <br/>dettagli nella colonna Commenti. | <input type="checkbox">Sì, Microsoft 365 o <br/>&nbsp;&nbsp; &nbsp; Office 365 <br/> <input type="checkbox"> Sì, ibrido (con <br/>&nbsp;&nbsp; &nbsp; Microsoft 365 o <br/>&nbsp;&nbsp; &nbsp; Office 365) <br/> <input type="checkbox"> Sì, locale <br/> <input type="checkbox"> Sì, online, dedicato <br/>&nbsp;&nbsp; &nbsp; (Microsoft) <br/> <input type="checkbox"> Sì, ospitata, dedicata <br/>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> Sì, ospitato, condiviso <br/>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> No, altro | |
 > | È Exchange distribuito? <br/>Per le distribuzioni locali e ibride, verificare che <br/>annotare la versione e i dettagli dell'cu nei commenti <br/>colonna. | <input type="checkbox">Sì, Microsoft 365 <br/> <input type="checkbox"> Sì, ibrido (con <br/>&nbsp;&nbsp; &nbsp; Microsoft 365 o <br/>&nbsp;&nbsp; &nbsp; Office 365) <br/> <input type="checkbox"> Sì, locale <br/> <input type="checkbox"> Sì, online, dedicato <br/>&nbsp;&nbsp; &nbsp; (Microsoft) <br/> <input type="checkbox"> Sì, ospitata, dedicata <br/>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> Sì, ospitato, condiviso <br/>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> No, altro | |
 > | È SharePoint distribuito? <br/>Per le distribuzioni locali e ibride, verificare che <br/>annotare la versione e i dettagli dell'cu nei commenti <br/>colonna. | <input type="checkbox">Sì, Microsoft 365 <br/> <input type="checkbox"> Sì, ibrido (con <br/>&nbsp;&nbsp; &nbsp; Microsoft 365 o <br/>&nbsp;&nbsp; &nbsp; Office 365) <br/> <input type="checkbox"> Sì, locale <br/> <input type="checkbox"> Sì, online, dedicato <br/>&nbsp;&nbsp; &nbsp; (Microsoft) <br/> <input type="checkbox"> Sì, ospitata, dedicata <br/>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> Sì, ospitato, condiviso <br/>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> No, altro | |
@@ -105,7 +105,7 @@ Usare la tabella seguente per acquisire informazioni sulla distribuzione della p
 
 ### <a name="microsoft-teams-if-applicable"></a>Microsoft Teams (se applicabile)
 
-Se applicabile, acquisire i dettagli della distribuzione Teams usando la tabella di esempio seguente. Se non è stata ancora distribuita Teams, ignorare questa sezione.
+Se applicabile, acquisire i dettagli della distribuzione Teams usando la tabella di esempio seguente. Se non è stata ancora distribuita una Teams, ignorare questa sezione.
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
@@ -131,12 +131,12 @@ Se applicabile, acquisire i dettagli della distribuzione Skype for Business Onli
 
 ### <a name="skype-for-business-on-premises-if-applicable"></a>Skype for Business locale (se applicabile)
 
-Se applicabile, acquisire i dettagli della distribuzione Skype for Business usando la tabella di esempio seguente. Se non è stata distribuita Skype for Business locale, ignorare questa sezione.
+Se applicabile, acquisire i dettagli della distribuzione Skype for Business usando la tabella di esempio seguente. Se non è stato distribuito Skype for Business locale, ignorare questa sezione.
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
 > | Quali versioni di Lync o Skype for Business <br/> attualmente sono distribuite in locale? | <input type="checkbox"> Lync Server 2010 <br/> <input type="checkbox"> Lync Server 2013 <br/> <input type="checkbox">Skype for Business Server 2015 <br/> <input type="checkbox">Skype for Business Server 2019 <br/><input type="checkbox">Skype for Business Cloud Connector <br/>&nbsp;&nbsp; &nbsp; Edizione | |
-> | L'ambiente ibrido con Skype for Business Online è configurato? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
+> | La configurazione ibrida Skype for Business online? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | Questo ambiente è ospitato e gestito da un terzo <br/>festa? In caso affermativa, prendere nota dei dettagli nella casella <br/>Colonna Commenti. | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | Modalità e caratteristiche attualmente in uso <br/>oggi? | <input type="checkbox"> Messaggistica istantanea e presenza (IM/P) <br/> <input type="checkbox"> Servizi di conferenza <br/> <input type="checkbox"> Federazione <br/> <input type="checkbox"> Registrazione riunione <br/> <input type="checkbox"> Chat persistente /Chat di gruppo <br/> <input type="checkbox"> Audioconferenza Microsoft <br/>&nbsp;&nbsp; &nbsp; (in precedenza Conferenza telefonica con accesso esterno) sul tuo <br/>&nbsp;lync server locale &nbsp; &nbsp; o <br/>&nbsp;&nbsp; &nbsp; Skype for Business distribuzione <br/> <input type="checkbox"> Audioconferenze di terze parti <br/>&nbsp;&nbsp; &nbsp; Si notino i dettagli nella sezione Commenti <br/>&nbsp;&nbsp; &nbsp; colonna.) <br/> <input type="checkbox">VoIP aziendale l'uso locale <br/>&nbsp; &nbsp; &nbsp;Connettività PSTN <br/> <input type="checkbox"> Piani per chiamate (in precedenza chiamate PSTN) tramite <br/>&nbsp;&nbsp; &nbsp; Ibrido con Skype for Business Online | |
 > | Quali versioni del server perimetrale sono state distribuite? | <input type="checkbox">Office Communications Server 2007 "R1" <br/> <input type="checkbox">Office Communications Server 2007 R2 <br/> <input type="checkbox"> Lync Server 2010 <br/> <input type="checkbox"> Lync Server 2013 <br/> <input type="checkbox">Skype for Business Server 2015 <br/> <input type="checkbox">Skype for Business Server 2019| |
@@ -150,7 +150,7 @@ Usare la tabella seguente per acquisire i dettagli di rete dell'organizzazione e
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
-> | Come (o come) gli utenti nell'ambito della migrazione <br/>accedere Teams quando sono in ufficio? <br/>Selezionare tutte le opzioni applicabili. | <input type="checkbox"> Connessione NAT instradata <br/> <input type="checkbox"> Server proxy <br/> <input type="checkbox"> Informazioni Wi-Fi <br/> <input type="checkbox"> Servizi gestiti (non pubblici) Wi-Fi <br/> <input type="checkbox"> ExpressRoute <br/>&nbsp;&nbsp; &nbsp; (peering Microsoft) ||
+> | Come (o come) gli utenti nell'ambito della migrazione <br/>accedere Teams quando sono in ufficio? <br/>Selezionare tutte le opzioni applicabili. | <input type="checkbox"> Connessione NAT instradata <br/> <input type="checkbox"> Server proxy <br/> <input type="checkbox"> Informazioni Wi-Fi <br/> <input type="checkbox"> Dati gestiti (non pubblici) Wi-Fi <br/> <input type="checkbox"> ExpressRoute <br/>&nbsp;&nbsp; &nbsp; (peering Microsoft) ||
 > | Se l'accesso Microsoft 365 o Office 365 tramite un<br/>server proxy, esiste un modo per ignorare il proxy? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | ExpressRoute viene usato oggi? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No <br/> <input type="checkbox"> No, ma è in fase di pianificazione | |
 > | È stata eseguita una valutazione della conformità alla rete? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |

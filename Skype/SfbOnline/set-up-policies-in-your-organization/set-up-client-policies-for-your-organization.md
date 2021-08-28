@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
 description: '[] I criteri client aiutano a determinare le funzioni di Skype for Business online messe a disposizione degli utenti; per esempio, si potrebbe dare ad alcuni utenti il diritto di trasferire i file negando lo stesso diritto ad altri utenti.'
-ms.openlocfilehash: 5f5d0d0cb6f404c7c1bb26f763ba15a402db966fd07c4471d0d7ce115cfbf791
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e5fe976e3adb566c469d2c58a5d2b6a976776ac3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282379"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619252"
 ---
 # <a name="set-up-client-policies-for-your-organization"></a>Impostazione dei criteri client per la propria organizzazione
 
@@ -43,7 +43,7 @@ Le impostazioni dei criteri client possono essere configurate al momento della c
 
 > [!NOTE]
 > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
-1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
+1. Installare il [Teams di PowerShell.](/microsoftteams/teams-powershell-install)
     
 2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
 
@@ -120,7 +120,7 @@ Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsClientP
     
   Se è già stato creato un criterio, è possibile usare il cmdlet [Set-CsClientPolicy](/powershell/module/skype/Set-CsClientPolicy) per apportare modifiche ai criteri esistenti e quindi usare il cmdlet [Grant-CsClientPolicy](/powershell/module/skype/Grant-CsClientPolicy) per applicare le impostazioni agli utenti.
   
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     

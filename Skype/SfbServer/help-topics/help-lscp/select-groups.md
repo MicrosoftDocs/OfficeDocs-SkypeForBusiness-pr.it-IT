@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.RgsSelGroup
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d780f676-c2c5-4f57-90dd-df5fcd204d76
 description: Le code di Response Group contengono le chiamate ai Response Group fino a quando un agente non risponde alla chiamata. Alle code sono assegnati gruppi di agenti. Quando si crea o si modifica una coda, si utilizza la finestra di dialogo Seleziona gruppi per selezionare uno o più gruppi di agenti da assegnare alla coda.
-ms.openlocfilehash: e9cc1f96e15449c444115ec098d3f292ee7bd6ec008f6f1955776f5c04014bc7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5f1c0da28929f4bf5f99f78c2a9bfbe35a351c88
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54330010"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619082"
 ---
 # <a name="select-groups"></a>Selezionare gruppi
 

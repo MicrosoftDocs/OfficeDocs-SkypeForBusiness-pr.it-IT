@@ -9,31 +9,31 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: fd8d5867-0ac9-47f8-94f0-1c3ee5e25575
 description: VoIP aziendale di base sulla pianificazione Skype for Business Server, inclusi siti, aree geografiche, collegamenti di rete tra siti e stima del traffico di utilizzo vocale.
-ms.openlocfilehash: 0989fb3fad94a7bb376ee009d4a387b5148965f644c793f65eeb511260c9d620
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bfd7d4b1491b83c6ad3ab65836777e805689c21f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320019"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618812"
 ---
 # <a name="plan-for-enterprise-voice-in-skype-for-business-server"></a>Pianificare la VoIP aziendale in Skype for Business Server
  
 VoIP aziendale di base sulla pianificazione Skype for Business Server, inclusi siti, aree geografiche, collegamenti di rete tra siti e stima del traffico di utilizzo vocale.
   
-Il processo di distribuzione VoIP aziendale dipende dalla topologia, dall'infrastruttura e dalla VoIP aziendale esistente che si desidera supportare. Le procedure necessarie dipenderanno dalle funzionalità scelte, ma è necessario tenere conto di altre considerazioni sulla pianificazione a livello superiore.
+Il processo di distribuzione VoIP aziendale dipende dalla topologia, dall'infrastruttura e dalla VoIP aziendale che si desidera supportare. Le procedure necessarie dipenderanno dalle funzionalità scelte, ma è necessario tenere conto di altre considerazioni sulla pianificazione a livello superiore.
   
 In generale, considerare il tipo e il numero di siti che si desidera distribuire e le relative posizioni geografiche, il volume delle chiamate in ogni sito, i tipi di collegamenti di rete che connettono i siti, se si desidera fornire ridondanza e failover per le funzionalità vocali per ogni sito e se si desidera utilizzare apparecchiature PBX esistenti. Esistono alcune considerazioni, ad esempio la disponibilità elevata, da prendere in considerazione quando si pianifica l'Skype for Business Server nel suo complesso. Queste considerazioni sono descritte negli argomenti di questa sezione, in base alle esigenze.
   
 ## <a name="sites-and-regions"></a>Siti e aree geografiche
 
-Identificare innanzitutto i siti della topologia in cui verranno distribuiti VoIP aziendale e le aree di rete a cui appartengono tali siti. Valutare in particolare il modo in cui verrà fornita la connettività PSTN (Public Switched Telephone Network) a ogni sito. Per motivi logistici e di gestione, le aree a cui appartengono questi siti possono rappresentare un fattore decisivo. Decidere dove verranno distribuiti i gateway in locale, dove verranno distribuiti i Survivable Branch Appliance (SBA) e dove è possibile configurare i trunk SIP (in locale o nel sito centrale) in un provider di servizi di telefonia Internet (ITSP).
+Identificare innanzitutto i siti della topologia in cui verranno distribuiti VoIP aziendale e le aree di rete a cui appartengono tali siti. Valutare in particolare il modo in cui verrà fornita la connettività PSTN (Public Switched Telephone Network) a ogni sito. Per motivi logistici e di gestione, le aree a cui appartengono questi siti possono rappresentare un fattore decisivo. Decidere dove verranno distribuiti i gateway in locale, dove verranno distribuiti i Survivable Branch Appliance (SBA) e dove configurare i trunk SIP (in locale o nel sito centrale) in un provider di servizi di telefonia Internet (ITSP).
   
 ## <a name="network-links-between-sites"></a>Collegamenti di rete tra siti
 
@@ -55,7 +55,7 @@ Un'organizzazione con 10.000 utenti e traffico medio, ad esempio, necessiterebbe
   
 ## <a name="components-features-and-options-of-enterprise-voice"></a>Componenti, funzionalità e opzioni di VoIP aziendale
 
-Vedere le sezioni seguenti per ulteriori informazioni sulla pianificazione della distribuzione VoIP aziendale distribuzione.
+Vedere le sezioni seguenti per ulteriori informazioni sulla pianificazione della VoIP aziendale distribuzione.
   
 - [Componenti necessari per VoIP aziendale in Skype for Business Server](components-required-for-enterprise-voice.md)
     

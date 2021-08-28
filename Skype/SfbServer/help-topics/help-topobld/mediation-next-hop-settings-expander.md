@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.MediationNextHopSettingsExpander
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 814f5b06-3e5a-4a39-804d-7f7d3fbee54d
 description: È possibile specificare l'hop successivo del pool Mediation Server o del Mediation Server selezionando nell'elenco a discesa il pool Enterprise Edition Front End o il server Standard Edition Front End Server definito. Un server Director o un pool di server Director non è una selezione valida per l'hop successivo di un pool Mediation Server o di un Mediation Server e non verrà visualizzato nell'elenco. Fare clic su OK per accettare e salvare le modifiche. Fare clic su Annulla per rimuovere le modifiche e uscire dalla pagina delle proprietà.
-ms.openlocfilehash: d431e4bf10b0b8d797143357172c93998c8ff1f22a6b615fc2ed906eb2670c7d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 421786a2f5852eb7002cbc1cf2cc8581eb84e5d0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302550"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635290"
 ---
 # <a name="mediation-next-hop-settings-expander"></a>Espansione delle impostazioni per l'hop successivo di Mediation
  

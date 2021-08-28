@@ -10,25 +10,25 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 451c41a1-b8c5-4dc3-9e48-0da9ed5381a1
-description: "Riepilogo: informazioni su come creare, pubblicare e verificare una nuova topologia prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: cc5647211732189ba172d75a64e12d93e988c4063827f132b476e8ca96ee2808
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: informazioni su come creare, pubblicare e verificare una nuova topologia prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: 21c37ee17d6a7fbb1db4cce9716fa84f338e4062
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331878"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619162"
 ---
 # <a name="create-and-publish-new-topology-in-skype-for-business-server"></a>Creare e pubblicare una nuova topologia in Skype for Business Server
  
-**Riepilogo:** Informazioni su come creare, pubblicare e verificare una nuova topologia prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
+**Riepilogo:** Informazioni su come creare, pubblicare e verificare una nuova topologia prima di installare Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
   
-Prima di installare il Skype for Business Server in ognuno dei server della topologia, è necessario creare una topologia e pubblicarla. Quando si pubblica una topologia, le informazioni sulla topologia vengono caricate nel database dell'archivio di gestione centrale. Se si tratta di un pool edizione Enterprise, si sta creando il database dell'archivio di gestione centrale la prima volta che si pubblica una nuova topologia. Se si tratta edizione Standard, sarà necessario eseguire il processo Prepare First edizione Standard Server dalla Distribuzione guidata prima di pubblicare una topologia. In questo modo si prepara edizione Standard'installazione di un'istanza di SQL Server Express Edition e creando l'archivio di gestione centrale. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. Come creare e pubblicare una nuova topologia, vedere il passaggio 6 di 8.
+Prima di installare il Skype for Business Server in ognuno dei server della topologia, è necessario creare una topologia e pubblicarla. Quando si pubblica una topologia, le informazioni sulla topologia vengono caricate nel database dell'archivio di gestione centrale. Se si tratta di un pool edizione Enterprise, si sta creando il database dell'archivio di gestione centrale la prima volta che si pubblica una nuova topologia. Se si tratta edizione Standard, sarà necessario eseguire il processo Prepare First edizione Standard Server dalla Distribuzione guidata prima di pubblicare una topologia. In questo modo si prepara edizione Standard'installazione di un'istanza SQL Server Express Edition e la creazione dell'archivio di gestione centrale. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. Come creare e pubblicare una nuova topologia, vedere il passaggio 6 di 8.
   
 ![Diagramma di panoramica](../../media/c5c09ba2-c98b-4194-9857-7c3087c5560e.png)
   
@@ -70,7 +70,7 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
 
 1. Esaminare i prerequisiti della procedura guidata e quindi fare clic su **Avanti.**
     
-2. Immettere il nome di dominio completo (FQDN) del pool e selezionare **edizione Enterprise Pool Front End** o edizione Standard **Server** e quindi fare clic su Avanti **,** come illustrato nella figura.
+2. Immettere il nome di dominio completo (FQDN) del pool e selezionare **edizione Enterprise Pool Front End** o edizione Standard **Server** e quindi fare clic su **Avanti**, come illustrato nella figura.
     
     > [!TIP]
     > Skype for Business Server edizione Enterprise possono includere più server che collaborano per fornire il ruolo Front End. Quando vengono utilizzati più server per svolgere il ruolo, viene chiamato pool. Di conseguenza, più server che collaborano per fornire il ruolo Front End vengono definiti anche pool Front End. Skype for Business Server edizione Standard può includere un solo server per fornire il ruolo Front End. È comune fare riferimento al pool Front End anche se solo un singolo server fornisce il ruolo. 
@@ -118,7 +118,7 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
     
    - Per utilizzare l'istanza predefinita, fare clic su **Istanza predefinita**.
     
-   - Per usare SQL mirroring, selezionare Abilita **SQL mirroring** e selezionare un'istanza esistente oppure creare una nuova istanza.
+   - Per usare SQL mirroring, selezionare **Abilita SQL mirroring** e selezionare un'istanza esistente oppure creare una nuova istanza.
 
      > [!NOTE]
      > SQL Il mirroring è disponibile Skype for Business Server 2015, ma non è più supportato in Skype for Business Server 2019. I gruppi di disponibilità AlwaysOn, le istanze del cluster di failover AlwaysOn e i metodi di clustering di failover SQL sono preferiti con Skype for Business Server 2019.
@@ -127,7 +127,7 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
     
      ![Creare un SQL Server store.](../../media/12822cf9-8608-43c0-94ce-2ca8b3a0ffd5.png)
   
-8. Decidere se si desidera abilitare il mirroring SQL Server o SQL Server mirroring e quindi fare clic su **Avanti.**
+8. Decidere se si desidera abilitare SQL Server di archiviazione o SQL Server mirroring e quindi fare clic su **Avanti.**
     
 9. Definire la condivisione file che si desidera utilizzare.
     
@@ -140,7 +140,7 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
      > [!NOTE]
      > La condivisione file per Skype for Business Server può essere collocata, ma non è consigliabile per motivi di prestazioni. Si noti che in questo esempio la condivisione file si trova in un singolo server dedicato che fungerà da condivisione file. Tuttavia, sono consigliati altri sistemi di condivisione file più affidabili, ad esempio DFS Windows Server 2012 R2. Per informazioni dettagliate sui sistemi di condivisione file supportati, vedere [Requirements for your Skype for Business environment](../../plan-your-deployment/requirements-for-your-environment/requirements-for-your-environment.md). Per ulteriori informazioni sulla creazione della condivisione file, vedere [Create a file share in Skype for Business Server](create-a-file-share.md). È possibile definire la condivisione file senza che questa sia stata creata. Sarà necessario creare la condivisione file nella posizione definita prima di pubblicare la topologia. 
   
-10. Nella pagina Specificare l'URL dei servizi Web è necessario decidere se è necessario sostituire l'URL di base del pool di servizi Web interno. Il motivo di questa sostituzione ha a che fare con il bilanciamento del carico. Il traffico SIP di base può essere bilanciato tramite il bilanciamento del carico DNS semplice. Tuttavia, il traffico di rete dei servizi Web HTTP/S deve utilizzare una soluzione di bilanciamento del carico hardware o software supportata. Per i servizi di bilanciamento del carico supportati, [vedere Infrastructure for Skype for Business](../../../SfbPartnerCertification/certification/infra-gateways.md). In questo esempio è stato utilizzato il bilanciamento del carico DNS per il traffico SIP e una soluzione di bilanciamento del carico software supportata. Poiché il traffico viene diviso in questo modo, è necessario sostituire l'FQDN del pool di servizi Web interno. In alternativa, se si disponesse di un servizio di bilanciamento del carico della linea superiore e si invii tutto il traffico attraverso di esso invece di usare il bilanciamento del carico DNS per il traffico SIP, non sarebbe necessario sostituire l'URL dei servizi Web. 
+10. Nella pagina Specificare l'URL dei servizi Web è necessario decidere se è necessario sostituire l'URL di base del pool di servizi Web interno. Il motivo di questa sostituzione ha a che fare con il bilanciamento del carico. Il traffico SIP di base può essere bilanciato tramite il bilanciamento del carico DNS semplice. Tuttavia, il traffico di rete dei servizi Web HTTP/S deve utilizzare una soluzione di bilanciamento del carico hardware o software supportata. Per i servizi di bilanciamento del carico supportati, vedere [Infrastructure for Skype for Business](../../../SfbPartnerCertification/certification/infra-gateways.md). In questo esempio è stato utilizzato il bilanciamento del carico DNS per il traffico SIP e una soluzione di bilanciamento del carico software supportata. Poiché il traffico viene diviso in questo modo, è necessario sostituire l'FQDN del pool di servizi Web interno. In alternativa, se si disponesse di un servizio di bilanciamento del carico della linea superiore e si invii tutto il traffico attraverso di esso invece di usare il bilanciamento del carico DNS per il traffico SIP, non sarebbe necessario sostituire l'URL dei servizi Web. 
     
     Nella sezione DNS di questo argomento è stato creato un record A per webint.contoso.local. Questo è l'URL utilizzato per il traffico HTTP/S dei servizi Web e deve passare attraverso il servizio di bilanciamento del carico software supportato configurato. Pertanto, in questo esempio viene eseguito l'override dell'URL per far sapere Skype for Business Server che tutto il traffico HTTP/S deve passare a webint.contoso.local anziché a pool.contoso.local, come illustrato nella figura. Per ulteriori informazioni sul bilanciamento del carico, vedere [Load balancing requirements for Skype for Business](../../plan-your-deployment/network-requirements/load-balancing.md).
     
@@ -150,17 +150,17 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
     - Se si sta configurando il bilanciamento del carico DNS, come in questo esempio, selezionare la casella di controllo Ignora **FQDN** pool di servizi Web interni e immettere l'URL di base interno (che deve essere diverso dall'FQDN del pool) in **URL di base interno**. 
     
     > [!CAUTION]
-    > Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director. **Utilizzare solo caratteri standard** (inclusi A-Z, a-z, 0-9 e trattini) quando si definiscono URL o nomi di dominio completi. Non utilizzare caratteri Unicode o di sottolineatura. I caratteri non standard in un URL o fqdn spesso non sono supportati da DNS esterni e autorità di certificazione pubbliche (CA), ovvero quando l'URL o il nome di dominio completo deve essere assegnato al nome soggetto o al nome alternativo del soggetto nel certificato.
+    > Se si decide di sostituire i servizi Web interni con un fqdn autodefinito, ogni FQDN deve essere univoco da qualsiasi altro pool Front End, Director o pool di server Director. **Utilizzare solo caratteri standard** (inclusi A-Z, a-z, 0-9 e trattini) quando si definiscono URL o nomi di dominio completi. Non utilizzare caratteri Unicode o di sottolineatura. I caratteri non standard in un URL o fqdn spesso non sono supportati dal DNS esterno e dalle autorità di certificazione pubbliche (CA), ovvero quando l'URL o il nome di dominio completo deve essere assegnato al nome soggetto o al nome alternativo del soggetto nel certificato.
   
     - Facoltativamente, immettere l'URL di base esterno in **URL di base esterno**. È necessario immettere l'URL di base esterno per differenziarlo dal nome di dominio interno. Ad esempio, il dominio interno è contoso.local, ma il nome di dominio esterno è contoso.com. È necessario definire l'URL contoso.com nome di dominio perché deve essere risolvibile dal DNS pubblico. Questo è un aspetto importante anche nel caso di un proxy inverso. Il nome di dominio dell'URL di base esterno corrisponde al nome di dominio del nome di dominio completo del proxy inverso. L'accesso HTTP al pool Front End è necessario per la messaggistica istantanea e la presenza nei client mobili.
     
       ![Eseguire l'override dei servizi Web.](../../media/8f95313c-2df4-4885-adc5-9fc9ea775406.png)
   
-11. Se nella pagina **Seleziona** **funzionalità** è stata selezionata l'opzione Conferenza, verrà richiesto di selezionare un server Office Web Apps. Fare **clic su** Nuovo per avviare la finestra di dialogo.
+11. Se nella pagina **Selezione** **funzionalità** è stata selezionata l'opzione Conferenza, verrà richiesto di selezionare un server Office Web Apps. Fare **clic su Nuovo** per avviare la finestra di dialogo.
     
-12. Nella finestra **di dialogo Definisci** nuovo server app Web Office digitare il nome di dominio completo del server web apps Office nella casella FQDN server web apps di **Office;** quando si esegue questa operazione, l'URL Office di individuazione del server Web Apps deve essere immesso automaticamente nella casella URL di individuazione Office **server Web Apps.**
+12. Nella finestra **di dialogo Definisci** nuovo server app Web Office digitare il nome di dominio completo del server Office Web Apps nella casella FQDN server Office Web **Apps;** quando si esegue questa operazione, l'URL Office di individuazione del server Web Apps deve essere immesso automaticamente nella casella URL di individuazione Office **server Web** Apps.
     
-    Se il server Office Web Apps è installato in locale e nella stessa area di rete di Skype for Business Server, non selezionare l'opzione Office Web Apps Server viene distribuita in una rete esterna, ovvero **perimetrale/Internet.**
+    Se il server Office Web Apps è installato in locale e nella stessa area di rete di Skype for Business Server, non selezionare l'opzione Office Il server Web Apps è distribuito in una rete esterna, ovvero **perimetrale/Internet.**
     
     Se il server Office Web Apps viene distribuito all'esterno del firewall interno, selezionare l'opzione Office Il server Web Apps è distribuito in una rete **esterna( perimetro/Internet).**
     
@@ -188,7 +188,7 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
     > È consigliabile utilizzare l'URL più semplice possibile per l'accesso amministrativo. L'opzione più semplice è https://admin _\<domain\>_ . L'URL di amministratore può essere un dominio interno o esterno, ad esempio contoso.local o contoso.com, purché uno dei due record sia risolvibile nel DNS interno. 
   
     > [!IMPORTANT]
-    > Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario considerare quali modifiche influiscono sui record DNS (Domain Name System) e sui certificati per gli URL semplici. Se la modifica influisce sulla base di un URL semplice, è necessario modificare anche i record DNS e i certificati. Ad esempio, se si cambia l'URL di base da sfb.contoso.com a meet.contoso.com, è necessario modificare i record DNS e i certificati per fare riferimento a https://sfb.contoso.com/Meet https://meet.contoso.com meet.contoso.com. Se è stato modificato l'URL semplice da a , l'URL di base di sfb.contoso.com rimane lo stesso, quindi non sono necessarie modifiche al DNS o https://sfb.contoso.com/Meet https://sfb.contoso.com/Meetings al certificato. Ogni volta che si modifica un nome di URL semplice, tuttavia, è necessario eseguire il cmdlet **Enable-CsComputer** in ogni Server Director e Front End Server per registrare la modifica.
+    > Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario considerare quali modifiche influiscono sui record DNS (Domain Name System) e sui certificati per gli URL semplici. Se la modifica influisce sulla base di un URL semplice, è necessario modificare anche i record DNS e i certificati. Ad esempio, se si cambia l'URL di base da sfb.contoso.com a meet.contoso.com, è necessario modificare i record DNS e i certificati per fare riferimento a https://sfb.contoso.com/Meet https://meet.contoso.com meet.contoso.com. Se è stato modificato l'URL semplice da a , l'URL di base sfb.contoso.com rimane lo stesso, quindi non sono necessarie modifiche al DNS o https://sfb.contoso.com/Meet https://sfb.contoso.com/Meetings al certificato. Ogni volta che si modifica un nome di URL semplice, tuttavia, è necessario eseguire il cmdlet **Enable-CsComputer** in ogni Server Director e Front End Server per registrare la modifica.
   
 ### <a name="publish-and-verify-the-topology"></a>Pubblicare e verificare la topologia
 
@@ -224,7 +224,7 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
     
     - **Determina automaticamente** il percorso dei file di database- Questa opzione determina le migliori prestazioni operative in base alla configurazione del disco nel server basato su SQL Server distribuendo i file di registro e di dati nel percorso migliore.
     
-    - **Use SQL Server instance defaults** - Questa opzione consente di collocare i file di registro e di dati nel server basato SQL Server-based utilizzando le impostazioni dell'istanza. Non utilizza la funzionalità operativa del server basato su SQL Server di determinazione dei percorsi ottimali per i registri e i dati. L'amministratore di SQL Server in genere sposta i file di registro e di dati nei percorsi appropriati per le procedure di gestione del server basato su SQL Server e dell'organizzazione.
+    - **Use SQL Server instance defaults** - Questa opzione inserisce i file di registro e di dati nel server SQL Server-based utilizzando le impostazioni dell'istanza. Non utilizza la funzionalità operativa del server basato su SQL Server di determinazione dei percorsi ottimali per i registri e i dati. L'amministratore di SQL Server in genere sposta i file di registro e di dati nei percorsi appropriati per le procedure di gestione del server basato su SQL Server e dell'organizzazione.
     
     Fare clic su **OK** e quindi su **Avanti**. 
     
@@ -232,7 +232,7 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
     
     - **Determina automaticamente** il percorso dei file di database- Questa opzione determina le migliori prestazioni operative in base alla configurazione del disco nel server basato su SQL Server distribuendo i file di registro e di dati nel percorso migliore.
     
-    - **Use SQL Server instance defaults** - Questa opzione consente di collocare i file di registro e di dati nel server basato SQL Server-based utilizzando le impostazioni dell'istanza. Non utilizza la funzionalità operativa del server basato su SQL Server di determinazione dei percorsi ottimali per i registri e i dati. L'amministratore di SQL Server in genere sposta i file di registro e di dati nei percorsi appropriati per le procedure di gestione del server basato su SQL Server e dell'organizzazione.
+    - **Use SQL Server instance defaults** - Questa opzione inserisce i file di registro e di dati nel server SQL Server-based utilizzando le impostazioni dell'istanza. Non utilizza la funzionalità operativa del server basato su SQL Server di determinazione dei percorsi ottimali per i registri e i dati. L'amministratore di SQL Server in genere sposta i file di registro e di dati nei percorsi appropriati per le procedure di gestione del server basato su SQL Server e dell'organizzazione.
     
     Fare clic su **OK**.
     
@@ -245,6 +245,6 @@ Prima di installare il Skype for Business Server in ognuno dei server della topo
   
 13. Al termine del processo di pubblicazione, viene visualizzato un collegamento per aprire un elenco dei passaggi successivi. Fare **clic su Fare clic qui per aprire l'elenco** attività per visualizzare i passaggi successivi e quindi fare clic su **Fine.** 
     
-    Il messaggio "Completato con avvisi" per la creazione del database non significa che si sia verificato un errore. Il processo di installazione deve modificare le impostazioni in SQL Server perché Skype for Business Server funzioni correttamente. Quando un'impostazione viene modificata in SQL Server, viene registrata come avviso in modo che gli SQL Server amministratori possano comprendere esattamente cosa è stato completato il processo di installazione. Se viene visualizzato un avviso, è possibile selezionare il record e quindi fare clic su **Visualizza** registri per visualizzare i dettagli dell'avviso.
+    Il messaggio "Completato con avvisi" per la creazione del database non significa che si sia verificato un errore. Il processo di installazione deve modificare le impostazioni in SQL Server perché Skype for Business Server funzioni correttamente. Quando un'impostazione viene modificata in SQL Server, viene registrata come avviso in modo che gli amministratori SQL Server possano comprendere esattamente il processo di installazione completato. Se viene visualizzato un avviso, è possibile selezionare il record e quindi fare clic su **Visualizza** registri per visualizzare i dettagli dell'avviso.
     
     Una volta pubblicata correttamente la topologia, è possibile iniziare a installare una replica locale dell'archivio di gestione centrale in ogni server che esegue Skype for Business Server nella topologia. È consigliabile iniziare con il primo pool Front End. 

@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 176194d7-d184-4e23-94bb-cb62b4db47f5
 description: Lo schema del database è costituito dalle tabelle seguenti.
-ms.openlocfilehash: 02471ddc936c5dc0522e5ea3c9ad3c5f2859c6cd612b2618ace5d1dbe6be1078
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1d6d60d06dcb6cbfdde6a4fdbbd2746d00aa8531
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351286"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58601271"
 ---
 # <a name="list-of-qoe-tables"></a>Elenco di tabelle QoE
  
@@ -26,7 +26,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
   
 **Tabelle di supporto**
 
-|**tavolo**|**Descrizione**|
+|**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |[Tabella AppSharingMetricsThreshold](appsharingmetricsthreshold.md) <br/> |Archivia valori ottimali e accettabili per le metriche di qualità dell'esperienza usate con la condivisione delle applicazioni.  <br/> |
 |[Tabella CodecDescription](codecdescription.md) <br/> |Mappe identificatori codec univoci al codec corrispondente.  <br/> |
@@ -58,13 +58,13 @@ Lo schema del database è costituito dalle tabelle seguenti.
    
 **Tabelle per i dati delle metriche**
 
-|**tavolo**|**Descrizione**|
+|**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |[Tabella AppSharingStream](appsharingstream.md) <br/> |Archivia le metriche di qualità dell'esperienza per i flussi di rete usati per la condivisione delle applicazioni. Metriche di qualità dell'esperienza per i flussi di rete usati per la condivisione delle applicazioni.  <br/> |
 |[Tabella session](session.md) <br/> |Archivia le informazioni generali su una sessione audio o audio/video. Una sessione è definita come una finestra di dialogo SIP audio o video tra due endpoint.  <br/> |
 |[Tabella MediaLine](medialine-0.md) <br/> |Archivia le informazioni su ogni linea multimediale in una sessione. Una linea multimediale è una raccolta di uno o più flussi audio e video. In genere, una singola linea multimediale avrà due flussi, audio o video.  <br/> |
 |[Tabella AudioStream](audiostream.md) <br/> |Archivia le metriche di qualità multimediale audio per ogni flusso audio nella linea multimediale.  <br/> |
-|[Tabella AudioSignal](audiosignal.md) <br/> |Archivia le metriche della qualità multimediale audio nella linea multimediale. Sono incluse le metriche di annullamento dell'eco acustico (AEC) e di controllo automatico del guadagno (AGC).  <br/> |
+|[Tabella AudioSignal](audiosignal.md) <br/> |Archivia le metriche di qualità multimediale audio nella linea multimediale. Sono incluse le metriche di annullamento dell'eco acustico (AEC) e di controllo automatico del guadagno (AGC).  <br/> |
 |[Tabella VideoStream](videostream.md) <br/> |Archivia le metriche di qualità multimediale video per ogni flusso audio nella linea multimediale.  <br/> |
 |[Tabella AudioClientEvent](audioclientevent.md) <br/> |Archivia le metriche di qualità multimediale audio raccolte dall'evento client.  <br/> |
 |[Tabella VideoClientEvent](videoclientevent.md) <br/> |Archivia le metriche di qualità multimediale video raccolte dall'evento client.  <br/> |
@@ -72,7 +72,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
    
 **Tabelle per i dati di riepilogo**
 
-|**tavolo**|**Descrizione**|
+|**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |**Tabella ServerSummary** <br/> |Archivia i dati di riepilogo per i server, questi dati vengono utilizzati solo per la creazione di report QoE( Quality of Experience).  <br/> |
 |**Tabella UserSummary** <br/> |Archivia i dati di riepilogo per gli utenti, questi dati vengono utilizzati solo per i report QoE.  <br/> |
@@ -80,7 +80,7 @@ Lo schema del database è costituito dalle tabelle seguenti.
    
 **Tabelle per l'utilizzo interno da parte di Monitoring Server**
 
-|**tavolo**|**Descrizione**|
+|**Tavolo**|**Descrizione**|
 |:-----|:-----|
 |**DbConfigDateTime** <br/> |Solo per utilizzo interno.  <br/> |
 |**DbConfigInt** <br/> |Solo per utilizzo interno.  <br/> |

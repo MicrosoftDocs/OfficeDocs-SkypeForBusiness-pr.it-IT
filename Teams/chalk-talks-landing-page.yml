@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Microsoft Teams Colloqui con Gessetto
-summary: 'Progettato per professionisti IT e decision maker, Teams Chalk Talks offre un''opportunità unica per imparare le procedure consigliate e le indicazioni pratiche su alcuni degli scenari più popolari e accattivanti in Teams.'
+summary: 'Progettato per professionisti IT e decision maker, Teams Chalk Talks offre un''opportunità unica per imparare le procedure consigliate e le indicazioni pratiche relative ad alcuni degli scenari più popolari e accattivanti in Teams.'
 brand: teams
 metadata:
   title: Microsoft Teams colloqui con gessetti
-  description: 'Progettato per professionisti IT e decision maker, Teams Chalk Talks offre un''opportunità unica per imparare le procedure consigliate e le indicazioni pratiche su alcuni degli scenari più popolari e accattivanti in Teams. Facilitati da esperti in materia, questi workshop interattivi online forniranno informazioni approfondite per migliorare l''implementazione Teams e fornire un valore aggiuntivo per gli utenti finali. Fai clic su qualsiasi titolo del workshop qui sotto per visualizzare le date e gli orari disponibili e iscriviti oggi stesso.'
+  description: 'Progettato per professionisti IT e decision maker, Teams Chalk Talks offre un''opportunità unica per imparare le procedure consigliate e le indicazioni pratiche relative ad alcuni degli scenari più popolari e accattivanti in Teams. Facilitati da esperti in materia, questi laboratori interattivi online forniranno informazioni approfondite per migliorare l''implementazione Teams e fornire un valore aggiuntivo per gli utenti finali. Fai clic su qualsiasi titolo del workshop qui sotto per visualizzare le date e gli orari disponibili e iscriviti oggi stesso.'
   ms.service: msteams
   ms.topic: hub-page
   author: SerdarSoysal
@@ -15,7 +15,7 @@ metadata:
   audience: admin
   f1.keywords:
     - NOCSH
-  localization_priority: Normal
+  ms.localizationpriority: medium
   ROBOTS: 'NOINDEX, NOFOLLOW'
   ms.collection:
     - Teams_ITAdmin_JourneyFromSfB
@@ -34,7 +34,7 @@ productDirectory:
       url: 'https://aka.ms/ChalkTalkAVQuality'
     - title: Allora... vuoi effettuare chiamate con Teams?
       imageSrc: 'https://docs.microsoft.com/office/media/icons/headset-teams.svg'
-      summary: 'Unisciti a noi per un''analisi approfondita dell''aggiunta di funzionalità per le chiamate PSTN alla tua Teams distribuzione. Insieme, verrà illustrata la terminologia delle chiamate, i concetti chiave e le configurazioni.'
+      summary: 'Unisciti a noi per un''analisi approfondita dell''aggiunta di funzionalità di chiamata PSTN alla tua Teams distribuzione. Insieme, verrà illustrata la terminologia delle chiamate, i concetti chiave e le configurazioni.'
       url: 'https://aka.ms/ChalkTalkCalling'
     - title: Energize your Live Events with Microsoft Teams
       imageSrc: 'https://docs.microsoft.com/office/media/icons/presenter-teams.svg'
@@ -46,7 +46,7 @@ productDirectory:
       url: 'https://aka.ms/ChalkTalkApps'
     - title: Sovrapprezzo dei flussi di lavoro chiave con le app in Teams
       imageSrc: 'https://docs.microsoft.com/office/media/icons/bandwidth-efficiency-teams.svg'
-      summary: 'Connessione i sistemi, aumentare l''automazione e offrire esperienze migliorate agli utenti, portando le app su cui l''organizzazione si basa Teams.'
+      summary: 'Connessione i sistemi, aumentare l''automazione e offrire esperienze migliorate per gli utenti, portando le app su cui l''organizzazione si basa Teams.'
       url: 'https://aka.ms/ChalkTalkKeyApps'
     - title: Consenti alla forza lavoro di Frontline di fare di più con Teams
       imageSrc: 'https://docs.microsoft.com/office/media/icons/devices-2-teams.svg'

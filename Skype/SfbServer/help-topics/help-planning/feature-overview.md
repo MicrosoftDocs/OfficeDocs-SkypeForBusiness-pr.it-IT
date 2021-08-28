@@ -13,15 +13,15 @@ ms.custom:
 - ms.lync.plan.FeatureOverview
 - ms.lync.plan.FeatureOverview
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
-description: Informazioni sullo strumento Skype for Business Server panoramica delle funzionalità.
-ms.openlocfilehash: 3729efd7269680ae9186cf498eb7df21fe1abc959344fac2207a6bd5e02e3903
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni sullo strumento di Skype for Business Server panoramica delle funzionalità.
+ms.openlocfilehash: 74436290cfade5993a466b1e444d81a256e5882e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338294"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618872"
 ---
 # <a name="skype-for-business-server-feature-overview-planning-tool"></a>Skype for Business Server Strumento di pianificazione della panoramica delle funzionalità
  
@@ -75,7 +75,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Federazione con versioni precedenti**
     
-- **Federazione con provider di servizi di messaggistica istantanea pubblici** Consente agli utenti dell'organizzazione di stabilire comunicazioni con provider di servizi di messaggistica istantanea pubblici come MSN, Yahoo!e AOL. Per stabilire la federazione con reti di messaggistica istantanea pubbliche, è necessaria una licenza separata.
+- **Federazione con provider di servizi di messaggistica istantanea pubblici** Consente agli utenti dell'organizzazione di stabilire comunicazioni con provider di servizi di messaggistica istantanea pubblici come MSN, Yahoo!e AOL. È necessaria una licenza separata per stabilire la federazione con reti di messaggistica istantanea pubbliche.
     
 - **Federazione con provider di servizi basati su XMPP**
     
@@ -83,7 +83,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Mobilità**
     
-    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare i dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
+    Quando distribuisci il servizio per dispositivi mobili di Skype for Business Server 2015, gli utenti possono usare dispositivi mobili Apple iOS, Android, Windows Phone o Nokia supportati per eseguire attività quali l'invio e la ricezione di messaggi istantanei, la visualizzazione dei contatti e la visualizzazione della presenza.
     
 - **Cassetta postale Exchange W15**
     
@@ -99,7 +99,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Messaggistica unificata di Exchange**
     
-    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
+    Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange messaggistica unificata per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -123,7 +123,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Exchange Integrazione dell'archiviazione**
     
-    Se si dispone di utenti ospitati in Exchange 2013 e le relative cassette postali sono state messe In-Place conservazione, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server 2015 con Exchange archiviazione.
+    Se si dispone di utenti ospitati in Exchange 2013 e le relative cassette postali sono state messe In-Place blocco, è possibile selezionare l'opzione per integrare l'archiviazione di Skype for Business Server 2015 con Exchange archiviazione.
     
 - **IPv4**
     
@@ -139,7 +139,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 ### <a name="server-applications"></a>Applicazioni server
 
- **Le applicazioni server** contengono le opzioni seguenti:
+ **Le applicazioni** server contengono le opzioni seguenti:
   
 - **Response Group**
     
@@ -159,7 +159,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Annuncio conferenza**
     
-    applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
+    applicazione Annuncio conferenza toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     

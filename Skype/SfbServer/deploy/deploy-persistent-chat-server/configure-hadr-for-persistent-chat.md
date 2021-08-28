@@ -10,15 +10,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5fb5b189-56c1-49cf-92c8-e4fd6e2fdd5c
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: d7f7863a6f1a7ccc6310b8b60f7fc7cc233c29d500d01c06d6143489705306f8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 265065a5b4ff52dc65dccb4b0e045e3d9e21c452
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314902"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58601881"
 ---
 # <a name="configure-high-availability-and-disaster-recovery-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015
  
@@ -30,7 +30,7 @@ Skype for Business Server supporta più modalità di disponibilità elevata per 
 > I gruppi di disponibilità AlwaysOn non sono supportati con i server Chat persistente. 
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
   
 Prima di configurare la distribuzione di Persistent Chat per la disponibilità elevata e il ripristino di emergenza, assicurarsi di avere familiarità con i concetti descritti in [Plan for high availability and disaster recovery for Persistent Chat Server in Skype for Business Server 2015.](../../plan-your-deployment/persistent-chat-server/high-availability-and-disaster-recovery.md) La soluzione di ripristino di emergenza per il server Chat persistente descritta in questi argomenti si basa su un pool di server Chat persistente estesa. Il contenuto della pianificazione descrive i requisiti delle risorse e la topologia di pool estesa che consente la disponibilità elevata e il ripristino di emergenza per il server Chat persistente, incluso l'utilizzo del mirroring SQL Server per la disponibilità elevata e il log shipping di SQL Server per il ripristino di emergenza.
   
@@ -71,7 +71,7 @@ Utilizzando SQL Server Management Studio, connettersi all'istanza del database d
 6. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel server principale, digitare un percorso locale della cartella **(ad esempio: c:\backup).** Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
     
     > [!IMPORTANT]
-    > Se l SQL Server account di servizio del server principale viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
+    > Se l'account del servizio di SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
   
 7. Configurare i **parametri Delete files older than e** Alert if no backup occurs **within** parameters.
     
@@ -81,7 +81,7 @@ Utilizzando SQL Server Management Studio, connettersi all'istanza del database d
     
 10. In **Istanze e database del server secondario** fare clic su **Aggiungi.**
     
-11. Fare **Connessione** e connettersi all'istanza di SQL Server che è stato configurato come server secondario.
+11. Fare **Connessione** e connettersi all'istanza di SQL Server configurata come server secondario.
     
 12. Nella casella **Database secondario** selezionare il database **mgc** dall'elenco.
     
@@ -109,7 +109,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 2. Utilizzando il SQL Server Management Studio, connettersi all'istanza mirror del server Chat persistente principale.
     
-3. Verificare che l'SQL Server agent sia in esecuzione.
+3. Assicurarsi che l'SQL Server agent sia in esecuzione.
     
 4. Fare clic con il pulsante destro del mouse sul database mgc e quindi scegliere **Proprietà**.
     
@@ -121,14 +121,14 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 8. Nella casella **Percorso di rete della cartella di backup** digitare il percorso di rete della condivisione creata per la cartella di backup del log delle transazioni.
     
-9. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel **server principale,** digitare un percorso locale per la cartella. Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
+9. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel **server primario,** digitare un percorso locale per la cartella. Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
     
     > [!IMPORTANT]
-    > Se l SQL Server account di servizio del server principale viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
+    > Se l'account del servizio di SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
   
 10. Configurare i **parametri Delete files older than e** Alert if no backup occurs **within** parameters.
     
-11. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server Agent, in base alle esigenze.
+11. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic su **Pianificazione** e modificare la pianificazione SQL Server Agent, in base alle esigenze.
     
     > [!IMPORTANT]
     > Utilizzare le stesse impostazioni utilizzate per il database primario. 
@@ -143,7 +143,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 16. Nella scheda **Inizializza database secondario** selezionare l'opzione **No, il database secondario viene inizializzato.**
     
-17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui devono essere copiati i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
+17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui copiare i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
     
 18. Aprire **l'elenco a** discesa Configurazione script e selezionare **Configurazione script in Nuova finestra query.**
     
@@ -154,7 +154,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     > [!IMPORTANT]
     > L'esecuzione manuale di questo script è necessaria perché SQL Server Management Studio non supporta più database primari in una SQL Server log shipping. 
   
-21. Selezionare **Annulla** per chiudere il pannello di configurazione Log File shipping e stabilire un'installazione funzionante che implementi correttamente il file shipping di log sia per il database primario che per il database con mirroring (in caso di failover).
+21. Selezionare **Annulla** per chiudere il pannello di configurazione Log File shipping e stabilire un'installazione funzionante che implementi correttamente il log file shipping sia per il database primario che per il database con mirroring (in caso di failover).
     
 22. Eseguire manualmente il fail back del database di Persistent Chat primario nel database primario. Questa operazione viene eseguita utilizzando Skype for Business Server Management Shell e il cmdlet **Invoke-CsDatabaseFailover.**
     

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f384d19b-0950-4ec6-9d93-2c5958b83e71
 description: 'Riepilogo: informazioni su come assegnare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: aae4f76f333adef8e54eaa6627157d7424e11ee01c0b62ff9dc1eb24634fc604
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3ae21518cf53aad48d4fc9b6963d0e5402007db9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54329580"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635280"
 ---
 # <a name="assign-conferencing-policies-in-skype-for-business-server"></a>Assegnare criteri di conferenza in Skype for Business Server
  
@@ -27,7 +27,7 @@ ms.locfileid: "54329580"
   
 ## <a name="assign-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Assegnare criteri di conferenza tramite Skype for Business Server Management Shell
 
-Nell'esempio seguente il criterio SalesConferencingPolicy viene assegnato all'utente con identità "Ken Myer":
+Nell'esempio seguente, il criterio SalesConferencingPolicy viene assegnato all'utente con identità "Ken Myer":
   
 ```PowerShell
 Grant-CsConferencingPolicy -identity "Ken Myer" -PolicyName SalesConferencingPolicy
