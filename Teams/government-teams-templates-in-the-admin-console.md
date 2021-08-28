@@ -1,5 +1,5 @@
 ---
-title: Usare i modelli di team governativi nell'interfaccia di amministrazione
+title: Usare modelli di team governativi nell'interfaccia di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: phecda louie
 ms.collection:
 - M365-collaboration
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare i modelli di team per creare strutture del team progettate per le esigenze del governo, fornendo impostazioni predefinite, canali e app preinstallato tramite l'interfaccia di amministrazione.
 f1.keywords:
@@ -19,18 +19,18 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b915daab744bd764a9ac9e1d0be000357a051a2719e9e544bfff8b5a5c26e5a6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f373e2e949d4fe461ef06657e0791f4ff59f4b61
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315252"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603405"
 ---
-# <a name="use-government-team-templates-in-the-admin-center"></a>Usare i modelli di team governativi nell'interfaccia di amministrazione
+# <a name="use-government-team-templates-in-the-admin-center"></a>Usare modelli di team governativi nell'interfaccia di amministrazione
 
 I modelli di team consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallato.
 
-I modelli di team hanno definizioni predefinite delle strutture del team progettate in base alle esigenze governative. È anche possibile estendere i modelli di team per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
+I modelli di team hanno definizioni predefinite di strutture del team progettate in base alle esigenze governative. È anche possibile estendere i modelli di team per creare team personalizzati in base alle specifiche esigenze dell'organizzazione.
 
 In questo articolo vengono presentati tutti i modelli di team e viene consigliato come usarli.
 

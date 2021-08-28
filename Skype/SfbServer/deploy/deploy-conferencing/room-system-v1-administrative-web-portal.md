@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 81822efa-2100-4017-a470-8a5b98c49522
 ms.collection: M365-voice
 description: Il portale Web amministrativo Skype for Business Server Skype Room Systems v1 (SRS v1, in precedenza noto come Lync Room System) è un portale Web che le organizzazioni possono utilizzare per gestire le proprie sale riunioni Skype Room Systems. Gli amministratori possono utilizzare il portale Web di amministrazione di SRS v1 per monitorare l'integrità dei dispositivi, ad esempio monitorando i dispositivi audio/video. Con questo portale, gli amministratori possono raccogliere in remoto informazioni di diagnostica per monitorare l'integrità delle sale riunioni.
-ms.openlocfilehash: c2b576eb79f91c72fdd3f19cad1265c79fd559abf52a97d80ea34a2688263c6e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2451d9892bc15b1b1f189a764823c2f9beb019ac
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54313734"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618132"
 ---
 # <a name="deploy-srs-v1-administrative-web-portal-in-skype-for-business-server"></a>Distribuire il portale Web amministrativo di SRS v1 in Skype for Business Server
 
@@ -47,7 +47,7 @@ Per utilizzare il portale Web amministrativo di SRS v1, è necessario installare
 > [!IMPORTANT]
 > Se il server è configurato con l'autenticazione Kerberos e NTLM e SRS è in esecuzione in un computer che non fa parte del dominio, l'autenticazione Kerberos avrà esito negativo e l'utente non sarà in grado di visualizzare lo stato di SRS nel portale di amministrazione. Per risolvere questo problema, configurare il server con l'autenticazione NTLM o l'autenticazione NTLM e TLS-DSK (senza Kerberos) oppure aggiungere il computer SRS al dominio.
 
-1. Installare Skype for Business Server aggiornamenti cumulativi nella Skype for Business Server di distribuzione.
+1. Installare Skype for Business Server aggiornamenti cumulativi nella Skype for Business Server topologia.
 
     Per ottenere l'aggiornamento o vedere cosa include, vedere [Updates for Skype for Business Server 2015](https://support.microsoft.com/help/3061064/updates-for-skype-for-business-server-2015).
 
@@ -67,7 +67,7 @@ Per utilizzare il portale Web amministrativo di SRS v1, è necessario installare
 
 5. Creare un gruppo di sicurezza di Active Directory con nome LRSPowerUserAdminsGroup.
 
-    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Sicurezza. Gli utenti abilitati per SIP che vengono aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione, inclusa la gestione in blocco Skype for Business chat room.
+    Creare il gruppo con Ambito gruppo come Globale e Tipo di gruppo come Sicurezza. Gli utenti abilitati per SIP aggiunti a questo gruppo sono autorizzati a utilizzare tutte le funzionalità del portale di amministrazione, inclusa la gestione in blocco Skype for Business chat room.
 
 6. Aggiungere LRSFullAccessAdminGroup come membro di LRSSupportAdminGroup.
 
@@ -120,7 +120,7 @@ Per installare il portale Web amministrativo di SRS v1, eseguire la procedura se
 
 Per verificare l'installazione del portale Web amministrativo di SRS v1, eseguire le operazioni seguenti:
 
-1. In un front-end server passare all'URL seguente:
+1. In un Front End Server passare all'URL seguente:
 
     https:// \<fe-server\> /lrs
 
@@ -132,14 +132,14 @@ Per verificare l'installazione del portale Web amministrativo di SRS v1, eseguir
 
     https:// \<fe-server\> /lrs
 
-    Per accedere alla pagina, è necessario aggiungere i record DNS come descritto in "[Record DNS necessari per l'accesso](/previous-versions/office/communications-server/bb663700(v=office.12))automatico al client ".
+    Per accedere alla pagina, è necessario aggiungere i record DNS come descritto in "[Record DNS necessari per l'accesso](/previous-versions/office/communications-server/bb663700(v=office.12))automatico del client ".
 
 ## <a name="use-the-srs-administrative-web-portal"></a>Usare il portale Web amministrativo SRS
 <a name="Use_Portal"> </a>
 
 Dopo aver distribuito SRS nel server, è possibile controllare lo stato di tutte le sale SRS accedendo al portale Web amministrativo SRS v1 da un browser.
 
-### <a name="sign-in"></a>Accedere
+### <a name="sign-in"></a>Accesso
 
 1. Passare all'URL seguente:
 
@@ -151,7 +151,7 @@ Dopo aver distribuito SRS nel server, è possibile controllare lo stato di tutte
 
 ### <a name="srs-administrative-web-portal-summary-page"></a>Pagina di riepilogo del portale Web amministrativo SRS
 
-Nella pagina di riepilogo sono disponibili le informazioni seguenti per tutte le sale SRS distribuite nel server:
+La pagina di riepilogo fornisce le informazioni seguenti per tutte le sale SRS distribuite nel server:
 
 - **Tag** Nome personalizzato che l'amministratore assegna alla sala. Il tag può essere impostato nel portale facendo clic sul nome della sala.
 
@@ -211,7 +211,7 @@ Per eseguire un'operazione di gestione in blocco, selezionare le sale che si des
 
 ### <a name="frequently-asked-questions"></a>Domande frequenti
 
-#### <a name="why-cant-i-sign-in-to-the-administrative-web-portal"></a>Perché non è possibile accedere al portale Web amministrativo?
+#### <a name="why-cant-i-sign-in-to-the-administrative-web-portal"></a>Perché non è possibile accedere al portale Web di amministrazione?
 
 Quando si apre , sarà possibile visualizzare la pagina di accesso, ma quando si digitano le credenziali, non è https://localhost/lrs possibile accedere. In questo caso, è necessario aprire https://FQDNofFEserver/SRS per accedere al portale Web amministrativo.
 
@@ -221,7 +221,7 @@ Quando si apre , sarà possibile visualizzare la pagina di accesso, ma quando si
 
 - Se sono stati creati account SRS e non è possibile visualizzare gli account nel portale Web di amministrazione, raccogliere i log del server utilizzando lo strumento di registrazione di Skype for Business Server con il **componente MeetingPortal** selezionato e quindi inviarli al contatto di supporto SRS.
 
-- Se sono stati creati account SRS e non è possibile visualizzare gli account nel portale Web di amministrazione, raccogliere i log client utilizzando Fiddler e copiare il registro della console dagli strumenti di sviluppo del browser e quindi inviarli al contatto di supporto SRS. È inoltre possibile modificare il valore del livello di traccia nel Web.config per ottenere un registro più dettagliato.
+- Se sono stati creati account SRS e non è possibile visualizzare gli account nel portale Web amministrativo, raccogliere i log client utilizzando Fiddler e copiare il registro della console dagli strumenti di sviluppo del browser e quindi inviarli al contatto di supporto SRS. È inoltre possibile modificare il valore del livello di traccia nel Web.config per ottenere un registro più dettagliato.
 
   ```xml
   <system.diagnostics>

@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 456e5a96-d9f6-42a6-862c-a69464391628
 description: 'Riepilogo: informazioni su come definire un gateway PSTN in Generatore di topologie in Skype for Business Server.'
-ms.openlocfilehash: 378c0136b09f4343984302557c7a6292d60e77306355f74f68f695ebc2596f34
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fe570a849a9a63199eddce63280741c39a8a65eb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54283848"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625618"
 ---
 # <a name="define-a-gateway-in-topology-builder-in-skype-for-business-server"></a>Definire un gateway in Generatore di topologie in Skype for Business Server
  
@@ -33,7 +33,7 @@ Seguire questa procedura per utilizzare Generatore di topologie per definire un 
 
 1. Avviare Generatore di topologie: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi Skype for Business Server Generatore di topologie **2015**.
     
-2. In Skype for Business Server nome del sito, Componenti condivisi, fare clic con il pulsante destro del mouse sul nodo **Gateway PSTN** e quindi scegliere **Nuovo gateway PSTN.**
+2. In Skype for Business Server, il nome del sito, Componenti condivisi, fare clic con il pulsante destro del mouse sul nodo **Gateway PSTN** e quindi scegliere **Nuovo gateway PSTN.**
 3. Nella finestra **Definisci nuovo gateway IP/PSTN** digitare il nome di dominio completo (FQDN) o l'indirizzo IP del peer e quindi fare clic su **Avanti**.
     
     > [!NOTE]
@@ -49,19 +49,19 @@ Seguire questa procedura per utilizzare Generatore di topologie per definire un 
     
      - Il trunk radice non può essere rimosso se non si rimuove prima il gateway PSTN associato.
     
-6. In Porta di attesa per gateway **IP/PSTN** digitare la porta di attesa che verrà utilizzata da gateway, PBX o SBC per i messaggi SIP provenienti dal Mediation Server che verranno associati al trunk radice del gateway PSTN. Per impostazione predefinita, vengono utilizzate la porta 5066 per TCP (Transmission Control Protocol) e la porta 5067 per TLS (Transport Layer Security) in un gateway PSTN, un PBX o un sistema SBC. In un Survivable Branch Appliance in un sito di succursale, le porte predefinite sono 5081 per TCP e 5082 per TLS.
+6. In Porta di attesa per gateway **IP/PSTN** digitare la porta di attesa che verrà utilizzata dal gateway, dal PBX o dal servizio SBC per i messaggi SIP provenienti dal Mediation Server che verranno associati al trunk radice del gateway PSTN. Per impostazione predefinita, vengono utilizzate la porta 5066 per TCP (Transmission Control Protocol) e la porta 5067 per TLS (Transport Layer Security) in un gateway PSTN, un PBX o un sistema SBC. In un Survivable Branch Appliance in un sito di succursale, le porte predefinite sono 5081 per TCP e 5082 per TLS.
     
 7. In **Protocollo trasporto SIP** fare clic sul tipo di trasporto utilizzato dal peer e quindi su **OK**.
     
     > [!NOTE]
     > Per motivi di sicurezza, è consigliabile distribuire un peer nel Mediation Server in grado di utilizzare TLS. 
   
-8. In **Mediation Server associato** selezionare il pool Mediation Server da associare al trunk radice di questo gateway PSTN.
+8. In **Mediation Server associato** selezionare il pool Mediation Server da associare al trunk radice del gateway PSTN.
     
 9. In **Porta Mediation Server associata** digitare la porta di attesa che verrà utilizzata dal Mediation Server per i messaggi SIP provenienti dal gateway.
     
     > [!NOTE]
-    > Con il supporto di più trunk in Skype for Business Server, è possibile definire più porte di segnalazione SIP nel Mediation Server per la comunicazione con più gateway PSTN. Quando si definisce un trunk, la porta **Mediation Server** associata deve essere all'interno dell'intervallo delle porte di attesa per il rispettivo protocollo consentito dal Mediation Server. Questo intervallo di porte è definito in pool Skype for Business Server Mediation Server e Mediation Server. Fare clic con il pulsante destro del mouse sul pool Mediation Server di interesse e **scegliere Modifica proprietà**. Specificare l'intervallo di porte nel campo **Porte di attesa**.
+    > Con il supporto di più trunk Skype for Business Server, è possibile definire più porte di segnalazione SIP nel Mediation Server per la comunicazione con più gateway PSTN. Quando si definisce un trunk, la porta **Mediation Server** associata deve essere all'interno dell'intervallo delle porte di attesa per il rispettivo protocollo consentito dal Mediation Server. Questo intervallo di porte è definito in pool Skype for Business Server e Mediation Server. Fare clic con il pulsante destro del mouse sul pool Mediation Server di interesse e **scegliere Modifica proprietà**. Specificare l'intervallo di porte nel campo **Porte di attesa**.
   
 10. Verificare che il peer definito sia in esecuzione e che utilizzi l'FQDN o l'indirizzo IP specificato. Quindi fare clic **su Fine.**
     

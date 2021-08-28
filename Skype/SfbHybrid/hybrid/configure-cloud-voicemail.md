@@ -10,15 +10,15 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 description: Istruzioni per l'implementazione della segreteria telefonica basata su cloud per gli utenti ospitati Skype for Business Server.
-ms.openlocfilehash: 8a0c04d90d77b0843ef8b9097abec91c04ee7bb336bf04e0cbfcc9c7fe5fe38a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4f38c181c84edb695fce54d6da805482563cfe01
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337256"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625748"
 ---
 # <a name="configure-cloud-voicemail-service-for-on-premises-users"></a>Configurare Cloud Voicemail per gli utenti locali
 
@@ -28,16 +28,16 @@ ms.locfileid: "54337256"
 ## <a name="overview"></a>Panoramica 
 In questo articolo viene descritto come configurare Microsoft Cloud Voicemail servizio per gli Skype for Business utenti locali.  
 
-In questo articolo si presuppone che Skype for Business Server sia già stata distribuita in una topologia supportata e che siano stati soddisfatti i prerequisiti per la configurazione della connettività ibrida.
+In questo articolo si presuppone che Skype for Business Server siano già stati distribuiti in una topologia supportata e che siano stati soddisfatti i prerequisiti per la configurazione della connettività ibrida.
 
-Per ulteriori informazioni sui vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione di Cloud Voicemail, vedere [Plan Cloud Voicemail service](plan-cloud-voicemail.md).
+Per ulteriori informazioni sui vantaggi, le considerazioni sulla pianificazione e i requisiti per l'implementazione Cloud Voicemail, vedere [Plan Cloud Voicemail service](plan-cloud-voicemail.md).
 
 
 
 
 La configurazione Cloud Voicemail comporta le attività seguenti:
 
-1.  Verificare di aver soddisfatto i prerequisiti come descritto in [Plan Cloud Voicemail service](plan-cloud-voicemail.md).
+1.  Assicurarsi di aver soddisfatto i prerequisiti come descritto in [Plan Cloud Voicemail service](plan-cloud-voicemail.md).
 
 2.  Assicurarsi di aver configurato la connettività ibrida come descritto in [Plan hybrid connectivity](plan-hybrid-connectivity.md) e Configure hybrid [connectivity](configure-hybrid-connectivity.md). 
 
@@ -52,7 +52,7 @@ La configurazione Cloud Voicemail comporta le attività seguenti:
 
 ## <a name="configure-cloud-voicemail-as-the-hosting-provider"></a>Configurare Cloud Voicemail come provider di hosting 
 
-È possibile configurare Cloud Voicemail come provider di hosting in un Front End Server utilizzando il cmdlet New-CsHostingProvider con i parametri seguenti:
+È possibile Cloud Voicemail come provider di hosting in un Front End Server utilizzando il cmdlet New-CsHostingProvider con i parametri seguenti:
 
 - **Identity** specifica un identificatore di valore stringa univoco per il provider di hosting che si sta creando. ad esempio, Cloud Voicemail. 
 
@@ -62,7 +62,7 @@ La configurazione Cloud Voicemail comporta le attività seguenti:
 
 - **HostsOCSUsers** indica se il provider di hosting viene utilizzato per ospitare Skype for Business Server account. Questo parametro deve essere impostato su False.
 
-- **ProxyFQDN** specifica il nome di dominio completo (FQDN) per il server proxy utilizzato dal provider di hosting. ad esempio, proxyserver.contoso.com. Per avere tali informazioni, rivolgersi al provider di hosting. Questo valore non può essere modificato. Se il provider di hosting modifica il server proxy, sarà necessario eliminare e quindi creare di nuovo la voce per tale provider.
+- **ProxyFQDN specifica** il nome di dominio completo (FQDN) per il server proxy utilizzato dal provider di hosting. ad esempio, proxyserver.contoso.com. Per avere tali informazioni, rivolgersi al provider di hosting. Questo valore non può essere modificato. Se il provider di hosting modifica il server proxy, sarà necessario eliminare e quindi creare di nuovo la voce per tale provider.
 
 - **IsLocal** indica se il server proxy utilizzato dal provider di hosting è contenuto nella topologia Skype for Business Server locale. Questo parametro deve essere impostato su False.
 
@@ -75,7 +75,7 @@ New-CsHostingProvider -Identity "Exchange Online" -Enabled $True -EnabledSharedA
 
 ## <a name="configure-a-hosted-voicemail-policy"></a>Configurare un criterio segreteria telefonica ospitata
 
-Per assicurarsi che la segreteria telefonica dell'organizzazione sia instradata al servizio Cloud Voicemail, è necessario configurare un criterio segreteria telefonica ospitata per l'organizzazione. In molti casi, è necessario un solo criterio di segreteria telefonica ospitata ed è possibile modificare il criterio globale per soddisfare tutte le esigenze. Se l'organizzazione richiede più criteri di segreteria telefonica ospitata, è possibile aggiungere criteri utilizzando il cmdlet new-cshostedvoicemailpolicy.
+Per assicurarsi che la segreteria telefonica dell'organizzazione sia instradata al servizio Cloud Voicemail, è necessario configurare un criterio di segreteria telefonica ospitata per l'organizzazione. In molti casi, è necessario un solo criterio di segreteria telefonica ospitata ed è possibile modificare il criterio globale per soddisfare tutte le esigenze. Se l'organizzazione richiede più criteri di segreteria telefonica ospitata, è possibile aggiungere criteri utilizzando il cmdlet new-cshostedvoicemailpolicy.
 
 Per modificare il criterio globale, eseguire il comando seguente in Skype for Business Server management shell dopo aver aggiornato Organization e TenantID:
 
@@ -124,7 +124,7 @@ Nell'esempio seguente viene disabilitato un account utente per Cloud Voicemail:
 Set-CsUser -Identity "User1" -HostedVoiceMail $False
 ```
 
-Il cmdlet verifica che nessun criterio di segreteria telefonica ospitata, a livello globale, di sito o utente, si applichi a questo utente. Se un criterio è applicabile il cmdlet non riesce.
+Il cmdlet verifica che nessun criterio di segreteria telefonica ospitata, a livello globale, sito o utente, si applichi a questo utente. Se un criterio è applicabile il cmdlet non riesce.
 
 > [!NOTE]
 >  Gli utenti devono essere abilitati per voIP aziendale per utilizzare il servizio Microsoft Cloud Voicemail aziendale.

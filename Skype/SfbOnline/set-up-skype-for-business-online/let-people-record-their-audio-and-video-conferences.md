@@ -13,19 +13,19 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Setup
 - O365P_RecordingDesc
 description: 'Come attivare la registrazione per conferenze audio e video e scoprire cosa è e non è incluso nelle registrazioni. '
-ms.openlocfilehash: c321ac300e9bdf39a727c419e447da88f3cccb5b403b0361361e7e1b59155dab
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8aee8991161364eaab29459ae305e6ba4cf37b50
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316472"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625738"
 ---
 # <a name="let-people-record-their-audio-and-video-conferences"></a>Permettere alle persone di registrare le proprie audio e videoconferenze
 
@@ -35,7 +35,7 @@ ms.locfileid: "54316472"
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Passare all'interfaccia di amministrazione > **Skype for Business** e quindi fare clic su **Utenti.**
+1. Passare all'interfaccia di amministrazione > **Skype for Business** e quindi fare clic su **Utenti**.
     
 2. Nella pagina **Utenti** selezionare l'utente o gli utenti nell'elenco e quindi fare clic su **Modifica.**
     
@@ -47,7 +47,7 @@ Quando la registrazione è attivata, gli organizzatori o i relatori possono regi
 |:-----|:-----|
 |Audio e video HD  <br/> PowerPoint presentazioni con lavagna  <br/> Sessioni di condivisione desktop o programmi  <br/> |Pagine condivise di OneNote  <br/> Annotazioni di PowerPoint  <br/> File condivisi (allegati)  <br/> |
    
-Per informazioni dettagliate, vedere [Salvataggio e pubblicazione delle registrazioni](https://support.office.com/article/83cf1507-0f05-40f5-a520-5a6c133bc33e) di Lync e [Gestione registrazioni di Lync.](https://support.office.com/article/fa915c55-ff55-45c0-b372-1ef5596da10b) 
+Per informazioni dettagliate, vedere [Salvataggio e pubblicazione delle registrazioni di Lync e](https://support.office.com/article/83cf1507-0f05-40f5-a520-5a6c133bc33e) Gestione [registrazioni di Lync.](https://support.office.com/article/fa915c55-ff55-45c0-b372-1ef5596da10b) 
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)

@@ -12,7 +12,7 @@ searchScope:
 - Microsoft Cloud for Healthcare
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Healthcare
@@ -22,12 +22,12 @@ appliesto:
 ms.reviewer: ''
 description: Informazioni su come personalizzare i criteri di messaggistica protetta per Microsoft Teams che possono includere conferme di lettura e notifiche di priorità.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b05a753873901d3faa4ae3446947c0b791b55c0b4531d9d03adf039a421c2f5a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: efad01c1731ba3c7bacbae012c0062350bd92b39
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308755"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595080"
 ---
 # <a name="secure-messaging-for-healthcare-organizations"></a>Messaggistica protetta per le organizzazioni del settore sanitario
 

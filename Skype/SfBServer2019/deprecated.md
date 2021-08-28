@@ -9,15 +9,15 @@ ms.topic: overview
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono state rimosse Skype for Business Server 2019.'
-ms.openlocfilehash: c6ba9d9945ae5dde2a9898fe5adfd44192faceb5
-ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
+ms.openlocfilehash: cdc7b54f815c324707ee657d8365aa842f28293d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372056"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595030"
 ---
 # <a name="whats-deprecated-from-skype-for-business-server-2019"></a>Cosa è deprecato da Skype for Business Server 2019
 
@@ -27,7 +27,7 @@ Alcune funzionalità non evidenziate sono incluse in Skype for Business Server 2
 
 ## <a name="features-deprecated-in-skype-for-business-server-2019"></a>Funzionalità deprecate in Skype for Business Server 2019 
 
-Le funzionalità e le funzionalità seguenti sono state deprecate Skype for Business Server 2019.
+Le funzionalità e le funzionalità seguenti sono state deprecate in Skype for Business Server 2019.
 
 ### <a name="xmpp-gateways-for-skype-for-business-server"></a>Gateway XMPP per Skype for Business Server
 

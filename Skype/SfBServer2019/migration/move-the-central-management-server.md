@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: Dopo la migrazione a Skype for Business Server 2019, è necessario spostare il server di gestione centrale nel front-end server o nel pool di Skype for Business Server 2019 prima di poter rimuovere il server legacy.
-ms.openlocfilehash: 0c5ee756a52d61008498e50df5d3bf64fbe20f8c4ef1ee96e4e7528c2a3bd820
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: Dopo la migrazione a Skype for Business Server 2019, è necessario spostare il server di gestione centrale nel front-end server o nel pool Skype for Business Server 2019 prima di poter rimuovere il server legacy.
+ms.openlocfilehash: 5c3d090f762904aa5f076033a68e46139b1e84e4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300602"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618282"
 ---
 # <a name="move-the-legacy-central-management-server-to-skype-for-business-server-2019"></a>Spostare il server di gestione centrale legacy Skype for Business Server 2019
 
-Dopo la migrazione a Skype for Business Server 2019 e prima di rimuovere il server legacy, è necessario spostare il server di gestione centrale nel front-end server o nel pool Skype for Business Server 2019. 
+Dopo la migrazione Skype for Business Server 2019 e prima di rimuovere il server legacy, è necessario spostare il server di gestione centrale nel front-end server o nel pool Skype for Business Server 2019. 
   
 Il server di gestione centrale è un singolo sistema di replica master/a più repliche, in cui la copia di lettura/scrittura del database viene mantenuta dal Front End Server che contiene il server di gestione centrale. Ogni computer della topologia, incluso il Front End Server contenente il server di gestione centrale, dispone di una copia di sola lettura dei dati dell'archivio di gestione centrale nel database di SQL Server (denominato RTCLOCAL per impostazione predefinita) installato nel computer durante l'installazione e la distribuzione. Il database locale riceve gli aggiornamenti delle repliche tramite l Skype for Business Server Replicator Agent che viene eseguito come servizio in tutti i computer. Il nome del database effettivo nel server di gestione centrale e della replica locale è XDS, costituito da file xds.mdf e xds.ldf. Al percorso del database master fa riferimento un punto di controllo del servizio (SCP) in Servizi di dominio Active Directory. Tutti gli strumenti che utilizzano il server di gestione centrale per gestire e configurare Skype for Business Server utilizzare SCP per individuare l'archivio di gestione centrale.
   
@@ -36,7 +36,7 @@ Utilizzare le procedure descritte in questa sezione per preparare i Front End Se
     
 2. Aprire la Skype for Business Server Management Shell.
     
-3. Per creare il nuovo archivio di gestione centrale nel database Skype for Business Server 2019 SQL Server, in Skype for Business Server Management Shell digitare:
+3. Per creare il nuovo archivio di gestione centrale nel database Skype for Business Server 201 SQL Server 9, in Skype for Business Server Management Shell digitare:
     
    ```PowerShell
    Install-CsDatabase -CentralManagementDatabase -SQLServerFQDN <FQDN of your SQL Server> -SQLInstanceName <name of instance>
@@ -48,7 +48,7 @@ Utilizzare le procedure descritte in questa sezione per preparare i Front End Se
 
 1. Nel Front End Server di Skype for Business Server 2019 edizione Standard in cui si desidera spostare il server di gestione centrale, accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo **RTCUniversalServerAdmins.** 
     
-2. Aprire la Skype for Business Server distribuzione guidata.
+2. Aprire la Skype for Business Server guidata.
     
 3. Nella Distribuzione Skype for Business Server guidata fare clic su **Prepara primo edizione Standard server**.
     
@@ -80,7 +80,7 @@ Utilizzare le procedure descritte in questa sezione per preparare i Front End Se
     > [!CAUTION]
     > In caso contrario, risolvere il problema impedendo il completamento `Enable-CsTopology` del comando prima di continuare. Se **Enable-CsTopology** non riesce, lo spostamento avrà esito negativo e potrebbe lasciare la topologia in uno stato in cui non è presente alcun archivio di gestione centrale. 
   
-4. Nel Skype for Business Server 2019 Front End Server o pool Front End, in Skype for Business Server Management Shell digitare: 
+4. Nel Skype for Business Server Front End Server o nel pool Front End 2019, in Skype for Business Server Management Shell digitare: 
     
    ```PowerShell
    Move-CsManagementServer
@@ -92,11 +92,11 @@ Utilizzare le procedure descritte in questa sezione per preparare i Front End Se
     
 7. Nel server Skype for Business Server 2019 aprire la Skype for Business Server guidata. 
     
-8. In Skype for Business Server Distribuzione guidata fare clic su Installa o aggiorna sistema **Skype for Business Server**, fare clic su Passaggio **2:** Installazione o rimozione componenti di Skype for Business Server , fare clic su **Avanti,** esaminare il riepilogo e quindi fare clic su **Fine**. 
+8. In Skype for Business Server distribuzione guidata fare clic su Installa o aggiorna sistema **Skype for Business Server,** fare clic su Passaggio **2:** Installazione o rimozione componenti di Skype for Business Server, fare clic su **Avanti,** esaminare il riepilogo e quindi fare clic su **Fine.** 
     
 9. Nel server di installazione legacy aprire la Distribuzione guidata. 
     
-10. In Skype for Business Server Distribuzione guidata fare clic su Installa o aggiorna sistema **Skype for Business Server**, fare clic su Passaggio **2:** Installazione o rimozione componenti di Skype for Business Server , fare clic su **Avanti,** esaminare il riepilogo e quindi fare clic su **Fine**. 
+10. In Skype for Business Server distribuzione guidata fare clic su Installa o aggiorna sistema **Skype for Business Server,** fare clic su Passaggio **2:** Installazione o rimozione componenti di Skype for Business Server, fare clic su **Avanti,** esaminare il riepilogo e quindi fare clic su **Fine.** 
     
 11. Riavviare il Skype for Business Server 2019. Questa operazione è necessaria a causa di una modifica dell'appartenenza a un gruppo per accedere al database del server di gestione centrale.
     
@@ -109,7 +109,7 @@ Utilizzare le procedure descritte in questa sezione per preparare i Front End Se
     > [!NOTE]
     > Il processo di replica può richiedere tempo per aggiornare tutte le repliche correnti. 
   
-## <a name="to-remove-legacy-install-central-management-store-files-after-a-move"></a>Per rimuovere i file dell'archivio di gestione centrale dell'installazione legacy dopo uno spostamento
+## <a name="to-remove-legacy-install-central-management-store-files-after-a-move"></a>Per rimuovere i file dell'archivio di gestione centrale di installazione legacy dopo uno spostamento
 
 1. Nel server di installazione legacy accedere al computer in cui è installato Skype for Business Server Management Shell come membro del gruppo **RTCUniversalServerAdmins.** È anche necessario disporre dei diritti e delle autorizzazioni di amministratore del database SQL Server. 
     

@@ -9,7 +9,7 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-voice
@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Istruzioni per la configurazione di Azure AD Connessione in un ambiente ibrido.
-ms.openlocfilehash: e9e043e8cded2e9e55741cd0abe37488c4b621c6fb7cbfc5e9fd1e35917f8b84
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 47c158928a9536b0be40833deaddf3fb9967be73
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54292483"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625788"
 ---
 # <a name="configure-azure-ad-connect-for-teams-and-skype-for-business"></a>Configurare Azure AD Connect per Teams e Skype for Business
 
@@ -39,12 +39,12 @@ Le organizzazioni che hanno Skype for Business Server (o Lync Server) locale e c
 
 Azure Active Directory Connessione active directory locale viene costantemente sincronizzato con Microsoft 365. La directory locale rimane l'origine autorevole di identità e le modifiche dell'ambiente locale vengono sincronizzate in Azure AD. Per ulteriori informazioni, vedere [Azure AD Connessione Sync](/azure/active-directory/hybrid/how-to-connect-sync-whatis).  
 
-Se non si spostano tutti gli utenti dall'ambiente locale al cloud, tutti gli utenti che usano Teams o Skype for Business locale devono essere sincronizzati da locale ad Azure AD per garantire la comunicazione tra utenti locali e online. *Gli utenti dell'organizzazione saranno rappresentati nella directory locale e nella directory online.*
+Se non si spostano tutti gli utenti dall'ambiente locale al cloud, tutti gli utenti che usano Teams o Skype for Business locale devono essere sincronizzati da locale ad Azure AD per garantire la comunicazione tra utenti locali e utenti online. *Gli utenti dell'organizzazione saranno rappresentati nella directory locale e nella directory online.*
 
 
 ## <a name="configuring-azure-ad-when-you-have-skype-for-business-server"></a>Configurazione di Azure AD se si dispone di Skype for Business Server 
 
-Se si dispone di una foresta di Active Directory locale o di più foreste, è possibile usare Azure AD Connessione in un'ampia gamma di topologie supportate, come descritto in Topologie per Azure [AD Connessione](/azure/active-directory/hybrid/plan-connect-topologies). Dal punto di vista della Skype for Business Server, esistono tre varianti: 
+Indipendentemente dal fatto che si abbia una foresta di Active Directory locale o più foreste, è possibile usare Azure AD Connessione in un'ampia gamma di topologie [supportate,](/azure/active-directory/hybrid/plan-connect-topologies)come descritto in Topologie per Azure AD Connessione . Dal punto di vista della Skype for Business Server, esistono tre varianti: 
 
 1. Una foresta singola, che contiene le identità utente autorevoli e ospita Skype for Business Server. 
 
@@ -60,7 +60,7 @@ Se gli account utente e Skype for Business sono ospitati in una foresta singola,
 
 Questo scenario è spesso definito come topologia di foresta di risorse. Le identità autorevoli degli utenti sono ospitate in una o più foreste di account e Skype for Business è distribuito in una foresta di risorse separata (che potrebbe anche ospitare le identità utente autorevoli). In generale, le identità autorevoli degli utenti di Skype for Business possono trovarsi nella stessa foresta di Skype for Business Server e/o in un'altra foresta, purché: 
 
-- Gli utenti con identità autorevoli dalle foreste di account sono rappresentati nella foresta di risorse (in cui viene distribuito Skype for Business Server) come oggetti utente disabilitati. L'attributo msRTCSIP-OriginatorSID nella foresta di risorse deve corrispondere al SID nella foresta di account. Per ulteriori informazioni, vedere [Configure a multi-forest environment for hybrid Skype for Business](configure-a-multi-forest-environment-for-hybrid.md).
+- Gli utenti con identità autorevoli dalle foreste di account sono rappresentati nella foresta di risorse (in cui Skype for Business Server vengono distribuiti) come oggetti utente disabilitati. L'attributo msRTCSIP-OriginatorSID nella foresta di risorse deve corrispondere al SID nella foresta di account. Per ulteriori informazioni, vedere [Configure a multi-forest environment for hybrid Skype for Business](configure-a-multi-forest-environment-for-hybrid.md).
 
 - La foresta di risorse che ospita Skype for Business Server considera attendibili la foresta (o le foreste) di account.  
 
@@ -71,7 +71,7 @@ Questo scenario è spesso definito come topologia di foresta di risorse. Le iden
 
 ### <a name="multiple-skype-for-business-server-deployments-in-multiple-forests"></a>Più distribuzioni di Skype for Business Server in più foreste 
 
-In questo scenario, sono presenti più foreste, ognuna contenente Skype for Business Server e una singola Microsoft 365 organizzazione. Ogni foresta contenente Skype for Business Server può essere sincronizzata in Azure AD per tale organizzazione usando AAD Connessione. Nella maggior parte dei casi, solo una foresta può essere configurata per Skype for business ibrido in un determinato momento. Prima di abilitare la distribuzione ibrida in una foresta, tutti i domini SIP di tutte le altre foreste devono essere disabilitati [utilizzando disable-csonlineSipDomain](/powershell/module/skype/disable-csonlinesipdomain). Per ulteriori informazioni, vedere [Consolidamento cloud per Teams e Skype for Business](cloud-consolidation.md).
+In questo scenario, sono presenti più foreste, ognuna contenente Skype for Business Server e una singola Microsoft 365 organizzazione. Ogni foresta contenente Skype for Business Server può essere sincronizzata in Azure AD per tale organizzazione usando AAD Connessione. Nella maggior parte dei casi, solo una foresta può essere configurata per Skype for business ibrido in un determinato momento. Prima di abilitare la distribuzione ibrida in una foresta, tutti i domini SIP di tutte le altre foreste devono essere disabilitati [utilizzando disable-csonlineSipDomain](/powershell/module/skype/disable-csonlinesipdomain). Per ulteriori informazioni, vedere [Consolidamento del cloud per Teams e Skype for Business](cloud-consolidation.md).
 
 ## <a name="general-requirements"></a>Requisiti generali 
 
@@ -79,7 +79,7 @@ I Teams richiedono che gli attributi di Active Directory corretti esistano e sia
 
  Se le identità degli utenti si trovano in più foreste, Azure AD Connect deve eseguire l'unione. Una volta rispettate queste indicazioni, Azure AD Connect sincronizza automaticamente gli attributi corretti, purché non vengano modificati i connettori o le regole di sincronizzazione in Azure AD Connect. 
   
-Se non si esegue la sincronizzazione da tutte le foreste che contengono identità utente e la distribuzione di Skype for Business Server, è necessario verificare che l'identità rilevante e gli attributi di Skype for Business siano inseriti correttamente in Azure AD per qualsiasi utente che usa Teams o Skype for Business (sia locale che online). Questa operazione richiederà probabilmente un'ulteriore sincronizzazione della directory locale. Per ulteriori informazioni, vedere [Azure AD Connessione sync: Attributes synchronized to Azure Active Directory](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized).
+Se non si esegue la sincronizzazione da tutte le foreste che contengono identità utente e la distribuzione di Skype for Business Server, è necessario verificare che l'identità e gli attributi Skype for Business pertinenti vengano inseriti correttamente in Azure AD per qualsiasi utente che usa Teams o Skype for Business (in locale o online). Questa operazione richiederà probabilmente un'ulteriore sincronizzazione della directory locale. Per ulteriori informazioni, vedere [Azure AD Connessione sync: Attributes synchronized to Azure Active Directory](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized).
 
 In tali scenari, è responsabilità del cliente garantire una configurazione appropriata per popolare gli attributi in Azure AD. Tenere presente quanto segue: 
 
@@ -95,4 +95,4 @@ In tali scenari, è responsabilità del cliente garantire una configurazione app
 
 - [Topologie per Azure AD Connect](/azure/active-directory/hybrid/plan-connect-topologies)
 
-- [Sincronizzazione Connessione Azure AD: attributi sincronizzati con Azure Active Directory](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)
+- [Sincronizzazione Connessione azure AD: attributi sincronizzati con Azure Active Directory](/azure/active-directory/hybrid/reference-connect-sync-attributes-synchronized)

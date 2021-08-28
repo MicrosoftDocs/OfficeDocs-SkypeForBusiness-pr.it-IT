@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: landerl
 description: Informazioni su come preparare il personale IT dell'organizzazione per la distribuzione e il supporto Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -19,12 +19,12 @@ ms.collection:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 2dc29f8656b4fdd69d0e6e59338e91341d32cc7e283b4bdd2cfb5680192e248b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 53e0e8e57a7948947878fe93bcf358c83adeac52
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54343860"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618332"
 ---
 # <a name="prepare-your-it-staff-for-microsoft-teams"></a>Preparare il personale IT per Microsoft Teams
 
@@ -37,7 +37,7 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Gli amministratori Microsoft 365 o Office 365 dell'organizzazione, i clienti potenziali tecnici e il supporto tecnico sono in base ai requisiti per guidare un'esperienza utente di alta qualità. Ciò include la garanzia che la rete sia pronta per supportare Teams, la configurazione di Teams per gli utenti e la possibilità di risolvere in modo efficace i problemi che potrebbero verificarsi.
+Gli Microsoft 365 o Office 365 dell'organizzazione, i clienti potenziali tecnici e il supporto tecnico sono i clienti potenziali per un'esperienza utente di alta qualità. Ciò include la garanzia che la rete sia pronta per supportare Teams, la configurazione di Teams per gli utenti e la possibilità di risolvere in modo efficace i problemi che potrebbero verificarsi.
 
 Condividere le risorse seguenti con i membri del personale IT e verificare che siano pronti a supportare gli utenti prima di iniziare l'aggiornamento a Teams:
 

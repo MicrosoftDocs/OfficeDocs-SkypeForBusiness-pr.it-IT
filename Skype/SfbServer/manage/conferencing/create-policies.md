@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8c685326-8356-4075-bf95-32324b16ef81
 description: 'Riepilogo: informazioni su come creare criteri di conferenza in Skype for Business Server.'
-ms.openlocfilehash: 2cce451135c82894d9d82c89e6a62682d95526d31082d209bcaf8144752426b1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d067ce36b600a3dbfca3df318a2fd6d449518160
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344745"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595578"
 ---
 # <a name="create-conferencing-policies-in-skype-for-business-server"></a>Creare criteri di conferenza in Skype for Business Server
  
@@ -25,7 +25,7 @@ ms.locfileid: "54344745"
   
 È possibile creare criteri di conferenza Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
   
-## <a name="create-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Creare criteri di conferenza tramite Skype for Business Server pannello di controllo
+## <a name="create-conferencing-policies-by-using-skype-for-business-server-control-panel"></a>Creare criteri di conferenza tramite il Skype for Business Server Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
@@ -84,7 +84,7 @@ ms.locfileid: "54344745"
     
     - Per impedire i trasferimenti di file, deselezionare la casella di controllo **Consenti ai partecipanti di trasferire file**. Per impostazione predefinita, gli utenti possono trasferire file.
     
-    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni nelle presentazioni PowerPoint condivise, deselezionare la casella di controllo Abilita PowerPoint **annotazioni.** Per impostazione predefinita, le annotazioni sono consentite.
+    - Per impedire l'utilizzo delle annotazioni, deselezionare la casella di controllo **Consenti annotazioni**. Per utilizzare le annotazioni in presentazioni PowerPoint condivise, deselezionare la casella di controllo Abilita PowerPoint **annotazioni.** Per impostazione predefinita, le annotazioni sono consentite.
     
     - Per impedire l'utilizzo dei sondaggi, deselezionare la casella di controllo **Consenti sondaggi**. Per impostazione predefinita, i sondaggi sono consentiti.
     
@@ -116,7 +116,7 @@ ms.locfileid: "54344745"
     
 21. Fare clic su **Commit**.
     
-## <a name="create-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Creare criteri di conferenza tramite Skype for Business Server Management Shell
+## <a name="create-conferencing-policies-by-using-skype-for-business-server-management-shell"></a>Creare criteri conferenza tramite Skype for Business Server Management Shell
 
 Per creare criteri di conferenza, utilizzare il cmdlet **New-CsConferencingPolicy.**
   

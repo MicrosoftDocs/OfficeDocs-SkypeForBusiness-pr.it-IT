@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Skype for Business Server supporta URL semplici.
-ms.openlocfilehash: c3d78387ae0bcf16204e2fcaa4ff7db3549334fe814a014a88c80e8ab6658d5b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8bbbb55262e353ff66adeaca194e7060e3ff7ca5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324725"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618312"
 ---
 # <a name="change-simple-urls-after-migration"></a>Modificare gli URL semplici dopo la migrazione
 
@@ -28,7 +28,7 @@ Skype for Business Server supporta tre URL semplici:
     
 - **L'amministratore** consente l'accesso rapido Skype for Business Server pannello di controllo. L'URL semplice di amministrazione è interno all'organizzazione. 
     
-Dopo la migrazione a Skype for Business Server, è necessario tenere presente l'impatto della modifica sui record DNS e sui certificati per gli URL semplici. Se il server Skype for Business Server Director legacy rimane in uso nella topologia, non sono necessarie modifiche agli URL semplici. Se il Skype for Business Server Director viene rimosso dalla topologia dopo la migrazione, i record DNS degli URL semplici devono essere aggiornati in modo che puntino a uno dei Skype for Business Server server. Ogni volta che si modifica il nome di un URL semplice, è necessario però eseguire Enable-CsComputer in ogni Director e Front End Server per registrare la modifica.
+Dopo la migrazione a Skype for Business Server, è necessario essere consapevoli dell'impatto della modifica sui record DNS e sui certificati per gli URL semplici. Se il Skype for Business Server Director legacy rimane in uso nella topologia, non sono necessarie modifiche agli URL semplici. Se il Skype for Business Server Director viene rimosso dalla topologia dopo la migrazione, i record DNS degli URL semplici devono essere aggiornati in modo che puntino a uno dei Skype for Business Server server. Ogni volta che si modifica il nome di un URL semplice, è necessario però eseguire Enable-CsComputer in ogni Director e Front End Server per registrare la modifica.
 
 ## <a name="to-update-the-meet-simple-url"></a>Per aggiornare l'URL semplice riunione
 
@@ -42,7 +42,7 @@ Dopo la migrazione a Skype for Business Server, è necessario tenere presente l'
 
 1. In Generatore di topologie fare clic con il pulsante destro del mouse sul nodo **Skype for Business Server** e quindi scegliere **Modifica proprietà**.
     
-2. Selezionare **URL semplici nel** riquadro sinistro, quindi sotto la casella **URL** accesso amministrativo immettere l'URL semplice desiderato per l'accesso amministrativo al Pannello di controllo di Skype for Business Server e quindi fare clic su **OK.**
+2. Selezionare **URL semplici nel** riquadro sinistro, quindi sotto la casella **URL** accesso amministrativo immettere l'URL semplice desiderato per l'accesso amministrativo Skype for Business Server Pannello di controllo e quindi fare clic su **OK.**
     
    > [!TIP]
    > È consigliabile utilizzare l'URL più semplice possibile per l'accesso amministrativo. L'opzione più semplice è https://admin <em>\<domain\></em> . 

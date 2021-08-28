@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 47425ab1-5645-4d6f-b202-64bcce43e3ef
 description: Dopo aver completato le domande iniziali, è possibile modificare il nome di dominio completo (FQDN) e gli indirizzi IP per il sito. A tale scopo, nella pagina Topologia globale fare doppio clic sul sito che si desidera modificare.
-ms.openlocfilehash: 017b1e9e04851d321c9fd6f08508c8ffeccb4b4b558a3b0668c7e6f0efdd1f15
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6c18b980f7dca770de46a8eaeed01e7c508486b2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347911"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626598"
 ---
 # <a name="edit-the-topology-in-skype-for-business-server-2015"></a>Modificare la topologia in Skype for Business Server 2015
 
@@ -39,21 +39,21 @@ Lo Strumento di pianificazione visualizza la topologia del sito per il sito sele
 
   - Rapporto riepilogativo - Report generale delle impostazioni per la configurazione della rete perimetrale. Se si modificano i valori nella pagina **Diagramma** reti perimetrale con i valori TCP/IP e FQDN della topologia che verranno utilizzati nella distribuzione effettiva, tali indirizzi e nomi verranno rappresentati qui. In caso contrario, verrà visualizzato il testo predefinito.
 
-  - Rapporto certificati - Nel report del certificato verranno elencati il nome soggetto e i nomi alternativi del soggetto per i certificati necessari per la topologia.
+  - Rapporto certificati - Nel rapporto del certificato verranno elencati il nome soggetto e i nomi alternativi del soggetto per i certificati necessari per la topologia.
 
   - Report firewall - Nel report del firewall sono elencate le informazioni necessarie per configurare i firewall perimetrali nell'infrastruttura. Sono inclusi gli indirizzi IP (valori predefiniti o modificati), il ruolo del server, l'IP e la porta di origine, l'IP e la porta di destinazione, il protocollo di trasporto, il protocollo dell'applicazione e le note rilevanti.
 
-  - Rapporto DNS - Nel rapporto DNS sono elencate le informazioni rilevanti per le voci DNS che è necessario creare. Sono inclusi il tipo di record, l'FQDN, l'indirizzo IP e i commenti necessari per l'operazione corretta.
+  - Rapporto DNS - Il rapporto DNS elenca le informazioni rilevanti per le voci DNS che è necessario creare. Sono inclusi il tipo di record, l'FQDN, l'indirizzo IP e i commenti necessari per l'operazione corretta.
 
-- Riepilogo sito- Il riepilogo del sito presenta una panoramica delle selezioni effettuate rispondendo alle domande iniziali del colloquio o compilando i valori in **Siti di progettazione.** Vengono presentate anche le informazioni sulla capacità.
+- Riepilogo sito - Il riepilogo del sito presenta una panoramica delle selezioni effettuate rispondendo alle domande iniziali del colloquio o compilando i valori in **Siti di progettazione.** Vengono presentate anche le informazioni sulla capacità.
 
     > [!NOTE]
-    > Le informazioni nella pagina Riepilogo sito sono personalizzate per ogni progettazione e potrebbero non contenere tutte le sezioni o le informazioni qui descritte.
+    > Le informazioni nella pagina Riepilogo sito sono personalizzate per ogni progettazione e potrebbero non contenere tutte le sezioni o le informazioni descritte qui.
 
 ## <a name="edit-the-network-configuration-diagram"></a>Modificare il diagramma di configurazione di rete
 <a name="Edit_Network_diagram"> </a>
 
-La maggior parte delle operazioni che un progettista esegue nello strumento di pianificazione di Skype for Business Server 2015 consiste nella definizione delle voci per gli indirizzi IP e i nomi di dominio completi (FQDN) per le voci nel diagramma di rete. Le informazioni immesse in questa pagina vengono riportate nei report e nelle altre informazioni contenute nello Strumento di pianificazione.
+La maggior parte delle attività che un progettista esegue nello strumento di pianificazione di Skype for Business Server 2015 consiste nella definizione delle voci per gli indirizzi IP e i nomi di dominio completi (FQDN) per le voci nel diagramma di rete. Le informazioni immesse in questa pagina vengono riportate nei report e nelle altre informazioni contenute nello Strumento di pianificazione.
 
 ![Diagramma di rete dello strumento di pianificazione](../../media/Planning_Tool_Network_Diagram.png)
 
@@ -73,7 +73,7 @@ Nello Strumento di pianificazione è disponibile una funzionalità utile che con
 
 2. Ad esempio, il valore iniziale per il primo server è fe0101.contoso.com e un indirizzo IP di 192.168.21.122.
 
-3. Digitare fe0.contoso.com in **FQDN Front End Server,** digitare 192.168.21.131 in Indirizzo IP **front-end server** e quindi fare clic su **OK**.
+3. Digitare fe0.contoso.com in **FQDN Front End Server,** digitare 192.168.21.131 in **Indirizzo IP Front End Server** e quindi fare clic su **OK**.
 
 4. La funzionalità di incremento automatico aggiorna tutti i server del pool da fe01 a fe06 e tutti gli indirizzi IP da 192.168.21.131 a 136.
 

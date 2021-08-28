@@ -9,29 +9,29 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come acquistare, configurare e abilitare Assistente alla carriera per Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 798f9ff2a63291b3f110bf6fedd085609f71585c6b31a10d8afbe2e495f5ac0a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0d1d63b827775f00aa4d6a2a53603a84b4e39edf
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310834"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595120"
 ---
 # <a name="purchase-configure-and-enable-career-coach-for-microsoft-teams"></a>Acquistare, configurare e abilitare Assistente alla carriera per Microsoft Teams
 
-Assistente alla carriera è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce indicazioni personalizzate per gli studenti dell'istruzione superiore per esplorare il percorso di carriera. Assistente alla carriera offre agli istituti di istruzione una soluzione di carriera unificata che consente agli studenti di scoprire il percorso di carriera, sviluppare competenze reali e creare la propria rete in un'unica posizione.
+Assistente alla carriera è un'app Microsoft Teams per l'istruzione basata su LinkedIn che fornisce indicazioni personalizzate per gli studenti dell'istruzione superiore per esplorare il percorso di carriera. Assistente alla carriera offre agli istituti di istruzione una soluzione di carriera unificata per gli studenti per scoprire il percorso di carriera, sviluppare competenze reali e creare la propria rete in un'unica posizione.
 
 ## <a name="supported-languages"></a>Lingue supportate
 
 Assistente alla carriera localizzato nelle lingue seguenti:
 
-- Cinese (Semplificato, Cina continentale)
+- Cinese (Cinese semplificato, Cina continentale)
 - Cinese (tradizionale, Taiwan)
 - Inglese (US)
 - Inglese (UK)
@@ -67,7 +67,7 @@ Per abilitare Assistente alla carriera per l'istituto di istruzione, esaminare g
 - Studenti
 
 > [!NOTE]
-> Una Assistente alla carriera facoltà deve essere assegnata all'amministratore IT che completa la configurazione.
+> Una Assistente alla carriera di facoltà deve essere assegnata all'amministratore IT che completa la configurazione.
 
 **Dati e file dell'istituto di istruzione**
 
@@ -77,9 +77,9 @@ Per abilitare Assistente alla carriera per l'istituto di istruzione, esaminare g
 
 - Pagina LinkedIn dell'istituto di istruzione
 
-- LinkedIn Learning campus (preferito)
+- Abbonamento Learning campus linkedIn (preferito)
 
-## <a name="purchase-the-career-coach-licenses"></a>Acquistare le licenze Assistente alla carriera licenze
+## <a name="purchase-the-career-coach-licenses"></a>Acquistare le Assistente alla carriera licenze
 
 Assistente alla carriera è disponibile in tutto il mondo (ad eccezione della Cina e della Russia) per istituti di istruzione superiore qualificati come licenza per componenti aggiuntivi tramite Enrollment for Education Solutions (EES), Cloud Service Providers (CSP) e interfaccia di amministrazione di Microsoft 365 (web direct). Come app Microsoft Teams, i clienti devono avere Microsoft 365 A3/A5 o Office 365 A1/A3/A5 per acquistare il componente aggiuntivo Assistente alla carriera licenza.
 
@@ -116,9 +116,9 @@ Usando le impostazioni di amministrazione nell'Microsoft Teams di amministrazion
 - Le sezioni seguenti devono essere completate prima Assistente alla carriera possono essere usate - Marchio e preferenze, LinkedIn
 - I cvs per il catalogo dei corsi e il campo di studio hanno formati obbligatori e dimensioni massime di 18 MB
 
-- Se viene visualizzato il messaggio "Assistente alla carriera è in fase di configurazione per l'uso presto" nell'app Assistente alla carriera le sezioni necessarie non sono state completate.
+- Se viene visualizzato "Assistente alla carriera è in fase di configurazione per l'uso presto" nell'app Assistente alla carriera le sezioni richieste non sono state completate.
 
-- Nelle pagine delle impostazioni con i campi obbligatori, se i campi non sono completati, la pagina non verrà inviare
+- Nelle pagine delle impostazioni con i campi obbligatori, se i campi non sono completati la pagina non verrà inviato
   - Gli utenti non visualizzano un messaggio di avviso, ma la pagina semplicemente non invia
 
 ## <a name="access-the-career-coach-app-settings"></a>Accedere alle impostazioni Assistente alla carriera'app
@@ -166,7 +166,7 @@ Impostare il nome, il logo e la lingua predefinita dell'istituto di istruzione n
 
 ##### <a name="educational-institution-icon"></a>Icona dell'istituto di istruzione
 
-L'icona dell'istituto di istruzione viene usata in tutto il Assistente alla carriera per identificare contenuti univoci per l'istituto di istruzione, le risorse del catalogo dei corsi in tutta l'app e nella sezione esperienze reali del dashboard. L'icona è formattata nel modo seguente:
+L'icona dell'istituto di istruzione viene usata in Assistente alla carriera per identificare contenuti univoci per l'istituto di istruzione, le risorse del catalogo dei corsi in tutta l'app e nella sezione esperienze reali del dashboard. L'icona è formattata nel modo seguente:
 
 - PNG trasparente
 - Proporzioni di 1:1
@@ -193,7 +193,7 @@ Determinare la pagina LinkedIn dell'istituto di istruzione. Trovare la pagina Li
   
 1. Accedere all'interfaccia **Teams di amministrazione.**
 
-1. Selezionare **Teams app gestisci** le app  >    >  **Assistente alla carriera**  >  **connessione LinkedIn**.
+1. Selezionare **Teams app Gestisci app**  >  **Assistente alla carriera** connessione  >    >  **LinkedIn**.
 
 2. Trovare la pagina LinkedIn eseguendo una ricerca in LinkedIn e selezionando Filtro scuola. Oppure è possibile connettersi con un membro del personale dei servizi professionali per determinare la pagina dell'istituto di istruzione di LinkedIn corretta da usare. [Come identificare le pagine di LinkedIn](https://www.linkedin.com/help/linkedin/answer/40133/differences-between-a-linkedin-page-for-a-school-and-company?lang=en)
 
@@ -235,16 +235,16 @@ Per creare il catalogo dei corsi, creare un elenco di tutti i corsi insegnati pr
 
 ##### <a name="course-catalog-documents-formatting-and-schema"></a>Formattazione e schema dei documenti del catalogo dei corsi
 
-Il documento deve essere in formato CSV con una dimensione massima di 18 MB. Il documento deve contenere i campi obbligatori titolo del **corso,** **ID corso** e URL **del corso.** L'inclusione dei campi consigliati migliora l'esperienza degli studenti grazie alla restituzione di risultati di ricerca migliori e di identificazione delle competenze.
+Il documento deve essere in formato CSV con una dimensione massima di 18 MB. Il documento deve contenere i campi obbligatori titolo del **corso,** **ID corso** e URL **del corso.** L'inclusione dei campi consigliati migliora l'esperienza degli studenti grazie alla restituzione di risultati di ricerca e identificazione delle competenze migliori.
 
 > [!NOTE]
-> Iniziare con il [documento di catalogo del]( https://aka.ms/career-coach/docs/it-admins/sample-catalog) corso di esempio per iniziare.
+> Iniziare con il [documento del catalogo dei]( https://aka.ms/career-coach/docs/it-admins/sample-catalog) corsi di esempio per iniziare.
 
 La tabella seguente mostra gli elementi da includere nel catalogo dei corsi:
 
 | Nome             | Stato      | Tipo   | Descrizione                                                                    |
 |------------------|-------------|--------|--------------------------------------------------------------------------------|
-| courseId         | Obbligatorio    | stringa | In genere l'ID del corso (in genere è associato a ciò che viene generato nella trascrizione). |
+| courseId         | Obbligatorio    | stringa | In genere l'ID del corso è mappato a ciò che viene generato nella trascrizione. |
 | titolo            | Obbligatorio    | stringa | In genere il titolo del corso.                                                      |
 | sourceLink       | Obbligatorio    | URL    | Collegamento sito Web alla pagina del corso.                                               |
 | descrizione      | Consigliata | stringa | Testo introduttivo per il corso.                                              |
@@ -259,11 +259,11 @@ La tabella seguente mostra gli elementi da includere nel catalogo dei corsi:
 
 1. Accedere all'interfaccia **Teams di amministrazione.**
 
-1. Selezionare **Teams app Gestisci app** &gt; **Assistente alla carriera** &gt;  &gt; **Impostazioni** catalogo &gt; **corsi.**  
+1. Selezionare **Teams app Gestisci app** &gt; **Assistente alla carriera** &gt;  &gt; **Impostazioni** catalogo &gt; **corsi**.  
 
 2. Upload corsi in formato CSV con le colonne obbligatorie: courseId, title, sourceLink. Ogni riga deve includere dati per ognuna delle colonne obbligatorie.
 
-L'inclusione dei campi consigliati migliora l'esperienza degli studenti grazie alla restituzione di risultati di ricerca migliori e di identificazione delle competenze.
+L'inclusione dei campi consigliati migliora l'esperienza degli studenti grazie alla restituzione di risultati di ricerca e identificazione delle competenze migliori.
 
 4. Selezionare **Invia**.
 
@@ -304,7 +304,7 @@ Assistente alla carriera può essere personalizzato in modo da essere univoco pe
 
 1. Accedere all'interfaccia **Teams di amministrazione.**
 
-1. Selezionare **Teams per gestire le** app &gt;  &gt; **Assistente alla carriera**  >  **Impostazioni** &gt; **personalizzazione**.
+1. Selezionare **Teams app Gestisci app** &gt; **Assistente alla carriera** &gt;   >  **Impostazioni** &gt; **personalizzazione**.
 
 2. Aggiungere ogni URL, un titolo e una breve descrizione.  
   
@@ -319,11 +319,11 @@ Ora che Assistente alla carriera è stato configurato per l'organizzazione. Segu
 Dopo aver completato la configurazione, abilitare l'app per gli studenti e gli utenti con licenza in modo che abbia accesso a Assistente alla carriera.  
   
 > [!NOTE]
-> È necessario avere autorizzazioni di amministratore globale o Teams di amministratore.
+> È necessario disporre delle autorizzazioni di Teams di amministratore globale o di amministratore.
 
 1. Accedere all'interfaccia **Teams di amministrazione.**
 
-1. Selezionare **Teams app Gestisci app** &gt;  &gt; **Assistente alla carriera**.
+1. Selezionare **Teams app Gestisci** app &gt;  &gt; **Assistente alla carriera**.
 
 2. Spostare l'interruttore Stato su **Consentito**.  
 
@@ -372,11 +372,11 @@ Le risorse seguenti ti aiuteranno a pianificare l'app Assistente alla carriera a
 
 - [Panoramica dei team e i canali in Microsoft Teams](teams-channels-overview.md)
 
-- [Gestione delle app nell'Microsoft Teams di amministrazione](manage-apps.md)
+- [Gestione delle app nell Microsoft Teams di amministrazione](manage-apps.md)
 
 - [Kit di orientamento virtuale online](https://www.microsoft.com/education/remote-learning/virtual-orientation)
 
-- [Limiti e specifiche dei Teams canali](limits-specifications-teams.md)
+- [Limiti e specifiche di Teams canali](limits-specifications-teams.md)
 
 - [Guida introduttiva alla formazione per gli amministratori per Microsoft Teams](ITAdmin-readiness.md)
 

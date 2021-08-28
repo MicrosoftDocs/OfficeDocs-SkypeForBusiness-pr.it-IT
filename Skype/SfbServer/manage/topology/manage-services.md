@@ -9,18 +9,18 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Informazioni su come visualizzare lo stato del servizio, avviare e arrestare i servizi e impedire sessioni per i servizi.
-ms.openlocfilehash: 01190d11339dd3549177964ae766a10668bc07e679ddc1f7580ac2339514e008
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8c1f527e32d50624fddc1b4b261f6fbd20e97a47
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284676"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58604821"
 ---
 # <a name="manage-services-in-skype-for-business-server"></a>Gestire i servizi in Skype for Business Server
 
-È possibile utilizzare il Pannello di controllo di Skype for Business Server per visualizzare un elenco di tutti i computer che eseguono Skype for Business Server nella topologia, visualizzare lo stato dei servizi, avviare o arrestare i servizi e impedire le sessioni per i servizi.
+È possibile utilizzare il Pannello di controllo di Skype for Business Server per visualizzare un elenco di tutti i computer che eseguono Skype for Business Server nella topologia, visualizzare lo stato dei servizi, avviare o arrestare i servizi e impedire sessioni per i servizi.
 
 - [Visualizzare un elenco di computer che eseguono Skype for Business Server](#view-a-list-of-computers-running-skype-for-business-server)
 - [Visualizzare lo stato dei servizi in esecuzione in un computer in Skype for Business](#view-the-status-of-services-running-on-a-computer-in-skype-for-business)
@@ -41,7 +41,7 @@ Utilizzare il Skype for Business Server di controllo per visualizzare un elenco 
    
 ## <a name="view-the-status-of-services-running-on-a-computer-in-skype-for-business"></a>Visualizzare lo stato dei servizi in esecuzione in un computer in Skype for Business
 
-Utilizzare il Skype for Business Server di controllo per visualizzare tutti i servizi in esecuzione in un computer specifico nella topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
+Utilizzare il Skype for Business Server di controllo per visualizzare tutti i servizi in esecuzione in un computer specifico della topologia di Skype for Business Server e visualizzare lo stato di ogni servizio.
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 2. Aprire una finestra del browser e quindi immettere l'URL dell'amministratore per aprire il Pannello di controllo. Per informazioni dettagliate sui diversi metodi che è possibile utilizzare per avviare il Skype for Business Server di controllo, vedere [Installare e aprire gli strumenti di amministrazione.](../../management-tools/install-and-open-administrative-tools.md)

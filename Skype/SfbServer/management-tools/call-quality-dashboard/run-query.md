@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 45a77f7e-b137-462b-9146-3a0f43d8e0c7
-description: "Riepilogo: informazioni sull'operazione Esegui query, che fa parte dell'API dati per il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 860760303510b792cba70fc211ac8b7f9b994996b4937aa333ed54fcffb6eb75
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: informazioni sull'operazione Esegui query, che fa parte dell'API dati per il dashboard qualità chiamata. Call Quality Dashboard è uno strumento per Skype for Business Server."
+ms.openlocfilehash: 814b602631b3699b2b802adaee931e4ab0a780a6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340862"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626628"
 ---
 # <a name="run-query"></a>Run Query
 
@@ -28,7 +28,7 @@ L'operazione Esegui query fa parte dell'API dati per il dashboard qualità delle
 
 ## <a name="run-query"></a>Run Query
 
-L'operazione Esegui query consente di eseguire una query sul cubo in base a dimensioni, misure e filtri specificati e restituire i dati.
+L'operazione Esegui query consente di eseguire una query sul cubo in base a dimensioni, misure e filtri specificati e di restituire i dati.
 
 
 |**Metodo**|**URI richiesta**|**Versione HTTP**|
@@ -76,7 +76,7 @@ L'operazione Esegui query consente di eseguire una query sul cubo in base a dime
 
  *Filtri*  - Elenco di espressioni di filtro da applicare in modo che il set di dati risultante rifletta solo il sottoinsieme di dati di interesse.
 
- *Dimensioni*  : elenco di dimensioni che verranno utilizzate per l'aggregazione dei dati. È necessaria almeno una dimensione, ma è possibile specificarne più per ottenere un livello aggiuntivo di aggregazioni secondarie.
+ *Dimensioni:*  elenco di dimensioni che verranno utilizzate per l'aggregazione dei dati. È necessaria almeno una dimensione, ma è possibile specificarne più per ottenere un livello aggiuntivo di aggregazioni secondarie.
 
  *Misurazioni*  - Elenco di misurazioni, note anche come fatti, che sono le metriche desiderate da aggregare in base alle dimensioni specificate.
 
@@ -123,7 +123,7 @@ L'operazione Esegui query consente di eseguire una query sul cubo in base a dime
 }
 ```
 
- *Tempo di*  esecuzione - Tempo totale impiegato dal server per restituire i dati. Ciò può comportare o meno la cache.
+ *Tempo di*  esecuzione - Tempo totale impiegato dal server per restituire i dati. Ciò può comportare o meno l'utilizzo della cache.
 
  *Risultato dati*  - Risultato della query. È una matrice bidimensionale contenente tutte le permutazioni dei membri delle dimensioni e ogni elemento contenente i nomi dei membri delle dimensioni, nonché i valori aggregati delle misure specificate.
 

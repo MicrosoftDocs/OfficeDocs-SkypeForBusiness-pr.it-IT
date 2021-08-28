@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6a3cb2e6-e253-4a3d-b1d7-2b93b3cfc36a
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Nel riquadro Comandi di esecuzione viene visualizzato lo stato delle attività per l'installazione della replica di sola lettura locale dell'archivio di gestione centrale. Durante l'esecuzione delle attività, il riquadro attività viene aggiornato mentre vengono eseguiti i comandi. È consigliabile controllare lo stato delle attività e prendere nota degli eventuali errori o avvisi che vengono visualizzati. Al termine delle attività, viene visualizzato il messaggio Stato attività: Completato e nell'elenco a discesa dei file di registro vengono visualizzati i nomi dei file di registro. Per visualizzare i file di registro creati, selezionare quello desiderato e fare clic su Visualizza registro. Esaminare tutti i file di registro per ricercare messaggi di operazione riuscita, di errore e di avviso."
-ms.openlocfilehash: 16018d3df8aba02a7269d06789df2cd517191e49a346c11accc20fab66ec0cfe
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4994cebefc40c26b725af4e9505d9a0d8a208a40
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317791"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625578"
 ---
 # <a name="install-local-configuration-store-invoke"></a>Installare un archivio di configurazione locale (Invoke)
  

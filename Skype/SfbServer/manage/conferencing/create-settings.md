@@ -9,21 +9,21 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6d8f9ff8-2a04-4175-9bf0-1ec5d78fd015
 description: 'Riepilogo: informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.'
-ms.openlocfilehash: 11871685d51a73f5f2e9dbcbaa2835060d8a7cdc59958af1785d689c3c9246ed
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ad1f4fabf172fa5ff693a91e7994916487c322e7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321689"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58595568"
 ---
 # <a name="create-meeting-configuration-settings-in-skype-for-business-server"></a>Creare le impostazioni di configurazione delle riunioni in Skype for Business Server
  
 **Riepilogo:** Informazioni su come creare le impostazioni di configurazione delle riunioni in Skype for Business Server.
   
-È possibile creare le impostazioni di configurazione delle riunioni Skype for Business Server Pannello di controllo o tramite Skype for Business Server Management Shell.
+È possibile creare le impostazioni di configurazione delle riunioni Skype for Business Server pannello di controllo o tramite Skype for Business Server Management Shell.
   
 ## <a name="create-meeting-configuration-settings-by-using-skype-for-business-server-control-panel"></a>Creare le impostazioni di configurazione delle riunioni tramite Skype for Business Server pannello di controllo
 
