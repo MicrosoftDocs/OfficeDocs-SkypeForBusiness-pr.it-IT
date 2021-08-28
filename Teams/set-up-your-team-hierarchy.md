@@ -9,18 +9,18 @@ ms.reviewer: andfried, acolonna
 search.appverid: MET150
 description: Informazioni su come configurare una gerarchia di team nell'organizzazione per pubblicare contenuto in un set di team di grandi dimensioni.
 audience: admin
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9c1a08bfe63db87332035dd51b93281cc8ac0f25
-ms.sourcegitcommit: 9062b2c81c582ddc878c825ba1b22a6c23ca4b64
+ms.openlocfilehash: 769790029adf0e18d6201b635659a5b267e5f27c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58398955"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597950"
 ---
 # <a name="set-up-your-team-targeting-hierarchy"></a>Configurare la gerarchia di destinazione del team
 
@@ -39,7 +39,7 @@ I termini seguenti saranno importanti durante l'esplorazione delle gerarchie. Te
 
 * **I nodi radice** sono i nodi più in alto nella gerarchia. Nell'esempio, Retail Communications è un nodo radice.
 * **I nodi padre** **e i nodi figlio** sono termini che rappresentano una relazione tra due nodi connessi. Nell'esempio, Distretto 01 è un nodo figlio dell'area 1.
-* Più livelli di elementi figlio sono d'altronde **denominati discendenti.** Distretto 01, Store 01, Store 03, Store 07, Distretto 02 e Distretto 03 sono tutti discendenti dell'Area 1.
+* Più livelli di elementi figlio sono definiti **discendenti.** Distretto 01, Store 01, Store 03, Store 07, Distretto 02 e Distretto 03 sono tutti discendenti dell'Area 1.
 * Un nodo senza elementi figlio è denominato **nodo foglia.** Si tratta della parte inferiore di una gerarchia.
 * **I team dei** destinatari sono team selezionati per ricevere un set specifico di contenuti da pubblicare. Devono essere nodi foglia.
 
@@ -67,7 +67,7 @@ L'autorizzazione per la pubblicazione dipende dal fatto che un utente sia membro
 
 ### <a name="example-hierarchy"></a>Gerarchia di esempio
 
-Ad esempio, nella gerarchia seguente, Richiamo, Comunicazioni e Risorse umane possono pubblicare attività in ogni nodo inferiore (team) della gerarchia, ma l'area nord-orientale può pubblicare le attività solo nei team di New York Store e Boston Store. La gerarchia di esempio consente ai gruppi Di richiamo, Comunicazioni e Risorse umane di pubblicare attività che si applicano all'intera società, ad esempio informazioni sui vantaggi o messaggi del CEO. L'area nord-orientale può pubblicare attività come la pianificazione del personale, le informazioni meteo e così via, solo ai team di New York Store e Boston Store.
+Ad esempio, nella gerarchia seguente, richiamo, comunicazioni e risorse umane possono pubblicare attività in ogni nodo inferiore (team) della gerarchia, ma l'area nord-orientale può pubblicare le attività solo nei team di New York Store e Boston Store. La gerarchia di esempio consente ai gruppi Di richiamo, Comunicazioni e Risorse umane di pubblicare attività che si applicano all'intera società, ad esempio informazioni sui vantaggi o messaggi del CEO. L'area nord-orientale può pubblicare attività come la pianificazione del personale, le informazioni meteo e così via, solo ai team di New York Store e Boston Store.
 
 ![Esempio gerarchico del team](media/team-targeting-schema-example-new.png)
 
@@ -270,7 +270,7 @@ Error: InvalidTeamId
 Description: TeamID in row # doesn't match a valid Group ID. Please view our documentation to learn how to get the proper GroupID for each team.
 ```
 
-Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID team deve essere uguale all'ID gruppo del gruppo Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'Microsoft Teams di amministrazione.
+Verificare di usare l'ID team corretto per il team nel file CSV dello schema. L'ID Team deve essere uguale all'ID gruppo del gruppo Microsoft 365 che lo contiene. È possibile cercare l'ID gruppo del team nell'Microsoft Teams di amministrazione.
 
 1. Nel riquadro di spostamento sinistro [dell'Microsoft Teams di amministrazione](https://admin.teams.microsoft.com/)passare a Teams Gestisci   >  **team.**
 2. Se la **colonna ID** gruppo non è visualizzata nella tabella, selezionare Modifica colonne nell'angolo **in** alto a destra della tabella e quindi attivare **ID gruppo.**

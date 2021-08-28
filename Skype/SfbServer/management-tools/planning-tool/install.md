@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: b95b3301-fa1e-4b96-9af4-05b43d39db8d
 description: Prima di iniziare a progettare e pianificare l'infrastruttura di Skype for Business Server 2015 utilizzando lo strumento di pianificazione di Skype for Business Server 2015, è necessario installare lo strumento di pianificazione. Lo strumento di pianificazione non deve essere distribuito in una workstation o in un server che fa parte del dominio o dell'infrastruttura in cui si prevede di installare Skype for Business Server 2015. Il file Readme che accompagna lo strumento di pianificazione contiene informazioni importanti sull'installazione e sull'utilizzo dello strumento. Alcune delle informazioni contenute nel file Leggimi vengono riportate in questo argomento per maggiore chiarezza.
-ms.openlocfilehash: ffa1bceca3e59e42276718b5f139ac6525d36f85face94c762ceebe3013c7487
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2cfa5e67d567c108d46db1bc52b5426971aa8ca8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54343410"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616512"
 ---
 # <a name="install-the-planning-tool-in-skype-for-business-server-2015"></a>Installare lo strumento di pianificazione in Skype for Business Server 2015
 
@@ -102,11 +102,11 @@ L'esportazione del progetto in Microsoft Visio consente di creare un diagramma d
 > [!NOTE]
 > Se la struttura è sufficientemente grande da richiedere più di tre Front End Server, verrà creata una pagina aggiuntiva per il pool Front End, i Front End Server, il computer che esegue SQL Server, gli indirizzi IP e gli FQDN.
 
-- Topologia globale - Diagramma dei siti Skype for Business Server 2015.
+- Topologia globale - Diagramma dei siti configurati Skype for Business Server 2015.
 
 - Scheda Nome sito - Visualizza la topologia di configurazione del sito con server perimetrali, firewall, PSTN (Public Switched Telephone Network) con gateway e la distribuzione interna del server. La distribuzione interna è costituita da server e pool configurati, inclusi i pool Front End, i server basati su SQL Server, Servizi di dominio Active Directory, Director, server messaggistica unificata di Exchange, server Cassette postali Exchange, server Web Apps Office, Mediation Server e server Chat persistente.
 
-- Edge Network Diagram - Diagramma che illustra in dettaglio la configurazione del server perimetrale con indirizzi IP e FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i Director e il Front End Server o il pool Front End, con LB DNS o HLB associati e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e fqdn.
+- Edge Network Diagram - Diagramma che illustra in dettaglio la configurazione del server perimetrale con indirizzi IP e FQDN associati. Sono inoltre inclusi il bilanciamento del carico DNS e i dispositivi di bilanciamento del carico hardware. Vengono inoltre visualizzati i Director e il Front End Server o il pool Front End, con LB DNS o HLB associati e l'indirizzo IP assegnato (lo strumento di pianificazione supporta sia gli indirizzi IPv4 che IPv6) e FQDN.
 
 ## <a name="see-also"></a>Vedere anche
 <a name="Optional_Software"> </a>

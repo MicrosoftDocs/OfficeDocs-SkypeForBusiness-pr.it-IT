@@ -8,7 +8,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: abybee
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su Teams registrazione basata su criteri per le chiamate & riunioni
 f1.keywords:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 82f1e348ad4f81ec61ac7cf0a47c1574aa7f139a
-ms.sourcegitcommit: 9062b2c81c582ddc878c825ba1b22a6c23ca4b64
+ms.openlocfilehash: 08faea7d5926a35ac4c663cd2df4b51b8c4472dc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399115"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597930"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione Teams basata su criteri per le chiamate & riunioni
 
@@ -53,7 +53,7 @@ I casi di utilizzo della registrazione delle interazioni possono essere suddivis
 
 Ognuna di queste categorie richiede requisiti diversi per l'avvio delle registrazioni, gli elementi registrati, la posizione in cui vengono archiviate le registrazioni, chi viene avvisato, chi controlla l'accesso e come viene gestita la conservazione.
 
-| Tipo                   | Convenienza (Registrazione Teams) | Organizzazione - Regolamentata (Registrazione conformità) |
+| Tipo                   | Convenienza (Registrazione Teams normale) | Organizzazione - Regolamentata (Registrazione conformità) |
 | ---------------------- | ------------------ | --------------- |
 | Iniziatore              | Utente               | Amministratore (sistema)  |
 | Target                 | Per chiamata/riunione | Per utente        |
@@ -62,7 +62,7 @@ Ognuna di queste categorie richiede requisiti diversi per l'avvio delle registra
 | Proprietario dell'accesso           | Utente               | Conformità      |
 | Criteri di conservazione?      | Facoltativo           | Sì             |
 
-Teams offre varie funzionalità per la [registrazione pratica](./cloud-recording.md) e funzionale di riunioni ed eventi live. Registrazione dell'organizzazione significa consentire alle organizzazioni che adottano il Teams per le chiamate e le riunioni di stabilire, tramite criteri amministrativi, quando le chiamate e le riunioni online devono essere registrate e acquisite automaticamente per l'elaborazione e la conservazione successive, come richiesto dai criteri aziendali o normativi pertinenti. Gli utenti ai sensi di questo criterio saranno a conoscenza del fatto che le interazioni digitali con Teams vengono registrate, ma non saranno in grado di disabilitare la registrazione e non avranno accesso alla registrazione una volta completata l'interazione. La registrazione diventa parte dell'archivio aziendale disponibile per il personale legale e di conformità per eDiscovery, il blocco legale e altri usi di conservazione aziendale.
+Teams offre varie funzionalità per la [registrazione pratica](./cloud-recording.md) e funzionale di riunioni ed eventi live. Registrazione dell'organizzazione significa consentire alle organizzazioni che adottano il Teams per le chiamate e le riunioni di stabilire, tramite criteri amministrativi, quando le chiamate e le riunioni online devono essere registrate e acquisite automaticamente per l'elaborazione e la conservazione successive, come richiesto dai criteri aziendali o normativi pertinenti. Gli utenti ai sensi di questo criterio saranno consapevoli che le interazioni digitali con Teams vengono registrate, ma non saranno in grado di disabilitare la registrazione e non avranno accesso alla registrazione una volta completata l'interazione. La registrazione diventa parte dell'archivio aziendale disponibile per il personale legale e di conformità per eDiscovery, il blocco legale e altri usi di conservazione aziendale.
 
 ## <a name="example-user-needs"></a>Esigenze degli utenti di esempio
 
@@ -213,7 +213,7 @@ Il supporto per le notifiche è abilitato usando le Teams client. Le esperienze 
 
 Oltre a pubblicare API disponibili pubblicamente che consentono ai partner di sviluppare e integrare soluzioni CCaaS con Teams, abbiamo sviluppato la registrazione della conformità per il programma di certificazione Microsoft Teams per fornire ai clienti la certezza che la soluzione di ogni partner partecipante sia stata testata e verificata per fornire la qualità, la compatibilità e l'affidabilità che si aspettano dalle soluzioni Microsoft.  
 
-I partner seguenti hanno certificato la loro soluzione per Microsoft Teams.<br/><br/>
+I partner seguenti hanno certificato la propria soluzione per Microsoft Teams.<br/><br/>
 
 |Partner|Sito Web della soluzione |
 |:--|:--|
@@ -227,7 +227,7 @@ I partner seguenti hanno certificato la loro soluzione per Microsoft Teams.<br/>
 |Verint |[https://www.verba.com/solutions/microsoft-teams-recording](https://www.verba.com/solutions/microsoft-teams-recording) |
 
 <br/>
-I partner seguenti stanno certificando la loro soluzione per Microsoft Teams.<br/><br/>
+I partner seguenti stanno certificando la soluzione per Microsoft Teams.<br/><br/>
 
 |Partner|Sito Web della soluzione |
 |:--|:--|

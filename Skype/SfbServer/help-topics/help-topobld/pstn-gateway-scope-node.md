@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.PstnGatewayScopeNode
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 85a52bf7-98cb-4dd4-892e-2d1ba5669593
 description: 'In questo nodo vengono mostrati il nome di dominio completo (FQDN), il Mediation Server associato e altre informazioni di base su questo gateway PSTN (Public Switched Telephone Network). È possibile eseguire le operazioni seguenti:'
-ms.openlocfilehash: 8b1059e7ee9373efbb8334fa642f961e18d2ada43e19fd2b5e01741d61562cfb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 88d4aecd950c7f8e4d6caa79fd307b2ef333115e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54335036"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623778"
 ---
 # <a name="pstn-gateway-scope-node"></a>Nodo dell'ambito del gateway PSTN
  

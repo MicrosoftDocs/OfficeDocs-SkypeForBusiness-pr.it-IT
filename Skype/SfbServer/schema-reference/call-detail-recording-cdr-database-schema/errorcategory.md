@@ -10,19 +10,19 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0fde3b73-9a2f-44dd-b8dc-6df512303ff1
-description: 'La tabella ErrorCategory contiene il nome descrittivo per ogni Skype for Business Server di diagnostica 2015. Per impostazione predefinita, Skype for Business Server 2015 usa le classificazioni seguenti:'
-ms.openlocfilehash: 68114e96e04ca8e2cb45fbb2b9ba0b3934df4e363700f8a872f05cb1aa0e8a37
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'La tabella ErrorCategory contiene il nome descrittivo per ogni Skype for Business Server diagnostica 2015. Per impostazione predefinita, Skype for Business Server 2015 usa le classificazioni seguenti:'
+ms.openlocfilehash: 1dcf563ccc8264d29512ba484837ad486b6352ea
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347771"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616422"
 ---
 # <a name="errorcategory-table-in-skype-for-business-server-2015"></a>Tabella ErrorCategory in Skype for Business Server 2015
  
-La tabella ErrorCategory contiene il nome descrittivo per ogni Skype for Business Server di diagnostica 2015. Per impostazione predefinita, Skype for Business Server 2015 usa le classificazioni seguenti:
+La tabella ErrorCategory contiene il nome descrittivo per ogni Skype for Business Server diagnostica 2015. Per impostazione predefinita, Skype for Business Server 2015 usa le classificazioni seguenti:
   
 - 0 -- Esito positivo
     

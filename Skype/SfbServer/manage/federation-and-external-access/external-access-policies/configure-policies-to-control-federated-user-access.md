@@ -13,14 +13,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: 'Quando si configurano criteri per supportare le comunicazioni con partner federati, i criteri si applicano agli utenti dei domini federati. '
-ms.openlocfilehash: 57b674e0b75a310b56b6aaedaf4338eda94d75452f7f4b3d59580a4a52759453
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 86d3988df429b3bc9ef2972aa27e0a6ed03ceb72
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301392"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588588"
 ---
 # <a name="configure-policies-to-control-federated-user-access-in-skype-for-business-server"></a>Configurare i criteri per controllare l'accesso degli utenti federati in Skype for Business Server
 
@@ -67,7 +67,7 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Avviare il Skype per Busines Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** Skype for Business Server **e** quindi fare clic su Skype for Business Server **Management Shell**.
+2.  Avviare il Skype per Busines Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server** e quindi fare clic su Skype for Business Server **Management Shell.**
 
 3.  Digitare quanto segue in Skype for Business Server Management Shell:
     
@@ -77,7 +77,7 @@ Se si tratta di criteri utente è inoltre necessario applicarli agli utenti ai q
        
 
     > [!TIP]  
-    > Il parametro "EnablePublicCloudAudioVideoAccess" non dispone di una selezione corrispondente nel Skype for Business Server Pannello di controllo
+    > Il parametro "EnablePublicCloudAudioVideoAccess" non dispone di una selezione corrispondente nel Pannello Skype for Business Server controllo
 
 
 ## <a name="to-create-a-new-policy-using-windows-powershell-to-support-access-by-users-of-federated-domains"></a>Per creare un nuovo criterio utilizzando Windows PowerShell per supportare l'accesso da parte degli utenti di domini federati

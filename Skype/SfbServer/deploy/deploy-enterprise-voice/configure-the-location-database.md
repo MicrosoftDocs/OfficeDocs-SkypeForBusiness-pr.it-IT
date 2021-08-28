@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: fb84f5b6-c991-4893-bdbf-f195b4b7d28e
 description: Configurare, popolare e pubblicare il database delle località di E9-1-1 in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 9e97c959af9dc88ff43fd93e734e21bae051583206be3dd89390dcae59c6ca0c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0eb2fd8e09c09688cf8c8282b35328ca7eb1761b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54326602"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597740"
 ---
 # <a name="configure-the-location-database-in-skype-for-business-server"></a>Configurare il database delle località in Skype for Business Server
  
@@ -45,7 +45,7 @@ Per individuare automaticamente i client all'interno di una rete, è innanzitutt
   
 È possibile aggiungere indirizzi al database delle località singolarmente o in blocco utilizzando un file CSV contenente i formati di colonna descritti nella tabella seguente.
   
-Se si utilizza un gateway ELIN (Emergency Location Identification Number), includere eLIN nel **campo CompanyName** per ogni posizione. È possibile includere più ELAN per ogni posizione, ognuno separato da un punto e virgola.
+Se si utilizza un gateway ELIN (Emergency Location Identification Number), includere ELIN nel **campo CompanyName** per ogni posizione. È possibile includere più ELAN per ogni posizione, ognuno separato da un punto e virgola.
   
 |**Elemento Network**|**Colonne obbligatorie**|
 |:-----|:-----|
@@ -94,7 +94,7 @@ Se si utilizza un gateway ELIN (Emergency Location Identification Number), inclu
    Set-CsLisSwitch -ChassisID 0B-23-CD-16-AA-BB -Description "Switch1" -Location Location1 -CompanyName "Litware" -HouseNumber 1234 -HouseNumberSuffix "" -PreDirectional "" -StreetName 163rd -StreetSuffix Ave -PostDirectional NE -City Redmond -State WA -PostalCode 99123 -Country US
    ```
 
-   In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "switches.csv" per aggiornare in blocco i percorsi dei commutatore.
+   In alternativa, è possibile eseguire i cmdlet seguenti e utilizzare un file denominato "switches.csv" per aggiornare in blocco le posizioni del commutatore.
     
    ```powershell
    $g = Import-Csv switches.csv

@@ -1,5 +1,5 @@
 ---
-title: Codice di gestione dei reclami per regno Unito - Microsoft 365 per chiamate
+title: Codice di gestione dei reclami per regno Unito - Microsoft 365 per le chiamate
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -15,24 +15,24 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Legal
 - seo-marvel-mar2020
 hideEdit: true
-description: Inviare un reclamo per i Skype per le chiamate PSTN (Chiamate PSTN nel Regno Unito), le tempistiche per le risposte e la risoluzione di controversie per reclami non risolti.
-ms.openlocfilehash: 5d0697de0d0c19038c5b6307eca4023f2838ee0aab010fb7a33faf371300625c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Inviare un reclamo per Skype servizi di chiamata PSTN (Chiamate PSTN nel Regno Unito), tempistiche per le risposte e risoluzione di controversie per reclami non risolti.
+ms.openlocfilehash: 648f7b171e8d04f4bad6ef1cdb1021b987cf042e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347411"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58604605"
 ---
-# <a name="calling-plans-in-microsoft-365---complaint-handling-code-for-the-united-kingdom-uk"></a>Piani per chiamate in Microsoft 365 - Codice di gestione dei reclami per il Regno Unito (Regno Unito)
+# <a name="calling-plans-in-microsoft-365---complaint-handling-code-for-the-united-kingdom-uk"></a>Piani per chiamate in Microsoft 365 - Codice di gestione reclami per il Regno Unito (Regno Unito)
 
-Il presente Codice si applica ai clienti di piccole imprese (organizzazioni con 10 dipendenti o meno) nel Regno Unito (Regno Unito) in relazione al servizio piano per chiamate di Microsoft 365 (il "Servizio") in conformità alle normative sulle comunicazioni del Regno Unito. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
+Il presente Codice si applica ai clienti di piccole imprese (organizzazioni con 10 dipendenti o meno) nel Regno Unito (Regno Unito) rispetto al servizio piano per chiamate di Microsoft 365 (il "Servizio") in conformità alle normative sulle comunicazioni del Regno Unito. Altri servizi di Skype for Business sono disciplinati dal contratto di servizio tra il cliente e Microsoft e da eventuali altri termini applicabili all'utilizzo del servizio specifico da parte del cliente.
 
 ## <a name="how-to-make-a-complaint"></a>Come presentare un reclamo
 
@@ -40,7 +40,7 @@ La soddisfazione del cliente è una priorità per Skype for Business. Tuttavia, 
 
 - Numero verde: 0800 032 6417
 
-- Online: accedere al interfaccia di amministrazione di Microsoft 365 e inviare una richiesta di servizio selezionando **Nuova richiesta di servizio** in **Supporto**.
+- Online: accedere al interfaccia di amministrazione di Microsoft 365 e inviare una richiesta di servizio selezionando Nuova richiesta **di servizio** in **Supporto.**
 
 ## <a name="timelines"></a>Tempistiche
 
@@ -52,7 +52,7 @@ Se il rappresentante Skype for Business non sarà in grado di risolvere il probl
 
 L'obiettivo di Skype for Business è risolvere tutti i reclami relativi al servizio entro (7) giorni lavorativi dal ricevimento.
 
-Se non si è soddisfatti del modo in cui viene gestito il reclamo relativo al Servizio, l'utente può chiedere al rappresentante di Skype for Business che gestisce il reclamo, tramite telefono o posta elettronica, di inoltrare il reclamo in conformità al contratto di servizio. Microsoft valuterà il reclamo entro (7) giorni dal ricevimento.
+Se non si è soddisfatti del modo in cui viene gestito il reclamo relativo al Servizio, è possibile chiedere al rappresentante di Skype for Business che gestisce il reclamo, tramite telefono o posta elettronica, di inoltrare il reclamo in conformità al contratto di servizio. Microsoft valuterà il reclamo entro (7) giorni dal ricevimento.
 
 ## <a name="alternative-dispute-resolution"></a>Risoluzione alternativa dei contenziosi
 

@@ -1,5 +1,5 @@
 ---
-title: Opzioni di posta elettronica quando le impostazioni di audioconferenza cambiano
+title: Opzioni di posta elettronica quando vengono modificate le impostazioni dei servizi di audioconferenza
 ms.author: tonysmit
 author: tonysmit
 manager: serdars
@@ -14,21 +14,21 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: "Informazioni su come abilitare o disabilitare Skype l'invio di messaggi di posta elettronica agli utenti quando vengono apportate modifiche a impostazioni come il pin o il numero di conferenza predefinito in Microsoft Teams. "
-ms.openlocfilehash: 014159ea88d68b38a138e530e6d9200d4936d728ead4694e6aac352e92f10dfb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Informazioni su come abilitare o disabilitare Skype l'invio di messaggi di posta elettronica agli utenti quando vengono apportate modifiche alle impostazioni, ad esempio il pin o il numero di conferenza predefinito Microsoft Teams. "
+ms.openlocfilehash: 3d9284d78c20b65c3474475a91e041600c232049
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54329131"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635700"
 ---
-# <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-microsoft-teams"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano in Microsoft Teams
+# <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-microsoft-teams"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano Microsoft Teams
 
 Gli utenti vengono informati automaticamente tramite posta elettronica quando sono abilitati per l'Audioconferenza. A volte, tuttavia, può essere necessario ridurre il numero di messaggi di posta elettronica inviati Microsoft Teams utenti. In tal caso, puoi disabilitare l'invio dei messaggi posta elettronica.
   
@@ -86,7 +86,7 @@ Set-CsOnlineDialInConferencingTenantSettings -AutomaticallySendEmailsToUsers $tr
 Per altre [informazioni, Microsoft Teams informazioni di riferimento su PowerShell.](/powershell/module/teams/?view=teams-ps)
 
     
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 
 Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell è possibile gestire Microsoft 365 o Office 365 tramite un'unica posizione di amministrazione, semplificando il lavoro quotidiano quando si hanno più attività da completare. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     

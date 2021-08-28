@@ -14,28 +14,28 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft.
-ms.openlocfilehash: 749027ae6dcb9766564444b659d5695abfe733210bc11837946bd4b328d3ab47
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2308b196dfd31f6d6576f57dbe06ed5eda42cb86
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310684"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635680"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Gli utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft per farci sapere come stiamo facendo, direttamente dall'interno Teams desktop e client Web. Stiamo continuamente migliorando l'esperienza Teams e usiamo questo feedback per migliorare Teams migliore.
+Gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft per farci sapere come stiamo facendo, direttamente dall'interno Teams desktop e client Web. Stiamo continuamente migliorando l'esperienza Teams e usiamo questo feedback per migliorare Teams migliore.
 
 > [!NOTE]
 > I criteri di feedback non sono disponibili nelle distribuzioni GCC, GCC high o DOD.
 
 **Caratteristica Invia feedback**
 
-Gli utenti possono inviare commenti e suggerimenti su Teams inviandoci un  >  **feedback** in Teams. I dati inviati tramite Invia **feedback** sono considerati "Dati di supporto" ai sensi del contratto di Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "Dati dei clienti" o "Dati personali".
+Gli utenti possono inviare commenti e suggerimenti su Teams inviandoci un  >  **feedback** in Teams. I dati inviati tramite Invia **feedback** sono considerati come "Dati di supporto" ai sensi del contratto di Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "Dati dei clienti" o "Dati personali".
 
 ![Screenshot dell'opzione Invia feedback in Teams](media/manage-feedback-policies-in-teams-give-feedback.png)
 
@@ -47,7 +47,7 @@ Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettag
 
 ## <a name="set-whether-users-can-send-feedback-about-teams-to-microsoft"></a>Specificare se gli utenti possono inviare commenti e suggerimenti Teams a Microsoft
 
-Gli amministratori possono controllare se gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft tramite Inviare **feedback** e se ricevono il sondaggio. Per impostazione predefinita, a tutti gli utenti dell'organizzazione viene assegnato automaticamente il criterio globale (impostazione predefinita a livello di organizzazione) e la caratteristica Invia **feedback** e il sondaggio sono abilitati nel criterio. L'eccezione è Teams per l'istruzione, in cui le funzionalità sono abilitate per i docenti e disabilitate per gli studenti.
+Gli amministratori possono controllare se gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft tramite Invia **feedback** e se ricevono il sondaggio. Per impostazione predefinita, a tutti gli utenti dell'organizzazione viene assegnato automaticamente il criterio globale (impostazione predefinita a livello di organizzazione) e la caratteristica Invia **feedback** e il sondaggio sono abilitati nel criterio. L'eccezione è Teams per l'istruzione, in cui le funzionalità sono abilitate per i docenti e disabilitate per gli studenti.
 
 È possibile modificare i criteri globali o creare e assegnare criteri personalizzati. Dopo aver modificato i criteri globali o aver assegnato un criterio personalizzato, l'applicazione delle modifiche può richiedere alcune ore.
 
@@ -57,8 +57,8 @@ Per gestire i criteri di feedback, usare PowerShell. Usare il cmdlet **New-CsTea
 
 Per disattivare e attivare le funzionalità, impostare i parametri seguenti:
 
- - **Inviare feedback:** impostare il **parametro userInitiatedMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di inviare feedback. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
- - **Sondaggi:** impostare il **parametro receiveSurveysMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams, gli utenti possono quindi passare a Impostazioni Privacy e scegliere se partecipare  >   ai sondaggi. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non riceveranno il sondaggio.
+ - **Inviare commenti** e suggerimenti: impostare **il parametro userInitiatedMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di inviare feedback. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non hanno la possibilità di inviare commenti e suggerimenti.
+ - **Sondaggi:** impostare il **parametro receiveSurveysMode** su **enabled** per consentire agli utenti a cui è assegnato il criterio di ricevere il sondaggio. Per fare in modo che gli utenti ricevano il sondaggio e consentano loro di rifiutare esplicitamente, impostare il parametro **su enabledUserOverride**. In Teams, gli utenti possono quindi passare a Impostazioni privacy e scegliere se partecipare  >   ai sondaggi. Se si imposta il **parametro su disabled,** la caratteristica viene disattivata e gli utenti a cui è assegnato il criterio non riceveranno il sondaggio.
  - **Posta** elettronica: usare il flag **AllowEmailCollection** per aggiungere un campo di posta elettronica.
 
 ## <a name="create-a-custom-feedback-policy"></a>Creare criteri di feedback personalizzati

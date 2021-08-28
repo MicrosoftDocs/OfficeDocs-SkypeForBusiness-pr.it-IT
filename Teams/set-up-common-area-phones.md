@@ -14,35 +14,35 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
 - seo-marvel-mar2020
-description: "Informazioni su come configurare i telefoni dell'area comune per lobby, aree di ricezione e sale riunioni "
-ms.openlocfilehash: 6b97c931364ec9a1c589b0a677e0ec82d6288d945b8f0c002e48824921fe3107
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Informazioni su come configurare i telefoni dell'area comune per le lobby, le aree di ricezione e le sale riunioni "
+ms.openlocfilehash: 928c4c2a81f2e19524aa7dc43ac2bd597b1293dd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301052"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597960"
 ---
 # <a name="set-up-the-common-area-phone-license-for-microsoft-teams"></a>Configurare la licenza dell'area Telefono per Microsoft Teams
 > [!NOTE]
 > I telefoni dell'area comune non supportano la segreteria telefonica.
 
-Un telefono di area comune è in genere posizionato in un'area come una sala d'attesa o un'altra area che è disponibile a molte persone per effettuare una chiamata; ad esempio un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni dell'area comune sono connessi con account collegati a una licenza di area Telefono comune. Anche il criterio TeamsIPPhone deve essere impostato in modo appropriato perché il telefono abbia un'esperienza utente nell'area comune.
+Un telefono dell'area comune è in genere posizionato in un'area come una sala d'attesa o un'altra area che è disponibile a molte persone per effettuare una chiamata; ad esempio un'area di ricezione, una sala d'attesa o un telefono per conferenze. I telefoni dell'area comune sono connessi con account collegati a una licenza di area Telefono comune. Anche il criterio TeamsIPPhone deve essere impostato in modo appropriato perché il telefono abbia un'esperienza utente nell'area comune.
 
-Nei passaggi seguenti verrà illustrato come configurare un account per Sistema telefonico per distribuire telefoni ad area comune per l'organizzazione. Per un'esperienza più completa nelle sale riunioni, inclusa l'audioconferenza, è consigliabile acquistare la licenza Sala riunioni con un dispositivo della sala riunioni. 
+Nei passaggi seguenti verrà illustrato come configurare un account per Sistema telefonico per distribuire telefoni ad area comune per l'organizzazione. Per un'esperienza più completa nella sala riunioni, inclusa l'audioconferenza, è consigliabile acquistare la licenza Sala riunioni con un dispositivo della sala riunioni. 
 
-Prima di tutto, è necessario acquistare una licenza di Common Area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi.](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1) 
+Prima di tutto, è necessario acquistare una licenza common area Telefono (CAP) e assicurarsi di avere un telefono certificato. Per cercare e altre informazioni sui telefoni certificati, vai a Microsoft Teams [dispositivi.](https://products.office.com/microsoft-teams/across-devices?ms.url=officecomteamsdevices&rtc=1) 
 
 ## <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 
-1. Nel interfaccia di amministrazione di Microsoft 365, passare a **Servizi di** acquisto  >  **fatturazione** e quindi espandere Altri **piani**.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365, passare a **Servizi di**  >  **acquisto fatturazione** e quindi espandere Altri **piani**.
 
-    ![Screenshot che mostra il riquadro Telefono area comune](media/set-up-common-area-phone-image1.png)
+    ![Screenshot che mostra il riquadro area Telefono comune](media/set-up-common-area-phone-image1.png)
 
 2. Selezionare **Area comune Telefono** Acquista  >  **ora**.
 
@@ -80,7 +80,7 @@ La licenza common area Telefono supporta:
 
 ## <a name="step-2---create-a-new-user-account-for-the-phone-and-assign-the-licenses"></a>Passaggio 2: crea un nuovo account utente per il telefono e assegna le licenze
 
-1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare a **Utenti**  >  **utenti attivi che**  >  **aggiungono un utente.**
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 passare agli **utenti attivi** che  >    >  **aggiungono un utente.**
 
 2. Immettere un nome utente come "Principale" per il nome e "Ricezione" per il secondo nome.
 
@@ -95,7 +95,7 @@ La licenza common area Telefono supporta:
     ![Screenshot che mostra l'assegnazione delle licenze con il piano per chiamate nazionali e le opzioni del piano nazionale e internazionale evidenziate](media/set-up-common-area-phone-image2.png)
 
 > [!NOTE]
-> Se si usa il Telefono Microsoft System Direct Routing, non è necessario assegnare una licenza per il piano di chiamata.
+> Se si usa Telefono Microsoft sistema di routing diretto, non è necessario assegnare una licenza per il piano di chiamata.
 
 Per altre informazioni, vedere [Assegnare licenze agli utenti.](/microsoft-365/admin/manage/assign-licenses-to-users)
 

@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 8d47b242-b93d-4c2e-a658-23b78bca30b1
 description: 'Riepilogo: preparare i server Skype for Business Server 2015 con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e i suggerimenti sono qui per garantire una corretta installazione e distribuzione della server farm.'
-ms.openlocfilehash: 2c709dbc3afa2290cc9260dd71b73ab5da898d88
-ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
+ms.openlocfilehash: 0e93742e917e25f968d500ed01bb4a83d8ac8904
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372076"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58604665"
 ---
 # <a name="server-requirements-for-skype-for-business-server-2015"></a>Requisiti del server per Skype for Business Server 2015
  
@@ -52,7 +52,7 @@ Hardware consigliato per Front End Server, back-end server, edizione Standard se
 |CPU  <br/> |Doppio processore a 64 bit, hex-core, 2,26 gigahertz (GHz) o superiore.  <br/> I processori Intel Itanium non sono supportati per Skype for Business Server 2015.  <br/> |
 |Memoria  <br/> |32 gigabyte (GB).  <br/> |
 |Disco  <br/> |UNO DEI SEGUENTI:  <br/> • 8 o più unità disco rigido da 10.000 RPM con almeno 72 GB di spazio libero su disco (due dischi con RAID 1 e 6 con RAID 10).  <br/> OPPURE  <br/> • Unità SSD (Solid State Drive) in grado di fornire lo stesso spazio libero e prestazioni simili a 8 unità disco meccaniche da 10000 RPM.  <br/> |
-|Rete  <br/> |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni duali o multi-homed non sono **supportate** per Front End Server, back-end server, edizione Standard server e server Chat persistente. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.  <br/> |
+|Rete  <br/> |1 scheda di rete a doppia porta, 1 Gbps o superiore (è possibile utilizzare 2 schede di rete, ma devono essere associate a un singolo indirizzo MAC e a un singolo indirizzo IP).  <br/> Le configurazioni dual o multi-homed non sono **supportate** per Front End Server, back-end server, edizione Standard server e server Chat persistente. <br/> Se non sono esposti al sistema operativo e vengono utilizzati per monitorare e gestire l'hardware del server, è possibile disporre di sistemi di gestione fuori banda, ad esempio DRAC o ILO. Questo scenario non costituisce un server multi-homed ed è supportato.  <br/> |
    
 Hardware consigliato per server perimetrali, Mediation Server autonomi, Server di interoperabilità video e Director:
   
@@ -66,7 +66,7 @@ Hardware consigliato per server perimetrali, Mediation Server autonomi, Server d
 ## <a name="operating-systems-for-skype-for-business-server-2015"></a>Sistemi operativi per Skype for Business Server 2015
 <a name="OS"> </a>
 
-Dopo aver installato l'hardware, è necessario installare i sistemi operativi. Si tratta del sistema operativo che consente di installare e usare correttamente Skype for Business Server 2015.
+Dopo aver installato l'hardware, è necessario installare i sistemi operativi. Si tratta del sistema operativo che consente di installare e utilizzare correttamente Skype for Business Server 2015.
   
 |&nbsp;|&nbsp;|
 |:-----|:-----|
@@ -80,13 +80,13 @@ Se non è in questo elenco, non funzionerà correttamente, non provare per le nu
 > L'aggiornamento sul posto del sistema operativo non è supportato con Lync Server 2013. È necessario distribuire un pool separato ed eseguire la migrazione degli utenti nel nuovo pool con un sistema operativo diverso. Tutti i server di un pool devono avere la stessa versione del sistema operativo.
   
 > [!NOTE]
-> Si è notato che Windows Server 2008 R2 non è in questo elenco. Questo perché è consigliabile Windows Server 2012 R2 per tutti i nuovi server da utilizzare per SFB. È consigliabile utilizzare Windows Server 2008 R2 solo se sono già installati server esistenti con Lync Server 2013 e si intende eseguire un aggiornamento sul posto. Windows Server 2008 R2 ha raggiunto la fine del ciclo di vita del supporto mainstream il 13/01/2015 e raggiungerà la fine del ciclo di vita del supporto il 14/1/1/2020.
+> Si è notato che Windows Server 2008 R2 non è in questo elenco. Questo perché è consigliabile utilizzare Windows Server 2012 R2 per tutti i nuovi server da utilizzare per SFB. È consigliabile utilizzare Windows Server 2008 R2 solo se sono già installati server esistenti con Lync Server 2013 e si intende eseguire un aggiornamento sul posto. Windows Server 2008 R2 ha raggiunto la fine del ciclo di vita del supporto mainstream il 13/01/2015 e raggiungerà la fine del ciclo di vita del supporto il 14/1/1/2020.
   
 Oltre al Service Pack più recente, è necessario verificare che gli aggiornamenti seguenti siano installati laddove pertinenti:
   
 - Ad Windows Server 2012, l'articolo della Knowledge Base 2858668 deve essere installato prima di un aggiornamento. [Scaricalo qui](https://support.microsoft.com/kb/2858668/).
     
-- Se si dispone di Windows Server 2012 R2, installare l'articolo della Knowledge Base 2982006 prima dell'aggiornamento. [Si trova qui](https://support.microsoft.com/kb/2982006/).
+- If you have Windows Server 2012 R2, please install KB article 2982006 before upgrading. [Si trova qui](https://support.microsoft.com/kb/2982006/).
     
 - Se si esegue l'aggiornamento in una casella di Windows Server 2008 R2 (vedere la nota precedente), è necessario installare prima l'articolo della Knowledge Base 2533623. [È a questo collegamento](https://support.microsoft.com/kb/2533623/).
     
@@ -101,16 +101,16 @@ Skype for Business Server 2015 edizione Enterprise è un po' più complicato, ma
 |&nbsp;|&nbsp;|&nbsp;|&nbsp;|&nbsp;|
 |:-----|:-----|:-----|:-----|:-----|
 |Microsoft SQL Server 2019 Enterprise (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente. <br/> |Microsoft SQL Server 2017 Enterprise (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente. <br/> |Microsoft SQL Server 2016 Enterprise (edizione a 64 bit) con Service Pack 1 o versione successiva ed è necessario eseguire con Skype for Business Cumulative Update 7 o versione successiva ([download Skype for Business Cumulative Update](https://support.microsoft.com/help/3061064)).  <br/> |Microsoft SQL Server 2014 Enterprise (edizione a 64 bit) ed è necessario eseguire l'aggiornamento cumulativo 6 o versione successiva ([scaricare l'aggiornamento cumulativo 6).](https://support.microsoft.com/kb/3031047/)  <br/> |Microsoft SQL Server 2012 Enterprise (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente.  <br/> |
-|Microsoft SQL Server 2019 Standard (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente. <br/> |Microsoft SQL Server 2017 Standard (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente. <br/> |Microsoft SQL Server 2016 Standard (edizione a 64 bit) con Service Pack 1 o versione successiva ed è necessario eseguire con l'aggiornamento cumulativo 7 o versione successiva di Skype for Business ([download Skype for Business Aggiornamento cumulativo](https://support.microsoft.com/help/3061064)).  <br/> |Microsoft SQL Server 2014 Standard (edizione a 64 bit) ed è necessario eseguire l'aggiornamento cumulativo 6 o versione successiva ([scaricare l'aggiornamento cumulativo 6](https://support.microsoft.com/kb/3031047/)).  <br/> |Microsoft SQL Server 2012 Standard (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente.  <br/> |
+|Microsoft SQL Server 2019 Standard (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente. <br/> |Microsoft SQL Server 2017 Standard (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente. <br/> |Microsoft SQL Server 2016 Standard (edizione a 64 bit) con Service Pack 1 o versione successiva ed è necessario eseguire con l'aggiornamento cumulativo 7 o versione successiva di Skype for Business ([download Skype for Business Cumulative Update](https://support.microsoft.com/help/3061064)).  <br/> |Microsoft SQL Server 2014 Standard (edizione a 64 bit) ed è necessario eseguire l'aggiornamento cumulativo 6 o versione successiva ([scaricare l'aggiornamento cumulativo 6).](https://support.microsoft.com/kb/3031047/)  <br/> |Microsoft SQL Server 2012 Standard (edizione a 64 bit) ed è consigliabile eseguire con il Service Pack più recente.  <br/> |
    
 Se l'edizione SQL Server che si desidera utilizzare non è elencata qui, non è possibile utilizzarla.
   
-- Sarà inoltre necessario installare le SQL Server Reporting Services per il ruolo Monitoring Server.
+- Sarà inoltre necessario installare il SQL Server Reporting Services per il ruolo Monitoring Server.
 - Per una connessione SQL back-end, la connessione al front-end Skype for Business deve essere locale e non attraverso un collegamento a bassa velocità. 
 - La SQL back-end tra due o più pool non è supportata.
 
 ### <a name="microsoft-exchange-storage"></a>Archiviazione Exchange Microsoft
-I file di contenuto delle riunioni, ad esempio le presentazioni PowerPoint, sono archiviate come allegati. Se si desidera archiviare Skype for Business dati di archiviazione con i dati di conformità di Exchange, è necessario utilizzare Exchange per la distribuzione di Exchange e verificare che la dimensione massima di archiviazione supporti l'archiviazione dei file di contenuto delle riunioni. È necessario distribuire Exchange prima di distribuire e abilitare l'archiviazione utilizzando l'opzione di integrazione Exchange Microsoft. 
+I file di contenuto delle riunioni, ad esempio le presentazioni PowerPoint, sono archiviate come allegati. Se si desidera archiviare Skype for Business dati di archiviazione con i dati di conformità di Exchange, è necessario utilizzare Exchange per la distribuzione di Exchange e verificare che le dimensioni massime di archiviazione supportino l'archiviazione dei file di contenuto delle riunioni. È necessario distribuire Exchange prima di distribuire e abilitare l'archiviazione utilizzando l'opzione di integrazione Exchange Microsoft. 
     
 Se si sceglie di utilizzare l'archiviazione Exchange, non è necessario distribuire database SQL Server separati per l'archiviazione, a meno che non siano presenti utenti di Skype for Business non ospitati nei server Exchange. Se si distribuisce l'archiviazione utilizzando l'opzione di integrazione di Microsoft Exchange, i dati di archiviazione Skype for Business vengono archiviati con i dati di conformità Exchange solo per gli utenti ospitati nei server Exchange. 
   

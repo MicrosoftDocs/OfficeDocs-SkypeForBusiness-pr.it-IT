@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in Taiwan, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: 80858d3fea2928239543210c2bbe8f814b4f39e42d122a34158d035bd8ab406a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ad8bb88406cb5c9e61924169ad9da00d8efb3e02
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308307"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597920"
 ---
 # <a name="toll-free-dialing-restrictions-in-taiwan"></a>Restrizioni di composizione a numero verde a Taiwan
 

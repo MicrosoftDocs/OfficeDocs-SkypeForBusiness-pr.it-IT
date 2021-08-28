@@ -13,16 +13,16 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare la procedura guidata Teams per l'istruzione criteri di apprendimento per applicare facilmente criteri per studenti e docenti per mantenere sicuro l'ambiente di apprendimento.
 f1keywords: ''
-ms.openlocfilehash: 5e046e108f899f95e76df8c03d5fd6d25de4a942
-ms.sourcegitcommit: b1a61c0c48b93e82c7ca8a41b1a718ae3d147d55
+ms.openlocfilehash: d7e2959b5b824d8b053d9b912d0450c2209b4b1b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386685"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58604595"
 ---
 # <a name="use-the-teams-for-education-policy-wizard-to-easily-apply-policies-for-a-safe-learning-environment"></a>Usare la Teams per l'istruzione guidata criteri di protezione per applicare facilmente i criteri per un ambiente di apprendimento sicuro
 
@@ -69,7 +69,7 @@ Ora, iniziamo!
 
 Seguire questa procedura per eseguire la procedura guidata.
 
-1. Se non si ha la Teams, la procedura guidata viene avviata automaticamente. In caso contrario, è possibile avviare la procedura guidata in qualsiasi momento dal dashboard. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare **a** **Dashboard** e quindi nel riquadro Configurazione semplice dei criteri per un ambiente di apprendimento sicuro selezionare **Configurazione rapida.**
+1. Se non si ha la Teams, la procedura guidata viene avviata automaticamente. In caso contrario, è possibile avviare la procedura guidata in qualsiasi momento dal dashboard. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione Microsoft Teams, passare **a** **Dashboard** e quindi nel riquadro Configurazione semplice dei criteri per un ambiente di apprendimento sicuro selezionare **Configurazione rapida.**
 
     :::image type="content" source="media/easy-policy-setup-quick-setup.png" alt-text="Screenshot della procedura guidata nel dashboard":::
 
@@ -77,7 +77,7 @@ Seguire questa procedura per eseguire la procedura guidata.
 
     :::image type="content" source="media/easy-policy-setup-institution-type.png" alt-text="Screenshot della pagina della procedura guidata per selezionare il tipo di istituto":::
 
-3. Cercare e selezionare un gruppo che contiene docenti e personale, quindi selezionare **Avanti.** Se non è ancora stato configurato alcun gruppo per i docenti e il [personale,](/microsoft-365/admin/create-groups/create-groups)creare un gruppo e quindi eseguire di nuovo la procedura guidata. <br/><br/>Attualmente è possibile selezionare un solo gruppo. Ai docenti e al personale del gruppo selezionato verrà assegnato [un set](#policies-applied-by-the-wizard) di criteri personalizzati personalizzati in base alle proprie esigenze. Tenere presente che questo set di criteri è separato dai criteri applicati agli studenti.
+3. Cercare e selezionare un gruppo contenente i docenti e il personale, quindi selezionare **Avanti.** Se non è ancora stato configurato alcun gruppo per i docenti e il [personale,](/microsoft-365/admin/create-groups/create-groups)creare un gruppo e quindi eseguire di nuovo la procedura guidata. <br/><br/>Attualmente è possibile selezionare un solo gruppo. Ai docenti e al personale del gruppo selezionato verrà assegnato [un set](#policies-applied-by-the-wizard) di criteri personalizzati personalizzati in base alle proprie esigenze. Tenere presente che questo set di criteri è separato dai criteri applicati agli studenti.
 
     :::image type="content" source="media/easy-policy-setup-group.png" alt-text="Screenshot della pagina della procedura guidata per selezionare il gruppo di docenti e personale":::
 
@@ -97,7 +97,7 @@ Seguire questa procedura per eseguire la procedura guidata.
 ### <a name="step-1-remove-existing-policy-assignments-that-conflict-with-policies-applied-by-the-wizard"></a>Passaggio 1: Rimuovere le assegnazioni dei criteri esistenti in conflitto con i criteri applicati dalla procedura guidata
 
 > [!IMPORTANT]
-> **Completare questo  passaggio solo se sono** stati assegnati criteri esistenti a studenti o docenti e personale prima di eseguire la procedura guidata. Se non si ha la Teams e non sono presenti criteri diversi da quelli creati dalla procedura guidata, ignorare questa opzione e andare al passaggio 2.
+> **Completare questo  passaggio solo se sono** stati assegnati criteri esistenti a studenti o docenti e personale prima di eseguire la procedura guidata. Se non si ha Teams criteri esistenti diversi dai criteri creati dalla procedura guidata, ignorare questa opzione e andare al passaggio 2.
 
 In Teams, per un'area dei criteri specifica, un criterio può essere applicato a un utente nei modi seguenti:
 
@@ -131,7 +131,7 @@ Ad esempio, è stato assegnato un criterio di riunione direttamente ai docenti e
 
 La procedura guidata modifica e applica automaticamente [questi criteri.](#policies-applied-by-the-wizard) Sono disponibili alcune misure aggiuntive, che è possibile adottare in base alle esigenze dell'istituto per rimanere al sicuro.
 
-Per altri consigli sulla sicurezza, vedere Tenere gli studenti al sicuro [durante l'Teams per](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA) l'apprendimento a distanza.
+Per altri consigli sulla sicurezza, vedere Tenere gli studenti al sicuro [Teams l'apprendimento a](https://support.microsoft.com/office/keeping-students-safe-while-using-teams-for-distance-learning-f00fa399-0473-4d31-ab72-644c137e11c8#ID0EBBAAA) distanza.
 
 <a name="polwiz_mc"> </a>
 
@@ -139,7 +139,7 @@ Per altri consigli sulla sicurezza, vedere Tenere gli studenti al sicuro [durant
 
 Attualmente, la procedura guidata applica i criteri consigliati quando viene eseguita. È importante sapere che quando i nuovi criteri diventano disponibili in Teams, le impostazioni globali (predefinite a livello di organizzazione) per la sicurezza degli studenti vengono aggiornate automaticamente dalla procedura guidata. 
 
-Tuttavia, controllare [spesso](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) il Centro messaggi (nel interfaccia di amministrazione di Microsoft 365) per rimanere aggiornati sulle nuove caratteristiche e sui relativi criteri e impostazioni dei criteri in Teams. 
+Tuttavia, controllare [spesso](https://admin.microsoft.com/AdminPortal/Home?#/MessageCenter) il Centro messaggi (nel interfaccia di amministrazione di Microsoft 365) per rimanere aggiornati sulle nuove caratteristiche e sui criteri e le impostazioni dei criteri in Teams. 
 
 ## <a name="make-changes-in-the-wizard"></a>Apportare modifiche nella procedura guidata
 
@@ -147,7 +147,7 @@ Tuttavia, controllare [spesso](https://admin.microsoft.com/AdminPortal/Home?#/Me
 
 Se è necessario apportare modifiche dopo aver eseguito la procedura guidata, è possibile eseguirla di nuovo e modificare le selezioni.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare  a **Dashboard** e quindi nel riquadro Configurazione dei criteri per un ambiente di apprendimento sicuro selezionare **Cambia**.
+1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare **a** **Dashboard** e quindi nel riquadro Configurazione dei criteri per un ambiente di apprendimento sicuro selezionare **Cambia**.
 2. Da qui, continuare con ogni pagina della procedura guidata per apportare le modifiche. È possibile modificare il tipo di istituto, il gruppo di docenti e personale a cui si vogliono assegnare i criteri o entrambi.
 
 La tabella seguente riepiloga cosa succede quando si apporta una modifica nella procedura guidata.
@@ -182,7 +182,7 @@ Ecco le aree dei criteri e i nomi dei criteri corrispondenti coperti dalla proce
 
 |Area criteri  |Nome del criterio principale o secondario |Nome dei criteri per l'istruzione superiore |
 |---------|---------|---------|
-|Criteri di team   |Docenti e personale primario o secondario - Teams         |Docenti e personale dell'istruzione superiore - Teams         |
+|Criteri di team   |Docenti e personale docente primario o secondario - Teams         |Docenti e personale dell'istruzione superiore - Teams         |
 |Criterio di riunione    |Docenti e personale docente primario o secondario - Riunione         |Docenti e personale dell'istruzione superiore - Riunione         |
 |Criteri per gli eventi live   | Docenti e personale principale o secondario - Eventi live         |Docenti e personale dell'istruzione superiore - Eventi live         |
 |Criteri di messaggistica    |Docenti e personale docente primario o secondario - Messaggistica         | Docenti e personale dell'istruzione superiore - Messaggistica         |
@@ -247,7 +247,7 @@ Ecco un elenco delle definizioni dei criteri globali (predefinite a livello di o
 |  |       |Creare messaggi vocali         |Consentito nelle chat e nei canali         |Consentito nelle chat e nei canali|
 |  |       |Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti     |Abilitata         |Abilitata|
 |  |       |Rimuovere utenti dalle chat di gruppo         |Disattivato         |Attivato|
-|Criteri di autorizzazione per le app  |       |App Microsoft         |Bloccare app specifiche e consentire a tutti gli altri > Walkie Talkie bloccato         |Consenti tutte le app|
+|Criteri di autorizzazione per le app  |       |App Microsoft         |Bloccare app specifiche e consentire a tutti gli > Walkie Talkie bloccato         |Consenti tutte le app|
 |  |       |App di terze parti         |Consenti tutte le app         |Consenti tutte le app|
 |  |       |App personalizzate         |Consenti tutte le app         |Consenti tutte le app|
 |Criteri di configurazione delle app  |           |Upload app personalizzate           |Disattivato         |Disattivato|

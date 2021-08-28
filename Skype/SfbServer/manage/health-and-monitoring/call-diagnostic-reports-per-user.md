@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9da13470-001e-415f-b8c5-29b1f3b531ba
 description: 'Riepilogo: informazioni sui rapporti di diagnostica delle chiamate per utente usati in Skype for Business Server.'
-ms.openlocfilehash: b04050b2d2efb94781d310983083c2c3b8e86c30965a3467cc5fcabfc2aa00fb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c8caf074022514cca1792cedf60f77fae0506dfb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280969"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623668"
 ---
 # <a name="call-diagnostic-reports-per-user-in-skype-for-business-server"></a>Rapporti di diagnostica delle chiamate (per utente) in Skype for Business Server
   
@@ -47,10 +47,10 @@ Ken.my
 
 ## <a name="making-the-best-use-of-the-user-activity-report"></a>Utilizzo ottimale del report attività utente
 
-Anche se il Rapporto attività utente contiene molte informazioni, a volte può essere difficile individuarlo. Ad esempio, tutte le attività utente che si svolgono nell'organizzazione durante un periodo specificato sono incluse nel Rapporto attività utente. ciò significa che, nascosto, all'interno del report sono informazioni sugli utenti che hanno effettivamente usato Skype for Business Server in qualche modo.
+Anche se nel Rapporto attività utente sono disponibili molte informazioni, a volte può essere difficile individuarlo. Ad esempio, tutte le attività utente che si svolgono nell'organizzazione durante un periodo specificato sono incluse nel Rapporto attività utente. ciò significa che, nascosto, all'interno del report sono informazioni sugli utenti effettivamente usati Skype for Business Server in qualche modo.
 
 > [!NOTE]
-> Tecnicamente, è possibile che alcune attività degli utenti non vengano registrare: mentre Skype for Business Server cerca di mantenere le informazioni su tutte le chiamate telefoniche, è possibile che una chiamata possa essere stata effettuata senza che le informazioni sulla chiamata siano state scritte nel database. Skype for Business Server è progettato per offrire uno sguardo estremamente accurato, ma non necessariamente perfetto, al modo Skype for Business Server viene usato. Il fatto che non vi sia alcuna garanzia che il 100% di tutte le chiamate sia registrato spiega perché il monitoraggio Skype for Business Server non deve essere utilizzato come sistema di fatturazione. In secondo momento, un report di monitoraggio può visualizzare al massimo 1.000 record. Ciò significa che, a seconda della quantità di attività utente svolta e del periodo di tempo di riferimento, la query potrebbe non restituire tutti i dati effettivamente memorizzati nel database. 
+> Tecnicamente, è possibile che alcune attività degli utenti non vengano registrare: mentre Skype for Business Server cerca di mantenere le informazioni su tutte le chiamate telefoniche, è possibile che una chiamata possa essere stata effettuata senza che le informazioni sulla chiamata siano state scritte nel database. Skype for Business Server è progettato per fornire uno sguardo estremamente accurato, ma non necessariamente perfetto, al modo Skype for Business Server viene usato. Il fatto che non vi sia alcuna garanzia che il 100% di tutte le chiamate sia registrato spiega perché il monitoraggio Skype for Business Server non deve essere utilizzato come sistema di fatturazione. In secondo momento, un report di monitoraggio può visualizzare al massimo 1.000 record. Ciò significa che, a seconda della quantità di attività utente svolta e del periodo di tempo di riferimento, la query potrebbe non restituire tutti i dati effettivamente memorizzati nel database. 
 
 - Quali utenti hanno effettivamente usato il sistema in questo periodo di tempo?
 
@@ -123,7 +123,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 | **To** <br/>               | Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 17/07/12015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/17/12015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/13/2015  <br/> Le settimane vengono calcolate sempre dal lunedì alla domenica.  <br/>                                                             |
 | **Tipo di attività** <br/>    | Tipo di attività. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Peer-to-peer <br/>  Conferenza <br/>      |
 | **Modalità** <br/>         | La modalità disponibile varia a seconda del tipo di attività selezionato. Se il tipo di attività è Peer-to-Peer, è possibile selezionare Messaggistica istantanea. Trasferimento file; Condivisione applicazioni; Voce; o Video come modalità.  <br/> Se il tipo di attività è Conferenza, è possibile selezionare Messaggistica istantanea Telefono conferenza; Conferenza Web; Condivisione applicazioni; Conferenza vocale/video; o Conferenza telefonica.  <br/>         |
-| **Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Operazione completata <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
+| **Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Completato <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
 | **Prefisso URI utente** <br/>  | Indirizzo SIP dell'utente. Per visualizzare solo i record relativi all'utente Ken Myer, è necessario immettere l'indirizzo SIP di Ken Myer, ad esempio:  <br/> sip:kenmyer@litwareinc.com  <br/>
 
 ## <a name="metrics-for-peer-to-peer-sessions"></a>Metrica per le sessioni peer-to-peer

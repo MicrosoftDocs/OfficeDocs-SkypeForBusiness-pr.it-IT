@@ -15,19 +15,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINEX, NOFOLLOW
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 description: 'Scopri in che modo i Servizi di emergenza (911) differiscono dai servizi telefonici tradizionali e come effettuare una chiamata. '
-ms.openlocfilehash: 3bceef7d98cb2598422bb30a827bd9a0608a515887f6f3963291c06f6e8505a6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5dcc7195e4dc4d02bb6a9fb9dffde5aa044b3a0d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54336286"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58604475"
 ---
 # <a name="emergency-calling-terms-and-conditions"></a>Termini e condizioni per le chiamate al numero di emergenza
 
@@ -35,7 +35,7 @@ ms.locfileid: "54336286"
 
 Le chiamate ai Servizi di emergenza funzionano in modo diverso con i piani per chiamate in Microsoft 365 o Office 365 rispetto ai servizi telefonici tradizionali. È importante comprendere queste differenze e comunicarle a tutti gli utenti con Piani per chiamate in Microsoft 365 o Office 365. L'utente riconosce e accetta di aver letto e compreso le differenze nelle chiamate ai Servizi di emergenza e fornirà questo avviso a ogni utente con Piani per chiamate in Microsoft 365 o Office 365.
   
-Le differenze nelle funzionalità di chiamata dei Servizi di emergenza includono le seguenti: (i) Skype for Business e Teams potrebbero non conoscere la posizione effettiva di un chiamante che effettua una chiamata ai Servizi di emergenza, il che potrebbe comportare l'instradamento della chiamata al call center e/o ai servizi di emergenza non corretto. (ii) se il client Teams dell'utente è offline o se il dispositivo dell'utente non è in grado di accedere a Internet per qualsiasi motivo, ad esempio un'interruzione di rete o un'interruzione dell'alimentazione, le chiamate di Servizi di emergenza tramite Sistema telefonico in Microsoft 365 o Office 365 non sono supportate e non dovrebbero funzionare; e (iii) anche se piani per chiamate in Microsoft 365 o Office 365 possono essere usati in qualsiasi parte del mondo in cui è disponibile una connessione Internet, gli utenti non devono effettuare una chiamata di emergenza da una località esterna al proprio paese/area geografica perché è probabile che la chiamata non verrà instradata al call center appropriato in quel paese/area geografica.
+Le differenze nelle funzionalità di chiamata dei Servizi di emergenza includono le seguenti: (i) Skype for Business e Teams potrebbero non conoscere la posizione effettiva di un chiamante che effettua una chiamata ai Servizi di emergenza, il che potrebbe comportare l'instradamento della chiamata al call center e/o ai servizi di emergenza non corretto. (ii) se il client Teams dell'utente è offline o se il dispositivo dell'utente non è in grado di accedere a Internet per qualsiasi motivo, ad esempio un'interruzione di rete o un'interruzione dell'alimentazione, le chiamate ai Servizi di emergenza tramite Sistema telefonico in Microsoft 365 o Office 365 non sono supportate e non dovrebbero funzionare; e (iii) anche se i Piani per chiamate in Microsoft 365 o Office 365 possono essere usati in qualsiasi parte del mondo in cui è disponibile una connessione Internet, gli utenti non devono effettuare una chiamata di emergenza da una località esterna al proprio paese/area geografica perché è probabile che la chiamata non verrà instradata al call center appropriato in quel paese/area geografica.
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](./phone-number-calling-plans/port-order-overview.md)

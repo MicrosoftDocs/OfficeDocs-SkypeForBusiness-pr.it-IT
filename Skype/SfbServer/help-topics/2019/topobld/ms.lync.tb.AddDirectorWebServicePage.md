@@ -11,20 +11,20 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddDirectorWebServicePage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3ed3bdde-c3b5-4fe9-a96b-37099cbd6234
 ROBOTS: NOINDEX, NOFOLLOW
-description: L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net , l'URL di base è pool01.contoso.net.
-ms.openlocfilehash: 5b96d6a6cfde753a06a6ef321b33c4d27515172b4c940058751da9c94ad7fbe8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è , l'URL di base è https://pool01.contoso.net pool01.contoso.net.
+ms.openlocfilehash: fa664f19efaf4fe120ca96fdf04f69a58e59d3f1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54294683"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58590326"
 ---
 # <a name="add-director-web-service"></a>Aggiungere il servizio Web del Director
  
-L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è https://pool01.contoso.net , l'URL di base è pool01.contoso.net.
+L'URL di base è l'identità dei servizi Web per l'URL meno https://. Ad esempio, se l'URL completo per i servizi Web del pool è , l'URL di base è https://pool01.contoso.net pool01.contoso.net.
   
 Non è possibile sostituire il nome di dominio completo (FQDN) del pool di servizi Web interno se si sta distribuendo solo un singolo Director. Se si sta configurando un bilanciamento del carico DNS (Domain Name System) per il pool di Director, è possibile specificare un URL di base interno diverso (che deve essere diverso dall'FQDN del pool e potrebbe essere, ad esempio, internal- \<your base URL\> ).
   

@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 36bed690-6e22-4e11-88c1-b40a20836c6a
 description: 'Riepilogo: informazioni su come gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server.'
-ms.openlocfilehash: 2175b1bc66425b98ade2a421a3f3cb477856ffb240bd835646164bc85dd668d8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7ba225920fd511d70efe1e063cb77dbd77d9721f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54341891"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623728"
 ---
 # <a name="manage-conferencing-server-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del server per conferenze in Skype for Business Server
  
@@ -50,7 +50,7 @@ New-CsConferencingConfiguration -Identity site:Redmond -Organization Litwareinc
 
 Si noti che è possibile disporre di una sola raccolta di questo tipo per sito, pertanto questo comando avrà esito negativo se il sito Redmond dispone già di una raccolta di impostazioni di configurazione delle conferenze. 
   
-Nell'esempio seguente viene definita una nuova raccolta di impostazioni di configurazione delle conferenze, inizialmente archiviate in memoria e quindi applicate al sito Redmond in un secondo momento. 
+Nell'esempio seguente viene definita una nuova raccolta di impostazioni di configurazione delle conferenze, che vengono inizialmente archiviate in memoria e quindi applicate al sito Redmond in un secondo momento. 
   
 Nel primo comando viene utilizzato il cmdlet **New-CsConferencingConfiguration** per creare una nuova raccolta in memoria di impostazioni archiviate nella variabile $x. Il parametro InMemory consente di specificare che la raccolta deve essere creata in memoria anziché essere immediatamente applicata al sito Redmond.
   
