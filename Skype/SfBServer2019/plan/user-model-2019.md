@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
 description: Gli argomenti di questa sezione consentono di comprendere come pianificare e distribuire Skype for Business Server in modo da poter pianificare in modo adeguato il numero di utenti nell'organizzazione e pianificare il carico del server generato dalle relative attività.
-ms.openlocfilehash: aaa34d4ec935735215da36d888ab3c5155f158b89fd366546eac14b3f6259482
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 090d209d1b60d866ddabe976ffb8b04394712525
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54277641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600891"
 ---
 # <a name="capacity-planning-for-skype-for-business-server-2019"></a>Pianificazione della capacità per Skype for Business Server 2019
 
@@ -55,7 +55,7 @@ Nella tabella seguente sono riepilogati i suggerimenti.
 > [!NOTE]
 > I pool stretch non sono supportati per questo ruolo del server.
 
-In un pool Front End, è necessario disporre di un Front End Server per ogni 6.660 utenti ospitati nel pool, presupponendo che l'hyperthreading sia abilitato in tutti i server del pool, che si utilizzi SQL Server Express Edition e che l'hardware del server soddisfi i requisiti del server per [Skype for Business Server 2019.](system-requirements.md) Il numero massimo di utenti in un pool Front End è 106.000, presupponendo di nuovo che l'hyperthreading sia abilitato e che SQL Server Express Edition sia utilizzato in tutti i server del pool. Se si dispone di più di 106.000 utenti in un sito, è possibile distribuire più di un pool Front End.
+In un pool Front End, è necessario disporre di un Front End Server per ogni 6.660 utenti ospitati nel pool, presupponendo che l'hyperthreading sia abilitato in tutti i server del pool, che si utilizzi SQL Server Express Edition e che l'hardware del server soddisfi i requisiti del server per [Skype for Business Server 2019.](system-requirements.md) Il numero massimo di utenti in un pool Front End è 106.000, presupponendo che l'hyperthreading sia abilitato e che SQL Server Express Edition sia utilizzato in tutti i server del pool. Se si dispone di più di 106.000 utenti in un sito, è possibile distribuire più di un pool Front End.
 
 Quando si specifica il numero di utenti in un pool Front End, includere tutti gli utenti ospitati in Survivable Branch Appliance e Survivable Branch Server nelle succursali associate a questo pool Front End.
 
@@ -86,9 +86,9 @@ Nella tabella seguente viene mostrata la larghezza di banda media per la messagg
 
 Dato il modello utente che il 5% degli utenti di un pool può essere in una conferenza contemporaneamente, un pool di 106.000 utenti potrebbe avere circa 5.300 utenti in conferenze contemporaneamente. Le conferenze saranno variabili nel tipo di contenuti multimediali (ad esempio alcune solo di messaggistica istantanea, altre di messaggistica istantanea e audio, altre audio/video) e nel numero di partecipanti. Non esiste un limite rigido per il numero effettivo di conferenze consentite e l'utilizzo effettivo determina le prestazioni effettive. Ad esempio, se nell'organizzazione sono presenti molte più conferenze in modalità mista rispetto a quelle ipotizzate nel modello utente, potrebbe essere necessario distribuire più Front End Server o A/V Conferencing Server rispetto ai suggerimenti riportati in questo articolo. Per informazioni dettagliate sui presupposti nel modello utente, vedere [Modelli utente in Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/user-models.md).
 
-La dimensione massima supportata per le conferenze ospitata da un Skype for Business Server Front End che ospita anche gli utenti è di 250 partecipanti. Mentre è in corso una conferenza con 250 utenti, il pool supporta ancora anche altre conferenze, in modo che un totale del 5% degli utenti del pool si trova in conferenze simultanee. Ad esempio, in un pool di 16 Front End Server e 106.000 utenti, mentre è in corso la conferenza con 250 utenti, Skype for Business Server supporta altri 5.050 utenti che partecipano a conferenze più piccole.
+La dimensione massima supportata per le conferenze ospitata da un pool Front End Skype for Business Server che ospita anche gli utenti è di 250 partecipanti. Mentre è in corso una conferenza con 250 utenti, il pool supporta ancora anche altre conferenze, in modo che un totale del 5% degli utenti del pool si trova in conferenze simultanee. Ad esempio, in un pool di 16 Front End Server e 106.000 utenti, mentre è in corso la conferenza con 250 utenti, Skype for Business Server supporta altri 5.050 utenti che partecipano a conferenze più piccole.
 
-Indipendentemente dal numero di utenti ospitati nel pool Front End o nel server edizione Standard, Skype for Business Server supporta almeno 125 altri utenti che partecipano a conferenze più piccole nello stesso pool o server che ospita una conferenza per 250 utenti.
+Indipendentemente dal numero di utenti ospitati nel pool Front End o nel server edizione Standard, Skype for Business Server supporta almeno 125 altri utenti che partecipano a conferenze più piccole nello stesso pool o server che ospita una conferenza da 250 utenti.
 
 Per abilitare conferenze con un numero di utenti compreso tra 250 e 1000, è possibile configurare un pool Front End separato solo per ospitare tali conferenze. Questo pool Front End non ospiterà alcun utente. Per informazioni dettagliate, vedere [Plan for large meetings in Skype for Business Server](../../SfbServer/plan-your-deployment/conferencing/large-meetings.md).
 
@@ -99,12 +99,12 @@ Se nell'organizzazione sono presenti molte più conferenze in modalità mista di
 > [!NOTE]
 > I pool stretch non sono supportati per questo ruolo del server.
 
-È consigliabile distribuire un server perimetrale ogni 18.000 utenti remoti che accederanno a un sito contemporaneamente. Per la disponibilità elevata è consigliabile un minimo di due server perimetrali. Questi suggerimenti presuppongono che l'hardware per i server perimetrali soddisfi i suggerimenti in [Server Hardware Platforms](/previous-versions/office/lync-server-2013/lync-server-2013-server-hardware-platforms).
+È consigliabile distribuire un server perimetrale per ogni 18.000 utenti remoti che accederanno a un sito contemporaneamente. Per la disponibilità elevata è consigliabile un minimo di due server perimetrali. Questi suggerimenti presuppongono che l'hardware per i server perimetrali soddisfi i suggerimenti in [Server Hardware Platforms](/previous-versions/office/lync-server-2013/lync-server-2013-server-hardware-platforms).
 
 Quando si calcola il numero di utenti per i server perimetrali, includere gli utenti ospitati in Survivable Branch Appliance e Survivable Branch Server nelle succursali associate a un pool Front End del sito.
 
 > [!NOTE]
-> Per migliorare le prestazioni del servizio A/V Conferencing Edge nei server perimetrali è opportuno abilitare Receive-Side Scaling (RSS) nelle schede di rete dei server perimetrali. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere [Receive Side Scaling (RSS) in Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11)). Per informazioni dettagliate su come abilitare RSS, è necessario fare riferimento alla documentazione della scheda di rete.
+> Per migliorare le prestazioni del servizio A/V Conferencing Edge nei server perimetrali è opportuno abilitare Receive-Side Scaling (RSS) nelle schede di rete dei server perimetrali. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, [vedere Receive Side Scaling (RSS) in Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11)). Per informazioni dettagliate su come abilitare RSS, è necessario fare riferimento alla documentazione della scheda di rete.
 
 ## <a name="director"></a>Direttore
 
@@ -122,11 +122,11 @@ Quando si calcola il numero di utenti per i Director, includere gli utenti ospit
 
 Se si colloca Mediation Server con Front End Server, Mediation Server viene eseguito in ogni Front End Server del pool e deve fornire capacità sufficiente per gli utenti del pool.
 
-Se si distribuisce un pool Mediation Server autonomo, il numero di Mediation Server da distribuire dipende da molti fattori, tra cui l'hardware utilizzato per Mediation Server, il numero di utenti VoIP disponibili, il numero di peer gateway che ogni pool Mediation Server controlla, il traffico di ore di punta attraverso tali gateway e la percentuale di chiamate con supporti che ignorano il Mediation Server.
+Se si distribuisce un pool Mediation Server autonomo, il numero di Mediation Server da distribuire dipende da molti fattori, tra cui l'hardware utilizzato per Mediation Server, il numero di utenti VoIP, il numero di peer gateway che ogni pool Mediation Server controlla, il traffico di ore di punta attraverso tali gateway e la percentuale di chiamate con supporti che ignorano il Mediation Server.
 
 Le tabelle seguenti forniscono una linea guida per il numero di chiamate simultanee che un Mediation Server è in grado di gestire, presupponendo che l'hardware per i Mediation Server soddisfi i requisiti in [Piattaforme hardware](/previous-versions/office/lync-server-2013/lync-server-2013-server-hardware-platforms) server e che l'hyperthreading sia abilitato. Per informazioni dettagliate sulla scalabilità di Mediation Server, vedere [Estimating voice usage and traffic for Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/estimating-voice-traffic.md) and Deployment guidelines for Mediation Server in [Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/mediation-server-deployment-guidelines.md).
 
-Tutte le tabelle seguenti presuppongono che l'utilizzo sia riepilogato [in Modelli utente in Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/user-models.md).
+Tutte le tabelle seguenti presuppongono l'utilizzo come riepilogato in [Modelli utente in Skype for Business Server](../../SfbServer/plan-your-deployment/capacity/user-models.md).
 
 **Capacità mediation server autonomo: 70% utenti interni, 30% utenti esterni con capacità di chiamata non bypass (transcodamento multimediale eseguito da Mediation Server)**
 
@@ -145,7 +145,7 @@ Tutte le tabelle seguenti presuppongono che l'utilizzo sia riepilogato [in Model
 |Intel Xeon E5-2673 v3 dual processor, 6 core, 2,4 gigahertz (GHz) o superiore., con 64 GB di memoria e 2 schede di rete da 1 GB.  <br/> |200  <br/> |
 
 > [!NOTE]
-> Questo numero è molto più piccolo dei numeri per il Mediation Server autonomo. Questo perché il Front End Server deve gestire altre funzionalità e funzioni per i 6600 utenti ospitati su di esso, oltre alla transcodatura necessaria per le chiamate vocali.
+> Questo numero è molto più piccolo rispetto ai numeri per il Mediation Server autonomo. Questo perché il Front End Server deve gestire altre funzionalità e funzioni per i 6600 utenti ospitati su di esso, oltre alla transcodatura necessaria per le chiamate vocali.
 
 > [!NOTE]
 > Per migliorare le prestazioni del Mediation Server, è consigliabile abilitare il ridimensionamento sul lato ricezione (RSS) sulle schede di rete nei Mediation Server. RSS consente la gestione parallela dei pacchetti in ingresso da parte di più processori del server. Per informazioni dettagliate, vedere "[Receive-Side Scaling in Windows Server 2012](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/hh997036(v=ws.11))". Per informazioni dettagliate su come abilitare RSS, è necessario fare riferimento alla documentazione della scheda di rete.
@@ -158,7 +158,7 @@ Per garantire la disponibilità elevata del server back-end, è consigliabile di
 
 ## <a name="monitoring-and-archiving"></a>Monitoraggio e archiviazione
 
-Se si distribuisce il monitoraggio o l'archiviazione, la funzionalità front-end di questi servizi viene eseguita nei Front End Server, ognuno dei quali utilizza il proprio archivio database, separato dall'archivio back-end. In alternativa, se è stata Exchange 2013, è possibile archiviare i dati di archiviazione dei messaggi istantanei in Exchange anziché in un archivio SQL dedicato.
+Se si distribuisce il monitoraggio o l'archiviazione, la funzionalità front-end di questi servizi viene eseguita nei Front End Server, ognuno dei quali utilizza il proprio archivio database, separato dall'archivio back-end. In alternativa, se è stato distribuito Exchange 2013, è possibile archiviare i dati di archiviazione dei messaggi istantanei in Exchange anziché in un archivio SQL dedicato.
 
 Nella tabella seguente viene indicata approssimativamente la quantità di spazio di archiviazione del database necessaria per utente al giorno per i dati di monitoraggio e archiviazione.
 
@@ -182,9 +182,9 @@ Microsoft ha utilizzato l'hardware nella tabella seguente per il server di datab
 |**Unità** <br/> |**Configurazione RAID** <br/> |**Numero di dischi** <br/> |
 |:-----|:-----|:-----|
 |CdR, QoE e file di dati del database di archiviazione in una singola unità  <br/> |1+0  <br/> |16   <br/> |
-|File di registro del database CDR  <br/> |1  <br/> |2  <br/> |
-|File di registro del database QoE  <br/> |1  <br/> |2  <br/> |
-|File di registro del database di archiviazione  <br/> |1  <br/> |2  <br/> |
+|File di registro del database CDR  <br/> |1   <br/> |2   <br/> |
+|File di registro del database QoE  <br/> |1   <br/> |2   <br/> |
+|File di registro del database di archiviazione  <br/> |1   <br/> |2   <br/> |
 
 ## <a name="video-interop-server-capacity"></a>Capacità di Video Interop Server
 

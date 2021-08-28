@@ -14,15 +14,15 @@ search.appverid: MET150
 description: Assistenza per la risoluzione dei problemi relativi all'accesso guest in Microsoft Teams.
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: aaca5da3140761a4a0fc9194c8acb31325d0aceaa9463ab7517779865aa479cf
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5b539116fb5e81156a56c5f73146b92eea898765
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296443"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600931"
 ---
 # <a name="troubleshoot-problems-with-guest-access-in-microsoft-teams"></a>Risolvere i problemi relativi all'accesso guest in Microsoft Teams
 
@@ -41,7 +41,7 @@ L'accesso guest in Teams utilizza Azure Active Directory (Azure AD) Business to 
 > [!NOTE]
 > Teams deve essere abilitato nel tenant di casa di un guest per poter accedere e usare Teams come guest in un altro tenant (risorsa).
 
-Se vengono visualizzati errori di licenza, leggere il modello di fatturazione per le identità esterne di [Azure AD](/azure/active-directory/external-identities/external-identities-pricing) per determinare i requisiti di licenza per soddisfare le esigenze di accesso guest nell'organizzazione.
+Se vengono visualizzati errori di licenza, leggere il modello di fatturazione per le identità esterne di [Azure AD](/azure/active-directory/external-identities/external-identities-pricing) per determinare i requisiti di licenza per soddisfare le proprie esigenze di accesso guest nell'organizzazione.
 
 - Le licenze guest vengono conteggiate rispetto all'organizzazione che invita: tenerlo presente quando si calcola il numero di licenze necessarie.
 - Le licenze vengono conteggiate in base all'organizzazione, indipendentemente dal fatto che gli invitati provengono da un'altra Microsoft 365 o che utilizzino i loro indirizzi di posta elettronica personali.

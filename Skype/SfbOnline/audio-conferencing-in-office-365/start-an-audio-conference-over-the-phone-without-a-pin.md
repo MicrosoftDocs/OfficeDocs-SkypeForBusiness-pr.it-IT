@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: "Informazioni su come abilitare o disabilitare la partecipazione dei chiamanti anonimi a una riunione dall'interfaccia di amministrazione di Skype for Business o utilizzando uno script di PowerShell. "
-ms.openlocfilehash: fc44494c916f8245bf1030c15311ee4e5e01a52382e93c04b9dcd8b29a758428
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5403d984d5e87b929db4d1ebc3c7eeba34f3744c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318061"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600861"
 ---
 # <a name="start-an-audio-conference-over-the-phone-without-a-pin-in-skype-for-business-online"></a>Avviare un'audioconferenza tramite telefono senza un PIN in Skype for Business online
 
@@ -50,7 +50,7 @@ Non è necessario un PIN per l'organizzatore della riunione se qualcuno ha avvia
     
 2. Nell'elenco selezionare l'utente e nel riquadro Azioni fare clic su **Modifica.** 
     
-3. Nella pagina delle proprietà dell'utente, in Opzioni **riunione,** selezionare o deselezionare Consenti ai chiamanti non autenticati di essere i primi **utenti di una riunione. In caso contrario, attenderà nella sala d'attesa finché un utente autenticato non si unisce**.
+3. Nella pagina delle proprietà dell'utente, **in** Opzioni riunione, selezionare o deselezionare Consenti ai chiamanti non autenticati di essere i primi **utenti di una riunione. In caso contrario, attenderà nella sala d'attesa finché un utente autenticato non partecipa**.
     
 4. Fare clic su **Salva**. 
 
@@ -66,7 +66,7 @@ Non è necessario un PIN per l'organizzatore della riunione se qualcuno ha avvia
 
 ## <a name="what-else-should-you-know"></a>Informazioni aggiuntive
 
-- Per reimpostare il PIN, vedere Reimpostare [il PIN dei servizi di audioconferenza.](reset-the-audio-conferencing-pin.md)
+- Se si vuole reimpostare il PIN, vedere Reimpostare [il PIN di audioconferenza.](reset-the-audio-conferencing-pin.md)
     
 - Se l'accesso anonimo o la richiesta di un PIN per avviare una riunione è disabilitata:
     
@@ -90,7 +90,7 @@ Non è necessario un PIN per l'organizzatore della riunione se qualcuno ha avvia
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

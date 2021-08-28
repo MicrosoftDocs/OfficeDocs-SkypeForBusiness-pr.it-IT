@@ -9,15 +9,15 @@ ms.topic: overview
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: 'Riepilogo: queste funzionalità sono nuove in Skype for Business Server 2019.'
-ms.openlocfilehash: cbdfcd92fbb6fbaefb75024dcb1e393ad5049e636e463bc4ad97588279702151
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b58c61702d447a7b68e9fa7e09cc6e539e682582
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295963"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600901"
 ---
 # <a name="whats-in-skype-for-business-server-2019"></a>Novità di Skype for Business Server 2019
 
@@ -31,7 +31,7 @@ Le nuove funzionalità di Skype for Business Server 2019 includono le seguenti:
 
 ## <a name="unified-messaging-services-cloud-voicemail"></a>Servizi di messaggistica unificata: Cloud Voicemail
 
-Exchange La messaggistica unificata rimane disponibile Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione di messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità Cloud Voicemail e cloud Operatore automatico.  
+Exchange La messaggistica unificata rimane disponibile Skype for Business Server 2019 quando si integra Skype for Business 2019 con Exchange 2013 o Exchange 2016. A causa delle modifiche apportate al supporto in Exchange 2019, l'integrazione di messaggistica unificata di Exchange viene de-enfatizzata a favore delle funzionalità Cloud Voicemail e Cloud Operatore automatico.  
 
 Cloud Voicemail consente a tutti gli utenti di Skype for Business 2019&#x2014;che siano ospitati in locale o online&#x2014;di avere accesso allo stesso servizio di segreteria telefonica in Microsoft Cloud. Cloud Voicemail offre i vantaggi seguenti sia per gli utenti locali che per gli utenti online:
 
