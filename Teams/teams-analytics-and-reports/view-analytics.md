@@ -9,23 +9,23 @@ ms.service: msteams
 ms.reviewer: rahulmi
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 MS.collection:
 - M365-collaboration
 description: Informazioni su analisi tra team, analisi per team e analisi per canale in Teams, che consentono agli utenti di visualizzare i dati di utilizzo per i team o i canali di cui fanno parte.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e5eac5dd4b16511041da58bc16d142a613c365982fb5f58b3c308b05df2924ff
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0aa140482188436a08732638196af64402e6ed15
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54292953"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606999"
 ---
 # <a name="view-analytics-in-teams"></a>Visualizzare l'analisi in Teams
 
-In Microsoft Teams, gli utenti possono visualizzare le analisi per i team e i canali di cui fanno parte. Queste informazioni offrono agli utenti informazioni approfondite sui modelli di utilizzo e sulle attività dei team. Gli utenti possono visualizzare dati come il numero di utenti attivi, post, risposte e altro ancora a tre livelli.
+In Microsoft Teams, gli utenti possono visualizzare l'analisi per i team e i canali di cui fanno parte. Queste informazioni offrono agli utenti informazioni approfondite sui modelli di utilizzo e sulle attività dei team. Gli utenti possono visualizzare dati come il numero di utenti attivi, post, risposte e altro ancora a tre livelli.
 
 - **L'analisi tra team** offre agli utenti un'ampia panoramica dei dati di utilizzo per tutti i team di cui sono membri o proprietari in un'unica visualizzazione elenco.
 - **L'analisi per team** offre agli utenti una visualizzazione più granulare, che mostra i dati di utilizzo per un team specifico.
@@ -35,7 +35,7 @@ Gli utenti possono filtrare una di queste visualizzazioni per visualizzare i dat
 
 ## <a name="view-cross-team-analytics"></a>Visualizzare l'analisi tra team
 
-1. In Teams, nella parte inferiore dell'elenco dei team, accanto **a Partecipa o crea un team,** fai clic su Gestisci **team.**
+1. In Teams, nella parte inferiore dell'elenco dei team, accanto a Partecipa o crea **un team,** fai clic **su Gestisci team.**
 2. Fare clic **sulla scheda** Analisi.
 3. Selezionare un intervallo di date per visualizzare i dati di utilizzo per tutti i team di cui si è membri o di cui si è proprietari.
 
@@ -61,7 +61,7 @@ Gli utenti possono filtrare una di queste visualizzazioni per visualizzare i dat
 
     |Elemento |Descrizione  |
     |--------|-------------|
-    |**Riepilogo**   |Riepilogo dell'attività del team, tra cui:<ul><li>**Utenti:** numero totale di utenti nel periodo di tempo specificato. Sono inclusi i proprietari del team, i membri del team e gli utenti guest.</li> <li>**Post:** numero di nuovi messaggi pubblicati nella chat del team durante il periodo di tempo specificato.</li><li>**Risposte:** numero di risposte nella chat del team durante il periodo di tempo specificato.</li> <li>**App:** numero di app aggiunte al team.</li><li>**Riunioni:** numero di Teams riunioni organizzate a livello di team.</li> </ul> |
+    |**Riepilogo**   |Riepilogo dell'attività del team, tra cui:<ul><li>**Utenti:** numero totale di utenti nel periodo di tempo specificato. Sono inclusi i proprietari del team, i membri del team e gli utenti guest.</li> <li>**Post:** numero di nuovi messaggi pubblicati nella chat del team durante il periodo di tempo specificato.</li><li>**Risposte:** numero di risposte nella chat del team durante il periodo di tempo specificato.</li> <li>**App:** numero di app aggiunte al team.</li><li>**Riunioni:** numero di Teams organizzate a livello di team.</li> </ul> |
     |**Utenti attivi**   |Numero di utenti attivi e inattivi.|
     |**Ruolo**   |Numero di utenti per ruolo, inclusi i proprietari del team, i membri del team e gli utenti guest.|
     |**Grafico Utenti** attivi  |Numero di attività giornaliere. Posizionare il puntatore del mouse sul punto in una data specifica per visualizzare il numero di utenti attivi in tale data.|

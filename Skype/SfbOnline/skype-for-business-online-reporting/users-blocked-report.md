@@ -13,24 +13,24 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Reporting
-description: "Questo report, insieme ad altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo della rete PSTN all'interno dell'organizzazione. "
-ms.openlocfilehash: beacb15a283402c4ba4c7f2ec223eb6d9f48b2702e9aaabc565224eb0b391fc8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Questo report, insieme ad altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo di PSTN nell'intera organizzazione. "
+ms.openlocfilehash: f2708512dfb1cf03e367af09abb288e62329eaf0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314942"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606725"
 ---
 # <a name="users-blocked-report"></a>Report utenti bloccati
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Il nuovo dashboard Skype for Business **report** mostra la panoramica delle attività nei Skype for Business prodotti dell'organizzazione. Consente di eseguire il drill-in di singoli report a livello di prodotto per fornire informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, è possibile usare il **report** Skype for Business utenti bloccati per visualizzare gli utenti dell'organizzazione a cui è stato impedito di effettuare chiamate PSTN. Questo report, insieme ad altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo della rete PSTN all'interno dell'organizzazione.
+Il nuovo dashboard Skype for Business **report** mostra la panoramica delle attività nei Skype for Business prodotti dell'organizzazione. Consente di eseguire il drill-in di singoli report a livello di prodotto per fornire informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, è possibile usare il **report** Skype for Business utenti bloccati per visualizzare gli utenti dell'organizzazione a cui è stato impedito di effettuare chiamate PSTN. Questo report, insieme ad altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo di PSTN nell'intera organizzazione.
   
  Vedere la [panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
@@ -41,7 +41,7 @@ Il nuovo dashboard Skype for Business **report** mostra la panoramica delle atti
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-- Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business**  >  **l'interfaccia di amministrazione Segnala**  >  **gli** utenti  >  **bloccati**.
+- Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business** di amministrazione  >  **Segnala**  >  **gli** utenti  >  **bloccati**.
     
 ## <a name="interpret-the-skype-for-business-users-blocked-report"></a>Interpretare il report Skype for Business utenti bloccati
 
@@ -77,7 +77,7 @@ Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e 
     
 - [Report attività organizzatore di conferenze in Skype for Business](conference-organizer-activity-report.md) permette di vedere quanto gli utenti organizzano conferenze che utilizzano messaggistica istantanea, audio/video, condivisione applicazioni, web, accesso esterno in ingresso/uscita di terze parti e accesso esterno in ingresso/uscita Microsoft.
     
-- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenze telefoniche con accesso esterno/esterno a cui si partecipa.
+- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenza telefonica con accesso esterno/esterno a cui si partecipa.
     
 - [Report attività peer-to-peer in Skype for Business](peer-to-peer-activity-report.md) - Permette di vedere quanto gli utenti usano messaggistica istantanea, audio/video, condivisione applicazioni e trasferimento di file.
     

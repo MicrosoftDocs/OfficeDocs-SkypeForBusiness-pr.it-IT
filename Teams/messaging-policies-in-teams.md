@@ -12,7 +12,7 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ ms.custom:
 - ms.teamsadmincenter.messagingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni sui criteri di messaggistica e su come possono essere usati per controllare la messaggistica chat in Teams.
-ms.openlocfilehash: 3fc25286f9c17d2e4521fbbaa2ff438b33552d4344550d689043f571bfc5c4f0
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 535d240054f3bdb670594635e8b89a2f9785d7e1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350688"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58629318"
 ---
 # <a name="manage-messaging-policies-in-teams"></a>Gestire i criteri di messaggistica in Teams
 
@@ -33,11 +33,11 @@ ms.locfileid: "54350688"
 
 I criteri di messaggistica vengono usati per controllare quali funzionalità di messaggistica di chat e canale sono disponibili per gli utenti (proprietari e [membri)](assign-roles-permissions.md) in Microsoft Teams. È possibile usare i criteri globali (impostazione predefinita a livello di organizzazione) creati automaticamente oppure creare e assegnare criteri di messaggistica personalizzati.
 
-Gli utenti dell'organizzazione otterrà automaticamente i criteri globali, a meno che non si creino e assegnino criteri personalizzati. Modificare le impostazioni nei criteri globali oppure creare e assegnare uno o più criteri personalizzati per attivare o disattivare le caratteristiche desiderate.
+Gli utenti dell'organizzazione riceveranno automaticamente i criteri globali, a meno che non si creino e assegnino criteri personalizzati. Modificare le impostazioni nei criteri globali oppure creare e assegnare uno o più criteri personalizzati per attivare o disattivare le caratteristiche desiderate.
 
 ## <a name="create-a-custom-messaging-policy"></a>Creare criteri di messaggistica personalizzati
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Criteri di messaggistica.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a **Criteri di messaggistica.**
 2. Selezionare **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio.
 4. Scegliere le impostazioni desiderate.
@@ -55,7 +55,7 @@ Assegnare quindi il criterio agli utenti.
 
 È possibile modificare il criterio globale e i criteri personalizzati creati.
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a **Criteri di messaggistica.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare a **Criteri di messaggistica.**
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Da lì, apportare le modifiche desiderate.
 4. Selezionare **Salva**.
@@ -103,12 +103,12 @@ Ecco le impostazioni dei criteri di messaggistica che è possibile configurare.
     - **Consentito solo nelle chat** Questo significa che gli utenti possono lasciare i messaggi audio nelle chat, ma non nei canali.
     - **Disabilitato** Questo significa che gli utenti non possono creare messaggi audio nelle chat o nei canali.  
 - **Nei dispositivi mobili, visualizza i canali preferiti sopra le chat recenti** Abilitare questa impostazione per spostare i canali preferiti nella parte superiore dello schermo del dispositivo mobile in modo che un utente non sia necessario scorrere per trovarli.
-- **Consentire a un utente di rimuovere utenti da una chat di gruppo** Attivare questa impostazione per consentire a un utente di rimuovere altri utenti da una chat di gruppo. Questa caratteristica consente di continuare una chat con un gruppo di persone più piccolo senza perdere la cronologia della chat.
+- **Consentire a un utente di rimuovere utenti da una chat di gruppo** Attivare questa impostazione per consentire a un utente di rimuovere altri utenti da una chat di gruppo. Questa funzionalità consente di continuare una chat con un gruppo di persone più piccolo senza perdere la cronologia della chat.
 - **Abilitare le risposte suggerite**  Attivare questa impostazione per abilitare le risposte suggerite per i messaggi di chat.
 - **Ruolo di autorizzazione chat** Usare questa impostazione per definire il ruolo di chat supervisionato dell'utente.  Altre informazioni sulla [chat supervisionata](supervise-chats-edu.md).
 
 > [!NOTE]
-> Alcune di queste impostazioni, ad esempio Giphys, possono essere configurate anche a livello di team dai proprietari del team e a livello di canale privato dai proprietari dei canali privati.
+> Alcune di queste impostazioni, ad esempio giphys, possono anche essere configurate a livello di team dai proprietari del team e a livello di canale privato dai proprietari di canali privati.
 
 ### <a name="related-topics"></a>Argomenti correlati
 

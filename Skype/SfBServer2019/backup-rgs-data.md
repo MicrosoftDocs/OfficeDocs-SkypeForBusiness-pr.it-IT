@@ -10,19 +10,19 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: Informazioni su come eseguire il backup dei dati di Response Group Service (RGS) in Skype for Business Server 2019.
-ms.openlocfilehash: 8b0cbbb41c7bf2a61d21043141d2475a8c69a79696e8cf5cbde6709e2d196c52
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7e3e4116a281584da7afc1807fe58e79d2528183
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280471"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581160"
 ---
 # <a name="back-up-response-group-service-rgs-data"></a>Eseguire il backup dei dati di Response Group Service (RGS)
 
-Con l'Skype for Business Server cumulativo di luglio 2019, abbiamo incluso la possibilità di includere i dati RGS come parte del backup standard.
+Con l Skype for Business Server aggiornamento cumulativo di luglio 2019, abbiamo incluso la possibilità di includere i dati RGS come parte del backup standard.
 
 ## <a name="rgs-data-replication"></a>Replica dei dati RGS
 
@@ -52,7 +52,7 @@ Per provare la funzionalità di replica dei dati RGS, attenersi alla procedura s
     - `Get-csRGSHourOfBusiness -showAll`
     - `Get-csRGSHolidaySet -showAll`
 1. Verificare la funzionalità del flusso di lavoro effettuando una chiamata audio a Flusso di lavoro.
-1. Failover del pool proprietario RGS.
+1. Failover del pool di proprietari RGS.
 1. Verificare la funzionalità del flusso di lavoro effettuando una chiamata audio a Flusso di lavoro.
 1. Failback del pool.
 1. Aggiornare i dati RGS nel pool di origine ed eseguire un altro failover per verificare che le modifiche si riflettano nel pool di backup. RGS deve comportarsi allo stesso modo in cui si comportava prima del failover.

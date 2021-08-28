@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Ent_O365_Hybrid
 - IT_Skype16
@@ -19,12 +19,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: c7f78f23-b74f-402f-bedb-4cc308718f5b
 description: 'Riepilogo: leggere questo argomento per informazioni su come assegnare un criterio vocale per gli utenti Sistema telefonico con connettività PSTN locale.'
-ms.openlocfilehash: f01fcc314cd618150df2c67a2de8b4ea3ee8f9bd7fdb5f4a4c8b3ae24537ee3f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a3524c77cf27dc4fd9ab3a4f74211fc9040aad75
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282998"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582540"
 ---
 # <a name="assign-a-voice-routing-policy"></a>Assegnare un criterio di routing vocale
  
@@ -35,7 +35,7 @@ ms.locfileid: "54282998"
   
 Quando un utente si trova Skype for Business Online e usa Sistema telefonico con connettività PSTN locale, verranno applicati due criteri vocali. Uno è un criterio di routing vocale locale che verrà assegnato in locale. Questo criterio può essere globale o specifico dell'utente e definisce quali record di utilizzo PSTN sono associati all'utente. In questo argomento viene illustrato come assegnare questo criterio.
   
-Gli altri criteri vocali definiscono le funzionalità di chiamata disponibili per l'utente. questo criterio vocale è definito da Microsoft ed è identico per tutte le Sistema telefonico con gli utenti di connettività PSTN locali. Viene assegnato automaticamente agli Sistema telefonico utenti.
+Gli altri criteri vocali definiscono le funzionalità di chiamata disponibili per l'utente. questo criterio vocale è definito da Microsoft ed è identico per tutte le Sistema telefonico utenti di connettività PSTN locali. Viene assegnato automaticamente agli Sistema telefonico utenti.
   
 ||**Utente locale**|**Sistema telefonico con l'utente di connettività PSTN locale**|
 |:-----|:-----|:-----|
@@ -46,7 +46,7 @@ Eseguire i passaggi seguenti usando la distribuzione locale, mentre l'utente è 
   
 ## <a name="using-a-global-voice-routing-policy"></a>Utilizzo di un criterio di routing vocale globale
 
-Prima di utilizzare un criterio di routing vocale globale per il Sistema telefonico con gli utenti di connettività PSTN locale, è necessario aggiungere record di utilizzo PSTN al criterio.
+Prima di utilizzare un criterio di routing vocale globale per il Sistema telefonico con gli utenti di connettività PSTN locale, è necessario aggiungere i record di utilizzo PSTN al criterio.
   
 ### <a name="to-assign-pstn-usage-records-to-the-global-voice-routing-policy"></a>Per assegnare record di utilizzo PSTN al criterio di routing vocale globale
 

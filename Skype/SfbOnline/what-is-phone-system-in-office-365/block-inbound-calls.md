@@ -11,14 +11,14 @@ audience: Admin
 ms.reviewer: roykuntz
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.custom: Learn how to use PowerShell to manage inbound call blocking in Skype for Business Online.
-ms.openlocfilehash: ff1dfa87d6b88cdcab46a6ea080b2aa8b61d3ba757ab922ae04f2b4b2d2aa70d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8b4c26fb1f0a34c2dd0b7fb5159398e7eaf54df3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54342541"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581130"
 ---
 # <a name="block-inbound-calls"></a>Bloccare le chiamate in ingresso
 
@@ -31,7 +31,7 @@ Questa funzionalità di blocco delle chiamate in ingresso funziona solo per le c
 Questa funzionalità non è ancora disponibile per il routing diretto.
 
 >[!NOTE]
-> I chiamanti bloccati potrebbero avere comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non è consentita per il completamento. Alcuni esempi possono includere un messaggio dell'operatore che indica che la chiamata non può essere completata come chiamata o semplicemente la chiamata.
+> I chiamanti bloccati potrebbero avere comportamenti leggermente diversi quando sono stati bloccati. Il comportamento si basa sul modo in cui il gestore del chiamante bloccato gestisce la notifica che la chiamata non può essere completata correttamente. Alcuni esempi possono includere un messaggio dell'operatore che indica che la chiamata non può essere completata come chiamata o semplicemente la chiamata.
 
 ## <a name="call-blocking-admin-controls-and-information"></a>Informazioni e controlli di amministrazione del blocco delle chiamate
 
@@ -101,7 +101,7 @@ Usare le funzionalità di filtro incorporate di PowerShell per analizzare i valo
 
 #### <a name="add-a-number-exception"></a>Aggiungere un'eccezione numerica
 
-In questo esempio viene creato un nuovo modello di eccezione numerica che, per impostazione predefinita, aggiunge il modello come abilitato. I ```-Enabled``` parametri e sono ```-Description``` facoltativi.
+In questo esempio viene creato un nuovo modello di eccezione numerica che, per impostazione predefinita, lo aggiunge come abilitato. I ```-Enabled``` parametri e sono ```-Description``` facoltativi.
 
 ```powershell
 New-CsTenantBlockedNumberExceptionPattern -Identity <XdsGlobalRelativeIdentity> -Tenant <GUID> -Pattern <String> -Enabled <bool> -Description <string>

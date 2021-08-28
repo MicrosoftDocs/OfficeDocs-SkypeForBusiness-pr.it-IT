@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: bjwhalen
 audience: admin
 description: Informazioni sull'esperienza Teams client e sulla conformità alle modalità di coesistenza (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings).
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,28 +20,28 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e49e8d7fd76bb3ecb14ad1c3d19142fbca28f978144578f42e5d106ef7c1d511
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dedac139aa4831b61a25bd6b65b6520288238d6d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321248"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606967"
 ---
 # <a name="teams-client-experience-and-conformance-to-coexistence-modes"></a>Esperienza del client di Teams e conformità alle modalità di coesistenza
 
 <a name="about-upgrade-basic"></a>
 
-Lo scopo delle modalità di coesistenza di Skype for Business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings) è fornire agli utenti finali un'esperienza semplice e prevedibile durante la transizione da Skype for Business a Teams.  Per un'organizzazione che si sposta su **Teams,** la modalità solo Teams è la destinazione finale per ogni utente, anche se non tutti gli utenti devono essere assegnati **contemporaneamente Teams Only** (o qualsiasi altra modalità).  Prima che gli utenti raggiungano la modalità TeamsOnly, le organizzazioni possono usare una delle modalità di coesistenza di Skype for Business per garantire comunicazioni prevedibili tra gli utenti che sono **solo Teams** e quelli che non lo sono ancora. 
+Lo scopo delle modalità di coesistenza di Skype for Business (SfBOnly, SfBWithTeamsCollab, SfBWithTeamsCollabAndMeetings) è fornire agli utenti finali un'esperienza semplice e prevedibile durante la transizione da Skype for Business a Teams.  Per un'organizzazione che si sposta su Teams, la modalità **solo Teams** è la destinazione finale per ogni utente, anche se non tutti gli utenti devono essere assegnati **contemporaneamente Teams Only** (o qualsiasi altra modalità).  Prima che gli utenti raggiungano la modalità TeamsOnly, le organizzazioni possono usare una delle modalità di coesistenza di Skype for Business per garantire comunicazioni prevedibili tra gli utenti che sono **solo Teams** e quelli che non lo sono ancora. 
 
-Quando un utente è in una delle modalità Skype for Business, tutte le chat e le chiamate in arrivo vengono instradati al client di Skype for Business dell'utente. Per evitare confusione con l'utente finale e garantire la corretta funzionalità di routing, chiamate e chat nel client Teams viene disabilitata quando un utente è in una delle modalità Skype for Business messaggi. Analogamente, la pianificazione delle riunioni in Teams viene disabilitata in modo esplicito quando gli utenti sono in modalità SfBOnly o SfBWithTeamsCollab e abilitata in modo esplicito quando un utente è in modalità SfBWithTeamsCollabAndMeetings.
+Quando un utente è in una delle modalità Skype for Business, tutte le chat e le chiamate in arrivo vengono instradati al client Skype for Business dell'utente. Per evitare confusione con l'utente finale e garantire la corretta funzionalità di routing, chiamate e chat nel client Teams viene disabilitata quando un utente si trova in una delle modalità Skype for Business messaggi. Analogamente, la pianificazione delle riunioni in Teams viene disabilitata in modo esplicito quando gli utenti sono in modalità SfBOnly o SfBWithTeamsCollab e abilitata in modo esplicito quando un utente è in modalità SfBWithTeamsCollabAndMeetings.
 
-Poiché la presenza è un'indicazione della raggiungibilità tramite chat e chiamate, quando la chat e le chiamate sono disabilitate, anche l'auto-presenza in Teams (ovvero la visualizzazione della propria presenza nel client Teams nell'immagine dell'utente) è nascosta. 
+Poiché la presenza è un'indicazione della raggiungibilità tramite chat e chiamate, quando la chat e le chiamate sono disabilitate, anche l'auto-presenza in Teams (ovvero la visualizzazione della propria presenza nel client Teams nell'immagine dell'utente) viene nascosta. 
 
 ## <a name="how-the-available-functionality-in-teams-client-changes-based-on-mode"></a>Modalità di modifica delle funzionalità disponibili Teams client in base alla modalità
 
 La funzionalità disponibile in Teams dipende dalla modalità di coesistenza dell'utente, come impostato da TeamsUpgradePolicy. La tabella seguente riepiloga il comportamento:
 
-|Modalità effettiva dell'utente|Esperienza nel client Teams client|
+|Modalità effettiva dell'utente|Esperienza nel client Teams|
 |---|---|
 |Qualsiasi Skype for Business automatica|Le chiamate, le chat e l'auto-presenza sono disabilitate.|
 |SfBWithTeamsCollabAndMeetings|La pianificazione delle riunioni è disponibile|
@@ -61,7 +61,7 @@ Inoltre, la presenza personale non è disponibile nelle altre modalità, come il
 
 
 ## <a name="impact-of-mode-on-other-policy-settings"></a>Impatto della modalità su altre impostazioni dei criteri
-Come descritto in precedenza, la modalità di coesistenza di un utente influisce sulle funzionalità disponibili nel client Teams utente. Questo significa che il valore della modalità può avere la precedenza sul valore di altre impostazioni dei criteri, a seconda della modalità. In particolare, la modalità di coesistenza influisce sull'applicazione delle impostazioni dei criteri seguenti:
+Come descritto in precedenza, la modalità di coesistenza di un utente influisce sulle funzionalità disponibili nel client di Teams utente. Questo significa che il valore della modalità può avere la precedenza sul valore di altre impostazioni dei criteri, a seconda della modalità. In particolare, la modalità di coesistenza influisce sull'applicazione delle impostazioni dei criteri seguenti:
 
 |**Modalità (app)**|**Policy.Setting**|
 |---|---|
@@ -89,4 +89,4 @@ Quando si usa PowerShell, il cmdlet controlla la configurazione delle impostazio
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Indicazioni sulla migrazione e l'interoperabilità per le organizzazioni che usano Teams insieme a Skype for Business](./migration-interop-guidance-for-teams-with-skype.md)
+[Indicazioni sulla migrazione e l'interoperabilità per le organizzazioni che usano Teams con Skype for Business](./migration-interop-guidance-for-teams-with-skype.md)

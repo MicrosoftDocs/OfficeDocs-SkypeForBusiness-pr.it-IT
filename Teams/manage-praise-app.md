@@ -1,5 +1,5 @@
 ---
-title: Gestire l'app Complimenti nell'interfaccia Teams di amministrazione
+title: Gestire l Complimenti app nell'interfaccia Teams di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -7,28 +7,28 @@ ms.reviewer: jozhuan
 audience: admin
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Informazioni sulle impostazioni di amministrazione nell'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
-ms.openlocfilehash: 52dbadcc20e1c73d48d5f5b7f762493f2dd61c64aa29e7a924e03dd09c63bed6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3f3269f812113d63c6c4abfeed9a2d00aa2354b4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54278135"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581230"
 ---
-# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
+# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l Complimenti app nell'Microsoft Teams di amministrazione
 
 > [!NOTE]
 > Gli amministratori devono avere una licenza Teams per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza Teams licenza, viene visualizzato un messaggio di errore.
 
-L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare Teams riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti di Teams fanno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
+L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti di Teams esereranno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
 Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Teams **app > Gestisci app**. Nell'elenco delle app fare clic su **Complimenti** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e di creare badge personalizzati.
 
 ![Screenshot della scheda Impostazioni per l'app Complimenti app](media/manage-praise-app-settings.png)
 
 > [!NOTE]
-> La Complimenti dell'app non è disponibile per i cloud governativi degli Stati Uniti.
+> La Complimenti'app non è disponibile per i cloud governativi degli Stati Uniti.
 
 ## <a name="use-built-in-badge-sets"></a>Usare set di badge predefiniti
 
@@ -85,7 +85,7 @@ Selezionare **Crea un badge personalizzato.** Da qui è possibile progettare un 
 
 I valori dei colori esadecimali sono stringhe di sei cifre esadecimali che rappresentano l'intensità del rosso (RR), del verde (GG) e del blu (BB) in un colore specifico su una scala da 00 a FF. Quando si uniscono i valori di tutti e tre i colori, si ottiene un valore esadecimale: #RRGGBB
 
-Ad esempio, il valore esadecimale per il colore rosso è #FF0000 perché il rosso è impostato sul valore più alto possibile, FF e verde e blu sono impostati ognuno sul valore più basso possibile, 00.
+Ad esempio, il valore esadecimale per il colore rosso è #FF0000 perché il rosso è impostato sul valore più alto possibile, FF e verde e blu sono impostati al valore più basso possibile, 00.
 
 Per esplorare colori diversi e i relativi valori esadecimali, vedere Bing [selezione colori.](https://www.bing.com/search?q=color+picker)
 
@@ -108,7 +108,7 @@ Di seguito è riportato un elenco di colori di esempio per iniziare:
 
 **Quando si scelgono i colori, tenere presente l'accessibilità.** Alcuni colori si uniscono meglio di altri.  Creare un contrasto tra il testo e i colori di sfondo per semplificare la lettura del nome del badge. Ad esempio, se si sceglie un colore di sfondo scuro, scegliere un colore di testo chiaro.
 
-**Quando si seleziona un'immagine, tenere presente le dimensioni del badge.** Per una qualità ottimale, è consigliabile caricare un file di immagine di 216 x 216 pixel,ovvero le dimensioni massime. Evitare di estendere o distorcere l'immagine per adattarla a queste dimensioni.
+**Quando si seleziona un'immagine, tenere presente le dimensioni del badge.** Per una qualità ottimale, è consigliabile caricare un file di immagine di 216 x 216 pixel,ovvero le dimensioni massime. Evitare di allungare o distorcere l'immagine per adattarla a queste dimensioni.
 
 **Se l'immagine del badge non è rettangolare, rendere trasparente l'immagine.** È necessario eseguire questa operazione prima di caricare il file di immagine in Complimenti.
 

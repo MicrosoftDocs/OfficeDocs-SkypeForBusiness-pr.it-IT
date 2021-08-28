@@ -10,15 +10,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6b4f4d69-3c9d-4bc7-bc9b-46427a095de2
 description: 'Riepilogo: leggere questo argomento per informazioni su come aggiungere il server Chat persistente alla topologia Skype for Business Server 2015.'
-ms.openlocfilehash: 358d6c106cd1e7e51a019ede4c70ed7a7504af82fccb6d3dfd912f237df0e2a6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1ea8904ea59dd7ac7d35df1ed0ebcbbe0e3cd9f4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312014"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607239"
 ---
 # <a name="add-persistent-chat-server-to-your-skype-for-business-server-2015-topology"></a>Aggiungere un server Chat persistente alla topologia Skype for Business Server 2015
  
@@ -31,7 +31,7 @@ Dopo aver installato il software prerequisito in ogni server in cui si prevede d
 - Pubblicare la topologia aggiornata
     
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
 
 ## <a name="update-your-topology-to-include-persistent-chat-server"></a>Aggiornare la topologia in modo da includere il server Chat persistente
 
@@ -68,7 +68,7 @@ Per distribuire più pool di server Chat persistente, ripetere lo stesso process
     
    - Per usare un archivio SQL Server esistente, nell'elenco a discesa fare clic sul nome dell SQL Server store che si desidera utilizzare.
     
-   - Per specificare un nuovo database SQL Server database, fare clic su **Nuovo** e in Definisci nuovo **SQL archivio** eseguire le operazioni seguenti:
+   - Per specificare un nuovo database SQL Server database, fare clic su **Nuovo** e in Definisci nuovo **SQL store** eseguire le operazioni seguenti:
     
    - In **SQL Server FQDN** specificare il nome di dominio completo del SQL Server in cui si desidera creare il nuovo database SQL Server database.
     
@@ -107,7 +107,7 @@ Per distribuire più pool di server Chat persistente, ripetere lo stesso process
 
 Dopo aver aggiornato la topologia in Generatore di topologie, è necessario pubblicare la topologia nell'archivio di gestione centrale prima di poter configurare e utilizzare Skype for Business Server. In tutti i server della topologia vengono replicate copie di sola lettura dei dati in modo che siano sincronizzati con la topologia e altre modifiche della configurazione.
   
-Prima di pubblicare la topologia, installare i database per il server Chat persistente. Utilizzare Generatore di topologie per installare i database selezionando **Azione** **e Installa database.**
+Prima di pubblicare la topologia, installare i database per il server Chat persistente. Utilizzare Generatore di topologie per installare i database selezionando **Azione** **e Installa database**.
   
 1. In un computer che esegue Skype for Business Server o in cui sono installati gli strumenti di amministrazione di Skype for Business Server, accedere utilizzando un account membro sia del gruppo **Domain Admins** che del gruppo **RTCUniversalServerAdmins** e che dispone delle autorizzazioni di controllo completo (lettura, scrittura e modifica) nell'archivio file da utilizzare per l'archivio file del server Chat persistente (in modo che Generatore di topologie possa configurare gli elenchi di controllo di accesso discrezionale (DACL) necessari) o un account con diritti utente equivalenti.
     

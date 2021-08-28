@@ -9,22 +9,22 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: ''
-description: Istruzioni per la configurazione del connettore dati di chiamata, che consente la visualizzazione della telemetria Skype for Business locale tramite gli strumenti Skype for Business Online.
-ms.openlocfilehash: bc9346919e3f70d8fe8fe3e43e61a0e715cf0eb9bf52534a2beb2f8604b920f8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Istruzioni per la configurazione del connettore dati di chiamata, che consente di visualizzare la telemetria Skype for Business locale usando gli strumenti Skype for Business Online.
+ms.openlocfilehash: 0e064e26ce7b8bfb97793666808b0b8a88ab2efc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323688"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581150"
 ---
 # <a name="configure-call-data-connector"></a>Configurare connettore dati chiamate
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 
-In questo articolo viene descritto come configurare Call Data Connector, un singolo set di strumenti che consente la visualizzazione dei dati sulla qualità delle chiamate di Skype for Business Server tramite Skype for Business Online Call Quality Dashboard (CQD) e strumenti di analisi delle chiamate (CA).
+In questo articolo viene descritto come configurare Call Data Connector, un singolo set di strumenti che consente la visualizzazione dei dati sulla qualità delle chiamate di Skype for Business Server tramite gli strumenti CQD (Call Quality Dashboard) e Call Analytics (CA) di Skype for Business Online.
 
 Per ulteriori informazioni sui vantaggi e i prerequisiti del connettore di dati di chiamata, ad esempio i requisiti dei ruoli e la configurazione della connettività ibrida, vedere [Plan Call Data Connector.](plan-call-data-connector.md)
 
@@ -33,7 +33,7 @@ Per ulteriori informazioni sui vantaggi e i prerequisiti del connettore di dati 
 È necessario configurare la registrazione dei dati delle chiamate (CDR) e la raccolta dei dati QoE (Quality of Experience) nel monitoraggio del pool front-end, con database LCSCdr e QoEMetrics locali; in caso contrario, i dashboard di analisi delle chiamate e qualità delle chiamate non ottengono dati da utilizzare. Prima di configurare Il connettore dati di chiamata, seguire i passaggi descritti in Distribuire il monitoraggio [in Skype for Business Server](../../SfbServer/deploy/deploy-monitoring/deploy-monitoring.md) per configurare sia la registrazione chiamata che QoE, nonché il monitoraggio di base.
 
 > [!IMPORTANT]
-> Il connettore dati di chiamata non funzionerà se il monitoraggio non è abilitato nel pool front-end.
+> Call Data Connector non funzionerà se il monitoraggio non è abilitato nel pool front-end.
 
 ## <a name="enable-call-data-connector"></a>Abilita connettore dati chiamata
 
@@ -88,9 +88,9 @@ Esistono due metodi per accedere a Skype for Business PowerShell online:
     Get-CsCloudCallDataConnection  
     ```
 
-L'output dei comandi precedenti contiene un valore token, che sarà necessario quando si configura l'ambiente locale come segue:
+L'output dei comandi precedenti contiene un valore token, necessario per la configurazione dell'ambiente locale nel modo seguente:
 
-Dall'interno Skype for Business Server management shell, specificare il comando seguente:
+All'interno di Skype for Business Server management shell, specificare il comando seguente:
 
 ```PowerShell
 Set-CsCloudCallDataConnector -Identity Global -TenantId <tenant_id> -Token <token-copied-from-online>
@@ -114,7 +114,7 @@ Set-CsCloudCallDataConnectorConfiguration -Identity "site:Redmond" -EnableCallDa
 Set-CsCloudCallDataConnectorConfiguration -Identity "site:Dublin" -EnableCallDataConnector $False
 ```
 
-Le impostazioni configurate a livello di sito hanno la precedenza su quelle configurate a livello globale. Si supponga, ad esempio, che l'inoltro del connettore di dati di chiamata sia abilitato nell'ambito globale, ma disabilitato nell'ambito del sito (per il sito Redmond). Ciò significa che la registrazione dettagli chiamata e le informazioni QoE non verranno inoltrate per gli utenti nel sito Redmond. Tuttavia, gli utenti di altri siti (ovvero gli utenti gestiti dalle impostazioni globali anziché dalle impostazioni del sito Redmond) riceveranno la registrazione dettagli chiamata e le informazioni QoE inoltrate.
+Le impostazioni configurate a livello di sito hanno la precedenza su quelle configurate a livello globale. Si supponga ad esempio che l'inoltro del connettore di dati di chiamata sia abilitato nell'ambito globale, ma disabilitato nell'ambito del sito (per il sito Redmond). Ciò significa che la registrazione dettagli chiamata e le informazioni QoE non verranno inoltrate per gli utenti nel sito Redmond. Tuttavia, gli utenti di altri siti (ovvero gli utenti gestiti dalle impostazioni globali anziché dalle impostazioni del sito Redmond) riceveranno la registrazione dettagli chiamata e le informazioni QoE inoltrate.
 
 Nella tabella seguente sono riportati i valori per le impostazioni utilizzate più di frequente dal connettore dati di chiamata:  
 
@@ -133,7 +133,7 @@ La disabilitazione di Call Data Connector non disassocia l'archivio di monitorag
 Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConnector $False
 ```
 
-Se si desidera riprendere il caricamento dei dati delle chiamate nel cloud, impostare la proprietà EnableCallDataConnector su $True, come illustrato nell'esempio seguente:
+Se si desidera riprendere il caricamento dei dati delle chiamate nel cloud, impostare nuovamente la proprietà EnableCallDataConnector su $True, come illustrato nell'esempio seguente:
 
 ```PowerShell
 Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConnector $True
@@ -141,7 +141,7 @@ Set-CsCloudCallDataConnectorConfiguration -Identity "global" -EnableCallDataConn
 
 ## <a name="view-on-premises-data-through-the-online-dashboard"></a>Visualizzare i dati locali tramite il dashboard online
 
- Dopo aver abilitato Call Data Connector, è possibile visualizzare i dati delle chiamate locali nel dashboard di Call Analytics o call quality dashboard come descritto in [Use Call Analytics to troubleshoot poor quality](/skypeforbusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) e Turn on and use Call Quality Dashboard for Microsoft Teams and Skype for Business [Online.](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard)
+ Dopo aver abilitato Call Data Connector, è possibile visualizzare i dati delle chiamate locali nel dashboard di Call Analytics o call quality dashboard, come descritto in [Use Call Analytics to troubleshoot poor quality](/skypeforbusiness/using-call-quality-in-your-organization/use-call-analytics-to-troubleshoot-poor-call-quality) e Turn on and use Call Quality Dashboard for Microsoft Teams and Skype for Business [Online.](/MicrosoftTeams/turning-on-and-using-call-quality-dashboard)
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 

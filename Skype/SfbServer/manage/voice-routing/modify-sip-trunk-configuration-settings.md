@@ -1,5 +1,5 @@
 ---
-title: Modificare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
+title: Skype for Business ServerModify SIP trunk configuration settings
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: 'Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi. '
-ms.openlocfilehash: 73ab5eed311cf10b674034edad58afce0f6e66c9deb5b763e8ef0f38b95822a7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: 'Le impostazioni di configurazione dei trunk SIP definiscono la relazione e le funzionalità tra un Mediation Server e il gateway di rete telefonica a commutazione pubblica, un PBX (Ip-Public Branch Exchange) o un Session Border Controller (SBC) presso il provider di servizi. '
+ms.openlocfilehash: dbc7dec8af1f27769505b39b5cd2778f66dec0a4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351486"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582730"
 ---
-# <a name="modify-sip-trunk-configuration-settings-in-skype-for-business-server"></a>Modificare le impostazioni di configurazione dei trunk SIP in Skype for Business Server
+# <a name="skype-for-business-servermodify-sip-trunk-configuration-settings"></a>Skype for Business ServerModify SIP trunk configuration settings
 
 Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi. Queste impostazioni consentono di specificare quanto segue:
 
@@ -57,7 +57,7 @@ Quando si modificano le impostazioni di configurazione dei trunk SIP utilizzando
 
 **Per modificare le impostazioni di configurazione dei trunk SIP tramite il Skype for Business Server pannello di controllo**
 
-1. Nel Pannello Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
+1. Nel Pannello Skype for Business Server, fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
 2. Nella scheda **Configurazione trunk** fare doppio clic sulle impostazioni di configurazione del trunk che si desidera modificare. È possibile modificare una sola raccolta di impostazioni per volta. Per apportare le stesse modifiche a più raccolte, utilizzare Windows PowerShell.
 3. Nella finestra **di dialogo Modifica configurazione** trunk effettuare le selezioni appropriate e quindi fare clic su **OK.**
 4. La proprietà Stato per la raccolta verrà aggiornata a Commit non eseguito. Per confermare le modifiche ed eliminare la raccolta, fare clic su **Commit** e quindi su **Commit tutto.**

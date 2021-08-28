@@ -13,21 +13,21 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Informazioni su come aggiungere, modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione nell'Microsoft Teams di amministrazione.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5f9a612bc89972d06bbb87c6905c3ec25c85a5e9171095c46e065a9692e2514b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0f61a16caa40a1470031ec5f680d529522d49c1d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279832"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58629378"
 ---
 # <a name="add-change-or-remove-a-place-for-an-emergency-location-in-your-organization"></a>Aggiungere, modificare o rimuovere un luogo per una posizione di emergenza per l'organizzazione
 
-A seconda del numero di posizioni fisiche dell'organizzazione, è possibile aggiungere luoghi per edifici, piani e uffici per creare una posizione di emergenza più specifica. Per [altre informazioni, vedere](what-are-emergency-locations-addresses-and-call-routing.md) Gestire le chiamate di emergenza.
+A seconda del numero di posizioni fisiche dell'organizzazione, è possibile aggiungere luoghi per edifici, piani e uffici per creare una posizione più specifica per gli interventi di emergenza. Per [altre informazioni, vedere](what-are-emergency-locations-addresses-and-call-routing.md) Gestire le chiamate di emergenza.
   
 Per informazioni su come ottenere un piano per chiamate e sul costo, vedere Teams [licenze per i componenti aggiuntivi.](teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
 

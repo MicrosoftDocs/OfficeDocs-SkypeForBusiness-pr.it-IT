@@ -10,28 +10,28 @@ feedback_system: None
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - m365initiative-meetings
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 description: Informazioni su come configurare le Microsoft Teams Rooms, incluse la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: 699721e0f4ebe953510ae74cd382f35e6f5fc6cdf710600e46b035310a093da2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e45ca5445356fcf6c847d8a7680a463a09bfe864
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312674"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607039"
 ---
 # <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 
 :::row:::
     :::column span="2":::
-       È possibile trasformare gli spazi delle riunioni, dalle piccole aree di riunione alle grandi sale riunioni, con un'esperienza di Teams collaborativa e semplice da usare, distribuire e gestire.
+       È possibile trasformare gli spazi delle riunioni, dalle piccole aree di riunione alle grandi sale riunioni, con un'esperienza Teams che è semplice da usare, distribuire e gestire.
 
        Avviare le riunioni in tempo con un solo tocco, quindi proiettare istantaneamente sullo schermo nella sala e condividerle con partecipanti remoti.
 
-       Seleziona le periferiche audio e del sistema giuste da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.
+       Seleziona le periferiche audio e di sistema giuste da uno dei nostri partner: Yealink, Logitech, Crestron, Polycom, Lenovo e HP.
 
        Per una rapida introduzione Teams Rooms, fare clic sul video a destra.
     :::column-end:::

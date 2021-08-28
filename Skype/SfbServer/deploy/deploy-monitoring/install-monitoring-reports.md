@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6f417569-b100-442c-ad48-fdd794626cf7
 description: 'Riepilogo: informazioni su come installare un servizio che genererà report di monitoraggio in Skype for Business Server.'
-ms.openlocfilehash: b97dbf30f5077caa5d7fa17850bb9e6bcad6fd016986cae2626ec7083552c874
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bda56b297f9e4f46033cb6d09c46c61f56092b4c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54298556"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58581030"
 ---
 # <a name="install-monitoring-reports-in-skype-for-business-server"></a>Installare i report di monitoraggio in Skype for Business Server
  
@@ -43,7 +43,7 @@ Skype for Business Server I report di monitoraggio includono oltre 30 report pro
 Nella documentazione relativa ai rapporti di monitoraggio è possibile trovare maggiori informazioni sui singoli rapporti.
   
 > [!NOTE]
-> È incluso un altro report, sottoreport Dettagli chiamata QoE, in Skype for Business Server. Questo rapporto è inteso per un uso interno, e non per un accesso diretto. 
+> È incluso un altro report, sottoreport dettagli chiamata QoE, in Skype for Business Server. Questo rapporto è inteso per un uso interno, e non per un accesso diretto. 
   
 Esistono due modi per installare i report di monitoraggio di Skype for Business Server: è possibile utilizzare la Distribuzione guidata di Skype for Business Server oppure uno script di Windows PowerShell incluso con i file di Skype for Business Server di installazione. Indipendentemente dal metodo di installazione selezionato, è necessario assicurarsi di:
   
@@ -77,7 +77,7 @@ Nella seguente tabella sono illustrati i parametri utilizzati nel comando preced
   
 |**Nome del parametro**|**Obbligatorio**|**Descrizione**|
 |:-----|:-----|:-----|
-|storedUserName  <br/> |Sì  <br/> |Account utente (nel formato dominio\nome utente) utilizzato per l'accesso all'archivio di monitoraggio; ad esempio:  <br/> ```-storedUserName "litwareinc\kenmyer"```Questo account deve disporre delle autorizzazioni di SQL Server e SQL Server Reporting Services specificate in precedenza oppure lo script avrà esito negativo.  <br/> |
+|storedUserName  <br/> |Sì  <br/> |Account utente (nel formato dominio\nome utente) utilizzato per l'accesso all'archivio di monitoraggio; ad esempio:  <br/> ```-storedUserName "litwareinc\kenmyer"```L'account deve disporre delle autorizzazioni SQL Server e SQL Server Reporting Services specificate in precedenza oppure lo script avrà esito negativo.  <br/> |
 |storedPassword  <br/> |Sì  <br/> |Password dell'account utente utilizzato per l'accesso all'archivio di monitoraggio.  <br/> |
 |readOnlyGroupName  <br/> |No  <br/> |Dominio o gruppo di sicurezza locale ai cui membri è fornito l'accesso di sola lettura ai rapporti di monitoraggio. Lo script avrà esito negativo se il gruppo specificato non esiste. Se in seguito si decide di annullare queste autorizzazioni, o di concederle ad altri utenti o gruppi, è possibile farlo attraverso SQL Service Reporting Services Report Manager.  <br/> |
 |reportSqlServerInstance  <br/> |No  <br/> |Istanza di SQL Server che ospita il Reporting Service. L'istanza di Reporting deve essere specificata attraverso il nome di dominio completo del Report Server, ad esempio:<br/> ```-reportServerSqlInstance atl-sql-001.litwareinc.com```Se questo parametro non è incluso, lo script presupporrà che i servizi di report siano ospitati dalla stessa istanza SQL Server che ospita il database di monitoraggio.  <br/> |

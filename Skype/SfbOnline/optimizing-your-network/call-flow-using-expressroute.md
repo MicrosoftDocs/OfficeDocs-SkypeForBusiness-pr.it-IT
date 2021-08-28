@@ -14,18 +14,18 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Optimization
 description: Questo articolo illustra i principi di base del flusso delle chiamate per Skype for Business online ed ExpressRoute, e fornisce alcuni esempi dettagliati di flussi delle chiamate per una maggiore comprensione e per eseguire una corretta programmazione.
-ms.openlocfilehash: 35936e1e33f2914345aa5443ca745dc2c5260ad7
-ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
+ms.openlocfilehash: d2de62c29c06b498cff812014014bb1b9acb3cf2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58407205"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606775"
 ---
 # <a name="call-flow-using-expressroute"></a>Flusso delle chiamate con ExpressRoute
 
@@ -33,7 +33,7 @@ ms.locfileid: "58407205"
 
 Questo articolo illustra i principi di base del flusso delle chiamate per Skype for Business online ed ExpressRoute, e fornisce alcuni esempi dettagliati di flussi delle chiamate per una maggiore comprensione e per eseguire una corretta programmazione.
 
-Se si distribuisce Skype for Business Online come parte di Microsoft 365 o Office 365, Skype for Business Server Hybrid o Skype for Business Cloud Connector Edition, sarà necessario comprendere la comunicazione tra il client e i server di Skype for Business e il flusso delle chiamate in modo da poter pianificare, distribuire, gestire e risolvere i problemi dei servizi di Skype for Business Online.
+Se si distribuisce Skype for Business Online come parte di Microsoft 365 o Office 365, Skype for Business Server Hybrid o Skype for Business Cloud Connector Edition, è necessario comprendere la comunicazione tra il client e i server di Skype for Business e il flusso delle chiamate in modo da poter pianificare, distribuire, gestire e risolvere i problemi dei servizi di Skype for Business Online.
 
 ## <a name="call-flow-overview"></a>Panoramica sul flusso delle chiamate
 
@@ -81,9 +81,9 @@ Il traffico di rete per Skype for Business Online è suddiviso in due ampie cate
 
  **La segnalazione** è il collegamento di comunicazione tra il client e il server o altri client usati per controllare le attività (ad esempio, quando viene avviata una chiamata) e recapitare messaggistica elettronica. La maggior parte del traffico di segnalazione utilizza il protocollo SIP, anche se alcuni client utilizzano interfacce REST basate su HTTP. Per semplificare, stiamo valutando un'ampia gamma di segnalazioni che possono viaggiare su connessioni HTTP e HTTPS o TLS in questo tipo di traffico. È importante comprendere che questo tipo di traffico è molto meno sensibile alla latenza, ma può causare interruzioni di servizio o timeout delle chiamate se la latenza tra gli endpoint supera diversi secondi.
 
-Le destinazioni per questo traffico si trovano negli URL Office 365 e negli intervalli di indirizzi [IP](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) per tutti i servizi Microsoft 365 o Office 365 ip. Per ogni URL, indica se tale parte di traffico può attraversare ExpressRoute per Microsoft 365 o Office 365. Per i diagrammi che mostrano che Internet è ancora usato per un certo traffico quando ExpressRoute è abilitato, vedere [Azure ExpressRoute per](https://support.office.com/article/6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)Office 365 . È importante tenere presente che anche gli URL elencati come instradabili su ExpressRoute sono instradabili su Internet. Questo significa che in alcuni scenari la determinazione dell'uso di Internet o ExpressRoute dipende dalla posizione del client e dalla configurazione dei server proxy e dei firewall. È anche importante comprendere che, poiché non tutti gli URL associati a Microsoft 365 o Office 365 sono in grado di usare ExpressRoute, è necessaria una connessione Internet anche se si acquista ExpressRoute da un partner ExpressRoute.
+Le destinazioni per questo traffico si trovano negli URL Office 365 indirizzi [IP](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) per tutti i servizi Microsoft 365 o Office 365 ip. Per ogni URL, indica se tale parte di traffico può attraversare ExpressRoute per Microsoft 365 o Office 365. Per i diagrammi che mostrano che Internet è ancora usato per un certo traffico quando ExpressRoute è abilitato, vedere [Azure ExpressRoute per](https://support.office.com/article/6d2534a2-c19c-4a99-be5e-33a0cee5d3bd)Office 365 . È importante tenere presente che anche gli URL elencati come instradabili su ExpressRoute sono instradabili su Internet. Questo significa che in alcuni scenari, la determinazione dell'uso di Internet o ExpressRoute dipende dalla posizione del client e dalla configurazione dei server proxy e dei firewall. È anche importante comprendere che, poiché non tutti gli URL associati a Microsoft 365 o Office 365 sono in grado di usare ExpressRoute, è necessaria una connessione Internet anche se si acquista ExpressRoute da un partner ExpressRoute.
 
-Il traffico che può essere inviato solo tramite Internet include dipendenze Internet comuni, ad esempio elenchi di revoche di certificati (CRL), ricerche DNS e risoluzione dei nomi, URL per i servizi Microsoft 365 o Office 365 condivisi, ad esempio per il interfaccia di amministrazione di Microsoft 365, e alcune funzionalità di comunicazione non in tempo reale di Skype for Business Online, ad esempio telemetria e federazione per l'interoperabilità con gli utenti Skype consumer, nonché elementi multimediali trasmessi per Riunione Skype Broadcast. Per aiutarti a decidere, consulta [Routing con ExpressRoute per Office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) per ulteriori considerazioni quando pianifichi il routing della rete.
+Il traffico che può essere inviato solo tramite Internet include dipendenze Internet comuni, ad esempio elenchi di revoche di certificati (CRL), ricerche DNS e risoluzione dei nomi, URL per i servizi Microsoft 365 o Office 365 condivisi, ad esempio per il interfaccia di amministrazione di Microsoft 365, e alcune funzionalità di comunicazione non in tempo reale di Skype for Business Online, ad esempio telemetria e federazione per l'interoperabilità con gli utenti di Skype consumer, nonché elementi multimediali trasmessi per Riunione Skype Broadcast. Per aiutarti a decidere, consulta [Routing con ExpressRoute per Office 365](https://support.office.com/article/e1da26c6-2d39-4379-af6f-4da213218408) per ulteriori considerazioni quando pianifichi il routing della rete.
 
 ## <a name="principles-for-call-flows-with-skype-for-business"></a>Principi dei flussi delle chiamate con Skype for Business
 

@@ -10,20 +10,20 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 56d22197-e8e2-46b8-b3a3-507bd663700e
-description: Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è necessario essere consapevoli degli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
-ms.openlocfilehash: 20f8ee917141d56ef1d775afe9868b0f4bb68d5e2aa016487528c8a39bb1ab4d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è consigliabile tenere presente gli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
+ms.openlocfilehash: 04fa1eb040c1e208781d862da0bd92bc68a77dbd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54297093"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58629510"
 ---
 # <a name="common-security-threats-in-modern-day-computing"></a>Minacce alla sicurezza comuni nell'informatica moderna
  
-Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è necessario essere consapevoli degli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
+Poiché Skype for Business Server è un sistema di comunicazione di livello aziendale, è consigliabile tenere presente gli attacchi di sicurezza comuni che potrebbero influire sull'infrastruttura e sulle comunicazioni.
   
 ## <a name="compromised-key-attack"></a>Attacco tramite chiave compromessa
 
@@ -53,7 +53,7 @@ L'attacco di tipo Denial of Service si verifica quando l'autore dell'attacco imp
 
 Un attacco eavesdropping può verificarsi quando l'autore di un attacco ottiene l'accesso al percorso dei dati in una rete e ha la possibilità di monitorare e leggere il traffico. Questo tipo di attacco è anche denominato sniffing o snooping. Se il traffico è in testo normale, l'autore dell'attacco può leggerlo quando ottiene l'accesso al percorso. Un esempio è un attacco eseguito controllando un router nel percorso dei dati. 
   
-L'impostazione e il suggerimento predefiniti per il traffico all'interno di Skype for Business Server è l'utilizzo di MTLS (Mutual TLS) tra server attendibili e TLS da client a server. Questa misura di protezione renderebbe un attacco molto difficile o impossibile da realizzare entro il periodo di tempo in cui si verifica una determinata conversazione. TLS autentica tutte le parti e crittografa tutto il traffico. Questo processo non impedisce che si verifichi un attacco eavesdropping, ma l'autore dell'attacco non può leggere il traffico a meno che non venga violata la crittografia.
+L'impostazione e il suggerimento predefinito per il traffico all'interno di Skype for Business Server è l'utilizzo di MTLS (Mutual TLS) tra server attendibili e TLS da client a server. Questa misura di protezione renderebbe un attacco molto difficile o impossibile da realizzare entro il periodo di tempo in cui si verifica una determinata conversazione. TLS autentica tutte le parti e crittografa tutto il traffico. Questo processo non impedisce che si verifichi un attacco eavesdropping, ma l'autore dell'attacco non può leggere il traffico a meno che non venga violata la crittografia.
   
 Il protocollo TURN (Traversal Using Relay NAT) non impone la crittografia del traffico e le informazioni che sta inviando sono protette dall'integrità dei messaggi. Anche se è aperto alle intercettazioni, le informazioni che sta inviando (ovvero gli indirizzi IP e la porta) possono essere estratte direttamente esaminando semplicemente gli indirizzi di origine e di destinazione dei pacchetti. Il servizio A/V Edge garantisce che i dati siano validi controllando l'integrità del messaggio utilizzando la chiave derivata da alcuni elementi, inclusa una password TURN, che non viene mai inviata in testo non crittografato. Se si usa Secure Real Time Protocol (SRTP), viene crittografato anche il traffico multimediale.
   
@@ -61,7 +61,7 @@ Il protocollo TURN (Traversal Using Relay NAT) non impone la crittografia del tr
 
 Lo spoofing dell'identità si verifica quando l'utente malintenzionato determina e utilizza un numero di telefono di un utente valido (ID chiamante) o un indirizzo IP di una rete, un computer o un componente di rete senza essere autorizzato a farlo. Un attacco riuscito consente all'autore dell'attacco di operare come se l'autore dell'attacco fosse l'entità normalmente identificata dal numero di telefono (ID chiamante) o dall'indirizzo IP.
 
-Nel contesto della Skype for Business Server, lo spoofing degli indirizzi IP entra in gioco solo se un amministratore ha eseguito entrambe le operazioni seguenti:
+Nel contesto di Skype for Business Server, lo spoofing degli indirizzi IP entra in gioco solo se un amministratore ha eseguito entrambe le operazioni seguenti:
   
 - Ha configurato connessioni che supportano solo TCP (Transmission Control Protocol). Questa operazione è sconsigliata perché le comunicazioni TCP non vengono crittografate.
     
@@ -73,7 +73,7 @@ D'altra parte, lo spoofing dell'ID chiamante entra in gioco quando è stato stab
   
 ## <a name="man-in-the-middle-attack"></a>Attacco man-in-the-middle
 
-Un attacco man-in-the-middle si verifica quando un utente malintenzionato reinstrada le comunicazioni tra due utenti attraverso il computer dell'autore dell'attacco senza che i due utenti comunichino. L'autore dell'attacco può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione invia e riceve il traffico dall'autore dell'attacco a propria insaputa, pensando di comunicare solo con l'utente previsto. Questa situazione può verificarsi se l'autore di un attacco può modificare Servizi di dominio Active Directory per aggiungere il server come server trusted o modificare DNS (Domain Name System) per fare in modo che i client si connettano all'autore dell'attacco mentre cercano di raggiungere il server. Un attacco man-in-the-middle può verificarsi anche con il traffico multimediale tra due client. Tuttavia, in Skype for Business Server condivisione di applicazioni, video e audio point-to-point, i flussi vengono crittografati con SRTP, utilizzando chiavi di crittografia negoziate tra i peer che utilizzano SIP (Session Initiation Protocol) su TLS. I server come Group Chat utilizzano HTTPS per aumentare la sicurezza del traffico Web.
+Un attacco man-in-the-middle si verifica quando un utente malintenzionato reinstrada le comunicazioni tra due utenti attraverso il computer dell'autore dell'attacco senza che i due utenti comunichino. L'autore dell'attacco può monitorare e leggere il traffico prima di inviarlo al destinatario previsto. Ogni utente della comunicazione invia e riceve il traffico dall'autore dell'attacco a propria insaputa, pensando di comunicare solo con l'utente previsto. Questa situazione può verificarsi se l'autore di un attacco può modificare Servizi di dominio Active Directory per aggiungere il server come server trusted o modificare DNS (Domain Name System) per fare in modo che i client si connettano all'autore dell'attacco mentre cercano di raggiungere il server. Un attacco man-in-the-middle può verificarsi anche con il traffico multimediale tra due client. Tuttavia, in Skype for Business Server condivisione di applicazioni, video e audio point-to-point, i flussi vengono crittografati con SRTP, utilizzando chiavi crittografiche negoziate tra i peer che utilizzano SIP (Session Initiation Protocol) su TLS. I server come Group Chat utilizzano HTTPS per aumentare la sicurezza del traffico Web.
   
 ## <a name="rtp-replay-attack"></a>Attacco di tipo replay RTP
 
@@ -91,7 +91,7 @@ Un virus è un'unità di codice il cui scopo è quello di riprodurre altre unit�
 
 Skype for Business Server può divulgare informazioni su una rete pubblica che potrebbero essere collegate a un individuo. È possibile suddividere i tipi di informazioni in due categorie specifiche:
   
-- **Dati sulla presenza avanzata** I dati sulla presenza avanzata sono informazioni che un utente può scegliere di condividere o non condividere tramite un collegamento a un partner federato o con i contatti all'interno di un'organizzazione. Questi dati non vengono condivisi con gli utenti di una rete di messaggistica istantanea pubblica. Con i criteri client e altre configurazioni dei client, parte del controllo può venire affidato all'amministratore di sistema. In Skype for Business Server, la modalità privacy della presenza avanzata può essere configurata per un singolo utente per impedire agli utenti di Skype for Business non presenti nell'elenco Contatti dell'utente di visualizzare le informazioni sulla presenza dell'utente. La modalità privacy della presenza avanzata non impedisce agli utenti di Microsoft Office Communicator 2007 e Microsoft Office Communicator 2007 R2 di visualizzare le informazioni sulla presenza di un utente. Per informazioni dettagliate sulla distribuzione del client e della [presenza,](../../plan-your-deployment/instant-messaging-and-presence.md)vedere [Deploy clients for Skype for Business Server](../../deploy/deploy-clients/deploy-clients.md) e Plan for instant messaging and presence in Skype for Business Server .
+- **Dati sulla presenza avanzata** I dati sulla presenza avanzata sono informazioni che un utente può scegliere di condividere o non condividere tramite un collegamento a un partner federato o con i contatti all'interno di un'organizzazione. Questi dati non vengono condivisi con gli utenti di una rete di messaggistica istantanea pubblica. Con i criteri client e altre configurazioni dei client, parte del controllo può venire affidato all'amministratore di sistema. In Skype for Business Server, la modalità privacy della presenza avanzata può essere configurata per un singolo utente per impedire agli utenti di Skype for Business non presenti nell'elenco Contatti dell'utente di visualizzare le informazioni sulla presenza dell'utente. La modalità privacy della presenza avanzata non impedisce agli utenti di Microsoft Office Communicator 2007 e Microsoft Office Communicator 2007 R2 di visualizzare le informazioni sulla presenza di un utente. Per informazioni dettagliate sulla distribuzione del client e della [presenza,](../../plan-your-deployment/instant-messaging-and-presence.md)vedere Deploy clients for [Skype for Business Server](../../deploy/deploy-clients/deploy-clients.md) e Plan for instant messaging and presence in Skype for Business Server .
     
 - **Dati obbligatori** I dati obbligatori sono necessari per il corretto funzionamento del server o del client e NON sono sotto il controllo dell'amministrazione del client o del sistema. Si tratta di informazioni necessarie a livello di server o di rete ai fini del routing, del mantenimento dello stato e della segnalazione.
     

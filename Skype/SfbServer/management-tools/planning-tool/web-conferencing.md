@@ -1,5 +1,5 @@
 ---
-title: Strumento di pianificazione delle conferenze Web
+title: Strumento di pianificazione web conferencing
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -11,22 +11,22 @@ f1.keywords:
 - ms.lync.plan.WebConferencing
 - ms.lync.plan.WebConferencing
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4e4425c1-4a7b-4706-a4cd-155fd903acd5
 description: Le conferenze Web inSkype for Business Server 2015 includono collaborazione documenti, condivisione di applicazioni e condivisione desktop.
-ms.openlocfilehash: d2ebdea99d8a82d4b53d0716825b8f96aee818050b24f14da57adb8b52a0efd2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 262eab31e28b9272c0e51de30d95071c69049140
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54278374"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582620"
 ---
-# <a name="web-conferencing-planning-tool"></a>Strumento di pianificazione delle conferenze Web
+# <a name="web-conferencing-planning-tool"></a>Strumento di pianificazione web conferencing
  
-Skype for Business Server Web Conferencing 2015 include la collaborazione di documenti, la condivisione di applicazioni e la condivisione desktop.
+Skype for Business Server Web Conferencing 2015 include la collaborazione ai documenti, la condivisione di applicazioni e la condivisione desktop.
   
 > [!NOTE]
-> Skype for Business Server 2015 usa Office Web Apps e Office Web Apps Server per gestire la condivisione e il rendering di PowerPoint presentazioni. Le funzionalità di conferenza Web funzionano esattamente come in Microsoft Lync 2013. Per informazioni dettagliate sull'installazione e la configurazione del Office Web Apps Server, vedere [Configuring integration with Office Web Apps Server and Lync Server 2013.](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013) 
+> Skype for Business Server 2015 usa Office Web Apps e Office Web Apps Server per gestire la condivisione e il rendering di PowerPoint presentazioni. Le funzionalità di conferenza Web funzionano esattamente come in Microsoft Lync 2013. Per informazioni dettagliate sull'installazione e la configurazione del server Office Web Apps, vedere [Configuring integration with Office Web Apps Server and Lync Server 2013.](/previous-versions/office/lync-server-2013/lync-server-2013-enabling-office-web-apps-server-and-lync-server-2013) 
   
 Per informazioni dettagliate sull'abilitazione delle conferenze Web nell'organizzazione, vedere i seguenti argomenti: 
   

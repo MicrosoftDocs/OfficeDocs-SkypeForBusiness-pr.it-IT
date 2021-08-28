@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 132eca13-8913-4218-9eff-4960ced8c3dc
 description: Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea multimediale nel database. Una sessione audio in genere contiene una linea multimediale audio. Una sessione audio e video (A/V) in genere contiene una linea multimediale audio e una video; la sessione, tuttavia, contiene due linee multimediali video se si utilizza un dispositivo per conferenze o la visualizzazione Raccolta. Questa visualizzazione è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: fa527c31c1011fdcad38d21534e9ec1c1a4ec96e4a704dd79722313e73a39056
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 778e322f737a80c71a046073611c234071e3f24b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296923"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582570"
 ---
 # <a name="medialine-view"></a>Visualizzazione MediaLine
  
@@ -46,7 +46,7 @@ Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea mu
 |CallerRenderDevDriver  <br/> |varchar(256)  <br/> |Nome del driver del dispositivo di rendering del chiamante.  <br/> |
 |CallerWifiDriverDeviceDesc  <br/> |varchar(256  <br/> |Descrizione del driver Wifi del chiamante.  <br/> |
 |CallerWifiDriverVersion  <br/> |varchar(256)  <br/> |Versione del driver WiFi del chiamante.  <br/> |
-|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamante. Per ulteriori [informazioni, vedere la tabella NetworkConnectionDetail.](networkconnectiondetail.md) <br/> |
+|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamante. Per ulteriori informazioni, vedere la [tabella NetworkConnectionDetail.](networkconnectiondetail.md) <br/> |
 |CallerBssid  <br/> |varchar(256)  <br/> |BSSI (Basic Service Set Identifier) utilizzato dalla connessione WiFi del chiamante.  <br/> |
 |CallerVPN  <br/> |bit  <br/> |Indica se il chiamante ha eseguito la connessione su una rete privata virtuale. 1 indica una VPN, 0 indica una rete non VPN.  <br/> |
 |CalleeIPAddr  <br/> |var(50)  <br/> |Indirizzo IP del destinatario della chiamata. Può essere un indirizzo IPv4 o IPv6.  <br/> |
@@ -60,9 +60,9 @@ Nella visualizzazione MediaLine vengono archiviate informazioni su ogni linea mu
 |CalleeRenderDev  <br/> |varchar(256)  <br/> |Nome del dispositivo di rendering del chiamato.  <br/> |
 |CalleeCaptureDevDriver  <br/> |varchar(256)  <br/> |Nome del driver del dispositivo di acquisizione del chiamato.  <br/> |
 |CalleeRenderDevDriver  <br/> |varchar(256)  <br/> |Nome del driver del dispositivo di rendering del chiamato.  <br/> |
-|CalleeWifiDriverDeviceDesc  <br/> |varchar(256)  <br/> |Descrizione del driver WiFi del chiamato.  <br/> |
+|CalleeWifiDriverDeviceDesc  <br/> |varchar(256)  <br/> |Descrizione del driver Wifi del chiamato.  <br/> |
 |CalleeWifiDriverVersion  <br/> |varchar(256  <br/> |Versione del driver WiFi del chiamato.  <br/> |
-|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamato. Per ulteriori [informazioni, vedere la tabella NetworkConnectionDetail.](networkconnectiondetail.md) <br/> |
+|CalleeNetworkConnectionDetail  <br/> |varchar(256)  <br/> |Dettagli della connessione di rete del chiamato. Per ulteriori informazioni, vedere la [tabella NetworkConnectionDetail.](networkconnectiondetail.md) <br/> |
 |CalleeBssid  <br/> |varchar(256)  <br/> |Identificatore del set di servizi di base utilizzato dalla connessione WiFi del chiamato.  <br/> |
 |CalleeVPN  <br/> |bit  <br/> |Indica se il destinatario della chiamata ha eseguito la connessione su una rete privata virtuale. 1 indica una VPN, 0 indica una rete non VPN.  <br/> |
 |ConversationalMOS  <br/> |decimal(3,2)  <br/> |Conversational MOS a banda stretta delle sessioni audio (basato su entrambi i flussi audio).  <br/> |

@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
-description: È possibile utilizzare Skype for Business Server di controllo per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
-ms.openlocfilehash: 058c9d3833f323634b08dc6f2019e987456e8d031c23f7339aad97a78d5e7181
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.localizationpriority: medium
+description: È possibile utilizzare il Skype for Business Server di controllo per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
+ms.openlocfilehash: b69d62a43136f40a68aa4d24940b664d061169db
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54324715"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606885"
 ---
 # <a name="stop-legacy-services"></a>Interrompere i servizi legacy
 
-È possibile utilizzare Skype for Business Server di controllo per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
+È possibile utilizzare il Skype for Business Server di controllo per avviare o arrestare tutti i servizi legacy in esecuzione in un computer specifico oppure per avviare o arrestare un servizio legacy specifico.
   
 ## <a name="to-start-or-stop-all-skype-for-business-server-services-on-a-computer"></a>Per avviare o arrestare tutti i Skype for Business Server in un computer
 

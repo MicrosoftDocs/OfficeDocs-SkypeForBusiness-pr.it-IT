@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - SMB
-description: Purtroppo, alcune licenze utente vengono bloccate quando l'utente passa a e vuole https://broadcast.skype.com usare Riunione Skype Broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se vuoi che lo usino ancora, assegnagli un'altra Office 365 licenza.
-ms.openlocfilehash: d60b945cdcbf050fd869520c0fa9ff86d39d88f0a41d29e34d4be03f0b3bfc2b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Purtroppo, alcune licenze utente vengono bloccate quando l'utente passa a e vuole usare Riunione Skype https://broadcast.skype.com Broadcast. Se un utente visualizza questo messaggio, ha una delle licenze bloccate assegnate. Se vuoi che lo usino ancora, assegnagli un'altra Office 365 licenza.
+ms.openlocfilehash: f8a31a6584020d24bbd4c05d2fe7aeedf6d75d1b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54339274"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58606735"
 ---
 # <a name="blocked-user-licenses-for-hosting-skype-meeting-broadcast"></a>Licenze utente bloccate per l'hosting Riunione Skype Broadcast
 

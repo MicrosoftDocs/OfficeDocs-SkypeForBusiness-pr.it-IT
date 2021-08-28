@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 21507e18-bd79-4019-9c3a-0867fccaa3b4
 description: "Riepilogo: leggere questo argomento per informazioni sulle procedure consigliate per l'implementazione e la gestione di riunioni di grandi dimensioni in Skype for Business Server."
-ms.openlocfilehash: 97d2f501c4ebf203e03b2229af4469c89d827f4ef9e74de6360982c782ba83e0
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 109bfef5dd86821cdb8ec8e372f26f3edd062983
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331138"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582610"
 ---
 # <a name="plan-for-large-meetings-in-skype-for-business-server"></a>Pianificare riunioni di grandi dimensioni in Skype for Business Server
  
@@ -29,7 +29,7 @@ Le dimensioni delle riunioni che Skype for Business Server possono supportare di
 > In questo argomento vengono trattate le procedure consigliate per riunioni di grandi dimensioni supportate da Skype for Business Server. Se l'organizzazione richiede funzionalità di riunione più grandi, è consigliabile implementare un ambiente ibrido che si avvale di Riunione Skype Broadcast, un nuovo servizio online che fa parte di Microsoft 365 e Office 365. 
 
 > [!NOTE]
-> Riunione Skype La trasmissione consente agli utenti di ospitare e trasmettere riunioni a un pubblico online di grandi dimensioni fino a 10.000 partecipanti. L'utilizzo di Riunione Skype Broadcast richiede che Skype for Business Server sia già configurato in una configurazione ibrida con un'organizzazione Microsoft 365 o Office 365 di produzione. Tutti gli utenti devono disporre di un tenant online definito come prerequisito. Se si è interessati alla distribuzione di una soluzione ibrida in grado di sfruttare Riunione Skype Broadcast, vedere What [is a Riunione Skype Broadcast?](https://go.microsoft.com/fwlink/?LinkId=617071) e [Configure your on-premises deployment for Riunione Skype Broadcast](../../deploy/configure-skype-meeting-broadcast.md). 
+> Riunione Skype La trasmissione consente agli utenti di ospitare e trasmettere riunioni a un pubblico online di grandi dimensioni fino a 10.000 partecipanti. L'utilizzo di Riunione Skype Broadcast richiede che Skype for Business Server sia già configurato in una configurazione ibrida con un'organizzazione Microsoft 365 o Office 365 di produzione. Tutti gli utenti devono disporre di un tenant online definito come prerequisito. Se si desidera distribuire una soluzione ibrida in grado di sfruttare Riunione Skype Broadcast, vedere What [is a Riunione Skype Broadcast?](https://go.microsoft.com/fwlink/?LinkId=617071) e [Configure your on-premises deployment for Riunione Skype Broadcast](../../deploy/configure-skype-meeting-broadcast.md). 
   
 Le riunioni di grandi dimensioni hanno in genere le caratteristiche seguenti:
   
@@ -45,9 +45,9 @@ Le riunioni di grandi dimensioni hanno in genere le caratteristiche seguenti:
     
 - Uno staff dedicato (non i relatori) si occupa di aspetti della riunione quali la connessione alla riunione online, la verifica del funzionamento di audio, video e condivisione delle diapositive, la gestione della sala di attesa e dei ruoli utente, la disattivazione e la riattivazione dell'audio dei partecipanti, la raccolta delle domande e la gestione delle registrazione, come più opportuno.
     
-Quando un utente pianifica una riunione, Skype for Business Server crea un record nel database delle conferenze, che archivia i dati delle conferenze, ma non riserva risorse hardware per la riunione pianificata in anticipo. Al contrario, Skype for Business Server logica di bilanciamento del carico incorporata per allocare dinamicamente le risorse di conferenza nei Front End Server in modo da distribuire equamente i carichi tra tutti i Front End Server del pool. Ciò consente di eseguire il provisioning e l'utilizzo di risorse hardware, ma è importante pianificare in modo appropriato per supportare riunioni di grandi dimensioni. 
+Quando un utente pianifica una riunione, Skype for Business Server crea un record nel database delle conferenze, che archivia i dati delle conferenze, ma non riserva risorse hardware per la riunione pianificata in anticipo. Al contrario, Skype for Business Server logica di bilanciamento del carico incorporata per allocare dinamicamente le risorse di conferenza nei Front End Server in modo da distribuire equamente i carichi tra tutti i Front End Server del pool. Ciò consente di eseguire il provisioning e l'utilizzo delle risorse hardware, ma è importante pianificare in modo appropriato per supportare riunioni di grandi dimensioni. 
   
-Ad esempio, quando un pool Skype for Business Server è in esecuzione vicino alla capacità massima, ogni Front End Server potrebbe ospitare circa 125 riunioni di dimensioni medie. L'aggiunta di un'altra riunione di piccole dimensioni non è un problema, ma l'aggiunta di una riunione per 1000 utenti è un problema perché i Front End Server probabilmente non saranno in grado di supportare una riunione di grandi dimensioni contemporaneamente alle altre 125 riunioni.
+Ad esempio, quando un pool Skype for Business Server è in esecuzione vicino alla capacità massima, ogni Front End Server potrebbe ospitare circa 125 riunioni di dimensioni medie. L'aggiunta di un'altra riunione di piccole dimensioni non sarebbe un problema, ma l'aggiunta di una riunione per 1000 utenti sarebbe un problema perché i Front End Server probabilmente non sarebbero in grado di supportare una riunione di grandi dimensioni contemporaneamente alle altre 125 riunioni.
   
 Per supportare riunioni di grandi dimensioni fino a 1000 partecipanti, è necessario risolvere i problemi relativi sia al modello hardware condiviso che al modello senza prenotazione. In generale, è necessario pianificare un pool dedicato e seguire le procedure consigliate come descritto nelle sezioni seguenti. 
   
@@ -81,7 +81,7 @@ Dopo aver impostato un pool dedicato per riunioni di grandi dimensioni, è possi
 
 Per ridurre al minimo il traffico di comunicazioni in tempo reale nel pool di riunioni di grandi dimensioni, Microsoft non consiglia di ospitare utenti che a loro volta a un accesso tramite client Skype for Business partecipano a sessioni di messaggistica istantanea, presenza, conferenze e vocali. Eseguire invece una delle operazioni seguenti:
   
-- Creare uno o più account utente dedicati solo per la pianificazione di riunioni di grandi dimensioni
+- Creare uno o più account utente dedicati solo per pianificare riunioni di grandi dimensioni
     
 - Ospitare gli account utente del personale responsabile della pianificazione di riunioni di grandi dimensioni in un pool di riunioni di grandi dimensioni
     
@@ -89,7 +89,7 @@ Per ridurre al minimo il traffico di comunicazioni in tempo reale nel pool di ri
 
 Con diverse centinaia di migliaia di utenti in una riunione, è consigliabile che una persona dedicata moderi la sessione online di una riunione di grandi dimensioni. Questa persona dedicata può essere un delegato dell'organizzatore della riunione o un membro del personale di supporto per riunioni di grandi dimensioni dell'organizzazione. È importante aggiungere il moderatore dedicato di una riunione come relatore al momento della pianificazione della riunione, sebbene sia possibile alzare di livello un partecipante della riunione online al ruolo di relatore nel corso della riunione.
   
-Il moderatore della riunione può usare tutte le funzionalità del relatore dei Skype for Business per gestire la riunione di grandi dimensioni. Queste funzionalità includono:
+Il moderatore della riunione può usare tutte le funzionalità del relatore Skype for Business client per gestire la riunione di grandi dimensioni. Queste funzionalità includono:
   
 - Monitoraggio della sala di attesa e ammissione o rifiuto degli utenti nella sala di attesa
     
@@ -99,7 +99,7 @@ Il moderatore della riunione può usare tutte le funzionalità del relatore dei 
     
 - Modifica dei ruoli dei partecipanti
     
-- Invitare altri partecipanti durante la riunione utilizzando la funzionalità di trascinamento della selezione, una chiamata telefonica o un messaggio di posta elettronica
+- Invitare altri partecipanti durante la riunione utilizzando la funzionalità di trascinamento della selezione, una chiamata in uscita telefonica o un messaggio di posta elettronica
     
 - Disattivazione e riattivazione dell'audio del gruppo di destinatari o dei singoli utenti
     
@@ -108,13 +108,13 @@ Il moderatore della riunione può usare tutte le funzionalità del relatore dei 
     
 ### <a name="maintain-a-separate-calendar"></a>Gestire un calendario separato
 
-Per ogni pool di riunioni di grandi dimensioni, è consigliabile mantenere un calendario separato di riunioni di grandi dimensioni pianificate in tale pool. Ad esempio, è possibile ospitare un singolo account utente nel pool di riunioni di grandi dimensioni e utilizzare Outlook con Exchange e il componente aggiuntivo per riunioni online per Skype for Business per mantenere un calendario separato. Se si utilizzano più account utente per consentire a un personale di supporto di creare riunioni di grandi dimensioni, è possibile impostare un calendario separato che aggrega tutte le riunioni di grandi dimensioni create dai membri del personale di supporto. 
+Per ogni pool di riunioni di grandi dimensioni, è consigliabile mantenere un calendario separato di riunioni di grandi dimensioni pianificate in tale pool. Ad esempio, è possibile ospitare un singolo account utente nel pool di riunioni di grandi dimensioni e utilizzare Outlook con Exchange e componente aggiuntivo per riunioni online per Skype for Business per mantenere un calendario separato. Se si utilizzano più account utente per consentire a un personale di supporto di creare riunioni di grandi dimensioni, è possibile impostare un calendario separato che aggrega tutte le riunioni di grandi dimensioni create dai membri del personale di supporto. 
   
 La gestione di un calendario delle riunioni di grandi dimensioni separato consente di evitare conflitti e garantire che sia attiva una sola riunione di grandi dimensioni in qualsiasi momento.
   
 ### <a name="implement-a-scheduling-process"></a>Implementare un processo di pianificazione
 
-Poiché nel pool di riunioni di grandi dimensioni dedicato è supportata una sola riunione di grandi dimensioni alla volta, è consigliabile implementare un processo di pianificazione delle riunioni di grandi dimensioni per facilitare la configurazione di riunioni di grandi dimensioni e prevenire conflitti. Tale funzionalità non viene fornita direttamente da Skype for Business Server o Skype for Business client. Un modo per implementare tale processo è usare il sistema di ticketing del team di supporto dell'organizzazione, se disponibile.
+Poiché nel pool di riunioni di grandi dimensioni dedicato è supportata una sola riunione di grandi dimensioni alla volta, è consigliabile implementare un processo di pianificazione delle riunioni di grandi dimensioni per facilitare la configurazione di riunioni di grandi dimensioni e prevenire conflitti. Tale funzionalità non viene fornita direttamente da Skype for Business Server o Skype for Business client. Un modo per implementare tale processo è quello di utilizzare il sistema di ticketing del team di supporto dell'organizzazione, se disponibile.
   
 Per pianificare una riunione di grandi dimensioni è necessario completare i passaggi seguenti:
   
@@ -168,7 +168,7 @@ Per garantire la migliore esperienza utente, è importante pianificare la riunio
     
 ### <a name="create-a-conferencing-policy"></a>Creare un criterio di conferenza
 
-Creare un nuovo criterio di conferenza specifico per le riunioni di grandi dimensioni e quindi assegnarlo agli utenti ospitati nel pool di riunioni di grandi dimensioni dedicato. Configurare il criterio per conferenze con le impostazioni seguenti:
+Creare un nuovo criterio di conferenza specifico per le riunioni di grandi dimensioni e quindi assegnare il criterio di conferenza agli utenti ospitati nel pool dedicato alle riunioni di grandi dimensioni. Configurare il criterio per conferenze con le impostazioni seguenti:
   
 - Imposta **l'opzione MaxMeetingSize** su 1000. Il valore predefinito è 250.
     
@@ -189,7 +189,7 @@ Creare un nuovo criterio di conferenza specifico per le riunioni di grandi dimen
 - Impostare l'opzione **EnableMultiviewJoin** su **False**.
     
 > [!NOTE]
-> Il supporto per riunioni di grandi Skype for Business Server richiede che **l'impostazione AllowLargeMeetings** sia impostata su true. Quando questa impostazione è impostata su true, l'esperienza Skype for Business sarà ottimizzata per le riunioni di grandi dimensioni quando gli utenti aderiscono alla riunione. In particolare, in una riunione di grandi dimensioni, Skype for Business non mostrerà l'inizio o l'aggiornamento dell'elenco completo dei partecipanti alla riunione, che rappresenta un collo di bottiglia per le prestazioni sia per il client che per Skype for Business Server. Al contrario, Skype for Business mostra solo informazioni sull'utente e sull'elenco dei relatori della riunione. Skype for Business verrà comunque visualizzato il numero totale di partecipanti disponibili nelle riunioni di grandi dimensioni.
+> Il supporto per riunioni di grandi Skype for Business Server richiede che **l'impostazione AllowLargeMeetings** sia impostata su true. Quando questa impostazione è impostata su true, l'esperienza Skype for Business sarà ottimizzata per le riunioni di grandi dimensioni quando gli utenti aderiscono alla riunione. In particolare, in una riunione di grandi dimensioni, Skype for Business non mostrerà l'inizio o l'aggiornamento dell'elenco completo dei partecipanti alla riunione, che rappresenta un collo di bottiglia per le prestazioni sia per il client che per Skype for Business Server. Al contrario, Skype for Business solo le informazioni sull'utente e sull'elenco dei relatori della riunione. Skype for Business verrà comunque visualizzato il numero totale di partecipanti disponibili nelle riunioni di grandi dimensioni.
 
 **L'impostazione allowLargeMeetings $true** causa quanto segue:
 
@@ -207,11 +207,11 @@ Creare un nuovo criterio di conferenza specifico per le riunioni di grandi dimen
 
 - Gli utenti di chiamate PSTN non potranno riattivare l'audio utilizzando 6 perché l'assistenza virtuale personale responsabile dei comandi DTMF nelle riunioni di grandi dimensioni attive non è disponibile.
 
-- Se il relatore/organizzatore pianifica una riunione in cui tutti devono essere disattivati per primi ("Disattiva tutto"), gli utenti PSTN verranno disattivati durante la chiamata e non saranno in grado di riattivare l'audio.
+- Se il relatore/organizzatore pianifica una riunione in cui tutti devono essere disattivati per primi ("Disattiva tutto"), gli utenti PSTN verranno disattivati durante la chiamata e non potranno riattivare l'audio.
 
 Ad eccezione dell'impostazione **Dimensione massima riunione**, tutti gli altri criteri di conferenza specificati qui sono necessari per disabilitare le funzionalità di conferenza non necessarie in riunioni di grandi dimensioni.
   
-È inoltre necessario configurare il pool dedicato alle riunioni di grandi dimensioni in modo che ogni utente di Skype for Business Server che si trova nel pool e responsabile della gestione della pianificazione della riunione abbia le autorizzazioni appropriate. A tale scopo, procedere come segue:
+È inoltre necessario configurare il pool dedicato per le riunioni di grandi dimensioni in modo che ogni utente di Skype for Business Server che si trova nel pool e responsabile della gestione della pianificazione delle riunioni abbia le autorizzazioni appropriate. A tale scopo, procedere come segue:
   
 - Impostare l'opzione **Designa come relatore** a **Nessuno**. In genere, uno o pochi altri utenti tra tutti i partecipanti a una riunione di grandi dimensioni sono relatori, pertanto i partecipanti non devono essere automaticamente ammessi a riunioni di grandi dimensioni come relatori. I relatori dovrebbero invece essere designati in modo esplicito al momento di pianificare la riunione oppure durante la riunione stessa.
     
@@ -219,6 +219,6 @@ Ad eccezione dell'impostazione **Dimensione massima riunione**, tutti gli altri 
     
 - Accettarsi che la casella di controllo **Consenti utenti anonimi per impostazione predefinita** non è selezionata a meno che non sia necessario. Questa impostazione influisce sul tipo di accesso alle riunioni predefinito pianificato dal componente aggiuntivo per riunioni online per Skype for Business quando non si utilizza una conferenza assegnata. L'opzione appropriata per questa impostazione dipende dalle esigenze dell'organizzazione. Se la maggior parte delle riunioni di grandi dimensioni nell'organizzazione è interna, non selezionare questa opzione. Se per la maggior parte delle riunioni di grandi dimensioni è prevista la partecipazione di  utenti esterni, selezionare questa opzione.
     
-Per ulteriori informazioni sulla creazione di criteri di conferenza, vedere [Manage conferencing policies in Skype for Business Server](../../manage/conferencing/conferencing-policies.md).
+Per ulteriori informazioni sulla creazione di un criterio di conferenza, vedere [Manage conferencing policies in Skype for Business Server](../../manage/conferencing/conferencing-policies.md).
   
 
