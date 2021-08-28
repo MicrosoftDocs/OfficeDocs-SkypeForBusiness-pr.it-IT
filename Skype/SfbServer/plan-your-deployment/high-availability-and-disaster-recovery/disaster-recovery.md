@@ -9,22 +9,22 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 142caf34-0f20-47f3-9d32-ce25ab622fad
 description: Per il ripristino di emergenza, Skype for Business Server l'associazione del pool con il failover nel caso in cui un pool si insedi.
-ms.openlocfilehash: a7e658e10718ac45ee6c2122433137ac4a198a459baa0171aec2453963636d32
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 728419a20fe99db004b739e599355c9b64a8844f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54276627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603835"
 ---
 # <a name="front-end-pool-disaster-recovery-in-skype-for-business-server"></a>Ripristino di emergenza del pool Front End in Skype for Business Server
  
 Per il ripristino di emergenza, Skype for Business Server l'associazione del pool con il failover nel caso in cui un pool si insedi.
   
-Per le opzioni di ripristino di emergenza più affidabili in Skype for Business Server, distribuire coppie di pool Front End in due siti geograficamente dislocati. Ogni sito dispone di un pool Front End associato a un pool Front End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup fornisce la replica dei dati in tempo reale per mantenere sincronizzati i pool. Vedere [Deploy paired Front End pools for disaster recovery in Skype for Business Server](../../deploy/deploy-high-availability-and-disaster-recovery/front-end-pools-for-disaster-recovery.md) if you want to implement Front End pool pairing.
+Per le opzioni di ripristino di emergenza più affidabili in Skype for Business Server, distribuire coppie di pool Front End in due siti geograficamente dislocati. Ogni sito dispone di un pool Front End associato a un pool Front End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup fornisce la replica dei dati in tempo reale per mantenere sincronizzati i pool. Vedere [Deploy paired Front End pools for disaster recovery in Skype for Business Server](../../deploy/deploy-high-availability-and-disaster-recovery/front-end-pools-for-disaster-recovery.md) se si desidera implementare l'associazione di pool Front End.
   
 ![Mostra pool Front End in due siti diversi, abbinati tra loro](../../media/f74533c0-a10e-4f18-85a8-b9a008497573.jpg)
   
@@ -76,13 +76,13 @@ Gli obiettivi di progettazione per il failover dell'archivio di gestione central
   
 ## <a name="front-end-pool-pairing-data-security"></a>Sicurezza dei dati di associazione del pool Front End
 
-Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include PowerPoint microsoft e lavagne usate nelle conferenze.
+Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include i caricamenti di microsoft PowerPoint e le lavagne usate nelle conferenze.
   
 Dal pool di origine, questi dati vengono esportati dall'archiviazione locale, compressi e quindi trasferiti nel pool di destinazione, dove vengono decompressi e importati nell'archiviazione locale. Il Servizio di backup presume che i collegamenti di comunicazione tra i due data center si trovino all'interno di una rete aziendale protetta da Internet. Non crittografa i dati trasferiti tra i due data center, né i dati incapsulati in modo nativo all'interno di un protocollo sicuro, ad esempio HTTPS. Pertanto, è possibile un attacco man-in-the-middle da parte del personale interno all'interno della rete aziendale.
   
-Qualsiasi azienda che distribuisce Skype for Business Server tra più data center e utilizza la funzionalità di ripristino di emergenza deve garantire che il traffico tra i data center sia protetto dalla rete Intranet aziendale. Le aziende che si preoccupano della protezione da attacchi interni devono proteggere i collegamenti di comunicazione tra i data center. Si tratta di un requisito standard che aiuta anche protech molti altri tipi di dati sensibili aziendali trasferiti tra data center.
+Qualsiasi azienda che distribuisce Skype for Business Server più data center e utilizza la funzionalità di ripristino di emergenza deve garantire che il traffico tra i data center sia protetto dalla rete Intranet aziendale. Le aziende che si preoccupano della protezione da attacchi interni devono proteggere i collegamenti di comunicazione tra i data center. Si tratta di un requisito standard che aiuta anche protech molti altri tipi di dati sensibili aziendali trasferiti tra data center.
   
-Sebbene in un'azienda esista il pericolo di attacchi man-in-the-middle, è relativamente contenuto se paragonato al rischio di esporre il traffico in Internet. In particolare, i dati utente esposti dal servizio di backup (ad esempio gli URI SIP) sono generalmente disponibili per tutti i dipendenti dell'azienda tramite altri mezzi, ad esempio la Rubrica globale o altro software di directory. Pertanto, l'attenzione deve essere concentrata sulla protezione della rete WAN tra i due data center quando viene utilizzato il servizio di backup per copiare i dati tra i due pool associati.
+Sebbene in un'azienda esista il pericolo di attacchi man-in-the-middle, è relativamente contenuto se paragonato al rischio di esporre il traffico in Internet. In particolare, i dati utente esposti dal servizio di backup (ad esempio gli URI SIP) sono generalmente disponibili per tutti i dipendenti della società tramite altri mezzi, ad esempio la Rubrica globale o altro software di directory. Pertanto, l'attenzione deve essere concentrata sulla protezione della rete WAN tra i due data center quando viene utilizzato il servizio di backup per copiare i dati tra i due pool associati.
   
 ### <a name="mitigating-security-risks"></a>Riduzione dei rischi per la sicurezza
 

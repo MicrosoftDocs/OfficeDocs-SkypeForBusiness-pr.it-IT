@@ -9,7 +9,7 @@ ms.service: msteams
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - Teams_ITAdmin_Healthcare
@@ -19,12 +19,12 @@ ms.reviewer: anach
 description: Informazioni sulla specifica dell'interfaccia DSTU2 in Teams, tra cui la configurazione o la riconfigurazione di un server FHIR per l'utilizzo con l'app Microsoft Teams Patients.
 ms.custom: seo-marvel-mar2020
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8ec2b1a88d99937e83bc8553f7dbcdd8d92f78b5a8e5708301147a26f0cffe4a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3d4b8e1d965cd3b0704885d6f86e376cfc3c9316
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308765"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589730"
 ---
 # <a name="dstu2-interface-specification"></a>Specifica dell'interfaccia DSTU2
 
@@ -53,7 +53,7 @@ Tutte le risorse FHIR seguenti devono essere accessibili tramite riferimento dir
 
 ## <a name="conformance-minimum-required-field-set"></a>Set di campi obbligatorio minimo di conformità
 
- Il server FHIR deve implementare la dichiarazione di conformità per poter disporre di un riepilogo fattuale delle sue funzionalità. In un server DSTU2 FHIR sono previsti i parametri seguenti:
+ Il server FHIR deve implementare la dichiarazione di conformità per avere un riepilogo fattuale delle sue funzionalità. In un server DSTU2 FHIR sono previsti i parametri seguenti:
 
  - RESTO
 
@@ -363,7 +363,7 @@ Vedere [https://www.hl7.org/fhir/DSTU2/Encounter.htm](https://www.hl7.org/fhir/D
 
 ## <a name="allergyintolerance"></a>AllergyIntolerance
 
-Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo Disarginamentoargia Argonaut:
+Questi sono i campi obbligatori minimi, che sono un sottoinsieme del profilo DisarginamentoArgirgia di Argonaut:These are the minimum required fields, which are a subset of the Argonaut AllergyIntolerance profile:
 
  - Code.Text
  - Code.Coding[0]. Visualizzazione

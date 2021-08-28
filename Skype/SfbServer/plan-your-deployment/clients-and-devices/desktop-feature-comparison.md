@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 16b14d59-7737-4f9d-aa4d-83765a18ea07
 description: 'Riepilogo: Skype for Business Server 2015 o Skype for Business Online gli amministratori possono usare queste tabelle per comprendere quali funzionalità sono supportate su quali client.'
-ms.openlocfilehash: c3c7e8a744f678a1453c52f57f7d97ae96cb0588cf6bc416ad04007a35eeba6f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f73da5821c766e2fbc7837908a2b5b635bca0089
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318819"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596540"
 ---
 # <a name="desktop-client-feature-comparison-for-skype-for-business-server-2015"></a>Confronto delle funzionalità client desktop per Skype for Business Server 2015
 
@@ -34,7 +34,7 @@ Alcune funzionalità disponibili con Skype for Business Server 2015 non sono dis
 
 Vedere [Desktop client feature comparison for Skype for Business 2019](../../../SfBServer2019/plan/feature-comparison.md) for client support on Skype for Business Server 2019.
   
-Nelle tabelle seguenti vengono mostrate le funzionalità disponibili con ogni client compatibile con Skype for Business Server 2015 o Skype for Business Online. Puoi anche fare riferimento al confronto delle funzionalità [del client mobile](mobile-feature-comparison.md) per Skype for Business per i confronti delle funzionalità client di smartphone e tablet. Anche la licenza di accesso client o la licenza di sottoscrizione utente acquistata dall'organizzazione avranno un impatto sulle funzionalità disponibili per gli utenti. La distribuzione del client Completo o Basic agli utenti dipende dalla licenza o dal piano scelto dall'organizzazione. Per altri [dettagli, vedi la Guida](https://products.office.com/skype-for-business/it-pros) alle licenze.
+Nelle tabelle seguenti vengono mostrate le funzionalità disponibili con ogni client compatibile con Skype for Business Server 2015 o Skype for Business Online. È anche possibile fare riferimento al confronto delle funzionalità [del client](mobile-feature-comparison.md) mobile Skype for Business per i confronti tra funzionalità client di smartphone e tablet. Anche la licenza di accesso client o la licenza di sottoscrizione utente acquistata dall'organizzazione avranno un impatto sulle funzionalità disponibili per gli utenti. La distribuzione del client Completo o Basic agli utenti dipende dalla licenza o dal piano scelto dall'organizzazione. Per altri [dettagli, vedi la Guida](https://products.office.com/skype-for-business/it-pros) alle licenze.
   
 > [!IMPORTANT]
 > Skype for Business Server 2015 e Skype for Business Online supportano i seguenti client rilasciati in precedenza: Lync 2013, Lync 2010, Lync 2010 Mobile, Lync Telefono Edition e Lync 2010 Attendant. Per informazioni su questi client se utilizzati con altri server, vedere Le tabelle di confronto dei client per [Lync Server 2013](/previous-versions/office/lync-server-2013/lync-server-2013-desktop-client-comparison-tables) e Le tabelle di confronto dei [client per Lync Server 2010.](/previous-versions/office/skype-server-2010/gg425836(v=ocs.14))
@@ -51,7 +51,7 @@ Nelle tabelle seguenti vengono mostrate le funzionalità disponibili con ogni cl
 
 Questa tabella illustra le funzionalità di presenza avanzata che si estendono oltre una semplice indicazione del fatto che un utente sia online, offline, occupato e così via.
   
-|Funzionalità/funzionalità|Skype for Business 2015 o 2016 client|Skype for Business nel Mac|Client Lync 2013|App Lync Windows Store|Lync 2010 | Lync 2010 Attendant|Lync Phone Edition|Communicator per Mac 2011|Lync per Mac 2011|
+|Funzionalità/funzionalità|Skype for Business 2015 o 2016|Skype for Business nel Mac|Client Lync 2013|App Lync Windows Store|Lync 2010 | Lync 2010 Attendant|Lync Phone Edition|Communicator per Mac 2011|Lync per Mac 2011|
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Stato pubblicazione |&#x2714;|&#x2714; &#x2776; |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714; &#x2776; |&#x2714;|&#x2714;|
 |Visualizzare lo stato   |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -68,7 +68,7 @@ Questa tabella illustra le funzionalità di presenza avanzata che si estendono o
 
 In questa tabella vengono illustrate le funzionalità relative alla gestione dei contatti di messaggistica istantanea e presenza.
 
-|Funzionalità/funzionalità|Skype for Business 2015 o 2016 client|Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
+|Funzionalità/funzionalità|Skype for Business 2015 o 2016|Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Elenco contatti precompilato |&#x2714;|||||||||
 |Visualizzare e modificare l'elenco contatti |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -77,7 +77,7 @@ In questa tabella vengono illustrate le funzionalità relative alla gestione dei
 |Eseguire ricerche nella rubrica della società |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Eseguire ricerche nei contatti di Microsoft Outlook |&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|&#x2714;||&#x2714;|
 |Gestire gruppi di contatti |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|
-|Espandere gruppi di distribuzione Microsoft 365 gruppi |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|||
+|Espandere i gruppi di distribuzione Microsoft 365 gruppi |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|||
 |Cercare Response Group  <br/> (non disponibile in Skype for Business Online) |&#x2714;||&#x2714;||&#x2714;|&#x2714;||||
 |Visualizzare gruppi di contatti recenti |&#x2714;||&#x2714;||&#x2714;|&#x2714;||||
 |Visualizzare il gruppo Conversazioni correnti |&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|&#x2714;|||
@@ -90,16 +90,16 @@ In questa tabella vengono illustrate le funzionalità relative alla gestione dei
 
 <a name="BKMK_IMSupport"> </a>
 
-Questa tabella illustra le funzionalità relative al supporto della messaggistica istantanea.
+In questa tabella vengono illustrate le funzionalità relative al supporto della messaggistica istantanea.
 
-|Funzionalità/funzionalità | Skype for Business 2015 o 2016 client | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
+|Funzionalità/funzionalità | Skype for Business 2015 o 2016 | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Avviare la messaggistica istantanea con o inviare un messaggio di posta elettronica a un contatto |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|
 |Spostarsi tra più conversazioni di messaggistica istantanea/Tenere traccia di più conversazioni in una singola finestra a schede |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|
 |Registrare conversazioni istantanee in Outlook |&#x2714;|&#x2714;Se la cronologia delle conversazioni sul lato server è attivata  |&#x2714;|&#x2714;|&#x2714;|&#x2714;||Mantenuta in Communicator per Mac |Mantenuta in Lync per Mac |
 |Utilizzare modelli di conversazioni preparati |||||&#x2714;|&#x2714;||||
 |Controllare l'ortografia |&#x2714;|&#x2714;||&#x2714;|||||&#x2714;|
-|Ricerca competenze (con SharePoint Server)  <br/> Per la ricerca di competenze sono necessari Skype for Business Server locali e locali SharePoint 2013. |&#x2714;||&#x2714;|&#x2714;|&#x2714;|&#x2714;||||
+|Ricerca competenze (con SharePoint Server)  <br/> Per la ricerca di competenze Skype for Business Server locale e locale SharePoint 2013. |&#x2714;||&#x2714;|&#x2714;|&#x2714;|&#x2714;||||
 |Integrazione di Persistent Chat (Group Chat)  <br/> (non disponibile per Skype for Business Online) |&#x2714;||&#x2714;|||||||
 |Inoltrare una chat room persistente a una Skype for Business riunione con un clic  <br/> (non disponibile per Skype for Business Online) |&#x2714;||&#x2714;|||||||
 |Immagini in linea di mittente e destinatario nella finestra di messaggistica istantanea |&#x2714;||&#x2714;|&#x2714;||||||
@@ -117,7 +117,7 @@ In questa tabella vengono illustrate le funzionalità relative al supporto per l
 > [!NOTE]
 > Skype for Business delle riunioni non sono disponibili in Skype for Business online autonomo Piano 1.  Il piano 1 viene [ritirato.](../../../SfbOnline/skype-for-business-and-microsoft-teams-add-on-licensing/license-options-based-on-your-plan/skype-for-business-online-plan-1-retirement.md)
 
-Nelle sessioni Skype-to-Skype, un utente di Skype for Business Online Piano 1 può partecipare alla condivisione desktop e alle applicazioni se viene invitato da un utente che ha accesso alle funzionalità di condivisione.
+Nelle sessioni Skype-to-Skype, un utente di Skype for Business Online Piano 1 può partecipare alla condivisione di applicazioni e desktop se viene invitato da un utente che ha accesso alle funzionalità di condivisione.
 Per informazioni dettagliate, vedere Skype for Business [Online Service Description](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description).
   
 |Funzionalità/funzionalità | Skype for Business 2016 client | Skype for Business nel Mac | Skype for Business Web App | Skype for Business 2015 | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
@@ -135,7 +135,7 @@ Per informazioni dettagliate, vedere Skype for Business [Online Service Descript
 |Usare riunioni audio con accesso remoto |&#x2714; &#x2777; |&#x2714;|&#x2714; &#x2777; |&#x2714;|&#x2714; &#x2777; |&#x2714; &#x2777; |&#x2714;|&#x2714;|||&#x2714;|
 |Avviare una riunione riunione |&#x2714;|&#x2714;||&#x2714;|&#x2714;|&#x2714;|&#x2714;||||&#x2714;|
 |Aggiungere e presentare file di Microsoft PowerPoint |&#x2714;| &#x2778; annotazioni non disponibili |&#x2714;|&#x2714;|&#x2714;|Solo presente |&#x2714;|||| &#x2778; solo visualizzazione, annotazioni non disponibili |
-|Esplorare i file PowerPoint Microsoft |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||||&#x2714;|
+|Esplorare i file di Microsoft PowerPoint |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||||&#x2714;|
 |Aggiungere e modificare note OneNote riunione |&#x2714;||Solo modifica (non aggiunta) |&#x2714;|&#x2714;|||||||
 |Utilizzare una lavagna |&#x2714;||&#x2714;|&#x2714;|&#x2714;||&#x2714;|||||
 |Effettuare sondaggi |&#x2714;||&#x2714;|&#x2714;|&#x2714;||&#x2714;|||||
@@ -167,7 +167,7 @@ Questa tabella illustra le funzionalità correlate al supporto dei servizi vocal
 > [!NOTE]
 > Skype for Business Le funzionalità vocali (telefonia) sono limitate a determinati Skype for Business di sottoscrizione online. Per informazioni dettagliate, vedere Skype for Business [Online Service Description](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-service-description).
   
-| Funzionalità/funzionalità | Skype for Business 2015 o 2016 client | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
+| Funzionalità/funzionalità | Skype for Business 2015 o 2016 | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Avviare una chiamata |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
 |Fare clic per chiamare un contatto  |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|
@@ -198,7 +198,7 @@ Questa tabella illustra le funzionalità correlate al supporto dei servizi vocal
 
 In questa tabella vengono illustrate le funzionalità relative al supporto per gli utenti esterni ospitati nella rete PSTN.
 
-|Funzionalità/funzionalità | Skype for Business 2015 o 2016 client | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
+|Funzionalità/funzionalità | Skype for Business 2015 o 2016 | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Avviare conversazioni istantanee con un contatto pubblico  |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|
 |Avviare conversazioni istantanee con un contatto federato |&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;|&#x2714;||&#x2714;|&#x2714;|
@@ -210,7 +210,7 @@ In questa tabella vengono illustrate le funzionalità relative al supporto per g
 
 In questa tabella vengono illustrate le funzionalità relative al supporto per la registrazione delle riunioni.
   
-| Futuro/funzionalità** | Skype for Business 2015 o 2016 client | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
+| Futuro/funzionalità** | Skype for Business 2015 o 2016 | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Registrazione sul lato client di audio, video, condivisione applicazioni, condivisione desktop e contenuto caricato |&#x2714; &#x2776; ||&#x2714; &#x2776; ||&#x2714;|||||
 |Registrazione sul lato client di trasferimenti di file, pagine OneNote condivise e PowerPoint annotazioni |&#x2714; &#x2777; ||&#x2714; &#x2777; ||&#x2714;|||||
@@ -228,7 +228,7 @@ Questa tabella illustra le funzionalità che richiedono il supporto per l'autent
   
 L'autenticazione moderna richiede anche una topologia descritta in [Skype for Business topologie supportate con l'autenticazione moderna.](../../plan-your-deployment/modern-authentication/topologies-supported.md)
 
-| Funzionalità/funzionalità | Skype for Business 2015 o 2016 client | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
+| Funzionalità/funzionalità | Skype for Business 2015 o 2016 | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | Communicator per Mac 2011 | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Autenticazione moderna |&#x2714;|&#x2714;|&#x2714;|||||||
 |Autenticazione a più fattori  |&#x2714;|&#x2714;|&#x2714;|||||||
@@ -241,7 +241,7 @@ L'autenticazione moderna richiede anche una topologia descritta in [Skype for Bu
 
 In questa tabella vengono illustrate le funzionalità relative al supporto per le funzioni di archiviazione e registrazione.
 
-| Funzionalità/funzionalità | Skype for Business 2015 o 2016 client | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | **Communicator per Mac 2011** | Lync per Mac 2011 |
+| Funzionalità/funzionalità | Skype for Business 2015 o 2016 | Skype for Business nel Mac | Client Lync 2013 | App Lync Windows Store | Lync 2010 | Lync 2010 Attendant | Lync Phone Edition | **Communicator per Mac 2011** | Lync per Mac 2011 |
 |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
 |Archiviazione delle conversazioni di messaggistica istantanea nella Outlook conversazioni |&#x2714; &#x2776; |&#x2714;se la cronologia delle conversazioni sul lato server è abilitata |&#x2714; &#x2776; |&#x2714; &#x2776; |&#x2714;|&#x2714;||Mantenuta in Communicator per Mac |Mantenuta in Lync per Mac |
 |Archiviazione sul lato client di audio, video, condivisione applicazioni, condivisione desktop e contenuto caricato |&#x2714; &#x2776; ||&#x2714; &#x2776; ||&#x2714;|||||

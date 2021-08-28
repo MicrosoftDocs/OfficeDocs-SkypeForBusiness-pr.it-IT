@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server.
-ms.openlocfilehash: f01ac47641dac417efc57b91d59ce3b6ef1c006f273ce41c29eae675db5129eb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ef03aa21b64ec305829ed5da8ef84a0d5b8bfd92
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351696"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596560"
 ---
 # <a name="manage-trusted-applications-in-skype-for-business-server"></a>Gestire le applicazioni attendibili in Skype for Business Server
 
@@ -34,7 +34,7 @@ Utilizzare questo articolo per informazioni su come configurare un nuovo server 
 
 3.  Selezionare **Scarica topologia dalla distribuzione esistente** e quindi fare clic su **OK**.
 
-4.  Nella finestra **di dialogo Salva topologia** con nome fare clic sul file del Generatore di topologie che si desidera utilizzare e quindi fare clic su **Salva**.
+4.  Nella finestra **di dialogo Salva topologia** con nome fare clic sul file del Generatore di topologie che si desidera utilizzare e quindi fare clic su **Salva.**
 
 5.  Nel riquadro sinistro fare clic con il pulsante destro del mouse su **Server applicazioni attendibili** e quindi scegliere Nuovo pool di applicazioni **attendibili.**
 
@@ -53,9 +53,9 @@ Utilizzare questo articolo per informazioni su come configurare un nuovo server 
 
 È possibile utilizzare il Skype for Business Server di controllo per visualizzare un elenco delle applicazioni attendibili distribuite nell'ambiente Skype for Business Server locale. Un'applicazione attendibile è un'applicazione basata su Microsoft Unified Communications Managed API (UCMA) 3.0 Core SDK considerato attendibile da Skype for Business Server. Questa relazione di trust è riepilogata nell'elenco seguente:
 
-  - Le applicazioni attendibili non vengono sfidate per l'autenticazione da Skype for Business Server.
+  - Le applicazioni attendibili non vengono sfidate per l'autenticazione Skype for Business Server.
 
-  - Le applicazioni attendibili non vengono limitate da Skype for Business Server per transazioni SIP, connessioni o chiamate VoIP (Voice over Internet Protocol) in uscita.
+  - Le applicazioni attendibili non sono limitate da Skype for Business Server per le transazioni SIP, le connessioni o le chiamate VoIP (Voice over Internet Protocol) in uscita.
 
   - Le applicazioni attendibili possono rappresentare qualsiasi utente e possono partecipare a conferenze senza essere inserite negli elenchi dei partecipanti.
 
@@ -84,24 +84,21 @@ Nel Pannello Skype for Business Server di controllo è possibile visualizzare il
 
 Per visualizzare tutte le applicazioni attendibili, digitare il comando seguente in Skype for Business Server Management Shell e quindi premere INVIO:
     
-        Get-CsConferenceDisclaimer
+   **Get-CsConferenceDisclaimer**
     
    Il comando restituisce informazioni simili a questa, per ciascuna applicazione affidabile:
     
-        Identity               : CN={5dedf4b0-a590-49b3-80cf-f16f914bbef9},CN=Application Contacts,CN=RTC
-                                 Service,CN=Services,CN=Configuration,DC=litware,DC=com
-        RegistrarPool          : 487279971
-        HomeServer             : CN=Lc Services,CN=Microsoft,CN=co1:2,CN=Pools,CN=RTC
-                                 Service,CN=Services,CN=Configuration,DC=litware,DC=com
-        OwnerUrn               : urn:application:helpdesk
-        SipAddress             : sip:RtcApplication-dbf5142f-2bb2-4c4f-9531-b7fea45c5000@litware.com
-        DisplayName            :
-        DisplayNumber          :
-        LineURI                :
-        PrimaryLanguage        : 0
-        SecondaryLanguages     : {}
-        EnterpriseVoiceEnabled : True
-        ExUmEnabled            : False
-        Enabled                : True
+   Identità : CN={5dedf4b0-a590-49b3-80cf-f16f914bbef9},CN=Application Contacts,CN=RTC Service,CN=Services,CN=Configuration,DC=litware,DC=com<br/>
+   RegistrarPool : 487279971<br/>
+   HomeServer : CN=Lc Services,CN=Microsoft,CN=co1:2,CN=Pools,CN=RTC Service,CN=Services,CN=Configuration,DC=litware,DC=com OwnerUrn : urn:application:helpdesk<br/>
+   SipAddress : sip:RtcApplication-dbf5142f-2bb2-4c4f-9531-b7fea45c5000@litware.com<br/>
+   DisplayName :<br/>
+   DisplayNumber :<br/>
+   LineURI :<br/>
+   PrimaryLanguage : 0<br/>
+   SecondaryLanguages : {}<br/>
+   EnterpriseVoiceEnabled : True<br/>
+   ExUmEnabled : False<br/>
+   Enabled : True<br/>
     
    For details, see [Get-CsTrustedApplication](/powershell/module/skype/Get-CsTrustedApplication).

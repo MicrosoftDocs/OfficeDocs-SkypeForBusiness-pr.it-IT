@@ -17,19 +17,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Guida dettagliata che illustra come configurare Sistema telefonico (Cloud PBX) per l'organizzazione in Microsoft 365 o Office 365.
-ms.openlocfilehash: 1fd75870b53dafa5ade4db4f66a82593cce81836994cd4b5e01f1f1bda4864b4
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ac52110762b6aad0b1041c14c55a39804e68a8c0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54293003"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589648"
 ---
 # <a name="set-up-phone-system-in-your-organization"></a>Configurare Sistema telefonico nell'organizzazione
 
@@ -45,7 +45,7 @@ Di seguito è riportata una guida dettagliata per la configurazione di Sistema t
 
 Per assegnare una licenza Sistema telefonico piano di chiamata a un singolo utente, i passaggi sono gli stessi dell'assegnazione di una licenza Microsoft 365 o Office 365 chiamata.  È anche possibile assegnare licenze a più utenti in blocco. Per altre informazioni, vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](teams-add-on-licensing/assign-teams-add-on-licenses.md)
 
-Se i Piani per chiamate non sono disponibili per il paese o l'area geografica, è consigliabile usare Il routing diretto per connettere l'infrastruttura di telefonia locale a Sistema telefonico.  Per altre informazioni, vedere Sistema telefonico [routing diretto](direct-routing-landing-page.md).
+Se piani per chiamate non sono disponibili per il paese o l'area geografica, è consigliabile usare Il routing diretto per connettere l'infrastruttura di telefonia locale a Sistema telefonico.  Per altre informazioni, vedere Sistema telefonico [Routing diretto](direct-routing-landing-page.md).
 
 ## <a name="step-3-get-phone-numbers-for-your-users"></a>Passaggio 3: Ottenere i numeri di telefono per gli utenti
 
@@ -58,21 +58,21 @@ Sono disponibili tre modi per ottenere numeri per gli utenti:
 
 È necessario usare la **pagina Aggiungi numeri** per visualizzare, cercare, acquisire e prenotare tali numeri. Puoi eseguire una ricerca in base a Paese/Area geografica, Stato e Città e inserire i numeri di telefono necessari per gli utenti.
 
-### <a name="get-new-user-phone-numbers-using-the-teams-admin-center"></a>Ottenere nuovi numeri di telefono dell'utente usando l'interfaccia Teams di amministrazione
+### <a name="get-new-user-phone-numbers-using-the-teams-admin-center"></a>Ottenere nuovi numeri di telefono utente tramite l'interfaccia Teams di amministrazione
 
 1. Accedere a Microsoft 365 con l'account aziendale o dell'istituto di istruzione.
 
 2. Passare **all'Teams di amministrazione.**
     
-3. Nel riquadro di spostamento sinistro passare **a Numeri** Telefono vocali, fare clic  >  su **Aggiungi** e quindi seguire le istruzioni visualizzate.
+3. Nel riquadro di spostamento sinistro passare **a Numeri** Telefono vocali, fare clic su  >   **Aggiungi** e quindi seguire le istruzioni visualizzate.
     
-### <a name="get-new-numbers-that-arent-available-in-the-teams-admin-center"></a>Ottenere nuovi numeri non disponibili nell'interfaccia Teams di amministrazione
+### <a name="get-new-numbers-that-arent-available-in-the-teams-admin-center"></a>Ottenere nuovi numeri non disponibili nell'interfaccia di amministrazione di Teams
   
-A volte , a seconda del paese o dell'area geografica, non sarà possibile ottenere i nuovi numeri usando l'interfaccia di amministrazione Teams. In questo caso, è necessario scaricare un modulo e inviarlo di nuovo a Microsoft. Per informazioni su come richiedere nuovi numeri utente, vedere [Gestire i numeri di telefono per l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)   
+A volte (a seconda del paese/area geografica) non sarà possibile ottenere i nuovi numeri usando l'interfaccia di amministrazione Teams. In questo caso, è necessario scaricare un modulo e inviarlo di nuovo a Microsoft. Per informazioni su come richiedere nuovi numeri utente, vedere [Gestire i numeri di telefono per l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)   
   
 ### <a name="port-or-transfer-phone-numbers-from-your-service-provider-or-phone-carrier"></a>Trasferire numeri di telefono dal provider di servizi o dal gestore di telefonia
   
-- Se sono necessari 999 o meno numeri di  telefono per gli utenti, è possibile usare la procedura guidata Nuovo ordine di trasferimento dei numeri locali nell'Teams di amministrazione. Seguire la procedura descritta in [Trasferire numeri di telefono per Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) trasferire i numeri di telefono.
+- Se sono necessari 999 o meno numeri di  telefono per gli utenti, è possibile usare la procedura guidata Nuovo ordine di trasferimento numeri locali nell'interfaccia di amministrazione Teams locale. Seguire la procedura descritta in [Trasferire numeri di telefono per Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) trasferire i numeri di telefono.
     
 - Se è necessario inviare più di 999 numeri di telefono, vedere Gestire i numeri di telefono per l'organizzazione per inviare una richiesta o un ordine di servizio per l'ordine di trasferimento. [](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) 
 
@@ -89,14 +89,14 @@ Oltre a ottenere numeri di telefono per gli utenti da Microsoft 365 o Office 365
 
 2. Passare **all'Teams di amministrazione.**
 
-3. Nel riquadro di spostamento sinistro passare **a** Numeri Telefono aggiungi nuovo numero e quindi fare  >    >  clic su **Nuovi numeri di servizio.**
+3. Nel riquadro di spostamento sinistro passare a **Numeri** Telefono aggiungi nuovo numero e quindi fare  >    >  clic su **Nuovi numeri di servizio.**
 
     > [!IMPORTANT]
     > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di Teams, è necessario prima acquistare almeno una licenza  **Enterprise E5,** una licenza per componenti aggiuntivi  **Sistema telefonico** o una licenza per i componenti aggiuntivi per audioconferenze.
 
-### <a name="get-new-numbers-that-arent-available-in-the-teams-admin-center"></a>Ottenere nuovi numeri non disponibili nell'interfaccia Teams di amministrazione
+### <a name="get-new-numbers-that-arent-available-in-the-teams-admin-center"></a>Ottenere nuovi numeri non disponibili nell'interfaccia di amministrazione di Teams
   
-A volte , a seconda del paese o dell'area geografica, non sarà possibile ottenere i nuovi numeri usando l'interfaccia di amministrazione Teams. In questo caso, è necessario scaricare un modulo e inviarlo di nuovo a Microsoft. Per informazioni su come richiedere nuovi numeri, vedere [Gestire i numeri di telefono per l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) 
+A volte (a seconda del paese/area geografica) non sarà possibile ottenere i nuovi numeri usando l'interfaccia di amministrazione Teams. In questo caso, è necessario scaricare un modulo e inviarlo di nuovo a Microsoft. Per informazioni su come richiedere nuovi numeri, vedere [Gestire i numeri di telefono per l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) 
 
 ### <a name="port-or-transfer-existing-service-numbers"></a>Portabilità o trasferimento dei numeri di servizio
 
@@ -110,7 +110,7 @@ Se avete seguito i passaggi precedenti, avete già acquistato il Sistema telefon
 ## <a name="step-6-if-you-want-to-set-up-audio-conferencing"></a>Passaggio 6: Se si desidera impostare Audioconferenze
 
 A volte le persone all'interno dell'organizzazione devono utilizzare un telefono per accedere a una riunione. Microsoft Teams include la funzionalità di audioconferenza solo per questa situazione. Le persone possono accedere a Teams riunioni usando un telefono, invece di usare l'app Teams su un dispositivo mobile o un PC.
-Per informazioni su come configurare le audioconferenze, vedere [Configurare le audioconferenze per](set-up-audio-conferencing-in-teams.md)Teams .
+Per informazioni su come configurare le audioconferenze, vedere [Configurare le audioconferenze per Teams.](set-up-audio-conferencing-in-teams.md)
 
 ## <a name="step-7-if-you-want-to-set-up-a-cloud-call-queue"></a>Passaggio 7: Se si vuole configurare una coda di chiamata cloud
 
@@ -129,17 +129,17 @@ Per informazioni sulla configurazione di un partecipante automatico cloud, veder
 
 Dopo avere creato i numeri di servizio dal **passaggio 4 sopra**, è necessario assegnarli a ogni tipo di servizio che si desidera. Ad esempio, se si vuole un numero di telefono di servizio dedicato (a numero verde o a numero verde), è necessario assegnare il numero al bridge di conferenza.
 
-- Per i servizi di audioconferenza, è possibile assegnare un numero dedicato a un bridge di conferenza andando **Teams** bridge di conferenze dell'interfaccia di amministrazione riunioni e seguendo le  >    >   istruzioni visualizzate.  Per altre informazioni, vedere Modificare i numeri a numero verde o a numero verde [nel bridge di audioconferenza.](change-the-phone-numbers-on-your-audio-conferencing-bridge.md)
+- Per le audioconferenze, è possibile assegnare **un** numero dedicato a un bridge di conferenza Teams nell'interfaccia di amministrazione Bridge di conferenza riunioni e seguire  >    >   le istruzioni visualizzate.  Per altre informazioni, vedere Modificare i numeri a numero verde o a numero verde [nel bridge di audioconferenza.](change-the-phone-numbers-on-your-audio-conferencing-bridge.md)
 
 - Per gli operatori automatici, è possibile assegnare un numero dedicato a un operatore automatico andando **Teams** operatori vocali dell'interfaccia di amministrazione e seguendo  >    >   le istruzioni visualizzate.  Per altre informazioni, vedere [Configurare un operatore automatico cloud.](create-a-phone-system-auto-attendant.md)
 
-- Per le code di chiamata, è possibile assegnare un numero dedicato **a** una coda di chiamata Teams coda di chiamate vocali dell'interfaccia di amministrazione e seguire  >    >   le istruzioni visualizzate. Per altre informazioni, vedere [Creare una coda di chiamata cloud.](create-a-phone-system-call-queue.md)
+- Per le code di chiamata, è possibile assegnare un numero dedicato **a** una coda di chiamata andando Teams code chiamate vocali dell'interfaccia di amministrazione e seguendo  >    >   le istruzioni visualizzate. Per altre informazioni, vedere [Creare una coda di chiamata cloud.](create-a-phone-system-call-queue.md)
 
 Per informazioni dettagliate su come ottenere nuovi numeri di servizio oppure su come trasferire numeri di servizio esistenti, vedere [Ottenere numeri di telefono di servizio](getting-service-phone-numbers.md).
 
 ## <a name="step-10-set-up-communications-credits-for-your-organization"></a>Passaggio 10: Configurare i crediti comunicazioni per l'organizzazione
 
-Se si vuole usare numeri verde con Microsoft Teams, è necessario configurare Crediti comunicazioni. Microsoft consiglia di configurare i Crediti comunicazioni per i piani per chiamate (nazionali o internazionali) e gli utenti di audioconferenza che necessitano della possibilità di effettuare chiamate in uscita verso qualsiasi destinazione. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni PSTN possono non essere incluse in un dato abbonamento Piano per chiamate e Audioconferenza. 
+Se si vuole usare i numeri verde con Microsoft Teams, è necessario configurare i Crediti comunicazioni. Microsoft consiglia di configurare i Crediti comunicazioni per i piani per chiamate (nazionali o internazionali) e per gli utenti di audioconferenza che necessitano della possibilità di effettuare chiamate in uscita verso qualsiasi destinazione. Sono inclusi molti paesi/aree geografiche, ma alcune destinazioni PSTN possono non essere incluse in un dato abbonamento Piano per chiamate e Audioconferenza. 
 
 Se non vengono impostati i Crediti comunicazioni o assegnata una licenza **Crediti comunicazioni** agli utenti e vengono esauriti i minuti per la propria organizzazione (a seconda del Piano per chiamate e Audioconferenza per lo specifico paese/area geografica), quegli utenti non potranno effettuare chiamate o chiamate in uscita dalle riunioni online in audioconferenza. Per altre informazioni, inclusi gli importi di finanziamento consigliati, vedere Che cosa sono i crediti [comunicazioni?](what-are-communications-credits.md) e [Configurare i crediti comunicazioni per l'organizzazione.](set-up-communications-credits-for-your-organization.md)
   

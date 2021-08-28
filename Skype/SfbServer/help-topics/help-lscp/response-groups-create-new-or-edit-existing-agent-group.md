@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.RgsGroupEdit
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 79eaaf6c-6928-4925-8220-c7ada6b37205
 description: I gruppi di agenti definiscono quali utenti possono rispondere alle chiamate a un Response Group (anche definito agenti) e le impostazioni che si applicano a tutti gli agenti del gruppo.
-ms.openlocfilehash: 86dca2b0db3f0daa58c892f36fc09c7f2ea4869dc0d867a8084a16d626b327f6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d340795a2ab4ae42baa6f48b9e81a99a6e28e2e3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309465"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623948"
 ---
 # <a name="response-groups-create-new-or-edit-existing-agent-group"></a>Response Group: creare un nuovo gruppo di agenti o modificarne uno esistente
 
@@ -36,7 +36,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Criteri di partecipazione** Specificare la modalità di accesso degli agenti al Response Group:
 
-  - Selezionare **Informale** per specificare che gli agenti del gruppo non devono accedere e disconnettersi. Gli agenti informali vengono connessi automaticamente all'accesso. L'impostazione predefinita è **Informale**.
+  - Selezionare **Informale** per specificare che gli agenti del gruppo non devono accedere e disconnettersi. Gli agenti informali vengono automaticamente connessi all'accesso. L'impostazione predefinita è **Informale**.
 
   - Selezionare **Formal** per specificare che gli agenti del gruppo devono accedere e disconnettersi. Quando si seleziona questa opzione, gli agenti selezionano una voce di menu nel client per aprire un browser e visualizzare una console della pagina Web per l'accesso e la disconnessione.
 

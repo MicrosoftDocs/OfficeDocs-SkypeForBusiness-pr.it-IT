@@ -15,7 +15,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,16 +23,16 @@ ms.custom:
 - Strat_SB_PSTN
 - seo-marvel-mar2020
 description: Informazioni sulla composizione di numeri verde in un paese/area geografica, tra cui disponibilità, disponibilità di reti cablate/fisse e di rete mobile e restrizioni.
-ms.openlocfilehash: ef461e5c69c84355e967fbb78317cbcbf87c751e7733fa817e13aab8a8cf84be
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6ebe1154638b615a31eda623c31683384412954f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332368"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589588"
 ---
 # <a name="toll-free-dialing-limitations-and-restrictions"></a>Restrizioni e limitazioni per le chiamate verso numeri verdi
 
-Questo ti aiuterà a scoprire come comporre numeri a numero verde in ogni paese o area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina che contiene la posizione in cui è disponibile il servizio gratuito, inclusi dettagli specifici, restrizioni e limiti. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
+Questo ti aiuterà a trovare come comporre numeri verde in ogni paese o area geografica. Dopo aver selezionato il paese o l'area geografica, verrà visualizzata una pagina che contiene la posizione in cui è disponibile il servizio gratuito, inclusi dettagli specifici, restrizioni e limiti. Il formato o i formati di composizione mostreranno i codici di accesso necessari all'interno di ogni paese/area geografica per comporre il numero verde.
   
 Se sei pronto, seleziona un paese o un'area geografica:
   
@@ -113,7 +113,7 @@ Se sei pronto, seleziona un paese o un'area geografica:
     
 - **L'acquisizione o il porting dei numeri freephone internazionali universali (UIFN) non è supportato.**
     
-- **In molti paesi/aree geografiche, l'agenzia di regolamentazione/telecomunicazioni nel paese/area geografica richiede che ogni numero verde mantenga almeno 100 minuti di utilizzo al mese per conservare il numero.**
+- **In molti paesi/aree geografiche, l'agenzia di regolamentazione/telecomunicazione nel paese/area geografica richiede che ogni numero verde mantenga almeno 100 minuti di utilizzo al mese per conservare il numero.**
     
     > [!NOTE]
     > Nel caso in cui si otterrà un numero verde e l'uso del numero non soddisfi questi requisiti minimi, Microsoft potrebbe essere obbligata dal regolatore/agenzia di telecomunicazioni a recuperare il numero dall'utente. 

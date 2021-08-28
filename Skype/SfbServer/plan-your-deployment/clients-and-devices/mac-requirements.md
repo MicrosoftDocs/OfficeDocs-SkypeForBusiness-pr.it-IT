@@ -1,5 +1,5 @@
 ---
-title: Skype for Business dei client Mac
+title: Skype for Business sui requisiti del client Mac
 ms.author: v-cichur
 author: cichur
 ms.reviewer: PhillipGarding
@@ -10,28 +10,28 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 790d3e89-2b68-411b-b282-38de5d34dd10
-description: Leggere questo argomento per informazioni sui requisiti hardware, software e dell'infrastruttura per l'Skype for Business in un Mac.
-ms.openlocfilehash: 71ba17567e9dfe4bafe724ede29aace231ad122105b33eef14550cbc781a79b1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Leggere questo argomento per informazioni sui requisiti hardware, software e infrastruttura per l'Skype for Business in un Mac.
+ms.openlocfilehash: dd7dc17c4166838a76b11d9905335575205f4b2b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314442"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58604775"
 ---
-# <a name="skype-for-business-on-mac-client-requirements"></a>Skype for Business dei client Mac
+# <a name="skype-for-business-on-mac-client-requirements"></a>Skype for Business sui requisiti del client Mac
  
-Leggere questo argomento per informazioni sui requisiti hardware, software e dell'infrastruttura per l'Skype for Business in un Mac.
+Leggere questo argomento per informazioni sui requisiti hardware, software e infrastruttura per l'Skype for Business in un Mac.
   
 Il [Skype for Business sul client Mac](https://products.office.com/skype-for-business/download-app?tab=tabs-3#Mac) è disponibile per il download.
   
 ## <a name="hardware-and-software-requirements-for-skype-for-business-on-mac"></a>Requisiti hardware e software per Skype for Business mac
 
-Il Skype for Business sul client Mac richiede Mac OS X El Capitan e versioni successive e utilizza almeno 100 MB di spazio su disco. Supportiamo l'uso di tutti i dispositivi audio e video incorporati. I dispositivi esterni devono essere nel [Skype for Business Solutions Catalog](https://partnersolutions.skypeforbusiness.com/solutionscatalog). 
+Il Skype for Business sul client Mac richiede Mac OS X El Capitan e versioni successive e utilizza almeno 100 MB di spazio su disco. Supportiamo l'uso di tutti i dispositivi audio e video incorporati. I dispositivi esterni devono essere nel [Skype for Business soluzioni.](https://partnersolutions.skypeforbusiness.com/solutionscatalog) 
   
 > [!NOTE]
 > Questo elenco è preliminare e alcuni dispositivi possono essere qualificati per Lync, ma non sono supportati Skype for Business sul Mac. Fare riferimento ai [requisiti di sistema](https://products.office.com/office-system-requirements) per l'hardware minimo necessario.
@@ -46,7 +46,7 @@ Skype for Business Server 2015 supporta anche i client legacy seguenti nei compu
  
 Questi client non sono supportati da Skype for Business Server 2019.
    
-## <a name="infrastructure-requirements-for-skype-for-business-on-mac"></a>Requisiti dell'infrastruttura Skype for Business su Mac
+## <a name="infrastructure-requirements-for-skype-for-business-on-mac"></a>Requisiti dell'infrastruttura per Skype for Business su Mac
 <a name="Infrastructure"> </a>
 
 Il Skype for Business sul client Mac sfrutta sia UCMP (Unified Communications Management Platform) che UCWA (Unified Communications Web API) usate dai client per dispositivi mobili.
@@ -58,7 +58,7 @@ Il client ha gli stessi requisiti dei client per dispositivi mobili in quanto è
 Il Skype for Business sul client Mac supporta l'autenticazione basata su certificato, l'autenticazione moderna Microsoft e l'autenticazione a più fattori quando viene distribuita e abilitata.
   
 > [!NOTE]
-> A causa di una limitazione corrente, le credenziali dell'Exchange dell'utente devono essere uguali a Skype for Business credenziali. 
+> A causa di una limitazione corrente, le credenziali Exchange dell'utente devono essere uguali a Skype for Business credenziali. 
   
 ### <a name="certificates"></a>Certificati
 

@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.policies.naming.error
 - seo-marvel-mar2020
 description: Vedere quali problemi si verificano con caratteri speciali nei nomi dei criteri e cosa è possibile fare per risolverli.
-ms.openlocfilehash: b8a628ee261ba813b50d58531ab1255a2f121dc4e4719ff4249de70517215cc3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c06c5053452c1c55c9e8de09d6b18dd5e97deaca
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54292973"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589608"
 ---
 # <a name="what-are-the-special-character-restrictions-in-teams-policies"></a>Quali sono le restrizioni speciali per i caratteri nei Teams criteri?
 
@@ -35,15 +35,15 @@ Non è possibile creare o modificare criteri (per messaggistica, riunioni e cos�
 
 Se il nome di un criterio contiene caratteri speciali, la gestione di questi criteri sarà limitata nell'interfaccia Microsoft Teams di amministrazione. **Di conseguenza, è consigliabile che i nomi dei criteri non includano caratteri speciali.** 
 
-I nomi dei criteri creati con PowerShell per le riunioni e la messaggistica Teams possono contenere caratteri speciali come @,#,$. Tuttavia, se si vogliono apportare modifiche ai criteri nell'interfaccia di amministrazione di Microsoft Teams, non sarà possibile. 
+I nomi dei criteri creati con PowerShell per le riunioni e la messaggistica Teams possono contenere caratteri speciali come @,#,$. Tuttavia, se si vuole apportare modifiche ai criteri nell'interfaccia di amministrazione di Microsoft Teams, non sarà possibile. 
 
-Se si hanno criteri con caratteri speciali, è necessario modificare il criterio usando Windows PowerShell (sempre) o creare un nuovo criterio nell'interfaccia di amministrazione di Microsoft Teams con le stesse impostazioni del criterio precedente e assegnarlo allo stesso gruppo di utenti.
+Se si hanno criteri con caratteri speciali, è necessario modificare il criterio usando Windows PowerShell (per sempre) o creare un nuovo criterio nell'interfaccia di amministrazione di Microsoft Teams con le stesse impostazioni del criterio precedente e assegnarlo allo stesso gruppo di utenti.
 
 ## <a name="to-remove-special-characters"></a>Per rimuovere caratteri speciali
 
 **Passaggio 1 - Stabilire una connessione remota con PowerShell.**
 > [!NOTE]
-> Skype for Business Online Connector fa attualmente parte della versione più Teams modulo di PowerShell.
+> Skype for Business Online Connector fa attualmente parte dell'ultima versione Teams modulo di PowerShell.
 >
 > Se si usa la versione pubblica più [recente Teams PowerShell,](https://www.powershellgallery.com/packages/MicrosoftTeams/)non è necessario installare Skype for Business Online Connector.
 
@@ -96,13 +96,13 @@ Grant-CsMessagingPolicy -Policy <old_policy_name> $null
 ```
 ### <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
-Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che può semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
     
   - [Perché è necessario usare Office 365 PowerShell?](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti:
     
   - [Introduzione a Windows Powershell e Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
     

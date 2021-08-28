@@ -1,5 +1,5 @@
 ---
-title: Pianificare le linee telefoniche private con Skype for Business
+title: Pianificare linee telefoniche private con Skype for Business
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -9,27 +9,27 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 9cc4f9e1-7b7a-4699-bd05-f16669ef2d21
 description: Pianificazione di linee telefoniche private (secondarie) in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: e76f43ebdc4ee38a266651ddc81630c51a9ef976a1f18e6117cec9a1925fe5ce
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3f682d6d150bd52093d8c7bbb050b53b95ac3125
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302360"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58603845"
 ---
-# <a name="plan-for-private-telephone-lines-with-skype-for-business"></a>Pianificare le linee telefoniche private con Skype for Business
+# <a name="plan-for-private-telephone-lines-with-skype-for-business"></a>Pianificare linee telefoniche private con Skype for Business
  
 Pianificazione di linee telefoniche private (secondarie) in Skype for Business Server VoIP aziendale.
   
-Skype for Business Server consente di assegnare agli utenti una seconda linea telefonica privata oltre alla linea telefonica principale. Le linee telefoniche private vengono spesso assegnate ai dirigenti e ad altri che desiderano un numero di telefono non in elenco al quale possono essere raggiunte direttamente.
+Skype for Business Server consente di assegnare agli utenti una seconda linea telefonica privata oltre alla linea telefonica principale. Le linee telefoniche private sono spesso assegnate ai dirigenti e ad altri che desiderano un numero di telefono non in elenco al quale possono essere raggiunte direttamente.
   
-Le linee telefoniche private possono essere configurate solo con Skype for Business Server Management Shell. Non è possibile configurare linee telefoniche private con Skype for Business Server pannello di controllo. Le linee telefoniche private devono essere configurate solo nelle distribuzioni di Skype for Business Server e non in distribuzioni miste.
+Le linee telefoniche private possono essere configurate solo con Skype for Business Server Management Shell. Non è possibile configurare linee telefoniche private con Skype for Business Server pannello di controllo. Le linee telefoniche private devono essere configurate solo nelle distribuzioni di Skype for Business Server e non nelle distribuzioni miste.
   
 ## <a name="characteristics-of-private-telephone-lines"></a>Caratteristiche delle linee telefoniche private
 
@@ -49,9 +49,9 @@ Sebbene il concetto di una seconda linea telefonica privata sia fondamentalmente
 
 - I numeri di telefono per le linee telefoniche private non vengono visualizzati nelle directory telefoniche o negli elenchi contatti derivati da Servizi di dominio Active Directory.
     
-- Nessuna delle seguenti funzionalità è disponibile con una linea telefonica privata: inoltro di chiamata, chiamata del team, delega, anello del team, prelievo chiamata di gruppo e applicazione Response Group.
+- Nessuna delle funzionalità seguenti è disponibile con una linea telefonica privata: inoltro di chiamata, chiamata del team, delega, anello del team, prelievo chiamata di gruppo e applicazione Response Group.
     
-- Le chiamate a una linea telefonica privata hanno un anello speciale e la notifica di sistema per la chiamata indica all'utente che la chiamata in arrivo è sulla sua linea privata.
+- Le chiamate a una linea telefonica privata hanno un anello speciale e la notifica di sistema per la chiamata indica all'utente che la chiamata in arrivo si trova sulla sua linea privata.
     
 - Le chiamate alla linea telefonica privata squillano sempre. Non seguono le regole "non disturbare".
     
@@ -75,7 +75,7 @@ Sebbene il concetto di una seconda linea telefonica privata sia fondamentalmente
     > Quando una chiamata a una linea privata viene instradata a un numero di telefono alternativo, il numero di telefono della linea telefonica privata viene reso disponibile per il numero di telefono alternativo e può essere visualizzato nei registri per tale numero. 
   
     > [!NOTE]
-    > Le chiamate da una conferenza alla linea telefonica privata non avranno  *un'indicazione*  di linea privata nella notifica del sistema in arrivo.
+    > Le chiamate da una conferenza alla linea telefonica privata non avranno un'indicazione di linea  *privata*  nella notifica del sistema in arrivo.
   
 ## <a name="administering-private-telephone-lines"></a>Amministrazione delle linee telefoniche private
 

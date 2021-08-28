@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 733577d0-c70f-4c70-ab7b-59b89fb495a8
 description: 'Riepilogo: informazioni sul monitoraggio dei report in Skype for Business Server.'
-ms.openlocfilehash: 8a1dd4e75b813f2208eb59f7608622b757d4f3ac58c93a012722afbc051a6de1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 88f5a092c1bf8bc2879be40ed2b3e8f29911b257
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345563"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596580"
 ---
 # <a name="using-monitoring-reports-in-skype-for-business-server"></a>Utilizzo dei report di monitoraggio in Skype for Business Server 
  
@@ -49,7 +49,7 @@ Oltre a consentire di scorrere i dati, ogni rapporto include anche caratteristic
   
 Come accennato, i rapporti di monitoraggio offrono solo funzioni di ricerca di base. Non è ad esempio possibile specificare il campo in cui deve essere presente il valore. Il meccanismo di ricerca esegue automaticamente la ricerca di valori corrispondenti in ogni campo di ogni record. Non è possibile utilizzare caratteri jolly nelle ricerche e in tutte le ricerche vengono cercati i valori parziali. Di conseguenza, se si cerca 111, non verrà trovato solo il valore 111, ma anche i valori 11100, 811, 3112, 611A5B e tutti gli altri campi che includono il valore 111 in qualsiasi posizione.
   
-Ogni rapporto è configurato per visualizzare un insieme predefinito di record. Ad esempio, per impostazione predefinita, in Rapporto registrazione utenti vengono visualizzate le attività di registrazione degli utenti per l'ultima settimana. In alcuni casi, ciò può produrre un rapporto che non restituisce alcun record. In questo caso, significa che nell'ultima settimana non è stata effettuata alcuna registrazione di utenti. Se viene visualizzato il messaggio "Nessun risultato corrisponde ai filtri del report", provare a modificare i valori del filtro ( ad esempio, modificare il periodo di tempo del mese precedente anziché la settimana precedente) ed eseguire di nuovo la query. Per informazioni dettagliate, vedere la sezione "Applicazione di filtri ai dati" più avanti in questo argomento.
+Ogni rapporto è configurato per visualizzare un insieme predefinito di record. Ad esempio, per impostazione predefinita, in Rapporto registrazione utenti vengono visualizzate le attività di registrazione degli utenti per l'ultima settimana. In alcuni casi, ciò può produrre un rapporto che non restituisce alcun record. In questo caso, significa che nell'ultima settimana non è stata effettuata alcuna registrazione di utenti. Se viene visualizzato il messaggio "Nessun risultato corrisponde ai filtri del report", provare a modificare i valori del filtro ( ad esempio, modificare il periodo di tempo rispetto all'ultimo mese anziché alla settimana precedente) ed eseguire di nuovo la query. Per informazioni dettagliate, vedere la sezione "Applicazione di filtri ai dati" più avanti in questo argomento.
   
 ## <a name="filtering-data"></a>Applicazione di filtri ai dati
 

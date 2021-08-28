@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 50399f26-58a3-4ce2-8229-32a8cafc7733
 description: 'Riepilogo: informazioni su come configurare le opzioni di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: b2ed0644e64df1606141b94157920d98599fb020db7bdf39d522699fb88555ef
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c38142f9a3c4e0db6c856bb1c75846399e9d62dd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338144"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616612"
 ---
 # <a name="manage-archiving-options-in-skype-for-business-server"></a>Gestire le opzioni di archiviazione in Skype for Business Server
 
@@ -59,12 +59,12 @@ L'archiviazione viene inizialmente configurata durante la distribuzione, ma è p
     
 ## <a name="configure-archiving-options-by-using-windows-powershell"></a>Configurare le opzioni di archiviazione tramite Windows PowerShell
 
-È inoltre possibile configurare le opzioni di archiviazione utilizzando i cmdlet Windows PowerShell elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell.](../management-shell.md)
+È inoltre possibile configurare le opzioni di archiviazione utilizzando i cmdlet Windows PowerShell elencati nella tabella seguente. Per informazioni dettagliate sulla sintassi, inclusi tutti i parametri disponibili, [vedere Skype for Business Server Management Shell](../management-shell.md).
   
 
 |**Cmdlet**|**Descrizione**|
 |:-----|:-----|
 |Get-CsArchivingConfiguration  <br/> |Restituisce informazioni sulle impostazioni di configurazione dell'archiviazione nell'organizzazione.  <br/> |
 |New-CsArchivingConfiguration  <br/> |Crea un nuovo set di impostazioni di messaggistica istantanea, che possono essere utilizzate per abilitare o disabilitare il salvataggio automatico delle sessioni di messaggistica istantanea e per bloccare eventuali messaggi istantanei che non possono essere archiviati.  <br/> |
-|Remove-CsArchivingConfiguration  <br/> |Rimuove la raccolta specificata di impostazioni di archiviazione utilizzate per abilitare o disabilitare il salvataggio automatico delle sessioni di messaggistica istantanea e per bloccare facoltativamente tutti i messaggi istantanei che non possono essere archiviati.  <br/> |
+|Remove-CsArchivingConfiguration  <br/> |Rimuove la raccolta specificata di impostazioni di archiviazione utilizzate per abilitare o disabilitare il salvataggio automatico delle sessioni di messaggistica istantanea e per bloccare facoltativamente i messaggi istantanei che non possono essere archiviati.  <br/> |
 |Set-CsArchivingConfiguration  <br/> |Modifica una raccolta esistente di opzioni di configurazione dell'archiviazione di messaggistica istantanea.  <br/> |
