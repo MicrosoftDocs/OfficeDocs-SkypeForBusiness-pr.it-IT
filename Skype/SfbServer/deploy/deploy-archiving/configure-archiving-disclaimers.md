@@ -9,21 +9,21 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 394ac291-05cd-4fa1-acb3-714af538b47f
 description: 'Riepilogo: leggere questo argomento per informazioni su come configurare una dichiarazione di non responsabilità di archiviazione per Skype for Business Server.'
-ms.openlocfilehash: 1afacace566cc75659e5b53e05346461b99f0cb888497f79da6340130585c959
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fd9af58e6418dac7d6abd995f33faa1def84c004
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312144"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611315"
 ---
 # <a name="configure-archiving-disclaimers-for-external-users-in-skype-for-business-server"></a>Configurare le dichiarazioni di non responsabilità di archiviazione per gli utenti esterni in Skype for Business Server
  
 **Riepilogo:** Leggere questo argomento per informazioni su come configurare una dichiarazione di non responsabilità di archiviazione per Skype for Business Server.
   
-Se l'organizzazione comunica con partner esterni, è necessario comunicare loro che si stanno archiviando le comunicazioni con loro. Quando si distribuisce un server perimetrale e si abilita la federazione per l'organizzazione, viene chiesto se si desidera inviare automaticamente una dichiarazione di non responsabilità di archiviazione ai partner esterni. 
+Se l'organizzazione comunica con partner esterni, è necessario comunicargli che si stanno archiviando le comunicazioni con essi. Quando si distribuisce un server perimetrale e si abilita la federazione per l'organizzazione, viene chiesto se si desidera inviare automaticamente una dichiarazione di non responsabilità di archiviazione ai partner esterni. 
   
 Se è necessario modificare questa configurazione, è possibile utilizzare il Pannello di controllo di Skype for Business Server o il cmdlet **Set-CsAccessEdgeConfiguration** Windows PowerShell. I cmdlet possono essere eseguiti da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell.
   

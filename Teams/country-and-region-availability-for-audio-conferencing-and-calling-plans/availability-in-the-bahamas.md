@@ -15,7 +15,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per le Bahamas.
-ms.openlocfilehash: 71ec974345725d9bc33b320f425cb24989cdabe09b1eaf84940c18a5c76f34fb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ec62268d9acb8498c230e2ce65b1077c9f7a1ffb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54352295"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618532"
 ---
 # <a name="availability-in-the-bahamas"></a>Disponibilità nelle Bahamas
 
@@ -72,7 +72,7 @@ Se i Piani per chiamate non sono disponibili per l'acquisto, è consigliabile us
 |Sono disponibili numeri verdi a tariffa?  <br/> |No <br/> |
 |Sono disponibili numeri a numero verde? <br/> | Sì  <br/> |
    
- Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di [chiamata,](../getting-service-phone-numbers.md)vedere Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams .
+ Se si vogliono ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

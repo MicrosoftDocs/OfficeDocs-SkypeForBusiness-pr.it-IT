@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Colombia.
-ms.openlocfilehash: 1994af516159cbf7332a0fe0027093d3da85f78476dffe85a68f5eac8d3c6da1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f3bae061d8b4b6d53b3a985b9afb781faf5e5292
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308905"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626368"
 ---
 # <a name="availability-in-colombia"></a>Disponibilità in Colombia
 

@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 7392e4f8-6e2d-447b-aaa3-878f73995f9d
 description: Come installare e configurare i nodi Watcher per Skype for Business Server sintetiche.
-ms.openlocfilehash: 83e5fe9d6e825e7d27b590124c9f39b41ab75d10
-ms.sourcegitcommit: f3c2559a89e1c4b3514e102cf94c38a697b4bc57
+ms.openlocfilehash: c73958e9173040e7fb800fdb2d1fd36c7ab65ae1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "53750828"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58637011"
 ---
 # <a name="learn-how-to-install-and-configure-watcher-nodes"></a>Informazioni su come installare e configurare i nodi Watcher
  
@@ -29,7 +29,7 @@ I nodi Watcher sono computer che eseguono periodicamente Skype for Business Serv
   
 - **Impostazione predefinita** Transazioni sintetiche che un nodo Watcher viene eseguito per impostazione predefinita. Quando si crea un nuovo nodo Watcher, è possibile specificare quali transazioni sintetiche verranno eseguite dal nodo. Questo è lo scopo del parametro Tests utilizzato dal cmdlet New-CsWatcherNodeConfiguration. Se non si utilizza il parametro Tests quando viene creato il nodo Watcher, verranno eseguite automaticamente tutte le transazioni sintetiche predefinite e non verranno eseguite transazioni sintetiche non predefinite. Ciò significa, ad esempio, che il nodo Watcher verrà configurato per eseguire il test di Test-CsAddressBookService, ma non verrà configurato per eseguire il test Test-CsExumConnectivity test.
     
-- **Non predefinito** Test che i nodi Watcher non vengono eseguiti per impostazione predefinita. Per informazioni dettagliate, vedere la descrizione del tipo Predefinito. Tuttavia, il nodo Watcher può essere abilitato per eseguire qualsiasi transazione sintetica non predefinita. È possibile eseguire questa operazione quando si crea il nodo Watcher (utilizzando il cmdlet New-CsWatcherNodeConfiguration) o in qualsiasi momento dopo la creazione del nodo Watcher. Si noti che molte delle transazioni sintetiche non predefinite richiedono passaggi di configurazione aggiuntivi. Per ulteriori informazioni su questi passaggi, vedere [Special Setup Instructions for Synthetic Transactions.](test-users-and-settings.md#special_synthetictrans)
+- **Non predefinito** Test che i nodi Watcher non vengono eseguiti per impostazione predefinita. Per informazioni dettagliate, vedere la descrizione del tipo Predefinito. Tuttavia, il nodo Watcher può essere abilitato per eseguire qualsiasi transazione sintetica non predefinita. È possibile eseguire questa operazione quando si crea il nodo Watcher (utilizzando il cmdlet New-CsWatcherNodeConfiguration) o in qualsiasi momento dopo la creazione del nodo Watcher. Si noti che molte delle transazioni sintetiche non predefinite richiedono passaggi di configurazione aggiuntivi. Per ulteriori informazioni su questi passaggi, vedere [Special Setup Instructions for Synthetic Transactions](test-users-and-settings.md#special_synthetictrans).
     
 - **Esteso** Tipo speciale di transazione sintetica non predefinita. Diversamente da altre transazioni sintetiche, i test estesi possono essere eseguiti più volte durante ogni passaggio. Ciò è utile quando si verifica un comportamento, ad esempio più route vocali PSTN (Public Switched Telephone Network) per un pool. Puoi configurarlo semplicemente aggiungendo più istanze di un test esteso a un nodo Watcher.
     
@@ -53,14 +53,14 @@ Le transazioni sintetiche disponibili per i nodi Watcher includono le seguenti:
 |Test-CsDataConference (DataConference)  <br/> |Conferma che gli utenti possono partecipare a una conferenza di collaborazione dati (una riunione online che include attività quali lavagne e sondaggi).  <br/> |
 |Test-CsDialinConferencing (DialinConferencing)  <br/> |Verifica che gli utenti siano in grado di comporre numeri di telefono per partecipare alle conferenze.  <br/> |
 |Test-CsDialinConferencing (DialinConferencing)  <br/> |Verifica che gli utenti siano in grado di comporre numeri di telefono per partecipare alle conferenze.  <br/> |
-|Test-CsExumConnectivity (ExumConnectivity)  <br/> |Conferma che un utente può connettersi a Exchange messaggistica unificata.  <br/> |
+|Test-CsExumConnectivity (ExumConnectivity)  <br/> |Conferma che un utente può connettersi alla Exchange messaggistica unificata.  <br/> |
 |Test-CsGroupIM -TestJoinLauncher (JoinLauncher)  <br/> |Verifica che gli utenti siano in grado di creare e partecipare a riunioni pianificate (tramite un collegamento all'indirizzo Web).  <br/> |
 |Test-CsMCXP2PIM (MCXP2PIM)  <br/> |Conferma che gli utenti di dispositivi mobili siano in grado di registrarsi e inviare messaggi istantanei.  <br/> |
 |Test-CsP2PVideoInteropServerSipTrunkAV (P2PVideoInteropServerSipTrunkAV)  <br/> |Verifica che Video Interop Server sia in grado di gestire le connessioni in ingresso su un trunk SIP video.  <br/> **Nota:** Il supporto MCX per i client mobili legacy non è più disponibile Skype for Business Server 2019. |
 |Test-CsPersistentChatMessage (PersistentChatMessage)  <br/> |Verifica che gli utenti possano scambiare messaggi utilizzando il servizio Persistent Chat.  <br/> |
 |Test-CsUcwaConference (UcwaConference)  <br/> |Conferma che gli utenti possono partecipare alle conferenze tramite il Web.  <br/> |
 |Test-CsUnifiedContactStore (UnifiedContactStore)  <br/> |Verifica che sia possibile accedere ai contatti di un utente tramite l'archivio contatti unificato. L'archivio contatti unificato consente agli utenti di gestire un singolo set di contatti a cui è possibile accedere utilizzando Skype for Business Server 2015, un client di messaggistica e collaborazione Outlook e/o Outlook Web Access.  <br/> |
-|Test-CsXmppIM (XmppIM)  <br/> |Verifica che sia possibile inviare un messaggio istantaneo attraverso il gateway XMPP (Extensible Messaging and Presence Protocol).  <br/> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019.  |
+|Test-CsXmppIM (XmppIM)  <br/> |Verifica che sia possibile inviare un messaggio istantaneo attraverso il gateway XMPP (Extensible Messaging and Presence Protocol).  <br/> I gateway xMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019.  |
 
 Non è necessario installare nodi Watcher per utilizzare System Center Operations Manager. Se non si installano questi nodi, è comunque possibile ricevere avvisi in tempo reale dai componenti Skype for Business Server 2015 ogni volta che si verifica un problema. Il Management Pack per componenti e utenti non utilizza nodi Watcher. Tuttavia, i nodi Watcher sono necessari se si desidera monitorare gli scenari end-to-end utilizzando Active Monitoring Management Pack.
   
@@ -98,28 +98,28 @@ Dopo aver soddisfatto i prerequisiti, è possibile configurare il nodo Watcher s
   
 1. Installare i Skype for Business Server 2015 core nel computer del nodo Watcher.
     
-2. Installare System Center Agente Operations Manager nel computer del nodo Watcher.
+2. Installare System Center'agente Operations Manager nel computer del nodo Watcher.
     
 3. Eseguire il Watchernode.msi file eseguibile.
     
 4. Utilizzare il cmdlet **New-CsWatcherNodeConfiguration** per configurare gli account utente di test da utilizzare per il nodo Watcher.
     
-## <a name="install-the-skype-for-business-server-2015-core-files-and-the-rtclocal-database"></a>Installare i Skype for Business Server 2015 Core Files e rtcLocal Database
+## <a name="install-the-skype-for-business-server-2015-core-files-and-the-rtclocal-database"></a>Installare i file Skype for Business Server 2015 Core e il database RTCLocal
 
-Per installare i Skype for Business Server 2015 core in un computer, eseguire la procedura seguente. Il database RTCLocal verrà installato automaticamente quando si installano i file di base. Tenere presente che non è necessario installare SQL Server nei nodi Watcher. SQL Server Express verrà installato automaticamente.
+Per installare i file Skype for Business Server 2015 core in un computer, eseguire la procedura seguente. Il database RTCLocal verrà installato automaticamente quando si installano i file di base. Si noti che non è necessario installare SQL Server nei nodi Watcher. SQL Server Express verrà installato automaticamente.
   
 Per installare i file Skype for Business Server 2015 core e il database RTCLocal:
   
 1. Nel computer del nodo Watcher, fare clic sul pulsante Start, scegliere Tutti i programmi e Accessori, fare clic con il pulsante destro del mouse su Prompt dei comandi e quindi scegliere Esegui come amministratore.
     
-2. Nella finestra della console digitare il comando seguente e premere INVIO. Assicurarsi di immettere il percorso appropriato per i file di installazione di Skype for Business Server: D:\Setup.exe /BootstrapLocalMgmtPer verificare che i componenti Skype for Business Server di base siano stati installati correttamente, fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi fare clic **su Skype for Business Server Management Shell**. In Skype for Business Server Management Shell digitare il comando Windows PowerShell seguente e premere INVIO:
+2. Nella finestra della console digitare il comando seguente e premere INVIO. Assicurarsi di immettere il percorso appropriato per i file di installazione di Skype for Business Server: D:\Setup.exe /BootstrapLocalMgmtPer verificare che i componenti Skype for Business Server di base siano stati installati correttamente, fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business Server 2015** e quindi fare clic **su Skype for Business Server Management Shell.** In Skype for Business Server Management Shell digitare il comando Windows PowerShell seguente e premere INVIO:
   
 ```PowerShell
 Get-CsWatcherNodeConfiguration
 ```
 
 > [!NOTE]
-> La prima volta che si esegue questo comando, non verranno restituiti dati perché non è stato ancora configurato alcun computer del nodo Watcher. Se il comando viene eseguito senza restituire un errore, è possibile presupporre che l Skype for Business Server'installazione sia stata completata correttamente. 
+> La prima volta che si esegue questo comando, non verranno restituiti dati perché non è stato ancora configurato alcun computer nodo Watcher. Se il comando viene eseguito senza restituire un errore, è possibile presupporre che l Skype for Business Server'installazione sia stata completata correttamente. 
   
 Se il computer del nodo Watcher si trova all'interno della rete perimetrale, è possibile eseguire il comando seguente per verificare l'installazione di Skype for Business Server 2015:
   
@@ -143,7 +143,7 @@ Se vengono visualizzate informazioni sui criteri PIN, i componenti di base sono 
   
 ## <a name="install-the-operation-manager-agent-files-on-a-watcher-node"></a>Installare i file agente di Operation Manager in un nodo Watcher
 
-Analogamente alla configurazione Skype for Business Server per la creazione di report degli avvisi dei componenti, un nodo Watcher di Skype for Business Server 2015 richiede System Center i file agente di Operations Manager per essere installato. In questo modo è possibile eseguire le transazioni sintetiche e notificare gli avvisi al server di gestione radice di Operations Manager System Center Operations Manager.
+Analogamente alla configurazione Skype for Business Server per la creazione di report degli avvisi dei componenti, un nodo Watcher di Skype for Business Server 2015 richiede l'installazione System Center file agente di Operations Manager. In questo modo è possibile eseguire le transazioni sintetiche e notificare gli avvisi al server di gestione radice di Operations Manager System Center Operations Manager.
   
 Per installare i file agente, seguire le procedure elencate in [Configure the Skype for Business Server computers that will be monitored](configure-computers-to-monitor.md).
   
@@ -152,7 +152,7 @@ Per installare i file agente, seguire le procedure elencate in [Configure the Sk
 
 Dopo aver System Center i file dell'agente Operations Manager, è necessario configurare il nodo Watcher stesso. I passaggi da eseguire per eseguire questa operazione variano a seconda che il computer del nodo Watcher si trova all'interno della rete perimetrale o all'esterno della rete perimetrale. 
   
-Quando si configura un nodo Watcher, è inoltre necessario scegliere il tipo di metodo di autenticazione da utilizzare per tale nodo. Skype for Business Server 2015 consente di scegliere uno dei due metodi di autenticazione seguenti: Trusted Server o Credential Authentication. Nella tabella seguente sono illustrate le differenze tra questi due metodi:
+Quando si configura un nodo Watcher, è inoltre necessario scegliere il tipo di metodo di autenticazione da utilizzare per tale nodo. Skype for Business Server 2015 consente di scegliere uno dei due metodi di autenticazione seguenti: Trusted Server o Credential Authentication. Nella tabella seguente vengono illustrate le differenze tra questi due metodi:
   
 |&nbsp;|**Descrizione**|**Percorsi supportati**|
 |:-----|:-----|:-----|
@@ -225,7 +225,7 @@ Eseguire una delle operazioni seguenti:
 ## <a name="install-and-configure-a-watcher-node"></a>Installare e configurare un nodo Watcher
 <a name="enable_synthetic_trans"> </a>
 
-Dopo aver riavviato il computer del nodo Watcher e aver configurato un certificato, è necessario eseguire il file Watchernode.msi. È necessario eseguire il Watchernode.msi in qualsiasi computer in cui siano installati sia i file dell'agente Operations Manager che i componenti principali di Skype for Business Server 2015. 
+Dopo aver riavviato il computer del nodo Watcher e aver configurato un certificato, è necessario eseguire il file Watchernode.msi. È necessario eseguire Watchernode.msi in qualsiasi computer in cui siano installati sia i file dell'agente operations Manager che i componenti Skype for Business Server 2015 core. 
   
 Per installare e configurare un nodo Watcher:
   

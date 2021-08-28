@@ -9,23 +9,23 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 65025c78-c263-472c-9ff9-e170588f10b5
 description: 'Riepilogo: informazioni su come visualizzare i record di utilizzo PSTN utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.'
-ms.openlocfilehash: 4f36f263238c1c50299ff22756eaf7e6eed100141d15b3b7250a70a9a11adddf
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7b708a388950424453e833c28d846e6258070ef5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54305888"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626188"
 ---
 # <a name="view-pstn-usage-records-in-skype-for-business"></a>Visualizzare i record di utilizzo PSTN in Skype for Business
 
-**Riepilogo:** Informazioni su come visualizzare i record di utilizzo PSTN utilizzando Skype for Business Server pannello di controllo o Skype for Business Server Management Shell.
+**Riepilogo:** Informazioni su come visualizzare i record di utilizzo PSTN utilizzando il Pannello di controllo di Skype for Business Server o Skype for Business Server Management Shell.
 
 Un record di utilizzo PSTN (Public Switched Telephone Network) specifica una classe di chiamata (ad esempio interna, locale o interurbana) che può essere effettuata da vari utenti o gruppi di utenti in un'organizzazione. Per informazioni dettagliate, vedere [PSTN Usage Records](/previous-versions/office/lync-server-2013/lync-server-2013-pstn-usage-records) nella documentazione relativa alla pianificazione.
 

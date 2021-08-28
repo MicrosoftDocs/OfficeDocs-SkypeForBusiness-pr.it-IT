@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: Informazioni su come abilitare o disabilitare se gli utenti possono registrare i loro nomi quando aderiscono a una riunione in Skype for Business Online.
-ms.openlocfilehash: 53d57583004a143f78900b7e195084465f3344bc2617c4682709cf223a1860e9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: cad0f5a904fbec064fd07080b43af7ee6a8a9671
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54335726"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626258"
 ---
 # <a name="enable-users-to-record-their-name-when-they-join-a-meeting-in-skype-for-business-online"></a>Consentire agli utenti di registrare il proprio nome quando si uniscono a una riunione in Skype for Business Online
 
@@ -35,7 +35,7 @@ ms.locfileid: "54335726"
 > [!Note]
 > Se desideri consentire agli utenti di registrare i nomi su Teams, consulta [Consentire agli utenti di registrare il proprio nome quando partecipano a una riunione su Microsoft Teams](/MicrosoftTeams/enable-users-to-record-their-name-when-they-join-a-meeting-in-teams).
 
-Quando si configurano i servizi di audioconferenza in Microsoft 365 o Office 365, si riceveranno i numeri di telefono e il cosiddetto bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono che possono essere un numero di telefono dedicato o condiviso.
+Quando si configurano le audioconferenze in Microsoft 365 o Office 365, si riceveranno i numeri di telefono e il cosiddetto bridge di audioconferenza. Un bridge di conferenza può contenere uno o più numeri di telefono che possono essere un numero di telefono dedicato o condiviso.
   
 Il bridge di conferenza risponde alla chiamata di un utente che sta eseguendo l'accesso a una riunione con il telefono. Il bridge risponde con i comandi vocali di un operatore automatico e quindi, a seconda delle impostazioni, può riprodurre notifiche, richiedere ai chiamanti di registrare il proprio nome e configurare le opzioni di sicurezza del PIN per gli organizzatori della riunione. I PIN sono assegnati a un organizzatore della riunione per consentire l'avvio della stessa. Puoi comunque configurarla in modo tale che non sia richiesto il PIN per l'avvio.
 

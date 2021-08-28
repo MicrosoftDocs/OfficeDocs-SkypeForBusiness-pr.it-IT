@@ -1,6 +1,6 @@
 ---
-title: Come usare i Microsoft Teams dispositivi
-ms.author: v-mdhiman
+title: Come usare i Microsoft Teams mobili
+ms.author: serdars
 author: ManikaDhiman
 manager: serdars
 ms.reviewer: weizxue
@@ -14,18 +14,18 @@ f1.keywords:
 ms.collection:
 - M365-voice
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Questo articolo fornisce indicazioni su come usare i Teams dei pannelli.
-ms.openlocfilehash: 28026f53f53fcb7b489abe3cf7d12a82d25f335907b1044591f92d4884853e03
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0fccd3e733cdeec2cfe84b721cbade5834b05b03
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54325063"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626268"
 ---
 # <a name="how-to-use-microsoft-teams-panels"></a>Come usare i Microsoft Teams di lavoro
 
-Microsoft Teams sono dispositivi di visualizzazione digitali compatti che vengono installati all'esterno degli spazi delle riunioni, in genere accanto agli ingressi. Questi pannelli touchscreen sono Microsoft Teams dispositivi che offrono una visualizzazione a colpo d'occhio dell'area della riunione e della riunione pianificata. Con i vivaci indicatori LED e home codificati a colori, è possibile determinare se lo spazio è disponibile o riservato a distanza. È possibile usare Teams per prenotare un'area riunioni disponibile per una riunione ad hoc, sul posto.
+Microsoft Teams sono dispositivi di visualizzazione digitali compatti che vengono installati all'esterno degli spazi delle riunioni, in genere accanto agli ingressi. Questi pannelli touchscreen sono Microsoft Teams dispositivi che offrono una visualizzazione a colpo d'occhio dell'area della riunione e della riunione pianificata. Con gli indicatori della schermata HOME e LED codificati a colori vivaci, è possibile determinare se lo spazio è disponibile o riservato a distanza. È possibile usare Teams per prenotare uno spazio riunioni disponibile per una riunione ad hoc, sul posto.
 
 Teams i dispositivi dei pannelli vengono preinstallati con Microsoft Teams e visualizzano i dettagli della riunione pianificati tramite Outlook o Teams calendario.
 
@@ -54,7 +54,7 @@ Nella schermata Home è possibile visualizzare i dettagli della posizione e dell
 
 Lo screenshot seguente mostra parti o riquadri diversi nella Teams home dei riquadri:
 
-:::image type="content" source="../media/panels-home-screen-explanation.png" alt-text="Questa schermata mostra diverse aree nella schermata iniziale Teams di lavoro":::
+:::image type="content" source="../media/panels-home-screen-explanation.png" alt-text="Questa schermata mostra diverse aree nella Teams home dei pannelli":::
 
 Fare riferimento alla tabella seguente per una descrizione di ogni riquadro:
 
@@ -73,16 +73,16 @@ L'aspetto di questo riquadro e le relative funzionalità variano a seconda della
 
 Il riquadro viene visualizzato in viola per un'area riunioni riservata a una riunione pianificata (pianificata tramite Outlook o Teams). Mostra il titolo della riunione in testo prominente, l'ora di inizio e di fine della riunione e il nome dell'organizzatore della riunione. Per una Teams riunione, viene visualizzato Teams logo. Con i dettagli della riunione ben visibili, i partecipanti possono facilmente confermare di essere nella giusta area della riunione, al momento giusto e per la riunione giusta.
 
-:::image type="content" source="../media/panels-right-tile-scheduled-meeting.png" alt-text="Teams pannello Home che mostra che lo spazio riunioni è riservato per una riunione pianificata":::
+:::image type="content" source="../media/panels-right-tile-scheduled-meeting.png" alt-text="Teams della schermata iniziale che mostra che lo spazio riunioni è riservato per una riunione pianificata":::
 
 > [!NOTE]
 >
 > - Dopo aver programmato una riunione, la sincronizzazione del calendario e la sua visualizzazione sullo schermo dei pannelli possono richiedere fino a 90 secondi.
 > - Per una [riunione pianificata contrassegnata come privata,](https://support.microsoft.com/office/make-an-appointment-or-meeting-private-dc3898f0-22f5-45c6-8cc8-b4d4db84111d)viene visualizzata una riunione privata invece del titolo effettivo della riunione. 
 
-#### <a name="meeting-space-is-reserved-for-an-ad-hoc-meeting"></a>Lo spazio riunioni è riservato a una riunione ad hoc
+#### <a name="meeting-space-is-reserved-for-an-ad-hoc-meeting"></a>Lo spazio riunioni è riservato per una riunione ad hoc
 
-Il riquadro viene visualizzato in viola per un'area riunioni [riservata a una riunione ad hoc.](#reserve-meeting-spaces-for-ad-hoc-meetings) Visualizza Riservato **in testo** prominente insieme all'ora di inizio e di fine della riunione. Le riunioni ad hoc vengono pianificate automaticamente Teams riunioni, quindi sullo schermo viene sempre visualizzato il logo Teams di lavoro.
+Il riquadro viene visualizzato in viola per un'area riunioni [riservata a una riunione ad hoc.](#reserve-meeting-spaces-for-ad-hoc-meetings) Visualizza Riservato **in testo** prominente insieme all'ora di inizio e di fine della riunione. Le riunioni ad hoc vengono pianificate automaticamente come Teams riunioni, quindi sullo schermo viene sempre visualizzato il logo Teams testo.
 
 :::image type="content" source="../media/panels-right-tile-reserved-adhoc.png" alt-text="Teams pannello Home che mostra che lo spazio riunioni è riservato per una riunione ad hoc":::
 
@@ -90,18 +90,18 @@ Il riquadro viene visualizzato in viola per un'area riunioni [riservata a una ri
 
 Il riquadro viene visualizzato in verde per un'area riunioni disponibile. Viene visualizzato **Disponibile** in testo  prominente e viene visualizzato anche un pulsante Prenota che è possibile toccare per prenotare lo spazio della riunione [per una riunione ad hoc.](#reserve-meeting-spaces-for-ad-hoc-meetings) È possibile controllare il calendario imminente dell'area della riunione (riquadro in basso a destra) per decidere l'ora di fine della riunione ad hoc.
 
-:::image type="content" source="../media/panels-right-tile-available-status.png" alt-text="Questo screenshot mostra come viene visualizzata Teams home dei pannelli quando l'area riunioni è disponibile":::
+:::image type="content" source="../media/panels-right-tile-available-status.png" alt-text="Questo screenshot mostra come viene visualizzata Teams home dei Teams quando l'area riunioni è disponibile":::
 
 ## <a name="reserve-meeting-spaces-for-ad-hoc-meetings"></a>Prenotare gli spazi delle riunioni per le riunioni ad hoc
 
-È possibile prenotare uno [spazio riunioni disponibile](#meeting-space-is-available) direttamente dai pannelli per una riunione ad hoc. Tutte le riunioni ad hoc vengono pianificate automaticamente Teams riunioni. Tuttavia, una volta prenotato, non è possibile rilasciare o annullare la prenotazione dello spazio della riunione tramite i pannelli. Solo gli amministratori dell'account delle risorse del dispositivo possono annullare la riunione ad hoc (tramite Outlook o Teams calendario) per annullare la prenotazione dello spazio.
+È possibile prenotare uno [spazio riunioni disponibile](#meeting-space-is-available) direttamente dai pannelli per una riunione ad hoc. Tutte le riunioni ad hoc vengono pianificate automaticamente Teams riunioni. Tuttavia, una volta prenotato, non è possibile rilasciare o annullare la prenotazione dello spazio riunioni tramite i pannelli. Solo gli amministratori dell'account delle risorse del dispositivo possono annullare la riunione ad hoc (tramite Outlook o Teams calendario) per annullare la prenotazione dello spazio.
 
 Per le riunioni ad hoc prenotate direttamente dai pannelli:
 
 - L'ora di inizio è sempre l'ora corrente e di conseguenza non è possibile pianificarla per un'ora futura.
 - L'ora di fine può essere fino alla riunione pianificata successiva o fino a 24 ore dall'ora corrente, a seconda della data precedente. Controllare il **riquadro Calendario imminente** nella schermata Home per determinare le fasce orarie durante le quali l'area della riunione è disponibile o prenotata.
 
-Per prenotare uno spazio riunioni disponibile per una riunione ad hoc:
+Per prenotare una sala riunioni disponibile per una riunione ad hoc:
 
 1. Nella schermata Home toccare il **pulsante** Riserva.
     :::image type="content" source="../media/panels-reserve.png" alt-text="Teams pannello Home con il pulsante Riserva":::
@@ -112,19 +112,19 @@ Per prenotare uno spazio riunioni disponibile per una riunione ad hoc:
     > [!Note]
     >
     > - Le opzioni dell'ora di fine vengono visualizzate a intervalli di 15 minuti di un'ora.
-    > - L'ora di fine viene impostata per impostazione predefinita sull'intervallo di 15 minuti successivo, che è almeno cinque minuti dopo l'ora corrente. Ad esempio, se l'ora corrente è 13:57, l'ora di fine predefinita viene visualizzata come 14.15 e non come 14.00. In questo modo gli utenti non potranno prenotare lo spazio per cinque minuti o meno. Nello screenshot precedente, l'ora di fine predefinita viene visualizzata come 14.00, ovvero l'intervallo successivo di 15 minuti, ovvero almeno cinque minuti dopo l'ora corrente (13:53).
-    > - Un'eccezione alla regola precedente è quando l'ora di inizio della riunione successiva è entro cinque minuti dall'ora corrente. In questi casi, è possibile prenotare lo spazio fino all'ora di inizio successiva della riunione. Ad esempio, se l'ora corrente è 13.57 e l'ora di inizio successiva della riunione è 14.00, le 14.00 vengono visualizzate come unica opzione di fine ed è possibile prenotare lo spazio per tre minuti.
+    > - L'ora di fine viene impostata per impostazione predefinita sull'intervallo di 15 minuti successivo, che è almeno cinque minuti dopo l'ora corrente. Ad esempio, se l'ora corrente è 13:57, l'ora di fine predefinita viene visualizzata come 14.15 e non come 14.00. In questo modo gli utenti non potranno prenotare lo spazio per cinque minuti o meno. Nello screenshot precedente l'ora di fine predefinita viene visualizzata come 14.00, ovvero l'intervallo successivo di 15 minuti, ovvero almeno cinque minuti dopo l'ora corrente (13:53).
+    > - Un'eccezione alla regola precedente è quando l'ora di inizio della riunione successiva è entro cinque minuti dall'ora corrente. In questi casi, è possibile prenotare lo spazio fino all'ora di inizio successiva della riunione. Ad esempio, se l'ora corrente è 13:57 e l'ora di inizio successiva della riunione è 14.00, le 14.00 verranno visualizzate come unica opzione di fine ed è possibile prenotare lo spazio per tre minuti.
 
 3. Toccare l'intervallo di tempo di fine desiderato e quindi toccare **Prenota**.
 
     Viene visualizzata una finestra di conferma con un emoji con il pollice in su, l'ora di inizio e di fine della riunione e il nome dell'area della riunione.
     :::image type="content" source="../media/panels-reserve-confirmation.png" alt-text="Messaggio di conferma della riunione ad hoc":::
-Il riquadro destro nella schermata Home ora  viene visualizzato in viola e visualizza il testo Riservato e il logo Teams testo. Questo indica che l'area della riunione è ora riservata per una riunione Teams riunione.
+Il riquadro destro nella schermata Home ora  viene visualizzato in viola e visualizza il testo riservato e il logo Teams testo. Questo indica che l'area della riunione è ora riservata per una riunione Teams riunione.
   
     :::image type="content" source="../media/panels-right-tile-reserved-adhoc.png" alt-text="Schermata iniziale che mostra che lo spazio riunioni è riservato per una riunione ad hoc":::
 
     > [!NOTE]
-    > Se l'area riunioni è una Microsoft Teams,  è possibile partecipare a questa riunione Teams con la sala Microsoft Teams sala o i dispositivi Surface Hub sala.
+    > Se l'area della riunione è Microsoft Teams  sala riunioni, è possibile partecipare a questa riunione Teams con la sala Microsoft Teams sala o Surface Hub dispositivi.
 
 ### <a name="report-a-problem"></a>Segnalare un problema
 
@@ -156,21 +156,21 @@ Per visualizzare o aggiornare un'impostazione del dispositivo:
 3. Nella schermata **Impostazioni** dispositivo toccare l'impostazione che si vuole visualizzare o aggiornare.
 4. Seguire la richiesta visualizzata per visualizzare o aggiornare l'impostazione.
 
-## <a name="teams-panels-admin-experience"></a>Teams di amministrazione dei pannelli di controllo
+## <a name="teams-panels-admin-experience"></a>Teams di amministrazione dei pannelli di lavoro
 
-Se si è l'amministratore dell Teams dell'account delle risorse del pannello, si è anche [l'amministratore dell'app](teams-panels.md\#resource-account-provisioning) **Panels** nel dispositivo. **L'amministratore dell'app Panels** può eseguire tutte le [](#teams-panels-end-user-experience) funzioni menzionate nella sezione dell'esperienza utente finale, oltre a gestire le impostazioni dell'app **Panels** nel dispositivo.
+Se si è l'amministratore [dell Teams dell'account](teams-panels.md\#resource-account-provisioning)delle risorse del pannello, si è anche l'amministratore **dell'app Panels** nel dispositivo. **L'amministratore dell'app Panels** può eseguire tutte le [](#teams-panels-end-user-experience) funzioni menzionate nella sezione dell'esperienza utente finale, oltre a gestire le impostazioni dell'app **Panels** nel dispositivo.
 
 I dispositivi dei pannelli forniscono due tipi di impostazioni di amministratore. Per accedere alle impostazioni di amministrazione disponibili, è necessario essere un amministratore del dispositivo. Gli utenti finali non possono accedere a queste impostazioni.
 
-- Impostazioni di amministratore specifiche per il dispositivo, ad esempio visualizzazione, ora e data, lingua, bluetooth, WiFi e così via. Per altre informazioni su queste impostazioni, vedere la documentazione OEM.
-- Impostazioni di amministratore specifiche **dell'app Pannelli** nel dispositivo, ad esempio lo sfondo e il colore dell'indicatore LED. Solo un amministratore **dell'app Panels** può accedere a queste impostazioni. Poiché **le impostazioni dell'app** Pannelli sono disponibili come parte delle impostazioni di amministrazione, è necessario avere le credenziali di accesso dell'amministratore sia per il dispositivo che per l'app Pannelli per accedere alle impostazioni  **dell'app** Panels.
+- Impostazioni di amministratore specifiche del dispositivo, ad esempio visualizzazione, ora e data, lingua, bluetooth, WiFi e così via. Per altre informazioni su queste impostazioni, vedere la documentazione OEM.
+- Impostazioni di amministratore specifiche **dell'app Pannelli** nel dispositivo, ad esempio lo sfondo e il colore dell'indicatore LED. Solo un amministratore **dell'app Panels** può accedere a queste impostazioni. Poiché **le impostazioni dell'app** Pannelli sono disponibili come parte delle impostazioni di amministrazione, è necessario avere le credenziali di accesso dell'amministratore sia per il dispositivo che per l'app **Panels** per accedere **alle impostazioni dell'app** Panels.
 
 > [!NOTE]
-> Gli eventuali aggiornamenti alle **impostazioni dell'app Panels** eseguite tramite il dispositivo sono applicabili solo a quel dispositivo specifico. Questi aggiornamenti non incideranno sugli altri dispositivi dei pannelli dell'organizzazione. Ad esempio, se si modifica l'immagine di sfondo della schermata Home dalle impostazioni **dell'app** Pannelli, l'immagine dello sfondo verrà cambiata solo per quel dispositivo specifico.
+> Tutti gli aggiornamenti alle **impostazioni dell'app Panels** eseguite tramite il dispositivo sono applicabili solo a quel dispositivo specifico. Questi aggiornamenti non incideranno sugli altri dispositivi dei pannelli dell'organizzazione. Ad esempio, se si modifica l'immagine di sfondo della schermata Home dalle impostazioni **dell'app** Pannelli, l'immagine dello sfondo verrà cambiata solo per quel dispositivo specifico.
 
 ### <a name="access-panels-app-settings"></a>Impostazioni dell'app Pannelli di accesso
 
-È possibile accedere **alle impostazioni specifiche dell'app** Panels usando l'opzione Impostazioni'app **Panels** sotto le impostazioni di amministrazione. La procedura per accedere **all'app Impostazioni** pannello può variare in base all'OEM del dispositivo.
+È possibile accedere **alle impostazioni specifiche dell'app** Panels usando l'opzione Impostazioni'app **Panels** sotto le impostazioni di amministrazione. La procedura per accedere **all'app Impostazioni** può variare in base all'OEM del dispositivo.
 
 Per accedere **all'opzione Impostazioni** pannello:
 
@@ -204,7 +204,7 @@ Modificare l'immagine dello sfondo della schermata Home.
 
 #### <a name="change-the-busy-state-led-color"></a>Cambiare il colore del LED dello stato occupato
 
-Gli amministratori possono scegliere rosso o viola come colore LED per indicare che lo spazio riunioni è occupato o riservato. Il colore del LED per indicare che uno spazio disponibile è sempre verde e non può essere modificato.
+Gli amministratori possono scegliere rosso o viola come colore LED per indicare che l'area riunioni è occupata o riservata. Il colore del LED per indicare che uno spazio disponibile è sempre verde e non può essere modificato.
 
 1. [Access **Panels App Impostazioni**](#access-panels-app-settings).
 2. Toccare **LED Impostazioni**.
@@ -219,7 +219,7 @@ Trovare le risposte alle domande frequenti sui Teams dei pannelli.
 **Fino a che punto in futuro è possibile visualizzare i dettagli della pianificazione di un'area riunioni?**  
 Nel riquadro **Calendario imminente** (in basso a destra) nella schermata Home è possibile visualizzare i dettagli della pianificazione di uno spazio riunioni per un massimo di 24 ore in futuro a partire dall'ora corrente.
 
-**È possibile prenotare uno spazio riunioni per un orario futuro dal dispositivo Teams pannelli?**  
+**È possibile prenotare uno spazio riunioni per un periodo di tempo futuro dal dispositivo Teams pannelli?**  
 No, non è possibile prenotare uno spazio riunioni per un periodo futuro dai pannelli. L'ora di inizio è sempre l'ora corrente per una riunione ad hoc pianificata dai pannelli.
 
 **Per quanto tempo è possibile prenotare un'area riunioni disponibile per una riunione ad hoc?**  

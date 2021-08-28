@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderQuickViewPanelTransferAccepted
 description: 'What it means when your port order has been accepted, and what you need to do next to finish your Skype for Business set up. '
-ms.openlocfilehash: 78c10a340fd1b00fb29a1c28c638e2421adc4713809a73933a33611ef17c71ef
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c99c1feef78e4f28b6edff5e0cbf232c02ce15b5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54334408"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611385"
 ---
 # <a name="your-port-order-was-accepted"></a>Il tuo ordine di trasferimento è stato accettato
 
@@ -39,7 +39,7 @@ L'ordine di trasferimento è stato approvato. Cercare i numeri di telefono **nel
   
 Ora che è stato approvato e che i numeri di telefono sono pronti, dovrai eseguire un paio di operazioni per configurare tutto.
   
-- Assicurarsi di avere [Skype for Business e Microsoft Teams licenze per i componenti aggiuntivi](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md). È necessario un piano **per chiamate Sistema telefonico** nazionale e nazionale o un piano per chiamate **internazionali.** 
+- Assicurarsi di avere [Skype for Business e Microsoft Teams licenze per i componenti aggiuntivi](../skype-for-business-and-microsoft-teams-add-on-licensing/skype-for-business-and-microsoft-teams-add-on-licensing.md). È necessario un piano **per chiamate Sistema telefonico** **nazionale** o **internazionale**.
     
 - Creare [](/MicrosoftTeams/add-change-remove-emergency-location-organization) il proprio Aggiungere o rimuovere un indirizzo per gli interventi di emergenza per l'organizzazione e, se si vuole,[aggiungere,](/MicrosoftTeams/add-change-remove-emergency-place-organization) modificare o rimuovere una posizione per gli interventi di emergenza per l'organizzazione (in alcuni paesi/aree geografiche si ottiene un indirizzo per gli interventi di emergenza con il numero di telefono).
     

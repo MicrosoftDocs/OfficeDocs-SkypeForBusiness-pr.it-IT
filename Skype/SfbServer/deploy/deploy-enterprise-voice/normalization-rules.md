@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: e8547d7b-f74d-4a73-9a7d-df20d7a87fcd
 description: 'Riepilogo: informazioni su come definire, creare e modificare una regola di normalizzazione in Skype for Business Server.'
-ms.openlocfilehash: e491c58951be9c5341927a4edc949f7d119145533d77b9f2cb65d9e6a1a3cc4f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3e06aa9821761803c033255c4da3f636ba296dda
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320848"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626208"
 ---
 # <a name="create-or-modify-a-normalization-rule-in-skype-for-business"></a>Creare o modificare una regola di normalizzazione in Skype for Business
 
@@ -33,9 +33,9 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
 1. Aprire Skype for Business Server pannello di controllo
 
-2. (Facoltativo) Seguire i passaggi descritti in [Create or modify a dial plan in Skype for Business Server](dial-plans.md) through step 11 or Modify a Dial [Plan](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-dial-plan) through step 10.
+2. (Facoltativo) Seguire i passaggi descritti in [Create or modify a dial plan in Skype for Business Server](dial-plans.md) through step 11 o Modify a Dial [Plan](/previous-versions/office/lync-server-2013/lync-server-2013-modify-a-dial-plan) through step 10.
 
-3. In **Nuova regola di normalizzazione** o Modifica regola di **normalizzazione** digitare un nome che descriva il modello di numero normalizzato in **Nome,** ad esempio 5DigitExtension.
+3. In **Nuova regola di normalizzazione** o Modifica regola di **normalizzazione** digitare un nome che descriva il modello di numero normalizzato in **Nome** (ad esempio, 5DigitExtension).
 
 4. (Facoltativo) In **Descrizione** digitare una descrizione della regola di normalizzazione, ad esempio "Converte prefissi a 5 cifre".
 
@@ -43,7 +43,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
    - **Cifre iniziali** (facoltativo) Specificare le cifre iniziali dei numeri composto a cui si desidera che il formato corrisponda. Ad esempio, digitare 425 se si desidera che il formato corrisponda ai numeri composto che iniziano con 425.
 
-   - **Lunghezza** Specificare il numero di cifre nel modello di corrispondenza e specificare se si desidera che il motivo corrisponda esattamente a questa lunghezza, che corrisponda ai numeri composto che sono almeno di questa lunghezza o ai numeri di qualsiasi lunghezza.
+   - **Lunghezza** Specificare il numero di cifre nel modello di corrispondenza e specificare se si desidera che il motivo corrisponda esattamente a questa lunghezza, che corrisponda a numeri composto di almeno questa lunghezza o che corrispondano a numeri di qualsiasi lunghezza.
 
    - **Cifre da rimuovere** (Facoltativo) Specificare il numero di cifre iniziale da rimuovere dai numeri composto a cui si desidera che il formato corrisponda.
 
@@ -57,7 +57,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
    - Un valore che rappresenta il numero di cifri specificato nel formato della corrispondenza. Ad esempio, se il criterio di corrispondenza è ^(\d )$, $1 nella regola di conversione {7} rappresenta numeri composto a 7 cifre.
 
-   - (Facoltativo) Digitare un valore nel campo **Cifre da** aggiungere per specificare le cifre da anteporre al numero convertito, ad esempio+1425.
+   - (Facoltativo) Digitare un valore nel campo **Cifre** da aggiungere per specificare le cifre da anteporre al numero convertito, ad esempio+1425.
 
      Ad esempio, se Pattern **to match** contiene^(\d )$ come modello per i numeri composto e la regola di conversione contiene +1425$1 come modello per i numeri di telefono {7} E.164, la regola normalizza da 5550100 a +14255550100. 
 
@@ -83,9 +83,9 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
 2. (Facoltativo) Seguire i passaggi descritti in [Creare o modificare un dial plan in Skype for Business Server](dial-plans.md).
 
-3. In Nuova regola  **di normalizzazione** o Modifica regola di normalizzazione digitare un nome che descriva il modello di numero normalizzato in **Nome** , ad esempio Nome5DigitExtension.
+3. In Nuova regola  **di normalizzazione** o Modifica regola di normalizzazione digitare un nome che descriva il modello di numero normalizzato in **Nome(** ad esempio, denomare la regola di normalizzazione5DigitExtension).
 
-4. (Facoltativo) Nel **campo** Descrizione digitare una descrizione della regola di normalizzazione, ad esempio "Converte le estensioni di 5 cifre".
+4. (Facoltativo) Nel **campo** Descrizione digitare una descrizione della regola di normalizzazione, ad esempio "Converte estensioni di 5 cifre".
 
 5. In **Crea una regola di normalizzazione fare** clic su **Modifica.**
 
@@ -95,7 +95,7 @@ Definire, creare e modificare le regole di normalizzazione in Skype for Business
 
    - In **Regola di conversione** specificare un modello per il formato dei numeri di telefono E.164 convertiti.
 
-     Ad esempio, se si immette ^(\d )$ in Corrispondenza questo modello e {7} +1425$1 in **Regola** di conversione, la regola normalizza da 5550100 a +14255550100. 
+     Ad esempio, se si immette ^(\d )$ in Corrispondenza a questo modello e {7} +1425$1 in **Regola** di conversione, la regola normalizza da 5550100 a +14255550100. 
 
 7. (Facoltativo) Se la regola di normalizzazione restituisce un numero di telefono interno all'organizzazione, selezionare **Estensione interna**.
 

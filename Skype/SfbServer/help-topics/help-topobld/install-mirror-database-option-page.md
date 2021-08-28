@@ -12,21 +12,21 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.InstallMirrorDatabaseOptionPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 7500896a-14ea-4b11-aaee-be3d81314536
 description: 'È possibile configurare la sezione Impostazioni database mirror definendo le impostazioni seguenti:'
-ms.openlocfilehash: 0555d61a41d846404855fdf487f4bc70b8c9c75d0d4416b2eeb43187de916cf5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 894ff38814ef2c50f3492216531db45246a67548
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301422"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599107"
 ---
 # <a name="install-mirror-database-option-page"></a>Pagina delle opzioni Installa database mirror
  
 È possibile configurare la sezione **Impostazioni database mirror** definendo le impostazioni seguenti:
   
-- Digitare il **percorso della condivisione file** per definire il percorso per i file di SQL Server backup per il database di cui viene eseguito il mirroring.
+- Digitare il **percorso della condivisione file** per definire il percorso per i file di backup SQL Server per il database di cui eseguire il mirroring.
     
     > [!NOTE]
     > L'SQL Server principale (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di scrittura per la condivisione file definita qui. L'SQL Server mirror (istanza denominata o istanza predefinita) deve disporre delle autorizzazioni di lettura per la stessa condivisione file. 

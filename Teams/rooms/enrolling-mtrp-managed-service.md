@@ -13,16 +13,16 @@ ms.collection:
 - m365initiative-meetings
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come registrare Microsoft Teams Rooms account nel servizio Microsoft Teams Rooms Premium gestito.
 f1keywords: ''
-ms.openlocfilehash: 6ac3a9752fcb285c663e05939ae31b2e60a8a1e6
-ms.sourcegitcommit: 3ebf9c5d27263b7e92163f1a61844a5367a4744f
+ms.openlocfilehash: a6aa59a798e06c407c1bbde6734ec9ab3ecedcd1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "58449034"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58637021"
 ---
 # <a name="enroll-a-device-in-the-microsoft-teams-rooms-premium-managed-service"></a>Registrare un dispositivo nel servizio Microsoft Teams Rooms Premium gestito
 

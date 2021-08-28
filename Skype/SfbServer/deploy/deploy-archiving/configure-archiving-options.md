@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2f534697-ac7f-45b7-8cdc-ba67f052223b
 description: "Riepilogo: leggere questo argomento per informazioni su come configurare le opzioni di archiviazione iniziali per Skype for Business Server. Le configurazioni di archiviazione vengono inizialmente impostate quando si distribuisce l'archiviazione, ma è possibile modificare, aggiungere ed eliminare le configurazioni dopo la distribuzione."
-ms.openlocfilehash: d3bc24edc4c4b130094541eb6bde00c63c8977910f8a45106c43032be32c2fb3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 186c6f656931b4ef5c1ad04363bc8bef132f1108
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54312134"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611305"
 ---
 # <a name="configure-archiving-options-for-skype-for-business-server"></a>Configurare le opzioni di archiviazione per Skype for Business Server
  
@@ -41,14 +41,14 @@ Sarà necessario configurare le opzioni per gli elementi seguenti:
     
 - Se bloccare l'attività quando l'archiviazione non è disponibile
     
-- Se usare l'Exchange integrazione
+- Se usare o Exchange integrazione
     
 - Come configurare l'eliminazione e l'esportazione dei dati
     
 > [!NOTE]
 > È consigliabile specificare tutte le opzioni appropriate prima di abilitare l'archiviazione. 
   
-Per informazioni dettagliate sull'implementazione delle configurazioni di [archiviazione,](../../plan-your-deployment/archiving/archiving.md)incluse le opzioni che è possibile specificare e la gerarchia delle configurazioni di archiviazione, vedere Plan for archiving in Skype for Business Server . Per informazioni dettagliate su come gestire le configurazioni dopo la distribuzione utilizzando il Pannello di controllo o Windows PowerShell, vedere [Manage archiving options in Skype for Business Server](../../manage/archiving/options.md).
+Per informazioni dettagliate sull'implementazione delle configurazioni di [archiviazione,](../../plan-your-deployment/archiving/archiving.md)incluse le opzioni che è possibile specificare e la gerarchia delle configurazioni di archiviazione, vedere Plan for archiving in Skype for Business Server . Per informazioni dettagliate su come gestire le configurazioni dopo la distribuzione tramite il Pannello di controllo o Windows PowerShell, vedere [Manage archiving options in Skype for Business Server](../../manage/archiving/options.md).
   
 ## <a name="configure-global-level-archiving-options"></a>Configurare le opzioni di archiviazione a livello globale
 
@@ -76,7 +76,7 @@ Per configurare le opzioni di archiviazione a livello globale:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
+   - Per utilizzare i Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     
@@ -112,7 +112,7 @@ Per configurare le opzioni di archiviazione a livello globale:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
+   - Per utilizzare i Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     
@@ -148,7 +148,7 @@ Per configurare le opzioni di archiviazione a livello globale:
     
    - Per bloccare l'attività quando l'archiviazione non è disponibile, selezionare la casella di controllo **Blocca sessioni di messaggistica istantanea o Web Conferencing se l'archiviazione non riesce**.
     
-   - Per utilizzare Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
+   - Per utilizzare i Microsoft Exchange Server per archiviare i dati di archiviazione, selezionare la **casella di controllo Integrazione Exchange Microsoft.**
     
    - Per abilitare l'eliminazione dei dati, selezionare la casella di controllo **Abilita eliminazione dei dati di archiviazione** e quindi eseguire una delle operazioni seguenti:
     

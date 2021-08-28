@@ -10,19 +10,19 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2f72aead-d1da-4185-b75c-f6c31d76a6b3
-description: Le visualizzazioni consentono di accedere facilmente alle informazioni sugli scenari più comuni usati per restituire dati dal database CDR. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati invece di utilizzare le tabelle di database di registrazione dei dati effettive. ciò è dovuto al fatto che è più probabile che le visualizzazioni del database mantengano la compatibilità con le versioni future.
-ms.openlocfilehash: 3e0598c33dac7fb139166a8dd9b82deed134a59e24d59cbe8c1884778cb627a8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Le visualizzazioni consentono di accedere facilmente alle informazioni sugli scenari più comuni usati per restituire dati dal database CDR. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati anziché le tabelle di database di registrazione dei dati effettive. ciò è dovuto al fatto che è più probabile che le visualizzazioni del database mantengano la compatibilità con le versioni future.
+ms.openlocfilehash: 24effb3b8c90721550ac813342965142f0e29875
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54343240"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626478"
 ---
 # <a name="list-of-cdr-views"></a>Elenco di visualizzazioni CDR
  
-Le visualizzazioni consentono di accedere facilmente alle informazioni sugli scenari più comuni usati per restituire dati dal database CDR. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati invece di utilizzare le tabelle di database di registrazione dei dati effettive. ciò è dovuto al fatto che è più probabile che le visualizzazioni del database mantengano la compatibilità con le versioni future.
+Le visualizzazioni consentono di accedere facilmente alle informazioni sugli scenari più comuni usati per restituire dati dal database CDR. È consigliabile utilizzare le visualizzazioni per la creazione di report personalizzati anziché le tabelle di database di registrazione dei dati effettive. ciò è dovuto al fatto che è più probabile che le visualizzazioni del database mantengano la compatibilità con le versioni future.
   
 |**Nome visualizzazione**|**Descrizione**|
 |:-----|:-----|

@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -23,12 +23,12 @@ ms.custom:
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
 description: Informazioni su come attivare e usare il dashboard della qualità delle chiamate e ottenere report di riepilogo sulla qualità delle chiamate.
-ms.openlocfilehash: e7e376b0cb610f59a62dd5ee19dddb05423549a9
-ms.sourcegitcommit: 942e09c70840582f0cc1e433d4b0261298b1c66d
+ms.openlocfilehash: a6f39fe728a6616e8f70edb86d18e8cc27cc8501
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58369044"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58637051"
 ---
 # <a name="how-to-set-up-call-quality-dashboard"></a>Come configurare il dashboard qualità delle chiamate
 
@@ -62,12 +62,12 @@ Se si vuole che gli utenti non amministratori, ad esempio tecnici del supporto t
 |Lettore globale |Sì         |Sì         |Sì         |No         |
 |Lettore report<sup>1</sup>     |Sì         |No         |Sì         |No         |
 
-<sup>1</sup> Oltre a leggere i report CQD, [](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) l'utilità per la lettura dei report può visualizzare tutti i report attività nell'interfaccia di amministrazione e tutti i report del [pacchetto di contenuto Microsoft 365 Adoption.](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
+<sup>1</sup> Oltre a leggere i report CQD, [](https://support.office.com/article/activity-reports-0d6dfb17-8582-4172-a9a9-aed798150263) l'utilità per la lettura dei report può visualizzare tutti i report attività nell'interfaccia di amministrazione e tutti i report del pacchetto di contenuto [Microsoft 365 Adoption.](https://support.office.com/article/Office-365-Adoption-content-pack-77ff780d-ab19-4553-adea-09cb65ad0f1f)
 
 > [!NOTE]
 > Se l'interfaccia [EUII (informazioni](CQD-data-and-reports.md#euii-data) identificabili dall'utente finale) non è visualizzata e si ha uno dei ruoli autorizzati a visualizzare queste informazioni, tenere presente che CQD mantiene EUII solo per 28 giorni. Qualsiasi elemento più vecchio di 28 giorni viene eliminato.
 
-Per altre informazioni su questi ruoli, vedere Informazioni [sui Office 365 di amministratore.](/office365/admin/add-users/about-admin-roles)
+Per altre informazioni su questi ruoli, vedere [Informazioni sui Office 365 di amministratore.](/office365/admin/add-users/about-admin-roles)
 
 
 Dopo la prima volta che si accede, CQD inizierà a raccogliere ed elaborare i dati.

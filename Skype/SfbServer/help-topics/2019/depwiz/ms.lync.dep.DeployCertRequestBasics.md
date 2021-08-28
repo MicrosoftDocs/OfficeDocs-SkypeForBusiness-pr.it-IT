@@ -11,20 +11,20 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c6b40d5-207a-4ca9-a090-e43350f4968f
 ROBOTS: NOINDEX, NOFOLLOW
 description: La pagina Nome e sicurezza Impostazioni fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in bit della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come esportabile.
-ms.openlocfilehash: f84e28f6d3e8d067b06cd640e1a532084edc61d9d789f569bae546a6331cae4e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 051c883525582559756a4c3ec3b03e921314e9ef
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282225"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58591880"
 ---
 # <a name="certificate-request-basic"></a>Richiesta di certificato (Basic)
  
-La pagina Nome e **sicurezza Impostazioni** fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in **bit** della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come **esportabile.** 
+La pagina Nome **e sicurezza Impostazioni** fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in **bit** della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come **esportabile.** 
   
 Il nome descrittivo di un certificato rappresenta un nome facilmente riconoscibile che consente alla persona che visualizza il certificato di identificarlo più facilmente.
   

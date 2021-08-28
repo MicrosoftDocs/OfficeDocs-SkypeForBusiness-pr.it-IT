@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddVisFqdnPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 1e868ae2-57d9-449f-85be-6133c0cbd4f6
 ROBOTS: NOINDEX, NOFOLLOW
-description: I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
-ms.openlocfilehash: 5cf95d886ff424d4ad4327393b57bc58732b0609d5ab6b2d5ed0eb7b9b8a956a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
+ms.openlocfilehash: 76b11128ffa326ce655bbd0023da9c3976703b5b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58588768"
 ---
 # <a name="add-vis-fqdn"></a>Aggiungere il nome di dominio completo (FQDN) per VIS
  

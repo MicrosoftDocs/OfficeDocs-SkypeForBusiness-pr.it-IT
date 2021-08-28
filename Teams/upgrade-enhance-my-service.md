@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: landerl
 description: Valutare regolarmente le opportunità per migliorare il servizio Teams dopo l'aggiornamento, monitorare la roadmap Teams per ottenere miglioramenti interessanti delle funzionalità.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -18,18 +18,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f4e12f5cb4018930dcfd342844a807987678c3ad44eb3c948408a3f34e883410
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 239beb9f7b3fcc53ed6870a265c45740d1523db5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300742"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618382"
 ---
 # <a name="get-the-most-out-of-teams-after-upgrading"></a>Ottenere il massimo dall'Teams dopo l'aggiornamento
 
 ![Diagramma del percorso di aggiornamento, enfatizzando la fase Di eccellenza operativa](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con enfasi sulla fase Di eccellenza operativa")
 
-Questo articolo fa parte della fase operational excellence del percorso di aggiornamento, che inizia non appena l'aggiornamento è stato completato da Skype for Business a Teams.
+Questo articolo fa parte della fase operational excellence del percorso di aggiornamento, che inizia non appena è stato completato l'aggiornamento da Skype for Business a Teams.
 
 Questo articolo offre una panoramica dei requisiti per ottenere il massimo dal funzionamento Teams dopo l'aggiornamento. Monitorando continuamente Teams funzionalità dei servizi, si può essere certi di offrire il massimo valore per l'organizzazione.
 
@@ -39,7 +39,7 @@ Dopo aver distribuito Teams nell'organizzazione e aver eseguito il servizio con 
 
 Un ottimo modo per assicurarsi di ottenere sempre il massimo dal proprio servizio è monitorare le roadmap pubbliche di [Teams per](https://products.office.com/business/office-365-roadmap?filters=microsoft%20teams) i nuovi miglioramenti delle funzionalità che potrebbero essere di interesse per l'organizzazione. Se si ha accesso al interfaccia di amministrazione di Microsoft 365, si riceveranno regolarmente aggiornamenti sulle nuove e mutevoli funzionalità tramite il Centro messaggi.
 
-Quando si vedono opportunità per migliorare il servizio, è necessario avere il tempo necessario per farlo nel modo giusto. Rivisitare [Distribuire chat, team,](deploy-chat-teams-channels-microsoft-teams-landing-page.md) canali e app [](deploy-chat-teams-channels-microsoft-teams-landing-page.md) in Microsoft Teams e nelle fasi di implementazione e applicare la stessa guida end-to-end. Quando si apportano modifiche incrementali di piccole dimensioni, è improbabile che sia necessario completare tutte le attività e tutte le attività, ma è consigliabile valutare ogni attività e ogni attività lungo il percorso per offrire la migliore possibilità di ottenere un risultato positivo.
+Quando si vedono opportunità per migliorare il servizio, è necessario avere il tempo necessario per farlo nel modo giusto. Rivisitare [Distribuire chat, team,](deploy-chat-teams-channels-microsoft-teams-landing-page.md) canali e [](deploy-chat-teams-channels-microsoft-teams-landing-page.md) app in Microsoft Teams e nelle fasi di implementazione e applicare la stessa guida end-to-end. Quando si apportano modifiche incrementali di piccole dimensioni, è improbabile che sia necessario completare tutte le attività e tutte le attività, ma è consigliabile valutare ogni attività e ogni attività lungo il percorso per offrire la migliore possibilità di ottenere un risultato positivo.
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Decidere chi monitorerà le roadmap pubbliche e altri annunci di servizio per le nuove caratteristiche o i servizi di cui l'organizzazione potrebbe trarre vantaggio.</li><li>Decidere la cadenza in cui segnalare le nuove funzionalità o servizi agli stakeholder principali tramite il comitato direttivo.</li></ul></td></tr>

@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: b9d6366a-839f-4651-a01d-9254546cadeb
 description: Creare o modificare una coda di Response Group in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: d8b875063d37d38ece7a6ec59c9b0bffbb16ee091e31f67087eb2cc0b52616e6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8dc93e2d171b45b81527c4706b4b4bbb4f978015
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338744"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611261"
 ---
 # <a name="create-or-modify-a-queue-in-skype-for-business"></a>Creare o modificare una coda in Skype for Business
  
@@ -73,7 +73,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria telefonica e quindi nel campo Indirizzo **SIP** digitare un indirizzo della segreteria telefonica nel formato sip: *\<username\>* @  *\<domainname\>* (ad esempio, sip:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono e quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono **e** quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
     
    - Per inoltrare la chiamata a un altro utente, fare clic su Inoltra all'indirizzo **SIP** e quindi nel campo Indirizzo **SIP** digitare l'URI dell'utente nel formato sip: _\<username\>_ @  _\<domainname\>_ .
     
@@ -91,7 +91,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     
    - Per inoltrare la chiamata alla segreteria telefonica, fare clic su Inoltra alla segreteria telefonica e quindi nel campo Indirizzo **SIP** digitare un indirizzo della segreteria telefonica nel formato sip: *\<username\>* @  *\<domainname\>* (ad esempio, sip:bob@contoso.com).
     
-   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono e quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
+   - Per inoltrare la chiamata a un altro numero di telefono, fare clic su Inoltra a numero di telefono **e** quindi nel campo Indirizzo **SIP** digitare il numero di telefono nel formato sip: *\<number\>* @  *\<domainname\>* (ad esempio, sip:+14255550121@contoso.com).
     
    - Per inoltrare la chiamata a un altro utente, fare clic su Inoltra all'indirizzo **SIP** e quindi nel campo Indirizzo **SIP** digitare l'URI dell'utente nel formato sip: _\<username\>_ @  _\<domainname\>_ .
     
@@ -106,7 +106,7 @@ Per creare o modificare una coda, utilizzare una delle procedure illustrate di s
     > [!NOTE]
     > Se si è uno dei responsabili di Response Group delegati per un flusso di lavoro gestito, è possibile creare gruppi di agenti e code, nonché assegnare i gruppi di agenti alle code. 
   
-2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
+2. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 3. Creare la richiesta da riprodurre quando viene raggiunta la soglia di timeout della coda e salvarla in una variabile. Nella riga di comando eseguire il comando seguente:
     

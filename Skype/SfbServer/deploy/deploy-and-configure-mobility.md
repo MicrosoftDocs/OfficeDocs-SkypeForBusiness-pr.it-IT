@@ -9,21 +9,21 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8ec6197a-3d1e-4b42-9465-564044cdab1a
 description: In questo articolo vengono descritti i passaggi per configurare un'installazione di Skype for Business Server esistente per l'utilizzo del servizio per dispositivi mobili, consentendo ai dispositivi mobili di sfruttare le funzionalità di Skype for Business Server Mobility.
-ms.openlocfilehash: 4e2cbb49d74347082bf3db02bba4a01de7f31ca187867b8e95474e88ec01fcbb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c0b8a3e2902a8605f952683d6a3629af9e075798
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306038"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611335"
 ---
 # <a name="deploy-and-configure-mobility-for-skype-for-business-server"></a>Distribuire e configurare dispositivi mobili per Skype for Business Server  
  
 In questo articolo vengono descritti i passaggi per configurare un'installazione di Skype for Business Server esistente per l'utilizzo del servizio per dispositivi mobili, consentendo ai dispositivi mobili di sfruttare le funzionalità di Skype for Business Server Mobility.
   
-Dopo aver esaminato l'articolo Plan [for Mobility for Skype for Business Server,](../plan-your-deployment/mobility.md) è consigliabile procedere con i passaggi seguenti per distribuire Mobility nell'Skype for Business Server ambiente. I passaggi sono i seguenti (e in questa tabella è incluso un elenco di autorizzazioni):
+Dopo aver esaminato l'articolo Plan [for Mobility for Skype for Business Server,](../plan-your-deployment/mobility.md) è consigliabile procedere con i passaggi seguenti per distribuire Mobility nell'Skype for Business Server locale. I passaggi sono i seguenti (e in questa tabella è incluso un elenco di autorizzazioni):
   
 |**Fase**|**Autorizzazioni**|
 |:-----|:-----|
@@ -43,7 +43,7 @@ Tutte le sezioni seguenti contengono passaggi che presuppongono che sia stato le
 ## <a name="create-dns-records"></a>Creare record DNS
 <a name="CreateDNSRec"> </a>
 
-Potrebbero essere già presenti nell'ambiente Skype for Business Server, ma è necessario creare i record seguenti per il funzionamento dell'individuazione automatica:
+Questi record potrebbero essere già presenti nell'ambiente Skype for Business Server, ma è necessario creare i record seguenti per il funzionamento dell'individuazione automatica:
   
 - Record DNS interno per supportare gli utenti mobili che si connettono dalla rete dell'organizzazione.
     
@@ -55,7 +55,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
 
 1. Accedere a un server DNS nella rete membro del gruppo **Domain Admins** o **DnsAdmins.**
     
-2. Fare clic sul pulsante **Start,**  scegliere Strumenti di amministrazione **(potrebbe** essere necessario cercarlo se non è un'opzione del menu Start), quindi fare clic su **DNS** per aprire lo snap-in di amministrazione DNS.
+2. Fare clic sul pulsante **Start,**  scegliere Strumenti di amministrazione **(potrebbe** essere necessario cercarlo se non è un'opzione del menu Start) e quindi fare clic su **DNS** per aprire lo snap-in di amministrazione DNS.
     
 3. Nel riquadro sinistro della finestra della console, è necessario passare al dominio che ospita i Front End Server del  Skype for Business Server ed espandere le zone di ricerca diretta.
     
@@ -97,7 +97,7 @@ Questi record possono essere nomi A (host) o record CNAME (non è necessario eff
 
 1. Accedere a un server DNS nella rete membro del gruppo **Domain Admins** o **DnsAdmins.**
     
-2. Fare clic sul pulsante **Start,**  scegliere Strumenti di amministrazione **(potrebbe** essere necessario cercarlo se non è un'opzione del menu Start), quindi fare clic su **DNS** per aprire lo snap-in di amministrazione DNS.
+2. Fare clic sul pulsante **Start,**  scegliere Strumenti di amministrazione **(potrebbe** essere necessario cercarlo se non è un'opzione del menu Start) e quindi fare clic su **DNS** per aprire lo snap-in di amministrazione DNS.
     
 3. Nel riquadro sinistro della finestra della console, è necessario passare al dominio che ospita i Front End Server del  Skype for Business Server ed espandere le zone di ricerca diretta.
     
@@ -156,7 +156,7 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
 
 1. In primo luogo, potrebbe essere necessario controllare e vedere quali certificati sono sul posto e se hanno o meno le voci necessarie. A tale scopo, dovrai accedere al tuo Skype for Business Server con un account che sia un amministratore locale. Potrebbe inoltre essere necessario disporre dei diritti per l'Autorità di certificazione (CA) emittente per alcuni di questi passaggi.
     
-2. Aprire Skype for Business Server Management Shell (è possibile utilizzare la funzionalità di ricerca per trovarla se non è stata aggiunta alla menu Start o alla barra delle applicazioni).
+2. Aprire Skype for Business Server Management Shell (è possibile utilizzare La ricerca per trovarla se non è stata aggiunta alla barra menu Start o all'attività).
     
 3. Sarà essenziale sapere quali certificati sono stati assegnati prima di provare ad aggiungere un certificato aggiornato. Quindi, al comando, digitare:
     
@@ -168,7 +168,7 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
     
 5. Se le voci SAN sono consigliate nella sezione Pianificazione, è consigliabile. In caso contrario, dovrai richiedere un nuovo certificato o più certificati (a seconda della configurazione) dall'Autorità di certificazione.
     
-### <a name="request-a-new-certificate-or-certificates-from-your-certificate-authority-ca"></a>Richiedere un nuovo certificato o un nuovo certificato all'autorità di certificazione (CA)
+### <a name="request-a-new-certificate-or-certificates-from-your-certificate-authority-ca"></a>Richiedere un nuovo certificato o un nuovo certificato all'Autorità di certificazione (CA)
 
 1. Dopo aver controllato le voci SAN disponibili, si è a sapere di disporre di un singolo certificato **(dopo** aver controllato tramite i passaggi precedenti) e di aver appreso di non disporre di tutte le voci necessarie. È necessario eseguire una nuova richiesta di certificato all'autorità di certificazione. Aprire la Skype for Business Server PowerShell:
     
@@ -192,7 +192,7 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
    Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -AllSipDomain -verbose
    ```
 
-   - Ora, se si dispone di più domini SIP, non è possibile utilizzare il parametro AllSipDomain come nell'esempio precedente. Sarà invece necessario utilizzare il parametro DomainName. Quando si utilizza il parametro DomainName, è necessario definire il nome di dominio completo per i record lyncdiscoverinternal e lyncdiscover. Esempi potrebbero essere (sostituendo il parametro -Ca con il proprio percorso dell'autorità di certificazione):
+   - Ora, se si dispone di più domini SIP, non è possibile utilizzare il parametro AllSipDomain come nell'esempio precedente. Sarà invece necessario utilizzare il parametro DomainName. Quando si utilizza il parametro DomainName, è necessario definire il nome di dominio completo per i record lyncdiscoverinternal e lyncdiscover. Alcuni esempi sono (sostituendo il parametro -Ca con il percorso dell'autorità di certificazione):
     
    ```powershell
    Request-CsCertificate -New -Type WebServicesInternal -Ca dc\myca -DomainName "LyncdiscoverInternal.contoso.com, LyncdiscoverInternal.contoso.net" -verbose
@@ -206,7 +206,7 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
     
 ### <a name="assign-certificates-using-skype-for-business-server-management-shell"></a>Assegnare certificati tramite Skype for Business Server Management Shell
 
-- A seconda di ciò che hai trovato nella sezione Do I need new certifications sopra riportata, devi eseguire **una** delle operazioni seguenti.
+- A seconda di ciò che hai trovato nella sezione Do I need new certifications precedente, devi eseguire **una** delle operazioni seguenti.
     
   - Se si dispone di un singolo certificato per tutti gli elementi (le identificazione personale sono identiche), è necessario eseguire questa operazione:
     
@@ -214,7 +214,7 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
   Set-CsCertificate -Type <certificate(s) from the Use parameter> -Thumbprint <unique identifier>
   ```
 
-  - Se hai certificati diversi per le cose (le identificazioni personali sono tutte diverse), esegui questa operazione:
+  - Se hai certificati diversi per le cose (le identificazioni personali sono tutte diverse), esegui invece questo comando:
     
   ```powershell
   Set-CsCertificate -Type Default -Thumbprint <certificate thumbprint>
@@ -235,11 +235,11 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
 5. È necessario individuare il certificato che si desidera visualizzare, fare clic con il pulsante destro del mouse su di esso e scegliere **Apri**.
     
     > [!NOTE]
-    > Come si fa a sapere quale certificato si tratta? Deve essere il singolo certificato assegnato a tutti gli elementi della farm oppure potrebbe essere presente più certificati per elementi diversi, ad esempio Predefinito, Servizi Web interni e così via, nel qual caso potrebbe essere necessario esaminare più certificati. Più certificati avranno la stessa identificazione personale. 
+    > Come si fa a sapere quale certificato si tratta? Deve essere il singolo certificato assegnato a tutti gli elementi della farm oppure è possibile disporre di più certificati per elementi diversi, ad esempio Predefinito, Servizi Web interni e così via, nel qual caso potrebbe essere necessario esaminare più certificati. Più certificati avranno la stessa identificazione personale. 
   
 6. Dopo aver ottenuto la visualizzazione **Certificato,** scegliere **Dettagli**. In questo modo sarà possibile visualizzare il nome del soggetto del certificato quando si seleziona **Subject** e vengono visualizzati il nome soggetto assegnato e le proprietà associate.
     
-7. Sarà inoltre necessario controllare le **voci Nome** soggetto alternativo. Sono disponibili una o più delle opzioni seguenti:
+7. Sarà inoltre necessario controllare le voci **Nome** soggetto alternativo. Sono disponibili una o più delle opzioni seguenti:
     
    - Il nome del pool per il pool o il nome del singolo server se non si tratta di un pool.
     
@@ -247,15 +247,15 @@ Per domande sulla pianificazione dei certificati, è stato documentato nell'arti
     
    - Record DI URL semplici, in genere meet e dialin.
     
-   - Nomi esterni di servizi Web interni e di servizi Web (ad esempio, webpool01.contoso.net, webpool01.contoso.com), in base alle scelte effettuate in Generatore di topologie e nelle selezioni di servizi Web sovraccariche.
+   - Nomi esterni dei servizi Web interni e dei servizi Web (ad esempio, webpool01.contoso.net, webpool01.contoso.com), in base alle scelte effettuate in Generatore di topologie e alle selezioni di servizi Web sovrascissate.
     
    - Se già assegnato, lyncdiscover.\<sipdomain\> e lyncdiscoverinternal.\<sipdomain\> record.
     
      Dovrai controllare più certificati se ne hai assegnati più di uno (controlla la nota precedente).
     
-8. Quindi, se si trova lyncdiscover.\<sipdomain\> e lyncdiscoverinternal.\<sipdomain\> record, questo è già configurato. È possibile chiudere MMC.
+8. Quindi, se si trova lyncdiscover.\<sipdomain\> e lyncdiscoverinternal.\<sipdomain\> record, hai già configurato questo. È possibile chiudere MMC.
     
-9. Se non sono assegnati, dovrai effettuare una nuova richiesta di certificato (come descritto sopra) o installarli dopo la richiesta (ti consigliamo di seguire PowerShell sopra per questo).
+9. Se non sono assegnati, dovrai effettuare una nuova richiesta di certificato (descritta sopra) o installarli dopo la richiesta (ti consigliamo di seguire powershell sopra per questo).
     
 ## <a name="configure-the-reverse-proxy"></a>Configurare il proxy inverso
 <a name="ConfigRP"> </a>
@@ -275,7 +275,7 @@ Abbiamo due aspetti principali da considerare:
 - Se si sta eseguendo la richiesta di individuazione automatica iniziale su HTTP, sarà necessario creare o modificare anche la regola.
     
 > [!NOTE]
-> **Importante** Un valore di timeout proxy è un numero che varia da distribuzione a distribuzione. È consigliabile monitorare la distribuzione e modificare il valore per un'esperienza ottimale per i client. Potresti essere in grado di impostare il valore fino a 200. Se si supportano i client mobili Lync nell'ambiente, è consigliabile impostare il valore su 960 per consentire timeout di notifica push da Office 365, con un valore di timeout pari a 900. È molto probabile che sia necessario aumentare il valore di timeout per evitare la disconnessione del client quando il valore è troppo basso o diminuire il numero se le connessioni tramite il proxy non si disconnettino, ma si cancellano a lungo dopo la disconnessione del client. Il monitoraggio e la base di ciò che è consueto per l'ambiente sono l'unico modo accurato per determinare l'impostazione appropriata per questo valore.
+> **Importante** Un valore di timeout proxy è un numero che varia da distribuzione a distribuzione. È consigliabile monitorare la distribuzione e modificare il valore per un'esperienza ottimale per i client. Potresti essere in grado di impostare il valore fino a 200. Se si supportano i client mobili Lync nell'ambiente, è consigliabile impostare il valore su 960 per consentire timeout di notifica push da Office 365, con un valore di timeout pari a 900. È molto probabile che sia necessario aumentare il valore di timeout per evitare la disconnessione del client quando il valore è troppo basso o diminuire il numero se le connessioni tramite il proxy non si disconnettino, ma si cancellano a lungo dopo la disconnessione del client. Il monitoraggio e la base di ciò che è consueto per l'ambiente è l'unico modo accurato per determinare l'impostazione appropriata per questo valore.
   
 ### <a name="modify-the-existing-web-publishing-rule-for-your-external-autodiscover-san-and-url"></a>Modificare la regola di pubblicazione Web esistente per la SAN e l'URL di individuazione automatica esterni
 
@@ -285,7 +285,7 @@ Abbiamo due aspetti principali da considerare:
     
 3. Deve essere presente un'area che indica a cosa viene applicata questa regola di pubblicazione Web. È necessario modificare questa regola per i siti o le richieste in arrivo per i siti. Si aggiungerà **una** nuova voce.
     
-4. Digitare il nome del sito di individuazione automatica (l'esempio che verrà utilizzato è lyncdiscover.contoso.com) e fare clic su **OK** o **Salva**, a seconda del formato del proxy inverso.
+4. Digitare il nome del sito di individuazione automatica (l'esempio che verrà utilizzato è lyncdiscover.contoso.com) e fare clic su **OK** o Salva **,** a seconda del formato del proxy inverso.
     
 5. È possibile che sia presente un nuovo certificato con la voce SAN autodiscover. Deve essere installato e configurato per l'utilizzo in base alle impostazioni del proxy inverso. Assicurati di salvare tutto al termine della configurazione.
     
@@ -297,7 +297,7 @@ Abbiamo due aspetti principali da considerare:
 
 1. Apri l'interfaccia proxy inverso.
     
-2. Dovrai individuare la posizione nell'interfaccia in cui crei le  regole  di pubblicazione Web e scegliere l'opzione Nuovo o Crea (può essere in un menu o in una scheda, a seconda della configurazione del proxy inverso). Si sta cercando l'opzione per creare una nuova regola di pubblicazione Web.
+2. Dovrai individuare la posizione nell'interfaccia in cui crei le  regole  di pubblicazione Web e scegliere l'opzione Nuovo o Crea (potrebbe essere in un menu o in una scheda, a seconda della configurazione del proxy inverso). Si sta cercando l'opzione per creare una nuova regola di pubblicazione Web.
     
 3. In genere, è necessario immettere le informazioni seguenti:
     
@@ -305,15 +305,15 @@ Abbiamo due aspetti principali da considerare:
     
    - **Azione regola:** in questo caso si tratta di una regola **Allow,** che consente a qualcosa di passare attraverso il proxy inverso.
     
-   - **L'opzione o** la regola di pubblicazione che si sta scegliendo è **un singolo sito Web o un servizio di bilanciamento del carico.**
+   - La **regola o** l'opzione di pubblicazione che si sta scegliendo è un singolo sito Web o un servizio di **bilanciamento del carico.**
     
    - Deve essere **SSL per** l'accesso esterno, scegliere questa opzione.
     
-   - Sarà necessario pubblicare un percorso per La pubblicazione interna e immettere il nome di dominio completo per i servizi Web esterni nel servizio di bilanciamento del carico del pool Front End (o il nome di dominio completo del servizio di bilanciamento del carico del pool di server Director, se esistente), un esempio potrebbe essere sfb_pool01.contoso.local.
+   - Sarà necessario pubblicare un percorso per La pubblicazione interna e immettere il nome di dominio completo per i servizi Web esterni nel servizio di bilanciamento del carico del pool Front End (o il nome di dominio completo del servizio di bilanciamento del carico del pool di server Director, se esistente), un esempio sarebbe sfb_pool01.contoso.local.
     
-   - Dovresti digitare _ come percorso da pubblicare, ma devi anche _*inoltrare l'intestazione **/\\** host originale**..
+   - Devi digitare _ come percorso da pubblicare, ma devi anche _*inoltrare l'intestazione **/\\** host originale***.
     
-   - Sarà disponibile un'opzione per i dettagli o le **informazioni sul nome** pubblico o esterno. Questo è il punto in cui potrai immettere:
+   - Sarà disponibile un'opzione per informazioni o **dettagli sul nome pubblico** o esterno. Questo è il punto in cui potrai immettere:
     
    - **Accetta richieste**, ma deve essere per il nome di dominio.
     
@@ -351,15 +351,15 @@ Abbiamo due aspetti principali da considerare:
     
    - **Azione regola:** in questo caso si tratta di una regola **Allow,** che consente a qualcosa di passare attraverso il proxy inverso.
     
-   - **L'opzione o** la regola di pubblicazione che si sta scegliendo è **un singolo sito Web o un servizio di bilanciamento del carico.**
+   - La **regola o** l'opzione di pubblicazione che si sta scegliendo è un singolo sito Web o un servizio di **bilanciamento del carico.**
     
    - Deve essere una connessione non protetta per connettersi al server Web o alla **farm pubblicata.**
     
    - Sarà necessario pubblicare un percorso per Pubblicazione interna e immettere il nome di dominio completo per l'indirizzo **VIP** del servizio di bilanciamento del carico del pool Front End, ad esempio sfb_pool01.contoso.local.
     
-   - Dovresti digitare _ come percorso da pubblicare, ma devi anche _*inoltrare l'intestazione **/\\** host originale**..
+   - Dovresti digitare _ come percorso da pubblicare, ma devi anche _*inoltrare l'intestazione **/\\** host originale***.
     
-   - Sarà disponibile un'opzione per i dettagli o le **informazioni sul nome** pubblico o esterno. Questo è il punto in cui potrai immettere:
+   - Sarà disponibile un'opzione per informazioni o **dettagli sul nome pubblico** o esterno. Questo è il punto in cui potrai immettere:
     
    - **Accetta richieste**, ma deve essere per il nome di dominio.
     
@@ -392,7 +392,7 @@ Per consentire ai client mobili di individuare la posizione di un utente, è nec
   
 1. Aprire Skype for Business Server Management Shell.
     
-2. Eseguire quanto segue per ottenere il valore dell'attributo **ProxyFQDN** per l'Skype for Business Server locale:
+2. Eseguire le operazioni seguenti per ottenere il valore dell'attributo **ProxyFQDN** per l'Skype for Business Server locale:
     
    ```powershell
    Get-CsHostingProvider
@@ -420,7 +420,7 @@ Per i client Lync Server 2010 Skype for Business Server 2015, è necessario eseg
 
 1. Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui **Skype for Business Server Management Shell** e **Ocscore** siano installati.
     
-2. Avviare la **Skype for Business Server Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i** programmi e sceglierlo).
+2. Avviare Skype for Business Server **Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i programmi** e sceglierlo).
     
 3. Nella riga di comando immettere:
     
@@ -445,7 +445,7 @@ Per i client Lync Server 2010 Skype for Business Server 2015, è necessario eseg
 
 1. Accedere come membro del ruolo **CsAdministrator** in qualsiasi computer in cui **Skype for Business Server Management Shell** e **Ocscore** siano installati.
     
-2. Avviare la **Skype for Business Server Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i** programmi e sceglierlo).
+2. Avviare Skype for Business Server **Management Shell** (è possibile digitare il nome nella ricerca o passare a Tutti **i programmi** e sceglierlo).
     
 3. Nella riga di comando immettere:
     
@@ -472,7 +472,7 @@ Le notifiche push, sotto forma di notifiche, icone o avvisi, possono essere invi
   
 Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si dispone di un Skype for Business Server, è necessario eseguire le operazioni seguenti:
   
-- Per un server perimetrale Skype for Business Server, aggiungere un nuovo provider di hosting, Microsoft Skype for Business Online, quindi configurare la federazione del provider di hosting tra l'organizzazione e Skype for Business Online.
+- Per un Skype for Business Server Edge Server, aggiungere un nuovo provider di hosting, Microsoft Skype for Business Online, quindi configurare la federazione del provider di hosting tra l'organizzazione e Skype for Business Online.
     
 - Abilitare le notifiche push eseguendo il cmdlet **Set-CsPushNotificationConfiguration.** Per impostazione predefinita, le notifiche push sono disattivate.
     
@@ -482,7 +482,7 @@ Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si disp
 
 1. Accedere con un account membro del ruolo **CsAdministrator** a un computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
     
-2. Avviare **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server **Management Shell**.
     
 3. Aggiungere un Skype for Business Server di hosting online.
     
@@ -499,7 +499,7 @@ Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si disp
     > [!NOTE]
     > Non è possibile avere più di una relazione di federazione con un singolo provider di hosting. Pertanto, se hai già configurato un provider di hosting con una relazione di federazione con sipfed.online.lync.com, non aggiungere un altro provider di hosting, anche se l'identità del provider di hosting è diversa da SkypeOnline. 
   
-4. Configurare la federazione del provider di hosting tra l'organizzazione e il servizio di notifica Push su Skype for Business Online. Nella riga di comando, è necessario digitare:
+4. Configurare la federazione del provider di hosting tra l'organizzazione e il servizio di notifica Push in Skype for Business Online. Nella riga di comando, è necessario digitare:
     
    ```powershell
     New-CsAllowedDomain -Identity "push.lync.com"
@@ -509,7 +509,7 @@ Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si disp
 
 1. Accedere con un account membro del ruolo **CsAdministrator** a un computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
     
-2. Avviare **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server **Management Shell**.
     
 3. Abilita notifiche push:
     
@@ -527,7 +527,7 @@ Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si disp
 
 1. Accedere con un account membro del ruolo **CsAdministrator** a un computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
     
-2. Avviare **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server **Management Shell**.
     
 3. Testare la configurazione della federazione:
     
@@ -556,9 +556,9 @@ Questa funzionalità rimane invariata rispetto a Lync Server 2013, ma se si disp
 ## <a name="configure-mobility-policy"></a>Configurare i criteri per dispositivi mobili
 <a name="ConfigMob"> </a>
 
-Hai la possibilità con Skype for Business Server di determinare chi può usare il servizio Per dispositivi mobili, Chiama tramite lavoro, voice over IP (VoIP) o video, nonché se il WiFi sarà necessario per VoIP o video. Chiama tramite ufficio consente a un utente mobile di usare il proprio numero di telefono dell'ufficio, anziché il numero di cellulare, durante l'esecuzione e la ricezione di chiamate. La persona all'altra estremità della linea non vede il numero di cellulare dell'utente mobile e consente all'utente mobile di evitare i costi delle chiamate in uscita. Quando voIP e video sono impostati, gli utenti possono effettuare chiamate VoIP e video. Le impostazioni per l'utilizzo di WiFi determinano se il dispositivo mobile di un utente sarà necessario per usare una rete WiFi su una rete dati cellulare.
+Hai la possibilità con Skype for Business Server di determinare chi può usare il servizio Per dispositivi mobili, Chiama tramite lavoro, Voice over IP (VoIP) o video, nonché se il WiFi sarà necessario per VoIP o video. Chiama tramite ufficio consente a un utente mobile di usare il proprio numero di telefono dell'ufficio, anziché il numero di cellulare, durante l'esecuzione e la ricezione di chiamate. La persona all'altra estremità della linea non vede il numero di cellulare dell'utente mobile e consente all'utente mobile di evitare i costi delle chiamate in uscita. Quando voIP e video sono impostati, gli utenti possono effettuare chiamate VoIP e video. Le impostazioni per l'utilizzo di WiFi determinano se il dispositivo mobile di un utente deve usare una rete WiFi su una rete dati cellulare.
   
-Mobilità, Chiamata tramite lavoro e le funzionalità VoIP e video sono tutte abilitate per impostazione predefinita. L'impostazione per richiedere WiFi per VoIP e video è disabilitata. Un amministratore ha la possibilità di modificare questa impostazione, a livello globale, in base al sito o in base all'utente.
+Le funzionalità Per dispositivi mobili, Chiamata tramite lavoro e VoIP e video sono tutte abilitate per impostazione predefinita. L'impostazione per richiedere WiFi per VoIP e video è disabilitata. Un amministratore ha la possibilità di modificare questa impostazione, a livello globale, in base al sito o in base all'utente.
   
 Per poter usare le funzionalità per dispositivi mobili e chiamare tramite il lavoro, gli utenti devono essere:
   
@@ -575,13 +575,13 @@ Per consentire agli utenti di usare Chiama tramite il lavoro, dovranno anche ess
 - Assegnato un criterio per dispositivi mobili con **EnableOutsideVoice** impostato su **True.**
     
 > [!NOTE]
-> Gli utenti che non sono abilitati per VoIP aziendale possono usare i propri dispositivi mobili per effettuare Skype chiamate VoIP Skype o partecipare alle conferenze utilizzando il collegamento Fai clic per partecipare mentre sono nei dispositivi mobili, se le opzioni appropriate sono impostate per il criterio vocale a cui sono associati. Nell'argomento PIANIFICAZIONE sono disponibili ulteriori dettagli. 
+> Gli utenti che non sono abilitati per VoIP aziendale possono usare i propri dispositivi mobili per effettuare Skype per Skype chiamate VoIP o possono partecipare alle conferenze utilizzando il collegamento Fai clic per partecipare mentre sono nei dispositivi mobili, se le opzioni appropriate sono impostate per il criterio vocale a cui sono associati. Nell'argomento PIANIFICAZIONE sono disponibili ulteriori dettagli. 
   
 ### <a name="modify-global-mobility-policy"></a>Modificare i criteri globali per dispositivi mobili
 
 1. Accedere con un account membro del ruolo **CsAdministrator** a un computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
     
-2. Avviare **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server **Management Shell**.
     
 3. Disattivare l'accesso a Mobilità e Chiamata tramite Lavoro a livello globale digitando:
     
@@ -590,7 +590,7 @@ Per consentire agli utenti di usare Chiama tramite il lavoro, dovranno anche ess
    ```
 
     > [!NOTE]
-    > È possibile disattivare Chiama tramite il lavoro senza disattivare l'accesso a Mobility. Tuttavia, non è possibile disattivare La mobilità senza disattivare anche Chiama tramite il lavoro. 
+    > È possibile disattivare Chiama tramite Il lavoro senza disattivare l'accesso a Mobility. Tuttavia, non è possibile disattivare La mobilità senza disattivare anche Chiama tramite il lavoro. 
   
     Per altre info, consulta [Set-CsMobilityPolicy.](/powershell/module/skype/set-csmobilitypolicy?view=skype-ps)
     
@@ -598,7 +598,7 @@ Per consentire agli utenti di usare Chiama tramite il lavoro, dovranno anche ess
 
 1. Accedere con un account membro del ruolo **CsAdministrator** a un computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
     
-2. Avviare **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server **Management Shell**.
     
 3. Puoi creare criteri a livello di sito, disattivare VoIP e video, abilitare Richiedi WiFi per ip audio e Richiedi WiFi per IP Video per sito. Digitare:
     
@@ -612,7 +612,7 @@ Per consentire agli utenti di usare Chiama tramite il lavoro, dovranno anche ess
 
 1. Accedere con un account membro del ruolo **CsAdministrator** a un computer in cui sono installati **Skype for Business Server Management Shell** e **Ocscore.**
     
-2. Avviare **Skype for Business Server Management Shell**.
+2. Avviare Skype for Business Server **Management Shell**.
     
 3. Creare criteri per dispositivi mobili a livello di utente e disattivare Mobilità e Chiamata tramite lavoro per utente. Digitare:
     
@@ -629,4 +629,4 @@ Per consentire agli utenti di usare Chiama tramite il lavoro, dovranno anche ess
    ```
 
     > [!NOTE]
-    > È possibile disattivare Chiama tramite il lavoro senza disattivare l'accesso a Mobility. Tuttavia, non è possibile disattivare La mobilità senza disattivare anche Chiama tramite il lavoro. 
+    > È possibile disattivare Chiama tramite Il lavoro senza disattivare l'accesso a Mobility. Tuttavia, non è possibile disattivare La mobilità senza disattivare anche Chiama tramite il lavoro. 

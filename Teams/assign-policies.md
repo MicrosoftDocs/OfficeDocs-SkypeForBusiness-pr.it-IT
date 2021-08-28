@@ -12,18 +12,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sui diversi modi per assegnare criteri agli utenti in Microsoft Teams.
 f1keywords:
 - ms.teamsadmincenter.bulkoperations.users.edit
 - ms.teamsadmincenter.bulkoperations.edit
-ms.openlocfilehash: deb5106ebca49644f6e3a23f607d5d1c352fc29e67c2390c39c1182d75a0bb53
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c33cfec3f0c242381ab4a3cd09b83eea02521375
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347551"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626398"
 ---
 # <a name="assign-policies-to-your-users-in-microsoft-teams"></a>Assegnare i criteri agli utenti in Microsoft Teams
 
@@ -31,7 +31,7 @@ Gli amministratori usano i criteri per controllare le Teams disponibili per gli 
 
 Le organizzazioni hanno diversi tipi di utenti con esigenze specifiche. I criteri personalizzati creati e assegnati consentono di personalizzare le impostazioni dei criteri per diversi set di utenti in base a tali esigenze.
 
-Per gestire facilmente i criteri nell'organizzazione, Teams diversi modi per assegnare i criteri agli utenti. Assegnare un criterio direttamente agli utenti, singolarmente o su scala tramite un'assegnazione batch o a un gruppo di cui gli utenti sono membri. È anche possibile usare i pacchetti di criteri per assegnare una raccolta predefinita di criteri agli utenti dell'organizzazione con ruoli simili. L'opzione scelta dipende dal numero di criteri che si stanno gestendo e dal numero di utenti a cui si stanno assegnando i criteri. I criteri globali (predefiniti a livello di organizzazione) si applicano al maggior numero di utenti dell'organizzazione. È necessario assegnare criteri solo agli utenti che richiedono criteri specializzati.
+Per gestire facilmente i criteri nell'organizzazione, Teams diversi modi per assegnare criteri agli utenti. Assegnare un criterio direttamente agli utenti, singolarmente o su scala tramite un'assegnazione batch o a un gruppo di cui gli utenti sono membri. È anche possibile usare i pacchetti di criteri per assegnare una raccolta predefinita di criteri agli utenti dell'organizzazione con ruoli simili. L'opzione scelta dipende dal numero di criteri che si stanno gestendo e dal numero di utenti a cui si stanno assegnando i criteri. I criteri globali (predefiniti a livello di organizzazione) si applicano al maggior numero di utenti dell'organizzazione. È necessario assegnare criteri solo agli utenti che richiedono criteri specializzati.
 
 Questo articolo descrive i diversi modi in cui è possibile assegnare criteri agli utenti e gli scenari consigliati per l'uso.
 
@@ -45,11 +45,11 @@ Se a un utente viene assegnato direttamente un criterio (singolarmente o tramite
 
 Se a un utente non è assegnato direttamente un criterio di un determinato tipo, il criterio assegnato a un gruppo di cui l'utente è membro ha la precedenza. Se un utente è membro di più gruppi, [](#group-assignment-ranking) ha la precedenza il criterio con la classificazione di assegnazione di gruppo più alta per il tipo di criterio specificato.
 
-In questo esempio visivo, i criteri effettivi dell'utente sono i criteri Exec Teams e HD, che hanno la classificazione di assegnazione più alta rispetto ad altri gruppi di cui l'utente è membro e a cui è anche assegnato un criterio dello stesso tipo di criteri.  
+In questo esempio visivo, i criteri effettivi dell'utente sono i criteri Exec Teams e HD, che hanno la classificazione di assegnazione più alta rispetto ad altri gruppi di cui l'utente è membro e a cui è assegnato anche un criterio dello stesso tipo di criteri.  
 
 ![Diagramma che mostra la precedenza di un criterio ereditato dal gruppo](media/assign-policies-example-group.png)
 
-Se a un utente non è assegnato direttamente un criterio o non è un membro di alcun gruppo a cui è assegnato un criterio, l'utente ottiene il criterio globale (impostazione predefinita a livello di organizzazione) per quel tipo di criterio. Ecco un esempio visivo.
+Se a un utente non è assegnato direttamente un criterio o non è membro di alcun gruppo a cui è assegnato un criterio, l'utente ottiene il criterio globale (impostazione predefinita a livello di organizzazione) per quel tipo di criterio. Ecco un esempio visivo.
 
 ![Diagramma che mostra la precedenza di un criterio globale](media/assign-policies-example-global.png)
 
@@ -136,9 +136,9 @@ Si può anche procedere nel modo seguente:
 
 ### <a name="use-powershell"></a>Usare PowerShell
 
-Ogni tipo di criterio ha un proprio set di cmdlet per gestirlo. Usare il ```Grant-``` cmdlet per un determinato tipo di criterio per assegnare il criterio. Ad esempio, usare il cmdlet per assegnare un criterio Teams ```Grant-CsTeamsMeetingPolicy``` riunione agli utenti. Questi cmdlet sono inclusi nel modulo Teams PowerShell e sono documentati nel riferimento [Skype for Business cmdlet.](/powershell/skype/intro?view=skype-ps)
+Ogni tipo di criterio ha un proprio set di cmdlet per gestirlo. Usare il ```Grant-``` cmdlet per un determinato tipo di criterio per assegnare il criterio. Ad esempio, usare il cmdlet per assegnare un criterio Teams ```Grant-CsTeamsMeetingPolicy``` riunione agli utenti. Questi cmdlet sono inclusi nel modulo Teams PowerShell e sono documentati nel riferimento Skype for Business [cmdlet.](/powershell/skype/intro?view=skype-ps)
 
-Scaricare e installare la Teams pubblica di [PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) (se non è già stata eseguita) e quindi eseguire la procedura seguente per connettersi.
+Scaricare e installare il Teams pubblico di [PowerShell](https://www.powershellgallery.com/packages/MicrosoftTeams/) (se non è già stato fatto) e quindi eseguire quanto segue per connettersi.
 
 > [!NOTE]
 > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente.
@@ -179,7 +179,7 @@ Prima di iniziare, è importante comprendere le regole di precedenza e la classi
 
 Per un determinato tipo di criterio, i criteri effettivi di un utente vengono determinati in base a quanto segue:
 
-- I criteri assegnati direttamente a un utente hanno la precedenza su qualsiasi altro criterio dello stesso tipo assegnato a un gruppo. In altre parole, se a un utente viene assegnato direttamente un criterio di un determinato tipo, tale utente non erediterà un criterio dello stesso tipo da un gruppo. Questo significa anche che se un utente ha un criterio di un determinato tipo a cui è stato assegnato direttamente, è necessario rimuoverlo dall'utente prima di poter ereditare un criterio dello stesso tipo da un gruppo.
+- I criteri assegnati direttamente a un utente hanno la precedenza su qualsiasi altro criterio dello stesso tipo assegnato a un gruppo. In altre parole, se a un utente viene assegnato direttamente un criterio di un determinato tipo, tale utente non erediterà un criterio dello stesso tipo da un gruppo. Questo significa anche che se un utente ha un criterio di un determinato tipo a cui è stato assegnato direttamente, è necessario rimuoverlo dall'utente prima che possa ereditare un criterio dello stesso tipo da un gruppo.
 
 - Se a un utente non è assegnato direttamente un criterio ed è membro di due o più gruppi e a ogni gruppo è assegnato un criterio dello stesso tipo, l'utente eredita i criteri dell'assegnazione di gruppo con la classificazione più alta.
 
@@ -193,11 +193,11 @@ I criteri effettivi di un utente vengono aggiornati in base alle regole seguenti
 
 #### <a name="group-assignment-ranking"></a>Classificazione delle assegnazioni di gruppo
 
-Quando si assegna un criterio a un gruppo, si specifica una classificazione per l'assegnazione del gruppo. Viene usato per determinare quali criteri un utente deve ereditare come criterio effettivo se l'utente è membro di due o più gruppi e a ogni gruppo viene assegnato un criterio dello stesso tipo.
+Quando si assegna un criterio a un gruppo, si specifica una classificazione per l'assegnazione del gruppo. Viene usato per determinare quali criteri un utente deve ereditare come criterio effettivo se l'utente è membro di due o più gruppi e a ogni gruppo è assegnato un criterio dello stesso tipo.
 
 La classificazione delle assegnazioni di gruppo è relativa ad altre assegnazioni di gruppo dello stesso tipo. Ad esempio, se si assegna un criterio di chiamata a due gruppi, impostare la classificazione di un'attività su 1 e l'altra su 2, con 1 come classificazione più alta. La classificazione delle assegnazioni di gruppo indica quale appartenenza al gruppo è più importante o più pertinente rispetto ad altre appartenenze ai gruppi per quanto riguarda l'ereditarietà.
 
-Si supponga, ad esempio, di avere due gruppi, Dipendenti negozio e Responsabili negozio. A entrambi i gruppi viene assegnato un criterio Teams chiamate, rispettivamente criteri di chiamata dei dipendenti dello Store e criteri di chiamata dei responsabili dei negozi. Per un responsabile del negozio che fa parte di entrambi i gruppi, il suo ruolo di responsabile è più rilevante del suo ruolo di dipendente, quindi i criteri di chiamata assegnati al gruppo Store Manager devono avere una classificazione più alta.
+Si supponga, ad esempio, di avere due gruppi, Dipendenti negozio e Responsabili negozio. A entrambi i gruppi viene assegnato un Teams di chiamata, rispettivamente criteri di chiamata dei dipendenti dello Store e criteri di chiamata dei responsabili dei negozi. Per un responsabile del negozio che fa parte di entrambi i gruppi, il suo ruolo di responsabile è più rilevante del suo ruolo di dipendente, quindi i criteri di chiamata assegnati al gruppo Store Manager devono avere una classificazione più alta.
 
 |Raggruppa |Teams del criterio di chiamata  |Rango|
 |---------|---------|---|
@@ -211,7 +211,7 @@ Se non si specifica una classificazione, all'assegnazione dei criteri viene asse
 > [!NOTE]
 > Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, per i criteri di parcheggio di chiamata Teams, per i criteri di Teams, per gli eventi live Teams, per i criteri per le riunioni Teams e per i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare alla pagina del tipo di criterio. Ad esempio, passare a **Criteri**  >  **riunione riunioni**.
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare alla pagina tipo di criterio. Ad esempio, passare a **Criteri**  >  **riunione riunioni**.
 
 2. Selezionare la scheda **Assegnazione criteri di** gruppo.
 
@@ -223,12 +223,12 @@ Se non si specifica una classificazione, all'assegnazione dei criteri viene asse
 
 Per rimuovere un'assegnazione di  Criteri di gruppo, nella scheda Assegnazione criteri di gruppo della pagina dei criteri selezionare l'assegnazione di gruppo e quindi **scegliere Rimuovi**.
 
-Per modificare la classificazione di un'assegnazione di gruppo, è necessario prima rimuovere l'assegnazione di Criteri di gruppo. Seguire quindi i passaggi precedenti per assegnare il criterio a un gruppo.
+Per modificare la classificazione di un'assegnazione di gruppo, è necessario prima di tutto rimuovere l'assegnazione di Criteri di gruppo. Seguire quindi i passaggi precedenti per assegnare il criterio a un gruppo.
 
 ### <a name="use-the-powershell-option"></a>Usare l'opzione di PowerShell
 
 > [!NOTE]
-> Attualmente, l'assegnazione dei criteri ai gruppi con PowerShell non è disponibile per tutti i Teams di criteri. Vedere [New-CsGroupPolicyAssignment per](/powershell/module/teams/new-csgrouppolicyassignment) l'elenco dei tipi di criteri supportati.
+> Attualmente, l'assegnazione dei criteri ai gruppi con PowerShell non è disponibile per tutti Teams tipi di criteri. Vedere [New-CsGroupPolicyAssignment per](/powershell/module/teams/new-csgrouppolicyassignment) l'elenco dei tipi di criteri supportati.
 
 #### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo Microsoft Teams PowerShell
 
@@ -238,7 +238,7 @@ Per istruzioni dettagliate, vedere Installare [Teams PowerShell.](teams-powershe
 
 Usare il cmdlet [New-CsGroupPolicyAssignment](/powershell/module/teams/new-csgrouppolicyassignment) per assegnare un criterio a un gruppo. È possibile specificare un gruppo usando l'ID oggetto, l'indirizzo SIP o l'indirizzo di posta elettronica.
 
-In questo esempio viene assegnato un criterio Teams riunione denominato Criteri riunione per i responsabili dei punti vendita al dettaglio a un gruppo con una classificazione delle assegnazioni di 1.
+In questo esempio viene assegnato un criterio Teams riunione denominato Criteri riunione dei responsabili dei punti vendita al dettaglio a un gruppo con una classificazione delle assegnazioni di 1.
 
 ```powershell
 New-CsGroupPolicyAssignment -GroupId d8ebfa45-0f28-4d2d-9bcc-b158a49e2d17 -PolicyType TeamsMeetingPolicy -PolicyName "Retail Managers Meeting Policy" -Rank 1
@@ -273,7 +273,7 @@ Ecco un elenco delle assegnazioni dei criteri e delle priorità per un criterio 
 |Divisione    |Criteri di divisione         |3         |
 |Affiliata   |Criteri affiliati        |4         |
 
-Se si rimuove il criterio Area occidentale dal gruppo Area ovest, le assegnazioni e le priorità dei criteri vengono aggiornate nel modo seguente.
+Se il criterio Area occidentale viene rimosso dal gruppo Area ovest, le assegnazioni e le priorità dei criteri vengono aggiornate nel modo seguente.
 
 |Nome gruppo  |Nome del criterio  |Rango|
 |---------|---------|---------|
@@ -290,7 +290,7 @@ Remove-CsGroupPolicyAssignment -PolicyType TeamsMeetingPolicy -GroupId f985e013-
 #### <a name="change-a-policy-assignment-for-a-group"></a>Modificare un'assegnazione di criteri per un gruppo
 
 > [!NOTE]
-> Il cmdlet [Set-CsGroupPolicyAssignment](/powershell/module/teams/set-csgrouppolicyassignment) sarà disponibile a breve. Nel frattempo, per modificare un'assegnazione di criteri di gruppo, è possibile rimuovere l'assegnazione corrente dei criteri dal gruppo e quindi aggiungere una nuova assegnazione di criteri.
+> Il cmdlet [Set-CsGroupPolicyAssignment](/powershell/module/teams/set-csgrouppolicyassignment) sarà disponibile a breve. Nel frattempo, per modificare un'assegnazione di criteri di gruppo, è possibile rimuovere l'assegnazione di criteri corrente dal gruppo e quindi aggiungere una nuova assegnazione di criteri.
 
 Dopo aver assegnato un criterio a un gruppo, è possibile usare il cmdlet [Set-CsGroupPolicyAssignment](/powershell/module/teams/set-csgrouppolicyassignment) per modificare l'assegnazione dei criteri del gruppo nel modo seguente:
 
@@ -314,7 +314,7 @@ Prima di tutto, viene utilizzato il cmdlet [Get-CsUserPolicyAssignment](/powersh
 Get-CsUserPolicyAssignment -Identity daniel@contoso.com -PolicyType TeamsMeetingBroadcastPolicy | select -ExpandProperty PolicySource
 ```
 
-L'output mostra che all'utente è stato assegnato direttamente un criterio di trasmissione riunione Teams denominato Eventi dipendenti, che ha la precedenza sul criterio denominato Eventi live fornitore assegnato a un gruppo a cui appartiene l'utente.
+L'output mostra che all'utente è stato assegnato direttamente un criterio di trasmissione riunione di Teams denominato Eventi dipendente, che ha la precedenza sul criterio denominato Eventi live fornitore assegnato a un gruppo a cui appartiene l'utente.
 
 ```console
 AssignmentType PolicyName         Reference
@@ -343,7 +343,7 @@ New-CsBatchPolicyAssignmentOperation -OperationName "Assigning null at bulk" -Po
 
 Per assegnare un criterio agli utenti in blocco:
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione selezionare **Utenti.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare **Utenti.**
 
 2. Cercare gli utenti a cui si vuole assegnare il criterio o filtrare la visualizzazione per visualizzare gli utenti desiderati.
 
@@ -351,7 +351,7 @@ Per assegnare un criterio agli utenti in blocco:
 
 4. Selezionare **Modifica impostazioni,** apportare le modifiche desiderate e quindi scegliere **Applica.**
 
-Per visualizzare lo stato dell'assegnazione dei criteri, nel  banner visualizzato nella  parte superiore della pagina Utenti dopo aver selezionato Applica per inviare l'assegnazione dei criteri, selezionare **Log attività.** Oppure, nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione passare a **Dashboard** e quindi in **Log attività** selezionare **Visualizza dettagli.** Il log attività mostra le assegnazioni dei criteri a batch di più di 20 utenti tramite l'Microsoft Teams di amministrazione degli ultimi 30 giorni. Per altre informazioni, vedere [Visualizzare le assegnazioni dei criteri nel log attività.](activity-log.md)
+Per visualizzare lo stato dell'assegnazione dei criteri, nel  banner visualizzato nella  parte superiore della pagina Utenti dopo aver selezionato Applica per inviare l'assegnazione dei criteri, selezionare **Log attività.** Oppure, nel riquadro di spostamento sinistro dell Microsoft Teams di amministrazione passare a **Dashboard** e quindi in Log **attività** selezionare **Visualizza dettagli.** Il log attività mostra le assegnazioni dei criteri a batch di più di 20 utenti tramite l'Microsoft Teams di amministrazione degli ultimi 30 giorni. Per altre informazioni, vedere [Visualizzare le assegnazioni dei criteri nel log attività.](activity-log.md)
 
 ### <a name="use-powershell-method"></a>Usare il metodo di PowerShell
 
@@ -390,7 +390,7 @@ Eseguire le operazioni seguenti per connettersi ad Azure AD.
 Connect-AzureAD
 ```
 
-Quando viene richiesto, accedere usando le stesse credenziali di amministratore usate per connettersi a Teams.
+Quando richiesto, accedere usando le stesse credenziali di amministratore usate per connettersi a Teams.
 
 #### <a name="assign-a-setup-policy-to-a-batch-of-users"></a>Assegnare un criterio di configurazione a un batch di utenti
 
@@ -427,7 +427,7 @@ Per altre informazioni, vedere [Get-CsBatchPolicyAssignmentOperation](/powershel
 
 ## <a name="assign-a-policy-package-to-users"></a>Assegnare un pacchetto di criteri agli utenti
 
-Un pacchetto di criteri in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli uguali o simili nell'organizzazione. Ogni pacchetto di criteri è progettato in base a un ruolo utente e include criteri predefiniti e impostazioni dei criteri che supportano le attività tipiche del ruolo. Alcuni esempi di pacchetti di criteri sono il pacchetto Education (Teacher) e il pacchetto Healthcare (Clinical Worker). Per altre informazioni, vedere [Gestire i pacchetti di criteri in Teams](manage-policy-packages.md).
+Un pacchetto di criteri in Teams è una raccolta di criteri e impostazioni dei criteri predefiniti che è possibile assegnare agli utenti con ruoli uguali o simili nell'organizzazione. Ogni pacchetto di criteri è progettato in base a un ruolo utente e include criteri predefiniti e impostazioni dei criteri che supportano le attività tipiche del ruolo. Alcuni esempi di pacchetti di criteri sono il pacchetto Education (Teacher) e il pacchetto Healthcare (Clinical worker). Per altre informazioni, vedere [Gestire i pacchetti di criteri in Teams](manage-policy-packages.md).
 
 ### <a name="assign-a-policy-package-to-one-user"></a>Assegnare un pacchetto di criteri a un utente
 
@@ -445,7 +445,7 @@ Un pacchetto di criteri in Teams è una raccolta di criteri e impostazioni dei c
 
 3. Nel riquadro **Gestisci utenti** cercare l'utente per nome visualizzato o in base al nome utente, selezionare il nome e poi selezionare **Aggiungi**. Ripetere questa operazione per ogni utente da aggiungere.
 
-4. Dopo aver aggiunto gli utenti, selezionare **Salva.**
+4. Dopo aver aggiunto gli utenti, selezionare **Salva**.
 
 ## <a name="assign-a-policy-package-to-a-group"></a>Assegnare un pacchetto di criteri a un gruppo
 
@@ -456,7 +456,7 @@ L'assegnazione di pacchetti di criteri ai gruppi è consigliata per gruppi con u
 Quando si assegna il pacchetto di criteri, questo viene immediatamente assegnato al gruppo. Tuttavia, la propagazione dell'assegnazione dei criteri ai membri del gruppo viene eseguita come operazione in background e può richiedere del tempo, a seconda delle dimensioni del gruppo. Lo stesso vale quando un criterio non è assegnato a un gruppo o quando i membri vengono aggiunti o rimossi da un gruppo.
 
 > [!IMPORTANT]
-> Prima di iniziare, è importante comprendere le regole di precedenza e la [classificazione](#precedence-rules) [delle assegnazioni di gruppo.](#group-assignment-ranking) Leggere e comprendere i concetti descritti in Informazioni [sull'assegnazione](#what-you-need-to-know-about-policy-assignment-to-groups) dei criteri ai gruppi più indietro in questo articolo.
+> Prima di iniziare, è importante comprendere le regole di precedenza e la [classificazione](#precedence-rules) [delle assegnazioni di gruppo.](#group-assignment-ranking) Leggere e comprendere i concetti descritti [in](#what-you-need-to-know-about-policy-assignment-to-groups) Informazioni sull'assegnazione dei criteri ai gruppi più indietro in questo articolo.
 
 ### <a name="assign-a-policy-package-to-a-group-of-users-in-the-admin-center"></a>Assegnare un pacchetto di criteri a un gruppo di utenti nell'interfaccia di amministrazione
 
@@ -492,7 +492,7 @@ Per istruzioni dettagliate, vedere Installare [Teams PowerShell.](teams-powershe
 
 Usare il cmdlet [Grant-CsGroupPolicyPackageAssignment](/powershell/module/teams/grant-csgrouppolicypackageassignment) per assegnare un pacchetto di criteri a un gruppo. È possibile specificare un gruppo usando l'ID oggetto, l'indirizzo SIP o l'indirizzo di posta elettronica. Quando si assegna il pacchetto di criteri, specificare una classificazione [delle assegnazioni di gruppo](#group-assignment-ranking) per ogni tipo di criterio nel pacchetto di criteri.
 
-In questo esempio il pacchetto di criteri Education_Teacher viene assegnato a un gruppo con una classificazione delle assegnazioni 1 per TeamsAppSetupPolicy e TeamsMeetingBroadcastPolicy e una classificazione 2 per TeamsMeetingPolicy.
+In questo esempio il pacchetto di criteri Education_Teacher viene assegnato a un gruppo con una classificazione delle assegnazioni di 1 per TeamsAppSetupPolicy e TeamsMeetingBroadcastPolicy e una classificazione 2 per TeamsMeetingPolicy.
 
 ```powershell
 Grant-CsGroupPolicyPackageAssignment -GroupId "dae90bb4-120f-4a3e-a15d-30f142e79f69" -PackageName "Education_Teacher" -PolicyRankings "TeamsAppSetupPolicy, 1", "TeamsMeetingBroadcastPolicy, 1", "TeamsMeetingPolicy, 2"
@@ -514,7 +514,7 @@ Eseguire le operazioni seguenti per installare [il Microsoft Teams di PowerShell
 Install-Module -Name MicrosoftTeams
 ```
 
-Eseguire le operazioni seguenti per connettersi a Teams e avviare una sessione.
+Eseguire quanto segue per connettersi a Teams e avviare una sessione.
 
 ```powershell
 Connect-MicrosoftTeams

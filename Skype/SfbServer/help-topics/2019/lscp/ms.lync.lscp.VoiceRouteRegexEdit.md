@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: fc0fd40d-77b0-40c1-94f4-1026f70bcf30
 ROBOTS: NOINDEX, NOFOLLOW
 description: Digitare una .NET Framework regolare per specificare il modello di corrispondenza per i numeri di telefono di destinazione a cui viene applicata la route.
-ms.openlocfilehash: b0c7de053c89aae71969ec1209bd5b51cab99088365d1400ad1c801cf61e2295
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 64aa5e6d7cb83c24b7560296c5062d07f0a0ee6a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54283508"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58599271"
 ---
 # <a name="normalization-rule-type-a-regular-expression"></a>Regola di normalizzazione: digitare un'espressione regolare
  

@@ -13,24 +13,24 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Setup
 description: È possibile consentire agli utenti Skype for Business utenti di usare lo strumento di feedback dell'app Skype for Business incorporato per consentire agli utenti di segnalare i problemi e fornire feedback direttamente a Microsoft sulla loro esperienza.
-ms.openlocfilehash: e480f9446f3418b2c68d2c74388b60009b81bc13f76e47c15c1f4e8e3f882984
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b7be0629e0944f55147a8f0a772663737412f910
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281339"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611455"
 ---
 # <a name="turn-on-or-off-skype-for-business-client-feedback-reporting"></a>Attivare o disattivare i report di feedback client di Skype for Business
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-È possibile consentire agli utenti di Skype for Business Online di usare lo strumento di feedback dell'app Skype for Business incorporato per consentire agli utenti di segnalare i problemi e inviare feedback direttamente a Microsoft sulla loro esperienza. 
+È possibile consentire agli utenti di Skype for Business Online di usare lo strumento di feedback dell'app Skype for Business incorporato per consentire agli utenti di segnalare i problemi e fornire feedback direttamente a Microsoft sulla loro esperienza. 
   
 ![Icona Fornisci feedback](../images/eac13837-04d9-4da1-8e80-54612cf6650d.png)
   
@@ -49,7 +49,7 @@ Puoi anche utilizzare l'impostazione  _EnableOnlineFeedbackScreenshot_ in modo c
 
 > [!NOTE]
 > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
-1. Installare il [modulo Teams PowerShell](/microsoftteams/teams-powershell-install).
+1. Installare il [Teams di PowerShell.](/microsoftteams/teams-powershell-install)
     
 2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
 
@@ -69,7 +69,7 @@ Per abilitare la segnalazione di feedback per gli utenti dell'organizzazione e c
   ```PowerShell
   Set-CsClientPolicy -Identity EnableOnlineFeedback -EnableOnlineFeedback $true -EnableOnlineFeedbackScreenshots $true
   ```
-## <a name="want-to-know-more-about-windows-powershell"></a>Vuoi saperne di più su Windows PowerShell?
+## <a name="want-to-know-more-about-windows-powershell"></a>Per saperne di più sulle Windows PowerShell?
 - Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 e Skype for Business Online usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano, quando è necessario eseguire più attività. Per iniziare a usare Windows PowerShell, vedere questi argomenti:
     
   - [Introduzione a Windows PowerShell e Skype for Business Online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)

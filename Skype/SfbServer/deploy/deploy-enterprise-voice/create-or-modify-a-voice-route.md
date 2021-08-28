@@ -9,19 +9,19 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: d189057d-cc9d-4622-9d10-f5385d703faf
 description: 'Riepilogo: informazioni su come creare o modificare una route vocale in Skype for Business Server utilizzando il Pannello Skype for Business Server di controllo.'
-ms.openlocfilehash: a9ae7d0e1cff6f4fa49346b67c08253c108e026ec352606cf4f73fc0dc6a7640
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8b1ca3dc6120fb4e8432736672ee4821e894da56
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279344"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58611241"
 ---
 # <a name="create-or-modify-a-voice-route-in-skype-for-business"></a>Creare o modificare una route vocale in Skype for Business
  
@@ -51,13 +51,13 @@ ms.locfileid: "54279344"
     
    - **Eccezioni**: se si desidera specificare una o più eccezioni per un valore di prefisso, evidenziare il prefisso e fare clic su **Eccezioni**. Digitare uno o più valori per i modelli di corrispondenza che non  *si desidera*  che questa route supporti. Ad esempio, per escludere dalla route i numeri che iniziano con +425237,  immettere il valore +425237 nel campo Eccezioni e quindi fare clic su **OK.**
     
-   - Per definire manualmente il formato di corrispondenza, fare clic su **Modifica** nello strumento **Formato per corrispondenza** e quindi digitare un'espressione regolare .NET Framework per specificare il formato di corrispondenza per i numeri di telefono di destinazione ai quali viene applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, vedere [".NET Framework regolari".](/dotnet/standard/base-types/regular-expressions) 
+   - Per definire manualmente il formato di corrispondenza, fare clic su **Modifica** nello strumento **Formato per corrispondenza** e quindi digitare un'espressione regolare .NET Framework per specificare il formato di corrispondenza per i numeri di telefono di destinazione ai quali viene applicata la route. Per informazioni dettagliate su come scrivere espressioni regolari, [vedere ".NET Framework regolari".](/dotnet/standard/base-types/regular-expressions) 
     
 9. Selezionare **Ometti ID chiamante** se non si desidera che l'ID del telefono che effettua la chiamata in uscita venga visualizzato al destinatario della chiamata. Se si seleziona questa opzione, è necessario specificare un **ID** chiamante alternativo che verrà visualizzato nella visualizzazione dell'ID chiamante del destinatario.
     
 10. Per associare uno o più trunk alla route vocale, fare clic su **Aggiungi** e quindi selezionare un trunk nell'elenco.
     
-11. Per associare uno o più utilizzi PSTN (Public Switched  Telephone Network) alla route vocale, fare clic su Seleziona e scegliere un record nell'elenco dei record di utilizzo PSTN definiti per la distribuzione di VoIP aziendale.
+11. Per associare uno o più utilizzi PSTN (Public Switched  Telephone Network) alla route vocale, fare clic su Seleziona e scegliere un record dall'elenco dei record di utilizzo PSTN definiti per la distribuzione di VoIP aziendale.
     
     > [!NOTE]
     > Per visualizzare le proprietà di ognuno dei record di utilizzo PSTN disponibili, vedere [View PSTN usage records in Skype for Business](view-pstn-usage-records.md). > Per creare o modificare i record di utilizzo PSTN, vedere [Create or modify a voice policy and configure PSTN usage records in Skype for Business](voice-policy-and-pstn-usage-records.md)

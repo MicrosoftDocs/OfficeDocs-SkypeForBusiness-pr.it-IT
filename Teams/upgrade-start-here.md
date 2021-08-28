@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Questo articolo ti aiuterà a iniziare a eseguire l'aggiornamento da Skype for Business a Microsoft Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.custom:
 - Teams-upgrade-guidance
@@ -30,18 +30,18 @@ f1.keywords:
 - CSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 34eb3ed6f6979535e82ac85769011bcd9273c8f8293fa5dfcd7d9f0e1308b73e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b581f509655327c944876306cee666f39e07ef6c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345165"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58589412"
 ---
 # <a name="get-started-on-your-upgrade-from-skype-for-business-to-microsoft-teams"></a>Introduzione all'aggiornamento da Skype for Business a Microsoft Teams
 
 Congratulazioni per il passaggio imminente da Skype for Business a Microsoft Teams. Sia che si abbia appena iniziato a lavorare con Teams, sia che lo si usi già insieme a Skype for Business o si sia pronti per l'aggiornamento, forniremo tutto il necessario per passare a Teams con successo.
 
-Sia per l'aggiornamento da Skype for Business Online a Teams sia per quello da un ambiente locale di Skype for Business a Teams, il framework di aggiornamento guiderà il processo in base allo scenario aziendale. È anche possibile visitare [l'hub](upgrade-skype-teams.yml) di aggiornamento per ulteriori risorse di formazione e risorse per l'implementazione di un aggiornamento riuscito da Skype for Business a Teams.
+Sia per l'aggiornamento da Skype for Business Online a Teams sia per quello da un ambiente locale di Skype for Business a Teams, il framework di aggiornamento guiderà il processo in base allo scenario aziendale. Ti consigliamo anche di visitare [l'hub](upgrade-skype-teams.yml) Di aggiornamento per ulteriori risorse di formazione e risorse per l'implementazione di un aggiornamento riuscito da Skype for Business a Teams.
 
 [!INCLUDE [sfbo-retirement](../Skype/Hub/includes/sfbo-retirement.md)]
 
@@ -53,13 +53,13 @@ Microsoft Teams amplia le funzionalità di Skype for Business, unendo chat, riun
 
 ## <a name="when-should-my-organization-migrate-to-teams"></a>Quando deve essere eseguita la migrazione dell'organizzazione a Teams?
 
-Anche se il servizio Skype for Business Online sarà pienamente operativo fino al 31 luglio 2021, è consigliabile iniziare l'aggiornamento a Teams oggi. Avviando l'aggiornamento oggi, si ha molto tempo per completarlo prima della data di ritiro. È possibile scegliere di eseguire l'aggiornamento a Teams usando il metodo delle funzionalità sovrapposte ("modalità Isole") o il metodo di selezione delle funzionalità. Per altre informazioni su questi metodi, vedere Scegliere il percorso di [aggiornamento da Skype for Business a Teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md).
+Anche se il servizio Skype for Business Online sarà pienamente operativo fino al 31 luglio 2021, è consigliabile iniziare l'aggiornamento a Teams oggi. Avviando l'aggiornamento oggi, si ha molto tempo per completarlo prima della data di ritiro. È possibile scegliere di eseguire l'aggiornamento a Teams usando il metodo delle funzionalità sovrapposte ("modalità Isole") o il metodo di selezione delle funzionalità. Per altre informazioni su questi metodi, vedere Scegliere il percorso di aggiornamento [da Skype for Business a Teams](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md).
 
 ## <a name="can-we-continue-to-use-skype-for-business-online-as-we-prepare-for-and-execute-our-upgrade-to-teams"></a>È possibile continuare a usare Skype for Business Online mentre ci si prepara a eseguire il passaggio a Teams?
 
 Sì, Microsoft offre diverse opzioni per l'uso di Skype for Business Online insieme a Teams. Queste modalità di coesistenza consentono agli utenti di familiarizzare con Teams, contribuendo ad accelerare il passaggio alla modalità Solo Teams. Per altre informazioni, vedere [https://aka.ms/SkypeToTeams-Coexist](./teams-and-skypeforbusiness-coexistence-and-interoperability.md).
 
-## <a name="is-phone-system-available-for-teams-users"></a>Gli Sistema telefonico sono disponibili per Teams utenti?
+## <a name="is-phone-system-available-for-teams-users"></a>Le Sistema telefonico sono disponibili per Teams utenti?
 
 Sì. Sistema telefonico è disponibile per tutti Teams utenti dopo che sono stati spostati in modalità TeamsOnly.  Inoltre, Microsoft offre opzioni per la connessione alla rete PSTN (Public Switched Telephone Network) in modo che gli utenti possano effettuare chiamate telefoniche in qualsiasi parte del mondo. Per altre informazioni, vedere [Voice - Sistema telefonico e connettività PSTN.](cloud-voice-landing-page.md)
 
@@ -71,7 +71,7 @@ Sì. Con Sistema telefonico routing diretto, è possibile usare Sistema telefoni
 
 Microsoft si impegna a garantire il successo della transizione da Skype for Business a Teams, fornendo indicazioni affidabili basate su un framework di aggiornamento end-to-end comprovato, progettato per pianificare ed eseguire il passaggio a Teams. Microsoft offre indicazioni per ogni fase del passaggio, sia per gli utenti che devono ancora iniziare, sia per quelli che già utilizzano Teams insieme a Skype for Business che quelli pronti al passaggio.
 
-Per facilitare la pianificazione e l'implementazione dell'aggiornamento, Microsoft ospita laboratori gratuiti in tempo reale e interattivi per la pianificazione degli aggiornamenti, progettati per aiutare l'utente a familiarizzare con il framework di aggiornamento, condividere informazioni approfondite sulla preparazione degli utenti per l'aggiornamento e identificare il percorso giusto per l'organizzazione nel percorso verso Teams. È possibile partecipare a una sessione sulla panoramica della pianificazione del passaggio: [https://aka.ms/SkypeToTeamsPlanning](./upgrade-workshops-landing-page.yml).
+Per facilitare la pianificazione e l'implementazione degli aggiornamenti, Microsoft ospita laboratori di pianificazione degli aggiornamenti interattivi in tempo reale gratuiti, progettati per aiutarti a familiarizzare con il framework di aggiornamento, condividere informazioni approfondite sulla preparazione degli utenti per l'aggiornamento e identificare il percorso giusto per l'organizzazione durante il viaggio verso Teams. È possibile partecipare a una sessione sulla panoramica della pianificazione del passaggio: [https://aka.ms/SkypeToTeamsPlanning](./upgrade-workshops-landing-page.yml).
 
 Le organizzazioni che usano Skype for Business Online potrebbero essere idonee per gli aggiornamenti assistiti da Microsoft a Teams per facilitare la transizione da Skype for Business Online prima del ritiro del servizio il 31 luglio 2021. Gli aggiornamenti assistiti riducono il numero di attività tecniche necessarie per i clienti e consentono di concentrarsi più sulla preparazione dell'organizzazione, sulla consapevolezza degli utenti e sulla formazione Teams utenti.
 

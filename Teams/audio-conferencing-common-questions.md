@@ -16,26 +16,26 @@ ms.collection:
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
-description: Di seguito sono riportate alcune delle principali domande dei clienti che vogliono usare le audioconferenze.
-ms.openlocfilehash: 3770807d9cd5ea69152a4c5039651c94411a8b801f80c3e7804acba195342614
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Di seguito sono riportate alcune delle principali domande dei clienti che vogliono usare i servizi di audioconferenza.
+ms.openlocfilehash: ec0af1c51775b564553d37e64a0f2afa5964f04a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295253"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626388"
 ---
 # <a name="audio-conferencing-common-questions"></a>Domande ricorrenti sulle audioconferenze
 
-Di seguito sono riportate alcune delle principali domande dei clienti che vogliono usare le audioconferenze. 
+Di seguito sono riportate alcune delle principali domande dei clienti che vogliono usare i servizi di audioconferenza. 
   
 ## <a name="what-are-the-benefits-of-audio-conferencing"></a>Quali sono i vantaggi delle audioconferenze?
 
-La chiamata alle riunioni è utile, ad esempio, quando le persone sono in viaggio e non possono partecipare a una riunione usando l'app Skype for Business o Microsoft Teams sul portatile o sui dispositivi mobili. Esistono tuttavia altre situazioni in cui l'uso di un telefono per partecipare a una riunione di Skype for Business o Microsoft Teams può essere un'opzione migliore rispetto all'uso di un'app su un computer, ad esempio quando:
+La chiamata alle riunioni è utile, ad esempio, quando le persone sono in viaggio e non possono partecipare a una riunione usando l'app Skype for Business o Microsoft Teams sul proprio portatile o dispositivo mobile. Esistono tuttavia altre situazioni in cui l'uso di un telefono per partecipare a una riunione di Skype for Business o Microsoft Teams può essere un'opzione migliore rispetto all'uso di un'app su un computer, ad esempio quando:
   
 - La connessione a Internet è limitata.
     
@@ -61,13 +61,13 @@ Sì, i numeri verde (numeri di servizio) sono disponibili ma solo in alcuni paes
   
 ## <a name="how-many-local-dial-in-numbers-are-currently-supported"></a>Quanti numeri di accesso esterno locali sono attualmente supportati?
 
-Quando si acquistano le licenze per le audioconferenze, all'utente vengono assegnati numeri di accesso esterno locali. I numeri di accesso esterno verranno inclusi nell'invito alla riunione. Questi numeri locali saranno disponibili solo per l'organizzazione. Il telefono assegnato all'organizzazione e tale numero viene condiviso dagli utenti all'interno dell'organizzazione abilitati per le audioconferenze. Quindi, Skype for Business o Microsoft Teams pianificate dall'utente A e da un altro utente B avranno entrambi lo stesso numero di accesso.
+Quando si acquistano le licenze per le audioconferenze, all'utente vengono assegnati numeri di accesso esterno locali. I numeri di accesso esterno verranno inclusi nell'invito alla riunione. Questi numeri locali saranno disponibili solo per l'organizzazione. Il telefono assegnato all'organizzazione e tale numero viene condiviso dagli utenti all'interno dell'organizzazione abilitati per le audioconferenze. Quindi, le Skype for Business o Microsoft Teams pianificate dall'utente A e da un altro utente B avranno entrambi lo stesso numero di accesso.
   
 I numeri di accesso esterno locali e, in alcuni casi, anche i numeri di accesso esterno internazionali del paese in cui si trova l'organizzazione, verranno inclusi nell'invito alla riunione. Se un partecipante alla riunione usa un numero diverso incluso nell'invito, sarà un numero di telefono condiviso.
   
 ## <a name="how-many-international-dial-in-numbers-does-audio-conferencing-in-microsoft-365-or-office-365-support"></a>Quanti numeri di accesso esterno internazionali supportano le audioconferenze in Microsoft 365 o Office 365 telefonia?
 
-Per un elenco corrente di paesi/aree geografiche, vedere numeri Telefono per le audioconferenze [in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md) o numeri Telefono per le audioconferenze in [Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing)
+Per un elenco corrente di paesi/aree geografiche, vedere numeri Telefono per le audioconferenze [in](phone-numbers-for-audio-conferencing-in-teams.md) Microsoft Teams o numeri Telefono per le audioconferenze [in Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing)
   
 ## <a name="can-i-set-up-local-numbers-for-audio-conferencing-from-additional-cities-in-the-country"></a>È possibile configurare i numeri locali per le audioconferenze da altre città del paese?
 
@@ -79,23 +79,23 @@ Il periodo di tempo massimo dipende dalla persona che partecipa alla riunione e 
   
 |**Partecipanti alla riunione**|**Ora di fine riunione**|
 |:-----|:-----|
-|Gli utenti hanno partecipato usando l'app Skype for Business o Microsoft Teams o hanno chiamato per accedere alla riunione.  <br/> |La riunione termina se non vengono apportate modifiche all'elenco dei partecipanti dopo 24 ore.  <br/> |
+|Gli utenti hanno aderito usando l Skype for Business app Microsoft Teams o hanno partecipato alla riunione.  <br/> |La riunione termina se non vengono apportate modifiche all'elenco dei partecipanti dopo 24 ore.  <br/> |
 |Tutti gli utenti sono connessi alla riunione, ma qualcuno ha usato un PIN per accedere alla riunione.  <br/> |La riunione termina dopo 24 ore.  <br/> |
 |Tutti gli utenti sono connessi alla riunione, ma non c'era nessuno che usava un PIN per accedere alla riunione.  <br/> | Se agli utenti anonimi è consentito avviare le riunioni, la riunione termina dopo quattro ore. Se agli utenti anonimi non è consentito avviare le riunioni e tutti i partecipanti autenticati hanno lasciato la riunione, la riunione termina 90 minuti dopo la fine dell'ultimo partecipante autenticato. <br/> |
    
 ## <a name="how-many-total-phone-participants-can-i-have-in-meetings"></a>Quanti partecipanti telefonici totali posso avere nelle riunioni?
 
-Vedere [Limiti e specifiche](limits-specifications-teams.md) per il numero totale di partecipanti consentiti nelle riunioni.
+Vedere [Limiti e specifiche per](limits-specifications-teams.md) il numero totale di partecipanti consentiti nelle riunioni.
   
 Per informazioni sui limiti delle riunioni, vedere Skype for Business [limiti online.](/office365/servicedescriptions/skype-for-business-online-service-description/skype-for-business-online-limits#bkmk_Meeting_LyncOnlineLimits)
   
 ## <a name="why-did-users-start-receiving-emails-with-their-audio-conferencing-information"></a>Perché gli utenti hanno avviato la ricezione di messaggi di posta elettronica con le informazioni relative ai servizi di audioconferenza?
 
-È stata aggiunta una nuova [](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)funzionalità che consente all'amministratore di inviare e aggiornare le informazioni sulle audioconferenze e il PIN tramite posta elettronica. Per altre [informazioni,](enable-or-disable-sending-emails-when-their-settings-change-in-teams.md) tra cui come disabilitarla, vedere Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano in Microsoft Teams o Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano [in Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change)
+È stata aggiunta una nuova [](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)funzionalità che consente all'amministratore di inviare e aggiornare le informazioni sulle audioconferenze e il PIN tramite posta elettronica. Per altre [informazioni,](enable-or-disable-sending-emails-when-their-settings-change-in-teams.md) tra cui come disabilitarla, vedere Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano in Microsoft Teams o Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano [in Skype for Business Online](/SkypeForBusiness/audio-conferencing-in-office-365/enable-or-disable-sending-emails-when-their-settings-change).
   
 ## <a name="can-audio-conferencing-be-used-by-the-users-who-are-part-of-an-on-premises-deployment-of-skype-for-business-server"></a>Le audioconferenze possono essere usate dagli utenti che fanno parte di una distribuzione locale di Skype for Business Server?
 
-Con [Meetings First,](meetings-first.md)gli Skype for Business Server utenti possono trarre vantaggio dalle riunioni Teams e Teams audioconferenze. 
+Con [Meetings First,](meetings-first.md)Skype for Business Server utenti possono trarre vantaggio dalle riunioni Teams e dalle Teams audioconferenze. 
   
 ## <a name="can-a-user-get-a-personal-conference-id"></a>Un utente può ottenere un ID conferenza personale?
 
@@ -120,10 +120,10 @@ Stiamo lavorando a una soluzione che consente all'utente di accedere e reimposta
   
 ## <a name="how-do-users-access-or-change-their-pin"></a>In che modo gli utenti accedono o modificano il PIN?
 
-Skype for Business o Microsoft Teams gli utenti possono trovare il PIN in un messaggio di posta elettronica che verrà inviato dopo la configurazione.
+Skype for Business o Microsoft Teams gli utenti possono trovare il PIN in un messaggio di posta elettronica che verrà loro inviato dopo la configurazione.
   
 > [!NOTE]
-> Teams gli utenti possono cambiare il proprio pin. C'è un collegamento nella parte inferiore dell'invito alla riunione per reimpostare il pin. 
+> Teams gli utenti possono cambiare il proprio pin. Nella parte inferiore dell'invito alla riunione è presente un collegamento per reimpostare il pin. 
   
 Stiamo lavorando a una soluzione che consente all'utente di accedere e reimpostare un PIN senza l'aiuto dell'amministratore di un'organizzazione.
   
@@ -147,7 +147,7 @@ Solo per gli organizzatori della riunione:
 
 ## <a name="can-attendees-dial-out-to-international-phone-numbers-when-they-are-in-a-skype-for-business-or-microsoft-teams-meeting"></a>I partecipanti possono effettuare chiamate in uscita a numeri di telefono internazionali durante una riunione Skype for Business o Microsoft Teams riunione?
 
-Sì, i partecipanti possono effettuare chiamate in uscita a livello internazionale e invitare altri chiamanti a una riunione Skype for Business o Microsoft Teams riunione. Vedere [Chiamata in uscita](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) da una riunione Microsoft Teams in modo che altre persone possano parteciparvi o Effettuare chiamate in uscita da una riunione di Skype for Business Online in modo che altre persone possano [parteciparvi.](/SkypeForBusiness/audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it)
+Sì, i partecipanti possono effettuare chiamate in uscita a livello internazionale e invitare altri chiamanti a una Skype for Business o Microsoft Teams riunione. Vedere [Chiamata in uscita](dialing-out-from-a-teams-meeting-so-other-people-can-join-it.md) da una riunione di Microsoft Teams in modo che altre persone possano partecipare a una riunione o Effettuare chiamate in uscita da una riunione di Skype for Business Online in modo che altre persone possano [parteciparvi.](/SkypeForBusiness/audio-conferencing-in-office-365/dialing-out-from-a-meeting-so-other-people-can-join-it)
   
 ## <a name="how-does-a-skype-for-business-or-microsoft-teams-user-schedule-a-meeting-with-audio-conferencing-meeting-details"></a>In che modo un utente Skype for Business o Microsoft Teams pianificare una riunione con i dettagli delle riunioni di audioconferenza?
 
@@ -157,7 +157,7 @@ Quando a un utente viene assegnata una licenza di **audioconferenza** e l'utente
 
 Pianificare una riunione a cui tutti i partecipanti potranno accedere usando un telefono per effettuare l'accesso non è diversa dalla pianificazione di una normale riunione online. Esistono tuttavia due modi per avviare una riunione in cui tutti i partecipanti usano un telefono per effettuare l'accesso:
 
-- **Opzione #1:** per impostazione predefinita, se l'organizzatore della riunione e tutti i partecipanti stanno partecipando a una riunione usando un telefono, l'organizzatore della riunione deve immettere il PIN di audioconferenza per avviarla. Ai chiamanti viene chiesto se vogliono eseguire l'autenticazione come organizzatore di una determinata riunione quando comporre il numero di telefono di una riunione online. Tutti i partecipanti che aderiscono alla riunione tramite accesso esterno prima dell'inizio dell'organizzatore verranno inseriti nella sala d'attesa e ascolteranno la musica in attesa. Per Skype for Business riunioni, una volta che l'organizzatore lo ha avviato con l'immissione del PIN per i servizi di audioconferenza, tutti i partecipanti nella sala d'attesa si uniranno automaticamente alla riunione. Per Microsoft Teams riunioni, i partecipanti si uniranno alla riunione in base al valore dell'impostazione di ammetta automaticamente persone nei criteri di riunione dell'organizzatore.
+- **Opzione #1:** per impostazione predefinita, se l'organizzatore della riunione e tutti i partecipanti stanno partecipando a una riunione usando un telefono, l'organizzatore della riunione deve immettere il PIN di audioconferenza per avviarla. Ai chiamanti viene chiesto se vogliono eseguire l'autenticazione come organizzatore di una determinata riunione quando comporre il numero di telefono di una riunione online. Tutti i partecipanti che aderiscono alla riunione tramite accesso esterno prima dell'inizio dell'organizzatore verranno inseriti nella sala d'attesa e ascolteranno la musica in attesa. Per Skype for Business riunioni, una volta che l'organizzatore lo ha avviato con l'immissione del PIN per i servizi di audioconferenza, tutti i partecipanti nella sala d'attesa si uniranno automaticamente alla riunione. Per Microsoft Teams riunioni, i partecipanti si uniranno alla riunione in base al valore dell'impostazione Ammetti automaticamente persone nei criteri di riunione dell'organizzatore.
 
 - **Opzione #2:** l'impostazione "Consenti ai chiamanti non autenticati di essere i primi utenti di una riunione" è disabilitata per impostazione predefinita. Se l'impostazione è abilitata per un determinato organizzatore, tutte le riunioni pianificate dall'organizzatore possono essere avviate prima che l'organizzatore inseri il PIN di audioconferenza. Quando questa impostazione è abilitata, la riunione inizierà non appena il primo partecipante vi partecipa tramite un numero di telefono esterno e il primo partecipante non verrà inserito nella sala d'attesa. Per altre informazioni, vedere Gestire le impostazioni di [audioconferenza](manage-the-audio-conferencing-settings-for-a-user-in-teams.md) per un utente in Microsoft Teams o Gestire le impostazioni di audioconferenza per un utente in Skype for Business [Online.](/SkypeForBusiness/audio-conferencing-in-office-365/manage-the-audio-conferencing-settings-for-a-user)
   

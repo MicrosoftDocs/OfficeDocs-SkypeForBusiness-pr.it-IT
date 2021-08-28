@@ -10,23 +10,23 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 474a5e4a-9479-4e86-8607-b9f41a0fa648
-description: Leggere questo argomento per informazioni su come distribuire l'aspetto della linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
-ms.openlocfilehash: de0b0d54fed0b76c1e20b67b743dfef2c4f784589b2eb3867529201493242e32
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Leggere questo argomento per informazioni su come distribuire l'Skype for Business Server cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
+ms.openlocfilehash: 43c792f7a63d3d58c734036e949250a85a621438
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314912"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58591910"
 ---
 # <a name="deploy-shared-line-appearance-in-skype-for-business-server-2015"></a>Distribuire l'aspetto delle righe condivise in Skype for Business Server 2015
 
-Leggere questo argomento per informazioni su come distribuire l'aspetto della linea condivisa in Skype for Business Server 2015, aggiornamento cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
+Leggere questo argomento per informazioni su come distribuire l'Skype for Business Server cumulativo di novembre 2015. Sla è una funzionalità per la gestione di più chiamate su un numero specifico denominato numero condiviso.
 
 Per ulteriori informazioni su questa funzionalità, vedere [Plan for Shared Line Appearance in Skype for Business Server 2015.](../../plan-your-deployment/enterprise-voice-solution/shared-line-appearance.md)
 
@@ -68,7 +68,7 @@ Shared Line Appearance (SLA) è una nuova funzionalità Skype for Business Serve
 
     Il cmdlet Set-CsSlaConfiguration contrassegna l'account VoIP aziendale SLAGroup1 come entità sla e il numero di SLAGroup1 diventa il numero per il gruppo sla. Tutte le chiamate a SLAGroup1 chiameranno l'intero gruppo sla.
 
-    Nell'esempio seguente viene creato un gruppo di contratti di servizio per un utente di VoIP aziendale esistente, SLAGroup1, e viene utilizzato il numero assegnato a SLAGroup1 come numero della riga principale del contratto di servizio.
+    Nell'esempio seguente viene creato un gruppo di contratti di servizio per un utente di VoIP aziendale esistente, SLAGroup1, e viene utilizzato il numero assegnato a SLAGroup1 come numero della linea principale del contratto di servizio.
 
     Il comando imposta il numero massimo di chiamate simultanee per il nuovo gruppo di contratti di servizio su 3 e per le chiamate in eccesso per ascoltare un segnale di occupato:
 
@@ -96,7 +96,7 @@ Shared Line Appearance (SLA) è una nuova funzionalità Skype for Business Serve
 
     Ripetere il cmdlet per ogni utente che si desidera aggiungere al gruppo. Gli utenti possono appartenere solo a un singolo gruppo di contratti di servizio.
 
-### <a name="configure-the-sla-group-busy-option"></a>Configurare l'opzione disponibilità del gruppo sla
+### <a name="configure-the-sla-group-busy-option"></a>Configurare l'opzione disponibilità del gruppo di contratti di servizio
 
 - Configurare l'opzione disponibilità del gruppo sla utilizzando il cmdlet [Set-CsSlaConfiguration:](/powershell/module/skype/set-csslaconfiguration?view=skype-ps)
 

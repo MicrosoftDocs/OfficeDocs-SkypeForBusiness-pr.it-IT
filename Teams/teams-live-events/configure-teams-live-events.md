@@ -9,7 +9,7 @@ ms.service: msteams
 ms.reviewer: sonua
 audience: admin
 search.appverid: MET150
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.liveevents.settings
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 604f33720b62d6ea675b7dc4604c3c493f88341be5a24e76c1474f6e06025b66
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f8eccc6e885cef67d4f6240483d3995df88d7cfc
+ms.sourcegitcommit: 25fd720c008dcf1573344e50d736131a20c3ac7d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332378"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "58683310"
 ---
 # <a name="configure-live-event-settings-in-microsoft-teams"></a>Configurare le impostazioni degli eventi live in Microsoft Teams
 
@@ -63,11 +63,11 @@ Se è stata acquistata e configurata una soluzione SDN (Software Defined Network
 ### <a name="an-icon-showing-the-microsoft-teams-logo-using-the-microsoft-teams-admin-center"></a>![Icona che mostra il logo di Microsoft Teams](../media/teams-logo-30x30.png) Usando l'interfaccia di amministrazione di Microsoft Teams.
 
 1. Nel riquadro di spostamento sinistro passare a **Impostazioni evento live**  >  **riunioni.**
-2. In **Provider di distribuzione video di terze parti** completare le operazioni seguenti: 
+2. In **Provider di distribuzione video di terze parti** completare quanto segue: 
 
     ![Impostazioni del provider di distribuzione video di terze parti nell'interfaccia di amministrazione](../media/teams-live-events-settings-distribution-provider.png "Schermata delle impostazioni del provider di distribuzione video di terze parti per gli eventi live")
 
-    - **Usare un provider di distribuzione di terze parti** Attivare questa opzione per abilitare il provider di distribuzione video di terze parti.
+    - **Usare un provider di distribuzione di terze parti** Attiva questa opzione per abilitare il provider di distribuzione video di terze parti.
     - **Nome provider SDN** Scegliere il provider in uso.
     - **Codice di licenza del provider** Immettere l'ID licenza ottenuto dal contatto del provider.
     - **URL modello API SDN** Immettere l'URL del modello API ottenuto dal contatto del provider.
@@ -90,6 +90,10 @@ Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $T
 **Ramp** 
 ```PowerShell
 Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $True -SdnProviderName ramp -SdnRuntimeConfiguration "{Configuration provided by RAMP}"
+```
+**Peer5**
+```PowerShell
+Set-CsTeamsMeetingBroadcastConfiguration -AllowSdnProviderForBroadcastMeeting $True -SdnProviderName peer5 -SdnLicenseId {peer5CustomerId}
 ```
 
 Per altre informazioni, vedere [Set-CsTeamsMeetingBroadcastConfiguration](/powershell/module/skype/set-csteamsmeetingbroadcastconfiguration?view=skype-ps).

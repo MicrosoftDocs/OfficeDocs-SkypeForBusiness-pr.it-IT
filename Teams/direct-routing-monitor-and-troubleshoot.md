@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: troubleshooting
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come monitorare e risolvere i problemi di configurazione del routing diretto, inclusi i controller dei bordi delle sessioni, i componenti di routing diretto e i trunk di Telecom.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 534634beb302a5c7027b26a8fdaa305b824cf4efd3930d81f3c6b4d08559c32c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 537df3fb87386914b88da34dcdd5717cfd5700dc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618502"
 ---
 # <a name="monitor-and-troubleshoot-direct-routing"></a>Monitorare e risolvere i problemi di Instradamento diretto
 
@@ -48,7 +48,7 @@ Il diagramma seguente mostra un esempio della configurazione:
 
 ![Esempio di configurazione delle opzioni SIP](media/sip-options-config-example.png)
 
-Quando un utente effettua una chiamata al numero +1 425, \<any seven digits> Direct Routing valuta il percorso. Ci sono due SBC nel percorso: sbc1.contoso.com e sbc2.contoso.com. Entrambi i SBC hanno la stessa priorità nel percorso. Prima di scegliere un SBC, il meccanismo di routing valuta l'integrità degli SBC in base all'ultima volta in cui il SBC ha inviato le opzioni SIP. 
+Quando un utente effettua una chiamata al numero +1 425, \<any seven digits> Direct Routing valuta il percorso. Ci sono due SBC nel percorso: sbc1.contoso.com e sbc2.contoso.com. Entrambi i SBC hanno la stessa priorità nel percorso. Prima di scegliere un SBC, il meccanismo di routing valuta l'integrità degli SBC in base all'ultima volta in cui il servizio SBC ha inviato le opzioni SIP. 
 
 Un SBC è considerato integro se le statistiche al momento dell'invio della chiamata mostrano che SBC invia opzioni ogni minuto.  
 
@@ -66,11 +66,11 @@ L'abbassamento di livello indica che il valore SBC non verrà provato prima. Ad 
 
 Se sbc1.contoso.com le opzioni SIP non vengono inviate a intervalli regolari come descritto in precedenza, viene abbassata di livello. Quindi, sbc2.contoso.com la chiamata. Se sbc2.contoso.con non riesce a recapitare la chiamata, il sbc1.contoso.com (abbassato di livello) viene riprovato prima che venga generato un errore. 
 
-Se due (o più) SBC in un percorso sono considerati integri e uguali, viene applicata una Fisher-Yates casuale per distribuire le chiamate tra gli SBC.
+Se due (o più) SBC in un percorso sono considerati integri e uguali, viene applicato Fisher-Yates shuffle per distribuire le chiamate tra gli SBC.
 
 ## <a name="monitor-call-quality-analytics-dashboard-and-sbc-logs"></a>Monitorare il dashboard di Call Quality Analytics e i log SBC 
  
-In alcuni casi, in particolare durante l'associazione iniziale, potrebbero verificarsi problemi relativi alla configurazione errata dei cluster SBC o del servizio di routing diretto. 
+In alcuni casi, in particolare durante l'associazione iniziale, potrebbero verificarsi problemi relativi a una configurazione errata degli SBC o del servizio di routing diretto. 
 
 Per monitorare la configurazione, è possibile usare gli strumenti seguenti:  
  
@@ -85,4 +85,4 @@ In caso di errori di chiamata, Call Analytics fornisce codici SIP standard per f
 
 ![Codice SIP di esempio per l'errore di chiamata](media/failed-response-code.png)
 
-Tuttavia, Call Analytics può essere utile solo quando le chiamate raggiungono i componenti interni di Direct Routing e non riescono. In caso di problemi con l'associazione SBC o problemi in cui "Invito" SIP è stato rifiutato (ad esempio, il nome dell'FQDN del trunk non è configurato correttamente), Call Analytics non sarà di aiuto. In questo caso, fare riferimento ai log SBC. Il routing diretto invia una descrizione dettagliata dei problemi agli SBC; questi problemi possono essere letti dai log SBC.
+Tuttavia, Call Analytics può essere utile solo quando le chiamate raggiungono i componenti interni di Direct Routing e non riescono. In caso di problemi con l'associazione SBC o problemi in cui "Invito" SIP è stato rifiutato (ad esempio, il nome dell'FQDN del trunk non è configurato correttamente), Call Analytics non aiuterà. In questo caso, fare riferimento ai log SBC. Il routing diretto invia una descrizione dettagliata dei problemi agli SBC; questi problemi possono essere letti dai log SBC.

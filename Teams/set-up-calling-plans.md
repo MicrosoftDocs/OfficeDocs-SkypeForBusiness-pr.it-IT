@@ -17,35 +17,35 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 - LIL_Placement
 - seo-marvel-mar2020
-description: Scopri come configurare i Piani per le chiamate, inclusi i piani di visualizzazione disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & località.
-ms.openlocfilehash: 0eedd72947c4969fc7f42d75d5241ca38c69e0c2e22172444a0d349b6a77b611
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Scopri come configurare i Piani per le chiamate, tra cui visualizzare i piani disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & località.
+ms.openlocfilehash: 0e44c9ec30efef26840bcb79582186ed5e0e3678
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54348661"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58618482"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
-Le chiamate ad altri utenti Teams sono gratuite, ma se si vuole che gli utenti siano in grado di chiamare telefoni all'esterno dell'azienda, ottenere un piano per chiamate nazionali o un piano per chiamate internazionali in Microsoft 365 o Office 365. È facile configurare Piani per chiamate per la tua azienda.  Per altre informazioni sui Piani per chiamate, vedere [Quale piano di chiamata è più giusto per te?](calling-plan-landing-page.md).
+Le chiamate ad altri utenti Teams sono gratuite, ma se si vuole che gli utenti possano chiamare telefoni esterni all'azienda, è possibile ottenere un piano per chiamate nazionali o un piano per chiamate internazionali in Microsoft 365 o Office 365. È facile configurare Piani per chiamate per la tua azienda.  Per altre informazioni sui Piani per chiamate, vedere [Quale piano di chiamata è più giusto per te?](calling-plan-landing-page.md).
 
 ## <a name="step-1-find-out-if-calling-plans-are-available-in-your-countryregion"></a>Passaggio 1: Scopri se i Piani per chiamate sono disponibili nel tuo paese/area geografica
-Passare [](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) a Disponibilità per paese e area geografica per i piani per audioconferenze e chiamate e selezionare il paese o l'area geografica per ottenere informazioni sulla disponibilità dei piani per chiamate, oltre a informazioni su audioconferenza, Sistema telefonico, numeri a pagamento e a pagamento e crediti per le comunicazioni.
+Passare [](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) a Disponibilità per paese e area geografica per i piani per audioconferenze e chiamate e selezionare il paese o l'area geografica per ottenere informazioni sulla disponibilità dei piani per chiamate, oltre a informazioni su Audioconferenza, Sistema telefonico, numeri a pagamento e a pagamento e Crediti comunicazioni.
 
-Se i Piani per chiamate non sono disponibili per il paese o l'area geografica, è consigliabile usare Il routing diretto per connettere l'infrastruttura di telefonia locale a Sistema telefonico.  Per altre informazioni, vedere Sistema telefonico [routing diretto](direct-routing-landing-page.md).
+Se Piani per chiamate non sono disponibili per il paese o l'area geografica, è consigliabile usare Il routing diretto per connettere l'infrastruttura di telefonia locale a Sistema telefonico.  Per altre informazioni, vedere Sistema telefonico [routing diretto](direct-routing-landing-page.md).
   
 ## <a name="step-2-buy-and-assign-licenses"></a>Passaggio 2: Acquistare e assegnare licenze
 1. Se la Sistema telefonico non è inclusa nel piano Microsoft 365 o Office 365, potrebbe essere necessario  acquistare Sistema telefonico licenze per i componenti aggiuntivi. Dopo aver acquistato **Sistema telefonico** licenze, acquistare Piani per chiamate per Microsoft 365 [o Office 365](calling-plans-for-office-365.md). Vedere [Microsoft Teams licenze per i componenti](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)aggiuntivi e acquistare le licenze e il piano. 
     
     > [!TIP]
-    > **Sistema telefonico** licenze e piani per chiamate in Microsoft 365 o Office 365 insieme, quindi per visualizzare l'opzione per l'acquisto di Piani per chiamate, è necessario prima avere le licenze Sistema telefonico **chiamate.**
+    > **Sistema telefonico** licenze e piani per chiamate in Microsoft 365 o Office 365 insieme, quindi per visualizzare l'opzione per l'acquisto di Piani per chiamate, devi prima avere le licenze Sistema telefonico **chiamate.**
   
 2. First assign the licenses, and then assign a Calling Plan to the people in your organization. Vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
     
@@ -54,7 +54,7 @@ Esistono tre modi per ottenere nuovi numeri utente:
 
 - **Usare l'Teams di amministrazione.** Per alcuni paesi/aree geografiche, è possibile ottenere i numeri per gli utenti usando l'interfaccia di amministrazione di Teams, vedere Ottenere numeri di [telefono per gli utenti.](getting-phone-numbers-for-your-users.md)
     
-- **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico corrente Microsoft 365 o Office 365. Per altre informazioni, vedere [Trasferire numeri di telefono Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o Gestire i numeri di telefono per [l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) 
+- **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico corrente Microsoft 365 o Office 365. Per altre informazioni, vedere [Trasferire i numeri di telefono Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o Gestire i numeri di telefono per [l'organizzazione.](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md) 
   
 - **Utilizzare un modulo di richiesta per nuovi numeri.** A volte (a seconda del paese/area geografica) non è possibile ottenere i nuovi numeri di telefono usando l'interfaccia di amministrazione di Teams oppure sono necessari numeri di telefono o codici di area specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
 
