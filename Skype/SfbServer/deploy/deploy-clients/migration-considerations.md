@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: df9f33b6-0360-4354-b651-bd35da533e33
 description: Leggere questo argomento per informazioni su come distribuire Skype Room System in un ambiente con più versioni di Skype for Business Server e Lync Server.
-ms.openlocfilehash: bcbb8a14cf1d998c68f83875bce25935d73e92b7a755cd370526a65aef202e36
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5a158c3f0797bb3d0377762ea2876dbe5b9d26bb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310045"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598160"
 ---
 # <a name="skype-room-system-migration-considerations"></a>Skype Considerazioni sulla migrazione del sistema sala
  
@@ -27,9 +27,9 @@ Leggere questo argomento per informazioni su come distribuire Skype Room System 
 
 In questa sezione vengono fornite indicazioni se si distribuisce Skype Room System in un ambiente multi-pool che include diverse versioni di Skype for Business Server o Lync Server. 
   
-Il componente User Replicator (UR) in Lync Server ottiene gli oggetti utente da Active Directory e li inserisce nel database di SQL Server back-end di Lync Server. Solo l'UR in Lync Server 2013 è a conoscenza Skype oggetti di sistema room. L'UR nelle versioni precedenti di Lync Server e Office Communications Server non rilevava gli attributi di Active Directory che designavano gli oggetti LRS e pertanto non ne era a conoscenza. 
+Il componente User Replicator (UR) in Lync Server ottiene gli oggetti utente da Active Directory e li inserisce nel database di SQL Server back-end di Lync Server. Solo l'UR in Lync Server 2013 è a conoscenza Skype di sistema room. L'UR nelle versioni precedenti di Lync Server e Office Communications Server non rilevava gli attributi di Active Directory che designavano gli oggetti LRS e pertanto non ne era a conoscenza. 
   
-Se un account di sistema sala Skype tenta di accedere a Lync ed esegue l'individuazione automatica in base al record SRV o al record DNS A e se tali account puntano a una versione precedente di Lync Server o Office Communications Server, LRS riceverà una risposta 404 Not Found dal pool legacy. Il pool legacy non sarà in grado di reindirizzare Skype Room System al pool principale di Lync Server 2013. 
+Se un account di sistema sala di Skype tenta di accedere a Lync ed esegue l'individuazione automatica in base al record SRV o al record DNS A e se tali account puntano a una versione precedente di Lync Server o Office Communications Server, LRS riceverà una risposta 404 Not Found dal pool legacy. Il pool legacy non sarà in grado di reindirizzare Skype room al pool principale di Lync Server 2013. 
   
 È possibile risolvere il problema con le opzioni seguenti: 
   
@@ -41,11 +41,11 @@ Se un account di sistema sala Skype tenta di accedere a Lync ed esegue l'individ
     
 ## <a name="skype-room-system-interoperability-with-a-lync-server-2010-pool"></a>Skype Interoperabilità del sistema sala con un pool di Lync Server 2010
 
-Durante la migrazione, se un utente che si trova in un pool di Lync Server 2010 pianifica una riunione e invita l'account di sistema sala Skype, il client di sistema sala Skype avrà funzionalità limitate durante la partecipazione alla riunione. 
+Durante la migrazione, se un utente che si trova in un pool di Lync Server 2010 pianifica una riunione e invita l'account di sistema sala Skype, il client Skype Room System avrà funzionalità limitate durante la partecipazione alla riunione. 
   
-Quando il client Skype Room System partecipa a una conferenza telefonica pianificata organizzata da un utente in Lync Server 2010, Skype Room System presenta le limitazioni seguenti durante le riunioni: 
+Quando il client Skype Room System partecipa a una conferenza telefonica pianificata organizzata da un utente in Lync Server 2010, Skype Room System presenta le limitazioni seguenti in riunione: 
   
-- Skype Room System non può visualizzare la raccolta video multi-vista.
+- Skype Room System non è in grado di visualizzare la raccolta video multi-vista.
     
 - Se il Skype del sistema room è il relatore, non può applicare il blocco video ai partecipanti.
     

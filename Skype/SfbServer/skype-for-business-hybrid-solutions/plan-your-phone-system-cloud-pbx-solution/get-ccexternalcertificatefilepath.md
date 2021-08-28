@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 62fdc9cc-e82e-463f-b8b3-05d5c6482ea2
 description: Il cmdlet Get-CcExternalCertificateFilePath restituisce il percorso del file di certificato esterno per la Skype for Business Cloud Connector Edition distribuzione. L'utente prepara il certificato.
-ms.openlocfilehash: 3f0a3bc761beb1a2aa1c88bfabf509e4aef17b012f52e04be1ec5944df73ba9c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9b06958d68d73bc68fc0fda4e681af2e7b9b4f9e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315382"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622038"
 ---
 # <a name="get-ccexternalcertificatefilepath"></a>Get-CcExternalCertificateFilePath
  
@@ -52,7 +52,7 @@ Get-CcExternalCertificateFilePath -Target MediationServer
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Durante la distribuzione o durante la modifica della topologia, è necessario specificare il percorso per il certificato del server perimetrale e, facoltativamente, per il Mediation Server. Il certificato per mediation server è obbligatorio se verrà utilizzato TLS tra il gateway (s) e il Mediation Server. Per modificare il percorso, utilizzare il cmdlet Set-CcExternalCertificateFilePath.
+Durante la distribuzione o durante la modifica della topologia, è necessario specificare il percorso per il certificato del server perimetrale e, facoltativamente, per il Mediation Server. Il certificato per Mediation Server è obbligatorio se verrà utilizzato TLS tra il gateway (s) e il Mediation Server. Per modificare il percorso, utilizzare il cmdlet Set-CcExternalCertificateFilePath.
   
 ## <a name="parameters"></a>Parametri
 <a name="DetailedDescription"> </a>

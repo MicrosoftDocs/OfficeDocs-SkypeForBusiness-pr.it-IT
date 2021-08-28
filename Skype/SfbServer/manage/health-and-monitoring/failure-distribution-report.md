@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 365c7beb-24d4-40f5-92e7-4978b9688916
 description: 'Riepilogo: informazioni sul Rapporto distribuzione errori in Skype for Business Server.'
-ms.openlocfilehash: 6b6bedff59f73befbaa70dbc0eb4bf1b04b100022a7ca20c41245a07a082d4e3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e2b925a84237ed0ef88012e63f9e5db4b561dd27
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344725"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636060"
 ---
 # <a name="failure-distribution-report-in-skype-for-business-server"></a>Rapporto distribuzione errori in Skype for Business Server
  
@@ -49,11 +49,11 @@ Queste categorie possono essere utilizzate per localizzare con precisione il pro
   
 - [Rapporto errori principali in Skype for Business Server](top-failures-report.md)
     
-- [Rapporto di diagnostica conferenze Skype for Business Server](conference-diagnostic-report.md)
+- [Rapporto di diagnostica conferenze in Skype for Business Server](conference-diagnostic-report.md)
     
 - [Rapporto di diagnostica attività peer-to-peer in Skype for Business Server](peer-to-peer-activity-diagnostic-report.md)
     
-Nel Rapporto distribuzione errori è possibile fare clic su una delle metriche seguenti per visualizzare il Rapporto elenco errori [in Skype for Business Server:](failure-list-report.md)
+Nel Rapporto distribuzione errori è possibile fare clic su una delle metriche seguenti per visualizzare il Rapporto elenco errori [in Skype for Business Server](failure-list-report.md):
   
 - Motivi diagnostica principali (sessioni)
     
@@ -95,7 +95,7 @@ Nella tabella riportata di seguito vengono elencati i filtri che è possibile ut
 |**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**Pool** <br/> |Nome di dominio completo (FQDN) del pool di registrazione o del server perimetrale. È possibile selezionare un singolo pool o fare clic su **[Tutti]** per visualizzare dati per tutti i pool. Questo elenco a discesa viene popolato automaticamente in base ai record del database.<br/> |
 |**Tipo di attività** <br/> | Tipo di attività in base al quale applicare il filtro. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Peer-to-peer <br/>  Conferenza <br/> |
-|**Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Operazione completata <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
+|**Categoria sessione** <br/> | Indica l'esito dell'attività in questione. Selezionare uno dei valori seguenti: <br/>  [All] <br/>  Completato <br/>  Errore previsto <br/>  Errore imprevisto <br/>  Per "errore previsto" si intende un errore che si prevede si verificherà. Se ad esempio un utente ha impostato il proprio stato su Non disturbare, è previsto che le chiamate effettuate per tale utente abbiano esito negativo. Per "errore imprevisto" si intende un errore che si verifica in un sistema considerato integro. Una chiamata ad esempio non dovrebbe interrompersi quando il chiamante viene messo in attesa. Se la chiamata si interrompe, l'evento verrà contrassegnato come errore imprevisto. <br/> |
 |**ID diagnostica** <br/> |Identificatore univoco nel formato di un'intestazione ms-diagnostics associato a un messaggio SIP in cui spesso vengono fornite informazioni utili per la risoluzione dei problemi. Le intestazioni di diagnostica sono facoltative (è possibile che in alcune sessioni SIP non siano incluse queste intestazioni) e gli ID diagnostica sono spesso indicati solo per sessioni in cui si sono verificati problemi di un determinato tipo.  <br/> |
    
 ## <a name="metrics-for-top-diagnostic-reasons"></a>Metrica dei motivi di diagnostica principali

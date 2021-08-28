@@ -14,18 +14,18 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Optimization
 description: Scopri come viene classificata la qualità dello stream nel Call Quality Dashboard (CQD) per Microsoft Teams e Skype for Business Online.
-ms.openlocfilehash: a717597151f0d933a8bbea49e6e71d070b063885
-ms.sourcegitcommit: 81f1a113a33c7ea8d2256144544d0e34cd64d576
+ms.openlocfilehash: f4c4fb72d15ce79c60c2400b068898ad463f1b07
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "58505424"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598340"
 ---
 # <a name="stream-classification-in-call-quality-dashboard-cqd"></a>Classificazione dei flussi in Call Quality Dashboard (CQD)
 
@@ -94,7 +94,7 @@ In CQD, un  flusso viene contrassegnato come Non classificato quando la connetti
 
 Per verificare la presenza di errori di connettività ICE, esaminare le dimensioni "First Connectivity Ice" e "Second Connectivity Ice" per un valore "FAILED". Se uno dei due valori indica un errore, lo stream viene contrassegnato _come Unclassified_.
 
-Se la connettività ICE ha avuto esito positivo per uno stream _non_ classificato, è probabile che lo stream sia considerato _Non_ classificato perché le metriche dello stream chiave non sono state segnalate. Ci sono alcuni motivi per cui queste metriche potrebbero non essere riportate:
+Se la connettività ICE ha avuto esito positivo per un flusso _non_ classificato, è probabile che lo stream sia considerato _non_ classificato perché le metriche del flusso chiave non sono state segnalate. Ci sono alcuni motivi per cui queste metriche potrebbero non essere riportate:
 
 - **I report QoE non sono stati** ricevuti: le metriche usate per la classificazione vengono riportate in un report QoE inviato al termine di una chiamata. Se il report non viene prodotto, ad esempio perché alcuni endpoint di terze parti potrebbero non inviare QoE o non è stato possibile inviarlo, ad esempio a causa di un'interruzione di rete, CQD non è in grado di classificare lo stream.
 

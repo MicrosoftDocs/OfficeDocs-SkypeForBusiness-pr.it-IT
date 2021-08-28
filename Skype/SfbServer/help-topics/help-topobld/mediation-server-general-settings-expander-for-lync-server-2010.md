@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.MediationServerGeneralSettingsExpander2010
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 48e434c1-0c3c-4502-9441-c0a3c340f51f
 description: 'In questa finestra di dialogo è possibile modificare le proprietà dei Mediation Server. Sul lato sinistro è presente un insieme di collegamenti rapidi che consentono di accedere alle impostazioni delle sezioni Generale, Hop successivo e Gateway PSTN. In ogni sezione sono disponibili le impostazioni seguenti:'
-ms.openlocfilehash: 87eda891ae5c9e19a9a54e000b85b62e46c077d6a4c90318c9372fe6e887ecaa
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 43fb20304a078c7d51024153e7a725992fb95280
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344785"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612425"
 ---
 # <a name="mediation-server-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni di Mediation Server per Lync Server 2010
 
@@ -34,7 +34,7 @@ In questa finestra di dialogo è possibile modificare le proprietà dei Mediatio
 
   **Hop successivo**:
 
-- **Selezione hop successivo:** selezionare da un elenco il Front End Server o il pool Front End da utilizzare come percorso per il Mediation Server da utilizzare per comunicare con la distribuzione.
+- **Selezione hop successivo**: selezionare da un elenco il Front End Server o il pool Front End da utilizzare come percorso per il Mediation Server da utilizzare per comunicare con la distribuzione.
 
   **Gateway PSTN**:
 

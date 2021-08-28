@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.UserEdit
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e687e12e-efae-4b8c-a716-c29c41ee7b75
 description: "Per saperne di più: fare clic sul collegamento all'attività che si desidera eseguire."
-ms.openlocfilehash: 74f06d160236614de14f424086c89b2c1430efaed1fd71db6ce129631485a538
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: edec3292e5495f299160887d703fe52cce1d9deb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54305588"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596760"
 ---
 # <a name="users-edit-user"></a>Utenti: modificare utente
 
@@ -28,9 +28,9 @@ Per saperne di più: fare clic sul collegamento all'attività che si desidera es
 
 - [Abilitare o disabilitare gli utenti per Lync Server 2010](/previous-versions/office/lync-server-2013/lync-server-2013-disable-or-re-enable-user-account-for-lync-server)
 
-- [Abilitare gli utenti VoIP aziendale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)
+- [Abilitare gli utenti per VoIP aziendale in Skype for Business Server 2015](../../deploy/deploy-enterprise-voice/enable-users-for-enterprise-voice.md)
 
-- [Assegnare criteri di conferenza per modificare l'esperienza di riunione predefinita di un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-conferencing-policy)
+- [Assegnare un criterio di conferenza per modificare l'esperienza di riunione predefinita di un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-conferencing-policy)
 
 - [Specificare le versioni client supportate per l'accesso da un utente](/previous-versions/office/lync-server-2013/lync-server-2013-assign-a-per-user-client-version-policy)
 

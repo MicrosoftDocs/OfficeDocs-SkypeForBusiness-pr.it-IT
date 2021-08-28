@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Licensing
 description: 'Impara come assegnare le licenze di Skype for Business per Sistema telefonico, Audioconferenza, Piani di chiamata e Credito per la comunicazione. '
-ms.openlocfilehash: 61d8eca21fec85f7f729e0d0de9cc5d43fd5ca96567e2abe49cf7b6b5f651500
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8e43bba8970e03fced61620fff7b63eed893484e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281329"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598280"
 ---
 # <a name="assign-skype-for-business-licenses"></a>Assegnare licenze di Skype for Business
 
@@ -35,7 +35,7 @@ ms.locfileid: "54281329"
 Questo articolo fornisce suggerimenti sull'assegnazione di licenze agli utenti per funzionalità come audioconferenze, Sistema telefonico e piani per chiamate. Vengono inoltre forniti gli script per assegnare le licenze in blocco.
 
 > [!IMPORTANT]
-> Vedere Skype for Business licenze per i componenti aggiuntivi per informazioni sulle  licenze da acquistare e su come acquistarle, [a](skype-for-business-and-microsoft-teams-add-on-licensing.md) seconda del piano di Microsoft 365 o Office 365, in modo che gli utenti osercitino audioconferenza, numeri a numero verde e la possibilità di chiamare numeri di telefono esterni all'azienda.
+> Vedere Skype for Business licenze per i componenti aggiuntivi per informazioni sulle  licenze da acquistare e su come acquistarle, [a](skype-for-business-and-microsoft-teams-add-on-licensing.md) seconda del piano di Microsoft 365 o Office 365, in modo che gli utenti osercitino l'audioconferenza, i numeri a numero verde e la possibilità di chiamare numeri di telefono al di fuori dell'azienda.
 
 
 ## <a name="phone-system-and-calling-plans-tips-and-scripts-for-assigning-licenses"></a>Sistema telefonico e Piani per chiamate: suggerimenti e script per l'assegnazione delle licenze
@@ -44,7 +44,7 @@ Cosa è necessario sapere prima di assegnare licenze per audioconferenza, Sistem
 
 - **Usi la connettività PSTN locale per utenti ibridi?** In questo caso, devi assegnare soltanto una licenza **Sistema telefonico**. **NON** dovrai invece assegnare un Piano per chiamate.
 
-- **Latenza** dopo l'assegnazione delle licenze: a causa della latenza tra Microsoft 365 o Office 365 e Skype for Business Online, l'assegnazione di un piano per chiamate a un utente può richiedere fino a 24 ore dopo l'assegnazione di una licenza. Se dopo 24 ore all'utente non è assegnato un piano per chiamate, contattare il supporto per i prodotti aziendali [- Guida per gli amministratori.](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
+- **Latenza** dopo l'assegnazione delle licenze: a causa della latenza tra Microsoft 365 o Office 365 e Skype for Business Online, l'assegnazione di un piano per chiamate a un utente dopo l'assegnazione di una licenza può richiedere fino a 24 ore. Se dopo 24 ore all'utente non è assegnato un piano per chiamate, contattare il supporto per i prodotti aziendali [- Guida per gli amministratori.](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)
 
 - **Messaggi d'errore**: se non hai acquistato il numero corretto di licenze, verrà visualizzato un messaggio di errore. Se è necessario acquistare altre licenze di Piani per chiamate, scegli **Acquista altro**.
     
@@ -129,7 +129,7 @@ I passaggi sono gli stessi dell'assegnazione di una Microsoft 365 o Office 365 l
 
 ### <a name="how-to-assign-audio-conferencing-licenses-in-bulk"></a>Come assegnare licenze di Audioconferenza in blocco
 
-1. Scaricare e installare [assistente Microsoft Online Services Sign-In per professionisti IT RTW](https://go.microsoft.com/fwlink/?LinkId=625123).
+1. Scaricare e installare [l Microsoft Online Services Sign-In Assistant per professionisti IT RTW](https://go.microsoft.com/fwlink/?LinkId=625123).
 
 2. Scarica e installa il **Modulo di Windows Azure Active Directory.** Consulta [Gestire Azure AD tramite Windows PowerShell](/previous-versions/azure/jj151815(v=azure.100)) per ottenere istruzioni per il download e la sintassi del cmdlet.
 
@@ -198,7 +198,7 @@ I passaggi sono gli stessi dell'assegnazione di una Microsoft 365 o Office 365 l
 
 I passaggi sono gli stessi dell'assegnazione di una Microsoft 365 o Office 365 licenza. Vedere [Assegnare o rimuovere licenze per Microsoft 365 per le aziende.](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc)
 
-### <a name="how-to-assign-communications-credits-licenses-in-bulk"></a>Come assegnare licenze di Crediti comunicazioni in blocco
+### <a name="how-to-assign-communications-credits-licenses-in-bulk"></a>Come assegnare licenze crediti comunicazioni in blocco
 
 Guarda lo script di esempio per l'assegnazione delle licenze di **Audioconferenza**. Aggiornalo con le informazioni per l'assegnazione di licenze di **Crediti comunicazioni**.
 

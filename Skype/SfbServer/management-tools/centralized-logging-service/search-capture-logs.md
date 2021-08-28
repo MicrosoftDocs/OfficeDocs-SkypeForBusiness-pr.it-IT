@@ -10,16 +10,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1b75b218-d84f-47a7-8a0a-b7e016b1cc79
 description: 'Riepilogo: informazioni su come cercare e leggere i registri di acquisizione del servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: f1136166798b1f0570f18342cce04a51957b4cace83319183889eff3c98f7298
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ff33e2d680c83b9d997e2c17d8852d8bd816edbf
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54294203"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636040"
 ---
 # <a name="search-capture-logs-created-by-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Log di acquisizione della ricerca creati dal servizio di registrazione centralizzato in Skype for Business Server 2015
  
@@ -29,7 +29,7 @@ Le funzionalità di ricerca nel servizio di registrazione centralizzata sono uti
   
 - Le ricerche e i risultati vengono eseguiti su un unico computer, un pool, un sito o un ambito globale in base ai criteri definiti.
     
-- Inizialmente è possibile eseguire ricerche ad ampio spettro e successivamente restringerle adottando criteri più mirati, ad esempio un'ora, un componente o un computer. La ricerca viene eseguita in base agli stessi registri e non è necessario eseguire di nuovo una sessione di registrazione quando cambiano i criteri di ricerca.
+- Inizialmente è possibile eseguire ricerche ad ampio spettro e successivamente restringerle adottando criteri più mirati, ad esempio un'ora, un componente o un computer. La ricerca viene eseguita in base agli stessi registri e non è necessario eseguire di nuovo una sessione di registrazione quando i criteri di ricerca cambiano.
     
 - I risultati di ricerca prelevati da tutti i computer e i pool compresi nell'ambito vengono raccolti e aggregati in un singolo file di output che rappresenta tutti i risultati dei criteri di ricerca, limitatamente agli scenari eseguiti e ai dati acquisiti. È possibile utilizzare strumenti noti come **Snooper** o **Blocco note** per leggere il file di output e i messaggi di traccia di tutta la distribuzione.
     
@@ -121,7 +121,7 @@ Ad esempio:
    ```
 
 > [!NOTE]
-> La stringa di data e ora specificata può essere "data/ora" o "data/ora". " Il comando anaserà la stringa e utilizzerà i valori appropriati per data e ora e le impostazioni locali e delle impostazioni cultura nel computer da cui si esegue il cmdlet. 
+> La stringa di data e ora specificata può essere "data/ora" o "data/ora". " Il comando analizza la stringa e utilizza i valori appropriati per data e ora e le impostazioni locali e delle impostazioni cultura nel computer da cui si esegue il cmdlet. 
   
 3. Se si desidera recuperare i registri a partire da 11:00:00 del 20/11/2012, definire -StartTime. L'intervallo di tempo predefinito per la ricerca è di 30 minuti, a meno che non venga definito un valore -EndTime specifico. La ricerca risultante restituirà i registri dal computer o dai pool definiti dalle 11.00.00 alle 11.30.00.
     
@@ -175,9 +175,9 @@ Vengono restituite tutte le voci di log con componenti di traccia per SIPStack, 
    Search-CsClsLogging -Components "SIPStack","S4","UserServices" -StartTime "11/1/2012 00:00:01 AM" -EndTime "11/20/2012 2:45:00 PM" -SkipNetworkLogs -OutputFilePath "C:\Logfiles\logfile.txt"
    ```
 
-## <a name="read-capture-logs-from-the-centralized-logging-service"></a>Lettura dei registri di acquisizione dal servizio di registrazione centralizzato
+## <a name="read-capture-logs-from-the-centralized-logging-service"></a>Lettura dei registri di acquisizione dal servizio di registrazione centralizzata
 
-Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo l'esecuzione della ricerca e si dispone di un file che è possibile utilizzare per rilevare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in un formato di testo standard ed è possibile utilizzare Notepad.exe o qualsiasi altro programma che consenta di aprire e leggere un file di testo. Per file di grandi dimensioni e problemi più complessi, è possibile utilizzare uno strumento come Snooper.exe progettato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzata. Snooper è incluso con gli strumenti di debug disponibili come download separato. È possibile scaricare gli strumenti di debug qui: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?LinkId=285257) . Quando si installano gli strumenti di debug, non vengono creati brevi tagli e voci di menu. Dopo aver installato gli strumenti di debug, aprire Windows Explorer, una finestra della riga di comando o Skype for Business Server Management Shell e passare alla directory (percorso predefinito) C:\Programmi\Skype for Business Server 2015\Debugging Tools. Fare doppio clic Snooper.exe o digitare Snooper.exe e quindi premere INVIO se si utilizza la riga di comando o Skype for Business Server Management Shell.
+Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo l'esecuzione della ricerca e si dispone di un file che è possibile utilizzare per rilevare un problema segnalato. È possibile leggere il file in diversi modi. Il file di output è in un formato di testo standard ed è possibile utilizzare Notepad.exe o qualsiasi altro programma che consenta di aprire e leggere un file di testo. Per file di dimensioni maggiori e problemi più complessi, è possibile utilizzare uno strumento come Snooper.exe progettato per leggere e analizzare l'output di registrazione dal servizio di registrazione centralizzato. Snooper è incluso con gli strumenti di debug disponibili come download separato. È possibile scaricare gli strumenti di debug qui: [https://go.microsoft.com/fwlink/?LinkId=285257](https://go.microsoft.com/fwlink/?LinkId=285257) . Quando si installano gli strumenti di debug, non vengono creati brevi tagli e voci di menu. Dopo aver installato gli strumenti di debug, aprire Windows Explorer, una finestra della riga di comando o Skype for Business Server Management Shell e passare alla directory (percorso predefinito) C:\Programmi\Skype for Business Server 2015\Debugging Tools. Fare doppio clic Snooper.exe o digitare Snooper.exe e quindi premere INVIO se si utilizza la riga di comando o Skype for Business Server Management Shell.
   
 > [!IMPORTANT]
 > Lo scopo di questo argomento non è quello di illustrare in dettaglio e discutere le tecniche di risoluzione dei problemi. La risoluzione dei problemi e i processi che lo circondano sono un argomento complesso. Per informazioni dettagliate sulla risoluzione dei problemi di base e sulla risoluzione di carichi di lavoro specifici, vedere il manuale Microsoft Lync Server 2010 Resource Kit all'indirizzo [https://go.microsoft.com/fwlink/p/?linkId=211003](https://go.microsoft.com/fwlink/p/?linkId=211003) . I processi e le procedure sono ancora applicabili Skype for Business Server 2015. 
@@ -192,7 +192,7 @@ Si comprende il reale vantaggio del servizio di registrazione centralizzata dopo
     
 4. I messaggi di traccia **del** file di registro vengono visualizzati nella **scheda** Traccia. Fare clic **sulla scheda** Messaggi per visualizzare il contenuto del messaggio delle tracce raccolte.
     
-### <a name="to-display-a-call-flow-diagram"></a>Per visualizzare un diagramma del flusso delle chiamate
+### <a name="to-display-a-call-flow-diagram"></a>Per visualizzare un diagramma del flusso di chiamata
 
 1. Per utilizzare Snooper e aprire i file di registro, è necessario disporre dell'accesso in lettura ai file di registro. Per utilizzare Snooper e accedere ai file di registro, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basato sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi.
     

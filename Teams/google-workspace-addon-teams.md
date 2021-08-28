@@ -11,25 +11,25 @@ searchScope:
 - Microsoft Teams
 search.appverid: MET150
 description: Scopri come configurare il componente aggiuntivo Microsoft Teams riunione per Google Workspace.
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 5232902aceed02398e2da2ca89182ba141b5a24366fc72103b9ac5289af28924
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 6f4fe6a61dd4891f457656e0659243c75c372142
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304888"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598540"
 ---
 # <a name="set-up-microsoft-teams-meeting-add-on-for-google-workspace"></a>Configurare il Microsoft Teams riunione per Google Workspace
 
-L'Microsoft Teams per le riunioni consente agli utenti del calendario di Google di pianificare e partecipare a una riunione Microsoft Teams direttamente da Google Workspace. Gli utenti potranno accedere alle funzionalità Teams riunioni, tra cui video e audioconferenze, condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora. Rimani connesso e organizzato per lavorare di più insieme in tutto il lavoro, la scuola e la vita.
+L'Microsoft Teams per le riunioni consente agli utenti del calendario di Google di pianificare e partecipare a una riunione Microsoft Teams direttamente da Google Workspace. Gli utenti potranno accedere alle funzionalità Teams riunioni, tra cui videoconferenze e audioconferenze, condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora. Rimani connesso e organizzato per lavorare di più insieme in tutto il lavoro, la scuola e la vita.
 
-Il componente Microsoft Teams riunione per Google Workspace deve essere abilitato da un amministratore Teams prima che gli utenti del tenant possano accedere all'app.
+Il Microsoft Teams per le riunioni di Google Workspace deve essere abilitato da un amministratore Teams prima che gli utenti del tenant possano accedere all'app.
 
 ## <a name="enable-or-disable-microsoft-teams-meeting-add-on-for-google-workspace-in-the-azure-portal"></a>Abilitare o disabilitare Microsoft Teams componente aggiuntivo riunione per Google Workspace nel portale di Azure
 

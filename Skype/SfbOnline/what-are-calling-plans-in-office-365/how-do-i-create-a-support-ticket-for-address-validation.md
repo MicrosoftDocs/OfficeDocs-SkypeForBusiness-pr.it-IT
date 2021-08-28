@@ -14,26 +14,26 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
 ms.custom:
 - Calling Plans
 - ms.lync.lac.CivicAddressValidationOpenSupportTicket
-description: La convalida dell'indirizzo è una parte importante della configurazione dei piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
-ms.openlocfilehash: 7129398a661a1b89e4f7cbfe51e8a770d45b3714d60df679600d0c70ac6a5491
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza.
+ms.openlocfilehash: df94bdd2f69338ae6085a4d0c35f9a0f907c72c9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54334428"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621848"
 ---
 # <a name="how-do-i-create-a-support-ticket-for-address-validation"></a>Come faccio a creare un ticket di supporto per la convalida dell'indirizzo?
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]?
 
-La convalida dell'indirizzo è una parte importante della configurazione dei piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
+La convalida dell'indirizzo è una parte importante della configurazione dei Piani per chiamate. Fornisce all'utente dell'organizzazione un indirizzo per le chiamate per gli interventi di emergenza, che potrà essere usato dai servizi di emergenza. Il modo in procedere dipende dalle dimensioni dell'organizzazione.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).
@@ -75,7 +75,7 @@ La convalida dell'indirizzo è una parte importante della configurazione dei pia
       - Paese o area geografica
     
      > [!IMPORTANT]
-     > **Inserisci il paese/area geografica in cui offriamo Piani per chiamate in cui stai cercando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
+     > **Inserisci il paese/area geografica in cui offriamo piani per chiamate in cui stai cercando di convalidare un indirizzo per gli interventi di emergenza durante l'assegnazione del numero di telefono.**
   
       - Codice postale
     
@@ -100,7 +100,7 @@ La convalida dell'indirizzo è una parte importante della configurazione dei pia
 8. Controlla le informazioni e quindi fai clic su **Invia ticket**.
     
 > [!TIP]
-> Il numero di riferimento verrà elencato nella pagina **Richieste di** servizio nel interfaccia di amministrazione di Microsoft 365.
+> Il numero di riferimento verrà elencato nella pagina **Richieste di** assistenza nella interfaccia di amministrazione di Microsoft 365.
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Domande comuni sul trasferimento dei numeri di telefono](/microsoftteams/transferring-phone-numbers-common-questions)

@@ -9,19 +9,19 @@ manager: serdars
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 7b9c211b-deb0-479d-b184-973f08b96d07
 description: 'Riepilogo: esaminare questi scenari per pianificare la topologia di server perimetrali in Skype for Business Server.'
-ms.openlocfilehash: df654740ae8b0fb6f7ce39669a14f3e7151220a24527166e996f1ceda583d2d7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 213081e5e232ff2d033c556fa9e037cdf813da3a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306987"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622178"
 ---
 # <a name="edge-server-scenarios-in-skype-for-business-server"></a>Scenari di server perimetrali in Skype for Business Server
  
@@ -40,9 +40,9 @@ Come indicato in precedenza, nei diagrammi sono presenti dati IPv6 di esempio. L
 Esistono dispositivi NAT che consentono NAT64 (da IPv6 a IPv4) e NAT66 (da IPv6 a IPv6) e questo è valido per l'utilizzo con Skype for Business Server.
   
 > [!IMPORTANT]
-> Se si utilizza il servizio Controllo di ammissione di chiamata, è necessario utilizzare IPv4 sull'interfaccia interna perché funzioni. 
+> Se si utilizza il servizio Controllo di ammissione di chiamata, è necessario utilizzare IPv4 sull'interfaccia interna per farlo funzionare. 
   
-## <a name="single-consolidated-skype-for-business-server-edge-server-with-private-ip-addresses-and-nat"></a>Singolo server perimetrale consolidato Skype for Business Server server perimetrale con indirizzi IP privati e NAT
+## <a name="single-consolidated-skype-for-business-server-edge-server-with-private-ip-addresses-and-nat"></a>Singolo server perimetrale Skype for Business Server consolidato con indirizzi IP privati e NAT
 
 Con questo scenario, non è disponibile alcuna opzione per la disponibilità elevata. Ciò significa che si spende meno per l'hardware e si ha una distribuzione più semplice. Se la disponibilità elevata è un elemento necessario, vedere gli scenari consolidati con scalabilità ridotta riportati di seguito.
   
@@ -54,7 +54,7 @@ Con questo scenario, non è disponibile alcuna opzione per la disponibilità ele
   
 ![Perimetro di rete per server perimetrali Singolo server perimetrale consolidato](../../media/Plan_LyncServer_Edge_NetPerimeter_SingleConsolidatedEdge.jpg)
   
-## <a name="single-consolidated-skype-for-business-server-edge-server-with-public-ip-addresses"></a>Singolo server perimetrale consolidato Skype for Business Server server perimetrale con indirizzi IP pubblici
+## <a name="single-consolidated-skype-for-business-server-edge-server-with-public-ip-addresses"></a>Singolo server perimetrale Skype for Business Server consolidato con indirizzi IP pubblici
 
 Con questo scenario, non è disponibile alcuna opzione per la disponibilità elevata. Ciò significa che si spende meno per l'hardware e si ha una distribuzione più semplice. Se la disponibilità elevata è un elemento necessario, vedere gli scenari consolidati con scalabilità ridotta riportati di seguito.
   

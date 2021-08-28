@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 385453cd-3a96-4837-8bb4-513aa97a256b
-description: Il cmdlet Install-CcAppliance consente di installare l'appliance Skype for Business Cloud Connector Edition, incluse le macchine virtuali AD, Central Management Store, Mediation Server e Edge Server, nel server host.
-ms.openlocfilehash: b88b869e3c30783a69bc16ab690a258506ebcc90e849eb474a17859140485e8d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Il cmdlet Install-CcAppliance consente di installare l'appliance Skype for Business Cloud Connector Edition, tra cui active Directory, l'archivio di gestione centrale, il Mediation Server e le macchine virtuali del server perimetrale, nel server host.
+ms.openlocfilehash: 0ed13282039b84975bea3e26f5ae1d7f79122a11
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54343180"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635840"
 ---
 # <a name="install-ccappliance"></a>Install-CcAppliance
  
-Il cmdlet Install-CcAppliance consente di installare l'appliance Skype for Business Cloud Connector Edition, incluse le macchine virtuali AD, Central Management Store, Mediation Server e Edge Server, nel server host. 
+Il cmdlet Install-CcAppliance consente di installare l'appliance Skype for Business Cloud Connector Edition, tra cui active Directory, l'archivio di gestione centrale, il Mediation Server e le macchine virtuali del server perimetrale, nel server host. 
   
 ```powershell
 Install-CcAppliance [-Steps <array>] [-SkipExistingObjects] [-Upgrade] [-UpdateAllCredentials] [<CommonParameters>]
@@ -75,7 +75,7 @@ Nell'esempio seguente vengono generati file di configurazione per ogni passaggio
 Install-CcAppliance -PrepareOnly
 ```
 
-Per determinare la radice dell'appliance, eseguire il cmdlet Get-CcApplianceDirectory appliance. 
+Per determinare la radice dell'appliance, eseguire il cmdlet Get-CcApplianceDirectory. 
   
 ### <a name="example-6"></a>Esempio 6
 
@@ -99,7 +99,7 @@ Install-CcAppliance -ShowStepsOnly
 
 Il cmdlet Install-CcAppliance viene utilizzato per distribuire Cloud Connector in una nuova appliance o per aggiornare un'appliance esistente alla versione più recente.
   
-Se si dispone di un nuovo dispositivo, leggere Preparare l'ambiente per Cloud Connector, eseguire il cmdlet Register-CcAppliance per registrare l'appliance e quindi eseguire il cmdlet Install-CcAppliance. Per ulteriori informazioni, vedere [Deploy a single site in Cloud Connector](deploy-a-single-site-in-cloud-connector.md) e Deploy multiple sites in Cloud [Connector.](deploy-multiple-sites-in-cloud-connector.md) 
+Se si dispone di una nuova appliance, leggere Preparare l'ambiente per Cloud Connector, eseguire il cmdlet Register-CcAppliance per registrare l'appliance e quindi eseguire il cmdlet Install-CcAppliance. Per ulteriori informazioni, vedere [Deploy a single site in Cloud Connector](deploy-a-single-site-in-cloud-connector.md) e Deploy multiple sites in Cloud [Connector.](deploy-multiple-sites-in-cloud-connector.md) 
   
 Se si dispone di una distribuzione esistente di Cloud Connector e si desidera eseguire l'aggiornamento, seguire le istruzioni in Eseguire l'aggiornamento [a una nuova versione di Cloud Connector.](upgrade-to-a-new-version-of-cloud-connector.md)
   
@@ -111,7 +111,7 @@ Se si dispone di una distribuzione esistente di Cloud Connector e si desidera es
 |PrepareOnly  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> | Generare file di configurazione per ogni passaggio di distribuzione. Questo parametro è solo per la risoluzione dei problemi. <br/> |
 |ShowStepsOnly  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Visualizzare solo i nomi dei passaggi di distribuzione. Questo parametro è solo per la risoluzione dei problemi.  <br/> |
 |SkipExistingObjects  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Questo parametro deve essere utilizzato insieme al parametro Steps. Questo parametro è solo per la risoluzione dei problemi.  <br/> |
-|Procedura  <br/> |Facoltativo  <br/> |System.Array  <br/> |Eseguire i passaggi di distribuzione. Questo parametro è solo per la risoluzione dei problemi.  <br/> |
+|Passaggi  <br/> |Facoltativo  <br/> |System.Array  <br/> |Eseguire i passaggi di distribuzione. Questo parametro è solo per la risoluzione dei problemi.  <br/> |
 |Aggiornamento  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Aggiornare il connettore cloud esistente alla versione più recente.  <br/> |
 |UpdateAllCredentials  <br/> |Facoltativo  <br/> |System.Management.Automation.SwitchParameter  <br/> |Rimuovere tutte le credenziali del connettore cloud nella cache. Richiedere all'utente di specificare nuove informazioni sulle credenziali per l'installazione.  <br/> |
    

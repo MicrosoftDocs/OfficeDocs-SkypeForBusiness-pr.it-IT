@@ -1,5 +1,5 @@
 ---
-title: Configurare Exchange Server messaggistica unificata per Skype for Business Server segreteria telefonica
+title: Configurare Exchange Server messaggistica unificata per la Skype for Business Server vocale
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,25 +10,25 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1be9c4f4-fd8e-4d64-9798-f8737b12e2ab
 description: 'Riepilogo: configurare Exchange Server messaggistica unificata per Skype for Business Server segreteria telefonica.'
-ms.openlocfilehash: 7a963fc7220e5865976c2f4159f84c2dba31ffb0f58b642c011f97cdeacf976f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 94aa013a8330f6469af5a237911b4e627047f7a0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54319479"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621818"
 ---
-# <a name="configure-exchange-server-unified-messaging-for-skype-for-business-server-voice-mail"></a>Configurare Exchange Server messaggistica unificata per Skype for Business Server segreteria telefonica
+# <a name="configure-exchange-server-unified-messaging-for-skype-for-business-server-voice-mail"></a>Configurare Exchange Server messaggistica unificata per la Skype for Business Server vocale
  
 **Riepilogo:** Configurare Exchange Server messaggistica unificata per la Skype for Business Server vocale.
   
 Skype for Business Server consente di avere messaggi di segreteria telefonica archiviati in Exchange Server 2016 o Exchange Server 2013; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti. 
 
 > [!NOTE]
-> Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+> Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
   
 Se è già stata configurata l'autenticazione da server a server tra Skype for Business Server e Exchange Server 2016 o Exchange Server 2013, è possibile configurare la messaggistica unificata. A tale scopo, è necessario innanzitutto creare e assegnare un nuovo dial plan di messaggistica unificata nel Exchange Server. Ad esempio, questi due comandi (eseguiti da Exchange Management Shell) configurano un nuovo dial plan a 3 cifre per Exchange:
   
@@ -107,7 +107,7 @@ Test-CsExUMVoiceMail -TargetFqdn "atl-cs-001.litwareinc.com" -ReceiverSipAddress
 
 ## <a name="configuring-unified-messaging-on-microsoft-exchange-server"></a>Configurazione della messaggistica unificata in Microsoft Exchange Server 
 > [!IMPORTANT]
-> Se si desidera utilizzare la messaggistica unificata di Exchange per fornire servizi di risposta alle chiamate, Outlook Voice Access o operatore automatico per gli utenti di VoIP aziendale, vedere [Plan for Exchange Unified Messaging integration in Skype for Business e quindi](../../plan-your-deployment/integrate-with-exchange/unified-messaging.md)seguire le istruzioni in questa sezione. 
+> Se si desidera utilizzare la messaggistica unificata di Exchange per fornire servizi di risposta alle chiamate, Outlook Voice Access o operatore automatico per gli utenti di VoIP aziendale, leggere [Plan for Exchange Unified Messaging integration in Skype for Business e](../../plan-your-deployment/integrate-with-exchange/unified-messaging.md)quindi seguire le istruzioni in questa sezione. 
 
 Per configurare Exchange messaggistica unificata per l'utilizzo VoIP aziendale messaggistica unificata, è necessario eseguire le attività seguenti:
 
@@ -119,18 +119,18 @@ Per configurare Exchange messaggistica unificata per l'utilizzo VoIP aziendale m
 - Utilizzare lo script exchucutil.ps1 per:
     - Creare gateway IP di messaggistica unificata.
     - Creare gruppi di risposta di messaggistica unificata.
-    - Concedere Skype for Business Server autorizzazioni per la lettura degli oggetti servizi di dominio Active Directory di messaggistica unificata.
+    - Concedere Skype for Business Server autorizzazioni per leggere gli oggetti servizi di dominio Active Directory di messaggistica unificata.
 - Creare un oggetto operatore automatico di messaggistica unificata.
 - Creare un oggetto di accesso sottoscrittore.
 - Creare un URI SIP per ogni utente e associare gli utenti a un dial plan URI SIP di messaggistica unificata.
 
 ### <a name="requirements-and-recommendations"></a>Requisiti e raccomandazioni
 
-Prima di iniziare, nella documentazione di questa sezione si presuppone che siano stati distribuiti i ruoli Exchange seguenti: Accesso client e Cassetta postale. In Microsoft Exchange Server, Exchange messaggistica unificata viene eseguita come servizio in questi server.
+Prima di iniziare, nella documentazione di questa sezione si presuppone che siano stati distribuiti i ruoli di Exchange seguenti: Accesso client e Cassette postali. In Microsoft Exchange Server, Exchange messaggistica unificata viene eseguita come servizio in questi server.
 
 Tenere inoltre presente quanto segue:
-- Se Exchange la messaggistica unificata è installata in più foreste, è necessario eseguire i Exchange Server di integrazione per ogni foresta di messaggistica unificata. Inoltre, ogni foresta di messaggistica unificata deve essere configurata per considerare attendibile la foresta in cui viene distribuito Skype for Business Server e la foresta in cui viene distribuitoSkype for Business Server deve essere configurata per considerare attendibile ogni foresta di messaggistica unificata.
-- I passaggi di integrazione vengono eseguiti sia sui ruoli Exchange Server in cui sono in esecuzione i servizi di messaggistica unificata che sul server che esegue Skype for Business Server. È consigliabile eseguire i Exchange Server di integrazione della messaggistica unificata prima di eseguire la procedura di integrazione di Lync Server 2013.
+- Se Exchange la messaggistica unificata è installata in più foreste, è necessario eseguire Exchange Server di integrazione per ogni foresta di messaggistica unificata. Inoltre, ogni foresta di messaggistica unificata deve essere configurata per considerare attendibile la foresta in cui viene distribuito Skype for Business Server e la foresta in cui viene distribuitoSkype for Business Server deve essere configurata per considerare attendibile ogni foresta di messaggistica unificata.
+- I passaggi di integrazione vengono eseguiti sia sui ruoli Exchange Server in cui sono in esecuzione i servizi di messaggistica unificata che sul server che esegue Skype for Business Server. È consigliabile eseguire i Exchange Server di integrazione della messaggistica unificata prima di eseguire i passaggi di integrazione di Lync Server 2013.
   > [!NOTE]
   > Per vedere quali passaggi di integrazione vengono eseguiti sui server e con quali ruoli di amministratore, vedere [Deployment process overview for integrating on-premises Unified Messaging and Skype for Business](../../plan-your-deployment/integrate-with-exchange/deployment-overview.md). 
 
@@ -147,7 +147,7 @@ Gli strumenti seguenti devono essere disponibili in ogni server che esegue Excha
 
 Durante l'integrazione di Microsoft Skype for Business Server con Exchange messaggistica unificata, è necessario eseguire lo script di ExchUcUtil.ps1 in Shell. Lo script ExchUcUtil.ps1 esegue quanto indicato di seguito:
 
-- Crea un gateway IP di messaggistica unificata per ogni pool Skype for Business Server di messaggistica unificata.
+- Crea un gateway IP di messaggistica unificata per ogni pool Skype for Business Server messaggistica unificata.
 
 > [!IMPORTANT]
 > Lo script ExchUcUtil.ps1 crea uno o più gateway IP di messaggistica unificata. È necessario disabilitare le chiamate in uscita su tutti i gateway IP di messaggistica unificata, ad eccezione di quello creato dallo script. Questo comprende la disabilitazione delle chiamate in uscita sui gateway IP di messaggistica unificata creati prima dell'esecuzione dello script. 
@@ -155,7 +155,7 @@ Durante l'integrazione di Microsoft Skype for Business Server con Exchange messa
 - Crea un gruppo di risposta di messaggistica unificata per ciascun gateway IP di messaggistica unificata. L'identificatore pilota di ogni gruppo di risposta specifica il dial plan URI SIP di messaggistica unificata utilizzato dal pool Front End di Skype for Business Server o dal server edizione Standard associato al gateway IP di messaggistica unificata.
 - Concede Skype for Business Server autorizzazioni per leggere gli oggetti contenitore di messaggistica unificata di Active Directory, ad esempio dial plan di messaggistica unificata, operatori automatici, gateway IP di messaggistica unificata e gruppi di risposta di messaggistica unificata.
   > [!IMPORTANT]
-  > Ogni foresta di messaggistica unificata deve essere configurata per considerare attendibile la foresta in cui viene distribuito Skype for Business Server e la foresta in cui viene distribuito Skype for Business Server 2013 deve essere configurata per considerare attendibile ogni foresta di messaggistica unificata. Se Exchange messaggistica unificata è installata in più foreste, è necessario eseguire i passaggi di integrazione Exchange Server per ogni foresta di messaggistica unificata oppure è necessario specificare il Skype for Business Server dominio. Ad esempio, ExchUcUtil.ps1 –Forest:<lync-domain-controller-fqdn>. 
+  > Ogni foresta di messaggistica unificata deve essere configurata per considerare attendibile la foresta in cui viene distribuito Skype for Business Server e la foresta in cui viene distribuito Skype for Business Server 2013 deve essere configurata per considerare attendibile ogni foresta di messaggistica unificata. Se Exchange la messaggistica unificata è installata in più foreste, è necessario eseguire i passaggi di integrazione Exchange Server per ogni foresta di messaggistica unificata oppure è necessario specificare il Skype for Business Server dominio. Ad esempio, ExchUcUtil.ps1 –Forest:<lync-domain-controller-fqdn>. 
 
 ### <a name="use-the-shell-to-run-the-exchucutilps1-script"></a>Utilizzo di Shell per l'esecuzione dello script ExchUcUtil.ps1
 
@@ -175,7 +175,7 @@ Per verificare che lo script ExchUcUtul.ps1 sia stato eseguito correttamente, pr
 
 ### <a name="configure-certificates-on-the-server-running-exchange-server-unified-messaging"></a>Configurare i certificati nel server che esegue Exchange Server messaggistica unificata
  
-Se è stata distribuita la messaggistica unificata di Exchange, come descritto in Planning for Exchange Unified Messaging integration in Skype for Business Server nella documentazione relativa alla pianificazione e si desidera fornire funzionalità di messaggistica unificata Exchange agli utenti di VoIP aziendale nell'organizzazione, è possibile utilizzare le procedure seguenti per configurare il certificato nel server che esegue la messaggistica unificata di Exchange.
+Se è stata distribuita la messaggistica unificata di Exchange, come descritto in Planning for Exchange Unified Messaging integration in Skype for Business Server nella documentazione relativa alla pianificazione e si desidera fornire funzionalità di messaggistica unificata Exchange agli utenti VoIP aziendale dell'organizzazione, è possibile utilizzare le procedure seguenti per configurare il certificato nel server che esegue la messaggistica unificata di Exchange.
 
 > [!IMPORTANT]
 > Per i certificati interni, sia i server che eseguono Skype for Business Server che i server che eseguono Microsoft Exchange devono disporre di certificati di autorità radice attendibili reciprocamente attendibili. L'Autorità di certificazione (CA) può essere la stessa o un'autorità di certificazione diversa, purché i server presentino il certificato radice dell'autorità di certificazione registrato nell'archivio certificati dell'autorità radice attendibile. 
@@ -194,12 +194,12 @@ Il Exchange Server deve essere configurato con un certificato server per connett
 2. In Selezionare un'attività fare clic **su Scarica un certificato CA, una catena di certificati o un CRL.**
 3. In **Download a CA Certificate, Certificate Chain o CRL** selezionare Encoding Method to Base **64** e quindi fare clic su **Download CA certificate**.
    > [!NOTE]
-   > È inoltre possibile specificare Distinguished Encoding Rules (DER) in questo passaggio. Se si seleziona la codifica DER, il tipo di file nel prossimo passaggio e nel passaggio 10 di **Per installare il certificato CA** è .p7b anziché .cer. 
+   > È inoltre possibile specificare Distinguished Encoding Rules (DER) in questo passaggio.You can also specify Distinguished Encoding Rules (DER) encoding at this step. Se si seleziona la codifica DER, il tipo di file nel prossimo passaggio e nel passaggio 10 di **Per installare il certificato CA** è .p7b anziché .cer. 
 4. Nella finestra di dialogo **Download file** fare clic su **Salva** e quindi salvare il file nel disco rigido del server. Il file avrà estensione cer o p7b, a seconda della codifica selezionata nel passaggio precedente.
 
 **Per installare il certificato CA:**
 
-1. Nel server che esegue Exchange messaggistica unificata, aprire Microsoft Management Console (MMC) facendo clic sul pulsante **Start**, scegliendo **Esegui,** **digitando mmc** nella casella Apri e quindi facendo clic su **OK**.
+1. Nel server che esegue Exchange messaggistica unificata, aprire Microsoft Management Console (MMC) facendo clic sul pulsante **Start**, scegliendo Esegui **,** **digitando mmc** nella casella Apri e quindi facendo clic su **OK**.
 2. Scegliere **Aggiungi/Rimuovi snap-in** dal menu **File** e quindi fare clic su **Aggiungi**.
 3. Nella casella **Aggiungi snap-in autonomo** fare clic su **Certificati** e quindi su **Aggiungi**.
 4. Nella finestra di dialogo **Snap-in certificati** fare clic su **Account del computer** e quindi su **Avanti**.

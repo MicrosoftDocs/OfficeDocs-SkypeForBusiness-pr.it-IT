@@ -13,15 +13,15 @@ ms.custom:
 - ms.lync.plan.HighAvailability
 - ms.lync.plan.HighAvailability
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 14a897b3-2406-46c7-b08f-490085b3d048
 description: Lo schema principale di disponibilità elevata per la maggior parte dei ruoli del server in Skype for Business Server 2015 si basa sulla ridondanza del server tramite pooling. In caso di errore di un server che esegue un determinato ruolo, gli altri server del pool che eseguono lo stesso ruolo sopportano il carico del server in errore.
-ms.openlocfilehash: d8c6a16ba29d5725a148810c71a17325bdbab763
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 8fe42fb60d6588eee7a62ec49aa33f46c9a2e535
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234701"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596750"
 ---
 # <a name="skype-for-business-server-high-availability-planning-tool"></a>Skype for Business Server Strumento di pianificazione a disponibilità elevata
  

@@ -11,19 +11,19 @@ search.appverid: MET150
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - ms.teamsadmincenter.voice.phonenumbers.porting.overview
 - Calling Plans
 description: Ottenere una panoramica degli ordini di trasferimento e su come trasferire i numeri di telefono dal provider di servizi a Teams.
-ms.openlocfilehash: a0d8884df95e153544e5d0108af8b23af7e464d59480350c7422bfdfdbb6e113
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d84db7c5f1ced9c8b0d23ea423d41b18c9e49005
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54276122"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598380"
 ---
 # <a name="whats-a-port-order"></a>Cos'è un ordine di portabilità?
 
@@ -31,13 +31,13 @@ Se attualmente si ha un provider di servizi di telefonia o un gestore telefonico
   
 Dopo aver portato i numeri di telefono in Teams, Microsoft diventa il provider di servizi ed è possibile disconnettere il servizio con il provider di servizi o il gestore precedente.
 
-Leggere le informazioni contenute in questo articolo per acquisire familiarità con la portabilità dei numeri. Dopo di che, si dovrebbe essere pronti per creare un ordine di trasferimento e trasferire i numeri di telefono. Vedere [Trasferire numeri di telefono Teams](transfer-phone-numbers-to-teams.md) per istruzioni dettagliate.
+Esaminare le informazioni contenute in questo articolo per acquisire familiarità con la portabilità dei numeri. Dopo di che, si dovrebbe essere pronti per creare un ordine di trasferimento e trasferire i numeri di telefono. Per [istruzioni dettagliate, Teams](transfer-phone-numbers-to-teams.md) vedere Trasferire numeri di telefono a un altro utente.
   
 ## <a name="what-countries-or-regions-support-number-porting"></a>Quali paesi o aree geografiche supportano la portabilità dei numeri?
 
 È possibile trasferire o trasferire numeri di telefono in tutti i paesi o aree geografiche supportati, ma la modalità di invio di una richiesta di ordine di trasferimento dipende dal paese o dall'area geografica da cui provengono i numeri di telefono. Per un elenco dei paesi e delle aree geografiche che supportano la portabilità dei numeri, vedere [Gestire i numeri di telefono per l'organizzazione.](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)  
 
-Attualmente, [la procedura guidata di porting](transfer-phone-numbers-to-teams.md) nell'interfaccia Microsoft Teams di amministrazione supporta il recupero di numeri di telefono per Regno Unito, Stati Uniti e Canada. Per ottenere numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md)
+Attualmente, [la procedura guidata di porting](transfer-phone-numbers-to-teams.md) nell'Microsoft Teams di amministrazione supporta il recupero di numeri di telefono per Regno Unito, Stati Uniti e Canada. Per ottenere numeri di telefono per altri paesi e aree geografiche, è possibile [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md)
   
 ## <a name="what-numbers-can-be-transferred"></a>Quali numeri possono essere trasferiti?
 
@@ -70,7 +70,7 @@ In generale, è possibile trasferire qualsiasi numero di telefono di un provider
   **Non è possibile trasferire:**
   
     > [!NOTE]
-    > Al momento, non è possibile trasferire numeri di telefono o numeri non provenienti da un paese o un'area geografica supportata, inclusi i numeri di telefono di un provider di telefonia VoIP. Per un elenco dei paesi/aree geografiche supportati, vedere Disponibilità di paesi e aree geografiche [per audioconferenze e piani per chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
+    > Al momento, non è possibile trasferire numeri di telefono o numeri non provenienti da un paese o un'area geografica supportata, inclusi i numeri di telefono di un provider di telefoni VoIP. Per un elenco dei paesi/aree geografiche supportati, vedere Disponibilità di paesi e aree geografiche [per audioconferenze e piani per chiamate](../country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
   
 - Telefono numeri usati per le connessioni dati, ad esempio per le linee DSL o le connessioni Internet a banda larga.
 
@@ -116,7 +116,7 @@ Ad esempio, è necessario inviare una richiesta di portabilità di numeri univoc
 
 Ecco altre informazioni su come inviare richieste di portabilità dei numeri per ognuno di questi tipi di numeri:
   
-- **Telefono numeri forniti** da corrieri diversi richiedono una richiesta di portabilità univoca per i numeri con ogni gestore.
+- **Telefono numeri forniti** da corrieri diversi richiedono una richiesta di portabilità univoca per i numeri con ogni vettore.
 
 -  I numeri a numero verde con codici area come: 800, 844, 855, 866, 877 e 888 non possono essere inclusi in una richiesta di portabilità con altri tipi di numeri. Per il trasferimento di questi numeri verde, è necessario [inviare manualmente un ordine di trasferimento.](manually-submit-port-order.md) Non è possibile eseguire il port di questi numeri nell'Microsoft Teams di amministrazione. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](../manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).
 
@@ -129,7 +129,7 @@ Ecco altre informazioni su come inviare richieste di portabilità dei numeri per
 ## <a name="how-long-does-it-take-to-port-numbers"></a>Quanto tempo è necessario per la portabilità dei numeri?
 <a name="bkmk_type_1"> </a>
 
-Dopo aver completato la richiesta di ordine di trasferimento, l'elaborazione richiede da 7 a 14 giorni. Tuttavia, a seconda del provider di servizi, l'operazione può richiedere fino a 30 giorni. Dopo aver inviato i numeri di telefono, si otterrà un messaggio di posta elettronica da Microsoft per insodinviare l'invito.
+Dopo aver completato la richiesta di ordine di trasferimento, l'elaborazione richiede da 7 a 14 giorni. Tuttavia, a seconda del provider di servizi, l'operazione può richiedere fino a 30 giorni. Dopo il port over dei numeri di telefono, si otterrà un messaggio di posta elettronica da Microsoft per insodinviare l'invito.
   
 Per controllare lo stato dell'ordine di trasferimento, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Numeri Telefono vocali e quindi fare clic su Cronologia  >   **ordini.** Ogni stato dell'ordine di trasferimento è elencato nella **colonna** Stato.
   

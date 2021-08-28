@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: landerl
 description: Informazioni sui requisiti per preparare l'organizzazione per la collaborazione e i servizi vocali cloud con Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: da6ccd1283eda3bd96fd9b4b2856c6318d79c1f36573a62394d1a4d404123ca5
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0a4b417876745042d6805c88de4a5b93cdc275c3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337854"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621938"
 ---
 # <a name="prepare-your-service-for-upgrading-to-teams"></a>Preparare il servizio per l'aggiornamento a Teams
 
@@ -40,7 +40,7 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 
 Questo articolo offre una panoramica dei requisiti per preparare l'organizzazione per la collaborazione e i servizi vocali cloud con Teams. La preparazione corretta consente di essere certi di essere pronti a fornire queste funzionalità all'organizzazione.
 
-## <a name="onboarding-checklists-and-landing-pages-for-microsoft-teams-rollout"></a>Elenchi di controllo per l'onboarding e pagine di destinazione per Microsoft Teams distribuzione
+## <a name="onboarding-checklists-and-landing-pages-for-microsoft-teams-rollout"></a>Elenchi di controllo di onboarding e pagine di destinazione per Microsoft Teams distribuzione
 
 Gli elenchi di controllo e le pagine di destinazione seguenti illustrano i passaggi per la distribuzione di Microsoft Teams nell'organizzazione:
 
@@ -54,23 +54,23 @@ Gli elenchi di controllo e le pagine di destinazione seguenti illustrano i passa
 
 - [Riunioni e audioconferenza](deploy-meetings-microsoft-teams-landing-page.md)
 
-- [Sistema telefonico di connettività PSTN e pstn](cloud-voice-landing-page.md)
+- [Sistema telefonico di connettività PSTN](cloud-voice-landing-page.md)
 
 
-Le attività e le attività in questi elenchi di controllo sono gli elementi di base delle attività che si applicano a ogni distribuzione di funzionalità vocali e di collaborazione con Teams. È possibile personalizzare gli elenchi di controllo in modo da includere le attività e le attività specifiche per il proprio Teams viaggio.
+Le attività e le attività in questi elenchi di controllo sono le attività principali che si applicano a ogni distribuzione di funzionalità vocali e di collaborazione con Teams. È possibile personalizzare gli elenchi di controllo in modo da includere le attività e le attività specifiche per il proprio Teams viaggio.
 
 Usare gli elenchi di controllo forniti per tenere traccia dello stato di ogni singola attività e attività e per assicurarsi di non aver ignorato i passaggi critici. Ogni attività include una descrizione dettagliata delle azioni richieste e riferimenti a informazioni aggiuntive che è possibile usare per completare l'attività.
 
-Anche se è consigliabile seguire gli elenchi di controllo nell'ordine indicato, la sequenza esatta dipenderà dall'ambito della distribuzione e dalla configurazione e dalla complessità dell'ambiente. Sono organizzate per supportare una distribuzione Teams "greenfield" (una senza presenza precedente in Skype for Business Online) o l'aggiornamento da Skype for Business Online a Teams. Se si esegue l'aggiornamento da Skype for Business Online, alcune di queste attività potrebbero essere già state completate e possono essere ignorate.
+Anche se è consigliabile seguire gli elenchi di controllo nell'ordine indicato, la sequenza esatta dipenderà dall'ambito della distribuzione e dalla configurazione e dalla complessità dell'ambiente. Sono organizzate per supportare una distribuzione Teams "greenfield" (una senza presenza Skype for Business Online) o l'aggiornamento da Skype for Business Online a Teams. Se si esegue l'aggiornamento da Skype for Business Online, alcune di queste attività potrebbero essere già state completate e possono essere ignorate.
 
 Quando si esegue l'onboarding degli utenti in base al sito, è consigliabile usare il Playbook di abilitazione del sito per la voce [(Playbook)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/site-enablement-playbook-for-voice-(playbook).xlsx?raw=true) come guida supplementare a questi elenchi di controllo.
 
 >[!NOTE]
->La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business Online. Usare l'Microsoft Teams di amministrazione per configurare queste impostazioni.
+>La maggior parte delle impostazioni di configurazione sono comuni tra Teams e Skype for Business Online. Usare l'interfaccia Microsoft Teams di amministrazione per configurare queste impostazioni.
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting a decision point"/> <br/>Punto di decisione</td><td><ul><li>Who sarà responsabile della supervisione del completamento degli elenchi di controllo per l'onboarding?</li></ul></td></tr>
-<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Scaricare gli elenchi di controllo per l'onboarding.</li><li>Usare gli elementi dell'elenco di controllo per l'onboarding in modo dettagliato in base al piano di distribuzione dell'organizzazione.</li></ul></td></tr>
+<tr><td><img src="media/audio_conferencing_image9.png" alt="An icon depicting the next steps"/><br/>Passaggi successivi</td><td><ul><li>Scaricare gli elenchi di controllo per l'onboarding.</li><li>Usare gli elementi dell'elenco di controllo di onboarding in modo dettagliato in base al piano di distribuzione dell'organizzazione.</li></ul></td></tr>
 </table>
 
 <!--ENDOFSECTION-->
@@ -79,7 +79,7 @@ Quando si esegue l'onboarding degli utenti in base al sito, è consigliabile usa
 
 Dopo aver completato questo elenco di controllo, procedere con il passaggio successivo: [Condurre un progetto pilota utente](pilot-essentials.md)
 
-[//]: # (@Turgay, ho commentato questo paragrafo successivo perché è specifico del cloud.)
+[//]: # (@Turgay, ho commentato questo paragrafo successivo perché è specifico della voce cloud.)
 <!--
 As the next step, use the [Site Enablement Playbook for Voice (Playbook)](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/site-enablement-playbook-for-voice-(playbook).xlsx?raw=true) to help you onboard your users on each site to cloud voice, and help ensure that you plan and execute important site-specific activities.
 -->

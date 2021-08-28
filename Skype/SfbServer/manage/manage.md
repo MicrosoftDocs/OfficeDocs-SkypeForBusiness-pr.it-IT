@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 603ccdfd-9985-41d8-a526-8570ba9b1b76
 description: 'Riepilogo: esplorare questi collegamenti per informazioni su come gestire e gestire Skype for Business Server.'
-ms.openlocfilehash: 7b23552906224e1583898cd967fb00ae8993d3708c8a0c8f30241b0c9e1902c6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3430c1d704570fe5812fb4315fdc24a91c5972dd
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54313154"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636050"
 ---
 # <a name="manage-skype-for-business-server"></a>Gestire Skype for Business Server 
 
@@ -30,7 +30,7 @@ Gli articoli vengono continuamente aggiornati dagli autori in base alle nuove in
 
 ## <a name="visual-resources-about-how-to-manage-skype-for-business-server"></a>Risorse visive su come gestire i Skype for Business Server
 
-Visualizzare le risorse seguenti per informazioni su come gestire le Skype for Business Server.
+Visualizzare le risorse seguenti per informazioni su come gestire i Skype for Business Server.
   
 ||**Contenuto**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -39,7 +39,7 @@ Visualizzare le risorse seguenti per informazioni su come gestire le Skype for B
    
 ##  <a name="articles-about-managing-skype-for-business-server"></a>Articoli sulla gestione dei Skype for Business Server
 
-Gli articoli seguenti su come configurare, monitorare e gestire le Skype for Business Server sono disponibili per la visualizzazione online. 
+Gli articoli seguenti su come configurare, monitorare e gestire Skype for Business Server sono disponibili per la visualizzazione online. 
   
 ||**Contenuto**|**Descrizione**|
 |:-----|:-----|:-----|
@@ -51,10 +51,10 @@ Gli articoli seguenti su come configurare, monitorare e gestire le Skype for Bus
    
 ## <a name="additional-resources-about-planning-for-skype-for-business-server"></a>Risorse aggiuntive sulla pianificazione di Skype for Business Server
 
-Le risorse seguenti su come pianificare Skype for Business Server sono disponibili da altri esperti in materia. 
+Le risorse seguenti su come pianificare i Skype for Business Server sono disponibili da altri esperti in materia. 
   
 ||**Contenuto**|**Descrizione**|
 |:-----|:-----|:-----|
 |![Icona per Documenti](../media/4eff581b-890b-46cb-8224-a4122137d27e.png)|[Skype for Business Server per professionisti IT](../../Hub/index.yml) <br/> |Visita il centro risorse per accedere a video, siti della community, documentazione, download e altro ancora. |
-|![Icona per il contenuto per sviluppatori](../media/3626138a-2778-407e-911f-a0dcbdc36684.png)|Skype for Business Server per sviluppatori  <br/> |Trova le risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK. |
+|![Icona per il contenuto per sviluppatori](../media/3626138a-2778-407e-911f-a0dcbdc36684.png)|Skype for Business Server per sviluppatori  <br/> |Trova risorse per sviluppatori Skype for Business Server, inclusi esempi di codice, formazione e SDK. |
 |![Icona per notizie, blog e così via](../media/ac692cb8-7db8-4810-b53f-1bc88b1e4cac.png)|[Gestione e adozione delle modifiche](https://go.microsoft.com/fwlink/p/?LinkId=532796) <br/> [Blog di Office](https://go.microsoft.com/fwlink/p/?LinkId=528899) <br/> [Skype blog del team](https://go.microsoft.com/fwlink/p/?LinkId=532818) <br/> |Tenere il passo con le notizie dei team che creano e documenta Skype for Business Server.  |

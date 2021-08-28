@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployCertRequestBasics
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2c6b40d5-207a-4ca9-a090-e43350f4968f
 description: La pagina Nome e sicurezza Impostazioni fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in bit della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come esportabile.
-ms.openlocfilehash: a1460f78af07a81b3c02e673a7e81dec0ef0f344987835e4efaadb5309910072
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 45633f52ded86f860a90a3544802944f98493c04
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323278"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596950"
 ---
 # <a name="certificate-request-basic"></a>Richiesta di certificato (Basic)
  
-La pagina Nome e **sicurezza Impostazioni** fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in **bit** della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come **esportabile.** 
+La pagina Nome **e sicurezza Impostazioni** fornisce una casella di testo per definire un nome descrittivo, un elenco a discesa per la lunghezza in **bit** della coppia di chiavi pubbliche e private e una casella di controllo che consente di contrassegnare la chiave privata del certificato come **esportabile.** 
   
 Il nome descrittivo di un certificato rappresenta un nome facilmente riconoscibile che consente alla persona che visualizza il certificato di identificarlo più facilmente.
   

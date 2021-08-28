@@ -1,5 +1,5 @@
 ---
-title: Restrizioni per le chiamate in uscita - Servizi di audioconferenza & chiamate PSTN
+title: Restrizioni per le chiamate in uscita - Audioconferenza & chiamate PSTN
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -14,19 +14,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Gli amministratori possono controllare il tipo di audioconferenza e le chiamate PSTN degli utenti finali che possono essere effettuate dagli utenti.
-ms.openlocfilehash: bbe2641cfd642e4ffd0cf6af901df059190740bf60ddbb8dfc5d82ba58c98380
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9e7f656cd51131237507cc184e021128a33d9268
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332548"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598410"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -39,17 +39,17 @@ I controlli delle chiamate in uscita possono essere applicati in base all'utente
 |Chiamate PSTN per servizi di audioconferenza|Limita il tipo di messaggi in uscita </br>chiamate consentite dall'interno </br>riunioni organizzate da un utente.|Qualsiasi destinazione (impostazione predefinita)</br>Nello stesso paese o area geografica dell'organizzatore </br> [Solo paesi o aree geografiche dell'area A](audio-conferencing-zones.md) </br>Non consentire|
 |Chiamate PSTN per l'utente finale|Limita il tipo di chiamata </br>che può essere effettuata da un utente.|Internazionale e Nazionale (impostazione predefinita)</br>Nazionale</br>Nessuno|
 
-Per scoprire quali paesi e aree geografiche sono considerati zona A, vedere Aree geografiche per [audioconferenze.](audio-conferencing-zones.md)
+Per scoprire quali paesi e aree geografiche sono considerati Zona A, vedere Aree geografiche [e aree geografiche per audioconferenza.](audio-conferencing-zones.md)
 
    > [!NOTE]
-   > Una chiamata è considerata nazionale se il numero composto si trova nello stesso paese in cui è stato configurato Microsoft 365 o Office 365 per l'organizzatore della riunione (nel caso delle audioconferenze) o per l'utente finale (nel caso di chiamate PSTN dell'utente finale).
+   > Una chiamata viene considerata nazionale se il numero composto si trova nello stesso paese in cui è stato configurato Microsoft 365 o Office 365 per l'organizzatore della riunione (nel caso delle audioconferenze) o per l'utente finale (nel caso delle chiamate PSTN dell'utente finale).
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](includes/updating-admin-interfaces.md)]
 
 ## <a name="restrict-audio-conferencing-outbound-calls"></a>Limitare le chiamate in uscita per le audioconferenze
 
-![logo Microsoft Teams logo ](media/teams-logo-30x30.png) **Con l'interfaccia Microsoft Teams di amministrazione**
+![logo Microsoft Teams ](media/teams-logo-30x30.png) **logo con l'interfaccia Microsoft Teams di amministrazione**
 
 1. Nel riquadro di spostamento sinistro selezionare **Utenti** e quindi selezionare il nome visualizzato dell'utente nell'elenco degli utenti disponibili.
 
@@ -99,7 +99,7 @@ La tabella seguente fornisce una panoramica di ogni criterio.
 |Cmdlet di PowerShell|Descrizione|
 |:-----|:-----|
 |Identity='tag:DialoutCPCandPSTNInternational'    |    L'utente della conferenza può effettuare chiamate in uscita verso numeri internazionali e nazionali e può anche effettuare chiamate in uscita verso numeri nazionali e internazionali.    |
-|Identity='tag:DialoutCPCDomesticPSTNInternational'  |    L'utente della conferenza può effettuare chiamate in uscita solo con numeri nazionali e può effettuare chiamate in uscita verso numeri nazionali e internazionali.    |
+|Identity='tag:DialoutCPCDomesticPSTNInternational'  |    L'utente alla conferenza può effettuare chiamate in uscita solo con numeri nazionali e può effettuare chiamate in uscita verso numeri nazionali e internazionali.    |
 |    Identity='tag:DialoutCPCDisabledPSTNInternational'    |    L'utente della conferenza non può effettuare chiamate in uscita. Questo utente può effettuare chiamate in uscita verso numeri internazionali e nazionali.    |
 |    Identity='tag:DialoutCPCInternationalPSTNDomestic'    |    L'utente della conferenza può effettuare chiamate in uscita verso numeri internazionali e nazionali e può effettuare solo chiamate in uscita verso numeri PSTN nazionali.    |
 |    Identity='tag:DialoutCPCInternationalPSTNDisabled'    |    L'utente della conferenza può effettuare chiamate in uscita verso numeri internazionali e nazionali e non può effettuare chiamate in uscita verso numeri PSTN oltre ai numeri di emergenza.    |

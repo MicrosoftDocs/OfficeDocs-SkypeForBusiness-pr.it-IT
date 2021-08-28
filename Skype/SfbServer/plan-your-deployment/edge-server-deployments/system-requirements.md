@@ -9,29 +9,29 @@ manager: serdars
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: ed53a566-0504-46f9-81a7-116a637833af
 description: 'Riepilogo: informazioni sui requisiti di sistema per il server perimetrale in Skype for Business Server.'
-ms.openlocfilehash: dc1541604a4a26c9af3c184282648ef2f96469fa4346a6b6cc379eed2f5f023f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bc8a6666f46d093c9f3d2da41f2663c79e94ddf3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306977"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622158"
 ---
 # <a name="edge-server-system-requirements-in-skype-for-business-server"></a>Requisiti di sistema dei server perimetrali in Skype for Business Server
  
 **Riepilogo:** Informazioni sui requisiti di sistema per il server perimetrale in Skype for Business Server.
   
-Per quanto riguarda la distribuzione di server perimetrali di Skype for Business Server, queste sono le operazioni necessarie per il server o i server presenti nell'ambiente stesso, oltre alla pianificazione della struttura dell'ambiente. Per ulteriori informazioni su topologia, DNS, certificati e altri problemi relativi all'infrastruttura, vedere la documentazione relativa ai requisiti ambientali.
+Per quanto riguarda la distribuzione del server perimetrale Skype for Business Server, queste sono le operazioni necessarie per il server o i server presenti nell'ambiente stesso, nonché la pianificazione della struttura dell'ambiente. Per ulteriori informazioni su topologia, DNS, certificati e altri problemi relativi all'infrastruttura, vedere la documentazione relativa ai requisiti ambientali.
   
 ## <a name="components"></a>Componenti
 
-Quando si parla dell'ambiente server perimetrale, si fa riferimento a componenti che sono, per la maggior parte, distribuiti in una rete perimetrale (ovvero si tratta di un gruppo di lavoro o di un dominio esterno alla struttura di dominio di Skype for Business Server).
+Quando si parla dell'ambiente di server perimetrali, si fa riferimento a componenti che sono, per la maggior parte, distribuiti in una rete perimetrale (ovvero si tratta di un gruppo di lavoro o di un dominio esterno alla struttura di dominio di Skype for Business Server).
   
 Tenendo presente questo, questi sono i componenti che dovrai tenere a mente per distribuire correttamente Edge:
   
@@ -66,7 +66,7 @@ Gli utenti esterni autorizzati possono utilizzare i server perimetrali per conne
 > I server perimetrali vengono distribuiti per fornire connessioni per i client Skype for Business abilitati e altri server perimetrali (in scenari di federazione). Non è possibile connettersi da altri tipi di client o server dell'end point. Il server gateway XMPP può consentire le connessioni con i partner XMPP configurati. Ma anche in questo caso, questi sono gli unici tipi di client e federazione che funzionano. 
 
 > [!NOTE]
-> I gateway XMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)
+> I gateway xMPP e i proxy sono disponibili Skype for Business Server 2015, ma non sono più supportati in Skype for Business Server 2019. Per [ulteriori informazioni, vedere Migrating XMPP federation.](../../../SfBServer2019/migration/migrating-xmpp-federation.md)
   
 ### <a name="reverse-proxies"></a>Proxy inversi
 <a name="ReverseProxies"> </a>
@@ -89,9 +89,9 @@ E per i dispositivi mobili:
   
 - consente di individuare automaticamente i Front End Server che offrono servizi per dispositivi mobili.
     
-- abilita le notifiche push Microsoft 365 o Office 365 ai dispositivi mobili.
+- abilita le notifiche push da Microsoft 365 o Office 365 ai dispositivi mobili.
     
-I consigli correnti per il proxy inverso sono disponibili nella pagina [Infrastruttura di telefonia per Skype for Business.](../../../SfbPartnerCertification/certification/infra-gateways.md) Quindi il proxy inverso:
+I nostri consigli correnti sul proxy inverso sono disponibili nella pagina [Infrastruttura di telefonia per Skype for Business.](../../../SfbPartnerCertification/certification/infra-gateways.md) Quindi il proxy inverso:
   
 - dovrebbe essere in grado di utilizzare TLS (Transport Layer Security) introdotto nell'ambiente tramite certificati pubblici per connettersi ai servizi Web esterni pubblicati di:
     
@@ -124,7 +124,7 @@ Se il proxy inverso è in grado di soddisfare tutte le esigenze di questo elenco
 ### <a name="firewalls"></a>Firewall
 <a name="Firewalls"> </a>
 
-È necessario mettere la distribuzione edge dietro un firewall esterno, ma è consigliabile avere due firewall, uno esterno e uno interno tra l'ambiente perimetrale e l'ambiente interno. Tutta la documentazione negli scenari avrà due firewall. È consigliabile utilizzare due firewall perché garantisce un routing rigoroso da un perimetro di rete all'altro e raddoppia la protezione del firewall per la rete interna.
+È necessario mettere la distribuzione di Edge dietro un firewall esterno, ma è consigliabile avere due firewall, uno esterno e uno interno tra l'ambiente perimetrale e l'ambiente interno. Tutta la documentazione negli scenari avrà due firewall. È consigliabile utilizzare due firewall perché garantisce un routing rigoroso da un perimetro di rete all'altro e raddoppia la protezione del firewall per la rete interna.
   
 ### <a name="directors"></a>Director
 <a name="Directors"> </a>
@@ -140,7 +140,7 @@ Perché è importante? Una funzione importante per un Director è proteggere i s
 
 La Skype for Business Server topologia perimetrale consolidata con scalabilità orizzontale è ottimizzata per il bilanciamento del carico DNS per le nuove distribuzioni e si consiglia di eseguire questa operazione. Se è necessaria la disponibilità elevata, è consigliabile usare un servizio di bilanciamento del carico hardware per una situazione specifica:
   
-- Exchange Messaggistica unificata per gli utenti remoti che Exchange messaggistica **unificata** prima Exchange 2013.
+- Exchange Messaggistica unificata per gli utenti remoti che Exchange messaggistica **unificata prima** Exchange 2013.
     
 > [!IMPORTANT]
 > È fondamentale notare che non è possibile combinare i servizi di bilanciamento del carico. Nell'ambiente Skype for Business Server tutte le interfacce devono utilizzare DNS o HLB. 
@@ -164,18 +164,18 @@ Per tutti i server perimetrali che eseguono il servizio A/V Edge, questi sono i 
     
 #### <a name="hlb-requirements"></a>Requisiti di bilanciamento del carico di rete
 
-Skype for Business Server non ha molti requisiti di affinità basati su cookie. Pertanto, non è necessario utilizzare una persistenza basata su cookie a meno che **(e** questo non sia specifico di Skype for Business Server 2015) si abbia Lync Server 2010 Front End Server o pool Front End nell'ambiente Skype for Business Server. Avrebbero bisogno di affinità basata su cookie nel metodo di configurazione consigliato per Lync Server 2010.
+Skype for Business Server non ha molti requisiti di affinità basati su cookie. Non è quindi necessario utilizzare una persistenza basata su cookie a meno che **(e** questo non sia specifico di Skype for Business Server 2015) non si abbia Lync Server 2010 Front End Server o pool Front End nell'ambiente Skype for Business Server. Avrebbero bisogno di affinità basata su cookie nel metodo di configurazione consigliato per Lync Server 2010.
   
 > [!NOTE]
-> Se decidi di attivare l'affinità basata su cookie per il bilanciamento del carico di rete, non ci saranno problemi a farlo, anche se l'ambiente non ne ha bisogno. 
+> Se decidi di attivare l'affinità basata su cookie per il bilanciamento del carico di rete, non ci sarà alcun problema, anche se l'ambiente non ne ha bisogno. 
   
 Se **l'ambiente non richiede** affinità basata su cookie:
   
-- Nella regola di pubblicazione del proxy inverso per la porta 443 impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
+- Nella regola di pubblicazione del proxy inverso per la porta 443, impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
     
 Per le distribuzioni **che necessitano** di affinità basata su cookie:
   
-- Nella regola di pubblicazione del proxy inverso per la porta 443 impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
+- Nella regola di pubblicazione del proxy inverso per la porta 443, impostare Inoltra intestazione **host** su **True.** In questo modo l'URL originale verrà inoltrato.
     
 - Il cookie del servizio di **bilanciamento del carico** hardware non deve essere contrassegnato come httpOnly.
     
@@ -183,7 +183,7 @@ Per le distribuzioni **che necessitano** di affinità basata su cookie:
     
 - Il cookie del servizio di bilanciamento del carico **hardware** deve essere denominato **MS-WSMAN** (questo è il valore previsto per i servizi Web e non può essere modificato).
     
-- Il **cookie** del servizio di bilanciamento del carico hardware deve essere impostato in ogni risposta HTTP per la quale la richiesta HTTP in ingresso non dispone di un cookie, indipendentemente dal fatto che una precedente risposta HTTP sulla stessa connessione TCP abbia ricevuto un cookie. Se il servizio di bilanciamento del carico hardware ottimizza l'inserimento dei cookie in modo che si verifichi una sola volta per ogni connessione TCP, tale ottimizzazione **non deve** essere utilizzata.
+- Il **cookie** del servizio di bilanciamento del carico hardware deve essere impostato in ogni risposta HTTP per la quale la richiesta HTTP in ingresso non dispone di un cookie, indipendentemente dal fatto che una precedente risposta HTTP sulla stessa connessione TCP abbia ottenuto un cookie. Se il servizio di bilanciamento del carico hardware ottimizza l'inserimento dei cookie in modo che si verifichi una sola volta per ogni connessione TCP, tale ottimizzazione **non deve** essere utilizzata.
     
 > [!NOTE]
 > Le configurazioni HLB usano in genere l'affinità di origine e la durata della sessione TCP di 20 minuti, cosa che va bene per Skype for Business Server e i relativi client, perché lo stato della sessione viene mantenuto tramite l'utilizzo del client e/o l'interazione dell'applicazione. 
@@ -191,7 +191,7 @@ Per le distribuzioni **che necessitano** di affinità basata su cookie:
 Se stai distribuendo dispositivi mobili, il bilanciamento del carico deve essere in grado di bilanciare il carico delle singole richieste all'interno di una sessione TCP (in effetti, devi essere in grado di bilanciare il carico di una singola richiesta in base all'indirizzo IP di destinazione).
   
 > [!IMPORTANT]
-> Gli F5 HLB hanno una funzionalità denominata OneConnect. Garantisce che ogni richiesta all'interno di una connessione TCP sia bilanciata singolarmente. Se stai distribuendo dispositivi mobili, assicurati che il fornitore del bilanciamento del carico di rete supporti le stesse funzionalità. Le app per dispositivi mobili iOS più recenti richiedono TLS versione 1.2. Per saperne di più, F5 fornisce impostazioni specifiche per questo scopo. 
+> Gli F5 HLB hanno una funzionalità denominata OneConnect. Garantisce che ogni richiesta all'interno di una connessione TCP sia bilanciata singolarmente. Se stai distribuendo dispositivi mobili, assicurati che il fornitore del bilanciamento del carico di rete supporti le stesse funzionalità. Le app per dispositivi mobili iOS più recenti richiedono TLS versione 1.2. Per saperne di più, F5 fornisce impostazioni specifiche. 
   
 Ecco i requisiti di bilanciamento del carico di rete per i servizi Web del pool Front End (facoltativo) e (obbligatorio):
   
@@ -211,7 +211,7 @@ Ecco i requisiti di bilanciamento del carico di rete per i servizi Web del pool 
    
 #### <a name="port-monitoring-for-hlbs"></a>Monitoraggio delle porte per gli SHLB
 
-È possibile definire il monitoraggio delle porte nei servizi di bilanciamento del carico hardware per determinare quando servizi specifici non sono più disponibili a causa di un errore hardware o di comunicazione. Ad esempio, se il servizio Front End Server (RTCSRV) si interrompe a causa di un errore del Front End Server o del pool Front End, anche il monitoraggio del bilanciamento del carico di rete dovrebbe interrompere la ricezione del traffico sui servizi Web. È consigliabile implementare il monitoraggio delle porte nel bilanciamento del carico di rete per monitorare quanto segue per l'interfaccia esterna HLB:
+È possibile definire il monitoraggio delle porte nei servizi di bilanciamento del carico hardware per determinare quando servizi specifici non sono più disponibili a causa di un errore hardware o di comunicazione. Ad esempio, se il servizio Front End Server (RTCSRV) si interrompe a causa di un errore del Front End Server o del pool Front End, anche il monitoraggio del bilanciamento del carico di rete dovrebbe interrompere la ricezione del traffico nei servizi Web. È consigliabile implementare il monitoraggio delle porte nel bilanciamento del carico di rete per monitorare quanto segue per l'interfaccia esterna HLB:
   
 |**IP virtuale/Porta**|**Porta nodo**|**Computer/Monitor nodo**|**Profilo persistenza**|**Note**|
 |:-----|:-----|:-----|:-----|:-----|
@@ -224,4 +224,4 @@ Sono stati trattati i requisiti hardware e software dei server perimetrali nei r
   
 ## <a name="collocation"></a>Collocazione
 
-La collocazione dei server perimetrali è stata trattata nella documentazione [di](../../plan-your-deployment/topology-basics/topology-basics.md) base sulla Skype for Business Server topologia.
+La collocazione dei server perimetrali è stata trattata nella documentazione [di](../../plan-your-deployment/topology-basics/topology-basics.md) base Skype for Business Server topologia.

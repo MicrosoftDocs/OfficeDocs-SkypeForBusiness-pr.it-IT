@@ -14,15 +14,15 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come creare e gestire i criteri di routing vocale in Microsoft Teams.
-ms.openlocfilehash: 3dbcd770a4806768e122caa4edb3293a349ea57c4c553434c530b1a2deb80ac9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 15e0d14310865244570dee677ac19238e9510628
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350878"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598460"
 ---
 # <a name="manage-voice-routing-policies-for-direct-routing"></a>Gestire i criteri di routing vocale per il routing diretto
 
@@ -38,7 +38,7 @@ Un criterio di routing vocale è un contenitore per i record di utilizzo PSTN. P
 
 ### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri di  >  **routing vocale** e quindi fare clic su **Aggiungi.**<br>
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri  >  **di routing vocale** e quindi fare clic su **Aggiungi.**<br>
     ![Screenshot della pagina Aggiungi criteri di routing vocale nell'interfaccia Microsoft Teams di amministrazione](media/manage-voice-routing-policies.png) 
 2. Immettere un nome e una descrizione per il criterio.
 3. In **Record di utilizzo PSTN** fare clic su Aggiungi utilizzo **PSTN** e quindi selezionare i record da aggiungere. Se è necessario creare un nuovo record di utilizzo PSTN, fare clic su **Aggiungi**.
@@ -56,7 +56,7 @@ Vedere [New-CsOnlineVoiceRoutingPolicy](/powershell/module/skype/new-csonlinevoi
 
 È possibile modificare i criteri globali o i criteri personalizzati creati dall'utente.
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri di  >  **routing vocale.**
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Criteri di  >  **routing vocale.**
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Fare **clic su Aggiungi/rimuovi record di utilizzo PSTN,** apportare le modifiche desiderate e quindi fare clic su **Salva.**
 

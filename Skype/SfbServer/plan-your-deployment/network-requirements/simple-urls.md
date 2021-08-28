@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3a3c9b22-892f-45a7-b05c-539d358a1a86
-description: "Riepilogo: esaminare le considerazioni relative all'URL semplice in questo argomento prima di implementare i record DNS per Skype for Business Server."
-ms.openlocfilehash: 11e3b5222e7ec1929580049f355525c40884b8d3aa9a55ccfbbdc18264a24500
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: leggere le considerazioni relative all'URL semplice in questo argomento prima di implementare i record DNS per Skype for Business Server."
+ms.openlocfilehash: a36805566b7bdb9f95ef14b572a8efdccdeb916b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280949"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58622138"
 ---
 # <a name="dns-requirements-for-simple-urls-in-skype-for-business-server"></a>Requisiti DNS per gli URL semplici in Skype for Business Server
 
@@ -42,16 +42,16 @@ La definizione di un URL semplice richiederà anche l'impostazione di un record 
 
 Generatore di topologie e i cmdlet Skype for Business Server Management Shell applicano diverse regole di convalida per gli URL semplici. È obbligatorio impostare URL semplici riunione e per accesso esterno, mentre l'impostazione dell'URL semplice di amministrazione è facoltativa. Ogni dominio SIP deve disporre di un URL semplice riunione separato, ma sono sufficienti un URL semplice per accesso esterno e un URL semplice di amministrazione per l'intera organizzazione.
 
-Ogni URL semplice dell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice (ad esempio, non è possibile impostare SfB2015.contoso.com/Meet come URL semplice Meet e SfB2015.contoso.com/Meet/Dialin come URL semplice dialin). I nomi di URL semplici non possono contenere il nome di dominio completo di alcun pool o le informazioni sulle porte (ad esempio, https://FQDN:88/meet non sono consentite). Tutti gli URL semplici devono iniziare con il prefisso https:// semplice. 
+Ogni URL semplice dell'organizzazione deve avere un nome univoco e non può essere un prefisso di un altro URL semplice(ad esempio, non è possibile impostare SfB2015.contoso.com/Meet come URL semplice Meet e SfB2015.contoso.com/Meet/Dialin come URL semplice dialin). I nomi di URL semplici non possono contenere il nome di dominio completo di alcun pool o le informazioni sulle porte (ad esempio, https://FQDN:88/meet non sono consentite). Tutti gli URL semplici devono iniziare con il prefisso https:// semplice. 
 
 Gli URL semplici possono includere solo caratteri alfanumerici, ovvero a-z, A-Z, 0-9 e il punto (.). Se si utilizzano altri caratteri, gli URL semplici potrebbero non funzionare come previsto.
 
 ## <a name="changing-simple-urls-after-deployment"></a>Modifica degli URL semplici dopo la distribuzione
 <a name="BK_Valid"> </a>
 
-Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario tenere presente l'impatto della modifica sui record DNS e sui certificati per gli URL semplici. Se la base di un URL semplice cambia, è necessario modificare anche i record DNS e i certificati. Ad esempio, se si cambia l'URL di base da SfB2015.contoso.com a meet.contoso.com, è necessario modificare i record DNS e i certificati per fare riferimento a https://SfB2015.contoso.com/Meet https://meet.contoso.com meet.contoso.com. Se è stato modificato l'URL semplice da a , l'URL di base di SfB2015.contoso.com rimane lo stesso, quindi non sono necessarie modifiche al DNS o https://SfB2015.contoso.com/Meet https://SfB2015.contoso.com/Meetings al certificato.
+Se si modifica un URL semplice dopo la distribuzione iniziale, è necessario tenere presente l'impatto della modifica sui record DNS e sui certificati per gli URL semplici. Se la base di un URL semplice cambia, è necessario modificare anche i record DNS e i certificati. Ad esempio, se si cambia l'URL di base da SfB2015.contoso.com a meet.contoso.com, è necessario modificare i record DNS e i certificati per fare riferimento a https://SfB2015.contoso.com/Meet https://meet.contoso.com meet.contoso.com. Se è stato modificato l'URL semplice da a , l'URL di base di SfB2015.contoso.com rimane lo stesso, pertanto non sono necessarie modifiche al DNS o https://SfB2015.contoso.com/Meet https://SfB2015.contoso.com/Meetings al certificato.
 
-Ogni volta che si modifica un nome DI URL semplice, tuttavia, è necessario eseguire **Enable-CsComputer** in ogni Server Director e Front End Server per registrare la modifica.
+Ogni volta che si modifica un nome URL semplice, tuttavia, è necessario eseguire **Enable-CsComputer** in ogni Server Director e Front End Server per registrare la modifica.
 
 ## <a name="naming-examples-for-simple-urls"></a>Esempi di denominazione per URL semplici
 <a name="BK_Valid"> </a>
@@ -98,7 +98,7 @@ L'opzione 3 è più utile se si dispone di numerosi domini SIP e si desidera che
 ## <a name="disaster-recovery-option-for-simple-urls"></a>Opzione di ripristino di emergenza per GLI URL semplici
 <a name="BK_Valid"> </a>
 
-Se si dispone di più siti che contengono pool Front End e il provider DNS supporta GeoDNS, è possibile configurare i record DNS per gli URL semplici per supportare il ripristino di emergenza, in modo che la funzionalità URL semplice continui anche se un intero pool Front End si è arrestato. Questa funzionalità di ripristino di emergenza supporta gli URL semplici meet e dial-in.
+Se si dispone di più siti che contengono pool Front End e il provider DNS supporta GeoDNS, è possibile configurare i record DNS per gli URL semplici in modo da supportare il ripristino di emergenza, in modo che la funzionalità URL semplice continui anche se un intero pool Front End si è arrestato. Questa funzionalità di ripristino di emergenza supporta gli URL semplici meet e dial-in.
 
 Per eseguire questa configurazione, creare due indirizzi GeoDNS. Ogni indirizzo presenta due record DNS A o CNAME che si risolvono in due pool che vengono accoppiati per il ripristino di emergenza. Un indirizzo GeoDNS viene usato per l'accesso interno e si risolve nell'FQDN Web interno o nell'indirizzo IP del bilanciamento del carico per i due pool. L'altro indirizzo GeoDNS viene usato per l'accesso esterno e si risolve nell'FQDN Web esterno o nell'indirizzo IP del bilanciamento del carico per i due pool. Di seguito viene riportato un esempio dell'URL semplice Riunione, in cui vengono usati gli FQDN per i pool. 
 

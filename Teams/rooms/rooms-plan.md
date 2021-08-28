@@ -9,28 +9,28 @@ ms.topic: conceptual
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
 ms.collection:
 - M365-collaboration
 - m365initiative-meetings
-description: Questo articolo illustra le considerazioni di pianificazione pertinenti per la distribuzione di Microsoft Teams Rooms, la nuova generazione di Skype Room Systems.
-ms.openlocfilehash: 6112e341d9a76b77d2c8f1a93d27c2c24d0d86cd7c17a499e0e55cfa7d2e1b23
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Questo articolo illustra le considerazioni di pianificazione pertinenti per la distribuzione di Microsoft Teams Rooms, la prossima generazione di Skype Room Systems.
+ms.openlocfilehash: e23c28bc39c9c4b70ae9ae10a6867427a5f51f39
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54348781"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598350"
 ---
 # <a name="plan-microsoft-teams-rooms"></a>Pianificare Microsoft Teams Rooms
 
-Questo articolo introduce un approccio end-to-end alla pianificazione, alla distribuzione e all'Microsoft Teams Rooms nell'ambito della strategia generale per riunioni e sale riunioni.
+Questo articolo introduce un approccio end-to-end per la pianificazione, la distribuzione e l'esecuzione di Microsoft Teams Rooms nell'ambito della strategia generale per riunioni e sale riunioni.
 
 Di seguito sono riportate informazioni sulla pianificazione che illustrano l'approccio consigliato e le decisioni chiave da prendere, con collegamenti a informazioni tecniche di supporto. È consigliabile esaminare le sezioni Pianificare, Distribuire e Gestire anche se si è già completamente distribuiti.
 
 ## <a name="overview-of-microsoft-teams-rooms"></a>Panoramica delle Microsoft Teams Rooms
 
-Microsoft Teams Rooms offre un'esperienza di riunione completa che consente di condividere video, audio e contenuti HD in riunioni di tutte le dimensioni, da piccole aree di riunione a sale riunioni di grandi dimensioni.
+Microsoft Teams Rooms offre un'esperienza di riunione completa che consente la condivisione di video, audio e contenuti HD in riunioni di tutte le dimensioni, da piccole aree riunioni a sale riunioni di grandi dimensioni.
 
 ![Una console, un microfono e uno schermo di grandi dimensioni montati su una parete di una sala riunioni illustrano gli elementi di un esempio Microsoft Teams Rooms configurazione.](../media/room-systems-image1.png "Una console, un microfono e uno schermo di grandi dimensioni montati su una parete di una sala riunioni illustrano gli elementi di un esempio Microsoft Teams Rooms configurazione.")
 
@@ -50,25 +50,25 @@ Microsoft Teams Rooms include i componenti chiave seguenti per offrire un'esperi
 
 È possibile acquistare questi componenti come pacchetti preinstallati da diversi fornitori oppure acquistare i componenti supportati singolarmente seguendo i requisiti documentati [in questo articolo.](requirements.md)
 
-Oltre alla combinazione Surface Pro/dock, è anche possibile acquistare Microsoft Teams Rooms con il pannello di controllo touchscreen, il calcolo, il dock e i principali dispositivi periferici integrati. 
+Oltre alla combinazione Surface Pro/dock, è anche possibile acquistare Microsoft Teams Rooms con il pannello di controllo touchscreen, il computer, il dock e i principali dispositivi periferici integrati. 
 
 In genere, i pacchetti e le unità integrate includono software preinstallato, mentre se si acquistano i componenti supportati singolarmente per i sistemi Surface Pro, è necessario installare il software. Per istruzioni, vedere [questo articolo sull'installazione di software nei dispositivi.](rooms-scale.md) 
 
-È possibile distribuire Microsoft Teams Rooms con Microsoft Teams, Skype for Business Online o Skype for Business distribuzioni ibride o locali.  Per informazioni [sulle licenze necessarie,](rooms-licensing.md) vedere l'Teams Sala riunioni gestione licenze.
+È possibile distribuire Microsoft Teams Rooms con Microsoft Teams, Skype for Business Online o Skype for Business distribuzioni ibride o locali.  Per informazioni [sulle licenze necessarie, Teams Sala riunioni](rooms-licensing.md) aggiornamento delle licenze.
 
 | &nbsp;   |  &nbsp;   |
 |-----------|------------|
-|![decidere la distribuzione](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Si distribuiranno Microsoft Teams Rooms nell'organizzazione? </li><li>Come si acquistano i Microsoft Teams Rooms, in bundle, come componenti separati o come unità integrate?</li></ul> |
+|![decidere la distribuzione](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Si distribuiranno Microsoft Teams Rooms nell'organizzazione? </li><li>Come si acquistano i sistemi Microsoft Teams Rooms, in bundle, come componenti separati o come unità integrate?</li></ul> |
 | ![identificare le attività](../media/audio_conferencing_image9.png)<br/>Passaggi successivi | <ul><li>Identificare gli utenti che intraprenderanno le attività principali durante l'intera distribuzione.</li><li>Esaminare le sale riunioni disponibili (e pianificare la configurazione) per capire dove si vuole distribuire Microsoft Teams Rooms e i dispositivi periferici appropriati per le dimensioni della sala.</li></ul> |
 | | |
 
-## <a name="identify-who-will-undertake-the-key-activities-throughout-your-deployment&quot;></a>Identificare gli utenti che intraprenderanno le attività principali durante la distribuzione
+## <a name="identify-who-will-undertake-the-key-activities-throughout-your-deployment"></a>Identificare gli utenti che intraprenderanno le attività principali durante la distribuzione
 
 Usare l'approccio illustrato di seguito per illustrare la distribuzione e personalizzare gli output di esempio forniti in questi articoli in base alle esigenze dell'organizzazione.
 
-Iniziare con la comprensione delle sale riunioni disponibili e l'implementazione delle soluzioni più ottimali in futuro, quindi passare alla selezione e all'acquisto delle apparecchiature necessarie, alla pre-elaborazione dei siti, alla configurazione e alla distribuzione del servizio, alla gestione delle modifiche e all'adozione degli utenti e allo sviluppo di operazioni e procedure di manutenzione.
+Iniziare con la comprensione delle sale riunioni disponibili e con l'immaginarne il funzionamento migliore in futuro, quindi passare alla selezione e all'acquisto delle apparecchiature necessarie, alla pre-elaborazione dei siti, alla configurazione e alla distribuzione del servizio, alla gestione delle modifiche e all'adozione degli utenti e allo sviluppo di operazioni e procedure di manutenzione.
 
-![Iniziare con la comprensione delle risorse disponibili e l'implementazione delle soluzioni più ottimali, quindi passare alla selezione e all'acquisto delle apparecchiature necessarie, alla preparazione dei siti, alla configurazione e alla distribuzione del servizio, alla gestione delle modifiche e all'adozione degli utenti e allo sviluppo di operazioni e procedure di manutenzione.](../media/room-systems-image2.png &quot;Iniziare con la comprensione delle risorse disponibili e l'implementazione delle soluzioni più ottimali, quindi passare alla selezione e all'acquisto delle apparecchiature necessarie, alla preparazione dei siti, alla configurazione e alla distribuzione del servizio, alla gestione delle modifiche e all'adozione degli utenti e allo sviluppo di operazioni e procedure di manutenzione.")
+![Iniziare con la comprensione delle risorse disponibili e l'implementazione delle soluzioni più ottimali, quindi passare alla selezione e all'acquisto delle apparecchiature necessarie, alla preparazione dei siti, alla configurazione e alla distribuzione del servizio, alla gestione delle modifiche e all'adozione degli utenti e allo sviluppo di operazioni e procedure di manutenzione.](../media/room-systems-image2.png "Iniziare con la comprensione delle risorse disponibili e l'implementazione delle soluzioni più ottimali, quindi passare alla selezione e all'acquisto delle apparecchiature necessarie, alla preparazione dei siti, alla configurazione e alla distribuzione del servizio, alla gestione delle modifiche e all'adozione degli utenti e allo sviluppo di operazioni e procedure di manutenzione.")
 
 Potrebbe essere necessario coordinare queste attività in diversi team. Microsoft offre una visualizzazione generale delle attività principali da coprire e suggerimenti per i team che in genere sono coinvolti nella distribuzione e nella gestione dei sistemi delle sale riunioni, per decidere con chi è necessario collaborare.
 
@@ -88,7 +88,7 @@ Potrebbe essere necessario coordinare queste attività in diversi team. Microsof
 
 ## <a name="room-inventory-and-capability-planning"></a>Inventario delle chat room e pianificazione delle funzionalità
 
-Il primo passaggio consiste nell'eseguire l'inventario delle sale riunioni e delle conferenze esistenti dell'organizzazione per comprenderne l'ambiente, le dimensioni, il layout e lo scopo e per identificare le funzionalità che si vuole che ogni sala nell'ambito abbia in futuro, ad esempio quali funzionalità di collaborazione più avanzate verranno abilitate nella sala. 
+Il primo passaggio consiste nell'eseguire l'inventario delle sale riunioni e delle conferenze esistenti dell'organizzazione per comprenderne l'ambiente, le dimensioni, il layout e lo scopo e per identificare le funzionalità che si vuole che ogni sala nell'ambito abbia in futuro, ad esempio quali funzionalità di collaborazione più avanzate saranno abilitate nella sala. 
 
 Dopo aver creato un inventario delle apparecchiature e delle funzionalità in ogni sala esistente, i requisiti per il feed della sala nella selezione del dispositivo prevedeno di creare una soluzione di conferenza completa. Le modalità (audio, video) necessarie per ogni stanza, oltre alle dimensioni e allo scopo della stanza, svolgono un ruolo importante nel decidere quale soluzione è più appropriata per ogni sala. 
 
@@ -107,7 +107,7 @@ _Inventario di esempio per riunioni/sale riunioni_
 
 ## <a name="device-selection"></a>Selezione del dispositivo 
 
-Valutare quale Microsoft Teams Rooms più adatta per ogni stanza in base alle funzionalità future desiderate per la sala. Decidere quali dispositivi av sono più adatti, a seconda delle dimensioni della stanza e del layout. 
+Valutare la Microsoft Teams Rooms più adatta per ogni stanza in base alle funzionalità future desiderate per la chat room. Decidere quali dispositivi av sono più adatti, a seconda delle dimensioni della stanza e del layout. 
 
 Per indicazioni sul tipo di dispositivi di sistema e di periferiche in base al tipo e alle dimensioni della stanza, vedere l'articolo Microsoft Teams Rooms [requisiti di](requirements.md) sistema. 
 
@@ -120,7 +120,7 @@ In base al fornitore preferito, usare le informazioni fornite nell'articolo sui 
 | ![chat room nell'ambito](../media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Dall'inventario, quali tipi di chat room sono nell'ambito della distribuzione?</li><li>Quali sistemi verranno distribuiti per ogni tipo di chat room?</li></ul>|
 | ![raccogliere materiale](../media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Iniziare a raccogliere materiale operativo chiave per i sistemi scelti e coinvolgere il team di approvvigionamento.</li></ul>|
 
-_Modello Microsoft Teams Rooms di distribuzione per l'organizzazione_
+_Esempio Microsoft Teams Rooms di distribuzione per l'organizzazione_
 
 | **Tipo/dimensioni della stanza** | **Numero di persone**  | **Microsoft Teams Rooms sistema** | **Dispositivi periferici**  | **Display(s)** |
 |----------------------|-----------------------|----------------------------------|-------------------------|-----------------|
@@ -133,11 +133,11 @@ _Modello Microsoft Teams Rooms di distribuzione per l'organizzazione_
 
 ## <a name="procurement"></a>Approvvigionamento 
 
-È possibile acquistare il sistema scelto come bundle o come soluzione integrata tramite i partner di dispositivi. È anche possibile acquisire un dock di dispositivi partner e preparare la propria soluzione di Microsoft Teams Rooms usando un dispositivo Surface Pro e i dispositivi _av_ supportati esistenti. 
+È possibile acquistare il sistema scelto come bundle o come soluzione integrata tramite i partner di dispositivi. È anche possibile acquisire un dock di dispositivi partner e preparare la propria soluzione  di Microsoft Teams Rooms usando un dispositivo Surface Pro e i dispositivi av supportati esistenti. 
 
 È possibile acquisire Microsoft Teams Rooms da un certo numero di partner elencati nell'articolo [requisiti.](requirements.md) Visita i siti Web dei partner per saperne di più su queste soluzioni e opzioni di approvvigionamento. 
 
-A seconda della scala di distribuzione e dell'approccio, è possibile decidere di spedire i dispositivi Microsoft Teams Rooms e le periferiche supportate in una posizione centrale per la configurazione iniziale e l'assegnazione. Questo potrebbe essere un buon approccio per un'implementazione a fasi in molti siti. In caso contrario, è possibile scegliere di spedire i pacchetti direttamente ai siti. 
+A seconda della scala di distribuzione e dell'approccio, è possibile decidere di spedire i dispositivi Microsoft Teams Rooms e le periferiche supportate in una posizione centrale per la configurazione e l'assegnazione iniziali. Questo potrebbe essere un buon approccio per un'implementazione a fasi in molti siti. In caso contrario, è possibile scegliere di spedire i pacchetti direttamente ai siti. 
 
 |   &nbsp; |  &nbsp;   |
 |-----------|------------|
@@ -150,7 +150,7 @@ L'organizzazione deve eseguire attività di monitoraggio, amministrazione e gest
 
 Molte organizzazioni hanno un team o un partner AV che gestisce le sale riunioni e i dispositivi. Questo team dovrebbe essere coinvolto nel concordare chi gestirà i dispositivi Microsoft Teams Rooms in futuro per monitorare le prestazioni e distribuire aggiornamenti software e aggiornamenti rapidi. 
 
-Valutare la coda dell'helpdesk da instradare Microsoft Teams Rooms Microsoft Teams Rooms</DICT__Microsoft⚐Teams⚐Rooms> e le procedure di risoluzione dei problemi principali che possono eseguire. Un buon punto di partenza per queste domande frequenti è la [Guida dell'utente](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) e [i problemi noti.](known-issues.md)
+Prendere in considerazione la coda dell'helpdesk a cui instradare le chiamate correlate Microsoft Teams Rooms e fornire una domanda frequente al team dell'helpdesk in modo che possa comprendere meglio come usare Microsoft Teams Rooms e i passaggi chiave per la risoluzione dei problemi che possono eseguire. Un buon punto di partenza per queste domande frequenti è la [Guida dell'utente](https://support.office.com/article/Skype-Room-Systems-version-2-help-e667f40e-5aab-40c1-bd68-611fe0002ba2) e [i problemi noti.](known-issues.md)
 
 |  &nbsp;  |  &nbsp;   |
 |-----------|------------|

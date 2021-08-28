@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni su come configurare le Microsoft 365 Business Voice nell'organizzazione o nelle piccole e medie imprese.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8b8d5c89fca6fd9ff84d06b784b51040dbafe20c0e2ccc74fde845b6990095e2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: eceaba6a099a718d6061c7db3888a63d6faf50f5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314132"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58635810"
 ---
 # <a name="set-up-microsoft-365-business-voice"></a>Configurare Microsoft 365 Business Voice
 
@@ -36,7 +36,7 @@ Business Voice è un sistema telefonico completo in grado di sostituire il provi
 
 * Potrai ricevere chiamate a numero verde o a numero verde su una linea telefonica aziendale principale. Se si vuole, è anche possibile configurare un menu di chiamata.
 * Gli utenti impostati con Business Voice avranno i propri numeri di telefono con chiamata diretta che possono usare per effettuare e ricevere chiamate telefoniche da qualsiasi dispositivo Teams installato.
-* I partecipanti alla riunione potranno accedere alle riunioni usando un normale telefono se non riescono a partecipare da un Teams clienti.
+* I partecipanti alla riunione potranno accedere alle riunioni usando un telefono normale se non riescono a partecipare da un Teams clienti.
 * Se hai numeri di telefono esistenti, potrai continuare a usarli dopo che saranno stati spostati in VoIP aziendale.
 
 Per altre informazioni su Business Voice, vedere Che cos'è [Microsoft 365 Business Voice?](whats-business-voice.md).
@@ -56,7 +56,7 @@ Prima di configurare VoIP aziendale, è necessario eseguire alcune operazioni. L
 
 * **Acquista le licenze Business Voice** e, se vuoi ottenere un numero verde o effettuare chiamate interurbane, Crediti comunicazioni. Per altre informazioni, vedere Cosa è necessario acquistare per usare [Microsoft 365 Business Voice?](what-to-buy.md).
 * **Verificare che la connessione Internet sia in grado di supportare Business Voice.** Per altre informazioni, vedere [Controllare la connessione Internet per VoIP aziendale.](get-ready-internet.md)
-* **Configurare le Teams nei dispositivi** degli utenti, configurare i messaggi di saluto della segreteria telefonica e aiutare gli utenti a conoscere Teams. Per altre informazioni, vedere [Come si preparano](prepare-users.md)gli utenti per Microsoft 365 Business Voice? .
+* **Configurare le Teams nei dispositivi degli** utenti, configurare i messaggi di saluto della segreteria telefonica e aiutare gli utenti a conoscere Teams. Per altre informazioni, vedere [Come si preparano](prepare-users.md)gli utenti per Microsoft 365 Business Voice? .
 
 Dopo aver preparato l'organizzazione per Business Voice, selezionare **Passaggio successivo: Avviare la configurazione di VoIP aziendale.**
 

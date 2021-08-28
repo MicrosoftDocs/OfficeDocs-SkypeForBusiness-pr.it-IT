@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: c24e0891-e108-4cb6-9902-c6a4c8e68455
 description: "Riepilogo: configurare l'autenticazione a due fattori in Skype for Business Server."
-ms.openlocfilehash: 128ae4fcc1a9e7cd9817e73539b1bf1290883a1d
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: f4c8532d08a3ed6c06a702039eea224f231cbd06
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612395"
 ---
 # <a name="configure-two-factor-authentication-in-skype-for-business-server"></a>Configurare l'autenticazione a due fattori in Skype for Business Server
 
@@ -66,13 +66,13 @@ Per informazioni su come installare una CA Enterprise radice, vedere [Install an
 
 Un fattore da considerare quando si distribuisce l'autenticazione a due fattori e la tecnologia smart card è il costo dell'implementazione. Windows 8 offre una serie di nuove funzionalità di sicurezza e una delle nuove funzionalità più interessanti è il supporto per le smart card virtuali.
 
-Per i computer dotati di un chip TPM (Trusted Platform Module) che soddisfa la specifica versione 1.2, le organizzazioni possono ora ottenere i vantaggi dell'accesso con smart card senza effettuare ulteriori investimenti nell'hardware. Per ulteriori informazioni, vedere [Utilizzo di smart card virtuali con Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=313365).
+Per i computer dotati di un chip TPM (Trusted Platform Module) che soddisfa la specifica versione 1.2, le organizzazioni possono ora ottenere i vantaggi dell'accesso con smart card senza effettuare ulteriori investimenti nell'hardware. Per ulteriori informazioni, vedere [Using Virtual Smart Cards with Windows 8](https://go.microsoft.com/fwlink/p/?LinkId=313365).
 
-### <a name="to-configure-windows-8-for-virtual-smart-cards"></a>Per configurare Windows 8 per le smart card virtuali
+### <a name="to-configure-windows-8-for-virtual-smart-cards"></a>Per configurare Windows 8 per smart card virtuali
 
 1. Accedere al computer Windows 8 utilizzando le credenziali di un Skype for Business utente abilitato.
 
-2. Nella schermata Windows 8 Start, spostare il cursore nell'angolo in basso a destra dello schermo.
+2. Nella schermata Windows 8 Start, sposta il cursore nell'angolo in basso a destra dello schermo.
 
 3. Selezionare **l'opzione** Cerca e quindi cercare Prompt dei comandi.
 
@@ -127,7 +127,7 @@ Per ulteriori informazioni sulla registrazione per conto degli utenti come agent
 3. Passare alla **pagina Registrazione Web Autorità** di certificazione (ad https://MyCA.contoso.com/certsrv) esempio, .
 
     > [!NOTE]
-    > Se si usa Internet Explorer 10, potrebbe essere necessario visualizzare questo sito Web in modalità compatibilità.
+    > Se si utilizza Internet Explorer 10, potrebbe essere necessario visualizzare questo sito Web in modalità compatibilità.
 
 4. Nella pagina **di** benvenuto selezionare **Richiedi un certificato.**
 
@@ -143,7 +143,7 @@ Per ulteriori informazioni sulla registrazione per conto degli utenti come agent
 
     - Per **CSP,** selezionare **Microsoft Base Smart Card Crypto Provider**
 
-    - Per **Uso chiave** selezionare Exchange (questa è l'unica opzione disponibile). 
+    - Per **Uso chiave,** **selezionare Exchange** (questa è l'unica opzione disponibile).
 
     - Per **Dimensioni chiave** immettere 2048
 
@@ -205,7 +205,7 @@ Nella sezione seguente viene descritto come configurare Active Directory Federat
 
 6. Espandere **Relazioni di** trust  >  **Trusting Party Trusts**.
 
-7. Verificare che sia stato creato un nuovo trust per l'Skype for Business Server.
+7. Verificare che sia stato creato un nuovo trust per il Skype for Business Server.
 
 8. Creare e assegnare una regola di autorizzazione rilascio per l'attendibilità del relying party Windows PowerShell utilizzando i comandi seguenti:
 
@@ -218,7 +218,7 @@ Nella sezione seguente viene descritto come configurare Active Directory Federat
 -IssuanceAuthorizationRules $IssuanceAuthorizationRules
   ```
 
-9. Creare e assegnare una regola di trasformazione rilascio per l'attendibilità del relying party Windows PowerShell utilizzando i comandi seguenti:
+9. Creare e assegnare una regola di trasformazione rilascio per l'attendibilità del relying party usando Windows PowerShell eseguendo i comandi seguenti:
 
   ```PowerShell
   $IssuanceTransformRules = '@RuleTemplate = "PassThroughClaims" @RuleName = "Sid" c:[Type == "https://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid"]=> issue(claim = c);'
@@ -264,7 +264,7 @@ Utilizzando l'autenticazione basata su form, è possibile sviluppare una pagina 
 
 8. Spostare la riga contenente il tipo di autenticazione TLSClient all'inizio dell'elenco nella sezione.
 
-9. Salvare e chiudere il file web.config file.
+9. Salvare e chiudere il web.config file.
 
 10. Avviare un prompt dei comandi con privilegi elevati.
 
@@ -283,7 +283,7 @@ Nella sezione seguente viene descritto come configurare Skype for Business Serve
 
 ### <a name="web-service-configuration"></a>Configurazione servizio Web
 
-Nei passaggi seguenti viene descritto come creare una configurazione del servizio Web personalizzata per Server Director, pool Enterprise e server edizione Standard che verranno abilitati per l'autenticazione passiva.
+Nei passaggi seguenti viene descritto come creare una configurazione del servizio Web personalizzata per Director, pool di Enterprise e server edizione Standard che verranno abilitati per l'autenticazione passiva.
 
 ### <a name="to-create-a-custom-web-service-configuration"></a>Per creare una configurazione del servizio Web personalizzata
 
@@ -291,7 +291,7 @@ Nei passaggi seguenti viene descritto come creare una configurazione del servizi
 
 2. Avviare Skype for Business Server Management Shell.
 
-3. Dalla riga di comando di Skype for Business Server Management Shell creare una nuova configurazione del servizio Web per ogni server Director, pool di Enterprise e edizione Standard che verrà abilitato per l'autenticazione passiva eseguendo il comando seguente:
+3. Dalla riga di comando di Skype for Business Server Management Shell creare una nuova configurazione del servizio Web per ogni server Director, pool di Enterprise e server edizione Standard che verrà abilitato per l'autenticazione passiva eseguendo il comando seguente:
 
   ```PowerShell
   New-CsWebServiceConfiguration -Identity "Service:WebServer:SfBPool01.contoso.com" -UseWsFedPassiveAuth $true -WsFedPassiveMetadataUri https://dc.contoso.com/federationmetadata/2007-06/federationmetadata.xml
@@ -320,13 +320,13 @@ Nei passaggi seguenti viene descritto come creare una configurazione del servizi
 
 ### <a name="proxy-configuration"></a>Configurazione proxy
 
-Quando l'autenticazione del certificato è disabilitata per i servizi Web di Skype for Business, il client Skype for Business utilizzerà un tipo di autenticazione meno preferito, ad esempio Kerberos o NTLM, per l'autenticazione nel servizio di registrazione. L'autenticazione del certificato è ancora necessaria per consentire al client di recuperare un webticket, tuttavia, Kerberos e NTLM devono essere disabilitati per il servizio di registrazione.
+Quando l'autenticazione dei certificati è disabilitata per i servizi Web di Skype for Business, il client Skype for Business utilizzerà un tipo di autenticazione meno preferito, ad esempio Kerberos o NTLM, per eseguire l'autenticazione nel servizio di registrazione. L'autenticazione del certificato è ancora necessaria per consentire al client di recuperare un webticket, tuttavia, Kerberos e NTLM devono essere disabilitati per il servizio di registrazione.
 
 I passaggi seguenti descrivono come creare una configurazione proxy personalizzata per pool di server perimetrali, pool di Enterprise e server edizione Standard che verranno abilitati per l'autenticazione passiva.
 
 ### <a name="to-create-a-custom-proxy-configuration"></a>Per creare una configurazione proxy personalizzata
 
-1. Dalla riga di comando di Skype for Business Server Management Shell creare una nuova configurazione Skype for Business Server proxy per ogni pool di server perimetrali, pool di Enterprise e server edizione Standard che verrà abilitato per l'autenticazione passiva eseguendo i comandi seguenti:
+1. Dalla riga di comando di Skype for Business Server Management Shell creare una nuova configurazione Skype for Business Server proxy per ogni pool di server perimetrali, pool Enterprise e server edizione Standard che verrà abilitato per l'autenticazione passiva eseguendo i comandi seguenti:
 
   ```PowerShell
   New-CsProxyConfiguration -Identity "Service:EdgeServer:EdgePool01.contoso.com" -UseKerberosForClientToProxyAuth $False -UseNtlmForClientToProxyAuth $False

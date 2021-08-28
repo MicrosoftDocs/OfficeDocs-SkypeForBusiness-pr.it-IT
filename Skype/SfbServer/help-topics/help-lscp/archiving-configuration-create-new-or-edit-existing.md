@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.MonArchSettingEdit
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49096960-c442-4846-be8f-03c167acea41
 description: 'Le configurazioni di archiviazione vengono utilizzate per controllare le opzioni di archiviazione per la distribuzione. Le configurazioni di archiviazione includono la configurazione globale e, facoltativamente, una o più configurazioni di siti e pool:'
-ms.openlocfilehash: e74f5013bce13e014ef422f4dd8322396a8db5256b1ebb771e1f3fa25965e7ee
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 411f9622706faa3388d611b3ae50a14fce739ff3
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54313514"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58596910"
 ---
 # <a name="archiving-configuration-create-new-or-edit-existing"></a>Configurazione archiviazione: crearne una nuova o modificarne una esistente
  
@@ -33,7 +33,7 @@ Le configurazioni di archiviazione vengono utilizzate per controllare le opzioni
 - **Configurazione pool (facoltativo)** È possibile specificare una o più configurazioni di archiviazione del pool per controllare le opzioni di archiviazione per un pool specifico. La configurazione di un pool sostituisce la configurazione globale e la configurazione del sito, ma solo per i pool specificati nelle configurazioni del pool di archiviazione. È possibile modificare o eliminare le configurazioni del pool.
     
 > [!NOTE]
-> Le configurazioni di archiviazione si applicano agli utenti ospitati in Skype for Business Server e, se si abilita l'opzione di integrazione di Microsoft Exchange per utilizzare Exchange 2013 per archiviare i dati di archiviazione in Microsoft Exchange, agli utenti ospitati in Exchange 2013. Tuttavia, alcune opzioni sono implementate in modo leggermente diverso per gli utenti ospitati in Exchange 2013, come descritto nella sezione successiva. 
+> Le configurazioni di archiviazione si applicano agli utenti ospitati in Skype for Business Server e, se si abilita l'opzione di integrazione di Microsoft Exchange per utilizzare Exchange 2013 per archiviare i dati di archiviazione in Microsoft Exchange, agli utenti ospitati in Exchange 2013. Tuttavia, alcune opzioni sono implementate in modo leggermente diverso per gli utenti ospitati Exchange 2013, come descritto nella sezione successiva. 
   
 Per definire le impostazioni di una configurazione di archiviazione nuova o esistente, specificare le seguenti opzioni:
 - **Nome** Ogni configurazione di archiviazione richiede un nome. Il nome è determinato dal tipo di configurazione che si sta aggiungendo o modificando:
@@ -62,7 +62,7 @@ Per definire le impostazioni di una configurazione di archiviazione nuova o esis
     
     Sia la funzionalità di messaggistica immediata che il servizio di conferenza vengono ripristinati automaticamente subito dopo la correzione degli errori.
     
-- **Integrazione Exchange Microsoft** Selezionare questa opzione se si dispone di utenti ospitati in Exchange 2013. Con questa opzione, Exchange 2013 viene utilizzato per archiviare i dati per tali utenti, se le loro cassette postali sono state In-Place conservazione. Se tutti gli utenti sono ospitati in Exchange 2013, non è necessario configurare database SQL Server separati per l'archiviazione dei dati di archiviazione.
+- **Integrazione Exchange Microsoft** Selezionare questa opzione se si dispone di utenti ospitati in Exchange 2013. Con questa opzione, Exchange 2013 viene utilizzato per archiviare i dati per tali utenti, se le loro cassette postali sono state In-Place blocco. Se tutti gli utenti sono ospitati Exchange 2013, non è necessario configurare database SQL Server separati per l'archiviazione dei dati di archiviazione.
     
 - **Abilitare l'eliminazione dei dati di archiviazione** Selezionare questa opzione per abilitare l'eliminazione e specificare le opzioni di eliminazione, tra cui:
     

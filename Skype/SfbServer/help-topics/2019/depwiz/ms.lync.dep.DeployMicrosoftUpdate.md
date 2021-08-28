@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c6a280cb-1428-40b6-b761-cb649b9ff7df
 ROBOTS: NOINDEX, NOFOLLOW
 description: Per informazioni dettagliate sull'utilizzo della Distribuzione guidata per installare Skype for Business Server, vedere Install Skype for Business Server.
-ms.openlocfilehash: bbc68bada622c3bebf43c3c002d7f387b884b9758b07dbfdf462dd493474bade
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 258ce6736580f51ea70958b420b198007a8404e4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317821"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598080"
 ---
 # <a name="deployment-wizard-windows-update"></a>Distribuzione guidata: Windows Update
  

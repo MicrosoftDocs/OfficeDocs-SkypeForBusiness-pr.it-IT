@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.SelectDeniedMembers
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c626b6b4-15f3-4a59-bb1d-55dc8c60f5cb
 description: Un amministratore di Persistent Chat può creare e gestire categorie di chat room. Come parte della creazione e della gestione delle categorie di chat room, un amministratore di Persistent Chat può configurare entità (gruppi/contenitori/utenti di Servizi di dominio Active Directory) che hanno accesso per essere membri/creatori di chat room di una determinata categoria. Un amministratore di Persistent Chat può anche aggiungere DeniedMembers a una categoria e questi diventano esclusioni esplicite all'elenco di elementi consentiti. DeniedMembers esegue l'override di ciò che è in AllowedMembers.
-ms.openlocfilehash: 2e4927532e6991565095693d7c087bcdf5b826d47aaf3fa101e30cecced7664a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ee1221e7d6b7e898018018e0b7be930f289bec50
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331568"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612485"
 ---
 # <a name="select-denied-members"></a>Selezionare membri non consentiti
 

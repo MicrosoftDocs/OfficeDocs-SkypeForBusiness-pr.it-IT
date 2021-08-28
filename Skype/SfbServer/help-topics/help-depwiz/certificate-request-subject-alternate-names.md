@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployCertRequestSanDesc
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 3485f663-e114-43d7-8fe3-fcc4e5ae71ce
-description: Nella pagina Nome soggetto/Nomi alternativi soggetto viene presentato un riepilogo del nome soggetto e di tutti i nomi alternativi soggetto che verranno inseriti nel certificato. I nomi presentati per il nome soggetto e i nomi alternativi soggetto vengono raccolti dal documento di definizione, come è stato creato quando è stata definita la distribuzione in Generatore di topologie.
-ms.openlocfilehash: b194ade5e946c1bee6671908046106afc8818a63e85ae0d2d41eda4b6ddd425f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Nella pagina Nome soggetto/Nomi alternativi soggetto viene presentato un riepilogo del nome soggetto e di tutti i nomi alternativi soggetto che verranno inseriti nel certificato. I nomi presentati per il nome soggetto e i nomi alternativi soggetto vengono raccolti dal documento di definizione, così come è stato creato quando è stata definita la distribuzione in Generatore di topologie.
+ms.openlocfilehash: de0ebd21def75b3b90af1fa406b94b9542767127
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304088"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58612625"
 ---
 # <a name="certificate-request-subject-alternate-names"></a>Richiesta di certificato (nomi soggetto alternativi)
  
-Nella pagina **Nome soggetto/Nomi alternativi soggetto** viene presentato un riepilogo del nome soggetto e di tutti i nomi alternativi soggetto che verranno inseriti nel certificato. I nomi presentati per il nome soggetto e i nomi alternativi soggetto vengono raccolti dal documento di definizione, come è stato creato quando è stata definita la distribuzione in Generatore di topologie.
+Nella pagina **Nome soggetto/Nomi alternativi soggetto** viene presentato un riepilogo del nome soggetto e di tutti i nomi alternativi soggetto che verranno inseriti nel certificato. I nomi presentati per il nome soggetto e i nomi alternativi soggetto vengono raccolti dal documento di definizione, così come è stato creato quando è stata definita la distribuzione in Generatore di topologie.
   
 Se è necessario apportare modifiche al nome soggetto o a uno qualsiasi dei nomi alternativi del soggetto, fare clic su **Annulla** per uscire dalla Richiesta guidata certificati ed eseguire di nuovo Generatore di topologie. Ripubblicare quindi la nuova configurazione con i nomi alternativi soggetto e soggetto definiti correttamente.
   

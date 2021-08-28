@@ -12,25 +12,25 @@ ms.collection:
 - M365-voice
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
 ms.custom: ms.teamsadmincenter.voice.phonenumbers.porting.moreinfo
 description: Ottieni le indicazioni necessarie per convertire i numeri di telefono in Microsoft Teams.
-ms.openlocfilehash: 17ceb8270d9474a64b2a4f2a55e7f015585dacd5ba376708092f1fcf96f57722
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5ed15432517ae6ba5709e699c89c341dc86f30f2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296713"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598390"
 ---
 # <a name="more-information-about-porting"></a>Altre informazioni sulla portabilità
 
 Qui troverai altre informazioni sul porting dei numeri di telefono in Microsoft Teams.
 
-Per istruzioni dettagliate, vedere Trasferire i numeri di telefono Teams [.](transfer-phone-numbers-to-teams.md)
+Per istruzioni dettagliate, vedere Trasferire numeri di telefono a [Teams](transfer-phone-numbers-to-teams.md).
 
 Se serve assistenza o se è necessario ottenere altri numeri di telefono, contattare l'assistenza [del service desk PSTN.](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
 
@@ -42,12 +42,12 @@ Quando si è nella pagina Aggiungi informazioni **sull'account** della procedura
     
 - Numero di telefono di fatturazione (BTN, Billing Telephone Number)
     
-- PIN- se necessario dal provider di servizi o dal gestore corrente
+- PIN- se necessario dal provider di servizi o gestore corrente
     
 - Nome organizzazione
     
     > [!NOTE]
-    > Verranno accettati solo 25 caratteri, inclusi gli spazi. Se il nome dell'organizzazione è più lungo di 25 caratteri, i primi 25 caratteri del nome verranno inviati e l'ordine di trasferimento verrà comunque elaborato.
+    > Verranno accettati solo 25 caratteri, inclusi gli spazi. Se il nome dell'organizzazione è più lungo di 25 caratteri, i primi 25 caratteri del nome verranno inviati e l'ordine di trasferimento continuerà a essere elaborato.
   
 - Nome della persona autorizzata a apportare modifiche all'account
     
@@ -58,7 +58,7 @@ Quando si è nella pagina Aggiungi informazioni **sull'account** della procedura
   
 Per semplificare l'invio dell'ordine di trasferimento ed evitare errori, assicurarsi di eseguire le operazioni seguenti:
   
-- Rimuovere tutte le caratteristiche (ad esempio i gruppi di risposta) associate ai numeri. Assicurarsi che non siano disponibili funzionalità avanzate di controllo delle chiamate, ad esempio La risposta alle chiamate o Anello distintivo, abilitate su questi numeri di telefono.
+- Rimuovere tutte le caratteristiche (ad esempio i gruppi di risposta) associate ai numeri. Assicurarsi che non siano disponibili funzionalità avanzate di controllo delle chiamate, ad esempio La risposta alle chiamate o Anello distintivo, abilitate per questi numeri di telefono.
     
 - Assicurarsi di non aver effettuato nuovi ordini di assistenza o di disconnettersi con il provider di servizi corrente.
     
@@ -67,7 +67,7 @@ Per semplificare l'invio dell'ordine di trasferimento ed evitare errori, assicur
 - Assicurarsi che le informazioni dell'account fornite corrispondano esattamente a quanto registrato dal gestore telefonico. Le informazioni non corrispondenti sono la causa più comune di errori e possono ritardare l'ordine di trasferimento.
     
 > [!CAUTION]
-> Non disconnettere i servizi con il provider di servizi o il gestore. È necessario mantenere attivo il servizio precedente per poter convertire i numeri di telefono in Teams. Non bloccare l'account con il provider di servizi o il gestore. Il blocco dell'account impedisce la modifica dei gestori dell'account. L'utente autorizzato dovrà inviare un ordine al gestore corrente per rimuovere il blocco. Questo processo può richiedere da una a tre settimane, a seconda del gestore.
+> Non disconnettere i servizi con il provider di servizi o il gestore. È necessario mantenere attivo il servizio precedente per poter convertire i numeri di telefono in Teams. Non bloccare l'account con il provider di servizi o l'operatore. Il blocco dell'account impedisce la modifica dei gestori dell'account. L'utente autorizzato dovrà inviare un ordine al gestore corrente per rimuovere il blocco. Questo processo può richiedere da una a tre settimane, a seconda del gestore.
 
 ## <a name="authorized-person-on-the-account"></a>Persona autorizzata nell'account
 
@@ -78,7 +78,7 @@ Nella procedura guidata di porting è necessario immettere il nome della persona
   
 ## <a name="whats-my-billing-telephone-number"></a>Qual è il mio numero di telefono di fatturazione?
 
-Il numero di telefono di fatturazione (BTN) è il numero di telefono principale incluso nella fattura e fatturato dal provider di servizi o dal gestore. Se stai trasferendo un numero di telefono da un account che ha un solo numero di telefono, devi immettere questo numero di telefono. Se stai trasferendo numeri di telefono da un account che ne ha più di uno, puoi guardare la fattura o contattare il provider di servizi o il gestore per determinare qual è il BTN per il tuo account.
+Il numero di telefono di fatturazione (BTN) è il numero di telefono principale incluso nella fattura e fatturato dal provider di servizi o dal gestore. Se stai trasferendo un numero di telefono da un account che ha un solo numero di telefono, devi immettere questo numero di telefono. Se stai trasferendo numeri di telefono da un account che ne ha più di uno, puoi esaminare la fattura o contattare il provider di servizi o il gestore per determinare qual è il BTN per il tuo account.
 
 ## <a name="what-should-i-put-in-for-the-account-number"></a>Cosa devo inserire per il numero di conto?
 

@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 30938426-e2f9-4735-a7f4-59baf7a7d7e6
 description: In questa tabella vengono archiviate informazioni sui vari processi Skype for Business Server 2015 coinvolti nel routing e nelle connessioni.
-ms.openlocfilehash: 2fc9eeeba91749495ea977db22c28c0db8b56ce08728023c57860f8b68275c72
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 739ed8caaf101038bedd07072a6cb568dadf7982
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54297063"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636010"
 ---
 # <a name="application-table-in-skype-for-business-server-2015"></a>Tabella delle applicazioni in Skype for Business Server 2015
  
