@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.FeMediationServiceSettingsExpander
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 142c1acd-cdaa-4922-8379-aa1bdf56a964
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Per Mediation Server è possibile specificare quanto segue:'
-ms.openlocfilehash: 2ef7e506e6c3409cdb1dbfa8abd59d9e3fa6b6540c55ffac6e69d34c29e1b82b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e64343efa357caad2e843061574e5788a11db365
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54291294"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582960"
 ---
 # <a name="mediation-service-settings-expander"></a>Espansione delle impostazioni del servizio Mediation
 
@@ -34,4 +34,4 @@ Definire gateway PSTN associati al Mediation Server collocato. Se i gateway sono
 
 Se a un Mediation Server è associato più di un gateway, il primo gateway associato sarà quello predefinito. Se è necessario scegliere un altro gateway come predefinito, selezionare il gateway desiderato e fare clic su **Rendi predefinito**. Per annullare la selezione di un gateway come predefinito, fare clic su **Annulla predefinito**.
 
-Per informazioni dettagliate sulla definizione e la configurazione delle impostazioni per il pool Front End o il server edizione Standard di edizione Enterprise, vedere [Defining and Configuring the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-defining-and-configuring-the-topology) e [Deploying Mediation Server e Defining Peers.](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-mediation-servers-and-defining-peers)
+Per informazioni dettagliate sulla definizione e la configurazione delle impostazioni per il pool Front End edizione Enterprise o il server edizione Standard, vedere [Defining and Configuring the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-defining-and-configuring-the-topology) e [Deploying Mediation Server e Defining Peers.](/previous-versions/office/lync-server-2013/lync-server-2013-deploying-mediation-servers-and-defining-peers)

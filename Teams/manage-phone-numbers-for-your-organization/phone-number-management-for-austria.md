@@ -13,18 +13,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Austria per Microsoft Teams.
-ms.openlocfilehash: 9a83bd68c313af1020a052c92e708505f6f13d02
-ms.sourcegitcommit: 7251b92c9913ca1e43b3cc24fad73e8997303731
+ms.openlocfilehash: 240af65018568760de93eaebda360ca8a73e9baf
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58348268"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630128"
 ---
 # <a name="phone-number-management-for-austria"></a>Telefono gestione dei numeri per l'Austria
 

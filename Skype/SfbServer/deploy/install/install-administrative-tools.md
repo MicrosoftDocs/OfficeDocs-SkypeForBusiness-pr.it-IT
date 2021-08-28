@@ -10,23 +10,23 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 52ee7da4-59ba-499a-a105-d93fa9941334
-description: "Riepilogo: informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
-ms.openlocfilehash: 7c9f337471f01f76c5aa8069892e937698e9860d265243305e53150d642a7e7a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Riepilogo: informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server ."
+ms.openlocfilehash: 4e5ec73f4702f3011d09b3338489cb397b7c5922
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304338"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607623"
 ---
 # <a name="install-administrative-tools-in-skype-for-business-server"></a>Installare gli strumenti di amministrazione in Skype for Business Server
  
-**Riepilogo:** Informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita di Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
+**Riepilogo:** Informazioni su come installare gli strumenti di amministrazione necessari per un'installazione di Skype for Business Server. Scaricare una versione di valutazione gratuita Skype for Business Server dal Centro di valutazione Microsoft all'indirizzo: [https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server](https://www.microsoft.com/evalcenter/evaluate-skype-for-business-server) .
   
 Gli strumenti di amministrazione includono Generatore di topologie e il Pannello di controllo. Gli strumenti di amministrazione devono essere installati in almeno un server della topologia o in una workstation di gestione a 64 bit che esegue una versione del sistema operativo Windows supportata per Skype for Business Server. È possibile eseguire i passaggi da 1 a 5 in qualsiasi ordine. È tuttavia necessario eseguire i passaggi 6, 7 e 8 nell'ordine e dopo i passaggi da 1 a 5, come illustrato nel diagramma. L'installazione degli strumenti di amministrazione è il passaggio 3 di 8.
   
@@ -34,7 +34,7 @@ Gli strumenti di amministrazione includono Generatore di topologie e il Pannello
   
 ## <a name="install-skype-for-business-server-administrative-tools"></a>Installare Skype for Business Server di amministrazione
 
-Il supporto di installazione per Skype for Business Server offre un'esperienza flessibile. Quando si esegue per la Setup.exe, gli unici strumenti installati sono Skype for Business Server Distribuzione guidata e Skype for Business Server Management Shell. Utilizzando questi due strumenti, noti come componenti di base, è possibile continuare con il processo di installazione, ma non forniscono funzionalità principali per l'ambiente Skype for Business Server globale. La Distribuzione guidata viene avviata automaticamente dopo l'installazione dei componenti di base. La sezione della Distribuzione guidata intitolata **Installazione** strumenti di amministrazione consente di installare Skype for Business Server Generatore di topologie Skype for Business Server Pannello di controllo.
+Il supporto di installazione per Skype for Business Server offre un'esperienza flessibile. Quando si esegue per la Setup.exe, gli unici strumenti installati sono Skype for Business Server Distribuzione guidata e Skype for Business Server Management Shell. Utilizzando questi due strumenti, noti come componenti di base, è possibile continuare con il processo di installazione, ma non forniscono funzionalità principali per l'ambiente Skype for Business Server globale. La Distribuzione guidata viene avviata automaticamente dopo l'installazione dei componenti di base. Nella sezione della Distribuzione guidata intitolato **Install Administrative Tools** installs Skype for Business Server Topology Builder and Skype for Business Server Control Panel.
   
 > [!IMPORTANT]
 > Ogni Skype for Business Server deve avere almeno un server con gli strumenti di amministrazione installati. 
@@ -49,7 +49,7 @@ Guarda la procedura video per **Installare gli strumenti di amministrazione**:
     
 2. Il supporto di installazione richiede Microsoft Visual C++ l'esecuzione. Verrà visualizzata una finestra di dialogo in cui viene chiesto se si desidera installarla. Fare clic su **Sì**.
     
-3. Utilizzando l'installazione intelligente, una nuova funzionalità di Skype for Business Server, è possibile connettersi a Internet per verificare la disponibilità di aggiornamenti durante il processo di installazione. Ciò garantisce un'esperienza migliore assicurandoti di avere gli aggiornamenti più recenti per il prodotto al momento dell'installazione. Fare clic su **Installa** per avviare l'installazione.
+3. Utilizzando Smart Setup, una nuova funzionalità di Skype for Business Server, è possibile connettersi a Internet per verificare la disponibilità di aggiornamenti durante il processo di installazione. Ciò garantisce un'esperienza migliore assicurandoti di avere gli aggiornamenti più recenti per il prodotto al momento dell'installazione. Fare clic su **Installa** per avviare l'installazione.
     
 4. Esaminare attentamente il Contratto di Licenza e, se si accetta, selezionare Accetto i termini del contratto di **licenza** e fare clic su **OK.**
     

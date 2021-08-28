@@ -15,7 +15,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per le Bermuda.
-ms.openlocfilehash: aff9dd19246c124e489468ad80f2a24c69ef38653ea6455dcdbac357e16b394b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 11853051ff2b1a6155415eb68be01a271da7be4e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351106"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607823"
 ---
 # <a name="availability-in-bermuda"></a>Disponibilità nelle Bermuda
 

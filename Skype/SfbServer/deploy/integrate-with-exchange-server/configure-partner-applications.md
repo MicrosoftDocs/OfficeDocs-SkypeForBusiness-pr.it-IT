@@ -10,16 +10,16 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 9c3a3054-6201-433f-b128-4c49d3341370
 description: "Riepilogo: configurare l'autenticazione da server a server Exchange Server 2016 o Exchange Server 2013 e Skype for Business Server."
-ms.openlocfilehash: 19e24e610f67109f79139c7f7a0d6d13972d97abdb259b4e08de85d030856d2a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4d88676b3c2cfc01935388b49b120ca99d1b7025
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54330520"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607613"
 ---
 # <a name="configure-partner-applications-in-skype-for-business-server-and-exchange-server"></a>Configurare le applicazioni partner in Skype for Business Server e Exchange Server
  
@@ -27,13 +27,13 @@ ms.locfileid: "54330520"
   
 L'autenticazione da server a server richiede in genere due server che devono comunicare tra loro e un server token di sicurezza di terze parti. Se il server A e il server B devono comunicare, entrambi i server in genere iniziano contattando un server token e ottenendo un token di sicurezza reciprocamente attendibile. Il server A presenta quindi tale token di sicurezza al Server B (e viceversa) come modo per garantirne l'autenticità e l'affidabilità.
   
-Tuttavia, questa è una regola generale. Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013 non è necessario utilizzare un server token di terze parti per comunicare tra loro; questo perché questi prodotti server possono creare token di sicurezza che possono essere accettati l'uno dall'altro senza la necessità di un server token separato. Questa funzionalità è disponibile solo in Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013. Se è necessario configurare l'autenticazione da server a server con altri server, inclusi altri prodotti server Microsoft, sarà necessario farlo utilizzando un server token di terze parti.
+Tuttavia, questa è una regola generale. Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013 non devono utilizzare un server token di terze parti per comunicare tra loro; questo perché questi prodotti server possono creare token di sicurezza che possono essere accettati l'uno dall'altro senza la necessità di un server token separato. Questa funzionalità è disponibile solo in Skype for Business Server, Exchange Server 2016, Exchange Server 2013 e SharePoint Server 2013. Se è necessario configurare l'autenticazione da server a server con altri server, inclusi altri prodotti server Microsoft, sarà necessario farlo utilizzando un server token di terze parti.
   
 Per configurare l'autenticazione da server a server tra Skype for Business Server e Exchange Server è necessario eseguire due operazioni: 1) è necessario assegnare i certificati appropriati a ogni server. e, 2) è necessario configurare ogni server in modo che sia un'applicazione partner dell'altro server: ciò significa che è necessario configurare Skype for Business Server come applicazione partner per Exchange Server e configurare Exchange Server come applicazione partner per Skype for Business Server.
   
 ## <a name="configuring-skype-for-business-server-to-be-a-partner-application-for-exchange-server"></a>Configurazione di Skype for Business Server essere un'applicazione partner per Exchange Server
 
-Il modo più semplice per configurare Skype for Business Server come applicazione partner con Exchange Server 2016 o Exchange Server 2013 è eseguire lo script Configure-EnterprisePartnerApplication.ps1, uno script Windows PowerShell fornito con Exchange Server. Per eseguire questo script, è necessario fornire l'URL per il documento dei metadati di Skype for Business Server autenticazione. in genere corrisponde al nome di dominio completo del pool Skype for Business Server seguito dal suffisso /metadata/json/1. Ad esempio:
+Il modo più semplice per configurare Skype for Business Server come applicazione partner con Exchange Server 2016 o Exchange Server 2013 è eseguire lo script Configure-EnterprisePartnerApplication.ps1, uno script di Windows PowerShell fornito con Exchange Server. Per eseguire questo script, è necessario fornire l'URL per il documento dei metadati di Skype for Business Server autenticazione. in genere corrisponde al nome di dominio completo del pool Skype for Business Server seguito dal suffisso /metadata/json/1. Ad esempio:
   
 ```console
 https://atl-cs-001.litwareinc.com/metadata/json/1
@@ -45,7 +45,7 @@ Per configurare Skype for Business Server come applicazione partner, aprire Exch
 "C:\Program Files\Microsoft\Exchange Server\V15\Scripts\Configure-EnterprisePartnerApplication.ps1 -AuthMetaDataUrl 'https://atl-cs-001.litwareinc.com/metadata/json/1' -ApplicationType Lync"
 ```
 
-Dopo aver configurato l'applicazione partner, è consigliabile arrestare e riavviare Internet Information Services (IIS) nei server cassette postali Exchange e accesso client. Per riavviare IIS è possibile utilizzare un comando simile al seguente, che riavvia il servizio sul computer atl-exchange-001:
+Dopo aver configurato l'applicazione partner, è consigliabile arrestare e riavviare Internet Information Services (IIS) sui server cassette postali Exchange e accesso client. Per riavviare IIS è possibile utilizzare un comando simile al seguente, che riavvia il servizio sul computer atl-exchange-001:
   
 ```powershell
 iisreset atl-exchange-001
@@ -61,7 +61,7 @@ Dopo aver configurato Skype for Business Server come applicazione partner per Ex
 https://autodiscover.litwareinc.com/autodiscover/metadata/json/1
 ```
 
-In Skype for Business Server, le applicazioni partner vengono configurate utilizzando il cmdlet [New-CsPartnerApplication.](/powershell/module/skype/new-cspartnerapplication?view=skype-ps) Oltre a specificare l'URI dei metadati, devi anche impostare il livello di attendibilità dell'applicazione su Completo. in questo modo Exchange rappresentare sia se stesso che qualsiasi utente autorizzato nell'area di autenticazione. Ad esempio:
+In Skype for Business Server, le applicazioni partner vengono configurate utilizzando il cmdlet [New-CsPartnerApplication.](/powershell/module/skype/new-cspartnerapplication?view=skype-ps) Oltre a specificare l'URI dei metadati, devi anche impostare il livello di attendibilità dell'applicazione su Completo. in questo modo Exchange di rappresentare sia se stesso che qualsiasi utente autorizzato nell'area di autenticazione. Ad esempio:
   
 ```powershell
 New-CsPartnerApplication -Identity Exchange -ApplicationTrustLevel Full -MetadataUrl "https://autodiscover.litwareinc.com/autodiscover/metadata/json/1"
@@ -82,4 +82,4 @@ Nel comando precedente SipUri rappresenta l'indirizzo SIP di un utente con un ac
 > [!NOTE]
 > Se si riceve una risposta 401 da questo cmdlet, è probabile che la configurazione predefinita per Exchange non includa il supporto per l'accettazione di token Oauth. Per ulteriori informazioni sull'utilizzo di Oauth in Exchange, vedere [Configure OAuth authentication with SharePoint 2013 and Skype for Business Server](/exchange/configure-oauth-authentication-with-sharepoint-2013-and-lync-2013-exchange-2013-help). 
   
-Se il test ha esito positivo e la connettività è stata stabilita, è possibile procedere alla configurazione di funzionalità facoltative, ad esempio l'integrazione dell'archiviazione e l'archivio contatti unificato.
+Se il test ha esito positivo e la connettività è stata stabilita, è possibile procedere alla configurazione di funzionalità facoltative come l'integrazione dell'archiviazione e l'archivio contatti unificato.

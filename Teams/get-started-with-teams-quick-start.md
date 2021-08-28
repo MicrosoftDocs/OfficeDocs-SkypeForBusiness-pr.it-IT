@@ -9,7 +9,7 @@ audience: admin
 ms.service: msteams
 ms.reviewer: dstrome
 description: Iniziare a usare Teams distribuendo i primi team e canali, in modo da creare l'esperienza di Teams prima di distribuirlo in tutta l'organizzazione.
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8d2fed3a011936507febdfcd6bb7dae5aa4c7d385a3ea3fccc49e018f7749a95
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 124908362a762a9940f87713dd4e699459443e85
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306378"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630210"
 ---
 # <a name="get-started-with-microsoft-teams"></a>Introduzione a Microsoft Teams
 
@@ -47,9 +47,9 @@ Se l'organizzazione è più grande, è consigliabile consultare questi articoli 
 
 Per le organizzazioni di medie o grandi dimensioni, è necessario [usare l’Assistente per Teams per implementare Microsoft Teams](use-advisor-teams-roll-out.md) e pianificare l'implementazione dei carichi di lavoro nell'intera organizzazione. L'Assistente usa Teams per creare attività pianificate e assegnarle ai proprietari, condividere documenti e avviare discussioni tra il team di distribuzione.
 
-## <a name="make-sure-youre-ready&quot;></a>Assicurarsi di essere pronti
+## <a name="make-sure-youre-ready"></a>Assicurarsi di essere pronti
 
-Ecco cosa fare per prepararsi all'implementazione di Teams, sia nel caso in cui Teams sia il primo carico di lavoro (&quot;Teams First"), sia che si tratti di un carico di lavoro successivo in una distribuzione di Microsoft 365 o Office 365 già esistente:
+Ecco cosa fare per prepararsi all'implementazione di Teams, sia nel caso in cui Teams sia il primo carico di lavoro ("Teams First"), sia che si tratti di un carico di lavoro successivo in una distribuzione di Microsoft 365 o Office 365 già esistente:
 
 - [Preparare la rete dell'organizzazione per Teams](prepare-network.md)
   - È inclusa la configurazione del dominio di Microsoft 365 o Office 365, SharePoint Online, Exchange Online e OneDrive for Business.

@@ -15,19 +15,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Scopri come selezionare le lingue degli operatori automatici di audioconferenza per un numero di audioconferenza in Microsoft Teams.
-ms.openlocfilehash: 1238cebfa9be1c37e6754234338273738f06e07a8e495631361cb76fdcbc63cb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 427510e5026a5812ab14db21a7410c4d9c3e2a8f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630058"
 ---
 # <a name="set-auto-attendant-languages-for-audio-conferencing-in-microsoft-teams"></a>Impostare le lingue degli operatori automatici per le audioconferenze in Microsoft Teams
 
@@ -63,7 +63,7 @@ Scegliere una lingua principale e fino a quattro lingue secondarie. La lingua im
     
 - Le lingue possono essere impostate per numeri specifici, ma non per i numeri di telefono condivisi.
     
-- Per visualizzare un elenco di paesi/aree geografiche in cui è disponibile l'audioconferenza in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere numeri di Telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing-in-teams.md)
+- Per visualizzare un elenco di paesi/aree geografiche in cui è disponibile l'audioconferenza in Microsoft 365 o Office 365 che usano Microsoft come provider, vedere i numeri Telefono per le [audioconferenze.](phone-numbers-for-audio-conferencing-in-teams.md)
     
 ## <a name="want-to-use-windows-powershell"></a>Desideri utilizzare Windows PowerShell?
 

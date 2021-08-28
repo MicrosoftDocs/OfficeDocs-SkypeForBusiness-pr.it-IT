@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployBootstrapIntro
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: e87b2255-3a00-4c74-b3d0-e0c3da702e3a
 description: Si sta preparando l'installazione e l'attivazione o la disattivazione e la disinstallazione Skype for Business Server 2015. I processi che verranno eseguiti sono definiti dalla configurazione corrente della definizione pubblicata nell'archivio di gestione centrale. Per completare correttamente le attività, è necessario essere connessi come membri del gruppo Administrators locale e, almeno, è necessario essere in grado di leggere Servizi di dominio Active Directory.
-ms.openlocfilehash: d9edc0887ba55b7ff7fcaf0a38deced4686a4866dad1060498f1b57b0c494c09
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 578a2a6810c25e61f5ddc4dd6f3a0607e10eeb53
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345814"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582950"
 ---
 # <a name="setup-or-remove-skype-for-business-server-components-intro"></a>Installare o rimuovere componenti di Skype for Business Server (Intro)
  

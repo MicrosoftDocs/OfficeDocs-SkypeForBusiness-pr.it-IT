@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.NcsLocEdit
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d9b30b3b-570b-49a6-b2b4-46b0cf490153
 description: È possibile configurare i criteri percorso per determinare se enhanced 9-1-1 (E9-1-1) è abilitato e come viene utilizzato, nonché come vengono utilizzate le informazioni sulla posizione per utenti e contatti.
-ms.openlocfilehash: adb3129adbcee49ed20e6f7d7191d075487ea221c06c2db9c1d5e6003555675a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 53af748db0c5a3ea2a8df8fe0aa19e58cb39e7d7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331588"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58582920"
 ---
 # <a name="location-policy-create-new-or-edit-existing"></a>Criteri percorso: crearne di nuovi o modificare quelli esistenti
 
@@ -41,7 +41,7 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **Posizione** Specificare se agli utenti vengono richieste informazioni sulla posizione:
 
-  - **Obbligatorio** Selezionare questa opzione se agli utenti devono essere richieste informazioni sulla posizione quando il client esegue la registrazione in una nuova posizione. Gli utenti possono ignorare il prompt senza immettere le informazioni sulla posizione.
+  - **Obbligatorio** Selezionare questa opzione se agli utenti devono essere richieste informazioni sulla posizione quando il client esegue la registrazione in una nuova posizione. Gli utenti possono ignorare il prompt senza immettere informazioni sulla posizione.
 
   - **Non obbligatorio** Selezionare questa opzione se agli utenti non devono essere richieste informazioni sulla posizione.
 
@@ -60,12 +60,12 @@ L'elenco seguente descrive i campi presenti nella pagina.
 
 - **URI notifica** Specificare uno o più URI SIP da notificare quando viene effettuata una chiamata di emergenza. Ad esempio, digitare l'URI SIP dell'ufficio di sicurezza aziendale per inviare una notifica al personale di sicurezza con un messaggio istantaneo ogni volta che viene effettuata una chiamata di emergenza. Se la posizione del chiamante è disponibile, la posizione viene inclusa nella notifica. È possibile specificare più URI SIP come elenco delimitato da virgole. Ad esempio, "sip:security@litwareinc.com", "sip:kmyer@litwareinc.com". La stringa deve contenere da 1 a 256 caratteri e deve iniziare con il prefisso "sip:". È inoltre possibile specificare le liste di distribuzione.
 
-- **URI conferenza** Specificare l'URI SIP (numero di telefono, in questo caso) per una terza parte a cui effettuare una conferenza per le chiamate di emergenza. Ad esempio, digitare il numero di telefono dell'ufficio di sicurezza aziendale in modo che ricevano una chiamata quando viene effettuata una chiamata di emergenza. L'impostazione **per la modalità conferenza** determina se la terza parte può partecipare o semplicemente ascoltare la chiamata. La stringa deve avere una lunghezza compresa tra 1 e 256 caratteri e deve iniziare con il prefisso sip:.
+- **URI conferenza** Specificare l'URI SIP (numero di telefono, in questo caso) per una terza parte a cui effettuare una conferenza per le chiamate di emergenza. Ad esempio, digitare il numero di telefono dell'ufficio di sicurezza aziendale in modo che riceva una chiamata quando viene effettuata una chiamata di emergenza. L'impostazione **per la modalità conferenza** determina se la terza parte può partecipare o semplicemente ascoltare la chiamata. La stringa deve avere una lunghezza compresa tra 1 e 256 caratteri e deve iniziare con il prefisso sip:.
 
 - **Modalità conferenza** Se è stato specificato un valore per **URI** conferenza, impostare questo campo su uno dei valori seguenti:
 
   - **Unidirediret** Specifica che la terza parte può solo ascoltare la chiamata tra il chiamante e l'operatore PSAP.
 
-  - **Bidiredirei** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore PSAP.
+  - **Bidirediret** Specifica che la terza parte può partecipare alla chiamata tra il chiamante e l'operatore PSAP.
 
-Per informazioni dettagliate VoIP aziendale funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.
+Per informazioni dettagliate VoIP aziendale funzionalità e funzionalità del servizio di emergenza, vedere [Overview of E9-1-1](/previous-versions/office/lync-server-2013/lync-server-2013-overview-of-e9-1-1) nella documentazione relativa alla pianificazione. Per informazioni dettagliate sull'utilizzo di criteri percorso, vedere [Configuring Location Policy](/previous-versions/office/lync-server-2013/lync-server-2013-viewing-location-policy-information) nella documentazione relativa alle operazioni.

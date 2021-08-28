@@ -16,19 +16,19 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
 - seo-marvel-mar2020
-description: Informazioni su come configurare Microsoft Teams e Skype for Business usare un'altra lingua per il messaggio di saluto della segreteria telefonica predefinito dell'organizzazione.
-ms.openlocfilehash: 92f767a366ac6c3250f529ec022f9b12414bd2f542c00c8f267596c7e276ee0b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come configurare Microsoft Teams e Skype for Business usare un'altra lingua per il messaggio di saluto predefinito della segreteria telefonica dell'organizzazione.
+ms.openlocfilehash: f204cdfca0be7eab5964b2c9c50c57f306af94ff
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54339882"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58607873"
 ---
 # <a name="change-the-default-language-for-greetings-and-emails"></a>Modificare la lingua predefinita per i messaggi di saluto e le e-mail
 
@@ -40,10 +40,10 @@ Se si è un [amministratore](https://support.office.com/article/da585eea-f576-4f
   - [Microsoft Teams lingue supportate](languages-for-voicemail-greetings-and-messages.md)
   - [Skype for Business lingue supportate](/skypeforbusiness/what-is-phone-system-in-office-365/phone-system-voicemail/languages-for-voicemail-greetings-and-messages)
 
-- **Modifica delle lingue per i messaggi di saluto e i messaggi della segreteria telefonica dei singoli utenti.** È possibile cambiare la lingua preferita per gli utenti, che cambierà la lingua dei messaggi di saluto della segreteria telefonica e della segreteria telefonica inviati alla cassetta postale Outlook messaggi. Per altre informazioni, vedere Come impostare le impostazioni della lingua e dell'area [geografica Microsoft 365 o Office 365](/office365/troubleshoot/access-management/set-language-and-region).
+- **Modifica delle lingue per i messaggi di saluto e i messaggi della segreteria telefonica dei singoli utenti.** È possibile cambiare la lingua preferita per gli utenti, che cambierà la lingua dei messaggi di saluto della segreteria telefonica e della segreteria telefonica inviati alla cassetta postale Outlook messaggi. Per altre informazioni, vedere Come impostare le impostazioni di lingua [e area geografica Microsoft 365 o Office 365](/office365/troubleshoot/access-management/set-language-and-region).
 
   > [!NOTE]
-  > Gli utenti possono modificare la lingua del saluto attraverso le impostazioni dopo l'accesso. Per altre informazioni, vedere [Cambiare la lingua di visualizzazione e il](https://support.office.com/article/change-your-display-language-and-time-zone-in-microsoft-365-for-business-6f238bff-5252-441e-b32b-655d5d85d15b?ui=en-US&rs=en-US&ad=US) fuso orario in Microsoft 365 for Business
+  > Gli utenti possono modificare la lingua del saluto attraverso le impostazioni dopo l'accesso. Per altre informazioni, vedere Modificare la lingua di visualizzazione e il fuso [orario in Microsoft 365 for Business](https://support.office.com/article/change-your-display-language-and-time-zone-in-microsoft-365-for-business-6f238bff-5252-441e-b32b-655d5d85d15b?ui=en-US&rs=en-US&ad=US)
   
 - **Vuoi registrare il messaggio in uscita della segreteria telefonica?** Vedi [Controllare le opzioni e la segreteria telefonica di Skype for Business](https://support.office.com/article/2deea7f8-831f-4e85-a0d4-b34da55945a8). Per Microsoft Teams - Gli utenti possono modificare le impostazioni della segreteria telefonica dalle Teams [del client desktop](https://support.office.com/article/manage-your-call-settings-in-teams-456cb611-3477-496f-b31a-6ab752a7595f)
 
@@ -75,7 +75,7 @@ Se si è un [amministratore](https://support.office.com/article/da585eea-f576-4f
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Modificare la lingua di visualizzazione e il fuso orario in Microsoft 365 o Office 365 for Business](https://support.office.com/article/Change-your-display-language-and-time-zone-in-Office-365-for-Business-6f238bff-5252-441e-b32b-655d5d85d15b)
+- [Cambiare la lingua di visualizzazione e il fuso orario in Microsoft 365 o Office 365 for Business](https://support.office.com/article/Change-your-display-language-and-time-zone-in-Office-365-for-Business-6f238bff-5252-441e-b32b-655d5d85d15b)
 
 - [Aggiungere una lingua o impostare le preferenze di lingua di Office 2010 e versioni successive](https://support.office.com/article/Add-a-language-or-set-language-preferences-in-Office-663d9d94-ca99-4a0d-973e-7c4a6b8a827d)
 

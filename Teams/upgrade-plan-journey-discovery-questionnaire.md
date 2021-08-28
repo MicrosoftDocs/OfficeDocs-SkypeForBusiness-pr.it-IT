@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 ms.reviewer: landerl
 description: Usare queste indicazioni per informazioni sui requisiti per valutare correttamente l'ambiente corrente per l'aggiornamento a Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 32687604a0ad531ab06b67401d27001ab9559eb95f77fabaaea5ef57dc9e2b9a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f7b8fa73141777bb55a020871558a7c6b95aba17
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54332338"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58629908"
 ---
 # <a name="discovery-questionnaire---evaluate-your-environment"></a>Questionario di individuazione - Valutare l'ambiente
 
@@ -39,13 +39,13 @@ Il set di tabelle seguente elenca le domande che consentono di valutare l'ambien
 
 ## <a name="microsoft-365-or-office-365-organization-details"></a>Microsoft 365 o Office 365'organizzazione
 
-È consigliabile avere un'organizzazione Microsoft 365 o Office 365 mentre si lavora al questionario. Se non è ancora stata attivata o configurata un'organizzazione Microsoft 365 o Office 365, vedere Pianificare la configurazione di [Microsoft 365 per le aziende.](https://support.office.com/article/plan-your-setup-of-office-365-for-business-eb926624-018b-4486-bf11-5fba6ee4d645)
+È consigliabile avere un'organizzazione Microsoft 365 o Office 365 mentre si lavora al questionario. Se non è ancora stata attivata o configurata una Microsoft 365 o Office 365, vedere Pianificare la configurazione di [Microsoft 365 per le aziende.](https://support.office.com/article/plan-your-setup-of-office-365-for-business-eb926624-018b-4486-bf11-5fba6ee4d645)
 
 Usare la tabella seguente per acquisire informazioni sulla Microsoft 365 o Office 365 organizzazione.
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
-> | Prendere nota della versione di Microsoft 365 o Office 365 di produzione <br>nome e ID nella colonna Risposta <br/>Se si hanno più tenant <br>associato all'organizzazione, <br>annotare tutti gli ID. | Nome tenant: <br/>ID tenant:| |
+> | Prendere nota della Microsoft 365 o Office 365 di produzione <br>nome e ID nella colonna Risposta <br/>Se si hanno più tenant <br>associato all'organizzazione, <br>annotare tutti gli ID. | Nome tenant: <br/>ID tenant:| |
 > | In quali aree sono distribuiti i tenant?| | |
 > | Questi tenant sono Microsoft 365 o Office 365 multitenant o <br>Dedicato? | <input type="checkbox"> Multitenant<br/> <input type="checkbox"> Dedicato | |
 > | Quali prodotti Microsoft Online sono attualmente in uso? <br/>Annotare il numero di utenti abilitati per ogni <br>nella colonna Commenti. | <input type="checkbox">Microsoft Teams <br/> <input type="checkbox">Skype for Business <br>&nbsp; &nbsp; &nbsp;Online <br/> <input type="checkbox">Exchange Online <br/> <input type="checkbox">SharePoint Online <br/> <input type="checkbox">OneDrive for Business <br/> <input type="checkbox">Yammer <br/> <input type="checkbox"> Altro| |
@@ -54,7 +54,7 @@ Usare la tabella seguente per acquisire informazioni sulla Microsoft 365 o Offic
 > | Cosa si usa per la directory <br>sincronizzazione oggi? |<input type="checkbox"> Nessuna sincronizzazione (solo cloud) <br/> <input type="checkbox">Azure Active Directory <br>&nbsp;&nbsp; &nbsp; Connessione <br/> <input type="checkbox"> Altro (specificare nella casella <br>&nbsp;&nbsp; &nbsp; Colonna Commenti.)| |
 > | L'identità federata è attualmente distribuita? <br/>(Active Directory Federation Services o <br>di terze parti) | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | Se si usa l'identità federata, qual è il <br>infrastruttura federativa? | <input type="checkbox">Windows 2008 R2 AD FS <br/> <input type="checkbox">Windows 2012 AD FS <br/> <input type="checkbox">Windows 2012 R2 AD FS <br/> <input type="checkbox">Windows 2016 AD FS <br/> <input type="checkbox"> Federazione di terze parti <br>&nbsp;&nbsp; &nbsp; gateway <br>&nbsp;&nbsp; &nbsp; Si notino i dettagli nella finestra di <br>&nbsp;&nbsp; &nbsp; Colonna Commenti.) | |
-> | Se attualmente si mantiene un'Microsoft 365 o un Office 365 <br>tenant, è il dominio SMTP/SIP del tuo <br>utenti mirati associati al tenant? | <input type="checkbox">N/D: nessuna Microsoft 365 o Office 365 <br>&nbsp;&nbsp; &nbsp; tenant in posizione <br/> <input type="checkbox"> No, SMTP/SIP degli utenti <br>&nbsp;&nbsp; &nbsp; il dominio non è associato <br>&nbsp;&nbsp; &nbsp; con i tenant in <br>&nbsp;&nbsp; &nbsp; Microsoft 365 o Office 365 <br/> <input type="checkbox"> Sì, SMTP/SIP degli utenti <br>&nbsp;&nbsp; &nbsp; il dominio è associato <br>&nbsp;&nbsp; &nbsp; con un tenant esistente <br>&nbsp;&nbsp; &nbsp; in Microsoft 365 o Office 365 | |
+> | Se attualmente si mantiene un'Microsoft 365 o un Office 365 <br>tenant, è il dominio SMTP/SIP del tuo <br>utenti mirati associati al tenant? | <input type="checkbox">N/D : nessuna Microsoft 365 o Office 365 <br>&nbsp;&nbsp; &nbsp; tenant in posizione <br/> <input type="checkbox"> No, SMTP/SIP degli utenti <br>&nbsp;&nbsp; &nbsp; il dominio non è associato <br>&nbsp;&nbsp; &nbsp; con i tenant in <br>&nbsp;&nbsp; &nbsp; Microsoft 365 o Office 365 <br/> <input type="checkbox"> Sì, SMTP/SIP degli utenti <br>&nbsp;&nbsp; &nbsp; il dominio è associato <br>&nbsp;&nbsp; &nbsp; con un tenant esistente <br>&nbsp;&nbsp; &nbsp; in Microsoft 365 o Office 365 | |
 > | Gli UPN degli utenti corrispondono all'indirizzo SMTP principale? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No <br/> <input type="checkbox"> Incoerente | |
 
 ## <a name="existing-collaboration-platform-summary"></a>Riepilogo della piattaforma di collaborazione esistente
@@ -67,7 +67,7 @@ Usare la tabella seguente per acquisire informazioni sulla distribuzione della p
 > | Le Skype for Business distribuite? <br/>Per le distribuzioni locali e ibride, verificare che <br>annotare la versione e l'aggiornamento cumulativo (CU) <br>dettagli nella colonna Commenti. | <input type="checkbox">Sì, Microsoft 365 o Office 365 <br/> <input type="checkbox">Sì, ibrido (con Microsoft 365 o Office 365) <br/> <input type="checkbox"> Sì, locale <br/> <input type="checkbox"> Sì, online, dedicato <br>&nbsp;&nbsp; &nbsp; (Microsoft) <br/> <input type="checkbox"> Sì, ospitata, dedicata <br>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> Sì, ospitata, condivisa (terze parti) <br/> <input type="checkbox"> No, altro | |
 > | È Exchange distribuito? <br/>Per le distribuzioni locali e ibride, verificare che <br>annotare la versione e i dettagli dell'cu nei commenti <br>colonna. | <input type="checkbox">Sì, Microsoft 365 o Office 365 <br/> <input type="checkbox">Sì, ibrido (con Microsoft 365 o Office 365) <br/> <input type="checkbox"> Sì, locale <br/> <input type="checkbox"> Sì, online, dedicato <br>&nbsp;&nbsp; &nbsp; (Microsoft) <br/> <input type="checkbox"> Sì, ospitata, dedicata <br>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> Sì, ospitato, condiviso <br>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> No, altro | |
 > | È SharePoint distribuito? <br/>Per le distribuzioni locali e ibride, verificare che <br>annotare la versione e i dettagli dell'cu nei commenti <br>colonna. | <input type="checkbox">Sì, Microsoft 365 o Office 365 <br/> <input type="checkbox">Sì, ibrido (con Microsoft 365 o Office 365) <br/> <input type="checkbox"> Sì, locale <br/> <input type="checkbox"> Sì, online, dedicato <br>&nbsp;&nbsp; &nbsp; (Microsoft) <br/> <input type="checkbox"> Sì, ospitata, dedicata <br>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> Sì, ospitato, condiviso <br>&nbsp;&nbsp; &nbsp; (terze parti) <br/> <input type="checkbox"> No, altro | |
-> | È Microsoft 365 o Office 365 OneDrive for Business distribuzione? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
+> | È Microsoft 365 o Office 365 OneDrive for Business distribuito? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | Sono state distribuite altre piattaforme di terze parti <br>e in uso oggi? In tal caso, prendere nota del numero di utenti di <br>queste piattaforme e i dettagli sull'utilizzo nella sezione Commenti <br>colonna. | <input type="checkbox"> Cisco WebEx <br/> <input type="checkbox"> Margine di flessibilità <br/> <input type="checkbox"> Altro (specificare nei commenti <br>&nbsp;&nbsp; &nbsp; colonna.) | Numero di utenti: <br/>Dettagli:|
 > | Stai pianificando di spostare gli utenti da queste terze parti <br>piattaforme da Teams? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | Qual è l'attuale soluzione di telefonia e conferenza <br>degli utenti che hanno l'ambito di questa iniziativa? | | |
@@ -91,7 +91,7 @@ Se applicabile, acquisire i dettagli della distribuzione Teams usando la tabella
 
 ### <a name="skype-for-business-online-if-applicable"></a>Skype for Business Online (se applicabile)
 
-Se applicabile, acquisire i dettagli della distribuzione Skype for Business Online usando la tabella di esempio seguente. Se la distribuzione online non è stata Skype for Business, ignorare questa sezione.
+Se applicabile, acquisire i dettagli della distribuzione Skype for Business Online usando la tabella di esempio seguente. Se non è stata ancora distribuita Skype for Business online, ignorare questa sezione.
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
@@ -103,18 +103,18 @@ Se applicabile, acquisire i dettagli della distribuzione Skype for Business Onli
 
 ### <a name="skype-for-business-on-premises-if-applicable"></a>Skype for Business locale (se applicabile)
 
-Se applicabile, acquisire i dettagli della distribuzione Skype for Business usando la tabella di esempio seguente. Se non è stata distribuita una Skype for Business locale, ignorare questa sezione.
+Se applicabile, acquisire i dettagli della distribuzione Skype for Business usando la tabella di esempio seguente. Se non è stato distribuito Skype for Business locale, ignorare questa sezione.
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
 > | Quali versioni di Lync o Skype for Business attualmente <br>sono distribuite in locale? | <input type="checkbox">Office Communications Server 2007 "R1" <br/> <input type="checkbox">Office Communications Server 2007 R2 <br/> <input type="checkbox"> Lync Server 2010 <br/> <input type="checkbox"> Lync Server 2013 <br/> <input type="checkbox">Skype for Business Server 2015 <br/> <input type="checkbox">Skype for Business Server 2019 <br/> <input type="checkbox">Skype for Business Cloud Connector Edition | |
-> | L'ambiente ibrido con Skype for Business Online è configurato? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
+> | La configurazione ibrida con Skype for Business Online? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | Questo ambiente è ospitato e gestito da terze parti? <br/>Se sì, annotare i dettagli nella colonna Commenti. | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
-> | Modalità e caratteristiche attualmente in uso <br>oggi? | <input type="checkbox"> Messaggistica istantanea e presenza (IM/P) <br/> <input type="checkbox"> Riunioni <br/> <input type="checkbox"> Federazione <br/> <input type="checkbox"> Registrazione riunione <br/> <input type="checkbox"> Chat persistente /Chat di gruppo <br/> <input type="checkbox"> Audioconferenza Microsoft <br>&nbsp;&nbsp; &nbsp; (in precedenza Conferenza telefonica con accesso esterno) sul tuo <br>&nbsp;lync server locale &nbsp; &nbsp; o <br>&nbsp;&nbsp; &nbsp; Skype for Business distribuzione <br/> <input type="checkbox"> Audioconferenze di terze parti <br>&nbsp;&nbsp; &nbsp; Si notino i dettagli nella colonna Commenti. <br/> <input type="checkbox">VoIP aziendale pstn locale <br>&nbsp;&nbsp; &nbsp; connettività <br/> <input type="checkbox"> Piani per chiamate (in precedenza chiamate PSTN) tramite <br>&nbsp;&nbsp; &nbsp; Ibrida con Skype for Business Online | |
+> | Modalità e caratteristiche attualmente in uso <br>oggi? | <input type="checkbox"> Messaggistica istantanea e presenza (IM/P) <br/> <input type="checkbox"> Riunioni <br/> <input type="checkbox"> Federazione <br/> <input type="checkbox"> Registrazione riunione <br/> <input type="checkbox"> Chat persistente /Chat di gruppo <br/> <input type="checkbox"> Audioconferenza Microsoft <br>&nbsp;&nbsp; &nbsp; (in precedenza Conferenza telefonica con accesso esterno) sul tuo <br>&nbsp;lync server locale &nbsp; &nbsp; o <br>&nbsp;&nbsp; &nbsp; Skype for Business distribuzione <br/> <input type="checkbox"> Audioconferenze di terze parti <br>&nbsp;&nbsp; &nbsp; Si notino i dettagli nella colonna Commenti. <br/> <input type="checkbox">VoIP aziendale pstn locale <br>&nbsp;&nbsp; &nbsp; connettività <br/> <input type="checkbox"> Piani per chiamate (in precedenza chiamate PSTN) tramite <br>&nbsp;&nbsp; &nbsp; Ibrido con Skype for Business Online | |
 > | Quali versioni del server perimetrale sono state distribuite? | <input type="checkbox">Office Communications Server 2007 "R1" <br/> <input type="checkbox">Office Communications Server 2007 R2 <br/> <input type="checkbox"> Lync Server 2010 <br/> <input type="checkbox"> Lync Server 2013 <br/> <input type="checkbox">Skype for Business Server 2015 <br/> <input type="checkbox">Skype for Business Server 2019 | |
 > | È stato distribuito Lync o Skype for Business Edge <br>in più data center? <br/>Se sì, annotare i dettagli nella colonna Commenti. | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | Selezionare i servizi forniti oggi dal ruolo Edge. | <input type="checkbox"> Accesso degli utenti esterni (utenti aziendali) <br/> <input type="checkbox"> Accesso remoto degli utenti (esterno anonimo) <br>&nbsp;&nbsp; &nbsp; partecipanti alla riunione) <br/> <input type="checkbox"> Federazione <br/> <input type="checkbox"> Media relay | |
-> | Quali delle seguenti funzionalità per le chiamate vocali <br>attualmente hanno dipendenze? <br/>Prendere nota di eventuali dipendenze aggiuntive nei commenti <br>colonna. | <input type="checkbox"> Opzioni occupato <br/> <input type="checkbox"> Parcheggio di chiamata <br/> <input type="checkbox"> Ritiro chiamata o ritiro chiamata di gruppo <br/> <input type="checkbox"> Telefoni dell'area comune o "hot desking" <br/> <input type="checkbox"> Response group o gruppi di risposta <br/> <input type="checkbox"> Aspetto della linea condivisa <br/> <input type="checkbox"> Linea privata <br/> <input type="checkbox"> Segreteria telefonica <br/> <input type="checkbox"> Chiama tramite lavoro <br/> <input type="checkbox"> Numeri di emergenza o informazioni <br>&nbsp;&nbsp; &nbsp; (911, 811, 411) <br/> <input type="checkbox"> Composizione dell'interno <br/> <input type="checkbox"> Operatore automatico <br/> <input type="checkbox"> Accesso sottoscrittore <br/> <input type="checkbox"> Dispositivi analogici <br/> <input type="checkbox"> Fax <br/> <input type="checkbox"> Mascheramento o modifica dell'ID chiamante <br/> <input type="checkbox"> Routing basato sulla posizione <br/> <input type="checkbox"> Routing a costi più basso <br/> <input type="checkbox"> Telefoni con ascensori | |
+> | Quali delle seguenti funzionalità per le chiamate vocali <br>attualmente hanno dipendenze? <br/>Prendere nota di eventuali dipendenze aggiuntive nei commenti <br>colonna. | <input type="checkbox"> Opzioni occupato <br/> <input type="checkbox"> Parcheggio di chiamata <br/> <input type="checkbox"> Ritiro chiamata o ritiro chiamata di gruppo <br/> <input type="checkbox"> Telefoni dell'area comune o "hot desking" <br/> <input type="checkbox"> Response group o gruppi di risposta <br/> <input type="checkbox"> Aspetto della linea condivisa <br/> <input type="checkbox"> Riga privata <br/> <input type="checkbox"> Segreteria telefonica <br/> <input type="checkbox"> Chiama tramite lavoro <br/> <input type="checkbox"> Numeri di emergenza o informazioni <br>&nbsp;&nbsp; &nbsp; (911, 811, 411) <br/> <input type="checkbox"> Composizione dell'interno <br/> <input type="checkbox"> Operatore automatico <br/> <input type="checkbox"> Accesso sottoscrittore <br/> <input type="checkbox"> Dispositivi analogici <br/> <input type="checkbox"> Fax <br/> <input type="checkbox"> Mascheramento o modifica dell'ID chiamante <br/> <input type="checkbox"> Routing basato sulla posizione <br/> <input type="checkbox"> Routing a costi più basso <br/> <input type="checkbox"> Telefoni con ascensori | |
 
 ## <a name="networking-and-access-to-microsoft-365-or-office-365-services"></a>Rete e accesso a Microsoft 365 o Office 365 servizi
 
@@ -122,8 +122,8 @@ Usare la tabella seguente per acquisire i dettagli di rete dell'organizzazione e
 
 > | Domanda | Risposta | Commenti |
 > |---|---|---|
-> | Come (o come) gli utenti nell'ambito della migrazione <br>accedere Teams quando sono in ufficio? <br/>Selezionare tutte le opzioni applicabili. | <input type="checkbox"> Connessione NAT instradata <br/> <input type="checkbox"> Server proxy <br/> <input type="checkbox"> Informazioni Wi-Fi <br/> <input type="checkbox"> Gestione (non pubblica) Wi-Fi <br/> <input type="checkbox"> ExpressRoute (peering Microsoft) ||
-> | Se l'accesso Microsoft 365 o Office 365 tramite un server proxy, è disponibile <br>un modo per ignorare il proxy? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
+> | Come (o come) gli utenti nell'ambito della migrazione <br>accedere Teams quando sono in ufficio? <br/>Selezionare tutte le opzioni applicabili. | <input type="checkbox"> Connessione NAT instradata <br/> <input type="checkbox"> Server proxy <br/> <input type="checkbox"> Informazioni Wi-Fi <br/> <input type="checkbox"> Dati gestiti (non pubblici) Wi-Fi <br/> <input type="checkbox"> ExpressRoute (peering Microsoft) ||
+> | Se l'accesso Microsoft 365 o Office 365 tramite un server proxy, <br>un modo per ignorare il proxy? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | ExpressRoute viene usato oggi? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No <br/> <input type="checkbox"> No, ma è in fase di pianificazione | |
 > | È stata eseguita una valutazione della conformità alla rete? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
 > | È necessario che gli utenti usino una VPN per la connessione <br>risorse aziendali in remoto? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
@@ -155,8 +155,8 @@ Usare la tabella seguente per acquisire i dettagli degli aspetti operativi dell'
 > | È possibile delineare la disposizione del supporto corrente per <br>Lync Server, Skype for Business Server, Microsoft 365 o Office 365? | | |
 > | Se si esegue la distribuzione in più paesi o aree geografiche, <br>ogni paese/area geografica ha un proprio IT/telefonia <br>personale con cui lavorare o verrà gestito in modo centralizzato? | <input type="checkbox"> Operazioni e supporto regionale <br/> <input type="checkbox"> Operazioni e supporto centralizzati | |
 > | Stai seguendo la [metodologia call quality](quality-of-experience-review-guide.md)? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No | |
-> | Hai assegnato un singolo o un team al <br>Ruolo di campione qualitativo per la piattaforma di collaborazione <br>in uso? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No ||
-> | Come si esegue il monitoraggio di Lync Server, Skype per <br>Business Server, Microsoft 365 o Office 365 distribuzione? | | |
+> | Hai assegnato un singolo o un team al <br>Ruolo di campione della qualità per la piattaforma di collaborazione <br>in uso? | <input type="checkbox"> Sì <br/> <input type="checkbox"> No ||
+> | Come si monitora Lync Server, Skype per <br>Business Server, Microsoft 365 o Office 365 distribuzione? | | |
 > | Si verificano problemi di qualità delle chiamate? | <input type="checkbox"> Sì<br/> <input type="checkbox"> No | |
 > | Come e quando fornisci formazione al tuo <br>helpdesk su nuovi servizi e funzionalità? | | |
 
@@ -172,7 +172,7 @@ Usare la tabella seguente e acquisire lo stato di adozione e conformità corrent
 > | L'organizzazione ha un'adozione degli utenti <br>e team di gestione delle modifiche? | <input type="checkbox"> Sì<br/> <input type="checkbox"> No | |
 > | Come si misura attualmente il successo per la tecnologia <br>implementazioni come Skype for Business? | | |
 > | Qual è la percentuale della base di utenti <br>adottato Skype for Business? | | |
-> | Che cos'è il clima di Skype for Business? | <input type="checkbox"> Buono <br/> <input type="checkbox"> Neutro <br/> <input type="checkbox"> Non è un valore | |
+> | Che cos'è la valutazione degli utenti Skype for Business? | <input type="checkbox"> Buono <br/> <input type="checkbox"> Neutro <br/> <input type="checkbox"> Non è possibile | |
 > | Quale delle opzioni seguenti descrive meglio l'implementazione <br>strategia usata per la Skype for Business <br>distribuzione? | <input type="checkbox"> Ampia portata: campagna di posta elettronica con <br>&nbsp;&nbsp; &nbsp; collegamenti alla formazione <br/> <input type="checkbox"> Espanso: Ampia portata più una varietà <br>&nbsp;&nbsp; &nbsp; campagne di sensibilizzazione (poster, <br>&nbsp;&nbsp; &nbsp; eventi, campioni) e formazione <br>&nbsp;&nbsp; &nbsp; (video, guide utente, di persona) <br/> <input type="checkbox"> Su misura: espanso, più mirato <br>&nbsp;&nbsp; &nbsp; messaggistica e formazione per persona <br/> <input type="checkbox"> Altro <br>&nbsp;&nbsp; &nbsp; Si notino i dettagli nella colonna Commenti. | |
 
 

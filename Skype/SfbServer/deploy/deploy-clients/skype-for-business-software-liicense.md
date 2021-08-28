@@ -9,15 +9,15 @@ ms.topic: quickstart
 f1.keywords:
 - NOCSH
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 78a664ba-fefc-4423-ac8f-b58e6fbc2e55
 description: Leggere questo argomento per informazioni su come verificare se si dispone di un contratto multilicenza Skype for Business software.
-ms.openlocfilehash: c1294df980a1fca2118e6ca2e9b172904365639900081fad7425b4d850501fdc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 23ea556a8afd7160e20a1ddd0b4e1d044761d4d1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54297612"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583330"
 ---
 # <a name="skype-room-system-skype-for-business-software-license"></a>Skype Sistema sala: Skype for Business licenza software
  
@@ -39,7 +39,7 @@ Office 2013 Generic Volume License Key for Lync: 2MG3G-3BNTT-3MFW9-KDQW3-TCK7R (
   
 ## <a name="multiple-activation-keys-mak-from-the-volume-license-service-center-vlsc"></a>Codici ad attivazione multipla (MAK) dal Centro servizi per contratti multilicenza (VLSC)
 
-Se il cliente usa qualsiasi altro software con contratti multilicenza, il reparto IT gestirà le attivazioni software e il Contratto multilicenza (VLA) tramite VLSC. In questo modo la società potrà anche acquistare Skype for Business attivazioni VL, dopo di che la società può ottenere un codice ADK per l'input nella console di amministrazione di Skype Room System.
+Se il cliente usa qualsiasi altro software con contratti multilicenza, il reparto IT gestirà le attivazioni software e il Contratto multilicenza (VLA) tramite VLSC. In questo modo la società potrà anche acquistare Skype for Business attivazioni VL, dopo di che la società potrà ottenere un codice ADK per l'input nella console di amministrazione di Skype Room System.
   
 Un cliente con una VLA deve conoscere le proprie credenziali VLSC, che verranno utilizzate per amministrare il contratto e ottenere il codice ADK. In caso di dubbi, il reparto finanziario del cliente dovrebbe essere in grado di verificare se il cliente ha pagato una VLA.
   
@@ -47,7 +47,7 @@ Per ottenere un codice ADK, accedere al Centro servizi per contratti multilicenz
   
 ## <a name="mak-for-microsoft-365-or-office-365-without-vlsc-access"></a>Codice ad attivazione Microsoft 365 o Office 365 senza accesso VLSC
 
-Se il cliente non ha un Contratto multilicenza, Skype for Business le attivazioni saranno molto più difficili da gestire. Tuttavia, Microsoft 365 e Office 365 senza accesso VLSC possono ottenere un codice ADK promozionale fornendo le seguenti informazioni all'OEM che vende il Skype Room System:
+Se il cliente non ha un contratto multilicenza, Skype for Business le attivazioni saranno molto più difficili da gestire. Tuttavia, Microsoft 365 e Office 365 clienti senza accesso VLSC possono ottenere un codice ADK promozionale fornendo le seguenti informazioni all'OEM che vende il Skype Room System:
   
 - Nome dell'azienda
     
@@ -57,4 +57,4 @@ Se il cliente non ha un Contratto multilicenza, Skype for Business le attivazion
     
 - Data distribuzione
     
-- Se il cliente ha un Microsoft Technical Account Manager, il nome e le informazioni di contatto del TAM
+- Se il cliente dispone di un Microsoft Technical Account Manager, il nome e le informazioni di contatto del TAM

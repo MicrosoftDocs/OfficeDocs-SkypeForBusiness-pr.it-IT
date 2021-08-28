@@ -9,7 +9,7 @@ f1.keywords:
 - NOCSH
 ms.topic: article
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Hybrid
 - M365-voice
@@ -17,12 +17,12 @@ ms.collection:
 - Teams_ITAdmin_Help
 - Adm_Skype4B_Online
 description: Spostare gli utenti prima di rimuovere un Skype for Business locale.
-ms.openlocfilehash: 44092460fa1db0664fe95b12cc99f3488544dc0ad049d75d56074e6bf0873c60
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ebd48883f6053a4c2a25f23681d873af36f63b9d
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54292364"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583400"
 ---
 # <a name="move-required-users-before-decommissioning-your-on-premises-environment"></a>Spostare gli utenti necessari prima di rimuovere le autorizzazioni dell'ambiente locale
 
@@ -34,7 +34,7 @@ In questo articolo viene descritto come spostare gli utenti necessari nel cloud 
 
 - Passaggio 2. [Disabilitare la configurazione ibrida](cloud-consolidation-disabling-hybrid.md).
 
-- Passaggio 3. [Eseguire la migrazione degli endpoint dell'applicazione ibrida da locale a online.](decommission-move-on-prem-endpoints.md) Tenere presente che tutti gli endpoint di applicazioni ibride esistenti non saranno individuabili tra il momento in cui si esegue il passaggio 2 precedente fino a quando non si completa questo passaggio. È consigliabile pianificare entrambi i passaggi 2 e 3 nella stessa finestra di manutenzione.
+- Passaggio 3. [Eseguire la migrazione degli endpoint dell'applicazione ibrida da locale a online.](decommission-move-on-prem-endpoints.md) Tenere presente che tutti gli endpoint dell'applicazione ibrida esistenti non saranno individuabili tra il momento in cui si esegue il passaggio 2 precedente fino a quando non si completa questo passaggio. È consigliabile pianificare entrambi i passaggi 2 e 3 nella stessa finestra di manutenzione.
 
 - Passaggio 4. [Rimuovere la distribuzione locale Skype for Business .](decommission-remove-on-prem.md)
 

@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -26,17 +26,17 @@ ms.custom:
 - ms.lync.lac.VASAMissingGeoCodes
 - Calling Plans
 - seo-marvel-apr2020
-description: Informazioni su come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a numero verde e a numero verde) per Microsoft Teams per l'organizzazione.
-ms.openlocfilehash: 534f0d17413e24f221ce04731e0f617355392fec5f08e04814b85c15eb3369ed
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Informazioni su come ottenere e gestire i numeri di telefono degli utenti (abbonati) e dei servizi (a pedaggio e a numero verde) per Microsoft Teams per l'organizzazione.
+ms.openlocfilehash: 03c8fd0c265918a2ef664f668e2900d85ac50cf8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54310634"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630188"
 ---
 # <a name="manage-phone-numbers-for-your-organization"></a>Gestire i numeri di telefono per la propria organizzazione
 
-Esistono quattro modi per ottenere i numeri di telefono per l'utente (abbonato) e il servizio (a numero verde e a numero verde) per l'organizzazione:
+Esistono quattro modi per ottenere numeri di telefono per utenti (abbonati) e servizi (a numero verde e a numero verde) per l'organizzazione:
 
 - [Ottenere nuovi numeri di telefono utente nell'Microsoft Teams di amministrazione.](../getting-phone-numbers-for-your-users.md#get-new-phone-numbers-for-your-users)
 - [Ottenere nuovi numeri di telefono di servizio nell'Microsoft Teams di amministrazione.](../getting-service-phone-numbers.md#get-new-service-numbers)
@@ -88,7 +88,7 @@ Se si conosce il tipo di modulo cercato, usare l'elenco a discesa per selezionar
 
 Ogni paese o area geografica ha istruzioni diverse, diversi tipi di numeri di telefono (geografici/non geografici e di servizio (numero verde)) e regole/normative per ottenere i numeri di telefono in modo che possano essere usati in Microsoft Teams.
 
-A volte (a seconda del paese o dell'area geografica) non è possibile ottenere nuovi numeri di telefono per utenti (abbonati) o  servizi (a numero verde  o a numero verde) usando l'interfaccia di amministrazione di Microsoft Teams oppure potrebbero essere necessari numeri di telefono specifici (richieste di vanità) o codici area specifici.
+A volte (a seconda del paese o dell'area geografica) non è possibile ottenere nuovi numeri di telefono per utenti (abbonati) o  servizi (a numero verde o a numero verde) usando l'interfaccia di amministrazione di Microsoft Teams oppure potrebbero essere necessari numeri di telefono specifici (richieste di vanità) o codici di _area_ specifici.
 
 In tal caso, è necessario scaricare il modulo PDF LOA corretto (per paese o area geografica e tipo di numeri di telefono) e inviarlo di nuovo a Microsoft. Il nostro service desk lo prenderà da lì e inizierà a elaborare la tua richiesta.
 
@@ -101,7 +101,7 @@ Inviaci un **LOA** se hai al momento le seguenti informazioni con un altro gesto
 - Numeri utente (abbonato).
 - Numeri di servizio (a pedaggio) per bridge di audioconferenza, operatori automatici o code di chiamata.
 - Toll-Free numeri di telefono.
-- Più di 999 numeri di telefono utente che è necessario trasferire/trasferire, ma che non è possibile accedere all'interfaccia di amministrazione di Microsoft Teams usando la procedura guidata di portabilità dei numeri locali.
+- Più di 999 numeri di telefono degli utenti che è necessario trasferire/trasferire, ma che non è possibile accedere all'interfaccia di amministrazione di Microsoft Teams usando la procedura guidata per la portabilità dei numeri locali.
 
 Una volta completato il contratto LOA compilato **e** firmato, contatta il [nostro Service Desk PSTN](./contact-pstn-service-desk.md) in modo da poterti aiutare.
 

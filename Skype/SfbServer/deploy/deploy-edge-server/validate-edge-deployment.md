@@ -9,24 +9,24 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 69837f86-d141-4884-a4ca-c7e7463afaad
 description: 'Riepilogo: informazioni su come verificare che la distribuzione del server perimetrale o del pool di server perimetrali funzioni in Skype for Business Server.'
-ms.openlocfilehash: b2d44018bc43f8335081bcfc961108255240095031983066d54463dabc2538ee
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 175baab9770e6013820e0e632712bf75b7669a57
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320928"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58583240"
 ---
 # <a name="validate-your-edge-deployment-in-skype-for-business-server"></a>Convalidare la distribuzione di Edge in Skype for Business Server
  
 **Riepilogo:** Informazioni su come verificare che la distribuzione del server perimetrale o del pool di server perimetrali funzioni in Skype for Business Server.
   
-Dopo aver distribuito il server perimetrale o il pool di server perimetrali, è necessario sapere se funziona correttamente. Ecco un paio di cose che possono aiutare a verificare che l'ambiente Edge sia connesso ai server interni e che gli utenti esterni possano connettersi all'ambiente Skype for Business Server tramite edge.
+Dopo aver distribuito il server perimetrale o il pool di server perimetrali, è necessario sapere se funziona correttamente. Ecco un paio di cose che possono essere utili per verificare che l'ambiente Edge sia connesso ai server interni e che gli utenti esterni possano connettersi all'ambiente Skype for Business Server tramite Edge.
   
 ## <a name="verify-connectivity-between-your-internal-servers-and-your-edge-servers"></a>Verificare la connettività tra i server interni e i server Perimetrali
 
@@ -46,7 +46,7 @@ Qualsiasi test per l'accesso degli utenti esterni deve includere ogni tipo di ut
     
 - Utenti anonimi.
     
-- Utenti dell'organizzazione connessi Skype for Business remoto, ma che non usano VPN.
+- Gli utenti dell'organizzazione connessi Skype for Business remoto, ma che non usano vpn.
     
 Questi test determineranno se il server perimetrale è:
   
@@ -58,6 +58,6 @@ Questi test determineranno se il server perimetrale è:
     
 - Esegue la risoluzione DNS esterna in modo accurato.
     
-  - Dall'esterno della rete, eseguire il ping di ogni FQDN esterno del server perimetrale o del pool di server perimetrali. Anche se il ping ha esito negativo, verranno visualizzati gli indirizzi IP, che è possibile confrontare con gli indirizzi IP assegnati in precedenza.
+  - Dall'esterno della rete, eseguire il ping di ogni FQDN esterno del server perimetrale o del pool di server perimetrali. Anche se il ping ha esito negativo, verranno visualizzati gli indirizzi IP, che è possibile confrontare gli indirizzi IP assegnati in precedenza.
     
 

@@ -8,7 +8,7 @@ ms.service: msteams
 audience: admin
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 MS.collection:
 - Teams_ITAdmin_Help
 - M365-collaboration
@@ -17,12 +17,12 @@ search.appverid: MET150
 description: Informazioni su come configurare un account Microsoft 365 Business Voice per l'uso con gli operatori automatici.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: eb36a0f3a1327bb3b42b0148c889a05e377ccf1af80c4a3c42d51299677b9692
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: afc45df5ecf6336d2ddea86581fde67e85a6ab24
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54331078"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630240"
 ---
 # <a name="step-4-set-up-a-business-voice-resource-account"></a>Passaggio 4: Configurare un account della risorsa Voce aziendale
 
@@ -38,10 +38,10 @@ Il video seguente mostra come completare questi passaggi nell'interfaccia Teams 
 
 ## <a name="obtain-virtual-user-licenses"></a>Ottenere licenze utente virtuali
 
-Gli account delle risorse richiedono una licenza per poter usare operatori automatici e code di chiamata. È possibile usare una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale.
+Gli account delle risorse richiedono una licenza per poter usare operatori automatici e code di chiamata. È possibile usare una licenza *Microsoft 365 Sistema telefonico - Utente* virtuale gratuita.
 
 > [!NOTE]
-> È necessario eseguire la procedura seguente solo se si è effettuato l'accesso a un periodo di valutazione di Business Voice. Se sono state acquistate licenze Business Voice, le licenze virtuali dovrebbero già essere applicate al proprio account. 
+> È necessario eseguire la procedura seguente solo se si è effettuato l'accesso a un periodo di valutazione di Business Voice. Se sono state acquistate licenze Business Voice, le licenze virtuali dovrebbero essere già applicate al proprio account. 
 >
 > Per verificare se si hanno già licenze virtuali, accedere Microsoft 365 un account con autorizzazioni di amministratore globale. Quindi vai a Fatturazione > [Tuoi prodotti](https://admin.microsoft.com/Adminportal/Home#/subscriptions). Se si hanno licenze virtuali, verranno visualizzate **come Microsoft 365 Sistema telefonico - Utente virtuale.**
 
@@ -62,7 +62,7 @@ Dopo aver ricevuto la licenza *Microsoft 365 Sistema telefonico - Utente* virtua
 
 ![Screenshot dell'interfaccia utente per l'aggiunta di un account di risorsa](../media/resource-account-add.png)
 
-1. Aprire l Microsoft Teams di amministrazione di Microsoft Teams e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
+1. Aprire l'Microsoft Teams di amministrazione e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
 2. Nel riquadro di spostamento sinistro passare a <a href="https://admin.teams.microsoft.com/company-wide-settings/resource-accounts" target="_blank"> **Impostazioni a livello di** organizzazione Account delle  >  **risorse.**</a>
 3. Selezionare **Aggiungi**.
 4. Nel riquadro **Aggiungi account risorsa** compilare Nome **visualizzato** e quindi **Nome utente.** Scegliere un nome visualizzato descrittivo, ad esempio "Operatore automatico linea principale" per descrivere lo scopo dell'account della risorsa.
@@ -75,7 +75,7 @@ Dopo aver ricevuto la licenza *Microsoft 365 Sistema telefonico - Utente* virtua
 
 Dopo aver creato l'account delle risorse, è necessario assegnare una licenza *Microsoft 365 Sistema telefonico -* Utente virtuale o Sistema telefonico *licenza.*
 
-![Screenshot dell'interfaccia utente per l'assegnazione di licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
+![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
 
 1. Aprire il interfaccia di amministrazione di Microsoft 365 e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
 1. Nel riquadro di spostamento sinistro passare a <a href="https://admin.microsoft.com/Adminportal/Home#/users" target="_blank"> **Utenti**  >  **utenti attivi**</a>.
@@ -87,10 +87,10 @@ Dopo aver creato l'account delle risorse, è necessario assegnare una licenza *M
 
 ![Screenshot dell'interfaccia utente assegna numero di servizio](../media/resource-account-assign-phone-number.png)
 
-1. Aprire l Microsoft Teams di amministrazione di Microsoft Teams e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
+1. Aprire l'Microsoft Teams di amministrazione e accedere con un utente che è un amministratore globale (in genere si tratta dell'account usato per iscriversi per Microsoft 365).
 1. Nel riquadro di spostamento sinistro passare a <a href="https://admin.teams.microsoft.com/company-wide-settings/resource-accounts" target="_blank"> **Impostazioni a livello di** organizzazione Account delle  >  **risorse.**</a>
 1. Selezionare l'account della risorsa appena creato e quindi fare clic su **Assegna/annulla assegnazione.**
-1. **Nell'elenco Telefono tipo di** numero scegliere **Online.**
+1. **Nell'Telefono tipo di numero scegliere** **Online.**
 1. Nella casella **Numero di telefono assegnato** cercare il numero da usare e fare clic su **Aggiungi.** Assicurarsi di includere il codice paese ,ad esempio **+1** 250 555 0012
 1. Fare clic su **Salva**.
 
