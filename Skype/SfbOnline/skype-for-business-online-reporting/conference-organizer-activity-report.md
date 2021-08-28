@@ -13,19 +13,19 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Reporting
 - O365E_ReportsS4BOrgActivity
 description: 'Learn how to get the Skype for Business Conference Organized Activity report, and how to interpret and customize it. '
-ms.openlocfilehash: 14b46f6050b7634513b02cc5eaab11eac5d83f78a8e39b1cdca7cb301e7fa64b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 88f928facce4d384e38108c2e9d41820895be7be
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54326652"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620282"
 ---
 # <a name="conference-organizer-activity-report"></a>Report attività organizzatore di conferenze
 
@@ -44,7 +44,7 @@ Questo report, insieme agli altri report Skype for Business, fornisce informazio
 
 1. Passare all'interfaccia di amministrazione > **utilizzo dei**  >  **report.**
     
-2. Nella pagina **Utilizzo** selezionare **l'Skype for Business** dell'organizzatore della  >  conferenza **nell'elenco Selezionare un report a** sinistra. In caso contrario, fare clic **sul** widget Skype for Business attività e quindi fare clic su Skype for Business dell'organizzatore della conferenza  **nell'Skype for Business attività.**
+2. Nella pagina **Utilizzo** selezionare **l'Skype for Business**  > **organizzatore** della conferenza **nell'elenco Selezionare un report a** sinistra. In caso contrario, fare clic **sul** widget Skype for Business attività e quindi fare clic su Skype for Business dell'organizzatore della conferenza  **nell'Skype for Business attività.**
   
 ## <a name="interpret-the-skype-for-business-conferences-organizer-report"></a>Interpretare il report organizzatore di conferenze di Skype for Business
 
@@ -92,10 +92,10 @@ L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per 
 * **Accesso esterno/uscita : 3rd party** mostra il numero totale di audioconferenze con accesso esterno/uscita organizzate che usano un provider di servizi di audioconferenza di terze parti. 
 * **Accesso in ingresso/uscita Microsoft** mostra il numero totale di conferenze audio in ingresso/uscita organizzate. 
 * **Minuti audio/video** mostra il numero totale di minuti utilizzati per l'organizzazione di conferenze che hanno utilizzato audio/video. 
-* **Minuti microsoft per l'accesso** esterno mostra il numero totale di minuti di accesso esterno utilizzati nelle riunioni organizzate che usano Microsoft come provider di servizi di audioconferenza. 
+* **Minuti per l'accesso** esterno Microsoft indica il numero totale di minuti di accesso esterno utilizzati nelle riunioni organizzate che usano Microsoft come provider di servizi di audioconferenza. 
 * **Minuti Microsoft per chiamate in** uscita indica il numero totale di minuti di chiamata in uscita usati nelle riunioni organizzate che usano Microsoft come provider di servizi di audioconferenza. 
 
-Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la **sezione Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
+Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **Come si nascondono i dettagli a livello di utente in** Report attività [nell'interfaccia di amministrazione.](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)
 ***
 ![Numero 9](../images/sfbcallout9.png)<br/>È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic o toccando **Esporta**.           <br/> ![Skype for Business Pulsante Esporta report.](../images/de7e2ab7-d70c-422f-a0ec-178b10f7dd51.png)<br/>Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.
 ***
@@ -107,7 +107,7 @@ Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cu
     
 - [Skype per report di utilizzo del dispositivo Business](device-usage-report.md) permette di vedere i dispositivi, compresi i sistemi operativi e dispositivi mobili basati su Windows, in cui è installata l'app Skype for Business e che la utilizzano per messaggistica istantanea e riunioni.
     
-- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenze telefoniche con accesso esterno/esterno a cui si partecipa.
+- [Skype for Business attività dei partecipanti alla conferenza](conference-participant-activity-report.md) È possibile vedere il numero di conferenze di messaggistica istantanea, audio/video, condivisione di applicazioni, Web e conferenza telefonica con accesso esterno/esterno a cui si partecipa.
     
 - [Skype for Business attività peer-to-peer](peer-to-peer-activity-report.md) È possibile vedere quanto gli utenti usano messaggistica istantanea, audio/video, condivisione di applicazioni e trasferimento di file.
     

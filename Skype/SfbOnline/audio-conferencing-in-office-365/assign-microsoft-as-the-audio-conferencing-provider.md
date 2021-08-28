@@ -16,24 +16,24 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: Learn how to assign Microsoft the dial-in conferencing provider for Skype for Business.
-ms.openlocfilehash: 5e02103dcd84bcbbaf60ccbc1a9fcd29555c241d4e05fd5e0f535b296d965748
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 982d0515468109d1adf8ac2d7f00cce36732faf7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340312"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620302"
 ---
 # <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di audioconferenza
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Per usare i servizi di audioconferenza in Microsoft 365 o Office 365 con Skype for Business e Microsoft Teams, gli utenti dell'organizzazione devono avere una licenza di audioconferenza assegnata. Vedere [Provare o acquistare audioconferenze in Microsoft 365](try-or-purchase-audio-conferencing-in-office-365.md) o Office 365 per altre informazioni sulle licenze e sul costo.
+Per usare i servizi di audioconferenza in Microsoft 365 o Office 365 con Skype for Business e Microsoft Teams, gli utenti dell'organizzazione devono avere una licenza di audioconferenza assegnata. Vedere [Provare o acquistare audioconferenze in Microsoft 365 o Office 365](try-or-purchase-audio-conferencing-in-office-365.md) per altre informazioni sulle licenze e sul costo.
 
 L'audioconferenza Microsoft fornisce i numeri di telefono di accesso esterno, pin e ID conferenza che possono essere utilizzati dai partecipanti alla riunione per colegarsi alle riunioni della propria organizzazione. È sufficiente assegnare agli utenti che desiderano programmare o condurre riunioni con Skype for Business o Microsoft Teams.
 

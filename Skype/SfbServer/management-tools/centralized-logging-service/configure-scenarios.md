@@ -10,27 +10,27 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 6c3bf826-e7fd-4002-95dc-01020641ef01
 description: 'Riepilogo: informazioni su come creare, modificare e rimuovere scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.'
-ms.openlocfilehash: eeecf19a03f678de9321dee83bed264acf6e82b80eb1057cd79e993c05da2c9d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b4dea0146cfb80d8f28a102d4cf719a28b7bb188
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323098"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619712"
 ---
 # <a name="configure-scenarios-for-the-centralized-logging-service-in-skype-for-business-server-2015"></a>Configurare gli scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015
  
 **Riepilogo:** Informazioni su come creare, modificare e rimuovere scenari per il servizio di registrazione centralizzata in Skype for Business Server 2015.
   
-Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e i provider da utilizzare nel servizio di registrazione centralizzata. Attraverso gli scenari si attivano o disattivano le tracce per i provider (ad esempio, S4, SIPStack, messaggistica immediata e presenza). Attraverso la configurazione di uno scenario, è possibile raggruppare tutti i provider per una data raccolta logica relativa a un problema specifico. Se si trova che uno scenario deve essere modificato per soddisfare le esigenze di risoluzione dei problemi e registrazione, gli strumenti di debug di Skype for Business Server 2015 forniscono un modulo di Windows PowerShell denominato ClsScenarioEdit.psm1 contenente una funzione denominataEdit-CsClsScenario. Il modulo consente di modificare le proprietà dello scenario. In questo argomento sono forniti esempi di funzionamento del modulo. Scaricare gli Skype for Business Server 2015 [Debugging Tools](https://go.microsoft.com/fwlink/p/?LinkId=285257) prima di procedere.
+Gli scenari definiscono l'ambito (ovvero globale, sito, pool o computer) e i provider da utilizzare nel servizio di registrazione centralizzata. Attraverso gli scenari si attivano o disattivano le tracce per i provider (ad esempio, S4, SIPStack, messaggistica immediata e presenza). Attraverso la configurazione di uno scenario, è possibile raggruppare tutti i provider per una data raccolta logica relativa a un problema specifico. Se si trova che uno scenario deve essere modificato per soddisfare le esigenze di risoluzione dei problemi e registrazione, gli strumenti di debug di Skype for Business Server 2015 forniscono un modulo Windows PowerShell denominato ClsScenarioEdit.psm1 contenente una funzione denominataEdit-CsClsScenario. Il modulo consente di modificare le proprietà dello scenario. In questo argomento sono forniti esempi di funzionamento del modulo. Scaricare gli Skype for Business Server 2015 [Debugging Tools](https://go.microsoft.com/fwlink/p/?LinkId=285257) prima di procedere.
   
 > [!IMPORTANT]
-> Per un determinato ambito (sito, globale, pool o computer), è possibile eseguire un massimo di due scenari alla volta. Per determinare quali scenari sono attualmente in esecuzione, utilizzare Windows PowerShell [e Get-CsClsScenario](/powershell/module/skype/get-csclsscenario?view=skype-ps). Utilizzando Windows PowerShell [e Set-CsClsScenario,](/powershell/module/skype/set-csclsscenario?view=skype-ps)è possibile modificare in modo dinamico gli scenari in esecuzione. È possibile modificare gli scenari durante una sessione di registrazione, al fine di regolare o rifinire i dati che vengono raccolti, nonché i provider. 
+> Per un determinato ambito (sito, globale, pool o computer), è possibile eseguire un massimo di due scenari alla volta. Per determinare quali scenari sono attualmente in esecuzione, utilizzare Windows PowerShell [e Get-CsClsScenario](/powershell/module/skype/get-csclsscenario?view=skype-ps). Utilizzando Windows PowerShell e [Set-CsClsScenario](/powershell/module/skype/set-csclsscenario?view=skype-ps), è possibile modificare dinamicamente gli scenari in esecuzione. È possibile modificare gli scenari durante una sessione di registrazione, al fine di regolare o rifinire i dati che vengono raccolti, nonché i provider. 
   
-Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basato sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi gli eventuali ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
+Per eseguire le funzioni del servizio di registrazione centralizzata utilizzando Skype for Business Server Management Shell, è necessario essere membri dei gruppi di sicurezza CsAdministrator o CsServerAdministrator basati sui ruoli o un ruolo RBAC personalizzato contenente uno di questi due gruppi. Per restituire un elenco di tutti i ruoli RBAC a cui è stato assegnato questo cmdlet, inclusi gli eventuali ruoli RBAC personalizzati creati dall'utente, eseguire il comando seguente da Skype for Business Server Management Shell o dal prompt di Windows PowerShell:
   
 ```PowerShell
 Get-CsAdminRole | Where-Object {$_.Cmdlets -match "Skype for Business Server 2015 cmdlet"}
@@ -150,7 +150,7 @@ Il cmdlet **Remove-CsClsScenario** rimuove lo scenario specificato, ma le tracce
 1. Avviare Skype for Business Server Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Skype for Business 2015** e quindi fare clic su **Skype for Business Server Management Shell.**
     
     > [!IMPORTANT]
-    > Il modulo ClsScenarioEdit.psm1 viene fornito come download Web separato. Il modulo fa parte degli strumenti di Skype for Business Server 2015. Per impostazione predefinita, gli strumenti di debug vengono installati nella directory C:\Programmi\Skype for Business Server 2015\Debugging Tools. 
+    > Il modulo ClsScenarioEdit.psm1 viene fornito come download Web separato. Il modulo fa parte degli strumenti di Skype for Business Server 2015 Debugging. Per impostazione predefinita, gli strumenti di debug vengono installati nella directory C:\Programmi\Skype for Business Server 2015\Debugging Tools. 
   
 2. Dal Windows PowerShell, digitare:
     

@@ -9,16 +9,16 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 16f08710-8961-4659-acbf-ebb95a198fb4
 description: "Riepilogo: gestire l'autenticazione a due fattori in Skype for Business Server."
-ms.openlocfilehash: db40d3c2f899ec40ba01e0a45304e147513b9c03
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 2b354c99b4e02536ff3db2043ec18fcd092d766e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58235511"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621102"
 ---
 # <a name="manage-two-factor-authentication-in-skype-for-business-server"></a>Gestire l'autenticazione a due fattori in Skype for Business Server
  
@@ -36,7 +36,7 @@ Gli aggiornamenti cumulativi per lync Server 2013: client desktop di luglio 2013
   
 ## <a name="topology-requirements"></a>Requisiti della topologia
 
-I clienti sono invitati a distribuire l'autenticazione a due fattori usando Skype for Business Server con Server Perimetrali, Server Director e Pool di utenti. Per abilitare l'autenticazione passiva per gli utenti, è necessario disabilitare altri metodi di autenticazione per altri ruoli e servizi, tra cui:
+I clienti sono invitati a distribuire l'autenticazione a due fattori usando Skype for Business Server con Server Perimetrali, Director e Pool di utenti. Per abilitare l'autenticazione passiva per gli utenti, è necessario disabilitare altri metodi di autenticazione per altri ruoli e servizi, tra cui:
   
 |**Tipo di configurazione**|**Tipo di servizio**|**Ruolo del server**|**Tipo di autenticazione da disabilitare**|
 |:-----|:-----|:-----|:-----|
@@ -49,13 +49,13 @@ A meno che questi tipi di autenticazione non siano disabilitati a livello di ser
   
 ## <a name="skype-for-business-service-discovery"></a>Skype for Business Individuazione servizio
 
-I record DNS utilizzati dai client interni e/o esterni per individuare i servizi Skype for Business devono essere configurati per la risoluzione in un server Skype for Business non abilitato per l'autenticazione a due fattori. Con questa configurazione, gli utenti di pool di Skype for Business non abilitati per l'autenticazione a due fattori non doranno immettere un PIN per l'autenticazione, mentre gli utenti di pool di Skype for Business abilitati per l'autenticazione a due fattori doranno immettere il PIN per l'autenticazione.
+I record DNS utilizzati dai client interni ed/o esterni per individuare i servizi Skype for Business devono essere configurati per la risoluzione in un server Skype for Business non abilitato per l'autenticazione a due fattori. Con questa configurazione, gli utenti di pool Skype for Business non abilitati per l'autenticazione a due fattori non doranno immettere un PIN per l'autenticazione, mentre gli utenti di pool Skype for Business abilitati per l'autenticazione a due fattori doranno immettere il PIN per l'autenticazione.
   
 ## <a name="exchange-authentication"></a>Exchange Autenticazione
 
-I clienti che hanno distribuito l'autenticazione a due fattori per Microsoft Exchange potrebbero trovare che alcune funzionalità nel client non sono disponibili. Questo comportamento è previsto dalla progettazione, in quanto il client Skype for Business non supporta l'autenticazione a due fattori per le funzionalità che dipendono dall'Exchange integrazione.
+I clienti che hanno distribuito l'autenticazione a due fattori per Microsoft Exchange potrebbero trovare che alcune funzionalità nel client non sono disponibili. Questo comportamento è basato sulla progettazione, in quanto il client Skype for Business non supporta l'autenticazione a due fattori per le funzionalità che dipendono dall'Exchange integrazione.
   
-## <a name="contacts"></a>Contatti
+## <a name="contacts"></a>Contacts
 
 Skype for Business utenti configurati per sfruttare la funzionalità Archivio contatti unificato scopriranno che i contatti non sono più disponibili dopo l'accesso con l'autenticazione a due fattori.
   
@@ -63,7 +63,7 @@ Skype for Business utenti configurati per sfruttare la funzionalità Archivio co
   
 ## <a name="skill-search"></a>Ricerca competenze
 
-I clienti che hanno configurato la funzionalità di ricerca competenze nell'ambiente Skype for Business troveranno che questa funzionalità non funziona quando Skype for Business è abilitata per l'autenticazione a due fattori. Si tratta di una procedura di progettazione, in quanto Microsoft SharePoint attualmente non supporta l'autenticazione a due fattori.
+I clienti che hanno configurato la funzionalità ricerca competenze nell'ambiente Skype for Business troveranno che questa funzionalità non funziona quando l'Skype for Business è abilitata per l'autenticazione a due fattori. Questo è per progettazione, poiché Microsoft SharePoint attualmente non supporta l'autenticazione a due fattori.
   
 ## <a name="credentials"></a>Credentials
 
@@ -79,7 +79,7 @@ Con il metodo di autenticazione Kerberos o NTLM, le credenziali Windows dell'ute
   
 Se agli utenti vengono involontariamente richieste le credenziali prima che venga richiesto di immettere il PIN, la chiave del Registro di sistema **DisableNTCredentials** potrebbe essere configurata involontariamente nei computer client, probabilmente tramite Criteri di gruppo.
   
-Per impedire l'ulteriore richiesta di credenziali, creare la seguente voce del Registro di sistema nella workstation locale o utilizzare il modello amministrativo Skype for Business da applicare a tutti gli utenti per un determinato pool utilizzando Criteri di gruppo:
+Per impedire la richiesta aggiuntiva di credenziali, creare la voce del Registro di sistema seguente nella workstation locale o utilizzare il modello amministrativo Skype for Business da applicare a tutti gli utenti per un determinato pool utilizzando Criteri di gruppo:
   
 HKEY_LOCAL_MACHINE\Software\Policies\Microsoft\Office\15.0\Lync
   
@@ -91,7 +91,7 @@ Valore: 0x0
 
 Quando un utente accede a Skype for Business per la prima volta, all'utente viene richiesto di salvare la password. Se selezionata, questa opzione consente di archiviare il certificato client dell'utente nell'archivio certificati personali e le credenziali Windows dell'utente in Gestione credenziali del computer locale.
   
-L'impostazione del Registro di sistema **SavePassword** deve essere disabilitata quando Skype for Business è configurata per supportare l'autenticazione a due fattori. Per impedire agli utenti di salvare le password, modificare la seguente voce del Registro di sistema nella workstation locale o utilizzare il modello amministrativo di Skype for Business da applicare a tutti gli utenti per un determinato pool utilizzando Criteri di gruppo:
+L'impostazione del Registro di sistema **SavePassword** deve essere disabilitata Skype for Business è configurata per supportare l'autenticazione a due fattori. Per impedire agli utenti di salvare le password, modificare la seguente voce del Registro di sistema nella workstation locale o utilizzare il modello amministrativo Skype for Business da applicare a tutti gli utenti per un determinato pool utilizzando Criteri di gruppo:
   
 HKEY_CURRENT_USER\Software\Microsoft\Office\15.0\Lync
   
@@ -107,7 +107,7 @@ Questa funzionalità deve essere abilitata in situazioni in cui la sicurezza è 
   
 ## <a name="guest-user-access"></a>Accesso utente guest
 
-In questi argomenti non viene trattata la configurazione di un proxy ADFS o di un proxy inverso Skype for Business'autenticazione a due fattori da reti esterne.
+La configurazione di un proxy ADFS o proxy inverso per supportare Skype for Business'autenticazione a due fattori da reti esterne non è trattata in questi argomenti.
   
 ## <a name="see-also"></a>Vedere anche
 

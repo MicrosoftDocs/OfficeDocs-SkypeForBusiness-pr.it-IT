@@ -9,22 +9,22 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: d8211c64-0b63-4193-a074-673da7d14287
 description: 'Riepilogo: stage AV and OAuth certificates for Skype for Business Server.'
-ms.openlocfilehash: 61b37b7e4edc41c73d27a85432f1328215ca84e58d4906c0a825071f5f6669ef
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 82dd1e88330bec6af7a9832fbb23429fbe457d04
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54286845"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619842"
 ---
 # <a name="assign-a-per-user-pin-policy-in-skype-for-business-server"></a>Assegnare un criterio PIN per utente in Skype for Business Server
 
 **Riepilogo:** Stage AV and OAuth certificates for Skype for Business Server.
   
-Il criterio PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno è una delle singole impostazioni di un account utente che può essere configurato nel Pannello Skype for Business Server di controllo.
+Il criterio PIN (Personal Identification Number) per le conferenze telefoniche con accesso esterno è una delle singole impostazioni di un account utente che può essere configurato nel Skype for Business Server di controllo.
   
 La distribuzione di uno o più criteri PIN per utente è facoltativa. Puoi anche distribuire solo un criterio PIN a livello globale o un criterio PIN a livello di sito. Se si distribuiscono i criteri per utente, è necessario assegnarli in modo esplicito agli utenti, ai gruppi o agli oggetti contatto. Le autorizzazioni e i diritti utente relativi all'utilizzo dei PIN per le conferenze telefoniche con accesso esterno vengono automaticamente predefiniti rispetto a quelli definiti nel criterio PIN a livello globale quando non vengono assegnati criteri specifici a livello di sito o per utente.
   
@@ -80,7 +80,7 @@ Dopo aver creato almeno un criterio PIN per utente, utilizzare le procedure desc
     
 ## <a name="assigning-a-per-user-pin-policy-by-using-windows-powershell-cmdlets"></a>Assegnazione di un criterio PIN Per-User tramite Windows PowerShell cmdlet
 
-È possibile assegnare criteri PIN per utente utilizzando Windows PowerShell e il cmdlet **Grant-CsPinPolicy.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile assegnare criteri PIN per utente utilizzando Windows PowerShell e il cmdlet **Grant-CsPinPolicy.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-assign-a-per-user-pin-policy-to-a-single-user"></a>Per assegnare un criterio PIN per utente a un singolo utente
 

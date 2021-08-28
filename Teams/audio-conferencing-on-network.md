@@ -13,18 +13,18 @@ ms.collection:
 - M365-voice
 - M365-collaboration
 - m365initiative-meetings
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: Di seguito sono descritte le funzionalità in rete per le audioconferenze.
-ms.openlocfilehash: 63a76bd8cb7765816c417d60640d931acbe856bae7c1c7c3531e9598524e59c3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7d477826c79b1a1630616cc51130348bfb953fa7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351226"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620712"
 ---
 # <a name="on-network-conferencing-for-audio-conferencing"></a>Servizi di conferenza in rete per audioconferenza
 
@@ -39,11 +39,11 @@ Questo articolo descrive i prerequisiti e i passaggi di configurazione necessari
 
 Prima di configurare le conferenze in rete, assicurarsi che l'organizzazione soddisfi i prerequisiti seguenti: 
 
-- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o abilitati per le audioconferenze utilizzino Teams per tutte le riunioni. L'instradamento delle chiamate di audioconferenza in ingresso e in uscita tramite conferenze in rete è supportato solo per le Teams riunioni.
+- Assicurarsi che tutti gli utenti dell'organizzazione abilitati o abilitati per le audioconferenze utilizzino Teams per tutte le riunioni. Il routing delle chiamate di audioconferenza in ingresso e in uscita tramite conferenze in rete è supportato solo per le riunioni Teams riunioni.
 
 - Assegnare licenze di audioconferenza a tutti gli utenti che usano servizi di conferenza in rete.
 
-- Configurare il servizio di audioconferenza. Per altre informazioni, vedere [Configurare le audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md).
+- Configurare il servizio di audioconferenza. Per altre informazioni, vedere [Configurare audioconferenze per Microsoft Teams](set-up-audio-conferencing-in-teams.md).
 
 - Configurare il session border controller (SBC) per il routing diretto. Per altre informazioni, vedere [Pianificare il routing diretto](direct-routing-plan.md) e Configurare il routing [diretto.](direct-routing-configure.md) 
 
@@ -51,7 +51,7 @@ Prima di configurare le conferenze in rete, assicurarsi che l'organizzazione sod
   
 ## <a name="enable-the-routing-of-dial-in-calls-to-microsoft-audio-conferencing-through-direct-routing"></a>Abilitare il routing delle chiamate con accesso esterno alle audioconferenze Microsoft tramite routing diretto 
 
-Per instradare le chiamate con accesso esterno effettuate dagli utenti locali al servizio di audioconferenza tramite Routing diretto, è necessario configurare le regole di routing appropriate per gli SBC e i sistemi PBC (Private Branch Exchange).
+Per instradare le chiamate con accesso esterno effettuate dagli utenti locali al servizio di audioconferenza tramite routing diretto, è necessario configurare le regole di routing appropriate per gli SBC e i sistemi PBC (Private Branch Exchange).
 
 È necessario configurare le apparecchiature di telefonia dei siti per instradare le chiamate a qualsiasi numero di servizio del bridge di conferenza dell'organizzazione tramite un trunk di routing diretto.
 
@@ -87,7 +87,7 @@ Le chiamate in uscita provenienti Teams riunioni sono provenienti dal numero di 
 
 ### <a name="configure-audio-conferencing-routing-policies"></a>Configurare i criteri di routing delle audioconferenze
 
-Il criterio di routing delle audioconferenze OnlineAudioConferencingRoutingPolicy determina quali chiamate in uscita per le riunioni vengono instradati ai trunk di routing diretto. Se si ha familiarità con il criterio CsOnlineVoiceRoutingPolicy, questo criterio funziona in modo molto simile.
+Il criterio di routing delle audioconferenze OnlineAudioConferencingRoutingPolicy determina quali chiamate in uscita della riunione vengono instradati ai trunk di routing diretto. Se si ha familiarità con il criterio CsOnlineVoiceRoutingPolicy, questo criterio funziona in modo molto simile.
 
 Per configurare i criteri di routing delle audioconferenze, sono necessari i passaggi seguenti:
 1.  Creare utilizzi PSTN
@@ -98,7 +98,7 @@ Per configurare i criteri di routing delle audioconferenze, sono necessari i pas
 
 #### <a name="create-pstn-usages"></a>Creare utilizzi PSTN
 
-Gli utilizzi PSTN sono raccolte di route vocali. Quando viene avviata una chiamata in uscita dalla riunione di un determinato organizzatore, le route vocali verranno usate per determinare il percorso di routing della chiamata in base agli utilizzi PSTN associati all'utente tramite i criteri di routing vocale dell'utente.
+Gli utilizzi PSTN sono raccolte di route vocali. Quando una chiamata in uscita viene avviata dalla riunione di un determinato organizzatore, le route vocali vengono usate per determinare il percorso di routing della chiamata in base agli utilizzi PSTN associati all'utente tramite i criteri di routing vocale dell'utente.
 
 È possibile creare un utilizzo PSTN usando il cmdlet "Set-CsOnlinePstnUsage". Per esempio:
 
@@ -120,7 +120,7 @@ New-CsOnlineVoiceRoute -Identity "Redmond 1" -NumberPattern "^\+1(425|206)(\d{7}
 
 I criteri di routing vocale per i servizi di audioconferenza determinano le possibili route che possono essere usate per instradare una chiamata proveniente dalle riunioni di un organizzatore in base al numero di telefono di destinazione della chiamata in uscita della riunione. I criteri di routing vocale per i servizi di audioconferenza sono associati a uno o più utilizzi PSTN, che a loro volta determinano le possibili route che verranno usate per le chiamate in uscita della riunione degli organizzatori associati al criterio.
 
-È possibile creare un criterio di routing vocale per le audioconferenze usando il cmdlet "New- CsOnlineAudioConferencingRoutingPolicy". Per esempio:
+È possibile creare un criterio di routing vocale delle audioconferenze usando il cmdlet "New- CsOnlineAudioConferencingRoutingPolicy". Per esempio:
 
 ```powershell
 New-CsOnlineAudioConferencingRoutingPolicy "Policy 1" -OnlinePstnUsages "US and Canada"
@@ -141,7 +141,7 @@ Grant-CsOnlineAudioConferencingRoutingPolicy -Identity "<User Identity>" -Policy
 
 ### <a name="configure-routing-on-the-telephony-equipment-of-your-organization"></a>Configurare il routing nelle apparecchiature di telefonia dell'organizzazione
 
-Nelle apparecchiature di telefonia dell'organizzazione è necessario assicurarsi che le chiamate in uscita della riunione instradati tramite Routing diretto siano indirizzate alla destinazione in rete prevista.
+Nelle apparecchiature di telefonia dell'organizzazione è necessario assicurarsi che le chiamate in uscita della riunione instradati tramite Routing diretto siano instradati alla destinazione in rete prevista.
 
 
 ### <a name="optional-configure-a-dial-plan"></a>(Facoltativo) Configurare un piano di chiamata

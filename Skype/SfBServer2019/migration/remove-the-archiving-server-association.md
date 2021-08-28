@@ -9,18 +9,18 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Per rimuovere un server di archiviazione, è necessario modificare o cancellare la dipendenza dal pool Front End, dal Front End Server, dal Survivable Branch Appliance e dal Survivable Branch Server associati. È possibile modificare le proprietà del pool Front End, del Front End Server, del Survivable Branch Appliance e del Survivable Branch Server per rimuovere la dipendenza. Dopo aver cancellato la dipendenza e aver eliminato il server in Generatore di topologie, viene notificato che verrà eliminato anche l'oggetto archivio database associato in Generatore di topologie.
-ms.openlocfilehash: 6265642a45b891180e53d3b00d39a9053b663a434aaa1a4a26e92b619dfba257
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 489eeb276b495598ec2f11fc9b4502935beedf30
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340332"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617072"
 ---
 # <a name="remove-the-archiving-server-association"></a>Rimuovere l'associazione del server di archiviazione
 
-Per rimuovere un server di archiviazione, è necessario modificare o cancellare la dipendenza dal pool Front End, dal Front End Server, dal Survivable Branch Appliance e dal Survivable Branch Server associati. È possibile modificare le proprietà del pool Front End, del Front End Server, del Survivable Branch Appliance e del Survivable Branch Server per rimuovere la dipendenza. Dopo aver cancellato la dipendenza ed eliminato il server in Generatore di topologie, viene notificato che verrà eliminato anche l'oggetto archivio database associato in Generatore di topologie.
+Per rimuovere un server di archiviazione, è necessario modificare o cancellare la dipendenza dal pool Front End, dal Front End Server, dal Survivable Branch Appliance e dal Survivable Branch Server associato. È possibile modificare le proprietà del pool Front End, del Front End Server, del Survivable Branch Appliance e del Survivable Branch Server per rimuovere la dipendenza. Dopo aver cancellato la dipendenza ed eliminato il server in Generatore di topologie, viene notificato che verrà eliminato anche l'oggetto archivio database associato in Generatore di topologie.
   
 ### <a name="to-remove-the-archiving-server-association"></a>Per rimuovere un'associazione a un server di archiviazione
 
@@ -28,7 +28,7 @@ Per rimuovere un server di archiviazione, è necessario modificare o cancellare 
     
 2. Passare al nodo di installazione legacy.
     
-3. In Generatore di topologie espandere **edizione Enterprise pool Front End,** edizione Standard Front End Server o Siti di succursale, **a** seconda della posizione in cui è definito il server di archiviazione. 
+3. In Generatore di topologie espandere **edizione Enterprise pool Front End,** **edizione Standard Front End Server** o Siti di succursale, a seconda di dove è definito il server di archiviazione. 
     
 4. Se è associato un Survivable Branch Server, espandere **Siti** di succursale, espandere il nome del sito di succursale e quindi **Espandere Survivable Branch Appliance.**
     
@@ -45,6 +45,6 @@ Per rimuovere un server di archiviazione, è necessario modificare o cancellare 
     
 9. In **Elimina archivi dipendenti** fare clic su **OK**.
     
-10. Pubblicare la topologia, controllare lo stato della replica ed eseguire la Skype for Business Server distribuzione guidata in base alle esigenze. 
+10. Pubblicare la topologia, controllare lo stato della replica e quindi eseguire Skype for Business Server distribuzione guidata in base alle esigenze. 
     
 

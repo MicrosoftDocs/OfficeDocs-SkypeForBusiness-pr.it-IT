@@ -9,14 +9,14 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Quando un utente fa clic su un collegamento a una riunione in una convocazione di riunione, la pagina di partecipazione alla riunione rileva quale client è già installato nel computer dell'utente. In caso affermativo, il client viene aperto e accede alla riunione. Se un client non è installato, per impostazione predefinita viene aperta l'app Web.
-ms.openlocfilehash: c90e8afa95a73618eb1aa95b3d8d174e950e7e92a49988cb6146209f49cc0e58
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8cba2a6ea0bc54eae6c30265c21d33d01ec951c0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54295123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617112"
 ---
 # <a name="configure-the-meeting-join-page"></a>Configurare la pagina di partecipazione alle riunioni
 
@@ -33,7 +33,7 @@ Quando un utente fa clic su un collegamento a una riunione in una convocazione d
    
 ### <a name="to-configure-the-meeting-join-page-by-using-skype-for-business-server-2019-management-shell"></a>Per configurare la pagina di partecipazione alla riunione tramite Skype for Business Server 2019 Management Shell
 
-1. Avviare Skype for Business Server 2019 Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic su **Skype for Business Server Management Shell.**
+1. Avviare Skype for Business Server 2019 Management Shell: fare clic sul pulsante **Start,** scegliere Tutti i **programmi,** **Microsoft Skype for Business Server 2019** e quindi fare clic **su Skype for Business Server Management Shell.**
     
 2. Eseguire il cmdlet seguente: 
     

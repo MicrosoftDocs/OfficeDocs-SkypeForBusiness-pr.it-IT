@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: ea68414b-bb7e-483a-b731-b6b5a44372b1
 description: In questo argomento vengono illustrate considerazioni sulla pianificazione per l'Skype for Business durante la connessione a un desktop virtuale remoto.
-ms.openlocfilehash: 84a7c289b9c2cc284209861dca35921142fd87e16b3de3b1e42b6c82fb2b8eba
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7b169db870ad652dcf8b64552d9351e47e7117bc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54318759"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621012"
 ---
 # <a name="plan-for-skype-for-business-in-vdi-environments"></a>Pianificare la Skype for Business in ambienti VDI
  
@@ -38,7 +38,7 @@ Sono disponibili tre soluzioni per il componente plug-in VDI, offerte da Microso
 - **VMWare Horizon Virtualization Pack** per Skype for Business, sviluppato in collaborazione con VMWare, consente di distribuire Skype for Business in un desktop virtuale offrendo al contempo un'esperienza utente ottimale. La soluzione funziona sfruttando un motore multimediale nel client per creare una soluzione ottimizzata, con l'endpoint client che fornisce funzionalità di offload multimediale per le chiamate audio e video. Questa soluzione in grado di fornire audio e video direttamente tra gli endpoint per la collaborazione uno-a-uno o di scaricarla in una MCU (Multipoint Control Unit) centrale per conferenze telefoniche o riunioni tra più partecipanti.
     
 > [!NOTE]
-> I Skype for Business di base non sono supportati con Citrix HDX RealTime Optimization Pack o VMWare Horizon Virtualization Pack. 
+> I Skype for Business basic non sono supportati con Citrix HDX RealTime Optimization Pack o VMWare Horizon Virtualization Pack. 
   
 ## <a name="citrix-hdx-realtime-optimization-pack"></a>Citrix HDX RealTime Optimization Pack
 <a name="Citrix_RT"> </a>
@@ -58,9 +58,9 @@ Per ulteriori informazioni, vedere i collegamenti seguenti:
 ## <a name="vmware-horizon-virtualization-pack"></a>VMWare Horizon Virtualization Pack
 <a name="Citrix_RT"> </a>
 
-La soluzione di ambiente VDI di VMWare è compatibile con i client Skype for Business 2015 e 2016 completi installati in un desktop virtuale. Il suo funzionamento complessivo si basa sul plug-in VDI di Microsoft Lync, ma funziona su una più ampia gamma di sistemi operativi client, tra cui Windows 10, Macintosh e Linux. 
+La soluzione di ambiente VDI di VMWare è compatibile con i Skype for Business 2015 e 2016 completi installati in un desktop virtuale. Il suo funzionamento complessivo si basa sul plug-in VDI di Microsoft Lync, ma funziona su una più ampia gamma di sistemi operativi client, tra cui Windows 10, Macintosh e Linux. 
   
-Una descrizione completa delle funzionalità e delle tecnologie supportate è disponibile nel sito Web VMWare nei collegamenti seguenti:
+Una descrizione completa delle funzionalità e delle tecnologie supportate è disponibile nel sito Web VMWare ai collegamenti seguenti:
   
 - [Novità di VMware Horizon 7.4 &amp; Horizon Client 4.7](https://blogs.vmware.com/euc/2018/01/vmware-horizon-7-4-horizon-client-4-7-whats-new.mdl)
     
@@ -73,17 +73,17 @@ Una descrizione completa delle funzionalità e delle tecnologie supportate è di
 
 Con la soluzione plug-in VDI di Microsoft Lync, l'utente deve essere in un computer Windows o un thin client e avere installato il plug-in VDI Lync di Microsoft per gestire i flussi audio/video dal client sul desktop virtuale. Un utente:
   
-1. Connessione un dispositivo audio/video (ad esempio una cuffia o una fotocamera) a un computer locale.
+1. Connessione un dispositivo audio/video (ad esempio una cuffia o una fotocamera) in un computer locale.
     
 2. Connessione a un desktop virtuale remoto con un client Lync 2013 o Skype for Business 2015.
     
 3. Immettere le credenziali per Skype for Business sul desktop virtuale.
     
-4. Immettere di nuovo le credenziali utente per stabilire una connessione con il plug-in VDI lync nel computer Windows locale o nel thin client.
+4. Immettere di nuovo le credenziali utente per stabilire una connessione con il plug-in VDI di Lync nel computer Windows locale o nel thin client.
     
 Dopo aver stabilito una connessione, l'utente è pronto per effettuare e ricevere chiamate audio e video. Il traffico sulla rete e il carico sul desktop virtuale sono ridotti al minimo, poiché il computer locale gestisce l'elaborazione audio/video.
   
-Il plug-in VDI lync di Microsoft è supportato solo in alcuni sistemi operativi Windows e supporta solo i client Lync 2013 o Skype for Business 2015. Vedi [Tecnologie di virtualizzazione supportate e limitazioni note](vdi-environments.md#Supported_virt) per ulteriori dettagli sulle tecnologie e le limitazioni supportate.
+Il plug-in VDI Lync di Microsoft è supportato solo in determinati sistemi operativi Windows e supporta solo i client Lync 2013 o Skype for Business 2015. Vedi [Tecnologie di virtualizzazione supportate e limitazioni note](vdi-environments.md#Supported_virt) per ulteriori dettagli sulle tecnologie e le limitazioni supportate.
   
 Per ulteriori informazioni, vedere i collegamenti seguenti:
   
@@ -106,11 +106,11 @@ Il plug-in VDI di Lync consente chiamate audio e video per le tecnologie di virt
 
 Il plug-in VDI di Lync supporta sessioni remote desktop complete nello scenario desktop virtuale personale, ma non nello scenario di sessione desktop remoto. Questi scenari possono essere descritti come segue:
   
-- **Supportato: desktop virtuali personalizzati o Virtual Desktop Infrastructure (VDI).** In questo scenario, ogni utente accede a un desktop virtuale personalizzabile ed è in grado di salvare i file sul desktop che vengono mantenuti tra le sessioni. Desktop remoto Microsoft Servizi e VMware Horizon View sono implementazioni di esempio testate per l'uso con Skype for Business 2015. Altre implementazioni in fase di convalida includono Citrix XenDesktop. Per informazioni sugli ambienti VDI specifici del fornitore e sull'hardware client testato da Microsoft, vedere [Infrastruttura qualificata per Microsoft Lync.](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md)
+- **Supportato: desktop virtuali personalizzati o Virtual Desktop Infrastructure (VDI).** In questo scenario, ogni utente accede a un desktop virtuale personalizzabile ed è in grado di salvare i file sul desktop che vengono mantenuti tra le sessioni. Desktop remoto Microsoft Servizi e VMware Horizon View sono implementazioni di esempio testate per l'utilizzo con Skype for Business 2015. Altre implementazioni in fase di convalida includono Citrix XenDesktop. Per informazioni sugli ambienti VDI specifici del fornitore e sull'hardware client testato da Microsoft, vedere [Infrastruttura qualificata per Microsoft Lync.](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md)
     
 - **Non supportato: Sessioni Desktop remoto.** In questo scenario, ogni utente accede a una sessione desktop virtuale generica che non può essere personalizzata. Alcuni esempi includono Desktop remoto Microsoft sessioni (RDSH) e Citrix XenApp in combinazione con Citrix Receiver.
     
-Il plug-in VDI di Lync non supporta altre tecnologie di virtualizzazione, ad esempio la virtualizzazione delle applicazioni, che consente l'utilizzo di un'applicazione senza richiedere l'installazione dell'applicazione completa in locale. Le implementazioni di esempio includono Citrix XenApp e Microsoft Application Virtualization (App-V). Il flusso delle applicazioni, la comunicazione remota delle applicazioni e le modalità di virtualizzazione mista (ad esempio, la comunicazione remota dell'applicazione nella comunicazione remota desktop completa) non sono supportate.
+Il plug-in VDI di Lync non supporta altre tecnologie di virtualizzazione, ad esempio la virtualizzazione delle applicazioni, che consente l'utilizzo di un'applicazione senza richiedere l'installazione dell'applicazione completa in locale. Le implementazioni di esempio includono Citrix XenApp e Microsoft Application Virtualization (App-V). Il flusso delle applicazioni, la comunicazione remota delle applicazioni e le modalità di virtualizzazione mista (ad esempio, la comunicazione remota delle applicazioni in servizi remoti desktop completi) non sono supportati.
   
 Il plug-in VDI di Lync è stato progettato per l'utilizzo di API indipendenti dalla piattaforma denominate DVC (Dynamic Virtual Channels). Per gli scenari non esplicitamente supportati, fare riferimento alle istruzioni di supporto del provider di soluzioni VDI.
   

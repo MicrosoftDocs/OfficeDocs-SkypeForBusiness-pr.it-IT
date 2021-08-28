@@ -12,19 +12,19 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: None
+ms.localizationpriority: ''
 f1.keywords:
 - NOCSH
 ms.custom:
 - Legal
 hideEdit: true
 description: Come si può fare un sospiro di sospiro per un account Ip Relay per il Canada.
-ms.openlocfilehash: 1ed95651ab006cfff5c59e22d5d14f083116872d
-ms.sourcegitcommit: 9fcd9a7ae78e04cef90415c2a0f30a98fbf8270f
+ms.openlocfilehash: d062ec96a35d01fc5986af24a2bc52adf8138440
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58406965"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620544"
 ---
 # <a name="ip-relay-in-canada---sign-up"></a>IP Relay in Canada - registrazione
 
@@ -32,7 +32,7 @@ ms.locfileid: "58406965"
 
 Per configurare un account di inoltro IP per il Canada, completare le informazioni riportate di seguito e inviarle tramite posta elettronica [a ptn@microsoft.com](mailto:ptn@microsoft.com).
 
-- Nome & Cognome:
+- Nome & cognome:
 
 - Microsoft 365 o Office 365 dominio dell'organizzazione:(Esempio: Contoso.com)   
 

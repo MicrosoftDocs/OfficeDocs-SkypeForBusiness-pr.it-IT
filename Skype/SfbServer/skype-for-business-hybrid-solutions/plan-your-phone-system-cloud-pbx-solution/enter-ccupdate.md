@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 330367f2-22b0-43e3-b8fb-3e0d2e3b330e
 description: Il cmdlet Enter-CcUpdate prepara il server host Skype for Business Cloud Connector Edition per il processo di aggiornamento mettendolo in modalità manutenzione. L'appliance arresta immediatamente tutti i servizi, terminando le chiamate in corso e rifiutando eventuali nuove chiamate.
-ms.openlocfilehash: 75be5933e31f3966ab36f9957b78cd89c21a4a31df23b5761000a6e96cd9806e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 26f1874ca6c0b92836716d66031945adc864d0ff
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303649"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620762"
 ---
 # <a name="enter-ccupdate"></a>Enter-CcUpdate
 
@@ -50,7 +50,7 @@ Il cmdlet Enter-CcUpdate arresterà immediatamente tutti i servizi che terminano
   
 La modalità di manutenzione è utile, ad esempio, se nel dispositivo è abilitato l'aggiornamento automatico e Microsoft rilascia un hotfix critico. La modalità manutenzione è utile anche se decidi di disattivare gli aggiornamenti automatici, ma esegui gli aggiornamenti manuali in modo coerente.
   
-Dopo aver installato gli aggiornamenti, è possibile tornare alla modalità di produzione eseguendo il cmdlet Exit-CcUpdate.
+Dopo aver installato gli aggiornamenti, l'appliance può essere riportato in modalità di produzione eseguendo il cmdlet Exit-CcUpdate.
   
 > [!NOTE]
 > Se si decide di aggiornare manualmente un'appliance Cloud Connector, è necessario aggiornarla entro 60 giorni dal rilascio della versione successiva da parte di Microsoft. Microsoft supporta la versione rilasciata in precedenza di Cloud Connector per 60 giorni dopo il rilascio della nuova versione 

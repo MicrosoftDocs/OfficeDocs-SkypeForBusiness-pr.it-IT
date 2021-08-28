@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -16,12 +16,12 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare Telefono Microsoft routing diretto di sistema.
-ms.openlocfilehash: ff560ca9417e5386819a90961562520da94d5cfcd65bd5348bd7718601610bf1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d6b767ace4f00e581e99ec73585b0b596029b17e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337414"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619462"
 ---
 # <a name="translate-phone-numbers-to-an-alternate-format"></a>Tradurre i numeri di telefono in un formato alternativo
 
@@ -80,7 +80,7 @@ SBC usa 2065550100 nelle intestazioni RequestURI e To e 4255550100 nell'intestaz
 |---------|---------|---------|---------|
 |RequestURI  |INVITA sip:2065550100@sbc.contoso.com|INVITA sip:+12065550100@sbc.contoso.com|InboundTeamsNumberTranslationRules 'AddPlus1'|
 |A    |A: \<sip:2065550100@sbc.contoso.com>|A: \<sip:+12065550100@sbc.contoso.com>|InboundTeamsNumberTranlationRules 'AddPlus1'|
-|Da   |Da: \<sip:4255550100@sbc.contoso.com>|Da: \<sip:+14255550100@sbc.contoso.com>|InboundPSTNNumberTranslationRules 'AddPlus1'|
+|DA   |DA: \<sip:4255550100@sbc.contoso.com>|DA: \<sip:+14255550100@sbc.contoso.com>|InboundPSTNNumberTranslationRules 'AddPlus1'|
 
 ## <a name="example-2-inbound-call-to-a-four-digit-number"></a>Esempio 2: Chiamata in ingresso a un numero a quattro cifre
 
@@ -92,7 +92,7 @@ SBC usa 0100 nelle intestazioni RequestURI e To 4255550100 nell'intestazione Fro
 |---------|---------|---------|---------|
 |RequestURI  |INVITA sip:0100@sbc.contoso.com          |INVITA sip:+12065550100@sbc.contoso.com           |InboundTeamsNumberTranlationRules 'AddE164SeattleAreaCode'        |
 |A    |A: \<sip:0100@sbc.contoso.com>|A: \<sip:+12065550100@sbc.contoso.com>|InboundTeamsNumberTranlationRules 'AddE164SeattleAreaCode'         |
-|Da   |Da: \<sip:4255550100@sbc.contoso.com>|Da: \<sip:+14255550100@sbc.contoso.com>|InboundPSTNNumberTranlationRules 'AddPlus1'        |
+|DA   |DA: \<sip:4255550100@sbc.contoso.com>|DA: \<sip:+14255550100@sbc.contoso.com>|InboundPSTNNumberTranlationRules 'AddPlus1'        |
 
 ## <a name="example-3-outbound-call-using-a-ten-digit-non-e164-number"></a>Esempio 3: Chiamata in uscita con un numero non E.164 di dieci cifre
 
@@ -106,7 +106,7 @@ In questo scenario, un dial plan traduce il numero prima di inviarlo all'interfa
 |---------|---------|---------|---------|
 |RequestURI  |INVITA sip:+14255550100@sbc.contoso.com          |INVITA sip:4255550100@sbc.contoso.com       |OutboundPSTNNumberTranlationRules 'StripPlus1'         |
 |A    |A: \<sip:+14255550100@sbc.contoso.com>|A: \<sip:4255555555@sbc.contoso.com>|OutboundPSTNNumberTranlationRules 'StripPlus1'       |
-|Da   |Da: \<sip:+12065550100@sbc.contoso.com>|Da: \<sip:2065550100@sbc.contoso.com>|OutboundTeamsNumberTranlationRules 'StripPlus1'         |
+|DA   |DA: \<sip:+12065550100@sbc.contoso.com>|DA: \<sip:2065550100@sbc.contoso.com>|OutboundTeamsNumberTranlationRules 'StripPlus1'         |
 
 ## <a name="example-4-outbound-call-using-a-four-digit-non-e164-number"></a>Esempio 4: Chiamata in uscita con un numero non E.164 a quattro cifre
 
@@ -118,7 +118,7 @@ SBC è configurato per l'uso di numeri a quattro cifre diversi da E.164 per gli 
 |---------|---------|---------|---------|
 |RequestURI  |INVITA sip:0100@sbc.contoso.com           |INVITA sip:4255550100@sbc.contoso.com       |InboundTeamsNumberTranlationRules 'AddSeattleAreaCode'         |
 |A    |A: \<sip:0100@sbc.contoso.com>|A: \<sip:4255555555@sbc.contoso.com>|InboundTeamsNumberTranlationRulesList 'AddSeattleAreaCode'       |
-|Da   |Da: \<sip:+12065550100@sbc.contoso.com>|Da: \<sip:2065550100@sbc.contoso.com>| InboundPSTNNumberTranlationRules 'StripPlus1' |
+|DA   |DA: \<sip:+12065550100@sbc.contoso.com>|DA: \<sip:2065550100@sbc.contoso.com>| InboundPSTNNumberTranlationRules 'StripPlus1' |
 
 ## <a name="see-also"></a>Vedere anche
 

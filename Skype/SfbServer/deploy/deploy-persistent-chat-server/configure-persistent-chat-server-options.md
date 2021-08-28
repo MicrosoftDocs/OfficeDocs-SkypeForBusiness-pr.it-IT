@@ -10,15 +10,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 19ced8de-8867-4152-b38a-891f3bc2a5ea
 description: 'Riepilogo: informazioni su come configurare le opzioni del server Chat persistente a livello globale, di sito o di pool Skype for Business Server 2015.'
-ms.openlocfilehash: 8b9e351e32b0a255cfca0f0996961075c94b17b3b9c0ab45704b27d10b709a23
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 73ed46368041cab611576f4d8fadb9b586165dfc
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337126"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620112"
 ---
 # <a name="configure-persistent-chat-server-options-in-skype-for-business-server-2015"></a>Configurare le opzioni del server Chat persistente in Skype for Business Server 2015
  
@@ -35,7 +35,7 @@ ms.locfileid: "54337126"
 - URL di gestione delle chat room. URL utilizzato per la gestione personalizzata delle chat room. L'impostazione consente l'utilizzo di una soluzione di gestione delle chat room personalizzata. 
    
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
  
 ## <a name="configure-persistent-chat-server-global-options"></a>Configurare le opzioni globali del server Chat persistente
 
@@ -61,11 +61,11 @@ Per configurare le opzioni globali del server Chat persistente:
    - In **Cronologia chat predefinita** definire il numero di messaggi chat che verranno elaborati per ogni chat alla prima richiesta. Per impostazione predefinita, questo numero è pari a 30. Si tratta dell'impostazione predefinita globale e gli amministratori possono disabilitare la cronologia chat in base alla categoria.
     
      > [!IMPORTANT]
-     > Il server Chat persistente memorizza nella cache questi messaggi in memoria, quindi, se si aumenta questo numero, verranno memorizzati più messaggi nella cache. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
+     > Il server Chat persistente memorizza nella cache questi messaggi nella cache, quindi se si aumenta questo numero, verranno memorizzati nella cache più messaggi. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
   
    - In **Dimensioni massime file (KB)** selezionare la dimensione massima del file di ogni cronologia chat. Per impostazione predefinita, il numero è pari a 20 MB (20.000 KB). Si tratta della dimensione massima di un file caricabile in qualsiasi chat room (per cui sono abilitati i caricamenti di file mediante l'impostazione **Categoria** corrispondente) del sistema.
     
-   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia le informazioni sull'elenco (che è connesso a una chat room) a tutti i partecipanti fino a quando il numero di utenti connessi non raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata sala oltre il quale il server Chat persistente smette di inviare aggiornamenti dell'elenco dei partecipanti ai client connessi su chi è presente nella sala.
+   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia le informazioni dell'elenco (che è connesso a una chat room) a tutti i partecipanti fino a quando il numero di utenti connessi non raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata sala oltre il quale il server Chat persistente smette di inviare aggiornamenti dell'elenco dei partecipanti ai client connessi su chi è presente nella sala.
     
    - Facoltativo. In **URL gestione sala** selezionare l'URL di gestione delle chat room. Si tratta dell'URL di una gestione chat room personalizzata basata sul Web. Se non è necessario personalizzare la gestione delle chat room e si usa semplicemente l'impostazione predefinita, lasciare vuota questa opzione. Dopo essere stato impostato, l'URL viene applicato come URL di gestione chat room interna ed esterna.
     
@@ -79,7 +79,7 @@ Per configurare le opzioni per uno specifico pool di server Chat persistente.
   
 1. Da un account utente assegnato al ruolo CsPersistentChatAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
-2. Dal menu **Start** seleziona il pannello Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
+2. Dal menu **Start** seleziona il pannello di Skype for Business Server o apri una finestra del browser e quindi immetti l'URL di amministratore.
     
 3. Sulla barra di spostamento sinistra fare clic su **Persistent Chat** e quindi su **Configurazione Persistent Chat**.
     
@@ -94,11 +94,11 @@ Per configurare le opzioni per uno specifico pool di server Chat persistente.
    - In **Cronologia chat predefinita** definire il numero di messaggi chat che verranno elaborati per ogni chat alla prima richiesta. Per impostazione predefinita, questo numero è pari a 30. Si tratta dell'impostazione predefinita globale e gli amministratori possono disabilitare la cronologia chat in base alla categoria.
     
      > [!IMPORTANT]
-     > Il server Chat persistente memorizza nella cache questi messaggi in memoria, quindi, se si aumenta questo numero, verranno memorizzati più messaggi nella cache. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
+     > Il server Chat persistente memorizza nella cache questi messaggi nella cache, quindi se si aumenta questo numero, verranno memorizzati nella cache più messaggi. È sempre possibile accedere al contenuto cronologico eseguendo una ricerca. Il numero predefinito determina semplicemente il numero massimo di messaggi che verranno inizialmente visualizzati quando ci si connette a una chat room. 
   
    - In **Dimensioni massime file (KB)** selezionare la dimensione massima del file di ogni cronologia chat. Per impostazione predefinita, il numero è pari a 20 MB (20.000 KB). Si tratta della dimensione massima di un file caricabile in qualsiasi chat room (per cui sono abilitati i caricamenti di file mediante l'impostazione **Categoria** corrispondente) del sistema.
     
-   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia le informazioni sull'elenco (che è connesso a una chat room) a tutti i partecipanti fino a quando il numero di utenti connessi non raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata sala oltre il quale il server Chat persistente smette di inviare aggiornamenti dell'elenco dei partecipanti ai client connessi su chi è presente nella sala.
+   - In **Limite di aggiornamento partecipanti** selezionare il limite per gli aggiornamenti dei partecipanti. Il server Chat persistente invia le informazioni dell'elenco (che è connesso a una chat room) a tutti i partecipanti fino a quando il numero di utenti connessi non raggiunge questo numero. Per impostazione predefinita, questo valore è pari a 75. Questo limite indica il numero massimo di partecipanti in una determinata sala oltre il quale il server Chat persistente smette di inviare aggiornamenti dell'elenco dei partecipanti ai client connessi su chi è presente nella sala.
     
    - In **URL gestione chat** selezionare l'URL di gestione della chat room. Si tratta dell'URL di una distribuzione di gestione chat basata sul Web. Se non è necessario personalizzare la gestione delle chat room e si usa semplicemente l'impostazione predefinita, lasciare vuota questa opzione.
     

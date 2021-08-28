@@ -9,15 +9,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c1d0b5a8-98ff-455a-b78b-a05a21cf066d
 description: 'Riepilogo: informazioni sul Rapporto di confronto qualità multimediale in Skype for Business Server.'
-ms.openlocfilehash: 4ce020e923d66d5d5ee3b8757f3259e35c65ecbb306cbce238d68e8c05351039
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9d8c39cd2c416917b8e0cc4dd7d7d911f21ec70c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345633"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58619812"
 ---
 # <a name="media-quality-comparison-report-in-skype-for-business-server"></a>Rapporto di confronto qualità multimediale in Skype for Business Server
  
@@ -41,7 +41,7 @@ I filtri consentono di restituire un insieme di dati più circoscritto o di visu
 |**To** <br/> |Data/ora di fine per l'intervallo di tempo. Per visualizzare i dati in base all'ora, immettere sia la data che l'ora di fine come segue:  <br/> 07/07/2015 13.00  <br/> Se non si immette una data/ora di fine, il rapporto termina automaticamente alle 00.00 del giorno specificato. Per visualizzare i dati in base al giorno, immettere solo la data:  <br/> 7/7/2015  <br/> Per visualizzare i dati in base alla settimana o al mese, immettere una data compresa nella settimana o nel mese che si desidera visualizzare (non è necessario specificare il primo giorno della settimana o del mese):  <br/> 7/3/2015  <br/> Le settimane vanno sempre dal lunedì alla domenica.  <br/> |
 |**Chiamate** <br/> | Tipo di chiamata da utilizzare come elemento principale del confronto. I valori consentiti sono: <br/>  [All] <br/>  Esterno <br/>  Interno <br/>  VPN <br/>  Non VPN <br/>  Cablata <br/>  Wireless <br/>  Esterne e cablate <br/>  Esterne e wireless <br/>  Esterne e VPN <br/>  Esterne e non VPN <br/>  Interne e cablate <br/>  Interne e wireless <br/> |
 |**Confronto con le chiamate** <br/> | Tipo di chiamata da utilizzare come elemento secondario del confronto. I valori consentiti sono: <br/>  [All] <br/>  Esterno <br/>  Interno <br/>  VPN <br/>  Non VPN <br/>  Cablata <br/>  Wireless <br/>  Esterne e cablate <br/>  Esterne e wireless <br/>  Esterne e VPN <br/>  Esterne e non VPN <br/>  Interne e cablate <br/>  Interne e wireless <br/> |
-|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Se per le date di inizio e di fine si immette un numero di valori superiore al massimo consentito per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo Giornaliero con data di inizio 7/07/2015 e data di fine 28/02/2015, verranno visualizzati i dati per i giorni 7/08/2015 12.00 fino al 7/9/2015 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
+|**Interval** <br/> | Selezionare uno dei seguenti: <br/>  Orario (è possibile visualizzare un massimo di 25 ore) <br/>  Giornaliero (è possibile visualizzare un massimo di 31 giorni) <br/>  Settimanale (è possibile visualizzare un massimo di 12 settimane) <br/>  Se per le date di inizio e di fine si immette un numero di valori superiore al massimo consentito per l'intervallo selezionato, verrà visualizzato solo il numero massimo di valori (a partire dalla data di inizio). Se ad esempio si seleziona l'intervallo giornaliero con data di inizio 7/07/2015 e data di fine 28/02/2015, verranno visualizzati i dati relativi ai giorni 07/08/2015 12.00 alle 07.00.00 12.00 (ovvero un totale di 31 giorni di dati). <br/> |
    
 ## <a name="metrics"></a>Metriche
 

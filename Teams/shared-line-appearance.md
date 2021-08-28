@@ -14,7 +14,7 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
@@ -22,25 +22,25 @@ ms.custom:
 - ms.teamsadmincenter.users.voice.calldelegation.tooltip
 - seo-marvel-apr2020
 description: Informazioni su come inviare agli utenti un messaggio di posta elettronica con le informazioni relative ai servizi di audioconferenza in Microsoft Teams.
-ms.openlocfilehash: 6c3a60bbdde46ae707543e2f28cd936dbbb2fc13dfb3535661a710984c284d75
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e9954f85d9f5676635dc8d4616c08d0e0d3ac6be
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54350438"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58617172"
 ---
 # <a name="shared-line-appearance-in-microsoft-teams"></a>Aspetto della linea condivisa in Microsoft Teams
 
 L'aspetto della linea condivisa fa parte della funzionalità di delega che consente a un utente di scegliere un delegato per rispondere o gestire le chiamate per loro conto. Questa funzionalità è utile se un utente ha un assistente amministrativo che gestisce regolarmente le chiamate dell'utente. Nel contesto dell'aspetto condiviso delle righe, un responsabile è una persona che autorizza un delegato a effettuare o ricevere chiamate per suo conto e un delegato può effettuare e ricevere chiamate per conto di un altro utente.
 
 > [!IMPORTANT]
-> Questa caratteristica è disponibile solo in modalità Teams solo distribuzione. Per altre informazioni sulle modalità Teams di distribuzione, vedere Informazioni sulla coesistenza e l'interoperabilità Microsoft Teams e [Skype for Business e sull'interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
+> Questa caratteristica è disponibile solo in modalità Teams solo distribuzione. Per altre informazioni sulle modalità Teams distribuzione, vedere Informazioni sulla Microsoft Teams e [Skype for Business e sull'interoperabilità](teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 
 ## <a name="license-required"></a>Licenza richiesta
 
 Un utente deve avere un Sistema telefonico con connettività PSTN (una licenza piano per le chiamate o Direct Routing OnlineVoiceRoutingPolicy) per essere un delegato o configurare la delega e consentire ad altri utenti di effettuare o ricevere chiamate per loro conto.
 
-Sia i manager che i delegati devono avere Sistema telefonico connettività PSTN (una licenza per il piano di chiamata o una Direct Routing OnlineVoiceRoutingPolicy). L'esperienza di linea condivisa fa parte della delega ed è inclusa in Sistema telefonico. Per altri dettagli sul modello di licenza, vedere Microsoft Teams [servizio.](/office365/servicedescriptions/teams-service-description)
+Sia i manager che i delegati devono avere Sistema telefonico connettività PSTN (una licenza per il piano di chiamata o direct routing onlineVoiceRoutingPolicy). L'esperienza di linea condivisa fa parte della delega ed è inclusa in Sistema telefonico. Per altri dettagli sul modello di licenza, vedere Microsoft Teams [servizio.](/office365/servicedescriptions/teams-service-description)
 
 ## <a name="configuring-delegation-and-shared-line-appearance"></a>Configurazione della delega e dell'aspetto della linea condivisa
 
@@ -57,7 +57,7 @@ L'amministratore tenant può anche configurare le relazioni di delega per un ute
 
 L'aspetto della linea condivisa è attualmente supportato dalle app e dai dispositivi seguenti.
 
-| Funzionalità | Teams Desktop | Teams Mac App | Teams Web App (Edge) |Teams app iOS/Android per dispositivi mobili | Teams Telefono IP |
+| Funzionalità | Teams Desktop | Teams Mac App | Teams Web App (Edge) |Teams app per dispositivi mobili iOS/Android | Teams Telefono IP |
 |------------|---------------|---------------|----------------------|-----------------------------|----------------|
 | Configurare la delega | Sì | Sì | Sì | No | Sì |
 | Ricevere chiamate per conto di un altro | Sì | Sì | Sì | Sì | Sì |

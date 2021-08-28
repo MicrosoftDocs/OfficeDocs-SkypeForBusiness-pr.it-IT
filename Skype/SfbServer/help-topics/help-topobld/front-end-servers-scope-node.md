@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.FrontEndServersScopeNode
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 99c8c4b6-eb12-4c6b-b32c-3977d17fc8fa
 description: "Nel nodo Pool Front End Enterprise sono elencati i pool Front End del sito, mentre nel nodo Server Front End Standard sono elencati i server Standard del sito. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: dba19602d5d1de5ed3da6fdb8e21cf364afdf84f267bc681a3470654d9eec471
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a3f97462f0841f5eabdfbfe54a597894936db1b8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347991"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621202"
 ---
 # <a name="front-end-servers-scope-node"></a>Nodo dell'ambito dei Front End Server
  

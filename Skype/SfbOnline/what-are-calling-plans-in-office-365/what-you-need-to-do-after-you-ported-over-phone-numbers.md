@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
@@ -22,12 +22,12 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderFinish
 description: Scopri cosa devi fare dopo aver esportato i numeri di telefono in Skype for Business.
-ms.openlocfilehash: b4a3a3f680b1618798e3bb28f529dbf0a706b3225661fadb028f3690aaf5847d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ded25bcbe650344dcd40c6f6ed34c82eb70cefeb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54326642"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620562"
 ---
 # <a name="what-do-you-need-to-do-after-you-have-ported-over-your-phone-numbers"></a>Cosa è necessario fare dopo il port dei numeri di telefono?
 

@@ -10,19 +10,19 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 31b85d1c-3f32-4f67-94bf-9389cdd282c5
-description: "Nella tabella PurgeSettings sono contenute informazioni che specificano se e quando i record QoE (qualità percepita dagli utenti) obsoleti verranno eliminati automaticamente dal database QoE. Si noti che le informazioni relative all'eliminazione possono essere ottenute anche dall'interno di Skype for Business Server Management Shell eseguendo il comando seguente:"
-ms.openlocfilehash: a07b8916cbc4cd2e0073cb11a02fe149a7849f17f9b5f69ad20460d0f19274ad
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Nella tabella PurgeSettings sono contenute informazioni che specificano se e quando i record QoE (qualità percepita dagli utenti) obsoleti verranno eliminati automaticamente dal database QoE. Tenere presente che le informazioni relative all'eliminazione possono essere ottenute anche dall'interno di Skype for Business Server Management Shell eseguendo il comando seguente:"
+ms.openlocfilehash: eb5b0570073498580ec2ad468ea50474e0246b07
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306647"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58620822"
 ---
 # <a name="purgesettings-table-qoe"></a>Tabella PurgeSettings (QoE)
  
-Nella tabella PurgeSettings sono contenute informazioni che specificano se e quando i record QoE (qualità percepita dagli utenti) obsoleti verranno eliminati automaticamente dal database QoE. Si noti che le informazioni relative all'eliminazione possono essere ottenute anche dall'interno di Skype for Business Server Management Shell eseguendo il comando seguente:
+Nella tabella PurgeSettings sono contenute informazioni che specificano se e quando i record QoE (qualità percepita dagli utenti) obsoleti verranno eliminati automaticamente dal database QoE. Tenere presente che le informazioni relative all'eliminazione possono essere ottenute anche dall'interno di Skype for Business Server Management Shell eseguendo il comando seguente:
   
 ```PowerShell
 Get-CsQoEConfiguration

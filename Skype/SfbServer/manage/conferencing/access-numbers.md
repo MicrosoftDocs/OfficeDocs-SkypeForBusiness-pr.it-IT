@@ -9,29 +9,29 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: a0d64779-93de-4d82-ae35-e4454ef8b8f6
 description: 'Riepilogo: informazioni su come gestire i numeri di accesso alle conferenze telefoniche con accesso esterno in Skype for Business Server.'
-ms.openlocfilehash: 58e4de5a2c429a5e36a43f90793fc1e12939b1d235b846ae8db372a2b13d8135
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: fd1d32ff82fc7bd922acfaea567780b5683eb684
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302500"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621072"
 ---
 # <a name="manage-dial-in-conferencing-access-numbers-in-skype-for-business-server"></a>Gestire i numeri di accesso alle conferenze telefoniche con accesso esterno in Skype for Business Server
  
 **Riepilogo:** Informazioni su come gestire i numeri di accesso alle conferenze telefoniche con accesso esterno in Skype for Business Server.
   
-Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web Conferenza telefonica Impostazioni accesso esterno. 
+Quando si distribuiscono conferenze telefoniche con accesso esterno, è necessario configurare i numeri di telefono che gli utenti possono comporre dalla rete PSTN (Public Switched Telephone Network) per partecipare alla parte audio delle conferenze. Questi numeri di accesso esterno vengono visualizzati negli inviti alle riunioni e nella pagina Web Conferenze telefoniche con accesso esterno Impostazioni. 
   
 In questo argomento viene descritto come visualizzare, modificare o eliminare i numeri di accesso alle conferenze telefoniche con accesso esterno esistenti. Per ulteriori informazioni su come creare numeri di accesso esterno iniziali, vedere [Configure dial-in conferencing in Skype for Business Server](../../deploy/deploy-conferencing/dial-in-conferencing.md).
   
 ## <a name="view-dial-in-conferencing-access-numbers"></a>Visualizzare i numeri di accesso alle conferenze telefoniche con accesso esterno
 
-È possibile visualizzare i numeri di accesso alle conferenze telefoniche con accesso esterno utilizzando Skype for Business Server pannello di controllo o Skype for Business Server Management Shell.
+È possibile visualizzare i numeri di accesso alle conferenze telefoniche con accesso esterno utilizzando Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
   
-### <a name="view-dial-in-access-numbers-by-using-skype-for-business-server-control-panel"></a>Visualizzare i numeri di accesso esterno tramite Skype for Business Server pannello di controllo
+### <a name="view-dial-in-access-numbers-by-using-skype-for-business-server-control-panel"></a>Visualizzare i numeri di accesso esterno tramite Skype for Business Server Pannello di controllo
 
 1. Da un account utente assegnato al ruolo CsUserAdministrator o CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
     
@@ -74,7 +74,7 @@ Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber](/power
   
 ## <a name="modify-dial-in-conferencing-access-numbers"></a>Modificare i numeri di accesso alle conferenze telefoniche con accesso esterno
 
-È possibile modificare i numeri di accesso esterno utilizzando Skype for Business Server pannello di controllo o Skype for Business Server Management Shell.
+È possibile modificare i numeri di accesso esterno utilizzando Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
   
 ### <a name="modify-dial-in-access-numbers-by-using-skype-for-business-server-control-panel"></a>Modificare i numeri di accesso esterno utilizzando Skype for Business Server pannello di controllo
 
@@ -109,7 +109,7 @@ Per ulteriori informazioni, vedere [Get-CsDialInConferencingAccessNumber](/power
     > [!NOTE]
     > Non è possibile riutilizzare lo stesso URI SIP per un altro numero di accesso per conferenze con accesso esterno. L'URI SIP non può essere modificato dopo che il numero di accesso è stato creato. L'unico modo per modificare l'URI SIP è quello di eliminare e ricreare il numero di accesso. 
   
-   Nella casella di riepilogo a discesa fare clic sul dominio dell'applicazione Operatore conferenza che supporta questo numero di accesso esterno.
+   Nella casella di riepilogo a discesa fare clic sul dominio della applicazione Operatore conferenza che supporta questo numero di accesso esterno.
     
 9. In **Pool** fare clic sul pool che esegue l'istanza di Operatore Conferenza che supporta il numero di accesso esterno.
     
@@ -140,7 +140,7 @@ Il comando seguente modifica la proprietà DisplayName per il numero di accesso 
 Set-CsDialInConferencingAccessNumber -Identity "sip:RedmondDialIn@litwareinc.com" -DisplayName "Redmond Dial-In Access Number"
 ```
 
-Nell'esempio successivo, il numero di accesso alle conferenze telefoniche con accesso esterno con sip:RedmondDialIn@litwareinc.com identity viene modificato in modo da includere due aree geografiche: Redmond e Seattle. Per ottenere questo risultato, viene utilizzato il parametro Region, seguito dalle due aree (due stringhe separate da virgole). Si noti che questo comando avrà esito negativo se le due aree Redmond e Seattle non sono già state definite nei dial plan.
+Nell'esempio successivo, il numero di accesso alle conferenze telefoniche con accesso esterno con sip:RedmondDialIn@litwareinc.com identity viene modificato in modo da includere due aree: Redmond e Seattle. Per ottenere questo risultato, viene utilizzato il parametro Region, seguito dalle due aree (due stringhe separate da virgole). Si noti che questo comando avrà esito negativo se le due aree Redmond e Seattle non sono già state definite nei dial plan.
   
 ```PowerShell
 Set-CsDialInConferencingAccessNumber -Identity "sip:RedmondDialIn@litwareinc.com" -Regions "Redmond", "Seattle"
@@ -150,9 +150,9 @@ Per ulteriori informazioni, [vedere Set-CsDialInConferencingAccessNumber](/power
   
 ## <a name="delete-a-dial-in-conferencing-access-number"></a>Eliminare un numero di accesso alle conferenze telefoniche con accesso esterno
 
-È possibile eliminare un numero di accesso alle conferenze telefoniche con accesso esterno utilizzando Skype for Business Server Pannello di controllo o Skype for Business Server Management Shell.
+È possibile eliminare un numero di accesso alle conferenze telefoniche con accesso esterno utilizzando Skype for Business Server pannello di controllo o Skype for Business Server Management Shell.
   
-### <a name="delete-a-dial-in-conferencing-access-number-by-using-skype-for-business-server-control-panel"></a>Eliminare un numero di accesso per le conferenze telefoniche con accesso esterno tramite Skype for Business Server Pannello di controllo
+### <a name="delete-a-dial-in-conferencing-access-number-by-using-skype-for-business-server-control-panel"></a>Eliminare un numero di accesso per le conferenze telefoniche con accesso esterno tramite Skype for Business Server pannello di controllo
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) o assegnato al ruolo CsServerAdministrator o CsAdministrator, accedere a qualsiasi computer nella rete in cui è stato distribuito Skype for Business Server.
     
