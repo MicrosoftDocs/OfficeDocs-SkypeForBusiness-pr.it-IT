@@ -10,19 +10,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: c4bc0e45-7877-466c-b187-2c35c851a98d
 description: 'Riepilogo: esaminare i requisiti dei dispositivi di sistema client durante la pianificazione Skype for Business Server.'
-ms.openlocfilehash: 988371d52f77c2b6316b7009620cdeefed53bd28988c56f28b31d5080361c308
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b31ece4f8a3f67c55da7b8195a811ec992b7f5fa
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54293943"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614046"
 ---
 # <a name="system-requirements-for-skype-for-business-for-windows-phone"></a>Requisiti di sistema per Skype for Business per Windows Phone
  

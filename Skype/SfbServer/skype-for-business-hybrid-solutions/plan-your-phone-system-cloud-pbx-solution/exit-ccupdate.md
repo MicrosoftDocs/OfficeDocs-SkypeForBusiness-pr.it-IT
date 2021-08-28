@@ -10,15 +10,15 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 463dce1e-fb60-487d-bcf1-69e7b03ecd14
 description: Il cmdlet Exit-CcUpdate esce dalla modalità di manutenzione degli aggiornamenti nel server host Skype for Business Cloud Connector Edition server host.
-ms.openlocfilehash: d55004f071caa67492d5368e36007d9c3c307b90aabbc33d79d1feeb4aa37356
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 11499950a3332de31fe045ea23c1aa8f567da072
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54288838"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625018"
 ---
 # <a name="exit-ccupdate"></a>Exit-CcUpdate
  
@@ -48,7 +48,7 @@ Exit-CcUpdate
 ## <a name="detailed-description"></a>Descrizione dettagliata
 <a name="DetailedDescription"> </a>
 
-Se si dispone di appliance che sono state messe in modalità di manutenzione specificando il cmdlet Enter-CcUpdate, il cmdlet Exit-CcUpdate tornerà in modalità di produzione. 
+Se si dispone di appliance che sono state messe in modalità di manutenzione specificando il cmdlet Enter-CcUpdate, il cmdlet Exit-CcUpdate li metto di nuovo in modalità di produzione. 
   
 Per ulteriori informazioni sull'inserimento delle appliance in modalità manutenzione, vedere Enter-CcUpdate.
   

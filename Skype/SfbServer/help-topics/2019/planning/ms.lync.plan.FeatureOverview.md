@@ -12,22 +12,22 @@ ms.custom:
 - ms.lync.plan.FeatureOverview
 - ms.lync.plan.FeatureOverview
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 44783b37-c87f-41f2-9de1-39176f1856ab
 ROBOTS: NOINDEX, NOFOLLOW
 description: Skype for Business Server Strumento di pianificazione
-ms.openlocfilehash: 2bff4f6eb8774b9660f27cf2217eccd7b1b3c3dce469cab70ac7c96c9489b234
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c1272cf0809be097e9f5b0282b165ef899744520
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54325123"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600501"
 ---
 # <a name="feature-overview-planning-tool"></a>Panoramica delle funzionalità (Strumento di pianificazione)
  
 Skype for Business Server Strumento di pianificazione
   
-È possibile utilizzare la **pagina Siti** centrali dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuisce Skype for Business Server in più siti centrali, si immetterà il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
+È possibile utilizzare la **pagina Siti centrali** dello Strumento di pianificazione per progettare la Skype for Business Server distribuzione. È possibile creare due distribuzioni centralizzate o distribuite. Una distribuzione centralizzata dispone di un solo sito centrale, che include tutti Skype for Business utenti dell'organizzazione. Una distribuzione distribuita include più di un sito centrale. Se si distribuiscono Skype for Business Server in più siti centrali, sarà necessario immettere il numero di utenti in ogni sito centrale nello Strumento di pianificazione.
   
 Per completare la definizione del sito centrale, è innanzitutto necessario fornire le informazioni seguenti:
   
@@ -66,7 +66,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     Persistent Chat consente a più utenti di partecipare a conversazioni in cui pubblicano e accedono a contenuto su argomenti specifici, tra cui testo, collegamenti e file. Nonostante gli utenti possano comunicare in tempo reale durante una sessione, il contenuto di ogni sessione può essere salvato in modo permanente e quindi restare disponibile anche al termine di una sessione.
 
     > [!NOTE] 
-    > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
+    > La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Skype for Business to Microsoft Teams upgrade](/MicrosoftTeams/upgrade-start-here). Se è necessario utilizzare Persistent Chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015.
     
 ### <a name="users"></a>Utenti
 
@@ -82,7 +82,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Federazione con provider di servizi basati su XMPP**
     
-    Skype for Business Server 2015 ha introdotto un proxy XMPP completamente integrato (distribuito nei server perimetrali) e un gateway XMPP distribuito nei Front End Server. È possibile distribuire L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
+    Skype for Business Server 2015 è stato introdotto un proxy XMPP completamente integrato (distribuito nei server perimetrali) e un gateway XMPP distribuito nei Front End Server. È possibile distribuire L'aggiunta e la configurazione del proxy XMPP e del gateway XMPP consentiranno agli utenti di Skype for Business Server di aggiungere contatti da partner basati su XMPP per la messaggistica istantanea e la presenza.
     
 - **Mobilità**
     
@@ -93,7 +93,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     Skype for Business Server consente di archiviare i messaggi della segreteria telefonica Exchange messaggistica unificata; tali messaggi della segreteria telefonica verranno quindi visualizzati come messaggi di posta elettronica nelle cartelle Posta in arrivo degli utenti.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="voice"></a>Voce
 
@@ -108,7 +108,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     Exchange La messaggistica unificata combina la posta vocale e la posta elettronica in un'unica infrastruttura di messaggistica. Skype for Business Server 2015 utilizza la Exchange per fornire servizi di risposta alle chiamate, accesso sottoscrittore, notifica delle chiamate e operatore automatico. Se si utilizzano questi servizi, sarà necessario integrare Exchange messaggistica unificata e Skype for Business Server in una topologia di Active Directory condivisa.
 
     > [!NOTE]
-    > Exchange La messaggistica unificata come nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi di segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
+    > Exchange La messaggistica unificata nota in precedenza non è più disponibile in Exchange 2019, ma è comunque possibile utilizzare Sistema telefonico per registrare i messaggi della segreteria telefonica e quindi lasciare la registrazione nella cassetta postale di Exchange di un utente. Per [ulteriori informazioni, vedere Plan Cloud Voicemail service.](../../../../sfbhybrid/hybrid/plan-cloud-voicemail.md)
     
 ### <a name="additional-deployment-options"></a>Opzioni di distribuzione aggiuntive
 
@@ -132,7 +132,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Exchange Integrazione dell'archiviazione**
     
-    Se si dispone di utenti ospitati Exchange e le relative cassette postali sono state messe In-Place archiviazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
+    Se si dispone di utenti ospitati in Exchange e le relative cassette postali sono state messe In-Place archiviazione, è possibile selezionare l'opzione per integrare l'archiviazione Skype for Business Server con Exchange archiviazione.
     
 - **IPv4**
     
@@ -168,7 +168,7 @@ Gli elementi rimanenti sono stati popolati con le risposte fornite alle domande 
     
 - **Annuncio conferenza**
     
-    applicazione Annuncio conferenza produce toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
+    applicazione Annuncio conferenza toni che segnalano quando gli utenti entrano o abbandonano una conferenza, nonché notifiche agli utenti di telefonia quando vengono disattivati o disattivati.
     
 - **Servizio Controllo di ammissione di chiamata**
     

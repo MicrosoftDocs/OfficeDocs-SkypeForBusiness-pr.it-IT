@@ -9,25 +9,25 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 4f93b974-b460-45c7-a4a8-6f38e34840f5
 description: Pianificazione delle topologie di trunking SIP per una distribuzione E9-1-1 che utilizza provider di trunking SIP, in Skype for Business Server VoIP aziendale.
-ms.openlocfilehash: 5e669f8fc3149ac362e265a8e850e145f95c72567be99946fe0e37c0faa82130
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b9a270a63ebfeb1e8132d84f270b72d6cd47710e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54283058"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625168"
 ---
 # <a name="design-the-sip-trunk-for-e9-1-1-in-skype-for-business-server"></a>Progettare il trunk SIP per E9-1-1 in Skype for Business Server
  
 Pianificazione delle topologie di trunking SIP per una distribuzione E9-1-1 che utilizza provider di trunking SIP, in Skype for Business Server VoIP aziendale.
   
-Skype for Business Server utilizza trunk SIP per connettere una chiamata di emergenza al provider di servizi E9-1-1. È possibile configurare i trunk SIP del servizio di emergenza per E9-1-1 in un sito centrale, in più siti centrali o in ogni sito di succursale. Tuttavia, se il collegamento WAN tra il sito del chiamante e il sito che ospita il trunk SIP del servizio di emergenza non è disponibile, una chiamata effettuato da un utente nel sito disconnesso avrà bisogno di uno speciale record di utilizzo del telefono nei criteri vocali dell'utente che instraderà la chiamata all'ECRC attraverso il gateway PSTN (Public Switched Telephone Network) locale. Lo stesso vale se sono in vigore limiti di chiamata simultanei per il controllo di ammissione di chiamata.
+Skype for Business Server i trunk SIP per connettere una chiamata di emergenza al provider di servizi E9-1-1. È possibile configurare i trunk SIP del servizio di emergenza per E9-1-1 in un sito centrale, in più siti centrali o in ogni sito di succursale. Tuttavia, se il collegamento WAN tra il sito del chiamante e il sito che ospita il trunk SIP del servizio di emergenza non è disponibile, una chiamata effettuato da un utente nel sito disconnesso avrà bisogno di uno speciale record di utilizzo del telefono nei criteri vocali dell'utente che instraderà la chiamata all'ECRC attraverso il gateway PSTN (Public Switched Telephone Network) locale. Lo stesso vale se sono in vigore limiti di chiamata simultanei per il controllo di ammissione di chiamata.
   
 Esistono due modi per implementare un trunk SIP in un Skype for Business Server ambiente:
   
@@ -37,7 +37,7 @@ Esistono due modi per implementare un trunk SIP in un Skype for Business Server 
     
 Se si sceglie quest'ultimo metodo, assicurarsi che il modello e il modello SBC scelto siano stati certificati e supportino il passaggio dei dati di posizione PIDF-LO (Presence Information Data Format Location Object) come parte del relativo SIP INVITE. In caso contrario, le chiamate arriveranno al provider di servizi di emergenza privato delle informazioni sulla posizione. Per informazioni dettagliate sugli SBC certificati, vedere ["Infrastruttura qualificata per Microsoft Lync"](../../../SfbPartnerCertification/lync-cert/qualified-ip-pbx-gateway.md) e "Infrastruttura di telefonia [per Skype for Business"](../../../SfbPartnerCertification/certification/infra-gateways.md). 
   
-I provider di servizi E9-1-1 forniscono l'accesso a una coppia di SBC per la ridondanza. È necessario prendere diverse decisioni relative alla topologia Mediation Server e alla configurazione del routing delle chiamate. Verranno trattati entrambi gli SBC come peer uguali e verrà utilizzato il routing round robin per le chiamate tra di essi oppure si designerà uno SBC come primario e l'altro come secondario?
+I provider di servizi E9-1-1 forniscono l'accesso a una coppia di SBC per la ridondanza. È necessario prendere diverse decisioni relative alla topologia Mediation Server e alla configurazione del routing delle chiamate. Verranno trattati entrambi gli SBC come peer uguali e si utilizzerà il routing round robin per le chiamate tra di essi oppure si designerà uno SBC come primario e l'altro come secondario?
   
 Per informazioni dettagliate sulla distribuzione di un trunk SIP in Skype for Business Server, vedere [Trunking SIP in Skype for Business Server](sip-trunking.md). Le domande seguenti consentono di decidere come distribuire i trunk SIP per E9-1-1.
   

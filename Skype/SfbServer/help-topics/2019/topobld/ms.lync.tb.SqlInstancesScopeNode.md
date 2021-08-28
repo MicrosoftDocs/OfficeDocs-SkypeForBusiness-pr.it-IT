@@ -11,22 +11,22 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.SqlInstancesScopeNode
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 399dce5b-bd51-4693-89d9-3463c1d73ded
 ROBOTS: NOINDEX, NOFOLLOW
 description: "Nel nodo SQL archivi vengono elencati SQL Server database della topologia. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: f5e4ad781fa2e5a4ec1e813cdb5c3e74157960b086ff96c86ba09ae05120f4e6
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f8c19da041c532c623604d4513230089d91fb97a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54311654"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626808"
 ---
 # <a name="sql-instances-scope-node"></a>Nodo dell'ambito delle istanze SQL
  
-Nel **nodo SQL archivi** sono elencati SQL Server database nella topologia. È possibile eseguire l'operazione seguente:
+Nel **nodo SQL archivi** vengono elencati SQL Server database della topologia. È possibile eseguire l'operazione seguente:
   
-- **Nuovo archivio SQL**. Avvia la **procedura guidata Define New SQL Store,** che consente di aggiungere un nuovo database di SQL Server alla topologia.
+- **Nuovo archivio SQL**. Avvia la **procedura guidata Define New SQL Store,** che consente di aggiungere un nuovo database SQL Server alla topologia.
     
 Oltre alle opzioni SQL Server database, è possibile eseguire le attività generali seguenti:
   

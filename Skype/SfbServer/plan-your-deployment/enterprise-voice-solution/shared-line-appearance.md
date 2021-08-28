@@ -1,5 +1,5 @@
 ---
-title: Pianificare l'aspetto della linea condivisa Skype for Business Server 2015
+title: Pianificare l'aspetto della linea condivisa in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,27 +10,27 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 6356aad4-700d-495c-8fc8-58eb1d4f6f18
-description: Leggere questo argomento per informazioni su come pianificare l'aspetto della linea condivisa in Skype for Business Server 2015, Aggiornamento cumulativo di novembre 2015.
-ms.openlocfilehash: cabd5a9f6780371a8345bd95c5686829e74ad3c18e875ec85decf6ab0ca2f789
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Leggere questo argomento per informazioni su come pianificare l'aspetto linea condivisa (SLA) in Skype for Business Server 2015, Aggiornamento cumulativo di novembre 2015.
+ms.openlocfilehash: b3ec50ff74ee246be892636dac4cdb910a2588d7
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54289724"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614036"
 ---
-# <a name="plan-for-shared-line-appearance-in-skype-for-business-server-2015"></a>Pianificare l'aspetto della linea condivisa Skype for Business Server 2015
+# <a name="plan-for-shared-line-appearance-in-skype-for-business-server-2015"></a>Pianificare l'aspetto della linea condivisa in Skype for Business Server 2015
  
-Leggere questo argomento per informazioni su come pianificare l'aspetto della linea condivisa in Skype for Business Server 2015, Aggiornamento cumulativo di novembre 2015. 
+Leggere questo argomento per informazioni su come pianificare l'aspetto linea condivisa (SLA) in Skype for Business Server 2015, Aggiornamento cumulativo di novembre 2015. 
   
 L'aspetto linea condivisa è una funzionalità Skype for Business per la gestione di più chiamate su un numero specifico denominato numero condiviso. Sla can configure any enterprise voice enabled Skype for Business user as a shared number with multiple lines to respond to multiple calls. Le chiamate non vengono effettivamente ricevute sul numero condiviso, ma vengono inoltrate agli utenti che agiscono come delegati per il numero condiviso. Uno qualsiasi dei delegati può riprendere la chiamata mentre gli altri delegati ottengono una notifica sul telefono su chi ha preso la chiamata e quale linea è diventata occupata di conseguenza. Sia il numero di righe che i delegati sono configurabili per un numero condiviso nel contratto di servizio. Inoltre, le opzioni avanzate, ad esempio BusyOption (cosa accade in una situazione in cui tutte le linee sono occupate) e MissedCallOption (nel caso in cui nessuno dei delegati preleva una chiamata), possono essere configurate anche per un numero condiviso.
   
-Il contratto di servizio è supportato solo nei seguenti dispositivi telefonici (non è supportato per i client Skype for Business computer, telefoni cellulari o altri dispositivi): 
+Sla è supportato solo nei seguenti dispositivi telefonici (non è supportato per i client Skype for Business computer, telefoni cellulari o altri dispositivi): 
   
 - Polycom VVX300 con aggiornamento del firmware 5.4.1
     

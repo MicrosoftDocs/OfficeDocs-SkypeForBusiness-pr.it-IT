@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 985dc326-0aef-4308-b98b-c1d0069311e7
 description: Pianificazione del parcheggio di chiamata in Skype for Business Server VoIP aziendale, che consente di mettere le chiamate in attesa e trasferire le chiamate ai reparti. Include la pianificazione della capacità, le chiamate supportate e i client supportati.
-ms.openlocfilehash: 40f6b08512bd76401a8bb881429737f0da53be952e2774099e82396522b79aeb
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8bc69bedfd3abf7745ce25133ae8ac32d1eda032
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54306867"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625178"
 ---
 # <a name="plan-for-call-park-in-skype-for-business"></a>Pianificare il parcheggio di chiamata in Skype for Business
  
@@ -41,12 +41,12 @@ L'utente che ha eseguito il parcheggio di una chiamata può indicare a qualcun a
   
 Poiché gli intervalli di codici orbit sono univoci a livello globale, è possibile recuperare le chiamate da qualsiasi Skype for Business Server o telefono PBX se il routing è configurato in modo appropriato. Se nessuno recupera la chiamata entro una quantità di tempo configurabile, la chiamata viene nuovamente indirizzata alla persona che ne ha eseguito il parcheggio. Se tale persona non risponde alla richiamata, la chiamata viene trasferita a una destinazione di fallback, ad esempio a un operatore, se questa impostazione è configurata. È possibile configurare da uno a dieci il numero di volte per cui consentire una richiamata prima che la chiamata venga trasferita. Se nessuno risponde a una chiamata trasferita, questa viene disconnessa. Il codice orbit viene liberato quando la chiamata viene recuperata o disconnessa.
   
-Quando si distribuisce il parcheggio di chiamata, è necessario riservare intervalli di numeri di interno (codici orbit) per il parcheggio delle chiamate. Tali numeri devono essere interni virtuali, ovvero numeri a cui non sono assegnati utenti o telefoni. È quindi necessario configurare la tabella dei codici orbit del parcheggio di chiamata con gli intervalli di interni e specificare il servizio applicazione che ospita l'applicazione Parcheggio di chiamata che gestisce ogni intervallo. Ogni pool Front End include una tabella di parcheggio di chiamata nel server di back-end corrispondente utilizzato per gestire le chiamate parcheggiate nel pool. L'elenco degli intervalli di orbit viene archiviato nell'archivio di gestione centrale e viene utilizzato per instradare i orbit al pool di destinazione. Ogni Skype for Business Server pool in cui l'applicazione Parcheggio di chiamata viene distribuita e configurata può avere uno o più intervalli di orbit. Gli intervalli orbit devono essere univoci a livello globale nella Skype for Business Server distribuzione. 
+Quando si distribuisce il parcheggio di chiamata, è necessario riservare intervalli di numeri di interno (codici orbit) per il parcheggio delle chiamate. Tali numeri devono essere interni virtuali, ovvero numeri a cui non sono assegnati utenti o telefoni. È quindi necessario configurare la tabella dei codici orbit del parcheggio di chiamata con gli intervalli di interni e specificare il servizio applicazione che ospita l'applicazione Parcheggio di chiamata che gestisce ogni intervallo. Ogni pool Front End include una tabella di parcheggio di chiamata nel server di back-end corrispondente utilizzato per gestire le chiamate parcheggiate nel pool. L'elenco degli intervalli di orbit viene archiviato nell'archivio di gestione centrale e viene utilizzato per instradare i orbit al pool di destinazione. Ogni Skype for Business Server pool in cui l'applicazione Parcheggio di chiamata viene distribuita e configurata può avere uno o più intervalli di orbit. Gli intervalli orbit devono essere univoci a livello globale nella distribuzione Skype for Business Server globale. 
   
 È anche possibile configurare altre impostazioni di parcheggio chiamata, ad esempio la destinazione di reindirizzamento delle chiamate in caso di timeout e se usare la musica di attesa durante il parcheggio. È anche possibile specificare il file musicale da riprodurre mentre la chiamata è in attesa.
   
 > [!NOTE]
-> I file di musica di attesa personalizzati per parcheggio di chiamata non vengono sottoposti a backup nell'ambito del processo di ripristino di emergenza di Skype for Business Server e andranno persi se i file caricati nel pool sono danneggiati, danneggiati o cancellati. Mantenere sempre una copia di backup distinta dei file di musica di attesa personalizzati caricati per il parcheggio chiamate. 
+> I file di musica di attesa personalizzati per Parcheggio di chiamata non vengono sottoposti a backup nell'ambito del processo di ripristino di emergenza di Skype for Business Server e andranno persi se i file caricati nel pool sono danneggiati, danneggiati o cancellati. Mantenere sempre una copia di backup distinta dei file di musica di attesa personalizzati caricati per il parcheggio chiamate. 
   
 L'applicazione Parcheggio di chiamata è un componente di VoIP aziendale. Quando si distribuisce VoIP aziendale, l'applicazione Parcheggio di chiamata viene installata e attivata automaticamente. Prima di poter utilizzare l'applicazione Parcheggio di chiamata, tuttavia, l'amministratore di VoIP aziendale deve configurarla e abilitarla per gli utenti tramite criteri vocali.
   
@@ -56,7 +56,7 @@ L'applicazione Parcheggio di chiamata viene installata automaticamente quando si
   
 ### <a name="software-requirements"></a>Requisiti software
 
-Per tutti i Front End Server e i server edizione Standard in cui è distribuito Il parcheggio di chiamata deve essere installato Runtime formato multimediale di Windows per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Windows Media Format Runtime viene installato come parte di Windows Desktop Experience. Windows Runtime formato multimediale o Microsoft Media Foundation è necessario per i Windows Media Audio (wma) riprodotti da Parcheggio di chiamata per la musica di attesa.
+Per tutti i Front End Server e i server edizione Standard in cui è distribuito Il parcheggio di chiamata deve essere installato runtime formato multimediale di Windows per i server che eseguono Windows Server 2008 R2 o Microsoft Media Foundation per i server che eseguono Windows Server 2012 o Windows Server 2012 R2. Per Windows Server 2008 R2, Windows Media Format Runtime viene installato come parte di Windows Desktop Experience. Windows Runtime formato multimediale o Microsoft Media Foundation è necessario per i Windows Media Audio (wma) riprodotti da Parcheggio di chiamata per la musica in attesa.
   
 ### <a name="port-requirements"></a>Requisiti delle porte
 

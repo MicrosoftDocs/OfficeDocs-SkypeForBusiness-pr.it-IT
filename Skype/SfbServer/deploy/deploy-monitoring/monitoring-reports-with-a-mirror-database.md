@@ -9,15 +9,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 42b797c6-8db8-4ad7-886e-8ddf8deb06f9
-description: 'Riepilogo: informazioni su come associare i report di monitoraggio a un database mirror utilizzato Skype for Business Server.'
-ms.openlocfilehash: 99b30eaf7388bfec71f55e2e3f1f784271a3258d1280953426291b1dbfe14750
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: informazioni su come associare i report di monitoraggio a un database mirror utilizzato da Skype for Business Server.'
+ms.openlocfilehash: 723d01f732259098c714eaac330eeaf8c686acac
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54304358"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600661"
 ---
 # <a name="associate-monitoring-reports-with-a-mirror-database-in-skype-for-business-server"></a>Associare i report di monitoraggio a un database mirror in Skype for Business Server 
  
@@ -33,7 +33,7 @@ Per fare in modo che i rapporti di monitoraggio esercitino automaticamente il fa
     
    - Prefisso **http:** .
     
-   - Il nome di dominio completo (FQDN) del computer in cui è installato Reporting Services ( ad esempio, **atl-sql-001.litwareinc.com**).
+   - Nome di dominio completo (FQDN) del computer in cui è installato Reporting Services ( ad esempio, **atl-sql-001.litwareinc.com**).
     
    - Stringa di caratteri **/Reports_**.
     
@@ -51,7 +51,7 @@ Per fare in modo che i rapporti di monitoraggio esercitino automaticamente il fa
     
     Data source=(local)\archinst;initial catalog=LcsCDR
     
-5. Modificare la stringa di connessione in modo da includere il nome del server e l'istanza del database per il database mirror. Ad esempio, se il server è denominato atl-mirror-001 e il database mirror si trova nell'istanza di archiviazione, sarà necessario aggiungere per specificare il database mirror utilizzando la sintassi seguente:
+5. Modificare la stringa di connessione in modo da includere il nome del server e l'istanza del database per il database mirror. Ad esempio, se il server è denominato atl-mirror-001 e il database mirror si trova nell'istanza di archinst, sarà necessario aggiungere per specificare il database mirror utilizzando la sintassi seguente:
     
     Failover Partner=atl-mirror-001\archinst
     

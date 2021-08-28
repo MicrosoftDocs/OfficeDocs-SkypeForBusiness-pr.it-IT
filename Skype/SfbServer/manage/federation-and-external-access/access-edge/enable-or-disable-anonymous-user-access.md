@@ -13,14 +13,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Come abilitare e disabilitare l'accesso utente anonimo in Skype for Business Server.
-ms.openlocfilehash: 4f7fb11e7b168922a4027e75703c164638dd1f2d
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: 541ca4feabb91db29d15bb727b4a2f64b05cdd9e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58234391"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614146"
 ---
 # <a name="enable-or-disable-anonymous-user-access-in-skype-for-business-server"></a>Abilitare o disabilitare l'accesso utente anonimo in Skype for Business Server
 
@@ -35,7 +35,7 @@ Se successivamente si desidera impedire temporaneamente o definitivamente l'acce
 
 1.  Da un account utente membro del gruppo RTCUniversalServerAdmins (o con diritti utente equivalenti) oppure assegnato al ruolo CsAdministrator, accedere a qualsiasi computer nella distribuzione interna.
 
-2.  Aprire una finestra del browser e quindi immettere l'URL di amministratore per aprire il pannello Skype for Business Server di controllo. 
+2.  Apri una finestra del browser e quindi immetti l'URL di amministratore per aprire il Pannello Skype for Business Server controllo. 
 
 3.  Sulla barra di spostamento sinistra fare clic su **Accesso utente esterno** e quindi su **Configurazione Access Edge**.
 

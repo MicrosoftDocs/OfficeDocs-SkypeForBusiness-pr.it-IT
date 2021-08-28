@@ -14,7 +14,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - CSH
@@ -22,18 +22,18 @@ ms.custom:
 - Calling Plans
 - ms.lync.lac.PortOrderQuickViewPanelO365Support
 description: 'If you have more than 999 phone numbers to transferred to Skype for Business, learn how to submit a port order service request to get them moved. '
-ms.openlocfilehash: ec95b6e49ccfafa3d0b320236543c4874be1f4c0dce53ec4112892c5dcece1e7
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8001463e233b8f927653bb998ea64299fd8b570b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54281309"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600801"
 ---
 # <a name="submitting-a-service-request-for-local-number-porting"></a>Invio di una richiesta di servizio per la portabilità dei numeri locali
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Se è necessario trasferire più di 999 numeri di telefono (per gli utenti o numeri di servizio inclusi i numeri a pedaggio o a numero verde) a Skype for Business Online, vedere Gestire i numeri di telefono per [l'organizzazione.](/microsoftteams/manage-phone-numbers-for-your-organization)
+Se è necessario trasferire a Skype for Business Online più di 999 numeri di telefono (per gli utenti o [](/microsoftteams/manage-phone-numbers-for-your-organization)numeri di servizio inclusi i numeri a pedaggio o a numero verde), vedere Gestire i numeri di telefono per l'organizzazione.
 
 > [!NOTE]
 > Se hai bisogno di ulteriori numeri di telefono, visita la pagina [Contattare il supporto per i prodotti aziendali - Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b).

@@ -10,18 +10,18 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Hybrid
 ms.custom: ''
 ms.assetid: 0ebba3a4-6124-434c-84aa-32b1cc3345bc
 description: Leggere questo argomento per informazioni sulla procedura per distribuire il bypass multimediale con Cloud Connector Edition versione 2.0 e successive.
-ms.openlocfilehash: 6ce46df02295810367556e735897cd9ce912b4c7e8aa15f6db5ffb66d38d4574
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: edc00467d878f0f2ae137c86f179f864bb2ca53f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54289434"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58613776"
 ---
 # <a name="deploy-media-bypass-in-cloud-connector-edition"></a>Distribuire il bypass multimediale in Cloud Connector Edition
  
@@ -30,11 +30,11 @@ ms.locfileid: "54289434"
 
 Leggere questo argomento per informazioni sulla procedura per distribuire il bypass multimediale con Cloud Connector Edition versione 2.0 e successive. 
   
-Il bypass multimediale consente a un client di inviare contenuti multimediali direttamente all'hop successivo PSTN (Public Switched Telephone Network), un gateway o session border controller (SBC), ed eliminare il componente Cloud Connector Edition dal percorso multimediale. Vedi anche [Pianificare il bypass multimediale in Cloud Connector Edition.](plan-for-media-bypass-in-cloud-connector-edition.md)
+Il bypass multimediale consente a un client di inviare contenuti multimediali direttamente all'hop successivo PSTN (Public Switched Telephone Network), ovvero un gateway o un session border controller (SBC), ed eliminare il componente Cloud Connector Edition dal percorso multimediale. Vedi anche [Pianificare il bypass multimediale in Cloud Connector Edition.](plan-for-media-bypass-in-cloud-connector-edition.md)
   
 ## <a name="enable-media-bypass"></a>Abilita bypass multimediale
 
-Per abilitare il bypass multimediale, è necessario configurare il nome DNS del servizio Web di bypass multimediale e attivare il bypass multimediale nella configurazione tenant. Il servizio Web bypass multimediale viene distribuito automaticamente in ogni Mediation Server. Un amministratore tenant deve selezionare un nome per un servizio vocale ibrido (sito) e questo nome deve derivare da un dominio SIP registrato per la voce ibrida. Il nome del servizio deve essere lo stesso in tutti i dispositivi Cloud Connector e in tutti i siti PSTN indipendentemente dalla posizione del client. Il servizio Web deve essere disponibile solo internamente nella rete.
+Per abilitare il bypass multimediale, è necessario configurare il nome DNS del servizio Web di bypass multimediale e attivare il bypass multimediale nella configurazione del tenant. Il servizio Web bypass multimediale viene distribuito automaticamente in ogni Mediation Server. Un amministratore tenant deve selezionare un nome per un servizio vocale ibrido (sito) e questo nome deve derivare da un dominio SIP registrato per la voce ibrida. Il nome del servizio deve essere lo stesso in tutti i dispositivi Cloud Connector e in tutti i siti PSTN indipendentemente dalla posizione del client. Il servizio Web deve essere disponibile solo internamente nella rete.
   
 Un amministratore tenant deve configurare un record A DNS in Active Directory di produzione interna. Se si dispone di un ambiente multis sito complesso, vedere l'esempio in Esempio: record DNS del sito Web bypass multimediale [in ambienti multis](deploy-media-bypass-in-cloud-connector.md#Example)sito complessi. Il record DNS deve essere risolto solo per i client di rete interni. non deve essere risolto per i client di rete esterni.
   
@@ -113,7 +113,7 @@ Set-CsTenantHybridConfiguration -HybridConfigServiceInternalUrl  $null
 Set-CsNetworkConfiguration -MediaBypassSettings $mediabypass 
 ```
 
-Un amministratore dovrà anche rimuovere gli indirizzi Web per il bypass multimediale dai server DNS interni. Dopo aver apportato la modifica, potrebbe essere necessario del tempo per la replica delle modifiche in tutte le appliance del connettore cloud. 
+Un amministratore dovrà anche rimuovere gli indirizzi Web per il bypass multimediale dai server DNS interni. Dopo aver apportato la modifica, potrebbe essere necessario del tempo per la replica delle modifiche in tutte le appliance cloud Connector. 
   
 ## <a name="example-media-bypass-web-site-dns-records-in-complex-multi-site-environments"></a>Esempio: record DNS del sito Web bypass multimediale in ambienti multis sito complessi
 <a name="Example"> </a>
@@ -136,7 +136,7 @@ Il sito di Amsterdam dispone di quattro appliance Cloud Connector distribuite co
     
 - 192.168.1.48
     
-Il sito di Seattle dispone di tre appliance Cloud Connector distribuite con i seguenti indirizzi IP di Mediation Server:
+Il sito di Seattle dispone di tre appliance Cloud Connector distribuite con i seguenti indirizzi IP mediation server:
   
 - 10.10.1.8
     
@@ -144,7 +144,7 @@ Il sito di Seattle dispone di tre appliance Cloud Connector distribuite con i se
     
 - 10.10.1.10
     
-Utilizzando Geo-Location gestione del traffico in base al traffico, i server DNS verrebbero configurati come segue:
+Utilizzando Geo-Location traffico basato su exchange, i server DNS verrebbero configurati come segue:
   
 1. Creare subnet client DNS per entrambe le subnet di Amsterdam e Seattle.
     

@@ -10,24 +10,24 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 96c49239-d999-4045-8b64-9d1940cce8ff
-description: La tabella UserAgentDef mappa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
-ms.openlocfilehash: bef3d9755b7475277ed2741541d43ad813a21f14430bf3dc6c939201d011b6dc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: La tabella UserAgentDef mappa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+ms.openlocfilehash: 717d8fa52429c768cc27334ef863f2fc6a9ce613
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349658"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598670"
 ---
 # <a name="useragentdef-table"></a>Tabella UserAgentDef
  
-La tabella UserAgentDef mappa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi a Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
+La tabella UserAgentDef mappa gli identificatori degli agenti utente ai nomi descrittivi dell'agente. Gli agenti utente sono client software utilizzati per connettersi Skype for Business Server 2015. Questa tabella è stata introdotta in Microsoft Lync Server 2013.
   
 |**UAType**|**UAName**|**UACategory**|
 |:-----|:-----|:-----|
-|1  <br/> |MediationServer  <br/> |MediationServer  <br/> |
-|2  <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
+|1   <br/> |MediationServer  <br/> |MediationServer  <br/> |
+|2   <br/> |AV-MCU  <br/> |AV-MCU  <br/> |
 |4   <br/> |OC  <br/> |OC  <br/> |
 |8   <br/> |OCPhone  <br/> |OCPhone  <br/> |
 |16   <br/> |LMC  <br/> |LMC  <br/> |

@@ -13,15 +13,15 @@ ms.custom:
 - ms.lync.plan.Mobility
 - ms.lync.plan.Mobility
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: feceed86-0f71-47e4-8e56-e5181c6b5cc9
 description: La funzionalità per dispositivi mobili di Skype for Business Server 2015 supporta Skype for Business nei dispositivi mobili.
-ms.openlocfilehash: ead5ddb6d4a5272d4d4e172bc8d344be4d0501c0
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+ms.openlocfilehash: f185a91897ae6efd5cc007a3f13250c221f543e4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58232901"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600311"
 ---
 # <a name="skype-for-business-server-mobility-planning-tool"></a>Skype for Business Server: strumento di pianificazione della mobilità
  

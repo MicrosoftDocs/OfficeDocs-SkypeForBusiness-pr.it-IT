@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.HybridSetupWizard
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: c8600c4e-dc54-4af2-a72e-c1b997d83443
 description: È possibile utilizzare la procedura guidata di gestione ibrida per eseguire alcune delle attività di configurazione necessarie per configurare una distribuzione ibrida con Skype for Business Online. Per ulteriori informazioni su come configurare la distribuzione per la distribuzione ibrida, vedere Configure your environment with the Hybrid Manageability wizard.
-ms.openlocfilehash: 00cac439ee812003b7db1ca379c013c934453c1410dd40211718da55ad1567d9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8c266114bd5ee57da0c3c3437d869822780eb8ca
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321918"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614336"
 ---
 # <a name="hybrid-manageability-wizard"></a>Configurazione ibrida guidata di gestibilità
 

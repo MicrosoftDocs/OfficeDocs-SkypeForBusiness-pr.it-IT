@@ -1,5 +1,5 @@
 ---
-title: Spostare i dati dell'archivio file in un nuovo archivio file Skype for Business Server 2015
+title: Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server 2015
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -10,17 +10,17 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 8d1d5819-add2-4f5d-a436-74c00a281df0
 description: "Se è necessario rimuovere il file server che attualmente funge da archivio file per la distribuzione di Skype for Business Server 2015 o se è necessario apportare altre modifiche che renderebbero l'archivio file corrente non disponibile, è innanzitutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:"
-ms.openlocfilehash: d57bfe10df36f200f927d4a2c9850eee0d21e9cf38724f31cc62bf84f76708e2
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 10571b398b6e39624c408f0e36baa317212f9b21
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307117"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614256"
 ---
-# <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server-2015"></a>Spostare i dati dell'archivio file in un nuovo archivio file Skype for Business Server 2015
+# <a name="move-file-store-data-to-a-new-file-store-in-skype-for-business-server-2015"></a>Spostare i dati dell'archivio file in un nuovo archivio file in Skype for Business Server 2015
 
 Se è necessario rimuovere il file server che attualmente funge da archivio file per la distribuzione di Skype for Business Server 2015 o se è necessario apportare altre modifiche che renderebbero l'archivio file corrente non disponibile, è innanzitutto necessario creare una nuova condivisione. È quindi necessario eseguire la procedura seguente:
 
@@ -63,9 +63,9 @@ Se è necessario rimuovere il file server che attualmente funge da archivio file
 
 12. Fare clic con il pulsante destro del mouse sul server o sul pool e **quindi scegliere Modifica proprietà**.
 
-13. In **Modifica proprietà,** in **Associazioni,** in **Archivio file,** selezionare la nuova condivisione file e quindi fare clic su **OK.**
+13. In **Modifica proprietà,** in **Associazioni** in **Archivio file** selezionare la nuova condivisione file e quindi fare clic su **OK.**
 
-14. Pubblicare la topologia, controllare lo stato della replica ed eseguire la Skype for Business Server distribuzione guidata in base alle esigenze. Per informazioni dettagliate, vedere [Common Procedures for Removing Lync Servers and Components](/previous-versions/office/skype-server-2010/gg195688(v=ocs.14)).
+14. Pubblicare la topologia, controllare lo stato della replica e quindi eseguire Skype for Business Server distribuzione guidata in base alle esigenze. Per informazioni dettagliate, vedere [Common Procedures for Removing Lync Servers and Components](/previous-versions/office/skype-server-2010/gg195688(v=ocs.14)).
 
 15. Avviare un prompt dei comandi: fare clic sul **pulsante Start,** scegliere **Esegui** e quindi digitare cmd.exe.
 
@@ -76,7 +76,7 @@ Se è necessario rimuovere il file server che attualmente funge da archivio file
     ```
 
     > [!TIP]
-    > L'opzione /S consente di copiare file, directory e sottodirectory. L'opzione /XF ignora tutti i file denominati Meeting.Active. Le versioni correnti di robocopy.exe con il parametro /MT offrono una velocità di copia notevolmente superiore grazie all'utilizzo di più thread. Per l'opzione /LOG, utilizzare un percorso di directory e un nome di file di registro sotto forma di C:\Logfiles\log.txt. Questa opzione consente di creare un file di registro delle operazioni nel percorso specificato.
+    > L'opzione /S copia file, directory e sottodirectory. L'opzione /XF ignora tutti i file denominati Meeting.Active. Le versioni correnti di robocopy.exe con il parametro /MT offrono una velocità di copia notevolmente superiore grazie all'utilizzo di più thread. Per l'opzione /LOG, utilizzare un percorso di directory e un nome di file di registro sotto forma di C:\Logfiles\log.txt. Questa opzione consente di creare un file di registro delle operazioni nel percorso specificato.
 
 17. Al termine della copia dei dati, nel Pannello di controllo di Lync Server fare clic su **Topologia** e quindi su **Stato.**
 

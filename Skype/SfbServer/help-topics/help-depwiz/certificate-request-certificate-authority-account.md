@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeployCertRequestCAAccount
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6251322d-ac36-4760-b467-bcd543af22aa
 description: Per inviare una richiesta, l'Autorità di certificazione (CA) può richiedere credenziali diverse da quelle attualmente utilizzate dall'utente per connettersi. Per consentire la richiesta di un certificato come utente diverso, selezionare la casella di controllo Specifica credenziali alternative per l'Autorità di certificazione e quindi digitare il nome utente o dominio\nomeutente di un utente che può richiedere il certificato. Nella casella di testo Password digitare la password dell'utente specificato. Il nome utente e la password vengono quindi inviati come parte del processo di richiesta del certificato, ma non nell'effettiva richiesta, a un'Autorità di certificazione online.
-ms.openlocfilehash: db1fb64f92e3f83d2e9506c73a3c9873131e128a690ceb95c8e16ae33aa34636
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 7ff5c20d14e2d42688424866f2f463996aff0d8c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323208"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58626768"
 ---
 # <a name="certificate-request-certificate-authority-account"></a>Richiesta di certificato (account autorità di certificazione)
  

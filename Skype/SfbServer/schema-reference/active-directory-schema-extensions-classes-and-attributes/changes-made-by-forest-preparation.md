@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2e12613e-59f2-4810-a32d-24a9789a4a6e
 description: In questa sezione vengono descritti gli oggetti e le impostazioni globali e i gruppi amministrativi e di servizio universali creati durante il passaggio di preparazione della foresta.
-ms.openlocfilehash: 8a613b4f71d26f06d36543ef4ec10dab39442860b0435ccd84417624d495c9fe
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: c21e6dfac6cd3b6a9bb3c0b6b040138e6d8f8a52
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54349728"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58613996"
 ---
 # <a name="changes-made-by-forest-preparation-in-skype-for-business-server"></a>Modifiche apportate dalla preparazione della foresta in Skype for Business Server
 
@@ -26,7 +26,7 @@ In questa sezione vengono descritti gli oggetti e le impostazioni globali e i gr
 
 ## <a name="active-directory-global-settings-and-objects"></a>Oggetti e impostazioni globali di Active Directory
 
-Se si archiviano le impostazioni globali nel contenitore Configuration (come per tutte le nuove distribuzioni di Skype for Business Server), la preparazione della foresta utilizza il contenitore Services esistente e aggiunge un oggetto **RTC Service** nell'oggetto Configuration\Services. Nell'oggetto RTC Service viene aggiunto per la preparazione della foresta un oggetto **Global Settings** di tipo msRTCSIP-GlobalContainer. L'oggetto impostazioni globali contiene tutte le impostazioni applicabili alla Skype for Business Server distribuzione. Se si archiviano le impostazioni globali nel contenitore System, per la preparazione della foresta verrà usato un contenitore Microsoft nel contenitore System del dominio radice e un oggetto RTC Service nell'oggetto System\Microsoft.
+Se si archiviano le impostazioni globali nel contenitore Configuration (come nel caso di tutte le nuove distribuzioni di Skype for Business Server), la preparazione della foresta utilizza il contenitore Services esistente e aggiunge un oggetto **RTC Service** nell'oggetto Configuration\Services. Nell'oggetto RTC Service viene aggiunto per la preparazione della foresta un oggetto **Global Settings** di tipo msRTCSIP-GlobalContainer. L'oggetto impostazioni globali contiene tutte le impostazioni applicabili alla Skype for Business Server distribuzione. Se si archiviano le impostazioni globali nel contenitore System, per la preparazione della foresta verrà usato un contenitore Microsoft nel contenitore System del dominio radice e un oggetto RTC Service nell'oggetto System\Microsoft.
 
 Durante la preparazione della foresta viene aggiunto inoltre un nuovo oggetto **msRTCSIP-Domain** per il dominio radice in cui viene eseguita la procedura.
 

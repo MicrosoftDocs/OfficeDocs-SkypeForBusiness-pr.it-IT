@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.PersistentChatAddinMain
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0c0ecf64-258d-4b43-8fac-fa5ffa4e7646
 description: È possibile utilizzare la sezione Componente aggiuntivo della pagina Persistent Chat per associare GLI URL alle chat room di Persistent Chat. Questi URL vengono visualizzati nel client nella chat room nel riquadro di estendibilità della conversazione. Un amministratore deve aggiungere componenti aggiuntivi all'elenco dei componenti aggiuntivi registrati e i responsabili/creatori di chat devono associare le chat room a uno dei componenti aggiuntivi registrati prima che gli utenti possano visualizzare questo aggiornamento nel client.
-ms.openlocfilehash: c6f29cd9c9bf2b70b88a3ca3e5e1ac230b56e2a111cc34cc405261d3947e003b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 0d3f09ee5f2ab130a54d60424ee2966d36e54142
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54343690"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614346"
 ---
 # <a name="persistent-chat-add-in-main-page"></a>Pagina principale del componente aggiuntivo di Chat persistente
 
@@ -34,7 +34,7 @@ Per creare componenti aggiuntivi per chat room persistenti, vedere [Configure ad
 
 Nella pagina **Componente aggiuntivo** è possibile eseguire le attività seguenti:
 
-- [Configurare i componenti aggiuntivi per le chat room di Persistent Chat Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md)
+- [Configurare i componenti aggiuntivi per le chat room di Persistent Chat in Skype for Business Server 2015](../../manage/persistent-chat/configure-add-ins.md)
 
 ## <a name="to-configure-add-ins-for-chat-rooms"></a>Per configurare componenti aggiuntivi per chat room
 

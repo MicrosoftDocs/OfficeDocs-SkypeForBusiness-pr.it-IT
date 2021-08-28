@@ -13,36 +13,36 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Setup
 - O365P_OnlinePresenceDesc
 description: 'Learn how to set up Skype for Business so you can see the availability of your co-workers. '
-ms.openlocfilehash: 0675d9c24f85fa66e3d1eec2e470af2ffcf3d3e6a77719c63130320ce7e89fbe
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: d1505546fa51268dc40107ca309553f0826c0da5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54303340"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58597380"
 ---
 # <a name="configure-presence-in-skype-for-business-online"></a>Configurare la presenza in Skype for Business online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!IMPORTANT]
-> L Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la Skype for Business sono ora disponibili nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+> L'Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la gestione Skype for Business ora sono nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
 
 Per impostazione predefinita, chiunque possa comunicare con una delle persone dell'organizzazione Skype for Business può anche vedere se tale persona è online. Skype for Business indica se una persona è disponibile online, in una riunione, offline o in un altro indicatore.
 
 ![Esempio di stato online di una persona in Skype for Business.](../images/f0849132-1ddb-480f-bca6-cfe9eaa0486d.png)
 
-**[L'amministratore di](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** tutti gli utenti dell'azienda può scegliere chi vede la propria presenza online in Skype for Business.
+**[L'amministratore](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** di tutti gli utenti dell'azienda può scegliere chi vede la propria presenza online in Skype for Business.
 
 ![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
 
-1. Passare all'interfaccia di amministrazione > **interfaccia di amministrazione**  >  **Skype for Business**.
+1. Passare all'interfaccia di amministrazione > **di amministrazione**  >  **Skype for Business**.
 
 2. **Nell'Skype for Business di amministrazione scegliere** **organizzazione.**
 

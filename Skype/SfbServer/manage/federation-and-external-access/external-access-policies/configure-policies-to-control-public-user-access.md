@@ -13,14 +13,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: La connettività di messaggistica istantanea consente agli utenti dell'organizzazione di utilizzare la messaggistica istantanea per comunicare con gli utenti dei servizi di messaggistica istantanea forniti dai provider di servizi di messaggistica istantanea pubblici.
-ms.openlocfilehash: 33efe5c5c48dc84a29f642de9e8d2445ad3cd02c1ee82089e26e532c52dbf3c9
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 13ef277693c219436e37fc2b9ddee8b78ff5ebc0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309385"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58625198"
 ---
 # <a name="configure-policies-to-control-public-user-access-in-skype-for-business-server"></a>Configurare i criteri per controllare l'accesso degli utenti pubblici in Skype for Business Server
 
@@ -68,7 +68,7 @@ Utilizzare la procedura seguente per configurare un criterio per supportare l'ac
 
 Per abilitare l'accesso degli utenti pubblici, è necessario abilitare anche il supporto della federazione nell'organizzazione. Per informazioni dettagliate, [vedere Configure policies to control federated user access in Skype for Business Server](configure-policies-to-control-federated-user-access.md).
 
-Se si tratta di un criterio utente, è necessario applicarlo anche agli utenti pubblici che si desidera poter collaborare con gli utenti pubblici. 
+Se si tratta di un criterio utente, è necessario applicarlo anche agli utenti pubblici che si desidera possano collaborare con gli utenti pubblici. 
 
 
 ## <a name="see-also"></a>Vedere anche

@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.FrontEndGeneralSettingsExpander2010
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 58269c38-98d9-499f-ab69-6a63a6e5530e
 description: 'È possibile modificare le proprietà del Front End Server o del pool Front End modificando o configurando gli attributi seguenti. La pagina di configurazione è suddivisa nelle sezioni seguenti:'
-ms.openlocfilehash: c0174d6a0badadc217119b5b2ea1028bc01367278739d5b6b03bb4ae83c0f21d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 60f926a796ce38ecc17e033a4eef3dcd10ae1904
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54315762"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600131"
 ---
 # <a name="front-end-general-settings-expander-for-lync-server-2010"></a>Espansione delle impostazioni generali di Front End per Lync Server 2010
 
@@ -35,11 +35,11 @@ ms.locfileid: "54315762"
     > [!IMPORTANT]
     > Non selezionare questa opzione se si colloca il Mediation Server nel Front End Server o nel pool Front End. Mediation Server e Front End Server necessitano di indirizzi IP dedicati su cui comunicare.
 
-- Selezionare **Limita l'utilizzo del** servizio agli indirizzi IP selezionati e immettere l'indirizzo IP per l'indirizzo **IP** primario per la comunicazione del Front End Server o del pool Front End con il resto della distribuzione. Digitare in **Indirizzo IP PSTN** l'indirizzo IP associato al Mediation Server.
+- Selezionare **Limita l'utilizzo del** servizio agli indirizzi IP selezionati e immettere l'indirizzo IP per **l'indirizzo IP** primario per la comunicazione del Front End Server o del pool Front End con il resto della distribuzione. Digitare in **Indirizzo IP PSTN** l'indirizzo IP associato al Mediation Server.
 
     **Caratteristiche e funzionalità**
 
-- **Servizio di conferenza**: selezionare la casella di controllo per aggiungere funzionalità di conferenza alla distribuzione. Queste funzionalità includono audio, video, condivisione di applicazioni, condivisione desktop e conferenze Web. Sarà necessario creare e associare un Office Web Apps Server per conferenze Web (definito più avanti in questa pagina Proprietà).
+- **Servizio di conferenza**: selezionare la casella di controllo per aggiungere funzionalità di conferenza alla distribuzione. Queste funzionalità includono audio, video, condivisione di applicazioni, condivisione desktop e conferenze Web. Sarà necessario creare e associare un Office Web Apps Server per le conferenze Web (definito più avanti in questa pagina Proprietà).
 
 - Se si è selezionato Servizio di conferenza, è possibile selezionare la casella di controllo **Servizi di conferenza telefonica con accesso esterno (PSTN)** per abilitare le funzionalità di conferenza telefonica con accesso esterno.
 
@@ -51,7 +51,7 @@ ms.locfileid: "54315762"
 
 - **Archivio file:** selezionare il nome di dominio completo del server e la condivisione (nel formato ) che fungerà da percorso di archiviazione file per i file condivisi creati e utilizzati da Lync Server 2013 per la replica, le directory conferenze e altri  `\\<FQDN of server>\<share name>` scopi. È possibile selezionare l'archivio file nell'elenco o crearne uno nuovo facendo clic su **Nuovo**.
 
-- Selezionare la **casella di controllo Associa server** di archiviazione per abilitare un server di archiviazione per questo Front End Server o pool Front End. Dopo aver selezionato la casella di controllo, selezionare un server di archiviazione esistente nell'elenco o fare clic su **Nuovo** per creare le definizioni per un nuovo server di archiviazione.
+- Selezionare la **casella di controllo Associa server** di archiviazione per abilitare un server di archiviazione per il Front End Server o il pool Front End. Dopo aver selezionato la casella di controllo, selezionare un server di archiviazione esistente nell'elenco o fare clic su **Nuovo** per creare le definizioni per un nuovo server di archiviazione.
 
 - Selezionare la **casella di controllo Associa Monitoring Server** per abilitare un Monitoring Server per questo Front End Server o pool Front End. Dopo aver selezionato la casella di controllo, selezionare un Monitoring Server esistente nell'elenco o fare clic su **Nuovo** per creare le definizioni per un nuovo Monitoring Server.
 
@@ -77,7 +77,7 @@ ms.locfileid: "54315762"
 
   **Mediation Server**
 
-- Per configurare le **proprietà del Mediation Server** per un Mediation Server collocato, ovvero un Mediation Server distribuito nel Front End Server o nel pool Front End, selezionare Mediation Server **collocato abilitato.**
+- Per configurare **le proprietà del Mediation Server** per un Mediation Server collocato, ovvero un Mediation Server distribuito nel Front End Server o nel pool Front End, selezionare Mediation Server **collocato abilitato.**
 
 - Per definire le **porte di attesa** per un Mediation Server collocato, digitare il valore della porta **TLS** e **TCP** su cui è in attesa il Mediation Server collocato. Il valore predefinito di TLS è la porta TCP 5067.
 
@@ -88,10 +88,10 @@ ms.locfileid: "54315762"
 
 - È necessario definire i trunk associati al Mediation Server collocato. Se sono già stati definiti, i trunk potranno essere associati al Mediation Server.
 
-    Se a un Mediation Server sono associati più gateway, è possibile specificare il gateway predefinito selezionando il gateway che si desidera impostare come predefinito e facendo clic su **Rendi predefinito**. Se si vuole rimuovere il gateway predefinito corrente, selezionarlo e fare clic su **Annulla predefinito**.
+    Se a un Mediation Server sono associati più gateway, è possibile specificare il gateway predefinito selezionando il gateway che si desidera impostare come predefinito e facendo clic su **Rendi predefinito.** Se si vuole rimuovere il gateway predefinito corrente, selezionarlo e fare clic su **Annulla predefinito**.
 
 > [!IMPORTANT]
-> Se si apportano modifiche alle proprietà in questa finestra di dialogo, è necessario pubblicare la topologia ed eseguire la distribuzione guidata di Skype for Business Server in tutti i server interessati. Dopo la pubblicazione della nuova topologia, viene fornito un elenco dei server interessati in cui deve essere eseguita la Distribuzione guidata di Skype for Business Server come collegamento nella schermata di riepilogo della pubblicazione della topologia completata. Per informazioni dettagliate sulla pubblicazione della topologia aggiornata, vedere [Publish the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-topology). Per informazioni dettagliate sulla Skype for Business Server guidata, vedere [Strumenti di amministrazione di Lync Server.](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-administrative-tools)
+> Se si apportano modifiche alle proprietà in questa finestra di dialogo, è necessario pubblicare la topologia ed eseguire la distribuzione guidata di Skype for Business Server in tutti i server interessati. Dopo la pubblicazione della nuova topologia, viene fornito un elenco dei server interessati in cui deve essere eseguita la Distribuzione guidata di Skype for Business Server come collegamento nella schermata di riepilogo della pubblicazione della topologia completata. Per informazioni dettagliate sulla pubblicazione della topologia aggiornata, vedere [Publish the Topology](/previous-versions/office/lync-server-2013/lync-server-2013-publish-the-topology). Per informazioni dettagliate sulla distribuzione guidata Skype for Business Server, vedere [Strumenti di amministrazione di Lync Server.](/previous-versions/office/lync-server-2013/lync-server-2013-lync-server-administrative-tools)
 
 Fare clic su **OK** per salvare le modifiche al documento della topologia.
 

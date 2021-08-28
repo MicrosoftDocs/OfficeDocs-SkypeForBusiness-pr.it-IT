@@ -1,5 +1,5 @@
 ---
-title: Installare e configurare opzioni di disponibilità per Skype for Business Server
+title: Installare e configurare opzioni occupato per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -9,24 +9,24 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: fb0faac8-ca1c-4abb-9959-d19def294c64
 description: Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
-ms.openlocfilehash: aa7dc18d2c535b96cfca06a28aff85f8ab5bc738c4eef94babd9048450bfb897
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 58c70360a9e25ccefcd62181ab5a1a5b222ae9a5
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54322398"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600681"
 ---
-# <a name="install-and-configure-busy-options-for-skype-for-business-server"></a>Installare e configurare opzioni di disponibilità per Skype for Business Server
+# <a name="install-and-configure-busy-options-for-skype-for-business-server"></a>Installare e configurare opzioni occupato per Skype for Business Server
 
 Informazioni su come installare e configurare le opzioni occupato in Skype for Business Server.
 
-Opzioni occupato è un nuovo criterio vocale introdotto nell'aggiornamento cumulativo di luglio 2016 che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata messa in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o inoltrate alla segreteria telefonica.
+Opzioni occupato è un nuovo criterio vocale introdotto nell'aggiornamento cumulativo di luglio 2016 che consente di configurare la modalità di gestione delle chiamate in arrivo quando un utente è già in una chiamata o una conferenza o ha una chiamata in attesa. Le chiamate nuove o in arrivo possono essere rifiutate con un segnale di occupato o inoltrate alla segreteria telefonica.
 
 Se per l'organizzazione è abilitata l'opzione Opzioni occupato, tutti gli utenti del Enterprise, sia VoIP aziendale che non VoIP aziendale, possono utilizzare le opzioni di configurazione seguenti:
 
@@ -38,15 +38,15 @@ Indipendentemente dalla configurazione delle opzioni di disponibilità, agli ute
 
 Per ulteriori informazioni sulla funzionalità Opzioni occupato, vedere [Plan for Busy Options for Skype for Business Server](../../plan-your-deployment/enterprise-voice-solution/busy-options.md).
 
-## <a name="install"></a>Installare
+## <a name="install"></a>Installa
 
 Assicurarsi di avere installato la versione più recente di Skype for Business Server e di aver installato la patch più recente. A tale scopo, arrestare prima tutti i servizi ed eseguire il programma di Skype for Business Server di aggiornamento nel modo seguente:
 
 1. Eseguire il Stop-CsWindowsService comando.
 
-2. Eseguire il SkypeServerUpdateInstaller.exe in ogni Front End Server di un pool.
+2. Eseguire il SkypeServerUpdateInstaller.exe di installazione in ogni Front End Server di un pool.
 
-3. Eseguire il SkypeServerUpdateInstaller.exe su ogni Survivable Branch Server (SBS), se si desidera garantire il supporto per il failover in SBS.
+3. Eseguire il SkypeServerUpdateInstaller.exe di installazione su ogni Survivable Branch Server (SBS), se si desidera garantire il supporto per il failover in SBS.
 
 Il programma di installazione distribuirà la versione più recente dell'applicazione Opzioni occupato. Tuttavia, l'applicazione non è abilitata per impostazione predefinita. Per abilitare l'applicazione, eseguire la procedura seguente:
 
@@ -56,7 +56,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
    Set-CsVoicePolicy -EnableBusyOptions $true
    ```
 
-2. Successivamente, se il sito dispone di un criterio vocale, è necessario abilitare le opzioni di occupato per il criterio vocale come segue:
+2. Successivamente, se il sito dispone di un criterio vocale, è necessario abilitare Opzioni occupato per il criterio vocale come segue:
 
     Eseguire innanzitutto [Get-CsSite](/powershell/module/skype/get-cssite?view=skype-ps) per recuperare il nome del sito:
 
@@ -64,7 +64,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
    Get-CsSite
    ```
 
-    Utilizzare il valore Identity (ad esempio: Site:Redmond1) recuperato da Get-CsSite per recuperare i criteri vocali del sito come segue:
+    Utilizzare il valore Identity (ad esempio: Site:Redmond1) recuperato da Get-CsSite per recuperare i criteri vocali del sito nel modo seguente:
 
    ```powershell
    Get-CsVoicePolicy -Identity Site:Redmond1
@@ -97,7 +97,7 @@ Il programma di installazione distribuirà la versione più recente dell'applica
    Start-CsWindowsService
    ```
 
-## <a name="configure"></a>Configurazione
+## <a name="configure"></a>Configura
 
 Per configurare le opzioni occupato, utilizzare il cmdlet [Set-CsBusyOptions.](https://technet.microsoft.com/library/8ffbb832-3e55-4d6c-9a7c-5ce2df22de2e.aspx)
 
@@ -154,4 +154,4 @@ ScriptName :
 Script     :
 </pre>
 
-È inoltre possibile utilizzare Windows visualizzatore eventi per verificare che l'installazione delle opzioni occupato sia stata eseguita correttamente e che Skype for Business Server le opzioni occupato siano state caricate correttamente. Per verificare le opzioni di occupato, aprire Visualizzatore eventi - Registri applicazioni e servizi **\> - Skype \> (o Lync) Server** e cercare ID evento = 30253.
+È inoltre possibile utilizzare Windows visualizzatore eventi per verificare che l'installazione delle opzioni occupato sia stata eseguita correttamente e che Skype for Business Server le opzioni occupato siano state caricate correttamente. Per verificare le opzioni occupato, aprire Visualizzatore eventi - Registri applicazioni e servizi **\> - Skype \> (o Lync) Server** e cercare ID evento = 30253.

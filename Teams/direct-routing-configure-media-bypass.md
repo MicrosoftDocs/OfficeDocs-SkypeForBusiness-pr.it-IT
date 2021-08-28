@@ -7,7 +7,7 @@ audience: ITPro
 ms.reviewer: NMuravlyannikov
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare il bypass multimediale con Sistema telefonico routing diretto per Microsoft Teams passando da un utente all'altro contemporaneamente o implementando un approccio graduale (scelta consigliata).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 74cfdb0d0bd92849b062d84df20e4ca1428f4034b2e8864bfc89ff70b77c6c3c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dcbc893d3549e491d40268ae3417f5203d755ff6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54284187"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58598580"
 ---
 # <a name="configure-media-bypass-with-direct-routing"></a>Configurare il bypass multimediale con Instradamento diretto
 
@@ -45,7 +45,7 @@ Per attivare il bypass multimediale, è necessario che siano soddisfatte le cond
 
 - **Approccio a fasi. (Scelta consigliata)**.  Creare un nuovo trunk per lo stesso SBC (con una porta diversa), testarlo e modificare i criteri di routing vocale online in modo che gli utenti puntino al nuovo trunk. 
 
-  Questo è l'approccio consigliato perché consente una transizione più fluida e un'esperienza utente ininterrotta. Questo approccio richiede la configurazione di SBC, un nuovo nome FQDN e la configurazione del firewall. Si noti che è necessario assicurarsi che il certificato supporti entrambi i trunk. Nella rete SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con caratteri jolly.
+  Questo è l'approccio consigliato perché consente una transizione più fluida e un'esperienza utente ininterrotta. Questo approccio richiede la configurazione del SBC, un nuovo nome FQDN e la configurazione del firewall. Si noti che è necessario assicurarsi che il certificato supporti entrambi i trunk. Nella rete SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con caratteri jolly.
 
 ![Eseguire la migrazione da trunk non bypassati a trunk abilitati per bypass)](media/direct-routing-media-bypass-8.png)
 
@@ -62,7 +62,7 @@ Per un elenco dei session border controller (SBC) certificati per il routing dir
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Pianificare il bypass multimediale con Il routing diretto](direct-routing-plan-media-bypass.md)
+[Pianificare il bypass multimediale con Routing diretto](direct-routing-plan-media-bypass.md)
 
 
 

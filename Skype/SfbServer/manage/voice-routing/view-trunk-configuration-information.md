@@ -9,14 +9,14 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 description: Le impostazioni di configurazione dei trunk SIP consentono di definire le funzionalità e la relazione tra un Mediation Server e il gateway PSTN (Public Switched Telephone Network), un sistema IP-PBX o un servizio Session Border Controller (SBC) nel provider di servizi.
-ms.openlocfilehash: 8c57a29bd0117afe216d54204d4af275716c07278a311a34e3b5d391cadfed6e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 204f6f17387499719cf3b4bbe33638a849a4e363
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54351436"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58614066"
 ---
 # <a name="view-trunk-configuration-information-in-skype-for-business-server"></a>Visualizzare le informazioni di configurazione trunk in Skype for Business Server
 
@@ -30,7 +30,7 @@ Quando si installa Skype for Business Server, viene creata automaticamente una r
 
 **Per visualizzare le informazioni di configurazione dei trunk SIP tramite Skype for Business Server pannello di controllo**
 
-1. Nel Pannello Skype for Business Server di controllo fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
+1. Nel Pannello Skype for Business Server, fare clic su **Routing vocale** e quindi su **Configurazione trunk.**
 2. Nella scheda **Configurazione trunk** verrà visualizzato un elenco di tutte le raccolte di impostazioni di configurazione trunk. per ogni raccolta verranno visualizzati i valori per le proprietà  **Name,** **Scope,** **State** e Media **bypass,** insieme al numero di utilizzi **PSTN,** **alle** regole dei numeri chiamanti e alle regole numeri chiamate associate alla raccolta. Per visualizzare ulteriori dettagli su una raccolta di impostazioni di configurazione trunk, fare clic sulla raccolta di interesse, su **Modifica** e quindi **su Mostra dettagli.** Si noti che è possibile visualizzare informazioni dettagliate solo per una raccolta di impostazioni di configurazione trunk alla volta.
 
 ## <a name="viewing-sip-trunk-configuration-information-by-using-windows-powershell-cmdlets"></a>Visualizzazione delle informazioni di configurazione dei trunk SIP tramite Windows PowerShell cmdlet

@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.ExternalApplicationsScopeNode
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 73b422d6-1582-4a76-aceb-690004fa02a3
-description: "Nel nodo Server applicazioni attendibili sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni Microsoft Unified Communications attendibili, ma non eseguono Skype for Business Server ruoli. È possibile eseguire l'azione seguente:"
-ms.openlocfilehash: 6615a113e8c2169db6105675de816558d29bff808bf6b90fda4ad4f9d2e51f8d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: "Nel nodo Server applicazioni attendibili sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni Microsoft Unified Communications attendibili, ma non eseguono ruoli Skype for Business Server attendibili. È possibile eseguire l'azione seguente:"
+ms.openlocfilehash: 8405da6646c363d296fa1692ea81c0aed6f293cb
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54290744"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58600251"
 ---
 # <a name="external-applications-scope-node"></a>Nodo dell'ambito delle applicazioni esterne
  
-Nel nodo **Server applicazioni attendibili** sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni Microsoft Unified Communications attendibili, ma non eseguono Skype for Business Server ruoli. È possibile eseguire l'operazione seguente:
+Nel nodo **Server applicazioni attendibili** sono elencati i pool di applicazioni attendibili del sito. I pool di applicazioni attendibili contengono server che eseguono applicazioni Microsoft Unified Communications attendibili, ma non eseguono ruoli Skype for Business Server attendibili. È possibile eseguire l'operazione seguente:
   
 - **Nuovo pool di applicazioni attendibili**. Consente di avviare la procedura guidata **Definisci nuovo pool di applicazioni attendibili**, che può essere usata per aggiungere alla topologia un nuovo pool di applicazioni attendibili.
     
