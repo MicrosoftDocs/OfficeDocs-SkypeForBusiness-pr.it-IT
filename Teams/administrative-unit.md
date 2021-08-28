@@ -9,23 +9,23 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 description: Informazioni su come usare le funzionalità delle unità amministrative in Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 93add1771e76f6640b6f1fde3ee6e732499aa329
-ms.sourcegitcommit: 9062b2c81c582ddc878c825ba1b22a6c23ca4b64
+ms.openlocfilehash: 556f220c9ca250f014ae604c96cabf9ef0b0ca0f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58399362"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636792"
 ---
 # <a name="administrative-unit-functionality-for-device-management-in-teams"></a>Funzionalità delle unità amministrative per la gestione dei dispositivi in Teams
 
-Avere un accesso più granulare basato sui ruoli per la gestione dei dispositivi usando l'Microsoft Teams di amministrazione. Il concetto di unità amministrativa per la gestione dei dispositivi è stato implementato tramite l'Teams di amministrazione.
+Avere un accesso più granulare basato sui ruoli per la gestione dei dispositivi usando l Microsoft Teams di amministrazione. Il concetto di unità amministrativa per la gestione dei dispositivi è stato implementato tramite l'Teams di amministrazione.
 
 Con il concetto di unità amministrativa, si garantirà l'accesso a un set specifico di risorse a un amministratore dedicato. L'unità amministrativa limita l'accesso a tutte le risorse. È possibile estendere la stessa funzionalità per la gestione Teams dispositivi mobili.
 

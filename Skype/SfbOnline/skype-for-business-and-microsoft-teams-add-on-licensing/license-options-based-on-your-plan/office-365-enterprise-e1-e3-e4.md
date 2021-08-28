@@ -14,19 +14,19 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Licensing
 - LIL_Placement
 description: "Informazioni sulle licenze di componenti aggiuntivi, sulle caratteristiche e sull'acquisto di piani E1, E3 ed E4 per Office 365 Enterprise. "
-ms.openlocfilehash: 16752a076b84bc8ad8fe65251732af65993cb73784e7589c275fd42ac71c4352
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 25f45b9bb84a572c23feb33972c39693695f69e9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54316452"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594800"
 ---
 # <a name="office-365-enterprise-e1-e3-and-e4"></a>Office 365 Enterprise E1, E3 e E4
 
@@ -45,7 +45,7 @@ Se è stato già acquistato il piano [Office 365 Enterprise E1](https://products
 <sup>1</sup> Per gli utenti locali. Per altre informazioni, vedere Pianificare Cloud Voicemail per gli utenti [locali.](/skypeforbusiness/hybrid/plan-cloud-voicemail)
    
 > [!IMPORTANT]
-> Office 365 Le licenze E4 sono state ritirate ufficialmente. Per altre [informazioni, vedere Informazioni](https://support.office.com/article/important-information-for-office-365-enterprise-e4-customers-f9572348-43a2-43fa-a3d8-3b6c9c042147) importanti per Office 365 Enterprise E4 clienti.
+> Office 365 Le licenze E4 sono state ritirate ufficialmente. Per altre [informazioni, vedere Informazioni](https://support.office.com/article/important-information-for-office-365-enterprise-e4-customers-f9572348-43a2-43fa-a3d8-3b6c9c042147) importanti Office 365 Enterprise E4 clienti.
   
 ## <a name="e1-and-e3-customers-how-to-see-prices-and-buy"></a>Clienti E1 e E3: come visualizzare i prezzi e acquistare
 <a name="bkmk_buypremium"> </a>

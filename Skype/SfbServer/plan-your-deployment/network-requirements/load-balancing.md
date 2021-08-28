@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 84489328-64a4-486c-9384-a3e5c8ed9c8b
 description: 'Riepilogo: esaminare le considerazioni sul bilanciamento del carico prima di implementare Skype for Business Server.'
-ms.openlocfilehash: 867c9454aec26e3803447dec8565f210b243db6cf5a2997d18ca08e363eb6c43
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9b47c87fa834de6b0a7b3ddddaf6493a9c95f363
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54338074"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623588"
 ---
 # <a name="load-balancing-requirements-for-skype-for-business"></a>Requisiti di bilanciamento del carico per Skype for Business
  
@@ -49,7 +49,7 @@ La Skype for Business Server topologia perimetrale consolidata con scalabilità 
   
 - Federazione con organizzazioni che utilizzano Office Communications Server 2007 R2 o Office Communications Server 2007
     
-- Exchange Messaggistica unificata per utenti remoti che Exchange messaggistica unificata prima di Exchange 2010 con SP1
+- Exchange Messaggistica unificata per utenti remoti che Exchange messaggistica unificata prima Exchange 2010 con SP1
     
 - Connettività con utenti di messaggistica istantanea pubblica
     
@@ -82,7 +82,7 @@ Di seguito sono riportati i requisiti di bilanciamento del carico hardware per i
     
 ### <a name="other-hardware-load-balancer-requirements"></a>Altri requisiti del servizio di bilanciamento del carico hardware
 
-I requisiti di affinità basati su cookie sono notevolmente Skype for Business Server per i servizi Web. Se si distribuisce Skype for Business Server e non vengono mantenuti i Front End Server di Lync Server 2010 o i pool Front End, non è necessaria la persistenza basata su cookie. Tuttavia, se si manterranno temporaneamente o definitivamente i Front End Server di Lync Server 2010 o i pool Front End, si continuerà a utilizzare la persistenza basata su cookie quando viene distribuita e configurata per Lync Server 2010. 
+I requisiti di affinità basati su cookie sono notevolmente Skype for Business Server per i servizi Web. Se si distribuisce Skype for Business Server e non vengono mantenuti i Front End Server o i pool Front End di Lync Server 2010, non è necessaria la persistenza basata su cookie. Tuttavia, se si manterranno temporaneamente o definitivamente i Front End Server di Lync Server 2010 o i pool Front End, si continuerà a utilizzare la persistenza basata su cookie quando viene distribuita e configurata per Lync Server 2010. 
   
 > [!NOTE]
 > **La decisione di usare l'affinità basata sui cookie anche se la distribuzione non la richiede** non determina un impatto negativo. 
@@ -120,7 +120,7 @@ Vengono riportati di seguito i requisiti dei servizi di bilanciamento del carico
     
 - Impostare il timeout di inattività TCP su 1800 secondi.
     
-- Nel firewall tra il proxy inverso e il servizio di bilanciamento del carico hardware del pool hop successivo, creare una regola per consentire il traffico https: sulla porta 4443, dal proxy inverso al servizio di bilanciamento del carico hardware. Il servizio di bilanciamento del carico hardware deve essere configurato per l'ascolto sulle porte 80, 443 e 4443.
+- Nel firewall tra il proxy inverso e il servizio di bilanciamento del carico hardware del pool di hop successivo, creare una regola per consentire il traffico https: sulla porta 4443, dal proxy inverso al servizio di bilanciamento del carico hardware. Il servizio di bilanciamento del carico hardware deve essere configurato per l'ascolto sulle porte 80, 443 e 4443.
     
 ### <a name="summary-of-hardware-load-balancer-affinity-requirements"></a>Riepilogo dei requisiti per l'affinità del servizio di bilanciamento del carico hardware
 
@@ -132,7 +132,7 @@ Vengono riportati di seguito i requisiti dei servizi di bilanciamento del carico
    
 ### <a name="port-monitoring-for-hardware-load-balancers"></a>Monitoraggio delle porte per i servizi di bilanciamento del carico hardware
 
-Il monitoraggio delle porte viene definito nei servizi di bilanciamento del carico hardware per stabilire quando determinati servizi non sono più disponibili a causa di un errore hardware o delle comunicazioni. Ad esempio, se il servizio Front End Server (RTCSRV) si interrompe a causa di un errore del Front End Server o del pool Front End, anche il monitoraggio del bilanciamento del carico di rete dovrebbe interrompere la ricezione del traffico sui servizi Web. Il monitoraggio delle porte viene implementato nel servizio HLB per monitorare quanto segue:
+Il monitoraggio delle porte viene definito nei servizi di bilanciamento del carico hardware per stabilire quando determinati servizi non sono più disponibili a causa di un errore hardware o delle comunicazioni. Ad esempio, se il servizio Front End Server (RTCSRV) si interrompe a causa di un errore del Front End Server o del pool Front End, anche il monitoraggio del bilanciamento del carico di rete dovrebbe interrompere la ricezione del traffico nei servizi Web. Il monitoraggio delle porte viene implementato nel servizio HLB per monitorare quanto segue:
   
 **Pool di utenti front-end server - Interfaccia interna HLB**
 
@@ -151,7 +151,7 @@ Il monitoraggio delle porte viene definito nei servizi di bilanciamento del cari
 ## <a name="dns-load-balancing"></a>Bilanciamento del carico DNS
 <a name="BKMK_DNSLoadBalancing"> </a>
 
-Skype for Business Server consente il bilanciamento del carico DNS, una soluzione software in grado di ridurre notevolmente l'overhead amministrativo per il bilanciamento del carico nella rete. Il bilanciamento del carico DNS bilancia il traffico di rete univoco Skype for Business Server, ad esempio il traffico SIP e il traffico multimediale.
+Skype for Business Server il bilanciamento del carico DNS, una soluzione software in grado di ridurre notevolmente il sovraccarico amministrativo per il bilanciamento del carico nella rete. Il bilanciamento del carico DNS bilancia il traffico di rete univoco Skype for Business Server, ad esempio il traffico SIP e il traffico multimediale.
   
 Se si distribuisce il bilanciamento del carico DNS, l'overhead di amministrazione dell'organizzazione per i servizi di bilanciamento del carico hardware verrà ridotto al minimo. È inoltre possibile eliminare la complessità legata alla risoluzione dei problemi relativi a una configurazione errata dei servizi di bilanciamento del carico per il traffico SIP. È anche possibile impedire le connessioni al server, per poter disconnettere i server. Il bilanciamento del carico DNS garantisce infine che i problemi dei servizi di bilanciamento del carico hardware non influiscano su elementi del traffico SIP, ad esempio il routing delle chiamate di base.
 
@@ -169,7 +169,7 @@ Il bilanciamento del carico DNS viene in genere implementato a livello di applic
   
 Ad esempio, se in un pool denominato pool01.contoso.com sono presenti tre server front-end, si verifica quanto segue:
   
-- I client che Skype for Business eseguono una query DNS per pool01.contoso.com. La query restituisce tre indirizzi IP e li memorizza nella cache nel modo seguente (non necessariamente in questo ordine):
+- I client che Skype for Business eseguono query DNS per pool01.contoso.com. La query restituisce tre indirizzi IP e li memorizza nella cache nel modo seguente (non necessariamente in questo ordine):
     
     pool01.contoso.com 192.168.10.90
     
@@ -184,13 +184,13 @@ Ad esempio, se in un pool denominato pool01.contoso.com sono presenti tre server
 - Se il client tenta tutte le voci memorizzate nella cache senza una connessione corretta, all'utente viene notificato che al momento non sono disponibili Skype for Business Server server.
     
 > [!NOTE]
-> Il bilanciamento del carico basato su DNS è diverso dal round robin DNS (DNS RR), che in genere si riferisce al bilanciamento del carico basandosi su DNS per fornire un ordine diverso di indirizzi IP corrispondenti ai server di un pool. RR DNS in genere abilita solo la distribuzione del carico, ma non abilita il failover. Ad esempio, se la connessione all'unico indirizzo IP restituito dalla query A e AAAA DNS (se si utilizza l'indirizzamento IPv6) ha esito negativo, la connessione ha esito negativo. Di conseguenza, il round robin DNS è di per sé meno affidabile del bilanciamento del carico basato su DNS. È possibile utilizzare il round robin DNS insieme al bilanciamento del carico DNS. 
+> Il bilanciamento del carico basato su DNS è diverso dal round robin DNS (DNS RR), che in genere si riferisce al bilanciamento del carico basandosi su DNS per fornire un ordine diverso di indirizzi IP corrispondenti ai server di un pool. RR DNS in genere abilita solo la distribuzione del carico, ma non abilita il failover. Ad esempio, se la connessione all'unico indirizzo IP restituito dalla query DNS A e AAAA (se si utilizza l'indirizzamento IPv6) ha esito negativo, la connessione ha esito negativo. Pertanto, il round robin DNS di per sé è meno affidabile del bilanciamento del carico basato su DNS. È possibile utilizzare il round robin DNS insieme al bilanciamento del carico DNS. 
   
 Il bilanciamento del carico DNS viene utilizzato per gli elementi seguenti:
   
 - Bilanciamento del carico SIP da server a server nei server perimetrali
     
-- Bilanciamento del carico applicazioni UCAS (Unified Communications Application Services), ad esempio Operatore automatico conferencing, Response Group e Parcheggio di chiamata
+- Bilanciamento del carico Applicazioni UCAS (Unified Communications Application Services), ad esempio Operatore automatico conferenza, Response Group e Parcheggio di chiamata
     
 - Impedire nuove connessioni alle applicazioni UCAS (noto anche come "drenaggio")
     
@@ -206,7 +206,7 @@ Se più record DNS vengono restituiti da una query DNS SRV, il servizio Access E
   
 - La priorità viene considerata per prima. Un client DEVE tentare di contattare l'host di destinazione definito dal record DNS SRV con la priorità numerata più bassa che può raggiungere. Le destinazioni con la stessa priorità devono essere tentate in un ordine definito dal campo peso.
     
-- Il campo peso specifica un peso relativo per le voci con la stessa priorità. A pesi maggiori deve essere data una probabilità proporzionalmente superiore di essere selezionata. Gli amministratori DNS DEVONO utilizzare il peso 0 quando non è disponibile alcuna selezione di server da eseguire. In presenza di record contenenti pesi superiori a 0, i record con peso 0 dovrebbero avere una probabilità molto ridotta di essere selezionati.
+- Il campo peso specifica un peso relativo per le voci con la stessa priorità. A pesi maggiori deve essere data una probabilità proporzionalmente superiore di essere selezionata. Gli amministratori DNS DEVONO utilizzare il peso 0 quando non è disponibile alcuna selezione di server da eseguire. In presenza di record contenenti pesi maggiori di 0, i record con peso 0 dovrebbero avere una probabilità molto ridotta di essere selezionati.
     
 Se vengono restituiti più record DNS SRV con priorità e peso uguali, il servizio Access Edge selezionerà il record SRV ricevuto per primo dal server DNS.
   
@@ -233,7 +233,7 @@ Tutti gli altri scenari di messaggistica unificata di Exchange funzioneranno cor
 
 Per la distribuzione del bilanciamento del carico DNS in pool Front End e pool di server Director è necessario eseguire due passaggi aggiuntivi relativi a FQDN e record DNS.
   
-- Un pool che utilizza il bilanciamento del carico DNS deve avere due FQDN: l'FQDN del pool normale utilizzato dal bilanciamento del carico DNS (ad esempio pool01.contoso.com) e viene risolto negli INDIRIZZI IP fisici dei server nel pool e un altro FQDN per i servizi Web del pool (ad esempio web01.contoso.com), che si risolve in indirizzo IP virtuale del pool. 
+- Un pool che utilizza il bilanciamento del carico DNS deve avere due FQDN: l'FQDN del pool normale utilizzato dal bilanciamento del carico DNS (ad esempio pool01.contoso.com) e viene risolto negli INDIRIZZI IP fisici dei server del pool e un altro FQDN per i servizi Web del pool (ad esempio web01.contoso.com), che si risolve nell'indirizzo IP virtuale del pool. 
     
     In Generatore di topologie, se si desidera distribuire il bilanciamento del carico DNS per un pool, per creare questo FQDN aggiuntivo per i servizi Web del pool è necessario selezionare la casella di controllo Ignora FQDN pool di servizi **Web** interni e digitare il nome di dominio completo nella pagina Specificare gli URL dei servizi Web per il **pool.**
     

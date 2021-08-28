@@ -12,19 +12,19 @@ f1.keywords:
 ms.custom:
 - ms.lync.dep.DeploySSRSInvoke
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 4a4ba8d6-ba43-45b3-b834-372d092561e7
-description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Execute Commands viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
-ms.openlocfilehash: b16d9e521fc0f876a0d5132948a12ab821beff7b90a22314e78b2621dd995a6d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Esecuzione comandi viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
+ms.openlocfilehash: a154bfdcd61413ef814e15316869af786cccc4d6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54330180"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58615982"
 ---
 # <a name="sql-server-reporting-services-invoke"></a>SQL Server Reporting Services (Invoke)
  
-Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Execute Commands viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
+Dopo aver fornito le informazioni necessarie per la distribuzione dei report di Monitoring Server a Microsoft SQL Server 2008 R2 o Microsoft SQL Server 2012 Report Services, nella pagina Esecuzione comandi viene visualizzato un riepilogo dei comandi emessi per installare i report nel SQL Server Reporting Services.
   
 Esaminare il riepilogo dei comandi e notare qualsiasi messaggio di errore o di avviso visualizzato dai comandi. Se viene generato un file di registro, selezionarlo nell'elenco a discesa sotto la finestra di riepilogo e fare clic su **Visualizza registro** per visualizzarlo.
   

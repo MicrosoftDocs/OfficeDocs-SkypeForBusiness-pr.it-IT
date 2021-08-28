@@ -15,18 +15,18 @@ ms.collection:
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Audio Conferencing
 description: 'Ottenere i passaggi per creare un numero di telefono predefinito affinché i chiamanti possano partecipare ad una riunione di Skype for Business online. '
-ms.openlocfilehash: 9ed22a26ddb13d058e81d7fdd046d794623cb3a5176c333429b7227cd279afaa
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dc2bbff037a5e35b1fdb2c9b23c03246eee4a25b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54326982"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594860"
 ---
 # <a name="set-the-phone-numbers-included-on-invites-in-skype-for-business-online"></a>Impostare in Skype for Business online i numeri di telefono inclusi negli inviti
 
@@ -35,10 +35,10 @@ ms.locfileid: "54326982"
 > [!Note]
 > Per informazioni sui numeri di telefono inclusi negli inviti di Microsoft Teams, vedere[Impostare i numeri di telefono inclusi negli inviti di Microsoft Teams](/MicrosoftTeams/set-the-phone-numbers-included-on-invites-in-teams).
 
-I servizi di audioconferenza Microsoft 365 o Office 365 consentono agli utenti dell'organizzazione di creare riunioni Skype for Business e quindi consentire agli utenti di accedere a tali riunioni usando un telefono. In Microsoft 365 e Office 365, è possibile usare un bridge di audioconferenza Microsoft o un bridge di audioconferenza di terze parti ospitato da un provider di servizi di audioconferenza (ACP) approvato.
+Le audioconferenze Microsoft 365 o Office 365 consentono agli utenti dell'organizzazione di creare riunioni Skype for Business e quindi consentire agli utenti di accedere a tali riunioni usando un telefono. In Microsoft 365 e Office 365 è possibile usare un bridge di audioconferenza Microsoft o un bridge di audioconferenza di terze parti ospitato da un provider di servizi di audioconferenza (ACP) approvato.
   
 > [!NOTE]
-> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Se si sta cercando di verificare se sono disponibili numeri di telefono per l'accesso esterno nella propria area geografica o paese/area geografica, usare l'interfaccia di amministrazione di **Skype for Business**  >  **Numeri**  >  **vocali Telefono**,  fare clic su Aggiungi e quindi su Nuovi numeri di servizio . Utilizza gli elenchi **Paese/area geografica**, **Stato/regione** e **Città** per filtrare la ricerca. > Inoltre, se stai cercando numeri di servizio gratuiti, seleziona **Numero verde** dall'elenco **Stato/regione**.
+> Non esiste una risorsa che contenga un elenco di tutti i numeri con accesso esterno per Audioconferenza. Se si sta cercando di verificare se sono disponibili numeri di telefono per l'accesso esterno nella propria area geografica o paese/area geografica, usare l'interfaccia di amministrazione di **Skype for Business** Voice Telefono Numbers , fare clic su Aggiungi e quindi su Nuovi numeri di  >    >  servizio.   Utilizza gli elenchi **Paese/area geografica**, **Stato/regione** e **Città** per filtrare la ricerca. > Inoltre, se stai cercando numeri di servizio gratuiti, seleziona **Numero verde** dall'elenco **Stato/regione**.
   
 Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
   
@@ -77,7 +77,7 @@ Un ponte per conferenze offre un insieme di numeri di telefono di accesso estern
    - **Microsoft è il provider**: usa gli elenchi **Numero a pagamento predefinito** e **Numero verde predefinito** per selezionare i numeri predefiniti per l'utente.
     
      > [!NOTE]
-     > Almeno un numero verde deve essere assegnato al ponte per conferenze prima che possa essere impostato come numero verde predefinito per un utente. Per ottenere un numero verde, vedere Ottenere numeri di telefono di [servizio per Skype for Business](/microsoftteams/getting-service-phone-numbers). 
+     > Almeno un numero verde deve essere assegnato al ponte per conferenze prima che possa essere impostato come numero verde predefinito per un utente. Per ottenere un numero verde, vedere Ottenere i numeri di telefono del servizio [per Skype for Business](/microsoftteams/getting-service-phone-numbers). 
   
    - **Il provider è una terza parte**: utilizza i campi **Numero a pagamento** e **Numero verde** per immettere i numeri per l'utente.
 

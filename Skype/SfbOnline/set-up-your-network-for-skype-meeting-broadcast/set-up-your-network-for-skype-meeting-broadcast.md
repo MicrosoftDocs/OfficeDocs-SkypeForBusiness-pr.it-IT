@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - SMB
 description: Informazioni sulla funzionalità Riunione Skype Broadcast di Skype for Business Online che consente di pianificare, produrre e trasmettere riunioni o eventi a un pubblico online di grandi dimensioni fino a 10.000 partecipanti.
-ms.openlocfilehash: 068ff156badaff9231f6e477e2f41668ea8f99fd26531f2a08155c4ee4763c05
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 998fbb0a0c077507731d8db09521d49e5c5d635f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308027"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58594850"
 ---
 # <a name="set-up-your-network-for-skype-meeting-broadcast"></a>Configurare la rete per Skype Meeting Broadcast
 
@@ -37,7 +37,7 @@ Dopo aver [abilitato Riunione Skype broadcast Riunione Skype](enable-skype-meeti
 
 Se non si ha esperienza nella configurazione del firewall, è consigliabile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
 
-Per ignorare questo passaggio e aggiungere invece un'altra azienda alla [federazione](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md)in modo da poterle invitare alle trasmissioni, seguire la procedura descritta in Consentire agli utenti di contattare utenti Skype for Business esterni .
+Per ignorare questo passaggio e aggiungere un'altra azienda alla [federazione](../set-up-skype-for-business-online/allow-users-to-contact-external-skype-for-business-users.md)in modo da poterle invitare a trasmettere, seguire i passaggi descritti in Consentire agli utenti di contattare utenti esterni Skype for Business utenti .
 
 ## <a name="step-1-set-up-allowed-domains"></a>Passaggio 1: Configurare i domini consentiti
 
@@ -45,7 +45,7 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
 ### <a name="method-1-use-the-admin-center"></a>Metodo 1: Usare l'interfaccia di amministrazione
 
-1. Passare all'interfaccia di amministrazione e quindi nel riquadro di spostamento sinistro fare clic su componenti aggiuntivi Impostazioni Servizi e quindi scegliere  >  **&amp;** **Skype for Business**.
+1. Passare all'interfaccia di amministrazione e quindi nel riquadro di spostamento sinistro fare clic su **componenti** aggiuntivi Impostazioni Servizi e quindi scegliere  >  **&amp;** **Skype for Business**.
 
 2. Nella pagina **Condivisione esterna** in **Eccezioni** dominio selezionare Tutti i domini sono bloccati tranne **e** immettere i domini seguenti, separati da una virgola (,):
 
@@ -61,7 +61,7 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
 ### <a name="method-2-use-windows-powershell"></a>Metodo 2: Usare Windows PowerShell
 
-- Nel **menu Start fare clic con** il pulsante destro del **mouse** Windows PowerShell e scegliere Esegui **come amministratore.** Nella finestra **Windows PowerShell** digitare ogni riga e premere INVIO.
+- Nel **menu Start fare clic con** il pulsante destro **del** mouse Windows PowerShell e scegliere Esegui **come amministratore.** Nella finestra **Windows PowerShell** digitare ogni riga e premere INVIO.
 
   ```PowerShell
   $r = New-CsEdgeDomainPattern -Domain "noammeetings.lync.com"
@@ -91,7 +91,7 @@ Usare **uno** dei metodi seguenti per configurare i domini consentiti:
 
 Il secondo passaggio del processo di configurazione consiste nell'aggiungere prima i domini necessari e quindi aggiungere gli indirizzi IP e gli URL necessari per il funzionamento di Riunione Skype Broadcast.
 
-- **Aggiungere gli URL e gli indirizzi IP Skype for Business gli url** degli endpoint e degli indirizzi IP di Online per vedere quali sono necessari [qui.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_lyo)
+- **Aggiungere gli URL e gli indirizzi IP Skype for Business gli indirizzi IP dell'endpoint online** per vedere quali sono necessari [qui.](https://support.office.com/article/Office-365-URLs-and-IP-address-ranges-8548a211-3fe7-47cb-abb1-355ea5aa88a2?ui=en-US&amp;rs=en-US&amp;ad=US#bkmk_lyo)
 
 ## <a name="set-up-skype-meeting-broadcast-in-hybrid-deployments-and-organizations"></a>Configurare Riunione Skype broadcast nelle distribuzioni ibride e nelle organizzazioni
 

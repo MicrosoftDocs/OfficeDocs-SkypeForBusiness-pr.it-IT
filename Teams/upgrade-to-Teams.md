@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Determinare il percorso di aggiornamento ottimale Microsoft Teams in base alla distribuzione Skype for Business corrente.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c0794e855fac3f911b028c049289beaa13a571473f32f84509c6d219d92bdd78
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 726355c7edf145dec6eeaf9ec1904119c15a3275
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54282479"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616132"
 ---
 # <a name="overview-of-implementing-your-upgrade"></a>Panoramica dell'implementazione dell'aggiornamento
 
@@ -55,7 +55,7 @@ La procedura da eseguire per eseguire l'aggiornamento a Teams dipende dalla dist
 
 In base all'ambiente corrente, scegliere il punto di partenza:  
 
-- **Se si esegue l'aggiornamento da Skype for Business Online** a Teams , seguire la procedura descritta in Eseguire l'aggiornamento da [Skype for Business Online](./upgrade-to-teams-execute-skypeforbusinessonline.md)a Teams .
+- **Se si esegue l'aggiornamento da Skype for Business Online** a Teams , seguire la procedura descritta in Eseguire l'aggiornamento da [Skype for Business Online a Teams](./upgrade-to-teams-execute-skypeforbusinessonline.md).
 
 -  Se si esegue l'aggiornamento da un ambiente locale di **Skype for Business**, è necessario eseguire alcuni passaggi aggiuntivi per configurare la connettività tra gli ambienti locali e online prima di spostare gli utenti in Teams. Per altre informazioni, vedere [Aggiornare Skype for Business locale](upgrade-to-teams-execute-SkypeforBusinessHybridOnPrem.md)a Teams .
 

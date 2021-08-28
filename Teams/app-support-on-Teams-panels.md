@@ -17,15 +17,15 @@ ms.collection:
 - skype-for-business-online
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f9d6f3f03e84e42f7aece380baedb928495560f8
-ms.sourcegitcommit: b1a61c0c48b93e82c7ca8a41b1a718ae3d147d55
+ms.openlocfilehash: db72b520206a68edb006cc0ccbf2518acde081aa
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "58386775"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636771"
 ---
 # <a name="microsoft-teams-appsline-of-business-lob-app-support-on-teams-panels"></a>Microsoft Teams app line of business (LINEB) nei Teams di lavoro
 

@@ -19,14 +19,14 @@ f1.keywords:
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 description: In questo articolo viene descritto come gestire gli attributi dopo la rimozione delle autorizzazioni dell'ambiente locale.
-ms.openlocfilehash: 5f130cce4a464a2e7a7c1823d6b3d297931d02ab
-ms.sourcegitcommit: b17e5acadcca0261eaccc64e1b4ee457348f975c
+ms.openlocfilehash: 9f78dbcfaf1c753d18cc2e85a6b209248c2feea8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58365813"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58636897"
 ---
 # <a name="decide-how-to-manage-attributes-after-decommissioning"></a>Decidere come gestire gli attributi dopo la rimozione delle autorizzazioni
 
@@ -39,7 +39,7 @@ Questi attributi, in particolare l'indirizzo sip (msRTCSIP-PrimaryUserAddress) e
 
 Sono disponibili due opzioni per gestire questa situazione:
 
-1. Lasciare gli utenti abilitati Skype for Business account del server e gestire gli attributi msRTCSIP utilizzando gli strumenti di Active Directory. Ciò non garantisce la perdita del servizio per gli utenti migrati e consente di rimuovere facilmente la distribuzione di Skype for Business Server eliminando (ad esempio, la cancellazione) dei server, senza una rimozione completa. Tuttavia, i nuovi utenti con licenza non avranno questi attributi popolati in Active Directory locale e dovranno essere gestiti online.
+1. Lasciare gli utenti abilitati Skype for Business account del server e gestire gli attributi msRTCSIP utilizzando gli strumenti di Active Directory. Ciò garantisce la perdita del servizio per gli utenti migrati e consente di rimuovere facilmente la distribuzione di Skype for Business Server eliminando (ad esempio, la cancellazione) dei server, senza una rimozione completa. Tuttavia, i nuovi utenti con licenza non avranno questi attributi popolati in Active Directory locale e dovranno essere gestiti online.
 
 2.  Cancellare tutti gli attributi msRTCSIP dagli utenti migrati in Active Directory locale e gestire questi attributi utilizzando gli strumenti online. Questo metodo consente un approccio di gestione coerente per gli utenti esistenti e nuovi, tuttavia può potenzialmente causare una perdita temporanea del servizio durante il processo di rimozione delle autorizzazioni locale.
 
@@ -53,13 +53,13 @@ Se si desidera apportare modifiche all'indirizzo SIP di un utente o al numero di
 - Per modificare l'indirizzo SIP di un utente, modificare la proprietà `msRTCSIP-PrimaryUserAddress` .
 
     > [!NOTE]
-    > Se `ProxyAddresses` l'attributo contiene un indirizzo SIP, aggiornare anche tale valore come procedura consigliata. Anche se l'indirizzo SIP in viene ignorato da O365 se viene popolato, può essere utilizzato `ProxyAddresses` `msRTCSIP-PrimaryUserAddress` da altri componenti locali.
+    > Se `ProxyAddresses` l'attributo contiene un indirizzo SIP, aggiornare anche tale valore come procedura consigliata. Anche se l'indirizzo sip in viene ignorato da O365 se viene popolato, può essere utilizzato `ProxyAddresses` `msRTCSIP-PrimaryUserAddress` da altri componenti locali.
 
 - Per modificare il numero di telefono di un utente, modificare `msRTCSIP-Line` *se ha già un valore*.
 
   ![Strumento Utenti e computer di Active Directory](../media/disable-hybrid-1.png)
   
--  Se l'utente in origine non aveva un valore per l'ambiente locale prima dello spostamento, è possibile modificare il numero di telefono utilizzando il parametro - nel `msRTCSIP-Line` `onpremLineUri` cmdlet [Set-CsUser](/powershell/module/skype/set-csuser?view=skype-ps) nel modulo di PowerShell di Teams.
+-  Se l'utente originariamente non aveva un valore per l'ambiente locale prima dello spostamento, è possibile modificare il numero di telefono utilizzando il parametro - nel `msRTCSIP-Line` `onpremLineUri` cmdlet [Set-CsUser](/powershell/module/skype/set-csuser?view=skype-ps) nel modulo di PowerShell di Teams.
 
 Questi passaggi non sono necessari per i nuovi utenti creati dopo la disabilitazione ibrida e possono essere gestiti direttamente nel cloud. Se si ha familiarità con l'utilizzo della combinazione di questi metodi e con l'abbandono degli attributi msRTCSIP in locale in Active Directory, è possibile semplicemente ri-immagine dei server Skype for Business locali. Tuttavia, se si preferisce cancellare tutti gli attributi msRTCSIP ed eseguire una disinstallazione tradizionale di Skype for Business Server, utilizzare il metodo 2.
 
@@ -159,7 +159,7 @@ Questa opzione richiede ulteriori sforzi e una pianificazione adeguata perché g
     ```
 
    > [!Note]
-   >  Se si dispone ancora di endpoint Skype for Business (client Skype o telefoni di terze parti), è anche necessario impostare -HostedVoiceMail su $true. Se l'organizzazione usa solo Teams endpoint per gli utenti abilitati alla funzionalità vocale, questa impostazione non è applicabile agli utenti. 
+   >  Se hai ancora Skype for Business endpoint (client Skype o telefoni di terze parti), devi anche impostare -HostedVoiceMail su $true. Se l'organizzazione usa solo Teams endpoint per gli utenti abilitati alla voce, questa impostazione non è applicabile agli utenti. 
 
 9. Verificare che il provisioning degli Sistema telefonico funzionalità sia stato eseguito correttamente. Il comando Teams PowerShell seguente restituisce un risultato vuoto non appena il processo viene completato.
 
@@ -182,7 +182,7 @@ Questa opzione richiede ulteriori sforzi e una pianificazione adeguata perché g
 
 11. Verificare che tutti gli utenti siano stati elaborati correttamente eseguendo i due comandi di PowerShell seguenti.
 
-    Comando di PowerShell Skype for Business Server locale:
+    Comando PowerShell Skype for Business Server locale:
 
     ```PowerShell
     Get-CsUser | Select-Object SipAddress, UserPrincipalName
@@ -194,7 +194,7 @@ Questa opzione richiede ulteriori sforzi e una pianificazione adeguata perché g
     Get-CsOnlineUser -Filter {Enabled -eq $True -and (OnPremHostingProvider -ne $null -or MCOValidationError -ne $null -or ProvisioningStamp -ne $null -or SubProvisioningStamp -ne $null)} | fl SipAddress, InterpretedUserType, OnPremHostingProvider, MCOValidationError, *ProvisioningStamp
     ``` 
 
-12. Dopo aver completato tutti i passaggi nel metodo 2, vedere Spostare gli endpoint dell'applicazione ibrida da locale a [online](decommission-move-on-prem-endpoints.md) e [Rimuovere](decommission-remove-on-prem.md) il Skype for Business Server locale per ulteriori passaggi per rimuovere la distribuzione locale di Skype for Business Server.
+12. Dopo aver completato tutti i passaggi nel metodo 2, vedere [Move hybrid application endpoints from on-premises to online](decommission-move-on-prem-endpoints.md) e Remove your [on-premises Skype for Business Server](decommission-remove-on-prem.md) per ulteriori passaggi per rimuovere la distribuzione locale di Skype for Business Server.
 
 
 ## <a name="see-also"></a>Vedere anche

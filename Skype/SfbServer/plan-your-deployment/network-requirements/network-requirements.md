@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: 35c7bb3f-8e0f-48b7-8a2c-857d4b42a4c4
 description: 'Riepilogo: esaminare le considerazioni sui componenti di rete riportate di seguito prima di implementare Skype for Business Server.'
-ms.openlocfilehash: dc2e56c1c918a9ebdaf8a40bfcdb6530fae283b6b2733b4def890c6b26630c29
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 272ac60f4322d1d9153a6518e20d02c07e066def
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323008"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58623578"
 ---
 # <a name="plan-network-requirements-for-skype-for-business"></a>Pianificare i requisiti di rete per Skype for Business
 
@@ -37,23 +37,23 @@ Network performance and needs are directly linked to the traffic load placed on 
 ## <a name="server-hardware"></a>Hardware dei server
 <a name="S_hard"> </a>
 
-La scheda di rete di ogni server nella topologia Skype for Business Server deve supportare almeno 1 gigabit al secondo (Gbps). In generale, è consigliabile connettere tutti i ruoli del server all'interno della topologia Skype for Business Server utilizzando una latenza bassa e una rete LAN (Local Area Network) a larghezza di banda elevata. Le dimensioni della rete LAN dipendono dalle dimensioni della topologia:
+La scheda di rete di ogni server nella topologia Skype for Business Server deve supportare almeno 1 gigabit al secondo (Gbps). In generale, è consigliabile connettere tutti i ruoli del server all'interno della topologia Skype for Business Server utilizzando una latenza bassa e una rete locale (LAN) a larghezza di banda elevata. Le dimensioni della rete LAN dipendono dalle dimensioni della topologia:
 
 - Nelle edizione Standard, i server devono essere in una rete che supporta Ethernet da 1 Gbps o equivalente.
 
-- Nelle edizione Enterprise, la maggior parte dei server deve essere in una rete che supporta più di 1 Gbps, soprattutto quando si supportano conferenze audio/video (A/V) e la condivisione di applicazioni.
+- Nelle edizione Enterprise, la maggior parte dei server deve essere in una rete che supporta più di 1 Gbps, soprattutto quando si supportano le conferenze audio/video (A/V) e la condivisione delle applicazioni.
 
 È possibile supportare l'integrazione della rete PSTN (Public Switched Telephone Network) utilizzando linee T1/E1 o il trunking SIP.
 
 ## <a name="audiovideo-network-requirements"></a>Requisiti di rete audio/video
 <a name="AV_req"> </a>
 
-I requisiti di rete per audio/video (A/V) in una Skype for Business Server distribuzione includono:
+I requisiti di rete per audio/video (A/V) in una Skype for Business Server distribuzione includono quanto segue:
 
 - Se si distribuisce un singolo server perimetrale o un pool di server perimetrali utilizzando il bilanciamento del carico DNS, è possibile configurare il  _firewall_ esterno per eseguire nat (Network Address Translation). Non è possibile configurare il firewall interno _per_ eseguire NAT. Per informazioni dettagliate, vedere [Pianificazione di porte e firewall.](../edge-server-deployments/edge-environmental-requirements.md#port-and-firewall-planning)
 
     > [!IMPORTANT]
-    > Se si dispone di un pool di server perimetrali e si utilizza un servizio di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici nei server perimetrali e non è possibile utilizzare NAT per i server o il pool nel dispositivo con nat,ad esempio un dispositivo firewall o un commutatore LAN. Per informazioni dettagliate, vedere [Edge Server scenarios in Skype for Business Server.](../edge-server-deployments/scenarios.md)
+    > Se si dispone di un pool di server perimetrali e si utilizza un servizio di bilanciamento del carico hardware, è necessario utilizzare gli indirizzi IP pubblici nei server perimetrali e non è possibile utilizzare NAT per i server o il pool nel dispositivo con nat,ad esempio un dispositivo firewall o un commutatore LAN. Per informazioni dettagliate, vedere [Edge Server scenarios in Skype for Business Server](../edge-server-deployments/scenarios.md).
 
 - Se nell'organizzazione è prevista un'infrastruttura di qualità del servizio (QoS), il sottosistema multimediale è progettato per essere utilizzato nell'infrastruttura esistente.
 
@@ -142,7 +142,7 @@ La versione stereo del codec G.722 viene utilizzata dai sistemi basati su Lync R
 
 |**Codec video**|**Risoluzione e proporzioni**|**Velocità in bit massima del payload video (Kbps)**|**Velocità in bit payload video minima (Kbps)**|
 |:-----|:-----|:-----|:-----|
-|H.264  <br/> |320x180 (16:9)  <br/> 212x160 (4:3)  <br/> |250  <br/> |15  <br/> |
+|H.264  <br/> |320x180 (16:9)  <br/> 212x160 (4:3)  <br/> |250  <br/> |15   <br/> |
 |H.264/RTVideo  <br/> |424x240 (16:9)  <br/> 320x240 (4:3)  <br/> |350  <br/> |100  <br/> |
 |H.264  <br/> |480x270 (16:9)  <br/> 424x320 (4:3)  <br/> |450  <br/> |200  <br/> |
 |H.264/RTVideo  <br/> |640x360 (16:9)  <br/> 640x480 (4:3)  <br/> |800  <br/> |300  <br/> |
@@ -150,7 +150,7 @@ La versione stereo del codec G.722 viene utilizzata dai sistemi basati su Lync R
 |H.264  <br/> |960x540 (16:9)  <br/> |2000  <br/> |500  <br/> |
 |H.264/RTVideo  <br/> |1280x720 (16:9)  <br/> |2500  <br/> |700  <br/> |
 |H.264  <br/> |1920x1080 (16:9)  <br/> |4000  <br/> |1500  <br/> |
-|H.264/RTVideo  <br/> |960x144 (20:3)  <br/> |500  <br/> |15  <br/> |
+|H.264/RTVideo  <br/> |960x144 (20:3)  <br/> |500  <br/> |15   <br/> |
 |H.264  <br/> |1280x192 (20:3)  <br/> |1000  <br/> |250  <br/> |
 |H.264  <br/> |1920x288 (20:3)  <br/> |2000  <br/> |500  <br/> |
 
@@ -160,7 +160,7 @@ La larghezza di banda necessaria dipende dalla risoluzione, dalla qualità, dall
 
 - **Velocità in bit payload massima** Questa è la velocità in bit che verrà utilizzata da un endpoint per la risoluzione alla frequenza fotogrammi massima. Questo è il valore che consente la massima qualità audio e video.
 
-- **Velocità in bit payload minima** Questa è la velocità in bit al di sotto della quale un endpoint Skype for Business Server passaggio alla risoluzione inferiore successiva. Per garantire una determinata risoluzione, la velocità in bit del payload video disponibile non deve scendere al di sotto di questa velocità in bit minima per tale risoluzione. Questo valore consente di comprendere il valore più basso possibile se la velocità in bit massima non è disponibile o pratica. Per alcuni utenti, un video a velocità in bit così bassa potrebbe offrire un'esperienza video inaccettabile, quindi usa cautela con queste velocità in bit minime del payload video. Nota che per le scene video statiche e immutate, la velocità in bit effettiva potrebbe scendere temporaneamente al di sotto della velocità in bit minima.
+- **Velocità in bit payload minima** Questa è la velocità in bit al di sotto della quale un endpoint Skype for Business Server passaggio alla successiva risoluzione inferiore. Per garantire una determinata risoluzione, la velocità in bit del payload video disponibile non deve scendere al di sotto di questa velocità in bit minima per tale risoluzione. Questo valore consente di comprendere il valore più basso possibile se la velocità in bit massima non è disponibile o pratica. Per alcuni utenti, un video a velocità in bit così bassa potrebbe offrire un'esperienza video inaccettabile, quindi usa cautela con queste velocità in bit minime del payload video. Nota che per le scene video statiche e immutate, la velocità in bit effettiva potrebbe scendere temporaneamente al di sotto della velocità in bit minima.
 
 Skype for Business Server supporta molte risoluzioni. In questo modo Skype for Business Server di adattarsi a larghezza di banda di rete e funzionalità client di ricezione diverse. Le proporzioni predefinite per Skype for Business Server sono 16:9. Le proporzioni 4:3 legacy sono ancora supportate per le webcam che non consentono l'acquisizione nelle proporzioni 16:9.
 
@@ -194,7 +194,7 @@ Oltre alla larghezza di banda necessaria per il traffico RTP (Real-Time Transpor
 |:-----|:-----|
 |Audio  <br/> |5   <br/> |
 |Video (solo H.264 o RTVideo inviati/ricevuti)  <br/> |10   <br/> |
-|Video (H.264 e RTVideo inviati/ricevuti)  <br/> |15  <br/> |
+|Video (H.264 e RTVideo inviati/ricevuti)  <br/> |15   <br/> |
 
 Per la pianificazione della capacità, sono di interesse le due statistiche seguenti:
 
@@ -202,7 +202,7 @@ Per la pianificazione della capacità, sono di interesse le due statistiche segu
 
 - **Larghezza di banda massima con FEC** Larghezza di banda massima utilizzata da un flusso. Ciò include l'attività tipica del flusso e il codec tipico utilizzato nello scenario con FEC. Si tratta della larghezza di banda utilizzata quando l'attività del flusso corrisponde al 100% e si verifica una perdita di pacchetti che attiva l'utilizzo di FEC per migliorare la qualità. Ciò è utile per calcolare la quantità di larghezza di banda da allocare per consentire l'utilizzo del codec in un determinato scenario e consentire l'utilizzo di FEC per mantenere la qualità in condizioni di perdita di pacchetti.
 
-Nelle tabelle seguenti viene inoltre elencato un valore di larghezza di banda aggiuntivo, **Larghezza di banda tipica.** Si tratta della larghezza di banda media utilizzata da un flusso. Ciò include l'attività tipica del flusso e il codec tipico utilizzato nello scenario. Questa larghezza di banda può essere utilizzata per approssimare la quantità di larghezza di banda utilizzata dal traffico multimediale in un momento specifico, ma non deve essere utilizzata per la pianificazione della capacità, perché le singole chiamate supereranno questo valore quando il livello di attività è superiore alla media. La larghezza di banda tipica del flusso video nelle tabelle seguenti si basa su una combinazione di diverse risoluzioni video osservate nei dati misurati dei clienti e è probabile che le installazioni più piccole presentino numeri effettivi diversi dai dati della tabella. Ad esempio, nelle sessioni peer-to-peer la maggior parte degli utenti usa la finestra di rendering video predefinita, mentre una percentuale di utenti aumenta o ingrandisce l'applicazione Skype for Business Server per consentire risoluzioni video migliori.
+Le tabelle seguenti elencano anche un valore aggiuntivo per la larghezza di banda, **Larghezza di banda tipica.** Si tratta della larghezza di banda media utilizzata da un flusso. Ciò include l'attività tipica del flusso e il codec tipico utilizzato nello scenario. Questa larghezza di banda può essere utilizzata per approssimare la quantità di larghezza di banda utilizzata dal traffico multimediale in un momento specifico, ma non deve essere utilizzata per la pianificazione della capacità, perché le singole chiamate supereranno questo valore quando il livello di attività è superiore alla media. La larghezza di banda tipica del flusso video nelle tabelle seguenti si basa su una combinazione di diverse risoluzioni video osservate nei dati misurati dei clienti e le installazioni più piccole probabilmente hanno numeri effettivi diversi dai dati della tabella. Ad esempio, nelle sessioni peer-to-peer la maggior parte degli utenti usa la finestra di rendering video predefinita, mentre una percentuale di utenti aumenta o ingrandisce l'applicazione Skype for Business Server per consentire risoluzioni video migliori.
 
 Nelle tabelle seguenti sono riportati i valori per i diversi scenari.
 
@@ -213,8 +213,8 @@ Nelle tabelle seguenti sono riportati i valori per i diversi scenari.
 |Audio  <br/> |Banda larga RTAudio  <br/> |39.8  <br/> |62  <br/> |91  <br/> |
 |Audio  <br/> |Banda stretta RTAudio  <br/> |29.3  <br/> |44.8  <br/> |56.6  <br/> |
 |Audio  <br/> |BANDA LARGA DI SETA  <br/> |44.3  <br/> |69  <br/> |105  <br/> |
-|Video principale quando si chiamano Skype for Business Server endpoint  <br/> |H.264  <br/> |460  <br/> |4010 (per una risoluzione massima di 1920x1080)  <br/> |Già incluso  <br/> |
-|Video principale quando si chiamano gli endpoint lync 2010 o Office Communicator 2007 R2  <br/> |RTVideo  <br/> |460  <br/> |2510 (per una risoluzione massima di 1280x720)  <br/> |Già incluso  <br/> |
+|Video principale durante la chiamata Skype for Business Server endpoint  <br/> |H.264  <br/> |460  <br/> |4010 (per una risoluzione massima di 1920x1080)  <br/> |Già incluso  <br/> |
+|Video principale quando si chiamano gli endpoint di Lync 2010 o Office Communicator 2007 R2  <br/> |RTVideo  <br/> |460  <br/> |2510 (per una risoluzione massima di 1280x720)  <br/> |Già incluso  <br/> |
 |Video panoramico quando si chiamano Skype for Business Server endpoint  <br/> |H.264  <br/> |190  <br/> |2010 (per una risoluzione massima di 1920x288)  <br/> |Già incluso  <br/> |
 |Video panoramico quando si chiamano gli endpoint di Lync 2010  <br/> |RTVideo  <br/> |190  <br/> |510 (per una risoluzione massima di 960x144)  <br/> |Già incluso  <br/> |
 
@@ -233,7 +233,7 @@ Nelle tabelle seguenti sono riportati i valori per i diversi scenari.
 
 2. Se sono presenti più flussi, condividono in modo dinamico la larghezza di banda allocata.
 
-Per il video principale la larghezza di banda tipica del flusso è la larghezza di banda aggregata su tutti i flussi video ricevuti e il flusso massimo è la larghezza di banda su tutti i flussi video di invio. Anche con più flussi video, la larghezza di banda video tipica è inferiore a quella dello scenario peer-to-peer perché molte videoconferenti usano la condivisione del contenuto che porta a finestre video molto più piccole e quindi a risoluzioni video più piccole. La larghezza di banda massima supportata per il payload video aggregato è di 8.000 Kbps per entrambi i flussi di invio e ricezione che verranno utilizzati (ad esempio, se sono presenti due flussi video 1920x1080p in ingresso). I valori massimi sono visibili solo raramente nelle implementazioni effettive.
+Per il video principale la larghezza di banda tipica del flusso è la larghezza di banda aggregata su tutti i flussi video ricevuti e il flusso massimo è la larghezza di banda su tutti i flussi video di invio. Anche con più flussi video, la larghezza di banda video tipica è inferiore a quella dello scenario peer-to-peer perché molte videoconferenti usano la condivisione del contenuto che porta a finestre video molto più piccole e quindi a risoluzioni video più piccole. La larghezza di banda massima supportata per il payload video aggregato è di 8.000 Kbps sia per i flussi di invio che per i flussi di ricezione che verranno utilizzati (ad esempio, se sono presenti due flussi video 1920x1080p in ingresso). I valori massimi sono visibili solo raramente nelle implementazioni effettive.
 
 Quando si compila una conferenza a più partecipanti che utilizza la funzionalità di visualizzazione raccolta, l'utilizzo della larghezza di banda aumenta inizialmente con l'adesione dei partecipanti, quindi diminuisce quando le risoluzioni vengono eliminate per adattarsi al massimo.
 
@@ -243,7 +243,7 @@ Quando si compila una conferenza a più partecipanti che utilizza la funzionalit
 |**Velocità in bit media totale** <br/> |2128  <br/> |4050  <br/> |1304  <br/> |1224  <br/> |1565  <br/> |
 |**Velocità in bit massima totale** <br/> |4063  <br/> |5890  <br/> |2860  <br/> |2699  <br/> |3017  <br/> |
 
-La larghezza di banda tipica del flusso per i video panoramici si basa su dispositivi che esegnino solo lo streaming di video panoramici fino a 960x144. Quando si usano dispositivi con video panoramico 1920x288, la larghezza di banda tipica del flusso aumenta.
+La larghezza di banda tipica del flusso per i video panoramici si basa su dispositivi che eserendo solo video panoramici fino a 960x144. Quando si usano dispositivi con video panoramico 1920x288, la larghezza di banda tipica del flusso aumenta.
 
 **Pianificazione della capacità audio per PSTN**
 
@@ -257,7 +257,7 @@ I numeri relativi alla larghezza di banda di rete riportati in queste tabelle ra
 ## <a name="managing-quality-of-service"></a>Gestione della qualità del servizio
 <a name="man_QOS"> </a>
 
-La qualità del servizio (QoS) è una tecnologia di rete utilizzata in alcune organizzazioni per offrire un'esperienza ottimale agli utenti finali per le comunicazioni audio e video. QoS viene utilizzato più frequentemente nelle reti in cui la larghezza di banda è limitata: con un numero elevato di pacchetti di rete in competizione per una quantità piuttosto piccola di larghezza di banda disponibile, QoS consente agli amministratori di assegnare priorità più elevate ai pacchetti che trasportano dati audio o video. Offrendo a questi pacchetti una priorità più alta, è probabile che le comunicazioni audio e video si completino più velocemente e con meno interruzioni rispetto alle sessioni di rete che coinvolgono operazioni quali trasferimenti di file, esplorazione Web o backup di database. Ciò è dovuto al fatto che ai pacchetti di rete utilizzati per i trasferimenti di file o i backup dei database viene assegnata una priorità di "sforzo ottimale".
+QoS (Quality of Service) è una tecnologia di rete utilizzata in alcune organizzazioni per offrire un'esperienza ottimale per gli utenti finali per le comunicazioni audio e video. QoS viene utilizzato più frequentemente nelle reti in cui la larghezza di banda è limitata: con un numero elevato di pacchetti di rete in competizione per una quantità piuttosto piccola di larghezza di banda disponibile, QoS consente agli amministratori di assegnare priorità più elevate ai pacchetti che trasportano dati audio o video. Offrendo a questi pacchetti una priorità più alta, è probabile che le comunicazioni audio e video si completino più velocemente e con meno interruzioni rispetto alle sessioni di rete che coinvolgono operazioni quali trasferimenti di file, esplorazione Web o backup di database. Ciò è dovuto al fatto che ai pacchetti di rete utilizzati per i trasferimenti di file o i backup dei database viene assegnata una priorità di "sforzo ottimale".
 
 > [!NOTE]
 > Di norma, QoS si applica solo alle sessioni di comunicazione nella rete interna. Quando si implementa QoS, si configurano i server e i router per supportare il contrassegno dei pacchetti in un modo particolare che potrebbe non essere supportato su Internet o su altre reti. Anche se qualità del servizio è supportata in altre reti, non esiste alcuna garanzia che QoS verrà configurato esattamente nello stesso modo in cui è stato configurato il servizio. Se si usa MPLS, è necessario collaborare con il provider MPLS.
@@ -268,11 +268,11 @@ Skype for Business Server offre il supporto completo per QoS: ciò significa che
 
 - [Abilitazione di QoS in Skype for Business Server per i dispositivi](../../manage/network-management/qos/enabling-qos-for-devices-that-are-not-based-on-windows.md)non basati su Windows . Per impostazione predefinita, QoS è disabilitato per computer e altri dispositivi (ad esempio iPhone) che eseguono altri sistemi operativi. Anche se puoi usare Skype for Business Server per abilitare e disabilitare qualità del servizio per i dispositivi, in genere non puoi usare il prodotto per modificare i codici DSCP usati da questi dispositivi.
 
-- [Configurazione degli intervalli di porte e dei criteri qualità del servizio per i server per conferenze, applicazioni e Mediation Server.](../../manage/network-management/qos/configuring-port-ranges-for-your-conferencing-application-and-mediation-servers.md) È necessario riservare un set univoco di porte per tipi di pacchetti diversi, ad esempio audio e video. Utilizzando questo Skype for Business Server non si abilita o disabilita QoS impostando un valore di proprietà su True o su False. È invece possibile abilitare QoS configurando gli intervalli di porte e quindi creando e applicando Criteri di gruppo. Se in seguito si decide di non utilizzare QoS, è possibile "disabilitare" QoS rimuovendo gli oggetti Criteri di gruppo appropriati.
+- [Configurazione degli intervalli di porte e dei criteri qualità del servizio per i server per conferenze, applicazioni e Mediation Server.](../../manage/network-management/qos/configuring-port-ranges-for-your-conferencing-application-and-mediation-servers.md) È necessario riservare un set univoco di porte per tipi di pacchetti diversi, ad esempio audio e video. L'Skype for Business Server non consente di abilitare o disabilitare QoS impostando un valore di proprietà su True o su False. È invece possibile abilitare QoS configurando gli intervalli di porte e quindi creando e applicando Criteri di gruppo. Se in seguito si decide di non utilizzare QoS, è possibile "disabilitare" QoS rimuovendo gli oggetti Criteri di gruppo appropriati.
 
 - [Configurazione degli intervalli di porte e dei criteri di qualità del servizio per i server perimetrali](../../manage/network-management/qos/configuring-port-ranges-for-your-edge-servers.md). Anche se non è necessario, è possibile configurare i server Perimetrali in modo che utilizzino gli stessi intervalli di porte degli altri server. La configurazione di un criterio QoS deve essere eseguita solo per il lato interno dei server perimetrali. Questo perché QoS è progettato per l'utilizzo nella rete interna e non su Internet.
 
-- [Configurazione degli intervalli di porte e dei criteri qualità del servizio per i client in Skype for Business Server](../../manage/network-management/qos/configuring-port-ranges-for-your-skype-clients.md). Questi intervalli di porte si applicano solo ai computer client e in genere sono diversi dagli intervalli di porte configurati nei server. Si noti Skype for Business Server non supporta QoS per Windows sistemi operativi diversi da Windows 10.
+- [Configurazione degli intervalli di porte e dei criteri di](../../manage/network-management/qos/configuring-port-ranges-for-your-skype-clients.md)qualità del servizio per i client in Skype for Business Server . Questi intervalli di porte si applicano solo ai computer client e in genere sono diversi dagli intervalli di porte configurati nei server. Tenere presente Skype for Business Server non supporta QoS per Windows sistemi operativi diversi da Windows 10.
 
 
 > [!NOTE]

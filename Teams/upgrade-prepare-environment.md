@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Convalidare la conformità dell'ambiente e della rete prima di iniziare l'aggiornamento da Skype for Business a Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 957f84ca8629dbc9effb440211220465f6be0640633638e70306c6e3dec6d0ec
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b12ed0ad9b662f4cc36a68ae7ee3b4340960517f
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54300732"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58616142"
 ---
 # <a name="prepare-your-environment-for-upgrading-to-teams"></a>Preparare l'ambiente per l'aggiornamento a Teams
 
@@ -45,5 +45,5 @@ Completare queste attività in parallelo con la preparazione dell'utente:
 - [Preparare il personale IT per](upgrade-prepare-IT-pros.md) assicurarsi di avere tutto il necessario per un percorso di aggiornamento efficace.
 - Verificare che l'ambiente soddisfi [tutti](upgrade-plan-journey-prerequisites.md)i prerequisiti e comprendere le dipendenze tra Microsoft 365 o Office 365 servizi e Teams.
 - [Valutare l'ambiente](upgrade-plan-journey-evaluate-environment.md) eseguendo l'individuazione dell'ambiente usando un questionario di esempio per confermare la disponibilità dell'organizzazione a intraprendere un percorso di aggiornamento a Teams.
-- [Preparare la rete con](prepare-network.md) la pianificazione, la preparazione e l'esecuzione dei passaggi di correzione necessari per la rete per supportare Teams di lavoro.
+- [Preparare la rete con](prepare-network.md) la pianificazione, la preparazione e l'esecuzione dei passaggi di correzione necessari per la rete per supportare i Teams di lavoro.
 - [Preparare il servizio per](upgrade-prepare-environment-prepare-service.md) l'implementazione usando gli elenchi di controllo di onboarding per assicurarsi che la configurazione di Teams sia pronta per supportare la migrazione degli utenti da Skype for Business a Teams.

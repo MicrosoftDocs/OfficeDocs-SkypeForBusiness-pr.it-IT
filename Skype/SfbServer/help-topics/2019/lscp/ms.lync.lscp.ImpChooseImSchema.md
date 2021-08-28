@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: bfa55f83-70b4-4790-9b9f-8d849dd94909
 ROBOTS: NOINDEX, NOFOLLOW
 description: Utilizzare la finestra di dialogo Seleziona prefisso collegamento ipertestuale per selezionare i tipi di collegamenti ipertestuali che si desidera bloccare, inviare un messaggio di avviso o consentire selezionando (per bloccare o inviare un messaggio di avviso) o deselezionando (per consentire) le caselle di controllo per le relative estensioni dalle categorie in Prefissi collegamento ipertestuale. Fare clic sulla freccia per espandere una categoria e visualizzare tutti i prefissi dei collegamenti ipertestuali per tale categoria. Se si desidera selezionare tutti i prefissi dei collegamenti ipertestuali per una categoria, selezionare il nome della categoria.
-ms.openlocfilehash: 71e2d018430f61e171f59069e0178e14107ed4338020c8792bdd21ac31d588ad
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ed42530c8d364a8d09d1ca7711020a5d105bbe78
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54334398"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58624258"
 ---
 # <a name="select-hyperlink-prefix"></a>Selezionare il prefisso di collegamento ipertestuale
  
