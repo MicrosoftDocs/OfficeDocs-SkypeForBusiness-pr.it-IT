@@ -10,15 +10,15 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 5fb5b189-56c1-49cf-92c8-e4fd6e2fdd5c
 description: Informazioni su come configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente in Skype for Business Server 2015.
-ms.openlocfilehash: 6579d9b6dfa8a2c9bed237cf98685137f229860a7fe4f338f3d994230516d353
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9b7157b0f1bd3d1891edac752310343b7211b961
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54298586"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608583"
 ---
 # <a name="business-server-2015-configure-high-availability-and-disaster-recovery-for-persistent-chat-server"></a>Business Server 2015: Configurare la disponibilità elevata e il ripristino di emergenza per il server Chat persistente
  
@@ -68,17 +68,17 @@ Utilizzando SQL Server Management Studio, connettersi all'istanza del database d
 6. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel server principale, digitare un percorso locale della cartella **(ad esempio: c:\backup).** Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
     
     > [!IMPORTANT]
-    > Se l SQL Server account di servizio del server principale viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
+    > Se l'account di servizio SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
   
 7. Configurare i **parametri Delete files older than e** Alert if no backup occurs **within** parameters.
     
-8. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server agent in base alle esigenze.
+8. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server Agent in base alle esigenze.
     
 9. In **Compressione** selezionare **Usa l'impostazione predefinita del server** e quindi fare clic su **OK.**
     
 10. In **Istanze e database del server secondario** fare clic su **Aggiungi.**
     
-11. Fare **Connessione** e connettersi all'istanza di SQL Server che è stato configurato come server secondario.
+11. Fare **Connessione** e connettersi all'istanza di SQL Server configurata come server secondario.
     
 12. Nella casella **Database secondario** selezionare il database **mgc** dall'elenco.
     
@@ -86,7 +86,7 @@ Utilizzando SQL Server Management Studio, connettersi all'istanza del database d
     
 14. Nella casella **Cartella** di  destinazione per i file copiati della scheda Copia file digitare il percorso della cartella in cui devono essere copiati i backup dei registri delle transazioni. Questa cartella si trova spesso nel server secondario.
     
-15. Si noti la pianificazione della copia elencata nella **casella Pianificazione** in **Copia processo.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server agent in base alle esigenze. Questa pianificazione deve essere approssimativamente la stessa della pianificazione di backup.
+15. Si noti la pianificazione della copia elencata nella **casella Pianificazione** in **Copia processo.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server Agent in base alle esigenze. Questa pianificazione deve essere approssimativamente la stessa della pianificazione di backup.
     
 16. Nella scheda **Ripristino,** in **Stato database durante il ripristino dei backup,** scegliere l'opzione Nessuna modalità **di** ripristino.
     
@@ -106,7 +106,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 2. Utilizzando il SQL Server Management Studio, connettersi all'istanza mirror del server Chat persistente principale.
     
-3. Verificare che l'SQL Server agent sia in esecuzione.
+3. Assicurarsi che l'SQL Server agent sia in esecuzione.
     
 4. Fare clic con il pulsante destro del mouse sul database mgc e quindi scegliere **Proprietà**.
     
@@ -118,14 +118,14 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 8. Nella casella **Percorso di rete della cartella di backup** digitare il percorso di rete della condivisione creata per la cartella di backup del log delle transazioni.
     
-9. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel **server principale,** digitare un percorso locale per la cartella. Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
+9. Se la cartella di backup si trova nel server primario, digitare il percorso locale della cartella di backup nella casella Se la cartella di backup si trova nel **server primario,** digitare un percorso locale per la cartella. Se la cartella di backup non si trova nel server principale, è possibile lasciare vuota questa casella.
     
     > [!IMPORTANT]
-    > Se l SQL Server account di servizio del server principale viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
+    > Se l'account di servizio SQL Server sul server primario viene eseguito con l'account di sistema locale, è necessario creare la cartella di backup nel server primario e specificare un percorso locale per tale cartella. 
   
 10. Configurare i **parametri Delete files older than e** Alert if no backup occurs **within** parameters.
     
-11. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic **su Pianificazione** e modificare la pianificazione SQL Server Agent, in base alle esigenze.
+11. Esaminare la pianificazione del backup elencata nella casella **Pianificazione** in **Processo di backup.** Per personalizzare la pianificazione per l'installazione, fare clic su **Pianificazione** e modificare la pianificazione SQL Server Agent, in base alle esigenze.
     
     > [!IMPORTANT]
     > Utilizzare le stesse impostazioni utilizzate per il database primario. 
@@ -140,7 +140,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     
 16. Nella scheda **Inizializza database secondario** selezionare l'opzione **No, il database secondario viene inizializzato.**
     
-17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui devono essere copiati i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
+17. Nella scheda **Copia file,** in **Cartella** di destinazione per i file copiati, digitare il percorso della cartella in cui copiare i backup dei registri delle transazioni e fare clic su **OK.** Questa cartella si trova spesso nel server secondario.
     
 18. Aprire **l'elenco a** discesa Configurazione script e selezionare **Configurazione script in Nuova finestra query.**
     
@@ -151,7 +151,7 @@ Eseguire la procedura seguente per continuare il log shipping se viene eseguito 
     > [!IMPORTANT]
     > L'esecuzione manuale di questo script è necessaria perché SQL Server Management Studio non supporta più database primari in una SQL Server log shipping. 
   
-21. Selezionare **Annulla** per chiudere il pannello di configurazione Log File shipping e stabilire un'installazione funzionante che implementi correttamente il file shipping di log sia per il database primario che per il database con mirroring (in caso di failover).
+21. Selezionare **Annulla** per chiudere il pannello di configurazione Log File shipping e stabilire un'installazione funzionante che implementi correttamente il log file shipping sia per il database primario che per il database con mirroring (in caso di failover).
     
 22. Eseguire manualmente il fail back del database di Persistent Chat primario nel database primario. Questa operazione viene eseguita utilizzando Skype for Business Server Management Shell e il cmdlet **Invoke-CsDatabaseFailover.**
     

@@ -1,5 +1,5 @@
 ---
-title: Controllo dell'accesso basato sui ruoli con il Microsoft Teams room Premium room
+title: Controllo dell'accesso basato sui ruoli con il Microsoft Teams room Premium locale
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -12,16 +12,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sul controllo dell'accesso basato sui ruoli con il servizio Microsoft Teams Rooms gestito.
 f1keywords: ''
-ms.openlocfilehash: c73ad1385a0654f3ef50dab46b803debe418b834b6497acfcb27f5a4de736f98
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dd6c89f9e391e2ae7234510c26304076bdee5226
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301062"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608813"
 ---
 # <a name="role-based-access-control-with-the-microsoft-teams-rooms-managed-service"></a>Controllo dell'accesso basato sui ruoli con il Microsoft Teams Rooms gestito
 
@@ -34,7 +34,7 @@ Per creare, modificare o assegnare ruoli, l'account deve avere una delle autoriz
 
 ## <a name="what-is-a-role"></a>Che cos'è un ruolo?
 
-Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati a tale ruolo. Per il momento, il Microsoft Teams Rooms gestito ha tre ruoli predefiniti: **Amministratore** del servizio **gestito,** Responsabile del sito e **Site Tech.** Riguardano alcuni scenari comuni per gli utenti dell'organizzazione che potrebbero essere coinvolti nella gestione delle chat room.
+Un ruolo definisce il set di autorizzazioni concesse agli utenti assegnati a tale ruolo. Per il momento, il Microsoft Teams Rooms gestito ha tre ruoli predefiniti: Amministratore del servizio **gestito,** Responsabile del sito e **Site Tech.** Riguardano alcuni scenari comuni per gli utenti dell'organizzazione che potrebbero essere coinvolti nella gestione delle chat room.
 
 Per visualizzare i ruoli, nel riquadro di spostamento sinistro del portale dei servizi gestiti di Microsoft Teams Rooms passare a Ruoli **e** quindi selezionare uno dei ruoli per visualizzare le proprietà, le autorizzazioni e le assegnazioni del ruolo.  
 
@@ -94,4 +94,4 @@ Per assegnare ruoli, è necessario essere un amministratore globale o un amminis
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Microsoft Teams Rooms servizio gestito](microsoft-teams-rooms-premium.md)
+- [Microsoft Teams Rooms gestito](microsoft-teams-rooms-premium.md)

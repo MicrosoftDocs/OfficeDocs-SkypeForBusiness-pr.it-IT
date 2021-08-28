@@ -9,16 +9,16 @@ ms.topic: quickstart
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: eab3d9f6-ec40-49bf-9162-1a7f5a59451f
 description: "Riepilogo: configurare CUCM per l'utilizzo con Skype for Business Server."
-ms.openlocfilehash: c414e14feb29dc834ebcd6a62221e3ae5e6706e5ee5c265f155d6ea512a91423
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: a27af30cd4934743f8b83260ffd46fa3c65cbcd8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307757"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585632"
 ---
 # <a name="configure-cucm-for-interoperation-with-skype-for-business-server"></a>Configurare CUCM per l'interoperabilità con Skype for Business Server
  
@@ -74,9 +74,9 @@ Le impostazioni descritte qui sono solo esempi di come è possibile configurare 
     
 14. Impostare Protocollo dispositivo su SIP e premere **Avanti**.
     
-15. In Informazioni dispositivo imposta il nome e la descrizione del dispositivo (probabilmente su qualcosa come SfBVideoInterop_SIPTrunk) e imposta l'elenco dei gruppi di risorse multimediali su un MRGL che contiene le risorse multimediali giuste. 
+15. In Informazioni dispositivo imposta il nome e la descrizione del dispositivo (probabilmente su un valore simile a SfBVideoInterop_SIPTrunk) e imposta l'elenco dei gruppi di risorse multimediali su un MRGL che contiene le risorse multimediali giuste. 
     
-16. Scorrere ulteriormente verso il basso. Il punto di terminazione multimediale (MTP) non è necessario per le videochiamate, se non è già deselezionato, deselezionalo. Selezionare l'opzione **Esegui su tutti i nodi CM unificati attivi.** Tieni presente che devi aggiungere tutti i nodi CUCM alla Skype for Business Server configurazione.
+16. Scorrere ulteriormente verso il basso. Media Termination Point (MTP) non è necessario per le videochiamate, se non è già deselezionato, deselezionalo. Selezionare l'opzione **Esegui in tutti i nodi CM unificati attivi.** Tieni presente che devi aggiungere tutti i nodi CUCM alla Skype for Business Server configurazione.
     
 17. Scorrere ulteriormente verso il basso. Impostare le opzioni Chiamate in ingresso e Impostazioni parte connessa come illustrato.
     
@@ -131,7 +131,7 @@ Le impostazioni descritte qui sono solo esempi di come è possibile configurare 
     
     |**Parametro**|**Impostazione consigliata**|
     |:-----|:-----|
-    |Area geografica  <br/> |Predefiniti  <br/> |
+    |Area geografica  <br/> |Impostazione predefinita  <br/> |
     |Elenco preferenze codec audio  <br/> |Impostazione predefinita di sistema  <br/> |
     |Velocità in bit audio massima  <br/> |64 kbps (G.722, G.711)  <br/> |
     |Velocità in bit sessione massima per le videochiamate  <br/> |200000 kbps  <br/> |

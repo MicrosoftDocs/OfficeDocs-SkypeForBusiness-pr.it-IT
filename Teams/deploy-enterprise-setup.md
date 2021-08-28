@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 audience: admin
 description: Configurare Teams nell'azienda per consentire agli utenti di collaborare tramite chat e condivisione di file, configurare e partecipare a riunioni di piccole e grandi dimensioni e parlare tramite chiamate video e vocali.
-localization_priority: Priority
+ms.localizationpriority: high
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7ce51b1768422a5780dbeae5b89f1285d26f18e524d3aae8bc710c127ee5af33
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9d67dbb494a0bde5212d405e5710a7c2730734e9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280919"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58584630"
 ---
 # <a name="set-up-microsoft-teams-in-your-enterprise"></a>Configurare Microsoft Teams nell'azienda
 
@@ -136,7 +136,7 @@ Per informazioni sul modo in cui Teams integra i fondamenti della sicurezza nell
 
 ## <a name="compliance"></a>Conformità
 
-Teams e Microsoft 365 offrono molti strumenti che semplificano la conformità ai requisiti normativi del paese in cui si trovano l'azienda e gli utenti. Vedere gli articoli seguenti per informazioni su come configurare ogni singola funzionalità di conformità in Teams:
+Teams e Microsoft 365 offrono molti strumenti che semplificano la conformità ai requisiti normativi del Paese in cui si trovano l'azienda e gli utenti. Vedere gli articoli seguenti per informazioni su come configurare ogni singola funzionalità di conformità in Teams:
 
 | Funzionalità | Descrizione|
 |-|-|

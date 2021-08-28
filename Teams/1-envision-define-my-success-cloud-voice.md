@@ -9,34 +9,34 @@ audience: admin
 ms.service: msteams
 search.appverid: MET150
 ms.reviewer: rowille
-description: Definizione del successo per la distribuzione di audioconferenze, Sistema telefonico con piani per chiamate o Sistema telefonico routing diretto per l'organizzazione.
+description: Definizione del successo per la distribuzione di audioconferenze, Sistema telefonico piani per chiamate o Sistema telefonico routing diretto per l'organizzazione.
 ms.collection:
 - M365-voice
 - M365-collaboration
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 04cd584be5b6333c579ab8b4685ad917236e660474d9e49150eb0f563670fa6c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 749cea72707f03b738330a39457d95fdfad33a43
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54320009"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609063"
 ---
 # <a name="define-my-success"></a>Definizione del successo
 
-Questo articolo offre una panoramica dei requisiti per la definizione del successo per la distribuzione di audioconferenza, Sistema telefonico con piani per chiamate o Sistema telefonico Direct Routing per l'organizzazione. Definendo correttamente l'aspetto del successo, è possibile misurare i risultati durante l'avanzamento della distribuzione e verificare che i risultati ottenuti siano quelli desiderati.
+Questo articolo offre una panoramica dei requisiti per la definizione del successo per la distribuzione di servizi di audioconferenza, Sistema telefonico con piani per chiamate o Sistema telefonico Direct Routing per l'organizzazione. Definendo correttamente l'aspetto del successo, è possibile misurare i risultati durante l'avanzamento della distribuzione e verificare che i risultati ottenuti siano quelli desiderati.
 
 <!--ENDOFSECTION-->
 
-**Le** audioconferenze forniscono alle organizzazioni ulteriori punti di accesso a qualsiasi riunione (ad hoc o pianificata) consentendo ai partecipanti alla riunione di partecipare tramite una rete PSTN (Public Switched Telephone Network) con accesso esterno tramite telefono fisso tradizionale, PBX (Private Branch Exchange) o telefoni cellulari. Questa opzione è utile quando l'organizzatore o i partecipanti non si trova davanti a un computer o quando le connessioni dati non sono disponibili o non sono troppo inaffidabili per supportare le comunicazioni vocali, ad esempio in un'area remota con copertura di dati mobili spotty o connessi a un servizio Wi-Fi pubblico gratuito con larghezza di banda limitata o quando i partecipanti alla riunione preferiscono accedere alla riunione usando un endpoint di telefonia facilmente accessibile.
+**Le** audioconferenze forniscono alle organizzazioni ulteriori punti di ingresso a qualsiasi riunione (ad hoc o pianificata) consentendo ai partecipanti alla riunione di partecipare tramite una rete PSTN (Public Switched Telephone Network) con accesso esterno tramite telefono fisso tradizionale, PBX (Private Branch Exchange) o telefoni cellulari. Questa opzione è utile quando l'organizzatore o i partecipanti non si trova davanti a un computer o quando le connessioni dati non sono disponibili o non sono troppo inaffidabili per supportare le comunicazioni vocali, ad esempio in un'area remota con copertura di dati mobili spotty o connessi a un servizio Wi-Fi pubblico gratuito con larghezza di banda limitata o quando i partecipanti alla riunione preferiscono accedere alla riunione usando un endpoint di telefonia facilmente accessibile.
 
-Sistema telefonico piani per chiamate ("Piani per **chiamate")** offre alle organizzazioni un modo per modernizzare il proprio luogo di lavoro, consentendo agli utenti di effettuare chiamate telefoniche correlate all'azienda dai propri computer e dispositivi mobili. L'ammodernamento del luogo di lavoro può essere parte di un numero qualsiasi di scenari: un'implementazione di lavoro basata sulle attività, un'importante operazione di ufficio, un aggiornamento dell'ufficio, il ritiro di una soluzione PBX legacy, la conclusione di un contratto di provider di servizi PSTN e così via. Con i Piani per le chiamate, Microsoft facilita la connettività alla rete PSTN.
+Sistema telefonico piani per chiamate ("Piani per **chiamate")** offre alle organizzazioni un modo per modernizzare il proprio luogo di lavoro, consentendo agli utenti di effettuare chiamate telefoniche correlate all'azienda dai propri computer e dispositivi mobili. L'ammodernamento del luogo di lavoro può essere parte di un numero qualsiasi di scenari, ovvero un'implementazione di lavoro basata sulle attività, un importante trasferimento in ufficio, un aggiornamento dell'ufficio, il ritiro di una soluzione PBX legacy, la conclusione di un contratto di provider di servizi PSTN e così via. Con i Piani per le chiamate, Microsoft facilita la connettività alla rete PSTN.
 
-Sistema telefonico routing diretto **("Routing diretto")** offre alle organizzazioni gli stessi vantaggi elencati sopra per i Piani per chiamate, ad eccezione del fatto che la connettività PSTN è agevolata da un provider di terze parti anziché da Microsoft. In questo modo è possibile eseguire la distribuzione nei paesi in cui i piani per chiamate non sono disponibili o nelle distribuzioni in cui è necessario mantenere un contratto di provider di servizi PSTN esistente o l'interoperabilità con determinati sistemi locali. Un altro scenario da considerare per il routing diretto è l'interoperabilità dei sistemi di telefonia. Mentre gli utenti sono in fase di transizione a Chiamate in Teams, alcuni utenti potrebbero rimanere nei sistemi PBX legacy. Il routing diretto consente a entrambi i casi di utilizzo di coesistere. Il traffico di chiamata tra gli utenti di sistemi legacy e Teams utenti rimangono all'interno dell'organizzazione.
+Sistema telefonico routing diretto **("Routing diretto")** offre alle organizzazioni gli stessi vantaggi elencati sopra per i Piani per chiamate, ad eccezione del fatto che la connettività PSTN è facilitata da un provider di terze parti anziché da Microsoft. In questo modo è possibile eseguire la distribuzione nei paesi in cui i piani per chiamate non sono disponibili o nelle distribuzioni in cui è necessario mantenere un contratto di provider di servizi PSTN esistente o l'interoperabilità con determinati sistemi locali. Un altro scenario da considerare per il routing diretto è l'interoperabilità dei sistemi di telefonia. Mentre gli utenti sono in fase di transizione a Chiamate in Teams, alcuni utenti potrebbero rimanere nei sistemi PBX legacy. Il routing diretto consente a entrambi i casi di utilizzo di coesistere. Il traffico di chiamata tra gli utenti di sistemi legacy e Teams utenti rimangono all'interno dell'organizzazione.
 
 <!--ENDOFSECTION-->
 
@@ -60,8 +60,8 @@ I casi d'uso aziendali sono pensati per definire e documentare i risultati azien
 > |         |
 > |---------|
 > |**Descrizione del processo aziendale corrente**<br>Contoso attualmente si basa sui servizi di conferenza PSTN forniti dal provider di telefonia locale in carica, addebitabile in base ai minuti delle riunioni per le riunioni interne e le riunioni che coinvolgono parti esterne.|
-> |**Sfide con il processo aziendale esistente**<br>Contoso spende circa 1 milione di dollari all'anno per l'attuale servizio di conferenza PSTN, con il 75% dei costi sostenuti per le riunioni interne. L'uso degli endpoint di telefonia tradizionali per partecipare alle riunioni ospitate dal servizio di conferenza PSTN non è allineato al piano per l'adozione di Teams come piattaforma moderna di comunicazione e collaborazione.|
-> |**Come la tecnologia può superare queste sfide**<br>Con l'adozione di Microsoft Teams come piattaforma moderna di comunicazione e collaborazione, gli utenti interni dovrebbero partecipare principalmente alle riunioni usando i loro PC dotati di cuffie ottimizzate e dispositivi per sale riunioni. Il servizio di audioconferenza sarà disponibile per supportare i partecipanti esterni o per supportare situazioni in cui l'uso dell'audio del PC non è vantaggioso per i partecipanti interni.|
+> |**Sfide con il processo aziendale esistente**<br>Contoso spende circa 1 milione di dollari all'anno per l'attuale servizio di conferenza PSTN, con il 75% dei costi sostenuti per le riunioni interne. L'uso degli endpoint di telefonia tradizionali per partecipare alle riunioni ospitate dal servizio di conferenza PSTN non è in linea con il piano che l'organizzazione deve adottare Teams come piattaforma di comunicazione e collaborazione moderna.|
+> |**Come la tecnologia può superare queste sfide**<br>Con l'adozione di Microsoft Teams come piattaforma di comunicazione e collaborazione moderna, gli utenti interni dovrebbero partecipare principalmente alle riunioni usando i loro PC dotati di cuffie ottimizzate e dispositivi per sale riunioni. Il servizio di audioconferenza sarà disponibile per supportare i partecipanti esterni o per supportare situazioni in cui l'uso dell'audio del PC non è vantaggioso per i partecipanti interni.|
 > |**Risultati aziendali previsti, misurabili**<br>Il passaggio a Teams moderna piattaforma di comunicazione e collaborazione, combinata con il servizio di audioconferenza, ridurrà notevolmente i costi per la distribuzione del servizio di conferenza PSTN.|
 
 <br>
@@ -73,8 +73,8 @@ I casi d'uso aziendali sono pensati per definire e documentare i risultati azien
 > |---------|
 > |**Descrizione del processo aziendale corrente**<br>La configurazione standard delle aree di lavoro dell'ufficio di Contoso include un telefono desktop per ogni scrivania. A ogni dipendente è stato assegnato un numero di telefono DID (Direct Inward Dialing). I telefoni desktop sono connessi a un sistema PBX e a PSTN tramite un trunk SIP (Session Initiation Protocol). I dipendenti possono effettuare e ricevere chiamate telefoniche solo presso i telefoni desktop assegnati.|
 > |**Sfide con il processo aziendale esistente**<br>L'analisi dell'utilizzo dei telefoni desktop mostra che solo il 10% dei telefoni desktop viene usato attivamente, con il resto configurato per inoltrare le chiamate ai telefoni cellulari o per squillare contemporaneamente ai telefoni cellulari. La manutenzione del sistema PBX esistente e dei telefoni desktop associati contribuisce al 20% del costo mensile del servizio di telefonia di Contoso.|
-> |**Come la tecnologia può superare queste sfide**<br>Piani per chiamate consentirà al personal computer di un utente di ricevere e effettuare chiamate telefoniche tramite la rete dati sfruttando l'app Microsoft Teams nativa. In questo modo si elimina la necessità di implementare e gestire i telefoni desktop e si apre l'opportunità di rimuovere il sistema PBX esistente, perché il servizio telefonico può essere consegnato tramite cloud tramite la rete senza alcuna dipendenza da un sistema telefonico tradizionale.|
-> |**Risultati aziendali previsti, misurabili**<br>La rimozione dei requisiti di manutenzione e la rimozione dei telefoni PBX e desktop legacy offriranno una riduzione del 20% delle spese mensili per i servizi di telefonia. Piani per chiamate semplificherà le aree di lavoro per gli uffici, consentendo a Contoso di espandere le proprie attività stabilendo nuovi uffici con costi di telefonia iniziali minimi.|
+> |**Come la tecnologia può superare queste sfide**<br>Piani per chiamate consentirà al personal computer di un utente di ricevere e effettuare chiamate telefoniche tramite la rete dati sfruttando l'app Microsoft Teams nativa. In questo modo si elimina la necessità di implementare e gestire i telefoni desktop e si apre l'opportunità di rimuovere il sistema PBX esistente, perché il servizio telefonico può essere consegnato tramite il cloud tramite la rete senza alcuna dipendenza da un sistema telefonico tradizionale.|
+> |**Risultati aziendali previsti, misurabili**<br>La rimozione dei requisiti di manutenzione e la rimozione dei telefoni PBX e desktop legacy offriranno una riduzione del 20% delle spese mensili per i servizi di telefonia. Piani per chiamate semplificherà le aree di lavoro per gli uffici, consentendo a Contoso di espandere le proprie operazioni stabilendo nuovi uffici con costi di telefonia iniziali minimi.|
 
 <br>
 
@@ -105,14 +105,14 @@ Oltre a definire i casi d'uso aziendali, per impostare i limiti del progetto è 
 
 ## <a name="identify-key-stakeholders"></a>Identificare gli stakeholder chiave
 
-I casi d'uso aziendali definiti nel passaggio precedente includono un ambito organizzativo per l'implementazione di audioconferenze, piani per chiamate o instradamento diretto. In base a questo, è possibile completare la matrice completa degli stakeholder per includere le persone giuste da coinvolgere nel progetto.
+I casi d'uso aziendali definiti nel passaggio precedente includono un ambito organizzativo per l'implementazione di audioconferenze, piani per chiamate o routing diretto. In base a questo, è possibile completare la matrice completa degli stakeholder per includere le persone giuste da coinvolgere nel progetto.
 
 > [!TIP]
 > Di seguito è riportato un esempio di modello di matrice stakeholder che è possibile usare per documentare gli stakeholder del progetto:
 > 
 > |Ruolo  |Descrizione  |Nome, informazioni di contatto, posizione  |
 > |---------|---------|---------|
-> |Project Executive Sponsor|<ul><li>Prendere l'autorità finale e la responsabilità per il progetto e la consegna sugli obiettivi del progetto.</li><li>Consente di risolvere i problemi riassegnati dal cliente potenziale Project cliente potenziale.</li><li>Sponsorizzare la comunicazione all'interno dell'azienda sugli obiettivi del progetto.</li><li>Prendere decisioni strategiche chiave.</li><li>Verificare la disponibilità delle risorse necessarie e del preventivo.</li><li>Condurre revisioni trimestrali delle attività (QBR).</li><li>Aumentare il buy-in e il supporto per le campagne di sensibilizzazione.</li><li>Fungere da Project sponsor per l'implementazione del programma.</li></ul>|TBA|
+> |Project Executive Sponsor|<ul><li>Prendere l'autorità finale e la responsabilità per il progetto e la consegna sugli obiettivi del progetto.</li><li>Aiutare a risolvere i problemi riassegnati dal cliente potenziale Project cliente potenziale.</li><li>Sponsorizzare la comunicazione all'interno dell'azienda sugli obiettivi del progetto.</li><li>Prendere decisioni strategiche chiave.</li><li>Verificare la disponibilità delle risorse necessarie e del preventivo.</li><li>Condurre revisioni trimestrali delle attività (QBR).</li><li>Aumentare il buy-in e il supporto per le campagne di sensibilizzazione.</li><li>Fungere da Project sponsor per l'implementazione del programma.</li></ul>|TBA|
 > |Project Cliente potenziale|<ul><li>Gestire e guidare il team di progetto.</li><li>Coordinare i partner e i team di lavoro coinvolti nel progetto.</li><li>È necessario essere in grado di creare e gestire piani di progetto per soddisfare i risultati trimestrali.</li><li>Risolvere i problemi interfunzionale.</li><li>Fornire aggiornamenti regolari agli sponsor del progetto.</li><li>Incorporare gli aspetti dell'adozione nel piano di progetto generale.</li><li>Condurre mensilmente le revisioni aziendali e operative (MBR), contribuire ai QBR.</li></ul>|TBA|
 > |Cliente potenziale/architetto della collaborazione|<ul><li>Eseguire la strategia di collaborazione definita dai dirigenti aziendali.</li><li>Analizzare e scegliere prodotti di collaborazione che soddisfino gli obiettivi aziendali per l'azienda.</li><li>Operazioni di progettazione per i prodotti di collaborazione.</li><li>Definire i modelli di funzionamento e supporto.</li><li>Contribuire alle revisioni commerciali mensili e trimestrali.</li></ul>|TBA|
 > |Consulente|<ul><li>Essere responsabili dei servizi di configurazione</li><li>Contribuire all'architettura generale della soluzione.</li></ul>|TBA|
@@ -127,7 +127,7 @@ I casi d'uso aziendali definiti nel passaggio precedente includono un ambito org
 > |Cliente potenziale di distribuzione|<ul><li>Assicurarsi che i prerequisiti di distribuzione siano soddisfatti.</li><li>Coinvolgere le risorse per partecipare alle attività della fase di onboard.</li><li>Partecipare alle riunioni per rivedere e preparare report sullo stato della distribuzione.</li></ul>|TBA|
 > |Amministratori IT|<ul><li>Assistenza per la pianificazione e l'esecuzione dei test. Questo ruolo è per i professionisti IT.</li></ul>|TBA|
 > |Proprietario del servizio|<ul><li>Sii responsabile del funzionamento del servizio di audioconferenza, piani per chiamate o routing diretto.</li><li>È proprietaria del servizio di audioconferenza, piani per chiamate o routing diretto.</li></ul>|TBA|
-> |Campioni di qualità|<ul><li>Migliorare la qualità, l'affidabilità e il feedback degli utenti.</li><li>Identificare le tendenze qualitative e guidare la correzione con i rispettivi team.</li><li>Riferire tramite il comitato direttivo alla direzione.</li><li>Report su qualità, affidabilità e valutazione degli utenti tramite Valuta la mia chiamata e Punteggio net promoter.</li></ul>|TBA|
+> |Campioni di qualità|<ul><li>Migliorare la qualità, l'affidabilità e il feedback degli utenti.</li><li>Identificare le tendenze qualitative e guidare la correzione con i rispettivi team.</li><li>Riferire tramite il comitato direttivo alla direzione.</li><li>Report su qualità, affidabilità e valutazione degli utenti tramite Valuta chiamata e Punteggio net promoter.</li></ul>|TBA|
 
 <br>
 
@@ -152,7 +152,7 @@ Gli OKR contengono gli obiettivi impostati all'inizio del progetto e si definisc
 > 
 > **Visione: Aumentare la produttività massimizzando Microsoft 365 o Office 365 investimenti**
 > 
-> |Obiettivi  |Risultati principali  |da fare  |
+> |Obiettivi  |Risultati principali  |Da fare  |
 > |---------|---------|---------|
 > |Distribuire audioconferenze Teams entro la fine dell'anno fiscale 2018|FY18Q1: Distribuire audioconferenze in Teams globale|Concezione<ul><li>Creare un piano di successo</li><li>Creare un piano di implementazione tecnica dettagliato</li></ul><p>Onboard<ul><li>Eseguire un piano di successo</li><li>Eseguire un piano di implementazione tecnica</li></ul>|
 > |Rimuovere il servizio di conferenza PSTN legacy a livello globale entro la metà dell'anno fiscale 2018|FY18Q2: Rimuovere il servizio di conferenza PSTN legacy a livello globale|Valore Unità<ul><li>Aumentare il coinvolgimento degli utenti e promuovere l'adozione</li><li>Gestire e preparare le modifiche</li><li>Misurare, condividere il successo e scorrere</li>|
@@ -165,18 +165,18 @@ Gli OKR contengono gli obiettivi impostati all'inizio del progetto e si definisc
 > 
 > **Visione: Aumentare la produttività massimizzando Microsoft 365 o Office 365 investimenti**
 > 
-> |Obiettivi  |Risultati principali  |da fare  |
+> |Obiettivi  |Risultati principali  |Da fare  |
 > |---------|---------|---------|
 > |Distribuire piani per chiamate nelle filiali europee entro la fine dell'anno fiscale 2018|FY18Q3: Distribuire piani per chiamate nell'ufficio di Londra|Concezione<ul><li>Creare un piano di successo</li><li>Creare un piano di implementazione tecnica dettagliato</li></ul><p>Onboard<ul><li>Eseguire un piano di successo</li><li>Eseguire un piano di implementazione tecnica</li></ul>|
 > |Rimuovere il PBX legacy nell'ufficio di Londra entro la fine dell'anno fiscale 2018|FY18Q4: Rimuovere il PBX legacy nell'ufficio di Londra|Valore Unità<ul><li>Aumentare il coinvolgimento degli utenti e promuovere l'adozione</li><li>Gestire e preparare le modifiche</li><li>Misurare, condividere il successo e scorrere</li>|
 > 
 > [!TIP]
-> Di seguito sono riportati esempi di OKR rilevanti per un'implementazione di Routing diretto:
+> Di seguito sono riportati alcuni esempi di okR rilevanti per un'implementazione di Routing diretto:
 > <br>
 > 
 > **Visione: Aumentare la produttività massimizzando Microsoft 365 o Office 365 investimenti**
 > 
-> |Obiettivi  |Risultati principali  |da fare  |
+> |Obiettivi  |Risultati principali  |Da fare  |
 > |---------|---------|---------|
 > |Distribuire il routing diretto nelle succursali canadesi entro la fine dell'anno fiscale 2018|FY18Q3: Distribuire il routing diretto nell'ufficio di Toronto|Concezione<ul><li>Creare un piano di successo</li><li>Creare un piano di implementazione tecnica dettagliato</li></ul><p>Onboard<ul><li>Eseguire un piano di successo</li><li>Eseguire un piano di implementazione tecnica</li></ul>|
 > |Rimuovere il PBX legacy nell'ufficio di Toronto entro la fine dell'anno fiscale 2018|FY18Q4: Rimuovere il PBX legacy nell'ufficio di Toronto|Valore Unità<ul><li>Aumentare il coinvolgimento degli utenti e promuovere l'adozione</li><li>Gestire e preparare le modifiche</li><li>Misurare, condividere il successo e scorrere</li>|
@@ -195,7 +195,7 @@ Quando si definiscono gli indicatori KPI, è consigliabile usare criteri "specif
 
 -   Realistico: specificare quali risultati possono essere realisticamente raggiunti, date le risorse disponibili
 
--   Tempo: specificare quando è possibile ottenere i risultati
+-   Time-related: specificare quando è possibile ottenere i risultati
 
 > [!TIP]
 > Di seguito è riportato un esempio di KSI rilevante per questo progetto:
@@ -205,7 +205,7 @@ Quando si definiscono gli indicatori KPI, è consigliabile usare criteri "specif
 > |Utilizzo/adozione|La qualità delle chiamate è uguale o superiore alla soluzione precedente|Sondaggio|L'80% degli utenti accetta o concorda con forza|Dopo l'abilitazione e trimestrale|Team information technology|
 > |Utilizzo/adozione|Microsoft Teams semplificato il processo di comunicazione|Sondaggio|L'80% degli utenti accetta o concorda con forza|Dopo l'abilitazione e trimestrale|Team di gestione delle modifiche|
 > |Utilizzo/adozione|Gli utenti usano attivamente la soluzione|Microsoft 365, Call Quality Dashboard|L'80% degli utenti è attivo ogni giorno|Tutti i giorni|Team di gestione delle modifiche|
-> |Utilizzo/qualità|La percentuale di chiamate/conferenze scadenti dovrebbe essere minima|Dashboard qualità delle chiamate|< 5% delle chiamate scadente al mese|Tutti i giorni|Team information technology|
+> |Utilizzo/qualità|La percentuale di chiamate/conferenze scadenti dovrebbe essere minima|Dashboard qualità delle chiamate|< 5% di chiamate scadente al mese|Tutti i giorni|Team information technology|
 > |Utilizzo/supporto|So come ottenere supporto tecnico|Sondaggio|Il 90% degli utenti concorda o concorda con forza|Dopo l'abilitazione e trimestrale|Team di gestione delle modifiche|
 > |Utilizzo/supporto|Sono soddisfatto della qualità del supporto tecnico|Sondaggio|L'80% degli utenti accetta o concorda con forza|Dopo ogni evento imprevisto|Team information technology|
 > |Finanziarie|Riduzione dei minuti di conferenza legacy|Sistema finanziario|Soddisfare il ROI definito|In base al ROI|Team di gestione delle modifiche|
@@ -218,9 +218,9 @@ Quando si definiscono gli indicatori KPI, è consigliabile usare criteri "specif
 > |Rischio  |Probabilità  |Impatto  |Nel complesso  |Piano di attenuazione  |
 > |---------|---------|---------|---------|---------|
 > |La prossima fusione aggiungerà fino a 1.000 persone|Alta|Alta|Alta|<ul><li>Per le società unite, creare una funzione OKR separata che si applica alle proprie fasi di progetto (Envision, Onboard, Drive Value)</li><li>Non includere questi OKR negli OKR esistenti</li></ul>|
-> |La portabilità del numero di telefono ritarda il completamento del progetto|Alta|Alta|Alta|<ul><li>Preparare in anticipo tutte le informazioni necessarie per supportare la portabilità del numero di telefono (record del servizio clienti, dettagli di fatturazione, lettera di autorizzazione)</li><li>Regolare la sequenza temporale del progetto per adattare il tempo di consegna dell'esecuzione della portabilità del numero di telefono</li><li>Comunicare l'uso di nuovi numeri di conferenza telefonica con accesso esterno a partecipanti esterni</li><li>Usare numeri di telefono temporanei con la modifica dell'ID chiamante</li></ul>|
+> |La portabilità del numero di telefono ritarda il completamento del progetto|Alta|Alta|Alta|<ul><li>Preparare in anticipo tutte le informazioni necessarie per supportare la portabilità dei numeri di telefono (record del servizio clienti, dettagli di fatturazione, lettera di autorizzazione)</li><li>Regolare la sequenza temporale del progetto per adattare il tempo di consegna dell'esecuzione della portabilità del numero di telefono</li><li>Comunicare l'uso di nuovi numeri di conferenza telefonica con accesso esterno a partecipanti esterni</li><li>Usare numeri di telefono temporanei con la modifica dell'ID chiamante</li></ul>|
 > |Riprogettazione pianificata della rete|Alta|Media.|Media.|<ul><li>Prima di implementare Teams come piattaforma moderna di comunicazione e collaborazione, eseguire una valutazione della conformità della rete per i siti nell'ambito del progetto</li></ul>|
-> |Configurazione SBC|Alta|Alta|Alta|<ul><li>Prima di implementare Teams in sostituzione del PBX esistente, verificare che sia possibile soddisfare tutti i requisiti di configurazione SBC</li><li>Verificare che le risorse di supporto SBC hanno le competenze appropriate per configurare SBC per il routing diretto</li></ul>|
+> |Configurazione SBC|Alta|Alta|Alta|<ul><li>Prima di implementare Teams in sostituzione del PBX esistente, verificare che sia possibile soddisfare tutti i requisiti di configurazione SBC</li><li>Verificare che le risorse di supporto SBC hanno le competenze appropriate impostate per configurare SBC per il routing diretto</li></ul>|
 
 <br>
 
@@ -235,7 +235,7 @@ Quando si definiscono gli indicatori KPI, è consigliabile usare criteri "specif
 
 Un comitato direttivo è un gruppo direttivo di stakeholder e project leader chiave che sono stati riuniti per guidare un progetto o un programma verso i risultati aziendali definiti. Il comitato direttivo non è  direttamente responsabile del modo  in cui viene consegnato il progetto, ma piuttosto di ciò che il progetto fornisce all'azienda.
 
-Ogni progetto richiede una visione e una carta concordate. Per ottenere i risultati desiderati dal progetto, la visione deve essere definita in modo chiaro e deve essere monitorata e mantenuta. Questo diventa responsabilità del comitato direttivo: guidare le decisioni, consigliare, fornire supervisione strategica, fungere da sostenitori dell'organizzazione per le iniziative del progetto e, se necessario, rimuovere i blocchi.
+Ogni progetto richiede una visione e una carta concordate. Per ottenere i risultati desiderati dal progetto, la visione deve essere definita in modo chiaro e deve essere monitorata e mantenuta. Questo diventa responsabilità del comitato direttivo: guidare le decisioni, consigliare, fornire una supervisione strategica, fungere da sostenitori dell'organizzazione per le iniziative del progetto e, se necessario, rimuovere i blocchi.
 
 L'organizzazione dovrebbe prendere in considerazione in modo significativo la formazione del comitato direttivo. Il comitato deve assicurarsi che il progetto raggiunga gli obiettivi aziendali definiti per guidare il cambiamento in tutta l'organizzazione, incontrarsi periodicamente per discutere dell'attuale polso del progetto e contribuire a sbloccare gli eventuali ostacoli che si verificano lungo il percorso.
 
@@ -245,13 +245,13 @@ Il comitato dovrebbe definire la propria carta per includere alcuni obiettivi ch
 
 -   Fornire informazioni approfondite sullo stato del progetto allo sponsor esecutivo o ai dirigenti.
 
--   Consentire agli sponsor o ai dirigenti del team dirigenziale di fornire direzione e input al progetto e assicurarsi che sia allineato agli obiettivi aziendali generali, modificando i piani di progetto, i risultati chiave obiettivi (OKR) e altre attività del progetto.
+-   Consentire agli sponsor dirigenti o ai dirigenti di fornire orientamento e input al progetto e assicurarsi che sia allineato agli obiettivi aziendali generali, modificando i piani di progetto, i risultati chiave obiettivi (OKR) e altre attività del progetto.
 
 Il comitato direttivo si riunirà a intervalli ricorrenti per tutta la durata di un progetto per garantire l'allineamento tra la leadership dell'organizzazione e il team di progetto. Questa riunione critica assicura che la direzione del progetto abbia il supporto completo della leadership e incorpora nel progetto qualsiasi feedback fornito dalla leadership per guidare il successo. Il comitato usa queste riunioni per ottenere informazioni approfondite sullo stato del progetto e per:
 
--   Concordare i risultati aziendali che si allineano al caso aziendale e per assicurarsi che il progetto guidi verso la distribuzione di questi risultati.
+-   Concordare i risultati aziendali che si allineano al caso aziendale e per assicurarsi che il progetto sia in grado di garantire la distribuzione di questi risultati.
 
--   Verificare e approvare il progetto per l'accuratezza e la conformità al caso aziendale.
+-   Verificare e approvare il progetto per l'accuratezza e la conformità con il caso aziendale.
 
 -   Esaminare e verificare le modifiche apportate al caso aziendale che potrebbero influire sui risultati definiti.
 

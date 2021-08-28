@@ -13,18 +13,18 @@ ms.collection: Adm_Skype4B_Online
 audience: Admin
 appliesto:
 - Skype for Business
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 ms.custom:
 - Optimization
 description: I seguenti requisiti sono molto importanti per garantire il corretto funzionamento e il successo a lungo termine di tutte le funzioni di Skype for Business online che stai configurando per l'organizzazione. Se sei tra le persone che hanno molta dimestichezza con gli aspetti tecnici, questo documento è per te. Ma ci sono altri che non sono altrettanto a proprio agio. Se hai bisogno di aiuto per l'impostazione di Skype for Business online, leggi questo documento per prendere coscienza degli aspetti che dovrai considerare. Vi insegnerà anche che linguaggio usare quando interagite con Microsoft FastTrack Center, i vostri team di account e di servizi Microsoft o con i partner Microsoft per capire come è possibile soddisfare questi requisiti.
-ms.openlocfilehash: 048efdec25b1a84221adb6e765d21918e48c109c2e18ab8f501bae757348c792
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1c4af624a59e0606b3ee5f9c115ad61a65dffbd0
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323658"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58586024"
 ---
 # <a name="optimizing-your-network-for-skype-for-business-online"></a>Ottimizzare la rete per Skype for Business online
 
@@ -82,7 +82,7 @@ Per maggiori informazioni su come impostare e gestire la QoS, vedi [Gestione del
 
 ## <a name="bypass-proxies-and-wan-optimization-devices"></a>Bypassare proxy e dispositivi di ottimizzazione WAN
 
-Tutti Microsoft 365 o Office 365, inclusi Skype for Business Online, sono crittografati e in genere non possono essere controllati dai dispositivi proxy. Per questi motivi è consigliabile ignorare i dispositivi proxy per tutto il traffico di rete Microsoft 365 e Office 365, come definito come connessioni che gli utenti effettuano a URL Office 365 e intervalli di indirizzi [IP.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) Dato che i dispositivi proxy introducono probabilmente un ritardo nei flussi multimediali in tempo reale di Skype for Business online, si consiglia vivamente di bypassare i dispositivi proxy quanto più possibile per tale traffico.
+Tutti Microsoft 365 o Office 365 inclusi Skype for Business Online sono crittografati e in genere non possono essere controllati dai dispositivi proxy. Per questi motivi è consigliabile ignorare i dispositivi proxy per tutto il traffico di rete Microsoft 365 e Office 365, come definito come connessioni che gli utenti effettuano a URL Office 365 e intervalli di indirizzi [IP.](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) Dato che i dispositivi proxy introducono probabilmente un ritardo nei flussi multimediali in tempo reale di Skype for Business online, si consiglia vivamente di bypassare i dispositivi proxy quanto più possibile per tale traffico.
 
 Microsoft consiglia di escludere gli URL Microsoft 365 e Office 365 usando i file PAC per inviare Microsoft 365 e Office 365 a un firewall.
 
@@ -100,7 +100,7 @@ Ecco alcune altre risorse disponibili che possono essere d'aiuto:
 
 ## <a name="bypass-double-encryption"></a>Bypassare la doppia crittografia
 
-Per fornire agli utenti la migliore esperienza audio e video possibile, è necessario implementare una soluzione che impedisce ai contenuti multimediali di Skype for Business (audio e video) di attraversare un tunnel VPN. Tutto il traffico di Skype for Business è crittografato con Transport Layer Security (TLS) e i carichi di lavoro multimediali sono crittografati con Secure Real Time Protocol (SRTP). La segnalazione viene crittografata con TLS e i carichi di lavoro multimediali sono crittografati con SRTP. L'invio di questo traffico attraverso il tunnel VPN aggiunge un ulteriore livello di crittografia e altri hop di rete tra il client e Microsoft 365 o Office 365, che possono causare una sessione degradata perché aumenta l'instabilità, la perdita di pacchetti e la latenza.
+Per fornire agli utenti la migliore esperienza audio e video possibile, è necessario implementare una soluzione che impedisce ai contenuti multimediali di Skype for Business (audio e video) di attraversare un tunnel VPN. Tutto il traffico di Skype for Business è crittografato con Transport Layer Security (TLS) e i carichi di lavoro multimediali sono crittografati con Secure Real Time Protocol (SRTP). La segnalazione viene crittografata con TLS e i carichi di lavoro multimediali sono crittografati con SRTP. L'invio di questo traffico attraverso il tunnel VPN aggiunge un ulteriore livello di crittografia e altri hop di rete tra il client e Microsoft 365 o Office 365, che possono causare una sessione degradata perché aumenta il jitter, la perdita di pacchetti e la latenza.
 
 Una possibilità per evitare che il traffico di Skype for Business attraversi i tunnel VPN è lo Split Tunneling. Per implementare lo split tunneling, i clienti devono consultare il proprio fornitore di VPN per istruzioni specifiche su come procedere nel loro software.
 

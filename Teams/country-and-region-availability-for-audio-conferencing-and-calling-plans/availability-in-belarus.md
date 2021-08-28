@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Bielorussia.
-ms.openlocfilehash: 14b904c402eb3b14f279bbc81e4b124fb2f115e60e354191ef2f9357f7d7a7f3
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 272b083a79a85e84db2db577ba4aae1ff834ed4b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54314142"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631360"
 ---
 # <a name="availability-in-belarus"></a>Disponibilità in Bielorussia
 

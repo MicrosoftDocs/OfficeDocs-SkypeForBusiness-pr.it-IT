@@ -11,16 +11,16 @@ ms.custom:
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - CSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 24e8f749-d54c-4315-a8fe-bb9303b356ef
 ROBOTS: NOINDEX, NOFOLLOW
 description: Le impostazioni di configurazione delle riunioni definiscono il tipo di conferenze (denominate anche riunioni) che gli utenti possono creare e controllano in che modo (o se) gli utenti anonimi e gli utenti delle conferenze telefoniche con accesso esterno possono partecipare a queste conferenze. Queste impostazioni si applicano solo alle riunioni pianificate. Non si applicano alle riunioni ad hoc create facendo clic sull'opzione Riunione ora nel client.
-ms.openlocfilehash: c4c891b7ac058a5e206c8fcde2d30766f9f498fc342dd9cdd4c9b25564443dbc
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 86b8488028d8eb290fa6a7e41e6c14afc3fbac7c
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317641"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58585280"
 ---
 # <a name="meeting-configuration"></a>Configurazione riunione
 
@@ -52,7 +52,7 @@ Nell'elenco seguente sono descritti i comandi della pagina.
 
 - **Nuovo** Avvia una nuova configurazione di riunione del sito o di riunione del pool.
 
-- **Modifica** Apre la configurazione di riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco o elimina la configurazione del sito o del pool selezionata.
+- **Modifica** Apre la configurazione della riunione selezionata per modificarla, seleziona tutte le configurazioni riunione nell'elenco o elimina la configurazione del sito o del pool selezionata.
 
     > [!NOTE]
     > Per la configurazione riunione globale, l'opzione **Elimina** consente di riportare le impostazioni ai valori predefiniti.

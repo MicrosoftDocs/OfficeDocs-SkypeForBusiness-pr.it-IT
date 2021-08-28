@@ -7,7 +7,7 @@ audience: Admin
 ms.topic: conceptual
 ms.service: msteams
 ms.reviewer: karuanag
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Guida introduttiva che illustra le decisioni chiave da prendere per la fase 2 del piano Microsoft Teams di adozione.
 f1.keywords:
@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 52bc263c799ff631a53f25761e8d88c1ff52fb1dd0be9202a95605871022e555
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: b47f0d9229a695b595255d26da773204e5b21a2b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54280551"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608704"
 ---
 # <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva alla governance per Microsoft Teams
 
@@ -33,7 +33,7 @@ Le attività seguenti si verificano contemporaneamente e possono coinvolgere tut
 
 - Quale stakeholder della valutazione precedente è un buon candidato per partecipare a questo onboarding aziendale limitato?
 - Questo individuo (o gruppo di persone) ha suggerito casi d'uso che potrebbero essere buoni candidati per questa fase?  
-- Hanno abbastanza interesse da parte dei dipendenti dell'organizzazione per essere presto adottatori e fornire feedback significativi e regolari? 
+- Hanno un interesse sufficiente da parte dei dipendenti dell'organizzazione per essere presto adottatori e fornire feedback significativi e regolari? 
 
 Per altre informazioni, vedere [Pianificare la governance in Teams](plan-teams-governance.md) e Pianificare la gestione del ciclo di vita in [Teams](plan-teams-lifecycle.md).
 
@@ -51,25 +51,25 @@ Ai fini di questa fase è possibile limitare chi è in grado di creare team alla
 
 ### <a name="decision-3-guest-access"></a>Decisione 3: Accesso guest
 
-A seconda dell'ambito e del tipo di progetto e della natura del settore, l'abilitazione di una collaborazione sicura con partner o fornitori può essere una funzionalità essenziale da testare. È possibile limitare gli utenti che possono aggiungere guest ai team usando i controlli tenant appropriati e limitare i team aperti agli utenti guest usando le etichette di riservatezza. È inoltre possibile assicurarsi che i guest rispettino i requisiti di sicurezza dell'organizzazione, ad esempio l'uso di Multi-Factor Authentication (MFA).
+A seconda dell'ambito e del tipo di progetto e della natura del settore, l'abilitazione della collaborazione sicura con partner o fornitori può essere una funzionalità essenziale da testare. È possibile limitare gli utenti che possono aggiungere guest ai team usando i controlli tenant appropriati e limitare i team aperti ai guest usando le etichette di riservatezza. È inoltre possibile assicurarsi che i guest rispettino i requisiti di sicurezza dell'organizzazione, ad esempio l'uso di Multi-Factor Authentication (MFA).
 
 ### <a name="decision-4-approved-apps"></a>Decisione 4: App approvate
 
-L'uso ottimale dei Teams include l'integrazione di altre app nell'esperienza. Come minimo, il team tecnico dovrebbe abilitare le app di prima parte e in primo piano nell'esperienza Teams lavoro. A seconda del caso d'uso e di altre app usate nell'organizzazione, è possibile scegliere di includere altre app nell'ambito dell'esperimento controllato. Assicurarsi di controllare eventuali app di terze parti per assicurarsi che rispettino i requisiti di sicurezza e conformità dell'organizzazione.
+L'uso ottimale dei Teams include l'integrazione di altre app nell'esperienza. Come minimo, il team tecnico dovrebbe abilitare le app di prima parte e in primo piano nell'esperienza Teams utenti. A seconda del caso d'uso e di altre app usate nell'organizzazione, è possibile scegliere di includere altre app nell'ambito dell'esperimento controllato. Assicurarsi di controllare eventuali app di terze parti per assicurarsi che rispettino i requisiti di sicurezza e conformità dell'organizzazione.
 
 ### <a name="decision-5-are-meetings-included-in-your-test"></a>Decisione 5: Le riunioni sono incluse nel test? 
 
-L Teams di riunione è di alta qualità, supporta la video chat e riunisce i dipendenti per essere più efficaci. Consultare il team tecnico per assicurarsi che l'ambiente sia pronto per includere riunioni VoIP semplici. L'abilitazione di servizi di audioconferenza o voce verrebbe in genere esclusa da questa fase della sperimentazione. Tuttavia, dipende dal team di progetto principale, dalla conformità tecnica e dallo stato di altri servizi vocali/riunioni dell'organizzazione. La preparazione tecnica deve includere elementi come l'attrezzatura della sala riunioni, i dispositivi e gli accessori per l'utente finale e la rete. Ti consigliamo di includere video chat e riunioni VoIP nella tua sperimentazione per ottenere più valore dalla tua Teams implementazione. 
+L Teams delle riunioni è di alta qualità, supporta la video chat e riunisce i dipendenti per essere più efficaci. Consultare il team tecnico per assicurarsi che l'ambiente sia pronto per includere riunioni VoIP semplici. In genere, l'abilitazione di servizi di audioconferenza o voce verrebbe esclusa da questa fase della sperimentazione. Tuttavia, dipende dal team di progetto principale, dalla conformità tecnica e dallo stato di altri servizi vocali/riunioni dell'organizzazione. La preparazione tecnica deve includere elementi come l'attrezzatura della sala riunioni, i dispositivi e gli accessori per l'utente finale e la rete. È consigliabile includere video chat e riunioni VoIP nella sperimentazione per ottenere più valore dall'implementazione Teams. 
 
 ### <a name="decision-6-content-management-and-structure"></a>Decisione 6: Gestione e struttura dei contenuti
-Teams funziona al meglio quando gli utenti lavorano end-to-end all'interno della piattaforma, invece di richiedere loro di tornare continuamente ai sistemi e ai servizi legacy, e offre nuovi modi di lavorare diversi da come sono abituati gli utenti. Nell'ambito dell'esperimento, collaborare con i partecipanti per prendere in considerazione le strutture del team e i canali che adottano le modalità multimodali di collaborazione all'interno di Teams ed evitare semplicemente di replicare le strutture di cartelle e di archiviazione esistenti. Considerare inoltre eventuali requisiti di conformità per il contenuto archiviato all'esterno dei sistemi supportati esistenti, ad esempio i sistemi di gestione dei record o di backup.
+Teams funziona al meglio quando gli utenti lavorano end-to-end all'interno della piattaforma, invece di richiedere loro di tornare continuamente a sistemi e servizi legacy, e offre nuovi modi di lavorare diversi da come sono abituati gli utenti. Nell'ambito dell'esperimento, collaborare con i partecipanti per prendere in considerazione le strutture del team e i canali che adottano le modalità multimodali di collaborazione all'interno di Teams ed evitare semplicemente di replicare le strutture di cartelle e di archiviazione esistenti. Considerare inoltre eventuali requisiti di conformità per il contenuto archiviato all'esterno dei sistemi supportati esistenti, ad esempio i sistemi di gestione dei record o di backup.
 
 ### <a name="decision-7--data-security"></a>Decisione 7: Sicurezza dei dati
 
-In preparazione per l'ampia distribuzione, è possibile scegliere di usare etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento, è consigliabile fare riferimento a Pianificare la governance [in Teams](plan-teams-governance.md) e verificare che siano stati impostati criteri di conservazione di base sui dati Teams nel Microsoft 365. Potrebbe essere necessario coordinare il lavoro con il team tecnico perché Microsoft 365 diritti di amministratore per completare il lavoro.
+In preparazione per l'ampia distribuzione, è possibile scegliere di usare etichette di sicurezza per classificare i tipi di team nell'ambiente. Ai fini di questo esperimento, è consigliabile fare riferimento a Pianificare la [governance in Teams](plan-teams-governance.md) e verificare che siano stati impostati criteri di conservazione di base sui dati Teams nel Microsoft 365. Potrebbe essere necessario coordinare il lavoro con il team tecnico perché Microsoft 365 per completare il lavoro sono necessari i diritti di amministratore.
 
 ### <a name="decision-8-length-of-your-experiment"></a>Decisione 8: Durata dell'esperimento
 
-Una riuscita Teams'implementazione procede a un ritmo sano per garantire un'adeguata quantità di energia, concentrazione e apprendimento. È consigliabile che questa fase del progetto sia lunga 60 giorni per assicurarsi che i primi adottivi completino cicli aziendali sufficienti. L'estensione della sperimentazione per un periodo di tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito. tuttavia, questa volta varia per ogni organizzazione.  
+Un'implementazione Teams procede a un ritmo sano per garantire un'adeguata quantità di energia, concentrazione e apprendimento. È consigliabile che questa fase del progetto sia lunga 60 giorni per assicurarsi che i primi adottivi completino cicli aziendali sufficienti. L'estensione della sperimentazione per un periodo di tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito. tuttavia, questa volta varia per ogni organizzazione.  
 
 ![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Definire gli scenari di utilizzo](teams-adoption-define-usage-scenarios.md)

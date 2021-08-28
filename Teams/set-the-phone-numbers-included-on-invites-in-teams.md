@@ -15,23 +15,23 @@ ms.collection:
 audience: Admin
 appliesto:
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Seguire questa procedura per creare un numero di telefono predefinito per consentire ai chiamanti di partecipare a una Microsoft Teams riunione.
-ms.openlocfilehash: 11c9a31d723b5da63152f1a8a79d54938f9ecc31644afbe3421a2bd59f0f5626
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 34fd1592729e18978e1bf5c3aa65e29659092cab
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54335896"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608803"
 ---
-# <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti in Microsoft Teams
+# <a name="set-the-phone-numbers-included-on-invites-in-microsoft-teams"></a>Impostare i numeri di telefono inclusi negli inviti Microsoft Teams
 
-L'audioconferenza in Microsoft 365 e Office 365 consente agli utenti dell'organizzazione di creare riunioni Microsoft Teams e quindi consentire agli utenti di accedere a tali riunioni usando un telefono.
+Le audioconferenze Microsoft 365 e Office 365 consentono agli utenti dell'organizzazione di creare riunioni Microsoft Teams e quindi consentire agli utenti di accedere a tali riunioni usando un telefono.
   
 Un ponte per conferenze offre un insieme di numeri di telefono di accesso esterno per l'organizzazione. Tutti questi numeri possono essere utilizzati per accedere alle riunioni create dall'organizzatore, ma è possibile selezionare quelli che verranno inclusi negli inviti alle riunioni.
   
@@ -43,9 +43,9 @@ Un ponte per conferenze offre un insieme di numeri di telefono di accesso estern
   
 ## <a name="initial-assignment-of-phone-numbers-that-are-included-in-the-meeting-invites-for-new-users"></a>Assegnazione iniziale dei numeri di telefono inclusi negli inviti alla riunione per i nuovi utenti
 
-I numeri di telefono inclusi negli inviti alle riunioni degli utenti abilitati per le audioconferenze sono definiti dal numero di telefono a numero verde di conferenza predefinito e dalle impostazioni predefinite dell'utente con numero verde per le conferenze. Ogni impostazione specifica quale numero a pedaggio e numero verde verrà incluso nell'invito alla riunione di un determinato utente. Come indicato in precedenza, ogni invito alla riunione contiene un numero a pedaggio, un numero verde facoltativo e un collegamento che apre l'elenco completo di tutti i numeri di telefono di accesso esterno che possono essere usati per partecipare a una determinata riunione.
+I numeri di telefono inclusi negli inviti alle riunioni degli utenti abilitati per le audioconferenze sono definiti dal numero a numero verde di conferenza predefinito e dalle impostazioni predefinite degli utenti del numero verde per le conferenze. Ogni impostazione specifica quale numero a pedaggio e numero verde verrà incluso nell'invito alla riunione di un determinato utente. Come indicato in precedenza, ogni invito alla riunione contiene un numero a pedaggio, un numero verde facoltativo e un collegamento che apre l'elenco completo di tutti i numeri di telefono di accesso esterno che possono essere usati per partecipare a una determinata riunione.
 
-Per un nuovo utente, i numeri a pedaggio di conferenza predefiniti vengono assegnati in base alla posizione di utilizzo impostata nell'interfaccia di amministrazione di Microsoft 365 dell'utente quando l'utente è abilitato per il servizio di audioconferenza. Se nel bridge di conferenza è presente un numero a pedaggio corrispondente al paese dell'utente, tale numero verrà assegnato automaticamente come numero a pedaggio predefinito dell'utente. Se non ce n'è uno, il numero definito come numero a pedaggio predefinito del bridge di conferenza verrà assegnato come numero a pedaggio predefinito dell'utente.  
+Per un nuovo utente, i numeri a pedaggio predefiniti per le conferenze vengono assegnati in base alla posizione di utilizzo impostata nell'interfaccia di amministrazione di Microsoft 365 dell'utente quando l'utente è abilitato per il servizio di audioconferenza. Se nel bridge di conferenza è presente un numero a pedaggio corrispondente al paese dell'utente, tale numero verrà assegnato automaticamente come numero a pedaggio predefinito dell'utente. Se non ce n'è uno, il numero definito come numero a pedaggio predefinito del bridge di conferenza verrà assegnato come numero a pedaggio predefinito dell'utente.  
 
 Dopo aver abilitato l'utente per il servizio di audioconferenza, i numeri di telefono a numero verde e a pedaggio predefiniti dell'utente possono essere modificati dall'amministratore del tenant dai valori iniziali in qualsiasi momento.
 
@@ -74,14 +74,14 @@ Per apportare queste modifiche, è necessario essere un amministratore del servi
 
 ## <a name="want-to-use-windows-powershell"></a>Si vuole usare Windows PowerShell
 
-Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che consente di semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
+Con Windows PowerShell è possibile gestire gli utenti e decidere quali operazioni sono autorizzati o meno a eseguire. Con Windows PowerShell, è possibile gestire Microsoft 365 o Office 365 usando un unico punto di amministrazione che può semplificare il lavoro quotidiano quando si hanno più attività da eseguire. Per iniziare a usare Windows PowerShell, vedere gli argomenti seguenti:
 
 - [Sei motivi per utilizzare Windows PowerShell per gestire Office 365](/microsoft-365/enterprise/why-you-need-to-use-microsoft-365-powershell)
 
 - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
 
-Per altre informazioni su Windows PowerShell, vedere [Riferimenti su PowerShell in Microsoft Teams](/powershell/module/teams/?view=teams-ps).
-  
+Per impostare o modificare il numero di telefono di audioconferenza predefinito per un organizzatore o un utente che usa [Microsoft Teams PowerShell,](/powershell/module/teams/?view=teams-ps)impostare i parametri o del **`ServiceNumber`** cmdlet **`TollFreeServiceNumber`** [Set-CsOnlineDialInConferencingUser](/powershell/module/skype/set-CsOnlineDialInConferencingUser?view=skype-ps) su uno dei numeri disponibili.
+
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Provare o acquistare audioconferenze in Microsoft 365 o Office 365](/SkypeForBusiness/audio-conferencing-in-office-365/try-or-purchase-audio-conferencing-in-office-365)

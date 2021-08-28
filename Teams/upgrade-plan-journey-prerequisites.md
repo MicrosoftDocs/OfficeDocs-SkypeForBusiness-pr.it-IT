@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: landerl
 audience: admin
 description: Usare queste indicazioni per informazioni sui prerequisiti e sulle dipendenze ambientali per la distribuzione di Teams nell'organizzazione
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - CSH
@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 66a0bdeac2830fc6a3ebe9f5eae2f382187f384538f2d57c9cf27b56fbdd651a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 3ade37518da516d219c3c54fd0ce4a280720c373
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54323748"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631150"
 ---
 # <a name="prerequisites-and-environmental-dependencies-for-teams"></a>Prerequisiti e dipendenze ambientali per Teams
 
@@ -36,7 +36,7 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Teams combina più Microsoft 365 e Office 365 e quindi dipende dall'implementazione e dal funzionamento corretti di questi servizi. Questi servizi includono, ma non solo, SharePoint Online, Exchange Online e OneDrive for Business.
+Teams combina più servizi Microsoft 365 e Office 365 e quindi dipende dall'implementazione e dal funzionamento corretti di questi servizi. Questi servizi includono, ma non solo, SharePoint Online, Exchange Online e OneDrive for Business.
 
 Anche se non tutti i servizi sono necessari, è consigliabile implementarli tutti. Se si sceglie di non implementare determinati servizi, questo influirà sulle funzionalità che Teams offrire all'organizzazione. Ad esempio, anche se non è necessario implementare SharePoint Online, Teams si basa su SharePoint Online per determinate funzionalità, ad esempio la condivisione di file nelle conversazioni di gruppo, quindi la non implementazione di questo servizio ridurrà le funzionalità offerte dal client.
 
@@ -56,7 +56,7 @@ Vedere gli articoli seguenti per informazioni sui prerequisiti e su come Teams c
 
 - Se l'organizzazione è un istituto di istruzione e si usa un sistema di informazioni degli studenti, vedere Benvenuto in [Microsoft School Data Sync](/schooldatasync) prima della distribuzione Microsoft Teams.
 
-- Se l'organizzazione sta valutando le opzioni per le chiamate PSTN (Public Switched Telephone Network), vedere Connettività vocale - Sistema telefonico e [PSTN](cloud-voice-landing-page.md) [,](calling-plan-landing-page.md)Quale piano per le chiamate è giusto per te e Sistema telefonico [Routing diretto](direct-routing-landing-page.md).
+- Se l'organizzazione sta valutando le opzioni per le chiamate PSTN (Public Switched Telephone Network), vedere Connettività vocale - Sistema telefonico e [PSTN](cloud-voice-landing-page.md) [,](calling-plan-landing-page.md)Quale piano per le chiamate è giusto per te e Sistema telefonico [Direct Routing](direct-routing-landing-page.md).
 
 - Per assicurarsi che tutti i requisiti di rete siano stati soddisfatti prima della distribuzione Teams, vedere Preparare la rete [dell'organizzazione](prepare-network.md)per Microsoft Teams .
 

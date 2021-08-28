@@ -9,20 +9,20 @@ ms.topic: quickstart
 ms.service: msteams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 ms.assetid: ''
-description: Leggere questo argomento per informazioni su come eseguire la migrazione dei dispositivi di Lync Room System per usare Microsoft Teams Rooms software.
+description: Leggere questo argomento per informazioni su come eseguire la migrazione dei dispositivi di Lync Room System per usare il software Microsoft Teams Rooms lync.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: a700e66a966035b52a3036210e39c09612ed18b5df34430545987c51c40575f8
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 98604c36a987dde15633e9d9b1a3a283c0f36fa2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54301072"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608823"
 ---
-# <a name="migrate-lync-room-system-lrs-devices-to-microsoft-teams-rooms"></a>Eseguire la migrazione di dispositivi Lync Room System (LRS) a Microsoft Teams Rooms
+# <a name="migrate-lync-room-system-lrs-devices-to-microsoft-teams-rooms"></a>Eseguire la migrazione dei dispositivi LRS (Lync Room System) a Microsoft Teams Rooms
 
 I dispositivi Lync Room System (LRS) con Skype Room System versione 1 (SRS v1) hanno raggiunto la fine del supporto il 9 ottobre [2018.](https://support.microsoft.com/help/4043450/products-reaching-end-of-support-for-2018) Questo vuol dire che il software Skype Room Systems v1 non otterrà più aggiornamenti di prodotto o correzioni. I clienti con dispositivi Lync Room System che usano software Skype Room System v1 sono invitati ad aggiornare i dispositivi a Microsoft Teams Rooms.
 
@@ -53,7 +53,7 @@ I clienti esistenti di Crestron RL2 (noto anche come Crestron RL200) possono acq
 
 ### <a name="smart-room-systems-upgrade"></a>Aggiornamento di SMART Room Systems
 
-Per i clienti SMART LRS, oltre al programma di scambio hardware Crestron, SMART sta lavorando anche alla fornitura di una soluzione per l'aggiornamento a Microsoft Teams Rooms. Questo aggiornamento verrà fornito da SMART Technologies Inc. al cliente in base al supporto del prodotto. Per saperne di più, [consulta qui.](https://support.smarttech.com/docs/hardware/room-systems-skype/srs-skype-v2/en/about/default.cshtml)
+Per i clienti SMART LRS, oltre al programma di scambio hardware Crestron, SMART sta anche lavorando alla fornitura di una soluzione per l'aggiornamento a Microsoft Teams Rooms. Questo aggiornamento verrà fornito da SMART Technologies Inc. al cliente in base al supporto del prodotto. Per saperne di più, [consulta qui.](https://support.smarttech.com/docs/hardware/room-systems-skype/srs-skype-v2/en/about/default.cshtml)
 
 
 ## <a name="what-should-you-do"></a>Cosa si deve fare?
@@ -62,4 +62,4 @@ Per i clienti SMART LRS, oltre al programma di scambio hardware Crestron, SMART 
 
 
 > [!NOTE]
-> Microsoft Teams Rooms software supporta il protocollo TLS 1.2 a partire dal 14 dicembre 2018 con la versione 4.0.64.0 dell'app. Per i clienti locali, l'abilitazione delle comunicazioni tramite TLS 1.2 per Microsoft Teams Rooms richiede Skype for Business Server 2015 l'aggiornamento cumulativo 9 (CU9) o Skype for Business Server 2019 aggiornamento cumulativo 1 (CU1). La modifica non dovrebbe influire sui clienti Skype for Business online, in quanto le modifiche dei clienti sono conformi alle versioni precedenti e in avanti.
+> Microsoft Teams Rooms software supporta il protocollo TLS 1.2 a partire dal 14 dicembre 2018 con la versione 4.0.64.0 dell'app. Per i clienti locali, l'abilitazione delle comunicazioni tramite TLS 1.2 per Microsoft Teams Rooms richiede Skype for Business Server 2015 l'aggiornamento cumulativo 9 (CU9) o Skype for Business Server 2019 cumulativo 1 (CU1). La modifica non dovrebbe influire sui clienti Skype for Business online, in quanto le modifiche apportate ai clienti sono conformi in avanti e indietro.

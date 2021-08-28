@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: article
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -16,16 +16,16 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare e connettere il servizio SBC a Sistema telefonico routing diretto.
-ms.openlocfilehash: 46eabb56056526032d45669f0faf12fecf1762e10a1ee020dd9de9be17bff74e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 97b3bc7df52a431f1b3c64edaf7767b242838c22
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54327751"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58608993"
 ---
 # <a name="connect-your-session-border-controller-sbc-to-direct-routing"></a>Connessione da Session Border Controller (SBC) a Direct Routing
 
-Questo articolo descrive come configurare un session border controller (SBC) e connetterlo a Sistema telefonico Direct Routing.  Questo è il passaggio 1 della procedura seguente per configurare il routing diretto:
+Questo articolo descrive come configurare un session border controller (SBC) e connetterlo a Sistema telefonico routing diretto.  Questo è il passaggio 1 della procedura seguente per configurare il routing diretto:
 
 - **Passaggio 1. Connessione SBC con Sistema telefonico e convalidare la connessione** (questo articolo)
 - Passaggio 2. [Abilitare gli utenti per il routing diretto](direct-routing-enable-users.md)
@@ -34,7 +34,7 @@ Questo articolo descrive come configurare un session border controller (SBC) e c
 
 Per informazioni su tutti i passaggi necessari per configurare il routing diretto, vedere [Configurare il routing diretto.](direct-routing-configure.md)
 
-È possibile usare [l'interfaccia Microsoft Teams o](#using-the-microsoft-teams-admin-center) [PowerShell](#using-powershell) per configurare e connettere un SBC al routing diretto.
+È possibile usare [l'Microsoft Teams di amministrazione](#using-the-microsoft-teams-admin-center) o [PowerShell](#using-powershell) per configurare e connettere un SBC al routing diretto.
 
 ## <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
@@ -76,9 +76,9 @@ Function       Remove-CsOnlinePSTNGateway 1.0        tmp_v5fiu1no.wxt
 Function       Set-CsOnlinePSTNGateway    1.0        tmp_v5fiu1no.wxt
 </pre>
 
-### <a name="connect-the-sbc-to-the-tenant"></a>Connessione SBC al tenant
+### <a name="connect-the-sbc-to-the-tenant"></a>Connessione il database SBC al tenant
 
-Usare il cmdlet [New-CsOnlinePSTNGateway](/powershell/module/skype/new-csonlinepstngateway) per connettere il database SBC al tenant. In una sessione di PowerShell digitare quanto segue e quindi premere INVIO:
+Usare il cmdlet [New-CsOnlinePSTNGateway](/powershell/module/skype/new-csonlinepstngateway) per connettere SBC al tenant. In una sessione di PowerShell digitare quanto segue e quindi premere INVIO:
 
 ```PowerShell
 New-CsOnlinePSTNGateway -Fqdn <SBC FQDN> -SipSignalingPort <SBC SIP Port> -MaxConcurrentSessions <Max Concurrent Sessions the SBC can handle> -Enabled $true
@@ -86,7 +86,7 @@ New-CsOnlinePSTNGateway -Fqdn <SBC FQDN> -SipSignalingPort <SBC SIP Port> -MaxCo
 
   > [!NOTE]
   > 1. È consigliabile impostare un limite massimo per le chiamate in SBC usando le informazioni disponibili nella documentazione di SBC. Il limite attiverà una notifica se il valore SBC è a livello di capacità.
-  > 2. È possibile connettere il servizio SBC solo se la parte del dominio del relativo FQDN corrisponde a uno dei domini registrati nel tenant, ad eccezione di \* onmicrosoft.com. \*L'uso di onmicrosoft.com di dominio non è supportato per il nome FQDN SBC. Ad esempio, se si hanno due nomi di dominio, **contoso**.com e **contoso**.onmicrosoft.com, è possibile usare sbc.contoso.com per il nome SBC. Se si prova a connettere SBC con un nome come sbc.contoso.abc, il sistema non lo consente, perché il dominio non è di proprietà di questo tenant.<br/>
+  > 2. È possibile connettere SBC solo se la parte del dominio del relativo FQDN corrisponde a uno dei domini registrati nel tenant, ad eccezione di \* onmicrosoft.com. \*L'uso onmicrosoft.com nomi di dominio non è supportato per il nome FQDN SBC. Ad esempio, se si hanno due nomi di dominio, **contoso**.com e **contoso**.onmicrosoft.com, è possibile usare sbc.contoso.com per il nome SBC. Se si prova a connettere SBC con un nome come sbc.contoso.abc, il sistema non lo consente, perché il dominio non è di proprietà di questo tenant.<br/>
   > Oltre al dominio registrato nel tenant, è importante che ci sia un utente con quel dominio e una licenza E3 o E5 assegnata. In caso contrario, verrà visualizzato l'errore seguente:<br/>
   `Can not use the "sbc.contoso.com" domain as it was not configured for this tenant`.
 
@@ -166,9 +166,9 @@ Questa tabella elenca le opzioni che è possibile impostare per SBC nell'interfa
 |No|**Opzioni di invio SIP**|SendSIPOptions |Definisce se SBC invierà messaggi di opzioni SIP. È consigliabile attivare questa impostazione. Quando questa impostazione è disattivata, SBC viene escluso dal sistema di monitoraggio e avviso.|Vero|Vero<br/>Falso|Boolean|
 |No|**Cronologia chiamate inoltrate**|ForwardCallHistory |Indica se le informazioni della cronologia chiamate vengono inoltrate tramite il trunk. Quando si attiva questa opzione, il proxy Microsoft 365 o Office 365 invia un'intestazione History-info e Referred-by. |Falso|Vero<br/>Falso|Boolean|
 |No|**Intestazione Forward P-Asserted-identity (PAI)**|ForwardPAI|Indica se l'intestazione PAI viene inoltrata insieme alla chiamata. L'intestazione PAI consente di verificare l'identità del chiamante. Se questa impostazione è attivata, viene inviata anche l'intestazione Privacy:ID.|Falso|Vero<br/>Falso|Boolean|
-|No|**Capacità delle chiamate simultanee**|MaxConcurrentSessions |Quando si imposta un valore, il sistema di avvisi avvisa l'utente quando il numero di sessioni simultanee è del 90% o superiore a questo valore. Se non si imposta un valore, gli avvisi non vengono generati. Tuttavia, il sistema di monitoraggio segnala il numero di sessioni simultanee ogni 24 ore. |Null|Null<br/>Da 1 a 100.000 ||
-|No|**Codici di risposta di failover**|FailoverResponseCodes<br>|Se Routing diretto riceve un codice di errore SIP 4xx o 6xx in risposta a un invito in uscita, la chiamata viene considerata completata per impostazione predefinita. In uscita significa una chiamata da un client Teams alla rete PSTN con flusso di traffico: Teams client -> Direct Routing -> SBC -> telephony network). Quando si specifica un codice di risposta di failover, il routing diretto forza il routing diretto a provare un altro SBC (se esiste un altro SBC nei criteri di routing vocale dell'utente) quando riceve i codici specificati se SBC non è in grado di effettuare una chiamata a causa di problemi di rete o di altro tipo. Per altre informazioni, vedere Failover di codici SIP specifici [ricevuti da Session Border Controller (SBC).](direct-routing-trunk-failover-on-outbound-call.md)|408, 503, 504||Int|
-|No|**Tempi di failover (secondi)**|FailoverTimeSeconds |Quando si imposta un valore, le chiamate in uscita a cui il gateway non risponde entro il tempo impostato vengono instradati al successivo trunk disponibile. Se non sono presenti altri trunk, la chiamata viene automaticamente interrotta. Il valore predefinito è 10 secondi. In un'organizzazione con reti lente e risposte gateway, questo potrebbe comportare l'inutilmente dell'annullamento delle chiamate.|10|Numero|Int|
+|No|**Capacità delle chiamate simultanee**|MaxConcurrentSessions |Quando si imposta un valore, il sistema di avvisi avvisa quando il numero di sessioni simultanee è del 90% o superiore a questo valore. Se non si imposta un valore, gli avvisi non vengono generati. Tuttavia, il sistema di monitoraggio segnala il numero di sessioni simultanee ogni 24 ore. |Null|Null<br/>Da 1 a 100.000 ||
+|No|**Codici di risposta di failover**|FailoverResponseCodes<br>|Se Routing diretto riceve un codice di errore SIP 4xx o 6xx in risposta a un invito in uscita, la chiamata viene considerata completata per impostazione predefinita. In uscita significa una chiamata da un client Teams alla rete PSTN con flusso di traffico: Teams client -> Routing diretto -> SBC -> rete di telefonia). Quando si specifica un codice di risposta di failover, il routing diretto forza il routing diretto a provare un altro SBC (se esiste un altro SBC nei criteri di routing vocale dell'utente) quando riceve i codici specificati se SBC non è in grado di effettuare una chiamata a causa di problemi di rete o di altro tipo. Per altre informazioni, vedere Failover di codici SIP specifici [ricevuti da Session Border Controller (SBC).](direct-routing-trunk-failover-on-outbound-call.md)|408, 503, 504||Int|
+|No|**Tempi di failover (secondi)**|FailoverTimeSeconds |Quando si imposta un valore, le chiamate in uscita a cui il gateway non risponde entro il tempo impostato vengono instradati al successivo trunk disponibile. Se non sono presenti altri trunk, la chiamata viene automaticamente interrotta. Il valore predefinito è 10 secondi. In un'organizzazione con reti lente e risposte gateway, questo potrebbe causare l'inutilmente l'annullamento delle chiamate.|10|Numero|Int|
 |No|**Paese o area geografica preferita per il traffico multimediale**|MediaRelayRoutingLocationOverride |Da usare per impostare manualmente il paese o l'area geografica preferita per il traffico multimediale. È consigliabile impostare questa opzione solo se i registri delle chiamate indicano chiaramente che l'assegnazione predefinita del data center per il percorso multimediale non usa il percorso più vicino al data center SBC. Per impostazione predefinita, Routing diretto assegna un data center in base all'indirizzo IP pubblico del SBC e seleziona sempre il percorso più vicino al data center SBC. Tuttavia, in alcuni casi, il percorso predefinito potrebbe non essere il percorso ottimale. Questo parametro consente di impostare manualmente l'area preferita per il traffico multimediale. |Nessuno|Codici paese in formato ISO||
 |No|**SBC supporta PIDF/LO per le chiamate di emergenza**|PidfloSupported|Specificare se SBC supporta l'oggetto Posizione formato dati informazioni presenza (PIDF/LO) per le chiamate di emergenza.||||
 |No| - |MediaBypass|Questa impostazione indica se SBC supporta il bypass multimediale e se si vuole usarlo per questo SBC. |Nessuno|Vero<br/>Falso|Boolean|

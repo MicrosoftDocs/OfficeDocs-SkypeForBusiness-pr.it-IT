@@ -16,7 +16,7 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 ROBOTS: NOINDEX, NOFOLLOW
 f1.keywords:
 - NOCSH
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per il Brasile.
-ms.openlocfilehash: 28e6d3fc8d829b13cce5212a93ac70a4508ed049f532c4e175fd85e3ddbef171
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 68379b9c48ed70f590eb3d57a171a6af9f4042be
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54308935"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58609043"
 ---
 # <a name="availability-in-brazil"></a>Disponibilità in Brasile
 

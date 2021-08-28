@@ -12,21 +12,21 @@ f1.keywords:
 ms.custom:
 - ms.lync.lscp.PersistentChatCategory
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 6875d930-7502-4e47-bdb3-45eaeb065350
 description: È possibile utilizzare la sezione Categoria della pagina Persistent Chat per configurare le categorie. Una categoria di chat persistente è una struttura logica per l'organizzazione delle chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso per il controllo degli utenti e dei gruppi di utenti che possono creare chat room o prendervi parte. Le categorie possono essere usate per applicare gli ethical wall tra le varie suddivisioni all'interno delle organizzazioni.
-ms.openlocfilehash: 009cc7ef5cd35b7637f687043a0a5c5ddd24fa2f228c95a8bb4660b4c9140b47
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: be326978d25039e095e8d679b40194f7468f7a8e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54299822"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58630970"
 ---
 # <a name="persistent-chat-category"></a>Categoria di Chat persistente
  
 È possibile utilizzare la **sezione Categoria** della pagina **Persistent Chat** per configurare le categorie. Una categoria di chat persistente è una struttura logica per l'organizzazione delle chat room. Una categoria definisce un insieme predefinito di elenchi di controllo di accesso per il controllo degli utenti e dei gruppi di utenti che possono creare chat room o prendervi parte. Le categorie possono essere usate per applicare gli ethical wall tra le varie suddivisioni all'interno delle organizzazioni.
   
-Le categorie di chat room possono contenere chat room, ma non altre categorie. Ogni categoria descrive il contenuto con metadati, ad esempio _Name_ e _Description._ Inoltre, la categoria dispone di proprietà che possono essere impostate per controllare il comportamento delle  chat room ad essa appartenenti, ad esempio se le chat room consentono inviti o caricamenti _di file_ o contengono Cronologia _chat._
+Le categorie di chat room possono contenere chat room, ma non altre categorie. Ogni categoria descrive il contenuto con metadati, ad esempio _Name_ e _Description._ Inoltre, la categoria dispone di proprietà che possono essere impostate per controllare il comportamento delle  chat room ad essa appartenenti, ad esempio se le chat room consentono inviti o caricamenti _file_ o contengono Cronologia _chat._
   
 Per creare una nuova categoria, vedere [Manage categories in Persistent Chat Server in Skype for Business Server 2015.](../../manage/persistent-chat/categories.md) Gli amministratori di Persistent Chat possono creare categorie utilizzando il Pannello di controllo o Windows PowerShell cmdlet.
   

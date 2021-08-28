@@ -8,7 +8,7 @@ ms.service: msteams
 ms.reviewer: rowille
 audience: admin
 description: Questo articolo illustra come pianificare l'implementazione delle funzionalità di governance in Teams.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f55183b114919048776b7fcb6f39ae6a084c29832652c32f87b97d258fb7f835
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 96052f270bb0b4a9c5a9da94131e55abf314fbf4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54293073"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58631280"
 ---
 # <a name="plan-for-governance-in-teams"></a>Pianificare la governance in Teams
 
@@ -40,7 +40,7 @@ L'organizzazione potrebbe richiedere l'implementazione di controlli rigorosi sul
 |-        |-        |-        |
 |---------|---------|---------|
 |<img src="media/audio_conferencing_image7.png" alt= "An icon depicting decision points"/>  |Punti decisionali|<ul><li>L'organizzazione richiede una convenzione di denominazione specifica per i team?</li><li>I creatori di team hanno bisogno della possibilità di assegnare classificazioni specifiche dell'organizzazione ai team?</li><li>È necessario limitare la possibilità di aggiungere guest ai team in base al team?</li><li>L'organizzazione richiede di limitare gli utenti che possono creare team?</li></ul>|
-|<img src="media/audio_conferencing_image9.png" alt= "An icon depicting the next steps"/>|Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la creazione, la denominazione, la classificazione e l'accesso guest del team.</li><li>Pianificare l'implementazione di questi requisiti come parte dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento previsto.</li></ul>|
+|<img src="media/audio_conferencing_image9.png" alt= "An icon depicting the next steps"/>|Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la creazione, la denominazione, la classificazione e l'accesso guest del team.</li><li>Pianificare l'implementazione di questi requisiti come parte dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento che possono aspettarsi.</li></ul>|
 
 > [!NOTE]
 > Per pianificare in anticipo, [altre informazioni sull'impostazione di questi criteri e sulle licenze necessarie.](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#template-settings)
@@ -70,7 +70,7 @@ L'organizzazione potrebbe avere requisiti aggiuntivi per l'impostazione di crite
 |-          |-           |
 |-----------|------------|
 | ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede di specificare una data di scadenza per i team?</li><li>L'organizzazione richiede l'applicazione di criteri di conservazione dei dati specifici ai team?</li><li>L'organizzazione prevede di richiedere la possibilità di archiviare i team inattivi per mantenere il contenuto in uno stato di sola lettura?</li></ul>|
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la scadenza del team, la conservazione dei dati e l'archiviazione.</li><li>Pianificare l'implementazione di questi requisiti nell'ambito dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento previsto.</li></ul>|
+| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per la scadenza del team, la conservazione dei dati e l'archiviazione.</li><li>Pianificare l'implementazione di questi requisiti nell'ambito dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento che possono aspettarsi.</li></ul>|
 
 > [!TIP]
 > Usare la tabella seguente per acquisire i requisiti dell'organizzazione.
@@ -82,7 +82,7 @@ L'organizzazione potrebbe avere requisiti aggiuntivi per l'impostazione di crite
 |Archiviare e ripristinare |Archiviare un team quando non è più attivo, ma si vuole tenerlo in giro per riferimento o per riattivarlo in futuro. |No |TBD |
 
 > [!Note]
-> La scadenza del gruppo è una Azure AD Premium caratteristica. Perché questa funzionalità sia disponibile, il tenant deve avere un abbonamento a Azure AD Premium e licenze per l'amministratore che configura le impostazioni e i membri dei gruppi interessati.
+> La scadenza del gruppo è una Azure AD Premium caratteristica. Per la disponibilità di questa caratteristica, il tenant deve avere un abbonamento a Azure AD Premium e licenze per l'amministratore che configura le impostazioni e i membri dei gruppi interessati.
 
 #### <a name="additional-information"></a>Informazioni aggiuntive
 
@@ -96,9 +96,9 @@ Per indicazioni tecniche su come implementare queste impostazioni, vedere:
 
 ## <a name="group-and-team-membership-management"></a>Gestione dell'appartenenza a gruppi e team
 
-La gestione coerente dei membri di gruppi basati su progetti o con restrizioni è necessaria per i team che richiedono l'onboarding rapido e l'offboarding o gli utenti e gli utenti guest. L'organizzazione potrebbe anche dover verificare che tutti i membri correnti hanno la giustificazione aziendale per far parte di un team. La gestione dei membri può essere difficile perché i proprietari dei team possono andarsene e gli utenti in genere non lasciano i gruppi di propria iniziativa al termine di un progetto o quando cambiano ruolo. Il modo migliore per gestire l'appartenenza ai gruppi che consente agli utenti di accedere quando necessario, assicurando però che il gruppo non abbia il rischio di un accesso inappropriato, è attraverso due processi distrettuale: gestione dei diritti e revisione dell'accesso.
+La gestione coerente dei membri di gruppi basati su progetti o con restrizioni è necessaria per i team che richiedono l'onboarding rapido e l'offboarding o gli utenti e gli utenti guest. L'organizzazione potrebbe anche dover verificare che tutti i membri correnti hanno la motivazione aziendale per far parte di un team. La gestione dei membri può essere difficile perché i proprietari dei team possono andarsene e gli utenti in genere non lasciano i gruppi di propria iniziativa al termine di un progetto o quando cambiano ruolo. Il modo migliore per gestire l'appartenenza ai gruppi che consente agli utenti di accedere quando necessario, assicurando però che il gruppo non abbia il rischio di un accesso inappropriato, è attraverso due processi distrettuale: la gestione dei diritti e le revisioni dell'accesso.
 
-[La gestione](/azure/active-directory/governance/entitlement-management-overview) dei diritti consente di delegare a qualcuno, ad esempio un project manager, di raccogliere tutte le risorse necessarie, incluse le appartenenze ai team, in un unico pacchetto. Possono anche definire chi può effettuare richieste: utenti nel tenant o da altre organizzazioni connesse. Il project manager riceverà le richieste di accesso nella posta elettronica e approverà o rifiuta le richieste nel portale MyAccess. Gli amministratori possono configurare le condizioni di accesso in modo da includere una data o un periodo di scadenza entro il momento in cui l'utente o il guest verrà rimosso dal team a meno che l'accesso non venga rinnovato. Gli amministratori possono anche configurare i gruppi associati ai team per partecipare alle revisioni di accesso. Per [le revisioni di](/azure/active-directory/governance/access-reviews-overview)accesso, i proprietari del gruppo riceveranno regolarmente promemoria per rivedere i membri di un team. Le revisioni di Access includono suggerimenti, che semplificano l'esecuzione del normale processo di attestazione da parte dei proprietari dei gruppi.
+[La gestione](/azure/active-directory/governance/entitlement-management-overview) dei diritti consente di delegare a qualcuno, ad esempio un project manager, di raccogliere tutte le risorse necessarie, incluse le appartenenze ai team, in un unico pacchetto. Possono anche definire chi può effettuare richieste: utenti nel tenant o da altre organizzazioni connesse. Il project manager riceverà le richieste di accesso tramite posta elettronica e approverà o rifiuta le richieste nel portale MyAccess. Gli amministratori possono configurare le condizioni di accesso in modo da includere una data o un periodo di scadenza entro il momento in cui l'utente o il guest verrà rimosso dal team a meno che l'accesso non venga rinnovato. Gli amministratori possono anche configurare i gruppi associati ai team per partecipare alle revisioni di accesso. Per [le revisioni di](/azure/active-directory/governance/access-reviews-overview)accesso, i proprietari del gruppo riceveranno regolarmente promemoria per rivedere i membri di un team. Le revisioni di Access includono suggerimenti, che semplificano l'esecuzione del normale processo di attestazione da parte dei proprietari dei gruppi.
 
 |-|-|-|
 |:-|:-|:-|
@@ -130,8 +130,8 @@ Un altro aspetto importante della governance e della gestione del ciclo di Teams
 
 |-        |-        |
 |---------|---------|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede la limitazione delle Teams per l'intero tenant?</li><li>L'organizzazione richiede la limitazione delle Teams per utenti specifici?</li></ul>|
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per limitare Teams caratteristiche a livello di tenant e utente.</li><li>Pianificare l'implementazione di requisiti specifici nell'ambito dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento previsto.</li></ul>|
+| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>L'organizzazione richiede la limitazione delle Teams per l'intero tenant?</li><li>L'organizzazione richiede la limitazione Teams caratteristiche per utenti specifici?</li></ul>|
+| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare i requisiti dell'organizzazione per limitare Teams caratteristiche a livello di tenant e utente.</li><li>Pianificare l'implementazione di requisiti specifici nell'ambito dell'Teams distribuzione.</li><li>Comunicare e pubblicare i criteri per informare Teams utenti del comportamento che possono aspettarsi.</li></ul>|
 
 ### <a name="teams-feature-management-focus-areas"></a>Teams focus sulla gestione delle funzionalità
 
