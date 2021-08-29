@@ -7,19 +7,19 @@ audience: Admin
 ms.topic: article
 ms.service: msteams
 ms.reviewer: kblevens
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sulle funzionalità Teams e Outlook di integrazione della posta elettronica, incluse le funzionalità che consentono agli utenti di condividere informazioni tra la posta elettronica in Outlook e le conversazioni di chat o canali in Teams.
 ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 4501ff85e63091dd0fee8fba39df43b4e4936eabd57c224eff1fdaa518566fab
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: bcc9d8c4ed101017206e086a2282679ec698df27
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54299026"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634820"
 ---
 # <a name="teams-and-outlook-email-integration"></a>Teams e Outlook di posta elettronica
 
@@ -31,14 +31,14 @@ Microsoft Teams include funzionalità che consentono agli utenti dell'organizzaz
 
 ![Screenshot che mostra la caratteristica Condividi in Outlook in Teams](media/share-to-outlook.png)
 
-Per usare questa funzionalità, Outlook sul web deve essere attivata per l'utente. Se Outlook sul web è disattivata,  l'opzione Condividi su Outlook non viene visualizzata in Teams per l'utente. Per istruzioni su come attivare e disattivare le Outlook sul web, vedere Abilitare o disabilitare le Outlook sul web [per una cassetta postale.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
+Per usare questa funzionalità, Outlook sul web deve essere attivata per l'utente. Se Outlook sul web è disattivata,  l'opzione Condividi su Outlook non viene visualizzata in Teams per l'utente. Per informazioni su come attivare e disattivare le Outlook sul web, vedere Abilitare o disabilitare le Outlook sul web [per una cassetta postale.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
 
 ## <a name="actionable-activity-emails"></a>Messaggi di posta elettronica di attività utilizzabili
 
 Gli utenti ottengono automaticamente messaggi di posta elettronica di attività perse che li aiutano a recuperare le conversazioni perse in Teams. I messaggi di posta elettronica delle attività perse mostrano le risposte più recenti di  una conversazione, inclusi i messaggi inviati dopo il messaggio perso, e gli utenti possono fare clic su Rispondi per rispondere direttamente dall'interno Outlook. Per altre informazioni, vedere [Rispondere ai messaggi di posta](https://support.office.com/article/reply-to-missed-activity-emails-from-outlook-bc0cf587-db26-4946-aac7-8eebd84f1381)elettronica delle attività perse Outlook . 
 
 > [!NOTE]
-> Questa caratteristica non è supportata in Outlook per Mac o in alcune versioni precedenti di Outlook per Windows. Per altre informazioni, vedere [Messaggi utilizzabili in](/outlook/actionable-messages/)Outlook e Office 365 gruppi .
+> Questa caratteristica non è supportata in Outlook per Mac o in alcune versioni precedenti di Outlook per Windows. Per altre informazioni, vedere [Messaggi utilizzabili in Outlook e Office 365 gruppi](/outlook/actionable-messages/).
 
 ![Screenshot che mostra un messaggio di posta elettronica di un'attività persa](media/missed-activity-email.png)
 

@@ -10,7 +10,7 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 description: Usare i criteri di conservazione per Microsoft Teams per mantenere i messaggi che l’organizzazione deve archiviare per conformarsi ai criteri interni, alle normative di settore o alle esigenze legali e per eliminare i messaggi considerati una responsabilità o che non hanno alcun valore legale aziendale.
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a122bd1d0bb3c8cba450293b43f7532f36c510831bd301ed30d9955a9a1f8d31
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1385f190c0bcf35c89576695911853c88ef7d1d1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54296693"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634840"
 ---
 # <a name="manage-retention-policies-for-microsoft-teams"></a>Gestire i criteri di conservazione per Microsoft Teams
 
@@ -73,7 +73,7 @@ Ad esempio, per i messaggi di canale standard: creare un criterio di conservazio
 
 ## <a name="create-and-manage-retention-policies-for-teams"></a>Creare e gestire i criteri di conservazione per Teams
 
-Per creare o modificare un criterio di conservazione per Teams messaggi, seguire le istruzioni fornite in Criteri di conservazione per Teams [percorsi.](/microsoft-365/compliance/create-retention-policies#retention-policy-for-teams-locations)
+Per creare o modificare un criterio di conservazione per Teams messaggi, seguire le istruzioni fornite da Criteri di conservazione per Teams [percorsi.](/microsoft-365/compliance/create-retention-policies#retention-policy-for-teams-locations)
 
 Questa pagina contiene informazioni aggiuntive sulla creazione e sulla gestione dei criteri di conservazione per altri carichi di lavoro in Microsoft 365. Ad esempio, è possibile creare anche un criterio di conservazione per Gruppi di Microsoft 365 per conservare ed eliminare i file a cui si accede in Teams e archiviati in OneDrive o SharePoint.  
 

@@ -9,22 +9,22 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: f3f04d81-8a1f-427f-bd0f-fb659024e096
 description: 'Riepilogo: gestire le impostazioni di configurazione del servizio Web in Skype for Business Server.'
-ms.openlocfilehash: a4fb1474655e695f030180a7345375ef1a1e53e3aaadad18167ed7d41d3a9864
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: f007a93eb71fc015f71ddef51011008315de82e9
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54328161"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58633610"
 ---
 # <a name="manage-web-service-configuration-settings-in-skype-for-business-server"></a>Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server
  
 **Riepilogo:** Gestire le impostazioni di configurazione del servizio Web in Skype for Business Server.
   
-È possibile utilizzare la **pagina Servizio Web** per configurare i metodi di autenticazione per Skype for Business Server server Web e servizi Web correlati.
+È possibile utilizzare la **pagina Servizio Web** per configurare i metodi di autenticazione per l'accesso Skype for Business Server server Web e servizi Web correlati.
   
 Seguire questa procedura per creare un nuovo criterio servizio Web.
   
@@ -42,7 +42,7 @@ Seguire questa procedura per creare un nuovo criterio servizio Web.
     
    - Per configurare il servizio Web per un pool, fare clic su **Configurazione pool.** In **Selezionare un servizio** fare clic sul servizio a cui verrà applicato il criterio servizio Web e fare clic su **OK.** 
     
-5. In **Nuova impostazione servizio Web,** in Autenticazione **Windows**, selezionare Negozia **,** Autenticazione **Windows** integrata o **Nessuna**.
+5. In **Nuova impostazione servizio Web,** in Autenticazione **Windows,** **selezionare** **Negozia,** Autenticazione Windows integrata o **Nessuna.**
     
 6. Selezionare una o più delle opzioni seguenti in base alle capacità dei client e al supporto nell'ambiente:
     
@@ -56,7 +56,7 @@ Seguire questa procedura per creare un nuovo criterio servizio Web.
     
 ## <a name="modify-existing-web-service-configuration-settings"></a>Modificare le impostazioni di configurazione del servizio Web esistenti
 
-È possibile utilizzare la **pagina Servizio Web** per configurare i metodi di autenticazione per Skype for Business Server server Web e servizi Web correlati.
+È possibile utilizzare la **pagina Servizio Web** per configurare i metodi di autenticazione per l'accesso Skype for Business Server server Web e servizi Web correlati.
   
 Eseguire la procedura seguente per modificare i criteri per un servizio Web esistente.
   
@@ -102,7 +102,7 @@ Seguire questa procedura per eliminare le impostazioni di configurazione del ser
     
 ## <a name="deleting-web-service-configuration-settings-by-using-windows-powershell-cmdlets"></a>Eliminazione di Impostazioni di configurazione del servizio Web tramite Windows PowerShell cmdlet
 
-È possibile eliminare le impostazioni di configurazione del servizio Web utilizzando Windows PowerShell e il cmdlet **Remove-CsWebServiceConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
+È possibile eliminare le impostazioni di configurazione del servizio Web utilizzando Windows PowerShell e il cmdlet **Remove-CsWebServiceConfiguration.** È possibile eseguire questo cmdlet da Skype for Business Server Management Shell o da una sessione remota di Windows PowerShell. Per informazioni dettagliate sull'Windows PowerShell remoto per connettersi a Skype for Business Server, vedere l'articolo del blog ["Guida introduttiva: Gestione di Microsoft Lync Server 2010 tramite Remote PowerShell".](https://go.microsoft.com/fwlink/p/?linkId=255876) Il processo è lo stesso in Skype for Business Server.
   
 ### <a name="to-delete-a-specific-collection-of-web-service-configuration-settings"></a>Per eliminare una raccolta specifica di impostazioni di configurazione di servizi Web
 

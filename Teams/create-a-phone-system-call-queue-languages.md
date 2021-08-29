@@ -1,5 +1,5 @@
 ---
-title: Microsoft Teams lingue supportate per la coda di chiamata
+title: Microsoft Teams lingue supportate dalla coda di chiamata
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -15,20 +15,20 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: Microsoft Teams lingue supportate per la coda di chiamata
-ms.openlocfilehash: dd16ef64facfca51d8d2a456d1e5bba877e1e1c0
-ms.sourcegitcommit: 97c2faab08ec9b8fc9967827883308733ec162ea
+description: Microsoft Teams lingue supportate dalla coda di chiamata
+ms.openlocfilehash: 775b8c01f2638ffb2e13c25edf265f9abdd65989
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "58233081"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634860"
 ---
-# <a name="microsoft-teams-call-queue-supported-languages"></a>Microsoft Teams lingue supportate per la coda di chiamata
+# <a name="microsoft-teams-call-queue-supported-languages"></a>Microsoft Teams lingue supportate dalla coda di chiamata
 
 La coda di chiamata supporta le lingue seguenti per la sintesi vocale :The call queue supports the following languages for Text to Speech (TTS):
 

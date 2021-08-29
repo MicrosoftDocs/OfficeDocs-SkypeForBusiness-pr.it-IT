@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddPersistentChatBackupSqlStorePage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 106698e4-ce73-4a34-8fc7-e9d3208a17dc
 description: Configurare gli archivi SQL Server backup che forniranno database di backup per il server Chat persistente o il pool di server Chat persistente.
-ms.openlocfilehash: c62cf2114d2a982e70aa6218b90109d7fafcea2f85abf9aff5bfd155a5ddef76
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: dabfa09b84afef71b5c887ad3bde48486814538b
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302560"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627998"
 ---
 # <a name="add-persistent-chat-backup-sql-server-store"></a>Aggiungere l'archivio SQL Server di backup per Chat persistente
  
@@ -32,7 +32,7 @@ Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una 
   
 Selezionare la **casella di controllo Abilita mirroring** SQL Server archivio per configurare un database di SQL Server e un'istanza facoltativa che fornirà un database con mirroring per i dati di backup di Persistent Chat.
   
-Selezionare nell'elenco **Mirroring SQL Server archiviare** un'SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per il backup di Persistent Chat SQL Server.
+Selezionare nell'elenco **Mirroring SQL Server archiviare** un SQL Server e un'istanza facoltativa per fungere da mirror SQL Server per il backup di Persistent Chat SQL Server.
   
 Fare **clic su** Nuovo per definire una nuova SQL Server e facoltativamente una nuova istanza per il mirroring SQL Server Persistent Chat.
   
@@ -42,7 +42,7 @@ Fare **clic su** Nuovo per definire una nuova SQL Server di controllo facoltativ
   
 Fare clic su **Indietro** per tornare alla finestra di dialogo per la definizione del pool precedente.
   
-Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell'archivio di SQL Server di backup del pool e per procedere con la definizione del pool di server Chat persistente.
+Fare **clic** su Avanti dopo aver immesso le opzioni per la configurazione dell'archivio SQL Server backup del pool e per procedere con la definizione del pool di server Chat persistente.
   
 Fare clic su **Annulla** per eliminare tutte le modifiche e chiudere la procedura guidata **Definisci nuovo pool Persistent Chat**.
   

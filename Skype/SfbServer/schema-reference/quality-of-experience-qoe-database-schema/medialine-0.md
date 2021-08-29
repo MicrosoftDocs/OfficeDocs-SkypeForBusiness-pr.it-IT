@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 414b1d63-ae97-4c27-bac0-c9ad0f808ff0
 description: Ogni record rappresenta una linea multimediale. Una sessione audio contiene in genere una linea multimediale audio. Una sessione audio e video (A/V) in genere contiene una linea multimediale audio e una linea multimediale video, anche se la sessione potrebbe contenere due linee multimediali video se viene utilizzato un dispositivo per conferenze o se viene utilizzata la visualizzazione Raccolta.
-ms.openlocfilehash: bb4efba0477193232991732c821aaaa547a19583f8899156a1f92cca119c6b3a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 9f96c18fcbe5799440e557cb180a52e990f61ec8
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321638"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627718"
 ---
 # <a name="medialine-table"></a>Tabella MediaLine
  
@@ -65,9 +65,9 @@ Ogni record rappresenta una linea multimediale. Una sessione audio contiene in g
 |**CalleeVPN** <br/> |bit  <br/> | <br/> |Collegamento del destinatario della chiamata; 1 è rete privata virtuale (VPN), 0 non è VPN.  <br/> |
 |**CalleeLinkSpeed** <br/> |decimal(18,0)  <br/> | <br/> |Velocità del collegamento di rete, in bps, per l'endpoint del destinatario della chiamata.  <br/> |
 |**ConversationalMOS** <br/> |decimal(3,2)  <br/> | <br/> |Conversational MOS a banda stretta delle sessioni audio (basato su entrambi i flussi audio).  <br/> |
-|**AppliedBandwidthLimit** <br/> |int  <br/> ||Questa è la larghezza di banda effettiva applicata al flusso sul lato di invio specificato in base a diverse impostazioni dei criteri (TURN, API, SDP, Policy Server e così via). Da non confondere con la larghezza di banda effettiva, perché può esistere una larghezza di banda effettiva inferiore basata sulla stima della larghezza di banda. Si tratta in pratica della larghezza di banda massima che può essere utilizzata dal flusso di invio escludendo i limiti imposti dalla stima della larghezza di banda.  <br/> |
+|**AppliedBandwidthLimit** <br/> |int  <br/> ||Si tratta della larghezza di banda effettiva applicata al flusso sul lato di invio specificato in base a diverse impostazioni dei criteri (TURN, API, SDP, Policy Server e così via). Da non confondere con la larghezza di banda effettiva, perché può esistere una larghezza di banda effettiva inferiore basata sulla stima della larghezza di banda. Si tratta in pratica della larghezza di banda massima che può essere utilizzata dal flusso di invio escludendo i limiti imposti dalla stima della larghezza di banda.  <br/> |
 |**AppliedBandwidthSourceKey** <br/> |smallint  <br/> ||Origine del limite della larghezza di banda imposto. Descrive da dove proviene il limite di larghezza di banda ("Policy Server", "TURN Server", "Modality" e così via). Riferimento dalla [tabella AppliedBandwidthSource](appliedbandwidthsource.md).  <br/> |
-|**Chiamante** <br/> |bit  <br/> | <br/> |Indica se sono state ricevute metriche del chiamante. 1 è sì, un valore null è no.  <br/> |
+|**Chiamante** <br/> |bit  <br/> | <br/> |Indica se le metriche del chiamante sono state ricevute. 1 è sì, un valore null è no.  <br/> |
 |**Chiamato** <br/> |bit  <br/> | <br/> |Indica se sono state ricevute metriche del destinatario della chiamata. 1 è sì, un valore null è no.  <br/> |
 |**MidCallReport** <br/> |bit  <br/> ||Indica se il report è per una parte della sessione o per l'intera sessione.  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |
 |**ClassifiedPoorCall** <br/> |bit  <br/> ||Indica se una chiamata è stata classificata come scarsa (valore 1) o come buona chiamata (0).  <br/> Questa colonna è stata introdotta in Microsoft Lync Server 2013.  <br/> |

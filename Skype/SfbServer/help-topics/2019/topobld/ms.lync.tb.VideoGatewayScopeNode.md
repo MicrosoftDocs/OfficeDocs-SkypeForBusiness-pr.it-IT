@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.VideoGatewayScopeNode
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 2071b375-4978-4ff5-ae38-5e4a621bf6a3
 ROBOTS: NOINDEX, NOFOLLOW
-description: I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
-ms.openlocfilehash: 878153bc4907754b7a8e95d07df02126fa96274f2beef26017b65d004edb545a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
+ms.openlocfilehash: f36bcc1fc816cadcbb22e7c0f95f68f5398e45ef
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54278974"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58633180"
 ---
 # <a name="video-gateway-scope"></a>Ambito di gateway video
  

@@ -14,22 +14,22 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come caricare le app personalizzate nell'app store dell'organizzazione nell'Microsoft Teams di amministrazione.
-ms.openlocfilehash: add429a0f662db852f78d9b178b046611ecb4e39ebf86729a1d0398fa1583e2f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 2e5eecc0bb5f5ed7c03552057cca6d42f7395ca2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54321048"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634700"
 ---
 # <a name="publish-a-custom-app-by-uploading-an-app-package"></a>Pubblicare un'app personalizzata caricando un pacchetto dell'app
 
 > [!NOTE]
-> Quando si pubblica un'app Teams personalizzata, questa è disponibile per gli utenti nell'app store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata e il modo in cui si usa dipende da come si ottiene l'app. **Questo articolo illustra come pubblicare un'app** personalizzata caricando un pacchetto dell'app (in .zip) inviato da uno sviluppatore. L'altro metodo, l'approvazione di un'app personalizzata, viene usato <a href="/microsoftteams/manage-apps" target="_blank"></a> quando uno sviluppatore invia un'app direttamente alla pagina Gestisci app tramite l'API di invio delle app Teams. Per altre informazioni su questo metodo, vedere <a href="/microsoftteams/submit-approve-custom-apps" target="_blank">Pubblicare un'app personalizzata</a>inviata tramite l Teams APP Submission API .
+> Quando si pubblica un'app Teams, questa è disponibile per gli utenti nell'app store dell'organizzazione. Esistono due modi per pubblicare un'app personalizzata e il modo in cui si usa dipende da come si ottiene l'app. **Questo articolo illustra come pubblicare un'app** personalizzata caricando un pacchetto dell'app (in .zip) inviato da uno sviluppatore. L'altro metodo, l'approvazione di un'app personalizzata, viene usato <a href="/microsoftteams/manage-apps" target="_blank"></a> quando uno sviluppatore invia un'app direttamente alla pagina Gestisci app tramite l'API di invio dell'app Teams. Per altre informazioni su questo metodo, vedere <a href="/microsoftteams/submit-approve-custom-apps" target="_blank">Pubblicare un'app personalizzata</a>inviata tramite l Teams APP Submission API .
 
-Questo articolo fornisce indicazioni end-to-end su come portare l'app Teams dallo sviluppo alla distribuzione all'individuazione. Questa guida è incentrata sugli aspetti Teams'app ed è destinata agli amministratori e ai professionisti IT. Per altre informazioni sullo sviluppo di Teams app, vedere la Teams <a href="/microsoftteams/platform" target="_blank">per sviluppatori.</a>
+Questo articolo fornisce indicazioni end-to-end su come portare l'app Teams dallo sviluppo alla distribuzione all'individuazione. Questa guida è incentrata sugli aspetti Teams'app ed è destinata agli amministratori e ai professionisti IT. Per altre informazioni sullo sviluppo di app Teams, vedere la documentazione <a href="/microsoftteams/platform" target="_blank">Teams per sviluppatori.</a>
 
 ![Panoramica dell'app dallo sviluppo alla distribuzione](media/upload-custom-apps.png)
 
@@ -37,7 +37,7 @@ Questo articolo fornisce indicazioni end-to-end su come portare l'app Teams dall
 
 ### <a name="create-your-app"></a>Creare l'app
 
-La Microsoft Teams per sviluppatori consente agli sviluppatori di integrare facilmente le proprie app e servizi per migliorare la produttività, prendere decisioni più velocemente e creare collaborazione su contenuti e flussi di lavoro esistenti. Le app create sulla piattaforma Teams sono ponti tra il client di Teams e i servizi e i flussi di lavoro, portandoli direttamente nel contesto della piattaforma di collaborazione. Per altre informazioni, vedere la documentazione Teams <a href="/microsoftteams/platform" target="_blank">per sviluppatori.</a>
+La Microsoft Teams per sviluppatori consente agli sviluppatori di integrare facilmente le proprie app e i propri servizi per migliorare la produttività, prendere decisioni più velocemente e creare collaborazione su contenuti e flussi di lavoro esistenti. Le app create sulla piattaforma Teams sono ponti tra il client di Teams e i servizi e i flussi di lavoro, portandoli direttamente nel contesto della piattaforma di collaborazione. Per altre informazioni, vedere la documentazione Teams <a href="/microsoftteams/platform" target="_blank">per sviluppatori.</a>
 
 ## <a name="validate"></a>Convalida
 
@@ -52,7 +52,7 @@ Microsoft usa <a href="/microsoftteams/platform/publishing/office-store-approval
 Per verificare che l'app funzioni correttamente nel tenant di produzione, è necessario consentire a se stessi e/o agli utenti attendibili di caricare app personalizzate nel tenant di produzione. A questo <a href="/microsoftteams/teams-app-setup-policies" target="_blank">scopo si usano i criteri</a> di configurazione delle app.
 
 > [!NOTE]
-> Se non si riesce a caricare l'app nel tenant di produzione per la convalida, anche per se stessi [](#set-up-and-manage) o per gli utenti attendibili, è possibile ignorare questo passaggio e seguire i passaggi descritti in [Upload](#upload) e Configurare e gestire le sezioni per pubblicare l'app non convalidata nell'app store dell'organizzazione. Limitare quindi l'accesso all'app solo a se stessi e agli utenti attendibili. Questi utenti possono quindi ottenere l'app dall'app store dell'organizzazione per eseguire la convalida. Dopo la convalida dell'app, usare gli stessi criteri di autorizzazione per aprire l'accesso e implementare l'app per l'uso in produzione.
+> Se non si riesce a caricare l'app nel tenant di produzione per la convalida, anche per se stessi o [](#set-up-and-manage) per gli utenti attendibili, è possibile ignorare questo passaggio e seguire i passaggi descritti [in Upload](#upload) e Configurare e gestire le sezioni per pubblicare l'app non convalidata nell'app store dell'organizzazione. Limitare quindi l'accesso all'app solo a se stessi e agli utenti attendibili. Questi utenti possono quindi ottenere l'app dall'app store dell'organizzazione per eseguire la convalida. Dopo la convalida dell'app, usare gli stessi criteri di autorizzazione per aprire l'accesso e implementare l'app per l'uso in produzione.
 
 Per consentire agli utenti attendibili di caricare app personalizzate, seguire questa procedura:
 
@@ -60,10 +60,10 @@ Per consentire agli utenti attendibili di caricare app personalizzate, seguire q
     1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare Teams app Gestisci **app** e quindi fare clic su Impostazioni app a livello  >  di **organizzazione.**
     2. In **App personalizzate** attivare Consenti interazione con app **personalizzate** e quindi fare clic su **Salva.**
 2. Disattivare **l'Upload delle app personalizzate** nei criteri di configurazione delle app globali. Procedi come segue.
-    1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare **Teams** criteri di configurazione delle app e quindi fare clic sul criterio Globale (impostazione predefinita a livello di  >  organizzazione). 
+    1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare **Teams** criteri di configurazione delle app e quindi fare clic sul criterio  >  Globale **(impostazione** predefinita a livello di organizzazione).
     2. Disattivare Upload **app personalizzate** e quindi fare clic su **Salva.**
 3. Creare un nuovo criterio di configurazione dell'app che consenta di caricare app personalizzate e assegnarle al set di utenti attendibili. Procedi come segue.
-    1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare Teams criteri di configurazione delle **app** e quindi fare  >  clic su **Aggiungi**. Assegnare un nome e una descrizione al nuovo criterio, attivare Upload **app personalizzate** e quindi fare clic su **Salva.**
+    1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare Teams criteri di configurazione delle **app** e quindi fare clic su  >   **Aggiungi**. Assegnare un nome e una descrizione al nuovo criterio, attivare Upload **app personalizzate** e quindi fare clic su **Salva**.
     2. Selezionare il nuovo criterio creato e quindi fare clic **su Gestisci utenti.** Cercare un utente, fare clic **su Aggiungi** e quindi su **Applica.** Ripetere questo passaggio per assegnare il criterio a tutti gli utenti attendibili.
 
         ![Screenshot della pagina "Aggiungere criteri di configurazione dell'app"](media/manage-your-lob-apps-new-app-setup-policy.png)
@@ -72,10 +72,10 @@ Per consentire agli utenti attendibili di caricare app personalizzate, seguire q
 
 ## <a name="upload"></a>Upload
 
-Per rendere l'app disponibile per gli utenti nell'app store dell'organizzazione, caricare l'app. È possibile farlo nella pagina <a href="/microsoftteams/manage-apps" target="_blank">Gestisci app dell'interfaccia</a> Microsoft Teams di amministrazione.
+Per rendere l'app disponibile agli utenti nell'app store dell'organizzazione, caricare l'app. È possibile farlo nella pagina <a href="/microsoftteams/manage-apps" target="_blank">Gestisci app dell'interfaccia</a> Microsoft Teams di amministrazione.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare ad **App di Teams** > **Gestisci app**.
-2. Fare **Upload**, fare **clic su Seleziona un file** e quindi selezionare il pacchetto dell'app ricevuto dallo sviluppatore.
+2. Fare **Upload** clic su Seleziona **un file** e quindi selezionare il pacchetto dell'app ricevuto dallo sviluppatore.
 
    ![Screenshot del caricamento di un'app nell'interfaccia di amministrazione](media/manage-your-lob-apps-upload-new-app.png) 
 
@@ -107,7 +107,7 @@ Se sono stati creati e assegnati criteri di configurazione dell'app, l'app viene
 
 Per aggiornare un'app, gli sviluppatori devono continuare a seguire i passaggi [delle](#develop) sezioni Sviluppo [e](#validate) Convalida.
 
-È possibile aggiornare l'app nella pagina Gestisci app nell'Microsoft Teams di amministrazione. A questo scopo, nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a Teams   >  **app Gestisci app.** Fare clic sul nome dell'app e quindi su **Aggiorna.** In questo modo l'app esistente viene sostituita e tutti i criteri di autorizzazione delle app e i criteri di configurazione dell'app rimangono applicati per l'app aggiornata.
+È possibile aggiornare l'app nella pagina Gestisci app nell'Microsoft Teams di amministrazione. A questo scopo, nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare a Gestisci **app** Teams  >  **app.** Fare clic sul nome dell'app e quindi su **Aggiorna.** In questo modo l'app esistente viene sostituita e tutti i criteri di autorizzazione delle app e i criteri di configurazione dell'app rimangono applicati per l'app aggiornata.
 
 ### <a name="end-user-update-experience"></a>Esperienza di aggiornamento dell'utente finale
 

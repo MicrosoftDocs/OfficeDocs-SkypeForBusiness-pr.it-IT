@@ -12,15 +12,15 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddEdgeMachineExternalIPv4Page
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 0429444b-97cc-41a1-94e0-3e2e5fdfa9ca
 description: In IPv4 esterno immettere l'indirizzo IP esterno che punta al servizio Access Edge, al servizio Web Conferencing Edge e al servizio A/V Edge.
-ms.openlocfilehash: c86fc50b11951a46311150cfffd4ed4d535c69d71ad149f34c691a83b9d65f6f
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 621d15cb99753d9a03e39b8e35ee2acf4d339bd6
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54343620"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58621312"
 ---
 # <a name="add-edge-machine-external-ipv4"></a>Aggiungere Edge Machine External IPv4
  

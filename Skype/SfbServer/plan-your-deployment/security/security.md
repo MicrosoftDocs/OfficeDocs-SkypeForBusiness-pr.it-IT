@@ -9,22 +9,22 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: cbc800db-35f6-45c0-b9f6-d8cee0c7e922
 description: Skype for Business Server contenuto di sicurezza.
-ms.openlocfilehash: ff8756b54d023f64e6cb6507f9033d4268c994ed6cdc4ec00c220448cd26d57e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 8b5aad37f50b1ea106c2dead8e2443a30c893bf2
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54337664"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627878"
 ---
 # <a name="plan-for-security-in-skype-for-business-server"></a>Pianificare la sicurezza in Skype For Business Server 
  
 Skype for Business Server contenuto di sicurezza. 
   
-Questo contenuto si riferisce alla Skype for Business Server sicurezza. La sicurezza è un argomento molto ampio. La sicurezza raggiunge tutte le funzionalità di Skype for Business Server database, servizi e hardware che costituiscono l'ecosistema. Questo contenuto è un supplemento per argomenti di sicurezza specifici relativi Skype for Business Server.
+Questo contenuto si riferisce alla Skype for Business Server sicurezza. La sicurezza è un argomento molto ampio. La sicurezza raggiunge tutte le funzionalità di Skype for Business Server database, servizi e hardware che costituiscono l'ecosistema. Questo contenuto è un supplemento per argomenti specifici sulla sicurezza relativi Skype for Business Server.
   
 ## <a name="in-this-section"></a>Argomenti della sezione
 

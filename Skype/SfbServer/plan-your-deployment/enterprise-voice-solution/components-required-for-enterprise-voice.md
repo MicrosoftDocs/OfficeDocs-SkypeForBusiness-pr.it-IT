@@ -9,19 +9,19 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: ee219976-c39a-4b2f-988d-886c339700f7
 description: Riepilogo dei componenti VoIP aziendale in Skype for Business Server.
-ms.openlocfilehash: e07c075fad0dcbad8fecfc9183b6ab1a4a1901d848d072a893444c295e56a59d
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 77a2fdf049ac85eae47ad9f4085c5bcaf92f401a
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54333098"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58633580"
 ---
 # <a name="components-required-for-enterprise-voice-in-skype-for-business-server"></a>Componenti necessari per VoIP aziendale in Skype for Business Server
  
@@ -29,7 +29,7 @@ Riepilogo dei componenti VoIP aziendale in Skype for Business Server.
   
 Per distribuire VoIP aziendale, nella topologia sono necessari i componenti seguenti. 
   
-- Uno o più Mediation Server, che traducono la segnalazione e, in alcune configurazioni, i supporti tra il Skype for Business Server interno, l'infrastruttura VoIP aziendale e un gateway PSTN (Public Switched Telephone Network) o un trunk SIP (Session Initiation Protocol). I Mediation Server sono il componente più importante nella distribuzione VoIP aziendale distribuzione. Per ulteriori informazioni, vedere [Componente Mediation Server in Skype for Business Server](mediation-server.md).
+- Uno o più Mediation Server, che traducono la segnalazione e, in alcune configurazioni, i supporti tra il Skype for Business Server interno, l'infrastruttura VoIP aziendale e un gateway PSTN (Public Switched Telephone Network) o un trunk SIP (Session Initiation Protocol). I Mediation Server sono il componente più importante nella distribuzione VoIP aziendale distribuzione. Per ulteriori informazioni, vedere [Mediation Server component in Skype for Business Server](mediation-server.md).
     
     I Mediation Server possono essere collocati con Front End Server o installati come server autonomi.
     

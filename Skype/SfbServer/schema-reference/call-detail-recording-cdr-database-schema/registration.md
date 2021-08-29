@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 05ff9dd3-1aaa-4af0-bd69-8789fb8eaeb3
 description: Ogni record rappresenta un evento di registrazione utente.
-ms.openlocfilehash: 9cc29f1700e1b47230772c6478a6078614baa62f4f7225fb5853bf8cece8a82c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: ed8ce9f160f42384548a01d2cd6c74b3b24e60f1
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54302260"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627778"
 ---
 # <a name="registration-table"></a>Tabella di registrazione
  
@@ -44,7 +44,7 @@ Ogni record rappresenta un evento di registrazione utente.
 |**ResponseCode** <br/> |int  <br/> ||Codice di risposta della richiesta di registrazione.  <br/> |
 |**DiagnosticId** <br/> |int  <br/> ||ID diagnostica della richiesta di registrazione. Indica il tipo di informazioni diagnostiche.  <br/> |
 |**DeviceId** <br/> |int  <br/> |Foreign  <br/> |Dispositivo da cui proviene la richiesta di registrazione. Per altre [informazioni, vedi la tabella Dispositivi Skype for Business Server 2015.](devices.md) <br/> |
-|**DeRegisterTypeId** <br/> |tinyint  <br/> |Foreign  <br/> |Motivo della disattivazione della registrazione, ad esempio "avviato dall'utente", "registrazione scaduta", "errore client" e altro ancora. Per ulteriori informazioni, vedere [la tabella DeRegisterType Skype for Business Server 2015.](deregistertype.md) <br/> |
+|**DeRegisterTypeId** <br/> |tinyint  <br/> |Foreign  <br/> |Motivo della deregistrazione, ad esempio "utente avviato", "registrazione scaduta", "client non riuscito" e altro ancora. Per ulteriori informazioni, vedere la tabella [DeRegisterType Skype for Business Server 2015.](deregistertype.md) <br/> |
 |**IPAddress** <br/> |nvarchar(256)  <br/> ||Indirizzo IP dell'endpoint con cui l'utente è registrato. Può essere un indirizzo IPv4 o IPv6.  <br/> Questo campo è stato introdotto in Microsoft Lync Server 2013.  <br/> |
 |**LastModifiedTime** <br/> |Datetime  <br/> ||Per uso interno del servizio di monitoraggio.  <br/> Questo campo è stato introdotto Skype for Business Server 2015.  <br/> |
    

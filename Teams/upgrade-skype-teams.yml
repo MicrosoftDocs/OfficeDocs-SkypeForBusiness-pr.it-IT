@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: Pianificare l'aggiornamento da Skype for Business a Microsoft Teams
-summary: 'Microsoft Teams è progettato per aiutare le persone a rimanere in contatto, collaborare senza problemi e semplificare il lavoro in modo sicuro e conforme, tutto in un''unica posizione. Qui sono disponibili indicazioni, formazione e risorse per implementare correttamente un aggiornamento da Skype for Business a Teams.'
+summary: 'Microsoft Teams è progettato per aiutare le persone a rimanere in contatto, collaborare senza problemi e semplificare il lavoro in modo sicuro e conforme, tutto in un''unica posizione. Qui sono disponibili indicazioni, formazione e risorse per implementare correttamente l''aggiornamento da Skype for Business a Teams.'
 brand: teams
 metadata:
   title: Pianificare l'aggiornamento da Skype for Business a Microsoft Teams
-  description: 'Microsoft Teams è progettato per aiutare le persone a rimanere in contatto, collaborare senza problemi e semplificare il lavoro in modo sicuro e conforme, tutto in un''unica posizione. Qui sono disponibili indicazioni, formazione e risorse per implementare correttamente un aggiornamento da Skype for Business a Teams.'
+  description: 'Microsoft Teams è progettato per aiutare le persone a rimanere in contatto, collaborare senza problemi e semplificare il lavoro in modo sicuro e conforme, tutto in un''unica posizione. Qui sono disponibili indicazioni, formazione e risorse per implementare correttamente l''aggiornamento da Skype for Business a Teams.'
   ms.service: msteams
   ms.topic: hub-page
   author: SerdarSoysal
@@ -15,7 +15,7 @@ metadata:
   audience: admin
   f1.keywords:
     - NOCSH
-  localization_priority: Priority
+  ms.localizationpriority: high
   ms.collection:
     - Teams_ITAdmin_JourneyFromSfB
     - M365-collaboration
@@ -49,10 +49,10 @@ productDirectory:
         - url: 'https://customers.microsoft.com/story/765513-trek-retailers-teams'
           text: Trek – Skype for Business Online per Teams
         - url: 'https://customers.microsoft.com/story/765520-dentsu-aegis-network-media-entertainment-teams'
-          text: Dentsu Aegis Network – Skype for Business Online per Teams
+          text: Dentsu Aegis Network – Skype for Business online per Teams
         - url: 'https://customers.microsoft.com/story/764851-berkshire-healthcare-nhs-foundation-trust-health-provider-teams'
           text: Berkshire Healthcare – Skype for Business online per Teams
-    - title: 'Sessione di accensione: progettare il percorso Teams'
+    - title: 'Sessione di accensione: progettare il percorso per Teams'
       imageSrc: 'https://docs.microsoft.com/office/media/icons/walkthrough-map-teams.svg'
       summary: Questa sessione di Ignite 2020 consente di trovare l'approccio più adatto per l'implementazione Skype for Business e gli obiettivi.
       url: 'https://go.microsoft.com/fwlink/?linkid=2154668'
@@ -62,34 +62,34 @@ productDirectory:
       url: 'https://aka.ms/UpgradeSuccessKit'
     - title: Teams dell'amministratore
       imageSrc: 'https://docs.microsoft.com/office/media/icons/document-teams.svg'
-      summary: Scopri come implementare e gestire le Teams e preparare gli utenti per nuove esperienze di comunicazione e collaborazione.
+      summary: Informazioni su come implementare e gestire le Teams e preparare gli utenti per nuove esperienze di comunicazione e collaborazione.
       url: ./index.yml
-    - title: Formazione su Teams con istruttore
+    - title: Formazione Teams con istruttore
       imageSrc: 'https://docs.microsoft.com/office/media/icons/presenter-with-podium.svg'
       summary: Corsi di formazione online gratuiti e in tempo reale progettati per iniziare a utilizzare Teams.
       url: ./instructor-led-training-teams-landing-page.yml
     - title: Espandere gli scenari Teams personalizzati
       imageSrc: 'https://docs.microsoft.com/office/media/icons/best-practices-teams.svg'
-      summary: I Teams online Chalk Talks sono progettati per aiutare i professionisti IT a ottenere il massimo Teams.
+      summary: I Teams online chalk talks sono progettati per aiutare i professionisti IT a ottenere il massimo Teams.
       url: ./chalk-talks-landing-page.yml
     - title: Ritiro di Skype for Business Online
       imageSrc: 'https://docs.microsoft.com/office/media/icons/migration-teams.svg'
-      summary: Prepararsi per il ritiro del servizio Skype for Business Online il 31 luglio 2021 e informazioni su come pianificare una transizione corretta a Teams.
+      summary: Preparare il ritiro del servizio Skype for Business Online il 31 luglio 2021 e informazioni su come pianificare una transizione corretta a Teams.
       url: ./skype-for-business-online-retirement.md
     - title: Microsoft Teams blog
       imageSrc: 'https://docs.microsoft.com/office/media/icons/blog-site-teams.svg'
-      summary: 'Scopri le procedure consigliate, le notizie e le tendenze direttamente dal team che sta dietro Microsoft Teams.'
+      summary: 'Scopri le procedure consigliate, le notizie e le tendenze direttamente dal team dietro Microsoft Teams.'
       url: 'https://techcommunity.microsoft.com/t5/microsoft-teams-blog/bg-p/MicrosoftTeamsBlog'
     - title: Impatto economico totale delle Teams
       imageSrc: 'https://docs.microsoft.com/office/media/icons/trend-graph-teams.svg'
-      summary: Approfondire il report Forrester Research che quantifica i miglioramenti delle prestazioni di dipendenti e aziende dopo l'adozione di Teams.
+      summary: Approfondire il report Forrester Research che quantifica i miglioramenti delle prestazioni dei dipendenti e dell'azienda dopo l'adozione di Teams.
       url: 'https://www.microsoft.com/microsoft-365/blog/wp-content/uploads/sites/2/2019/04/Total-Economic-Impact-Microsoft-Teams.pdf'
 additionalContent:
   sections:
     - title: Serve ulteriore assistenza?
     - items:
         - title: Coinvolgere FastTrack assistenza per la distribuzione
-          summary: 'Quando Teams di distribuzione richiedono un''assistenza più coinvolta, i clienti con abbonamenti idonei possono coinvolgere FastTrack supporto.'
+          summary: 'Quando Teams di distribuzione richiedono un''assistenza più coinvolta, i clienti con abbonamenti idonei possono coinvolgere FastTrack per il supporto.'
           url: 'https://www.microsoft.com/fasttrack'
         - title: Trovare un partner Microsoft
           summary: Servono altre indicazioni? I provider di soluzioni Microsoft consentono di gestire la tecnica e la logistica dell'aggiornamento.

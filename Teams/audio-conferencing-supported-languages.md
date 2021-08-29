@@ -16,18 +16,18 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Audio Conferencing
 description: Trovare la lingua per i servizi di conferenza telefonica con accesso esterno per ogni paese o area geografica e l'ID cultura assegnato (en-US, da-DK, de-DE e così via)
-ms.openlocfilehash: 5bd81e85f3944ce1a38bed2c1dc4110f3d3eaf9d7c59f3e0b3180c911d513f5b
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 4ecdcf951fde12af53b64cdafd4028e5638f6f27
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54340512"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58633430"
 ---
 # <a name="audio-conferencing-supported-languages"></a>Lingue supportate per i servizi di audioconferenza
 
@@ -87,7 +87,7 @@ Quando si configurano e si configurano i servizi di audioconferenza in Microsoft
    
 Se si cercano paesi o aree geografiche in cui è possibile acquistare audioconferenze, vedere Disponibilità di paesi e aree geografiche per audioconferenze [e piani per chiamate.](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md)
   
-Se si cercano paesi o aree geografiche specifici con numeri di telefono per le audioconferenze, vedere numeri Telefono per le audioconferenze [in Microsoft Teams](phone-numbers-for-audio-conferencing-in-teams.md) o numeri Telefono per le audioconferenze in [Skype for Business Online.](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing)
+Se si cercano paesi o aree geografiche specifici con numeri di telefono per le audioconferenze, vedere numeri [di Telefono](phone-numbers-for-audio-conferencing-in-teams.md) per le audioconferenze in Microsoft Teams o numeri Telefono per i servizi di audioconferenza in Skype for Business [Online.](/SkypeForBusiness/audio-conferencing-in-office-365/phone-numbers-for-audio-conferencing)
   
 ## <a name="want-to-know-how-to-manage-with-windows-powershell"></a>Vuoi sapere come gestire queste operazioni con Windows PowerShell?
 
@@ -99,7 +99,7 @@ Se si cercano paesi o aree geografiche specifici con numeri di telefono per le a
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto solo all'uso del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell)
     

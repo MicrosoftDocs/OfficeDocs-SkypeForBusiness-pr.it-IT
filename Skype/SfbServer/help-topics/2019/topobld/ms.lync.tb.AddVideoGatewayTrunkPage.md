@@ -11,16 +11,16 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.AddVideoGatewayTrunkPage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 9485bea9-c646-4eb7-b3d0-dcbc57cdfbda
 ROBOTS: NOINDEX, NOFOLLOW
-description: I passaggi necessari per definire un nuovo vis o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
-ms.openlocfilehash: 54b315fa464d21b006eefaf11fbd7db270ce728c5e819e9edca167a916e26a43
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: I passaggi necessari per definire un nuovo VIS o gateway video in Generatore di topologie sono descritti online in Create a VIS pool in Skype for Business Server.
+ms.openlocfilehash: 3217962d3f3af889e70998243b7bdb85efc05eda
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317627"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634680"
 ---
 # <a name="add-video-gateway-trunk"></a>Aggiungere il nome di dominio completo (FQDN) per trunk video
  

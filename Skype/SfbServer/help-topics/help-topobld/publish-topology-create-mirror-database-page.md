@@ -12,21 +12,21 @@ f1.keywords:
 ms.custom:
 - ms.lync.tb.PublishTopologyCreateMirrorDatabasePage
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: f05ffca1-e972-4ee2-8370-2ef5df03e179
 description: Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
-ms.openlocfilehash: 9ef9adcbf180a91a3e459e01d3f91b96e181a888b9a91eab91abdcf301a7c09c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 463886be1705ceb21994d66401887963fae04993
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54307107"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627988"
 ---
 # <a name="publish-topology-create-mirror-database-page"></a>Pubblicare topologia, pagina Creare database mirror
  
 Si tratta di una documentazione preliminare e soggetta a modifiche. Gli argomenti vuoti sono inclusi come segnaposto.
   
-Generatore di topologie analizza tutte le impostazioni di configurazione nel documento della topologia definito. Se sono stati configurati database SQL Server con mirroring, viene visualizzata una schermata in cui vengono visualizzati l'archivio mirror, l'archivio principale, il percorso di condivisione file e i percorsi del database. È necessario selezionare una casella di controllo associata a un archivio mirror del database per creare il database con mirroring e il percorso della condivisione file. Deselezionare una casella di controllo per un mirror di database se non si desidera creare e distribuire il database nel server SQL Server.
+Generatore di topologie analizza tutte le impostazioni di configurazione nel documento della topologia definito. Se sono stati configurati database SQL Server con mirroring, viene visualizzata una schermata in cui vengono visualizzati l'archivio mirror, l'archivio principale, il percorso di condivisione file e i percorsi del database. È necessario selezionare una casella di controllo associata a un archivio mirror del database per creare il database con mirroring e il percorso della condivisione file. Deselezionare una casella di controllo per un mirror di database se non si desidera creare e distribuire il database nel SQL Server.
   
  Se si sceglie di non installare uno o tutti i database in questo momento, deselezionare quelli che non si vuole installare. In un secondo momento, si sceglie di utilizzare **Installa database** facendo clic con il pulsante destro del mouse sulla maggior parte degli elementi del nodo in Generatore di topologie.
   

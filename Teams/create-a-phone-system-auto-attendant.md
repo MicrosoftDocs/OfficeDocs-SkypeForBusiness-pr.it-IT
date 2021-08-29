@@ -16,27 +16,27 @@ audience: Admin
 appliesto:
 - Skype for Business
 - Microsoft Teams
-localization_priority: Normal
+ms.localizationpriority: medium
 f1.keywords:
 - CSH
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 6db2dd5b63e26c74de09b8d4b563fe48393a3a37
-ms.sourcegitcommit: 9062b2c81c582ddc878c825ba1b22a6c23ca4b64
+ms.openlocfilehash: 16a26cd3384ddaaa3003649a3026bbe876a38399
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "58398905"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634870"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
-Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
+Gli operatori automatici consentono alle persone di chiamare l'organizzazione e di navigare in un sistema di menu per parlare con il reparto, la coda di chiamata, la persona o un operatore. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
 
 > [!TIP]
 > Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Configurare un operatore [automatico - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb) imprese.
 
-Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le [](plan-auto-attendant-call-queue.md#getting-started) code di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
+Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le code [](plan-auto-attendant-call-queue.md#getting-started) di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
 
 Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle destinazioni seguenti: <a name="call-routing-options" ></a>
 
@@ -50,7 +50,7 @@ Gli operatori automatici possono indirizzare le chiamate, in base all'input dei 
 
 Durante la configurazione di un operatore automatico, verrà richiesto di scegliere una di queste opzioni in varie fasi.
 
-Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce,** selezionare **Operatori** automatici e quindi **selezionare Aggiungi**.
+Per configurare un operatore automatico, nell'interfaccia Teams di amministrazione espandere **Voce**, selezionare **Operatori** automatici e quindi **selezionare Aggiungi**.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -125,7 +125,7 @@ Se non sono stati assegnati tasti di chiamata, scegliere un'opzione per **La ric
 
 **Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiamata **per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-Gli utenti che si vogliono rendere disponibili per l'estensione Chiamata per interno devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
+Gli utenti che si vogliono rendere disponibili per l'interno di chiamata devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
 
 - OfficePhone
 - HomePhone
@@ -140,7 +140,7 @@ Il formato necessario per immettere l'interno nel campo del numero di telefono d
 - *x\<extension>*
 
 - Esempio 1: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678;ext=5678"
-- Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+15555555678x5678"
+- Esempio 2: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "+1555555678x5678"
 - Esempio 3: Set-MsolUser -UserPrincipalName usern@domain.com -Phonenumber "x5678"
 
 È possibile impostare l'estensione [nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) o [nell'Azure Active Directory di amministrazione.](https://aad.portal.azure.com) Possono essere necessarie fino a 12 ore prima che le modifiche siano disponibili per gli operatori automatici e le code di chiamata.

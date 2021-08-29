@@ -7,7 +7,7 @@ manager: serdars
 audience: ITPro
 ms.topic: conceptual
 ms.service: msteams
-localization_priority: Normal
+ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-voice
@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni sulle diverse combinazioni di creazione utente e sulle combinazioni supportate o non supportate.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 5b272ba42235b37b15c44d69fb4d96a444bd3b79498d0ade02aa0e1d15668a4c
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 34a531c19ba0b7aebc16b09b360c363eff4a1198
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54279733"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58634850"
 ---
 # <a name="user-accounts-in-a-hybrid-environment-with-pstn-connectivity"></a>Account utente in un ambiente ibrido con connettività PSTN
 
@@ -31,7 +31,7 @@ ms.locfileid: "54279733"
 Questo articolo si applica agli ambienti in cui sono disponibili tutti gli elementi seguenti: 
  
 - Skype for Business Server o Lync Server 2013 
-- Un'Microsoft 365 o Office 365 organizzazione 
+- Un'Microsoft 365 o Office 365 un'organizzazione 
 - Connettività ibrida configurata tra Skype for Business Server e Skype for Business Online o Microsoft Teams tenant 
 - Utenti abilitati a effettuare e ricevere chiamate PSTN (Public Switched Telephone Network) da e verso il client
 
@@ -44,15 +44,15 @@ Un Skype for Business ibrido con connettività PSTN offre flessibilità per quan
 
 
 **Definizioni:**   
-- **VoIP aziendale:** Opzione per fornire l'accesso a PSTN per gli utenti con account utente Skype for Business locale. Il server Skype for Business Mediation Server fornisce l'interconnettività alla rete PSTN.  
-- **Connettività vocale ibrida:** Opzione per fornire l'accesso a PSTN per gli utenti con Skype for Business account online. Il server Skype for Business Mediation Server fornisce l'interconnettività alla rete PSTN. 
+- **VoIP aziendale:** Opzione per fornire l'accesso a PSTN per gli utenti con account utente Skype for Business locale. In locale Skype for Business Mediation Server fornisce l'interconnettività alla rete PSTN.  
+- **Connettività vocale ibrida:** Opzione per fornire l'accesso a PSTN per gli utenti con Skype for Business account online. In locale Skype for Business Mediation Server fornisce l'interconnettività alla rete PSTN. 
 - **Routing diretto:** Opzione per fornire l'accesso a PSTN per gli utenti con account Skype for Business online, Microsoft Teams licenza, usando Microsoft Teams client. L'SBC è connesso al proxy SIP in Microsoft 365 o Office 365 senza bisogno di software locale da Microsoft.
 
   
 **L'ambiente supporta le combinazioni seguenti:**
-- **Scenario 1:** L'account utente Skype for Business locale e userà il client di Skype for Business con VoIP aziendale
+- **Scenario 1:** L'account utente Skype for Business locale e userà il client Skype for Business con VoIP aziendale
 - **Scenario 2:** Account utente in Skype per le aziende online e userà il client Skype for Business con connettività vocale ibrida
-- **Scenario 3:** Account utente in Skype for Business online con Microsoft Teams licenza e userà Teams client
+- **Scenario 3:** L'account utente Skype for Business online con Microsoft Teams licenza e userà Teams client
  
 ### <a name="supportability-matrix"></a>Matrice di supportabilità
 
@@ -70,4 +70,4 @@ Un Skype for Business ibrido con connettività PSTN offre flessibilità per quan
 
 ### <a name="supportability-statement-for-the-hybrid-environment-with-pstn"></a>Dichiarazione di supporto per l'ambiente ibrido con PSTN
 
-Per tutti gli utenti, l'oggetto utente deve essere creato in Active Directory locale e sincronizzato con Azure AD usando lo strumento di Connessione Azure AD.  L'abilitazione degli utenti Teams/Skype for Business non è supportata se l'oggetto utente viene creato direttamente in Azure AD in una configurazione ibrida.  Per i nuovi utenti, ad esempio i nuovi assunti, che verranno abilitati direttamente per Teams, l'utente deve essere abilitato per Skype for Business usando strumenti di gestione Skype for Business locali. La creazione di utenti in Skype for Business o Teams senza prima abilitarli nel pool locale con VoIP aziendale **non è supportata.** Per altre informazioni, vedere Pianificare Sistema telefonico connettività [PSTN locale in Skype for Business Server](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-phone-system-with-on-premises-pstn-connectivity).
+Per tutti gli utenti, l'oggetto utente deve essere creato in Active Directory locale e sincronizzato con Azure AD usando lo strumento di Connessione Azure AD.  L'abilitazione degli utenti Teams/Skype for Business non è supportata **se** l'oggetto utente viene creato direttamente in Azure AD in una configurazione ibrida. Per i nuovi utenti, ad esempio i nuovi assunti, che verranno abilitati direttamente per Teams, l'utente deve essere abilitato per Skype for Business usando gli strumenti di gestione Skype for Business locali. La creazione di utenti in Skype for Business o Teams senza prima abilitarli nel pool locale con VoIP aziendale **non è supportata.** Per altre informazioni, vedere Pianificare Sistema telefonico connettività [PSTN locale in Skype for Business Server](/skypeforbusiness/skype-for-business-hybrid-solutions/plan-your-phone-system-cloud-pbx-solution/plan-phone-system-with-on-premises-pstn-connectivity).

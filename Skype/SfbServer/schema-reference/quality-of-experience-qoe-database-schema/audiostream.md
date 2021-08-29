@@ -10,15 +10,15 @@ ms.topic: article
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: 49ccbbc3-2f73-45fc-80a6-e612535cbc10
 description: Ogni record rappresenta un flusso audio. Una linea multimediale audio contiene in genere due flussi audio.
-ms.openlocfilehash: 28111f9c97efdc729d13fda824f4236caad97eee1f08ff31eea0b751dda1cb88
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 5b442c011d9e65e67fdc5cb06dd79c0f5fbee8c4
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54309195"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627758"
 ---
 # <a name="audiostream-table"></a>Tabella AudioStream
  
@@ -48,7 +48,7 @@ Ogni record rappresenta un flusso audio. Una linea multimediale audio contiene i
 |**AudioSampleRate** <br/> |int  <br/> | <br/> |Frequenza di campionamento per il flusso audio.  <br/> |
 |**RoundTrip** <br/> |int  <br/> | <br/> |Tempo di round trip dalle statistiche RTCP. Per una qualità accettabile, questo valore deve essere inferiore a 100 ms.  <br/> |
 |**RoundTripMax** <br/> |int  <br/> | <br/> |Tempo di round trip massimo per il flusso audio.  <br/> |
-|**OverallAvgNetworkMOS** <br/> |decimal(3,2)  <br/> | <br/> |MOS di rete a banda larga medio per la chiamata. Questa metrica dipende dalla perdita di pacchetti, dall'instabilità e dal codec utilizzato. Range è [da 1,0 a 5,0].  <br/> |
+|**OverallAvgNetworkMOS** <br/> |decimal(3,2)  <br/> | <br/> |MOS di rete a banda larga medio per la chiamata. Questa metrica dipende dalla perdita di pacchetti, dall'instabilità e dal codec utilizzato. L'intervallo è compreso tra [1,0 e 5,0].  <br/> |
 |**OverallMinNetworkMOS** <br/> |decimal(3,2)  <br/> | <br/> |Mos di rete a banda larga minima per la chiamata.  <br/> |
 |**SendListenMOS** <br/> |decimal(3,2)  <br/> | <br/> |Punteggio MOS di ascolto a banda larga previsto medio per l'audio inviato, inclusi il livello vocale, il livello di rumore e le caratteristiche del dispositivo di acquisizione.  <br/> |
 |**SendListenMOSMin** <br/> |decimal(3,2)  <br/> | <br/> |Valore SendListenMOS minimo per la chiamata.  <br/> |

@@ -13,15 +13,15 @@ ms.custom:
 - ms.lync.plan.ExchagneUMSettings
 - ms.lync.plan.ExchagneUMSettings
 ms.prod: skype-for-business-itpro
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.assetid: d4c4a5d9-1523-49ff-b994-882b037ed46f
 description: Skype for Business Server supporta l'integrazione con Exchange messaggistica unificata per combinare la messaggistica vocale e la messaggistica di posta elettronica in un'unica infrastruttura di messaggistica.
-ms.openlocfilehash: 0f2ec30af94f9626c3cca8463f58f827cb7015766f6e99eff5fd31f755a53105
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 1bda2e8506836e20b84016f2cd5d0fdea4a13b84
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54344955"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58633710"
 ---
 # <a name="skype-for-business-server-exchange-unified-messaging-settings-planning-tool"></a>Skype for Business Server Exchange strumento di pianificazione Impostazioni messaggistica unificata
 

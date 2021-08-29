@@ -10,25 +10,25 @@ ms.topic: conceptual
 ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
-localization_priority: Normal
+ms.localizationpriority: medium
 ms.collection:
 - IT_Skype16
 - Strat_SB_Admin
 ms.custom: ''
 ms.assetid: a6851e38-ba9a-4f19-9aa7-d8accf4d62b3
-description: 'Riepilogo: esaminare i requisiti Windows supporto client durante la pianificazione Skype for Business Server.'
-ms.openlocfilehash: e26390920334db03fe1d9f9652759f2018d8306f2d57fce50a32165c4d20bb28
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+description: 'Riepilogo: esaminare i requisiti di Windows client durante la pianificazione Skype for Business Server.'
+ms.openlocfilehash: 755f60030c905bfb5a5f488e2573c12b3396ab1e
+ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54317471"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "58627948"
 ---
 # <a name="windows-client-requirements-and-software-support"></a>Windows client e supporto software
  
 **Riepilogo:** Esaminare i requisiti Windows supporto client durante la pianificazione Skype for Business Server.
   
-Questa sezione riepiloga il software necessario per supportare i Skype for Business Windows client. Questi client vengono installati quando Microsoft 365 o Office 365 e sono disponibili anche in [Download Skype for Business su tutti i dispositivi.](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
+In questa sezione viene riepilogato il software necessario per supportare i Skype for Business Windows client. Questi client vengono installati quando Microsoft 365 o Office 365 e sono disponibili anche in [Download Skype for Business su tutti i dispositivi.](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
   
 > [!NOTE]
 > Il componente aggiuntivo per riunioni online per Skype for Business, che supporta la gestione delle riunioni dall'interno del client di messaggistica e collaborazione di Outlook, viene installato automaticamente con Skype for Business. 
@@ -47,13 +47,13 @@ Questa sezione riepiloga il software necessario per supportare i Skype for Busin
 
 Fare riferimento ai Microsoft 365 e Office [di](https://products.office.com/office-system-requirements) sistema per l'hardware necessario per eseguire il client Skype for Business client.
   
-## <a name="skype-meetings-app-and-skype-for-business-web-app"></a>Skype Riunioni App e Skype for Business Web App 
+## <a name="skype-meetings-app-and-skype-for-business-web-app"></a>Skype App Riunioni e Skype for Business Web App 
 
 L Skype e l'app Riunioni Skype for Business Web App supportano combinazioni specifiche di sistemi operativi e browser. Per informazioni dettagliate, vedere [Plan for Meetings clients (Web App and Meetings App)](meetings-clients.md). 
   
 ## <a name="using-mandatory-profiles"></a>Utilizzo dei profili obbligatori
 
-Se si prevede di utilizzare le funzionalità di conferenza Skype for Business, evitare di utilizzare i profili obbligatori di Servizi di dominio Active Directory per accedere al client Skype for Business active directory. Poiché i profili obbligatori sono profili utente di sola lettura, le chiavi dell'infrastruttura a chiave pubblica (PKI) necessarie per le conferenze Skype for Business non possono essere salvate nel profilo. 
+Se si prevede di utilizzare le funzionalità di conferenza Skype for Business, evitare di utilizzare i profili obbligatori di Servizi di dominio Active Directory per accedere al client Skype for Business. Poiché i profili obbligatori sono profili utente di sola lettura, le chiavi dell'infrastruttura a chiave pubblica (PKI) necessarie per le conferenze Skype for Business non possono essere salvate nel profilo. 
   
 ## <a name="system-requirements-for-skype-for-business-for-windows-phone"></a>Requisiti di sistema per Skype for Business per Windows Phone
  
@@ -77,8 +77,8 @@ Di seguito sono riportati Skype for Business per Windows Phone prerequisiti.
 
 [Pianificare i client riunioni (App Web e app Riunioni)](meetings-clients.md)
   
-[Skype for Business dei client Mac](mac-requirements.md)
+[Skype for Business sui requisiti del client Mac](mac-requirements.md)
 
-[Scaricare Skype for Business tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
+[Scaricare Skype for Business tra tutti i dispositivi](https://products.office.com/skype-for-business/download-app?tab=tabs-3)
   
 [Microsoft 365 e Office di sistema](https://products.office.com/office-system-requirements)
