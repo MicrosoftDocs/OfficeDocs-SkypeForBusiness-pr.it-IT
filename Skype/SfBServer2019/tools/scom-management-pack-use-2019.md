@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: IT_Skype16
 description: "Riepilogo: informazioni su come configurare l'Skype for Business Server 2019 per l'utilizzo con System Center Operations Manager."
-ms.openlocfilehash: cdb201280afb1419e5b8975b31e3c7725902cd72
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 90c40560ef1d39b462ce58b39804006dc7121024
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582010"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727595"
 ---
 # <a name="manage-skype-for-business-server-2019-using-scom-management-pack"></a>Gestire Skype for Business Server 2019 con SCOM Management Pack
  
@@ -34,7 +34,7 @@ Queste informazioni sono state scritte in base alla versione 9319.0 del Monitori
   
 Identificare e [configurare il server di gestione principale](../../SfbServer/management-tools/use-scom-management-pack/configure-the-primary.md). A tale scopo, è necessario installare System Center Operations Manager 2012 SP1 o R2. 
   
- Identificare [e configurare Skype for Business Server computer che verranno monitorati.](../../SfbServer/management-tools/use-scom-management-pack/configure-computers-to-monitor.md) Per monitorare un computer Skype for Business Server utilizzando System Center Operations Manager, è necessario installare i file dell'agente di System Center Operations Manager e configurare ogni server per agire come proxy. 
+ Identificare e [configurare Skype for Business Server computer che verranno monitorati.](../../SfbServer/management-tools/use-scom-management-pack/configure-computers-to-monitor.md) Per monitorare un computer Skype for Business Server utilizzando System Center Operations Manager, è necessario installare i file agente di System Center Operations Manager e configurare ogni server in modo che agirà come proxy. 
   
  Identificare e [installare e configurare i nodi Watcher.](../../SfbServer/management-tools/use-scom-management-pack/watcher-nodes.md) I nodi Watch Skype for Business Server er sono computer che eseguono periodicamente transazioni sintetiche Windows PowerShell cmdlet che verificano che i componenti chiave di Skype for Business Server, ad esempio la possibilità di accedere al sistema o la possibilità di scambiare messaggi istantanei, funzionino come previsto. 
   
@@ -57,7 +57,7 @@ Nella tabella seguente vengono illustrati i requisiti di capacità e del sistema
   
 |**Componente hardware**|**Requisiti minimi**|
 |:-----|:-----|
-|CPU  <br/> |Una delle opzioni seguenti:  <br/> Processore a 64 bit, quad-core, 2,33 GHz o superiore  <br/> Processore 2-way a 64 bit, dual core, 2,33 GHz o superiore  <br/> |
+|CPU  <br/> |Una delle opzioni seguenti:  <br/> Processore a 64 bit, quad-core, 2,33 GHz o superiore  <br/> Processore 2-way a 64 bit, dual-core, 2,33 GHz o superiore  <br/> |
 |Memoria  <br/> |8 GB  <br/> |
 |Sistema operativo  <br/> |Windows Server 2008 R2  <br/> Windows Server 2012 R2  <br/> |
 |Rete  <br/> |1 scheda di rete a 1 Gbps  <br/> |
@@ -70,7 +70,7 @@ Per eseguire un nodo Synthetic Transaction Watcher, è innanzitutto necessario i
     
 -  Microsoft .NET Framework 4.5
     
-- Skype for Business Server di installazione di base (OcsCore.msi) e UCMA (Unified Communications Managed API) (le versioni devono corrispondere alla Skype for Business Server WatcherNode.msi versione)
+- Skype for Business Server di installazione di base (OcsCore.msi) e UCMA (Unified Communications Managed API) (le versioni devono corrispondere alla Skype for Business Server WatcherNode.msi precedente)
     
 ## <a name="files-in-this-monitoring-pack"></a>File in questo Monitoring Pack
 
@@ -84,7 +84,7 @@ Il Monitoring Pack per Skype for Business Server 2019 include i file seguenti:
     
 ## <a name="whats-new"></a>Novità
 
-Le funzionalità seguenti sono una novità di Skype for Business Server Management Pack 2019.
+Le funzionalità seguenti sono una novità Skype for Business Server Management Pack 2019.
 
 - **Modifiche [nell'aggiornamento di settembre 2019](https://www.microsoft.com/download/details.aspx?id=57511)** Alcuni avvisi hanno rimosso caratteri speciali. In alcuni casi i caratteri speciali interferiscono con la funzionalità di notifica del canale di comando SCOM.
 
@@ -94,7 +94,7 @@ Le funzionalità seguenti sono una novità di Skype for Business Server Manageme
     
 - **Transazione sintetica di Video Interop Services** I clienti che eseguono la migrazione a Skype for Business Server 2019 da altre soluzioni fornitore spesso desiderano continuare a usare i dispositivi di teleconferenza video (VTC) di questi altri fornitori. Video Interop Server è un nuovo ruolo del server Skype for Business Server 2019 che consente ai clienti di continuare a utilizzare i VTC Cisco nelle proprie sale riunioni connettendosi a Cisco CUCM tramite un trunk SIP video. Questa funzionalità aggiunge inoltre una transazione sintetica per verificare che Video Interop Server sia in funzione e sia in grado di gestire le connessioni in ingresso su un trunk SIP video.
     
-- **Transazione sintetica conferenza condivisione applicazioni** La convalida degli scenari end-to-end per le conferenze di condivisione applicazioni è ora supportata.
+- **Transazione sintetica di conferenza di condivisione applicazioni** La convalida degli scenari end-to-end per le conferenze di condivisione applicazioni è ora supportata.
     
 ## <a name="monitoring-scenarios"></a>Scenari di monitoraggio
 
@@ -103,7 +103,7 @@ Il Skype for Business Server 2019 Management Pack sfrutta un'ampia gamma di funz
 |**Scenario di monitoraggio**|**Descrizione**|
 |:-----|:-----|
 |Transazioni sintetiche  <br/> | Windows PowerShell cmdlet per testare e garantire la disponibilità elevata di scenari quali l'accesso, la presenza, la messaggistica istantanea e le conferenze per gli utenti. <br/> Le transazioni sintetiche possono essere eseguite da qualsiasi posizione geografica, anche all'interno dell'azienda, all'esterno dell'azienda e nelle succursali.  <br/> Quando una transazione sintetica ha esito negativo, vengono creati log s HTML per determinare l'esatta natura dell'errore. Ciò include la comprensione dell'azione non riuscita, della latenza di ogni azione, della riga di comando utilizzata per eseguire il test e dell'errore specifico che si è verificato.  <br/> |
-|Avvisi di affidabilità delle chiamate  <br/> |I record dettagli chiamata (CDR) scritti dai Skype for Business Server 2019 riflettono se gli utenti sono in grado di connettersi a una chiamata o perché una chiamata viene terminata. Gli avvisi di affidabilità delle chiamate interrogano il database cdR per generare avvisi che indicano quando un numero elevato di utenti verifica problemi di connettività per chiamate peer-to-peer o funzionalità di conferenza di base.  <br/> La copertura dello scenario include chiamate audio, messaggistica istantanea peer-to-peer e altre funzionalità di conferenza.  <br/> |
+|Avvisi di affidabilità delle chiamate  <br/> |I record dettagli chiamata (CDR) scritti da Skype for Business Server 2019 riflettono se gli utenti sono in grado di connettersi a una chiamata o perché una chiamata viene terminata. Gli avvisi di affidabilità delle chiamate interrogano il database cdR per generare avvisi che indicano quando un numero elevato di utenti verifica problemi di connettività per chiamate peer-to-peer o funzionalità di conferenza di base.  <br/> La copertura dello scenario include chiamate audio, messaggistica istantanea peer-to-peer e altre funzionalità di conferenza.  <br/> |
 |Avvisi di qualità multimediale  <br/> |Query di database che osservano i report QoE pubblicati dai Skype for Business Server 2019 al termine di ogni chiamata. Queste query generano avvisi che consentono di individuare scenari in cui è più probabile che gli utenti sperimentino una qualità multimediale compromessa durante le chiamate e le conferenze. I dati si basano su metriche chiave, come la latenza e la perdita dei pacchetti, che contribuiscono direttamente alla qualità dell'esperienza utente.  <br/> |
 |Avvisi di integrità dei componenti  <br/> |I singoli componenti del server generano avvisi tramite registri eventi e contatori delle prestazioni per indicare condizioni di errore che possono influire in modo significativo sugli scenari utente. Questi avvisi indicano diverse condizioni, ad esempio servizi non in esecuzione, frequenze di errore elevate, latenza elevata dei messaggi o problemi di connettività.  <br/> |
 |Monitoraggio dell'integrità delle dipendenze  <br/> |Skype for Business Server può avere esito negativo per diversi motivi esterni. Il Management Pack monitora e raccoglie i dati per le dipendenze esterne critiche che possono indicare problemi gravi. Queste dipendenze includono la Internet Information Services (IIS) e la CPU dei server utilizzati per Skype for Business Server.  <br/> |
@@ -116,7 +116,7 @@ Gli avvisi sono classificati nelle categorie seguenti:
   
  **Avvisi di priorità media:** Questi avvisi indicano condizioni che influiscono su un sottoinsieme di utenti o indicano problemi di qualità delle chiamate, ad esempio errori dei componenti, latenza nello stabilire le chiamate o qualità audio inferiore nelle chiamate. Gli avvisi in questa categoria sono con stato, ovvero la natura dell'avviso cambia in base allo stato della connessione di rete. Ad esempio, se i tempi di definizione delle chiamate indicano la latenza ma poi tornano a una soglia normale, questo avviso con priorità media verrà risolto automaticamente in System Center Operations Manager e gli amministratori non dovranno eseguire alcuna azione. Gli avvisi che non possono essere risolti automaticamente vengono in genere indirizzati dagli amministratori nello stesso giorno lavorativo.
   
- **Altri avvisi:** Questi avvisi vengono generati da componenti che potrebbero influire su un utente o un sottoinsieme di utenti specifico. Ad esempio, un avviso tipico è che il servizio Rubrica non è stato in grado di analizzare la voce servizi di dominio Active Directory® per l'utente: testuser@contoso.com. Gli amministratori possono gestire questi avvisi ogni volta che hanno tempo a disposizione.
+ **Altri avvisi:** Questi avvisi vengono generati da componenti che potrebbero influire su un utente o un sottoinsieme di utenti specifico. Ad esempio, un avviso tipico è che il servizio Rubrica non è stato in grado di analizzare la voce di Servizi di dominio Active Directory® per l'utente: testuser@contoso.com. Gli amministratori possono gestire questi avvisi ogni volta che hanno tempo a disposizione.
   
 ### <a name="synthetic-transactions"></a>Transazioni sintetiche
 
@@ -126,7 +126,7 @@ Skype for Business Server 2019 Management Pack offrono una maggiore copertura pe
 
 ||||
 |:-----|:-----|:-----|
-|1   <br/> |Registrazione (accesso utente)  <br/> |Lync Server 2010 e oltre  <br/> |
+|1  <br/> |Registrazione (accesso utente)  <br/> |Lync Server 2010 e oltre  <br/> |
 |2   <br/> |Servizio Rubrica (download di file)  <br/> |Lync Server 2010 e oltre  <br/> |
 |3   <br/> |Address Book Web Query  <br/> |Lync Server 2010 e oltre  <br/> |
 |4   <br/> |Presenza  <br/> |Lync Server 2010 e oltre  <br/> |
@@ -151,7 +151,7 @@ Skype for Business Server 2019 Management Pack offrono una maggiore copertura pe
 |10   <br/> |Conferenze dati  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |11   <br/> |Servizio di conferenza messaggi istantanei  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |12   <br/> | Chat persistente <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
-|13   <br/> |Partecipare a Launcher (riunioni pianificate)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
+|13  <br/> |Partecipare a Launcher (riunioni pianificate)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |14   <br/> |Conferenza telefonica con accesso esterno  <br/> |Disponibile in Skype for Business Server 2015 e oltre <br/> |
 |15   <br/> |Application Sharing Conferencing  <br/> |Disponibile in Skype for Business Server 2015 e oltre <br/> |
 |16   <br/> |Conferenza UCWA (partecipazione a riunioni Web)  <br/> |Disponibile in Skype for Business Server 2015 e oltre <br/> |
@@ -161,7 +161,7 @@ Skype for Business Server 2019 Management Pack offrono una maggiore copertura pe
 ||||
 |:-----|:-----|:-----|
 |17   <br/> |AV Edge Connectivity  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
-|18   <br/> |Connettività AV Edge Exchange messaggi unificati (segreteria telefonica)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
+|18   <br/> |Av Edge Connectivity Exchange unified Message Connectivity (segreteria telefonica)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 |19  <br/> |Chiamata peer-to-peer PSTN  <br/> |Disponibile in Lync Server 2010 e oltre  <br/> |
 |20  <br/> |Messaggistica istantanea XMPP (federazione)  <br/> |Disponibile in Lync Server 2013 e oltre  <br/> |
 | 21  <br/> |Server di interoperabilità video  <br/> |Disponibile in Skype for Business Server 2015 e oltre  <br/> |
@@ -185,13 +185,13 @@ La tabella seguente mostra gli stati di integrità degli oggetti Skype for Busin
 |Skype for Business Server Port Watcher  <br/> |Un'istanza di Port controlla l'esecuzione in un pool.  <br/> |
 |Simple URL Watcher  <br/> |Esegue il probe HTTPS degli URL semplici configurati in una distribuzione.  <br/> |
    
-![SCOM Rollup](../../SfbServer/media/de16195d-3aed-412e-9def-07a481d2ff0f.png)
+![SCOM Rollup.](../../SfbServer/media/de16195d-3aed-412e-9def-07a481d2ff0f.png)
   
-Un Skype for Business Server può contenere più singoli sistemi Skype for Business Server (con più di un ruolo Skype for Business Server, un servizio Skype for Business Server e un Skype for Business Server componente). Di conseguenza, l'errore di un singolo server o componente è meno critico per l'integrità complessiva del pool di Skype for Business Server, perché altri server nello stesso pool possono fornire il servizio dell'applicazione al client. L'integrità verrà rollup a un livello percentuale per il pool Skype for Business Server locale. 
+Un Skype for Business Server può contenere più sistemi Skype for Business Server singoli (con più di un ruolo Skype for Business Server, Skype for Business Server servizio e Skype for Business Server componente). Di conseguenza, l'errore di un singolo server o componente è meno critico per l'integrità complessiva del pool di Skype for Business Server, perché altri server nello stesso pool possono fornire il servizio dell'applicazione al client. L'integrità verrà rollup a un livello percentuale nel pool Skype for Business Server locale. 
   
-Il Skype for Business Server Pool Watcher esegue transazioni sintetiche su un pool Skype for Business Server pool. L'errore consecutivo di una o più transazioni sintetiche (un processo noto come intervallo di polling consecutivo) esegue il rollup dello stato di integrità critico al livello di pool (peggiore di qualsiasi transazione sintetica), come illustrato nel diagramma seguente. 
+Il Skype for Business Server Pool Watcher esegue transazioni sintetiche su un Skype for Business Server pool. L'errore consecutivo di una o più transazioni sintetiche (un processo noto come intervallo di polling consecutivo) esegue il rollup dello stato di integrità critico al livello del pool (peggiore di qualsiasi transazione sintetica), come illustrato nel diagramma seguente. 
   
-![Polling consecutivo di SCOM Rollup](../../SfbServer/media/655de542-cca7-4eda-8052-9a7703ecd0e9.png)
+![Polling consecutivo di SCOM Rollup.](../../SfbServer/media/655de542-cca7-4eda-8052-9a7703ecd0e9.png)
   
 ## <a name="best-practice-create-a-management-pack-for-customizations"></a>Procedura consigliata: Creare un Management Pack per le personalizzazioni
 
@@ -203,7 +203,7 @@ La creazione di un nuovo Management Pack per l'archiviazione delle personalizzaz
   
 ## <a name="links"></a>Collegamenti
 
-I collegamenti seguenti ti connettono alle informazioni sulle attività comuni associate ai Monitoring Pack System Center 2012:
+I collegamenti seguenti si connettono alle informazioni sulle attività comuni associate ai Monitoring Pack System Center 2012:
   
 - [Ciclo di vita del Management Pack](/previous-versions/system-center/system-center-2012-R2/hh212732(v=sc.12))
     

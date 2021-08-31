@@ -12,19 +12,19 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare Microsoft Teams ricerca di directory con ambito per fornire visualizzazioni personalizzate della directory.
+description: Informazioni su come usare Microsoft Teams ricerca nella directory con ambito per fornire visualizzazioni personalizzate della directory.
 f1.keywords:
 - CSH
 ms.custom:
 - NewAdminCenter_Update
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 82fb18f60bf812bcc6b7535cdbf2589e60e1d399
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 844681b4941ef19db21d90e9e1bbc9ed7ee1dde9
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627428"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733075"
 ---
 # <a name="use-microsoft-teams-scoped-directory-search"></a>Usare la ricerca nella directory con ambito di Microsoft Teams
 
@@ -44,10 +44,10 @@ Gli scenari che traggono vantaggio dalle ricerche nella directory con ambito son
 - L'organizzazione ha più società all'interno del tenant che si vogliono mantenere separate. 
 - L'istituto di istruzione vuole limitare le chat tra docenti e studenti. 
  
-Per informazioni su come usare i criteri della rubrica, vedere Criteri [di Protezione delle](/microsoft-365/compliance/information-barriers)informazioni in Exchange Online .
+Per informazioni su come usare i criteri della rubrica, vedere Criteri di Protezione delle informazioni [in Exchange Online](/microsoft-365/compliance/information-barriers).
 
 > [!IMPORTANT]
-> I criteri della rubrica offrono solo una separazione virtuale degli utenti dal punto di vista della directory. È anche importante tenere presente che tutti i dati utente già memorizzati nella cache, prima dell'applicazione dei criteri della rubrica nuovi o aggiornati, rimarranno disponibili per gli utenti per un massimo di 30 giorni.
+> I criteri della rubrica offrono solo una separazione virtuale degli utenti dal punto di vista della directory. È anche importante tenere presente che tutti i dati utente già memorizzati nella cache, prima dell'applicazione dei criteri della rubrica nuovi o aggiornati, rimarranno disponibili per gli utenti fino a 30 giorni.
 
 ## <a name="turn-on-scoped-directory-search"></a>Attivare la ricerca nella directory con ambito
 
@@ -55,9 +55,9 @@ Per informazioni su come usare i criteri della rubrica, vedere Criteri [di Prote
 
 2. Nell'Microsoft Teams di amministrazione selezionare **Impostazioni** a livello di  >  **organizzazione Teams impostazioni**.
 
-3. In **Cerca**, accanto a **Ambito ricerca directory in Teams usando** un criterio rubrica Exchange , attivare l'interruttore . 
+3. In **Cerca**, accanto a Ambito ricerca **directory in Teams usando** un criterio rubrica Exchange , attivare l'interruttore . 
 
-    ![Ricerca nella directory con ambito nell'Microsoft Teams di amministrazione](media/teams-scoped-directory-search-image1.png)
+    ![Ricerca nella directory con ambito nell Microsoft Teams di amministrazione.](media/teams-scoped-directory-search-image1.png)
 
 
 > [!IMPORTANT]

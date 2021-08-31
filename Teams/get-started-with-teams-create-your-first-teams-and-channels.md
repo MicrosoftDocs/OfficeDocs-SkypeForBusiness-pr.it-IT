@@ -18,12 +18,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a452a4370d980403d9ae82a30b993c7f20e1aca0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 5a81df4161e0d9d7d9631338e6a159629fc3df75
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607703"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725465"
 ---
 # <a name="create-your-first-teams-and-channels-in-microsoft-teams"></a>Creare i primi team e canali in Microsoft Teams
 
@@ -65,7 +65,7 @@ Sul lato sinistro di Teams fare clic su **Team**, in fondo all'elenco dei team f
 
 Dopo aver creato il team, invitare altri utenti a parteciparvi. È possibile aggiungere singoli utenti, gruppi e persino interi gruppi di contatti (in precedenza noti come liste di distribuzione). 
 
-![Screenshot di un team di esempio, che mostra il nome del team e la descrizione](media/get-started-with-teams-create-team.png "Screenshot di un team Introduzione a Teams di esempio, che mostra il nome del team e la descrizione") 
+![Screenshot di un team di esempio, che mostra il nome del team e la descrizione.](media/get-started-with-teams-create-team.png "Screenshot di un team Introduzione a Teams di esempio, che mostra il nome del team e la descrizione") 
 
 ### <a name="add-a-team-owner"></a>Aggiungere un proprietario del team
 Trovare il team creato e fare clic su **Altre opzioni ˙˙˙** > **Gestisci il team**. Passare quindi alla scheda **Membri**. Individuare le persone che si vogliono designare come proprietari del team. In **Ruolo** fare clic su **Proprietario**.
@@ -73,7 +73,7 @@ Trovare il team creato e fare clic su **Altre opzioni ˙˙˙** > **Gestisci il t
 ### <a name="create-a-channel-in-a-team"></a>Creare un canale in un team
 Trovare il team creato e fare clic su **Altre opzioni ...** > **Aggiungi canale**. È anche possibile fare clic su **Gestisci il team** e aggiungere un canale nella scheda **Canali**. 
 
-![Screenshot delle opzioni disponibili quando si fa clic su Altre opzioni](media/get-started-with-teams-add-channel.png "Screenshot dell'opzione Aggiungi canale, dell'opzione Gestisci il team e delle altre opzioni disponibili quando si fa clic su Altre opzioni in un team") 
+![Screenshot delle opzioni disponibili quando si fa clic su Altre opzioni.](media/get-started-with-teams-add-channel.png "Screenshot dell'opzione Aggiungi canale, dell'opzione Gestisci il team e delle altre opzioni disponibili quando si fa clic su Altre opzioni in un team") 
 
 Assegnare al canale un nome descrittivo che consenta agli utenti di comprenderne facilmente lo scopo. 
 
@@ -81,7 +81,7 @@ Come proprietario del team, è possibile aggiungere automaticamente canali prefe
 
 Ecco un esempio del canale "Procedure" nel team "Introduzione a Teams", con schede aggiunte che collegano alle pagine Web di Teams &ndash; Video di formazione su Teams, Centro assistenza di Teams e Link per il download di Teams. 
 
-![Screenshot delle schede aggiunte al team di esempio](media/get-started-with-teams-add-tabs.png "Screenshot delle schede aggiunte al team Introduzione a Teams di esempio") 
+![Screenshot delle schede aggiunte al team di esempio.](media/get-started-with-teams-add-tabs.png "Screenshot delle schede aggiunte al team Introduzione a Teams di esempio") 
 
 ## <a name="next-steps"></a>Passaggi successivi
 Passare a [Onboarding degli early adopter](get-started-with-teams-onboard-early-adopters.md).

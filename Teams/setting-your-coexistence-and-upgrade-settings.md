@@ -18,19 +18,19 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: bb4c5de3db934b9a14a58504b9a7b7b676a038051b347560f3f7121577849d1a
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 39d2592d15e0c74f21109edae9e5af29206e6050
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54345325"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725985"
 ---
 # <a name="set-your-coexistence-and-upgrade-settings"></a>Configurare le impostazioni di aggiornamento e coesistenza
 
 
-Quando si aggiornano i Skype for Business utenti per usare Teams, sono disponibili diverse opzioni per semplificare il processo per gli utenti. È possibile apportare contemporaneamente le impostazioni di coesistenza e aggiornamento per tutti gli utenti dell'organizzazione oppure apportare modifiche alle impostazioni per un singolo o set di utenti dell'organizzazione. Si noti che le versioni precedenti Skype for Business client potrebbero non rispettare queste impostazioni. Per altre informazioni sulle Skype for Business client, passare alla pagina Skype for Business [download e aggiornamenti.](/skypeforbusiness/software-updates) 
+Quando si aggiornano i Skype for Business utenti per l'uso Teams, sono disponibili diverse opzioni per semplificare il processo per gli utenti. È possibile apportare contemporaneamente le impostazioni di coesistenza e aggiornamento per tutti gli utenti dell'organizzazione oppure apportare modifiche alle impostazioni per un singolo o un set di utenti dell'organizzazione. Tenere presente che le versioni precedenti Skype for Business client potrebbero non rispettare queste impostazioni. Per altre informazioni sulle Skype for Business client, passare alla pagina Skype for Business [download e aggiornamenti.](/skypeforbusiness/software-updates) 
 
-Per una migliore comprensione delle modalità [disponibili,](teams-and-skypeforbusiness-coexistence-and-interoperability.md) vedere Comprendere Microsoft Teams e Skype for Business coesistenza e interoperabilità o [Coesistenza](coexistence-chat-calls-presence.md)con Skype for Business.  
+Per una migliore comprensione delle modalità [disponibili,](teams-and-skypeforbusiness-coexistence-and-interoperability.md) vedere Informazioni su Microsoft Teams e Skype for Business coesistenza e interoperabilità o [Coesistenza](coexistence-chat-calls-presence.md)con Skype for Business .  
 
 > [!IMPORTANT]
 > [!INCLUDE [upgrade-disclaimer](includes/upgrade-disclaimer.md)]
@@ -38,9 +38,9 @@ Per una migliore comprensione delle modalità [disponibili,](teams-and-skypeforb
 
 ## <a name="set-upgrade-options-for-all-users-in-your-organization"></a>Impostare le opzioni di aggiornamento per tutti gli utenti dell'organizzazione
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
-1. [Nell'Microsoft Teams di amministrazione,](https://admin.teams.microsoft.com/)nel riquadro di spostamento sinistro, passare a **Impostazioni** a livello di organizzazione  >  **Teams aggiornamento**. 
+1. [Nell'Microsoft Teams di amministrazione,](https://admin.teams.microsoft.com/)nel riquadro di spostamento sinistro, passare a **Impostazioni** a livello di organizzazione  >  **Teams aggiornamento.** 
 
 2. Nella parte superiore della pagina **Teams di aggiornamento** modificare le opzioni seguenti nel modo desiderato.
 
@@ -48,19 +48,19 @@ Per una migliore comprensione delle modalità [disponibili,](teams-and-skypeforb
         - **Isole:** usare questa impostazione se si vuole consentire agli utenti di usare contemporaneamente Skype for Business e Teams.
         - **Skype for Business: usare** questa impostazione se si vuole che gli utenti usino solo Skype for Business.
         - **Skype for Business con Teams** collaborazione: usare questa impostazione se si vuole che gli utenti usino Skype for Business oltre a usare Teams per la collaborazione di gruppo (canali).
-        - **Skype for Business** con Teams di collaborazione e riunioni: usare questa impostazione se si vuole che gli utenti usino Skype for Business oltre a usare Teams per la collaborazione di gruppo (canali) e le riunioni Teams riunioni.
-        - **Teams: usare** questa impostazione se si vuole che gli utenti usino solo Teams. Si noti che, anche con questa impostazione, gli utenti possono comunque partecipare alle riunioni ospitate in Skype for Business.
+        - **Skype for Business** con Teams di collaborazione e riunioni: usare questa impostazione se si vuole che gli utenti usino Skype for Business oltre a usare Teams per la collaborazione di gruppo (canali) e Teams riunioni.
+        - **Teams: usare** questa impostazione se si vuole che gli utenti usino solo Teams. Anche con questa impostazione, gli utenti possono comunque partecipare alle riunioni ospitate in Skype for Business.
 
           > [!IMPORTANT]
           > È possibile assegnare la modalità TeamsOnly all'intero tenant solo dopo aver completato entrambi i passaggi seguenti:
           >  - Tutti gli utenti locali sono stati spostati in Teams solo usando Move-CsUser nel set di strumenti Skype for Business Server locale.
           >  - Sono stati aggiornati tutti i record DNS Skype for Business in modo che puntino a Microsoft 365. 
           >
-          > Per altre informazioni, vedere [Disabilitare la configurazione ibrida per completare la migrazione a Teams solo](/skypeforbusiness/hybrid/cloud-consolidation-disabling-hybrid).
+          > Per altre informazioni, vedere [Disabilitare la configurazione ibrida per completare la](/skypeforbusiness/hybrid/cloud-consolidation-disabling-hybrid)migrazione a Teams solo .
         
     - Impostare **Avvisa Skype for Business utenti che Teams disponibili per l'aggiornamento**. Se si attiva questa opzione, gli utenti Skype for Business che presto verranno aggiornati all'app Teams.
 
-    - Impostare **l'app Preferred per consentire agli utenti di partecipare a Skype for Business riunioni.** Questa impostazione determina quale app viene usata per partecipare a Skype for Business riunioni e viene rispettata indipendentemente dal valore della modalità di coesistenza.
+    - Impostare **l'app Preferred per consentire agli utenti di partecipare Skype for Business riunioni**. Questa impostazione determina quale app viene usata per partecipare a Skype for Business riunioni e viene rispettata indipendentemente dal valore della modalità di coesistenza.
       - **Skype App Riunioni**
       - **Skype for Business con funzionalità limitate**
 
@@ -70,7 +70,7 @@ Per una migliore comprensione delle modalità [disponibili,](teams-and-skypeforb
 
 ## <a name="set-upgrade-options-for-a-single-user-in-your-organization"></a>Impostare le opzioni di aggiornamento per un singolo utente dell'organizzazione
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro passare a **Utenti** e quindi selezionare l'utente nell'elenco. 
 2. Nella scheda **Account** per l'utente, in **Teams,** fare clic su **Modifica.**
@@ -79,9 +79,9 @@ Per una migliore comprensione delle modalità [disponibili,](teams-and-skypeforb
      - **Isole:** usare questa impostazione se si vuole che l'utente sia in grado di usare sia Skype for Business che Teams. 
      - **Skype for Business: usare** questa impostazione se si vuole che l'utente usi Skype for Business.
      - **Skype for Business con Teams** collaborazione: usare questa impostazione se si vuole che l'utente usi Skype for Business oltre a usare Teams per la collaborazione di gruppo (canali).
-      - **Skype for Business** con Teams di collaborazione e riunioni: usare questa impostazione se si vuole che l'utente usi Skype for Business oltre a usare Teams per la collaborazione di gruppo (canali) e Teams riunioni.
+      - **Skype for Business** con Teams di collaborazione e riunioni: usare questa impostazione se si vuole che l'utente usi Skype for Business oltre a usare Teams per la collaborazione di gruppo (canali) e le riunioni Teams riunioni.
      - **Teams: usare** questa impostazione se si vuole che l'utente usi solo Teams. L'utente potrà comunque partecipare a Skype for Business riunioni.
-4. Se si seleziona una modalità di **coesistenza** diversa da Usa impostazioni a livello di **organizzazione,** è possibile abilitare le notifiche nell'app Skype for Business dell'utente che esegue l'aggiornamento a Teams sarà disponibile a breve. È possibile abilitare questa notifica per l'utente attivando l'opzione **Notifica Skype for Business'utente.**
+4. Se si seleziona una modalità di **coesistenza** diversa da Usa impostazioni a livello di **organizzazione,** è possibile abilitare le notifiche nell'app Skype for Business dell'utente che esegue l'aggiornamento a Teams a breve. È possibile abilitare questa notifica per l'utente attivando l'opzione Notifica **Skype for Business'utente.**
 5. Fare **clic su** Salva dopo aver apportato le modifiche.
 
 ### <a name="related-topics"></a>Argomenti correlati

@@ -22,12 +22,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Learn how to assign Microsoft the dial-in conferencing provider for Skype for Business.
-ms.openlocfilehash: 982d0515468109d1adf8ac2d7f00cce36732faf7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 360d580b57ca9528eddf96d80b773c04c71c361b
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58620302"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727715"
 ---
 # <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di audioconferenza
 
@@ -42,11 +42,11 @@ L'audioconferenza Microsoft fornisce i numeri di telefono di accesso esterno, pi
   
 ## <a name="assign-microsoft-as-the-audio-conferencing-provider"></a>Assegnare Microsoft come provider di servizi di audioconferenza
 
-### <a name="an-icon-showing-the-skype-for-business-logo-using-the-skype-for-business-admin-center"></a>![Icona che mostra il logo Skype for Business](../images/sfb-logo-30x30.png) Utilizzo dell'interfaccia di amministrazione di Skype for Business
+### <a name="an-icon-showing-the-skype-for-business-logo-using-the-skype-for-business-admin-center"></a>![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) Utilizzo dell'interfaccia di amministrazione di Skype for Business
 
 1. Passare **all'interfaccia Microsoft Teams di amministrazione**  >  **legacy**.
     
-2. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a **Servizi di audioconferenza.**
+2. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a **Audioconferenze**.
     
 3. Se viene visualizzata un'intestazione di notifica che indica che vi sono utenti che dispongono di una licenza **Audioconferenza** assegnata ma non dispone di Microsoft impostato come i provider di servizi di conferenza audio sono ancora stati, fare clic **Clicca qui per spostarli**. Se non viene visualizzata l'intestazione, nell' **interfaccia di amministrazione di Skype for Business** fare clic su **utenti** e quindi selezionare il filtro **utenti pronti per audioconferenza** .
     
@@ -65,7 +65,7 @@ L'audioconferenza Microsoft fornisce i numeri di telefono di accesso esterno, pi
 Per risparmiare tempo o automatizzare questa operazione, è possibile usare lo script di PowerShell seguente per impostare Microsoft come provider di servizi di audioconferenza per un numero limitato di utenti.
 
 > [!NOTE]
-> Quando il provider viene cambiato da un altro provider a **Microsoft,** le informazioni di audioconferenza per l'utente (ID conferenza, numeri a pagamento e numero verde) verranno sostituite. Salva queste informazioni prima di modificare il provider. 
+> Quando il provider viene cambiato da un altro provider a **Microsoft,** le informazioni relative ai servizi di audioconferenza per l'utente (ID conferenza, numeri a pagamento e numero verde) verranno sostituite. Salva queste informazioni prima di modificare il provider. 
 
   
 Per impostare il provider su Microsoft per un numero limitato di utenti, è possibile usare il cmdlet [Enable-CsOnlineDialInConferencingUser.](/powershell/module/skype/Enable-CsOnlineDialInConferencingUser)
@@ -74,7 +74,7 @@ Per impostare il provider su Microsoft per un numero limitato di utenti, è poss
 ### <a name="using-a-windows-powershell-script-for-a-large-number-of-users"></a>Utilizzo di uno script Windows PowerShell per un grande numero di utenti
 Per risparmiare tempo o automatizzare questa operazione, è possibile usare lo script di PowerShell seguente per impostare Microsoft come provider di servizi di audioconferenza per un numero elevato di utenti.
 
-Quando il provider viene cambiato da un altro provider a **Microsoft,** le informazioni di audioconferenza per l'utente (ID conferenza, numeri a pagamento e numero verde) verranno sostituite. Salva queste informazioni prima di modificare il provider. 
+Quando il provider viene cambiato da un altro provider a **Microsoft,** le informazioni relative ai servizi di audioconferenza per l'utente (ID conferenza, numeri a pagamento e numero verde) verranno sostituite. Salva queste informazioni prima di modificare il provider. 
   
 Si salva un file di script PowerShell lo script seguente e quindi viene eseguito tramite uno dei parametri di input.
 

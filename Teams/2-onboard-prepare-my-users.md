@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 30a844f0ecd619e609a61500ac1b845cfbbad553
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cd7c41070e867b96d9238ba280d828a3081352f5
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58623388"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725685"
 ---
 # <a name="prepare-my-users"></a>Preparare gli utenti
 
@@ -48,7 +48,7 @@ L'impostazione della visione del progetto consente ai principali stakeholder di 
 
 L'immagine seguente è un esempio di rendiconto visivo-valore per un cliente che esegue l'aggiornamento da Skype for Business a Teams.
 
-![Tabella a due colonne con vision e valore](media/prepare-my-users-new-image1.png "Tabella a due colonne con Vision: perché lo stiamo facendo? (livello dell'organizzazione) a sinistra e Valore: cosa c'è in esso? (livello utente) a destra")
+![Tabella a due colonne che mostra Vision e Value.](media/prepare-my-users-new-image1.png "Tabella a due colonne con Vision: perché lo stiamo facendo? (livello dell'organizzazione) a sinistra e Valore: cosa c'è in esso? (livello utente) a destra")
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Hai articolato il vantaggio e il valore per gli utenti in modo da ottenere il loro buy-in per questa nuova soluzione?</li></ul></td></tr>
@@ -98,7 +98,7 @@ La conformità dell'organizzazione consente di determinare quanto gli utenti pot
 
 ## <a name="assess-your-user-base"></a>Valutare la base di utenti
 
-L'analisi a livello di persone consente di comprendere le persone, le coorti e i casi d'uso degli utenti. Con il tempo necessario per capire chi sono gli utenti e come funzionano, è possibile assicurarsi che abbia tutto il necessario per avere successo durante l'implementazione della modifica. Può includere messaggistica mirata, formazione o persino dispositivi come cuffie e webcam. Ad esempio, un dirigente potrebbe aspettarsi una formazione uno-a-uno, mentre i rappresentanti di campo in viaggio potrebbero trarre vantaggio da un video di formazione che possono guardare a loro piacimento. Inoltre, l'analisi a livello di persone consente di identificare chi deve iniziare a usare la nuova funzionalità oggi stesso e chi potrebbe essere meglio servito in attesa.
+L'analisi a livello di persone consente di comprendere le persone, le coorti e i casi d'uso degli utenti. Con il tempo necessario per capire chi sono gli utenti e come funzionano, è possibile assicurarsi che abbia tutto il necessario per avere successo durante l'implementazione della modifica. Può includere messaggistica mirata, formazione o persino dispositivi come cuffie e webcam. Ad esempio, un dirigente potrebbe aspettarsi una formazione uno-a-uno, mentre i rappresentanti di campo in viaggio potrebbero trarre vantaggio da un video di formazione che possono guardare a proprio piacimento. Inoltre, l'analisi a livello di persone consente di identificare chi deve iniziare a usare la nuova funzionalità oggi stesso e chi potrebbe essere meglio servito in attesa.
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Alcuni utenti o coorti hanno una dipendenza fondamentale da questa soluzione per eseguire il proprio lavoro in modo efficace?</li><li>Esistono casi di utilizzo specifici che possono essere semplificati con questa nuova soluzione?</li></ul></td></tr>
@@ -108,7 +108,7 @@ L'analisi a livello di persone consente di comprendere le persone, le coorti e i
 
 Per ogni gruppo di persone, discutere quanto segue con il team di progetto:
 
--   Quali sono le caratteristiche principali di questo gruppo,ovvero qual è un tipico "giorno della vita"?
+-   Quali sono le caratteristiche principali di questo gruppo, ovvero qual è un tipico "giorno della vita"?
 
 -   In che modo questo gruppo trarrà vantaggio dalla nuova soluzione? Quali caratteristiche e funzionalità dovranno essere efficaci?
 
@@ -124,13 +124,13 @@ Per ogni gruppo di persone, discutere quanto segue con il team di progetto:
 
     -   Supporto (self-service, helpdesk, campioni)?  
 
--   Questo gruppo è un buon candidato per un programma pilota o per l'adozione anticipata? In tal caso, pianificare l'acquisto da questi utenti per partecipare al progetto pilota. Per altre informazioni sull'implementazione di un programma pilota di successo, vedere Progetti [pilota Teams insieme a Skype for Business](pilot-essentials.md).
+-   Questo gruppo è un buon candidato per un programma pilota o per l'adozione anticipata? In tal caso, pianificare l'acquisto da questi utenti per partecipare al progetto pilota. Per altre informazioni sull'implementazione di un programma pilota di successo, vedere [Progetti pilota Teams insieme a Skype for Business](pilot-essentials.md).
 
 L'immagine seguente è un esempio di tabella persona.
 
-![Tabella Dei valori che elenca i dettagli della persona](media/prepare-my-users-image2.png "Tabella che elenca le persone con i ruoli comuni e le dipendenze delle soluzioni di comunicazione e collaborazione. La persona dirigente è evidenziata con dettagli sul profilo (giorno della vita) e sulle caratteristiche, i dispositivi e la formazione di cui un dirigente ha bisogno.")
+![Tabella Dei valori che elenca i dettagli della persona.](media/prepare-my-users-image2.png "Tabella che elenca le persone con i ruoli comuni e le dipendenze delle soluzioni di comunicazione e collaborazione. La persona dirigente è evidenziata con dettagli sul profilo (giorno della vita) e sulle caratteristiche, i dispositivi e la formazione di cui un dirigente ha bisogno.")
 
-Per ogni caso d'uso, discutere quanto segue con il team di progetto:
+Per ogni caso di utilizzo, discutere quanto segue con il team di progetto:
 
 -   Quali sono le caratteristiche principali per questo caso/scenario di utilizzo?
 

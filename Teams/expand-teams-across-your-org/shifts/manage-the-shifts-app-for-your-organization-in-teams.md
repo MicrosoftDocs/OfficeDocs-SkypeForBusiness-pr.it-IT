@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 8c2e8a8e976e6c92355bc894447353f436b706bc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7e58b7452ec3e89ded6f24da17490cf476885d72
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608973"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727835"
 ---
 # <a name="manage-the-shifts-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Turni per l'organizzazione in Microsoft Teams
 
@@ -74,11 +74,11 @@ Per consentire o impedire a utenti specifici dell'organizzazione di usare Turni,
 
 I criteri di configurazione dell’app consentono di personalizzare Teams per evidenziare le app più importanti per gli utenti dell'organizzazione. Le app impostate in un criterio vengono aggiunte alla barra delle app&mdash;la barra sul lato del client desktop di Teams e nella parte inferiore dei client mobile di Teams&mdash;dove gli utenti possono accedervi rapidamente e facilmente.
  
-Teams include un criterio di configurazione dell'app FirstLineWorker predefinito che è possibile assegnare ai lavoratori in prima linea nell'organizzazione. Per impostazione predefinita, il criterio include le app Attività, Turni, Chat e Chiamate.
+Teams include un criterio di configurazione dell'app FirstLineWorker predefinito che è possibile assegnare ai lavoratori in prima linea dell'organizzazione. Per impostazione predefinita, il criterio include le app Attività, Turni, Chat e Chiamate.
 
-Per visualizzare i criteri FirstLineWorker, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Criteri di configurazione delle **app** Teams  >  app.
+Per visualizzare il criterio FirstLineWorker, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a Criteri di configurazione delle **app** Teams  >  app.
 
-![Screenshot dei criteri di configurazione dell'app FirstLineWorker](../../media/firstline-worker-app-setup-policy.png "Screenshot dei criteri di configurazione dell'app FirstLineWorker nell'Microsoft Teams di amministrazione")
+![Screenshot dei criteri di configurazione dell'app FirstLineWorker.](../../media/firstline-worker-app-setup-policy.png "Screenshot dei criteri di configurazione dell'app FirstLineWorker nell'Microsoft Teams di amministrazione")
 
 #### <a name="assign-the-firstlineworker-app-setup-policy-to-users"></a>Assegnare i criteri di configurazione dell'app FirstLineWorker agli utenti
 

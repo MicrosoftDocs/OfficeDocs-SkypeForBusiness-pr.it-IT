@@ -20,28 +20,28 @@ ms.custom:
 - Setup
 - ms.lync.lac.OrgMobileNotification
 description: Informazioni su come attivare o disattivare le notifiche dei telefoni cellulari in modo che gli utenti possano ricevere avvisi relativi a messaggi istantanei in arrivo, segreteria telefonica e messaggi istantanei persi.
-ms.openlocfilehash: f44daa163dcce9298a43310b9157256c4b44fbb2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c085c02dbae8fa07b73c39c6592f4ffa0da12d55
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584420"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727565"
 ---
 # <a name="turn-on-or-off-mobile-phone-notifications"></a>Attivare o disattivare le notifiche per cellulari
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!IMPORTANT]
-> L Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la gestione Skype for Business ora si Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+> L'Microsoft Teams di amministrazione ha sostituito l'interfaccia Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la Skype for Business sono ora disponibili nell'Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
 
 Con l'assegnazione dei ruoli di amministratore **[in Microsoft 365 Apps for business](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** per l'organizzazione, è possibile scegliere se gli utenti di Skype for Business ricevono avvisi relativi ai messaggi istantanei in arrivo e persi quando sono sul proprio cellulare o tablet.
   
-Nei telefoni Android Windows telefoni vengono Skype for Business le notifiche in tempo reale. Per Windows Phone, iPhone e dispositivi iPad, tuttavia, la notifica push viene usata per visualizzare gli avvisi ogni volta che non si usa attivamente Skype for Business sul telefono o tablet.
+Nei telefoni Android Windows telefoni, Skype for Business le notifiche vengono popup in tempo reale. Per Windows Phone, iPhone e dispositivi iPad, tuttavia, la notifica push viene usata per visualizzare gli avvisi ogni volta che non si usa attivamente Skype for Business sul telefono o tablet.
   
-## <a name="turn-push-notifications-off-for-all-the-windows-phone-or-apple-devices-in-your-organization"></a>Disattivare le notifiche push per tutti i Windows Phone o i dispositivi Apple dell'organizzazione
+## <a name="turn-push-notifications-off-for-all-the-windows-phone-or-apple-devices-in-your-organization"></a>Disattivare le notifiche push per tutti i dispositivi Windows Phone o Apple dell'organizzazione
 <a name="__top"> </a>
 
-![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
 
 1. Accedere a Microsoft 365.
     

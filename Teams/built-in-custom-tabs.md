@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni su come usare le schede predefinite e personalizzate per includere funzionalità come conversazioni, file, mappe e altro ancora.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a5eb82e322f8e8f28c7e1afc8c3c0b76ce277a36
-ms.sourcegitcommit: 6a87a4180519e493ac115c2faadb9ccae26d5a35
+ms.openlocfilehash: cf48eef40ec71d1ca661b98ce6f6c842fe636942
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/17/2021
-ms.locfileid: "58372066"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727175"
 ---
 # <a name="use-built-in-and-custom-tabs-in-microsoft-teams"></a>Usare schede predefinite e personalizzate in Microsoft Teams
 
@@ -53,7 +53,7 @@ I proprietari e i membri del team possono aggiungere schede a un canale, una cha
 
 - Le istruzioni dettagliate vengono fornite quando un membro del team prova ad aggiungere una scheda personalizzata al canale o alla chat. Quando una scheda personalizzata viene aggiunta  a un canale, viene creata una conversazione a schede che consente ai membri del team di avere discussioni mirate sul contenuto.
 
-    ![Screenshot di una scheda personalizzata con una conversazione a schede a destra](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image3.png)
+    ![Screenshot di una scheda personalizzata con una conversazione a schede a destra.](media/Use_built-in_and_custom_tabs_in_Microsoft_Teams_image3.png)
 
 ## <a name="develop-custom-tabs"></a>Sviluppare schede personalizzate
 

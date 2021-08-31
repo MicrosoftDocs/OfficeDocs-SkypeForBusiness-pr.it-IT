@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Inviare agli utenti un messaggio di posta elettronica con le loro informazioni di audioconferenza su Skype for Business online.
-ms.openlocfilehash: 8cb4d51fedc5cd12a3ee7a95b0d83c254526abd8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 428ff78fe501200ef9607a03d76c034007517cf0
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584450"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727675"
 ---
 # <a name="send-an-email-to-a-user-with-their-audio-conferencing-information-in-skype-for-business-online"></a>Inviare un messaggio di posta elettronica a un utente con le informazioni relative ai servizi di audioconferenza in Skype for Business Online
 
@@ -35,7 +35,7 @@ ms.locfileid: "58584450"
 > [!Note]
 > Per informazioni sull'invio di informazioni di Audioconferenza agli utenti su Microsoft Teams, consulta [Inviare un messaggio di posta elettronica a un utente con le informazioni di Audioconferenza su Microsoft Teams](/MicrosoftTeams/send-an-email-to-a-user-with-their-dial-in-information-in-teams).
 
-In alcuni casi, potrebbe essere necessario inviare agli utenti di Skype for Business le informazioni di Audioconferenza. A questo scopo, usare l'interfaccia di  amministrazione **Skype for Business** e fare clic su Invia info conferenza tramite posta elettronica sotto le proprietà di un utente. Quando invii questo messaggio di posta elettronica, conterrà tutte le informazioni relative ai servizi di audioconferenza, tra cui:
+In alcuni casi, potrebbe essere necessario inviare agli utenti di Skype for Business le informazioni di Audioconferenza. A questo scopo, usare l'interfaccia di  amministrazione **Skype for Business** e fare clic su Invia informazioni conferenza tramite posta elettronica sotto le proprietà di un utente. Quando invii questo messaggio di posta elettronica, conterrà tutte le informazioni relative ai servizi di audioconferenza, tra cui:
   
 - Il numero di telefono per le conferenze o per l'accesso esterno dell'utente.
     
@@ -44,7 +44,7 @@ In alcuni casi, potrebbe essere necessario inviare agli utenti di Skype for Busi
    
 Ecco un esempio del messaggio di posta elettronica inviato:
   
-![Posta elettronica di conferenza telefonica con accesso esterno](../images/audio-conferencing-info.png)
+![Posta elettronica per i servizi di conferenza telefonica con accesso esterno.](../images/audio-conferencing-info.png)
 
 > [!NOTE]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]
@@ -113,7 +113,7 @@ Ecco un esempio del messaggio di posta elettronica inviato:
     
   - [Gestire Office 365 o Microsoft 365 con Windows PowerShell nel modo migliore](/previous-versions//dn568025(v=technet.10))
     
-- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo dell'interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
+- Windows PowerShell offre molti vantaggi in termini di velocità, semplicità e produttività rispetto all'uso solo del interfaccia di amministrazione di Microsoft 365, ad esempio quando si apportano modifiche alle impostazioni per molti utenti contemporaneamente. Per informazioni su questi vantaggi, consulta i seguenti argomenti: 
     
   - [Introduzione a Windows Powershell e Skype for Business online](../set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
     

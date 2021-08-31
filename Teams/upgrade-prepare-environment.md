@@ -20,16 +20,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b12ed0ad9b662f4cc36a68ae7ee3b4340960517f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4d3cae31f89b625c840fcc946d2b282a58bca445
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616142"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725445"
 ---
 # <a name="prepare-your-environment-for-upgrading-to-teams"></a>Preparare l'ambiente per l'aggiornamento a Teams
 
-![Diagramma del percorso di aggiornamento, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
+![Diagramma del percorso di aggiornamento, enfatizzando la fase di preparazione tecnica.](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase Technical Readiness del percorso di aggiornamento, un'attività che viene completata in parallelo con la fase Di conformità dell'utente. Prima di procedere, verificare di aver completato queste attività nelle fasi precedenti:
 
@@ -45,5 +45,5 @@ Completare queste attività in parallelo con la preparazione dell'utente:
 - [Preparare il personale IT per](upgrade-prepare-IT-pros.md) assicurarsi di avere tutto il necessario per un percorso di aggiornamento efficace.
 - Verificare che l'ambiente soddisfi [tutti](upgrade-plan-journey-prerequisites.md)i prerequisiti e comprendere le dipendenze tra Microsoft 365 o Office 365 servizi e Teams.
 - [Valutare l'ambiente](upgrade-plan-journey-evaluate-environment.md) eseguendo l'individuazione dell'ambiente usando un questionario di esempio per confermare la disponibilità dell'organizzazione a intraprendere un percorso di aggiornamento a Teams.
-- [Preparare la rete con](prepare-network.md) la pianificazione, la preparazione e l'esecuzione dei passaggi di correzione necessari per la rete per supportare i Teams di lavoro.
-- [Preparare il servizio per](upgrade-prepare-environment-prepare-service.md) l'implementazione usando gli elenchi di controllo di onboarding per assicurarsi che la configurazione di Teams sia pronta per supportare la migrazione degli utenti da Skype for Business a Teams.
+- [Preparare la rete con](prepare-network.md) la pianificazione, la preparazione e l'esecuzione di tutte le operazioni di correzione necessarie per supportare i carichi di lavoro Teams rete.
+- [Preparare il servizio](upgrade-prepare-environment-prepare-service.md) per l'implementazione usando gli elenchi di controllo di onboarding per assicurarsi che la configurazione di Teams sia pronta per supportare la migrazione degli utenti da Skype for Business a Teams.

@@ -19,13 +19,13 @@ ms.custom:
 - seo-marvel-apr2020
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft Teams semplificare, semplificare e fornire coerenza durante la gestione dei criteri per gruppi di utenti.
-ms.openlocfilehash: 2db3b926a7e241a83ab46de4285cc4b7ef0882e2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni su come usare e gestire i pacchetti di criteri in Microsoft Teams per semplificare, semplificare e fornire coerenza durante la gestione dei criteri per gruppi di utenti.
+ms.openlocfilehash: 7a9e7c8a83d7700840a49febdf0ab88104a7e2d9
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58637072"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58750048"
 ---
 # <a name="microsoft-teams-manage-policy-packages"></a>Microsoft Teams: Gestire i pacchetti di criteri
 
@@ -33,16 +33,16 @@ Un Pacchetto di criteri in Microsoft Teams è una raccolta di criteri e impostaz
 
 È possibile usare i [pacchetti di criteri inclusi in Teams](#policy-packages-included-in-teams) o creare pacchetti di criteri [personalizzati.](#custom-policy-packages)
 
-:::image type="content" source="media/policy-packages-admin-center.png" alt-text="Screenshot della pagina Pacchetti di criteri nell'interfaccia di amministrazione":::
+:::image type="content" source="media/policy-packages-admin-center.png" alt-text="Screenshot della pagina Pacchetti di criteri nell'interfaccia di amministrazione.":::
 
-È possibile personalizzare le impostazioni dei criteri in un pacchetto di criteri in base alle esigenze degli utenti. Quando si modificano le impostazioni dei criteri in un pacchetto, tutti gli utenti assegnati al pacchetto ottengono le impostazioni aggiornate. È possibile gestire i pacchetti di criteri usando l Microsoft Teams di amministrazione o PowerShell.
+È possibile personalizzare le impostazioni dei criteri in un pacchetto di criteri in base alle esigenze degli utenti. Quando si modificano le impostazioni dei criteri in un pacchetto, tutti gli utenti assegnati al pacchetto ottengono le impostazioni aggiornate. È possibile gestire i pacchetti di criteri usando l'interfaccia Microsoft Teams di amministrazione o PowerShell.
 
 > [!NOTE]
 > Ogni utente richiederà il componente aggiuntivo Comunicazioni avanzate per ricevere un'assegnazione del pacchetto di criteri personalizzata. Per ulteriori informazioni, vedere [Componente aggiuntivo per comunicazioni avanzate per Microsoft Teams](/microsoftteams/teams-add-on-licensing/advanced-communications).
 
 ## <a name="what-is-a-policy-package"></a>Che cos'è un pacchetto di criteri?
 
-I pacchetti di criteri consentono di controllare Teams funzionalità che si vogliono consentire o limitare per set specifici di persone all'interno dell'organizzazione. Ogni pacchetto di criteri in Teams è progettato in base a un ruolo utente e include criteri e impostazioni dei criteri predefiniti che supportano le attività di collaborazione e comunicazione tipiche per quel ruolo.
+I pacchetti di criteri consentono di controllare Teams caratteristiche che si vogliono consentire o limitare per set specifici di persone all'interno dell'organizzazione. Ogni pacchetto di criteri in Teams è progettato in base a un ruolo utente e include criteri predefiniti e impostazioni dei criteri che supportano le attività di collaborazione e comunicazione tipiche per quel ruolo.
 
 I pacchetti di criteri supportano i Teams seguenti:
 
@@ -70,7 +70,7 @@ Teams attualmente include i pacchetti di criteri seguenti.
 |Operatore dell'informazione sanitaria  |Crea un set di criteri e impostazioni di criteri che forniscono agli operatori dell'informazione, ad esempio personale in ambito IT e finanziario, responsabili della conformità, accesso completo alle chat, alle chiamate e alle riunioni.|
 |Sale per i pazienti nell'organizzazione sanitaria  |Crea un set di criteri e impostazioni di criteri da applicare alle sale dei pazienti nell'organizzazione sanitaria.|
 |Utente small e medium business (Business Voice) |Crea un criterio di configurazione dell'app che include le app per un'esperienza vocale aziendale.|
-|Utente di piccole e medie imprese (senza Voce aziendale) |Crea un criterio di configurazione dell'app pertinente per gli utenti di piccole e medie Teams (esperienza vocale non aziendale).
+|Utente di piccole e medie imprese (senza Voce aziendale) |Crea criteri di configurazione dell'app pertinenti per gli utenti di piccole e medie Teams (esperienza vocale non aziendale).
 |Responsabile della sicurezza pubblica   |Crea un set di criteri e impostazioni dei criteri che si applicano ai responsabili della sicurezza pubblica nell'organizzazione.|
 
 > [!NOTE]
@@ -79,7 +79,7 @@ Teams attualmente include i pacchetti di criteri seguenti.
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri.
 Ad esempio, quando si assegna il pacchetto di criteri Education (Teacher) agli insegnanti dell'istituto di istruzione, viene creato un criterio denominato Education_Teacher per ogni criterio nel pacchetto.
 
-![Screenshot del pacchetto di criteri Education (Teacher)](media/policy-packages-education_teacher.png)
+![Screenshot del pacchetto di criteri Education (Teacher).](media/policy-packages-education_teacher.png)
 
 ## <a name="custom-policy-packages"></a>Pacchetti di criteri personalizzati
 
@@ -91,11 +91,11 @@ Per creare un nuovo pacchetto di criteri personalizzato:
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare **Pacchetti di** criteri e quindi fare clic su **Aggiungi.**
 
-    :::image type="content" source="media/policy-packages-add.png" alt-text="Screenshot del pulsante Aggiungi nella pagina Pacchetti criteri nell'interfaccia di amministrazione":::
+    :::image type="content" source="media/policy-packages-add.png" alt-text="Screenshot del pulsante Aggiungi nella pagina Pacchetti criteri nell'interfaccia di amministrazione.":::
 
 2. Immettere un nome e una descrizione per il pacchetto.
 
-    :::image type="content" source="media/policy-packages-add-custom.png" alt-text="Screenshot dell'aggiunta di un nuovo pacchetto di criteri personalizzato":::
+    :::image type="content" source="media/policy-packages-add-custom.png" alt-text="Screenshot dell'aggiunta di un nuovo pacchetto di criteri personalizzato.":::
 
 3. Selezionare i tipi di criteri e i nomi dei criteri da includere nel pacchetto.
 
@@ -105,9 +105,9 @@ Per creare un nuovo pacchetto di criteri personalizzato:
 
 Di seguito viene descritto come usare i pacchetti di criteri nell'organizzazione.
 
-![Panoramica dell'uso dei pacchetti di criteri](media/manage-policy-packages-overview.png)
+![Panoramica su come usare i pacchetti di criteri.](media/manage-policy-packages-overview.png)
 
-- **[Visualizza:](#view-the-settings-of-a-policy-in-a-policy-package)** visualizzare i criteri in un pacchetto di criteri. Quindi, visualizzare le impostazioni di ogni criterio in un pacchetto prima di assegnare il pacchetto. Assicurarsi di aver compreso ogni impostazione. Decidere se i valori predefiniti sono appropriati per l'organizzazione o se è necessario modificarli in modo che siano più restrittivi o più restrittivi in base alle esigenze dell'organizzazione.
+- **[Visualizza:](#view-the-settings-of-a-policy-in-a-policy-package)** visualizzare i criteri in un pacchetto di criteri. Quindi, visualizzare le impostazioni di ogni criterio in un pacchetto prima di assegnare il pacchetto. Assicurarsi di aver compreso ogni impostazione. Decidere se i valori predefiniti sono appropriati per l'organizzazione o se è necessario modificarli in modo che siano più restrittivi o meno in base alle esigenze dell'organizzazione.
 
     Se un criterio viene eliminato, è comunque possibile visualizzare le impostazioni, ma non modificarle. I criteri eliminati vengono ri-creati con le impostazioni predefinite quando si assegna il pacchetto di criteri.
 
@@ -128,7 +128,7 @@ Ecco i passaggi per visualizzare, assegnare e personalizzare i pacchetti di crit
 
 ### <a name="customize-policies-in-a-policy-package"></a>Personalizzare i criteri in un pacchetto di criteri
 
-È possibile modificare le impostazioni  di un criterio tramite la pagina Pacchetti criteri o passando direttamente alla pagina dei criteri nell'interfaccia Microsoft Teams di amministrazione.
+È possibile modificare le impostazioni  di un criterio tramite la pagina Pacchetti criteri o passando direttamente alla pagina dei criteri nell'interfaccia di amministrazione Microsoft Teams criteri.
 
 1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione eseguire una delle operazioni seguenti:
     - Fare **clic su Pacchetti** criteri e quindi selezionare il pacchetto di criteri facendo clic a sinistra del nome del pacchetto.

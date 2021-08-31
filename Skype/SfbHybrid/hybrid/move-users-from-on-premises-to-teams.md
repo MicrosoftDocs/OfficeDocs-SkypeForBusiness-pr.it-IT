@@ -1,5 +1,5 @@
 ---
-title: Spostare gli utenti da Skype for Business Server 2019 a Teams
+title: Spostare utenti da Skype for Business Server 2019 a Teams
 ms.author: crowe
 author: CarolynRowe
 manager: serdars
@@ -18,12 +18,12 @@ ms.collection:
 - Adm_Skype4B_Online
 ms.custom: ''
 description: 'Riepilogo: informazioni su come eseguire la migrazione delle impostazioni utente e spostare gli utenti in Teams.'
-ms.openlocfilehash: ef1de7002bd3c757a9a08f3cbf8414a9cd4c32d9
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2206c9b155c26a8559dd32346e1d9ad9e0e54978
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614970"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725485"
 ---
 # <a name="move-users-from-on-premises-to-teams"></a>Spostare utenti da ambiente locale a Teams
 
@@ -39,9 +39,9 @@ Quando un utente viene spostato da locale a solo Teams, la home page dell'utente
 - Le riunioni preesiste dell'utente pianificate per il futuro verranno migrate da locale a Teams.
 - I contatti esistenti in locale sono disponibili in Teams poco dopo l'accesso dell'utente per la prima volta.
 - Gli utenti non possono avviare chiamate o chat da Skype for Business, né possono pianificare nuove riunioni in Skype for Business. Se tentano di aprire il client Skype for Business, verranno reindirizzati per usare Teams come illustrato di seguito. Se il client Teams non è installato, verrà indirizzato alla versione Web di Teams utilizzando il browser.<br><br>
-    ![Messaggio che reindirizza un utente a Teams](../media/go-to-teams-page.png)
+    ![Messaggio che reindirizza un utente a Teams.](../media/go-to-teams-page.png)
 
-Prima di spostare gli utenti, verificare i [prerequisiti per](move-users-between-on-premises-and-cloud.md#prerequisites) spostare gli utenti nel cloud. Leggere inoltre le linee guida per la migrazione e [l'interoperabilità](/microsoftteams/migration-interop-guidance-for-teams-with-skype)per le organizzazioni che utilizzano Teams insieme a Skype for Business .
+Prima di spostare gli utenti, verificare i [prerequisiti per](move-users-between-on-premises-and-cloud.md#prerequisites) spostare gli utenti nel cloud. Leggere inoltre le indicazioni sulla migrazione e [l'interoperabilità](/microsoftteams/migration-interop-guidance-for-teams-with-skype)per le organizzazioni che usano Teams insieme a Skype for Business .
 
 
 > [!NOTE]
@@ -87,30 +87,30 @@ Move-CsUser -Identity username@contoso.com -Target sipfed.online.lync.com -UseOA
 1. Apri l'Skype for Business Server del Pannello di controllo.
 2. Nel riquadro di spostamento sinistro scegliere **Utenti**.
 3. Usa **Trova** per individuare gli utenti che vuoi spostare in Teams.
-4. Selezionare gli utenti e quindi,  nell'elenco a discesa Azione sopra l'elenco, scegliere Sposta gli utenti selezionati **in** Teams o Sposta gli utenti selezionati **in Skype for Business Online**.   Entrambe le opzioni ora spostano gli utenti direttamente in TeamsOnly.
+4. Selezionare gli utenti e quindi,  nell'elenco a discesa Azione sopra l'elenco, scegliere Sposta gli utenti selezionati **in Teams** o Sposta gli utenti selezionati in **Skype for Business Online**.   Entrambe le opzioni ora spostano gli utenti direttamente in TeamsOnly.
 5. Nella procedura guidata fare clic su **Avanti**.
 6. Se richiesto, accedere a Microsoft 365 con un account che termina con .onmicrosoft.com e dispone di autorizzazioni sufficienti.
 7. Fare **clic su** Avanti e **quindi** su Avanti ancora una volta per spostare l'utente.
 8. Tieni presente che i messaggi di stato relativi all'esito positivo o negativo vengono forniti nella parte superiore dell'app principale del Pannello di controllo, non nella procedura guidata.
     
     
-## <a name="notify-your-skype-for-business-on-premises-users-of-the-upcoming-move-to-teams"></a>Informare Skype for Business utenti locali dell'imminente spostamento a Teams
+## <a name="notify-your-skype-for-business-on-premises-users-of-the-upcoming-move-to-teams"></a>Informare Skype for Business utenti locali del passaggio imminente a Teams
 
-Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8, nonché in Skype for Business Server 2019, consentono di notificare agli utenti di Skype for Business locali il loro prossimo passaggio a Teams. Quando abiliti queste notifiche, gli utenti visualizzano una notifica nel client Skype for Business (Win32, Mac, Web e dispositivi mobili), come illustrato di seguito. Se gli utenti fa **clic sul** pulsante Prova, Teams il client verrà avviato se è installato. in caso contrario, gli utenti verranno spostati alla versione Web di Teams nel browser. Per impostazione predefinita, quando le notifiche sono abilitate, i client Skype for Business Win32 scaricano automaticamente il client Teams in modo che il rich client sia disponibile prima di spostare l'utente in modalità TeamsOnly; tuttavia, è anche possibile disabilitare questo comportamento.  Le notifiche vengono configurate utilizzando la versione locale di e il download invisibile all'utente per i client Win32 viene controllato tramite il `TeamsUpgradePolicy` `TeamsUpgradeConfiguration` cmdlet locale.
+Gli strumenti di amministrazione locali in Skype for Business Server 2015 con CU8 e in Skype for Business Server 2019 consentono di notificare agli utenti di Skype for Business locali il loro prossimo passaggio a Teams. Quando abiliti queste notifiche, gli utenti visualizzano una notifica nel client Skype for Business (Win32, Mac, Web e dispositivi mobili), come illustrato di seguito. Se gli utenti fa **clic sul** pulsante Prova, Teams il client verrà avviato se è installato. in caso contrario, gli utenti verranno spostati alla versione Web di Teams nel browser. Per impostazione predefinita, quando le notifiche sono abilitate, i client Skype for Business Win32 scaricano automaticamente il client Teams in modo che il rich client sia disponibile prima di spostare l'utente in modalità TeamsOnly. tuttavia, è anche possibile disabilitare questo comportamento.  Le notifiche vengono configurate utilizzando la versione locale di e il download invisibile all'utente per i client Win32 viene controllato tramite il `TeamsUpgradePolicy` `TeamsUpgradeConfiguration` cmdlet locale.
 
 > [!TIP]
 > Per il funzionamento di alcuni server potrebbe essere necessario riavviare Skype for Business 2015 con CU8.
 
-![Notifica dello spostamento in Teams](../media/teams-upgrade-notification.png)
+![Notifica dello spostamento imminente Teams.](../media/teams-upgrade-notification.png)
 
-Per notificare agli utenti locali che verranno presto aggiornati a Teams, creare una nuova istanza di TeamsUpgradePolicy con NotifySfBUsers=true. Assegnare quindi tale criterio agli utenti a cui si desidera inviare una notifica, assegnando il criterio direttamente all'utente o impostando il criterio a livello di sito, pool o globale. I cmdlet seguenti creano e concedono un criterio a livello di utente:
+Per notificare agli utenti locali che saranno presto aggiornati a Teams, creare una nuova istanza di TeamsUpgradePolicy con NotifySfBUsers=true. Assegnare quindi tale criterio agli utenti a cui si desidera inviare una notifica, assegnando il criterio direttamente all'utente o impostando il criterio a livello di sito, pool o globale. I cmdlet seguenti creano e concedono un criterio a livello di utente:
 
 ```powershell
 New-CsTeamsUpgradePolicy -Identity EnableNotifications -NotifySfbUser $true
 Grant-CsTeamsUpgradePolicy -Identity username@contoso.com -PolicyName EnableNotifications
 ```
 
-Il download automatico Teams tramite il client Win32 Skype for Business viene controllato tramite il cmdlet TeamsUpgradeConfiguration locale con il parametro DownloadTeams. Questa configurazione viene creata a livello globale, di sito e di pool. Ad esempio, il comando seguente crea la configurazione per il sito Redmond1:
+Il download automatico Teams tramite Skype for Business client Win32 viene controllato tramite il cmdlet TeamsUpgradeConfiguration locale con il parametro DownloadTeams. Questa configurazione viene creata a livello globale, di sito e di pool. Ad esempio, il comando seguente crea la configurazione per il sito Redmond1:
 
 ```powershell
 New-CsTeamsUpgradeConfiguration -Identity "site:redmond1"

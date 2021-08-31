@@ -33,37 +33,37 @@ Ogni operatore automatico creato richiede un account della risorsa. È simile a 
 
 3. Nel riquadro **Aggiungi account risorsa** compilare **Nome** visualizzato , Nome **utente** e scegliere **Operatore** automatico per il **tipo di account risorsa**
 
-    ![Screenshot dell'interfaccia utente per l'aggiunta di un account di risorsa](../media/resource-account-add.png)
+    ![Screenshot dell'interfaccia utente per l'aggiunta di un account di risorsa.](../media/resource-account-add.png)
 
 4. Fare clic su **Salva**.
 
     Il nuovo account verrà visualizzato nell'elenco degli account.
 
-    ![Screenshot di un elenco di account delle risorse](../media/resource-accounts-page.png)
+    ![Screenshot di un elenco di account delle risorse.](../media/resource-accounts-page.png)
 
 ### <a name="assign-a-license"></a>Assegnare una licenza
 
 È necessario assegnare una *licenza Microsoft 365 Sistema telefonico - Utente* virtuale all'account della risorsa.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365 fare clic sull'account della risorsa a cui si vuole assegnare una licenza.
 
 2. Nella scheda **Licenze e app,** in **Licenze,** **selezionare Microsoft 365 Sistema telefonico - Utente virtuale**.
 
 3. Fare clic su **Salva modifiche**.
 
-    ![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
+    ![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365.](../media/resource-account-assign-virtual-user-license.png)
 
 ### <a name="assign-a-service-number"></a>Assegnare un numero di servizio
 
 Se è necessario che questo operatore automatico sia raggiungibile da un numero di telefono, assegnare tale numero all'account della risorsa.
 
-1. Nella pagina Account risorse dell'interfaccia di amministrazione di Teams selezionare l'account della risorsa a cui si vuole assegnare un numero di servizio e quindi fare clic su **Assegna/annulla assegnazione.** 
+1. Nella pagina Account risorse dell'interfaccia  di amministrazione di Teams selezionare l'account della risorsa a cui si vuole assegnare un numero di servizio e quindi fare clic su **Assegna/annulla assegnazione.**
 
 2. **Nell'Telefono tipo di** numero selezionare il tipo di numero da usare.
 
 3. Nella casella **Numero di telefono assegnato** cercare il numero da usare e fare clic su **Aggiungi.**
 
-    ![Screenshot dell'interfaccia utente assegna numero di servizio](../media/resource-account-assign-phone-number.png)
+    ![Screenshot dell'interfaccia utente assegna numero di servizio.](../media/resource-account-assign-phone-number.png)
 
 4. Fare clic su **Salva**.
 
@@ -86,7 +86,7 @@ Per configurare un operatore automatico
 
 6. Scegliere se abilitare gli input vocali. Se abilitata, il nome di ogni opzione di menu diventa una parola chiave di riconoscimento vocale. Ad esempio, i chiamanti possono pronunciare "Uno" per selezionare l'opzione di menu mappata al tasto 1 oppure pronunciare "Vendite" per selezionare l'opzione di menu denominata "Vendite".
 
-    ![Screenshot delle impostazioni dell'operatore automatico per nome, operatore, fuso orario, lingua e input vocali](../media/auto-attendant-general-info-page-new.png)
+    ![Screenshot delle impostazioni dell'operatore automatico per nome, operatore, fuso orario, lingua e input vocali.](../media/auto-attendant-general-info-page-new.png)
 
 7. Fare clic su **Avanti**.
 
@@ -103,7 +103,7 @@ Scegliere le opzioni del flusso di chiamata
 
     Se si seleziona Digita un messaggio di saluto, il sistema leggerà il testo digitato (fino **a** 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
 
-    ![Screenshot delle impostazioni dei messaggi di saluto](../media/auto-attendant-call-flow-greeting-message.png)
+    ![Screenshot delle impostazioni dei messaggi di saluto.](../media/auto-attendant-call-flow-greeting-message.png)
 
 2. Scegli come instradare la chiamata.
 
@@ -113,7 +113,7 @@ Scegliere le opzioni del flusso di chiamata
 
     Se si seleziona **Opzioni menu** Riproduci , è possibile scegliere Riproduci un **file audio** o Digitare **un** messaggio di saluto e quindi scegliere tra le opzioni di menu e la ricerca nella directory.
 
-    ![Screenshot delle impostazioni di routing delle chiamate](../media/auto-attendant-call-flow-route-call-message.png)
+    ![Screenshot delle impostazioni di routing delle chiamate.](../media/auto-attendant-call-flow-route-call-message.png)
 
 3. Se si vuole che i chiamanti usino i tasti di chiamata per spostarsi, in Imposta opzioni **di menu** scegliere cosa si vuole fare quando i chiamanti premono un tasto di chiamata. Se si sta creando questo operatore automatico come elenco aziendale, lasciare vuote le opzioni dei tasti di composizione.
 
@@ -135,11 +135,11 @@ Scegliere le opzioni del flusso di chiamata
 
     - **Reindirizza** a- dove vuoi che la chiamata vada quando i chiamanti scelgono questa opzione. Se si esegue il reindirizzamento a un operatore automatico o a una coda di chiamata, scegliere l'account della risorsa associato.
 
-    ![Screenshot delle opzioni dei tasti di scelta](../media/auto-attendant-call-flow-menu-options-complete.png)
+    ![Screenshot delle opzioni dei tasti di scelta rapida.](../media/auto-attendant-call-flow-menu-options-complete.png)
 
 4. Se si vuole usare questo operatore automatico come directory aziendale, in **Ricerca directory** selezionare Chiama **per nome.** Quando si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sulla tastiera del telefono. Qualsiasi utente online con una licenza Sistema telefonico è un utente idoneo e può essere trovato con Chiama per nome. 
 
-    È possibile scegliere Chiama **per interno,** tuttavia l'interno deve essere configurato in Azure Active Directory.
+    È possibile scegliere Chiama **per interno,** ma l'interno deve essere configurato in Azure Active Directory.
 
 5. Dopo aver selezionato **un'opzione di ricerca nella directory,** fare clic su **Avanti.**
 
@@ -154,7 +154,7 @@ A seconda di come sono stati configurati gli operatori automatici e le code di c
 
 Se si vuole un instradamento delle chiamate separato per i chiamanti non lavorativi, specificare l'orario di ufficio per ogni giorno. Fare **clic su Aggiungi nuova** ora per specificare più set di ore per un determinato giorno, ad esempio per specificare una pausa pranzo.
 
-![Screenshot delle impostazioni del giorno e dell'ora dopo l'ora](../media/auto-attendant-business-hours.png)
+![Screenshot delle impostazioni del giorno e dell'ora dopo l'ora.](../media/auto-attendant-business-hours.png)
 
 Dopo aver specificato l'orario di ufficio, scegliere le opzioni di instradamento delle chiamate per le ore successive. Sono disponibili le stesse opzioni per l'instradamento delle chiamate in orario di ufficio specificato nel **passaggio 3 - Flusso chiamate.**
 
@@ -177,32 +177,32 @@ L'operatore automatico può avere un flusso di chiamate per ogni festività impo
 
 4. Scegliere il tipo di messaggio di saluto da usare.
 
-    ![Screenshot delle impostazioni per le festività e le festività](../media/auto-attendant-holiday-greeting.png)
+    ![Screenshot delle impostazioni per le festività e i saluti delle festività.](../media/auto-attendant-holiday-greeting.png)
 
 5. Scegliere se disconnettere **o** **reindirizzare** la chiamata.
 
 6. Se si sceglie di reindirizzare la chiamata, scegliere la destinazione del routing delle chiamate per la chiamata.
 
-    ![Screenshot delle impostazioni delle azioni di chiamata per le festività](../media/auto-attendant-holiday-actions.png)
+    ![Screenshot delle impostazioni delle azioni di chiamata per le festività.](../media/auto-attendant-holiday-actions.png)
 
 7. Fare clic su **Salva**.
 
     Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
 
-    ![Screenshot delle impostazioni delle festività con le festività elencate](../media/auto-attendant-holiday-call-settings.png)
+    ![Screenshot delle impostazioni delle festività con le festività elencate.](../media/auto-attendant-holiday-call-settings.png)
 
     Dopo aver aggiunto tutte le festività, fare clic su **Avanti.**
 
 > [!div class="nextstepaction"]
-> [Passaggio 6 - Scegliere gli utenti presenti nella directory >](?tabs=dial-scope#steps)
+> [Passaggio 6 - Scegliere chi è nella directory >](?tabs=dial-scope#steps)
 
 # <a name="step-6brdirectory-members"></a>[Passaggio 6 <br> Membri della directory](#tab/dial-scope)
 
-*L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli utenti online** include tutti gli utenti dell'organizzazione che hanno una licenza Sistema telefonico online.
+*L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli** utenti online include tutti gli utenti dell'organizzazione che hanno una licenza Sistema telefonico online.
 
 È possibile includere o escludere utenti specifici  selezionando  Gruppo di utenti personalizzato in Includi o Escludi e scegliendo uno o più gruppi di Microsoft 365, liste di distribuzione o gruppi di sicurezza.  Ad esempio, è possibile escludere i dirigenti dell'organizzazione dalla directory di composizione. Se un utente si trova in entrambi gli elenchi, verrà escluso dalla directory.
 
-![Screenshot delle opzioni di inclusione ed esclusione dell'ambito di chiamata](../media/auto-attendant-dial-scope.png)
+![Screenshot delle opzioni di inclusione ed esclusione dell'ambito di chiamata.](../media/auto-attendant-dial-scope.png)
 
 > [!NOTE]
 > L'elenco del nome di un nuovo utente nella directory potrebbe richiedere fino a 36 ore.
@@ -220,11 +220,11 @@ Per aggiungere un account della risorsa
 
 1. Fare **clic** su Aggiungi e cercare l'account da aggiungere. Fare **clic su** Aggiungi e quindi su **Aggiungi.**
 
-    ![Screenshot del riquadro Aggiungi account dell'account della risorsa](../media/auto-attendant-add-resource-account.png)
+    ![Screenshot del riquadro Aggiungi account dell'account della risorsa.](../media/auto-attendant-add-resource-account.png)
 
 2. Dopo aver aggiunto gli account del servizio, fare clic su **Invia.**
 
-    ![Screenshot dell'elenco di account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato](../media/auto-attendant-resource-account-assigned.png)
+    ![Screenshot dell'elenco degli account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato.](../media/auto-attendant-resource-account-assigned.png)
 
     La configurazione dell'operatore automatico viene completata.
 

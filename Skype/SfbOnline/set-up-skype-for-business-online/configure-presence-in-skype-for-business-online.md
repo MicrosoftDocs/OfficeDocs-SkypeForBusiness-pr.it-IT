@@ -20,19 +20,19 @@ ms.custom:
 - Setup
 - O365P_OnlinePresenceDesc
 description: 'Learn how to set up Skype for Business so you can see the availability of your co-workers. '
-ms.openlocfilehash: d1505546fa51268dc40107ca309553f0826c0da5
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 256bb8c47ebf3096a5bc6e11a5f33101fae91d03
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58597380"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727365"
 ---
 # <a name="configure-presence-in-skype-for-business-online"></a>Configurare la presenza in Skype for Business online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!IMPORTANT]
-> L'Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la gestione Skype for Business ora sono nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+> L'Microsoft Teams di amministrazione ha sostituito l'interfaccia Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la Skype for Business sono ora disponibili nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
 
 Per impostazione predefinita, chiunque possa comunicare con una delle persone dell'organizzazione Skype for Business può anche vedere se tale persona è online. Skype for Business indica se una persona è disponibile online, in una riunione, offline o in un altro indicatore.
 
@@ -40,7 +40,7 @@ Per impostazione predefinita, chiunque possa comunicare con una delle persone de
 
 **[L'amministratore](https://support.office.com/article/eac4d046-1afd-4f1a-85fc-8219c79e1504)** di tutti gli utenti dell'azienda può scegliere chi vede la propria presenza online in Skype for Business.
 
-![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
 
 1. Passare all'interfaccia di amministrazione > **di amministrazione**  >  **Skype for Business**.
 
@@ -51,7 +51,7 @@ Per impostazione predefinita, chiunque possa comunicare con una delle persone de
 |**Impostazione**|**Who possibile visualizzare la presenza di un utente**|
 |:-----|:-----|
 |**Visualizza automaticamente le informazioni sulla presenza** <br/> |Qualsiasi Skype for Business dell'azienda che non è stato aggiunto all'elenco  Esterno o Bloccato di una persona potrà vedere la presenza online di tale persona.  <br/> |
-|**Visualizzare le informazioni sulla presenza solo ai contatti di un utente** <br/> |Chiunque nell'elenco Contatti di una persona non sia stato aggiunto **all'elenco** Esterno **o** Bloccato. <br/> I singoli utenti possono ignorare le impostazioni predefinite nell'app Skype for Business: **Impostazioni**  >  **Opzioni di**  >  **Strumenti**. <br/> |
+|**Visualizzare le informazioni sulla presenza solo ai contatti di un utente** <br/> |Chiunque nell'elenco Contatti di una persona non sia stato aggiunto **all'elenco** Esterno **o** Bloccato. <br/> Gli utenti privati possono ignorare le impostazioni predefinite nell'app Skype for Business: **Impostazioni**  >  **Opzioni di**  >  **Strumenti**. <br/> |
 
 Per informazioni sulle modifiche che gli utenti possono modificare in Skype for Business, vedere questi articoli:
 

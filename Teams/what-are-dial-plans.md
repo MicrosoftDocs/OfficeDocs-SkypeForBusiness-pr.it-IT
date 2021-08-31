@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.voice.dialplans.overview
 - Calling Plans
 description: "Informazioni sul tipo di piani di chiamata (piani di chiamata PSTN) disponibili con Teams e su come sceglierne uno per l'organizzazione.  "
-ms.openlocfilehash: 231df0f5fa5e025f81379c2736de54bcd0f353fb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 405a8902c9c367c09f7f467cb00358d75112de1f
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594438"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727375"
 ---
 # <a name="what-are-dial-plans"></a>Che cosa sono i piani di chiamata?
 
@@ -41,13 +41,13 @@ Vedere [Creare e gestire i dial plan per](create-and-manage-dial-plans.md) crear
 
 L'ambito di un piano di chiamata determina il livello gerarchico in cui il piano di chiamata può essere applicato. I client ottengono il piano di chiamata appropriato tramite le impostazioni di provisioning che vengono fornite automaticamente quando gli utenti a Teams. Gli amministratori possono gestire e assegnare livelli di ambito del piano di chiamata usando l'interfaccia di amministrazione Microsoft Teams o Remote PowerShell.
 
-In Teams esistono due tipi di piani di chiamata: con ambito di servizio e con ambito tenant (per l'organizzazione). Un piano di chiamata con ambito di servizio è definito per ogni paese o area geografica in cui Sistema telefonico è disponibile. A ogni utente viene assegnato automaticamente il piano di chiamata del paese di servizio corrispondente alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il piano di chiamata del paese di servizio, ma è possibile creare piani di chiamata con ambito tenant, che aumentano il piano di chiamata del paese di servizio. Quando viene eseguito il provisioning dei client, ottengono un "piano di chiamata efficace", ovvero una combinazione del piano di chiamata del paese di servizio e del piano di chiamata tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
+In Teams sono disponibili due tipi di piani di chiamata: con ambito di servizio e con ambito tenant (per l'organizzazione). Un piano di chiamata con ambito di servizio è definito per ogni paese o area geografica in cui Sistema telefonico è disponibile. A ogni utente viene assegnato automaticamente il piano di chiamata del paese di servizio corrispondente alla posizione di utilizzo assegnata all'utente. Non è possibile modificare il piano di chiamata del paese di servizio, ma è possibile creare piani di chiamata con ambito tenant, che aumentano il piano di chiamata del paese di servizio. Quando viene eseguito il provisioning dei client, ottengono un "piano di chiamata efficace", ovvero una combinazione del piano di chiamata del paese di servizio e del piano di chiamata tenant con ambito appropriato. Pertanto, non è necessario definire tutte le regole di normalizzazione nel piano di chiamata tenant, in quanto potrebbero già essere presenti nel piano di chiamata di servizio del Paese.
 
-I piani di chiamata del tenant possono essere suddivisi ulteriormente in due ambiti: ambito tenant o ambito utente. Se un tenant definisce e assegna un piano di chiamata con ambito di utente, verrà eseguito il provisioning dell'utente con un piano di chiamata effettivo del piano di chiamata del paese di servizio dell'utente e del piano di chiamata utente assegnato. Se un tenant definisce un piano di chiamata con ambito tenant ma non assegna un piano di chiamata con ambito utente, verrà eseguito il provisioning dell'utente con un piano di chiamata efficace del piano di chiamata del paese di servizio dell'utente e del piano di chiamata del tenant.
+I piani di chiamata del tenant possono essere suddivisi ulteriormente in due ambiti: ambito tenant o ambito utente. Se un tenant definisce e assegna un piano di chiamata con ambito di utente, verrà eseguito il provisioning dell'utente con un piano di chiamata effettivo del piano di chiamata del paese di servizio dell'utente e del piano di chiamata utente assegnato. Se un tenant definisce un piano di chiamata con ambito tenant ma non assegna un piano di chiamata con ambito di utente, verrà eseguito il provisioning dell'utente con un piano di chiamata efficace del piano di chiamata del paese di servizio dell'utente e del piano di chiamata tenant.
 
 Di seguito è riportato il modello di ereditarietà dei piani di chiamata in Teams.
 
-![Come vengono ereditati i piani di chiamata in Teams](media/b2744f33-ebbd-4c23-bfba-1747312ab178.png)
+![Modalità di ereditarietà dei piani di chiamata in Teams.](media/b2744f33-ebbd-4c23-bfba-1747312ab178.png)
 
 Di seguito sono riportati i possibili piani di chiamata effettivi.
 
@@ -60,7 +60,7 @@ Di seguito sono riportati i possibili piani di chiamata effettivi.
 Vedere [Creare e gestire i dial plan](create-and-manage-dial-plans.md) per creare i dial plan del tenant.
 
 > [!NOTE]
-> Nello scenario in cui nessuna regola di normalizzazione del piano di chiamata si applica a un numero composto, la stringa chiamata viene ancora normalizzata anteponendo "+CC", dove CC è il codice paese della località di utilizzo dell'utente che chiama. Questo vale per i piani di chiamata, il routing diretto e gli scenari di chiamata in uscita per conferenze PSTN. Inoltre, se una regola di normalizzazione del piano di chiamata tenant determina un numero che non inizia con "+", il servizio di chiamata tenterà di normalizzare il numero ricevuto dal client Teams in base al piano di chiamata tenant e, se non corrisponde, al piano di chiamata dell'area geografica. Per evitare la doppia normalizzazione, è consigliabile che i clienti di Routing diretto normalizzino i numeri in modo da includere un segno + e quindi rimuovere il segno + usando le regole di traduzione trunk. 
+> Nello scenario in cui nessuna regola di normalizzazione del piano di chiamata si applica a un numero composto, la stringa chiamata viene ancora normalizzata anteponendo "+CC", dove CC è il codice paese della località di utilizzo dell'utente che chiama. Questo vale per i piani di chiamata, il routing diretto e gli scenari di chiamata in uscita per conferenze PSTN. Inoltre, se una regola di normalizzazione del piano di chiamata tenant determina un numero che non inizia con "+", il servizio di chiamata tenterà di normalizzare il numero ricevuto dal client Teams in base al piano di chiamata del tenant e, se non corrisponde, al piano di chiamata dell'area geografica. Per evitare la doppia normalizzazione, è consigliabile che i clienti di Routing diretto normalizzino i numeri in modo da includere un segno + e quindi rimuovere il segno + usando le regole di traduzione trunk. 
 
 ## <a name="planning-for-tenant-dial-plans"></a>Pianificazione dei piani di chiamata tenant
 
@@ -111,7 +111,7 @@ Poiché qualsiasi piano di chiamata tenant viene unito in modo efficace al piano
 ### <a name="creating-normalization-rules"></a>Creazione di regole di normalizzazione
 <a name="createrule"> </a>
 
-Le regole di normalizzazione .NET Framework espressioni regolari per specificare i criteri di corrispondenza numerici utilizzati dal server per tradurre le stringhe di chiamata nel formato E.164. Possono essere create regole di normalizzazione specificando l'espressione regolare per cercare l'abbinamento e la conversione da eseguire quando si trova l'abbinamento. Terminata l'operazione, è possibile immettere un numero di prova per verificare che la regola di normalizzazione funzioni come previsto.
+Le regole di normalizzazione .NET Framework espressioni regolari per specificare i criteri di corrispondenza numerica utilizzati dal server per tradurre le stringhe di chiamata nel formato E.164. Possono essere create regole di normalizzazione specificando l'espressione regolare per cercare l'abbinamento e la conversione da eseguire quando si trova l'abbinamento. Terminata l'operazione, è possibile immettere un numero di prova per verificare che la regola di normalizzazione funzioni come previsto.
 
 Per informazioni dettagliate sull'.NET Framework espressioni regolari, vedere .NET Framework [espressioni regolari](/dotnet/standard/base-types/regular-expressions).
 

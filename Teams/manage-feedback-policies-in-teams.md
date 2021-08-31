@@ -16,38 +16,38 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft.
-ms.openlocfilehash: 2308b196dfd31f6d6576f57dbe06ed5eda42cb86
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni su come usare i criteri di feedback per controllare se Teams utenti dell'organizzazione possono inviare feedback su Teams a Microsoft.
+ms.openlocfilehash: 5aa828a68de40ec369a6b19bf57f065ab1f483a6
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635680"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733115"
 ---
 # <a name="manage-feedback-policies-in-microsoft-teams"></a>Gestire i criteri di feedback in Microsoft Teams
 
 [!INCLUDE [preview-feature](includes/preview-feature.md)]
 
-Gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft per farci sapere come stiamo facendo, direttamente dall'interno Teams desktop e client Web. Stiamo continuamente migliorando l'esperienza Teams e usiamo questo feedback per migliorare Teams migliore.
+Gli utenti dell'organizzazione possono inviare feedback sulle Teams a Microsoft per farci sapere come stiamo facendo, direttamente dall'interno Teams desktop e client Web. Stiamo continuamente migliorando l'esperienza Teams e usiamo questo feedback per migliorare Teams lavoro.
 
 > [!NOTE]
-> I criteri di feedback non sono disponibili nelle distribuzioni GCC, GCC high o DOD.
+> I criteri di feedback non sono disponibili nelle distribuzioni GCC, GCC High o DOD.
 
 **Caratteristica Invia feedback**
 
 Gli utenti possono inviare commenti e suggerimenti su Teams inviandoci un  >  **feedback** in Teams. I dati inviati tramite Invia **feedback** sono considerati come "Dati di supporto" ai sensi del contratto di Microsoft 365 o Office 365, incluse le informazioni che altrimenti verrebbero considerate "Dati dei clienti" o "Dati personali".
 
-![Screenshot dell'opzione Invia feedback in Teams](media/manage-feedback-policies-in-teams-give-feedback.png)
+![Screenshot dell'opzione Invia feedback in Teams.](media/manage-feedback-policies-in-teams-give-feedback.png)
 
 **Sondaggi**
 
 Gli utenti possono anche valutare la loro esperienza con Teams e inviarci dettagli sulla valutazione che danno. Questo sondaggio popup viene visualizzato per gli utenti di tanto in tanto in Teams. Quando un utente seleziona **Invia feedback** nella notifica, il sondaggio viene visualizzato per il completamento.
 
-![notifica e modulo del sondaggio in Teams](media/manage-feedback-policies-in-teams-survey.png)
+![la notifica e il modulo del sondaggio in Teams.](media/manage-feedback-policies-in-teams-survey.png)
 
 ## <a name="set-whether-users-can-send-feedback-about-teams-to-microsoft"></a>Specificare se gli utenti possono inviare commenti e suggerimenti Teams a Microsoft
 
-Gli amministratori possono controllare se gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft tramite Invia **feedback** e se ricevono il sondaggio. Per impostazione predefinita, a tutti gli utenti dell'organizzazione viene assegnato automaticamente il criterio globale (impostazione predefinita a livello di organizzazione) e la caratteristica Invia **feedback** e il sondaggio sono abilitati nel criterio. L'eccezione è Teams per l'istruzione, in cui le funzionalità sono abilitate per i docenti e disabilitate per gli studenti.
+Gli amministratori possono controllare se gli utenti dell'organizzazione possono inviare feedback su Teams a Microsoft tramite Inviare **feedback** e se ricevono il sondaggio. Per impostazione predefinita, a tutti gli utenti dell'organizzazione viene assegnato automaticamente il criterio globale (impostazione predefinita a livello di organizzazione) e la caratteristica Invia **feedback** e il sondaggio sono abilitati nel criterio. L'eccezione è Teams per l'istruzione, in cui le funzionalità sono abilitate per i docenti e disabilitate per gli studenti.
 
 È possibile modificare i criteri globali o creare e assegnare criteri personalizzati. Dopo aver modificato i criteri globali o aver assegnato un criterio personalizzato, l'applicazione delle modifiche può richiedere alcune ore.
 

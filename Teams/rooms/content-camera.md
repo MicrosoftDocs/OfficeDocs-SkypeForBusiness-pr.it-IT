@@ -14,13 +14,13 @@ ms.collection:
 - M365-collaboration
 ms.custom:
 - seo-marvel-mar2020
-description: Usare una fotocamera del contenuto in una Microsoft Teams room, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
-ms.openlocfilehash: e24a90e65a5d844a5431951283153a5de2406498
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Usare una fotocamera contenuto in una Microsoft Teams room, che interagisce con il software di elaborazione delle immagini per consentire ai relatori di disegnare su una lavagna analogica.
+ms.openlocfilehash: ae919e50e7e38394e3e9af70a927d5bcdd959f50
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613005"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726015"
 ---
 # <a name="content-cameras"></a>Videocamere di contenuto
 
@@ -48,7 +48,7 @@ La posizione ideale di una fotocamera contenuto è centrata verticalmente e oriz
 
 È possibile installare la fotocamera fino a 6 in. (152 mm) superiore alla parte superiore della lavagna e centrata sulla lavagna bianca come illustrato. Assicurati che l'immagine della fotocamera includa almeno 6 in. bordo (152 mm) su entrambi i lati orizzontalmente. È possibile usare l'anteprima della fotocamera nell'app Microsoft Teams Rooms per determinare il posizionamento finale della fotocamera.
 
-![Diagramma di posizionamento della fotocamera del contenuto](../media/Magic-whiteboard.png)
+![Diagramma di posizionamento della fotocamera del contenuto.](../media/Magic-whiteboard.png)
 
 ### <a name="camera-distances"></a>Distanze della fotocamera
 
@@ -88,12 +88,12 @@ In caso contrario, fare riferimento al marketplace Microsoft Teams dispositivi p
 
 Dopo aver installato la fotocamera nella sala, configurarla nella console Microsoft Teams Rooms chat room:
 
-1. Selezionare **Impostazioni** ![ ](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) Impostazioni, accedere come amministratore e selezionare Dispositivo **Impostazioni**.
+1. Seleziona **Impostazioni** ![ Impostazioni icona. Accedi ](../media/70f1b43f-16d6-4172-9139-71d845c4ed5c.png) come amministratore e seleziona **Dispositivo Impostazioni**.
 2. Nella sezione **Impostazioni predefinite fotocamera** selezionare la fotocamera  del contenuto e verificare che sia selezionata l'opzione Miglioramenti al contenuto.
 3. (Facoltativo) Se la fotocamera è stata installata capovolta perché è stata montata dal soffitto, selezionare l'opzione Ruota fotocamera contenuto **di 180°.**
 4. Selezionare **Salva e esci.**
 
-![Configurazione della fotocamera del contenuto](../media/content-camera.png)
+![Configurazione della fotocamera del contenuto.](../media/content-camera.png)
 
 È anche possibile modificare queste impostazioni in remoto usando un [file di configurazione XML.](xml-config-file.md)
 

@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: karuanag
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Scegliere i primi utenti per la fase di sperimentazione dell'Teams e quindi raccogliere feedback per il progetto.
+description: Scegliere i primi utenti per la fase di sperimentazione della Teams e quindi raccogliere feedback per il progetto.
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: dbc7deee746679b4e82b34dae8a0dd89b07ed37d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4b62032ac94bed2c8f393e36724249abd4c9bb81
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583580"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727785"
 ---
 # <a name="onboard-early-adopters-and-gather-feedback-for-microsoft-teams"></a>Onboard early adopters and gather feedback for Microsoft Teams
 
@@ -43,10 +43,10 @@ Completare i passaggi seguenti con questi primi utenti:
 
 Usare i componenti di Microsoft 365 o Office 365 per raccogliere feedback per il progetto.
   
-![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png) Decisione: se l'organizzazione ha già un investimento in una rete Yammer, è possibile usarla come forum di feedback per il programma di adozione iniziale. In caso contrario, e il programma di adozione iniziale ha meno di 5.000 membri, creare un team in Teams per raccogliere feedback e fornire formazione.
+![Icona che rappresenta un punto di decisione.](media/teams-adoption-decision-icon.png) Decisione: se l'organizzazione ha già un investimento in una rete Yammer, è possibile usarla come forum di feedback per il programma di adozione iniziale. In caso contrario, e il programma di adozione iniziale ha meno di 5.000 membri, creare un team in Teams per raccogliere feedback e fornire formazione.
   
 > [!Note]
 > Alcune organizzazioni uniranno i canali per il feedback dei primi utenti nel team dei campioni del lavoro di squadra. Si tratta di un buon approccio perché molti primi utenti potrebbero diventare campioni in futuro e costruire una community più forte. 
 
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Supporto onboard](teams-adoption-onboard-support.md).
+![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successivo: [Supporto a bordo](teams-adoption-onboard-support.md).

@@ -22,12 +22,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Gli organizzatori della riunione possono imparare a effettuare chiamate in uscita usando l'app Teams per consentire ad altre persone di partecipare alla stessa riunione usando i telefoni.
-ms.openlocfilehash: db6d900a5892753eee60c3a150579cffb4dbd258
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 690ae9a1597f2d6f1621deb264d9115780d35622
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58623318"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725645"
 ---
 # <a name="dialing-out-from-a-microsoft-teams-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Microsoft Teams in modo che altre persone possano parteciparvi
 
@@ -46,10 +46,10 @@ Quando si chiama un utente, è consigliabile farlo usando i numeri di telefono c
 
 Ecco come usare la chiamata in uscita:
 
- **Passaggio 1:** Nella riunione usare lo screenshot **Aggiungi persone** del pulsante Aggiungi persone per effettuare chiamate in uscita a un numero ![ di ](media/add-people-button.png) telefono.
+ **Passaggio 1:** Nella riunione usare lo screenshot **Aggiungi persone** del pulsante ![ Aggiungi persone.](media/add-people-button.png) per effettuare una chiamata in uscita a un numero di telefono.
  **Passaggio 2:** Immetti il numero di telefono completo, incluso il codice paese/area geografica nella casella **Invita qualcuno o componi un numero.**
   
-![Screenshot della casella Invita qualcuno o componi un numero](media/invite-someone-box.png)
+![Screenshot della casella Invita qualcuno o componi un numero.](media/invite-someone-box.png)
     
 ## <a name="supported-countries-and-regions"></a>Paesi e aree geografiche supportati
 

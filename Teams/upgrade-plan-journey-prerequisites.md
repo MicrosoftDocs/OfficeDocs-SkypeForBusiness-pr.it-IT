@@ -18,16 +18,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3ade37518da516d219c3c54fd0ce4a280720c373
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f10df8849e6efe4e6ceac38cb46d118dff5a8ff8
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58631150"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725455"
 ---
 # <a name="prerequisites-and-environmental-dependencies-for-teams"></a>Prerequisiti e dipendenze ambientali per Teams
 
-![Diagramma del percorso di aggiornamento, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
+![Diagramma del percorso di aggiornamento, enfatizzando la fase di preparazione tecnica.](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase Technical Readiness del percorso di aggiornamento, un'attività che viene completata in parallelo con la fase Di conformità dell'utente. Prima di procedere, verificare di aver completato queste attività nelle fasi precedenti:
 
@@ -36,9 +36,9 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Teams combina più servizi Microsoft 365 e Office 365 e quindi dipende dall'implementazione e dal funzionamento corretti di questi servizi. Questi servizi includono, ma non solo, SharePoint Online, Exchange Online e OneDrive for Business.
+Teams combina più Microsoft 365 e Office 365 e quindi dipende dall'implementazione e dal funzionamento corretti di questi servizi. Questi servizi includono, ma non solo, SharePoint Online, Exchange Online e OneDrive for Business.
 
-Anche se non tutti i servizi sono necessari, è consigliabile implementarli tutti. Se si sceglie di non implementare determinati servizi, questo influirà sulle funzionalità che Teams offrire all'organizzazione. Ad esempio, anche se non è necessario implementare SharePoint Online, Teams si basa su SharePoint Online per determinate funzionalità, ad esempio la condivisione di file nelle conversazioni di gruppo, quindi la non implementazione di questo servizio ridurrà le funzionalità offerte dal client.
+Anche se non tutti i servizi sono necessari, è consigliabile implementarli tutti. Se si sceglie di non implementare determinati servizi, questa influisce sulle funzionalità che Teams offrire all'organizzazione. Ad esempio, anche se non è necessario implementare SharePoint Online, Teams si basa su SharePoint Online per determinate funzionalità, ad esempio la condivisione di file nelle conversazioni di gruppo, quindi la non implementazione di questo servizio ridurrà le funzionalità offerte dal client.
 
 Vedere gli articoli seguenti per informazioni sui prerequisiti e su come Teams con altre tecnologie:
 
@@ -60,6 +60,6 @@ Vedere gli articoli seguenti per informazioni sui prerequisiti e su come Teams c
 
 - Per assicurarsi che tutti i requisiti di rete siano stati soddisfatti prima della distribuzione Teams, vedere Preparare la rete [dell'organizzazione](prepare-network.md)per Microsoft Teams .
 
-- Se attualmente si usa Skype for Business Online Connector per gestire i servizi, è necessario passare al modulo di PowerShell di Teams e aggiornare gli script di PowerShell esistenti. Per altre informazioni, vedere Passare [da Skype for Business Online Connector al Teams di PowerShell.](teams-powershell-move-from-sfbo.md)
+- Se attualmente si usa Skype for Business Online Connector per gestire i servizi, è necessario passare al modulo di PowerShell di Teams e aggiornare gli script di PowerShell esistenti. Per altre informazioni, vedere Passare [da Skype for Business Online Connector al modulo Teams PowerShell.](teams-powershell-move-from-sfbo.md)
 
 Dopo aver verificato che l'ambiente soddisfi tutti i prerequisiti applicabili, valutare l'ambiente [corrente per](upgrade-plan-journey-evaluate-environment.md)Teams .

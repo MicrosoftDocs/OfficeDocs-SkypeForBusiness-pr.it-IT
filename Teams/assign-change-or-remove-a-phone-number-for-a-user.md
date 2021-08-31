@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come assegnare, modificare o rimuovere un numero di telefono dell'ufficio per gli utenti Teams in modo che le aziende e i clienti esterni possano chiamare.
-ms.openlocfilehash: 938377f200d31ddaef2338f5c21811150571732e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 44254c8d8c8886e72b699c3890017a2b817cd135
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595224"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727505"
 ---
 # <a name="assign-change-or-remove-a-phone-number-for-a-user-calling-plans"></a>Assegnare, modificare o rimuovere un numero di telefono per un utente (Piani per chiamate)
 
@@ -38,13 +38,13 @@ Quando si configurano gli utenti in modo che possano effettuare e ricevere chiam
 Per informazioni su come ottenere piani per chiamate in Teams e quanto costano, vedere Teams [licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
   
 > [!NOTE]
-> Un modo per vedere se a un utente è assegnata una licenza è accedere all'Microsoft Teams di amministrazione > **utenti**. Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare il interfaccia di amministrazione di Microsoft 365.
+> Un modo per verificare se a un utente è assegnata una licenza è accedere all'Microsoft Teams di amministrazione > **utenti**. Se viene assegnata una licenza, verrà indicata nella pagina.  È anche possibile usare il interfaccia di amministrazione di Microsoft 365.
   
 ## <a name="assign-a-phone-number-to-a-user"></a>Assegnare un numero di telefono a un utente
  
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
     
-1. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali**.
+1. Nel riquadro di spostamento sinistro fare clic **su Numeri**  >  **Telefono vocali**.
 2. Nella pagina **Telefono numeri** selezionare un numero non assegnato nell'elenco e quindi fare clic su **Modifica**.  
 3. Nel riquadro **Modifica,** in **Assegnato a,** cercare l'utente in base al nome visualizzato o al nome utente e quindi fare clic su **Assegna.**
 4. Per assegnare o modificare la posizione di emergenza associata, in **Posizione di** emergenza cercare e selezionare la posizione.
@@ -59,10 +59,10 @@ Per un esempio di PowerShell, [vedere Set-CsOnlineVoiceUser](/powershell/module/
   
 ## <a name="change-a-phone-number-for-a-user"></a>Modificare un numero di telefono per un utente
  
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
     
 1. Nel riquadro di spostamento sinistro fare clic su Utenti **,** individuare e fare doppio clic sull'utente desiderato, fare clic su **Account** e quindi in Informazioni generali prendere nota del numero di telefono assegnato all'utente.
-2. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali**.
+2. Nel riquadro di spostamento sinistro fare clic **su Numeri**  >  **Telefono vocali**.
 3. Nella pagina **Telefono numeri** selezionare il numero identificato nel passaggio 1 e quindi fare clic su **Modifica**.  
 4. Nel riquadro **Modifica,** in **Assegnato a,** fare clic sulla **X** per rimuovere l'utente.
 5. Fare clic su **Salva**.
@@ -75,10 +75,10 @@ Per un esempio di PowerShell, vedere [Set-CsOnlineVoiceUser](/powershell/module/
 
 ## <a name="remove-a-phone-number-from-a-user"></a>Rimozione di un numero di telefono da un utente
  
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro fare clic su Utenti **,** individuare e fare doppio clic sull'utente desiderato, fare clic su **Account** e quindi in Informazioni generali prendere nota del numero di telefono assegnato all'utente.
-2. Nel riquadro di spostamento sinistro fare clic su  >  **Numeri Telefono vocali**.
+2. Nel riquadro di spostamento sinistro fare clic **su Numeri**  >  **Telefono vocali**.
 3. Nella pagina **Telefono numeri** selezionare il numero identificato nel passaggio 2 e quindi fare clic su **Modifica**.  
 4. Nel riquadro **Modifica,** in **Assegnato a,** fare clic sulla **X** per rimuovere l'utente.
 5. Fare clic su **Salva**.

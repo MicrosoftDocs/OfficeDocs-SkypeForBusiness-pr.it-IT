@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 01d28e07-7fdc-41f9-9b6d-75dad8c14f6a
 description: È possibile spostarsi Skype for Business Server strumento di pianificazione 2015 utilizzando una combinazione di una barra degli strumenti, pulsanti e collegamenti specifici della pagina e riquadri specifici del contesto. I riquadri specifici del contesto forniscono informazioni di progettazione per la pianificazione e la capacità rilevanti per le opzioni di selezione in una pagina specifica.
-ms.openlocfilehash: 33cf2875b12726cd054beb75911981a1ff2334cb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 37a5a3e9ba2934422ef9a89ef7c0cb3df25f1a4a
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583930"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725705"
 ---
 # <a name="navigate-the-planning-tool-in-skype-for-business-server-2015"></a>Esplorare lo strumento di pianificazione in Skype for Business Server 2015
 
@@ -27,23 +27,23 @@ ms.locfileid: "58583930"
 
 All'avvio dello strumento di pianificazione, un progettista visualizza innanzitutto la pagina Iniziale dello strumento di pianificazione per Skype for Business Server **2015.**
 
-![Pagina iniziale dello strumento di pianificazione](../../media/Planning_Tool_Welcome.png)
+![Pagina iniziale dello strumento di pianificazione.](../../media/Planning_Tool_Welcome.png)
 
-Nella pagina iniziale, il progettista sceglie **Informazioni di base**, **Progetta siti** o **Visualizza**. Per informazioni dettagliate, [vedere Create the initial topology design for Skype for Business Server 2015](create-the-initial-design.md).
+Nella pagina iniziale, il progettista sceglie Informazioni di base **,** **Progetta siti** o **Visualizza**. Per informazioni dettagliate, [vedere Create the initial topology design for Skype for Business Server 2015](create-the-initial-design.md).
 
 Nella parte superiore dello Strumento di pianificazione è disponibile una barra degli strumenti che consente di accedere facilmente alle funzioni utilizzate di frequente. La barra degli strumenti viene visualizzata qui come riferimento e ogni funzione verrà illustrata negli argomenti correlati.
 
-![Barra degli strumenti dello strumento di pianificazione](../../media/Planning_Tool_Toolbar_Annotated.jpg)
+![Barra degli strumenti dello strumento di pianificazione.](../../media/Planning_Tool_Toolbar_Annotated.jpg)
 
-Lo strumento di pianificazione dispone di una sezione Collegamenti esterni sul lato sinistro dello strumento. Da qui, il progettista può accedere facilmente alle informazioni sulla pianificazione e la distribuzione e ad altre risorse tecniche, ad esempio formazione, blog tecnici, forum e altre risorse scaricabili. Anche nella sezione Collegamenti esterni è disponibile un collegamento Feedback al team Skype for Business Server strumento di pianificazione 2015.
+Lo strumento di pianificazione dispone di una sezione Collegamenti esterni sul lato sinistro dello strumento. Da qui, il progettista può accedere facilmente alle informazioni sulla pianificazione e la distribuzione e ad altre risorse tecniche, ad esempio formazione, blog tecnici, forum e altre risorse scaricabili. Anche nella sezione Collegamenti esterni è disponibile un collegamento feedback al team Skype for Business Server strumento di pianificazione 2015.
 
-![Finestra di dialogo Collegamenti esterni dello strumento di pianificazione](../../media/Planning_Tool_External_Links_Dialog.jpg)
+![Finestra di dialogo Collegamenti esterni dello strumento di pianificazione.](../../media/Planning_Tool_External_Links_Dialog.jpg)
 
 In molte pagine dello Strumento di pianificazione viene visualizzato un riquadro Azioni sensibile al contesto. Il riquadro Azioni consente al progettista di accedere facilmente alle sezioni principali della topologia. I collegamenti disponibili nel riquadro Azioni cambiano in base al livello di dettaglio della topologia. Il riquadro Azioni è disponibile dopo aver completato le domande del colloquio e aver visualizzato la topologia. Nel riquadro Azioni è inclusa la sezione Panoramica, che visualizza i numeri immessi dal progettista nell'ambito del processo di intervista. La panoramica è contestualmente correlata alle informazioni visualizzate.
 
 Nella sezione di panoramica del riquadro Azioni vengono altresì visualizzate le informazioni relative all'hardware. Come configurazione hardware viene infatti visualizzato un elenco dei requisiti hardware consigliati per la topologia corrente.
 
-![Riquadro Azioni dello strumento di pianificazione](../../media/Planning_Tool_Actions_Pane.jpg)
+![Riquadro Azioni dello strumento di pianificazione.](../../media/Planning_Tool_Actions_Pane.jpg)
 
 ## <a name="see-also"></a>Vedere anche
 

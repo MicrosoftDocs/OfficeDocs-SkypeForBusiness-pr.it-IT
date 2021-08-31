@@ -21,12 +21,12 @@ searchScope:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: a182c825be8d8111533e7cdea8fb127b273173bb57584569f4c3780dad91f178
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 63899180b08e1de9b764ae486bdd07e5e31475ce
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54339664"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727235"
 ---
 # <a name="shifts-for-teams"></a>Turni per Teams
 
@@ -36,18 +36,18 @@ Teams fornisce ai dipendenti in prima linea dell'organizzazione gli strumenti ne
 
 |               |               |               |               |
 | ------------- | ------------- | ------------- | ------------- |
-|![task-checklist-planning-teams](../media/task-checklist-planning-teams-small.svg) | **[Gestire turni nell'organizzazione](./shifts/manage-the-shifts-app-for-your-organization-in-teams.md)** |![progettazione](../media/Help-small.svg)  | **[Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Specific_apps)** |
+|![task-checklist-planning-teams.](../media/task-checklist-planning-teams-small.svg) | **[Gestire turni nell'organizzazione](./shifts/manage-the-shifts-app-for-your-organization-in-teams.md)** |![progettazione](../media/Help-small.svg)  | **[Guida di Turni per i lavoratori in prima linea](https://support.office.com/article/apps-and-services-cc1fba57-9900-4634-8306-2360a40c665b#PickTab=Specific_apps)** |
 
 ### <a name="shifts-extensions"></a>Estensioni turni
 
 |               |               |
 | ------------- | ------------- |
-| ![api](../media/api-small.svg) | **[MAIUSC Graph API](/graph/api/resources/shift?view=graph-rest-1.0)** I turni Graph API consentono di integrare i dati di Turni con sistemi di gestione della forza lavoro esterni. Avrai la flessibilità necessaria per creare esperienze di turni personalizzate nel back-end, offrendo agli utenti un'esperienza di front-end ricca in Teams.             |
-| ![api](../media/api-small.svg) | **[Integrazioni di gestione della forza lavoro](https://github.com/OfficeDev/Microsoft-Teams-Shifts-WFM-Connectors)** Se si usano sistemi di gestione della forza lavoro di terze parti, come Kronos e JDA, per la pianificazione, l'orario e la partecipazione, è possibile eseguire l'integrazione direttamente con le API e l'SDK di Turni Graph con integrazioni open source. |
-| ![api](../media/process-flow-teams-small.svg) | **[Turni + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Turni e Power Automate consente di prendere informazioni da Turni e creare flussi di lavoro personalizzati con altre app ed eseguire operazioni su larga scala. Automatizzare i processi chiave con poco o nessun codice. I trigger e i modelli supportano diversi scenari, ad esempio l'abilitazione delle approvazioni automatici per le richieste di turno quando non è necessaria l'approvazione di un responsabile. |
+| ![api.](../media/api-small.svg) | **[MAIUSC Graph API](/graph/api/resources/shift?view=graph-rest-1.0)** I turni Graph API consentono di integrare i dati di Turni con sistemi di gestione della forza lavoro esterni. Si ha la flessibilità necessaria per creare esperienze di turni personalizzate nel back-end, offrendo agli utenti un'esperienza di front-end ricca Teams.             |
+| ![api.](../media/api-small.svg) | **[Integrazioni di gestione della forza lavoro](https://github.com/OfficeDev/Microsoft-Teams-Shifts-WFM-Connectors)** Se si usano sistemi di gestione della forza lavoro di terze parti, come Kronos e JDA, per la pianificazione, l'orario e la partecipazione, è possibile eseguire l'integrazione direttamente con le API e l'SDK di Turni Graph con integrazioni open source. |
+| ![api.](../media/process-flow-teams-small.svg) | **[Turni + Power Automate](https://github.com/OfficeDev/Microsoft-Teams-Shifts-Power-Automate-Templates)** Turni e Power Automate consente di prendere informazioni da Turni e creare flussi di lavoro personalizzati con altre app ed eseguire operazioni su larga scala. Automatizzare i processi chiave con poco o nessun codice. I trigger e i modelli supportano diversi scenari, ad esempio l'abilitazione delle approvazioni automatici per le richieste di turno quando non è necessaria l'approvazione di un responsabile. |
 
 ## <a name="featured-training"></a>Formazione in primo piano
 
 |               |               |               |               |               |               |
 | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| ![arrow-right-2-teams](../media/arrow-right-2-teams-small.svg)  |  [Video: Che cos'è Turni?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |![clock-teams](../media/clock-teams-small.svg)  |  [Video: Che cos'è Turni?](https://support.office.com/article/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |![blocks-teams](../media/blocks-teams-small.svg)  |  [Video: Gestire una pianificazione turni](https://support.office.com/article/manage-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |
+| ![arrow-right-2-teams.](../media/arrow-right-2-teams-small.svg)  |  [Video: Che cos'è Turni?](https://support.office.com/article/what-is-shifts-f8efe6e4-ddb3-4d23-b81b-bb812296b821) |![clock-teams](../media/clock-teams-small.svg)  |  [Video: Che cos'è Turni?](https://support.office.com/article/create-a-shifts-schedule-2b94ca38-36db-4a1c-8fee-f8f0fec9a984) |![blocks-teams](../media/blocks-teams-small.svg)  |  [Video: Gestire una pianificazione turni](https://support.office.com/article/manage-a-shifts-schedule-63acda7b-ea39-441a-b1c6-c404a72e79f7) |

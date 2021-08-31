@@ -15,13 +15,13 @@ appliesto:
 - Microsoft Teams
 f1.keywords:
 - NOCSH
-description: Leggere questo argomento per informazioni su come gestire i failover trunk sulle chiamate in uscita Teams al Session Border Controller (SBC).
-ms.openlocfilehash: 878a4735585ee183f0156b44c253b079c2e6e24c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Leggere questo argomento per informazioni su come gestire i failover trunk sulle chiamate in uscita Teams al session border controller (SBC).
+ms.openlocfilehash: 83320e93df7cbf476d71b3b9165d50ca387292b9
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619452"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727865"
 ---
 # <a name="trunk-failover-on-outbound-calls"></a>Failover trunk sulle chiamate in uscita
 
@@ -42,15 +42,15 @@ Si supponga una situazione in cui un SBC ha risposto a un invito in arrivo con i
 
 Questo particolare SBC potrebbe avere difficoltà a connettersi al chiamato, ad esempio a causa di una configurazione errata della rete o di un altro errore. Tuttavia, c'è un altro SBC nel percorso che potrebbe essere in grado di raggiungere il chiamato.
 
-Nel diagramma seguente, quando un utente effettua una chiamata a un numero di telefono, nel percorso sono presenti due SBC che possono potenzialmente recapitare la chiamata. Inizialmente, SBC1.contoso.com selezionato per la chiamata, ma SBC1.contoso.com non è in grado di raggiungere una rete PTSN a causa di un problema di rete.
+Nel diagramma seguente, quando un utente effettua una chiamata a un numero di telefono, nel percorso sono presenti due SBC che possono potenzialmente recapitare la chiamata. Inizialmente, SBC1.contoso.com per la chiamata, ma SBC1.contoso.com non è in grado di raggiungere una rete PTSN a causa di un problema di rete.
 Per impostazione predefinita, la chiamata verrà completata in questo momento. 
  
-![Diagramma che mostra che SBC non riesce a raggiungere PSTN a causa di un problema di rete](media/direct-routing-failover-response-codes1.png)
+![Diagramma che mostra che SBC non riesce a raggiungere PSTN a causa di un problema di rete.](media/direct-routing-failover-response-codes1.png)
 
 Ma c'è un altro SBC nel percorso che potenzialmente può recapitare la chiamata.
 Se si configura il parametro , verrà provato il secondo `Set-CSOnlinePSTNGateway -Identity sbc1.contoso.com -FailoverResponseCodes "408"` SBC, SBC2.contoso.com nel diagramma seguente:
 
-![Diagramma che mostra il routing al secondo SBC](media/direct-routing-failover-response-codes2.png)
+![Diagramma che mostra il routing al secondo SBC.](media/direct-routing-failover-response-codes2.png)
 
 L'impostazione del parametro -FailoverResponseCodes e la specifica dei codici consentono di ottimizzare il routing ed evitare potenziali problemi quando un SBC non può effettuare una chiamata a causa di problemi di rete o di altro tipo.
 

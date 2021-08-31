@@ -24,28 +24,28 @@ ms.custom:
 - Calling Plans
 - LIL_Placement
 - seo-marvel-mar2020
-description: Scopri come configurare i Piani per le chiamate, tra cui visualizzare i piani disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & località.
-ms.openlocfilehash: 0e44c9ec30efef26840bcb79582186ed5e0e3678
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Scopri come configurare Piani per chiamate, inclusi i piani di visualizzazione disponibili nella tua area geografica, acquistare & assegnare licenze, ottenere numeri di telefono e aggiungere indirizzi di emergenza & località.
+ms.openlocfilehash: b7593155711597ae94d2db97573c6b6ba7afcc18
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58618482"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725725"
 ---
 # <a name="set-up-calling-plans"></a>Configurare le chiamate PSTN per Skype for Business
 
-Le chiamate ad altri utenti Teams sono gratuite, ma se si vuole che gli utenti possano chiamare telefoni esterni all'azienda, è possibile ottenere un piano per chiamate nazionali o un piano per chiamate internazionali in Microsoft 365 o Office 365. È facile configurare Piani per chiamate per la tua azienda.  Per altre informazioni sui Piani per chiamate, vedere [Quale piano di chiamata è più giusto per te?](calling-plan-landing-page.md).
+Le chiamate ad altri utenti Teams sono gratuite, ma se si vuole che gli utenti siano in grado di chiamare telefoni al di fuori dell'azienda, ottenere un piano per chiamate nazionali o un piano per chiamate internazionali in Microsoft 365 o Office 365. È facile configurare Piani per chiamate per la tua azienda.  Per altre informazioni sui Piani per chiamate, vedere [Quale piano di chiamata è più giusto per te?](calling-plan-landing-page.md).
 
 ## <a name="step-1-find-out-if-calling-plans-are-available-in-your-countryregion"></a>Passaggio 1: Scopri se i Piani per chiamate sono disponibili nel tuo paese/area geografica
-Passare [](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) a Disponibilità per paese e area geografica per i piani per audioconferenze e chiamate e selezionare il paese o l'area geografica per ottenere informazioni sulla disponibilità dei piani per chiamate, oltre a informazioni su Audioconferenza, Sistema telefonico, numeri a pagamento e a pagamento e Crediti comunicazioni.
+Vai a Disponibilità per paese e area geografica per [i](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) piani per audioconferenze e chiamate e seleziona il tuo paese o area geografica per ottenere informazioni sulla disponibilità sui Piani per le chiamate, oltre a informazioni su audioconferenza, Sistema telefonico, numeri a pagamento e a pagamento e crediti per le comunicazioni.
 
-Se Piani per chiamate non sono disponibili per il paese o l'area geografica, è consigliabile usare Il routing diretto per connettere l'infrastruttura di telefonia locale a Sistema telefonico.  Per altre informazioni, vedere Sistema telefonico [routing diretto](direct-routing-landing-page.md).
+Se i Piani per chiamate non sono disponibili per il paese o l'area geografica, è consigliabile usare Il routing diretto per connettere l'infrastruttura di telefonia locale a Sistema telefonico.  Per altre informazioni, vedere Sistema telefonico [Routing diretto](direct-routing-landing-page.md).
   
 ## <a name="step-2-buy-and-assign-licenses"></a>Passaggio 2: Acquistare e assegnare licenze
-1. Se la Sistema telefonico non è inclusa nel piano Microsoft 365 o Office 365, potrebbe essere necessario  acquistare Sistema telefonico licenze per i componenti aggiuntivi. Dopo aver acquistato **Sistema telefonico** licenze, acquistare Piani per chiamate per Microsoft 365 [o Office 365](calling-plans-for-office-365.md). Vedere [Microsoft Teams licenze per i componenti](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)aggiuntivi e acquistare le licenze e il piano. 
+1. Se la Sistema telefonico non è inclusa nel piano Microsoft 365 o Office 365, potrebbe essere necessario acquistare Sistema telefonico **licenze** per i componenti aggiuntivi. Dopo aver acquistato **Sistema telefonico** licenze, acquistare Piani per chiamate per Microsoft 365 [o Office 365](calling-plans-for-office-365.md). Vedere [Microsoft Teams licenze per i componenti aggiuntivi](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)e acquistare le licenze e il piano. 
     
     > [!TIP]
-    > **Sistema telefonico** licenze e piani per chiamate in Microsoft 365 o Office 365 insieme, quindi per visualizzare l'opzione per l'acquisto di Piani per chiamate, devi prima avere le licenze Sistema telefonico **chiamate.**
+    > **Sistema telefonico** licenze e piani per chiamate in Microsoft 365 o Office 365 vanno insieme, quindi per vedere l'opzione per acquistare Piani per chiamate, è necessario prima avere le licenze Sistema telefonico **chiamate.**
   
 2. First assign the licenses, and then assign a Calling Plan to the people in your organization. Vedere [Assegnare Microsoft Teams licenze per i componenti aggiuntivi.](./teams-add-on-licensing/microsoft-teams-add-on-licensing.md)
     
@@ -78,7 +78,7 @@ Microsoft consiglia di inviare posta elettronica o di usare il metodo di comunic
  
 In **Microsoft Teams** gli utenti possono visualizzare il loro numero di telefono facendo clic su **Chiamate** nel riquadro di spostamento sinistro. Il numero di telefono viene visualizzato sopra la tastiera.
 
-![Schermata delle opzioni disponibili dopo aver fatto clic su Chiamate](media/teams-phone-number.png)
+![Schermata delle opzioni disponibili dopo aver fatto clic su Chiamate.](media/teams-phone-number.png)
 
 
 ## <a name="do-you-want-to-automate-assigning-phone-numbers"></a>Vuoi automatizzare l'assegnazione dei numeri di telefono?

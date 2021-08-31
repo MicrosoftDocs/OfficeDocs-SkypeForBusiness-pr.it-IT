@@ -20,13 +20,13 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
-description: "Informazioni su come abilitare o disabilitare Skype l'invio di messaggi di posta elettronica agli utenti quando vengono apportate modifiche alle impostazioni, ad esempio il pin o il numero di conferenza predefinito Microsoft Teams. "
-ms.openlocfilehash: 3d9284d78c20b65c3474475a91e041600c232049
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Informazioni su come abilitare o disabilitare Skype l'invio di messaggi di posta elettronica agli utenti quando vengono apportate modifiche a impostazioni come il pin o il numero di conferenza predefinito in Microsoft Teams. "
+ms.openlocfilehash: f81572feb976ab68a6a65631ec772ec4421f2b1e
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635700"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727445"
 ---
 # <a name="enable-or-disable-sending-emails-when-audio-conferencing-settings-change-in-microsoft-teams"></a>Abilitare o disabilitare l'invio di messaggi di posta elettronica quando le impostazioni di audioconferenza cambiano Microsoft Teams
 
@@ -36,7 +36,7 @@ Se si disabilita l'invio di messaggi di posta elettronica, i messaggi di posta e
   
 Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando sono abilitati per le audioconferenze:
   
-![Esempio di messaggio di posta elettronica per audioconferenze](media/teams-emails-sent-to-users-when-settings-change-image1.png)
+![Esempio di messaggio di posta elettronica audioconferenza.](media/teams-emails-sent-to-users-when-settings-change-image1.png)
   
 ## <a name="when-are-emails-being-sent-to-your-users"></a>I messaggi di posta elettronica quando vengono inviati agli utenti?
 
@@ -59,7 +59,7 @@ Ecco un esempio del messaggio di posta elettronica inviato agli utenti quando so
 
 È possibile usare le Microsoft Teams o Windows PowerShell per abilitare o disabilitare la posta elettronica inviata agli utenti.
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro, passare a **Riunioni** > **Bridge di conferenza**. 
 

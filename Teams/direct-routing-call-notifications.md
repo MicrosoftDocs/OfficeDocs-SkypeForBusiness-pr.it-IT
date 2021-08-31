@@ -18,16 +18,16 @@ description: Notifica di chiamata instradamento diretto
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
-ms.openlocfilehash: 27e06a45cef49f2291fdf75a8375026b9a930953
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 80c7c5487d61447a38852ca30328126b19c0499b
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617412"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725925"
 ---
 # <a name="manage-call-notifications"></a>Gestire le notifiche di chiamata
 
-Questo articolo descrive come gestire le notifiche di chiamata per gli utenti. È possibile configurare gli endpoint di chiamata sia Teams che a un PBX (Private Branch Exchange) o SBC (Session Border Controller) di terze parti.  Questa configurazione è utile, ad esempio, se si vuole inviare una chiamata ai telefoni cellulari e da tavolo di un utente contemporaneamente.   
+Questo articolo descrive come gestire le notifiche di chiamata per gli utenti. È possibile configurare gli endpoint di chiamata sia per Teams che per un pbx (Private Branch Exchange) o SBC (Session Border Controller) di terze parti.  Questa configurazione è utile, ad esempio, se si vuole inviare una chiamata ai telefoni cellulari e da tavolo di un utente contemporaneamente.   
 
 Nel diagramma seguente l'utente Irena ha due endpoint:
 
@@ -37,7 +37,7 @@ Nel diagramma seguente l'utente Irena ha due endpoint:
 Quando arriva una chiamata, la SBC la forierà tra Sistema telefonico Direct Routing e SBC di terze parti.
 
 
-![Diagramma che mostra gli endpoint Teams forked](media/direct-routing-call-notification-1.png)
+![Diagramma che mostra gli endpoint Teams forked.](media/direct-routing-call-notification-1.png)
 
 Se la chiamata viene accettata su Fork 2 (da parte di SBC di terze parti), Teams genererà una notifica "Chiamata persa".  
 
@@ -50,4 +50,4 @@ La chiamata non verrà registrata nei record dei dettagli della chiamata di Tele
 
 Il diagramma seguente illustra la scala SIP per fork 1, spiega il flusso delle chiamate e il motivo previsto nel messaggio Annulla. 
 
-![Diagramma che mostra gli endpoint Teams forked](media/direct-routing-call-notification-2.png)
+![Il diagramma mostra gli endpoint Teams forked.](media/direct-routing-call-notification-2.png)

@@ -21,12 +21,12 @@ ms.custom:
 - ms.teamsadmincenter.callparkpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come usare il parcheggio di chiamata e recuperare per mettere una chiamata in attesa in Microsoft Teams.
-ms.openlocfilehash: 44884c98f3e98c15106b3d1a341eaa75b2176b0a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e58cf8ead120cb7265665abecc0683ea9a96f559
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628418"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732545"
 ---
 # <a name="call-park-and-retrieve-in-microsoft-teams"></a>Parcheggio di chiamata e recupero in Microsoft Teams
 
@@ -34,8 +34,8 @@ Il parcheggio di chiamata e il recupero è una funzionalità che consente a un u
 
 Alcuni degli scenari comuni per l'uso del parcheggio di chiamata sono:
 
-- Un addetto alla reception parcheggia una chiamata per qualcuno che lavora in una fabbrica. L'addetto alla ricezione annuncia quindi la chiamata e il numero di codice sul sistema di indirizzi pubblici. L'utente per cui è stata chiamata può quindi prelevare un telefono Teams telefono nella fabbrica e immettere il codice per recuperare la chiamata.
-- Un utente parcheggia una chiamata su un dispositivo mobile perché la batteria del dispositivo è in esaurimento. L'utente può quindi immettere il codice per recuperare la chiamata da un Teams da tavolo.
+- Un addetto alla reception parcheggia una chiamata per qualcuno che lavora in una fabbrica. L'addetto alla ricezione annuncia quindi la chiamata e il numero di codice sul sistema di indirizzi pubblici. L'utente per cui è stata chiamata può quindi prendere un telefono Teams telefono nella fabbrica e immettere il codice per recuperare la chiamata.
+- Un utente parcheggia una chiamata su un dispositivo mobile perché la batteria del dispositivo è in esaurimento. L'utente può quindi immettere il codice per recuperare la chiamata da un telefono Teams da tavolo.
 - Un rappresentante del supporto parcheggia una chiamata del cliente e invia un annuncio su un canale Teams per consentire a un esperto di recuperare la chiamata e aiutare il cliente. Un esperto immette il codice in Teams client per recuperare la chiamata
 
 Per parcheggiare e recuperare le chiamate, un utente deve essere un VoIP aziendale utente e deve essere incluso in un criterio di parcheggio di chiamata.
@@ -55,7 +55,7 @@ Per abilitare un criterio di parcheggio di chiamata
 2. Nella scheda **Gestisci criteri** fare clic su **Aggiungi.**
 3. Assegnare un nome al criterio e quindi impostare **Consenti parcheggio di chiamata** su **Attivata.** Non è possibile personalizzare l'intervallo di risposta e il timeout della chiamata.
 
-    ![Screenshot delle impostazioni dei criteri del parcheggio di chiamata](media/call-park-add-policy.png)
+    ![Screenshot delle impostazioni dei criteri del parcheggio di chiamata.](media/call-park-add-policy.png)
 
 4. Selezionare **Salva**.
 
@@ -70,7 +70,7 @@ Per assegnare un criterio di parcheggio di chiamata a un gruppo
 3. Scegliere un rango rispetto ad altre assegnazioni di gruppo.
 4. In **Selezionare un criterio** scegliere il criterio a cui si vuole assegnare il gruppo.
 
-    ![Immagine dei criteri del parco](media/call-park-assign-policy-to-group.png)
+    ![immagine dei criteri del parco.](media/call-park-assign-policy-to-group.png)
 
 5. Selezionare **Applica**.
 

@@ -13,14 +13,14 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 ms.assetid: d86ff657-ee92-4b06-aee3-d4c43090bdcb
-description: Questo articolo illustra come distribuire la gestione dei dispositivi Microsoft Teams Rooms in modo integrato end-to-end con Monitor di Azure.
+description: Questo articolo illustra come distribuire la gestione dei Microsoft Teams Rooms dispositivi in modo integrato e end-to-end con Monitor di Azure.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 77b1e18e9f30e13cc209040ab876324afa232766
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6713b8651432766e6858f3376ff9804d638babcc
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613025"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726115"
 ---
 # <a name="deploy-no-loc-textmicrosoft-teams-rooms-management-with-no-loc-textazure-monitor"></a>Distribuire :::no-loc text="Microsoft Teams Rooms"::: la gestione con :::no-loc text="Azure Monitor":::
 
@@ -30,7 +30,7 @@ Questo articolo illustra come configurare e distribuire la gestione integrata e 
 
 Seguendo questa guida, è possibile usare un dashboard come l'esempio seguente per ottenere report dettagliati sullo stato per la disponibilità dei dispositivi, l'integrità dell'applicazione e dell'hardware e la distribuzione delle versioni delle applicazioni :::no-loc text="Microsoft Teams Rooms"::: e del sistema operativo.
 
-![Screenshot della visualizzazione Log Analytics di esempio per Microsoft Teams Rooms](../media/Deploy-Azure-Monitor-1.png "Visualizzazione di esempio di Log Analytics per Microsoft Teams Rooms")
+![Screenshot della visualizzazione Log Analytics di esempio per Microsoft Teams Rooms.](../media/Deploy-Azure-Monitor-1.png "Visualizzazione di esempio di Log Analytics per Microsoft Teams Rooms")
 
 A un livello elevato, è necessario eseguire le attività seguenti:
 
@@ -65,7 +65,7 @@ Se è necessario creare una nuova area :::no-loc text="Log Analytics"::: di lavo
 
 Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc text="Microsoft Teams Rooms"::: eventi, vedere origini dati del [ :::no-loc text="Windows"::: log eventi in :::no-loc text="Azure Monitor"::: ](/azure/azure-monitor/platform/data-sources-windows-events)
 
-![Screenshot delle impostazioni del log eventi](../media/Deploy-Azure-Monitor-2.png "Impostazioni del log eventi")
+![Screenshot delle impostazioni del log eventi.](../media/Deploy-Azure-Monitor-2.png "Impostazioni del log eventi")
 
 > [!IMPORTANT]
 > Configurare le impostazioni del log eventi e immettere il nome del log eventi e quindi selezionare le caselle di controllo Errore :::no-loc text="Windows"::: **:::no-loc text="Skype Room System":::** , Avviso **e** Informazioni.  
@@ -77,7 +77,7 @@ Per configurare :::no-loc text="Log Analytics"::: la raccolta degli :::no-loc te
 
 ### <a name="install-no-loc-textmicrosoft-monitoring-agents-to-test-devices"></a>Installare :::no-loc text="Microsoft Monitoring"::: agenti per testare i dispositivi
 
-Distribuire l'agente ai dispositivi di test usando le istruzioni fornite :::no-loc text="Microsoft Monitoring"::: Connessione computer al servizio [ :::no-loc text="Windows"::: :::no-loc text="Log Analytics"::: in :::no-loc text="Azure"::: ](/azure/azure-monitor/platform/agent-windows). Questo articolo fornisce informazioni dettagliate sui passaggi per la distribuzione dell'agente per , le istruzioni per ottenere l'ID area di lavoro _ e la chiave primaria * per ottenere i dispositivi connessi alla distribuzione e la procedura per verificare la connettività dell'agente :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Windows"::: all'istanza. :::no-loc text="Log Analytics":::  * ** :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Azure Monitor"::: :::no-loc text="Log Analytics":::
+Distribuire l'agente ai dispositivi di test usando le istruzioni fornite :::no-loc text="Microsoft Monitoring"::: Connessione computer al servizio [ :::no-loc text="Windows"::: :::no-loc text="Log Analytics"::: in :::no-loc text="Azure"::: ](/azure/azure-monitor/platform/agent-windows). Questo articolo fornisce informazioni dettagliate sui passaggi per la distribuzione dell'agente per , le istruzioni per ottenere l'ID area di lavoro _ e la chiave primaria * per ottenere i dispositivi connessi alla distribuzione e i passaggi per verificare la connettività dell'agente :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Windows"::: all'istanza. :::no-loc text="Log Analytics":::  * ** :::no-loc text="Microsoft Teams Rooms"::: :::no-loc text="Azure Monitor"::: :::no-loc text="Log Analytics":::
 
 ### <a name="generate-sample-no-loc-textmicrosoft-teams-rooms-events"></a>Generare eventi di :::no-loc text="Microsoft Teams Rooms"::: esempio
 
@@ -238,7 +238,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 ### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-operating-system-versions"></a>Creare un riquadro che visualizza le :::no-loc text="Microsoft Teams Rooms"::: versioni del sistema operativo
 
-1.  Selezionare **Donut & dalla** raccolta e quindi aggiungere un nuovo riquadro.
+1.  Selezionare **Donut & elenco** dalla raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** Dettagli del sistema operativo<br>
     **Nuovo gruppo:** Selezionato
@@ -262,7 +262,7 @@ In alternativa, è possibile creare un dashboard personalizzato e aggiungere sol
 
 ### <a name="create-a-tile-that-displays-no-loc-textmicrosoft-teams-rooms-application-versions"></a>Creare un riquadro che visualizza le versioni :::no-loc text="Microsoft Teams Rooms"::: dell'applicazione
 
-1.  Selezionare **Donut & dalla** raccolta e quindi aggiungere un nuovo riquadro.
+1.  Selezionare **Donut & elenco** dalla raccolta e quindi aggiungere un nuovo riquadro.
 2.  Definire le **proprietà** Generali:<br>
     **Titolo gruppo:** :::no-loc text="Microsoft Teams Rooms"::: dettagli dell'applicazione<br>
     **Nuovo gruppo:** Selezionato
@@ -401,10 +401,10 @@ La definizione degli avvisi è stata completata. È possibile definire avvisi ag
 
 Quando viene generato un avviso, viene visualizzato un messaggio di posta elettronica che elenca i dispositivi che hanno riscontrato un problema nell'ultima ora.
 
-! [Messaggio di :::no-loc text="Azure Monitor"::: posta elettronica di avviso di esempio](.. /media/Deploy-Azure-Monitor-6.png "Messaggio di :::no-loc text="Azure Monitor"::: avviso di esempio")
+! [Messaggio di :::no-loc text="Azure Monitor"::: posta elettronica di avviso di esempio](.. /media/Deploy-Azure-Monitor-6.png "Messaggio di avviso :::no-loc text="Azure Monitor"::: di esempio")
 
 ## <a name="configure-all-devices-for-no-loc-textazure-monitoring"></a>Configurare tutti i dispositivi per :::no-loc text="Azure Monitoring":::
-<a name="configure_all_devices"></a> Dopo aver configurato i dashboard e gli avvisi, è possibile configurare l'agente in tutti i :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Microsoft Teams Rooms"::: dispositivi per completare la distribuzione di monitoraggio.
+<a name="configure_all_devices"></a> Dopo aver configurato i dashboard e gli avvisi, è possibile configurare l'agente in tutti i dispositivi per :::no-loc text="Microsoft Monitoring"::: :::no-loc text="Microsoft Teams Rooms"::: completare la distribuzione di monitoraggio.
 
 Anche se è possibile installare e configurare manualmente l'agente in ogni dispositivo, è consigliabile usare gli strumenti e i metodi di :::no-loc text="Microsoft Monitoring"::: distribuzione del software esistenti.
 
@@ -433,7 +433,7 @@ Se i dispositivi sono già stati distribuiti prima dell'implementazione, è poss
     2.  Modificare i parametri WorkspaceId, WorkspaceKey e SetupPath in modo che corrispondano alla configurazione.
     3.  Modificare lo stesso oggetto Criteri di gruppo e passare a Criteri di configurazione \\ \\ :::no-loc text="Windows"::: computer Impostazioni script \\ (avvio/arresto)
     4.  Fare doppio clic per selezionare **Avvio** e quindi selezionare **Script di PowerShell.**
-    5.  Selezionare **Mostra file** e quindi copiare **il** Install-MMAgent.ps1file nella cartella.
+    5.  Selezionare **Mostra file** e quindi copiare **Install-MMAgent.ps1** file nella cartella.
     6.  Selezionare **Aggiungi** e quindi **Sfoglia.**
     7.  Selezionare lo script ps1 appena copiato.
 

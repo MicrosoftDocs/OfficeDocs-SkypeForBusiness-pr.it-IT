@@ -19,12 +19,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 1385f190c0bcf35c89576695911853c88ef7d1d1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f1dbd1d7c586c989484fa71b1e0b0e3d1fb47550
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634840"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727405"
 ---
 # <a name="manage-retention-policies-for-microsoft-teams"></a>Gestire i criteri di conservazione per Microsoft Teams
 
@@ -81,16 +81,16 @@ Questa pagina contiene informazioni aggiuntive sulla creazione e sulla gestione 
 
 Per le chat private (chat 1:1) o le chat di gruppo, gli utenti vedranno che le chat precedenti alla configurazione dei criteri di conservazione vengono eliminate e un messaggio generato automaticamente che indica che i messaggi meno recenti sono stati eliminati a causa dei criteri di conservazione dell'organizzazione viene visualizzato sopra i messaggi non eliminati. Ad esempio:
 
-:::image type="content" source="media/retention-policies-image1.png" alt-text="L'utente viene informato in Teams che il messaggio di chat viene eliminato a causa di un criterio di conservazione di Teams":::
+:::image type="content" source="media/retention-policies-image1.png" alt-text="L'utente informato in Teams che il messaggio di chat viene eliminato a causa di un criterio Teams conservazione.":::
 
 
-:::image type="content" source="media/retention-policies-image2.png" alt-text="All'utente in Teams viene spiegato che i messaggi vengono eliminati in seguito ai criteri di conservazione di Teams":::
+:::image type="content" source="media/retention-policies-image2.png" alt-text="Gli utenti Teams che spiegano i messaggi vengono eliminati come risultato di un criterio Teams di conservazione.":::
 
 Per i messaggi del canale, gli utenti (membri del canale) vedranno i messaggi eliminati scomparire dalla visualizzazione dopo la scadenza dei messaggi. Se il messaggio eliminato è un messaggio padre di una conversazione in thread, al posto del messaggio padre verrà visualizzato un messaggio che indica che il messaggio è stato eliminato a causa di un criterio di conservazione. Ad esempio:
 
-:::image type="content" source="media/retention-policies-image3.png" alt-text="Screenshot del canale prima della conservazione":::
+:::image type="content" source="media/retention-policies-image3.png" alt-text="Screenshot del canale prima della conservazione.":::
 
-:::image type="content" source="media/retention-policies-image4.png" alt-text="Screenshot del canale dopo la conservazione":::
+:::image type="content" source="media/retention-policies-image4.png" alt-text="Screenshot del canale dopo la conservazione.":::
 
 > [!NOTE]
 > I messaggi visualizzati dagli utenti come risultato dei messaggi eliminati non sono configurabili in questo momento.

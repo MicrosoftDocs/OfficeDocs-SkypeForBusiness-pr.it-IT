@@ -17,18 +17,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a433a7a372c89a2d22bac7991effdd5081ac298d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0fe0ac66b8d1ff9afe43d4d57783e803f426c23c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616252"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732955"
 ---
 # <a name="set-up-cloud-video-interop-for-microsoft-teams"></a>Configurare Cloud Video Interop per Microsoft Teams
 
 Dopo aver scelto i partner cloud [Video Interop,](cloud-video-interop.md)è necessario pianificare la distribuzione, configurare i dettagli del provisioning e la chiave del tenant del partner e acconsentire all'app di interoperabilità video nell'organizzazione. Il diagramma seguente illustra il processo. 
 
-![Distribuzione di CVI nell'organizzazione](media/deploying-cvi.png)
+![Distribuzione di CVI nell'organizzazione.](media/deploying-cvi.png)
 
 ## <a name="plan"></a>Piano
 
@@ -57,7 +57,7 @@ Per configurare Cloud Video Interop, seguire questa procedura.
  
 La chiave del tenant sarà la connessione remota al servizio partner. Nell'esempio seguente, 813878896@t.plcm.vc è la chiave del tenant. 
 
-![Esempio di chiave tenant](media/tenant-key-example.png) 
+![Esempio di chiave tenant.](media/tenant-key-example.png) 
 
 Per eseguire il provisioning della chiave del tenant, è necessario eseguire i cmdlet seguenti e consentire anche a utenti selezionati o all'intera organizzazione di creare riunioni con coordinate di interoperabilità video.
 
@@ -92,9 +92,9 @@ Al termine di questi passaggi, gli utenti abilitati singolarmente tramite il cmd
 
 ## <a name="schedule"></a>Pianificazione
 
-Pianificare quindi una riunione Teams con coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
+Pianificare quindi una Teams riunione con coordinate di interoperabilità video. L'utente abilitato può pianificare le riunioni dei team tramite:
 - [Teams Componente aggiuntivo Riunione per Outlook](teams-add-in-for-outlook.md)
-- Teams client desktop e per dispositivi mobili
+- Teams client desktop e mobile
 
 
 ## <a name="join"></a>Partecipa
@@ -103,10 +103,10 @@ Pianificare quindi una riunione Teams con coordinate di interoperabilità video.
  
 - IVR (Risposta vocale interattiva)
     - È possibile accedere all'IVR del partner usando il tenantkey@domain. 
-    - Una volta che sei nell'IVR partner, ti verrà chiesto di immettere l'ID conferenza VTC, che ti connetterà alla riunione Teams riunione.
+    - Una volta che sei nell'IVR partner, ti verrà chiesto di accedere all'ID conferenza VTC, che ti connetterà alla riunione Teams riunione.
 - Chiamata diretta
     - È possibile accedere direttamente alla riunione Teams senza interagire con l'IVR del partner usando la funzione di chiamata diretta usando la stringa completa di tenantkey. VTC ConferenceId@domain.
 - Chiamata con un solo tocco
-    - Se si ha una sala Teams integrata, è possibile usare le funzionalità di composizione con un solo tocco offerte dal partner (senza dover digitare alcuna stringa di chiamata).
+    - Se si ha una sala Teams integrata, è possibile usare le funzionalità di composizione con un solo tocco offerte dal partner (senza bisogno di digitare alcuna stringa di chiamata).
 
 Infine, è possibile coinvolgere Teams utenti nelle riunioni usando audio, video e condivisione di contenuti.

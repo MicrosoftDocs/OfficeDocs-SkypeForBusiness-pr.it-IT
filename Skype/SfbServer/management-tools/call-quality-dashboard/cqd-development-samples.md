@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 8ca9bf7a-2d6f-48d5-a821-531009726525
 description: "Riepilogo: esaminare un'esercitazione e gli esempi di sviluppo per Call Quality Dashboard. Call Quality Dashboard è uno strumento per Skype for Business Server."
-ms.openlocfilehash: 83fdfdee2b7b55cb9ba0ef0651f8e1994bb182df
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3d6c813ea8df6a1b1c9b6c991767c45c85f9fb34
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603875"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727515"
 ---
 # <a name="cqd-development-samples"></a>Esempi di sviluppo in DQC
 
@@ -34,7 +34,7 @@ Esercitazione: Creazione di una presentazione di report personalizzata tramite l
 
 CQD offre un accesso rapido e semplice alle informazioni aggregate sulla qualità delle chiamate per le distribuzioni Skype for Business Server locali. CQD è costituito da tre componenti: il database QoE Archive, il cubo e il portale. Il portale è il livello di presentazione principale e può essere ulteriormente diviso nei tre componenti seguenti:
 
-1. Servizio dati, accessibile per gli utenti autenticati tramite l'API dati per il dashboard di qualità delle chiamate [(CQD) in Skype for Business Server](data-api.md).
+1. Servizio dati, accessibile per gli utenti autenticati tramite l'API dei dati per [call quality dashboard (CQD) in Skype for Business Server](data-api.md).
 
 2. Repository Service, accessibile per gli utenti autenticati tramite [l'API repository per call quality dashboard (CQD) in Skype for Business Server](repository-api.md).
 
@@ -42,9 +42,9 @@ CQD offre un accesso rapido e semplice alle informazioni aggregate sulla qualit�
 
 I report visualizzati nel portale Web sono raggruppati in "set di report". La figura mostra un set di report con due report. Ogni report in questo dashboard seguente mostra i risultati delle query sul numero di chiamate buone, le chiamate scarse e la percentuale di chiamate scadenti per diversi mesi, con vari filtri applicati. 
 
-![Rapporto di esempio CQD](../../media/9e0723f7-f850-4d11-9ecd-7e8e013a8bed.png)
+![Rapporto di esempio CQD.](../../media/9e0723f7-f850-4d11-9ecd-7e8e013a8bed.png)
 
-CQD viene creato seguendo la metodologia CQM (Call Quality Methodology), quindi il set predefinito di report è progettato per allinearsi al flusso di indagine introdotto da CQM. Gli utenti hanno anche la flessibilità di modificare o creare report personalizzati in base alle proprie esigenze. Tuttavia, poiché esistono diversi modi per visualizzare i dati, la visualizzazione fornita da CQD potrebbe non soddisfare completamente le esigenze di ogni utente. In tali situazioni, un utente può sfruttare le API dati e le API repository per creare pagine di report personalizzate. In questa esercitazione verrà illustrata una serie di esempi.
+CQD viene creato seguendo la metodologia CQM (Call Quality Methodology), quindi il set predefinito di report è progettato per allinearsi al flusso di indagine introdotto da CQM. Gli utenti hanno anche la flessibilità di modificare o creare report personalizzati in base alle proprie esigenze. Tuttavia, poiché esistono diversi modi per visualizzare i dati, la visualizzazione fornita da CQD potrebbe non soddisfare completamente le esigenze di ogni utente. In tali situazioni, un utente può sfruttare le API data e repository per creare pagine di report personalizzate. In questa esercitazione verrà illustrata una serie di esempi.
 
 ### <a name="how-the-dashboard-consumes-the-data-service"></a>Modalità di utilizzo del servizio dati nel dashboard
 
@@ -52,9 +52,9 @@ Quando si accede alla home page CQD (ad esempio, il set di report e i report cor
 
 ### <a name="building-customized-reports"></a>Creazione di report personalizzati
 
-CQD offre già una notevole flessibilità nella personalizzazione dei report, ma potrebbero verificarsi situazioni in cui gli utenti potrebbero voler aggregare i dati in più report creati in CQD. Ad esempio, potrebbe essere necessario creare un report che mostra le percentuali di chiamate scarse di tutte le possibili combinazioni di chiamate cablate in una tabella (un risultato come la figura):
+CQD offre già una notevole flessibilità nella personalizzazione dei report, ma possono verificarsi situazioni in cui gli utenti potrebbero voler aggregare i dati tra più report creati in CQD. Ad esempio, potrebbe essere necessario creare un report che mostra le percentuali di chiamate scarse di tutte le possibili combinazioni di chiamate cablate in una tabella (un risultato come la figura):
 
-![Tabella CQD](../../media/ef19d535-5da6-44a9-91f6-1ed3f30b96f1.png)
+![Tabella CQD.](../../media/ef19d535-5da6-44a9-91f6-1ed3f30b96f1.png)
 
 Usando il portale fornito da CQD, un utente dovrebbe passare a più report per estrarre e registrare la scarsa % delle chiamate per ognuno di essi, il che può essere laborioso se sono presenti molti punti dati che devono essere raccolti. Le API Data forniscono agli utenti un modo programmatico per ottenere questo risultato recuperando i dati dal servizio dati (ad esempio tramite chiamate AJAX). 
 
@@ -62,7 +62,7 @@ Usando il portale fornito da CQD, un utente dovrebbe passare a più report per e
 
 Prendiamo prima un semplice esempio. Se si desidera visualizzare il numero di flussi Audio Good Stream e Audio Bad stream di febbraio 2015 in una pagina HTML come la figura:
 
-![Rapporto di esempio CQD](../../media/f0e4e61f-1fa5-4d69-b192-f19e9612bf1c.png)
+![Rapporto di esempio CQD.](../../media/f0e4e61f-1fa5-4d69-b192-f19e9612bf1c.png)
 
 È necessario inviare una chiamata al servizio dati con i parametri corretti e visualizzare i risultati della query in una tabella HTML. Di seguito è riportato un esempio del codice JavaScript:
 
@@ -116,7 +116,7 @@ Questo esempio può essere ulteriormente destrutturato in tre passaggi:
 
 2. Inviare la query al servizio dati tramite chiamata AJAX. Devono essere forniti i seguenti parametri di richiesta:
 
-   a. url (che deve essere http://[NomeServer]/QoEDataService/RunQuery).
+   a. url (che deve essere http://[ServerName]/QoEDataService/RunQuery).
 
    b. dati (questa è la rappresentazione in forma di stringa dell'oggetto JSON definito nella variabile 'query'). Data Service restituirà i risultati della query come parametro della funzione call back per l'esito positivo.
 
@@ -199,7 +199,7 @@ Potrebbe essere difficile per qualcuno capire come scrivere l'elenco completo di
 
 In questo esempio verrà creata una pagina Web simile a quella mostrata nella figura in cui un utente può immettere l'ID di qualsiasi set di report (o report) esistente e visualizzare la definizione del set di report o del report nella pagina Web. L'utente può quindi collegare la stringa JSON di ogni report al codice simile a quello mostrato nell'esempio 1 e creare qualsiasi report personalizzato desiderato dall'utente. 
 
-![Esempio CQD](../../media/01c45c23-c4d2-47b8-819f-0888cf71260f.png)
+![Esempio CQD.](../../media/01c45c23-c4d2-47b8-819f-0888cf71260f.png)
 
 Per creare lo strumento visualizzatore di definizioni di report, è necessario inviare chiamate al servizio repository per recuperare le rappresentazioni di stringa JSON delle definizioni di ogni set di report desiderato. L'API repository restituirà la definizione del set di report in base a un ID set di report specificato. 
 
@@ -353,7 +353,7 @@ Ecco i passaggi dettagliati per accedere alla pagina della scorecard nella figur
 
 3. Creare un set di filtri per scenario. Ogni riga della scorecard, nella figura, rappresenta uno scenario diverso, che sarà un filtro diverso (mentre le dimensioni e le misurazioni rimangono le stesse). 
 
-4. Analizzare i risultati delle chiamate AJAX e posizionarli nella posizione corretta della tabella. Poiché si tratta principalmente di manipolazione html e JavaScript, non verranno fornite informazioni dettagliate qui. Il codice viene invece fornito nell'Appendice A.
+4. Analizzare i risultati delle chiamate AJAX e posizionarli nella posizione corretta della tabella. Poiché si tratta principalmente di manipolazione HTML e JavaScript, non verranno fornite informazioni dettagliate qui. Il codice viene invece fornito nell'Appendice A.
 
     > [!NOTE]
     >  Se la condivisione delle risorse tra origini è abilitata, gli utenti potrebbero riscontrare errori come "Nella risorsa richiesta non è presente alcuna intestazione "Access-Control-Allow-Origin". L'origine 'null' non consente pertanto l'accesso". Per risolvere il problema, inserire il file HTML nella cartella in cui è installato il portale (per impostazione predefinita, dovrebbe essere `%SystemDrive%\Program Files\Skype for Business 2015 CQD\CQD)` . Accedere quindi all'html tramite qualsiasi browser con l'URL  `http://<servername>/cqd/<html_file_name>` . (L'URL predefinito per il dashboard CQD locale è  `http://<servername>/cqd.` ) 

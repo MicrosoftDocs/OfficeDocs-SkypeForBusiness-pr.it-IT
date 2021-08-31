@@ -18,12 +18,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: f6482baa6738d4f7c3495085f86ae9b9a054d0eb
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 5176f40886bdc086df43a130cb9d8414bd8f40a3
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624838"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732965"
 ---
 # <a name="plan-my-users-experience"></a>Pianificare l'esperienza degli utenti
 
@@ -31,7 +31,7 @@ Questo articolo fornisce una panoramica dei requisiti per identificare correttam
 
 ## <a name="client-deployment"></a>Distribuzione client
 
-Microsoft Teams sono disponibili client per web, desktop (Windows e Mac) e per dispositivi mobili (Android e iOS). Per altre informazioni sulla modalità di installazione del desktop (Windows Mac) e dei client mobili, vedere Ottenere [client per Microsoft Teams](./get-clients.md).
+Microsoft Teams sono disponibili client per web, desktop (Windows e Mac) e per dispositivi mobili (Android e iOS). Per altre informazioni sulla modalità di installazione del desktop (Windows Mac) e dei client mobili, vedere Ottenere [i client per Microsoft Teams](./get-clients.md).
 
 ## <a name="client-updates"></a>Aggiornamenti del client
 
@@ -43,7 +43,7 @@ Uno dei vantaggi principali di Teams è che il cliente viene aggiornato automati
 
 Come si può vedere dal diagramma seguente, gli endpoint sono un importante elemento fondamentale per offrire agli utenti un'esperienza di qualità.
 
-![Diagramma che descrive i tre componenti della qualità](media/plan-my-users-experience-image1.png "Diagramma che descrive i tre componenti della qualità e il modo in cui la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
+![Diagramma che descrive i tre componenti della qualità.](media/plan-my-users-experience-image1.png "Diagramma che descrive i tre componenti della qualità e il modo in cui la gestione dei servizi si sovrappone a tutti e tre i componenti. Con lo stato attivo sugli endpoint.")
 
 Teams endpoint possono essere eseguiti su molti dispositivi, tra cui PC, Mac, tablet e dispositivi mobili. Parte dell'esperienza non riguarda solo il dispositivo, ma anche il modo in cui un utente si connette al dispositivo, ad esempio usando il microfono/altoparlante incorporato del dispositivo, gli auricolari o un auricolare ottimizzato. L'uso di un auricolare ottimizzato può arricchire l'esperienza utente generale.
 
@@ -65,7 +65,7 @@ I firewall sul lato client possono influire sulla qualità delle chiamate, oltre
 
 ## <a name="wi-fi-recommendations-for-endpoints"></a>Wi-Fi per gli endpoint
 
-È necessario pianificare in modo significativo la distribuzione di una rete Wi-Fi ottimizzata per supportare i carichi di lavoro in tempo reale Microsoft Teams. Le sezioni seguenti forniscono alcune indicazioni generali che consentono di evitare insidie comuni durante la pianificazione degli endpoint.
+È necessario pianificare in modo significativo la distribuzione di una rete Wi-Fi per supportare i carichi di lavoro in tempo reale in Microsoft Teams. Le sezioni seguenti forniscono alcune indicazioni generali che consentono di evitare insidie comuni durante la pianificazione degli endpoint.
 
 ### <a name="wi-fi-drivers"></a>Wi-Fi driver
 
@@ -87,7 +87,7 @@ Alcune organizzazioni preferiscono evitare di Wi-Fi del tutto. A volte queste in
 
 ### <a name="80211-power-save-protocol"></a>Protocollo Power Save 802.11
 
-Se l'organizzazione usa punti di accesso wireless o router che non supportano il protocollo Power Save 802.11, è possibile che si verifichino chiamate interrotta o scarsa qualità delle chiamate in Microsoft Teams in esecuzione su Windows dispositivi. Se non è possibile aggiornare il punto di accesso wireless o i router, è consigliabile aggiornare Windows impostazioni di Power Plan nei dispositivi che eseguono l'alimentazione a batteria. Ulteriori informazioni dettagliate e indicazioni sulla configurazione sono disponibili nell'articolo del [supporto tecnico seguente.](https://support.microsoft.com/help/928152/you-may-experience-connectivity-issues-or-performance-issues-when-you)
+Se l'organizzazione usa punti di accesso wireless o router che non supportano il protocollo Power Save 802.11, è possibile che si verifichino chiamate perse o scarsa qualità delle chiamate in Microsoft Teams in esecuzione su Windows dispositivi. Se non è possibile aggiornare il punto di accesso wireless o i router, è consigliabile aggiornare Windows impostazioni di Power Plan nei dispositivi che eseguono l'alimentazione a batteria. Ulteriori informazioni dettagliate e indicazioni sulla configurazione sono disponibili nell'articolo del [supporto tecnico seguente.](https://support.microsoft.com/help/928152/you-may-experience-connectivity-issues-or-performance-issues-when-you)
 
 <table>
 <tr><td><img src="media/audio_conferencing_image7.png" alt="An icon depicting decision points"/> <br/>Punti decisionali</td><td><ul><li>Quali Teams client verranno distribuiti nell'organizzazione?</li><li>Come si distribuiscono inizialmente Teams client agli utenti?</li><li>Who è responsabile della valutazione di endpoint e dispositivi per verificare che soddisfino Teams requisiti di qualità?</li></ul></td></tr>
@@ -108,7 +108,7 @@ Nell'ambito del processo di pianificazione, è necessario completare un esercizi
 Dopo aver selezionato i dispositivi, includerli nel piano di test pilota per la convalida finale. Sfruttare i sondaggi durante il progetto pilota per raccogliere feedback per assicurarsi che la strategia del dispositivo sia ottimale.
 
 > [!NOTE]
-> Al momento, è consigliabile usare dispositivi audio certificati tramite il programma Skype for Business certificazione. Per trovare i dispositivi certificati in questo programma, vedere i Microsoft Teams [usb](https://products.office.com/microsoft-teams/across-devices/devices) e i dispositivi audio e [video USB.](/SkypeForBusiness/certification/devices-usb-devices)
+> Al momento, è consigliabile usare dispositivi audio certificati tramite il programma Skype for Business certificazione. Per trovare i dispositivi certificati in questo programma, vedere i [Microsoft Teams usb](https://products.office.com/microsoft-teams/across-devices/devices) e i dispositivi audio e [video USB.](/SkypeForBusiness/certification/devices-usb-devices)
 
 
 

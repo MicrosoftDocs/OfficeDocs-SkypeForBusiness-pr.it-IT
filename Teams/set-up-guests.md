@@ -22,12 +22,12 @@ f1.keywords:
 appliesto:
 - Microsoft Teams
 description: Informazioni su come gli amministratori di Office 365 possono attivare o disattivare la funzionalità di accesso guest in Microsoft Teams.
-ms.openlocfilehash: e9701defbf987d68f2c0ce79a9797064a07111bf
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 433d0f3b73da465cdfd11382889b9cd13a1e7b06
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58590740"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725525"
 ---
 # <a name="turn-on-or-turn-off-guest-access-to-microsoft-teams"></a>Attivare o disattivare l'accesso guest in Microsoft Teams.
 
@@ -48,7 +48,7 @@ ms.locfileid: "58590740"
 
 3. Impostare **Consenti accesso guest in Microsoft Teams** su **Attivato**.
 
-    ![Consenti accesso guest impostato su Attivato ](media/guest-access-setting.png)
+    ![Opzione Consenti accesso guest impostata su Attivata .](media/guest-access-setting.png)
 
 4. In **Chiamata**, **Riunione**, and **Messaggistica**, selezionare **Attivato** o **Disattivato** per ciascuna funzionalità, a seconda di ciò che si desidera consentire agli utenti guest.
 
@@ -70,7 +70,7 @@ ms.locfileid: "58590740"
       - **Usa meme nelle conversazioni**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare meme nelle conversazioni.
       - **Usa adesivi nelle conversazioni**: passare questa impostazione su **Attivato** per consentire agli utenti guest di usare adesivi nelle conversazioni.
 
-    ![Impostazioni autorizzazioni guest in Teams](media/manage-guest-access-image1.png)
+    ![Impostazioni delle autorizzazioni guest in Teams.](media/manage-guest-access-image1.png)
 
 5. Selezionare **Salva**.
 
