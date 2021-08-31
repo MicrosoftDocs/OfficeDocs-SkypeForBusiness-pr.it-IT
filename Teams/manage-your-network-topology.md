@@ -19,18 +19,18 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come configurare le impostazioni di rete per le funzionalità vocali cloud in Microsoft Teams.
-ms.openlocfilehash: 7ed9837b676197b588669ae95db77c9e834371dc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 701e3900980b628f66d9d62d3dade987fee821fe
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598420"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726575"
 ---
 # <a name="manage-your-network-topology-for-cloud-voice-features-in-microsoft-teams"></a>Gestire la topologia di rete per le funzionalità vocali cloud in Microsoft Teams
 
 Se l'organizzazione distribuisce il [routing](location-based-routing-plan.md) in base alla posizione per il routing diretto o le chiamate di emergenza [dinamiche,](configure-dynamic-emergency-calling.md)è necessario configurare le impostazioni di rete per l'uso con queste funzionalità vocali cloud in Microsoft Teams. Le impostazioni di rete vengono usate per determinare la posizione di un client Teams e includono aree di rete, siti di rete, subnet e indirizzi IP attendibili. A seconda della funzionalità vocale cloud e della funzionalità che si sta distribuendo, è possibile configurare alcune o tutte queste impostazioni. Per altre informazioni su questi termini, vedere [Impostazioni di rete per le funzionalità vocali cloud.](cloud-voice-network-settings.md)
 
-Le impostazioni di rete vengono configurate nella pagina Topologia **di** rete dell'interfaccia Microsoft Teams di amministrazione oppure usando Windows PowerShell.
+Le impostazioni di rete vengono configurate nella pagina Topologia **di** rete dell'interfaccia di amministrazione di Microsoft Teams o usando Windows PowerShell.
 
 ## <a name="configure-network-settings-in-the-microsoft-teams-admin-center"></a>Configurare le impostazioni di rete nell'Microsoft Teams di amministrazione
 
@@ -40,42 +40,42 @@ Le aree di rete, i siti di rete e le subnet vengono definiti nella scheda Siti *
 
 #### <a name="add-and-configure-a-network-site"></a>Aggiungere e configurare un sito di rete
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare **a** Topologia rete percorsi e quindi fare clic  >  sulla scheda Siti **di** rete.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Topologia rete posizioni e quindi fare clic sulla  >  scheda Siti **di** rete.
 2. Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per il sito.
 
-    ![Screenshot della pagina Aggiungi sito di rete](media/manage-network-topology-add-site.png)
+    ![Screenshot della pagina Aggiungi sito di rete.](media/manage-network-topology-add-site.png)
 
 3. Per associare il sito a un'area di rete,  fare clic su **Aggiungi** area di rete, selezionare un'area esistente oppure fare clic su Aggiungi per aggiungere un'area geografica e quindi su **Collegamento.**  
-4. Per abilitare Location-Based routing per il sito, attivare **routing basato sulla posizione.**
+4. Per abilitare Location-Based routing per il sito, attivare **il routing basato sulla posizione.**
 5. Per assegnare criteri dei servizi di emergenza al sito, eseguire una o entrambe le operazioni seguenti:
 
-    - Se l'organizzazione usa piani per chiamate o Sistema telefonico routing diretto, in Criteri per le chiamate di emergenza **selezionare** il criterio desiderato.
-    - Se l'organizzazione ha Sistema telefonico routing diretto, in Criteri di **routing** delle chiamate di emergenza selezionare il criterio desiderato.
+    - Se l'organizzazione usa piani per chiamate o Sistema telefonico routing diretto, in Criteri per **le** chiamate di emergenza selezionare il criterio desiderato.
+    - Se l'organizzazione ha Sistema telefonico routing diretto, **in** Criterio routing chiamate di emergenza selezionare il criterio desiderato.
 
 6. Per associare una subnet al sito, in **Subnet** fare clic **su Aggiungi subnet.** Specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **Applica.** Ogni subnet deve essere associata a un sito specifico.
 7. Fare clic su **Salva**.
 
 #### <a name="modify-a-network-site"></a>Modificare un sito di rete
 
-1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare **a** Topologia rete percorsi e quindi fare clic  >  sulla scheda Siti **di** rete.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Topologia rete posizioni e quindi fare clic sulla  >  scheda Siti **di** rete.
 2. Selezionare il sito facendo clic a sinistra del nome del sito e quindi su **Modifica.**
 3. Apportare le modifiche desiderate e quindi fare clic su **Salva.**
 
 ### <a name="manage-external-trusted-ip-addresses"></a>Gestire indirizzi IP attendibili esterni
 
-Gli indirizzi IP attendibili  esterni vengono gestiti  nella scheda Indirizzi IP attendibili nella pagina Topologia di rete dell'Microsoft Teams di amministrazione. È possibile aggiungere un numero illimitato di indirizzi IP attendibili esterni.
+Gli indirizzi IP attendibili  esterni vengono gestiti  nella scheda Indirizzi IP attendibili della pagina Topologia di rete dell'Microsoft Teams di amministrazione. È possibile aggiungere un numero illimitato di indirizzi IP attendibili esterni.
 
 #### <a name="add-a-trusted-ip-address"></a>Aggiungere un indirizzo IP attendibile
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Topologia rete percorsi e quindi fare clic sulla  >  scheda **IP** attendibili.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Topologia rete posizioni e quindi fare clic sulla  >  scheda **Ip** attendibili.
 2. Fare clic **su Nuovo**.
 3. Nel riquadro **Aggiungi indirizzo IP attendibile** specificare la versione IP, l'indirizzo IP, l'intervallo di rete, aggiungere una descrizione e quindi fare clic su **Applica.**
 
-    ![Screenshot del riquadro Aggiungi indirizzo IP attendibile](media/manage-network-topology-add-trusted-ip.png)
+    ![Screenshot del riquadro Aggiungi indirizzo IP attendibile.](media/manage-network-topology-add-trusted-ip.png)
 
 #### <a name="edit-a-trusted-ip-address"></a>Modificare un indirizzo IP attendibile
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Topologia rete percorsi e quindi fare clic sulla  >  scheda **IP** attendibili.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione passare **a** Topologia rete posizioni e quindi fare clic sulla  >  scheda **Ip** attendibili.
 2. Selezionare l'indirizzo IP facendo clic a sinistra e quindi su **Modifica.**
 3. Nel riquadro **Modifica indirizzo IP attendibile** apportare le modifiche desiderate e quindi fare clic su **Applica.**
 

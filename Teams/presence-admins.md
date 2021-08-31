@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 66c3aec34baa10dc0cda644d84611800a8e9d97a
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 450decb455b35018c2dc4c02951ee542ab212371
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58597670"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58725825"
 ---
 # <a name="user-presence-in-teams"></a>Presenza utente in Teams
 
@@ -38,21 +38,21 @@ La presenza fa parte del profilo utente in Microsoft Teams (e in tutto Microsoft
 
 |Utente configurato|App configurata|
 |:--- |:---|
-| ![Segno di spunta verde, indica la presenza Disponibile](media/Presence_Available.png) Disponibile|![Segno di spunta verde, indica la presenza Disponibile](media/Presence_Available.png) Disponibile|
-|| ![Segno di spunta verde trasparente, indica la disponibilità fuori sede](media/Presence_Available_OOF.png) Disponibile, Fuori sede. Nota: Fuori sede viene impostato automaticamente per il periodo di tempo in cui l'utente imposta le "risposte automatiche". Se l'utente usa l'app durante questo periodo di tempo, è possibile che venga visualizzata una doppia presenza, ad esempio "Fuori sede, disponibile". |
-|  ![Cerchio rosso pieno, indica Non disponibile](media/Presence_Busy.png) Non disponibile |  ![Cerchio rosso pieno, indica Non disponibile](media/Presence_Busy.png) Non disponibile  |
-|| ![Cerchio rosso pieno, indica Non disponibile, al telefono](media/Presence_Busy.png) Al telefono|
-|| ![Cerchio rosso pieno, indica Non disponibile, in riunione](media/Presence_Busy.png) In riunione |
-|| ![Cerchio rosso trasparente, indica Non disponibile](media/Presence_Busy_OOF.png) Chiamata in corso, fuori sede|
-|  ![Cerchio rosso con linea bianca, indica Non disturbare](media/Presence_DND.png) Non disturbare ||
-|| ![Cerchio rosso con linea bianca, indica Presentazione in corso](media/Presence_DND.png) Presentazione in corso|
-|| ![Cerchio rosso con linea bianca, indica Occupato](media/Presence_DND.png) Concentrato. Lo stato Concentrato si verifica quando gli utenti pianificano il tempo produttivo in MyAnalytics/Insights nei propri calendari.|
-| ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente| ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente|
+| ![Segno di spunta verde, indica la presenza Disponibile.](media/Presence_Available.png) Disponibile|![Segno di spunta verde, indica la presenza Disponibile](media/Presence_Available.png) Disponibile|
+|| ![Segno di spunta verde trasparente, indica la disponibilità fuori sede.](media/Presence_Available_OOF.png) Disponibile, Fuori sede. Nota: Fuori sede viene impostato automaticamente per il periodo di tempo in cui l'utente imposta le "risposte automatiche". Se l'utente usa l'app durante questo periodo di tempo, è possibile che venga visualizzata una doppia presenza, ad esempio "Fuori sede, disponibile". |
+|  ![Cerchio rosso pieno, indica Non disponibile.](media/Presence_Busy.png) Non disponibile |  ![Cerchio rosso pieno, indica Non disponibile](media/Presence_Busy.png) Non disponibile  |
+|| ![Cerchio rosso pieno, indica Non disponibile, al telefono.](media/Presence_Busy.png) Al telefono|
+|| ![Cerchio rosso pieno, indica Non disponibile, in riunione.](media/Presence_Busy.png) In riunione |
+|| ![Cerchio rosso trasparente, indica Non disponibile.](media/Presence_Busy_OOF.png) Chiamata in corso, fuori sede|
+|  ![Cerchio rosso con linea bianca, indica Non disturbare.](media/Presence_DND.png) Non disturbare ||
+|| ![Cerchio rosso con linea bianca, indica Presentazione in corso.](media/Presence_DND.png) Presentazione|
+|| ![Cerchio rosso con linea bianca, indica Occupato.](media/Presence_DND.png) Concentrato. Lo stato Concentrato si verifica quando gli utenti pianificano il tempo produttivo in MyAnalytics/Insights nei propri calendari.|
+| ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Non al computer| ![Icona orologio giallo, indica Assente.](media/Presence_Away.png) Assente|
 || ![Icona orologio giallo, indica Assente](media/Presence_Away.png) Assente, ultimo accesso *orario*|
-|![Icona orologio giallo, indica Assente, torno subito](media/Presence_Away.png) Torno subito| |
-|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Invisibile|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline. Se gli utenti non effettuano l'accesso ad alcun dispositivo per alcuni minuti, risultano invisibili. | |
-|| ![Cerchio grigio trasparente, indica Stato sconosciuto](media/Presence_Unknown.png) Stato sconosciuto|
-|| ![Cerchio viola con freccia, indica Fuori sede](media/Presence_OOF.png) Fuori sede. Fuori sede viene usato quando è impostata una risposta automatica. |
+|![Icona orologio giallo, indica Assente, torno subito.](media/Presence_Away.png) Torno subito| |
+|![Cerchio grigio con una X, indica Offline.](media/Presence_Offline.png) Invisibile|![Cerchio grigio con una X, indica Offline](media/Presence_Offline.png) Offline. Se gli utenti non effettuano l'accesso ad alcun dispositivo per alcuni minuti, risultano invisibili. | |
+|| ![Cerchio grigio trasparente, indica Stato sconosciuto.](media/Presence_Unknown.png) Stato sconosciuto|
+|| ![Cerchio viola con freccia, indica Fuori sede.](media/Presence_OOF.png) Fuori sede. Fuori sede viene usato quando è impostata una risposta automatica. |
 |||
  > [!NOTE]
  > Per gli utenti che hanno la propria cassetta postale in locale, sono previsti ritardi di presenza di un'ora (massimo).

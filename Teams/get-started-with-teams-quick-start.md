@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 124908362a762a9940f87713dd4e699459443e85
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 041ae19360e5dfc1fbf3ff1158c7f7cfe6cdaaae
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58630210"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729225"
 ---
 # <a name="get-started-with-microsoft-teams"></a>Introduzione a Microsoft Teams
 
@@ -43,7 +43,7 @@ Se l'organizzazione è più grande, è consigliabile consultare questi articoli 
 - [Riunioni e conferenze](deploy-meetings-microsoft-teams-landing-page.md)
 - [Cloud Voice](cloud-voice-landing-page.md)
 
-![Diagramma che illustra i percorsi di distribuzione di Teams](media/get-started-with-teams-quick-start-pathways.png)
+![Diagramma che illustra i percorsi di distribuzione di Teams.](media/get-started-with-teams-quick-start-pathways.png)
 
 Per le organizzazioni di medie o grandi dimensioni, è necessario [usare l’Assistente per Teams per implementare Microsoft Teams](use-advisor-teams-roll-out.md) e pianificare l'implementazione dei carichi di lavoro nell'intera organizzazione. L'Assistente usa Teams per creare attività pianificate e assegnarle ai proprietari, condividere documenti e avviare discussioni tra il team di distribuzione.
 

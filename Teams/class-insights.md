@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 76254b414bd282f75a01decc5016e5ae476a0f21
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b09b6c6e42fcdd150d5aa95ebd56c9eaec36e01c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607843"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726665"
 ---
 # <a name="it-admin-guide-to-education-insights-in-microsoft-teams"></a>Guida per amministratori IT a Insights per l’istruzione in Microsoft Teams
 
@@ -96,11 +96,11 @@ Ad esempio, un preside vede solo le classi del proprio istituto di istruzione o 
 * Cercare **Insights** e selezionarlo.
 * Si aprirà una schermata con una descrizione. Fare clic su **Aggiungi**.
 
-:::image type="content" source="media/insights-add-personal-app.png" alt-text="Aggiungere Insights a Teams":::
+:::image type="content" source="media/insights-add-personal-app.png" alt-text="Aggiungere Insights a Teams.":::
 
-* Fare clic con il pulsante destro del mouse sull'icona Insights e selezionare **Aggiungi**.
+* Fai clic con il pulsante destro del mouse sull'icona Insights e selezionare **Aggiungi**.
 
-:::image type="content" source="media/insights-pin-app.png" alt-text="Aggiungere l’app Insights":::
+:::image type="content" source="media/insights-pin-app.png" alt-text="Aggiungere l’app Insights.":::
 
 > [!TIP]
 > È anche possibile individuare l'app Insights tramite questo collegamento: [https://aka.ms/addInsights](https://aka.ms/addInsights)
@@ -112,7 +112,7 @@ Insights supporta le community di apprendimento durante tutto **il ciclo di appr
 *   **Discutere** i risultati con gli studenti e la community dell'istituto di istruzione per rafforzare le relazioni, la definizione degli obiettivi, l'autovalutazione, ottimizzare la collaborazione e migliorare i risultati.
 *   **Intraprendere azioni** per sviluppare interventi, fornire feedback sulle aree di crescita, modificare le strategie di insegnamento e identificare il supporto aggiuntivo richiesto.
 
-:::image type="content" source="media/insights-learning-cycle.png" alt-text="Insights supporta le community di apprendimento durante tutto il ciclo di apprendimento":::
+:::image type="content" source="media/insights-learning-cycle.png" alt-text="Insights supporta le community di apprendimento durante tutto il ciclo di apprendimento.":::
 
 ## <a name="how-insights-works"></a>Come funziona Insights?
 Insights produce potenti strumenti di analisi per aiutare i docenti a migliorare i risultati di apprendimento. L’operazione viene eseguita analizzando l'attività degli studenti all'interno di Teams e, facoltativamente, sfruttando i dati del Sistema informativo degli studenti (SIS) forniti per contestualizzare e raggruppare l'attività. 

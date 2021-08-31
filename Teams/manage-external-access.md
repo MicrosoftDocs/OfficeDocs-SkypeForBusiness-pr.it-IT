@@ -21,12 +21,12 @@ description: L'amministratore IT o di Teams può configurare l'accesso esterno p
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 255b714980db3ac63e9251c8db7af243d91dc72d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2739f1b7f97e39617471ecf292ecf9424a7ac396
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610303"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726865"
 ---
 # <a name="manage-external-access-in-microsoft-teams"></a>Gestire l'accesso esterno in Microsoft Teams
 
@@ -70,13 +70,13 @@ L'accesso esterno è attivato per impostazione predefinita in Teams, quindi l'or
 
 ### <a name="step-1---enable-your-organization-to-communicate-with-another-teams-or-skype-for-business-organizations"></a>Passaggio 1 - Abilitare l'organizzazione alle comunicazioni con altre organizzazioni di Teams o Skype for Business
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nel riquadro di spostamento sinistro passare a **Impostazioni organizzazione** > **Accesso esterno**.
 
 2. Attivare l'impostazione **Gli utenti possono comunicare con altri utenti di Skype for Business e Teams**.
 
-     ![Screenshot dell'impostazione Gli utenti possono comunicare con altri utenti di Skype for Business e Teams attivata](media/manage-external-access-2.png).
+     ![Screenshot dell'impostazione Gli utenti possono comunicare con altri utenti di Skype for Business e Teams attivata.](media/manage-external-access-2.png).
 
 3. Se si vuole consentire a tutte le organizzazioni di Teams di comunicare con gli utenti della propria, andare al passaggio 5.
 
@@ -109,13 +109,13 @@ Per testare la configurazione è necessario un utente di Teams che non si trova 
 
 Seguire questa procedura per consentire agli utenti di Teams nell'organizzazione di comunicare con gli utenti Skype e di chiamarli. Gli utenti di Teams potranno cercare utenti di Skype e avviare una conversazione a due di solo testo oppure una chiamata audio/video e viceversa.
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il logo di Microsoft Teams.](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
 
 1. Nel riquadro di spostamento sinistro passare a **Impostazioni organizzazione** > **Accesso esterno**.
 
 2. Attivare l'impostazione **Gli utenti possono comunicare con gli utenti Skype**.
 
-    ![Screenshot dell'opzione Gli utenti possono comunicare con gli utenti Skype attivata](media/manage-external-access-5.png).
+    ![Screenshot dell'opzione Gli utenti possono comunicare con gli utenti Skype attivata.](media/manage-external-access-5.png).
 
 Per altre informazioni sui modi in cui gli utenti di Teams e gli utenti di Skype possono comunicare, incluse le limitazioni applicabili, vedere [Interoperabilità tra Teams e Skype](teams-skype-interop.md).
 

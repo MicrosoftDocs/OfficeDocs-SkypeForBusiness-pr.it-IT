@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e2bd70c0b46d48333552a862ab26a763cfe5473d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: dd526f78a04bc71b2992aa8f3f0bcd15b3b77df0
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613565"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726765"
 ---
 # <a name="how-ready-is-your-organization-for-microsoft-teams"></a>Quanto è pronta l'organizzazione per Microsoft Teams?
 
@@ -64,7 +64,7 @@ I primi utenti condividono determinati tratti, indipendentemente dalle dimension
 - Disposti a condividere le loro osservazioni e le loro apprendimenti con il gruppo
 - Sono persone a rischio; in altri, sono disposti a provare qualcosa per vedere se funziona
 
-Usare un modulo semplice in Microsoft 365 o Office 365 per consentire a questi utenti di acconsentire esplicitamente al programma di Teams. A seconda delle dimensioni e della complessità dell'organizzazione, è possibile scegliere di abilitare alcuni o tutti questi utenti per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di fornire regolarmente feedback al team di progetto. Evitare di avere persone che vogliono semplicemente testare le nuove tecnologie. Fagli sapere che, fornendo questo feedback attivo, contribuisce a creare il risultato del progetto. Si userà questo elenco di persone nella [fase 2 - esperimento.](teams-adoption-phase2-experiment.md)
+Usare una forma semplice in Microsoft 365 o Office 365 per consentire a questi utenti di acconsentire esplicitamente al programma di adozione iniziale per Teams. A seconda delle dimensioni e della complessità dell'organizzazione, è possibile scegliere di abilitare alcuni o tutti questi utenti per la fase di sperimentazione. In questo programma accettano di partecipare attivamente alla fase di sperimentazione e di fornire regolarmente feedback al team di progetto. Evitare di avere persone che vogliono semplicemente testare le nuove tecnologie. Fagli sapere che, fornendo questo feedback attivo, contribuisce a creare il risultato del progetto. Si userà questo elenco di persone nella [fase 2 - esperimento.](teams-adoption-phase2-experiment.md)
 
 La nostra Guida al programma Early Adopter è una risorsa utile per dare il via a questo programma nel tuo ambiente.  
  
@@ -72,7 +72,7 @@ La nostra Guida al programma Early Adopter è una risorsa utile per dare il via 
 
 Il cambiamento è un processo umano che non ha nulla a che fare con la tecnologia. C'è la psicologia comportamentale e le nevrosi che ci informano sulla naturale resistenza al cambiamento. Per rendere accettabile il cambiamento, è fondamentale anticipare le esigenze degli utenti, esprimere la propria comprensione della situazione e creare soluzioni che migliorino tale situazione. Anche in questo modo si riscontra una naturale resistenza al cambiamento.  
 
-![Graph che illustra la resistenza al cambiamento](media/teams-adoption-resistance.png)
+![Graph che illustra la resistenza al cambiamento.](media/teams-adoption-resistance.png)
 
 Ogni approccio dell'organizzazione cambia in modo diverso, a seconda dell'area geografica, dello stile di lavoro, del profilo professionale e di altri elementi dell'organizzazione. Per valutare la conformità dell'organizzazione, vedere Valutare la conformità [alle modifiche dell'organizzazione.](upgrade-org-change-readiness.md) Usare le linee guida per rispondere alle domande seguenti:
 
@@ -104,4 +104,4 @@ Combinare questi dati con i profili degli stakeholder e i dipendenti che voglion
 
 È possibile usare campioni interni per risolvere il problema della presenza di tipi di modifica diversi. In questo caso, il feedback è la chiave per il successo: incoraggiare le persone a condividere le proprie sfide e le proprie esigenze. Abbracciare dissidenti e dissidenti dando a questi individui o gruppi un posto a tavola durante la sperimentazione. Questa procedura consigliata aprirà la strada a una distribuzione più fluida e ampia dei miglioramenti alla collaborazione.  
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: Microsoft Teams [fase di adozione 2: Esperimento](teams-adoption-phase2-experiment.md) 
+![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successivo: [Microsoft Teams fase di adozione 2: Esperimento](teams-adoption-phase2-experiment.md) 

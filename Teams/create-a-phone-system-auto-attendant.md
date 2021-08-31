@@ -22,21 +22,21 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni su come configurare e testare gli operatori automatici per organizzazioni di grandi dimensioni in Microsoft Teams.
-ms.openlocfilehash: 16a26cd3384ddaaa3003649a3026bbe876a38399
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 59d12bc7d7bde68be6c42aff4e415713d641679f
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634870"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729085"
 ---
 # <a name="set-up-an-auto-attendant"></a>Configurare un operatore automatico
 
-Gli operatori automatici consentono alle persone di chiamare l'organizzazione e di navigare in un sistema di menu per parlare con il reparto, la coda di chiamata, la persona o un operatore. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
+Gli operatori automatici consentono alle persone di chiamare l'organizzazione e navigare in un sistema di menu per parlare al reparto, alla coda di chiamata, alla persona o a un operatore giusto. È possibile creare operatori automatici per l'organizzazione con l'Microsoft Teams di amministrazione o con PowerShell.
 
 > [!TIP]
 > Questo articolo è per le organizzazioni di grandi dimensioni. Se l'organizzazione è una piccola azienda, vedere Configurare un operatore [automatico - esercitazione sulle piccole](/microsoftteams/business-voice/create-a-phone-system-auto-attendant-smb) imprese.
 
-Assicurarsi di aver letto Pianificare [gli](plan-auto-attendant-call-queue.md) operatori Teams e le code [](plan-auto-attendant-call-queue.md#getting-started) di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
+Assicurarsi di aver [](plan-auto-attendant-call-queue.md) letto Pianificare gli operatori Teams e le code [](plan-auto-attendant-call-queue.md#getting-started) di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
 
 Gli operatori automatici possono indirizzare le chiamate, in base all'input dei chiamanti, a una delle destinazioni seguenti: <a name="call-routing-options" ></a>
 
@@ -60,7 +60,7 @@ Questo video mostra un esempio di base di come creare un operatore automatico in
 
 ## <a name="general-info"></a>Informazioni generali
 
-![Screenshot delle impostazioni dell'operatore automatico per nome, operatore, fuso orario, lingua e input vocali](media/auto-attendant-general-info-page-new.png)
+![Screenshot delle impostazioni dell'operatore automatico per nome, operatore, fuso orario, lingua e input vocali.](media/auto-attendant-general-info-page-new.png)
 
 1. Digitare un nome per l'operatore automatico nella casella in alto.
 
@@ -79,7 +79,7 @@ Questo video mostra un esempio di base di come creare un operatore automatico in
 
 ## <a name="call-flow"></a>Flusso delle chiamate
 
-![Screenshot delle impostazioni dei messaggi di saluto](media/auto-attendant-call-flow-greeting-message.png)
+![Screenshot delle impostazioni dei messaggi di saluto.](media/auto-attendant-call-flow-greeting-message.png)
 
 Scegliere se si vuole riprodurre un messaggio di saluto quando l'operatore automatico risponde a una chiamata.
 
@@ -87,7 +87,7 @@ Se si seleziona **Riproduci un file audio,** è possibile usare il pulsante Uplo
 
 Se si seleziona **Digita un messaggio** di saluto, il sistema leggerà il testo digitato (fino a 1000 caratteri) quando l'operatore automatico risponde a una chiamata.
 
-![Screenshot delle impostazioni di routing delle chiamate](media/auto-attendant-call-flow-route-call-message.png)
+![Screenshot delle impostazioni di routing delle chiamate.](media/auto-attendant-call-flow-route-call-message.png)
 
 Scegli come instradare la chiamata.
 
@@ -99,9 +99,9 @@ Se si seleziona **Opzioni menu** Riproduci , è possibile scegliere Riproduci un
 
 ### <a name="menu-options"></a>Opzioni di menu
 
-![Screenshot delle opzioni dei tasti di scelta](media/auto-attendant-call-flow-menu-options-complete.png)
+![Screenshot delle opzioni dei tasti di scelta rapida.](media/auto-attendant-call-flow-menu-options-complete.png)
 
-Per le opzioni di composizione, assegnare i tasti da 0 a 9 sul tastierino del telefono a una delle destinazioni di routing delle chiamate. (I tasti \* (Ripeti) e (Indietro) sono riservati dal sistema e non possono essere \# riassegnati.
+Per le opzioni di composizione, assegnare i tasti da 0 a 9 sul tastierino del telefono a una delle destinazioni di routing delle chiamate. (I tasti \* (Ripeti) e (Indietro) sono riservati dal sistema e non \# possono essere riassegnati.
 
 Non è necessario che i mapping dei tasti siano continui. È possibile creare un menu con i tasti 0, 1 e 3 mappati alle opzioni, mentre il tasto numero 2 non viene usato.
 
@@ -123,9 +123,9 @@ Se non sono stati assegnati tasti di chiamata, scegliere un'opzione per **La ric
 
 **Chiama per nome:** se si abilita questa opzione, i chiamanti possono pronunciare il nome dell'utente o digitarlo sul tastierino del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiama per nome. È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con Chiamata **per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
+**Chiama per interno:** se si abilita questa opzione, i chiamanti possono connettersi con gli utenti dell'organizzazione componendo l'interno del telefono. Qualsiasi utente online o qualsiasi utente ospitato in locale con Skype for Business Server, è un utente idoneo e può essere trovato con **Chiama per interno.** È possibile impostare chi è e non è incluso nella directory nella [pagina Ambito di](#dial-scope) chiamata.
 
-Gli utenti che si vogliono rendere disponibili per l'interno di chiamata devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
+Gli utenti che si vogliono rendere disponibili per l'estensione Chiamata per interno devono avere un'estensione specificata come parte di uno degli attributi dei telefoni seguenti definiti in Active Directory o Azure Active Directory (per altre informazioni, vedere Aggiungere utenti singolarmente o [in](/microsoft-365/admin/add-users/add-users) blocco).
 
 - OfficePhone
 - HomePhone
@@ -152,7 +152,7 @@ Dopo aver selezionato **un'opzione di ricerca nella directory,** selezionare **A
 
 ## <a name="call-flow-for-after-hours"></a>Flusso delle chiamate per le ore successive
 
-![Screenshot delle impostazioni del giorno e dell'ora dopo l'ora](media/auto-attendant-business-hours.png)
+![Screenshot delle impostazioni del giorno e dell'ora dopo l'ora.](media/auto-attendant-business-hours.png)
 
 È possibile impostare l'orario di ufficio per ogni operatore automatico. Se l'orario di ufficio non è impostato, tutti i giorni e tutte le ore del giorno sono considerati orario di ufficio perché il programma 24/7 è impostato come predefinito. L'orario di ufficio può essere impostato con interruzioni di orario durante il giorno e tutte le ore non impostate come ore lavorative vengono considerate dopo l'orario. È possibile impostare diverse opzioni di gestione delle chiamate in arrivo e messaggi di saluto per le ore successive.
 
@@ -166,7 +166,7 @@ Al **termine,** selezionare Avanti.
 
 ## <a name="call-flows-during-holidays"></a>Flussi di chiamate durante le festività
 
-![Screenshot delle impostazioni per le festività e le festività](media/auto-attendant-holiday-greeting.png)
+![Screenshot delle impostazioni per le festività e i saluti delle festività.](media/auto-attendant-holiday-greeting.png)
 
 L'operatore automatico può avere un flusso di chiamata per ogni festività [impostata.](set-up-holidays-in-teams.md) È possibile aggiungere fino a 20 giorni festivi pianificati per ogni operatore automatico.
 
@@ -178,7 +178,7 @@ L'operatore automatico può avere un flusso di chiamata per ogni festività [imp
 
 4. Scegliere il tipo di messaggio di saluto da usare.
 
-    ![Screenshot delle impostazioni delle azioni di chiamata per le festività](media/auto-attendant-holiday-actions.png)
+    ![Screenshot delle impostazioni delle azioni di chiamata per le festività.](media/auto-attendant-holiday-actions.png)
 
 5. Scegliere se disconnettere **o** **reindirizzare** la chiamata.
 
@@ -186,7 +186,7 @@ L'operatore automatico può avere un flusso di chiamata per ogni festività [imp
 
 7. Selezionare **Salva**.
 
-![Screenshot delle impostazioni delle festività con le festività elencate](media/auto-attendant-holiday-call-settings.png)
+![Screenshot delle impostazioni delle festività con le festività elencate.](media/auto-attendant-holiday-call-settings.png)
 
 Ripetere la procedura in base alle esigenze per ogni festività aggiuntiva.
 
@@ -194,7 +194,7 @@ Dopo aver aggiunto tutte le festività, selezionare **Avanti.**
 
 ## <a name="dial-scope"></a>Ambito di chiamata
 
-![Screenshot delle opzioni di inclusione ed esclusione dell'ambito di chiamata](media/auto-attendant-dial-scope.png)
+![Screenshot delle opzioni di inclusione ed esclusione dell'ambito di chiamata.](media/auto-attendant-dial-scope.png)
 
 *L'ambito di* chiamata definisce quali utenti sono disponibili nella directory quando un chiamante usa la chiamata per nome o la chiamata per interno. L'impostazione predefinita **di Tutti gli** utenti online include tutti gli utenti dell'organizzazione che sono utenti online o ospitati in locale usando Skype for Business Server.
 
@@ -203,17 +203,17 @@ Dopo aver aggiunto tutte le festività, selezionare **Avanti.**
 > [!NOTE]
 > L'elenco del nome di un nuovo utente nella directory potrebbe richiedere fino a 36 ore.
 
-Dopo aver impostato l'ambito di chiamata, selezionare **Avanti**.
+Al termine dell'impostazione dell'ambito di chiamata, selezionare **Avanti.**
 
 ## <a name="resource-accounts"></a>Account delle risorse
 
 A tutti gli operatori automatici deve essere associato un account di risorsa.  Gli operatori automatici di primo livello dovranno avere almeno un account della risorsa a cui è associato un numero di servizio. Se si vuole, è possibile assegnare più account delle risorse a un operatore automatico, ognuno con un numero di servizio distinto.
 
-![Screenshot del riquadro Aggiungi account dell'account della risorsa](media/auto-attendant-add-resource-account.png)
+![Screenshot del riquadro Aggiungi account dell'account della risorsa.](media/auto-attendant-add-resource-account.png)
 
 Per aggiungere un account della risorsa, selezionare **Aggiungi account** e cercare l'account da aggiungere. Selezionare **Aggiungi** e quindi **Aggiungi**.
 
-![Screenshot dell'elenco degli account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato](media/auto-attendant-resource-account-assigned.png)
+![Screenshot dell'elenco degli account delle risorse che mostra l'account della risorsa con il numero di servizio assegnato.](media/auto-attendant-resource-account-assigned.png)
 
 Dopo aver aggiunto gli account delle risorse, **selezionare** Invia per completare la configurazione dell'operatore automatico.
 

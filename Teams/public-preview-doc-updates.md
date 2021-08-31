@@ -18,12 +18,12 @@ description: Informazioni sull'anteprima pubblica in Microsoft Teams. Provare le
 appliesto:
 - Microsoft Teams
 ms.localizationpriority: high
-ms.openlocfilehash: 84e37bc76fe6c9f52aedae95c3ef01bb49e00cf0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 79d5467bd57900dfe62006a09d5f5cafaf662640
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586550"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726835"
 ---
 # <a name="microsoft-teams-public-preview"></a>Anteprima pubblica in Microsoft Teams
 
@@ -54,7 +54,7 @@ L'anteprima pubblica è abilitata per singolo utente e l'opzione per attivarla �
  
    - **Non abilitato**: le funzionalità dell'anteprima pubblica di Teams non saranno disponibili per gli utenti finali.
 
-    ![mostra la finestra di dialogo delle impostazioni di anteprima](media/public-preview-policy.png)  
+    ![mostra la finestra di dialogo delle impostazioni di anteprima.](media/public-preview-policy.png)  
 
 È anche possibile impostare il criterio tramite PowerShell usando il cmdlet `Set-CsTeamsUpdateManagementPolicy` con il parametro `-AllowPublicPreview`.
 

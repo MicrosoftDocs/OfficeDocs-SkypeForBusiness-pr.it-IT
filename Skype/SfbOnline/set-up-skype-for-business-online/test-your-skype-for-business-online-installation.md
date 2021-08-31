@@ -19,12 +19,12 @@ f1.keywords:
 ms.custom:
 - Setup
 description: 'Learn to save time, support calls and increase satisfaction by setting up test accounts and computers, and testing dial-in conferencing, online features such as person-to-person calls, conferencing, and sign in and out. '
-ms.openlocfilehash: 12622339c6a09c5bd651a712ff5210df92d04e52
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: a022ad3db1890a71016d5ebffeccb0aaf30441ca
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58611465"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729905"
 ---
 # <a name="test-your-skype-for-business-online-installation"></a>Testare l'installazione di Skype for Business online
 
@@ -34,7 +34,7 @@ ms.locfileid: "58611465"
 
 Ecco quello che occorre:
 
-- Almeno tre Microsoft 365 o Office 365 (il tuo e almeno altri due).
+- Almeno tre Microsoft 365 o Office 365 account (il tuo e almeno altri due).
 
 - Un computer per ogni account di prova. Impostare tali computer con la configurazione tipica dei computer dell'organizzazione.
 
@@ -53,7 +53,7 @@ Ecco quello che occorre:
 ## <a name="set-up-test-accounts"></a>Configurare gli account di prova
 <a name="__toc328126910"> </a>
 
-1. Passare a **Amministratore Microsoft 365** o Office 365 utenti e gruppi e quindi  >   selezionare Aggiungi e immettere le   >   ![ informazioni ](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) necessarie.
+1. Passare a **Amministratore Microsoft 365** o Office 365 utenti e gruppi  >   e quindi selezionare   >   ![ Aggiungi.](../images/328ffb57-5f31-430a-b653-4a6b8e76d338.png) e immetti le informazioni richieste.
 
 2. Al passaggio 4 (Posta elettronica) immettere il proprio indirizzo di posta elettronica. Verrà creato un record che contiene il nome utente e la password per il nuovo utente.
 
@@ -66,7 +66,7 @@ In ogni computer di prova eseguire le seguenti operazioni:
 
 1. Passare alla home page Microsoft 365 o Office 365 e accedere con le credenziali di uno degli account di test.
 
-2. Andare a **Impostazioni**![Impostazioni: aggiornare il profilo, installare il software e connetterlo al cloud](../images/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png), quindi fare clic su **Installa il software e connettilo al cloud**.
+2. Passare a **Impostazioni** Impostazioni: aggiornare il profilo, installare il software e connetterlo al cloud. e quindi fare clic su Installa software e ![ ](../images/4b83e9cb-c7e4-46c8-b3d1-cfee017123ae.png) **collegarlo al cloud.**
 
 ## <a name="set-up-audio-conferencing"></a>Configurare l’audioconferenza
 <a name="__toc328126912"> </a>
@@ -83,7 +83,7 @@ Dopo essere stati configurati per i servizi di audioconferenza, gli utenti ricev
 
 1. Fare clic **su Utenti audioconferenza**  >  .
 
-2. Fare clic sui nomi degli utenti da configurare per le conferenze telefoniche con accesso esterno, quindi fare clic su **Modifica**![Modifica](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png).
+2. Fare clic sui nomi degli utenti da configurare per i servizi di conferenza telefonica con accesso esterno e quindi su **Modifica** ![ ](../images/2f8948c1-e4f3-4022-b9cd-37fed066056e.png) modifica.
 
 3. Selezionare il proprio provider di servizi di audioconferenza, digitare le informazioni richieste e fare clic su **Salva**.
 

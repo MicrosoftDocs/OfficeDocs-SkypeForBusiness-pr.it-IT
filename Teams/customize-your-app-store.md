@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni sull'app store personalizzato in Microsoft Teams.
-ms.openlocfilehash: 12893fc0a424fc85b0bb72dd58da3008c2ba5085
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 06663505a173d7fa1a5d53957fbf2df8fdd232d0
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584660"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728905"
 ---
 # <a name="custom-apps-store-in-microsoft-teams"></a>App personalizzate archiviate in Microsoft Teams
 
@@ -34,7 +34,7 @@ Ora è possibile personalizzare l'app store dell'organizzazione in Teams con il 
 
 È possibile accedere all'archivio di personalizzazione nell'interfaccia di amministrazione **selezionando Teams personalizzazione**  >  **dell'archivio.**
 
-  ![Funzionalità di personalizzazione dello store della Console di amministrazione evidenziata](media/customize-app-store.png)
+  ![Funzionalità di personalizzazione dello store della Console di amministrazione evidenziata.](media/customize-app-store.png)
 
 Questo articolo descrive le caratteristiche dell'archivio app personalizzate e come usarle.
 
@@ -87,7 +87,7 @@ Le opzioni disponibili sono:
   - .jpg
 - Scegliere uno sfondo personalizzato. Quando si seleziona **Scegli un colore personalizzato,** si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
 
-L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel Teams di app tenant.
+L'immagine o il colore di sfondo viene usato come sfondo per il banner superiore nel Teams app tenant.
 
 ## <a name="customize-the-text-color-of-your-name"></a>Personalizzare il colore del testo del proprio nome
 
@@ -99,17 +99,17 @@ Assicurarsi che il colore del testo sia abbastanza in contrasto con lo sfondo, i
 
 Quando si seleziona **Scegli un colore personalizzato,** si apre un selettore colori. Selezionare il colore desiderato regolando la scala del selettore colori.
 
- ![selezione colori](media/choose-a-custom-color.png)
+ ![il selettore colori.](media/choose-a-custom-color.png)
 
 ## <a name="complete-the-customization-of-your-team-apps-store"></a>Completare la personalizzazione dell'app store del team
 
 Dopo aver completato la personalizzazione dell'app store, assicurarsi di selezionare **Salva** per salvare le modifiche.
 Per visualizzare in anteprima le modifiche, selezionare **Anteprima app store** per visualizzare una rappresentazione dell'app store personalizzato.
 
-![Anteprima dell'app store personalizzato](media/PowerAppsInStore650w.png)
+![anteprima dell'app store personalizzato.](media/PowerAppsInStore650w.png)
 
 > [!Note]
-> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato, perché alcuni colori predefiniti si basano sulla versione di Teams client.
+> La rappresentazione può variare rispetto alla versione finale dell'archivio app personalizzato, perché alcuni colori predefiniti si basano sulla versione di Teams client degli utenti.
 
 ## <a name="related-article"></a>Articolo correlato
 

@@ -20,12 +20,12 @@ f1.keywords:
 ms.custom:
 - Phone System
 description: Informazioni sui passaggi di distribuzione per ottenere il firmware corretto, aggiornarlo se necessario, assegnare licenze e configurare le impostazioni per i telefoni dell'area comune.
-ms.openlocfilehash: 14c7a76ed8f0aa319049d4352c1cdc6ce4c4ce98
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cbf1c5f211eba09ee90a0358b175332fa64de4e2
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607423"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726975"
 ---
 # <a name="set-up-common-area-phones"></a>Configurare i telefoni di aree comuni
 
@@ -54,7 +54,7 @@ Dovrai seguire questi passaggi:
 ### <a name="step-1---buy-the-licenses"></a>Passaggio 1: acquista le licenze
 1. Nell'interfaccia di amministrazione passare a **Servizi**  >  **di acquisto fatturazione** e aggiungere Altri **piani.**
 
-    ![Screenshot della licenza Telefono Area comune](../../images/cap-license.png)
+    ![Screenshot della licenza Telefono area comune.](../../images/cap-license.png)
 2. Clicca su **Telefono di area comune** > **Acquista ora** > sulla pagina di **Check-out** clicca su **Acquista ora**.
 3. Clicca per espandere **Abbonamenti aggiuntivi** e quindi clicca per acquistare un piano di chiamata. Scegli **Piano di chiamata domestico** o **Piano di chiamata nazionale e internazionale**.
 
@@ -75,7 +75,7 @@ Per maggiori informazioni sulle licenze, vedi [Licenze aggiuntive per Skype for 
 
      L'assegnazione delle licenze apparirà così:
 
-     ![TurnOnCapLicense.png](../../images/cap-license-turn-on.png)
+     ![TurnOnCapLicense.png.](../../images/cap-license-turn-on.png)
 
      > [!Note]
      > Per tua informazione, il piano 2 di Skype for Business è incluso con la licenza per il **Telefono di area comune**.
@@ -84,23 +84,23 @@ Per maggiori dettagli, vedi [Aggiungere un utente](https://support.office.com/ar
 
 ### <a name="step-3---assign-a-phone-number-to-the-common-area-phone-user-account"></a>Passaggio 3: assegna un numero di telefono all'account utente del telefono di area comune
 
-![Icona che mostra il logo Skype for Business assegnare un numero di telefono all'utente usando l'interfaccia Skype for Business ](../../images/sfb-logo-30x30.png) **di amministrazione**
+![Icona che mostra il Skype for Business logo.](../../images/sfb-logo-30x30.png) Assegnare un numero di telefono all'utente usando **l'Skype for Business di amministrazione**
 
-1. Nell'interfaccia di amministrazione > **di amministrazione**  >  **Skype for Business**.
+1. Nell'interfaccia di amministrazione > **interfaccia di amministrazione**  >  **Skype for Business**.
 2. Nell' **Interfaccia di amministrazione Skype for Business** >  **Voce** > **Numeri di telefono**.
 3. Seleziona un numero dall'elenco di numeri di telefono e fai clic su **Assegnare**.
 4. Sulla pagina relativa all'**Assegnazione**, nella casella **Utente vocale** immetti il nome dell'utente che viene utilizzato per il telefono, quindi seleziona l'utente nel menù a tendina **Seleziona un utente vocale**.
 5. Mentre sei lì, dovrai aggiungere un indirizzo di emergenza. Una volta effettuata la ricerca, controlla **Seleziona l'indirizzo di emergenza** e scegli quello giusto per te.
 6. Clicca su **Salvare** e il tuo utente dovrebbe apparire così:
 
-    ![Screenshot del numero di telefono dell'utente](../../images/cap-user-number.png)
+    ![Screenshot del numero di telefono dell'utente.](../../images/cap-user-number.png)
 
    > [!Note]
    > Gli utenti verranno visualizzati solo se vi è stata applicata una licenza di **Sistema telefonico**. Se lo hai appena fatto, a volte ci vuole un po' perché l'utente venga visualizzato nell'elenco.
 
 Per ulteriori informazioni, vedi [Ottenere numeri di telefono per i tuoi utenti](/microsoftteams/getting-phone-numbers-for-your-users).
 
-Se vuoi, puoi anche prendere il tuo numero di telefono che hai con un altro gestore e "*porta*" o trasferirlo a Microsoft 365 o Office 365. Vedere Trasferire [i numeri di telefono Teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams).
+Se vuoi, puoi anche prendere il tuo numero di telefono che hai con un altro gestore e "*porta*" o trasferirlo a Microsoft 365 o Office 365. Vedere Trasferire [numeri di telefono in Teams](/microsoftteams/phone-number-calling-plans/transfer-phone-numbers-to-teams).
 
 ### <a name="step-4---setting-up-your-phone"></a>Passaggio 4: configurazione del telefono
 
@@ -140,7 +140,7 @@ Il telefono o i telefoni in dotazione devono avere la modalità **Telefono di ar
 
 
 > [!NOTE]
-> Il sito di provisioning CAP afferma che ripristinerà la password dell'account CAP ad una password casuale. Prendere nota che l'account a cui fa riferimento il CAP è l'account Azure Active Directory (AAD). Se hai creato l'account solo in AAD, la procedura è semplice. Se è stata sincronizzata una versione locale di Active Directory con AAD e si usa un IDP o ADFS di terze parti, il provisioning di CAP non riuscirà. In questo caso, è necessario usare solo un account Microsoft 365 o Office 365/Azure Active Directory(ad esempio,  un account con un dominio di onmicrosoft.com) per il provisioning di CAP.
+> Il sito di provisioning CAP afferma che ripristinerà la password dell'account CAP ad una password casuale. Prendere nota che l'account a cui fa riferimento il CAP è l'account Azure Active Directory (AAD). Se hai creato l'account solo in AAD, la procedura è semplice. Se è stata sincronizzata una versione locale di Active Directory con AAD e si usa un IDP o ADFS di terze parti, il provisioning di CAP non riuscirà. In questo caso, è necessario usare solo un account Microsoft 365 o Office 365/Azure Active Directory (ad esempio  un account con un dominio di onmicrosoft.com) per il funzionamento del provisioning cap.
 
 
 ### <a name="related-topics"></a>Argomenti correlati

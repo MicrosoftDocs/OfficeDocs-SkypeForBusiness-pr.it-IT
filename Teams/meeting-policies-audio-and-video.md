@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
-ms.openlocfilehash: 2fcfb2525abf935cc8d26e7fe330fa4edff48f90
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4f8de802fd2ddf90555a34ac0b8d66d2d7021f79
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58578360"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726565"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri per le riunioni per & video
 
@@ -54,7 +54,7 @@ Questa è una combinazione di criterio per organizzatore e criterio per utente. 
 
 Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione.
 
-![Screenshot che mostra le opzioni di registrazione](media/meeting-policies-recording.png)
+![Screenshot che mostra le opzioni di registrazione.](media/meeting-policies-recording.png)
 
 Osserviamo l'esempio seguente.
 
@@ -116,7 +116,7 @@ Le riunioni organizzate da un utente che ha questa impostazione di criteri abili
 
 | Client Web e desktop di Teams |Client per dispositivi mobili di Teams  |
 |:-------:|:-------:|
-|![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su desktop](media/meeting-policies-audio-video-settings.png)    |![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su dispositivo mobile](media/meeting-policies-mobile-join.png)          |
+|![Screenshot che mostra la partecipazione alla riunione con le impostazioni audio/video sul desktop.](media/meeting-policies-audio-video-settings.png)    |![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su dispositivo mobile](media/meeting-policies-mobile-join.png)          |
 
 Osserviamo l'esempio seguente.
 
@@ -199,7 +199,7 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 
 2. Selezionare **Criteri riunione Personalizza** immagini  >  **riunione**.
 
-   ![Selezione dei criteri riunione con il pulsante Personalizza immagini riunione evidenziato](media/custom-background-image-button.png)
+   ![Selezione dei criteri riunione con il pulsante Personalizza immagini riunione evidenziato.](media/custom-background-image-button.png)
 
 3. Selezionare **Su da** immagini di sfondo a livello di **organizzazione.**
 

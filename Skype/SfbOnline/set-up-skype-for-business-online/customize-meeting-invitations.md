@@ -21,18 +21,18 @@ ms.custom:
 - ms.lync.lac.MeetingInvitation
 - ms.teamsadmincenter.meetingsettings.invitationurls
 description: 'Personalizzare Skype convocazioni di riunione con logo grafici, URL della Guida e legali e testo del piè di pagina. '
-ms.openlocfilehash: 14a544d5a28fc9a0b64cda573245f2e232e0d901
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 39ad8a6c6f9bec3a03d68ba532454703c4deb1c6
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614938"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729285"
 ---
 # <a name="customize-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Gli amministratori possono assicurarsi che tutti gli inviti alle riunioni di Skype for Business includano alcune informazioni utili di cui gli utenti potrebbero avere bisogno, ad esempio collegamenti al sito Web di supporto e alla dichiarazione di non responsabilità legale, al logo della società e ad altro testo da includere. 
+Gli amministratori possono assicurarsi che tutti gli inviti alle riunioni di Skype for Business includano alcune informazioni utili di cui gli utenti potrebbero avere bisogno, ad esempio collegamenti al sito Web del supporto e alla dichiarazione di non responsabilità legale, al logo della società e ad altro testo da includere. 
   
 ## <a name="tips-for-creating-a-logo-for-meeting-invitations"></a>Suggerimenti per la creazione di un logo per gli inviti alle riunioni
 <a name="__top"> </a>
@@ -48,7 +48,7 @@ Gli amministratori possono assicurarsi che tutti gli inviti alle riunioni di Sky
 ## <a name="customize-your-meeting-invitations"></a>Personalizzare gli inviti alle riunioni
 <a name="__top"> </a>
 
-![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
 
 1. Accedere con l'account aziendale o dell'istituto di istruzione.
     
@@ -71,9 +71,9 @@ Gli amministratori possono assicurarsi che tutti gli inviti alle riunioni di Sky
    
 5. Scegliere **Save**.
     
-6. Attendere circa un'ora prima che le modifiche si popolino in Microsoft 365 o Office 365 servizi. Quindi, passare a Outlook e pianificare una riunione Skype per vedere l'aspetto delle modifiche. 
+6. Attendere circa un'ora prima che le modifiche si popolino in Microsoft 365 o Office 365 servizi. Quindi, passare a Outlook e pianificare una Skype riunione per vedere l'aspetto delle modifiche. 
     
-    ![Ecco l'aspetto di un invito personalizzato, senza l'elemento grafico](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
+    ![Ecco l'aspetto di un invito personalizzato, senza l'elemento grafico.](../images/ebb5c03c-c23d-4da7-97f1-9b13e26a6cf8.png)
   
 ## <a name="related-topics"></a>Argomenti correlati
 <a name="__top"> </a>

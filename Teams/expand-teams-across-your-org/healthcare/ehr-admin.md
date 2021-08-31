@@ -23,20 +23,20 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
 description: Usare Microsoft Teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 5dd103651c4cd368b5304d4d33d753b5d13ab73d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 46f29649665521b2bc59c2a4a73db617398bcf37
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596200"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726635"
 ---
 # <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con Teams - Integrazione in CCE
 
-Microsoft Teams Il connettore Electronic Health Record (EHR) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider Teams direttamente dal sistema EHR. Basato sul cloud di Microsoft 365, Microsoft Teams semplifica e assicura la collaborazione e la comunicazione con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
+Microsoft Teams Il connettore EHR (Electronic Health Record) consente ai medici di avviare facilmente una visita virtuale del paziente o una consultazione con un altro provider in Teams direttamente dal sistema EHR. Basato sul cloud di Microsoft 365, Microsoft Teams semplifica e assicura la collaborazione e la comunicazione con strumenti di chat, video, voce e assistenza sanitaria in un unico hub che supporta la conformità con HIPAA, la certificazione HITECH e altro ancora.
 Con la piattaforma di comunicazione e collaborazione di Teams, il personale medico può facilmente superare la complessità e la confusione di sistemi frammentati per dedicare il proprio tempo a fornire la migliore assistenza possibile. Microsoft Teams Il connettore EHR (Electronic Health Record) può:
 
 - Avvia Teams visite virtuali dal sistema provider EHR con un flusso di lavoro clinico integrato.
-- Consentire ai pazienti di partecipare Teams visite virtuali dall'interno del portale dei pazienti.
+- Consenti ai pazienti di partecipare Teams visite virtuali dall'interno del portale dei pazienti.
 - Scrivere di nuovo i metadati nel sistema EHR Teams le visite virtuali da registrare quando i partecipanti si connettono e si disconnettino e abilitano il controllo automatico e la conservazione dei record.
 
   Guardare il video su come gestire le visite virtuali dal portale CCE.
@@ -126,7 +126,7 @@ Quando l’amministratore di Epic avrà approvato le informazioni di configurazi
 
 ## <a name="launch-teams-virtual-visits"></a>Avviare visite virtuali di Teams
 
-Dopo aver completato i passaggi del connettore EHR e la configurazione epica, l'organizzazione è pronta a supportare le video visite con Microsoft Teams.
+Dopo aver completato i passaggi del connettore EHR e la configurazione epica, l'organizzazione è pronta a supportare le videochiamate con Microsoft Teams.
 
 ### <a name="virtual-visit-prerequisites"></a>Prerequisiti per la visita virtuale
 
@@ -148,7 +148,7 @@ Caratteristiche principali dell'esperienza del provider:
 
 - Il provider può vedere gli aggiornamenti in tempo reale dei partecipanti che si connettono e disconnettono per un appuntamento specifico. Il provider può vedere quando il paziente è connesso a una visita virtuale.
 
-  ![Esperienza del provider di una visita virtuale con un paziente](../../media/ehc-provider-experience-6.png)
+  ![Esperienza del provider di una visita virtuale con il paziente.](../../media/ehc-provider-experience-6.png)
 
 ### <a name="patient-experience"></a>Esperienza del paziente
 
@@ -166,7 +166,7 @@ Caratteristiche principali dell'esperienza del paziente:
 
 - Il test del video e del microfono è disponibile nella sala di attesa prima di partecipare alla visita virtuale.
 
-  ![Esperienza del paziente della visita virtuale](../../media/ehc-virtual-visit-5.png)
+  ![Esperienza paziente della visita virtuale.](../../media/ehc-virtual-visit-5.png)
 
 > [!Note]
 > Epic, MyChart, Haiku e Canto sono marchi registrati di Epic Systems Corporation.

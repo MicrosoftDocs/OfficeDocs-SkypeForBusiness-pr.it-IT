@@ -18,18 +18,18 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6f4fe6a61dd4891f457656e0659243c75c372142
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fb5f7574bd5e07598c412cd7d17f02625de2f095
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598540"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729915"
 ---
 # <a name="set-up-microsoft-teams-meeting-add-on-for-google-workspace"></a>Configurare il Microsoft Teams riunione per Google Workspace
 
-L'Microsoft Teams per le riunioni consente agli utenti del calendario di Google di pianificare e partecipare a una riunione Microsoft Teams direttamente da Google Workspace. Gli utenti potranno accedere alle funzionalità Teams riunioni, tra cui videoconferenze e audioconferenze, condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora. Rimani connesso e organizzato per lavorare di più insieme in tutto il lavoro, la scuola e la vita.
+L'Microsoft Teams per le riunioni consente agli utenti del calendario di Google di pianificare e partecipare a una Microsoft Teams riunione direttamente da Google Workspace. Gli utenti potranno accedere alle funzionalità Teams riunioni, tra cui video e audioconferenze, condivisione dello schermo, chat delle riunioni, lavagne digitali e altro ancora. Rimani connesso e organizzato per lavorare di più insieme in tutto il lavoro, la scuola e la vita.
 
-Il Microsoft Teams per le riunioni di Google Workspace deve essere abilitato da un amministratore Teams prima che gli utenti del tenant possano accedere all'app.
+Il componente Microsoft Teams riunione per Google Workspace deve essere abilitato da un amministratore Teams prima che gli utenti del tenant possano accedere all'app.
 
 ## <a name="enable-or-disable-microsoft-teams-meeting-add-on-for-google-workspace-in-the-azure-portal"></a>Abilitare o disabilitare Microsoft Teams componente aggiuntivo riunione per Google Workspace nel portale di Azure
 
@@ -41,17 +41,17 @@ Il componente aggiuntivo è abilitato per impostazione predefinita.
 
 2. Selezionare **Enterprise tutte** le  >  **applicazioni.**
 
-3. Cercare il **componente aggiuntivo Microsoft Teams riunione per Google Workspace.**
+3. Cercare il **Microsoft Teams per le riunioni per Google Workspace.**
 
-   ![Portale di Azure che mostra tutte le applicazioni](media/aad-add-google-workspace.png)
+   ![Portale di Azure che mostra tutte le applicazioni.](media/aad-add-google-workspace.png)
 
 4. Selezionare **Sì**.
 
-   ![Portale di Azure che mostra le proprietà dell'area di lavoro di Google](media/google-workspace-properties.png)
+   ![Portale di Azure che mostra le proprietà dell'area di lavoro di Google.](media/google-workspace-properties.png)
 
 5. (Facoltativo) Per disabilitare il componente aggiuntivo, selezionare **No** invece **di Sì** nel passaggio 4.
 
-## <a name="disable-microsoft-teams-meeting-add-on-for-google-workspace-using-powershell"></a>Disabilitare Microsoft Teams per le riunioni per Google Workspace usando PowerShell
+## <a name="disable-microsoft-teams-meeting-add-on-for-google-workspace-using-powershell"></a>Disabilitare Microsoft Teams componente aggiuntivo riunione per Google Workspace con PowerShell
 
 ```powershell
 Connect-AzureAD

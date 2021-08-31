@@ -22,12 +22,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: fa5d9c3f1c74133b96eda81d7c56c3f353265b99
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9b8d593d4f3238bb588159290655f1aa241beffc
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615342"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727005"
 ---
 # <a name="manage-the-lists-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Elenchi per l'organizzazione in Microsoft Teams
 
@@ -37,11 +37,11 @@ L'app Elenchi in Microsoft Teams consente agli utenti dell'organizzazione di ten
 
 In Teams gli utenti accedono a Elenchi come scheda in un canale. Fare su **+** per aprire la raccolta schede e aggiungere una nuova istanza della scheda dell'app Elenchi a un canale per iniziare.
 
-![App Elenchi nella raccolta schede](media/lists-tab.png)
+![App Elenchi nella raccolta schede.](media/lists-tab.png)
 
 Gli utenti possono creare nuovi elenchi o aggiungere elenchi esistenti all’interno dello stesso team o da un altro sito di SharePoint a cui hanno accesso. È possibile creare i nuovi elenchi da zero, a partire da modelli predefiniti, in base alla struttura di un elenco esistente, oppure importando i dati da una cartella di lavoro di Excel. L’app Elenchi è disponibile nei client desktop, Web e per dispositivi mobili di Teams.
 
-![come creare un elenco dall'app Elenchi](media/lists-create-list.png)
+![come creare un elenco nell'app Elenchi.](media/lists-create-list.png)
 
 ## <a name="templates"></a>Modelli
 

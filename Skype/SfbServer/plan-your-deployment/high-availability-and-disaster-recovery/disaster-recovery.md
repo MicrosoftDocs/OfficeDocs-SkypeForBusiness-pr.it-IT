@@ -13,26 +13,26 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 142caf34-0f20-47f3-9d32-ce25ab622fad
 description: Per il ripristino di emergenza, Skype for Business Server l'associazione del pool con il failover nel caso in cui un pool si insedi.
-ms.openlocfilehash: 728419a20fe99db004b739e599355c9b64a8844f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b6a2c33c123f70850335ce55aba06071ff4104eb
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603835"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728835"
 ---
 # <a name="front-end-pool-disaster-recovery-in-skype-for-business-server"></a>Ripristino di emergenza del pool Front End in Skype for Business Server
  
 Per il ripristino di emergenza, Skype for Business Server l'associazione del pool con il failover nel caso in cui un pool si insedi.
   
-Per le opzioni di ripristino di emergenza più affidabili in Skype for Business Server, distribuire coppie di pool Front End in due siti geograficamente dislocati. Ogni sito dispone di un pool Front End associato a un pool Front End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup fornisce la replica dei dati in tempo reale per mantenere sincronizzati i pool. Vedere [Deploy paired Front End pools for disaster recovery in Skype for Business Server](../../deploy/deploy-high-availability-and-disaster-recovery/front-end-pools-for-disaster-recovery.md) se si desidera implementare l'associazione di pool Front End.
+Per le opzioni di ripristino di emergenza più affidabili in Skype for Business Server, distribuire coppie di pool Front End in due siti geograficamente dislocati. Ogni sito dispone di un pool Front End associato a un pool Front End corrispondente nell'altro sito. Entrambi i siti sono attivi e il servizio di backup fornisce la replica dei dati in tempo reale per mantenere sincronizzati i pool. Vedere [Deploy paired Front End pools for disaster recovery in Skype for Business Server](../../deploy/deploy-high-availability-and-disaster-recovery/front-end-pools-for-disaster-recovery.md) if you want to implement Front End pool pairing.
   
-![Mostra pool Front End in due siti diversi, abbinati tra loro](../../media/f74533c0-a10e-4f18-85a8-b9a008497573.jpg)
+![Mostra i pool Front End in due siti diversi, abbinati tra loro.](../../media/f74533c0-a10e-4f18-85a8-b9a008497573.jpg)
   
 Se il pool in un sito ha esito negativo, è possibile eseguire il failover degli utenti da tale pool al pool nell'altro sito, che quindi serve tutti gli utenti in entrambi i pool. Per la pianificazione della capacità, è consigliabile progettare ogni pool in modo che sia in grado di gestire il carico di lavoro di tutti gli utenti in entrambi i pool in caso di emergenza.
   
 Due data center che includono pool Front End abbinati tra loro possono essere a qualsiasi distanza. È consigliabile associare due data center nella stessa area geografica mondiale, con collegamenti ad alta velocità tra di essi. 
   
-La presenza di due data center in aree geografiche del mondo è possibile, ma potrebbe verificarsi una perdita di dati maggiore in caso di emergenza, a causa della latenza nella replica dei dati.
+La presenza di due data center in aree geografiche del mondo è possibile, ma potrebbe incorrere in una perdita di dati maggiore in caso di emergenza, a causa della latenza nella replica dei dati.
   
 Quando si pianificano i pool da associare, è necessario tenere presente che sono supportati solo gli abbinamenti seguenti:
   
@@ -66,7 +66,7 @@ L'archivio di gestione centrale contiene i dati di configurazione relativi ai se
   
 Se si associa il pool che ospita l'archivio di gestione centrale, nel pool di backup viene impostato un database dell'archivio di gestione centrale di backup. In qualsiasi momento, uno dei due database dell'archivio di gestione centrale è attivo e l'altro è di standby. Il contenuto viene replicato dal servizio di backup dal database attivo alla modalità standby.
   
-![Mostra due pool Front End, uno con l'archivio CMS attivo e l'altro con l'archivio CMS di backup passivo](../../media/aa479398-eb56-4854-8d50-1eff39c58a56.jpg)
+![Mostra due pool Front End, uno con l'archivio CMS attivo e l'altro con l'archivio CMS di backup passivo.](../../media/aa479398-eb56-4854-8d50-1eff39c58a56.jpg)
   
 Durante un failover del pool che coinvolge il pool che ospita l'archivio di gestione centrale, è necessario eseguire il failover dell'archivio di gestione centrale prima di eseguire il failover del pool Front End.
   
@@ -76,13 +76,13 @@ Gli obiettivi di progettazione per il failover dell'archivio di gestione central
   
 ## <a name="front-end-pool-pairing-data-security"></a>Sicurezza dei dati di associazione del pool Front End
 
-Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include i caricamenti di microsoft PowerPoint e le lavagne usate nelle conferenze.
+Il servizio di backup trasferisce continuamente i dati utente e il contenuto delle conferenze tra due pool Front End abbinati. I dati utente contengono GLI URI SIP dell'utente, nonché pianificazioni di conferenze, elenchi di contatti e impostazioni. Il contenuto delle conferenze include i caricamenti PowerPoint Microsoft e le lavagne usate nelle conferenze.
   
 Dal pool di origine, questi dati vengono esportati dall'archiviazione locale, compressi e quindi trasferiti nel pool di destinazione, dove vengono decompressi e importati nell'archiviazione locale. Il Servizio di backup presume che i collegamenti di comunicazione tra i due data center si trovino all'interno di una rete aziendale protetta da Internet. Non crittografa i dati trasferiti tra i due data center, né i dati incapsulati in modo nativo all'interno di un protocollo sicuro, ad esempio HTTPS. Pertanto, è possibile un attacco man-in-the-middle da parte del personale interno all'interno della rete aziendale.
   
 Qualsiasi azienda che distribuisce Skype for Business Server più data center e utilizza la funzionalità di ripristino di emergenza deve garantire che il traffico tra i data center sia protetto dalla rete Intranet aziendale. Le aziende che si preoccupano della protezione da attacchi interni devono proteggere i collegamenti di comunicazione tra i data center. Si tratta di un requisito standard che aiuta anche protech molti altri tipi di dati sensibili aziendali trasferiti tra data center.
   
-Sebbene in un'azienda esista il pericolo di attacchi man-in-the-middle, è relativamente contenuto se paragonato al rischio di esporre il traffico in Internet. In particolare, i dati utente esposti dal servizio di backup (ad esempio gli URI SIP) sono generalmente disponibili per tutti i dipendenti della società tramite altri mezzi, ad esempio la Rubrica globale o altro software di directory. Pertanto, l'attenzione deve essere concentrata sulla protezione della rete WAN tra i due data center quando viene utilizzato il servizio di backup per copiare i dati tra i due pool associati.
+Sebbene in un'azienda esista il pericolo di attacchi man-in-the-middle, è relativamente contenuto se paragonato al rischio di esporre il traffico in Internet. In particolare, i dati utente esposti dal servizio di backup (ad esempio gli URI SIP) sono generalmente disponibili per tutti i dipendenti dell'azienda tramite altri mezzi, ad esempio la Rubrica globale o altro software di directory. Pertanto, l'attenzione deve essere concentrata sulla protezione della rete WAN tra i due data center quando viene utilizzato il servizio di backup per copiare i dati tra i due pool associati.
   
 ### <a name="mitigating-security-risks"></a>Riduzione dei rischi per la sicurezza
 

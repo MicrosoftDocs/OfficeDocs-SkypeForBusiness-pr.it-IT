@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: cec2d9bf-2deb-482c-841b-0e3599f94b50
 description: Leggere questo argomento per informazioni su come pianificare i siti PSTN di Cloud Connector Edition per garantire un routing delle chiamate efficiente ed economicamente conveniente.
-ms.openlocfilehash: 54f8ec9f89c6a3ef88b5ac8e70e9eebfd2968d2d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 50b30a5071dd14cc0016419d85406b7c50d85387
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58616332"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729235"
 ---
 # <a name="plan-for-cloud-connector-edition-pstn-sites"></a>Pianificare i siti PSTN Cloud Connector Edition
 
@@ -34,7 +34,7 @@ In questo argomento vengono descritte le informazioni necessarie su Cloud Connec
   
 ## <a name="cloud-connector-pstn-sites-and-call-routing"></a>Siti PSTN del connettore cloud e routing delle chiamate
 
-I siti PSTN del connettore cloud sono un costrutto di topologia creato per evitare inutili tariffe interurbane e interurbane e per garantire che le chiamate di emergenza in uscita siano instradati al trunk appropriato. Per garantire un routing conveniente ed efficiente delle chiamate, incluse le chiamate ai servizi di emergenza, è necessario pianificare attentamente i siti PSTN e il modo in cui gli utenti vengono assegnati a ogni sito. 
+I siti PSTN del connettore cloud sono un costrutto di topologia creato per evitare inutili tariffe interurbane e interurbane e per garantire che le chiamate di emergenza in uscita siano instradati al trunk appropriato. Per garantire un routing efficiente ed efficiente delle chiamate, incluse le chiamate ai servizi di emergenza, è necessario pianificare attentamente i siti PSTN e il modo in cui gli utenti vengono assegnati a ogni sito. 
   
 Nell'ambito della pianificazione di Cloud Connector, è essenziale parlare con gli operatori della posizione degli uffici e degli utenti e del punto in cui i trunk PSTN terminano dal gestore. È necessario collaborare con gli operatori per determinare come instradare le chiamate di emergenza e quindi utilizzare queste informazioni per definire i siti PSTN di Cloud Connector e assegnare gli utenti ai siti appropriati. Ad esempio, è necessario verificare che i trunk che terminano in un datacenter in cui il sito PSTN è allungato siano configurati per gestire il routing sia in ingresso che in uscita per tutti i numeri assegnati agli utenti del sito. 
   
@@ -42,7 +42,7 @@ Ogni appliance Cloud Connector può essere connessa a diversi gateway IP, IP-IP-
   
 Skype for Business Online tratta equamente tutte le appliance Cloud Connector in un sito e instraderà le chiamate in uscita a rotazione alle appliance Cloud Connector nello stesso sito. Ogni connettore cloud in un sito è connesso allo stesso set di trunk PSTN (completamente mesh). Poiché ogni utente è associato a un sito PSTN del connettore cloud, qualsiasi chiamata in uscita da tale utente (normale o di emergenza) verrà assegnata a una delle appliance Cloud Connector nel sito PSTN a cui è associato l'utente. 
   
-Cloud Connector esegue il routing delle chiamate statiche ai relativi gateway IP collegati, IP-IP, SBC o trunk PSTN diretti. Cloud Connector non è ancora in grado di instradamento dinamico a un trunk in base alla destinazione (per il routing meno costo) o in base all'origine (chiamate di emergenza statiche o dinamiche). Le chiamate in ingresso non sono un problema poiché la chiamata può derivare solo da un trunk associato al numero. Le chiamate in uscita, tuttavia, possono passare a qualsiasi appliance Cloud Connector in un sito (e per estensione i trunk PSTN collegati a tale appliance Cloud Connector) che possono causare chiamate interurbane indesiderate. Inoltre, le chiamate di emergenza non verranno effettuate se il sito PSTN del connettore cloud è disteso tra datacenter con codici di area o vettori diversi.
+Cloud Connector esegue il routing delle chiamate statiche ai relativi gateway IP collegati, IP-IP, SBC o trunk PSTN diretti. Cloud Connector non è ancora in grado di instradamento dinamico a un trunk in base alla destinazione (per il routing meno costo) o in base all'origine (chiamate di emergenza statiche o dinamiche). Le chiamate in ingresso non sono un problema, poiché la chiamata può derivare solo da un trunk associato al numero. Le chiamate in uscita, tuttavia, possono passare a qualsiasi appliance Cloud Connector in un sito (e per estensione i trunk PSTN collegati a tale appliance Cloud Connector) che possono causare chiamate interurbane indesiderate. Inoltre, le chiamate di emergenza non verranno effettuate se il sito PSTN del connettore cloud è disteso tra datacenter con codici di area o vettori diversi.
   
 ## <a name="an-example"></a>Un esempio
 
@@ -70,11 +70,11 @@ Nell'esempio seguente viene illustrato come raggruppare i trunk nei siti PSTN e 
     
   -  Portland (codice area 503)
     
-Poiché l'utente A in Redmond (Data Center A) e l'utente B in Bellevue (Data Center B) sono in sobborghi uno accanto all'altro e nello stesso codice di area (425), carrier A dovrebbe essere in grado di eseguire una chiamata di emergenza dall'utente A a Redmond sul trunk in Bellevue. 
+Poiché l'utente A in Redmond (Data Center A) e l'utente B in Bellevue (Data Center B) sono in sobborghi uno accanto all'altro e nello stesso codice area (425), carrier A dovrebbe essere in grado di eseguire una chiamata di emergenza dall'utente A a Redmond sul trunk in Bellevue. 
   
 Di conseguenza, gli utenti A e B e i trunk del connettore cloud per Bellevue e Redmond, possono probabilmente essere nello stesso sito PSTN del connettore cloud, come illustrato nel diagramma seguente. Le chiamate di emergenza degli utenti di un ufficio possono essere instradati ai trunk nell'altra. Tuttavia, dovresti verificare con il tuo operatore che questo funzionerà.
   
-![Come configurare i siti PSTN](../../media/2659caa7-9c18-4d4f-9c7a-61d0e6a07dc3.png)
+![Come configurare i siti PSTN.](../../media/2659caa7-9c18-4d4f-9c7a-61d0e6a07dc3.png)
   
 Considerare anche gli esempi seguenti:
   
@@ -82,4 +82,4 @@ Considerare anche gli esempi seguenti:
     
     Pertanto, anche se una chiamata proviene dal vettore A, è possibile che il software di instradamento delle chiamate dell'operatore nel codice di area Centralia 360 possa rifiutare una chiamata di emergenza in arrivo proveniente dall'utente B nel codice di area Bellevue 425. In questo caso è fondamentale che l'operatore confermi che Cloud Connector e i trunk associati nei siti CENTRALIA PSTN possano gestire le chiamate tra distanze e codici di area.
     
-- L'utente D a Portland usa un numero e un trunk forniti dal vettore B, quindi è altamente improbabile che il vettore B possa eseguire una chiamata di emergenza da un numero di telefono di proprietà del vettore A. L'utente D e l'appliance Cloud Connector e i trunk associati a Portland devono pertanto trovarsi in un sito PSTN diverso.
+- L'utente D di Portland usa un numero e un trunk forniti dal vettore B, quindi è altamente improbabile che il vettore B possa eseguire una chiamata di emergenza da un numero di telefono di proprietà del vettore A. L'utente D e l'appliance Cloud Connector e i trunk associati a Portland devono pertanto trovarsi in un sito PSTN diverso.

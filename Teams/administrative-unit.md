@@ -16,35 +16,35 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 556f220c9ca250f014ae604c96cabf9ef0b0ca0f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 9f1424149a3f585b30cb7a31d7742370c06cae3d
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636792"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58736125"
 ---
 # <a name="administrative-unit-functionality-for-device-management-in-teams"></a>Funzionalità delle unità amministrative per la gestione dei dispositivi in Teams
 
-Avere un accesso più granulare basato sui ruoli per la gestione dei dispositivi usando l Microsoft Teams di amministrazione. Il concetto di unità amministrativa per la gestione dei dispositivi è stato implementato tramite l'Teams di amministrazione.
+Avere un accesso più granulare basato sui ruoli per la gestione dei dispositivi tramite l'interfaccia Microsoft Teams di amministrazione. Il concetto di unità amministrativa per la gestione dei dispositivi è stato implementato tramite l'Teams di amministrazione.
 
-Con il concetto di unità amministrativa, si garantirà l'accesso a un set specifico di risorse a un amministratore dedicato. L'unità amministrativa limita l'accesso a tutte le risorse. È possibile estendere la stessa funzionalità per la gestione Teams dispositivi mobili.
+Con il concetto di unità amministrativa, si garantirà l'accesso a un set specifico di risorse a un amministratore dedicato. L'unità amministrativa limita l'accesso a tutte le risorse. È possibile estendere la stessa funzionalità per la gestione Teams dispositivi.
 
 > [!NOTE]
 > Il concetto di unità amministrativa è attualmente disponibile solo per il Teams amministratore del dispositivo.
 
 Ad esempio, Contoso ha operazioni in aree geografiche diverse. Alice è un amministratore IT globale di Londra, mentre Prashant è un amministratore IT per l'India. Oggi, quando Prashant accede all'Teams di amministrazione con il ruolo di amministratore del dispositivo, può vedere i dispositivi in tutto il mondo. Alice vuole limitare l'accesso di Prashant solo ai dispositivi presenti in India. Il concetto di unità amministrative consente di risolvere il problema. Altre informazioni sul [concetto di unità amministrativa.](/azure/active-directory/roles/administrative-units)
 
-![un diagramma che mostra gli scenari](media/au-diagram.png)
+![un diagramma che mostra gli scenari.](media/au-diagram.png)
 
 ## <a name="creation-of-administrative-units"></a>Creazione di unità amministrative
 
 Creare unità amministrative nel portale di Azure e assegnare amministratori per le rispettive unità amministrative. Per altre informazioni sull'assegnazione di unità amministrative, vedere [Gestire le unità di amministrazione.](/azure/active-directory/roles/admin-units-manage)
 
-![un esempio di unità amministrative aziendali](media/au-example.png)
+![un esempio di unità amministrative aziendali.](media/au-example.png)
 
 Una volta creato, l'amministratore IT globale può quindi aggiungere utenti di dispositivi che corrispondono a tale unità amministrativa.
 
-![una società di esempio con l'anteprima degli utenti](media/au-example2.png)
+![una società di esempio con l'anteprima degli utenti.](media/au-example2.png)
 
 L'assegnazione del ruolo può essere eseguita tramite PowerShell usando il cmdlet [Add-AzureADMSScopedRoleMembership.](/powershell/module/azuread/add-azureadmsscopedrolemembership?view=azureadps-2.0)
 

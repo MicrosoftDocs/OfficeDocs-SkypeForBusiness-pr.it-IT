@@ -17,18 +17,18 @@ description: Ottieni un report sulle presenze alle riunioni dall'interno di Team
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 233a76bf8c3ae2d3cd71aeddd487f606dcdbaea6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 93aad3cdee1c3819ee0d524a8538608dbeba1b0c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592187"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726375"
 ---
 # <a name="microsoft-teams-meeting-attendance-report"></a>Report sulle presenze alle riunioni di Microsoft Teams
 
 Gli organizzatori di riunioni possono visualizzare e scaricare report sulle presenze alle riunioni. Questo report è disponibile nel pannello **Partecipanti** della riunione, facendo clic sulla freccia per il download come mostrato sotto. Puoi scaricare il report come file .CSV (formato testo).
 
-:::image type="content" source="../media/meetings-attendance-download.JPG" alt-text="Controllo per scaricare i report sulle presenze alle riunioni di Microsoft Teams":::
+:::image type="content" source="../media/meetings-attendance-download.JPG" alt-text="Controllo per scaricare i report sulle presenze alle riunioni di Microsoft Teams.":::
 
 Per i tenant di formazione questo report è utile per tenere traccia delle presenze degli studenti alle lezioni online. Ad esempio, l'insegnante può scaricare il report sulle presenze all'inizio della lezione come un modo semplice per fare l’appello. Per altre informazioni, leggi [Download dei report delle presenze in Teams](https://support.office.com/article/download-attendance-reports-in-teams-ae7cf170-530c-47d3-84c1-3aedac74d310).
 

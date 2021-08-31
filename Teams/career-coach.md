@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0d1d63b827775f00aa4d6a2a53603a84b4e39edf
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0dd2bb016498df23a98c1e289679fd1c4e4cfa38
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58595120"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729695"
 ---
 # <a name="purchase-configure-and-enable-career-coach-for-microsoft-teams"></a>Acquistare, configurare e abilitare Assistente alla carriera per Microsoft Teams
 
@@ -77,9 +77,9 @@ Per abilitare Assistente alla carriera per l'istituto di istruzione, esaminare g
 
 - Pagina LinkedIn dell'istituto di istruzione
 
-- Abbonamento Learning campus linkedIn (preferito)
+- Abbonamento Learning campus LinkedIn (preferito)
 
-## <a name="purchase-the-career-coach-licenses"></a>Acquistare le Assistente alla carriera licenze
+## <a name="purchase-the-career-coach-licenses"></a>Acquistare le licenze Assistente alla carriera licenze
 
 Assistente alla carriera è disponibile in tutto il mondo (ad eccezione della Cina e della Russia) per istituti di istruzione superiore qualificati come licenza per componenti aggiuntivi tramite Enrollment for Education Solutions (EES), Cloud Service Providers (CSP) e interfaccia di amministrazione di Microsoft 365 (web direct). Come app Microsoft Teams, i clienti devono avere Microsoft 365 A3/A5 o Office 365 A1/A3/A5 per acquistare il componente aggiuntivo Assistente alla carriera licenza.
 
@@ -116,7 +116,7 @@ Usando le impostazioni di amministrazione nell'Microsoft Teams di amministrazion
 - Le sezioni seguenti devono essere completate prima Assistente alla carriera possono essere usate - Marchio e preferenze, LinkedIn
 - I cvs per il catalogo dei corsi e il campo di studio hanno formati obbligatori e dimensioni massime di 18 MB
 
-- Se viene visualizzato "Assistente alla carriera è in fase di configurazione per l'uso presto" nell'app Assistente alla carriera le sezioni richieste non sono state completate.
+- Se viene visualizzato "Assistente alla carriera è in fase di configurazione per l'uso presto" nell'app Assistente alla carriera le sezioni necessarie non sono state completate.
 
 - Nelle pagine delle impostazioni con i campi obbligatori, se i campi non sono completati la pagina non verrà inviato
   - Gli utenti non visualizzano un messaggio di avviso, ma la pagina semplicemente non invia
@@ -130,13 +130,13 @@ Usare la [pagina Gestisci app per](/microsoftteams/manage-apps) visualizzare le 
 2. Nel riquadro di spostamento sinistro selezionare Teams  >  **app Gestisci app.**  
 
     > [!NOTE]
-    > Per accedere alla pagina, è necessario essere un amministratore globale o Teams del servizio.
+    > Per accedere alla pagina, è necessario essere un amministratore globale o un Teams servizio.
 
 3. Cercare o cercare **Assistente alla carriera**.  
 
 4. Selezionare **Assistente alla carriera** e quindi selezionare **Impostazioni.**  
 
-    ![mostra l'app Assistente alla carriera selezionata con l'opzione Impostazioni visualizzata](media/career-coach-app.png)
+    ![mostra l Assistente alla carriera app selezionata con l'opzione Impostazioni visualizzata.](media/career-coach-app.png)
 
 ### <a name="configure-the-career-coach-app-settings"></a>Configurare le impostazioni Assistente alla carriera'app
 
@@ -162,11 +162,11 @@ Impostare il nome, il logo e la lingua predefinita dell'istituto di istruzione n
 > [!NOTE]
 > Questa è una sezione obbligatoria: Assistente alla carriera non può essere abilitata senza il marchio e le preferenze inviate.
 
-![sezione Assistente alla carriera personalizzazione dell'interfaccia di amministrazione](media/career-coach-brand.png)
+![nella Assistente alla carriera di personalizzazione dell'interfaccia di amministrazione.](media/career-coach-brand.png)
 
 ##### <a name="educational-institution-icon"></a>Icona dell'istituto di istruzione
 
-L'icona dell'istituto di istruzione viene usata in Assistente alla carriera per identificare contenuti univoci per l'istituto di istruzione, le risorse del catalogo dei corsi in tutta l'app e nella sezione esperienze reali del dashboard. L'icona è formattata nel modo seguente:
+L'icona dell'istituto di istruzione viene usata in tutto il Assistente alla carriera per identificare contenuti univoci per l'istituto di istruzione, le risorse del catalogo dei corsi in tutta l'app e nella sezione esperienze reali del dashboard. L'icona è formattata nel modo seguente:
 
 - PNG trasparente
 - Proporzioni di 1:1
@@ -197,17 +197,17 @@ Determinare la pagina LinkedIn dell'istituto di istruzione. Trovare la pagina Li
 
 2. Trovare la pagina LinkedIn eseguendo una ricerca in LinkedIn e selezionando Filtro scuola. Oppure è possibile connettersi con un membro del personale dei servizi professionali per determinare la pagina dell'istituto di istruzione di LinkedIn corretta da usare. [Come identificare le pagine di LinkedIn](https://www.linkedin.com/help/linkedin/answer/40133/differences-between-a-linkedin-page-for-a-school-and-company?lang=en)
 
-    ![Ricerca di linkedin per l'istituto di istruzione](media/career-coach-school-search.png)
+    ![linkedin cerca scuola.](media/career-coach-school-search.png)
 
 3. Aggiungere l'URL della pagina dell'istituto di istruzione di LinkedIn. L'URL deve essere una pagina dell'istituto di istruzione e non una pagina aziendale e in genere è formattato come `https://www.linkedin.com/school/willow-university/` .
 
-   ![Esempio di pagina linkedin school](media/career-coach-linkedin-page-url.png)
+   ![Esempio di pagina linkedin dell'istituto di istruzione.](media/career-coach-linkedin-page-url.png)
 
 4. Selezionare **Invia**.
 
 5. Se l'invio è stato completato, la pagina verrà aggiornata in modo da visualizzare il **collegamento Verifica** e la scadenza del **collegamento Verifica.** Il collegamento di verifica scade dopo 30 giorni.
 
-   ![Connessioni linkedin per l'app Career Coach](media/career-coach-linked-in.png)  
+   ![collegamenti linkedin per l'app career coach.](media/career-coach-linked-in.png)  
 
 6. Copiare il collegamento di verifica e condividerlo con l'amministratore della pagina LinkedIn dell'istituto di istruzione. Per altre informazioni sul ruolo di super amministratore della pagina LinkedIn, vedere la documentazione [di amministrazione della pagina LinkedIn.](https://www.linkedin.com/help/linkedin/answer/102672)
 
@@ -216,14 +216,14 @@ Determinare la pagina LinkedIn dell'istituto di istruzione. Trovare la pagina Li
 > [!NOTE]
 > La verifica da parte del super amministratore della pagina LinkedIn è necessaria per completare la connessione LinkedIn per Assistente alla carriera.
 
-   ![Verifica della pagina linkedin nel portale per sviluppatori linkedin](media/career-coach-linkedin-verification.png)
+   ![verifica della pagina linkedin nel portale per sviluppatori linkedin.](media/career-coach-linkedin-verification.png)
 
 #### <a name="course-catalog"></a>Catalogo dei corsi
 
 Il catalogo dei corsi rappresenta i corsi e le classi offerti agli studenti dall'istituto di istruzione.
 
 > [!NOTE]
-> Questa è una sezione obbligatoria: Assistente alla carriera non può essere abilitata senza un catalogo dei corsi.
+> Si tratta di una sezione obbligatoria, Assistente alla carriera non può essere abilitata senza un catalogo dei corsi.
 
 Questi corsi vengono usati all'interno dell'app in due aree:
 
@@ -267,7 +267,7 @@ L'inclusione dei campi consigliati migliora l'esperienza degli studenti grazie a
 
 4. Selezionare **Invia**.
 
-   ![sezione del catalogo dei corsi dell'app Career Coach](media/course-catalog.png)
+   ![la sezione del catalogo dei corsi dell'app Career Coach.](media/course-catalog.png)
 
 #### <a name="fields-of-study"></a>Campi di studio
 
@@ -290,7 +290,7 @@ La tabella seguente mostra gli elementi da includere nei campi di studio:
 ##### <a name="add-the-fields-of-study"></a>Aggiungere i campi di studio
 
 1. Accedere all'interfaccia **Teams di amministrazione.**
-1. Selezionare **Teams app Gestisci app** &gt;  &gt; **Assistente alla carriera** &gt; **Impostazioni** campi di &gt; **studio.**  
+1. Selezionare **Teams app Gestisci app** &gt;  &gt; **Assistente alla carriera** &gt; **Impostazioni** &gt; **campi di studio**.  
 
 2. Upload di studio in formato CSV.
 
@@ -312,14 +312,14 @@ Assistente alla carriera può essere personalizzato in modo da essere univoco pe
 
 ## <a name="making-career-coach-available-to-your-organization"></a>Rendere Assistente alla carriera disponibili per l'organizzazione
 
-Ora che Assistente alla carriera è stato configurato per l'organizzazione. Seguire questa procedura per assicurarsi che i Assistente alla carriera siano disponibili per l'organizzazione in Microsoft Teams.
+Ora che la Assistente alla carriera è stata configurata per l'organizzazione. Seguire questa procedura per assicurarsi che i Assistente alla carriera siano disponibili per l'organizzazione in Microsoft Teams.
 
 ### <a name="enable-the-app"></a>Abilitare l'app
 
 Dopo aver completato la configurazione, abilitare l'app per gli studenti e gli utenti con licenza in modo che abbia accesso a Assistente alla carriera.  
   
 > [!NOTE]
-> È necessario disporre delle autorizzazioni di Teams di amministratore globale o di amministratore.
+> È necessario avere autorizzazioni di amministratore globale o Teams di amministratore.
 
 1. Accedere all'interfaccia **Teams di amministrazione.**
 
@@ -358,7 +358,7 @@ L'aggiunta Assistente alla carriera rende l'app più accessibile e visibile per 
 5. Scegliere l'ordine in cui visualizzare l'app e selezionare **Salva.**
 
 > [!NOTE]
-> Gli studenti riceveranno una notifica in Microsoft Teams che Assistente alla carriera è stato aggiunto.
+> Gli studenti riceveranno una notifica Microsoft Teams che Assistente alla carriera è stato aggiunto.
 
 Riferimento [Gestire i criteri di configurazione delle app in Microsoft](/microsoftteams/teams-app-setup-policies) per altre informazioni.
 
@@ -372,7 +372,7 @@ Le risorse seguenti ti aiuteranno a pianificare l'app Assistente alla carriera a
 
 - [Panoramica dei team e i canali in Microsoft Teams](teams-channels-overview.md)
 
-- [Gestione delle app nell Microsoft Teams di amministrazione](manage-apps.md)
+- [Gestione delle app nell'Microsoft Teams di amministrazione](manage-apps.md)
 
 - [Kit di orientamento virtuale online](https://www.microsoft.com/education/remote-learning/virtual-orientation)
 

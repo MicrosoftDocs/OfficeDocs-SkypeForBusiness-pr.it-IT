@@ -18,13 +18,13 @@ f1.keywords:
 ms.custom:
 - ms.teamsadmincenter.meetingpolicies.contentsharing
 - seo-marvel-apr2020
-description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione del contenuto.
-ms.openlocfilehash: 8a44d7cf9d28f67d14d60388e729db0c060a625b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per la condivisione di contenuti.
+ms.openlocfilehash: f1fe77b2a8be552e2c156fda8d0b1bd89fa83d4c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592230"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726505"
 ---
 # <a name="meeting-policy-settings---content-sharing"></a>Impostazioni dei criteri di riunione - Condivisione di contenuti
 
@@ -66,11 +66,11 @@ Questa impostazione è un criterio per utente. Questa impostazione controlla se 
 
 Se questa impostazione è attivata per l'utente, nella barra superiore di una sessione di condivisione compare l'opzione **Concedi controllo**.
 
-![Screenshot che mostra l'opzione Concedi controllo](media/meeting-policies-give-control.png)
+![Screenshot che mostra l'opzione Assegna controllo.](media/meeting-policies-give-control.png)
 
 Se l'impostazione è disattivata per l'utente, l'opzione **Concedi controllo** non è disponibile.
 
-![Screenshot che mostra che l'opzione Concedi controllo non è disponibile](media/meeting-policies-give-control-not-available.png)
+![Screenshot che mostra che l'opzione Assegna controllo non è disponibile.](media/meeting-policies-give-control-not-available.png)
 
 Osserviamo l'esempio seguente.
 

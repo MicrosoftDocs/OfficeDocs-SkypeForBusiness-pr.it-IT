@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare un controller SBC (Session Border Controller) per servire più tenant per i partner Microsoft e/o i gestori PSTN.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 824b550200fcb04ecf26ec6f939515586ec64544
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bf047f458750c88baa4d3d04d712d56338cb0da3
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619492"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726875"
 ---
 # <a name="configure-a-session-border-controller-for-multiple-tenants"></a>Configurare un Session Border Controller per più tenant
 
@@ -58,9 +58,9 @@ Di seguito sono riportati i passaggi di implementazione tecnica per configurare 
 
 Per la procedura dettagliata su come distribuire e configurare SBC per uno scenario di hosting SBC, vedere la documentazione del fornitore di SBC.
 
-- **AudioCodes:** [Note di](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-Microsoft-Teams)configurazione del routing diretto , configurazione dello scenario di hosting SBC descritto in "Connessione di AudioCodes SBC a Microsoft Teams Nota di configurazione del modello di hosting del routing diretto". 
+- **AudioCodes:** Note sulla configurazione [del routing](https://www.audiocodes.com/solutions-products/products/products-for-microsoft-365/direct-routing-for-Microsoft-Teams)diretto , la configurazione dello scenario di hosting SBC descritto in "Connessione di AudioCodes SBC a Microsoft Teams nota di configurazione del modello di hosting del routing diretto". 
 - **Oracle:** [Note sulla configurazione del routing](https://www.oracle.com/technetwork/indexes/documentation/acme-packet-2228107.html)diretto , la configurazione dello scenario di hosting SBC è descritta nella sezione "Microsoft". 
-- **Comunicazioni sulla barra multifunzione:**  Fare riferimento alla Guida alla configurazione di [SBC Core Microsoft Teams](https://support.sonus.net/display/IOT/PBXs+-+SBC+5k7kSWe) Ribbon Communications per la documentazione su come configurare gli SBC ribbon Core Series e a questa pagina Procedure consigliate per la barra multifunzione - Configurazione dei gestori per [Microsoft Teams Direct Routing SBC Edge](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Direct+Routing+Carrier)
+- **Comunicazioni sulla barra multifunzione:**  Fare riferimento alla Guida alla configurazione di [SBC Core Microsoft Teams](https://support.sonus.net/display/IOT/PBXs+-+SBC+5k7kSWe) Ribbon Communications per la documentazione su come configurare gli SBC serie di componenti di base della barra multifunzione e a questa pagina Procedure consigliate per la barra multifunzione - Configurazione dei gestori per [Microsoft Teams Direct Routing SBC Edge](https://support.sonus.net/display/UXDOC81/Connect+SBC+Edge+to+Microsoft+Teams+Direct+Routing+to+Support+Direct+Routing+Carrier)
 - **TE-Systems (anynode):**  Registrarsi nella pagina [te-Systems Community](https://community.te-systems.de/) documentazione ed esempi su come configurare anynode SBC per più tenant.
 - **Metaswitch:**  Per la documentazione su come abilitare Perimeta SBC [per più tenant, registrarsi](https://manuals.metaswitch.com/MAN39555) nella pagina Community Metaswitch.
 
@@ -81,11 +81,11 @@ I sottodomini **DEVONO** corrispondere al nome FQDN del trunk che verrà configu
 
 Quando una chiamata arriva all'interfaccia Microsoft 365 o Office 365 Direct Routing, l'interfaccia usa l'intestazione Contatto per trovare il tenant in cui deve essere cercato l'utente. Routing diretto non usa la ricerca di numeri di telefono nell'invito, perché alcuni clienti potrebbero avere numeri non DID che possono sovrapporsi in diversi tenant. Di conseguenza, il nome FQDN nell'intestazione Contatto è necessario per identificare il tenant esatto in cui cercare l'utente in base al numero di telefono.
 
-*Per altre [informazioni sulla](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) creazione di nomi di dominio in Microsoft 365 o Office 365, vedere Ottenere assistenza Office 365 domini.*
+*Per altre [informazioni](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) sulla creazione di nomi di dominio in Microsoft 365 o Office 365, vedere Ottenere assistenza Office 365 domini.*
 
 Il diagramma seguente riepiloga i requisiti per il dominio di base, i sottodomini e l'intestazione Contatto.
 
-![Diagramma che mostra i requisiti per i domini e l'intestazione contatto](media/direct-routing-1-sbc-requirements.png)
+![Diagramma che mostra i requisiti per i domini e l'intestazione Contatto.](media/direct-routing-1-sbc-requirements.png)
 
 Il servizio SBC richiede un certificato per autenticare le connessioni. Per lo scenario di hosting SBC, il gestore deve richiedere un certificato con CN e/o SAN *\* .base_domain (ad esempio, \* .customers.adatum.biz).* Questo certificato può essere usato per autenticare le connessioni a più tenant serviti da un singolo SBC.
 
@@ -120,20 +120,20 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 ### <a name="add-a-base-domain-to-the-tenant-and-verify-it"></a>Aggiungere un dominio di base al tenant e verificarlo
 
-1. Nella finestra interfaccia di amministrazione di Microsoft 365, passare a **Configurazione**  >  **domini Aggiungi**  >  **dominio**.
+1. Nella finestra interfaccia di amministrazione di Microsoft 365, passare a **Configurazione**  >  **domini**  >  **Aggiungi dominio**.
 2. Nella casella **Immettere un dominio di cui** si è proprietari digitare l'FQDN del dominio di base. Nell'esempio seguente il dominio di base è *customers.adatum.biz*.
 
-    ![Screenshot che mostra la pagina Aggiungi un dominio](media/direct-routing-2-sbc-add-domain.png)
+    ![Screenshot che mostra la pagina Aggiungi un dominio.](media/direct-routing-2-sbc-add-domain.png)
 
 3. Fare clic su **Avanti**.
 4. Nell'esempio, il tenant ha già adatum.biz come nome di dominio verificato. La procedura guidata non chiederà ulteriori verifiche perché customers.adatum.biz è un sottodominio per il nome già registrato. Tuttavia, se si aggiunge un NOME FQDN che non è stato verificato in precedenza, sarà necessario eseguire il processo di verifica. Il processo di verifica è [descritto di seguito.](#add-a-subdomain-to-the-customer-tenant-and-verify-it)
 
-    ![Screenshot che mostra la conferma di un nome di dominio verificato](media/direct-routing-3-sbc-verify-domain.png)
+    ![Screenshot che mostra la conferma di un nome di dominio verificato.](media/direct-routing-3-sbc-verify-domain.png)
 
 5. Fare **clic** su Avanti e nella **pagina Aggiorna Impostazioni DNS** selezionare I record **DNS** verranno aggiunti manualmente e fare clic su **Avanti.**
 6. Nella pagina successiva deselezionare tutti i valori, a meno che non si voglia usare il nome di dominio per Exchange, SharePoint o Teams/Skype for Business, fare clic su Avanti e quindi su **Fine.** Verificare che il nuovo dominio sia in stato di completamento dell'installazione.
 
-    ![Screenshot che mostra i domini con lo stato dell'installazione completata](media/direct-routing-14-sbc-setup-complete.png)
+    ![Screenshot che mostra i domini con stato Di installazione completata.](media/direct-routing-14-sbc-setup-complete.png)
 
 ### <a name="activate-the-domain-name"></a>Attivare il nome di dominio
 
@@ -142,11 +142,11 @@ Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo alm
 > [!NOTE]
 > Il tenant carrier deve mantenere almeno una licenza Sistema telefonico assegnata al tenant per evitare la rimozione della Skype for Business configurazione. 
 
-*Per altre informazioni sull'aggiunta di utenti in Microsoft 365 [Office 365](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) o Office 365, vedere Ottenere assistenza per i domini di Microsoft 365 o Office 365 aziendali.*
+*Per altre [informazioni sull'aggiunta](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) di utenti Microsoft 365 in Microsoft 365 o Office 365, vedere Ottenere assistenza per Office 365 domini.*
 
 Ad esempio: test@customers.adatum.biz
 
-![Screenshot della pagina di attivazione del dominio di base](media/direct-routing-4-sbc-domain-activation.png)
+![Screenshot della pagina di attivazione del dominio di base.](media/direct-routing-4-sbc-domain-activation.png)
 
 ## <a name="register-a-subdomain-name-in-a-customer-tenant"></a>Registrare un nome di sottodominio in un tenant del cliente
 
@@ -166,39 +166,39 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 1. Nella finestra interfaccia di amministrazione di Microsoft 365, passare a **Configurazione**  >  **domini**  >  **Aggiungi dominio**.
 2. Nella casella **Immettere un dominio di cui** si è proprietari digitare il nome FQDN del sottodominio per il tenant. Nell'esempio seguente il sottodominio è sbc1.customers.adatum.biz.
 
-    ![Screenshot della pagina Aggiungi un dominio](media/direct-routing-5-sbc-add-customer-domain.png)
+    ![Screenshot della pagina Aggiungi un dominio.](media/direct-routing-5-sbc-add-customer-domain.png)
 
 3. Fare clic su **Avanti**.
 4. Il nome FQDN non è mai stato registrato nel tenant. Nel passaggio successivo sarà necessario verificare il dominio. Selezionare **Aggiungi un record TXT.** 
 
-    ![Screenshot della pagina Verifica dominio](media/direct-routing-6-sbc-verify-customer-domain.png)
+    ![Screenshot della pagina Verifica dominio.](media/direct-routing-6-sbc-verify-customer-domain.png)
 
 5. Fare **clic su** Avanti e prendere nota del valore TXT generato per verificare il nome di dominio.
 
-    ![Screenshot dei record di testo nella pagina Verifica dominio](media/direct-routing-7-sbc-verify-domain-txt.png)
+    ![Screenshot dei record di testo nella pagina Verifica dominio.](media/direct-routing-7-sbc-verify-domain-txt.png)
 
 6. Creare il record TXT con il valore del passaggio precedente nel provider di hosting DNS del gestore.
 
-    ![Screenshot che mostra la creazione del record TXT](media/direct-routing-8-sbc-txt-record.png)
+    ![Screenshot che mostra la creazione del record TXT.](media/direct-routing-8-sbc-txt-record.png)
 
     Per altre informazioni, vedere Creare [record DNS presso qualsiasi provider di hosting DNS.](https://support.office.com/article/create-dns-records-at-any-dns-hosting-provider-for-office-365-7b7b075d-79f9-4e37-8a9e-fb60c1d95166)
 
 7. Tornare alla pagina del cliente interfaccia di amministrazione di Microsoft 365 fare clic su **Verifica**. 
 8. Nella pagina successiva selezionare I record DNS verranno **aggiunti manualmente** e fare clic su **Avanti.**
 
-    ![Screenshot delle opzioni nella pagina Aggiorna impostazioni DNS](media/direct-routing-9-sbc-update-dns.png)
+    ![Screenshot delle opzioni nella pagina Aggiorna impostazioni DNS.](media/direct-routing-9-sbc-update-dns.png)
 
 9. Nella pagina **Scegliere i servizi online** deselezionare tutte le opzioni e fare clic su **Avanti.**
 
-    ![Screenshot della pagina Scegliere i servizi online](media/direct-routing-10-sbc-choose-services.png)
+    ![Screenshot della pagina Scegliere i servizi online.](media/direct-routing-10-sbc-choose-services.png)
 
 10. Fare **clic su** Fine nella pagina Aggiorna impostazioni **DNS.**
 
-    ![Screenshot della pagina Aggiorna impostazioni DNS](media/direct-routing-11-sbc-update-dns-finish.png)
+    ![Screenshot della pagina Aggiorna impostazioni DNS.](media/direct-routing-11-sbc-update-dns-finish.png)
 
 11. Verificare che lo stato sia **Installazione completata.** 
     
-    ![Screenshot della pagina che mostra lo stato dell'installazione completata](media/direct-routing-12-sbc-setup-complete.png)
+    ![Screenshot della pagina che mostra lo stato dell'installazione completata.](media/direct-routing-12-sbc-setup-complete.png)
     
 > [!NOTE]
 > L'URL di base e il sottodominio per il singolo client devono essere nello stesso tenant per consentire l'aggiunta di un trunk _di route_ diretto.
@@ -207,15 +207,15 @@ Per altre informazioni sui ruoli di amministratore e su come assegnare un ruolo 
 
 Dopo aver registrato un nome di dominio, è necessario attivarlo aggiungendo almeno un utente e assegnando un indirizzo SIP con la parte FQDN dell'indirizzo SIP corrispondente al sottodominio creato nel tenant del cliente. 
 
-*Per altre informazioni sull'aggiunta di utenti in Microsoft 365 [Office 365](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) o Office 365, vedere Ottenere assistenza per i domini di Microsoft 365 o Office 365 aziendali.*
+*Per altre [informazioni sull'aggiunta](https://support.office.com/article/Get-help-with-Office-365-domains-28343f3a-dcee-41b6-9b97-5b0f4999b7ef) di utenti Microsoft 365 in Microsoft 365 o Office 365, vedere Ottenere assistenza per Office 365 domini.*
 
 Ad esempio: test@sbc1.customers.adatum.biz
 
-![Screenshot della pagina Attivazione del sottodominio](media/direct-routing-13-sbc-activate-subdomain.png)
+![Screenshot della pagina Attivazione del sottodominio.](media/direct-routing-13-sbc-activate-subdomain.png)
 
 ### <a name="create-a-trunk-and-provision-users"></a>Creare un trunk ed eseguire il provisioning degli utenti
 
-Con il rilascio iniziale del routing diretto, Microsoft ha richiesto l'aggiunta di un trunk a ogni tenant servito (tenant del cliente) usando New-CSOnlinePSTNGateway.
+Con il rilascio iniziale di Routing diretto, Microsoft ha richiesto l'aggiunta di un trunk a ogni tenant servito (tenant del cliente) usando New-CSOnlinePSTNGateway.
 
 Tuttavia, questa operazione non si è rivelata ottimale per due motivi:
  
@@ -232,7 +232,7 @@ Sono state introdotte due nuove entità:
 
 **Logica di provisioning ed esempio**
 
--    I corrieri devono solo configurare e gestire un singolo trunk (carrier trunk nel dominio carrier), usando il comando Set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
+-    I corrieri devono configurare e gestire un solo trunk (carrier trunk nel dominio carrier), usando il comando Set-CSOnlinePSTNGateway. Nell'esempio precedente è adatum.biz;
 -    Nel tenant del cliente, il gestore deve solo aggiungere l'FQDN del trunk derivato ai criteri di routing vocale degli utenti. Non è necessario eseguire New-CSOnlinePSTNGateway per un trunk.
 -    Il trunk derivato, come suggerisce il nome, eredita o deriva tutti i parametri di configurazione dal trunk del vettore. Esempi:
 -    Customers.adatum.biz, ovvero il trunk del vettore che deve essere creato nel tenant del gestore.
@@ -241,7 +241,7 @@ Sono state introdotte due nuove entità:
 
 -    Tutte le modifiche apportate a un trunk del vettore (nel tenant del vettore) vengono applicate automaticamente ai trunk derivati. Ad esempio, i corrieri possono modificare una porta SIP nel trunk del vettore e questa modifica si applica a tutti i trunk derivati. Una nuova logica per configurare i trunk semplifica la gestione in quanto non è necessario passare a ogni tenant e modificare il parametro in ogni trunk.
 -    Le opzioni vengono inviate solo all'FQDN del trunk del gestore. Lo stato di integrità del trunk del vettore viene applicato a tutti i trunk derivati e viene usato per le decisioni di routing. Altre informazioni sulle [opzioni di instradamento diretto.](./direct-routing-monitor-and-troubleshoot.md)
--    Il corriere può drenare il bagagliaio del vettore e tutti i tronchi derivati verranno prosciugati. 
+-    Il corriere può svuotare il bagagliaio del vettore e tutti i tronchi derivati verranno prosciugati. 
  
 > [!NOTE]
 > Le regole di conversione dei numeri applicate al trunk del vettore non si applicano ai trunk derivati. Si tratta di un problema noto. Come soluzione alternativa, è necessario creare una regola di conversione dei numeri per il tenant di ogni cliente.

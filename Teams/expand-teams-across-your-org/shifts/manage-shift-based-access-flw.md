@@ -15,12 +15,12 @@ ms.collection:
 - Teams_ITAdmin_FLW
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e2bcffd23a8603acbb0954ddb6a24dad9000332
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: dd02c93639f0756982c35972e563e06cc41a0687
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584610"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726825"
 ---
 # <a name="manage-shift-based-access-for-frontline-workers-in-teams"></a>Gestire l'accesso a turni per i lavoratori in prima linea in Teams
 
@@ -31,9 +31,9 @@ ms.locfileid: "58584610"
 
 [!INCLUDE [preview-feature](../../includes/preview-feature.md)]
 
-La presenza in Microsoft Teams indica la disponibilità e lo stato correnti di un utente per gli altri utenti. La presenza di lavoratori in prima linea è spesso meno prevedibile rispetto ad altri dipendenti, in quanto le ore lavorative in genere non sono uguali ogni giorno. Gli amministratori possono configurare il Teams per visualizzare un set di stati di presenza basati su turni per i lavoratori in prima linea dell'organizzazione per indicare quando sono in turno o fuori turno.
+La presenza in Microsoft Teams indica la disponibilità e lo stato correnti di un utente per gli altri utenti. La presenza di lavoratori in prima linea è spesso meno prevedibile rispetto ad altri dipendenti, in quanto le ore lavorative non sono in genere uguali ogni giorno. Gli amministratori possono configurare il Teams per visualizzare un set di stati di presenza basati su turni per i lavoratori in prima linea dell'organizzazione per indicare quando sono in turno o fuori turno.
 
-Questi stati di presenza basati su turni Segno di spunta verde a tinta unita, indica Su turno In turno , Cerchio grigio con x, indica Disattivato turno Off turno , cerchio rosso a tinta unita, indica che Occupato è separato dal set predefinito di stati presenza &mdash; ![ ](../../media/flw-presence-on-shift.png)  ![ in ](../../media/flw-presence-off-shift.png)  ![ ](../../media/flw-presence-busy.png)  &mdash; Teams. [](../../presence-admins.md) Con questi due set di stati di presenza, è possibile configurare esperienze diverse per le persone dell'organizzazione in base al loro ruolo.
+Questi stati di presenza basati sul turno indicano un segno di spunta verde a tinta &mdash; ![ unita, che indica Il turno.](../../media/flw-presence-on-shift.png) **In turno**, ![ cerchio grigio con x, indica Turno disattivato.](../../media/flw-presence-off-shift.png) **Off shift**, cerchio rosso a tinta unita, indica che Occupato è separato dal set predefinito di stati presenza ![ ](../../media/flw-presence-busy.png)  &mdash; in Teams. [](../../presence-admins.md) Con questi due set di stati di presenza, è possibile configurare esperienze diverse per le persone dell'organizzazione in base al loro ruolo.
 
 Con l'accesso a turni, è possibile gestire l'accesso Teams quando i lavoratori in prima linea sono fuori turno. Ad esempio, è possibile impostare Teams visualizzare un messaggio che i lavoratori in prima linea devono confermare prima di poter usare Teams quando non sono in un turno programmato.  
 
@@ -41,9 +41,9 @@ Con l'accesso a turni, è possibile gestire l'accesso Teams quando i lavoratori 
 
 Ecco un esempio di come l'organizzazione può gestire l'accesso basato su turni.
 
-Nell'organizzazione sono presenti lavoratori in prima linea che devono essere pagati solo per le ore in cui lavorano in un turno programmato e approvato dal responsabile. Non devono essere retribuiti per il tempo trascorso al di fuori di un turno programmato, che include l'uso dell'app Teams lavoro. È stato configurato un messaggio personalizzato che indica che il tempo di lavoro in Teams quando si è fuori turno non viene conteggiato per le ore pagabili, che viene visualizzato quando i lavoratori in prima linea provano ad accedere Teams quando si è fuori turno. Se scelgono di usare Teams, fanno  clic su Accetto con la comprensione che non verranno pagati per questo periodo.
+Nell'organizzazione sono presenti lavoratori in prima linea che devono essere pagati solo per le ore in cui lavorano in un turno programmato e approvato dal responsabile. Non devono essere pagati per il tempo trascorso al di fuori di un turno programmato, che include l'uso dell'app Teams lavoro. È stato configurato un messaggio personalizzato che indica che il tempo lavorativo al Teams quando è fuori turno non viene conteggiato per le ore pagabili, che viene visualizzato quando i lavoratori in prima linea provano ad accedere Teams quando si è fuori turno. Se scelgono di usare Teams,  fanno clic su Accetto con la comprensione che non verranno pagati per questo periodo.
 
-Nell'organizzazione sono presenti anche information worker con stipendi e che non lavorano a turni. È possibile configurare gli information worker in modo che usino gli stati di presenza predefiniti in Teams, fornendo al contempo ai dipendenti in prima linea la presenza basata sul turno.
+Nell'organizzazione sono presenti anche information worker con stipendi e che non lavorano a turni. È possibile configurare gli information worker in modo che usino gli stati di presenza predefiniti in Teams i dipendenti in prima linea in base al turno.
 
 ## <a name="shift-based-presence-states"></a>Stati presenza basati sui turni
 
@@ -51,17 +51,17 @@ Ecco gli stati di presenza basati sui turni.
 
 |App configurata |Utente configurato  |Altre informazioni  |
 |---------|---------|---------|
-|![Segno di spunta verde a tinta unita, indica Al turno](../../media/flw-presence-on-shift.png) A turno     |         |Impostazione automatica all'inizio di un turno         |
+|![Segno di spunta verde a tinta unita, indica Al turno.](../../media/flw-presence-on-shift.png) A turno     |         |Impostazione automatica all'inizio di un turno         |
 |![Cerchio grigio con x, indica Spostamento disattivato](../../media/flw-presence-off-shift.png) Turno disattivato     |         |Impostazione automatica alla fine di un turno         |
-|![Cerchio rosso pieno, indica Non disponibile](../../media/flw-presence-busy.png) Non disponibile      | ![Cerchio rosso pieno, indica Non disponibile](../../media/flw-presence-busy.png) Non disponibile         |Imposta automaticamente. Può anche essere impostato manualmente quando il lavoratore in prima linea è in turno.|
+|![Cerchio rosso a tinta unita, indica Occupato.](../../media/flw-presence-busy.png) Non disponibile      | ![Cerchio rosso pieno, indica Non disponibile](../../media/flw-presence-busy.png) Non disponibile         |Imposta automaticamente. Può anche essere impostato manualmente quando il lavoratore in prima linea è in turno.|
 
 ## <a name="off-shift-access-to-teams"></a>Disattivare l'accesso a Teams
 
-Questa caratteristica consente di gestire l'accesso ai Teams quando i lavoratori in prima linea sono fuori turno. È possibile impostare Teams visualizzare un messaggio ai lavoratori in prima linea se accedono Teams fuori turno. I lavoratori in prima linea devono fare **clic su** Accetto per confermare il messaggio prima di poter usare Teams.
+Questa caratteristica consente di gestire l'accesso ai Teams quando i lavoratori in prima linea sono fuori turno. È possibile impostare Teams visualizzare un messaggio ai lavoratori in prima linea se accedono Teams fuori turno. I dipendenti in prima linea devono fare **clic su** Accetto per confermare il messaggio prima di poter usare Teams.
 
 È possibile usare il messaggio predefinito, scegliere tra un set di messaggi predefiniti o personalizzare il messaggio in modo da visualizzare il testo desiderato. Ecco il messaggio predefinito:
 
-![Screenshot del messaggio predefinito](../../media/shifts-presence-message.png)
+![Screenshot del messaggio predefinito.](../../media/shifts-presence-message.png)
 
 È anche possibile impostare la frequenza di visualizzazione del messaggio e impostare un periodo di tolleranza tra l'inizio del primo turno o l'ultimo turno e il momento in cui l'accesso a Teams è limitato.
 
@@ -107,7 +107,7 @@ In questo esempio viene creato un nuovo criterio denominato Off SHIFT Teams Acce
 
   "Il datore di lavoro non autorizza o approva l'uso della rete, delle applicazioni, dei sistemi o degli strumenti da parte di dipendenti non esenti o orari durante le ore non lavorative. Accettando, l'utente riconosce che l'uso Teams durante il turno non è autorizzato e non verrà risarcito". 
 
-L'utente può usare Teams turno di inalazione se accetta il messaggio e il periodo di tolleranza tra l'inizio del primo turno o l'ultimo turno e la data in cui l'accesso è limitato è di tre minuti.  
+L'utente può usare Teams turno di inalazione se accetta il messaggio e il periodo di tolleranza tra l'inizio del primo turno o l'ultimo turno e il momento in cui l'accesso è limitato è di tre minuti.  
 
 ```powershell
 New-CsTeamsShiftsPolicy -Identity "Off Shift Teams Access Message1" -EnableShiftPresence $true -ShiftNoticeFrequency always -ShiftNoticeMessageType Message1 -AccessType  UnrestrictedAccess_TeamsApp -AccessGracePeriodMinutes 3

@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: e69ac58c-e8fe-40bc-a4c8-f0a0190fbaa7
 description: Leggere questo argomento per esaminare le considerazioni sulla pianificazione per l'implementazione del bypass multimediale con Cloud Connector Edition versione 2.0 e successive. Per informazioni sulla distribuzione del bypass multimediale, vedere Deploy media bypass in Cloud Connector Edition.
-ms.openlocfilehash: 659b735502b6efaabd9167a4b0d820828232f5dd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 182defd3d1fb7acf1fb2ba6fcc4e15e88e24a82c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626408"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729745"
 ---
 # <a name="plan-for-media-bypass-in-cloud-connector-edition"></a>Pianificare il bypass multimediale in Cloud Connector Edition
  
@@ -37,19 +37,19 @@ Il bypass multimediale può migliorare la qualità vocale riducendo la latenza, 
 
 Mentre la segnalazione prende lo stesso percorso con o senza bypass multimediale, il flusso multimediale sarà diverso. I diagrammi seguenti mostrano i percorsi multimediali e di segnalazione nelle topologie con e senza bypass multimediale. 
   
-Ad esempio, nella topologia seguente, che non utilizza il bypass multimediale, un client Skype for Business esegue una chiamata PSTN a un numero esterno, la segnalazione SIP passa a Microsoft 365 o Office 365, che indirizza il traffico di segnalazione in base ai criteri vocali dell'utente finale. Per gli utenti di Cloud Connector, il criterio vocale indirizza il traffico di segnalazione al server perimetrale del connettore cloud, che quindi instrada il traffico di segnalazione a un SBC (Session Border Controller) PSTN o a un gateway tramite il Mediation Server cloud Connector. I flussi multimediali dal client Skype for Business al Mediation Server del connettore cloud e quindi al gateway o al servizio SBC, come illustrato nel diagramma seguente:
+Ad esempio, nella topologia seguente, che non utilizza il bypass multimediale, un client Skype for Business esegue una chiamata PSTN a un numero esterno, la segnalazione SIP passa a Microsoft 365 o Office 365, che indirizza il traffico di segnalazione in base ai criteri vocali dell'utente finale. Per gli utenti di Cloud Connector, il criterio vocale indirizza il traffico di segnalazione al server perimetrale del connettore cloud, che quindi instrada il traffico di segnalazione a un SBC (Session Border Controller) PSTN o a un gateway tramite il Mediation Server cloud Connector. I flussi multimediali dal client Skype for Business al Mediation Server cloud Connector e quindi al gateway o al servizio SBC, come illustrato nel diagramma seguente:
   
 **Percorsi multimediali e di segnalazione senza bypass multimediale**
 
-![segnalazione senza bypass multimediale](../../media/5cd7e3bf-2565-4bd9-ad5a-f03e13c01060.png)
+![segnalazione senza bypass multimediale.](../../media/5cd7e3bf-2565-4bd9-ad5a-f03e13c01060.png)
   
-Una chiamata in ingresso dalla rete PSTN utilizza lo stesso percorso di segnalazione nella direzione inversa. Per gli utenti interni, i supporti verranno comunque Skype for Business tra il client Skype for Business e cloud Connector Mediation Server e quindi il servizio SBC o il gateway.
+Una chiamata in ingresso dalla rete PSTN utilizza lo stesso percorso di segnalazione nella direzione inversa. Per gli utenti interni, i supporti verranno comunque in ultima analisi fluire tra il client di Skype for Business e cloud Connector Mediation Server e quindi il servizio SBC o il gateway.
   
-Nella topologia successiva, che utilizza il bypass multimediale, la segnalazione ha lo stesso percorso, ma i flussi multimediali direttamente tra il client Skype for Business e il gateway OSBC, come illustrato nel diagramma seguente:
+Nella topologia successiva, che utilizza il bypass multimediale, la segnalazione ha lo stesso percorso, ma il flusso multimediale avviene direttamente tra il client Skype for Business e il gateway OSBC, come illustrato nel diagramma seguente:
   
 **Percorsi multimediali e di segnalazione con bypass multimediale**
 
-![segnalazione con bypass multimediale](../../media/60400c38-4921-4964-89f2-5e53b68fb497.png)
+![segnalazione con Bypass multimediale.](../../media/60400c38-4921-4964-89f2-5e53b68fb497.png)
   
 ## <a name="multi-site-scenario-and-media-bypass"></a>Scenario multis sito e bypass multimediale
 
@@ -57,7 +57,7 @@ Il bypass multimediale è utile anche quando si desidera fornire servizi di tele
   
 **Applicazione multis sito**
 
-![Esempio di cloud connector multisito](../../media/ace8dc3c-1082-46a2-b8b4-98cbf678620e.png)
+![Esempio di cloud connector multisito.](../../media/ace8dc3c-1082-46a2-b8b4-98cbf678620e.png)
   
 1. Il traffico SIP passa dall'utente di Zurigo a Microsoft 365 o Office 365.
     
@@ -71,7 +71,7 @@ Il bypass multimediale è utile anche quando si desidera fornire servizi di tele
   
 Se un client si trova all'esterno della rete aziendale effettuando una chiamata in uscita, il traffico multimediale passa attraverso i server Perimetrali e Mediation Server di Cloud Connector e il collegamento WAN tra Zurigo e Amsterdam, come illustrato nel diagramma seguente:
   
-![Esempio di cloud connector multisito 2](../../media/ef95839c-4552-440e-9698-7615707a1b50.png)
+![Cloud Connector Multisite Example 2.](../../media/ef95839c-4552-440e-9698-7615707a1b50.png)
   
 ## <a name="supported-clients-for-media-bypass"></a>Client supportati per il bypass multimediale
 
@@ -82,11 +82,11 @@ Con la prima versione del bypass multimediale, l'unico client supportato è Skyp
   
 Per ulteriori informazioni sui canali di rilascio, vedere [Panoramica dei canali di aggiornamento per Microsoft 365 Apps for enterprise](https://support.office.com/article/Overview-of-update-channels-for-Office-365-ProPlus-9ccf0f13-28ff-4975-9bd2-7e4ea2fefef4?ui=en-US&amp;rs=en-US&amp;ad=US).
   
-Per la versione corrente dei client in canali diversi, vedere Informazioni sulla versione [per gli aggiornamenti Microsoft 365 Apps for enterprise](/officeupdates/release-notes-office365-proplus). 
+Per la versione corrente dei client in canali diversi, vedere Informazioni sulla versione per [gli aggiornamenti Microsoft 365 Apps for enterprise](/officeupdates/release-notes-office365-proplus). 
   
 ## <a name="cloud-connector-capacity-considerations-with-media-bypass"></a>Considerazioni sulla capacità del connettore cloud con bypass multimediale
 
-Senza bypass multimediale e a seconda dell'hardware, un dispositivo Cloud Connector può gestire da 50 a 500 chiamate simultanee che richiedono supporti per il viaggio attraverso un Mediation Server. Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition](./plan-skype-for-business-cloud-connector-edition.md). 
+Senza bypass multimediale e a seconda dell'hardware, un'appliance Cloud Connector può gestire da 50 a 500 chiamate simultanee che richiedono supporti per il viaggio attraverso un Mediation Server. Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector Edition](./plan-skype-for-business-cloud-connector-edition.md). 
   
 Con il bypass multimediale abilitato, i client interni nella versione supportata non utilizzano Mediation Server, pertanto il numero di client interni può aumentare in modo significativo. 
   
@@ -104,7 +104,7 @@ Per ulteriori informazioni, vedere [Piano per Skype for Business Cloud Connector
   
 Ad esempio, nel diagramma seguente, gli utenti europei devono essere ben connessi ai tre Session Border Controller (SBC) di Amsterdam, mentre gli utenti us west devono essere ben connessi ai due SBC di Seattle. Una connessione ben connessa significa che si trovano negli stessi siti di rete dei SBC o dei gateway oppure tramite collegamenti WAN con larghezza di banda appropriata.
   
-![Capacità del connettore cloud](../../media/efb2269b-d44f-474e-aea8-c5158e729cfe.png)
+![Capacità del connettore cloud.](../../media/efb2269b-d44f-474e-aea8-c5158e729cfe.png)
   
 > [!NOTE]
 > Se un utente di Zurigo si reca nell'ufficio di Seattle e si desidera utilizzare la rete interna per recapitare il traffico multimediale tra l'utente in viaggio e i gateway in Europa (anziché passare attraverso Internet), è necessario assicurarsi che l'ufficio di Seattle e l'ufficio di Amsterdam in cui si trovano i gateway o gli SBC europei siano idonei e connessi. 

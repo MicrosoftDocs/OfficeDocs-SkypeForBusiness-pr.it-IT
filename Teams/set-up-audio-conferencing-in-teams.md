@@ -23,12 +23,12 @@ ms.custom:
 - Audio Conferencing
 - LIL_Placement
 description: "Informazioni sulla configurazione del servizio di conferenza telefonica con accesso esterno o del servizio Audioconferenza per gli utenti dell'organizzazione che devono usare il telefono per partecipare alle conferenze telefoniche. "
-ms.openlocfilehash: 13cbbf8b8295886cec937091abd3b5a0d378f05e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bc8a29e5a312d4a5a77b98929330ee9770e5543c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615212"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729585"
 ---
 # <a name="set-up-audio-conferencing-for-microsoft-teams"></a>Configurare Audioconferenza per Microsoft Teams
 
@@ -53,7 +53,7 @@ Vai a [Disponibilità di audioconferenza e Piani di chiamata per Paese e area ge
     >[!NOTE] 
     > Il servizio Audioconferenza è incluso nelle licenze Office 365 Enterprise E5 e come componente aggiuntivo.
         
-2. Dopo aver acquistato le licenze per Audioconferenza, è necessario assegnarle agli utenti dell'organizzazione che intendono pianificare o coordinare riunioni. Vedere [Assegnare licenze](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) agli utenti di Microsoft 365 o Office 365 per le aziende acquistate alle persone dell'organizzazione che pianificano o conducono riunioni.
+2. Dopo aver acquistato le licenze per Audioconferenza, è necessario assegnarle agli utenti dell'organizzazione che intendono pianificare o coordinare riunioni. Vedere [Assegnare licenze agli utenti di Microsoft 365](https://support.office.com/article/997596b5-4173-4627-b915-36abac6786dc) o Office 365 per le aziende acquistate alle persone dell'organizzazione che pianificano o conducono riunioni.
     
 3. È inoltre consigliabile assegnare licenze di Credito per la comunicazione (non costano nulla) agli stessi utenti a cui sono state assegnate le licenze nel passo precedente. Per altre informazioni sulla configurazione di Credito per la comunicazione, vedere [Configurare Credito per la comunicazione per l'organizzazione](set-up-communications-credits-for-your-organization.md).
     
@@ -67,7 +67,7 @@ Non è possibile utilizzare numeri di telefono per gli utenti per l'Audioconfere
   
 - **Usare l'interfaccia di amministrazione di Microsoft Teams**. In alcuni paesi/aree geografiche è possibile ottenere i numeri di servizio per i bridge di conferenza tramite l'interfaccia di amministrazione di Microsoft Teams. Vedere [Recupero dei numeri di telefono del servizio](./getting-service-phone-numbers.md).
     
-- **Trasferire i numeri del servizio esistenti**. Per trasferire o trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico corrente Microsoft 365 o Office 365. Per ulteriori informazioni su come eseguire questa operazione, è possibile consultare [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
+- **Trasferire i numeri del servizio esistenti**. Per trasferire o trasferire i numeri esistenti dal provider di servizi corrente o dal gestore telefonico a Microsoft 365 o Office 365. Per ulteriori informazioni su come eseguire questa operazione, è possibile consultare [Trasferire numeri di telefono in Teams](phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md).  
   
 - **Usare un modulo di richiesta per nuovi numeri**. A seconda del paese/area geografica, talvolta non è possibile ottenere nuovi numeri di servizio tramite l'interfaccia di amministrazione di Microsoft Teams oppure sono necessari numeri di telefono o prefissi specifici. In questo caso è necessario scaricare un modulo di richiesta, compilarlo e inviarlo a Microsoft. Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md). 
     
@@ -78,7 +78,7 @@ Dopo aver ottenuto i numeri a pagamento e i numeri verdi per il bridge di confer
 
 Seguire i passaggi seguenti per assegnare un nuovo numero di telefono al bridge di audioconferenza.
 
-![Icona che mostra il logo di Skype for Business](media/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business:**
+![Icona che mostra il Skype for Business logo.](media/sfb-logo-30x30.png) **Usare l'interfaccia Skype for Business di amministrazione:**
 
  1. Passare all'**interfaccia di amministrazione di Microsoft 365** > **Interfacce di amministrazione** > **Teams** > **Portale legacy**.
  2. Selezionare **Vocale** > **Numeri telefonici**.
@@ -89,7 +89,7 @@ Per altri dettagli, vedere [Cambiare i numeri di telefono del bridge di audiocon
 ## <a name="step-5-set-the-default-and-alternate-languages-for-a-conferencing-bridge"></a>Passaggio 5: impostare le lingue predefinite e alternative per un bridge di audioconferenza
 <a name="__top"> </a> A questo punto, è necessario [impostare in Microsoft Teams le lingue dell'operatore automatico per Audioconferenza](set-auto-attendant-languages-for-audio-conferencing-in-teams.md) che verranno usate dall'operatore automatico dell'audioconferenza per salutare gli utenti che chiamano un numero di telefono per accedere ad Audioconferenza. 
 
-![Icona che mostra il logo di Skype for Business](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**:
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Uso dell'Microsoft Teams di amministrazione:**
 
 1. Nella dashboard passare a **Riunioni** > **Bridge di conferenza**.
 2. Selezionare il numero di telefono del bridge di conferenza, fare clic su **Modifica** e quindi fare clic sulla lingua predefinita.
@@ -99,7 +99,7 @@ Per altri dettagli, vedere [Cambiare i numeri di telefono del bridge di audiocon
     
 Dopo aver impostato il ponte per audioconferenza, verifica che le impostazioni predefinite, ad esempio le notifiche di ingresso e di uscita e la lunghezza del PIN siano quelle desiderate; se non lo sono, è possibile modificarle. 
 
-![Icona che mostra il logo di Skype for Business](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**:
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Uso dell'Microsoft Teams di amministrazione:**
 
 1. Nella dashboard passare a **Riunioni** > **Bridge di conferenza**.
 2. Selezionare **Impostazioni del bridge**. Verrà visualizzato il riquadro **Impostazioni ponte**. 
@@ -112,7 +112,7 @@ Dopo aver creato un ponte per Audioconferenza, è necessario impostare i numeri 
 
 È necessario eseguire questa operazione per tutti gli utenti dell'organizzazione che conducono o pianificano riunioni. 
 
-![Icona che mostra il logo di Skype for Business](media/teams-logo-30x30.png) **Usare l'interfaccia di amministrazione di Microsoft Teams**:
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Uso dell'Microsoft Teams di amministrazione:**
 
 1. Nella dashboard fare clic su **Utenti**, selezionare l'utente nell'elenco e quindi **Modifica**.
 2. Selezionare **Modifica** accanto ad **Audioconferenza** e quindi nel riquadro **Audioconferenza** scegliere un numero negli elenchi **Numero a pagamento** e **Numero verde**.

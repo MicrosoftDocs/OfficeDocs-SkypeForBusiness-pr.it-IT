@@ -19,22 +19,22 @@ appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
 description: Questo articolo descrive la funzionalità Microsoft Teams disponibile per gli utenti guest.
-ms.openlocfilehash: 2469fe840d09708187c47671335992021c4b60b0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2d8c3656abe6f1749251574ab01368a46984cee9
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58632140"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729615"
 ---
 # <a name="guest-experience-in-teams"></a>Esperienza guest in Teams
 
 Quando un utente guest è invitato a unirsi a un team, riceve un messaggio di posta elettronica di benvenuto. Questo messaggio include alcune informazioni sul team e su cosa aspettarsi ora che si è membri. L'utente guest deve accettare l'invito selezionando **Apri Microsoft Teams** nel messaggio di posta elettronica prima di poter accedere al team e ai relativi canali.
     
-![Screenshot che mostra un esempio di un messaggio di posta elettronica di benvenuto](media/guest-experience-image1.png)
+![Screenshot che mostra un esempio di messaggio di posta elettronica di benvenuto.](media/guest-experience-image1.png)
     
 Tutti i membri del team visualizzano un messaggio nel thread del canale che annuncia che il proprietario del team ha aggiunto un utente guest e fornisce il nome di tale utente. Tutti i membri del team possono identificare facilmente chi è un utente guest. Un tag nell'angolo in alto a destra del thread del canale indica il numero di utenti guest nel team e un'etichetta **(Guest)** viene visualizzata accanto al nome di ogni utente guest.
 
-![Screenshot che mostra il tag che indica il numero di utenti guest nel team](media/guest-experience-image2.png)
+![Screenshot che mostra il contrassegno che indica il numero di guest nel team.](media/guest-experience-image2.png)
 
 Guardare questi video sull'esperienza guest in Teams:
 - [Partecipare a un team come Guest](https://support.office.com/article/join-a-team-as-a-guest-928d1eef-61e2-49ec-b754-c2fe86b34824)

@@ -15,18 +15,18 @@ ms.localizationpriority: medium
 ms.assetid: 087ca1f2-2329-4fa1-b6bb-685f2f4ba296
 ROBOTS: NOINDEX, NOFOLLOW
 description: Fare clic con il Office server Web Apps e selezionare Nuovo Office Web Apps Server per aprire la procedura guidata.
-ms.openlocfilehash: 85a1c45aafdcbe4f0f052df5e5ad89d34618e8a0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fb63610d8f887011d77d90d6426cd2351bb73a63
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58593870"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729105"
 ---
 # <a name="office-web-apps-servers-scope-node"></a>Nodo di ambito di Office Online Server
 
 Fare clic con il **Office server Web Apps e** selezionare Nuovo Office Web Apps **Server** per aprire la procedura guidata.
 
-![Nodo di ambito dei server OfficeWebApps](../../../media/OfficeWebApps_Servers_Scope_Node.jpg)
+![Nodo di ambito dei server OfficeWebApps.](../../../media/OfficeWebApps_Servers_Scope_Node.jpg)
 
 - **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
 

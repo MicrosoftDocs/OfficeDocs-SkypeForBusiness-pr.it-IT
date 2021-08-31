@@ -1,5 +1,5 @@
 ---
-title: Integrare gli stakeholder | Skype for Business a Teams pianificazione dell'aggiornamento
+title: Integrare gli stakeholder | Skype for Business per Teams pianificazione dell'aggiornamento
 author: dstrome
 ms.author: dstrome
 manager: serdars
@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: Informazioni su come strutturare gli stakeholder dell'organizzazione per assicurarsi che l'Microsoft Teams l'aggiornamento sia riuscito.
+description: Informazioni su come strutturare gli stakeholder dell'organizzazione per assicurarsi che l'aggiornamento Microsoft Teams sia riuscito.
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -20,30 +20,30 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 21e08060c61e78919e514a099413f6d70380cf11
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 56a0c236b1fcbae2765c28ddcff424009b57b099
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58600921"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729441"
 ---
 # <a name="enlist-your-project-stakeholders"></a>Integrare gli stakeholder del progetto
 
-![Illustrazione che mostra lo stato degli stakeholder del percorso di aggiornamento](media/upgrade-banner-stakeholders.png "Fasi del percorso di aggiornamento, con particolare attenzione alla raccolta del team di stakeholder del progetto")
+![Illustrazione che mostra lo stato degli stakeholder del percorso di aggiornamento.](media/upgrade-banner-stakeholders.png "Fasi del percorso di aggiornamento, con particolare attenzione alla raccolta del team di stakeholder del progetto")
 
-Questo articolo fa parte della fase Project stakeholder del percorso di aggiornamento, la prima e più essenziale attività completata per il successo del progetto.
+Questo articolo fa parte della fase Project stakeholders del percorso di aggiornamento, la prima e più essenziale attività completata per il successo del progetto.
 
 Dall'implementazione dei risultati finali del progetto alla gestione della responsabilità, gli stakeholder sono fondamentali per il successo del progetto. È possibile assegnare due gruppi di stakeholder: (1) una coalizione di _sponsorizzazione_ che include sponsor dirigenti e di progetto che hanno un interesse e un'influenza sul successo del progetto e (2) il _team_ di progetto, costituito da persone responsabili della conformità tecnica e dell'utente, che completeranno le varie attività del piano di progetto. Il thread comune tra questi due gruppi è il _project manager,_ che lavora per assicurarsi che le attività di progetto siano completate in base alla programmazione e riporta lo stato del progetto alla lega.
 
 > [!Tip]
-> Prenditi del tempo per identificare lo sponsor esecutivo ideale, qualcuno che può aiutare a impostare il tono del tuo progetto, guida con l'esempio e ritieni responsabili gli altri. Dovrebbe trattarsi di un responsabile o un dirigente che abbia l'autorità per l'ambito e la visione del progetto. Dovrebbero anche essere il decisore finale per rimuovere i blocchi e risolvere i conflitti per mantenere il progetto nel tempo e nel preventivo.
+> Prenditi del tempo per identificare lo sponsor esecutivo ideale, qualcuno che può aiutare a impostare il tono del tuo progetto, guida con l'esempio e ritieni responsabili gli altri. Dovrebbe trattarsi di un responsabile o un dirigente che abbia l'autorità per l'ambito e la visione del progetto. Dovrebbero anche essere il decisore finale per rimuovere i blocchi e risolvere i conflitti per mantenere il progetto in tempo e nel preventivo.
 
 Facoltativamente, è possibile creare un comitato direttivo. A volte i progetti più grandi o complessi finiscono con "troppi cuochi in cucina", con conseguenti disconnessioni tra i gruppi di stakeholder. Per questi progetti, può essere necessario formare un comitato direttivo. Un comitato direttivo è responsabile della gestione delle decisioni, della supervisione strategica, del supporto delle iniziative del progetto e, se necessario, della rimozione dei blocchi. Per altre informazioni sull'implementazione di un comitato direttivo, vedere la guida [del comitato direttivo.](./envision-steering-committee-complete-guide.md)
 
 |&nbsp; |&nbsp; |
 |---|---|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali | <ul><li>Who le persone giuste per fungere da team degli stakeholder per questo progetto?</li></ul> |
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi | <ul><li>Valutare l'ambito del progetto e assegnare gli stakeholder pertinenti.</li><li>Usare la tabella seguente come linea guida, ma tenere presente che questo elenco non è all-inclusive.<br><strong>Suggerimento</strong><br>Creare una matrice [RACI](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix) (responsible-accountable-consulted-informed) per distinguere ulteriormente le persone che saranno ritenute responsabili da quelle che devono semplicemente essere tenute informate in una particolare area del progetto.</li> |
+| ![Icona che rappresenta i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali | <ul><li>Who le persone giuste per fungere da team degli stakeholder per questo progetto?</li></ul> |
+| ![Icona che illustra i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi | <ul><li>Valutare l'ambito del progetto e assegnare gli stakeholder pertinenti.</li><li>Usare la tabella seguente come linea guida, ma tenere presente che questo elenco non è all-inclusive.<br><strong>Suggerimento</strong><br>Creare una matrice [RACI](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix) (responsible-accountable-consulted-informed) per distinguere ulteriormente le persone che saranno ritenute responsabili da quelle che devono semplicemente essere tenute informate in una particolare area del progetto.</li> |
 | <li>Decidere se creare un comitato direttivo e assegnare i ruoli in base alle esigenze.</li></ul> | |
 
 | Ruoli | Responsabilità |
@@ -61,9 +61,9 @@ Facoltativamente, è possibile creare un comitato direttivo. A volte i progetti 
 | Lead comunicazioni sincrone | Possiede strumenti di presenza come chat, riunioni e chiamate |
 | Lead di collaborazione asincrona | Possiede strumenti asincroni come SharePoint, OneDrive e così via |
 | Cliente potenziale di telefonia | Fornisce informazioni approfondite sulla progettazione e l'implementazione della telefonia |
-| Proprietario del servizio/Campione della qualità | È proprietaria dell'Teams all-up, inclusa la qualità dell'esperienza utente |
+| Proprietario del servizio/Campione della qualità | Possiede il funzionamento di Teams all-up, inclusa la qualità dell'esperienza utente |
 | Lead per desktop e dispositivi | Fornisce input in client, dispositivi e app desktop |
-| Amministratore Pro it/tenant | Garantisce che le configurazioni di conformità e interfaccia di amministrazione di Microsoft 365 di rete siano in atto |
+| Amministratore Pro/Tenant | Garantisce la conformità della rete e interfaccia di amministrazione di Microsoft 365 di rete |
 | Lead del supporto tecnico/help desk | Gestisce la conformità del supporto tecnico |
 | Cliente potenziale di gestione delle modifiche | Supervisiona il programma di gestione e adozione delle modifiche degli utenti |
 | Cliente potenziale di marketing | Progetta e implementa campagne di comunicazione |

@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e8733dde289cfc595d8db7b56652cb28dcc646b8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c3c388ab19d74370612531e3ac998ff3e928e0d3
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589770"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726895"
 ---
 # <a name="create-a-custom-team-template-in-microsoft-teams"></a>Creare un modello di team personalizzato in Microsoft Teams
 
@@ -38,7 +38,7 @@ Per iniziare:
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Nel riquadro di spostamento sinistro espandere **Teams**  >  **Team**.
+2. Nel riquadro di spostamento sinistro **espandere** Teams  >  **Team**.
 
 3. Selezionare **Aggiungi**.
 
@@ -86,11 +86,11 @@ Per iniziare:
 
 3. Nella sezione **Aggiungere un'app per questo modello** aggiungere un'app Sito Web.
 
-    ![Opzione aggiungi un'app per questo modello](media/add-an-app-template.png)
+    ![aggiungere un'app per questo modello.](media/add-an-app-template.png)
 
 4. Selezionare l'icona di modifica e immettere l'URL desiderato.
 
-    ![aggiungere un URL dell'app](media/add-url-app-template.png)
+    ![aggiungere un URL dell'app.](media/add-url-app-template.png)
 
 5. Selezionare **Salva** per le modifiche dell'app a schede e quindi selezionare **Applica** per salvare le modifiche.
 
@@ -102,11 +102,11 @@ Per iniziare:
 
 Stiamo lavorando a una correzione per i futuri team creati da modelli personalizzati.
 
-**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di Teams pagina.
+**Problema:** quando si usa Teams nel browser, alcuni siti Web non supportano il rendering all'interno di una Teams pagina.
 
-![messaggio di errore del browser](media/browser-error-message.png)
+![messaggio di errore del browser.](media/browser-error-message.png)
 
-**Soluzione:** in caso di problemi di visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata o all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
+**Soluzione:** in caso di problemi con la visualizzazione del contenuto della scheda del sito Web, si verrà reindirizzati all'apertura della scheda in una pagina Web separata oppure all'apertura di Teams nell'app desktop per visualizzare l'app della scheda del sito Web.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

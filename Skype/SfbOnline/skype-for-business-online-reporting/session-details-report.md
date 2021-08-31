@@ -19,27 +19,27 @@ f1.keywords:
 ms.custom:
 - Reporting
 description: Il dashboard Report mostra la panoramica delle attività in Microsoft 365 o Office 365 prodotti dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto.
-ms.openlocfilehash: c369f93c126629673996aec44d1ce86f561c4947
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 30d6f28c193f303d4cbc21467fb05e260e75a595
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592920"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58726685"
 ---
 # <a name="session-details-report"></a>Report dettagli della sessione.
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Il **dashboard Report** mostra la panoramica delle attività in Microsoft 365 o Office 365 prodotti dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile usare il report **Skype for Business dettagli della** sessione per visualizzare i dettagli sulle esperienze di chiamata dei singoli utenti.
+Il **dashboard Report** mostra la panoramica delle attività nei prodotti Microsoft 365 o Office 365 dell'organizzazione. Ti permette di approfondire le analisi fino al livello dei report dei singoli prodotti per una panoramica più dettagliata delle attività di ciascun prodotto. Ad esempio, è possibile usare il report **Skype for Business dettagli della** sessione per visualizzare i dettagli sulle esperienze di chiamata dei singoli utenti.
   
 Per altri [report disponibili,](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) vedere Panoramica dei report.
   
-Questo report, insieme agli altri report Skype for Business report, consente di visualizzare dettagli sulle attività, inclusi i dettagli della sessione nell'intera organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni.](/microsoftteams/what-are-communications-credits)
+Questo report, insieme agli altri report Skype for Business report, consente di visualizzare dettagli sull'attività, inclusi i dettagli della sessione all'interno dell'organizzazione. Questi dettagli sono molto utili quando si analizzano, si pianificano e si prendono altre decisioni aziendali per l'organizzazione e per la configurazione dei [Crediti comunicazioni.](/microsoftteams/what-are-communications-credits)
   
 > [!NOTE]
 > È possibile visualizzare tutti i report Skype for Business quando si accede come amministratore al interfaccia di amministrazione di Microsoft 365. 
   
-## <a name="how-to-get-to-the-skype-for-business-session-details-report"></a>Come accedere al report dettagli Skype for Business sessione
+## <a name="how-to-get-to-the-skype-for-business-session-details-report"></a>Come accedere al report dettagli Skype for Business sessione di lavoro
 
 1. Passare all'interfaccia di amministrazione > **report**
     
@@ -51,9 +51,9 @@ Questo report, insieme agli altri report Skype for Business report, consente di 
     > Se il report non è presente nell'elenco, passare Skype for Business dettagli della sessione **report nell'interfaccia**  >    >  **di amministrazione.** 
   
     > [!IMPORTANT]
-    > A seconda dell'Microsoft 365 o Office 365 abbonamento, è possibile che non siano visualizzati tutti i prodotti e i report visualizzati. 
+    > A seconda dell Microsoft 365 o Office 365 abbonamento, è possibile che non siano visualizzati tutti i prodotti e i report visualizzati qui. 
   
-## <a name="interpret-the-skype-for-business-session-details-report"></a>Interpretare il report Skype for Business dettagli sessione
+## <a name="interpret-the-skype-for-business-session-details-report"></a>Interpretare il report dettagli Skype for Business sessione di lavoro
 
 È possibile visualizzare i dettagli della sessione Skype for Business utente esaminando ognuna delle colonne visualizzate.
   
@@ -62,13 +62,13 @@ Questo è l'aspetto del report.
 ![Skype for Business Dashboard Report dettagli sessione.](../images/3d87ab39-6eaa-46b5-b5f9-7f54dc987ae0.png)
   
 ***
-![Numero 1](../images/sfbcallout1.png)<br/>**La ricerca utente per alias** consente di cercare un singolo utente e di visualizzare tutti i dettagli della sessione dell'utente nella tabella seguente. 
+![Numero 1.](../images/sfbcallout1.png)<br/>**La ricerca utente per alias** consente di cercare un singolo utente e di visualizzare tutti i dettagli della sessione dell'utente nella tabella seguente. 
 ***
-![Numero 2](../images/sfbcallout2.png)<br/>**Immetti da data ora** consente di inserire la data di inizio. È possibile usare il calendario per selezionare la data o immettere la data manualmente. Questo campo deve essere popolato.
+![Numero 2.](../images/sfbcallout2.png)<br/>**Immetti da data ora** consente di inserire la data di inizio. È possibile usare il calendario per selezionare la data o immettere la data manualmente. Questo campo deve essere popolato.
 ***
-![Numero 3](../images/sfbcallout3.png)<br/>**Immettere l'ora di** data consente di inserire la data di fine. È possibile usare il calendario per selezionare la data o immettere la data manualmente. Se non è impostata alcuna data di fine, il valore predefinito è 30 giorni dalla data di inizio.
+![Numero 3.](../images/sfbcallout3.png)<br/>**Immettere l'ora di** data consente di inserire la data di fine. È possibile usare il calendario per selezionare la data o immettere la data manualmente. Se non è impostata alcuna data di fine, il valore predefinito è 30 giorni dalla data di inizio.
 ***
-![Numero 4](../images/sfbcallout4.png)<br/>La tabella mostra una suddivisione di tutti i dettagli della sessione per utente. Mostra tutti gli utenti a cui sono Skype for Business e le relative informazioni sulla sessione. È possibile aggiungere/rimuovere colonne dalla tabella. <br/><br/>La tabella contiene le colonne seguenti per ogni sessione:
+![Numero 4.](../images/sfbcallout4.png)<br/>La tabella mostra una suddivisione di tutti i dettagli della sessione per utente. Mostra tutti gli utenti a cui sono Skype for Business e le relative informazioni sulla sessione. È possibile aggiungere/rimuovere colonne dalla tabella. <br/><br/>La tabella contiene le colonne seguenti per ogni sessione:
 *    **ID finestra di** dialogo è l'ID per l'identificatore univoco della sessione SIP.
 *    **La descrizione dei** tipi di elementi multimediali descrive se la sessione è una conferenza telefonica o una sessione P2P e il tipo di supporto usato (Audio/Video/Condivisione applicazioni).
 *    **L'ora** di inizio è l'ora di avvio della sessione.
@@ -98,9 +98,9 @@ Per ogni sessione è disponibile una tabella secondaria con dati diversi a secon
 *    La scheda TRACEROUTES mostra gli hop di rete raccolti tramite traceroute durante la sessione. Il percorso multimediale effettivo usato per la sessione può variare e questi dati sono disponibili solo quando nella sessione è presente l'audio.
 *    La scheda FEEDBACKREPORTS mostra tutti i dati di fine del sondaggio di chiamata forniti dagli utenti nella sessione.
 ***
-![Numero 5](../images/sfbcallout5.png)<br/>Fare clic per trascinare una colonna fino a **Per raggruppare per una specifica colonna, trascinare qui l'intestazione di colonna** se si desidera creare una visualizzazione che raggruppi tutti i dati in una o più colonne. 
+![Numero 5.](../images/sfbcallout5.png)<br/>Fare clic per trascinare una colonna fino a **Per raggruppare per una specifica colonna, trascinare qui l'intestazione di colonna** se si desidera creare una visualizzazione che raggruppi tutti i dati in una o più colonne. 
 ***
-![Numero 6](../images/sfbcallout6.png)<br/>È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic sul collegamento **Esporta in Excel**. <br/><br/> Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  
+![Numero 6.](../images/sfbcallout6.png)<br/>È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic sul collegamento **Esporta in Excel**. <br/><br/> Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.  
    
 ## <a name="want-to-see-other-skype-for-business-reports"></a>Per consultare altri report di Skype for Business
 
@@ -118,7 +118,7 @@ Per ogni sessione è disponibile una tabella secondaria con dati diversi a secon
 
 - [Skype per gli utenti aziendali bloccati report](users-blocked-report.md) - Permette di consultare gli utenti dell'organizzazione a cui è impedito effettuare chiamate.
 
-- Skype for Business pool di minuti [PSTN](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
+- [Skype for Business pool di minuti PSTN](pstn-minute-pools-report.md) è possibile visualizzare il numero di minuti consumati durante il mese corrente all'interno dell'organizzazione.
     
 ## <a name="related-topics"></a>Argomenti correlati
 [Report attività nell'interfaccia di amministrazione](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263)

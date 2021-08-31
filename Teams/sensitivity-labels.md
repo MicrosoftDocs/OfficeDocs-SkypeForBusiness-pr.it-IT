@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare le etichette di riservatezza per proteggere i team in Microsoft Teams.
-ms.openlocfilehash: d00ebe1861596ddb41e852c7e8fe6360df024ab7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e4f6f3b790bb84b4d628760548b6ab1115f6326d
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58621958"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729595"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di riservatezza per Microsoft Teams
 
@@ -53,22 +53,22 @@ Ad esempio, è possibile creare e pubblicare un'etichetta di riservatezza denomi
 
 Quando un utente crea un nuovo  team e seleziona l'etichetta Riservato, l'unica opzione di privacy disponibile per l'utente è **Privato.** Altre opzioni di privacy, ad esempio Pubblico e A livello di organizzazione, non sono disponibili per l'utente:
 
-![Screenshot dell'etichetta riservatezza](media/sensitivity-labels-confidential-example.png)
+![Screenshot dell'etichetta riservatezza.](media/sensitivity-labels-confidential-example.png)
 
 Analogamente, si crea e si pubblica un'etichetta di riservatezza denominata "Generale" con l'opzione di privacy dell'etichetta configurata come **Pubblico.** Quando un utente crea un nuovo team, può creare team pubblici o a livello di organizzazione solo quando seleziona questa etichetta:
 
-![Screenshot dell'etichetta di riservatezza Generale](media/sensitivity-labels-general-example.png)
+![Screenshot dell'etichetta di riservatezza Generale.](media/sensitivity-labels-general-example.png)
 
 Quando il team viene creato, l'etichetta di riservatezza è visibile nell'angolo in alto a destra dei canali del team. 
 
 > [!NOTE]
 > Se si usano etichette gerarchiche padre-figlio, ad esempio "Riservato\Finanze", nell'intestazione del canale verrà visualizzata solo l'etichetta padre.
 
-![Screenshot dell'etichetta di riservatezza nel canale del team](media/sensitivity-labels-channel.png)
+![Screenshot dell'etichetta di riservatezza nel canale del team.](media/sensitivity-labels-channel.png)
 
 Il proprietario di un team può modificare l'etichetta di riservatezza e l'impostazione della privacy del team in qualsiasi momento andando al team e quindi facendo clic **su Modifica team.**
 
-![Screenshot dell'etichetta di riservatezza nelle proprietà del team](media/sensitivity-labels-edit-team.png)
+![Screenshot dell'etichetta di riservatezza nelle proprietà del team.](media/sensitivity-labels-edit-team.png)
 
 ### <a name="control-guest-access-to-teams"></a>Controllare l'accesso guest ai team
 
@@ -90,11 +90,11 @@ Prima di usare le etichette di riservatezza per Teams, tenere presenti le limita
 
 - **Le etichette di riservatezza non sono supportate dalle API Teams Graph, dai cmdlet di PowerShell e dai modelli**
     
-    Gli utenti non saranno in grado di specificare le etichette di riservatezza durante la creazione di team direttamente tramite api Teams Graph, cmdlet di PowerShell Teams e modelli Teams utenti. Tuttavia, i Graph moderni e i cmdlet di PowerShell consentono la creazione di gruppi con etichette. In questo modo gli utenti possono prima creare gruppi con etichette usando le API di Graph o i cmdlet di PowerShell e quindi convertire questi gruppi in Teams.
+    Gli utenti non saranno in grado di specificare le etichette di riservatezza durante la creazione di team direttamente tramite api Teams Graph, cmdlet di PowerShell Teams e modelli di Teams. Tuttavia, i Graph moderni e i cmdlet di PowerShell consentono la creazione di gruppi con etichette. In questo modo gli utenti possono prima creare gruppi con etichette usando le API Graph o i cmdlet di PowerShell e quindi convertire questi gruppi in Teams.
 
 - **Supporto per i canali privati**
     
-    I canali privati creati in un team ereditano l'etichetta di riservatezza applicata a un team. La stessa etichetta viene applicata automaticamente nella raccolta siti SharePoint per il canale privato.
+    I canali privati creati in un team ereditano l'etichetta di riservatezza applicata a un team. La stessa etichetta viene applicata automaticamente nella raccolta SharePoint per il canale privato.
     
     Tuttavia, se un utente modifica direttamente l'etichetta di riservatezza in un sito di SharePoint per un canale privato, la modifica dell'etichetta non viene riflessa nel client Teams. In questo scenario, gli utenti continuano a vedere l'etichetta di riservatezza originale applicata al team nell'intestazione del canale privato.
 
@@ -102,4 +102,4 @@ Prima di usare le etichette di riservatezza per Teams, tenere presenti le limita
 
 Seguire le istruzioni della documentazione Microsoft 365 per creare e configurare etichette di riservatezza per Teams: 
 
-- [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, Microsoft 365 gruppi e SharePoint siti.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- Usare le etichette di riservatezza per proteggere [il contenuto in Microsoft Teams, Microsoft 365 gruppi e SharePoint siti.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
