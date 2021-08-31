@@ -20,13 +20,13 @@ f1.keywords:
 ms.custom:
 - Setup
 - ms.lync.lac.TenantInMigration
-description: "Informazioni su cosa è possibile e non si può usare nell'interfaccia di amministrazione Skype for Business e su altre funzionalità durante la migrazione del servizio a un altro data center Microsoft. "
-ms.openlocfilehash: e131e3c1013b496a6e3ad8581832c628ee2057ce
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Informazioni su cosa è possibile e non si può usare nell'interfaccia di amministrazione di Skype for Business e altre caratteristiche durante la migrazione del servizio a un altro data center Microsoft. "
+ms.openlocfilehash: 81badc1ab12a767ab106222ebf28fff4c54867e6
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58581960"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731695"
 ---
 # <a name="why-cant-i-use-the-skype-for-business-online-admin-center-right-now"></a>Perché non è possibile usare l'interfaccia di amministrazione di Skype for Business Online in questo momento?
 
@@ -52,9 +52,9 @@ Prima di tutto, diamo un'interruzione di alcuni termini.
     
 - **ID correlazione** È possibile che sia stato visualizzato nell'elenco del messaggio da cui si è appena arrivati. Queste informazioni vengono usate dai tecnici del supporto tecnico Microsoft per facilitare la risoluzione di un errore. Se si contatta il supporto Tecnico Microsoft, potrebbe essere richiesto l'ID di correlazione.
     
-Questo significa che stiamo spostando tutti gli utenti e le impostazioni dei servizi di Skype for Business Online in un'altra posizione più vicina a te. Quanto più vicino è meglio è. La buona notizia è che dopo questo breve periodo di tempo, il servizio Skype for Business Online migliorerà.
+Questo significa che stiamo spostando tutti gli utenti e le impostazioni dei servizi di Skype for Business Online in un'altra posizione più vicina. Quanto più vicino è meglio è. La buona notizia è che dopo questo breve periodo di tempo, il servizio Skype for Business online migliorerà.
   
-![Migrazione dei servizi in Microsoft 365 o Office 365](../images/77502071-36fe-4833-a5ff-3b9ca7676542.png)
+![Migrazione dei servizi in Microsoft 365 o Office 365.](../images/77502071-36fe-4833-a5ff-3b9ca7676542.png)
   
 ## <a name="what-skype-for-business-online-features-will-still-work"></a>Quali Skype for Business funzionalità online saranno ancora disponibili?
 
@@ -66,7 +66,7 @@ Anche se non sarà possibile accedere all'interfaccia di amministrazione di Skyp
     
 ## <a name="can-i-get-other-work-done"></a>È possibile eseguire altre operazioni?
 
-Certo. Durante la migrazione del servizio Skype for Business Online, è comunque possibile usare le altre centri di amministrazione in Microsoft 365, ad esempio le Microsoft 365 e le Exchange di amministrazione. Tuttavia, insieme all'interfaccia di amministrazione di Skype for Business Online, non sarà possibile usare i cmdlet remoti di PowerShell di Skype for Business Online durante la migrazione. 
+Certo. Durante la migrazione del servizio Skype for Business Online, è comunque possibile usare le altre interfaccia di amministrazione in Microsoft 365, ad esempio le Microsoft 365 e le Exchange di amministrazione. Tuttavia, insieme all'interfaccia di amministrazione di Skype for Business Online, non sarà possibile usare i cmdlet remoti di PowerShell di Skype for Business Online durante la migrazione. 
   
 ## <a name="related-topics"></a>Argomenti correlati
 [Configurare Skype for Business online](set-up-skype-for-business-online.md)
