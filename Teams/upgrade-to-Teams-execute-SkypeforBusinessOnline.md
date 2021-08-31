@@ -20,16 +20,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cf9563a38a299ba4de56f309776bc6f01a8e82ac
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8bb2924dfe6bab5afedda2b02b1027de057c9e86
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58604276"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733935"
 ---
 # <a name="upgrade-from-skype-for-business-online-to-teams"></a>Eseguire l'aggiornamento da Skype for Business Online a Teams
 
-![Diagramma del percorso di aggiornamento, enfatizzando la distribuzione e l'implementazione](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di distribuzione e implementazione")
+![Diagramma del percorso di aggiornamento, enfatizzando la distribuzione e l'implementazione.](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di distribuzione e implementazione")
 
 Questo articolo fa parte della fase di distribuzione e implementazione del percorso di aggiornamento. Prima di procedere, verificare di aver completato le attività seguenti:
 
@@ -41,10 +41,10 @@ Questo articolo fa parte della fase di distribuzione e implementazione del perco
 - [Preparare l'organizzazione](./upgrade-prepare-organization.md)
 - [Ha condotto un progetto pilota](./pilot-essentials.md)
 
-Seguire le indicazioni di questo articolo se è stata distribuita completamente Skype for Business Online e si vogliono aggiornare gli utenti da Skype for Business a Teams. È possibile aggiornare gli utenti in modo selettivo o all-in, in base al percorso di aggiornamento scelto dall'organizzazione, assegnando la modalità di coesistenza e aggiornamento appropriata agli utenti.
+Seguire le istruzioni di questo articolo se è stata distribuita completamente Skype for Business Online e si vogliono aggiornare gli utenti da Skype for Business a Teams. È possibile aggiornare gli utenti in modo selettivo o all-in, in base al percorso di aggiornamento scelto dall'organizzazione, assegnando la modalità di coesistenza e aggiornamento appropriata agli utenti.
 
 > [!IMPORTANT]
-> Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per ottimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, è importante iniziare il viaggio verso Microsoft Teams oggi. Tenere presente che un aggiornamento riuscito allinea la conformità tecnica e quella dell'utente, quindi assicurarsi di usare le indicazioni riportate di seguito mentre si esplora il percorso verso Microsoft Teams.
+> Skype for Business Online verrà ritirato il 31 luglio 2021 e non sarà più accessibile o supportato. Per massimizzare la realizzazione dei vantaggi e garantire che l'organizzazione abbia il tempo necessario per implementare l'aggiornamento, ti consigliamo di iniziare il tuo viaggio verso Microsoft Teams oggi. Tenere presente che un aggiornamento riuscito allinea la preparazione tecnica e quella dell'utente, quindi assicurarsi di usare le indicazioni riportate di seguito mentre ci si sposta verso Microsoft Teams.
 
 ## <a name="assign-the-coexistence-and-upgrade-mode"></a>Assegnare la modalità di coesistenza e aggiornamento
 
@@ -58,8 +58,8 @@ Seguire questa procedura per aggiornare tutti gli utenti alla Teams contemporane
 
 ### <a name="step-1-notify-the-users-of-the-change-optional"></a>Passaggio 1: Informare gli utenti della modifica (facoltativo)
 
-1. Nell'Microsoft Teams di amministrazione selezionare **Impostazioni** a livello di organizzazione Teams  >  **aggiornamento.**
-2. In **Modalità di coesistenza** modificare l'opzione Notifica agli utenti **Skype for Business che** è disponibile un aggiornamento a Teams su **Attiva**.
+1. Nell'Microsoft Teams di amministrazione selezionare **Impostazioni a** livello di organizzazione Teams  >  **aggiornamento.**
+2. In **Modalità di coesistenza** modificare l'opzione Notifica Skype for Business **utenti che** è disponibile un aggiornamento a Teams su **Attiva**.
 
 ### <a name="step-2-set-the-coexistence-mode-to-teamsonly-for-the-organization"></a>Passaggio 2: Impostare la modalità di coesistenza su TeamsOnly per l'organizzazione
 
@@ -76,7 +76,7 @@ Spesso le organizzazioni possono scegliere di aggiornare le proprie organizzazio
 
 ### <a name="step-2-set-notification-for-the-users-in-the-current-upgrade-wave-optional"></a>Passaggio 2: Impostare la notifica per gli utenti nell'ondata di aggiornamento corrente (facoltativo)
 
-Se si usa l Microsoft Teams di amministrazione di TeamsUpgradePolicy, è possibile configurare TeamsUpgradePolicy per un massimo di 20 utenti contemporaneamente:
+Se si usa l Microsoft Teams di amministrazione, è possibile configurare TeamsUpgradePolicy per un massimo di 20 utenti contemporaneamente:
 1. Nell'Microsoft Teams di amministrazione selezionare **Utenti** e trovare e selezionare la casella di controllo per un massimo di 20 utenti da aggiornare. 
 2. Selezionare **Modifica impostazioni** nell'angolo in alto a sinistra della visualizzazione elenco. 
 3. Nel riquadro **Modifica impostazioni a** destra, in aggiornamento Teams , impostare Notifica all Skype for Business'utente su **Attivata**.   Nota: se il valore della modalità di coesistenza è "Usa impostazioni a livello di organizzazione", questa opzione non verrà visualizzata, quindi sarà necessario prima impostare esplicitamente la modalità di coesistenza per questi utenti su qualsiasi valore predefinito sia per l'organizzazione.
@@ -85,28 +85,28 @@ In alternativa, può risultare più facile abilitare le notifiche per gruppi di 
 
 ### <a name="step-3-set-the-coexistence-mode-for-users-to-teams-only"></a>Passaggio 3: Impostare la modalità di coesistenza per gli utenti Teams solo
 
-Quando si è pronti per aggiornare gli utenti nell'ondata corrente per usare Teams come unica applicazione, impostare la modalità di coesistenza per gli utenti su Teams solo.
+Quando si è pronti per aggiornare gli utenti nell'ondata corrente per usare Teams come unica applicazione, impostare la modalità di coesistenza per gli utenti su Solo Teams utenti.
 
-Se si usa l Microsoft Teams di amministrazione di TeamsUpgradePolicy, è possibile configurare TeamsUpgradePolicy per un massimo di 20 utenti contemporaneamente:
+Se si usa l Microsoft Teams di amministrazione, è possibile configurare TeamsUpgradePolicy per un massimo di 20 utenti contemporaneamente:
 1. Nell'Microsoft Teams di amministrazione selezionare **Utenti** e quindi selezionare la casella di controllo per un massimo di 20 utenti.
 2. Selezionare **Modifica impostazioni** nell'angolo in alto a sinistra della visualizzazione elenco.
-3. Nel riquadro **Modifica impostazioni** a destra, in Teams **di** aggiornamento, impostare la modalità di coesistenza su **Teams solo** nell'elenco a discesa.
+3. Nel riquadro **Modifica impostazioni** a  destra, in Teams di aggiornamento, impostare la modalità di coesistenza su **Teams Solo** nell'elenco a discesa.
 
 In alternativa, può risultare più facile aggiornare gruppi di utenti contemporaneamente usando PowerShell. 
 
 ### <a name="step-4-repeat-steps-1-3-for-successive-waves-of-users"></a>Passaggio 4: Ripetere i passaggi da 1 a 3 per le successive ondate di utenti
 
-Quando si convalida l'aggiornamento alla modalità solo Teams e si è pronti per l'espansione, ripetere i passaggi precedenti per applicare TeamsOnly a più utenti.  
+Quando si convalida l'aggiornamento alla modalità solo Teams e si è pronti per l'espansione, ripetere i passaggi precedenti per applicare TeamsOnly ad altri utenti.  
 
 
-## <a name="phone-system-and-pstn-connectivity-options"></a>Sistema telefonico e connettività PSTN
+## <a name="phone-system-and-pstn-connectivity-options"></a>Sistema telefonico di connettività PSTN
 
 Sistema telefonico con Teams è supportato dopo che l'utente è in modalità TeamsOnly. Se l'utente è in modalità Isole, Sistema telefonico è supportato solo con Skype for Business.  
 
 ### <a name="pstn-connectivity-options"></a>Opzioni di connettività PSTN
 
-Quando si valutano le opzioni di connettività PSTN (Public Switched Telephone Network), è possibile passare dalla modalità Skype for Business Online alla modalità TeamsOnly in due scenari:
+Quando si valutano le opzioni di connettività PSTN (Public Switched Telephone Network), è possibile passare dalla modalità Skype for Business Online alla modalità TeamsOnly:
 
 - Un utente in Skype for Business Online, con un piano per chiamate Microsoft. Al momento dell'aggiornamento, questo utente continuerà a avere un piano Per chiamate Microsoft. Questo è lo scenario più semplice che richiede solo un paio di passaggi. Per altre informazioni, vedere [From Skype for Business Online with Microsoft Calling Plans](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-microsoft-calling-plans).
 
-- Un utente in Skype for Business Online, con funzionalità vocali locali tramite Skype for Business locale o Cloud Connector Edition. L'aggiornamento dell'utente a Teams deve essere coordinato con la migrazione dell'utente al routing diretto per assicurarsi che l'utente TeamsOnly abbia la funzionalità PSTN.  Per altre informazioni, vedere From Skype for Business Online con voce [locale.](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-on-premises-voice)
+- Un utente in Skype for Business Online, con funzionalità vocali locali tramite Skype for Business locale o Cloud Connector Edition. L'aggiornamento dell'utente Teams deve essere coordinato con la migrazione dell'utente al routing diretto per assicurarsi che l'utente TeamsOnly abbia la funzionalità PSTN.  Per altre informazioni, vedere From Skype for Business Online con voce [locale.](upgrade-to-teams-on-prem-pstn-considerations.md#from-skype-for-business-online-with-on-premises-voice)

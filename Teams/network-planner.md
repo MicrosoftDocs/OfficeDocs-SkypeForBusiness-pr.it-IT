@@ -22,18 +22,18 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 55fc461a2dd005d454a2b964bb3774c5ac17dbc1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 08884e7a8cf4aaebf7f2063cec0e80fcf5619ced
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594610"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731315"
 ---
 # <a name="use-the-network-planner-for-microsoft-teams"></a>Usare Pianificazione reti per Microsoft Teams
 
 Network Planner è un nuovo strumento disponibile nell'Teams di amministrazione. È possibile trovare questo sito in **Pianificazione**  >  **della rete.** In pochi passaggi, Network Planner consente di determinare e organizzare i requisiti di rete per la connessione Microsoft Teams utenti all'interno dell'organizzazione. Quando si specificano i dettagli della rete e l'uso di Teams, Network Planner calcola i requisiti di rete per la distribuzione di Teams e Cloud Voice nei luoghi fisici dell'organizzazione.
 
-![Screenshot di Pianificazione reti](media/network-planner.png)
+![Screenshot di Pianificazione reti.](media/network-planner.png)
 
 Network Planner consente di:
 
@@ -42,15 +42,15 @@ Network Planner consente di:
     > [!NOTE]
     > Le persone consigliate sono state sviluppate in base ai dati Teams scenari di utilizzo ottimali e ai modelli di utilizzo tipici. Tuttavia, è possibile creare fino a tre persone personalizzate oltre alle tre persone consigliate.
 
-- Generare report e calcolare i requisiti di larghezza di banda per Teams utilizzo.
+- Generare report e calcolare i requisiti di larghezza di banda Teams utilizzo.
 
-Per usare Pianificazione reti, è necessario essere un amministratore globale, un Teams amministratore o un Teams Communications Administrator.
+Per usare Pianificazione reti, è necessario essere un amministratore globale, un amministratore Teams o un amministratore Teams Communications Administrator.
 
 ## <a name="create-a-custom-persona"></a>Creare una persona personalizzata
 
 Seguire questa procedura per creare una persona personalizzata:
 
-1. Passare a Pianificazione reti nell'Microsoft Teams di amministrazione.
+1. Passare a Pianificazione reti nell'interfaccia Microsoft Teams di amministrazione.
 
 2. Nella scheda **Persona fare** clic su + **Persona personalizzata**. 
 
@@ -64,7 +64,7 @@ Seguire questa procedura per creare una persona personalizzata:
 
 Seguire questa procedura per iniziare a creare il piano di rete:
 
-1. Passare a Pianificazione reti nell'Microsoft Teams di amministrazione.
+1. Passare a Pianificazione reti nell'interfaccia Microsoft Teams di amministrazione.
 
 2. Nella scheda **Piano di rete** fare clic su Aggiungi piano di **rete.**
 
@@ -99,7 +99,7 @@ Dopo aver aggiunto tutti i siti, è possibile creare un report nel modo seguente
 
 3. Dopo aver completato la distribuzione, fare clic **su Genera report.**
 
-    Il report generato mostrerà i requisiti di larghezza di banda in diverse visualizzazioni, in modo da comprendere chiaramente l'output:
+    Il report generato mostrerà i requisiti di larghezza di banda in diverse visualizzazioni, in modo da poter comprendere chiaramente l'output:
     - Una tabella con singoli calcoli visualizza i requisiti di larghezza di banda per ogni attività consentita.
     - Una visualizzazione aggiuntiva mostra le esigenze complessive di larghezza di banda con consigli.
 

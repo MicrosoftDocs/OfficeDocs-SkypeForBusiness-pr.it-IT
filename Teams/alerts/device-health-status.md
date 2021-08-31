@@ -12,16 +12,16 @@ f1.keywords:
 - NOCSH
 ms.collection:
 - M365-collaboration
-description: Informazioni su come usare le funzionalità di Teams e di avviso nell'interfaccia di amministrazione di Microsoft Teams per monitorare in modo proattivo lo stato di integrità dei Teams dispositivi
+description: Informazioni su come usare le funzionalità di Teams di monitoraggio e avviso nell'interfaccia di amministrazione di Microsoft Teams per monitorare in modo proattivo lo stato di integrità dei Teams dispositivi
 appliesto:
 - Microsoft Teams
 ms.custom: ''
-ms.openlocfilehash: 844dddfc04e1dc29311a237c3fc4f7ac41a1ce7f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b44b564da4e772fb3e385b03d61be6874baf11c5
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58636761"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58735353"
 ---
 # <a name="microsoft-teams-device-health-monitoring"></a>Microsoft Teams dell'integrità dei dispositivi
 
@@ -33,7 +33,7 @@ Prima di iniziare, sono necessarie le autorizzazioni per la creazione di team/ca
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione selezionare Notifiche **& avvisi**  >  **regole**.
 
-   ![Sezione Regole nell'interfaccia di amministrazione](../media/select-rules.png)
+   ![Sezione Regole nell'interfaccia di amministrazione.](../media/select-rules.png)
 
 2. Nella pagina **Regole** selezionare **Regola stato dispositivo**.
 

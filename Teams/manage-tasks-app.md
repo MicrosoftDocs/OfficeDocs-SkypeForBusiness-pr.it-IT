@@ -19,12 +19,12 @@ MS.collection:
 - microsoftcloud-healthcare
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 41fa4ea8b32b3c8a1b427f95afbc25317933b5cd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 875aeeee6d283a97325ef5aa66402b2c112c4bbd
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586560"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730635"
 ---
 # <a name="manage-the-tasks-app-for-your-organization-in-microsoft-teams"></a>Gestire l'app Tasks per l'organizzazione in Microsoft Teams
 
@@ -35,7 +35,7 @@ L'app Tasks offre un'esperienza di gestione delle attività coesiva in Microsoft
 > [!NOTE]
 > Man mano che Tasks viene implementata nei client desktop di Teams, inizialmente il nome dell'app sarà **Planner**. Il nome cambierà temporaneamente in **Tasks di Planner e To Do** e in seguito sarà chiamata **Tasks**. Sui client Teams per dispositivo mobile il nome dell’app sarà sempre **Tasks**. Potrebbe esserci un leggero ritardo nella disponibilità della versione per dispositivo mobile dopo che la versione desktop diventa disponibile.
 
-   ![Screenshot della visualizzazione dell'elenco delle attività nell'elenco dei team](media/manage-tasks-app-tasks.png)
+   ![Screenshot della visualizzazione elenco delle attività in Teams elenco.](media/manage-tasks-app-tasks.png)
 
 Per le organizzazioni che vogliono semplificare la gestione delle attività per i dipendenti in prima linea, Tasks include anche funzionalità che consentono di indirizzare, pubblicare e tenere traccia delle attività su larga scala di tutto il personale in prima linea. Ad esempio, la leadership aziendale e regionale può creare e pubblicare elenchi di attività destinati per specifiche luoghi, come negozi al dettaglio, e monitorare i progressi attraverso rapporti in tempo reale. I manager possono assegnare attività al proprio personale e dirigere le attività all'interno delle loro sedi. In questo modo i dipendenti in prima linea avranno una lista delle priorità delle attività assegnate su dispositivo mobile o desktop. Per abilitare la [pubblicazione di attività](#task-publishing), è necessario prima di tutto configurare una gerarchia di destinazione del team per l'organizzazione, che definirà in che modo i team della gerarchia sono correlati tra loro.
 
@@ -90,12 +90,12 @@ Questa operazione non è consigliata per gli operatori dell’informazione, ma p
 Grazie alla pubblicazione di attività, l’organizzazione può pubblicare elenchi di attività mirati a posizioni specifiche (team) all'interno dell'organizzazione per definire e condividere un piano di lavoro da completare in tali posizioni.
 
 - Le persone che fanno parte del team di pubblicazione, come la leadership aziendale o regionale, possono creare elenchi di attività e pubblicarli in team specifici.<br>
-    ![Screenshot pubblicazione di attività](media/manage-tasks-app-publish.png)
+    ![Screenshot della pubblicazione delle attività.](media/manage-tasks-app-publish.png)
 - I manager dei team destinatari possono esaminare gli elenchi di attività pubblicati e assegnare singole attività ai membri del team.<br>
-    ![Screenshot dell'assegnazione di un'attività](media/manage-tasks-app-assign.png)
+    ![Screenshot dell'assegnazione di un'attività.](media/manage-tasks-app-assign.png)
 - Per i dipendenti in prima linea la visualizzazione delle attività su dispositivo mobile è molto semplice. Possono allegare foto per mostrare il loro lavoro e contrassegnare le loro attività come completate.
 - Gli editori e i manager possono visualizzare i report per vedere lo stato di assegnazione e completamento delle attività a ogni livello, anche per posizione (team), elenco attività e attività individuale.<br>
-    ![Screenshot delle attività assegnate nei dispositivi mobili](media/manage-tasks-app-reporting.png)
+    ![Screenshot delle attività assegnate in un dispositivo mobile.](media/manage-tasks-app-reporting.png)
 
 Gli utenti creano, gestiscono e pubblicano elenchi attività nella scheda **Elenchi pubblicati** nell'app Tasks. Questa scheda viene visualizzata solo per un utente se l’organizzazione ha [impostato una gerarchia di destinazione per team](#set-up-your-team-targeting-hierarchy) e l'utente fa parte di un team incluso nella gerarchia. La gerarchia determina se l'utente può pubblicare o ricevere elenchi attività e visualizzare i report per gli elenchi ricevuti.
 

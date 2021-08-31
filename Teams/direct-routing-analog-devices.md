@@ -16,23 +16,23 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Leggere questo articolo per informazioni su come usare i dispositivi analogici con Telefono Microsoft System Direct Routing.
-ms.openlocfilehash: 93ce20366cfb29d5719a94af0842285d299e50e7
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 083c5dd5b577e319a9e5308a4ec3630614254628
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619482"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733495"
 ---
 # <a name="how-to-use-analog-devices-with-phone-system-direct-routing"></a>Come usare i dispositivi analogici con Sistema telefonico Direct Routing
 
-Questo articolo descrive come usare i dispositivi analogici con Sistema telefonico routing diretto. Per connettere dispositivi analogici al routing diretto, è necessario usare un adattatore di telefonia analogica (ATA) e questo adattatore deve essere supportato dal fornitore SBC (Session Border Controller) certificato. 
+Questo articolo descrive come usare i dispositivi analogici con Sistema telefonico routing diretto. Per connettere dispositivi analogici a Routing diretto, è necessario usare un adattatore di telefonia analogica (ATA) e questo adattatore deve essere supportato dal fornitore SBC (Session Border Controller) certificato. 
 
-Quando un utente effettua una chiamata da un dispositivo analogico, la segnalazione e il flusso multimediale attraverso l'adattatore di telefonia analogica (ATA) passano alla SBC.  SBC invia la chiamata a un endpoint Microsoft Teams o alla rete PSTN (Public Switched Telephone Network) in base alla tabella di routing interna.  Quando un dispositivo effettua una chiamata, il percorso necessario dipende dai criteri di routing creati per il dispositivo.
+Quando un utente effettua una chiamata da un dispositivo analogico, la segnalazione e i supporti passano attraverso l'adattatore di telefonia analogica (ATA) fino a SBC.  L'SBC invia la chiamata a un endpoint Microsoft Teams o alla rete PSTN (Public Switched Telephone Network) in base alla tabella di routing interna.  Quando un dispositivo effettua una chiamata, il percorso necessario dipende dai criteri di routing creati per il dispositivo.
 
-Nel diagramma seguente il routing diretto è configurato in modo che tutte le chiamate Teams da e verso i numeri compresi tra +1425 4XX XX XX e +1425 5XX XX XX prendano il percorso rosso (linea punteggiata) e qualsiasi chiamata PSTN da e verso numeri compresi tra +1425 4XX XX XX e qualsiasi altro numero ad eccezione dell'intervallo di numeri +1425 5XX XX XX deve assumere la linea blu (linea continua). 
+Nel diagramma seguente il routing diretto è configurato in modo che tutte le chiamate Teams da e verso i numeri compresi tra +1425 4XX XX XX e +1425 5XX XX XX prendano il percorso rosso (linea punteggiata) e qualsiasi chiamata PSTN da e verso numeri compresi tra +1425 4XX XX XX e qualsiasi altro numero ad eccezione dell'intervallo di numeri +1425 5XX XX XX deve assumere il percorso blu (linea continua). 
 
 > [!div class="mx-imgBorder"]
-> ![Diagramma che mostra la configurazione del routing diretto](media/direct-routing-analog-device.png)
+> ![Diagramma che mostra la configurazione del routing diretto.](media/direct-routing-analog-device.png)
 
 ## <a name="example--how-to-configure-the-use-of-analog-devices-with-direct-routing"></a>Esempio: Come configurare l'uso di dispositivi analogici con Routing diretto
 
@@ -95,7 +95,7 @@ PS C:\> New-CsOnlineVoiceRoutingPolicy -Identity "AnalogInteropPolicy" -Name "An
 
 ## <a name="step-5-enable-the-online-user"></a>Passaggio 5: Abilitare l'utente online
 
-Questo comando modifica l'account utente con il exampleuser@contoso.com. In questo caso, l'account viene modificato per abilitare VoIP aziendale, l'implementazione Microsoft di VoIP, con la segreteria telefonica abilitata e assegna il numero +14255000000 a questo utente.  Questo comando deve essere eseguito per ogni Teams utente (esclusi gli utenti di dispositivi ATA) nel tenant della società.
+Questo comando modifica l'account utente con l'exampleuser@contoso.com. In questo caso, l'account viene modificato per abilitare VoIP aziendale, l'implementazione Microsoft di VoIP, con la segreteria telefonica abilitata e assegna il numero +142550000000 a questo utente.  Questo comando deve essere eseguito per ogni Teams utente (esclusi gli utenti di dispositivi ATA) nel tenant della società.
 
 ```powershell
 PS C:\> Set-CsUser -Identity "exampleuser@contoso.com" -EnterpriseVoiceEnabled $True -HostedVoiceMail $True -OnPremLineUri "tel:+14255000000"
@@ -121,7 +121,7 @@ PS C:\> New-CsOnlineVoiceRoute -Identity analog-interop -NumberPattern "^\+1(425
 
 - Se non diversamente specificato, un dispositivo analogico è qualsiasi dispositivo in grado di inviare cifre DTMF per eseguire una chiamata. Ad esempio, telefoni analogici, fax e pager in testa.
 
-- I telefoni analogici connessi a un ATA non possono essere cercati Teams. Teams gli utenti devono immettere manualmente il numero di telefono associato al dispositivo per chiamare il dispositivo.  
+- I telefoni analogici collegati a un ATA non possono essere cercati Teams. Teams gli utenti devono immettere manualmente il numero di telefono associato al dispositivo per chiamare il dispositivo.  
  
 
 ## <a name="see-also"></a>Vedere anche

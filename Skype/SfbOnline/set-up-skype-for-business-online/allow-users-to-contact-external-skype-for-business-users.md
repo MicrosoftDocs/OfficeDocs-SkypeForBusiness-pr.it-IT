@@ -27,13 +27,13 @@ ms.custom:
 - O365P_ExternalCommDesc
 - O365P_ShareLync
 - LIL_Placement
-description: "Informazioni su come configurare le Skype for Business per consentire agli utenti di parlare con utenti di un'altra organizzazione o per consentire ai contatti esterni di parlare con loro. "
-ms.openlocfilehash: 987fc8120a06e1a96df4d33cf3f42ba90bc123ed
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Scopri come configurare le Skype for Business per consentire agli utenti di parlare con utenti di un'altra organizzazione o lasciare che i contatti esterni parlino con loro. "
+ms.openlocfilehash: e98f30718bb44a3ca2e5f48560d7f38552a2ef49
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602021"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731115"
 ---
 # <a name="allow-users-to-contact-external-skype-for-business-users"></a>Permettere agli utenti di contattare utenti Skype for Business esterni
 
@@ -45,7 +45,7 @@ Seguire la procedura descritta in questo articolo quando:
 
 - Si vuole che le persone dell'organizzazione usino le Skype for Business per contattare persone di aziende specifiche esterne all'organizzazione.
 
-- Si vuole che chiunque altro al mondo che usa Skype for Business possa trovare e contattare l'utente usando il proprio indirizzo di posta elettronica. Se si usano le impostazioni Skype for Business predefinite, questa funzionerà automaticamente. In caso contrario, è necessario assicurarsi che la configurazione non blocchi il dominio.
+- Si vuole che tutti gli altri utenti del mondo che usano Skype for Business utenti siano in grado di trovare e contattare l'utente usando il proprio indirizzo di posta elettronica. Se si usano le impostazioni Skype for Business predefinite, questa funzionerà automaticamente. In caso contrario, è necessario assicurarsi che la configurazione non blocchi il dominio.
 
 ## <a name="enable-business-to-business-communications-for-your-users"></a>Abilitare le comunicazioni business-to-business per gli utenti
 
@@ -53,7 +53,7 @@ Seguire la procedura descritta in questo articolo quando:
 
 Per eseguire [questa](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d) comunicazione, è Microsoft 365 o Office 365 autorizzazioni di amministratore in entrambe le organizzazioni.
 
-![Icona che mostra il logo Microsoft Teams ](../images/teams-logo-30x30.png) **usando l'interfaccia Teams di amministrazione**
+![Icona che mostra il Microsoft Teams logo.](../images/teams-logo-30x30.png) **Uso dell'Teams di amministrazione**
   
 1. Accedere con l'account Microsoft 365 o Office 365 amministratore.
 
@@ -67,13 +67,13 @@ Per eseguire [questa](https://support.office.com/article/da585eea-f576-4f55-a1e0
 4. Nell'**interfaccia di amministrazione di Skype for Business** scegliere **Organizzazione** > **Comunicazioni esterne**.
 5. Per configurare la comunicazione con una specifica azienda o con utenti in un altro dominio, nella casella di riepilogo a discesa scegliere **Attiva solo per i domini consentiti**.
 
-    Oppure, se si vuole abilitare la comunicazione con tutti gli altri utenti del mondo che hanno criteri di Skype for Business, scegliere Attivato ad eccezione **dei domini bloccati.** Questa è l'impostazione predefinita.
+    Oppure, se si vuole abilitare la comunicazione con tutti gli altri utenti del mondo che hanno criteri di Skype for Business, scegliere Attivato ad eccezione dei **domini bloccati.** Questa è l'impostazione predefinita.
 
 6. In **Domini bloccati o consentiti** scegliere e aggiungere il nome del dominio da **+** consentire.
 
 7. Assicurarsi che l'amministratore dell'altra organizzazione eseerciti gli stessi passaggi **nell'interfaccia Skype for Business di amministrazione.** Ad esempio, **nell'elenco dei domini consentiti,** l'amministratore deve immettere il dominio per l'azienda.
 
-8. Se si usa Windows Firewall, Skype for Business automaticamente le porte necessarie.
+8. Se si usa il firewall Windows, Skype for Business automaticamente le porte richieste.
 
     Se l'organizzazione usa una soluzione firewall diversa per limitare la connessione a Internet dei computer della rete, verificare che i computer client siano in grado di accedere agli URL e agli intervalli di indirizzi [IP](/microsoftteams/office-365-urls-ip-address-ranges)Office 365 seguenti. Potrebbe essere necessario aggiungere i nomi FQDN all'elenco di indirizzi consentiti in uscita nella configurazione del firewall o dell'infrastruttura proxy: **\* .api.skype.com,** \* *_.users.storage.live.com_* e **graph.skype.com**. Per istruzioni su come aprire queste porte nel firewall, consultare la documentazione fornita con essa.
 
@@ -83,13 +83,13 @@ Per eseguire [questa](https://support.office.com/article/da585eea-f576-4f55-a1e0
 
 10. **ATTENDERE FINO A 24 ORE PER TESTARE**. Quando si modificano le impostazioni delle comunicazioni esterne, possono essere necessarie fino a 24 ore prima che le modifiche possano essere popolate in tutti i data center.
 
-![](../images/58550720-2a68-42d1-a926-1884e6aeb55c.png)Skype È possibile consentire agli utenti di eseguire ricerche e messaggi istantanei con tutti gli utenti che Skype, l'app consumer gratuita. Per altre informazioni, vedere [Consentire agli Skype for Business di aggiungere Skype contatti.](let-skype-for-business-users-add-skype-contacts.md)
+![Skype.](../images/58550720-2a68-42d1-a926-1884e6aeb55c.png) È possibile consentire agli utenti di cercare e messaggistica istantanea con tutti gli utenti che Skype, l'app gratuita consumer. Per altre informazioni, vedere [Consentire agli Skype for Business utenti di aggiungere Skype contatti.](let-skype-for-business-users-add-skype-contacts.md)
   
 ## <a name="test-and-troubleshoot"></a>Testare e risolvere i problemi
 
 <a name="bk_preview"> </a>
 
- **Il problema più comune che le persone riscontrano quando si configurano le comunicazioni business-to-business è ottenere gli URL Office 365 e gli intervalli di indirizzi [IP.](/microsoftteams/office-365-urls-ip-address-ranges)**
+ **Il problema più comune che le persone riscontrano quando si configurano le comunicazioni business-to-business è ottenere gli URL Office 365 indirizzi IP e gli intervalli di indirizzi [IP.](/microsoftteams/office-365-urls-ip-address-ranges)**
   
 Per testare la configurazione, è necessario un contatto Skype for Business che non sia dietro il firewall aziendale.
   
@@ -97,7 +97,7 @@ Per testare la configurazione, è necessario un contatto Skype for Business che 
 
 2. In Skype for Business, cercare il contatto in Skype for Business e inviare una richiesta di chat.
 
-    Se viene visualizzato un messaggio che indica che non è stato possibile inviare il messaggio a causa dei criteri aziendali, è necessario controllare gli URL e gli intervalli di indirizzi IP Office 365 indirizzi [IP.](/microsoftteams/office-365-urls-ip-address-ranges)
+    Se viene visualizzato un messaggio che indica che non è stato possibile inviare il messaggio a causa dei criteri aziendali, è necessario controllare gli URL Office 365 e gli intervalli di indirizzi [IP.](/microsoftteams/office-365-urls-ip-address-ranges)
 
 3. Chiedi al tuo Skype for Business contatto di inviarti una richiesta di chat. Se non si riceve la richiesta, il problema sono le impostazioni del firewall, supponendo di aver già verificato che le impostazioni firewall dell'altra organizzazione siano corrette.
 
@@ -115,13 +115,13 @@ Dopo aver abilitato la comunicazione esterna con altri utenti Skype for Business
 
 <a name="bk_preview"> </a>
 
-- Per configurare la federazione tra Skype for Business 2015 e Skype for Business Online, vedere questo articolo: Configurare la federazione con Skype for Business [Online.](../../SfbHybrid/hybrid/configure-federation-with-skype-for-business-online.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
+- Per configurare la federazione tra Skype for Business 2015 e Skype for Business Online, vedere questo articolo: Configurare la federazione [con Skype for Business Online.](../../SfbHybrid/hybrid/configure-federation-with-skype-for-business-online.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json)
 
 - Per configurare la federazione tra Lync e Skype for Business Online, vedere questo articolo: Configurazione del supporto della federazione [per un cliente di Lync Online.](/previous-versions/office/lync-server-2013/lync-server-2013-configuring-federation-support-for-a-lync-online-customer)
 
-- Quando due utenti di Skype for Business in Microsoft 365 o Office 365 comunicano tra loro in domini separati, possono usare solo le funzionalità di Skype for Business , ad esempio le conversazioni video o la condivisione desktop, attivate in entrambe le organizzazioni.
+- Quando due utenti Skype for Business di Microsoft 365 o Office 365 comunicano tra loro in domini distinti, possono usare solo le funzionalità di Skype for Business, ad esempio le conversazioni video o la condivisione desktop, attivate in entrambe le organizzazioni.
 
-- Se un utente Skype for Business dell'organizzazione viene abilitato a un blocco In-Place o per controversia legale, tutte le conversazioni istantanee tra tale utente e altri utenti di Skype for Business o Skype verranno salvate **in** Elementi ripristinabili nella propria cassetta postale. Queste conversazioni non vengono salvate nella cartella **Cronologia** conversazioni della cassetta postale.
+- Se un utente Skype for Business dell'organizzazione viene abilitato a un blocco In-Place o per controversia legale, le conversazioni istantanee tra tale utente e altri utenti di Skype for Business o Skype verranno salvate **in** Elementi ripristinabili nella propria cassetta postale. Queste conversazioni non vengono salvate nella cartella **Cronologia** conversazioni della cassetta postale.
 
 ## <a name="turn-off-external-communication-for-specific-individuals"></a>Disattivare le comunicazioni esterne per utenti specifici
 
@@ -133,15 +133,15 @@ Dopo aver abilitato la comunicazione esterna per l'intera azienda, è possibile 
 
 2. Nell'interfaccia di amministrazione passare a **Utenti**  >  **utenti attivi**.
 
-3. Nell'elenco degli utenti scegliere l'utente e quindi, in Altre Impostazioni **,** fare clic su Modifica Skype for Business **proprietà**.
+3. Nell'elenco degli utenti scegliere l'utente e quindi, in Altre Impostazioni **,** fare clic su Modifica **Skype for Business proprietà**.
 
-    ![Scegliere Skype for Business](../images/2b0f9a7b-3fee-4f4b-968a-68c429eeb395.png)
+    ![Scegliere Skype for Business.](../images/2b0f9a7b-3fee-4f4b-968a-68c429eeb395.png)
   
 4. **Nell'Skype for Business di amministrazione scegliere** **Comunicazioni esterne.**
 
     Nella pagina **Opzioni** verranno selezionate tutte le opzioni. Deselezionare le comunicazioni da disabilitare. L'immagine seguente mostra che Jakob sarà in grado di comunicare con persone di altre aziende attendibili, ma non con altri Skype utenti.
 
-    ![Scegliere Contatti esterni](../images/4e546321-a065-48ed-8ac7-1e112a780eab.png)
+    ![Scegliere Contatti esterni.](../images/4e546321-a065-48ed-8ac7-1e112a780eab.png)
   
 5. Scegliere **Save**.
 

@@ -19,12 +19,12 @@ ms.custom:
 - Legal
 hideEdit: true
 description: Come usare un account Ip Relay per il Canada.
-ms.openlocfilehash: cf8d63dddea1d26e6fcdf6ffd8701745d50d7385
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 18b6f356f6d90b4e6a962ef1b7709cb3cf39253c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58618262"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730975"
 ---
 # <a name="ip-relay-in-canada---user-guide"></a>IP Relay in Canada - guida utente
 
@@ -38,7 +38,7 @@ Se una persona ipoudente o ipovedenti vuole contattare un utente non ipovedenti,
 Call Taker comunica quindi con la persona ipoudente o ipovedenti tramite la sessione di chat e contatta la persona non udita tramite la rete telefonica ovunque in Canada o negli Stati Uniti, come richiesto.
 
 ## <a name="scenario-b"></a>Scenario B
-Se una persona non udente vuole parlare con un utente registrato con problemi di udito o voce, chiama il numero verde come fornito da Microsoft.
+Se una persona non udente vuole parlare con un utente ipoudente o ipovedenti registrato, chiama il numero verde come fornito da Microsoft.
 
 Call Taker comunica quindi con la persona non udente e contatta la persona ipoudente o ipovedenti tramite chat e comunica avanti e indietro.
 
@@ -70,7 +70,7 @@ Dopo l'accesso, sul lato sinistro dello schermo vengono visualizzate le istruzio
 ### <a name="how-to-place-a-911-call"></a>Come eseguire una chiamata 911:
 Se si verifica un'emergenza, è possibile selezionare il pulsante di emergenza appropriato nella parte inferiore dello schermo (come illustrato di seguito).
 
-![Pulsanti di emergenza](../images/ip-relay-emergency-buttons.png)
+![Pulsanti di emergenza.](../images/ip-relay-emergency-buttons.png)
 
 L'operatore di inoltro dei messaggi IP contatta il 911, conferma il tuo indirizzo e traduci con diversi centri di emergenza finché non è più necessario, e il reparto appropriato è stato inviato alla tua posizione.
 

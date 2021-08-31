@@ -15,12 +15,12 @@ ms.prod: skype-for-business-itpro
 ms.localizationpriority: medium
 ms.assetid: 3d00e8f4-e599-4094-a4a1-34fd6e8a5580
 description: 'Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:'
-ms.openlocfilehash: 64db5a170c09a1563797bba27f7c427f73af6a9b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cdbd7a5fc1d49022516298923c61153d78679c0a
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599087"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731515"
 ---
 # <a name="trunk-settings-expander"></a>Espansione delle impostazioni del trunk
 
@@ -41,7 +41,7 @@ Per modificare le impostazioni di un trunk SIP, eseguire le operazioni seguenti:
 
  **Porta Mediation Server associata:** valore obbligatorio, impostato sul valore su cui il Mediation Server è configurato per l'ascolto.
 
-![Espansione delle impostazioni del trunk](../../media/Trunk_Settings_Expander.jpg)
+![Espansione Impostazioni trunk.](../../media/Trunk_Settings_Expander.jpg)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -20,16 +20,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 61dd52a83620b0d4d20547e0da14cafa11ce30dc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6fd023e96301661db9e181ab38e1b9b1f9fe3515
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627388"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731555"
 ---
 # <a name="prepare-a-user-readiness-plan"></a>Preparare un piano di idoneità degli utenti
 
-![Fasi del percorso di aggiornamento, evidenziando la fase di conformità dell'utente](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di conformità dell'utente")
+![Fasi del percorso di aggiornamento, evidenziando la fase Di conformità dell'utente.](media/upgrade-banner-user-readiness.png "Fasi del percorso di aggiornamento, con enfasi sulla fase di conformità dell'utente")
 
 Questo articolo fa parte della fase di preparazione dell'utente del percorso di aggiornamento, un'attività che viene completata in parallelo con la fase di preparazione tecnica. Prima di procedere, verificare di aver completato queste attività nelle fasi precedenti:
 
@@ -38,15 +38,15 @@ Questo articolo fa parte della fase di preparazione dell'utente del percorso di 
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Un piano ottimale per la conformità degli utenti incorpora le modalità di comunicazione, formazione e supporto degli utenti durante la fase pilota, a bordo e l'aggiornamento a Teams. Come si è scoperto in [Valutare la conformità alle](./upgrade-org-change-readiness.md)modifiche dell'organizzazione, la conformità non è adatta a tutti. Per garantire un livello di ricettività ottimale per la nuova tecnologia, usare una combinazione di messaggistica a vasta portata (che incorpora la messaggistica vision/value e casi di utilizzo universali) e messaggistica, formazione e supporto personalizzati in base alle persone e alle coorti definite e anche ai propri utenti, se appropriato. Questo piano personalizzato agevola l'adozione degli utenti, consentendo agli utenti di relazionarsi più rapidamente con i Teams, dimostrando al contempo di comprenderne le esigenze.
+Un piano ottimale per la conformità degli utenti incorpora il modo in cui comunicare, formare e supportare gli utenti durante la fase pilota, a bordo e l'aggiornamento a Teams. Come si è scoperto in [Valutare la conformità alle](./upgrade-org-change-readiness.md)modifiche dell'organizzazione, la conformità non è adatta a tutti. Per garantire un livello di ricettività ottimale per la nuova tecnologia, usare una combinazione di messaggistica a vasta portata (che incorpora la messaggistica vision/value e casi di utilizzo universali) e messaggistica, formazione e supporto personalizzati in base alle persone e alle coorti definite e anche ai propri utenti, in base alle esigenze. Questo piano personalizzato agevola l'adozione degli utenti, consentendo agli utenti di relazionarsi più rapidamente con i Teams, dimostrando al contempo di comprenderne le esigenze.
 
 > [!Tip]
 > Scaricare [l'Upgrade Success Kit per](https://aka.ms/UpgradeSuccessKit) i materiali di conformità degli utenti dei modelli, ad esempio le comunicazioni e i sondaggi degli utenti, oltre a un piano di progetto di aggiornamento di esempio e un piano di test pilota.
 
 |&nbsp; |&nbsp; |
 |---|---|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Come si può creare un piano di conformità per facilitare e accelerare l'adozione della nuova soluzione da parte degli utenti?</li><li>Si hanno le giuste risorse di consapevolezza, formazione e supporto in linea con la capacità degli utenti di gestire il cambiamento e le persone definite dall'utente?</li></ul> |
-| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Usare l'elenco seguente per generare idee per il piano di conformità. Selezionare le attività più pertinenti o aggiungene di personalizzate per progettare un piano di conformità ottimizzato per l'organizzazione. Ricordarsi di usare una combinazione di campagne a vasta portata (per l'intera organizzazione) e campagne mirate (per gruppi di ritardo o persone specifiche) per ottenere risultati massimi.</li></ul>|
+| ![Icona che rappresenta i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Come si può creare un piano di conformità per facilitare e accelerare l'adozione della nuova soluzione da parte degli utenti?</li><li>Si hanno le giuste risorse di consapevolezza, formazione e supporto in linea con la capacità degli utenti di gestire il cambiamento e le persone definite dall'utente?</li></ul> |
+| ![Icona che rappresenta il passaggio successivo.](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Usare l'elenco seguente per generare idee per il piano di conformità. Selezionare le attività più pertinenti o aggiungene di personalizzate per progettare un piano di conformità ottimizzato per l'organizzazione. Ricordarsi di usare una combinazione di campagne a vasta portata (per l'intera organizzazione) e campagne mirate (per gruppi di ritardo o persone specifiche) per ottenere risultati massimi.</li></ul>|
 
 <div class="mx-tableFixed">
 <table>
@@ -57,4 +57,4 @@ Un piano ottimale per la conformità degli utenti incorpora le modalità di comu
 </table>
 </div>
 
-Dopo aver creato il piano di conformità dell'utente e le risorse associate e aver creato la preparazione tecnica, procedere con la distribuzione pilota Teams [nell'organizzazione.](./pilot-essentials.md)
+Dopo aver creato il piano di conformità dell'utente e le risorse associate e aver creato la preparazione tecnica, procedere con la distribuzione pilota [Teams nell'organizzazione.](./pilot-essentials.md)

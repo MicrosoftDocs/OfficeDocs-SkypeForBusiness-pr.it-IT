@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: bb35bc5a035c03080ce44fa19fa3ecf5a5c674a6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6c60f0f3bcf5fc683a15c5b22cc7b98aa384d477
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58580290"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733365"
 ---
 # <a name="answer-auto-attendant-and-call-queue-calls-directly-from-teams"></a>Rispondere alle chiamate degli operatori automatici e delle code delle chiamate direttamente da Teams
 
@@ -32,7 +32,7 @@ Teams gli utenti possono ricevere e rispondere alle chiamate dagli operatori aut
 
 ## <a name="what-are-auto-attendants-and-call-queues"></a>Che cosa sono gli operatori automatici e le code di chiamata?
 
-Gli operatori automatici cloud forniscono una serie di istruzioni vocali o un file audio che i chiamanti sentono invece di un operatore umano quando chiamano a un'organizzazione. L'operatore automatico consente ai chiamanti di spostarsi nel sistema di menu, effettuare chiamate o individuare utenti mediante tastiera a toni DTMF (Dual Tone Multi-Frequency) o input vocali con riconoscimento vocale.
+Gli operatori automatici cloud forniscono una serie di prompt vocali o un file audio che i chiamanti sentono invece di un operatore umano quando chiamano a un'organizzazione. L'operatore automatico consente ai chiamanti di spostarsi nel sistema di menu, effettuare chiamate o individuare utenti mediante tastiera a toni DTMF (Dual Tone Multi-Frequency) o input vocali con riconoscimento vocale.
 
 Le code di chiamata cloud includono i messaggi di saluto usati quando qualcuno chiama a un numero di telefono per l'organizzazione, la possibilità di mettere automaticamente in attesa le chiamate e la possibilità di cercare il successivo agente di chiamata disponibile per gestire la chiamata mentre le persone che chiamano ascoltano musica in attesa. È possibile creare una o più code di chiamata per l'organizzazione.
 
@@ -42,7 +42,7 @@ Gli utenti potranno distinguere le chiamate in arrivo da un operatore automatico
 
 La figura seguente mostra come apparirà a un utente una chiamata in arrivo da un operatore automatico o una coda di chiamata.
 
-![Screenshot di una notifica di chiamata in arrivo](media/answer-auto-attendant-and-call-queue-calls-image1.png)
+![Screenshot di una notifica di chiamata in arrivo.](media/answer-auto-attendant-and-call-queue-calls-image1.png)
 
 Dopo aver risposto a una chiamata in coda o a un operatore automatico, l'utente può elaborare la chiamata come qualsiasi altra chiamata &#x2014; può aggiungere o conferenza in un altro utente o trasferire la chiamata a un'altra parte. Inoltre, le chiamate dell'operatore automatico verranno inoltrate in base alla configurazione dell'utente.
 
@@ -64,7 +64,7 @@ Il Teams client è supportato solo con una [modalità di coesistenza di Teams so
 
 ## <a name="configure-auto-attendant-and-call-queue-support-for-microsoft-teams"></a>Configurare il supporto dell'operatore automatico e della coda di chiamata per Microsoft Teams
 
-Per ricevere chiamate in coda e operatore automatico Microsoft Teams, è necessario configurare i criteri di interoperabilità e di aggiornamento. Vedere Migrazione [e interoperabilità per le](migration-interop-guidance-for-teams-with-skype.md)organizzazioni che usano Teams insieme a Skype for Business . Se l'operatore automatico e/o la coda di chiamata non sono configurati e si vuole farlo, vedere Configurare un operatore automatico [cloud](create-a-phone-system-auto-attendant.md) e [Creare una coda di chiamata cloud.](create-a-phone-system-call-queue.md)
+Per ricevere chiamate in coda e operatori automatici Microsoft Teams, è necessario configurare i criteri di interoperabilità e di aggiornamento. Vedere Migrazione [e interoperabilità per le](migration-interop-guidance-for-teams-with-skype.md)organizzazioni che usano Teams insieme a Skype for Business . Se l'operatore automatico e/o la coda di chiamata non sono configurati e si vuole farlo, vedere Configurare un operatore automatico [cloud](create-a-phone-system-auto-attendant.md) e [Creare una coda di chiamata cloud.](create-a-phone-system-call-queue.md)
 
 ## <a name="known-issues"></a>Problemi noti
 

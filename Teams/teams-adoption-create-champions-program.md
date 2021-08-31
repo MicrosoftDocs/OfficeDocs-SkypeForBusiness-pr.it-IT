@@ -1,5 +1,5 @@
 ---
-title: Crea il tuo programma di campioni per Microsoft Teams
+title: Crea il tuo programma campioni per Microsoft Teams
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -21,20 +21,20 @@ f1.keywords:
 description: Scopri come formare un team di campioni per promuovere l'adozione Teams promuovendo la consapevolezza, l'adozione e l'istruzione nell'organizzazione.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 216323b34d2f0f2778844b901964d56a85d25716
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f9a6c9c81b1f36655d99b9fdfeecacda406bab6f
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612915"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731185"
 ---
-# <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma di campioni per Microsoft Teams
+# <a name="create-your-champions-program-for-microsoft-teams"></a>Crea il tuo programma campioni per Microsoft Teams
 
 I campioni sono essenziali per aumentare la consapevolezza, l'adozione e l'istruzione nell'organizzazione. Un campione è una persona, principalmente motivata dall'aiutare gli altri, che è interessato alle nuove tecnologie (in particolare Teams) e aiutare altri dipendenti a usarla in linea con le procedure consigliate. A seconda delle dimensioni dell'organizzazione, questa può essere una parte formale del ruolo della persona, ma spesso i dipendenti si assalino da soli a causa della motivazione principale per aiutare gli altri.
 
 I campioni si adattano alla pianificazione generale del lancio in vari modi, come illustrato di seguito.
 
-![Illustrazione della pianificazione del lancio di Champions](media/teams-adoption-champions.png)
+![Illustrazione della pianificazione del lancio di Champions.](media/teams-adoption-champions.png)
 
 I campioni devono:
 
@@ -60,5 +60,5 @@ Usa la [nostra Guida al programma Champions](https://go.microsoft.com/fwlink/?li
 
 - Formare i campioni in anticipo e spesso: il programma inizia e le riunioni mensili possono essere usate per creare competenze nella community dei campioni. Usare queste opportunità per portarli a bordo, condurre la formazione iniziale, incoraggiarli a partecipare ai corsi e assicurarsi che siano pronti a supportare i dipendenti mentre avanzano nella fase di sperimentazione.  
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Completare la guida introduttiva alla governance](teams-adoption-governance-quick-start.md)
+![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successiva: [Completare la guida introduttiva alla governance](teams-adoption-governance-quick-start.md)
 

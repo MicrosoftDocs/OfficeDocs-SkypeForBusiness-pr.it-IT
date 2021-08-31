@@ -18,16 +18,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d5fdbf1d81383dc00ca6e6d39db72446ca6a3012
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 61952bd58543be73b72a4179119a18cb00873609
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586310"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731295"
 ---
 # <a name="evaluate-your-environment-before-upgrading-to-teams"></a>Valutare l'ambiente prima di eseguire l'aggiornamento a Teams
 
-![Diagramma del percorso di aggiornamento, enfatizzando la fase di preparazione tecnica](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
+![Diagramma del percorso di aggiornamento, enfatizzando la fase di preparazione tecnica.](media/upgrade-banner-tech-readiness.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di preparazione tecnica")
 
 Questo articolo fa parte della fase Technical Readiness del percorso di aggiornamento, un'attività che viene completata in parallelo con la fase Di conformità dell'utente. Prima di procedere, verificare di aver completato queste attività nelle fasi precedenti:
 
@@ -36,15 +36,15 @@ Questo articolo fa parte della fase Technical Readiness del percorso di aggiorna
 - [Comprensione della coesistenza e dell'interoperabilità di Skype for Business e Teams](./teams-and-skypeforbusiness-coexistence-and-interoperability.md)
 - [Hai scelto il percorso di aggiornamento](upgrade-and-coexistence-of-skypeforbusiness-and-teams.md)
 
-Questo articolo fornisce una panoramica dei requisiti per valutare correttamente l'ambiente corrente per le attività Teams. Valutando l'ambiente, si identificano i rischi e i requisiti che influiranno sulla distribuzione generale. Identificando questi elementi in anticipo, è possibile modificare la pianificazione in modo da ottenere il successo.
+Questo articolo offre una panoramica dei requisiti per valutare correttamente l'ambiente corrente per le attività Teams. Valutando l'ambiente, si identificano i rischi e i requisiti che influiranno sulla distribuzione generale. Identificando questi elementi in anticipo, è possibile modificare la pianificazione in modo da ottenere il successo.
 
 ## <a name="introduction-to-the-discovery-questionnaire"></a>Introduzione al questionario di individuazione
 
-Per ottenere i risultati chiave obiettivi (OKR), in precedenza sono state prese decisioni chiave relative ai servizi. Il passaggio successivo consiste nell'eseguire l'individuazione dell'ambiente per valutare tutti gli aspetti relativi all'infrastruttura IT, alla rete e alle operazioni per verificare che l'organizzazione sia pronta per implementare la soluzione. L'individuazione è uno dei primi passaggi chiave da eseguire durante la pianificazione del viaggio verso Teams. L'individuazione dell'ambiente deve includere una valutazione della conformità della rete per garantire che la rete supporti l'aggiornamento a Teams. È possibile eseguire un'individuazione dettagliata dell'ambiente per comprenderne meglio lo stato corrente e per rivelare eventuali difficoltà o, ancora più importante, possibili blocchi all'esecuzione dell'Teams aziendale.
+Per ottenere i risultati chiave obiettivi (OKR), in precedenza sono state prese decisioni chiave relative ai servizi. Il passaggio successivo consiste nell'eseguire l'individuazione dell'ambiente per valutare tutti gli aspetti relativi all'infrastruttura IT, alla rete e alle operazioni per verificare che l'organizzazione sia pronta per implementare la soluzione. L'individuazione è uno dei primi passaggi chiave da eseguire durante la pianificazione del viaggio verso Teams. L'individuazione dell'ambiente deve includere una valutazione della conformità della rete per garantire che la rete supporti l'aggiornamento a Teams. È possibile eseguire un'individuazione dettagliata dell'ambiente per comprenderne meglio lo stato corrente e per rivelare eventuali difficoltà o, ancora più importante, possibili blocchi all'esecuzione dell Teams di implementazione.
 
 È possibile identificare i rischi tecnici come parte di una valutazione dell'ambiente e della conformità all'adozione e sviluppare un piano di attenuazione per ogni rischio identificato. È consigliabile incorporare queste informazioni nel registro dei rischi.
 
-Tutte le questioni relative all'infrastruttura di collaborazione esistente e all'organizzazione di Microsoft 365 o Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla preparazione sono incluse nel questionario sull'individuazione dell'ambiente. Collaborare con il team di progetto per fornire le informazioni richieste con il maggior numero di dettagli possibile per facilitare le attività di pianificazione.
+Tutte le questioni relative all'infrastruttura di collaborazione esistente e all'organizzazione Microsoft 365 o Office 365, alla rete, agli endpoint, alle operazioni e all'adozione e alla preparazione sono incluse nel questionario di individuazione dell'ambiente. Collaborare con il team di progetto per fornire le informazioni richieste con il maggior numero di dettagli possibile per facilitare le attività di pianificazione.
 
 [Il questionario](upgrade-plan-journey-discovery-questionnaire.md) è suddiviso nelle sezioni seguenti per confermare la conformità dell'organizzazione per la distribuzione Teams in diverse aree principali:
 

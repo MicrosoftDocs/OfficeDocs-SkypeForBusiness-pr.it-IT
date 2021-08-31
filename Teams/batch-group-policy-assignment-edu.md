@@ -17,12 +17,12 @@ ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come assegnare criteri a grandi set di utenti dell'istituto di istruzione in base all'appartenenza ai gruppi o direttamente tramite un'attività batch per scopi scolastici remoti (telescolastica, telescolastica).
 f1keywords: ''
-ms.openlocfilehash: 29e32229462d9ac9e256c3c8ece0ab3f02312631
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8d7eed80375b87eb09cbad803e99d35578c5bbc8
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619652"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731375"
 ---
 # <a name="assign-policies-to-large-sets-of-users-in-your-school"></a>Assegnare criteri a grandi set di utenti dell'istituto di istruzione
 
@@ -33,7 +33,7 @@ ms.locfileid: "58619652"
 
 ## <a name="overview"></a>Panoramica
 
-È necessario concedere a studenti e docenti l'accesso a diverse funzionalità di Microsoft Teams? È possibile identificare rapidamente gli utenti dell'organizzazione in base al tipo di licenza e quindi assegnare loro i criteri appropriati. Questa esercitazione illustra come assegnare criteri di riunione a grandi set di utenti dell'istituto di istruzione. È possibile assegnare criteri usando l'interfaccia Microsoft Teams e PowerShell e verranno mostrati entrambi i modi.
+È necessario concedere a studenti e docenti l'accesso a diverse funzionalità di Microsoft Teams? È possibile identificare rapidamente gli utenti dell'organizzazione in base al tipo di licenza e quindi assegnare loro i criteri appropriati. Questa esercitazione illustra come assegnare criteri di riunione a grandi set di utenti dell'istituto di istruzione. È possibile assegnare criteri usando l'Microsoft Teams di amministrazione e PowerShell e verranno mostrati entrambi i modi.
 
 È possibile assegnare criteri di riunione a un gruppo di sicurezza di cui gli utenti sono membri o direttamente agli utenti su vasta scala tramite un'assegnazione di criteri batch. Imparerai a:
 
@@ -49,9 +49,9 @@ Tenere presente che in Teams gli utenti ottengono automaticamente i criteri glob
 
 Tenere presente che i criteri globali verranno applicati a tutti gli utenti dell'istituto di istruzione finché non si crea un criterio personalizzato e lo si assegna al personale e ai docenti.
 
-In questa esercitazione gli studenti riceveranno i criteri riunione globali e verrà assegnato un criterio di riunione personalizzato denominato EducatorMeetingPolicy a personale e docenti. Si presuppone che siano stati modificati i criteri globali [](policy-packages-edu.md) per personalizzare le impostazioni delle riunioni per gli studenti e che siano stati creati criteri personalizzati che definiscono l'esperienza di riunione per personale e docenti.
+In questa esercitazione gli studenti riceveranno i criteri riunione globali e verrà assegnato un criterio di riunione personalizzato denominato EducatorMeetingPolicy a personale e docenti. Si presuppone che siano stati modificati i criteri globali [](policy-packages-edu.md) per personalizzare le impostazioni delle riunioni per gli studenti e che siano stati creati criteri personalizzati che definiscono l'esperienza della riunione per personale e docenti.
 
-![Screenshot della pagina Criteri riunione nell'interfaccia di amministrazione Teams riunione](media/batch-group-policy-assignment-edu-meeting-policies.png)
+![Screenshot della pagina Criteri riunione nell'interfaccia Teams di amministrazione.](media/batch-group-policy-assignment-edu-meeting-policies.png)
 
 ## <a name="assign-a-policy-to-a-group"></a>Assegnare un criterio a un gruppo
 
@@ -83,13 +83,13 @@ Se non si riesce a distribuire SDS all'interno dell'ambiente, usare questo scrip
 #### <a name="using-the-microsoft-teams-admin-center"></a>Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.
 
 > [!NOTE]
-> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, per i criteri di parcheggio di chiamata Teams, per i criteri di Teams, per gli eventi live Teams, per i criteri per le riunioni Teams e per i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
+> Attualmente, l'assegnazione dei criteri ai gruppi che usano l'interfaccia di amministrazione di Microsoft Teams è disponibile solo per i criteri di chiamata Teams, i criteri di parcheggio di chiamata Teams, i criteri di Teams, i criteri eventi live Teams, i criteri delle riunioni Teams e i criteri di messaggistica Teams. Per altri tipi di criteri, usare PowerShell.
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Riunioni** > **Criteri riunione**.
 2. Selezionare la scheda **Assegnazione criteri di** gruppo.
 3. Selezionare **Aggiungi gruppo** e quindi nel riquadro Assegna criteri a **gruppo** eseguire le operazioni seguenti:
 
-    ![Screenshot del riquadro Modifica impostazioni con i criteri riunione](media/batch-group-policy-assignment-edu-group.png)
+    ![Screenshot del riquadro Modifica impostazioni, che mostra i criteri della riunione.](media/batch-group-policy-assignment-edu-group.png)
     1. Nella casella **Selezionare un gruppo** cercare e aggiungere il gruppo di sicurezza che contiene il personale e i docenti.
     2. Nella casella **Seleziona rango** immettere **1**.
     3. Nella casella **Selezionare un criterio** selezionare **EducatorMeetingPolicy**.
@@ -213,7 +213,7 @@ Connect-AzureAD
 
 Quando richiesto, accedere con le credenziali di amministratore.
 
-Per altre informazioni, vedere [Connessione con la Azure Active Directory PowerShell per Graph modulo](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Per altre informazioni, vedere [Connessione con l'Azure Active Directory PowerShell per Graph modulo](/office365/enterprise/powershell/connect-to-office-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
 
 ##### <a name="install-and-connect-to-the-microsoft-teams-powershell-module"></a>Installare e connettersi al modulo Microsoft Teams PowerShell
 
@@ -300,7 +300,7 @@ Invece di fornire l'intero elenco di ID utente, eseguire quanto segue per specif
 New-CsBatchPolicyAssignmentOperation -PolicyType TeamsMeetingPolicy -PolicyName EducatorMeetingPolicy -Identity $faculty[0..19999].ObjectId
 ```
 
-È possibile modificare l'intervallo di ID utente fino a raggiungere l'elenco completo degli utenti. Ad esempio, immettere ```$faculty[0..4999``` per il primo batch, usare per il ```$faculty[5000..9999``` secondo batch, immettere per il terzo batch ```$faculty[10000..14999``` e così via.
+È possibile modificare l'intervallo di ID utente finché non si raggiunge l'elenco completo degli utenti. Ad esempio, immettere ```$faculty[0..4999``` per il primo batch, usare per il ```$faculty[5000..9999``` secondo batch, immettere per il terzo batch ```$faculty[10000..14999``` e così via.
 
 #### <a name="get-the-policies-assigned-to-a-user"></a>Ottenere i criteri assegnati a un utente
 
@@ -312,7 +312,7 @@ Get-CsUserPolicyAssignment -Identity hannah@contoso.com
 
 ## <a name="faq"></a>Domande frequenti
 
-**Non ho familiarità con PowerShell per Teams. Dove si possono trovare altre informazioni?**
+**Non si ha familiarità con PowerShell per Teams. Dove si possono trovare altre informazioni?**
 
 Per una panoramica dell'uso di PowerShell per gestire Teams, vedere panoramica [Teams PowerShell.](teams-powershell-overview.md) Per altre informazioni sui cmdlet usati in questo articolo, vedere:
 

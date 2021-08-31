@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e999bb144a16ffb8963a7a03458fefb98311423b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2551d0de27bd945dfda1ba943462b33489d7cd42
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627278"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733985"
 ---
 # <a name="understand-teams-and-channels-in-microsoft-teams"></a>Informazioni su team e canali in Microsoft Teams
 
@@ -55,10 +55,10 @@ I tipi di accesso al team determinano chi può partecipare a un team:
 
 È consigliabile usare i team per migliorare la collaborazione tra organizzazioni e molti progetti si prestano a questo modello. Inoltre, i responsabili o le divisioni all'interno di un'organizzazione potrebbero volere un team dedicato per le proprie persone. Si considerino i modelli di organizzazione e di progetto illustrati nella figura seguente.
 
-![Modelli di organizzazione e di progetto](media/teams-adoption-organization-project.png)
+![Modelli di organizzazione e di progetto.](media/teams-adoption-organization-project.png)
 
 In un team dell'organizzazione (visualizzato a sinistra), potrebbero essere condivise informazioni chiave sul modo in cui l'organizzazione gestisce l'azienda, gli eventi del team, le strategie principali e altre informazioni operative, ad esempio le revisioni aziendali. Per il team visualizzato a destra, le informazioni del distretto sono suddivise in canali che rappresentano le categorie di lavoro che vengono completate da quel team. I membri di questo team possono o meno segnalare alla stessa persona, ma sono tutti impegnati a guidare i risultati per il distretto.
   
 Nella fase [2](teams-adoption-phase2-experiment.md) dell'implementazione si lavora più alla struttura dei team.
 
-![Icona che illustra il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Creare i primi team](teams-adoption-your-first-teams.md)
+![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successiva: [Creare i primi team](teams-adoption-your-first-teams.md)

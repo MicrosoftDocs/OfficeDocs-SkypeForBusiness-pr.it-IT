@@ -1,5 +1,5 @@
 ---
-title: Gestire l Complimenti app nell'interfaccia Teams di amministrazione
+title: Gestire l'app Complimenti nell'interfaccia Teams di amministrazione
 author: cichur
 ms.author: v-cichur
 manager: serdars
@@ -9,30 +9,30 @@ ms.topic: article
 ms.service: msteams
 ms.localizationpriority: medium
 description: Informazioni sulle impostazioni di amministrazione nell'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
-ms.openlocfilehash: 3f3269f812113d63c6c4abfeed9a2d00aa2354b4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 684e6c7feaa19ab7aecdc77eebd6cb1764f431d5
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58581230"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733415"
 ---
-# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l Complimenti app nell'Microsoft Teams di amministrazione
+# <a name="manage-the-praise-app-in-the-microsoft-teams-admin-center"></a>Gestire l'app Complimenti nell'interfaccia Microsoft Teams di amministrazione
 
 > [!NOTE]
 > Gli amministratori devono avere una licenza Teams per accedere a questa funzionalità. Se si prova ad accedere a questa funzionalità senza Teams licenza, viene visualizzato un messaggio di errore.
 
-L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di lavoro che gli utenti di Teams esereranno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
+L Complimenti app in Microsoft Teams consente agli utenti di mostrare apprezzamento ai membri dell'organizzazione o della classe. Con una selezione di set di badge tra cui scegliere e l'opzione per creare i propri badge, Complimenti è progettato per aiutare a riconoscere l'impegno che si fa nell'ampia gamma di attività che gli utenti di Teams esereranno, dai docenti ai lavoratori in prima linea. Per altre informazioni, vedere [Inviare Complimenti alle persone](https://support.microsoft.com/office/send-praise-to-people-50f26b47-565f-40fe-8642-5ca2a5ed261e).
 
 Gli amministratori possono controllare quali badge sono disponibili per l'organizzazione dall'Microsoft Teams di amministrazione. Nel riquadro di spostamento sinistro passare a Teams **app > Gestisci app**. Nell'elenco delle app fare clic su **Complimenti** e quindi selezionare **Impostazioni**.  Da qui è possibile scegliere di abilitare i set di badge predefiniti e predefiniti e di creare badge personalizzati.
 
-![Screenshot della scheda Impostazioni per l'app Complimenti app](media/manage-praise-app-settings.png)
+![Screenshot della Impostazioni per l'app Complimenti.](media/manage-praise-app-settings.png)
 
 > [!NOTE]
 > La Complimenti'app non è disponibile per i cloud governativi degli Stati Uniti.
 
 ## <a name="use-built-in-badge-sets"></a>Usare set di badge predefiniti
 
-I set predefiniti sono raccolte di badge progettati da Microsoft per l Complimenti app. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell'app Complimenti predefinita. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, impostare l'interruttore corrispondente su Attivato o Disattivato. 
+I set predefiniti sono raccolte di badge progettati da Microsoft per l Complimenti app. Questi set non sono modificabili dagli amministratori. Il set di badge predefinito è già abilitato e disponibile nell Complimenti app. Per modificare la disponibilità del set predefinito o di qualsiasi set di badge, impostare l'interruttore corrispondente su Attivato o Disattivato. 
 
 <a name="default-badges"></br></a>
 
@@ -40,15 +40,15 @@ I set predefiniti sono raccolte di badge progettati da Microsoft per l Complimen
 
 Il set di badge predefinito è progettato per aiutare Teams gli utenti a riconoscere i colleghi per andare oltre con il proprio lavoro.
 
-![Anteprima del set di notifiche predefinito](media/default-set-praise.png)
+![Anteprima del set di badge predefinito.](media/default-set-praise.png)
 
 <a name="sel-edu-badges"></br></a>
 
 ### <a name="social-and-emotional-learning-badges-for-education"></a>Badge di apprendimento sociale ed emotivo per l'istruzione
 
-I docenti possono riconoscere singoli studenti per obiettivi e comportamenti di apprendimento sociale ed emotivo (SEL) con badge che illustrano questi concetti.
+I docenti possono riconoscere i singoli studenti per i risultati e i comportamenti dell'apprendimento sociale ed emotivo (SEL) con badge che illustrano questi concetti.
 
-![Anteprima dei badge di apprendimento sociale ed emotivo per l'istruzione](media/sel-edu-set-praise.png)
+![Anteprima dei badge di apprendimento sociale ed emotivo per l'istruzione.](media/sel-edu-set-praise.png)
 
 <a name="create-your-own-badges"></br></a>
 
@@ -56,7 +56,7 @@ I docenti possono riconoscere singoli studenti per obiettivi e comportamenti di 
 
 Selezionare **Crea un badge personalizzato.** Da qui è possibile progettare un badge personalizzato nel riquadro laterale. È possibile creare fino a 25 badge personalizzati. 
 
-![Screenshot del riquadro Crea un badge personalizzato](media/manage-praise-app-create-custom-badge.png)
+![Screenshot del riquadro Crea un badge personalizzato.](media/manage-praise-app-create-custom-badge.png)
 
 1. Immettere un nome di badge. Questo è il nome che verrà visualizzato nel badge quando gli utenti inviano complimenti.
 
@@ -65,8 +65,8 @@ Selezionare **Crea un badge personalizzato.** Da qui è possibile progettare un 
    > [!TIP]
    > Se non si ha novità per i valori esadecimali, questo articolo include una rapida [introduzione](#hex-colors-intro) per illustrare come usarli.
 
-3. Upload'immagine di un badge. Il tipo di file accettato è .PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 x 216 pixel.
-![Badge con campi di sfondo, testo e immagine etichettati](media/praise-app-badge-fields.png)
+3. Upload un'immagine del badge. Il tipo di file accettato è .PNG. Il file di immagine deve essere inferiore a 40 KB con dimensioni massime di 216 x 216 pixel.
+![Badge con campi di sfondo, testo e immagine etichettati.](media/praise-app-badge-fields.png)
 
 4. Localizzare il nome del badge: in **Nomi badge localizzati** selezionare **Aggiungi.** Selezionare le impostazioni locali desiderate nell'elenco a discesa. Immettere quindi il nome del badge nella lingua designata.
 
@@ -93,12 +93,12 @@ Di seguito è riportato un elenco di colori di esempio per iniziare:
 
 |Colore  |Valore esadecimale|
 |-------|---------|
-|![colore esadecimale #FF6666](media/hexColor1.png)|  #FF6666   |
-|![colore esadecimale #7FFFD4](media/hexColor2.png)|  #7FFFD4   |
-|![colore esadecimale #FF75F0](media/hexColor3.png)|  #FF75F0   |
-|![colore esadecimale #00BFFF](media/hexColor4.png)|  #00BFFF   |
-|![colore esadecimale #800080](media/hexColor5.png)|  #800080   |
-|![colore esadecimale #000000](media/hexColor6.png)|  #000000   |
+|![colore esadecimale #FF6666.](media/hexColor1.png)|  #FF6666   |
+|![colore esadecimale #7FFFD4.](media/hexColor2.png)|  #7FFFD4   |
+|![colore esadecimale #FF75F0.](media/hexColor3.png)|  #FF75F0   |
+|![colore esadecimale #00BFFF.](media/hexColor4.png)|  #00BFFF   |
+|![colore esadecimale #800080.](media/hexColor5.png)|  #800080   |
+|![colore esadecimale #000000.](media/hexColor6.png)|  #000000   |
 
 <a name="best-practices"></br></a>
 
@@ -112,7 +112,7 @@ Di seguito è riportato un elenco di colori di esempio per iniziare:
 
 **Se l'immagine del badge non è rettangolare, rendere trasparente l'immagine.** È necessario eseguire questa operazione prima di caricare il file di immagine in Complimenti.
 
-![A sinistra: badge con immagine non trasparente, a destra: badge con immagine trasparente](media/praise-app-best-practices.png)
+![A sinistra: badge con immagine non trasparente, a destra: badge con immagine trasparente.](media/praise-app-best-practices.png)
 
 ## <a name="badge-set-assets"></a>Risorse del set di badge
 

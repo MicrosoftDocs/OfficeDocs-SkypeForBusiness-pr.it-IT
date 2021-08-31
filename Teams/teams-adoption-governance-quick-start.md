@@ -20,12 +20,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b47f0d9229a695b595255d26da773204e5b21a2b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: eaeec25c90e800fcc688dad924ecac8de687841a
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608704"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733715"
 ---
 # <a name="governance-quick-start-for-microsoft-teams"></a>Guida introduttiva alla governance per Microsoft Teams
 
@@ -35,9 +35,9 @@ Le attività seguenti si verificano contemporaneamente e possono coinvolgere tut
 - Questo individuo (o gruppo di persone) ha suggerito casi d'uso che potrebbero essere buoni candidati per questa fase?  
 - Hanno un interesse sufficiente da parte dei dipendenti dell'organizzazione per essere presto adottatori e fornire feedback significativi e regolari? 
 
-Per altre informazioni, vedere [Pianificare la governance in Teams](plan-teams-governance.md) e Pianificare la gestione del ciclo di vita in [Teams](plan-teams-lifecycle.md).
+Per altre informazioni, vedere [Pianificare la governance in Teams](plan-teams-governance.md) e Pianificare la gestione del ciclo di vita in [Teams.](plan-teams-lifecycle.md)
 
-## <a name="an-icon-representing-a-decision-pointdecisions"></a>![Icona che rappresenta un punto decisionale](media/teams-adoption-decision-icon.png)Decisioni
+## <a name="an-icon-representing-a-decision-pointdecisions"></a>![Icona che rappresenta un punto di decisione.](media/teams-adoption-decision-icon.png)Decisioni
 
 Prendere le decisioni seguenti (a questo punto queste decisioni si applicano solo alla fase 2):
 
@@ -45,7 +45,7 @@ Prendere le decisioni seguenti (a questo punto queste decisioni si applicano sol
 
 Ai fini di questa fase è possibile limitare chi è in grado di creare team alla popolazione di utenti che adottano in anticipo oltre al team di progetto principale. In questo modo i primi utenti potranno creare altri team, se necessario. Il monitoraggio di questo comportamento consente di ottenere informazioni chiave per la distribuzione generale.
 
-### <a name="decision-2-teams-naming-conventions"></a>Decisione 2: Teams di denominazione 
+### <a name="decision-2-teams-naming-conventions"></a>Decisione 2: convenzioni Teams di denominazione 
 
 È probabile che si voglia implementare alcune convenzioni di denominazione per l'ampia distribuzione di Teams e verificare la presenza di nomi duplicati. Nella fase 2 è consigliabile implementare una convenzione di denominazione manuale solo per i progetti iniziali. La procedura consigliata consiste nell'eseguire un onboarding interattivo con il team di progetto che lo ha adottato in anticipo e consentire loro di selezionare il proprio nome. In questo modo si avranno informazioni approfondite sul modo in cui i dipendenti pensano al loro lavoro e saranno essenziali per creare una convenzione di denominazione su scala più ampia in un secondo momento. Altre informazioni sugli elementi di un onboarding interattivo verranno visualizzate più avanti in questa guida.
 
@@ -59,10 +59,10 @@ L'uso ottimale dei Teams include l'integrazione di altre app nell'esperienza. Co
 
 ### <a name="decision-5-are-meetings-included-in-your-test"></a>Decisione 5: Le riunioni sono incluse nel test? 
 
-L Teams delle riunioni è di alta qualità, supporta la video chat e riunisce i dipendenti per essere più efficaci. Consultare il team tecnico per assicurarsi che l'ambiente sia pronto per includere riunioni VoIP semplici. In genere, l'abilitazione di servizi di audioconferenza o voce verrebbe esclusa da questa fase della sperimentazione. Tuttavia, dipende dal team di progetto principale, dalla conformità tecnica e dallo stato di altri servizi vocali/riunioni dell'organizzazione. La preparazione tecnica deve includere elementi come l'attrezzatura della sala riunioni, i dispositivi e gli accessori per l'utente finale e la rete. È consigliabile includere video chat e riunioni VoIP nella sperimentazione per ottenere più valore dall'implementazione Teams. 
+L Teams delle riunioni è di alta qualità, supporta la video chat e riunisce i dipendenti per essere più efficaci. Consultare il team tecnico per assicurarsi che l'ambiente sia pronto per includere riunioni VoIP semplici. In genere, l'abilitazione di servizi di audioconferenza o voce verrebbe esclusa da questa fase della sperimentazione. Tuttavia, dipende dal team di progetto principale, dalla conformità tecnica e dallo stato di altri servizi vocali/riunioni dell'organizzazione. La preparazione tecnica deve includere elementi come l'attrezzatura della sala riunioni, i dispositivi e gli accessori per l'utente finale e la rete. Ti consigliamo di includere video chat e riunioni VoIP nella tua sperimentazione per ottenere più valore dalla tua Teams implementazione. 
 
 ### <a name="decision-6-content-management-and-structure"></a>Decisione 6: Gestione e struttura dei contenuti
-Teams funziona al meglio quando gli utenti lavorano end-to-end all'interno della piattaforma, invece di richiedere loro di tornare continuamente a sistemi e servizi legacy, e offre nuovi modi di lavorare diversi da come sono abituati gli utenti. Nell'ambito dell'esperimento, collaborare con i partecipanti per prendere in considerazione le strutture del team e i canali che adottano le modalità multimodali di collaborazione all'interno di Teams ed evitare semplicemente di replicare le strutture di cartelle e di archiviazione esistenti. Considerare inoltre eventuali requisiti di conformità per il contenuto archiviato all'esterno dei sistemi supportati esistenti, ad esempio i sistemi di gestione dei record o di backup.
+Teams funziona al meglio quando gli utenti lavorano end-to-end all'interno della piattaforma, invece di richiedere loro di tornare continuamente ai sistemi e ai servizi legacy, e offre nuovi modi di lavorare diversi da come sono abituati gli utenti. Nell'ambito dell'esperimento, collaborare con i partecipanti per prendere in considerazione le strutture del team e i canali che adottano le modalità multimodali di collaborazione all'interno di Teams ed evitare di replicare semplicemente le strutture di archiviazione e cartelle esistenti. Considerare inoltre eventuali requisiti di conformità per i contenuti archiviati all'esterno dei sistemi supportati esistenti, ad esempio i sistemi di gestione dei record o di backup.
 
 ### <a name="decision-7--data-security"></a>Decisione 7: Sicurezza dei dati
 
@@ -70,6 +70,6 @@ In preparazione per l'ampia distribuzione, è possibile scegliere di usare etich
 
 ### <a name="decision-8-length-of-your-experiment"></a>Decisione 8: Durata dell'esperimento
 
-Un'implementazione Teams procede a un ritmo sano per garantire un'adeguata quantità di energia, concentrazione e apprendimento. È consigliabile che questa fase del progetto sia lunga 60 giorni per assicurarsi che i primi adottivi completino cicli aziendali sufficienti. L'estensione della sperimentazione per un periodo di tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito. tuttavia, questa volta varia per ogni organizzazione.  
+Un'implementazione Teams di successo procede a un ritmo sano per garantire un'adeguata quantità di energia, concentrazione e apprendimento. È consigliabile che questa fase del progetto sia lunga 60 giorni per assicurarsi che i primi adottivi completino cicli aziendali sufficienti. L'estensione della sperimentazione per un periodo di tempo troppo lungo aumenta il rischio di un programma di modifica non riuscito. tuttavia, questa volta varia per ogni organizzazione.  
 
-![Icona che rappresenta il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Definire gli scenari di utilizzo](teams-adoption-define-usage-scenarios.md)
+![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successiva: [Definire gli scenari di utilizzo](teams-adoption-define-usage-scenarios.md)

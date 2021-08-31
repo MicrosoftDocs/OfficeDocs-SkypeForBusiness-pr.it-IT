@@ -22,16 +22,16 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-apr2020
 description: Informazioni su come cercare i numeri di conferenza telefonica con accesso esterno disponibili per le audioconferenze dall'interno Microsoft Teams.
-ms.openlocfilehash: 3e4e1c80d04cdb07b9d2d7ce993f4cab28de2155
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ccf10c9ce1a7869f271b781a9f772bffb00934d7
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601111"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58734015"
 ---
 # <a name="see-a-list-of-audio-conferencing-numbers-in-microsoft-teams"></a>Visualizzare un elenco di numeri di audioconferenza in Microsoft Teams
 
-Quando si configurano le audioconferenze per Microsoft Teams utenti, è possibile visualizzare i numeri di telefono disponibili per le audioconferenze. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
+Quando si configurano le audioconferenze per Microsoft Teams utenti, è possibile visualizzare i numeri di telefono disponibili per i servizi di audioconferenza. Questo elenco conterrà tutti i numeri di telefono per Audioconferenza disponibili per l'organizzazione.
   
  **Stai cercando i prezzi?** Vedere [Prezzi per le audioconferenze](https://products.office.com/skype-for-business/audio-conferencing#Requirements).
   
@@ -44,7 +44,7 @@ Se è disponibile un solo numero di telefono all'interno dell'organizzazione, qu
 
 ## <a name="to-view-your-audio-conferencing-phone-numbers"></a>Per visualizzare i numeri di telefono per Audioconferenza
 
-![Icona che mostra il logo di Microsoft Teams](media/teams-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Microsoft Teams**
+![Icona che mostra il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro passare a **Ponti**  >  **conferenza riunioni**. 
 2. Visualizzare i numeri di telefono disponibili per le audioconferenze.

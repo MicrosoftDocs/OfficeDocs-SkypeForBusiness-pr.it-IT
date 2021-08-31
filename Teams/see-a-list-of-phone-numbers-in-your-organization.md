@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 - seo-marvel-mar2020
 description: Informazioni su come usare l Microsoft Teams di amministrazione per visualizzare un elenco di tutti i numeri di telefono dell'organizzazione e di tutti i numeri assegnati agli utenti o non assegnati.
-ms.openlocfilehash: 1bad09f115ae31bf392fe14e4d00e1b59b00e3c4
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d7de480508020dac24a63b5923af9cf2481c691b
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608793"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733975"
 ---
 # <a name="see-a-list-of-phone-numbers-in-your-organization"></a>Visualizzare un elenco di numeri di telefono assegnati nell'organizzazione
 
@@ -36,14 +36,14 @@ Esistono diversi tipi di numeri di telefono che è possibile assegnare agli uten
   
 ## <a name="to-see-a-list-of-all-phone-numbers-that-you-have-for-your-organization"></a>Per visualizzare un elenco di tutti i numeri di telefono che hai per la tua organizzazione
 
-![Icona che mostra il logo Teams ](media/teams-logo-30x30.png) **usando l'interfaccia Microsoft Teams di amministrazione**
+![Icona che mostra il Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Passare **all'Microsoft Teams di amministrazione.**
 
 2. Nella barra di spostamento sinistra, passa a **Voce** > **Numeri di telefono**.
 
     > [!IMPORTANT]
-    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di Skype for Business, è necessario prima acquistare almeno una licenza  **Enterprise E5,** una licenza per componenti aggiuntivi  **Sistema telefonico** o una licenza per i componenti aggiuntivi per audioconferenza.
+    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di Skype for Business, è necessario prima acquistare almeno una licenza  **Enterprise E5,** una licenza per componenti aggiuntivi  **Sistema telefonico** o una licenza per i componenti aggiuntivi per audioconferenze.
 
 3. Per visualizzare i numeri di telefono assegnati, vedere la **colonna** Stato.
 
@@ -63,7 +63,7 @@ Esistono diversi tipi di numeri di telefono che è possibile assegnare agli uten
 
 Quando si configurano gli utenti, è consigliabile visualizzare l'elenco dei numeri di telefono già assegnati agli utenti e i numeri di telefono disponibili per l'assegnazione.
   
-![Icona che mostra il logo Teams ](media/teams-logo-30x30.png) **usando l'interfaccia Microsoft Teams di amministrazione**
+![Icona che mostra il Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Passare **all'Microsoft Teams di amministrazione.**
 
@@ -84,7 +84,7 @@ Quando si configurano gli utenti, è consigliabile visualizzare l'elenco dei num
 
 Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere chiamate telefoniche, è necessario prima ottenere i numeri di telefono e quindi assegnarli agli utenti. Dopo aver ottenuto i numeri di telefono, è consigliabile visualizzare lo stato di attivazione delle assegnazioni di numeri.
 
-![Icona che mostra il logo Teams ](media/teams-logo-30x30.png) **usando l'interfaccia Microsoft Teams di amministrazione!**
+![Icona che mostra il Teams logo.](media/teams-logo-30x30.png) **Uso dell'Microsoft Teams di amministrazione di Office** !
   
 1. Passare **all'Microsoft Teams di amministrazione.**
 

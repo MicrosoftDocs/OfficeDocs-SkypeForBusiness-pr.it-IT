@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come cercare numeri di telefono che è possibile assegnare agli utenti, in base al paese o all'area geografica e alla città, e specificare la quantità di numeri necessaria.
-ms.openlocfilehash: 4fcc5d43ec232d57437cabdc09d38a75910b03f8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 31815ff2877cc487f090600560fe9203c840fe58
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58602111"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733565"
 ---
 # <a name="search-for-phone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
@@ -40,14 +40,14 @@ Se serve aiuto per ottenere i numeri di telefono, è possibile [vedere](/microso
 
 **Per cercare numeri di telefono per gli utenti**
 
-![Icona che mostra il logo Teams ](media/teams-logo-30x30.png) **usando l'interfaccia Microsoft Teams di amministrazione**
+![Icona che mostra il Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
   
 1. Passare **all'Microsoft Teams di amministrazione.**
 
 2. Nel riquadro di spostamento sinistro selezionare **Voce**  >  **Telefono numeri** Ottieni nuovi  >  **numeri**.
   
     > [!IMPORTANT]
-    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di Microsoft Teams, è necessario prima acquistare almeno una licenza  **Enterprise E5,** una licenza per componenti aggiuntivi  **Sistema telefonico** o una licenza per i componenti aggiuntivi per audioconferenze.  
+    > Per visualizzare l'opzione Voce nel riquadro di spostamento sinistro nell'interfaccia di amministrazione di Microsoft Teams, è necessario prima acquistare almeno una licenza  **Enterprise E5,** una licenza per il componente aggiuntivo  **Sistema telefonico** o una licenza per i componenti aggiuntivi audioconferenza.  
 
 3. Nella pagina **Seleziona posizione e quantità** selezionare  una posizione nell'elenco a discesa Paese o area geografica.
 

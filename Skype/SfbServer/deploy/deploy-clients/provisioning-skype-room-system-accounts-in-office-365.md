@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: c36150bb-461c-4f1c-877b-fac7fb232f7c
 description: Leggere questo argomento per informazioni sul provisioning Skype di sistema room in Microsoft 365 o Office 365.
-ms.openlocfilehash: d1b116308f091c535beceb5a82994ee155507548
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e3976d5763128354c934f477003532bf6bbcd3f6
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58585950"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731105"
 ---
 # <a name="provisioning-skype-room-system-accounts-in-microsoft-365-and-office-365"></a>Provisioning Skype account di sistema room in Microsoft 365 e Office 365
  
@@ -33,7 +33,7 @@ Il tenant online deve soddisfare i requisiti seguenti:
     
 - Il tenant deve avere la funzionalità di conferenza di Skype for Business abilitata.
     
-- Il tenant deve avere Exchange Online abilitato. 
+- Il tenant deve avere Exchange Online abilitata. 
     
 - L'amministratore remoto tenant deve disporre dell'accesso PowerShell seguente:
     
@@ -41,27 +41,27 @@ Il tenant online deve soddisfare i requisiti seguenti:
     
   - Skype for Business Accesso remoto a PowerShell online
     
-  - Windows Azure Active Directory modulo per Windows PowerShell accedere Microsoft 365 o Office 365 alla directory
+  - Windows Azure Active Directory module per Windows PowerShell accedere Microsoft 365 o Office 365 accesso alla directory
     
 Per l'account Skype room, sono necessarie le licenze seguenti:
   
 - È Skype for Business una licenza di Office 365 E1 Online Piano 2 o E3 per abilitare Skype riunioni.
     
-- Per autorizzare la sala con la funzionalità VoIP aziendale in modo che possa essere abilitata con un numero di telefono, è necessario un Skype for Business Online Piano 2 con la licenza di Sistema telefonico o Office 365 E5 (1).
+- Per autorizzare la sala con la funzionalità VoIP aziendale in modo che possa essere abilitata con un numero di telefono, è necessario un piano 2 di Skype for Business Online con la licenza Sistema telefonico o Office 365 E5 (1).
     
 - Se sono necessarie funzionalità di accesso esterno da una riunione, è necessario disporre di audioconferenza e Sistema telefonico licenza.  Se sono necessarie funzionalità di chiamata in uscita da una riunione, è necessario un piano per chiamate nazionali o nazionali e internazionali. 
     
-- Non è Exchange Online necessaria una licenza per l'account Skype Room perché l'account deve essere configurato come account della cassetta postale della risorsa.
+- Una Exchange Online non è necessaria per l'account Skype Room perché l'account deve essere configurato come account della cassetta postale della risorsa.
     
 ## <a name="provisioning-overview"></a>Panoramica del provisioning
 
-Nel diagramma seguente viene fornita una panoramica del flusso di provisioning Skype account di sistema room.
+Nel diagramma seguente viene fornita una panoramica del flusso Skype provisioning degli account di sistema room.
   
-![Skype Passaggi di provisioning del sistema sala](../../media/354c5659-317b-4e85-a1bc-c60c07f305a4.png)
+![Skype Passaggi di provisioning del sistema sala.](../../media/354c5659-317b-4e85-a1bc-c60c07f305a4.png)
   
 ## <a name="identify-a-new-conference-room"></a>Identificare una nuova sala riunioni
 
-È possibile che si abbia già una cassetta postale sala risorse in Exchange che fornisce la funzionalità di pianificazione oppure che si crei per la prima volta una cassetta postale per le risorse per facilitare la distribuzione Skype Room System. In ogni caso, è necessario identificare un account sala da utilizzare nel tenant. Le sezioni Exchange Online provisioning e Skype for Business provisioning forniscono indicazioni per entrambi i tipi di account. Si supponga ad esempio di disporre delle due sale seguenti e che si desideri distribuire Skype Room System per entrambe:
+È possibile che in Exchange sia già presente una cassetta postale sala risorse che fornisce la funzionalità di pianificazione oppure che si crei per la prima volta una cassetta postale per le risorse per facilitare la distribuzione di Skype Room System. In ogni caso, è necessario identificare un account sala da utilizzare nel tenant. Le Exchange Online di provisioning e Skype for Business forniscono indicazioni per entrambi i tipi di account. Si supponga, ad esempio, di disporre delle due sale seguenti e che si desideri distribuire Skype Room System per entrambe:
   
 - Account cassetta postale risorsa esistente: confrm1@contoso.onmicrosoft.com
     
@@ -79,7 +79,7 @@ $newpass='pass@word1'
 Set-Mailbox -Identity $rm  -EnableRoomMailboxAccount $true -RoomMailboxPassword (ConvertTo-SecureString $newpass -AsPlainText -Force)
 ```
 
-Per creare un nuovo account Exchange cassetta postale per Skype room, eseguire i comandi seguenti in Exchange Online PowerShell:
+Per creare un nuovo account Exchange cassetta postale per Skype Room System, eseguire i comandi seguenti in Exchange Online PowerShell:
   
 ```powershell
 $rm="confrm2@contoso.onmicrosoft.com"
@@ -99,7 +99,7 @@ Dopo aver assegnato una licenza per Skype for Business Online, sarà possibile a
   
 ## <a name="skype-for-business-online-provisioning"></a>Skype for Business Provisioning online
 
-Dopo aver creato e abilitato un account cassetta postale sala risorse come illustrato in precedenza e dopo aver concesso in licenza l'account per Skype For Business Online, l'account verrà sincronizzato dalla foresta di Exchange Online alla foresta di Skype for Business Online utilizzando la foresta di Windows Azure Active Directory. Per eseguire il provisioning dell'account Skype Room System nel pool Skype for Business Online, sono necessari i passaggi seguenti. Questi passaggi sono gli stessi per un account della cassetta postale delle risorse esistente o un account appena creato (confrm1 o confrm2), perché una volta abilitati in Exchange Online, entrambi questi account verranno sincronizzati con Skype for Business Online nello stesso modo:
+Dopo aver creato e abilitato un account della cassetta postale sala risorse come illustrato in precedenza e avere concesso in licenza l'account per Skype For Business Online, l'account verrà sincronizzato dalla foresta di Exchange Online alla foresta di Skype for Business Online utilizzando la foresta di Windows Azure Active Directory. I passaggi seguenti sono necessari per eseguire il provisioning dell'account Skype Room System nel pool Skype for Business Online. Questi passaggi sono gli stessi per un account della cassetta postale delle risorse esistente o un account appena creato (confrm1 o confrm2), perché una volta abilitati in Exchange Online, entrambi questi account verranno sincronizzati con Skype for Business Online nello stesso modo:
   
 1. Creare una sessione remota di PowerShell. Tenere presente che sarà necessario scaricare Teams [powershell](/microsoftteams/teams-powershell-install).
     
@@ -111,7 +111,7 @@ Dopo aver creato e abilitato un account cassetta postale sala risorse come illus
    Connect-MicrosoftTeams -Credential $credential
   ```
 
-2. Per abilitare un account Skype Room System per Skype for Business, eseguire il comando seguente:
+2. Per abilitare un account Skype room system per Skype for Business, eseguire il comando seguente:
     
    ```powershell
    Enable-CsMeetingRoom -Identity $rm -RegistrarPool "sippoolbl20a04.infra.lync.com" -SipAddressType EmailAddress
@@ -124,11 +124,11 @@ Dopo aver creato e abilitato un account cassetta postale sala risorse come illus
    ```
 
 >[!NOTE] 
->L'autenticazione a più fattori (MFA) non è supportata per Skype di sistema room. 
+>L'autenticazione a più fattori (MFA) non è supportata per gli Skype di sistema room. 
 
 ## <a name="password-expiration"></a>Scadenza password
 
-In Microsoft 365 o Office 365, il criterio di scadenza della password predefinito per tutti gli account utente è di 90 giorni, a meno che non si configurano criteri di scadenza delle password diversi. Per Skype di sistema room, è possibile selezionare l'impostazione Nessuna scadenza password con la procedura seguente.
+In Microsoft 365 o Office 365, il criterio di scadenza delle password predefinito per tutti gli account utente è di 90 giorni, a meno che non si configurano criteri di scadenza delle password diversi. Per Skype di sistema room, è possibile selezionare l'impostazione Nessuna scadenza password con la procedura seguente.
   
 1. Creare una Windows Azure Active Directory utilizzando le credenziali di amministratore globale del tenant.
     
@@ -137,7 +137,7 @@ In Microsoft 365 o Office 365, il criterio di scadenza della password predefinit
     Connect-MsolService -Credential $cred
     ```
 
-2. Impostare l'impostazione Nessuna scadenza password per l'account Skype room room creato in precedenza utilizzando il comando seguente:
+2. Impostare l'impostazione Nessuna scadenza password per l'account room Skype Room System creato in precedenza utilizzando il comando seguente:
     
    ```powershell
    Set-MsolUser -UserPrincipalName confrm1@skypelrs.onmicrosoft.com -PasswordNeverExpires $true

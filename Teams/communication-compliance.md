@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 767c69d2c529b7fe6c93b667d6150e7b64d46ef2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: accdfbb8edc7e47013a96574c1a0a0b1ed46a89e
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58631370"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731075"
 ---
 # <a name="communication-compliance-with-microsoft-teams"></a>Conformità alle comunicazioni con Microsoft Teams
 
@@ -37,11 +37,11 @@ Per altre informazioni sulla conformità delle comunicazioni e su come configura
 
 ## <a name="how-to-use-communication-compliance-in-microsoft-teams"></a>Come usare la conformità alle comunicazioni in Microsoft Teams
 
-La conformità e la Microsoft Teams comunicazioni sono strettamente integrate e consentono di ridurre al minimo i rischi di comunicazione nell'organizzazione. Dopo aver configurato i criteri di conformità delle prime comunicazioni, è possibile gestire attivamente i messaggi Microsoft Teams e il contenuto inappropriati contrassegnati automaticamente negli avvisi.
+La conformità e la Microsoft Teams comunicazioni sono strettamente integrate e consentono di ridurre al minimo i rischi di comunicazione all'interno dell'organizzazione. Dopo aver configurato i primi criteri di conformità per le comunicazioni, è possibile gestire attivamente i messaggi Microsoft Teams e il contenuto inappropriati contrassegnati automaticamente negli avvisi.
 
 ### <a name="getting-started"></a>Introduzione
 
-Introduzione alla conformità delle comunicazioni in [](/microsoft-365/compliance/communication-compliance-plan) Microsoft Teams inizia con la pianificazione e la creazione di criteri predefiniti o personalizzati per identificare le attività degli utenti inappropriati nei canali Teams o in 1:1 e nei gruppi. Tenere presente che è necessario configurare [alcune](/microsoft-365/compliance/communication-compliance-configure) autorizzazioni e prerequisiti di base nell'ambito del processo di configurazione.
+Introduzione alla conformità delle comunicazioni in [](/microsoft-365/compliance/communication-compliance-plan) Microsoft Teams inizia con la pianificazione e la creazione di criteri predefiniti o personalizzati per identificare le attività degli utenti inappropriati nei canali Teams o nei gruppi 1:1. Tenere presente che è necessario configurare [alcune](/microsoft-365/compliance/communication-compliance-configure) autorizzazioni e prerequisiti di base nell'ambito del processo di configurazione.
 
 Teams amministratori possono configurare i criteri di conformità delle comunicazioni ai livelli seguenti:
 
@@ -50,20 +50,20 @@ Teams amministratori possono configurare i criteri di conformità delle comunica
 
 ### <a name="act-on-inappropriate-messages-in-microsoft-teams"></a>Agire in base ai messaggi inappropriati in Microsoft Teams
 
-Dopo aver configurato i criteri e aver ricevuto avvisi di conformità alle comunicazioni per i messaggi Microsoft Teams, è il momento che i revisori della conformità dell'organizzazione eseempano un'azione su questi messaggi. I revisori possono aiutare a proteggere l'organizzazione esaminando gli avvisi di conformità alle comunicazioni e rimuovendo i messaggi contrassegnati dalla visualizzazione Microsoft Teams.
+Dopo aver configurato i criteri e aver ricevuto avvisi di conformità alle comunicazioni per i messaggi Microsoft Teams, è il momento che i revisori della conformità nell'organizzazione eseempeno azioni su questi messaggi. I revisori possono aiutare a proteggere l'organizzazione esaminando gli avvisi di conformità alle comunicazioni e rimuovendo i messaggi contrassegnati dalla visualizzazione Microsoft Teams.
 
-![Rimuovere un messaggio in Teams](./media/communication-compliance-remove-teams-message.png)
+![Rimuovere un messaggio in Teams.](./media/communication-compliance-remove-teams-message.png)
 
 I messaggi e i contenuti rimossi vengono sostituiti con notifiche per gli utenti che spiegano che il messaggio o il contenuto è stato rimosso e quali criteri sono applicabili alla rimozione. Il mittente del messaggio o del contenuto rimosso viene inoltre informato dello stato di rimozione e fornito con il contenuto originale del messaggio per il contesto relativo alla rimozione. Il mittente può anche visualizzare la condizione specifica dei criteri applicabile alla rimozione del messaggio.
 
 Esempio di suggerimento per i criteri visualizzato dal mittente:
 
-![Suggerimento per i criteri per il mittente](./media/communication-compliance-warning-1.png)
+![Suggerimento per i criteri per il mittente.](./media/communication-compliance-warning-1.png)
 
 Esempio di notifica delle condizioni dei criteri visualizzata dal mittente:
 
-![Informazioni sulle condizioni dei criteri per il mittente](./media/communication-compliance-warning-2.png)
+![Informazioni sulle condizioni dei criteri per il mittente.](./media/communication-compliance-warning-2.png)
 
 Esempio di suggerimento per i criteri visualizzato dal destinatario:
 
-![Suggerimento per i criteri per il destinatario](./media/communication-compliance-warning-3.png)
+![Suggerimento per i criteri per il destinatario.](./media/communication-compliance-warning-3.png)

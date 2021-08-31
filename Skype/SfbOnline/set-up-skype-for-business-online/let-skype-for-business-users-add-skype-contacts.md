@@ -19,23 +19,23 @@ f1.keywords:
 ms.custom:
 - Setup
 - LIL_Placement
-description: "Scopri come consentire alle persone che usano Skype for Business di contattare Skype for Business utenti esterni all'organizzazione e aggiungerli al loro elenco di contatti. "
-ms.openlocfilehash: 77fb8098e7adeebd4267aed7f21153b20abd661b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Scopri come consentire alle persone che usano Skype for Business contattare Skype for Business utenti esterni all'organizzazione e aggiungerli al loro elenco di contatti. "
+ms.openlocfilehash: e5ee802b434f0d65f9301757699e2bddc65a579f
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58594840"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730545"
 ---
 # <a name="let-skype-for-business-users-add-skype-contacts"></a>Consentire agli utenti di Skype for Business di aggiungere contatti Skype
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Con Skype for Business, gli utenti possono cercare e messaggi istantanei con chiunque usi Skype, l'app gratuita! Questo articolo spiega cosa è necessario fare in modo che possano aggiungere Skype contatti. 
+Con Skype for Business, gli utenti possono cercare e messaggistica istantanea con chiunque usi Skype, l'app gratuita! Questo articolo spiega cosa è necessario fare in modo che possano aggiungere Skype contatti. 
   
-Per eseguire questa [operazione,](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) è Microsoft 365 o Office 365 autorizzazioni di amministratore.
+Per eseguire [questa](https://support.office.com/article/da585eea-f576-4f55-a1e0-87090b6aaa9d?ui=en-US&rs=en-US&ad=US) operazione, è Microsoft 365 o Office 365 autorizzazioni di amministratore.
 
-![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
   
 1. Accedere con l'account Microsoft 365 o Office 365 amministratore di [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home#/homepage) .
     
@@ -49,19 +49,19 @@ Per eseguire questa [operazione,](https://support.office.com/article/da585eea-f5
     
     ![Scegliere Consenti agli utenti di Skype for Business comunicare con Skype.](../images/333789f8-2ea6-4bbd-805b-18130f427999.png)
   
-    Se si vuole che gli utenti chattino con Skype utenti, ma non si vuole che chattino con altri utenti che usano Skype for Business, scegliere Sì solo per i **domini consentiti.** Quando si abilita il contatto con Skype utenti, skype.com viene aggiunto automaticamente come dominio consentito dietro le quinte. 
+    Se si vuole che gli utenti chattino con gli utenti di Skype, ma non si vuole che chattino con altri utenti che usano Skype for Business, scegliere Sì solo per i **domini consentiti.** Quando si abilita il contatto con Skype utenti, skype.com viene aggiunto automaticamente come dominio consentito dietro le quinte. 
     
     Se si vuole consentire ai contatti di tutte le altre aziende del mondo di usare Skype for Business, ad eccezione di quelli specifici, scegliere Sì ad eccezione dei domini bloccati **e** scegliere di aggiungere **+** tali domini. Tutti saranno in grado di contattare l'utente tranne le persone di questi domini specifici. Alcune aziende potrebbero scegliere questa opzione, ad esempio, se sono in controversia legale e devono assicurarsi che non ci siano contatti con l'altra azienda.
     
-5. Scegliere Consenti agli utenti di Skype for Business comunicare con Skype **utenti esterni all'organizzazione.** 
+5. Scegliere Consenti agli utenti di Skype for Business di comunicare con Skype **utenti esterni all'organizzazione.** 
     
-6.  Se si usa Windows Firewall, Skype for Business automaticamente le porte necessarie.
+6.  Se si usa il firewall Windows, Skype for Business automaticamente le porte richieste.
     
-    Se l'organizzazione usa un'altra soluzione per limitare la connessione a Internet dei computer della rete, verificare che i computer client siano in grado di accedere a tutti gli indirizzi IP e gli [URL](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) per la connettività Skype e la ricerca nella directory Skype. Potrebbe essere necessario aggiungerli all'elenco di indirizzi consentiti in uscita nella configurazione del firewall o dell'infrastruttura proxy.
+    Se l'organizzazione usa un'altra soluzione per limitare la connessione a Internet dei computer della rete, verificare che i computer client siano in grado di accedere a tutti gli indirizzi [IP](https://support.office.com/article/8548a211-3fe7-47cb-abb1-355ea5aa88a2) e gli URL per la connettività Skype e la ricerca nella directory Skype. Potrebbe essere necessario aggiungerli all'elenco di indirizzi consentiti in uscita nella configurazione del firewall o dell'infrastruttura proxy.
     
 7. **ATTENDERE FINO A 24 ORE PER TESTARE**. Ogni volta che si modificano le impostazioni delle comunicazioni esterne, possono essere necessarie fino a 24 ore prima che le modifiche possano essere popolate in tutti i data center.
     
-8. Mostra agli utenti come trovare e aggiungere Skype contatti all'elenco di Skype for Business contatti. Selezionare Cerca [persone in Skype for Business](https://support.office.com/article/b12500ef-e37f-4d22-aade-c11277e53f19).
+8. Mostrare agli utenti come trovare e aggiungere Skype contatti all'elenco di Skype for Business contatti. Selezionare Cerca [persone in Skype for Business.](https://support.office.com/article/b12500ef-e37f-4d22-aade-c11277e53f19)
     
 ## <a name="test-and-troubleshoot"></a>Testare e risolvere i problemi
 
@@ -85,11 +85,11 @@ Per testare la configurazione, è necessario un contatto Skype che non sia dietr
     
 ## <a name="what-you-can-and-cant-do"></a>Cosa si può e non si può fare
 
-- **Skype for Business in Mac** non è possibile cercare e comunicare con Skype contatti.
+- **Skype for Business mac** non è in grado di cercare e comunicare con Skype contatti.
     
 - Quando la ricerca nella directory è abilitata, è possibile cercare e trovare Skype e Skype for Business utenti. Se per qualche motivo non è possibile trovarli eseguendo una ricerca nella directory, è possibile inviare una richiesta di contatto e chiedere loro di accedere a Skype e accettarla, in modo da potervi inviare messaggi istantanei. 
     
-- Non è possibile consentire la connettività di messaggistica istantanea con altri provider di messaggistica istantanea, ad esempio Google o Facebook. Non è possibile usare i messaggi Skype for Business per inviare SMS al cellulare.
+- Non è possibile consentire la connettività di messaggistica istantanea con altri provider di messaggistica istantanea, ad esempio Google o Facebook. Non è possibile usare le Skype for Business per inviare SMS al cellulare.
 
 - Non è possibile registrare chiamate audio o video tra un contatto Skype contatto Skype for Business contatto.
     

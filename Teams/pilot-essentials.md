@@ -7,7 +7,7 @@ ms.topic: article
 ms.service: msteams
 ms.reviewer: landerl
 audience: admin
-description: Indicazioni per l'avvio di Microsoft Teams pilota per esplorare tutto ciò Teams offrire all'organizzazione, mentre si continua a usare Skype for Business
+description: Indicazioni per avviare un Microsoft Teams pilota per esplorare tutto ciò Teams offrire all'organizzazione, mentre si continua a usare Skype for Business
 ms.localizationpriority: medium
 ms.custom: Teams-upgrade-guidance
 search.appverid: MET150
@@ -18,16 +18,16 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6164d1db4117550519c170b982cc8285196203a2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 521e5eb81d2688c924e3f2c76a25c86f6645b02d
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58613615"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733295"
 ---
 # <a name="conduct-a-user-pilot"></a>Condurre un progetto pilota per gli utenti
 
-![Diagramma del percorso di aggiornamento, evidenziazione della distribuzione e dell'implementazione](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di distribuzione e implementazione")
+![Diagramma del percorso di aggiornamento, che evidenzia la distribuzione e l'implementazione.](media/upgrade-banner-deployment.png "Fasi del percorso di aggiornamento, con particolare attenzione alla fase di distribuzione e implementazione")
 
 Questo articolo fa parte della fase di distribuzione e implementazione del percorso di aggiornamento e condivide informazioni approfondite per l'esecuzione di un progetto pilota efficace. Prima di procedere, verificare di aver completato le attività seguenti:
 
@@ -40,19 +40,19 @@ Questo articolo fa parte della fase di distribuzione e implementazione del perco
 
 Con la distribuzione di nuove tecnologie, l'organizzazione può realizzare il valore aziendale, ad esempio il risparmio dei costi, la conformità alla sicurezza, la soddisfazione dei dipendenti e l'efficienza operativa, ma può anche influire sulla produttività degli utenti e sull'infrastruttura organizzativa (la rete). Prima di abilitare le nuove tecnologie all'interno dell'organizzazione, condurre un progetto pilota formale per gli utenti. Proprio come si dipinge una piccola macchia di colore su un muro prima di dipingere l'intera sala, è possibile testare un'ampia implementazione su scala più piccola conducendo un progetto pilota per convalidare la conformità tecnica e degli utenti, identificare e ridurre i problemi e contribuire a garantire un'implementazione di successo a livello di organizzazione.
 
-Per ottenere i risultati più realistici, il progetto pilota deve coinvolgere gli utenti effettivi, simulare il modo in cui comunicano e collaborano e verificare sia le esperienze tecniche che le esperienze utente. Se l'organizzazione sta valutando l'esecuzione di Skype for Business e Teams affiancati, l'aggiornamento a Teams in futuro o la distribuzione di nuove funzionalità, ad esempio chiamate o conferenze, un progetto pilota può aiutare a identificare il percorso giusto per l'organizzazione. A volte considerato la fase 1 di un'implementazione, il progetto pilota ideale sfrutta la preparazione già avviata e implementa il piano definito con un gruppo mirato di utenti.
+Per ottenere i risultati più realistici, il progetto pilota deve coinvolgere gli utenti effettivi, simulare il modo in cui comunicano e collaborano e verificare sia le esperienze tecniche che le esperienze utente. Se l'organizzazione sta pensando di eseguire Skype for Business e Teams affiancati, eseguire l'aggiornamento a Teams in futuro o distribuire nuove funzionalità come chiamate o conferenze, un progetto pilota può aiutare a identificare il percorso giusto per l'organizzazione. A volte considerato la fase 1 di un'implementazione, il progetto pilota ideale sfrutta la preparazione già avviata e implementa il piano definito con un gruppo mirato di utenti.
 
 | | |
 |---|---|
-| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Come userai un progetto pilota per informare la direzione del progetto?</li></ul> |
-| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Usare le indicazioni seguenti per progettare ed eseguire il progetto pilota formale.</li></ul>|
+| ![Icona che rappresenta un punto di decisione.](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Come userai un progetto pilota per informare la direzione del progetto?</li></ul> |
+| ![Icona che rappresenta il passaggio successivo.](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Usare le indicazioni seguenti per progettare ed eseguire il progetto pilota formale.</li></ul>|
 
 > [!Tip]
 > Usare le risorse [pilota di esempio per](https://aka.ms/UpgradeSuccessKit) progettare le comunicazioni, il piano di test e il sondaggio di feedback.
 
 ## <a name="1-outline-pilot-logistics"></a>1. Delineare la logistica pilota
 
-Un progetto pilota di successo ha definito le date di inizio e di fine e ha definito chiaramente [gli obiettivi](upgrade-define-project-scope.md#project-goals) per misurare il successo. Questi obiettivi devono essere allineati all'ambito del progetto più ampio, come documentato quando è stato definito l'ambito del [progetto,](upgrade-define-project-scope.md)e verranno usati per informare il percorso in avanti dopo la fine del progetto pilota. È anche necessario assicurarsi di aver incluso gli stakeholder per la durata del progetto. È consigliabile concedere tempo sufficiente per eseguire il progetto pilota e valutarne l'impatto: è consigliabile almeno 30 giorni.
+Un progetto pilota di successo ha definito le date di inizio e di fine e ha definito chiaramente [gli obiettivi](upgrade-define-project-scope.md#project-goals) per misurare il successo. Questi obiettivi devono essere allineati all'ambito del progetto più ampio, come documentato quando è stato definito l'ambito del [progetto,](upgrade-define-project-scope.md)e verranno usati per informare il percorso futuro dopo la fine del progetto pilota. È anche necessario assicurarsi di aver incluso gli stakeholder per la durata del progetto. È consigliabile concedere tempo sufficiente per eseguire il progetto pilota e valutarne l'impatto: è consigliabile almeno 30 giorni.
 
 Iniziare con piccole dimensioni e aggiungerlo al progetto pilota in base alle esigenze, aggiungendo carichi di lavoro o funzionalità o altri utenti, con il tempo necessario per valutare i risultati e modificare il progetto pilota durante l'iterazione. È anche possibile scegliere di eseguire i progetti pilota successivi man Teams nuove funzionalità vengono rilasciate in base alla roadmap.
 
@@ -61,24 +61,24 @@ Iniziare con piccole dimensioni e aggiungerlo al progetto pilota in base alle es
 Una delle attività più importanti della pianificazione pilota è la selezione attenta dei partecipanti. Tenere presente che Teams è ottimizzato per il lavoro in team, quindi assicurarsi di selezionare i partecipanti pilota non solo in base a ruoli o persone, ma anche in base al progetto e al lavoro tra team. Un ottimo punto di partenza è chiedere agli stakeholder e ai responsabili di reparto progetti reali che è possibile convalidare in Teams. Un esempio di progetto basato sui ruoli può essere l'uso di Teams con l'organizzazione di vendita per assicurarsi che i rappresentanti di campo possano accedere facilmente alle risorse necessarie e condividere informazioni approfondite con altri membri del campo. Un esempio di lavoro basato su progetto potrebbe essere il coordinamento di un evento di lancio del prodotto con i team di marketing, formazione, pubbliche relazioni e pianificazione di eventi. Indipendentemente da qualsiasi scenario selezionato, il progetto pilota deve estendersi alle persone chiave dell'IT, della formazione e dell'helpdesk, in modo da poter convalidare a fondo la soluzione ottimizzando completamente le risorse di gestione dei progetti.
 
 > [!Tip]
-> Quando si selezionano Teams partecipanti al gruppo pilota, assicurarsi di includere gli utenti principali di Skype for Business. Rivolgersi a questi utenti per sapere come usano oggi Skype for Business, quindi creare un piano di test per verificare che Teams le esigenze correnti.
+> Quando si selezionano Teams partecipanti al gruppo pilota, assicurarsi di includere gli utenti principali Skype for Business. Rivolgersi a questi utenti per sapere come usano Skype for Business oggi stesso, quindi creare un piano di test per verificare che Teams in grado di soddisfare le proprie esigenze correnti.
 
 ## <a name="3-design-your-test-plan-and-feedback-survey"></a>3. Progettare il piano di test e il sondaggio di feedback
 
 Per un'esperienza pilota di successo, assegnare ai partecipanti una definizione chiara delle attività da completare e un modo per condividere il proprio feedback. Raggruppare le attività per offrire scenari reali agli utenti, dimostrando la pertinenza delle attività quotidiane. Consentire ai casi di utilizzo definiti in Valutare la conformità [alle modifiche dell'organizzazione come](./upgrade-org-change-readiness.md) guida per il piano di test.
 
-L'organizzazione potrebbe scegliere di pilotare tutte le funzionalità contemporaneamente o di usare un approccio graduale, ad esempio prima la collaborazione pilota, poi le riunioni, quindi la chat e le chiamate. Assicurarsi di avere un canale di feedback aperto per tenere traccia dello stato di avanzamento e misurare i risultati. Usare un sondaggio predefinito come modo semplice per acquisire e valutare i risultati pilota; La progettazione del sondaggio deve essere basata sugli scenari e sulle caratteristiche del piano di test.
+L'organizzazione può scegliere di pilotare tutte le funzionalità contemporaneamente o di usare un approccio graduale, ad esempio prima la collaborazione pilota, poi le riunioni, quindi la chat e le chiamate. Assicurarsi di avere un canale di feedback aperto per tenere traccia dello stato di avanzamento e misurare i risultati. Usare un sondaggio predefinito come modo semplice per acquisire e valutare i risultati pilota; La progettazione del sondaggio deve essere basata sugli scenari e sulle caratteristiche del piano di test.
 
 ## <a name="4-create-your-communications-plan"></a>4. Creare il piano di comunicazione
 
-Per il successo del progetto pilota è fondamentale informare i partecipanti al progetto pilota su cosa succede, quando e perché e cosa ci si aspetta da loro. Per creare entusiasmo e massima partecipazione, assicurarsi di includere la messaggistica del valore dell'utente oltre ai collegamenti alla formazione e al supporto tecnico, in cui gli utenti possono ottenere altre informazioni mentre avanzano nel progetto pilota. Ecco alcune risorse di esempio per iniziare a usare il piano di comunicazione pilota:
+È fondamentale per il successo del progetto pilota informare i partecipanti pilota su cosa succede, quando e perché e cosa ci si aspetta da loro. Per creare entusiasmo e massima partecipazione, assicurarsi di includere la messaggistica del valore dell'utente oltre ai collegamenti alla formazione e al supporto tecnico, in cui gli utenti possono ottenere altre informazioni mentre avanzano nel progetto pilota. Ecco alcune risorse di esempio per iniziare a usare il piano di comunicazione pilota:
 
 - [Risorse pilota, inclusi](https://aka.ms/UpgradeSuccessKit)modelli di posta elettronica e domande di sondaggio di feedback di esempio
 - [Passare a Teams da Skype for Business](https://support.office.com/article/Switch-to-Teams-from-Skype-for-Business-6295a0ae-4e8e-4bba-a100-64cc951cc964), una guida introduttiva progettata per aiutare Skype for Business utenti a iniziare a usare Teams
 
 ## <a name="5-conduct-your-pilot"></a>5. Condurre il progetto pilota
 
-Con tutta la logistica in atto, ora sei pronto per iniziare il tuo progetto pilota. Condurre il progetto pilota include la comunicazione con gli utenti, il monitoraggio della rete e dell'utilizzo per garantire che le prestazioni di rete e la qualità delle chiamate rimangano integre, la raccolta dei feedback dei partecipanti e la revisione dei ticket dell'helpdesk per le domande relative a Teams.
+Con tutta la logistica in atto, ora sei pronto per iniziare il tuo progetto pilota. Condurre il progetto pilota include la comunicazione con gli utenti, il monitoraggio della rete e dell'utilizzo per garantire che le prestazioni di rete e la qualità delle chiamate rimangano integre, la raccolta di feedback dei partecipanti e la revisione dei ticket dell'helpdesk per le domande relative a Teams.
 
 ### <a name="tips-for-pilot-success"></a>Suggerimenti successo pilota
 
@@ -108,9 +108,9 @@ Se i risultati indicano:
 
 - **Gli obiettivi pilota , ad** esempio la soddisfazione degli utenti e la qualità della rete, sono stati raggiunti, dovrebbe essere possibile procedere con la fase successiva dell'implementazione. A seconda degli obiettivi del progetto, questo potrebbe essere uno dei seguenti:
   - Estensione del progetto pilota ad altri partecipanti
-  - [Abilitazione Teams di Skype for Business **(modalità** Isole) per alcune o tutte le organizzazioni](./setting-your-coexistence-and-upgrade-settings.md)
-  - [Aggiornamento degli utenti da Skype for Business a Teams **(solo** Teams) per alcune o tutte le organizzazioni](./setting-your-coexistence-and-upgrade-settings.md)
-- **Il progetto pilota non** ha raggiunto i risultati che si desiderava, ad esempio la soddisfazione degli utenti e la qualità della rete, è necessario del tempo per apportare le modifiche appropriate al piano e rivisitare il progetto pilota.
+  - [Abilitazione Teams insieme Skype for Business **(modalità** Isole) per alcune o tutte le organizzazioni](./setting-your-coexistence-and-upgrade-settings.md)
+  - [Aggiornamento degli utenti da Skype for Business a Teams **(solo Teams)** per alcune o tutte le organizzazioni](./setting-your-coexistence-and-upgrade-settings.md)
+- **Il progetto pilota non** ha raggiunto i risultati che si desiderava, ad esempio la soddisfazione degli utenti e la qualità della rete, è necessario del tempo per apportare le modifiche appropriate al piano e rivedere il progetto pilota.
 
 > [!Tip]
 > Arruolare i partecipanti pilota come campioni peer per aiutare a evangelizzare e a bordo nuovi utenti per Teams. I campioni peer possono facilmente relazionarsi con altri utenti, condividere esperienze e apprendimenti e offrire supporto e indicazioni ai colleghi. Altre informazioni sui [campioni](https://go.microsoft.com/fwlink/?linkid=859068) e su come usarli all'interno della propria implementazione.

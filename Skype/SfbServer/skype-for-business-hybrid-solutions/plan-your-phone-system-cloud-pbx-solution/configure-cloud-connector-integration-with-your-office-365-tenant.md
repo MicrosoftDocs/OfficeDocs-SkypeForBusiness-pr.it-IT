@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 0e2f2395-b890-4d16-aa2d-99d52438b89c
 description: Informazioni su come configurare l'integrazione di Cloud Connector con l'Microsoft 365 o Office 365 organizzazione.
-ms.openlocfilehash: 5e6cf8033a4207b79ff2f7d0915849b19eec2b65
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b3b8b13669a2e52ed5146e1bd0ca179a5542e43d
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628528"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733375"
 ---
 # <a name="configure-cloud-connector-integration-with-your-microsoft-365-or-office-365-organization"></a>Configurare l'integrazione del connettore cloud con Microsoft 365 o Office 365 organizzazione
 
@@ -30,11 +30,11 @@ ms.locfileid: "58628528"
 
 Informazioni su come configurare l'integrazione di Cloud Connector con l'Microsoft 365 o Office 365 organizzazione.
   
-Al termine dell Skype for Business Cloud Connector Edition installazione, eseguire i passaggi descritti in questa sezione per configurare la distribuzione e connetterla all'Microsoft 365 o Office 365'organizzazione.
+Al termine dell Skype for Business Cloud Connector Edition installazione, eseguire i passaggi descritti in questa sezione per configurare la distribuzione e connetterla all'Microsoft 365 o Office 365 organizzazione.
   
 ## <a name="configure-firewall-settings"></a>Configurare le impostazioni del firewall
 
-Configurare le impostazioni del firewall per le impostazioni del firewall interno ed esterno in modo che la rete perimetrale abiliti le porte necessarie, come descritto in [Porte](plan-skype-for-business-cloud-connector-edition.md#BKMB_Ports) e protocolli in [Plan for Skype for Business Cloud Connector Edition](plan-skype-for-business-cloud-connector-edition.md).
+Configurare le impostazioni del firewall per le impostazioni del firewall interno ed esterno per la rete perimetrale in modo da aprire le porte necessarie, come descritto in [Porte](plan-skype-for-business-cloud-connector-edition.md#BKMB_Ports) e protocolli in [Plan for Skype for Business Cloud Connector Edition](plan-skype-for-business-cloud-connector-edition.md).
   
 ## <a name="set-up-public-switched-telephone-network-pstn-gateways"></a>Configurare i gateway PSTN (Public Switched Telephone Network)
 
@@ -66,7 +66,7 @@ Aggiungere i record DNS seguenti all'Microsoft 365 o Office 365'organizzazione. 
     
 2. I record SRV verranno creati automaticamente da Microsoft 365 o Office 365 e dagli script di distribuzione. Verificare che sia possibile cercare i due servizi SIP seguenti nell'edge: \_ sip e \_ sipfederationtls.
     
-     ![Conferma record SRV](../../media/3c353a29-6dcc-4ed3-98db-3a6bed3e929e.png)
+     ![Conferma record SRV.](../../media/3c353a29-6dcc-4ed3-98db-3a6bed3e929e.png)
   
 ## <a name="set-up-hybrid-connectivity-between-cloud-connector-edition-and-microsoft-365-or-office-365"></a>Configurare la connettività ibrida tra Cloud Connector Edition e Microsoft 365 o Office 365
 
@@ -104,9 +104,9 @@ Se si utilizza TLS tra Mediation Server e gateway, sarà necessario configurare 
     
 ## <a name="set-up-your-users"></a>Configurare gli utenti
 
-Accedere al interfaccia di amministrazione di Microsoft 365, aggiungere gli utenti che verranno abilitati per i servizi vocali online e assegnare una licenza E5 o un componente aggiuntivo Sistema telefonico alla licenza E3 a questi utenti. Per informazioni sull'aggiunta di utenti, vedere [Add users to Microsoft 365 for business.](https://support.office.com/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc)
+Accedi al interfaccia di amministrazione di Microsoft 365, aggiungi gli utenti che saranno abilitati per i servizi vocali online e assegna una licenza E5 o un componente aggiuntivo Sistema telefonico alla licenza E3 a questi utenti. Per informazioni sull'aggiunta di utenti, vedere [Add users to Microsoft 365 for business.](https://support.office.com/article/Add-users-to-Office-365-for-business-435ccec3-09dd-4587-9ebd-2f3cad6bc2bc)
   
-## <a name="enable-users-for-phone-system-voice-and-voicemail-services"></a>Abilitare gli utenti per Sistema telefonico servizi di segreteria telefonica e vocale
+## <a name="enable-users-for-phone-system-voice-and-voicemail-services"></a>Abilitare gli utenti per Sistema telefonico di segreteria telefonica e vocale
  
 Dopo aver aggiunto gli utenti a Microsoft 365 o Office 365, abilitare i propri account per i Sistema telefonico vocali, inclusa la segreteria telefonica. Per abilitare queste funzionalità, è necessario accedere all'organizzazione di Microsoft 365 o Office 365 con un account che sia un ruolo amministratore globale ed essere in grado di eseguire PowerShell remoto. Per informazioni su come stabilire una sessione remota di PowerShell, vedere: [Configurare il computer per Windows PowerShell](../../../SfbOnline/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell.md)
   
@@ -172,7 +172,7 @@ Quando una chiamata P2P viene inoltrata a una conferenza PSTN, il server per con
     
     Utilizzare il dominio SIP predefinito di Cloud Connector (il primo dominio SIP nel file .ini) come dominio utente.
     
-    Tenere presente che l'assegnazione della licenza è necessaria solo per la propagazione dell'utente nella directory Skype for Business online. Assegnare una licenza di Microsoft 365 o Office 365 (ad esempio E5) all'account creato, consentire fino a un'ora per la propagazione delle modifiche, verificare che il provisioning degli account utente sia stato eseguito correttamente nella directory online di Skype for Business eseguendo il cmdlet seguente, quindi rimuovere la licenza da questo account.
+    Tenere presente che l'assegnazione della licenza è necessaria solo per la propagazione dell'utente nella directory Skype for Business online. Assegnare una licenza Microsoft 365 o Office 365 (ad esempio E5) all'account creato, consentire fino a un'ora per la propagazione delle modifiche, verificare che il provisioning degli account utente sia stato eseguito correttamente nella directory online di Skype for Business eseguendo il cmdlet seguente, quindi rimuovere la licenza da questo account.
     ```powershell
    Get-CsOnlineUser -Identity <UserPrincipalName>
    ```
@@ -183,7 +183,7 @@ Quando una chiamata P2P viene inoltrata a una conferenza PSTN, il server per con
    Set-MsolUser -UserPrincipalName <UserPrincipalName> -Department "HybridMediationServer"
    ```
 
-3. Avviare una sessione remota di PowerShell del tenant Skype for Business utilizzando le credenziali di amministratore tenant di Skype for Business, quindi eseguire il cmdlet seguente per impostare l'FQDN del Mediation Server e del server perimetrale su tale account utente, sostituendo con il nome visualizzato dell'utente per l'account creato nel \<DisplayName\> passaggio 1:
+3. Avviare una sessione remota di PowerShell del tenant Skype for Business utilizzando le credenziali di amministratore tenant di Skype for Business, quindi eseguire il cmdlet seguente per impostare il mediation server e il nome di dominio completo del server perimetrale su tale account utente, sostituendo con il nome visualizzato dell'utente per l'account creato \<DisplayName\> nel passaggio 1:
     
    ```powershell
    Set-CsHybridMediationServer -Identity <DisplayName> -Fqdn <MediationServerFQDN> -AccessProxyExternalFqdn <EdgeServerExternalFQDN>

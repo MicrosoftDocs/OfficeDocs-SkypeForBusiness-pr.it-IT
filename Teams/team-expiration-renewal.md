@@ -11,17 +11,17 @@ ms.localizationpriority: medium
 search.appverid: MET150
 ms.collection:
 - M365-collaboration
-description: Informazioni sulla scadenza e il rinnovo del team e su come usare i criteri di scadenza Microsoft 365 gruppo per pulire automaticamente i team inutilizzati Microsoft Teams.
+description: Informazioni sulla scadenza e il rinnovo del team e su come usare i criteri di scadenza Microsoft 365 gruppo per pulire automaticamente i team inutilizzati in Microsoft Teams.
 f1.keywords:
 - NOCSH
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0e8f123bf7a351689747649b75f429588445a5d6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 14c76bd56fa7e6e9392550fa61385539415e52eb
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625928"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733555"
 ---
 # <a name="team-expiration-and-renewal-in-microsoft-teams"></a>Scadenza e rinnovo del team in Microsoft Teams
 
@@ -31,7 +31,7 @@ Per limitare il numero di team inutilizzati, come [](/microsoft-365/admin/create
 
 Quando si applicano criteri di scadenza a un team, il proprietario del team riceve una notifica per il rinnovo del team 30 giorni, 15 giorni e 1 giorno prima della data di scadenza del team. Quando il proprietario del team riceve la notifica, può fare clic su Rinnova **ora** nelle impostazioni del team per rinnovare il team.
 
-![Screenshot del pulsante Rinnova ora per rinnovare un team nelle impostazioni del team](media/team-expiration.png "Screenshot del pulsante Rinnova ora per rinnovare un team nelle impostazioni del team")
+![Screenshot del pulsante Rinnova ora per rinnovare un team nelle impostazioni del team.](media/team-expiration.png "Screenshot del pulsante Rinnova ora per rinnovare un team nelle impostazioni del team")
 
 Se il proprietario del team non rinnova il team e non ci sono altre attività nel team fino alla fine dei criteri di scadenza, il team viene inserito in uno stato "soft-deleted", ovvero può essere ripristinato entro i prossimi 30 giorni.
 

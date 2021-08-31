@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 3363ac53-b7c4-4a59-aea1-b2f3ee016ae1
 description: Viene fornito un esempio dettagliato di pianificazione del controllo di ammissione di chiamata in Skype for Business Server VoIP aziendale, inclusa la raccolta di informazioni sui siti, le aree geografiche e la larghezza di banda della rete.
-ms.openlocfilehash: 88af4148bbdd4063f3897d246a7c56795928ad01
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 180e62ca2784186c4cd9e646548183ddbcfeac30
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58590991"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731455"
 ---
 # <a name="example-gathering-requirements-for-call-admission-control-in-skype-for-business-server"></a>Esempio: Raccolta dei requisiti per il controllo di ammissione di chiamata in Skype for Business Server
 
@@ -39,7 +39,7 @@ In questo esempio viene illustrato come pianificare e implementare il servizio C
 
 5. Associare ogni subnet della rete a un sito di rete.
 
-6. Eseguire il mapping dei collegamenti tra le aree di rete. Per ogni collegamento, descrivere la capacità della larghezza di banda e gli eventuali limiti che l'amministratore di rete ha Skype for Business Server traffico multimediale.
+6. Eseguire il mapping dei collegamenti tra le aree di rete. Per ogni collegamento, descrivere la capacità della larghezza di banda e gli eventuali limiti che l'amministratore di rete ha posto Skype for Business Server traffico multimediale.
 
 7. Definire una route tra ogni coppia di aree di rete.
 
@@ -57,7 +57,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
    **Rete aziendale di esempio divisa in tre aree di rete**
 
-     ![Esempio di topologia di rete con 3 aree di rete](../../media/Plan_CS_VoiceCAC_example3networkregions.jpg)
+     ![Esempio di topologia di rete con 3 aree di rete.](../../media/Plan_CS_VoiceCAC_example3networkregions.jpg)
 
     > [!NOTE]
     > Una rete Multiprotocol Label Switching (MPLS) dovrebbe essere rappresentata come area di rete in cui a ogni posizione geografica corrisponde un sito di rete. Per informazioni dettagliate, [vedere Components and topologies for call admission control in Skype for Business](components-and-topologies.md). 
@@ -77,7 +77,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
     |APAC  <br/> |Pechino  <br/> |
 
     > [!NOTE]
-    > A seconda della Skype for Business Server, lo stesso sito centrale può essere assegnato a più aree di rete. 
+    > A seconda della topologia Skype for Business Server, lo stesso sito centrale può essere assegnato a più aree di rete. 
 
 3. Per ogni area di rete, identificare tutti i siti di rete (uffici o postazioni) le cui connessioni WAN non siano vincolate dalla larghezza di banda. Poiché questi siti non sono vincolati dalla larghezza di banda, non è necessario applicare criteri di larghezza di banda del servizio Controllo di ammissione di chiamata.
 
@@ -109,7 +109,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
    **Area di rete Nord America con servizio Controllo di ammissione di chiamata con tre siti di rete non vincolati dalla larghezza di banda (Chicago, New York e Detroit) e tre siti di rete vincolati dalla larghezza di banda della WAN (Portland, Reno e Albuquerque)**
 
-     ![Siti di rete di esempio vincolati dalla larghezza di banda WAN](../../media/Plan_CS_VoiceCAC_comparisonof6regionsandconstraints.jpg)
+     ![Siti di rete di esempio vincolati dalla larghezza di banda WAN.](../../media/Plan_CS_VoiceCAC_comparisonof6regionsandconstraints.jpg)
 
 5. Per ogni collegamento WAN con vincoli di larghezza di banda, determinare quanto segue:
 
@@ -187,7 +187,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
    **Collegamenti aree di rete con limiti di larghezza di banda associati**
 
-     ![Esempio di limitazioni tra 3 aree geografiche](../../media/Plan_CS_VoiceCAC_limitsbetween3regions.jpg)
+     ![Esempio di limitazioni tra 3 aree geografiche.](../../media/Plan_CS_VoiceCAC_limitsbetween3regions.jpg)
 
    **Informazioni sulla larghezza di banda dei collegamenti aree (larghezza di banda in kbps)**
 
@@ -225,7 +225,7 @@ Per la preparazione per il servizio Controllo di ammissione di chiamata, raccogl
 
    **Area di rete Nord America con servizio Controllo di ammissione di chiamata in cui vengono indicate le capacità di larghezza di banda e i limiti di larghezza di banda per il collegamento tra siti tra Reno e Albuquerque**
 
-     ![Esempio di siti di rete vincolati dalla larghezza di banda WAN](../../media/Plan_CS_VoiceCAC_limitsforNAdirectlinksRenoAlbuq.jpg)
+     ![Esempio di siti di rete vincolati dalla larghezza di banda WAN.](../../media/Plan_CS_VoiceCAC_limitsforNAdirectlinksRenoAlbuq.jpg)
 
    **Informazioni sulla larghezza di banda per un collegamento tra siti tra due siti di rete (larghezza di banda in kbps)**
 

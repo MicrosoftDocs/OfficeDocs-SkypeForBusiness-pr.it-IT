@@ -7,7 +7,7 @@ ms.topic: conceptual
 ms.service: msteams
 audience: admin
 ms.reviewer: landerl
-description: L'amministratore può conoscere le attività e le attività necessarie per il monitoraggio della qualità e dell'uso Microsoft Teams.
+description: L'amministratore può conoscere le attività e le attività necessarie per il monitoraggio della qualità e dell'uso di Microsoft Teams.
 ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
@@ -20,22 +20,22 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b4bb596cd7903ec7ff9afdecac1436b4b4e2653c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 2edea426fbc9ad0a7c6de026af2a9b5ecf893e1a
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58633940"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733925"
 ---
 # <a name="quality-of-experience-review-guide"></a>Guida sul controllo della qualità dell'esperienza
 
-![Diagramma che evidenzia la fase di eccellenza operativa del percorso di aggiornamento](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con enfasi sulla fase Di eccellenza operativa")
+![Diagramma che evidenzia la fase di eccellenza operativa del percorso di aggiornamento.](media/upgrade-banner-op-excellence.png "Fasi del percorso di aggiornamento, con enfasi sulla fase Di eccellenza operativa")
 
-Questo articolo fa parte della fase di eccellenza operativa del percorso di aggiornamento, che inizia non appena è stato completato l'aggiornamento da Skype for Business a Teams.
+Questo articolo fa parte della fase operational excellence del percorso di aggiornamento, che inizia non appena è stato completato l'aggiornamento da Skype for Business a Teams.
 
 ## <a name="improve-and-monitor-call-quality"></a>Migliorare e monitorare la qualità delle chiamate
 
-[Migliorare e monitorare](monitor-call-quality-qos.md) la qualità delle chiamate per Teams include un set di attività che valutano e forniscono indicazioni per la correzione nelle aree chiave che hanno l'impatto maggiore sul miglioramento dell'esperienza utente, come illustrato di seguito.
+[Migliorare e monitorare](monitor-call-quality-qos.md) la qualità delle chiamate per Teams include una serie di attività che valutano e forniscono indicazioni per la correzione nelle aree chiave che hanno l'impatto maggiore sul miglioramento dell'esperienza utente, come illustrato di seguito.
 
 ![Illustrazione delle aree chiave da esaminare durante una revisione.](media/plan-my-service-management-image2.png "Aree chiave da esaminare durante una verifica della qualità dell'esperienza: audio, affidabilità e risultati dei sondaggi degli utenti.")
 

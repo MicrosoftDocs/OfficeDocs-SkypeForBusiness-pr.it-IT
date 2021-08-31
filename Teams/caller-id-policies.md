@@ -17,13 +17,13 @@ appliesto:
 - Microsoft Teams
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su come usare e gestire i criteri id chiamante in Microsoft Teams modificare o bloccare l'ID chiamante Teams utenti dell'organizzazione.
-ms.openlocfilehash: ee663a627e89d7ea2a569496a899d2d68b8366ef
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni su come usare e gestire i criteri id chiamante in Microsoft Teams per modificare o bloccare l'ID chiamante Teams utenti dell'organizzazione.
+ms.openlocfilehash: 455bf7e6f2b0e29824188dab3c14ff6cc6b51c91
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619632"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731225"
 ---
 # <a name="manage-caller-id-policies-in-microsoft-teams"></a>Gestire i criteri dell'ID chiamante in Microsoft Teams
 
@@ -38,9 +38,9 @@ Per gestire i criteri id chiamante, accedere **ai** criteri ID chiamante vocale 
 
 ## <a name="create-a-custom-caller-id-policy"></a>Creare criteri ID chiamante personalizzati
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri  >  **ID chiamante vocale.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare **a** Criteri  >  **ID chiamante vocale.**
 2. Fare clic su **Aggiungi**. <br>
-![Screenshot della nuova pagina dei criteri per l'ID chiamante nell'interfaccia di amministrazione](media/caller-id-policies-add-policy.png)
+![Screenshot della nuova pagina dei criteri per l'ID chiamante nell'interfaccia di amministrazione.](media/caller-id-policies-add-policy.png)
 3. Immettere un nome e una descrizione per il criterio.
 4. Da qui scegliere le impostazioni desiderate:
 
@@ -60,7 +60,7 @@ Per gestire i criteri id chiamante, accedere **ai** criteri ID chiamante vocale 
 
 È possibile modificare i criteri globali o i criteri personalizzati creati dall'utente. 
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare **a** Criteri  >  **ID chiamante vocale.**
+1. Nel riquadro di spostamento sinistro dell'Microsoft Teams di amministrazione passare **a** Criteri  >  **ID chiamante vocale.**
 2. Selezionare il criterio facendo clic a sinistra del nome del criterio, quindi selezionare **Modifica**.
 3. Modificare le impostazioni desiderate e quindi fare clic su **Salva.**
 

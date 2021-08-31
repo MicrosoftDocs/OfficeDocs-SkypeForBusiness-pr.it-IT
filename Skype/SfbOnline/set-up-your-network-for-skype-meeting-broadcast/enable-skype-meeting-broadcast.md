@@ -18,13 +18,13 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - SMB
-description: Prima che gli utenti dell'organizzazione possano usare Riunione Skype Broadcast, è necessario abilitarlo. A questo scopo, è necessario sapere come usare Windows PowerShell. Se non si conosce il Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
-ms.openlocfilehash: 4f16444a07c81b44e4078a2c294208f59e4d7775
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Prima che le persone dell'organizzazione possano usare Riunione Skype Broadcast, è necessario abilitarlo. A questo scopo, è necessario sapere come usare Windows PowerShell. Se non si conosce il Windows PowerShell, è consigliabile assumere un partner Microsoft per eseguire questo passaggio.
+ms.openlocfilehash: ec42de04b139537f05cadabbdffb84f645edcf2a
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58599671"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731265"
 ---
 # <a name="enable-skype-meeting-broadcast"></a>Abilitare Skype Meeting Broadcast
 
@@ -33,27 +33,27 @@ ms.locfileid: "58599671"
 > [!IMPORTANT]
 > Skype for Business Online è in ritiro il 31 luglio 2021, quando l'accesso al servizio terminerà. Incoraggiamo i clienti a iniziare l'aggiornamento a Microsoft Teams, il client principale per le comunicazioni e il lavoro in team in Microsoft 365.
 
-Prima che gli utenti dell'organizzazione possano usare Riunione Skype Broadcast, è necessario abilitarlo. A questo scopo, è necessario sapere come usare Windows PowerShell. Se non si conosce il Windows PowerShell, è consigliabile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
+Prima che le persone dell'organizzazione possano usare Riunione Skype Broadcast, è necessario abilitarlo. A questo scopo, è necessario sapere come usare Windows PowerShell. Se non si conosce il Windows PowerShell, è consigliabile assumere un [partner Microsoft](https://go.microsoft.com/fwlink/?linkid=391089) per eseguire questo passaggio.
 
 
 
 > [!NOTE]
-> L Microsoft Teams di amministrazione ha sostituito l'Skype for Business di amministrazione (portale legacy). Tutte le impostazioni per la gestione Skype for Business ora si Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
+> L Microsoft Teams di amministrazione di Skype for Business ha sostituito l'interfaccia di amministrazione legacy.The Microsoft Teams admin center has replaced the Skype for Business admin center (Legacy portal). Tutte le impostazioni per la gestione Skype for Business ora sono nell'Teams di amministrazione. È necessario avere il ruolo di amministratore di [Azure AD](/azure/active-directory/roles/permissions-reference) di Amministratore globale o amministratore Skype for Business per gestire Skype for Business funzionalità di Teams di amministrazione. Per altre informazioni vedere [Gestire le impostazioni di Skype for Business nell'interfaccia di amministrazione di Microsoft Teams](/MicrosoftTeams/skype-for-business-settings?bc=%2fskypeforbusiness%2fbreadcrumb%2ftoc.json&toc=%2fskypeforbusiness%2fsfbotoc%2ftoc.json).
 
   
 ## <a name="enable-skype-meeting-broadcast-using-the-skype-for-business-admin-center"></a>Abilitare Riunione Skype broadcast tramite l'interfaccia Skype for Business di amministrazione
 
-![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
 
-1. Accedere con l'account di amministratore globale o Skype for Business di amministratore su [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) .
+1. Accedere con l'account di amministratore globale o Skype for Business di amministrazione all'indirizzo [https://portal.office.com/adminportal/home](https://portal.office.com/adminportal/home) .
     
 2. Nell'interfaccia di amministrazione passare a **Interfaccia di amministrazione**  >  **Teams**.
     
-3. **Nell'Teams di amministrazione,** passare a Riunioni online legacy del portale e quindi selezionare Abilita Riunione Skype  >    >   **broadcast.**
+3. **Nell'Teams di amministrazione** passare a Legacy **Portal**  >  **Online meetings** Broadcast meetings e quindi selezionare  >  Enable **Riunione Skype Broadcast**.
     
 ## <a name="enable-skype-meeting-broadcast-using-powershell"></a>Abilitare Riunione Skype broadcast tramite PowerShell
 
-1. Installare il [Teams di PowerShell.](/microsoftteams/teams-powershell-install)
+1. Installare il [Teams powershell.](/microsoftteams/teams-powershell-install)
     
 2. Aprire un Windows PowerShell prompt dei comandi ed eseguire i comandi seguenti: 
 
@@ -87,7 +87,7 @@ Prima che gli utenti dell'organizzazione possano usare Riunione Skype Broadcast,
     > [!TIP]
     > Dopo aver apportato la modifica, l'applicazione della modifica nel portale di Riunione Skype Broadcast potrebbe richiedere fino a un'ora. 
   
-10. Gli utenti possono ora tenere riunioni in broadcast con altri utenti dell'azienda. Per iniziare, scegliere Che [cos'è](https://support.office.com/article/c472c76b-21f1-4e4b-ab58-329a6c33757d) un Riunione Skype Broadcast?
+10. Gli utenti possono ora tenere riunioni in broadcast con altri utenti dell'azienda. Per iniziare, puntarli a [Che cos'è un Riunione Skype Broadcast?](https://support.office.com/article/c472c76b-21f1-4e4b-ab58-329a6c33757d)
     
 ## <a name="configure-your-network-to-broadcast-meetings-with-external-attendees"></a>Configurare la rete per la trasmissione di riunioni con partecipanti esterni
 

@@ -1,5 +1,5 @@
 ---
-title: Uso del report Power BI CQD per visualizzare Operatore automatico & cronologia coda di chiamata
+title: Uso del report Power BI CQD per visualizzare Operatore automatico & report cronologico della coda di chiamata
 ms.author: colongma
 author: clyvr
 manager: roykuntz
@@ -22,13 +22,13 @@ ms.custom:
 - ms.teamsadmincenter.directrouting.cqd
 - ms.lync.lac.ToolsCallQualityDashboard
 - seo-marvel-apr2020
-description: Informazioni su come usare il report Dashboard qualità Power BI chiamata per visualizzare i Operatore automatico e la cronologia della coda di chiamata.
-ms.openlocfilehash: 57cd28fef4a1e24ecc4f29344a6ec91af5e2dbec
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni su come usare il report dashboard qualità Power BI chiamata per visualizzare i Operatore automatico e la cronologia della coda di chiamata.
+ms.openlocfilehash: 73ffd8e993a3dacd0412123d49e19c704df0cb8c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58593290"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731385"
 ---
 # <a name="what-are-the-requirements"></a>Quali sono i requisiti? 
 È necessario avere installato Power BI Desktop. È possibile installarlo da [Microsoft Windows Store.](https://aka.ms/pbidesktopstore)
@@ -48,9 +48,9 @@ Eseguire questa procedura:
 
 - Verrà richiesto di selezionare l'area della pipeline di dati CQD. Selezionare l'area geografica in cui si trova il tenant.
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-01.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione.":::
 
- - È possibile visualizzare l'area geografica usando il cmdlet ps Skype for Business Online (Get-CsTenant). Output di ServiceInstance. 
+ - È possibile visualizzare l'area usando il cmdlet Skype for Business Online PS (Get-CsTenant). Output di ServiceInstance. 
  L'area verrà visualizzata dopo l'opzione / like in questo esempio: 
  
    microsoftcommunicationsonline/noam-4a-s7 dove l'area geografica è noam.
@@ -59,13 +59,13 @@ Eseguire questa procedura:
  
  - Per visualizzare i propri dati, fare clic **su** Aggiorna nella scheda Home in Query in Power BI Desktop.
 
-   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione":::
+   :::image type="content" source="media/cqd-teams-aa-cq-historical-report-02.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione.":::
 
 - Verrà quindi richiesto di eseguire l'accesso. Selezionare **Account organizzazione** e quindi **Accedi.**
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-03.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione.":::
 
-- Selezionare **Connessione** e osservare l'aggiornamento dei dati.
+- Selezionare **Connessione** e guardare l'aggiornamento dei dati.
 
 ## <a name="data-latency-any-aa--cq-analytics"></a>Latenza dei dati Qualsiasi analisi AA & CQ
 I dati saranno disponibili nella pipeline di dati CQD entro 30 minuti.
@@ -83,11 +83,11 @@ I passaggi seguenti presuppongono che la procedura di installazione sia già sta
 Eseguire questa procedura:
 - Selezionare **la scheda Visualizza** sulla barra multifunzione.
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-04.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione.":::
 
 - Selezionare lo schema colori nell'elenco a discesa.
 
-  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-05.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione":::
+  :::image type="content" source="media/cqd-teams-aa-cq-historical-report-05.png" alt-text="Screenshot del pulsante Dashboard qualità chiamata nell'Teams di amministrazione.":::
 
 
 ## <a name="cqd-fields-description"></a>Descrizione dei campi CQD
@@ -96,10 +96,10 @@ Eseguire questa procedura:
 |:---------------------------------------|:------------------------|:--------------------------------------|
 |Operatore automatico identity                 |stringa                   |Nome dell'account della risorsa allegato a AA<br>Esempio: aa_test@microsoft.com|
 |Operatore automatico inizio catena         |datetime                 |Ora di inizio della catena AA                    |
-|Operatore automatico ricerca nella directory  |stringa                   |Ultimo metodo di ricerca rubrica        |
+|Operatore automatico di ricerca nella directory  |stringa                   |Ultimo metodo di ricerca rubrica        |
 |Operatore automatico trasferimento          |stringa                   |Tipo di destinazione trasferimento chiamata<br>Valori possibili:<br>§ sconosciuto: il tipo di entità non è stato specificato<br>§ utente - entità utente<br>§ orgaa - Entità Operatore automatico organizzativa<br>§ hunt_group - Entità Coda di chiamata<br>§ application - voice application entity<br>§ external_pstn - entità PSTN esterna<br>§ shared_voicemail - entità segreteria telefonica condivisa|
-|Operatore automatico risultato della chiamata              |stringa                   |Risultato della chiamata:<br>§ sconosciuto: la chiamata non è riuscita a configurare o trasferire e il servizio non ha ricevuto alcun motivo di errore significativo <br>§ transferred_to_user - Chiamata trasferita a un utente tramite Chiamata per nome/interno o opzione di menu configurata <br>§ transferred_to_operator - La chiamata è stata trasferita a un operatore configurato, ad esempio se AA è configurato con un operatore per le ore successive <br>§ failover_to_operator - Fallback all'operatore quando il trasferimento non riesce o il riconoscimento del nome non funziona dopo tre tentativi<br>§ user_terminated - Il chiamante ha terminato la chiamata <br>§ service_declined - Chiamata rifiutata dal servizio, ciò potrebbe verificarsi se il servizio non riesce a recuperare Operatore automatico configurazione <br>§ service_terminated - Il servizio back-end ha terminato la chiamata, se un trasferimento a destinazione non è riuscito e nessun operatore è configurato come fallback <br>§ failed_to_establish_media - Media establishment failed between caller and service <br>§ terminated_no_operator - Riconoscimento del nome non riuscito dopo tre tentativi e nessun operatore è configurato <br>§ terminated_transfer_failed - Trasferimento alla destinazione non riuscito e nessun operatore è configurato <br>§ terminated_automatic_selection- Se non è configurata alcuna azione durante o dopo l'orario, la chiamata terminerà per impostazione predefinita <br>§ transferred_to_shared_voicemail - Chiamata trasferita alla segreteria telefonica condivisa se configurata come destinazione <br>§ oaa_chain_too_long- Quando una catena di Operatore automatico supera cinque operatori automatici in successione, la chiamata termina per evitare possibili cicli di chiamata <br>§ oaa_session_too_long - La chiamata ha superato la durata massima consentita della sessione ed è scaduto |
-|Operatore automatico chiama Flow                |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>§ annuncio|
+|Operatore automatico risultato della chiamata              |stringa                   |Risultato della chiamata:<br>§ sconosciuto: la chiamata non è riuscita a configurare o trasferire e il servizio non ha ricevuto alcun motivo di errore significativo <br>§ transferred_to_user - Chiamata trasferita a un utente tramite chiamata per nome/interno o opzione di menu configurata <br>§ transferred_to_operator - La chiamata è stata trasferita a un operatore configurato, ad esempio se AA è configurato con un operatore per le ore successive <br>§ failover_to_operator - Fallback all'operatore quando il trasferimento non riesce o il riconoscimento del nome non funziona dopo tre tentativi<br>§ user_terminated - Il chiamante ha terminato la chiamata <br>§ service_declined - Chiamata rifiutata dal servizio, questo problema può verificarsi se il servizio non riesce a recuperare Operatore automatico configurazione <br>§ service_terminated - Il servizio back-end ha terminato la chiamata, se un trasferimento a destinazione non è riuscito e nessun operatore è configurato come fallback <br>§ failed_to_establish_media - Media establishment failed between caller and service <br>§ terminated_no_operator - Riconoscimento del nome non riuscito dopo tre tentativi e non è configurato alcun operatore <br>§ terminated_transfer_failed - Trasferimento alla destinazione non riuscito e nessun operatore è configurato <br>§ terminated_automatic_selection - Se non è configurata alcuna azione durante o dopo l'orario, la chiamata terminerà per impostazione predefinita <br>§ transferred_to_shared_voicemail - Chiamata trasferita alla segreteria telefonica condivisa se configurata come destinazione <br>§ oaa_chain_too_long- Quando una catena di Operatore automatico supera cinque operatori automatici in successione, la chiamata termina per evitare possibili cicli di chiamata <br>§ oaa_session_too_long - La chiamata ha superato la durata massima consentita della sessione ed è scaduto |
+|Operatore automatico chiamata Flow                |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>§ annuncio|
 |È Operatore automatico coinvolta              |Boolean                  |Indicato se AA è coinvolto nella chiamata |
 |Operatore automatico numero di azioni chiamanti      |int                      |Numero di azioni usate dal chiamante         |
 |Operatore automatico Durata catena secondi   |int                      |Durata della chiamata in AA                 |
@@ -120,7 +120,7 @@ Eseguire questa procedura:
 |:---------------------------------------|:------------------------|:--------------------------------------|
 |Nome AA                                   |stringa                   |Operatore automatico (ID account risorsa) |
 |AACallFlow                              |stringa                   |Incapsula i diversi stati di Operatore automatico Chiamata<br>§ abs_search<br>§ call_termination<br>§ call_transfer<br>§ main_menu<br>§ user_selection<br>§ speech_input_confirmation<br>§ first_level_menu<br>§ automatic_menu<br>annuncio |
-|AACallResult                            |stringa                   |Risultato della Operatore automatico chiamata:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined – errore di configurazione AA<br>§ service_terminated - Errori AA interni<br>§ failed_to_establish_media<br> terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long          |
+|AACallResult                            |stringa                   |Risultato della Operatore automatico chiamata:<br>§ sconosciuto<br>§ transferred_to_user<br>§ transferred_to_operator<br>§ failover_to_operator<br>§ user_terminated<br>§ service_declined - errore di configurazione AA<br>§ service_terminated – errori AA interni<br>§ failed_to_establish_media<br> terminated_no_operator<br>§ terminated_transfer_failed<br>§ terminated_automatic_selection<br>§ transferred_to_shared_voicemail<br>§ oaa_chain_too_long<br>§ oaa_session_too_long          |
 |AAChainDuration                         |stringa                   |Durata della Operatore automatico chiamata in secondi  |
 |AACount                                 |stringa                   |# di Operatore automatico implicano nella chiamata         |
 |AADirectorySearchMethod                 |stringa                   |Metodo di ricerca usato nella chiamata:<br>§ abs_search_dtmf<br>§ abs_search_extension<br>§ abs_search_name|

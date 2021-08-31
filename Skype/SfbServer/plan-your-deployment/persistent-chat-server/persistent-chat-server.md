@@ -13,12 +13,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.assetid: 9e652487-a123-40c0-ae61-47fb8ecc4a20
 description: 'Riepilogo: leggere questo argomento per informazioni su come pianificare il server Chat persistente in Skype for Business Server 2015.'
-ms.openlocfilehash: e4bce3145c3f2e3974c2f57d75afbe297ce8d304
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: cb584fc1b618794d9956c2d91c004b8ecc008aa0
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58623558"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731095"
 ---
 # <a name="plan-for-persistent-chat-server-in-skype-for-business-server-2015"></a>Pianificare il server Chat persistente in Skype for Business Server 2015
  
@@ -39,25 +39,25 @@ Il server Chat persistente può contribuire a migliorare le comunicazioni all'in
 - Seguire le normative di conformità distribuendo facoltativamente il servizio conformità di Persistent Chat
 
 > [!NOTE] 
-> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Getting started with your Microsoft Teams upgrade](/microsoftteams/upgrade-start-here). Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità Teams o continuare a usare Skype for Business Server 2015. 
+> La chat persistente è disponibile Skype for Business Server 2015, ma non è più supportata in Skype for Business Server 2019. La stessa funzionalità è disponibile in Teams. Per ulteriori informazioni, vedere [Introduzione all'Microsoft Teams aggiornamento.](/microsoftteams/upgrade-start-here) Se è necessario utilizzare persistent chat, è possibile eseguire la migrazione degli utenti che richiedono questa funzionalità a Teams o continuare a usare Skype for Business Server 2015. 
     
 ## <a name="persistent-chat-server-high-level-architecture"></a>Architettura di alto livello del server Chat persistente
 
 Nel diagramma seguente viene mostrata una visualizzazione di alto livello dell'architettura del server Chat persistente. 
   
-![Architettura di alto livello del server Persistent Chat](../../media/0344f6e2-0c6d-4391-b4b3-ec31062b1576.png)
+![Persistent Chat Server High-Level Architecture.](../../media/0344f6e2-0c6d-4391-b4b3-ec31062b1576.png)
   
-Persistent Chat è costituito da un ruolo del server front-end che fornisce i servizi di Persistent Chat e da un componente di database SQL back-end. Sia i componenti front-end che back-end sono inclusi in un pool di Persistent Chat dedicato. Ogni computer che ospita il server Chat persistente deve avere accesso a una topologia Skype for Business Server 2015 esistente. In questo diagramma è presente un pool di server Chat persistente (A), che dipende dal pool Skype for Business Server A per il routing dei messaggi.
+Persistent Chat è costituito da un ruolo del server front-end che fornisce i servizi di Persistent Chat e da un componente SQL database back-end. Sia i componenti front-end che back-end sono inclusi in un pool di Persistent Chat dedicato. Ogni computer che ospita il server Chat persistente deve avere accesso a una topologia Skype for Business Server 2015 esistente. In questo diagramma è presente un pool di server Chat persistente (A), che dipende dal pool A Skype for Business Server per il routing dei messaggi.
   
 È possibile distribuire uno o più pool di server Chat persistente, ognuno con un massimo di quattro server Chat persistente attivi che supportano fino a 80.000 utenti simultanei.
   
-Skype for Business Server 2015 comunica con il servizio Persistent Chat utilizzando il protocollo SIP (Session Initiation Protocol) per la registrazione e il protocollo XCCOS (Extensible Chat Communication Over SIP) per la chat. 
+Skype for Business Server 2015 comunica con il servizio Persistent Chat utilizzando il protocollo SIP (Session Initiation Protocol) per la registrazione e il protocollo XCCOS (Extensible Chat Communication Over SIP) per le chat. 
   
 ## <a name="persistent-chat-services"></a>Servizi Chat persistente
 
 Nel diagramma seguente vengono illustrati i servizi front-end del server Chat persistente e il modo in cui tali servizi comunicano con i componenti di database back-end. I componenti front-end includono i servizi Persistent Chat e il servizio conformità. I componenti back-end includono l'archivio di Persistent Chat e l'archivio di conformità di Persistent Chat.
   
-![Servizi di alto livello del server Persistent Chat](../../media/bcdbadbe-e868-4a46-8a73-36562648fdf7.png)
+![Persistent Chat Server High-Level Services.](../../media/bcdbadbe-e868-4a46-8a73-36562648fdf7.png)
   
 ### <a name="chat-service"></a>Servizio chat
 
@@ -79,7 +79,7 @@ Se l'organizzazione dispone di normative che richiedono l'archiviazione dell'att
   
 ### <a name="web-services"></a>Servizi Web
 
-I servizi Web Persistent Chat vengono eseguiti Skype for Business Front End Server. I servizi Web dipendono da Internet Information Services (IIS) e vengono implementati come componenti Web:
+I servizi Web di Persistent Chat vengono eseguiti Skype for Business Front End Server. I servizi Web dipendono da Internet Information Services (IIS) e vengono implementati come componenti Web:
   
 - I servizi Web Persistent Chat per il caricamento e il download di file sono responsabili dell'inserimento e del recupero di file dalle chat room.
     
@@ -101,9 +101,9 @@ Se si decide di distribuire il server Chat persistente, sarà necessario determi
     
 - In che modo si vogliono creare le chat? Il server Chat persistente offre una funzionalità basata sul Web per la creazione e la gestione delle chat room. Questa operazione può essere avviata dal client Skype for Business client. È possibile scegliere di definire una soluzione cliente che implementa i requisiti aziendali e i flussi di lavoro e configurare il server Chat persistente per indirizzare gli utenti alla soluzione personalizzata.
     
-- Di che tipo di componenti aggiuntivi si vuole effettuare il provisioning? I componenti aggiuntivi migliorano l'esperienza nella sala sfruttando il riquadro di estendibilità nel client Skype for Business per fornire un contesto rilevante per la sala. È possibile scegliere i componenti aggiuntivi generici che si ritengono più utili, ad esempio il sito Web aziendale, i documenti di collaborazione interni e così via. I responsabili di chat room, se vogliono, possono scegliere uno dei componenti aggiuntivi registrati e associarlo alla propria chat. 
+- Di che tipo di componenti aggiuntivi si vuole effettuare il provisioning? I componenti aggiuntivi migliorano l'esperienza nella sala sfruttando il riquadro di estendibilità nel client Skype for Business per fornire un contesto rilevante per la chat room. È possibile scegliere i componenti aggiuntivi generici che si ritengono più utili, ad esempio il sito Web aziendale, i documenti di collaborazione interni e così via. I responsabili di chat room, se vogliono, possono scegliere uno dei componenti aggiuntivi registrati e associarlo alla propria chat. 
     
-- Quali sono i requisiti di disponibilità elevata e di ripristino di emergenza? Il server Chat persistente supporta SQL Server mirroring e SQL Server clustering per la disponibilità elevata. Per il ripristino di emergenza, il server Chat persistente supporta fino a 8 server (4 attivi e 4 di standby) in un pool con estensione SQL Server log shipping. 
+- Quali sono i requisiti di disponibilità elevata e di ripristino di emergenza? Il server Chat persistente supporta SQL Server mirroring e SQL Server clustering per la disponibilità elevata. Per il ripristino di emergenza, il server Chat persistente supporta fino a 8 server (4 attivi e 4 di standby) in un pool con estensione con SQL Server log shipping. 
     
 - Ci sono requisiti normativi da rispettare? Se la società si trova in un paese o un'area geografica in cui i dati devono essere conservati all'interno del paese, potrebbe essere necessario distribuire più pool di server Chat persistente, ognuno locale in una specifica area geografica. Una chat room, una categoria o un componente aggiuntivo non si estende su pool, ma appartiene a un solo pool di server Chat persistente. 
     
@@ -116,6 +116,6 @@ Per ulteriori informazioni sull'installazione e la configurazione del server Cha
   
 - Per informazioni dettagliate su come distribuire il server Chat persistente, vedere [Deploy Persistent Chat Server in Skype for Business Server 2015.](../../deploy/deploy-persistent-chat-server/deploy-persistent-chat-server.md) 
     
-- Per informazioni dettagliate su come configurare le impostazioni nella distribuzione del server Chat persistente, vedere [Manage Persistent Chat Server in Skype for Business Server 2015](../../manage/persistent-chat/persistent-chat.md).
+- Per informazioni dettagliate su come configurare le impostazioni nella distribuzione del server Chat persistente, vedere [Manage Persistent Chat Server in Skype for Business Server 2015.](../../manage/persistent-chat/persistent-chat.md)
     
 
