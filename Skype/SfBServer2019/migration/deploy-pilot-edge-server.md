@@ -10,13 +10,13 @@ ms.prod: skype-for-business-itpro
 f1.keywords:
 - NOCSH
 ms.localizationpriority: medium
-description: In questo argomento vengono evidenziate le impostazioni di configurazione da tenere presenti prima di distribuire il server perimetrale Skype for Business Server 2019. I processi di distribuzione e configurazione Skype for Business Server 2019 sono molto simili Skype for Business Server 2015. In questa sezione vengono evidenziati solo i punti chiave di cui è consigliabile tenere conto nell'ambito della distribuzione del pool pilota. Per la procedura dettagliata, vedere Deploying external user access in Skype for Business Server 2019 nella documentazione relativa alla distribuzione, che descrive il processo di distribuzione e fornisce informazioni di configurazione per l'accesso degli utenti esterni.
-ms.openlocfilehash: c76d517bd5130c2babc41e0072ae7450b9838a64
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: In questo argomento vengono evidenziate le impostazioni di configurazione di cui tenere conto prima di distribuire il server perimetrale Skype for Business Server 2019. I processi di distribuzione e configurazione Skype for Business Server 2019 sono molto simili Skype for Business Server 2015. In questa sezione vengono evidenziati solo i punti chiave di cui è consigliabile tenere conto nell'ambito della distribuzione del pool pilota. Per la procedura dettagliata, vedere Deploying external user access in Skype for Business Server 2019 nella documentazione relativa alla distribuzione, che descrive il processo di distribuzione e fornisce informazioni di configurazione per l'accesso degli utenti esterni.
+ms.openlocfilehash: 39ec659c5099a7be9587c630aa487ddeda1df500
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58615010"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728045"
 ---
 # <a name="deploy-pilot-edge-server"></a>Distribuire Edge Server pilota
 
@@ -31,11 +31,11 @@ Man mano che si va avanti nella procedura guidata **Definisci pool di server per
     
 2. Passare al nodo Skype for Business Server 2019. Fare clic con il pulsante destro del mouse su **Pool di server perimetrali** e scegliere **Nuovo pool di server perimetrali**.
     
-     ![Finestra di dialogo Definisci nuovo pool di server perimetrali](../media/migration_ocs_topo_edgepool_page1.JPG)
+     ![Definire la finestra di dialogo Nuovo pool di server perimetrali.](../media/migration_ocs_topo_edgepool_page1.JPG)
   
 3. Un pool di server perimetrali può essere un **Pool di più computer** o un **Pool computer singolo**.
     
-     ![Finestra di dialogo Definire l'FQDN del pool di server perimetrali](../media/migration_ocs_topo_edgepool_page2.JPG)
+     ![Definire la finestra di dialogo FQDN pool di server perimetrali.](../media/migration_ocs_topo_edgepool_page2.JPG)
   
 4. Nella pagina **Selezionare funzionalità** non abilitare la federazione o la federazione XMPP. La federazione e la federazione XMPP sono entrambe attualmente instradati attraverso il server perimetrale legacy. Queste funzionalità verranno configurate in una fase successiva della migrazione. 
 
@@ -44,11 +44,11 @@ Man mano che si va avanti nella procedura guidata **Definisci pool di server per
     
 6. Nella pagina **Definire il server dell'hop** successivo selezionare il Server Director per l'hop successivo del pool di server perimetrali legacy. 
     
-     ![Finestra di dialogo Definisci hop successivo](../media/migration_ocs_topo_edgepool_page7.JPG)
+     ![Definire la finestra di dialogo Hop successivo.](../media/migration_ocs_topo_edgepool_page7.JPG)
   
 7. Nella pagina **Associa pool Front End** o Mediation Server non associare un pool a questo pool di server perimetrali in questo momento. Il traffico multimediale esterno è attualmente instradato attraverso il server perimetrale legacy. Questa impostazione verrà configurata in una fase successiva della migrazione. 
     
-     ![Finestra di dialogo Associa pool Front End](../media/migration_ocs_topo_edgepool_page8.JPG)
+     ![Finestra di dialogo Associa pool Front End.](../media/migration_ocs_topo_edgepool_page8.JPG)
   
 8. Fare **clic su** Fine e **quindi** su Pubblica la topologia. 
     

@@ -21,12 +21,12 @@ searchScope:
 - Microsoft Teams
 - Microsoft Cloud for Healthcare
 description: Informazioni su come usare e gestire i pacchetti di criteri di Teams per l'organizzazione nel settore sanitario.
-ms.openlocfilehash: e81741e40928ec92717b686773078781b51b73be
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d71945508055ddc7b6f6661d93e8918879d59d23
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608843"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731965"
 ---
 # <a name="teams-policy-packages-for-healthcare"></a>Pacchetti di criteri di Teams per il settore sanitario
 
@@ -52,11 +52,11 @@ Teams attualmente include i pacchetti di criteri per il settore sanitario seguen
 |Operatore dell'informazione sanitaria  |Operatori dell'informazione in organizzazioni del settore sanitario |Crea un set di criteri e impostazioni di criteri che forniscono agli operatori dell'informazione, ad esempio personale in ambito IT e finanziario, responsabili della conformità, accesso completo alle chat, alle chiamate e alle riunioni.|
 |Sale per i pazienti nell'organizzazione sanitaria  |Dispositivi per le sale dei pazienti|Crea un set di criteri e impostazioni di criteri da applicare alle sale dei pazienti nell'organizzazione sanitaria.|
 
-![Screenshot dei pacchetti di criteri per il settore sanitario](media/policy-packages-healthcare.png)
+![Screenshot dei pacchetti di criteri sanitari.](media/policy-packages-healthcare.png)
 
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per gli operatori sanitari nell'organizzazione, viene creato un criterio denominato Healthcare_ClinicalWorker per ogni criterio presente nel pacchetto.
 
-![Screenshot dei criteri nel pacchetto per gli operatori del settore sanitario](media/policy-packages-healthcare-clinical-worker.png)
+![Screenshot dei criteri nel pacchetto di operatori clinici del settore sanitario.](media/policy-packages-healthcare-clinical-worker.png)
 
 ## <a name="get-started-with-policy-packages"></a>Introduzione ai pacchetti di criteri
 
@@ -93,7 +93,7 @@ Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un cr
 
 Per assegnare un pacchetto di criteri a uno o più utenti, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Pacchetti di criteri** e quindi selezionare **Gestisci utenti**.  
 
-![Screenshot che mostra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione](media/policy-packages-healthcare-assign.png)
+![Screenshot che illustra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione.](media/policy-packages-healthcare-assign.png)
 
 Per altre informazioni, vedere [Assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
 

@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 ms.assetid: 4ee527fa-ebec-40a9-a6bf-0cabd098aaa9
 ROBOTS: NOINDEX, NOFOLLOW
 description: 'Fare clic con il pulsante destro del mouse su Trunk in Generatore di topologie per eseguire le operazioni seguenti:'
-ms.openlocfilehash: 7a52c89c9ac2647a99a5da87848f8725f0a6657f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8e12ed1aa93bc1b5a2ea9db5c3dd734fe5ca938c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58601671"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58729995"
 ---
 # <a name="trunks-scope-node"></a>Nodo di ambito per trunk
  
@@ -30,7 +30,7 @@ Fare clic con il **pulsante destro del** mouse su Trunk in Generatore di topolog
     
 Oltre all'opzione Nuovo trunk, è possibile eseguire le attività generali seguenti:
   
-![Nodo di ambito per trunk](../../../media/Trunks_Scope_Node.jpg)
+![Nodo di ambito trunk.](../../../media/Trunks_Scope_Node.jpg)
   
 - **Topologia**. È possibile utilizzare questa opzione per definire una nuova topologia, aprire una topologia esistente, scaricare la topologia corrente, salvare una copia della topologia, pubblicare la topologia, installare un database, unire componenti da versioni precedenti o rimuovere la distribuzione.
     

@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection:
 - M365-collaboration
 description: Scopri come impostare l'interfaccia utente nei Teams Android.
-ms.openlocfilehash: 07d8b42de16c71a63efe7a3c18955e457577d60c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4d17158a6d76dd0d735392c8a441ca184968897a
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58637082"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732455"
 ---
 # <a name="set-microsoft-teams-android-devices-user-interface"></a>Impostare l Microsoft Teams'interfaccia utente dei dispositivi Android
 
@@ -34,15 +34,15 @@ Se [](/microsoftteams/user-access) si assegna una licenza utente a un account, a
 
 Le tre immagini seguenti mostrano come cambia l'interfaccia utente in base alla licenza assegnata all'account utente. Nella prima immagine all'account utente viene assegnata una licenza E5. Si tratta di una licenza utente, quindi il dispositivo mostra l'interfaccia utente finale predefinita:
 
-:::image type="content" source="../media/TeamsAndroidDevices-UserMode1.jpg" alt-text="Interfaccia in modalità utente":::
+:::image type="content" source="../media/TeamsAndroidDevices-UserMode1.jpg" alt-text="Interfaccia in modalità utente.":::
 
 In questa immagine all'account utente è stata assegnata una [licenza per il telefono dell'area comune.](/microsoftteams/set-up-common-area-phones) I telefoni dell'area comune vengono usati principalmente per effettuare e ricevere chiamate telefoniche. Di conseguenza, la tastiera del telefono viene visualizzata sullo schermo:
 
-:::image type="content" source="../media/TeamsAndroidDevices-CAP1.jpg" alt-text="Interfaccia telefonica dell'area comune":::
+:::image type="content" source="../media/TeamsAndroidDevices-CAP1.jpg" alt-text="Interfaccia del telefono dell'area comune.":::
 
-Infine, questa immagine mostra un account utente a cui è assegnata Microsoft Teams Rooms [licenza Standard.](/MicrosoftTeams/rooms/rooms-licensing) Teams Rooms licenze sono destinate a essere usate nelle sale riunioni o negli spazi condivisi, quindi l'interfaccia utente cambia per semplificare la partecipazione a una riunione mostrando la visualizzazione calendario:
+Infine, questa immagine mostra un account utente a cui è assegnata [Microsoft Teams Rooms licenza Standard.](/MicrosoftTeams/rooms/rooms-licensing) Teams Rooms licenze sono destinate a essere usate nelle sale riunioni o negli spazi condivisi, quindi l'interfaccia utente cambia per semplificare la partecipazione a una riunione mostrando la visualizzazione calendario:
 
-:::image type="content" source="../media/TeamsAndroidDevices-Meeting.jpg" alt-text="Interfaccia riunione":::
+:::image type="content" source="../media/TeamsAndroidDevices-Meeting.jpg" alt-text="Interfaccia riunione.":::
 
 > [!NOTE]
 > La modifica dell'interfaccia utente non influisce sulla possibilità di usare altre funzionalità con licenza. Ad esempio, anche se la visualizzazione predefinita della licenza Team Rooms è la visualizzazione calendario, è comunque possibile effettuare e ricevere chiamate PSTN (Public Switch Telephone Network) se l'account è correttamente concesso in licenza e configurato.
@@ -55,7 +55,7 @@ Infine, questa immagine mostra un account utente a cui è assegnata Microsoft Te
 In alcuni casi, è possibile scegliere di assegnare una licenza a un account che non corrisponde all'uso previsto. Ad esempio, è possibile assegnare una licenza utente a un account destinato ad accedere a Teams Rooms su Android. Per impostazione predefinita, viene visualizzata l'interfaccia utente finale invece dell'interfaccia della sala riunioni. Per ignorare l'interfaccia predefinita, creare un nuovo criterio di Teams [ip Telefono](/powershell/module/skype/new-csteamsipphonepolicy?view=skype-ps) e applicarlo all'account.
 
 > [!NOTE]
-> La licenza assegnata all'account utente deve avere almeno gli stessi diritti di licenza dell'interfaccia utente desiderata. La licenza Telefono area comune consente solo l'interfaccia utente del telefono area comune. La licenza della sala riunioni consente di utilizzare le interfacce utente della sala riunioni e del telefono dell'area comune. Una licenza E3 o E5 supporta tutte le modalità di accesso.
+> La licenza assegnata all'account utente deve avere almeno gli stessi diritti di licenza dell'interfaccia utente desiderata. La licenza area Telefono consente solo l'interfaccia utente del telefono area comune. La licenza della sala riunioni consente di utilizzare le interfacce utente della sala riunioni e del telefono dell'area comune. Una licenza E3 o E5 supporta tutte le modalità di accesso.
 
 Di seguito è riportato un esempio di come ignorare il rilevamento automatico delle licenze. In questo esempio si presuppone che a un account delle risorse della sala riunioni denominato conf-adams@contoso.com sia stata assegnata una licenza E3. Quando l'account è connesso, si vuole che gli utenti vedano l'interfaccia utente della sala riunioni.
 

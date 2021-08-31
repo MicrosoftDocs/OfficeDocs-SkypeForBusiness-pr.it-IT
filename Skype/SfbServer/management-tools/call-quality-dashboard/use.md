@@ -1,5 +1,5 @@
 ---
-title: Usare call quality dashboard per Skype for Business Server
+title: Usare il dashboard qualità delle chiamate per Skype for Business Server
 ms.reviewer: ''
 ms.author: v-cichur
 author: cichur
@@ -13,22 +13,22 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: ec62b70f-885e-4272-b9d2-a574ea434b64
 description: 'Riepilogo: informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.'
-ms.openlocfilehash: 398550c80e77950d27be9160dd4f45c2f04acfff
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b3bc40cb6b6519b47134fd609854911a2e969655
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634240"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728265"
 ---
-# <a name="use-call-quality-dashboard-for-skype-for-business-server"></a>Usare call quality dashboard per Skype for Business Server
+# <a name="use-call-quality-dashboard-for-skype-for-business-server"></a>Usare il dashboard qualità delle chiamate per Skype for Business Server
 
 **Riepilogo:** Informazioni su come usare il dashboard qualità delle chiamate. Call Quality Dashboard è uno strumento per Skype for Business Server.
 
-Call Quality Dashboard (CQD) consente ai professionisti IT di utilizzare dati aggregati per identificare i problemi di creazione di problemi di qualità multimediale confrontando le statistiche per gruppi di utenti per identificare tendenze e modelli. CQD non si concentra sulla risoluzione di singoli problemi di chiamata, ma sull'identificazione di problemi e soluzioni che si applicano a molti utenti.
+Call Quality Dashboard (CQD) consente ai professionisti IT di utilizzare dati aggregati per identificare i problemi di creazione di problemi di qualità multimediale confrontando le statistiche per gruppi di utenti per identificare tendenze e modelli. CQD non si concentra sulla risoluzione di problemi relativi alle singole chiamate, ma sull'identificazione di problemi e soluzioni applicabili a molti utenti.
 
 ## <a name="call-quality-dashboard-user-guide"></a>Guida per l'utente del dashboard di qualità delle chiamate
 
-CQD è un portale Web per la creazione e l'organizzazione rapida di report basati su dati QoE (Quality of Experience). CQD distribuisce un cubo SSAS per aggregare i dati nel database delle metriche QoE e consente agli amministratori di creare e modificare report o eseguire indagini in tempo reale. Sebbene sia possibile utilizzare Excel per connettersi direttamente al cubo, il portale è ottimizzato per diversi flussi di lavoro che coinvolgono dati QoE. I dati includono:
+CQD è un portale Web per la creazione e l'organizzazione rapida di report basati su dati QoE (Quality of Experience). CQD distribuisce un cubo SSAS per aggregare i dati nel database delle metriche QoE e consente agli amministratori di creare e modificare report o di eseguire indagini in tempo reale. Sebbene sia possibile utilizzare Excel per connettersi direttamente al cubo, il portale è ottimizzato per diversi flussi di lavoro che coinvolgono dati QoE. I dati includono:
 
 - Dati dei report memorizzati nella cache per un accesso rapido
 - Collegamenti diretti alle pagine dei report per la condivisione e la pubblicazione di informazioni
@@ -40,20 +40,20 @@ Inoltre, CQD espone API Web che consentono agli utenti di accedere a livello di 
 
 Quando si visita il dashboard qualità delle chiamate, viene visualizzata la schermata seguente:
 
-![Usare CQD](../../media/1e061858-db6f-452b-9ae4-eab507220371.png)
+![Usa CQD.](../../media/1e061858-db6f-452b-9ae4-eab507220371.png)
 
 1. Il "riquadro di riepilogo" è il punto in cui è possibile trovare il contesto per il "Set di report" (a destra).
 2. Fare clic su "Modifica" nel riquadro di riepilogoReport per impostare le proprietà del livello (inclusa l'altezza dell'asse Y).
 3. Il breadcrumb consente di identificare la posizione corrente all'interno della gerarchia del set di report.
 4. I report con sottoreport vengono visualizzati con un collegamento blu. Fare clic sul collegamento per eseguire il drill-down dei report figlio.
 
-Spostare il mouse sui grafici a barre e sulle linee di tendenza per visualizzare valori dettagliati. Il report con lo stato attivo mostra il menu delle azioni: "Modifica", "Clone", "Elimina" e "Scarica".
+Spostare il mouse sui grafici a barre e sulle linee di tendenza per visualizzare valori dettagliati. Il report con lo stato attivo mostra il menu azioni: "Modifica", "Clone", "Elimina" e "Scarica".
 
 ### <a name="default-reports"></a>Report predefiniti
 
 Quando si accede per la prima volta al portale call quality dashboard, viene creato automaticamente un set predefinito di report. Questi report vengono talvolta definiti report di sistema. È possibile modificare o eliminare liberamente questi report o estenderli creando nuovi report figlio e di pari livello.
 
-Al livello superiore, il report "Tendenza mensile Flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del report Tendenze mensili Flussi audio per passare al report "Managed vs Unmanaged Audio Flussi", in cui i report vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
+Al livello superiore, il report "Tendenza mensile Flussi audio" mostra la tendenza mensile per tutti i flussi audio. Spostare il mouse sulle barre di un grafico a barre per visualizzare una visualizzazione più dettagliata dei dati rappresentati dal grafico a barre. Fai clic sul titolo del report Tendenze mensili Flussi audio per passare al report "Managed vs Unmanaged Audio Flussi", in cui i rapporti vengono suddivisi tra chiamate gestite e non gestite. Le chiamate gestite sono chiamate effettuate dall'interno del firewall aziendale tramite connessioni cablate. Le chiamate non gestite includono le chiamate effettuate dall'esterno del firewall aziendale e tutte le chiamate effettuate tramite Wi-Fi.
 
 L'altro report di primo livello è denominato "Istogramma della qualità delle chiamate segnalato dall'utente". Classificazioni qualità chiamata sono i numeri Skype for Business utenti al termine di una chiamata per indicare la qualità della chiamata. I numeri di valutazione sono da 1 a 5, 1 è il peggiore e 5 è il migliore. L'istogramma mostra il numero di chiamate audio con la valutazione indicata in un mese.
 
@@ -63,7 +63,7 @@ Fare clic sul titolo di uno dei report per passare ai report con più filtri sui
 
 Fare clic su "Modifica" nel menu delle azioni di un report per visualizzare l'Editor report. Ogni report è supportato da una query nel cubo. Un report è una visualizzazione dei dati restituiti dalla query. L'Editor report consente di modificare queste query e le opzioni di visualizzazione del report. Quando si apre l'editor di report, viene visualizzato:
 
-![Usare CQD](../../media/e8969625-e6f9-4d67-873f-93e78dd12b35.png)
+![Usa CQD.](../../media/e8969625-e6f9-4d67-873f-93e78dd12b35.png)
 
 1. Le dimensioni, le misure e i filtri vengono scelti nel riquadro sinistro. Posizionare il puntatore del mouse su uno dei valori esistenti per visualizzare un pulsante "x" che consente di rimuovere il valore. Fare clic sul pulsante "più" accanto a un'intestazione per aprire la finestra di dialogo in cui è possibile aggiungere una nuova dimensione, misura o filtro.
 2. Le opzioni per la personalizzazione dei grafici vengono visualizzate nella parte superiore.
@@ -74,7 +74,7 @@ Fare clic su "Modifica" nel menu delle azioni di un report per visualizzare l'Ed
 
 Quando StartDate.Month viene aggiunto come dimensione e il rendering dei dati viene eseguito come tendenza in forma di tabella, i grafici a barre e i grafici sparkline possono essere visualizzati all'interno delle celle della tabella. Spostare il puntatore del mouse sul grafico a barre e sui grafici sparkline per visualizzare i valori dei singoli mesi.
 
-![Usare CQD](../../media/fe6b18d7-b8cf-472a-9c93-0f7703f5a700.png)
+![Usa CQD.](../../media/fe6b18d7-b8cf-472a-9c93-0f7703f5a700.png)
 
 Per visualizzare i grafici a barre e i grafici sparkline, è necessario selezionare la casella di controllo "Mostra grafici sparkline" nella parte superiore dell'Editor report. In questo modo viene selezionata l'opzione Tendenza e il mese viene spostato verso il basso per essere l'ultima dimensione, che può essere eseguita anche facendo clic su Mese e utilizzando le frecce su e giù per spostare StartDate.Month verso l'alto o verso il basso.
 
@@ -82,7 +82,7 @@ Per visualizzare i grafici a barre e i grafici sparkline, è necessario selezion
 
 Il menu delle impostazioni contiene collegamenti a pagine utili come le pagine Integrità del sistema e Informazioni su e si trova nell'angolo in alto a destra del dashboard.
 
-![Usare CQD](../../media/0e9ae123-e231-4fea-94e1-5788e8f3e1d3.png)
+![Usa CQD.](../../media/0e9ae123-e231-4fea-94e1-5788e8f3e1d3.png)
 
 La visualizzazione di descrizioni e indicatori di data e ora è un'operazione che interessa i singoli utenti e queste impostazioni influiscono solo sulla versione individuale del dashboard e non modificano il set di report o ciò che gli altri utenti visualizzano. Se si cancella la cache, tutte le query ricaricano i dati dal cubo, mentre il ripristino delle impostazioni predefinite comporta l'eliminazione di tutti i report creati o modificati dall'utente e la ricreazione del set di report di sistema, ovvero gli elementi visualizzati dall'utente al primo accesso.
 
@@ -132,7 +132,7 @@ I dati utilizzati per queste tabelle sono definiti come segue:
 |UpdatedDate |datetime |No |Datetime dell'ultimo aggiornamento della voce. |
 ||||||
 
-Per impostazione predefinita, la tabella successiva include una voce (0, "Sconosciuto").
+Per impostazione predefinita, nella tabella successiva è presente una voce (0, "Sconosciuto").
 
 **CqdBuildingType**
 
@@ -142,7 +142,7 @@ Per impostazione predefinita, la tabella successiva include una voce (0, "Sconos
 |BuildingTypeDesc |char(18) |No |Descrizione del tipo di edificio. |
 |||||
 
-Per impostazione predefinita, la tabella successiva include una voce (0, "Sconosciuto", 0, null).
+Per impostazione predefinita, la tabella successiva include una voce (0, "Unknown", 0, null).
 
 **CqdBuildingOwnershipType**
 
@@ -196,7 +196,7 @@ CQD non utilizza i campi Caller/Callee, ma "First" e "Second" perché ci sono pa
 
  **First** Sarà sempre l'endpoint del server (ad esempio, AV MCU o Mediation Server) se un server è coinvolto nel flusso.
 
- **Second** Sarà sempre l'endpoint client, a meno che non sia un Server-Server flusso.
+ **Second** Sarà sempre l'endpoint client, a meno che non sia Server-Server flusso.
 
 **Esempio di classificazione First e Second**
 
@@ -236,11 +236,11 @@ Esempio: per ottenere tutti i flussi da un edificio, UNION offre una visualizzaz
 
 Se wireless viene gestito internamente, è possibile ricreare i report wireless nel bucket gestito.
 
-![Scomposizione report CQD](../../media/658b8568-0d68-4f5f-83e8-5abc63a85c1d.png)
+![CQD Report Breakdown.](../../media/658b8568-0d68-4f5f-83e8-5abc63a85c1d.png)
 
 ## <a name="operational-processes"></a>Processi operativi
 
-Esaminare e correggere i problemi Flussi prima di tutto. La qualità in quest'area deve essere al 100% all'interno del controllo e quindi più facile da correggere.
+Esaminare e correggere i problemi gestiti Flussi prima di tutto. La qualità in quest'area deve essere al 100% all'interno del controllo e quindi più facile da correggere.
 
 ### <a name="managed-streams"></a>Gestione Flussi
 

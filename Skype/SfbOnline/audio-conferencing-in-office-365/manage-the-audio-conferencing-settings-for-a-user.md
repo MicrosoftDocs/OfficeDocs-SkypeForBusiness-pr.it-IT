@@ -21,19 +21,19 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: "Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni di audioconferenza online di Skype for Business, ad esempio il provider, il numero verde o il numero verde predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. "
-ms.openlocfilehash: 7f25df3c9f395583273a4bf8ce68f3c93699a41d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 555902f233733ac31613a3ecb23f7aa8eec7af67
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58614948"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730055"
 ---
 # <a name="manage-the-audio-conferencing-settings-for-a-user-in-skype-for-business-online"></a>Gestire le impostazioni di audioconferenza per un utente in Skype for Business Online
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
 > [!Note]
-> Se si vogliono gestire le impostazioni utente in Microsoft Teams, vedere Gestire le impostazioni di audioconferenza per un utente [in Microsoft Teams](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
+> Per gestire le impostazioni utente in Microsoft Teams, vedere Gestire le impostazioni di audioconferenza per un utente [in Microsoft Teams](/MicrosoftTeams/manage-the-audio-conferencing-settings-for-a-user-in-teams).
 
 Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazioni di audioconferenza, ad esempio il provider, il numero verde o il numero verde predefinito, l'ID conferenza o il PIN, per un singolo utente dell'organizzazione. Per modificare le impostazioni per l'organizzazione, vedere [Gestire le impostazioni di audioconferenza per l'organizzazione.](manage-the-audio-conferencing-settings-for-my-organization.md)
 
@@ -44,7 +44,7 @@ Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazi
     
 3. Nell'Skype for Business di amministrazione scegliere **Utenti.**
     
-4. Seleziona l'utente per il quale vuoi gestire le impostazioni, quindi nel riquadro Azioni fai clic su **Modifica**![Mostra l'icona Modifica](../images/4d8bea48-be68-4e0e-a54c-73decf7ea4ec.png).
+4. Selezionare l'utente per cui si vogliono gestire le impostazioni e quindi nel riquadro Azioni fare clic **su** Modifica ![ mostra l'icona ](../images/4d8bea48-be68-4e0e-a54c-73decf7ea4ec.png) Modifica. .
     
 5. Scegli **Audioconferenza** nel riquadro di spostamento sinistro, quindi nella pagina **Proprietà** dell'utente, modifica i seguenti campi:
     
@@ -60,7 +60,7 @@ Gli amministratori di Microsoft 365 o Office 365 possono modificare le impostazi
 |**Consenti ai chiamanti non autenticati di essere le prime persone presenti a una riunione** <br/> |Seleziona questa opzione per consentire ai chiamanti non autenticati di essere i primi a partecipare alle riunioni.  <br/> |
 |**Restrizioni sulla disconnessione dalle riunioni di questo utente** <br/> |Seleziona un'opzione dell'elenco se vuoi impedire solo le disconnessioni nazionali o se vuoi impedirle tutte dalle riunioni.  <br/> |
   
-![Mostra la pagina Proprietà di Audioconferenza per un utente](../images/228550f7-92be-416d-9ab1-7c2ef54dd4e6.png)
+![Mostra la pagina Proprietà audioconferenza per un utente.](../images/228550f7-92be-416d-9ab1-7c2ef54dd4e6.png)
 
 > [!Note]
 > [!INCLUDE [updating-admin-interfaces](../includes/updating-admin-interfaces.md)]

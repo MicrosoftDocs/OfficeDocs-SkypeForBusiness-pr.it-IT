@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare tali impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 7f981ed6d4397d07dc0aae5bffc6174983e12e52
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4809fab0976eda2b109620f2a2716ccb10e80318
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58629368"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728421"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestione dei criteri riunione in Teams
 
@@ -119,13 +119,13 @@ Selezionare un criterio esistente nella pagina **Criteri riunione** o selezionar
 
 Consenti **Riunione immediata** è un criterio per utente e si applica prima dell'inizio di una riunione. Questa impostazione controlla se un utente può avviare una riunione non pianificata in un canale di Teams. Se si attiva questa impostazione, gli utenti possono selezionare il pulsante **Riunione** per avviare una riunione non pianificata o programmare una riunione nel canale. Il valore predefinito è True.
 
-![Screenshot che mostra l'icona Riunione immediata sotto un messaggio](media/meeting-policies-meet-now.png)
+![Screenshot che mostra l'icona Riunione immediata sotto un messaggio.](media/meeting-policies-meet-now.png)
 
 ### <a name="allow-the-outlook-add-in"></a>Consenti il componente aggiuntivo per Outlook
 
 Consenti il componente aggiuntivo per Outlook è un criterio per utente che si applica prima dell'inizio di una riunione. Questa impostazione consente di controllare se è possibile pianificare riunioni di Teams dall'interno di Outlook (Windows, Mac, Web e Mobile).
 
-![Screenshot che mostra la possibilità di pianificare una nuova riunione](media/meeting-policies-outlook-add-in.png)
+![Screenshot che mostra la possibilità di pianificare una nuova riunione.](media/meeting-policies-outlook-add-in.png)
 
 Se si disattiva questa funzionalità, gli utenti non potranno pianificare riunioni. di Teams durante la creazione di una nuova riunione in Outlook. In Outlook per Windows, ad esempio, l'opzione **Nuova riunione di Teams** non comparirà sulla barra multifunzione.
 
@@ -137,7 +137,7 @@ Se questo criterio è disattivato, gli utenti non possono creare nuove riunioni 
 
 L'opzione Pianifica una riunione sarà disabilitata.
 
- ![Opzione Pianifica una riunione in Teams](media/schedule-meeting-option.png)
+ ![Opzione Pianifica una riunione in Teams.](media/schedule-meeting-option.png)
 
 La selezione del canale è disabilitata.
 
@@ -146,15 +146,15 @@ La selezione del canale è disabilitata.
 Nella pagina dei post del canale, le funzionalità seguenti saranno disabilitate:
 
 - Pulsante **Pianifica una riunione** nella casella per comporre una risposta del canale.
-  ![Casella per comporre una risposta con pulsante Pianifica una riunione](media/schedule-meeting-disabled-in-chat2.png)
+  ![Casella per comporre una risposta con pulsante Pianifica una riunione.](media/schedule-meeting-disabled-in-chat2.png)
   
 - Pulsante **Pianifica una riunione** nell'intestazione del canale.
-  ![Pulsante Pianifica una riunione nell'intestazione del canale](media/schedule-now-in-header.png)
+  ![Pulsante Pianifica una riunione nell'intestazione del canale.](media/schedule-now-in-header.png)
 
 Nel calendario del canale:
 
 - Il pulsante **Aggiungi nuovo evento** nell'intestazione del calendario del canale sarà disabilitato.
-  ![Pulsante nell'intestazione del calendario del canale disabilitato](media/add-new-event-disabled.png)
+  ![Pulsante nell'intestazione del calendario del canale disabilitato.](media/add-new-event-disabled.png)
 
 - Gli utenti non potranno trascinare e selezionare un intervallo di tempo nel calendario del canale per creare una riunione di canale.
 
@@ -164,7 +164,7 @@ Nell'interfaccia di amministrazione:
 
 L'app del calendario del canale sarà visualizzata nella sezione **App Microsoft** nella pagina dei criteri di autorizzazione delle app.
 
- ![I criteri di autorizzazione delle app nell'interfaccia di amministrazione di Teams](media/manage-microsoft-apps-policy.png)
+ ![I criteri di autorizzazione delle app nell'interfaccia di amministrazione di Teams.](media/manage-microsoft-apps-policy.png)
 
 ### <a name="allow-scheduling-private-meetings"></a>Consenti la pianificazione di riunioni private
 
@@ -191,7 +191,7 @@ Questo è un criterio per utente e si applica prima dell'inizio di una riunione.
 
 Questo criterio attiva la trascrizione in tempo reale. Consenti la trascrizione è un criterio per utente. Questa impostazione controlla se una riunione specifica di Teams può essere trascritta.
 
-![opzioni di trascrizione nei criteri riunione](media/live-transcription.png)
+![opzioni di trascrizione nei criteri riunione.](media/live-transcription.png)
 
 La trascrizione in tempo reale mostra la conversione della voce in testo scritto di contenuti vocali durante una riunione di Teams in tempo reale. Il testo viene visualizzato accanto al video della riunione, inclusi il nome del relatore e un indicatore di data e ora. Per altre informazioni, vedere [Visualizzazione della trascrizione in tempo reale in una riunione di Teams](https://support.microsoft.com/office/view-live-transcription-in-a-teams-meeting-dc1a8f23-2e20-4684-885e-2152e06a4a8b).
 
@@ -212,7 +212,7 @@ L’opzione Consenti registrazione cloud è controllata dai criteri per utente. 
 
 Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione.
 
-![Le opzioni di registrazione](media/meeting-policies-recording.png)
+![Le opzioni di registrazione.](media/meeting-policies-recording.png)
 
 Per altre informazioni sulla registrazione di una riunione cloud, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
@@ -264,7 +264,7 @@ Le riunioni organizzate da un utente che ha questa impostazione di criteri abili
 
 | Client Web e desktop di Teams |Client per dispositivi mobili di Teams  |
 |:-------:|:-------:|
-|![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su desktop](media/meeting-policies-audio-video-settings.png)    |![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su dispositivo mobile](media/meeting-policies-mobile-join.png)          |
+|![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su desktop.](media/meeting-policies-audio-video-settings.png)    |![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su dispositivo mobile](media/meeting-policies-mobile-join.png)          |
 
 Osserviamo l'esempio seguente.
 
@@ -358,11 +358,11 @@ Questo è un criterio per utente. Questa impostazione controlla se l'utente può
 
 Se questa impostazione è attivata per l'utente, nella barra superiore di una sessione di condivisione compare l'opzione **Concedi controllo**.
 
-![Screenshot che mostra l'opzione Concedi controllo](media/meeting-policies-give-control.png)
+![Screenshot che mostra l'opzione Concedi controllo.](media/meeting-policies-give-control.png)
 
 Se l'impostazione è disattivata per l'utente, l'opzione **Concedi controllo** non è disponibile.
 
-![Screenshot che mostra che l'opzione Concedi controllo non è disponibile](media/meeting-policies-give-control-not-available.png)
+![Screenshot che mostra che l'opzione Concedi controllo non è disponibile.](media/meeting-policies-give-control-not-available.png)
 
 Osserviamo l'esempio seguente.
 
@@ -459,7 +459,7 @@ Si tratta di un criterio per organizzatore che consente riunioni di audioconfere
 
 Questo è un criterio per organizzatore. Questa impostazione controlla se gli utenti si uniscono direttamente a una riunione o restano in sala di attesa finché non vengono ammessi da un utente autenticato. Questa impostazione non si applica agli utenti con accesso esterno.
 
-![Screenshot che mostra una riunione con un utente in sala di attesa](media/meeting-policies-lobby.png)
+![Screenshot che mostra una riunione con un utente in sala di attesa.](media/meeting-policies-lobby.png)
 
  Gli organizzatori di riunioni possono selezionare **Opzioni riunione** nell'invito alla riunione per modificare questa impostazione per ogni riunione pianificata.
 
@@ -489,7 +489,7 @@ I criteri di riunione hanno un’impostazione che consente ai membri del team di
 
 Questo è un criterio per utente e si applica durante una riunione. Questa impostazione controlla se, l'opzione **Abilita i sottotitoli in tempo reale** è disponibile nelle riunioni a cui l'utente partecipa, per l'attivazione e la disattivazione dei sottotitoli in tempo reale.  
 
-![Screenshot che mostra l'opzione Abilita i sottotitoli in tempo reale](media/meeting-policies-live-captions.png)
+![Screenshot che mostra l'opzione Abilita i sottotitoli in tempo reale.](media/meeting-policies-live-captions.png)
 
 |Valore dell'impostazione |Comportamento  |
 |---------|---------|
@@ -520,7 +520,7 @@ Per specificare il valore predefinito dell'impostazione **Chi può essere un rel
 
 Inoltre, è possibile modificare questo criterio nell'interfaccia di amministrazione di Teams.
 
-![Screenshot dell'interfaccia di amministrazione di Teams](media/designated-presenter-role.png)
+![Screenshot dell'interfaccia di amministrazione di Teams.](media/designated-presenter-role.png)
 
 Dopo aver impostato il valore predefinito, gli organizzatori delle riunioni possono ancora modificare questa impostazione in Teams e scegliere chi può essere un relatore nelle riunioni pianificate.
 

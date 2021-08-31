@@ -16,12 +16,12 @@ MS.collection:
 description: Informazioni su analisi tra team, analisi per team e analisi per canale in Teams, che consentono agli utenti di visualizzare i dati di utilizzo per i team o i canali di cui fanno parte.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 0aa140482188436a08732638196af64402e6ed15
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 54abc3545ca6d2935a78e3924cbd62e948c02bf1
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606999"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731735"
 ---
 # <a name="view-analytics-in-teams"></a>Visualizzare l'analisi in Teams
 
@@ -35,11 +35,11 @@ Gli utenti possono filtrare una di queste visualizzazioni per visualizzare i dat
 
 ## <a name="view-cross-team-analytics"></a>Visualizzare l'analisi tra team
 
-1. In Teams, nella parte inferiore dell'elenco dei team, accanto a Partecipa o crea **un team,** fai clic **su Gestisci team.**
+1. In Teams, nella parte inferiore dell'elenco dei team, accanto **a Partecipa o crea un team,** fare clic su Gestisci **team.**
 2. Fare clic **sulla scheda** Analisi.
 3. Selezionare un intervallo di date per visualizzare i dati di utilizzo per tutti i team di cui si è membri o di cui si è proprietari.
 
-    ![Screenshot della visualizzazione analisi tra team](../media/view-analytics-cross-team.png)
+    ![Screenshot della visualizzazione analisi tra team.](../media/view-analytics-cross-team.png)
 
     |Elemento |Descrizione  |
     |--------|-------------|
@@ -57,11 +57,11 @@ Gli utenti possono filtrare una di queste visualizzazioni per visualizzare i dat
 2. Fare clic **sulla scheda** Analisi.
 4. Selezionare un intervallo di date per visualizzare i dati di utilizzo per il team.  
 
-    ![Screenshot della visualizzazione analisi per team](../media/view-analytics-per-team.png)
+    ![Screenshot della visualizzazione analisi per team.](../media/view-analytics-per-team.png)
 
     |Elemento |Descrizione  |
     |--------|-------------|
-    |**Riepilogo**   |Riepilogo dell'attività del team, tra cui:<ul><li>**Utenti:** numero totale di utenti nel periodo di tempo specificato. Sono inclusi i proprietari del team, i membri del team e gli utenti guest.</li> <li>**Post:** numero di nuovi messaggi pubblicati nella chat del team durante il periodo di tempo specificato.</li><li>**Risposte:** numero di risposte nella chat del team durante il periodo di tempo specificato.</li> <li>**App:** numero di app aggiunte al team.</li><li>**Riunioni:** numero di Teams organizzate a livello di team.</li> </ul> |
+    |**Riepilogo**   |Riepilogo dell'attività del team, tra cui:<ul><li>**Utenti:** numero totale di utenti nel periodo di tempo specificato. Sono inclusi i proprietari del team, i membri del team e gli utenti guest.</li> <li>**Post:** numero di nuovi messaggi pubblicati nella chat del team durante il periodo di tempo specificato.</li><li>**Risposte:** numero di risposte nella chat del team durante il periodo di tempo specificato.</li> <li>**App:** numero di app aggiunte al team.</li><li>**Riunioni:** numero di Teams riunioni organizzate a livello di team.</li> </ul> |
     |**Utenti attivi**   |Numero di utenti attivi e inattivi.|
     |**Ruolo**   |Numero di utenti per ruolo, inclusi i proprietari del team, i membri del team e gli utenti guest.|
     |**Grafico Utenti** attivi  |Numero di attività giornaliere. Posizionare il puntatore del mouse sul punto in una data specifica per visualizzare il numero di utenti attivi in tale data.|
@@ -76,7 +76,7 @@ Gli utenti possono filtrare una di queste visualizzazioni per visualizzare i dat
 2. Fare clic **sulla scheda** Analisi.
 3. Selezionare un intervallo di date per visualizzare i dati di utilizzo per il canale.  
 
-    ![Screenshot della visualizzazione analisi per canale](../media/view-analytics-per-channel.png)
+    ![Screenshot della visualizzazione analisi per canale.](../media/view-analytics-per-channel.png)
 
     |Elemento |Descrizione  |
     |--------|-------------|

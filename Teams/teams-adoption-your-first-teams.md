@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 18a9d5f7adac8c2f3fd615085b3f03d2b3733142
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ce16e1cf59f720402c2b5f1628c268aed927d145
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628258"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732405"
 ---
 # <a name="create-your-first-teams-in-microsoft-teams"></a>Creare i primi team in Microsoft Teams
 
@@ -40,18 +40,18 @@ Il modo migliore per guidare l'adozione di Teams è usare il prodotto. È consig
 
 All'Microsoft Teams, la [](/microsoftteams/platform/concepts/tabs/tabs-overview) raccolta schede consente di accedere a tutte le app Microsoft 365 o Office 365 e di terze parti attivate dall'amministratore. Per ottenere il massimo valore dal prodotto, è consigliabile aggiungere le risorse chiave come schede in ognuno dei canali appropriati. Vedere l'esempio seguente.
 
-![Schermata che mostra le schede predefinite e personalizzate](media/teams-adoption-tab-example.png)
+![Schermata che mostra le schede predefinite e personalizzate.](media/teams-adoption-tab-example.png)
 
-Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare riferimento facilmente ai canali del team. Queste risorse sono in aggiunta alle sezioni OneNote blocco appunti. Se stai lavorando con il nostro team FastTrack, ti assisterà nella configurazione di questi primi team. 
+Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare riferimento facilmente ai canali del team. Queste risorse sono in aggiunta alle sezioni OneNote blocco appunti. Se stai lavorando con il nostro team di FastTrack, ti assisterà nella configurazione di questi primi team. 
 
 |Nome team/canale | Scheda Aggiunta |
 |----------------- | ---------- |
 | **Microsoft Teams Distribuzione** ||
-| Generale | Scheda Web: Teams [documentazione](./index.yml) |
+| Generale | Scheda Web: [Teams documentazione](./index.yml) |
 | Consapevolezza e adozione | [Teams Adoption Hub](https://aka.ms/DriveTeamsAdoption)<br/>[Microsoft Teams Customer Success Kit](https://aka.ms/TeamsCustomerSuccess)|
 | Coinvolgimento aziendale | Wiki - Indicazioni per l'impegno<br/>Modulo - Richiesta di Teams consulenza<br/>Elenco - Richieste di impegno |
 |Early adopters | Community di feedback aggiunta <br/> OneNote domande frequenti e temi comuni |
-| Feedback e segnalazione | Report sull'Microsoft 365 o sull Office 365 di utilizzo bloccati (solo per Microsoft 365 o Office 365 amministratori) |
+| Feedback e segnalazione | Report sull Microsoft 365 o sull Office 365 di utilizzo bloccati (solo per Microsoft 365 o Office 365 amministratori) |
 | Sicurezza e conformità | Portale di attendibilità Microsoft <br/> [Documentazione sulla sicurezza e la conformità](/office365/securitycompliance/index)<br/> [Roadmap](/office365/securitycompliance/security-roadmap) |
 | Strategia e pianificazione | Collaborazione North Star PowerPoint <br/> Piano di Project service adoption |
 | Formazione | Formazione personalizzata di formazione <br/> [Formazione online di Teams](https://aka.ms/TeamsTraining) |
@@ -64,6 +64,6 @@ Nei team iniziali è consigliabile aggiungere gli elementi seguenti per fare rif
 
 ## <a name="making-the-switch-to-microsoft-teams"></a>Passaggio a Microsoft Teams
 
-Quando si inizia a usare Teams, sarà importante che l'utente e il resto del team di progetto si impegnino Teams usare una chat, canali e risorse per eseguire il progetto. L'uso personale di Teams è fondamentale per la qualità del progetto di adozione. È consigliabile evitare di frammentare il progetto continuando a conversazioni con il team di progetto di base nella posta elettronica. Se si passa a Teams si modella il comportamento che si vuole che i dipendenti si accoglino. Impostare il tono, iniziare a utilizzare le informazioni del progetto in un'unica posizione.  
+Quando si inizia a usare Teams, sarà importante che l'utente e il resto del team di progetto si impegnino Teams usare chat, canali e risorse per eseguire il progetto. L'uso personale di Teams è fondamentale per la qualità del progetto di adozione. È consigliabile evitare di frammentare il progetto continuando a conversazioni con il team di progetto di base nella posta elettronica. Se si passa a Teams si modella il comportamento che si vuole che i dipendenti si accoglino. Impostare il tono, iniziare a utilizzare le informazioni del progetto in un'unica posizione.  
 
-![Icona che illustra il passaggio successivo ](media/teams-adoption-next-icon.png) Successivo: [Quanto è pronta l'organizzazione](teams-adoption-assess-readiness.md) per Microsoft Teams?
+![Icona che rappresenta il passaggio successivo.](media/teams-adoption-next-icon.png) Successiva: [Quanto è pronta l'organizzazione per Microsoft Teams?](teams-adoption-assess-readiness.md)

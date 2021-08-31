@@ -1,5 +1,5 @@
 ---
-title: Restrizioni per le chiamate in uscita - Audioconferenza & chiamate PSTN
+title: Restrizioni per le chiamate in uscita - Servizi di audioconferenza & chiamate PSTN
 ms.reviewer: ''
 ms.author: tonysmit
 author: tonysmit
@@ -21,12 +21,12 @@ ms.custom:
 - Audio Conferencing
 - seo-marvel-mar2020
 description: Gli amministratori possono controllare il tipo di audioconferenza e le chiamate PSTN degli utenti finali che possono essere effettuate dagli utenti.
-ms.openlocfilehash: 9e7f656cd51131237507cc184e021128a33d9268
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fe63a29bf4cde46ee881d7a425839073ed4b4b7f
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598410"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730325"
 ---
 # <a name="outbound-calling-restriction-policies-for-audio-conferencing-and-user-pstn-calls"></a>Criteri di restrizione delle chiamate in uscita per audioconferenze e chiamate PSTN utente
 
@@ -39,7 +39,7 @@ I controlli delle chiamate in uscita possono essere applicati in base all'utente
 |Chiamate PSTN per servizi di audioconferenza|Limita il tipo di messaggi in uscita </br>chiamate consentite dall'interno </br>riunioni organizzate da un utente.|Qualsiasi destinazione (impostazione predefinita)</br>Nello stesso paese o area geografica dell'organizzatore </br> [Solo paesi o aree geografiche dell'area A](audio-conferencing-zones.md) </br>Non consentire|
 |Chiamate PSTN per l'utente finale|Limita il tipo di chiamata </br>che può essere effettuata da un utente.|Internazionale e Nazionale (impostazione predefinita)</br>Nazionale</br>Nessuno|
 
-Per scoprire quali paesi e aree geografiche sono considerati Zona A, vedere Aree geografiche [e aree geografiche per audioconferenza.](audio-conferencing-zones.md)
+Per scoprire quali paesi e aree geografiche sono considerati zona A, vedere Aree geografiche [e aree geografiche per audioconferenza.](audio-conferencing-zones.md)
 
    > [!NOTE]
    > Una chiamata viene considerata nazionale se il numero composto si trova nello stesso paese in cui è stato configurato Microsoft 365 o Office 365 per l'organizzatore della riunione (nel caso delle audioconferenze) o per l'utente finale (nel caso delle chiamate PSTN dell'utente finale).
@@ -49,7 +49,7 @@ Per scoprire quali paesi e aree geografiche sono considerati Zona A, vedere Aree
 
 ## <a name="restrict-audio-conferencing-outbound-calls"></a>Limitare le chiamate in uscita per le audioconferenze
 
-![logo Microsoft Teams ](media/teams-logo-30x30.png) **logo con l'interfaccia Microsoft Teams di amministrazione**
+![il Microsoft Teams logo.](media/teams-logo-30x30.png) **Utilizzo dell'interfaccia di amministrazione di Microsoft Teams.**
 
 1. Nel riquadro di spostamento sinistro selezionare **Utenti** e quindi selezionare il nome visualizzato dell'utente nell'elenco degli utenti disponibili.
 
@@ -59,7 +59,7 @@ Per scoprire quali paesi e aree geografiche sono considerati Zona A, vedere Aree
 
 5. Selezionare **Salva**.
 
-![Icona che mostra il logo di Skype for Business](media/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il Skype for Business logo.](media/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
 
 1. **Nell'Skype for Business di amministrazione,** nel riquadro di spostamento sinistro, passare a Utenti di **audioconferenza** e quindi selezionare l'utente nell'elenco degli  >  utenti disponibili.
 
@@ -67,7 +67,7 @@ Per scoprire quali paesi e aree geografiche sono considerati Zona A, vedere Aree
 
 3.  In **Restrizioni alle chiamate in uscita** dalle riunioni di questo utente selezionare l'opzione di restrizione della chiamata in uscita desiderata.
 
-      ![Opzioni Restrizioni per le chiamate in uscita](media/restrictions-to-dial-outs.png)
+      ![Opzioni Restrizioni per le chiamate in uscita.](media/restrictions-to-dial-outs.png)
 
 4. Selezionare **Salva**.
 

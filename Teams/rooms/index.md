@@ -14,20 +14,20 @@ ms.localizationpriority: medium
 ms.collection:
 - m365initiative-meetings
 ms.assetid: b4e0ad1e-12e5-4130-aec1-d8c9cd3a5965
-description: Informazioni su come configurare le Microsoft Teams Rooms, incluse la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
+description: Informazioni su come configurare Microsoft Teams Rooms, inclusi la pianificazione, la distribuzione e la gestione del sistema per creare la sala riunioni virtuale ideale.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: e45ca5445356fcf6c847d8a7680a463a09bfe864
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f95d2ef04e4021a91b6881d4ca7537aa4e756420
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607039"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730429"
 ---
 # <a name="microsoft-teams-rooms"></a>Microsoft Teams Rooms
 
 :::row:::
     :::column span="2":::
-       È possibile trasformare gli spazi delle riunioni, dalle piccole aree di riunione alle grandi sale riunioni, con un'esperienza Teams che è semplice da usare, distribuire e gestire.
+       È possibile trasformare gli spazi delle riunioni, dalle piccole aree riunioni alle grandi sale riunioni, con un'esperienza Teams collaborativa e semplice da usare, distribuire e gestire.
 
        Avviare le riunioni in tempo con un solo tocco, quindi proiettare istantaneamente sullo schermo nella sala e condividerle con partecipanti remoti.
 
@@ -36,7 +36,7 @@ ms.locfileid: "58607039"
        Per una rapida introduzione Teams Rooms, fare clic sul video a destra.
     :::column-end:::
     :::column:::
-       [:::image type="content" source="../media/Teams-Rooms-Microsoft-Mechanics.jpg" alt-text="Microsoft Teams Rooms Video di Microsoft Mechanics":::](https://www.youtube.com/watch?v=z4N-Z6mT09Q)
+       [:::image type="content" source="../media/Teams-Rooms-Microsoft-Mechanics.jpg" alt-text="Microsoft Teams Rooms Video di Microsoft Mechanics.":::](https://www.youtube.com/watch?v=z4N-Z6mT09Q)
     :::column-end:::
 :::row-end:::
 
@@ -45,7 +45,7 @@ ms.locfileid: "58607039"
 |  **[Piano](./rooms-plan.md)** |  **[Distribuzione](./rooms-deploy.md)** |  **[Gestione](./rooms-manage.md)** |
 
 
-[:::image type="content" source="../media/Teams-Rooms-Microsoft-Mechanics.jpg" alt-text="Microsoft Teams Rooms Video di Microsoft Mechanics":::](https://www.youtube.com/watch?v=z4N-Z6mT09Q)
+[:::image type="content" source="../media/Teams-Rooms-Microsoft-Mechanics.jpg" alt-text="Microsoft Teams Rooms Video di Microsoft Mechanics.":::](https://www.youtube.com/watch?v=z4N-Z6mT09Q)
 
 > [!NOTE]
 > Microsoft Teams Rooms è destinato all'uso con Microsoft Teams, Skype for Business Online, Skype for Business Server 2019 o Skype for Business Server 2015.

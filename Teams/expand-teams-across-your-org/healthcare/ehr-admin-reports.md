@@ -23,22 +23,22 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
 description: Visualizzare i report di amministrazione per Teams visite ai connettori EHR
-ms.openlocfilehash: cebd427096baae564f020694e18fc6023a560790
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fd1b7577079c65d12fa85cc4098702cb26b2a1da
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58588168"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730195"
 ---
 # <a name="microsoft-teams-ehr-connector-admin-reports"></a>Microsoft Teams Report di amministrazione del connettore EHR
 
 La Microsoft Teams report di amministrazione del connettore EHR (Electronic Health Record) offre una visualizzazione rapida e facile da leggere dei dati di utilizzo.
 
-È possibile visualizzare il report di Microsoft Teams di amministrazione del connettore EHR facendo clic sul dashboard dell'interfaccia di amministrazione di Microsoft Teams e visualizzando la finestra di dialogo.
+Per visualizzare il report di Microsoft Teams di amministrazione del connettore EHR, accedere al dashboard dell'interfaccia di amministrazione di Microsoft Teams e visualizzare la finestra di dialogo.
 
 Accedere al report dal dashboard dell Microsoft Teams di amministrazione.
 
- ![finestra di dialogo delle allocazioni e dei limiti delle visite virtuali](../../media/admin-connector-report.png)
+ ![finestra di dialogo delle allocazioni e dei limiti delle visite virtuali.](../../media/admin-connector-report.png)
 
 La finestra di dialogo fornisce i dati seguenti:
 

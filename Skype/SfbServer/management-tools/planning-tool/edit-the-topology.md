@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 47425ab1-5645-4d6f-b202-64bcce43e3ef
 description: Dopo aver completato le domande iniziali, è possibile modificare il nome di dominio completo (FQDN) e gli indirizzi IP per il sito. A tale scopo, nella pagina Topologia globale fare doppio clic sul sito che si desidera modificare.
-ms.openlocfilehash: 6c18b980f7dca770de46a8eaeed01e7c508486b2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 75eadc6234c9ac6e4e8a869df2da4d246b60f9ed
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58626598"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732325"
 ---
 # <a name="edit-the-topology-in-skype-for-business-server-2015"></a>Modificare la topologia in Skype for Business Server 2015
 
@@ -27,7 +27,7 @@ Dopo aver completato le domande iniziali, è possibile modificare il nome di dom
 
 Lo Strumento di pianificazione visualizza la topologia del sito per il sito selezionato. Nella parte inferiore della pagina del sito sono presenti quattro schede:
 
-![Topologia del sito dello strumento di pianificazione](../../media/Planning_Tool_Site_Topology.png)
+![Topologia del sito dello strumento di pianificazione.](../../media/Planning_Tool_Site_Topology.png)
 
 - Topologia sito - La pagina attualmente visualizzata con una panoramica visiva della topologia come consigliato.
 
@@ -35,9 +35,9 @@ Lo Strumento di pianificazione visualizza la topologia del sito per il sito sele
 
 - Edge Admin Report - Il report dell'amministratore di Edge contiene un totale di quattro report:
 
-     ![Pagina Report amministratore Edge](../../media/Planning_Tool_Summary_Report.png)
+     ![Pagina Report amministratore Edge.](../../media/Planning_Tool_Summary_Report.png)
 
-  - Rapporto riepilogativo - Report generale delle impostazioni per la configurazione della rete perimetrale. Se si modificano i valori nella pagina **Diagramma** reti perimetrale con i valori TCP/IP e FQDN della topologia che verranno utilizzati nella distribuzione effettiva, tali indirizzi e nomi verranno rappresentati qui. In caso contrario, verrà visualizzato il testo predefinito.
+  - Rapporto riepilogativo- Report generale delle impostazioni per la configurazione della rete perimetrale. Se si modificano i valori nella pagina **Diagramma** reti perimetrale con i valori TCP/IP e FQDN della topologia che verranno utilizzati nella distribuzione effettiva, tali indirizzi e nomi verranno rappresentati qui. In caso contrario, verrà visualizzato il testo predefinito.
 
   - Rapporto certificati - Nel rapporto del certificato verranno elencati il nome soggetto e i nomi alternativi del soggetto per i certificati necessari per la topologia.
 
@@ -53,9 +53,9 @@ Lo Strumento di pianificazione visualizza la topologia del sito per il sito sele
 ## <a name="edit-the-network-configuration-diagram"></a>Modificare il diagramma di configurazione di rete
 <a name="Edit_Network_diagram"> </a>
 
-La maggior parte delle attività che un progettista esegue nello strumento di pianificazione di Skype for Business Server 2015 consiste nella definizione delle voci per gli indirizzi IP e i nomi di dominio completi (FQDN) per le voci nel diagramma di rete. Le informazioni immesse in questa pagina vengono riportate nei report e nelle altre informazioni contenute nello Strumento di pianificazione.
+La maggior parte delle operazioni che un progettista esegue nello strumento di pianificazione di Skype for Business Server 2015 consiste nella definizione delle voci per gli indirizzi IP e i nomi di dominio completi (FQDN) per le voci nel diagramma di rete. Le informazioni immesse in questa pagina vengono riportate nei report e nelle altre informazioni contenute nello Strumento di pianificazione.
 
-![Diagramma di rete dello strumento di pianificazione](../../media/Planning_Tool_Network_Diagram.png)
+![Diagramma di rete dello strumento di pianificazione.](../../media/Planning_Tool_Network_Diagram.png)
 
 Lo strumento di pianificazione crea un diagramma di rete con testo predefinito per gli indirizzi IP e gli FQDN.
 

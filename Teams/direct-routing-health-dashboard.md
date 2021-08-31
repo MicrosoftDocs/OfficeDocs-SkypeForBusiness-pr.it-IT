@@ -16,16 +16,16 @@ appliesto:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare Health Dashboard per monitorare la connessione tra Session Border Controller e Direct Routing.
-ms.openlocfilehash: aec8a0bb37af02f6103714a26c9d35e18879985c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 4927f6473e74a6fc14add9105022fc8efbade260
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592340"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728215"
 ---
 # <a name="health-dashboard-for-direct-routing"></a>Dashboard integrità per il routing diretto
 
-Health Dashboard for Direct Routing consente di monitorare la connessione tra session border controller (SBC) e l'interfaccia Direct Routing.  Con Health Dashboard è possibile monitorare le informazioni su SBC, il servizio di telefonia e i parametri di rete tra SBC e l'interfaccia di routing diretto. Queste informazioni consentono di identificare i problemi, incluso il motivo per cui le chiamate sono in uscita. Ad esempio, L'SBC potrebbe interrompere l'invio di chiamate se un certificato sul SBC è scaduto o se ci sono problemi di rete. Per informazioni [su chi](using-admin-roles.md) ha accesso al dashboard integrità, vedere i ruoli di amministratore.
+Health Dashboard for Direct Routing consente di monitorare la connessione tra session border controller (SBC) e l'interfaccia Direct Routing.  Con Health Dashboard è possibile monitorare le informazioni su SBC, il servizio di telefonia e i parametri di rete tra SBC e l'interfaccia di routing diretto. Queste informazioni consentono di identificare i problemi, incluso il motivo delle chiamate perse. Ad esempio, L'SBC potrebbe interrompere l'invio di chiamate se un certificato sul SBC è scaduto o se ci sono problemi di rete. Per informazioni [su chi](using-admin-roles.md) ha accesso al dashboard integrità, vedere i ruoli di amministratore.
 
 Health Dashboard monitora due livelli di informazioni:
 
@@ -38,7 +38,7 @@ Health Dashboard monitora due livelli di informazioni:
 
 Dashboard integrità fornisce le informazioni seguenti relative all'integrità generale degli SBC connessi:
 
- ![Mostra le statistiche del dashboard integrità](media/direct-routing-dashboard-stats1.png)
+ ![Mostra le statistiche del dashboard integrità.](media/direct-routing-dashboard-stats1.png)
 
 - **Riepilogo routing diretto:** mostra il numero totale di SBC registrati nel sistema. La registrazione significa che l'amministratore del tenant ha aggiunto un SBC usando il comando New-CsOnlinePSTNGateway database. Se il valore SBC è stato aggiunto in PowerShell, ma non è mai stato connesso, il dashboard integrità lo mostra in uno stato non integro.
 
@@ -56,7 +56,7 @@ Dashboard integrità fornisce le informazioni seguenti relative all'integrità g
 
    NER = 100 x (Chiamate con risposta + Utente occupato + Chiama senza risposta + Rifiuta convulsioni terminali)/Totale chiamate
 
-- **Durata media delle chiamate** - Le informazioni sulla durata media delle chiamate possono aiutare a monitorare la qualità delle chiamate. La durata media di una chiamata PSTN 1:1 è di 4-5 minuti.  Tuttavia, per ogni società, questa media può variare.  Microsoft consiglia di stabilire una previsione per la durata media delle chiamate per l'azienda. Se questo parametro scende significativamente al di sotto della linea di base, potrebbe indicare che gli utenti hanno problemi con la qualità o l'affidabilità delle chiamate e che si sono sospesi prima del solito. Se si inizia a vedere una durata media delle chiamate estremamente bassa, ad esempio 15 secondi, i chiamanti potrebbero essere sospesi perché il servizio non esegue in modo affidabile.
+- **Durata media delle chiamate:** le informazioni sulla durata media delle chiamate possono aiutare a monitorare la qualità delle chiamate. La durata media di una chiamata PSTN 1:1 è di 4-5 minuti.  Tuttavia, per ogni società, questa media può variare.  Microsoft consiglia di stabilire una previsione per la durata media delle chiamate per l'azienda. Se questo parametro scende significativamente al di sotto della linea di base, potrebbe indicare che gli utenti hanno problemi con la qualità o l'affidabilità delle chiamate e che si sono sospesi prima del solito. Se si inizia a vedere una durata media delle chiamate estremamente bassa, ad esempio 15 secondi, i chiamanti potrebbero essere sospesi perché il servizio non esegue in modo affidabile.
 
    Poiché l'azione eseguita può dipendere dal numero di chiamate interessate, dashboard integrità mostra quante chiamate sono state analizzate per calcolare un parametro.
 
@@ -82,13 +82,13 @@ Dashboard integrità fornisce le informazioni seguenti relative all'integrità g
 
 È anche possibile visualizzare le informazioni dettagliate per uno specifico SBC, come illustrato nello screenshot seguente:
 
-![Dettagli SBC del dashboard integrità](media/direct-routing-dashboard-SBC-detail1.png)
+![Dettagli SBC del dashboard integrità.](media/direct-routing-dashboard-SBC-detail1.png)
 
 La visualizzazione dettagliata mostra i parametri aggiuntivi seguenti:
 
 - **Stato connettività TLS:** questa è la stessa metrica della pagina "Integrità generale".
 
-- **Ultimo stato della connettività TLS:** mostra l'ora in cui il servizio SBC ha effettuato una connessione TLS al servizio di routing diretto.
+- **Ultimo stato della connettività TLS:** mostra l'ora in cui il servizio SBC ha effettuato una connessione TLS al servizio routing diretto.
 
 - **Stato delle opzioni SIP:** la stessa metrica della pagina "Integrità generale".
 

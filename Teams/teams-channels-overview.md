@@ -22,12 +22,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: b760d5fad3a694fd0dd41c34116d09297d25dd22
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6002534362126c2cc16954c7e82c865166776c0b
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58579580"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731945"
 ---
 # <a name="overview-of-teams-and-channels-in-microsoft-teams"></a>Panoramica dei team e i canali in Microsoft Teams
 
@@ -92,7 +92,7 @@ Di seguito sono illustrati alcuni esempi di come i vari tipi di utenti potrebber
 
 Teams è ideale per eliminare le barriere aziendali e favorire i team interfunzionali. Pertanto, è consigliabile invitare gli utenti a pensare alla funzionalità dei team anziché ai limiti dell'organizzazione.
 
-|Tipi di team  |Canali potenziali  |App (schede ![Icona che raffigura una cartella con una scheda](media/Overview_of_teams_and_channels_in_Microsoft_Teams_image2.png)/Connettori ![Icona che raffigura i blocchi di connessione](media/Overview_of_teams_and_channels_in_Microsoft_Teams_image3.png)/Bot ![Icona che raffigura un piccolo robot](media/Overview_of_teams_and_channels_in_Microsoft_Teams_image4.png))  |
+|Tipi di team  |Canali potenziali  |App (schede ![Icona che raffigura una cartella con una scheda.](media/Overview_of_teams_and_channels_in_Microsoft_Teams_image2.png)/Connettori ![Icona che raffigura i blocchi di connessione](media/Overview_of_teams_and_channels_in_Microsoft_Teams_image3.png)/Bot ![Icona che raffigura un piccolo robot](media/Overview_of_teams_and_channels_in_Microsoft_Teams_image4.png))  |
 |---------|---------|---------|
 |Vendite     |Riunione annuale di vendita<br></br> Revisione aziendale trimestrale<br></br> Revisione della pipeline di vendita mensile<br></br> Playbook della vendite |Power BI<br></br>Trello<br></br>CRM<br></br>Bot di riepilogo         |
 |Pubbliche relazioni     |Comunicati stampa<br></br>Novità e aggiornamenti<br></br>Verifica dei fatti         |Feed RSS<br></br>Twitter         |

@@ -21,12 +21,12 @@ ms.custom:
 - Reporting
 - seo-marvel-apr2020
 description: Informazioni su come caricare i dati del tenant e della creazione in Call Quality Dashboard (CQD).
-ms.openlocfilehash: 847abe5aeb18f7cb19bdad9213334f119c101e20
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 02984b413418fff22da44d4edd4349a1bf980ed7
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58583700"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733135"
 ---
 # <a name="upload-tenant-and-building-data-in-call-quality-dashboard-cqd"></a>Upload di tenant e edificio in Call Quality Dashboard (CQD)
 
@@ -37,13 +37,13 @@ Per ottenere il massimo da Call Quality Dashboard (CQD), è consigliabile carica
 
 Nel dashboard Report di riepilogo CQD selezionare Tenant **Data Upload** dal menu CQD Impostazioni (un'icona **a** forma di ingranaggio nella parte superiore di CQD). Da qui, gli amministratori possono caricare le informazioni sull'edificio e sull'endpoint dell'organizzazione, ad esempio la mappatura di indirizzi IP e informazioni geografiche, il mapping di ogni punto di accesso wireless e del relativo indirizzo MAC e così via.
 
-1. Aprire CQD (dall'interfaccia di amministrazione di Teams o in ), quindi selezionare l'icona a forma di ingranaggio nell'angolo in alto a destra e scegliere Tenant Data Upload dalla pagina Report di [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) riepilogo.  
+1. Aprire CQD (dall'interfaccia di amministrazione di Teams o in ), quindi selezionare l'icona a forma di ingranaggio nell'angolo in alto a destra e scegliere Tenant Data Upload dalla pagina Report di [https://cqd.teams.microsoft.com](https://cqd.teams.microsoft.com) **riepilogo.** 
 
-   ![Screenshot della finestra di dialogo visualizzata durante il caricamento dei dati](media/qerguide-image-tenantdataupload.png)
+   ![Screenshot della finestra di dialogo visualizzata durante il caricamento dei dati.](media/qerguide-image-tenantdataupload.png)
     
-2. In alternativa, se è la prima volta che visiti CQD, ti verrà chiesto di caricare i dati dell'edificio. È possibile selezionare **Upload ora** per passare rapidamente alla pagina Upload **tenant.**
+2. In alternativa, se è la prima volta che visiti CQD, ti verrà chiesto di caricare i dati dell'edificio. È possibile selezionare **Upload ora** per passare rapidamente alla **pagina** Upload tenant.
 
-   ![Screenshot del banner che notifica a un utente di caricare i dati dell'edificio](media/qerguide-image-buildingdatauploadbanner.png)
+   ![Screenshot del banner che notifica a un utente di caricare i dati dell'edificio.](media/qerguide-image-buildingdatauploadbanner.png)
 
 3. Nella pagina **Tenant Data Upload** selezionare **Browse** per scegliere un file di dati.
 
@@ -51,7 +51,7 @@ Nel dashboard Report di riepilogo CQD selezionare Tenant **Data Upload** dal men
 
 5. Dopo aver **selezionato Data di inizio,** **selezionare Upload** per caricare il file in CQD. <br><br>Prima del caricamento, il file viene convalidato. Se la convalida non riesce, viene visualizzato un messaggio di errore che richiede di correggere il file. La figura seguente mostra un errore che si verifica quando il numero di colonne nel file di dati non è corretto.
 
-   ![Esempio di finestra di dialogo che visualizza un errore di caricamento dei dati dell'edificio](media/qerguide-image-buildingdatauploaderror.png)
+   ![Esempio di finestra di dialogo che mostra un errore di caricamento dei dati dell'edificio.](media/qerguide-image-buildingdatauploaderror.png)
  
 6. Se durante la convalida non si verificano errori, il caricamento del file avrà esito positivo. È quindi possibile visualizzare il file  di dati caricato nella tabella Caricamenti personali, che mostra l'elenco completo di tutti i file caricati per il tenant corrente nella parte inferiore della pagina.
 
@@ -63,7 +63,7 @@ Nel dashboard Report di riepilogo CQD selezionare Tenant **Data Upload** dal men
 
 Il primo tipo di file di dati del tenant in CQD è il file di dati **Building.** La colonna Subnet viene derivata espandendo la colonna Network+NetworkRange e quindi unendo la colonna Subnet alla colonna First Subnet o Second Subnet del record di chiamata per visualizzare le informazioni su Building, City, Country o Region. Il formato del file di dati caricato deve soddisfare i criteri seguenti per superare il controllo di convalida prima del caricamento:
   
-- Il file deve essere un file TSV (le colonne sono separate da tab) o un file .csv (le colonne sono separate da una virgola).
+- Il file deve essere un file TSV (le colonne sono separate da una tabulazione) o un file .csv (le colonne sono separate da una virgola).
 
 - Il file di dati non include una riga di intestazione di tabella. La prima riga del file di dati dovrebbe essere dati reali, non etichette di intestazione come "Rete".
 
@@ -95,7 +95,7 @@ Il primo tipo di file di dati del tenant in CQD è il file di dati **Building.**
   | ExpressRoute<sup>3</sup>       | Bool      | 0             | Obbligatorio              |
   | VPN                | Bool      | 0                         | Facoltativo              |
 
-  <sup>1</sup> Anche se non è richiesto da CQD, i modelli sono configurati per visualizzare Nome edificio e rete.
+  <sup>1</sup> Anche se non è richiesto da CQD, i modelli sono configurati per visualizzare nome edificio e rete.
 
   <sup>2</sup> Questa impostazione può essere usata per indicare se la subnet si trova o meno all'interno della rete aziendale. È possibile personalizzare l'utilizzo per altri scopi.
 
@@ -106,7 +106,7 @@ Il primo tipo di file di dati del tenant in CQD è il file di dati **Building.**
   `192.168.1.0,USA/Seattle/SEATTLE-SEA-1,26,SEATTLE-SEA-1,Contoso,IT Termination,Engineering,Seattle,98001,US,WA,MSUS,1,0,0`
 
 > [!IMPORTANT]
-> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non riportano in modo accurato le informazioni sulla subnet. 
+> L'intervallo di rete può essere usato per rappresentare una supernet (combinazione di più subnet con un singolo prefisso di routing). Tutti i nuovi caricamenti di edifici verranno controllati per verificare la sovrapposizione degli intervalli. Se in precedenza è stato caricato un file di edificio, è consigliabile scaricare il file corrente e ricaricarlo per identificare eventuali sovrapposizioni e risolvere il problema prima di caricarlo di nuovo. Qualsiasi sovrapposizione nei file caricati in precedenza può comportare il mapping errato delle subnet agli edifici nei report. Alcune implementazioni VPN non segnalano in modo accurato le informazioni sulla subnet. 
 >
 > La colonna VPN è facoltativa e il valore predefinito è 0. Se il valore della colonna VPN è impostato su 1, la subnet rappresentata da tale riga verrà completamente espansa in modo che corrisponda a tutti gli indirizzi IP all'interno della subnet. Usare questa opzione con parsimonio e solo per le subnet VPN, in quanto l'espansione completa di queste subnet avrà un impatto negativo sui tempi delle query per le query che implicano la creazione di dati. Se l'espansione della subnet comporta il superamento del limite di 1.000.000 righe di espansione, il file di edificio non verrà accettato.
 
@@ -131,7 +131,7 @@ Ecco alcuni aspetti da considerare prima di implementare la supernetting:
 
 -   La supernetting può essere usata solo in un mapping di subnet con una maschera da 8 bit a 28 bit.
 
--   Il supernetting richiede meno tempo, ma ha il costo di ridurre la ricchezza dei dati. Supponiamo che ci sia un problema di qualità che riguarda la subnet 10.1.2.0. Se è stata implementata la supernetting, non si saprà dove si trova la subnet dell'edificio o quale tipo di rete si trovi, ad esempio un lab. Se si sono definite tutte le subnet per un edificio e sono stati caricati i dati sulla posizione del piano, sarà possibile vedere questa distinzione.
+-   Il supernetting richiede meno tempo, ma ha il costo di ridurre la ricchezza dei dati. Supponiamo che ci sia un problema di qualità che riguarda la subnet 10.1.2.0. Se è stata implementata la supernetting, non si saprà dove si trova la subnet dell'edificio o quale tipo di rete si trovi, ad esempio un lab. Se si sono definite tutte le subnet per un edificio e sono stati caricati dati sulla posizione del piano, sarà possibile vedere questa distinzione.
 
 -   È importante assicurarsi che l'indirizzo supernetto sia corretto e che non rileva subnet indesiderate.
 
@@ -142,15 +142,15 @@ Ecco alcuni aspetti da considerare prima di implementare la supernetting:
 
 ### <a name="vpn"></a>VPN
 
-I dati di qualità dell'esperienza (QoE) inviati dai client a Microsoft 365 o Office 365, ovvero da cui vengono provenienti i dati CQD, includono un flag VPN. CQD lo vede come la prima VPN e la seconda dimensione VPN. Tuttavia, questo flag si basa sulla segnalazione dei fornitori vpn Windows che la scheda di rete VPN registrata è una scheda di accesso remoto. Non tutti i fornitori vpn registrano correttamente gli adattatori di accesso remoto. Per questo, potrebbe non essere possibile usare i filtri di query VPN predefiniti. Usare la colonna VPN descritta sopra per contrassegnare e identificare con precisione le subnet VPN. È anche buona norma etichettare le reti VPN per identificarsi facilmente nei report. Di seguito sono riportati due esempi di come etichettare le subnet VPN:
+I dati di qualità dell'esperienza (QoE) che i client inviano a Microsoft 365 o Office 365, ovvero da cui vengono provenienti i dati CQD, include un flag VPN. CQD lo vede come la prima VPN e la seconda dimensione VPN. Tuttavia, questo flag si basa sulla segnalazione dei fornitori di VPN Windows che la scheda di rete VPN registrata è una scheda di accesso remoto. Non tutti i fornitori vpn registrano correttamente gli adattatori di accesso remoto. Per questo, potrebbe non essere possibile usare i filtri di query VPN predefiniti. Usare la colonna VPN descritta sopra per contrassegnare e identificare con precisione le subnet VPN. È anche buona norma etichettare le reti VPN per identificarsi facilmente nei report. Di seguito sono riportati due esempi di come etichettare le subnet VPN:
 
 - Definire un **nome di** rete immettendo "VPN" in questo campo per le subnet VPN.
 
-  ![Screenshot del report QCD che mostra una VPN con il nome di rete](media/qerguide-image-vpnnetworkname.png)
+  ![Screenshot del report QCD che mostra una VPN con il nome di rete.](media/qerguide-image-vpnnetworkname.png)
 
 - Definire un **nome edificio** immettendo "VPN" in questo campo per le subnet VPN.
 
-  ![Screenshot del report QCD che mostra una VPN con il nome dell'edificio](media/qerguide-image-vpnbuildingname.png)
+  ![Screenshot del report QCD che mostra una VPN con il nome dell'edificio.](media/qerguide-image-vpnbuildingname.png)
 
 > [!NOTE]
 > È noto che le connessioni VPN identificano il tipo di connessione di rete come cablato quando la connessione sottostante è wireless. Quando si esamina la qualità delle connessioni VPN, non è possibile presupporre che il tipo di connessione sia stato identificato in modo accurato.
@@ -159,7 +159,7 @@ I dati di qualità dell'esperienza (QoE) inviati dai client a Microsoft 365 o Of
 
 L'altro tipo di file di dati del tenant CQD è il file di dati **endpoint.** I valori di colonna vengono usati nella colonna First Client Endpoint Name o Second Client Endpoint Name del record di chiamata per visualizzare le informazioni su Endpoint Make, Model o Type. Il formato del file di dati caricato deve soddisfare i criteri seguenti per superare il controllo di convalida prima del caricamento:
 
-- Il file deve essere un file con estensione tsv (le colonne sono separate da tab) o un file .csv (le colonne sono separate da una virgola).
+- Il file deve essere un file TSV (le colonne sono separate da una tabulazione) o un file .csv (le colonne sono separate da una virgola).
 
 - Il contenuto del file di dati non include intestazioni di tabella. La prima riga del file di dati dovrebbe essere dati reali, non un'etichetta di intestazione come "EndpointName".
 
@@ -198,7 +198,7 @@ A volte è necessario aggiungere nuove subnet nette a CQD che in origine non fan
 
 1.  Modificare il file dell'edificio originale e specificare una data di fine che si verifica almeno un giorno prima dell'acquisizione delle nuove subnet nette.
 
-1.  Accodare le nuove subnet nette al file dell'edificio originale.
+1.  Accodare le nuove subnet nette al file di edificio originale.
 
 1.  Upload il file di edificio appena modificato e impostare la data di inizio per un giorno dopo la fine del file di edificio precedente.
 

@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 1eaf8cdf-3dcd-4d6e-ae68-b6f6f9431ad8
 description: 'Riepilogo: informazioni su come usare il Logger del servizio di registrazione centralizzata (CLS) in Skype for Business Server 2015.'
-ms.openlocfilehash: d811fb1f331cb680f1c9645dec669bd7c81db192
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: e35375dd1715f2d9b2e64cc42339af7247d098d4
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628618"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730235"
 ---
 # <a name="cls-logger-for-skype-for-business-server-2015"></a>CLS Logger per Skype for Business Server 2015
  
@@ -71,7 +71,7 @@ Per arrestare uno scenario esistente:
     
 4. L'interfaccia utente verrà nuovamente abilitata dopo l'arresto dello scenario, i dettagli dell'azione verranno visualizzati anche nell'area Output comandi di PowerShell.
     
-![Avvio e arresto del logger CLS](../../media/2c4a36c2-b5db-4550-a3b3-41f18e0e2f0c.png)
+![Avvio e arresto del logger CLS.](../../media/2c4a36c2-b5db-4550-a3b3-41f18e0e2f0c.png)
   
 ## <a name="search-for-logs"></a>Cercare log
 
@@ -109,14 +109,14 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
 > 
 > **Ignora registri di rete** Se selezionata, la ricerca nei registri di rete viene ignorata.
     
-![Log di ricerca di CLS Logger](../../media/5793ea3c-6f5f-40ef-8b53-100da831eedf.png)
+![Log di ricerca di CLS Logger.](../../media/5793ea3c-6f5f-40ef-8b53-100da831eedf.png)
   
 ## <a name="create-a-scenario"></a>Creare uno scenario
 
 1. Nella scheda **Modifica scenari** fare clic sul **pulsante Crea** scenario.
     
     > [!NOTE]
-    > La creazione di un nuovo scenario clona la configurazione dello scenario attualmente selezionato. Se si fa **clic su Impostazioni** prima di creare un nuovo scenario, verrà avviato senza componenti e Contrassegni selezionati.
+    > La creazione di un nuovo scenario clona la configurazione dello scenario attualmente selezionato. Se si fa **clic su Impostazioni** prima di creare un nuovo scenario, verrà avviato senza alcun componente e contrassegni selezionati.
   
 2. Immettere il nome dello scenario che si desidera creare e premere INVIO oppure fare clic sul pulsante OK.
     
@@ -124,7 +124,7 @@ Per cercare i log, selezionare la scheda "Cerca log CLS" e fare clic sul pulsant
     
 ## <a name="modify-a-scenario"></a>Modificare uno scenario
 
-![Schermata del logger CLS, modifica degli scenari](../../media/abbbcac0-8a2e-48af-a22f-4fee0283a29f.png)
+![Cattura di schermata del logger CLS, modifica degli scenari.](../../media/abbbcac0-8a2e-48af-a22f-4fee0283a29f.png)
   
 1. Nella scheda **Modifica scenari** individuare lo scenario desiderato da modificare.
     

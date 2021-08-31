@@ -17,12 +17,12 @@ ms.collection:
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ad66efadda775c11ab653cbe1bc46b2c5a4ab3c3a80edf77265dddabbb71c4a1
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: 973ed6056ae8e73b79d7596b2f325cda8cdc48b1
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54347281"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732315"
 ---
 # <a name="configure-desktop-sharing-in-microsoft-teams"></a>Configurare la condivisione desktop in Microsoft Teams
 
@@ -39,11 +39,11 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
 
 1. Selezionare **Riunioni** > **Criteri riunione**.
 
-    ![Criteri riunione selezionati](media/configure-desktop-sharing-image1.png)
+    ![Criteri riunione selezionati.](media/configure-desktop-sharing-image1.png)
 
 2. Nella pagina **Criteri riunione** selezionare **Aggiungi**.
 
-    ![Messaggio Criteri riunione](media/addMeeting.png)
+    ![Messaggio Criteri riunione.](media/addMeeting.png)
 
 3. Assegnare un titolo univoco al criterio e immettere una breve descrizione.
 
@@ -53,7 +53,7 @@ Per configurare la condivisione dello schermo, creare un nuovo criterio riunioni
    - **Applicazione singola**: consente agli utenti di limitare la condivisione dello schermo a una singola applicazione attiva.
    - **Disabilitata**: disabilita la condivisione dello schermo.
 
-    ![Opzioni della modalità di condivisione](media/configure-desktop-sharing-image3.png)
+    ![Opzioni della modalità di condivisione.](media/configure-desktop-sharing-image3.png)
 
   > [!Note]
   > Non è necessario abilitare il criterio di chiamata per consentire agli utenti di usare la condivisione dello schermo dalla chat. Tuttavia, l'audio viene disattivato finché non riattiva l'audio. Inoltre, l'utente che condivide lo schermo può fare clic **su Aggiungi audio** per abilitare l'audio. Se il criterio di chiamata è disabilitato, gli utenti non potranno aggiungere audio alla condivisione dello schermo da una sessione di chat.

@@ -21,12 +21,12 @@ description: Informazioni su come gestire le attività nell'Microsoft Teams di a
 ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: cd8aef1a8d84a77f14824379383c5f77679f8c6f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: ef615924a4c449a3b2b408d929cf3d2678e4a1e6
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58592292"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728675"
 ---
 # <a name="assignments-in-teams-for-education"></a>Assegnare attività in Teams per l'istruzione
 
@@ -37,7 +37,7 @@ Le funzionalità Attività e voti in Teams per l'istruzione i docenti possono as
 > [!Note]
 > Per informazioni dettagliate Teams attività in piattaforme diverse, vedere Teams [funzionalità per piattaforma.](https://support.microsoft.com/office/teams-features-by-platform-debe7ff4-7db4-4138-b7d0-fcc276f392d3)
 
-## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni di attività nell'interfaccia Microsoft Teams di amministrazione
+## <a name="assignments-integrations-in-the-microsoft-teams-admin-center"></a>Integrazioni delle attività nell'interfaccia Microsoft Teams di amministrazione
 
 Usando le impostazioni di amministrazione nell'Microsoft Teams di amministrazione, è possibile attivare o disattivare le funzionalità per i docenti all'interno dell'organizzazione e per i loro studenti. Di seguito sono riportate le impostazioni relative alle attività:
 
@@ -73,7 +73,7 @@ MakeCode è un prodotto Microsoft soggetto alle condizioni per l'uso [e](https:/
 
 L'impostazione predefinita per questa funzionalità è - **Disattivato.**
 
-Per abilitare le assegnazioni MakeCode in Teams, passare all'interfaccia di  amministrazione di **Teams**, passare alla sezione Attività e impostare l'interruttore MakeCode su **Attivato.** Fare clic su **Salva**. Consentire l'applicazione di queste impostazioni per alcune ore.
+Per abilitare le assegnazioni MakeCode in Teams, passare all'interfaccia di  amministrazione di **Teams**, passare alla sezione Attività e attivare l'opzione MakeCode **.** Fare clic su **Salva**. Consentire l'applicazione di queste impostazioni per alcune ore.
 
 Per altre informazioni sul funzionamento di questa funzionalità, vedere questa [dimostrazione video.](https://makecode.com/blog/teams/teams-assignments)
 
@@ -100,17 +100,17 @@ La console di amministrazione consente di creare un'integrazione e una chiave AP
 
 Selezionare **Integrazioni** dal menu laterale, quindi selezionare **Aggiungi** integrazione e assegnare un nome all'integrazione.
 
-![Screenshot che mostra l'aggiunta di una nuova integrazione](./educationImages/Assignments_mopo_turnitin2.png)
+![Screenshot che mostra l'aggiunta di una nuova integrazione.](./educationImages/Assignments_mopo_turnitin2.png)
 
 **L'oggetto TurnitinApiKey** verrà assegnato dopo aver seguito le istruzioni visualizzate. Copiare la chiave API e incollarla nell'Microsoft Teams di amministrazione.  Questa è l'unica volta in cui è possibile visualizzare la chiave.
 
-![Screenshot che mostra la copia della chiave API](./educationImages/Assignments_mopo_turnitin3.png)
+![Screenshot che mostra la copia della chiave API.](./educationImages/Assignments_mopo_turnitin3.png)
 
 Dopo aver fatto **clic sul pulsante** Salva nell'interfaccia di amministrazione per questa impostazione, consentire l'applicazione di queste impostazioni per alcune ore.
 
 ### <a name="removing-assignments-and-grades"></a>Rimozione di attività e voti
 È possibile usare i Teams per rimuovere assegnazioni e voti per un utente specifico o per l'intero tenant. 
 
-Per rimuovere assegnazioni e voti per un singolo utente, passare **all'interfaccia** di amministrazione di Teams e passare Teams **app >** Criteri di autorizzazione per creare una nuova definizione dei criteri di autorizzazione delle app.  Quando si crea la nuova definizione dei  criteri, impostare i criteri delle **app Microsoft** su Blocca app specifiche e consentire a tutti gli altri utenti e aggiungere Attività **all'elenco** delle applicazioni bloccate. Dopo aver salvato la nuova definizione dei criteri, assegnarla agli utenti appropriati.
+Per rimuovere assegnazioni e voti per un singolo utente, passare **all'interfaccia** di amministrazione di Teams e passare alle app Teams **>** Criteri di autorizzazione per creare una nuova definizione dei criteri di autorizzazione delle app.  Quando si crea la nuova definizione dei  criteri, impostare i criteri delle **app Microsoft** su Blocca app specifiche e consentire a tutti gli altri utenti e aggiungere Attività **all'elenco** delle applicazioni bloccate. Dopo aver salvato la nuova definizione dei criteri, assegnarla agli utenti appropriati.
 
-Per rimuovere attività e voti per l'intero tenant, passare **Teams** Interfaccia di amministrazione, passare Teams app > Gestisci  **app** e cercare e selezionare Attività nell'elenco delle applicazioni. Modificare l'impostazione dello stato nella pagina Delle impostazioni dell'applicazione Assegnazione su _Bloccato_. 
+Per rimuovere attività e voti per l'intero tenant, passare **Teams** Interfaccia di amministrazione, passare Teams app >  **Gestisci app** e cercare e selezionare Attività nell'elenco delle applicazioni. Modificare l'impostazione dello stato nella pagina Delle impostazioni dell'applicazione Assegnazione su _Bloccato_. 

@@ -10,7 +10,7 @@ ms.collection:
 - M365-collaboration
 ms.reviewer: ritikag
 search.appverid: MET150
-description: Informazioni su come gestire l'accesso degli utenti ai Teams assegnando o rimuovendo una licenza Teams agli utenti dell'organizzazione.
+description: Informazioni su come gestire l'accesso degli utenti Teams agli utenti dell'organizzazione assegnando o rimuovendo una licenza Teams utente.
 f1.keywords:
 - CSH
 - ms.teamsadmincenter.signin.domainerror.nolicensedusers
@@ -19,31 +19,31 @@ ms.custom:
 - seo-marvel-apr2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6fab726d5c9e25664259addf726436358d294ac18e9c6cd24a150725e8255744
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e4a83d0da32c11406f76b9bc355ceb666d4ea308
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54328801"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728065"
 ---
 # <a name="manage-user-access-to-teams"></a>Gestire l'accesso degli utenti a Teams
 
-È possibile gestire l'Teams a livello di utente assegnando o rimuovendo una licenza Microsoft Teams prodotto. Ad eccezione della partecipazione Teams riunioni in forma anonima, ogni utente dell'organizzazione deve avere una licenza Teams per poter usare Teams. È possibile assegnare una Teams per i nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti.
+È possibile gestire l'Teams a livello utente assegnando o rimuovendo una licenza Microsoft Teams prodotto. Ad eccezione di partecipare Teams riunioni in forma anonima, ogni utente dell'organizzazione deve avere una licenza Teams per poter usare Teams. È possibile assegnare una Teams per i nuovi utenti quando vengono creati nuovi account utente o per gli utenti con account esistenti.
 
 Per impostazione predefinita, quando a un utente viene assegnato un piano di licenza, ad esempio Microsoft 365 Enterprise E3 o Microsoft 365 Business Premium, viene assegnata automaticamente una licenza Teams e l'utente è abilitato per Teams. È possibile disabilitare o abilitare Teams per un utente rimuovendo o assegnando una licenza in qualsiasi momento.
 
-Usare i criteri di messaggistica, gestiti <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">dall'interfaccia</a>di amministrazione di Teams , per controllare quali funzionalità di messaggistica di chat e canale sono disponibili per gli utenti in Teams. È possibile usare i criteri predefiniti o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Per altre informazioni, vedere [Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md).
+Usare i criteri di messaggistica, gestiti dall'interfaccia di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Teams</a>, per controllare quali funzionalità di messaggistica di chat e canali sono disponibili per gli utenti in Teams. È possibile usare i criteri predefiniti o creare uno o più criteri di messaggistica personalizzati per gli utenti dell'organizzazione. Per altre informazioni, vedere [Gestire i criteri di messaggistica in Teams](messaging-policies-in-teams.md).
 È possibile gestire Teams licenze nel interfaccia di amministrazione di Microsoft 365 o usando PowerShell. Per gestire le licenze, è necessario essere un amministratore globale o un amministratore di gestione utenti.
 
 > [!NOTE]
-> È consigliabile abilitare la Teams per tutti gli utenti in modo che i team possano essere formati organicamente per progetti e altre iniziative dinamiche. Anche se si esegue un progetto pilota, può essere comunque utile mantenere abilitata l'Teams per tutti gli utenti, ma solo per le comunicazioni mirate al gruppo pilota di utenti.
+> È consigliabile abilitare le Teams per tutti gli utenti in modo che i team possano essere formati organicamente per progetti e altre iniziative dinamiche. Anche se si esegue un progetto pilota, può essere comunque utile mantenere abilitata l'Teams per tutti gli utenti, ma solo per le comunicazioni mirate al gruppo pilota di utenti.
 
 ## <a name="using-the-microsoft-365-admin-center"></a>Uso del interfaccia di amministrazione di Microsoft 365
 
-Teams licenze a livello utente vengono gestite direttamente tramite le interfacce interfaccia di amministrazione di Microsoft 365 di gestione utente. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o agli utenti con account esistenti. 
+Teams licenze a livello utente vengono gestite direttamente tramite le interfacce di gestione interfaccia di amministrazione di Microsoft 365 utente. Un amministratore può assegnare licenze ai nuovi utenti quando vengono creati nuovi account utente o agli utenti con account esistenti. 
 
 > [!IMPORTANT]
-> L'amministratore deve avere i privilegi di amministratore globale o di amministratore di gestione utenti per gestire Microsoft Teams licenze.
+> L'amministratore deve avere i privilegi di amministratore globale o amministratore di gestione utenti per gestire Microsoft Teams licenze.
 Usare il interfaccia di amministrazione di Microsoft 365 per gestire Teams licenze per singoli utenti o piccoli set di utenti alla volta. È possibile gestire Teams licenze nella **pagina Licenze** (per un massimo di 20 utenti contemporaneamente) o nella **pagina Utenti** attivi. Il metodo scelto varia a seconda che si vogliano gestire licenze di prodotto per utenti specifici o licenze utente per prodotti specifici.
 
 Se è necessario gestire le licenze Teams per un numero elevato di utenti, ad esempio centinaia o migliaia di utenti, usare [PowerShell](#using-powershell) o le licenze basate su gruppo [in Azure Active Directory (Azure AD).](/azure/active-directory/users-groups-roles/licensing-groups-assign) 
@@ -54,18 +54,18 @@ I passaggi variano a seconda che si usi la **pagina Licenze** o la **pagina Uten
 
 |&nbsp;|&nbsp;|
 |---------|---------|
-|![Screenshot 1 della licenza Teams abilitata per un utente](media/assign-teams-licenses-1.png)    | ![Screenshot 2 della licenza Teams abilitata per un utente](media/assign-teams-licenses-2.png)        |
+|![Screenshot 1 di una Teams licenza abilitata per un utente.](media/assign-teams-licenses-1.png)    | ![Screenshot 2 di Teams licenza abilitata per un utente](media/assign-teams-licenses-2.png)        |
 
-### <a name="remove-a-teams-license"></a>Rimuovere una Teams licenza
+### <a name="remove-a-teams-license"></a>Rimuovere una licenza Teams licenza
 
 > [!IMPORTANT]
-> La disabilitazione di uno SKU Teams 24 ore.
+> La disabilitazione di una SKU Teams per l'applicazione richiede circa 24 ore.
 
-Quando si rimuove una licenza Teams da un utente, il Teams viene disabilitato per tale utente e non sarà più visualizzato Teams nell'icona di avvio delle app o nella home page. Per la procedura dettagliata, vedere [Annullare l'assegnazione di licenze da parte degli utenti.](/microsoft-365/admin/manage/remove-licenses-from-users)
+Quando si rimuove una licenza di Teams da un utente, Teams viene disabilitata per tale utente e non sarà più visualizzata Teams nell'icona di avvio delle app o nella home page. Per la procedura dettagliata, vedere [Annullare l'assegnazione di licenze da parte degli utenti.](/microsoft-365/admin/manage/remove-licenses-from-users)
 
 |&nbsp;|&nbsp;|
 |---------|---------|
-|![Screenshot 1 della licenza Teams disabilitata per un utente](media/remove-teams-licenses-1.png)    | ![Screenshot 2 della licenza Teams disabilitata per un utente](media/remove-teams-licenses-2.png)        |
+|![Screenshot 1 della licenza Teams disabilitata per un utente.](media/remove-teams-licenses-1.png)    | ![Screenshot 2 della licenza Teams disabilitata per un utente](media/remove-teams-licenses-2.png)        |
 
 ## <a name="using-powershell"></a>Utilizzo di PowerShell
 
@@ -88,7 +88,7 @@ Per la procedura dettagliata, vedere [Disabilitare l'accesso](/office365/enterpr
 Di seguito è riportato un esempio di come usare i cmdlet [New-MsolLicenseOptions](/powershell/module/msonline/new-msollicenseoptions) e [Set-MsolUserLicense](/powershell/module/msonline/set-msoluserlicense) per disabilitare Teams per gli utenti che hanno un piano di licenza specifico. Ad esempio, seguire questa procedura per disabilitare prima Teams per tutti gli utenti che hanno un piano di licenza specifico. Abilitare quindi Teams per ogni singolo utente che deve avere accesso a Teams.
 
 > [!IMPORTANT]
-> Il cmdlet [New-MsolLicenseOptions](/powershell/module/msonline/new-msollicenseoptions) abiliterà tutti i servizi disabilitati in precedenza a meno che non siano stati identificati esplicitamente nello script personalizzato. Ad esempio, se si vuole lasciare disabilitati sia Exchange che Sway, disabilitando anche Teams, è necessario includerlo nello script oppure sia Exchange che Sway verranno abilitati per gli utenti identificati.
+> Il cmdlet [New-MsolLicenseOptions](/powershell/module/msonline/new-msollicenseoptions) abiliterà tutti i servizi disabilitati in precedenza a meno che non siano stati identificati esplicitamente nello script personalizzato. Ad esempio, se si vuole lasciare disabilitati sia Exchange che Sway disabilitando anche Teams, è necessario includerlo nello script oppure sia Exchange che Sway verranno abilitati per gli utenti identificati.
 
 Eseguire il comando seguente per visualizzare tutti i piani di licenza disponibili nell'organizzazione. Per altre informazioni, vedere [Visualizzare licenze e servizi con PowerShell.](/office365/enterprise/powershell/view-licenses-and-services-with-office-365-powershell)
 

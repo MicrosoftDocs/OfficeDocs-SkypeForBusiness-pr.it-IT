@@ -12,12 +12,12 @@ f1.keywords:
 ms.localizationpriority: medium
 ms.collection: ''
 description: "Riepilogo: preparare i server Skype for Business Server 2019 e l'infrastruttura di dominio con questo argomento. Hardware, sistema operativo, database, software, tutti i requisiti di sistema e i suggerimenti, insieme a DNS certificato, condivisione file e informazioni di Active Directory, sono disponibili qui per garantire una corretta installazione e distribuzione della server farm."
-ms.openlocfilehash: a994d2546cb6e15830b8cb2439968a53047a6389
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d5714c5606c69d6aba0befa03a6556a5da8ab443
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58578210"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728365"
 ---
 # <a name="system-requirements-for-skype-for-business-server-2019"></a>Requisiti di sistema per Skype for Business Server 2019
  
@@ -31,7 +31,7 @@ Come ci si potrebbe aspettare, è necessario prepararsi prima di iniziare la dis
   
 - [Software](system-requirements.md#Software)
 
-- [Database di SQL back-end](system-requirements.md#DBs)
+- [Database SQL back-end](system-requirements.md#DBs)
   
 - [Active Directory](system-requirements.md#AD)
   
@@ -107,7 +107,7 @@ Qualsiasi elemento diverso da quello dei sistemi operativi elencati qui non funz
 > 
 
   
-## <a name="software-that-should-be-installed-before-a-skype-for-business-server-2019-deployment"></a>Software da installare prima di una distribuzione Skype for Business Server 2019
+## <a name="software-that-should-be-installed-before-a-skype-for-business-server-2019-deployment"></a>Software che deve essere installato prima di una Skype for Business Server 2019
 <a name="Software"> </a>
 
 È necessario installare o configurare alcuni elementi per qualsiasi server che esegue Skype for Business Server 2019. Questi sono elencati di seguito, seguiti da requisiti aggiuntivi per ruoli del server specifici.
@@ -119,9 +119,9 @@ Qualsiasi elemento diverso da quello dei sistemi operativi elencati qui non funz
   
 |**Software/ruolo**|**Dettagli**|
 |:-----|:-----|
-|Windows PowerShell 3.0  <br/> |Tutti Skype for Business Server server devono Windows PowerShell 3.0 installato.  <br/> • Deve essere installato per impostazione predefinita con Windows Server 2016.<br/> |
-|Microsoft .NET Framework  <br/> |I servizi WCF sono **funzionalità** installate come funzionalità Windows, in **Server Manager** inizialmente non sono necessari download. <br/> • È necessario assicurarsi che, quando si installa questa funzionalità o se è già installata e si sta controllando, che anche l'opzione Attivazione **HTTP** sia selezionata e installata, in questo modo: <br/> ![Screenshot che mostra l'opzione Attivazione HTTP nelle .NET Framework 4.5.](../../SfbServer/media/a4064fa0-fa49-4474-bd98-b9a79ff68f8b.png) <br/> Non preoccuparti se ricevi un popup aggiuntivo che dice che è necessario installare altri elementi per l'installazione dell'attivazione HTTP. È normale; fare clic su OK e procedere. Se non si ottiene questo popup, è possibile presupporre che tali elementi siano già installati e procedere.  <br/> Microsoft .NET Framework viene in genere installato quando Windows Server 2016 è installato. Skype for Business Server richiede Microsoft .NET Framework 4.7 o 4.8, quindi probabilmente è necessario aggiornarlo. L'aggiornamento è disponibile [qui](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows/)<br/> |
-|Media Foundation  <br/> |Ad Windows Server 2016, il runtime Windows media viene installato con Microsoft Media Foundation.  <br/> Tutti i Front End Server e i server edizione Standard utilizzati per le conferenze richiedono Windows Media Format Runtime per eseguire i file Windows Media Audio (wma) riprodotti dalle applicazioni Parcheggio di chiamata, Annuncio e Response Group per annunci e musica.  <br/> |
+|Windows PowerShell 3.0  <br/> |Tutti Skype for Business Server server devono Windows PowerShell 3.0.  <br/> • Questo deve essere installato per impostazione predefinita con Windows Server 2016.<br/> |
+|Microsoft .NET Framework  <br/> |I servizi WCF sono **una funzionalità** installata come funzionalità Windows, in **Server Manager** inizialmente non sono necessari download. <br/> • È necessario assicurarsi, quando si installa questa funzionalità, o se è già installata e si sta controllando su di essa, che anche l'opzione Attivazione **HTTP** sia selezionata e installata, in questo modo: <br/> ![Screenshot che mostra l'opzione Attivazione HTTP nelle .NET Framework 4.5.](../../SfbServer/media/a4064fa0-fa49-4474-bd98-b9a79ff68f8b.png) <br/> Non preoccuparti se ricevi un popup aggiuntivo che dice che è necessario installare altri elementi per l'installazione dell'attivazione HTTP. È normale; fare clic su OK e procedere. Se non si ottiene questo popup, è possibile presupporre che tali elementi siano già installati e procedere.  <br/> Microsoft .NET Framework viene in genere installato quando Windows Server 2016 è installato. Skype for Business Server richiede Microsoft .NET Framework 4.7 o 4.8, quindi probabilmente è necessario aggiornarlo. L'aggiornamento è disponibile [qui](https://support.microsoft.com/help/3186497/the-net-framework-4-7-offline-installer-for-windows/)<br/> |
+|Media Foundation  <br/> |Ad Windows Server 2016, l'Windows Media Format Runtime viene installato con Microsoft Media Foundation.  <br/> Tutti i Front End Server e i server edizione Standard utilizzati per le conferenze richiedono Windows Media Format Runtime per eseguire i file Windows Media Audio (wma) riprodotti dalle applicazioni Parcheggio di chiamata, Annuncio e Response Group per annunci e musica.  <br/> |
 |Windows Identity Foundation  <br/> |È necessario Windows Identity Foundation 3.5 per supportare gli scenari di autenticazione da server a server per Skype for Business Server 2019.  <br/> • Per Windows Server 2016, non è necessario scaricare nulla. Aprire **Server Manager** e passare all'Aggiunta guidata ruoli e **funzionalità.** **Windows Identity Foundation 3.5** è elencato nella **sezione** Funzionalità. Se è selezionato, sei a posto. In caso contrario, selezionarlo **e fare clic** su Avanti per accedere al **pulsante** Installa. <br/> |
 |Strumenti di amministrazione remota del server  <br/> |Strumenti di amministrazione dei ruoli: strumenti di Servizi di dominio Active Directory e AD LDS  <br/> |
    
@@ -130,7 +130,7 @@ Qualsiasi elemento diverso da quello dei sistemi operativi elencati qui non funz
 |**Software/ruolo**|**Dettagli**|
 |:-----|:-----|
 |Internet Information Services (IIS)  <br/> |IIS è necessario in tutti i Front End Server, nonché in tutti edizione Standard server, con i moduli seguenti selezionati:  <br/> • Funzionalità HTTP comuni: documento predefinito, errori HTTP, contenuto statico  <br/> • Integrità e diagnostica: registrazione HTTP, strumenti di registrazione, traccia  <br/> • Prestazioni: Compressione contenuto statico, Compressione contenuto dinamico  <br/> • Sicurezza: Filtro richieste, Autenticazione mapping certificati client, Windows autenticazione  <br/> • Sviluppo di applicazioni: .NET Extensibility 3.5, .NET Extensibility 4.5, ASP.NET 3.5, ASP.NET 4.5, ESTENSIONI ISAPI, filtri ISAPI  <br/> • Strumenti di gestione: console di gestione IIS, script e strumenti di gestione IIS  <br/> Si noti che è necessario anche l'accesso anonimo, ma si ottiene questo quando si installa IIS, in modo da non avere una posizione per selezionarlo nell'elenco.  <br/> |
-|Runtime formato Windows Media  <br/> | Ad Windows Server 2016, è necessario installare la funzionalità **Media Foundation** in **Server Manager.** È possibile avviare l'installazione di Skype for Business Server 2019 senza questa operazione, ma verrà richiesto di installarla e quindi riavviare il server prima che l'installazione di Skype for Business Server 2019 continui. È meglio farlo in anticipo. <br/> |
+|Runtime formato Windows Media  <br/> | Ad Windows Server 2016, è necessario installare la funzionalità **Media Foundation** in **Server Manager.** In realtà è possibile avviare l'installazione di Skype for Business Server 2019 senza questa operazione, ma verrà richiesto di installarla e quindi riavviare il server, prima che l'installazione di Skype for Business Server 2019 continui. È meglio farlo in anticipo. <br/> |
 |Silverlight  <br/> |È possibile installare la versione più recente di Silverlight [qui.](https://www.microsoft.com/silverlight/)  <br/> |
    
 Per aiutarti, ecco uno script di PowerShell di esempio che puoi eseguire per automatizzare questa operazione:
@@ -198,7 +198,7 @@ Add-WindowsFeature RSAT-ADDS, Web-Server, Web-Static-Content, Web-Default-Doc, W
 
 Quando si installa Skype for Business Server 2019 edizione Standard, si SQL Server 2016 Express (edizione a 64 bit).
 
-Skype for Business Server 2019 edizione Enterprise richiederà un SQL Server completo, come indicato di seguito (solo edizione a 64 bit; non utilizzare edizioni a 32 bit):
+Skype for Business Server 2019 edizione Enterprise richiederà un SQL Server completo, come indicato di seguito (solo edizione a 64 bit; non usare edizioni a 32 bit):
   
 ||||
 |:-----|:-----|:-----|
@@ -213,9 +213,9 @@ Se l'edizione SQL Server che si desidera utilizzare non è elencata qui, non è 
   
 ### <a name="sql-clustering-and-sql-always-on"></a>SQL Clustering e SQL Always On
 
-SQL È supportato il clustering Skype for Business Server 2019. Se si desidera configurare SQL clustering, questa operazione viene eseguita in SQL Server.
+SQL Il clustering con Skype for Business Server 2019 è supportato. Se si desidera configurare SQL clustering, questa operazione viene eseguita in SQL Server.
   
-Assicurati di avere una configurazione attiva/passiva per SQL Clustering, che è supportata. Non condividere il nodo passivo con altre SQL istanza.
+Assicurati di avere una configurazione attiva/passiva per SQL clustering, che è supportata. Non condividere il nodo passivo con altre SQL istanza.
   
 Per il clustering di failover, è possibile disporre di quanto segue:
   
@@ -302,25 +302,25 @@ Le topologie supportate in Skype for Business Server 2019 sono:
     
 Sono presenti diagrammi e descrizioni che consentono di determinare quale topologia è presente nell'ambiente o cosa potrebbe essere necessario configurare prima di installare Skype for Business Server 2019. Per mantenere la semplicità, è inclusa anche una chiave:
   
-![L'elemento è una chiave per le icone utilizzate Skype for Business diagrammi di topologia](../../SfbServer/media/cc0dbc17-cf81-4b79-bf99-4614cc6828a0.png)
+![L'elemento è una chiave per le icone utilizzate per Skype for Business diagrammi di topologia.](../../SfbServer/media/cc0dbc17-cf81-4b79-bf99-4614cc6828a0.png)
   
 #### <a name="single-forest-with-single-domain"></a>Foresta singola con singolo dominio
 
-![Diagramma della foresta singola di Active Directory con un singolo dominio](../../SfbServer/media/24921a0b-3a3e-4bad-8427-49300e2e3f7a.png)
+![Diagramma della foresta singola di Active Directory con un singolo dominio.](../../SfbServer/media/24921a0b-3a3e-4bad-8427-49300e2e3f7a.png)
   
 Non è più facile; si tratta di una foresta a dominio singolo, una topologia comune.
   
 #### <a name="single-forest-with-a-single-tree-and-multiple-domains"></a>Foresta singola con albero singolo e più domini
 
-![Diagramma di una foresta singola, di un singolo albero e di domini mutiple](../../SfbServer/media/63b9f0dd-6bac-4ba9-ae68-8be032d09dcb.png)
+![Diagramma a foresta singola, albero singolo e domini mutiple.](../../SfbServer/media/63b9f0dd-6bac-4ba9-ae68-8be032d09dcb.png)
   
-Questo diagramma mostra una singola foresta, ma ha anche uno o più domini figlio (sono presenti tre in questo esempio specifico). Pertanto, il dominio in cui vengono creati gli utenti potrebbe essere diverso da quello in cui Skype for Business Server 2019 viene distribuito. Perché preoccuparsi di questo? È importante ricordare che quando si distribuisce un pool Front End Skype for Business Server, tutti i server del pool devono essere in un singolo dominio. È possibile eseguire l'amministrazione tra domini Skype for Business Server supporto di Windows gruppi di amministratori universali.
+Questo diagramma mostra una singola foresta, ma ha anche uno o più domini figlio (sono presenti tre in questo esempio specifico). Il dominio in cui vengono creati gli utenti potrebbe pertanto essere diverso da quello in cui Skype for Business Server 2019 viene distribuito. Perché preoccuparsi di questo? È importante ricordare che quando si distribuisce un pool Front End Skype for Business Server, tutti i server del pool devono essere in un singolo dominio. È possibile eseguire l'amministrazione tra domini tramite Skype for Business Server di Windows gruppi di amministratori universali.
   
 Nel diagramma precedente, è possibile vedere che gli utenti di un dominio sono in grado di accedere Skype for Business Server pool dallo stesso dominio o da domini diversi, anche se tali utenti sono in un dominio figlio.
   
 #### <a name="single-forest-with-multiple-trees-and-disjoint-namespaces"></a>Foresta singola con più alberi e spazi dei nomi disgiunti
 
-![Diagramma di una singola foresta, più alberi e spazi dei nomi disgiunti](../../SfbServer/media/5ede77a1-f5d2-499c-a2c8-d02f3c2f7cd7.png)
+![Diagramma a foresta singola, più alberi e spazi dei nomi disgiunti.](../../SfbServer/media/5ede77a1-f5d2-499c-a2c8-d02f3c2f7cd7.png)
   
 Potrebbe essere presente una topologia simile a questo diagramma, in cui è presente una foresta, ma all'interno di tale foresta sono presenti più domini, con spazi dei nomi AD separati. In questo caso, questo diagramma è una buona illustrazione, perché include utenti in tre domini diversi che accedono Skype for Business Server 2019. Linee solide indicano che stanno accedendo a un pool di Skype for Business Server nel proprio dominio, mentre una linea tratteggiata indica che stanno andando a un pool in un albero diverso del tutto.
   
@@ -328,20 +328,20 @@ Come si può vedere, gli utenti nello stesso dominio, nello stesso albero o anch
   
 #### <a name="multiple-forests-in-a-central-forest-topology"></a>Più foreste in una topologia di foreste centralizzate
 
-![Più foreste in un diagramma della topologia a foresta centrale](../../SfbServer/media/fec40746-4254-4c84-86b9-aad4a616ea2f.png)
+![Più foreste in un diagramma della topologia a foresta centrale.](../../SfbServer/media/fec40746-4254-4c84-86b9-aad4a616ea2f.png)
   
 Skype for Business Server 2019 supporta più foreste configurate in una topologia a foresta centrale. Se non si è certi di avere questo tipo di dati, la foresta centrale della topologia utilizza gli oggetti in essa contenuti per rappresentare gli utenti nelle altre foreste e ospita gli account utente per tutti gli utenti nella foresta.
   
 Funzionamento. Un prodotto di sincronizzazione della directory (ad esempio Forefront Identity Manager o FIM) gestisce gli account utente dell'organizzazione per tutta la loro esistenza. Quando un account viene creato o eliminato da una foresta, tale modifica viene sincronizzata fino al contatto corrispondente nella foresta centrale.
   
-Chiaramente, se l'infrastruttura di Active Directory è in atto, il passaggio a questa topologia potrebbe non essere semplice, ma se si è già presenti o si pianifica ancora l'infrastruttura della foresta, questa può essere una buona scelta. È possibile centralizzare la distribuzione di Skype for Business Server 2019 in una singola foresta, mentre gli utenti possono cercare, comunicare e visualizzare la presenza di altri utenti in qualsiasi foresta. Tutti gli aggiornamenti dei contatti utente vengono gestiti automaticamente con il software di sincronizzazione.
+Chiaramente, se l'infrastruttura di Active Directory è in atto, il passaggio a questa topologia potrebbe non essere semplice, ma se si è già presenti o si pianifica ancora l'infrastruttura della foresta, questa può essere una buona scelta. È possibile centralizzare la distribuzione Skype for Business Server 2019 in una singola foresta, mentre gli utenti possono cercare, comunicare e visualizzare la presenza di altri utenti in qualsiasi foresta. Tutti gli aggiornamenti dei contatti utente vengono gestiti automaticamente con il software di sincronizzazione.
   
 #### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology"></a>Più foreste in una topologia Skype for Business di risorse locali
 <a name="BKMK_multipleforestopology"> </a>
 
-![Più foreste in un diagramma della topologia a foresta di risorse](../../SfbServer/media/41efa3b6-d9e6-47df-992b-fefcfc39a80d.png)
+![Più foreste in un diagramma della topologia a foresta di risorse.](../../SfbServer/media/41efa3b6-d9e6-47df-992b-fefcfc39a80d.png)
   
-È supportata anche una topologia di foresta di risorse. è qui che una foresta è dedicata all'esecuzione delle applicazioni server, ad esempio Microsoft Exchange Server e Skype for Business Server 2019. Questa foresta di risorse ospita anche una rappresentazione sincronizzata degli oggetti utente attivi, ma nessun account utente abilitato all'accesso. La foresta di risorse è quindi un ambiente di servizi condivisi per altre foreste in cui risiedono gli oggetti utente e hanno una relazione di trust a livello di foresta con la foresta di risorse.
+È supportata anche una topologia di foresta di risorse. è dove una foresta è dedicata all'esecuzione delle applicazioni server, ad esempio Microsoft Exchange Server e Skype for Business Server 2019. Questa foresta di risorse ospita anche una rappresentazione sincronizzata degli oggetti utente attivi, ma nessun account utente abilitato all'accesso. La foresta di risorse è quindi un ambiente di servizi condivisi per altre foreste in cui risiedono gli oggetti utente e hanno una relazione di trust a livello di foresta con la foresta di risorse.
   
 Tenere presente Exchange Server possono essere distribuiti nella stessa foresta di risorse Skype for Business Server o in una foresta diversa.
   
@@ -350,27 +350,27 @@ Per distribuire Skype for Business Server 2019 in questo tipo di topologia, è n
 #### <a name="multiple-forests-in-a-skype-for-business-resource-forest-topology-with-exchange-online"></a>Più foreste in una topologia Skype for Business di risorse con Exchange Online
 <a name="BKMK_multipleforestopology"> </a>
 
-Questa topologia è simile a quella descritta in Più foreste in una Skype for Business di [foresta di risorse.](system-requirements.md#BKMK_multipleforestopology)
+Questa topologia è simile a quella descritta in Più foreste in una topologia [Skype for Business di risorse.](system-requirements.md#BKMK_multipleforestopology)
   
 In questa topologia sono presenti una o più foreste utente e Skype for Business Server in una foresta di risorse dedicata. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e configurati per la distribuzione ibrida con Exchange Online oppure i servizi di posta elettronica possono essere forniti esclusivamente da Exchange Online per gli account locali. Non è disponibile alcun diagramma per questa topologia.
   
 #### <a name="multiple-forests-in-a-resource-forest-topology-with-skype-for-business-online-and-azure-active-directory-connect"></a>Più foreste in una topologia a foresta di risorse con Skype for Business Online e Azure Active Directory Connessione
 <a name="BKMK_multipleforestopology"> </a>
 
-![Mostra due foreste di Active Directory, una foresta utente e una foresta di risorse. Le due foreste hanno una relazione di trust. Vengono sincronizzati con i Microsoft 365 azure AD Connessione. Tutti gli utenti sono abilitati Skype for Business tramite Microsoft 365.](../../SfbServer/media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
+![Mostra due foreste di Active Directory, una foresta utente e una foresta di risorse. Le due foreste hanno una relazione di trust. Vengono sincronizzati con i Microsoft 365 usando Azure AD Connessione. Tutti gli utenti sono abilitati Skype for Business tramite Microsoft 365.](../../SfbServer/media/6d54558d-8786-4ebf-90f6-55ae3fdb5ae7.jpg)
   
 Con questo scenario, sono presenti più foreste in locale, con una topologia a foresta di risorse. Esiste una relazione di trust completo tra le foreste di Active Directory. Lo Azure Active Directory Connessione viene utilizzato per sincronizzare gli account tra le foreste utente locali e Microsoft 365 o Office 365.
   
- L'organizzazione ha anche Microsoft 365 o Office 365 e usa [Azure Active Directory Connessione](/azure/active-directory/connect/active-directory-aadconnect) per sincronizzare i propri account locali con Microsoft 365 o Office 365. Gli utenti abilitati per Skype for Business sono abilitati tramite Microsoft 365 o Office 365 e Skype for Business Online. Skype for Business Server non viene distribuito in locale.
+ L'organizzazione ha anche Microsoft 365 o Office 365 e [](/azure/active-directory/connect/active-directory-aadconnect) usa Azure Active Directory Connessione per sincronizzare i propri account locali con Microsoft 365 o Office 365. Gli utenti abilitati per Skype for Business sono abilitati tramite Microsoft 365 o Office 365 e Skype for Business Online. Skype for Business Server non viene distribuito in locale.
   
 L'autenticazione Single #A0 è fornita da una farm di Active Directory Federation Services che si trova nella foresta utente.
   
-In questo scenario, è supportato per distribuire Exchange locale, Exchange Online, una soluzione Exchange ibrida o per non distribuire Exchange affatto. Il diagramma mostra solo Exchange locale, ma anche le altre soluzioni Exchange sono completamente supportate.
+In questo scenario, è supportata la distribuzione di Exchange locale, Exchange Online, una soluzione Exchange ibrida o per non avere Exchange distribuito affatto. Il diagramma mostra solo Exchange locali, ma anche le altre soluzioni Exchange sono completamente supportate.
   
 #### <a name="multiple-forests-in-a-resource-forest-topology-with-hybrid-skype-for-business"></a>Più foreste in una topologia a foresta di risorse con Skype for Business
 <a name="BKMK_multipleforestopology"> </a>
 
-In questo scenario, sono presenti una o più foreste utente locali e Skype for Business viene distribuito in una foresta di risorse dedicata ed è configurato per la modalità ibrida con Skype for Business Online. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e possono essere configurati per la distribuzione ibrida con Exchange Online. In alternativa, i servizi di posta elettronica possono essere forniti Exchange Online per gli account locali.
+In questo scenario, sono presenti una o più foreste utente locali e Skype for Business viene distribuito in una foresta di risorse dedicata ed è configurato per la modalità ibrida con Skype for Business Online. Exchange Server possono essere distribuiti in locale nella stessa foresta di risorse o in una foresta diversa e possono essere configurati per la distribuzione ibrida con Exchange Online. In alternativa, i servizi di posta elettronica possono essere forniti esclusivamente da Exchange Online per gli account locali.
   
 Per ulteriori informazioni, vedere [Configure a multi-forest environment for hybrid Skype for Business](../../SfbHybrid/hybrid/configure-a-multi-forest-environment-for-hybrid.md?bc=%2fSkypeForBusiness%2fbreadcrumb%2ftoc.json&toc=%2fSkypeForBusiness%2ftoc.json).
   
@@ -387,7 +387,7 @@ Skype for Business Server 2019 richiede DNS, per i motivi seguenti:
     
 - DNS consente agli utenti esterni e ai computer client di connettersi ai server perimetrali o al proxy inverso HTTP per la messaggistica istantanea o le conferenze.
     
-- Consente ai dispositivi per comunicazioni unificate che non hanno effettuato l'accesso di individuare il pool Front End o il server edizione Standard che esegue il servizio Web Aggiornamento dispositivi per ottenere aggiornamenti e inviare log.
+- Consente ai dispositivi di comunicazioni unificate che non hanno effettuato l'accesso di individuare il pool Front End o il server edizione Standard che esegue il servizio Web Aggiornamento dispositivi per ottenere aggiornamenti e inviare log.
     
 - L'utilizzo di DNS consente ai client mobili di individuare automaticamente le risorse dei servizi Web senza richiedere agli utenti di immettere manualmente gli URL nelle impostazioni del dispositivo.
     
@@ -406,7 +406,7 @@ Per ulteriori informazioni sui requisiti DNS per rete, vedere la [sezione Networ
 ## <a name="certificates"></a>Certificati
 <a name="Certs"> </a>
 
-Una delle operazioni più importanti che è possibile eseguire prima della distribuzione è assicurarsi di disporre dei certificati in ordine. Skype for Business Server 2019 necessita di un'infrastruttura a chiave pubblica (PKI) per le connessioni TLS (Transport Layer Security) e MTLS (Mutual Transport Layer Security). Fondamentalmente, per comunicare in modo sicuro in modo standardizzato, Skype for Business Server i certificati emessi dalle autorità di certificazione (CA).
+Una delle operazioni più importanti che è possibile eseguire prima della distribuzione è assicurarsi di disporre dei certificati in ordine. Skype for Business Server 2019 richiede un'infrastruttura a chiave pubblica (PKI) per le connessioni TLS (Transport Layer Security) e MTLS (Mutual Transport Layer Security). Fondamentalmente, per comunicare in modo sicuro in modo standardizzato, Skype for Business Server certificati emessi dalle autorità di certificazione (CA).
   
 Ecco alcuni degli aspetti che Skype for Business Server 2019 usa i certificati per:
   
@@ -428,18 +428,18 @@ Pertanto, la pianificazione dei certificati è un must. Esamini ora un elenco di
     
 - Tutti i certificati del server devono contenere un punto di distribuzione CRL (CDP).
     
-- Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Skype for Business Server 2019 supporta la famiglia di prodotti SHA-1 e SHA-2 di dimensioni del digest (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo.
+- Tutti i certificati devono essere firmati utilizzando un algoritmo di firma supportato dal sistema operativo. Skype for Business Server 2019 supporta la famiglia di dimensioni del digest SHA-1 e SHA-2 (224, 256, 384 e 512 bit) e soddisfa o supera i requisiti del sistema operativo.
     
 - La registrazione automatica è supportata per i server interni che eseguono Skype for Business Server 2019.
     
-- La registrazione automatica non è supportata per i server perimetrali Skype for Business Server 2019.
+- La registrazione automatica non è supportata per Skype for Business Server server perimetrali 2019.
     
 > [!NOTE]
 > L'utilizzo dell'algoritmo di firma RSASSA-PSS non è supportato e può causare errori in caso di problemi di accesso e inoltro di chiamata, tra gli altri problemi. 
   
 - Sono supportate le lunghezze delle chiavi di crittografia 1024, 2048 e 4096. Sono consigliate lunghezze di chiave pari o superiori a 2048.
     
-- L'algoritmo predefinito del digest, o firma hash, è RSA. Sono supportati ECDH_P256, ECDH_P384 e ECDH_P521 algoritmi.
+- L'algoritmo predefinito del digest, o firma hash, è RSA. Sono ECDH_P256, ECDH_P384 e ECDH_P521 algoritmi.
     
 Questo è molto da pensare, e ci sono una varietà di livelli di comfort con la richiesta di certificati da un'autorità di certificazione. Di seguito verranno fornite ulteriori indicazioni per rendere la pianificazione il più indolore possibile.
   
@@ -449,9 +449,9 @@ Saranno necessari certificati per la maggior parte dei server interni e molto pr
   
 Saranno inoltre necessari certificati quando Skype for Business Server 2019 comunica con altre applicazioni e server, ad esempio Microsoft Exchange Server. Questo, ovviamente, deve essere un certificato che queste altre app e server possono usare in modo supportato. Skype for Business Server 2019 e altri prodotti Microsoft supportano il protocollo OAuth (Open Authorization) per l'autenticazione e l'autorizzazione da server a server. If you're interested in this, we have an additional planning article for OAuth and Skype for Business Server 2019.
   
-Skype for Business Server 2019 include anche il supporto per (senza richiedere) certificati firmati utilizzando la funzione hash crittografica SHA-256. Per supportare l'accesso esterno tramite SHA-256, il certificato esterno deve essere emesso da un'autorità di certificazione pubblica utilizzando SHA-256.
+Skype for Business Server 2019 include anche il supporto per (senza richiedere) certificati firmati utilizzando la funzione hash crittografica SHA-256. Per supportare l'accesso esterno tramite SHA-256, il certificato esterno deve essere emesso da un'autorità di certificazione pubblica tramite SHA-256.
   
-Per mantenere le cose semplici, i requisiti dei certificati per i server edizione Standard, i pool Front End e altri ruoli sono stati inseriti nelle tabelle seguenti, con il contoso.com fittizio utilizzato per gli esempi (probabilmente si sta usando qualcos'altro per il proprio ambiente). Si tratta di tutti i certificati del server Web standard, con chiavi private non esportabili. Alcuni aspetti aggiuntivi da notare:
+Per mantenere le cose semplici, i requisiti dei certificati per i server edizione Standard, i pool Front End e altri ruoli sono stati inseriti nelle tabelle seguenti, con il contoso.com fittizio utilizzato per esempi (probabilmente si sta usando qualcos'altro per l'ambiente). Si tratta di tutti i certificati server Web standard, con chiavi private non esportabili. Alcuni aspetti aggiuntivi da notare:
   
 - L'utilizzo chiavi avanzato del server (EKU) viene configurato automaticamente quando si utilizza la procedura guidata per la richiesta di certificati.
     
@@ -463,7 +463,7 @@ Certificati per edizione Standard server:
   
 |**Certificato**|**Nome soggetto/nome comune**|**Nome alternativo soggetto**|**Esempio**|**Comments**|
 |:-----|:-----|:-----|:-----|:-----|
-|Impostazione predefinita  <br/> |FQDN del pool  <br/> |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |SN=se01.contoso.com; SAN=se01.contoso.com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |Nei edizione Standard server, il nome di dominio completo del server corrisponde all'FQDN del pool.  <br/> La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.  <br/> |
+|Impostazione predefinita  <br/> |FQDN del pool  <br/> |FQDN del pool e FQDN del server  <br/> Se sono presenti più domini SIP ed è stata abilitata la configurazione automatica dei client, la Configurazione guidata certificati rileva e aggiunge l'FQDN di ogni dominio SIP supportato.  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS (Domain Name System) esatta nei criteri di gruppo, saranno inoltre necessarie voci per sip.sipdomain (per ogni dominio SIP di cui si dispone).  <br/> |SN=se01.contoso.com; SAN=se01.contoso.com  <br/> Se il pool rappresenta il server di accesso automatico per i client ed è richiesta la corrispondenza DNS esatta nei criteri di gruppo, sarà inoltre necessario utilizzare SAN=sip.contoso.com; SAN=sip.fabrikam.com  <br/> |Nei edizione Standard, il nome di dominio completo del server corrisponde all'FQDN del pool.  <br/> La procedura guidata rileva i domini SIP specificati durante la configurazione e li aggiunge automaticamente al nome alternativo del soggetto.  <br/> È inoltre possibile utilizzare questo certificato per l'autenticazione da server a server.  <br/> |
 |Interno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web interno (che corrisponde all'FQDN del server)  <br/> E  <br/> • Soddisfare GLI URL semplici  <br/> • URL semplice per l'accesso esterno  <br/> • URL semplice amministratore  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=se01.contoso.com; SAN=se01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com; SAN=admin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=se01.contoso.com; SAN= \* .contoso.com  <br/> |Non è possibile sostituire l'FQDN Web interno in Generatore di topologie.  <br/> Se si dispone di più URL semplici Meet, è necessario includerli tutti come SAN.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
 |Esterno Web  <br/> |FQDN del server  <br/> |Ognuno dei seguenti:  <br/> • FQDN Web esterno  <br/> E  <br/> • URL semplice per l'accesso esterno  <br/> • Soddisfare GLI URL semplici per dominio SIP  <br/> OPPURE  <br/> • Una voce con caratteri jolly per gli URL semplici  <br/> |SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN=meet.contoso.com; SAN=meet.fabrikam.com; SAN=dialin.contoso.com  <br/> Nel caso di un certificato con caratteri jolly:  <br/> SN=se01.contoso.com; SAN=webcon01.contoso.com; SAN= \* .contoso.com  <br/> |Se sono presenti più URL semplici per le riunioni, sarà necessario includerli tutti come nomi alternativi del soggetto.  <br/> Le voci con caratteri jolly sono supportate per le voci di URL semplici.  <br/> |
    
@@ -497,7 +497,7 @@ Certificati per Survivable Branch Appliance (in particolare, Survivable Branch A
    
 ### <a name="certificates-for-external-user-access-edge"></a>Certificati per l'accesso degli utenti esterni (Edge)
 
-Skype for Business Server 2019 supporta l'utilizzo di  un singolo certificato pubblico per le interfacce esterne di Access e Web Conferencing Edge, oltre al servizio di autenticazione A/V, fornito tramite i server perimetrali. L'interfaccia interna di Edge in genere userà un certificato privato emesso dall'autorità di certificazione interna, ma se si preferisce, è possibile utilizzare anche un certificato pubblico per questo, se è di un'autorità di certificazione attendibile.
+Skype for Business Server 2019 supporta l'utilizzo  di un singolo certificato pubblico per l'accesso e le interfacce esterne di Web Conferencing Edge, oltre al servizio di autenticazione A/V, fornito tramite i server perimetrali. L'interfaccia interna di Edge in genere userà un certificato privato emesso dall'autorità di certificazione interna, ma se si preferisce, è possibile utilizzare anche un certificato pubblico per questo, se è di un'autorità di certificazione attendibile.
   
 Anche il proxy inverso utilizzerà un certificato pubblico e crittograferà la comunicazione tra il componente e i client e il componente ai server interni tramite HTTP (o, più precisamente, TLS su HTTP).
   
@@ -515,7 +515,7 @@ Saranno necessari nomi SAN per l'individuazione automatica nei certificati segue
     
 Le specifiche sono elencate nelle tabelle seguenti.
   
-È qui che una piccola pianificazione preliminare è buona, ma a volte è stata distribuita Skype for Business Server 2019 senza l'intenzione di distribuire dispositivi mobili e che si verifica in un secondo momento quando si dispone già di certificati nell'ambiente. La loro riemissione tramite un'autorità di certificazione interna è in genere piuttosto semplice, ma con i certificati pubblici di un'autorità di certificazione pubblica, questo può essere un po' più costoso.
+Questo è il punto in cui una piccola pianificazione preliminare è buona, ma a volte è stata distribuita Skype for Business Server 2019 senza l'intenzione di distribuire dispositivi mobili e che si verifica in un secondo momento quando si dispone già di certificati nell'ambiente. La loro riemissione tramite un'autorità di certificazione interna è in genere piuttosto semplice, ma con i certificati pubblici di un'autorità di certificazione pubblica, questo può essere un po' più costoso.
   
 Se è quello che si sta esaminando e se si dispone di molti domini SIP (il che renderebbe più costosa l'aggiunta di SANS), è possibile configurare il proxy inverso per l'utilizzo di HTTP per la richiesta iniziale del servizio di individuazione automatica, invece di usare HTTPS (che è la configurazione predefinita). [L'articolo Plan for Mobility](../../SfbServer/plan-your-deployment/mobility.md) contiene ulteriori informazioni su questo articolo.
   
@@ -546,7 +546,7 @@ Skype for Business Server 2019 può usare la stessa condivisione file per tutti 
   
 - Una condivisione file deve essere in uno spazio di archiviazione collegato diretto (DAS) o in una rete di archiviazione (SAN) e questo include DFS (Distributed File System) e una matrice ridondante di dischi indipendenti (RAID) per gli archivi file. Per ulteriori informazioni su DFS per Windows Server 2012, vedere [questa pagina DFS.](/previous-versions/windows/it-pro/windows-server-2012-R2-and-2012/jj127250(v=ws.11))
     
-- È consigliabile un cluster condiviso per la condivisione file. Se ne si usa già una, è consigliabile creare un cluster Windows Server 2012 o versioni successive
+- È consigliabile un cluster condiviso per la condivisione file. Se ne si usa già una, è consigliabile eseguire il clustering Windows Server 2012 versioni successive
 
 > [!Note]
 > **Perché l'ultima Windows?** Le versioni precedenti potrebbero non disporre delle autorizzazioni appropriate per abilitare tutte le funzionalità. È possibile utilizzare Amministrazione cluster per creare le condivisioni file. Per ulteriori informazioni, vedere questo articolo di supporto come creare condivisioni file in un [cluster.](https://support.microsoft.com/help/224967)

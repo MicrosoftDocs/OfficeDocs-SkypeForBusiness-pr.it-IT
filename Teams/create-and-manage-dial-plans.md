@@ -20,13 +20,13 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 - seo-marvel-apr2020
-description: Informazioni su come usare l'Microsoft Teams di amministrazione o Windows PowerShell per creare e gestire i dial plan (piani di chiamata PSTN).
-ms.openlocfilehash: e6cc5e751efa412c24eb13f182ab5967360c677e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Informazioni su come usare l'interfaccia Microsoft Teams di amministrazione o Windows PowerShell per creare e gestire i dial plan (piani di chiamata PSTN).
+ms.openlocfilehash: 44ecabfb04d8919ac289067818e736e170e6d181
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58628378"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728705"
 ---
 # <a name="create-and-manage-dial-plans"></a>Creare e impostare dial plan
 
@@ -38,7 +38,7 @@ Dopo aver programmato i piani di chiamata per l'organizzazione e aver trovato tu
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione, passare a **Piano di**  >  **chiamata vocale.**
 2. Fare **clic su** Aggiungi e quindi immettere un nome e una descrizione per il piano di chiamata.
-    ![Screenshot che mostra la pagina Aggiungi per la creazione di un dial plan](media/create-dial-plan.png)
+    ![Screenshot che mostra la pagina Aggiungi per la creazione di un piano di chiamata.](media/create-dial-plan.png)
 3. In **Dettagli piano di chiamata** specificare un prefisso di composizione esterno se gli utenti devono comporre una o più cifre iniziali aggiuntive , ad esempio 9, per ottenere una linea esterna. Procedi come segue.
     1. Nella casella **Prefisso di composizione esterno** immettere un prefisso di composizione esterno. Il prefisso può contenere fino a quattro caratteri (#,*, e 0-9).
     2. Attivare la **composizione ottimizzata del dispositivo**. Se si specifica un prefisso di composizione esterno, è necessario attivare questa impostazione anche per applicare il prefisso in modo che le chiamate possano essere effettuate all'esterno dell'organizzazione.
@@ -52,7 +52,7 @@ Dopo aver programmato i piani di chiamata per l'organizzazione e aver trovato tu
     > Teams scorre l'elenco delle regole di normalizzazione dall'alto verso il basso e usa la prima regola che corrisponde al numero composto. Se si configura un dial plan in modo che un numero composto possa corrispondere a più regole di normalizzazione, assicurarsi che le regole più restrittive siano ordinate al di sopra di quelle meno restrittive. Se si configura un piano di chiamata che normalizza un numero composto senza un "+", il servizio di chiamata tenterà di normalizzare di nuovo il numero usando le regole del piano di chiamata tenant e regionale. Per evitare la doppia normalizzazione, è consigliabile che tutte le regole di normalizzazione dia origine a numeri che iniziano con "+". I clienti di Direct Routing possono usare [le regole di traduzione trunk](direct-routing-translate-numbers.md) per rimuovere il "+" se necessario. 
 
 6. Fare clic su **Salva**.
-7. Se si vuole testare il piano di chiamata, in **Test piano di** chiamata immettere un numero di telefono e quindi fare clic su **Test**.
+7. Se si vuole testare il piano di chiamata, in **Test piano di chiamata** immettere un numero di telefono e quindi fare clic su **Test**.
 
 ### <a name="edit-a-dial-plan"></a>Modificare un piano di chiamata
 

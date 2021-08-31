@@ -18,19 +18,19 @@ f1.keywords:
 - NOCSH
 ms.custom:
 - Reporting
-description: "Questo report, insieme ad altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo di PSTN nell'intera organizzazione. "
-ms.openlocfilehash: f2708512dfb1cf03e367af09abb288e62329eaf0
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: "Questo report, insieme ad altri report Skype for Business, fornisce informazioni dettagliate sull'attività, incluso l'utilizzo della rete PSTN nell'intera organizzazione. "
+ms.openlocfilehash: c88614d4ca7745f972f42b9fcf19a2858a1c6992
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58606725"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732285"
 ---
 # <a name="users-blocked-report"></a>Report utenti bloccati
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Il nuovo dashboard Skype for Business **report** mostra la panoramica delle attività nei Skype for Business prodotti dell'organizzazione. Consente di eseguire il drill-in di singoli report a livello di prodotto per fornire informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, è possibile usare il **report** Skype for Business utenti bloccati per visualizzare gli utenti dell'organizzazione a cui è stato impedito di effettuare chiamate PSTN. Questo report, insieme ad altri report Skype for Business, fornisce dettagli sull'attività, incluso l'utilizzo di PSTN nell'intera organizzazione.
+Il nuovo dashboard Skype for Business **report** mostra la panoramica delle attività nei Skype for Business prodotti dell'organizzazione. Consente di eseguire il drill-in di singoli report a livello di prodotto per fornire informazioni più dettagliate sulle attività all'interno di ogni prodotto. Ad esempio, è possibile usare il **report** Skype for Business utenti bloccati per visualizzare gli utenti dell'organizzazione a cui è stato impedito di effettuare chiamate PSTN. Questo report, insieme ad altri report Skype for Business, fornisce informazioni dettagliate sull'attività, incluso l'utilizzo della rete PSTN nell'intera organizzazione.
   
  Vedere la [panoramica dei report](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) per altri report disponibili.
   
@@ -39,9 +39,9 @@ Il nuovo dashboard Skype for Business **report** mostra la panoramica delle atti
   
 ## <a name="how-to-get-to-the-skype-for-business-users-blocked-report"></a>Come accedere al report Skype for Business utenti bloccati
 
-![Icona che mostra il logo di Skype for Business](../images/sfb-logo-30x30.png) **Uso dell'interfaccia di amministrazione di Skype for Business**
+![Icona che mostra il Skype for Business logo.](../images/sfb-logo-30x30.png) **Uso dell'Skype for Business di amministrazione**
 
-- Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business** di amministrazione  >  **Segnala**  >  **gli** utenti  >  **bloccati**.
+- Passare all'interfaccia di amministrazione > **di amministrazione Skype for Business**  >  **l'interfaccia di amministrazione Segnala**  >  **gli** utenti  >  **bloccati**.
     
 ## <a name="interpret-the-skype-for-business-users-blocked-report"></a>Interpretare il report Skype for Business utenti bloccati
 
@@ -49,21 +49,21 @@ Il nuovo dashboard Skype for Business **report** mostra la panoramica delle atti
   
 Questo è l'aspetto del report. 
   
-![Report utenti bloccati](../images/df50a413-7a51-4340-a59b-3f83de941762.png)
+![Report degli utenti bloccati.](../images/df50a413-7a51-4340-a59b-3f83de941762.png)
 
 La tabella mostra una suddivisione di tutti gli utenti a cui è impedito di effettuare chiamate. Mostra tutti gli utenti a cui sono Sistema telefonico o audioconferenze. È possibile aggiungere/rimuovere colonne dalla tabella.
 ***
-![Numero 1](../images/sfbcallout1.png)
+![Numero 1.](../images/sfbcallout1.png)
 *   **L'ID** utente è l'accesso dell'utente.
 *   **Telefono numero** è il numero assegnato a un utente. 
 *   **Tempo azione blocco** è l'ora (UTC) in cui all'utente è stato impedito di effettuare chiamate.
 *   **Azione di** blocco è il tipo di azione eseguita per bloccare l'utente.
 *   **Il motivo dell'azione** di blocco è il motivo per cui all'utente è stato impedito di effettuare chiamate.
 ***
-![Numero 2](../images/sfbcallout2.png)<br/>
+![Numero 2.](../images/sfbcallout2.png)<br/>
 Fare clic per trascinare una colonna fino a **Per raggruppare per una specifica colonna, trascinare qui l'intestazione di colonna** se si desidera creare una visualizzazione che raggruppi tutti i dati in una o più colonne.
 ***
-![Numero 3](../images/sfbcallout3.png)<br/>
+![Numero 3.](../images/sfbcallout3.png)<br/>
 È anche possibile esportare i dati del report in un file CSV di Excel toccando o facendo clic sul collegamento **Esporta in Excel**.
 
 Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se si hanno meno di 2000 utenti, è possibile ordinare e filtrare all'interno della tabella del report stesso. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati.

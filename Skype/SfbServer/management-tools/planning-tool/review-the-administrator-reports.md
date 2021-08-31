@@ -14,12 +14,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 22d480ea-cd64-4d09-99fe-96e997570844
 description: Nei rapporti di amministrazione sono incluse informazioni dettagliate per la distribuzione e le operazioni. I report vengono generati in base alle selezioni contrassegnate in Siti di progettazione. Il progettista può dare valore aggiunto ai rapporti modificando i diagrammi di rete e definendo gli indirizzi IP completi e i nomi di dominio completi (FQDN) dei server, dei pool e dei servizi di bilanciamento del carico.
-ms.openlocfilehash: 31639b124826368a1da11d359249bc6d08f64c8d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fe2d14856a1d884dc04ff8cf2de4ebba41eb95eb
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58591010"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730395"
 ---
 # <a name="review-the-administrator-reports-in-skype-for-business-server-2015"></a>Esaminare i report dell'amministratore in Skype for Business Server 2015
 
@@ -38,9 +38,9 @@ La funzionalità report amministratore consente di:
 ## <a name="review-the-summary-report"></a>Esaminare il rapporto riepilogativo
 <a name="Summary_report"> </a>
 
-Il Skype for Business amministratore è il primo di quattro report importanti che documenta la progettazione in dettaglio. Le informazioni contenute in questo report e gli altri tre report associati sono utili per l'information technology Teams:
+Il Skype for Business amministratore è il primo di quattro report utili che documenta la progettazione in dettaglio. Le informazioni contenute in questo report e gli altri tre report associati sono utili per l'information technology Teams:
 
-![Rapporto di amministrazione riepilogativo generale](../../media/General_Summary_Report_Admin_Report.png)
+![Rapporto di amministrazione riepilogativo generale.](../../media/General_Summary_Report_Admin_Report.png)
 
 Nel rapporto riepilogativo vengono elencate informazioni di configurazione generali associate alla rete perimetrale. Vengono documentati il percorso, il nome di dominio completo (FQDN) e l'indirizzo IP, il tipo di rete e i commenti specifici di un determinato ruolo.
 
@@ -59,7 +59,7 @@ Il progettista e ognuno dei team che distribuiranno, gestiranno e gestiranno l'i
 
 Il Report certificati contiene tutti i certificati necessari nella distribuzione consigliata Skype for Business Server 2015. Lo strumento di pianificazione consente di account per i nomi soggetto e i nomi alternativi soggetto immessi. Il testo predefinito non modificabile può rappresentare una potenziale sfida per il team responsabile della richiesta e dell'emissione dei certificati. Nelle informazioni sui certificati sono inoltre incluse informazioni sull'origine da cui in genere viene emesso il certificato. Se l'infrastruttura non dispone di un'infrastruttura a chiave pubblica (PKI), tutti i certificati possono essere richiesti tramite un provider di certificati pubblico. I campi relativi agli utilizzi chiave avanzati e alla destinazione del rapporto sono molto utili per comprendere lo scopo e il percorso di ogni certificato.
 
-![Report amministratore certificati](../../media/Certificates_Report_Admin_Report.png)
+![Report amministratore certificati.](../../media/Certificates_Report_Admin_Report.png)
 
 Esaminare attentamente e assicurarsi di comprendere l'uso e lo scopo di ogni certificato nella distribuzione. Se c'è una domanda sull'utilizzo di un certificato, determinare quale server o servizio sta parlando con cosa. I certificati Skype for Business Server 2015 vengono utilizzati per due scopi principali:
 
@@ -74,14 +74,14 @@ Skype for Business Server 2015 ha un insieme potenzialmente complesso di regole 
 
 Dal punto di vista della gestione del firewall, il report deve essere esaminato attentamente per assicurarsi che non vi siano conflitti con l'uscita dalle regole del firewall e che non vi siano criteri o procedure che potrebbero essere violati.
 
-![Report amministratore firewall](../../media/Firewall_Report_Admin_Report.png)
+![Firewall Admin Report.](../../media/Firewall_Report_Admin_Report.png)
 
 ## <a name="review-the-dns-report"></a>Esaminare il rapporto DNS
 <a name="DNS_Report"> </a>
 
-Il rapporto DNS, che fa parte del rapporto dell'amministratore, dettaglia tutte le voci consigliate e note per dns (Domain Name System) nelle reti interne, perimetrali ed esterne. Se il progettista ha completato le modifiche al diagramma di rete e tutti gli indirizzi IP e i nomi di dominio completi (FQDN) sono definiti in base ai relativi valori di produzione, il rapporto DNS fornisce una risorsa di configurazione eccellente. Questo report può anche fungere da documento operativo per la risoluzione dei problemi.
+Il rapporto DNS, che fa parte del rapporto dell'amministratore, dettaglia tutte le voci consigliate e note per dns (Domain Name System) nelle reti interne, perimetrali ed esterne. Se il progettista ha completato le modifiche al diagramma di rete e tutti gli indirizzi IP e i nomi di dominio completi (FQDN) sono definiti in base ai valori di produzione, il rapporto DNS fornisce una risorsa di configurazione eccellente. Questo report può anche fungere da documento operativo per la risoluzione dei problemi.
 
-![Rapporto amministratore DNS](../../media/DNS_Report_Admin_Report.png)
+![Rapporto amministratore DNS.](../../media/DNS_Report_Admin_Report.png)
 
 È consigliabile fare in modo che il team di gestione DNS riveda accuratamente il rapporto DNS per assicurarsi che non vi siano errori che potrebbero causare difficoltà durante la distribuzione o che potrebbero complicare una sessione di risoluzione dei problemi.
 

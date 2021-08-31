@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Security
 description: Guida alla sicurezza per Skype for Business online <add description>
-ms.openlocfilehash: 9eeaa4aec19a3113013ca93c76dfc686eb85b270
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 85084e3bc675aaadf190b2c486bfe3d6adcb684c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619292"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728441"
 ---
 # <a name="security-and-skype-for-business-online"></a>Sicurezza e Skype for Business Online
 
@@ -227,7 +227,7 @@ TCP 50.000 in uscita viene utilizzato per SfBO, inclusi condivisione di applicaz
 L'abilitazione di utenti esterni e utenti interni per lo scambio di file multimediali richiede un servizio Access Edge al fine di gestire la segnalazione SIP necessaria per configurare e interrompere una sessione. Richiede inoltre che il servizio A/V Edge funga da relay per il trasferimento dei file multimediali. La sequenza di chiamate è illustrata nella seguente figura.
 
 
-![Sequenza di chiamata in Partecipa alla riunione](media/sfbo-call-sequence-security.png) 
+![Sequenza di chiamata in Partecipazione alla riunione.](media/sfbo-call-sequence-security.png) 
 
 1. Un utente riceve un messaggio di posta elettronica contenente un invito a partecipare a una riunione SfBO. L'e-mail contiene una chiave di conferenza e un collegamento URL basato su HTTP alla conferenza. Sia la chiave, sia l'URL sono unici per una determinata riunione.<p>L'utente avvia la procedura di partecipazione facendo clic sull'URL della riunione contenuto nell'e-mail, che avvia un processo di rilevamento del client sul computer dell'utente. Se il client viene rilevato, viene avviato questo client. Se non viene rilevato, l'utente viene reindirizzato al client web.<p/>
 2. Il client SfBO invia un INVITO SIP contenente le credenziali dell'utente. Un utente federato o remoto partecipa a una conferenza usando le credenziali aziendali. Per un utente federato, l'INVITO SIP viene prima inviato al suo home server, che autentica l'utente e inoltra l'INVITO a SfBO. Un utente anonimo deve superare passare l'autenticazione del digest.<p>SfBO autentica l'utente remoto o anonimo e avvisa il client. Come indicato nel passaggio 2, gli utenti federati che partecipano a una conferenza vengono autenticati dalla propria azienda.<p/>

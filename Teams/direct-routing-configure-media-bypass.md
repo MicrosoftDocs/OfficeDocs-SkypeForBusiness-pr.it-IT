@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come configurare il bypass multimediale con Sistema telefonico routing diretto per Microsoft Teams passando da un utente all'altro contemporaneamente o implementando un approccio graduale (scelta consigliata).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dcbc893d3549e491d40268ae3417f5203d755ff6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: c0f0ad9d25157058c048b0f12cf72b3755e65e11
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598580"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728685"
 ---
 # <a name="configure-media-bypass-with-direct-routing"></a>Configurare il bypass multimediale con Instradamento diretto
 
@@ -47,7 +47,7 @@ Per attivare il bypass multimediale, è necessario che siano soddisfatte le cond
 
   Questo è l'approccio consigliato perché consente una transizione più fluida e un'esperienza utente ininterrotta. Questo approccio richiede la configurazione del SBC, un nuovo nome FQDN e la configurazione del firewall. Si noti che è necessario assicurarsi che il certificato supporti entrambi i trunk. Nella rete SAN è necessario avere due nomi (**sbc1.contoso.com** e **sbc2.contoso.com**) o avere un certificato con caratteri jolly.
 
-![Eseguire la migrazione da trunk non bypassati a trunk abilitati per bypass)](media/direct-routing-media-bypass-8.png)
+![Eseguire la migrazione da trunk non bypassati a trunk abilitati per bypass).](media/direct-routing-media-bypass-8.png)
 
 Per istruzioni su come configurare i trunk ed eseguire la migrazione, vedere la documentazione del fornitore SBC:
 

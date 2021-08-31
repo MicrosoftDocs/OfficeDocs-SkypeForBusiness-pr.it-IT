@@ -22,12 +22,12 @@ ms.custom:
 - ms.teamsadmincenter.callqueues.overview"
 - Phone System
 description: Informazioni su come configurare le code di chiamata per le piccole imprese in Microsoft 365 Business Voice.
-ms.openlocfilehash: 7267d2d7116f40d29405510a924b5ec560037d0e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 3a67771127d5c359d798dd5de688d4f26b3cf39e
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58605985"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732118"
 ---
 # <a name="create-a-call-queue---small-business-tutorial"></a>Creare una coda di chiamata - Esercitazione sulle piccole imprese
 
@@ -51,7 +51,7 @@ Questo video illustra come creare una coda di chiamata in Teams.
 
 #### <a name="before-you-begin"></a>Prima di iniziare
 
-Ottenere alcune [Sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere qualche ulteriore prodotto nel caso decidi di apportare modifiche alla configurazione in futuro.
+Ottenere alcune [Sistema telefonico - Licenze utente virtuale](../teams-add-on-licensing/virtual-user.md) se non sono già disponibili. Ottenere una per ogni coda di chiamata e operatore automatico che si prevede di configurare. Queste licenze sono gratuite, quindi ti consigliamo di ottenere qualche ulteriore prodotto nel caso in cui decidi di apportare modifiche alla configurazione in futuro.
 
 Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita per restituire una chiamata al cliente, è consigliabile impostare l'ID chiamante per gli agenti di chiamata sul numero di telefono principale o sul numero di un operatore automatico appropriato. Per altre informazioni, vedere Gestire i criteri [id chiamante Microsoft Teams](../caller-id-policies.md) informazioni.
 
@@ -61,7 +61,7 @@ Poiché gli agenti in una coda di chiamata possono effettuare chiamate in uscita
 
 # <a name="step-1brcreate-a-team"></a>[Passaggio 1 <br> Creare un team](#tab/create-team)
 
-Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza, un gruppo di Microsoft 365 o un team Microsoft Teams servizio. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
+Quando si crea una coda di chiamata, è possibile aggiungere singoli utenti alla coda oppure usare un gruppo di sicurezza, un gruppo di Microsoft 365 o un team Microsoft Teams lavoro. È [consigliabile usare un canale del team.](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e) In questo modo i membri della coda possono chattare tra loro, condividere idee e creare documenti o altre risorse per aiutare i clienti. Un team fornisce anche una cassetta postale vocale per consentire ai chiamanti di lasciare un messaggio dopo ore o se la coda raggiunge la capacità massima.
 
 Per creare un team
 
@@ -102,19 +102,19 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 È possibile creare un account delle risorse nell'Teams di amministrazione.
 
-1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su **Account risorse.**
+1. Nell'Teams di amministrazione espandere **Impostazioni a** livello di organizzazione e quindi fare clic su Account **risorse.**
 
 2. Fare clic su **Aggiungi**.
 
 3. Nel riquadro **Aggiungi account risorsa** compilare **Nome** visualizzato , Nome **utente** e scegliere **Coda** di chiamata per il tipo di **account risorsa**. Gli agenti visualizzano il nome visualizzato quando ricevono una chiamata in arrivo dalla coda.
 
-    ![Screenshot dell'interfaccia utente per l'aggiunta di un account di risorsa](../media/resource-account-add-cq.png)
+    ![Screenshot dell'interfaccia utente per l'aggiunta di un account di risorsa.](../media/resource-account-add-cq.png)
 
 4. Fare clic su **Salva**.
 
    Il nuovo account verrà visualizzato nell'elenco degli account.
 
-   ![Screenshot di un elenco di account delle risorse](../media/resource-accounts-page.png)
+   ![Screenshot di un elenco di account delle risorse.](../media/resource-accounts-page.png)
 
 ### <a name="assign-a-license"></a>Assegnare una licenza
 
@@ -126,7 +126,7 @@ Per ogni coda di chiamata creata è necessario un account della risorsa. È simi
 
 3. Fare clic su **Salva modifiche**.
 
-    ![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365](../media/resource-account-assign-virtual-user-license.png)
+    ![Screenshot dell'interfaccia utente per l'assegnazione delle licenze nel interfaccia di amministrazione di Microsoft 365.](../media/resource-account-assign-virtual-user-license.png)
 
 ### <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -138,13 +138,13 @@ A questo punto, inizieremo a creare una nuova coda di chiamata e assegnare l'acc
 
 2. Fare **clic su Aggiungi account,** cercare l'account della risorsa che si vuole usare con questa coda di chiamata, fare clic su Aggiungi e quindi su **Aggiungi.** 
 
-3. (Facoltativo) In **Assegna ID chiamata** fare clic su **Aggiungi**, cercare gli account delle risorse creati per l'operatore automatico, fare clic su Aggiungi **e** quindi su **Aggiungi**. In questo modo gli agenti di chiamata riceveranno l'ID chiamante della linea principale quando chiamano.
+3. (Facoltativo) In **Assegna ID chiamata** fare clic su **Aggiungi**, cercare gli account delle risorse creati per l'operatore automatico, fare clic su Aggiungi **e** quindi su **Aggiungi**. In questo modo gli agenti di chiamata riceveranno l'ID chiamante della linea principale al momento della chiamata.
 
-    ![Screenshot delle impostazioni dell'ID chiamata](../media/call-queue-assign-calling-id.png)
+    ![Screenshot delle impostazioni dell'ID chiamata.](../media/call-queue-assign-calling-id.png)
 
 3. Scegliere una lingua. Questa lingua verrà usata per le istruzioni vocali generate dal sistema e per la trascrizione della segreteria telefonica (se abilitate).
 
-    ![Screenshot delle impostazioni dell'account delle risorse](../media/call-queue-name-language.png)
+    ![Screenshot delle impostazioni dell'account della risorsa.](../media/call-queue-name-language.png)
 
 4. Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre.
 
@@ -166,7 +166,7 @@ Per aggiungere agenti alla coda di chiamata, li aggiungeremo al team e al canale
 3. Selezionare il canale creato per la coda.
 3. Fare clic **su Applica**.
 
-    ![Screenshot delle impostazioni di utenti e gruppi per le code di chiamata](../media/call-queue-users-groups.png)
+    ![Screenshot delle impostazioni di utenti e gruppi per le code di chiamata.](../media/call-queue-users-groups.png)
 
 > [!NOTE]
 > Quando vengono aggiunti nuovi utenti al team, l'arrivo della prima chiamata può richiedere fino a otto ore.
@@ -190,7 +190,7 @@ Scegliere il metodo di routing delle chiamate da usare.
 
     - **L'inattività** più lunga instrada ogni chiamata all'agente che è rimasto inattivo più a lungo. Gli agenti il cui stato di presenza è Fuori rete per più di 10 minuti non sono inclusi.
 
-    ![Screenshot delle impostazioni della modalità conferenza e del metodo di routing](../media/call-queue-conference-mode-routing-method.png)
+    ![Screenshot delle impostazioni della modalità conferenza e del metodo di routing.](../media/call-queue-conference-mode-routing-method.png)
 
 3. Attivare **il routing basato sulla** presenza. In questo modo le chiamate vengono instradato agli agenti il cui stato di presenza è **Disponibile**.
 
@@ -198,7 +198,7 @@ Scegliere il metodo di routing delle chiamate da usare.
 
 5. Impostare un **tempo di avviso agente** per specificare per quanto tempo il telefono di un agente squillerà prima che la coda reindirizza la chiamata all'agente successivo.
 
-    ![Screenshot delle impostazioni relative a routing, rifiuto esplicito e tempo di avviso](../media/call-queue-presence-agents-time.png)
+    ![Screenshot delle impostazioni relative a routing, rifiuto esplicito e tempo di avviso.](../media/call-queue-presence-agents-time.png)
 
 > [!div class="nextstepaction"]
 > [Passaggio 5 - Overflow delle chiamate >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-overflow#steps)
@@ -215,7 +215,7 @@ Scegliere come gestire le chiamate che superano il massimo in coda.
     - **Numero di telefono esterno:** qualsiasi numero di telefono. Usare questo formato: +[codice paese][codice area][numero di telefono]
     - **Segreteria telefonica:** è possibile usare la cassetta postale vocale del team creato.
 
-    ![Screenshot delle impostazioni di overflow delle chiamate](../media/call-queue-overflow-handling.png)
+    ![Screenshot delle impostazioni di overflow delle chiamate.](../media/call-queue-overflow-handling.png)
 
 > [!div class="nextstepaction"]
 > [Passaggio 6 - Timeout chiamata >](/microsoftteams/business-voice/create-a-phone-system-call-queue-smb?tabs=call-timeout#steps)
@@ -232,7 +232,7 @@ Scegli cosa vuoi fare quando le chiamate sono in coda da troppo tempo.
     - **Numero di telefono esterno:** qualsiasi numero di telefono. Usare questo formato: +[codice paese][codice area][numero di telefono]
     - **Segreteria telefonica:** è possibile usare la cassetta postale vocale del team creato.
 
-    ![Screenshot delle impostazioni di timeout delle chiamate](../media/call-queue-timeout-handling.png)
+    ![Screenshot delle impostazioni di timeout delle chiamate.](../media/call-queue-timeout-handling.png)
 
 3. Fare clic su **Salva**.
 

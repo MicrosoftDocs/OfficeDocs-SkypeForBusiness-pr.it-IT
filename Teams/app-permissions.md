@@ -19,12 +19,12 @@ ms.localizationpriority: medium
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e2766da88fee53124d43b4e2b66c9c104ea41b8e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 15892a4eb3996923f7a0129805e2bb542cdc8d7c
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58610423"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731785"
 ---
 # <a name="microsoft-teams-apps-permissions-and-considerations"></a>Microsoft Teams e considerazioni sulle app
 
@@ -42,8 +42,8 @@ Le autorizzazioni elencate di seguito in lettere maiuscole, ad esempio RECEIVE_M
 
 | Titolo   | Descrizione    |
 |-----------|------------|
-| ![Icona che descrive un punto decisionale](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Usare le tabelle seguenti come guida per capire quali autorizzazioni sono richieste dall'app che si sta esaminando.</li></ul> |
-| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se consentire l'accesso all'app o al servizio stesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, ad eccezione dei bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Di conseguenza, qualsiasi app che include un bot richiede queste autorizzazioni e ha almeno quel profilo di rischio. </li></ul>|
+| ![Icona che rappresenta un punto di decisione.](media/audio_conferencing_image7.png) <br/>Punto di decisione|<ul><li>Usare le tabelle seguenti come guida per capire quali autorizzazioni sono richieste dall'app che si sta esaminando.</li></ul> |
+| ![Icona che rappresenta il passaggio successivo.](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Eseguire ricerche nell'app o nel servizio stesso per decidere se consentire l'accesso all'app o al servizio stesso all'interno dell'organizzazione. Ad esempio, i bot inviano e ricevono messaggi dagli utenti e, ad eccezione dei bot personalizzati aziendali, si trovano all'esterno del limite di conformità. Pertanto, qualsiasi app che include un bot richiede queste autorizzazioni e ha almeno quel profilo di rischio. </li></ul>|
 
 Vedere anche [Richiedere autorizzazioni per i dispositivi per la Microsoft Teams scheda .](/microsoftteams/platform/concepts/device-capabilities/native-device-permissions)
 
@@ -93,7 +93,7 @@ Nessuno
 
 - I bot hanno accesso solo ai team a cui sono stati aggiunti o agli utenti che li hanno installati.
 
-- I bot ricevono solo i messaggi in cui vengono menzionati esplicitamente dagli utenti. Questi dati lasciano la rete aziendale.
+- I bot ricevono solo messaggi in cui vengono menzionati esplicitamente dagli utenti. Questi dati lasciano la rete aziendale.
 
 - I bot possono rispondere solo alle conversazioni in cui sono menzionati.
 
@@ -119,12 +119,12 @@ Nessuno
 
 <sup>1</sup> Alcuni bot inviano solo messaggi (POST_MESSAGE_USER). Si chiamano bot "solo notifiche", ma il termine non fa riferimento a ciò che un bot è consentito o non può eseguire, significa che il bot non vuole esporre un'esperienza di conversazione. Teams usa questo campo per disabilitare la funzionalità nell'interfaccia utente che normalmente verrebbe abilitata; il bot non è limitato alle attività consentite rispetto ai bot che espongono un'esperienza di conversazione.
 
-<sup>2</sup> Regolato dalla proprietà booleana supportsFiles sull'oggetto bot nell'manifest.jsfile per l'app.
+<sup>2</sup> Regolato dalla proprietà booleana supportsFiles sull'oggetto bot nel manifest.jsfile per l'app.
 
 > [!NOTE]
 > Se un bot ha un proprio accesso, la prima volta che l'utente effettua l'accesso esiste un'esperienza di consenso diversa.
 >
->Attualmente, le autorizzazioni di Azure AD associate a qualsiasi funzionalità all'interno di un'app Teams (bot, scheda, connettore o estensione di messaggistica) sono completamente separate dalle autorizzazioni Teams di messaggistica qui elencate.
+>Attualmente, le autorizzazioni di Azure AD associate a qualsiasi funzionalità all'interno di un'app Teams (bot, scheda, connettore o estensione di messaggistica) sono completamente separate dalle autorizzazioni Teams di messaggistica elencate di seguito.
 
 ## <a name="tabs"></a>Schede
 
@@ -142,7 +142,7 @@ Nessuno (attualmente)
 
 - Il profilo di rischio per una scheda è quasi identico allo stesso sito Web in esecuzione in una scheda del browser. 
 
-- Una scheda ottiene anche il contesto in cui è in esecuzione, inclusi il nome di accesso e l'UPN dell'utente corrente, l'ID oggetto di Azure AD per l'utente corrente, l'ID del gruppo Microsoft 365 in cui si trova (se si tratta di un team), l'ID tenant e le impostazioni locali correnti dell'utente. Tuttavia, per mappare questi ID alle informazioni di un utente, la scheda deve rendere l'utente connesso ad Azure AD.
+- Una scheda ottiene anche il contesto in cui è in esecuzione, inclusi il nome di accesso e l'UPN dell'utente corrente, l'ID oggetto di Azure AD per l'utente corrente, l'ID del gruppo di Microsoft 365 in cui si trova (se si tratta di un team), l'ID tenant e le impostazioni locali correnti dell'utente. Tuttavia, per mappare questi ID alle informazioni di un utente, la scheda deve rendere l'utente connesso ad Azure AD.
 
 ## <a name="connectors"></a>Connettori
 
@@ -191,7 +191,7 @@ Nessuno
 
 - I webhook in uscita sono simili ai bot, ma hanno meno privilegi. Devono essere menzionati esplicitamente, proprio come i bot.
 
-- Quando viene registrato un webhook in uscita, viene generato un segreto, che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams invece di un utente malintenzionato. Questo segreto deve rimanere segreto; chiunque abbia accesso ad essa può impersonare Microsoft Teams. Se il segreto viene compromesso, il webhook in uscita può essere eliminato e ri-creato e verrà generato un nuovo segreto.
+- Quando viene registrato un webhook in uscita, viene generato un segreto, che consente al webhook in uscita di verificare che il mittente sia Microsoft Teams anziché un utente malintenzionato. Questo segreto deve rimanere segreto; chiunque abbia accesso ad essa può impersonare Microsoft Teams. Se il segreto viene compromesso, il webhook in uscita può essere eliminato e ri-creato e verrà generato un nuovo segreto.
 
 - Anche se è possibile creare un webhook in uscita che non convalida il segreto, è consigliabile non farlo.
 

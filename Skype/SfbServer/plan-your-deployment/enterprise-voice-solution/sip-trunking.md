@@ -16,12 +16,12 @@ ms.collection:
 ms.custom: ''
 ms.assetid: 7c586401-d0e5-4017-b3e1-fe5e7f8fc6db
 description: Informazioni sul trunking SIP in Skype for Business Server VoIP aziendale
-ms.openlocfilehash: a27967f322db816285db100696fa061f339e9f71
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: d10f14a8c3f65309c52351a0721aa042faad47b6
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58634200"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728235"
 ---
 # <a name="sip-trunking-in-skype-for-business-server"></a>Trunking SIP in Skype for Business Server
 
@@ -97,11 +97,11 @@ A seconda della posizione geografica dei siti e del traffico previsto all'intern
 Per scegliere se distribuire il trunking SIP centralizzato o distribuito, è necessaria un'analisi costi-benefici. In alcuni casi può essere vantaggioso scegliere il modello di trunking SIP distribuito, anche quando non è obbligatorio. In una distribuzione completamente centralizzata, tutto il traffico dei siti di succursale viene instradato su collegamenti WAN. Per non incorrere nei costi della larghezza di banda necessaria per i collegamenti WAN, può essere preferibile utilizzare il trunking SIP distribuito. È ad esempio possibile distribuire un server edizione Standard in un sito di succursale con federazione nel sito centrale oppure un Survivable Branch Appliance o un Survivable Branch Server con un gateway di piccole dimensioni.
 
 > [!NOTE]
-> Per informazioni dettagliate sul trunking SIP distribuito, vedere [Branch site SIP trunking in Skype for Business Server](branch-site.md).
+> Per informazioni dettagliate sul trunking SIP distribuito, vedere [Branch site SIP trunking in Skype for Business Server.](branch-site.md)
 
 ### <a name="supported-sip-trunking-connection-types"></a>Tipi di connessione supportati per il trunking SIP
 
-Skype for Business Server supporta i seguenti tipi di connessione per il trunking SIP:
+Skype for Business Server supporta i tipi di connessione seguenti per il trunking SIP:
 
 - MPLS (Multiprotocol Label Switching) è una rete privata che indirizza e trasferisce i dati da un nodo di rete al successivo. La larghezza di banda in una rete MPLS viene condivisa con altri sottoscrittori e a ogni pacchetto di dati viene assegnata un'etichetta per distinguere i dati di un sottoscrittore da quello di un altro. Questo tipo di connessione non richiede una rete privata virtuale (VPN). Un potenziale svantaggio è che il traffico IP eccessivo può interferire con l'operazione VoIP a meno che non abbai priorità.
 
@@ -152,7 +152,7 @@ Nella figura seguente viene illustrata la topologia di trunking SIP in Skype for
 
 **Topologia di trunking SIP**
 
-![Topologia trunking SIP](../../media/669fb55d-7c81-4e21-9421-fabc43d6e064.jpg)
+![Topologia trunking SIP.](../../media/669fb55d-7c81-4e21-9421-fabc43d6e064.jpg)
 
 Come illustrato nella figura, una rete privata virtuale (VPN, Virtual Private Network) IP viene utilizzata per la connettività tra l'azienda e il provider di servizi PSTN. Lo scopo di questa rete privata è quello di fornire connettività IP, migliorare la protezione e, facoltativamente, ottenere garanzie relative alla qualità del servizio. Data la natura delle VPN, non è necessario utilizzare TLS per il traffico di segnalazione SIP o SRTP per il traffico multimediale. Le connessioni tra l'azienda e il provider di servizi sono pertanto normali connessioni TCP per SIP e RTP (tramite UDP) per i contenuti multimediali potenzialmente inviati tramite una rete VPN IP. Accertarsi che le porte di tutti i firewall tra i router VPN siano aperte per consentire ai router VPN di comunicare e che gli indirizzi IP nei perimetri esterni dei router VPN consentano l'esecuzione del routing pubblicamente.
 

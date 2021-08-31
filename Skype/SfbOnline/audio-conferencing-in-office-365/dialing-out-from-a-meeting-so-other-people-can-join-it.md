@@ -21,12 +21,12 @@ f1.keywords:
 ms.custom:
 - Audio Conferencing
 description: Informazioni su requisiti e sul modo in cui gli organizzatori delle riunioni possono effettua una chiamata a utenti che utilizzano Skype for Business.
-ms.openlocfilehash: 295c3ee75718faad070a2e4e9eb26d3c9bfdae7e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 7fe8102db8306e4651de532b6e00de88ddb46247
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58581980"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732385"
 ---
 # <a name="dialing-out-from-a-skype-for-business-meeting-so-other-people-can-join-it"></a>Chiamata in uscita da una riunione Skype for Business in modo che altre persone possano parteciparvi
 
@@ -52,7 +52,7 @@ Per aggiungere altri partecipanti tramite chiamata in uscita alle riunioni dell'
   
  **Passaggio 2:** immettere il numero di telefono completo, incluso il codice del paese o dell'area geografica nella casella.
   
-![Numero di telefono della chiamata in uscita in Skype for Business](../images/084b4fb5-21eb-4f10-9a1a-c92b919084b9.png)
+![Numero di telefono in uscita in Skype for Business.](../images/084b4fb5-21eb-4f10-9a1a-c92b919084b9.png)
   
 ## <a name="supported-countries-and-regions"></a>Paesi e aree geografiche supportati
 

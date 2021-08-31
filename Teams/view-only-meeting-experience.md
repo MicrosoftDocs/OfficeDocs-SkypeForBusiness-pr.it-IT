@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 6bb4eb1c1c681e0c2089ec1258f7729727fdb77f
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b2af0ae753357497be6ea54b89534f2220b7cbf6
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58586300"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58732295"
 ---
 # <a name="teams-view-only-meeting-experience"></a>Esperienza di sola visualizzazione nelle riunioni di Teams
 
@@ -29,7 +29,7 @@ ms.locfileid: "58586300"
 > Le trasmissioni nella modalità di sola visualizzazione sono disponibili in Microsoft 365 E3/E5 e Microsoft 365 A3/A5. Questa caratteristica sarà abilitata come predefinita l'1 marzo 2021. La distribuzione di questa funzionalità in Microsoft 365 Government Community Cloud (GCC) inizierà alla fine di marzo 2021. Government Community Cloud High (GCCH) e Department of Defense (DoD) saranno distribuiti in seguito. È necessario modificare i criteri predefiniti dopo tale data se si attivare la funzionalità. Usare PowerShell per abilitare i criteri `Set-CsTeamsMeetingPolicy -Identity Global -StreamingAttendeeMode Enabled`.
 
 > [!Note]
-> Se la riunione raggiunge la capacità, Teams scalabilità uniforme per supportare un'esperienza di trasmissione di 10.000 persone di sola visualizzazione. Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno. Attualmente i webinar non supportano un'esperienza di trasmissione di sola visualizzazione.
+> Se la riunione raggiunge la capacità, Teams scalabilità uniforme per supportare un'esperienza di trasmissione solo visualizzazione di 10.000 persone. Inoltre, durate questo periodo di maggiore telelavoro, si possono organizzare trasmissioni ancora più grandi, per 20.000 persone, fino alla fine di quest'anno. Attualmente i webinar non supportano un'esperienza di trasmissione di sola visualizzazione.
 
 Microsoft Teams consente fino a 10.000 partecipanti alle riunioni. Dopo aver raggiunto la capacità della riunione principale, ovvero quando 1000 utenti aderiscono a una riunione, altri partecipanti si uniranno con un'esperienza di sola visualizzazione.
 
@@ -42,7 +42,7 @@ I partecipanti potranno partecipare all'esperienza di sola visualizzazione trami
 > [!Note]
 > La capacità limite corrente della "riunione principale", o in altre parole, il numero di utenti completamente interattivi è 1000 e include GCC webinar.
 
-## <a name="teams-view-only-experience-controls"></a>Teams di sola visualizzazione
+## <a name="teams-view-only-experience-controls"></a>Teams di esperienza di sola visualizzazione
 
 È possibile abilitare l'esperienza di sola visualizzazione usando il cmdlet dal modulo [`Set-CsTeamsMeetingPolicy`](/powershell/module/skype/set-csteamsmeetingpolicy?view=skype-ps) [di PowerShell SkypeForBusiness](/powershell/module/skype/?view=skype-ps) o almeno dalla versione 2.0.0 del modulo [MicrosoftTeams.](https://www.powershellgallery.com/packages/MicrosoftTeams)
 
@@ -78,11 +78,11 @@ Quando il limite di partecipati della riunione principale viene raggiunto, i par
 
 Una volta raggiunta la capacità della riunione principale, l'organizzatore della riunione e i relatori vedranno uno striscione che informa che i nuovi partecipanti si uniranno come partecipanti di sola visualizzazione.
 
-  ![il cient di Teams e il banner di notifica per organizzatori e relatori](media/chat-and-banner-message.png)
+  ![il Teams del client e del banner per organizzatori e relatori.](media/chat-and-banner-message.png)
 
 Quando viene raggiunto il limite di partecipanti della riunione principale, i partecipanti vengono informati nella schermata preliminare di accesso che stanno accedendo a un'esperienza di sola visualizzazione. 
 
-  ![la schermata preliminare di accesso e il messaggio per i partecipanti che notifica  che si sta accedendo a un'esperienza di sola visualizzazione](media/view-only-pre-join-screen.png)
+  ![la Teams di pre-partecipazione e il messaggio per i partecipanti che gli informano che si uniranno in modalità di sola visualizzazione.](media/view-only-pre-join-screen.png)
 
 Se lo spazio è sufficiente, i nuovi utenti accedono sempre alla riunione principale. Se il limite della riunione principale viene raggiunto e uno o più utenti abbandonano la riunione, la riunione principale ha una capacità sufficiente. I partecipanti che accedono (o riaccedono) alla riunione entreranno nella sala principale fino al raggiungimento del limite di utenti. I partecipanti all'esperienza di sola visualizzazione non verranno alzati di livello automaticamente alla riunione principale e non potranno essere alzati di livello manualmente alla riunione principale.
 
@@ -105,7 +105,7 @@ L'esperienza di sola visualizzazione consente ai partecipanti di:
 
 - Ascoltare i partecipanti alla riunione principale di Teams.
 - Vedere il feed video del relatore attivo (se il relatore sta condividendo il video).
-- Visualizzare il contenuto condiviso con la funzionalità condividi desktop o schermo.
+- Visualizzare il contenuto condiviso usando la funzionalità condividi desktop o schermo.
 
 I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti opzioni delle riunioni:
 
@@ -115,7 +115,7 @@ I partecipanti nella sala di sola visualizzazione non potranno usare le seguenti
 - Condividere l'audio o il video.
 - Leggere o partecipare alla chat della riunione.
 - Visualizzare il video trasmesso dai partecipanti alla riunione, se non sono i relatori attivi.
-- Vedere PowerPoint file condivisi usando la funzionalità Live PowerPoint o le singole condivisioni di applicazioni ,ad esempio desktop o condivisione dello schermo.
+- Vedere PowerPoint file condivisi con la funzionalità Live PowerPoint o le singole condivisioni di applicazioni ,ad esempio desktop o condivisione dello schermo.
 - Alzare la mano durante la riunione.
 - Inviare o visualizzare le reazioni.
 - Interagisci con qualsiasi app 3P che si integra nella riunione Teams, inclusi i sondaggi.

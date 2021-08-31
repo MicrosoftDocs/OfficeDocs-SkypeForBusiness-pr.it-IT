@@ -20,24 +20,24 @@ appliesto:
 - Skype for Business
 - Microsoft Teams
 ms.localizationpriority: medium
-description: Questa appendice include la procedura dettagliata per l'aggiornamento di AAD Connessione in modo da includere più foreste come parte del consolidamento cloud per Teams e Skype for Business.
-ms.openlocfilehash: e803ae1e41fd0e68a56e059bbaf398ee30f807f6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Questa appendice include la procedura dettagliata per l'aggiornamento di AAD Connessione per includere più foreste come parte del consolidamento cloud per Teams e Skype for Business.
+ms.openlocfilehash: 261085c85b9b3114bce49216e7b63173cd37d55e
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58625798"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731885"
 ---
 # <a name="update-aad-connect-to-include-more-than-one-forest"></a>Aggiornare AAD Connect per includere più di una foresta
 
 [!INCLUDE [sfbo-retirement](../../Hub/includes/sfbo-retirement.md)]
 
-Azure AD Connessione supporta la [sincronizzazione da più foreste.](/azure/active-directory/connect/active-directory-aadconnect-topologies) Tuttavia, supporta solo un'istanza di Azure AD Connessione sincronizzazione con AAD. Pertanto, nei casi in cui Azure AD è già installato in una foresta, l'istanza esistente di AAD Connessione deve essere aggiornata per la sincronizzazione dalla foresta aggiuntiva.
+Azure AD Connessione supporta la [sincronizzazione da più foreste.](/azure/active-directory/connect/active-directory-aadconnect-topologies) Tuttavia, supporta solo un'istanza di Azure AD Connessione la sincronizzazione con AAD. Pertanto, nei casi in cui Azure AD è già installato in una foresta, l'istanza esistente di AAD Connessione deve essere aggiornata per la sincronizzazione dalla foresta aggiuntiva.
 
- - Se tutte le identità sono rappresentate una sola volta in entrambe le foreste (ovvero non sono stati effettuati contatti abilitati alla posta elettronica), è sufficiente eseguire di nuovo la procedura guidata AAD Connessione, scegliere "Personalizza opzioni di sincronizzazione" e quindi nella pagina Directory personali di **Connessione** immettere il nome della foresta e delle creds aggiuntive.<br><br>
- ![Pagina Connessione directory](../media/cloud-consolidation-connect-your-directories.png)
+ - Se tutte le identità sono rappresentate una sola volta in entrambe le foreste (ovvero non sono stati effettuati contatti abilitati alla posta elettronica), è sufficiente eseguire di nuovo la procedura guidata Connessione AAD, scegliere "Personalizza opzioni di sincronizzazione" e quindi nella pagina Directory personali di **Connessione** immettere il nome della foresta e delle creds aggiuntive.<br><br>
+ ![La Connessione delle directory.](../media/cloud-consolidation-connect-your-directories.png)
  - Tuttavia, se gli utenti possono esistere in più directory e si uniranno i dati (ad esempio, se gli oggetti contatto sono presenti in una foresta corrispondente agli utenti in un'altra foresta), sarà necessario disinstallare Azure AD Connessione e reinstallarlo.  Ciò è dovuto al fatto che la condizione delle regole di join tra foreste può essere configurata solo durante la prima installazione. Questa operazione viene eseguita nella pagina seguente:<br><br>
- ![Pagina Identificazione univoca degli utenti](../media/cloud-consolidation-uniquely-identifying-your-users.png)
+ ![Pagina Identificazione univoca degli utenti.](../media/cloud-consolidation-uniquely-identifying-your-users.png)
 
 
 ## <a name="see-also"></a>Vedere anche

@@ -17,12 +17,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: df39e778998d01b31b08ec0f537d4a35905a2ce2
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 082657f5d114a7228f5b95e39390a87ccf6d0dcb
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58622004"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58727825"
 ---
 # <a name="plan-for-lifecycle-management-in-teams"></a>Pianificare la gestione del ciclo di vita in Teams
 
@@ -153,8 +153,8 @@ Seguire questi collegamenti per ottenere altre informazioni sull'organizzazione 
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Qual è lo scopo del team?</li><li>Chi appartiene al team?</li><li>Il team sarà pubblico o privato?</li><li>I nuovi membri possono aggiungersi in autonomia o vengono aggiunti dai proprietari del team?</li><li>Chi avrà le autorizzazioni necessarie per creare canali o aggiungere schede, bot e connettori?</li></ul> |
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Creare il team.</li><li>Pianificare i canali.</li></ul>|
+| ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Qual è lo scopo del team?</li><li>Chi appartiene al team?</li><li>Il team sarà pubblico o privato?</li><li>I nuovi membri possono aggiungersi in autonomia o vengono aggiunti dai proprietari del team?</li><li>Chi avrà le autorizzazioni necessarie per creare canali o aggiungere schede, bot e connettori?</li></ul> |
+| ![Icona che descrive i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Creare il team.</li><li>Pianificare i canali.</li></ul>|
 
 
 #### <a name="set-up-channels"></a>Configurare i canali
@@ -167,8 +167,8 @@ Considerare i nomi dei canali prima di crearli in quanto la ridenominazione di u
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Quali canali iniziali verranno aggiunti al team?</li><li>Quali indicazioni, se del caso, saranno fornite per l'aggiunta di nuovi canali? (Saranno organizzate per progetto, per argomento o altro?)</li></ul> |
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Creare i canali iniziali.</li><li>Pubblicare un messaggio di benvenuto.</li><li>Iniziare a collaborare.</li></ul>|
+| ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Quali canali iniziali verranno aggiunti al team?</li><li>Quali indicazioni, se del caso, saranno fornite per l'aggiunta di nuovi canali? (Saranno organizzate per progetto, per argomento o altro?)</li></ul> |
+| ![Icona che descrive i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Creare i canali iniziali.</li><li>Pubblicare un messaggio di benvenuto.</li><li>Iniziare a collaborare.</li></ul>|
 
 ### <a name="stage-2-middle"></a>Fase 2: parte centrale
 
@@ -188,8 +188,8 @@ Poiché i team sono organismi viventi, a volte devono essere controllati e accud
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Chi monitorerà l'utilizzo per identificare i problemi?</li><li>Quali metriche verranno usate per determinare l'integrità di un team?</li><li>Identificare i team che hanno raggiunto la fine della vita utile.</li><li>Identificare i team non integri che hanno ancora uno scopo, ma devono essere rivitalizzati.</li></ul> |
-| ![Icona che descrive il passaggio successivo](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Implementare un processo per il monitoraggio dell'integrità dei singoli team.</li></ul>|
+| ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Chi monitorerà l'utilizzo per identificare i problemi?</li><li>Quali metriche verranno usate per determinare l'integrità di un team?</li><li>Identificare i team che hanno raggiunto la fine della vita utile.</li><li>Identificare i team non integri che hanno ancora uno scopo, ma devono essere rivitalizzati.</li></ul> |
+| ![Icona che descrive il passaggio successivo.](media/audio_conferencing_image9.png)<br/>Passaggio successivo|<ul><li>Implementare un processo per il monitoraggio dell'integrità dei singoli team.</li></ul>|
 
 ### <a name="stage-3-end"></a>Fase 3: fine
 
@@ -205,8 +205,8 @@ Per informazioni su come configurare i criteri di scadenza e conservazione, vede
 
 |    |     |
 |-----------|------------|
-| ![Icona che descrive i punti decisionali](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Definire a cosa corrisponda la fine del ciclo di vita di un team.</li><li>Decidere se mantenere disponibile il contenuto di un team e quanto a lungo.</li></ul> |
-| ![Icona che descrive i passaggi successivi](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare le procedure consigliate e l'analisi di fine progetto.</li><li>Archiviare i dati, se necessario.</li></ul>|
+| ![Icona che descrive i punti decisionali.](media/audio_conferencing_image7.png) <br/>Punti decisionali|<ul><li>Definire a cosa corrisponda la fine del ciclo di vita di un team.</li><li>Decidere se mantenere disponibile il contenuto di un team e quanto a lungo.</li></ul> |
+| ![Icona che descrive i passaggi successivi.](media/audio_conferencing_image9.png)<br/>Passaggi successivi|<ul><li>Documentare le procedure consigliate e l'analisi di fine progetto.</li><li>Archiviare i dati, se necessario.</li></ul>|
 
 ## <a name="related-topics"></a>Argomenti correlati
 

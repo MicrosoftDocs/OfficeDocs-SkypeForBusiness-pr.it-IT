@@ -17,12 +17,12 @@ ms.custom: ''
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare e gestire i pacchetti Teams criteri per l'organizzazione governativa.
-ms.openlocfilehash: 4f796a2fc3c7e359f311f2a709f058e172f8f454
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 8f0b998540121e05f4113b298446dffefc832cb5
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58582170"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58731985"
 ---
 # <a name="teams-policy-packages-for-government"></a>Teams di criteri per enti pubblici
 
@@ -49,11 +49,11 @@ Teams attualmente include i pacchetti di criteri per enti pubblici seguenti.
 |Frontline Manager  |Responsabili in prima linea nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni ai responsabili in prima linea dell'organizzazione.|
 |Operaio in prima linea  |Frontline Workers nell'organizzazione governativa |Crea un set di criteri e applica tali impostazioni ai Frontline Worker dell'organizzazione.|
 
-![Screenshot dei pacchetti di criteri per il settore sanitario](media/policy-packages-gov.png)
+![Screenshot dei pacchetti di criteri sanitari.](media/policy-packages-gov.png)
 
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare facilmente i criteri collegati a un determinato pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri per i funzionari della sicurezza pubblica agli utenti dell'organizzazione, viene creato un criterio denominato PublicSafety_Officer per ogni criterio nel pacchetto.
 
-![Screenshot dei criteri nel pacchetto per gli operatori del settore sanitario](media/policy-packages-public-safety-officer.png)
+![Screenshot dei criteri nel pacchetto di operatori clinici del settore sanitario.](media/policy-packages-public-safety-officer.png)
 
 ## <a name="manage-policy-packages"></a>Gestire i pacchetti di criteri
 
@@ -80,7 +80,7 @@ Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un cr
 
 Per assegnare un pacchetto di criteri a uno o più utenti, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Pacchetti di criteri** e quindi selezionare **Gestisci utenti**.  
 
-![Screenshot che mostra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione](media/policy-packages-healthcare-assign.png)
+![Screenshot che illustra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione.](media/policy-packages-healthcare-assign.png)
 
 Per altre informazioni, vedere [Assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
 
