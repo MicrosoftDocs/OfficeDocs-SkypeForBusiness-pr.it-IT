@@ -18,12 +18,12 @@ ms.collection:
 - remotework
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: e50c0c3b7051ec713fff72058a53bd261ab650c3
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 0237ff7d32a677eab1efd8b804b7dc00ca5e4184
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58607693"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733435"
 ---
 # <a name="how-to-provision-teams-at-scale-for-frontline-workers"></a>Come eseguire il provisioning di Microsoft Teams su vasta scala per gli operatori sul campo
 
@@ -216,11 +216,11 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
 2. Fare clic su  **Aggiungi**.  
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criteri di installazione app per i manager sul campo.
-    :::image type="content" source="media/flw-flm-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per i manager sul campo":::
+    :::image type="content" source="media/flw-flm-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per i manager sul campo.":::
 
 4. Disattivare **Carica app personalizzate**.
 5. Disattivare **Consenti di aggiungere un utente**.
-    :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot dell'impostazione Consenti di aggiungere un utente":::
+    :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot dell'impostazione Consenti di aggiungere un utente.":::
 
 6. Se non è già presente nell'elenco, aggiungere l'app **Turni**. Per altre informazioni su [Turni](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md), fare clic qui.
     :::image type="content" source="media/flw-add-pinned-apps.png" alt-text="Screenshot della schermata Aggiungi app bloccate, con il pulsante Aggiungi per l'app Turni":::
@@ -234,7 +234,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
     - Calendario
     - Turni
 
-    :::image type="content" source="media/flw-manager-pinned-apps.png" alt-text="Screenshot delle app per i manager sul campo elencate in ordine":::
+    :::image type="content" source="media/flw-manager-pinned-apps.png" alt-text="Screenshot delle app per i manager sul campo elencate in ordine.":::
 
 #### <a name="create-the-frontline-worker-app-setup-policy"></a>Creare i criteri di installazione app per gli operatori sul campo
 
@@ -243,11 +243,11 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di configurazione**.
 2. Fare clic su  **Aggiungi**.
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di configurazione app per gli operatori sul campo.
-    :::image type="content" source="media/flw-flw-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per gli operatori sul campo":::
+    :::image type="content" source="media/flw-flw-app-setup-policy.png" alt-text="Screenshot del nome e della descrizione di esempio per i criteri di installazione app per gli operatori sul campo.":::
 
 4. Disattivare **Carica app personalizzate**.
 5. Disattivare **Consenti di aggiungere un utente**.
-    :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot dell'impostazione Consenti di aggiungere un utente":::
+    :::image type="content" source="media/flw-allow-user-pinning.png" alt-text="Screenshot dell'impostazione Consenti di aggiungere un utente.":::
 
 6. Se non è già presente nell'elenco, aggiungere l'app **Turni**. Per altre informazioni su [Turni](expand-teams-across-your-org/shifts/manage-the-shifts-app-for-your-organization-in-teams.md), fare clic qui.
 
@@ -260,7 +260,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
     - Teams
     - Turni
 
-    :::image type="content" source="media/flw-worker-pinned-apps.png" alt-text="Screenshot delle app per gli operatori sul campo elencate in ordine":::
+    :::image type="content" source="media/flw-worker-pinned-apps.png" alt-text="Screenshot delle app per gli operatori sul campo elencate in ordine.":::
 
 ### <a name="create-teams-app-permission-policies"></a>Creare criteri di autorizzazione app di Teams
 
@@ -275,7 +275,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di autorizzazione**.
 2. Fare clic su  **Aggiungi**.
 
-    :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app":::
+    :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app.":::
 
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di autorizzazione app per manager sul campo.
 4. In  **App Microsoft**, selezionare **Consenti tutte le app**.
@@ -290,7 +290,7 @@ Le impostazioni seguenti possono essere personalizzate in base alle esigenze azi
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a  **App di Teams** > **Criteri di autorizzazione**.
 2. Fare clic su  **Aggiungi**.
 
-    :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app":::
+    :::image type="content" source="media/flw-add-app-permission-policy.png" alt-text="Screenshot della pagina Aggiungi i criteri di autorizzazione app.":::
 
 3. Immettere un nome e una descrizione per il criterio. Ad esempio, Criterio di autorizzazione app per operatori sul campo.
 4. In  **App Microsoft**, selezionare **Consenti tutte le app**.

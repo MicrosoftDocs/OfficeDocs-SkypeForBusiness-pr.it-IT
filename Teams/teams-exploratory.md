@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 8edeb3180710dede90df8cd2bd5ba54c7f2996bd
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 057ac60f2033336df024b8a26daa6dff963dafa7
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627068"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58734095"
 ---
 # <a name="manage-the-microsoft-teams-exploratory-license"></a>Gestire la licenza di Microsoft Teams Exploratory
 
@@ -92,11 +92,11 @@ Gli amministratori possono impedire agli utenti finali di eseguire l'esperienza 
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, passare a **Impostazioni** > **Impostazioni organizzazione**, selezionare **Servizi**, quindi **App e servizi di proprietà dell'utente**.
 
-    ![pagina Servizi nell'interfaccia di amministrazione](media/iw-trial-services.png)
+    ![pagina Servizi nell'interfaccia di amministrazione.](media/iw-trial-services.png)
 
 2. Eliminare il segno di spunta da **Consenti agli utenti di installare le versioni di valutazione di app e servizi**.
 
-    ![pagina App e servizi di proprietà degli utenti nell'interfaccia di amministrazione](media/iw-trial-user-owned-apps-services.png)
+    ![pagina App e servizi di proprietà degli utenti nell'interfaccia di amministrazione.](media/iw-trial-user-owned-apps-services.png)
 
     > [!NOTE]
     > Se l'organizzazione non è idonea per l'esperienza Teams Exploratory, l'opzione **Consenti agli utenti di installare le versioni di valutazione di app e servizi** non è disponibile.

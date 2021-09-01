@@ -21,12 +21,12 @@ ms.custom: ms.teamsadmincenter.policypackages.overview
 ms.localizationpriority: high
 search.appverid: MET150
 description: Informazioni sui criteri in un ambiente Education, o EDU, e su come usare e gestire i pacchetti di criteri in Microsoft Teams.
-ms.openlocfilehash: 8120000599f2e0406d80a7e61b2e5720ffe2fd71
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: bda6341afa03e4bfebb2e9a619a42ad0a0b879e3
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58608863"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58728165"
 ---
 # <a name="teams-policies-and-policy-packages-for-education"></a>Criteri e pacchetti di criteri di Teams per l'istruzione
 
@@ -148,7 +148,7 @@ Microsoft Teams attualmente include i pacchetti di criteri seguenti:
 
 A ogni singolo criterio viene assegnato il nome del pacchetto di criteri, in modo da poter identificare i criteri collegati a un pacchetto di criteri. Ad esempio, quando si assegna il pacchetto di criteri Education_Teacher ai docenti dell'istituto di istruzione, viene creato un criterio denominato Education_Teacher per ogni criterio nel pacchetto.
 
-![Screenshot del pacchetto di criteri Education_Teacher](media/policy-packages-education_teacher.png)
+![Screenshot del pacchetto di criteri Education_Teacher.](media/policy-packages-education_teacher.png)
 
 > [!NOTE]
 > Se si decide che i docenti e il personale amministrativo hanno bisogno di criteri diversi si può riutilizzare un pacchetto esistente, ossia identificare un pacchetto attualmente in uso e modificare le impostazioni in modo che siano appropriate per quel gruppo. Potrebbe essere necessario prendere nota di quale gruppo abbia un determinato pacchetto, ma questo è l'unico impedimento al riutilizzo di un pacchetto.
@@ -178,7 +178,7 @@ Assegnare il pacchetto di criteri agli utenti. Se a un utente è assegnato un cr
 
 Per assegnare un pacchetto di criteri a uno o più utenti, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare a **Pacchetti di criteri** e quindi selezionare **Gestisci utenti**.  
 
-![Screenshot che mostra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione](media/policy-packages-healthcare-assign.png)
+![Screenshot che mostra come assegnare un pacchetto di criteri nell'interfaccia di amministrazione.](media/policy-packages-healthcare-assign.png)
 
 Per altre informazioni, vedere [Assegnare un pacchetto di criteri](manage-policy-packages.md#assign-a-policy-package).
 

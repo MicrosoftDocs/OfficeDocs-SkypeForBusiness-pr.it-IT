@@ -19,12 +19,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 577060d46bea2196c17a42d82827bdcad7062285
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 89f31f586fc7b3839dd5820089528f91dfad7e93
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58632040"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58733837"
 ---
 # <a name="manage-teams-in-the-microsoft-teams-admin-center"></a>Gestire i team nell'interfaccia di amministrazione di Microsoft Teams
 
@@ -45,7 +45,7 @@ L'amministratore potrebbe dover visualizzare o aggiornare i team che l'organizza
 
 Gli strumenti di gestione per i team si trovano nel nodo **Teams** nell'Interfaccia di amministrazione di Microsoft Teams. Nell'Interfaccia di amministrazione selezionare **Teams** > **Gestisci i team**. Ogni team è supportato da un gruppo di Microsoft 365 e questo nodo offre una visualizzazione dei gruppi abilitati per Microsoft Teams nell'organizzazione.
 
-![Screenshot della griglia panoramica di Teams](media/manage-teams-in-modern-portal-grid.png)  
+![Screenshot della griglia panoramica di Teams.](media/manage-teams-in-modern-portal-grid.png)  
 
 Nella griglia vengono mostrate le seguenti proprietà:
 
@@ -94,7 +94,7 @@ Al momento, la ricerca supporta la stringa "Inizia con" ed esegue una ricerca ne
 - Aggiungere o rimuovere canali (non è possibile rimuovere il Canale generale).
 - Modificare le impostazioni del team e del gruppo.
  
-![Screenshot di esempio di un profilo del team](media/manage-teams-in-modern-portal-team-profile-page.png)
+![Screenshot di esempio di un profilo del team.](media/manage-teams-in-modern-portal-team-profile-page.png)
 
 ## <a name="making-changes-to-teams"></a>Apportare modifiche ai team
 

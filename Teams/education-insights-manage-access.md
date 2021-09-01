@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae8cfa1ea62472255825684d2e168be1411bb643
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 314e393b3faf0d5b74d25f3a545277dbba64c566
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58604535"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730685"
 ---
 # <a name="manage-user-access-to-education-insights"></a>Gestire l'accesso degli utenti a Dati analitici per l'istruzione
 
@@ -41,7 +41,7 @@ Per fornire Dati analitici a livello di organizzazione, è necessario [importare
 
 * Aprire l'app Dati analitici, fare clic su **Impostazioni** e selezionare **Autorizzazioni utente**
 
-:::image type="content" source="media/insights-user-permissions.png" alt-text="Impostazioni":::
+:::image type="content" source="media/insights-user-permissions.png" alt-text="Impostazioni.":::
 
 > [!NOTE]
 > Quando si fornisce l'autorizzazione per un livello organizzativo, l'utente può vedere tutte le unità organizzative sottostanti.
@@ -62,14 +62,14 @@ Se si utilizza il [formato di file SDS V2.1](/schooldatasync/sds-v2.1-csv-file-f
 
   Verrà visualizzato un elenco dei ruoli nella propria organizzazione didattica, il livello in tale gerarchia per ciascuno, quanti utenti sono assegnati a quel ruolo e il livello di autorizzazione del ruolo. 
   
-  :::image type="content" source="media/insights-role-based-permissions.png" alt-text="Autorizzazioni basate sui ruoli":::
+  :::image type="content" source="media/insights-role-based-permissions.png" alt-text="Autorizzazioni basate sui ruoli.":::
   
   Se è presente un ruolo a più di un livello dell'organizzazione, tale ruolo viene visualizzato più volte, una per ogni livello. Nello screenshot, sono presenti presidi sia a livello scolastico che distrettuale, quindi ci sono due righe per "preside".
   
 * Per ogni ruolo, fare clic sull'icona a forma di matita per selezionare il livello di autorizzazione. L'impostazione predefinita è che il ruolo non dispone dell'autorizzazione per visualizzare Insights.
 * Selezionare il livello di autorizzazione **Visualizza i dati per l'organizzazione** o **Nessuno**.
 
-  :::image type="content" source="media/insights-role-based-permissions-panel.png" alt-text="Pannello delle autorizzazioni basate sui ruoli":::
+  :::image type="content" source="media/insights-role-based-permissions-panel.png" alt-text="Pannello delle autorizzazioni basate sui ruoli.":::
   
   Se nell'elenco viene visualizzato un utente che necessita di un livello di autorizzazione più complesso, modificare il ruolo e/o l'organizzazione nei [dati importati dal SIS](education-insights-sis-data-sync.md) e [concedere autorizzazioni individuali](#grant-individual-permission-to-a-user) (se necessario).
 
@@ -86,7 +86,7 @@ Utilizzare le autorizzazioni individuali per modificare l'autorizzazione per un 
   
   Verranno visualizzati gli utenti dell'organizzazione didattica che hanno ottenuto l'autorizzazione individuale. 
   
-  :::image type="content" source="media/insights-individual-permissions.png" alt-text="Autorizzazioni individuali":::
+  :::image type="content" source="media/insights-individual-permissions.png" alt-text="Autorizzazioni individuali.":::
   
 ### <a name="grant-individual-permission-to-a-user"></a>Concedere autorizzazioni individuali a un utente
 * Fare clic su **Concedi autorizzazione individuale** nella parte superiore sinistra dello schermo.
@@ -103,6 +103,6 @@ Utilizzare le autorizzazioni individuali per modificare l'autorizzazione per un 
   * **Organizzazione specifica** indica che l'utente vede l'unità organizzativa selezionata e tutte le unità organizzative sottostanti. Iniziare a digitare e selezionare l'unità organizzativa nell'elenco.
   * **Nessuno** indica che l'utente vede solo le unità organizzative assegnate automaticamente dal proprio ruolo (se presenti).
   
-  :::image type="content" source="media/insights-individual-permissions-panel.png" alt-text="Pannello delle autorizzazioni individuali":::
+  :::image type="content" source="media/insights-individual-permissions-panel.png" alt-text="Pannello delle autorizzazioni individuali.":::
 
 * Fare clic su **Salva modifiche** per salvare.

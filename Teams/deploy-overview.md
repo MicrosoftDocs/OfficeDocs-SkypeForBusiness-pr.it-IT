@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-deployteams
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 3affebfebdfb34923fbdff37a71f652077d7aa7b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: b6a8323c2d8dfd6023a9e27de9a6f0d47c87ae67
+ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596330"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "58730895"
 ---
 # <a name="microsoft-teams-deployment-overview"></a>Panoramica della distribuzione di Microsoft Teams
 
@@ -32,7 +32,7 @@ Ciao. Grazie per aver scelto Microsoft Teams. Sia che si tratti di uno studio le
 
 Poiché Teams supporta un'ampia gamma di tipi di organizzazioni e punti di partenza, esistono diverse opzioni per configurarlo. Per aiutare a trovare le informazioni necessarie, alcuni articoli sono stati suddivisi in due gruppi di destinatari: **Small Business** (meno di 50 utenti) e **Medium/Large Business** (più di 50 utenti). Quando si legge un articolo, scegliere la scheda gruppo di destinatari più adatta alla propria organizzazione. Ecco l'aspetto delle schede:
 
-:::image type="content" source="media/small-large-tabs-example.png" alt-text="Esempio che illustra le schede per gruppi di destinatari piccoli e grandi visualizzate in alcuni articoli":::
+:::image type="content" source="media/small-large-tabs-example.png" alt-text="Esempio che illustra le schede per gruppi di destinatari piccoli e grandi visualizzate in alcuni articoli.":::
 
 Di seguito è riportato un elenco di sezioni tra cui è possibile scegliere nella sezione **Guida introduttiva** e una breve descrizione di ognuna.
 
