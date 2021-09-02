@@ -14,16 +14,16 @@ ms.localizationpriority: medium
 search.appverid: MET150
 f1.keywords:
 - NOCSH
-description: Informazioni su come configurare la funzionalità di chiamata di emergenza dinamica Microsoft Calling Plans e Sistema telefonico Direct Routing.
+description: Informazioni su come configurare i Piani per chiamate Microsoft e la funzionalità Sistema telefonico chiamate di emergenza dinamiche in Routing diretto.
 ms.custom: seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 7774b6ebf062f3df9f27736b3c6cc68e4151e14b
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 6b01a3f73de3803ca428acd8cd43de8c405fc4f9
+ms.sourcegitcommit: 8dc037a3e6df50dc81f47b630c59db6b972535ff
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58584820"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58853172"
 ---
 # <a name="plan-and-configure-dynamic-emergency-calling"></a>Pianificare e configurare chiamate di emergenza dinamiche 
 
@@ -37,13 +37,13 @@ Per le chiamate di emergenza dinamiche, deve verificarsi quanto segue:
 
 1. L'amministratore di rete configura le impostazioni di rete e liS per creare una mappa della posizione di rete/emergenza.
 
-   Per il routing diretto, è necessaria una configurazione aggiuntiva per il routing delle chiamate di emergenza e, eventualmente, per la connettività dei partner. L'amministratore deve configurare la connessione a un provider ERS (Emergency Routing Service) (Stati **Uniti)** O configurare il Session Border Controller (SBC) per un'applicazione Emergency Location Identification Number (ELIN).
+   Per il routing diretto, è necessaria una configurazione aggiuntiva per il routing delle chiamate di emergenza e, eventualmente, per la connettività dei partner. L'amministratore deve configurare la connessione a un provider ERS (Emergency Routing **Service)** (Stati Uniti) O configurare il Session Border Controller (SBC) per un'applicazione Emergency Location Identification Number (ELIN).
 
-2. Durante l'avvio e periodicamente in seguito o quando viene modificata una connessione di rete, il client Teams invia una richiesta di posizione che contiene le informazioni sulla connettività di rete alle impostazioni di rete e al LIS.
+2. Durante l'avvio e periodicamente in un secondo momento o quando viene modificata una connessione di rete, il client di Teams invia una richiesta di posizione che contiene le informazioni sulla connettività di rete alle impostazioni di rete e al LIS.
 
    - Se è presente una corrispondenza del sito delle impostazioni di rete: i criteri per le chiamate di emergenza vengono restituiti al client Teams dal sito. Per altre informazioni sui criteri, vedere [Configurare i criteri di emergenza.](#configure-emergency-policies)
 
-   - Se c'è una corrispondenza LIS: una posizione di emergenza dall'elemento di rete a cui il client Teams è connesso viene restituita al client Teams locale. La corrispondenza viene eseguita nell'ordine seguente con il primo risultato corrispondente restituito:
+   - Se c'è una corrispondenza LIS: una posizione di emergenza dall'elemento di rete a cui il client Teams è connesso viene restituito al client Teams servizio. La corrispondenza viene eseguita nell'ordine seguente con il primo risultato corrispondente restituito:
        - WAP
        - Switch/porta Ethernet
        - Switch Ethernet
@@ -80,7 +80,7 @@ Attualmente sono supportati i client seguenti.  Torna spesso per vedere gli aggi
 - Teams client desktop per Microsoft Windows
 - Teams desktop per Apple macOS
 - Teams client per dispositivi mobili Apple iOS versione 1.0.92.2019121004 e App Store versione 1.0.92 e successive
-- Teams client per dispositivi mobili Android e Google Play Store versione 1416/1.0.0.2019121201 e successive
+- Teams client per dispositivi mobili Android e google play store versione 1416/1.0.0.2019121201 e successive
 - Teams telefono 1449/1.0.94.2019110802 e successive
 - Teams Rooms versione 4.4.25.0 e successive
 
@@ -88,11 +88,13 @@ Attualmente sono supportati i client seguenti.  Torna spesso per vedere gli aggi
 > I telefoni 3PIP non supportano chiamate di emergenza dinamiche. 
 
 > [!NOTE]
-> Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere [Criteri di chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 
+> Le chiamate di emergenza dinamiche, inclusa la notifica del security desk, non sono supportate nel client Teams Web. Per impedire agli utenti di usare il client Web Teams per chiamare i numeri PSTN, è possibile impostare un criterio di chiamata Teams e disattivare l'impostazione Consenti chiamate **PSTN** Web. Per altre informazioni, vedere Criteri di [chiamata in Teams](teams-calling-policy.md) e [Set-CsTeamsCallingPolicy.](/powershell/module/skype/set-csteamscallingpolicy?view=skype-ps) 
 
 > [!NOTE]
 > Le posizioni basate su subnet e WiFi sono supportate in tutti Teams client. <br>
-> Ethernet/Switch (LLDP) è supportato solo in Windows e solo in Windows versioni 8.1 e successive al momento.
+> Ethernet/Switch (LLDP) è supportato in:
+> - Windows versioni 8.1 e successive al momento.<br>
+> - Mac OS, che richiede [il software di abilitazione llDP.](https://www.microsoft.com/download/details.aspx?id=103383)
 
 ## <a name="assign-emergency-addresses"></a>Assegnare indirizzi di emergenza
 
@@ -100,19 +102,19 @@ Attualmente sono supportati i client seguenti.  Torna spesso per vedere gli aggi
 
 Per supportare l'instradamento automatico delle chiamate di emergenza negli Stati Uniti, è necessario assicurarsi che le posizioni di emergenza assegnate agli identificatori di rete includano i codici geografici associati. Gli indirizzi di emergenza senza codici geografici non possono essere assegnati agli identificatori di rete necessari per le posizioni dinamiche.
 
-Azure Mappe viene usato per i servizi basati sulla posizione.  Quando si immette un indirizzo per gli interventi di emergenza usando l'interfaccia Microsoft Teams di amministrazione di Teams, Mappe'indirizzo di Azure:
+Azure Mappe viene usato per i servizi basati sulla posizione.  Quando si immette un indirizzo per gli interventi di emergenza usando l'interfaccia di amministrazione Microsoft Teams, Teams l'indirizzo Mappe azure:
 
 - Se viene trovata una corrispondenza, i codici geografici vengono inclusi automaticamente.
 
 - Se non viene trovata una corrispondenza, sarà possibile creare manualmente un indirizzo per gli interventi di emergenza. A questo scopo, è possibile usare la funzionalità di rilascio del PIN. 
 
-Questo significa che se una posizione di emergenza esistente creata per l'assegnazione a un piano di chiamata è destinata a una posizione dinamica, è necessario ri-creare lo stesso indirizzo per includere i codici geografici. Per distinguere tra le due posizioni, è consigliabile includere una descrizione diversa. La nuova posizione per gli interventi di emergenza può essere assegnata agli utenti che hanno la posizione precedente. Una volta eseguita la migrazione completa, è possibile eliminare la posizione precedente.
+Questo significa che se una posizione di emergenza esistente creata per l'assegnazione a un piano di chiamata è destinata a una posizione dinamica, lo stesso indirizzo deve essere ri-creato per includere i codici geografici. Per distinguere tra le due posizioni, è consigliabile includere una descrizione diversa. La nuova posizione per gli interventi di emergenza può essere assegnata agli utenti che hanno la posizione precedente. Una volta eseguita la migrazione completa, è possibile eliminare la posizione precedente.
 
-È possibile aggiungere e assegnare indirizzi di emergenza nell'Microsoft Teams di amministrazione o usando PowerShell. Per altre informazioni, vedere Aggiungere una posizione per gli interventi di [emergenza per l'organizzazione](add-change-remove-emergency-location-organization.md) e Assegnare una posizione [per gli interventi di emergenza per un utente.](assign-change-emergency-location-user.md)
+È possibile aggiungere e assegnare indirizzi di emergenza nell'Microsoft Teams di amministrazione o usando PowerShell. Per altre informazioni, vedere Aggiungere una posizione per gli interventi di emergenza [per l'organizzazione](add-change-remove-emergency-location-organization.md) e Assegnare una posizione [per gli interventi di emergenza per un utente.](assign-change-emergency-location-user.md)
 
 ## <a name="configure-network-settings"></a>Configurare le impostazioni di rete
 
-Le impostazioni di rete vengono usate per determinare la posizione di un client Teams e per ottenere dinamicamente i criteri per le chiamate di emergenza e una posizione di emergenza. È possibile configurare le impostazioni di rete in base al modo in cui l'organizzazione vuole che le chiamate di emergenza funzionino.
+Le impostazioni di rete vengono usate per determinare la posizione di un client Teams e per ottenere dinamicamente criteri per le chiamate di emergenza e una posizione di emergenza. È possibile configurare le impostazioni di rete in base al modo in cui l'organizzazione vuole che le chiamate di emergenza funzionino.
 
 Le impostazioni di rete includono siti che includono una raccolta di subnet e vengono usate esclusivamente per l'assegnazione dinamica dei criteri agli utenti. Ad esempio, un criterio per le chiamate di emergenza e un criterio di routing delle chiamate di emergenza potrebbero essere assegnati al "sito Redmond" in modo che qualsiasi utente che effettua il roaming da casa o da un'altra posizione Microsoft sia configurato con numeri di emergenza, routing e desk di sicurezza specifici di Redmond.  
 
@@ -155,7 +157,7 @@ Si noti che la propagazione e la disponibilità di alcune modifiche alle imposta
 
 ## <a name="configure-location-information-service"></a>Configurare il servizio informazioni sulla posizione
 
-Un Teams di emergenza ottiene gli indirizzi di emergenza dalle posizioni associate a diversi identificatori di rete. Sono supportati sia subnet che punti di accesso wireless (WAP). L'opzione/porta Ethernet è supportata in Windows 8.1 e versioni successive al momento.
+Un Teams client ottiene gli indirizzi di emergenza dalle posizioni associate a diversi identificatori di rete. Sono supportati sia subnet che punti di accesso wireless (WAP). L'opzione/porta Ethernet è supportata in Windows 8.1 e versioni successive al momento.
 
 Per ottenere una posizione da un client, è necessario popolare il LIS con identificatori di rete (subnet, WAP, switch, porte) e posizioni di emergenza. È possibile farlo nell'interfaccia Microsoft Teams di amministrazione o usando PowerShell.
 
@@ -181,7 +183,7 @@ Usare i cmdlet seguenti per aggiungere porte, switch, subnet e WAP al lis.
 
 Usare i criteri seguenti per configurare le chiamate di emergenza. È possibile gestire questi criteri nell'interfaccia Microsoft Teams di amministrazione o usando PowerShell.
 
-- **Criteri di routing delle chiamate di emergenza:** si applica solo al routing diretto. Questo criterio configura i numeri di emergenza, le maschere per numero, se necessario, e la route PSTN per numero.  È possibile assegnare questo criterio agli utenti, ai siti di rete o a entrambi. I piani per chiamate Teams clienti sono abilitati automaticamente per le chiamate di emergenza con i numeri di emergenza del paese in base alla località di Microsoft 365 o Office 365 di utilizzo.  Per altre informazioni, vedere [Gestire i criteri di routing delle chiamate di emergenza per Routing diretto.](manage-emergency-call-routing-policies.md)
+- **Criteri di routing delle chiamate di emergenza:** si applica solo al routing diretto. Questo criterio configura i numeri di emergenza, le maschere per numero, se necessario, e la route PSTN per numero.  È possibile assegnare questo criterio agli utenti, ai siti di rete o a entrambi. I piani per chiamate Teams i clienti sono abilitati automaticamente per le chiamate di emergenza con i numeri di emergenza del paese in base alla località di Microsoft 365 o Office 365 di utilizzo.  Per altre informazioni, vedere [Gestire i criteri di routing delle chiamate di emergenza per Routing diretto.](manage-emergency-call-routing-policies.md)
 
 - **Criteri per le chiamate di emergenza:** si applica ai piani per chiamate e al routing diretto. Questo criterio configura l'esperienza di notifica del security desk quando viene effettuata una chiamata di emergenza. È possibile impostare gli utenti a cui inviare la notifica e la modalità di notifica. Ad esempio, per informare automaticamente il desk di sicurezza dell'organizzazione e fare in modo che ascoltino le chiamate di emergenza.  Questo criterio può essere assegnato a utenti o siti di rete o a entrambi. Per altre informazioni, vedere [Gestire i criteri per le chiamate](manage-emergency-calling-policies.md)di emergenza in Teams .
 

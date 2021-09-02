@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: IT_Skype16
 ms.assetid: 4b32dfba-1af6-4077-9a92-7cec8f220f20
 description: Trovare e gestire gli aggiornamenti Skype for Business Server 2015/2019 e Lync 2013 in un'unica posizione. Utilizzare i collegamenti riportati in questa pagina per visualizzare ulteriori informazioni sugli aggiornamenti e per scaricarli.
-ms.openlocfilehash: aa9ae8c2b3b28790028635a9604687995549e6eb
-ms.sourcegitcommit: 22328f851153f3768175321b8b128a672d6adc50
+ms.openlocfilehash: fcdd7212cf7a3f612434594d028b2e7be104af36
+ms.sourcegitcommit: 5a4108219dd1b77468b3ef4aff0500cd19473fa5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "58807449"
+ms.lasthandoff: 09/01/2021
+ms.locfileid: "58852044"
 ---
 # <a name="skype-for-business-server-updates"></a>Aggiornamenti di Skype for Business Server
 
@@ -32,6 +32,8 @@ KB 4470124 è la KB principale per Skype for Business Server 2019 che contiene t
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
+|Skype for Business Server 2019 cumulativo 5 |[KB 4470124 (MACP3)](https://support.microsoft.com/kb/4470124)| Marzo 2021 |
+|Skype for Business Server 2019 Aggiornamento cumulativo 4 Hotfix 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Novembre 2020 |
 |Skype for Business Server 2019 Aggiornamento cumulativo 4 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Settembre 2020 |
 |Skype for Business Server 2019 Aggiornamento cumulativo 3 Hotfix 1 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Luglio 2020 |
 |Skype for Business Server 2019 aggiornamento cumulativo 3 |[KB 4470124](https://support.microsoft.com/kb/4470124)| Marzo 2020 |
@@ -57,6 +59,7 @@ KB 4470124 è la KB principale per Skype for Business Server 2019 che contiene t
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
 |Skype for Business Server 2015 aggiornamento cumulativo 12|[KB 3061064](https://support.microsoft.com/kb/3061064)| Agosto, 2021 |
+|Skype for Business Server 2015 Aggiornamento cumulativo 11 Hotfix 2|[KB 3061064](https://support.microsoft.com/kb/3061064)| Novembre, 2020 |
 |Skype for Business Server 2015 Aggiornamento cumulativo 11 Hotfix 1|[KB 3061064](https://support.microsoft.com/kb/3061064)| Luglio 2020 |
 |Skype for Business Server 2015 aggiornamento cumulativo 11|[KB 3061064](https://support.microsoft.com/kb/3061064)| 13 maggio 2020 |
 |Skype for Business Server 2015 Aggiornamento cumulativo 10 Hotfix 1|[KB 3061064](https://support.microsoft.com/kb/3061064)| Agosto 2019 |
@@ -174,7 +177,7 @@ Nome del Pacchetto |Data di rilascio|
 
 ## <a name="lync-server-2010-update-history"></a>Cronologia degli aggiornamenti di Lync Server 2010
 
-[Kb 2493736](https://support.microsoft.com/kb/2493736) contiene tutti gli aggiornamenti cumulativi rilasciati.
+[Kb 2493736](https://support.microsoft.com/kb/2493736) contiene tutti gli aggiornamenti cumulativi che sono stati rilasciati.
 
 |Nome pacchetto|Numero KB|Data di rilascio|
 |:--- |:--- |:--- |
@@ -227,7 +230,7 @@ Nome del Pacchetto |Data di rilascio|
 | Strumento di pianificazione di Lync Server 2010 |Febbraio 2011 |
 | Strumenti del Resource Kit di Lync Server 2010|maggio 2012 |
 | Lync Server 2010 Stress and Performance Tool |Marzo 2011 |
-|[Stencil di Lync Server 2010 Visio](https://www.microsoft.com/downloads/details.aspx?FamilyID=65B5A396-2C87-445D-BE23-D324727D19CB)|Febbraio 2011 |
+|[Stencil Visio Lync Server 2010](https://www.microsoft.com/downloads/details.aspx?FamilyID=65B5A396-2C87-445D-BE23-D324727D19CB)|Febbraio 2011 |
 | Utilità di pianificazione Web di Lync Server 2010 |Aprile 2011 |
 
 ### <a name="lync-2010-downloadable-documentation"></a>Documentazione scaricabile per Lync 2010
