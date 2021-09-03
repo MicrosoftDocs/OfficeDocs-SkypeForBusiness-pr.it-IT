@@ -15,12 +15,12 @@ ms.localizationpriority: medium
 f1.keywords:
 - NOCSH
 description: Scopri quali dispositivi e periferiche USB (ad esempio cuffie, vivavoci, webcam e monitor) sono certificati per Microsoft Teams.
-ms.openlocfilehash: 3512ea4dd830a3fcd8469c86061c2b1d641b96a6
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 747884e7d159753518ad3424c2d3d1b69728d088
+ms.sourcegitcommit: 70c07a6b1be81681eec32a89872e2218d70c514d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58624668"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866378"
 ---
 # <a name="usb-audio-and-video-devices-certified-for-microsoft-teams"></a>Dispositivi audio e video USB certificati per Microsoft Teams
 
@@ -53,13 +53,13 @@ Sfogliare [i dispositivi certificati per Microsoft Teams](https://products.offic
 
 - Pulsante Teams e indicatore LED dedicato.
 - Notifica utente di eventi e avvisi dal client Teams (ad esempio, avvio della riunione, segreteria telefonica o chiamata persa).
-- Possibilità di attivare il Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
+- Possibilità di attivare il client Teams o rispondere alla notifica con una pressione del pulsante , ad esempio per partecipare a una riunione.
 - Certificazione progettata per l'estendibilità (nuove funzionalità del dispositivo/client da distribuire tramite aggiornamento firmware).
 
 ### <a name="core-certification-benefits"></a>Vantaggi principali della certificazione
 
 - Selezione automatica del dispositivo audio predefinito e definizione della priorità se sono presenti più periferiche audio.
-- I dispositivi si registrano automaticamente Teams client e sono pronti per l'uso.
+- I dispositivi si registrano automaticamente con Teams client e sono pronti per l'uso.
 - I dispositivi audio ,ad esempio cuffie e vivavoci, offrono:
   - Controllo delle chiamate di base quando viene usato con un PC o un dispositivo Mac. I controlli di base includono answer/hang-up, mute/unmute e controllo del volume.
   - Audio a banda larga senza eco, distorsione o problemi eccessivi. L'annullamento dell'eco è supportato anche su tutti i dispositivi.
@@ -74,10 +74,11 @@ Se si è un produttore e si vuole partecipare al programma di certificazione, ve
 
 ## <a name="certified-devices"></a>Dispositivi certificati
 
-*Tabella aggiornata ad agosto 2021*
+*Tabella aggiornata a settembre 2021*
 
 | Produttore        | Modello                                                     | Qualificato      | Programma certificato                                      |
 |:--------------------|:----------------------------------------------------------|:---------------|:-------------------------------------------------------|
+|AudioCodes           |RXVCam10                                                   |8/26/2021       |Certificato per Microsoft Teams                           |
 |Poly                 |Voyager 4320                                               |8/6/2021        |Certificato per Microsoft Teams                           |
 |Poly                 |Voyager 4310                                               |8/6/2021        |Certificato per Microsoft Teams                           |
 |EPOS/Sennheiser      |ADAPT 160T ANC                                             |6/24/2021       |Certificato per Microsoft Teams                           |

@@ -9,15 +9,15 @@ audience: admin
 ms.service: msteams
 ms.collection:
 - M365-collaboration
-description: Informazioni su come passare da Skype for Business Online Connector al modulo di PowerShell Teams per gestire Teams.
+description: Informazioni su come passare da Skype for Business Online Connector al modulo Teams PowerShell per gestire le Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 9dd03b414eba2ebc10dcfdbbb4e0ea2712fff73ca2cb0eb643aa132936ab1470
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: cdd6460e6a17a15193104a0871a57fa6dbff8105
+ms.sourcegitcommit: 70c07a6b1be81681eec32a89872e2218d70c514d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54299006"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58866358"
 ---
 # <a name="migrating-from-skype-for-business-online-connector-to-the-teams-powershell-module"></a>Migrazione da Skype for Business Online Connector al modulo Teams PowerShell
 
@@ -28,16 +28,13 @@ Teams Il modulo di PowerShell offre un set completo di cmdlet per la gestione Te
 >
 > Teams Il modulo di PowerShell usa l'autenticazione moderna, ma il client Windows gestione remota (WinRM) sottostante deve essere configurato per consentire l'autenticazione di base. Vedere [Scaricare e installare Windows PowerShell](/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1) per istruzioni su come abilitare Gestione remota Windows per l'autenticazione di base.
 
-> [!WARNING]
-> Skype for Business Le connessioni Online Connector verranno rifiutate a partire dal 17 maggio 2021. Contattare il supporto tecnico Microsoft per assistenza e supporto per la migrazione a Teams modulo di PowerShell.
-
 ## <a name="how-to-migrate"></a>Come eseguire la migrazione
 
-La migrazione dall'uso di Skype for Business Online Connector Teams modulo di PowerShell è semplice e semplice. La procedura seguente spiega come eseguire questa operazione.
+La migrazione dall'uso Skype for Business Online Connector Teams modulo di PowerShell è semplice e semplice. La procedura seguente spiega come eseguire questa operazione.
 
 1. Installare il modulo di PowerShell Teams più recente. Per la procedura, vedere [Installare Microsoft Teams PowerShell.](teams-powershell-install.md)
 
-2. Disinstallare Skype For Business Online Connector. A questo scopo, nel Pannello di controllo passare a Programmi e funzionalità **,** selezionare Skype for Business **Online, Windows PowerShell modulo** e quindi selezionare **Disinstalla**.
+2. Disinstallare Skype For Business Online Connector. A questo scopo, nel Pannello di controllo passare a Programmi e **funzionalità,** selezionare Skype for Business **Online, Windows PowerShell modulo** e quindi selezionare **Disinstalla**.
 
 3. Negli script di PowerShell modificare il nome del modulo a cui si fa riferimento ```Import-Module``` da
 
@@ -45,7 +42,7 @@ La migrazione dall'uso di Skype for Business Online Connector Teams modulo di Po
 
     Ad esempio, passare `Import-Module -Name SkypeOnlineConnector` a `Import-Module -Name MicrosoftTeams` .
 
-4. Quando si Teams modulo di PowerShell 2.0 o versione successiva, aggiornare gli script che fanno riferimento `New-CsOnlineSession` a `Connect-MicrosoftTeams` . `Import-PsSession`non è più necessario stabilire una sessione remota di PowerShell Skype for Business online, perché questa operazione viene eseguita implicitamente quando si usa `Connect-MicrosoftTeams` .
+4. Quando si Teams modulo di PowerShell 2.0 o versione successiva, aggiornare gli script che fanno riferimento `New-CsOnlineSession` a `Connect-MicrosoftTeams` . `Import-PsSession`non è più necessario stabilire una sessione remota di PowerShell Skype for Business online come viene eseguita in modo implicito quando si usa `Connect-MicrosoftTeams` .
 
     ```powershell
        # When using the Skype for Business online connector
@@ -76,20 +73,6 @@ La migrazione dall'uso di Skype for Business Online Connector Teams modulo di Po
          Disconnect-MicrosoftTeams
     ```
 
-## <a name="online-support"></a>Supporto online
-
-È possibile risparmiare tempo avviando la richiesta di servizio online. Microsoft ti aiuterà a trovare una soluzione o a connetterti al supporto tecnico.
-
-1.  Passare all'interfaccia di amministrazione in [https://admin.microsoft.com](https://admin.microsoft.com) . Se viene visualizzato un messaggio che indica che non si è autorizzati ad accedere a questa pagina o a eseguire questa azione, non si è amministratori. Who autorizzazioni di amministratore nella mia azienda?
-
-2.  Selezionare la casella **di controllo Serve assistenza?** .
-
-3.  Nella finestra **Serve aiuto?** , dicci per cosa hai bisogno di aiuto e quindi premi INVIO.
-
-4.  Se i risultati non sono utili, selezionare **Contatta il supporto.**
-
-5.  Immettere una descrizione del problema, confermare il numero di contatto e l'indirizzo di posta elettronica, selezionare il metodo di contatto preferito e quindi **selezionare Contattami**. Il tempo di attesa previsto è indicato nel campo Serve aiuto? riquadro.
-
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Installare Microsoft Teams PowerShell](teams-powershell-install.md)
@@ -98,6 +81,6 @@ La migrazione dall'uso di Skype for Business Online Connector Teams modulo di Po
 
 [Teams Note sulla versione di PowerShell](teams-powershell-release-notes.md)
 
-[Microsoft Teams di cmdlet](/powershell/teams/?view=teams-ps)
+[Microsoft Teams cmdlet](/powershell/teams/?view=teams-ps)
 
 [Skype for Business cmdlet](/powershell/skype/intro?view=skype-ps)
