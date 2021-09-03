@@ -16,12 +16,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: 314e393b3faf0d5b74d25f3a545277dbba64c566
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: b69f885eee0b96b87b5f22d04abbd16d0389b904
+ms.sourcegitcommit: e5e6c6c99296db8005451bcb08d727469f0ac984
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730685"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "58864196"
 ---
 # <a name="manage-user-access-to-education-insights"></a>Gestire l'accesso degli utenti a Dati analitici per l'istruzione
 
@@ -64,7 +64,7 @@ Se si utilizza il [formato di file SDS V2.1](/schooldatasync/sds-v2.1-csv-file-f
   
   :::image type="content" source="media/insights-role-based-permissions.png" alt-text="Autorizzazioni basate sui ruoli.":::
   
-  Se è presente un ruolo a più di un livello dell'organizzazione, tale ruolo viene visualizzato più volte, una per ogni livello. Nello screenshot, sono presenti presidi sia a livello scolastico che distrettuale, quindi ci sono due righe per "preside".
+  Se è presente un ruolo a più di un livello dell'organizzazione, tale ruolo viene visualizzato più volte, una per ogni livello. Nello screenshot, sono presenti presidi sia a livello scolastico che distrettuale, quindi ci sono tre righe per "preside".
   
 * Per ogni ruolo, fare clic sull'icona a forma di matita per selezionare il livello di autorizzazione. L'impostazione predefinita è che il ruolo non dispone dell'autorizzazione per visualizzare Insights.
 * Selezionare il livello di autorizzazione **Visualizza i dati per l'organizzazione** o **Nessuno**.
