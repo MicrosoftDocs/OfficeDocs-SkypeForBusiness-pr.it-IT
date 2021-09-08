@@ -23,12 +23,12 @@ appliesto:
 - Microsoft Teams
 ms.reviewer: ansantam
 description: Usare Microsoft Teams per configurare il sistema di visite virtuali
-ms.openlocfilehash: 46f29649665521b2bc59c2a4a73db617398bcf37
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: a5b04befbd3c4cf5d1730432a2c5dcad97e63675
+ms.sourcegitcommit: 1c2364fbefd95151f0847a35e8bc7c4c1b3892f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726635"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58935852"
 ---
 # <a name="virtual-visits-with-teams---integration-into-ehr"></a>Visite virtuali con Teams - Integrazione in CCE
 
@@ -79,7 +79,7 @@ Per la configurazione del connettore è necessario:
 
 ### <a name="launch-the-ehr-connector-configuration-portal"></a>[Avviare il portale di configurazione del connettore EHR](#launch-the-ehr-connector-configuration-portal)
 
-La configurazione dell'organizzazione sanitaria per l'avvio di visite virtuali con Microsoft Teams inizia avviando il portale di configurazione del connettore EHR. Configurare una o più organizzazioni per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Testare l'integrazione dall'ambiente di test di Epic prima di passare alla produzione.
+La configurazione dell'organizzazione sanitaria per l'avvio di visite virtuali con Microsoft Teams inizia con l'avvio del portale di configurazione del connettore EHR. Configurare una o più organizzazioni per testare l'integrazione. Configurare l'URL di test e produzione nel portale di configurazione. Testare l'integrazione dall'ambiente di test di Epic prima di passare alla produzione.
   
 - URL di configurazione del connettore CCE: [https://ehrconnector.teams.microsoft.com](https://ehrconnector.teams.microsoft.com)
 
@@ -156,7 +156,7 @@ Il connettore supporta la partecipazione di pazienti alle visite virtuali attrav
 
 Caratteristiche principali dell'esperienza del paziente:
 
-- I pazienti possono partecipare a visite virtuali da Web browser moderni su PC desktop e dispositivi mobili senza l'installazione di app.
+- I pazienti possono partecipare a visite virtuali da web browser moderni su desktop [e dispositivi mobili senza l'installazione di app.](../mobile-browser-join.md)
 
 - I pazienti possono partecipare a visite virtuali con un solo clic e non è necessario alcun altro account o accesso.
 

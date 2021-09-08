@@ -1,9 +1,9 @@
 ---
 title: Etichette di riservatezza per Microsoft Teams
-ms.author: mikeplum
+ms.author: cabailey
 author: cabailey
 manager: laurawi
-ms.reviewer: abgupta
+ms.reviewer: shubjain
 ms.topic: article
 ms.tgt.pltfrm: cloud
 ms.service: msteams
@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare le etichette di riservatezza per proteggere i team in Microsoft Teams.
-ms.openlocfilehash: e4f6f3b790bb84b4d628760548b6ab1115f6326d
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 5337f623a8535a840f1eead45c53506fb8f3fee7
+ms.sourcegitcommit: 1c2364fbefd95151f0847a35e8bc7c4c1b3892f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58729595"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58935842"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di riservatezza per Microsoft Teams
 
@@ -90,7 +90,7 @@ Prima di usare le etichette di riservatezza per Teams, tenere presenti le limita
 
 - **Le etichette di riservatezza non sono supportate dalle API Teams Graph, dai cmdlet di PowerShell e dai modelli**
     
-    Gli utenti non saranno in grado di specificare le etichette di riservatezza durante la creazione di team direttamente tramite api Teams Graph, cmdlet di PowerShell Teams e modelli di Teams. Tuttavia, i Graph moderni e i cmdlet di PowerShell consentono la creazione di gruppi con etichette. In questo modo gli utenti possono prima creare gruppi con etichette usando le API Graph o i cmdlet di PowerShell e quindi convertire questi gruppi in Teams.
+    Gli utenti non potranno specificare le etichette di riservatezza durante la creazione di team direttamente tramite api Teams Graph, cmdlet di PowerShell Teams e modelli di Teams. Tuttavia, i Graph moderni e i cmdlet di PowerShell consentono la creazione di gruppi con etichette. In questo modo gli utenti possono prima creare gruppi con etichette usando le API Graph o i cmdlet di PowerShell e quindi convertire questi gruppi in Teams.
 
 - **Supporto per i canali privati**
     
@@ -100,6 +100,6 @@ Prima di usare le etichette di riservatezza per Teams, tenere presenti le limita
 
 ## <a name="how-to-create-and-configure-sensitivity-labels-for-teams"></a>Come creare e configurare etichette di riservatezza per Teams
 
-Seguire le istruzioni della documentazione Microsoft 365 per creare e configurare etichette di riservatezza per Teams: 
+Seguire le istruzioni della documentazione Microsoft 365 per creare e configurare le etichette di riservatezza per Teams: 
 
-- Usare le etichette di riservatezza per proteggere [il contenuto in Microsoft Teams, Microsoft 365 gruppi e SharePoint siti.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, Microsoft 365 gruppi e SharePoint siti.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)

@@ -21,18 +21,18 @@ ms.custom:
 - dn947482
 - seo-marvel-apr2020
 description: Scopri quali telefoni da tavolo e conferenza sono certificati Microsoft Teams per produrre i risultati migliori.
-ms.openlocfilehash: 56d08bff329a92b5bf8ac4086e9515522140fa9e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: f4049c2b969906e149a2f1a6d7ea5249eb0ed2e9
+ms.sourcegitcommit: 1c2364fbefd95151f0847a35e8bc7c4c1b3892f5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589740"
+ms.lasthandoff: 09/08/2021
+ms.locfileid: "58935832"
 ---
 # <a name="microsoft-teams-certified-devices"></a>Microsoft Teams dispositivi certificati
 
 I Microsoft Teams di certificazione assicurano che i clienti che usano telefoni da tavolo certificati e telefoni da conferenza sperimentino un'esperienza di audiochiamate e riunioni di alta qualità.
 
-Microsoft Teams I programmi di certificazione assicurano una barra di qualità superiore con obiettivi di prestazioni superiori e metriche sulla qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e stanno qualificando i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno anche lavorando per fornire supporto per il servizio di Skype for Business sullo stesso hardware dei telefoni Teams telefoni. I vantaggi di Microsoft Teams dispositivi certificati includono:
+Microsoft Teams I programmi di certificazione assicurano una barra di qualità superiore con obiettivi di prestazioni superiori e metriche sulla qualità audio. I partner stanno lavorando attivamente per soddisfare questa barra superiore e stanno qualificando i dispositivi in base ai requisiti di certificazione. Alcuni dei nostri partner stanno anche lavorando per fornire supporto per il servizio Skype for Business sullo stesso hardware dei telefoni Teams telefoni. I vantaggi Microsoft Teams dispositivi certificati includono:
 
 - Esperienza Teams nativa con l'integrazione dei pulsanti hardware e le notifiche LED
 - Integrazione del calendario e partecipazione a una riunione con un solo tocco
@@ -40,7 +40,7 @@ Microsoft Teams I programmi di certificazione assicurano una barra di qualità s
 
 ## <a name="currently-certified-teams-phones"></a>Telefoni Teams certificati
 
-I dispositivi seguenti sono certificati nel programma di certificazione Microsoft Teams telefoni cellulari:
+I dispositivi seguenti sono certificati nel programma di certificazione Microsoft Teams telefoni:
 
 |Modello di dispositivo                         | Versione firmware                                                                                                                                                                                                                           | Data di rilascio
 |:---------------------------------------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------|
@@ -54,22 +54,17 @@ I dispositivi seguenti sono certificati nel programma di certificazione Microsof
 | AudioCodes C450HD                      | C450HD_TEAMS_0,225                                       | Marzo 2019                   |
 | AudioCodes C448HD (solo modalità CAP)      | C450HD_TEAMS_0,225                                       | Marzo 2019                   |
 | Crestron UC-2                          |1.0.1.46                                                  | Luglio 2020                    |
-| Crestron M100                          | Questo prodotto è stato sospeso. Per altre informazioni, visitare [Crestron M100](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Tabletop-Conferencing-Systems/UC-M100-T) sul sito Web di Crestron. | Non più in produzione (11/5/2020) |
-| Crestron Flex UC-P100-T & UC-P110-T    | Questo prodotto è stato sospeso. Per altre informazioni, visitare il Telefono [UC](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Accessories/UC-PHONE-T-PLUS) sul sito Web di Crestron.                  | Non più in produzione (11/5/2020) |
-| Visualizzazione ThinkSmart di Lenovo                 | CD-18781Y.200410.067                                                                                                                                                                                                                       | Aprile 2020                   |
-| Poly Trio C60, Trio C60 NR, Trio C60 ND | 5.9.3.6155                                                                                                                                                                                                                                 | Aprile 2020                   |
-| Poly CCX400                            | 1.0.0.0200                                                                                                                                                                                                                                 | Gennaio 2020                 |
-| Poly CCX600                            | 5.9.12.1122                                                                                                                                                                                                                                | Gennaio 2020                 |
-| Poly CCX500                            | 5.9.12.1122                                                                                                                                                                                                                                | Dicembre 2019                |
-| Poly Trio 8500/8800 (solo modalità condivisa) | 5.9.0.10869                                                                                                                                                                                                                                | Giugno 2019                    |
+| Visualizzazione ThinkSmart di Lenovo                 | CD-18781Y.200410.067                                     | Aprile 2020                   |
+| Poly Trio C60, Trio C60 NR, Trio C60 ND | 5.9.3.6155                                              | Aprile 2020                   |
+| Poly CCX400                            | 1.0.0.0200                                               | Gennaio 2020                 |
+| Poly CCX600                            | 5.9.12.1122                                              | Gennaio 2020                 |
+| Poly CCX500                            | 5.9.12.1122                                              | Dicembre 2019                |                                                                                                                                                           
 | Yealink EXP50 supportato in T56, T58, MP56, MP58, VP59| Per ogni modello di dispositivo supportato, vedere aggiornare #7 firmware | Gennaio 2021 |
 | Yealink MP58 | 122.15.0.27| Dicembre 2020 |
 | Yealink MP54 | 122.15.0.27| Novembre 2020 |
 | Yealink MP56 | 122.15.0.6 | Marzo 2020    |
 | Yealink VP59 | 91.15.0.16 | Giugno 2019     |
 | Yealink T55  | 58.15.0.36 | Maggio 2019      |
-| Yealink CP 960| 73.15.0.20 | Dicembre 2018|
-| Yealink T58 & serie T56 | 58.15.0.20 | Dicembre 2018 |
 
 ## <a name="currently-certified-teams-rooms-on-android"></a>Attualmente certificato Teams Rooms su Android
 
@@ -90,7 +85,7 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams Rooms di certificaz
 | Poly TC8                | 3.3.2.210441     | Marzo 2021    | Compatibile con Poly Studio X30 e Poly Studio X50 |
 | Yealink VC210           | 118.15.0.14      | Febbraio 2020 | Focus room(3m x 3m) </br> Sala riunioni di piccole dimensioni(4,5 m x 4,5 m) |
 
-## <a name="currently-certified-teams-displays"></a>Display Teams certificati
+## <a name="currently-certified-teams-displays"></a>Schermi Teams certificati
 
 I dispositivi seguenti sono certificati nell'Microsoft Teams visualizza il programma di certificazione Android:
 
@@ -99,7 +94,7 @@ I dispositivi seguenti sono certificati nell'Microsoft Teams visualizza il progr
 |Visualizzazione ThinkSmart di Lenovo|CD-18781Y.201006.099|Ottobre 2020 |
 
 ## <a name="currently-certified-teams-panels"></a>Pannelli Teams certificati
-I dispositivi seguenti sono certificati nel Microsoft Teams del programma di certificazione:
+I dispositivi seguenti sono certificati nel Microsoft Teams di certificazione dei pannelli di controllo:
 
 | Modello di dispositivo| Versione firmware | Data di rilascio  |                                         
 |:------------------------|:-----------------|:--------------|
@@ -109,7 +104,7 @@ I dispositivi seguenti sono certificati nel Microsoft Teams del programma di cer
 
 ### <a name="product-release-information-for-teams-phones"></a>Informazioni sulla versione del prodotto per Teams telefoni
 
-Di seguito sono riportate le versioni più Teams dell'app per telefono e del firmware.
+Di seguito sono riportate le versioni più recenti Teams dell'app per telefono e del firmware.
 
 #### <a name="app-versions"></a>Versioni delle app
 
@@ -117,13 +112,13 @@ Di seguito sono riportate le versioni più Teams dell'app per telefono e del fir
 |:----------------|:--------------|:----------------------------|:-----------------------|:--------------------|
 | Aggiornamento #2A 2021 | 10 giugno 2021  |1449/1.0.94.2021052803|  5.0.5088.0 |  1.0.0.202103160138.product (256) |
 | Aggiornamento #2 2021  | 8 giugno 2021  |1449/1.0.94.2021051303|  5.0.5088.0 |  1.0.0.202103160138.product (256) |
-| Aggiornamento 2021 #1A | 5 aprile 2021  |1449/1.0.94.2021033002|  5.0.5045.0 |  1.0.0.202101280722.product (253) |
+| Aggiornamento #1A 2021 | 5 aprile 2021  |1449/1.0.94.2021033002|  5.0.5045.0 |  1.0.0.202101280722.product (253) |
 | Aggiornamento #1 2021  | 26 marzo 2021  |1449/1.0.94.2021022403 |  5.0.5045.0 |  1.0.0.202101280722.product (253) |
 | Aggiornamento 2020 #7  | 8 dicembre 2020  |1449/1.0.94.2020111101 | 5.0.4927.0            | 1.0.0.202010121132.product (223) |
 | Aggiornamento #6  | 12 ottobre 2020  |1449/1.0.94.2020091801     | 5.0.4912.0             | 1.0.0.202006290446.product(216) |
-| Aggiornamento 2020 #5  | 31 agosto 2020 | 1449/1.0.94.2020071702    | 5.0.4867.0             | 1.0.0.202006290446.product(216) |
+| Aggiornamento #5 2020  | 31 agosto 2020 | 1449/1.0.94.2020071702    | 5.0.4867.0             | 1.0.0.202006290446.product(216) |
 | Aggiornamento 2020 #4  | 30 giugno 2020 | 1449/1.0.94.2020051601      | 5.0.4771.0             | 1.0.0.202005060552  |
-| Aggiornamento 2020 #3  | 13 maggio 2020  | 1449/1.0.94.2020040801      | 5.0.4715.0             | 1.210               |
+| Aggiornamento #3 2020  | 13 maggio 2020  | 1449/1.0.94.2020040801      | 5.0.4715.0             | 1.210               |
 
 #### <a name="firmware-versions"></a>Versioni firmware
 
@@ -131,14 +126,14 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo        | Versione firmware     | Rilascio del prodotto incluso  |
 |:--------------------|:---------------------|:-------------------------|
-| Poly Trio C60   | 7.0.3.0517  | Aggiornamento 2021 #2                        |
-| Poly CCX400/CCX500/CCX600   | 7.0.3.0515 | Aggiornamento 2021 #2                     |
-| Codici audio C448HD/C450HD/C470HD   | 1.10.143  | Aggiornamento 2021 #2           |
-| Yealink T55/T56/T58   | 58.15.0.131  | Aggiornamento 2021 #2                       |
-| Yealink VP59   | 91.15.0.63  | Aggiornamento 2021 #2                               |
-| Yealink CP960  |73.15.0.126  | Aggiornamento 2021 #2                               |
-| Yealink MP56/MP54/MP58  |122.15.0.44 | Aggiornamento 2021 #2                       |
-| Crestron UC-2  |1.0.3.66 | Aggiornamento 2021 #2 |
+| Poly Trio C60   | 7.0.3.0517  | Aggiornamento #2 2021                        |
+| Poly CCX400/CCX500/CCX600   | 7.0.3.0515 | Aggiornamento #2 2021                     |
+| Codici audio C448HD/C450HD/C470HD   | 1.10.143  | Aggiornamento #2 2021           |
+| Yealink T55/T56/T58   | 58.15.0.131  | Aggiornamento #2 2021                       |
+| Yealink VP59   | 91.15.0.63  | Aggiornamento #2 2021                               |
+| Yealink CP960  |73.15.0.126  | Aggiornamento #2 2021                               |
+| Yealink MP56/MP54/MP58  |122.15.0.44 | Aggiornamento #2 2021                       |
+| Crestron UC-2  |1.0.3.66 | Aggiornamento #2 2021 |
 | Poly Trio C60   | 7.0.2.1071  | Aggiornamento #1 2021                        |
 | Poly CCX400/CCX500/CCX600   | 7.0.2.1072  | Aggiornamento #1 2021                 |
 | Codici audio C448HD/C450HD/C470HD   | 1.10.120  | Aggiornamento #1 2021       |
@@ -159,23 +154,23 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 | Yealink VP59        | 91.15.0.54         | Aggiornamento 2020 #7           |
 | Yealink CP960       | 73.15.0.115      | Aggiornamento 2020 #7           |
 
-Per [informazioni sulle funzionalità supportate da](phones-for-teams.md) questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
+Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
 
 Vedere [Microsoft Teams display](teams-displays.md).
 
-### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto Teams Rooms su Android
+### <a name="product-release-information-for-teams-rooms-on-android"></a>Informazioni sulla versione del prodotto per Teams Rooms su Android
 
-Di seguito sono riportate le versioni più Teams Rooms versioni dell'app e del firmware Android.
+Di seguito sono riportate le versioni più Teams Rooms versioni dell'app e del firmware per Android.
 
 #### <a name="app-versions"></a>Versioni delle app
 
-| Rilascio del prodotto| Data di rilascio | Microsoft Teams'app | Portale aziendale versione | Versione dell'agente di amministrazione |
+| Rilascio del prodotto| Data di rilascio | Microsoft Teams dell'app | Portale aziendale versione | Versione dell'agente di amministrazione |
 |:----------------|:-------------|:----------------------------|:-----------------------|:--------------------|
-| Aggiornamento 2021 #2A | 15 luglio 2021  |1449/1.0.96.2021070803|  5.0.5088.0 |   1.0.0.202104280345.product version code: 262 |
-| Aggiornamento 2021 #2 | 28 giugno 2021  |1449/1.0.96.2021051904|  5.0.5088.0 |   1.0.0.202104280345.product version code: 262 |
+| Aggiornamento #2A 2021 | 15 luglio 2021  |1449/1.0.96.2021070803|  5.0.5088.0 |   1.0.0.202104280345.product version code: 262 |
+| Aggiornamento #2 2021 | 28 giugno 2021  |1449/1.0.96.2021051904|  5.0.5088.0 |   1.0.0.202104280345.product version code: 262 |
 | Aggiornamento 2021 #1A  |12 maggio 2021  |1449/1.0.96.2021042903 |5.0.4927.0     |1.0.0.20201012132.product version code: 223 |
 | Aggiornamento #1 2021  |5 aprile 2021  |1449/1.0.96.2021032002  |5.0.4927.0     |1.0.0.20201012132.product version code: 223 |
-| Aggiornamento 2020 #3  |24 novembre 2020  |1449/1.0.94.2020102101  |5.0.4927.0     |1.0.0.202006290446.product version code: 216 |
+| Aggiornamento #3 2020  |24 novembre 2020  |1449/1.0.94.2020102101  |5.0.4927.0     |1.0.0.202006290446.product version code: 216 |
 | Aggiornamento 2020 #2  | 24 agosto 2020| 1449/1.0.94.2020062501    | 5.0.4771.0    | 1.0.0.202005060552.product version code: 212|
 | Aggiornamento 2020 #1  | 13 maggio 2020 | .040901                     | .4715                  | .210                |
 
@@ -185,16 +180,16 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 | Modello di dispositivo  | Versione firmware | Rilascio del prodotto incluso |
 |:--------------|:-----------------|:-------------------------|
-| Poly Studio X30 | 3.6.0.350035          | Aggiornamento 2021 #2A    |
-| Poly Studio X50 | 3.6.0.350035        | Aggiornamento 2021 #2A    |
-| Poly TC8 | 3.6.0.210534                 | Aggiornamento 2021 #2A    |
-| EPOS EXPAND Vision 3T |1.2.2.21182.10   | Aggiornamento 2021 #2 |
-| AudioCodes RXV80 |1.13.361   | Aggiornamento 2021 #2 |
-| Yealink VC210 |118.15.0.54   | Aggiornamento 2021 #2    |
-| Yealink MeetingBar A20 | 133.15.0.60     | Aggiornamento 2021 #2    |
-| Yealink MeetingBar A30 | 133.15.0.60    | Aggiornamento 2021 #2    |
-| Yealink CTP18 | 137.15.0.37    | Aggiornamento 2021 #2    |
-| Poly Studio X30 | 3.5.0.344025          | Aggiornamento 2021 #2    |
+| Poly Studio X30 | 3.6.0.350035          | Aggiornamento #2A 2021    |
+| Poly Studio X50 | 3.6.0.350035        | Aggiornamento #2A 2021    |
+| Poly TC8 | 3.6.0.210534                 | Aggiornamento #2A 2021    |
+| EPOS EXPAND Vision 3T |1.2.2.21182.10   | Aggiornamento #2 2021 |
+| AudioCodes RXV80 |1.13.361   | Aggiornamento #2 2021 |
+| Yealink VC210 |118.15.0.54   | Aggiornamento #2 2021    |
+| Yealink MeetingBar A20 | 133.15.0.60     | Aggiornamento #2 2021    |
+| Yealink MeetingBar A30 | 133.15.0.60    | Aggiornamento #2 2021    |
+| Yealink CTP18 | 137.15.0.37    | Aggiornamento #2 2021    |
+| Poly Studio X30 | 3.5.0.344025          | Aggiornamento #2 2021    |
 | Poly Studio X50 | 3.5.0.344025        | Aggiornamento #2 2021    |
 | Poly TC8 | 3.5.0.210489                 | Aggiornamento #2 2021    |
 | Poly Studio X30 | 3.3.2.286154          | Aggiornamento #1 2021    |
@@ -252,7 +247,7 @@ Quando si installa una nuova versione del firmware nel dispositivo, è possibile
 
 ## <a name="more-resources"></a>Altre risorse
 
-Per informazioni sulle funzionalità supportate da questi [dispositivi,](phones-for-teams.md) vedere Microsoft Teams set di funzionalità dei telefoni.
+Per [informazioni sulle funzionalità supportate](phones-for-teams.md) da questi dispositivi, vedere Microsoft Teams set di funzionalità dei telefoni.
 
 Vedere [Trovare la versione firmware in un dispositivo mobile](phones-for-teams.md) per determinare la versione del firmware del dispositivo nel dispositivo mobile.
 
