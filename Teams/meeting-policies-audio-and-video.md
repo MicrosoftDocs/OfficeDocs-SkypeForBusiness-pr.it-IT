@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
-ms.openlocfilehash: 4f8de802fd2ddf90555a34ac0b8d66d2d7021f79
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 9b7c2fd2ac98237383b8aaa1dff8fa764c6df2be
+ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58726565"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973034"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri per le riunioni per & video
 
@@ -33,40 +33,12 @@ ms.locfileid: "58726565"
 
 Questo articolo descrive le impostazioni dei criteri di riunione specifiche per audio e video. Di seguito sono riportate le informazioni seguenti:
 
-- [Consenti la trascrizione](#allow-transcription)
-- [Consenti registrazione cloud](#allow-cloud-recording)
 - [Modalità per audio IP](#mode-for-ip-audio)
 - [Modalità per video IP](#mode-for-ip-video)
 - [Consenti video IP](#allow-ip-video)
 - [Velocità in bit supporto (Kbs)](#media-bit-rate-kbs)
 - [Modalità filtri video](#video-filters-mode)
 - [Consenti impostazioni di sfondo personalizzate](#allow-custom-background-settings)
-
-### <a name="allow-transcription"></a>Consenti la trascrizione
-
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla la disponibilità di didascalie e funzionalità di trascrizione durante la riproduzione di registrazioni delle riunioni. Se si disattiva questa opzione, durante la riproduzione di una registrazione di riunione non saranno disponibili le opzioni **Cerca** e **Cc**. La persona che ha avviato la registrazione ha bisogno che questa impostazione sia attivata perché la registrazione includa anche una trascrizione.
-
-Si noti che la trascrizione per le riunioni registrate è attualmente supportata solo per gli utenti che hanno la lingua di Teams impostata sull'inglese e quando durante la riunione si usa l'inglese.
-
-### <a name="allow-cloud-recording"></a>Consenti registrazione cloud
-
-Questa è una combinazione di criterio per organizzatore e criterio per utente. Questa impostazione controlla se è possibile registrare le riunioni di quest'utente. La registrazione può essere avviata dall'organizzatore della riunione o da un altro partecipante alla riunione, se l'impostazione dei criteri è attivata per il partecipante e se si tratta di un utente autenticato della stessa organizzazione.
-
-Le persone esterne all'organizzazione, ad esempio gli utenti federati e anonimi, non possono avviare la registrazione. Gli utenti guest non possono avviare o interrompere la registrazione.
-
-![Screenshot che mostra le opzioni di registrazione.](media/meeting-policies-recording.png)
-
-Osserviamo l'esempio seguente.
-
-|Utente |Criterio di riunione  |Consenti registrazione cloud |
-|---------|---------|---------|
-|Daniela | Globale   | Disattivato |
-|Amanda | CriterioRiunionePosizione1 | Attivato|
-|Luca (utente esterno) | Non applicabile | Non applicabile|
-
-Non è possibile registrare le riunioni organizzate da Daniela e Amanda che ha l'impostazione del criterio attivata, non può registrare le riunioni organizzate da Daniela. Le riunioni organizzate da Amanda possono essere registrate, tuttavia Daniela, che ha l'impostazione del criterio disabilitata, e John, che è un utente esterno, non possono registrare le riunioni organizzate da Amanda.
-
-Per altre informazioni sulla registrazione di una riunione cloud, vedere [Registrazione delle riunioni cloud di Teams](cloud-recording.md).
 
 ### <a name="mode-for-ip-audio"></a>Modalità per audio IP
 
@@ -116,7 +88,7 @@ Le riunioni organizzate da un utente che ha questa impostazione di criteri abili
 
 | Client Web e desktop di Teams |Client per dispositivi mobili di Teams  |
 |:-------:|:-------:|
-|![Screenshot che mostra la partecipazione alla riunione con le impostazioni audio/video sul desktop.](media/meeting-policies-audio-video-settings.png)    |![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su dispositivo mobile](media/meeting-policies-mobile-join.png)          |
+|![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su desktop.](media/meeting-policies-audio-video-settings.png)    |![Screenshot che mostra la schermata di accesso alla riunione con le impostazioni per audio/video su dispositivo mobile](media/meeting-policies-mobile-join.png)          |
 
 Osserviamo l'esempio seguente.
 
@@ -193,7 +165,7 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 
 ### <a name="allow-custom-background-settings"></a>Consenti impostazioni di sfondo personalizzate
 
-È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa caratteristica consente alle aziende di applicare il marchio aziendale Teams riunioni.
+È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa caratteristica consente alle aziende di applicare il marchio aziendale alle riunioni Teams riunioni.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
@@ -228,4 +200,4 @@ I partecipanti alla riunione visualizzano una selezione di immagini di sfondo ch
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
-- [Assegnare i criteri agli utenti in Teams](assign-policies.md)
+- [Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)

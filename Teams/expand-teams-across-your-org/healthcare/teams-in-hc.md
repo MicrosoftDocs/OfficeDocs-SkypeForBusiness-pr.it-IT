@@ -26,12 +26,12 @@ description: Scopri le funzionalità di assistenza sanitaria come la telemedicin
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: bfa67a90a2d6938d6bc2db9d65833c03450b6172
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 0fa0976c4e69f205feda03a4047a6bbcb26b1183
+ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58730675"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58972904"
 ---
 # <a name="get-started-with-teams-for-healthcare-organizations"></a>Guida introduttiva a Teams per le organizzazioni del settore sanitario
 
@@ -70,7 +70,7 @@ I seguenti scenari sono disponibili per le organizzazioni sanitarie:
 Utilizza la piattaforma completa per riunioni in Microsoft Teams per pianificare, gestire e condurre visite virtuali con i pazienti.
 
 - Se la tua organizzazione utilizza già Cartella clinica elettronica o CCE, puoi integrare Microsoft Teams per un'esperienza più fluida. Il connettore CCE (cartella clinica elettronica) di Microsoft Teams consente al personale medico di avviare una visita o un consulto virtuale con un altro provider in Teams direttamente dal sistema CCE. Per ulteriori informazioni, [Visite virtuali con Teams - Integrazione in CCE](ehr-admin.md).
-- Se non usi una cartella clinica elettronica supportata, puoi usare Microsoft Bookings e l'app Bookings in Teams. Per ulteriori informazioni, [App Bookings e visite virtuali in Microsoft Teams](../../bookings-app-admin.md).
+- Se non usi una cartella clinica elettronica supportata, puoi usare Microsoft Bookings e l'app Bookings in Teams. Per altre informazioni, vedere [Visite virtuali con Teams e l'app Bookings.](../bookings-virtual-visits.md)
 
 ![Visite virtuali con Microsoft Teams.](../../media/virtual-visits-teams.png)
 

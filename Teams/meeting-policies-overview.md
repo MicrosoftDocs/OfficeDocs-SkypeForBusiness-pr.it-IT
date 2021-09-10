@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.overview
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams e usarle per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: f471d9513995a13eb32eaacd118cd2f3874cda7c
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: dc2a57daccd9f252abe912892f0475a38859007f
+ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58627338"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973044"
 ---
 # <a name="manage-meeting-policies-in-microsoft-teams"></a>Gestire i criteri delle riunioni in Microsoft Teams
 
@@ -100,12 +100,12 @@ Quando si seleziona un criterio esistente nella pagina **Criteri riunione** o si
 
 - [Generale](meeting-policies-in-teams-general.md)
 - [Audio e video](meeting-policies-audio-and-video.md)
+- [Registrazione & trascrizione](meetings-policies-recording-and-transcription.md)
 - [Condivisione di contenuti](meeting-policies-content-sharing.md)
 - [Partecipanti e ospiti](meeting-policies-participants-and-guests.md)
-
 
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
-- [Assegnare i criteri agli utenti in Teams](assign-policies.md)
+- [Assegnare i criteri agli utenti in Teams](policy-assignment-overview.md)
 - [Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams](meeting-policies-restricted-anonymous-access.md)

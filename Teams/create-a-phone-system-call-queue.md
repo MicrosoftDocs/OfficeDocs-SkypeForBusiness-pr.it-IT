@@ -24,12 +24,12 @@ ms.custom:
 - Phone System
 - seo-marvel-apr2020
 description: Informazioni su come configurare le code di chiamata per le organizzazioni di grandi dimensioni in Microsoft Teams, che fornisce un messaggio di saluto, la musica in attesa, il reindirizzamento delle chiamate e altre funzionalità.
-ms.openlocfilehash: e7696878ba84942c2dcc88a1df3d5fc29144f883
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 308eb31592b6b98d613ccfb4ed41f421d51bd9e2
+ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728735"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973004"
 ---
 # <a name="create-a-call-queue"></a>Creare una coda di chiamata
 
@@ -42,13 +42,13 @@ Le code di chiamata forniscono:
 
 - Messaggio di saluto.
 
-- Musica mentre le persone sono in attesa di blocco in una coda.
+- Musica le persone sono in attesa di blocco in una coda.
 
 - Instradamento delle chiamate, in ordine FIFO *(First In, First Out)* agli agenti.
 
 - Opzioni di gestione per l'overflow e il timeout della coda.
 
-Assicurarsi di aver [](plan-auto-attendant-call-queue.md) letto Pianificare gli operatori Teams e le code [](plan-auto-attendant-call-queue.md#getting-started) di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
+Assicurarsi di aver letto Pianificare gli operatori automatici [Teams](plan-auto-attendant-call-queue.md) e le [](plan-auto-attendant-call-queue.md#getting-started) code di chiamata e di aver seguito i passaggi introduttivi prima di seguire le procedure descritte in questo articolo.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -78,7 +78,7 @@ Se si prevede di usare un canale Teams per gli agenti di chiamata, è possibile 
 
 Fare **clic su** Aggiungi , cercare gli account delle risorse a cui si vuole consentire agli agenti di effettuare chiamate con ID durante le chiamate in uscita, fare clic su **Aggiungi** e quindi su **Aggiungi.**
 
-Se non si usa un canale Teams per controllare l'appartenenza all'agente, è consigliabile impostare direttamente l'ID chiamante per i membri della coda di chiamata sul numero di servizio della coda di chiamata o sull'operatore automatico appropriato. Per altre informazioni, vedere Gestire i criteri [id chiamante Microsoft Teams](caller-id-policies.md) informazioni.
+Se non si usa un canale Teams per controllare l'appartenenza all'agente, è consigliabile impostare direttamente l'ID chiamante per i membri della coda di chiamata sul numero di servizio della coda di chiamata o sull'operatore automatico appropriato. Per altre informazioni, vedere Gestire i [criteri id chiamante Microsoft Teams](caller-id-policies.md) informazioni.
 
 ## <a name="language"></a>Lingua
 
@@ -92,7 +92,7 @@ Scegliere una [lingua supportata.](create-a-phone-system-call-queue-languages.md
 
 Specificare se si vuole riprodurre un messaggio di saluto ai chiamanti quando arrivano in coda. È necessario caricare un file MP3, WAV o WMA contenente il messaggio di saluto da riprodurre. La registrazione caricata non può essere superiore a 5 MB.
 
-Teams fornisce musica predefinita ai chiamanti mentre sono in attesa in una coda. La musica predefinita fornita nelle code Teams chiamate è gratuita da eventuali royalty pagate dall'organizzazione. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
+Teams musica predefinita ai chiamanti mentre sono in attesa in una coda. La musica predefinita fornita nelle code Teams chiamate è gratuita di eventuali royalty pagate dall'organizzazione. Se si vuole riprodurre un file audio specifico, scegliere Riproduci **un file audio** e caricare un file MP3, WAV o WMA.
 
 > [!NOTE]
 > L'utente è responsabile della cancellazione e della protezione indipendente di tutti i diritti e le autorizzazioni necessari per l'uso di qualsiasi file musicale o audio con il servizio Microsoft Teams, che possono includere proprietà intellettuale e altri diritti in qualsiasi musica, effetti sonori, audio, marchi, nomi e altri contenuti nel file audio di tutti i titolari dei diritti pertinenti, che possono includere artisti, attori, interpreti, musicisti, cantautori, compositori, etichette di registrazione, editori musicali, unioni, corporazioni, società di diritti, organizzazioni di gestione collettiva e qualsiasi altra parte proprietaria, controllo o licenza del copyright musicale, degli effetti sonori, dell'audio e di altri diritti di proprietà intellettuale.
@@ -107,7 +107,7 @@ Esaminare i [prerequisiti per l'aggiunta di agenti a una coda di chiamata.](plan
 
 È possibile aggiungere fino a 200 agenti tramite un Teams canale.
 
-Se si vuole usare un canale Teams per gestire la [coda,](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)selezionare l'opzione **Scegli un team** e fare clic su Aggiungi **canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. È necessario essere un membro del team o il creatore di o un proprietario del canale.
+Se si vuole usare [un canale Teams](https://support.microsoft.com/office/9f07dabe-91c6-4a9b-a545-8ffdddd2504e)per gestire la coda, selezionare l'opzione Scegli un **team** e fare clic su **Aggiungi canale.** Cercare il team da usare, selezionarlo e fare clic su **Aggiungi.** Selezionare il canale da usare (sono supportati solo i canali standard) e fare clic su **Applica**. È necessario essere un membro del team o il creatore di o un proprietario del canale.
 
 I client seguenti sono supportati quando si usa un canale Teams per le code di chiamata: 
 
@@ -137,9 +137,9 @@ Per aggiungere un gruppo alla coda, fare clic **su Aggiungi gruppi,** cercare il
 **La modalità conferenza** riduce significativamente il tempo necessario per la connessione di un chiamante a un agente, dopo che l'agente ha accettato la chiamata. Per il funzionamento della modalità conferenza, gli agenti nella coda di chiamata devono usare uno dei client seguenti:
 
   - La versione più recente del client desktop Microsoft Teams, dell'app Android o dell'app iOS
-  - Microsoft Teams telefono 1449/1.0.94.2020051601 o versione successiva
+  - Microsoft Teams Telefono versione 1449/1.0.94.2020051601 o successiva
   
-Gli account Teams agenti devono essere impostati sulla Teams solo utenti. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se tutti gli agenti usano client compatibili.
+Gli account Teams degli agenti devono essere impostati sulla Teams solo utenti. Gli agenti che non soddisfano i requisiti non sono inclusi nell'elenco di routing delle chiamate. È consigliabile abilitare la modalità conferenza per le code di chiamata se tutti gli agenti usano client compatibili.
 
 > [!NOTE]
 > La modalità conferenza non è supportata se le chiamate telefoniche vengono instradati alla coda da un gateway di routing diretto abilitato per il routing in base alla posizione.
@@ -155,10 +155,13 @@ Gli account Teams agenti devono essere impostati sulla Teams solo utenti. Gli ag
 
 - **Round robin** bilancia il routing delle chiamate in arrivo in modo che ogni agente di chiamata oscinda lo stesso numero di chiamate dalla coda. Questo può essere utile in un ambiente di vendita in ingresso per garantire la stessa opportunità tra tutti gli agenti di chiamata.
 
-- **L'inattività** più lunga instrada ogni chiamata all'agente che è rimasto inattivo più a lungo. Un agente viene considerato inattivo se lo stato di presenza è Disponibile o se lo stato presenza è Non al computer per meno di 10 minuti. Gli agenti il cui stato di presenza è Fuori servizio per più di 10 minuti non vengono considerati inattivi e non saranno idonei per ricevere chiamate finché non cambiano la loro presenza in Disponibile. 
+- **L'inattività** più lunga instrada ogni chiamata all'agente che è rimasto inattivo più a lungo. Un agente è considerato inattivo se lo stato di presenza è Disponibile o se lo stato presenza è Stato Non al computer per meno di 10 minuti. Gli agenti il cui stato di presenza è Fuori servizio per più di 10 minuti non vengono considerati inattivi e non saranno idonei per ricevere chiamate finché non cambiano la loro presenza in Disponibile. 
 
 > [!TIP]
 > **L'impostazione consigliata è** Round **robin** o **Inattività** più lunga.
+
+> [!NOTE]
+> Se [la registrazione della](teams-recording-policy.md) conformità è abilitata per gli agenti, la combinazione di modalità **conferenza** e **routing operatore** non è supportata. Se è necessario usare la **modalità conferenza,** selezionare Instradamento **seriale,** **Round robin** o **Inattività** più lunga come **metodo di routing.** Se è necessario usare il **routing del supervisore,** impostare **la modalità conferenza** su **Disattivato.**
 
 ![Screenshot delle impostazioni relative a routing, rifiuto esplicito e tempo di avviso.](media/call-queue-presence-agents-time.png)
 
@@ -226,7 +229,7 @@ I client seguenti sono supportati per gli agenti di chiamata in una coda di chia
   - Client Mac Skype for Business (versione 6.16.0 e versioni successive)
   - Microsoft Teams Windows client (versioni a 32 bit e a 64 bit)
   - Client Microsoft Teams Mac
-  - Microsoft Teams in [Virtualized Desktop Infrastructure](/microsoftteams/teams-for-vdi) (Windows Virtual Desktop, Citrix e VMware)
+  - Microsoft Teams in [Virtualized Desktop Infrastructure (Windows](/microsoftteams/teams-for-vdi) Virtual Desktop, Citrix e VMware)
   - Microsoft Teams iPhone app
   - Microsoft Teams App Android
 
@@ -247,7 +250,7 @@ Puoi anche utilizzare Windows PowerShell per creare e configurare code di chiama
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Vantaggi offerti dal Sistema telefonico](here-s-what-you-get-with-phone-system.md)
+[Ecco cosa si ottiene con Microsoft Teams Telefono](here-s-what-you-get-with-phone-system.md)
 
 [Ottenere numeri telefonici di servizio](getting-service-phone-numbers.md).
 
