@@ -21,12 +21,12 @@ appliesto:
 - Microsoft Teams
 - seo-marvel-apr2020
 - seo-marvel-may2020
-ms.openlocfilehash: e7ebfeea83a34bec241c5de29f8d8445410a97d1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 19296d5def314bdd54af25c27401a9bbd0972cf2
+ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617452"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973014"
 ---
 # <a name="chat-teams-channels--apps-in-microsoft-teams"></a>Chat, team, canali e app in Microsoft Teams
 
@@ -93,7 +93,7 @@ I criteri di messaggistica controllano le funzionalità di messaggistica disponi
 
 ### <a name="external-access"></a>Accesso esterno
 
-L'accesso esterno, in precedenza noto come federazione, consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione. Attivando questa impostazione e aggiungendo domini all'elenco di quelli consentiti, gli utenti potranno comunicare con utenti di altri domini e organizzazioni. L'accesso esterno è diverso dall'accesso guest per il fatto che le autorizzazioni di accesso vengono assegnate a un intero dominio, non a un singolo utente. L'accesso esterno è disattivato per impostazione predefinita.
+L'accesso esterno (in precedenza noto come federazione) consente agli utenti di Teams e Skype for Business di comunicare con utenti esterni all'organizzazione. Attivando questa opzione e aggiungendo domini all'elenco di quelli consentiti, gli utenti potranno comunicare con utenti di altri domini e organizzazioni. L'accesso esterno è diverso dall'accesso guest per il fatto che le autorizzazioni di accesso vengono assegnate a un intero dominio, non a un singolo utente. L'accesso esterno è attivato per impostazione predefinita.
 
 |Chiedersi|Azione |
 |------------|-------|
@@ -102,7 +102,7 @@ L'accesso esterno, in precedenza noto come federazione, consente agli utenti di 
 
 ### <a name="guest-access"></a>Accesso guest
 
-L'accesso guest in Teams consente a utenti esterni all'organizzazione di accedere a team e canali. Le impostazioni di accesso guest consentono di controllare quali funzionalità possono essere usate o meno dagli utenti guest. Per altre informazioni, vedere [Accesso guest in Teams](./guest-access.md).
+L'accesso guest in Teams consente a utenti esterni all'organizzazione di accedere a team e canali. È possibile usare le impostazioni di accesso guest per controllare quali funzionalità possono o non possono essere usate dagli utenti guest. L'accesso guest è attivato per impostazione predefinita. Per altre informazioni, vedere [Accesso guest in Teams](./guest-access.md).
 
 > [!NOTE]
 > Per altre informazioni sull'accesso esterno e l'accesso guest, vedere [Comunicare con utenti di altre organizzazioni in Microsoft Teams](communicate-with-users-from-other-organizations.md)
