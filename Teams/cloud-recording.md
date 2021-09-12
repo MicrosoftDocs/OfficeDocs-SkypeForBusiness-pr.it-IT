@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 333afdd88313a34b7331617220fa335237a8fbbb
-ms.sourcegitcommit: 1c2364fbefd95151f0847a35e8bc7c4c1b3892f5
+ms.openlocfilehash: c1e8bc4836cab206389fcc011e4d7a41d2b54f74
+ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58935882"
+ms.lasthandoff: 09/10/2021
+ms.locfileid: "58973064"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -39,13 +39,13 @@ Dopo la registrazione, una riunione viene automaticamente:
 - Aggiunta a vari elenchi di file in Microsoft 365: Condivisi con l'utente corrente, office.com, Consigliati, Recenti e così via.
 - Indicizzata per la ricerca di Microsoft 365
 
-Argomenti correlati: [documentazione per gli utenti finali sulla registrazione delle riunioni di Teams](https://aka.ms/recordmeeting)
+Argomenti correlati: [documentazione per gli utenti finali sulla registrazione delle riunioni di Teams](https://support.microsoft.com/en-us/office/record-a-meeting-in-teams-34dfbe7f-b07d-4a27-b4c6-de62f1348c24)
 
 >[!Note]
 > Il passaggio dall’uso di Microsoft Stream (classico) all’uso di OneDrive for Business e SharePoint Online per le registrazioni delle riunioni avverrà automaticamente nel mese di agosto 2021. Per informazioni dettagliate, vedere [Usare OneDrive for Business e SharePoint o Stream per registrare le riunioni](tmr-meeting-recording-change.md).
 
 > [!NOTE]
-> Per informazioni sull'uso dei ruoli nelle riunioni di Teams, e su come modificare i ruoli degli utenti, vedere [Ruoli nelle riunioni di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us). Per le opzioni di registrazione degli eventi live, vedere [Criteri di registrazione degli eventi live in Teams](teams-live-events/live-events-recording-policies.md).
+> Per informazioni sull'uso dei ruoli nelle riunioni di Teams, e su come modificare i ruoli degli utenti, vedere [Ruoli nelle riunioni di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019). Per le opzioni di registrazione degli eventi live, vedere [Criteri di registrazione degli eventi live in Teams](teams-live-events/live-events-recording-policies.md).
 
 ## <a name="prerequisites-for-teams-cloud-meeting-recording"></a>Prerequisiti per la registrazione delle riunioni di Teams nel cloud
 
@@ -73,20 +73,20 @@ Per registrare le riunioni di un utente di Teams, è necessario abilitare OneDri
 
 ## <a name="set-up-teams-cloud-meeting-recording-for-users-in-your-organization"></a>Configurare la registrazione di riunioni di Teams nel cloud per gli utenti dell'organizzazione
 
-In questa sezione viene descritto come configurare e pianificare la registrazione delle riunioni di Teams tramite i [criteri di riunione di Teams](./assign-policies.md).
+In questa sezione viene descritto come configurare e pianificare la registrazione delle riunioni di Teams tramite i [criteri di riunione di Teams](policy-assignment-overview.md).
 
 ### <a name="turn-on-or-turn-off-cloud-recording"></a>Attivare o disattivare la registrazione nel cloud
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se le riunioni degli utenti possono essere registrate.
 
-Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti registrazione cloud** nel criterio di riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meeting-policies-audio-and-video.md#allow-cloud-recording).
+Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti registrazione cloud** nel criterio di riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#allow-cloud-recording).
 
 Con PowerShell, configurare l'opzione AllowCloudRecording in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).
 
 Sia l'organizzatore della riunione che la persona che avvia la registrazione devono avere le autorizzazioni di registrazione per registrare la riunione. A meno che non siano stati assegnati criteri personalizzati, gli utenti ottengono il criterio globale, che ha AllowCloudRecording disabilitato per impostazione predefinita.
 
 > [!NOTE]
-> Per altre informazioni sull'uso dei ruoli di Teams per configurare chi è autorizzato a registrare le riunioni, vedere [Ruoli nelle riunione di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019?ui=en-us&rs=en-us&ad=us).
+> Per altre informazioni sull'uso dei ruoli di Teams per configurare chi è autorizzato a registrare le riunioni, vedere [Ruoli nelle riunione di Teams](https://support.microsoft.com/office/roles-in-a-teams-meeting-c16fa7d0-1666-4dde-8686-0a0bfe16e019).
 
 Affinché un utente rientri nel criterio globale, usare il cmdlet seguente per rimuovere l'assegnazione di un criterio specifico per un utente:
 
@@ -111,7 +111,7 @@ Set-CsTeamsMeetingPolicy -Identity Global -AllowCloudRecording $true
 <a name="bd-channel"></a>
 ### <a name="block-or-allow-download-of-channel-meeting-recordings"></a>Bloccare o consentire il download delle registrazioni delle riunioni del canale
 
-Questa impostazione controlla se le riunioni del canale vengono salvate in una cartella "Registrazioni" o in una cartella "Registrazioni\Solo visualizzazione" nel canale. L'impostazione si applica ai criteri dell'utente che seleziona la registrazione per la riunione del canale. 
+Questa impostazione controlla se le riunioni del canale vengono salvate in una cartella "Registrazioni" o in una cartella "Registrazioni\Solo visualizzazione" nel canale. L'impostazione si applica ai criteri dell'utente che seleziona la registrazione per la riunione del canale.
 
 I due valori per questa impostazione sono:
 
@@ -151,7 +151,7 @@ Questa impostazione controlla la disponibilità di didascalie e funzionalità di
 
 È possibile usare l'interfaccia di amministrazione di Microsoft Teams o PowerShell per impostare un criterio per le riunioni di Teams con cui controllare se chi avvia la registrazione riceve l'opzione per trascriverne la registrazione.
 
-Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti la trascrizione** nel criterio di riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meeting-policies-audio-and-video.md#allow-transcription).
+Nell'interfaccia di amministrazione di Microsoft Teams attivare o disattivare l'impostazione **Consenti la trascrizione** nel criterio di riunione. Per altre informazioni, vedere [Impostazioni dei criteri di riunioni per audio e video](meetings-policies-recording-and-transcription.md#allow-transcription).
 
 Con PowerShell, configurare l'opzione AllowTranscription in TeamsMeetingPolicy. Per altre informazioni, vedere [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) and [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy).
 
@@ -200,7 +200,7 @@ Le registrazioni delle riunioni vengono archiviate nello spazio di archiviazione
 
 Se `Set-CsTeamsMeetingPolicy -ChannelRecordingDownload` è impostato su Consenti (impostazione predefinita):
 
-- La registrazione viene archiviata nella raccolta della documentazione del sito di Teams in una cartella denominata **Registrazioni**. 
+- La registrazione viene archiviata nella raccolta della documentazione del sito di Teams in una cartella denominata **Registrazioni**.
 
   Esempio: <i>Nome di Teams - Nome canale</i>/**Documenti**/**Registrazioni**
 
@@ -257,31 +257,31 @@ Le dimensioni di una registrazione di 1 ora sono pari a 400 MB. Assicurarsi di a
  <a name="auto-expiration"></a>
 ### <a name="auto-expiration-of-teams-meeting-recordings"></a>Scadenza automatica delle registrazioni delle riunioni di Teams: 
 
-> [!IMPORTANT] 
+> [!IMPORTANT]
 >
-> La funzionalità di scadenza automatica descritta in questo articolo non è ancora stata lanciata. Per altre informazioni sulla data di rilascio, vedere la [roadmap (ID funzionalità: 84580)](https://www.microsoft.com/microsoft-365/roadmap?searchterms=82057&filters=&searchterms=84580). 
+> La funzionalità di scadenza automatica descritta in questo articolo non è ancora stata lanciata. Per altre informazioni sulla data di rilascio, vedere la [roadmap (ID funzionalità: 84580)](https://www.microsoft.com/microsoft-365/roadmap?searchterms=82057&filters=&searchterms=84580).
 > 
-> Stiamo fornendo informazioni su come funzionerà questa funzionalità in FUTURO, per pianificarla e modificare le impostazioni dei criteri di Teams in anticipo. 
+> Stiamo fornendo informazioni su come funzionerà questa funzionalità in FUTURO, per pianificarla e modificare le impostazioni dei criteri di Teams in anticipo.
 >
 > Il comando per modificare preventivamente l'impostazione di scadenza predefinita in Teams non è ancora disponibile per l'impostazione.  Quando l'impostazione sarà disponibile per la modifica, verrà pubblicato un post aggiornato del Centro messaggi.
 >
 >
 
-Vedere le domande frequenti per gli amministratori e gli utenti finali per raccogliere informazioni su come funzionerà la scadenza automatica delle registrazioni delle riunioni di Teams, quali azioni è possibile intraprendere ora e quali azioni sarà possibile eseguire dopo il lancio della funzionalità. 
+Vedere le domande frequenti per gli amministratori e gli utenti finali per raccogliere informazioni su come funzionerà la scadenza automatica delle registrazioni delle riunioni di Teams, quali azioni è possibile intraprendere ora e quali azioni sarà possibile eseguire dopo il lancio della funzionalità.
   
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
 **Qual modifica verrà effettuata?**
   
-Stiamo introducendo un'impostazione di scadenza predefinita di 60 giorni per tutte le registrazioni delle riunioni di Teams appena create. Ciò significa che per impostazione predefinita, tutte le registrazioni delle riunioni di Teams create dopo l'abilitazione di questa funzionalità verranno eliminate 60 giorni dopo la data di creazione. Se gli amministratori vogliono che le registrazioni delle riunioni scadano prima o dopo il parametro predefinito, possono modificare l'impostazione di scadenza. I sistemi OneDrive e SharePoint monitoreranno la data di scadenza impostata per tutte le registrazioni delle riunioni e le sposteranno automaticamente nel Cestino alla data di scadenza. 
+Stiamo introducendo un'impostazione di scadenza predefinita di 60 giorni per tutte le registrazioni delle riunioni di Teams appena create. Ciò significa che per impostazione predefinita, tutte le registrazioni delle riunioni di Teams create dopo l'abilitazione di questa funzionalità verranno eliminate 60 giorni dopo la data di creazione. Se gli amministratori vogliono che le registrazioni delle riunioni scadano prima o dopo il parametro predefinito, possono modificare l'impostazione di scadenza. I sistemi OneDrive e SharePoint monitoreranno la data di scadenza impostata per tutte le registrazioni delle riunioni e le sposteranno automaticamente nel Cestino alla data di scadenza.
 
 **Chi verrà interessato da questo cambio?**
   
-Chiunque archivi una registrazione di una riunione di Teams (non di canale, canale o riunione ad hoc) in OneDrive o SharePoint. 
+Chiunque archivi una registrazione di una riunione di Teams (non di canale, canale o riunione ad hoc) in OneDrive o SharePoint.
 
 **Perché è consigliabile usare questa funzionalità?**
   
-È consigliabile usare questa funzionalità per limitare lo spazio di archiviazione di OneDrive o SharePoint usato dalle registrazioni delle riunioni di Teams (nota: in genere usano circa 400 MB all'ora di registrazione). 
+È consigliabile usare questa funzionalità per limitare lo spazio di archiviazione di OneDrive o SharePoint usato dalle registrazioni delle riunioni di Teams (nota: in genere usano circa 400 MB all'ora di registrazione).
   
 **Perché stiamo introducendo questa modifica?**
   
@@ -289,11 +289,11 @@ I nostri clienti, grazie ai loro feedback, ci hanno fatto sapere che desiderano 
   
 **Perché questa opzione verrà attivata per impostazione predefinita?**
   
-Riteniamo che quasi tutti i clienti trarranno vantaggio dalla riduzione del carico di archiviazione nel tenant rimuovendo le registrazioni che probabilmente non verranno mai riguardate dopo 60 giorni. Il nostro obiettivo è offrire un'esperienza più pulita possibile per tutti i clienti per impostazione predefinita. 
+Riteniamo che quasi tutti i clienti trarranno vantaggio dalla riduzione del carico di archiviazione nel tenant rimuovendo le registrazioni che probabilmente non verranno mai riguardate dopo 60 giorni. Il nostro obiettivo è offrire un'esperienza più pulita possibile per tutti i clienti per impostazione predefinita.
   
 **Verranno eliminati automaticamente anche se si accede o si scaricano i dati?**
   
-L'accesso al file non modifica la data di scadenza. 
+L'accesso al file non modifica la data di scadenza.
   
 **La data di scadenza è visibile come colonna nell'elenco?**
 
@@ -301,7 +301,7 @@ Gli utenti con accesso in visualizzazione alla registrazione vedranno un'icona r
   
 **Come viene calcolata la data di scadenza?**
   
-La data di scadenza viene calcolata a partire dal giorno in cui viene creata la registrazione della riunione più il numero predefinito di giorni impostato nell'impostazione di Teams dall'amministratore. 
+La data di scadenza viene calcolata a partire dal giorno in cui viene creata la registrazione della riunione più il numero predefinito di giorni impostato nell'impostazione di Teams dall'amministratore.
   
 **È possibile modificare la data di scadenza per ogni registrazione, ad esempio in modo che la data di scadenza dei dati A sia di 30 giorni e la data di scadenza dei dati B sia di 60 giorni?**
 
@@ -309,14 +309,14 @@ Sì, la data di scadenza è impostata per ogni file. Gli utenti possono modifica
 
 **In che modo un amministratore può modificare la data di scadenza?**
   
-Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. L'impostazione non è ancora disponibile per la modifica. Quando l'impostazione sarà disponibile per la modifica, verrà pubblicato un post aggiornato del Centro messaggi. All'avvio della funzionalità, gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data. 
+Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. L'impostazione non è ancora disponibile per la modifica. Quando l'impostazione sarà disponibile per la modifica, verrà pubblicato un post aggiornato del Centro messaggi. All'avvio della funzionalità, gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data.
 
 I valori dei giorni di scadenza possono essere impostati nel modo seguente:
   
-- Il valore può essere compreso tra 1 e 99.999 (273 anni Max).
-- Il valore può anche essere -1 per impostare il TMR in modo che non scada mai. 
- 
-Gli amministratori non possono modificare la data di scadenza per registrazioni delle riunioni di Teams esistenti già caricate in OneDrive o SharePoint prima del rilascio di questa funzionalità. Ciò protegge l'intento dell'utente proprietario della registrazione di Teams. 
+- Il valore può essere compreso tra 1 e 99.999 (massimo 273 anni).
+- Il valore può anche essere -1 per impostare il TMR in modo che non scada mai.
+
+Gli amministratori non possono modificare la data di scadenza per registrazioni delle riunioni di Teams esistenti già caricate in OneDrive o SharePoint prima del rilascio di questa funzionalità. Ciò protegge l'intento dell'utente proprietario della registrazione di Teams.
   
 **Un amministratore può impostare il TMR in modo che non scada mai?**
   
@@ -332,38 +332,38 @@ La data di scadenza verrà cancellata se il file viene ricaricato, indipendentem
   
 **Cosa succede se si copia o si sposta la registrazione in un percorso o un sito diverso?**
 
-La data viene conservata solo per i file delle registrazioni di Teams spostati. Un file copiato non avrà data di scadenza, così come una registrazione ricaricata. 
+La data viene conservata solo per i file delle registrazioni di Teams spostati. Un file copiato non avrà data di scadenza, così come una registrazione ricaricata.
   
 **In che modo gli utenti finali possono modificare la data di scadenza di una specifica registrazione di una riunione di Teams?**
   
-Chiunque disponga di autorizzazioni di modifica ed eliminazione delle registrazione delle riunioni di Teams può modificare la data di scadenza nel riquadro dei dettagli del file in OneDrive o SharePoint. 
+Chiunque disponga di autorizzazioni di modifica ed eliminazione delle registrazione delle riunioni di Teams può modificare la data di scadenza nel riquadro dei dettagli del file in OneDrive o SharePoint.
 
-L'utente può posticipare la scadenza di 14, 30 o 60 giorni, selezionare una data specifica in futuro o impostare il file in modo che non scada mai. 
+L'utente può posticipare la scadenza di 14, 30 o 60 giorni, selezionare una data specifica in futuro o impostare il file in modo che non scada mai.
   
 **Gli amministratori devono basarsi su questa funzionalità per garantire la massima conformità e sicurezza?**
   
-No, gli amministratori non devono fare affidamento su questa funzione per la protezione legale poiché gli utenti finali possono modificare la data di scadenza di tutte le registrazioni che controllano. 
+No, gli amministratori non devono fare affidamento su questa funzione per la protezione legale poiché gli utenti finali possono modificare la data di scadenza di tutte le registrazioni che controllano.
   
 **Questa funzionalità implicherà la conservazione dei file?**
   
 No, i file non verranno conservati a causa di questa funzionalità o delle relative impostazioni. Se un utente con autorizzazioni di eliminazione tenta di eliminare una registrazione di una riunione di Teams con l'impostazione di scadenza attiva, l'azione da parte dell'utente verrà eseguita.
- 
+
 **I criteri di conservazione e/o eliminazione impostati nel Centro sicurezza e conformità sostituiranno l'impostazione di scadenza delle registrazioni delle riunioni di Teams?**
   
-Sì, tutti i criteri impostati nel Centro sicurezza e conformità avranno la precedenza completa. Ad esempio: 
+Sì, tutti i criteri impostati nel Centro sicurezza e conformità avranno la precedenza completa. Ad esempio:
   
 - Se si dispone di un criterio che indica che tutti i file in un sito devono essere conservati per 100 giorni e l'impostazione di scadenza è di 30 giorni, il file di registrazione verrà conservato per l'intero periodo di 100 giorni.  
-- Se si dispone di un criterio di eliminazione che indica che tutte le registrazioni verranno eliminate dopo 5 giorni e si ha un'impostazione di scadenza per un file di registrazione di 30 giorni, il file verrà eliminato dopo 5 giorni. 
+- Se si dispone di un criterio di eliminazione che indica che tutte le registrazioni verranno eliminate dopo 5 giorni e si ha un'impostazione di scadenza per un file di registrazione di 30 giorni, il file verrà eliminato dopo 5 giorni.
 
 **Cosa accade alla scadenza di una registrazione?**
   
-Alla data di scadenza, la registrazione viene spostata nel Cestino di OneDrive o SharePoint e il campo della data di scadenza viene cancellato. Questa azione da parte del sistema è esattamente uguale a quella eseguita da un utente all'eliminazione del file. Il ciclo di vita del Cestino seguirà successivamente il percorso normale. Se l'utente recupera la registrazione dal Cestino, questa non verrà eliminata di nuovo da questa funzionalità perché la data di scadenza è stata cancellata, a meno che l'utente finale non abbia impostato una nuova data di scadenza nel file. 
+Alla data di scadenza, la registrazione viene spostata nel Cestino di OneDrive o SharePoint e il campo della data di scadenza viene cancellato. Questa azione da parte del sistema è esattamente uguale a quella eseguita da un utente all'eliminazione del file. Il ciclo di vita del Cestino seguirà successivamente il percorso normale. Se l'utente recupera la registrazione dal Cestino, questa non verrà eliminata di nuovo da questa funzionalità perché la data di scadenza è stata cancellata, a meno che l'utente finale non abbia impostato una nuova data di scadenza nel file.
   
 **In che modo ricevo una notifica sulla scadenza del file?**
   
-Tutti gli utenti con accesso in visualizzazione vedranno una notifica sulla data di scadenza nella finestra della chat di Teams. 
+Tutti gli utenti con accesso in visualizzazione vedranno una notifica sulla data di scadenza nella finestra della chat di Teams.
   
-Tutti gli utenti con accesso in visualizzazione vedranno un'icona rossa accanto al file nella cartella OneDrive o SharePoint 14 giorni prima della scadenza del file. 
+Tutti gli utenti con accesso in visualizzazione vedranno un'icona rossa accanto al file nella cartella OneDrive o SharePoint 14 giorni prima della scadenza del file.
   
 Il proprietario del file riceverà una notifica tramite e-mail alla scadenza della registrazione e verrà indirizzato al Cestino per recuperarla, se lo desidera.
   
@@ -373,17 +373,17 @@ Per impostazione predefinita, tutti gli SKU avranno questa funzionalità e gli u
   
 **La scadenza del file è un evento controllato e sarà possibile visualizzarlo nei log di audit?**
   
-Sì, le scadenze dei file verranno visualizzate come eventi di eliminazione del sistema nel log di controllo. 
+Sì, le scadenze dei file verranno visualizzate come eventi di eliminazione del sistema nel log di controllo.
   
 **Cosa devo fare se voglio che l'amministratore abbia il pieno controllo sul ciclo di vita delle registrazioni e non voglio dare agli utenti finali la possibilità di ignorare la data di scadenza?**
   
-È consigliabile usare i criteri di conservazione e/o eliminazione di sicurezza e conformità disponibili come parte dello SKU di conformità E5. Questa offerta è destinata a risolvere problemi legali amministrativi complessi e basati sul contratto di servizio. 
+È consigliabile usare i criteri di conservazione e/o eliminazione di sicurezza e conformità disponibili come parte dello SKU di conformità E5. Questa offerta è destinata a risolvere problemi legali amministrativi complessi e basati sul contratto di servizio.
 
-Questa funzione è concepita esclusivamente come un meccanismo di pulizia leggero per ridurre l'ingombro di archiviazione creato dalle registrazioni delle riunioni di Teams. 
+Questa funzione è concepita esclusivamente come un meccanismo di pulizia leggero per ridurre l'ingombro di archiviazione creato dalle registrazioni delle riunioni di Teams.
   
 **Quando verrà eliminato il file?**
   
-Il file verrà eliminato entro 5 giorni dalla data di scadenza, anche se questa non è una garanzia. 
+Il file verrà eliminato entro 5 giorni dalla data di scadenza, anche se questa non è una garanzia.
   
 **Le future richieste di registrazione migrate da Stream (versione classica) dopo il rilascio di questa funzionalità avranno anche la scadenza automatica?**
   
