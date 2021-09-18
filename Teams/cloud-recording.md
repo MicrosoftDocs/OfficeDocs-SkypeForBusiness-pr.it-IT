@@ -19,12 +19,12 @@ description: Suggerimenti pratici per la distribuzione delle funzionalità Cloud
 appliesto:
 - Microsoft Teams
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c1e8bc4836cab206389fcc011e4d7a41d2b54f74
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: 22d57e349d22deb6d40227ba15d73a7958bad894
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973064"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432438"
 ---
 # <a name="teams-cloud-meeting-recording"></a>Registrazione delle riunioni di Teams nel cloud
 
@@ -309,13 +309,13 @@ Sì, la data di scadenza è impostata per ogni file. Gli utenti possono modifica
 
 **In che modo un amministratore può modificare la data di scadenza?**
   
-Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. L'impostazione non è ancora disponibile per la modifica. Quando l'impostazione sarà disponibile per la modifica, verrà pubblicato un post aggiornato del Centro messaggi. All'avvio della funzionalità, gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data.
+Gli amministratori potranno modificare l'impostazione di scadenza predefinita in PowerShell (Set-CsTeamsMeetingPolicy -Identity Global -MeetingRecordingExpirationDays) o nell'interfaccia di amministrazione di Teams prima del rilascio della funzionalità. **L'impostazione non è ancora disponibile per la modifica.** Quando l'impostazione sarà disponibile per la modifica, nel Centro messaggi apparirà un post di aggiornamento. Gli amministratori possono modificare questa impostazione nell'interfaccia di amministrazione di Teams, durante l’avvio di questa funzionalità. La modifica delle impostazioni di scadenza influirà solo sulle nuove registrazioni delle riunioni di Teams create da quel punto in poi. Non influirà sulle registrazioni effettuate prima di tale data. 
 
 I valori dei giorni di scadenza possono essere impostati nel modo seguente:
   
-- Il valore può essere compreso tra 1 e 99.999 (massimo 273 anni).
-- Il valore può anche essere -1 per impostare il TMR in modo che non scada mai.
-
+- Il valore può essere compreso tra 1 e 9.999.
+- Il valore può anche essere -1 per impostare il TMR in modo che non scada mai. 
+ 
 Gli amministratori non possono modificare la data di scadenza per registrazioni delle riunioni di Teams esistenti già caricate in OneDrive o SharePoint prima del rilascio di questa funzionalità. Ciò protegge l'intento dell'utente proprietario della registrazione di Teams.
   
 **Un amministratore può impostare il TMR in modo che non scada mai?**
@@ -333,6 +333,11 @@ La data di scadenza verrà cancellata se il file viene ricaricato, indipendentem
 **Cosa succede se si copia o si sposta la registrazione in un percorso o un sito diverso?**
 
 La data viene conservata solo per i file delle registrazioni di Teams spostati. Un file copiato non avrà data di scadenza, così come una registrazione ricaricata.
+  
+
+**Qual è l'ambito di controllo per i criteri di amministrazione?**
+  
+Sia le riunioni che le chiamate verranno controllate dalla stessa impostazione `CsTeamsMeetingPolicy`, `MeetingRecordingExpirationDays`. 
   
 **In che modo gli utenti finali possono modificare la data di scadenza di una specifica registrazione di una riunione di Teams?**
   
@@ -369,7 +374,7 @@ Il proprietario del file riceverà una notifica tramite e-mail alla scadenza del
   
 **Quali SKU sono necessari per questa funzionalità?**
   
-Per impostazione predefinita, tutti gli SKU avranno questa funzionalità e gli utenti A1 avranno un periodo di scadenza di 30 giorni, non modificabile.
+Per impostazione predefinita, tutti gli SKU avranno questa funzionalità. Gli utenti A1 avranno un periodo di scadenza di 30 giorni, non modificabile.
   
 **La scadenza del file è un evento controllato e sarà possibile visualizzarlo nei log di audit?**
   

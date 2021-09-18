@@ -18,12 +18,12 @@ ms.localizationpriority: high
 f1.keywords:
 - NOCSH
 description: Indicazioni complete per effettuare la migrazione da Slack a Microsoft Teams.
-ms.openlocfilehash: 6877c0daf7d2d86924eefe989b458c671c37f628
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 508224759ccfe741a4d7c6810a3edb4748f9cfa7
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58731605"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432638"
 ---
 # <a name="migrate-from-slack-to-microsoft-teams"></a>Effettuare la migrazione da Slack a Microsoft Teams
 
@@ -55,7 +55,7 @@ Al termine di questa sezione, il lettore sarà in grado di comprendere i seguent
 ### <a name="assess-your-slack-workspaces"></a>Valutare le aree di lavoro di Slack
 Per poter pianificare il piano di migrazione dell'organizzazione, è necessario raccogliere alcune informazioni sulle aree di lavoro di Slack. Comprendere come vengono utilizzate le aree di lavoro di Slack consente di determinare l'ambito della migrazione. Ad esempio, quante aree di lavoro verranno spostate? Le aree di lavoro vengono utilizzate da un reparto specifico, da molti reparti o da un'intera organizzazione?
 
-Se si è membri delle aree di lavoro di Slack che si desidera migrare, è possibile analizzarne l'uso andando su *<your Slack workspace>.slack.com/stats*. Esaminare le schede Canali e Membri per cercare i modelli di utilizzo. Stabilire quali aree di lavoro si desidera migrare e quali si desidera lasciare. 
+Se si è membri delle aree di lavoro di Slack che si desidera migrare, è possibile analizzarne l'uso andando su *\<your Slack workspace\>.slack.com/stats*. Esaminare le schede Canali e Membri per cercare i modelli di utilizzo. Stabilire quali aree di lavoro si desidera migrare e quali si desidera lasciare. 
 
 > [!NOTE]
 > Solo gli amministratori o i proprietari dispongono dell'accesso alla pagina stats. 
@@ -64,7 +64,7 @@ Se si è membri delle aree di lavoro di Slack che si desidera migrare, è possib
 
 Gli utenti di Slack entrano in un canale che fa parte di un'area di lavoro di Slack, mentre gli utenti di Teams entrano in un team che rappresenta una raccolta di canali. Si consiglia di utilizzare l'analisi di Slack per calcolare l'attività che avviene in ogni canale e stabilire quali canali spostare. L'elenco risultante potrà essere utilizzato per comprendere come raggruppare i canali di Slack in team di Teams, nonché per stabilire i membri di ciascun team.
 
-Se si dispone di un piano di servizio di Slack a pagamento (qualsiasi piano diverso da Free), è possibile utilizzare l'analisi di Slack (<your Slack workspace>.slack.com/admin/stats#channels) per verificare quanto un canale è attivo, quando è stato utilizzato l'ultima volta e quante persone ne sono membri. In questo modo è possibile stabilire se migrare il canale o meno. Per impostazione predefinita, il contenuto pubblico di un canale (messaggi e file) può essere esportato. In base al piano di servizio di Slack e a seconda che siano stati richiesti o meno, canali privati e messaggi diretti di Slack possono essere esportati.
+Se si dispone di un piano di servizio di Slack a pagamento (qualsiasi piano diverso da Free), è possibile utilizzare l'analisi di Slack (\<your Slack workspace\>.slack.com/admin/stats#channels) per verificare quanto un canale è attivo, quando è stato utilizzato l'ultima volta e quante persone ne sono membri. In questo modo è possibile stabilire se migrare il canale o meno. Per impostazione predefinita, il contenuto pubblico di un canale (messaggi e file) può essere esportato. In base al piano di servizio di Slack e a seconda che siano stati richiesti o meno, canali privati e messaggi diretti di Slack possono essere esportati.
 
 Per altre informazioni sulle opzioni di esportazione di Slack, visitare il sito Web di Slack: https://get.slack.help/hc/articles/204897248-Guide-to-Slack-import-and-export-tools 
 
@@ -80,14 +80,14 @@ Per esportare i messaggi diretti, controllare strumenti come Esporta nell'App St
 
 Le app in Slack sono simili alle app in Microsoft Teams. Una volta ottenuto un elenco di app e delle relative configurazioni nell'area di lavoro, è possibile verificare nell'App Store di Teams se sono disponibili per Teams*. 
 
-Accedere a <your Slack workspace>.slack.com/apps/manage per ottenere un elenco di app e integrazioni personalizzate. In questa pagina viene riportato anche il numero di configurazioni utilizzate da ciascuna app. Le integrazioni personalizzate variano in base alla capacità di migrazione. Se si tratta di un hook Web, in genere è possibile inviarlo a un connettore di Microsoft 365 o Office 365 per spostare il flusso di lavoro in Teams. Valutare bot e altre app caso per caso, per pianificarne il passaggio a Teams.
+Accedere a \<your Slack workspace\>.slack.com/apps/manage per ottenere un elenco di app e integrazioni personalizzate. In questa pagina viene riportato anche il numero di configurazioni utilizzate da ciascuna app. Le integrazioni personalizzate variano in base alla capacità di migrazione. Se si tratta di un hook Web, in genere è possibile inviarlo a un connettore di Microsoft 365 o Office 365 per spostare il flusso di lavoro in Teams. Valutare bot e altre app caso per caso, per pianificarne il passaggio a Teams.
 
 \*Se l'amministratore ha limitato l'utilizzo delle app, è possibile che l'elenco completo delle app disponibili non sia visibile.
 
 ### <a name="users"></a>Utenti
 Gli schemi di identità utilizzati in Slack potrebbero non essere direttamente corrispondenti a Microsoft 365 o Office 365. Ad esempio, gli indirizzi e-mail degli utenti di Slack potrebbero non essere associati agli account aziendali o dell'istituto di istruzione di Microsoft 365 o Office 365. Per iniziare a pianificare l'implementazione di Teams, è consigliabile creare una mappa di ID utente.
 
-Se si dispone di un piano di servizio di Slack a pagamento, è possibile passare a *<your Slack workspace>.slack.com/admin/stats#members* per ottenere informazioni dettagliate sui membri, come l'indirizzo e-mail e il tipo di account per ogni utente, ad esempio guest singolo o multicanale.
+Se si dispone di un piano di servizio di Slack a pagamento, è possibile passare a *\<your Slack workspace\>.slack.com/admin/stats#members* per ottenere informazioni dettagliate sui membri, come l'indirizzo e-mail e il tipo di account per ogni utente, ad esempio guest singolo o multicanale.
 
 Di seguito viene riportato uno script che è possibile utilizzare per confrontare gli indirizzi e-mail di un'esportazione di Slack con Azure AD per risolvere l'ambiguità del nome. Lo script indica anche se l'utente è abilitato per Teams. Se è necessaria assistenza con PowerShell, consultare [Introduzione ad Azure PowerShell](/powershell/azure/get-started-azureps).
 
@@ -181,7 +181,7 @@ Il diagramma di seguito riportato fornisce una panoramica di livello elevato del
 Un'area di lavoro di Slack potrebbe rappresentare un singolo team, più team o un'intera organizzazione. È importante comprendere l'ambito delle aree di lavoro nel momento in cui si determina la struttura. La relazione più stretta con un team di Teams in Slack è l'area di lavoro, che contiene una raccolta di canali. Il diagramma di seguito riportato mostra 3 diverse associazioni tra Slack e Teams e una guida per la scelta dell'associazione giusta per ogni area di lavoro.
 
 
-|Associazione tra Slack e Teams |  |
+|Associazione tra Slack e Teams | Descrizione |
 |---------|---------|
 |1 area di lavoro di Slack :arrow_right: 1 team   | Per aree di lavoro di Slack più piccole che richiedono un numero inferiore a 200 canali<br>Includere un buffer per la crescita e la pianificazione del canale privato  |
 |1 area di lavoro di Slack :arrow_right: più team     | Utilizzare i dati di analisi dell'area di lavoro di Slack per creare raggruppamenti logici di canali, che diventano la base dei team        |
@@ -193,7 +193,7 @@ Le soluzioni di terze parti includono statistiche di utilizzo che consentono di 
 > Mantenere solo gli elementi necessari nell'approccio per determinare quali canali ricreare in Teams. Per ulteriori informazioni, consultare [Panoramica su team e canali](teams-channels-overview.md). 
 
 #### <a name="team-planning"></a>Pianificazione di team
-Utilizzando l'inventario dei canali compilato nella sezione Pianificazione illustrata in precedenza, collaborare con i proprietari e gli amministratori di Slack per individuare i canali che devono diventare team e i canali che devono diventare canali di un team. Utilizzare Excel o PowerBI per semplificare l'analisi; entrambe le applicazioni forniscono ulteriori informazioni su quali canali mantenere.
+Utilizzando l'inventario dei canali compilato nella sezione Pianificazione illustrata in precedenza, collaborare con i proprietari e gli amministratori di Slack per individuare i canali che devono diventare team e i canali che devono diventare canali di un team. Utilizzare Excel o Power BI per semplificare l'analisi; entrambe le applicazioni forniscono ulteriori informazioni su quali canali mantenere.
 
 > [!TIP]
 > Teams attualmente dispone di un limite di 200 canali per team. Se l'elenco di canali si avvicina a quel limite, è consigliabile suddividere i canali in due team diversi.
