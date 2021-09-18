@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: hafarmer
 description: Informazioni sull'esperienza di partecipazione Teams le visite virtuali nei browser per dispositivi mobili.
-ms.openlocfilehash: 4017947d53078b33ce2a4195a6ace9af92adc85c
-ms.sourcegitcommit: 1c2364fbefd95151f0847a35e8bc7c4c1b3892f5
+ms.openlocfilehash: 6183fccce1c455ac46f4eb7c166530535d5dbbe8
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58936146"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432688"
 ---
 # <a name="manage-the-join-experience-for-teams-virtual-visits-on-mobile-browsers"></a>Gestire l'esperienza di partecipazione Teams le visite virtuali nei browser per dispositivi mobili
 
@@ -43,7 +43,7 @@ Attualmente, l'aggiunta al browser per dispositivi mobili è disponibile per gli
 
 Gli utilità di pianificazione dell'organizzazione possono attivare questa caratteristica per tipi di appuntamenti specifici e per singoli appuntamenti nell'app Bookings.
 
-Dopo aver attivato questa funzionalità, il messaggio di posta elettronica di conferma o il testo SMS inviato ai partecipanti conterrà un collegamento di partecipazione alla riunione che viene aperto Teams in un browser per dispositivi mobili. Nei dispositivi mobili Android, Teams si apre in Chrome. Nei dispositivi mobili iOS, Teams si apre in Safari.
+Dopo aver attivato questa funzionalità, il messaggio di posta elettronica di conferma o il testo SMS inviato ai partecipanti conterrà un collegamento di partecipazione alla riunione che viene aperto Teams in un browser per dispositivi mobili. Nei dispositivi mobili Android, Teams si apre in Chrome. Nei dispositivi mobili iOS, Teams in Safari.
 
 #### <a name="turn-on-mobile-browser-join-for-an-appointment-type"></a>Attivare l'accesso al browser per dispositivi mobili per un tipo di appuntamento
 
@@ -61,7 +61,7 @@ In Bookings selezionare **Nuova prenotazione** e quindi attivare Consenti ai par
 
 Non è necessaria alcuna configurazione da parte dell'utente o del personale.
 
-Il connettore Teams EHR supporta i pazienti che a partecipare a visite virtuali tramite il Web MyChart e i dispositivi mobili. Al momento dell'appuntamento, i pazienti possono avviare una visita virtuale da MyChart usando il **pulsante Inizia visita** virtuale. Il paziente sceglie il browser desiderato e quindi Teams si apre in tale browser.
+Il Teams EHR supporta i pazienti che a partecipare a visite virtuali tramite il Web MyChart e i dispositivi mobili. Al momento dell'appuntamento, i pazienti possono avviare una visita virtuale da MyChart usando il **pulsante Inizia visita** virtuale. Il paziente sceglie il browser desiderato e quindi Teams si apre in tale browser.
 
 ## <a name="supported-mobile-browsers"></a>Browser per dispositivi mobili supportati
 
@@ -78,11 +78,11 @@ Ecco i browser per dispositivi mobili attualmente supportati. Microsoft supporta
 &sup2; Safari 14+ e macOS 11+ sono necessari per il supporto video in uscita.
 
 > [!NOTE]
-> Stiamo aggiungendo altre funzionalità all'esperienza di partecipazione alla riunione nelle versioni future di Teams, quindi controlla di nuovo le informazioni più aggiornate. Per essere sempre al top delle funzionalità Teams, vedere la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams)
+> Stiamo aggiungendo altre funzionalità all'esperienza di partecipazione alla riunione nelle versioni future di Teams, quindi controlla di nuovo le informazioni più aggiornate. Per essere sempre al top delle funzionalità Teams, consulta la roadmap [Microsoft 365.](https://www.microsoft.com/microsoft-365/roadmap?filters=&searchterms=microsoft%2Cteams)
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Visite virtuali con Teams e l'app Bookings](../bookings-app-admin.md)
+- [Visite virtuali con Teams e l'app Bookings](bookings-virtual-visits.md)
 - [Creare un tipo di appuntamento Bookings](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 - [Partecipare a un appuntamento di Bookings come partecipante](https://support.microsoft.com/office/join-a-bookings-appointment-as-an-attendee-95cea12d-2220-421f-a663-6efb20913c7f)
 - [Visite virtuali con Teams - Integrazione in CCE](healthcare/ehr-admin.md)

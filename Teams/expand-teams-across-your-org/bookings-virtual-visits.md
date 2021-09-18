@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.reviewer: ''
 description: Scopri come usare l'app Bookings in Teams pianificare, gestire e condurre visite virtuali.
-ms.openlocfilehash: 9c925e07bebe20e1f103a4f3acf3dc60f8409bcf
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: a37a024e31c75bbedbdb36d9aa0d6acfd2af614c
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973281"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432458"
 ---
 # <a name="virtual-visits-with-microsoft-teams-and-the-bookings-app"></a>Visite virtuali con Microsoft Teams e l’app Bookings
 
@@ -36,21 +36,21 @@ L'app Bookings semplifica la gestione delle esigenze di pianificazione complesse
 
 Le visite virtuali si svolgono tramite riunioni Microsoft Teams, che offre funzionalità di videoconferenza efficaci. Ad esempio, un medico può condividere lo schermo e rivedere i risultati dei test con un paziente. In alternativa, un consulente bancario può richiedere firme elettroniche sui documenti, consentendo loro di chiudere le transazioni in remoto.
 
-Ogni appuntamento virtuale include un collegamento Teams riunione che viene inviato ai partecipanti tramite posta elettronica, in cui possono partecipare facilmente da un Web browser o da Teams su qualsiasi dispositivo. I promemoria automatici per la posta elettronica consentono di ridurre i messaggi non visualizzati e di migliorare l'impegno dei clienti e dei clienti.
+Ogni appuntamento virtuale include un collegamento Teams riunione che viene inviato ai partecipanti tramite posta elettronica, in cui possono partecipare facilmente da un Web browser o da un Teams su qualsiasi dispositivo. I promemoria automatici per la posta elettronica consentono di ridurre i messaggi non visualizzati e di migliorare l'impegno dei clienti e dei clienti.
 
 Con Bookings si ottiene un'esperienza personalizzata per il settore. Ecco alcuni esempi di come è possibile usarlo nell'organizzazione:
 
 |Settore | Esempi |
 |---------|---------|
 |Servizi finanziari    |  Visite virtuali per vendite e servizi in remoto<br/>Pianificare e gestire appuntamenti virtuali per i responsabili delle relazioni bancarie, i consulenti finanziari e gli regolatori dei sinistri, solo per citarne alcuni, per servire i clienti con maggiore efficienza e convenienza.  |
-|Sanità   |  Visite virtuali per l'assistenza ai pazienti <br/>Pianificare e gestire le visite virtuali in modo che i membri del team di assistenza si incontrino con pazienti o altri operatori sanitari per discutere delle cure mediche.   |         |
-|Vendita al dettaglio   | Esperienze di shopping virtuali <br/>Pianificare e gestire appuntamenti per i venditori, gli esperti di prodotti e i consulenti di progettazione per condurre esperienze di shopping virtuali con i clienti.   |         |
+|Sanità   |  Visite virtuali per l'assistenza ai pazienti <br/>Pianificare e gestire le visite virtuali in modo che i membri del team di assistenza si incontrino con pazienti o altri operatori sanitari per discutere delle cure mediche.   |
+|Vendita al dettaglio   | Esperienze di shopping virtuali <br/>Pianificare e gestire appuntamenti per i venditori, gli esperti di prodotti e i consulenti di progettazione per condurre esperienze di shopping virtuali con i clienti.   |
 
-Questo articolo offre una panoramica su come usare l'app Bookings in Teams per pianificare, gestire e condurre visite virtuali.
+Questo articolo offre una panoramica su come usare l'app Bookings in Teams pianificare, gestire e condurre visite virtuali.
 
 ## <a name="before-you-get-started"></a>Nozioni preliminari
 
-Gli amministratori possono vedere Gestire [l'app Bookings in Teams](../bookings-app-admin.md) per informazioni sui prerequisiti per l'uso dell'app Bookings in Teams, su come controllare l'accesso a Bookings nell'organizzazione e sulle impostazioni consigliate per i criteri e gli amministratori.
+Per gli amministratori, vedere Gestire [l'app Bookings in Teams](../bookings-app-admin.md) per informazioni sui prerequisiti per l'uso dell'app Bookings in Teams, su come controllare l'accesso a Bookings nell'organizzazione e sulle impostazioni consigliate per i criteri e gli amministratori.
 
 Tenere presente che solo le utilità di pianificazione dell'organizzazione devono avere l'app Bookings installata in Teams. Il personale che conduce o partecipa a appuntamenti virtuali non ha bisogno dell'app. Si uniscono agli appuntamenti dal calendario Teams o Outlook o usando il collegamento alla riunione nel messaggio di conferma della prenotazione.
 
@@ -78,7 +78,7 @@ L'app Bookings si integra con Outlook. Dopo aver aggiunto il personale, sarà po
 
 Creare tipi di appuntamenti specifici per rappresentare i servizi offerti dall'organizzazione e personalizzare l'esperienza di prenotazione.
 
-Nel calendario delle prenotazioni passare ad **Altre opzioni** (...) > **tipi di** appuntamento e quindi selezionare Nuovo tipo **di appuntamento.** Immettere un nome, ad esempio Apertura account, Rinnovo della ricetta, Consulenza prestito, Preparazione imposte e altre informazioni &mdash; &mdash; e impostazioni desiderate.
+Nel calendario delle prenotazioni passare ad **Altre opzioni** (...) > **Tipi di** appuntamento e quindi selezionare Nuovo tipo **di appuntamento.** Immettere un nome, ad esempio Apertura account, Rinnovo della ricetta, Consulenza prestito, Preparazione imposte e altre informazioni &mdash; &mdash; e impostazioni desiderate.
 
 Le informazioni e i collegamenti aggiunti vengono inclusi nella conferma di posta elettronica inviata ai partecipanti ogni volta che viene prenotato questo tipo di appuntamento. È anche possibile impostare promemoria di posta elettronica e altre opzioni, ad esempio se i partecipanti possono partecipare da un [browser](mobile-browser-join.md) per dispositivi mobili senza dover scaricare Teams. Per altre informazioni, vedere [Creare un tipo di appuntamento.](https://support.microsoft.com/office/create-an-appointment-type-810eac77-6a65-4dc8-964d-c00eadf43887)
 
@@ -92,7 +92,7 @@ La conferma tramite posta elettronica inviata al partecipante include il collega
 
 ## <a name="conduct-a-virtual-visit"></a>Condurre una visita virtuale
 
-Nel calendario Teams o Outlook, passare alla prenotazione e  quindi selezionare Partecipa o il collegamento Teams riunione. Controllare le impostazioni audio e video e quindi selezionare **Partecipa ora.** Per altre informazioni, vedere [Condurre un appuntamento di Bookings.](https://support.microsoft.com/office/conduct-a-bookings-appointment-a86a4007-e26c-4909-9893-f7036e2747cd)
+Nel calendario Teams o Outlook, passare alla prenotazione e quindi  selezionare Partecipa o il collegamento Teams riunione. Controllare le impostazioni audio e video e quindi selezionare **Partecipa ora.** Per altre informazioni, vedere [Condurre un appuntamento di Bookings.](https://support.microsoft.com/office/conduct-a-bookings-appointment-a86a4007-e26c-4909-9893-f7036e2747cd)
 
 ## <a name="additional-capabilities-with-the-bookings-web-app"></a>Funzionalità aggiuntive con l'app Web Bookings
 

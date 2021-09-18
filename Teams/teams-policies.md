@@ -1,7 +1,7 @@
 ---
-title: Gestire i criteri dei team in Microsoft Teams
-author: cichur
-ms.author: v-cichur
+title: Gestire i criteri dei canali in Microsoft Teams
+author: MikePlumleyMSFT
+ms.author: mikeplum
 manager: serdars
 ms.reviewer: jastark
 ms.topic: article
@@ -23,19 +23,19 @@ ms.custom:
 - ms.teamsadmincenter.teamsandchannelpolicies.overview
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.discover
 - ms.teamsadmincenter.teams.teamspolicies.new.tooltip.create
-description: Informazioni su come usare e gestire i criteri dei team nell'organizzazione per controllare le attività che gli utenti possono eseguire nei team e nei canali.
-ms.openlocfilehash: 92b49a31a4ae8cdedb9243293547c42699fed919
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+description: Informazioni su come usare e gestire i criteri dei canali di Teams nell'organizzazione per controllare le attività che gli utenti possono eseguire in team e canali.
+ms.openlocfilehash: 727bb8b133d5119cd396c79561dde453281206f0
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58725495"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432268"
 ---
-# <a name="manage-teams-policies-in-microsoft-teams"></a>Gestire i criteri dei team in Microsoft Teams
+# <a name="manage-channel-policies-in-microsoft-teams"></a>Gestire i criteri dei canali in Microsoft Teams
 
-Gli amministratori possono usare i criteri di teams in Microsoft Teams controllare le attività che gli utenti dell'organizzazione possono eseguire nei team e nei canali. Ad esempio, è possibile impostare se gli utenti sono autorizzati a creare canali privati.
+Gli amministratori possono usare i criteri di teams in Microsoft Teams per controllare le attività che gli utenti dell'organizzazione possono eseguire nei team e nei canali. Ad esempio, è possibile impostare se gli utenti sono autorizzati a creare canali privati.
 
-Per gestire i criteri dei team, accedere **Teams**  >  **Teams criteri nell'Microsoft Teams** di amministrazione. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
+Per gestire i criteri dei team, è **possibile accedere Teams** Teams criteri  >  **nell'Microsoft Teams** di amministrazione. È possibile usare il criterio globale (predefinito a livello di organizzazione) o creare e assegnare criteri personalizzati. Gli utenti dell'organizzazione verranno assegnati automaticamente al criterio globale, a meno che non venga creato e assegnato un criterio personalizzato.
 
 È possibile modificare i criteri globali o creare e assegnare criteri personalizzati. Dopo aver modificato i criteri globali o aver assegnato un criterio, l'applicazione delle modifiche può richiedere alcune ore.
 

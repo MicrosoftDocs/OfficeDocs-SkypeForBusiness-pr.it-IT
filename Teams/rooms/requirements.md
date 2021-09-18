@@ -15,16 +15,16 @@ ms.collection:
 - M365-collaboration
 description: Informazioni sui requisiti per il supporto Microsoft Teams Rooms, tra cui la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 608a5f2c7a7b696e24c43dfd65add8381060b7d6
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: 910b36c0657e167f2581fc8b00ca4341a2e17a90
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58972914"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432518"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
-Microsoft Teams Rooms scala a diverse dimensioni della stanza. Teams Rooms un'ampia varietà di periferiche audio e video certificate in base alle dimensioni e all'uso della sala. Selezionando il dispositivo e la console di base appropriati, combinati con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione da piccoli spazi di riunione fino a grandi sale riunioni e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
+Microsoft Teams Rooms scala a diverse dimensioni della stanza. Teams Rooms un'ampia varietà di periferiche audio e video certificate in base alle dimensioni e all'uso della sala. Selezionando il dispositivo e la console di base appropriati, combinati con microfoni, altoparlanti, fotocamere e schermi appropriati per lo spazio, è possibile distribuire Microsoft Teams Rooms in spazi di qualsiasi dimensione, da piccoli spazi di riunione fino a grandi sale riunioni e sale riunioni.  Il set completo delle periferiche audio e video certificate che possono essere utilizzate per configurare la sala, è disponibile in [Presentazione dei dispositivi](https://products.office.com/microsoft-teams/across-devices).
 
 In questo articolo vengono riepilogati i requisiti di configurazione e distribuzione dei dispositivi per il supporto di Microsoft Teams Rooms.
 
@@ -126,6 +126,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Aver CAM 520 Pro](https://www.averusa.com/products/conference-camera/cam520pro) |0.0.1000.73 |
 |[Aver CAM 520 Pro 2](https://www.averusa.com/products/conference-camera/cam520pro2) |0.0.7200.3 |
 |[Aver CAM 130](https://www.averusa.com/products/conference-camera/cam130) |0.0.7400.03 |
+|[Aver VB130 Camera Soundbar](https://www.averusa.com/products/conference-camera/vb130) |0.0.7300.71 |
 |[Barra video Di Bose VB1](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb1.html?mc=25_PS_VB_BO_00_BI_&&msclkid=fc99b79880f714727a63e86ea0e5642a&utm_source=bing&utm_medium=cpc&utm_campaign=US%20-%20Brand_Videobar%20VB1_Exact&utm_term=bose%20videobar%20vb1&utm_content=Bose%20Videobar%20VB1&gclid=fc99b79880f714727a63e86ea0e5642a&gclsrc=3p.ds) |19.2|
 |[Hub di conferenza biamp Devio SCR-20CX Web-Based con microfono a soffitto](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9|
 |[Biamp Devio SCR-20TX Web-Based Conferencing Hub con microfono tabletop](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9 |
@@ -170,7 +171,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Jabra 710](http://www.jabra.com/business/speakerphones/jabra-speak-series/jabra-speak-710)   |1.8.0   |
 |[Jabra 810](http://www.jabra.com/supportpages/jabra-speak-810)   |1.2.23   |
 |[Yamaha YVC-1000](http://www.yamaha.com/products/en/communication/usb_conference_speakerphones/yvc-1000/)   |100c   |
-|[Yamaha YVC-1000MS](https://uc.yamaha.com/products/conference-phones/usb-bluetooth/) |1.0.1 |
+|[Yamaha YVC-1000MS](https://uc.yamaha.com/products/conference-phones/usb-bluetooth/) |1.0.0 |
 |[Yealink CP900](https://www.yealink.com/products_150.html) |100.20.0.29 |
 |[Yealink UVC30](https://www.yealink.com/product/microsoft-teams-room-system-uvc30)| 105.420.0.11 |  &#x2714; |
 |[Barra video Yealink UVC40 All-in-one](https://www.yealink.com/product/usb-videobar-uvc40) |128.410.0.10|  
@@ -178,10 +179,9 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) + </br></br> [Shure MXA 910 con Intellimix Ceiling Array Mic](https://www.shure.com/products/microphones/mxa910) | 4.1|
 |[Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300)+</br></br> [Shure MXA 310 Table Array Mic ](https://www.shure.com/products/microphones/mxa310) +</br></br> [Altoparlante MXN5W-C Ceiling](https://www.shure.com/en-US/products/loudspeakers/mxn5)| P300 DSP: 4.1.11 </br> MxA310 Table Array mic: 4.1.41 </br> Altoparlante MXN5W-C: 1.0.4 |
 |[Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) + </br></br> [Shure MXA 910 con Intellimix Ceiling Array Mic](https://www.shure.com/products/microphones/mxa910) +</br></br> [Altoparlante MXN5W-C Ceiling](https://www.shure.com/en-US/products/loudspeakers/mxn5)| P300 DSP: 4.1.11 </br> MXA910 Ceiling Array mic: 4.1.41 </br> Altoparlante MXN5W-C: 1.0.4 |
-|[Shure MXA 710 2ft Table Linear Array Microphone](https://www.shure.com/products/microphones/mxa710) + </br></br> [Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) +</br></br> [Altoparlante a soffitto MXN5-C](https://www.shure.com/en-US/products/loudspeakers/mxn5)| MxA710 2ft Table Linear Array Mic: 1.2.0 </br> P300 DSP: 4.4.8 </br> Altoparlante MXN5-C: 1.1.1 |
+|[Shure MXA 710 2ft Table Linear Array Microphone](https://www.shure.com/products/microphones/mxa710) + </br></br> [Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) +</br></br> [Altoparlante a soffitto MXN5-C](https://www.shure.com/en-US/products/loudspeakers/mxn5)| MXA710 2ft Table Linear Array Mic: 1.2.0 </br> P300 DSP: 4.4.8 </br> Altoparlante MXN5-C: 1.1.1 |
 |[Shure MXA 710 4ft Wall Linear Array Microphone](https://www.shure.com/products/microphones/mxa710) + </br></br> [Shure Intellimix P300 Audio Conferencing Processor](https://www.shure.com/products/mixers/p300) +</br></br> [Altoparlante a soffitto MXN5-C](https://www.shure.com/en-US/products/loudspeakers/mxn5)| MXA710 4ft Wall Linear Array Mic: 1.2.0 </br> P300 DSP: 4.4.8 </br> Altoparlante MXN5-C: 1.1.1 |
 |[Shure MXA 910 con microfono Intellimix Ceiling Array](https://www.shure.com/products/microphones/mxa910) + </br> [Shure Intellimix Room Software](https://www.shure.com/products/software/intellimix_room) +</br> [Crestron UC-C100-T](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Integrator-Kits/UC-C100-T)| Software per la sala Shure Intellimix: 3.0.4.14 </br> Shure MXA 910 con microfono Intellimix Ceiling Array: 4.4.11 </br> Altoparlanti Shure MXN5-C: 1.2.1 </br> Crestron UC-C100-T: windows IOT 19h2/20h2 OS version with 4.8.31.0 MTR app version </br> BIOS: ASUS Tek Computer INC 9934 27/08/2020 </br> CPU: i5-9500TCPU </br> Memoria fisica: 8 GB di RAM |
-|Shure MXA901 +</br> [ANIUSB](https://www.shure.com/en-US/products/mixers/aniusb-matrix) +</br> [Altoparlanti MXN5](https://www.shure.com/en-US/products/loudspeakers/mxn5)| MXA901: 0.4.1 </br> ANIUSB: 4.5.13 </br> Altoparlante MXN5: 1.3.3 |
 |[Biamp Tesira Fore AVB VT4 Fixed audio DSP](https://www.biamp.com/products/tesira-fixed-audio-dsp)+ &Dagger;</br></br> [Sennheiser TeamConnect Ceiling 2 Microphone](https://sennheiser.com/tcc2)+ &Dagger;</br></br> [Tesira EX-UBT](https://www.biamp.com/products/tesira/tesira-expanders) &Dagger; |  Biamp DSP: 3.12.0.15  </br></br> TCC2:1.3.3 </br></br> EX-UBT: 3.12.0.15 |
 |[Biamp Tesira FORTÉ AVB VT4 Audio DSP](https://www.biamp.com/products/tesira-fixed-audio-dsp)+ </br></br>[Biamp Parlé TCM-XA Ceiling Microphone](https://www.biamp.com/products/product-families/parle/parle-microphones)+</br></br> [Altoparlante biamp Desono C-IC6 a soffitto montato](https://www.biamp.com/products/tesira-speakers)| Versione audio FW: 3.15|
 |[Biamp TesiraFORTE AVB VT4](https://www.biamp.com/products/tesira-fixed-audio-dsp)+ </br></br>[Parle TTM-X(Table Mic)](https://www.biamp.com/products/product-families/parle/parle-microphones)+</br></br>[Ex-UBT]() |Versione audio FW: 3.15|

@@ -23,16 +23,16 @@ ms.custom:
 - Licensing
 - seo-marvel-mar2020
 description: Informazioni sull'opzione pay-per-minute per abilitare le funzionalità di audioconferenza per le organizzazioni che usano i contratti multilicenza Microsoft.
-ms.openlocfilehash: ef741bfba6667711c03bd90d2018d7da2093eac8
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: fcad09e00c106b38ad5f5a42add2e01b011c04ed
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58593160"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432678"
 ---
 # <a name="audio-conferencing-pay-per-minute"></a>Audioconferenze con tariffe al minuto
 
-Oltre alla licenza standard per utente per audioconferenza, le organizzazioni con contratti multilicenza e contratti multilicenza possono anche scegliere un'offerta a pagamento al minuto per abilitare le funzionalità di audioconferenza per le organizzazioni.
+Oltre alla licenza standard per utente per audioconferenza, le organizzazioni con contratti multilicenza possono anche scegliere un'offerta a pagamento al minuto per abilitare le funzionalità di audioconferenza per le organizzazioni.
   
 
 Puoi scoprire se il tuo [paese/area geografica è supportato per](country-and-region-availability-for-audio-conferencing-and-calling-plans/country-and-region-availability-for-audio-conferencing-and-calling-plans.md) le audioconferenze.
@@ -52,17 +52,17 @@ Mentre l'offerta di licenza per utente per audioconferenza include l'utilizzo de
 - Chiamate in uscita effettuate a numeri di telefono esterni da una riunione dell'organizzazione.
     
 > [!NOTE]
-> È possibile trovare le tariffe di accesso esterno e di uscita associate a questi tipi di chiamate esaminando la sezione Vedere le tariffe per la chiamata **in** [Audioconferenza](https://products.office.com/microsoft-teams/online-meeting-solutions#Rates).
+> È possibile trovare le tariffe di accesso esterno e di uscita associate a questi tipi di chiamate esaminando la sezione Tariffe di **audioconferenza** in [Audioconferenza](https://www.microsoft.com/microsoft-teams/audio-conferencing).
   
   
-La paga al minuto richiede che l'organizzazione abbia configurato [i Crediti](what-are-communications-credits.md) comunicazioni. Per altre informazioni, vedere [Configurare](set-up-communications-credits-for-your-organization.md) i crediti comunicazioni per l'organizzazione e/o Microsoft Teams [licenze per i componenti aggiuntivi.](https://docs.microsoft.com/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)
+La paga al minuto richiede che l'organizzazione abbia configurato [i Crediti](what-are-communications-credits.md) comunicazioni. Per altre informazioni, vedere [Configurare](set-up-communications-credits-for-your-organization.md) i crediti comunicazioni per l'organizzazione e/o Microsoft Teams [licenze per i componenti aggiuntivi.](/microsoftteams/teams-add-on-licensing/microsoft-teams-add-on-licensing)
 
   
-Per abilitare il pagamento al minuto per i servizi di audioconferenza per gli utenti dell'organizzazione, vedere Provare o acquistare audioconferenze in Microsoft Office 365 [o Office 365](try-or-purchase-audio-conferencing-in-office-365-for-teams.md).
+Per abilitare il pagamento al minuto per i servizi di audioconferenza per gli utenti dell'organizzazione, vedere Provare o acquistare servizi di [audioconferenza in](try-or-purchase-audio-conferencing-in-office-365-for-teams.md)Microsoft Office 365 o Office 365 .
 
 ## <a name="why-is-it-best-for-you"></a>Perché è meglio per te?
 
-- Il pagamento al minuto verrà addebitato solo al minuto per ogni chiamata in ingresso o in uscita di ogni partecipante durante una riunione pianificata (le tariffe variano per le chiamate a pagamento o a pagamento e per la destinazione) invece di usare l'applicazione Skype for Business o Teams in un dispositivo mobile o PC.
+- Il pagamento al minuto verrà addebitato solo al minuto per ogni chiamata in ingresso o in uscita di ogni partecipante durante una riunione pianificata (le tariffe variano per le chiamate a pagamento o a pagamento e per destinazione) invece di usare l'applicazione Skype for Business o Teams in un dispositivo mobile o PC.
 
 - Possibilità di gestire i costi, in quanto gli amministratori possono controllare per limitare i tipi di chiamate in uscita (internazionali e nazionali) che possono essere evasi dalle riunioni di un organizzatore. Vedere Criteri [di restrizione delle chiamate in uscita per le audioconferenze e le chiamate PSTN degli utenti](./outbound-calling-restriction-policies.md)
 

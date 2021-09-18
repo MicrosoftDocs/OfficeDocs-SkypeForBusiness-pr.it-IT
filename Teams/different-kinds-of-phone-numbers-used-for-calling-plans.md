@@ -1,5 +1,5 @@
 ---
-title: Tipi di numeri di telefono usati per i piani per chiamate
+title: Tipi di numeri di telefono usati per Teams
 author: CarolynRowe
 ms.author: crowe
 manager: serdars
@@ -21,17 +21,19 @@ ms.custom:
 - Calling Plans
 - ms.teamsadmincenter.voice.phonenumbers.searchacquire.tooltip.numbertype
 - seo-marvel-apr2020
-description: In questo articolo sono disponibili informazioni sui diversi tipi di numeri di telefono Microsoft Teams per i piani per chiamate.
-ms.openlocfilehash: a565ee1cffd9943ee419907c97ef333b9485451d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: In questo articolo sono disponibili informazioni sui diversi tipi di numeri di telefono Microsoft Teams telefonici.
+ms.openlocfilehash: 0aa75c9052e269d6e45054cdf5b6cf73042c55ac
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58619512"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432648"
 ---
-# <a name="different-kinds-of-phone-numbers-used-for-calling-plans"></a>Diversi tipi di numeri di telefono utilizzati nei Piani per chiamate
+# <a name="types-of-phone-numbers"></a>Tipi di numeri di telefono
 
-Microsoft Teams diversi tipi di numero di telefono a seconda dello scopo per cui si vuole usare il numero di telefono. Teams **i** numeri utente, che possono essere assegnati agli  utenti dell'organizzazione, e i numeri di servizio, assegnati a servizi come audioconferenze, operatori automatici o code di chiamata. I numeri di telefono del servizio hanno una *capacità di chiamata simultanea superiore*  rispetto ai numeri utente. I numeri di telefono del servizio sono disponibili, ma variano in base al paese/area geografica e al tipo di numero (che si tratta di un numero a numero verde o a numero verde). Se sono necessari tipi di numeri aggiuntivi o di altro tipo diversi da quelli presenti nell'interfaccia di amministrazione di Microsoft Teams, è possibile inviare una richiesta di numero di telefono alla Guida del [service desk PSTN.](manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
+Microsoft Teams diversi tipi di numero di telefono a seconda dello scopo per cui si vuole usare il numero di telefono. 
+
+Teams **usa** i numeri utente, che possono essere assegnati  agli utenti dell'organizzazione, e i numeri di servizio, assegnati a servizi come audioconferenze, operatori automatici o code di chiamata. I numeri di telefono del servizio hanno una *capacità di chiamata simultanea superiore*  rispetto ai numeri utente. I numeri di telefono del servizio sono disponibili, ma variano in base al paese/area geografica e al tipo di numero (che si tratta di un numero a numero verde o a numero verde). Se sono necessari tipi di numeri aggiuntivi o di altro tipo diversi da quelli presenti nell'interfaccia di amministrazione di Microsoft Teams, è possibile inviare una richiesta di numero di telefono al [service desk PSTN.](manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
   
 - **Numeri utente**
     
@@ -51,7 +53,7 @@ Microsoft Teams diversi tipi di numero di telefono a seconda dello scopo per cui
         
       - **Numeri non geografici** I numeri non geografici sono numeri nazionali che non hanno una relazione con un'area geografica all'interno di un paese/area geografica. Ad esempio, i numeri non geografici spesso hanno lo stesso costo quando si chiama il numero da qualsiasi punto del paese/area geografica.
    
-  - **Numeri di servizio gratuiti** Questi numeri di servizio in genere non comportano un costo a pedaggio per il chiamante. Teams numeri verde nazionali in più di 60 paesi/aree geografiche.
+  - **Numeri di servizio gratuiti** Questi numeri di servizio in genere non comportano un costo a pedaggio per il chiamante. Teams numeri verde nazionali in oltre 60 paesi/aree geografiche.
     
     > [!CAUTION]
     > Alcuni paesi/aree geografiche e i tipi di numeri di origine, ad esempio le chiamate provenienti da telefoni cellulari, possono in alcuni casi sostenere un costo a pedaggio per il chiamante. 
@@ -61,9 +63,7 @@ Microsoft Teams diversi tipi di numero di telefono a seconda dello scopo per cui
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Domande comuni sul trasferimento dei numeri di telefono](./phone-number-calling-plans/port-order-overview.md)
-
-[Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)
+[Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-landing-page.md)
 
 [Termini e condizioni per le chiamate al numero di emergenza](emergency-calling-terms-and-conditions.md)
 
