@@ -24,12 +24,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.participantandguests
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri di riunione in Teams. Usare tali impostazioni dei criteri per controllare le funzionalità disponibili per i partecipanti alle riunioni programmate dagli utenti.
-ms.openlocfilehash: 4809fab0976eda2b109620f2a2716ccb10e80318
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 92df4086252eb27c47615daafad0179f4c505d95
+ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58728421"
+ms.lasthandoff: 09/17/2021
+ms.locfileid: "59432318"
 ---
 # <a name="manage-meeting-policies-in-teams"></a>Gestione dei criteri riunione in Teams
 
@@ -547,7 +547,7 @@ Per specificare il componente aggiuntivo per le riunioni da rendere disponibile 
 - Impostare il parametro su **TeamsAndSfB** per abilitare il componente aggiuntivo Riunione di Teams e il componente aggiuntivo Skype for Business in Outlook. Questo è il valore predefinito.
 - Impostare il parametro su **Teams** per abilitare solo il componente aggiuntivo Riunione di Teams in Outlook. Questa impostazione dei criteri garantisce che tutte le riunioni future abbiano un collegamento per accedere a una riunione di Teams. Non viene eseguita la migrazione dei collegamenti di accesso alle riunioni di Skype for Business esistenti in Teams. Questa impostazione dei criteri non influisce su presenza, chat, chiamate PSTN o altre funzionalità di Skype for Business, il che significa che gli utenti continueranno a usare Skype for Business per queste funzioni.
 
-  Se si imposta il parametro su **Teams** e poi di nuovo su **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni saranno abilitati. I collegamenti di accesso alle riunioni di Teams esistenti **non verranno** migrati in Skype for Business. Solo le riunioni di Skype for Business pianificate dopo la modifica avranno un collegamento di accesso a una riunione di Skype for Business.
+Se si imposta il parametro su **Teams** e poi di nuovo su **TeamsAndSfB**, entrambi i componenti aggiuntivi per le riunioni saranno abilitati. I collegamenti di accesso alle riunioni di Teams esistenti **non verranno** migrati in Skype for Business. Solo le riunioni di Skype for Business pianificate dopo la modifica avranno un collegamento di accesso a una riunione di Skype for Business.
 
 ## <a name="meeting-policy-settings---video-filters-mode"></a>Impostazioni dei criteri di riunione - Modalità filtri video
 
@@ -581,3 +581,4 @@ Le reazioni nelle riunioni sono disattivate per impostazione predefinita. Se si 
 - [Panoramica di PowerShell per Teams](teams-powershell-overview.md)
 - [Assegnare i criteri agli utenti in Teams](assign-policies.md)
 - [Rimuovere dagli utenti il criterio RestrictedAnonymousAccess per le riunioni di Teams](meeting-policies-restricted-anonymous-access.md)
+- [Configurare webinar in Microsoft Teams](set-up-webinars.md)
