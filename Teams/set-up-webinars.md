@@ -1,5 +1,5 @@
 ---
-title: Configurare i webinar in Microsoft Teams
+title: Configurare webinar in Microsoft Teams
 author: KarliStites
 ms.author: kastites
 manager: serdars
@@ -19,14 +19,14 @@ ms.collection:
 - M365-collaboration
 - m365initiative-meetings
 description: Informazioni su come gestire i criteri webinar per Teams riunioni.
-ms.openlocfilehash: 1ab4f082a270e4d9b3107c0b6ffbb27bd7c70110
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 78c81e25d246dc450ffcd821d22148c330d38f23
+ms.sourcegitcommit: cf2f96dbd485ac4cc822c5a591ccce6b47f12cc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58612975"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59456316"
 ---
-# <a name="set-up-for-webinars-in-microsoft-teams"></a>Configurare i webinar in Microsoft Teams
+# <a name="set-up-for-webinars-in-microsoft-teams"></a>Configurare webinar in Microsoft Teams
 
 Questo articolo illustra come configurare l'organizzazione per ospitare webinar.
 
@@ -73,10 +73,10 @@ Per altre informazioni sul cmdlet, vedere [Set-CsTeamsMeetingPolicy.](/powershel
 
 ### <a name="allow-users-to-schedule-webinars"></a>Consentire agli utenti di pianificare webinar
 
-È possibile limitare la registrazione solo agli utenti dell'organizzazione o aprirla a tutti gli utenti interni ed esterni al tenant. Per impostazione predefinita, **WhoCanRegister** è abilitato e impostato su **Tutti**. Se si vuole disattivare la registrazione alla riunione, impostare **AllowMeetingRegistration** su **False**.
+È possibile limitare la registrazione solo agli utenti dell'organizzazione o aprirla a tutti gli utenti interni ed esterni al tenant. Per impostazione predefinita, **WhoCanRegister** è abilitato e impostato su **Tutti** per il criterio Globale **(impostazione** predefinita a livello di organizzazione). Se si vuole disattivare la registrazione alla riunione, impostare **AllowMeetingRegistration** su **False**.
 
 > [!IMPORTANT]
-> **AllowPrivateMeetingScheduling** deve essere impostato su **True** perché **AllowMeetingRegistration** funzioni. Inoltre, Elenchi Microsoft deve essere configurato in SharePoint. Per altre informazioni, vedere [Impostazioni di controllo per Elenchi Microsoft](/sharepoint/control-lists).
+> **AllowPrivateMeetingScheduling** deve essere impostato su **True** perché **AllowMeetingRegistration** funzioni. Inoltre, Elenchi Microsoft deve essere configurato in SharePoint. Per altre informazioni, vedere [Impostazioni di controllo per Elenchi Microsoft.](/sharepoint/control-lists)
 
 1. Attivare la registrazione alla riunione
 
@@ -105,7 +105,7 @@ Set-CsTeamsMeetingPolicy -WhoCanRegister Everyone
 ```
 
 > [!CAUTION]
-> Se l'accesso anonimo è disattivato nelle impostazioni della riunione, gli utenti anonimi non possono partecipare ai webinar. Per altre informazioni e abilitare questa impostazione, vedere [Impostazioni riunione in Teams.](meeting-settings-in-teams.md)
+> Se l'accesso anonimo è disattivato nelle impostazioni della riunione, gli utenti anonimi non possono partecipare ai webinar. Per altre informazioni e abilitare questa impostazione, vedere [Impostazioni riunione in Teams](meeting-settings-in-teams.md).
 
 ### <a name="collect-meeting-attendance"></a>Raccogliere la partecipazione alla riunione
 

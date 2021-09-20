@@ -13,16 +13,16 @@ ms.collection:
 description: Informazioni su come usare i controlli di PowerShell per gestire Microsoft Teams.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: c3a1bb503ca759835f34220aa8a963f162b73f36d879d4cf3e8a6321e6f5775e
-ms.sourcegitcommit: a17ad3332ca5d2997f85db7835500d8190c34b2f
+ms.openlocfilehash: e878acddd27044ecb57d33c76c1af755eaa7c5d8
+ms.sourcegitcommit: cf2f96dbd485ac4cc822c5a591ccce6b47f12cc7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "54328921"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59456546"
 ---
 # <a name="microsoft-teams-powershell-overview"></a>Microsoft Teams Panoramica di PowerShell
 
-Microsoft Teams Il modulo di PowerShell è un set di cmdlet per la gestione Teams direttamente dalla riga di comando di PowerShell. PowerShell offre funzionalità avanzate per l'automazione che possono essere sfruttate per la gestione del carico Teams lavoro.  
+Microsoft Teams Il modulo di PowerShell è un set di cmdlet per la gestione Teams direttamente dalla riga di comando di PowerShell. PowerShell offre funzionalità avanzate per l'automazione che possono essere sfruttate per gestire il carico Teams lavoro.  
 
 È possibile usare il modulo Microsoft Teams PowerShell usando uno dei metodi seguenti: 
 
@@ -39,7 +39,7 @@ Il Microsoft Teams PowerShell include le caratteristiche seguenti:
 
 ##  <a name="data-collection"></a>Raccolta dei dati 
 
-Microsoft Teams Le impostazioni predefinite del modulo di PowerShell raccolgono i dati di telemetria. Microsoft aggrega i dati raccolti per identificare i modelli di utilizzo e i problemi comuni, ad esempio i cmdlet con scarso successo, per aiutarci a assegnare priorità al lavoro per migliorare l'esperienza Teams PowerShell. Microsoft Teams Il modulo di PowerShell non raccoglie dati privati o personali.  
+Microsoft Teams Le impostazioni predefinite del modulo di PowerShell raccolgono i dati di telemetria. Microsoft aggrega i dati raccolti per identificare i modelli di utilizzo e i problemi comuni, ad esempio i cmdlet con scarso successo, per aiutarci a assegnare priorità al nostro lavoro per migliorare l'esperienza Teams PowerShell. Microsoft Teams Il modulo di PowerShell non raccoglie dati privati o personali. Per altre informazioni, vedere [l'Informativa sulla privacy Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -49,7 +49,7 @@ Microsoft Teams Le impostazioni predefinite del modulo di PowerShell raccolgono 
 
 [Teams Note sulla versione di PowerShell](teams-powershell-release-notes.md)
 
-[Microsoft Teams di cmdlet](/powershell/teams/?view=teams-ps)
+[Microsoft Teams riferimento al cmdlet](/powershell/teams/?view=teams-ps)
 
 [Skype for Business cmdlet](/powershell/skype/intro?view=skype-ps)
 
