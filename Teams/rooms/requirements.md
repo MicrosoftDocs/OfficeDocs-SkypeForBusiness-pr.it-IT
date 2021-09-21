@@ -15,12 +15,12 @@ ms.collection:
 - M365-collaboration
 description: Informazioni sui requisiti per il supporto Microsoft Teams Rooms, tra cui la scelta del dispositivo, dei microfoni, degli altoparlanti, delle fotocamere e degli schermi appropriati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 910b36c0657e167f2581fc8b00ca4341a2e17a90
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: b53aa8cbb25c554ee321ef31cb1bf353a15157d9
+ms.sourcegitcommit: f16e8f51559a46db86fe489075426f05084bb44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432518"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460665"
 ---
 # <a name="microsoft-teams-rooms-requirements"></a>Requisiti per Microsoft Teams Rooms
 
@@ -128,7 +128,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Aver CAM 130](https://www.averusa.com/products/conference-camera/cam130) |0.0.7400.03 |
 |[Aver VB130 Camera Soundbar](https://www.averusa.com/products/conference-camera/vb130) |0.0.7300.71 |
 |[Barra video Di Bose VB1](https://pro.bose.com/en_us/products/conferencing/videobars/bose-videobar-vb1.html?mc=25_PS_VB_BO_00_BI_&&msclkid=fc99b79880f714727a63e86ea0e5642a&utm_source=bing&utm_medium=cpc&utm_campaign=US%20-%20Brand_Videobar%20VB1_Exact&utm_term=bose%20videobar%20vb1&utm_content=Bose%20Videobar%20VB1&gclid=fc99b79880f714727a63e86ea0e5642a&gclsrc=3p.ds) |19.2|
-|[Hub di conferenza biamp Devio SCR-20CX Web-Based con microfono a soffitto](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9|
+|[Biamp Devio SCR-20CX Web-Based Conferencing Hub con microfono a soffitto](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9|
 |[Biamp Devio SCR-20TX Web-Based Conferencing Hub con microfono tabletop](https://www.biamp.com/products/product-families/devio/huddle-room-solutions) |2.2.0.9 |
 |[Crestron Huddly IQ](https://www.crestron.com/Products/Workspace-Solutions/Unified-Communications/Crestron-Flex-Accessories/CCS-CAM-USB-F-400)   | 1.02.09.33901  | 
 |[Huddly Canvas](https://www.huddly.com/blog/say-hello-to-huddly-canvas-our-latest-ai-technology-for-content-capture-and-enhancement/) | 1.3.25 |  &#x2714; |
@@ -150,6 +150,7 @@ Questi dispositivi sono disponibili in [Presentazione degli accessori per sistem
 |[Logitech Group](https://www.logitech.com/product/conferencecam-group)   |8.5.778   |
 |[Logitech PTZ Pro](https://www.logitech.com/product/conferencecam-ptz-pro)   | 1.1.219   |
 |[Logitech PTZ Pro 2](https://www.logitech.com/product/conferencecam-ptz-pro2)   |
+|[Logitech Scribe](https://www.logitech.com/en-us/products/video-conferencing/room-solutions/scribe.960-001332.html) | 1.1.1 | &#x2714; |
 |[Nureva HDL300](https://www.nureva.com/audio-conferencing/hdl300) |2.3.6|
 |[Poly Eagle Eye Cube Camera](https://www.polycom.com/products-services/hd-telepresence-video-conferencing/realpresence-accessories/eagleeye-cameras.html)  |1.2.0 |
 |[Polycom EagleEye IV](https://www.poly.com/us/en/products/video-conferencing/eagleeye/eagleeye-iv)   |1.0.0   |
@@ -211,21 +212,21 @@ Nelle tabelle seguenti sono disponibili suggerimenti per le periferiche in base 
 
 **Periferiche audio certificate per Microsoft Teams Rooms**
 
-|Tipo di sala|Numero di utenti|Distanza massima consigliata del microfono dall'altoparlante|Dispositivo per dimensione massima della stanza|Commenti|
-|:-----|:-----|:-----|:-----|:-----|
-|**Raccolta** <br/> 10' x 9'   |2-4  |1,5 m  |Logitech Connect  |I dispositivi Logitech Connect includono una videocamera che deve essere posizionata nella parte anteriore della sala, non al centro del tavolo, per riprendere i partecipanti alla riunione. |
-|**Piccola** <br/> 16' x 16'  |4-6  |2,0 m  |Jabra 510 <br/> Sennheiser SP20  |Il volume di riproduzione può essere limitato per le sale più grandi.  |
-|**Media**. <br/> 18' x 20'  |6-12  |2,4 m  |Jabra 710 <br/> Jabra 810 <br/> Logitech MeetUp <br/> Logitech Group <br/> Polycom Trio <br/> Polycom CX5100 <br/> Sennheiser SP 220 MS <br/> Yamaha YVC-1000MS  |I dispositivi Logitech MeetUp includono una videocamera che deve essere posizionata nella parte anteriore della stanza, non al centro del tavolo per riprendere i partecipanti alla riunione. <br/> In generale, le sale con lunghi tavoli rettangolari o a forma di U potrebbero trarre vantaggio dai microfoni satellite. <br/> SP 220 MS deve essere usato con un collegamento a margherita.  |
-|**Grande** <br/> 15' x 32'  |12-16  |3 m <br/> Questa distanza si applica anche all'area coperta da ogni microfono satellite connesso.  |Logitech Group + microfoni satellite <br/> Polycom Trio + microfoni satellite <br/> Polycom CX5100 + microfoni satellite <br/> Sennheiser SP 220 MS <br/> Yamaha YVC-1000MS + microfoni satellite  |Tutti i dispositivi audio elencati in questa riga supportano le opzioni per il microfono satellite. <br/> CX5100 include una videocamera integrata a 360 gradi, in modo che il dispositivo possa essere posizionato al centro del tavolo. <br/> SP 220 MS deve essere usato con un collegamento a margherita.  |
+|Tipo di sala|Numero di utenti|Distanza massima consigliata del microfono dall'altoparlante|
+|:-----|:-----|:-----|
+|**Raccolta** <br/> 10' x 9'   |2-4  |1,5 m  |
+|**Piccola** <br/> 16' x 16'  |4-6  |2,0 m  |
+|**Media**. <br/> 18' x 20'  |6-12  |2,4 m  |
+|**Grande** <br/> 15' x 32'  |12-16  |3 m <br/> Questa distanza si applica anche all'area coperta da ogni microfono satellite connesso.  |
 
 **Periferiche video certificate per Microsoft Teams Rooms**
 
-|Tipo di sala|Numero di utenti|Dispositivo per dimensioni della sala ottimali|Commenti|
-|:-----|:-----|:-----|:-----|
-|**Raccolta** <br/> 10' x 9'  |2-4  |Logitech Connect <br/> Logitech MeetUp <br/> Polycom CX5100  ||
-|**Piccola** <br/> 16' x 16'  |4-6  |Logitech C930e <br/> Logitech MeetUp <br/> Logitech BRIO <br/> Logitech PTZ Pro <br/> Polycom MSR <br/> Polycom CX5100  |Logitech PTZ Pro spesso integrato con Logitech Group  |
-|**Media**. <br/> 18' x 20'  |6-12  |Logitech MeetUp <br/> Logitech BRIO <br/> Logitech PTZ Pro <br/> Polycom MSR <br/> Polycom CX5100  ||
-|**Grande** <br/> 15' x 32'  |12-16  |Logitech PTZ Pro <br/> Polycom MSR <br/> Polycom CX5100  ||
+|Tipo di sala|Numero di utenti|
+|:-----|:-----|
+|**Raccolta** <br/> 10' x 9'  |2-4  |
+|**Piccola** <br/> 16' x 16'  |4-6  |
+|**Media**. <br/> 18' x 20'  |6-12  |
+|**Grande** <br/> 15' x 32'  |12-16  |
 
  > [!NOTE]
  > La risoluzione dello schermo in posizione anteriore nella sala deve essere impostata su un valore non superiore a 1920x1080p.

@@ -16,12 +16,12 @@ search.appverid: MET150
 description: Informazioni sui log di debug, multimediali e desktop prodotti da Microsoft Teams, dove possono essere trovati e su come possono essere utili per il monitoraggio e la risoluzione dei problemi.
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a82b2e9fe2db41e0609b7483bded813eae29cf92
-ms.sourcegitcommit: cf2f96dbd485ac4cc822c5a591ccce6b47f12cc7
+ms.openlocfilehash: 8f29271485024445d3494c0b2ee7213253bd64ca
+ms.sourcegitcommit: f16e8f51559a46db86fe489075426f05084bb44e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "59456526"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "59460645"
 ---
 # <a name="use-log-files-to-monitor-and-troubleshoot-microsoft-teams"></a>Usare i file di log per monitorare e risolvere i Microsoft Teams
 
@@ -46,15 +46,14 @@ Windows: fare clic con il pulsante destro del mouse sull'icona Teams sulla barra
 
 Mac: selezionare il menu ? e scegliere **Raccogli file di supporto.**
 
-
-I log di debug, desktop e multimediali verranno raccolti in un'unica cartella con il nome MSTeams Diagnostics <local data and time> Log. Questa cartella può essere compressa e condivisa quando si apre una richiesta di supporto con il supporto tecnico Microsoft. La cartella conterrà cartelle per Desktop, Riunione (elementi multimediali) e Debug (Web). È possibile raccogliere i file usando le scelte rapide da tastiera seguenti:
+I log di debug, desktop e multimediali verranno raccolti in un'unica cartella con il nome _MSTeams Diagnostics Log. \<local data and time\>_ Questa cartella può essere compressa e condivisa quando si apre una richiesta di supporto con il supporto tecnico Microsoft. La cartella conterrà cartelle per Desktop, Riunione (elementi multimediali) e Debug (Web). È possibile raccogliere i file usando le scelte rapide da tastiera seguenti:
 
 Windows: CTRL + ALT + MAIUSC + 1
 
 Mac: OPZIONE+ COMANDO + MAIUSC + 1
 
 
-La registrazione multimediale è disattivata per impostazione predefinita. Per abilitare la registrazione multimediale, gli utenti devono attivare l'opzione nel client Teams dati. Passare a **Impostazioni** Generale e selezionare Abilita registrazione per diagnostica riunione  >   **(è necessario riavviare Teams).** Il Teams client deve essere riavviato per avviare la registrazione.
+La registrazione multimediale è disattivata per impostazione predefinita. Per abilitare la registrazione multimediale, gli utenti devono attivare l'opzione nel client Teams. Passare a **Impostazioni** Generale e selezionare Abilita registrazione per diagnostica riunione  >   **(è necessario riavviare Teams).** Il Teams client deve essere riavviato per avviare la registrazione.
 
 Se si verifica un problema con una riunione o un evento live specifico, è utile avere l'URL associato alla riunione. In questo modo vengono fornite informazioni aggiuntive che consentono di individuare l'esatta riunione o l'evento live nei log. Queste informazioni possono essere raccolte da qualsiasi partecipante per una riunione o da un relatore o un produttore per un evento live. Questo URL può essere acquisito passando il puntatore del mouse sull'URL di join e scegliendo **Copia collegamento ipertestuale.**
 
@@ -81,7 +80,7 @@ La tabella seguente descrive i vari client e i log associati. I file di log veng
 |iOS     |-         |-         |-         |
 |Android     |-         |-         |-         |
 
-Per un elenco completo dei sistemi operativi e dei browser supportati, vedere [Ottenere i client per Microsoft Teams](get-clients.md).
+Per un elenco completo dei sistemi operativi e dei browser supportati, vedere Ottenere [i client per Microsoft Teams](get-clients.md).
 
 ## <a name="debug-logs"></a>Log di debug
 
@@ -128,7 +127,7 @@ I file saranno disponibili in ~/.config/Microsoft/Microsoft Teams/logs.txt.
 
 ## <a name="browser-trace"></a>Traccia del browser
 
-Per alcune categorie di errori, il supporto Tecnico Microsoft potrebbe richiedere la raccolta di una traccia del browser. Queste informazioni possono fornire dettagli importanti sullo stato del client Teams client quando si verifica l'errore.
+Per alcune categorie di errori, il supporto Tecnico Microsoft potrebbe richiedere la raccolta di una traccia del browser. Queste informazioni possono fornire dettagli importanti sullo stato del client Teams quando si verifica l'errore.
 
 Prima di avviare la traccia del browser, assicurarsi di aver eseguito l'accesso a Teams. È importante eseguire questa operazione prima di avviare la traccia in modo che la traccia non contenga informazioni di accesso riservate.
 
