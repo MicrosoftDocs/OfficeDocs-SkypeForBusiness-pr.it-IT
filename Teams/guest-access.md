@@ -19,12 +19,12 @@ ms.collection:
 appliesto:
 - Microsoft Teams
 description: L'accesso guest in Microsoft Teams consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali.
-ms.openlocfilehash: 83ad01ef738cc8e68d0cfdf41ea082493eb7c7b1
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: aa14fc3a59d893b152f96d31a20c46119f8a71f9
+ms.sourcegitcommit: cf2f96dbd485ac4cc822c5a591ccce6b47f12cc7
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603395"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "59456336"
 ---
 # <a name="guest-access-in-microsoft-teams"></a>Accesso guest in Microsoft Teams
 
@@ -53,7 +53,7 @@ L'accesso guest in Teams richiede la configurazione di altre impostazioni in Mic
 - Per configurare l'accesso degli utenti guest per l’uso generale di Teams, vedere [Collaborare con gli utenti guest in un team](/microsoft-365/solutions/collaborate-as-team).
 - Per collaborare con un'organizzazione partner che usa Azure Active Directory e consentire agli utenti guest di iscriversi autonomamente per l'accesso a Teams, vedere [Creare una Extranet B2B con utenti guest gestiti](/microsoft-365/solutions/b2b-extranet).
 
-L'accesso guest in Teams è un'impostazione a livello di organizzazione ed è disattivato per impostazione predefinita. È possibile controllare l'accesso guest ai singoli team usando le [etichette di riservatezza](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+L'accesso guest in Teams è un'impostazione a livello di organizzazione ed è attivato per impostazione predefinita. È possibile controllare l'accesso guest ai singoli team usando le [etichette di riservatezza](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 ### <a name="turning-guest-access-off"></a>Disattivazione dell’accesso guest
 
