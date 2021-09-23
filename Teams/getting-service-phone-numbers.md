@@ -22,25 +22,23 @@ ms.custom:
 - Phone System
 - seo-marvel-mar2020
 description: Scopri come ottenere nuovi numeri di telefono e trasferire o trasferire i numeri esistenti per audioconferenza, operatori automatici e code di chiamata (numeri di servizio) per Teams.
-ms.openlocfilehash: 6a065c5661fc4b0a716d2aab31687e20645473fb
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: abb313a169c3f9b3626e219f64810e6333e6147b
+ms.sourcegitcommit: b2566e64e02cb51d18836630d3aa9b6f27b924da
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432498"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59491726"
 ---
-# <a name="srvice-phone-numbers-for-calling-plans"></a>Numeri di telefono di Srvice per Piani per chiamate
-
-**NOTA PER I REVISORI: QUESTO SEMBRA SPECIFICO PER I PIANI DI CHIAMATA. È CONSIGLIABILE SPOSTARLO NEL NODO PIANI PER CHIAMATE?**
+# <a name="service-phone-numbers-for-calling-plans"></a>Numeri di telefono del servizio per i piani per chiamate
 
 Oltre a ottenere numeri di telefono per gli [utenti,](./getting-phone-numbers-for-your-users.md)è possibile ottenere numeri a numero verde o a numero verde per servizi come audioconferenza (per bridge di conferenza), Operatori automatici e Code di chiamata (detti anche numeri di servizio). I numeri di servizio hanno una capacità di chiamate contemporanee superiore ai numeri di telefono per utenti o abbonati. Ad esempio, un numero di servizio può gestire centinaia di chiamate contemporaneamente, mentre il numero di telefono di un utente può gestire solo alcune chiamate contemporaneamente.
   
 > [!NOTE]
-> Prima di poter ottenere i numeri verde, è necessario configurare i Crediti comunicazioni. Per altre informazioni, vedere Configurare i crediti [comunicazioni per l'organizzazione.](./set-up-communications-credits-for-your-organization.md)
+> Prima di poter ottenere i numeri verde, è necessario configurare i Crediti comunicazioni. Per altre informazioni, vedere [Configurare i crediti comunicazioni per l'organizzazione.](./set-up-communications-credits-for-your-organization.md)
   
 Esistono tre modi per ottenere i numeri di servizio:
   
-- **Usare l'Microsoft Teams di amministrazione.** Per alcuni paesi e aree geografiche, è possibile ottenere i numeri di servizio usando l'Microsoft Teams di amministrazione. Vedere [Ottenere nuovi numeri di servizio.](#get-new-service-numbers)
+- **Usare l'Microsoft Teams di amministrazione.** Per alcuni paesi e aree geografiche, è possibile ottenere i numeri di servizio usando l'interfaccia Microsoft Teams di amministrazione. Vedere [Ottenere nuovi numeri di servizio.](#get-new-service-numbers)
 
 - **Importa i tuoi numeri esistenti.** È possibile trasferire o trasferire i numeri esistenti dal provider di servizi o dal gestore telefonico corrente. Per ulteriori informazioni su come eseguire questa operazione, vedere [Trasferire numeri di telefono in Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md) o [Gestire i numeri di telefono per la propria organizzazione](/microsoftteams/manage-phone-numbers-for-your-organization).  
   
@@ -70,12 +68,12 @@ Per ottenere nuovi numeri di servizio, nell'Teams di amministrazione:
 
 ## <a name="port-or-transfer-existing-service-numbers"></a>Portabilità o trasferimento dei numeri di servizio
 
-Per trasferire i numeri di telefono dal provider di servizi o dall'operatore corrente a Teams, è possibile usare la procedura guidata di porting nell'Microsoft Teams di amministrazione. Seguire la procedura descritta in [Trasferire i numeri di telefono Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
+Per trasferire i numeri di telefono dal provider di servizi o dall'operatore corrente a Teams, è possibile usare la procedura guidata di porting nell'interfaccia di Microsoft Teams di amministrazione. Seguire la procedura descritta in [Trasferire numeri di telefono per Teams](./phone-number-calling-plans/transfer-phone-numbers-to-teams.md).
 
-Se il paese o l'area geografica non è elencato nella procedura guidata di porting, è possibile inviare manualmente un ordine di trasferimento o passare [a](phone-number-calling-plans/manually-submit-port-order.md) Gestire i numeri di telefono per l'organizzazione, [](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)selezionare il paese o l'area geografica e quindi scaricare una lettera di autorizzazione (LOA). Sarà necessario inviare ordini di trasferimento separati per ogni tipo di numero di servizio(ad esempio, numero verde e numero verde) che si trasferirà con un contratto loA. In LOA è necessario selezionare il tipo corretto di numero di servizio. Assicurati di specificare che stai trasferendo un numero di servizio (e non un numero di utente o abbonato) o che la capacità di chiamata simultanea potrebbe non essere sufficiente per gestire i volumi delle chiamate.  
+Se il paese o l'area geografica non è elencato nella procedura guidata di porting, è possibile inviare manualmente un ordine di trasferimento o passare [a](phone-number-calling-plans/manually-submit-port-order.md) Gestisci numeri di telefono per l'organizzazione, [](manage-phone-numbers-for-your-organization/manage-phone-numbers-for-your-organization.md)selezionare il paese o l'area geografica e quindi scaricare una lettera di autorizzazione (LOA). Sarà necessario inviare ordini di trasferimento separati per ogni tipo di numero di servizio(ad esempio, numero verde e numero verde) che si trasferirà con un contratto LOA. In LOA è necessario selezionare il tipo corretto di numero di servizio. Assicurati di specificare che stai trasferendo un numero di servizio (e non un numero di utente o abbonato) o che la capacità di chiamata simultanea potrebbe non essere sufficiente per gestire i volumi delle chiamate.  
 
 > [!NOTE]
-> Se è necessario ottenere più numeri di telefono, [contattare il service desk PSTN.](manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
+> Se è necessario ottenere più numeri di telefono, contattare [il service desk PSTN.](manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)
 
 ## <a name="view-the-phone-numbers-for-your-organization"></a>Visualizzare i numeri di telefono dell'organizzazione
 

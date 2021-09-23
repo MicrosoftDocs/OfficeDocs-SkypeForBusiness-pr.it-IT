@@ -17,12 +17,12 @@ f1.keywords:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come usare le etichette di riservatezza per proteggere i team in Microsoft Teams.
-ms.openlocfilehash: 5337f623a8535a840f1eead45c53506fb8f3fee7
-ms.sourcegitcommit: 1c2364fbefd95151f0847a35e8bc7c4c1b3892f5
+ms.openlocfilehash: 135049e80d6a8c0e008886ca924cca64b5943695
+ms.sourcegitcommit: 9fd9cfe3683503f3c35ad5591324396e2532caef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2021
-ms.locfileid: "58935842"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59496693"
 ---
 # <a name="sensitivity-labels-for-microsoft-teams"></a>Etichette di riservatezza per Microsoft Teams
 
@@ -30,13 +30,13 @@ ms.locfileid: "58935842"
 
 Le etichette di riservatezza non sono attualmente supportate nei team di classe per i clienti Teams SKU Education. Per altre informazioni sulle licenze, vedere la [descrizione Microsoft Teams servizio.](/office365/servicedescriptions/teams-service-description)
 
-## <a name="whats-the-difference-between-sensitivity-labels-and-teams-classification-labels"></a>Qual è la differenza tra le etichette di riservatezza e Teams classificazioni?
+## <a name="whats-the-difference-between-sensitivity-labels-and-teams-classification"></a>Qual è la differenza tra le etichette di riservatezza e Teams classificazione?
 
-Le etichette di riservatezza sono diverse dalle etichette di classificazione, note anche come classificazione dei gruppi di Azure AD. Le etichette di classificazione sono stringhe di testo che possono essere associate a un gruppo di Microsoft 365 ma a cui non sono associati criteri effettivi. Le etichette di classificazione vengono usate come metadati e quindi è necessario usare altri metodi, ad esempio gli strumenti interni e gli script, per applicare i criteri.
+Le etichette di riservatezza sono diverse dalla Teams, nota anche come classificazione dei gruppi di Azure AD. Le classificazioni sono stringhe di testo che possono essere associate a un gruppo Microsoft 365 ma a cui non sono associati criteri effettivi. Si usa la classificazione come metadati e quindi è necessario usare altri metodi, ad esempio strumenti interni e script, per applicare i criteri.
 
 Il vantaggio dell'uso delle etichette di riservatezza è che i criteri vengono applicati automaticamente end-to-end tramite una combinazione della piattaforma gruppi di Microsoft 365, del Centro conformità e dei servizi di Teams. Le etichette di riservatezza offrono un potente supporto dell'infrastruttura per proteggere i dati sensibili dell'organizzazione e garantire la conformità ai criteri o alle normative interne.
 
-Se attualmente si usano etichette di classificazione, vedere la documentazione seguente per altre informazioni e istruzioni su come eseguirne la migrazione alle etichette di riservatezza: Classificazione classica dei gruppi [di Azure AD.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)
+Se attualmente si usa la classificazione Teams, vedere la documentazione seguente per altre informazioni e istruzioni su come convertire questi valori in etichette di riservatezza: classificazione classica dei gruppi di [Azure AD.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites#classic-azure-ad-group-classification)
 
 ## <a name="example-scenarios-for-sensitivity-labels"></a>Scenari di esempio per le etichette di riservatezza
 
@@ -59,10 +59,7 @@ Analogamente, si crea e si pubblica un'etichetta di riservatezza denominata "Gen
 
 ![Screenshot dell'etichetta di riservatezza Generale.](media/sensitivity-labels-general-example.png)
 
-Quando il team viene creato, l'etichetta di riservatezza è visibile nell'angolo in alto a destra dei canali del team. 
-
-> [!NOTE]
-> Se si usano etichette gerarchiche padre-figlio, ad esempio "Riservato\Finanze", nell'intestazione del canale verrà visualizzata solo l'etichetta padre.
+Quando il team viene creato, l'etichetta di riservatezza è visibile agli utenti nell'angolo in alto a destra dei canali del team. 
 
 ![Screenshot dell'etichetta di riservatezza nel canale del team.](media/sensitivity-labels-channel.png)
 
@@ -84,22 +81,18 @@ Le etichette di riservatezza sono visibili anche nelle proprietà del team e nel
 
 Prima di usare le etichette di riservatezza per Teams, tenere presenti le limitazioni seguenti:
 
-- **I nomi delle etichette padre non vengono visualizzati per le etichette secondarie**
-    
-    Teams supporta le etichette secondarie, ma non visualizza il nome dell'etichetta padre. Ad esempio, **Tutti** \\ **i dipendenti riservati** viene visualizzato come Tutti i **dipendenti**.
-
 - **Le etichette di riservatezza non sono supportate dalle API Teams Graph, dai cmdlet di PowerShell e dai modelli**
     
-    Gli utenti non potranno specificare le etichette di riservatezza durante la creazione di team direttamente tramite api Teams Graph, cmdlet di PowerShell Teams e modelli di Teams. Tuttavia, i Graph moderni e i cmdlet di PowerShell consentono la creazione di gruppi con etichette. In questo modo gli utenti possono prima creare gruppi con etichette usando le API Graph o i cmdlet di PowerShell e quindi convertire questi gruppi in Teams.
+    Gli utenti non saranno in grado di specificare le etichette di riservatezza durante la creazione di team direttamente tramite api Teams Graph, cmdlet Teams PowerShell e Teams modelli. Tuttavia, i Graph moderni e i cmdlet di PowerShell consentono la creazione di gruppi con etichette. In questo modo gli utenti possono prima creare gruppi con etichette usando le API di Graph o i cmdlet di PowerShell e quindi convertire questi gruppi in Teams.
 
 - **Supporto per i canali privati**
     
-    I canali privati creati in un team ereditano l'etichetta di riservatezza applicata a un team. La stessa etichetta viene applicata automaticamente nella raccolta SharePoint per il canale privato.
+    I canali privati creati in un team ereditano l'etichetta di riservatezza applicata a un team. La stessa etichetta viene applicata automaticamente nella raccolta siti SharePoint per il canale privato.
     
-    Tuttavia, se un utente modifica direttamente l'etichetta di riservatezza in un sito di SharePoint per un canale privato, la modifica dell'etichetta non viene riflessa nel client Teams. In questo scenario, gli utenti continuano a vedere l'etichetta di riservatezza originale applicata al team nell'intestazione del canale privato.
+    Tuttavia, se un utente modifica direttamente l'etichetta di riservatezza in un sito di SharePoint per un canale privato, tale modifica non viene riflessa nel client Teams. In questo scenario, gli utenti continuano a vedere l'etichetta di riservatezza originale applicata al team nell'intestazione del canale privato.
 
 ## <a name="how-to-create-and-configure-sensitivity-labels-for-teams"></a>Come creare e configurare etichette di riservatezza per Teams
 
-Seguire le istruzioni della documentazione Microsoft 365 per creare e configurare le etichette di riservatezza per Teams: 
+Usare le istruzioni della documentazione Microsoft 365 per creare e configurare le etichette di riservatezza per Teams: 
 
-- [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, Microsoft 365 gruppi e SharePoint siti.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
+- Usare le etichette di riservatezza per proteggere il contenuto [in Microsoft Teams, Microsoft 365 gruppi e SharePoint siti.](/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)

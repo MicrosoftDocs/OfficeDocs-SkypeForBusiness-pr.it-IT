@@ -21,16 +21,16 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Informazioni su come cercare numeri di telefono che è possibile assegnare agli utenti, in base al paese o all'area geografica e alla città, e specificare la quantità di numeri necessaria.
-ms.openlocfilehash: fc7edf9c31f0b934bb2e1dea2fb44437b8092c59
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: cb4bcac5a79f782e87ce53eb9cb93f8a024260bf
+ms.sourcegitcommit: 9fd9cfe3683503f3c35ad5591324396e2532caef
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432248"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59496683"
 ---
 # <a name="search-for-telephone-numbers-for-users"></a>Cercare numeri di telefono per gli utenti
 
-Quando si configurano gli utenti dell'organizzazione per effettuare e ricevere chiamate telefoniche con numeri di telefono forniti da Microsoft, è necessario prima di tutto usare l'interfaccia di amministrazione di Microsoft Teams e acquisire i numeri di telefono da assegnare **agli** utenti. Il numero di telefono assegnato a un utente sarà un numero di telefono acquistato in precedenza per l'organizzazione. il numero verrà elencato nell'elenco a discesa quando si modificano le proprietà dell'utente e si fa clic su **Assegna**.
+Quando si configurano utenti dell'organizzazione per effettuare e ricevere chiamate telefoniche tramite numeri di telefono forniti da Microsoft, è necessario prima di tutto usare l'interfaccia di amministrazione di Microsoft Teams e acquisire i numeri di telefono da assegnare **agli** utenti. Il numero di telefono assegnato a un utente sarà un numero di telefono acquistato in precedenza per l'organizzazione. il numero verrà elencato nell'elenco a discesa quando si modificano le proprietà dell'utente e si fa clic su **Assegna**.
   
 Prima di poter assegnare numeri di telefono forniti da  Microsoft agli utenti, è necessario usare la pagina Ottieni nuovi numeri per cercare i numeri di telefono disponibili. È possibile eseguire la ricerca in base al paese **(mercato),** al tipo di numero e alla posizione **e** quindi immettere la quantità di numeri di telefono necessari per gli utenti.La pagina limiterà automaticamente la quantità in base al numero di elementi ancora disponibili per l'acquisizione. 
 
@@ -65,7 +65,7 @@ Per cercare numeri di telefono per gli utenti:
 8. Nella pagina **Ottieni numeri** selezionare i numeri di telefono desiderati, fare clic su **Acquisisci numeri** e quindi su **Avanti.**
 
     > [!IMPORTANT]
-    > È possibile acquisire più numeri di telefono rispetto alle licenze Microsoft. Per determinare il numero di numeri di telefono che è possibile acquisire, prendere il numero di licenze del piano per chiamate Microsoft, aggiungere il 10% del numero di licenze, quindi aggiungere 10 e quindi rimuovere tutte le licenze già acquistate. Ad esempio, se si hanno 100 licenze Per chiamate nazionali **Microsot** e/o Microsoft International Calling **Plan,** è possibile prenotare 120 numeri di telefono, presupponendo che alcuni numeri di telefono non siano già stati acquistati per quei 100 utenti. Per altre informazioni, vedere [Quanti numeri di telefono è possibile ottenere?](./how-many-phone-numbers-can-you-get.md)
+    > È possibile acquisire più numeri di telefono rispetto alle licenze Microsoft. Per determinare il numero di numeri di telefono che è possibile acquisire, prendere il numero di licenze del piano per chiamate Microsoft, aggiungere il 10% del numero di licenze, quindi aggiungere 10 e quindi rimuovere tutte le licenze già acquistate. Ad esempio, se si hanno 100 licenze **Per** chiamate nazionali Microsoft e/o **Piano** per chiamate internazionali Microsoft, è possibile prenotare 120 numeri di telefono, presupponendo che alcuni numeri di telefono non siano già stati acquistati per quei 100 utenti. Per altre informazioni, vedere [Quanti numeri di telefono è possibile ottenere?](./how-many-phone-numbers-can-you-get.md)
 
 9. Nella pagina **Conferma** verificare le scelte effettuate e quindi fare clic su **Ordina.**
 
