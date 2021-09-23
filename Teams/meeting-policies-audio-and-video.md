@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
-ms.openlocfilehash: 9b7c2fd2ac98237383b8aaa1dff8fa764c6df2be
-ms.sourcegitcommit: 69a5d4994ef75b9c16efa99554fb7f2ee1ccf52a
+ms.openlocfilehash: 7dcd3f73d29dcbe635793d4a67db602b8e4c8a1c
+ms.sourcegitcommit: 5f19df90443810e027085f8b38d22218e4123a16
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2021
-ms.locfileid: "58973034"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482390"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri per le riunioni per & video
 
@@ -149,23 +149,23 @@ Per le riunioni che necessitano di un'esperienza video di qualità ottimale, ad 
 
 Questo è un criterio per utente. Questa impostazione controlla se gli utenti possono personalizzare lo sfondo del video in una riunione.
 
-Attualmente, è possibile usare solo PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegnarlo agli utenti.
+È possibile usare sia l Teams di amministrazione di PowerShell che l'interfaccia di amministrazione di PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegnarlo agli utenti.
 
-Per specificare se gli utenti possono personalizzare lo sfondo del video in una riunione, impostare il parametro **VideoFiltersMode** come indicato di seguito:
+Per specificare se gli utenti possono personalizzare lo sfondo del video in una riunione, impostare il parametro **VideoFiltersMode** (impostazione Seleziona **filtri video** nell'interfaccia di amministrazione di Teams) come segue:
 
-|Valore dell'impostazione in PowerShell |Comportamento  |
-|---------|---------|
-|**NoFilters**     |Un utente non può personalizzare lo sfondo del video.|
-|**BlurOnly**     |Gli utenti hanno la possibilità di sfocare lo sfondo del video. |
-|**BlurandDefaultBackgrounds**     |Gli utenti hanno la possibilità di sfocare lo sfondo del video o di scegliere il set predefinito di immagini da usare come sfondo. |
-|**AllFilters**     |L'utente ha la possibilità di sfocare lo sfondo del video, di scegliere il set predefinito di immagini o di caricare immagini personalizzate da usare come sfondo. |
+|Valore dell'impostazione in PowerShell|Impostazione del valore nell'Teams di amministrazione |Comportamento  |
+|---------|---------|---------|
+|**NoFilters** |**Nessun filtro**    |Un utente non può personalizzare lo sfondo del video.|
+|**BlurOnly**     |**Solo sfocatura dello sfondo**|Gli utenti hanno la possibilità di sfocare lo sfondo del video. |
+|**BlurandDefaultBackgrounds**|**Sfocatura dello sfondo e immagini predefinite**     |Gli utenti hanno la possibilità di sfocare lo sfondo del video o di scegliere il set predefinito di immagini da usare come sfondo. |
+|**AllFilters**|**Tutti i filtri**     |L'utente ha la possibilità di sfocare lo sfondo del video, di scegliere il set predefinito di immagini o di caricare immagini personalizzate da usare come sfondo. |
 
 > [!NOTE]
 > Le immagini caricate dagli utenti non vengono analizzate da Teams. Se si usa l'impostazione **AllFilters**, sono previsti criteri interni dell'organizzazione per impedire agli utenti di caricare immagini offensive o inappropriate o di cui l'organizzazione non dispone dei diritti di utilizzo per gli sfondi delle riunioni di Teams.
 
 ### <a name="allow-custom-background-settings"></a>Consenti impostazioni di sfondo personalizzate
 
-È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa caratteristica consente alle aziende di applicare il marchio aziendale alle riunioni Teams riunioni.
+È possibile aggiungere immagini di sfondo personalizzate da usare per ogni tenant. Questa caratteristica consente alle aziende di applicare il marchio aziendale Teams riunioni.
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
