@@ -21,13 +21,13 @@ f1.keywords:
 - CSH
 ms.custom:
 - Phone System
-description: 'Informazioni su come configurare le Cloud Voicemail per gli utenti. '
-ms.openlocfilehash: c9e073a61501143c478d78b9184602f4eebe9264
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Informazioni su come configurare Cloud Voicemail per gli utenti. '
+ms.openlocfilehash: 37cf89d4c728cab491d0312762a2c845bb711dcd
+ms.sourcegitcommit: 5f19df90443810e027085f8b38d22218e4123a16
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58590730"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "59482420"
 ---
 # <a name="set-up-cloud-voicemail"></a>Configurare Cloud Voicemail
 
@@ -37,36 +37,37 @@ Questo articolo è per l'amministratore Microsoft 365 o Office 365 come descritt
 > Cloud Voicemail supporta il deposito dei messaggi della segreteria telefonica solo in una cassetta postale Exchange e non supporta sistemi di posta elettronica di terze parti. 
 
 > [!NOTE]
-> Quando un delegato risponde a una chiamata per conto di un delegato, le notifiche non sono disponibili Cloud Voicemail. Gli utenti possono ricevere notifiche per le chiamate perse.
+> Quando un delegato risponde a una chiamata per conto di un delegato, le notifiche non sono disponibili in Cloud Voicemail. Gli utenti possono ricevere notifiche per le chiamate perse.
 
 ## <a name="cloud-voicemail-for-teams-users"></a>Cloud Voicemail per Teams utenti
 
-Per Teams utenti, Cloud Voicemail viene automaticamente configurato ed eseguito il provisioning. Si noti che per Sistema telefonico non è necessaria una licenza Cloud Voicemail. 
+Per Teams utenti, Cloud Voicemail viene configurato ed eseguito automaticamente il provisioning. Si noti che per Sistema telefonico non è necessaria una licenza Cloud Voicemail. 
 
-## <a name="set-up-cloud-voicemail-for-exchange-server-mailbox-users"></a>Configurare i Cloud Voicemail per gli utenti Exchange Server cassette postali
+## <a name="set-up-cloud-voicemail-for-exchange-server-mailbox-users"></a>Configurare le Cloud Voicemail per gli utenti Exchange Server cassette postali
 
-Le informazioni seguenti riguardano la configurazione di Cloud Voicemail per l'utilizzo con utenti online per Sistema telefonico ma hanno la propria cassetta postale Exchange Server. 
+Le informazioni seguenti riguardano la configurazione di Cloud Voicemail per l'utilizzo con utenti che sono online per Sistema telefonico ma hanno la propria cassetta postale Exchange Server. 
   
-1. I messaggi della segreteria telefonica vengono recapitati alla cassetta postale Exchange degli utenti tramite SMTP instradati tramite Exchange Online Protection. Per abilitare il recapito corretto di questi messaggi, assicurarsi che i connettori Exchange siano configurati correttamente tra i server Exchange e Exchange Online Protection; [Usare Connettori per configurare la posta Flow](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). 
+1. I messaggi della segreteria telefonica vengono recapitati alla cassetta postale Exchange degli utenti tramite SMTP instradati tramite Exchange Online Protection. Per consentire il recapito corretto di questi messaggi, assicurarsi che i connettori Exchange siano configurati correttamente tra i server di Exchange e Exchange Online Protection; [Usare Connettori per configurare la posta Flow](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow). 
 
-2. Per abilitare le funzionalità della segreteria telefonica, ad esempio la personalizzazione dei messaggi di saluto e della segreteria telefonica visiva nei client Skype for Business, è necessaria la connettività da Microsoft 365 o Office 365 alla cassetta postale del server Exchange tramite servizi Web Exchange. Per abilitare questa connettività, è necessario configurare il nuovo protocollo di autenticazione Oauth di Exchange descritto in Configurare l'autenticazione [OAuth](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)tra organizzazioni di Exchange e Exchange Online oppure eseguire la procedura guidata ibrida di Exchange da Exchange 2013 CU5 o versione successiva. È inoltre necessario configurare l'integrazione e Oauth tra Skype for Business Online e il server Exchange descritto in Configurare l'integrazione e [OAuth](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises)tra Skype for Business Online e Exchange Server . 
+2. Per abilitare le funzionalità della segreteria telefonica, come la personalizzazione dei messaggi di saluto e della segreteria telefonica visiva nei client Skype for Business, è necessaria la connettività da Microsoft 365 o Office 365 alla cassetta postale del server Exchange tramite servizi Web Exchange. Per abilitare questa connettività, è necessario configurare il nuovo protocollo di autenticazione Oauth di Exchange descritto in Configurare l'autenticazione [OAuth](/exchange/configure-oauth-authentication-between-exchange-and-exchange-online-organizations-exchange-2013-help)tra organizzazioni di Exchange e Exchange Online oppure eseguire la procedura guidata ibrida di Exchange da Exchange 2013 CU5 o versione successiva. Inoltre, è necessario configurare l'integrazione e Oauth tra Skype for Business Online e il server Exchange descritto in Configurare l'integrazione e [OAuth](/skypeforbusiness/deploy/integrate-with-exchange-server/oauth-with-online-and-on-premises)tra Skype for Business Online e Exchange Server . 
 
-## <a name="set-up-cloud-voicemail-for-skype-for-business-server-users"></a>Configurare i Cloud Voicemail per Skype for Business Server utenti
+## <a name="set-up-cloud-voicemail-for-skype-for-business-server-users"></a>Configurare le Cloud Voicemail per Skype for Business Server utenti
 
-Per configurare Skype for Business utenti del server per Cloud Voicemail, vedere Pianificare Cloud Voicemail per gli utenti [locali.](/skypeforbusiness/hybrid/plan-cloud-voicemail)
+Per configurare Skype for Business utenti del server per Cloud Voicemail, vedere Pianificare il servizio di Cloud Voicemail per gli [utenti locali.](/skypeforbusiness/hybrid/plan-cloud-voicemail)
 
 ## <a name="enabling-protected-voicemail-in-your-organization"></a>Abilitazione della segreteria telefonica protetta nell'organizzazione
 
-Quando un utente lascia un messaggio della segreteria telefonica per un utente dell'organizzazione, la segreteria telefonica viene recapitata alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. Usando le regole del flusso di posta elettronica per applicare la crittografia dei messaggi, è possibile impedire l'inoltro di tali messaggi della segreteria telefonica ad altri destinatari. Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria cassetta postale della segreteria telefonica o aprendo il messaggio in Outlook, Outlook sul web o in Outlook per Android o iOS. I messaggi della segreteria telefonica protetta non possono essere aperti in Skype for Business o Microsoft Teams.
+Quando un utente lascia un messaggio della segreteria telefonica per un utente dell'organizzazione, la segreteria telefonica viene recapitata alla cassetta postale dell'utente come allegato di un messaggio di posta elettronica. Usando le regole del flusso di posta elettronica per applicare la crittografia dei messaggi, è possibile impedire l'inoltro di tali messaggi della segreteria telefonica ad altri destinatari. Quando si abilita la segreteria telefonica protetta, gli utenti possono ascoltare i messaggi della segreteria telefonica protetti chiamando nella propria cassetta postale o aprendo il messaggio in Outlook, Outlook sul web o in Outlook per Android o iOS. I messaggi della segreteria telefonica protetta non possono essere aperti in Skype for Business o Microsoft Teams.
 
 Per altre informazioni sulla crittografia dei messaggi, vedere [Crittografia della posta elettronica](/microsoft-365/compliance/email-encryption?view=o365-worldwide).
+
 
 Per configurare la segreteria telefonica protetta, eseguire le operazioni seguenti:
 
 1. Passare a https://admin.microsoft.com e accedere con un account con autorizzazioni di amministratore globale.
 2. Selezionare **Mostra tutto** e quindi passare a Interfaccia di **amministrazione**  >  **Exchange**.
 3. Nell'Exchange di amministrazione selezionare **Regole flusso di**  >  **posta**.
-4. Selezionare **+** **Aggiungi** e quindi selezionare Applica Office 365 Message Encryption **protezione dei diritti ai messaggi**.
+4. Selezionare Aggiungi e quindi selezionare Applica Office 365 Message Encryption **+** protezione dei diritti **ai messaggi**.
 5. Specificare un nome per la nuova regola del flusso di posta e quindi in Applica questa regola **se** selezionare Le proprietà del messaggio Includono il tipo di messaggio  >    >  **Segreteria telefonica.** Scegliere **OK**.
 6. In **Eseguire le operazioni seguenti** selezionare Applica Office 365 Message Encryption protezione dei diritti al **messaggio** con e quindi selezionare **Seleziona uno**. In **Modello RMS** selezionare Non **inoltrare**. Selezionare **OK** e quindi **Salva**.
     > [!NOTE]
@@ -74,6 +75,9 @@ Per configurare la segreteria telefonica protetta, eseguire le operazioni seguen
     > - [Configurare nuove funzionalità di Crittografia messaggi](/microsoft-365/compliance/set-up-new-message-encryption-capabilities?view=o365-worldwide)
     > - [Configurazione e gestione di modelli per Azure Information Protection](/information-protection/deploy-use/configure-policy-templates)
     > - [Opzione Non inoltrare per i messaggi di posta elettronica](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)
+
+    > [!NOTE]
+    > È necessario impostare la chiave del Registro di sistema seguente per gli utenti, le aziende e le organizzazioni che vogliono visualizzare il modulo segreteria telefonica: [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Office\Outlook\Addins] "AllowVoicemailForm"=dword:00000001                           
 
 ## <a name="help-your-users-learn-teams-voicemail-features"></a>Aiutare gli utenti a imparare a Teams della segreteria telefonica
 
