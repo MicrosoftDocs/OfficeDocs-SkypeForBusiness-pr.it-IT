@@ -325,8 +325,6 @@ items:
         href: manage-teams-overview.md
       - name: Ruoli di amministratore
         href: using-admin-roles.md
-      - name: Gestire Teams durante la transizione alla nuova Interfaccia di amministrazione di Microsoft Teams.
-        href: manage-teams-skypeforbusiness-admin-center.md
       - name: Gestire Teams nell'Interfaccia di amministrazione di Microsoft Teams
         href: manage-teams-in-modern-portal.md
       - name: Gestire le impostazioni di Teams per l'organizzazione
