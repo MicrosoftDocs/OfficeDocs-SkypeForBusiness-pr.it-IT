@@ -23,12 +23,12 @@ ms.custom:
 - Calling Plans
 ROBOTS: NOINDEX, NOFOLLOW
 description: Quando si ottengono numeri di telefono o numeri di porta (trasferimento) per l'organizzazione, potrebbe essere necessario richiedere assistenza e supporto al service desk PSTN.
-ms.openlocfilehash: 01c54f1b6c5592626349841dea0dd4ec197d7488
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 65ebe954fb9a8b101489c9add7739b24bdd529bc
+ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58598470"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941859"
 ---
 # <a name="pstn-service-desk"></a>Service Desk PSTN 
 
@@ -61,7 +61,6 @@ Dal Centro assistenza numeri di telefono è possibile creare nuovi casi, visuali
 - **[Inviare un feedback](#view-and-manage-existing-cases)**–Potete condividere facilmente il vostro feedback. 
 
 - **[Nome]** Aggiornare la – pagina del profilo. 
-
 
 ## <a name="create-a-new-case"></a>Creare un nuovo caso
 

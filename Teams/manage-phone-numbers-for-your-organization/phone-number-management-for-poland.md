@@ -1,9 +1,9 @@
 ---
 title: Telefono gestione dei numeri per la Polonia
-author: cichur
-ms.author: v-cichur
+author: cazawideh
+ms.author: czawideh
 manager: serdars
-ms.reviewer: chandra.kilaru, kristen.kutser
+ms.reviewer: ''
 ms.topic: reference
 ms.assetid: 4ae9b75f-d5e8-4afb-b17d-4ea668c00669
 ms.tgt.pltfrm: cloud
@@ -20,28 +20,23 @@ f1.keywords:
 ms.custom:
 - Calling Plans
 description: Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Polonia per Microsoft Teams.
-ms.openlocfilehash: fe109eb7823ca969bb4bf1fdf73d837f68ac4d7d
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 091b7e550257c8327535e06c281a89838278503c
+ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617282"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942441"
 ---
 # <a name="phone-number-management-for-poland"></a>Telefono gestione dei numeri per la Polonia
-
-> [!IMPORTANT]
-> Stiamo affrontando ritardi imprevisti in Polonia nell'adempimento di nuovi ordini di numeri di telefono e ordini di trasferimento. Puoi continuare a effettuare gli ordini, ma tieni presente che questo ritardo sarà risolto entro settembre, in cui tutti gli ordini in sospeso verranno evasi.
-
-[!INCLUDE [preview-feature](../includes/preview-feature.md)]
 
 Usare questa tabella per trovare informazioni su come ottenere e gestire i numeri di telefono in Polonia per Microsoft Teams.
   
 Per ulteriori informazioni, consulta [Gestire i numeri di telefono per la propria organizzazione](manage-phone-numbers-for-your-organization.md).
   
-|**Cosa vuoi fare?**|**Scarica i moduli corretti**|
+| Cosa vuoi fare? | Scarica i moduli corretti |
 |:-----|:-----|
-|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  |In Polonia è possibile ottenere i numeri di telefono per l'organizzazione usando l'interfaccia Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e contattando [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Polonia (v.1.0) (pl-pl)](https://download.microsoft.com/download/a/1/3/a130f4bd-3d48-4918-aea2-62cc24874c78/new-phone-number-request-for-poland-(v1.0)-(pl-PL).pdf). <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conoscere il cliente, completarlo per intero e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>Telefono i numeri verranno ordinati in blocchi di dieci. Ai clienti verrà addebitato l'addebito solo per le licenze del piano chiamate sottoscritte.<br/><br/>La compilazione di nuovi ordini in questo mercato può richiedere da quattro a sei settimane. |
-|Fai trasferire a noi i numeri di telefono.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Polonia (tutti i numeri) (v.1.0) (pl-pl)](https://download.microsoft.com/download/e/3/a/e3a60111-9fb6-4df3-9fbf-68a8cb5c401e/letter-of-authorization-(loa)-for-poland-(all-numbers)-(v1.0)-(pl-pl).pdf) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/>Il trasferimento di numeri può richiedere da quattro a sei settimane per il completamento in questo mercato. <br/><br/> Questi numeri non possono essere usati per le conferenze in questo momento.    |
+|Ottieni nuovi numeri di telefono per utenti o servizi non elencati nell'interfaccia di amministrazione di Microsoft Teams.  |In Polonia è possibile ottenere i numeri di telefono per l'organizzazione usando l'Microsoft Teams di amministrazione. È anche possibile inviare una nuova richiesta di numero di telefono scaricando il modulo e contattando [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>[Nuova richiesta di numero di telefono per la Polonia (v.1.0) (en-us)](<https://download.microsoft.com/download/a/1/3/a130f4bd-3d48-4918-aea2-62cc24874c78/New phone number request for Poland (v.1.0) (en-us).pdf>). <br/><br/> Prima di assegnare i numeri di telefono, è necessario scaricare il modulo Conosci il [cliente,](<https://download.microsoft.com/download/f/f/a/ffa2afce-f85a-44e7-be2b-f571f63b422d/Poland - Know Your Customer.pdf>)completarlo per intero e contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md)<br/><br/>Telefono i numeri verranno ordinati in blocchi di 10. Ai clienti verrà addebitato l'addebito solo per le licenze del piano chiamate sottoscritte.<br/><br/>I nuovi ordini possono richiedere da 1 a 12 settimane per compilare questo mercato a seconda che il numero di azioni sia presente nella specifica area geografica.|
+|Fai trasferire a noi i numeri di telefono.| Scarica questo modulo. <br/>[Lettera di autorizzazione (LOA) per la Polonia (tutti i numeri) (v.1.0) (pl-pl)](<https://download.microsoft.com/download/f/e/1/fe1e6c18-d72c-4327-86c8-4cfb247c2c3f/Poland LOA.pdf>) <br/> <br/>Compilarlo e [contattare il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) <br/><br/>Il trasferimento di numeri in questo mercato può richiedere fino a tre settimane. Questi numeri non possono essere usati per le conferenze in questo momento.  |
 |Numeri di telefono pubblicati/inediti nell'elenco telefonico nazionale.  <br/> |[Contattare il Service Desk PTSN per istruzioni sull'elenco](contact-pstn-service-desk.md) dei numeri di telefono da pubblicare o annullare la pubblicazione. <br/> |
 |Cambiare il numero di un utente in un numero di servizio.  <br/> |[Contattare il Service Desk PTSN per istruzioni](contact-pstn-service-desk.md) relative all'elenco dei numeri utente da convertire in numeri di servizio. <br/> |
 |Eseguire aggiornamenti del servizio directory per chiamare i numeri di coda o di operatore automatico|Per aggiungere o modificare i numeri della coda di chiamata o dell'operatore automatico, contattare [il Service Desk PTSN per istruzioni.](contact-pstn-service-desk.md) |

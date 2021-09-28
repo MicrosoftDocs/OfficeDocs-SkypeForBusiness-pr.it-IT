@@ -1,9 +1,9 @@
 ---
 title: Disponibilità in Estonia
-ms.author: crowe
-author: CarolynRowe
+ms.author: czawideh
+author: cazawideh
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: ''
 ms.topic: reference
 ms.assetid: 2c244640-e20a-44fa-a153-515ace1f015b
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams per l'Estonia.
-ms.openlocfilehash: d1e6b2caa54b2782e30b7e2d845469ce8eb0eb62
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 29f36d9dd98a6a65216029d81d82d1b124b348ea
+ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58635000"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942541"
 ---
 # <a name="availability-in-estonia"></a>Disponibilità in Estonia
 
@@ -59,11 +59,10 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
-
-Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
+|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
+|Chiamate in uscita possibili verso...?  <br/> | A 196 paesi o aree geografiche, inclusi [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 

@@ -10,7 +10,7 @@ ms.service: msteams
 ms.reviewer: abybee
 ms.localizationpriority: medium
 search.appverid: MET150
-description: Informazioni su Teams registrazione basata su criteri per le chiamate & riunioni
+description: Informazioni sulla registrazione Teams basata su criteri per le chiamate & riunioni
 f1.keywords:
 - CSH
 ms.custom:
@@ -21,12 +21,12 @@ ms.collection:
 - M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: a6e154f6e972fe54c29f8fcded8c554bf8893795
-ms.sourcegitcommit: 9364f4fdf3dcd5ab6805360ff913d4e2e7ca9cfb
+ms.openlocfilehash: 0bbfb13aac415d89f6853fe993ac8c7110ba7fa8
+ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2021
-ms.locfileid: "59432278"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941891"
 ---
 # <a name="introduction-to-teams-policy-based-recording-for-callings--meetings"></a>Introduzione alla registrazione Teams basata su criteri per le chiamate & riunioni
 
@@ -38,7 +38,7 @@ Teams è stato migliorato per supportare l'integrazione di soluzioni di registra
 
 - Supporto per l'acquisizione di interazioni tra Teams utenti ed endpoint di chiamata supportati (Teams, Teams Mobile, Skype for Business, PSTN)
 
-- Nuovi criteri amministrativi per la registrazione della conformità, inclusa l'integrazione con le Teams per le chiamate amministrative e gli strumenti e i criteri per le riunioni
+- Nuovi criteri amministrativi per la registrazione della conformità, inclusa l'integrazione con le chiamate amministrative Teams e gli strumenti e i criteri per le riunioni
 
 La registrazione della conformità può essere abilitata per gli utenti Microsoft 365 A3/A5/E3/E5/Business Premium e Office 365 A3/A5/E3/E5. 
 
@@ -62,7 +62,7 @@ Ognuna di queste categorie richiede requisiti diversi per l'avvio delle registra
 | Proprietario dell'accesso           | Utente               | Conformità      |
 | Criteri di conservazione?      | Facoltativo           | Sì             |
 
-Teams offre varie funzionalità per la [registrazione](./cloud-recording.md) pratica e funzionale di riunioni ed eventi live. Registrazione dell'organizzazione significa consentire alle organizzazioni che adottano il Teams per le chiamate e le riunioni di stabilire, tramite criteri amministrativi, quando le chiamate e le riunioni online devono essere registrate e acquisite automaticamente per l'elaborazione e la conservazione successive, come richiesto dai criteri aziendali o normativi pertinenti. Gli utenti ai sensi di questo criterio saranno a conoscenza del fatto che le interazioni digitali con Teams vengono registrate, ma non saranno in grado di disabilitare la registrazione e non avranno accesso alla registrazione al termine dell'interazione. La registrazione diventa parte dell'archivio aziendale disponibile per il personale legale e di conformità per eDiscovery, il blocco legale e altri usi di conservazione aziendale.
+Teams offre varie funzionalità per la [registrazione pratica](./cloud-recording.md) e funzionale di riunioni ed eventi live. Registrazione dell'organizzazione significa consentire alle organizzazioni che adottano il Teams per le chiamate e le riunioni di stabilire, tramite criteri amministrativi, quando le chiamate e le riunioni online devono essere registrate e acquisite automaticamente per l'elaborazione e la conservazione successive, come richiesto dai criteri aziendali o normativi pertinenti. Gli utenti ai sensi di questo criterio saranno consapevoli che le interazioni digitali con Teams vengono registrate, ma non saranno in grado di disabilitare la registrazione e non avranno accesso alla registrazione al termine dell'interazione. La registrazione diventa parte dell'archivio aziendale disponibile per il personale legale e di conformità per eDiscovery, il blocco legale e altri usi di conservazione aziendale.
 
 ## <a name="example-user-needs"></a>Esigenze degli utenti di esempio
 
@@ -111,7 +111,11 @@ Teams offre varie funzionalità per la [registrazione](./cloud-recording.md) pra
 Le soluzioni di registrazione della conformità sono integrate con Teams come illustrato nel diagramma seguente:
 
 > [!div class="mx-imgBorder"]
-> ![Screenshot che mostra l'impostazione dell'app personalizzata del team.](media/hp-compliance-recording-for-teams-calling-and-meetings.jpg "Le immagini mostrano il flusso quando una Teams riunione o una chiamata viene inviata e ricevuta.")
+> ![Screenshot che mostra l'impostazione dell'app personalizzata del team.](media/hp-compliance-recording-for-teams-calling-and-meetings.jpg "Le immagini mostrano il flusso quando viene inviata e ricevuta una Teams riunione o una chiamata.")
+
+> [!NOTE]
+> Questa soluzione è progettata specificamente per abilitare la registrazione della conformità basata su criteri con Teams. Qualsiasi altro utilizzo di questa soluzione non sarà supportato.
+
 
 ## <a name="recorder"></a>Registratore
 
@@ -123,7 +127,7 @@ Graph documentazione sulle API specifiche è disponibile qui per [updateRecordin
 
 L'implementazione esatta del servizio di registrazione varia in base al partner, ma deve essere progettata per supportare più registratori per ottenere un'elevata disponibilità e distribuzione geografica della distribuzione per ridurre la latenza Teams al registratore. Inoltre, è previsto che i registratori stessi siano progettati in base alla resilienza e alla ridondanza.
 
-I partner devono confermare la versione minima richiesta delle API e degli SDK di Microsoft Graph communications con Microsoft prima di inviare la soluzione per la certificazione per assicurarsi che tutti i requisiti di integrazione della registrazione della conformità siano supportati.
+I partner devono confermare la versione minima richiesta delle API di comunicazione di Microsoft Graph e degli SDK con Microsoft prima di inviare la soluzione per la certificazione per assicurarsi che tutti i requisiti di integrazione della registrazione della conformità siano supportati.
 
 Due requisiti specifici fondamentali per lo scenario di registrazione della conformità sono:
 
@@ -131,11 +135,11 @@ Due requisiti specifici fondamentali per lo scenario di registrazione della conf
 
 - Il bot registratore deve essere eseguito in una Windows vm in Azure
 
-I requisiti di Azure e della macchina virtuale di Windows si applicano solo al componente bot di Teams, il che significa che un partner può implementare il resto della piattaforma di loro scelta, purché possa soddisfare i requisiti di prestazioni e funzionalità pertinenti per la registrazione della conformità.
+I requisiti delle macchine virtuali di Azure e Windows si applicano solo al componente bot di Teams, il che significa che un partner può implementare il resto della piattaforma scelta, a condizione che soddisfi i requisiti di prestazioni e funzionalità pertinenti per la registrazione della conformità.
 
 ## <a name="compliance-recording-policy-assignment-and-provisioning"></a>Assegnazione e provisioning dei criteri di registrazione della conformità
 
-Gli amministratori IT possono determinare quali utenti devono essere registrati e quale registratore verrà usato per ogni utente, creando e assegnando criteri di registrazione di conformità. I registratori vengono invitati automaticamente a partecipare alle conversazioni in base alla configurazione di questi criteri quando si verifica un'interazione di comunicazione. I criteri di registrazione della conformità vengono gestiti [con Microsoft PowerShell](./teams-powershell-overview.md) e possono essere applicati a livello di tenant, per utente e gruppo di sicurezza per ogni organizzazione. Per altre informazioni, vedere Microsoft Docs for [Meeting policies,](./meeting-policies-in-teams.md) [calling policies](./teams-calling-policy.md) e [group policies.](./assign-policies.md#assign-a-policy-to-a-group)
+Gli amministratori IT possono determinare quali utenti devono essere registrati e quale registratore verrà usato per ogni utente, creando e assegnando criteri di registrazione di conformità. I registratori vengono invitati automaticamente a partecipare alle conversazioni in base alla configurazione di questi criteri quando si verifica un'interazione di comunicazione. I criteri di registrazione della conformità vengono gestiti [con Microsoft PowerShell](./teams-powershell-overview.md) e possono essere applicati a livello di tenant, per utente e di gruppo di sicurezza per ogni organizzazione. Per altre informazioni, vedere Microsoft Docs for [Meeting policies,](./meeting-policies-in-teams.md) [calling policies](./teams-calling-policy.md) e [group policies.](./assign-policies.md#assign-a-policy-to-a-group)
 
 1. Creare un'istanza dell'applicazione nel tenant.
 

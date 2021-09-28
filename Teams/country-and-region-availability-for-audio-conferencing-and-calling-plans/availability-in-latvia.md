@@ -1,9 +1,9 @@
 ---
 title: Disponibilità in Lettonia
-ms.author: crowe
-author: CarolynRowe
+ms.author: czawideh
+author: cazawideh
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr, v-sukade, rcole
+ms.reviewer: ''
 ms.topic: reference
 ms.assetid: 01085d53-64d7-40ea-ade2-c73a48766746
 ms.tgt.pltfrm: cloud
@@ -24,13 +24,13 @@ ms.custom:
 - Audio Conferencing
 - Phone System
 - Calling Plans
-description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lettonia.
-ms.openlocfilehash: c0aa0d54dcbf951bbf2755995b17a3daa534cffc
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Lettonia.
+ms.openlocfilehash: 3004aa00132e60b1136be24426ed3ed80d72c6c6
+ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58603576"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942401"
 ---
 # <a name="availability-in-latvia"></a>Disponibilità in Lettonia
 
@@ -59,11 +59,10 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
 
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
-|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |No  <br/> |
-|Minuti disponibili per i Piani per chiamate  <br/> |Non applicabile  <br/> |
-|Chiamate in uscita possibili verso...?  <br/> |Non applicabile  <br/> |
-
-Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instradamento diretto di Sistema telefonico](../direct-routing-landing-page.md). Con Instradamento diretto, è possibile usare Sistema telefonico praticamente con qualsiasi gestore telefonico.
+|I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
+|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
+|Chiamate in uscita possibili verso...?  <br/> | [A 196 paesi o aree geografiche](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
@@ -73,7 +72,7 @@ Se Piano di chiamata non è disponibile per l'acquisto, valutare l'uso di [Instr
 |Sono disponibili numeri verdi a tariffa?  <br/> |Sì  <br/> |
 |Sono disponibili numeri verdi gratuiti?  <br/> |Sì ([su richiesta](../manage-phone-numbers-for-your-organization/contact-pstn-service-desk.md)) <br/> |
    
- Se vuoi numeri verdi a tariffa e gratuiti per Audioconferenze, Operatori automatici e Code di chiamata, consulta [Ottenere numeri di telefono di servizio per Skype for Business e Microsoft Teams](../getting-service-phone-numbers.md).
+Per ottenere numeri a numero verde e a numero verde per audioconferenze, operatori automatici e code di chiamata, vedere Ottenere numeri di telefono di servizio per Skype for Business e [Microsoft Teams](../getting-service-phone-numbers.md).
   
 ## <a name="communications-credits"></a>Credito per la comunicazione
 

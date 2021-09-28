@@ -29,17 +29,17 @@ ms.custom:
 - O365P_SFBVoiceCredit
 - O365P_SFBVoiceCreditAether
 - Licensing
-description: 'Informazioni su come pagare i crediti di comunicazione (Consumo PSTN) per i servizi Skype for Business e vedere i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
-ms.openlocfilehash: fe3b80e41c6fdc411304ec43eebb0ab560063033
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: 'Scopri come pagare i crediti di comunicazione (Consumo PSTN) per i servizi Skype for Business e vedere i piani per mantenere gli utenti con accesso continuo al sistema telefonico. '
+ms.openlocfilehash: 3d2b6eb0a1f487794cc93f9639e49e9557ca4fcd
+ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617612"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59942049"
 ---
 # <a name="add-funds-and-manage-communications-credits"></a>Aggiungere fondi e gestire Credito per la comunicazione
 
-I Crediti comunicazioni sono un modo pratico per pagare i piani Sistema telefonico e per le chiamate in Microsoft 365 o Office 365. I Crediti comunicazioni assicurano che l'utente e gli utenti non vengano mai catturati senza essere in grado di:
+I Crediti comunicazioni sono un modo pratico per pagare i piani Sistema telefonico e per le chiamate in Microsoft 365 o Office 365. I Crediti comunicazioni assicurano che tu e i tuoi utenti non vengano mai catturati senza essere in grado di:
   
 - Accedere alle riunioni di audioconferenza usando numeri di telefono con accesso esterno a numero verde.
 
@@ -60,10 +60,10 @@ L'autoricarica consente di aggiungere automaticamente fondi al saldo quando scen
   
 Puoi aggiornare le opzioni di pagamento in qualsiasi momento. Nella pagina **Abbonamenti** selezionare **Crediti comunicazioni** e apportare gli aggiornamenti.
   
-I fondi verranno applicati solo ai Crediti comunicazioni alle tariffe pubblicate da Microsoft quando vengono usati i servizi. I fondi non utilizzati entro dodici (12) mesi dalla data di acquisto scadranno e verranno persi.
+I fondi verranno applicati solo ai Crediti comunicazioni alle tariffe pubblicate da Microsoft quando vengono usati i servizi. Eventuali fondi non utilizzati entro 12 mesi dalla data di acquisto andranno persi.
   
 > [!TIP]
-> Ti invieremo notifiche tramite e-mail quando i fondi vengono aggiunti tramite ricarica automatica, quando l'ricarica automatica non riesce (ad esempio, quando scade una carta di credito) e quando il saldo scende sotto lo zero.
+> Ti invieremo notifiche tramite e-mail quando i fondi vengono aggiunti tramite l'ricarica automatica, quando l'ricarica automatica non riesce (ad esempio, quando scade una carta di credito) e quando il saldo raggiunge lo zero.
   
 Per altre informazioni, vedere [Che cosa sono i crediti comunicazioni?](what-are-communications-credits.md)
   

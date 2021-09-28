@@ -1,9 +1,9 @@
 ---
 title: Disponibilità in Polonia
-ms.author: crowe
-author: CarolynRowe
+ms.author: czawideh
+author: cazawideh
 manager: serdars
-ms.reviewer: mikedav, jastark, oscarr
+ms.reviewer: ''
 ms.topic: reference
 ms.assetid: c5dcb36b-9700-46c8-8499-d5cadb218a37
 ms.tgt.pltfrm: cloud
@@ -25,12 +25,12 @@ ms.custom:
 - Phone System
 - Calling Plans
 description: Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Teams disponibili per la Polonia.
-ms.openlocfilehash: 93296a036a1c5f145267e508dacd6f43b147838e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 88cfb406eba215b8c0134c0c479532bf50870ad4
+ms.sourcegitcommit: 84706d0b3b93c1bc72baac830fefd3f0a87c5ad1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58617532"
+ms.lasthandoff: 09/27/2021
+ms.locfileid: "59941839"
 ---
 # <a name="availability-in-poland"></a>Disponibilità in Polonia
 
@@ -57,15 +57,12 @@ Ecco i servizi Microsoft 365 e Office 365 per Skype for Business e Microsoft Tea
    
 ## <a name="calling-plans"></a>Piani di chiamata
 
-> [!IMPORTANT]
-> Stiamo affrontando ritardi imprevisti in Polonia nell'adempimento di nuovi ordini di numeri di telefono e ordini di trasferimento. Puoi continuare a effettuare gli ordini, ma tieni presente che questo ritardo sarà risolto entro settembre, in cui tutti gli ordini in sospeso verranno evasi.
-
 |**Funzionalità**|**Dettagli**|
 |:-----|:-----|
 |I Piani per chiamate sono disponibili per l'acquisto?  <br/> |Sì  <br/> |
-|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali da 120 minuti </li><li>Piano per chiamate nazionali da 240 minuti</li></li><li>Piano per chiamate nazionali da 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
+|Minuti disponibili per i Piani per chiamate. |Sono disponibili quattro opzioni di piano per mese di calendario: <ul><li>Piano per chiamate nazionali di 120 minuti </li><li>Piano per chiamate nazionali di 240 minuti</li></li><li>Piano per chiamate nazionali di 1200 minuti </li></li><li>Piano per chiamate nazionali e internazionali: 1200 minuti per chiamate nazionali O 600 minuti per chiamate internazionali (a seconda di quale venga prima nel mese di calendario)</li></li></ul>|
 |È possibile effettuare chiamate in uscita verso numeri premium?  <br/> | Al momento non supportato. <br/> |
-|Chiamate in uscita possibili verso...?  <br/> | Verso 196 Paesi, tra cui [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
+|Chiamate in uscita possibili verso...?  <br/> | A 196 paesi o aree geografiche, inclusi [questi](users-can-make-outbound-calls-to-these-countries-and-regions.md).<br/> |
    
 ## <a name="toll-and-toll-free-numbers-for-services"></a>Numeri verdi a pagamento e gratuiti per i servizi
 
