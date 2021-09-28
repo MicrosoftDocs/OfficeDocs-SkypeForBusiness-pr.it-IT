@@ -19,12 +19,12 @@ ms.custom:
 - ms.teamsadmincenter.meetingpolicies.audioandvideo
 - seo-marvel-apr2020
 description: Informazioni su come gestire le impostazioni dei criteri delle riunioni in Teams per audio e video.
-ms.openlocfilehash: 7dcd3f73d29dcbe635793d4a67db602b8e4c8a1c
-ms.sourcegitcommit: 5f19df90443810e027085f8b38d22218e4123a16
+ms.openlocfilehash: 27153896065d3358927755d3cd1b303c2b1141a0
+ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/23/2021
-ms.locfileid: "59482390"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59984621"
 ---
 # <a name="meeting-policy-settings-for-audio--video"></a>Impostazioni dei criteri per le riunioni per & video
 
@@ -151,7 +151,7 @@ Questo è un criterio per utente. Questa impostazione controlla se gli utenti po
 
 È possibile usare sia l Teams di amministrazione di PowerShell che l'interfaccia di amministrazione di PowerShell per impostare questo criterio. È possibile modificare un criterio di riunione di Teams esistente usando il cmdlet [Set-CsTeamsMeetingPolicy](/powershell/module/skype/set-csteamsmeetingpolicy). In alternativa, è possibile creare un nuovo criterio per le riunioni di Teams usando il cmdlet [New-CsTeamsMeetingPolicy](/powershell/module/skype/new-csteamsmeetingpolicy) e quindi assegnarlo agli utenti.
 
-Per specificare se gli utenti possono personalizzare lo sfondo del video in una riunione, impostare il parametro **VideoFiltersMode** (impostazione Seleziona **filtri video** nell'interfaccia di amministrazione di Teams) come segue:
+Per specificare se gli utenti possono personalizzare lo sfondo del video in una riunione, impostare il parametro **VideoFiltersMode** (impostazione Seleziona filtri **video** nell'interfaccia di amministrazione di Teams) come segue:
 
 |Valore dell'impostazione in PowerShell|Impostazione del valore nell'Teams di amministrazione |Comportamento  |
 |---------|---------|---------|
@@ -169,7 +169,7 @@ Per specificare se gli utenti possono personalizzare lo sfondo del video in una 
 
 1. Passare all'interfaccia di amministrazione di Teams.
 
-2. Selezionare **Criteri riunione Personalizza** immagini  >  **riunione**.
+2. Selezionare Criteri  >  **riunione**  >  **Personalizzazione immagini riunione**.
 
    ![Selezione dei criteri riunione con il pulsante Personalizza immagini riunione evidenziato.](media/custom-background-image-button.png)
 

@@ -22,16 +22,16 @@ ms.custom:
 - seo-marvel-mar2020
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: d875108648ca8fe91d67c03b7c569c59048cfa43
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+ms.openlocfilehash: 189b821e7238911190c4c72c07b863fc961f3074
+ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58589720"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59984611"
 ---
 # <a name="add-and-update-reporting-labels"></a>Aggiungere e aggiornare etichette di reporting
 
-Le etichette dei report vengono usate nell'organizzazione per indicare le posizioni fisiche di uffici, edifici o siti dell'organizzazione. La pagina Etichette report nell'interfaccia di amministrazione di Microsoft Teams consente di fornire un file di testo (.csv o tsv) contenente un elenco di posizioni fisiche e subnet di rete associate. Questo file viene usato da Call Analytics per la generazione di report. Quando si carica il mapping della subnet, i report forniti da questi servizi conterranno anche i nomi delle località, semplificando la comprensione e l'uso dei report per correggere eventuali problemi potenziali.
+Le etichette dei report vengono usate nell'organizzazione per indicare le posizioni fisiche di uffici, edifici o siti dell'organizzazione. La pagina Etichette report nell'interfaccia di amministrazione di Microsoft Teams consente di fornire un file di testo (.csv o tsv) contenente un elenco delle posizioni fisiche e delle subnet di rete associate. Questo file viene usato da Call Analytics per la generazione di report. Quando si carica il mapping della subnet, i report forniti da questi servizi conterranno anche i nomi delle località, semplificando la comprensione e l'uso dei report per correggere eventuali problemi potenziali.
 
 > [!IMPORTANT]
 > Le etichette di segnalazione caricate verranno gestite come dati di supporto ai sensi del  contratto per Office 365, incluse eventuali informazioni che altrimenti verrebbero considerate Dati dei clienti *o Dati personali.*  Non includere dati che non si desidera fornire a Microsoft come dati di *supporto,* in quanto queste informazioni saranno visibili ai tecnici Microsoft per scopi di supporto.
@@ -40,9 +40,9 @@ I dati relativi alle etichette e alle posizioni dei report forniti sono un'unica
 
 **Per modificare la tabella delle subnet e delle posizioni**
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Etichette**  >  **report posizioni.**
-2. Fare **clic Upload dati**.
-3. Nel riquadro **Upload** dati fare clic su Seleziona **un file** e quindi individuare e caricare il file .csv o tsv modificato.
+1. Nel riquadro di spostamento sinistro dell'interfaccia Microsoft Teams di amministrazione fare clic su **Analisi & report** Etichette  >  **report.**
+2. Fare clic **Upload dati.**
+3. Nel riquadro **Upload dati** fare clic su Seleziona **un file** e quindi individuare e caricare il file .csv o tsv modificato.
 4. Fare **clic Upload**.
 
 È possibile scaricare un modello di esempio [qui](https://github.com/MicrosoftDocs/OfficeDocs-SkypeForBusiness/blob/live/Teams/downloads/locations-template.zip?raw=true).

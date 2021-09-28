@@ -13,12 +13,12 @@ ms.localizationpriority: medium
 ms.collection: M365-collaboration
 appliesto:
 - Microsoft Teams
-ms.openlocfilehash: ae8a74e03b56b841fed8cce3558fad96fe5c8680
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 352091de241c37508b4a8bc05be550fa1b4664e5
+ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733346"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59984601"
 ---
 # <a name="view-app-permissions-and-grant-admin-consent-in-the-microsoft-teams-admin-center"></a>Visualizzare le autorizzazioni per le app e concedere il consenso dell'amministratore nell'Microsoft Teams di amministrazione
 
@@ -30,7 +30,7 @@ Qui è anche possibile concedere il consenso dell'amministratore a livello di or
 
 Gli amministratori globali possono esaminare e concedere il consenso alle app che richiedono autorizzazioni per conto di tutti gli utenti dell'organizzazione. A questo scopo, gli utenti non devono rivedere e accettare le autorizzazioni richieste dall'app quando avviano l'app. Inoltre, a seconda delle impostazioni di consenso dell'utente [in](/azure/active-directory/manage-apps/configure-user-consent) Azure Active Directory (Azure AD), alcuni utenti potrebbero non essere autorizzati a concedere il consenso alle app che accedono ai dati aziendali.
 
-Esempi di autorizzazioni richieste dalle app includono la possibilità di leggere le informazioni archiviate in un team, leggere il profilo di un utente e inviare un messaggio di posta elettronica per conto degli utenti. Per altre informazioni, vedere [Autorizzazioni e consenso nell'endpoint Microsoft Identity Platform.](/azure/active-directory/develop/v2-permissions-and-consent) 
+Esempi di autorizzazioni richieste dalle app includono la possibilità di leggere le informazioni archiviate in un team, leggere il profilo di un utente e inviare un messaggio di posta elettronica per conto degli utenti. Per altre informazioni, vedere Autorizzazioni e consenso [nell Microsoft Identity Platform endpoint.](/azure/active-directory/develop/v2-permissions-and-consent) 
 
 La **colonna Autorizzazioni** indica se un'app ha autorizzazioni che necessitano del consenso. Verrà visualizzato un collegamento Visualizza **dettagli** per ogni app registrata in Azure AD con autorizzazioni che necessitano del consenso. Tenere presente che questa impostazione si applica solo alle app personalizzate e di terze parti. Questo collegamento non è visualizzato o è necessario concedere il consenso dell'amministratore per le app pubblicate da Microsoft.
 
@@ -59,12 +59,12 @@ Per concedere il consenso a livello di organizzazione a un'app, seguire questa p
 
 Dopo aver accettato le autorizzazioni, verrà visualizzato un messaggio **in** Autorizzazioni a livello di organizzazione nella pagina dei dettagli dell'app per insodgerlo. Per visualizzare i dettagli sulle autorizzazioni  dell'app, fare clic sul collegamento Azure Active Directory per passare alla pagina dell'app nel portale di Azure AD.
 
-:::image type="content" source="media/app-perm-admin-center-org-wide-accepted.png" alt-text="Screenshot del messaggio visualizzato quando viene concesso il consenso.":::
+:::image type="content" source="media/app-perm-admin-center-org-wide-accepted-new.png" alt-text="Screenshot del messaggio visualizzato quando viene concesso il consenso.":::
 
 Se gli utenti dell'organizzazione sono autorizzati a concedere il consenso e se uno o più utenti hanno concesso il consenso a una determinata app, verrà visualizzato anche lo stesso messaggio per insoddirne il consenso e il collegamento Azure Active Directory alla pagina dell'app nel portale di Azure AD.
 
 > [!NOTE]
-> Anche se  l'opzione Rivedi autorizzazioni e consenso non è disponibile per gli amministratori dei servizi di Teams e non può concedere il  consenso dell'amministratore a livello di organizzazione alle app, gli amministratori del servizio Teams possono visualizzare il contenuto nella scheda Autorizzazioni per un'app. Ad esempio, un amministratore Teams servizio  può fare clic sul collegamento Azure Active Directory per visualizzare i dettagli delle autorizzazioni per le app nel portale di Azure AD. 
+> Anche se  l'opzione Rivedi autorizzazioni e consenso non è disponibile per gli amministratori del servizio Teams e non può concedere il consenso  dell'amministratore a livello di organizzazione alle app, gli amministratori del servizio Teams possono visualizzare il contenuto nella scheda Autorizzazioni per un'app. Ad esempio, un amministratore del Teams  può fare clic sul collegamento Azure Active Directory per visualizzare i dettagli delle autorizzazioni per le app nel portale di Azure AD. 
 
 ## <a name="view-resource-specific-consent-permissions-of-an-app"></a>Visualizzare le autorizzazioni di consenso specifiche delle risorse di un'app
 
@@ -80,7 +80,7 @@ Per visualizzare le autorizzazioni RSC per un'app, seguire questa procedura:
 2. Cercare l'app desiderata, fare clic sul nome dell'app per passare alla pagina dei dettagli dell'app e quindi selezionare la **scheda** Autorizzazioni.
 3. In Microsoft Graph autorizzazioni di consenso specifiche delle risorse **(RSC)** esaminare le autorizzazioni RSC richieste dall'app.
 
-    :::image type="content" source="media/app-perm-admin-center-rsc.png" alt-text="Screenshot delle autorizzazioni RSC per un'app.":::
+    :::image type="content" source="media/app-perm-admin-center-rsc-new.png" alt-text="Screenshot delle autorizzazioni RSC per un'app.":::
 
 ## <a name="known-issues"></a>Problemi noti
 
@@ -94,4 +94,4 @@ Attualmente, la possibilità di rivedere le autorizzazioni e concedere il consen
 - [Autorizzazioni e consenso nell'endpoint Microsoft Identity Platform](/azure/active-directory/develop/v2-permissions-and-consent)
 - [Consenso specifico delle risorse in Teams](resource-specific-consent.md)
 - [Consenso specifico delle risorse (RSC)](/microsoftteams/platform/graph-api/rsc/resource-specific-consent)
-- [Spostamento nel ciclo di Teams dell'app](https://aka.ms/PR132) (sessione Ignite 2020)
+- [Spostamento nel ciclo di Teams dell'app](https://aka.ms/PR132) (sessione di Ignite 2020)

@@ -15,17 +15,17 @@ ms.collection:
 - M365-voice
 search.appverid: MET150
 ms.localizationpriority: medium
-description: Questo articolo offre una panoramica delle funzionalità supportate Microsoft Teams pannelli.
-ms.openlocfilehash: 5779d9e41cb7adb4a502e590c87babbb277cc33e
-ms.sourcegitcommit: 556fffc96729150efcc04cd5d6069c402012421e
+description: Questo articolo fornisce una panoramica delle funzionalità supportate dai Microsoft Teams di lavoro.
+ms.openlocfilehash: 217cd39499975668677c0ec452ce2dd299b464bf
+ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "58596240"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59984581"
 ---
 # <a name="microsoft-teams-panels"></a>Microsoft Teams di lavoro
 
-Microsoft Teams sono i dispositivi touchscreen compatti che vengono installati all'esterno degli spazi delle riunioni, in genere accanto agli ingressi. Teams di riunione offrono la possibilità di visualizzare a colpo d'occhio i dettagli della sede e della riunione e prenotare uno spazio disponibile per le riunioni sul posto. Con testo ricco e di grandi dimensioni e indicatori codificati a colori, è possibile vedere la disponibilità dell'area riunioni da lontano.
+Microsoft Teams sono i dispositivi touchscreen compatti che vengono installati all'esterno degli spazi delle riunioni, in genere accanto agli ingressi. Teams pannelli offrono la possibilità di visualizzare a colpo d'occhio i dettagli della sede e della riunione e prenotare uno spazio disponibile per le riunioni sul posto. Con testo ricco e di grandi dimensioni e indicatori codificati a colori, è possibile vedere la disponibilità dell'area riunioni da lontano.
 
 Teams sono dispositivi Microsoft Teams dedicati che visualizzano i dettagli della riunione pianificati tramite Teams o Outlook applicazioni di calendario 365. Con i dettagli della riunione ben visibili, i partecipanti possono confermare di essere nell'area della riunione giusta, al momento giusto e per la riunione giusta.
 
@@ -33,7 +33,7 @@ Questo articolo offre una panoramica dei Teams e consente di pianificare, distri
 
 ## <a name="features-supported-by-teams-panels"></a>Funzionalità supportate dai Teams di lavoro
 
-Teams pannelli supportano le funzionalità seguenti:
+Teams pannelli supportano le caratteristiche seguenti:
 
 - **Visualizzazione dedicata dell'area riunioni e dei dettagli della riunione.** È possibile ottenere dettagli a colpo d'occhio su uno spazio riunioni, tra cui la posizione e la disponibilità. Per uno spazio riunioni riservato, è possibile visualizzare i dettagli principali della riunione, ad esempio il titolo della riunione, la pianificazione della riunione e l'organizzatore della riunione.
 - **Prenotare gli spazi riunioni disponibili per le riunioni ad hoc.** Usando il pannello touchscreen, è possibile prenotare una sala riunioni disponibile  sul posto per una riunione ad hoc e partecipare Teams una riunione dal dispositivo Microsoft Teams Rooms o Surface Hub sala.
@@ -45,7 +45,7 @@ Per altre informazioni su queste funzionalità e su come usarle, vedere Usare Mi
 
 ## <a name="partners-certified-for-teams-panels"></a>Partner certificati per Teams di lavoro
 
-È possibile acquisire i Teams da uno dei partner seguenti:
+È possibile acquisire i dispositivi Teams da uno dei partner seguenti:
 
 - Crestron
 - Yealink
@@ -56,29 +56,29 @@ I requisiti hardware, software e di rete per distribuire i dispositivi a pannell
 
 ## <a name="license-requirement"></a>Requisiti di licenza
 
-Per usare Teams, è necessario Microsoft Teams Rooms [Licenza Standard.](../rooms/rooms-licensing.md)
+Per usare Teams, è necessario [Microsoft Teams Rooms Standard licenza](../rooms/rooms-licensing.md).
 
 > [!Note]
-> Se sono già stati distribuiti Microsoft Teams Rooms nell'area riunioni in cui si installano i pannelli di Teams, non è necessaria una licenza aggiuntiva per usare Teams pannelli.
+> Se l'Microsoft Teams Rooms è già stata distribuita nell'area riunioni in cui si installano i pannelli di Teams, non è necessaria una licenza aggiuntiva per usare i Teams.
 
-## <a name="deploy-teams-panels-devices"></a>Distribuire Teams di pannelli
+## <a name="deploy-teams-panels-devices"></a>Distribuire Teams dei pannelli
 
-Se si è coinvolti nella pianificazione, nella distribuzione e nella gestione dei Teams dei pannelli, questa sezione fa per te. Questa sezione non è destinata agli utenti finali Teams pannelli.
+Se si è coinvolti nella pianificazione, nella distribuzione e nella gestione dei Teams, questa sezione fa per te. Questa sezione non è destinata agli utenti finali di Teams pannelli.
 
-La distribuzione di Teams dispositivi di pannelli mobili può essere suddivisa nelle attività seguenti:
+La distribuzione Teams dispositivi di pannelli mobili può essere suddivisa nelle attività seguenti:
 
-- [Inventario dello spazio riunioni](#inventory-sites-and-meeting-spaces)e pianificazione delle funzionalità: creare un inventario dei siti e degli spazi riunioni dell'organizzazione per la distribuzione di Teams dispositivi.
+- [Inventario dello spazio delle](#inventory-sites-and-meeting-spaces)riunioni e pianificazione delle funzionalità: creare un inventario dei siti e degli spazi riunioni dell'organizzazione per la distribuzione di dispositivi Teams pannelli.
 - [Approvvigionamento:](#procurement)procurare i dispositivi dal partner di dispositivi selezionato.  
 - [Conformità del sito:](#site-readiness)verificare che i percorsi di distribuzione (spazi riunioni) soddisfino i requisiti di distribuzione.
 - [Configurazione e distribuzione:](#configuration-and-deployment)creare account delle risorse e assegnarli ai dispositivi.
 
 ## <a name="inventory-sites-and-meeting-spaces"></a>Siti di inventario e spazi riunioni
 
-Creare un inventario degli spazi riunioni prenotabili esistenti nell'organizzazione. Identificare i siti e gli spazi riunioni nell'ambito della distribuzione Teams pannelli. Collaborare con le strutture e i team audio-visivi per determinare dove e come installare i dispositivi dei pannelli Teams e se è necessario hardware aggiuntivo per il montaggio dei pannelli.
+Creare un inventario degli spazi riunioni prenotabili esistenti nell'organizzazione. Identificare i siti e gli spazi riunioni nell'ambito di distribuzione Teams pannelli. Collaborare con le strutture e i team audio-visivi per determinare dove e come installare i dispositivi dei pannelli Teams e se è necessario hardware aggiuntivo per il montaggio dei pannelli.
 
 ## <a name="procurement"></a>Approvvigionamento
 
-In base al numero di spazi riunioni nell'ambito per la distribuzione di Teams, procurare i dispositivi da uno dei partner certificati per Teams [pannelli.](#partners-certified-for-teams-panels) Visita i siti Web dei partner per saperne di più sui dispositivi e sulle opzioni di approvvigionamento.
+In base al numero di spazi delle riunioni nell'ambito di distribuzione dei pannelli Teams, procurare i dispositivi da uno dei partner certificati per Teams [pannelli.](#partners-certified-for-teams-panels) Visita i siti Web dei partner per saperne di più sui dispositivi e sulle opzioni di approvvigionamento.
 
 Gli spazi riunioni dell'organizzazione possono avere requisiti hardware diversi per l'installazione o il montaggio dei dispositivi. Ad esempio, l'hardware necessario per il montaggio del dispositivo su un vetro, un intonaco, un muro a secco o un pannello in legno potrebbe non essere lo stesso. Per le opzioni di montaggio disponibili, vedere la documentazione del partner del dispositivo.
 
@@ -105,11 +105,11 @@ La pianificazione della configurazione e della distribuzione riguarda le aree ch
 
 Ogni Teams pannello richiede un account Microsoft 365 risorsa sala. Usare le credenziali dell'account della risorsa per accedere all Microsoft Teams app nel dispositivo dei pannelli.
 
-Per configurare un account Microsoft 365 per i Teams, è consigliabile acquistare una licenza [Microsoft Teams Rooms Standard.](#license-requirement) Per informazioni su come creare un account delle risorse e assegnare una licenza, vedere Creare un [account delle risorse usando](resource-account-ui.md)il interfaccia di amministrazione di Microsoft 365 .
+Per configurare un account Microsoft 365 per Teams, è consigliabile acquistare una licenza [Microsoft Teams Rooms Standard.](#license-requirement) Per informazioni su come creare un account delle risorse e assegnare una licenza, vedere Creare un [account delle risorse usando](resource-account-ui.md)il interfaccia di amministrazione di Microsoft 365 .
 
 > [!NOTE]
 >
->- Se è già stato configurato un account della risorsa sala per l'area riunioni in cui si installano i pannelli, usare lo stesso account della risorsa sala per accedere al dispositivo dei pannelli. Assicurarsi tuttavia che all'account delle risorse della chat room sia assegnata Microsoft Teams Rooms licenza Standard per poterlo usare come account della risorsa pannello.
+>- Se è già stato configurato un account della risorsa sala per l'area riunioni in cui si installano i pannelli, usare lo stesso account della risorsa sala per accedere al dispositivo dei pannelli. Assicurarsi tuttavia che all'account delle risorse della chat room sia assegnata la licenza Microsoft Teams Rooms Standard per poterla usare come account della risorsa pannello.
 >
 >- Se è già stato distribuito un Microsoft Teams Rooms nell'area riunioni in cui si installano i pannelli di Teams, non è necessario acquistare una licenza separata per la distribuzione dei pannelli. L'amministratore accede al dispositivo dei pannelli con le stesse credenziali del Microsoft Teams Rooms per lo stesso spazio.
 >
@@ -117,7 +117,7 @@ Per configurare un account Microsoft 365 per i Teams, è consigliabile acquistar
 
 > [!TIP]
 > È consigliabile creare l'account della risorsa con largo anticipo prima dell'installazione Teams pannelli.
-> È consigliabile usare le convenzioni di denominazione per l'account Teams pannello comandi. Rendere descrittivi e facili da comprendere i nomi visualizzati Microsoft 365 account delle risorse. Questi sono i nomi che gli utenti potranno visualizzare quando esereranno ricerche negli spazi delle riunioni durante la pianificazione di riunioni in Outlook o Teams calendario.
+> È consigliabile usare le convenzioni di denominazione per l'account Teams pannello comandi. Rendere descrittivi e facili da comprendere i nomi visualizzati Microsoft 365 degli account delle risorse. Questi sono i nomi che gli utenti potranno visualizzare quando esereranno ricerche negli spazi delle riunioni durante la pianificazione di riunioni in Outlook o Teams calendario.
 
 ### <a name="testing"></a> Test
 
@@ -125,7 +125,7 @@ Dopo aver distribuito i pannelli, è consigliabile testarli. Verificare che [le 
 
 ## <a name="manage-teams-panels-in-your-organization"></a>Gestire Teams di lavoro nell'organizzazione
 
-Per gestire i dispositivi Teams, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams, passare a Dispositivi  >  **Teams pannelli.** Da qui è possibile modificare il profilo di configurazione del dispositivo, gestire gli aggiornamenti, riavviare i dispositivi, aggiungere e rimuovere tag per i dispositivi e altro ancora. Per altre informazioni, vedere [Gestire i dispositivi in Teams.](device-management.md)
+Per gestire i dispositivi Teams, nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft Teams passare Teams **Dispositivi**  >  **Teams pannelli.** Da qui è possibile modificare il profilo di configurazione del dispositivo, gestire gli aggiornamenti, riavviare i dispositivi, aggiungere e rimuovere tag per i dispositivi e altro ancora. Per altre informazioni, vedere [Gestire i dispositivi in Teams](device-management.md).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

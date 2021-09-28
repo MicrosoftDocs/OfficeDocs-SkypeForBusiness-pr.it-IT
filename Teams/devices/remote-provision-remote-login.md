@@ -18,12 +18,12 @@ appliesto:
 ms.localizationpriority: medium
 search.appverid: MET150
 description: Informazioni su come eseguire il provisioning remoto e accedere per Teams dispositivi Android
-ms.openlocfilehash: 668e50eab20d96f28ff7a6be49a0ddcac872b393
-ms.sourcegitcommit: 15e90083c47eb5bcb03ca80c2e83feffe67646f2
+ms.openlocfilehash: 20eae8534d06c6f9431b9e9fcb1458812e34cacd
+ms.sourcegitcommit: ab9d27d7ddd1494539ae9424de200c9d0e76a9ec
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "58733315"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "59984741"
 ---
 # <a name="remote-provisioning-and-sign-in-for-teams-android-devices"></a>Provisioning remoto e accesso per Teams dispositivi Android
 
@@ -61,7 +61,7 @@ L'elenco seguente mostra i requisiti del firmware del dispositivo Android.
 Completare la procedura seguente per eseguire il provisioning di un nuovo dispositivo.
 
 1. Passare all'interfaccia di amministrazione di Teams.
-2. Espandere **Dispositivi**.
+2. Espandere **Teams dispositivi**.
 3. Selezionare **Provisioning nuovo dispositivo** nella **scheda** Azioni.
 
 Nella finestra **Provisioning nuovi dispositivi** è possibile aggiungere manualmente l'indirizzo MAC o caricare un file.
@@ -78,7 +78,7 @@ Nella finestra **Provisioning nuovi dispositivi** è possibile aggiungere manual
 
 ### <a name="upload-a-file-to-add-a-device-mac-address"></a>Upload un file per aggiungere un indirizzo MAC del dispositivo
 
-1. Nella scheda **In attesa di attivazione** selezionare Upload **MAC.**
+1. Nella scheda **In attesa di attivazione** selezionare Upload ID **MAC.**
 2. Scaricare il modello di file.
 3. Immettere l'ID MAC e il percorso e quindi salvare il file.
 4. **Selezionare file** e quindi **selezionare** Upload .
