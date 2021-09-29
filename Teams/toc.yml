@@ -1548,7 +1548,7 @@ items:
       - name: Teams per la vendita al dettaglio
         href: expand-teams-across-your-org/teams-for-retail-landing-page.md
         items:
-          - name: Introduzione ai modelli di team per la vendita al dettaglio
+          - name: Usare i modelli di team per il settore della vendita al dettaglio
             href: get-started-with-retail-teams-templates.md
       - name: Teams per enti pubblici
         href: expand-teams-across-your-org/teams-for-government-landing-page.md
